@@ -3,7 +3,7 @@
 archive/issues_004285.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhansen\n\nThe current interface takes and returns raw maxima strings, and doesn't do any error handling. This gives the desolver a much more sage-like interface. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4285\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nThe current interface takes and returns raw maxima strings, and doesn't do any error handling. This gives the desolver a much more sage-like interface. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4285\n\n",
     "created_at": "2008-10-14T17:39:28Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_004285.json:
     "title": "[with patch, needs review] update desolver interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4285",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mhansen
+CC:  @mwhansen
 
 The current interface takes and returns raw maxima strings, and doesn't do any error handling. This gives the desolver a much more sage-like interface. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_031354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4285#issuecomment-31354",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_031355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4285#issuecomment-31355",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_031356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4285#issuecomment-31356",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_031357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4285#issuecomment-31357",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_031358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4285#issuecomment-31358",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_031359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4285#issuecomment-31359",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_031360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4285#issuecomment-31360",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -247,16 +247,16 @@ variabe -> variable
 archive/issue_comments_031361.json:
 ```json
 {
-    "body": "Attachment [4285-desolver.4.patch](tarball://root/attachments/some-uuid/ticket4285/4285-desolver.4.patch) by robertwb created at 2008-10-15 10:07:52\n\napply only this last patch",
+    "body": "Attachment [4285-desolver.4.patch](tarball://root/attachments/some-uuid/ticket4285/4285-desolver.4.patch) by @robertwb created at 2008-10-15 10:07:52\n\napply only this last patch",
     "created_at": "2008-10-15T10:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4285#issuecomment-31361",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4285-desolver.4.patch](tarball://root/attachments/some-uuid/ticket4285/4285-desolver.4.patch) by robertwb created at 2008-10-15 10:07:52
+Attachment [4285-desolver.4.patch](tarball://root/attachments/some-uuid/ticket4285/4285-desolver.4.patch) by @robertwb created at 2008-10-15 10:07:52
 
 apply only this last patch
 
@@ -272,7 +272,7 @@ archive/issue_comments_031362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4285#issuecomment-31362",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_031364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4285#issuecomment-31364",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -355,16 +355,16 @@ based on 3.1.4
 archive/issue_comments_031365.json:
 ```json
 {
-    "body": "Attachment [trac_4285-tut-oneliner.patch](tarball://root/attachments/some-uuid/ticket4285/trac_4285-tut-oneliner.patch) by wdj created at 2008-10-18 11:50:54\n\nI added a patch which literally changes exactly this one line in tut.tex. Hope this is what you wanted!",
+    "body": "Attachment [trac_4285-tut-oneliner.patch](tarball://root/attachments/some-uuid/ticket4285/trac_4285-tut-oneliner.patch) by @wdjoyner created at 2008-10-18 11:50:54\n\nI added a patch which literally changes exactly this one line in tut.tex. Hope this is what you wanted!",
     "created_at": "2008-10-18T11:50:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4285#issuecomment-31365",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4285-tut-oneliner.patch](tarball://root/attachments/some-uuid/ticket4285/trac_4285-tut-oneliner.patch) by wdj created at 2008-10-18 11:50:54
+Attachment [trac_4285-tut-oneliner.patch](tarball://root/attachments/some-uuid/ticket4285/trac_4285-tut-oneliner.patch) by @wdjoyner created at 2008-10-18 11:50:54
 
 I added a patch which literally changes exactly this one line in tut.tex. Hope this is what you wanted!
 
@@ -443,7 +443,7 @@ archive/issue_comments_031369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4285#issuecomment-31369",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_031371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4285#issuecomment-31371",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

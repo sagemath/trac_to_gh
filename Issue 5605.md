@@ -3,7 +3,7 @@
 archive/issues_005605.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu\n\nSee http://en.wikipedia.org/wiki/HSL_and_HSV\n\nSee also this thread, where the idea came up: http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\nIssue created by migration from https://trac.sagemath.org/ticket/5605\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nSee http://en.wikipedia.org/wiki/HSL_and_HSV\n\nSee also this thread, where the idea came up: http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\nIssue created by migration from https://trac.sagemath.org/ticket/5605\n\n",
     "created_at": "2009-03-24T21:36:56Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005605.json:
     "title": "Construct Color objects using hsl and hsv values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5605",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  mvngu
 
@@ -41,7 +41,7 @@ archive/issue_comments_043745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5605#issuecomment-43745",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_043746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5605#issuecomment-43746",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_043747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5605#issuecomment-43747",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

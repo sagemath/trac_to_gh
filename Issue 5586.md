@@ -3,7 +3,7 @@
 archive/issues_005586.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin rpw\n\nKeywords: crypto, aes\n\n**Before**:\n\n```\nsage: sr = mq.SR(4,4,4,8,gf2=True,polybori=True,allow_zero_inversions=True)\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 23.46 s, sys: 0.07 s, total: 23.52 s\nWall time: 23.61 s\n```\n\n\n**After**:\n\n```\nsage: sr = mq.SR(4,4,4,8,gf2=True,polybori=True,allow_zero_inversions=True)\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 3.58 s, sys: 0.04 s, total: 3.62 s\nWall time: 3.63 s\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 2.05 s, sys: 0.00 s, total: 2.05 s\nWall time: 2.05 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5586\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin rpw\n\nKeywords: crypto, aes\n\n**Before**:\n\n```\nsage: sr = mq.SR(4,4,4,8,gf2=True,polybori=True,allow_zero_inversions=True)\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 23.46 s, sys: 0.07 s, total: 23.52 s\nWall time: 23.61 s\n```\n\n\n**After**:\n\n```\nsage: sr = mq.SR(4,4,4,8,gf2=True,polybori=True,allow_zero_inversions=True)\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 3.58 s, sys: 0.04 s, total: 3.62 s\nWall time: 3.63 s\nsage: %time F,s = sr.polynomial_system()\nCPU times: user 2.05 s, sys: 0.00 s, total: 2.05 s\nWall time: 2.05 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5586\n\n",
     "created_at": "2009-03-22T17:54:03Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_005586.json:
     "title": "[with patch, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5586",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin rpw
+CC:  @burcin rpw
 
 Keywords: crypto, aes
 
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5586
 archive/issue_comments_043532.json:
 ```json
 {
-    "body": "Attachment [faster_sr.patch](tarball://root/attachments/some-uuid/ticket5586/faster_sr.patch) by malb created at 2009-03-22 17:54:49",
+    "body": "Attachment [faster_sr.patch](tarball://root/attachments/some-uuid/ticket5586/faster_sr.patch) by @malb created at 2009-03-22 17:54:49",
     "created_at": "2009-03-22T17:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5586#issuecomment-43532",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [faster_sr.patch](tarball://root/attachments/some-uuid/ticket5586/faster_sr.patch) by malb created at 2009-03-22 17:54:49
+Attachment [faster_sr.patch](tarball://root/attachments/some-uuid/ticket5586/faster_sr.patch) by @malb created at 2009-03-22 17:54:49
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_043533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5586#issuecomment-43533",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -93,16 +93,16 @@ allows symbols for plaintext/ciphertext bits
 archive/issue_comments_043534.json:
 ```json
 {
-    "body": "Attachment [sr_symbolic.patch](tarball://root/attachments/some-uuid/ticket5586/sr_symbolic.patch) by malb created at 2009-03-25 14:20:07",
+    "body": "Attachment [sr_symbolic.patch](tarball://root/attachments/some-uuid/ticket5586/sr_symbolic.patch) by @malb created at 2009-03-25 14:20:07",
     "created_at": "2009-03-25T14:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5586#issuecomment-43534",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sr_symbolic.patch](tarball://root/attachments/some-uuid/ticket5586/sr_symbolic.patch) by malb created at 2009-03-25 14:20:07
+Attachment [sr_symbolic.patch](tarball://root/attachments/some-uuid/ticket5586/sr_symbolic.patch) by @malb created at 2009-03-25 14:20:07
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_043535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5586#issuecomment-43535",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_043536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5586#issuecomment-43536",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_043538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5586#issuecomment-43538",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_043540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5586#issuecomment-43540",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_043542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5586#issuecomment-43542",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -396,16 +396,16 @@ Looks good to me.
 archive/issue_comments_043543.json:
 ```json
 {
-    "body": "Attachment [fix_long_doctest.patch](tarball://root/attachments/some-uuid/ticket5586/fix_long_doctest.patch) by malb created at 2009-05-12 17:03:37\n\napply last",
+    "body": "Attachment [fix_long_doctest.patch](tarball://root/attachments/some-uuid/ticket5586/fix_long_doctest.patch) by @malb created at 2009-05-12 17:03:37\n\napply last",
     "created_at": "2009-05-12T17:03:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5586#issuecomment-43543",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [fix_long_doctest.patch](tarball://root/attachments/some-uuid/ticket5586/fix_long_doctest.patch) by malb created at 2009-05-12 17:03:37
+Attachment [fix_long_doctest.patch](tarball://root/attachments/some-uuid/ticket5586/fix_long_doctest.patch) by @malb created at 2009-05-12 17:03:37
 
 apply last
 

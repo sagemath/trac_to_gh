@@ -3,7 +3,7 @@
 archive/issues_005253.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nAttached patch computes the Jacobian matrix, the matrix of partial derivatives of a multivariable function from R^n to R^m.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5253\n\n",
+    "body": "Assignee: @burcin\n\nAttached patch computes the Jacobian matrix, the matrix of partial derivatives of a multivariable function from R^n to R^m.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5253\n\n",
     "created_at": "2009-02-13T05:08:19Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_005253.json:
     "title": "Make a jacobian function which computes the jacobian matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5253",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Attached patch computes the Jacobian matrix, the matrix of partial derivatives of a multivariable function from R^n to R^m.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5253
 archive/issue_comments_040307.json:
 ```json
 {
-    "body": "Attachment [trac_5253-jacobian.patch](tarball://root/attachments/some-uuid/ticket5253/trac_5253-jacobian.patch) by jason created at 2009-02-13 05:11:24",
+    "body": "Attachment [trac_5253-jacobian.patch](tarball://root/attachments/some-uuid/ticket5253/trac_5253-jacobian.patch) by @jasongrout created at 2009-02-13 05:11:24",
     "created_at": "2009-02-13T05:11:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5253#issuecomment-40307",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5253-jacobian.patch](tarball://root/attachments/some-uuid/ticket5253/trac_5253-jacobian.patch) by jason created at 2009-02-13 05:11:24
+Attachment [trac_5253-jacobian.patch](tarball://root/attachments/some-uuid/ticket5253/trac_5253-jacobian.patch) by @jasongrout created at 2009-02-13 05:11:24
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_040308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5253#issuecomment-40308",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_040309.json:
 ```json
 {
-    "body": "Changing assignee from burcin to jason.",
+    "body": "Changing assignee from @burcin to @jasongrout.",
     "created_at": "2009-02-13T05:49:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5253#issuecomment-40309",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from burcin to jason.
+Changing assignee from @burcin to @jasongrout.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_040311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5253#issuecomment-40311",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006839.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: combinat, crystals\n\n- Implemented crystal of letters for type E7\n- Added the method that goes to the highest weight element from any crystal element\n  (living in a highest weight crystal)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6839\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: combinat, crystals\n\n- Implemented crystal of letters for type E7\n- Added the method that goes to the highest weight element from any crystal element\n  (living in a highest weight crystal)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6839\n\n",
     "created_at": "2009-08-29T06:34:56Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_006839.json:
     "title": "Implementation of crystal of letters for type E7",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6839",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6839
 archive/issue_comments_056405.json:
 ```json
 {
-    "body": "Attachment [trac_6839-crystal-E7-as.patch](tarball://root/attachments/some-uuid/ticket6839/trac_6839-crystal-E7-as.patch) by aschilling created at 2009-08-29 06:48:41",
+    "body": "Attachment [trac_6839-crystal-E7-as.patch](tarball://root/attachments/some-uuid/ticket6839/trac_6839-crystal-E7-as.patch) by @anneschilling created at 2009-08-29 06:48:41",
     "created_at": "2009-08-29T06:48:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6839#issuecomment-56405",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [trac_6839-crystal-E7-as.patch](tarball://root/attachments/some-uuid/ticket6839/trac_6839-crystal-E7-as.patch) by aschilling created at 2009-08-29 06:48:41
+Attachment [trac_6839-crystal-E7-as.patch](tarball://root/attachments/some-uuid/ticket6839/trac_6839-crystal-E7-as.patch) by @anneschilling created at 2009-08-29 06:48:41
 
 
 
@@ -56,16 +56,16 @@ Attachment [trac_6839-crystal-E7-as.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_056406.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to aschilling.",
+    "body": "Changing assignee from @mwhansen to @anneschilling.",
     "created_at": "2009-08-29T06:49:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6839#issuecomment-56406",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Changing assignee from mhansen to aschilling.
+Changing assignee from @mwhansen to @anneschilling.
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_056407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6839#issuecomment-56407",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 

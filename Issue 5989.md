@@ -3,7 +3,7 @@
 archive/issues_005989.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThis fixes a pair of typos in sage-sage.  Apply to the 'scripts' repo.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5989\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThis fixes a pair of typos in sage-sage.  Apply to the 'scripts' repo.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5989\n\n",
     "created_at": "2009-05-05T16:49:48Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_005989.json:
     "title": "[with patch, needs review] typo in sage-sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5989",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 This fixes a pair of typos in sage-sage.  Apply to the 'scripts' repo.
 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5989
 archive/issue_comments_047594.json:
 ```json
 {
-    "body": "Attachment [scripts-typo.patch](tarball://root/attachments/some-uuid/ticket5989/scripts-typo.patch) by jhpalmieri created at 2009-05-05 16:50:00",
+    "body": "Attachment [scripts-typo.patch](tarball://root/attachments/some-uuid/ticket5989/scripts-typo.patch) by @jhpalmieri created at 2009-05-05 16:50:00",
     "created_at": "2009-05-05T16:50:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5989#issuecomment-47594",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [scripts-typo.patch](tarball://root/attachments/some-uuid/ticket5989/scripts-typo.patch) by jhpalmieri created at 2009-05-05 16:50:00
+Attachment [scripts-typo.patch](tarball://root/attachments/some-uuid/ticket5989/scripts-typo.patch) by @jhpalmieri created at 2009-05-05 16:50:00
 
 
 

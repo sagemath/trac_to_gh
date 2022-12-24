@@ -3,7 +3,7 @@
 archive/issues_004792.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mhansen\n\nNotice the following:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: P.<x,y>=ZZ[]\nsage: \nExiting SAGE (CPU time 0m0.08s, Wall time 0m4.42s).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage -valgrind\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/bin/sage-ipython\nLog file is /home/mabshoff/.sage/valgrind/sage-memcheck.%p\nUsing default flags:\n--leak-resolution=high --leak-check=full --show-reachable=yes \n--log-file=/home/mabshoff/.sage/valgrind/sage-memcheck.%p --leak-check=full \n--num-callers=25 --suppressions=/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/lib/valgrind/sage.supp\nPython 2.5.2 (r252:60911, Dec 13 2008, 22:51:49) \n[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\nsage: P.<x,y>=ZZ[]\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     P.<x,y>=ZZ[]\n       ^\nSyntaxError: invalid syntax\n| Sage Version 3.2.2.alpha2, Release Date: 2008-12-13                |\n| Type notebook() for the GUI, and license() for information.        |\n| Sage Version 3.2.2.alpha2, Release Date: 2008-12-13                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: \n```\n\n\nI would blame the IPython fixes, but I have zero evidence so far.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4792\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nNotice the following:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: P.<x,y>=ZZ[]\nsage: \nExiting SAGE (CPU time 0m0.08s, Wall time 0m4.42s).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage -valgrind\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/bin/sage-ipython\nLog file is /home/mabshoff/.sage/valgrind/sage-memcheck.%p\nUsing default flags:\n--leak-resolution=high --leak-check=full --show-reachable=yes \n--log-file=/home/mabshoff/.sage/valgrind/sage-memcheck.%p --leak-check=full \n--num-callers=25 --suppressions=/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/lib/valgrind/sage.supp\nPython 2.5.2 (r252:60911, Dec 13 2008, 22:51:49) \n[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\nsage: P.<x,y>=ZZ[]\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     P.<x,y>=ZZ[]\n       ^\nSyntaxError: invalid syntax\n| Sage Version 3.2.2.alpha2, Release Date: 2008-12-13                |\n| Type notebook() for the GUI, and license() for information.        |\n| Sage Version 3.2.2.alpha2, Release Date: 2008-12-13                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: \n```\n\n\nI would blame the IPython fixes, but I have zero evidence so far.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4792\n\n",
     "created_at": "2008-12-14T07:37:17Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_004792.json:
 ```
 Assignee: mabshoff
 
-CC:  mhansen
+CC:  @mwhansen
 
 Notice the following:
 
@@ -192,16 +192,16 @@ Michael
 archive/issue_comments_036320.json:
 ```json
 {
-    "body": "Attachment [trac_4792.patch](tarball://root/attachments/some-uuid/ticket4792/trac_4792.patch) by mhansen created at 2008-12-14 15:10:59",
+    "body": "Attachment [trac_4792.patch](tarball://root/attachments/some-uuid/ticket4792/trac_4792.patch) by @mwhansen created at 2008-12-14 15:10:59",
     "created_at": "2008-12-14T15:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4792#issuecomment-36320",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4792.patch](tarball://root/attachments/some-uuid/ticket4792/trac_4792.patch) by mhansen created at 2008-12-14 15:10:59
+Attachment [trac_4792.patch](tarball://root/attachments/some-uuid/ticket4792/trac_4792.patch) by @mwhansen created at 2008-12-14 15:10:59
 
 
 
@@ -210,16 +210,16 @@ Attachment [trac_4792.patch](tarball://root/attachments/some-uuid/ticket4792/tra
 archive/issue_comments_036321.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2008-12-14T15:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4792#issuecomment-36321",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -233,7 +233,7 @@ archive/issue_comments_036322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4792#issuecomment-36322",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006120.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  cremona simonking\n\nbut it returns `0` now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6120\n\n",
+    "body": "Assignee: @malb\n\nCC:  @JohnCremona simonking\n\nbut it returns `0` now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6120\n\n",
     "created_at": "2009-05-22T10:43:21Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_006120.json:
     "title": "[with patch, needs review] P(0).total_degree() should return -1 for multivariate polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6120",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  cremona simonking
+CC:  @JohnCremona simonking
 
 but it returns `0` now.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6120
 archive/issue_comments_048909.json:
 ```json
 {
-    "body": "Attachment [mpoly_deg_0.patch](tarball://root/attachments/some-uuid/ticket6120/mpoly_deg_0.patch) by malb created at 2009-05-22 11:06:08",
+    "body": "Attachment [mpoly_deg_0.patch](tarball://root/attachments/some-uuid/ticket6120/mpoly_deg_0.patch) by @malb created at 2009-05-22 11:06:08",
     "created_at": "2009-05-22T11:06:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6120#issuecomment-48909",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpoly_deg_0.patch](tarball://root/attachments/some-uuid/ticket6120/mpoly_deg_0.patch) by malb created at 2009-05-22 11:06:08
+Attachment [mpoly_deg_0.patch](tarball://root/attachments/some-uuid/ticket6120/mpoly_deg_0.patch) by @malb created at 2009-05-22 11:06:08
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_048910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6120#issuecomment-48910",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_048911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6120#issuecomment-48911",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_048912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6120#issuecomment-48912",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_048913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6120#issuecomment-48913",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_048914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6120#issuecomment-48914",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

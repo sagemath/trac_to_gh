@@ -3,7 +3,7 @@
 archive/issues_005080.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  craigcitro\n\n\n```\nsage: E = EllipticCurve(\"128a\") \nsage: E.congruence_number()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2618, in congruence_number\n    self.__congruence_number = W.congruence_number(V)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 938, in congruence_number\n    W = other.q_expansion_module(prec, ZZ)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 770, in q_expansion_module\n    return self._q_expansion_module_integral(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 910, in _q_expansion_module_integral\n    V = self.q_expansion_module(prec, QQ)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 772, in q_expansion_module\n    return self._q_expansion_module_rational(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 861, in _q_expansion_module_rational\n    return self._q_expansion_module(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 820, in _q_expansion_module\n    return A.span([f.padded_list(prec) for f in self.q_expansion_basis(prec, algorithm)])\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 602, in q_expansion_basis\n    return Sequence(self._q_expansion_basis_hecke_dual(prec), cr=True)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 1073, in _q_expansion_basis_hecke_dual\n    v = [self.dual_hecke_matrix(n).column(i) for n in range(1,prec)]\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/hecke/module.py\", line 797, in dual_hecke_matrix\n    T = self._compute_dual_hecke_matrix(n)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 110, in _compute_dual_hecke_matrix\n    return A.restrict(self.dual_free_module(), check=check)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 320, in dual_free_module\n    \"(cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\nRuntimeError: Computation of embedded dual vector space failed (cut down to rank 9, but should have cut down to rank 8).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5080\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro\n\n\n```\nsage: E = EllipticCurve(\"128a\") \nsage: E.congruence_number()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2618, in congruence_number\n    self.__congruence_number = W.congruence_number(V)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 938, in congruence_number\n    W = other.q_expansion_module(prec, ZZ)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 770, in q_expansion_module\n    return self._q_expansion_module_integral(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 910, in _q_expansion_module_integral\n    V = self.q_expansion_module(prec, QQ)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 772, in q_expansion_module\n    return self._q_expansion_module_rational(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 861, in _q_expansion_module_rational\n    return self._q_expansion_module(prec)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 820, in _q_expansion_module\n    return A.span([f.padded_list(prec) for f in self.q_expansion_basis(prec, algorithm)])\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 602, in q_expansion_basis\n    return Sequence(self._q_expansion_basis_hecke_dual(prec), cr=True)\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/modsym/space.py\", line 1073, in _q_expansion_basis_hecke_dual\n    v = [self.dual_hecke_matrix(n).column(i) for n in range(1,prec)]\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/hecke/module.py\", line 797, in dual_hecke_matrix\n    T = self._compute_dual_hecke_matrix(n)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 110, in _compute_dual_hecke_matrix\n    return A.restrict(self.dual_free_module(), check=check)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 320, in dual_free_module\n    \"(cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\nRuntimeError: Computation of embedded dual vector space failed (cut down to rank 9, but should have cut down to rank 8).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5080\n\n",
     "created_at": "2009-01-24T00:31:15Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_005080.json:
     "title": "Bug in decomposing modular symbol subspace",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5080",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  craigcitro
+CC:  @craigcitro
 
 
 ```
@@ -72,7 +72,7 @@ archive/issue_comments_038684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38684",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_038685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38685",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -107,16 +107,16 @@ I will post a patch when I get a chance to code it up.
 archive/issue_comments_038686.json:
 ```json
 {
-    "body": "Attachment [trac_5080.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080.patch) by davidloeffler created at 2009-05-14 11:42:41\n\napply after #5736, #4357 and #5787",
+    "body": "Attachment [trac_5080.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080.patch) by @loefflerd created at 2009-05-14 11:42:41\n\napply after #5736, #4357 and #5787",
     "created_at": "2009-05-14T11:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38686",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5080.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080.patch) by davidloeffler created at 2009-05-14 11:42:41
+Attachment [trac_5080.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080.patch) by @loefflerd created at 2009-05-14 11:42:41
 
 apply after #5736, #4357 and #5787
 
@@ -132,7 +132,7 @@ archive/issue_comments_038687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38687",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_038688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38688",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_038689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38689",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_038690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38690",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -221,16 +221,16 @@ Patch looks good, applies fine to 4.0.alpha0 and fixes the bug.  My only quibble
 archive/issue_comments_038691.json:
 ```json
 {
-    "body": "Attachment [trac_5080_doctest.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_doctest.patch) by davidloeffler created at 2009-05-18 15:49:12\n\napply after previous patch",
+    "body": "Attachment [trac_5080_doctest.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_doctest.patch) by @loefflerd created at 2009-05-18 15:49:12\n\napply after previous patch",
     "created_at": "2009-05-18T15:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38691",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5080_doctest.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_doctest.patch) by davidloeffler created at 2009-05-18 15:49:12
+Attachment [trac_5080_doctest.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_doctest.patch) by @loefflerd created at 2009-05-18 15:49:12
 
 apply after previous patch
 
@@ -246,7 +246,7 @@ archive/issue_comments_038692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38692",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_038693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38693",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_038695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38695",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_038696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38696",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_038697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38697",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_038698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38698",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -396,16 +396,16 @@ replaces all previous patches
 archive/issue_comments_038699.json:
 ```json
 {
-    "body": "Attachment [trac_5080_new.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_new.patch) by davidloeffler created at 2009-05-25 19:19:58\n\nHere's a new patch, which causes no speed regression at all in the p-adic analytic sha for 858k1, and still solves the original 128a congruence number problem.",
+    "body": "Attachment [trac_5080_new.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_new.patch) by @loefflerd created at 2009-05-25 19:19:58\n\nHere's a new patch, which causes no speed regression at all in the p-adic analytic sha for 858k1, and still solves the original 128a congruence number problem.",
     "created_at": "2009-05-25T19:19:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38699",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5080_new.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_new.patch) by davidloeffler created at 2009-05-25 19:19:58
+Attachment [trac_5080_new.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_new.patch) by @loefflerd created at 2009-05-25 19:19:58
 
 Here's a new patch, which causes no speed regression at all in the p-adic analytic sha for 858k1, and still solves the original 128a congruence number problem.
 
@@ -421,7 +421,7 @@ archive/issue_comments_038700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38700",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_038701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38701",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_038702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38702",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -470,16 +470,16 @@ Changing status from new to assigned.
 archive/issue_comments_038703.json:
 ```json
 {
-    "body": "Changing assignee from craigcitro to davidloeffler.",
+    "body": "Changing assignee from @craigcitro to @loefflerd.",
     "created_at": "2009-06-08T08:27:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38703",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from craigcitro to davidloeffler.
+Changing assignee from @craigcitro to @loefflerd.
 
 
 
@@ -493,7 +493,7 @@ archive/issue_comments_038704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38704",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_038705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38705",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_038706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38706",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -553,16 +553,16 @@ apply over trac_5080_new.patch
 archive/issue_comments_038707.json:
 ```json
 {
-    "body": "Attachment [trac_5080_cachefix.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_cachefix.patch) by davidloeffler created at 2009-06-20 10:12:20\n\nFor the first time I can remember, I wrote a fix and it worked first time. Here is a patch which removes all instances of \"hasattr\".\n\n(There is potential for cleaning up elsewhere in sage/modular/hecke/submodule.py using cached_method -- the is_new, is_old, new_submodule, old_submodule calls have their own caching code which we can now get rid of -- but that is for another ticket.)\n\nDavid",
+    "body": "Attachment [trac_5080_cachefix.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_cachefix.patch) by @loefflerd created at 2009-06-20 10:12:20\n\nFor the first time I can remember, I wrote a fix and it worked first time. Here is a patch which removes all instances of \"hasattr\".\n\n(There is potential for cleaning up elsewhere in sage/modular/hecke/submodule.py using cached_method -- the is_new, is_old, new_submodule, old_submodule calls have their own caching code which we can now get rid of -- but that is for another ticket.)\n\nDavid",
     "created_at": "2009-06-20T10:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38707",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5080_cachefix.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_cachefix.patch) by davidloeffler created at 2009-06-20 10:12:20
+Attachment [trac_5080_cachefix.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_cachefix.patch) by @loefflerd created at 2009-06-20 10:12:20
 
 For the first time I can remember, I wrote a fix and it worked first time. Here is a patch which removes all instances of "hasattr".
 
@@ -582,7 +582,7 @@ archive/issue_comments_038708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38708",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -600,7 +600,7 @@ archive/issue_comments_038709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38709",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -618,7 +618,7 @@ archive/issue_comments_038710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38710",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -636,7 +636,7 @@ archive/issue_comments_038711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38711",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -679,7 +679,7 @@ archive/issue_comments_038712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38712",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -697,7 +697,7 @@ archive/issue_comments_038713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38713",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -710,16 +710,16 @@ Changing priority from major to blocker.
 archive/issue_comments_038714.json:
 ```json
 {
-    "body": "Attachment [trac_5080_repair.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_repair.patch) by davidloeffler created at 2009-06-28 17:32:10\n\nApply to 4.1.alpha2",
+    "body": "Attachment [trac_5080_repair.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_repair.patch) by @loefflerd created at 2009-06-28 17:32:10\n\nApply to 4.1.alpha2",
     "created_at": "2009-06-28T17:32:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38714",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5080_repair.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_repair.patch) by davidloeffler created at 2009-06-28 17:32:10
+Attachment [trac_5080_repair.patch](tarball://root/attachments/some-uuid/ticket5080/trac_5080_repair.patch) by @loefflerd created at 2009-06-28 17:32:10
 
 Apply to 4.1.alpha2
 
@@ -735,7 +735,7 @@ archive/issue_comments_038715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38715",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -755,7 +755,7 @@ archive/issue_comments_038716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38716",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -775,7 +775,7 @@ archive/issue_comments_038717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38717",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -793,7 +793,7 @@ archive/issue_comments_038718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5080#issuecomment-38718",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

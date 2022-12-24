@@ -14,7 +14,7 @@ archive/issues_004894.json:
     "title": "[with patch; needs review] save_session -- bug when saving %cython functions, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4894",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -97,7 +97,7 @@ archive/issue_comments_037110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4894#issuecomment-37110",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

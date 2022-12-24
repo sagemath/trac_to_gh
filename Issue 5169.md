@@ -14,7 +14,7 @@ archive/issues_005169.json:
     "title": "make it possible to set the default search path for the attach and load commands",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5169",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -99,7 +99,7 @@ archive/issue_comments_039600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5169#issuecomment-39600",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_039601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5169#issuecomment-39601",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_039602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5169#issuecomment-39602",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_039603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5169#issuecomment-39603",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

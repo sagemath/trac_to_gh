@@ -3,7 +3,7 @@
 archive/issues_007327.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman\n\nIt is inconsistent with plot and other functions that this just hangs:\n\n\n```\nintegrate(sin(x), (x,0,1))\n```\n\n\nThis patch takes care of this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7327\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nIt is inconsistent with plot and other functions that this just hangs:\n\n\n```\nintegrate(sin(x), (x,0,1))\n```\n\n\nThis patch takes care of this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7327\n\n",
     "created_at": "2009-10-28T00:24:05Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_007327.json:
     "title": "Make integrate accept a variable range as a tuple",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7327",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman
+CC:  @kcrisman
 
 It is inconsistent with plot and other functions that this just hangs:
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7327
 archive/issue_comments_061278.json:
 ```json
 {
-    "body": "Attachment [trac-7327-integrate-range.patch](tarball://root/attachments/some-uuid/ticket7327/trac-7327-integrate-range.patch) by jason created at 2009-10-28 00:38:54",
+    "body": "Attachment [trac-7327-integrate-range.patch](tarball://root/attachments/some-uuid/ticket7327/trac-7327-integrate-range.patch) by @jasongrout created at 2009-10-28 00:38:54",
     "created_at": "2009-10-28T00:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61278",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7327-integrate-range.patch](tarball://root/attachments/some-uuid/ticket7327/trac-7327-integrate-range.patch) by jason created at 2009-10-28 00:38:54
+Attachment [trac-7327-integrate-range.patch](tarball://root/attachments/some-uuid/ticket7327/trac-7327-integrate-range.patch) by @jasongrout created at 2009-10-28 00:38:54
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_061279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61279",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_061280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61280",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_061281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61281",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -115,16 +115,16 @@ Based on Sage 4.2
 archive/issue_comments_061282.json:
 ```json
 {
-    "body": "Attachment [trac_7327-updated.patch](tarball://root/attachments/some-uuid/ticket7327/trac_7327-updated.patch) by kcrisman created at 2009-11-05 17:45:16\n\nUpdated patch includes the issues mentioned in previous comment, is ready for review.  Positive review to the parts I didn't write.",
+    "body": "Attachment [trac_7327-updated.patch](tarball://root/attachments/some-uuid/ticket7327/trac_7327-updated.patch) by @kcrisman created at 2009-11-05 17:45:16\n\nUpdated patch includes the issues mentioned in previous comment, is ready for review.  Positive review to the parts I didn't write.",
     "created_at": "2009-11-05T17:45:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61282",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7327-updated.patch](tarball://root/attachments/some-uuid/ticket7327/trac_7327-updated.patch) by kcrisman created at 2009-11-05 17:45:16
+Attachment [trac_7327-updated.patch](tarball://root/attachments/some-uuid/ticket7327/trac_7327-updated.patch) by @kcrisman created at 2009-11-05 17:45:16
 
 Updated patch includes the issues mentioned in previous comment, is ready for review.  Positive review to the parts I didn't write.
 
@@ -140,7 +140,7 @@ archive/issue_comments_061283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61283",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_061284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61284",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_061285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61285",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_061286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61286",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_061287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61287",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

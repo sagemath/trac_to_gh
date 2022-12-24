@@ -3,7 +3,7 @@
 archive/issues_008202.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rbeezer\n\nWe can do this by setting `safeHBoxes` to 0 in `sagenb/data/sage/js/jsmath.js`.\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/b56eb3ec554642ce).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8202\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nWe can do this by setting `safeHBoxes` to 0 in `sagenb/data/sage/js/jsmath.js`.\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/b56eb3ec554642ce).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8202\n\n",
     "created_at": "2010-02-06T19:58:18Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008202.json:
     "title": "Allow raw HTML in jsMath's \\hbox{}",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8202",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rbeezer
+CC:  @rbeezer
 
 We can do this by setting `safeHBoxes` to 0 in `sagenb/data/sage/js/jsmath.js`.
 
@@ -41,7 +41,7 @@ archive/issue_comments_072345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8202#issuecomment-72345",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -54,16 +54,16 @@ Disable jsMath's `safeHBoxes` option.  sagenb repo.
 archive/issue_comments_072346.json:
 ```json
 {
-    "body": "Attachment [trac_8202-jsmath_hboxes.patch](tarball://root/attachments/some-uuid/ticket8202/trac_8202-jsmath_hboxes.patch) by mpatel created at 2010-02-06 20:03:34\n\nI've attached a patch that only disables jsMath's safe `\\hbox{}` setting.  Feel free to ignore it!",
+    "body": "Attachment [trac_8202-jsmath_hboxes.patch](tarball://root/attachments/some-uuid/ticket8202/trac_8202-jsmath_hboxes.patch) by @qed777 created at 2010-02-06 20:03:34\n\nI've attached a patch that only disables jsMath's safe `\\hbox{}` setting.  Feel free to ignore it!",
     "created_at": "2010-02-06T20:03:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8202#issuecomment-72346",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8202-jsmath_hboxes.patch](tarball://root/attachments/some-uuid/ticket8202/trac_8202-jsmath_hboxes.patch) by mpatel created at 2010-02-06 20:03:34
+Attachment [trac_8202-jsmath_hboxes.patch](tarball://root/attachments/some-uuid/ticket8202/trac_8202-jsmath_hboxes.patch) by @qed777 created at 2010-02-06 20:03:34
 
 I've attached a patch that only disables jsMath's safe `\hbox{}` setting.  Feel free to ignore it!
 
@@ -79,7 +79,7 @@ archive/issue_comments_072347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8202#issuecomment-72347",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_072348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8202#issuecomment-72348",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_072349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8202#issuecomment-72349",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_072350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8202#issuecomment-72350",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_072351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8202#issuecomment-72351",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

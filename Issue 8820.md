@@ -3,7 +3,7 @@
 archive/issues_008820.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  jdemeyer rwb\n\n\n```\nsage: E = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-5)\nsage: L = E.change_ring(K).period_lattice(K.places()[0])\nsage: L.elliptic_exponential(CDF(.1,.1))\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/period_lattice.py\", line 1390, in elliptic_exponential\n    pxy = E.pari_curve(prec+5).ellztopoint(w)\n  File \"gen.pyx\", line 9234, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:44342)\nPariError: bad argument for an elliptic curve related function (43)\n```\n\n\nPerhaps Pari doesn't support curve not over Q? \n\nIssue created by migration from https://trac.sagemath.org/ticket/8820\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @jdemeyer rwb\n\n\n```\nsage: E = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-5)\nsage: L = E.change_ring(K).period_lattice(K.places()[0])\nsage: L.elliptic_exponential(CDF(.1,.1))\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/period_lattice.py\", line 1390, in elliptic_exponential\n    pxy = E.pari_curve(prec+5).ellztopoint(w)\n  File \"gen.pyx\", line 9234, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:44342)\nPariError: bad argument for an elliptic curve related function (43)\n```\n\n\nPerhaps Pari doesn't support curve not over Q? \n\nIssue created by migration from https://trac.sagemath.org/ticket/8820\n\n",
     "created_at": "2010-04-29T09:03:18Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_008820.json:
     "title": "elliptic_exponential broken for curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8820",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  jdemeyer rwb
+CC:  @jdemeyer rwb
 
 
 ```
@@ -54,7 +54,7 @@ archive/issue_comments_080949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80949",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_080950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80950",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_080951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80951",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_080952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80952",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_080953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80953",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_080954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80954",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -163,16 +163,16 @@ Changing status from new to needs_review.
 archive/issue_comments_080955.json:
 ```json
 {
-    "body": "Attachment [trac_8820-elliptic-exp.patch](tarball://root/attachments/some-uuid/ticket8820/trac_8820-elliptic-exp.patch) by cremona created at 2010-08-29 14:38:36\n\nThe patch implements this.  I left the old code (using ellztopoint) for curves over QQ though the new code (using ellwp) works fine too, since the the output of many doctests would have changed (in insignificant bits), especially in heegner.py.\n\nI also documented a couple of functions in period_lattice.py which were not, so that file now has 100% coverage.",
+    "body": "Attachment [trac_8820-elliptic-exp.patch](tarball://root/attachments/some-uuid/ticket8820/trac_8820-elliptic-exp.patch) by @JohnCremona created at 2010-08-29 14:38:36\n\nThe patch implements this.  I left the old code (using ellztopoint) for curves over QQ though the new code (using ellwp) works fine too, since the the output of many doctests would have changed (in insignificant bits), especially in heegner.py.\n\nI also documented a couple of functions in period_lattice.py which were not, so that file now has 100% coverage.",
     "created_at": "2010-08-29T14:38:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80955",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8820-elliptic-exp.patch](tarball://root/attachments/some-uuid/ticket8820/trac_8820-elliptic-exp.patch) by cremona created at 2010-08-29 14:38:36
+Attachment [trac_8820-elliptic-exp.patch](tarball://root/attachments/some-uuid/ticket8820/trac_8820-elliptic-exp.patch) by @JohnCremona created at 2010-08-29 14:38:36
 
 The patch implements this.  I left the old code (using ellztopoint) for curves over QQ though the new code (using ellwp) works fine too, since the the output of many doctests would have changed (in insignificant bits), especially in heegner.py.
 
@@ -190,7 +190,7 @@ archive/issue_comments_080956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80956",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_080957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80957",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_080958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80958",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_080959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80959",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_080960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80960",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_080961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80961",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_080962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80962",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_080963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80963",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_080964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80964",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_080965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80965",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_080966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80966",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_080967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80967",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -478,16 +478,16 @@ I have now fixed all the offending "Pari" and "pari" in the patch, and all the f
 archive/issue_comments_080968.json:
 ```json
 {
-    "body": "Attachment [trac_8820-elliptic-exp-rebase.patch](tarball://root/attachments/some-uuid/ticket8820/trac_8820-elliptic-exp-rebase.patch) by cremona created at 2010-09-26 16:46:50\n\napplies to 4.6.alpha1",
+    "body": "Attachment [trac_8820-elliptic-exp-rebase.patch](tarball://root/attachments/some-uuid/ticket8820/trac_8820-elliptic-exp-rebase.patch) by @JohnCremona created at 2010-09-26 16:46:50\n\napplies to 4.6.alpha1",
     "created_at": "2010-09-26T16:46:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80968",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8820-elliptic-exp-rebase.patch](tarball://root/attachments/some-uuid/ticket8820/trac_8820-elliptic-exp-rebase.patch) by cremona created at 2010-09-26 16:46:50
+Attachment [trac_8820-elliptic-exp-rebase.patch](tarball://root/attachments/some-uuid/ticket8820/trac_8820-elliptic-exp-rebase.patch) by @JohnCremona created at 2010-09-26 16:46:50
 
 applies to 4.6.alpha1
 
@@ -503,7 +503,7 @@ archive/issue_comments_080969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80969",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_080970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80970",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -551,7 +551,7 @@ archive/issue_comments_080971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80971",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -569,7 +569,7 @@ archive/issue_comments_080972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80972",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_080973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80973",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -612,7 +612,7 @@ archive/issue_comments_080974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80974",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -625,16 +625,16 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_080975.json:
 ```json
 {
-    "body": "Attachment [8820_rebase_after_9931.patch](tarball://root/attachments/some-uuid/ticket8820/8820_rebase_after_9931.patch) by cremona created at 2010-09-26 21:42:19\n\nReplying to [comment:17 jdemeyer]:\n> Replying to [comment:16 cremona]:\n> > # User Jeroen Demeyer <jdemeyer`@`cage.ugent.be>\n> > ...\n> > [mq]: 8820_rebase_after_9931\n> > }}}\n> > and I think protocol would leave me as author (and have a better one-line description) ;)\n> \n> OK, I just copy-pasted the header from your patch.\n\nThanks -- I added your name as reviewer and marked the ticket Positive Review.  If you want, you can add your name as author (and mine as reviewer) -- I appreciate your attention to detail.\n\nRelease manager:  apply only the last patch 8820_rebase_after_9931.patch, after the patch at #9931.",
+    "body": "Attachment [8820_rebase_after_9931.patch](tarball://root/attachments/some-uuid/ticket8820/8820_rebase_after_9931.patch) by @JohnCremona created at 2010-09-26 21:42:19\n\nReplying to [comment:17 jdemeyer]:\n> Replying to [comment:16 cremona]:\n> > # User Jeroen Demeyer <jdemeyer`@`cage.ugent.be>\n> > ...\n> > [mq]: 8820_rebase_after_9931\n> > }}}\n> > and I think protocol would leave me as author (and have a better one-line description) ;)\n> \n> OK, I just copy-pasted the header from your patch.\n\nThanks -- I added your name as reviewer and marked the ticket Positive Review.  If you want, you can add your name as author (and mine as reviewer) -- I appreciate your attention to detail.\n\nRelease manager:  apply only the last patch 8820_rebase_after_9931.patch, after the patch at #9931.",
     "created_at": "2010-09-26T21:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80975",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8820_rebase_after_9931.patch](tarball://root/attachments/some-uuid/ticket8820/8820_rebase_after_9931.patch) by cremona created at 2010-09-26 21:42:19
+Attachment [8820_rebase_after_9931.patch](tarball://root/attachments/some-uuid/ticket8820/8820_rebase_after_9931.patch) by @JohnCremona created at 2010-09-26 21:42:19
 
 Replying to [comment:17 jdemeyer]:
 > Replying to [comment:16 cremona]:
@@ -662,7 +662,7 @@ archive/issue_comments_080976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80976",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -680,7 +680,7 @@ archive/issue_comments_080977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80977",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -698,7 +698,7 @@ archive/issue_comments_080978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80978",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -716,7 +716,7 @@ archive/issue_comments_080979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80979",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -739,7 +739,7 @@ archive/issue_comments_080980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80980",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -808,7 +808,7 @@ archive/issue_comments_080981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80981",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -826,7 +826,7 @@ archive/issue_comments_080982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80982",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -867,7 +867,7 @@ archive/issue_comments_080983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80983",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -885,7 +885,7 @@ archive/issue_comments_080984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80984",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -906,7 +906,7 @@ archive/issue_comments_080985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80985",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -924,7 +924,7 @@ archive/issue_comments_080986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80986",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -944,7 +944,7 @@ archive/issue_comments_080987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80987",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -962,7 +962,7 @@ archive/issue_comments_080988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80988",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -985,7 +985,7 @@ archive/issue_comments_080989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80989",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1006,7 +1006,7 @@ archive/issue_comments_080990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80990",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1030,7 +1030,7 @@ archive/issue_comments_080991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80991",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1048,7 +1048,7 @@ archive/issue_comments_080992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80992",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1066,7 +1066,7 @@ archive/issue_comments_080993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80993",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1099,7 +1099,7 @@ archive/issue_comments_080994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80994",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1112,16 +1112,16 @@ replaces previous
 archive/issue_comments_080995.json:
 ```json
 {
-    "body": "Attachment [8820_rebase_after_9931-new.patch](tarball://root/attachments/some-uuid/ticket8820/8820_rebase_after_9931-new.patch) by cremona created at 2010-10-05 08:30:57\n\nThanks to all, and apologies for missing that one.  I have changed the patch as suggested and just tested it on a 32-bit machine as well as a 64-bit.\n\nThat failing test is exactly the kind of thing it would be nice to avoid altogether in doctests, since the \"true\" value of the x-coordinate is 0, so all nonzero digits, and the sign, are completely spurious.\n\nJeroen, if you are happy with this now could you mark it as \"positive review\"?  Thanks.\n\nRelease manager: only the last patch is to be applied.",
+    "body": "Attachment [8820_rebase_after_9931-new.patch](tarball://root/attachments/some-uuid/ticket8820/8820_rebase_after_9931-new.patch) by @JohnCremona created at 2010-10-05 08:30:57\n\nThanks to all, and apologies for missing that one.  I have changed the patch as suggested and just tested it on a 32-bit machine as well as a 64-bit.\n\nThat failing test is exactly the kind of thing it would be nice to avoid altogether in doctests, since the \"true\" value of the x-coordinate is 0, so all nonzero digits, and the sign, are completely spurious.\n\nJeroen, if you are happy with this now could you mark it as \"positive review\"?  Thanks.\n\nRelease manager: only the last patch is to be applied.",
     "created_at": "2010-10-05T08:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80995",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8820_rebase_after_9931-new.patch](tarball://root/attachments/some-uuid/ticket8820/8820_rebase_after_9931-new.patch) by cremona created at 2010-10-05 08:30:57
+Attachment [8820_rebase_after_9931-new.patch](tarball://root/attachments/some-uuid/ticket8820/8820_rebase_after_9931-new.patch) by @JohnCremona created at 2010-10-05 08:30:57
 
 Thanks to all, and apologies for missing that one.  I have changed the patch as suggested and just tested it on a 32-bit machine as well as a 64-bit.
 
@@ -1143,7 +1143,7 @@ archive/issue_comments_080996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80996",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1161,7 +1161,7 @@ archive/issue_comments_080997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8820#issuecomment-80997",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

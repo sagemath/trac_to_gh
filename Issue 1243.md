@@ -108,16 +108,16 @@ Michael
 archive/issue_comments_007785.json:
 ```json
 {
-    "body": "Attachment [1243.patch](tarball://root/attachments/some-uuid/ticket1243/1243.patch) by mhansen created at 2007-12-06 02:51:16",
+    "body": "Attachment [1243.patch](tarball://root/attachments/some-uuid/ticket1243/1243.patch) by @mwhansen created at 2007-12-06 02:51:16",
     "created_at": "2007-12-06T02:51:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1243#issuecomment-7785",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1243.patch](tarball://root/attachments/some-uuid/ticket1243/1243.patch) by mhansen created at 2007-12-06 02:51:16
+Attachment [1243.patch](tarball://root/attachments/some-uuid/ticket1243/1243.patch) by @mwhansen created at 2007-12-06 02:51:16
 
 
 
@@ -126,16 +126,16 @@ Attachment [1243.patch](tarball://root/attachments/some-uuid/ticket1243/1243.pat
 archive/issue_comments_007786.json:
 ```json
 {
-    "body": "Attachment [1243-doc.patch](tarball://root/attachments/some-uuid/ticket1243/1243-doc.patch) by mhansen created at 2007-12-06 02:51:26",
+    "body": "Attachment [1243-doc.patch](tarball://root/attachments/some-uuid/ticket1243/1243-doc.patch) by @mwhansen created at 2007-12-06 02:51:26",
     "created_at": "2007-12-06T02:51:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1243#issuecomment-7786",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1243-doc.patch](tarball://root/attachments/some-uuid/ticket1243/1243-doc.patch) by mhansen created at 2007-12-06 02:51:26
+Attachment [1243-doc.patch](tarball://root/attachments/some-uuid/ticket1243/1243-doc.patch) by @mwhansen created at 2007-12-06 02:51:26
 
 
 
@@ -149,7 +149,7 @@ archive/issue_comments_007787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1243#issuecomment-7787",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_007788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1243#issuecomment-7788",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -180,16 +180,16 @@ Beat you to it ;-]
 archive/issue_comments_007789.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2007-12-06T02:52:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1243#issuecomment-7789",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -203,7 +203,7 @@ archive/issue_comments_007790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1243#issuecomment-7790",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

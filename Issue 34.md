@@ -14,7 +14,7 @@ archive/issues_000034.json:
     "title": "Bug in is_simple() for a space of ModularSymbols",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/34",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -53,7 +53,7 @@ archive/issue_comments_000221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/34",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-221",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -66,16 +66,16 @@ Added doctest to sage/modular/modsym/subspace.py exposing related bug.  As of 2.
 archive/issue_comments_000222.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2007-02-19T22:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/34",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-222",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -89,7 +89,7 @@ archive/issue_comments_000223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/34",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-223",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_000224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/34",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-224",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_000225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/34",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-225",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_000227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/34",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/34#issuecomment-227",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

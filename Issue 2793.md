@@ -14,7 +14,7 @@ archive/issues_002793.json:
     "title": "Bug in the sage preparser!  \"\\\"Yes,\\\" he said.\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2793",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2793
 archive/issue_comments_019178.json:
 ```json
 {
-    "body": "Attachment [sage-2793.2.patch](tarball://root/attachments/some-uuid/ticket2793/sage-2793.2.patch) by was created at 2008-04-04 01:09:42",
+    "body": "Attachment [sage-2793.2.patch](tarball://root/attachments/some-uuid/ticket2793/sage-2793.2.patch) by @williamstein created at 2008-04-04 01:09:42",
     "created_at": "2008-04-04T01:09:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2793#issuecomment-19178",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2793.2.patch](tarball://root/attachments/some-uuid/ticket2793/sage-2793.2.patch) by was created at 2008-04-04 01:09:42
+Attachment [sage-2793.2.patch](tarball://root/attachments/some-uuid/ticket2793/sage-2793.2.patch) by @williamstein created at 2008-04-04 01:09:42
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_019179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2793#issuecomment-19179",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -91,16 +91,16 @@ Breaks on `s = "\\"`.
 archive/issue_comments_019180.json:
 ```json
 {
-    "body": "Attachment [sage-2793-part2.patch](tarball://root/attachments/some-uuid/ticket2793/sage-2793-part2.patch) by was created at 2008-04-04 19:00:33",
+    "body": "Attachment [sage-2793-part2.patch](tarball://root/attachments/some-uuid/ticket2793/sage-2793-part2.patch) by @williamstein created at 2008-04-04 19:00:33",
     "created_at": "2008-04-04T19:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2793#issuecomment-19180",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2793-part2.patch](tarball://root/attachments/some-uuid/ticket2793/sage-2793-part2.patch) by was created at 2008-04-04 19:00:33
+Attachment [sage-2793-part2.patch](tarball://root/attachments/some-uuid/ticket2793/sage-2793-part2.patch) by @williamstein created at 2008-04-04 19:00:33
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_019181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2793#issuecomment-19181",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_019182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2793#issuecomment-19182",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

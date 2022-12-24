@@ -14,7 +14,7 @@ archive/issues_006865.json:
     "title": "Use templates for CSS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6865",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
@@ -39,7 +39,7 @@ archive/issue_comments_056658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56658",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -52,16 +52,16 @@ Moved CSS in `css.py` to templates, and adjusted `twist.py` to use them.
 archive/issue_comments_056659.json:
 ```json
 {
-    "body": "Attachment [trac_6865-templates-css.patch](tarball://root/attachments/some-uuid/ticket6865/trac_6865-templates-css.patch) by timdumol created at 2009-09-02 16:20:43",
+    "body": "Attachment [trac_6865-templates-css.patch](tarball://root/attachments/some-uuid/ticket6865/trac_6865-templates-css.patch) by @TimDumol created at 2009-09-02 16:20:43",
     "created_at": "2009-09-02T16:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56659",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_6865-templates-css.patch](tarball://root/attachments/some-uuid/ticket6865/trac_6865-templates-css.patch) by timdumol created at 2009-09-02 16:20:43
+Attachment [trac_6865-templates-css.patch](tarball://root/attachments/some-uuid/ticket6865/trac_6865-templates-css.patch) by @TimDumol created at 2009-09-02 16:20:43
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_056660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56660",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_056661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56661",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_056662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56662",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_056663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56663",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_056664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56664",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_056665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56665",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_056666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56666",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_056667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56667",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_056668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56668",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -268,16 +268,16 @@ Moved CSS in css.py to templates, and adjusted twist.py to use them. Rev 2. Appl
 archive/issue_comments_056669.json:
 ```json
 {
-    "body": "Attachment [trac_6865-templates-css.3.patch](tarball://root/attachments/some-uuid/ticket6865/trac_6865-templates-css.3.patch) by mpatel created at 2009-09-21 00:30:15\n\nMoved CSS in css.py to templates, and adjusted twist.py to use them. Rev 3. Apply this patch only.",
+    "body": "Attachment [trac_6865-templates-css.3.patch](tarball://root/attachments/some-uuid/ticket6865/trac_6865-templates-css.3.patch) by @qed777 created at 2009-09-21 00:30:15\n\nMoved CSS in css.py to templates, and adjusted twist.py to use them. Rev 3. Apply this patch only.",
     "created_at": "2009-09-21T00:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56669",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6865-templates-css.3.patch](tarball://root/attachments/some-uuid/ticket6865/trac_6865-templates-css.3.patch) by mpatel created at 2009-09-21 00:30:15
+Attachment [trac_6865-templates-css.3.patch](tarball://root/attachments/some-uuid/ticket6865/trac_6865-templates-css.3.patch) by @qed777 created at 2009-09-21 00:30:15
 
 Moved CSS in css.py to templates, and adjusted twist.py to use them. Rev 3. Apply this patch only.
 
@@ -293,7 +293,7 @@ archive/issue_comments_056670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56670",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_056671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56671",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_056672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6865#issuecomment-56672",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

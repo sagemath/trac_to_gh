@@ -3,7 +3,7 @@
 archive/issues_007331.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  was rlm\n\nKeywords: sha, tate-shafarevich group,  primary bound\n\n`p_primary_bound` fails on the following rank 0 curve with non-split multiplicative reduction.\n\n\n```\nE = EllipticCurve('270b')\nE.sha().p_primary_bound(5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7331\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein @rlmill\n\nKeywords: sha, tate-shafarevich group,  primary bound\n\n`p_primary_bound` fails on the following rank 0 curve with non-split multiplicative reduction.\n\n\n```\nE = EllipticCurve('270b')\nE.sha().p_primary_bound(5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7331\n\n",
     "created_at": "2009-10-28T09:56:17Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_007331.json:
     "title": "Conditions for non-split multiplicative reduction in p_primary_bound of Tate-Shafarevich groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7331",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  was rlm
+CC:  @williamstein @rlmill
 
 Keywords: sha, tate-shafarevich group,  primary bound
 
@@ -48,7 +48,7 @@ archive/issue_comments_061301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61301",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_061302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61302",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -79,16 +79,16 @@ Changing status from new to needs_review.
 archive/issue_comments_061303.json:
 ```json
 {
-    "body": "Attachment [trac_7331.patch](tarball://root/attachments/some-uuid/ticket7331/trac_7331.patch) by wuthrich created at 2009-10-28 13:02:44\n\nThis patch allows now for non-split multiplicative reduction and for p=3 when the rank is 0. (As we do not need p-adic heights in this case)",
+    "body": "Attachment [trac_7331.patch](tarball://root/attachments/some-uuid/ticket7331/trac_7331.patch) by @categorie created at 2009-10-28 13:02:44\n\nThis patch allows now for non-split multiplicative reduction and for p=3 when the rank is 0. (As we do not need p-adic heights in this case)",
     "created_at": "2009-10-28T13:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61303",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_7331.patch](tarball://root/attachments/some-uuid/ticket7331/trac_7331.patch) by wuthrich created at 2009-10-28 13:02:44
+Attachment [trac_7331.patch](tarball://root/attachments/some-uuid/ticket7331/trac_7331.patch) by @categorie created at 2009-10-28 13:02:44
 
 This patch allows now for non-split multiplicative reduction and for p=3 when the rank is 0. (As we do not need p-adic heights in this case)
 
@@ -104,7 +104,7 @@ archive/issue_comments_061304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61304",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_061305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61305",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_061306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61306",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_061307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61307",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -243,16 +243,16 @@ But I can not reproduce your second issue. This should have been solved by #6455
 archive/issue_comments_061308.json:
 ```json
 {
-    "body": "Attachment [trac_7331_2.patch](tarball://root/attachments/some-uuid/ticket7331/trac_7331_2.patch) by wuthrich created at 2009-10-28 18:50:28\n\nto be applied after teh first patch",
+    "body": "Attachment [trac_7331_2.patch](tarball://root/attachments/some-uuid/ticket7331/trac_7331_2.patch) by @categorie created at 2009-10-28 18:50:28\n\nto be applied after teh first patch",
     "created_at": "2009-10-28T18:50:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61308",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_7331_2.patch](tarball://root/attachments/some-uuid/ticket7331/trac_7331_2.patch) by wuthrich created at 2009-10-28 18:50:28
+Attachment [trac_7331_2.patch](tarball://root/attachments/some-uuid/ticket7331/trac_7331_2.patch) by @categorie created at 2009-10-28 18:50:28
 
 to be applied after teh first patch
 
@@ -268,7 +268,7 @@ archive/issue_comments_061309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61309",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_061310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61310",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_061311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61311",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

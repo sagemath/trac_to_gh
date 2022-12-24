@@ -14,7 +14,7 @@ archive/issues_009771.json:
     "title": "unify doctest commands, especially for 'long' and 'parallel' options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9771",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 Assignee: mvngu
@@ -47,7 +47,7 @@ archive/issue_comments_095760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9771#issuecomment-95760",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_095761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9771#issuecomment-95761",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_095762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9771#issuecomment-95762",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_095763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9771#issuecomment-95763",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_095764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9771#issuecomment-95764",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

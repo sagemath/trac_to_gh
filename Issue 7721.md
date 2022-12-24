@@ -3,7 +3,7 @@
 archive/issues_007721.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThere is no constructor for the Circuit digraph !\n\nIssue created by migration from https://trac.sagemath.org/ticket/7721\n\n",
+    "body": "Assignee: @rlmill\n\nThere is no constructor for the Circuit digraph !\n\nIssue created by migration from https://trac.sagemath.org/ticket/7721\n\n",
     "created_at": "2009-12-17T12:50:23Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007721.json:
     "title": "digraphs.CircuitGraph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7721",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 There is no constructor for the Circuit digraph !
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7721
 archive/issue_comments_066331.json:
 ```json
 {
-    "body": "Attachment [trac_7721.patch](tarball://root/attachments/some-uuid/ticket7721/trac_7721.patch) by ncohen created at 2009-12-17 13:04:19",
+    "body": "Attachment [trac_7721.patch](tarball://root/attachments/some-uuid/ticket7721/trac_7721.patch) by @nathanncohen created at 2009-12-17 13:04:19",
     "created_at": "2009-12-17T13:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7721#issuecomment-66331",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7721.patch](tarball://root/attachments/some-uuid/ticket7721/trac_7721.patch) by ncohen created at 2009-12-17 13:04:19
+Attachment [trac_7721.patch](tarball://root/attachments/some-uuid/ticket7721/trac_7721.patch) by @nathanncohen created at 2009-12-17 13:04:19
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_066332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7721#issuecomment-66332",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_066333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7721#issuecomment-66333",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_066334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7721#issuecomment-66334",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

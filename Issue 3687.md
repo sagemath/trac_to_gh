@@ -14,7 +14,7 @@ archive/issues_003687.json:
     "title": "trivial problems in the sage_scripts spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3687",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -67,7 +67,7 @@ archive/issue_comments_026137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3687#issuecomment-26137",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -129,16 +129,16 @@ sage-verify-pyc (this one is just weird)
 archive/issue_comments_026138.json:
 ```json
 {
-    "body": "Attachment [sage_scripts-shebang.patch](tarball://root/attachments/some-uuid/ticket3687/sage_scripts-shebang.patch) by tabbott created at 2009-04-26 05:26:09",
+    "body": "Attachment [sage_scripts-shebang.patch](tarball://root/attachments/some-uuid/ticket3687/sage_scripts-shebang.patch) by @timabbott created at 2009-04-26 05:26:09",
     "created_at": "2009-04-26T05:26:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3687#issuecomment-26138",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [sage_scripts-shebang.patch](tarball://root/attachments/some-uuid/ticket3687/sage_scripts-shebang.patch) by tabbott created at 2009-04-26 05:26:09
+Attachment [sage_scripts-shebang.patch](tarball://root/attachments/some-uuid/ticket3687/sage_scripts-shebang.patch) by @timabbott created at 2009-04-26 05:26:09
 
 
 
@@ -152,7 +152,7 @@ archive/issue_comments_026139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3687#issuecomment-26139",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_026140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3687#issuecomment-26140",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 

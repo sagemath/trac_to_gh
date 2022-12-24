@@ -3,7 +3,7 @@
 archive/issues_002274.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nFor various reasons, ease of maintenance among others, the coding theory functions in SAGE which are GAP wrappers for GUAVA functions will be moved over to pure Python/SAGE. This is just a \"first installment\". In this patch (to be attached once the testall suite is completed)\n\nHammingCode, CyclicCode, dual_code, put_standard_form,\n\nare moved over and the simple function LinearCodeFromCheckMatrix is added.\nThe amusing utility function \"permutation_action\" is needed, which provides a\n(left) action of SymmetricGroup(n) on a list/vector/sequence/matrix of\nlength n.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2274\n\n",
+    "body": "Assignee: @rlmill\n\nFor various reasons, ease of maintenance among others, the coding theory functions in SAGE which are GAP wrappers for GUAVA functions will be moved over to pure Python/SAGE. This is just a \"first installment\". In this patch (to be attached once the testall suite is completed)\n\nHammingCode, CyclicCode, dual_code, put_standard_form,\n\nare moved over and the simple function LinearCodeFromCheckMatrix is added.\nThe amusing utility function \"permutation_action\" is needed, which provides a\n(left) action of SymmetricGroup(n) on a list/vector/sequence/matrix of\nlength n.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2274\n\n",
     "created_at": "2008-02-23T02:50:35Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_002274.json:
     "title": "guava->python, 1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2274",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 For various reasons, ease of maintenance among others, the coding theory functions in SAGE which are GAP wrappers for GUAVA functions will be moved over to pure Python/SAGE. This is just a "first installment". In this patch (to be attached once the testall suite is completed)
 
@@ -44,7 +44,7 @@ archive/issue_comments_015079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2274#issuecomment-15079",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_015080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2274#issuecomment-15080",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_015083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2274#issuecomment-15083",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -146,16 +146,16 @@ I don't know how to export a doc bundle (and I've tried many different ways). I'
 archive/issue_comments_015084.json:
 ```json
 {
-    "body": "Attachment [8672.patch](tarball://root/attachments/some-uuid/ticket2274/8672.patch) by wdj created at 2008-02-23 15:12:06",
+    "body": "Attachment [8672.patch](tarball://root/attachments/some-uuid/ticket2274/8672.patch) by @wdjoyner created at 2008-02-23 15:12:06",
     "created_at": "2008-02-23T15:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2274#issuecomment-15084",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [8672.patch](tarball://root/attachments/some-uuid/ticket2274/8672.patch) by wdj created at 2008-02-23 15:12:06
+Attachment [8672.patch](tarball://root/attachments/some-uuid/ticket2274/8672.patch) by @wdjoyner created at 2008-02-23 15:12:06
 
 
 
@@ -169,7 +169,7 @@ archive/issue_comments_015085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2274#issuecomment-15085",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -184,16 +184,16 @@ Can you tell me if these are acceptable or if they need to be redone?
 archive/issue_comments_015086.json:
 ```json
 {
-    "body": "Attachment [435.patch](tarball://root/attachments/some-uuid/ticket2274/435.patch) by wdj created at 2008-02-23 15:18:48",
+    "body": "Attachment [435.patch](tarball://root/attachments/some-uuid/ticket2274/435.patch) by @wdjoyner created at 2008-02-23 15:18:48",
     "created_at": "2008-02-23T15:18:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2274#issuecomment-15086",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [435.patch](tarball://root/attachments/some-uuid/ticket2274/435.patch) by wdj created at 2008-02-23 15:18:48
+Attachment [435.patch](tarball://root/attachments/some-uuid/ticket2274/435.patch) by @wdjoyner created at 2008-02-23 15:18:48
 
 
 
@@ -261,7 +261,7 @@ archive/issue_comments_015089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2274#issuecomment-15089",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

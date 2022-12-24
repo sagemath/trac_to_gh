@@ -3,7 +3,7 @@
 archive/issues_001145.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jdemeyer jpflori\n\nI propose the following strategy for factor(integer):\n\n1) do trial division by all primes up to say 1000. This can be done efficiently by a single\n   gcd with the product of all those primes.\n2) use GMP-ECM, starting from say B1=100, and increasing B1 by sqrt(B1) at each step, until\n   one reaches the _recommended_B1_list value which corresponds to 1/3 of the size of the\n   number to be factored. Thus for a 90-digit input, one will stop at B1=250000.\n3) try GMP-ECM P-1 and P+1 with respectively 9*B1 and 3*B1 where B1 is the last value tried\n   for ECM. The corresponding cost of those runs will be approximately the same as the last\n   ECM curve, thus this will not slow down the average computation, and might find a few factors.\n4) run MPQS or GNFS. You might want to issue a warning to the user (if called from toplevel) at\n   that time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1145\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jdemeyer jpflori\n\nI propose the following strategy for factor(integer):\n\n1) do trial division by all primes up to say 1000. This can be done efficiently by a single\n   gcd with the product of all those primes.\n2) use GMP-ECM, starting from say B1=100, and increasing B1 by sqrt(B1) at each step, until\n   one reaches the _recommended_B1_list value which corresponds to 1/3 of the size of the\n   number to be factored. Thus for a 90-digit input, one will stop at B1=250000.\n3) try GMP-ECM P-1 and P+1 with respectively 9*B1 and 3*B1 where B1 is the last value tried\n   for ECM. The corresponding cost of those runs will be approximately the same as the last\n   ECM curve, thus this will not slow down the average computation, and might find a few factors.\n4) run MPQS or GNFS. You might want to issue a warning to the user (if called from toplevel) at\n   that time.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1145\n\n",
     "created_at": "2007-11-11T13:26:17Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_001145.json:
     "title": "high-level strategy for integer factorization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1145",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jdemeyer jpflori
+CC:  @jdemeyer jpflori
 
 I propose the following strategy for factor(integer):
 
@@ -50,7 +50,7 @@ archive/issue_comments_006959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6959",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_006961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6961",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -131,16 +131,16 @@ Steps 2) and 3) of my original proposal might be easily implemented using the "f
 archive/issue_comments_006962.json:
 ```json
 {
-    "body": "Changing assignee from was to tbd.",
+    "body": "Changing assignee from @williamstein to tbd.",
     "created_at": "2009-07-20T19:58:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6962",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to tbd.
+Changing assignee from @williamstein to tbd.
 
 
 
@@ -154,7 +154,7 @@ archive/issue_comments_006963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6963",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_006964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6964",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_006965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6965",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_006967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6967",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_006968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6968",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_006969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6969",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_006970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6970",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -295,16 +295,16 @@ sorry, I wasn't aware of that.
 archive/issue_comments_006971.json:
 ```json
 {
-    "body": "Changing assignee from tbd to aapitzsch.",
+    "body": "Changing assignee from tbd to @a-andre.",
     "created_at": "2010-11-17T16:19:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6971",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Changing assignee from tbd to aapitzsch.
+Changing assignee from tbd to @a-andre.
 
 
 
@@ -318,7 +318,7 @@ archive/issue_comments_006972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6972",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -331,16 +331,16 @@ Changing status from new to needs_review.
 archive/issue_comments_006973.json:
 ```json
 {
-    "body": "Attachment [evaluate_1145.sage](tarball://root/attachments/some-uuid/ticket1145/evaluate_1145.sage) by aapitzsch created at 2010-11-19 15:18:02\n\nApply first: #5945, #5310\n\nPatch makes use of SQUFOF, ecmfactor, cunningham_table and sympy.factorint.\n\nTo pass all tests cunningham database should become a standard package or the warning in cunningham_tables.py should be removed.\n\nTo evalutate run attachment:evaluate_1145.sage\n\nThis should also fix #9463.",
+    "body": "Attachment [evaluate_1145.sage](tarball://root/attachments/some-uuid/ticket1145/evaluate_1145.sage) by @a-andre created at 2010-11-19 15:18:02\n\nApply first: #5945, #5310\n\nPatch makes use of SQUFOF, ecmfactor, cunningham_table and sympy.factorint.\n\nTo pass all tests cunningham database should become a standard package or the warning in cunningham_tables.py should be removed.\n\nTo evalutate run attachment:evaluate_1145.sage\n\nThis should also fix #9463.",
     "created_at": "2010-11-19T15:18:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6973",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [evaluate_1145.sage](tarball://root/attachments/some-uuid/ticket1145/evaluate_1145.sage) by aapitzsch created at 2010-11-19 15:18:02
+Attachment [evaluate_1145.sage](tarball://root/attachments/some-uuid/ticket1145/evaluate_1145.sage) by @a-andre created at 2010-11-19 15:18:02
 
 Apply first: #5945, #5310
 
@@ -364,7 +364,7 @@ archive/issue_comments_006974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6974",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_006975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6975",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_006976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6976",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_006977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6977",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_006978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6978",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -470,7 +470,7 @@ archive/issue_comments_006979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6979",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_006980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6980",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_006981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6981",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_006982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6982",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -554,7 +554,7 @@ archive/issue_comments_006983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6983",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -572,7 +572,7 @@ archive/issue_comments_006984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6984",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_006985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6985",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_006986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6986",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -636,16 +636,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_006987.json:
 ```json
 {
-    "body": "Attachment [trac_1145_cunningham_warning.patch](tarball://root/attachments/some-uuid/ticket1145/trac_1145_cunningham_warning.patch) by aapitzsch created at 2010-12-07 15:56:41",
+    "body": "Attachment [trac_1145_cunningham_warning.patch](tarball://root/attachments/some-uuid/ticket1145/trac_1145_cunningham_warning.patch) by @a-andre created at 2010-12-07 15:56:41",
     "created_at": "2010-12-07T15:56:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6987",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [trac_1145_cunningham_warning.patch](tarball://root/attachments/some-uuid/ticket1145/trac_1145_cunningham_warning.patch) by aapitzsch created at 2010-12-07 15:56:41
+Attachment [trac_1145_cunningham_warning.patch](tarball://root/attachments/some-uuid/ticket1145/trac_1145_cunningham_warning.patch) by @a-andre created at 2010-12-07 15:56:41
 
 
 
@@ -659,7 +659,7 @@ archive/issue_comments_006988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6988",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -677,7 +677,7 @@ archive/issue_comments_006989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6989",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_006990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6990",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -714,7 +714,7 @@ archive/issue_comments_006991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6991",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -729,16 +729,16 @@ Apply trac_1145_integer_factorization.patch and trac_1145_cunningham_warning.pat
 archive/issue_comments_006992.json:
 ```json
 {
-    "body": "Attachment [trac_1145_integer_factorization.patch](tarball://root/attachments/some-uuid/ticket1145/trac_1145_integer_factorization.patch) by zimmerma created at 2011-06-17 09:39:26\n\nYafu (http://sourceforge.net/projects/yafu/) might be an interesting software to include,\nalthough I have difficulties finding its license. It includes a multi-thread implementation\nof SIQS, which might be interesting in the 70-100 digit range.\n\nPaul Zimmermann",
+    "body": "Attachment [trac_1145_integer_factorization.patch](tarball://root/attachments/some-uuid/ticket1145/trac_1145_integer_factorization.patch) by @zimmermann6 created at 2011-06-17 09:39:26\n\nYafu (http://sourceforge.net/projects/yafu/) might be an interesting software to include,\nalthough I have difficulties finding its license. It includes a multi-thread implementation\nof SIQS, which might be interesting in the 70-100 digit range.\n\nPaul Zimmermann",
     "created_at": "2011-06-17T09:39:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6992",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_1145_integer_factorization.patch](tarball://root/attachments/some-uuid/ticket1145/trac_1145_integer_factorization.patch) by zimmerma created at 2011-06-17 09:39:26
+Attachment [trac_1145_integer_factorization.patch](tarball://root/attachments/some-uuid/ticket1145/trac_1145_integer_factorization.patch) by @zimmermann6 created at 2011-06-17 09:39:26
 
 Yafu (http://sourceforge.net/projects/yafu/) might be an interesting software to include,
 although I have difficulties finding its license. It includes a multi-thread implementation
@@ -758,7 +758,7 @@ archive/issue_comments_006993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6993",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -776,7 +776,7 @@ archive/issue_comments_006994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6994",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -796,7 +796,7 @@ archive/issue_comments_006995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1145#issuecomment-6995",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 

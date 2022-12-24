@@ -3,7 +3,7 @@
 archive/issues_009738.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  robertwb was jdemeyer\n\nWith Sage 4.5.3.alpha0 on sage.math:\n\n```sh\n$ cd SAGE_ROOT\n$ find -name core -type f\n$ ulimit -c unlimited\n$ ./sage -t -long devel/sage/sage/interfaces/genus2reduction.py \nsage -t -long \"devel/sage/sage/interfaces/genus2reduction.py\"\n         [3.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.1 seconds\n$ find -name core -type f\n./data/extcode/genus2reduction/core\n$\n```\n\nFor background see [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/239f712a39fce4a).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9738\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @robertwb @williamstein @jdemeyer\n\nWith Sage 4.5.3.alpha0 on sage.math:\n\n```sh\n$ cd SAGE_ROOT\n$ find -name core -type f\n$ ulimit -c unlimited\n$ ./sage -t -long devel/sage/sage/interfaces/genus2reduction.py \nsage -t -long \"devel/sage/sage/interfaces/genus2reduction.py\"\n         [3.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.1 seconds\n$ find -name core -type f\n./data/extcode/genus2reduction/core\n$\n```\n\nFor background see [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/239f712a39fce4a).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9738\n\n",
     "created_at": "2010-08-12T22:58:35Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009738.json:
     "title": "Stealth core dump from testing sage/interfaces/genus2reduction.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9738",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  robertwb was jdemeyer
+CC:  @robertwb @williamstein @jdemeyer
 
 With Sage 4.5.3.alpha0 on sage.math:
 
@@ -57,7 +57,7 @@ archive/issue_comments_095207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95207",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -82,16 +82,16 @@ env SAGE_PEXPECT_LOG="yes" ./sage -t devel/sage/sage/interfaces/genus2reduction.
 archive/issue_comments_095208.json:
 ```json
 {
-    "body": "Attachment [genus2reduction.c.diff](tarball://root/attachments/some-uuid/ticket9738/genus2reduction.c.diff) by mpatel created at 2010-08-13 00:40:49\n\nQuit on `quit`.  Diff of `genus2reduction.c` from g2r 0.3.p6.",
+    "body": "Attachment [genus2reduction.c.diff](tarball://root/attachments/some-uuid/ticket9738/genus2reduction.c.diff) by @qed777 created at 2010-08-13 00:40:49\n\nQuit on `quit`.  Diff of `genus2reduction.c` from g2r 0.3.p6.",
     "created_at": "2010-08-13T00:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95208",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [genus2reduction.c.diff](tarball://root/attachments/some-uuid/ticket9738/genus2reduction.c.diff) by mpatel created at 2010-08-13 00:40:49
+Attachment [genus2reduction.c.diff](tarball://root/attachments/some-uuid/ticket9738/genus2reduction.c.diff) by @qed777 created at 2010-08-13 00:40:49
 
 Quit on `quit`.  Diff of `genus2reduction.c` from g2r 0.3.p6.
 
@@ -107,7 +107,7 @@ archive/issue_comments_095209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95209",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_095210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95210",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -141,16 +141,16 @@ I don't think there is a problem, this issue is independent of #9343 and #9591 (
 archive/issue_comments_095211.json:
 ```json
 {
-    "body": "Attachment [9738_genus2reduction_init_opts.patch](tarball://root/attachments/some-uuid/ticket9738/9738_genus2reduction_init_opts.patch) by jdemeyer created at 2010-08-13 22:49:53\n\nAlternative patch to fix the issue",
+    "body": "Attachment [9738_genus2reduction_init_opts.patch](tarball://root/attachments/some-uuid/ticket9738/9738_genus2reduction_init_opts.patch) by @jdemeyer created at 2010-08-13 22:49:53\n\nAlternative patch to fix the issue",
     "created_at": "2010-08-13T22:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95211",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9738_genus2reduction_init_opts.patch](tarball://root/attachments/some-uuid/ticket9738/9738_genus2reduction_init_opts.patch) by jdemeyer created at 2010-08-13 22:49:53
+Attachment [9738_genus2reduction_init_opts.patch](tarball://root/attachments/some-uuid/ticket9738/9738_genus2reduction_init_opts.patch) by @jdemeyer created at 2010-08-13 22:49:53
 
 Alternative patch to fix the issue
 
@@ -166,7 +166,7 @@ archive/issue_comments_095212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95212",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_095213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95213",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_095214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95214",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_095215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95215",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_095216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95216",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_095217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95217",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_095218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95218",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_095219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95219",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_095220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9738#issuecomment-95220",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006904.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: matrix(QQ,2,[1,0,0,1]).change_ring(GF(2)) - 1\nTraceback (most recent call last):\n...\nRuntimeError\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/6904\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: matrix(QQ,2,[1,0,0,1]).change_ring(GF(2)) - 1\nTraceback (most recent call last):\n...\nRuntimeError\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/6904\n\n",
     "created_at": "2009-09-08T20:13:34Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_006904.json:
     "title": "change ring broken over QQ and GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6904",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -43,7 +43,7 @@ archive/issue_comments_057035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57035",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_057036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57036",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_057037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57037",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_057038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57038",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_057039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57039",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -207,16 +207,16 @@ Changing status from new to needs_review.
 archive/issue_comments_057040.json:
 ```json
 {
-    "body": "Attachment [sage-6904.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904.patch) by cpernet created at 2010-07-07 13:12:16\n\nThe problem is due to the fact that with p=2, the change_ring() method \u00a0should not create a matrix_modn_dense but a matrix_mod2_dense (wrapping m4ri).\n\nI added this special case.\n\nMeanwhile, it revealed a conflict in the declaration of ONE (in libs/pari/gens.pyx, and in m4ri). So I renammed the macros in pari/gens.*.",
+    "body": "Attachment [sage-6904.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904.patch) by @ClementPernet created at 2010-07-07 13:12:16\n\nThe problem is due to the fact that with p=2, the change_ring() method \u00a0should not create a matrix_modn_dense but a matrix_mod2_dense (wrapping m4ri).\n\nI added this special case.\n\nMeanwhile, it revealed a conflict in the declaration of ONE (in libs/pari/gens.pyx, and in m4ri). So I renammed the macros in pari/gens.*.",
     "created_at": "2010-07-07T13:12:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57040",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
-Attachment [sage-6904.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904.patch) by cpernet created at 2010-07-07 13:12:16
+Attachment [sage-6904.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904.patch) by @ClementPernet created at 2010-07-07 13:12:16
 
 The problem is due to the fact that with p=2, the change_ring() method  should not create a matrix_modn_dense but a matrix_mod2_dense (wrapping m4ri).
 
@@ -231,16 +231,16 @@ Meanwhile, it revealed a conflict in the declaration of ONE (in libs/pari/gens.p
 archive/issue_comments_057041.json:
 ```json
 {
-    "body": "Changing assignee from was to cpernet.",
+    "body": "Changing assignee from @williamstein to @ClementPernet.",
     "created_at": "2010-07-07T13:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57041",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
-Changing assignee from was to cpernet.
+Changing assignee from @williamstein to @ClementPernet.
 
 
 
@@ -254,7 +254,7 @@ archive/issue_comments_057042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57042",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_057043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57043",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -289,16 +289,16 @@ Two changes needed:
 archive/issue_comments_057044.json:
 ```json
 {
-    "body": "Attachment [sage-6904-v2.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v2.patch) by cpernet created at 2010-07-08 12:54:45\n\ncorrected version following the remarks by was",
+    "body": "Attachment [sage-6904-v2.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v2.patch) by @ClementPernet created at 2010-07-08 12:54:45\n\ncorrected version following the remarks by was",
     "created_at": "2010-07-08T12:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57044",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
-Attachment [sage-6904-v2.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v2.patch) by cpernet created at 2010-07-08 12:54:45
+Attachment [sage-6904-v2.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v2.patch) by @ClementPernet created at 2010-07-08 12:54:45
 
 corrected version following the remarks by was
 
@@ -314,7 +314,7 @@ archive/issue_comments_057045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57045",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_057046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57046",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -345,16 +345,16 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_057047.json:
 ```json
 {
-    "body": "Attachment [sage-6904-v3.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v3.patch) by was created at 2010-07-08 13:03:45",
+    "body": "Attachment [sage-6904-v3.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v3.patch) by @williamstein created at 2010-07-08 13:03:45",
     "created_at": "2010-07-08T13:03:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57047",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-6904-v3.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v3.patch) by was created at 2010-07-08 13:03:45
+Attachment [sage-6904-v3.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v3.patch) by @williamstein created at 2010-07-08 13:03:45
 
 
 
@@ -368,7 +368,7 @@ archive/issue_comments_057048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57048",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_057049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57049",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

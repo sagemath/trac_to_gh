@@ -3,7 +3,7 @@
 archive/issues_008616.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  robert.marik novoselt\n\nKeywords: symbolic, type, subexpression\n\nProvides unified interface for standard python types and sage specific types.\nTreats everything as symbolic expression which allows to check its type, take\noperator and operands and extract subexpressions by given types.\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/f2ba2198dc5b79ed\n\nIssue created by migration from https://trac.sagemath.org/ticket/8616\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik @novoselt\n\nKeywords: symbolic, type, subexpression\n\nProvides unified interface for standard python types and sage specific types.\nTreats everything as symbolic expression which allows to check its type, take\noperator and operands and extract subexpressions by given types.\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/f2ba2198dc5b79ed\n\nIssue created by migration from https://trac.sagemath.org/ticket/8616\n\n",
     "created_at": "2010-03-27T20:26:08Z",
     "labels": [
         "symbolics",
@@ -17,9 +17,9 @@ archive/issues_008616.json:
     "user": "yuri.k"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  robert.marik novoselt
+CC:  @robert-marik @novoselt
 
 Keywords: symbolic, type, subexpression
 
@@ -103,7 +103,7 @@ archive/issue_comments_078078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8616#issuecomment-78078",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_078081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8616#issuecomment-78081",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_078082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8616#issuecomment-78082",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_078084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8616#issuecomment-78084",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

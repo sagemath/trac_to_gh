@@ -3,7 +3,7 @@
 archive/issues_005268.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: combinatorial classes, design\n\nThere are a lot of design issues which concern combinatorial classes. They are currently discussed on the mailing list and on the wiki. See\n    http://groups.google.com/group/sage-combinat-devel/\n    http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/fbf6d9c2ba7cac15\n    http://wiki.sagemath.org/CombinatorialClass \nSomeones has to lead/moderate these discussions, to summarize the result and to incorporate it into sage doc. After this we should emit a bunch of tickets to update the various combinatorial classes to this design. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5268\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: combinatorial classes, design\n\nThere are a lot of design issues which concern combinatorial classes. They are currently discussed on the mailing list and on the wiki. See\n    http://groups.google.com/group/sage-combinat-devel/\n    http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/fbf6d9c2ba7cac15\n    http://wiki.sagemath.org/CombinatorialClass \nSomeones has to lead/moderate these discussions, to summarize the result and to incorporate it into sage doc. After this we should emit a bunch of tickets to update the various combinatorial classes to this design. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5268\n\n",
     "created_at": "2009-02-14T11:01:51Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005268.json:
     "title": "General design and documentation for Combinatorial Classes.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5268",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -45,7 +45,7 @@ archive/issue_comments_040442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5268#issuecomment-40442",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_040443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5268#issuecomment-40443",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_040444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5268#issuecomment-40444",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_040445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5268#issuecomment-40445",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_040446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5268#issuecomment-40446",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_040447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5268#issuecomment-40447",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

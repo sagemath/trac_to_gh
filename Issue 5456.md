@@ -3,7 +3,7 @@
 archive/issues_005456.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was\n\nThis is a follow-up ticket to #5428.\n\nSee the discussion there, I'll attach a preliminary patch (untested) for the \"root cause\". However, this change will break many doctests (see #5428). These are easy to fix, but make necessary a much larger patch (touching more than a dozen files) than the preliminary one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5456\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nThis is a follow-up ticket to #5428.\n\nSee the discussion there, I'll attach a preliminary patch (untested) for the \"root cause\". However, this change will break many doctests (see #5428). These are easy to fix, but make necessary a much larger patch (touching more than a dozen files) than the preliminary one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5456\n\n",
     "created_at": "2009-03-08T10:05:57Z",
     "labels": [
         "number theory",
@@ -17,9 +17,9 @@ archive/issues_005456.json:
     "user": "GeorgSWeber"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was
+CC:  @williamstein
 
 This is a follow-up ticket to #5428.
 
@@ -72,16 +72,16 @@ Attachment [trac_5456_preliminary.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_042285.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2013-07-25T17:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5456#issuecomment-42285",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_042286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5456#issuecomment-42286",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

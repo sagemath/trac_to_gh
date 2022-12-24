@@ -3,7 +3,7 @@
 archive/issues_002180.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  moretti\n\nIn 2.10.2.alpha0, there appears to be a small problem with the cython skipping \nstep. \u00a0To illustrate the bug:\n1) \u00a0Start with a 2.10.2.alpha0 (with padic import patch) which is built \nup-to-date\n2) \u00a0Add a new patch which adds a new .pyx file\n3) \u00a0sage -br\n4) \u00a0The bug is that you get a message like: \nbuilding 'sage.rings.polynomial.multi_polynomial_factor' extension\nerror: unknown file type '.pyx' \n(from 'sage/rings/polynomial/multi_polynomial_factor.pyx')\nsage: There was an error installing modified sage library code.\n\n\nThis appears to arise because the new .pyx file is not in the cache and so the \nbuild optimizer believes that there are no .pyx files to build and just lets \nthe ordinary disttools do their work. \u00a0Of course, the ordinary disttools \ndon't know what to do with .pyx files.\n\nA work-around is to 'touch' a .pyx file anywhere in the tree which is already \nin the cache. \u00a0A build after the touch will build the touch'ed file and the \nnew file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2180\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @bobmoretti\n\nIn 2.10.2.alpha0, there appears to be a small problem with the cython skipping \nstep. \u00a0To illustrate the bug:\n1) \u00a0Start with a 2.10.2.alpha0 (with padic import patch) which is built \nup-to-date\n2) \u00a0Add a new patch which adds a new .pyx file\n3) \u00a0sage -br\n4) \u00a0The bug is that you get a message like: \nbuilding 'sage.rings.polynomial.multi_polynomial_factor' extension\nerror: unknown file type '.pyx' \n(from 'sage/rings/polynomial/multi_polynomial_factor.pyx')\nsage: There was an error installing modified sage library code.\n\n\nThis appears to arise because the new .pyx file is not in the cache and so the \nbuild optimizer believes that there are no .pyx files to build and just lets \nthe ordinary disttools do their work. \u00a0Of course, the ordinary disttools \ndon't know what to do with .pyx files.\n\nA work-around is to 'touch' a .pyx file anywhere in the tree which is already \nin the cache. \u00a0A build after the touch will build the touch'ed file and the \nnew file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2180\n\n",
     "created_at": "2008-02-16T20:56:40Z",
     "labels": [
         "algebraic geometry",
@@ -17,9 +17,9 @@ archive/issues_002180.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  moretti
+CC:  @bobmoretti
 
 In 2.10.2.alpha0, there appears to be a small problem with the cython skipping 
 step.  To illustrate the bug:
@@ -72,7 +72,7 @@ Changing component from algebraic geometry to packages.
 archive/issue_comments_014317.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-02-16T20:58:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2180",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_014317.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -112,7 +112,7 @@ Michael
 archive/issue_comments_014319.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to moretti.",
+    "body": "Changing assignee from mabshoff to @bobmoretti.",
     "created_at": "2008-02-24T00:26:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2180",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_014319.json:
 }
 ```
 
-Changing assignee from mabshoff to moretti.
+Changing assignee from mabshoff to @bobmoretti.
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_014320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2180#issuecomment-14320",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_014321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2180#issuecomment-14321",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_014322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2180#issuecomment-14322",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_014323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2180#issuecomment-14323",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_014325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2180#issuecomment-14325",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

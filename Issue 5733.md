@@ -3,7 +3,7 @@
 archive/issues_005733.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n```\nsage: G=Graph({'a':['a','b','b','b','e'],'b':['c','d','e'],'c':\nsage: ['c','d','d','d'],'d':['e']})\nsage: G.show3d()\nTraceback (most recent call last):\n...\nZeroDivisionError: float division\n```\n\n\nReported by alec`@`mihailovs\n\nIssue created by migration from https://trac.sagemath.org/ticket/5733\n\n",
+    "body": "Assignee: @rlmill\n\n\n```\nsage: G=Graph({'a':['a','b','b','b','e'],'b':['c','d','e'],'c':\nsage: ['c','d','d','d'],'d':['e']})\nsage: G.show3d()\nTraceback (most recent call last):\n...\nZeroDivisionError: float division\n```\n\n\nReported by alec`@`mihailovs\n\nIssue created by migration from https://trac.sagemath.org/ticket/5733\n\n",
     "created_at": "2009-04-10T14:19:31Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_005733.json:
     "title": "bug in 3d plotting of graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5733",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 ```
@@ -48,7 +48,7 @@ archive/issue_comments_044799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5733#issuecomment-44799",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_044800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5733#issuecomment-44800",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -79,16 +79,16 @@ This needs to be implemented, but until then it needs to fail more gracefully. T
 archive/issue_comments_044801.json:
 ```json
 {
-    "body": "Attachment [trac_5733.patch](tarball://root/attachments/some-uuid/ticket5733/trac_5733.patch) by rlm created at 2009-04-10 15:32:37",
+    "body": "Attachment [trac_5733.patch](tarball://root/attachments/some-uuid/ticket5733/trac_5733.patch) by @rlmill created at 2009-04-10 15:32:37",
     "created_at": "2009-04-10T15:32:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5733#issuecomment-44801",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5733.patch](tarball://root/attachments/some-uuid/ticket5733/trac_5733.patch) by rlm created at 2009-04-10 15:32:37
+Attachment [trac_5733.patch](tarball://root/attachments/some-uuid/ticket5733/trac_5733.patch) by @rlmill created at 2009-04-10 15:32:37
 
 
 

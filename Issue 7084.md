@@ -14,7 +14,7 @@ archive/issues_007084.json:
     "title": "Make assumption comparison work for GenericDeclarations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7084",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 On Sep 30, 11:07 am, lutusp <lut...`@`gmail.com> wrote:
@@ -63,7 +63,7 @@ archive/issue_comments_058555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7084#issuecomment-58555",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -76,16 +76,16 @@ This should fix it.
 archive/issue_comments_058556.json:
 ```json
 {
-    "body": "Attachment [trac_7084-assumptions.patch](tarball://root/attachments/some-uuid/ticket7084/trac_7084-assumptions.patch) by kcrisman created at 2009-09-30 18:16:01\n\nBased on 4.1.2.alpha4",
+    "body": "Attachment [trac_7084-assumptions.patch](tarball://root/attachments/some-uuid/ticket7084/trac_7084-assumptions.patch) by @kcrisman created at 2009-09-30 18:16:01\n\nBased on 4.1.2.alpha4",
     "created_at": "2009-09-30T18:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7084#issuecomment-58556",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7084-assumptions.patch](tarball://root/attachments/some-uuid/ticket7084/trac_7084-assumptions.patch) by kcrisman created at 2009-09-30 18:16:01
+Attachment [trac_7084-assumptions.patch](tarball://root/attachments/some-uuid/ticket7084/trac_7084-assumptions.patch) by @kcrisman created at 2009-09-30 18:16:01
 
 Based on 4.1.2.alpha4
 
@@ -101,7 +101,7 @@ archive/issue_comments_058557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7084#issuecomment-58557",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_058558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7084#issuecomment-58558",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

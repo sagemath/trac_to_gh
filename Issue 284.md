@@ -13,7 +13,7 @@ archive/issues_000284.json:
     "title": "m4r -- include Gregory Bard's method of four russians C library in SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/284",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: martin albrecht
@@ -36,7 +36,7 @@ archive/issue_comments_001353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/284#issuecomment-1353",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -54,7 +54,7 @@ archive/issue_comments_001354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/284#issuecomment-1354",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

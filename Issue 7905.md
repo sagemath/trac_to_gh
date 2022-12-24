@@ -3,7 +3,7 @@
 archive/issues_007905.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp dimpase\n\n## Build environment\n* Sun Blade 2000. 2 x UltraSPARC III+ CPUs at 1.2 GHz. 8 GB RAM\n* Solaris 10 update 7 (05/2009)\n* Sage 4.3 with numerous modifications, including updated sage-env to hopefully handle 64-bit builds properly. \n* Sun Studio 12.1 \n* 64-bit build. SAGE64 was set to yes. \n\n\n```\nCC=/opt/sunstudio12.1/bin/cc\nCXX=/opt/sunstudio12.1/bin/CC\nSAGE64=yes\nSAGE_FORTRAN_LIB=/usr/local/gcc-4.4.1-sun-linker/lib/libgfortran.so\nSAGE_FORTRAN=/opt/sunstudio12.1/bin/f95\n```\n\n\nI'm not sure why I set SAGE_FORTRAN_LIB there, but I doubt it was doing anything. The build breaks with:\n\n\n```\n /opt/sunstudio12.1/bin/cc -DHAVE_CONFIG_H -I. -I.. -I/export/home/drkirkby/sun-64/sage-4.3/local/include -I/export/home/drkirkby/sun-64/sage-4.3/local/include -g -O2 -m64 -g -c ath.c  -KPIC -DPIC -o .libs/libgcrypt_la-ath.o\n /opt/sunstudio12.1/bin/cc -DHAVE_CONFIG_H -I. -I.. -I/export/home/drkirkby/sun-64/sage-4.3/local/include -I/export/home/drkirkby/sun-64/sage-4.3/local/include -g -O2 -m64 -g -c ath.c -o libgcrypt_la-ath.o >/dev/null 2>&1\n/bin/bash ../libtool --tag=CC   --mode=link /opt/sunstudio12.1/bin/cc -I/export/home/drkirkby/sun-64/sage-4.3/local/include -g  -O2  -m64  -g      -version-info 16:2:5 -m64  -o libgcrypt.la -rpath /export/home/drkirkby/sun-64/sage-4.3/local/lib libgcrypt_la-visibility.lo libgcrypt_la-misc.lo libgcrypt_la-global.lo libgcrypt_la-sexp.lo libgcrypt_la-hwfeatures.lo libgcrypt_la-stdmem.lo libgcrypt_la-secmem.lo libgcrypt_la-missing-string.lo libgcrypt_la-module.lo libgcrypt_la-fips.lo libgcrypt_la-hmac256.lo libgcrypt_la-ath.lo ../cipher/libcipher.la ../random/librandom.la ../mpi/libmpi.la -L/export/home/drkirkby/sun-64/sage-4.3/local/lib -lgpg-error -lsocket -lsocket \nld -G -h libgcrypt.so.11 -o .libs/libgcrypt.so.11.5.2  .libs/libgcrypt_la-visibility.o .libs/libgcrypt_la-misc.o .libs/libgcrypt_la-global.o .libs/libgcrypt_la-sexp.o .libs/libgcrypt_la-hwfeatures.o .libs/libgcrypt_la-stdmem.o .libs/libgcrypt_la-secmem.o .libs/libgcrypt_la-missing-string.o .libs/libgcrypt_la-module.o .libs/libgcrypt_la-fips.o .libs/libgcrypt_la-hmac256.o .libs/libgcrypt_la-ath.o -z allextract ../cipher/.libs/libcipher.a ../random/.libs/librandom.a ../mpi/.libs/libmpi.a -z defaultextract  -R/export/home/drkirkby/sun-64/sage-4.3/local/lib -R/export/home/drkirkby/sun-64/sage-4.3/local/lib -L/export/home/drkirkby/sun-64/sage-4.3/local/lib /export/home/drkirkby/sun-64/sage-4.3/local/lib/libgpg-error.so -lsocket -lc \nld: fatal: file /export/home/drkirkby/sun-64/sage-4.3/local/lib/libgpg-error.so: wrong ELF class: ELFCLASS32\nld: fatal: File processing errors. No output written to .libs/libgcrypt.so.11.5.2\nmake[4]: *** [libgcrypt.la] Error 1\nmake[4]: Leaving directory `/export/home/drkirkby/sun-64/sage-4.3/spkg/build/libgcrypt-1.4.4.p1/src/src'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sun-64/sage-4.3/spkg/build/libgcrypt-1.4.4.p1/src'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sun-64/sage-4.3/spkg/build/libgcrypt-1.4.4.p1/src'\nfailed to build libgcrypt\n\nreal    8m30.831s\nuser    2m9.479s\nsys     1m35.707s\nsage: An error occurred while installing libgcrypt-1.4.4.p1\n```\n\n\nHence I need to resolve why 32-bit binaries are being built, when they should be 64-bit. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7905\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @dimpase\n\n## Build environment\n* Sun Blade 2000. 2 x UltraSPARC III+ CPUs at 1.2 GHz. 8 GB RAM\n* Solaris 10 update 7 (05/2009)\n* Sage 4.3 with numerous modifications, including updated sage-env to hopefully handle 64-bit builds properly. \n* Sun Studio 12.1 \n* 64-bit build. SAGE64 was set to yes. \n\n\n```\nCC=/opt/sunstudio12.1/bin/cc\nCXX=/opt/sunstudio12.1/bin/CC\nSAGE64=yes\nSAGE_FORTRAN_LIB=/usr/local/gcc-4.4.1-sun-linker/lib/libgfortran.so\nSAGE_FORTRAN=/opt/sunstudio12.1/bin/f95\n```\n\n\nI'm not sure why I set SAGE_FORTRAN_LIB there, but I doubt it was doing anything. The build breaks with:\n\n\n```\n /opt/sunstudio12.1/bin/cc -DHAVE_CONFIG_H -I. -I.. -I/export/home/drkirkby/sun-64/sage-4.3/local/include -I/export/home/drkirkby/sun-64/sage-4.3/local/include -g -O2 -m64 -g -c ath.c  -KPIC -DPIC -o .libs/libgcrypt_la-ath.o\n /opt/sunstudio12.1/bin/cc -DHAVE_CONFIG_H -I. -I.. -I/export/home/drkirkby/sun-64/sage-4.3/local/include -I/export/home/drkirkby/sun-64/sage-4.3/local/include -g -O2 -m64 -g -c ath.c -o libgcrypt_la-ath.o >/dev/null 2>&1\n/bin/bash ../libtool --tag=CC   --mode=link /opt/sunstudio12.1/bin/cc -I/export/home/drkirkby/sun-64/sage-4.3/local/include -g  -O2  -m64  -g      -version-info 16:2:5 -m64  -o libgcrypt.la -rpath /export/home/drkirkby/sun-64/sage-4.3/local/lib libgcrypt_la-visibility.lo libgcrypt_la-misc.lo libgcrypt_la-global.lo libgcrypt_la-sexp.lo libgcrypt_la-hwfeatures.lo libgcrypt_la-stdmem.lo libgcrypt_la-secmem.lo libgcrypt_la-missing-string.lo libgcrypt_la-module.lo libgcrypt_la-fips.lo libgcrypt_la-hmac256.lo libgcrypt_la-ath.lo ../cipher/libcipher.la ../random/librandom.la ../mpi/libmpi.la -L/export/home/drkirkby/sun-64/sage-4.3/local/lib -lgpg-error -lsocket -lsocket \nld -G -h libgcrypt.so.11 -o .libs/libgcrypt.so.11.5.2  .libs/libgcrypt_la-visibility.o .libs/libgcrypt_la-misc.o .libs/libgcrypt_la-global.o .libs/libgcrypt_la-sexp.o .libs/libgcrypt_la-hwfeatures.o .libs/libgcrypt_la-stdmem.o .libs/libgcrypt_la-secmem.o .libs/libgcrypt_la-missing-string.o .libs/libgcrypt_la-module.o .libs/libgcrypt_la-fips.o .libs/libgcrypt_la-hmac256.o .libs/libgcrypt_la-ath.o -z allextract ../cipher/.libs/libcipher.a ../random/.libs/librandom.a ../mpi/.libs/libmpi.a -z defaultextract  -R/export/home/drkirkby/sun-64/sage-4.3/local/lib -R/export/home/drkirkby/sun-64/sage-4.3/local/lib -L/export/home/drkirkby/sun-64/sage-4.3/local/lib /export/home/drkirkby/sun-64/sage-4.3/local/lib/libgpg-error.so -lsocket -lc \nld: fatal: file /export/home/drkirkby/sun-64/sage-4.3/local/lib/libgpg-error.so: wrong ELF class: ELFCLASS32\nld: fatal: File processing errors. No output written to .libs/libgcrypt.so.11.5.2\nmake[4]: *** [libgcrypt.la] Error 1\nmake[4]: Leaving directory `/export/home/drkirkby/sun-64/sage-4.3/spkg/build/libgcrypt-1.4.4.p1/src/src'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sun-64/sage-4.3/spkg/build/libgcrypt-1.4.4.p1/src'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sun-64/sage-4.3/spkg/build/libgcrypt-1.4.4.p1/src'\nfailed to build libgcrypt\n\nreal    8m30.831s\nuser    2m9.479s\nsys     1m35.707s\nsage: An error occurred while installing libgcrypt-1.4.4.p1\n```\n\n\nHence I need to resolve why 32-bit binaries are being built, when they should be 64-bit. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7905\n\n",
     "created_at": "2010-01-12T08:26:27Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_007905.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp dimpase
+CC:  @jaapspies @dimpase
 
 ## Build environment
 * Sun Blade 2000. 2 x UltraSPARC III+ CPUs at 1.2 GHz. 8 GB RAM
@@ -82,7 +82,7 @@ archive/issue_comments_068734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7905#issuecomment-68734",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_068735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7905#issuecomment-68735",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_068736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7905#issuecomment-68736",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_068737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7905#issuecomment-68737",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_068738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7905#issuecomment-68738",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_068739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7905#issuecomment-68739",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

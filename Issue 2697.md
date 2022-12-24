@@ -3,7 +3,7 @@
 archive/issues_002697.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\nThis is right:\n\n\n```\nsage: integrate(x, x,-1,1)\n0\n```\n\n\nThis error message (which is because I forgot to give the variable of integration) is\ncompletely broken. The \"raise err\" line in the source code should be just \"raise\", i.e., delete err, which makes no sense. Or?  Anyway, this is just wrong as is.\n\n```\nsage: integrate(x, -1,1)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.4/local/lib/python2.5/site-packages/sage/calculus/functional.py in integral(f, *args, **kwds)\n    255         return f.integral(*args, **kwds)\n    256     except ValueError, err:\n--> 257         raise err\n    258     except AttributeError:\n    259         pass\n\n<type 'exceptions.ValueError'>: variable name is not a valid Python identifier\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2697\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nThis is right:\n\n\n```\nsage: integrate(x, x,-1,1)\n0\n```\n\n\nThis error message (which is because I forgot to give the variable of integration) is\ncompletely broken. The \"raise err\" line in the source code should be just \"raise\", i.e., delete err, which makes no sense. Or?  Anyway, this is just wrong as is.\n\n```\nsage: integrate(x, -1,1)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.4/local/lib/python2.5/site-packages/sage/calculus/functional.py in integral(f, *args, **kwds)\n    255         return f.integral(*args, **kwds)\n    256     except ValueError, err:\n--> 257         raise err\n    258     except AttributeError:\n    259         pass\n\n<type 'exceptions.ValueError'>: variable name is not a valid Python identifier\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2697\n\n",
     "created_at": "2008-03-28T07:39:54Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_002697.json:
     "title": "stupid bug in integrate (easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2697",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 This is right:
 
@@ -132,7 +132,7 @@ archive/issue_comments_018567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18567",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_018568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18568",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -163,16 +163,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_018569.json:
 ```json
 {
-    "body": "Attachment [int_without_var.patch](tarball://root/attachments/some-uuid/ticket2697/int_without_var.patch) by kcrisman created at 2008-10-17 03:02:38\n\nThese should now work:\n\n\n```\nsage: integrate(x, -1,1)\n0\nsage: integrate(sin(x),0,pi)\n2\n```\n\n\nSadly, because I don't know enough about Maxima to get it to accept the default variable, we still get this joke one might make in freshman calculus:\n\n\n```\nsage: integrate(sin,0,pi) \npi*sin \n```\n",
+    "body": "Attachment [int_without_var.patch](tarball://root/attachments/some-uuid/ticket2697/int_without_var.patch) by @kcrisman created at 2008-10-17 03:02:38\n\nThese should now work:\n\n\n```\nsage: integrate(x, -1,1)\n0\nsage: integrate(sin(x),0,pi)\n2\n```\n\n\nSadly, because I don't know enough about Maxima to get it to accept the default variable, we still get this joke one might make in freshman calculus:\n\n\n```\nsage: integrate(sin,0,pi) \npi*sin \n```\n",
     "created_at": "2008-10-17T03:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18569",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [int_without_var.patch](tarball://root/attachments/some-uuid/ticket2697/int_without_var.patch) by kcrisman created at 2008-10-17 03:02:38
+Attachment [int_without_var.patch](tarball://root/attachments/some-uuid/ticket2697/int_without_var.patch) by @kcrisman created at 2008-10-17 03:02:38
 
 These should now work:
 
@@ -206,7 +206,7 @@ archive/issue_comments_018570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18570",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -248,16 +248,16 @@ pi*sin(x)
 archive/issue_comments_018571.json:
 ```json
 {
-    "body": "Changing assignee from was to kcrisman.",
+    "body": "Changing assignee from @williamstein to @kcrisman.",
     "created_at": "2008-11-01T03:19:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18571",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from was to kcrisman.
+Changing assignee from @williamstein to @kcrisman.
 
 
 
@@ -271,7 +271,7 @@ archive/issue_comments_018572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18572",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -327,16 +327,16 @@ That alone is worth it for me.
 archive/issue_comments_018573.json:
 ```json
 {
-    "body": "Attachment [int_without_var-final.patch](tarball://root/attachments/some-uuid/ticket2697/int_without_var-final.patch) by kcrisman created at 2008-11-01 03:20:21\n\nBased on 3.2.alpha0",
+    "body": "Attachment [int_without_var-final.patch](tarball://root/attachments/some-uuid/ticket2697/int_without_var-final.patch) by @kcrisman created at 2008-11-01 03:20:21\n\nBased on 3.2.alpha0",
     "created_at": "2008-11-01T03:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18573",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [int_without_var-final.patch](tarball://root/attachments/some-uuid/ticket2697/int_without_var-final.patch) by kcrisman created at 2008-11-01 03:20:21
+Attachment [int_without_var-final.patch](tarball://root/attachments/some-uuid/ticket2697/int_without_var-final.patch) by @kcrisman created at 2008-11-01 03:20:21
 
 Based on 3.2.alpha0
 
@@ -352,7 +352,7 @@ archive/issue_comments_018574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18574",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_018575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18575",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_018576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18576",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -419,16 +419,16 @@ I've attached a new patch that resolves this issue. It should be more robust, as
 archive/issue_comments_018577.json:
 ```json
 {
-    "body": "Attachment [2697-integrate-without-var.patch](tarball://root/attachments/some-uuid/ticket2697/2697-integrate-without-var.patch) by kcrisman created at 2008-12-21 21:58:44\n\nI don't have a chance to review this yet (tomorrow?) but at least want to point out that the other day I noticed that the functionality did also not work for CallableSymbolicExpression (e.g. lines 5779 or so the integral() method), which seems to have an even more primitive version of the same code.  E.g., to try the original example for this ticket:\n\n```\nsage: f(x)=x\nsage: f\nx |--> x\nsage: type(f)\n<class 'sage.calculus.calculus.CallableSymbolicExpression'>\nsage: integrate(f,-1,1)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\nsage: f.integral(-1,1)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\n```\n\nBut this does work, so I think one would really have to fix the CallableSymbolicVariable piece:\n\n```\nsage: f.integral(x,-1,1)\n0\nsage: integral(f,x,-1,1)\n0\n```\n\nThanks for working on this - I knew it would be impossible for me to get to it until after the semester, and that proved to be true.",
+    "body": "Attachment [2697-integrate-without-var.patch](tarball://root/attachments/some-uuid/ticket2697/2697-integrate-without-var.patch) by @kcrisman created at 2008-12-21 21:58:44\n\nI don't have a chance to review this yet (tomorrow?) but at least want to point out that the other day I noticed that the functionality did also not work for CallableSymbolicExpression (e.g. lines 5779 or so the integral() method), which seems to have an even more primitive version of the same code.  E.g., to try the original example for this ticket:\n\n```\nsage: f(x)=x\nsage: f\nx |--> x\nsage: type(f)\n<class 'sage.calculus.calculus.CallableSymbolicExpression'>\nsage: integrate(f,-1,1)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\nsage: f.integral(-1,1)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\n```\n\nBut this does work, so I think one would really have to fix the CallableSymbolicVariable piece:\n\n```\nsage: f.integral(x,-1,1)\n0\nsage: integral(f,x,-1,1)\n0\n```\n\nThanks for working on this - I knew it would be impossible for me to get to it until after the semester, and that proved to be true.",
     "created_at": "2008-12-21T21:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18577",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [2697-integrate-without-var.patch](tarball://root/attachments/some-uuid/ticket2697/2697-integrate-without-var.patch) by kcrisman created at 2008-12-21 21:58:44
+Attachment [2697-integrate-without-var.patch](tarball://root/attachments/some-uuid/ticket2697/2697-integrate-without-var.patch) by @kcrisman created at 2008-12-21 21:58:44
 
 I don't have a chance to review this yet (tomorrow?) but at least want to point out that the other day I noticed that the functionality did also not work for CallableSymbolicExpression (e.g. lines 5779 or so the integral() method), which seems to have an even more primitive version of the same code.  E.g., to try the original example for this ticket:
 
@@ -471,7 +471,7 @@ archive/issue_comments_018578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18578",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_018579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18579",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_018580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18580",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -569,7 +569,7 @@ archive/issue_comments_018582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18582",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -614,7 +614,7 @@ archive/issue_comments_018584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18584",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -637,7 +637,7 @@ archive/issue_comments_018585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18585",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -690,7 +690,7 @@ archive/issue_comments_018587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18587",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -711,7 +711,7 @@ archive/issue_comments_018588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18588",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -775,7 +775,7 @@ archive/issue_comments_018589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18589",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -788,16 +788,16 @@ Based on 3.3.alpha0
 archive/issue_comments_018590.json:
 ```json
 {
-    "body": "Attachment [trac_2697.patch](tarball://root/attachments/some-uuid/ticket2697/trac_2697.patch) by kcrisman created at 2009-01-21 03:55:04\n\nThis patch (trac_2697.patch) should take care of the piecewise error and still do the new things, plus adds a little documentation for things like f(x)=x^2.  My calculus.py always times out in testing, but hopefully running that test and the piecewise.py test should lead to a final positive review.",
+    "body": "Attachment [trac_2697.patch](tarball://root/attachments/some-uuid/ticket2697/trac_2697.patch) by @kcrisman created at 2009-01-21 03:55:04\n\nThis patch (trac_2697.patch) should take care of the piecewise error and still do the new things, plus adds a little documentation for things like f(x)=x^2.  My calculus.py always times out in testing, but hopefully running that test and the piecewise.py test should lead to a final positive review.",
     "created_at": "2009-01-21T03:55:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18590",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_2697.patch](tarball://root/attachments/some-uuid/ticket2697/trac_2697.patch) by kcrisman created at 2009-01-21 03:55:04
+Attachment [trac_2697.patch](tarball://root/attachments/some-uuid/ticket2697/trac_2697.patch) by @kcrisman created at 2009-01-21 03:55:04
 
 This patch (trac_2697.patch) should take care of the piecewise error and still do the new things, plus adds a little documentation for things like f(x)=x^2.  My calculus.py always times out in testing, but hopefully running that test and the piecewise.py test should lead to a final positive review.
 
@@ -813,7 +813,7 @@ archive/issue_comments_018591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18591",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

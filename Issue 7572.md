@@ -3,7 +3,7 @@
 archive/issues_007572.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ncohen\n\nThe GLPK interface `sage_malloc`s various arrays and never frees them. Also the interface uses Python keywords as variable names.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7572\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nathanncohen\n\nThe GLPK interface `sage_malloc`s various arrays and never frees them. Also the interface uses Python keywords as variable names.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7572\n\n",
     "created_at": "2009-12-01T15:53:33Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_007572.json:
     "title": "Memleak in GLPK interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7572",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tbd
 
-CC:  ncohen
+CC:  @nathanncohen
 
 The GLPK interface `sage_malloc`s various arrays and never frees them. Also the interface uses Python keywords as variable names.
 
@@ -39,7 +39,7 @@ archive/issue_comments_064449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7572#issuecomment-64449",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_064450.json:
 ```json
 {
-    "body": "Attachment [glpk_sage_free.patch](tarball://root/attachments/some-uuid/ticket7572/glpk_sage_free.patch) by malb created at 2009-12-01 15:54:16\n\nThe attached patch is for the GLPK SPKG.",
+    "body": "Attachment [glpk_sage_free.patch](tarball://root/attachments/some-uuid/ticket7572/glpk_sage_free.patch) by @malb created at 2009-12-01 15:54:16\n\nThe attached patch is for the GLPK SPKG.",
     "created_at": "2009-12-01T15:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7572#issuecomment-64450",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [glpk_sage_free.patch](tarball://root/attachments/some-uuid/ticket7572/glpk_sage_free.patch) by malb created at 2009-12-01 15:54:16
+Attachment [glpk_sage_free.patch](tarball://root/attachments/some-uuid/ticket7572/glpk_sage_free.patch) by @malb created at 2009-12-01 15:54:16
 
 The attached patch is for the GLPK SPKG.
 
@@ -77,7 +77,7 @@ archive/issue_comments_064451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7572#issuecomment-64451",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_064452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7572#issuecomment-64452",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_064453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7572#issuecomment-64453",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_064454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7572#issuecomment-64454",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_064455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7572#issuecomment-64455",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_064456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7572#issuecomment-64456",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

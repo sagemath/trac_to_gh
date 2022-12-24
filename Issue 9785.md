@@ -3,7 +3,7 @@
 archive/issues_009785.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  hivert brunellus jason\n\nKeywords: multiset\n\n\n```\nsage: S = Subsets(['a','a','b','b'], 2, submultiset=True); S.list()\n[['a', 'a'], ['a', 'b'], ['b', 'b']]\nsage: S = Subsets(['a','b','a','b'], 2, submultiset=True); S.list()\n[['a', 'a'], ['a', 'a'], ['a', 'a']]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9786\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @hivert brunellus @jasongrout\n\nKeywords: multiset\n\n\n```\nsage: S = Subsets(['a','a','b','b'], 2, submultiset=True); S.list()\n[['a', 'a'], ['a', 'b'], ['b', 'b']]\nsage: S = Subsets(['a','b','a','b'], 2, submultiset=True); S.list()\n[['a', 'a'], ['a', 'a'], ['a', 'a']]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9786\n\n",
     "created_at": "2010-08-23T12:57:41Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_009785.json:
     "title": "Subsets(list, submultiset=True): wrong output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9785",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 Assignee: sage-combinat
 
-CC:  hivert brunellus jason
+CC:  @hivert brunellus @jasongrout
 
 Keywords: multiset
 
@@ -84,7 +84,7 @@ archive/issue_comments_096048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9785#issuecomment-96048",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -97,16 +97,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_096049.json:
 ```json
 {
-    "body": "Attachment [trac_9786_submultiset_fix.patch](tarball://root/attachments/some-uuid/ticket9786/trac_9786_submultiset_fix.patch) by mhansen created at 2011-12-18 13:26:47\n\nLooks good to me.",
+    "body": "Attachment [trac_9786_submultiset_fix.patch](tarball://root/attachments/some-uuid/ticket9786/trac_9786_submultiset_fix.patch) by @mwhansen created at 2011-12-18 13:26:47\n\nLooks good to me.",
     "created_at": "2011-12-18T13:26:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9785#issuecomment-96049",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_9786_submultiset_fix.patch](tarball://root/attachments/some-uuid/ticket9786/trac_9786_submultiset_fix.patch) by mhansen created at 2011-12-18 13:26:47
+Attachment [trac_9786_submultiset_fix.patch](tarball://root/attachments/some-uuid/ticket9786/trac_9786_submultiset_fix.patch) by @mwhansen created at 2011-12-18 13:26:47
 
 Looks good to me.
 
@@ -122,7 +122,7 @@ archive/issue_comments_096050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9785#issuecomment-96050",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

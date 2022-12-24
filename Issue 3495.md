@@ -3,7 +3,7 @@
 archive/issues_003495.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThe following will crash in sage:\n\n\n```\nsage: Matrix(CyclotomicField(3), 1, [0]).charpoly()\n```\n\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3495\n\n",
+    "body": "Assignee: @craigcitro\n\nThe following will crash in sage:\n\n\n```\nsage: Matrix(CyclotomicField(3), 1, [0]).charpoly()\n```\n\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3495\n\n",
     "created_at": "2008-06-23T18:53:49Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003495.json:
     "title": "[with patch, needs review] bug in cyclotomic charpoly for 1x1 matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3495",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 The following will crash in sage:
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3495
 archive/issue_comments_024611.json:
 ```json
 {
-    "body": "Attachment [trac-3495.patch](tarball://root/attachments/some-uuid/ticket3495/trac-3495.patch) by craigcitro created at 2008-06-23 18:54:19",
+    "body": "Attachment [trac-3495.patch](tarball://root/attachments/some-uuid/ticket3495/trac-3495.patch) by @craigcitro created at 2008-06-23 18:54:19",
     "created_at": "2008-06-23T18:54:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3495#issuecomment-24611",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3495.patch](tarball://root/attachments/some-uuid/ticket3495/trac-3495.patch) by craigcitro created at 2008-06-23 18:54:19
+Attachment [trac-3495.patch](tarball://root/attachments/some-uuid/ticket3495/trac-3495.patch) by @craigcitro created at 2008-06-23 18:54:19
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_024612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3495#issuecomment-24612",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_024613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3495#issuecomment-24613",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

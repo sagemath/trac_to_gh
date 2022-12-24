@@ -3,7 +3,7 @@
 archive/issues_004446.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  robertwb was mhansen mvngu schilly leif\n\nHerewith and there ([http://www.loria.fr/~thevenyp/complex_mpc.patch](http://www.loria.fr/~thevenyp/complex_mpc.patch) 38K) is a patch with new classes using the MPC library for complex multi-precision arithmetic (see ticket #4308 for the associated spackage).\n\nThis is an adaptation of the module real_mpfr and of ComplexField and [ComplexNumber](ComplexNumber) classes. It adds a class MPComplexField with precision (common to both part) and rounding modes (specific to each part) and a class MPComplexNumber.\n\nThis first attempt implements only the complex arithmetic.\n\nThe test suite does fail due to coercion problems I can't solve.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4446\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb @williamstein @mwhansen mvngu @haraldschilly @nexttime\n\nHerewith and there ([http://www.loria.fr/~thevenyp/complex_mpc.patch](http://www.loria.fr/~thevenyp/complex_mpc.patch) 38K) is a patch with new classes using the MPC library for complex multi-precision arithmetic (see ticket #4308 for the associated spackage).\n\nThis is an adaptation of the module real_mpfr and of ComplexField and [ComplexNumber](ComplexNumber) classes. It adds a class MPComplexField with precision (common to both part) and rounding modes (specific to each part) and a class MPComplexNumber.\n\nThis first attempt implements only the complex arithmetic.\n\nThe test suite does fail due to coercion problems I can't solve.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4446\n\n",
     "created_at": "2008-11-05T18:04:29Z",
     "labels": [
         "optional packages",
@@ -19,7 +19,7 @@ archive/issues_004446.json:
 ```
 Assignee: mabshoff
 
-CC:  robertwb was mhansen mvngu schilly leif
+CC:  @robertwb @williamstein @mwhansen mvngu @haraldschilly @nexttime
 
 Herewith and there ([http://www.loria.fr/~thevenyp/complex_mpc.patch](http://www.loria.fr/~thevenyp/complex_mpc.patch) 38K) is a patch with new classes using the MPC library for complex multi-precision arithmetic (see ticket #4308 for the associated spackage).
 
@@ -58,16 +58,16 @@ Attachment [complex_mpc.patch](tarball://root/attachments/some-uuid/ticket4446/c
 archive/issue_comments_032706.json:
 ```json
 {
-    "body": "Attachment [trac4446-complex_mpc.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446-complex_mpc.patch) by AlexGhitza created at 2008-11-22 08:28:10\n\nreplace the previous patch (rebase against 3.2)",
+    "body": "Attachment [trac4446-complex_mpc.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446-complex_mpc.patch) by @aghitza created at 2008-11-22 08:28:10\n\nreplace the previous patch (rebase against 3.2)",
     "created_at": "2008-11-22T08:28:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32706",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac4446-complex_mpc.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446-complex_mpc.patch) by AlexGhitza created at 2008-11-22 08:28:10
+Attachment [trac4446-complex_mpc.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446-complex_mpc.patch) by @aghitza created at 2008-11-22 08:28:10
 
 replace the previous patch (rebase against 3.2)
 
@@ -83,7 +83,7 @@ archive/issue_comments_032707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32707",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_032710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32710",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -152,16 +152,16 @@ apply after complex_mpc.p0.patch
 archive/issue_comments_032711.json:
 ```json
 {
-    "body": "Attachment [trac4446_fix.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_fix.patch) by AlexGhitza created at 2008-12-05 07:50:45\n\nPhilippe,\n\nGreat work!  I'll do my best to review this for 3.2.2.  Right now I notice that the patch doesn't work in 3.2.1 because of #4580.  I'm attaching a tiny patch that fixes that (should be applied after complex_mpc.p0.patch.",
+    "body": "Attachment [trac4446_fix.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_fix.patch) by @aghitza created at 2008-12-05 07:50:45\n\nPhilippe,\n\nGreat work!  I'll do my best to review this for 3.2.2.  Right now I notice that the patch doesn't work in 3.2.1 because of #4580.  I'm attaching a tiny patch that fixes that (should be applied after complex_mpc.p0.patch.",
     "created_at": "2008-12-05T07:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32711",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac4446_fix.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_fix.patch) by AlexGhitza created at 2008-12-05 07:50:45
+Attachment [trac4446_fix.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_fix.patch) by @aghitza created at 2008-12-05 07:50:45
 
 Philippe,
 
@@ -179,7 +179,7 @@ archive/issue_comments_032712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32712",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_032713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32713",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -261,16 +261,16 @@ apply after complex_mpc.p0.patch and trac4446_fix.patch
 archive/issue_comments_032714.json:
 ```json
 {
-    "body": "Attachment [trac4446_doctests.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_doctests.patch) by AlexGhitza created at 2008-12-11 05:13:09\n\nI added a patch trac4446_doctests.patch, which does a number of things:\n\n* adds doctests for all functions except three internal use only functions\n* changes _repr_ of complex numbers so that it agrees with the way complex numbers are currently printed in Sage\n* makes MPComplexField inherit from ParentWithGens, being generated over its real field by the square root of -1 (just as it is now); this required adding a few functions.  So now one can do\n\n\n```\nsage: from sage.rings.complex_mpc import MPComplexField\nsage: MPC.<j> = MPComplexField()\nsage: j^2\n-1.00000000000000 + 0.000000000000000*I\n```\n\n\nNote that only the last three patches should be applied, in order: complex_mpc.p0.patch, trac4446_fix.patch, and trac4446_doctests.patch",
+    "body": "Attachment [trac4446_doctests.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_doctests.patch) by @aghitza created at 2008-12-11 05:13:09\n\nI added a patch trac4446_doctests.patch, which does a number of things:\n\n* adds doctests for all functions except three internal use only functions\n* changes _repr_ of complex numbers so that it agrees with the way complex numbers are currently printed in Sage\n* makes MPComplexField inherit from ParentWithGens, being generated over its real field by the square root of -1 (just as it is now); this required adding a few functions.  So now one can do\n\n\n```\nsage: from sage.rings.complex_mpc import MPComplexField\nsage: MPC.<j> = MPComplexField()\nsage: j^2\n-1.00000000000000 + 0.000000000000000*I\n```\n\n\nNote that only the last three patches should be applied, in order: complex_mpc.p0.patch, trac4446_fix.patch, and trac4446_doctests.patch",
     "created_at": "2008-12-11T05:13:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32714",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac4446_doctests.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_doctests.patch) by AlexGhitza created at 2008-12-11 05:13:09
+Attachment [trac4446_doctests.patch](tarball://root/attachments/some-uuid/ticket4446/trac4446_doctests.patch) by @aghitza created at 2008-12-11 05:13:09
 
 I added a patch trac4446_doctests.patch, which does a number of things:
 
@@ -343,7 +343,7 @@ archive/issue_comments_032717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32717",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -432,16 +432,16 @@ Thus until the above issues are addressed, I see no point in mpc going into sage
 archive/issue_comments_032718.json:
 ```json
 {
-    "body": "Attachment [complex_mpc.pxd](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.pxd) by zimmerma created at 2009-08-26 12:31:09",
+    "body": "Attachment [complex_mpc.pxd](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.pxd) by @zimmermann6 created at 2009-08-26 12:31:09",
     "created_at": "2009-08-26T12:31:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32718",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [complex_mpc.pxd](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.pxd) by zimmerma created at 2009-08-26 12:31:09
+Attachment [complex_mpc.pxd](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.pxd) by @zimmermann6 created at 2009-08-26 12:31:09
 
 
 
@@ -450,16 +450,16 @@ Attachment [complex_mpc.pxd](tarball://root/attachments/some-uuid/ticket4446/com
 archive/issue_comments_032719.json:
 ```json
 {
-    "body": "Attachment [complex_mpc.pyx](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.pyx) by zimmerma created at 2009-08-26 12:31:42",
+    "body": "Attachment [complex_mpc.pyx](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.pyx) by @zimmermann6 created at 2009-08-26 12:31:42",
     "created_at": "2009-08-26T12:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32719",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [complex_mpc.pyx](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.pyx) by zimmerma created at 2009-08-26 12:31:42
+Attachment [complex_mpc.pyx](tarball://root/attachments/some-uuid/ticket4446/complex_mpc.pyx) by @zimmermann6 created at 2009-08-26 12:31:42
 
 
 
@@ -468,16 +468,16 @@ Attachment [complex_mpc.pyx](tarball://root/attachments/some-uuid/ticket4446/com
 archive/issue_comments_032720.json:
 ```json
 {
-    "body": "Attachment [mpc.pxi](tarball://root/attachments/some-uuid/ticket4446/mpc.pxi) by zimmerma created at 2009-08-26 12:31:53",
+    "body": "Attachment [mpc.pxi](tarball://root/attachments/some-uuid/ticket4446/mpc.pxi) by @zimmermann6 created at 2009-08-26 12:31:53",
     "created_at": "2009-08-26T12:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32720",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [mpc.pxi](tarball://root/attachments/some-uuid/ticket4446/mpc.pxi) by zimmerma created at 2009-08-26 12:31:53
+Attachment [mpc.pxi](tarball://root/attachments/some-uuid/ticket4446/mpc.pxi) by @zimmermann6 created at 2009-08-26 12:31:53
 
 
 
@@ -491,7 +491,7 @@ archive/issue_comments_032721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32721",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -773,7 +773,7 @@ archive/issue_comments_032732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32732",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -897,7 +897,7 @@ archive/issue_comments_032736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32736",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -949,16 +949,16 @@ Did somebody check the 500-bit outputs of CC and MPC agree?
 archive/issue_comments_032737.json:
 ```json
 {
-    "body": "Attachment [sage.c](tarball://root/attachments/some-uuid/ticket4446/sage.c) by zimmerma created at 2010-03-10 15:29:41",
+    "body": "Attachment [sage.c](tarball://root/attachments/some-uuid/ticket4446/sage.c) by @zimmermann6 created at 2010-03-10 15:29:41",
     "created_at": "2010-03-10T15:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32737",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [sage.c](tarball://root/attachments/some-uuid/ticket4446/sage.c) by zimmerma created at 2010-03-10 15:29:41
+Attachment [sage.c](tarball://root/attachments/some-uuid/ticket4446/sage.c) by @zimmermann6 created at 2010-03-10 15:29:41
 
 
 
@@ -972,7 +972,7 @@ archive/issue_comments_032738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32738",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -995,7 +995,7 @@ archive/issue_comments_032739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32739",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1025,7 +1025,7 @@ archive/issue_comments_032740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32740",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1043,7 +1043,7 @@ archive/issue_comments_032741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32741",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1084,7 +1084,7 @@ archive/issue_comments_032743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32743",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1108,7 +1108,7 @@ archive/issue_comments_032744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32744",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1130,7 +1130,7 @@ archive/issue_comments_032745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32745",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1155,7 +1155,7 @@ archive/issue_comments_032746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32746",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1173,7 +1173,7 @@ archive/issue_comments_032747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32747",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1198,7 +1198,7 @@ archive/issue_comments_032748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32748",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1221,7 +1221,7 @@ archive/issue_comments_032749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32749",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1718,7 +1718,7 @@ archive/issue_comments_032761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32761",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1810,7 +1810,7 @@ archive/issue_comments_032763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32763",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1837,7 +1837,7 @@ archive/issue_comments_032764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32764",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1911,7 +1911,7 @@ archive/issue_comments_032766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32766",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1977,7 +1977,7 @@ archive/issue_comments_032769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32769",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -2046,7 +2046,7 @@ archive/issue_comments_032771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32771",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -2073,7 +2073,7 @@ archive/issue_comments_032772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32772",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -2231,7 +2231,7 @@ archive/issue_comments_032777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32777",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -2258,7 +2258,7 @@ archive/issue_comments_032778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32778",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -2276,7 +2276,7 @@ archive/issue_comments_032779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32779",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -2294,7 +2294,7 @@ archive/issue_comments_032780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32780",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -2554,7 +2554,7 @@ archive/issue_comments_032781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32781",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2572,7 +2572,7 @@ archive/issue_comments_032782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32782",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2604,7 +2604,7 @@ archive/issue_comments_032783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32783",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2709,7 +2709,7 @@ archive/issue_comments_032788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32788",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -2752,7 +2752,7 @@ archive/issue_comments_032789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32789",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -2770,7 +2770,7 @@ archive/issue_comments_032790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32790",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2794,7 +2794,7 @@ archive/issue_comments_032791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32791",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2843,7 +2843,7 @@ archive/issue_comments_032793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32793",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -2861,7 +2861,7 @@ archive/issue_comments_032794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4446#issuecomment-32794",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

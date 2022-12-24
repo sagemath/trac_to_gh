@@ -14,7 +14,7 @@ archive/issues_007113.json:
     "title": "Maxima does not build on SUSE Itanium  (Iras)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7113",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -69,7 +69,7 @@ archive/issue_comments_058956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7113#issuecomment-58956",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_058957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7113#issuecomment-58957",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_058958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7113#issuecomment-58958",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_058959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7113#issuecomment-58959",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_058960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7113#issuecomment-58960",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

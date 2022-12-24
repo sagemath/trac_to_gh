@@ -3,7 +3,7 @@
 archive/issues_003076.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nThe spkg-debian script in the extcode spkg is not marked executable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3076\n\n",
+    "body": "Assignee: @timabbott\n\nThe spkg-debian script in the extcode spkg is not marked executable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3076\n\n",
     "created_at": "2008-05-02T01:21:06Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_003076.json:
     "title": "spkg-debian in extcode spkg not executable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3076",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 The spkg-debian script in the extcode spkg is not marked executable.
 

@@ -14,7 +14,7 @@ archive/issues_009557.json:
     "title": "fundamental domains for subgroups of PSL(2,ZZ)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9557",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 Assignee: Vincent Delecroix
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9557
 archive/issue_comments_092135.json:
 ```json
 {
-    "body": "Attachment [trac_9557-fundamental_domains.patch](tarball://root/attachments/some-uuid/ticket9557/trac_9557-fundamental_domains.patch) by jdemeyer created at 2013-08-13 15:35:53",
+    "body": "Attachment [trac_9557-fundamental_domains.patch](tarball://root/attachments/some-uuid/ticket9557/trac_9557-fundamental_domains.patch) by @jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-92135",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_9557-fundamental_domains.patch](tarball://root/attachments/some-uuid/ticket9557/trac_9557-fundamental_domains.patch) by jdemeyer created at 2013-08-13 15:35:53
+Attachment [trac_9557-fundamental_domains.patch](tarball://root/attachments/some-uuid/ticket9557/trac_9557-fundamental_domains.patch) by @jdemeyer created at 2013-08-13 15:35:53
 
 
 
@@ -72,7 +72,7 @@ archive/issue_comments_092136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-92136",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_092138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-92138",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_092139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-92139",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_092140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-92140",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_092141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-92141",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

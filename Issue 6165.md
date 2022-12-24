@@ -3,7 +3,7 @@
 archive/issues_006165.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mhansen mvngu\n\nThe spkg applies the patch given by Robert Dodier in this thread: http://www.math.utexas.edu/pipermail/maxima/2009/017242.html\n\nBasically, it makes Maxima return eigenvectors associated with each eigenvalue separately, rather than just returning a list of eigenvectors.  It makes it possible to determine the eigenvector associated with an eigenvalue when algebraic multiplicities do not match up with geometric multiplicities.  See the mailing list thread above for an example.\n\nThe new spkg is here: http://sage.math.washington.edu/home/jason/maxima-5.16.3.p3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6165\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen mvngu\n\nThe spkg applies the patch given by Robert Dodier in this thread: http://www.math.utexas.edu/pipermail/maxima/2009/017242.html\n\nBasically, it makes Maxima return eigenvectors associated with each eigenvalue separately, rather than just returning a list of eigenvectors.  It makes it possible to determine the eigenvector associated with an eigenvalue when algebraic multiplicities do not match up with geometric multiplicities.  See the mailing list thread above for an example.\n\nThe new spkg is here: http://sage.math.washington.edu/home/jason/maxima-5.16.3.p3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6165\n\n",
     "created_at": "2009-05-31T04:35:49Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_006165.json:
     "title": "new maxima spkg that enhances eigenvector results so they can be useable from symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6165",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
 
-CC:  mhansen mvngu
+CC:  @mwhansen mvngu
 
 The spkg applies the patch given by Robert Dodier in this thread: http://www.math.utexas.edu/pipermail/maxima/2009/017242.html
 
@@ -43,7 +43,7 @@ archive/issue_comments_049186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49186",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_049187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49187",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_049188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49188",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_049189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49189",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_049190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49190",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_049191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49191",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_049192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49192",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

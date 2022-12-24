@@ -3,7 +3,7 @@
 archive/issues_002499.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe attached patch (1) cleans up some ugly code, and (2) Fixes a bug that occurs on some NFS mounted filesystems.  \n\nThe (2) uses except: since I don't know the exact exception that occurs.  This could be fixed later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2499\n\n",
+    "body": "Assignee: @williamstein\n\nThe attached patch (1) cleans up some ugly code, and (2) Fixes a bug that occurs on some NFS mounted filesystems.  \n\nThe (2) uses except: since I don't know the exact exception that occurs.  This could be fixed later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2499\n\n",
     "created_at": "2008-03-12T16:25:55Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_002499.json:
     "title": "cython -- issues with cython-ing on the fly (fix one instance of lame code; also fix a bug)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2499",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The attached patch (1) cleans up some ugly code, and (2) Fixes a bug that occurs on some NFS mounted filesystems.  
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2499
 archive/issue_comments_016940.json:
 ```json
 {
-    "body": "Attachment [sage-2499_cython.patch](tarball://root/attachments/some-uuid/ticket2499/sage-2499_cython.patch) by was created at 2008-03-12 16:26:40",
+    "body": "Attachment [sage-2499_cython.patch](tarball://root/attachments/some-uuid/ticket2499/sage-2499_cython.patch) by @williamstein created at 2008-03-12 16:26:40",
     "created_at": "2008-03-12T16:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2499#issuecomment-16940",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2499_cython.patch](tarball://root/attachments/some-uuid/ticket2499/sage-2499_cython.patch) by was created at 2008-03-12 16:26:40
+Attachment [sage-2499_cython.patch](tarball://root/attachments/some-uuid/ticket2499/sage-2499_cython.patch) by @williamstein created at 2008-03-12 16:26:40
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_016941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2499#issuecomment-16941",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -72,16 +72,16 @@ Positive review, in any case.
 archive/issue_comments_016942.json:
 ```json
 {
-    "body": "Attachment [sage-2499_OSError.patch](tarball://root/attachments/some-uuid/ticket2499/sage-2499_OSError.patch) by wjp created at 2008-03-14 16:57:43",
+    "body": "Attachment [sage-2499_OSError.patch](tarball://root/attachments/some-uuid/ticket2499/sage-2499_OSError.patch) by @wjp created at 2008-03-14 16:57:43",
     "created_at": "2008-03-14T16:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2499#issuecomment-16942",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [sage-2499_OSError.patch](tarball://root/attachments/some-uuid/ticket2499/sage-2499_OSError.patch) by wjp created at 2008-03-14 16:57:43
+Attachment [sage-2499_OSError.patch](tarball://root/attachments/some-uuid/ticket2499/sage-2499_OSError.patch) by @wjp created at 2008-03-14 16:57:43
 
 
 

@@ -14,7 +14,7 @@ archive/issues_005264.json:
     "title": "[with patch, needs review] optimize small permgroup elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5264",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: joyner
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5264
 archive/issue_comments_040415.json:
 ```json
 {
-    "body": "Attachment [5264-perm-speed.patch](tarball://root/attachments/some-uuid/ticket5264/5264-perm-speed.patch) by robertwb created at 2009-02-14 06:50:11",
+    "body": "Attachment [5264-perm-speed.patch](tarball://root/attachments/some-uuid/ticket5264/5264-perm-speed.patch) by @robertwb created at 2009-02-14 06:50:11",
     "created_at": "2009-02-14T06:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5264#issuecomment-40415",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5264-perm-speed.patch](tarball://root/attachments/some-uuid/ticket5264/5264-perm-speed.patch) by robertwb created at 2009-02-14 06:50:11
+Attachment [5264-perm-speed.patch](tarball://root/attachments/some-uuid/ticket5264/5264-perm-speed.patch) by @robertwb created at 2009-02-14 06:50:11
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_040416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5264#issuecomment-40416",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

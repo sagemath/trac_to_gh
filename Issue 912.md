@@ -3,7 +3,7 @@
 archive/issues_000912.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee http://sourceforge.net/project/showfiles.php?group_id=1369&package_id=175103\n\nIssue created by migration from https://trac.sagemath.org/ticket/912\n\n",
+    "body": "Assignee: @williamstein\n\nSee http://sourceforge.net/project/showfiles.php?group_id=1369&package_id=175103\n\nIssue created by migration from https://trac.sagemath.org/ticket/912\n\n",
     "created_at": "2007-10-17T08:16:11Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000912.json:
     "title": "create a new spkg for numpy version 1.0.3.1 and TEST",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/912",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See http://sourceforge.net/project/showfiles.php?group_id=1369&package_id=175103
 

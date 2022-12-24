@@ -14,7 +14,7 @@ archive/issues_007229.json:
     "title": "jsmath-image-fonts spkg installs to wrong directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7229",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -63,7 +63,7 @@ archive/issue_comments_059963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7229#issuecomment-59963",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_059964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7229#issuecomment-59964",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_059965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7229#issuecomment-59965",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_059966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7229#issuecomment-59966",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_059967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7229#issuecomment-59967",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_059968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7229#issuecomment-59968",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_059969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7229#issuecomment-59969",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_059970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7229#issuecomment-59970",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

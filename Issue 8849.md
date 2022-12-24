@@ -14,7 +14,7 @@ archive/issues_008849.json:
     "title": "the palp interface throws a (harmless?) OSError on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8849",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8849
 archive/issue_comments_081347.json:
 ```json
 {
-    "body": "Attachment [trac_8849-fix_palp.patch](tarball://root/attachments/some-uuid/ticket8849/trac_8849-fix_palp.patch) by mhansen created at 2010-05-03 13:18:57",
+    "body": "Attachment [trac_8849-fix_palp.patch](tarball://root/attachments/some-uuid/ticket8849/trac_8849-fix_palp.patch) by @mwhansen created at 2010-05-03 13:18:57",
     "created_at": "2010-05-03T13:18:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8849#issuecomment-81347",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8849-fix_palp.patch](tarball://root/attachments/some-uuid/ticket8849/trac_8849-fix_palp.patch) by mhansen created at 2010-05-03 13:18:57
+Attachment [trac_8849-fix_palp.patch](tarball://root/attachments/some-uuid/ticket8849/trac_8849-fix_palp.patch) by @mwhansen created at 2010-05-03 13:18:57
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_081348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8849#issuecomment-81348",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_081349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8849#issuecomment-81349",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_081350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8849#issuecomment-81350",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -104,13 +104,13 @@ I added a referee patch that adds a comment explaining why this is done.
 archive/issue_comments_081351.json:
 ```json
 {
-    "body": "Attachment [trac_8849-referee-part2.patch](tarball://root/attachments/some-uuid/ticket8849/trac_8849-referee-part2.patch) by was created at 2010-05-25 02:28:51",
+    "body": "Attachment [trac_8849-referee-part2.patch](tarball://root/attachments/some-uuid/ticket8849/trac_8849-referee-part2.patch) by @williamstein created at 2010-05-25 02:28:51",
     "created_at": "2010-05-25T02:28:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8849#issuecomment-81351",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8849-referee-part2.patch](tarball://root/attachments/some-uuid/ticket8849/trac_8849-referee-part2.patch) by was created at 2010-05-25 02:28:51
+Attachment [trac_8849-referee-part2.patch](tarball://root/attachments/some-uuid/ticket8849/trac_8849-referee-part2.patch) by @williamstein created at 2010-05-25 02:28:51

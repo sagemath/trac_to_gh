@@ -3,7 +3,7 @@
 archive/issues_008603.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  wdj jason jondo kcrisman vbraun slelievre mkoeppe eviatarbach rws novoselt\n\nDoing\n\n```\nf = Piecewise([[(-pi, pi), x]])\nprint f.fourier_series_partial_sum(2, pi)\nprint f.fourier_series_partial_sum(3, pi)\n```\n\nwe get\n\n```\n2*sin(x)\n-sin(2*x) + 2*sin(x)\n```\n\nwhile according to the documentation we should get the second output with the first command.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8603\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @wdjoyner @jasongrout @jondo @kcrisman @vbraun @slel @mkoeppe @eviatarbach @rwst @novoselt\n\nDoing\n\n```\nf = Piecewise([[(-pi, pi), x]])\nprint f.fourier_series_partial_sum(2, pi)\nprint f.fourier_series_partial_sum(3, pi)\n```\n\nwe get\n\n```\n2*sin(x)\n-sin(2*x) + 2*sin(x)\n```\n\nwhile according to the documentation we should get the second output with the first command.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8603\n\n",
     "created_at": "2010-03-25T04:06:02Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_008603.json:
     "title": "Partial sums are off for Fourier series of piecewise functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8603",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  wdj jason jondo kcrisman vbraun slelievre mkoeppe eviatarbach rws novoselt
+CC:  @wdjoyner @jasongrout @jondo @kcrisman @vbraun @slel @mkoeppe @eviatarbach @rwst @novoselt
 
 Doing
 
@@ -54,7 +54,7 @@ archive/issue_comments_077909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77909",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_077910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77910",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_077911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77911",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_077912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77912",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_077913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77913",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_077914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77914",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_077915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77915",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -189,16 +189,16 @@ Changing status from new to needs_review.
 archive/issue_comments_077916.json:
 ```json
 {
-    "body": "Attachment [trac_8603-fourier-sum-docstring.patch](tarball://root/attachments/some-uuid/ticket8603/trac_8603-fourier-sum-docstring.patch) by wdj created at 2011-06-18 10:46:16\n\nThis fixes the documentation of fourier_series_partial_sum, replacing\n\n```\n f(x) \\sim \\frac{a_0}{2} + \\sum_{n=1}^N [a_n\\cos(\\frac{n\\pi x}{L}) +\nb_n\\sin(\\frac{n\\pi x}{L})],\n```\n\nby\n\n```\n f(x) \\sim \\frac{a_0}{2} + \\sum_{n=1}^{N-1} [a_n\\cos(\\frac{n\\pi x}{L})\n+ b_n\\sin(\\frac{n\\pi x}{L})],\n```\n",
+    "body": "Attachment [trac_8603-fourier-sum-docstring.patch](tarball://root/attachments/some-uuid/ticket8603/trac_8603-fourier-sum-docstring.patch) by @wdjoyner created at 2011-06-18 10:46:16\n\nThis fixes the documentation of fourier_series_partial_sum, replacing\n\n```\n f(x) \\sim \\frac{a_0}{2} + \\sum_{n=1}^N [a_n\\cos(\\frac{n\\pi x}{L}) +\nb_n\\sin(\\frac{n\\pi x}{L})],\n```\n\nby\n\n```\n f(x) \\sim \\frac{a_0}{2} + \\sum_{n=1}^{N-1} [a_n\\cos(\\frac{n\\pi x}{L})\n+ b_n\\sin(\\frac{n\\pi x}{L})],\n```\n",
     "created_at": "2011-06-18T10:46:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77916",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_8603-fourier-sum-docstring.patch](tarball://root/attachments/some-uuid/ticket8603/trac_8603-fourier-sum-docstring.patch) by wdj created at 2011-06-18 10:46:16
+Attachment [trac_8603-fourier-sum-docstring.patch](tarball://root/attachments/some-uuid/ticket8603/trac_8603-fourier-sum-docstring.patch) by @wdjoyner created at 2011-06-18 10:46:16
 
 This fixes the documentation of fourier_series_partial_sum, replacing
 
@@ -227,7 +227,7 @@ archive/issue_comments_077917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77917",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_077918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77918",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_077919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77919",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_077920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77920",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_077921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77921",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_077922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77922",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_077923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77923",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_077924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77924",
-    "user": "egourgoulhon"
+    "user": "@egourgoulhon"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_077925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77925",
-    "user": "egourgoulhon"
+    "user": "@egourgoulhon"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_077926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77926",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_077927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77927",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_077928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77928",
-    "user": "egourgoulhon"
+    "user": "@egourgoulhon"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_077929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77929",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_077930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77930",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_077931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77931",
-    "user": "egourgoulhon"
+    "user": "@egourgoulhon"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_077932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77932",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_077933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77933",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -585,7 +585,7 @@ archive/issue_comments_077934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77934",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -604,7 +604,7 @@ archive/issue_comments_077935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77935",
-    "user": "egourgoulhon"
+    "user": "@egourgoulhon"
 }
 ```
 
@@ -625,7 +625,7 @@ archive/issue_comments_077936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77936",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -645,7 +645,7 @@ archive/issue_comments_077937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77937",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -663,7 +663,7 @@ archive/issue_comments_077938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77938",
-    "user": "egourgoulhon"
+    "user": "@egourgoulhon"
 }
 ```
 
@@ -689,7 +689,7 @@ archive/issue_comments_077939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8603#issuecomment-77939",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

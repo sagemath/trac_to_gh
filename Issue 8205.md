@@ -3,7 +3,7 @@
 archive/issues_008205.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  acleone timdumol\n\nI upgraded sagenb.org to sagenb-0.7.4, and excitedly hoped that when I click publish to publish a worksheet it would give me the correct URL.    Now it says:\n\n\"Worksheet is publicly viewable at http://localhost:8888/home/pub/1153\"\n\nThis is wrong.  This might even be considered worse than before, since before it did \"... http://:8888/home/pub/1153\" which was obviously wrong.  The above looks less obviously wrong. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8205\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  acleone @TimDumol\n\nI upgraded sagenb.org to sagenb-0.7.4, and excitedly hoped that when I click publish to publish a worksheet it would give me the correct URL.    Now it says:\n\n\"Worksheet is publicly viewable at http://localhost:8888/home/pub/1153\"\n\nThis is wrong.  This might even be considered worse than before, since before it did \"... http://:8888/home/pub/1153\" which was obviously wrong.  The above looks less obviously wrong. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8205\n\n",
     "created_at": "2010-02-07T05:19:27Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008205.json:
     "title": "sagenb -- the url for published worksheets that's displayed right after publishing is still wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8205",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  acleone timdumol
+CC:  acleone @TimDumol
 
 I upgraded sagenb.org to sagenb-0.7.4, and excitedly hoped that when I click publish to publish a worksheet it would give me the correct URL.    Now it says:
 
@@ -43,7 +43,7 @@ archive/issue_comments_072366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8205#issuecomment-72366",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_072367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8205#issuecomment-72367",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_072368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8205#issuecomment-72368",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_072369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8205#issuecomment-72369",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_072370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8205#issuecomment-72370",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_072371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8205#issuecomment-72371",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

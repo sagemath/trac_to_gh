@@ -3,7 +3,7 @@
 archive/issues_008016.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  saliola rkirov mpatel\n\nObviously `graph_editor(p)` doesn't work on its own, since `p` is not a graph. However, it should be possible to implement a few functions for `p` to make this work:\n\n\n```\nFile \"sage/graphs/graph_editor.py\", line 111, in graph_editor\n    if not isinstance(graph.get_pos(), dict):\nAttributeError: 'FinitePoset' object has no attribute 'get_pos'\n```\n\n\nWhile wishing, it would also be nice if the graph editor could be adapted to remember vertex labels, at least in the case that the labels are strings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8016\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @saliola rkirov @qed777\n\nObviously `graph_editor(p)` doesn't work on its own, since `p` is not a graph. However, it should be possible to implement a few functions for `p` to make this work:\n\n\n```\nFile \"sage/graphs/graph_editor.py\", line 111, in graph_editor\n    if not isinstance(graph.get_pos(), dict):\nAttributeError: 'FinitePoset' object has no attribute 'get_pos'\n```\n\n\nWhile wishing, it would also be nice if the graph editor could be adapted to remember vertex labels, at least in the case that the labels are strings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8016\n\n",
     "created_at": "2010-01-20T20:21:57Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_008016.json:
     "title": "graph_editor(p) should work for p a poset",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8016",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: sage-combinat
 
-CC:  saliola rkirov mpatel
+CC:  @saliola rkirov @qed777
 
 Obviously `graph_editor(p)` doesn't work on its own, since `p` is not a graph. However, it should be possible to implement a few functions for `p` to make this work:
 
@@ -49,7 +49,7 @@ archive/issue_comments_070043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8016#issuecomment-70043",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_070044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8016#issuecomment-70044",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

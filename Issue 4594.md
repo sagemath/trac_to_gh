@@ -3,7 +3,7 @@
 archive/issues_004594.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mhansen\n\nKeywords: typos, algebra\n\nNoticed some minor typos in files under the directory sage/algebras.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4594\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen\n\nKeywords: typos, algebra\n\nNoticed some minor typos in files under the directory sage/algebras.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4594\n\n",
     "created_at": "2008-11-23T05:52:44Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_004594.json:
 ```
 Assignee: tba
 
-CC:  mhansen
+CC:  @mwhansen
 
 Keywords: typos, algebra
 

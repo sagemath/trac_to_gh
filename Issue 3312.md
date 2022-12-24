@@ -3,7 +3,7 @@
 archive/issues_003312.json:
 ```json
 {
-    "body": "Assignee: yi\n\nDo \n\n```\nsage: dsage.setup()\n```\n\nand take all the defaults, then do it again immediately but enter a non-default hostname.\nBOOM!\nSee http://sage.pastebin.com/m1ff54979 for a log of this. \n\nThe error involves sqlalchemy table insertion; somebody messed up:\n\n```\n    739         if not self.non_primary and '_class_state' in self.class_.__dict__ and (self.entity_name in self.class_._class_state.mappers):\n--> 740              raise exceptions.ArgumentError(\"Class '%s' already has a primary mapper defined with entity name '%s'.  Use non_primary=True to create a non primary Mapper.  clear_mappers() will remove *all* current mappers from all classes.\" % (self.class_, self.entity_name))\n    741 \n    742         def extra_init(class_, oldinit, instance, args, kwargs):\n\nArgumentError: Class '<class 'sage.dsage.database.job.Job'>' already has a primary mapper defined with entity name 'None'.  Use non_primary=True to create a non primary Mapper.  clear_mappers() will remove *all* current mappers from all classes.\nsage: \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3312\n\n",
+    "body": "Assignee: @yqiang\n\nDo \n\n```\nsage: dsage.setup()\n```\n\nand take all the defaults, then do it again immediately but enter a non-default hostname.\nBOOM!\nSee http://sage.pastebin.com/m1ff54979 for a log of this. \n\nThe error involves sqlalchemy table insertion; somebody messed up:\n\n```\n    739         if not self.non_primary and '_class_state' in self.class_.__dict__ and (self.entity_name in self.class_._class_state.mappers):\n--> 740              raise exceptions.ArgumentError(\"Class '%s' already has a primary mapper defined with entity name '%s'.  Use non_primary=True to create a non primary Mapper.  clear_mappers() will remove *all* current mappers from all classes.\" % (self.class_, self.entity_name))\n    741 \n    742         def extra_init(class_, oldinit, instance, args, kwargs):\n\nArgumentError: Class '<class 'sage.dsage.database.job.Job'>' already has a primary mapper defined with entity name 'None'.  Use non_primary=True to create a non primary Mapper.  clear_mappers() will remove *all* current mappers from all classes.\nsage: \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3312\n\n",
     "created_at": "2008-05-27T04:24:16Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_003312.json:
     "title": "dsage.setup() -- very serious bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3312",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 Do 
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3312
 archive/issue_comments_022907.json:
 ```json
 {
-    "body": "Attachment [3312_clearmappers.patch](tarball://root/attachments/some-uuid/ticket3312/3312_clearmappers.patch) by yi created at 2008-05-27 05:14:46\n\nadd clear_mapper call to db_config.py",
+    "body": "Attachment [3312_clearmappers.patch](tarball://root/attachments/some-uuid/ticket3312/3312_clearmappers.patch) by @yqiang created at 2008-05-27 05:14:46\n\nadd clear_mapper call to db_config.py",
     "created_at": "2008-05-27T05:14:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3312#issuecomment-22907",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [3312_clearmappers.patch](tarball://root/attachments/some-uuid/ticket3312/3312_clearmappers.patch) by yi created at 2008-05-27 05:14:46
+Attachment [3312_clearmappers.patch](tarball://root/attachments/some-uuid/ticket3312/3312_clearmappers.patch) by @yqiang created at 2008-05-27 05:14:46
 
 add clear_mapper call to db_config.py
 
@@ -79,7 +79,7 @@ archive/issue_comments_022908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3312#issuecomment-22908",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_022909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3312#issuecomment-22909",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_022910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3312#issuecomment-22910",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_022911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3312#issuecomment-22911",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

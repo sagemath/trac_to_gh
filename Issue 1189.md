@@ -3,7 +3,7 @@
 archive/issues_001189.json:
 ```json
 {
-    "body": "Assignee: was\n\nPlease update to sympy 0.5.7 using the attached spkg.\n\nThen apply the attached patch that will allow SAGE to freely mix SymPy and SAGE expressions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1189\n\n",
+    "body": "Assignee: @williamstein\n\nPlease update to sympy 0.5.7 using the attached spkg.\n\nThen apply the attached patch that will allow SAGE to freely mix SymPy and SAGE expressions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1189\n\n",
     "created_at": "2007-11-17T00:15:13Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001189.json:
     "title": "update sympy to 0.5.7, patch to make SymPy and SAGE work nicely",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1189",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Please update to sympy 0.5.7 using the attached spkg.
 
@@ -39,7 +39,7 @@ archive/issue_comments_007356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7356",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_007357.json:
 ```json
 {
-    "body": "Attachment [sympy.patch](tarball://root/attachments/some-uuid/ticket1189/sympy.patch) by certik created at 2007-11-17 00:18:56\n\nHere is the link to the new sympy spkg:\n\nhttp://dakol.fsik.cvut.cz/~ondra/sympy-0.5.7.spkg\n\nPlease update this first, only then use the patch above.",
+    "body": "Attachment [sympy.patch](tarball://root/attachments/some-uuid/ticket1189/sympy.patch) by @certik created at 2007-11-17 00:18:56\n\nHere is the link to the new sympy spkg:\n\nhttp://dakol.fsik.cvut.cz/~ondra/sympy-0.5.7.spkg\n\nPlease update this first, only then use the patch above.",
     "created_at": "2007-11-17T00:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7357",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
-Attachment [sympy.patch](tarball://root/attachments/some-uuid/ticket1189/sympy.patch) by certik created at 2007-11-17 00:18:56
+Attachment [sympy.patch](tarball://root/attachments/some-uuid/ticket1189/sympy.patch) by @certik created at 2007-11-17 00:18:56
 
 Here is the link to the new sympy spkg:
 
@@ -81,7 +81,7 @@ archive/issue_comments_007358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7358",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_007359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7359",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_007360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7360",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_007361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7361",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_007365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7365",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_007366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7366",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_007367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7367",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_007369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7369",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -369,16 +369,16 @@ Yeah, I am still learning how to properly contribute to SAGE. :)
 archive/issue_comments_007370.json:
 ```json
 {
-    "body": "Attachment [sympy2.patch](tarball://root/attachments/some-uuid/ticket1189/sympy2.patch) by certik created at 2007-11-26 01:19:11\n\nThe patch was fixed, now it passes all tests:\n\nhttp://sagetrac.org/sage_trac/attachment/ticket/1189/sympy2.patch\n\nBut probably needs some review before committing.",
+    "body": "Attachment [sympy2.patch](tarball://root/attachments/some-uuid/ticket1189/sympy2.patch) by @certik created at 2007-11-26 01:19:11\n\nThe patch was fixed, now it passes all tests:\n\nhttp://sagetrac.org/sage_trac/attachment/ticket/1189/sympy2.patch\n\nBut probably needs some review before committing.",
     "created_at": "2007-11-26T01:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7370",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
-Attachment [sympy2.patch](tarball://root/attachments/some-uuid/ticket1189/sympy2.patch) by certik created at 2007-11-26 01:19:11
+Attachment [sympy2.patch](tarball://root/attachments/some-uuid/ticket1189/sympy2.patch) by @certik created at 2007-11-26 01:19:11
 
 The patch was fixed, now it passes all tests:
 
@@ -398,7 +398,7 @@ archive/issue_comments_007371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7371",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -420,16 +420,16 @@ x + 1
 archive/issue_comments_007372.json:
 ```json
 {
-    "body": "Attachment [sympy-coerce.patch](tarball://root/attachments/some-uuid/ticket1189/sympy-coerce.patch) by robertwb created at 2007-11-27 03:43:53",
+    "body": "Attachment [sympy-coerce.patch](tarball://root/attachments/some-uuid/ticket1189/sympy-coerce.patch) by @robertwb created at 2007-11-27 03:43:53",
     "created_at": "2007-11-27T03:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7372",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [sympy-coerce.patch](tarball://root/attachments/some-uuid/ticket1189/sympy-coerce.patch) by robertwb created at 2007-11-27 03:43:53
+Attachment [sympy-coerce.patch](tarball://root/attachments/some-uuid/ticket1189/sympy-coerce.patch) by @robertwb created at 2007-11-27 03:43:53
 
 
 
@@ -443,7 +443,7 @@ archive/issue_comments_007373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7373",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_007380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7380",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -601,7 +601,7 @@ archive/issue_comments_007381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1189#issuecomment-7381",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

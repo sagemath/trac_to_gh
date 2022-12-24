@@ -156,7 +156,7 @@ archive/issue_comments_002705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/530#issuecomment-2705",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_002706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/530#issuecomment-2706",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -222,16 +222,16 @@ doesn't leak either.
 archive/issue_comments_002707.json:
 ```json
 {
-    "body": "Attachment [trac_530.patch](tarball://root/attachments/some-uuid/ticket530/trac_530.patch) by malb created at 2008-04-05 21:23:17",
+    "body": "Attachment [trac_530.patch](tarball://root/attachments/some-uuid/ticket530/trac_530.patch) by @malb created at 2008-04-05 21:23:17",
     "created_at": "2008-04-05T21:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/530#issuecomment-2707",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_530.patch](tarball://root/attachments/some-uuid/ticket530/trac_530.patch) by malb created at 2008-04-05 21:23:17
+Attachment [trac_530.patch](tarball://root/attachments/some-uuid/ticket530/trac_530.patch) by @malb created at 2008-04-05 21:23:17
 
 
 
@@ -245,7 +245,7 @@ archive/issue_comments_002708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/530#issuecomment-2708",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_002709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/530#issuecomment-2709",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_002713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/530#issuecomment-2713",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005712.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  acleone was boothby mpatel\n\nMore precisely, one could keep the alert, but make it so that it can *not* appear if it already appeared in the last 5 seconds (say).  It is so annoying!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5712\n\n",
+    "body": "Assignee: boothby\n\nCC:  acleone @williamstein boothby @qed777\n\nMore precisely, one could keep the alert, but make it so that it can *not* appear if it already appeared in the last 5 seconds (say).  It is so annoying!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5712\n\n",
     "created_at": "2009-04-08T14:46:55Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005712.json:
     "title": "notebook -- Get rid of the stupid \"unable to immediately interrupt computation\" alert that drives me nuts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5712",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  acleone was boothby mpatel
+CC:  acleone @williamstein boothby @qed777
 
 More precisely, one could keep the alert, but make it so that it can *not* appear if it already appeared in the last 5 seconds (say).  It is so annoying!
 
@@ -78,16 +78,16 @@ Michael
 archive/issue_comments_044631.json:
 ```json
 {
-    "body": "Attachment [trac_5712-interrupt-notification.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.patch) by timdumol created at 2010-01-18 04:25:12\n\nUses Achtung (jQuery library) for notifications instead.",
+    "body": "Attachment [trac_5712-interrupt-notification.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.patch) by @TimDumol created at 2010-01-18 04:25:12\n\nUses Achtung (jQuery library) for notifications instead.",
     "created_at": "2010-01-18T04:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44631",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_5712-interrupt-notification.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.patch) by timdumol created at 2010-01-18 04:25:12
+Attachment [trac_5712-interrupt-notification.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.patch) by @TimDumol created at 2010-01-18 04:25:12
 
 Uses Achtung (jQuery library) for notifications instead.
 
@@ -103,7 +103,7 @@ archive/issue_comments_044632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44632",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_044633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44633",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_044634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44634",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -152,16 +152,16 @@ Fixes #7702 and a typo in notebook_lib.js from the previous patch. Apply this pa
 archive/issue_comments_044635.json:
 ```json
 {
-    "body": "Attachment [trac_5712-interrupt-notification.2.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.2.patch) by timdumol created at 2010-01-18 06:56:05",
+    "body": "Attachment [trac_5712-interrupt-notification.2.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.2.patch) by @TimDumol created at 2010-01-18 06:56:05",
     "created_at": "2010-01-18T06:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44635",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_5712-interrupt-notification.2.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.2.patch) by timdumol created at 2010-01-18 06:56:05
+Attachment [trac_5712-interrupt-notification.2.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.2.patch) by @TimDumol created at 2010-01-18 06:56:05
 
 
 
@@ -175,7 +175,7 @@ archive/issue_comments_044636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44636",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_044637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44637",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_044638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44638",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_044639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44639",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_044640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44640",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -338,16 +338,16 @@ This patch should do it.
 archive/issue_comments_044641.json:
 ```json
 {
-    "body": "Attachment [trac_5712-interrupt-notification.3.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.3.patch) by timdumol created at 2010-01-20 12:09:21\n\nAdds the requested changes.",
+    "body": "Attachment [trac_5712-interrupt-notification.3.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.3.patch) by @TimDumol created at 2010-01-20 12:09:21\n\nAdds the requested changes.",
     "created_at": "2010-01-20T12:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44641",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_5712-interrupt-notification.3.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.3.patch) by timdumol created at 2010-01-20 12:09:21
+Attachment [trac_5712-interrupt-notification.3.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.3.patch) by @TimDumol created at 2010-01-20 12:09:21
 
 Adds the requested changes.
 
@@ -358,16 +358,16 @@ Adds the requested changes.
 archive/issue_comments_044642.json:
 ```json
 {
-    "body": "Attachment [trac_5712-interrupt-notification.4.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.4.patch) by mpatel created at 2010-01-21 13:39:39\n\nSee comment.  Replaces previous.",
+    "body": "Attachment [trac_5712-interrupt-notification.4.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.4.patch) by @qed777 created at 2010-01-21 13:39:39\n\nSee comment.  Replaces previous.",
     "created_at": "2010-01-21T13:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44642",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5712-interrupt-notification.4.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.4.patch) by mpatel created at 2010-01-21 13:39:39
+Attachment [trac_5712-interrupt-notification.4.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.4.patch) by @qed777 created at 2010-01-21 13:39:39
 
 See comment.  Replaces previous.
 
@@ -383,7 +383,7 @@ archive/issue_comments_044643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44643",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -396,16 +396,16 @@ Periodically re-attempt to interrupt.  Replaces previous.
 archive/issue_comments_044644.json:
 ```json
 {
-    "body": "Attachment [trac_5712-interrupt-notification.5.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.5.patch) by mpatel created at 2010-01-22 03:33:09\n\nPlease ignore V4.  V5\n\n* Adds optional callbacks for the [jQuery achtung plug-in's](http://achtung-ui.googlecode.com/) timeout and close events.  See `ui.achtung-mod.js`.  The notebook actually loads `ui.achtung-mod.min.js`, which I made with the [YUI Compressor](http://developer.yahoo.com/yui/compressor/).\n\n* Uses the new callbacks to send additional interrupt requests and update an alert every 5 seconds, until a request succeeds or the user closes the alert.  If the process *is* interrupted, or the user restarts it, or the computation is done, etc., the alert should close itself.\n\nPlease test (and post feedback)!",
+    "body": "Attachment [trac_5712-interrupt-notification.5.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.5.patch) by @qed777 created at 2010-01-22 03:33:09\n\nPlease ignore V4.  V5\n\n* Adds optional callbacks for the [jQuery achtung plug-in's](http://achtung-ui.googlecode.com/) timeout and close events.  See `ui.achtung-mod.js`.  The notebook actually loads `ui.achtung-mod.min.js`, which I made with the [YUI Compressor](http://developer.yahoo.com/yui/compressor/).\n\n* Uses the new callbacks to send additional interrupt requests and update an alert every 5 seconds, until a request succeeds or the user closes the alert.  If the process *is* interrupted, or the user restarts it, or the computation is done, etc., the alert should close itself.\n\nPlease test (and post feedback)!",
     "created_at": "2010-01-22T03:33:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44644",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5712-interrupt-notification.5.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.5.patch) by mpatel created at 2010-01-22 03:33:09
+Attachment [trac_5712-interrupt-notification.5.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.5.patch) by @qed777 created at 2010-01-22 03:33:09
 
 Please ignore V4.  V5
 
@@ -427,7 +427,7 @@ archive/issue_comments_044645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44645",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -440,16 +440,16 @@ Rebased against SageNB 0.7 at #8051.  Replaces previous.
 archive/issue_comments_044646.json:
 ```json
 {
-    "body": "Attachment [trac_5712-interrupt-notification.6.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.6.patch) by mpatel created at 2010-01-25 04:40:57\n\nV6 is rebased against #8051's SageNB 0.7.",
+    "body": "Attachment [trac_5712-interrupt-notification.6.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.6.patch) by @qed777 created at 2010-01-25 04:40:57\n\nV6 is rebased against #8051's SageNB 0.7.",
     "created_at": "2010-01-25T04:40:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44646",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5712-interrupt-notification.6.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.6.patch) by mpatel created at 2010-01-25 04:40:57
+Attachment [trac_5712-interrupt-notification.6.patch](tarball://root/attachments/some-uuid/ticket5712/trac_5712-interrupt-notification.6.patch) by @qed777 created at 2010-01-25 04:40:57
 
 V6 is rebased against #8051's SageNB 0.7.
 
@@ -465,7 +465,7 @@ archive/issue_comments_044647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44647",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_044650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5712",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5712#issuecomment-44650",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6091
 archive/issue_comments_048536.json:
 ```json
 {
-    "body": "Attachment [trac_6091.patch](tarball://root/attachments/some-uuid/ticket6091/trac_6091.patch) by davidloeffler created at 2009-05-29 10:46:30\n\nPositive review. Patch applies fine to 4.0.rc1, all tests in sage/rings/number_field and doc/en/bordeaux_2008 pass; and the new syntax is a very useful thing to have.\n\nDavid",
+    "body": "Attachment [trac_6091.patch](tarball://root/attachments/some-uuid/ticket6091/trac_6091.patch) by @loefflerd created at 2009-05-29 10:46:30\n\nPositive review. Patch applies fine to 4.0.rc1, all tests in sage/rings/number_field and doc/en/bordeaux_2008 pass; and the new syntax is a very useful thing to have.\n\nDavid",
     "created_at": "2009-05-29T10:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6091#issuecomment-48536",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6091.patch](tarball://root/attachments/some-uuid/ticket6091/trac_6091.patch) by davidloeffler created at 2009-05-29 10:46:30
+Attachment [trac_6091.patch](tarball://root/attachments/some-uuid/ticket6091/trac_6091.patch) by @loefflerd created at 2009-05-29 10:46:30
 
 Positive review. Patch applies fine to 4.0.rc1, all tests in sage/rings/number_field and doc/en/bordeaux_2008 pass; and the new syntax is a very useful thing to have.
 
@@ -68,7 +68,7 @@ archive/issue_comments_048537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6091#issuecomment-48537",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -81,16 +81,16 @@ Changing component from algebra to number theory.
 archive/issue_comments_048538.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2009-05-29T10:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6091#issuecomment-48538",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -104,7 +104,7 @@ archive/issue_comments_048539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6091#issuecomment-48539",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_048542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6091#issuecomment-48542",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_048543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6091#issuecomment-48543",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

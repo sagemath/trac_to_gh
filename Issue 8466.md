@@ -3,7 +3,7 @@
 archive/issues_008466.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  wdj rlm rws\n\nKeywords: coding theory\n\nTicket #3624 has a document called \"Sage and Coding Theory\" that fits nicely in the classification \"Sage HOWTOs\". A closely related, if not identical, document can be found [here](http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.pdf). The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\n\n\n**Notes:** Once this ticket is closed, #3624 can be also be closed as fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8466\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @wdjoyner @rlmill @rwst\n\nKeywords: coding theory\n\nTicket #3624 has a document called \"Sage and Coding Theory\" that fits nicely in the classification \"Sage HOWTOs\". A closely related, if not identical, document can be found [here](http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.pdf). The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\n\n\n**Notes:** Once this ticket is closed, #3624 can be also be closed as fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8466\n\n",
     "created_at": "2010-03-07T02:09:39Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008466.json:
 ```
 Assignee: mvngu
 
-CC:  wdj rlm rws
+CC:  @wdjoyner @rlmill @rwst
 
 Keywords: coding theory
 
@@ -45,7 +45,7 @@ archive/issue_comments_076236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8466#issuecomment-76236",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_076237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8466#issuecomment-76237",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_076238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8466#issuecomment-76238",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_076239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8466#issuecomment-76239",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_076240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8466#issuecomment-76240",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

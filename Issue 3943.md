@@ -3,7 +3,7 @@
 archive/issues_003943.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nCC:  sage-combinat\n\npydesign is a very basic GPL2+ package for block designs (http://www.designtheory.org/software/pydesign/). This patch adds a little functionality and a few examples. Needs *lots* more work!\n\nIn creates a new subdirectory of sage/combinat and adds several files to that subdirectory. See block_design.py for some examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3943\n\n",
+    "body": "Assignee: @wdjoyner\n\nCC:  sage-combinat\n\npydesign is a very basic GPL2+ package for block designs (http://www.designtheory.org/software/pydesign/). This patch adds a little functionality and a few examples. Needs *lots* more work!\n\nIn creates a new subdirectory of sage/combinat and adds several files to that subdirectory. See block_design.py for some examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3943\n\n",
     "created_at": "2008-08-24T12:27:42Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_003943.json:
     "title": "pydesign patch [not ready for review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3943",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 CC:  sage-combinat
 
@@ -41,7 +41,7 @@ archive/issue_comments_028272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28272",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_028273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28273",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_028274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28274",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_028275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28275",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_028276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28276",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_028277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28277",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_028279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28279",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_028281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28281",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_028282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28282",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_028283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28283",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_028284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28284",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_028285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28285",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_028286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28286",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_028287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28287",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_028289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28289",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -525,16 +525,16 @@ until after 3.1.3.final is out this weekend.
 archive/issue_comments_028290.json:
 ```json
 {
-    "body": "Attachment [trac_3943-block-designs.patch](tarball://root/attachments/some-uuid/ticket3943/trac_3943-block-designs.patch) by wdj created at 2008-09-25 19:01:13\n\nThis is based on 3.1.3.alpha1. Apply this patch only - ignore all previous patches.",
+    "body": "Attachment [trac_3943-block-designs.patch](tarball://root/attachments/some-uuid/ticket3943/trac_3943-block-designs.patch) by @wdjoyner created at 2008-09-25 19:01:13\n\nThis is based on 3.1.3.alpha1. Apply this patch only - ignore all previous patches.",
     "created_at": "2008-09-25T19:01:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28290",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_3943-block-designs.patch](tarball://root/attachments/some-uuid/ticket3943/trac_3943-block-designs.patch) by wdj created at 2008-09-25 19:01:13
+Attachment [trac_3943-block-designs.patch](tarball://root/attachments/some-uuid/ticket3943/trac_3943-block-designs.patch) by @wdjoyner created at 2008-09-25 19:01:13
 
 This is based on 3.1.3.alpha1. Apply this patch only - ignore all previous patches.
 
@@ -550,7 +550,7 @@ archive/issue_comments_028291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28291",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -571,7 +571,7 @@ archive/issue_comments_028292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28292",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -605,7 +605,7 @@ archive/issue_comments_028293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28293",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -649,7 +649,7 @@ archive/issue_comments_028294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28294",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -703,7 +703,7 @@ archive/issue_comments_028296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28296",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -716,16 +716,16 @@ First apply trac_3943-block-designs.patch then apply this patch. Based on 3.1.3.
 archive/issue_comments_028297.json:
 ```json
 {
-    "body": "Attachment [trac3943-block-designs3.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs3.patch) by wdj created at 2008-09-27 00:10:33\n\nNow apply this patch after the other 2. Based on 3.1.3.alpha1.",
+    "body": "Attachment [trac3943-block-designs3.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs3.patch) by @wdjoyner created at 2008-09-27 00:10:33\n\nNow apply this patch after the other 2. Based on 3.1.3.alpha1.",
     "created_at": "2008-09-27T00:10:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28297",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac3943-block-designs3.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs3.patch) by wdj created at 2008-09-27 00:10:33
+Attachment [trac3943-block-designs3.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs3.patch) by @wdjoyner created at 2008-09-27 00:10:33
 
 Now apply this patch after the other 2. Based on 3.1.3.alpha1.
 
@@ -741,7 +741,7 @@ archive/issue_comments_028298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28298",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -760,7 +760,7 @@ archive/issue_comments_028299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28299",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -773,16 +773,16 @@ This is the last patch, I hope. Again, based on 3.1.3.alpha1 and to be applied a
 archive/issue_comments_028300.json:
 ```json
 {
-    "body": "Attachment [trac3943-block-designs5.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs5.patch) by wdj created at 2008-09-27 00:47:27\n\nAppliy this after the others. Based on 3.1.3.alpha1. Arrgghh.",
+    "body": "Attachment [trac3943-block-designs5.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs5.patch) by @wdjoyner created at 2008-09-27 00:47:27\n\nAppliy this after the others. Based on 3.1.3.alpha1. Arrgghh.",
     "created_at": "2008-09-27T00:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28300",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac3943-block-designs5.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs5.patch) by wdj created at 2008-09-27 00:47:27
+Attachment [trac3943-block-designs5.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs5.patch) by @wdjoyner created at 2008-09-27 00:47:27
 
 Appliy this after the others. Based on 3.1.3.alpha1. Arrgghh.
 
@@ -798,7 +798,7 @@ archive/issue_comments_028301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28301",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -850,16 +850,16 @@ Michael
 archive/issue_comments_028303.json:
 ```json
 {
-    "body": "Attachment [trac3943-block-designs6.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs6.patch) by wdj created at 2008-09-28 00:59:46\n\nbased on 3.1.3.alpha1. To be applied after the 5 others before this one.",
+    "body": "Attachment [trac3943-block-designs6.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs6.patch) by @wdjoyner created at 2008-09-28 00:59:46\n\nbased on 3.1.3.alpha1. To be applied after the 5 others before this one.",
     "created_at": "2008-09-28T00:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28303",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac3943-block-designs6.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs6.patch) by wdj created at 2008-09-28 00:59:46
+Attachment [trac3943-block-designs6.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs6.patch) by @wdjoyner created at 2008-09-28 00:59:46
 
 based on 3.1.3.alpha1. To be applied after the 5 others before this one.
 
@@ -875,7 +875,7 @@ archive/issue_comments_028304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28304",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -932,16 +932,16 @@ Please apply the 7 patches in order to 3.1.3.alpha1. They pass sage -t -optional
 archive/issue_comments_028305.json:
 ```json
 {
-    "body": "Attachment [trac3943-block-designs7.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs7.patch) by wdj created at 2008-09-28 01:18:16\n\nForgot one change suggested by the referee. Apply this after the others to 3.1.3.alpha1.",
+    "body": "Attachment [trac3943-block-designs7.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs7.patch) by @wdjoyner created at 2008-09-28 01:18:16\n\nForgot one change suggested by the referee. Apply this after the others to 3.1.3.alpha1.",
     "created_at": "2008-09-28T01:18:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28305",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac3943-block-designs7.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs7.patch) by wdj created at 2008-09-28 01:18:16
+Attachment [trac3943-block-designs7.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs7.patch) by @wdjoyner created at 2008-09-28 01:18:16
 
 Forgot one change suggested by the referee. Apply this after the others to 3.1.3.alpha1.
 
@@ -957,7 +957,7 @@ archive/issue_comments_028306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28306",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -970,16 +970,16 @@ based on 3.1.3.alpha1. To be applied after the others.
 archive/issue_comments_028307.json:
 ```json
 {
-    "body": "Attachment [trac3943-block-designs8.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs8.patch) by wdj created at 2008-09-30 03:03:06\n\nThis last patch may or may not improve things. It passes sage -t -optional.\n\n1. I moved __repr__ to __str__ and created a very simple __repr__ method.\n2. I moved is_block_design to block_design_checker\n3. Created a new an rigorous (and very slow) is_block_design, following an off-list suggestion of the referee.\n4. Added some material to some of the docstrings.",
+    "body": "Attachment [trac3943-block-designs8.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs8.patch) by @wdjoyner created at 2008-09-30 03:03:06\n\nThis last patch may or may not improve things. It passes sage -t -optional.\n\n1. I moved __repr__ to __str__ and created a very simple __repr__ method.\n2. I moved is_block_design to block_design_checker\n3. Created a new an rigorous (and very slow) is_block_design, following an off-list suggestion of the referee.\n4. Added some material to some of the docstrings.",
     "created_at": "2008-09-30T03:03:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28307",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac3943-block-designs8.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs8.patch) by wdj created at 2008-09-30 03:03:06
+Attachment [trac3943-block-designs8.patch](tarball://root/attachments/some-uuid/ticket3943/trac3943-block-designs8.patch) by @wdjoyner created at 2008-09-30 03:03:06
 
 This last patch may or may not improve things. It passes sage -t -optional.
 
@@ -1000,7 +1000,7 @@ archive/issue_comments_028308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28308",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1018,7 +1018,7 @@ archive/issue_comments_028309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3943#issuecomment-28309",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

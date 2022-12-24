@@ -3,7 +3,7 @@
 archive/issues_001002.json:
 ```json
 {
-    "body": "Assignee: was\n\nClisp 2.42 was released on October 16th.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1002\n\n",
+    "body": "Assignee: @williamstein\n\nClisp 2.42 was released on October 16th.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1002\n\n",
     "created_at": "2007-10-26T09:07:30Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001002.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Clisp 2.42 was released on October 16th.
 

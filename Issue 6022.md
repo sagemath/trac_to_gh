@@ -3,7 +3,7 @@
 archive/issues_006022.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  rbeezer fidelbarrera\n\nOn systems where dvipng is installed: If in a %latex cell, dvipng fails to produce a good picture, you get basically nothing.  With this patch, this failure is detected, and dvips and convert are then used instead. The failure is detected by running dvipng with the '--picky' option; with this turned on, if dvipng produces any warnings or errors, no png file is produced.  The code then sees if there is a png file; if not, it runs dvips and convert.\n\nThis patch also fixes a long-standing complaint of William's: now when there is a problem in a %latex cell, the .log file is printed automatically, instead of just printing the message \"An error occurred.\"\n\nApply on top of the patch at #6012.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6022\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @rbeezer fidelbarrera\n\nOn systems where dvipng is installed: If in a %latex cell, dvipng fails to produce a good picture, you get basically nothing.  With this patch, this failure is detected, and dvips and convert are then used instead. The failure is detected by running dvipng with the '--picky' option; with this turned on, if dvipng produces any warnings or errors, no png file is produced.  The code then sees if there is a png file; if not, it runs dvips and convert.\n\nThis patch also fixes a long-standing complaint of William's: now when there is a problem in a %latex cell, the .log file is printed automatically, instead of just printing the message \"An error occurred.\"\n\nApply on top of the patch at #6012.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6022\n\n",
     "created_at": "2009-05-11T22:50:17Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_006022.json:
     "title": "[with patch, needs review] latex.py: if dvipng fails, use dvips and convert instead",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6022",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
-CC:  rbeezer fidelbarrera
+CC:  @rbeezer fidelbarrera
 
 On systems where dvipng is installed: If in a %latex cell, dvipng fails to produce a good picture, you get basically nothing.  With this patch, this failure is detected, and dvips and convert are then used instead. The failure is detected by running dvipng with the '--picky' option; with this turned on, if dvipng produces any warnings or errors, no png file is produced.  The code then sees if there is a png file; if not, it runs dvips and convert.
 
@@ -44,7 +44,7 @@ archive/issue_comments_047962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6022",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6022#issuecomment-47962",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_047963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6022",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6022#issuecomment-47963",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -125,16 +125,16 @@ That is, it won't work before applying that patch: I get no output from this.  W
 archive/issue_comments_047964.json:
 ```json
 {
-    "body": "Attachment [trac_6022.patch](tarball://root/attachments/some-uuid/ticket6022/trac_6022.patch) by rbeezer created at 2009-05-12 05:02:25\n\nLooks real good - this greatly expands the possibilities for latex packages that can be employed, and the resulting possibilities for latex output.  Works as advertised - tested with various combinations of %latex, %pdflatex, missing dvipng, missing convert, and various types of input.  Passes tests on sage/misc/latex.py.\n\nApply after the patch at #6012.",
+    "body": "Attachment [trac_6022.patch](tarball://root/attachments/some-uuid/ticket6022/trac_6022.patch) by @rbeezer created at 2009-05-12 05:02:25\n\nLooks real good - this greatly expands the possibilities for latex packages that can be employed, and the resulting possibilities for latex output.  Works as advertised - tested with various combinations of %latex, %pdflatex, missing dvipng, missing convert, and various types of input.  Passes tests on sage/misc/latex.py.\n\nApply after the patch at #6012.",
     "created_at": "2009-05-12T05:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6022",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6022#issuecomment-47964",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_6022.patch](tarball://root/attachments/some-uuid/ticket6022/trac_6022.patch) by rbeezer created at 2009-05-12 05:02:25
+Attachment [trac_6022.patch](tarball://root/attachments/some-uuid/ticket6022/trac_6022.patch) by @rbeezer created at 2009-05-12 05:02:25
 
 Looks real good - this greatly expands the possibilities for latex packages that can be employed, and the resulting possibilities for latex output.  Works as advertised - tested with various combinations of %latex, %pdflatex, missing dvipng, missing convert, and various types of input.  Passes tests on sage/misc/latex.py.
 

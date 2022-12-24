@@ -14,7 +14,7 @@ archive/issues_004700.json:
     "title": "Move existing javascript packages in extcode to their own spkg packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4700",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -57,7 +57,7 @@ archive/issue_comments_035407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35407",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_035410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35410",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,16 +135,16 @@ OK, guys calm down.    It will be _massively_ easier referee wise if you can bre
 archive/issue_comments_035411.json:
 ```json
 {
-    "body": "Attachment [javascript-spkg.patch](tarball://root/attachments/some-uuid/ticket4700/javascript-spkg.patch) by jason created at 2008-12-05 00:54:34",
+    "body": "Attachment [javascript-spkg.patch](tarball://root/attachments/some-uuid/ticket4700/javascript-spkg.patch) by @jasongrout created at 2008-12-05 00:54:34",
     "created_at": "2008-12-05T00:54:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35411",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [javascript-spkg.patch](tarball://root/attachments/some-uuid/ticket4700/javascript-spkg.patch) by jason created at 2008-12-05 00:54:34
+Attachment [javascript-spkg.patch](tarball://root/attachments/some-uuid/ticket4700/javascript-spkg.patch) by @jasongrout created at 2008-12-05 00:54:34
 
 
 
@@ -188,7 +188,7 @@ archive/issue_comments_035413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35413",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

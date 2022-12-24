@@ -3,7 +3,7 @@
 archive/issues_009447.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nsage: len(search_src(\"except:\",interact=False).splitlines())\n312\n\n\nThis number should be much lower.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9447\n\n",
+    "body": "Assignee: @aghitza\n\nsage: len(search_src(\"except:\",interact=False).splitlines())\n312\n\n\nThis number should be much lower.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9447\n\n",
     "created_at": "2010-07-07T09:48:31Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_009447.json:
     "user": "wjlaffin"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 sage: len(search_src("except:",interact=False).splitlines())
 312
@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9447
 archive/issue_comments_090530.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to jason.",
+    "body": "Changing assignee from @aghitza to @jasongrout.",
     "created_at": "2010-07-07T10:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9447",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_090530.json:
 }
 ```
 
-Changing assignee from AlexGhitza to jason.
+Changing assignee from @aghitza to @jasongrout.
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_090532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90532",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_090533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90533",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_090534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90534",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_090535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90535",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

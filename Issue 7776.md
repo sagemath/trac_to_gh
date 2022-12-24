@@ -3,7 +3,7 @@
 archive/issues_007776.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  sage-combinat\n\nFrom the doc:\n\n    inject a variable into the main global namespace\n\n    INPUT:\n- name  - a string\n- value - anything\n\n    EXAMPLES::\n\n        sage: from sage.misc.misc import inject_variable\n        sage: inject_variable(\"a\", 314)\n        sage: a\n        314\n\nThis will be used in the upcoming \"inject_shorthands\" patch for symmetric functions, and could be used in the various inject_variable code instead of manipulating directly globals() (which could be incorrect if not called directly from the interpreter/notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7776\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nFrom the doc:\n\n    inject a variable into the main global namespace\n\n    INPUT:\n- name  - a string\n- value - anything\n\n    EXAMPLES::\n\n        sage: from sage.misc.misc import inject_variable\n        sage: inject_variable(\"a\", 314)\n        sage: a\n        314\n\nThis will be used in the upcoming \"inject_shorthands\" patch for symmetric functions, and could be used in the various inject_variable code instead of manipulating directly globals() (which could be incorrect if not called directly from the interpreter/notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7776\n\n",
     "created_at": "2009-12-27T22:27:38Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_007776.json:
     "title": "Implements sage.misc.misc.inject_variable(name, value)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7776",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  sage-combinat
 
@@ -54,7 +54,7 @@ archive/issue_comments_067042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7776#issuecomment-67042",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_067043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7776#issuecomment-67043",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_067044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7776#issuecomment-67044",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -103,16 +103,16 @@ I'd rather it looked for `__name__ == '__main__'` than `wiki_create_instance`.
 archive/issue_comments_067045.json:
 ```json
 {
-    "body": "Attachment [trac_7776-inject_variable-nt.patch](tarball://root/attachments/some-uuid/ticket7776/trac_7776-inject_variable-nt.patch) by nthiery created at 2010-01-03 16:15:15",
+    "body": "Attachment [trac_7776-inject_variable-nt.patch](tarball://root/attachments/some-uuid/ticket7776/trac_7776-inject_variable-nt.patch) by @nthiery created at 2010-01-03 16:15:15",
     "created_at": "2010-01-03T16:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7776#issuecomment-67045",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7776-inject_variable-nt.patch](tarball://root/attachments/some-uuid/ticket7776/trac_7776-inject_variable-nt.patch) by nthiery created at 2010-01-03 16:15:15
+Attachment [trac_7776-inject_variable-nt.patch](tarball://root/attachments/some-uuid/ticket7776/trac_7776-inject_variable-nt.patch) by @nthiery created at 2010-01-03 16:15:15
 
 
 
@@ -126,7 +126,7 @@ archive/issue_comments_067046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7776#issuecomment-67046",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_067047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7776#issuecomment-67047",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_067048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7776#issuecomment-67048",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_067049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7776#issuecomment-67049",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_067050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7776#issuecomment-67050",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_067051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7776#issuecomment-67051",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

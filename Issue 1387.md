@@ -3,7 +3,7 @@
 archive/issues_001387.json:
 ```json
 {
-    "body": "Assignee: malb\n\nIf someone comes up with a better idea, fine, but at least now it's implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1387\n\n",
+    "body": "Assignee: @malb\n\nIf someone comes up with a better idea, fine, but at least now it's implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1387\n\n",
     "created_at": "2007-12-03T20:47:48Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001387.json:
     "title": "Implement is_prime for ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1387",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 If someone comes up with a better idea, fine, but at least now it's implemented.
 
@@ -37,7 +37,7 @@ archive/issue_comments_008898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1387#issuecomment-8898",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_008899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1387#issuecomment-8899",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

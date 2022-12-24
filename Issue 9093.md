@@ -3,7 +3,7 @@
 archive/issues_009093.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n```\nsage: R.<x> = QQ[]\nsage: R(1).is_square()\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9093\n\n",
+    "body": "Assignee: @aghitza\n\n\n```\nsage: R.<x> = QQ[]\nsage: R(1).is_square()\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9093\n\n",
     "created_at": "2010-05-30T08:37:36Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009093.json:
     "title": "is_square broken for constant polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9093",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 ```
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9093
 archive/issue_comments_084454.json:
 ```json
 {
-    "body": "Attachment [9093-poly-is_square.patch](tarball://root/attachments/some-uuid/ticket9093/9093-poly-is_square.patch) by robertwb created at 2010-05-30 08:44:15",
+    "body": "Attachment [9093-poly-is_square.patch](tarball://root/attachments/some-uuid/ticket9093/9093-poly-is_square.patch) by @robertwb created at 2010-05-30 08:44:15",
     "created_at": "2010-05-30T08:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9093#issuecomment-84454",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9093-poly-is_square.patch](tarball://root/attachments/some-uuid/ticket9093/9093-poly-is_square.patch) by robertwb created at 2010-05-30 08:44:15
+Attachment [9093-poly-is_square.patch](tarball://root/attachments/some-uuid/ticket9093/9093-poly-is_square.patch) by @robertwb created at 2010-05-30 08:44:15
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_084455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9093#issuecomment-84455",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_084456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9093#issuecomment-84456",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_084457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9093#issuecomment-84457",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_084458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9093#issuecomment-84458",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_084459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9093#issuecomment-84459",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_084460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9093#issuecomment-84460",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_084461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9093#issuecomment-84461",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

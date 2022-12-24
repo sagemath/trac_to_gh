@@ -302,7 +302,7 @@ archive/issue_comments_072339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8201#issuecomment-72339",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

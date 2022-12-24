@@ -121,16 +121,16 @@ Michael
 archive/issue_comments_002934.json:
 ```json
 {
-    "body": "Attachment [gmp_leak.patch](tarball://root/attachments/some-uuid/ticket566/gmp_leak.patch) by malb created at 2007-09-06 22:01:52",
+    "body": "Attachment [gmp_leak.patch](tarball://root/attachments/some-uuid/ticket566/gmp_leak.patch) by @malb created at 2007-09-06 22:01:52",
     "created_at": "2007-09-06T22:01:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/566#issuecomment-2934",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [gmp_leak.patch](tarball://root/attachments/some-uuid/ticket566/gmp_leak.patch) by malb created at 2007-09-06 22:01:52
+Attachment [gmp_leak.patch](tarball://root/attachments/some-uuid/ticket566/gmp_leak.patch) by @malb created at 2007-09-06 22:01:52
 
 
 
@@ -144,7 +144,7 @@ archive/issue_comments_002935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/566#issuecomment-2935",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_002936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/566#issuecomment-2936",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_002937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/566#issuecomment-2937",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_002938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/566#issuecomment-2938",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_002939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/566#issuecomment-2939",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -241,16 +241,16 @@ Fixed in attached `segfault-fix.patch`. The problem was that vector_times_matrix
 archive/issue_comments_002940.json:
 ```json
 {
-    "body": "Attachment [segfault-fix.patch](tarball://root/attachments/some-uuid/ticket566/segfault-fix.patch) by malb created at 2007-09-07 10:52:13",
+    "body": "Attachment [segfault-fix.patch](tarball://root/attachments/some-uuid/ticket566/segfault-fix.patch) by @malb created at 2007-09-07 10:52:13",
     "created_at": "2007-09-07T10:52:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/566#issuecomment-2940",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [segfault-fix.patch](tarball://root/attachments/some-uuid/ticket566/segfault-fix.patch) by malb created at 2007-09-07 10:52:13
+Attachment [segfault-fix.patch](tarball://root/attachments/some-uuid/ticket566/segfault-fix.patch) by @malb created at 2007-09-07 10:52:13
 
 
 
@@ -264,7 +264,7 @@ archive/issue_comments_002941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/566#issuecomment-2941",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

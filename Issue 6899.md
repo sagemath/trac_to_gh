@@ -3,7 +3,7 @@
 archive/issues_006899.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nHere's a simple example:\n\n```\nsage: a = real((-I*float(1))^2); a\n-1.00000000000000\nsage: float(a)\nTraceback (most recent call last):\n...\nTypeError: can't convert complex to float; use abs(z)\nsage: b = a.simplify(); b\n-1.0\nsage: float(b)\n-1.0\n```\n\n\nDylan Thurston reported this on sage-support, but in a more complicated situation involving plotting. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6899\n\n",
+    "body": "Assignee: @burcin\n\nHere's a simple example:\n\n```\nsage: a = real((-I*float(1))^2); a\n-1.00000000000000\nsage: float(a)\nTraceback (most recent call last):\n...\nTypeError: can't convert complex to float; use abs(z)\nsage: b = a.simplify(); b\n-1.0\nsage: float(b)\n-1.0\n```\n\n\nDylan Thurston reported this on sage-support, but in a more complicated situation involving plotting. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6899\n\n",
     "created_at": "2009-09-07T03:21:53Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_006899.json:
     "title": "weird bug taking float of real part of a symbolic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6899",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Here's a simple example:
 
@@ -53,7 +53,7 @@ archive/issue_comments_056995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-56995",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_056996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-56996",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -84,16 +84,16 @@ The issue is that `ComplexNumber.__float__` was automatically throwing an error.
 archive/issue_comments_056997.json:
 ```json
 {
-    "body": "Changing assignee from burcin to mhansen.",
+    "body": "Changing assignee from @burcin to @mwhansen.",
     "created_at": "2009-09-07T20:57:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-56997",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from burcin to mhansen.
+Changing assignee from @burcin to @mwhansen.
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_056998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-56998",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -120,16 +120,16 @@ faster conversion to float
 archive/issue_comments_056999.json:
 ```json
 {
-    "body": "Attachment [trac_6899.take2.patch](tarball://root/attachments/some-uuid/ticket6899/trac_6899.take2.patch) by burcin created at 2009-09-12 19:02:54\n\nattachment:trac_6899.take2.patch doesn't go through python function calls for the conversions. Thus, it is much faster.\n\nWith the python calls to `.is_real()` and `.real_part()`:\n\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n100000 loops, best of 3: 1.48 \u00b5s per loop\n```\n\n\nUsing mpfr directly:\n\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n1000000 loops, best of 3: 221 ns per loop\n```\n\n\nI give a positive review to Mike's changes. Mike, can you look over the two lines I touched?",
+    "body": "Attachment [trac_6899.take2.patch](tarball://root/attachments/some-uuid/ticket6899/trac_6899.take2.patch) by @burcin created at 2009-09-12 19:02:54\n\nattachment:trac_6899.take2.patch doesn't go through python function calls for the conversions. Thus, it is much faster.\n\nWith the python calls to `.is_real()` and `.real_part()`:\n\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n100000 loops, best of 3: 1.48 \u00b5s per loop\n```\n\n\nUsing mpfr directly:\n\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n1000000 loops, best of 3: 221 ns per loop\n```\n\n\nI give a positive review to Mike's changes. Mike, can you look over the two lines I touched?",
     "created_at": "2009-09-12T19:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-56999",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6899.take2.patch](tarball://root/attachments/some-uuid/ticket6899/trac_6899.take2.patch) by burcin created at 2009-09-12 19:02:54
+Attachment [trac_6899.take2.patch](tarball://root/attachments/some-uuid/ticket6899/trac_6899.take2.patch) by @burcin created at 2009-09-12 19:02:54
 
 attachment:trac_6899.take2.patch doesn't go through python function calls for the conversions. Thus, it is much faster.
 
@@ -171,7 +171,7 @@ archive/issue_comments_057000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-57000",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_057001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-57001",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_057002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-57002",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_057003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-57003",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

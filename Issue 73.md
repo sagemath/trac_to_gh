@@ -13,7 +13,7 @@ archive/issues_000073.json:
     "title": "\"sage -gdb\" broken on OS X.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/73",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -68,7 +68,7 @@ archive/issue_comments_000380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/73",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/73#issuecomment-380",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_000381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/73",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/73#issuecomment-381",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

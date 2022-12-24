@@ -3,7 +3,7 @@
 archive/issues_001045.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\nThis patch adds is_eulerian to graphs and digraphs and adds an eulerian_circuit function which uses Fleury's algorithm to find an eulerian circuit in a graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1045\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThis patch adds is_eulerian to graphs and digraphs and adds an eulerian_circuit function which uses Fleury's algorithm to find an eulerian circuit in a graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1045\n\n",
     "created_at": "2007-10-31T21:47:58Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001045.json:
     "title": "[with patch] graphs: add eulerian testing and circuit-finding",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1045",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1045
 archive/issue_comments_006360.json:
 ```json
 {
-    "body": "Attachment [iospec.patch](tarball://root/attachments/some-uuid/ticket1045/iospec.patch) by rlm created at 2007-11-01 06:37:48\n\nJust some bookkeeping...",
+    "body": "Attachment [iospec.patch](tarball://root/attachments/some-uuid/ticket1045/iospec.patch) by @rlmill created at 2007-11-01 06:37:48\n\nJust some bookkeeping...",
     "created_at": "2007-11-01T06:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1045#issuecomment-6360",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [iospec.patch](tarball://root/attachments/some-uuid/ticket1045/iospec.patch) by rlm created at 2007-11-01 06:37:48
+Attachment [iospec.patch](tarball://root/attachments/some-uuid/ticket1045/iospec.patch) by @rlmill created at 2007-11-01 06:37:48
 
 Just some bookkeeping...
 

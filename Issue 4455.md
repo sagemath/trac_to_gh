@@ -3,7 +3,7 @@
 archive/issues_004455.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4455\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4455\n\n",
     "created_at": "2008-11-06T20:49:04Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_004455.json:
     "title": "[with patch, positive review] bug in Coxeter matrix for type G2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4455",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4455
 archive/issue_comments_032868.json:
 ```json
 {
-    "body": "Attachment [trac_4455.patch](tarball://root/attachments/some-uuid/ticket4455/trac_4455.patch) by mhansen created at 2008-11-06 20:51:39",
+    "body": "Attachment [trac_4455.patch](tarball://root/attachments/some-uuid/ticket4455/trac_4455.patch) by @mwhansen created at 2008-11-06 20:51:39",
     "created_at": "2008-11-06T20:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4455#issuecomment-32868",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4455.patch](tarball://root/attachments/some-uuid/ticket4455/trac_4455.patch) by mhansen created at 2008-11-06 20:51:39
+Attachment [trac_4455.patch](tarball://root/attachments/some-uuid/ticket4455/trac_4455.patch) by @mwhansen created at 2008-11-06 20:51:39
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_032869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4455#issuecomment-32869",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_032870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4455#issuecomment-32870",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

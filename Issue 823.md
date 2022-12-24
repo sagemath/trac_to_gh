@@ -14,7 +14,7 @@ archive/issues_000823.json:
     "title": "make atlas standard in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/823",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

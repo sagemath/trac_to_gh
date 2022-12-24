@@ -3,7 +3,7 @@
 archive/issues_001704.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis patch replaces the `_DivPolyContext` class with a new function `_multiply_point`. The main downside of the original `_DivPolyContext` is that it's very recursive, and I started overflowing python's stack for some large problems I needed to play with. The new function is not recursive, and also turns out to be slightly faster.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1704\n\n",
+    "body": "Assignee: @williamstein\n\nThis patch replaces the `_DivPolyContext` class with a new function `_multiply_point`. The main downside of the original `_DivPolyContext` is that it's very recursive, and I started overflowing python's stack for some large problems I needed to play with. The new function is not recursive, and also turns out to be slightly faster.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1704\n\n",
     "created_at": "2008-01-06T23:19:41Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001704.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This patch replaces the `_DivPolyContext` class with a new function `_multiply_point`. The main downside of the original `_DivPolyContext` is that it's very recursive, and I started overflowing python's stack for some large problems I needed to play with. The new function is not recursive, and also turns out to be slightly faster.
 
@@ -56,7 +56,7 @@ archive/issue_comments_010795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1704#issuecomment-10795",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

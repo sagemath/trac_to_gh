@@ -3,7 +3,7 @@
 archive/issues_006807.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm jason\n\nThere is another bug in blocks_and_cut_vertices() where cut vertices can appear more than once in the returned list of cut vertices.  Jason Grout pointed out this problem in ticket [#6632](http://trac.sagemath.org/sage_trac/ticket/6632#comment:5).\n\n\n```\nsage: graphs.StarGraph(3).blocks_and_cut_vertices()\n([[1, 0], [2, 0], [3, 0]], [0, 0, 0])\n```\n\n\nThe problem occurs because the list C of cut vertices should be treated as a set, not a list: membership should be tested before adding a vertex to the list.\n\nFollowing a suggestion of Jason's, I also changed the initialization of the parent array to None.\n\nPatch will be attached below.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6807\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill @jasongrout\n\nThere is another bug in blocks_and_cut_vertices() where cut vertices can appear more than once in the returned list of cut vertices.  Jason Grout pointed out this problem in ticket [#6632](http://trac.sagemath.org/sage_trac/ticket/6632#comment:5).\n\n\n```\nsage: graphs.StarGraph(3).blocks_and_cut_vertices()\n([[1, 0], [2, 0], [3, 0]], [0, 0, 0])\n```\n\n\nThe problem occurs because the list C of cut vertices should be treated as a set, not a list: membership should be tested before adding a vertex to the list.\n\nFollowing a suggestion of Jason's, I also changed the initialization of the parent array to None.\n\nPatch will be attached below.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6807\n\n",
     "created_at": "2009-08-22T21:30:28Z",
     "labels": [
         "graph theory",
@@ -17,9 +17,9 @@ archive/issues_006807.json:
     "user": "hartke"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm jason
+CC:  @rlmill @jasongrout
 
 There is another bug in blocks_and_cut_vertices() where cut vertices can appear more than once in the returned list of cut vertices.  Jason Grout pointed out this problem in ticket [#6632](http://trac.sagemath.org/sage_trac/ticket/6632#comment:5).
 
@@ -89,7 +89,7 @@ archive/issue_comments_056042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6807#issuecomment-56042",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

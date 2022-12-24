@@ -3,7 +3,7 @@
 archive/issues_008879.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  mjo\n\nAs of 4.4, there is bad indentation in sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\n\n```\n    def is_in_weierstrass_disc(self,P):\n        \"\"\"\n        Checks if $P$ is in a Weierstrass disc\n\n        EXAMPLES:\n            sage: R.<x> = QQ['x']\n            sage: H = HyperellipticCurve(x^3-10*x+9)\n            sage: K = Qp(5,8)\n            sage: HK = H.change_ring(K)\n\t    sage: P = HK(0,3)\n\t    sage: HK.is_in_weierstrass_disc(P)\n\t    False\n\t    sage: Q = HK(0,1,0)\n\t    sage: HK.is_in_weierstrass_disc(Q)\n\t    True\n\t    sage: S = HK(1,0)\n            sage: HK.is_in_weierstrass_disc(S)\n            True\n\t    sage: T = HK.lift_x(1+3*5^2); T\n\t    (1 + 3*5^2 + O(5^8) : 2*5 + 4*5^3 + 3*5^4 + 5^5 + 3*5^6 + O(5^7) : 1 + O(5^8))\n\t    sage: HK.is_in_weierstrass_disc(T)\n\t    True\n\n\tAUTHOR:\n            - Jennifer Balakrishnan (2010-02)\n        \"\"\"\n```\n\nI don't know if it matters that much, but at the very least it's annoying.  It's not elliptic curves, of course, but that's the closest component I could find.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8879\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @orlitzky\n\nAs of 4.4, there is bad indentation in sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\n\n```\n    def is_in_weierstrass_disc(self,P):\n        \"\"\"\n        Checks if $P$ is in a Weierstrass disc\n\n        EXAMPLES:\n            sage: R.<x> = QQ['x']\n            sage: H = HyperellipticCurve(x^3-10*x+9)\n            sage: K = Qp(5,8)\n            sage: HK = H.change_ring(K)\n\t    sage: P = HK(0,3)\n\t    sage: HK.is_in_weierstrass_disc(P)\n\t    False\n\t    sage: Q = HK(0,1,0)\n\t    sage: HK.is_in_weierstrass_disc(Q)\n\t    True\n\t    sage: S = HK(1,0)\n            sage: HK.is_in_weierstrass_disc(S)\n            True\n\t    sage: T = HK.lift_x(1+3*5^2); T\n\t    (1 + 3*5^2 + O(5^8) : 2*5 + 4*5^3 + 3*5^4 + 5^5 + 3*5^6 + O(5^7) : 1 + O(5^8))\n\t    sage: HK.is_in_weierstrass_disc(T)\n\t    True\n\n\tAUTHOR:\n            - Jennifer Balakrishnan (2010-02)\n        \"\"\"\n```\n\nI don't know if it matters that much, but at the very least it's annoying.  It's not elliptic curves, of course, but that's the closest component I could find.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8879\n\n",
     "created_at": "2010-05-05T00:01:01Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_008879.json:
     "title": "Bad indentation in hyperelliptic curve file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8879",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  mjo
+CC:  @orlitzky
 
 As of 4.4, there is bad indentation in sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py
 
@@ -70,7 +70,7 @@ archive/issue_comments_081586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8879#issuecomment-81586",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_081587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8879#issuecomment-81587",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_081588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8879#issuecomment-81588",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_081589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8879#issuecomment-81589",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -165,16 +165,16 @@ I've cleaned up some trailing whitespace, so that there isn't nothing to do here
 archive/issue_comments_081590.json:
 ```json
 {
-    "body": "Attachment [sage-trac_8879.patch](tarball://root/attachments/some-uuid/ticket8879/sage-trac_8879.patch) by mjo created at 2012-01-16 03:46:19\n\nRemove trailing whitespace.",
+    "body": "Attachment [sage-trac_8879.patch](tarball://root/attachments/some-uuid/ticket8879/sage-trac_8879.patch) by @orlitzky created at 2012-01-16 03:46:19\n\nRemove trailing whitespace.",
     "created_at": "2012-01-16T03:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8879#issuecomment-81590",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_8879.patch](tarball://root/attachments/some-uuid/ticket8879/sage-trac_8879.patch) by mjo created at 2012-01-16 03:46:19
+Attachment [sage-trac_8879.patch](tarball://root/attachments/some-uuid/ticket8879/sage-trac_8879.patch) by @orlitzky created at 2012-01-16 03:46:19
 
 Remove trailing whitespace.
 
@@ -190,7 +190,7 @@ archive/issue_comments_081591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8879#issuecomment-81591",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_081592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8879#issuecomment-81592",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_081593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8879#issuecomment-81593",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_081594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8879#issuecomment-81594",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_081595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8879#issuecomment-81595",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

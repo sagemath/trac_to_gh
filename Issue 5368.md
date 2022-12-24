@@ -3,7 +3,7 @@
 archive/issues_005368.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  wcauchois\n\nThis gives an infinite loop in the command line or notebook:\n\n```\nvar('x,y')\nplot3d(x*y^2 - sin(x), (-1,1), (-1,1))\n```\n\n\nPretty bad!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5368\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  wcauchois\n\nThis gives an infinite loop in the command line or notebook:\n\n```\nvar('x,y')\nplot3d(x*y^2 - sin(x), (-1,1), (-1,1))\n```\n\n\nPretty bad!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5368\n\n",
     "created_at": "2009-02-25T04:08:50Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005368.json:
     "title": "plot3d is broken when variables not given",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5368",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  wcauchois
 
@@ -47,7 +47,7 @@ archive/issue_comments_041349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5368#issuecomment-41349",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

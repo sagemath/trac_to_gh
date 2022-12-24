@@ -14,7 +14,7 @@ archive/issues_001138.json:
     "title": "add implementation of tonelli-shanks to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1138",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -291,7 +291,7 @@ archive/issue_comments_006910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6910",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_006911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6911",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -324,16 +324,16 @@ For p == 1 mod 16, I think there may be an improvement. I am investigating this 
 archive/issue_comments_006912.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2008-02-16T21:18:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6912",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -347,7 +347,7 @@ archive/issue_comments_006913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6913",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -360,16 +360,16 @@ This algorithm has also been implemented in FLINT, so I am simply going to wrap 
 archive/issue_comments_006914.json:
 ```json
 {
-    "body": "Attachment [1138-sqrt-mod.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod.patch) by robertwb created at 2008-02-18 22:51:59\n\nI wasn't able to get FLINT to give me the correct answers, the algorithm turns out to be simple enough that I just implemented it right in the library. \n\nThere are several other minor optimizations in the patch too.",
+    "body": "Attachment [1138-sqrt-mod.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod.patch) by @robertwb created at 2008-02-18 22:51:59\n\nI wasn't able to get FLINT to give me the correct answers, the algorithm turns out to be simple enough that I just implemented it right in the library. \n\nThere are several other minor optimizations in the patch too.",
     "created_at": "2008-02-18T22:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6914",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1138-sqrt-mod.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod.patch) by robertwb created at 2008-02-18 22:51:59
+Attachment [1138-sqrt-mod.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod.patch) by @robertwb created at 2008-02-18 22:51:59
 
 I wasn't able to get FLINT to give me the correct answers, the algorithm turns out to be simple enough that I just implemented it right in the library. 
 
@@ -451,16 +451,16 @@ Once this is resolved, I'll continue reviewing the patch (I've been meaning to l
 archive/issue_comments_006918.json:
 ```json
 {
-    "body": "Attachment [1138-sqrt-mod-rebased-2.10.4.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod-rebased-2.10.4.patch) by robertwb created at 2008-03-26 03:12:00",
+    "body": "Attachment [1138-sqrt-mod-rebased-2.10.4.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod-rebased-2.10.4.patch) by @robertwb created at 2008-03-26 03:12:00",
     "created_at": "2008-03-26T03:12:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6918",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1138-sqrt-mod-rebased-2.10.4.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod-rebased-2.10.4.patch) by robertwb created at 2008-03-26 03:12:00
+Attachment [1138-sqrt-mod-rebased-2.10.4.patch](tarball://root/attachments/some-uuid/ticket1138/1138-sqrt-mod-rebased-2.10.4.patch) by @robertwb created at 2008-03-26 03:12:00
 
 
 
@@ -474,7 +474,7 @@ archive/issue_comments_006919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6919",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -487,16 +487,16 @@ I rebased it again against 2.10.4 and touched it up a bit. It should work now. `
 archive/issue_comments_006920.json:
 ```json
 {
-    "body": "Attachment [1138.patch](tarball://root/attachments/some-uuid/ticket1138/1138.patch) by mhansen created at 2008-04-04 20:22:05\n\nLooks good to me.  I've attached 1138.patch which is rebased against sage-3.0.alpha0",
+    "body": "Attachment [1138.patch](tarball://root/attachments/some-uuid/ticket1138/1138.patch) by @mwhansen created at 2008-04-04 20:22:05\n\nLooks good to me.  I've attached 1138.patch which is rebased against sage-3.0.alpha0",
     "created_at": "2008-04-04T20:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6920",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1138.patch](tarball://root/attachments/some-uuid/ticket1138/1138.patch) by mhansen created at 2008-04-04 20:22:05
+Attachment [1138.patch](tarball://root/attachments/some-uuid/ticket1138/1138.patch) by @mwhansen created at 2008-04-04 20:22:05
 
 Looks good to me.  I've attached 1138.patch which is rebased against sage-3.0.alpha0
 
@@ -512,7 +512,7 @@ archive/issue_comments_006921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1138#issuecomment-6921",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

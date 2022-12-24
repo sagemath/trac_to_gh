@@ -3,7 +3,7 @@
 archive/issues_007332.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mpatel\n\nCurrently, some css id's and classes have illegal values ('admin/0', for example, in `worksheet_listing.html`). This prevents jQuery and Selenium from accessing those attributes.\n\nThis adds a filter to produce legal values from those values.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7332\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nCurrently, some css id's and classes have illegal values ('admin/0', for example, in `worksheet_listing.html`). This prevents jQuery and Selenium from accessing those attributes.\n\nThis adds a filter to produce legal values from those values.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7332\n\n",
     "created_at": "2009-10-28T13:50:08Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007332.json:
     "title": "Escape css id's and classes in templates",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7332",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
 
-CC:  was mpatel
+CC:  @williamstein @qed777
 
 Currently, some css id's and classes have illegal values ('admin/0', for example, in `worksheet_listing.html`). This prevents jQuery and Selenium from accessing those attributes.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7332
 archive/issue_comments_061312.json:
 ```json
 {
-    "body": "Attachment [trac_7332-css-escape.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.patch) by timdumol created at 2009-10-28 13:55:47\n\nAdds `css_escape` filter and makes `worksheet_listing.html` use it.",
+    "body": "Attachment [trac_7332-css-escape.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.patch) by @TimDumol created at 2009-10-28 13:55:47\n\nAdds `css_escape` filter and makes `worksheet_listing.html` use it.",
     "created_at": "2009-10-28T13:55:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7332#issuecomment-61312",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7332-css-escape.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.patch) by timdumol created at 2009-10-28 13:55:47
+Attachment [trac_7332-css-escape.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.patch) by @TimDumol created at 2009-10-28 13:55:47
 
 Adds `css_escape` filter and makes `worksheet_listing.html` use it.
 
@@ -61,7 +61,7 @@ archive/issue_comments_061313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7332#issuecomment-61313",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_061314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7332#issuecomment-61314",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -92,16 +92,16 @@ Fixed `notebook_lib.js` so that the checkboxes work after the patch.
 archive/issue_comments_061315.json:
 ```json
 {
-    "body": "Attachment [trac_7332-css-escape.2.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.2.patch) by timdumol created at 2009-10-29 04:12:52\n\nDeepends on #7310.",
+    "body": "Attachment [trac_7332-css-escape.2.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.2.patch) by @TimDumol created at 2009-10-29 04:12:52\n\nDeepends on #7310.",
     "created_at": "2009-10-29T04:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7332#issuecomment-61315",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7332-css-escape.2.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.2.patch) by timdumol created at 2009-10-29 04:12:52
+Attachment [trac_7332-css-escape.2.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.2.patch) by @TimDumol created at 2009-10-29 04:12:52
 
 Deepends on #7310.
 
@@ -112,16 +112,16 @@ Deepends on #7310.
 archive/issue_comments_061316.json:
 ```json
 {
-    "body": "Attachment [trac_7332-css-escape.3.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.3.patch) by mpatel created at 2009-10-31 08:38:41\n\nAlso fix the overall checkbox (\"controlbox\"). Apply only this patch.",
+    "body": "Attachment [trac_7332-css-escape.3.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.3.patch) by @qed777 created at 2009-10-31 08:38:41\n\nAlso fix the overall checkbox (\"controlbox\"). Apply only this patch.",
     "created_at": "2009-10-31T08:38:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7332#issuecomment-61316",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7332-css-escape.3.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.3.patch) by mpatel created at 2009-10-31 08:38:41
+Attachment [trac_7332-css-escape.3.patch](tarball://root/attachments/some-uuid/ticket7332/trac_7332-css-escape.3.patch) by @qed777 created at 2009-10-31 08:38:41
 
 Also fix the overall checkbox ("controlbox"). Apply only this patch.
 
@@ -137,7 +137,7 @@ archive/issue_comments_061317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7332#issuecomment-61317",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_061318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7332#issuecomment-61318",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_061319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7332#issuecomment-61319",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_061320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7332#issuecomment-61320",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_061321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7332#issuecomment-61321",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_061322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7332#issuecomment-61322",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

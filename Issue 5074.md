@@ -3,7 +3,7 @@
 archive/issues_005074.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: h = - (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\n\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1) * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^6 - x^5*y + x*y^5 + y^6 + x^5 + x*y^4 - x^4 + x^2*y^2 + x*y^3 + y^4 + x^2*y - y^2 - x - 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1)^2 * (-x^6*y^2 - x^5*y^3 - x^4*y^4 + x^3*y^5 + x^2*y^6 - x*y^7 + y^8 - x^6*y - x^4*y^3 + x^3*y^4 + x^2*y^5 + x*y^6 + y^7 + x^6 - x^5*y + x^2*y^4 + x^5 + x^3*y^2 - x^2*y^3 - y^5 - x^4 - x^3*y + x^2*y^2 - y^4 + x^2*y + x*y^2 + y^3 - x*y - y^2 - x - 1)\n```\n\n\nNote that the factors need not even be coprime!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5074\n\n",
+    "body": "Assignee: @malb\n\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: h = - (-x^2 - x*y + y^2 - 1)^2 * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (-x^4 - x^3*y - x*y^3 + y^4 - x^3 + x^2*y + x*y^2 - x^2 - x*y - y^2 + x + 1)\n\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1) * (x^2*y^2 + y^4 + x^2*y + x*y^2 + y^3 - x^2 + x*y + y^2 - 1) * (x^6 - x^5*y + x*y^5 + y^6 + x^5 + x*y^4 - x^4 + x^2*y^2 + x*y^3 + y^4 + x^2*y - y^2 - x - 1)\nsage: h.factor()\n(-1) * (-x^2 - x*y + y^2 - 1)^2 * (-x^6*y^2 - x^5*y^3 - x^4*y^4 + x^3*y^5 + x^2*y^6 - x*y^7 + y^8 - x^6*y - x^4*y^3 + x^3*y^4 + x^2*y^5 + x*y^6 + y^7 + x^6 - x^5*y + x^2*y^4 + x^5 + x^3*y^2 - x^2*y^3 - y^5 - x^4 - x^3*y + x^2*y^2 - y^4 + x^2*y + x*y^2 + y^3 - x*y - y^2 - x - 1)\n```\n\n\nNote that the factors need not even be coprime!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5074\n\n",
     "created_at": "2009-01-23T14:30:09Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_005074.json:
     "title": "singular factorization over GF(p) need not be a complete factorization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5074",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -52,7 +52,7 @@ archive/issue_comments_038635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38635",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,16 +73,16 @@ for i in range(5000):
 archive/issue_comments_038636.json:
 ```json
 {
-    "body": "Attachment [trac_5074.patch](tarball://root/attachments/some-uuid/ticket5074/trac_5074.patch) by malb created at 2010-07-12 15:11:14",
+    "body": "Attachment [trac_5074.patch](tarball://root/attachments/some-uuid/ticket5074/trac_5074.patch) by @malb created at 2010-07-12 15:11:14",
     "created_at": "2010-07-12T15:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38636",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_5074.patch](tarball://root/attachments/some-uuid/ticket5074/trac_5074.patch) by malb created at 2010-07-12 15:11:14
+Attachment [trac_5074.patch](tarball://root/attachments/some-uuid/ticket5074/trac_5074.patch) by @malb created at 2010-07-12 15:11:14
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_038637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38637",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_038638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38638",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_038639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38639",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_038640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38640",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_038641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38641",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -230,16 +230,16 @@ sage: for i in range(10): h.factor(proof=False)
 archive/issue_comments_038642.json:
 ```json
 {
-    "body": "Attachment [review_5313.sage](tarball://root/attachments/some-uuid/ticket5074/review_5313.sage) by malb created at 2010-11-03 13:17:51\n\ntest quality of factorisation for many random examples",
+    "body": "Attachment [review_5313.sage](tarball://root/attachments/some-uuid/ticket5074/review_5313.sage) by @malb created at 2010-11-03 13:17:51\n\ntest quality of factorisation for many random examples",
     "created_at": "2010-11-03T13:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38642",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [review_5313.sage](tarball://root/attachments/some-uuid/ticket5074/review_5313.sage) by malb created at 2010-11-03 13:17:51
+Attachment [review_5313.sage](tarball://root/attachments/some-uuid/ticket5074/review_5313.sage) by @malb created at 2010-11-03 13:17:51
 
 test quality of factorisation for many random examples
 
@@ -255,7 +255,7 @@ archive/issue_comments_038643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38643",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_038644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38644",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_038645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38645",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_038646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38646",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_038647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38647",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_038648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5074#issuecomment-38648",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

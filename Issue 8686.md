@@ -3,7 +3,7 @@
 archive/issues_008686.json:
 ```json
 {
-    "body": "Assignee: itolkov, jason\n\nCC:  was timdumol\n\nKeywords: gettext history documentation\n\nIn versions of Sage up to 4.3.2, the following worked as expected:\n\n\n```\n>./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: _?\n[...]\nsage: _\n''\nsage: _\n''\n```\n\n| Sage Version 4.3.2, Release Date: 2010-02-06                       |\n| Type notebook() for the GUI, and license() for information.        |\nHowever, with Sage 4.3.3, it has stopped working:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: _?\n[...]\nsage: _\n''\nsage: _\n<bound method NullTranslations.ugettext of <gettext.NullTranslations instance at 0x4b1a680>>\n```\n\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nFor some things, the history works as expected, but for others it does not.  To me it appears that it is \"simple\" things, e.g. above, the empty expression, or simple expressions like \"3+4\" where it does not work anymore, but for more complex things (e.g. if you call a function that returns something), \"_\" still does what you would expect it to do.\n\nThis bug still exists in Sage 4.3.5.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8686\n\n",
+    "body": "Assignee: itolkov, jason\n\nCC:  @williamstein @TimDumol\n\nKeywords: gettext history documentation\n\nIn versions of Sage up to 4.3.2, the following worked as expected:\n\n\n```\n>./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: _?\n[...]\nsage: _\n''\nsage: _\n''\n```\n\n| Sage Version 4.3.2, Release Date: 2010-02-06                       |\n| Type notebook() for the GUI, and license() for information.        |\nHowever, with Sage 4.3.3, it has stopped working:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: _?\n[...]\nsage: _\n''\nsage: _\n<bound method NullTranslations.ugettext of <gettext.NullTranslations instance at 0x4b1a680>>\n```\n\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nFor some things, the history works as expected, but for others it does not.  To me it appears that it is \"simple\" things, e.g. above, the empty expression, or simple expressions like \"3+4\" where it does not work anymore, but for more complex things (e.g. if you call a function that returns something), \"_\" still does what you would expect it to do.\n\nThis bug still exists in Sage 4.3.5.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8686\n\n",
     "created_at": "2010-04-14T13:01:16Z",
     "labels": [
         "interact",
@@ -19,7 +19,7 @@ archive/issues_008686.json:
 ```
 Assignee: itolkov, jason
 
-CC:  was timdumol
+CC:  @williamstein @TimDumol
 
 Keywords: gettext history documentation
 
@@ -71,7 +71,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8686
 archive/issue_comments_079149.json:
 ```json
 {
-    "body": "Changing assignee from itolkov, jason to was.",
+    "body": "Changing assignee from itolkov, jason to @williamstein.",
     "created_at": "2010-04-14T13:08:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8686",
     "type": "issue_comment",
@@ -80,7 +80,7 @@ archive/issue_comments_079149.json:
 }
 ```
 
-Changing assignee from itolkov, jason to was.
+Changing assignee from itolkov, jason to @williamstein.
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_079151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8686#issuecomment-79151",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -125,16 +125,16 @@ Changing status from new to needs_review.
 archive/issue_comments_079152.json:
 ```json
 {
-    "body": "Attachment [trac_8686.patch](tarball://root/attachments/some-uuid/ticket8686/trac_8686.patch) by mhansen created at 2010-05-03 22:01:35",
+    "body": "Attachment [trac_8686.patch](tarball://root/attachments/some-uuid/ticket8686/trac_8686.patch) by @mwhansen created at 2010-05-03 22:01:35",
     "created_at": "2010-05-03T22:01:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8686#issuecomment-79152",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8686.patch](tarball://root/attachments/some-uuid/ticket8686/trac_8686.patch) by mhansen created at 2010-05-03 22:01:35
+Attachment [trac_8686.patch](tarball://root/attachments/some-uuid/ticket8686/trac_8686.patch) by @mwhansen created at 2010-05-03 22:01:35
 
 
 
@@ -148,7 +148,7 @@ archive/issue_comments_079153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8686#issuecomment-79153",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_079154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8686#issuecomment-79154",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_079155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8686#issuecomment-79155",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_079156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8686#issuecomment-79156",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

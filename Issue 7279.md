@@ -14,7 +14,7 @@ archive/issues_007279.json:
     "title": "issue with %sh in sagenb (notebook)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7279",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -61,7 +61,7 @@ archive/issue_comments_060576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60576",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_060577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60577",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_060578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60578",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_060579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60579",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_060580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60580",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_060581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60581",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_060582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60582",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_060583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60583",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_060584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60584",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_060585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60585",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_060586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60586",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_060587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60587",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_060588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60588",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_060589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60589",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -354,16 +354,16 @@ Yep.  Plus the advantage of being able to watch the output as it appears is *hug
 archive/issue_comments_060590.json:
 ```json
 {
-    "body": "Attachment [sagelib_7279.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279.patch) by was created at 2009-12-11 13:29:07",
+    "body": "Attachment [sagelib_7279.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279.patch) by @williamstein created at 2009-12-11 13:29:07",
     "created_at": "2009-12-11T13:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60590",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagelib_7279.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279.patch) by was created at 2009-12-11 13:29:07
+Attachment [sagelib_7279.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279.patch) by @williamstein created at 2009-12-11 13:29:07
 
 
 
@@ -377,7 +377,7 @@ archive/issue_comments_060591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60591",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -390,16 +390,16 @@ apply both to the core sage library
 archive/issue_comments_060592.json:
 ```json
 {
-    "body": "Attachment [sagelib_7279-part2.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279-part2.patch) by was created at 2009-12-11 13:30:08\n\nReplying to [comment:10 jason]:\n> Or maybe just combine the last two paragraphs so that it is obvious that the directory is only the temporary directory when executing from the worksheet.\n\nI've done this.",
+    "body": "Attachment [sagelib_7279-part2.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279-part2.patch) by @williamstein created at 2009-12-11 13:30:08\n\nReplying to [comment:10 jason]:\n> Or maybe just combine the last two paragraphs so that it is obvious that the directory is only the temporary directory when executing from the worksheet.\n\nI've done this.",
     "created_at": "2009-12-11T13:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60592",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagelib_7279-part2.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279-part2.patch) by was created at 2009-12-11 13:30:08
+Attachment [sagelib_7279-part2.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279-part2.patch) by @williamstein created at 2009-12-11 13:30:08
 
 Replying to [comment:10 jason]:
 > Or maybe just combine the last two paragraphs so that it is obvious that the directory is only the temporary directory when executing from the worksheet.
@@ -418,7 +418,7 @@ archive/issue_comments_060593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60593",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_060594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60594",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_060595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60595",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

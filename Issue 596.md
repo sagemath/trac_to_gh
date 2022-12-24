@@ -3,7 +3,7 @@
 archive/issues_000596.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen I execute\n\n```\nsage: wiki()\n```\n\n\nI get ...\n\n```\n* Open your web browser to http://localhost:9000\n...\n```\n\nand it works fine.  Then how do I close it cleanly?\n\nI've tried ctrl-C in the sage window, which gives the following...\nIt closes that web window but then restarts the wiki.\n\n\n```\n2007/09/05 13:47 -0700 [-] Received SIGINT, shutting down.\n2007/09/05 13:47 -0700 [-] (Port 9000 Closed)\n2007/09/05 13:47 -0700 [-] Stopping factory\n<MoinMoin.server.twistedmoin.MoinSite instance at 0x4060ebec>\n2007/09/05 13:47 -0700 [-] Main loop terminated.\n2007/09/05 13:47 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9001 *\n*                                                *\n**************************************************\n2007/09/05 13:47 -0700 [-] Log opened.\n```\n\netc.\n\nClosing the webpage first doesn't help and SAGE doesn't accept any\ncommands\nother than ctrl-C, including ctrl-D.\n\nApparently Ctl-C Ctl-C (twice in rapid succession) closes it.\n\nReported by rjleveque`@`gmail.com (Randy Leveque)\n\nIssue created by migration from https://trac.sagemath.org/ticket/596\n\n",
+    "body": "Assignee: @williamstein\n\nWhen I execute\n\n```\nsage: wiki()\n```\n\n\nI get ...\n\n```\n* Open your web browser to http://localhost:9000\n...\n```\n\nand it works fine.  Then how do I close it cleanly?\n\nI've tried ctrl-C in the sage window, which gives the following...\nIt closes that web window but then restarts the wiki.\n\n\n```\n2007/09/05 13:47 -0700 [-] Received SIGINT, shutting down.\n2007/09/05 13:47 -0700 [-] (Port 9000 Closed)\n2007/09/05 13:47 -0700 [-] Stopping factory\n<MoinMoin.server.twistedmoin.MoinSite instance at 0x4060ebec>\n2007/09/05 13:47 -0700 [-] Main loop terminated.\n2007/09/05 13:47 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9001 *\n*                                                *\n**************************************************\n2007/09/05 13:47 -0700 [-] Log opened.\n```\n\netc.\n\nClosing the webpage first doesn't help and SAGE doesn't accept any\ncommands\nother than ctrl-C, including ctrl-D.\n\nApparently Ctl-C Ctl-C (twice in rapid succession) closes it.\n\nReported by rjleveque`@`gmail.com (Randy Leveque)\n\nIssue created by migration from https://trac.sagemath.org/ticket/596\n\n",
     "created_at": "2007-09-05T22:18:22Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000596.json:
     "title": "sage wiki() doesn't close with ctl-C",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/596",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When I execute
 
@@ -81,7 +81,7 @@ archive/issue_comments_003074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3074",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_003075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3075",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_003077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3077",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_003078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3078",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_003079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3079",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_003080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3080",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_003081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3081",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_003082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3082",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_003083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/596#issuecomment-3083",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

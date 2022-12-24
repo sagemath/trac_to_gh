@@ -59,7 +59,7 @@ archive/issue_comments_012853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1984#issuecomment-12853",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_012854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1984#issuecomment-12854",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_012855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1984#issuecomment-12855",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_012856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1984#issuecomment-12856",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

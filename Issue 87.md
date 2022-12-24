@@ -3,7 +3,7 @@
 archive/issues_000087.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jdc@uwo.ca\n\nThis bug is a bit more subtle than I expected:\n\n--------------------------------------------------------\n--------------------------------------------------------\n| SAGE Version 1.3.7.3.3, Build Date: 2006-09-21       |\n| Distributed under the GNU General Public License V2. |\nsage: Qx=QQ['x']; x,=Qx.gens()\n\nsage: (1/x)*x                                                                  \n 1\n\nsage: Qyz=QQ['y,z']; y,z=Qyz.gens()                                            \n\nsage: (1/y)*y                                                                  \n 1\n\nsage: (y^2/y)*y                                                                \n---------------------------------------------------------------------------\nexceptions.TypeError                                 Traceback (most recent call last)\n\n/home/scratchy/math/me/CayleyDickson/python/symbolic/<ipython console> \n\n/home/scratchy/math/me/CayleyDickson/python/symbolic/element.pyx in element.RingElement.__mul__()\n\n/home/scratchy/math/me/CayleyDickson/python/symbolic/coerce.pyx in coerce.bin_op()\n\nTypeError: unable to find an unambiguous parent\n\nsage: type(1/y)                                                                \n <class 'sage.rings.fraction_field_element.FractionFieldElement'>\n\nsage: type(y^2/y)                                                              \n <class 'sage.rings.fraction_field_element.FractionFieldElement'>\n\nsage: type(y)                                                                  \n <class 'sage.rings.multi_polynomial_element.MPolynomial_polydict'>\n\nDan\n\nIssue created by migration from https://trac.sagemath.org/ticket/87\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  jdc@uwo.ca\n\nThis bug is a bit more subtle than I expected:\n\n--------------------------------------------------------\n--------------------------------------------------------\n| SAGE Version 1.3.7.3.3, Build Date: 2006-09-21       |\n| Distributed under the GNU General Public License V2. |\nsage: Qx=QQ['x']; x,=Qx.gens()\n\nsage: (1/x)*x                                                                  \n 1\n\nsage: Qyz=QQ['y,z']; y,z=Qyz.gens()                                            \n\nsage: (1/y)*y                                                                  \n 1\n\nsage: (y^2/y)*y                                                                \n---------------------------------------------------------------------------\nexceptions.TypeError                                 Traceback (most recent call last)\n\n/home/scratchy/math/me/CayleyDickson/python/symbolic/<ipython console> \n\n/home/scratchy/math/me/CayleyDickson/python/symbolic/element.pyx in element.RingElement.__mul__()\n\n/home/scratchy/math/me/CayleyDickson/python/symbolic/coerce.pyx in coerce.bin_op()\n\nTypeError: unable to find an unambiguous parent\n\nsage: type(1/y)                                                                \n <class 'sage.rings.fraction_field_element.FractionFieldElement'>\n\nsage: type(y^2/y)                                                              \n <class 'sage.rings.fraction_field_element.FractionFieldElement'>\n\nsage: type(y)                                                                  \n <class 'sage.rings.multi_polynomial_element.MPolynomial_polydict'>\n\nDan\n\nIssue created by migration from https://trac.sagemath.org/ticket/87\n\n",
     "created_at": "2006-09-26T21:22:36Z",
     "labels": [
         "algebraic geometry",
@@ -13,10 +13,10 @@ archive/issues_000087.json:
     "title": "multivariable FractionField vs MPolynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/87",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  jdc@uwo.ca
 
@@ -75,7 +75,7 @@ archive/issue_comments_000431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/87",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/87#issuecomment-431",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_000432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/87",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/87#issuecomment-432",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

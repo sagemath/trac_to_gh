@@ -3,7 +3,7 @@
 archive/issues_001338.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nIt seems that symmetrica doesn't do too well on big endian machines. On Sparc as well as PPC under Linux the sfa doctest segfaults or shows bad things happening under valgrind. Mike Hanson said that there will be a new upstream version of symmetrica soon, so let's see if those fix the issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1338\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nIt seems that symmetrica doesn't do too well on big endian machines. On Sparc as well as PPC under Linux the sfa doctest segfaults or shows bad things happening under valgrind. Mike Hanson said that there will be a new upstream version of symmetrica soon, so let's see if those fix the issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1338\n\n",
     "created_at": "2007-11-29T09:53:13Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_001338.json:
     "user": "mabshoff"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -43,7 +43,7 @@ archive/issue_comments_008573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1338#issuecomment-8573",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_008574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1338#issuecomment-8574",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -210,7 +210,7 @@ Michael
 archive/issue_comments_008581.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to mabshoff.",
+    "body": "Changing assignee from @mwhansen to mabshoff.",
     "created_at": "2009-05-15T11:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1338",
     "type": "issue_comment",
@@ -219,7 +219,7 @@ archive/issue_comments_008581.json:
 }
 ```
 
-Changing assignee from mhansen to mabshoff.
+Changing assignee from @mwhansen to mabshoff.
 
 
 
@@ -269,7 +269,7 @@ archive/issue_comments_008584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1338#issuecomment-8584",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

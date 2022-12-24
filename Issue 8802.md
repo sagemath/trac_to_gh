@@ -3,7 +3,7 @@
 archive/issues_008802.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  robertwb davidloeffler cremona\n\nThis is inconsistent with other versions of sqrt():\n\n```\nsage: QQbar(2).sqrt()\n1.414213562373095?\nsage: QQbar(2).sqrt(all=True)\n```\n\n\nIn addition, there should be a parameter \"extend\" to handle this:\n\n```\nsage: AA(2).sqrt()\n1.414213562373095?\nsage: AA(-2).sqrt()\n1.414213562373095?*I\n```\n\nIn the second example, we should not return a root in QQbar unless extend=True.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8802\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb @loefflerd @JohnCremona\n\nThis is inconsistent with other versions of sqrt():\n\n```\nsage: QQbar(2).sqrt()\n1.414213562373095?\nsage: QQbar(2).sqrt(all=True)\n```\n\n\nIn addition, there should be a parameter \"extend\" to handle this:\n\n```\nsage: AA(2).sqrt()\n1.414213562373095?\nsage: AA(-2).sqrt()\n1.414213562373095?*I\n```\n\nIn the second example, we should not return a root in QQbar unless extend=True.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8802\n\n",
     "created_at": "2010-04-28T14:41:11Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008802.json:
     "title": "sqrt() for QQbar and AA should have a parameter \"all\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8802",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  robertwb davidloeffler cremona
+CC:  @robertwb @loefflerd @JohnCremona
 
 This is inconsistent with other versions of sqrt():
 
@@ -132,7 +132,7 @@ archive/issue_comments_080752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8802#issuecomment-80752",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_080754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8802#issuecomment-80754",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -186,16 +186,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_080755.json:
 ```json
 {
-    "body": "Attachment [trac_8802-sqrt-qqbar-v3.patch](tarball://root/attachments/some-uuid/ticket8802/trac_8802-sqrt-qqbar-v3.patch) by cremona created at 2010-06-09 14:50:51\n\nFixed docstring format issues and simplified: applies to 4.4.4.alpha0",
+    "body": "Attachment [trac_8802-sqrt-qqbar-v3.patch](tarball://root/attachments/some-uuid/ticket8802/trac_8802-sqrt-qqbar-v3.patch) by @JohnCremona created at 2010-06-09 14:50:51\n\nFixed docstring format issues and simplified: applies to 4.4.4.alpha0",
     "created_at": "2010-06-09T14:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8802#issuecomment-80755",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8802-sqrt-qqbar-v3.patch](tarball://root/attachments/some-uuid/ticket8802/trac_8802-sqrt-qqbar-v3.patch) by cremona created at 2010-06-09 14:50:51
+Attachment [trac_8802-sqrt-qqbar-v3.patch](tarball://root/attachments/some-uuid/ticket8802/trac_8802-sqrt-qqbar-v3.patch) by @JohnCremona created at 2010-06-09 14:50:51
 
 Fixed docstring format issues and simplified: applies to 4.4.4.alpha0
 
@@ -211,7 +211,7 @@ archive/issue_comments_080756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8802#issuecomment-80756",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_080757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8802#issuecomment-80757",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_080758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8802#issuecomment-80758",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_080759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8802#issuecomment-80759",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_080760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8802#issuecomment-80760",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

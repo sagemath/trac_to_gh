@@ -3,7 +3,7 @@
 archive/issues_003020.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  malb cwitty\n\nKeywords: finite fields\n\nConstruction of GF(2^n) is very slow for n>=16 (out of the givaro range), owing to slow search for suitable defining irreducible polynomials over GF(2).  Also the polynomials produced are dense.\n\nA new function GF2X_sparse_irreducible() has been added, using a precomputed lookup table for degrees up to 2048 (taken from NTL's source code) and otherwise looking for tri- and pentanomials first.\n\nPatch attached, based on 3.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3020\n\n",
+    "body": "Assignee: tbd\n\nCC:  @malb cwitty\n\nKeywords: finite fields\n\nConstruction of GF(2^n) is very slow for n>=16 (out of the givaro range), owing to slow search for suitable defining irreducible polynomials over GF(2).  Also the polynomials produced are dense.\n\nA new function GF2X_sparse_irreducible() has been added, using a precomputed lookup table for degrees up to 2048 (taken from NTL's source code) and otherwise looking for tri- and pentanomials first.\n\nPatch attached, based on 3.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3020\n\n",
     "created_at": "2008-04-24T21:40:17Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_003020.json:
     "title": "Finite Fields of characteristic 2 slow to construct",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3020",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
 
-CC:  malb cwitty
+CC:  @malb cwitty
 
 Keywords: finite fields
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3020
 archive/issue_comments_020746.json:
 ```json
 {
-    "body": "Attachment [9606.patch](tarball://root/attachments/some-uuid/ticket3020/9606.patch) by cremona created at 2008-04-24 21:40:33",
+    "body": "Attachment [9606.patch](tarball://root/attachments/some-uuid/ticket3020/9606.patch) by @JohnCremona created at 2008-04-24 21:40:33",
     "created_at": "2008-04-24T21:40:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20746",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [9606.patch](tarball://root/attachments/some-uuid/ticket3020/9606.patch) by cremona created at 2008-04-24 21:40:33
+Attachment [9606.patch](tarball://root/attachments/some-uuid/ticket3020/9606.patch) by @JohnCremona created at 2008-04-24 21:40:33
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_020747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20747",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_020748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20748",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -97,7 +97,7 @@ Changing type from defect to enhancement.
 archive/issue_comments_020749.json:
 ```json
 {
-    "body": "Changing assignee from tbd to cremona.",
+    "body": "Changing assignee from tbd to @JohnCremona.",
     "created_at": "2008-04-25T06:56:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_020749.json:
 }
 ```
 
-Changing assignee from tbd to cremona.
+Changing assignee from tbd to @JohnCremona.
 
 
 
@@ -120,7 +120,7 @@ archive/issue_comments_020750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20750",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -151,16 +151,16 @@ I checked for k<1000 and was intending to do the rest (as you say, to be formall
 archive/issue_comments_020751.json:
 ```json
 {
-    "body": "Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3020/9607.patch) by cremona created at 2008-04-25 08:22:13",
+    "body": "Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3020/9607.patch) by @JohnCremona created at 2008-04-25 08:22:13",
     "created_at": "2008-04-25T08:22:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20751",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3020/9607.patch) by cremona created at 2008-04-25 08:22:13
+Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3020/9607.patch) by @JohnCremona created at 2008-04-25 08:22:13
 
 
 
@@ -174,7 +174,7 @@ archive/issue_comments_020752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20752",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_020753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20753",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_020754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20754",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -223,16 +223,16 @@ apply after both the preceding patches
 archive/issue_comments_020755.json:
 ```json
 {
-    "body": "Attachment [9608.patch](tarball://root/attachments/some-uuid/ticket3020/9608.patch) by cremona created at 2008-04-27 16:11:35\n\nTrivial fix to previous, correcting a very stupid Python indentation howler -- which meant that for all n for which the tabulated irreducib;e was a trinomial, it did not return the table poly but searched for one.",
+    "body": "Attachment [9608.patch](tarball://root/attachments/some-uuid/ticket3020/9608.patch) by @JohnCremona created at 2008-04-27 16:11:35\n\nTrivial fix to previous, correcting a very stupid Python indentation howler -- which meant that for all n for which the tabulated irreducib;e was a trinomial, it did not return the table poly but searched for one.",
     "created_at": "2008-04-27T16:11:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20755",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [9608.patch](tarball://root/attachments/some-uuid/ticket3020/9608.patch) by cremona created at 2008-04-27 16:11:35
+Attachment [9608.patch](tarball://root/attachments/some-uuid/ticket3020/9608.patch) by @JohnCremona created at 2008-04-27 16:11:35
 
 Trivial fix to previous, correcting a very stupid Python indentation howler -- which meant that for all n for which the tabulated irreducib;e was a trinomial, it did not return the table poly but searched for one.
 
@@ -248,7 +248,7 @@ archive/issue_comments_020756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20756",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_020757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20757",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_020758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20758",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -311,16 +311,16 @@ Sorry forgot to change the summary
 archive/issue_comments_020759.json:
 ```json
 {
-    "body": "Attachment [GF2X_sparse_poly.patch](tarball://root/attachments/some-uuid/ticket3020/GF2X_sparse_poly.patch) by malb created at 2008-05-06 10:16:34\n\nupdated patch which fixes the typo",
+    "body": "Attachment [GF2X_sparse_poly.patch](tarball://root/attachments/some-uuid/ticket3020/GF2X_sparse_poly.patch) by @malb created at 2008-05-06 10:16:34\n\nupdated patch which fixes the typo",
     "created_at": "2008-05-06T10:16:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20759",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [GF2X_sparse_poly.patch](tarball://root/attachments/some-uuid/ticket3020/GF2X_sparse_poly.patch) by malb created at 2008-05-06 10:16:34
+Attachment [GF2X_sparse_poly.patch](tarball://root/attachments/some-uuid/ticket3020/GF2X_sparse_poly.patch) by @malb created at 2008-05-06 10:16:34
 
 updated patch which fixes the typo
 
@@ -336,7 +336,7 @@ archive/issue_comments_020760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20760",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_020762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3020#issuecomment-20762",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

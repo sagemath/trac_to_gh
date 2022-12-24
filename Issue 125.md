@@ -3,7 +3,7 @@
 archive/issues_000125.json:
 ```json
 {
-    "body": "Assignee: was\n\nOn a clean vanilla sage 1.4 install (running on sage.math), the doctest for `devel/sage-main/sage/interfaces/maxima.py` just freezes. SAGE never seems to pick up the timeout. I hit ctrl-c, and the doctests proceed normally after that.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/125\n\n",
+    "body": "Assignee: @williamstein\n\nOn a clean vanilla sage 1.4 install (running on sage.math), the doctest for `devel/sage-main/sage/interfaces/maxima.py` just freezes. SAGE never seems to pick up the timeout. I hit ctrl-c, and the doctests proceed normally after that.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/125\n\n",
     "created_at": "2006-10-11T00:12:51Z",
     "labels": [
         "interfaces",
@@ -16,7 +16,7 @@ archive/issues_000125.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 On a clean vanilla sage 1.4 install (running on sage.math), the doctest for `devel/sage-main/sage/interfaces/maxima.py` just freezes. SAGE never seems to pick up the timeout. I hit ctrl-c, and the doctests proceed normally after that.
 
@@ -37,7 +37,7 @@ archive/issue_comments_000569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/125#issuecomment-569",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_000570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/125#issuecomment-570",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_000571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/125#issuecomment-571",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

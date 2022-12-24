@@ -3,7 +3,7 @@
 archive/issues_009773.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  rbeezer robert.marik jhpalmieri rkirov kcrisman kini\n\n[MathJax](http://www.mathjax.org/) is the successor to [jsMath](http://www.math.union.edu/~dpvc/jsMath/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9774\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @rbeezer @robert-marik @jhpalmieri rkirov @kcrisman @kini\n\n[MathJax](http://www.mathjax.org/) is the successor to [jsMath](http://www.math.union.edu/~dpvc/jsMath/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9774\n\n",
     "created_at": "2010-08-21T09:36:05Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009773.json:
     "title": "Upgrade the notebook to use MathJax instead of jsMath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9773",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: jason, was
 
-CC:  rbeezer robert.marik jhpalmieri rkirov kcrisman kini
+CC:  @rbeezer @robert-marik @jhpalmieri rkirov @kcrisman @kini
 
 [MathJax](http://www.mathjax.org/) is the successor to [jsMath](http://www.math.union.edu/~dpvc/jsMath/).
 
@@ -39,7 +39,7 @@ archive/issue_comments_095792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95792",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_095793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95793",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_095794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95794",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_095795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95795",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_095797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95797",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_095798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95798",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_095800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95800",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -248,16 +248,16 @@ Screenshot of double integral
 archive/issue_comments_095801.json:
 ```json
 {
-    "body": "Attachment [mathjax-matrix-20110322.png](tarball://root/attachments/some-uuid/ticket9774/mathjax-matrix-20110322.png) by rbeezer created at 2011-03-22 22:49:31\n\nScreenshot of matrix",
+    "body": "Attachment [mathjax-matrix-20110322.png](tarball://root/attachments/some-uuid/ticket9774/mathjax-matrix-20110322.png) by @rbeezer created at 2011-03-22 22:49:31\n\nScreenshot of matrix",
     "created_at": "2011-03-22T22:49:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95801",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [mathjax-matrix-20110322.png](tarball://root/attachments/some-uuid/ticket9774/mathjax-matrix-20110322.png) by rbeezer created at 2011-03-22 22:49:31
+Attachment [mathjax-matrix-20110322.png](tarball://root/attachments/some-uuid/ticket9774/mathjax-matrix-20110322.png) by @rbeezer created at 2011-03-22 22:49:31
 
 Screenshot of matrix
 
@@ -273,7 +273,7 @@ archive/issue_comments_095802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95802",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_095803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95803",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -376,16 +376,16 @@ I'm attaching a draft of a patch for the Sage library.  The integration with Sph
 archive/issue_comments_095804.json:
 ```json
 {
-    "body": "Attachment [trac_9774-mathjax-flask-notebook.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook.patch) by rbeezer created at 2011-06-16 03:25:09",
+    "body": "Attachment [trac_9774-mathjax-flask-notebook.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook.patch) by @rbeezer created at 2011-06-16 03:25:09",
     "created_at": "2011-06-16T03:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95804",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9774-mathjax-flask-notebook.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook.patch) by rbeezer created at 2011-06-16 03:25:09
+Attachment [trac_9774-mathjax-flask-notebook.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook.patch) by @rbeezer created at 2011-06-16 03:25:09
 
 
 
@@ -399,7 +399,7 @@ archive/issue_comments_095805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95805",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_095806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95806",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_095807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95807",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_095808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95808",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -499,16 +499,16 @@ Don't we need the actual MathJax spkg or files somewhere?  Rob: do you have inst
 archive/issue_comments_095809.json:
 ```json
 {
-    "body": "Attachment [trac_9774-mathjax-flask-notebook-file-add.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook-file-add.patch) by rbeezer created at 2011-06-16 05:30:09",
+    "body": "Attachment [trac_9774-mathjax-flask-notebook-file-add.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook-file-add.patch) by @rbeezer created at 2011-06-16 05:30:09",
     "created_at": "2011-06-16T05:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95809",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9774-mathjax-flask-notebook-file-add.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook-file-add.patch) by rbeezer created at 2011-06-16 05:30:09
+Attachment [trac_9774-mathjax-flask-notebook-file-add.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook-file-add.patch) by @rbeezer created at 2011-06-16 05:30:09
 
 
 
@@ -522,7 +522,7 @@ archive/issue_comments_095810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95810",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_095811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95811",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -569,7 +569,7 @@ archive/issue_comments_095812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95812",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_095813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95813",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -615,7 +615,7 @@ archive/issue_comments_095814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95814",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -628,16 +628,16 @@ I get an error from the line: `response = make_response(render_template('js/math
 archive/issue_comments_095815.json:
 ```json
 {
-    "body": "Attachment [trac_9774-mathjax-flask-notebook-file-add-two.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook-file-add-two.patch) by rbeezer created at 2011-06-16 06:33:03",
+    "body": "Attachment [trac_9774-mathjax-flask-notebook-file-add-two.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook-file-add-two.patch) by @rbeezer created at 2011-06-16 06:33:03",
     "created_at": "2011-06-16T06:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95815",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9774-mathjax-flask-notebook-file-add-two.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook-file-add-two.patch) by rbeezer created at 2011-06-16 06:33:03
+Attachment [trac_9774-mathjax-flask-notebook-file-add-two.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-notebook-file-add-two.patch) by @rbeezer created at 2011-06-16 06:33:03
 
 
 
@@ -651,7 +651,7 @@ archive/issue_comments_095816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95816",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -678,7 +678,7 @@ archive/issue_comments_095817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95817",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -696,7 +696,7 @@ archive/issue_comments_095818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95818",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -709,16 +709,16 @@ apply to sagenb repository; apply on top of previous patches
 archive/issue_comments_095819.json:
 ```json
 {
-    "body": "Attachment [trac_9774-mathjax-flask-eval-script.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-eval-script.patch) by rbeezer created at 2011-06-17 17:37:44\n\nThe problem with the Sage notebook code intercepting (and evaluating) the contents of `<script>,</script>` tags can probably be rectified in one, or both, of the functions of the Flask notebook:\n\n\n```\nIn sagenb/data/sage/js/notebook_lib.js:\n\neval_script_tags\nseparate_script_tags\n```\n",
+    "body": "Attachment [trac_9774-mathjax-flask-eval-script.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-eval-script.patch) by @rbeezer created at 2011-06-17 17:37:44\n\nThe problem with the Sage notebook code intercepting (and evaluating) the contents of `<script>,</script>` tags can probably be rectified in one, or both, of the functions of the Flask notebook:\n\n\n```\nIn sagenb/data/sage/js/notebook_lib.js:\n\neval_script_tags\nseparate_script_tags\n```\n",
     "created_at": "2011-06-17T17:37:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95819",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9774-mathjax-flask-eval-script.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-eval-script.patch) by rbeezer created at 2011-06-17 17:37:44
+Attachment [trac_9774-mathjax-flask-eval-script.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-flask-eval-script.patch) by @rbeezer created at 2011-06-17 17:37:44
 
 The problem with the Sage notebook code intercepting (and evaluating) the contents of `<script>,</script>` tags can probably be rectified in one, or both, of the functions of the Flask notebook:
 
@@ -743,7 +743,7 @@ archive/issue_comments_095820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95820",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -761,7 +761,7 @@ archive/issue_comments_095821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95821",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -779,7 +779,7 @@ archive/issue_comments_095822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95822",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -801,7 +801,7 @@ archive/issue_comments_095823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95823",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -829,7 +829,7 @@ archive/issue_comments_095824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95824",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -873,7 +873,7 @@ archive/issue_comments_095825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95825",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -902,7 +902,7 @@ archive/issue_comments_095826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95826",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -917,16 +917,16 @@ Here's a new version of my patch.  With a locally installed version of MathJax, 
 archive/issue_comments_095827.json:
 ```json
 {
-    "body": "Attachment [mathjax.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax.patch) by jhpalmieri created at 2011-07-01 02:22:35\n\n(experimental) patch for Sage library",
+    "body": "Attachment [mathjax.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax.patch) by @jhpalmieri created at 2011-07-01 02:22:35\n\n(experimental) patch for Sage library",
     "created_at": "2011-07-01T02:22:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95827",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [mathjax.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax.patch) by jhpalmieri created at 2011-07-01 02:22:35
+Attachment [mathjax.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax.patch) by @jhpalmieri created at 2011-07-01 02:22:35
 
 (experimental) patch for Sage library
 
@@ -942,7 +942,7 @@ archive/issue_comments_095828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95828",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1003,7 +1003,7 @@ archive/issue_comments_095829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95829",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1029,7 +1029,7 @@ archive/issue_comments_095830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95830",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1047,7 +1047,7 @@ archive/issue_comments_095831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95831",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1068,7 +1068,7 @@ archive/issue_comments_095832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95832",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1086,7 +1086,7 @@ archive/issue_comments_095833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95833",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1101,16 +1101,16 @@ I'm attaching another version ("v2") of my patch; this one writes the MathJax lo
 archive/issue_comments_095834.json:
 ```json
 {
-    "body": "Attachment [mathjax.v2.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax.v2.patch) by jhpalmieri created at 2011-07-01 06:12:32\n\n(experimental) patch for Sage library, alternate version",
+    "body": "Attachment [mathjax.v2.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax.v2.patch) by @jhpalmieri created at 2011-07-01 06:12:32\n\n(experimental) patch for Sage library, alternate version",
     "created_at": "2011-07-01T06:12:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95834",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [mathjax.v2.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax.v2.patch) by jhpalmieri created at 2011-07-01 06:12:32
+Attachment [mathjax.v2.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax.v2.patch) by @jhpalmieri created at 2011-07-01 06:12:32
 
 (experimental) patch for Sage library, alternate version
 
@@ -1126,7 +1126,7 @@ archive/issue_comments_095835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95835",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1166,7 +1166,7 @@ archive/issue_comments_095837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95837",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1179,16 +1179,16 @@ Rebased version of comprehensive mathjax patch to 4.8.alpha4
 archive/issue_comments_095838.json:
 ```json
 {
-    "body": "Attachment [mathjax-try2.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax-try2.patch) by jason created at 2012-01-12 23:16:31\n\nApply only this patch",
+    "body": "Attachment [mathjax-try2.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax-try2.patch) by @jasongrout created at 2012-01-12 23:16:31\n\nApply only this patch",
     "created_at": "2012-01-12T23:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95838",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [mathjax-try2.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax-try2.patch) by jason created at 2012-01-12 23:16:31
+Attachment [mathjax-try2.patch](tarball://root/attachments/some-uuid/ticket9774/mathjax-try2.patch) by @jasongrout created at 2012-01-12 23:16:31
 
 Apply only this patch
 
@@ -1204,7 +1204,7 @@ archive/issue_comments_095839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95839",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1222,7 +1222,7 @@ archive/issue_comments_095840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95840",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1235,16 +1235,16 @@ apply to **scripts** repository
 archive/issue_comments_095841.json:
 ```json
 {
-    "body": "Attachment [trac_9774-scripts-mathjax.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-scripts-mathjax.patch) by jason created at 2012-01-13 22:30:18\n\napply to **sage** repository",
+    "body": "Attachment [trac_9774-scripts-mathjax.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-scripts-mathjax.patch) by @jasongrout created at 2012-01-13 22:30:18\n\napply to **sage** repository",
     "created_at": "2012-01-13T22:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95841",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_9774-scripts-mathjax.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-scripts-mathjax.patch) by jason created at 2012-01-13 22:30:18
+Attachment [trac_9774-scripts-mathjax.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-scripts-mathjax.patch) by @jasongrout created at 2012-01-13 22:30:18
 
 apply to **sage** repository
 
@@ -1255,16 +1255,16 @@ apply to **sage** repository
 archive/issue_comments_095842.json:
 ```json
 {
-    "body": "Attachment [trac_9774-mathjax-try3.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try3.patch) by jason created at 2012-01-13 22:42:12",
+    "body": "Attachment [trac_9774-mathjax-try3.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try3.patch) by @jasongrout created at 2012-01-13 22:42:12",
     "created_at": "2012-01-13T22:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95842",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_9774-mathjax-try3.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try3.patch) by jason created at 2012-01-13 22:42:12
+Attachment [trac_9774-mathjax-try3.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try3.patch) by @jasongrout created at 2012-01-13 22:42:12
 
 
 
@@ -1278,7 +1278,7 @@ archive/issue_comments_095843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95843",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1296,7 +1296,7 @@ archive/issue_comments_095844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95844",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1314,7 +1314,7 @@ archive/issue_comments_095845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95845",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1332,7 +1332,7 @@ archive/issue_comments_095846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95846",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1345,16 +1345,16 @@ apply to $SAGE_ROOT/devel/sage
 archive/issue_comments_095847.json:
 ```json
 {
-    "body": "Attachment [trac_9774-mathjax-try4.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try4.patch) by jason created at 2012-01-14 14:42:49\n\nThe try3 patches were against alpha4.  Late last night I patched 5.0.beta1, and realized there were some patch failures, which I fixed.  I'll compare your rebase with mine.\n\nI also realized last night during dinner that I hadn't run doctests, so those should be run on sage and sagenb.  Thanks for checking this.",
+    "body": "Attachment [trac_9774-mathjax-try4.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try4.patch) by @jasongrout created at 2012-01-14 14:42:49\n\nThe try3 patches were against alpha4.  Late last night I patched 5.0.beta1, and realized there were some patch failures, which I fixed.  I'll compare your rebase with mine.\n\nI also realized last night during dinner that I hadn't run doctests, so those should be run on sage and sagenb.  Thanks for checking this.",
     "created_at": "2012-01-14T14:42:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95847",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_9774-mathjax-try4.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try4.patch) by jason created at 2012-01-14 14:42:49
+Attachment [trac_9774-mathjax-try4.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try4.patch) by @jasongrout created at 2012-01-14 14:42:49
 
 The try3 patches were against alpha4.  Late last night I patched 5.0.beta1, and realized there were some patch failures, which I fixed.  I'll compare your rebase with mine.
 
@@ -1372,7 +1372,7 @@ archive/issue_comments_095848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95848",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1392,7 +1392,7 @@ archive/issue_comments_095849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95849",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1416,7 +1416,7 @@ archive/issue_comments_095850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95850",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1438,7 +1438,7 @@ archive/issue_comments_095851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95851",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1463,7 +1463,7 @@ archive/issue_comments_095852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95852",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1481,7 +1481,7 @@ archive/issue_comments_095853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95853",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1499,7 +1499,7 @@ archive/issue_comments_095854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95854",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1537,7 +1537,7 @@ archive/issue_comments_095855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95855",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1557,7 +1557,7 @@ archive/issue_comments_095856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95856",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1575,7 +1575,7 @@ archive/issue_comments_095857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95857",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1593,7 +1593,7 @@ archive/issue_comments_095858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95858",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1645,7 +1645,7 @@ archive/issue_comments_095859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95859",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1663,7 +1663,7 @@ archive/issue_comments_095860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95860",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1676,16 +1676,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_095861.json:
 ```json
 {
-    "body": "Attachment [trac_9774-mathjax-try5.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try5.patch) by ppurka created at 2012-06-09 10:05:13\n\nrebased patch to sage-5.1beta2.\n\nThere is however a very weird problem with mathjax, both 1.0 and 2.0 branches. The math is not rendered as long as the sagenb directory is under `DOT_SAGE`. To reproduce, try the steps below. Use any branch (mathjax-1 or mathjax-2) for instance jasongrout/mathjax (mathjax-1) in github.\n1. `mkdir /tmp/a`\n2. `DOT_SAGE=/tmp/a sage -n`.\n3. First, note that the above command launches the nb in port 8000 instead of 8080. But if we use some other command such as the one below, then it does open in port 8080.\n\n```\nsage -n directory=/tmp/a.sagenb\n```\n\n4. Open a new worksheet, and try to print latex, for instance run the command `view('?')`. You will get a js error popup saying (in Opera 12.00RC, and Opera-11.64)\n\n```\nSyntaxError: at index 0 in \"\\newcommand{\\Bold}[1]{\\mathbf{#1}}?\": invalid character escape sequence\n```\n\n\nIn firefox-10.0.4 I simply get the error: `SyntaxError: illegal character`. This error is not present if I run sage instead as `sage -n directory=/tmp/a.sagenb`, and the mathjax output is all good.",
+    "body": "Attachment [trac_9774-mathjax-try5.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try5.patch) by @ppurka created at 2012-06-09 10:05:13\n\nrebased patch to sage-5.1beta2.\n\nThere is however a very weird problem with mathjax, both 1.0 and 2.0 branches. The math is not rendered as long as the sagenb directory is under `DOT_SAGE`. To reproduce, try the steps below. Use any branch (mathjax-1 or mathjax-2) for instance jasongrout/mathjax (mathjax-1) in github.\n1. `mkdir /tmp/a`\n2. `DOT_SAGE=/tmp/a sage -n`.\n3. First, note that the above command launches the nb in port 8000 instead of 8080. But if we use some other command such as the one below, then it does open in port 8080.\n\n```\nsage -n directory=/tmp/a.sagenb\n```\n\n4. Open a new worksheet, and try to print latex, for instance run the command `view('?')`. You will get a js error popup saying (in Opera 12.00RC, and Opera-11.64)\n\n```\nSyntaxError: at index 0 in \"\\newcommand{\\Bold}[1]{\\mathbf{#1}}?\": invalid character escape sequence\n```\n\n\nIn firefox-10.0.4 I simply get the error: `SyntaxError: illegal character`. This error is not present if I run sage instead as `sage -n directory=/tmp/a.sagenb`, and the mathjax output is all good.",
     "created_at": "2012-06-09T10:05:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95861",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [trac_9774-mathjax-try5.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try5.patch) by ppurka created at 2012-06-09 10:05:13
+Attachment [trac_9774-mathjax-try5.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try5.patch) by @ppurka created at 2012-06-09 10:05:13
 
 rebased patch to sage-5.1beta2.
 
@@ -1719,7 +1719,7 @@ archive/issue_comments_095862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95862",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1737,7 +1737,7 @@ archive/issue_comments_095863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95863",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1762,7 +1762,7 @@ archive/issue_comments_095864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95864",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1780,7 +1780,7 @@ archive/issue_comments_095865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95865",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1798,7 +1798,7 @@ archive/issue_comments_095866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95866",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1820,7 +1820,7 @@ archive/issue_comments_095867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95867",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1838,7 +1838,7 @@ archive/issue_comments_095868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95868",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1870,7 +1870,7 @@ archive/issue_comments_095869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95869",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1888,7 +1888,7 @@ archive/issue_comments_095870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95870",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1904,16 +1904,16 @@ I wonder why the other tutorial versions don't cause problems?  In particular, t
 archive/issue_comments_095871.json:
 ```json
 {
-    "body": "Attachment [trac_9774-doctests.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-doctests.patch) by jhpalmieri created at 2012-06-13 05:50:25",
+    "body": "Attachment [trac_9774-doctests.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-doctests.patch) by @jhpalmieri created at 2012-06-13 05:50:25",
     "created_at": "2012-06-13T05:50:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95871",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9774-doctests.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-doctests.patch) by jhpalmieri created at 2012-06-13 05:50:25
+Attachment [trac_9774-doctests.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-doctests.patch) by @jhpalmieri created at 2012-06-13 05:50:25
 
 
 
@@ -1927,7 +1927,7 @@ archive/issue_comments_095872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95872",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1964,7 +1964,7 @@ archive/issue_comments_095873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95873",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1982,7 +1982,7 @@ archive/issue_comments_095874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95874",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -2000,7 +2000,7 @@ archive/issue_comments_095875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95875",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2018,7 +2018,7 @@ archive/issue_comments_095876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95876",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2048,7 +2048,7 @@ archive/issue_comments_095877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95877",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2066,7 +2066,7 @@ archive/issue_comments_095878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95878",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2084,7 +2084,7 @@ archive/issue_comments_095879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95879",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2102,7 +2102,7 @@ archive/issue_comments_095880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95880",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2131,7 +2131,7 @@ archive/issue_comments_095881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95881",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2149,7 +2149,7 @@ archive/issue_comments_095882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95882",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -2167,7 +2167,7 @@ archive/issue_comments_095883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95883",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2185,7 +2185,7 @@ archive/issue_comments_095884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95884",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2203,7 +2203,7 @@ archive/issue_comments_095885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95885",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2221,7 +2221,7 @@ archive/issue_comments_095886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95886",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2239,7 +2239,7 @@ archive/issue_comments_095887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95887",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2257,7 +2257,7 @@ archive/issue_comments_095888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95888",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2275,7 +2275,7 @@ archive/issue_comments_095889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95889",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2293,7 +2293,7 @@ archive/issue_comments_095890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95890",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2311,7 +2311,7 @@ archive/issue_comments_095891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95891",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2333,7 +2333,7 @@ archive/issue_comments_095892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95892",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2351,7 +2351,7 @@ archive/issue_comments_095893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95893",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -2364,16 +2364,16 @@ Sage library
 archive/issue_comments_095894.json:
 ```json
 {
-    "body": "Attachment [trac_9774-mathjax-try6.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try6.patch) by jason created at 2012-06-25 16:54:32\n\nI rebased [attachment:trac_9774-mathjax-try6.patch] to sage 5.1beta6",
+    "body": "Attachment [trac_9774-mathjax-try6.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try6.patch) by @jasongrout created at 2012-06-25 16:54:32\n\nI rebased [attachment:trac_9774-mathjax-try6.patch] to sage 5.1beta6",
     "created_at": "2012-06-25T16:54:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95894",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_9774-mathjax-try6.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try6.patch) by jason created at 2012-06-25 16:54:32
+Attachment [trac_9774-mathjax-try6.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try6.patch) by @jasongrout created at 2012-06-25 16:54:32
 
 I rebased [attachment:trac_9774-mathjax-try6.patch] to sage 5.1beta6
 
@@ -2389,7 +2389,7 @@ archive/issue_comments_095895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95895",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2409,7 +2409,7 @@ archive/issue_comments_095896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95896",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2427,7 +2427,7 @@ archive/issue_comments_095897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95897",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2450,7 +2450,7 @@ archive/issue_comments_095898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95898",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2468,7 +2468,7 @@ archive/issue_comments_095899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95899",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2486,7 +2486,7 @@ archive/issue_comments_095900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95900",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2504,7 +2504,7 @@ archive/issue_comments_095901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95901",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2522,7 +2522,7 @@ archive/issue_comments_095902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95902",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2567,7 +2567,7 @@ archive/issue_comments_095903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95903",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2585,7 +2585,7 @@ archive/issue_comments_095904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95904",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2603,7 +2603,7 @@ archive/issue_comments_095905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95905",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2621,7 +2621,7 @@ archive/issue_comments_095906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95906",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2639,7 +2639,7 @@ archive/issue_comments_095907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95907",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2657,7 +2657,7 @@ archive/issue_comments_095908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95908",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2675,7 +2675,7 @@ archive/issue_comments_095909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95909",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2688,16 +2688,16 @@ Fixed.
 archive/issue_comments_095910.json:
 ```json
 {
-    "body": "Attachment [trac_9774-mathjax-try7.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try7.patch) by kini created at 2012-08-22 07:02:28\n\napply to $SAGE_ROOT/devel/sage",
+    "body": "Attachment [trac_9774-mathjax-try7.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try7.patch) by @kini created at 2012-08-22 07:02:28\n\napply to $SAGE_ROOT/devel/sage",
     "created_at": "2012-08-22T07:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95910",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
-Attachment [trac_9774-mathjax-try7.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try7.patch) by kini created at 2012-08-22 07:02:28
+Attachment [trac_9774-mathjax-try7.patch](tarball://root/attachments/some-uuid/ticket9774/trac_9774-mathjax-try7.patch) by @kini created at 2012-08-22 07:02:28
 
 apply to $SAGE_ROOT/devel/sage
 
@@ -2713,7 +2713,7 @@ archive/issue_comments_095911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95911",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2731,7 +2731,7 @@ archive/issue_comments_095912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95912",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2749,7 +2749,7 @@ archive/issue_comments_095913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95913",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2767,7 +2767,7 @@ archive/issue_comments_095914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95914",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2785,7 +2785,7 @@ archive/issue_comments_095915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95915",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -2835,7 +2835,7 @@ archive/issue_comments_095916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95916",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -2853,7 +2853,7 @@ archive/issue_comments_095917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95917",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -2871,7 +2871,7 @@ archive/issue_comments_095918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95918",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2889,7 +2889,7 @@ archive/issue_comments_095919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9773#issuecomment-95919",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 

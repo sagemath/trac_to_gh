@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9257
 archive/issue_comments_087112.json:
 ```json
 {
-    "body": "Attachment [9257-remove-darcs.patch](tarball://root/attachments/some-uuid/ticket9257/9257-remove-darcs.patch) by robertwb created at 2010-06-21 21:36:15",
+    "body": "Attachment [9257-remove-darcs.patch](tarball://root/attachments/some-uuid/ticket9257/9257-remove-darcs.patch) by @robertwb created at 2010-06-21 21:36:15",
     "created_at": "2010-06-21T21:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9257#issuecomment-87112",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9257-remove-darcs.patch](tarball://root/attachments/some-uuid/ticket9257/9257-remove-darcs.patch) by robertwb created at 2010-06-21 21:36:15
+Attachment [9257-remove-darcs.patch](tarball://root/attachments/some-uuid/ticket9257/9257-remove-darcs.patch) by @robertwb created at 2010-06-21 21:36:15
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_087113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9257#issuecomment-87113",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_087114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9257#issuecomment-87114",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_087115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9257#issuecomment-87115",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_087116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9257#issuecomment-87116",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_087117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9257#issuecomment-87117",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_087118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9257#issuecomment-87118",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

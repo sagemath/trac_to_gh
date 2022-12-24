@@ -14,7 +14,7 @@ archive/issues_000173.json:
     "title": "mathematica raises matrices / QQ to large powers much more quickly than SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/173",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -60,7 +60,7 @@ archive/issue_comments_000793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/173#issuecomment-793",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_000794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/173#issuecomment-794",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_000795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/173#issuecomment-795",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_000796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/173#issuecomment-796",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_000797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/173#issuecomment-797",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

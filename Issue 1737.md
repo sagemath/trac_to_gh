@@ -3,7 +3,7 @@
 archive/issues_001737.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following paraterization of the Mobius strip\ntakes a very long time and won't quit when ctl-c is\nused:\n\nsage: u,v = var(\"u,v\")\nsage: parametric_plot3d([cos(u)*(1+v*cos(u/2)), sin(u)*(1+v*cos(u/2)), v*sin(u/2)], (-2, 2), (-2, 2)).show()\n^D\n^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n\nThis error message repeats ever time you proess ctl-c.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1737\n\n",
+    "body": "Assignee: @williamstein\n\nThe following paraterization of the Mobius strip\ntakes a very long time and won't quit when ctl-c is\nused:\n\nsage: u,v = var(\"u,v\")\nsage: parametric_plot3d([cos(u)*(1+v*cos(u/2)), sin(u)*(1+v*cos(u/2)), v*sin(u/2)], (-2, 2), (-2, 2)).show()\n^D\n^CControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n\nThis error message repeats ever time you proess ctl-c.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1737\n\n",
     "created_at": "2008-01-09T17:40:24Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001737.json:
     "title": "ctl-c doesn't exit job in parametric_plot3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1737",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following paraterization of the Mobius strip
 takes a very long time and won't quit when ctl-c is
@@ -46,7 +46,7 @@ archive/issue_comments_010991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1737#issuecomment-10991",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_010992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1737#issuecomment-10992",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

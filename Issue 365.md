@@ -13,7 +13,7 @@ archive/issues_000365.json:
     "title": "very serious infinite loop in coercion somewhere",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/365",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -87,7 +87,7 @@ archive/issue_comments_001767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/365#issuecomment-1767",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_001768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/365#issuecomment-1768",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

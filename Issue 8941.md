@@ -14,7 +14,7 @@ archive/issues_008941.json:
     "title": "_latex_ and origin for lattice polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8941",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
@@ -37,7 +37,7 @@ archive/issue_comments_082326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8941#issuecomment-82326",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_082327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8941#issuecomment-82327",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082328.json:
 ```json
 {
-    "body": "Attachment [trac_8941_latex_and_origin_for_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8941/trac_8941_latex_and_origin_for_lattice_polytopes.patch) by vbraun created at 2010-05-10 09:49:50\n\nUseful additions!",
+    "body": "Attachment [trac_8941_latex_and_origin_for_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8941/trac_8941_latex_and_origin_for_lattice_polytopes.patch) by @vbraun created at 2010-05-10 09:49:50\n\nUseful additions!",
     "created_at": "2010-05-10T09:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8941#issuecomment-82328",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_8941_latex_and_origin_for_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8941/trac_8941_latex_and_origin_for_lattice_polytopes.patch) by vbraun created at 2010-05-10 09:49:50
+Attachment [trac_8941_latex_and_origin_for_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8941/trac_8941_latex_and_origin_for_lattice_polytopes.patch) by @vbraun created at 2010-05-10 09:49:50
 
 Useful additions!
 
@@ -93,7 +93,7 @@ archive/issue_comments_082329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8941#issuecomment-82329",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_082330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8941#issuecomment-82330",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

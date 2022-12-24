@@ -3,7 +3,7 @@
 archive/issues_006968.json:
 ```json
 {
-    "body": "Assignee: was\n\nVery small patch avoiding multiple copies\n\nIssue created by migration from https://trac.sagemath.org/ticket/6968\n\n",
+    "body": "Assignee: @williamstein\n\nVery small patch avoiding multiple copies\n\nIssue created by migration from https://trac.sagemath.org/ticket/6968\n\n",
     "created_at": "2009-09-20T20:30:00Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_006968.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Very small patch avoiding multiple copies
 
@@ -95,7 +95,7 @@ archive/issue_comments_057651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57651",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

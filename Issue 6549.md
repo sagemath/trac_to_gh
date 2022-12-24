@@ -14,7 +14,7 @@ archive/issues_006549.json:
     "title": "reinstate some doctests in schemes/plane_curves/affine_curve.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6549",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: tbd
@@ -58,7 +58,7 @@ archive/issue_comments_053398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6549#issuecomment-53398",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -71,16 +71,16 @@ Changing status from new to assigned.
 archive/issue_comments_053399.json:
 ```json
 {
-    "body": "Changing assignee from tbd to AlexGhitza.",
+    "body": "Changing assignee from tbd to @aghitza.",
     "created_at": "2009-07-17T14:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6549#issuecomment-53399",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to AlexGhitza.
+Changing assignee from tbd to @aghitza.
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_053400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6549#issuecomment-53400",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -107,16 +107,16 @@ Looks good. Works fine on my MacBook Pro, and also seems to work fine on sage.ma
 archive/issue_comments_053401.json:
 ```json
 {
-    "body": "Attachment [trac_6549.patch](tarball://root/attachments/some-uuid/ticket6549/trac_6549.patch) by AlexGhitza created at 2009-08-17 12:04:27",
+    "body": "Attachment [trac_6549.patch](tarball://root/attachments/some-uuid/ticket6549/trac_6549.patch) by @aghitza created at 2009-08-17 12:04:27",
     "created_at": "2009-08-17T12:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6549#issuecomment-53401",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6549.patch](tarball://root/attachments/some-uuid/ticket6549/trac_6549.patch) by AlexGhitza created at 2009-08-17 12:04:27
+Attachment [trac_6549.patch](tarball://root/attachments/some-uuid/ticket6549/trac_6549.patch) by @aghitza created at 2009-08-17 12:04:27
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_053402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6549#issuecomment-53402",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_053403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6549#issuecomment-53403",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

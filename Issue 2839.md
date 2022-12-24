@@ -14,7 +14,7 @@ archive/issues_002839.json:
     "title": "bug in conversion from symmetrica's longint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2839",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_019472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2839#issuecomment-19472",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_019473.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2008-04-07T07:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2839#issuecomment-19473",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_019474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2839#issuecomment-19474",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing component from Cygwin to combinatorics.
 archive/issue_comments_019475.json:
 ```json
 {
-    "body": "Attachment [2839.patch](tarball://root/attachments/some-uuid/ticket2839/2839.patch) by mhansen created at 2008-04-07 07:16:41",
+    "body": "Attachment [2839.patch](tarball://root/attachments/some-uuid/ticket2839/2839.patch) by @mwhansen created at 2008-04-07 07:16:41",
     "created_at": "2008-04-07T07:16:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2839#issuecomment-19475",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2839.patch](tarball://root/attachments/some-uuid/ticket2839/2839.patch) by mhansen created at 2008-04-07 07:16:41
+Attachment [2839.patch](tarball://root/attachments/some-uuid/ticket2839/2839.patch) by @mwhansen created at 2008-04-07 07:16:41
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_019476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2839#issuecomment-19476",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_019477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2839#issuecomment-19477",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

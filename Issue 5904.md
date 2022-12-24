@@ -3,7 +3,7 @@
 archive/issues_005904.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: abstract jacobian doctest\n\nThe attached patch improves the doctest coverage of `abstract_jacobian.py` from 0% to 85% (6 of 7).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5904\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: abstract jacobian doctest\n\nThe attached patch improves the doctest coverage of `abstract_jacobian.py` from 0% to 85% (6 of 7).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5904\n\n",
     "created_at": "2009-04-26T11:34:46Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_005904.json:
     "title": "[with patch, needs review] improve doctest coverage for schemes/jacobians/abstract_jacobian.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5904",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: abstract jacobian doctest
 
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5904
 archive/issue_comments_046674.json:
 ```json
 {
-    "body": "Attachment [trac_5904.patch](tarball://root/attachments/some-uuid/ticket5904/trac_5904.patch) by AlexGhitza created at 2009-04-26 11:38:34",
+    "body": "Attachment [trac_5904.patch](tarball://root/attachments/some-uuid/ticket5904/trac_5904.patch) by @aghitza created at 2009-04-26 11:38:34",
     "created_at": "2009-04-26T11:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5904#issuecomment-46674",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5904.patch](tarball://root/attachments/some-uuid/ticket5904/trac_5904.patch) by AlexGhitza created at 2009-04-26 11:38:34
+Attachment [trac_5904.patch](tarball://root/attachments/some-uuid/ticket5904/trac_5904.patch) by @aghitza created at 2009-04-26 11:38:34
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_046675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5904#issuecomment-46675",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -71,16 +71,16 @@ Changing status from new to assigned.
 archive/issue_comments_046676.json:
 ```json
 {
-    "body": "Changing assignee from was to AlexGhitza.",
+    "body": "Changing assignee from @williamstein to @aghitza.",
     "created_at": "2009-04-26T11:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5904#issuecomment-46676",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to AlexGhitza.
+Changing assignee from @williamstein to @aghitza.
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_046677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5904#issuecomment-46677",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

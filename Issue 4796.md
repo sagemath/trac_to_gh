@@ -3,7 +3,7 @@
 archive/issues_004796.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nTitle says it all -- it's a very old todo list, and #4795 now has those feature requests.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4796\n\n",
+    "body": "Assignee: @craigcitro\n\nTitle says it all -- it's a very old todo list, and #4795 now has those feature requests.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4796\n\n",
     "created_at": "2008-12-14T07:56:40Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_004796.json:
     "title": "Remove bugs.py in sage/modular/modform",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4796",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Title says it all -- it's a very old todo list, and #4795 now has those feature requests.
 
@@ -39,7 +39,7 @@ archive/issue_comments_036356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4796#issuecomment-36356",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_036357.json:
 ```json
 {
-    "body": "Attachment [trac-4796.patch](tarball://root/attachments/some-uuid/ticket4796/trac-4796.patch) by craigcitro created at 2008-12-14 07:57:37",
+    "body": "Attachment [trac-4796.patch](tarball://root/attachments/some-uuid/ticket4796/trac-4796.patch) by @craigcitro created at 2008-12-14 07:57:37",
     "created_at": "2008-12-14T07:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4796#issuecomment-36357",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4796.patch](tarball://root/attachments/some-uuid/ticket4796/trac-4796.patch) by craigcitro created at 2008-12-14 07:57:37
+Attachment [trac-4796.patch](tarball://root/attachments/some-uuid/ticket4796/trac-4796.patch) by @craigcitro created at 2008-12-14 07:57:37
 
 
 

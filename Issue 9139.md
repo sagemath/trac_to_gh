@@ -3,7 +3,7 @@
 archive/issues_009139.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nSmall change so that PIDs (in particular, p-adic rings) are Noetherian rather than raise NotImplementedError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9139\n\n",
+    "body": "Assignee: @aghitza\n\nSmall change so that PIDs (in particular, p-adic rings) are Noetherian rather than raise NotImplementedError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9139\n\n",
     "created_at": "2010-06-04T19:29:54Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009139.json:
     "title": "PIDs are Noetherian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9139",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Small change so that PIDs (in particular, p-adic rings) are Noetherian rather than raise NotImplementedError.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9139
 archive/issue_comments_085323.json:
 ```json
 {
-    "body": "Attachment [noetherian.patch](tarball://root/attachments/some-uuid/ticket9139/noetherian.patch) by roed created at 2010-06-04 19:30:16\n\nTiny fix",
+    "body": "Attachment [noetherian.patch](tarball://root/attachments/some-uuid/ticket9139/noetherian.patch) by @roed314 created at 2010-06-04 19:30:16\n\nTiny fix",
     "created_at": "2010-06-04T19:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9139#issuecomment-85323",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [noetherian.patch](tarball://root/attachments/some-uuid/ticket9139/noetherian.patch) by roed created at 2010-06-04 19:30:16
+Attachment [noetherian.patch](tarball://root/attachments/some-uuid/ticket9139/noetherian.patch) by @roed314 created at 2010-06-04 19:30:16
 
 Tiny fix
 
@@ -57,7 +57,7 @@ archive/issue_comments_085324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9139#issuecomment-85324",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_085325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9139#issuecomment-85325",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_085326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9139#issuecomment-85326",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_085327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9139#issuecomment-85327",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

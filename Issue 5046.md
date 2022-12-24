@@ -3,7 +3,7 @@
 archive/issues_005046.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis should work.  At the very minimum, there should be a sensible error message:\n\n\n```\nsage: DiGraph(graphs.PathGraph(4))                                             \n---------------------------------------------------------------------------\nNetworkXError                             Traceback (most recent call last)\n\n/home/grout/.sage/<ipython console> in <module>()\n\n/home/grout/sage-3.2.3/local/lib/python2.5/site-packages/sage/graphs/graph.pyc in __init__(self, data, pos, loops, format, boundary, weighted, implementation, sparse, vertex_labels, **kwds)\n   8362             else:\n   8363                 if implementation == 'networkx':\n-> 8364                     self._backend = NetworkXGraphBackend(networkx.XDiGraph(data, selfloops=loops, **kwds))\n   8365                 elif implementation == 'c_graph':\n   8366                     if data is None:\n\n/home/grout/sage-3.2.3/local/lib/python/networkx/xdigraph.py in __init__(self, data, name, selfloops, multiedges)\n    118         self.multiedges=multiedges\n    119         if data is not None:\n--> 120             convert.from_whatever(data,create_using=self)\n    121         self.name=name\n    122 \n\n/home/grout/sage-3.2.3/local/lib/python/networkx/convert.py in from_whatever(thing, create_using)\n    114 \n    115     raise networkx.NetworkXError, \\\n--> 116           \"Input is not a known data type for conversion.\"\n    117 \n    118     return \n\nNetworkXError: Input is not a known data type for conversion.\nsage: Graph(DiGraph({0:[1,2],1:[0,3]}))\n---------------------------------------------------------------------------\nNetworkXError                             Traceback (most recent call last)\n\n/home/grout/.sage/<ipython console> in <module>()\n\n/home/grout/sage-3.2.3/local/lib/python2.5/site-packages/sage/graphs/graph.pyc in __init__(self, data, pos, loops, format, boundary, weighted, implementation, sparse, vertex_labels, **kwds)\n   7022                         self.add_vertices(xrange(data))\n   7023                     else:\n-> 7024                         self._backend = NetworkXGraphBackend(networkx.XGraph(data, selfloops=loops, **kwds))\n   7025                 elif implementation == 'c_graph':\n   7026                     if data is None:\n\n/home/grout/sage-3.2.3/local/lib/python/networkx/xgraph.py in __init__(self, data, name, selfloops, multiedges)\n    111         self.multiedges=multiedges\n    112         if data is not None:\n--> 113             self=convert.from_whatever(data,create_using=self)\n    114         self.name=name\n    115 \n\n/home/grout/sage-3.2.3/local/lib/python/networkx/convert.py in from_whatever(thing, create_using)\n    114 \n    115     raise networkx.NetworkXError, \\\n--> 116           \"Input is not a known data type for conversion.\"\n    117 \n    118     return \n\nNetworkXError: Input is not a known data type for conversion.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5046\n\n",
+    "body": "Assignee: @rlmill\n\nThis should work.  At the very minimum, there should be a sensible error message:\n\n\n```\nsage: DiGraph(graphs.PathGraph(4))                                             \n---------------------------------------------------------------------------\nNetworkXError                             Traceback (most recent call last)\n\n/home/grout/.sage/<ipython console> in <module>()\n\n/home/grout/sage-3.2.3/local/lib/python2.5/site-packages/sage/graphs/graph.pyc in __init__(self, data, pos, loops, format, boundary, weighted, implementation, sparse, vertex_labels, **kwds)\n   8362             else:\n   8363                 if implementation == 'networkx':\n-> 8364                     self._backend = NetworkXGraphBackend(networkx.XDiGraph(data, selfloops=loops, **kwds))\n   8365                 elif implementation == 'c_graph':\n   8366                     if data is None:\n\n/home/grout/sage-3.2.3/local/lib/python/networkx/xdigraph.py in __init__(self, data, name, selfloops, multiedges)\n    118         self.multiedges=multiedges\n    119         if data is not None:\n--> 120             convert.from_whatever(data,create_using=self)\n    121         self.name=name\n    122 \n\n/home/grout/sage-3.2.3/local/lib/python/networkx/convert.py in from_whatever(thing, create_using)\n    114 \n    115     raise networkx.NetworkXError, \\\n--> 116           \"Input is not a known data type for conversion.\"\n    117 \n    118     return \n\nNetworkXError: Input is not a known data type for conversion.\nsage: Graph(DiGraph({0:[1,2],1:[0,3]}))\n---------------------------------------------------------------------------\nNetworkXError                             Traceback (most recent call last)\n\n/home/grout/.sage/<ipython console> in <module>()\n\n/home/grout/sage-3.2.3/local/lib/python2.5/site-packages/sage/graphs/graph.pyc in __init__(self, data, pos, loops, format, boundary, weighted, implementation, sparse, vertex_labels, **kwds)\n   7022                         self.add_vertices(xrange(data))\n   7023                     else:\n-> 7024                         self._backend = NetworkXGraphBackend(networkx.XGraph(data, selfloops=loops, **kwds))\n   7025                 elif implementation == 'c_graph':\n   7026                     if data is None:\n\n/home/grout/sage-3.2.3/local/lib/python/networkx/xgraph.py in __init__(self, data, name, selfloops, multiedges)\n    111         self.multiedges=multiedges\n    112         if data is not None:\n--> 113             self=convert.from_whatever(data,create_using=self)\n    114         self.name=name\n    115 \n\n/home/grout/sage-3.2.3/local/lib/python/networkx/convert.py in from_whatever(thing, create_using)\n    114 \n    115     raise networkx.NetworkXError, \\\n--> 116           \"Input is not a known data type for conversion.\"\n    117 \n    118     return \n\nNetworkXError: Input is not a known data type for conversion.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5046\n\n",
     "created_at": "2009-01-21T07:14:00Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_005046.json:
     "title": "converting between Graph and DiGraph naturally",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5046",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This should work.  At the very minimum, there should be a sensible error message:
 
@@ -99,7 +99,7 @@ archive/issue_comments_038429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5046#issuecomment-38429",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_038430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5046#issuecomment-38430",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_038431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5046#issuecomment-38431",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_038432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5046#issuecomment-38432",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

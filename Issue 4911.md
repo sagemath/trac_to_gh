@@ -14,7 +14,7 @@ archive/issues_004911.json:
     "title": "convert sage.games.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4911",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4911
 archive/issue_comments_037270.json:
 ```json
 {
-    "body": "Attachment [trac_4911.patch](tarball://root/attachments/some-uuid/ticket4911/trac_4911.patch) by mhansen created at 2009-01-02 02:24:45",
+    "body": "Attachment [trac_4911.patch](tarball://root/attachments/some-uuid/ticket4911/trac_4911.patch) by @mwhansen created at 2009-01-02 02:24:45",
     "created_at": "2009-01-02T02:24:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4911#issuecomment-37270",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4911.patch](tarball://root/attachments/some-uuid/ticket4911/trac_4911.patch) by mhansen created at 2009-01-02 02:24:45
+Attachment [trac_4911.patch](tarball://root/attachments/some-uuid/ticket4911/trac_4911.patch) by @mwhansen created at 2009-01-02 02:24:45
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_037271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4911#issuecomment-37271",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -70,16 +70,16 @@ Actually, why do you need :math: here at all?  I don't remember seeing it in the
 archive/issue_comments_037272.json:
 ```json
 {
-    "body": "Attachment [trac_4911-2.patch](tarball://root/attachments/some-uuid/ticket4911/trac_4911-2.patch) by mhansen created at 2009-01-08 21:16:25\n\nI've posted a patch which fixes this issue.  The :math: was there because I had forgot to go through this file and remove them.",
+    "body": "Attachment [trac_4911-2.patch](tarball://root/attachments/some-uuid/ticket4911/trac_4911-2.patch) by @mwhansen created at 2009-01-08 21:16:25\n\nI've posted a patch which fixes this issue.  The :math: was there because I had forgot to go through this file and remove them.",
     "created_at": "2009-01-08T21:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4911#issuecomment-37272",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4911-2.patch](tarball://root/attachments/some-uuid/ticket4911/trac_4911-2.patch) by mhansen created at 2009-01-08 21:16:25
+Attachment [trac_4911-2.patch](tarball://root/attachments/some-uuid/ticket4911/trac_4911-2.patch) by @mwhansen created at 2009-01-08 21:16:25
 
 I've posted a patch which fixes this issue.  The :math: was there because I had forgot to go through this file and remove them.
 
@@ -95,7 +95,7 @@ archive/issue_comments_037273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4911#issuecomment-37273",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

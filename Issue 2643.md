@@ -3,7 +3,7 @@
 archive/issues_002643.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI failed to correctly setup the Section fields of some of the Debian control files.  Attached are a series of patches to fix these problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2643\n\n",
+    "body": "Assignee: @timabbott\n\nI failed to correctly setup the Section fields of some of the Debian control files.  Attached are a series of patches to fix these problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2643\n\n",
     "created_at": "2008-03-22T03:40:43Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002643.json:
     "title": "[with patch; needs review] Fix Debian Sections",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2643",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I failed to correctly setup the Section fields of some of the Debian control files.  Attached are a series of patches to fix these problems.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2643
 archive/issue_comments_018164.json:
 ```json
 {
-    "body": "Attachment [eclib.patch](tarball://root/attachments/some-uuid/ticket2643/eclib.patch) by tabbott created at 2008-03-22 03:47:28",
+    "body": "Attachment [eclib.patch](tarball://root/attachments/some-uuid/ticket2643/eclib.patch) by @timabbott created at 2008-03-22 03:47:28",
     "created_at": "2008-03-22T03:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2643#issuecomment-18164",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [eclib.patch](tarball://root/attachments/some-uuid/ticket2643/eclib.patch) by tabbott created at 2008-03-22 03:47:28
+Attachment [eclib.patch](tarball://root/attachments/some-uuid/ticket2643/eclib.patch) by @timabbott created at 2008-03-22 03:47:28
 
 
 
@@ -50,16 +50,16 @@ Attachment [eclib.patch](tarball://root/attachments/some-uuid/ticket2643/eclib.p
 archive/issue_comments_018165.json:
 ```json
 {
-    "body": "Attachment [flint.patch](tarball://root/attachments/some-uuid/ticket2643/flint.patch) by tabbott created at 2008-03-22 03:49:16",
+    "body": "Attachment [flint.patch](tarball://root/attachments/some-uuid/ticket2643/flint.patch) by @timabbott created at 2008-03-22 03:49:16",
     "created_at": "2008-03-22T03:49:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2643#issuecomment-18165",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [flint.patch](tarball://root/attachments/some-uuid/ticket2643/flint.patch) by tabbott created at 2008-03-22 03:49:16
+Attachment [flint.patch](tarball://root/attachments/some-uuid/ticket2643/flint.patch) by @timabbott created at 2008-03-22 03:49:16
 
 
 
@@ -68,16 +68,16 @@ Attachment [flint.patch](tarball://root/attachments/some-uuid/ticket2643/flint.p
 archive/issue_comments_018166.json:
 ```json
 {
-    "body": "Attachment [givaro.patch](tarball://root/attachments/some-uuid/ticket2643/givaro.patch) by tabbott created at 2008-03-22 03:49:46",
+    "body": "Attachment [givaro.patch](tarball://root/attachments/some-uuid/ticket2643/givaro.patch) by @timabbott created at 2008-03-22 03:49:46",
     "created_at": "2008-03-22T03:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2643#issuecomment-18166",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [givaro.patch](tarball://root/attachments/some-uuid/ticket2643/givaro.patch) by tabbott created at 2008-03-22 03:49:46
+Attachment [givaro.patch](tarball://root/attachments/some-uuid/ticket2643/givaro.patch) by @timabbott created at 2008-03-22 03:49:46
 
 
 
@@ -86,16 +86,16 @@ Attachment [givaro.patch](tarball://root/attachments/some-uuid/ticket2643/givaro
 archive/issue_comments_018167.json:
 ```json
 {
-    "body": "Attachment [libm4ri.patch](tarball://root/attachments/some-uuid/ticket2643/libm4ri.patch) by tabbott created at 2008-03-22 03:49:54",
+    "body": "Attachment [libm4ri.patch](tarball://root/attachments/some-uuid/ticket2643/libm4ri.patch) by @timabbott created at 2008-03-22 03:49:54",
     "created_at": "2008-03-22T03:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2643#issuecomment-18167",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [libm4ri.patch](tarball://root/attachments/some-uuid/ticket2643/libm4ri.patch) by tabbott created at 2008-03-22 03:49:54
+Attachment [libm4ri.patch](tarball://root/attachments/some-uuid/ticket2643/libm4ri.patch) by @timabbott created at 2008-03-22 03:49:54
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_018169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2643#issuecomment-18169",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -200,7 +200,7 @@ Michael
 archive/issue_comments_018173.json:
 ```json
 {
-    "body": "Changing assignee from tabbott to mabshoff.",
+    "body": "Changing assignee from @timabbott to mabshoff.",
     "created_at": "2008-04-11T22:12:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2643",
     "type": "issue_comment",
@@ -209,7 +209,7 @@ archive/issue_comments_018173.json:
 }
 ```
 
-Changing assignee from tabbott to mabshoff.
+Changing assignee from @timabbott to mabshoff.
 
 
 

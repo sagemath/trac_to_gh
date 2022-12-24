@@ -14,7 +14,7 @@ archive/issues_006755.json:
     "title": "sage-4.1.1 -- twist.py tests are seriously broken on OS X 10.5 PPC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6755",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -96,7 +96,7 @@ archive/issue_comments_055602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6755#issuecomment-55602",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

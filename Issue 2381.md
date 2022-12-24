@@ -3,7 +3,7 @@
 archive/issues_002381.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: plot vector quiver\n\nIs the a way to produce \"quiver plots\" for 2d vector fields? plot_vector_field should accept functions of two parameters, but doesn't:\n\nUsage example:\n\n```\nsage: vf1 = plot_vector_field((lambda x:sin(x), lambda y:cos(y)), (-3,3), (-3,3))\n```\n\n\nWith 2 arguments:\n\n```\nsage: plot_vector_field((lambda x,y:y,lambda x,y:(cos(x)-2)*sin(x)),(-pi,pi),(-pi,pi))\n<type 'exceptions.TypeError'>: <lambda>() takes exactly 2 arguments (1 given)\n```\n\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/13e52e07c7d7a7f9/ca8623384c7a1f55\n\nIssue created by migration from https://trac.sagemath.org/ticket/2381\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: plot vector quiver\n\nIs the a way to produce \"quiver plots\" for 2d vector fields? plot_vector_field should accept functions of two parameters, but doesn't:\n\nUsage example:\n\n```\nsage: vf1 = plot_vector_field((lambda x:sin(x), lambda y:cos(y)), (-3,3), (-3,3))\n```\n\n\nWith 2 arguments:\n\n```\nsage: plot_vector_field((lambda x,y:y,lambda x,y:(cos(x)-2)*sin(x)),(-pi,pi),(-pi,pi))\n<type 'exceptions.TypeError'>: <lambda>() takes exactly 2 arguments (1 given)\n```\n\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/13e52e07c7d7a7f9/ca8623384c7a1f55\n\nIssue created by migration from https://trac.sagemath.org/ticket/2381\n\n",
     "created_at": "2008-03-04T04:15:15Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_002381.json:
     "user": "edrex"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: plot vector quiver
 
@@ -56,7 +56,7 @@ archive/issue_comments_016061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2381#issuecomment-16061",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_016062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2381#issuecomment-16062",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_016063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2381#issuecomment-16063",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -105,16 +105,16 @@ Changing status from new to assigned.
 archive/issue_comments_016064.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-03-04T04:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2381#issuecomment-16064",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_016065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2381#issuecomment-16065",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -141,16 +141,16 @@ mhansen and I independently came up with the same solution in about the same tim
 archive/issue_comments_016066.json:
 ```json
 {
-    "body": "Attachment [vector-field.patch](tarball://root/attachments/some-uuid/ticket2381/vector-field.patch) by mhansen created at 2008-03-04 06:49:17\n\nLooks good to me.",
+    "body": "Attachment [vector-field.patch](tarball://root/attachments/some-uuid/ticket2381/vector-field.patch) by @mwhansen created at 2008-03-04 06:49:17\n\nLooks good to me.",
     "created_at": "2008-03-04T06:49:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2381#issuecomment-16066",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [vector-field.patch](tarball://root/attachments/some-uuid/ticket2381/vector-field.patch) by mhansen created at 2008-03-04 06:49:17
+Attachment [vector-field.patch](tarball://root/attachments/some-uuid/ticket2381/vector-field.patch) by @mwhansen created at 2008-03-04 06:49:17
 
 Looks good to me.
 

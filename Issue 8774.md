@@ -3,7 +3,7 @@
 archive/issues_008774.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  wdj\n\nWhile gap-4.4.12.p0 was unpacking, I noticed:\n\n```\ngap-4.4.12.p1/src/bin/\ngap-4.4.12.p1/src/bin/gap.bat\ngap-4.4.12.p1/src/bin/libW11.dll\ngap-4.4.12.p1/src/bin/gap.pif\ngap-4.4.12.p1/src/bin/gapicon.bmp\ngap-4.4.12.p1/src/bin/cygncurses-8.dll\ngap-4.4.12.p1/src/bin/regtool.exe\ngap-4.4.12.p1/src/bin/gaprxvt.bat\ngap-4.4.12.p1/src/bin/gap.dll\ngap-4.4.12.p1/src/bin/gapw95.exe\ngap-4.4.12.p1/src/bin/usemem.bat\ngap-4.4.12.p1/src/bin/gapp.bat\ngap-4.4.12.p1/src/bin/cygpanel-8.dll\ngap-4.4.12.p1/src/bin/gapw95p.exe\ngap-4.4.12.p1/src/bin/rxvt.exe\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/gac\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/gap.dll\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/config.h\ngap-4.4.12.p1/src/bin/gapp.pif\ngap-4.4.12.p1/src/bin/cygwin1.dll\ngap-4.4.12.p1/src/description4r4p7\ngap-4.4.12.p1/src/grp/\n...\n```\n\n\nNO!!!  We absolutely should not be shipping Windows frickin' binaries with Sage.    Ticket #8076 introduced all these.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8774\n\n",
+    "body": "Assignee: tbd\n\nCC:  @wdjoyner\n\nWhile gap-4.4.12.p0 was unpacking, I noticed:\n\n```\ngap-4.4.12.p1/src/bin/\ngap-4.4.12.p1/src/bin/gap.bat\ngap-4.4.12.p1/src/bin/libW11.dll\ngap-4.4.12.p1/src/bin/gap.pif\ngap-4.4.12.p1/src/bin/gapicon.bmp\ngap-4.4.12.p1/src/bin/cygncurses-8.dll\ngap-4.4.12.p1/src/bin/regtool.exe\ngap-4.4.12.p1/src/bin/gaprxvt.bat\ngap-4.4.12.p1/src/bin/gap.dll\ngap-4.4.12.p1/src/bin/gapw95.exe\ngap-4.4.12.p1/src/bin/usemem.bat\ngap-4.4.12.p1/src/bin/gapp.bat\ngap-4.4.12.p1/src/bin/cygpanel-8.dll\ngap-4.4.12.p1/src/bin/gapw95p.exe\ngap-4.4.12.p1/src/bin/rxvt.exe\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/gac\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/gap.dll\ngap-4.4.12.p1/src/bin/i686-pc-cygwin-gcc/config.h\ngap-4.4.12.p1/src/bin/gapp.pif\ngap-4.4.12.p1/src/bin/cygwin1.dll\ngap-4.4.12.p1/src/description4r4p7\ngap-4.4.12.p1/src/grp/\n...\n```\n\n\nNO!!!  We absolutely should not be shipping Windows frickin' binaries with Sage.    Ticket #8076 introduced all these.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8774\n\n",
     "created_at": "2010-04-26T23:43:05Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_008774.json:
     "title": "gap-4.4.12.p0 is full of *CRAP*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8774",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  wdj
+CC:  @wdjoyner
 
 While gap-4.4.12.p0 was unpacking, I noticed:
 
@@ -69,7 +69,7 @@ archive/issue_comments_080315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8774#issuecomment-80315",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_080316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8774#issuecomment-80316",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -157,16 +157,16 @@ I'll make a new spkg later today.
 archive/issue_comments_080317.json:
 ```json
 {
-    "body": "Changing assignee from tbd to dimpase.",
+    "body": "Changing assignee from tbd to @dimpase.",
     "created_at": "2010-04-27T00:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8774#issuecomment-80317",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Changing assignee from tbd to dimpase.
+Changing assignee from tbd to @dimpase.
 
 
 
@@ -180,7 +180,7 @@ archive/issue_comments_080318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8774#issuecomment-80318",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_080319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8774#issuecomment-80319",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_080320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8774#issuecomment-80320",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_080321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8774#issuecomment-80321",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_080322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8774#issuecomment-80322",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_080323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8774#issuecomment-80323",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_080324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8774#issuecomment-80324",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001037.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  sage-combinat\n\nFor example,\n\n\n```\nsage: X([3,2,1])*X([4,3,2,1])\nX[6, 4, 2, 1, 3, 5, 7]\n```\n\n\nshould be\n\n\n```\nsage: X([3,2,1])*X([4,3,2,1])\nX[6, 4, 2, 1, 3, 5]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1037\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nFor example,\n\n\n```\nsage: X([3,2,1])*X([4,3,2,1])\nX[6, 4, 2, 1, 3, 5, 7]\n```\n\n\nshould be\n\n\n```\nsage: X([3,2,1])*X([4,3,2,1])\nX[6, 4, 2, 1, 3, 5]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1037\n\n",
     "created_at": "2007-10-30T22:49:41Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001037.json:
     "title": "arithmetic with Schubert polynomials includes extra fixed points in the permutations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1037",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  sage-combinat
 
@@ -55,7 +55,7 @@ archive/issue_comments_006332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1037#issuecomment-6332",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

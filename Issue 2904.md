@@ -14,7 +14,7 @@ archive/issues_002904.json:
     "title": "sage/matrix/matrix_misc.py has no copyright info",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2904",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2904
 archive/issue_comments_020020.json:
 ```json
 {
-    "body": "Attachment [2904.patch](tarball://root/attachments/some-uuid/ticket2904/2904.patch) by dfdeshom created at 2008-04-13 05:06:12",
+    "body": "Attachment [2904.patch](tarball://root/attachments/some-uuid/ticket2904/2904.patch) by @dfdeshom created at 2008-04-13 05:06:12",
     "created_at": "2008-04-13T05:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2904#issuecomment-20020",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2904.patch](tarball://root/attachments/some-uuid/ticket2904/2904.patch) by dfdeshom created at 2008-04-13 05:06:12
+Attachment [2904.patch](tarball://root/attachments/some-uuid/ticket2904/2904.patch) by @dfdeshom created at 2008-04-13 05:06:12
 
 
 

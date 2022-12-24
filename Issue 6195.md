@@ -3,7 +3,7 @@
 archive/issues_006195.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhansen\n\nWhile matching patterns containing wildcards in symbolic expressions, GiNaC supports returning the sub expressions that match the given wildcards.\n\nAttached patch wraps this interface.\n\nThe current interface for .match() on sage.symbolic.expression.Expression is to return False if there was a match, and True otherwise. The patch changes this to return a dictionary with the wildcards in the pattern as keys. This might result in an empty dictionary being returned. See the doctests in the patch for examples.\n\nI am open to suggestions for improvements on this interface. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6195\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nWhile matching patterns containing wildcards in symbolic expressions, GiNaC supports returning the sub expressions that match the given wildcards.\n\nAttached patch wraps this interface.\n\nThe current interface for .match() on sage.symbolic.expression.Expression is to return False if there was a match, and True otherwise. The patch changes this to return a dictionary with the wildcards in the pattern as keys. This might result in an empty dictionary being returned. See the doctests in the patch for examples.\n\nI am open to suggestions for improvements on this interface. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6195\n\n",
     "created_at": "2009-06-03T15:24:16Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_006195.json:
     "title": "[with patch, needs review] in symbolic Expression.math() return a dictionary with matched values of wildcards",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6195",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mhansen
+CC:  @mwhansen
 
 While matching patterns containing wildcards in symbolic expressions, GiNaC supports returning the sub expressions that match the given wildcards.
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6195
 archive/issue_comments_049472.json:
 ```json
 {
-    "body": "Attachment [trac_6195-match_dict.patch](tarball://root/attachments/some-uuid/ticket6195/trac_6195-match_dict.patch) by ncalexan created at 2009-06-15 21:20:46\n\nI don't understand this.\n\nWhy does the first match but the second not?  \n\n```\nsage: ((x+y)).match(w0+w1)\n{$1: x, $0: y}\nsage: ((x+x)).match(w0+w1)\n```\n\n\n\nCan you explain the difference in these behaviours?\n\n```\nsage: ((x+y)^a).match((x+y)^a)\n{}\nsage: print ((x+y)^a).match((x+y)^b)\nNone\n```\n",
+    "body": "Attachment [trac_6195-match_dict.patch](tarball://root/attachments/some-uuid/ticket6195/trac_6195-match_dict.patch) by @ncalexan created at 2009-06-15 21:20:46\n\nI don't understand this.\n\nWhy does the first match but the second not?  \n\n```\nsage: ((x+y)).match(w0+w1)\n{$1: x, $0: y}\nsage: ((x+x)).match(w0+w1)\n```\n\n\n\nCan you explain the difference in these behaviours?\n\n```\nsage: ((x+y)^a).match((x+y)^a)\n{}\nsage: print ((x+y)^a).match((x+y)^b)\nNone\n```\n",
     "created_at": "2009-06-15T21:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6195#issuecomment-49472",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_6195-match_dict.patch](tarball://root/attachments/some-uuid/ticket6195/trac_6195-match_dict.patch) by ncalexan created at 2009-06-15 21:20:46
+Attachment [trac_6195-match_dict.patch](tarball://root/attachments/some-uuid/ticket6195/trac_6195-match_dict.patch) by @ncalexan created at 2009-06-15 21:20:46
 
 I don't understand this.
 
@@ -86,7 +86,7 @@ archive/issue_comments_049473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6195#issuecomment-49473",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_049474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6195#issuecomment-49474",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -144,16 +144,16 @@ Changing status from new to assigned.
 archive/issue_comments_049475.json:
 ```json
 {
-    "body": "Attachment [trac_6195-ref.patch](tarball://root/attachments/some-uuid/ticket6195/trac_6195-ref.patch) by AlexGhitza created at 2009-07-17 09:28:39\n\napply after the first patch",
+    "body": "Attachment [trac_6195-ref.patch](tarball://root/attachments/some-uuid/ticket6195/trac_6195-ref.patch) by @aghitza created at 2009-07-17 09:28:39\n\napply after the first patch",
     "created_at": "2009-07-17T09:28:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6195#issuecomment-49475",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6195-ref.patch](tarball://root/attachments/some-uuid/ticket6195/trac_6195-ref.patch) by AlexGhitza created at 2009-07-17 09:28:39
+Attachment [trac_6195-ref.patch](tarball://root/attachments/some-uuid/ticket6195/trac_6195-ref.patch) by @aghitza created at 2009-07-17 09:28:39
 
 apply after the first patch
 
@@ -169,7 +169,7 @@ archive/issue_comments_049476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6195#issuecomment-49476",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_049477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6195#issuecomment-49477",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

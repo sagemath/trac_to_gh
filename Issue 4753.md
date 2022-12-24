@@ -3,7 +3,7 @@
 archive/issues_004753.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  craigcitro\n\ntitle says it all\n\nIssue created by migration from https://trac.sagemath.org/ticket/4753\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\ntitle says it all\n\nIssue created by migration from https://trac.sagemath.org/ticket/4753\n\n",
     "created_at": "2008-12-11T02:36:08Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_004753.json:
     "title": "make sparse * sparse = dense mod p like 50 frickin' times faster.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4753",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  craigcitro
+CC:  @craigcitro
 
 title says it all
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4753
 archive/issue_comments_035980.json:
 ```json
 {
-    "body": "Attachment [trac_4753-part1.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part1.patch) by was created at 2008-12-11 02:37:16",
+    "body": "Attachment [trac_4753-part1.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part1.patch) by @williamstein created at 2008-12-11 02:37:16",
     "created_at": "2008-12-11T02:37:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4753#issuecomment-35980",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4753-part1.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part1.patch) by was created at 2008-12-11 02:37:16
+Attachment [trac_4753-part1.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part1.patch) by @williamstein created at 2008-12-11 02:37:16
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_035981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4753#issuecomment-35981",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_035982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4753#issuecomment-35982",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_035984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4753#issuecomment-35984",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_035985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4753#issuecomment-35985",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -186,16 +186,16 @@ Now it's ready for review.
 archive/issue_comments_035986.json:
 ```json
 {
-    "body": "Attachment [trac_4753-part2.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part2.patch) by craigcitro created at 2009-01-10 12:04:01",
+    "body": "Attachment [trac_4753-part2.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part2.patch) by @craigcitro created at 2009-01-10 12:04:01",
     "created_at": "2009-01-10T12:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4753#issuecomment-35986",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_4753-part2.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part2.patch) by craigcitro created at 2009-01-10 12:04:01
+Attachment [trac_4753-part2.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part2.patch) by @craigcitro created at 2009-01-10 12:04:01
 
 
 
@@ -209,7 +209,7 @@ archive/issue_comments_035987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4753#issuecomment-35987",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -318,16 +318,16 @@ Michael
 archive/issue_comments_035990.json:
 ```json
 {
-    "body": "Attachment [trac_4753-part3.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part3.patch) by craigcitro created at 2009-01-11 08:59:14",
+    "body": "Attachment [trac_4753-part3.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part3.patch) by @craigcitro created at 2009-01-11 08:59:14",
     "created_at": "2009-01-11T08:59:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4753#issuecomment-35990",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_4753-part3.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part3.patch) by craigcitro created at 2009-01-11 08:59:14
+Attachment [trac_4753-part3.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part3.patch) by @craigcitro created at 2009-01-11 08:59:14
 
 
 
@@ -341,7 +341,7 @@ archive/issue_comments_035991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4753#issuecomment-35991",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_035992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4753#issuecomment-35992",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_035993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4753#issuecomment-35993",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -402,16 +402,16 @@ I wised up, and tested `sage/matrix/` and `sage/modular/modsym` before posting -
 archive/issue_comments_035994.json:
 ```json
 {
-    "body": "Attachment [trac_4753-part4.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part4.patch) by was created at 2009-01-12 15:07:53",
+    "body": "Attachment [trac_4753-part4.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part4.patch) by @williamstein created at 2009-01-12 15:07:53",
     "created_at": "2009-01-12T15:07:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4753#issuecomment-35994",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4753-part4.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part4.patch) by was created at 2009-01-12 15:07:53
+Attachment [trac_4753-part4.patch](tarball://root/attachments/some-uuid/ticket4753/trac_4753-part4.patch) by @williamstein created at 2009-01-12 15:07:53
 
 
 

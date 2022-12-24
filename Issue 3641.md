@@ -14,7 +14,7 @@ archive/issues_003641.json:
     "title": "[with spkg, needs review] new Singular upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3641",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mabshoff
@@ -48,7 +48,7 @@ archive/issue_comments_025747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3641#issuecomment-25747",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_025748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3641#issuecomment-25748",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

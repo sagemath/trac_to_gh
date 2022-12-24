@@ -3,7 +3,7 @@
 archive/issues_003426.json:
 ```json
 {
-    "body": "Assignee: bober\n\nCC:  burcin kcrisman benjaminfjones\n\nKeywords: bessel, bessel_K\n\nCurrently we have\n\n```\nsage: bessel_K(10 * I, 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/<ipython console> in <module>()\n\n/home/bober/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_K(nu, z, algorithm, prec)\n    586         from sage.libs.pari.all import pari\n    587         RR,a = _setup(prec)\n--> 588         b = RR(pari(nu).besselk(z))\n    589         pari.set_real_precision(a)\n    590         return b\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3138)()\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:5905)()\n\nTypeError: Unable to convert x (='0.000000098241574381992468+0.E-161*I') to real number.\nsage: bessel_K(10 * I, 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/<ipython console> in <module>()\n\n/home/bober/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_K(nu, z, algorithm, prec)\n    586         from sage.libs.pari.all import pari\n    587         RR,a = _setup(prec)\n--> 588         b = RR(pari(nu).besselk(z))\n    589         pari.set_real_precision(a)\n    590         return b\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3138)()\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:5905)()\n\nTypeError: Unable to convert x (='0.000000098241574381992468+0.E-161*I') to real number.\n```\n\n\nIn this case the result actually should be a real number, so we fix this by discarding the imaginary part of the result from pari. In other cases, however, the result is actually a complex number, and we shouldn't always be attempting to cast it to a real number (which the attached patch also fixes).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3426\n\n",
+    "body": "Assignee: bober\n\nCC:  @burcin @kcrisman @benjaminfjones\n\nKeywords: bessel, bessel_K\n\nCurrently we have\n\n```\nsage: bessel_K(10 * I, 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/<ipython console> in <module>()\n\n/home/bober/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_K(nu, z, algorithm, prec)\n    586         from sage.libs.pari.all import pari\n    587         RR,a = _setup(prec)\n--> 588         b = RR(pari(nu).besselk(z))\n    589         pari.set_real_precision(a)\n    590         return b\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3138)()\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:5905)()\n\nTypeError: Unable to convert x (='0.000000098241574381992468+0.E-161*I') to real number.\nsage: bessel_K(10 * I, 10)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/<ipython console> in <module>()\n\n/home/bober/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_K(nu, z, algorithm, prec)\n    586         from sage.libs.pari.all import pari\n    587         RR,a = _setup(prec)\n--> 588         b = RR(pari(nu).besselk(z))\n    589         pari.set_real_precision(a)\n    590         return b\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__ (sage/rings/real_mpfr.c:3138)()\n\n/home/bober/sage-3.0.2/devel/sage-bober/sage/functions/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:5905)()\n\nTypeError: Unable to convert x (='0.000000098241574381992468+0.E-161*I') to real number.\n```\n\n\nIn this case the result actually should be a real number, so we fix this by discarding the imaginary part of the result from pari. In other cases, however, the result is actually a complex number, and we shouldn't always be attempting to cast it to a real number (which the attached patch also fixes).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3426\n\n",
     "created_at": "2008-06-14T22:10:12Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_003426.json:
 ```
 Assignee: bober
 
-CC:  burcin kcrisman benjaminfjones
+CC:  @burcin @kcrisman @benjaminfjones
 
 Keywords: bessel, bessel_K
 
@@ -101,7 +101,7 @@ archive/issue_comments_024108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24108",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -114,16 +114,16 @@ Changing component from misc to calculus.
 archive/issue_comments_024109.json:
 ```json
 {
-    "body": "Changing assignee from bober to gfurnish.",
+    "body": "Changing assignee from bober to @garyfurnish.",
     "created_at": "2008-06-15T01:20:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24109",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from bober to gfurnish.
+Changing assignee from bober to @garyfurnish.
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_024110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24110",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_024113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24113",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_024114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24114",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_024115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24115",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_024117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24117",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_024118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24118",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_024119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24119",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_024120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24120",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_024121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24121",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_024122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24122",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_024123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24123",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -441,7 +441,7 @@ archive/issue_comments_024124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24124",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_024125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24125",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_024126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24126",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_024128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24128",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -565,7 +565,7 @@ archive/issue_comments_024130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24130",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -583,7 +583,7 @@ archive/issue_comments_024131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24131",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_024132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24132",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -667,7 +667,7 @@ archive/issue_comments_024133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24133",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -696,7 +696,7 @@ archive/issue_comments_024134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24134",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -709,16 +709,16 @@ apply instead of the previous patch
 archive/issue_comments_024135.json:
 ```json
 {
-    "body": "Attachment [trac3426-fix-bessel-fns.patch](tarball://root/attachments/some-uuid/ticket3426/trac3426-fix-bessel-fns.patch) by AlexGhitza created at 2008-10-10 12:28:54\n\nOK, I've replaced my patch with one that fixes the issue reported by Dan.",
+    "body": "Attachment [trac3426-fix-bessel-fns.patch](tarball://root/attachments/some-uuid/ticket3426/trac3426-fix-bessel-fns.patch) by @aghitza created at 2008-10-10 12:28:54\n\nOK, I've replaced my patch with one that fixes the issue reported by Dan.",
     "created_at": "2008-10-10T12:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24135",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac3426-fix-bessel-fns.patch](tarball://root/attachments/some-uuid/ticket3426/trac3426-fix-bessel-fns.patch) by AlexGhitza created at 2008-10-10 12:28:54
+Attachment [trac3426-fix-bessel-fns.patch](tarball://root/attachments/some-uuid/ticket3426/trac3426-fix-bessel-fns.patch) by @aghitza created at 2008-10-10 12:28:54
 
 OK, I've replaced my patch with one that fixes the issue reported by Dan.
 
@@ -734,7 +734,7 @@ archive/issue_comments_024136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24136",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -760,7 +760,7 @@ archive/issue_comments_024137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24137",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -778,7 +778,7 @@ archive/issue_comments_024138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24138",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -817,7 +817,7 @@ archive/issue_comments_024139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24139",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -835,7 +835,7 @@ archive/issue_comments_024140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24140",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -858,7 +858,7 @@ archive/issue_comments_024141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24141",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -876,7 +876,7 @@ archive/issue_comments_024142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24142",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -894,7 +894,7 @@ archive/issue_comments_024143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24143",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -914,7 +914,7 @@ archive/issue_comments_024144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24144",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -932,7 +932,7 @@ archive/issue_comments_024145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24145",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -950,7 +950,7 @@ archive/issue_comments_024146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24146",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -968,7 +968,7 @@ archive/issue_comments_024147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24147",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -986,7 +986,7 @@ archive/issue_comments_024148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3426#issuecomment-24148",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

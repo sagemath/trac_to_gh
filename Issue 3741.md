@@ -14,7 +14,7 @@ archive/issues_003741.json:
     "title": "notebook -- the files for the revision history of a worksheet *do* get published",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3741",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -75,7 +75,7 @@ archive/issue_comments_026574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3741#issuecomment-26574",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

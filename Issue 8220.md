@@ -3,7 +3,7 @@
 archive/issues_008220.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nFor the Givaro and the NTL implementations, one can use modulus='random' but not for the Pari implementation.\nMoreover, according to the documentation in finite_field.py, modulus must be a polynomial, but in fact it can also be a string.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8220\n\n",
+    "body": "Assignee: @aghitza\n\nFor the Givaro and the NTL implementations, one can use modulus='random' but not for the Pari implementation.\nMoreover, according to the documentation in finite_field.py, modulus must be a polynomial, but in fact it can also be a string.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8220\n\n",
     "created_at": "2010-02-09T15:30:48Z",
     "labels": [
         "basic arithmetic",
@@ -17,7 +17,7 @@ archive/issues_008220.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 For the Givaro and the NTL implementations, one can use modulus='random' but not for the Pari implementation.
 Moreover, according to the documentation in finite_field.py, modulus must be a polynomial, but in fact it can also be a string.

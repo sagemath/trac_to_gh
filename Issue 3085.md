@@ -3,7 +3,7 @@
 archive/issues_003085.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe docs for identity matrix contain a \"\\t\", so the string should be a raw string so \\t doesn't expand to a tab.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3085\n\n",
+    "body": "Assignee: @williamstein\n\nThe docs for identity matrix contain a \"\\t\", so the string should be a raw string so \\t doesn't expand to a tab.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3085\n\n",
     "created_at": "2008-05-02T22:08:38Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003085.json:
     "title": "[with patch, needs *really* easy review] identity matrix docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3085",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The docs for identity matrix contain a "\t", so the string should be a raw string so \t doesn't expand to a tab.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3085
 archive/issue_comments_021302.json:
 ```json
 {
-    "body": "Attachment [identity-matrix.patch](tarball://root/attachments/some-uuid/ticket3085/identity-matrix.patch) by jason created at 2008-05-02 22:09:00",
+    "body": "Attachment [identity-matrix.patch](tarball://root/attachments/some-uuid/ticket3085/identity-matrix.patch) by @jasongrout created at 2008-05-02 22:09:00",
     "created_at": "2008-05-02T22:09:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21302",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [identity-matrix.patch](tarball://root/attachments/some-uuid/ticket3085/identity-matrix.patch) by jason created at 2008-05-02 22:09:00
+Attachment [identity-matrix.patch](tarball://root/attachments/some-uuid/ticket3085/identity-matrix.patch) by @jasongrout created at 2008-05-02 22:09:00
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_021303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21303",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_021304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21304",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

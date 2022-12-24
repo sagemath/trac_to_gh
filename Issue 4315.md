@@ -3,7 +3,7 @@
 archive/issues_004315.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  zimmerma\n\nComputing the 10th derivative of x<sup>(x</sup>x) in Sage is terribly slow:\n\n```\nbash-3.2$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: time a = diff(x^(x^x), x, 10)\nCPU times: user 1.71 s, sys: 0.08 s, total: 1.80 s\nWall time: 17.69 s\n```\n\nIn comparison with Mathemagix I get:\n\n```\nbash-3.2$ time ./mmxlight/build/mmx-light \n--------------------------------------------------------------\n--------------------------------------------------------------\n1] use \"symbolix\"\n2] a = derive (x^x^x, x^^10);\n3] quit\n|:*)          Welcome to Mathemagix-light 0.4             (*:|\n|  This software falls under the GNU General Public License  |\n|          It comes without any warranty whatsoever          |\n|------------------------------------------------------------|\n|                    (c) 2001--2008 by                       |\n|           Joris van der Hoeven, Gregoire Lecerf,           |\n|        Bernard Mourrain, Olivier Ruatta and others         |\nreal    0m10.021s\nuser    0m0.339s\nsys     0m0.052s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4315\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @zimmermann6\n\nComputing the 10th derivative of x<sup>(x</sup>x) in Sage is terribly slow:\n\n```\nbash-3.2$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: time a = diff(x^(x^x), x, 10)\nCPU times: user 1.71 s, sys: 0.08 s, total: 1.80 s\nWall time: 17.69 s\n```\n\nIn comparison with Mathemagix I get:\n\n```\nbash-3.2$ time ./mmxlight/build/mmx-light \n--------------------------------------------------------------\n--------------------------------------------------------------\n1] use \"symbolix\"\n2] a = derive (x^x^x, x^^10);\n3] quit\n|:*)          Welcome to Mathemagix-light 0.4             (*:|\n|  This software falls under the GNU General Public License  |\n|          It comes without any warranty whatsoever          |\n|------------------------------------------------------------|\n|                    (c) 2001--2008 by                       |\n|           Joris van der Hoeven, Gregoire Lecerf,           |\n|        Bernard Mourrain, Olivier Ruatta and others         |\nreal    0m10.021s\nuser    0m0.339s\nsys     0m0.052s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4315\n\n",
     "created_at": "2008-10-17T19:13:23Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_004315.json:
     "title": "symbolic computing is terribly slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4315",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  zimmerma
+CC:  @zimmermann6
 
 Computing the 10th derivative of x<sup>(x</sup>x) in Sage is terribly slow:
 
@@ -72,7 +72,7 @@ archive/issue_comments_031586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4315#issuecomment-31586",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_031587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4315#issuecomment-31587",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_031588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4315#issuecomment-31588",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008822.json:
     "title": "Bug in Family constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8822",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 Assignee: sage-combinat
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8822
 archive/issue_comments_081024.json:
 ```json
 {
-    "body": "Changing assignee from sage-combinat to hivert.",
+    "body": "Changing assignee from sage-combinat to @hivert.",
     "created_at": "2010-05-13T22:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8822#issuecomment-81024",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from sage-combinat to hivert.
+Changing assignee from sage-combinat to @hivert.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_081025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8822#issuecomment-81025",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_081026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8822#issuecomment-81026",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

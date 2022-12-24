@@ -14,7 +14,7 @@ archive/issues_004692.json:
     "title": "embeddings not implemented for relative number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4692",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4692
 archive/issue_comments_035364.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2009-06-07T13:20:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4692#issuecomment-35364",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_035365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4692#issuecomment-35365",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_035366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4692#issuecomment-35366",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -86,13 +86,13 @@ Changing component from number theory to number fields.
 archive/issue_comments_035367.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T20:21:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4692#issuecomment-35367",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.

@@ -14,7 +14,7 @@ archive/issues_003901.json:
     "title": "automated doctesting elementary number theory book",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3901",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -47,7 +47,7 @@ archive/issue_comments_027913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3901#issuecomment-27913",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_027914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3901#issuecomment-27914",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -84,16 +84,16 @@ This adds about 736 new lines of input examples to the Sage doctest suite, and a
 archive/issue_comments_027915.json:
 ```json
 {
-    "body": "Attachment [sage-3901.patch](tarball://root/attachments/some-uuid/ticket3901/sage-3901.patch) by was created at 2008-10-24 02:59:12",
+    "body": "Attachment [sage-3901.patch](tarball://root/attachments/some-uuid/ticket3901/sage-3901.patch) by @williamstein created at 2008-10-24 02:59:12",
     "created_at": "2008-10-24T02:59:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3901#issuecomment-27915",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3901.patch](tarball://root/attachments/some-uuid/ticket3901/sage-3901.patch) by was created at 2008-10-24 02:59:12
+Attachment [sage-3901.patch](tarball://root/attachments/some-uuid/ticket3901/sage-3901.patch) by @williamstein created at 2008-10-24 02:59:12
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_027916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3901#issuecomment-27916",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

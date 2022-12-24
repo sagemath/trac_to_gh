@@ -3,7 +3,7 @@
 archive/issues_008230.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nHi, I found the following strange behaviour of the addition\n<int> + 1/2. I have a file `MurphyE.sage` which contains:\n\n```\nload E.sage\n\nfoo(2)\n```\n\nwhere `E.sage` contains:\n\n```\ndef foo(K):\n    for i in range(K):\n       print i, i+1/2, type(i), type(i+1/2)\n```\n\nThen I get:\n\n```\nsage: load MurphyE.sage\n0 0 <type 'int'> <type 'int'>\n1 1 <type 'int'> <type 'int'>\n```\n\nNow if instead I replace `load E.sage` in my file by the\ncontent of the procedure `foo`, i.e.:\n\n```\ndef foo(K):\n    for i in range(K):\n       print i, i+1/2, type(i), type(i+1/2)\n\nfoo(2)\n```\n\nthen I get:\n\n```\nsage: load MurphyE.sage\n0 1/2 <type 'int'> <type 'sage.rings.rational.Rational'>\n1 3/2 <type 'int'> <type 'sage.rings.rational.Rational'>\n```\n\nwhich is the expected behaviour. Please can someone explain to me\nthe first result? I forgot to say it is with Sage 4.3.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8230\n\n",
+    "body": "Assignee: @robertwb\n\nHi, I found the following strange behaviour of the addition\n<int> + 1/2. I have a file `MurphyE.sage` which contains:\n\n```\nload E.sage\n\nfoo(2)\n```\n\nwhere `E.sage` contains:\n\n```\ndef foo(K):\n    for i in range(K):\n       print i, i+1/2, type(i), type(i+1/2)\n```\n\nThen I get:\n\n```\nsage: load MurphyE.sage\n0 0 <type 'int'> <type 'int'>\n1 1 <type 'int'> <type 'int'>\n```\n\nNow if instead I replace `load E.sage` in my file by the\ncontent of the procedure `foo`, i.e.:\n\n```\ndef foo(K):\n    for i in range(K):\n       print i, i+1/2, type(i), type(i+1/2)\n\nfoo(2)\n```\n\nthen I get:\n\n```\nsage: load MurphyE.sage\n0 1/2 <type 'int'> <type 'sage.rings.rational.Rational'>\n1 3/2 <type 'int'> <type 'sage.rings.rational.Rational'>\n```\n\nwhich is the expected behaviour. Please can someone explain to me\nthe first result? I forgot to say it is with Sage 4.3.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8230\n\n",
     "created_at": "2010-02-10T15:17:22Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_008230.json:
     "title": "strange behaviour",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8230",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 Hi, I found the following strange behaviour of the addition
 <int> + 1/2. I have a file `MurphyE.sage` which contains:
@@ -82,7 +82,7 @@ archive/issue_comments_072703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72703",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_072706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72706",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_072707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72707",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

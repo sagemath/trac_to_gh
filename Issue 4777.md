@@ -14,7 +14,7 @@ archive/issues_004777.json:
     "title": "Sage is_prime_power is seriously buggy, because pari's ispower is BROKEN",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4777",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -70,7 +70,7 @@ archive/issue_comments_036200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4777#issuecomment-36200",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,16 +105,16 @@ And I'm making this a blocker, since it is a situation where one can silently ge
 archive/issue_comments_036201.json:
 ```json
 {
-    "body": "Attachment [trac_4777.patch](tarball://root/attachments/some-uuid/ticket4777/trac_4777.patch) by was created at 2008-12-13 02:41:24",
+    "body": "Attachment [trac_4777.patch](tarball://root/attachments/some-uuid/ticket4777/trac_4777.patch) by @williamstein created at 2008-12-13 02:41:24",
     "created_at": "2008-12-13T02:41:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4777#issuecomment-36201",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4777.patch](tarball://root/attachments/some-uuid/ticket4777/trac_4777.patch) by was created at 2008-12-13 02:41:24
+Attachment [trac_4777.patch](tarball://root/attachments/some-uuid/ticket4777/trac_4777.patch) by @williamstein created at 2008-12-13 02:41:24
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_036202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4777#issuecomment-36202",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_036203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4777#issuecomment-36203",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

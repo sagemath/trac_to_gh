@@ -14,7 +14,7 @@ archive/issues_006050.json:
     "title": "Dynkin diagram ascii art for reducible Cartan types (with patch, needs review)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6050",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 Assignee: tbd
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6050
 archive/issue_comments_048191.json:
 ```json
 {
-    "body": "Changing assignee from tbd to bump.",
+    "body": "Changing assignee from tbd to @dwbump.",
     "created_at": "2009-05-16T22:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6050#issuecomment-48191",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Changing assignee from tbd to bump.
+Changing assignee from tbd to @dwbump.
 
 
 
@@ -80,16 +80,16 @@ Changing component from algebra to combinatorics.
 archive/issue_comments_048193.json:
 ```json
 {
-    "body": "Attachment [trac_6050.patch](tarball://root/attachments/some-uuid/ticket6050/trac_6050.patch) by bump created at 2009-05-17 14:05:54\n\nRevised: CartanType in `type_reducible.py` needed a `dynkin_diagram` method.",
+    "body": "Attachment [trac_6050.patch](tarball://root/attachments/some-uuid/ticket6050/trac_6050.patch) by @dwbump created at 2009-05-17 14:05:54\n\nRevised: CartanType in `type_reducible.py` needed a `dynkin_diagram` method.",
     "created_at": "2009-05-17T14:05:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6050#issuecomment-48193",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_6050.patch](tarball://root/attachments/some-uuid/ticket6050/trac_6050.patch) by bump created at 2009-05-17 14:05:54
+Attachment [trac_6050.patch](tarball://root/attachments/some-uuid/ticket6050/trac_6050.patch) by @dwbump created at 2009-05-17 14:05:54
 
 Revised: CartanType in `type_reducible.py` needed a `dynkin_diagram` method.
 
@@ -100,16 +100,16 @@ Revised: CartanType in `type_reducible.py` needed a `dynkin_diagram` method.
 archive/issue_comments_048194.json:
 ```json
 {
-    "body": "Attachment [trac_6050-1.patch](tarball://root/attachments/some-uuid/ticket6050/trac_6050-1.patch) by bump created at 2009-05-20 13:40:23",
+    "body": "Attachment [trac_6050-1.patch](tarball://root/attachments/some-uuid/ticket6050/trac_6050-1.patch) by @dwbump created at 2009-05-20 13:40:23",
     "created_at": "2009-05-20T13:40:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6050#issuecomment-48194",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_6050-1.patch](tarball://root/attachments/some-uuid/ticket6050/trac_6050-1.patch) by bump created at 2009-05-20 13:40:23
+Attachment [trac_6050-1.patch](tarball://root/attachments/some-uuid/ticket6050/trac_6050-1.patch) by @dwbump created at 2009-05-20 13:40:23
 
 
 
@@ -123,7 +123,7 @@ archive/issue_comments_048195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6050#issuecomment-48195",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_048196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6050#issuecomment-48196",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

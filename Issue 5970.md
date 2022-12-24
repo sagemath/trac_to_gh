@@ -3,7 +3,7 @@
 archive/issues_005970.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  jpflori zimmerma vbraun\n\nKeywords: polynomial ring cache weak reference\n\nAt http://groups.google.com/group/sage-support/browse_thread/thread/ef01dae47c835137 a memory leak was reported.\n\nReason for the leak: Many different polynomial rings are created, but used only once. But since we want to have unique parents, they are all cached and thus prevented from deletion.\n\nAs Robert pointed out, using weak references enables us to both have unique parents and garbage collection.\n\nWith the patch, that should at least apply to sage 3.4.1.rc3, one can do\n\n```\nsage: for p in primes(2,1000000):\n....:     R.<x,y,z> = GF(p)[]\n```\n\nwithout running into memory problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5970\n\n",
+    "body": "Assignee: @malb\n\nCC:  jpflori @zimmermann6 @vbraun\n\nKeywords: polynomial ring cache weak reference\n\nAt http://groups.google.com/group/sage-support/browse_thread/thread/ef01dae47c835137 a memory leak was reported.\n\nReason for the leak: Many different polynomial rings are created, but used only once. But since we want to have unique parents, they are all cached and thus prevented from deletion.\n\nAs Robert pointed out, using weak references enables us to both have unique parents and garbage collection.\n\nWith the patch, that should at least apply to sage 3.4.1.rc3, one can do\n\n```\nsage: for p in primes(2,1000000):\n....:     R.<x,y,z> = GF(p)[]\n```\n\nwithout running into memory problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5970\n\n",
     "created_at": "2009-05-03T07:21:37Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_005970.json:
     "title": "[with patch, needs review] Weak references in Polynomial Ring cache",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5970",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  jpflori zimmerma vbraun
+CC:  jpflori @zimmermann6 @vbraun
 
 Keywords: polynomial ring cache weak reference
 
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5970
 archive/issue_comments_047321.json:
 ```json
 {
-    "body": "Attachment [WeakReferences.patch](tarball://root/attachments/some-uuid/ticket5970/WeakReferences.patch) by SimonKing created at 2009-05-03 07:22:11\n\nIntroduce Weak Reference to the cache of PolynomialRing",
+    "body": "Attachment [WeakReferences.patch](tarball://root/attachments/some-uuid/ticket5970/WeakReferences.patch) by @simon-king-jena created at 2009-05-03 07:22:11\n\nIntroduce Weak Reference to the cache of PolynomialRing",
     "created_at": "2009-05-03T07:22:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47321",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [WeakReferences.patch](tarball://root/attachments/some-uuid/ticket5970/WeakReferences.patch) by SimonKing created at 2009-05-03 07:22:11
+Attachment [WeakReferences.patch](tarball://root/attachments/some-uuid/ticket5970/WeakReferences.patch) by @simon-king-jena created at 2009-05-03 07:22:11
 
 Introduce Weak Reference to the cache of PolynomialRing
 
@@ -114,7 +114,7 @@ archive/issue_comments_047323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47323",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -154,16 +154,16 @@ sage: test_ec_leak(2^17)
 archive/issue_comments_047324.json:
 ```json
 {
-    "body": "Attachment [test.sage](tarball://root/attachments/some-uuid/ticket5970/test.sage) by AlexGhitza created at 2009-05-03 08:02:38\n\nsimple-minded test suite",
+    "body": "Attachment [test.sage](tarball://root/attachments/some-uuid/ticket5970/test.sage) by @aghitza created at 2009-05-03 08:02:38\n\nsimple-minded test suite",
     "created_at": "2009-05-03T08:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47324",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [test.sage](tarball://root/attachments/some-uuid/ticket5970/test.sage) by AlexGhitza created at 2009-05-03 08:02:38
+Attachment [test.sage](tarball://root/attachments/some-uuid/ticket5970/test.sage) by @aghitza created at 2009-05-03 08:02:38
 
 simple-minded test suite
 
@@ -179,7 +179,7 @@ archive/issue_comments_047325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47325",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_047328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47328",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_047329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47329",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_047330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47330",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_047331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47331",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -342,16 +342,16 @@ slightly safer weakref patch
 archive/issue_comments_047332.json:
 ```json
 {
-    "body": "Attachment [weakref_poly_ring.patch](tarball://root/attachments/some-uuid/ticket5970/weakref_poly_ring.patch) by malb created at 2009-08-25 23:45:38\n\nThe attached patch uses weakrefs for multivariate polynomials but not for univariate polynomials (we still use the same `_cache` object to hold both though). It seems the SIGSEGV is due to some Pari issue so the patch seems safe at first sight (famous last words). I will post debug info in a minute.",
+    "body": "Attachment [weakref_poly_ring.patch](tarball://root/attachments/some-uuid/ticket5970/weakref_poly_ring.patch) by @malb created at 2009-08-25 23:45:38\n\nThe attached patch uses weakrefs for multivariate polynomials but not for univariate polynomials (we still use the same `_cache` object to hold both though). It seems the SIGSEGV is due to some Pari issue so the patch seems safe at first sight (famous last words). I will post debug info in a minute.",
     "created_at": "2009-08-25T23:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47332",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [weakref_poly_ring.patch](tarball://root/attachments/some-uuid/ticket5970/weakref_poly_ring.patch) by malb created at 2009-08-25 23:45:38
+Attachment [weakref_poly_ring.patch](tarball://root/attachments/some-uuid/ticket5970/weakref_poly_ring.patch) by @malb created at 2009-08-25 23:45:38
 
 The attached patch uses weakrefs for multivariate polynomials but not for univariate polynomials (we still use the same `_cache` object to hold both though). It seems the SIGSEGV is due to some Pari issue so the patch seems safe at first sight (famous last words). I will post debug info in a minute.
 
@@ -367,7 +367,7 @@ archive/issue_comments_047333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47333",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_047334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47334",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_047335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47335",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_047336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47336",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_047337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47337",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_047338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47338",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_047339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47339",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -590,7 +590,7 @@ archive/issue_comments_047340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47340",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -658,7 +658,7 @@ archive/issue_comments_047341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47341",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_047342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47342",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -734,7 +734,7 @@ archive/issue_comments_047343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47343",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -794,7 +794,7 @@ archive/issue_comments_047344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47344",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -848,7 +848,7 @@ archive/issue_comments_047345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47345",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -866,7 +866,7 @@ archive/issue_comments_047346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47346",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -891,7 +891,7 @@ archive/issue_comments_047347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47347",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -909,7 +909,7 @@ archive/issue_comments_047348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47348",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -927,7 +927,7 @@ archive/issue_comments_047349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47349",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -975,7 +975,7 @@ archive/issue_comments_047350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47350",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1026,7 +1026,7 @@ archive/issue_comments_047351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47351",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1044,7 +1044,7 @@ archive/issue_comments_047352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47352",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1080,7 +1080,7 @@ archive/issue_comments_047353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47353",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1098,7 +1098,7 @@ archive/issue_comments_047354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47354",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1136,7 +1136,7 @@ archive/issue_comments_047355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47355",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1154,7 +1154,7 @@ archive/issue_comments_047356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47356",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1172,7 +1172,7 @@ archive/issue_comments_047357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47357",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1194,7 +1194,7 @@ archive/issue_comments_047358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47358",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1221,7 +1221,7 @@ archive/issue_comments_047359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47359",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1246,7 +1246,7 @@ archive/issue_comments_047360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47360",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

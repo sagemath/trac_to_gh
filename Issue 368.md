@@ -13,7 +13,7 @@ archive/issues_000368.json:
     "title": "{{{ }}} for worksheet text mode won't cut it.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/368",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -49,7 +49,7 @@ archive/issue_comments_001772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/368#issuecomment-1772",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_001773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/368#issuecomment-1773",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

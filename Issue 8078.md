@@ -3,7 +3,7 @@
 archive/issues_008078.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman mjo\n\nKeywords: solve, inequality\n\nSage with patch #7325 fails to solve some simple ineqaulitites\n\n```\nsage: solve(x^4+2>0,x)\n[[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]\n```\n\nThis should be fixed in Maxima and has been reported on [maxima list](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593). Update Maxima (has been fixed in CVS in [solve_rat_ineq](http://maxima.cvs.sourceforge.net/viewvc/maxima/maxima/share/contrib/solve_rat_ineq.mac?view=log)).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8078\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @orlitzky\n\nKeywords: solve, inequality\n\nSage with patch #7325 fails to solve some simple ineqaulitites\n\n```\nsage: solve(x^4+2>0,x)\n[[x > -(-1)^(1/4)*2^(1/4), x < (-1)^(1/4)*2^(1/4)]]\n```\n\nThis should be fixed in Maxima and has been reported on [maxima list](http://thread.gmane.org/gmane.comp.mathematics.maxima.general/29593). Update Maxima (has been fixed in CVS in [solve_rat_ineq](http://maxima.cvs.sourceforge.net/viewvc/maxima/maxima/share/contrib/solve_rat_ineq.mac?view=log)).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8078\n\n",
     "created_at": "2010-01-26T12:37:46Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_008078.json:
     "title": "Fix algsys in Maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8078",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman mjo
+CC:  @kcrisman @orlitzky
 
 Keywords: solve, inequality
 
@@ -48,7 +48,7 @@ archive/issue_comments_070796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8078#issuecomment-70796",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_070797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8078#issuecomment-70797",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_070798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8078#issuecomment-70798",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_070799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8078#issuecomment-70799",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -130,16 +130,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070800.json:
 ```json
 {
-    "body": "Attachment [sage-trac_8078.patch](tarball://root/attachments/some-uuid/ticket8078/sage-trac_8078.patch) by mjo created at 2011-12-14 00:15:46\n\nThis is already fixed in sage-4.8.alpha4, so I've added a doctest for it.",
+    "body": "Attachment [sage-trac_8078.patch](tarball://root/attachments/some-uuid/ticket8078/sage-trac_8078.patch) by @orlitzky created at 2011-12-14 00:15:46\n\nThis is already fixed in sage-4.8.alpha4, so I've added a doctest for it.",
     "created_at": "2011-12-14T00:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8078#issuecomment-70800",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_8078.patch](tarball://root/attachments/some-uuid/ticket8078/sage-trac_8078.patch) by mjo created at 2011-12-14 00:15:46
+Attachment [sage-trac_8078.patch](tarball://root/attachments/some-uuid/ticket8078/sage-trac_8078.patch) by @orlitzky created at 2011-12-14 00:15:46
 
 This is already fixed in sage-4.8.alpha4, so I've added a doctest for it.
 
@@ -155,7 +155,7 @@ archive/issue_comments_070801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8078#issuecomment-70801",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_070802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8078#issuecomment-70802",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_070803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8078#issuecomment-70803",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

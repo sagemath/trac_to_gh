@@ -3,7 +3,7 @@
 archive/issues_002963.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nOne should be able to do \n\n\n```\nr.png(file=\"myplot3.png\")\n```\n\n\ninstead of \n\n\n```\nsage: r.png(file='\"myplot3.png\"')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2963\n\n",
+    "body": "Assignee: @mwhansen\n\nOne should be able to do \n\n\n```\nr.png(file=\"myplot3.png\")\n```\n\n\ninstead of \n\n\n```\nsage: r.png(file='\"myplot3.png\"')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2963\n\n",
     "created_at": "2008-04-20T01:46:25Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002963.json:
     "title": "make it so that strings pass as arguments and keyword arguments for the expect interfaces are passed down as string.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2963",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 One should be able to do 
 
@@ -51,7 +51,7 @@ archive/issue_comments_020433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2963#issuecomment-20433",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_020434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2963#issuecomment-20434",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_020435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2963#issuecomment-20435",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

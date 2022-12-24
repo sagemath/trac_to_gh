@@ -3,7 +3,7 @@
 archive/issues_003348.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nIn the following (isomorphic) cases, the first entry is floored\n\n```\nsage: vector(eval(\"[0.78, 1, 1 + 2.38 * I]\"))\n(0, 1, 2.38000000000000*I + 1)\nsage: vector([float(5.52), int(1), 1.3*x])\n(5, 1, 1.30000000000000*x)\n```\n\nNote: the order of the types here seems to have to be (float, int, symbolic ring) for this to occur.  If one uses proper Sage types, the problem goes away:\n\n```\nvector(sage_eval(\"[0.78, 1, 1 + 2.38 * I]\"))\n(0.780000000000000, 1.00000000000000, 2.38000000000000*I + 1)\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3348\n\n",
+    "body": "Assignee: @robertwb\n\nIn the following (isomorphic) cases, the first entry is floored\n\n```\nsage: vector(eval(\"[0.78, 1, 1 + 2.38 * I]\"))\n(0, 1, 2.38000000000000*I + 1)\nsage: vector([float(5.52), int(1), 1.3*x])\n(5, 1, 1.30000000000000*x)\n```\n\nNote: the order of the types here seems to have to be (float, int, symbolic ring) for this to occur.  If one uses proper Sage types, the problem goes away:\n\n```\nvector(sage_eval(\"[0.78, 1, 1 + 2.38 * I]\"))\n(0.780000000000000, 1.00000000000000, 2.38000000000000*I + 1)\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3348\n\n",
     "created_at": "2008-06-01T20:22:01Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_003348.json:
     "title": "Coercion problem: creating vectors from a mix of python and symbolic types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3348",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 In the following (isomorphic) cases, the first entry is floored
 
@@ -55,7 +55,7 @@ archive/issue_comments_023279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3348#issuecomment-23279",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_023280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3348#issuecomment-23280",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007913.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mjo\n\nKeywords: deprecation\n\nIn the following:\n\n```\nsage: EllipticCurve(0)\n/home/john/sage-4.3.1.alpha1/local/bin/sage-ipython:1:\nDeprecationWarning: 'EllipticCurve(j)' is deprecated; use\n'EllipticCurve_from_j(j)' or 'EllipticCurve(j=j)' instead.\n #!/usr/bin/env python\nElliptic Curve defined by y^2 = x^3 + 1 over Rational Field\n```\n\nwhere is the line \"#!/usr/bin/env python\" coming from?\n\nIssue created by migration from https://trac.sagemath.org/ticket/7913\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @orlitzky\n\nKeywords: deprecation\n\nIn the following:\n\n```\nsage: EllipticCurve(0)\n/home/john/sage-4.3.1.alpha1/local/bin/sage-ipython:1:\nDeprecationWarning: 'EllipticCurve(j)' is deprecated; use\n'EllipticCurve_from_j(j)' or 'EllipticCurve(j=j)' instead.\n #!/usr/bin/env python\nElliptic Curve defined by y^2 = x^3 + 1 over Rational Field\n```\n\nwhere is the line \"#!/usr/bin/env python\" coming from?\n\nIssue created by migration from https://trac.sagemath.org/ticket/7913\n\n",
     "created_at": "2010-01-12T20:28:38Z",
     "labels": [
         "user interface",
@@ -14,12 +14,12 @@ archive/issues_007913.json:
     "title": "extraneous output after deprecation warning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7913",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mjo
+CC:  @orlitzky
 
 Keywords: deprecation
 
@@ -52,7 +52,7 @@ archive/issue_comments_068842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7913#issuecomment-68842",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_068843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7913#issuecomment-68843",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_068844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7913#issuecomment-68844",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_068845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7913#issuecomment-68845",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_068846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7913#issuecomment-68846",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_068847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7913#issuecomment-68847",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_068848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7913#issuecomment-68848",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_068849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7913#issuecomment-68849",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_068850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7913#issuecomment-68850",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_068851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7913#issuecomment-68851",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_068852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7913#issuecomment-68852",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_068853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7913#issuecomment-68853",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_068854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7913#issuecomment-68854",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

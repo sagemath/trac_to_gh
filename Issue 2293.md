@@ -14,7 +14,7 @@ archive/issues_002293.json:
     "title": "word_problem error in AbelianGroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2293",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: joyner
@@ -57,7 +57,7 @@ archive/issue_comments_015213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2293#issuecomment-15213",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_015214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2293#issuecomment-15214",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

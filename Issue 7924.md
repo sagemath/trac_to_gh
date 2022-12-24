@@ -3,7 +3,7 @@
 archive/issues_007924.json:
 ```json
 {
-    "body": "Assignee: was\n\nTry\n\n\n```\nprint \"___x___\"\n```\n\n\nIn a notebook cell. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7924\n\n",
+    "body": "Assignee: @williamstein\n\nTry\n\n\n```\nprint \"___x___\"\n```\n\n\nIn a notebook cell. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7924\n\n",
     "created_at": "2010-01-14T04:16:48Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007924.json:
     "title": "Notebook trims trailing underscores from output.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7924",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Try
 
@@ -45,7 +45,7 @@ archive/issue_comments_068970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68970",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_068971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68971",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_068972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68972",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_068973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68973",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_068974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68974",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_068975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68975",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

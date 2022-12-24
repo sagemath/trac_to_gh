@@ -3,7 +3,7 @@
 archive/issues_000815.json:
 ```json
 {
-    "body": "Assignee: was\n\nRunning sage -t on a `.sage` file incorrectly reports that all tests passed in the situation that a line of output is missing in the doctest. For example, the following text, in a .sage file, incorrectly produces \"All tests passed!\":\n\n\n```\ndef foo():\n    r\"\"\"                                                                                       \n    EXAMPLES:                                                                                  \n        sage: foo()                                                                            \n        2                                                                                      \n        sage: foo()                                                                            \n        sage: foo()                                                                            \n        2                                                                                      \n    \"\"\"\n    return 2\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/815\n\n",
+    "body": "Assignee: @williamstein\n\nRunning sage -t on a `.sage` file incorrectly reports that all tests passed in the situation that a line of output is missing in the doctest. For example, the following text, in a .sage file, incorrectly produces \"All tests passed!\":\n\n\n```\ndef foo():\n    r\"\"\"                                                                                       \n    EXAMPLES:                                                                                  \n        sage: foo()                                                                            \n        2                                                                                      \n        sage: foo()                                                                            \n        sage: foo()                                                                            \n        2                                                                                      \n    \"\"\"\n    return 2\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/815\n\n",
     "created_at": "2007-10-03T19:38:22Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_000815.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Running sage -t on a `.sage` file incorrectly reports that all tests passed in the situation that a line of output is missing in the doctest. For example, the following text, in a .sage file, incorrectly produces "All tests passed!":
 
@@ -48,7 +48,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/815
 archive/issue_comments_005065.json:
 ```json
 {
-    "body": "Changing assignee from was to failure.",
+    "body": "Changing assignee from @williamstein to failure.",
     "created_at": "2007-10-04T19:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/815",
     "type": "issue_comment",
@@ -57,7 +57,7 @@ archive/issue_comments_005065.json:
 }
 ```
 
-Changing assignee from was to failure.
+Changing assignee from @williamstein to failure.
 
 
 
@@ -89,7 +89,7 @@ archive/issue_comments_005067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/815#issuecomment-5067",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_005069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/815#issuecomment-5069",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,16 +155,16 @@ this replaces the above and is a REBASING AGAINST 3.1.2.alpha2.
 archive/issue_comments_005070.json:
 ```json
 {
-    "body": "Attachment [scripts-815.patch](tarball://root/attachments/some-uuid/ticket815/scripts-815.patch) by was created at 2008-11-27 07:14:54\n\nLooks good. Eliminates cruft.",
+    "body": "Attachment [scripts-815.patch](tarball://root/attachments/some-uuid/ticket815/scripts-815.patch) by @williamstein created at 2008-11-27 07:14:54\n\nLooks good. Eliminates cruft.",
     "created_at": "2008-11-27T07:14:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/815#issuecomment-5070",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-815.patch](tarball://root/attachments/some-uuid/ticket815/scripts-815.patch) by was created at 2008-11-27 07:14:54
+Attachment [scripts-815.patch](tarball://root/attachments/some-uuid/ticket815/scripts-815.patch) by @williamstein created at 2008-11-27 07:14:54
 
 Looks good. Eliminates cruft.
 

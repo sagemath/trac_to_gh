@@ -3,7 +3,7 @@
 archive/issues_008986.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  vbraun davidloeffler\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8986\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun @loefflerd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8986\n\n",
     "created_at": "2010-05-18T09:06:31Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_008986.json:
     "title": "Add support for convex rational polyhedral cones",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8986",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
 
-CC:  vbraun davidloeffler
+CC:  @vbraun @loefflerd
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_082917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82917",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_082918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82918",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_082919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82919",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_082920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82920",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_082921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82921",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_082922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82922",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_082923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82923",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_082924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82924",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_082925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82925",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_082926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82926",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_082927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82927",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_082928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82928",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_082929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82929",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -478,7 +478,7 @@ archive/issue_comments_082930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82930",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_082931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82931",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -545,7 +545,7 @@ archive/issue_comments_082932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82932",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -558,16 +558,16 @@ Reviewer's comments taken into account.
 archive/issue_comments_082933.json:
 ```json
 {
-    "body": "Attachment [trac_8986_add_support_for_convex_rational_polyhedral_cones.patch](tarball://root/attachments/some-uuid/ticket8986/trac_8986_add_support_for_convex_rational_polyhedral_cones.patch) by novoselt created at 2010-06-06 05:21:11\n\nOK, I think I have addressed all the points in the original review except 2) which is pretty much impossible to realize completely (originally I was thinking of (1,1,1) as vectors, but they are just tuples, see the above comment for vector behaviour in this situation). I have added a general warning about tuples in the main `ToricLattice` documentation.\n\nI added `__contains__` to `ToricLattice`, since I discovered that the inherited implementation is not suitable.\n\nI added `__contains__`, `_contains`, and `contains` to cones. The real job is done in `_contains`, two others call it. The reason for the third function is an attempt to make warnings show where the actual potential mistake was, which requires the same calling depth. Unfortunately, in my tests it worked as I wanted only if it was triggered by some library code, in the notebook for created functions and attached files it just shows `main`. But that may change and maybe the terminal behaves differently. Now `cone.contains(stuff)` will try its best to return `True` by interpreting `stuff` as a point in the ambient space of `cone`, i.e. in `cone.lattice().base_extend(RR)`. However, it will catch points from foreign lattices first and return `False` with a warning, visible the first time for each location.\n\nThat's how reviewer's code works with the new version of the patch:\n\n```\nsage: octant = Cone([(1,0,0), (0,1,0), (0,0,1)]) \nsage: N = octant.lattice()\nsage: n = N(1,1,1)\nsage: n.set_immutable()\nsage: n in octant # True was desired\nTrue\nsage: (1,0,0) in octant # True was desired\nTrue\nsage: N(1,0,0) in octant.rays()  # was and should be True\nTrue\nsage: n = N(1,0,0)\nsage: n.set_immutable()\nsage: n in octant.ray_set()  # was and should be True\nTrue\nsage: M = N.dual()\nsage: M(1,0,0) == N(1,0,0)   # Error was desired\nFalse\nsage: (1,0,0) == N(1,0,0)    # True was desired, but difficult to get\nFalse\nsage: M(1,0,0) == (1,0,0)    # True was desired, but difficult to get\nFalse\nsage: (1,0,0) == (1,0,0)     # works as expected\nTrue\nsage: (1,0,0) in octant.rays()  # True was desired, but difficult to get\nFalse\nsage: M(1,0,0) in octant.rays()  # Error was desired\nFalse\nsage: cone = Cone([[1,0],[0,1]])\nsage: (1,1) in cone # Was False\nTrue\nsage: M = cone.lattice().dual()\nsage: M(1,1) in cone # Now gives warning on the first attempt\n__main__:1: UserWarning: you have checked if a cone contains a point from another lattice, this is always False!\nFalse\n```\n\nI suppose two lines marked \"Error was desired\" can also give a warning the first time they are invoked, if we implement a custom `__eq__` in addition to `__cmp__` for `ToricLatticeElement`. Should this be done?",
+    "body": "Attachment [trac_8986_add_support_for_convex_rational_polyhedral_cones.patch](tarball://root/attachments/some-uuid/ticket8986/trac_8986_add_support_for_convex_rational_polyhedral_cones.patch) by @novoselt created at 2010-06-06 05:21:11\n\nOK, I think I have addressed all the points in the original review except 2) which is pretty much impossible to realize completely (originally I was thinking of (1,1,1) as vectors, but they are just tuples, see the above comment for vector behaviour in this situation). I have added a general warning about tuples in the main `ToricLattice` documentation.\n\nI added `__contains__` to `ToricLattice`, since I discovered that the inherited implementation is not suitable.\n\nI added `__contains__`, `_contains`, and `contains` to cones. The real job is done in `_contains`, two others call it. The reason for the third function is an attempt to make warnings show where the actual potential mistake was, which requires the same calling depth. Unfortunately, in my tests it worked as I wanted only if it was triggered by some library code, in the notebook for created functions and attached files it just shows `main`. But that may change and maybe the terminal behaves differently. Now `cone.contains(stuff)` will try its best to return `True` by interpreting `stuff` as a point in the ambient space of `cone`, i.e. in `cone.lattice().base_extend(RR)`. However, it will catch points from foreign lattices first and return `False` with a warning, visible the first time for each location.\n\nThat's how reviewer's code works with the new version of the patch:\n\n```\nsage: octant = Cone([(1,0,0), (0,1,0), (0,0,1)]) \nsage: N = octant.lattice()\nsage: n = N(1,1,1)\nsage: n.set_immutable()\nsage: n in octant # True was desired\nTrue\nsage: (1,0,0) in octant # True was desired\nTrue\nsage: N(1,0,0) in octant.rays()  # was and should be True\nTrue\nsage: n = N(1,0,0)\nsage: n.set_immutable()\nsage: n in octant.ray_set()  # was and should be True\nTrue\nsage: M = N.dual()\nsage: M(1,0,0) == N(1,0,0)   # Error was desired\nFalse\nsage: (1,0,0) == N(1,0,0)    # True was desired, but difficult to get\nFalse\nsage: M(1,0,0) == (1,0,0)    # True was desired, but difficult to get\nFalse\nsage: (1,0,0) == (1,0,0)     # works as expected\nTrue\nsage: (1,0,0) in octant.rays()  # True was desired, but difficult to get\nFalse\nsage: M(1,0,0) in octant.rays()  # Error was desired\nFalse\nsage: cone = Cone([[1,0],[0,1]])\nsage: (1,1) in cone # Was False\nTrue\nsage: M = cone.lattice().dual()\nsage: M(1,1) in cone # Now gives warning on the first attempt\n__main__:1: UserWarning: you have checked if a cone contains a point from another lattice, this is always False!\nFalse\n```\n\nI suppose two lines marked \"Error was desired\" can also give a warning the first time they are invoked, if we implement a custom `__eq__` in addition to `__cmp__` for `ToricLatticeElement`. Should this be done?",
     "created_at": "2010-06-06T05:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82933",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8986_add_support_for_convex_rational_polyhedral_cones.patch](tarball://root/attachments/some-uuid/ticket8986/trac_8986_add_support_for_convex_rational_polyhedral_cones.patch) by novoselt created at 2010-06-06 05:21:11
+Attachment [trac_8986_add_support_for_convex_rational_polyhedral_cones.patch](tarball://root/attachments/some-uuid/ticket8986/trac_8986_add_support_for_convex_rational_polyhedral_cones.patch) by @novoselt created at 2010-06-06 05:21:11
 
 OK, I think I have addressed all the points in the original review except 2) which is pretty much impossible to realize completely (originally I was thinking of (1,1,1) as vectors, but they are just tuples, see the above comment for vector behaviour in this situation). I have added a general warning about tuples in the main `ToricLattice` documentation.
 
@@ -628,7 +628,7 @@ archive/issue_comments_082934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82934",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -646,7 +646,7 @@ archive/issue_comments_082935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82935",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -666,7 +666,7 @@ archive/issue_comments_082936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82936",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -697,7 +697,7 @@ archive/issue_comments_082937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82937",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -717,7 +717,7 @@ archive/issue_comments_082938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82938",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -735,7 +735,7 @@ archive/issue_comments_082939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82939",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -782,7 +782,7 @@ archive/issue_comments_082940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82940",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -795,16 +795,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_082941.json:
 ```json
 {
-    "body": "Attachment [trac_8986_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8986/trac_8986_cmp_fix.patch) by novoselt created at 2010-07-01 16:24:44\n\nI made a systematic mistake in doctests of `__cmp__` methods of all patches, discovered in #9062. So now I am posting these one-line patches to fix them, please review!",
+    "body": "Attachment [trac_8986_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8986/trac_8986_cmp_fix.patch) by @novoselt created at 2010-07-01 16:24:44\n\nI made a systematic mistake in doctests of `__cmp__` methods of all patches, discovered in #9062. So now I am posting these one-line patches to fix them, please review!",
     "created_at": "2010-07-01T16:24:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82941",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8986_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8986/trac_8986_cmp_fix.patch) by novoselt created at 2010-07-01 16:24:44
+Attachment [trac_8986_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8986/trac_8986_cmp_fix.patch) by @novoselt created at 2010-07-01 16:24:44
 
 I made a systematic mistake in doctests of `__cmp__` methods of all patches, discovered in #9062. So now I am posting these one-line patches to fix them, please review!
 
@@ -820,7 +820,7 @@ archive/issue_comments_082942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82942",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -838,7 +838,7 @@ archive/issue_comments_082943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82943",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -883,7 +883,7 @@ archive/issue_comments_082944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82944",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -901,7 +901,7 @@ archive/issue_comments_082945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82945",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -919,7 +919,7 @@ archive/issue_comments_082946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82946",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -937,7 +937,7 @@ archive/issue_comments_082947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82947",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -955,7 +955,7 @@ archive/issue_comments_082948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82948",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -977,7 +977,7 @@ archive/issue_comments_082949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82949",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -995,7 +995,7 @@ archive/issue_comments_082950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82950",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1015,7 +1015,7 @@ archive/issue_comments_082951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82951",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1033,7 +1033,7 @@ archive/issue_comments_082952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82952",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1051,7 +1051,7 @@ archive/issue_comments_082953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8986#issuecomment-82953",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

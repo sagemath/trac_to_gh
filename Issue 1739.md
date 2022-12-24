@@ -283,16 +283,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1739
 archive/issue_comments_010998.json:
 ```json
 {
-    "body": "Attachment [uninit.patch](tarball://root/attachments/some-uuid/ticket1739/uninit.patch) by rlm created at 2008-01-10 19:05:36\n\nfixes the problem",
+    "body": "Attachment [uninit.patch](tarball://root/attachments/some-uuid/ticket1739/uninit.patch) by @rlmill created at 2008-01-10 19:05:36\n\nfixes the problem",
     "created_at": "2008-01-10T19:05:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1739#issuecomment-10998",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [uninit.patch](tarball://root/attachments/some-uuid/ticket1739/uninit.patch) by rlm created at 2008-01-10 19:05:36
+Attachment [uninit.patch](tarball://root/attachments/some-uuid/ticket1739/uninit.patch) by @rlmill created at 2008-01-10 19:05:36
 
 fixes the problem
 
@@ -303,16 +303,16 @@ fixes the problem
 archive/issue_comments_010999.json:
 ```json
 {
-    "body": "Attachment [uninit-doc.patch](tarball://root/attachments/some-uuid/ticket1739/uninit-doc.patch) by rlm created at 2008-01-10 19:06:25\n\ndocuments the fix",
+    "body": "Attachment [uninit-doc.patch](tarball://root/attachments/some-uuid/ticket1739/uninit-doc.patch) by @rlmill created at 2008-01-10 19:06:25\n\ndocuments the fix",
     "created_at": "2008-01-10T19:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1739#issuecomment-10999",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [uninit-doc.patch](tarball://root/attachments/some-uuid/ticket1739/uninit-doc.patch) by rlm created at 2008-01-10 19:06:25
+Attachment [uninit-doc.patch](tarball://root/attachments/some-uuid/ticket1739/uninit-doc.patch) by @rlmill created at 2008-01-10 19:06:25
 
 documents the fix
 

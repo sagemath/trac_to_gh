@@ -14,7 +14,7 @@ archive/issues_008422.json:
     "title": "ChainPoset in broken for small input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8422",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: sage-combinat
@@ -59,7 +59,7 @@ archive/issue_comments_075488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8422#issuecomment-75488",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -72,16 +72,16 @@ Changing status from new to needs_review.
 archive/issue_comments_075489.json:
 ```json
 {
-    "body": "Attachment [trac_8422-chain_poset_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8422/trac_8422-chain_poset_fix-fh.patch) by hivert created at 2010-03-02 18:13:37",
+    "body": "Attachment [trac_8422-chain_poset_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8422/trac_8422-chain_poset_fix-fh.patch) by @hivert created at 2010-03-02 18:13:37",
     "created_at": "2010-03-02T18:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8422#issuecomment-75489",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8422-chain_poset_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8422/trac_8422-chain_poset_fix-fh.patch) by hivert created at 2010-03-02 18:13:37
+Attachment [trac_8422-chain_poset_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8422/trac_8422-chain_poset_fix-fh.patch) by @hivert created at 2010-03-02 18:13:37
 
 
 
@@ -90,16 +90,16 @@ Attachment [trac_8422-chain_poset_fix-fh.patch](tarball://root/attachments/some-
 archive/issue_comments_075490.json:
 ```json
 {
-    "body": "Changing assignee from sage-combinat to hivert.",
+    "body": "Changing assignee from sage-combinat to @hivert.",
     "created_at": "2010-03-04T21:58:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8422#issuecomment-75490",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from sage-combinat to hivert.
+Changing assignee from sage-combinat to @hivert.
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_075493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8422#issuecomment-75493",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

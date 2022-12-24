@@ -14,7 +14,7 @@ archive/issues_008154.json:
     "title": "Enhencement for crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8154",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 Assignee: sage-combinat
@@ -68,7 +68,7 @@ archive/issue_comments_071692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71692",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -81,16 +81,16 @@ Changing status from new to needs_review.
 archive/issue_comments_071693.json:
 ```json
 {
-    "body": "Attachment [trac_8154_affine-E-as.patch](tarball://root/attachments/some-uuid/ticket8154/trac_8154_affine-E-as.patch) by aschilling created at 2010-02-02 22:51:35",
+    "body": "Attachment [trac_8154_affine-E-as.patch](tarball://root/attachments/some-uuid/ticket8154/trac_8154_affine-E-as.patch) by @anneschilling created at 2010-02-02 22:51:35",
     "created_at": "2010-02-02T22:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71693",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [trac_8154_affine-E-as.patch](tarball://root/attachments/some-uuid/ticket8154/trac_8154_affine-E-as.patch) by aschilling created at 2010-02-02 22:51:35
+Attachment [trac_8154_affine-E-as.patch](tarball://root/attachments/some-uuid/ticket8154/trac_8154_affine-E-as.patch) by @anneschilling created at 2010-02-02 22:51:35
 
 
 
@@ -104,7 +104,7 @@ archive/issue_comments_071694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71694",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_071695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71695",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 

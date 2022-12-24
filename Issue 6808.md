@@ -3,7 +3,7 @@
 archive/issues_006808.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  schilly\n\nKeywords: benchmark\n\nKarl Unterkofler has implemented various benchmarks for Mathematica. These are for specific versions of MMA 2.2, 3, 4, 5 6 and 7. \n\nhttp://www2.staff.fh-vorarlberg.ac.at/~ku/karl/timings70.html\n\nMaking one for Sage comparable to his latest Mathematica 7 benchmark would be useful, as it would allow a direct comparison of Sage and Mathematica on 15 specific tests. \n\nWe have Karl's permission to do this. In an email send to me today it said:\n\n\n**-- Email from Karl Unterkofler to David Kirkby August 22nd 2009 ---**\n\n\n*Dear Dave,*\n\n*the aim of my MMA benchmark is to give Mathematica users a decision support which platform is most suitable for their needs, e.g., should one use Vista or XP?, can one use Linux or Mac OS X?, which processor should one use 32- or 64-bit?, etc.*\n\n*Some time ago (1994) I also made a corresponding Maple benchmark (google: \"Comparison of Mathematica on Various Computers\") but there wasn't enough input from other users to keep this ongoing.*\n\n*I had to update the benchmark for new versions of MMA for several reasons, speed improvements, syntax changes, bugs, parallelization, etc., though I tried to keep as much as possible from the old code.*\n\n''I have no problem if you adopt my benchmark for use with Sage.\nHowever a  reference to the original source would be nice.''\n\n*Karl*\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6808\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @haraldschilly\n\nKeywords: benchmark\n\nKarl Unterkofler has implemented various benchmarks for Mathematica. These are for specific versions of MMA 2.2, 3, 4, 5 6 and 7. \n\nhttp://www2.staff.fh-vorarlberg.ac.at/~ku/karl/timings70.html\n\nMaking one for Sage comparable to his latest Mathematica 7 benchmark would be useful, as it would allow a direct comparison of Sage and Mathematica on 15 specific tests. \n\nWe have Karl's permission to do this. In an email send to me today it said:\n\n\n**-- Email from Karl Unterkofler to David Kirkby August 22nd 2009 ---**\n\n\n*Dear Dave,*\n\n*the aim of my MMA benchmark is to give Mathematica users a decision support which platform is most suitable for their needs, e.g., should one use Vista or XP?, can one use Linux or Mac OS X?, which processor should one use 32- or 64-bit?, etc.*\n\n*Some time ago (1994) I also made a corresponding Maple benchmark (google: \"Comparison of Mathematica on Various Computers\") but there wasn't enough input from other users to keep this ongoing.*\n\n*I had to update the benchmark for new versions of MMA for several reasons, speed improvements, syntax changes, bugs, parallelization, etc., though I tried to keep as much as possible from the old code.*\n\n''I have no problem if you adopt my benchmark for use with Sage.\nHowever a  reference to the original source would be nice.''\n\n*Karl*\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6808\n\n",
     "created_at": "2009-08-22T22:20:35Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_006808.json:
 ```
 Assignee: cwitty
 
-CC:  schilly
+CC:  @haraldschilly
 
 Keywords: benchmark
 
@@ -114,7 +114,7 @@ archive/issue_comments_056045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6808#issuecomment-56045",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

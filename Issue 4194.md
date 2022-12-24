@@ -3,7 +3,7 @@
 archive/issues_004194.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvgnu mhansen jason\n\nKeywords: plot\n\nOn Thursday 25 September 2008, Stan Schymanski wrote on [sage-support]:\n> Dear all,\n>\n> When I upgraded to 3.1.2, I found that some of my plots generated\n> using pylab in the notebooks miss their bottom bits. It seems to be\n> related to the dpi setting. Example:\n\n```\nimport pylab\nx1 = srange(0,1.1,0.01)\nd1 = [2*x+x^2 for x in x1]\npylab.clf() # clear the figure first\npylab.figure(1)\npylab.plot(x1,d1, label=\"d1\")\npylab.ylabel(\"$f(x)$\") # label the axes\npylab.xlabel(\"$x$\")\npylab.savefig('foo.png',dpi=72) # fire!\n```\n\n> If I leave the \"dpi=72\" out in the last line, the plot is larger and\n> complete. This problem did not occur in sage 3.1.1, so I assume that\n> it is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4194\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvgnu @mwhansen @jasongrout\n\nKeywords: plot\n\nOn Thursday 25 September 2008, Stan Schymanski wrote on [sage-support]:\n> Dear all,\n>\n> When I upgraded to 3.1.2, I found that some of my plots generated\n> using pylab in the notebooks miss their bottom bits. It seems to be\n> related to the dpi setting. Example:\n\n```\nimport pylab\nx1 = srange(0,1.1,0.01)\nd1 = [2*x+x^2 for x in x1]\npylab.clf() # clear the figure first\npylab.figure(1)\npylab.plot(x1,d1, label=\"d1\")\npylab.ylabel(\"$f(x)$\") # label the axes\npylab.xlabel(\"$x$\")\npylab.savefig('foo.png',dpi=72) # fire!\n```\n\n> If I leave the \"dpi=72\" out in the last line, the plot is larger and\n> complete. This problem did not occur in sage 3.1.1, so I assume that\n> it is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4194\n\n",
     "created_at": "2008-09-25T10:21:00Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_004194.json:
     "title": "pylab plots cut off",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4194",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mvgnu mhansen jason
+CC:  mvgnu @mwhansen @jasongrout
 
 Keywords: plot
 
@@ -62,7 +62,7 @@ archive/issue_comments_030436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30436",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,16 +77,16 @@ We also encounter similar issues with numpy and scipy.
 archive/issue_comments_030437.json:
 ```json
 {
-    "body": "Attachment [foo.png](tarball://root/attachments/some-uuid/ticket4194/foo.png) by kcrisman created at 2009-09-15 17:34:07\n\nTo release manager:\nThis now works, given #5448 (and possibly earlier).\n\n```\nsage: import pylab\nsage: x1 = srange(0,1.1,0.01)\nsage: d1 = [2*x+x^2 for x in x1]\nsage: pylab.clf() # clear the figure first\nsage: pylab.figure(1)\n<matplotlib.figure.Figure object at 0x16d41d0>\nsage: pylab.plot(x1,d1, label=\"d1\")\n[<matplotlib.lines.Line2D object at 0x102ceb0>]\nsage: pylab.ylabel(\"$f(x)$\") # label the axes\n<matplotlib.text.Text object at 0x4413f0>\nsage: pylab.xlabel(\"$x$\")\n<matplotlib.text.Text object at 0x1038890>\nsage: pylab.savefig('foo.png',dpi=72)\n```\n\nfoo.png is attached.",
+    "body": "Attachment [foo.png](tarball://root/attachments/some-uuid/ticket4194/foo.png) by @kcrisman created at 2009-09-15 17:34:07\n\nTo release manager:\nThis now works, given #5448 (and possibly earlier).\n\n```\nsage: import pylab\nsage: x1 = srange(0,1.1,0.01)\nsage: d1 = [2*x+x^2 for x in x1]\nsage: pylab.clf() # clear the figure first\nsage: pylab.figure(1)\n<matplotlib.figure.Figure object at 0x16d41d0>\nsage: pylab.plot(x1,d1, label=\"d1\")\n[<matplotlib.lines.Line2D object at 0x102ceb0>]\nsage: pylab.ylabel(\"$f(x)$\") # label the axes\n<matplotlib.text.Text object at 0x4413f0>\nsage: pylab.xlabel(\"$x$\")\n<matplotlib.text.Text object at 0x1038890>\nsage: pylab.savefig('foo.png',dpi=72)\n```\n\nfoo.png is attached.",
     "created_at": "2009-09-15T17:34:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30437",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [foo.png](tarball://root/attachments/some-uuid/ticket4194/foo.png) by kcrisman created at 2009-09-15 17:34:07
+Attachment [foo.png](tarball://root/attachments/some-uuid/ticket4194/foo.png) by @kcrisman created at 2009-09-15 17:34:07
 
 To release manager:
 This now works, given #5448 (and possibly earlier).
@@ -121,7 +121,7 @@ archive/issue_comments_030438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30438",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_030439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30439",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_030440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30440",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_030448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30448",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_030449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30449",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

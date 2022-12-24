@@ -63,7 +63,7 @@ Changing priority from major to blocker.
 archive/issue_comments_021375.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to gfurnish.",
+    "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-05-04T04:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3097",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_021375.json:
 }
 ```
 
-Changing assignee from mabshoff to gfurnish.
+Changing assignee from mabshoff to @garyfurnish.
 
 
 
@@ -99,16 +99,16 @@ Changing component from build to pbuild.
 archive/issue_comments_021377.json:
 ```json
 {
-    "body": "Attachment [trac_3097.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097.patch) by gfurnish created at 2008-05-04 11:55:06",
+    "body": "Attachment [trac_3097.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097.patch) by @garyfurnish created at 2008-05-04 11:55:06",
     "created_at": "2008-05-04T11:55:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3097#issuecomment-21377",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3097.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097.patch) by gfurnish created at 2008-05-04 11:55:06
+Attachment [trac_3097.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097.patch) by @garyfurnish created at 2008-05-04 11:55:06
 
 
 
@@ -117,16 +117,16 @@ Attachment [trac_3097.patch](tarball://root/attachments/some-uuid/ticket3097/tra
 archive/issue_comments_021378.json:
 ```json
 {
-    "body": "Attachment [trac_3097_scripts.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097_scripts.patch) by gfurnish created at 2008-05-04 11:55:40",
+    "body": "Attachment [trac_3097_scripts.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097_scripts.patch) by @garyfurnish created at 2008-05-04 11:55:40",
     "created_at": "2008-05-04T11:55:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3097#issuecomment-21378",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3097_scripts.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097_scripts.patch) by gfurnish created at 2008-05-04 11:55:40
+Attachment [trac_3097_scripts.patch](tarball://root/attachments/some-uuid/ticket3097/trac_3097_scripts.patch) by @garyfurnish created at 2008-05-04 11:55:40
 
 
 
@@ -140,7 +140,7 @@ archive/issue_comments_021379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3097#issuecomment-21379",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_021381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3097#issuecomment-21381",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_021382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3097#issuecomment-21382",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

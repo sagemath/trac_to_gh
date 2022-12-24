@@ -3,7 +3,7 @@
 archive/issues_002122.json:
 ```json
 {
-    "body": "Assignee: was\n\n...yeah...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2122\n\n",
+    "body": "Assignee: @williamstein\n\n...yeah...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2122\n\n",
     "created_at": "2008-02-09T01:33:00Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002122.json:
     "title": "move libecm wrapper from interfaces to libs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2122",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 ...yeah...
 
@@ -37,7 +37,7 @@ archive/issue_comments_013928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2122#issuecomment-13928",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

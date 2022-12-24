@@ -3,7 +3,7 @@
 archive/issues_005485.json:
 ```json
 {
-    "body": "Assignee: malb\n\nConsider this:\n\n\n```\nsage: R.<x, y> = ZZ[]\nsage: I = R.ideal(0)\nsage: I.dimension()\nverbose 0 (794: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n1\n```\n\n\nBut judging from the docstring of I.dimension(),this should be the Krull dimension of R/I, which is 3 since R/I is (canonically isomorphic to) R:\n\n\n```\nsage: R.krull_dimension()\n3\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5485\n\n",
+    "body": "Assignee: @malb\n\nConsider this:\n\n\n```\nsage: R.<x, y> = ZZ[]\nsage: I = R.ideal(0)\nsage: I.dimension()\nverbose 0 (794: multi_polynomial_ideal.py, dimension) Warning: falling back to very slow toy implementation.\n1\n```\n\n\nBut judging from the docstring of I.dimension(),this should be the Krull dimension of R/I, which is 3 since R/I is (canonically isomorphic to) R:\n\n\n```\nsage: R.krull_dimension()\n3\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5485\n\n",
     "created_at": "2009-03-11T08:25:23Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_005485.json:
     "title": "issue with dimension of ideals in polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5485",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Consider this:
 
@@ -57,7 +57,7 @@ archive/issue_comments_042570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5485#issuecomment-42570",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_042571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5485#issuecomment-42571",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_042572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5485#issuecomment-42572",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_042573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5485#issuecomment-42573",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_042574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5485#issuecomment-42574",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_042575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5485#issuecomment-42575",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_042576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5485#issuecomment-42576",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_042577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5485#issuecomment-42577",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -268,16 +268,16 @@ previous fix rewritten for sage 3.4, with Alex's recommendation on a NotImplemen
 archive/issue_comments_042578.json:
 ```json
 {
-    "body": "Attachment [dimension_zero_ideal.patch](tarball://root/attachments/some-uuid/ticket5485/dimension_zero_ideal.patch) by john_perry created at 2009-03-30 22:40:18\n\nThe current patch raises a NotImplementedError over rings that are not fields. (Tested with ZZ[x,y].) Over rings that Singular can't handle, this now works with the given problem. I added a docstring that tests it over PolynomialRing(GF(2147483659),order='lex'), and it returns the correct result.",
+    "body": "Attachment [dimension_zero_ideal.patch](tarball://root/attachments/some-uuid/ticket5485/dimension_zero_ideal.patch) by @johnperry-math created at 2009-03-30 22:40:18\n\nThe current patch raises a NotImplementedError over rings that are not fields. (Tested with ZZ[x,y].) Over rings that Singular can't handle, this now works with the given problem. I added a docstring that tests it over PolynomialRing(GF(2147483659),order='lex'), and it returns the correct result.",
     "created_at": "2009-03-30T22:40:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5485#issuecomment-42578",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
-Attachment [dimension_zero_ideal.patch](tarball://root/attachments/some-uuid/ticket5485/dimension_zero_ideal.patch) by john_perry created at 2009-03-30 22:40:18
+Attachment [dimension_zero_ideal.patch](tarball://root/attachments/some-uuid/ticket5485/dimension_zero_ideal.patch) by @johnperry-math created at 2009-03-30 22:40:18
 
 The current patch raises a NotImplementedError over rings that are not fields. (Tested with ZZ[x,y].) Over rings that Singular can't handle, this now works with the given problem. I added a docstring that tests it over PolynomialRing(GF(2147483659),order='lex'), and it returns the correct result.
 
@@ -293,7 +293,7 @@ archive/issue_comments_042579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5485#issuecomment-42579",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003127.json:
     "title": "abelian groups (are lame?) -- bug in comparison of subgroups with group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3127",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: joyner
@@ -82,7 +82,7 @@ archive/issue_comments_021663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3127#issuecomment-21663",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_021664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3127#issuecomment-21664",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_021665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3127#issuecomment-21665",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -136,7 +136,7 @@ Will all due respect to myself, I think it is better if someone like David Roe w
 archive/issue_comments_021666.json:
 ```json
 {
-    "body": "Changing assignee from joyner to roed.",
+    "body": "Changing assignee from joyner to @roed314.",
     "created_at": "2008-05-08T11:35:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3127",
     "type": "issue_comment",
@@ -145,7 +145,7 @@ archive/issue_comments_021666.json:
 }
 ```
 
-Changing assignee from joyner to roed.
+Changing assignee from joyner to @roed314.
 
 
 
@@ -177,7 +177,7 @@ archive/issue_comments_021668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3127#issuecomment-21668",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

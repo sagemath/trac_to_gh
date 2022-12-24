@@ -3,7 +3,7 @@
 archive/issues_008988.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  vbraun davidloeffler\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8988\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @vbraun @loefflerd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8988\n\n",
     "created_at": "2010-05-18T09:07:51Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_008988.json:
     "title": "Add support for toric varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8988",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  vbraun davidloeffler
+CC:  @vbraun @loefflerd
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_083021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83021",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_083022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83022",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -70,16 +70,16 @@ I have marked this ticket as "needs review" despite of the broken doctest. Since
 archive/issue_comments_083023.json:
 ```json
 {
-    "body": "Attachment [trac_8988_add_support_for_toric_varieties.2.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_add_support_for_toric_varieties.2.patch) by novoselt created at 2010-05-19 03:50:39\n\nOops, forgot to click replace existing file. Only the second patch should be applied. I have added a more formal reference to \"Toric Varieties\" book (and I checked with David Cox that it is OK to put a link to the draft). I have also moved the `kaehler_cone` function from Fano toric varieties to this patch.",
+    "body": "Attachment [trac_8988_add_support_for_toric_varieties.2.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_add_support_for_toric_varieties.2.patch) by @novoselt created at 2010-05-19 03:50:39\n\nOops, forgot to click replace existing file. Only the second patch should be applied. I have added a more formal reference to \"Toric Varieties\" book (and I checked with David Cox that it is OK to put a link to the draft). I have also moved the `kaehler_cone` function from Fano toric varieties to this patch.",
     "created_at": "2010-05-19T03:50:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83023",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8988_add_support_for_toric_varieties.2.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_add_support_for_toric_varieties.2.patch) by novoselt created at 2010-05-19 03:50:39
+Attachment [trac_8988_add_support_for_toric_varieties.2.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_add_support_for_toric_varieties.2.patch) by @novoselt created at 2010-05-19 03:50:39
 
 Oops, forgot to click replace existing file. Only the second patch should be applied. I have added a more formal reference to "Toric Varieties" book (and I checked with David Cox that it is OK to put a link to the draft). I have also moved the `kaehler_cone` function from Fano toric varieties to this patch.
 
@@ -95,7 +95,7 @@ archive/issue_comments_083024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83024",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_083025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83025",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_083026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83026",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_083027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83027",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_083028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83028",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_083029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83029",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_083030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83030",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_083031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83031",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_083032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83032",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_083033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83033",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_083034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83034",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_083035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83035",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_083036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83036",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_083037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83037",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_083038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83038",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_083039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83039",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -448,16 +448,16 @@ Apply after the main patch. Broken doctests are fixed by setting random seed.
 archive/issue_comments_083040.json:
 ```json
 {
-    "body": "Attachment [trac_8988_doctest_fix_for_symbolic_random_tests.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_doctest_fix_for_symbolic_random_tests.patch) by vbraun created at 2010-06-21 16:42:23\n\nLooks good now. One final nitpick is that the Kaehler cone lives in some `ToricLattice` which is somewhat confusing. I propose a `ToricVariety_field.Pic()` method returning a suitable lattice for the Kahler cone to live in. For now thats just `ZZ^k` but in the future we could be more fancy. Also, rename `kaehler_cone` -> `Kaehler_cone` since it is a name. Patch is attached, let me know what you think.",
+    "body": "Attachment [trac_8988_doctest_fix_for_symbolic_random_tests.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_doctest_fix_for_symbolic_random_tests.patch) by @vbraun created at 2010-06-21 16:42:23\n\nLooks good now. One final nitpick is that the Kaehler cone lives in some `ToricLattice` which is somewhat confusing. I propose a `ToricVariety_field.Pic()` method returning a suitable lattice for the Kahler cone to live in. For now thats just `ZZ^k` but in the future we could be more fancy. Also, rename `kaehler_cone` -> `Kaehler_cone` since it is a name. Patch is attached, let me know what you think.",
     "created_at": "2010-06-21T16:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83040",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_8988_doctest_fix_for_symbolic_random_tests.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_doctest_fix_for_symbolic_random_tests.patch) by vbraun created at 2010-06-21 16:42:23
+Attachment [trac_8988_doctest_fix_for_symbolic_random_tests.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_doctest_fix_for_symbolic_random_tests.patch) by @vbraun created at 2010-06-21 16:42:23
 
 Looks good now. One final nitpick is that the Kaehler cone lives in some `ToricLattice` which is somewhat confusing. I propose a `ToricVariety_field.Pic()` method returning a suitable lattice for the Kahler cone to live in. For now thats just `ZZ^k` but in the future we could be more fancy. Also, rename `kaehler_cone` -> `Kaehler_cone` since it is a name. Patch is attached, let me know what you think.
 
@@ -473,7 +473,7 @@ archive/issue_comments_083041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83041",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_083042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83042",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_083043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83043",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_083044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83044",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -557,7 +557,7 @@ archive/issue_comments_083045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83045",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -577,7 +577,7 @@ archive/issue_comments_083046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83046",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_083047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83047",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -608,16 +608,16 @@ Added a Mori_vectors() method while I'm at it.
 archive/issue_comments_083048.json:
 ```json
 {
-    "body": "Attachment [trac_8988_Kahlercone_lattice.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_Kahlercone_lattice.patch) by novoselt created at 2010-06-29 04:44:27\n\nAdded parameters to `fan` method and changed the behaviour of `__call__` for fans in the case of no parameters at all - it seems more natural to return the fan in this case rather than all cones of all dimensions (which is what `cones` does).",
+    "body": "Attachment [trac_8988_Kahlercone_lattice.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_Kahlercone_lattice.patch) by @novoselt created at 2010-06-29 04:44:27\n\nAdded parameters to `fan` method and changed the behaviour of `__call__` for fans in the case of no parameters at all - it seems more natural to return the fan in this case rather than all cones of all dimensions (which is what `cones` does).",
     "created_at": "2010-06-29T04:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83048",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8988_Kahlercone_lattice.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_Kahlercone_lattice.patch) by novoselt created at 2010-06-29 04:44:27
+Attachment [trac_8988_Kahlercone_lattice.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_Kahlercone_lattice.patch) by @novoselt created at 2010-06-29 04:44:27
 
 Added parameters to `fan` method and changed the behaviour of `__call__` for fans in the case of no parameters at all - it seems more natural to return the fan in this case rather than all cones of all dimensions (which is what `cones` does).
 
@@ -628,16 +628,16 @@ Added parameters to `fan` method and changed the behaviour of `__call__` for fan
 archive/issue_comments_083049.json:
 ```json
 {
-    "body": "Attachment [trac_8988_add_support_for_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_add_support_for_toric_varieties.patch) by novoselt created at 2010-06-29 05:46:41\n\nApply this patch and doctest fix.",
+    "body": "Attachment [trac_8988_add_support_for_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_add_support_for_toric_varieties.patch) by @novoselt created at 2010-06-29 05:46:41\n\nApply this patch and doctest fix.",
     "created_at": "2010-06-29T05:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83049",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8988_add_support_for_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_add_support_for_toric_varieties.patch) by novoselt created at 2010-06-29 05:46:41
+Attachment [trac_8988_add_support_for_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_add_support_for_toric_varieties.patch) by @novoselt created at 2010-06-29 05:46:41
 
 Apply this patch and doctest fix.
 
@@ -648,16 +648,16 @@ Apply this patch and doctest fix.
 archive/issue_comments_083050.json:
 ```json
 {
-    "body": "Attachment [trac_8988_Kaehler_Mori_cones.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_Kaehler_Mori_cones.patch) by novoselt created at 2010-06-29 05:48:50\n\nCode to be included later.",
+    "body": "Attachment [trac_8988_Kaehler_Mori_cones.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_Kaehler_Mori_cones.patch) by @novoselt created at 2010-06-29 05:48:50\n\nCode to be included later.",
     "created_at": "2010-06-29T05:48:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83050",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8988_Kaehler_Mori_cones.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_Kaehler_Mori_cones.patch) by novoselt created at 2010-06-29 05:48:50
+Attachment [trac_8988_Kaehler_Mori_cones.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_Kaehler_Mori_cones.patch) by @novoselt created at 2010-06-29 05:48:50
 
 Code to be included later.
 
@@ -673,7 +673,7 @@ archive/issue_comments_083051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83051",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -711,7 +711,7 @@ archive/issue_comments_083052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83052",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -731,7 +731,7 @@ archive/issue_comments_083053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83053",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -757,7 +757,7 @@ archive/issue_comments_083054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83054",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -781,7 +781,7 @@ archive/issue_comments_083055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83055",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -805,7 +805,7 @@ archive/issue_comments_083056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83056",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -823,7 +823,7 @@ archive/issue_comments_083057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83057",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -841,7 +841,7 @@ archive/issue_comments_083058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83058",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -859,7 +859,7 @@ archive/issue_comments_083059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83059",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -916,7 +916,7 @@ archive/issue_comments_083060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83060",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -934,7 +934,7 @@ archive/issue_comments_083061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83061",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -947,16 +947,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_083062.json:
 ```json
 {
-    "body": "Attachment [trac_8988-sageinspect_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988-sageinspect_doctest_fix.patch) by davidloeffler created at 2010-07-01 08:37:38\n\nHere's the fix.",
+    "body": "Attachment [trac_8988-sageinspect_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988-sageinspect_doctest_fix.patch) by @loefflerd created at 2010-07-01 08:37:38\n\nHere's the fix.",
     "created_at": "2010-07-01T08:37:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83062",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8988-sageinspect_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988-sageinspect_doctest_fix.patch) by davidloeffler created at 2010-07-01 08:37:38
+Attachment [trac_8988-sageinspect_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988-sageinspect_doctest_fix.patch) by @loefflerd created at 2010-07-01 08:37:38
 
 Here's the fix.
 
@@ -972,7 +972,7 @@ archive/issue_comments_083063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83063",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -990,7 +990,7 @@ archive/issue_comments_083064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83064",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1010,7 +1010,7 @@ archive/issue_comments_083065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83065",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1028,7 +1028,7 @@ archive/issue_comments_083066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83066",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1041,16 +1041,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_083067.json:
 ```json
 {
-    "body": "Attachment [trac_8988_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_cmp_fix.patch) by novoselt created at 2010-07-01 16:28:46",
+    "body": "Attachment [trac_8988_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_cmp_fix.patch) by @novoselt created at 2010-07-01 16:28:46",
     "created_at": "2010-07-01T16:28:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83067",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8988_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_cmp_fix.patch) by novoselt created at 2010-07-01 16:28:46
+Attachment [trac_8988_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8988/trac_8988_cmp_fix.patch) by @novoselt created at 2010-07-01 16:28:46
 
 
 
@@ -1064,7 +1064,7 @@ archive/issue_comments_083068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83068",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1082,7 +1082,7 @@ archive/issue_comments_083069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83069",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1100,7 +1100,7 @@ archive/issue_comments_083070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83070",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1118,7 +1118,7 @@ archive/issue_comments_083071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83071",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1136,7 +1136,7 @@ archive/issue_comments_083072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83072",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1154,7 +1154,7 @@ archive/issue_comments_083073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83073",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1172,7 +1172,7 @@ archive/issue_comments_083074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83074",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1208,7 +1208,7 @@ archive/issue_comments_083076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83076",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1230,7 +1230,7 @@ archive/issue_comments_083077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83077",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1248,7 +1248,7 @@ archive/issue_comments_083078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8988#issuecomment-83078",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

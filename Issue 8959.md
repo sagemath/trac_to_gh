@@ -3,7 +3,7 @@
 archive/issues_008959.json:
 ```json
 {
-    "body": "Assignee: itolkov, jason\n\nCC:  was timdumol mhampton\n\nThe layout argument of an interact should also accept a string, maybe a string in the format of either standard python formats (i.e., \"<table><tr><td>{a}</td></tr></table>\"), or using the simple template classes that come with python (i.e., \"<table><tr><td>$a</td></tr></table>\").  Whichever convention is chosen, the string is given the dictionary of {'variable name': 'html for variable control'}, or maybe {'variable name': {'label': HTML label, 'control': 'html for control'}}, so you could do \"<td>{a.label}</td><td>{a.control}</td>\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8959\n\n",
+    "body": "Assignee: itolkov, jason\n\nCC:  @williamstein @TimDumol mhampton\n\nThe layout argument of an interact should also accept a string, maybe a string in the format of either standard python formats (i.e., \"<table><tr><td>{a}</td></tr></table>\"), or using the simple template classes that come with python (i.e., \"<table><tr><td>$a</td></tr></table>\").  Whichever convention is chosen, the string is given the dictionary of {'variable name': 'html for variable control'}, or maybe {'variable name': {'label': HTML label, 'control': 'html for control'}}, so you could do \"<td>{a.label}</td><td>{a.control}</td>\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8959\n\n",
     "created_at": "2010-05-13T09:05:55Z",
     "labels": [
         "interact",
@@ -14,12 +14,12 @@ archive/issues_008959.json:
     "title": "interact layouts with arbitrary html",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8959",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: itolkov, jason
 
-CC:  was timdumol mhampton
+CC:  @williamstein @TimDumol mhampton
 
 The layout argument of an interact should also accept a string, maybe a string in the format of either standard python formats (i.e., "<table><tr><td>{a}</td></tr></table>"), or using the simple template classes that come with python (i.e., "<table><tr><td>$a</td></tr></table>").  Whichever convention is chosen, the string is given the dictionary of {'variable name': 'html for variable control'}, or maybe {'variable name': {'label': HTML label, 'control': 'html for control'}}, so you could do "<td>{a.label}</td><td>{a.control}</td>".
 
@@ -39,7 +39,7 @@ archive/issue_comments_082577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82577",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_082578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82578",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -92,16 +92,16 @@ def plot_example(f=sin(x^2),r=range_slider(-5,5,step_size=1/4,default=(-3,3)),
 archive/issue_comments_082579.json:
 ```json
 {
-    "body": "Attachment [Interact Layouts.png](tarball://root/attachments/some-uuid/ticket8959/Interact Layouts.png) by jason created at 2010-05-14 03:23:28",
+    "body": "Attachment [Interact Layouts.png](tarball://root/attachments/some-uuid/ticket8959/Interact Layouts.png) by @jasongrout created at 2010-05-14 03:23:28",
     "created_at": "2010-05-14T03:23:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82579",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [Interact Layouts.png](tarball://root/attachments/some-uuid/ticket8959/Interact Layouts.png) by jason created at 2010-05-14 03:23:28
+Attachment [Interact Layouts.png](tarball://root/attachments/some-uuid/ticket8959/Interact Layouts.png) by @jasongrout created at 2010-05-14 03:23:28
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_082580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82580",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_082581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82581",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_082582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82582",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -170,16 +170,16 @@ Changing status from new to needs_review.
 archive/issue_comments_082583.json:
 ```json
 {
-    "body": "Attachment [trac-8959-interact-layout-align.patch](tarball://root/attachments/some-uuid/ticket8959/trac-8959-interact-layout-align.patch) by jason created at 2010-05-14 07:15:15\n\nThis patch depends on #7379 and extends the functionality there.",
+    "body": "Attachment [trac-8959-interact-layout-align.patch](tarball://root/attachments/some-uuid/ticket8959/trac-8959-interact-layout-align.patch) by @jasongrout created at 2010-05-14 07:15:15\n\nThis patch depends on #7379 and extends the functionality there.",
     "created_at": "2010-05-14T07:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82583",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8959-interact-layout-align.patch](tarball://root/attachments/some-uuid/ticket8959/trac-8959-interact-layout-align.patch) by jason created at 2010-05-14 07:15:15
+Attachment [trac-8959-interact-layout-align.patch](tarball://root/attachments/some-uuid/ticket8959/trac-8959-interact-layout-align.patch) by @jasongrout created at 2010-05-14 07:15:15
 
 This patch depends on #7379 and extends the functionality there.
 
@@ -195,7 +195,7 @@ archive/issue_comments_082584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82584",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -208,16 +208,16 @@ apply on top of previous patches
 archive/issue_comments_082585.json:
 ```json
 {
-    "body": "Attachment [trac-8959-handle-update-button.patch](tarball://root/attachments/some-uuid/ticket8959/trac-8959-handle-update-button.patch) by jason created at 2010-05-16 04:48:16\n\nThe handle-update-button patch takes care of the auto_update problem mhampton pointed out on #7379.  At least, I think it does; the feature seems to work.  I don't know how to doctest the notebook after I've done \"sage -python setup.py develop\" to work on notebook files.  When I try to run sage -t, there's just an error about importing jsmath.",
+    "body": "Attachment [trac-8959-handle-update-button.patch](tarball://root/attachments/some-uuid/ticket8959/trac-8959-handle-update-button.patch) by @jasongrout created at 2010-05-16 04:48:16\n\nThe handle-update-button patch takes care of the auto_update problem mhampton pointed out on #7379.  At least, I think it does; the feature seems to work.  I don't know how to doctest the notebook after I've done \"sage -python setup.py develop\" to work on notebook files.  When I try to run sage -t, there's just an error about importing jsmath.",
     "created_at": "2010-05-16T04:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82585",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8959-handle-update-button.patch](tarball://root/attachments/some-uuid/ticket8959/trac-8959-handle-update-button.patch) by jason created at 2010-05-16 04:48:16
+Attachment [trac-8959-handle-update-button.patch](tarball://root/attachments/some-uuid/ticket8959/trac-8959-handle-update-button.patch) by @jasongrout created at 2010-05-16 04:48:16
 
 The handle-update-button patch takes care of the auto_update problem mhampton pointed out on #7379.  At least, I think it does; the feature seems to work.  I don't know how to doctest the notebook after I've done "sage -python setup.py develop" to work on notebook files.  When I try to run sage -t, there's just an error about importing jsmath.
 
@@ -293,7 +293,7 @@ archive/issue_comments_082589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82589",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

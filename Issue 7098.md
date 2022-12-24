@@ -3,7 +3,7 @@
 archive/issues_007098.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason mvngu wdj\n\nThere are a few helper functions which are undocumented in calculus/calculus.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7098\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout mvngu @wdjoyner\n\nThere are a few helper functions which are undocumented in calculus/calculus.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7098\n\n",
     "created_at": "2009-10-02T16:14:25Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_007098.json:
     "title": "Bring calculus.py to full coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7098",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason mvngu wdj
+CC:  @jasongrout mvngu @wdjoyner
 
 There are a few helper functions which are undocumented in calculus/calculus.py.
 
@@ -39,7 +39,7 @@ archive/issue_comments_058738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7098#issuecomment-58738",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -52,16 +52,16 @@ Based on 4.1.2.alpha4
 archive/issue_comments_058739.json:
 ```json
 {
-    "body": "Attachment [calculus-100.patch](tarball://root/attachments/some-uuid/ticket7098/calculus-100.patch) by kcrisman created at 2009-10-02 16:15:26",
+    "body": "Attachment [calculus-100.patch](tarball://root/attachments/some-uuid/ticket7098/calculus-100.patch) by @kcrisman created at 2009-10-02 16:15:26",
     "created_at": "2009-10-02T16:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7098#issuecomment-58739",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [calculus-100.patch](tarball://root/attachments/some-uuid/ticket7098/calculus-100.patch) by kcrisman created at 2009-10-02 16:15:26
+Attachment [calculus-100.patch](tarball://root/attachments/some-uuid/ticket7098/calculus-100.patch) by @kcrisman created at 2009-10-02 16:15:26
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_058740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7098#issuecomment-58740",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_058741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7098#issuecomment-58741",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

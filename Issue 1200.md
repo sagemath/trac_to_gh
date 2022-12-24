@@ -14,7 +14,7 @@ archive/issues_001200.json:
     "title": "[with patch] replace \\em into \\emph everywhere",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1200",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tba

@@ -3,7 +3,7 @@
 archive/issues_006949.json:
 ```json
 {
-    "body": "CC:  jason\n\nMatt Riesler wrote on sage-support:\n\n\n```\nIs it possible to have max behave as you would expect with a symbolic\nexpression, i.e. wait until you evaluate it or restrict the domain  to\ncheck what is the maximum of the two or more values.\n```\n\n\nThen kcrisman:\n\n\n```\nMight there be a way to do something that doesn't conflict with the\nbuiltin max function in the same way as the (nearly reviewed) #3587\nseems to avoid conflict with the builtin sum function?  This would be\npretty useful, as currently:\n\nsage: var('x,y')\n(x, y)\nsage: max(x,y)\nx\nsage: f(x)=1+x;g(x)=2-x\nsage: max(f,g)\nx |--> x + 1\n\nwhich last result is... debatable.\n```\n\n\nHere is a the thread, which has a simple minded implementation for symbolic max:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/aead15de586984d8\n\n\nWe should make sure the symbolic implementations don't slow down the current builtin python `max()` and `min()` too much. If they do, these functions should still be available under a different name.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6949\n\n",
+    "body": "CC:  @jasongrout\n\nMatt Riesler wrote on sage-support:\n\n\n```\nIs it possible to have max behave as you would expect with a symbolic\nexpression, i.e. wait until you evaluate it or restrict the domain  to\ncheck what is the maximum of the two or more values.\n```\n\n\nThen kcrisman:\n\n\n```\nMight there be a way to do something that doesn't conflict with the\nbuiltin max function in the same way as the (nearly reviewed) #3587\nseems to avoid conflict with the builtin sum function?  This would be\npretty useful, as currently:\n\nsage: var('x,y')\n(x, y)\nsage: max(x,y)\nx\nsage: f(x)=1+x;g(x)=2-x\nsage: max(f,g)\nx |--> x + 1\n\nwhich last result is... debatable.\n```\n\n\nHere is a the thread, which has a simple minded implementation for symbolic max:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/aead15de586984d8\n\n\nWe should make sure the symbolic implementations don't slow down the current builtin python `max()` and `min()` too much. If they do, these functions should still be available under a different name.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6949\n\n",
     "created_at": "2009-09-17T14:04:24Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006949.json:
     "title": "add symbolic max and min functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6949",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-CC:  jason
+CC:  @jasongrout
 
 Matt Riesler wrote on sage-support:
 
@@ -73,7 +73,7 @@ archive/issue_comments_057455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6949#issuecomment-57455",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_057456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6949#issuecomment-57456",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_057457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6949#issuecomment-57457",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -124,16 +124,16 @@ The symbolic versions are significantly slower than Python's builtin `min()` and
 archive/issue_comments_057458.json:
 ```json
 {
-    "body": "Attachment [trac_6949-symbolic_min_max.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.patch) by burcin created at 2010-04-06 15:24:18",
+    "body": "Attachment [trac_6949-symbolic_min_max.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.patch) by @burcin created at 2010-04-06 15:24:18",
     "created_at": "2010-04-06T15:24:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6949#issuecomment-57458",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6949-symbolic_min_max.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.patch) by burcin created at 2010-04-06 15:24:18
+Attachment [trac_6949-symbolic_min_max.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.patch) by @burcin created at 2010-04-06 15:24:18
 
 
 
@@ -142,16 +142,16 @@ Attachment [trac_6949-symbolic_min_max.patch](tarball://root/attachments/some-uu
 archive/issue_comments_057459.json:
 ```json
 {
-    "body": "Set assignee to burcin.",
+    "body": "Set assignee to @burcin.",
     "created_at": "2010-04-06T15:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6949#issuecomment-57459",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Set assignee to burcin.
+Set assignee to @burcin.
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_057460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6949#issuecomment-57460",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_057463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6949#issuecomment-57463",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_057464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6949#issuecomment-57464",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -282,16 +282,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_057465.json:
 ```json
 {
-    "body": "Attachment [trac_6949-symbolic_min_max.take2.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.take2.patch) by burcin created at 2010-05-05 04:23:30\n\nThanks for the review.\n\nThe new patch attachment:trac_6949-symbolic_min_max.take2.patch replaces the previous one, and implements `_evalf_()` methods for numeric evaluation. I also created a base class with the common code from `__call__()` and `_eval_()` methods.\n\nCan you take another look?",
+    "body": "Attachment [trac_6949-symbolic_min_max.take2.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.take2.patch) by @burcin created at 2010-05-05 04:23:30\n\nThanks for the review.\n\nThe new patch attachment:trac_6949-symbolic_min_max.take2.patch replaces the previous one, and implements `_evalf_()` methods for numeric evaluation. I also created a base class with the common code from `__call__()` and `_eval_()` methods.\n\nCan you take another look?",
     "created_at": "2010-05-05T04:23:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6949#issuecomment-57465",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6949-symbolic_min_max.take2.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.take2.patch) by burcin created at 2010-05-05 04:23:30
+Attachment [trac_6949-symbolic_min_max.take2.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.take2.patch) by @burcin created at 2010-05-05 04:23:30
 
 Thanks for the review.
 
@@ -387,16 +387,16 @@ I don't know if the problem is with integrate or max_symbolic.
 archive/issue_comments_057467.json:
 ```json
 {
-    "body": "Attachment [trac_6949-symbolic_min_max.take3.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.take3.patch) by burcin created at 2010-05-05 15:28:49\n\napply only this patch",
+    "body": "Attachment [trac_6949-symbolic_min_max.take3.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.take3.patch) by @burcin created at 2010-05-05 15:28:49\n\napply only this patch",
     "created_at": "2010-05-05T15:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6949#issuecomment-57467",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6949-symbolic_min_max.take3.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.take3.patch) by burcin created at 2010-05-05 15:28:49
+Attachment [trac_6949-symbolic_min_max.take3.patch](tarball://root/attachments/some-uuid/ticket6949/trac_6949-symbolic_min_max.take3.patch) by @burcin created at 2010-05-05 15:28:49
 
 apply only this patch
 
@@ -412,7 +412,7 @@ archive/issue_comments_057468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6949#issuecomment-57468",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_057473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6949#issuecomment-57473",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

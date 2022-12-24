@@ -14,7 +14,7 @@ archive/issues_004015.json:
     "title": "[with patch, needs review] add docs to tests/benchmark.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4015",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: mabshoff
@@ -92,16 +92,16 @@ Merged in Sage 3.1.2.alpha3
 archive/issue_comments_028966.json:
 ```json
 {
-    "body": "Attachment [trac_4015.2.patch](tarball://root/attachments/some-uuid/ticket4015/trac_4015.2.patch) by rlm created at 2008-08-31 07:36:56\n\nNote that in the second patch, calling the string representation of these functions also actually runs the test code.",
+    "body": "Attachment [trac_4015.2.patch](tarball://root/attachments/some-uuid/ticket4015/trac_4015.2.patch) by @rlmill created at 2008-08-31 07:36:56\n\nNote that in the second patch, calling the string representation of these functions also actually runs the test code.",
     "created_at": "2008-08-31T07:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4015#issuecomment-28966",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_4015.2.patch](tarball://root/attachments/some-uuid/ticket4015/trac_4015.2.patch) by rlm created at 2008-08-31 07:36:56
+Attachment [trac_4015.2.patch](tarball://root/attachments/some-uuid/ticket4015/trac_4015.2.patch) by @rlmill created at 2008-08-31 07:36:56
 
 Note that in the second patch, calling the string representation of these functions also actually runs the test code.
 

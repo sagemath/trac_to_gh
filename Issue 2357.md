@@ -3,7 +3,7 @@
 archive/issues_002357.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2357\n\n",
+    "body": "Assignee: @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2357\n\n",
     "created_at": "2008-03-01T04:18:07Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_002357.json:
     "title": "make FLINT the default for ZZ['x']",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2357",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2357
 archive/issue_comments_015874.json:
 ```json
 {
-    "body": "Changing assignee from malb to boothby.",
+    "body": "Changing assignee from @malb to boothby.",
     "created_at": "2008-06-03T14:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15874",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from malb to boothby.
+Changing assignee from @malb to boothby.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_015875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15875",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_015876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15876",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -86,16 +86,16 @@ change ZZ[x] backend to FLINT
 archive/issue_comments_015877.json:
 ```json
 {
-    "body": "Attachment [trac2357_make_flint_default_for_ZZx.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357_make_flint_default_for_ZZx.patch) by burcin created at 2008-06-17 19:37:29\n\nattachment:trac2357_make_flint_default_for_ZZx.patch replaces `sage/rings/polynomial/polynomial_integer_dense_ntl.*` in the tree with `sage/rings/polynomial/polynomial_integer_dense_flint.*` and makes FLINT the default backend for ZZ[x] arithmetic.\n\nFLINT 1.0.10 is required for the patch, you can get the spkg here:\n\nhttp://sage.math.washington.edu/home/burcin/spkg/flint-1.0.10.spkg",
+    "body": "Attachment [trac2357_make_flint_default_for_ZZx.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357_make_flint_default_for_ZZx.patch) by @burcin created at 2008-06-17 19:37:29\n\nattachment:trac2357_make_flint_default_for_ZZx.patch replaces `sage/rings/polynomial/polynomial_integer_dense_ntl.*` in the tree with `sage/rings/polynomial/polynomial_integer_dense_flint.*` and makes FLINT the default backend for ZZ[x] arithmetic.\n\nFLINT 1.0.10 is required for the patch, you can get the spkg here:\n\nhttp://sage.math.washington.edu/home/burcin/spkg/flint-1.0.10.spkg",
     "created_at": "2008-06-17T19:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15877",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac2357_make_flint_default_for_ZZx.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357_make_flint_default_for_ZZx.patch) by burcin created at 2008-06-17 19:37:29
+Attachment [trac2357_make_flint_default_for_ZZx.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357_make_flint_default_for_ZZx.patch) by @burcin created at 2008-06-17 19:37:29
 
 attachment:trac2357_make_flint_default_for_ZZx.patch replaces `sage/rings/polynomial/polynomial_integer_dense_ntl.*` in the tree with `sage/rings/polynomial/polynomial_integer_dense_flint.*` and makes FLINT the default backend for ZZ[x] arithmetic.
 
@@ -115,7 +115,7 @@ archive/issue_comments_015878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15878",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_015879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15879",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -146,16 +146,16 @@ Changing status from new to assigned.
 archive/issue_comments_015880.json:
 ```json
 {
-    "body": "Changing assignee from boothby to burcin.",
+    "body": "Changing assignee from boothby to @burcin.",
     "created_at": "2008-06-17T19:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15880",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from boothby to burcin.
+Changing assignee from boothby to @burcin.
 
 
 
@@ -169,7 +169,7 @@ archive/issue_comments_015881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15881",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_015882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15882",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_015883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15883",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_015885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15885",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_015888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15888",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_015892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15892",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -412,16 +412,16 @@ revised patch adding FLINT wrappers for ZZ[x]
 archive/issue_comments_015893.json:
 ```json
 {
-    "body": "Attachment [trac2357_make_flint_default_for_ZZx-v2.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357_make_flint_default_for_ZZx-v2.patch) by burcin created at 2008-06-30 10:05:35\n\nattachment:trac2357_make_flint_default_for_ZZx-v2.patch fixes some problems with my previous patch. This version supersedes the older files.\n\nChanges:\n- Add signal wrapper macros in various places to allow the user to interrupt the computation.\n- Handle division by zero in `__floordiv__`, which led to a crash with the previous patch.",
+    "body": "Attachment [trac2357_make_flint_default_for_ZZx-v2.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357_make_flint_default_for_ZZx-v2.patch) by @burcin created at 2008-06-30 10:05:35\n\nattachment:trac2357_make_flint_default_for_ZZx-v2.patch fixes some problems with my previous patch. This version supersedes the older files.\n\nChanges:\n- Add signal wrapper macros in various places to allow the user to interrupt the computation.\n- Handle division by zero in `__floordiv__`, which led to a crash with the previous patch.",
     "created_at": "2008-06-30T10:05:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15893",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac2357_make_flint_default_for_ZZx-v2.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357_make_flint_default_for_ZZx-v2.patch) by burcin created at 2008-06-30 10:05:35
+Attachment [trac2357_make_flint_default_for_ZZx-v2.patch](tarball://root/attachments/some-uuid/ticket2357/trac2357_make_flint_default_for_ZZx-v2.patch) by @burcin created at 2008-06-30 10:05:35
 
 attachment:trac2357_make_flint_default_for_ZZx-v2.patch fixes some problems with my previous patch. This version supersedes the older files.
 
@@ -436,16 +436,16 @@ Changes:
 archive/issue_comments_015894.json:
 ```json
 {
-    "body": "Attachment [trac-2357-pt3.patch](tarball://root/attachments/some-uuid/ticket2357/trac-2357-pt3.patch) by craigcitro created at 2008-07-01 22:51:05\n\napply after burcin's v2 patch and carl's patch",
+    "body": "Attachment [trac-2357-pt3.patch](tarball://root/attachments/some-uuid/ticket2357/trac-2357-pt3.patch) by @craigcitro created at 2008-07-01 22:51:05\n\napply after burcin's v2 patch and carl's patch",
     "created_at": "2008-07-01T22:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15894",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2357-pt3.patch](tarball://root/attachments/some-uuid/ticket2357/trac-2357-pt3.patch) by craigcitro created at 2008-07-01 22:51:05
+Attachment [trac-2357-pt3.patch](tarball://root/attachments/some-uuid/ticket2357/trac-2357-pt3.patch) by @craigcitro created at 2008-07-01 22:51:05
 
 apply after burcin's v2 patch and carl's patch
 
@@ -456,16 +456,16 @@ apply after burcin's v2 patch and carl's patch
 archive/issue_comments_015895.json:
 ```json
 {
-    "body": "Attachment [default-flint-polys.hg](tarball://root/attachments/some-uuid/ticket2357/default-flint-polys.hg) by craigcitro created at 2008-07-01 22:51:24\n\nsingle bundle with all three relevant patches",
+    "body": "Attachment [default-flint-polys.hg](tarball://root/attachments/some-uuid/ticket2357/default-flint-polys.hg) by @craigcitro created at 2008-07-01 22:51:24\n\nsingle bundle with all three relevant patches",
     "created_at": "2008-07-01T22:51:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15895",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [default-flint-polys.hg](tarball://root/attachments/some-uuid/ticket2357/default-flint-polys.hg) by craigcitro created at 2008-07-01 22:51:24
+Attachment [default-flint-polys.hg](tarball://root/attachments/some-uuid/ticket2357/default-flint-polys.hg) by @craigcitro created at 2008-07-01 22:51:24
 
 single bundle with all three relevant patches
 
@@ -481,7 +481,7 @@ archive/issue_comments_015896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15896",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_015897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2357#issuecomment-15897",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

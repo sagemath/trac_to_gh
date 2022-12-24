@@ -3,7 +3,7 @@
 archive/issues_003573.json:
 ```json
 {
-    "body": "Assignee: cswiercz\n\nCC:  robertwb\n\nKeywords: finance, opentick,\n\nopentick is a collection of APIs for obtaining free real-time and historical market data for trading systems and trading platforms. With these APIs, we will enable Sage to be able to stream and manipulate real-time market data.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3573\n\n",
+    "body": "Assignee: @cswiercz\n\nCC:  @robertwb\n\nKeywords: finance, opentick,\n\nopentick is a collection of APIs for obtaining free real-time and historical market data for trading systems and trading platforms. With these APIs, we will enable Sage to be able to stream and manipulate real-time market data.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3573\n\n",
     "created_at": "2008-07-06T21:45:34Z",
     "labels": [
         "finance",
@@ -14,12 +14,12 @@ archive/issues_003573.json:
     "title": "Finance - Implementation of opentick",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3573",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
-Assignee: cswiercz
+Assignee: @cswiercz
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: finance, opentick,
 
@@ -41,7 +41,7 @@ archive/issue_comments_025233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3573#issuecomment-25233",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_025234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3573#issuecomment-25234",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -98,16 +98,16 @@ Michael
 archive/issue_comments_025236.json:
 ```json
 {
-    "body": "Attachment [sage-3573-opentick1.patch](tarball://root/attachments/some-uuid/ticket3573/sage-3573-opentick1.patch) by cswiercz created at 2008-08-28 18:27:20",
+    "body": "Attachment [sage-3573-opentick1.patch](tarball://root/attachments/some-uuid/ticket3573/sage-3573-opentick1.patch) by @cswiercz created at 2008-08-28 18:27:20",
     "created_at": "2008-08-28T18:27:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3573#issuecomment-25236",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [sage-3573-opentick1.patch](tarball://root/attachments/some-uuid/ticket3573/sage-3573-opentick1.patch) by cswiercz created at 2008-08-28 18:27:20
+Attachment [sage-3573-opentick1.patch](tarball://root/attachments/some-uuid/ticket3573/sage-3573-opentick1.patch) by @cswiercz created at 2008-08-28 18:27:20
 
 
 
@@ -116,16 +116,16 @@ Attachment [sage-3573-opentick1.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_025237.json:
 ```json
 {
-    "body": "Attachment [sage-3573-opentick2.patch](tarball://root/attachments/some-uuid/ticket3573/sage-3573-opentick2.patch) by cswiercz created at 2008-08-28 18:27:30",
+    "body": "Attachment [sage-3573-opentick2.patch](tarball://root/attachments/some-uuid/ticket3573/sage-3573-opentick2.patch) by @cswiercz created at 2008-08-28 18:27:30",
     "created_at": "2008-08-28T18:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3573#issuecomment-25237",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [sage-3573-opentick2.patch](tarball://root/attachments/some-uuid/ticket3573/sage-3573-opentick2.patch) by cswiercz created at 2008-08-28 18:27:30
+Attachment [sage-3573-opentick2.patch](tarball://root/attachments/some-uuid/ticket3573/sage-3573-opentick2.patch) by @cswiercz created at 2008-08-28 18:27:30
 
 
 
@@ -139,7 +139,7 @@ archive/issue_comments_025238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3573#issuecomment-25238",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_025239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3573#issuecomment-25239",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_025242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3573#issuecomment-25242",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_025243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3573#issuecomment-25243",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_025244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3573#issuecomment-25244",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_025245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3573#issuecomment-25245",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_025246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3573#issuecomment-25246",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_025247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3573#issuecomment-25247",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_025248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3573",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3573#issuecomment-25248",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

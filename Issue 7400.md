@@ -3,7 +3,7 @@
 archive/issues_007400.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: copy, ElementWrapper\n\nBefore the patch\n\n```\nsage: o1 = ElementWrapper([1], parent=ZZ)\nsage: o2 = copy(o1)\nsage: o2.value[0] = 3; o2\n[3]\nsage: o1\n[3]\n```\n\nAfter the patch\n\n```\nsage: o1 = ElementWrapper([1], parent=ZZ)\nsage: o2 = copy(o1)\nsage: o2.value[0] = 3; o2\n[3]\nsage: o1\n[1]\n```\n\n\nCheers,\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7400\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: copy, ElementWrapper\n\nBefore the patch\n\n```\nsage: o1 = ElementWrapper([1], parent=ZZ)\nsage: o2 = copy(o1)\nsage: o2.value[0] = 3; o2\n[3]\nsage: o1\n[3]\n```\n\nAfter the patch\n\n```\nsage: o1 = ElementWrapper([1], parent=ZZ)\nsage: o2 = copy(o1)\nsage: o2.value[0] = 3; o2\n[3]\nsage: o1\n[1]\n```\n\n\nCheers,\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7400\n\n",
     "created_at": "2009-11-06T09:52:42Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_007400.json:
     "title": "ElementWrapper does not copy the wrapped values when copied",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7400",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -67,7 +67,7 @@ archive/issue_comments_062219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62219",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_062220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62220",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_062221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62221",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -118,16 +118,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_062222.json:
 ```json
 {
-    "body": "Attachment [trac_7400-element_wrapper_copy-fh.patch](tarball://root/attachments/some-uuid/ticket7400/trac_7400-element_wrapper_copy-fh.patch) by hivert created at 2009-11-08 18:27:46",
+    "body": "Attachment [trac_7400-element_wrapper_copy-fh.patch](tarball://root/attachments/some-uuid/ticket7400/trac_7400-element_wrapper_copy-fh.patch) by @hivert created at 2009-11-08 18:27:46",
     "created_at": "2009-11-08T18:27:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62222",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7400-element_wrapper_copy-fh.patch](tarball://root/attachments/some-uuid/ticket7400/trac_7400-element_wrapper_copy-fh.patch) by hivert created at 2009-11-08 18:27:46
+Attachment [trac_7400-element_wrapper_copy-fh.patch](tarball://root/attachments/some-uuid/ticket7400/trac_7400-element_wrapper_copy-fh.patch) by @hivert created at 2009-11-08 18:27:46
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_062223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62223",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_062224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62224",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_062225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62225",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_062226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62226",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_062227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62227",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_062228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62228",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_062229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62229",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_062230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62230",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_062231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62231",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_062232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62232",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_062233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62233",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_062234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62234",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_062235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62235",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_062236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62236",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_062237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62237",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_062238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62238",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -522,16 +522,16 @@ I just did some minor editing of the doc on the Sage-Combinat patch server. Plea
 archive/issue_comments_062239.json:
 ```json
 {
-    "body": "Attachment [trac_7400-element_copy_fh.patch](tarball://root/attachments/some-uuid/ticket7400/trac_7400-element_copy_fh.patch) by hivert created at 2009-12-19 00:32:16",
+    "body": "Attachment [trac_7400-element_copy_fh.patch](tarball://root/attachments/some-uuid/ticket7400/trac_7400-element_copy_fh.patch) by @hivert created at 2009-12-19 00:32:16",
     "created_at": "2009-12-19T00:32:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62239",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7400-element_copy_fh.patch](tarball://root/attachments/some-uuid/ticket7400/trac_7400-element_copy_fh.patch) by hivert created at 2009-12-19 00:32:16
+Attachment [trac_7400-element_copy_fh.patch](tarball://root/attachments/some-uuid/ticket7400/trac_7400-element_copy_fh.patch) by @hivert created at 2009-12-19 00:32:16
 
 
 
@@ -545,7 +545,7 @@ archive/issue_comments_062240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62240",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -568,7 +568,7 @@ archive/issue_comments_062241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62241",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -586,7 +586,7 @@ archive/issue_comments_062242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7400#issuecomment-62242",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

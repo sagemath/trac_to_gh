@@ -14,7 +14,7 @@ archive/issues_004871.json:
     "title": "latex typesetting using dvipng is broken on OS X unless unless one uses the dvipng spkg; also the optional filename argument is broken if the file isn't in the current directory; finally, there area  lot of dangerous tmp files created in the current directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4871",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty

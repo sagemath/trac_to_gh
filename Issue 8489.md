@@ -3,7 +3,7 @@
 archive/issues_008489.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  ddrake zimmerma\n\nKeywords: sagetex, doctest\n\nThe attached patch for sagetex adds a new sageexample environment for sagetex:\n\n\n```\n\\begin{sageexample}\n  sage: 1+1\n  2\n  sage: x^3\n  x^3\n\\end{sageexample}\n```\n\n\nThe (ultimate) goal is to allow for straightforward copy paste of\npieces of sage doctests into one's latex document. See the attached\npdf (the sources of which are included in the patch) for details.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8489\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @dandrake @zimmermann6\n\nKeywords: sagetex, doctest\n\nThe attached patch for sagetex adds a new sageexample environment for sagetex:\n\n\n```\n\\begin{sageexample}\n  sage: 1+1\n  2\n  sage: x^3\n  x^3\n\\end{sageexample}\n```\n\n\nThe (ultimate) goal is to allow for straightforward copy paste of\npieces of sage doctests into one's latex document. See the attached\npdf (the sources of which are included in the patch) for details.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8489\n\n",
     "created_at": "2010-03-10T15:24:32Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008489.json:
     "title": "New `sageexample` environment for sagetex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8489",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: mvngu
 
-CC:  ddrake zimmerma
+CC:  @dandrake @zimmermann6
 
 Keywords: sagetex, doctest
 
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8489
 archive/issue_comments_076538.json:
 ```json
 {
-    "body": "Attachment [trac_8489-sagetex_sageexample-nt.patch](tarball://root/attachments/some-uuid/ticket8489/trac_8489-sagetex_sageexample-nt.patch) by nthiery created at 2010-03-10 15:25:44",
+    "body": "Attachment [trac_8489-sagetex_sageexample-nt.patch](tarball://root/attachments/some-uuid/ticket8489/trac_8489-sagetex_sageexample-nt.patch) by @nthiery created at 2010-03-10 15:25:44",
     "created_at": "2010-03-10T15:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76538",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8489-sagetex_sageexample-nt.patch](tarball://root/attachments/some-uuid/ticket8489/trac_8489-sagetex_sageexample-nt.patch) by nthiery created at 2010-03-10 15:25:44
+Attachment [trac_8489-sagetex_sageexample-nt.patch](tarball://root/attachments/some-uuid/ticket8489/trac_8489-sagetex_sageexample-nt.patch) by @nthiery created at 2010-03-10 15:25:44
 
 
 
@@ -71,16 +71,16 @@ Attachment [trac_8489-sagetex_sageexample-nt.patch](tarball://root/attachments/s
 archive/issue_comments_076539.json:
 ```json
 {
-    "body": "Attachment [example-sageexample.pdf](tarball://root/attachments/some-uuid/ticket8489/example-sageexample.pdf) by nthiery created at 2010-03-10 15:27:06",
+    "body": "Attachment [example-sageexample.pdf](tarball://root/attachments/some-uuid/ticket8489/example-sageexample.pdf) by @nthiery created at 2010-03-10 15:27:06",
     "created_at": "2010-03-10T15:27:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76539",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [example-sageexample.pdf](tarball://root/attachments/some-uuid/ticket8489/example-sageexample.pdf) by nthiery created at 2010-03-10 15:27:06
+Attachment [example-sageexample.pdf](tarball://root/attachments/some-uuid/ticket8489/example-sageexample.pdf) by @nthiery created at 2010-03-10 15:27:06
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_076540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76540",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -107,16 +107,16 @@ Changing status from new to needs_review.
 archive/issue_comments_076541.json:
 ```json
 {
-    "body": "Attachment [sagetex-2.2.3.p0.spkg](tarball://root/attachments/some-uuid/ticket8489/sagetex-2.2.3.p0.spkg) by nthiery created at 2010-03-10 15:41:28\n\nClone of the current spkg, with patch applied, but version number not bumped up",
+    "body": "Attachment [sagetex-2.2.3.p0.spkg](tarball://root/attachments/some-uuid/ticket8489/sagetex-2.2.3.p0.spkg) by @nthiery created at 2010-03-10 15:41:28\n\nClone of the current spkg, with patch applied, but version number not bumped up",
     "created_at": "2010-03-10T15:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76541",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [sagetex-2.2.3.p0.spkg](tarball://root/attachments/some-uuid/ticket8489/sagetex-2.2.3.p0.spkg) by nthiery created at 2010-03-10 15:41:28
+Attachment [sagetex-2.2.3.p0.spkg](tarball://root/attachments/some-uuid/ticket8489/sagetex-2.2.3.p0.spkg) by @nthiery created at 2010-03-10 15:41:28
 
 Clone of the current spkg, with patch applied, but version number not bumped up
 
@@ -132,7 +132,7 @@ archive/issue_comments_076542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76542",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_076543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76543",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_076544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76544",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_076545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76545",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_076546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76546",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_076547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76547",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -248,16 +248,16 @@ Yeah, just reusing my_file.sage looked cool, and worked on trivial examples, but
 archive/issue_comments_076548.json:
 ```json
 {
-    "body": "Attachment [doctest-spacing-nt.patch](tarball://root/attachments/some-uuid/ticket8489/doctest-spacing-nt.patch) by nthiery created at 2010-03-17 23:34:17",
+    "body": "Attachment [doctest-spacing-nt.patch](tarball://root/attachments/some-uuid/ticket8489/doctest-spacing-nt.patch) by @nthiery created at 2010-03-17 23:34:17",
     "created_at": "2010-03-17T23:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76548",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [doctest-spacing-nt.patch](tarball://root/attachments/some-uuid/ticket8489/doctest-spacing-nt.patch) by nthiery created at 2010-03-17 23:34:17
+Attachment [doctest-spacing-nt.patch](tarball://root/attachments/some-uuid/ticket8489/doctest-spacing-nt.patch) by @nthiery created at 2010-03-17 23:34:17
 
 
 
@@ -266,16 +266,16 @@ Attachment [doctest-spacing-nt.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_076549.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to nthiery.",
+    "body": "Changing assignee from mvngu to @nthiery.",
     "created_at": "2010-03-17T23:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76549",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Changing assignee from mvngu to nthiery.
+Changing assignee from mvngu to @nthiery.
 
 
 
@@ -289,7 +289,7 @@ archive/issue_comments_076550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76550",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_076551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76551",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_076552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76552",
-    "user": "mmeulien"
+    "user": "@orontee"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_076553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76553",
-    "user": "mmeulien"
+    "user": "@orontee"
 }
 ```
 
@@ -379,16 +379,16 @@ Example of quotes changed to backquotes in PDF
 archive/issue_comments_076554.json:
 ```json
 {
-    "body": "Attachment [test.pdf](tarball://root/attachments/some-uuid/ticket8489/test.pdf) by jason created at 2010-04-15 02:28:57\n\nddrake: what do you say about the last comment about quotes being changed?",
+    "body": "Attachment [test.pdf](tarball://root/attachments/some-uuid/ticket8489/test.pdf) by @jasongrout created at 2010-04-15 02:28:57\n\nddrake: what do you say about the last comment about quotes being changed?",
     "created_at": "2010-04-15T02:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76554",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [test.pdf](tarball://root/attachments/some-uuid/ticket8489/test.pdf) by jason created at 2010-04-15 02:28:57
+Attachment [test.pdf](tarball://root/attachments/some-uuid/ticket8489/test.pdf) by @jasongrout created at 2010-04-15 02:28:57
 
 ddrake: what do you say about the last comment about quotes being changed?
 
@@ -404,7 +404,7 @@ archive/issue_comments_076555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76555",
-    "user": "mmeulien"
+    "user": "@orontee"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_076556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76556",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_076557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76557",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -478,7 +478,7 @@ archive/issue_comments_076558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76558",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_076559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76559",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -514,7 +514,7 @@ archive/issue_comments_076560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76560",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_076561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76561",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002893.json:
     "title": "[with patch; needs review] notebook -- make it explicitly clear which systems are optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2893",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2893
 archive/issue_comments_019900.json:
 ```json
 {
-    "body": "Attachment [sage-2893.patch](tarball://root/attachments/some-uuid/ticket2893/sage-2893.patch) by was created at 2008-04-12 03:29:06",
+    "body": "Attachment [sage-2893.patch](tarball://root/attachments/some-uuid/ticket2893/sage-2893.patch) by @williamstein created at 2008-04-12 03:29:06",
     "created_at": "2008-04-12T03:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2893#issuecomment-19900",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2893.patch](tarball://root/attachments/some-uuid/ticket2893/sage-2893.patch) by was created at 2008-04-12 03:29:06
+Attachment [sage-2893.patch](tarball://root/attachments/some-uuid/ticket2893/sage-2893.patch) by @williamstein created at 2008-04-12 03:29:06
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_019901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2893#issuecomment-19901",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

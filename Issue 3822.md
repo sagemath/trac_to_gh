@@ -3,7 +3,7 @@
 archive/issues_003822.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\n> Unfortunately, as soon as the range of values gets at all large --\n> e.g., a few thousand, -- this causes *major* problems,\n> which lead to the browser spitting out errors, etc.  Basically you\n> exceed hard limits.\n\nThe problem is that something like\n\n```\nslider(1, 10^6)\n```\n\ngenerates 10<sup>6</sup> values, which get sent back to the user. Now, there is no reason to use 10<sup>6</sup> values when the maximum number of accessible values (via manipulating the slider) is 500.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3822\n\n",
+    "body": "Assignee: @itolkov\n\n> Unfortunately, as soon as the range of values gets at all large --\n> e.g., a few thousand, -- this causes *major* problems,\n> which lead to the browser spitting out errors, etc.  Basically you\n> exceed hard limits.\n\nThe problem is that something like\n\n```\nslider(1, 10^6)\n```\n\ngenerates 10<sup>6</sup> values, which get sent back to the user. Now, there is no reason to use 10<sup>6</sup> values when the maximum number of accessible values (via manipulating the slider) is 500.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3822\n\n",
     "created_at": "2008-08-12T20:20:22Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_003822.json:
     "title": "Interact - slider breaks defaulting on too many values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3822",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
 > Unfortunately, as soon as the range of values gets at all large --
 > e.g., a few thousand, -- this causes *major* problems,
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3822
 archive/issue_comments_027184.json:
 ```json
 {
-    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3822/sage.patch) by itolkov created at 2008-08-12 20:31:08\n\n1. Changed default step size from 1 to such that there are 500 steps\n   2. `(a, b)` is now equivalent to `slider(a, b)`",
+    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3822/sage.patch) by @itolkov created at 2008-08-12 20:31:08\n\n1. Changed default step size from 1 to such that there are 500 steps\n   2. `(a, b)` is now equivalent to `slider(a, b)`",
     "created_at": "2008-08-12T20:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27184",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
-Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3822/sage.patch) by itolkov created at 2008-08-12 20:31:08
+Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3822/sage.patch) by @itolkov created at 2008-08-12 20:31:08
 
 1. Changed default step size from 1 to such that there are 500 steps
    2. `(a, b)` is now equivalent to `slider(a, b)`
@@ -70,7 +70,7 @@ archive/issue_comments_027185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27185",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing component from notebook to interact.
 archive/issue_comments_027187.json:
 ```json
 {
-    "body": "Attachment [sage2.2.patch](tarball://root/attachments/some-uuid/ticket3822/sage2.2.patch) by itolkov created at 2008-08-14 19:06:58\n\nApply after sage.patch",
+    "body": "Attachment [sage2.2.patch](tarball://root/attachments/some-uuid/ticket3822/sage2.2.patch) by @itolkov created at 2008-08-14 19:06:58\n\nApply after sage.patch",
     "created_at": "2008-08-14T19:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27187",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
-Attachment [sage2.2.patch](tarball://root/attachments/some-uuid/ticket3822/sage2.2.patch) by itolkov created at 2008-08-14 19:06:58
+Attachment [sage2.2.patch](tarball://root/attachments/some-uuid/ticket3822/sage2.2.patch) by @itolkov created at 2008-08-14 19:06:58
 
 Apply after sage.patch
 
@@ -137,7 +137,7 @@ archive/issue_comments_027188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27188",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_027189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27189",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -177,16 +177,16 @@ def _(n=[1..10^5]):
 archive/issue_comments_027190.json:
 ```json
 {
-    "body": "Attachment [sage-3822.patch](tarball://root/attachments/some-uuid/ticket3822/sage-3822.patch) by was created at 2008-08-15 10:02:34",
+    "body": "Attachment [sage-3822.patch](tarball://root/attachments/some-uuid/ticket3822/sage-3822.patch) by @williamstein created at 2008-08-15 10:02:34",
     "created_at": "2008-08-15T10:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27190",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3822.patch](tarball://root/attachments/some-uuid/ticket3822/sage-3822.patch) by was created at 2008-08-15 10:02:34
+Attachment [sage-3822.patch](tarball://root/attachments/some-uuid/ticket3822/sage-3822.patch) by @williamstein created at 2008-08-15 10:02:34
 
 
 
@@ -200,7 +200,7 @@ archive/issue_comments_027191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27191",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

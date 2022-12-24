@@ -14,7 +14,7 @@ archive/issues_007290.json:
     "title": "Dual method for linear programs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7290",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
@@ -41,7 +41,7 @@ archive/issue_comments_060694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7290#issuecomment-60694",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_060695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7290#issuecomment-60695",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_060696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7290#issuecomment-60696",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

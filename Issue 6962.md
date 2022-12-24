@@ -3,7 +3,7 @@
 archive/issues_006962.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nAdds the functions :\n* DiGraph.feedback_arc_set\n* DiGraph.feedback_vertex_set\n\nYou will find a full description of the problem in the docstrings, or there :\n* http://en.wikipedia.org/wiki/Feedback_vertex_set\n* http://en.wikipedia.org/wiki/Feedback_arc_set\n\nThe functions use Linear Programming, which needs one of the two optional packages GLPK \n\n``` \nsage: install_package('cbc')\n```\n\nor CBC \n\n```\nsage: install_package('glpk') \n```\n\ninstalled. You will find a helpful documentation about the construction of the Linear Program in the docstring.\n\nOne of the docstrings uses the function min_vertex_cover from #6680.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6962\n\n",
+    "body": "Assignee: @rlmill\n\nAdds the functions :\n* DiGraph.feedback_arc_set\n* DiGraph.feedback_vertex_set\n\nYou will find a full description of the problem in the docstrings, or there :\n* http://en.wikipedia.org/wiki/Feedback_vertex_set\n* http://en.wikipedia.org/wiki/Feedback_arc_set\n\nThe functions use Linear Programming, which needs one of the two optional packages GLPK \n\n``` \nsage: install_package('cbc')\n```\n\nor CBC \n\n```\nsage: install_package('glpk') \n```\n\ninstalled. You will find a helpful documentation about the construction of the Linear Program in the docstring.\n\nOne of the docstrings uses the function min_vertex_cover from #6680.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6962\n\n",
     "created_at": "2009-09-19T18:45:45Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_006962.json:
     "title": "[with patch, needs review] Feedback vertex set, Feedback arc set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6962",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Adds the functions :
 * DiGraph.feedback_arc_set
@@ -61,7 +61,7 @@ archive/issue_comments_057598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57598",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_057599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57599",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_057600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57600",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_057601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57601",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_057602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57602",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_057603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57603",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_057604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57604",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_057605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57605",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_057606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57606",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -277,16 +277,16 @@ Updated !
 archive/issue_comments_057607.json:
 ```json
 {
-    "body": "Attachment [trac_6962-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket6962/trac_6962-doctest-fixes.patch) by rlm created at 2009-12-17 21:51:06",
+    "body": "Attachment [trac_6962-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket6962/trac_6962-doctest-fixes.patch) by @rlmill created at 2009-12-17 21:51:06",
     "created_at": "2009-12-17T21:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57607",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6962-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket6962/trac_6962-doctest-fixes.patch) by rlm created at 2009-12-17 21:51:06
+Attachment [trac_6962-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket6962/trac_6962-doctest-fixes.patch) by @rlmill created at 2009-12-17 21:51:06
 
 
 
@@ -300,7 +300,7 @@ archive/issue_comments_057608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57608",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_057609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57609",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

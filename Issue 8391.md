@@ -254,16 +254,16 @@ Changing status from new to needs_review.
 archive/issue_comments_075143.json:
 ```json
 {
-    "body": "Attachment [trac_8391-prstat_solaris.patch](tarball://root/attachments/some-uuid/ticket8391/trac_8391-prstat_solaris.patch) by mpatel created at 2010-03-03 08:51:39\n\nUse `prstat` instead of `top` on (Open)Solaris.  Docstring tweaks.",
+    "body": "Attachment [trac_8391-prstat_solaris.patch](tarball://root/attachments/some-uuid/ticket8391/trac_8391-prstat_solaris.patch) by @qed777 created at 2010-03-03 08:51:39\n\nUse `prstat` instead of `top` on (Open)Solaris.  Docstring tweaks.",
     "created_at": "2010-03-03T08:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8391#issuecomment-75143",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8391-prstat_solaris.patch](tarball://root/attachments/some-uuid/ticket8391/trac_8391-prstat_solaris.patch) by mpatel created at 2010-03-03 08:51:39
+Attachment [trac_8391-prstat_solaris.patch](tarball://root/attachments/some-uuid/ticket8391/trac_8391-prstat_solaris.patch) by @qed777 created at 2010-03-03 08:51:39
 
 Use `prstat` instead of `top` on (Open)Solaris.  Docstring tweaks.
 
@@ -279,7 +279,7 @@ archive/issue_comments_075144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8391#issuecomment-75144",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_075147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8391#issuecomment-75147",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_075148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8391#issuecomment-75148",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_075149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8391#issuecomment-75149",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

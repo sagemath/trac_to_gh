@@ -3,7 +3,7 @@
 archive/issues_000390.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nWilliam Stein \t\nto Chris\n\t\nshow details\n\t 5:03 am \nThere is a bug in the Cremona tables -- he actually missed some\ncurves, and I think that is one of them.  I need to update the\nSAGE cremona table to match the latest official version of the tables.\nI meant to do this but just haven't had the time.\n- Hide quoted text -\n\nOn 6/20/07, Chris Wuthrich <christian.wuthrich@gmail.com> wrote:\n>  There is a curve 90288bb1 in Cremona's table (magma has it also in\n> its tables), but sage does not know it ?? Why ?\n>  On the other hand sage knows a curve of conductor 119997 in the\n> tables, which made me think that the upper limit on the conductor was\n> 120'000.\n>\n>  Chris.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/390\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nWilliam Stein \t\nto Chris\n\t\nshow details\n\t 5:03 am \nThere is a bug in the Cremona tables -- he actually missed some\ncurves, and I think that is one of them.  I need to update the\nSAGE cremona table to match the latest official version of the tables.\nI meant to do this but just haven't had the time.\n- Hide quoted text -\n\nOn 6/20/07, Chris Wuthrich <christian.wuthrich@gmail.com> wrote:\n>  There is a curve 90288bb1 in Cremona's table (magma has it also in\n> its tables), but sage does not know it ?? Why ?\n>  On the other hand sage knows a curve of conductor 119997 in the\n> tables, which made me think that the upper limit on the conductor was\n> 120'000.\n>\n>  Chris.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/390\n\n",
     "created_at": "2007-06-22T12:04:37Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000390.json:
     "title": "update cremona's elliptic curves tables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/390",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -81,7 +81,7 @@ archive/issue_comments_001913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/390#issuecomment-1913",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_001914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/390#issuecomment-1914",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

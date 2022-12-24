@@ -3,7 +3,7 @@
 archive/issues_009429.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  novoselt robertwb\n\nAll arithmetic operations on `QuotientRingElement` return a new `QuotientRingElement`, which is not the desired result for derived classes. Instead one should use `self.__class__` to return an instance of the actual type:\n\n```\nsage: from sage.rings.quotient_ring_element import QuotientRingElement\nsage: class Q(QuotientRingElement):\n...    pass\n...\nsage: P.<x,y> = PolynomialRing(QQ, 'x, y')\nsage: Pquo = P.quo(x^3)\nsage: q = Q(Pquo, x)\nsage: type(q)\n<class '__main__.Q'>\nsage: type(q^2)\n<class 'sage.rings.quotient_ring_element.QuotientRingElement'>\n```\n\n\nExpected behaviour: `q^2` should have the same (derived) type as `q`.\n\nI am running into this issue because I want to express cohomology classes on toric varieties as derived classes of `QuotientRingElement`, see #9326. I'll write the obvious patch and attach it later today.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9429\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @novoselt @robertwb\n\nAll arithmetic operations on `QuotientRingElement` return a new `QuotientRingElement`, which is not the desired result for derived classes. Instead one should use `self.__class__` to return an instance of the actual type:\n\n```\nsage: from sage.rings.quotient_ring_element import QuotientRingElement\nsage: class Q(QuotientRingElement):\n...    pass\n...\nsage: P.<x,y> = PolynomialRing(QQ, 'x, y')\nsage: Pquo = P.quo(x^3)\nsage: q = Q(Pquo, x)\nsage: type(q)\n<class '__main__.Q'>\nsage: type(q^2)\n<class 'sage.rings.quotient_ring_element.QuotientRingElement'>\n```\n\n\nExpected behaviour: `q^2` should have the same (derived) type as `q`.\n\nI am running into this issue because I want to express cohomology classes on toric varieties as derived classes of `QuotientRingElement`, see #9326. I'll write the obvious patch and attach it later today.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9429\n\n",
     "created_at": "2010-07-05T10:44:05Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009429.json:
     "title": "Undesirable behaviour when deriving from QuotientRingElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9429",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  novoselt robertwb
+CC:  @novoselt @robertwb
 
 All arithmetic operations on `QuotientRingElement` return a new `QuotientRingElement`, which is not the desired result for derived classes. Instead one should use `self.__class__` to return an instance of the actual type:
 
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9429
 archive/issue_comments_090005.json:
 ```json
 {
-    "body": "Attachment [trac_9429_fix_derived_classes.patch](tarball://root/attachments/some-uuid/ticket9429/trac_9429_fix_derived_classes.patch) by vbraun created at 2010-07-05 11:03:44\n\nmissed one occurrence",
+    "body": "Attachment [trac_9429_fix_derived_classes.patch](tarball://root/attachments/some-uuid/ticket9429/trac_9429_fix_derived_classes.patch) by @vbraun created at 2010-07-05 11:03:44\n\nmissed one occurrence",
     "created_at": "2010-07-05T11:03:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90005",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9429_fix_derived_classes.patch](tarball://root/attachments/some-uuid/ticket9429/trac_9429_fix_derived_classes.patch) by vbraun created at 2010-07-05 11:03:44
+Attachment [trac_9429_fix_derived_classes.patch](tarball://root/attachments/some-uuid/ticket9429/trac_9429_fix_derived_classes.patch) by @vbraun created at 2010-07-05 11:03:44
 
 missed one occurrence
 
@@ -78,7 +78,7 @@ archive/issue_comments_090006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90006",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_090007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90007",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_090008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90008",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_090009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90009",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_090010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90010",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -194,16 +194,16 @@ True
 archive/issue_comments_090011.json:
 ```json
 {
-    "body": "Attachment [first_attempt.patch](tarball://root/attachments/some-uuid/ticket9429/first_attempt.patch) by novoselt created at 2010-07-06 16:04:09\n\nVolker Braun's patch (with two print statements)",
+    "body": "Attachment [first_attempt.patch](tarball://root/attachments/some-uuid/ticket9429/first_attempt.patch) by @novoselt created at 2010-07-06 16:04:09\n\nVolker Braun's patch (with two print statements)",
     "created_at": "2010-07-06T16:04:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90011",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [first_attempt.patch](tarball://root/attachments/some-uuid/ticket9429/first_attempt.patch) by novoselt created at 2010-07-06 16:04:09
+Attachment [first_attempt.patch](tarball://root/attachments/some-uuid/ticket9429/first_attempt.patch) by @novoselt created at 2010-07-06 16:04:09
 
 Volker Braun's patch (with two print statements)
 
@@ -219,7 +219,7 @@ archive/issue_comments_090012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90012",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_090013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90013",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -257,16 +257,16 @@ archive/issue_comments_090013.json:
 archive/issue_comments_090014.json:
 ```json
 {
-    "body": "Attachment [trac_9429_fix_derived_classes.2.patch](tarball://root/attachments/some-uuid/ticket9429/trac_9429_fix_derived_classes.2.patch) by vbraun created at 2010-07-07 18:36:06\n\nI agree that your self.parent() version, of course. If we can't improve `QuotientRing` then we should go with the current version. I asked on sage-devel for help, maybe somebody can tell us more about the issue:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/efe93107ce004d3b",
+    "body": "Attachment [trac_9429_fix_derived_classes.2.patch](tarball://root/attachments/some-uuid/ticket9429/trac_9429_fix_derived_classes.2.patch) by @vbraun created at 2010-07-07 18:36:06\n\nI agree that your self.parent() version, of course. If we can't improve `QuotientRing` then we should go with the current version. I asked on sage-devel for help, maybe somebody can tell us more about the issue:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/efe93107ce004d3b",
     "created_at": "2010-07-07T18:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90014",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9429_fix_derived_classes.2.patch](tarball://root/attachments/some-uuid/ticket9429/trac_9429_fix_derived_classes.2.patch) by vbraun created at 2010-07-07 18:36:06
+Attachment [trac_9429_fix_derived_classes.2.patch](tarball://root/attachments/some-uuid/ticket9429/trac_9429_fix_derived_classes.2.patch) by @vbraun created at 2010-07-07 18:36:06
 
 I agree that your self.parent() version, of course. If we can't improve `QuotientRing` then we should go with the current version. I asked on sage-devel for help, maybe somebody can tell us more about the issue:
 
@@ -284,7 +284,7 @@ archive/issue_comments_090015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90015",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_090016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90016",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_090017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90017",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_090018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90018",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_090019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90019",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_090020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90020",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_090021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90021",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_090022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90022",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_090023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9429#issuecomment-90023",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

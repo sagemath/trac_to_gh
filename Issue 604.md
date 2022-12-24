@@ -3,7 +3,7 @@
 archive/issues_000604.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe NTL structures in the number field are leaking.\n\nThe attached patch fixes this and some other matters with multiplication and division -- actually making them use NTL.\n\nIssue created by migration from https://trac.sagemath.org/ticket/604\n\n",
+    "body": "Assignee: @williamstein\n\nThe NTL structures in the number field are leaking.\n\nThe attached patch fixes this and some other matters with multiplication and division -- actually making them use NTL.\n\nIssue created by migration from https://trac.sagemath.org/ticket/604\n\n",
     "created_at": "2007-09-06T21:44:29Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_000604.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The NTL structures in the number field are leaking.
 
@@ -57,7 +57,7 @@ archive/issue_comments_003111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/604#issuecomment-3111",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004053.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  jason\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4053\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4053\n\n",
     "created_at": "2008-09-03T20:09:28Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_004053.json:
     "title": "[with patch, needs review] more checking for graph6. sparse6 and dig6 formats",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4053",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  jason
+CC:  @jasongrout
 
 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4053
 archive/issue_comments_029217.json:
 ```json
 {
-    "body": "Attachment [trac_4053-graph6.patch](tarball://root/attachments/some-uuid/ticket4053/trac_4053-graph6.patch) by rlm created at 2008-09-03 22:41:13",
+    "body": "Attachment [trac_4053-graph6.patch](tarball://root/attachments/some-uuid/ticket4053/trac_4053-graph6.patch) by @rlmill created at 2008-09-03 22:41:13",
     "created_at": "2008-09-03T22:41:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4053#issuecomment-29217",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_4053-graph6.patch](tarball://root/attachments/some-uuid/ticket4053/trac_4053-graph6.patch) by rlm created at 2008-09-03 22:41:13
+Attachment [trac_4053-graph6.patch](tarball://root/attachments/some-uuid/ticket4053/trac_4053-graph6.patch) by @rlmill created at 2008-09-03 22:41:13
 
 
 

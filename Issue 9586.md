@@ -3,7 +3,7 @@
 archive/issues_009586.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  ncohen jason\n\nLet Sage schedule all the lectures at a university via an object oriented framework using the MILP solver infrastructure.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9586\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @nathanncohen @jasongrout\n\nLet Sage schedule all the lectures at a university via an object oriented framework using the MILP solver infrastructure.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9586\n\n",
     "created_at": "2010-07-23T10:23:09Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_009586.json:
     "title": "Lecture Scheduler",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9586",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: jason, jkantor
 
-CC:  ncohen jason
+CC:  @nathanncohen @jasongrout
 
 Let Sage schedule all the lectures at a university via an object oriented framework using the MILP solver infrastructure.
 
@@ -39,7 +39,7 @@ archive/issue_comments_092694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9586#issuecomment-92694",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_092695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9586#issuecomment-92695",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_092697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9586#issuecomment-92697",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_092698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9586#issuecomment-92698",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_092699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9586#issuecomment-92699",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_092700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9586#issuecomment-92700",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_092701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9586#issuecomment-92701",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_092702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9586#issuecomment-92702",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_092703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9586#issuecomment-92703",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_092704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9586#issuecomment-92704",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_092705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9586#issuecomment-92705",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_092706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9586#issuecomment-92706",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

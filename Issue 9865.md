@@ -14,7 +14,7 @@ archive/issues_009865.json:
     "title": "Unable to start pari because the command 'gp --emacs --fast --quiet --stacksize 10000000' failed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9865",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
@@ -120,7 +120,7 @@ archive/issue_comments_097468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9865#issuecomment-97468",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_097469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9865#issuecomment-97469",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_097470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9865#issuecomment-97470",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_097471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9865#issuecomment-97471",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_097472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9865#issuecomment-97472",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_097473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9865#issuecomment-97473",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_097475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9865#issuecomment-97475",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_097477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9865#issuecomment-97477",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_097478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9865#issuecomment-97478",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -360,16 +360,16 @@ Changing status from closed to new.
 archive/issue_comments_097479.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to was.",
+    "body": "Changing assignee from mvngu to @williamstein.",
     "created_at": "2013-03-28T23:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9865#issuecomment-97479",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Changing assignee from mvngu to was.
+Changing assignee from mvngu to @williamstein.
 
 
 
@@ -383,7 +383,7 @@ archive/issue_comments_097480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9865#issuecomment-97480",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

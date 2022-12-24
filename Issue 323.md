@@ -3,7 +3,7 @@
 archive/issues_000323.json:
 ```json
 {
-    "body": "Assignee: was\n\nUbuntu Edgy uses dash to provide /bin/sh. However the/some SAGE build scripts seem to assume that /bin/sh is provided by bash which is not necessarily true. Consequently, make and upgrade fail on Ubuntu Edgy (6.10). This bug was reported to me by Ralf Weinmann and I cannot personally confirm this as I don't have access to a Ubuntu Edgy install.\n\nIssue created by migration from https://trac.sagemath.org/ticket/323\n\n",
+    "body": "Assignee: @williamstein\n\nUbuntu Edgy uses dash to provide /bin/sh. However the/some SAGE build scripts seem to assume that /bin/sh is provided by bash which is not necessarily true. Consequently, make and upgrade fail on Ubuntu Edgy (6.10). This bug was reported to me by Ralf Weinmann and I cannot personally confirm this as I don't have access to a Ubuntu Edgy install.\n\nIssue created by migration from https://trac.sagemath.org/ticket/323\n\n",
     "created_at": "2007-03-16T10:01:22Z",
     "labels": [
         "packages: standard",
@@ -13,10 +13,10 @@ archive/issues_000323.json:
     "title": "make and upgrade fails on Ubuntu Edgy (6.10)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/323",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Ubuntu Edgy uses dash to provide /bin/sh. However the/some SAGE build scripts seem to assume that /bin/sh is provided by bash which is not necessarily true. Consequently, make and upgrade fail on Ubuntu Edgy (6.10). This bug was reported to me by Ralf Weinmann and I cannot personally confirm this as I don't have access to a Ubuntu Edgy install.
 
@@ -36,7 +36,7 @@ archive/issue_comments_001534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/323#issuecomment-1534",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -54,7 +54,7 @@ archive/issue_comments_001535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/323#issuecomment-1535",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004370.json:
     "title": "Add ability to clone the doc repository",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4370",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tba

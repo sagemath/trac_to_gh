@@ -14,7 +14,7 @@ archive/issues_009687.json:
     "title": "Update citation info for Tower of Hanoi graph generator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9687",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: mvngu
@@ -39,7 +39,7 @@ archive/issue_comments_094167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9687#issuecomment-94167",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_094168.json:
 ```json
 {
-    "body": "Attachment [trac_9687-citation-hanoi-graphs.patch](tarball://root/attachments/some-uuid/ticket9687/trac_9687-citation-hanoi-graphs.patch) by rbeezer created at 2010-08-05 04:45:02\n\nHTML and PDF docs build as expected.\n\nBilly Wonderly - this could be an easy review for you.  See your email for more.",
+    "body": "Attachment [trac_9687-citation-hanoi-graphs.patch](tarball://root/attachments/some-uuid/ticket9687/trac_9687-citation-hanoi-graphs.patch) by @rbeezer created at 2010-08-05 04:45:02\n\nHTML and PDF docs build as expected.\n\nBilly Wonderly - this could be an easy review for you.  See your email for more.",
     "created_at": "2010-08-05T04:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9687#issuecomment-94168",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9687-citation-hanoi-graphs.patch](tarball://root/attachments/some-uuid/ticket9687/trac_9687-citation-hanoi-graphs.patch) by rbeezer created at 2010-08-05 04:45:02
+Attachment [trac_9687-citation-hanoi-graphs.patch](tarball://root/attachments/some-uuid/ticket9687/trac_9687-citation-hanoi-graphs.patch) by @rbeezer created at 2010-08-05 04:45:02
 
 HTML and PDF docs build as expected.
 
@@ -79,7 +79,7 @@ archive/issue_comments_094169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9687#issuecomment-94169",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_094172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9687#issuecomment-94172",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

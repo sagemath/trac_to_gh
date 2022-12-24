@@ -3,7 +3,7 @@
 archive/issues_005844.json:
 ```json
 {
-    "body": "Assignee: SimonKing\n\nKeywords: PermutationGroup has_element is_subgroup\n\nThe old version of `PermutationGroup_generic.has_element(self,item)` is\n\n```\n        item = PermutationGroupElement(item, self, check=False)\n        return item in self.list()\n```\n\n\nHence, the whole list of elements must be created! Instead, I suggest to invoke `PermutationGroup_generic.__contains__()`, hence:\n\n```\n        item = PermutationGroupElement(item, self, check=False)\n        return item in self\n```\n\nThe only difference between `has_element` and `__contains__` then is that the former may raise an error if one can not make a `PermutationGroupElement` out of the item.\n\nThe performance considerably improves. Here are indirect. The method `is_subgroup()` calls `has_element`.\nWith the patch, one has:\n\n```\nsage: G=SymmetricGroup(7)\nsage: H=SymmetricGroup(6)\nsage: H.is_subgroup(G)\nTrue\nsage: timeit('H.is_subgroup(G)')\n625 loops, best of 3: 50.5 \u00c2\u00b5s per loop\n```\n\n\nTo my surprise, Gap is slower:\n\n```\nsage: timeit('gap(H).IsSubgroup(gap(G))')\n5 loops, best of 3: 1.55 ms per loop\n```\n\n\nWithout the patch, the computation is *very* slow:\n\n```\nsage: time H.is_subgroup(G)\nCPU times: user 3.94 s, sys: 0.51 s, total: 4.45 s\nWall time: 4.80 s\nTrue\n```\n\n\nLast, I'd like to demonstrate the difference between `has_element()` and `__contains__()`:\n\n```\nsage: 1 in G\nTrue  # since G(1) is the trivial permutation\nsage: G.has_element(1) \nERROR: An unexpected error occurred while tokenizing input\n...\nTypeError: 'sage.rings.integer.Integer' object is not iterable\n```\n\nThe latter is what happens when trying conversion of 1 into a `PermutationGroupElement`.\n\n__Conclusion__:\n\nThe change that I made is very small but yields a huge improvement. However, what was the original reason to write `has_element` in that way? Does `g in G` sometimes return an answer different from `g in G.list()`, if g is a `PermutationGroupElement`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5844\n\n",
+    "body": "Assignee: @simon-king-jena\n\nKeywords: PermutationGroup has_element is_subgroup\n\nThe old version of `PermutationGroup_generic.has_element(self,item)` is\n\n```\n        item = PermutationGroupElement(item, self, check=False)\n        return item in self.list()\n```\n\n\nHence, the whole list of elements must be created! Instead, I suggest to invoke `PermutationGroup_generic.__contains__()`, hence:\n\n```\n        item = PermutationGroupElement(item, self, check=False)\n        return item in self\n```\n\nThe only difference between `has_element` and `__contains__` then is that the former may raise an error if one can not make a `PermutationGroupElement` out of the item.\n\nThe performance considerably improves. Here are indirect. The method `is_subgroup()` calls `has_element`.\nWith the patch, one has:\n\n```\nsage: G=SymmetricGroup(7)\nsage: H=SymmetricGroup(6)\nsage: H.is_subgroup(G)\nTrue\nsage: timeit('H.is_subgroup(G)')\n625 loops, best of 3: 50.5 \u00c2\u00b5s per loop\n```\n\n\nTo my surprise, Gap is slower:\n\n```\nsage: timeit('gap(H).IsSubgroup(gap(G))')\n5 loops, best of 3: 1.55 ms per loop\n```\n\n\nWithout the patch, the computation is *very* slow:\n\n```\nsage: time H.is_subgroup(G)\nCPU times: user 3.94 s, sys: 0.51 s, total: 4.45 s\nWall time: 4.80 s\nTrue\n```\n\n\nLast, I'd like to demonstrate the difference between `has_element()` and `__contains__()`:\n\n```\nsage: 1 in G\nTrue  # since G(1) is the trivial permutation\nsage: G.has_element(1) \nERROR: An unexpected error occurred while tokenizing input\n...\nTypeError: 'sage.rings.integer.Integer' object is not iterable\n```\n\nThe latter is what happens when trying conversion of 1 into a `PermutationGroupElement`.\n\n__Conclusion__:\n\nThe change that I made is very small but yields a huge improvement. However, what was the original reason to write `has_element` in that way? Does `g in G` sometimes return an answer different from `g in G.list()`, if g is a `PermutationGroupElement`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5844\n\n",
     "created_at": "2009-04-21T09:29:03Z",
     "labels": [
         "group theory",
@@ -14,10 +14,10 @@ archive/issues_005844.json:
     "title": "[with patch, needs review] Improvement of {{{PermutationGroup_generic.has_element()}}} and {{{is_subgroup}}}",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5844",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: SimonKing
+Assignee: @simon-king-jena
 
 Keywords: PermutationGroup has_element is_subgroup
 
@@ -102,7 +102,7 @@ archive/issue_comments_045959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45959",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -115,16 +115,16 @@ Improved performance of has_element and thus of is_subgroup
 archive/issue_comments_045960.json:
 ```json
 {
-    "body": "Attachment [PermutationGroup_has_element.patch](tarball://root/attachments/some-uuid/ticket5844/PermutationGroup_has_element.patch) by SimonKing created at 2009-04-21 09:45:02",
+    "body": "Attachment [PermutationGroup_has_element.patch](tarball://root/attachments/some-uuid/ticket5844/PermutationGroup_has_element.patch) by @simon-king-jena created at 2009-04-21 09:45:02",
     "created_at": "2009-04-21T09:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45960",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [PermutationGroup_has_element.patch](tarball://root/attachments/some-uuid/ticket5844/PermutationGroup_has_element.patch) by SimonKing created at 2009-04-21 09:45:02
+Attachment [PermutationGroup_has_element.patch](tarball://root/attachments/some-uuid/ticket5844/PermutationGroup_has_element.patch) by @simon-king-jena created at 2009-04-21 09:45:02
 
 
 
@@ -138,7 +138,7 @@ archive/issue_comments_045961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45961",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_045962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45962",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_045964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45964",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -235,16 +235,16 @@ If both are just tests for containment then `has_element` should be removed, res
 archive/issue_comments_045965.json:
 ```json
 {
-    "body": "Attachment [PermutationGroup_has_element2.patch](tarball://root/attachments/some-uuid/ticket5844/PermutationGroup_has_element2.patch) by SimonKing created at 2009-04-22 07:50:52\n\nReplace has_element by __contains__",
+    "body": "Attachment [PermutationGroup_has_element2.patch](tarball://root/attachments/some-uuid/ticket5844/PermutationGroup_has_element2.patch) by @simon-king-jena created at 2009-04-22 07:50:52\n\nReplace has_element by __contains__",
     "created_at": "2009-04-22T07:50:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45965",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [PermutationGroup_has_element2.patch](tarball://root/attachments/some-uuid/ticket5844/PermutationGroup_has_element2.patch) by SimonKing created at 2009-04-22 07:50:52
+Attachment [PermutationGroup_has_element2.patch](tarball://root/attachments/some-uuid/ticket5844/PermutationGroup_has_element2.patch) by @simon-king-jena created at 2009-04-22 07:50:52
 
 Replace has_element by __contains__
 
@@ -260,7 +260,7 @@ archive/issue_comments_045966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45966",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_045967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45967",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_045970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45970",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006523.json:
 ```json
 {
-    "body": "CC:  mhansen\n\nIf a symbolic expression contains \u00a0symbolic derivative then\nchecking whether it is zero, raises error:\n\n```\nsage: x.diff(x,2).is_zero()\nTrue\n\nsage: f(x) = function('f',x)\nsage: f(x).diff(x).is_zero()\n....\nNotImplementedError: derivative\n```\n\n\nThis fails because new symbolics tries to convert it to maxima\nexpression for checking the relation.\n\nIt works fine for any other expression not involving symbolic\nderivative and without invoking maxima.\n\nIt seems to me, pynac relational test needs to be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6523\n\n",
+    "body": "CC:  @mwhansen\n\nIf a symbolic expression contains \u00a0symbolic derivative then\nchecking whether it is zero, raises error:\n\n```\nsage: x.diff(x,2).is_zero()\nTrue\n\nsage: f(x) = function('f',x)\nsage: f(x).diff(x).is_zero()\n....\nNotImplementedError: derivative\n```\n\n\nThis fails because new symbolics tries to convert it to maxima\nexpression for checking the relation.\n\nIt works fine for any other expression not involving symbolic\nderivative and without invoking maxima.\n\nIt seems to me, pynac relational test needs to be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6523\n\n",
     "created_at": "2009-07-13T11:39:09Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006523.json:
     "title": ".is_zero() method raises error for symbolic expression involving derivative",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6523",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
-CC:  mhansen
+CC:  @mwhansen
 
 If a symbolic expression contains  symbolic derivative then
 checking whether it is zero, raises error:
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6523
 archive/issue_comments_053198.json:
 ```json
 {
-    "body": "Attachment [trac_6523-fixes-error-in-is_zero_method_for_symbolic_derivative.patch](tarball://root/attachments/some-uuid/ticket6523/trac_6523-fixes-error-in-is_zero_method_for_symbolic_derivative.patch) by gmhossain created at 2009-07-15 15:56:46",
+    "body": "Attachment [trac_6523-fixes-error-in-is_zero_method_for_symbolic_derivative.patch](tarball://root/attachments/some-uuid/ticket6523/trac_6523-fixes-error-in-is_zero_method_for_symbolic_derivative.patch) by @golam-m-hossain created at 2009-07-15 15:56:46",
     "created_at": "2009-07-15T15:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53198",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
-Attachment [trac_6523-fixes-error-in-is_zero_method_for_symbolic_derivative.patch](tarball://root/attachments/some-uuid/ticket6523/trac_6523-fixes-error-in-is_zero_method_for_symbolic_derivative.patch) by gmhossain created at 2009-07-15 15:56:46
+Attachment [trac_6523-fixes-error-in-is_zero_method_for_symbolic_derivative.patch](tarball://root/attachments/some-uuid/ticket6523/trac_6523-fixes-error-in-is_zero_method_for_symbolic_derivative.patch) by @golam-m-hossain created at 2009-07-15 15:56:46
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_053199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53199",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -102,16 +102,16 @@ I was planning to do this for #6243, but ended up using a different/better fix t
 archive/issue_comments_053200.json:
 ```json
 {
-    "body": "Attachment [trac_6523-derivative_is_zero.patch](tarball://root/attachments/some-uuid/ticket6523/trac_6523-derivative_is_zero.patch) by burcin created at 2009-11-21 11:20:32\n\nadd doctests",
+    "body": "Attachment [trac_6523-derivative_is_zero.patch](tarball://root/attachments/some-uuid/ticket6523/trac_6523-derivative_is_zero.patch) by @burcin created at 2009-11-21 11:20:32\n\nadd doctests",
     "created_at": "2009-11-21T11:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53200",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6523-derivative_is_zero.patch](tarball://root/attachments/some-uuid/ticket6523/trac_6523-derivative_is_zero.patch) by burcin created at 2009-11-21 11:20:32
+Attachment [trac_6523-derivative_is_zero.patch](tarball://root/attachments/some-uuid/ticket6523/trac_6523-derivative_is_zero.patch) by @burcin created at 2009-11-21 11:20:32
 
 add doctests
 
@@ -127,7 +127,7 @@ archive/issue_comments_053201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53201",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_053202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53202",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_053203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53203",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_053204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53204",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

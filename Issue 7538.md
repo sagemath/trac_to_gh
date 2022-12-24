@@ -3,7 +3,7 @@
 archive/issues_007538.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat nborie\n\nKeywords: posets\n\nIt answer always true if two posets have the same size:\n\n```\nsage: p1 = Posets(2)[0]; p2 = Posets(2)[1]\nsage: p1.cover_relations()\n[]\nsage: p2.cover_relations()\n[[0, 1]]\nsage: p1 == p2\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7538\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat nborie\n\nKeywords: posets\n\nIt answer always true if two posets have the same size:\n\n```\nsage: p1 = Posets(2)[0]; p2 = Posets(2)[1]\nsage: p1.cover_relations()\n[]\nsage: p2.cover_relations()\n[[0, 1]]\nsage: p1 == p2\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7538\n\n",
     "created_at": "2009-11-26T21:34:36Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_007538.json:
     "title": "equality of posets is broken !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7538",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat nborie
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7538
 archive/issue_comments_063934.json:
 ```json
 {
-    "body": "Attachment [trac_7538_poset_equal_fix-fh.patch](tarball://root/attachments/some-uuid/ticket7538/trac_7538_poset_equal_fix-fh.patch) by hivert created at 2009-11-26 21:51:21",
+    "body": "Attachment [trac_7538_poset_equal_fix-fh.patch](tarball://root/attachments/some-uuid/ticket7538/trac_7538_poset_equal_fix-fh.patch) by @hivert created at 2009-11-26 21:51:21",
     "created_at": "2009-11-26T21:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7538#issuecomment-63934",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7538_poset_equal_fix-fh.patch](tarball://root/attachments/some-uuid/ticket7538/trac_7538_poset_equal_fix-fh.patch) by hivert created at 2009-11-26 21:51:21
+Attachment [trac_7538_poset_equal_fix-fh.patch](tarball://root/attachments/some-uuid/ticket7538/trac_7538_poset_equal_fix-fh.patch) by @hivert created at 2009-11-26 21:51:21
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_063935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7538#issuecomment-63935",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_063936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7538#issuecomment-63936",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -116,16 +116,16 @@ I forward the discussion to sage-combinat-devel.
 archive/issue_comments_063937.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to hivert.",
+    "body": "Changing assignee from @mwhansen to @hivert.",
     "created_at": "2009-11-28T14:38:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7538#issuecomment-63937",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from mhansen to hivert.
+Changing assignee from @mwhansen to @hivert.
 
 
 
@@ -157,7 +157,7 @@ archive/issue_comments_063939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7538#issuecomment-63939",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_063940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7538#issuecomment-63940",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -224,16 +224,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063943.json:
 ```json
 {
-    "body": "Attachment [trac_7538_poset_equal_fix-nb.patch](tarball://root/attachments/some-uuid/ticket7538/trac_7538_poset_equal_fix-nb.patch) by novoselt created at 2010-04-15 23:51:25\n\nLooks good to me, passes all doctests.\n\nOnly the second patch should be applied.",
+    "body": "Attachment [trac_7538_poset_equal_fix-nb.patch](tarball://root/attachments/some-uuid/ticket7538/trac_7538_poset_equal_fix-nb.patch) by @novoselt created at 2010-04-15 23:51:25\n\nLooks good to me, passes all doctests.\n\nOnly the second patch should be applied.",
     "created_at": "2010-04-15T23:51:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7538#issuecomment-63943",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_7538_poset_equal_fix-nb.patch](tarball://root/attachments/some-uuid/ticket7538/trac_7538_poset_equal_fix-nb.patch) by novoselt created at 2010-04-15 23:51:25
+Attachment [trac_7538_poset_equal_fix-nb.patch](tarball://root/attachments/some-uuid/ticket7538/trac_7538_poset_equal_fix-nb.patch) by @novoselt created at 2010-04-15 23:51:25
 
 Looks good to me, passes all doctests.
 
@@ -251,7 +251,7 @@ archive/issue_comments_063944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7538#issuecomment-63944",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_063945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7538#issuecomment-63945",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_063946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7538#issuecomment-63946",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008407.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  abmasse\n\n1. Add a function that returns the isometries of word paths on the square grid.\n\n2. Improve the construction of word path parent : creation from 2*n letters and n vectors now works (it takes the opposite of vectors).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8407\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\n1. Add a function that returns the isometries of word paths on the square grid.\n\n2. Improve the construction of word path parent : creation from 2*n letters and n vectors now works (it takes the opposite of vectors).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8407\n\n",
     "created_at": "2010-03-01T13:09:35Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008407.json:
     "title": "word paths isometries + improve construction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8407",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  abmasse
 
@@ -41,7 +41,7 @@ archive/issue_comments_075323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75323",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_075327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75327",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -134,16 +134,16 @@ I removed one of the objectives of the ticket related to isometries. Indeed, I n
 archive/issue_comments_075328.json:
 ```json
 {
-    "body": "Attachment [trac_8407_word-paths-sl.patch](tarball://root/attachments/some-uuid/ticket8407/trac_8407_word-paths-sl.patch) by slabbe created at 2010-04-11 15:18:11",
+    "body": "Attachment [trac_8407_word-paths-sl.patch](tarball://root/attachments/some-uuid/ticket8407/trac_8407_word-paths-sl.patch) by @seblabbe created at 2010-04-11 15:18:11",
     "created_at": "2010-04-11T15:18:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75328",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8407_word-paths-sl.patch](tarball://root/attachments/some-uuid/ticket8407/trac_8407_word-paths-sl.patch) by slabbe created at 2010-04-11 15:18:11
+Attachment [trac_8407_word-paths-sl.patch](tarball://root/attachments/some-uuid/ticket8407/trac_8407_word-paths-sl.patch) by @seblabbe created at 2010-04-11 15:18:11
 
 
 
@@ -157,7 +157,7 @@ archive/issue_comments_075329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75329",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_075330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75330",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_075331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75331",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_075332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75332",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

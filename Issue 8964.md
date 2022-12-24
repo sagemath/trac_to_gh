@@ -14,7 +14,7 @@ archive/issues_008964.json:
     "title": "Two small typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8964",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mvngu
@@ -39,7 +39,7 @@ archive/issue_comments_082615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8964#issuecomment-82615",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_082616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8964#issuecomment-82616",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -106,16 +106,16 @@ It would be worth spelling "occurred" correctly too.  Otherwise ok, of course.
 archive/issue_comments_082619.json:
 ```json
 {
-    "body": "Attachment [trac-8964-two-typos.patch](tarball://root/attachments/some-uuid/ticket8964/trac-8964-two-typos.patch) by jason created at 2010-05-14 19:24:56",
+    "body": "Attachment [trac-8964-two-typos.patch](tarball://root/attachments/some-uuid/ticket8964/trac-8964-two-typos.patch) by @jasongrout created at 2010-05-14 19:24:56",
     "created_at": "2010-05-14T19:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8964#issuecomment-82619",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8964-two-typos.patch](tarball://root/attachments/some-uuid/ticket8964/trac-8964-two-typos.patch) by jason created at 2010-05-14 19:24:56
+Attachment [trac-8964-two-typos.patch](tarball://root/attachments/some-uuid/ticket8964/trac-8964-two-typos.patch) by @jasongrout created at 2010-05-14 19:24:56
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_082620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8964#issuecomment-82620",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

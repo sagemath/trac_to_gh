@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5434
 archive/issue_comments_042042.json:
 ```json
 {
-    "body": "Attachment [poly-shift-of-zero.patch](tarball://root/attachments/some-uuid/ticket5434/poly-shift-of-zero.patch) by was created at 2009-03-04 07:04:38\n\nExcellent.  Thanks!",
+    "body": "Attachment [poly-shift-of-zero.patch](tarball://root/attachments/some-uuid/ticket5434/poly-shift-of-zero.patch) by @williamstein created at 2009-03-04 07:04:38\n\nExcellent.  Thanks!",
     "created_at": "2009-03-04T07:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5434#issuecomment-42042",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [poly-shift-of-zero.patch](tarball://root/attachments/some-uuid/ticket5434/poly-shift-of-zero.patch) by was created at 2009-03-04 07:04:38
+Attachment [poly-shift-of-zero.patch](tarball://root/attachments/some-uuid/ticket5434/poly-shift-of-zero.patch) by @williamstein created at 2009-03-04 07:04:38
 
 Excellent.  Thanks!
 

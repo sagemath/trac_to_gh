@@ -3,7 +3,7 @@
 archive/issues_005381.json:
 ```json
 {
-    "body": "Assignee: rbeezer\n\nCC:  burcin\n\nKeywords: matrix kernel refactor\n\nFrom proposal on sage-devel:\n\nPlace the guts of kernel computations for each (specialized) class into a right_kernel() method, where it would seem to naturally belong.  Mostly these would replace kernel() methods that are computing left kernels.  A call to kernel() or left_kernel() should arrive at the top of the hierarchy where it would take a transpose and call the (specialized) right_kernel().  So there wouldn't be a change in behavior in routines currently calling kernel () or left_kernel(), and we would retain Sage's preference for the left by having the vanilla kernel() give back a left kernel.  The changes would be more efficient computationally and also make the code more expressive of what is really happening when and where.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5381\n\n",
+    "body": "Assignee: @rbeezer\n\nCC:  @burcin\n\nKeywords: matrix kernel refactor\n\nFrom proposal on sage-devel:\n\nPlace the guts of kernel computations for each (specialized) class into a right_kernel() method, where it would seem to naturally belong.  Mostly these would replace kernel() methods that are computing left kernels.  A call to kernel() or left_kernel() should arrive at the top of the hierarchy where it would take a transpose and call the (specialized) right_kernel().  So there wouldn't be a change in behavior in routines currently calling kernel () or left_kernel(), and we would retain Sage's preference for the left by having the vanilla kernel() give back a left kernel.  The changes would be more efficient computationally and also make the code more expressive of what is really happening when and where.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5381\n\n",
     "created_at": "2009-02-26T03:24:43Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005381.json:
     "title": "Refactor matrix kernels",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5381",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: rbeezer
+Assignee: @rbeezer
 
-CC:  burcin
+CC:  @burcin
 
 Keywords: matrix kernel refactor
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5381
 archive/issue_comments_041444.json:
 ```json
 {
-    "body": "Attachment [trac_5381_matrix_kernels.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels.patch) by rbeezer created at 2009-03-08 23:29:31",
+    "body": "Attachment [trac_5381_matrix_kernels.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels.patch) by @rbeezer created at 2009-03-08 23:29:31",
     "created_at": "2009-03-08T23:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41444",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_5381_matrix_kernels.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels.patch) by rbeezer created at 2009-03-08 23:29:31
+Attachment [trac_5381_matrix_kernels.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels.patch) by @rbeezer created at 2009-03-08 23:29:31
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_041445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41445",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_041446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41446",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -100,16 +100,16 @@ Rob
 archive/issue_comments_041447.json:
 ```json
 {
-    "body": "Attachment [trac_5381_matrix_kernels_2.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels_2.patch) by rbeezer created at 2009-04-06 04:27:29",
+    "body": "Attachment [trac_5381_matrix_kernels_2.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels_2.patch) by @rbeezer created at 2009-04-06 04:27:29",
     "created_at": "2009-04-06T04:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41447",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_5381_matrix_kernels_2.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels_2.patch) by rbeezer created at 2009-04-06 04:27:29
+Attachment [trac_5381_matrix_kernels_2.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels_2.patch) by @rbeezer created at 2009-04-06 04:27:29
 
 
 
@@ -123,7 +123,7 @@ archive/issue_comments_041448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41448",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_041449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41449",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -175,16 +175,16 @@ Minh - timings are getting a bit dated, but are probably still accurate, though 
 archive/issue_comments_041450.json:
 ```json
 {
-    "body": "Attachment [trac_5381_matrix_kernels_3.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels_3.patch) by AlexGhitza created at 2009-04-30 11:21:15\n\nThe latest patch addresses Jason's comments; it applies cleanly and passes testlong.",
+    "body": "Attachment [trac_5381_matrix_kernels_3.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels_3.patch) by @aghitza created at 2009-04-30 11:21:15\n\nThe latest patch addresses Jason's comments; it applies cleanly and passes testlong.",
     "created_at": "2009-04-30T11:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41450",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5381_matrix_kernels_3.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels_3.patch) by AlexGhitza created at 2009-04-30 11:21:15
+Attachment [trac_5381_matrix_kernels_3.patch](tarball://root/attachments/some-uuid/ticket5381/trac_5381_matrix_kernels_3.patch) by @aghitza created at 2009-04-30 11:21:15
 
 The latest patch addresses Jason's comments; it applies cleanly and passes testlong.
 

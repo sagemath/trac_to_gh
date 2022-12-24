@@ -14,7 +14,7 @@ archive/issues_008932.json:
     "title": "Shortest circuit in digraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8932",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -38,7 +38,7 @@ archive/issue_comments_082265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8932#issuecomment-82265",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_082266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8932#issuecomment-82266",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_082267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8932#issuecomment-82267",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_082268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8932#issuecomment-82268",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

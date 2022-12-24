@@ -3,7 +3,7 @@
 archive/issues_007923.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nWhen 2^31 < q^2 < 2^32, one can get an overflow in exponentiation (because of the use of signed vs unsigned ints).  This occurs for q=3^10.\n\n\n```\nsage: K.<a> = GF(3^10)\nsage: b = a^9 + a^7 + 2*a^6 + a^4 + a^3 + 2*a^2 + a + 2\nsage: b^(71*7381) == (b^71)^7381\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7923\n\n",
+    "body": "Assignee: @aghitza\n\nWhen 2^31 < q^2 < 2^32, one can get an overflow in exponentiation (because of the use of signed vs unsigned ints).  This occurs for q=3^10.\n\n\n```\nsage: K.<a> = GF(3^10)\nsage: b = a^9 + a^7 + 2*a^6 + a^4 + a^3 + 2*a^2 + a + 2\nsage: b^(71*7381) == (b^71)^7381\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7923\n\n",
     "created_at": "2010-01-14T00:15:44Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007923.json:
     "title": "signed int overflow in givaro elements' __pow__ method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7923",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 When 2^31 < q^2 < 2^32, one can get an overflow in exponentiation (because of the use of signed vs unsigned ints).  This occurs for q=3^10.
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7923
 archive/issue_comments_068964.json:
 ```json
 {
-    "body": "Attachment [7923.patch](tarball://root/attachments/some-uuid/ticket7923/7923.patch) by roed created at 2010-01-14 00:19:20",
+    "body": "Attachment [7923.patch](tarball://root/attachments/some-uuid/ticket7923/7923.patch) by @roed314 created at 2010-01-14 00:19:20",
     "created_at": "2010-01-14T00:19:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7923#issuecomment-68964",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7923.patch](tarball://root/attachments/some-uuid/ticket7923/7923.patch) by roed created at 2010-01-14 00:19:20
+Attachment [7923.patch](tarball://root/attachments/some-uuid/ticket7923/7923.patch) by @roed314 created at 2010-01-14 00:19:20
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_068965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7923#issuecomment-68965",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_068966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7923#issuecomment-68966",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_068969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7923#issuecomment-68969",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

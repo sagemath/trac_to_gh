@@ -3,7 +3,7 @@
 archive/issues_001318.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1318\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1318\n\n",
     "created_at": "2007-11-28T20:05:37Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001318.json:
     "title": "[graphs] calculate eigenspaces of the graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1318",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -39,7 +39,7 @@ archive/issue_comments_008385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1318#issuecomment-8385",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing component from combinatorics to graph theory.
 archive/issue_comments_008386.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-17T15:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1318#issuecomment-8386",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_008387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1318#issuecomment-8387",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing keywords from "graphs" to "".
 archive/issue_comments_008388.json:
 ```json
 {
-    "body": "Attachment [eigenspaces_graphs.patch](tarball://root/attachments/some-uuid/ticket1318/eigenspaces_graphs.patch) by rlm created at 2007-12-17 21:36:39",
+    "body": "Attachment [eigenspaces_graphs.patch](tarball://root/attachments/some-uuid/ticket1318/eigenspaces_graphs.patch) by @rlmill created at 2007-12-17 21:36:39",
     "created_at": "2007-12-17T21:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1318#issuecomment-8388",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [eigenspaces_graphs.patch](tarball://root/attachments/some-uuid/ticket1318/eigenspaces_graphs.patch) by rlm created at 2007-12-17 21:36:39
+Attachment [eigenspaces_graphs.patch](tarball://root/attachments/some-uuid/ticket1318/eigenspaces_graphs.patch) by @rlmill created at 2007-12-17 21:36:39
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_008389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1318#issuecomment-8389",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_008390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1318#issuecomment-8390",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

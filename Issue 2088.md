@@ -14,7 +14,7 @@ archive/issues_002088.json:
     "title": "Optional spkgs should be integrated into the automated cython building",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2088",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -38,7 +38,7 @@ archive/issue_comments_013513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2088#issuecomment-13513",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_013514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2088#issuecomment-13514",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_013515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2088#issuecomment-13515",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_013516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2088#issuecomment-13516",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

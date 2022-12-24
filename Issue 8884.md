@@ -3,7 +3,7 @@
 archive/issues_008884.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  cremona\n\nWe found inefficiency in isogeny_class function for elliptic curves over rational field. The patch will improve this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8884\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona\n\nWe found inefficiency in isogeny_class function for elliptic curves over rational field. The patch will improve this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8884\n\n",
     "created_at": "2010-05-05T09:08:26Z",
     "labels": [
         "elliptic curves",
@@ -17,9 +17,9 @@ archive/issues_008884.json:
     "user": "kimi"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  cremona
+CC:  @JohnCremona
 
 We found inefficiency in isogeny_class function for elliptic curves over rational field. The patch will improve this.
 
@@ -57,7 +57,7 @@ archive/issue_comments_081656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81656",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -70,16 +70,16 @@ Replaces previous patch; applies to 4.4.1
 archive/issue_comments_081657.json:
 ```json
 {
-    "body": "Attachment [trac_8884_isogeny_class.2.patch](tarball://root/attachments/some-uuid/ticket8884/trac_8884_isogeny_class.2.patch) by cremona created at 2010-05-11 10:38:25\n\nThe second version of the patch just adds a useful comment and fixes some docstrings.",
+    "body": "Attachment [trac_8884_isogeny_class.2.patch](tarball://root/attachments/some-uuid/ticket8884/trac_8884_isogeny_class.2.patch) by @JohnCremona created at 2010-05-11 10:38:25\n\nThe second version of the patch just adds a useful comment and fixes some docstrings.",
     "created_at": "2010-05-11T10:38:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81657",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8884_isogeny_class.2.patch](tarball://root/attachments/some-uuid/ticket8884/trac_8884_isogeny_class.2.patch) by cremona created at 2010-05-11 10:38:25
+Attachment [trac_8884_isogeny_class.2.patch](tarball://root/attachments/some-uuid/ticket8884/trac_8884_isogeny_class.2.patch) by @JohnCremona created at 2010-05-11 10:38:25
 
 The second version of the patch just adds a useful comment and fixes some docstrings.
 
@@ -95,7 +95,7 @@ archive/issue_comments_081658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81658",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_081659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81659",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_081660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81660",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_081661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81661",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

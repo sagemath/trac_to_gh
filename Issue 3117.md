@@ -3,7 +3,7 @@
 archive/issues_003117.json:
 ```json
 {
-    "body": "Assignee: malb\n\nHi,\n\nWhether or not an element of R/I is zero must not depend on the term order. However, behold:\n\n```\nsage: R.<x,y> = PolynomialRing(QQ, order='neglex')\nsage: Q.<xbar,ybar> = R.quotient(y^2 - x^3 - x -1)\nsage: xbar\n0\n```\n\n\nwhereas\n\n```\nsage: R.<x,y> = PolynomialRing(QQ, order='lex')\nsage: Q.<xbar,ybar> = R.quotient(y^2 - x^3 - x -1)\nsage: xbar\nxbar\nsage: xbar != 0\nTrue\n```\n\n\nNOTE: I don't even know what neglex is (\"negative lex\", whatever that is). \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3117\n\n",
+    "body": "Assignee: @malb\n\nHi,\n\nWhether or not an element of R/I is zero must not depend on the term order. However, behold:\n\n```\nsage: R.<x,y> = PolynomialRing(QQ, order='neglex')\nsage: Q.<xbar,ybar> = R.quotient(y^2 - x^3 - x -1)\nsage: xbar\n0\n```\n\n\nwhereas\n\n```\nsage: R.<x,y> = PolynomialRing(QQ, order='lex')\nsage: Q.<xbar,ybar> = R.quotient(y^2 - x^3 - x -1)\nsage: xbar\nxbar\nsage: xbar != 0\nTrue\n```\n\n\nNOTE: I don't even know what neglex is (\"negative lex\", whatever that is). \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3117\n\n",
     "created_at": "2008-05-07T03:08:55Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_003117.json:
     "title": "bug in quotient polynomial rings when using funny term order",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3117",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Hi,
 
@@ -62,7 +62,7 @@ archive/issue_comments_021579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3117#issuecomment-21579",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_021580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3117#issuecomment-21580",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_021581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3117#issuecomment-21581",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

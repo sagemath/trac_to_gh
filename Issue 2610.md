@@ -14,7 +14,7 @@ archive/issues_002610.json:
     "title": "emacs -- fix typo in sagemath.org website",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2610",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -112,7 +112,7 @@ archive/issue_comments_017917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2610#issuecomment-17917",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

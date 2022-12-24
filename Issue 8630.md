@@ -3,7 +3,7 @@
 archive/issues_008630.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\n\n```\nsage: chi = DirichletGroup(109, CyclotomicField(3)).0\nsage: CuspForms(chi, 2, base_ring = CyclotomicField(9))\nCuspidal subspace of dimension 442 of Modular Forms space of dimension 10, character [zeta3 + 1] and weight 2 over Cyclotomic Field of order 9 and degree6\n```\n\n\n*facepalm*\n\nIssue created by migration from https://trac.sagemath.org/ticket/8630\n\n",
+    "body": "Assignee: @craigcitro\n\n\n```\nsage: chi = DirichletGroup(109, CyclotomicField(3)).0\nsage: CuspForms(chi, 2, base_ring = CyclotomicField(9))\nCuspidal subspace of dimension 442 of Modular Forms space of dimension 10, character [zeta3 + 1] and weight 2 over Cyclotomic Field of order 9 and degree6\n```\n\n\n*facepalm*\n\nIssue created by migration from https://trac.sagemath.org/ticket/8630\n\n",
     "created_at": "2010-03-30T11:37:41Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_008630.json:
     "title": "Cusp forms constructor ignores the character and returns enormous space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8630",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 
 ```
@@ -45,7 +45,7 @@ archive/issue_comments_078245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78245",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_078246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78246",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_078247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78247",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -94,16 +94,16 @@ archive/issue_comments_078247.json:
 archive/issue_comments_078248.json:
 ```json
 {
-    "body": "Attachment [trac_8630.patch](tarball://root/attachments/some-uuid/ticket8630/trac_8630.patch) by davidloeffler created at 2010-03-30 17:37:31",
+    "body": "Attachment [trac_8630.patch](tarball://root/attachments/some-uuid/ticket8630/trac_8630.patch) by @loefflerd created at 2010-03-30 17:37:31",
     "created_at": "2010-03-30T17:37:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78248",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8630.patch](tarball://root/attachments/some-uuid/ticket8630/trac_8630.patch) by davidloeffler created at 2010-03-30 17:37:31
+Attachment [trac_8630.patch](tarball://root/attachments/some-uuid/ticket8630/trac_8630.patch) by @loefflerd created at 2010-03-30 17:37:31
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_078249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78249",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_078250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78250",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_078251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78251",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_078252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78252",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_078253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78253",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -221,16 +221,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_078254.json:
 ```json
 {
-    "body": "Attachment [trac_8630_docfixes.patch](tarball://root/attachments/some-uuid/ticket8630/trac_8630_docfixes.patch) by davidloeffler created at 2010-03-31 11:07:37\n\napply over previous patch",
+    "body": "Attachment [trac_8630_docfixes.patch](tarball://root/attachments/some-uuid/ticket8630/trac_8630_docfixes.patch) by @loefflerd created at 2010-03-31 11:07:37\n\napply over previous patch",
     "created_at": "2010-03-31T11:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78254",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8630_docfixes.patch](tarball://root/attachments/some-uuid/ticket8630/trac_8630_docfixes.patch) by davidloeffler created at 2010-03-31 11:07:37
+Attachment [trac_8630_docfixes.patch](tarball://root/attachments/some-uuid/ticket8630/trac_8630_docfixes.patch) by @loefflerd created at 2010-03-31 11:07:37
 
 apply over previous patch
 
@@ -246,7 +246,7 @@ archive/issue_comments_078255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78255",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_078256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78256",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_078257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78257",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

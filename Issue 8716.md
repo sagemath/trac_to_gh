@@ -3,7 +3,7 @@
 archive/issues_008716.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nWe have code for modular symbols on GammaH groups but the code for modular forms is little more than stubs. Here's a patch that should fix that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8716\n\n",
+    "body": "Assignee: @craigcitro\n\nWe have code for modular symbols on GammaH groups but the code for modular forms is little more than stubs. Here's a patch that should fix that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8716\n\n",
     "created_at": "2010-04-19T16:53:25Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_008716.json:
     "title": "Modular forms of level GammaH",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8716",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 We have code for modular symbols on GammaH groups but the code for modular forms is little more than stubs. Here's a patch that should fix that.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8716
 archive/issue_comments_079548.json:
 ```json
 {
-    "body": "Attachment [trac_8716-gamma_h_modforms.patch](tarball://root/attachments/some-uuid/ticket8716/trac_8716-gamma_h_modforms.patch) by davidloeffler created at 2010-04-19 16:56:23\n\npatch against 4.4.alpha0",
+    "body": "Attachment [trac_8716-gamma_h_modforms.patch](tarball://root/attachments/some-uuid/ticket8716/trac_8716-gamma_h_modforms.patch) by @loefflerd created at 2010-04-19 16:56:23\n\npatch against 4.4.alpha0",
     "created_at": "2010-04-19T16:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8716#issuecomment-79548",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8716-gamma_h_modforms.patch](tarball://root/attachments/some-uuid/ticket8716/trac_8716-gamma_h_modforms.patch) by davidloeffler created at 2010-04-19 16:56:23
+Attachment [trac_8716-gamma_h_modforms.patch](tarball://root/attachments/some-uuid/ticket8716/trac_8716-gamma_h_modforms.patch) by @loefflerd created at 2010-04-19 16:56:23
 
 patch against 4.4.alpha0
 
@@ -57,7 +57,7 @@ archive/issue_comments_079549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8716#issuecomment-79549",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_079550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8716#issuecomment-79550",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_079551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8716#issuecomment-79551",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_079552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8716#issuecomment-79552",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_079553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8716#issuecomment-79553",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -142,16 +142,16 @@ apply over previous patch
 archive/issue_comments_079554.json:
 ```json
 {
-    "body": "Attachment [trac_8716-docfix.patch](tarball://root/attachments/some-uuid/ticket8716/trac_8716-docfix.patch) by davidloeffler created at 2010-12-12 14:36:00\n\nOops, my bad: this patch causes an error when building the documentation, due to a silly latex mistake in one of the docstrings. Here's a tiny patch which fixes that. Robert, would you mind taking a quick look to OK it?",
+    "body": "Attachment [trac_8716-docfix.patch](tarball://root/attachments/some-uuid/ticket8716/trac_8716-docfix.patch) by @loefflerd created at 2010-12-12 14:36:00\n\nOops, my bad: this patch causes an error when building the documentation, due to a silly latex mistake in one of the docstrings. Here's a tiny patch which fixes that. Robert, would you mind taking a quick look to OK it?",
     "created_at": "2010-12-12T14:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8716#issuecomment-79554",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8716-docfix.patch](tarball://root/attachments/some-uuid/ticket8716/trac_8716-docfix.patch) by davidloeffler created at 2010-12-12 14:36:00
+Attachment [trac_8716-docfix.patch](tarball://root/attachments/some-uuid/ticket8716/trac_8716-docfix.patch) by @loefflerd created at 2010-12-12 14:36:00
 
 Oops, my bad: this patch causes an error when building the documentation, due to a silly latex mistake in one of the docstrings. Here's a tiny patch which fixes that. Robert, would you mind taking a quick look to OK it?
 
@@ -167,7 +167,7 @@ archive/issue_comments_079555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8716#issuecomment-79555",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_079556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8716#issuecomment-79556",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_079557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8716#issuecomment-79557",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_079558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8716#issuecomment-79558",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_079559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8716#issuecomment-79559",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_079560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8716#issuecomment-79560",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

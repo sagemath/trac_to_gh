@@ -3,7 +3,7 @@
 archive/issues_002553.json:
 ```json
 {
-    "body": "Assignee: yi\n\nVarious users have reported that the dsage unit tests fail on linux. This is a known issue and a fix is being worked on by me. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2553\n\n",
+    "body": "Assignee: @yqiang\n\nVarious users have reported that the dsage unit tests fail on linux. This is a known issue and a fix is being worked on by me. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2553\n\n",
     "created_at": "2008-03-16T21:41:26Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002553.json:
     "title": "dsage unit tests fail on linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2553",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 Various users have reported that the dsage unit tests fail on linux. This is a known issue and a fix is being worked on by me. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2553
 archive/issue_comments_017427.json:
 ```json
 {
-    "body": "Attachment [dsage_unittest_2553.patch](tarball://root/attachments/some-uuid/ticket2553/dsage_unittest_2553.patch) by yi created at 2008-03-17 02:20:14",
+    "body": "Attachment [dsage_unittest_2553.patch](tarball://root/attachments/some-uuid/ticket2553/dsage_unittest_2553.patch) by @yqiang created at 2008-03-17 02:20:14",
     "created_at": "2008-03-17T02:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2553#issuecomment-17427",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [dsage_unittest_2553.patch](tarball://root/attachments/some-uuid/ticket2553/dsage_unittest_2553.patch) by yi created at 2008-03-17 02:20:14
+Attachment [dsage_unittest_2553.patch](tarball://root/attachments/some-uuid/ticket2553/dsage_unittest_2553.patch) by @yqiang created at 2008-03-17 02:20:14
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_017428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2553#issuecomment-17428",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -68,16 +68,16 @@ This patch disables the unit tests when people run the tests using the sage-make
 archive/issue_comments_017429.json:
 ```json
 {
-    "body": "Attachment [pb_unittest.patch](tarball://root/attachments/some-uuid/ticket2553/pb_unittest.patch) by yi created at 2008-03-23 03:24:58\n\nfixes unit tests on linux 32bit.",
+    "body": "Attachment [pb_unittest.patch](tarball://root/attachments/some-uuid/ticket2553/pb_unittest.patch) by @yqiang created at 2008-03-23 03:24:58\n\nfixes unit tests on linux 32bit.",
     "created_at": "2008-03-23T03:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2553#issuecomment-17429",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [pb_unittest.patch](tarball://root/attachments/some-uuid/ticket2553/pb_unittest.patch) by yi created at 2008-03-23 03:24:58
+Attachment [pb_unittest.patch](tarball://root/attachments/some-uuid/ticket2553/pb_unittest.patch) by @yqiang created at 2008-03-23 03:24:58
 
 fixes unit tests on linux 32bit.
 
@@ -93,7 +93,7 @@ archive/issue_comments_017430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2553#issuecomment-17430",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_017431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2553#issuecomment-17431",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -124,16 +124,16 @@ pb_unittest.patch does not apply cleanly for me with 3.0.alpha1
 archive/issue_comments_017432.json:
 ```json
 {
-    "body": "Attachment [pb_unittest.2.patch](tarball://root/attachments/some-uuid/ticket2553/pb_unittest.2.patch) by yi created at 2008-04-15 20:09:45\n\nThis patch should apply cleanly against 3.0.alpha5.",
+    "body": "Attachment [pb_unittest.2.patch](tarball://root/attachments/some-uuid/ticket2553/pb_unittest.2.patch) by @yqiang created at 2008-04-15 20:09:45\n\nThis patch should apply cleanly against 3.0.alpha5.",
     "created_at": "2008-04-15T20:09:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2553#issuecomment-17432",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [pb_unittest.2.patch](tarball://root/attachments/some-uuid/ticket2553/pb_unittest.2.patch) by yi created at 2008-04-15 20:09:45
+Attachment [pb_unittest.2.patch](tarball://root/attachments/some-uuid/ticket2553/pb_unittest.2.patch) by @yqiang created at 2008-04-15 20:09:45
 
 This patch should apply cleanly against 3.0.alpha5.
 
@@ -149,7 +149,7 @@ archive/issue_comments_017433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2553#issuecomment-17433",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,16 +162,16 @@ also apply this to the scripts repo
 archive/issue_comments_017434.json:
 ```json
 {
-    "body": "Attachment [scripts-2553.patch](tarball://root/attachments/some-uuid/ticket2553/scripts-2553.patch) by was created at 2008-04-20 23:25:46\n\nREFEREE REPORT:\n\nI tested this on a bunch of platforms and it works.\n\nI read the code and it looks sane.\n\nCOMPLAINT: there is not a *single* line of documentation or comments anywhere\nthat explain why the new version works when the original didn't or what is\ngoing on.  Shame!  But I still give this a positive review so we can start\ntesting again.\n\nTO USE: Apply  pb_unittest.2.patch to hg_sage and scripts-2553.patch to hg_scripts",
+    "body": "Attachment [scripts-2553.patch](tarball://root/attachments/some-uuid/ticket2553/scripts-2553.patch) by @williamstein created at 2008-04-20 23:25:46\n\nREFEREE REPORT:\n\nI tested this on a bunch of platforms and it works.\n\nI read the code and it looks sane.\n\nCOMPLAINT: there is not a *single* line of documentation or comments anywhere\nthat explain why the new version works when the original didn't or what is\ngoing on.  Shame!  But I still give this a positive review so we can start\ntesting again.\n\nTO USE: Apply  pb_unittest.2.patch to hg_sage and scripts-2553.patch to hg_scripts",
     "created_at": "2008-04-20T23:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2553#issuecomment-17434",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-2553.patch](tarball://root/attachments/some-uuid/ticket2553/scripts-2553.patch) by was created at 2008-04-20 23:25:46
+Attachment [scripts-2553.patch](tarball://root/attachments/some-uuid/ticket2553/scripts-2553.patch) by @williamstein created at 2008-04-20 23:25:46
 
 REFEREE REPORT:
 
@@ -198,7 +198,7 @@ archive/issue_comments_017435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2553#issuecomment-17435",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

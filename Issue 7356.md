@@ -3,7 +3,7 @@
 archive/issues_007356.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nFloats have no LaTeX representation and are formated using str function. Thus output of latex(float(1e25)) is '1e+25' and not '1 \\times 10^{25}'. \n\nThe solution is to define function to handle this like the function below\n\n```\n\ndef float_function(x):\n    r\"\"\"\n    Returns the LaTeX code for a float ``x``.\n\n    INPUT: ``x`` - float number\n\n    EXAMPLES::\n\n        sage: from sage.misc.latex import float_function\n        sage: float_function(float(123.05))\n        '123.05'\n        sage: float_function(float(3e-15))\n        '3 \\\\times 10^{-15}'\n        sage: float_function(float(3.2e25))\n        '3.2 \\\\times 10^{25}'\n        sage: float_function(float(3.2e+15))\n        '3.2 \\\\times 10^{15}'\n\n        The output is in some cases shorter than latex method for real numbers.\n\n        sage: float_function(float(1e+15))\n        '1 \\\\times 10^{15}'\n    \"\"\"\n    s = str(x)\n    parts = s.split('e')\n    if len(parts) > 1:\n        # scientific notation\n        if parts[1][0] == '+':\n            parts[1] = parts[1][1:]\n        s = \"%s \\\\times 10^{%s}\" % (parts[0], parts[1])\n    return s\n```\n\n\nWill post simple patch, provided it passes tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7356\n\n",
+    "body": "Assignee: @aghitza\n\nFloats have no LaTeX representation and are formated using str function. Thus output of latex(float(1e25)) is '1e+25' and not '1 \\times 10^{25}'. \n\nThe solution is to define function to handle this like the function below\n\n```\n\ndef float_function(x):\n    r\"\"\"\n    Returns the LaTeX code for a float ``x``.\n\n    INPUT: ``x`` - float number\n\n    EXAMPLES::\n\n        sage: from sage.misc.latex import float_function\n        sage: float_function(float(123.05))\n        '123.05'\n        sage: float_function(float(3e-15))\n        '3 \\\\times 10^{-15}'\n        sage: float_function(float(3.2e25))\n        '3.2 \\\\times 10^{25}'\n        sage: float_function(float(3.2e+15))\n        '3.2 \\\\times 10^{15}'\n\n        The output is in some cases shorter than latex method for real numbers.\n\n        sage: float_function(float(1e+15))\n        '1 \\\\times 10^{15}'\n    \"\"\"\n    s = str(x)\n    parts = s.split('e')\n    if len(parts) > 1:\n        # scientific notation\n        if parts[1][0] == '+':\n            parts[1] = parts[1][1:]\n        s = \"%s \\\\times 10^{%s}\" % (parts[0], parts[1])\n    return s\n```\n\n\nWill post simple patch, provided it passes tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7356\n\n",
     "created_at": "2009-10-30T09:12:06Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007356.json:
     "title": "fixed latex representation for floats",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7356",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Floats have no LaTeX representation and are formated using str function. Thus output of latex(float(1e25)) is '1e+25' and not '1 \times 10^{25}'. 
 
@@ -72,16 +72,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7356
 archive/issue_comments_061634.json:
 ```json
 {
-    "body": "Attachment [trac_7356_marik.patch](tarball://root/attachments/some-uuid/ticket7356/trac_7356_marik.patch) by robert.marik created at 2009-10-30 10:42:44\n\nThe patch for 4.2 is attached. When running tests I got two errors not related to the change in this trac. The first one is solved in #6479.\n\n\n```\nsage -t  \"devel/sage/sage/calculus/desolvers.py\"\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n```\n",
+    "body": "Attachment [trac_7356_marik.patch](tarball://root/attachments/some-uuid/ticket7356/trac_7356_marik.patch) by @robert-marik created at 2009-10-30 10:42:44\n\nThe patch for 4.2 is attached. When running tests I got two errors not related to the change in this trac. The first one is solved in #6479.\n\n\n```\nsage -t  \"devel/sage/sage/calculus/desolvers.py\"\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n```\n",
     "created_at": "2009-10-30T10:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61634",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_7356_marik.patch](tarball://root/attachments/some-uuid/ticket7356/trac_7356_marik.patch) by robert.marik created at 2009-10-30 10:42:44
+Attachment [trac_7356_marik.patch](tarball://root/attachments/some-uuid/ticket7356/trac_7356_marik.patch) by @robert-marik created at 2009-10-30 10:42:44
 
 The patch for 4.2 is attached. When running tests I got two errors not related to the change in this trac. The first one is solved in #6479.
 
@@ -104,7 +104,7 @@ archive/issue_comments_061635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61635",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_061636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61636",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_061637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61637",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_061638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61638",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_061639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61639",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_061640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61640",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_061641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61641",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -233,16 +233,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_061642.json:
 ```json
 {
-    "body": "Attachment [latex-float-4.2.1.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1.patch) by robertwb created at 2009-11-20 05:30:03\n\nUse instead of other, applies on top of #7328",
+    "body": "Attachment [latex-float-4.2.1.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1.patch) by @robertwb created at 2009-11-20 05:30:03\n\nUse instead of other, applies on top of #7328",
     "created_at": "2009-11-20T05:30:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61642",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [latex-float-4.2.1.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1.patch) by robertwb created at 2009-11-20 05:30:03
+Attachment [latex-float-4.2.1.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1.patch) by @robertwb created at 2009-11-20 05:30:03
 
 Use instead of other, applies on top of #7328
 
@@ -258,7 +258,7 @@ archive/issue_comments_061643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61643",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -271,16 +271,16 @@ I agree, less digits should be printed. Floats are more like RDF than RR, so I'v
 archive/issue_comments_061644.json:
 ```json
 {
-    "body": "Attachment [latex-float-4.2.1-reviewer.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1-reviewer.patch) by robert.marik created at 2009-11-20 07:44:59\n\napply on top of latex-float-4.2.1.patch",
+    "body": "Attachment [latex-float-4.2.1-reviewer.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1-reviewer.patch) by @robert-marik created at 2009-11-20 07:44:59\n\napply on top of latex-float-4.2.1.patch",
     "created_at": "2009-11-20T07:44:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61644",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [latex-float-4.2.1-reviewer.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1-reviewer.patch) by robert.marik created at 2009-11-20 07:44:59
+Attachment [latex-float-4.2.1-reviewer.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1-reviewer.patch) by @robert-marik created at 2009-11-20 07:44:59
 
 apply on top of latex-float-4.2.1.patch
 
@@ -296,7 +296,7 @@ archive/issue_comments_061645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61645",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_061646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61646",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_061647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61647",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007727.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nThe following code fails with cryptid PariError:\n\n```\nsage: L.<a>=NumberField(x^3+2/3*x+3)\nsage: L.optimized_representation()\n```\n\n\nThe exact failure happens on the command f.polred(2), but I'm not sure what's wrong with it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7727\n\n",
+    "body": "Assignee: @loefflerd\n\nThe following code fails with cryptid PariError:\n\n```\nsage: L.<a>=NumberField(x^3+2/3*x+3)\nsage: L.optimized_representation()\n```\n\n\nThe exact failure happens on the command f.polred(2), but I'm not sure what's wrong with it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7727\n\n",
     "created_at": "2009-12-17T20:50:02Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_007727.json:
     "title": "optimized_representation fails,",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7727",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 The following code fails with cryptid PariError:
 
@@ -45,7 +45,7 @@ archive/issue_comments_066389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7727#issuecomment-66389",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_066390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7727#issuecomment-66390",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_066391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7727#issuecomment-66391",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_066392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7727#issuecomment-66392",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_066393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7727#issuecomment-66393",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_066394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7727#issuecomment-66394",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

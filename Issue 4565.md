@@ -14,7 +14,7 @@ archive/issues_004565.json:
     "title": "sage-3.2.rc2 -- fix all tex failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4565",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -113,7 +113,7 @@ archive/issue_comments_034193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4565#issuecomment-34193",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001015.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe attached patch does the following:\n\n1)  Adds and improves latex output\n\n2)  Fixes a bad multiplication bug\n\n3)  Adds ability to substitute in values in a free algebra (via __call__)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1015\n\n",
+    "body": "Assignee: @williamstein\n\nThe attached patch does the following:\n\n1)  Adds and improves latex output\n\n2)  Fixes a bad multiplication bug\n\n3)  Adds ability to substitute in values in a free algebra (via __call__)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1015\n\n",
     "created_at": "2007-10-27T23:49:18Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001015.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The attached patch does the following:
 
@@ -58,7 +58,7 @@ the bundle
 archive/issue_comments_006234.json:
 ```json
 {
-    "body": "Changing assignee from was to somebody.",
+    "body": "Changing assignee from @williamstein to somebody.",
     "created_at": "2007-10-27T23:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1015",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_006234.json:
 }
 ```
 
-Changing assignee from was to somebody.
+Changing assignee from @williamstein to somebody.
 
 
 

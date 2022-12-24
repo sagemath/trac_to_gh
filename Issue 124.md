@@ -3,7 +3,7 @@
 archive/issues_000124.json:
 ```json
 {
-    "body": "Assignee: moretti\n\nI get the following, indicating a bug with the way we send data to GAP.\n\n\n```\n\nsage: DihedralGroup(3)\n\nTraceback (most recent call last):\n    DihedralGroup(3)\n  File \"/home/moretti/sage/sage-1.4/local/lib/python2.5/\", line 1, in <module>\n    \n  File\n\"/home/moretti/sage/sage-1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\",\nline 954, in __init__\n    PermutationGroup_generic.__init__(self, [gen0, gen1], from_group = True)\n  File\n\"/home/moretti/sage/sage-1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\",\nline 195, in __init__\n    self.gens()\n  File\n\"/home/moretti/sage/sage-1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\",\nline 342, in gens\n    raise RuntimeError, \"(It might be necessary to install the database_gap optional SAGE package,\nif you haven't already.)\\n%s\"%s\nRuntimeError: (It might be necessary to install the database_gap optional SAGE package, if you\nhaven't already.)\nGap produced error output\nSyntax error: expression expected\n$sage8:=Group([(1,2,3), ((1,3),)]);;\n                               ^\n\n   executing $sage8:=Group([(1,2,3), ((1,3),)]);;\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/124\n\n",
+    "body": "Assignee: @bobmoretti\n\nI get the following, indicating a bug with the way we send data to GAP.\n\n\n```\n\nsage: DihedralGroup(3)\n\nTraceback (most recent call last):\n    DihedralGroup(3)\n  File \"/home/moretti/sage/sage-1.4/local/lib/python2.5/\", line 1, in <module>\n    \n  File\n\"/home/moretti/sage/sage-1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\",\nline 954, in __init__\n    PermutationGroup_generic.__init__(self, [gen0, gen1], from_group = True)\n  File\n\"/home/moretti/sage/sage-1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\",\nline 195, in __init__\n    self.gens()\n  File\n\"/home/moretti/sage/sage-1.4/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\",\nline 342, in gens\n    raise RuntimeError, \"(It might be necessary to install the database_gap optional SAGE package,\nif you haven't already.)\\n%s\"%s\nRuntimeError: (It might be necessary to install the database_gap optional SAGE package, if you\nhaven't already.)\nGap produced error output\nSyntax error: expression expected\n$sage8:=Group([(1,2,3), ((1,3),)]);;\n                               ^\n\n   executing $sage8:=Group([(1,2,3), ((1,3),)]);;\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/124\n\n",
     "created_at": "2006-10-10T06:07:35Z",
     "labels": [
         "algebraic geometry",
@@ -13,10 +13,10 @@ archive/issues_000124.json:
     "title": "Fix string comma errors with DihedralGroup(n) where n = 1,2 or 3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/124",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
-Assignee: moretti
+Assignee: @bobmoretti
 
 I get the following, indicating a bug with the way we send data to GAP.
 
@@ -69,7 +69,7 @@ archive/issue_comments_000567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/124#issuecomment-567",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_000568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/124#issuecomment-568",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 

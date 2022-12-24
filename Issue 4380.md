@@ -3,7 +3,7 @@
 archive/issues_004380.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: memory leak libsingular\n\nAt http://groups.google.com/group/sage-support/browse_thread/thread/b997f95c1e2503e0/5db5f9e7d4c8faf2 was discussion about a memory leak. I found a reasonably short bit of code that triggers the leak.\n\nIn `test.pyx`:\n\n```\nfrom sage.all import copy\n\ndef Test(I):\n    R=I.ring()\n    p=R.random_element()\n    J0=list(I.reduced_basis())\n    while(1):\n        J = copy(J0)\n        for i in range(100):\n            q=p.reduce(J)\n            J.append(q)\n```\n\n\nApparently the memory consumption should not grow, since `J` returns to its original state after finishing the `for` loop. However, the following `Sage` session is leaking (i.e., the memory consumption grows rapidly, and after a few seconds 1GB are filled up):\n\n```\nsage: attach test.pyx\nCompiling /home/king/Projekte/f5/test.pyx...\nsage: from sage.rings.ideal import Cyclic\nsage: R=PolynomialRing(QQ,'x',5)\nsage: I=Cyclic(R).homogenize()\nsage: Test(I)\n```\n\n\nThe `while` loop comprises\n1. copying of a Sequence (`J0`) of `MPolynomial_libsingular`\n2. reduction of `MPolynomial_libsingular`\n3. appending to a Sequence.\n\nIn one of these three steps must be the leak. I suspect it is the reduction and will try to verify it.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4380\n\n",
+    "body": "Assignee: @malb\n\nKeywords: memory leak libsingular\n\nAt http://groups.google.com/group/sage-support/browse_thread/thread/b997f95c1e2503e0/5db5f9e7d4c8faf2 was discussion about a memory leak. I found a reasonably short bit of code that triggers the leak.\n\nIn `test.pyx`:\n\n```\nfrom sage.all import copy\n\ndef Test(I):\n    R=I.ring()\n    p=R.random_element()\n    J0=list(I.reduced_basis())\n    while(1):\n        J = copy(J0)\n        for i in range(100):\n            q=p.reduce(J)\n            J.append(q)\n```\n\n\nApparently the memory consumption should not grow, since `J` returns to its original state after finishing the `for` loop. However, the following `Sage` session is leaking (i.e., the memory consumption grows rapidly, and after a few seconds 1GB are filled up):\n\n```\nsage: attach test.pyx\nCompiling /home/king/Projekte/f5/test.pyx...\nsage: from sage.rings.ideal import Cyclic\nsage: R=PolynomialRing(QQ,'x',5)\nsage: I=Cyclic(R).homogenize()\nsage: Test(I)\n```\n\n\nThe `while` loop comprises\n1. copying of a Sequence (`J0`) of `MPolynomial_libsingular`\n2. reduction of `MPolynomial_libsingular`\n3. appending to a Sequence.\n\nIn one of these three steps must be the leak. I suspect it is the reduction and will try to verify it.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4380\n\n",
     "created_at": "2008-10-29T09:27:48Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_004380.json:
     "title": "Memory Leak in libsingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4380",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: memory leak libsingular
 
@@ -76,7 +76,7 @@ archive/issue_comments_032221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4380#issuecomment-32221",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_032222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4380#issuecomment-32222",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_032223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4380#issuecomment-32223",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -164,16 +164,16 @@ Michael
 archive/issue_comments_032225.json:
 ```json
 {
-    "body": "Attachment [libsingularLeak.patch](tarball://root/attachments/some-uuid/ticket4380/libsingularLeak.patch) by SimonKing created at 2008-10-29 12:15:20\n\nFixing the leak, after a suggestion of malb",
+    "body": "Attachment [libsingularLeak.patch](tarball://root/attachments/some-uuid/ticket4380/libsingularLeak.patch) by @simon-king-jena created at 2008-10-29 12:15:20\n\nFixing the leak, after a suggestion of malb",
     "created_at": "2008-10-29T12:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4380#issuecomment-32225",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [libsingularLeak.patch](tarball://root/attachments/some-uuid/ticket4380/libsingularLeak.patch) by SimonKing created at 2008-10-29 12:15:20
+Attachment [libsingularLeak.patch](tarball://root/attachments/some-uuid/ticket4380/libsingularLeak.patch) by @simon-king-jena created at 2008-10-29 12:15:20
 
 Fixing the leak, after a suggestion of malb
 
@@ -189,7 +189,7 @@ archive/issue_comments_032226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4380#issuecomment-32226",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

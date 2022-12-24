@@ -3,7 +3,7 @@
 archive/issues_005166.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\nsage -t -long \"devel/sage/sage/symbolic/function.pyx\"       \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 377:\n    sage: f_list[8] # indices here depend on the GiNaC library\nExpected:\n    gamma\nGot nothing\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 379:\n    sage: f_list[12]\nExpected:\n    exp\nGot:\n    <function O at 0x8210170>\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 442:\n    sage: f_list[14]\nExpected:\n    sin\nGot:\n    <function log at 0xa2a8b30>\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 444:\n    sage: f_list[15]\nExpected:\n    cos\nGot:\n    sin\n**********************************************************************\n2 items had failures:\n   2 of   6 in __main__.example_6\n   2 of   6 in __main__.example_7\n***Test Failed*** 4 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5166\n\n",
+    "body": "Assignee: @burcin\n\n\n```\nsage -t -long \"devel/sage/sage/symbolic/function.pyx\"       \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 377:\n    sage: f_list[8] # indices here depend on the GiNaC library\nExpected:\n    gamma\nGot nothing\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 379:\n    sage: f_list[12]\nExpected:\n    exp\nGot:\n    <function O at 0x8210170>\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 442:\n    sage: f_list[14]\nExpected:\n    sin\nGot:\n    <function log at 0xa2a8b30>\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.alpha4/devel/sage/sage/symbolic/function.pyx\", line 444:\n    sage: f_list[15]\nExpected:\n    cos\nGot:\n    sin\n**********************************************************************\n2 items had failures:\n   2 of   6 in __main__.example_6\n   2 of   6 in __main__.example_7\n***Test Failed*** 4 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5166\n\n",
     "created_at": "2009-02-03T17:32:50Z",
     "labels": [
         "calculus",
@@ -17,7 +17,7 @@ archive/issues_005166.json:
     "user": "mabshoff"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -68,16 +68,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5166
 archive/issue_comments_039587.json:
 ```json
 {
-    "body": "Attachment [trac_5166-pynac_function_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket5166/trac_5166-pynac_function_doctest_failure.patch) by burcin created at 2009-02-04 08:50:50",
+    "body": "Attachment [trac_5166-pynac_function_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket5166/trac_5166-pynac_function_doctest_failure.patch) by @burcin created at 2009-02-04 08:50:50",
     "created_at": "2009-02-04T08:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5166#issuecomment-39587",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5166-pynac_function_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket5166/trac_5166-pynac_function_doctest_failure.patch) by burcin created at 2009-02-04 08:50:50
+Attachment [trac_5166-pynac_function_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket5166/trac_5166-pynac_function_doctest_failure.patch) by @burcin created at 2009-02-04 08:50:50
 
 
 

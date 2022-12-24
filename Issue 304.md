@@ -3,7 +3,7 @@
 archive/issues_000304.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: m = CuspForms(11*2^4,2); m.set_precision(13)\nsage: m.integral_basis()\n[\nq + O(q^13),\nq^2 + q^8 + O(q^13),\nq^3 + O(q^13),\nq^4 + O(q^13),\nq^5 + O(q^13),\nq^6 + 2*q^8 + O(q^13),\nq^7 + q^11 + O(q^13),\nq^8 + O(q^13),\nq^9 + O(q^13),\nq^10 + O(q^13),\nq^11 + O(q^13),\nq^12 + O(q^13),\n1 + O(q^13),\nq + 6*q^5 + 2*q^8 + 13*q^9 + O(q^13),\nq^2 + 4*q^6 + 6*q^10 + O(q^13),\nq^3 + 2*q^7 + O(q^13),\nq^4 + 4*q^12 + O(q^13),\n3*q^8 + O(q^13),\n2*q^11 + O(q^13)\n]\n```\n\n\nthere shouldn't be a series starting with 1.\n\nComputing everything to higher precision yields the right answer.  So ??\n\nIssue created by migration from https://trac.sagemath.org/ticket/304\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: m = CuspForms(11*2^4,2); m.set_precision(13)\nsage: m.integral_basis()\n[\nq + O(q^13),\nq^2 + q^8 + O(q^13),\nq^3 + O(q^13),\nq^4 + O(q^13),\nq^5 + O(q^13),\nq^6 + 2*q^8 + O(q^13),\nq^7 + q^11 + O(q^13),\nq^8 + O(q^13),\nq^9 + O(q^13),\nq^10 + O(q^13),\nq^11 + O(q^13),\nq^12 + O(q^13),\n1 + O(q^13),\nq + 6*q^5 + 2*q^8 + 13*q^9 + O(q^13),\nq^2 + 4*q^6 + 6*q^10 + O(q^13),\nq^3 + 2*q^7 + O(q^13),\nq^4 + 4*q^12 + O(q^13),\n3*q^8 + O(q^13),\n2*q^11 + O(q^13)\n]\n```\n\n\nthere shouldn't be a series starting with 1.\n\nComputing everything to higher precision yields the right answer.  So ??\n\nIssue created by migration from https://trac.sagemath.org/ticket/304\n\n",
     "created_at": "2007-03-01T18:06:29Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_000304.json:
     "title": "another modular forms bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/304",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -67,7 +67,7 @@ archive/issue_comments_001451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/304#issuecomment-1451",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_001452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/304#issuecomment-1452",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002872.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe bug is described below.  To fix this and close this ticket, just slightly\nrefactor the code in sage/sage/plot/plot3d/base.pyx so that save to png on a 3d image\nsaves the tachyon rendered file, gives an sobj on an sobj or no extension, and \ngives an error on all other extension.   This will be all one gets initially.\n\nAnother *later* ticket should -- if possible -- make it possible to get the static\nimage from jmol (if possible).\n\n\n```\nOn Thu, Apr 10, 2008 at 11:42 AM, Hector Villafuerte wrote:\n> \n>  Hi,\n>  I noticed the following (inconsistent?) behavior: saving 2D plots\n>  works as expected (a graphic file is stored), but saving 3D plots\n>  gives .sobj files instead (see sample code below). Is there a way to\n>  save 3D plots from the Notebook? By the way, I know how to save them\n>  using jMol's GUI (as reached from Sage terminal), but the idea is to\n>  be able to script this.\n>\n\nThis is a bug.  There's currently no easy nice way to script\nsaving 3d graphics using Tachyon.   If you do the following\n\n  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5, viewer='tachyon')\n  sage: p.show(filename='a', viewer='tachyon')\n\nthen the file a.png will be produced but unfortunately a browser window\nwill also appear showing this file.\n\n\n>  --\n>   Hector\n>  \n>  \n>  sage: p = point([(k,k^2) for k in [0..10]])\n>  sage: p.save(DATA+'plot2d.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot.Graphics'>\n>  \n>  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5)\n>  sage: p.save(DATA+'plot3d-1.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot3d.base.Graphics3dGroup'>\n>  \n>  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5, viewer='tachyon')\n>  sage: p.save(DATA+'plot3d-2.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot3d.base.Graphics3dGroup'>\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2872\n\n",
+    "body": "Assignee: @williamstein\n\nThe bug is described below.  To fix this and close this ticket, just slightly\nrefactor the code in sage/sage/plot/plot3d/base.pyx so that save to png on a 3d image\nsaves the tachyon rendered file, gives an sobj on an sobj or no extension, and \ngives an error on all other extension.   This will be all one gets initially.\n\nAnother *later* ticket should -- if possible -- make it possible to get the static\nimage from jmol (if possible).\n\n\n```\nOn Thu, Apr 10, 2008 at 11:42 AM, Hector Villafuerte wrote:\n> \n>  Hi,\n>  I noticed the following (inconsistent?) behavior: saving 2D plots\n>  works as expected (a graphic file is stored), but saving 3D plots\n>  gives .sobj files instead (see sample code below). Is there a way to\n>  save 3D plots from the Notebook? By the way, I know how to save them\n>  using jMol's GUI (as reached from Sage terminal), but the idea is to\n>  be able to script this.\n>\n\nThis is a bug.  There's currently no easy nice way to script\nsaving 3d graphics using Tachyon.   If you do the following\n\n  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5, viewer='tachyon')\n  sage: p.show(filename='a', viewer='tachyon')\n\nthen the file a.png will be produced but unfortunately a browser window\nwill also appear showing this file.\n\n\n>  --\n>   Hector\n>  \n>  \n>  sage: p = point([(k,k^2) for k in [0..10]])\n>  sage: p.save(DATA+'plot2d.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot.Graphics'>\n>  \n>  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5)\n>  sage: p.save(DATA+'plot3d-1.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot3d.base.Graphics3dGroup'>\n>  \n>  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5, viewer='tachyon')\n>  sage: p.save(DATA+'plot3d-2.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot3d.base.Graphics3dGroup'>\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2872\n\n",
     "created_at": "2008-04-10T20:14:29Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002872.json:
     "title": "3d graphics can't be saved to a file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2872",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The bug is described below.  To fix this and close this ticket, just slightly
 refactor the code in sage/sage/plot/plot3d/base.pyx so that save to png on a 3d image
@@ -89,7 +89,7 @@ archive/issue_comments_019707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19707",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_019710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19710",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_019711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19711",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_019714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19714",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_019715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19715",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_019716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19716",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_019717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19717",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_019719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19719",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_019720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19720",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_019721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19721",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_019722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19722",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_019723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19723",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -524,7 +524,7 @@ archive/issue_comments_019724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19724",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -572,7 +572,7 @@ archive/issue_comments_019726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19726",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -611,7 +611,7 @@ archive/issue_comments_019728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19728",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -652,7 +652,7 @@ archive/issue_comments_019730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19730",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -670,7 +670,7 @@ archive/issue_comments_019731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19731",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -688,7 +688,7 @@ archive/issue_comments_019732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19732",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

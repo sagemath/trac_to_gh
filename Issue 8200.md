@@ -3,7 +3,7 @@
 archive/issues_008200.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: ElementWrapper\n\nThe attached patch updates the doctests of ElementWrapper to use a custom dummy parent, rather than abusing from ZZ. This abuse could trigger a segfault (see #8177).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8200\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: ElementWrapper\n\nThe attached patch updates the doctests of ElementWrapper to use a custom dummy parent, rather than abusing from ZZ. This abuse could trigger a segfault (see #8177).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8200\n\n",
     "created_at": "2010-02-06T12:03:24Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_008200.json:
     "title": "ElementWrapper: doctests improvements to not abuse ZZ invariants",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8200",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -41,7 +41,7 @@ archive/issue_comments_072312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72312",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_review.
 archive/issue_comments_072313.json:
 ```json
 {
-    "body": "Attachment [trac_8200-element_wrapper_doctests-nt.patch](tarball://root/attachments/some-uuid/ticket8200/trac_8200-element_wrapper_doctests-nt.patch) by nthiery created at 2010-02-06 12:07:44",
+    "body": "Attachment [trac_8200-element_wrapper_doctests-nt.patch](tarball://root/attachments/some-uuid/ticket8200/trac_8200-element_wrapper_doctests-nt.patch) by @nthiery created at 2010-02-06 12:07:44",
     "created_at": "2010-02-06T12:07:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72313",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8200-element_wrapper_doctests-nt.patch](tarball://root/attachments/some-uuid/ticket8200/trac_8200-element_wrapper_doctests-nt.patch) by nthiery created at 2010-02-06 12:07:44
+Attachment [trac_8200-element_wrapper_doctests-nt.patch](tarball://root/attachments/some-uuid/ticket8200/trac_8200-element_wrapper_doctests-nt.patch) by @nthiery created at 2010-02-06 12:07:44
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_072314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72314",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_072315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72315",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_072316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72316",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -133,16 +133,16 @@ This passed sage -testall on a mac 10.6.2 applied to 4.3.2.rc0. However, am not 
 archive/issue_comments_072317.json:
 ```json
 {
-    "body": "Changing assignee from nthiery to was.",
+    "body": "Changing assignee from @nthiery to @williamstein.",
     "created_at": "2010-02-06T16:56:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72317",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from nthiery to was.
+Changing assignee from @nthiery to @williamstein.
 
 
 
@@ -156,7 +156,7 @@ archive/issue_comments_072318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72318",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_072319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72319",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_072320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72320",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_072321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72321",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_072322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72322",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -354,16 +354,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_072323.json:
 ```json
 {
-    "body": "Attachment [trac-8200-part2-referee.patch](tarball://root/attachments/some-uuid/ticket8200/trac-8200-part2-referee.patch) by was created at 2010-02-06 17:02:30",
+    "body": "Attachment [trac-8200-part2-referee.patch](tarball://root/attachments/some-uuid/ticket8200/trac-8200-part2-referee.patch) by @williamstein created at 2010-02-06 17:02:30",
     "created_at": "2010-02-06T17:02:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72323",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-8200-part2-referee.patch](tarball://root/attachments/some-uuid/ticket8200/trac-8200-part2-referee.patch) by was created at 2010-02-06 17:02:30
+Attachment [trac-8200-part2-referee.patch](tarball://root/attachments/some-uuid/ticket8200/trac-8200-part2-referee.patch) by @williamstein created at 2010-02-06 17:02:30
 
 
 
@@ -377,7 +377,7 @@ archive/issue_comments_072324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72324",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_072325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72325",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_072326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72326",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -443,7 +443,7 @@ archive/issue_comments_072327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72327",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -461,7 +461,7 @@ archive/issue_comments_072328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8200#issuecomment-72328",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

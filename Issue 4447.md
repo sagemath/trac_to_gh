@@ -3,7 +3,7 @@
 archive/issues_004447.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe attached patch fixes a number of small issues with updating graph attributes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4447\n\n",
+    "body": "Assignee: @rlmill\n\nThe attached patch fixes a number of small issues with updating graph attributes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4447\n\n",
     "created_at": "2008-11-05T19:09:05Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_004447.json:
     "title": "graph attributes (_boundary, _pos, etc.) are not updated properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4447",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The attached patch fixes a number of small issues with updating graph attributes.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4447
 archive/issue_comments_032795.json:
 ```json
 {
-    "body": "Attachment [graph-update-attributes.patch](tarball://root/attachments/some-uuid/ticket4447/graph-update-attributes.patch) by jason created at 2008-11-05 19:10:24\n\nall tests in graphs/*.py and graphs/*.pyx pass.",
+    "body": "Attachment [graph-update-attributes.patch](tarball://root/attachments/some-uuid/ticket4447/graph-update-attributes.patch) by @jasongrout created at 2008-11-05 19:10:24\n\nall tests in graphs/*.py and graphs/*.pyx pass.",
     "created_at": "2008-11-05T19:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4447#issuecomment-32795",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [graph-update-attributes.patch](tarball://root/attachments/some-uuid/ticket4447/graph-update-attributes.patch) by jason created at 2008-11-05 19:10:24
+Attachment [graph-update-attributes.patch](tarball://root/attachments/some-uuid/ticket4447/graph-update-attributes.patch) by @jasongrout created at 2008-11-05 19:10:24
 
 all tests in graphs/*.py and graphs/*.pyx pass.
 
@@ -57,7 +57,7 @@ archive/issue_comments_032796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4447#issuecomment-32796",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

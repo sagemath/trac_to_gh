@@ -3,7 +3,7 @@
 archive/issues_000105.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\nIt would be very useful to have a feature in the notebook, where you\ncould get the entire thing as one big html tarball.  E.g., I have a bunch\nof worksheets in a notebook I made with Barry Mazur, and I want to\nmake them very easy for him to browse \"offline\" without SAGE.  I\nhave to go through each individually and save the .html.   We should\nthink of a nice design for this...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/105\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nIt would be very useful to have a feature in the notebook, where you\ncould get the entire thing as one big html tarball.  E.g., I have a bunch\nof worksheets in a notebook I made with Barry Mazur, and I want to\nmake them very easy for him to browse \"offline\" without SAGE.  I\nhave to go through each individually and save the .html.   We should\nthink of a nice design for this...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/105\n\n",
     "created_at": "2006-10-03T02:44:39Z",
     "labels": [
         "user interface",
@@ -14,12 +14,12 @@ archive/issues_000105.json:
     "title": "notebook: save everything to an html tarball",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/105",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 It would be very useful to have a feature in the notebook, where you
 could get the entire thing as one big html tarball.  E.g., I have a bunch
@@ -45,7 +45,7 @@ archive/issue_comments_000493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/105#issuecomment-493",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -58,16 +58,16 @@ Changing component from user interface to notebook.
 archive/issue_comments_000494.json:
 ```json
 {
-    "body": "Changing assignee from was to boothby.",
+    "body": "Changing assignee from @williamstein to boothby.",
     "created_at": "2009-01-14T08:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/105#issuecomment-494",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to boothby.
+Changing assignee from @williamstein to boothby.
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_000495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/105#issuecomment-495",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_000496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/105#issuecomment-496",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_000497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/105#issuecomment-497",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_000498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/105#issuecomment-498",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_000499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/105#issuecomment-499",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_000500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/105#issuecomment-500",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_000501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/105#issuecomment-501",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_000502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/105#issuecomment-502",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

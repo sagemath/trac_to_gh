@@ -3,7 +3,7 @@
 archive/issues_007398.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat was\n\nKeywords: iterators\n\nThe following mantra occurs at three places in Sage's code to test whether v is an iterator:\n\n     if hasattr(v, 'next'):\n\nThis patches replaces them with:\n\n     if hasattr(v, '__iter__')\n\nwhich is safer (some sage objects have a next method without being iterable, or with a different semantic)\n\nif not just, when appropriate:\n\n     v = iter(v)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7398\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat @williamstein\n\nKeywords: iterators\n\nThe following mantra occurs at three places in Sage's code to test whether v is an iterator:\n\n     if hasattr(v, 'next'):\n\nThis patches replaces them with:\n\n     if hasattr(v, '__iter__')\n\nwhich is safer (some sage objects have a next method without being iterable, or with a different semantic)\n\nif not just, when appropriate:\n\n     v = iter(v)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7398\n\n",
     "created_at": "2009-11-05T18:15:27Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_007398.json:
     "title": "Improved mantra to find whether an object is iterable (and get an iterator out it)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7398",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
-CC:  sage-combinat was
+CC:  sage-combinat @williamstein
 
 Keywords: iterators
 
@@ -53,7 +53,7 @@ archive/issue_comments_062200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62200",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -66,16 +66,16 @@ Changing status from new to needs_review.
 archive/issue_comments_062201.json:
 ```json
 {
-    "body": "Attachment [trac_7398_iter_detect-fh.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.patch) by hivert created at 2009-11-05 22:47:31",
+    "body": "Attachment [trac_7398_iter_detect-fh.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.patch) by @hivert created at 2009-11-05 22:47:31",
     "created_at": "2009-11-05T22:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62201",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7398_iter_detect-fh.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.patch) by hivert created at 2009-11-05 22:47:31
+Attachment [trac_7398_iter_detect-fh.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.patch) by @hivert created at 2009-11-05 22:47:31
 
 
 
@@ -84,16 +84,16 @@ Attachment [trac_7398_iter_detect-fh.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_062202.json:
 ```json
 {
-    "body": "Attachment [trac_7398_iter_detect-fh.2.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.2.patch) by nthiery created at 2009-11-06 13:58:11\n\nUpdated patch after review by Nicolas (uses itertools to simplify further  sage.server.interact.list_of_first_n)",
+    "body": "Attachment [trac_7398_iter_detect-fh.2.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.2.patch) by @nthiery created at 2009-11-06 13:58:11\n\nUpdated patch after review by Nicolas (uses itertools to simplify further  sage.server.interact.list_of_first_n)",
     "created_at": "2009-11-06T13:58:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62202",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7398_iter_detect-fh.2.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.2.patch) by nthiery created at 2009-11-06 13:58:11
+Attachment [trac_7398_iter_detect-fh.2.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.2.patch) by @nthiery created at 2009-11-06 13:58:11
 
 Updated patch after review by Nicolas (uses itertools to simplify further  sage.server.interact.list_of_first_n)
 
@@ -109,7 +109,7 @@ archive/issue_comments_062203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62203",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_062204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62204",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_062205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62205",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_062206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62206",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_062207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62207",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_062208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62208",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -214,16 +214,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_062209.json:
 ```json
 {
-    "body": "Attachment [trac_7398_iter_detect-fh.3.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.3.patch) by hivert created at 2009-11-06 21:15:51\n\nNicolas : can you re-review this patch...\nI commented out some line saying that it was never user and actually is was quite a lot... I don't understand why we didn't caught it by the tests. Anyway, Massena did.\n\nSorry for the mess,\n\nFlorent",
+    "body": "Attachment [trac_7398_iter_detect-fh.3.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.3.patch) by @hivert created at 2009-11-06 21:15:51\n\nNicolas : can you re-review this patch...\nI commented out some line saying that it was never user and actually is was quite a lot... I don't understand why we didn't caught it by the tests. Anyway, Massena did.\n\nSorry for the mess,\n\nFlorent",
     "created_at": "2009-11-06T21:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62209",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7398_iter_detect-fh.3.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.3.patch) by hivert created at 2009-11-06 21:15:51
+Attachment [trac_7398_iter_detect-fh.3.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_iter_detect-fh.3.patch) by @hivert created at 2009-11-06 21:15:51
 
 Nicolas : can you re-review this patch...
 I commented out some line saying that it was never user and actually is was quite a lot... I don't understand why we didn't caught it by the tests. Anyway, Massena did.
@@ -239,16 +239,16 @@ Florent
 archive/issue_comments_062210.json:
 ```json
 {
-    "body": "Attachment [trac_7398_combclass_set_compat-fh.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_combclass_set_compat-fh.patch) by hivert created at 2009-11-09 16:30:11",
+    "body": "Attachment [trac_7398_combclass_set_compat-fh.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_combclass_set_compat-fh.patch) by @hivert created at 2009-11-09 16:30:11",
     "created_at": "2009-11-09T16:30:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62210",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7398_combclass_set_compat-fh.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_combclass_set_compat-fh.patch) by hivert created at 2009-11-09 16:30:11
+Attachment [trac_7398_combclass_set_compat-fh.patch](tarball://root/attachments/some-uuid/ticket7398/trac_7398_combclass_set_compat-fh.patch) by @hivert created at 2009-11-09 16:30:11
 
 
 
@@ -262,7 +262,7 @@ archive/issue_comments_062211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62211",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_062212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62212",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_062213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7398#issuecomment-62213",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

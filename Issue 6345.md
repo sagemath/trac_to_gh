@@ -3,7 +3,7 @@
 archive/issues_006345.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu\n\nKeywords: preparse ipython attach load\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/9aa4fa8cdb5d8b90:\n\n\n```\nAfter a lot of headaches over some mysterious behaviour in some\nscripts, I found the following:\nI have two files:\ntest1.sage contains:\nattach test2.sage\nprint \"test1\", 1/2\n\ntest2.sage contains:\nprint \"test2\", 1/2\n\nWhen I say on the command line of sage 3.3: attach test1.sage, the\noutput is (correctly):\nsage: attach test1.sage\ntest2 1/2\ntest1 1/2\n\nBut on sage 4.01, the output is:\nsage: attach test1.sage\ntest2 0\ntest1 1/2\n\nIt looks as if on a file that is attached from another attached file,\nno preparsing takes place. If within this same session I touch\ntest2.sage, it works fine. \n```\n\n\nThis is only a problem in the IPython interpeter; when running from the command line, the files are recursively preparsed correctly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6345\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nKeywords: preparse ipython attach load\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/9aa4fa8cdb5d8b90:\n\n\n```\nAfter a lot of headaches over some mysterious behaviour in some\nscripts, I found the following:\nI have two files:\ntest1.sage contains:\nattach test2.sage\nprint \"test1\", 1/2\n\ntest2.sage contains:\nprint \"test2\", 1/2\n\nWhen I say on the command line of sage 3.3: attach test1.sage, the\noutput is (correctly):\nsage: attach test1.sage\ntest2 1/2\ntest1 1/2\n\nBut on sage 4.01, the output is:\nsage: attach test1.sage\ntest2 0\ntest1 1/2\n\nIt looks as if on a file that is attached from another attached file,\nno preparsing takes place. If within this same session I touch\ntest2.sage, it works fine. \n```\n\n\nThis is only a problem in the IPython interpeter; when running from the command line, the files are recursively preparsed correctly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6345\n\n",
     "created_at": "2009-06-17T00:51:06Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_006345.json:
     "title": "load/attach do not recursively preparse files when run in interpreter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6345",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  mvngu
 
@@ -72,7 +72,7 @@ archive/issue_comments_050729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6345#issuecomment-50729",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_050730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6345#issuecomment-50730",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_050731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6345#issuecomment-50731",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

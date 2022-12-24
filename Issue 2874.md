@@ -3,7 +3,7 @@
 archive/issues_002874.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nThis patch was written with Justin Walker, who originally coded the exceptional group root systems based on data from Bourbaki. The patch does 3 things.\n\n(1) Replaces self.dim with self.rank in AmbientLattice_e and corrects some related misinformation in a comment in the file. (The a comment in the file formerly said that E6 had rank 5.)\n\n(2) Adds tests. We checked the dimensions of the fundamental representations against what they are supposed to be (from another source), which is a convincing test that all the root data are correct.\n\n(3) Adds a credit for Justin in the file. This was my idea since I know Justin worked hard on getting the exceptional groups coded but if it is controversial it can be taken down.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2874\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis patch was written with Justin Walker, who originally coded the exceptional group root systems based on data from Bourbaki. The patch does 3 things.\n\n(1) Replaces self.dim with self.rank in AmbientLattice_e and corrects some related misinformation in a comment in the file. (The a comment in the file formerly said that E6 had rank 5.)\n\n(2) Adds tests. We checked the dimensions of the fundamental representations against what they are supposed to be (from another source), which is a convincing test that all the root data are correct.\n\n(3) Adds a credit for Justin in the file. This was my idea since I know Justin worked hard on getting the exceptional groups coded but if it is controversial it can be taken down.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2874\n\n",
     "created_at": "2008-04-11T00:55:08Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002874.json:
     "title": "add tests for type E root system, correct some misinformation in root_system.py, add Justin Walker credit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2874",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2874
 archive/issue_comments_019744.json:
 ```json
 {
-    "body": "Attachment [rootsystem.patch](tarball://root/attachments/some-uuid/ticket2874/rootsystem.patch) by bump created at 2008-04-11 00:56:36",
+    "body": "Attachment [rootsystem.patch](tarball://root/attachments/some-uuid/ticket2874/rootsystem.patch) by @dwbump created at 2008-04-11 00:56:36",
     "created_at": "2008-04-11T00:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2874#issuecomment-19744",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [rootsystem.patch](tarball://root/attachments/some-uuid/ticket2874/rootsystem.patch) by bump created at 2008-04-11 00:56:36
+Attachment [rootsystem.patch](tarball://root/attachments/some-uuid/ticket2874/rootsystem.patch) by @dwbump created at 2008-04-11 00:56:36
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_019745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2874#issuecomment-19745",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

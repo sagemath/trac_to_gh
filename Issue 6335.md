@@ -14,7 +14,7 @@ archive/issues_006335.json:
     "title": "optional doctest failure -- kash interface (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6335",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -52,7 +52,7 @@ archive/issue_comments_050566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6335#issuecomment-50566",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_050567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6335#issuecomment-50567",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_050568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6335#issuecomment-50568",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_050569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6335#issuecomment-50569",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 

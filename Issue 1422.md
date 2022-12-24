@@ -3,7 +3,7 @@
 archive/issues_001422.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  burcin ranosch\n\n6.3 how do i reference sage?\nIf you write a paper using SAGE, please reference computations done with\nSAGE by including\n[SAGE], SAGE Mathematical Software, Version 2.6, http://www.sagemath.org\n<sup>^</sup>\nHow about a function bibtex() similar to latex() which gives a bibtex\nentry? Coudl default to bibtex(sage) but could also provide\nbibtex(pari), bibtex(gp), bibtex(Singular), etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1422\n\n",
+    "body": "Assignee: tba\n\nCC:  @burcin ranosch\n\n6.3 how do i reference sage?\nIf you write a paper using SAGE, please reference computations done with\nSAGE by including\n[SAGE], SAGE Mathematical Software, Version 2.6, http://www.sagemath.org\n<sup>^</sup>\nHow about a function bibtex() similar to latex() which gives a bibtex\nentry? Coudl default to bibtex(sage) but could also provide\nbibtex(pari), bibtex(gp), bibtex(Singular), etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1422\n\n",
     "created_at": "2007-12-07T21:42:23Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_001422.json:
     "title": "add bibtex function to get the bibtex code for citing the sage components",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1422",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
 
-CC:  burcin ranosch
+CC:  @burcin ranosch
 
 6.3 how do i reference sage?
 If you write a paper using SAGE, please reference computations done with
@@ -46,7 +46,7 @@ archive/issue_comments_009172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1422#issuecomment-9172",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

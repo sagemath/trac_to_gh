@@ -3,7 +3,7 @@
 archive/issues_001250.json:
 ```json
 {
-    "body": "Assignee: malb\n\neasy fix.  use _sig_on / _sig_off. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1250\n\n",
+    "body": "Assignee: @malb\n\neasy fix.  use _sig_on / _sig_off. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1250\n\n",
     "created_at": "2007-11-23T21:28:21Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001250.json:
     "title": "[with patch] multivariate polynomial factorization -- control-c to cancel out doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1250",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 easy fix.  use _sig_on / _sig_off. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1250
 archive/issue_comments_007828.json:
 ```json
 {
-    "body": "Attachment [trac1250.patch](tarball://root/attachments/some-uuid/ticket1250/trac1250.patch) by was created at 2007-11-23 21:30:33",
+    "body": "Attachment [trac1250.patch](tarball://root/attachments/some-uuid/ticket1250/trac1250.patch) by @williamstein created at 2007-11-23 21:30:33",
     "created_at": "2007-11-23T21:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1250#issuecomment-7828",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac1250.patch](tarball://root/attachments/some-uuid/ticket1250/trac1250.patch) by was created at 2007-11-23 21:30:33
+Attachment [trac1250.patch](tarball://root/attachments/some-uuid/ticket1250/trac1250.patch) by @williamstein created at 2007-11-23 21:30:33
 
 
 

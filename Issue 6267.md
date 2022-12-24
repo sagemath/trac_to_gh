@@ -14,7 +14,7 @@ archive/issues_006267.json:
     "title": "Same typesetting for two different variables:",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6267",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 Assignee: cwitty
@@ -51,7 +51,7 @@ archive/issue_comments_050059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6267#issuecomment-50059",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_050060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6267#issuecomment-50060",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_050061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6267#issuecomment-50061",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_050062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6267#issuecomment-50062",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_050063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6267#issuecomment-50063",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

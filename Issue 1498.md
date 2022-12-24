@@ -14,7 +14,7 @@ archive/issues_001498.json:
     "title": "notebook -- bug in keeping track of date of last edit of worksheets maybe",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1498",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -56,7 +56,7 @@ archive/issue_comments_009615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1498#issuecomment-9615",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_009616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1498#issuecomment-9616",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

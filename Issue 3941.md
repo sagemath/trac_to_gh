@@ -3,7 +3,7 @@
 archive/issues_003941.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nIn MMA, you can thread the derivative over lists of variables and functions to compute the Jacobian.  Here's a routine that wraps the sage diff function to do it.  \n\n\n```\ndef diff(f,*args):\n    if isinstance(f, (list, tuple)):\n        return [diff(component,*args) for component in f]\n    else:\n        if isinstance(args[0], (list, tuple)):\n            return [diff(f,variable) for variable in args[0]]\n        else:\n            return sage.all.diff(f,*args)\n```\n\n\nand the results:\n\n\n```\nsage: var('a,b,c,d,x,y')\nsage: diff((a*x+b*y,c*x+d*y),(x,y))\n[[a, b], [c, d]]\n```\n\n\nwell, so the result is not really a matrix, but rather a nested list that could be indexed like a matrix or turned into a matrix in the above case.\n\n\nWe could write the above even more simply if we had an outer product operator: \n\nouter_product(diff,f,vars), where f and vars were lists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3941\n\n",
+    "body": "Assignee: @garyfurnish\n\nIn MMA, you can thread the derivative over lists of variables and functions to compute the Jacobian.  Here's a routine that wraps the sage diff function to do it.  \n\n\n```\ndef diff(f,*args):\n    if isinstance(f, (list, tuple)):\n        return [diff(component,*args) for component in f]\n    else:\n        if isinstance(args[0], (list, tuple)):\n            return [diff(f,variable) for variable in args[0]]\n        else:\n            return sage.all.diff(f,*args)\n```\n\n\nand the results:\n\n\n```\nsage: var('a,b,c,d,x,y')\nsage: diff((a*x+b*y,c*x+d*y),(x,y))\n[[a, b], [c, d]]\n```\n\n\nwell, so the result is not really a matrix, but rather a nested list that could be indexed like a matrix or turned into a matrix in the above case.\n\n\nWe could write the above even more simply if we had an outer product operator: \n\nouter_product(diff,f,vars), where f and vars were lists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3941\n\n",
     "created_at": "2008-08-24T05:13:27Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003941.json:
     "title": "threading diff over lists to give the jacobian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3941",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 In MMA, you can thread the derivative over lists of variables and functions to compute the Jacobian.  Here's a routine that wraps the sage diff function to do it.  
 
@@ -67,7 +67,7 @@ archive/issue_comments_028256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28256",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_028257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28257",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -98,16 +98,16 @@ Changing status from new to assigned.
 archive/issue_comments_028258.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to jason.",
+    "body": "Changing assignee from @garyfurnish to @jasongrout.",
     "created_at": "2008-11-14T06:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28258",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from gfurnish to jason.
+Changing assignee from @garyfurnish to @jasongrout.
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_028259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28259",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_028260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28260",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_028261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28261",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_028262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28262",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_028263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28263",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_028264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28264",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

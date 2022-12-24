@@ -3,7 +3,7 @@
 archive/issues_005988.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  timdumol\n\nI strongly agree with the following feature request.  I have wanted the same feature myself.\n\n\n```\nIf the sage notebook server is restarted while a logged in user is\nviewing a notebook page, a user attempt to refresh the page results in\na completely blank page titled \"Error | Sage Notebook\".  The user must\nmanually edit the URL to go back to the main server page and login\nagain, presumably because the login credentials have been lost with\nthe server reboot.\n\nBut, it may not be obvious to all users what they need to do to\nrecover from this situation.  Is there some twisted option I can set\nto either redirect the browser back to the login page, or to add\nexplanatory text to the blank page with a link to the login page?  If\nneither of these options is currently possible, I'd like to make a\nfeature request to enhance the server response to an attempt to access\na page when a user is apparently not logged in, to provide the user\nwith a useful page, rather than a completely blank page.\n\nI'm running sage 3.4.2.\n\nThanks,\n--\nKevin Horton\nOttawa, Canada\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5988\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol\n\nI strongly agree with the following feature request.  I have wanted the same feature myself.\n\n\n```\nIf the sage notebook server is restarted while a logged in user is\nviewing a notebook page, a user attempt to refresh the page results in\na completely blank page titled \"Error | Sage Notebook\".  The user must\nmanually edit the URL to go back to the main server page and login\nagain, presumably because the login credentials have been lost with\nthe server reboot.\n\nBut, it may not be obvious to all users what they need to do to\nrecover from this situation.  Is there some twisted option I can set\nto either redirect the browser back to the login page, or to add\nexplanatory text to the blank page with a link to the login page?  If\nneither of these options is currently possible, I'd like to make a\nfeature request to enhance the server response to an attempt to access\na page when a user is apparently not logged in, to provide the user\nwith a useful page, rather than a completely blank page.\n\nI'm running sage 3.4.2.\n\nThanks,\n--\nKevin Horton\nOttawa, Canada\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5988\n\n",
     "created_at": "2009-05-05T14:22:58Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005988.json:
     "title": "notebook feature request -- make it so non-logged in users are redirected to login page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5988",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  timdumol
+CC:  @TimDumol
 
 I strongly agree with the following feature request.  I have wanted the same feature myself.
 
@@ -89,7 +89,7 @@ archive/issue_comments_047588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5988#issuecomment-47588",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_047589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5988#issuecomment-47589",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_047590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5988#issuecomment-47590",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_047591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5988#issuecomment-47591",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_047592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5988#issuecomment-47592",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_047593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5988#issuecomment-47593",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

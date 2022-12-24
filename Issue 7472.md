@@ -3,7 +3,7 @@
 archive/issues_007472.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: taylor polynomial, derivative\n\nmake taylor(x*y^3,[x,y],[1,-1],4) work\n\nIssue created by migration from https://trac.sagemath.org/ticket/7472\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: taylor polynomial, derivative\n\nmake taylor(x*y^3,[x,y],[1,-1],4) work\n\nIssue created by migration from https://trac.sagemath.org/ticket/7472\n\n",
     "created_at": "2009-11-16T09:26:26Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_007472.json:
     "title": "Taylor polynomial in two variables does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7472",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: taylor polynomial, derivative
 
@@ -39,7 +39,7 @@ archive/issue_comments_062936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62936",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_062937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62937",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -70,16 +70,16 @@ I hope it has been fixed by the attached patch.
 archive/issue_comments_062938.json:
 ```json
 {
-    "body": "Attachment [trac-7472-taylor.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor.patch) by robert.marik created at 2009-11-16 09:32:27",
+    "body": "Attachment [trac-7472-taylor.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor.patch) by @robert-marik created at 2009-11-16 09:32:27",
     "created_at": "2009-11-16T09:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62938",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac-7472-taylor.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor.patch) by robert.marik created at 2009-11-16 09:32:27
+Attachment [trac-7472-taylor.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor.patch) by @robert-marik created at 2009-11-16 09:32:27
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_062939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62939",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -106,16 +106,16 @@ this patch should be installed on the top of previous patch and improves documen
 archive/issue_comments_062940.json:
 ```json
 {
-    "body": "Attachment [trac-7472-taylor-fixed_doc.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor-fixed_doc.patch) by robert.marik created at 2009-11-16 10:32:02",
+    "body": "Attachment [trac-7472-taylor-fixed_doc.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor-fixed_doc.patch) by @robert-marik created at 2009-11-16 10:32:02",
     "created_at": "2009-11-16T10:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62940",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac-7472-taylor-fixed_doc.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor-fixed_doc.patch) by robert.marik created at 2009-11-16 10:32:02
+Attachment [trac-7472-taylor-fixed_doc.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor-fixed_doc.patch) by @robert-marik created at 2009-11-16 10:32:02
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_062941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62941",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_062942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62942",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_062943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62943",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_062944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62944",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_062945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62945",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_062946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62946",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -251,16 +251,16 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_062947.json:
 ```json
 {
-    "body": "Attachment [trac-7472-taylor-experimental.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor-experimental.patch) by robert.marik created at 2009-11-23 19:31:08",
+    "body": "Attachment [trac-7472-taylor-experimental.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor-experimental.patch) by @robert-marik created at 2009-11-23 19:31:08",
     "created_at": "2009-11-23T19:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62947",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac-7472-taylor-experimental.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor-experimental.patch) by robert.marik created at 2009-11-23 19:31:08
+Attachment [trac-7472-taylor-experimental.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-taylor-experimental.patch) by @robert-marik created at 2009-11-23 19:31:08
 
 
 
@@ -274,7 +274,7 @@ archive/issue_comments_062948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62948",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_062949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62949",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -305,16 +305,16 @@ New patch, replaces all previous patches. Notation is more Sage like.
 archive/issue_comments_062950.json:
 ```json
 {
-    "body": "Attachment [trac-7472.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472.patch) by robert.marik created at 2010-01-05 20:19:53",
+    "body": "Attachment [trac-7472.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472.patch) by @robert-marik created at 2010-01-05 20:19:53",
     "created_at": "2010-01-05T20:19:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62950",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac-7472.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472.patch) by robert.marik created at 2010-01-05 20:19:53
+Attachment [trac-7472.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472.patch) by @robert-marik created at 2010-01-05 20:19:53
 
 
 
@@ -328,7 +328,7 @@ archive/issue_comments_062951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62951",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_062952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62952",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_062953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62953",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_062954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62954",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_062955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62955",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_062956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62956",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_062957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62957",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_062958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62958",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -536,13 +536,13 @@ Resolution: fixed
 archive/issue_comments_062959.json:
 ```json
 {
-    "body": "Attachment [trac-7472-review.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-review.patch) by rlm created at 2010-01-18 22:57:36",
+    "body": "Attachment [trac-7472-review.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-review.patch) by @rlmill created at 2010-01-18 22:57:36",
     "created_at": "2010-01-18T22:57:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7472#issuecomment-62959",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-7472-review.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-review.patch) by rlm created at 2010-01-18 22:57:36
+Attachment [trac-7472-review.patch](tarball://root/attachments/some-uuid/ticket7472/trac-7472-review.patch) by @rlmill created at 2010-01-18 22:57:36

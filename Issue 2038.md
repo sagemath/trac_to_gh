@@ -3,7 +3,7 @@
 archive/issues_002038.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt used to be that this would give a sensible error message about the number of points at which evaluating the function failed (and what the first error was):\n\n\n```\nsage: plot(factorial,(2,10))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/plot/plot.py in __call__(self, funcs, *args, **kwds)\n   3343             # if there is one extra arg, then it had better be a tuple\n   3344             elif n == 1:\n-> 3345                 G = self._call(funcs, *args, **kwds)\n   3346             elif n == 2:\n   3347             # if ther eare two extra args, then pull them out and pass them as a tuple\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/plot/plot.py in _call(self, funcs, xrange, parametric, polar, label, **kwds)\n   3419         del options['plot_division']\n   3420         while i < len(data) - 1:\n-> 3421             if abs(data[i+1][1] - data[i][1]) > max_bend:\n   3422                 x = (data[i+1][0] + data[i][0])/2\n   3423                 try:\n\n<type 'exceptions.TypeError'>: 'float' object is unsubscriptable\n```\n\n\nThe exception of course should mention that:\n\n\n```\nsage: factorial(1.5)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/arith.py in factorial(n, algorithm)\n    273     Z = integer_ring.ZZ\n    274     if algorithm == 'gmp':\n--> 275         return Z(n).factorial()\n    276     elif algorithm == 'pari':\n    277         return Z(pari('%s!'%Z(n)))\n\n/Users/was/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: Attempt to coerce non-integral RealNumber to Integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2038\n\n",
+    "body": "Assignee: @williamstein\n\nIt used to be that this would give a sensible error message about the number of points at which evaluating the function failed (and what the first error was):\n\n\n```\nsage: plot(factorial,(2,10))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/plot/plot.py in __call__(self, funcs, *args, **kwds)\n   3343             # if there is one extra arg, then it had better be a tuple\n   3344             elif n == 1:\n-> 3345                 G = self._call(funcs, *args, **kwds)\n   3346             elif n == 2:\n   3347             # if ther eare two extra args, then pull them out and pass them as a tuple\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/plot/plot.py in _call(self, funcs, xrange, parametric, polar, label, **kwds)\n   3419         del options['plot_division']\n   3420         while i < len(data) - 1:\n-> 3421             if abs(data[i+1][1] - data[i][1]) > max_bend:\n   3422                 x = (data[i+1][0] + data[i][0])/2\n   3423                 try:\n\n<type 'exceptions.TypeError'>: 'float' object is unsubscriptable\n```\n\n\nThe exception of course should mention that:\n\n\n```\nsage: factorial(1.5)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/rings/arith.py in factorial(n, algorithm)\n    273     Z = integer_ring.ZZ\n    274     if algorithm == 'gmp':\n--> 275         return Z(n).factorial()\n    276     elif algorithm == 'pari':\n    277         return Z(pari('%s!'%Z(n)))\n\n/Users/was/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__()\n\n<type 'exceptions.TypeError'>: Attempt to coerce non-integral RealNumber to Integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2038\n\n",
     "created_at": "2008-02-03T20:00:23Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002038.json:
     "title": "plotting -- error message when failing to evaluate at a point is now sucky (it used to be good)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2038",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It used to be that this would give a sensible error message about the number of points at which evaluating the function failed (and what the first error was):
 
@@ -86,7 +86,7 @@ archive/issue_comments_013188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2038#issuecomment-13188",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,16 +99,16 @@ See also #2045.
 archive/issue_comments_013189.json:
 ```json
 {
-    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket2038/plot.patch) by moretti created at 2008-02-08 00:03:20",
+    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket2038/plot.patch) by @bobmoretti created at 2008-02-08 00:03:20",
     "created_at": "2008-02-08T00:03:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2038#issuecomment-13189",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
-Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket2038/plot.patch) by moretti created at 2008-02-08 00:03:20
+Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket2038/plot.patch) by @bobmoretti created at 2008-02-08 00:03:20
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_013190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2038#issuecomment-13190",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_013191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2038#issuecomment-13191",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_013192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2038#issuecomment-13192",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_013193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2038#issuecomment-13193",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_013194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2038#issuecomment-13194",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_013195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2038#issuecomment-13195",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_013196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2038#issuecomment-13196",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_013197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2038#issuecomment-13197",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

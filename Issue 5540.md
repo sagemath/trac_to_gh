@@ -14,7 +14,7 @@ archive/issues_005540.json:
     "title": "search_doc produces incorrect URLs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5540",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tba
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5540
 archive/issue_comments_043096.json:
 ```json
 {
-    "body": "Changing assignee from tba to jhpalmieri.",
+    "body": "Changing assignee from tba to @jhpalmieri.",
     "created_at": "2009-03-17T03:22:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5540#issuecomment-43096",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from tba to jhpalmieri.
+Changing assignee from tba to @jhpalmieri.
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_043097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5540#issuecomment-43097",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_043098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5540#issuecomment-43098",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_043099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5540#issuecomment-43099",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -120,16 +120,16 @@ The attached patch fixes the problem for me.  I fixed the URLs by getting rid of
 archive/issue_comments_043100.json:
 ```json
 {
-    "body": "Attachment [5540.patch](tarball://root/attachments/some-uuid/ticket5540/5540.patch) by nbruin created at 2009-03-17 04:06:43\n\nPatch solves the problem for me. The patch is also tiny, so while I'm not familiar with the code, I wouldn't expect it to cause any regressions.",
+    "body": "Attachment [5540.patch](tarball://root/attachments/some-uuid/ticket5540/5540.patch) by @nbruin created at 2009-03-17 04:06:43\n\nPatch solves the problem for me. The patch is also tiny, so while I'm not familiar with the code, I wouldn't expect it to cause any regressions.",
     "created_at": "2009-03-17T04:06:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5540#issuecomment-43100",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [5540.patch](tarball://root/attachments/some-uuid/ticket5540/5540.patch) by nbruin created at 2009-03-17 04:06:43
+Attachment [5540.patch](tarball://root/attachments/some-uuid/ticket5540/5540.patch) by @nbruin created at 2009-03-17 04:06:43
 
 Patch solves the problem for me. The patch is also tiny, so while I'm not familiar with the code, I wouldn't expect it to cause any regressions.
 
@@ -145,7 +145,7 @@ archive/issue_comments_043101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5540#issuecomment-43101",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

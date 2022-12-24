@@ -14,7 +14,7 @@ archive/issues_008025.json:
     "title": "artificially bump the version number of the scipy and scipy_sandbox spkg's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8025",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -37,7 +37,7 @@ archive/issue_comments_070109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8025#issuecomment-70109",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_070110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8025#issuecomment-70110",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_070111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8025#issuecomment-70111",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_070112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8025#issuecomment-70112",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_070113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8025#issuecomment-70113",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

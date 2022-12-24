@@ -3,7 +3,7 @@
 archive/issues_008235.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThis ticket is related to #7985. There's another doctest in base.pyx (on line 1308) that uses the output of texture_set(), which is inconsistent across machines since the order of Texture objects in a set is not well defined. This should be a trivial fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8235\n\n",
+    "body": "Assignee: @aghitza\n\nThis ticket is related to #7985. There's another doctest in base.pyx (on line 1308) that uses the output of texture_set(), which is inconsistent across machines since the order of Texture objects in a set is not well defined. This should be a trivial fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8235\n\n",
     "created_at": "2010-02-11T00:40:23Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_008235.json:
     "user": "wcauchois"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 This ticket is related to #7985. There's another doctest in base.pyx (on line 1308) that uses the output of texture_set(), which is inconsistent across machines since the order of Texture objects in a set is not well defined. This should be a trivial fix.
 
@@ -93,7 +93,7 @@ archive/issue_comments_072747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8235#issuecomment-72747",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_072748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8235#issuecomment-72748",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_072749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8235#issuecomment-72749",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_072750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8235#issuecomment-72750",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_072751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8235#issuecomment-72751",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

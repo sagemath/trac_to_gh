@@ -14,7 +14,7 @@ archive/issues_002037.json:
     "title": "out-of-date tutorial section on errors and exceptions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2037",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: tba
@@ -38,7 +38,7 @@ archive/issue_comments_013178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2037#issuecomment-13178",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_013179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2037#issuecomment-13179",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_013181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2037#issuecomment-13181",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_013183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2037#issuecomment-13183",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -156,16 +156,16 @@ I ran sage -t tut.tex and it succeeded, and ./build_pdf and looked at the result
 archive/issue_comments_013184.json:
 ```json
 {
-    "body": "Attachment [2037-tut-fixes.patch](tarball://root/attachments/some-uuid/ticket2037/2037-tut-fixes.patch) by AlexGhitza created at 2008-02-23 03:00:46",
+    "body": "Attachment [2037-tut-fixes.patch](tarball://root/attachments/some-uuid/ticket2037/2037-tut-fixes.patch) by @aghitza created at 2008-02-23 03:00:46",
     "created_at": "2008-02-23T03:00:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2037#issuecomment-13184",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [2037-tut-fixes.patch](tarball://root/attachments/some-uuid/ticket2037/2037-tut-fixes.patch) by AlexGhitza created at 2008-02-23 03:00:46
+Attachment [2037-tut-fixes.patch](tarball://root/attachments/some-uuid/ticket2037/2037-tut-fixes.patch) by @aghitza created at 2008-02-23 03:00:46
 
 
 
@@ -174,16 +174,16 @@ Attachment [2037-tut-fixes.patch](tarball://root/attachments/some-uuid/ticket203
 archive/issue_comments_013185.json:
 ```json
 {
-    "body": "Attachment [2037.patch](tarball://root/attachments/some-uuid/ticket2037/2037.patch) by mhansen created at 2008-02-27 23:49:31\n\nThe last patch ( 2037.patch ) applies cleanly after #2323.",
+    "body": "Attachment [2037.patch](tarball://root/attachments/some-uuid/ticket2037/2037.patch) by @mwhansen created at 2008-02-27 23:49:31\n\nThe last patch ( 2037.patch ) applies cleanly after #2323.",
     "created_at": "2008-02-27T23:49:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2037#issuecomment-13185",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2037.patch](tarball://root/attachments/some-uuid/ticket2037/2037.patch) by mhansen created at 2008-02-27 23:49:31
+Attachment [2037.patch](tarball://root/attachments/some-uuid/ticket2037/2037.patch) by @mwhansen created at 2008-02-27 23:49:31
 
 The last patch ( 2037.patch ) applies cleanly after #2323.
 

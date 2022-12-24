@@ -3,7 +3,7 @@
 archive/issues_005231.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was cc davidloeffler\n\nKeywords: relative number fields lazy pari\n\nThe attached patch makes relative number fields truly lazy, meaning that they don't require PARI's nf or bnf structures for the base field nor PARI's rnf structures for the extension.  This means that arithmetic can be done in huge extensions, ones for which there is no hope of finding units, class groups, etc.\n\nAlong the way I cleaned some conversions to PARI and fixed a bug relativizing absolute fields over QQ.  I also added many doctests.  I also tested this with #4779's randomized testing; passed with flying colors.\n\nThis patch cannot be allowed to bitrot, it's just to much work to understand this part of the code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5231\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  was cc davidloeffler\n\nKeywords: relative number fields lazy pari\n\nThe attached patch makes relative number fields truly lazy, meaning that they don't require PARI's nf or bnf structures for the base field nor PARI's rnf structures for the extension.  This means that arithmetic can be done in huge extensions, ones for which there is no hope of finding units, class groups, etc.\n\nAlong the way I cleaned some conversions to PARI and fixed a bug relativizing absolute fields over QQ.  I also added many doctests.  I also tested this with #4779's randomized testing; passed with flying colors.\n\nThis patch cannot be allowed to bitrot, it's just to much work to understand this part of the code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5231\n\n",
     "created_at": "2009-02-11T00:36:08Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005231.json:
     "title": "[with patch, needs review] make relative number fields lazy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5231",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  was cc davidloeffler
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5231
 archive/issue_comments_040093.json:
 ```json
 {
-    "body": "Attachment [trac_5231-lazy-relative-fields.patch](tarball://root/attachments/some-uuid/ticket5231/trac_5231-lazy-relative-fields.patch) by ncalexan created at 2009-02-11 00:37:48",
+    "body": "Attachment [trac_5231-lazy-relative-fields.patch](tarball://root/attachments/some-uuid/ticket5231/trac_5231-lazy-relative-fields.patch) by @ncalexan created at 2009-02-11 00:37:48",
     "created_at": "2009-02-11T00:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5231#issuecomment-40093",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_5231-lazy-relative-fields.patch](tarball://root/attachments/some-uuid/ticket5231/trac_5231-lazy-relative-fields.patch) by ncalexan created at 2009-02-11 00:37:48
+Attachment [trac_5231-lazy-relative-fields.patch](tarball://root/attachments/some-uuid/ticket5231/trac_5231-lazy-relative-fields.patch) by @ncalexan created at 2009-02-11 00:37:48
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_040094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5231#issuecomment-40094",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -78,16 +78,16 @@ I hope to have some time to look at this (and hopefully review it) this evening 
 archive/issue_comments_040095.json:
 ```json
 {
-    "body": "Attachment [trac_5231-lazy-relative-fields-updated.patch](tarball://root/attachments/some-uuid/ticket5231/trac_5231-lazy-relative-fields-updated.patch) by ncalexan created at 2009-02-11 05:32:04",
+    "body": "Attachment [trac_5231-lazy-relative-fields-updated.patch](tarball://root/attachments/some-uuid/ticket5231/trac_5231-lazy-relative-fields-updated.patch) by @ncalexan created at 2009-02-11 05:32:04",
     "created_at": "2009-02-11T05:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5231#issuecomment-40095",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_5231-lazy-relative-fields-updated.patch](tarball://root/attachments/some-uuid/ticket5231/trac_5231-lazy-relative-fields-updated.patch) by ncalexan created at 2009-02-11 05:32:04
+Attachment [trac_5231-lazy-relative-fields-updated.patch](tarball://root/attachments/some-uuid/ticket5231/trac_5231-lazy-relative-fields-updated.patch) by @ncalexan created at 2009-02-11 05:32:04
 
 
 

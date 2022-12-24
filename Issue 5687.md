@@ -14,7 +14,7 @@ archive/issues_005687.json:
     "title": "[with patch; needs review] notebook -- only save snapshot when worksheet.txt has changed.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5687",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

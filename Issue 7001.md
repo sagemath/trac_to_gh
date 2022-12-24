@@ -3,7 +3,7 @@
 archive/issues_007001.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  wdj\n\nKeywords: gap interface recursion depth trap\n\nIt seems to me that it is forgotten to quit GAP's break loop before continuing. By consequence, GAP runs into a recursion depth trap (by default, GAP throws an error if a recursion of depth 5000 occurs) if there are too many errors.\n\nExample:\n\n```\nsage: def bugtrigger(n):\n....:     a = gap(1)\n....:     for i in range(n):\n....:         try:\n....:             b = gap.eval('Name(%s)'%a.name())\n....:             a += 1\n....:         except Exception, msg:\n....:             if 'recursion depth' in str(msg):\n....:                 return i,msg\n....:\nsage: bugtrigger(10000)\n\n(4998,\n RuntimeError('Gap produced error output\\nrecursion depth trap (5000)\\n\\n\\n   executing Name($sage1);',))\n```\n\n\n__Explanation:__\n\n\"Name\" is not defined for a, so, an error occurs, that we catch and continue. If this is done 4998 times then we have 4998 break loops inside the main loop, and then call `\"Name(%s)\"%a.name()`  -- this is a total of 5000 nested loops (main loop, 4998 break loops, function call).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7001\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: gap interface recursion depth trap\n\nIt seems to me that it is forgotten to quit GAP's break loop before continuing. By consequence, GAP runs into a recursion depth trap (by default, GAP throws an error if a recursion of depth 5000 occurs) if there are too many errors.\n\nExample:\n\n```\nsage: def bugtrigger(n):\n....:     a = gap(1)\n....:     for i in range(n):\n....:         try:\n....:             b = gap.eval('Name(%s)'%a.name())\n....:             a += 1\n....:         except Exception, msg:\n....:             if 'recursion depth' in str(msg):\n....:                 return i,msg\n....:\nsage: bugtrigger(10000)\n\n(4998,\n RuntimeError('Gap produced error output\\nrecursion depth trap (5000)\\n\\n\\n   executing Name($sage1);',))\n```\n\n\n__Explanation:__\n\n\"Name\" is not defined for a, so, an error occurs, that we catch and continue. If this is done 4998 times then we have 4998 break loops inside the main loop, and then call `\"Name(%s)\"%a.name()`  -- this is a total of 5000 nested loops (main loop, 4998 break loops, function call).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7001\n\n",
     "created_at": "2009-09-23T09:41:46Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_007001.json:
     "title": "Sage's GAP interface not properly leaving GAP's break loop",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7001",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  wdj
+CC:  @wdjoyner
 
 Keywords: gap interface recursion depth trap
 
@@ -67,7 +67,7 @@ archive/issue_comments_057881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57881",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing status from new to assigned.
 archive/issue_comments_057882.json:
 ```json
 {
-    "body": "Changing assignee from was to SimonKing.",
+    "body": "Changing assignee from @williamstein to @simon-king-jena.",
     "created_at": "2009-09-23T11:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57882",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Changing assignee from was to SimonKing.
+Changing assignee from @williamstein to @simon-king-jena.
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_057883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57883",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_057884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57884",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_057885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57885",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

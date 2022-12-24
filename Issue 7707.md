@@ -14,7 +14,7 @@ archive/issues_007707.json:
     "title": "change picklejar doctest to be more robust",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7707",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7707
 archive/issue_comments_066149.json:
 ```json
 {
-    "body": "Attachment [trac_7707.patch](tarball://root/attachments/some-uuid/ticket7707/trac_7707.patch) by was created at 2009-12-16 09:13:00",
+    "body": "Attachment [trac_7707.patch](tarball://root/attachments/some-uuid/ticket7707/trac_7707.patch) by @williamstein created at 2009-12-16 09:13:00",
     "created_at": "2009-12-16T09:13:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7707#issuecomment-66149",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7707.patch](tarball://root/attachments/some-uuid/ticket7707/trac_7707.patch) by was created at 2009-12-16 09:13:00
+Attachment [trac_7707.patch](tarball://root/attachments/some-uuid/ticket7707/trac_7707.patch) by @williamstein created at 2009-12-16 09:13:00
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_066150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7707#issuecomment-66150",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_066151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7707#issuecomment-66151",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_066152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7707#issuecomment-66152",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_066153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7707#issuecomment-66153",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

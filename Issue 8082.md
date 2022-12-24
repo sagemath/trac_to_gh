@@ -3,7 +3,7 @@
 archive/issues_008082.json:
 ```json
 {
-    "body": "Assignee: vdelecroix\n\nKeywords: plot\n\nWe have a strange behavior\n\n\n```\nsage: point(CC(0))  # plot a point with coordinates (0, 0)\nsage: point(CC(1))  # plot a point with coordinates (1, 0)\nsage: point([CC(0),CC(1)])  # plot a point with coordinates (0, 1)\n```\n\n\nThis patch add a line in sage.plot to correct this and get the two points (0,0) and (1,0) when doing\n\n\n```\nsage: point([CC(0), CC(1)])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8082\n\n",
+    "body": "Assignee: @videlec\n\nKeywords: plot\n\nWe have a strange behavior\n\n\n```\nsage: point(CC(0))  # plot a point with coordinates (0, 0)\nsage: point(CC(1))  # plot a point with coordinates (1, 0)\nsage: point([CC(0),CC(1)])  # plot a point with coordinates (0, 1)\n```\n\n\nThis patch add a line in sage.plot to correct this and get the two points (0,0) and (1,0) when doing\n\n\n```\nsage: point([CC(0), CC(1)])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8082\n\n",
     "created_at": "2010-01-26T18:37:49Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_008082.json:
     "title": "correct point and line behavior with complex numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8082",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
-Assignee: vdelecroix
+Assignee: @videlec
 
 Keywords: plot
 
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8082
 archive/issue_comments_070825.json:
 ```json
 {
-    "body": "Attachment [trac_8082.patch](tarball://root/attachments/some-uuid/ticket8082/trac_8082.patch) by vdelecroix created at 2010-01-26 18:47:16",
+    "body": "Attachment [trac_8082.patch](tarball://root/attachments/some-uuid/ticket8082/trac_8082.patch) by @videlec created at 2010-01-26 18:47:16",
     "created_at": "2010-01-26T18:47:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8082#issuecomment-70825",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_8082.patch](tarball://root/attachments/some-uuid/ticket8082/trac_8082.patch) by vdelecroix created at 2010-01-26 18:47:16
+Attachment [trac_8082.patch](tarball://root/attachments/some-uuid/ticket8082/trac_8082.patch) by @videlec created at 2010-01-26 18:47:16
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_070826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8082#issuecomment-70826",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_070827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8082#issuecomment-70827",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_070828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8082#issuecomment-70828",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_070829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8082#issuecomment-70829",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_070832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8082#issuecomment-70832",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_070833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8082#issuecomment-70833",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

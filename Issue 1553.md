@@ -3,7 +3,7 @@
 archive/issues_001553.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  burcin\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/cdf2ae8087d5637e?hl=en at  Dec 17, 8:37 am.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1553\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/cdf2ae8087d5637e?hl=en at  Dec 17, 8:37 am.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1553\n\n",
     "created_at": "2007-12-17T15:00:38Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_001553.json:
     "title": "Investigate PolyBoRi on 64-bit RHEL5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1553",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  burcin
+CC:  @burcin
 
 See http://groups.google.com/group/sage-support/browse_thread/thread/cdf2ae8087d5637e?hl=en at  Dec 17, 8:37 am.
 
@@ -77,7 +77,7 @@ archive/issue_comments_009899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9899",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_009900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9900",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -118,16 +118,16 @@ Changing status from new to assigned.
 archive/issue_comments_009901.json:
 ```json
 {
-    "body": "Changing assignee from was to burcin.",
+    "body": "Changing assignee from @williamstein to @burcin.",
     "created_at": "2007-12-27T11:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9901",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from was to burcin.
+Changing assignee from @williamstein to @burcin.
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_009902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9902",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_009903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9903",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_009904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9904",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

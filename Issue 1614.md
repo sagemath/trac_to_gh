@@ -3,7 +3,7 @@
 archive/issues_001614.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  craigcitro\n\nWe have a lot of extensions directly listed in the `ext_modules section`. Move those out and also sort the `ext_modules list`\n\nIssue created by migration from https://trac.sagemath.org/ticket/1614\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @craigcitro\n\nWe have a lot of extensions directly listed in the `ext_modules section`. Move those out and also sort the `ext_modules list`\n\nIssue created by migration from https://trac.sagemath.org/ticket/1614\n\n",
     "created_at": "2007-12-28T17:02:27Z",
     "labels": [
         "distribution",
@@ -19,7 +19,7 @@ archive/issues_001614.json:
 ```
 Assignee: mabshoff
 
-CC:  craigcitro
+CC:  @craigcitro
 
 We have a lot of extensions directly listed in the `ext_modules section`. Move those out and also sort the `ext_modules list`
 
@@ -39,7 +39,7 @@ archive/issue_comments_010265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1614#issuecomment-10265",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

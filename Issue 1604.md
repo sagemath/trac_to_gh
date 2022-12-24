@@ -3,7 +3,7 @@
 archive/issues_001604.json:
 ```json
 {
-    "body": "Assignee: was\n\nOn a linux box the function setlocale in locale.py sometimes files for some weird locals, which breaks matplotlib.   We patch the python spkg so instead of giving an error in that case, it just uses the default locale.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1604\n\n",
+    "body": "Assignee: @williamstein\n\nOn a linux box the function setlocale in locale.py sometimes files for some weird locals, which breaks matplotlib.   We patch the python spkg so instead of giving an error in that case, it just uses the default locale.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1604\n\n",
     "created_at": "2007-12-27T02:12:30Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001604.json:
     "title": "more locale problems with python exposed by matplotlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1604",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 On a linux box the function setlocale in locale.py sometimes files for some weird locals, which breaks matplotlib.   We patch the python spkg so instead of giving an error in that case, it just uses the default locale.
 
@@ -37,7 +37,7 @@ archive/issue_comments_010192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1604#issuecomment-10192",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

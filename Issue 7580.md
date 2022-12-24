@@ -3,7 +3,7 @@
 archive/issues_007580.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mhansen ncohen nthiery\n\n1. Here's one, from a fresh session in sage-4.3.alpha0:\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ)\nsage: x[2^31]\nTraceback (most recent \n...\nOverflowError: range() result has too many items\nsage: x[100]\nTypeError: ...\n```\n\n\nWhy do we get a TypeError doing x[100] after the overflow error?\n\n\n2. Here's another bug, probably the result of using string parsing (?), but I'm not sure:\n\n```\nsage: X.<a,b> = InfinitePolynomialRing(QQ)\nsage: a[100]\na100\nsage: a[2/3]\n1/3*a2\n```\n\nthen the following weird error. \n\n```\nsage: a[Mod(2,3)]\nTraceback (most recent ...)\n...\nTypeError: reduce() of empty sequence with no initial value\n```\n\nwhich is made weirder because the same input again suddenly works!\n\n```\nsage: a[Mod(2,3)]\na2\n```\n\n\nHere's one that is weird, due to not validating input before passing it off to the libsingular coercion function:\n\n```\nsage: X.<a,b> = InfinitePolynomialRing(QQ)\nsage: a[0]\na0\nsage: a['0+5']\na0 + 5\nsage: a['0+5^2']\na0 + 25\n```\n\n\n\nIt's also really weird that the variable names have to be a single letter and that the base ring has to be a field.  Why?:\n\n```\n\nsage: X.<alpha,beta>= InfinitePolynomialRing(QQ)\nTraceback (most recent call last):\nValueError: variable names must be of length 1\n\nsage: X.<x,y> = InfinitePolynomialRing(ZZ)\nTraceback (most recent call last):\nTypeError: The base ring (= Integer Ring) must be a field\n\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7580\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @mwhansen @nathanncohen @nthiery\n\n1. Here's one, from a fresh session in sage-4.3.alpha0:\n\n```\nsage: X.<x,y> = InfinitePolynomialRing(QQ)\nsage: x[2^31]\nTraceback (most recent \n...\nOverflowError: range() result has too many items\nsage: x[100]\nTypeError: ...\n```\n\n\nWhy do we get a TypeError doing x[100] after the overflow error?\n\n\n2. Here's another bug, probably the result of using string parsing (?), but I'm not sure:\n\n```\nsage: X.<a,b> = InfinitePolynomialRing(QQ)\nsage: a[100]\na100\nsage: a[2/3]\n1/3*a2\n```\n\nthen the following weird error. \n\n```\nsage: a[Mod(2,3)]\nTraceback (most recent ...)\n...\nTypeError: reduce() of empty sequence with no initial value\n```\n\nwhich is made weirder because the same input again suddenly works!\n\n```\nsage: a[Mod(2,3)]\na2\n```\n\n\nHere's one that is weird, due to not validating input before passing it off to the libsingular coercion function:\n\n```\nsage: X.<a,b> = InfinitePolynomialRing(QQ)\nsage: a[0]\na0\nsage: a['0+5']\na0 + 5\nsage: a['0+5^2']\na0 + 25\n```\n\n\n\nIt's also really weird that the variable names have to be a single letter and that the base ring has to be a field.  Why?:\n\n```\n\nsage: X.<alpha,beta>= InfinitePolynomialRing(QQ)\nTraceback (most recent call last):\nValueError: variable names must be of length 1\n\nsage: X.<x,y> = InfinitePolynomialRing(ZZ)\nTraceback (most recent call last):\nTypeError: The base ring (= Integer Ring) must be a field\n\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7580\n\n",
     "created_at": "2009-12-02T06:38:12Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007580.json:
     "title": "bugs in infinite polynomial ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7580",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mhansen ncohen nthiery
+CC:  @mwhansen @nathanncohen @nthiery
 
 1. Here's one, from a fresh session in sage-4.3.alpha0:
 
@@ -112,7 +112,7 @@ archive/issue_comments_064555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64555",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -133,16 +133,16 @@ My impression is that the code needs a thorough overhaul. Can we use this ticket
 archive/issue_comments_064556.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to SimonKing.",
+    "body": "Changing assignee from @aghitza to @simon-king-jena.",
     "created_at": "2009-12-02T09:06:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64556",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Changing assignee from AlexGhitza to SimonKing.
+Changing assignee from @aghitza to @simon-king-jena.
 
 
 
@@ -156,7 +156,7 @@ archive/issue_comments_064557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64557",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_064558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64558",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_064559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64559",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_064560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64560",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_064561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64561",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_064562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64562",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_064563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64563",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_064564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64564",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_064565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64565",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -476,7 +476,7 @@ archive/issue_comments_064566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64566",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_064567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64567",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_064568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64568",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -826,7 +826,7 @@ archive/issue_comments_064569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64569",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -844,7 +844,7 @@ archive/issue_comments_064570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64570",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -869,7 +869,7 @@ archive/issue_comments_064571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64571",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -900,7 +900,7 @@ archive/issue_comments_064572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64572",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -942,7 +942,7 @@ archive/issue_comments_064573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64573",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -960,7 +960,7 @@ archive/issue_comments_064574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64574",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1003,7 +1003,7 @@ archive/issue_comments_064575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64575",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1068,7 +1068,7 @@ archive/issue_comments_064576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64576",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1081,16 +1081,16 @@ Fixing the expected 32-bit hash; fixing one bug in groebner_basis (added as a do
 archive/issue_comments_064577.json:
 ```json
 {
-    "body": "Attachment [7580_follow_up.patch](tarball://root/attachments/some-uuid/ticket7580/7580_follow_up.patch) by SimonKing created at 2009-12-10 22:25:18\n\nIn the patch 7580_follow_up.patch, which is to be applied after the first patch, I do the following:\n\n1. Replace the expected 32-bit hash value by the one that William provided\n2. Fix one bug in groebner_basis() -- I just found it by creating some random ideals and computing the symmetric Gr\u00f6bner basis. The problem was that at some point it was not properly tested whether an element is a unit. By consequence, the 0-ideal instead of the 1-ideal was returned.\n3. Add this previously failing example as another doc test.\n\nI keep it \"needs work\", until I get some advice what to do with the inconsistent polynomial conversion. Perhaps one could just check that `InfinitePolynomial(X,alpha_2) != alpha_2`? This would be the case on both sage.math and your 32-bit Ubuntu. Acceptable solution?\n\nCheers,\n\nSimon",
+    "body": "Attachment [7580_follow_up.patch](tarball://root/attachments/some-uuid/ticket7580/7580_follow_up.patch) by @simon-king-jena created at 2009-12-10 22:25:18\n\nIn the patch 7580_follow_up.patch, which is to be applied after the first patch, I do the following:\n\n1. Replace the expected 32-bit hash value by the one that William provided\n2. Fix one bug in groebner_basis() -- I just found it by creating some random ideals and computing the symmetric Gr\u00f6bner basis. The problem was that at some point it was not properly tested whether an element is a unit. By consequence, the 0-ideal instead of the 1-ideal was returned.\n3. Add this previously failing example as another doc test.\n\nI keep it \"needs work\", until I get some advice what to do with the inconsistent polynomial conversion. Perhaps one could just check that `InfinitePolynomial(X,alpha_2) != alpha_2`? This would be the case on both sage.math and your 32-bit Ubuntu. Acceptable solution?\n\nCheers,\n\nSimon",
     "created_at": "2009-12-10T22:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64577",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [7580_follow_up.patch](tarball://root/attachments/some-uuid/ticket7580/7580_follow_up.patch) by SimonKing created at 2009-12-10 22:25:18
+Attachment [7580_follow_up.patch](tarball://root/attachments/some-uuid/ticket7580/7580_follow_up.patch) by @simon-king-jena created at 2009-12-10 22:25:18
 
 In the patch 7580_follow_up.patch, which is to be applied after the first patch, I do the following:
 
@@ -1116,7 +1116,7 @@ archive/issue_comments_064578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64578",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1151,7 +1151,7 @@ archive/issue_comments_064579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64579",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1175,7 +1175,7 @@ archive/issue_comments_064580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64580",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1193,7 +1193,7 @@ archive/issue_comments_064581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64581",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1287,7 +1287,7 @@ archive/issue_comments_064582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64582",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1311,7 +1311,7 @@ archive/issue_comments_064583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64583",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1360,7 +1360,7 @@ archive/issue_comments_064584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64584",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1389,7 +1389,7 @@ archive/issue_comments_064585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64585",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1424,7 +1424,7 @@ archive/issue_comments_064586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64586",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1444,7 +1444,7 @@ archive/issue_comments_064587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64587",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1471,7 +1471,7 @@ archive/issue_comments_064588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64588",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1496,7 +1496,7 @@ archive/issue_comments_064589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64589",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1532,7 +1532,7 @@ archive/issue_comments_064590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64590",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1550,7 +1550,7 @@ archive/issue_comments_064591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64591",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1568,7 +1568,7 @@ archive/issue_comments_064592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64592",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -1589,16 +1589,16 @@ will make it apply cleanly.
 archive/issue_comments_064593.json:
 ```json
 {
-    "body": "Attachment [7580_fixes_and_extensions.patch](tarball://root/attachments/some-uuid/ticket7580/7580_fixes_and_extensions.patch) by SimonKing created at 2010-01-20 22:21:06\n\nMajor bug fixes and extensions for infinite polynomial rings",
+    "body": "Attachment [7580_fixes_and_extensions.patch](tarball://root/attachments/some-uuid/ticket7580/7580_fixes_and_extensions.patch) by @simon-king-jena created at 2010-01-20 22:21:06\n\nMajor bug fixes and extensions for infinite polynomial rings",
     "created_at": "2010-01-20T22:21:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64593",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [7580_fixes_and_extensions.patch](tarball://root/attachments/some-uuid/ticket7580/7580_fixes_and_extensions.patch) by SimonKing created at 2010-01-20 22:21:06
+Attachment [7580_fixes_and_extensions.patch](tarball://root/attachments/some-uuid/ticket7580/7580_fixes_and_extensions.patch) by @simon-king-jena created at 2010-01-20 22:21:06
 
 Major bug fixes and extensions for infinite polynomial rings
 
@@ -1614,7 +1614,7 @@ archive/issue_comments_064594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64594",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1648,7 +1648,7 @@ archive/issue_comments_064595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64595",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1666,7 +1666,7 @@ archive/issue_comments_064596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64596",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1721,7 +1721,7 @@ archive/issue_comments_064597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64597",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1750,7 +1750,7 @@ archive/issue_comments_064598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64598",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1772,16 +1772,16 @@ Simon
 archive/issue_comments_064599.json:
 ```json
 {
-    "body": "Attachment [7580_unpickling.patch](tarball://root/attachments/some-uuid/ticket7580/7580_unpickling.patch) by SimonKing created at 2010-01-26 12:14:31\n\nAllows to read old pickles of infinite polynomial rings",
+    "body": "Attachment [7580_unpickling.patch](tarball://root/attachments/some-uuid/ticket7580/7580_unpickling.patch) by @simon-king-jena created at 2010-01-26 12:14:31\n\nAllows to read old pickles of infinite polynomial rings",
     "created_at": "2010-01-26T12:14:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64599",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [7580_unpickling.patch](tarball://root/attachments/some-uuid/ticket7580/7580_unpickling.patch) by SimonKing created at 2010-01-26 12:14:31
+Attachment [7580_unpickling.patch](tarball://root/attachments/some-uuid/ticket7580/7580_unpickling.patch) by @simon-king-jena created at 2010-01-26 12:14:31
 
 Allows to read old pickles of infinite polynomial rings
 
@@ -1797,7 +1797,7 @@ archive/issue_comments_064600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64600",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1817,7 +1817,7 @@ archive/issue_comments_064601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64601",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1835,7 +1835,7 @@ archive/issue_comments_064602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64602",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1855,7 +1855,7 @@ archive/issue_comments_064603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64603",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1883,7 +1883,7 @@ archive/issue_comments_064604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64604",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1903,7 +1903,7 @@ archive/issue_comments_064605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64605",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1923,7 +1923,7 @@ archive/issue_comments_064606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64606",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1947,7 +1947,7 @@ archive/issue_comments_064607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64607",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1982,7 +1982,7 @@ archive/issue_comments_064608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64608",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1995,16 +1995,16 @@ Stand-alone patch relative to sage-4.3.2.alpha1
 archive/issue_comments_064609.json:
 ```json
 {
-    "body": "Attachment [7580_fixes_and_extensions_total.patch](tarball://root/attachments/some-uuid/ticket7580/7580_fixes_and_extensions_total.patch) by SimonKing created at 2010-02-02 16:03:10\n\nI produced a new patch relative to sage-4.3.2.alpha1, that summarizes all other patches. So, just apply 7580_fixes_and_extensions_total.patch.\n\nNote that I merged the code of sage-4.3.2.alpha1 with my new code on a Windows laptop. But I transferred it to a Linux PC, used dos2unix, and all further edits happened there. Then, I created a patch, copied it to my Windows laptop, and there you are. I hope that in that way I avoided Windows EOL.\n\nNote that there is one additional change. It seems that the \"dir\" mechanism has changed in sage-4.3.2: Before, the documentation of dir stated that it would use a method !__dir!__ if available, but in fact it ignored such method. Instead, it used the attributes !__members!__ and !__methods!__ or so.\n\nThis has now changed (as I noticed when a doc test failed), and by consequence I now provide a !__dir!__ method *in addition* to the old form of tab completion.\n\nConcerning tests: I did not do sage -testall. But I did test the files that I have changed: pushout.py, symmetric_ideal.py, symmetric_reduction.pyx, infinite_polynomial_ring.py, and infinite_polynomial_element.py\n\nHopefully it works now...",
+    "body": "Attachment [7580_fixes_and_extensions_total.patch](tarball://root/attachments/some-uuid/ticket7580/7580_fixes_and_extensions_total.patch) by @simon-king-jena created at 2010-02-02 16:03:10\n\nI produced a new patch relative to sage-4.3.2.alpha1, that summarizes all other patches. So, just apply 7580_fixes_and_extensions_total.patch.\n\nNote that I merged the code of sage-4.3.2.alpha1 with my new code on a Windows laptop. But I transferred it to a Linux PC, used dos2unix, and all further edits happened there. Then, I created a patch, copied it to my Windows laptop, and there you are. I hope that in that way I avoided Windows EOL.\n\nNote that there is one additional change. It seems that the \"dir\" mechanism has changed in sage-4.3.2: Before, the documentation of dir stated that it would use a method !__dir!__ if available, but in fact it ignored such method. Instead, it used the attributes !__members!__ and !__methods!__ or so.\n\nThis has now changed (as I noticed when a doc test failed), and by consequence I now provide a !__dir!__ method *in addition* to the old form of tab completion.\n\nConcerning tests: I did not do sage -testall. But I did test the files that I have changed: pushout.py, symmetric_ideal.py, symmetric_reduction.pyx, infinite_polynomial_ring.py, and infinite_polynomial_element.py\n\nHopefully it works now...",
     "created_at": "2010-02-02T16:03:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64609",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [7580_fixes_and_extensions_total.patch](tarball://root/attachments/some-uuid/ticket7580/7580_fixes_and_extensions_total.patch) by SimonKing created at 2010-02-02 16:03:10
+Attachment [7580_fixes_and_extensions_total.patch](tarball://root/attachments/some-uuid/ticket7580/7580_fixes_and_extensions_total.patch) by @simon-king-jena created at 2010-02-02 16:03:10
 
 I produced a new patch relative to sage-4.3.2.alpha1, that summarizes all other patches. So, just apply 7580_fixes_and_extensions_total.patch.
 
@@ -2030,7 +2030,7 @@ archive/issue_comments_064610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64610",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -2048,7 +2048,7 @@ archive/issue_comments_064611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64611",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -2066,7 +2066,7 @@ archive/issue_comments_064612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7580#issuecomment-64612",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

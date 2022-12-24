@@ -3,7 +3,7 @@
 archive/issues_000454.json:
 ```json
 {
-    "body": "Assignee: was\n\nTo see some VERY SEVERE memory leaks, probably in linear algebra -- exposed by modular symbols functionality do the following. \n\n1. comment out the line \"_cache[key] = weakref.ref(M)\" in sage/modular/modsym/modsym.py\n2. build and observe:\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(2); del m; get_memory_usage()\n174.125\n191.1796875\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(2); del m; get_memory_usage()\n191.1796875\n197.6875\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(2); del m; get_memory_usage()\n197.6875\n203.5546875\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; get_memory_usage()\n203.546875\n208.12890625\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; get_memory_usage()\n208.12890625\n210.41796875\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/454\n\n",
+    "body": "Assignee: @williamstein\n\nTo see some VERY SEVERE memory leaks, probably in linear algebra -- exposed by modular symbols functionality do the following. \n\n1. comment out the line \"_cache[key] = weakref.ref(M)\" in sage/modular/modsym/modsym.py\n2. build and observe:\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(2); del m; get_memory_usage()\n174.125\n191.1796875\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(2); del m; get_memory_usage()\n191.1796875\n197.6875\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(2); del m; get_memory_usage()\n197.6875\n203.5546875\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; get_memory_usage()\n203.546875\n208.12890625\nsage: get_memory_usage(); m = ModularSymbols(501,2).decomposition(3); del m; get_memory_usage()\n208.12890625\n210.41796875\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/454\n\n",
     "created_at": "2007-08-19T08:42:08Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000454.json:
     "title": "VERY SEVERE memory leaks, probably in linear algebra -- exposed by modular symbols functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/454",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 To see some VERY SEVERE memory leaks, probably in linear algebra -- exposed by modular symbols functionality do the following. 
 
@@ -57,7 +57,7 @@ archive/issue_comments_002260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/454#issuecomment-2260",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_002261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/454#issuecomment-2261",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ Changing status from new to assigned.
 archive/issue_comments_002265.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-08-29T22:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/454",
     "type": "issue_comment",
@@ -178,7 +178,7 @@ archive/issue_comments_002265.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 

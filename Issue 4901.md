@@ -3,7 +3,7 @@
 archive/issues_004901.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  alexghitza\n\nKeywords: elliptic logarithm\n\n#4214 introduced something which causes this example to fail:\n\n```\nsage: EllipticCurve(\"4390c2\").gens()[0].elliptic_logarithm()\n---------------------------------------------------------------------------\nMemoryError                               Traceback (most recent call last)\n\n/home/john/sage-3.2.2.rc1/devel/sage-elllog/<ipython console> in <module>()\n\n/home/john/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_point.py in elliptic_logarithm(self, embedding, precision, algorithm)\n   1211             E_pari = ER.pari_curve(prec=precision)\n   1212             pt_pari = [pari(emb(self[0])), pari(emb(self[1]))]\n-> 1213             log_pari = E_pari.ellpointtoz(pt_pari, precision=precision)\n   1214             while prec_words_to_bits(log_pari.precision()) < precision:\n   1215                 working_prec = 2*precision\n\n/home/john/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:38603)()\n\n/home/john/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.PariInstance.allocatemem (sage/libs/pari/gen.c:34732)()\n\n/home/john/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.init_stack (sage/libs/pari/gen.c:37647)()\n\nMemoryError: Unable to allocate 4096000000 bytes memory for PARI.\n```\n\ncaused by an infinite loop.\n\nThe problem has been diagnosed by me and Alex and I'll post a patch shortly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4901\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\nKeywords: elliptic logarithm\n\n#4214 introduced something which causes this example to fail:\n\n```\nsage: EllipticCurve(\"4390c2\").gens()[0].elliptic_logarithm()\n---------------------------------------------------------------------------\nMemoryError                               Traceback (most recent call last)\n\n/home/john/sage-3.2.2.rc1/devel/sage-elllog/<ipython console> in <module>()\n\n/home/john/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_point.py in elliptic_logarithm(self, embedding, precision, algorithm)\n   1211             E_pari = ER.pari_curve(prec=precision)\n   1212             pt_pari = [pari(emb(self[0])), pari(emb(self[1]))]\n-> 1213             log_pari = E_pari.ellpointtoz(pt_pari, precision=precision)\n   1214             while prec_words_to_bits(log_pari.precision()) < precision:\n   1215                 working_prec = 2*precision\n\n/home/john/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:38603)()\n\n/home/john/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.PariInstance.allocatemem (sage/libs/pari/gen.c:34732)()\n\n/home/john/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.init_stack (sage/libs/pari/gen.c:37647)()\n\nMemoryError: Unable to allocate 4096000000 bytes memory for PARI.\n```\n\ncaused by an infinite loop.\n\nThe problem has been diagnosed by me and Alex and I'll post a patch shortly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4901\n\n",
     "created_at": "2009-01-01T16:28:39Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004901.json:
     "title": "bug in elliptic logarithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4901",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  alexghitza
 
@@ -64,16 +64,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4901
 archive/issue_comments_037181.json:
 ```json
 {
-    "body": "Attachment [elllog-2.patch](tarball://root/attachments/some-uuid/ticket4901/elllog-2.patch) by cremona created at 2009-01-01 18:41:00",
+    "body": "Attachment [elllog-2.patch](tarball://root/attachments/some-uuid/ticket4901/elllog-2.patch) by @JohnCremona created at 2009-01-01 18:41:00",
     "created_at": "2009-01-01T18:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4901#issuecomment-37181",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [elllog-2.patch](tarball://root/attachments/some-uuid/ticket4901/elllog-2.patch) by cremona created at 2009-01-01 18:41:00
+Attachment [elllog-2.patch](tarball://root/attachments/some-uuid/ticket4901/elllog-2.patch) by @JohnCremona created at 2009-01-01 18:41:00
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_037182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4901#issuecomment-37182",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_037183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4901#issuecomment-37183",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

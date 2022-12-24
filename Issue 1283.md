@@ -14,7 +14,7 @@ archive/issues_001283.json:
     "title": "Update coercion model API",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1283",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1283
 archive/issue_comments_008043.json:
 ```json
 {
-    "body": "Attachment [coerce-migration.hg](tarball://root/attachments/some-uuid/ticket1283/coerce-migration.hg) by robertwb created at 2007-11-26 23:39:44",
+    "body": "Attachment [coerce-migration.hg](tarball://root/attachments/some-uuid/ticket1283/coerce-migration.hg) by @robertwb created at 2007-11-26 23:39:44",
     "created_at": "2007-11-26T23:39:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1283#issuecomment-8043",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [coerce-migration.hg](tarball://root/attachments/some-uuid/ticket1283/coerce-migration.hg) by robertwb created at 2007-11-26 23:39:44
+Attachment [coerce-migration.hg](tarball://root/attachments/some-uuid/ticket1283/coerce-migration.hg) by @robertwb created at 2007-11-26 23:39:44
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_008044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1283#issuecomment-8044",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_008045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1283#issuecomment-8045",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_008046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1283#issuecomment-8046",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_008047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1283#issuecomment-8047",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

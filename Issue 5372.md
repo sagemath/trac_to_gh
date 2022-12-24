@@ -14,7 +14,7 @@ archive/issues_005372.json:
     "title": "[with patch, needs review] Fix mwrank doctest in 3.4.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5372",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -108,16 +108,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5372
 archive/issue_comments_041380.json:
 ```json
 {
-    "body": "Attachment [trac_5372.patch](tarball://root/attachments/some-uuid/ticket5372/trac_5372.patch) by mhansen created at 2009-02-25 18:29:35",
+    "body": "Attachment [trac_5372.patch](tarball://root/attachments/some-uuid/ticket5372/trac_5372.patch) by @mwhansen created at 2009-02-25 18:29:35",
     "created_at": "2009-02-25T18:29:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5372#issuecomment-41380",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5372.patch](tarball://root/attachments/some-uuid/ticket5372/trac_5372.patch) by mhansen created at 2009-02-25 18:29:35
+Attachment [trac_5372.patch](tarball://root/attachments/some-uuid/ticket5372/trac_5372.patch) by @mwhansen created at 2009-02-25 18:29:35
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_041381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5372#issuecomment-41381",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -144,16 +144,16 @@ Changing status from new to assigned.
 archive/issue_comments_041382.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-02-25T18:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5372#issuecomment-41382",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -167,7 +167,7 @@ archive/issue_comments_041383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5372#issuecomment-41383",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

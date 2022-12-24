@@ -3,7 +3,7 @@
 archive/issues_008816.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nThe documentation states that \n\n\n```\n        Return the Cremona-Prickett-Siksek height bound. This is a\n        floating point number B such that if P is a rational point on\n        the curve, then `|h(P) - \\hat{h}(P)| \\leq B`, where `h(P)` is        the naive logarithmic height of `P` and `\\hat{h}(P)` is the\n        canonical height.\n```\n\n\nBut\n\n\n```\n            sage: E = EllipticCurve(\"5077a\")\n            sage: E.CPS_height_bound()\n            0.0\n```\n\n\nClearly that can't be correct as the naive height is not exactly equal to the canonical height. Either the documentation is incorrect, or the function broken for higher rank curves (in which case we should raise an error of some sort.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8816\n\n",
+    "body": "Assignee: @JohnCremona\n\nThe documentation states that \n\n\n```\n        Return the Cremona-Prickett-Siksek height bound. This is a\n        floating point number B such that if P is a rational point on\n        the curve, then `|h(P) - \\hat{h}(P)| \\leq B`, where `h(P)` is        the naive logarithmic height of `P` and `\\hat{h}(P)` is the\n        canonical height.\n```\n\n\nBut\n\n\n```\n            sage: E = EllipticCurve(\"5077a\")\n            sage: E.CPS_height_bound()\n            0.0\n```\n\n\nClearly that can't be correct as the naive height is not exactly equal to the canonical height. Either the documentation is incorrect, or the function broken for higher rank curves (in which case we should raise an error of some sort.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8816\n\n",
     "created_at": "2010-04-29T05:59:24Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_008816.json:
     "title": "Bug in CPS_height_bound",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8816",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 The documentation states that 
 
@@ -58,7 +58,7 @@ archive/issue_comments_080918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8816#issuecomment-80918",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -79,16 +79,16 @@ I have taken the liberty of correcting teh title and description on this ticket!
 archive/issue_comments_080919.json:
 ```json
 {
-    "body": "Attachment [8816-cps-doc.patch](tarball://root/attachments/some-uuid/ticket8816/8816-cps-doc.patch) by robertwb created at 2010-04-29 18:09:51",
+    "body": "Attachment [8816-cps-doc.patch](tarball://root/attachments/some-uuid/ticket8816/8816-cps-doc.patch) by @robertwb created at 2010-04-29 18:09:51",
     "created_at": "2010-04-29T18:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8816#issuecomment-80919",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8816-cps-doc.patch](tarball://root/attachments/some-uuid/ticket8816/8816-cps-doc.patch) by robertwb created at 2010-04-29 18:09:51
+Attachment [8816-cps-doc.patch](tarball://root/attachments/some-uuid/ticket8816/8816-cps-doc.patch) by @robertwb created at 2010-04-29 18:09:51
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_080920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8816#issuecomment-80920",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_080921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8816#issuecomment-80921",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_080922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8816#issuecomment-80922",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_080923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8816#issuecomment-80923",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_080924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8816#issuecomment-80924",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

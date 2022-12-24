@@ -3,7 +3,7 @@
 archive/issues_008221.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere used to be blank space (via CSS) at the bottom of the notebook that would prevent interacts from jumping when updated.  See  #4963 for the CSS code that was used and the reason for it.  In 4.3.2, it seems that the blank space was removed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8221\n\n",
+    "body": "Assignee: @williamstein\n\nThere used to be blank space (via CSS) at the bottom of the notebook that would prevent interacts from jumping when updated.  See  #4963 for the CSS code that was used and the reason for it.  In 4.3.2, it seems that the blank space was removed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8221\n\n",
     "created_at": "2010-02-09T15:45:41Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_008221.json:
     "title": "blank space at bottom of worksheet missing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8221",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There used to be blank space (via CSS) at the bottom of the notebook that would prevent interacts from jumping when updated.  See  #4963 for the CSS code that was used and the reason for it.  In 4.3.2, it seems that the blank space was removed.
 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8221
 archive/issue_comments_072559.json:
 ```json
 {
-    "body": "Attachment [trac_8221-ws_blank_space.patch](tarball://root/attachments/some-uuid/ticket8221/trac_8221-ws_blank_space.patch) by mpatel created at 2010-02-14 03:35:35\n\nBig blank space at bottom of live worksheets.  sagenb repo.",
+    "body": "Attachment [trac_8221-ws_blank_space.patch](tarball://root/attachments/some-uuid/ticket8221/trac_8221-ws_blank_space.patch) by @qed777 created at 2010-02-14 03:35:35\n\nBig blank space at bottom of live worksheets.  sagenb repo.",
     "created_at": "2010-02-14T03:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8221#issuecomment-72559",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8221-ws_blank_space.patch](tarball://root/attachments/some-uuid/ticket8221/trac_8221-ws_blank_space.patch) by mpatel created at 2010-02-14 03:35:35
+Attachment [trac_8221-ws_blank_space.patch](tarball://root/attachments/some-uuid/ticket8221/trac_8221-ws_blank_space.patch) by @qed777 created at 2010-02-14 03:35:35
 
 Big blank space at bottom of live worksheets.  sagenb repo.
 
@@ -58,7 +58,7 @@ archive/issue_comments_072560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8221#issuecomment-72560",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_072561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8221#issuecomment-72561",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_072562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8221#issuecomment-72562",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_072563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8221#issuecomment-72563",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_072564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8221#issuecomment-72564",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

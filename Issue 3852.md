@@ -14,7 +14,7 @@ archive/issues_003852.json:
     "title": "create or adapt or include a units package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3852",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jkantor
@@ -64,7 +64,7 @@ archive/issue_comments_027395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27395",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_027396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27396",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_027397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27397",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_027398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27398",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -133,16 +133,16 @@ http://sourceforge.net/mailarchive/forum.php?thread_name=200808051930.57498.dsda
 archive/issue_comments_027399.json:
 ```json
 {
-    "body": "Attachment [trac_3852.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852.patch) by was created at 2009-10-04 18:54:58\n\nFIRST REFEREE REPORT on trac_3852.patch:\n\n1. The doctest coverage is still very bad (38%):\n\n\n```\nwstein@sage:~/build/sage-4.1.1$ ./sage -coverage devel/sage/sage/symbolic/units.py \n----------------------------------------------------------------------\ndevel/sage/sage/symbolic/units.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage/sage/symbolic/units.py: 38% (5 of 13)\n\nMissing documentation:\n         * evalunitdict():\n         * unit_derivations_expr(v):\n         * _sage_doc_(self):\n         * str_to_unit(name):\n         * __init__(self, data):\n         * trait_names(self):\n         * __getattr__(self, name):\n\n\nMissing doctests:\n         * vars_in_str(s):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * convert_temperature(expr, target):\n\n----------------------------------------------------------------------\n\n```\n\n\n\n\n2. The new code fails numerous doctests:\n\n```\n        sage -t  devel/sage/sage/symbolic/units.py # 4 doctests failed\n        sage -t  devel/sage/sage/symbolic/expression.pyx # 2 doctests failed\n```\n\n\nThe actual failures:\n\n```\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/expression.pyx\", line 5399:\n    sage: (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_137[10]>\", line 1, in <module>\n        (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)###line 5399:\n    sage: (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)\n      File \"expression.pyx\", line 5424, in sage.symbolic.expression.Expression.convert (sage/symbolic/expression.cpp:21250\n)\n      File \"/scratch/wstein/build/sage-4.1.1/local/lib/python/site-packages/sage/symbolic/units.py\", line 1064, in convert\n        expr = expr.subs(z)\n      File \"expression.pyx\", line 2777, in sage.symbolic.expression.Expression.substitute (sage/symbolic/expression.cpp:13\n700)\n      File \"expression.pyx\", line 1517, in sage.symbolic.expression.Expression.coerce_in (sage/symbolic/expression.cpp:959\n1)\n      File \"parent_old.pyx\", line 331, in sage.structure.parent_old.Parent._coerce_ (sage/structure/parent_old.c:4673)\n      File \"parent.pyx\", line 429, in sage.structure.parent.Parent.coerce (sage/structure/parent.c:4806)\n    TypeError: no canonical coercion from <type 'str'> to Symbolic Ring\n\n...\n\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 31:\n    e: units.force.dyne?\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[6]>\", line 1\n         units.force.dyne?###line 31:\n    e: units.force.dyne?\n                         ^\n     SyntaxError: invalid syntax\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 52:\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 52:\n    e: t.convert(unit.charge.coulomb)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Incompatible units\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[11]>\", line 1, in <module>\n        t.convert(unit.charge.coulomb)###line 52:\n    e: t.convert(unit.charge.coulomb)\n    NameError: name 'unit' is not defined\n\n\n...\n```\n",
+    "body": "Attachment [trac_3852.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852.patch) by @williamstein created at 2009-10-04 18:54:58\n\nFIRST REFEREE REPORT on trac_3852.patch:\n\n1. The doctest coverage is still very bad (38%):\n\n\n```\nwstein@sage:~/build/sage-4.1.1$ ./sage -coverage devel/sage/sage/symbolic/units.py \n----------------------------------------------------------------------\ndevel/sage/sage/symbolic/units.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage/sage/symbolic/units.py: 38% (5 of 13)\n\nMissing documentation:\n         * evalunitdict():\n         * unit_derivations_expr(v):\n         * _sage_doc_(self):\n         * str_to_unit(name):\n         * __init__(self, data):\n         * trait_names(self):\n         * __getattr__(self, name):\n\n\nMissing doctests:\n         * vars_in_str(s):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * convert_temperature(expr, target):\n\n----------------------------------------------------------------------\n\n```\n\n\n\n\n2. The new code fails numerous doctests:\n\n```\n        sage -t  devel/sage/sage/symbolic/units.py # 4 doctests failed\n        sage -t  devel/sage/sage/symbolic/expression.pyx # 2 doctests failed\n```\n\n\nThe actual failures:\n\n```\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/expression.pyx\", line 5399:\n    sage: (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_137[10]>\", line 1, in <module>\n        (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)###line 5399:\n    sage: (units.pressure.pascal*units.si_prefixes.kilo).convert(units.pressure.pounds_per_square_inch)\n      File \"expression.pyx\", line 5424, in sage.symbolic.expression.Expression.convert (sage/symbolic/expression.cpp:21250\n)\n      File \"/scratch/wstein/build/sage-4.1.1/local/lib/python/site-packages/sage/symbolic/units.py\", line 1064, in convert\n        expr = expr.subs(z)\n      File \"expression.pyx\", line 2777, in sage.symbolic.expression.Expression.substitute (sage/symbolic/expression.cpp:13\n700)\n      File \"expression.pyx\", line 1517, in sage.symbolic.expression.Expression.coerce_in (sage/symbolic/expression.cpp:959\n1)\n      File \"parent_old.pyx\", line 331, in sage.structure.parent_old.Parent._coerce_ (sage/structure/parent_old.c:4673)\n      File \"parent.pyx\", line 429, in sage.structure.parent.Parent.coerce (sage/structure/parent.c:4806)\n    TypeError: no canonical coercion from <type 'str'> to Symbolic Ring\n\n...\n\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 31:\n    e: units.force.dyne?\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[6]>\", line 1\n         units.force.dyne?###line 31:\n    e: units.force.dyne?\n                         ^\n     SyntaxError: invalid syntax\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 52:\n\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.1/devel/sage/sage/symbolic/units.py\", line 52:\n    e: t.convert(unit.charge.coulomb)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Incompatible units\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[11]>\", line 1, in <module>\n        t.convert(unit.charge.coulomb)###line 52:\n    e: t.convert(unit.charge.coulomb)\n    NameError: name 'unit' is not defined\n\n\n...\n```\n",
     "created_at": "2009-10-04T18:54:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27399",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_3852.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852.patch) by was created at 2009-10-04 18:54:58
+Attachment [trac_3852.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852.patch) by @williamstein created at 2009-10-04 18:54:58
 
 FIRST REFEREE REPORT on trac_3852.patch:
 
@@ -311,7 +311,7 @@ archive/issue_comments_027402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27402",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -346,16 +346,16 @@ I've now read the patch and will try to find time to run the tests.
 archive/issue_comments_027404.json:
 ```json
 {
-    "body": "Attachment [trac_3852-part2.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852-part2.patch) by was created at 2010-01-21 02:54:02",
+    "body": "Attachment [trac_3852-part2.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852-part2.patch) by @williamstein created at 2010-01-21 02:54:02",
     "created_at": "2010-01-21T02:54:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27404",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_3852-part2.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852-part2.patch) by was created at 2010-01-21 02:54:02
+Attachment [trac_3852-part2.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852-part2.patch) by @williamstein created at 2010-01-21 02:54:02
 
 
 
@@ -369,7 +369,7 @@ archive/issue_comments_027405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27405",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_027407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27407",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_027408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27408",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_027409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27409",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_027410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27410",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_027411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27411",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -550,7 +550,7 @@ archive/issue_comments_027412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27412",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_027413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27413",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -588,7 +588,7 @@ archive/issue_comments_027414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27414",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -625,7 +625,7 @@ archive/issue_comments_027415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27415",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -643,16 +643,16 @@ I would like to see some tab/whitespace cleanup -- there are (again) tons of tab
 archive/issue_comments_027416.json:
 ```json
 {
-    "body": "Attachment [trac_3852_fix_whitespace.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852_fix_whitespace.patch) by ddrake created at 2010-04-13 03:04:05\n\nremove tabs, trailing whitespace from units.py",
+    "body": "Attachment [trac_3852_fix_whitespace.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852_fix_whitespace.patch) by @dandrake created at 2010-04-13 03:04:05\n\nremove tabs, trailing whitespace from units.py",
     "created_at": "2010-04-13T03:04:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27416",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_3852_fix_whitespace.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852_fix_whitespace.patch) by ddrake created at 2010-04-13 03:04:05
+Attachment [trac_3852_fix_whitespace.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852_fix_whitespace.patch) by @dandrake created at 2010-04-13 03:04:05
 
 remove tabs, trailing whitespace from units.py
 
@@ -663,16 +663,16 @@ remove tabs, trailing whitespace from units.py
 archive/issue_comments_027417.json:
 ```json
 {
-    "body": "Attachment [trac_3852_referee.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852_referee.patch) by ddrake created at 2010-04-13 03:04:25",
+    "body": "Attachment [trac_3852_referee.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852_referee.patch) by @dandrake created at 2010-04-13 03:04:25",
     "created_at": "2010-04-13T03:04:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27417",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_3852_referee.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852_referee.patch) by ddrake created at 2010-04-13 03:04:25
+Attachment [trac_3852_referee.patch](tarball://root/attachments/some-uuid/ticket3852/trac_3852_referee.patch) by @dandrake created at 2010-04-13 03:04:25
 
 
 
@@ -686,7 +686,7 @@ archive/issue_comments_027418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27418",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -704,7 +704,7 @@ archive/issue_comments_027419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27419",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -727,7 +727,7 @@ archive/issue_comments_027420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27420",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -745,7 +745,7 @@ archive/issue_comments_027421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27421",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -772,7 +772,7 @@ archive/issue_comments_027422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27422",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -798,7 +798,7 @@ archive/issue_comments_027423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3852#issuecomment-27423",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

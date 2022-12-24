@@ -3,7 +3,7 @@
 archive/issues_009921.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif mvngu kcrisman\n\nleif suggested at #9433 that we add release notes to SAGE_ROOT.  Perhaps they could be produced using mvngu's [rnotes script](http://sage.math.washington.edu/home/mvngu/apps/rnotes/) (also available at [http://bitbucket.org/mvngu/rnotes/](http://bitbucket.org/mvngu/rnotes/).  We could in fact (with his permission) include that script with Sage, and then run it as part of the sage-sdist script.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9922\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime mvngu @kcrisman\n\nleif suggested at #9433 that we add release notes to SAGE_ROOT.  Perhaps they could be produced using mvngu's [rnotes script](http://sage.math.washington.edu/home/mvngu/apps/rnotes/) (also available at [http://bitbucket.org/mvngu/rnotes/](http://bitbucket.org/mvngu/rnotes/).  We could in fact (with his permission) include that script with Sage, and then run it as part of the sage-sdist script.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9922\n\n",
     "created_at": "2010-09-16T19:57:55Z",
     "labels": [
         "distribution",
@@ -14,12 +14,12 @@ archive/issues_009921.json:
     "title": "Add release notes to SAGE_ROOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9921",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
 
-CC:  leif mvngu kcrisman
+CC:  @nexttime mvngu @kcrisman
 
 leif suggested at #9433 that we add release notes to SAGE_ROOT.  Perhaps they could be produced using mvngu's [rnotes script](http://sage.math.washington.edu/home/mvngu/apps/rnotes/) (also available at [http://bitbucket.org/mvngu/rnotes/](http://bitbucket.org/mvngu/rnotes/).  We could in fact (with his permission) include that script with Sage, and then run it as part of the sage-sdist script.
 
@@ -39,7 +39,7 @@ archive/issue_comments_098770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9921#issuecomment-98770",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_098771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9921#issuecomment-98771",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_098772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9921#issuecomment-98772",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

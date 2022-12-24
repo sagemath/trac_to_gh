@@ -14,7 +14,7 @@ archive/issues_004153.json:
     "title": "re-enable -fwrapv option for Python on Itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4153",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_030158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4153#issuecomment-30158",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

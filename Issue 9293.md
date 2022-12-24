@@ -14,7 +14,7 @@ archive/issues_009293.json:
     "title": "Better expose GAP's character tables from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9293",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: joyner

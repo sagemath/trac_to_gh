@@ -3,7 +3,7 @@
 archive/issues_003956.json:
 ```json
 {
-    "body": "Assignee: malb\n\nIn ticket #3724, `malb` suggested a very fast hash method for matrices over `GF(2)`, and he wrote that it should be doable over `GF(p)` in general.\n\nCurrently, we have:\n\n```\nsage: time N=MatrixSpace(GF(7),10000,10000).random_element()\nCPU times: user 11.83 s, sys: 2.40 s, total: 14.23 s\nWall time: 14.23 s\n```\n\nThis, i think, is very slow and ought to be improved as well.\n\n\n```\nsage: N.set_immutable()\nsage: time N.__hash__()\nCPU times: user 3.17 s, sys: 0.00 s, total: 3.17 s\nWall time: 3.17 s\n21008582\n```\n\n... and this is quite slow, while (with the patch from #3724) the hash is immediate for matrices over GF(2).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3956\n\n",
+    "body": "Assignee: @malb\n\nIn ticket #3724, `malb` suggested a very fast hash method for matrices over `GF(2)`, and he wrote that it should be doable over `GF(p)` in general.\n\nCurrently, we have:\n\n```\nsage: time N=MatrixSpace(GF(7),10000,10000).random_element()\nCPU times: user 11.83 s, sys: 2.40 s, total: 14.23 s\nWall time: 14.23 s\n```\n\nThis, i think, is very slow and ought to be improved as well.\n\n\n```\nsage: N.set_immutable()\nsage: time N.__hash__()\nCPU times: user 3.17 s, sys: 0.00 s, total: 3.17 s\nWall time: 3.17 s\n21008582\n```\n\n... and this is quite slow, while (with the patch from #3724) the hash is immediate for matrices over GF(2).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3956\n\n",
     "created_at": "2008-08-26T13:24:57Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003956.json:
     "title": "Fast hash for matrices over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3956",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 In ticket #3724, `malb` suggested a very fast hash method for matrices over `GF(2)`, and he wrote that it should be doable over `GF(p)` in general.
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3956
 archive/issue_comments_028410.json:
 ```json
 {
-    "body": "Attachment [matrix_modn_dense_hash.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.patch) by malb created at 2008-08-26 14:53:18\n\nThe attached patch speeds up hashing a bit. However, GF(2) speed is not achievable for e.g. GF(3) since the matrices are not packed. I didn't improve `randomize` since that one could be slightly more tricky.",
+    "body": "Attachment [matrix_modn_dense_hash.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.patch) by @malb created at 2008-08-26 14:53:18\n\nThe attached patch speeds up hashing a bit. However, GF(2) speed is not achievable for e.g. GF(3) since the matrices are not packed. I didn't improve `randomize` since that one could be slightly more tricky.",
     "created_at": "2008-08-26T14:53:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3956#issuecomment-28410",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [matrix_modn_dense_hash.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.patch) by malb created at 2008-08-26 14:53:18
+Attachment [matrix_modn_dense_hash.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.patch) by @malb created at 2008-08-26 14:53:18
 
 The attached patch speeds up hashing a bit. However, GF(2) speed is not achievable for e.g. GF(3) since the matrices are not packed. I didn't improve `randomize` since that one could be slightly more tricky.
 
@@ -79,7 +79,7 @@ archive/issue_comments_028411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3956#issuecomment-28411",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_028413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3956#issuecomment-28413",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_028414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3956#issuecomment-28414",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_028415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3956#issuecomment-28415",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_028416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3956#issuecomment-28416",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_028417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3956#issuecomment-28417",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_028418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3956#issuecomment-28418",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -305,16 +305,16 @@ I didn't know about that. The updated patch plays nice.
 archive/issue_comments_028419.json:
 ```json
 {
-    "body": "Attachment [matrix_modn_dense_hash.2.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.2.patch) by robertwb created at 2008-08-27 20:32:50\n\nThat is consistant, but I believe it may fail if rows get swapped (the old version too). Disclaimer: I wrote code to do that at http://hg.sagemath.org/sage-main/rev/b39c832e2eca , though it could potentially be sped up by caching `self._matrix[i]`\n\nThis has sparked an interesting discussion on sage-devel :)",
+    "body": "Attachment [matrix_modn_dense_hash.2.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.2.patch) by @robertwb created at 2008-08-27 20:32:50\n\nThat is consistant, but I believe it may fail if rows get swapped (the old version too). Disclaimer: I wrote code to do that at http://hg.sagemath.org/sage-main/rev/b39c832e2eca , though it could potentially be sped up by caching `self._matrix[i]`\n\nThis has sparked an interesting discussion on sage-devel :)",
     "created_at": "2008-08-27T20:32:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3956#issuecomment-28419",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [matrix_modn_dense_hash.2.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.2.patch) by robertwb created at 2008-08-27 20:32:50
+Attachment [matrix_modn_dense_hash.2.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.2.patch) by @robertwb created at 2008-08-27 20:32:50
 
 That is consistant, but I believe it may fail if rows get swapped (the old version too). Disclaimer: I wrote code to do that at http://hg.sagemath.org/sage-main/rev/b39c832e2eca , though it could potentially be sped up by caching `self._matrix[i]`
 
@@ -327,16 +327,16 @@ This has sparked an interesting discussion on sage-devel :)
 archive/issue_comments_028420.json:
 ```json
 {
-    "body": "Attachment [matrix_modn_dense_hash.3.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.3.patch) by malb created at 2008-08-27 20:54:35",
+    "body": "Attachment [matrix_modn_dense_hash.3.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.3.patch) by @malb created at 2008-08-27 20:54:35",
     "created_at": "2008-08-27T20:54:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3956#issuecomment-28420",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [matrix_modn_dense_hash.3.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.3.patch) by malb created at 2008-08-27 20:54:35
+Attachment [matrix_modn_dense_hash.3.patch](tarball://root/attachments/some-uuid/ticket3956/matrix_modn_dense_hash.3.patch) by @malb created at 2008-08-27 20:54:35
 
 
 
@@ -350,7 +350,7 @@ archive/issue_comments_028421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3956#issuecomment-28421",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_028422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3956#issuecomment-28422",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

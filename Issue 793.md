@@ -3,7 +3,7 @@
 archive/issues_000793.json:
 ```json
 {
-    "body": "Assignee: was\n\nEven though we have functionality for computing zeta functions of hyperelliptic curves, the `HyperellipticCurve` curve object itself doesn't yet have a method like `zeta_function`. This shouldn't be hard to do (over prime fields at least), using code in `sage/schemes/hyperelliptic_curves/frobenius.pyx` and `sage/schemes/elliptic_curves/monsky_washnitzer.py`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/793\n\n",
+    "body": "Assignee: @williamstein\n\nEven though we have functionality for computing zeta functions of hyperelliptic curves, the `HyperellipticCurve` curve object itself doesn't yet have a method like `zeta_function`. This shouldn't be hard to do (over prime fields at least), using code in `sage/schemes/hyperelliptic_curves/frobenius.pyx` and `sage/schemes/elliptic_curves/monsky_washnitzer.py`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/793\n\n",
     "created_at": "2007-10-02T19:32:58Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_000793.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Even though we have functionality for computing zeta functions of hyperelliptic curves, the `HyperellipticCurve` curve object itself doesn't yet have a method like `zeta_function`. This shouldn't be hard to do (over prime fields at least), using code in `sage/schemes/hyperelliptic_curves/frobenius.pyx` and `sage/schemes/elliptic_curves/monsky_washnitzer.py`.
 
@@ -56,7 +56,7 @@ archive/issue_comments_004766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4766",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_004775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/793#issuecomment-4775",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

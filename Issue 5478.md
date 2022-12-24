@@ -3,7 +3,7 @@
 archive/issues_005478.json:
 ```json
 {
-    "body": "Assignee: ddrake\n\nCC:  sage-combinat\n\nKeywords: combinat, partitions, gap\n\nI have code that does the same as\n\n```\nRestrictedPartitions(3000, [1000, 500, 100, 50, 10])\n```\n\nbut about 5.5 times faster...and on my system,\n\n```\nRestrictedPartitions(5000, [1000, 500, 100, 50, 10])\n```\n\nuses over two gigabytes of memory, whereas my code takes about 9.2 seconds with minimal memory usage.\n\nI need to fiddle with my code so that it's a drop-in replacement for RestrictedPartitions, but I should have a patch up soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5478\n\n",
+    "body": "Assignee: @dandrake\n\nCC:  sage-combinat\n\nKeywords: combinat, partitions, gap\n\nI have code that does the same as\n\n```\nRestrictedPartitions(3000, [1000, 500, 100, 50, 10])\n```\n\nbut about 5.5 times faster...and on my system,\n\n```\nRestrictedPartitions(5000, [1000, 500, 100, 50, 10])\n```\n\nuses over two gigabytes of memory, whereas my code takes about 9.2 seconds with minimal memory usage.\n\nI need to fiddle with my code so that it's a drop-in replacement for RestrictedPartitions, but I should have a patch up soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5478\n\n",
     "created_at": "2009-03-11T03:46:36Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005478.json:
     "title": "RestrictedPartitions is very slow and a huge memory hog",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5478",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: ddrake
+Assignee: @dandrake
 
 CC:  sage-combinat
 
@@ -55,7 +55,7 @@ archive/issue_comments_042486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42486",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_042487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42487",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_042488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42488",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_042489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42489",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_042490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42490",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_042491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42491",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_042493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42493",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -270,16 +270,16 @@ deprecate RestrictedPartitions and fix up some documentation
 archive/issue_comments_042494.json:
 ```json
 {
-    "body": "Attachment [trac_5478-1.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-1.patch) by ddrake created at 2009-04-09 02:24:31\n\nimplement new Partitions class with parts_in keyword",
+    "body": "Attachment [trac_5478-1.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-1.patch) by @dandrake created at 2009-04-09 02:24:31\n\nimplement new Partitions class with parts_in keyword",
     "created_at": "2009-04-09T02:24:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42494",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5478-1.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-1.patch) by ddrake created at 2009-04-09 02:24:31
+Attachment [trac_5478-1.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-1.patch) by @dandrake created at 2009-04-09 02:24:31
 
 implement new Partitions class with parts_in keyword
 
@@ -290,16 +290,16 @@ implement new Partitions class with parts_in keyword
 archive/issue_comments_042495.json:
 ```json
 {
-    "body": "Attachment [trac_5478-2.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-2.patch) by ddrake created at 2009-04-09 02:25:27\n\nI've updated the patches to apply on top of 3.4.1.rc1.",
+    "body": "Attachment [trac_5478-2.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-2.patch) by @dandrake created at 2009-04-09 02:25:27\n\nI've updated the patches to apply on top of 3.4.1.rc1.",
     "created_at": "2009-04-09T02:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42495",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5478-2.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-2.patch) by ddrake created at 2009-04-09 02:25:27
+Attachment [trac_5478-2.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-2.patch) by @dandrake created at 2009-04-09 02:25:27
 
 I've updated the patches to apply on top of 3.4.1.rc1.
 
@@ -315,7 +315,7 @@ archive/issue_comments_042496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42496",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_042497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42497",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_042498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42498",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_042499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42499",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -420,16 +420,16 @@ Improved doctests for deprecation warnings.
 archive/issue_comments_042500.json:
 ```json
 {
-    "body": "Attachment [trac_5478-review.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-review.patch) by hivert created at 2009-04-12 16:08:06\n\nThe patch looks good. The doctests passed except that depending on the base the doctests numbers may differ. So I added a review patch which replace the explicit doctest numbers with `...`. This should solve this problem. \n\nI'm giving a positive review... Though maybe someone should reread my trivial review patch. \n\nConcerning the script it is quite redundant with the .check() method we'll have with categories.   \n\nFlorent",
+    "body": "Attachment [trac_5478-review.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-review.patch) by @hivert created at 2009-04-12 16:08:06\n\nThe patch looks good. The doctests passed except that depending on the base the doctests numbers may differ. So I added a review patch which replace the explicit doctest numbers with `...`. This should solve this problem. \n\nI'm giving a positive review... Though maybe someone should reread my trivial review patch. \n\nConcerning the script it is quite redundant with the .check() method we'll have with categories.   \n\nFlorent",
     "created_at": "2009-04-12T16:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42500",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_5478-review.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-review.patch) by hivert created at 2009-04-12 16:08:06
+Attachment [trac_5478-review.patch](tarball://root/attachments/some-uuid/ticket5478/trac_5478-review.patch) by @hivert created at 2009-04-12 16:08:06
 
 The patch looks good. The doctests passed except that depending on the base the doctests numbers may differ. So I added a review patch which replace the explicit doctest numbers with `...`. This should solve this problem. 
 
@@ -451,7 +451,7 @@ archive/issue_comments_042501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5478#issuecomment-42501",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

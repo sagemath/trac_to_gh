@@ -3,7 +3,7 @@
 archive/issues_001169.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  vbraun\n\nI've written a more cache-friendly version of NTL's FFT routines. This may speed up NTL's polynomial arithmetic for polynomials of very high degree (e.g. > 100000) with small coefficients. For example I get a speedup of about 2x on sage.math.\n\nBEFORE INCLUDING IN SAGE, someone needs to write some automatic tuning code, otherwise it might GREATLY SLOW DOWN arithmetic for small polynomials, which would be very stupid. See my website for code and more details:\n\nhttp://math.harvard.edu/~dmharvey/code/ntl-fft/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1169\n\n",
+    "body": "Assignee: somebody\n\nCC:  @vbraun\n\nI've written a more cache-friendly version of NTL's FFT routines. This may speed up NTL's polynomial arithmetic for polynomials of very high degree (e.g. > 100000) with small coefficients. For example I get a speedup of about 2x on sage.math.\n\nBEFORE INCLUDING IN SAGE, someone needs to write some automatic tuning code, otherwise it might GREATLY SLOW DOWN arithmetic for small polynomials, which would be very stupid. See my website for code and more details:\n\nhttp://math.harvard.edu/~dmharvey/code/ntl-fft/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1169\n\n",
     "created_at": "2007-11-14T14:48:16Z",
     "labels": [
         "basic arithmetic",
@@ -19,7 +19,7 @@ archive/issues_001169.json:
 ```
 Assignee: somebody
 
-CC:  vbraun
+CC:  @vbraun
 
 I've written a more cache-friendly version of NTL's FFT routines. This may speed up NTL's polynomial arithmetic for polynomials of very high degree (e.g. > 100000) with small coefficients. For example I get a speedup of about 2x on sage.math.
 
@@ -159,7 +159,7 @@ archive/issue_comments_007170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7170",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

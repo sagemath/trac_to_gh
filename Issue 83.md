@@ -3,7 +3,7 @@
 archive/issues_000083.json:
 ```json
 {
-    "body": "Assignee: was\n\nAfter typing QQ? followed the enter key, sage command line seems to be in edit mode (Is it expecting more input?) where I can type anything I want. After Control-C the appropriate docstring is displayed. ZZ? has the same behavior.\n\n\n```\nburhanud@sage:~/sha5$ sage\n--------------------------------------------------------\n--------------------------------------------------------\n| SAGE Version 1.3.7.3.3, Build Date: 2006-09-21       |\n| Distributed under the GNU General Public License V2. |\n\nsage: QQ?\n\n\nAHfDslh\n\nType:           RationalField\nBase Class:     <class 'sage.rings.rational_field.RationalField'>\nString Form:    Rational Field\nNamespace:      Interactive\nDocstring:\n    The class class{RationalField} represents the field Q of\n    rational numbers.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/83\n\n",
+    "body": "Assignee: @williamstein\n\nAfter typing QQ? followed the enter key, sage command line seems to be in edit mode (Is it expecting more input?) where I can type anything I want. After Control-C the appropriate docstring is displayed. ZZ? has the same behavior.\n\n\n```\nburhanud@sage:~/sha5$ sage\n--------------------------------------------------------\n--------------------------------------------------------\n| SAGE Version 1.3.7.3.3, Build Date: 2006-09-21       |\n| Distributed under the GNU General Public License V2. |\n\nsage: QQ?\n\n\nAHfDslh\n\nType:           RationalField\nBase Class:     <class 'sage.rings.rational_field.RationalField'>\nString Form:    Rational Field\nNamespace:      Interactive\nDocstring:\n    The class class{RationalField} represents the field Q of\n    rational numbers.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/83\n\n",
     "created_at": "2006-09-25T02:47:04Z",
     "labels": [
         "user interface",
@@ -16,7 +16,7 @@ archive/issues_000083.json:
     "user": "burhanud"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 After typing QQ? followed the enter key, sage command line seems to be in edit mode (Is it expecting more input?) where I can type anything I want. After Control-C the appropriate docstring is displayed. ZZ? has the same behavior.
 
@@ -60,7 +60,7 @@ archive/issue_comments_000419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/83",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/83#issuecomment-419",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_000420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/83",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/83#issuecomment-420",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_000421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/83",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/83#issuecomment-421",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

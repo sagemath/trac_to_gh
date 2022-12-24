@@ -3,7 +3,7 @@
 archive/issues_008158.json:
 ```json
 {
-    "body": "Assignee: malb\n\nConsider the following example:\n\n```\nsage: var('a,b,c')\n(a, b, c)\nsage: time d=expand((a+b+c+1)^100)\nCPU times: user 2.45 s, sys: 0.07 s, total: 2.52 s\nWall time: 2.53 s\n```\n\nI thought it would be more efficient to use PolynomialRing(),\nbut it is not:\n\n```\nsage: P.<a,b,c> = PolynomialRing(QQ)\nsage: time d=(a+b+c+1)^100\nCPU times: user 10.28 s, sys: 0.07 s, total: 10.35 s\nWall time: 12.59 s\n```\n\nHowever if one wants to factor d, then PolynomialRing is faster\n(SymbolicRing seems to loop forever):\n\n```\nsage: time e = d.factor()\nCPU times: user 28.87 s, sys: 0.36 s, total: 29.23 s\nWall time: 34.20 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8158\n\n",
+    "body": "Assignee: @malb\n\nConsider the following example:\n\n```\nsage: var('a,b,c')\n(a, b, c)\nsage: time d=expand((a+b+c+1)^100)\nCPU times: user 2.45 s, sys: 0.07 s, total: 2.52 s\nWall time: 2.53 s\n```\n\nI thought it would be more efficient to use PolynomialRing(),\nbut it is not:\n\n```\nsage: P.<a,b,c> = PolynomialRing(QQ)\nsage: time d=(a+b+c+1)^100\nCPU times: user 10.28 s, sys: 0.07 s, total: 10.35 s\nWall time: 12.59 s\n```\n\nHowever if one wants to factor d, then PolynomialRing is faster\n(SymbolicRing seems to loop forever):\n\n```\nsage: time e = d.factor()\nCPU times: user 28.87 s, sys: 0.36 s, total: 29.23 s\nWall time: 34.20 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8158\n\n",
     "created_at": "2010-02-02T22:18:45Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_008158.json:
     "title": "efficiency problem with polynomials (SymbolicRing vs PolynomialRing)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8158",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Consider the following example:
 
@@ -65,7 +65,7 @@ archive/issue_comments_071747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71747",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_071748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71748",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_071749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71749",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_071750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71750",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_071751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71751",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -214,16 +214,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_071752.json:
 ```json
 {
-    "body": "Changing assignee from malb to tbd.",
+    "body": "Changing assignee from @malb to tbd.",
     "created_at": "2014-03-16T09:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71752",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
-Changing assignee from malb to tbd.
+Changing assignee from @malb to tbd.
 
 
 
@@ -237,7 +237,7 @@ archive/issue_comments_071753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71753",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 

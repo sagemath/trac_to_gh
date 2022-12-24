@@ -14,7 +14,7 @@ archive/issues_008213.json:
     "title": "[meta] the \"Sage developer trac\" banner should link to trac.sagemath.org, not sagemath.org",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8213",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tbd
@@ -75,7 +75,7 @@ archive/issue_comments_072433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8213#issuecomment-72433",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_072434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8213#issuecomment-72434",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

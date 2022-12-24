@@ -14,7 +14,7 @@ archive/issues_008275.json:
     "title": "upgrade to ecl 10.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8275",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_073262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8275#issuecomment-73262",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

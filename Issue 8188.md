@@ -14,7 +14,7 @@ archive/issues_008188.json:
     "title": "additional functions for linear codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8188",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 Assignee: Kwankyu Lee
@@ -50,16 +50,16 @@ Is this ready for review?
 archive/issue_comments_072170.json:
 ```json
 {
-    "body": "Changing assignee from Kwankyu Lee to klee.",
+    "body": "Changing assignee from Kwankyu Lee to @kwankyu.",
     "created_at": "2010-02-05T04:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8188#issuecomment-72170",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Changing assignee from Kwankyu Lee to klee.
+Changing assignee from Kwankyu Lee to @kwankyu.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_072171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8188#issuecomment-72171",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_072172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8188#issuecomment-72172",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_072173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8188#issuecomment-72173",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_072174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8188#issuecomment-72174",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_072175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8188#issuecomment-72175",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_072176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8188#issuecomment-72176",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_072177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8188#issuecomment-72177",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_072178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8188#issuecomment-72178",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -250,16 +250,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_072179.json:
 ```json
 {
-    "body": "Attachment [trac_8188.patch](tarball://root/attachments/some-uuid/ticket8188/trac_8188.patch) by wdj created at 2010-02-08 13:50:22\n\nLooks good, applies fine to 4.3.2 and passes sage -testal.\n\nThank you for adding this!\n\nPositive review.",
+    "body": "Attachment [trac_8188.patch](tarball://root/attachments/some-uuid/ticket8188/trac_8188.patch) by @wdjoyner created at 2010-02-08 13:50:22\n\nLooks good, applies fine to 4.3.2 and passes sage -testal.\n\nThank you for adding this!\n\nPositive review.",
     "created_at": "2010-02-08T13:50:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8188#issuecomment-72179",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_8188.patch](tarball://root/attachments/some-uuid/ticket8188/trac_8188.patch) by wdj created at 2010-02-08 13:50:22
+Attachment [trac_8188.patch](tarball://root/attachments/some-uuid/ticket8188/trac_8188.patch) by @wdjoyner created at 2010-02-08 13:50:22
 
 Looks good, applies fine to 4.3.2 and passes sage -testal.
 
@@ -279,7 +279,7 @@ archive/issue_comments_072180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8188#issuecomment-72180",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

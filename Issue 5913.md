@@ -3,7 +3,7 @@
 archive/issues_005913.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  boothby\n\nSage should have some sort of implementation of code for computing a vertex coloring with n colors of a graph, assuming the chromatic number is at most n. \n\nEven a stupid initial greedy algorithm implementation would be a lot faster than what we have now, which is _nothing_. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5913\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  boothby\n\nSage should have some sort of implementation of code for computing a vertex coloring with n colors of a graph, assuming the chromatic number is at most n. \n\nEven a stupid initial greedy algorithm implementation would be a lot faster than what we have now, which is _nothing_. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5913\n\n",
     "created_at": "2009-04-27T18:38:12Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_005913.json:
     "title": "implement graph coloring in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5913",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 CC:  boothby
 
@@ -43,7 +43,7 @@ archive/issue_comments_046736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5913#issuecomment-46736",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_046737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5913#issuecomment-46737",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_046738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5913#issuecomment-46738",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_046739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5913#issuecomment-46739",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_046740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5913#issuecomment-46740",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_046741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5913#issuecomment-46741",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -212,16 +212,16 @@ Doctest now sorts the keys first.
 archive/issue_comments_046742.json:
 ```json
 {
-    "body": "Attachment [trac_5913-graph_colorings.patch](tarball://root/attachments/some-uuid/ticket5913/trac_5913-graph_colorings.patch) by rlm created at 2009-04-28 19:37:05",
+    "body": "Attachment [trac_5913-graph_colorings.patch](tarball://root/attachments/some-uuid/ticket5913/trac_5913-graph_colorings.patch) by @rlmill created at 2009-04-28 19:37:05",
     "created_at": "2009-04-28T19:37:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5913#issuecomment-46742",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5913-graph_colorings.patch](tarball://root/attachments/some-uuid/ticket5913/trac_5913-graph_colorings.patch) by rlm created at 2009-04-28 19:37:05
+Attachment [trac_5913-graph_colorings.patch](tarball://root/attachments/some-uuid/ticket5913/trac_5913-graph_colorings.patch) by @rlmill created at 2009-04-28 19:37:05
 
 
 
@@ -235,7 +235,7 @@ archive/issue_comments_046743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5913#issuecomment-46743",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_046744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5913#issuecomment-46744",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

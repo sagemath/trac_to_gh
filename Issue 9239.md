@@ -14,7 +14,7 @@ archive/issues_009239.json:
     "title": "delete the (ridiculous) method __copy__ from matrix0.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9239",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -37,7 +37,7 @@ archive/issue_comments_086890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9239#issuecomment-86890",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_086891.json:
 ```json
 {
-    "body": "Attachment [trac_9239-matrix_copy_remove-fh.patch](tarball://root/attachments/some-uuid/ticket9239/trac_9239-matrix_copy_remove-fh.patch) by hivert created at 2010-06-15 00:15:12\n\nNote: the doctest where duplicated from the `.copy()` method so I didn't kept them.\n\nPlease review",
+    "body": "Attachment [trac_9239-matrix_copy_remove-fh.patch](tarball://root/attachments/some-uuid/ticket9239/trac_9239-matrix_copy_remove-fh.patch) by @hivert created at 2010-06-15 00:15:12\n\nNote: the doctest where duplicated from the `.copy()` method so I didn't kept them.\n\nPlease review",
     "created_at": "2010-06-15T00:15:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9239#issuecomment-86891",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_9239-matrix_copy_remove-fh.patch](tarball://root/attachments/some-uuid/ticket9239/trac_9239-matrix_copy_remove-fh.patch) by hivert created at 2010-06-15 00:15:12
+Attachment [trac_9239-matrix_copy_remove-fh.patch](tarball://root/attachments/some-uuid/ticket9239/trac_9239-matrix_copy_remove-fh.patch) by @hivert created at 2010-06-15 00:15:12
 
 Note: the doctest where duplicated from the `.copy()` method so I didn't kept them.
 
@@ -77,7 +77,7 @@ archive/issue_comments_086892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9239#issuecomment-86892",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_086893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9239#issuecomment-86893",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_086894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9239#issuecomment-86894",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

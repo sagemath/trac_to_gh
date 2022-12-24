@@ -14,7 +14,7 @@ archive/issues_005147.json:
     "title": "make plot output file in DOCTEST_MODE changeable for sage-mode.el",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5147",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: mabshoff
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5147
 archive/issue_comments_039382.json:
 ```json
 {
-    "body": "Attachment [trac_5147-plot-output-filename.patch](tarball://root/attachments/some-uuid/ticket5147/trac_5147-plot-output-filename.patch) by ncalexan created at 2009-02-01 02:44:48",
+    "body": "Attachment [trac_5147-plot-output-filename.patch](tarball://root/attachments/some-uuid/ticket5147/trac_5147-plot-output-filename.patch) by @ncalexan created at 2009-02-01 02:44:48",
     "created_at": "2009-02-01T02:44:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5147#issuecomment-39382",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_5147-plot-output-filename.patch](tarball://root/attachments/some-uuid/ticket5147/trac_5147-plot-output-filename.patch) by ncalexan created at 2009-02-01 02:44:48
+Attachment [trac_5147-plot-output-filename.patch](tarball://root/attachments/some-uuid/ticket5147/trac_5147-plot-output-filename.patch) by @ncalexan created at 2009-02-01 02:44:48
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_039383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5147#issuecomment-39383",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_039384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5147#issuecomment-39384",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

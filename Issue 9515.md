@@ -3,7 +3,7 @@
 archive/issues_009515.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  mhansen mvngu was\n\nSee\n\n\u00a0 http://wiki.yobi.be/wiki/PyCryptoPlus\n\nand\u00a0\n\n\u00a0 http://groups.google.com/group/sage-devel/browse_thread/thread/500063cfaa2961b0/\u00a0\n\nIssue created by migration from https://trac.sagemath.org/ticket/9515\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @mwhansen mvngu @williamstein\n\nSee\n\n\u00a0 http://wiki.yobi.be/wiki/PyCryptoPlus\n\nand\u00a0\n\n\u00a0 http://groups.google.com/group/sage-devel/browse_thread/thread/500063cfaa2961b0/\u00a0\n\nIssue created by migration from https://trac.sagemath.org/ticket/9515\n\n",
     "created_at": "2010-07-16T09:26:40Z",
     "labels": [
         "cryptography",
@@ -14,12 +14,12 @@ archive/issues_009515.json:
     "title": "make an optional spkg for PyCryptoPlus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9515",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mvngu
 
-CC:  mhansen mvngu was
+CC:  @mwhansen mvngu @williamstein
 
 See
 
@@ -45,7 +45,7 @@ archive/issue_comments_091480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9515#issuecomment-91480",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_091481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9515#issuecomment-91481",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_091482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9515#issuecomment-91482",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_091483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9515#issuecomment-91483",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_091484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9515#issuecomment-91484",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_091485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9515#issuecomment-91485",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_091486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9515#issuecomment-91486",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_091487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9515#issuecomment-91487",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_091488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9515#issuecomment-91488",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_091490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9515#issuecomment-91490",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_091491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9515#issuecomment-91491",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

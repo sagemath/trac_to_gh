@@ -3,7 +3,7 @@
 archive/issues_008503.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  chapoton\n\nMultiline input like\n\n```\n8+\\\n2\n```\n\nwhich works in command line does not work in notebook and returns error.\n\nJason at [sage-notebook](http://groups.google.cz/group/sage-notebook/browse_thread/thread/9ee2472e1857edcb) wrote\n\n```\nDoes it have to do with the preparser?  Note:\n\nsage: preparse(\"1+\\\\n2\")\n'Integer(1)+ * BackslashOperator() * n2'\n\nMaybe on the command line, ipython joins the two lines before the\npreparser gets to it, but that doesn't happen in the notebook? \n```\n\n\nAnd further:\n\n```\nplot(x,\\\n(x,-2,2))\n```\n\ndoes not produce the plot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8503\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @fchapoton\n\nMultiline input like\n\n```\n8+\\\n2\n```\n\nwhich works in command line does not work in notebook and returns error.\n\nJason at [sage-notebook](http://groups.google.cz/group/sage-notebook/browse_thread/thread/9ee2472e1857edcb) wrote\n\n```\nDoes it have to do with the preparser?  Note:\n\nsage: preparse(\"1+\\\\n2\")\n'Integer(1)+ * BackslashOperator() * n2'\n\nMaybe on the command line, ipython joins the two lines before the\npreparser gets to it, but that doesn't happen in the notebook? \n```\n\n\nAnd further:\n\n```\nplot(x,\\\n(x,-2,2))\n```\n\ndoes not produce the plot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8503\n\n",
     "created_at": "2010-03-11T23:20:44Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008503.json:
     "title": "broken multiline input in sage notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8503",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  chapoton
+CC:  @fchapoton
 
 Multiline input like
 
@@ -68,7 +68,7 @@ archive/issue_comments_076776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8503#issuecomment-76776",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_076777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8503#issuecomment-76777",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_076778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8503#issuecomment-76778",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_076779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8503#issuecomment-76779",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007303.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe Nash-William theorem on orientation of graphs is one \"best\" way to orient the edges of a graph without losing too much connectivity. It would be -- great -- to have it in Sage !!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7303\n\n",
+    "body": "Assignee: @rlmill\n\nThe Nash-William theorem on orientation of graphs is one \"best\" way to orient the edges of a graph without losing too much connectivity. It would be -- great -- to have it in Sage !!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7303\n\n",
     "created_at": "2009-10-25T19:49:33Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007303.json:
     "title": "Nash-William theorem on orientation of graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7303",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The Nash-William theorem on orientation of graphs is one "best" way to orient the edges of a graph without losing too much connectivity. It would be -- great -- to have it in Sage !!
 
@@ -37,7 +37,7 @@ archive/issue_comments_060913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7303#issuecomment-60913",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_060914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7303#issuecomment-60914",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

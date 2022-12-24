@@ -3,7 +3,7 @@
 archive/issues_002110.json:
 ```json
 {
-    "body": "Assignee: was\n\ncython -a creates an annotated html file that helps with profiling code.  It would be nice if this functionality were available on:\n1. .spyx files\n2. .pyx files in the sage library, more easily.\n\nI propose that there should be a new flag to sage (eg sage -n) that fulfills these goals.\n\nsage -n file.spyx would proprocess file.spyx and then call cython -a then start a web-browser to view the file.\nsage -bn would build sage and call cython -a on the cython files that are being built.\nsage -ban would run sage -ba with cython -a.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2110\n\n",
+    "body": "Assignee: @williamstein\n\ncython -a creates an annotated html file that helps with profiling code.  It would be nice if this functionality were available on:\n1. .spyx files\n2. .pyx files in the sage library, more easily.\n\nI propose that there should be a new flag to sage (eg sage -n) that fulfills these goals.\n\nsage -n file.spyx would proprocess file.spyx and then call cython -a then start a web-browser to view the file.\nsage -bn would build sage and call cython -a on the cython files that are being built.\nsage -ban would run sage -ba with cython -a.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2110\n\n",
     "created_at": "2008-02-08T11:37:09Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_002110.json:
     "title": "Cython annotation should be available more easily",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2110",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 cython -a creates an annotated html file that helps with profiling code.  It would be nice if this functionality were available on:
 1. .spyx files
@@ -46,7 +46,7 @@ archive/issue_comments_013761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2110#issuecomment-13761",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_013762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2110#issuecomment-13762",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009456.json:
     "title": "zlib should be a prerequisite for libpng",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9456",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
@@ -99,7 +99,7 @@ archive/issue_comments_090624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9456#issuecomment-90624",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_090625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9456#issuecomment-90625",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_090626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9456#issuecomment-90626",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_090627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9456#issuecomment-90627",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

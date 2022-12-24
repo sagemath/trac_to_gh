@@ -13,7 +13,7 @@ archive/issues_000242.json:
     "title": "finite field arithmetic crash",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/242",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -56,7 +56,7 @@ archive/issue_comments_001076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/242#issuecomment-1076",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_001077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/242#issuecomment-1077",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

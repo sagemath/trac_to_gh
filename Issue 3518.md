@@ -3,7 +3,7 @@
 archive/issues_003518.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3518\n\n",
+    "body": "Assignee: @craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3518\n\n",
     "created_at": "2008-06-27T01:05:35Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_003518.json:
     "title": "modular symbols -- fix a bug in factorization of modular symbols spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3518",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3518
 archive/issue_comments_024786.json:
 ```json
 {
-    "body": "Attachment [sage-3518.patch](tarball://root/attachments/some-uuid/ticket3518/sage-3518.patch) by was created at 2008-06-27 01:06:53\n\n(don't worry about the possible two hunks that mail fail that involve deleting EXAMPLES: sage:)",
+    "body": "Attachment [sage-3518.patch](tarball://root/attachments/some-uuid/ticket3518/sage-3518.patch) by @williamstein created at 2008-06-27 01:06:53\n\n(don't worry about the possible two hunks that mail fail that involve deleting EXAMPLES: sage:)",
     "created_at": "2008-06-27T01:06:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3518#issuecomment-24786",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3518.patch](tarball://root/attachments/some-uuid/ticket3518/sage-3518.patch) by was created at 2008-06-27 01:06:53
+Attachment [sage-3518.patch](tarball://root/attachments/some-uuid/ticket3518/sage-3518.patch) by @williamstein created at 2008-06-27 01:06:53
 
 (don't worry about the possible two hunks that mail fail that involve deleting EXAMPLES: sage:)
 
@@ -57,7 +57,7 @@ archive/issue_comments_024787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3518#issuecomment-24787",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

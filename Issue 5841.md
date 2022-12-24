@@ -3,7 +3,7 @@
 archive/issues_005841.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mvngu mhansen jdemeyer\n\n#5662 introduced a problem when using old clisp builds which we need to use on RHEL5/Itanium since any more current clisp is hopelessly broken there. But since Gonzalo's patch fixes a real issue in the clisp interface I don't want to change any of that patch.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5841\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  mvngu @mwhansen @jdemeyer\n\n#5662 introduced a problem when using old clisp builds which we need to use on RHEL5/Itanium since any more current clisp is hopelessly broken there. But since Gonzalo's patch fixes a real issue in the clisp interface I don't want to change any of that patch.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5841\n\n",
     "created_at": "2009-04-21T06:26:48Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_005841.json:
 ```
 Assignee: mabshoff
 
-CC:  mvngu mhansen jdemeyer
+CC:  mvngu @mwhansen @jdemeyer
 
 #5662 introduced a problem when using old clisp builds which we need to use on RHEL5/Itanium since any more current clisp is hopelessly broken there. But since Gonzalo's patch fixes a real issue in the clisp interface I don't want to change any of that patch.
 
@@ -61,7 +61,7 @@ archive/issue_comments_045925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5841#issuecomment-45925",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_045926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5841#issuecomment-45926",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_045927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5841#issuecomment-45927",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_045928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5841#issuecomment-45928",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_045929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5841#issuecomment-45929",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_045930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5841#issuecomment-45930",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_045931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5841#issuecomment-45931",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_045932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5841#issuecomment-45932",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

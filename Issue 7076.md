@@ -14,7 +14,7 @@ archive/issues_007076.json:
     "title": "SageNB -- Do ReST introspection on a `worksheet_process`",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7076",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7076
 archive/issue_comments_058518.json:
 ```json
 {
-    "body": "Attachment [trac_7076-introspection-reimplementation.patch](tarball://root/attachments/some-uuid/ticket7076/trac_7076-introspection-reimplementation.patch) by timdumol created at 2009-09-29 19:49:59\n\nReimplements introspection.",
+    "body": "Attachment [trac_7076-introspection-reimplementation.patch](tarball://root/attachments/some-uuid/ticket7076/trac_7076-introspection-reimplementation.patch) by @TimDumol created at 2009-09-29 19:49:59\n\nReimplements introspection.",
     "created_at": "2009-09-29T19:49:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7076#issuecomment-58518",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7076-introspection-reimplementation.patch](tarball://root/attachments/some-uuid/ticket7076/trac_7076-introspection-reimplementation.patch) by timdumol created at 2009-09-29 19:49:59
+Attachment [trac_7076-introspection-reimplementation.patch](tarball://root/attachments/some-uuid/ticket7076/trac_7076-introspection-reimplementation.patch) by @TimDumol created at 2009-09-29 19:49:59
 
 Reimplements introspection.
 
@@ -59,7 +59,7 @@ archive/issue_comments_058519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7076#issuecomment-58519",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_058520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7076#issuecomment-58520",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

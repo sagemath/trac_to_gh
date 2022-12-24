@@ -14,7 +14,7 @@ archive/issues_000389.json:
     "title": "bug in mpfi C library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/389",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody

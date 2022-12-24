@@ -3,7 +3,7 @@
 archive/issues_005342.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nThe subscription mechanism on the wiki does not work. \n\nIt used to be a convenient way of getting information about updates on interesting pages. Looking at the `RecentChanges` page every once in a while doesn't work well. \n\n\n```\n<mabs|4666> Just open a trac ticket and assign it to mhansen.\n<mabs|4666> He is only dealing with 35 tickets and 20 MB diffs :)\n<burcin> I'm sure he appreciates your support :)\n\n...\n<mabs|4666> Yep, make it an issue for all wikis.\n<mabs|4666> or at least mpir, l-functions and sage\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5342\n\n",
+    "body": "Assignee: @mwhansen\n\nThe subscription mechanism on the wiki does not work. \n\nIt used to be a convenient way of getting information about updates on interesting pages. Looking at the `RecentChanges` page every once in a while doesn't work well. \n\n\n```\n<mabs|4666> Just open a trac ticket and assign it to mhansen.\n<mabs|4666> He is only dealing with 35 tickets and 20 MB diffs :)\n<burcin> I'm sure he appreciates your support :)\n\n...\n<mabs|4666> Yep, make it an issue for all wikis.\n<mabs|4666> or at least mpir, l-functions and sage\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5342\n\n",
     "created_at": "2009-02-22T20:46:07Z",
     "labels": [
         "website/wiki",
@@ -14,10 +14,10 @@ archive/issues_005342.json:
     "title": "subscriptions broken on wiki",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5342",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 The subscription mechanism on the wiki does not work. 
 

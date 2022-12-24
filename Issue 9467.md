@@ -3,7 +3,7 @@
 archive/issues_009467.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is a first attempt at merging the code William and I wrote during Sage Days 22 to compute p-adic L-series associated to modular Jacobians.\n\nBelow is an example of a p-adic L-series associated to the rank 2 Jacobian of a curve (level N = 188) in \n\"Empirical evidence for the Birch and Swinnerton-Dyer conjectures for modular Jacobians of genus 2 curves\" (Flynn, Leprevost, Schaefer, Stein, Stoll, Wetherell).\n\nI realize the naming isn't quite right (this is the L-series of a\ncurve whose Jacobian is a certain quotient of J_0(N) ...), but here's the main function:\n\n```\n\nsage: J = J0(188)\nsage: L = J.padic_lseries(7)\nsage: f = L.series(5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9467\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a first attempt at merging the code William and I wrote during Sage Days 22 to compute p-adic L-series associated to modular Jacobians.\n\nBelow is an example of a p-adic L-series associated to the rank 2 Jacobian of a curve (level N = 188) in \n\"Empirical evidence for the Birch and Swinnerton-Dyer conjectures for modular Jacobians of genus 2 curves\" (Flynn, Leprevost, Schaefer, Stein, Stoll, Wetherell).\n\nI realize the naming isn't quite right (this is the L-series of a\ncurve whose Jacobian is a certain quotient of J_0(N) ...), but here's the main function:\n\n```\n\nsage: J = J0(188)\nsage: L = J.padic_lseries(7)\nsage: f = L.series(5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9467\n\n",
     "created_at": "2010-07-09T20:15:29Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_009467.json:
     "title": "p-adic l-series associated to modular Jacobians",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9467",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is a first attempt at merging the code William and I wrote during Sage Days 22 to compute p-adic L-series associated to modular Jacobians.
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9467
 archive/issue_comments_090808.json:
 ```json
 {
-    "body": "Attachment [14329.patch](tarball://root/attachments/some-uuid/ticket9467/14329.patch) by jen created at 2010-07-09 20:16:59",
+    "body": "Attachment [14329.patch](tarball://root/attachments/some-uuid/ticket9467/14329.patch) by @jbalakrishnan created at 2010-07-09 20:16:59",
     "created_at": "2010-07-09T20:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9467#issuecomment-90808",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [14329.patch](tarball://root/attachments/some-uuid/ticket9467/14329.patch) by jen created at 2010-07-09 20:16:59
+Attachment [14329.patch](tarball://root/attachments/some-uuid/ticket9467/14329.patch) by @jbalakrishnan created at 2010-07-09 20:16:59
 
 
 
@@ -64,16 +64,16 @@ Attachment [14329.patch](tarball://root/attachments/some-uuid/ticket9467/14329.p
 archive/issue_comments_090809.json:
 ```json
 {
-    "body": "Attachment [14330.patch](tarball://root/attachments/some-uuid/ticket9467/14330.patch) by jen created at 2010-07-09 20:22:29",
+    "body": "Attachment [14330.patch](tarball://root/attachments/some-uuid/ticket9467/14330.patch) by @jbalakrishnan created at 2010-07-09 20:22:29",
     "created_at": "2010-07-09T20:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9467#issuecomment-90809",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [14330.patch](tarball://root/attachments/some-uuid/ticket9467/14330.patch) by jen created at 2010-07-09 20:22:29
+Attachment [14330.patch](tarball://root/attachments/some-uuid/ticket9467/14330.patch) by @jbalakrishnan created at 2010-07-09 20:22:29
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_090810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9467#issuecomment-90810",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_090812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9467#issuecomment-90812",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_090813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9467#issuecomment-90813",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_090815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9467#issuecomment-90815",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007937.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  timdumol was\n\nThe SASS source files from ticket #7269 are missing from [sagenb-0.5.spkg](http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.5.spkg):\n\n```sh\nhg stat\n! sass/config.rb\n! sass/readme.txt\n! sass/src/account_settings.sass\n! sass/src/main.sass\n! sass/src/master.sass\n! sass/src/partials/_mixins.sass\n! sass/src/registration.sass\n! sass/src/test_report.sass\n! sass/src/typography/_base.sass\n! sass/src/user_management.sass\n? release_notes.txt\n? setup.cfg\n```\n\nI think we just need to patch the `MANIFEST.in`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7937\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @TimDumol @williamstein\n\nThe SASS source files from ticket #7269 are missing from [sagenb-0.5.spkg](http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.5.spkg):\n\n```sh\nhg stat\n! sass/config.rb\n! sass/readme.txt\n! sass/src/account_settings.sass\n! sass/src/main.sass\n! sass/src/master.sass\n! sass/src/partials/_mixins.sass\n! sass/src/registration.sass\n! sass/src/test_report.sass\n! sass/src/typography/_base.sass\n! sass/src/user_management.sass\n? release_notes.txt\n? setup.cfg\n```\n\nI think we just need to patch the `MANIFEST.in`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7937\n\n",
     "created_at": "2010-01-15T18:49:44Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007937.json:
     "title": "Add SASS files to MANIFEST.in",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7937",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  timdumol was
+CC:  @TimDumol @williamstein
 
 The SASS source files from ticket #7269 are missing from [sagenb-0.5.spkg](http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.5.spkg):
 
@@ -57,7 +57,7 @@ archive/issue_comments_069207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69207",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -70,16 +70,16 @@ Updates `MANIFEST.in` for #7269.  Does *not* include the missing files.  sagenb 
 archive/issue_comments_069208.json:
 ```json
 {
-    "body": "Attachment [trac_7937-sass_manifest.patch](tarball://root/attachments/some-uuid/ticket7937/trac_7937-sass_manifest.patch) by mpatel created at 2010-01-15 19:20:11",
+    "body": "Attachment [trac_7937-sass_manifest.patch](tarball://root/attachments/some-uuid/ticket7937/trac_7937-sass_manifest.patch) by @qed777 created at 2010-01-15 19:20:11",
     "created_at": "2010-01-15T19:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69208",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7937-sass_manifest.patch](tarball://root/attachments/some-uuid/ticket7937/trac_7937-sass_manifest.patch) by mpatel created at 2010-01-15 19:20:11
+Attachment [trac_7937-sass_manifest.patch](tarball://root/attachments/some-uuid/ticket7937/trac_7937-sass_manifest.patch) by @qed777 created at 2010-01-15 19:20:11
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_069209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69209",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_069210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69210",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_069211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69211",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_069212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69212",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_069213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69213",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

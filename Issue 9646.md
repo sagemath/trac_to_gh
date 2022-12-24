@@ -3,7 +3,7 @@
 archive/issues_009646.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  wuthrich\n\nKeywords: elliptic curve formal group law\n\nIf `F(t1, t2)` is a formal group law, then `F(t1, t2) = t1 + t2 (mod t1*t2)`.  So in particular, the coefficients of `t1^i` and `t2^i` are zero for all `i > 1`.  However the formal group law of an elliptic curve as returned by Sage includes (at least) the terms `-a1<sup>2*t1</sup>3` and `-a1<sup>2*t2</sup>2`, as the following example shows:\n\n```\nsage: P.<a1, a2, a3, a4, a6> = PolynomialRing(ZZ, 5)\nsage: E = EllipticCurve(list(P.gens()))\nsage: F = E.formal().group_law(prec = 4)\nsage: t2 = F.parent().gen()\nsage: t1 = F.parent().base_ring().gen()\nsage: F(t1, 0)\nt1 - a1^2*t1^3   # should be t1\nsage: F(0, t2)\nt2 - a1^2*t2^3\n```\n\nNote also that the coefficient of `t1^2*t2 + t1*t2^2` returned by sage is `-a1^2 - a2`, whereas, according to Silverman AEC IV.1, it should be simply `-a2`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9646\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @categorie\n\nKeywords: elliptic curve formal group law\n\nIf `F(t1, t2)` is a formal group law, then `F(t1, t2) = t1 + t2 (mod t1*t2)`.  So in particular, the coefficients of `t1^i` and `t2^i` are zero for all `i > 1`.  However the formal group law of an elliptic curve as returned by Sage includes (at least) the terms `-a1<sup>2*t1</sup>3` and `-a1<sup>2*t2</sup>2`, as the following example shows:\n\n```\nsage: P.<a1, a2, a3, a4, a6> = PolynomialRing(ZZ, 5)\nsage: E = EllipticCurve(list(P.gens()))\nsage: F = E.formal().group_law(prec = 4)\nsage: t2 = F.parent().gen()\nsage: t1 = F.parent().base_ring().gen()\nsage: F(t1, 0)\nt1 - a1^2*t1^3   # should be t1\nsage: F(0, t2)\nt2 - a1^2*t2^3\n```\n\nNote also that the coefficient of `t1^2*t2 + t1*t2^2` returned by sage is `-a1^2 - a2`, whereas, according to Silverman AEC IV.1, it should be simply `-a2`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9646\n\n",
     "created_at": "2010-07-30T15:06:26Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_009646.json:
     "title": "Incorrect calculation of elliptic curve formal group law",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9646",
-    "user": "hlaw"
+    "user": "@unzvfu"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  wuthrich
+CC:  @categorie
 
 Keywords: elliptic curve formal group law
 
@@ -55,7 +55,7 @@ archive/issue_comments_093528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93528",
-    "user": "hlaw"
+    "user": "@unzvfu"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_093529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93529",
-    "user": "hlaw"
+    "user": "@unzvfu"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_093530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93530",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -160,16 +160,16 @@ There was indeed a precision error in the code and the patch that I attach shoul
 archive/issue_comments_093531.json:
 ```json
 {
-    "body": "Attachment [trac_9646.patch](tarball://root/attachments/some-uuid/ticket9646/trac_9646.patch) by wuthrich created at 2010-11-14 16:37:27\n\nexported against 4.6",
+    "body": "Attachment [trac_9646.patch](tarball://root/attachments/some-uuid/ticket9646/trac_9646.patch) by @categorie created at 2010-11-14 16:37:27\n\nexported against 4.6",
     "created_at": "2010-11-14T16:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93531",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_9646.patch](tarball://root/attachments/some-uuid/ticket9646/trac_9646.patch) by wuthrich created at 2010-11-14 16:37:27
+Attachment [trac_9646.patch](tarball://root/attachments/some-uuid/ticket9646/trac_9646.patch) by @categorie created at 2010-11-14 16:37:27
 
 exported against 4.6
 
@@ -185,7 +185,7 @@ archive/issue_comments_093532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93532",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_093533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93533",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_093534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93534",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_093535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93535",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_093536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93536",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -311,16 +311,16 @@ to be applied after the first patch
 archive/issue_comments_093537.json:
 ```json
 {
-    "body": "Attachment [trac_9646_2.patch](tarball://root/attachments/some-uuid/ticket9646/trac_9646_2.patch) by davidloeffler created at 2010-12-16 12:07:21",
+    "body": "Attachment [trac_9646_2.patch](tarball://root/attachments/some-uuid/ticket9646/trac_9646_2.patch) by @loefflerd created at 2010-12-16 12:07:21",
     "created_at": "2010-12-16T12:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93537",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9646_2.patch](tarball://root/attachments/some-uuid/ticket9646/trac_9646_2.patch) by davidloeffler created at 2010-12-16 12:07:21
+Attachment [trac_9646_2.patch](tarball://root/attachments/some-uuid/ticket9646/trac_9646_2.patch) by @loefflerd created at 2010-12-16 12:07:21
 
 
 
@@ -334,7 +334,7 @@ archive/issue_comments_093538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93538",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_093539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93539",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_093540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93540",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_093541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9646#issuecomment-93541",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

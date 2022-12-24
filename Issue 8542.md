@@ -14,7 +14,7 @@ archive/issues_008542.json:
     "title": "Pynac does not build a DLL on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8542",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -45,7 +45,7 @@ archive/issue_comments_077224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77224",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_077225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77225",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_077226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77226",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -126,16 +126,16 @@ No, not quite yet.  Basically, we'll also have the stuff to autotools to detect 
 archive/issue_comments_077227.json:
 ```json
 {
-    "body": "Attachment [trac_8542-pynac_pointer_table.patch](tarball://root/attachments/some-uuid/ticket8542/trac_8542-pynac_pointer_table.patch) by mhansen created at 2010-05-03 13:33:27",
+    "body": "Attachment [trac_8542-pynac_pointer_table.patch](tarball://root/attachments/some-uuid/ticket8542/trac_8542-pynac_pointer_table.patch) by @mwhansen created at 2010-05-03 13:33:27",
     "created_at": "2010-05-03T13:33:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77227",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8542-pynac_pointer_table.patch](tarball://root/attachments/some-uuid/ticket8542/trac_8542-pynac_pointer_table.patch) by mhansen created at 2010-05-03 13:33:27
+Attachment [trac_8542-pynac_pointer_table.patch](tarball://root/attachments/some-uuid/ticket8542/trac_8542-pynac_pointer_table.patch) by @mwhansen created at 2010-05-03 13:33:27
 
 
 
@@ -149,7 +149,7 @@ archive/issue_comments_077228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77228",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_077229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77229",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_077230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77230",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -201,16 +201,16 @@ I'll take a look at these and merge #8651 as well.
 archive/issue_comments_077231.json:
 ```json
 {
-    "body": "Changing assignee from tbd to burcin.",
+    "body": "Changing assignee from tbd to @burcin.",
     "created_at": "2010-05-05T15:56:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77231",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from tbd to burcin.
+Changing assignee from tbd to @burcin.
 
 
 
@@ -224,7 +224,7 @@ archive/issue_comments_077232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77232",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_077233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77233",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_077234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77234",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_077235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77235",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_077236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77236",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_077237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77237",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_077238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77238",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_077239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77239",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_077240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77240",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_077241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8542#issuecomment-77241",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

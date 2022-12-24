@@ -14,7 +14,7 @@ archive/issues_006316.json:
     "title": "optional doctest failure -- surf tests fail since surf isn't included in sage anymore",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6316",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -143,7 +143,7 @@ archive/issue_comments_050414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6316#issuecomment-50414",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

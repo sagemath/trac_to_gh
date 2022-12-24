@@ -14,7 +14,7 @@ archive/issues_006330.json:
     "title": "optional doctest failure -- constructions number fields doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6330",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -109,7 +109,7 @@ archive/issue_comments_050541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6330#issuecomment-50541",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -122,16 +122,16 @@ I put in some `.. link` directives so that "J" would remain defined from one set
 archive/issue_comments_050542.json:
 ```json
 {
-    "body": "Attachment [trac_6330.patch](tarball://root/attachments/some-uuid/ticket6330/trac_6330.patch) by jhpalmieri created at 2009-06-16 19:13:50",
+    "body": "Attachment [trac_6330.patch](tarball://root/attachments/some-uuid/ticket6330/trac_6330.patch) by @jhpalmieri created at 2009-06-16 19:13:50",
     "created_at": "2009-06-16T19:13:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6330#issuecomment-50542",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6330.patch](tarball://root/attachments/some-uuid/ticket6330/trac_6330.patch) by jhpalmieri created at 2009-06-16 19:13:50
+Attachment [trac_6330.patch](tarball://root/attachments/some-uuid/ticket6330/trac_6330.patch) by @jhpalmieri created at 2009-06-16 19:13:50
 
 
 
@@ -145,7 +145,7 @@ archive/issue_comments_050543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6330#issuecomment-50543",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_050544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6330#issuecomment-50544",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

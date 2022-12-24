@@ -3,7 +3,7 @@
 archive/issues_003389.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nHi!\n\nThe Cartesian Product iterator of infinite sequences doesn't enumerate the\nevery element in the product.\n\nI tried:\n\nfor t in CartesianProduct(QQ,ZZ):\n\n....:     print t\n\n....:     \n\n[0, 0]\n\n[0, 1]\n\n[0, -1]\n\n[0, 2]\n\n\nThis is equivalent to nest for loops, which won't work.\nYou have to enumerate the set in a different way.\n\nSee \nhttp://en.wikipedia.org/wiki/Recursively_enumerable\nhttp://en.wikipedia.org/wiki/Cantor_pairing_function\n\nBest regards,\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3389\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nHi!\n\nThe Cartesian Product iterator of infinite sequences doesn't enumerate the\nevery element in the product.\n\nI tried:\n\nfor t in CartesianProduct(QQ,ZZ):\n\n....:     print t\n\n....:     \n\n[0, 0]\n\n[0, 1]\n\n[0, -1]\n\n[0, 2]\n\n\nThis is equivalent to nest for loops, which won't work.\nYou have to enumerate the set in a different way.\n\nSee \nhttp://en.wikipedia.org/wiki/Recursively_enumerable\nhttp://en.wikipedia.org/wiki/Cantor_pairing_function\n\nBest regards,\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3389\n\n",
     "created_at": "2008-06-10T10:15:49Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_003389.json:
     "user": "PolyBoRi"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -69,7 +69,7 @@ archive/issue_comments_023726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3389#issuecomment-23726",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_023728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3389#issuecomment-23728",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_023729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3389#issuecomment-23729",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_023730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3389#issuecomment-23730",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

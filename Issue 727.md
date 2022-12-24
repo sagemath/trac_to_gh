@@ -3,7 +3,7 @@
 archive/issues_000727.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  ncalexan justin mstreng rlm pbruin\n\n\n```\nJohn Cremona <john.cremona@gmail.com> \t\t hide details\t 1:37 am (2 minutes ago) \n\treply-to\t\tsage-support@googlegroups.com\t \n\tto\t\tsage-support@googlegroups.com\t \n\tdate\t\tSep 21, 2007 1:37 AM\t \n\tsubject\t\t[sage-support] Re: rational solutions to a bivariate polynomial\t \n\tmailed-by\t\tgooglegroups.com\t \n\nIt *is* a ternary quadratic form once you homogenize with a 3rd variable z.\n\nFinding rational points on plane conics (which is what this is) has\nadvanced substantially in the last few years.  My paper with Rusin\n(Mathematics of Computation, 72 (2003), no. 243, pages 1417-1441.)\nworks well for diaginal ones and is behind Magma's first\nimplementations for RationalPoint(Conic());  a different method by\nDenis Simon is better for non-diagonal ones and is (I believe) what\nMagma uses.\n\nMy method is implemented in the C++ code which is already in Sage in\nthe mwrank package, so all tat would be needed would be to write the\nappropriate wrappers!\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/727\n\n",
+    "body": "Assignee: somebody\n\nCC:  @ncalexan justin @mstreng @rlmill @pjbruin\n\n\n```\nJohn Cremona <john.cremona@gmail.com> \t\t hide details\t 1:37 am (2 minutes ago) \n\treply-to\t\tsage-support@googlegroups.com\t \n\tto\t\tsage-support@googlegroups.com\t \n\tdate\t\tSep 21, 2007 1:37 AM\t \n\tsubject\t\t[sage-support] Re: rational solutions to a bivariate polynomial\t \n\tmailed-by\t\tgooglegroups.com\t \n\nIt *is* a ternary quadratic form once you homogenize with a 3rd variable z.\n\nFinding rational points on plane conics (which is what this is) has\nadvanced substantially in the last few years.  My paper with Rusin\n(Mathematics of Computation, 72 (2003), no. 243, pages 1417-1441.)\nworks well for diaginal ones and is behind Magma's first\nimplementations for RationalPoint(Conic());  a different method by\nDenis Simon is better for non-diagonal ones and is (I believe) what\nMagma uses.\n\nMy method is implemented in the C++ code which is already in Sage in\nthe mwrank package, so all tat would be needed would be to write the\nappropriate wrappers!\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/727\n\n",
     "created_at": "2007-09-21T08:45:15Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_000727.json:
     "title": "find rational points on ternary quadratic forms -- volunteer needed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/727",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
 
-CC:  ncalexan justin mstreng rlm pbruin
+CC:  @ncalexan justin @mstreng @rlmill @pjbruin
 
 
 ```
@@ -63,7 +63,7 @@ archive/issue_comments_004235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4235",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing component from basic arithmetic to algebraic geometry.
 archive/issue_comments_004236.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2008-01-27T05:02:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4236",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_004237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4237",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_004238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4238",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -130,7 +130,7 @@ Changing keywords from "" to "rational point points conic quadratic form".
 archive/issue_comments_004239.json:
 ```json
 {
-    "body": "Changing assignee from was to justin.",
+    "body": "Changing assignee from @williamstein to justin.",
     "created_at": "2008-11-08T21:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
@@ -139,7 +139,7 @@ archive/issue_comments_004239.json:
 }
 ```
 
-Changing assignee from was to justin.
+Changing assignee from @williamstein to justin.
 
 
 
@@ -171,7 +171,7 @@ archive/issue_comments_004241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4241",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_004242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4242",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -202,16 +202,16 @@ Changing assignee from justin to mhampton.
 archive/issue_comments_004243.json:
 ```json
 {
-    "body": "Attachment [trac_727-conic.patch](tarball://root/attachments/some-uuid/ticket727/trac_727-conic.patch) by mstreng created at 2009-06-18 18:15:53\n\nThe patches I just uploaded were part of ncalexan's patch for ticket 6341, implementing Mestre's algorithm. They implement a Conic class and allow one to find points over the rationals. This Conic class needs to be expanded to provide much more functionality, such as finding points and/or rational parametrizations over other fields. If the original question is only for the rationals, then that at least is answered.",
+    "body": "Attachment [trac_727-conic.patch](tarball://root/attachments/some-uuid/ticket727/trac_727-conic.patch) by @mstreng created at 2009-06-18 18:15:53\n\nThe patches I just uploaded were part of ncalexan's patch for ticket 6341, implementing Mestre's algorithm. They implement a Conic class and allow one to find points over the rationals. This Conic class needs to be expanded to provide much more functionality, such as finding points and/or rational parametrizations over other fields. If the original question is only for the rationals, then that at least is answered.",
     "created_at": "2009-06-18T18:15:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4243",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_727-conic.patch](tarball://root/attachments/some-uuid/ticket727/trac_727-conic.patch) by mstreng created at 2009-06-18 18:15:53
+Attachment [trac_727-conic.patch](tarball://root/attachments/some-uuid/ticket727/trac_727-conic.patch) by @mstreng created at 2009-06-18 18:15:53
 
 The patches I just uploaded were part of ncalexan's patch for ticket 6341, implementing Mestre's algorithm. They implement a Conic class and allow one to find points over the rationals. This Conic class needs to be expanded to provide much more functionality, such as finding points and/or rational parametrizations over other fields. If the original question is only for the rationals, then that at least is answered.
 
@@ -227,7 +227,7 @@ archive/issue_comments_004244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4244",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_004245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4245",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -258,16 +258,16 @@ Changing status from new to assigned.
 archive/issue_comments_004246.json:
 ```json
 {
-    "body": "Changing assignee from mhampton to mstreng.",
+    "body": "Changing assignee from mhampton to @mstreng.",
     "created_at": "2009-06-23T12:23:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4246",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Changing assignee from mhampton to mstreng.
+Changing assignee from mhampton to @mstreng.
 
 
 
@@ -281,7 +281,7 @@ archive/issue_comments_004247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4247",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -294,16 +294,16 @@ I'll work on the Conic class.
 archive/issue_comments_004248.json:
 ```json
 {
-    "body": "Attachment [trac_727_more_conic_files.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files.patch) by mstreng created at 2010-07-06 14:23:12",
+    "body": "Attachment [trac_727_more_conic_files.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files.patch) by @mstreng created at 2010-07-06 14:23:12",
     "created_at": "2010-07-06T14:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4248",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_727_more_conic_files.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files.patch) by mstreng created at 2010-07-06 14:23:12
+Attachment [trac_727_more_conic_files.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files.patch) by @mstreng created at 2010-07-06 14:23:12
 
 
 
@@ -317,7 +317,7 @@ archive/issue_comments_004249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4249",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_004250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4250",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -354,16 +354,16 @@ archive/issue_comments_004250.json:
 archive/issue_comments_004251.json:
 ```json
 {
-    "body": "Attachment [trac_727_more_conic_files2.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files2.patch) by mstreng created at 2010-07-07 10:15:19\n\napply this patch and the one without \"2\" to get something that almost works",
+    "body": "Attachment [trac_727_more_conic_files2.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files2.patch) by @mstreng created at 2010-07-07 10:15:19\n\napply this patch and the one without \"2\" to get something that almost works",
     "created_at": "2010-07-07T10:15:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4251",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_727_more_conic_files2.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files2.patch) by mstreng created at 2010-07-07 10:15:19
+Attachment [trac_727_more_conic_files2.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files2.patch) by @mstreng created at 2010-07-07 10:15:19
 
 apply this patch and the one without "2" to get something that almost works
 
@@ -374,16 +374,16 @@ apply this patch and the one without "2" to get something that almost works
 archive/issue_comments_004252.json:
 ```json
 {
-    "body": "Attachment [trac_727_more_conic_files3.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files3.patch) by mstreng created at 2010-07-08 09:43:41\n\nneeds two previous tickets trac_727_more... and trac_9334-hilbert.patch",
+    "body": "Attachment [trac_727_more_conic_files3.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files3.patch) by @mstreng created at 2010-07-08 09:43:41\n\nneeds two previous tickets trac_727_more... and trac_9334-hilbert.patch",
     "created_at": "2010-07-08T09:43:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4252",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_727_more_conic_files3.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files3.patch) by mstreng created at 2010-07-08 09:43:41
+Attachment [trac_727_more_conic_files3.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files3.patch) by @mstreng created at 2010-07-08 09:43:41
 
 needs two previous tickets trac_727_more... and trac_9334-hilbert.patch
 
@@ -399,7 +399,7 @@ archive/issue_comments_004253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4253",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -412,16 +412,16 @@ apply after trac_727_more_conic_files1,2,3; requires trac_9334-hilbert.patch to 
 archive/issue_comments_004254.json:
 ```json
 {
-    "body": "Attachment [trac_727_more_conic_files4.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files4.patch) by mstreng created at 2010-07-16 18:58:09\n\napply on sage 4.4.4 after trac_727_more_conic_files1,2,3,4, shouldn't require trac_9334-hilbert.patch",
+    "body": "Attachment [trac_727_more_conic_files4.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files4.patch) by @mstreng created at 2010-07-16 18:58:09\n\napply on sage 4.4.4 after trac_727_more_conic_files1,2,3,4, shouldn't require trac_9334-hilbert.patch",
     "created_at": "2010-07-16T18:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4254",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_727_more_conic_files4.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files4.patch) by mstreng created at 2010-07-16 18:58:09
+Attachment [trac_727_more_conic_files4.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files4.patch) by @mstreng created at 2010-07-16 18:58:09
 
 apply on sage 4.4.4 after trac_727_more_conic_files1,2,3,4, shouldn't require trac_9334-hilbert.patch
 
@@ -432,16 +432,16 @@ apply on sage 4.4.4 after trac_727_more_conic_files1,2,3,4, shouldn't require tr
 archive/issue_comments_004255.json:
 ```json
 {
-    "body": "Attachment [trac_727_more_conic_files5.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files5.patch) by mstreng created at 2010-07-18 21:41:18\n\napply on sage 4.4.4 after trac_727_more_conic_files1,2,3,4,5",
+    "body": "Attachment [trac_727_more_conic_files5.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files5.patch) by @mstreng created at 2010-07-18 21:41:18\n\napply on sage 4.4.4 after trac_727_more_conic_files1,2,3,4,5",
     "created_at": "2010-07-18T21:41:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4255",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_727_more_conic_files5.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files5.patch) by mstreng created at 2010-07-18 21:41:18
+Attachment [trac_727_more_conic_files5.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files5.patch) by @mstreng created at 2010-07-18 21:41:18
 
 apply on sage 4.4.4 after trac_727_more_conic_files1,2,3,4,5
 
@@ -452,16 +452,16 @@ apply on sage 4.4.4 after trac_727_more_conic_files1,2,3,4,5
 archive/issue_comments_004256.json:
 ```json
 {
-    "body": "Attachment [trac_727_conic_combined_1-6.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conic_combined_1-6.patch) by mstreng created at 2010-07-18 21:51:27\n\napply only this latest file",
+    "body": "Attachment [trac_727_conic_combined_1-6.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conic_combined_1-6.patch) by @mstreng created at 2010-07-18 21:51:27\n\napply only this latest file",
     "created_at": "2010-07-18T21:51:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4256",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_727_conic_combined_1-6.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conic_combined_1-6.patch) by mstreng created at 2010-07-18 21:51:27
+Attachment [trac_727_conic_combined_1-6.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conic_combined_1-6.patch) by @mstreng created at 2010-07-18 21:51:27
 
 apply only this latest file
 
@@ -472,16 +472,16 @@ apply only this latest file
 archive/issue_comments_004257.json:
 ```json
 {
-    "body": "Attachment [trac_727_more_conic_files7.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files7.patch) by mstreng created at 2010-07-20 12:41:49\n\napply the 1-6 patch on sage 4.5.1, then apply this one",
+    "body": "Attachment [trac_727_more_conic_files7.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files7.patch) by @mstreng created at 2010-07-20 12:41:49\n\napply the 1-6 patch on sage 4.5.1, then apply this one",
     "created_at": "2010-07-20T12:41:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4257",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_727_more_conic_files7.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files7.patch) by mstreng created at 2010-07-20 12:41:49
+Attachment [trac_727_more_conic_files7.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files7.patch) by @mstreng created at 2010-07-20 12:41:49
 
 apply the 1-6 patch on sage 4.5.1, then apply this one
 
@@ -492,16 +492,16 @@ apply the 1-6 patch on sage 4.5.1, then apply this one
 archive/issue_comments_004258.json:
 ```json
 {
-    "body": "Attachment [trac_727_more_conic_files9.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files9.patch) by mstreng created at 2010-07-20 12:42:32\n\napply after 7 (there is no 8)",
+    "body": "Attachment [trac_727_more_conic_files9.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files9.patch) by @mstreng created at 2010-07-20 12:42:32\n\napply after 7 (there is no 8)",
     "created_at": "2010-07-20T12:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4258",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_727_more_conic_files9.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files9.patch) by mstreng created at 2010-07-20 12:42:32
+Attachment [trac_727_more_conic_files9.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_more_conic_files9.patch) by @mstreng created at 2010-07-20 12:42:32
 
 apply after 7 (there is no 8)
 
@@ -517,7 +517,7 @@ archive/issue_comments_004259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4259",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_004260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4260",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -548,16 +548,16 @@ apply only this latest file (works on sage 4.4.4 and on 4.5.1)
 archive/issue_comments_004261.json:
 ```json
 {
-    "body": "Attachment [trac_727_conic_combined_1-9.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conic_combined_1-9.patch) by mstreng created at 2010-07-20 20:42:15\n\n\"All tests passed!\", and I combined the patches into one file",
+    "body": "Attachment [trac_727_conic_combined_1-9.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conic_combined_1-9.patch) by @mstreng created at 2010-07-20 20:42:15\n\n\"All tests passed!\", and I combined the patches into one file",
     "created_at": "2010-07-20T20:42:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4261",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_727_conic_combined_1-9.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conic_combined_1-9.patch) by mstreng created at 2010-07-20 20:42:15
+Attachment [trac_727_conic_combined_1-9.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conic_combined_1-9.patch) by @mstreng created at 2010-07-20 20:42:15
 
 "All tests passed!", and I combined the patches into one file
 
@@ -573,7 +573,7 @@ archive/issue_comments_004262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4262",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -591,7 +591,7 @@ archive/issue_comments_004263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4263",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -609,7 +609,7 @@ archive/issue_comments_004264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4264",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -636,7 +636,7 @@ archive/issue_comments_004265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4265",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -654,7 +654,7 @@ archive/issue_comments_004266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4266",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -667,16 +667,16 @@ It worked just fine on my 4.5.something. I guess the problems are all in "devel/
 archive/issue_comments_004267.json:
 ```json
 {
-    "body": "Attachment [trac_727_conics.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conics.patch) by mstreng created at 2010-12-08 17:28:59\n\nApply trac_727_conics.patch to sage 4.6 after #2329 and #9334",
+    "body": "Attachment [trac_727_conics.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conics.patch) by @mstreng created at 2010-12-08 17:28:59\n\nApply trac_727_conics.patch to sage 4.6 after #2329 and #9334",
     "created_at": "2010-12-08T17:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4267",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_727_conics.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conics.patch) by mstreng created at 2010-12-08 17:28:59
+Attachment [trac_727_conics.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conics.patch) by @mstreng created at 2010-12-08 17:28:59
 
 Apply trac_727_conics.patch to sage 4.6 after #2329 and #9334
 
@@ -692,7 +692,7 @@ archive/issue_comments_004268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4268",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -705,16 +705,16 @@ Here's a version that uses hilbert symbols and rnfisnorm from resp. #9334 and #2
 archive/issue_comments_004269.json:
 ```json
 {
-    "body": "Attachment [trac_727_conics_without_number_fields.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conics_without_number_fields.patch) by mstreng created at 2011-01-13 14:33:08\n\nApply only this latest file (works on sage 4.6.1.rc0 without any other patches)",
+    "body": "Attachment [trac_727_conics_without_number_fields.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conics_without_number_fields.patch) by @mstreng created at 2011-01-13 14:33:08\n\nApply only this latest file (works on sage 4.6.1.rc0 without any other patches)",
     "created_at": "2011-01-13T14:33:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4269",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_727_conics_without_number_fields.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conics_without_number_fields.patch) by mstreng created at 2011-01-13 14:33:08
+Attachment [trac_727_conics_without_number_fields.patch](tarball://root/attachments/some-uuid/ticket727/trac_727_conics_without_number_fields.patch) by @mstreng created at 2011-01-13 14:33:08
 
 Apply only this latest file (works on sage 4.6.1.rc0 without any other patches)
 
@@ -730,7 +730,7 @@ archive/issue_comments_004270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4270",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -748,7 +748,7 @@ archive/issue_comments_004271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4271",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -766,7 +766,7 @@ archive/issue_comments_004272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4272",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -784,7 +784,7 @@ archive/issue_comments_004273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4273",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -806,7 +806,7 @@ archive/issue_comments_004274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/727#issuecomment-4274",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

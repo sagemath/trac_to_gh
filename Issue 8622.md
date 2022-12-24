@@ -3,7 +3,7 @@
 archive/issues_008622.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: atkin-lehner\n\nIn ticket #5262 I implemented a method to find the Atkin-Lehner eigenvalue of a modular form. Sadly this does not work if the form has odd weight:\n\n\n```\nsage: f = Newforms(Gamma1(13),3,names='a')[0]\nsage: f\nq + a0*q^2 + (1/7*a0^3 + 2/7*a0^2 - 3/7*a0 - 27/7)*q^3 + (-8/21*a0^3 - 23/21*a0^2 - 88/21*a0 + 16/7)*q^4 + (2/7*a0^3 + 11/7*a0^2 + 29/7*a0 + 9/7)*q^5 + O(q^6)\nsage: f.atkin_lehner_eigenvalue()\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n...\nArithmeticError: subspace is not invariant under matrix\n```\n\n\nThis comes up because for modular symbols of any odd weight, the Atkin-Lehner involution doesn't commute with the star involution and hence doesn't restrict to an operator on the plus submodule of the modular forms (hence \"subspace not invariant under matrix\"). In fact they *anti-commute*:\n\n```\nsage: N = f.modular_symbols(sign=0)\nsage: a = N.atkin_lehner_operator(13).matrix()\nsage: b = N.star_involution().matrix()\nsage: a * b * ~a * ~b\n[-1  0  0  0  0  0  0  0]\n[ 0 -1  0  0  0  0  0  0]\n[ 0  0 -1  0  0  0  0  0]\n[ 0  0  0 -1  0  0  0  0]\n[ 0  0  0  0 -1  0  0  0]\n[ 0  0  0  0  0 -1  0  0]\n[ 0  0  0  0  0  0 -1  0]\n[ 0  0  0  0  0  0  0 -1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8622\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: atkin-lehner\n\nIn ticket #5262 I implemented a method to find the Atkin-Lehner eigenvalue of a modular form. Sadly this does not work if the form has odd weight:\n\n\n```\nsage: f = Newforms(Gamma1(13),3,names='a')[0]\nsage: f\nq + a0*q^2 + (1/7*a0^3 + 2/7*a0^2 - 3/7*a0 - 27/7)*q^3 + (-8/21*a0^3 - 23/21*a0^2 - 88/21*a0 + 16/7)*q^4 + (2/7*a0^3 + 11/7*a0^2 + 29/7*a0 + 9/7)*q^5 + O(q^6)\nsage: f.atkin_lehner_eigenvalue()\n---------------------------------------------------------------------------\nArithmeticError                           Traceback (most recent call last)\n...\nArithmeticError: subspace is not invariant under matrix\n```\n\n\nThis comes up because for modular symbols of any odd weight, the Atkin-Lehner involution doesn't commute with the star involution and hence doesn't restrict to an operator on the plus submodule of the modular forms (hence \"subspace not invariant under matrix\"). In fact they *anti-commute*:\n\n```\nsage: N = f.modular_symbols(sign=0)\nsage: a = N.atkin_lehner_operator(13).matrix()\nsage: b = N.star_involution().matrix()\nsage: a * b * ~a * ~b\n[-1  0  0  0  0  0  0  0]\n[ 0 -1  0  0  0  0  0  0]\n[ 0  0 -1  0  0  0  0  0]\n[ 0  0  0 -1  0  0  0  0]\n[ 0  0  0  0 -1  0  0  0]\n[ 0  0  0  0  0 -1  0  0]\n[ 0  0  0  0  0  0 -1  0]\n[ 0  0  0  0  0  0  0 -1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8622\n\n",
     "created_at": "2010-03-29T10:27:02Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_008622.json:
     "title": "Atkin-Lehner operators don't work for odd weight modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8622",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: atkin-lehner
 
@@ -70,7 +70,7 @@ archive/issue_comments_078155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78155",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_078156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78156",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_078157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78157",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_078158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78158",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_078159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78159",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_078160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78160",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_078161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78161",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_078162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78162",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_078163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78163",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_078164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78164",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_078165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78165",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_078166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78166",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_078167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78167",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_078168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8622#issuecomment-78168",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

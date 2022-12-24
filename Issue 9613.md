@@ -3,7 +3,7 @@
 archive/issues_009613.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  tscrim aapitzsch jdemeyer jhpalmieri\n\nLinbox has a test suite, but it is never run, as there is no spkg-check file. \n\n#9281 has a list of the standard packages, with a note by each as to whether there's an spkg-check file or not.\n\nDave \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9613\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @tscrim @a-andre @jdemeyer @jhpalmieri\n\nLinbox has a test suite, but it is never run, as there is no spkg-check file. \n\n#9281 has a list of the standard packages, with a note by each as to whether there's an spkg-check file or not.\n\nDave \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9613\n\n",
     "created_at": "2010-07-28T00:14:58Z",
     "labels": [
         "spkg-check",
@@ -19,7 +19,7 @@ archive/issues_009613.json:
 ```
 Assignee: drkirkby
 
-CC:  tscrim aapitzsch jdemeyer jhpalmieri
+CC:  @tscrim @a-andre @jdemeyer @jhpalmieri
 
 Linbox has a test suite, but it is never run, as there is no spkg-check file. 
 
@@ -45,7 +45,7 @@ archive/issue_comments_093095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9613#issuecomment-93095",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_093096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9613#issuecomment-93096",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_093097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9613#issuecomment-93097",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_093098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9613#issuecomment-93098",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_093099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9613#issuecomment-93099",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

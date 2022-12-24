@@ -14,7 +14,7 @@ archive/issues_003375.json:
     "title": "Fix building ntl on Solaris with make and ld [with patch needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3375",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 Assignee: mabshoff
@@ -50,7 +50,7 @@ archive/issue_comments_023601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3375#issuecomment-23601",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_023602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3375#issuecomment-23602",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -81,16 +81,16 @@ Changing keywords from "" to "editor_mabshoff".
 archive/issue_comments_023603.json:
 ```json
 {
-    "body": "Attachment [ntl-sun.patch](tarball://root/attachments/some-uuid/ticket3375/ntl-sun.patch) by craigcitro created at 2008-06-15 21:52:48",
+    "body": "Attachment [ntl-sun.patch](tarball://root/attachments/some-uuid/ticket3375/ntl-sun.patch) by @craigcitro created at 2008-06-15 21:52:48",
     "created_at": "2008-06-15T21:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3375#issuecomment-23603",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [ntl-sun.patch](tarball://root/attachments/some-uuid/ticket3375/ntl-sun.patch) by craigcitro created at 2008-06-15 21:52:48
+Attachment [ntl-sun.patch](tarball://root/attachments/some-uuid/ticket3375/ntl-sun.patch) by @craigcitro created at 2008-06-15 21:52:48
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_023605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3375#issuecomment-23605",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_023606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3375#issuecomment-23606",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_023607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3375#issuecomment-23607",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_023608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3375#issuecomment-23608",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_023609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3375#issuecomment-23609",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

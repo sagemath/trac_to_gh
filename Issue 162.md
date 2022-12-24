@@ -48,7 +48,7 @@ archive/issue_comments_000721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/162#issuecomment-721",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_000722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/162#issuecomment-722",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_000723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/162#issuecomment-723",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,16 +152,16 @@ n > 2^23.
 archive/issue_comments_000724.json:
 ```json
 {
-    "body": "Attachment [5762.patch](tarball://root/attachments/some-uuid/ticket162/5762.patch) by was created at 2007-08-16 10:23:27\n\nfix",
+    "body": "Attachment [5762.patch](tarball://root/attachments/some-uuid/ticket162/5762.patch) by @williamstein created at 2007-08-16 10:23:27\n\nfix",
     "created_at": "2007-08-16T10:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/162#issuecomment-724",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [5762.patch](tarball://root/attachments/some-uuid/ticket162/5762.patch) by was created at 2007-08-16 10:23:27
+Attachment [5762.patch](tarball://root/attachments/some-uuid/ticket162/5762.patch) by @williamstein created at 2007-08-16 10:23:27
 
 fix
 
@@ -177,7 +177,7 @@ archive/issue_comments_000725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/162#issuecomment-725",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

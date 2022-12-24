@@ -14,7 +14,7 @@ archive/issues_009158.json:
     "title": "(modular decomposition) Improvement to subgraph search",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9158",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -37,7 +37,7 @@ archive/issue_comments_085490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9158#issuecomment-85490",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

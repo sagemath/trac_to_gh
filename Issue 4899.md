@@ -14,7 +14,7 @@ archive/issues_004899.json:
     "title": "bug in sqrt(1) over GF(2^e) for e>15",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4899",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
@@ -59,16 +59,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4899
 archive/issue_comments_037161.json:
 ```json
 {
-    "body": "Attachment [trac_4899.patch](tarball://root/attachments/some-uuid/ticket4899/trac_4899.patch) by cremona created at 2009-01-01 12:22:26",
+    "body": "Attachment [trac_4899.patch](tarball://root/attachments/some-uuid/ticket4899/trac_4899.patch) by @JohnCremona created at 2009-01-01 12:22:26",
     "created_at": "2009-01-01T12:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4899#issuecomment-37161",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4899.patch](tarball://root/attachments/some-uuid/ticket4899/trac_4899.patch) by cremona created at 2009-01-01 12:22:26
+Attachment [trac_4899.patch](tarball://root/attachments/some-uuid/ticket4899/trac_4899.patch) by @JohnCremona created at 2009-01-01 12:22:26
 
 
 
@@ -77,16 +77,16 @@ Attachment [trac_4899.patch](tarball://root/attachments/some-uuid/ticket4899/tra
 archive/issue_comments_037162.json:
 ```json
 {
-    "body": "Attachment [trac_4899-referee.patch](tarball://root/attachments/some-uuid/ticket4899/trac_4899-referee.patch) by was created at 2009-01-03 05:00:39\n\napply this after trac_4899.patch",
+    "body": "Attachment [trac_4899-referee.patch](tarball://root/attachments/some-uuid/ticket4899/trac_4899-referee.patch) by @williamstein created at 2009-01-03 05:00:39\n\napply this after trac_4899.patch",
     "created_at": "2009-01-03T05:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4899#issuecomment-37162",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4899-referee.patch](tarball://root/attachments/some-uuid/ticket4899/trac_4899-referee.patch) by was created at 2009-01-03 05:00:39
+Attachment [trac_4899-referee.patch](tarball://root/attachments/some-uuid/ticket4899/trac_4899-referee.patch) by @williamstein created at 2009-01-03 05:00:39
 
 apply this after trac_4899.patch
 
@@ -102,7 +102,7 @@ archive/issue_comments_037163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4899#issuecomment-37163",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

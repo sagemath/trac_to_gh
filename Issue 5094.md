@@ -14,7 +14,7 @@ archive/issues_005094.json:
     "title": "Delete/Change SageX references to Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5094",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_038848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5094#issuecomment-38848",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -50,16 +50,16 @@ This is not a duplicate of #857; the reference is in the second line of the docu
 archive/issue_comments_038849.json:
 ```json
 {
-    "body": "Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket5094/COPYING.txt) by kcrisman created at 2009-01-29 15:35:06\n\nThis is a one-word change of SageX to Cython from the 3.3.alpha0 version of this file.",
+    "body": "Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket5094/COPYING.txt) by @kcrisman created at 2009-01-29 15:35:06\n\nThis is a one-word change of SageX to Cython from the 3.3.alpha0 version of this file.",
     "created_at": "2009-01-29T15:35:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5094#issuecomment-38849",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket5094/COPYING.txt) by kcrisman created at 2009-01-29 15:35:06
+Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket5094/COPYING.txt) by @kcrisman created at 2009-01-29 15:35:06
 
 This is a one-word change of SageX to Cython from the 3.3.alpha0 version of this file.
 
@@ -75,7 +75,7 @@ archive/issue_comments_038850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5094#issuecomment-38850",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_038851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5094#issuecomment-38851",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -161,16 +161,16 @@ Based on 3.3.alpha0
 archive/issue_comments_038852.json:
 ```json
 {
-    "body": "Attachment [trac_5094.patch](tarball://root/attachments/some-uuid/ticket5094/trac_5094.patch) by kcrisman created at 2009-02-02 16:40:07",
+    "body": "Attachment [trac_5094.patch](tarball://root/attachments/some-uuid/ticket5094/trac_5094.patch) by @kcrisman created at 2009-02-02 16:40:07",
     "created_at": "2009-02-02T16:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5094#issuecomment-38852",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_5094.patch](tarball://root/attachments/some-uuid/ticket5094/trac_5094.patch) by kcrisman created at 2009-02-02 16:40:07
+Attachment [trac_5094.patch](tarball://root/attachments/some-uuid/ticket5094/trac_5094.patch) by @kcrisman created at 2009-02-02 16:40:07
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008775.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nFrom [http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191](http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191):\n\n```\nsage: a = sqrt(-3) \nsage: a \nsqrt(-3) \nsage: a.conjugate() \nsqrt(-3) \nsage: bool(a==a.conjugate()) \nTrue \n```\n\nCould this be related to #6244?  Anyway, presumably conjugate should remain unevaluated on this sort of thing, while still being evaluated on things like a+I or 33.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8775\n\n",
+    "body": "Assignee: @burcin\n\nFrom [http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191](http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191):\n\n```\nsage: a = sqrt(-3) \nsage: a \nsqrt(-3) \nsage: a.conjugate() \nsqrt(-3) \nsage: bool(a==a.conjugate()) \nTrue \n```\n\nCould this be related to #6244?  Anyway, presumably conjugate should remain unevaluated on this sort of thing, while still being evaluated on things like a+I or 33.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8775\n\n",
     "created_at": "2010-04-27T01:02:12Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_008775.json:
     "title": "Bug in conjugate of symbolic ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8775",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 From [http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191](http://groups.google.com/group/sage-devel/browse_thread/thread/9f941378a95c0191):
 
@@ -49,7 +49,7 @@ archive/issue_comments_080325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80325",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_080326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80326",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_080327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80327",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_080328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80328",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -137,16 +137,16 @@ Changing keywords from "" to "pynac".
 archive/issue_comments_080329.json:
 ```json
 {
-    "body": "Attachment [trac_8775-conjugate.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate.patch) by burcin created at 2010-05-06 04:27:18\n\nThis is fixed by the new pynac package at #8903. attachment:trac_8775-conjugate.patch contains doctest fixes.\n\nNote that the new pynac version also fixes #8542, #8651, and #8688. Patches from these tickets should be applied before running doctests.",
+    "body": "Attachment [trac_8775-conjugate.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate.patch) by @burcin created at 2010-05-06 04:27:18\n\nThis is fixed by the new pynac package at #8903. attachment:trac_8775-conjugate.patch contains doctest fixes.\n\nNote that the new pynac version also fixes #8542, #8651, and #8688. Patches from these tickets should be applied before running doctests.",
     "created_at": "2010-05-06T04:27:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80329",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8775-conjugate.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate.patch) by burcin created at 2010-05-06 04:27:18
+Attachment [trac_8775-conjugate.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate.patch) by @burcin created at 2010-05-06 04:27:18
 
 This is fixed by the new pynac package at #8903. attachment:trac_8775-conjugate.patch contains doctest fixes.
 
@@ -164,7 +164,7 @@ archive/issue_comments_080330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80330",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_080331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80331",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_080332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80332",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_080333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80333",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_080334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80334",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_080335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80335",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -288,16 +288,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_080336.json:
 ```json
 {
-    "body": "Attachment [trac_8775-conjugate.take2.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate.take2.patch) by burcin created at 2010-09-12 22:16:08\n\nI uploaded a new patch to add doctests for the fixes in Pynac. Only attachment:trac_8775-conjugate.take2.patch should be applied.\n\nThis depends on #9901.",
+    "body": "Attachment [trac_8775-conjugate.take2.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate.take2.patch) by @burcin created at 2010-09-12 22:16:08\n\nI uploaded a new patch to add doctests for the fixes in Pynac. Only attachment:trac_8775-conjugate.take2.patch should be applied.\n\nThis depends on #9901.",
     "created_at": "2010-09-12T22:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80336",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8775-conjugate.take2.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate.take2.patch) by burcin created at 2010-09-12 22:16:08
+Attachment [trac_8775-conjugate.take2.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate.take2.patch) by @burcin created at 2010-09-12 22:16:08
 
 I uploaded a new patch to add doctests for the fixes in Pynac. Only attachment:trac_8775-conjugate.take2.patch should be applied.
 
@@ -315,7 +315,7 @@ archive/issue_comments_080337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80337",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_080338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80338",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_080339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80339",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_080340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80340",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_080341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80341",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_080342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80342",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -419,13 +419,13 @@ Resolution: fixed
 archive/issue_comments_080343.json:
 ```json
 {
-    "body": "Attachment [trac_8775-conjugate-fixed-message.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate-fixed-message.patch) by jdemeyer created at 2010-11-11 13:42:34",
+    "body": "Attachment [trac_8775-conjugate-fixed-message.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate-fixed-message.patch) by @jdemeyer created at 2010-11-11 13:42:34",
     "created_at": "2010-11-11T13:42:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8775#issuecomment-80343",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_8775-conjugate-fixed-message.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate-fixed-message.patch) by jdemeyer created at 2010-11-11 13:42:34
+Attachment [trac_8775-conjugate-fixed-message.patch](tarball://root/attachments/some-uuid/ticket8775/trac_8775-conjugate-fixed-message.patch) by @jdemeyer created at 2010-11-11 13:42:34

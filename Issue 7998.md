@@ -3,7 +3,7 @@
 archive/issues_007998.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was leif\n\nKeywords: Riemann prime counting function\n\nAdd William's Riemann Prime Counting Function code to Sage.\nThere is already source available at http://wstein.org/rh/rh/code/code.sage.\nI have found this very useful.  There has been talk of using Ri or an approximation in the prime_pi function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7998\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @nexttime\n\nKeywords: Riemann prime counting function\n\nAdd William's Riemann Prime Counting Function code to Sage.\nThere is already source available at http://wstein.org/rh/rh/code/code.sage.\nI have found this very useful.  There has been talk of using Ri or an approximation in the prime_pi function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7998\n\n",
     "created_at": "2010-01-19T15:17:52Z",
     "labels": [
         "number theory",
@@ -17,9 +17,9 @@ archive/issues_007998.json:
     "user": "kevin.stueve"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was leif
+CC:  @williamstein @nexttime
 
 Keywords: Riemann prime counting function
 

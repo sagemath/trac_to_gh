@@ -14,7 +14,7 @@ archive/issues_002492.json:
     "title": "Reference Manual: 18.2 Functions that compute some of the sequences in Sloane's tables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2492",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: tba
@@ -43,7 +43,7 @@ archive/issue_comments_016884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2492#issuecomment-16884",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing status from new to assigned.
 archive/issue_comments_016885.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2008-03-16T21:02:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2492#issuecomment-16885",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -74,16 +74,16 @@ Changing assignee from tba to mhansen.
 archive/issue_comments_016886.json:
 ```json
 {
-    "body": "Attachment [2492.patch](tarball://root/attachments/some-uuid/ticket2492/2492.patch) by mhansen created at 2008-03-16 21:02:24\n\nI've attached a patch which should be applied to hg_doc.",
+    "body": "Attachment [2492.patch](tarball://root/attachments/some-uuid/ticket2492/2492.patch) by @mwhansen created at 2008-03-16 21:02:24\n\nI've attached a patch which should be applied to hg_doc.",
     "created_at": "2008-03-16T21:02:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2492#issuecomment-16886",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2492.patch](tarball://root/attachments/some-uuid/ticket2492/2492.patch) by mhansen created at 2008-03-16 21:02:24
+Attachment [2492.patch](tarball://root/attachments/some-uuid/ticket2492/2492.patch) by @mwhansen created at 2008-03-16 21:02:24
 
 I've attached a patch which should be applied to hg_doc.
 

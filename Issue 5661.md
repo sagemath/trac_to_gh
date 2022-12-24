@@ -14,7 +14,7 @@ archive/issues_005661.json:
     "title": "implement numerical_diff and generalize numerical_integral",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5661",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: jkantor
@@ -43,7 +43,7 @@ archive/issue_comments_044260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5661#issuecomment-44260",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_044261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5661#issuecomment-44261",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_044262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5661#issuecomment-44262",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

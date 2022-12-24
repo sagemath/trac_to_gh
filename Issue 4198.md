@@ -3,7 +3,7 @@
 archive/issues_004198.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  craigcitro\n\n#3502 added (or exposed?) a small memory leak in matrix_cyclo_dense.pyx's _get_unsafe method. We do not deallocate a tmp mpz in the quick return patch. The attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4198\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @craigcitro\n\n#3502 added (or exposed?) a small memory leak in matrix_cyclo_dense.pyx's _get_unsafe method. We do not deallocate a tmp mpz in the quick return patch. The attached patch fixes that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4198\n\n",
     "created_at": "2008-09-26T02:02:06Z",
     "labels": [
         "memleak",
@@ -19,7 +19,7 @@ archive/issues_004198.json:
 ```
 Assignee: mabshoff
 
-CC:  craigcitro
+CC:  @craigcitro
 
 #3502 added (or exposed?) a small memory leak in matrix_cyclo_dense.pyx's _get_unsafe method. We do not deallocate a tmp mpz in the quick return patch. The attached patch fixes that.
 
@@ -79,7 +79,7 @@ archive/issue_comments_030471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4198#issuecomment-30471",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

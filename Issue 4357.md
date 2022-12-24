@@ -3,7 +3,7 @@
 archive/issues_004357.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThis used to work and is now broken.  It is used in my modular forms book.\n\n\n```\nsage: CuspForms(45).new_subspace()\nTraceback (most recent call last):\n...\nNotImplementedError: computation of new submodule not yet implemented\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4357\n\n",
+    "body": "Assignee: @craigcitro\n\nThis used to work and is now broken.  It is used in my modular forms book.\n\n\n```\nsage: CuspForms(45).new_subspace()\nTraceback (most recent call last):\n...\nNotImplementedError: computation of new submodule not yet implemented\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4357\n\n",
     "created_at": "2008-10-24T02:04:23Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_004357.json:
     "title": "modualr forms -- new subspace used to work and now broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4357",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 This used to work and is now broken.  It is used in my modular forms book.
 
@@ -46,7 +46,7 @@ archive/issue_comments_032000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4357#issuecomment-32000",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_032001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4357#issuecomment-32001",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_032002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4357#issuecomment-32002",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_032003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4357#issuecomment-32003",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -122,16 +122,16 @@ Changing status from assigned to new.
 archive/issue_comments_032004.json:
 ```json
 {
-    "body": "Changing assignee from craigcitro to davidloeffler.",
+    "body": "Changing assignee from @craigcitro to @loefflerd.",
     "created_at": "2009-04-30T18:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4357#issuecomment-32004",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from craigcitro to davidloeffler.
+Changing assignee from @craigcitro to @loefflerd.
 
 
 
@@ -140,16 +140,16 @@ Changing assignee from craigcitro to davidloeffler.
 archive/issue_comments_032005.json:
 ```json
 {
-    "body": "Attachment [trac_4357.patch](tarball://root/attachments/some-uuid/ticket4357/trac_4357.patch) by davidloeffler created at 2009-04-30 18:38:20\n\nI have uploaded a patch which I think fixes this -- it certainly gives the above result for level 45 and weight 2.",
+    "body": "Attachment [trac_4357.patch](tarball://root/attachments/some-uuid/ticket4357/trac_4357.patch) by @loefflerd created at 2009-04-30 18:38:20\n\nI have uploaded a patch which I think fixes this -- it certainly gives the above result for level 45 and weight 2.",
     "created_at": "2009-04-30T18:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4357#issuecomment-32005",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_4357.patch](tarball://root/attachments/some-uuid/ticket4357/trac_4357.patch) by davidloeffler created at 2009-04-30 18:38:20
+Attachment [trac_4357.patch](tarball://root/attachments/some-uuid/ticket4357/trac_4357.patch) by @loefflerd created at 2009-04-30 18:38:20
 
 I have uploaded a patch which I think fixes this -- it certainly gives the above result for level 45 and weight 2.
 
@@ -165,7 +165,7 @@ archive/issue_comments_032006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4357#issuecomment-32006",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_032007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4357#issuecomment-32007",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_032008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4357#issuecomment-32008",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_032009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4357#issuecomment-32009",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -250,16 +250,16 @@ I've swapped the order of the sum of cuspidal and Eisenstein parts, but this is 
 archive/issue_comments_032010.json:
 ```json
 {
-    "body": "Attachment [trac_4357_pt2.patch](tarball://root/attachments/some-uuid/ticket4357/trac_4357_pt2.patch) by davidloeffler created at 2009-05-08 10:41:57",
+    "body": "Attachment [trac_4357_pt2.patch](tarball://root/attachments/some-uuid/ticket4357/trac_4357_pt2.patch) by @loefflerd created at 2009-05-08 10:41:57",
     "created_at": "2009-05-08T10:41:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4357#issuecomment-32010",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_4357_pt2.patch](tarball://root/attachments/some-uuid/ticket4357/trac_4357_pt2.patch) by davidloeffler created at 2009-05-08 10:41:57
+Attachment [trac_4357_pt2.patch](tarball://root/attachments/some-uuid/ticket4357/trac_4357_pt2.patch) by @loefflerd created at 2009-05-08 10:41:57
 
 
 
@@ -273,7 +273,7 @@ archive/issue_comments_032011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4357#issuecomment-32011",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

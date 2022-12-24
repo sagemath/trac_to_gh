@@ -14,7 +14,7 @@ archive/issues_008323.json:
     "title": "The variable \"name\" is predefined in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8323",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 Assignee: tbd
@@ -47,7 +47,7 @@ archive/issue_comments_073865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73865",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_073866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73866",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_073867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73867",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_073868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73868",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -139,16 +139,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_073869.json:
 ```json
 {
-    "body": "Attachment [trac_8323.2.patch](tarball://root/attachments/some-uuid/ticket8323/trac_8323.2.patch) by craigcitro created at 2010-02-25 17:46:54",
+    "body": "Attachment [trac_8323.2.patch](tarball://root/attachments/some-uuid/ticket8323/trac_8323.2.patch) by @craigcitro created at 2010-02-25 17:46:54",
     "created_at": "2010-02-25T17:46:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73869",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_8323.2.patch](tarball://root/attachments/some-uuid/ticket8323/trac_8323.2.patch) by craigcitro created at 2010-02-25 17:46:54
+Attachment [trac_8323.2.patch](tarball://root/attachments/some-uuid/ticket8323/trac_8323.2.patch) by @craigcitro created at 2010-02-25 17:46:54
 
 
 
@@ -162,7 +162,7 @@ archive/issue_comments_073870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73870",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_073871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73871",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_073872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73872",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_073873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73873",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

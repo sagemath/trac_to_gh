@@ -3,7 +3,7 @@
 archive/issues_004621.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  @kliem slelievre\n\nKeywords: canonical embedding subfield\n\nReported by Alex Raichev at http://groups.google.com/group/sage-support/browse_thread/thread/c11289d794299903\n\n\n```\nsage: F.<a>= NumberField(x^2-2)\nsage: a^2\n2\nsage: a^2 in QQ\nTrue\nsage: a^2 in QQbar\nFalse\nsage: 2 in QQbar\nTrue \n```\n\nor more directly\n\n```\nsage: F(2) in QQbar\nFalse\n```\n\n\nPerhaps related to this is\n\n```\nsage: F.<a>=NumberField(x^2-2)\nsage: QQ.is_subring(F)\nTrue\nsage: F.is_subring(QQbar)\nFalse \n```\n\n\nRobert Bradshow comments that `F.is_subring(QQbar)` should be `False`, because `QQbar` has a canonical embedding into `CC`, but `F` has not.\n\nSo, from that point of view, it makes sense that `a^2` is in `F` but not in `QQbar`. However, `a^2` is equal to `2` after all, and hence is in a part of `F` that *does* have a canonical embedding.\n\nIn other words, we have a field element x in F_1 such that there is in fact a subfield F_2 of F_1 with x in F_1. Moreover, we have a field F_3 such that F_2 has a canonical embedding into F_3, but F_1 has no canonical embedding.\n\nIs it possible for Sage to detect that situation? \n\nIdea: Is there a *unique* maximal subfield F_m of F_1 that has a canonical embedding into F_3? If there is, there could be a method `max_subfield_coercing_into(...)`. \n\nThen, in the original example, we probably have \n\n```\nsage: F.max_subfield_coercing_into(QQbar)\nRational Field\n```\n\nand then `x in QQbar` would answer True, since \n\n```\nsage: x in F_1.max_subfield_coercing_into(QQbar)\nTrue\n```\n\n\nSorry if that idea is not realistic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4621\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kliem @slel\n\nKeywords: canonical embedding subfield\n\nReported by Alex Raichev at http://groups.google.com/group/sage-support/browse_thread/thread/c11289d794299903\n\n\n```\nsage: F.<a>= NumberField(x^2-2)\nsage: a^2\n2\nsage: a^2 in QQ\nTrue\nsage: a^2 in QQbar\nFalse\nsage: 2 in QQbar\nTrue \n```\n\nor more directly\n\n```\nsage: F(2) in QQbar\nFalse\n```\n\n\nPerhaps related to this is\n\n```\nsage: F.<a>=NumberField(x^2-2)\nsage: QQ.is_subring(F)\nTrue\nsage: F.is_subring(QQbar)\nFalse \n```\n\n\nRobert Bradshow comments that `F.is_subring(QQbar)` should be `False`, because `QQbar` has a canonical embedding into `CC`, but `F` has not.\n\nSo, from that point of view, it makes sense that `a^2` is in `F` but not in `QQbar`. However, `a^2` is equal to `2` after all, and hence is in a part of `F` that *does* have a canonical embedding.\n\nIn other words, we have a field element x in F_1 such that there is in fact a subfield F_2 of F_1 with x in F_1. Moreover, we have a field F_3 such that F_2 has a canonical embedding into F_3, but F_1 has no canonical embedding.\n\nIs it possible for Sage to detect that situation? \n\nIdea: Is there a *unique* maximal subfield F_m of F_1 that has a canonical embedding into F_3? If there is, there could be a method `max_subfield_coercing_into(...)`. \n\nThen, in the original example, we probably have \n\n```\nsage: F.max_subfield_coercing_into(QQbar)\nRational Field\n```\n\nand then `x in QQbar` would answer True, since \n\n```\nsage: x in F_1.max_subfield_coercing_into(QQbar)\nTrue\n```\n\n\nSorry if that idea is not realistic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4621\n\n",
     "created_at": "2008-11-26T11:26:25Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_004621.json:
     "title": "'2' not in QQbar -- canonical embedding of subfields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4621",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: tbd
 
-CC:  @kliem slelievre
+CC:  @kliem @slel
 
 Keywords: canonical embedding subfield
 
@@ -95,16 +95,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4621
 archive/issue_comments_034739.json:
 ```json
 {
-    "body": "Attachment [4621-qqbar-embed.patch](tarball://root/attachments/some-uuid/ticket4621/4621-qqbar-embed.patch) by robertwb created at 2010-01-17 00:26:44\n\nThis issue is fixed. Followup about embedding into QQbar at #7960.",
+    "body": "Attachment [4621-qqbar-embed.patch](tarball://root/attachments/some-uuid/ticket4621/4621-qqbar-embed.patch) by @robertwb created at 2010-01-17 00:26:44\n\nThis issue is fixed. Followup about embedding into QQbar at #7960.",
     "created_at": "2010-01-17T00:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34739",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4621-qqbar-embed.patch](tarball://root/attachments/some-uuid/ticket4621/4621-qqbar-embed.patch) by robertwb created at 2010-01-17 00:26:44
+Attachment [4621-qqbar-embed.patch](tarball://root/attachments/some-uuid/ticket4621/4621-qqbar-embed.patch) by @robertwb created at 2010-01-17 00:26:44
 
 This issue is fixed. Followup about embedding into QQbar at #7960.
 
@@ -120,7 +120,7 @@ archive/issue_comments_034740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34740",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_034741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34741",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_034742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34742",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_034743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34743",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_034744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34744",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_034745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34745",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_034746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34746",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_034747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34747",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_034748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34748",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_034749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34749",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_034750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34750",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_034751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34751",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_034752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34752",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -441,7 +441,7 @@ archive/issue_comments_034753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34753",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_034754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34754",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_034755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34755",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -524,7 +524,7 @@ archive/issue_comments_034756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34756",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_034757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34757",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -562,7 +562,7 @@ archive/issue_comments_034758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34758",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -580,7 +580,7 @@ archive/issue_comments_034759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34759",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

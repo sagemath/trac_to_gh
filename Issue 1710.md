@@ -3,7 +3,7 @@
 archive/issues_001710.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf you use trac's RSS feed or the e-mails sent out by the trac server you always end up with URLs involving http://www.sagemath.org:9002/sage_trac/ which the firewall at my university doesn't like ... i.e. it is blocked.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1710\n\n",
+    "body": "Assignee: @williamstein\n\nIf you use trac's RSS feed or the e-mails sent out by the trac server you always end up with URLs involving http://www.sagemath.org:9002/sage_trac/ which the firewall at my university doesn't like ... i.e. it is blocked.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1710\n\n",
     "created_at": "2008-01-07T11:15:24Z",
     "labels": [
         "website/wiki",
@@ -14,10 +14,10 @@ archive/issues_001710.json:
     "title": "switch default location of trac server away from http://www.sagemath.org:9002/",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1710",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If you use trac's RSS feed or the e-mails sent out by the trac server you always end up with URLs involving http://www.sagemath.org:9002/sage_trac/ which the firewall at my university doesn't like ... i.e. it is blocked.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1710
 archive/issue_comments_010839.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-01-13T11:36:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1710#issuecomment-10839",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_010840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1710#issuecomment-10840",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_010841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1710#issuecomment-10841",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_010842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1710#issuecomment-10842",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_010843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1710#issuecomment-10843",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

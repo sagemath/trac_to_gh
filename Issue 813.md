@@ -3,7 +3,7 @@
 archive/issues_000813.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis should give similar results, but it is inconsistent:\n\n```\nP1.<x>=QQ[]\nL=P1.fraction_field()\nx=L(x)\nP2.<y>=P1[]\n\nf=x+y\n\nP3.<x,y>=QQ[]\n\nP3(f)\n\n0*P3.0+f\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/813\n\n",
+    "body": "Assignee: @williamstein\n\nThis should give similar results, but it is inconsistent:\n\n```\nP1.<x>=QQ[]\nL=P1.fraction_field()\nx=L(x)\nP2.<y>=P1[]\n\nf=x+y\n\nP3.<x,y>=QQ[]\n\nP3(f)\n\n0*P3.0+f\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/813\n\n",
     "created_at": "2007-10-03T18:52:27Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000813.json:
     "title": "forced coercion vs. automatic coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/813",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This should give similar results, but it is inconsistent:
 
@@ -53,7 +53,7 @@ archive/issue_comments_005029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5029",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -66,16 +66,16 @@ Changing component from algebraic geometry to basic arithmetic.
 archive/issue_comments_005030.json:
 ```json
 {
-    "body": "Changing assignee from was to roed.",
+    "body": "Changing assignee from @williamstein to @roed314.",
     "created_at": "2007-10-03T20:58:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5030",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Changing assignee from was to roed.
+Changing assignee from @williamstein to @roed314.
 
 
 
@@ -89,7 +89,7 @@ archive/issue_comments_005031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5031",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_005032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5032",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_005033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5033",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_005034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5034",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_005035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5035",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_005036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5036",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_005037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5037",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_005038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5038",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_005039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5039",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_005040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5040",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_005041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5041",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -457,16 +457,16 @@ Changing status from new to needs_review.
 archive/issue_comments_005042.json:
 ```json
 {
-    "body": "Attachment [trac813_univariate_coerce_from_multivariate.patch](tarball://root/attachments/some-uuid/ticket813/trac813_univariate_coerce_from_multivariate.patch) by SimonKing created at 2011-08-02 17:11:41\n\nI think I was able to solve the problem. With my patch applied on top of sage-4.7.1.rc1, all tests seem to pass, and one can do\n\n```\n            sage: P = QQ['x','y']\n            sage: Q = Frac(QQ['x'])['y']\n            sage: Q.has_coerce_map_from(P)\n            True\n            sage: P.0+Q.0\n            y + x\n```\n\n\nIn order to avoid bidirectional coercions (that would break a lot of tests), I have\n\n```\n            sage: Q = QQ['x']['y']\n            sage: Q.has_coerce_map_from(P)\n            False\n            sage: Q.base_ring() is P.remove_var(Q.variable_name())\n            True\n```\n\n\nThe rule is: If `Q.base_ring() is P.remove_var(Q.variable_name())` then there can not be a coercion from the multivariate ring P to the univariate ring Q; in fact, there is a coercion in the opposite direction. But otherwise, there is a coercion if `Q.base_ring()` has a coercion from `P.remove_var(Q.variable_name())`.",
+    "body": "Attachment [trac813_univariate_coerce_from_multivariate.patch](tarball://root/attachments/some-uuid/ticket813/trac813_univariate_coerce_from_multivariate.patch) by @simon-king-jena created at 2011-08-02 17:11:41\n\nI think I was able to solve the problem. With my patch applied on top of sage-4.7.1.rc1, all tests seem to pass, and one can do\n\n```\n            sage: P = QQ['x','y']\n            sage: Q = Frac(QQ['x'])['y']\n            sage: Q.has_coerce_map_from(P)\n            True\n            sage: P.0+Q.0\n            y + x\n```\n\n\nIn order to avoid bidirectional coercions (that would break a lot of tests), I have\n\n```\n            sage: Q = QQ['x']['y']\n            sage: Q.has_coerce_map_from(P)\n            False\n            sage: Q.base_ring() is P.remove_var(Q.variable_name())\n            True\n```\n\n\nThe rule is: If `Q.base_ring() is P.remove_var(Q.variable_name())` then there can not be a coercion from the multivariate ring P to the univariate ring Q; in fact, there is a coercion in the opposite direction. But otherwise, there is a coercion if `Q.base_ring()` has a coercion from `P.remove_var(Q.variable_name())`.",
     "created_at": "2011-08-02T17:11:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5042",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac813_univariate_coerce_from_multivariate.patch](tarball://root/attachments/some-uuid/ticket813/trac813_univariate_coerce_from_multivariate.patch) by SimonKing created at 2011-08-02 17:11:41
+Attachment [trac813_univariate_coerce_from_multivariate.patch](tarball://root/attachments/some-uuid/ticket813/trac813_univariate_coerce_from_multivariate.patch) by @simon-king-jena created at 2011-08-02 17:11:41
 
 I think I was able to solve the problem. With my patch applied on top of sage-4.7.1.rc1, all tests seem to pass, and one can do
 
@@ -505,7 +505,7 @@ archive/issue_comments_005043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5043",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_005044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5044",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_005045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5045",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_005046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5046",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -577,7 +577,7 @@ archive/issue_comments_005047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5047",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_005048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5048",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_005049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5049",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -636,7 +636,7 @@ archive/issue_comments_005050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5050",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -654,7 +654,7 @@ archive/issue_comments_005051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5051",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -672,7 +672,7 @@ archive/issue_comments_005052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5052",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -692,7 +692,7 @@ archive/issue_comments_005053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5053",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -710,7 +710,7 @@ archive/issue_comments_005054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5054",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -743,7 +743,7 @@ archive/issue_comments_005055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5055",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -761,7 +761,7 @@ archive/issue_comments_005056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5056",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -779,7 +779,7 @@ archive/issue_comments_005057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5057",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -797,7 +797,7 @@ archive/issue_comments_005058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5058",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_005059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5059",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -828,15 +828,15 @@ Resolution: fixed
 archive/issue_comments_005060.json:
 ```json
 {
-    "body": "Attachment [trac_813_review.patch](tarball://root/attachments/some-uuid/ticket813/trac_813_review.patch) by jdemeyer created at 2011-10-04 10:11:48\n\nsmall changes to docstrings",
+    "body": "Attachment [trac_813_review.patch](tarball://root/attachments/some-uuid/ticket813/trac_813_review.patch) by @jdemeyer created at 2011-10-04 10:11:48\n\nsmall changes to docstrings",
     "created_at": "2011-10-04T10:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/813#issuecomment-5060",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_813_review.patch](tarball://root/attachments/some-uuid/ticket813/trac_813_review.patch) by jdemeyer created at 2011-10-04 10:11:48
+Attachment [trac_813_review.patch](tarball://root/attachments/some-uuid/ticket813/trac_813_review.patch) by @jdemeyer created at 2011-10-04 10:11:48
 
 small changes to docstrings

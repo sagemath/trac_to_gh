@@ -3,7 +3,7 @@
 archive/issues_006486.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis should return a more useful error message:\n\n\n```\nsage: G = matrix(GF(2),[[0,0,0]])\nsage: C = LinearCode(G)\nsage: C.list()\n[(0, 0, 0)]\nsage: C.minimum_distance()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/wdj/.sage/temp/tinah/7902/_home_wdj__sage_init_sage_0.py in <module>()\n\n/home/wdj/sagefiles/sage-4.1.rc1/local/lib/python2.6/site-packages/sage/coding/linear_code.pyc in minimum_distance(self, method)\n   1681             return ZZ(d)\n   1682         Gstr = \"%s*Z(%s)^0\"%(gapG, q)\n-> 1683         return hamming_weight(min_wt_vec_gap(Gstr,n,k,F))\n   1684\n   1685     def module_composition_factors(self,gp):\n\n/home/wdj/sagefiles/sage-4.1.rc1/local/lib/python2.6/site-packages/sage/coding/linear_code.pyc in min_wt_vec_gap(Gmat, n, k, F, method)\n    379         #print [gap.eval(\"v[\"+str(i+1)+\"]\") for i in range(n)]\n    380         all.append([v._matrix_(F),m._matrix_(F),int(dist)])\n--> 381     ans = all[0]\n    382     for x in all:\n    383         if x[2]<ans[2] and x[2]>0:\n\nIndexError: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6486\n\n",
+    "body": "Assignee: @rlmill\n\nThis should return a more useful error message:\n\n\n```\nsage: G = matrix(GF(2),[[0,0,0]])\nsage: C = LinearCode(G)\nsage: C.list()\n[(0, 0, 0)]\nsage: C.minimum_distance()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/wdj/.sage/temp/tinah/7902/_home_wdj__sage_init_sage_0.py in <module>()\n\n/home/wdj/sagefiles/sage-4.1.rc1/local/lib/python2.6/site-packages/sage/coding/linear_code.pyc in minimum_distance(self, method)\n   1681             return ZZ(d)\n   1682         Gstr = \"%s*Z(%s)^0\"%(gapG, q)\n-> 1683         return hamming_weight(min_wt_vec_gap(Gstr,n,k,F))\n   1684\n   1685     def module_composition_factors(self,gp):\n\n/home/wdj/sagefiles/sage-4.1.rc1/local/lib/python2.6/site-packages/sage/coding/linear_code.pyc in min_wt_vec_gap(Gmat, n, k, F, method)\n    379         #print [gap.eval(\"v[\"+str(i+1)+\"]\") for i in range(n)]\n    380         all.append([v._matrix_(F),m._matrix_(F),int(dist)])\n--> 381     ans = all[0]\n    382     for x in all:\n    383         if x[2]<ans[2] and x[2]>0:\n\nIndexError: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6486\n\n",
     "created_at": "2009-07-08T18:40:40Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_006486.json:
     "title": "minimum distance of all 0 code raised mysterious error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6486",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This should return a more useful error message:
 
@@ -105,7 +105,7 @@ archive/issue_comments_052457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6486#issuecomment-52457",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_052458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6486#issuecomment-52458",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

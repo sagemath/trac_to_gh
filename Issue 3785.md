@@ -3,7 +3,7 @@
 archive/issues_003785.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is a non-negotiable blocker for Sage-3.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3785\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a non-negotiable blocker for Sage-3.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3785\n\n",
     "created_at": "2008-08-06T23:58:10Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003785.json:
     "title": "upgrade atlas in sage to version 3.8.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3785",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is a non-negotiable blocker for Sage-3.1.
 
@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3785
 archive/issue_comments_026910.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-08-07T02:42:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3785",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_026910.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_026914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3785#issuecomment-26914",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

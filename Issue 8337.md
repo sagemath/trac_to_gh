@@ -3,7 +3,7 @@
 archive/issues_008337.json:
 ```json
 {
-    "body": "Assignee: malb\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/72fbc6d6f5a7d746#, with sage 4.3.3:\n\n```\nsage: var('E1, E2, E4, E5, E10, E20'); \nsage: var( 'q' ); \nsage: t=(E20^16*E5^8*q^4*E2^24 + (-E20^16*E5^8*q^4*E4^8*E1^16 + (-E10^24 + E20^8*E5^16)*E4^16*E1^8)) \nsage: factor(t)\n```\n\ndoes not answer in reasonable time (a few seconds).\n\nMaple 13 answers in less than a second (and says the polynomial\nis irreducible).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8337\n\n",
+    "body": "Assignee: @malb\n\nFrom http://groups.google.com/group/sage-support/browse_thread/thread/72fbc6d6f5a7d746#, with sage 4.3.3:\n\n```\nsage: var('E1, E2, E4, E5, E10, E20'); \nsage: var( 'q' ); \nsage: t=(E20^16*E5^8*q^4*E2^24 + (-E20^16*E5^8*q^4*E4^8*E1^16 + (-E10^24 + E20^8*E5^16)*E4^16*E1^8)) \nsage: factor(t)\n```\n\ndoes not answer in reasonable time (a few seconds).\n\nMaple 13 answers in less than a second (and says the polynomial\nis irreducible).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8337\n\n",
     "created_at": "2010-02-23T18:18:55Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_008337.json:
     "title": "factorization of multivariate polynomials is terribly slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8337",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 From http://groups.google.com/group/sage-support/browse_thread/thread/72fbc6d6f5a7d746#, with sage 4.3.3:
 
@@ -49,7 +49,7 @@ archive/issue_comments_074436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8337#issuecomment-74436",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_074437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8337#issuecomment-74437",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_074438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8337#issuecomment-74438",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_074439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8337#issuecomment-74439",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_074440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8337#issuecomment-74440",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_074441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8337#issuecomment-74441",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_074442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8337#issuecomment-74442",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

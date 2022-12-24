@@ -14,7 +14,7 @@ archive/issues_003259.json:
     "title": "[with patch; needs review] shared library versioning for flint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3259",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3259
 archive/issue_comments_022546.json:
 ```json
 {
-    "body": "Attachment [flint-soname.patch](tarball://root/attachments/some-uuid/ticket3259/flint-soname.patch) by tabbott created at 2008-05-19 22:30:17\n\nI forgot to note this, but because flint doesn't have a static library, we only need to build it with -fPIC, which is accomplished by setting MAKECMDGOALS=library",
+    "body": "Attachment [flint-soname.patch](tarball://root/attachments/some-uuid/ticket3259/flint-soname.patch) by @timabbott created at 2008-05-19 22:30:17\n\nI forgot to note this, but because flint doesn't have a static library, we only need to build it with -fPIC, which is accomplished by setting MAKECMDGOALS=library",
     "created_at": "2008-05-19T22:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3259#issuecomment-22546",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [flint-soname.patch](tarball://root/attachments/some-uuid/ticket3259/flint-soname.patch) by tabbott created at 2008-05-19 22:30:17
+Attachment [flint-soname.patch](tarball://root/attachments/some-uuid/ticket3259/flint-soname.patch) by @timabbott created at 2008-05-19 22:30:17
 
 I forgot to note this, but because flint doesn't have a static library, we only need to build it with -fPIC, which is accomplished by setting MAKECMDGOALS=library
 
@@ -61,7 +61,7 @@ archive/issue_comments_022547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3259#issuecomment-22547",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 

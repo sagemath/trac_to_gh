@@ -3,7 +3,7 @@
 archive/issues_004406.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  craigcitro\n\nCurrently we have _c variants, some of which call one direction, and some which call the other. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4406\n\n",
+    "body": "Assignee: tbd\n\nCC:  @craigcitro\n\nCurrently we have _c variants, some of which call one direction, and some which call the other. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4406\n\n",
     "created_at": "2008-10-30T20:07:21Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_004406.json:
     "title": "make polynomail truncation cpdef method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4406",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
 
-CC:  craigcitro
+CC:  @craigcitro
 
 Currently we have _c variants, some of which call one direction, and some which call the other. 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4406
 archive/issue_comments_032397.json:
 ```json
 {
-    "body": "Attachment [4406-cpdef-truncate.patch](tarball://root/attachments/some-uuid/ticket4406/4406-cpdef-truncate.patch) by robertwb created at 2008-10-30 21:21:40\n\nThis wasn't as invasive as I had expected. Apply on top of fix at #2462.",
+    "body": "Attachment [4406-cpdef-truncate.patch](tarball://root/attachments/some-uuid/ticket4406/4406-cpdef-truncate.patch) by @robertwb created at 2008-10-30 21:21:40\n\nThis wasn't as invasive as I had expected. Apply on top of fix at #2462.",
     "created_at": "2008-10-30T21:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4406#issuecomment-32397",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4406-cpdef-truncate.patch](tarball://root/attachments/some-uuid/ticket4406/4406-cpdef-truncate.patch) by robertwb created at 2008-10-30 21:21:40
+Attachment [4406-cpdef-truncate.patch](tarball://root/attachments/some-uuid/ticket4406/4406-cpdef-truncate.patch) by @robertwb created at 2008-10-30 21:21:40
 
 This wasn't as invasive as I had expected. Apply on top of fix at #2462.
 
@@ -130,7 +130,7 @@ archive/issue_comments_032400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4406#issuecomment-32400",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_032402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4406#issuecomment-32402",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_032403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4406#issuecomment-32403",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -213,16 +213,16 @@ and I can't figure out how test my changes. However, I'm pretty sure the error i
 archive/issue_comments_032404.json:
 ```json
 {
-    "body": "Attachment [4406-truncate-fix.patch](tarball://root/attachments/some-uuid/ticket4406/4406-truncate-fix.patch) by robertwb created at 2008-11-01 23:14:37",
+    "body": "Attachment [4406-truncate-fix.patch](tarball://root/attachments/some-uuid/ticket4406/4406-truncate-fix.patch) by @robertwb created at 2008-11-01 23:14:37",
     "created_at": "2008-11-01T23:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4406#issuecomment-32404",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4406-truncate-fix.patch](tarball://root/attachments/some-uuid/ticket4406/4406-truncate-fix.patch) by robertwb created at 2008-11-01 23:14:37
+Attachment [4406-truncate-fix.patch](tarball://root/attachments/some-uuid/ticket4406/4406-truncate-fix.patch) by @robertwb created at 2008-11-01 23:14:37
 
 
 

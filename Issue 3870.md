@@ -3,7 +3,7 @@
 archive/issues_003870.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nCC:  jason\n\n\n```\nIt appears that find_root give the wrong result in the following\nexample:\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: var('av')\nav\nsage: f=2.00000000000000*av - (10*sqrt(36.0000000000000*(av^4 - 2*av^3\n+ av^2) + 207.360000000000*(-4*av^4 + 8*av^3 - 4*av^2) +\n365*(51.8400000000000*(4*av^3 - 4*av) + 9.00000000000000*(2*av -\n2*av^2)) + 133225*(2.25000000000000 - 51.8400000000000*av)) +\n60.0000000000000*(av - av^2) + 5475.00000000000)/(720.000000000000*(2\n- 2*av) + 131400.000000000)\nsage: find_root(f,0,0.1)\n0.0\nsage: plot(f,0,0.1)\n\nThe last command will plot f and reveal that the root is somewhere\nnear to 0.05, but certainly not 0.0. No matter what I use for xtol or\nrtol, I always get 0.0 as a result. Can anyone help?\n\nThanks!\n\nStan\n```\n\n\nI don't what is going on yet.  It may be a bug in scipy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3870\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @jasongrout\n\n\n```\nIt appears that find_root give the wrong result in the following\nexample:\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: var('av')\nav\nsage: f=2.00000000000000*av - (10*sqrt(36.0000000000000*(av^4 - 2*av^3\n+ av^2) + 207.360000000000*(-4*av^4 + 8*av^3 - 4*av^2) +\n365*(51.8400000000000*(4*av^3 - 4*av) + 9.00000000000000*(2*av -\n2*av^2)) + 133225*(2.25000000000000 - 51.8400000000000*av)) +\n60.0000000000000*(av - av^2) + 5475.00000000000)/(720.000000000000*(2\n- 2*av) + 131400.000000000)\nsage: find_root(f,0,0.1)\n0.0\nsage: plot(f,0,0.1)\n\nThe last command will plot f and reveal that the root is somewhere\nnear to 0.05, but certainly not 0.0. No matter what I use for xtol or\nrtol, I always get 0.0 as a result. Can anyone help?\n\nThanks!\n\nStan\n```\n\n\nI don't what is going on yet.  It may be a bug in scipy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3870\n\n",
     "created_at": "2008-08-15T09:30:54Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_003870.json:
     "title": "bug in find_root",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3870",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
-CC:  jason
+CC:  @jasongrout
 
 
 ```
@@ -70,7 +70,7 @@ archive/issue_comments_027584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3870#issuecomment-27584",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_027587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3870#issuecomment-27587",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_027588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3870#issuecomment-27588",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_027589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3870#issuecomment-27589",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

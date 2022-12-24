@@ -3,7 +3,7 @@
 archive/issues_006984.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori dimpase\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6984\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6984\n\n",
     "created_at": "2009-09-22T06:35:20Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_006984.json:
     "title": "cygwin port: make lapack into a dummy spkg that requires systemwide lapack",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6984",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  jpflori dimpase
+CC:  jpflori @dimpase
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_057758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6984#issuecomment-57758",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_057759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6984#issuecomment-57759",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_057760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6984#issuecomment-57760",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_057761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6984#issuecomment-57761",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_057762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6984#issuecomment-57762",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_057763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6984#issuecomment-57763",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_057764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6984#issuecomment-57764",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

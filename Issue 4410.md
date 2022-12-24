@@ -3,7 +3,7 @@
 archive/issues_004410.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  robertwb\n\n`sage.categories.map.Map.__pow__` calls `generic_power`, which messes up power 0. There is this todo note there:\n\n\n```\n        # todo -- what about the case n=0 -- need to specify the identity map somehow.\n```\n\n\nAttached patch returns the identity map for power 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4410\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robertwb\n\n`sage.categories.map.Map.__pow__` calls `generic_power`, which messes up power 0. There is this todo note there:\n\n\n```\n        # todo -- what about the case n=0 -- need to specify the identity map somehow.\n```\n\n\nAttached patch returns the identity map for power 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4410\n\n",
     "created_at": "2008-10-31T09:05:10Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_004410.json:
     "title": "[with patch, needs review] Map.__pow__ should return identity for power 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4410",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  robertwb
+CC:  @robertwb
 
 `sage.categories.map.Map.__pow__` calls `generic_power`, which messes up power 0. There is this todo note there:
 
@@ -47,7 +47,7 @@ archive/issue_comments_032421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4410#issuecomment-32421",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

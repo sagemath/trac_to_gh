@@ -14,7 +14,7 @@ archive/issues_007480.json:
     "title": "SageNB -- Move inline and <head> javascript from the templates to separate files (worksheet.js), etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7480",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_063144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7480#issuecomment-63144",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

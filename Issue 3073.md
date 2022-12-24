@@ -3,7 +3,7 @@
 archive/issues_003073.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  was\n\nKeywords: interact, input_box\n\nThis is just a tiny patch so that the text inputs for `@`interact can be changed in size.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3073\n\n",
+    "body": "Assignee: somebody\n\nCC:  @williamstein\n\nKeywords: interact, input_box\n\nThis is just a tiny patch so that the text inputs for `@`interact can be changed in size.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3073\n\n",
     "created_at": "2008-05-01T17:49:26Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_003073.json:
 ```
 Assignee: somebody
 
-CC:  was
+CC:  @williamstein
 
 Keywords: interact, input_box
 

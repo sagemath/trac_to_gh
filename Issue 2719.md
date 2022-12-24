@@ -14,7 +14,7 @@ archive/issues_002719.json:
     "title": "bitset is completely broken on os x 10.4 G5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2719",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -94,16 +94,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2719
 archive/issue_comments_018746.json:
 ```json
 {
-    "body": "Attachment [2719-bitsets.patch](tarball://root/attachments/some-uuid/ticket2719/2719-bitsets.patch) by robertwb created at 2008-03-29 18:18:54",
+    "body": "Attachment [2719-bitsets.patch](tarball://root/attachments/some-uuid/ticket2719/2719-bitsets.patch) by @robertwb created at 2008-03-29 18:18:54",
     "created_at": "2008-03-29T18:18:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2719#issuecomment-18746",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2719-bitsets.patch](tarball://root/attachments/some-uuid/ticket2719/2719-bitsets.patch) by robertwb created at 2008-03-29 18:18:54
+Attachment [2719-bitsets.patch](tarball://root/attachments/some-uuid/ticket2719/2719-bitsets.patch) by @robertwb created at 2008-03-29 18:18:54
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_018747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2719#issuecomment-18747",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_018748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2719#issuecomment-18748",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

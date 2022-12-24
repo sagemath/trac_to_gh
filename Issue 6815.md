@@ -3,7 +3,7 @@
 archive/issues_006815.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mpatel\n\nRestarting worksheet seems to disable latex typesetting even though \"Typeset\" box is checked. If I un-check and then re-check the \"Typeset\" box, it starts working again.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6815\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nRestarting worksheet seems to disable latex typesetting even though \"Typeset\" box is checked. If I un-check and then re-check the \"Typeset\" box, it starts working again.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6815\n\n",
     "created_at": "2009-08-23T22:57:41Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006815.json:
     "title": "Restarting worksheet doesn't enable typesetting even when \"Typeset\" box is checked",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6815",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 Assignee: boothby
 
-CC:  was mpatel
+CC:  @williamstein @qed777
 
 Restarting worksheet seems to disable latex typesetting even though "Typeset" box is checked. If I un-check and then re-check the "Typeset" box, it starts working again.
 
@@ -40,7 +40,7 @@ archive/issue_comments_056198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56198",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_056199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56199",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_056200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56200",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_056201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56201",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_056202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56202",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

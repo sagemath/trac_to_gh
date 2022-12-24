@@ -3,7 +3,7 @@
 archive/issues_006190.json:
 ```json
 {
-    "body": "Assignee: rbeezer\n\nCC:  davidloeffler\n\nFour doctests introduced in #6000 need proper indentations, plus some lists, and some spelling.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6190\n\n",
+    "body": "Assignee: @rbeezer\n\nCC:  @loefflerd\n\nFour doctests introduced in #6000 need proper indentations, plus some lists, and some spelling.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6190\n\n",
     "created_at": "2009-06-02T20:04:48Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_006190.json:
     "title": "Fix documentation in sage/combinat/backtrack.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6190",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: rbeezer
+Assignee: @rbeezer
 
-CC:  davidloeffler
+CC:  @loefflerd
 
 Four doctests introduced in #6000 need proper indentations, plus some lists, and some spelling.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6190
 archive/issue_comments_049448.json:
 ```json
 {
-    "body": "Attachment [trac_6190.patch](tarball://root/attachments/some-uuid/ticket6190/trac_6190.patch) by davidloeffler created at 2009-06-02 22:17:56\n\nHere's a patch.",
+    "body": "Attachment [trac_6190.patch](tarball://root/attachments/some-uuid/ticket6190/trac_6190.patch) by @loefflerd created at 2009-06-02 22:17:56\n\nHere's a patch.",
     "created_at": "2009-06-02T22:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6190#issuecomment-49448",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6190.patch](tarball://root/attachments/some-uuid/ticket6190/trac_6190.patch) by davidloeffler created at 2009-06-02 22:17:56
+Attachment [trac_6190.patch](tarball://root/attachments/some-uuid/ticket6190/trac_6190.patch) by @loefflerd created at 2009-06-02 22:17:56
 
 Here's a patch.
 
@@ -59,7 +59,7 @@ archive/issue_comments_049449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6190#issuecomment-49449",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_049450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6190#issuecomment-49450",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_049451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6190#issuecomment-49451",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

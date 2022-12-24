@@ -3,7 +3,7 @@
 archive/issues_005369.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rbeezer\n\nKeywords: transpose\n\nmatrix_integer_dense and matrix_rational_dense don't have any optimize transpose functions, so add it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5369\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nKeywords: transpose\n\nmatrix_integer_dense and matrix_rational_dense don't have any optimize transpose functions, so add it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5369\n\n",
     "created_at": "2009-02-25T10:00:02Z",
     "labels": [
         "linear algebra",
@@ -17,9 +17,9 @@ archive/issues_005369.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rbeezer
+CC:  @rbeezer
 
 Keywords: transpose
 
@@ -69,16 +69,16 @@ time m2=m.transpose(); m3=m.antitranspose();
 archive/issue_comments_041355.json:
 ```json
 {
-    "body": "Attachment [trac-5369-transpose-gmp-matrix.2.patch](tarball://root/attachments/some-uuid/ticket5369/trac-5369-transpose-gmp-matrix.2.patch) by mhansen created at 2009-02-25 18:25:29\n\nLooks good.  I updated the patch to the new docstring format in 3.4.\n\nApply only trac-5369-transpose-gmp-matrix.2.patch",
+    "body": "Attachment [trac-5369-transpose-gmp-matrix.2.patch](tarball://root/attachments/some-uuid/ticket5369/trac-5369-transpose-gmp-matrix.2.patch) by @mwhansen created at 2009-02-25 18:25:29\n\nLooks good.  I updated the patch to the new docstring format in 3.4.\n\nApply only trac-5369-transpose-gmp-matrix.2.patch",
     "created_at": "2009-02-25T18:25:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5369#issuecomment-41355",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac-5369-transpose-gmp-matrix.2.patch](tarball://root/attachments/some-uuid/ticket5369/trac-5369-transpose-gmp-matrix.2.patch) by mhansen created at 2009-02-25 18:25:29
+Attachment [trac-5369-transpose-gmp-matrix.2.patch](tarball://root/attachments/some-uuid/ticket5369/trac-5369-transpose-gmp-matrix.2.patch) by @mwhansen created at 2009-02-25 18:25:29
 
 Looks good.  I updated the patch to the new docstring format in 3.4.
 

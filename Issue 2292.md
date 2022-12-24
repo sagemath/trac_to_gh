@@ -14,7 +14,7 @@ archive/issues_002292.json:
     "title": "segfault in AbelianGroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2292",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: joyner
@@ -58,7 +58,7 @@ archive/issue_comments_015204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2292#issuecomment-15204",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_015205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2292#issuecomment-15205",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -118,16 +118,16 @@ http://trac.sagemath.org/sage_trac/ticket/2293
 archive/issue_comments_015206.json:
 ```json
 {
-    "body": "Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2292/8681.patch) by wdj created at 2008-02-24 18:38:48",
+    "body": "Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2292/8681.patch) by @wdjoyner created at 2008-02-24 18:38:48",
     "created_at": "2008-02-24T18:38:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2292#issuecomment-15206",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2292/8681.patch) by wdj created at 2008-02-24 18:38:48
+Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2292/8681.patch) by @wdjoyner created at 2008-02-24 18:38:48
 
 
 
@@ -136,16 +136,16 @@ Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2292/8681.pat
 archive/issue_comments_015207.json:
 ```json
 {
-    "body": "Attachment [abelian_groupl_24-02-2008.hg](tarball://root/attachments/some-uuid/ticket2292/abelian_groupl_24-02-2008.hg) by wdj created at 2008-02-24 18:41:21\n\nI attached the patch and the bundle, so the reviewer can use either one. Passed the tests and fixes\nhttp://trac.sagemath.org/sage_trac/ticket/2293",
+    "body": "Attachment [abelian_groupl_24-02-2008.hg](tarball://root/attachments/some-uuid/ticket2292/abelian_groupl_24-02-2008.hg) by @wdjoyner created at 2008-02-24 18:41:21\n\nI attached the patch and the bundle, so the reviewer can use either one. Passed the tests and fixes\nhttp://trac.sagemath.org/sage_trac/ticket/2293",
     "created_at": "2008-02-24T18:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2292#issuecomment-15207",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [abelian_groupl_24-02-2008.hg](tarball://root/attachments/some-uuid/ticket2292/abelian_groupl_24-02-2008.hg) by wdj created at 2008-02-24 18:41:21
+Attachment [abelian_groupl_24-02-2008.hg](tarball://root/attachments/some-uuid/ticket2292/abelian_groupl_24-02-2008.hg) by @wdjoyner created at 2008-02-24 18:41:21
 
 I attached the patch and the bundle, so the reviewer can use either one. Passed the tests and fixes
 http://trac.sagemath.org/sage_trac/ticket/2293
@@ -162,7 +162,7 @@ archive/issue_comments_015208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2292#issuecomment-15208",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

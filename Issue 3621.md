@@ -3,7 +3,7 @@
 archive/issues_003621.json:
 ```json
 {
-    "body": "Assignee: cswiercz\n\nCC:  jkantor\n\nKeywords: finance, historical, stock, Stock\n\nThere was an issue with Stock.historical() only returning stock information from Jan 1, 1990 onward and no earlier. The addition of an explicit enddate to the Google Finance query seems to fix this. Fix is demonstrated in the doctests of Stock.historical()\n\nUses the datetime.date python module.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3621\n\n",
+    "body": "Assignee: @cswiercz\n\nCC:  jkantor\n\nKeywords: finance, historical, stock, Stock\n\nThere was an issue with Stock.historical() only returning stock information from Jan 1, 1990 onward and no earlier. The addition of an explicit enddate to the Google Finance query seems to fix this. Fix is demonstrated in the doctests of Stock.historical()\n\nUses the datetime.date python module.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3621\n\n",
     "created_at": "2008-07-09T00:34:15Z",
     "labels": [
         "finance",
@@ -14,10 +14,10 @@ archive/issues_003621.json:
     "title": "[with patch, needs review] Finance -- Fix Stock.historical(), addition of enddate input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3621",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
-Assignee: cswiercz
+Assignee: @cswiercz
 
 CC:  jkantor
 
@@ -43,7 +43,7 @@ archive/issue_comments_025565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25565",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_025566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25566",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -97,7 +97,7 @@ Changing status from assigned to new.
 archive/issue_comments_025568.json:
 ```json
 {
-    "body": "Changing assignee from cswiercz to cswiercz, brettnak.",
+    "body": "Changing assignee from @cswiercz to cswiercz, brettnak.",
     "created_at": "2008-07-18T21:38:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -106,7 +106,7 @@ archive/issue_comments_025568.json:
 }
 ```
 
-Changing assignee from cswiercz to cswiercz, brettnak.
+Changing assignee from @cswiercz to cswiercz, brettnak.
 
 
 
@@ -157,7 +157,7 @@ archive/issue_comments_025571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25571",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -170,16 +170,16 @@ Changing status from new to assigned.
 archive/issue_comments_025572.json:
 ```json
 {
-    "body": "Changing assignee from cswiercz, brettnak to cswiercz.",
+    "body": "Changing assignee from cswiercz, brettnak to @cswiercz.",
     "created_at": "2008-07-28T02:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25572",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Changing assignee from cswiercz, brettnak to cswiercz.
+Changing assignee from cswiercz, brettnak to @cswiercz.
 
 
 
@@ -193,7 +193,7 @@ archive/issue_comments_025573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25573",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_025574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25574",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -443,7 +443,7 @@ Patch 6 is a duplicate of patch 5.  Part 6 is supposed to add a new doctest.  I 
 archive/issue_comments_025576.json:
 ```json
 {
-    "body": "Changing assignee from cswiercz to cswiercz, brettnak.",
+    "body": "Changing assignee from @cswiercz to cswiercz, brettnak.",
     "created_at": "2008-08-02T21:32:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
@@ -452,7 +452,7 @@ archive/issue_comments_025576.json:
 }
 ```
 
-Changing assignee from cswiercz to cswiercz, brettnak.
+Changing assignee from @cswiercz to cswiercz, brettnak.
 
 
 
@@ -484,7 +484,7 @@ archive/issue_comments_025578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25578",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -497,16 +497,16 @@ Changing status from new to assigned.
 archive/issue_comments_025579.json:
 ```json
 {
-    "body": "Changing assignee from cswiercz, brettnak to cswiercz.",
+    "body": "Changing assignee from cswiercz, brettnak to @cswiercz.",
     "created_at": "2008-08-05T21:01:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25579",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Changing assignee from cswiercz, brettnak to cswiercz.
+Changing assignee from cswiercz, brettnak to @cswiercz.
 
 
 
@@ -542,7 +542,7 @@ archive/issue_comments_025581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25581",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -665,7 +665,7 @@ archive/issue_comments_025583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25583",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -691,7 +691,7 @@ archive/issue_comments_025584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25584",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -720,16 +720,16 @@ Chris
 archive/issue_comments_025585.json:
 ```json
 {
-    "body": "Attachment [sage-3621-combined.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-combined.patch) by cswiercz created at 2008-08-07 23:06:50\n\nReplacement patch for all patches listed above. Combines all changes.",
+    "body": "Attachment [sage-3621-combined.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-combined.patch) by @cswiercz created at 2008-08-07 23:06:50\n\nReplacement patch for all patches listed above. Combines all changes.",
     "created_at": "2008-08-07T23:06:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25585",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [sage-3621-combined.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-combined.patch) by cswiercz created at 2008-08-07 23:06:50
+Attachment [sage-3621-combined.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-combined.patch) by @cswiercz created at 2008-08-07 23:06:50
 
 Replacement patch for all patches listed above. Combines all changes.
 
@@ -762,16 +762,16 @@ Michael
 archive/issue_comments_025587.json:
 ```json
 {
-    "body": "Attachment [sage-3621-extrapart1.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-extrapart1.patch) by cswiercz created at 2008-08-13 00:51:55\n\nAdded Yahoo Finance as a backup to Google Finance historical requests. Additional refinements.",
+    "body": "Attachment [sage-3621-extrapart1.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-extrapart1.patch) by @cswiercz created at 2008-08-13 00:51:55\n\nAdded Yahoo Finance as a backup to Google Finance historical requests. Additional refinements.",
     "created_at": "2008-08-13T00:51:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25587",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [sage-3621-extrapart1.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-extrapart1.patch) by cswiercz created at 2008-08-13 00:51:55
+Attachment [sage-3621-extrapart1.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-extrapart1.patch) by @cswiercz created at 2008-08-13 00:51:55
 
 Added Yahoo Finance as a backup to Google Finance historical requests. Additional refinements.
 
@@ -946,16 +946,16 @@ All (including optional) tests pass!
 archive/issue_comments_025594.json:
 ```json
 {
-    "body": "Attachment [sage-3621-trivial_referee_followup.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-trivial_referee_followup.patch) by was created at 2008-11-28 03:33:07",
+    "body": "Attachment [sage-3621-trivial_referee_followup.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-trivial_referee_followup.patch) by @williamstein created at 2008-11-28 03:33:07",
     "created_at": "2008-11-28T03:33:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25594",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3621-trivial_referee_followup.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-trivial_referee_followup.patch) by was created at 2008-11-28 03:33:07
+Attachment [sage-3621-trivial_referee_followup.patch](tarball://root/attachments/some-uuid/ticket3621/sage-3621-trivial_referee_followup.patch) by @williamstein created at 2008-11-28 03:33:07
 
 
 
@@ -969,7 +969,7 @@ archive/issue_comments_025595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25595",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

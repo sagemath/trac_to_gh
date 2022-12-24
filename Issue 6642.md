@@ -3,7 +3,7 @@
 archive/issues_006642.json:
 ```json
 {
-    "body": "CC:  mvngu jason burcin robertwb\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85929d86accdf94d):\n\n```\n     sage: theta = var('theta')\n     sage: solve(cos(theta)==sin(theta))\n```\n\nshould produce\n\n```\n     [sin(theta) == cos(theta)]\n```\n\nbut instead it produces\n\n```\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/palmieri/.sage/temp/Macintosh.local/69786/_Users_palmieri__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/relation.pyc in solve(f, *args, **kwds)\n    478     \"\"\"\n    479     try:\n--> 480         return f.solve(*args,**kwds)\n    481     except AttributeError:\n    482         from sage.symbolic.ring import is_SymbolicVariable\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.solve (sage/symbolic/expression.cpp:21764)()\n\nTypeError: solve() takes at least 1 positional argument (0 given)\n```\n\nProviding a second argument 'theta' gives another error:\n\n```\n    sage: solve(cos(theta)==sin(theta), theta)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/palmieri/.sage/temp/Macintosh.local/69786/_Users_palmieri__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/relation.pyc in solve(f, *args, **kwds)\n    478     \"\"\"\n    479     try:\n--> 480         return f.solve(*args,**kwds)\n    481     except AttributeError:\n    482         from sage.symbolic.ring import is_SymbolicVariable\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.solve (sage/symbolic/expression.cpp:22291)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, *args, **kwds)\n   1380 \n   1381     def __call__(self, *args, **kwds):\n-> 1382         return self._obj.parent().function_call(self._name, [self._obj] + list(args), kwds)\n   1383 \n   1384     def help(self):\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in function_call(self, function, args, kwds)\n   1288                                        [s.name() for s in args],\n   1289                                        ['%s=%s'%(key,value.name()) for key, value in kwds.items()])\n-> 1290         return self.new(s)\n   1291 \n   1292     def _function_call_string(self, function, args, kwds):\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in new(self, code)\n   1084 \n   1085     def new(self, code):\n-> 1086         return self(code)\n   1087 \n   1088     ###################################################################\n\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1019 \n   1020         if isinstance(x, basestring):\n-> 1021             return cls(self, x, name=name)\n   1022         try:\n   1023             return self._coerce_from_special_method(x)\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1423             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1424                 self._session_number = -1\n-> 1425                 raise TypeError, x\n   1426         self._session_number = parent._session_number\n   1427 \n\nTypeError: Error executing code in Maxima\nCODE:\n\tsage4 : to_poly_solve(sage0,sage3)$\nMaxima ERROR:\n\t\nNonalgebraic argument given to 'topoly'\n#0: to_poly_solve(e=cos(theta) = sin(theta),vars=theta)(topoly_solver.mac line 10)\n```\n\nThe first version of this -- `solve(cos(theta)==sin(theta))` -- is in the tutorial, and so presumably used to work.  \n\nSee #6572 for a related ticket which, among other things, tells doctesting to skip this test in the tutorial.  If the underlying problem is solved, the test in the tutorial should be restored, and of course a test should be put into the main Sage code illustrating that it now works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6642\n\n",
+    "body": "CC:  mvngu @jasongrout @burcin @robertwb\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85929d86accdf94d):\n\n```\n     sage: theta = var('theta')\n     sage: solve(cos(theta)==sin(theta))\n```\n\nshould produce\n\n```\n     [sin(theta) == cos(theta)]\n```\n\nbut instead it produces\n\n```\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/palmieri/.sage/temp/Macintosh.local/69786/_Users_palmieri__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/relation.pyc in solve(f, *args, **kwds)\n    478     \"\"\"\n    479     try:\n--> 480         return f.solve(*args,**kwds)\n    481     except AttributeError:\n    482         from sage.symbolic.ring import is_SymbolicVariable\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.solve (sage/symbolic/expression.cpp:21764)()\n\nTypeError: solve() takes at least 1 positional argument (0 given)\n```\n\nProviding a second argument 'theta' gives another error:\n\n```\n    sage: solve(cos(theta)==sin(theta), theta)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/palmieri/.sage/temp/Macintosh.local/69786/_Users_palmieri__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/relation.pyc in solve(f, *args, **kwds)\n    478     \"\"\"\n    479     try:\n--> 480         return f.solve(*args,**kwds)\n    481     except AttributeError:\n    482         from sage.symbolic.ring import is_SymbolicVariable\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.solve (sage/symbolic/expression.cpp:22291)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, *args, **kwds)\n   1380 \n   1381     def __call__(self, *args, **kwds):\n-> 1382         return self._obj.parent().function_call(self._name, [self._obj] + list(args), kwds)\n   1383 \n   1384     def help(self):\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in function_call(self, function, args, kwds)\n   1288                                        [s.name() for s in args],\n   1289                                        ['%s=%s'%(key,value.name()) for key, value in kwds.items()])\n-> 1290         return self.new(s)\n   1291 \n   1292     def _function_call_string(self, function, args, kwds):\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in new(self, code)\n   1084 \n   1085     def new(self, code):\n-> 1086         return self(code)\n   1087 \n   1088     ###################################################################\n\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1019 \n   1020         if isinstance(x, basestring):\n-> 1021             return cls(self, x, name=name)\n   1022         try:\n   1023             return self._coerce_from_special_method(x)\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1423             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1424                 self._session_number = -1\n-> 1425                 raise TypeError, x\n   1426         self._session_number = parent._session_number\n   1427 \n\nTypeError: Error executing code in Maxima\nCODE:\n\tsage4 : to_poly_solve(sage0,sage3)$\nMaxima ERROR:\n\t\nNonalgebraic argument given to 'topoly'\n#0: to_poly_solve(e=cos(theta) = sin(theta),vars=theta)(topoly_solver.mac line 10)\n```\n\nThe first version of this -- `solve(cos(theta)==sin(theta))` -- is in the tutorial, and so presumably used to work.  \n\nSee #6572 for a related ticket which, among other things, tells doctesting to skip this test in the tutorial.  If the underlying problem is solved, the test in the tutorial should be restored, and of course a test should be put into the main Sage code illustrating that it now works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6642\n\n",
     "created_at": "2009-07-27T17:13:55Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006642.json:
     "title": "problem with solve (from the tutorial)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6642",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-CC:  mvngu jason burcin robertwb
+CC:  mvngu @jasongrout @burcin @robertwb
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85929d86accdf94d):
 
@@ -130,16 +130,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6642
 archive/issue_comments_054459.json:
 ```json
 {
-    "body": "Attachment [trac_6642-solve-implicit-Maxima.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-solve-implicit-Maxima.patch) by kcrisman created at 2009-08-26 21:19:24\n\nBased on 4.1.1",
+    "body": "Attachment [trac_6642-solve-implicit-Maxima.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-solve-implicit-Maxima.patch) by @kcrisman created at 2009-08-26 21:19:24\n\nBased on 4.1.1",
     "created_at": "2009-08-26T21:19:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54459",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6642-solve-implicit-Maxima.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-solve-implicit-Maxima.patch) by kcrisman created at 2009-08-26 21:19:24
+Attachment [trac_6642-solve-implicit-Maxima.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-solve-implicit-Maxima.patch) by @kcrisman created at 2009-08-26 21:19:24
 
 Based on 4.1.1
 
@@ -155,7 +155,7 @@ archive/issue_comments_054460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54460",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_054461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54461",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_054462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54462",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_054463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54463",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_054464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54464",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -267,16 +267,16 @@ Okay, that's progress: at least we (meaning you) understand what the problem is.
 archive/issue_comments_054465.json:
 ```json
 {
-    "body": "Attachment [trac_6642-to-poly-solve-take2.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take2.patch) by kcrisman created at 2009-09-20 02:03:55\n\nDepends on #4786",
+    "body": "Attachment [trac_6642-to-poly-solve-take2.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take2.patch) by @kcrisman created at 2009-09-20 02:03:55\n\nDepends on #4786",
     "created_at": "2009-09-20T02:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54465",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6642-to-poly-solve-take2.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take2.patch) by kcrisman created at 2009-09-20 02:03:55
+Attachment [trac_6642-to-poly-solve-take2.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take2.patch) by @kcrisman created at 2009-09-20 02:03:55
 
 Depends on #4786
 
@@ -292,7 +292,7 @@ archive/issue_comments_054466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54466",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_054467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54467",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_054468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54468",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_054469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54469",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -401,7 +401,7 @@ archive/issue_comments_054470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54470",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -416,16 +416,16 @@ Sorry, this is silly.  I'll make a referee's patch since you already said exactl
 archive/issue_comments_054471.json:
 ```json
 {
-    "body": "Attachment [trac_6642-to-poly-solve-take3.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take3.patch) by kcrisman created at 2009-10-08 03:54:15\n\nBased on 4.1.2.rc1.alpha3",
+    "body": "Attachment [trac_6642-to-poly-solve-take3.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take3.patch) by @kcrisman created at 2009-10-08 03:54:15\n\nBased on 4.1.2.rc1.alpha3",
     "created_at": "2009-10-08T03:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54471",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6642-to-poly-solve-take3.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take3.patch) by kcrisman created at 2009-10-08 03:54:15
+Attachment [trac_6642-to-poly-solve-take3.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take3.patch) by @kcrisman created at 2009-10-08 03:54:15
 
 Based on 4.1.2.rc1.alpha3
 
@@ -441,7 +441,7 @@ archive/issue_comments_054472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54472",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_054473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54473",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -479,7 +479,7 @@ archive/issue_comments_054474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54474",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_054475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54475",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -515,7 +515,7 @@ archive/issue_comments_054476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54476",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -533,7 +533,7 @@ archive/issue_comments_054477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54477",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -551,7 +551,7 @@ archive/issue_comments_054478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54478",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -564,16 +564,16 @@ Just FYI, this will probably not get in before 4.1.2, and at #7112 William has a
 archive/issue_comments_054479.json:
 ```json
 {
-    "body": "Attachment [trac_6642-to-poly-solve-take3.2.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take3.2.patch) by kcrisman created at 2009-10-14 20:07:22\n\nBased on 4.1.2.rc1.alpha3",
+    "body": "Attachment [trac_6642-to-poly-solve-take3.2.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take3.2.patch) by @kcrisman created at 2009-10-14 20:07:22\n\nBased on 4.1.2.rc1.alpha3",
     "created_at": "2009-10-14T20:07:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54479",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6642-to-poly-solve-take3.2.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take3.2.patch) by kcrisman created at 2009-10-14 20:07:22
+Attachment [trac_6642-to-poly-solve-take3.2.patch](tarball://root/attachments/some-uuid/ticket6642/trac_6642-to-poly-solve-take3.2.patch) by @kcrisman created at 2009-10-14 20:07:22
 
 Based on 4.1.2.rc1.alpha3
 
@@ -589,7 +589,7 @@ archive/issue_comments_054480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54480",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -607,7 +607,7 @@ archive/issue_comments_054481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6642#issuecomment-54481",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

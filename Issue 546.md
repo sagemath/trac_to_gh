@@ -3,7 +3,7 @@
 archive/issues_000546.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/546\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/546\n\n",
     "created_at": "2007-08-31T23:10:47Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000546.json:
     "title": "hg_extcode should merge repository on upgrade/install instead of overwriting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/546",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_002816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/546#issuecomment-2816",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_002817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/546#issuecomment-2817",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_002818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/546#issuecomment-2818",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004856.json:
     "title": "[with patch; needs review] make qasm an optional spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4856",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4856
 archive/issue_comments_036806.json:
 ```json
 {
-    "body": "Attachment [qasm-1.4.spkg](tarball://root/attachments/some-uuid/ticket4856/qasm-1.4.spkg) by was created at 2008-12-23 07:45:37",
+    "body": "Attachment [qasm-1.4.spkg](tarball://root/attachments/some-uuid/ticket4856/qasm-1.4.spkg) by @williamstein created at 2008-12-23 07:45:37",
     "created_at": "2008-12-23T07:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4856#issuecomment-36806",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [qasm-1.4.spkg](tarball://root/attachments/some-uuid/ticket4856/qasm-1.4.spkg) by was created at 2008-12-23 07:45:37
+Attachment [qasm-1.4.spkg](tarball://root/attachments/some-uuid/ticket4856/qasm-1.4.spkg) by @williamstein created at 2008-12-23 07:45:37
 
 
 
@@ -106,7 +106,7 @@ archive/issue_comments_036808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4856#issuecomment-36808",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_036809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4856#issuecomment-36809",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

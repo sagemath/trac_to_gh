@@ -201,7 +201,7 @@ archive/issue_comments_089478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89478",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_089479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89479",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_089482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89482",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -312,16 +312,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089483.json:
 ```json
 {
-    "body": "Attachment [trac_9396-spkg_txt_edit.patch](tarball://root/attachments/some-uuid/ticket9396/trac_9396-spkg_txt_edit.patch) by rlm created at 2010-07-09 12:10:05\n\nspkg updated",
+    "body": "Attachment [trac_9396-spkg_txt_edit.patch](tarball://root/attachments/some-uuid/ticket9396/trac_9396-spkg_txt_edit.patch) by @rlmill created at 2010-07-09 12:10:05\n\nspkg updated",
     "created_at": "2010-07-09T12:10:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89483",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9396-spkg_txt_edit.patch](tarball://root/attachments/some-uuid/ticket9396/trac_9396-spkg_txt_edit.patch) by rlm created at 2010-07-09 12:10:05
+Attachment [trac_9396-spkg_txt_edit.patch](tarball://root/attachments/some-uuid/ticket9396/trac_9396-spkg_txt_edit.patch) by @rlmill created at 2010-07-09 12:10:05
 
 spkg updated
 
@@ -521,7 +521,7 @@ archive/issue_comments_089490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89490",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -534,16 +534,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_089491.json:
 ```json
 {
-    "body": "Attachment [9396-syntax-error-correction.patch](tarball://root/attachments/some-uuid/ticket9396/9396-syntax-error-correction.patch) by rlm created at 2010-07-18 10:37:50\n\nI'm setting this to positive review, since it builds on Solaris and off.\n\nI'm also removing myself from the author block, since I did virtually nothing.",
+    "body": "Attachment [9396-syntax-error-correction.patch](tarball://root/attachments/some-uuid/ticket9396/9396-syntax-error-correction.patch) by @rlmill created at 2010-07-18 10:37:50\n\nI'm setting this to positive review, since it builds on Solaris and off.\n\nI'm also removing myself from the author block, since I did virtually nothing.",
     "created_at": "2010-07-18T10:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89491",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [9396-syntax-error-correction.patch](tarball://root/attachments/some-uuid/ticket9396/9396-syntax-error-correction.patch) by rlm created at 2010-07-18 10:37:50
+Attachment [9396-syntax-error-correction.patch](tarball://root/attachments/some-uuid/ticket9396/9396-syntax-error-correction.patch) by @rlmill created at 2010-07-18 10:37:50
 
 I'm setting this to positive review, since it builds on Solaris and off.
 
@@ -561,7 +561,7 @@ archive/issue_comments_089492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89492",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -599,7 +599,7 @@ archive/issue_comments_089493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89493",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -617,7 +617,7 @@ archive/issue_comments_089494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89494",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -635,7 +635,7 @@ archive/issue_comments_089495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89495",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_089497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89497",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -696,7 +696,7 @@ archive/issue_comments_089498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89498",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

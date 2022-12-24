@@ -14,7 +14,7 @@ archive/issues_003122.json:
     "title": "after make install, sage tries to write in /usr/local",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3122",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: cwitty
@@ -134,7 +134,7 @@ archive/issue_comments_021634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3122#issuecomment-21634",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

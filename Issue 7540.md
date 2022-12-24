@@ -3,7 +3,7 @@
 archive/issues_007540.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rbeezer\n\nAs mentionned in #7533 by Rob Beezer, the function shortest_path_all_pairs() is much slower than computing independently all the distances, which is a bit worrying. Easy explanation ( at least it is an explanation for me, though there may be a deeper one ), distance() is a function from NetworkX while the Floyd-Marshall algorithm is directly written in Python, hence the slowness.\n\nThis function is very fundamental and should be improved ! The difference is amazing :\n\n\n```\nsage: g=graphs.RandomGNP(200,.1)\nsage: time e=g.shortest_path_all_pairs()\nCPU times: user 16.51 s, sys: 0.06 s, total: 16.57 s\nWall time: 16.60 s\nsage: time a=[g.distance(i,j) for (i,j) in Subsets(g,2)]\nCPU times: user 1.06 s, sys: 0.00 s, total: 1.06 s\nWall time: 1.06 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7540\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rbeezer\n\nAs mentionned in #7533 by Rob Beezer, the function shortest_path_all_pairs() is much slower than computing independently all the distances, which is a bit worrying. Easy explanation ( at least it is an explanation for me, though there may be a deeper one ), distance() is a function from NetworkX while the Floyd-Marshall algorithm is directly written in Python, hence the slowness.\n\nThis function is very fundamental and should be improved ! The difference is amazing :\n\n\n```\nsage: g=graphs.RandomGNP(200,.1)\nsage: time e=g.shortest_path_all_pairs()\nCPU times: user 16.51 s, sys: 0.06 s, total: 16.57 s\nWall time: 16.60 s\nsage: time a=[g.distance(i,j) for (i,j) in Subsets(g,2)]\nCPU times: user 1.06 s, sys: 0.00 s, total: 1.06 s\nWall time: 1.06 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7540\n\n",
     "created_at": "2009-11-27T12:16:45Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007540.json:
     "title": "Speed up shortest_path_all_pairs() and update distance_graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7540",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rbeezer
+CC:  @rbeezer
 
 As mentionned in #7533 by Rob Beezer, the function shortest_path_all_pairs() is much slower than computing independently all the distances, which is a bit worrying. Easy explanation ( at least it is an explanation for me, though there may be a deeper one ), distance() is a function from NetworkX while the Floyd-Marshall algorithm is directly written in Python, hence the slowness.
 
@@ -74,7 +74,7 @@ archive/issue_comments_063989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7540#issuecomment-63989",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_063990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7540#issuecomment-63990",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

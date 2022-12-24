@@ -13,7 +13,7 @@ archive/issues_007500.json:
     "title": "Escape & (ampersand) in uploaded/created data file names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7500",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby

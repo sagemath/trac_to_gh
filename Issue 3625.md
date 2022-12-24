@@ -3,7 +3,7 @@
 archive/issues_003625.json:
 ```json
 {
-    "body": "Assignee: was\n\nFor some reason running latex2html to make the sage docs doesn't work -- the images rarely get built.  This must be fixed, because it causes massive frustration when I try to do releases, etc.\n\nI suspect mistakes in paths or something else.  I don't know. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3625\n\n",
+    "body": "Assignee: @williamstein\n\nFor some reason running latex2html to make the sage docs doesn't work -- the images rarely get built.  This must be fixed, because it causes massive frustration when I try to do releases, etc.\n\nI suspect mistakes in paths or something else.  I don't know. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3625\n\n",
     "created_at": "2008-07-09T18:28:37Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_003625.json:
     "title": "fix latex2html'ing of the sage docs, which is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3625",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 For some reason running latex2html to make the sage docs doesn't work -- the images rarely get built.  This must be fixed, because it causes massive frustration when I try to do releases, etc.
 
@@ -39,7 +39,7 @@ archive/issue_comments_025657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3625#issuecomment-25657",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

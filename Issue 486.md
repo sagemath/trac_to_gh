@@ -113,7 +113,7 @@ archive/issue_comments_002427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/486#issuecomment-2427",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -126,16 +126,16 @@ bundle with both the patches for 468 and 486
 archive/issue_comments_002428.json:
 ```json
 {
-    "body": "Attachment [partition_updates.hg](tarball://root/attachments/some-uuid/ticket486/partition_updates.hg) by was created at 2007-10-13 07:47:59",
+    "body": "Attachment [partition_updates.hg](tarball://root/attachments/some-uuid/ticket486/partition_updates.hg) by @williamstein created at 2007-10-13 07:47:59",
     "created_at": "2007-10-13T07:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/486#issuecomment-2428",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [partition_updates.hg](tarball://root/attachments/some-uuid/ticket486/partition_updates.hg) by was created at 2007-10-13 07:47:59
+Attachment [partition_updates.hg](tarball://root/attachments/some-uuid/ticket486/partition_updates.hg) by @williamstein created at 2007-10-13 07:47:59
 
 
 
@@ -149,7 +149,7 @@ archive/issue_comments_002429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/486#issuecomment-2429",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

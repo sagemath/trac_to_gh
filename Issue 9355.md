@@ -14,7 +14,7 @@ archive/issues_009355.json:
     "title": "100% coverage for quadratic_forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9355",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 Assignee: mvngu
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9355
 archive/issue_comments_088800.json:
 ```json
 {
-    "body": "Attachment [trac_9355.patch](tarball://root/attachments/some-uuid/ticket9355/trac_9355.patch) by annahaensch created at 2010-06-27 21:51:58",
+    "body": "Attachment [trac_9355.patch](tarball://root/attachments/some-uuid/ticket9355/trac_9355.patch) by @annahaensch created at 2010-06-27 21:51:58",
     "created_at": "2010-06-27T21:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9355#issuecomment-88800",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 
-Attachment [trac_9355.patch](tarball://root/attachments/some-uuid/ticket9355/trac_9355.patch) by annahaensch created at 2010-06-27 21:51:58
+Attachment [trac_9355.patch](tarball://root/attachments/some-uuid/ticket9355/trac_9355.patch) by @annahaensch created at 2010-06-27 21:51:58
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_088801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9355#issuecomment-88801",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_088802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9355#issuecomment-88802",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_088803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9355#issuecomment-88803",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -106,16 +106,16 @@ I tried this, and it is fine as far as it goes but `sage -coverage` still grumbl
 archive/issue_comments_088804.json:
 ```json
 {
-    "body": "Attachment [trac_9355_loads_dumps.patch](tarball://root/attachments/some-uuid/ticket9355/trac_9355_loads_dumps.patch) by annahaensch created at 2010-06-29 06:25:46\n\nApply on top of trac_9355.patch",
+    "body": "Attachment [trac_9355_loads_dumps.patch](tarball://root/attachments/some-uuid/ticket9355/trac_9355_loads_dumps.patch) by @annahaensch created at 2010-06-29 06:25:46\n\nApply on top of trac_9355.patch",
     "created_at": "2010-06-29T06:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9355#issuecomment-88804",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 
-Attachment [trac_9355_loads_dumps.patch](tarball://root/attachments/some-uuid/ticket9355/trac_9355_loads_dumps.patch) by annahaensch created at 2010-06-29 06:25:46
+Attachment [trac_9355_loads_dumps.patch](tarball://root/attachments/some-uuid/ticket9355/trac_9355_loads_dumps.patch) by @annahaensch created at 2010-06-29 06:25:46
 
 Apply on top of trac_9355.patch
 
@@ -131,7 +131,7 @@ archive/issue_comments_088805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9355#issuecomment-88805",
-    "user": "annahaensch"
+    "user": "@annahaensch"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_088806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9355#issuecomment-88806",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_088807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9355#issuecomment-88807",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_088808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9355#issuecomment-88808",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_088809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9355#issuecomment-88809",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

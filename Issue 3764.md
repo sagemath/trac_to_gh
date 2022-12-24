@@ -152,16 +152,16 @@ Michael
 archive/issue_comments_026768.json:
 ```json
 {
-    "body": "Attachment [sage-3764_7.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_7.patch) by was created at 2008-08-10 03:42:59\n\nfollowup upon refereeing the code",
+    "body": "Attachment [sage-3764_7.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_7.patch) by @williamstein created at 2008-08-10 03:42:59\n\nfollowup upon refereeing the code",
     "created_at": "2008-08-10T03:42:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3764#issuecomment-26768",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3764_7.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_7.patch) by was created at 2008-08-10 03:42:59
+Attachment [sage-3764_7.patch](tarball://root/attachments/some-uuid/ticket3764/sage-3764_7.patch) by @williamstein created at 2008-08-10 03:42:59
 
 followup upon refereeing the code
 
@@ -177,7 +177,7 @@ archive/issue_comments_026769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3764#issuecomment-26769",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

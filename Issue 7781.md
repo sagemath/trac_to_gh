@@ -3,7 +3,7 @@
 archive/issues_007781.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  mhansen georgsweber mvngu\n\nKeywords: gcc AIX HP-UX IRIX Tru64 Solaris\n\nThis is a further update of the code which checks the prerequisites for Sage are OK. Previous updates were #7021 and #7352. \n\n == Changes in files ==\n\n**Changes to configure.ac (This gets included in prereq-0.6.tar)**\n\n* Exit for a gcc 3.4 series compiler, unless the variable 'SAGE_USE_OLD_GCC' is set to something non-empty. This was desirable, as the only compiler shipped with Solaris is 3.4.3, which is too old. As in prereq 0.4 and 0.5, the Sage build exits with gcc < 3.4.0 (as it's too old) and with gcc 4.0.0 (as it's too buggy). \n\n**Changes to prereq-0.6-install**\n\n* Exit on Solaris if the version of 'make' is not the GNU one. It was my intension this was done for both 'tar' and 'make' in prereq 0.5, but I'd overlooked to put the number '1' on one of the exit statements, so the build did not exit for Sun's 'make'.\n* Exit on Solaris 2.6, 7, 8 and 9 unless SAGE_PORT is set to something non-empty. This seems logical, as nobody is testing Sage on the older Solaris releases. It's probably worth testing Sage on Solaris 8 and 9, but not 2.6 or 7, as they are too old to worry about. \n* Test for the GNU versions of 'make' and 'tar' on AIX, HP-UX, IRIX and Tru64 - this was already done on Solaris. As I'm not so sure where the GNU tools will be found on AIX, HP-UX, IRIX or Tru64, so the error message is not as informative as on Solaris, where I know the systems much better. \n* Provides links to pages on the Sage Wiki for Solaris (http://wiki.sagemath.org/solaris) and HP-UX (http://wiki.sagemath.org/HP-UX), which are printed on those platforms if there are any issues detected (Generally that means if 'SAGE_PORT' is needed for the build to continue). There are no Wiki pages for AIX, Tru64 or IRIX, and I somewhat doubt I will create any for Tru64 or IRIX, but I might for AIX. \n* Change the comment about using VMWare to VirtualBox, as that is the preferred system for Sage now.\n* Mention a port to HP-UX does not look particularly difficult, as it might encourage some developers. It actually looks to be relatively easy, judging by the number of packages that build OK on HP-UX. \n\nUpdated versions of prereq-0.6-install and prereq-0.6.tar are provided in the directory below. prereq-0.6-install must be put into Sage with execute permissions. \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/prereq-0.6/\n\n == How to test these changes ==\n* Copy the files prereq-0.6.tar & prereq-0.6-install to $SAGE_ROOT/spkg/base/ \n* Ensure prereq-0.6-install has execute permissions. \n* Remove spkg/installed/prerequ-0.5\n* Type 'make' \n\nAnyone wishing to test on HP-UX is welcome to have an account on my own machine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7781\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @mwhansen georgsweber mvngu\n\nKeywords: gcc AIX HP-UX IRIX Tru64 Solaris\n\nThis is a further update of the code which checks the prerequisites for Sage are OK. Previous updates were #7021 and #7352. \n\n == Changes in files ==\n\n**Changes to configure.ac (This gets included in prereq-0.6.tar)**\n\n* Exit for a gcc 3.4 series compiler, unless the variable 'SAGE_USE_OLD_GCC' is set to something non-empty. This was desirable, as the only compiler shipped with Solaris is 3.4.3, which is too old. As in prereq 0.4 and 0.5, the Sage build exits with gcc < 3.4.0 (as it's too old) and with gcc 4.0.0 (as it's too buggy). \n\n**Changes to prereq-0.6-install**\n\n* Exit on Solaris if the version of 'make' is not the GNU one. It was my intension this was done for both 'tar' and 'make' in prereq 0.5, but I'd overlooked to put the number '1' on one of the exit statements, so the build did not exit for Sun's 'make'.\n* Exit on Solaris 2.6, 7, 8 and 9 unless SAGE_PORT is set to something non-empty. This seems logical, as nobody is testing Sage on the older Solaris releases. It's probably worth testing Sage on Solaris 8 and 9, but not 2.6 or 7, as they are too old to worry about. \n* Test for the GNU versions of 'make' and 'tar' on AIX, HP-UX, IRIX and Tru64 - this was already done on Solaris. As I'm not so sure where the GNU tools will be found on AIX, HP-UX, IRIX or Tru64, so the error message is not as informative as on Solaris, where I know the systems much better. \n* Provides links to pages on the Sage Wiki for Solaris (http://wiki.sagemath.org/solaris) and HP-UX (http://wiki.sagemath.org/HP-UX), which are printed on those platforms if there are any issues detected (Generally that means if 'SAGE_PORT' is needed for the build to continue). There are no Wiki pages for AIX, Tru64 or IRIX, and I somewhat doubt I will create any for Tru64 or IRIX, but I might for AIX. \n* Change the comment about using VMWare to VirtualBox, as that is the preferred system for Sage now.\n* Mention a port to HP-UX does not look particularly difficult, as it might encourage some developers. It actually looks to be relatively easy, judging by the number of packages that build OK on HP-UX. \n\nUpdated versions of prereq-0.6-install and prereq-0.6.tar are provided in the directory below. prereq-0.6-install must be put into Sage with execute permissions. \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/prereq-0.6/\n\n == How to test these changes ==\n* Copy the files prereq-0.6.tar & prereq-0.6-install to $SAGE_ROOT/spkg/base/ \n* Ensure prereq-0.6-install has execute permissions. \n* Remove spkg/installed/prerequ-0.5\n* Type 'make' \n\nAnyone wishing to test on HP-UX is welcome to have an account on my own machine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7781\n\n",
     "created_at": "2009-12-29T05:38:55Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_007781.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  mhansen georgsweber mvngu
+CC:  @mwhansen georgsweber mvngu
 
 Keywords: gcc AIX HP-UX IRIX Tru64 Solaris
 
@@ -396,7 +396,7 @@ archive/issue_comments_067097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7781#issuecomment-67097",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_067099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7781#issuecomment-67099",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_067100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7781#issuecomment-67100",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_067101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7781#issuecomment-67101",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_067102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7781#issuecomment-67102",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_067103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7781#issuecomment-67103",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_067104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7781#issuecomment-67104",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

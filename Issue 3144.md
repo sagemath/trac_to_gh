@@ -3,7 +3,7 @@
 archive/issues_003144.json:
 ```json
 {
-    "body": "Assignee: was\n\nNote that the output of var('x,y') below the second time is *totally broken* - it returns a string:\n\n\n```\nsage: x,y=var(\"x,y\")\nsage: f(x,y)=sin(x)+cos(y)\nsage: grads=[diff(f,var) for var in (x,y)]\nsage: var('x,y')\n'x,y'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3144\n\n",
+    "body": "Assignee: @williamstein\n\nNote that the output of var('x,y') below the second time is *totally broken* - it returns a string:\n\n\n```\nsage: x,y=var(\"x,y\")\nsage: f(x,y)=sin(x)+cos(y)\nsage: grads=[diff(f,var) for var in (x,y)]\nsage: var('x,y')\n'x,y'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3144\n\n",
     "created_at": "2008-05-09T15:16:51Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003144.json:
     "title": "bug in calculus var command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3144",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Note that the output of var('x,y') below the second time is *totally broken* - it returns a string:
 
@@ -47,7 +47,7 @@ archive/issue_comments_021816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3144#issuecomment-21816",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_021817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3144#issuecomment-21817",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_021818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3144#issuecomment-21818",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

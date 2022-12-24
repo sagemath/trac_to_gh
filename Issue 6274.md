@@ -3,7 +3,7 @@
 archive/issues_006274.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  kcrisman jhpalmieri\n\nThis is a follow-up to #6270.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6274\n\n",
+    "body": "Assignee: tba\n\nCC:  @kcrisman @jhpalmieri\n\nThis is a follow-up to #6270.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6274\n\n",
     "created_at": "2009-06-13T12:23:07Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_006274.json:
 ```
 Assignee: tba
 
-CC:  kcrisman jhpalmieri
+CC:  @kcrisman @jhpalmieri
 
 This is a follow-up to #6270.
 
@@ -75,7 +75,7 @@ archive/issue_comments_050119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6274#issuecomment-50119",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -88,16 +88,16 @@ Looks good.  I'm attaching a referee's patch with two trivial fixes.
 archive/issue_comments_050120.json:
 ```json
 {
-    "body": "Attachment [ref_6274.patch](tarball://root/attachments/some-uuid/ticket6274/ref_6274.patch) by jhpalmieri created at 2009-06-15 23:42:42",
+    "body": "Attachment [ref_6274.patch](tarball://root/attachments/some-uuid/ticket6274/ref_6274.patch) by @jhpalmieri created at 2009-06-15 23:42:42",
     "created_at": "2009-06-15T23:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6274#issuecomment-50120",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [ref_6274.patch](tarball://root/attachments/some-uuid/ticket6274/ref_6274.patch) by jhpalmieri created at 2009-06-15 23:42:42
+Attachment [ref_6274.patch](tarball://root/attachments/some-uuid/ticket6274/ref_6274.patch) by @jhpalmieri created at 2009-06-15 23:42:42
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_050121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6274#issuecomment-50121",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

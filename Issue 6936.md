@@ -3,7 +3,7 @@
 archive/issues_006936.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman nthiery hivert rbeezer\n\nThe patch calls TestSuite().run() every time load(dumps()) is called in the matrix directory.  I also added a _test_minpoly() function, and fixed an existing _test_pickle() function.\n\nRunning doctests in matrix/*.pyx now fails for a number of files.  In other words, this testing infrastructure works and is uncovering bugs!\n\nThe bugs should be dealt with on other tickets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6936\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @nthiery @hivert @rbeezer\n\nThe patch calls TestSuite().run() every time load(dumps()) is called in the matrix directory.  I also added a _test_minpoly() function, and fixed an existing _test_pickle() function.\n\nRunning doctests in matrix/*.pyx now fails for a number of files.  In other words, this testing infrastructure works and is uncovering bugs!\n\nThe bugs should be dealt with on other tickets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6936\n\n",
     "created_at": "2009-09-15T18:20:03Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_006936.json:
     "title": "[with patch, needs review] Implement generic testing from #6343 for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6936",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman nthiery hivert rbeezer
+CC:  @kcrisman @nthiery @hivert @rbeezer
 
 The patch calls TestSuite().run() every time load(dumps()) is called in the matrix directory.  I also added a _test_minpoly() function, and fixed an existing _test_pickle() function.
 
@@ -43,7 +43,7 @@ archive/issue_comments_057323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57323",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_057324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57324",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_057325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57325",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_057326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57326",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_057327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57327",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_057328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57328",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_057330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57330",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_057331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57331",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_057332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57332",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_057333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57333",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_057334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57334",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_057335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57335",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -454,16 +454,16 @@ Florent
 archive/issue_comments_057336.json:
 ```json
 {
-    "body": "Attachment [trac-6936-matrix-generic-doctesting.patch](tarball://root/attachments/some-uuid/ticket6936/trac-6936-matrix-generic-doctesting.patch) by jason created at 2010-01-19 02:35:31",
+    "body": "Attachment [trac-6936-matrix-generic-doctesting.patch](tarball://root/attachments/some-uuid/ticket6936/trac-6936-matrix-generic-doctesting.patch) by @jasongrout created at 2010-01-19 02:35:31",
     "created_at": "2010-01-19T02:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57336",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6936-matrix-generic-doctesting.patch](tarball://root/attachments/some-uuid/ticket6936/trac-6936-matrix-generic-doctesting.patch) by jason created at 2010-01-19 02:35:31
+Attachment [trac-6936-matrix-generic-doctesting.patch](tarball://root/attachments/some-uuid/ticket6936/trac-6936-matrix-generic-doctesting.patch) by @jasongrout created at 2010-01-19 02:35:31
 
 
 
@@ -477,7 +477,7 @@ archive/issue_comments_057337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57337",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_057338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57338",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_057339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57339",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_057340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57340",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_057341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6936#issuecomment-57341",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

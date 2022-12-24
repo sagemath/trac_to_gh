@@ -14,7 +14,7 @@ archive/issues_000609.json:
     "title": "make lie part a standard SAGE package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/609",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -88,7 +88,7 @@ archive/issue_comments_003135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/609#issuecomment-3135",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_003136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/609#issuecomment-3136",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_003137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/609#issuecomment-3137",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

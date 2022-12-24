@@ -3,7 +3,7 @@
 archive/issues_002568.json:
 ```json
 {
-    "body": "Assignee: was\n\nsnapshot of work in progress of the port of the Dokchitser L-series calculator\n\nIssue created by migration from https://trac.sagemath.org/ticket/2568\n\n",
+    "body": "Assignee: @williamstein\n\nsnapshot of work in progress of the port of the Dokchitser L-series calculator\n\nIssue created by migration from https://trac.sagemath.org/ticket/2568\n\n",
     "created_at": "2008-03-17T08:59:17Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002568.json:
     "title": "dokchitser port, work in progress",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2568",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 snapshot of work in progress of the port of the Dokchitser L-series calculator
 
@@ -55,7 +55,7 @@ archive/issue_comments_017553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2568#issuecomment-17553",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006913.json:
     "title": "__eq__ methods for the classes in numerical.MIP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6913",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
@@ -39,7 +39,7 @@ archive/issue_comments_057096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6913#issuecomment-57096",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_057097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6913#issuecomment-57097",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_057098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6913#issuecomment-57098",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

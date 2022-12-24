@@ -14,7 +14,7 @@ archive/issues_004312.json:
     "title": "major @interact (hence pyprocessing) new bug in 3.1.3, still in 3.1.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4312",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -107,7 +107,7 @@ archive/issue_comments_031570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4312#issuecomment-31570",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_031572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4312#issuecomment-31572",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -160,16 +160,16 @@ I've posted a hack-ish patch that at least fixes this problem.  Something better
 archive/issue_comments_031573.json:
 ```json
 {
-    "body": "Attachment [sage-4312.patch](tarball://root/attachments/some-uuid/ticket4312/sage-4312.patch) by was created at 2008-11-16 20:06:33",
+    "body": "Attachment [sage-4312.patch](tarball://root/attachments/some-uuid/ticket4312/sage-4312.patch) by @williamstein created at 2008-11-16 20:06:33",
     "created_at": "2008-11-16T20:06:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4312#issuecomment-31573",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4312.patch](tarball://root/attachments/some-uuid/ticket4312/sage-4312.patch) by was created at 2008-11-16 20:06:33
+Attachment [sage-4312.patch](tarball://root/attachments/some-uuid/ticket4312/sage-4312.patch) by @williamstein created at 2008-11-16 20:06:33
 
 
 
@@ -178,16 +178,16 @@ Attachment [sage-4312.patch](tarball://root/attachments/some-uuid/ticket4312/sag
 archive/issue_comments_031574.json:
 ```json
 {
-    "body": "Attachment [sage-4312-edited.patch](tarball://root/attachments/some-uuid/ticket4312/sage-4312-edited.patch) by craigcitro created at 2008-11-18 09:39:10",
+    "body": "Attachment [sage-4312-edited.patch](tarball://root/attachments/some-uuid/ticket4312/sage-4312-edited.patch) by @craigcitro created at 2008-11-18 09:39:10",
     "created_at": "2008-11-18T09:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4312#issuecomment-31574",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-4312-edited.patch](tarball://root/attachments/some-uuid/ticket4312/sage-4312-edited.patch) by craigcitro created at 2008-11-18 09:39:10
+Attachment [sage-4312-edited.patch](tarball://root/attachments/some-uuid/ticket4312/sage-4312-edited.patch) by @craigcitro created at 2008-11-18 09:39:10
 
 
 
@@ -201,7 +201,7 @@ archive/issue_comments_031575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4312#issuecomment-31575",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008930.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nKeywords: EnumeratedSet, deprecate\n\nIt is not use, redundant with `Set()` and confusing with `EnumeratedSets()`. Therefore it should be removed\n\nIssue created by migration from https://trac.sagemath.org/ticket/8930\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: EnumeratedSet, deprecate\n\nIt is not use, redundant with `Set()` and confusing with `EnumeratedSets()`. Therefore it should be removed\n\nIssue created by migration from https://trac.sagemath.org/ticket/8930\n\n",
     "created_at": "2010-05-08T05:34:09Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008930.json:
     "title": "Deprecate EnumeratedSet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8930",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 Keywords: EnumeratedSet, deprecate
 
@@ -39,7 +39,7 @@ archive/issue_comments_082251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8930#issuecomment-82251",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_082252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8930#issuecomment-82252",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_082253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8930#issuecomment-82253",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_082254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8930#issuecomment-82254",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082255.json:
 ```json
 {
-    "body": "Attachment [trac_8930-enumerated_set_deprecate-fh.patch](tarball://root/attachments/some-uuid/ticket8930/trac_8930-enumerated_set_deprecate-fh.patch) by nthiery created at 2010-05-31 11:51:09\n\nSimple patch; does what it claims, and what it claims is good; pass tests; positive review!",
+    "body": "Attachment [trac_8930-enumerated_set_deprecate-fh.patch](tarball://root/attachments/some-uuid/ticket8930/trac_8930-enumerated_set_deprecate-fh.patch) by @nthiery created at 2010-05-31 11:51:09\n\nSimple patch; does what it claims, and what it claims is good; pass tests; positive review!",
     "created_at": "2010-05-31T11:51:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8930#issuecomment-82255",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8930-enumerated_set_deprecate-fh.patch](tarball://root/attachments/some-uuid/ticket8930/trac_8930-enumerated_set_deprecate-fh.patch) by nthiery created at 2010-05-31 11:51:09
+Attachment [trac_8930-enumerated_set_deprecate-fh.patch](tarball://root/attachments/some-uuid/ticket8930/trac_8930-enumerated_set_deprecate-fh.patch) by @nthiery created at 2010-05-31 11:51:09
 
 Simple patch; does what it claims, and what it claims is good; pass tests; positive review!
 
@@ -137,7 +137,7 @@ archive/issue_comments_082256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8930#issuecomment-82256",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

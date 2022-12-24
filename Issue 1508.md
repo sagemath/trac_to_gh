@@ -3,7 +3,7 @@
 archive/issues_001508.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nNotice, if you tab-complete plot( or list_plot( the docs do not\nmention the option for axes_label.  However, the option is available.\n\nAlso, if you use them, the text for the x-axis is truncated off the\nright edge of the plot.\n\nSimple example:\n\np = plot(sin, 0, 10)\np.show(axes_label=['x-axis','y-axis'])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1508\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nNotice, if you tab-complete plot( or list_plot( the docs do not\nmention the option for axes_label.  However, the option is available.\n\nAlso, if you use them, the text for the x-axis is truncated off the\nright edge of the plot.\n\nSimple example:\n\np = plot(sin, 0, 10)\np.show(axes_label=['x-axis','y-axis'])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1508\n\n",
     "created_at": "2007-12-14T18:04:33Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001508.json:
     "title": "axes_label in plot() broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1508",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -50,7 +50,7 @@ archive/issue_comments_009654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9654",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,16 +63,16 @@ Changing status from new to assigned.
 archive/issue_comments_009655.json:
 ```json
 {
-    "body": "Attachment [doc-trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/doc-trac-1508.patch) by was created at 2008-01-19 17:46:38\n\nfixes a mistake in const.tex",
+    "body": "Attachment [doc-trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/doc-trac-1508.patch) by @williamstein created at 2008-01-19 17:46:38\n\nfixes a mistake in const.tex",
     "created_at": "2008-01-19T17:46:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9655",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doc-trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/doc-trac-1508.patch) by was created at 2008-01-19 17:46:38
+Attachment [doc-trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/doc-trac-1508.patch) by @williamstein created at 2008-01-19 17:46:38
 
 fixes a mistake in const.tex
 
@@ -83,16 +83,16 @@ fixes a mistake in const.tex
 archive/issue_comments_009656.json:
 ```json
 {
-    "body": "Attachment [trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/trac-1508.patch) by was created at 2008-01-19 17:50:15",
+    "body": "Attachment [trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/trac-1508.patch) by @williamstein created at 2008-01-19 17:50:15",
     "created_at": "2008-01-19T17:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9656",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/trac-1508.patch) by was created at 2008-01-19 17:50:15
+Attachment [trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/trac-1508.patch) by @williamstein created at 2008-01-19 17:50:15
 
 
 
@@ -106,7 +106,7 @@ archive/issue_comments_009657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1508",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9657",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

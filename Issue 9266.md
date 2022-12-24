@@ -3,7 +3,7 @@
 archive/issues_009266.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nThe following illustrates the bug. It should be easy to fix.\n\n\n```\nsage: K.<s> = NumberField(x^2-5)\nsage: w = (1+s)/2\nsage: E = EllipticCurve(K,[2,w])\nsage: E.global_integral_model()\n...sage/schemes/elliptic_curves/ell_number_field.pyc in global_integral_model(self)\n    377                    ai = [ai[i]/pi**(e*[1,2,3,4,6][i]) for i in range(5)]\n    378         for z in ai:\n--> 379             assert z.denominator() == 1, \"bug in global_integral_model: %s\" % ai\n    380         return EllipticCurve(list(ai))\n    381\n\nTypeError: not all arguments converted during string formatting\n```\n\n\nSo there are two problems. One that the string is not correctly formatted, the other that it is raised. The latter, I believe, is just because the wrong thing is tested:\n\n\n```\nsage: w.denominator()\n2\nsage: w.is_integral()\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9266\n\n",
+    "body": "Assignee: @JohnCremona\n\nThe following illustrates the bug. It should be easy to fix.\n\n\n```\nsage: K.<s> = NumberField(x^2-5)\nsage: w = (1+s)/2\nsage: E = EllipticCurve(K,[2,w])\nsage: E.global_integral_model()\n...sage/schemes/elliptic_curves/ell_number_field.pyc in global_integral_model(self)\n    377                    ai = [ai[i]/pi**(e*[1,2,3,4,6][i]) for i in range(5)]\n    378         for z in ai:\n--> 379             assert z.denominator() == 1, \"bug in global_integral_model: %s\" % ai\n    380         return EllipticCurve(list(ai))\n    381\n\nTypeError: not all arguments converted during string formatting\n```\n\n\nSo there are two problems. One that the string is not correctly formatted, the other that it is raised. The latter, I believe, is just because the wrong thing is tested:\n\n\n```\nsage: w.denominator()\n2\nsage: w.is_integral()\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9266\n\n",
     "created_at": "2010-06-18T13:08:05Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_009266.json:
     "title": "bug in global_integral_model for Elliptic Curves over Number Fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9266",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 The following illustrates the bug. It should be easy to fix.
 
@@ -66,7 +66,7 @@ archive/issue_comments_087274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9266#issuecomment-87274",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_087275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9266#issuecomment-87275",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_087276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9266#issuecomment-87276",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_087277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9266#issuecomment-87277",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_087278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9266#issuecomment-87278",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -174,16 +174,16 @@ Milestone sage-4.4.5 deleted
 archive/issue_comments_087279.json:
 ```json
 {
-    "body": "Attachment [trac_9266.patch](tarball://root/attachments/some-uuid/ticket9266/trac_9266.patch) by wuthrich created at 2010-06-22 23:19:26\n\nexported against 4.4.4.alpha0",
+    "body": "Attachment [trac_9266.patch](tarball://root/attachments/some-uuid/ticket9266/trac_9266.patch) by @categorie created at 2010-06-22 23:19:26\n\nexported against 4.4.4.alpha0",
     "created_at": "2010-06-22T23:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9266#issuecomment-87279",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_9266.patch](tarball://root/attachments/some-uuid/ticket9266/trac_9266.patch) by wuthrich created at 2010-06-22 23:19:26
+Attachment [trac_9266.patch](tarball://root/attachments/some-uuid/ticket9266/trac_9266.patch) by @categorie created at 2010-06-22 23:19:26
 
 exported against 4.4.4.alpha0
 
@@ -199,7 +199,7 @@ archive/issue_comments_087280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9266#issuecomment-87280",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_087281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9266#issuecomment-87281",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_087282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9266#issuecomment-87282",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_087283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9266#issuecomment-87283",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

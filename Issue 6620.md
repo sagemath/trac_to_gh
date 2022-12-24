@@ -3,7 +3,7 @@
 archive/issues_006620.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  nborie wdj\n\nAccessing elements of GAP records should be easier.\n\n```\n            sage: rec = gap('rec( a := 1, b := \"2\" )')\n            sage: gap.get_record_element(rec, 'a')\n            1\n            sage: gap.get_record_element(rec, 'b')\n            2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6620\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  nborie @wdjoyner\n\nAccessing elements of GAP records should be easier.\n\n```\n            sage: rec = gap('rec( a := 1, b := \"2\" )')\n            sage: gap.get_record_element(rec, 'a')\n            1\n            sage: gap.get_record_element(rec, 'b')\n            2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6620\n\n",
     "created_at": "2009-07-25T17:11:16Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_006620.json:
     "title": "add a method to the Gap class to access elements of records",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6620",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  nborie wdj
+CC:  nborie @wdjoyner
 
 Accessing elements of GAP records should be easier.
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6620
 archive/issue_comments_054248.json:
 ```json
 {
-    "body": "Attachment [trac_6620.patch](tarball://root/attachments/some-uuid/ticket6620/trac_6620.patch) by saliola created at 2009-07-25 17:18:41",
+    "body": "Attachment [trac_6620.patch](tarball://root/attachments/some-uuid/ticket6620/trac_6620.patch) by @saliola created at 2009-07-25 17:18:41",
     "created_at": "2009-07-25T17:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6620#issuecomment-54248",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_6620.patch](tarball://root/attachments/some-uuid/ticket6620/trac_6620.patch) by saliola created at 2009-07-25 17:18:41
+Attachment [trac_6620.patch](tarball://root/attachments/some-uuid/ticket6620/trac_6620.patch) by @saliola created at 2009-07-25 17:18:41
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_054249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6620#issuecomment-54249",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

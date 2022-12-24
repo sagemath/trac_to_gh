@@ -3,7 +3,7 @@
 archive/issues_002881.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis makes things dreadfully slow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2881\n\n",
+    "body": "Assignee: @williamstein\n\nThis makes things dreadfully slow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2881\n\n",
     "created_at": "2008-04-11T22:40:23Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002881.json:
     "title": "numerical_integral doesn't use fast_float",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2881",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This makes things dreadfully slow.
 
@@ -37,7 +37,7 @@ archive/issue_comments_019821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2881#issuecomment-19821",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_019822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2881#issuecomment-19822",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_019823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2881#issuecomment-19823",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 

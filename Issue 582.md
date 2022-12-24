@@ -14,7 +14,7 @@ archive/issues_000582.json:
     "title": "bug in cubegroup? (syntax in RubiksCube)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/582",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: wdj or Robert Bradshaw
@@ -73,7 +73,7 @@ archive/issue_comments_003010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/582#issuecomment-3010",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_003011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/582#issuecomment-3011",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008756.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  jason boothby mvngu ncohen leif\n\n\n```\nwstein@ubuntu32:/tmp/wstein/farm/sage-4.4.rc0$ grep \"long\" \"devel/sage/sage/graphs/planarity.pyx\"\n        sage: import networkx.generators.atlas  # long time\n        sage: atlas_graphs = [Graph(i) for i in networkx.generators.atlas.graph_atlas_g()] # long time\n        sage: a = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n        sage: b = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n        sage: a == b # long time\nwstein@ubuntu32:/tmp/wstein/farm/sage-4.4.rc0$ grep \"long\" \"devel/sage/sage/graphs/planarity.pyx\" | ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n| Sage Version 4.4.rc0, Release Date: 2010-04-23                     |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8756\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @jasongrout boothby mvngu @nathanncohen @nexttime\n\n\n```\nwstein@ubuntu32:/tmp/wstein/farm/sage-4.4.rc0$ grep \"long\" \"devel/sage/sage/graphs/planarity.pyx\"\n        sage: import networkx.generators.atlas  # long time\n        sage: atlas_graphs = [Graph(i) for i in networkx.generators.atlas.graph_atlas_g()] # long time\n        sage: a = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n        sage: b = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n        sage: a == b # long time\nwstein@ubuntu32:/tmp/wstein/farm/sage-4.4.rc0$ grep \"long\" \"devel/sage/sage/graphs/planarity.pyx\" | ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n| Sage Version 4.4.rc0, Release Date: 2010-04-23                     |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8756\n\n",
     "created_at": "2010-04-24T21:59:18Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_008756.json:
     "title": "random segfault in planarity.pyx test",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8756",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  jason boothby mvngu ncohen leif
+CC:  @jasongrout boothby mvngu @nathanncohen @nexttime
 
 
 ```
@@ -67,7 +67,7 @@ archive/issue_comments_080096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80096",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_080097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80097",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_080098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80098",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_080099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80099",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_080100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80100",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_080101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80101",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_080102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80102",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_080103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80103",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_080104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80104",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_080105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80105",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_080106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80106",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_080107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80107",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -342,16 +342,16 @@ The third patch above makes the necessary changes in Sage regarding NONPLANAR vs
 archive/issue_comments_080108.json:
 ```json
 {
-    "body": "Attachment [trac-8756-planarity-v2.patch](tarball://root/attachments/some-uuid/ticket8756/trac-8756-planarity-v2.patch) by jason created at 2010-05-16 03:32:01\n\napply on top of previous patches",
+    "body": "Attachment [trac-8756-planarity-v2.patch](tarball://root/attachments/some-uuid/ticket8756/trac-8756-planarity-v2.patch) by @jasongrout created at 2010-05-16 03:32:01\n\napply on top of previous patches",
     "created_at": "2010-05-16T03:32:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80108",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8756-planarity-v2.patch](tarball://root/attachments/some-uuid/ticket8756/trac-8756-planarity-v2.patch) by jason created at 2010-05-16 03:32:01
+Attachment [trac-8756-planarity-v2.patch](tarball://root/attachments/some-uuid/ticket8756/trac-8756-planarity-v2.patch) by @jasongrout created at 2010-05-16 03:32:01
 
 apply on top of previous patches
 
@@ -367,7 +367,7 @@ archive/issue_comments_080109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80109",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -380,16 +380,16 @@ apply on top of previous patches
 archive/issue_comments_080110.json:
 ```json
 {
-    "body": "Attachment [trac-8756-planarity-sage-changes.patch](tarball://root/attachments/some-uuid/ticket8756/trac-8756-planarity-sage-changes.patch) by jason created at 2010-05-16 03:38:12\n\nI've attached patches which have the necessary commit messages.  I also removed the Eclipse and example data files from the code.  The new second patch now also has the updated BSD license in the graphK4* files.\n\nThere is a problem compiling these patches on OSX (the C code has #include <malloc.h>, which is apparently a problem on OSX).",
+    "body": "Attachment [trac-8756-planarity-sage-changes.patch](tarball://root/attachments/some-uuid/ticket8756/trac-8756-planarity-sage-changes.patch) by @jasongrout created at 2010-05-16 03:38:12\n\nI've attached patches which have the necessary commit messages.  I also removed the Eclipse and example data files from the code.  The new second patch now also has the updated BSD license in the graphK4* files.\n\nThere is a problem compiling these patches on OSX (the C code has #include <malloc.h>, which is apparently a problem on OSX).",
     "created_at": "2010-05-16T03:38:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80110",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8756-planarity-sage-changes.patch](tarball://root/attachments/some-uuid/ticket8756/trac-8756-planarity-sage-changes.patch) by jason created at 2010-05-16 03:38:12
+Attachment [trac-8756-planarity-sage-changes.patch](tarball://root/attachments/some-uuid/ticket8756/trac-8756-planarity-sage-changes.patch) by @jasongrout created at 2010-05-16 03:38:12
 
 I've attached patches which have the necessary commit messages.  I also removed the Eclipse and example data files from the code.  The new second patch now also has the updated BSD license in the graphK4* files.
 
@@ -407,7 +407,7 @@ archive/issue_comments_080111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80111",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_080112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80112",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -460,7 +460,7 @@ archive/issue_comments_080113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80113",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -475,16 +475,16 @@ P.S.: Shouldn't we report/fix this upstream?
 archive/issue_comments_080114.json:
 ```json
 {
-    "body": "Attachment [trac_8756-replaces_malloc_h_by_stdlib_h.patch](tarball://root/attachments/some-uuid/ticket8756/trac_8756-replaces_malloc_h_by_stdlib_h.patch) by leif created at 2010-05-16 06:19:16\n\nRemoves <malloc.h> inclusion by <stdlib.h>. (2nd version)",
+    "body": "Attachment [trac_8756-replaces_malloc_h_by_stdlib_h.patch](tarball://root/attachments/some-uuid/ticket8756/trac_8756-replaces_malloc_h_by_stdlib_h.patch) by @nexttime created at 2010-05-16 06:19:16\n\nRemoves <malloc.h> inclusion by <stdlib.h>. (2nd version)",
     "created_at": "2010-05-16T06:19:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80114",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_8756-replaces_malloc_h_by_stdlib_h.patch](tarball://root/attachments/some-uuid/ticket8756/trac_8756-replaces_malloc_h_by_stdlib_h.patch) by leif created at 2010-05-16 06:19:16
+Attachment [trac_8756-replaces_malloc_h_by_stdlib_h.patch](tarball://root/attachments/some-uuid/ticket8756/trac_8756-replaces_malloc_h_by_stdlib_h.patch) by @nexttime created at 2010-05-16 06:19:16
 
 Removes <malloc.h> inclusion by <stdlib.h>. (2nd version)
 
@@ -500,7 +500,7 @@ archive/issue_comments_080115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80115",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -518,7 +518,7 @@ archive/issue_comments_080116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80116",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -536,7 +536,7 @@ archive/issue_comments_080117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80117",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -554,7 +554,7 @@ archive/issue_comments_080118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80118",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -572,7 +572,7 @@ archive/issue_comments_080119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80119",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -590,7 +590,7 @@ archive/issue_comments_080120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80120",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -612,7 +612,7 @@ archive/issue_comments_080121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80121",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_080122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80122",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_080123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8756#issuecomment-80123",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

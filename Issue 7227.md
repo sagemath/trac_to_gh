@@ -3,7 +3,7 @@
 archive/issues_007227.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  vdelecroix\n\nKeywords: factor complexity\n\nImproving the word complexity functions by\n- caching palindromic_lacunas_study\n- caching suffix_tree\n- caching suffix_trie\n- allowing factor_set to take an integer as input\n- adding rauzy_graph function for finite word\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7227\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  @videlec\n\nKeywords: factor complexity\n\nImproving the word complexity functions by\n- caching palindromic_lacunas_study\n- caching suffix_tree\n- caching suffix_trie\n- allowing factor_set to take an integer as input\n- adding rauzy_graph function for finite word\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7227\n\n",
     "created_at": "2009-10-15T14:28:38Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_007227.json:
     "title": "Improving factor complexity of words functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7227",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
-CC:  vdelecroix
+CC:  @videlec
 
 Keywords: factor complexity
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7227
 archive/issue_comments_059940.json:
 ```json
 {
-    "body": "Attachment [trac_7227_word_factor_complexity-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_word_factor_complexity-sl.patch) by slabbe created at 2009-10-15 14:33:06",
+    "body": "Attachment [trac_7227_word_factor_complexity-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_word_factor_complexity-sl.patch) by @seblabbe created at 2009-10-15 14:33:06",
     "created_at": "2009-10-15T14:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59940",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7227_word_factor_complexity-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_word_factor_complexity-sl.patch) by slabbe created at 2009-10-15 14:33:06
+Attachment [trac_7227_word_factor_complexity-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_word_factor_complexity-sl.patch) by @seblabbe created at 2009-10-15 14:33:06
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_059941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59941",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_059942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59942",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -142,16 +142,16 @@ Changing status from new to needs_review.
 archive/issue_comments_059943.json:
 ```json
 {
-    "body": "Attachment [trac_7227_edge_labels-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_edge_labels-sl.patch) by slabbe created at 2009-10-20 11:29:10",
+    "body": "Attachment [trac_7227_edge_labels-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_edge_labels-sl.patch) by @seblabbe created at 2009-10-20 11:29:10",
     "created_at": "2009-10-20T11:29:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59943",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7227_edge_labels-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_edge_labels-sl.patch) by slabbe created at 2009-10-20 11:29:10
+Attachment [trac_7227_edge_labels-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_edge_labels-sl.patch) by @seblabbe created at 2009-10-20 11:29:10
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_059944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59944",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_059945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59945",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_059946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59946",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_059947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59947",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -253,16 +253,16 @@ sage: timeit('d = {}\nfor i in range(200):\n  d[i]=[]\n  for j in range(200):\n 
 archive/issue_comments_059948.json:
 ```json
 {
-    "body": "Attachment [trac_7227_add_edge-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_add_edge-sl.patch) by slabbe created at 2009-10-29 14:40:42\n\nApplies over the precedent 2 patches.",
+    "body": "Attachment [trac_7227_add_edge-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_add_edge-sl.patch) by @seblabbe created at 2009-10-29 14:40:42\n\nApplies over the precedent 2 patches.",
     "created_at": "2009-10-29T14:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59948",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7227_add_edge-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_add_edge-sl.patch) by slabbe created at 2009-10-29 14:40:42
+Attachment [trac_7227_add_edge-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_add_edge-sl.patch) by @seblabbe created at 2009-10-29 14:40:42
 
 Applies over the precedent 2 patches.
 
@@ -278,7 +278,7 @@ archive/issue_comments_059949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59949",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_059950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59950",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_059951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59951",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_059952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59952",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_059953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59953",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

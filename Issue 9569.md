@@ -3,7 +3,7 @@
 archive/issues_009569.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  bedwards rlm\n\nNetworkX is being updated to 1.1 on #9567\n\nSeveral new methods are available, and other should be updated.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9569\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  bedwards @rlmill\n\nNetworkX is being updated to 1.1 on #9567\n\nSeveral new methods are available, and other should be updated.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9569\n\n",
     "created_at": "2010-07-22T01:27:02Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009569.json:
     "title": "Expose/Update methods using NetworkX1-1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9569",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  bedwards rlm
+CC:  bedwards @rlmill
 
 NetworkX is being updated to 1.1 on #9567
 
@@ -43,7 +43,7 @@ archive/issue_comments_092416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9569#issuecomment-92416",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_092417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9569#issuecomment-92417",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

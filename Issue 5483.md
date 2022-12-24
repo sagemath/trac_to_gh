@@ -3,7 +3,7 @@
 archive/issues_005483.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  was\n\nexplain_pickle is an unpickler (intended to be totally compatible with the cPickle unpickler) that produces Sage source code, which can then be evaluated by sage_eval.  This is useful to see exactly how the unpickle process works.  For example:\n\n\n```\nsage: explain_pickle(dumps(3))\n\npg_make_integer = unpickle_global('sage.rings.integer', 'make_integer')\npg_make_integer('3')\nsage: explain_pickle(dumps(3), in_current_sage=True)\n\nfrom sage.rings.integer import make_integer\nmake_integer('3')\n```\n\n\nI think the code works, but I'm not done writing documentation and doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5483\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @williamstein\n\nexplain_pickle is an unpickler (intended to be totally compatible with the cPickle unpickler) that produces Sage source code, which can then be evaluated by sage_eval.  This is useful to see exactly how the unpickle process works.  For example:\n\n\n```\nsage: explain_pickle(dumps(3))\n\npg_make_integer = unpickle_global('sage.rings.integer', 'make_integer')\npg_make_integer('3')\nsage: explain_pickle(dumps(3), in_current_sage=True)\n\nfrom sage.rings.integer import make_integer\nmake_integer('3')\n```\n\n\nI think the code works, but I'm not done writing documentation and doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5483\n\n",
     "created_at": "2009-03-11T07:12:13Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_005483.json:
 ```
 Assignee: cwitty
 
-CC:  was
+CC:  @williamstein
 
 explain_pickle is an unpickler (intended to be totally compatible with the cPickle unpickler) that produces Sage source code, which can then be evaluated by sage_eval.  This is useful to see exactly how the unpickle process works.  For example:
 
@@ -54,7 +54,7 @@ archive/issue_comments_042545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5483#issuecomment-42545",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_042549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5483#issuecomment-42549",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_042550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5483#issuecomment-42550",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -182,16 +182,16 @@ William: what do you think?
 archive/issue_comments_042551.json:
 ```json
 {
-    "body": "Attachment [trac5483-explain-pickle-v2-review.patch](tarball://root/attachments/some-uuid/ticket5483/trac5483-explain-pickle-v2-review.patch) by nthiery created at 2009-05-22 22:53:36\n\nOral comment by William: no reason not to integrate this. Positive Review.",
+    "body": "Attachment [trac5483-explain-pickle-v2-review.patch](tarball://root/attachments/some-uuid/ticket5483/trac5483-explain-pickle-v2-review.patch) by @nthiery created at 2009-05-22 22:53:36\n\nOral comment by William: no reason not to integrate this. Positive Review.",
     "created_at": "2009-05-22T22:53:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5483#issuecomment-42551",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac5483-explain-pickle-v2-review.patch](tarball://root/attachments/some-uuid/ticket5483/trac5483-explain-pickle-v2-review.patch) by nthiery created at 2009-05-22 22:53:36
+Attachment [trac5483-explain-pickle-v2-review.patch](tarball://root/attachments/some-uuid/ticket5483/trac5483-explain-pickle-v2-review.patch) by @nthiery created at 2009-05-22 22:53:36
 
 Oral comment by William: no reason not to integrate this. Positive Review.
 
@@ -207,7 +207,7 @@ archive/issue_comments_042552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5483#issuecomment-42552",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_042554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5483#issuecomment-42554",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_042555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5483#issuecomment-42555",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

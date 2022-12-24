@@ -14,7 +14,7 @@ archive/issues_002901.json:
     "title": "rewrite load_session and save_session to use much better modern techniques (in particular merge the notebook and non-notebook implementations)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2901",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2901
 archive/issue_comments_019993.json:
 ```json
 {
-    "body": "Attachment [sage-2901.patch](tarball://root/attachments/some-uuid/ticket2901/sage-2901.patch) by was created at 2008-04-13 04:00:56",
+    "body": "Attachment [sage-2901.patch](tarball://root/attachments/some-uuid/ticket2901/sage-2901.patch) by @williamstein created at 2008-04-13 04:00:56",
     "created_at": "2008-04-13T04:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2901#issuecomment-19993",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2901.patch](tarball://root/attachments/some-uuid/ticket2901/sage-2901.patch) by was created at 2008-04-13 04:00:56
+Attachment [sage-2901.patch](tarball://root/attachments/some-uuid/ticket2901/sage-2901.patch) by @williamstein created at 2008-04-13 04:00:56
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_019994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2901#issuecomment-19994",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_019995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2901#issuecomment-19995",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002493.json:
 ```json
 {
-    "body": "Assignee: was\n\nUpdated to vtk-5.0.4\n\nNow compiles with GL2EPS enabled. So it is possible to save pictures as eps, ps and pdf files.\n\nDepency cmake updated to cmake-2.4.8\n\nFiles see:\n\n```\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.0/cmake-2.4.8.spkg\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.0/vtk-5.0.4.spkg\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2493\n\n",
+    "body": "Assignee: @williamstein\n\nUpdated to vtk-5.0.4\n\nNow compiles with GL2EPS enabled. So it is possible to save pictures as eps, ps and pdf files.\n\nDepency cmake updated to cmake-2.4.8\n\nFiles see:\n\n```\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.0/cmake-2.4.8.spkg\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.0/vtk-5.0.4.spkg\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2493\n\n",
     "created_at": "2008-03-12T14:44:00Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002493.json:
     "title": "Updated experimental vtk spkg (vtk-5.0.4.spkg)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2493",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Updated to vtk-5.0.4
 
@@ -50,7 +50,7 @@ archive/issue_comments_016890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2493#issuecomment-16890",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_016891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2493#issuecomment-16891",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_016896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2493#issuecomment-16896",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

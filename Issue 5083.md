@@ -3,7 +3,7 @@
 archive/issues_005083.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  abergeron was mhansen\n\nReferring to #4884 and the last set of comments there - loose ends for colormap info:\n\n1. So should there be cmap_help or not?  abergeron's last statement  in #4884 implies yes.  If so...\n\n2. For every function (e.g. matrix_plot) where cmap is an option, that function's docstring should have as a doctest a full call of cmap_help (or whatever with its output.  Also in the cmap_help doctest should have the whole output of cmap_help show up, not have ... where the actual colormaps are outputted.\n\nIf neither of these things are true, please close this ticket.  It seemed like both were true, though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5083\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  abergeron @williamstein @mwhansen\n\nReferring to #4884 and the last set of comments there - loose ends for colormap info:\n\n1. So should there be cmap_help or not?  abergeron's last statement  in #4884 implies yes.  If so...\n\n2. For every function (e.g. matrix_plot) where cmap is an option, that function's docstring should have as a doctest a full call of cmap_help (or whatever with its output.  Also in the cmap_help doctest should have the whole output of cmap_help show up, not have ... where the actual colormaps are outputted.\n\nIf neither of these things are true, please close this ticket.  It seemed like both were true, though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5083\n\n",
     "created_at": "2009-01-24T02:44:59Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_005083.json:
     "title": "Colormap updating?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5083",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  abergeron was mhansen
+CC:  abergeron @williamstein @mwhansen
 
 Referring to #4884 and the last set of comments there - loose ends for colormap info:
 
@@ -63,7 +63,7 @@ archive/issue_comments_038737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5083#issuecomment-38737",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_038739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5083#issuecomment-38739",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_038740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5083#issuecomment-38740",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_038741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5083#issuecomment-38741",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_038742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5083#issuecomment-38742",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_038743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5083#issuecomment-38743",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_038744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5083#issuecomment-38744",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_038745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5083#issuecomment-38745",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002867.json:
 ```json
 {
-    "body": "Assignee: yi\n\nThis patch allows you to do dsage('f = Foo()', load_files = ['foo.py']) which loads foo.py before executing the job. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2867\n\n",
+    "body": "Assignee: @yqiang\n\nThis patch allows you to do dsage('f = Foo()', load_files = ['foo.py']) which loads foo.py before executing the job. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2867\n\n",
     "created_at": "2008-04-09T23:09:00Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002867.json:
     "title": "[witch patch, needs review] allow load_files parameter in __call__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2867",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 This patch allows you to do dsage('f = Foo()', load_files = ['foo.py']) which loads foo.py before executing the job. 
 
@@ -92,16 +92,16 @@ Merged in Sage 3.0.alpha4
 archive/issue_comments_019678.json:
 ```json
 {
-    "body": "Attachment [load_files.2.patch](tarball://root/attachments/some-uuid/ticket2867/load_files.2.patch) by yi created at 2008-04-10 03:41:12",
+    "body": "Attachment [load_files.2.patch](tarball://root/attachments/some-uuid/ticket2867/load_files.2.patch) by @yqiang created at 2008-04-10 03:41:12",
     "created_at": "2008-04-10T03:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2867#issuecomment-19678",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [load_files.2.patch](tarball://root/attachments/some-uuid/ticket2867/load_files.2.patch) by yi created at 2008-04-10 03:41:12
+Attachment [load_files.2.patch](tarball://root/attachments/some-uuid/ticket2867/load_files.2.patch) by @yqiang created at 2008-04-10 03:41:12
 
 
 

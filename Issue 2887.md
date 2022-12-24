@@ -14,7 +14,7 @@ archive/issues_002887.json:
     "title": "notebook -- greatly optimize by implementing a cached version of get_element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2887",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -50,7 +50,7 @@ archive/issue_comments_019854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2887#issuecomment-19854",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

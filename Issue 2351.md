@@ -3,7 +3,7 @@
 archive/issues_002351.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe certificate expired earlier in February 2008.\n\nIt seems that the certificate was only good for a month.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2351\n\n",
+    "body": "Assignee: @williamstein\n\nThe certificate expired earlier in February 2008.\n\nIt seems that the certificate was only good for a month.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2351\n\n",
     "created_at": "2008-02-29T02:45:25Z",
     "labels": [
         "website/wiki",
@@ -14,10 +14,10 @@ archive/issues_002351.json:
     "title": "sagenb.org SSL certificate is expired",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2351",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The certificate expired earlier in February 2008.
 
@@ -39,7 +39,7 @@ archive/issue_comments_015793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2351#issuecomment-15793",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_015794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2351#issuecomment-15794",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_015797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2351#issuecomment-15797",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_015798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2351#issuecomment-15798",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_015800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2351#issuecomment-15800",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -324,7 +324,7 @@ Michael
 archive/issue_comments_015804.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-06-10T00:35:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2351",
     "type": "issue_comment",
@@ -333,7 +333,7 @@ archive/issue_comments_015804.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -347,7 +347,7 @@ archive/issue_comments_015805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2351#issuecomment-15805",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

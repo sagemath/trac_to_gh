@@ -3,7 +3,7 @@
 archive/issues_001619.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1619\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1619\n\n",
     "created_at": "2007-12-29T04:34:07Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001619.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -50,7 +50,7 @@ Changing status from new to assigned.
 archive/issue_comments_010306.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-12-29T04:37:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1619",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_010306.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 

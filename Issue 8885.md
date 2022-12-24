@@ -3,7 +3,7 @@
 archive/issues_008885.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nKeywords: Depreacation alias documentation\n\nCurrently if a function is a deprecated alias, the doc of the aliased function appears un the reference manual. Nothing shows that the function is deprecated. See for example the doc of\n`sage.combinat.partition.associated`\n\nIssue created by migration from https://trac.sagemath.org/ticket/8885\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: Depreacation alias documentation\n\nCurrently if a function is a deprecated alias, the doc of the aliased function appears un the reference manual. Nothing shows that the function is deprecated. See for example the doc of\n`sage.combinat.partition.associated`\n\nIssue created by migration from https://trac.sagemath.org/ticket/8885\n\n",
     "created_at": "2010-05-05T11:06:53Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_008885.json:
     "title": "deprecated_functions_alias and sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8885",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 Keywords: Depreacation alias documentation
 
@@ -40,7 +40,7 @@ archive/issue_comments_081662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81662",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_081663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81663",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_081666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81666",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_081671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81671",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_081672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81672",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_081673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81673",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -286,16 +286,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_081674.json:
 ```json
 {
-    "body": "Attachment [trac_8885-deprecated_alias_doc-fh.patch](tarball://root/attachments/some-uuid/ticket8885/trac_8885-deprecated_alias_doc-fh.patch) by hivert created at 2011-06-28 15:06:12",
+    "body": "Attachment [trac_8885-deprecated_alias_doc-fh.patch](tarball://root/attachments/some-uuid/ticket8885/trac_8885-deprecated_alias_doc-fh.patch) by @hivert created at 2011-06-28 15:06:12",
     "created_at": "2011-06-28T15:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81674",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8885-deprecated_alias_doc-fh.patch](tarball://root/attachments/some-uuid/ticket8885/trac_8885-deprecated_alias_doc-fh.patch) by hivert created at 2011-06-28 15:06:12
+Attachment [trac_8885-deprecated_alias_doc-fh.patch](tarball://root/attachments/some-uuid/ticket8885/trac_8885-deprecated_alias_doc-fh.patch) by @hivert created at 2011-06-28 15:06:12
 
 
 
@@ -309,7 +309,7 @@ archive/issue_comments_081675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81675",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_081676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81676",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_081677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81677",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_081678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81678",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_081679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81679",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_081680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81680",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

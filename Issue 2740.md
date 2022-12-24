@@ -14,7 +14,7 @@ archive/issues_002740.json:
     "title": "Downloading and uploading folders of worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2740",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_018838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2740#issuecomment-18838",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -50,16 +50,16 @@ we already have the checkboxes, so maybe just another menu option that would tak
 archive/issue_comments_018839.json:
 ```json
 {
-    "body": "Attachment [2740-download-all.patch](tarball://root/attachments/some-uuid/ticket2740/2740-download-all.patch) by robertwb created at 2009-04-14 12:47:59\n\nThis should be fixed to be non-blocking, possibly even with feedback (as it might be slow).",
+    "body": "Attachment [2740-download-all.patch](tarball://root/attachments/some-uuid/ticket2740/2740-download-all.patch) by @robertwb created at 2009-04-14 12:47:59\n\nThis should be fixed to be non-blocking, possibly even with feedback (as it might be slow).",
     "created_at": "2009-04-14T12:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2740#issuecomment-18839",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2740-download-all.patch](tarball://root/attachments/some-uuid/ticket2740/2740-download-all.patch) by robertwb created at 2009-04-14 12:47:59
+Attachment [2740-download-all.patch](tarball://root/attachments/some-uuid/ticket2740/2740-download-all.patch) by @robertwb created at 2009-04-14 12:47:59
 
 This should be fixed to be non-blocking, possibly even with feedback (as it might be slow).
 
@@ -70,16 +70,16 @@ This should be fixed to be non-blocking, possibly even with feedback (as it migh
 archive/issue_comments_018840.json:
 ```json
 {
-    "body": "Attachment [2740-download-checked.patch](tarball://root/attachments/some-uuid/ticket2740/2740-download-checked.patch) by robertwb created at 2009-04-14 13:35:44\n\nallows downloading of checked worksheets only",
+    "body": "Attachment [2740-download-checked.patch](tarball://root/attachments/some-uuid/ticket2740/2740-download-checked.patch) by @robertwb created at 2009-04-14 13:35:44\n\nallows downloading of checked worksheets only",
     "created_at": "2009-04-14T13:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2740#issuecomment-18840",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2740-download-checked.patch](tarball://root/attachments/some-uuid/ticket2740/2740-download-checked.patch) by robertwb created at 2009-04-14 13:35:44
+Attachment [2740-download-checked.patch](tarball://root/attachments/some-uuid/ticket2740/2740-download-checked.patch) by @robertwb created at 2009-04-14 13:35:44
 
 allows downloading of checked worksheets only
 
@@ -95,7 +95,7 @@ archive/issue_comments_018841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2740#issuecomment-18841",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_018842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2740#issuecomment-18842",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

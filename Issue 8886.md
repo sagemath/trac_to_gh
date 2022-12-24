@@ -3,7 +3,7 @@
 archive/issues_008886.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  leif nthiery\n\nAs the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8275334246de4531) thread for some background information. This should be coordinated with #8470.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8886\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @nexttime @nthiery\n\nAs the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8275334246de4531) thread for some background information. This should be coordinated with #8470.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8886\n\n",
     "created_at": "2010-05-05T11:12:50Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008886.json:
 ```
 Assignee: mvngu
 
-CC:  leif nthiery
+CC:  @nexttime @nthiery
 
 As the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8275334246de4531) thread for some background information. This should be coordinated with #8470.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8886
 archive/issue_comments_081681.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to hivert.",
+    "body": "Changing assignee from mvngu to @hivert.",
     "created_at": "2010-05-05T11:38:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81681",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from mvngu to hivert.
+Changing assignee from mvngu to @hivert.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_081682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81682",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_081687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81687",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_081688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81688",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -184,16 +184,16 @@ Changing status from new to needs_review.
 archive/issue_comments_081689.json:
 ```json
 {
-    "body": "Attachment [trac_8886-objects-classes_tutorial-fh.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh.patch) by hivert created at 2011-06-28 12:51:38",
+    "body": "Attachment [trac_8886-objects-classes_tutorial-fh.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh.patch) by @hivert created at 2011-06-28 12:51:38",
     "created_at": "2011-06-28T12:51:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81689",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8886-objects-classes_tutorial-fh.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh.patch) by hivert created at 2011-06-28 12:51:38
+Attachment [trac_8886-objects-classes_tutorial-fh.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh.patch) by @hivert created at 2011-06-28 12:51:38
 
 
 
@@ -207,7 +207,7 @@ archive/issue_comments_081690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81690",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -222,16 +222,16 @@ I've fixed some typos and grammatical errors.  See the "delta" patch for the dif
 archive/issue_comments_081691.json:
 ```json
 {
-    "body": "Attachment [trac_8886-delta.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-delta.patch) by jhpalmieri created at 2011-07-26 23:28:28",
+    "body": "Attachment [trac_8886-delta.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-delta.patch) by @jhpalmieri created at 2011-07-26 23:28:28",
     "created_at": "2011-07-26T23:28:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81691",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8886-delta.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-delta.patch) by jhpalmieri created at 2011-07-26 23:28:28
+Attachment [trac_8886-delta.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-delta.patch) by @jhpalmieri created at 2011-07-26 23:28:28
 
 
 
@@ -245,7 +245,7 @@ archive/issue_comments_081692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81692",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -258,16 +258,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081693.json:
 ```json
 {
-    "body": "Attachment [trac_8886-objects-classes_tutorial-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-jhp.patch) by hivert created at 2011-07-28 08:24:19\n\nReplying to [comment:9 jhpalmieri]:\n> There is a mistake in thematic_tutorials/conf.py which prevents math like\n> `\\QQ` from being rendered properly.  This is fixed in #11632, so I've made\n> that a dependency for this ticket.  (Please review it!)\n\nI'll do it. \n\n\n> I've fixed some typos and grammatical errors.  See the \"delta\" patch for the\n> differences between my patch and the previous one.  I'm happy with what\n> you've done, so if you're happy with my changes, give the ticket a positive\n> review.\n\nThanks for correcting my bad English. I'm mostly happy with your change. The\nonly remark I have is the removal of the link\n`:ref:`tutorial-programming-python``. It is an up coming tutorial which is\nnot yet fully finished. I'm creating a new ticket (#11633) and reinstating the pointer\nthere.\n\nThanks for your careful review.\n\nFlorent",
+    "body": "Attachment [trac_8886-objects-classes_tutorial-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-jhp.patch) by @hivert created at 2011-07-28 08:24:19\n\nReplying to [comment:9 jhpalmieri]:\n> There is a mistake in thematic_tutorials/conf.py which prevents math like\n> `\\QQ` from being rendered properly.  This is fixed in #11632, so I've made\n> that a dependency for this ticket.  (Please review it!)\n\nI'll do it. \n\n\n> I've fixed some typos and grammatical errors.  See the \"delta\" patch for the\n> differences between my patch and the previous one.  I'm happy with what\n> you've done, so if you're happy with my changes, give the ticket a positive\n> review.\n\nThanks for correcting my bad English. I'm mostly happy with your change. The\nonly remark I have is the removal of the link\n`:ref:`tutorial-programming-python``. It is an up coming tutorial which is\nnot yet fully finished. I'm creating a new ticket (#11633) and reinstating the pointer\nthere.\n\nThanks for your careful review.\n\nFlorent",
     "created_at": "2011-07-28T08:24:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81693",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8886-objects-classes_tutorial-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-jhp.patch) by hivert created at 2011-07-28 08:24:19
+Attachment [trac_8886-objects-classes_tutorial-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-jhp.patch) by @hivert created at 2011-07-28 08:24:19
 
 Replying to [comment:9 jhpalmieri]:
 > There is a mistake in thematic_tutorials/conf.py which prevents math like
@@ -304,7 +304,7 @@ archive/issue_comments_081694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81694",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_081695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81695",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -342,16 +342,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_081696.json:
 ```json
 {
-    "body": "Attachment [trac_8886-objects-classes_tutorial-fh-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh-jhp.patch) by hivert created at 2011-08-31 09:40:51",
+    "body": "Attachment [trac_8886-objects-classes_tutorial-fh-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh-jhp.patch) by @hivert created at 2011-08-31 09:40:51",
     "created_at": "2011-08-31T09:40:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81696",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8886-objects-classes_tutorial-fh-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh-jhp.patch) by hivert created at 2011-08-31 09:40:51
+Attachment [trac_8886-objects-classes_tutorial-fh-jhp.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh-jhp.patch) by @hivert created at 2011-08-31 09:40:51
 
 
 
@@ -365,7 +365,7 @@ archive/issue_comments_081697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81697",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_081698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81698",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_081699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81699",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_081700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81700",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -465,16 +465,16 @@ I suggested that tiny change, so positive review on it :-)
 archive/issue_comments_081701.json:
 ```json
 {
-    "body": "Attachment [trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch) by jdemeyer created at 2011-10-06 11:54:40",
+    "body": "Attachment [trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch) by @jdemeyer created at 2011-10-06 11:54:40",
     "created_at": "2011-10-06T11:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81701",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch) by jdemeyer created at 2011-10-06 11:54:40
+Attachment [trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch](tarball://root/attachments/some-uuid/ticket8886/trac_8886-objects-classes_tutorial-fh-jhp-rebased.patch) by @jdemeyer created at 2011-10-06 11:54:40
 
 
 
@@ -488,7 +488,7 @@ archive/issue_comments_081702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8886#issuecomment-81702",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

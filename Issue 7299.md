@@ -3,7 +3,7 @@
 archive/issues_007299.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rlm rbeezer\n\nIn sage 4.1.2 and later, the show() function shows graphs so cropped that their vertices are partially missing.\n\nThis is a regression in 4.1.2 and later, Sage 4.1.1 is fine.\n\nAttaching the figures from\n\n```\nG=graphs.CycleGraph(3);G.show()\n```\n\nto show the issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7299\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rlmill @rbeezer\n\nIn sage 4.1.2 and later, the show() function shows graphs so cropped that their vertices are partially missing.\n\nThis is a regression in 4.1.2 and later, Sage 4.1.1 is fine.\n\nAttaching the figures from\n\n```\nG=graphs.CycleGraph(3);G.show()\n```\n\nto show the issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7299\n\n",
     "created_at": "2009-10-25T18:26:25Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_007299.json:
     "title": "show() regression: Picture cropped too much",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7299",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rlm rbeezer
+CC:  @rlmill @rbeezer
 
 In sage 4.1.2 and later, the show() function shows graphs so cropped that their vertices are partially missing.
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7299
 archive/issue_comments_060836.json:
 ```json
 {
-    "body": "Attachment [Triangle-sage_4.1.1.png](tarball://root/attachments/some-uuid/ticket7299/Triangle-sage_4.1.1.png) by AJonsson created at 2009-10-25 18:27:11\n\nTriangle graph in 4.1.1",
+    "body": "Attachment [Triangle-sage_4.1.1.png](tarball://root/attachments/some-uuid/ticket7299/Triangle-sage_4.1.1.png) by @haaninjo created at 2009-10-25 18:27:11\n\nTriangle graph in 4.1.1",
     "created_at": "2009-10-25T18:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7299#issuecomment-60836",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
 
-Attachment [Triangle-sage_4.1.1.png](tarball://root/attachments/some-uuid/ticket7299/Triangle-sage_4.1.1.png) by AJonsson created at 2009-10-25 18:27:11
+Attachment [Triangle-sage_4.1.1.png](tarball://root/attachments/some-uuid/ticket7299/Triangle-sage_4.1.1.png) by @haaninjo created at 2009-10-25 18:27:11
 
 Triangle graph in 4.1.1
 
@@ -64,16 +64,16 @@ Triangle graph in 4.1.1
 archive/issue_comments_060837.json:
 ```json
 {
-    "body": "Attachment [Triangle-Sage_4.1.2.png](tarball://root/attachments/some-uuid/ticket7299/Triangle-Sage_4.1.2.png) by AJonsson created at 2009-10-25 18:27:32\n\nTriangle graph in 4.1.2",
+    "body": "Attachment [Triangle-Sage_4.1.2.png](tarball://root/attachments/some-uuid/ticket7299/Triangle-Sage_4.1.2.png) by @haaninjo created at 2009-10-25 18:27:32\n\nTriangle graph in 4.1.2",
     "created_at": "2009-10-25T18:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7299#issuecomment-60837",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
 
-Attachment [Triangle-Sage_4.1.2.png](tarball://root/attachments/some-uuid/ticket7299/Triangle-Sage_4.1.2.png) by AJonsson created at 2009-10-25 18:27:32
+Attachment [Triangle-Sage_4.1.2.png](tarball://root/attachments/some-uuid/ticket7299/Triangle-Sage_4.1.2.png) by @haaninjo created at 2009-10-25 18:27:32
 
 Triangle graph in 4.1.2
 
@@ -84,16 +84,16 @@ Triangle graph in 4.1.2
 archive/issue_comments_060838.json:
 ```json
 {
-    "body": "Attachment [trac-7299-graph-pad.patch](tarball://root/attachments/some-uuid/ticket7299/trac-7299-graph-pad.patch) by jason created at 2010-01-20 10:54:19",
+    "body": "Attachment [trac-7299-graph-pad.patch](tarball://root/attachments/some-uuid/ticket7299/trac-7299-graph-pad.patch) by @jasongrout created at 2010-01-20 10:54:19",
     "created_at": "2010-01-20T10:54:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7299#issuecomment-60838",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7299-graph-pad.patch](tarball://root/attachments/some-uuid/ticket7299/trac-7299-graph-pad.patch) by jason created at 2010-01-20 10:54:19
+Attachment [trac-7299-graph-pad.patch](tarball://root/attachments/some-uuid/ticket7299/trac-7299-graph-pad.patch) by @jasongrout created at 2010-01-20 10:54:19
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_060839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7299#issuecomment-60839",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_060840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7299#issuecomment-60840",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_060841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7299#issuecomment-60841",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_060842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7299#issuecomment-60842",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

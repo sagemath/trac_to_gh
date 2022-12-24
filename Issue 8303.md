@@ -3,7 +3,7 @@
 archive/issues_008303.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: spaces filenames\n\nScripts with spaces in their names defeat Sage:\n\n```\n$ sage \"my script.sage\" \n/opt/sage/local/bin/sage-sage: line 147: [: too many arguments\n/opt/sage/local/bin/sage-sage: line 150: [: too many arguments\n/opt/sage/local/bin/sage-sage: line 200: [: too many arguments\n[...]\n/opt/sage/local/bin/sage-sage: line 892: [: too many arguments\n/opt/sage/local/bin/sage-preparse: File my is missing\n/opt/sage/local/bin/sage-preparse: File script.sage is missing\npython: can't open file 'my': [Errno 2] No such file or directory\n```\n\nTicket #4354 claimed to fix this, but it's still broken on 4.3.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8303\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: spaces filenames\n\nScripts with spaces in their names defeat Sage:\n\n```\n$ sage \"my script.sage\" \n/opt/sage/local/bin/sage-sage: line 147: [: too many arguments\n/opt/sage/local/bin/sage-sage: line 150: [: too many arguments\n/opt/sage/local/bin/sage-sage: line 200: [: too many arguments\n[...]\n/opt/sage/local/bin/sage-sage: line 892: [: too many arguments\n/opt/sage/local/bin/sage-preparse: File my is missing\n/opt/sage/local/bin/sage-preparse: File script.sage is missing\npython: can't open file 'my': [Errno 2] No such file or directory\n```\n\nTicket #4354 claimed to fix this, but it's still broken on 4.3.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8303\n\n",
     "created_at": "2010-02-19T02:32:06Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_008303.json:
     "title": "Sage cannot work with files with spaces in their names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8303",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: spaces filenames
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8303
 archive/issue_comments_073568.json:
 ```json
 {
-    "body": "Changing assignee from was to ddrake.",
+    "body": "Changing assignee from @williamstein to @dandrake.",
     "created_at": "2010-02-19T04:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8303#issuecomment-73568",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from was to ddrake.
+Changing assignee from @williamstein to @dandrake.
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_073569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8303#issuecomment-73569",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_073570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8303#issuecomment-73570",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -114,16 +114,16 @@ apply to sage_scripts spkg
 archive/issue_comments_073571.json:
 ```json
 {
-    "body": "Attachment [trac_8303.patch](tarball://root/attachments/some-uuid/ticket8303/trac_8303.patch) by ddrake created at 2010-02-21 08:05:42\n\nPatch up. Apply to sage_scripts spkg, or equivalently, to the repo in SAGE_ROOT/local/bin.\n\nTo test, try making a file with spaces in its name, and passing arguments with spaces in them. If the file is \"script with spaces.sage\" and it contains:\n\n```\nimport sys\nprint integrate(x*cos(x)*sin(x), x)\nprint sys.argv\nsys.exit(int(5))\n```\n\nthen something like this should work properly:\n\n```\n$ sage \"script with spaces.sage\" \"foo bar\" arg2\n-1/4*x*cos(2*x) + 1/8*sin(2*x)\n['script with spaces.py', 'foo bar', 'arg2']\n$ echo $?\n5\n```\n\nI'd like to have the return code tested to make sure we don't get a regression on #2861.\n\nPlease test and review!",
+    "body": "Attachment [trac_8303.patch](tarball://root/attachments/some-uuid/ticket8303/trac_8303.patch) by @dandrake created at 2010-02-21 08:05:42\n\nPatch up. Apply to sage_scripts spkg, or equivalently, to the repo in SAGE_ROOT/local/bin.\n\nTo test, try making a file with spaces in its name, and passing arguments with spaces in them. If the file is \"script with spaces.sage\" and it contains:\n\n```\nimport sys\nprint integrate(x*cos(x)*sin(x), x)\nprint sys.argv\nsys.exit(int(5))\n```\n\nthen something like this should work properly:\n\n```\n$ sage \"script with spaces.sage\" \"foo bar\" arg2\n-1/4*x*cos(2*x) + 1/8*sin(2*x)\n['script with spaces.py', 'foo bar', 'arg2']\n$ echo $?\n5\n```\n\nI'd like to have the return code tested to make sure we don't get a regression on #2861.\n\nPlease test and review!",
     "created_at": "2010-02-21T08:05:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8303#issuecomment-73571",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_8303.patch](tarball://root/attachments/some-uuid/ticket8303/trac_8303.patch) by ddrake created at 2010-02-21 08:05:42
+Attachment [trac_8303.patch](tarball://root/attachments/some-uuid/ticket8303/trac_8303.patch) by @dandrake created at 2010-02-21 08:05:42
 
 Patch up. Apply to sage_scripts spkg, or equivalently, to the repo in SAGE_ROOT/local/bin.
 
@@ -162,7 +162,7 @@ archive/issue_comments_073572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8303#issuecomment-73572",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_073573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8303#issuecomment-73573",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_073574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8303#issuecomment-73574",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_073575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8303#issuecomment-73575",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_073576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8303#issuecomment-73576",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

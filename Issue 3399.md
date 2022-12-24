@@ -3,7 +3,7 @@
 archive/issues_003399.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThe sage build files that use pbuild should be moved to the devel repo while the pbuild files should stay in extcode.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3399\n\n",
+    "body": "Assignee: @garyfurnish\n\nThe sage build files that use pbuild should be moved to the devel repo while the pbuild files should stay in extcode.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3399\n\n",
     "created_at": "2008-06-11T15:00:38Z",
     "labels": [
         "pbuild",
@@ -14,10 +14,10 @@ archive/issues_003399.json:
     "title": "[with patch, needs review] sage build scripts should be moved to devel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3399",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 The sage build files that use pbuild should be moved to the devel repo while the pbuild files should stay in extcode.
 
@@ -37,7 +37,7 @@ archive/issue_comments_023801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3399#issuecomment-23801",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_023803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3399#issuecomment-23803",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -90,16 +90,16 @@ Changing keywords from "" to "editor_mabshoff".
 archive/issue_comments_023804.json:
 ```json
 {
-    "body": "Attachment [trac_3399_2.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2.patch) by gfurnish created at 2008-07-01 16:47:03",
+    "body": "Attachment [trac_3399_2.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2.patch) by @garyfurnish created at 2008-07-01 16:47:03",
     "created_at": "2008-07-01T16:47:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3399#issuecomment-23804",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3399_2.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2.patch) by gfurnish created at 2008-07-01 16:47:03
+Attachment [trac_3399_2.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2.patch) by @garyfurnish created at 2008-07-01 16:47:03
 
 
 
@@ -108,16 +108,16 @@ Attachment [trac_3399_2.patch](tarball://root/attachments/some-uuid/ticket3399/t
 archive/issue_comments_023805.json:
 ```json
 {
-    "body": "Attachment [trac_3399_2_extcode.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2_extcode.patch) by gfurnish created at 2008-07-01 16:47:19",
+    "body": "Attachment [trac_3399_2_extcode.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2_extcode.patch) by @garyfurnish created at 2008-07-01 16:47:19",
     "created_at": "2008-07-01T16:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3399#issuecomment-23805",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3399_2_extcode.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2_extcode.patch) by gfurnish created at 2008-07-01 16:47:19
+Attachment [trac_3399_2_extcode.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2_extcode.patch) by @garyfurnish created at 2008-07-01 16:47:19
 
 
 
@@ -126,16 +126,16 @@ Attachment [trac_3399_2_extcode.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_023806.json:
 ```json
 {
-    "body": "Attachment [trac_3399_2_scripts.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2_scripts.patch) by gfurnish created at 2008-07-01 16:48:14\n\nPlease remove the old patches, apply the new patches, and rereview.  This patch also adds documentation on how to add files to pbuild: see devel/sage/sagebuild.py",
+    "body": "Attachment [trac_3399_2_scripts.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2_scripts.patch) by @garyfurnish created at 2008-07-01 16:48:14\n\nPlease remove the old patches, apply the new patches, and rereview.  This patch also adds documentation on how to add files to pbuild: see devel/sage/sagebuild.py",
     "created_at": "2008-07-01T16:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3399#issuecomment-23806",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3399_2_scripts.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2_scripts.patch) by gfurnish created at 2008-07-01 16:48:14
+Attachment [trac_3399_2_scripts.patch](tarball://root/attachments/some-uuid/ticket3399/trac_3399_2_scripts.patch) by @garyfurnish created at 2008-07-01 16:48:14
 
 Please remove the old patches, apply the new patches, and rereview.  This patch also adds documentation on how to add files to pbuild: see devel/sage/sagebuild.py
 

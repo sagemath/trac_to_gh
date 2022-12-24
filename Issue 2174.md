@@ -3,7 +3,7 @@
 archive/issues_002174.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  was\n\nMake it so in the notebook the upgrade command is very non-verbose.\nIn order to make this happen, we'll need to have an option to \n\"sage -i\" that makes sage-spkg much less verbose, i.e., just display\neach package is being built, and whether the install failed or\nsucceeded. \n\nAlso, upgrade() run in the notebook should autodect that it should\nrun non-verbosely by checking whether it is run in embedded mode (the\nsame as is done in plotting). \n\n \nThis is a defect, because right now if one types `upgrade()` into the notebook, because of verbosity of the output it can take 20 HOURS to upgrade, as reported by Jim Morrow. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2174\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @williamstein\n\nMake it so in the notebook the upgrade command is very non-verbose.\nIn order to make this happen, we'll need to have an option to \n\"sage -i\" that makes sage-spkg much less verbose, i.e., just display\neach package is being built, and whether the install failed or\nsucceeded. \n\nAlso, upgrade() run in the notebook should autodect that it should\nrun non-verbosely by checking whether it is run in embedded mode (the\nsame as is done in plotting). \n\n \nThis is a defect, because right now if one types `upgrade()` into the notebook, because of verbosity of the output it can take 20 HOURS to upgrade, as reported by Jim Morrow. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2174\n\n",
     "created_at": "2008-02-16T01:31:11Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_002174.json:
     "title": "[bug day?] upgrade -- make upgrade() so that when run in the notebook it is not very verbose",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2174",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  was
+CC:  @williamstein
 
 Make it so in the notebook the upgrade command is very non-verbose.
 In order to make this happen, we'll need to have an option to 
@@ -72,7 +72,7 @@ archive/issue_comments_014279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2174#issuecomment-14279",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_014280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2174#issuecomment-14280",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

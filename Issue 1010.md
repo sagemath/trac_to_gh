@@ -3,7 +3,7 @@
 archive/issues_001010.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nDear Mike and William,\n\nI am writing this email to let you know about the changes in the new\nGfan version 0.3.\nUnfortunately the improvements to Gfan introduce some compatibility\nproblems, but hopefully we will have less of these problems in the future.\nYou may simply ignore this mail if you are not interested in\ncompatibility issues now.\n\nSome of the changes are good:\n---------------------------------------\nThe user now has the option to be very specific about what polynomial\nring the computations should take place in. The first line of the input\ncan now be a polynomial ring. For example\nQ[x,y,t1,t2]\nor\nZ/7Z[a]\nThis change breaks compatibility in the following two ways:\n1) the output now typically contains the polynomial ring in its first\nline!!!!!\n2) the --modp option has been removed.\n\nChanges that affect how commands are logically combined:\n---------------------------------------------------------------------------\nThe major change is that when Gfan outputs polyhedral data it is done in\na Polymake compatible way. Thus the output is a Polymake file typically\ndescribing a polyhedral fan. Notice that the there is no official\nPolyhedral fan format in Polymake at the moment. The only other software\nthat uses this format is TrIm by Josephine Yu.\nWorking with polyhedral fans turns out to be much nicer when there is an\nappropriate format.\n\nHere are two examples:\n1) To compute a  Groebner cone from a marked reduced Groebner basis in\nthe old Gfan one would use gfan_groebnercone | gfan_facets , where\ngfan_groebner cone computes inequalities and gfan_facets removes\nredundant ones. In the new version the output of gfan_groebnercone is\neither a polyhedral cone or its face complex as a the polyhedral fan. In\nthe first case the facets can be read off directly from the output.\n2) To compute a weight vector for a reduced Groebner basis in the old\nGfan one would use gfan_weightvector . Now this is simply done by\ngfan_groebnercone .\n\nI don't know to what extend the above changes will affect your interfaces.\nI guess I could have kept Gfan backward compatible but that would have\nmeant that more ugly code would have to be maintained.\nI am pretty satisfied with the input/output format now.\nIf you wish to adjust your interfaces to Gfan and need help please let\nme know.\n\nBest regards,\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1010\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nDear Mike and William,\n\nI am writing this email to let you know about the changes in the new\nGfan version 0.3.\nUnfortunately the improvements to Gfan introduce some compatibility\nproblems, but hopefully we will have less of these problems in the future.\nYou may simply ignore this mail if you are not interested in\ncompatibility issues now.\n\nSome of the changes are good:\n---------------------------------------\nThe user now has the option to be very specific about what polynomial\nring the computations should take place in. The first line of the input\ncan now be a polynomial ring. For example\nQ[x,y,t1,t2]\nor\nZ/7Z[a]\nThis change breaks compatibility in the following two ways:\n1) the output now typically contains the polynomial ring in its first\nline!!!!!\n2) the --modp option has been removed.\n\nChanges that affect how commands are logically combined:\n---------------------------------------------------------------------------\nThe major change is that when Gfan outputs polyhedral data it is done in\na Polymake compatible way. Thus the output is a Polymake file typically\ndescribing a polyhedral fan. Notice that the there is no official\nPolyhedral fan format in Polymake at the moment. The only other software\nthat uses this format is TrIm by Josephine Yu.\nWorking with polyhedral fans turns out to be much nicer when there is an\nappropriate format.\n\nHere are two examples:\n1) To compute a  Groebner cone from a marked reduced Groebner basis in\nthe old Gfan one would use gfan_groebnercone | gfan_facets , where\ngfan_groebner cone computes inequalities and gfan_facets removes\nredundant ones. In the new version the output of gfan_groebnercone is\neither a polyhedral cone or its face complex as a the polyhedral fan. In\nthe first case the facets can be read off directly from the output.\n2) To compute a weight vector for a reduced Groebner basis in the old\nGfan one would use gfan_weightvector . Now this is simply done by\ngfan_groebnercone .\n\nI don't know to what extend the above changes will affect your interfaces.\nI guess I could have kept Gfan backward compatible but that would have\nmeant that more ugly code would have to be maintained.\nI am pretty satisfied with the input/output format now.\nIf you wish to adjust your interfaces to Gfan and need help please let\nme know.\n\nBest regards,\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1010\n\n",
     "created_at": "2007-10-27T05:38:02Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001010.json:
     "title": "upgrade gfan to version 0.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1010",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -86,7 +86,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1010
 archive/issue_comments_006165.json:
 ```json
 {
-    "body": "Changing assignee from was to mhampton.",
+    "body": "Changing assignee from @williamstein to mhampton.",
     "created_at": "2008-02-27T19:15:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_006165.json:
 }
 ```
 
-Changing assignee from was to mhampton.
+Changing assignee from @williamstein to mhampton.
 
 
 
@@ -269,7 +269,7 @@ archive/issue_comments_006174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6174",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_006175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6175",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_006176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6176",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_006179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6179",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -413,16 +413,16 @@ In any case, this is directly related to this ticket (sorry for going OT) and I'
 archive/issue_comments_006180.json:
 ```json
 {
-    "body": "Attachment [gfan_docstyle.patch](tarball://root/attachments/some-uuid/ticket1010/gfan_docstyle.patch) by malb created at 2008-03-25 19:49:58",
+    "body": "Attachment [gfan_docstyle.patch](tarball://root/attachments/some-uuid/ticket1010/gfan_docstyle.patch) by @malb created at 2008-03-25 19:49:58",
     "created_at": "2008-03-25T19:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6180",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [gfan_docstyle.patch](tarball://root/attachments/some-uuid/ticket1010/gfan_docstyle.patch) by malb created at 2008-03-25 19:49:58
+Attachment [gfan_docstyle.patch](tarball://root/attachments/some-uuid/ticket1010/gfan_docstyle.patch) by @malb created at 2008-03-25 19:49:58
 
 
 
@@ -431,16 +431,16 @@ Attachment [gfan_docstyle.patch](tarball://root/attachments/some-uuid/ticket1010
 archive/issue_comments_006181.json:
 ```json
 {
-    "body": "Attachment [coverage_before.txt](tarball://root/attachments/some-uuid/ticket1010/coverage_before.txt) by malb created at 2008-03-25 19:50:29",
+    "body": "Attachment [coverage_before.txt](tarball://root/attachments/some-uuid/ticket1010/coverage_before.txt) by @malb created at 2008-03-25 19:50:29",
     "created_at": "2008-03-25T19:50:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6181",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [coverage_before.txt](tarball://root/attachments/some-uuid/ticket1010/coverage_before.txt) by malb created at 2008-03-25 19:50:29
+Attachment [coverage_before.txt](tarball://root/attachments/some-uuid/ticket1010/coverage_before.txt) by @malb created at 2008-03-25 19:50:29
 
 
 
@@ -449,16 +449,16 @@ Attachment [coverage_before.txt](tarball://root/attachments/some-uuid/ticket1010
 archive/issue_comments_006182.json:
 ```json
 {
-    "body": "Attachment [coverage_after.txt](tarball://root/attachments/some-uuid/ticket1010/coverage_after.txt) by malb created at 2008-03-25 19:51:53\n\nReview of the `post_review` patch:\n* The docstrings don't obey Sage's style conventions (indentation\n  etc.), I've attached a patch for that (`gfan_docstyle.patch`).\n* man newly introduced methods/functions still don't have any\n  documentation and no doctests. Sage now has a\n  nothing-new-without-doctests policy, so this needs to be addressed\n  before this can go in.\n* I've also attached `coverage_before.txt` and `coverage_after.txt`\n  with coverage information before and after the patch was applied.\n* I'm not sure if this is related to the rewrite:\n\n```\nsage: P = PolynomialRing(GF(127),10,'x')\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: gf = I.groebner_fan()\nsage: gb = gf.reduced_groebner_bases()\n[[x9^127 - x9, x8^127 - x8, x7^127 - x7, x6^127 - x6, x5^127 - x5, x4^127 - x4, x3^127 - x3, x2^127 - x2, x1^127 - x1, x0^127 - x0]]\n\nsage: P = PolynomialRing(GF(127),11,'x')\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: gf = I.groebner_fan()\nsage: gf.reduced_groebner_bases()\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n...\n<type 'exceptions.RuntimeError'>: gfan: parser.cpp:405: PolynomialSet CharacterBasedParser::parsePolynomialSet(const PolynomialRing&): Assertion `isRightBracket(c)' failed.\n```\n\n* Also, some methods do have examples but no explanation what they do. IMHO this should be addressed too.",
+    "body": "Attachment [coverage_after.txt](tarball://root/attachments/some-uuid/ticket1010/coverage_after.txt) by @malb created at 2008-03-25 19:51:53\n\nReview of the `post_review` patch:\n* The docstrings don't obey Sage's style conventions (indentation\n  etc.), I've attached a patch for that (`gfan_docstyle.patch`).\n* man newly introduced methods/functions still don't have any\n  documentation and no doctests. Sage now has a\n  nothing-new-without-doctests policy, so this needs to be addressed\n  before this can go in.\n* I've also attached `coverage_before.txt` and `coverage_after.txt`\n  with coverage information before and after the patch was applied.\n* I'm not sure if this is related to the rewrite:\n\n```\nsage: P = PolynomialRing(GF(127),10,'x')\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: gf = I.groebner_fan()\nsage: gb = gf.reduced_groebner_bases()\n[[x9^127 - x9, x8^127 - x8, x7^127 - x7, x6^127 - x6, x5^127 - x5, x4^127 - x4, x3^127 - x3, x2^127 - x2, x1^127 - x1, x0^127 - x0]]\n\nsage: P = PolynomialRing(GF(127),11,'x')\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: gf = I.groebner_fan()\nsage: gf.reduced_groebner_bases()\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n...\n<type 'exceptions.RuntimeError'>: gfan: parser.cpp:405: PolynomialSet CharacterBasedParser::parsePolynomialSet(const PolynomialRing&): Assertion `isRightBracket(c)' failed.\n```\n\n* Also, some methods do have examples but no explanation what they do. IMHO this should be addressed too.",
     "created_at": "2008-03-25T19:51:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6182",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [coverage_after.txt](tarball://root/attachments/some-uuid/ticket1010/coverage_after.txt) by malb created at 2008-03-25 19:51:53
+Attachment [coverage_after.txt](tarball://root/attachments/some-uuid/ticket1010/coverage_after.txt) by @malb created at 2008-03-25 19:51:53
 
 Review of the `post_review` patch:
 * The docstrings don't obey Sage's style conventions (indentation
@@ -543,7 +543,7 @@ archive/issue_comments_006185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6185",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -556,16 +556,16 @@ some (whitespace) improvements for the docstrings in groebner_fan.py
 archive/issue_comments_006186.json:
 ```json
 {
-    "body": "Attachment [gfan_docstrings.patch](tarball://root/attachments/some-uuid/ticket1010/gfan_docstrings.patch) by malb created at 2008-03-27 14:02:44\n\n**Review of `trac_1010_post_review_2.patch`**:\n* as said before almost all concerns were addressed and also the coverage was raised to 100% (more than could be asked for)\n* I've got one doctest failure in `sage -t  devel/doc-main/tut/tut.tex`. It wasn't immediately clear to me how to fix this:\n\n```\nFile \"tut.py\", line 2362:\n    : F.fvector()\nException raised:\n    Traceback (most recent call last):\n      File \"/usr/local/sage-2.10.3.rc2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_103[4]>\", line 1, in <module>\n        F.fvector()###line 2362:\n    : F.fvector()\n    AttributeError: 'GroebnerFan' object has no attribute 'fvector'\n```\n\n* I've attached a tiny patch which adds a reference to the GFan website and some trivial whitespace changes (if the author doesn't like it, it can be left out)\n* Once the `tut.tex` doctest passed (and there is word on whether my proposed fixes shall go in) I'd happily give it a positive review.\n* **Good job mhampton**!",
+    "body": "Attachment [gfan_docstrings.patch](tarball://root/attachments/some-uuid/ticket1010/gfan_docstrings.patch) by @malb created at 2008-03-27 14:02:44\n\n**Review of `trac_1010_post_review_2.patch`**:\n* as said before almost all concerns were addressed and also the coverage was raised to 100% (more than could be asked for)\n* I've got one doctest failure in `sage -t  devel/doc-main/tut/tut.tex`. It wasn't immediately clear to me how to fix this:\n\n```\nFile \"tut.py\", line 2362:\n    : F.fvector()\nException raised:\n    Traceback (most recent call last):\n      File \"/usr/local/sage-2.10.3.rc2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_103[4]>\", line 1, in <module>\n        F.fvector()###line 2362:\n    : F.fvector()\n    AttributeError: 'GroebnerFan' object has no attribute 'fvector'\n```\n\n* I've attached a tiny patch which adds a reference to the GFan website and some trivial whitespace changes (if the author doesn't like it, it can be left out)\n* Once the `tut.tex` doctest passed (and there is word on whether my proposed fixes shall go in) I'd happily give it a positive review.\n* **Good job mhampton**!",
     "created_at": "2008-03-27T14:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1010#issuecomment-6186",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [gfan_docstrings.patch](tarball://root/attachments/some-uuid/ticket1010/gfan_docstrings.patch) by malb created at 2008-03-27 14:02:44
+Attachment [gfan_docstrings.patch](tarball://root/attachments/some-uuid/ticket1010/gfan_docstrings.patch) by @malb created at 2008-03-27 14:02:44
 
 **Review of `trac_1010_post_review_2.patch`**:
 * as said before almost all concerns were addressed and also the coverage was raised to 100% (more than could be asked for)

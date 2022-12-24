@@ -3,7 +3,7 @@
 archive/issues_006214.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  vbraun\n\nNot always, but it is possible; the following is from \"Drini\" on sage-support:\n\nI was checking the new polytope commands\nspecifically a polytope in R^2   with points (a,b,c,d,e,f) such that\n\ne+b>= c+d\ne+c >= b+d\na+b+c+d+e+f =  31\n(this is a polytope I had worked on before so I know it very well)\n\nAfter several tries (documentation still sparse and incomplete) I\nmanaged to cosntruct it.\nChecked vertices:\n\nP.vertices()\n[[0, 0, 0, 0, 0, 31], [31, 0, 0, 0, 0, 0], [0, 0, 0, 31/2, 31/2, 0],\n[0,\n0, 31/2, 0, 31/2, 0], [0, 0, 0, 0, 31, 0], [0, 31/2, 0, 0, 31/2, 0],\n[0,\n31/2, 31/2, 0, 0, 0]]\n\nThat's right, 7 vertices, the right ones (again this is a polytope I\nknew before)\n\nP.ambiend_dim()\n6\n\nP.dim()\n6\n\n!!!!!\n======================================\nThe ambient dimension is indeed 6 (we're after all in R^6) but the\npolytope has dimension 5 for it's contained in the a+b+c+d+e+f=31\nhyperplane (and thus its dimension is 1 less than ambient) Notice all\nvertices have coordinates adding 31, therefore it's indeed contained\nin the hyperplane\nPolymake verified this as well saying dimension is 5\n\nNow I don't know how or where to submit a bug, but I suppose people\ninvolved with development here know\nso the least I can do is  comment there's a bug so it's known and\nforwarded (and then stop doing polytope computations in sagemath for a\nbit longer)\n======================================== \n\nIssue created by migration from https://trac.sagemath.org/ticket/6214\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nNot always, but it is possible; the following is from \"Drini\" on sage-support:\n\nI was checking the new polytope commands\nspecifically a polytope in R^2   with points (a,b,c,d,e,f) such that\n\ne+b>= c+d\ne+c >= b+d\na+b+c+d+e+f =  31\n(this is a polytope I had worked on before so I know it very well)\n\nAfter several tries (documentation still sparse and incomplete) I\nmanaged to cosntruct it.\nChecked vertices:\n\nP.vertices()\n[[0, 0, 0, 0, 0, 31], [31, 0, 0, 0, 0, 0], [0, 0, 0, 31/2, 31/2, 0],\n[0,\n0, 31/2, 0, 31/2, 0], [0, 0, 0, 0, 31, 0], [0, 31/2, 0, 0, 31/2, 0],\n[0,\n31/2, 31/2, 0, 0, 0]]\n\nThat's right, 7 vertices, the right ones (again this is a polytope I\nknew before)\n\nP.ambiend_dim()\n6\n\nP.dim()\n6\n\n!!!!!\n======================================\nThe ambient dimension is indeed 6 (we're after all in R^6) but the\npolytope has dimension 5 for it's contained in the a+b+c+d+e+f=31\nhyperplane (and thus its dimension is 1 less than ambient) Notice all\nvertices have coordinates adding 31, therefore it's indeed contained\nin the hyperplane\nPolymake verified this as well saying dimension is 5\n\nNow I don't know how or where to submit a bug, but I suppose people\ninvolved with development here know\nso the least I can do is  comment there's a bug so it's known and\nforwarded (and then stop doing polytope computations in sagemath for a\nbit longer)\n======================================== \n\nIssue created by migration from https://trac.sagemath.org/ticket/6214\n\n",
     "created_at": "2009-06-04T21:27:34Z",
     "labels": [
         "geometry",
@@ -19,7 +19,7 @@ archive/issues_006214.json:
 ```
 Assignee: mhampton
 
-CC:  vbraun
+CC:  @vbraun
 
 Not always, but it is possible; the following is from "Drini" on sage-support:
 
@@ -166,7 +166,7 @@ archive/issue_comments_049646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6214#issuecomment-49646",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_049647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6214#issuecomment-49647",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -225,16 +225,16 @@ I'm sorry for bunching patches together, but I think that the other changes are 
 archive/issue_comments_049648.json:
 ```json
 {
-    "body": "Attachment [polyhedron-v9.patch](tarball://root/attachments/some-uuid/ticket6214/polyhedron-v9.patch) by vbraun created at 2010-03-11 14:21:22",
+    "body": "Attachment [polyhedron-v9.patch](tarball://root/attachments/some-uuid/ticket6214/polyhedron-v9.patch) by @vbraun created at 2010-03-11 14:21:22",
     "created_at": "2010-03-11T14:21:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6214#issuecomment-49648",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [polyhedron-v9.patch](tarball://root/attachments/some-uuid/ticket6214/polyhedron-v9.patch) by vbraun created at 2010-03-11 14:21:22
+Attachment [polyhedron-v9.patch](tarball://root/attachments/some-uuid/ticket6214/polyhedron-v9.patch) by @vbraun created at 2010-03-11 14:21:22
 
 
 
@@ -286,7 +286,7 @@ archive/issue_comments_049651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6214#issuecomment-49651",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_049652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6214#issuecomment-49652",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_049653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6214#issuecomment-49653",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001812.json:
     "title": "[with patch] doctest coverage for finite_field_givaro up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1812",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1812
 archive/issue_comments_011458.json:
 ```json
 {
-    "body": "Attachment [finite_field_givaro_doctest.patch](tarball://root/attachments/some-uuid/ticket1812/finite_field_givaro_doctest.patch) by malb created at 2008-01-17 22:41:03",
+    "body": "Attachment [finite_field_givaro_doctest.patch](tarball://root/attachments/some-uuid/ticket1812/finite_field_givaro_doctest.patch) by @malb created at 2008-01-17 22:41:03",
     "created_at": "2008-01-17T22:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1812#issuecomment-11458",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [finite_field_givaro_doctest.patch](tarball://root/attachments/some-uuid/ticket1812/finite_field_givaro_doctest.patch) by malb created at 2008-01-17 22:41:03
+Attachment [finite_field_givaro_doctest.patch](tarball://root/attachments/some-uuid/ticket1812/finite_field_givaro_doctest.patch) by @malb created at 2008-01-17 22:41:03
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_011459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1812#issuecomment-11459",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001907.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe nullity() function for matrices is supposed to return the dimension of the kernel, but:\n\n\n```\nsage: M=Matrix(QQ,[[1,0,0,1],[0,1,1,0],[1,1,1,0]])\nsage: M.nullity()\n1\nsage: M.kernel().dimension()\n0\n```\n\n\nThe correct value is indeed 0.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1907\n\n",
+    "body": "Assignee: @williamstein\n\nThe nullity() function for matrices is supposed to return the dimension of the kernel, but:\n\n\n```\nsage: M=Matrix(QQ,[[1,0,0,1],[0,1,1,0],[1,1,1,0]])\nsage: M.nullity()\n1\nsage: M.kernel().dimension()\n0\n```\n\n\nThe correct value is indeed 0.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1907\n\n",
     "created_at": "2008-01-24T03:43:52Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001907.json:
     "title": "matrix nullity returns wrong value",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1907",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The nullity() function for matrices is supposed to return the dimension of the kernel, but:
 
@@ -50,7 +50,7 @@ archive/issue_comments_012078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1907#issuecomment-12078",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_012079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1907#issuecomment-12079",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_012080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1907#issuecomment-12080",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,16 +115,16 @@ Changing status from new to assigned.
 archive/issue_comments_012081.json:
 ```json
 {
-    "body": "Attachment [trac-1907-matrix_nullity.patch](tarball://root/attachments/some-uuid/ticket1907/trac-1907-matrix_nullity.patch) by AlexGhitza created at 2008-03-11 01:02:46\n\nLooks good, applies cleanly against sage-2.10.3.rc3, and passes tests.",
+    "body": "Attachment [trac-1907-matrix_nullity.patch](tarball://root/attachments/some-uuid/ticket1907/trac-1907-matrix_nullity.patch) by @aghitza created at 2008-03-11 01:02:46\n\nLooks good, applies cleanly against sage-2.10.3.rc3, and passes tests.",
     "created_at": "2008-03-11T01:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1907#issuecomment-12081",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac-1907-matrix_nullity.patch](tarball://root/attachments/some-uuid/ticket1907/trac-1907-matrix_nullity.patch) by AlexGhitza created at 2008-03-11 01:02:46
+Attachment [trac-1907-matrix_nullity.patch](tarball://root/attachments/some-uuid/ticket1907/trac-1907-matrix_nullity.patch) by @aghitza created at 2008-03-11 01:02:46
 
 Looks good, applies cleanly against sage-2.10.3.rc3, and passes tests.
 

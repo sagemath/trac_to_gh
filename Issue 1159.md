@@ -3,7 +3,7 @@
 archive/issues_001159.json:
 ```json
 {
-    "body": "Assignee: was\n\n%python\nclass MyInt:\n    def __init__(self, n):\n        self.n = int(n)\n    def __int__(self):\n        return self.n\n\nprint range(MyInt(2**3), MyInt(2**3+10))\nprint \"here\"\nprint range(MyInt(2**34), MyInt(2**34+10))\n\nIssue created by migration from https://trac.sagemath.org/ticket/1159\n\n",
+    "body": "Assignee: @williamstein\n\n%python\nclass MyInt:\n    def __init__(self, n):\n        self.n = int(n)\n    def __int__(self):\n        return self.n\n\nprint range(MyInt(2**3), MyInt(2**3+10))\nprint \"here\"\nprint range(MyInt(2**34), MyInt(2**34+10))\n\nIssue created by migration from https://trac.sagemath.org/ticket/1159\n\n",
     "created_at": "2007-11-12T22:12:49Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001159.json:
     "title": "Bug in python range",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1159",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 %python
 class MyInt:
@@ -46,7 +46,7 @@ archive/issue_comments_007083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1159#issuecomment-7083",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_007084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1159#issuecomment-7084",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_007085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1159#issuecomment-7085",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_007086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1159#issuecomment-7086",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_007090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1159#issuecomment-7090",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_007091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1159#issuecomment-7091",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_007092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1159#issuecomment-7092",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009819.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  dimpase mkoeppe\n\nIn w3m, I can't log in to the Sage notebook because I can't click the \"Sign in\" button.  Is it a real form button?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9820\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @dimpase @mkoeppe\n\nIn w3m, I can't log in to the Sage notebook because I can't click the \"Sign in\" button.  Is it a real form button?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9820\n\n",
     "created_at": "2010-08-27T11:44:35Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009819.json:
     "title": "text browsers can't log in",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9819",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  dimpase mkoeppe
+CC:  @dimpase @mkoeppe
 
 In w3m, I can't log in to the Sage notebook because I can't click the "Sign in" button.  Is it a real form button?
 
@@ -39,7 +39,7 @@ archive/issue_comments_096825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9819#issuecomment-96825",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_096826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9819#issuecomment-96826",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_096827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9819#issuecomment-96827",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_096828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9819#issuecomment-96828",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_096829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9819#issuecomment-96829",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

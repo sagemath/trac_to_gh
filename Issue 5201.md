@@ -3,7 +3,7 @@
 archive/issues_005201.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nI think it would be a great thing if solve could recognize matrices and that two matrices are equal if each entry is equal.  I believe MMA does this (but it's easier there; matrices are nothing more than nested lists).  It'd certainly make certain things I do more natural if I could do:\n\n`solve(matrixA==matrixB)`\n\nand that was equivalent to:\n\n`solve([i==j for i,j in zip(matrixA.list(), matrixB.list())]) `\n\n\nOkay, so now that I've written my piece, I suppose the next step is to open a trac ticket, write a patch to implement it, and post it for review :).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5201\n\n",
+    "body": "Assignee: @burcin\n\nI think it would be a great thing if solve could recognize matrices and that two matrices are equal if each entry is equal.  I believe MMA does this (but it's easier there; matrices are nothing more than nested lists).  It'd certainly make certain things I do more natural if I could do:\n\n`solve(matrixA==matrixB)`\n\nand that was equivalent to:\n\n`solve([i==j for i,j in zip(matrixA.list(), matrixB.list())]) `\n\n\nOkay, so now that I've written my piece, I suppose the next step is to open a trac ticket, write a patch to implement it, and post it for review :).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5201\n\n",
     "created_at": "2009-02-07T19:18:01Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_005201.json:
     "title": "make solve understand matrix equations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5201",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 I think it would be a great thing if solve could recognize matrices and that two matrices are equal if each entry is equal.  I believe MMA does this (but it's easier there; matrices are nothing more than nested lists).  It'd certainly make certain things I do more natural if I could do:
 
@@ -68,7 +68,7 @@ archive/issue_comments_039857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5201#issuecomment-39857",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_039858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5201#issuecomment-39858",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_039860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5201#issuecomment-39860",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_039861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5201#issuecomment-39861",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

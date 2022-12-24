@@ -3,7 +3,7 @@
 archive/issues_007473.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri nthiery ncohen\n\nThis is a follow-up to #6187.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/433ec95cba086551/f4286b67d64a19dd?#f4286b67d64a19dd), [sage-release](http://groups.google.com/group/sage-release/msg/76c956312e4de13d), [#sage-devel log](http://sage.math.washington.edu/home/mpatel/projects/irclogs/logs/sage-devel-2009-10-26.log.html#t21:56).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7473\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @nthiery @nathanncohen\n\nThis is a follow-up to #6187.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/433ec95cba086551/f4286b67d64a19dd?#f4286b67d64a19dd), [sage-release](http://groups.google.com/group/sage-release/msg/76c956312e4de13d), [#sage-devel log](http://sage.math.washington.edu/home/mpatel/projects/irclogs/logs/sage-devel-2009-10-26.log.html#t21:56).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7473\n\n",
     "created_at": "2009-11-16T10:20:23Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_007473.json:
     "title": "Sphinx hangs when making a clone",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7473",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri nthiery ncohen
+CC:  @jhpalmieri @nthiery @nathanncohen
 
 This is a follow-up to #6187.
 
@@ -41,7 +41,7 @@ archive/issue_comments_062960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62960",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_062961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62961",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_062962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62962",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_062963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62963",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_062964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62964",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -148,16 +148,16 @@ I think this happens because `sphinx.environment.BuildEnvironment.topickle` firs
 archive/issue_comments_062965.json:
 ```json
 {
-    "body": "Attachment [trac_7473-sage_builder.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-sage_builder.patch) by mpatel created at 2009-11-20 14:17:49\n\nMake pickle saving preserve the hard link.  Apply to sage repo.",
+    "body": "Attachment [trac_7473-sage_builder.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-sage_builder.patch) by @qed777 created at 2009-11-20 14:17:49\n\nMake pickle saving preserve the hard link.  Apply to sage repo.",
     "created_at": "2009-11-20T14:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62965",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7473-sage_builder.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-sage_builder.patch) by mpatel created at 2009-11-20 14:17:49
+Attachment [trac_7473-sage_builder.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-sage_builder.patch) by @qed777 created at 2009-11-20 14:17:49
 
 Make pickle saving preserve the hard link.  Apply to sage repo.
 
@@ -173,7 +173,7 @@ archive/issue_comments_062966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62966",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -186,16 +186,16 @@ Don't capture Sphinx clone output.  This *may* prevent the hang.  Apply to scrip
 archive/issue_comments_062967.json:
 ```json
 {
-    "body": "Attachment [trac_7473-scripts_clone.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone.patch) by mpatel created at 2009-11-20 14:29:39\n\nI *think* the [attachment:trac_7473-scripts_clone.patch attached patch] for the scripts repository prevents the hang when cloning.  The [attachment:trac_7473-sage_builder.patch sage repository patch] should ensure that we usually keep just one copy of the reference manual's `environment.pickle`.\n\nBut I'm still not sure about how to avoid rebuilding nearly all of the manual when cloning or after trivially switching branches.  The latter may be a separate problem.",
+    "body": "Attachment [trac_7473-scripts_clone.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone.patch) by @qed777 created at 2009-11-20 14:29:39\n\nI *think* the [attachment:trac_7473-scripts_clone.patch attached patch] for the scripts repository prevents the hang when cloning.  The [attachment:trac_7473-sage_builder.patch sage repository patch] should ensure that we usually keep just one copy of the reference manual's `environment.pickle`.\n\nBut I'm still not sure about how to avoid rebuilding nearly all of the manual when cloning or after trivially switching branches.  The latter may be a separate problem.",
     "created_at": "2009-11-20T14:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62967",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7473-scripts_clone.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone.patch) by mpatel created at 2009-11-20 14:29:39
+Attachment [trac_7473-scripts_clone.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone.patch) by @qed777 created at 2009-11-20 14:29:39
 
 I *think* the [attachment:trac_7473-scripts_clone.patch attached patch] for the scripts repository prevents the hang when cloning.  The [attachment:trac_7473-sage_builder.patch sage repository patch] should ensure that we usually keep just one copy of the reference manual's `environment.pickle`.
 
@@ -208,16 +208,16 @@ But I'm still not sure about how to avoid rebuilding nearly all of the manual wh
 archive/issue_comments_062968.json:
 ```json
 {
-    "body": "Attachment [trac_7473-scripts_clone_v2.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone_v2.patch) by mpatel created at 2009-11-22 18:57:53\n\nUse `cp -pr` to preserve .rst file times.  This may work.  Apply only this patch to scripts repo.",
+    "body": "Attachment [trac_7473-scripts_clone_v2.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone_v2.patch) by @qed777 created at 2009-11-22 18:57:53\n\nUse `cp -pr` to preserve .rst file times.  This may work.  Apply only this patch to scripts repo.",
     "created_at": "2009-11-22T18:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62968",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7473-scripts_clone_v2.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone_v2.patch) by mpatel created at 2009-11-22 18:57:53
+Attachment [trac_7473-scripts_clone_v2.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone_v2.patch) by @qed777 created at 2009-11-22 18:57:53
 
 Use `cp -pr` to preserve .rst file times.  This may work.  Apply only this patch to scripts repo.
 
@@ -233,7 +233,7 @@ archive/issue_comments_062969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62969",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_062970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62970",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_062971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62971",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -294,16 +294,16 @@ Shall we take the cited web page as enough evidence that this is cross-platform?
 archive/issue_comments_062972.json:
 ```json
 {
-    "body": "Attachment [trac_7473-scripts_clone_v3.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone_v3.patch) by mpatel created at 2009-11-23 21:36:50\n\nUse cp -pR for auto-generated .rst files.  Apply only this patch to the scripts repo.",
+    "body": "Attachment [trac_7473-scripts_clone_v3.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone_v3.patch) by @qed777 created at 2009-11-23 21:36:50\n\nUse cp -pR for auto-generated .rst files.  Apply only this patch to the scripts repo.",
     "created_at": "2009-11-23T21:36:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62972",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7473-scripts_clone_v3.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone_v3.patch) by mpatel created at 2009-11-23 21:36:50
+Attachment [trac_7473-scripts_clone_v3.patch](tarball://root/attachments/some-uuid/ticket7473/trac_7473-scripts_clone_v3.patch) by @qed777 created at 2009-11-23 21:36:50
 
 Use cp -pR for auto-generated .rst files.  Apply only this patch to the scripts repo.
 
@@ -319,7 +319,7 @@ archive/issue_comments_062973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62973",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_062974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62974",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_062975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62975",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_062976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62976",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_062977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62977",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_062978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62978",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_062979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62979",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -468,7 +468,7 @@ archive/issue_comments_062980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62980",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_062981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62981",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_062982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62982",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -522,7 +522,7 @@ archive/issue_comments_062983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62983",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_062984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62984",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_062985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62985",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -576,7 +576,7 @@ archive/issue_comments_062986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62986",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_062987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62987",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -612,7 +612,7 @@ archive/issue_comments_062988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62988",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -630,7 +630,7 @@ archive/issue_comments_062989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62989",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

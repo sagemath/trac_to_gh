@@ -14,7 +14,7 @@ archive/issues_006576.json:
     "title": "Use JSON package for simple server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6576",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_053688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6576#issuecomment-53688",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_053689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6576#issuecomment-53689",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_053690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6576#issuecomment-53690",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_053691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6576#issuecomment-53691",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_053692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6576#issuecomment-53692",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

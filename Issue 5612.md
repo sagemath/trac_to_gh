@@ -3,7 +3,7 @@
 archive/issues_005612.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis should go into some docs somewhere.  Maybe under solve_right or in a primer?\n\nIt's to solve the linear system a*x+b*y=3, c*x+d*y=5.\n\n\n```\nsage: var('a,b,c,d,x,y')\n(a, b, c, d, x, y)\nsage: A=matrix(2,[a,b,c,d]); A\n[a b]\n[c d]\nsage: result=vector([3,5]); result\n(3, 5)\nsage: soln=A.solve_right(result) # you could also do soln=A\\result\nsage: soln\n(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a)), (5 - 3*c/a)/(d - b*c/a))\n\n\nNow, checking our answers:\n\n\nsage: (a*x+b*y).subs(x=soln[0],y=soln[1]).simplify_full()\n3\nsage: (c*x+d*y).subs(x=soln[0],y=soln[1]).simplify_full()\n5\n\n\nOr just checking it with matrix multiplication:\n\nsage: A*soln\n(a*(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a))) + b*(5 - 3*c/a)/(d - b*c/a), \nc*(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a))) + (5 - 3*c/a)*d/(d - b*c/a))\n\nLet's simplify each entry by applying the \"simplify_full\" function to \neach entry:\n\nsage: (A*soln).apply_map(lambda x: x.simplify_full())\n(3, 5)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5612\n\n",
+    "body": "Assignee: @williamstein\n\nThis should go into some docs somewhere.  Maybe under solve_right or in a primer?\n\nIt's to solve the linear system a*x+b*y=3, c*x+d*y=5.\n\n\n```\nsage: var('a,b,c,d,x,y')\n(a, b, c, d, x, y)\nsage: A=matrix(2,[a,b,c,d]); A\n[a b]\n[c d]\nsage: result=vector([3,5]); result\n(3, 5)\nsage: soln=A.solve_right(result) # you could also do soln=A\\result\nsage: soln\n(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a)), (5 - 3*c/a)/(d - b*c/a))\n\n\nNow, checking our answers:\n\n\nsage: (a*x+b*y).subs(x=soln[0],y=soln[1]).simplify_full()\n3\nsage: (c*x+d*y).subs(x=soln[0],y=soln[1]).simplify_full()\n5\n\n\nOr just checking it with matrix multiplication:\n\nsage: A*soln\n(a*(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a))) + b*(5 - 3*c/a)/(d - b*c/a), \nc*(3/a - b*(5 - 3*c/a)/(a*(d - b*c/a))) + (5 - 3*c/a)*d/(d - b*c/a))\n\nLet's simplify each entry by applying the \"simplify_full\" function to \neach entry:\n\nsage: (A*soln).apply_map(lambda x: x.simplify_full())\n(3, 5)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5612\n\n",
     "created_at": "2009-03-25T23:42:55Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005612.json:
     "title": "docs for solving a system of linear equations symbolically using symbolic matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5612",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This should go into some docs somewhere.  Maybe under solve_right or in a primer?
 
@@ -77,7 +77,7 @@ archive/issue_comments_043829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43829",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_043830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43830",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_043831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43831",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -196,16 +196,16 @@ Joal Heagney
 archive/issue_comments_043833.json:
 ```json
 {
-    "body": "Attachment [trac_5612_solve_symbolic_matrix.patch](tarball://root/attachments/some-uuid/ticket5612/trac_5612_solve_symbolic_matrix.patch) by abrochard created at 2012-06-02 23:42:16\n\nI added the example of symbolic matrix to the doc and fixed the bug reported by Joal Heagney. The error came from is_integral_domain() function in ring.pyx. Since a field is a specific type of integral domain, I just added a if clause.",
+    "body": "Attachment [trac_5612_solve_symbolic_matrix.patch](tarball://root/attachments/some-uuid/ticket5612/trac_5612_solve_symbolic_matrix.patch) by @abrochard created at 2012-06-02 23:42:16\n\nI added the example of symbolic matrix to the doc and fixed the bug reported by Joal Heagney. The error came from is_integral_domain() function in ring.pyx. Since a field is a specific type of integral domain, I just added a if clause.",
     "created_at": "2012-06-02T23:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43833",
-    "user": "abrochard"
+    "user": "@abrochard"
 }
 ```
 
-Attachment [trac_5612_solve_symbolic_matrix.patch](tarball://root/attachments/some-uuid/ticket5612/trac_5612_solve_symbolic_matrix.patch) by abrochard created at 2012-06-02 23:42:16
+Attachment [trac_5612_solve_symbolic_matrix.patch](tarball://root/attachments/some-uuid/ticket5612/trac_5612_solve_symbolic_matrix.patch) by @abrochard created at 2012-06-02 23:42:16
 
 I added the example of symbolic matrix to the doc and fixed the bug reported by Joal Heagney. The error came from is_integral_domain() function in ring.pyx. Since a field is a specific type of integral domain, I just added a if clause.
 
@@ -216,16 +216,16 @@ I added the example of symbolic matrix to the doc and fixed the bug reported by 
 archive/issue_comments_043834.json:
 ```json
 {
-    "body": "Changing assignee from was to mmasdeu.",
+    "body": "Changing assignee from @williamstein to @mmasdeu.",
     "created_at": "2012-06-08T16:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43834",
-    "user": "mmasdeu"
+    "user": "@mmasdeu"
 }
 ```
 
-Changing assignee from was to mmasdeu.
+Changing assignee from @williamstein to @mmasdeu.
 
 
 
@@ -239,7 +239,7 @@ archive/issue_comments_043835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43835",
-    "user": "mmasdeu"
+    "user": "@mmasdeu"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_043837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43837",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_043838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43838",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_043839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43839",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_043840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43840",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_043841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43841",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_043842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43842",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_043843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43843",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -401,7 +401,7 @@ archive/issue_comments_043844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43844",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_043845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43845",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -437,7 +437,7 @@ archive/issue_comments_043846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5612#issuecomment-43846",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

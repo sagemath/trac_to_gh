@@ -3,7 +3,7 @@
 archive/issues_000700.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nI have a cvxopt package in my spkgs directory that does not raise an error\nwhen doing\n\nsage: from cvxopt.base import *\n\nThe problem is that on linux libf95.a must be linked in, but its located\nin the local/lib/gcc-lib/i686-pc-linux-gnu/4.0.3\nand I had to add that directory to the path to link it in (of course the\npath is different on 64 bit).\n\nOn OSX everything works fine for some reason.\n\n```\n\n\n\nNote -- in addition to using the package above, there must be a doctest\nadded to the core SAGE library that does\n   sage: from cvxopt.base import *\njust to make sure the fix works on our architectures.\n\nLikewise, \n    from scipy.optimize import *\nshould be a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/700\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nI have a cvxopt package in my spkgs directory that does not raise an error\nwhen doing\n\nsage: from cvxopt.base import *\n\nThe problem is that on linux libf95.a must be linked in, but its located\nin the local/lib/gcc-lib/i686-pc-linux-gnu/4.0.3\nand I had to add that directory to the path to link it in (of course the\npath is different on 64 bit).\n\nOn OSX everything works fine for some reason.\n\n```\n\n\n\nNote -- in addition to using the package above, there must be a doctest\nadded to the core SAGE library that does\n   sage: from cvxopt.base import *\njust to make sure the fix works on our architectures.\n\nLikewise, \n    from scipy.optimize import *\nshould be a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/700\n\n",
     "created_at": "2007-09-20T02:07:48Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000700.json:
     "title": "fix significant bug in how cvxopt package is built on Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/700",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -62,7 +62,7 @@ archive/issue_comments_003667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/700#issuecomment-3667",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_003668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/700#issuecomment-3668",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_003669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/700#issuecomment-3669",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_003670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/700#issuecomment-3670",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_003671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/700#issuecomment-3671",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_003673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/700#issuecomment-3673",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

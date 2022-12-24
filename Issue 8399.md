@@ -3,7 +3,7 @@
 archive/issues_008399.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n## Details of the computer\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3\n\n == Sage version 4.3.3 (with several patches) ==\nI'm using a patched version of Sage sage-4.3.3. The patches include:\n\n* #7867 Python patch, to allow Sage library to build. \n* #8191 Addition of iconv, which is needed for R\n* #8285 Update R's spkg-install to work on Solaris\n* #8363 Remove a useless check for mpir in cddlib \n* #8375 Numerical noise in devel/sage/sage/symbolic/pynac.pyx\n* #8374 Numerical noise in devel/sage/sage/symbolic/constants_c.pyx\n* #8371 Patch to allow pyprocessing to build - it failed after python was patched as #7867. (Note #6503 aims to remove pyprocessing completely). \n\n == The problem ==\nThere are 8 test failures on this rather old SPARC. Increasing SAGE_TIMEOUT allowed 3 to pass. The longest is \"devel/sage/sage/rings/polynomial/symmetric_ideal.py\" which takes 459.4 s. \n\nHowever, 5 failures remain outstanding. \n\n\n```\n    sage -t  \"devel/sage/sage/graphs/graph_list.py\" # Segfault\n    sage -t  \"devel/sage/sage/graphs/generic_graph.py\" # Segfault\n    sage -t  \"devel/sage/sage/graphs/graph.py\" # Segfault\n    sage -t  \"devel/sage/sage/graphs/graph_database.py\" # Segfault\n    sage -t  \"devel/sage/sage/databases/database.py\" # Segfault\n```\n\n\nThis ticket is documenting graph.py, or to be more precise\n\n\"devel/sage/sage/graphs/graph.py\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/8399\n\n",
+    "body": "Assignee: @aghitza\n\n## Details of the computer\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3\n\n == Sage version 4.3.3 (with several patches) ==\nI'm using a patched version of Sage sage-4.3.3. The patches include:\n\n* #7867 Python patch, to allow Sage library to build. \n* #8191 Addition of iconv, which is needed for R\n* #8285 Update R's spkg-install to work on Solaris\n* #8363 Remove a useless check for mpir in cddlib \n* #8375 Numerical noise in devel/sage/sage/symbolic/pynac.pyx\n* #8374 Numerical noise in devel/sage/sage/symbolic/constants_c.pyx\n* #8371 Patch to allow pyprocessing to build - it failed after python was patched as #7867. (Note #6503 aims to remove pyprocessing completely). \n\n == The problem ==\nThere are 8 test failures on this rather old SPARC. Increasing SAGE_TIMEOUT allowed 3 to pass. The longest is \"devel/sage/sage/rings/polynomial/symmetric_ideal.py\" which takes 459.4 s. \n\nHowever, 5 failures remain outstanding. \n\n\n```\n    sage -t  \"devel/sage/sage/graphs/graph_list.py\" # Segfault\n    sage -t  \"devel/sage/sage/graphs/generic_graph.py\" # Segfault\n    sage -t  \"devel/sage/sage/graphs/graph.py\" # Segfault\n    sage -t  \"devel/sage/sage/graphs/graph_database.py\" # Segfault\n    sage -t  \"devel/sage/sage/databases/database.py\" # Segfault\n```\n\n\nThis ticket is documenting graph.py, or to be more precise\n\n\"devel/sage/sage/graphs/graph.py\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/8399\n\n",
     "created_at": "2010-02-28T16:23:50Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_008399.json:
     "user": "drkirkby"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 ## Details of the computer
 * Sun Blade 1000
@@ -67,7 +67,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/8399
 archive/issue_comments_075239.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to tbd.",
+    "body": "Changing assignee from @aghitza to tbd.",
     "created_at": "2010-02-28T16:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8399",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_075239.json:
 }
 ```
 
-Changing assignee from AlexGhitza to tbd.
+Changing assignee from @aghitza to tbd.
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_075241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8399#issuecomment-75241",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_075242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8399#issuecomment-75242",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

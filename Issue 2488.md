@@ -3,7 +3,7 @@
 archive/issues_002488.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis file does not compile with cython currently but is in the tree. It is currently disabled in setup.py and should be removed or fixed. This is a significant priority as it makes the development of efficient(parallel) build systems problematic and wastes space, especially for files which have not been touched in ages. Code that does not build should not be in the main repository. \n\n```\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n290 problem.\n\"\"\"\n\n\n\ninclude 'interrupt.pxi'\n^\n------------------------------------------------------------\n\n/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main/sage/libs/hanke/hanke.pyx:17:0: 'interrupt.pxi' not found\n\n\ncython -I/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main --incref-local-binop --embed-positions -o hanke.c hanke.pyx\n```\n\n\n```\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n                ^\n------------------------------------------------------------\n\n/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main/sage/libs/pari/test.pxd:5:17: Special methods must be declared with 'def', not 'cdef'\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n^\n------------------------------------------------------------\n\n/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main/sage/libs/pari/test.pyx:3:0: 'interrupt.pxi' not found\n\n\ncython -I/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main --incref-local-binop --embed-positions -o test.c test.pyx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2488\n\n",
+    "body": "Assignee: @williamstein\n\nThis file does not compile with cython currently but is in the tree. It is currently disabled in setup.py and should be removed or fixed. This is a significant priority as it makes the development of efficient(parallel) build systems problematic and wastes space, especially for files which have not been touched in ages. Code that does not build should not be in the main repository. \n\n```\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n290 problem.\n\"\"\"\n\n\n\ninclude 'interrupt.pxi'\n^\n------------------------------------------------------------\n\n/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main/sage/libs/hanke/hanke.pyx:17:0: 'interrupt.pxi' not found\n\n\ncython -I/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main --incref-local-binop --embed-positions -o hanke.c hanke.pyx\n```\n\n\n```\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n                ^\n------------------------------------------------------------\n\n/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main/sage/libs/pari/test.pxd:5:17: Special methods must be declared with 'def', not 'cdef'\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n^\n------------------------------------------------------------\n\n/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main/sage/libs/pari/test.pyx:3:0: 'interrupt.pxi' not found\n\n\ncython -I/home/x/build/build/pbuild/sage-2.10.3.rc1-build-cur/devel/sage-main --incref-local-binop --embed-positions -o test.c test.pyx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2488\n\n",
     "created_at": "2008-03-12T09:34:44Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002488.json:
     "title": "unused/broken hanke and pari pxy files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2488",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This file does not compile with cython currently but is in the tree. It is currently disabled in setup.py and should be removed or fixed. This is a significant priority as it makes the development of efficient(parallel) build systems problematic and wastes space, especially for files which have not been touched in ages. Code that does not build should not be in the main repository. 
 
@@ -74,16 +74,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2488
 archive/issue_comments_016861.json:
 ```json
 {
-    "body": "Changing assignee from was to gfurnish.",
+    "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-13T02:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2488#issuecomment-16861",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was to gfurnish.
+Changing assignee from @williamstein to @garyfurnish.
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_016862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2488#issuecomment-16862",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_016863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2488#issuecomment-16863",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -128,16 +128,16 @@ This is not ready
 archive/issue_comments_016864.json:
 ```json
 {
-    "body": "Attachment [trac_2488.patch](tarball://root/attachments/some-uuid/ticket2488/trac_2488.patch) by gfurnish created at 2008-03-13 02:06:05",
+    "body": "Attachment [trac_2488.patch](tarball://root/attachments/some-uuid/ticket2488/trac_2488.patch) by @garyfurnish created at 2008-03-13 02:06:05",
     "created_at": "2008-03-13T02:06:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2488#issuecomment-16864",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_2488.patch](tarball://root/attachments/some-uuid/ticket2488/trac_2488.patch) by gfurnish created at 2008-03-13 02:06:05
+Attachment [trac_2488.patch](tarball://root/attachments/some-uuid/ticket2488/trac_2488.patch) by @garyfurnish created at 2008-03-13 02:06:05
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_016865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2488#issuecomment-16865",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_016867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2488#issuecomment-16867",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

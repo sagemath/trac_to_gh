@@ -3,7 +3,7 @@
 archive/issues_004262.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis sucks:\n\n```\nsage: E = EllipticCurve([1,0,0,0,1])\nsage: E.a_invariants()[0] = 100000000\nsage: E\nElliptic Curve defined by y^2 + 100000000*x*y  = x^3 +1 over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4262\n\n",
+    "body": "Assignee: @williamstein\n\nThis sucks:\n\n```\nsage: E = EllipticCurve([1,0,0,0,1])\nsage: E.a_invariants()[0] = 100000000\nsage: E\nElliptic Curve defined by y^2 + 100000000*x*y  = x^3 +1 over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4262\n\n",
     "created_at": "2008-10-11T08:25:23Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004262.json:
     "title": "Elliptic curve a_invariants command returns a list reference (BAD!!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4262",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This sucks:
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4262
 archive/issue_comments_031083.json:
 ```json
 {
-    "body": "Attachment [sage-4262.patch](tarball://root/attachments/some-uuid/ticket4262/sage-4262.patch) by was created at 2008-10-11 08:31:58",
+    "body": "Attachment [sage-4262.patch](tarball://root/attachments/some-uuid/ticket4262/sage-4262.patch) by @williamstein created at 2008-10-11 08:31:58",
     "created_at": "2008-10-11T08:31:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4262#issuecomment-31083",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4262.patch](tarball://root/attachments/some-uuid/ticket4262/sage-4262.patch) by was created at 2008-10-11 08:31:58
+Attachment [sage-4262.patch](tarball://root/attachments/some-uuid/ticket4262/sage-4262.patch) by @williamstein created at 2008-10-11 08:31:58
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_031084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4262#issuecomment-31084",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_031085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4262#issuecomment-31085",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_031086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4262#issuecomment-31086",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_031087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4262#issuecomment-31087",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008627.json:
 ```json
 {
-    "body": "Assignee: roed\n\n(sage 4.3.1)\n\n\n```\nsage: R.<a> = Zq(25, type=\"capped-abs\")\nsage: R(1/a)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/david/<ipython console> in <module>()\n\n/Users/david/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4956)()\n\n/Users/david/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap._call_ (sage/structure/coerce_maps.c:2434)()\n\n/Users/david/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap._call_ (sage/structure/coerce_maps.c:2332)()\n\n/Users/david/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/padics/padic_ZZ_pX_CA_element.so in sage.rings.padics.padic_ZZ_pX_CA_element.pAdicZZpXCAElement.__init__ (sage/rings/padics/padic_ZZ_pX_CA_element.cpp:4574)()\n\nTypeError: Cannot convert sage.rings.padics.padic_ZZ_pX_CR_element.pAdicZZpXCRElement to sage.rings.padics.padic_ZZ_pX_CA_element.pAdicZZpXCAElement\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8627\n\n",
+    "body": "Assignee: @roed314\n\n(sage 4.3.1)\n\n\n```\nsage: R.<a> = Zq(25, type=\"capped-abs\")\nsage: R(1/a)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/david/<ipython console> in <module>()\n\n/Users/david/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4956)()\n\n/Users/david/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap._call_ (sage/structure/coerce_maps.c:2434)()\n\n/Users/david/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap._call_ (sage/structure/coerce_maps.c:2332)()\n\n/Users/david/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/padics/padic_ZZ_pX_CA_element.so in sage.rings.padics.padic_ZZ_pX_CA_element.pAdicZZpXCAElement.__init__ (sage/rings/padics/padic_ZZ_pX_CA_element.cpp:4574)()\n\nTypeError: Cannot convert sage.rings.padics.padic_ZZ_pX_CR_element.pAdicZZpXCRElement to sage.rings.padics.padic_ZZ_pX_CA_element.pAdicZZpXCAElement\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8627\n\n",
     "created_at": "2010-03-30T00:47:56Z",
     "labels": [
         "padics",
@@ -16,7 +16,7 @@ archive/issues_008627.json:
     "user": "dmharvey"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 (sage 4.3.1)
 
@@ -58,7 +58,7 @@ archive/issue_comments_078219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8627#issuecomment-78219",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_078223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8627#issuecomment-78223",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

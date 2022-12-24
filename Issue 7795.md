@@ -3,7 +3,7 @@
 archive/issues_007795.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: MPolynomialRing_libsingular segfault with high exponents\n\nIn the following example, a segfault occurs. Shouldn't an error be raised instead?\n\n```\nsage: F.<a> = FiniteField(3)\nsage: P.<T,z> = PolynomialRing(F)\nsage: type(P)\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular'>\nsage: z^(3^10)\nz^59049\nsage: z^(3^11)\nz^177147\nsage: (z^3 + T*z)^(3^4)\nz^243 + T^81*z^81\nsage: (z^3 + T*z)^(3^7)\nz^6561 + T^2187*z^2187\nsage: (z^3 + T*z)^(3^10)\nz^177147 + T^59049*z^59049\nsage: (z^3 + T*z)^(3^15)\n/home/king/SAGE/sage-4.3/local/bin/sage-sage: line 206: 20938 Segmentation fault      sage-ipython \"$@\" -i\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7795\n\n",
+    "body": "Assignee: @malb\n\nKeywords: MPolynomialRing_libsingular segfault with high exponents\n\nIn the following example, a segfault occurs. Shouldn't an error be raised instead?\n\n```\nsage: F.<a> = FiniteField(3)\nsage: P.<T,z> = PolynomialRing(F)\nsage: type(P)\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular'>\nsage: z^(3^10)\nz^59049\nsage: z^(3^11)\nz^177147\nsage: (z^3 + T*z)^(3^4)\nz^243 + T^81*z^81\nsage: (z^3 + T*z)^(3^7)\nz^6561 + T^2187*z^2187\nsage: (z^3 + T*z)^(3^10)\nz^177147 + T^59049*z^59049\nsage: (z^3 + T*z)^(3^15)\n/home/king/SAGE/sage-4.3/local/bin/sage-sage: line 206: 20938 Segmentation fault      sage-ipython \"$@\" -i\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7795\n\n",
     "created_at": "2009-12-30T11:05:21Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_007795.json:
     "title": "MPolynomialRing segfaults when getting high exponents",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7795",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: MPolynomialRing_libsingular segfault with high exponents
 
@@ -60,7 +60,7 @@ archive/issue_comments_067300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67300",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_067301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67301",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_067302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67302",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_067303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67303",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_067304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67304",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_067305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67305",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_067306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67306",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_067307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67307",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_067308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67308",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_067309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67309",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_067310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67310",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_067311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67311",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_067317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67317",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_067318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67318",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -463,7 +463,7 @@ archive/issue_comments_067319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67319",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_067320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67320",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_067321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67321",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_067323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67323",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_067324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67324",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -577,7 +577,7 @@ archive/issue_comments_067325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7795#issuecomment-67325",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

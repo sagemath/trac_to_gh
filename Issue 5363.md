@@ -3,7 +3,7 @@
 archive/issues_005363.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mhansen\n\nFor 3.4.alpha0 -sdist does not include any of the new doc repo code, i.e. if one runs \"hg update -C\" in devel/sage after building you will see\n\n```\n 186 files updated, 0 files merged, 0 files removed, 0 files unresolved\n```\n\nI corrected this in the official 3.4.alpha0.tar, but this needs fixing before the final 3.4 release, so this is a blocker.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5363\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nFor 3.4.alpha0 -sdist does not include any of the new doc repo code, i.e. if one runs \"hg update -C\" in devel/sage after building you will see\n\n```\n 186 files updated, 0 files merged, 0 files removed, 0 files unresolved\n```\n\nI corrected this in the official 3.4.alpha0.tar, but this needs fixing before the final 3.4 release, so this is a blocker.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5363\n\n",
     "created_at": "2009-02-24T22:57:35Z",
     "labels": [
         "distribution",
@@ -19,7 +19,7 @@ archive/issues_005363.json:
 ```
 Assignee: mabshoff
 
-CC:  mhansen
+CC:  @mwhansen
 
 For 3.4.alpha0 -sdist does not include any of the new doc repo code, i.e. if one runs "hg update -C" in devel/sage after building you will see
 
@@ -85,7 +85,7 @@ archive/issue_comments_041321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5363#issuecomment-41321",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_041322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5363#issuecomment-41322",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_041324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5363#issuecomment-41324",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

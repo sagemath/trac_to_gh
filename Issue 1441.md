@@ -3,7 +3,7 @@
 archive/issues_001441.json:
 ```json
 {
-    "body": "Assignee: was\n\nConsider the following:\n\n```\nsage: var('x_1,x1');\nsage: x_1 - x1\nx_1 - x1\nsage: latex(x_1 - x1)\nx_{1} - x_{1}\n```\n\nThe automatic rule latex(x1) -> x_1 might thus cause ambiguities if both x1 and x_1 exist as\nvariables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1441\n\n",
+    "body": "Assignee: @williamstein\n\nConsider the following:\n\n```\nsage: var('x_1,x1');\nsage: x_1 - x1\nx_1 - x1\nsage: latex(x_1 - x1)\nx_{1} - x_{1}\n```\n\nThe automatic rule latex(x1) -> x_1 might thus cause ambiguities if both x1 and x_1 exist as\nvariables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1441\n\n",
     "created_at": "2007-12-09T21:32:14Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001441.json:
     "title": "latex(x1) -> x_1 might cause problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1441",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Consider the following:
 
@@ -48,7 +48,7 @@ archive/issue_comments_009299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1441#issuecomment-9299",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_009300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1441#issuecomment-9300",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_009301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1441#issuecomment-9301",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_009302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1441#issuecomment-9302",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_009303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1441#issuecomment-9303",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

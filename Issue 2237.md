@@ -3,7 +3,7 @@
 archive/issues_002237.json:
 ```json
 {
-    "body": "Assignee: was\n\nIn doing animations like in http://groups.google.com/group/sage-support/browse_thread/thread/8e2edf8165e9ded2\n\nthe adaptive plotting and the randomness added to the x-sample points is very annoying, creating a wiggling graph in the animation.  We ought to have options to plot to turn these things off so that we can get the same graph over and over again.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2237\n\n",
+    "body": "Assignee: @williamstein\n\nIn doing animations like in http://groups.google.com/group/sage-support/browse_thread/thread/8e2edf8165e9ded2\n\nthe adaptive plotting and the randomness added to the x-sample points is very annoying, creating a wiggling graph in the animation.  We ought to have options to plot to turn these things off so that we can get the same graph over and over again.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2237\n\n",
     "created_at": "2008-02-20T22:56:44Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002237.json:
     "title": "plot options for turning off randomness in sampling x data and turning off adaptive plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2237",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 In doing animations like in http://groups.google.com/group/sage-support/browse_thread/thread/8e2edf8165e9ded2
 
@@ -57,7 +57,7 @@ archive/issue_comments_014814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2237#issuecomment-14814",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_014815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2237#issuecomment-14815",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

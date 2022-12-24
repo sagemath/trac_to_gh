@@ -3,7 +3,7 @@
 archive/issues_005975.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  jhpalmieri ekirkman\n\nFor a graph  g  the command latex(g)  has not been implemented.  The tkz-graph package provides latex commands for drawing graphs in a variety of ways.  So rather than outputting a graphic image, this command would output latex commands that could be incorporated into latex documents.\n\nThis originated in this [thread](http://groups.google.com/group/sage-devel/browse_thread/thread/834be3b28bd7919f) on sage-devel.  The tkz-graph package is described [here](http://altermundus.com/pages/graph.html) and more can be found [here](http://graphtheoryinlatex.blogspot.com/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5975\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jhpalmieri ekirkman\n\nFor a graph  g  the command latex(g)  has not been implemented.  The tkz-graph package provides latex commands for drawing graphs in a variety of ways.  So rather than outputting a graphic image, this command would output latex commands that could be incorporated into latex documents.\n\nThis originated in this [thread](http://groups.google.com/group/sage-devel/browse_thread/thread/834be3b28bd7919f) on sage-devel.  The tkz-graph package is described [here](http://altermundus.com/pages/graph.html) and more can be found [here](http://graphtheoryinlatex.blogspot.com/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5975\n\n",
     "created_at": "2009-05-04T05:36:18Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_005975.json:
     "title": "Implement latex output for (combinatorial) graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5975",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  jhpalmieri ekirkman
+CC:  @jhpalmieri ekirkman
 
 For a graph  g  the command latex(g)  has not been implemented.  The tkz-graph package provides latex commands for drawing graphs in a variety of ways.  So rather than outputting a graphic image, this command would output latex commands that could be incorporated into latex documents.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5975
 archive/issue_comments_047382.json:
 ```json
 {
-    "body": "Changing assignee from rlm to rbeezer.",
+    "body": "Changing assignee from @rlmill to @rbeezer.",
     "created_at": "2009-05-04T05:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47382",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Changing assignee from rlm to rbeezer.
+Changing assignee from @rlmill to @rbeezer.
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_047383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47383",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -135,16 +135,16 @@ which when run through Latex produces the attached PDF.
 archive/issue_comments_047384.json:
 ```json
 {
-    "body": "Attachment [latex-test-1.patch](tarball://root/attachments/some-uuid/ticket5975/latex-test-1.patch) by rbeezer created at 2009-05-05 05:48:03",
+    "body": "Attachment [latex-test-1.patch](tarball://root/attachments/some-uuid/ticket5975/latex-test-1.patch) by @rbeezer created at 2009-05-05 05:48:03",
     "created_at": "2009-05-05T05:48:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47384",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [latex-test-1.patch](tarball://root/attachments/some-uuid/ticket5975/latex-test-1.patch) by rbeezer created at 2009-05-05 05:48:03
+Attachment [latex-test-1.patch](tarball://root/attachments/some-uuid/ticket5975/latex-test-1.patch) by @rbeezer created at 2009-05-05 05:48:03
 
 
 
@@ -153,16 +153,16 @@ Attachment [latex-test-1.patch](tarball://root/attachments/some-uuid/ticket5975/
 archive/issue_comments_047385.json:
 ```json
 {
-    "body": "Attachment [sage-petersen.pdf](tarball://root/attachments/some-uuid/ticket5975/sage-petersen.pdf) by rbeezer created at 2009-05-05 05:48:20",
+    "body": "Attachment [sage-petersen.pdf](tarball://root/attachments/some-uuid/ticket5975/sage-petersen.pdf) by @rbeezer created at 2009-05-05 05:48:20",
     "created_at": "2009-05-05T05:48:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47385",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [sage-petersen.pdf](tarball://root/attachments/some-uuid/ticket5975/sage-petersen.pdf) by rbeezer created at 2009-05-05 05:48:20
+Attachment [sage-petersen.pdf](tarball://root/attachments/some-uuid/ticket5975/sage-petersen.pdf) by @rbeezer created at 2009-05-05 05:48:20
 
 
 
@@ -431,7 +431,7 @@ archive/issue_comments_047389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47389",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_047390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47390",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -475,16 +475,16 @@ Apply only the `trac_5975_graph_latex.patch`.  Joint work of Rob Beezer and Fide
 archive/issue_comments_047391.json:
 ```json
 {
-    "body": "Attachment [trac_5975_graph_latex.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex.patch) by rbeezer created at 2009-05-20 15:09:05\n\nSelf-contained, don't apply earlier patches.",
+    "body": "Attachment [trac_5975_graph_latex.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex.patch) by @rbeezer created at 2009-05-20 15:09:05\n\nSelf-contained, don't apply earlier patches.",
     "created_at": "2009-05-20T15:09:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47391",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_5975_graph_latex.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex.patch) by rbeezer created at 2009-05-20 15:09:05
+Attachment [trac_5975_graph_latex.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex.patch) by @rbeezer created at 2009-05-20 15:09:05
 
 Self-contained, don't apply earlier patches.
 
@@ -500,7 +500,7 @@ archive/issue_comments_047392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47392",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_047393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47393",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_047394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47394",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -556,16 +556,16 @@ Apply on top of previous
 archive/issue_comments_047395.json:
 ```json
 {
-    "body": "Attachment [trac_5975_graph_latex_scale.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_scale.patch) by jason created at 2009-05-30 04:55:44\n\nA doctest failure after applying the above two patches on (roughly) 4.0.rc1\n\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n**********************************************************************\nFile \"/home/jason/download/sage-sage-4.0.alpha0.5/devel/sage-main/sage/graphs/graph.py\", line 615:\n    sage: print g._latex_()\nExpected:\n    \\begin{tikzpicture}\n    %\n    \\definecolor{col_a0}{rgb}{1.0,1.0,1.0}\n    \\definecolor{col_a1}{rgb}{1.0,1.0,1.0}\n    %\n    %\n    \\definecolor{col_lab_a0}{rgb}{0.0,0.0,0.0}\n    \\definecolor{col_lab_a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\definecolor{col_a0-a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\GraphInit[vstyle=Normal]\n    %\n    \\SetVertexMath\n    %\n    \\SetVertexNoLabel\n    %\n    \\renewcommand*{\\VertexLightFillColor}{col_a0}\n    \\Vertex[x=5.0cm,y=5.0cm]{a0}\n    \\renewcommand*{\\VertexLightFillColor}{col_a1}\n    \\Vertex[x=0.0cm,y=0.0cm]{a1}\n    %\n    %\n    \\AssignVertexLabel{a}{2}{\n    \\color{col_lab_a0}{$0$},\n    \\color{col_lab_a1}{$1$}\n    }\n    %\n    %\n    \\renewcommand*{\\EdgeColor}{col_a0-a1}\n    \\Edge(a0)(a1)\n    %\n    %\n    \\end{tikzpicture}\nGot:\n    Warning: tkz-graph.sty is required.\n    Warning: tkz-berge.sty is required.\n    \\begin{tikzpicture}\n    %\n    \\definecolor{col_a0}{rgb}{1.0,1.0,1.0}\n    \\definecolor{col_a1}{rgb}{1.0,1.0,1.0}\n    %\n    %\n    \\definecolor{col_lab_a0}{rgb}{0.0,0.0,0.0}\n    \\definecolor{col_lab_a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\definecolor{col_a0-a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\GraphInit[vstyle=Normal]\n    %\n    \\SetVertexMath\n    %\n    \\SetVertexNoLabel\n    %\n    \\renewcommand*{\\VertexLightFillColor}{col_a0}\n    \\Vertex[x=5.0cm,y=5.0cm]{a0}\n    \\renewcommand*{\\VertexLightFillColor}{col_a1}\n    \\Vertex[x=0.0cm,y=0.0cm]{a1}\n    %\n    %\n    \\AssignVertexLabel{a}{2}{\n    \\color{col_lab_a0}{$0$},\n    \\color{col_lab_a1}{$1$}\n    }\n    %\n    %\n    \\renewcommand*{\\EdgeColor}{col_a0-a1}\n    \\Edge(a0)(a1)\n    %\n    %\n    \\end{tikzpicture}\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_11\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jason/download/sage-sage-4.0.alpha0.5/tmp/.doctest_graph.py\n\t [148.9 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/graphs/graph.py\"\nTotal time for all tests: 148.9 seconds\n```\n",
+    "body": "Attachment [trac_5975_graph_latex_scale.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_scale.patch) by @jasongrout created at 2009-05-30 04:55:44\n\nA doctest failure after applying the above two patches on (roughly) 4.0.rc1\n\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n**********************************************************************\nFile \"/home/jason/download/sage-sage-4.0.alpha0.5/devel/sage-main/sage/graphs/graph.py\", line 615:\n    sage: print g._latex_()\nExpected:\n    \\begin{tikzpicture}\n    %\n    \\definecolor{col_a0}{rgb}{1.0,1.0,1.0}\n    \\definecolor{col_a1}{rgb}{1.0,1.0,1.0}\n    %\n    %\n    \\definecolor{col_lab_a0}{rgb}{0.0,0.0,0.0}\n    \\definecolor{col_lab_a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\definecolor{col_a0-a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\GraphInit[vstyle=Normal]\n    %\n    \\SetVertexMath\n    %\n    \\SetVertexNoLabel\n    %\n    \\renewcommand*{\\VertexLightFillColor}{col_a0}\n    \\Vertex[x=5.0cm,y=5.0cm]{a0}\n    \\renewcommand*{\\VertexLightFillColor}{col_a1}\n    \\Vertex[x=0.0cm,y=0.0cm]{a1}\n    %\n    %\n    \\AssignVertexLabel{a}{2}{\n    \\color{col_lab_a0}{$0$},\n    \\color{col_lab_a1}{$1$}\n    }\n    %\n    %\n    \\renewcommand*{\\EdgeColor}{col_a0-a1}\n    \\Edge(a0)(a1)\n    %\n    %\n    \\end{tikzpicture}\nGot:\n    Warning: tkz-graph.sty is required.\n    Warning: tkz-berge.sty is required.\n    \\begin{tikzpicture}\n    %\n    \\definecolor{col_a0}{rgb}{1.0,1.0,1.0}\n    \\definecolor{col_a1}{rgb}{1.0,1.0,1.0}\n    %\n    %\n    \\definecolor{col_lab_a0}{rgb}{0.0,0.0,0.0}\n    \\definecolor{col_lab_a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\definecolor{col_a0-a1}{rgb}{0.0,0.0,0.0}\n    %\n    %\n    \\GraphInit[vstyle=Normal]\n    %\n    \\SetVertexMath\n    %\n    \\SetVertexNoLabel\n    %\n    \\renewcommand*{\\VertexLightFillColor}{col_a0}\n    \\Vertex[x=5.0cm,y=5.0cm]{a0}\n    \\renewcommand*{\\VertexLightFillColor}{col_a1}\n    \\Vertex[x=0.0cm,y=0.0cm]{a1}\n    %\n    %\n    \\AssignVertexLabel{a}{2}{\n    \\color{col_lab_a0}{$0$},\n    \\color{col_lab_a1}{$1$}\n    }\n    %\n    %\n    \\renewcommand*{\\EdgeColor}{col_a0-a1}\n    \\Edge(a0)(a1)\n    %\n    %\n    \\end{tikzpicture}\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_11\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jason/download/sage-sage-4.0.alpha0.5/tmp/.doctest_graph.py\n\t [148.9 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/graphs/graph.py\"\nTotal time for all tests: 148.9 seconds\n```\n",
     "created_at": "2009-05-30T04:55:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47395",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5975_graph_latex_scale.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_scale.patch) by jason created at 2009-05-30 04:55:44
+Attachment [trac_5975_graph_latex_scale.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_scale.patch) by @jasongrout created at 2009-05-30 04:55:44
 
 A doctest failure after applying the above two patches on (roughly) 4.0.rc1
 
@@ -680,7 +680,7 @@ archive/issue_comments_047396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47396",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -698,7 +698,7 @@ archive/issue_comments_047397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47397",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -731,7 +731,7 @@ archive/issue_comments_047398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47398",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -744,16 +744,16 @@ apply on top of previous patches
 archive/issue_comments_047399.json:
 ```json
 {
-    "body": "Attachment [trac_5975_graph_latex_2.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_2.patch) by rbeezer created at 2009-06-02 05:39:28\n\nApply only this patch",
+    "body": "Attachment [trac_5975_graph_latex_2.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_2.patch) by @rbeezer created at 2009-06-02 05:39:28\n\nApply only this patch",
     "created_at": "2009-06-02T05:39:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47399",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_5975_graph_latex_2.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_2.patch) by rbeezer created at 2009-06-02 05:39:28
+Attachment [trac_5975_graph_latex_2.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_2.patch) by @rbeezer created at 2009-06-02 05:39:28
 
 Apply only this patch
 
@@ -769,7 +769,7 @@ archive/issue_comments_047400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47400",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -787,7 +787,7 @@ archive/issue_comments_047401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47401",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -802,16 +802,16 @@ Rob
 archive/issue_comments_047402.json:
 ```json
 {
-    "body": "Attachment [trac_5975_graph_latex_2_docs.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_2_docs.patch) by rbeezer created at 2009-06-03 06:24:10\n\nApply on top of previous patch",
+    "body": "Attachment [trac_5975_graph_latex_2_docs.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_2_docs.patch) by @rbeezer created at 2009-06-03 06:24:10\n\nApply on top of previous patch",
     "created_at": "2009-06-03T06:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47402",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_5975_graph_latex_2_docs.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_2_docs.patch) by rbeezer created at 2009-06-03 06:24:10
+Attachment [trac_5975_graph_latex_2_docs.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_2_docs.patch) by @rbeezer created at 2009-06-03 06:24:10
 
 Apply on top of previous patch
 
@@ -827,7 +827,7 @@ archive/issue_comments_047403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47403",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -845,7 +845,7 @@ archive/issue_comments_047404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47404",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -858,16 +858,16 @@ Working through #6089 I've stumbled on one problem.  In `tkz_picture()` the nece
 archive/issue_comments_047405.json:
 ```json
 {
-    "body": "Attachment [trac_5975_graph_latex_3.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_3.patch) by rbeezer created at 2009-06-06 22:47:00\n\nApply just this patch.",
+    "body": "Attachment [trac_5975_graph_latex_3.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_3.patch) by @rbeezer created at 2009-06-06 22:47:00\n\nApply just this patch.",
     "created_at": "2009-06-06T22:47:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47405",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_5975_graph_latex_3.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_3.patch) by rbeezer created at 2009-06-06 22:47:00
+Attachment [trac_5975_graph_latex_3.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_3.patch) by @rbeezer created at 2009-06-06 22:47:00
 
 Apply just this patch.
 
@@ -883,7 +883,7 @@ archive/issue_comments_047406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47406",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -898,16 +898,16 @@ Automatic addition of the correct LaTeX packages has been removed since I can't 
 archive/issue_comments_047407.json:
 ```json
 {
-    "body": "Attachment [trac_5975_ref.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_ref.patch) by jhpalmieri created at 2009-06-09 02:38:53\n\naply on top of trac_5975_graph_latex_3.patch",
+    "body": "Attachment [trac_5975_ref.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_ref.patch) by @jhpalmieri created at 2009-06-09 02:38:53\n\naply on top of trac_5975_graph_latex_3.patch",
     "created_at": "2009-06-09T02:38:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47407",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_5975_ref.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_ref.patch) by jhpalmieri created at 2009-06-09 02:38:53
+Attachment [trac_5975_ref.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_ref.patch) by @jhpalmieri created at 2009-06-09 02:38:53
 
 aply on top of trac_5975_graph_latex_3.patch
 
@@ -923,7 +923,7 @@ archive/issue_comments_047408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47408",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -961,7 +961,7 @@ archive/issue_comments_047409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47409",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1017,7 +1017,7 @@ archive/issue_comments_047410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47410",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1045,16 +1045,16 @@ I think at the moment it doesn't do this: it only changes the options if the opt
 archive/issue_comments_047411.json:
 ```json
 {
-    "body": "Attachment [trac_5975_delta_3_to_4.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_delta_3_to_4.patch) by rbeezer created at 2009-06-12 19:44:51\n\nInformation only for reviewer",
+    "body": "Attachment [trac_5975_delta_3_to_4.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_delta_3_to_4.patch) by @rbeezer created at 2009-06-12 19:44:51\n\nInformation only for reviewer",
     "created_at": "2009-06-12T19:44:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47411",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_5975_delta_3_to_4.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_delta_3_to_4.patch) by rbeezer created at 2009-06-12 19:44:51
+Attachment [trac_5975_delta_3_to_4.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_delta_3_to_4.patch) by @rbeezer created at 2009-06-12 19:44:51
 
 Information only for reviewer
 
@@ -1065,16 +1065,16 @@ Information only for reviewer
 archive/issue_comments_047412.json:
 ```json
 {
-    "body": "Attachment [trac_5975_graph_latex_4.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_4.patch) by rbeezer created at 2009-06-12 19:45:56\n\nApply only this patch",
+    "body": "Attachment [trac_5975_graph_latex_4.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_4.patch) by @rbeezer created at 2009-06-12 19:45:56\n\nApply only this patch",
     "created_at": "2009-06-12T19:45:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47412",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_5975_graph_latex_4.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_4.patch) by rbeezer created at 2009-06-12 19:45:56
+Attachment [trac_5975_graph_latex_4.patch](tarball://root/attachments/some-uuid/ticket5975/trac_5975_graph_latex_4.patch) by @rbeezer created at 2009-06-12 19:45:56
 
 Apply only this patch
 
@@ -1090,7 +1090,7 @@ archive/issue_comments_047413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47413",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1131,7 +1131,7 @@ archive/issue_comments_047414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47414",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1151,7 +1151,7 @@ archive/issue_comments_047415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47415",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1164,16 +1164,16 @@ apply on top of trac_5975_graph_latex_4.patch
 archive/issue_comments_047416.json:
 ```json
 {
-    "body": "Attachment [ref_5975.patch](tarball://root/attachments/some-uuid/ticket5975/ref_5975.patch) by rbeezer created at 2009-06-12 21:52:11\n\nHi John,\n\nThanks for the quick review and the improvements.  Fixes in reviewer patch are very welcome.\n\nI've given a lot of thought about how best to react to \"missing\" parts of a user's environment.  As you've seen, it makes doctesting difficult.  So at the moment, I'm content with the one-time warning and whatever goes boom after that.  ;-)   It did make it easier in my mind to separate a check/warning from an existence test, even though they are very similar.\n\nTwo things I did think about though.  `\\typeout` in TeX will insert text into the log and/or at the console.  So a message just before a potential problem could happen this way.  Another approach would be to put some TeX comments right before a potential problem.  These might locate information close to where folks might investigate, especially in a %latex_debug cell.  But hopefully thorough documentation and a warning will get folks on track.  I'll add some more protections if they come to me, but I'm ready to cut this one loose.\n\nMinh:  ping me if there isn't a graphic example here for the release tour.  ;-)\n\nRelease manager: Apply #6089, revision 4 patch, then latest reviewer patch.  Thanks.",
+    "body": "Attachment [ref_5975.patch](tarball://root/attachments/some-uuid/ticket5975/ref_5975.patch) by @rbeezer created at 2009-06-12 21:52:11\n\nHi John,\n\nThanks for the quick review and the improvements.  Fixes in reviewer patch are very welcome.\n\nI've given a lot of thought about how best to react to \"missing\" parts of a user's environment.  As you've seen, it makes doctesting difficult.  So at the moment, I'm content with the one-time warning and whatever goes boom after that.  ;-)   It did make it easier in my mind to separate a check/warning from an existence test, even though they are very similar.\n\nTwo things I did think about though.  `\\typeout` in TeX will insert text into the log and/or at the console.  So a message just before a potential problem could happen this way.  Another approach would be to put some TeX comments right before a potential problem.  These might locate information close to where folks might investigate, especially in a %latex_debug cell.  But hopefully thorough documentation and a warning will get folks on track.  I'll add some more protections if they come to me, but I'm ready to cut this one loose.\n\nMinh:  ping me if there isn't a graphic example here for the release tour.  ;-)\n\nRelease manager: Apply #6089, revision 4 patch, then latest reviewer patch.  Thanks.",
     "created_at": "2009-06-12T21:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47416",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [ref_5975.patch](tarball://root/attachments/some-uuid/ticket5975/ref_5975.patch) by rbeezer created at 2009-06-12 21:52:11
+Attachment [ref_5975.patch](tarball://root/attachments/some-uuid/ticket5975/ref_5975.patch) by @rbeezer created at 2009-06-12 21:52:11
 
 Hi John,
 
@@ -1199,7 +1199,7 @@ archive/issue_comments_047417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47417",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1234,7 +1234,7 @@ archive/issue_comments_047418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47418",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1278,7 +1278,7 @@ archive/issue_comments_047419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47419",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1310,7 +1310,7 @@ archive/issue_comments_047420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47420",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -1328,7 +1328,7 @@ archive/issue_comments_047421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47421",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1348,7 +1348,7 @@ archive/issue_comments_047422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47422",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1361,16 +1361,16 @@ Sample output for release tour
 archive/issue_comments_047423.json:
 ```json
 {
-    "body": "Attachment [petersen-latex.png](tarball://root/attachments/some-uuid/ticket5975/petersen-latex.png) by rbeezer created at 2009-06-15 04:56:22\n\nMinh,\n\nFor the release tour.\n\nSee PNG screenshot of PDF output.  Complete code required to get the PDF:\n\n\n```\ng = graphs.PetersenGraph()\ng.set_latex_options(tkz_style='Art')\nview(g, pdflatex=True)\n```\n\n\nMostly this patch puts in place the infrastructure to make many of the features of the the tkz-graph latex package available.  Only one option (tkz_style) is actually implemented at the moment - more will follow.",
+    "body": "Attachment [petersen-latex.png](tarball://root/attachments/some-uuid/ticket5975/petersen-latex.png) by @rbeezer created at 2009-06-15 04:56:22\n\nMinh,\n\nFor the release tour.\n\nSee PNG screenshot of PDF output.  Complete code required to get the PDF:\n\n\n```\ng = graphs.PetersenGraph()\ng.set_latex_options(tkz_style='Art')\nview(g, pdflatex=True)\n```\n\n\nMostly this patch puts in place the infrastructure to make many of the features of the the tkz-graph latex package available.  Only one option (tkz_style) is actually implemented at the moment - more will follow.",
     "created_at": "2009-06-15T04:56:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5975#issuecomment-47423",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [petersen-latex.png](tarball://root/attachments/some-uuid/ticket5975/petersen-latex.png) by rbeezer created at 2009-06-15 04:56:22
+Attachment [petersen-latex.png](tarball://root/attachments/some-uuid/ticket5975/petersen-latex.png) by @rbeezer created at 2009-06-15 04:56:22
 
 Minh,
 

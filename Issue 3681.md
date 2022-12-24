@@ -62,7 +62,7 @@ archive/issue_comments_026066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3681#issuecomment-26066",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,16 +116,16 @@ William
 archive/issue_comments_026067.json:
 ```json
 {
-    "body": "Attachment [sage-3681-patch2.patch](tarball://root/attachments/some-uuid/ticket3681/sage-3681-patch2.patch) by was created at 2008-07-20 13:58:53",
+    "body": "Attachment [sage-3681-patch2.patch](tarball://root/attachments/some-uuid/ticket3681/sage-3681-patch2.patch) by @williamstein created at 2008-07-20 13:58:53",
     "created_at": "2008-07-20T13:58:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3681#issuecomment-26067",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3681-patch2.patch](tarball://root/attachments/some-uuid/ticket3681/sage-3681-patch2.patch) by was created at 2008-07-20 13:58:53
+Attachment [sage-3681-patch2.patch](tarball://root/attachments/some-uuid/ticket3681/sage-3681-patch2.patch) by @williamstein created at 2008-07-20 13:58:53
 
 
 
@@ -166,7 +166,7 @@ archive/issue_comments_026069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3681#issuecomment-26069",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -179,16 +179,16 @@ I cannot say that I understand any better, but I'll certainly give the first pat
 archive/issue_comments_026070.json:
 ```json
 {
-    "body": "Attachment [sage-3681-part3-ref_response.patch](tarball://root/attachments/some-uuid/ticket3681/sage-3681-part3-ref_response.patch) by was created at 2008-07-21 14:52:48\n\npatch attached that addresses mabshoff's nitpicks.",
+    "body": "Attachment [sage-3681-part3-ref_response.patch](tarball://root/attachments/some-uuid/ticket3681/sage-3681-part3-ref_response.patch) by @williamstein created at 2008-07-21 14:52:48\n\npatch attached that addresses mabshoff's nitpicks.",
     "created_at": "2008-07-21T14:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3681#issuecomment-26070",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3681-part3-ref_response.patch](tarball://root/attachments/some-uuid/ticket3681/sage-3681-part3-ref_response.patch) by was created at 2008-07-21 14:52:48
+Attachment [sage-3681-part3-ref_response.patch](tarball://root/attachments/some-uuid/ticket3681/sage-3681-part3-ref_response.patch) by @williamstein created at 2008-07-21 14:52:48
 
 patch attached that addresses mabshoff's nitpicks.
 
@@ -204,7 +204,7 @@ archive/issue_comments_026071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3681#issuecomment-26071",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_026072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3681#issuecomment-26072",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_026073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3681#issuecomment-26073",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007411.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  hivert mhansen sage-combinat\n\nKeywords: Robinson-Schensted\n\nThe main improvement comes from the use of a binary search, just as in #7408.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7411\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @hivert @mwhansen sage-combinat\n\nKeywords: Robinson-Schensted\n\nThe main improvement comes from the use of a binary search, just as in #7408.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7411\n\n",
     "created_at": "2009-11-08T14:01:29Z",
     "labels": [
         "combinatorics",
@@ -17,9 +17,9 @@ archive/issues_007411.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  hivert mhansen sage-combinat
+CC:  @hivert @mwhansen sage-combinat
 
 Keywords: Robinson-Schensted
 
@@ -95,7 +95,7 @@ archive/issue_comments_062366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7411#issuecomment-62366",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_062367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7411#issuecomment-62367",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_062368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7411#issuecomment-62368",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

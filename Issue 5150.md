@@ -3,7 +3,7 @@
 archive/issues_005150.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mabshoff schilly\n\nKeywords: devmap\n\nAs the subject says. The devmap entry of Nils-Peter Skoruppa as listed at\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\n\ndoesn't do justice to his contributions. Looking through #3857, notice that he has also contributed to optimizing some binary quadratic forms code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5150\n\n",
+    "body": "Assignee: tba\n\nCC:  mabshoff @haraldschilly\n\nKeywords: devmap\n\nAs the subject says. The devmap entry of Nils-Peter Skoruppa as listed at\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\n\ndoesn't do justice to his contributions. Looking through #3857, notice that he has also contributed to optimizing some binary quadratic forms code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5150\n\n",
     "created_at": "2009-02-01T12:34:08Z",
     "labels": [
         "website/wiki",
@@ -19,7 +19,7 @@ archive/issues_005150.json:
 ```
 Assignee: tba
 
-CC:  mabshoff schilly
+CC:  mabshoff @haraldschilly
 
 Keywords: devmap
 
@@ -114,7 +114,7 @@ archive/issue_comments_039403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5150#issuecomment-39403",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_039405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5150#issuecomment-39405",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

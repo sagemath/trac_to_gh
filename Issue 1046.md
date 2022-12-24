@@ -3,7 +3,7 @@
 archive/issues_001046.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nTry to run this code:\n\n\n```\nsage: sr = mq.SR(4,4,4,8, aes_mode=True, star=True, allow_zero_inversions=True)\nsage: F,s = sr.polynomial_system()\n```\n\n\nand wait for it to terminate (~17s on my 2.33Ghz system) in a fresh SAGE session. The second run takes only 2s.\n\n\nI profiled this with hotshot like this:\n\n\n```\nsage: import hotshot\nsage: filename = \"pythongrind.prof\"\nsage: prof = hotshot.Profile(filename, lineevents=1)\nsage: prof.run(\"sr.polynomial_system()\")\n<hotshot.Profile instance at 0x414c11ec>\nsage: prof.close()\n```\n\n\nand converted the result to cachegrind/calltree format\n\n\n```\nhotshot2calltree -o cachegrind.out.42 pythongrind.prof\n```\n\n\nto inspect the result with kcachegrind. Apparently, both `sr.round_polynomials` and `sr.key_schedule_polynomials` call `MatrixSpace.get_action_impl` which in turn calls `pushout` which calls `construction_tower`. `construction_tower` creates *7164* polynomial rings and this ring construction takes up 85% of the entire runtime. \n\nSo apparently the most time is spent in coercion (which also explains the better runtime for the second run) and I believe this is due to a bug.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1046\n\n",
+    "body": "Assignee: @robertwb\n\nTry to run this code:\n\n\n```\nsage: sr = mq.SR(4,4,4,8, aes_mode=True, star=True, allow_zero_inversions=True)\nsage: F,s = sr.polynomial_system()\n```\n\n\nand wait for it to terminate (~17s on my 2.33Ghz system) in a fresh SAGE session. The second run takes only 2s.\n\n\nI profiled this with hotshot like this:\n\n\n```\nsage: import hotshot\nsage: filename = \"pythongrind.prof\"\nsage: prof = hotshot.Profile(filename, lineevents=1)\nsage: prof.run(\"sr.polynomial_system()\")\n<hotshot.Profile instance at 0x414c11ec>\nsage: prof.close()\n```\n\n\nand converted the result to cachegrind/calltree format\n\n\n```\nhotshot2calltree -o cachegrind.out.42 pythongrind.prof\n```\n\n\nto inspect the result with kcachegrind. Apparently, both `sr.round_polynomials` and `sr.key_schedule_polynomials` call `MatrixSpace.get_action_impl` which in turn calls `pushout` which calls `construction_tower`. `construction_tower` creates *7164* polynomial rings and this ring construction takes up 85% of the entire runtime. \n\nSo apparently the most time is spent in coercion (which also explains the better runtime for the second run) and I believe this is due to a bug.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1046\n\n",
     "created_at": "2007-10-31T23:57:30Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_001046.json:
     "title": "speed regression in mq.SR.polynomial_system()  due to new coercion code?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1046",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 Try to run this code:
 
@@ -73,7 +73,7 @@ archive/issue_comments_006363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1046#issuecomment-6363",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_006364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1046#issuecomment-6364",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_006365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1046#issuecomment-6365",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_006366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1046#issuecomment-6366",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_006367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1046#issuecomment-6367",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_006368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1046#issuecomment-6368",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_006369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1046#issuecomment-6369",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -267,16 +267,16 @@ This is because the whole of the coercion branch was not merged over, just the c
 archive/issue_comments_006370.json:
 ```json
 {
-    "body": "Attachment [1046-mpoly-coerce-speed.patch](tarball://root/attachments/some-uuid/ticket1046/1046-mpoly-coerce-speed.patch) by robertwb created at 2008-10-16 20:39:35\n\nThe attached patch should resolve this issue.",
+    "body": "Attachment [1046-mpoly-coerce-speed.patch](tarball://root/attachments/some-uuid/ticket1046/1046-mpoly-coerce-speed.patch) by @robertwb created at 2008-10-16 20:39:35\n\nThe attached patch should resolve this issue.",
     "created_at": "2008-10-16T20:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1046#issuecomment-6370",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1046-mpoly-coerce-speed.patch](tarball://root/attachments/some-uuid/ticket1046/1046-mpoly-coerce-speed.patch) by robertwb created at 2008-10-16 20:39:35
+Attachment [1046-mpoly-coerce-speed.patch](tarball://root/attachments/some-uuid/ticket1046/1046-mpoly-coerce-speed.patch) by @robertwb created at 2008-10-16 20:39:35
 
 The attached patch should resolve this issue.
 
@@ -403,7 +403,7 @@ archive/issue_comments_006374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1046#issuecomment-6374",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -416,16 +416,16 @@ Oh, I didn't test -t -long. I'll look into that.
 archive/issue_comments_006375.json:
 ```json
 {
-    "body": "Attachment [1046-fixes.patch](tarball://root/attachments/some-uuid/ticket1046/1046-fixes.patch) by robertwb created at 2008-10-21 17:34:42",
+    "body": "Attachment [1046-fixes.patch](tarball://root/attachments/some-uuid/ticket1046/1046-fixes.patch) by @robertwb created at 2008-10-21 17:34:42",
     "created_at": "2008-10-21T17:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1046#issuecomment-6375",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1046-fixes.patch](tarball://root/attachments/some-uuid/ticket1046/1046-fixes.patch) by robertwb created at 2008-10-21 17:34:42
+Attachment [1046-fixes.patch](tarball://root/attachments/some-uuid/ticket1046/1046-fixes.patch) by @robertwb created at 2008-10-21 17:34:42
 
 
 
@@ -439,7 +439,7 @@ archive/issue_comments_006376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1046#issuecomment-6376",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -515,7 +515,7 @@ archive/issue_comments_006380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1046#issuecomment-6380",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

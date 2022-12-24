@@ -3,7 +3,7 @@
 archive/issues_004752.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: list_plot3d, graphics\n\nThe following is an example of the problem (which was first noticed by \"Snark\" on the IRC sage-devel channel):\n\n```\nsage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]\nsage: show(list_plot3d(pts))\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\npython(2829) malloc: *** error for object 0xed2f1f0: incorrect checksum for freed object - object was probably modified after being freed, break at szone_error to debug\npython(2829) malloc: *** set a breakpoint in szone_error to debug\n```\n\n\nIt doesn't crash if the pts are converted to numerical values, although the interpolated surface looks bad no matter which interpolation setting is used.  The example points are on a sphere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4752\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: list_plot3d, graphics\n\nThe following is an example of the problem (which was first noticed by \"Snark\" on the IRC sage-devel channel):\n\n```\nsage: pts =[(-4/5, -2/5, -2/5), (-4/5, -2/5, 2/5), (-4/5, 2/5, -2/5), (-4/5, 2/5, 2/5), (-2/5, -4/5, -2/5), (-2/5, -4/5, 2/5), (-2/5, -2/5, -4/5), (-2/5, -2/5, 4/5), (-2/5, 2/5, -4/5), (-2/5, 2/5, 4/5), (-2/5, 4/5, -2/5), (-2/5, 4/5, 2/5), (2/5, -4/5, -2/5), (2/5, -4/5, 2/5), (2/5, -2/5, -4/5), (2/5, -2/5, 4/5), (2/5, 2/5, -4/5), (2/5, 2/5, 4/5), (2/5, 4/5, -2/5), (2/5, 4/5, 2/5), (4/5, -2/5, -2/5), (4/5, -2/5, 2/5), (4/5, 2/5, -2/5), (4/5, 2/5, 2/5)]\nsage: show(list_plot3d(pts))\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\npython(2829) malloc: *** error for object 0xed2f1f0: incorrect checksum for freed object - object was probably modified after being freed, break at szone_error to debug\npython(2829) malloc: *** set a breakpoint in szone_error to debug\n```\n\n\nIt doesn't crash if the pts are converted to numerical values, although the interpolated surface looks bad no matter which interpolation setting is used.  The example points are on a sphere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4752\n\n",
     "created_at": "2008-12-10T21:11:34Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_004752.json:
     "user": "mhampton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: list_plot3d, graphics
 
@@ -59,7 +59,7 @@ archive/issue_comments_035957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4752#issuecomment-35957",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_035958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4752#issuecomment-35958",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_035964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4752#issuecomment-35964",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_035970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4752#issuecomment-35970",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_035974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4752#issuecomment-35974",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_035975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4752#issuecomment-35975",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -486,16 +486,16 @@ Never mind, here's a patch which keeps the doctest.  This one is better, so I'm 
 archive/issue_comments_035976.json:
 ```json
 {
-    "body": "Attachment [4752-doctest.patch](tarball://root/attachments/some-uuid/ticket4752/4752-doctest.patch) by jhpalmieri created at 2009-02-12 06:08:15\n\napply this on top of trac_4752_patch.2.patch",
+    "body": "Attachment [4752-doctest.patch](tarball://root/attachments/some-uuid/ticket4752/4752-doctest.patch) by @jhpalmieri created at 2009-02-12 06:08:15\n\napply this on top of trac_4752_patch.2.patch",
     "created_at": "2009-02-12T06:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4752#issuecomment-35976",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [4752-doctest.patch](tarball://root/attachments/some-uuid/ticket4752/4752-doctest.patch) by jhpalmieri created at 2009-02-12 06:08:15
+Attachment [4752-doctest.patch](tarball://root/attachments/some-uuid/ticket4752/4752-doctest.patch) by @jhpalmieri created at 2009-02-12 06:08:15
 
 apply this on top of trac_4752_patch.2.patch
 

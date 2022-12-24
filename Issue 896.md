@@ -3,7 +3,7 @@
 archive/issues_000896.json:
 ```json
 {
-    "body": "Assignee: was\n\nAround line 923:\n\n```\n    # TODO: TEMPORARILY DISABLED due to bug on 64-bit sage.math:\n    #  A = matrix(Integers(389),4,range(16)); A._echelon_strassen(4)\n    # *** glibc detected *** free(): invalid next size (fast): 0x0000000000fb15e0 ***\n    # due to error in set_to memcpy on 64-bit\n    cdef matrix_window_c(self, Py_ssize_t row, Py_ssize_t col,\n                        Py_ssize_t nrows, Py_ssize_t ncols):\n```\n\nI ran \n\n```\nA = matrix(Integers(389),4,range(16)); A._echelon_strassen(4)\n```\n\nunder valgrind on sage.math and nothing turned up. So I believe this comment should be removed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/896\n\n",
+    "body": "Assignee: @williamstein\n\nAround line 923:\n\n```\n    # TODO: TEMPORARILY DISABLED due to bug on 64-bit sage.math:\n    #  A = matrix(Integers(389),4,range(16)); A._echelon_strassen(4)\n    # *** glibc detected *** free(): invalid next size (fast): 0x0000000000fb15e0 ***\n    # due to error in set_to memcpy on 64-bit\n    cdef matrix_window_c(self, Py_ssize_t row, Py_ssize_t col,\n                        Py_ssize_t nrows, Py_ssize_t ncols):\n```\n\nI ran \n\n```\nA = matrix(Integers(389),4,range(16)); A._echelon_strassen(4)\n```\n\nunder valgrind on sage.math and nothing turned up. So I believe this comment should be removed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/896\n\n",
     "created_at": "2007-10-14T14:15:59Z",
     "labels": [
         "modular forms",
@@ -17,7 +17,7 @@ archive/issues_000896.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Around line 923:
 
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/896
 archive/issue_comments_005517.json:
 ```json
 {
-    "body": "Attachment [6718.patch](tarball://root/attachments/some-uuid/ticket896/6718.patch) by mhansen created at 2007-10-15 06:10:42",
+    "body": "Attachment [6718.patch](tarball://root/attachments/some-uuid/ticket896/6718.patch) by @mwhansen created at 2007-10-15 06:10:42",
     "created_at": "2007-10-15T06:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/896#issuecomment-5517",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [6718.patch](tarball://root/attachments/some-uuid/ticket896/6718.patch) by mhansen created at 2007-10-15 06:10:42
+Attachment [6718.patch](tarball://root/attachments/some-uuid/ticket896/6718.patch) by @mwhansen created at 2007-10-15 06:10:42
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_005518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/896#issuecomment-5518",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_005519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/896#issuecomment-5519",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

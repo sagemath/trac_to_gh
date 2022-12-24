@@ -3,7 +3,7 @@
 archive/issues_008671.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\nsage: P.<n> = QQ[]\nsage: F = P.fraction_field()\nsage: P.one_element()//F.one_element()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n.../sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial.__floordiv__ (sage/rings/polynomial/polynomial_element.c:14608)()\n\n.../sage/structure/element.so in sage.structure.element.NamedBinopMethod.__call__ (sage/structure/element.c:22812)()\n\n.../sage/structure/element.so in sage.structure.element.FieldElement.quo_rem (sage/structure/element.c:16670)()\n\n...\nAttributeError: 'sage.rings.fraction_field_element.FractionFieldElement' object has no attribute '_parent'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8671\n\n",
+    "body": "Assignee: @burcin\n\n\n```\nsage: P.<n> = QQ[]\nsage: F = P.fraction_field()\nsage: P.one_element()//F.one_element()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n.../sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial.__floordiv__ (sage/rings/polynomial/polynomial_element.c:14608)()\n\n.../sage/structure/element.so in sage.structure.element.NamedBinopMethod.__call__ (sage/structure/element.c:22812)()\n\n.../sage/structure/element.so in sage.structure.element.FieldElement.quo_rem (sage/structure/element.c:16670)()\n\n...\nAttributeError: 'sage.rings.fraction_field_element.FractionFieldElement' object has no attribute '_parent'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8671\n\n",
     "created_at": "2010-04-11T12:19:05Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_008671.json:
     "title": "FieldElement.quo_rem broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8671",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -54,7 +54,7 @@ archive/issue_comments_078910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8671#issuecomment-78910",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -67,16 +67,16 @@ Changing status from new to needs_review.
 archive/issue_comments_078911.json:
 ```json
 {
-    "body": "Attachment [trac_8671-field_element_quo_rem.patch](tarball://root/attachments/some-uuid/ticket8671/trac_8671-field_element_quo_rem.patch) by burcin created at 2010-04-11 12:29:32",
+    "body": "Attachment [trac_8671-field_element_quo_rem.patch](tarball://root/attachments/some-uuid/ticket8671/trac_8671-field_element_quo_rem.patch) by @burcin created at 2010-04-11 12:29:32",
     "created_at": "2010-04-11T12:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8671#issuecomment-78911",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8671-field_element_quo_rem.patch](tarball://root/attachments/some-uuid/ticket8671/trac_8671-field_element_quo_rem.patch) by burcin created at 2010-04-11 12:29:32
+Attachment [trac_8671-field_element_quo_rem.patch](tarball://root/attachments/some-uuid/ticket8671/trac_8671-field_element_quo_rem.patch) by @burcin created at 2010-04-11 12:29:32
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_078912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8671#issuecomment-78912",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_078913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8671#issuecomment-78913",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_078914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8671#issuecomment-78914",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_078915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8671#issuecomment-78915",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_078916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8671#issuecomment-78916",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

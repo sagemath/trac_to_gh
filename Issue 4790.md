@@ -14,7 +14,7 @@ archive/issues_004790.json:
     "title": "sage -t does not take into account the current directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4790",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 Assignee: mabshoff
@@ -58,7 +58,7 @@ archive/issue_comments_036310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4790#issuecomment-36310",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_036311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4790#issuecomment-36311",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_036312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4790#issuecomment-36312",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_036313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4790#issuecomment-36313",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

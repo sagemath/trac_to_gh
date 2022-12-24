@@ -3,7 +3,7 @@
 archive/issues_007377.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  burcin saliola jpflori\n\nThis ticket is dependent on #6781, #7287.\n\nWith maxima-as-an-ecl-library and ecl accessible as a library, we can start interfacing with maxima via a binary library interface.\nThis should be more efficient and more robust, because expressions\ncan be transmitted in a much richer format than text and parsing does\nnot have to recognise error messages and questions (since communication does not go via STDIN/STDOUT anymore)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7377\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @burcin @saliola jpflori\n\nThis ticket is dependent on #6781, #7287.\n\nWith maxima-as-an-ecl-library and ecl accessible as a library, we can start interfacing with maxima via a binary library interface.\nThis should be more efficient and more robust, because expressions\ncan be transmitted in a much richer format than text and parsing does\nnot have to recognise error messages and questions (since communication does not go via STDIN/STDOUT anymore)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7377\n\n",
     "created_at": "2009-11-03T08:05:51Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_007377.json:
     "title": "Symbolic Ring to Maxima via EclObject",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7377",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  burcin saliola jpflori
+CC:  @burcin @saliola jpflori
 
 This ticket is dependent on #6781, #7287.
 
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7377
 archive/issue_comments_061819.json:
 ```json
 {
-    "body": "Attachment [sagemax.py](tarball://root/attachments/some-uuid/ticket7377/sagemax.py) by nbruin created at 2009-11-03 08:06:44\n\nexample package for how to accomplish said interface",
+    "body": "Attachment [sagemax.py](tarball://root/attachments/some-uuid/ticket7377/sagemax.py) by @nbruin created at 2009-11-03 08:06:44\n\nexample package for how to accomplish said interface",
     "created_at": "2009-11-03T08:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61819",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [sagemax.py](tarball://root/attachments/some-uuid/ticket7377/sagemax.py) by nbruin created at 2009-11-03 08:06:44
+Attachment [sagemax.py](tarball://root/attachments/some-uuid/ticket7377/sagemax.py) by @nbruin created at 2009-11-03 08:06:44
 
 example package for how to accomplish said interface
 
@@ -59,16 +59,16 @@ example package for how to accomplish said interface
 archive/issue_comments_061820.json:
 ```json
 {
-    "body": "Changing assignee from burcin to nbruin.",
+    "body": "Changing assignee from @burcin to @nbruin.",
     "created_at": "2009-11-03T08:08:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61820",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Changing assignee from burcin to nbruin.
+Changing assignee from @burcin to @nbruin.
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_061821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61821",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -200,16 +200,16 @@ at all.
 archive/issue_comments_061822.json:
 ```json
 {
-    "body": "Attachment [7377-abstract-maxima.patch](tarball://root/attachments/some-uuid/ticket7377/7377-abstract-maxima.patch) by robertwb created at 2010-01-17 06:33:44",
+    "body": "Attachment [7377-abstract-maxima.patch](tarball://root/attachments/some-uuid/ticket7377/7377-abstract-maxima.patch) by @robertwb created at 2010-01-17 06:33:44",
     "created_at": "2010-01-17T06:33:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61822",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7377-abstract-maxima.patch](tarball://root/attachments/some-uuid/ticket7377/7377-abstract-maxima.patch) by robertwb created at 2010-01-17 06:33:44
+Attachment [7377-abstract-maxima.patch](tarball://root/attachments/some-uuid/ticket7377/7377-abstract-maxima.patch) by @robertwb created at 2010-01-17 06:33:44
 
 
 
@@ -223,7 +223,7 @@ archive/issue_comments_061823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61823",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_061824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61824",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_061825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61825",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -288,16 +288,16 @@ Maxima via library; used by calculus
 archive/issue_comments_061826.json:
 ```json
 {
-    "body": "Attachment [maxlib.patch](tarball://root/attachments/some-uuid/ticket7377/maxlib.patch) by nbruin created at 2010-01-19 09:15:05\n\nAnother update:\n\n* change to symbolic/assumptions.py to not try: ... error: pass (gentler removal of assumptions makes the interface behave a bit better)\n\n* monkey patch maxima to throw error on divergent integral instead of *printing* \"Principal Value\" and giving an answer.\n(maxima does behave as documented, so it is a matter of taste to change maxima's behaviour)\n\n* slightly more pretty/informative error messages\n\nDoctests failures on calculus.py are only 5 and are restricted to whitespace and differently formatted error messages (in other words, for real use, the two interfaces shouldn't be distinguishable anymore).",
+    "body": "Attachment [maxlib.patch](tarball://root/attachments/some-uuid/ticket7377/maxlib.patch) by @nbruin created at 2010-01-19 09:15:05\n\nAnother update:\n\n* change to symbolic/assumptions.py to not try: ... error: pass (gentler removal of assumptions makes the interface behave a bit better)\n\n* monkey patch maxima to throw error on divergent integral instead of *printing* \"Principal Value\" and giving an answer.\n(maxima does behave as documented, so it is a matter of taste to change maxima's behaviour)\n\n* slightly more pretty/informative error messages\n\nDoctests failures on calculus.py are only 5 and are restricted to whitespace and differently formatted error messages (in other words, for real use, the two interfaces shouldn't be distinguishable anymore).",
     "created_at": "2010-01-19T09:15:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61826",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [maxlib.patch](tarball://root/attachments/some-uuid/ticket7377/maxlib.patch) by nbruin created at 2010-01-19 09:15:05
+Attachment [maxlib.patch](tarball://root/attachments/some-uuid/ticket7377/maxlib.patch) by @nbruin created at 2010-01-19 09:15:05
 
 Another update:
 
@@ -322,7 +322,7 @@ archive/issue_comments_061827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61827",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_061828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61828",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -357,16 +357,16 @@ Patch to get faster calculus routines
 archive/issue_comments_061829.json:
 ```json
 {
-    "body": "Attachment [fastcalculus.patch](tarball://root/attachments/some-uuid/ticket7377/fastcalculus.patch) by nbruin created at 2010-02-09 06:05:29\n\nThe latest patch must be applied after `abstract-maxima` and `maxlib`. It adds routines `sr_to_max` and `max_to_sr` that try to translate between maxima's internal datastructure and SR while avoiding string transformations as much as possible. It falls back to the old interface to establish many of its symbol and operator translations, but takes note of them and uses a dictionary directly the next time around. It also avoids the overhead of binding expressions to maxima variables.\n\nto go back and forth, `maxima_lib.MaximaElement()` as a new function {ecl()} which passes back the underlying EclObject. Conversely, `maxima_lib.maxima` accepts EclObjects and returns a corresponding expect interface object.\n\nThis patch also rewrite calculus integral, limit and sum to directly pass back and forth to maxima. There is a lot of overhead in SR itself, so speed gains are not that big. New times are:\n\n```\nsage: timeit(\"integral(cos(x),x)\")\n625 loops, best of 3: 1.1 ms per loop\nsage: timeit(\"integral(cos(x^2),x)\")\n5 loops, best of 3: 31.2 ms per loop\n```\n\nwhere old were\n\n```\nsage: timeit(\"integral(cos(x),x)\")\n25 loops, best of 3: 8.08 ms per loop\nsage: timeit(\"integral(cos(x^2),x)\")\n5 loops, best of 3: 37 ms per loop\n```\n\n\nIt is easy to swap the old and new interfaces: simply comment/uncomment the appropriate lines in `calculus.py` to define the appropriate calculus.maxima\n\nThere are 7 doctest failures in `calculus.py`. All of them are whitespace, errors and changed precision in floats:\nthe binary interface passes `double`s directly, so there are no digits rounded. This affects some doctests. In other words, as far is `calculus.py` is concerned the two interfaces are functionally equivalent.",
+    "body": "Attachment [fastcalculus.patch](tarball://root/attachments/some-uuid/ticket7377/fastcalculus.patch) by @nbruin created at 2010-02-09 06:05:29\n\nThe latest patch must be applied after `abstract-maxima` and `maxlib`. It adds routines `sr_to_max` and `max_to_sr` that try to translate between maxima's internal datastructure and SR while avoiding string transformations as much as possible. It falls back to the old interface to establish many of its symbol and operator translations, but takes note of them and uses a dictionary directly the next time around. It also avoids the overhead of binding expressions to maxima variables.\n\nto go back and forth, `maxima_lib.MaximaElement()` as a new function {ecl()} which passes back the underlying EclObject. Conversely, `maxima_lib.maxima` accepts EclObjects and returns a corresponding expect interface object.\n\nThis patch also rewrite calculus integral, limit and sum to directly pass back and forth to maxima. There is a lot of overhead in SR itself, so speed gains are not that big. New times are:\n\n```\nsage: timeit(\"integral(cos(x),x)\")\n625 loops, best of 3: 1.1 ms per loop\nsage: timeit(\"integral(cos(x^2),x)\")\n5 loops, best of 3: 31.2 ms per loop\n```\n\nwhere old were\n\n```\nsage: timeit(\"integral(cos(x),x)\")\n25 loops, best of 3: 8.08 ms per loop\nsage: timeit(\"integral(cos(x^2),x)\")\n5 loops, best of 3: 37 ms per loop\n```\n\n\nIt is easy to swap the old and new interfaces: simply comment/uncomment the appropriate lines in `calculus.py` to define the appropriate calculus.maxima\n\nThere are 7 doctest failures in `calculus.py`. All of them are whitespace, errors and changed precision in floats:\nthe binary interface passes `double`s directly, so there are no digits rounded. This affects some doctests. In other words, as far is `calculus.py` is concerned the two interfaces are functionally equivalent.",
     "created_at": "2010-02-09T06:05:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61829",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [fastcalculus.patch](tarball://root/attachments/some-uuid/ticket7377/fastcalculus.patch) by nbruin created at 2010-02-09 06:05:29
+Attachment [fastcalculus.patch](tarball://root/attachments/some-uuid/ticket7377/fastcalculus.patch) by @nbruin created at 2010-02-09 06:05:29
 
 The latest patch must be applied after `abstract-maxima` and `maxlib`. It adds routines `sr_to_max` and `max_to_sr` that try to translate between maxima's internal datastructure and SR while avoiding string transformations as much as possible. It falls back to the old interface to establish many of its symbol and operator translations, but takes note of them and uses a dictionary directly the next time around. It also avoids the overhead of binding expressions to maxima variables.
 
@@ -408,7 +408,7 @@ archive/issue_comments_061830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61830",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_061831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61831",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_061832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61832",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -572,16 +572,16 @@ Rebased on Sage 4.6.1
 archive/issue_comments_061837.json:
 ```json
 {
-    "body": "Attachment [trac_7377-maximalib-rebased.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-maximalib-rebased.patch) by fbissey created at 2011-01-24 09:38:15\n\nWhat happens if you just remove that line?\nI just noticed a typo - marking makes you terrible at that kind of things :)\n\"We begin here by initializing maxima in library more\"\n                                                   ^",
+    "body": "Attachment [trac_7377-maximalib-rebased.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-maximalib-rebased.patch) by @kiwifb created at 2011-01-24 09:38:15\n\nWhat happens if you just remove that line?\nI just noticed a typo - marking makes you terrible at that kind of things :)\n\"We begin here by initializing maxima in library more\"\n                                                   ^",
     "created_at": "2011-01-24T09:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61837",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_7377-maximalib-rebased.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-maximalib-rebased.patch) by fbissey created at 2011-01-24 09:38:15
+Attachment [trac_7377-maximalib-rebased.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-maximalib-rebased.patch) by @kiwifb created at 2011-01-24 09:38:15
 
 What happens if you just remove that line?
 I just noticed a typo - marking makes you terrible at that kind of things :)
@@ -640,7 +640,7 @@ archive/issue_comments_061839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61839",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -698,7 +698,7 @@ archive/issue_comments_061842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61842",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -716,7 +716,7 @@ archive/issue_comments_061843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61843",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -779,7 +779,7 @@ archive/issue_comments_061844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61844",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -807,7 +807,7 @@ archive/issue_comments_061845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61845",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -829,7 +829,7 @@ archive/issue_comments_061846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61846",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -898,7 +898,7 @@ archive/issue_comments_061848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61848",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -956,7 +956,7 @@ archive/issue_comments_061849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61849",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -974,7 +974,7 @@ archive/issue_comments_061850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61850",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1145,7 +1145,7 @@ archive/issue_comments_061851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61851",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1213,7 +1213,7 @@ archive/issue_comments_061852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61852",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1231,7 +1231,7 @@ archive/issue_comments_061853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61853",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1253,7 +1253,7 @@ archive/issue_comments_061854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61854",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1332,7 +1332,7 @@ archive/issue_comments_061855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61855",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1373,7 +1373,7 @@ archive/issue_comments_061856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61856",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1689,7 +1689,7 @@ archive/issue_comments_061857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61857",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1731,7 +1731,7 @@ archive/issue_comments_061858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61858",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1754,7 +1754,7 @@ archive/issue_comments_061859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61859",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -1871,16 +1871,16 @@ It does make me a bit pessimistic, though: Maxima improves some of its error rep
 archive/issue_comments_061860.json:
 ```json
 {
-    "body": "Attachment [errorcatching.patch](tarball://root/attachments/some-uuid/ticket7377/errorcatching.patch) by nbruin created at 2011-01-30 07:25:59\n\nimprove maxima-eval error reporting",
+    "body": "Attachment [errorcatching.patch](tarball://root/attachments/some-uuid/ticket7377/errorcatching.patch) by @nbruin created at 2011-01-30 07:25:59\n\nimprove maxima-eval error reporting",
     "created_at": "2011-01-30T07:25:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61860",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [errorcatching.patch](tarball://root/attachments/some-uuid/ticket7377/errorcatching.patch) by nbruin created at 2011-01-30 07:25:59
+Attachment [errorcatching.patch](tarball://root/attachments/some-uuid/ticket7377/errorcatching.patch) by @nbruin created at 2011-01-30 07:25:59
 
 improve maxima-eval error reporting
 
@@ -1896,7 +1896,7 @@ archive/issue_comments_061861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61861",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -1944,7 +1944,7 @@ archive/issue_comments_061862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61862",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -1977,7 +1977,7 @@ archive/issue_comments_061863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61863",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2001,7 +2001,7 @@ archive/issue_comments_061864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61864",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -2033,7 +2033,7 @@ archive/issue_comments_061865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61865",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2102,7 +2102,7 @@ archive/issue_comments_061866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61866",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2120,7 +2120,7 @@ archive/issue_comments_061867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61867",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2169,7 +2169,7 @@ archive/issue_comments_061868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61868",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -2224,16 +2224,16 @@ Finally for (4): I know maxima functions like li[n] and psi[n] are not translate
 archive/issue_comments_061869.json:
 ```json
 {
-    "body": "Attachment [trac_7377-fastcalculus-p1.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-fastcalculus-p1.patch) by nbruin created at 2011-02-11 09:06:50\n\nimproved fastcalculus (includes previous fixes)",
+    "body": "Attachment [trac_7377-fastcalculus-p1.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-fastcalculus-p1.patch) by @nbruin created at 2011-02-11 09:06:50\n\nimproved fastcalculus (includes previous fixes)",
     "created_at": "2011-02-11T09:06:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61869",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [trac_7377-fastcalculus-p1.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-fastcalculus-p1.patch) by nbruin created at 2011-02-11 09:06:50
+Attachment [trac_7377-fastcalculus-p1.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-fastcalculus-p1.patch) by @nbruin created at 2011-02-11 09:06:50
 
 improved fastcalculus (includes previous fixes)
 
@@ -2249,7 +2249,7 @@ archive/issue_comments_061870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61870",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -2312,7 +2312,7 @@ archive/issue_comments_061871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61871",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2333,7 +2333,7 @@ archive/issue_comments_061872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61872",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -2346,16 +2346,16 @@ improved formatting of error message when maxima asks a question
 archive/issue_comments_061873.json:
 ```json
 {
-    "body": "Attachment [trac_7377-better-ask-error.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-better-ask-error.patch) by nbruin created at 2011-02-14 07:12:01\n\nthe lisp function `retrieve` in maxima is responsible for asking questions, so we just monkey-patch it to throw an error with an informative message instead. The patch trac_7377-better-ask-error.patch improves the readability of this message by executing exactly the original code in retrieve, but wrapped in a `(with-output-to-string (*standard-output*) ...)`. The method is generally applicable and may be useful in adapting other printing bits.\n\nOddly enough, this patch does not invalidate any additional doctests, but:\n\n```\nsage -t  \"devel/sage-devel/sage/interfaces/maxima_lib.py\"   \n**********************************************************************\nError: TAB character found.\n```\n\nso perhaps maxima inserts a TAB in the error message. Are TABs not allowed in doctest output?\n(it looks like one gets produced and matched by a \"...\" in the doctest template). A `sage -t --verbose` shows that no individual test fails.",
+    "body": "Attachment [trac_7377-better-ask-error.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-better-ask-error.patch) by @nbruin created at 2011-02-14 07:12:01\n\nthe lisp function `retrieve` in maxima is responsible for asking questions, so we just monkey-patch it to throw an error with an informative message instead. The patch trac_7377-better-ask-error.patch improves the readability of this message by executing exactly the original code in retrieve, but wrapped in a `(with-output-to-string (*standard-output*) ...)`. The method is generally applicable and may be useful in adapting other printing bits.\n\nOddly enough, this patch does not invalidate any additional doctests, but:\n\n```\nsage -t  \"devel/sage-devel/sage/interfaces/maxima_lib.py\"   \n**********************************************************************\nError: TAB character found.\n```\n\nso perhaps maxima inserts a TAB in the error message. Are TABs not allowed in doctest output?\n(it looks like one gets produced and matched by a \"...\" in the doctest template). A `sage -t --verbose` shows that no individual test fails.",
     "created_at": "2011-02-14T07:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61873",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [trac_7377-better-ask-error.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-better-ask-error.patch) by nbruin created at 2011-02-14 07:12:01
+Attachment [trac_7377-better-ask-error.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-better-ask-error.patch) by @nbruin created at 2011-02-14 07:12:01
 
 the lisp function `retrieve` in maxima is responsible for asking questions, so we just monkey-patch it to throw an error with an informative message instead. The patch trac_7377-better-ask-error.patch improves the readability of this message by executing exactly the original code in retrieve, but wrapped in a `(with-output-to-string (*standard-output*) ...)`. The method is generally applicable and may be useful in adapting other printing bits.
 
@@ -2382,7 +2382,7 @@ archive/issue_comments_061874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61874",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2402,7 +2402,7 @@ archive/issue_comments_061875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61875",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2422,7 +2422,7 @@ archive/issue_comments_061876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61876",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2440,7 +2440,7 @@ archive/issue_comments_061877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61877",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2460,7 +2460,7 @@ archive/issue_comments_061878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61878",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -2502,7 +2502,7 @@ archive/issue_comments_061879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61879",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2549,7 +2549,7 @@ archive/issue_comments_061880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61880",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -2697,16 +2697,16 @@ Patch based on Sage 4.6.2.alpha4, ECL 11.1.1 and Maxima 5.23.1, apply 4
 archive/issue_comments_061886.json:
 ```json
 {
-    "body": "Attachment [trac_7377-better-ask-error_p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-better-ask-error_p2.patch) by kcrisman created at 2011-02-15 17:16:11\n\n> The best idea I got so far is to split all the non-pexpect and non-communication things of Sage pexpect class into a parent class and make MaximaAbstract inherit from that class so that we still have access to all the nice features defined in Pexpect class.\n\nYes, we want to make sure that we can still use Maxima via the console as before, with all the usual stuff.   I don't know exactly the best way to do that, but we definitely want that.",
+    "body": "Attachment [trac_7377-better-ask-error_p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-better-ask-error_p2.patch) by @kcrisman created at 2011-02-15 17:16:11\n\n> The best idea I got so far is to split all the non-pexpect and non-communication things of Sage pexpect class into a parent class and make MaximaAbstract inherit from that class so that we still have access to all the nice features defined in Pexpect class.\n\nYes, we want to make sure that we can still use Maxima via the console as before, with all the usual stuff.   I don't know exactly the best way to do that, but we definitely want that.",
     "created_at": "2011-02-15T17:16:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61886",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7377-better-ask-error_p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-better-ask-error_p2.patch) by kcrisman created at 2011-02-15 17:16:11
+Attachment [trac_7377-better-ask-error_p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-better-ask-error_p2.patch) by @kcrisman created at 2011-02-15 17:16:11
 
 > The best idea I got so far is to split all the non-pexpect and non-communication things of Sage pexpect class into a parent class and make MaximaAbstract inherit from that class so that we still have access to all the nice features defined in Pexpect class.
 
@@ -2787,7 +2787,7 @@ archive/issue_comments_061888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61888",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2810,7 +2810,7 @@ archive/issue_comments_061889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61889",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -2853,7 +2853,7 @@ archive/issue_comments_061890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61890",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2879,7 +2879,7 @@ archive/issue_comments_061891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61891",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2959,7 +2959,7 @@ archive/issue_comments_061894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61894",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2980,7 +2980,7 @@ archive/issue_comments_061895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61895",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3063,7 +3063,7 @@ archive/issue_comments_061897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61897",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3095,7 +3095,7 @@ archive/issue_comments_061898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61898",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3125,7 +3125,7 @@ archive/issue_comments_061899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61899",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3220,16 +3220,16 @@ Version 0.2
 archive/issue_comments_061902.json:
 ```json
 {
-    "body": "Attachment [trac_7377-split_and_refactor.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-split_and_refactor.patch) by nbruin created at 2011-02-21 03:55:09\n\nGreat work! The patches don't apply on 4.6.1 so I can't test them at the moment. Reading through the patch:\n* Line 74\n\n```\n  (string-trim '(#\\Newline) (with-output-to-string (*standard-output*)\n      (terpri)\n```\n\nIf you're going to trim the newlines, don't bother with terpri. It just inserts a newline. Perhaps if you delete the terpri the trimming isn't necessary (I put it there because previously, the \"ask\" error messages had a newline before the question)\n* derivatives: If you want FDerivativeOperator handled by special_sage_to_max you'll need to change a bit more than just the API of the functions in that dictionary (for that, you can just put \"op\" as the first parameter and not use it in most cases)\n\nOne possibility is to index special_sage_to_max by type(op) rather than op. Then it makes a lot more sense to pass op as a parameter too (because currently, the op would be a constant for any entry in special_sage_to_max).\n\n* the line:\n\n```\n[deriv_max.extend([sr_to_max(args[i]), EclObject(params.count(i))]) for i in set(params)]\n```\n\nleads to an algorithm that is quadratic in the number of variables, but it should be (soft) linear. It should be interesting to design an example where this matters ...)",
+    "body": "Attachment [trac_7377-split_and_refactor.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-split_and_refactor.patch) by @nbruin created at 2011-02-21 03:55:09\n\nGreat work! The patches don't apply on 4.6.1 so I can't test them at the moment. Reading through the patch:\n* Line 74\n\n```\n  (string-trim '(#\\Newline) (with-output-to-string (*standard-output*)\n      (terpri)\n```\n\nIf you're going to trim the newlines, don't bother with terpri. It just inserts a newline. Perhaps if you delete the terpri the trimming isn't necessary (I put it there because previously, the \"ask\" error messages had a newline before the question)\n* derivatives: If you want FDerivativeOperator handled by special_sage_to_max you'll need to change a bit more than just the API of the functions in that dictionary (for that, you can just put \"op\" as the first parameter and not use it in most cases)\n\nOne possibility is to index special_sage_to_max by type(op) rather than op. Then it makes a lot more sense to pass op as a parameter too (because currently, the op would be a constant for any entry in special_sage_to_max).\n\n* the line:\n\n```\n[deriv_max.extend([sr_to_max(args[i]), EclObject(params.count(i))]) for i in set(params)]\n```\n\nleads to an algorithm that is quadratic in the number of variables, but it should be (soft) linear. It should be interesting to design an example where this matters ...)",
     "created_at": "2011-02-21T03:55:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61902",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [trac_7377-split_and_refactor.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-split_and_refactor.patch) by nbruin created at 2011-02-21 03:55:09
+Attachment [trac_7377-split_and_refactor.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-split_and_refactor.patch) by @nbruin created at 2011-02-21 03:55:09
 
 Great work! The patches don't apply on 4.6.1 so I can't test them at the moment. Reading through the patch:
 * Line 74
@@ -3295,7 +3295,7 @@ archive/issue_comments_061904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61904",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3319,7 +3319,7 @@ archive/issue_comments_061905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61905",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3339,7 +3339,7 @@ archive/issue_comments_061906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61906",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3359,7 +3359,7 @@ archive/issue_comments_061907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61907",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3432,7 +3432,7 @@ archive/issue_comments_061908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61908",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3469,16 +3469,16 @@ Thanks for that one, I do not have gap3 installed and get the time out, but did 
 archive/issue_comments_061910.json:
 ```json
 {
-    "body": "Attachment [trac_7377-interface-namefix.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-interface-namefix.patch) by nbruin created at 2011-02-27 19:09:05\n\nFixes gap3 timeout problem",
+    "body": "Attachment [trac_7377-interface-namefix.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-interface-namefix.patch) by @nbruin created at 2011-02-27 19:09:05\n\nFixes gap3 timeout problem",
     "created_at": "2011-02-27T19:09:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61910",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [trac_7377-interface-namefix.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-interface-namefix.patch) by nbruin created at 2011-02-27 19:09:05
+Attachment [trac_7377-interface-namefix.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-interface-namefix.patch) by @nbruin created at 2011-02-27 19:09:05
 
 Fixes gap3 timeout problem
 
@@ -3494,7 +3494,7 @@ archive/issue_comments_061911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61911",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3514,7 +3514,7 @@ archive/issue_comments_061912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61912",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3571,16 +3571,16 @@ So this seems to be not so much an error but more a non-compatible change. I am 
 archive/issue_comments_061913.json:
 ```json
 {
-    "body": "Attachment [trac_7377-pickle-fix.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-pickle-fix.patch) by nbruin created at 2011-03-01 09:18:55\n\nFixes MaximaFunction pickle issue",
+    "body": "Attachment [trac_7377-pickle-fix.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-pickle-fix.patch) by @nbruin created at 2011-03-01 09:18:55\n\nFixes MaximaFunction pickle issue",
     "created_at": "2011-03-01T09:18:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61913",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [trac_7377-pickle-fix.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-pickle-fix.patch) by nbruin created at 2011-03-01 09:18:55
+Attachment [trac_7377-pickle-fix.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-pickle-fix.patch) by @nbruin created at 2011-03-01 09:18:55
 
 Fixes MaximaFunction pickle issue
 
@@ -3628,7 +3628,7 @@ archive/issue_comments_061915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61915",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3678,7 +3678,7 @@ archive/issue_comments_061917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61917",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3773,7 +3773,7 @@ archive/issue_comments_061919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61919",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3815,16 +3815,16 @@ but it looks like nothing has changed. Perhaps my build is corrupted.
 archive/issue_comments_061920.json:
 ```json
 {
-    "body": "Attachment [trac_7377-lazy-maxlib.p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-lazy-maxlib.p2.patch) by nbruin created at 2011-03-01 18:20:22\n\nLazy import of maxima in calculus using sage.misc.lazy_import",
+    "body": "Attachment [trac_7377-lazy-maxlib.p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-lazy-maxlib.p2.patch) by @nbruin created at 2011-03-01 18:20:22\n\nLazy import of maxima in calculus using sage.misc.lazy_import",
     "created_at": "2011-03-01T18:20:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61920",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [trac_7377-lazy-maxlib.p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-lazy-maxlib.p2.patch) by nbruin created at 2011-03-01 18:20:22
+Attachment [trac_7377-lazy-maxlib.p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-lazy-maxlib.p2.patch) by @nbruin created at 2011-03-01 18:20:22
 
 Lazy import of maxima in calculus using sage.misc.lazy_import
 
@@ -3840,7 +3840,7 @@ archive/issue_comments_061921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61921",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3875,7 +3875,7 @@ archive/issue_comments_061922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61922",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -3888,16 +3888,16 @@ make max_to_sr return RealDoubleElement rather than float
 archive/issue_comments_061923.json:
 ```json
 {
-    "body": "Attachment [trac_7377-floatcast.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-floatcast.patch) by nbruin created at 2011-03-01 21:52:22",
+    "body": "Attachment [trac_7377-floatcast.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-floatcast.patch) by @nbruin created at 2011-03-01 21:52:22",
     "created_at": "2011-03-01T21:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61923",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [trac_7377-floatcast.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-floatcast.patch) by nbruin created at 2011-03-01 21:52:22
+Attachment [trac_7377-floatcast.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-floatcast.patch) by @nbruin created at 2011-03-01 21:52:22
 
 
 
@@ -3911,7 +3911,7 @@ archive/issue_comments_061924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61924",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4019,16 +4019,16 @@ Convert unicode objects to str objects to build ecl objects.
 archive/issue_comments_061928.json:
 ```json
 {
-    "body": "Attachment [trac_7377-unicode_to_ecl.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-unicode_to_ecl.patch) by fbissey created at 2011-03-02 10:03:36\n\nDoes this patch means that sage won't be allergic to ecl being compiled with unicode support anymore?\n[https://github.com/cschwan/sage-on-gentoo/issues/closed#issue/2](https://github.com/cschwan/sage-on-gentoo/issues/closed#issue/2)",
+    "body": "Attachment [trac_7377-unicode_to_ecl.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-unicode_to_ecl.patch) by @kiwifb created at 2011-03-02 10:03:36\n\nDoes this patch means that sage won't be allergic to ecl being compiled with unicode support anymore?\n[https://github.com/cschwan/sage-on-gentoo/issues/closed#issue/2](https://github.com/cschwan/sage-on-gentoo/issues/closed#issue/2)",
     "created_at": "2011-03-02T10:03:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61928",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_7377-unicode_to_ecl.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-unicode_to_ecl.patch) by fbissey created at 2011-03-02 10:03:36
+Attachment [trac_7377-unicode_to_ecl.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-unicode_to_ecl.patch) by @kiwifb created at 2011-03-02 10:03:36
 
 Does this patch means that sage won't be allergic to ecl being compiled with unicode support anymore?
 [https://github.com/cschwan/sage-on-gentoo/issues/closed#issue/2](https://github.com/cschwan/sage-on-gentoo/issues/closed#issue/2)
@@ -4045,7 +4045,7 @@ archive/issue_comments_061929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61929",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4081,7 +4081,7 @@ archive/issue_comments_061930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61930",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -4170,7 +4170,7 @@ archive/issue_comments_061932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61932",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4206,7 +4206,7 @@ archive/issue_comments_061933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61933",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -4245,7 +4245,7 @@ archive/issue_comments_061934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61934",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4286,7 +4286,7 @@ archive/issue_comments_061935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61935",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -4312,7 +4312,7 @@ archive/issue_comments_061936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61936",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4334,7 +4334,7 @@ archive/issue_comments_061937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61937",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4483,7 +4483,7 @@ archive/issue_comments_061943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61943",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4590,7 +4590,7 @@ archive/issue_comments_061945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61945",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4618,7 +4618,7 @@ archive/issue_comments_061946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61946",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4661,7 +4661,7 @@ archive/issue_comments_061948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61948",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4695,7 +4695,7 @@ archive/issue_comments_061949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61949",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4722,16 +4722,16 @@ which I cannot explain.
 archive/issue_comments_061950.json:
 ```json
 {
-    "body": "Attachment [trac_7377-assumptions.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions.patch) by kcrisman created at 2011-03-10 21:26:20\n\nTrial patch to improve assumption messages and documentation of helper functions",
+    "body": "Attachment [trac_7377-assumptions.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions.patch) by @kcrisman created at 2011-03-10 21:26:20\n\nTrial patch to improve assumption messages and documentation of helper functions",
     "created_at": "2011-03-10T21:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61950",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7377-assumptions.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions.patch) by kcrisman created at 2011-03-10 21:26:20
+Attachment [trac_7377-assumptions.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions.patch) by @kcrisman created at 2011-03-10 21:26:20
 
 Trial patch to improve assumption messages and documentation of helper functions
 
@@ -4812,7 +4812,7 @@ archive/issue_comments_061954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61954",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4825,16 +4825,16 @@ Thanks for catching the calculus/functional one.  I also noticed something that 
 archive/issue_comments_061955.json:
 ```json
 {
-    "body": "Attachment [trac_7377-assumptions-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions-p2.patch) by kcrisman created at 2011-03-14 16:40:41\n\ntrivial correction to p1 patch",
+    "body": "Attachment [trac_7377-assumptions-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions-p2.patch) by @kcrisman created at 2011-03-14 16:40:41\n\ntrivial correction to p1 patch",
     "created_at": "2011-03-14T16:40:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61955",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7377-assumptions-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions-p2.patch) by kcrisman created at 2011-03-14 16:40:41
+Attachment [trac_7377-assumptions-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-assumptions-p2.patch) by @kcrisman created at 2011-03-14 16:40:41
 
 trivial correction to p1 patch
 
@@ -4850,7 +4850,7 @@ archive/issue_comments_061956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61956",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4906,7 +4906,7 @@ archive/issue_comments_061957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61957",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4924,7 +4924,7 @@ archive/issue_comments_061958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61958",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -4994,7 +4994,7 @@ archive/issue_comments_061960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61960",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5024,7 +5024,7 @@ archive/issue_comments_061961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61961",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5042,7 +5042,7 @@ archive/issue_comments_061962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61962",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5062,7 +5062,7 @@ archive/issue_comments_061963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61963",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5256,7 +5256,7 @@ archive/issue_comments_061964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61964",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5407,7 +5407,7 @@ archive/issue_comments_061968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61968",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5450,7 +5450,7 @@ archive/issue_comments_061969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61969",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5468,7 +5468,7 @@ archive/issue_comments_061970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61970",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5481,16 +5481,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_061971.json:
 ```json
 {
-    "body": "Attachment [trac_7377-doctests-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-doctests-p2.patch) by kcrisman created at 2011-03-15 17:24:52\n\nCoverage is great, I haven't tested formatting in built html but looks like it will be fine overall, and in general very impressive work here.  The refactoring is at least working well with the interfaces in doctesting; it would be nice to have more testing of that by heavy users of (say) R or GAP, but at the very least we can set to 'needs review'.",
+    "body": "Attachment [trac_7377-doctests-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-doctests-p2.patch) by @kcrisman created at 2011-03-15 17:24:52\n\nCoverage is great, I haven't tested formatting in built html but looks like it will be fine overall, and in general very impressive work here.  The refactoring is at least working well with the interfaces in doctesting; it would be nice to have more testing of that by heavy users of (say) R or GAP, but at the very least we can set to 'needs review'.",
     "created_at": "2011-03-15T17:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61971",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7377-doctests-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-doctests-p2.patch) by kcrisman created at 2011-03-15 17:24:52
+Attachment [trac_7377-doctests-p2.patch](tarball://root/attachments/some-uuid/ticket7377/trac_7377-doctests-p2.patch) by @kcrisman created at 2011-03-15 17:24:52
 
 Coverage is great, I haven't tested formatting in built html but looks like it will be fine overall, and in general very impressive work here.  The refactoring is at least working well with the interfaces in doctesting; it would be nice to have more testing of that by heavy users of (say) R or GAP, but at the very least we can set to 'needs review'.
 
@@ -5506,7 +5506,7 @@ archive/issue_comments_061972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61972",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5540,7 +5540,7 @@ archive/issue_comments_061973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61973",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5558,7 +5558,7 @@ archive/issue_comments_061974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61974",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5576,7 +5576,7 @@ archive/issue_comments_061975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61975",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5609,7 +5609,7 @@ archive/issue_comments_061976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61976",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5627,7 +5627,7 @@ archive/issue_comments_061977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61977",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5660,7 +5660,7 @@ archive/issue_comments_061978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61978",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5703,7 +5703,7 @@ archive/issue_comments_061980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61980",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5721,7 +5721,7 @@ archive/issue_comments_061981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61981",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -5739,7 +5739,7 @@ archive/issue_comments_061982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61982",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5757,7 +5757,7 @@ archive/issue_comments_061983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61983",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5775,7 +5775,7 @@ archive/issue_comments_061984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61984",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -5793,7 +5793,7 @@ archive/issue_comments_061985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61985",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5816,7 +5816,7 @@ archive/issue_comments_061986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61986",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -5834,7 +5834,7 @@ archive/issue_comments_061987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61987",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5852,7 +5852,7 @@ archive/issue_comments_061988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61988",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5918,7 +5918,7 @@ archive/issue_comments_061991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61991",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6006,7 +6006,7 @@ archive/issue_comments_061992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61992",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6024,7 +6024,7 @@ archive/issue_comments_061993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61993",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6062,7 +6062,7 @@ archive/issue_comments_061995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61995",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6080,7 +6080,7 @@ archive/issue_comments_061996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61996",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6098,7 +6098,7 @@ archive/issue_comments_061997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61997",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6116,7 +6116,7 @@ archive/issue_comments_061998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61998",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6189,7 +6189,7 @@ archive/issue_comments_061999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-61999",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6318,7 +6318,7 @@ archive/issue_comments_062005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62005",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6337,7 +6337,7 @@ archive/issue_comments_062006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62006",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6355,7 +6355,7 @@ archive/issue_comments_062007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62007",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6373,7 +6373,7 @@ archive/issue_comments_062008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62008",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6391,7 +6391,7 @@ archive/issue_comments_062009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62009",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6409,7 +6409,7 @@ archive/issue_comments_062010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62010",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6429,7 +6429,7 @@ archive/issue_comments_062011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62011",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6447,7 +6447,7 @@ archive/issue_comments_062012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62012",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6465,7 +6465,7 @@ archive/issue_comments_062013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62013",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6483,7 +6483,7 @@ archive/issue_comments_062014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62014",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -6547,7 +6547,7 @@ archive/issue_comments_062017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62017",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6644,7 +6644,7 @@ archive/issue_comments_062018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62018",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6745,7 +6745,7 @@ archive/issue_comments_062021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62021",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6783,7 +6783,7 @@ archive/issue_comments_062023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62023",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6819,7 +6819,7 @@ archive/issue_comments_062025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62025",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6837,7 +6837,7 @@ archive/issue_comments_062026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62026",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6855,7 +6855,7 @@ archive/issue_comments_062027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7377#issuecomment-62027",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

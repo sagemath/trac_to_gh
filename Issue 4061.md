@@ -3,7 +3,7 @@
 archive/issues_004061.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cremona\n\nThe traceback at the bottom shouldn't happen, IMHO.\n\n\n```\nsage: E = EllipticCurve([0,1,0,72,-368]); E\nElliptic Curve defined by y^2  = x^3 + x^2 + 72*x - 368 over Rational Field\nsage: T = E.torsion_subgroup(); T\nTorsion Subgroup isomorphic to Multiplicative Abelian Group isomorphic to C6 associated to the Elliptic Curve defined by y^2  = x^3 + x^2 + 72*x - 368 over Rational Field\nsage: [n*T.0 for n in range(6)]\n[(0 : 1 : 0), (36 : 224 : 1), (8 : 28 : 1), (4 : 0 : 1), (8 : -28 : 1), (36 : -224 : 1)]\nsage: [E(z) for z in T]\nTraceback (most recent call last):\n...\nTypeError: v (=(1,)) must have 3 components\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4061\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nThe traceback at the bottom shouldn't happen, IMHO.\n\n\n```\nsage: E = EllipticCurve([0,1,0,72,-368]); E\nElliptic Curve defined by y^2  = x^3 + x^2 + 72*x - 368 over Rational Field\nsage: T = E.torsion_subgroup(); T\nTorsion Subgroup isomorphic to Multiplicative Abelian Group isomorphic to C6 associated to the Elliptic Curve defined by y^2  = x^3 + x^2 + 72*x - 368 over Rational Field\nsage: [n*T.0 for n in range(6)]\n[(0 : 1 : 0), (36 : 224 : 1), (8 : 28 : 1), (4 : 0 : 1), (8 : -28 : 1), (36 : -224 : 1)]\nsage: [E(z) for z in T]\nTraceback (most recent call last):\n...\nTypeError: v (=(1,)) must have 3 components\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4061\n\n",
     "created_at": "2008-09-04T14:03:52Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_004061.json:
     "title": "coercion from torsion subgroup of elliptic curve to elliptic curve is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4061",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cremona
+CC:  @JohnCremona
 
 The traceback at the bottom shouldn't happen, IMHO.
 
@@ -132,7 +132,7 @@ archive/issue_comments_029291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4061#issuecomment-29291",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -173,16 +173,16 @@ This should be an easy thing for someone to do!
 archive/issue_comments_029292.json:
 ```json
 {
-    "body": "Attachment [trac-4061.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061.patch) by cremona created at 2008-11-30 11:56:07",
+    "body": "Attachment [trac-4061.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061.patch) by @JohnCremona created at 2008-11-30 11:56:07",
     "created_at": "2008-11-30T11:56:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4061#issuecomment-29292",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4061.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061.patch) by cremona created at 2008-11-30 11:56:07
+Attachment [trac-4061.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061.patch) by @JohnCremona created at 2008-11-30 11:56:07
 
 
 
@@ -196,7 +196,7 @@ archive/issue_comments_029293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4061#issuecomment-29293",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -211,16 +211,16 @@ The behaviour for trivial torsion groups is not ideal, but is due to a bug in th
 archive/issue_comments_029294.json:
 ```json
 {
-    "body": "Attachment [trac-4061-2.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061-2.patch) by cremona created at 2008-11-30 14:44:08",
+    "body": "Attachment [trac-4061-2.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061-2.patch) by @JohnCremona created at 2008-11-30 14:44:08",
     "created_at": "2008-11-30T14:44:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4061#issuecomment-29294",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4061-2.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061-2.patch) by cremona created at 2008-11-30 14:44:08
+Attachment [trac-4061-2.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061-2.patch) by @JohnCremona created at 2008-11-30 14:44:08
 
 
 
@@ -229,16 +229,16 @@ Attachment [trac-4061-2.patch](tarball://root/attachments/some-uuid/ticket4061/t
 archive/issue_comments_029295.json:
 ```json
 {
-    "body": "Attachment [trac-4061-3.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061-3.patch) by cremona created at 2008-11-30 14:44:48\n\nThe second patch (apply after the first) fixes the behaviour for trivial torsion, by fixing the method list() for abelian groups which are trivial.  The 3rd patch adds a doctest in the Abelian Groups code which I forgot the first time.",
+    "body": "Attachment [trac-4061-3.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061-3.patch) by @JohnCremona created at 2008-11-30 14:44:48\n\nThe second patch (apply after the first) fixes the behaviour for trivial torsion, by fixing the method list() for abelian groups which are trivial.  The 3rd patch adds a doctest in the Abelian Groups code which I forgot the first time.",
     "created_at": "2008-11-30T14:44:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4061#issuecomment-29295",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4061-3.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061-3.patch) by cremona created at 2008-11-30 14:44:48
+Attachment [trac-4061-3.patch](tarball://root/attachments/some-uuid/ticket4061/trac-4061-3.patch) by @JohnCremona created at 2008-11-30 14:44:48
 
 The second patch (apply after the first) fixes the behaviour for trivial torsion, by fixing the method list() for abelian groups which are trivial.  The 3rd patch adds a doctest in the Abelian Groups code which I forgot the first time.
 
@@ -254,7 +254,7 @@ archive/issue_comments_029296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4061#issuecomment-29296",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -75,16 +75,16 @@ Changing status from new to assigned.
 archive/issue_comments_038201.json:
 ```json
 {
-    "body": "Attachment [trac_5012_qqbar_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket5012/trac_5012_qqbar_numerical_noise.patch) by craigcitro created at 2009-01-18 12:38:11\n\nPatch looks pretty good, with one exception: guaranteed is misspelled in the patch. Once that is fixed, this looks good.",
+    "body": "Attachment [trac_5012_qqbar_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket5012/trac_5012_qqbar_numerical_noise.patch) by @craigcitro created at 2009-01-18 12:38:11\n\nPatch looks pretty good, with one exception: guaranteed is misspelled in the patch. Once that is fixed, this looks good.",
     "created_at": "2009-01-18T12:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5012#issuecomment-38201",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_5012_qqbar_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket5012/trac_5012_qqbar_numerical_noise.patch) by craigcitro created at 2009-01-18 12:38:11
+Attachment [trac_5012_qqbar_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket5012/trac_5012_qqbar_numerical_noise.patch) by @craigcitro created at 2009-01-18 12:38:11
 
 Patch looks pretty good, with one exception: guaranteed is misspelled in the patch. Once that is fixed, this looks good.
 

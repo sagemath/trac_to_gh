@@ -3,7 +3,7 @@
 archive/issues_009208.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  wjp jason\n\n## Hardware & associated software\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n## Sage version and relevant software in Sage\nThis issue was discovered with Sage 4.4.3, which includes\n* Freetype 2.5.5, which is also known as version 9.16.3 (see #9202 for more information about this rather strange version numbering used). \n* matplotlib 0.99.1\n\n\n## The problem\nAs discussed here, \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/1d23bf8990fe06d?hl=en\n\n'matplotlib' will find the system version of 'freetype2', rather than the one in Sage, as it relies on the 'pkg-config' command, to determine the version of freetype2, and what compiler options need to be used to link the required freetype2 library. \n\nTherefore, matplolib reports it is configured with version 9.7.3, which is an old version of freetype2 installed under /usr/sfw in Solaris 10 03/05. \n\n\n```\nREQUIRED DEPENDENCIES\n                  numpy: 1.3.0\n              freetype2: 9.7.3\n```\n\n(freetype 9.7.3 is also known as version 2.1.9)\n\n## The solution\nThe solution to this problem is to ensure pkg-config looks into the directory where Sage stores it's .pc files, which is \n\n\n``` \n$SAGE_LOCAL/lib/pkgconfig\n```\n\n\nrather than the default system directory. \n\nThere we find 11 packages have configuration information\n\nThis is easy to resolve, by adding the following 4 lines to sage-env, which ensure pkg-config uses the Sage directory \n\n\n```\nif [ -z \"$PKG_CONFIG_PATH\" ]; then\n    PKG_CONFIG_PATH=\"$SAGE_LOCAL/lib/pkgconfig\"\n    export PKG_CONFIG_PATH \nfi\n```\n\n\nThe variable PKG_CONFIG_PATH is used by the pkg-config command.\n\n## The results\nOnce this is done, matplotlib reports the correction version of 'freetype' \n\n\n```\nNot building any matplotlib graphical backends.\n============================================================================\nBUILDING MATPLOTLIB\n            matplotlib: 0.99.1\n                python: 2.6.4 (r264:75706, Jun  6 2010, 00:37:24)  [GCC\n                        4.4.3]\n              platform: sunos5\n\nREQUIRED DEPENDENCIES\n                 numpy: 1.3.0\n             freetype2: 9.16.3\n\nOPTIONAL BACKEND DEPENDENCIES\n                libpng: 1.2.35\n                  Gtk+: no\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9208\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @wjp @jasongrout\n\n## Hardware & associated software\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n## Sage version and relevant software in Sage\nThis issue was discovered with Sage 4.4.3, which includes\n* Freetype 2.5.5, which is also known as version 9.16.3 (see #9202 for more information about this rather strange version numbering used). \n* matplotlib 0.99.1\n\n\n## The problem\nAs discussed here, \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/1d23bf8990fe06d?hl=en\n\n'matplotlib' will find the system version of 'freetype2', rather than the one in Sage, as it relies on the 'pkg-config' command, to determine the version of freetype2, and what compiler options need to be used to link the required freetype2 library. \n\nTherefore, matplolib reports it is configured with version 9.7.3, which is an old version of freetype2 installed under /usr/sfw in Solaris 10 03/05. \n\n\n```\nREQUIRED DEPENDENCIES\n                  numpy: 1.3.0\n              freetype2: 9.7.3\n```\n\n(freetype 9.7.3 is also known as version 2.1.9)\n\n## The solution\nThe solution to this problem is to ensure pkg-config looks into the directory where Sage stores it's .pc files, which is \n\n\n``` \n$SAGE_LOCAL/lib/pkgconfig\n```\n\n\nrather than the default system directory. \n\nThere we find 11 packages have configuration information\n\nThis is easy to resolve, by adding the following 4 lines to sage-env, which ensure pkg-config uses the Sage directory \n\n\n```\nif [ -z \"$PKG_CONFIG_PATH\" ]; then\n    PKG_CONFIG_PATH=\"$SAGE_LOCAL/lib/pkgconfig\"\n    export PKG_CONFIG_PATH \nfi\n```\n\n\nThe variable PKG_CONFIG_PATH is used by the pkg-config command.\n\n## The results\nOnce this is done, matplotlib reports the correction version of 'freetype' \n\n\n```\nNot building any matplotlib graphical backends.\n============================================================================\nBUILDING MATPLOTLIB\n            matplotlib: 0.99.1\n                python: 2.6.4 (r264:75706, Jun  6 2010, 00:37:24)  [GCC\n                        4.4.3]\n              platform: sunos5\n\nREQUIRED DEPENDENCIES\n                 numpy: 1.3.0\n             freetype2: 9.16.3\n\nOPTIONAL BACKEND DEPENDENCIES\n                libpng: 1.2.35\n                  Gtk+: no\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9208\n\n",
     "created_at": "2010-06-10T23:14:17Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009208.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  wjp jason
+CC:  @wjp @jasongrout
 
 ## Hardware & associated software
 * Sun Blade 1000
@@ -156,7 +156,7 @@ archive/issue_comments_086179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9208#issuecomment-86179",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_086180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9208#issuecomment-86180",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_086184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9208#issuecomment-86184",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_086186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9208#issuecomment-86186",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_086187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9208#issuecomment-86187",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_086188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9208#issuecomment-86188",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_086189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9208#issuecomment-86189",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_086190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9208#issuecomment-86190",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_086191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9208#issuecomment-86191",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_086192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9208#issuecomment-86192",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_086194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9208#issuecomment-86194",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -579,7 +579,7 @@ archive/issue_comments_086195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9208#issuecomment-86195",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

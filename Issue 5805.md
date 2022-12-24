@@ -3,7 +3,7 @@
 archive/issues_005805.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nOn Fedora 9, 32 bit:\n\n\n\n```\nsage -t  \"devel/sage/sage/modular/dirichlet.py\"             \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.4.1.rc0/devel/sage/sage/modular/dirichlet.py\", line 1044:\n    sage: e.kloosterman_sum_numerical()\nExpected:\n    7.21644966006e-16 + 1.73205080757*I\nGot:\n    6.66133814775e-16 + 1.73205080757*I\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_29\n***Test Failed*** 1 failures.\n\n```\n\n\n\nCheers,\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5805\n\n",
+    "body": "Assignee: @craigcitro\n\nOn Fedora 9, 32 bit:\n\n\n\n```\nsage -t  \"devel/sage/sage/modular/dirichlet.py\"             \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.4.1.rc0/devel/sage/sage/modular/dirichlet.py\", line 1044:\n    sage: e.kloosterman_sum_numerical()\nExpected:\n    7.21644966006e-16 + 1.73205080757*I\nGot:\n    6.66133814775e-16 + 1.73205080757*I\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_29\n***Test Failed*** 1 failures.\n\n```\n\n\n\nCheers,\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5805\n\n",
     "created_at": "2009-04-16T21:02:12Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_005805.json:
     "title": "numerical noise in \"devel/sage/sage/modular/dirichlet.py\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5805",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 On Fedora 9, 32 bit:
 
@@ -76,7 +76,7 @@ Changing component from modular forms to doctest.
 archive/issue_comments_045562.json:
 ```json
 {
-    "body": "Changing assignee from craigcitro to mabshoff.",
+    "body": "Changing assignee from @craigcitro to mabshoff.",
     "created_at": "2009-04-17T10:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5805",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_045562.json:
 }
 ```
 
-Changing assignee from craigcitro to mabshoff.
+Changing assignee from @craigcitro to mabshoff.
 
 
 
@@ -208,7 +208,7 @@ archive/issue_comments_045568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5805#issuecomment-45568",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

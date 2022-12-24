@@ -14,7 +14,7 @@ archive/issues_002240.json:
     "title": "Docstrings and Doctests: calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2240",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 Assignee: tba
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2240
 archive/issue_comments_014836.json:
 ```json
 {
-    "body": "Changing assignee from tba to cswiercz.",
+    "body": "Changing assignee from tba to @cswiercz.",
     "created_at": "2008-02-21T00:33:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2240#issuecomment-14836",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Changing assignee from tba to cswiercz.
+Changing assignee from tba to @cswiercz.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_014837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2240#issuecomment-14837",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing keywords from "" to "docstring, doctest".
 archive/issue_comments_014838.json:
 ```json
 {
-    "body": "Attachment [8311_ff813e90293c.patch](tarball://root/attachments/some-uuid/ticket2240/8311_ff813e90293c.patch) by cswiercz created at 2008-02-25 20:59:54",
+    "body": "Attachment [8311_ff813e90293c.patch](tarball://root/attachments/some-uuid/ticket2240/8311_ff813e90293c.patch) by @cswiercz created at 2008-02-25 20:59:54",
     "created_at": "2008-02-25T20:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2240#issuecomment-14838",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [8311_ff813e90293c.patch](tarball://root/attachments/some-uuid/ticket2240/8311_ff813e90293c.patch) by cswiercz created at 2008-02-25 20:59:54
+Attachment [8311_ff813e90293c.patch](tarball://root/attachments/some-uuid/ticket2240/8311_ff813e90293c.patch) by @cswiercz created at 2008-02-25 20:59:54
 
 
 
@@ -88,16 +88,16 @@ Attachment [8311_ff813e90293c.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_014839.json:
 ```json
 {
-    "body": "Attachment [8313_2fbe4cb29f57.patch](tarball://root/attachments/some-uuid/ticket2240/8313_2fbe4cb29f57.patch) by cswiercz created at 2008-02-25 21:00:52",
+    "body": "Attachment [8313_2fbe4cb29f57.patch](tarball://root/attachments/some-uuid/ticket2240/8313_2fbe4cb29f57.patch) by @cswiercz created at 2008-02-25 21:00:52",
     "created_at": "2008-02-25T21:00:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2240#issuecomment-14839",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [8313_2fbe4cb29f57.patch](tarball://root/attachments/some-uuid/ticket2240/8313_2fbe4cb29f57.patch) by cswiercz created at 2008-02-25 21:00:52
+Attachment [8313_2fbe4cb29f57.patch](tarball://root/attachments/some-uuid/ticket2240/8313_2fbe4cb29f57.patch) by @cswiercz created at 2008-02-25 21:00:52
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_014840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2240#issuecomment-14840",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_014841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2240#issuecomment-14841",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -160,16 +160,16 @@ Changing priority from minor to major.
 archive/issue_comments_014843.json:
 ```json
 {
-    "body": "Attachment [8311_ff813e90293c.2.patch](tarball://root/attachments/some-uuid/ticket2240/8311_ff813e90293c.2.patch) by mhansen created at 2008-02-26 05:08:54",
+    "body": "Attachment [8311_ff813e90293c.2.patch](tarball://root/attachments/some-uuid/ticket2240/8311_ff813e90293c.2.patch) by @mwhansen created at 2008-02-26 05:08:54",
     "created_at": "2008-02-26T05:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2240#issuecomment-14843",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [8311_ff813e90293c.2.patch](tarball://root/attachments/some-uuid/ticket2240/8311_ff813e90293c.2.patch) by mhansen created at 2008-02-26 05:08:54
+Attachment [8311_ff813e90293c.2.patch](tarball://root/attachments/some-uuid/ticket2240/8311_ff813e90293c.2.patch) by @mwhansen created at 2008-02-26 05:08:54
 
 
 
@@ -183,7 +183,7 @@ archive/issue_comments_014844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2240#issuecomment-14844",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -242,16 +242,16 @@ Michael
 archive/issue_comments_014846.json:
 ```json
 {
-    "body": "Attachment [2240.patch](tarball://root/attachments/some-uuid/ticket2240/2240.patch) by mhansen created at 2008-02-26 05:54:45",
+    "body": "Attachment [2240.patch](tarball://root/attachments/some-uuid/ticket2240/2240.patch) by @mwhansen created at 2008-02-26 05:54:45",
     "created_at": "2008-02-26T05:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2240#issuecomment-14846",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2240.patch](tarball://root/attachments/some-uuid/ticket2240/2240.patch) by mhansen created at 2008-02-26 05:54:45
+Attachment [2240.patch](tarball://root/attachments/some-uuid/ticket2240/2240.patch) by @mwhansen created at 2008-02-26 05:54:45
 
 
 
@@ -265,7 +265,7 @@ archive/issue_comments_014847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2240#issuecomment-14847",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

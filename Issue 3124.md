@@ -14,7 +14,7 @@ archive/issues_003124.json:
     "title": "bug in solve_mod",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3124",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -111,7 +111,7 @@ archive/issue_comments_021647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3124#issuecomment-21647",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_021648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3124#issuecomment-21648",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_021649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3124#issuecomment-21649",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -180,16 +180,16 @@ This patch also fixes #3125.
 archive/issue_comments_021650.json:
 ```json
 {
-    "body": "Changing assignee from somebody to mhansen.",
+    "body": "Changing assignee from somebody to @mwhansen.",
     "created_at": "2009-01-21T21:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3124#issuecomment-21650",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from somebody to mhansen.
+Changing assignee from somebody to @mwhansen.
 
 
 
@@ -198,16 +198,16 @@ Changing assignee from somebody to mhansen.
 archive/issue_comments_021651.json:
 ```json
 {
-    "body": "Attachment [trac_3124.patch](tarball://root/attachments/some-uuid/ticket3124/trac_3124.patch) by mhansen created at 2009-01-21 21:04:01\n\nAnd by #3125, I mean #3135.",
+    "body": "Attachment [trac_3124.patch](tarball://root/attachments/some-uuid/ticket3124/trac_3124.patch) by @mwhansen created at 2009-01-21 21:04:01\n\nAnd by #3125, I mean #3135.",
     "created_at": "2009-01-21T21:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3124#issuecomment-21651",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3124.patch](tarball://root/attachments/some-uuid/ticket3124/trac_3124.patch) by mhansen created at 2009-01-21 21:04:01
+Attachment [trac_3124.patch](tarball://root/attachments/some-uuid/ticket3124/trac_3124.patch) by @mwhansen created at 2009-01-21 21:04:01
 
 And by #3125, I mean #3135.
 
@@ -223,7 +223,7 @@ archive/issue_comments_021652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3124#issuecomment-21652",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001211.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: ntl polynomial remainder ZZ crash segfault\n\n\n```\nsage: x = ZZ['x'].0\nsage: x^2 % (2*x - 1)\nDivRem: quotient not defined over ZZ\n/Users/ncalexan/sage/local/bin/sage-sage: line 218: 28251 Abort trap              sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n\nProcess SAGE exited abnormally with code 134\n```\n\n\nMac OS X 10.4 Intel Core2Duo, Darwin mero.local 8.10.1 Darwin Kernel Version 8.10.1: Wed May 23 16:33:00 PDT 2007; root:xnu-792.22.5~1/RELEASE_I386 i386 i386\n\nIssue created by migration from https://trac.sagemath.org/ticket/1211\n\n",
+    "body": "Assignee: @malb\n\nKeywords: ntl polynomial remainder ZZ crash segfault\n\n\n```\nsage: x = ZZ['x'].0\nsage: x^2 % (2*x - 1)\nDivRem: quotient not defined over ZZ\n/Users/ncalexan/sage/local/bin/sage-sage: line 218: 28251 Abort trap              sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n\nProcess SAGE exited abnormally with code 134\n```\n\n\nMac OS X 10.4 Intel Core2Duo, Darwin mero.local 8.10.1 Darwin Kernel Version 8.10.1: Wed May 23 16:33:00 PDT 2007; root:xnu-792.22.5~1/RELEASE_I386 i386 i386\n\nIssue created by migration from https://trac.sagemath.org/ticket/1211\n\n",
     "created_at": "2007-11-19T22:20:06Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001211.json:
     "title": "NTL crash in polynomial remainder over ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1211",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: ntl polynomial remainder ZZ crash segfault
 
@@ -45,7 +45,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1211
 archive/issue_comments_007515.json:
 ```json
 {
-    "body": "Changing assignee from malb to dmharvey.",
+    "body": "Changing assignee from @malb to dmharvey.",
     "created_at": "2007-12-01T15:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1211",
     "type": "issue_comment",
@@ -54,7 +54,7 @@ archive/issue_comments_007515.json:
 }
 ```
 
-Changing assignee from malb to dmharvey.
+Changing assignee from @malb to dmharvey.
 
 
 

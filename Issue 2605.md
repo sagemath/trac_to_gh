@@ -14,7 +14,7 @@ archive/issues_002605.json:
     "title": "Notebook tab-backspace-(shift enter) gives bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2605",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 Assignee: boothby
@@ -43,7 +43,7 @@ archive/issue_comments_017811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2605#issuecomment-17811",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_017812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2605#issuecomment-17812",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_017813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2605#issuecomment-17813",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_017814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2605#issuecomment-17814",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

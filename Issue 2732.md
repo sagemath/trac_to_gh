@@ -3,7 +3,7 @@
 archive/issues_002732.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nDoing cython builds on Debian doesn't work, because it doesn't have the right include_dirs.\n\nThere seems to be a lot of code re-use between spkg/standard/sage-2.10.5/sage/misc/cython.py and spkg/standard/sage-2.10.5/setup.py.  It might be good to merge that code into only one place; if we don't do that, we'll probably want to make the changes we made to spkg/standard/sage-2.10.5/setup.py to spkg/standard/sage-2.10.5/sage/misc/cython.py.  \n\nRegardless, we should have a way of specifying that we've got a Debian build at runtime (currently we only have a build-time specification).  Probably this will just mean having the SAGE wrapper script in Debian set SAGE_DEBIAN=yes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2732\n\n",
+    "body": "Assignee: @timabbott\n\nDoing cython builds on Debian doesn't work, because it doesn't have the right include_dirs.\n\nThere seems to be a lot of code re-use between spkg/standard/sage-2.10.5/sage/misc/cython.py and spkg/standard/sage-2.10.5/setup.py.  It might be good to merge that code into only one place; if we don't do that, we'll probably want to make the changes we made to spkg/standard/sage-2.10.5/setup.py to spkg/standard/sage-2.10.5/sage/misc/cython.py.  \n\nRegardless, we should have a way of specifying that we've got a Debian build at runtime (currently we only have a build-time specification).  Probably this will just mean having the SAGE wrapper script in Debian set SAGE_DEBIAN=yes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2732\n\n",
     "created_at": "2008-03-30T02:43:24Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002732.json:
     "title": "cython in Debian build doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2732",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 Doing cython builds on Debian doesn't work, because it doesn't have the right include_dirs.
 
@@ -41,7 +41,7 @@ archive/issue_comments_018803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2732#issuecomment-18803",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_018805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2732#issuecomment-18805",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_018806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2732#issuecomment-18806",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_018807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2732#issuecomment-18807",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007378.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nIt is often useful to subdivide the edges of a graph, so there should be a function in Sage for this.\n\nWhen an edge e between u and v is subdivided in a DiGraph, perhaps the best thing to do would be to name the new vertices as (e, 0), (e, 1), (e, 2), etc ...\n\nWe are left with a similar problem concerning the Graphs and here I have to admit I do not know which name to use without inducing some orientation..\n\nThis being said, it has to be done ! :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7378\n\n",
+    "body": "Assignee: @rlmill\n\nIt is often useful to subdivide the edges of a graph, so there should be a function in Sage for this.\n\nWhen an edge e between u and v is subdivided in a DiGraph, perhaps the best thing to do would be to name the new vertices as (e, 0), (e, 1), (e, 2), etc ...\n\nWe are left with a similar problem concerning the Graphs and here I have to admit I do not know which name to use without inducing some orientation..\n\nThis being said, it has to be done ! :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7378\n\n",
     "created_at": "2009-11-03T09:26:13Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007378.json:
     "title": "Subdivide edges in a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7378",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 It is often useful to subdivide the edges of a graph, so there should be a function in Sage for this.
 
@@ -45,7 +45,7 @@ archive/issue_comments_062028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62028",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_062029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62029",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_062030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62030",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -102,16 +102,16 @@ However, reading the code seems to indicate that it should be subdivide_edge, no
 archive/issue_comments_062031.json:
 ```json
 {
-    "body": "Changing assignee from rlm to jason.",
+    "body": "Changing assignee from @rlmill to @jasongrout.",
     "created_at": "2010-04-20T04:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62031",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from rlm to jason.
+Changing assignee from @rlmill to @jasongrout.
 
 
 
@@ -125,7 +125,7 @@ archive/issue_comments_062032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62032",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_062033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62033",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_062034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62034",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_062035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62035",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_062036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62036",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_062037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62037",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_062038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62038",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_062039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62039",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_062040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62040",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_062041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62041",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -316,16 +316,16 @@ Nathann
 archive/issue_comments_062042.json:
 ```json
 {
-    "body": "Attachment [trac_7378.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378.patch) by ncohen created at 2010-06-20 18:04:14",
+    "body": "Attachment [trac_7378.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378.patch) by @nathanncohen created at 2010-06-20 18:04:14",
     "created_at": "2010-06-20T18:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62042",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7378.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378.patch) by ncohen created at 2010-06-20 18:04:14
+Attachment [trac_7378.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378.patch) by @nathanncohen created at 2010-06-20 18:04:14
 
 
 
@@ -339,7 +339,7 @@ archive/issue_comments_062043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62043",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_062044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62044",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -370,16 +370,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_062045.json:
 ```json
 {
-    "body": "Attachment [trac_7378-ref.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378-ref.patch) by rlm created at 2010-06-21 17:40:17\n\nReplying to [comment:10 ncohen]:\n> I really wanted the edge to be \"split\" into several parts, all bearing the same label. \n\nThanks for clarifying. I've tried to make this clear in the documentation. If you approve of my referee patch, please set the ticket to positive review.",
+    "body": "Attachment [trac_7378-ref.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378-ref.patch) by @rlmill created at 2010-06-21 17:40:17\n\nReplying to [comment:10 ncohen]:\n> I really wanted the edge to be \"split\" into several parts, all bearing the same label. \n\nThanks for clarifying. I've tried to make this clear in the documentation. If you approve of my referee patch, please set the ticket to positive review.",
     "created_at": "2010-06-21T17:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62045",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7378-ref.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378-ref.patch) by rlm created at 2010-06-21 17:40:17
+Attachment [trac_7378-ref.patch](tarball://root/attachments/some-uuid/ticket7378/trac_7378-ref.patch) by @rlmill created at 2010-06-21 17:40:17
 
 Replying to [comment:10 ncohen]:
 > I really wanted the edge to be "split" into several parts, all bearing the same label. 
@@ -398,7 +398,7 @@ archive/issue_comments_062046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62046",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_062047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62047",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_062048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62048",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_062049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62049",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_062050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62050",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_062051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62051",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_062052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62052",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

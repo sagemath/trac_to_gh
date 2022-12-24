@@ -14,7 +14,7 @@ archive/issues_003860.json:
     "title": "itanium -- can't build mercurial extension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3860",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -66,7 +66,7 @@ archive/issue_comments_027508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3860#issuecomment-27508",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

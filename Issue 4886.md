@@ -3,7 +3,7 @@
 archive/issues_004886.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  wjp\n\nDepends on #4552\n\nIssue created by migration from https://trac.sagemath.org/ticket/4886\n\n",
+    "body": "Assignee: boothby\n\nCC:  @wjp\n\nDepends on #4552\n\nIssue created by migration from https://trac.sagemath.org/ticket/4886\n\n",
     "created_at": "2008-12-29T08:09:34Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_004886.json:
 ```
 Assignee: boothby
 
-CC:  wjp
+CC:  @wjp
 
 Depends on #4552
 
@@ -57,7 +57,7 @@ archive/issue_comments_037042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4886#issuecomment-37042",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_037043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4886#issuecomment-37043",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_037044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4886#issuecomment-37044",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

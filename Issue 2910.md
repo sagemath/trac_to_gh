@@ -3,7 +3,7 @@
 archive/issues_002910.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  timothyclemans\n\nThis behavior is inconsistent and could lead to horrible bugs:\n\n```\nsage: int('070')\n70\nsage: Integer('070')\n56\n```\n\n\nBecause Sage uses Python instead of inventing its own language, there\nare issues like this.   The only options to fix this problem\nare (a) make int('070') return 56 or (b) make Integer('070') return 70.\nIrregardless of what Sage *should* do, (a) is not an option since it\nrequires changing the Python interpreter, and an axiom of Sage development\nis that we will never do that.  So (b) it is.   To resolve this trac tick\none must thus do (b).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2910\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  timothyclemans\n\nThis behavior is inconsistent and could lead to horrible bugs:\n\n```\nsage: int('070')\n70\nsage: Integer('070')\n56\n```\n\n\nBecause Sage uses Python instead of inventing its own language, there\nare issues like this.   The only options to fix this problem\nare (a) make int('070') return 56 or (b) make Integer('070') return 70.\nIrregardless of what Sage *should* do, (a) is not an option since it\nrequires changing the Python interpreter, and an axiom of Sage development\nis that we will never do that.  So (b) it is.   To resolve this trac tick\none must thus do (b).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2910\n\n",
     "created_at": "2008-04-13T19:11:36Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_002910.json:
     "title": "bug in Integer(string)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2910",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 CC:  timothyclemans
 
@@ -57,7 +57,7 @@ archive/issue_comments_020050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2910#issuecomment-20050",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_020054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2910#issuecomment-20054",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

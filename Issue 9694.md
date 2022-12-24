@@ -3,7 +3,7 @@
 archive/issues_009694.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  was davidloeffler cremona\n\nThis will be a straightforward implementation of a direct product of cyclic groups, allowing students to experiment with basic notions of order, cyclicness, subgroups, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9694\n\n",
+    "body": "Assignee: joyner\n\nCC:  @williamstein @loefflerd @JohnCremona\n\nThis will be a straightforward implementation of a direct product of cyclic groups, allowing students to experiment with basic notions of order, cyclicness, subgroups, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9694\n\n",
     "created_at": "2010-08-06T02:59:40Z",
     "labels": [
         "group theory",
@@ -14,12 +14,12 @@ archive/issues_009694.json:
     "title": "Implement direct product of cyclic groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9694",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: joyner
 
-CC:  was davidloeffler cremona
+CC:  @williamstein @loefflerd @JohnCremona
 
 This will be a straightforward implementation of a direct product of cyclic groups, allowing students to experiment with basic notions of order, cyclicness, subgroups, etc.
 
@@ -39,7 +39,7 @@ archive/issue_comments_094218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9694#issuecomment-94218",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -52,16 +52,16 @@ Preliminary version, no doctests, etc
 archive/issue_comments_094219.json:
 ```json
 {
-    "body": "Attachment [trac_9694-cyclic-group-product-v0.patch](tarball://root/attachments/some-uuid/ticket9694/trac_9694-cyclic-group-product-v0.patch) by rbeezer created at 2010-08-06 03:25:50\n\nPatch is a rough cut. Requires something in the 4.5.2 alpha/rc series to work.\n\nPosted here because of the hack to avoid having the `__call__` function in the derived class not get called during the initialization.\n\nSomewhere (once per invariant, I think) the creation of the optimized quotient module has a \"self()\" call that reaches all the way down into this class and if the optimized module is used for conversion, it just causes infinite recursion.  (Also happens with saving _orig_gens but that is more obvious).\n\nNeed for the conversion is described more fully at #9695.  Help or advice needed!",
+    "body": "Attachment [trac_9694-cyclic-group-product-v0.patch](tarball://root/attachments/some-uuid/ticket9694/trac_9694-cyclic-group-product-v0.patch) by @rbeezer created at 2010-08-06 03:25:50\n\nPatch is a rough cut. Requires something in the 4.5.2 alpha/rc series to work.\n\nPosted here because of the hack to avoid having the `__call__` function in the derived class not get called during the initialization.\n\nSomewhere (once per invariant, I think) the creation of the optimized quotient module has a \"self()\" call that reaches all the way down into this class and if the optimized module is used for conversion, it just causes infinite recursion.  (Also happens with saving _orig_gens but that is more obvious).\n\nNeed for the conversion is described more fully at #9695.  Help or advice needed!",
     "created_at": "2010-08-06T03:25:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9694#issuecomment-94219",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9694-cyclic-group-product-v0.patch](tarball://root/attachments/some-uuid/ticket9694/trac_9694-cyclic-group-product-v0.patch) by rbeezer created at 2010-08-06 03:25:50
+Attachment [trac_9694-cyclic-group-product-v0.patch](tarball://root/attachments/some-uuid/ticket9694/trac_9694-cyclic-group-product-v0.patch) by @rbeezer created at 2010-08-06 03:25:50
 
 Patch is a rough cut. Requires something in the 4.5.2 alpha/rc series to work.
 
@@ -83,7 +83,7 @@ archive/issue_comments_094220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9694#issuecomment-94220",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_094221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9694#issuecomment-94221",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_094222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9694#issuecomment-94222",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

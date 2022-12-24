@@ -14,7 +14,7 @@ archive/issues_004319.json:
     "title": "Update Italian tutorial for #4285",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4319",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_031616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4319#issuecomment-31616",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_031617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4319#issuecomment-31617",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008631.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\nCC:  rkirov was kevinc\n\nKeywords: graph editor\n\nShould be able to use the graph editor as an input widget for interacts.  \n\nPreliminary proposal on sage-devel:\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/f5b850969340bc37/\n\nCurrent state of graph editor:  #8222\n\nIssue created by migration from https://trac.sagemath.org/ticket/8631\n\n",
+    "body": "Assignee: @itolkov\n\nCC:  rkirov @williamstein kevinc\n\nKeywords: graph editor\n\nShould be able to use the graph editor as an input widget for interacts.  \n\nPreliminary proposal on sage-devel:\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/f5b850969340bc37/\n\nCurrent state of graph editor:  #8222\n\nIssue created by migration from https://trac.sagemath.org/ticket/8631\n\n",
     "created_at": "2010-03-30T14:54:01Z",
     "labels": [
         "interact",
@@ -14,12 +14,12 @@ archive/issues_008631.json:
     "title": "Make a graph-input interact control",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8631",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
-CC:  rkirov was kevinc
+CC:  rkirov @williamstein kevinc
 
 Keywords: graph editor
 
@@ -46,7 +46,7 @@ archive/issue_comments_078258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8631#issuecomment-78258",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_078260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8631#issuecomment-78260",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_078265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8631#issuecomment-78265",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_078266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8631#issuecomment-78266",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -236,16 +236,16 @@ Screenshot of graph editor interact control
 archive/issue_comments_078267.json:
 ```json
 {
-    "body": "Attachment [graph-interact.png](tarball://root/attachments/some-uuid/ticket8631/graph-interact.png) by jason created at 2010-04-30 01:09:36\n\nNice!\n\nIt looks like in the patch that there is a huge section of code that is commented out that should be just deleted.",
+    "body": "Attachment [graph-interact.png](tarball://root/attachments/some-uuid/ticket8631/graph-interact.png) by @jasongrout created at 2010-04-30 01:09:36\n\nNice!\n\nIt looks like in the patch that there is a huge section of code that is commented out that should be just deleted.",
     "created_at": "2010-04-30T01:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8631#issuecomment-78267",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [graph-interact.png](tarball://root/attachments/some-uuid/ticket8631/graph-interact.png) by jason created at 2010-04-30 01:09:36
+Attachment [graph-interact.png](tarball://root/attachments/some-uuid/ticket8631/graph-interact.png) by @jasongrout created at 2010-04-30 01:09:36
 
 Nice!
 
@@ -263,7 +263,7 @@ archive/issue_comments_078268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8631#issuecomment-78268",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_078269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8631#issuecomment-78269",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_078271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8631#issuecomment-78271",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

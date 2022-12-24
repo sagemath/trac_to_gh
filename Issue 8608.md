@@ -14,7 +14,7 @@ archive/issues_008608.json:
     "title": "Add a list of available decorators to documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8608",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mvngu
@@ -37,7 +37,7 @@ archive/issue_comments_077988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8608#issuecomment-77988",
-    "user": "mforets"
+    "user": "@mforets"
 }
 ```
 

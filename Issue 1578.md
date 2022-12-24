@@ -3,7 +3,7 @@
 archive/issues_001578.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: polynomial diff times repeat\n\nMake polynomial .diff() accept optional argument times for repeated differentiation.\n\nMakes diff do its thing multiple time if requested.\n\n```\n-    def diff(self, MPolynomial_libsingular variable, have_ring=True):\n+    def diff(self, MPolynomial_libsingular variable, times=1, have_ring=True):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1578\n\n",
+    "body": "Assignee: @malb\n\nKeywords: polynomial diff times repeat\n\nMake polynomial .diff() accept optional argument times for repeated differentiation.\n\nMakes diff do its thing multiple time if requested.\n\n```\n-    def diff(self, MPolynomial_libsingular variable, have_ring=True):\n+    def diff(self, MPolynomial_libsingular variable, times=1, have_ring=True):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1578\n\n",
     "created_at": "2007-12-21T03:53:30Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001578.json:
     "title": "[with patch, with bundle] Make polynomial .diff() accept optional argument times for repeated differentiation.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1578",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: polynomial diff times repeat
 
@@ -47,7 +47,7 @@ archive/issue_comments_010047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1578#issuecomment-10047",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_010049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1578#issuecomment-10049",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -96,16 +96,16 @@ The failures are okay, since they just have redundant information.  I tested thi
 archive/issue_comments_010050.json:
 ```json
 {
-    "body": "Attachment [ncalexan-mpoly-diff-times-updated.patch](tarball://root/attachments/some-uuid/ticket1578/ncalexan-mpoly-diff-times-updated.patch) by ncalexan created at 2008-01-13 02:01:27\n\nThis should be the final version; use this over the two earlier bundles and one earlier patch.",
+    "body": "Attachment [ncalexan-mpoly-diff-times-updated.patch](tarball://root/attachments/some-uuid/ticket1578/ncalexan-mpoly-diff-times-updated.patch) by @ncalexan created at 2008-01-13 02:01:27\n\nThis should be the final version; use this over the two earlier bundles and one earlier patch.",
     "created_at": "2008-01-13T02:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1578#issuecomment-10050",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [ncalexan-mpoly-diff-times-updated.patch](tarball://root/attachments/some-uuid/ticket1578/ncalexan-mpoly-diff-times-updated.patch) by ncalexan created at 2008-01-13 02:01:27
+Attachment [ncalexan-mpoly-diff-times-updated.patch](tarball://root/attachments/some-uuid/ticket1578/ncalexan-mpoly-diff-times-updated.patch) by @ncalexan created at 2008-01-13 02:01:27
 
 This should be the final version; use this over the two earlier bundles and one earlier patch.
 
@@ -143,7 +143,7 @@ archive/issue_comments_010052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1578#issuecomment-10052",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_010053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1578#issuecomment-10053",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_010054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1578#issuecomment-10054",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -194,16 +194,16 @@ However, I think the ability to pass in a monomial is an excellent idea. Perhaps
 archive/issue_comments_010055.json:
 ```json
 {
-    "body": "Changing assignee from malb to ncalexan.",
+    "body": "Changing assignee from @malb to @ncalexan.",
     "created_at": "2008-01-18T16:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1578#issuecomment-10055",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from malb to ncalexan.
+Changing assignee from @malb to @ncalexan.
 
 
 
@@ -217,7 +217,7 @@ archive/issue_comments_010056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1578#issuecomment-10056",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_010057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1578#issuecomment-10057",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_010058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1578#issuecomment-10058",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

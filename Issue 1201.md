@@ -14,7 +14,7 @@ archive/issues_001201.json:
     "title": "add gramm-schmidt to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1201",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: was*
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1201
 archive/issue_comments_007440.json:
 ```json
 {
-    "body": "Attachment [trac1201.patch](tarball://root/attachments/some-uuid/ticket1201/trac1201.patch) by was created at 2007-11-19 03:35:53",
+    "body": "Attachment [trac1201.patch](tarball://root/attachments/some-uuid/ticket1201/trac1201.patch) by @williamstein created at 2007-11-19 03:35:53",
     "created_at": "2007-11-19T03:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1201#issuecomment-7440",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac1201.patch](tarball://root/attachments/some-uuid/ticket1201/trac1201.patch) by was created at 2007-11-19 03:35:53
+Attachment [trac1201.patch](tarball://root/attachments/some-uuid/ticket1201/trac1201.patch) by @williamstein created at 2007-11-19 03:35:53
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_007441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1201#issuecomment-7441",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_007442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1201#issuecomment-7442",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_007443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1201#issuecomment-7443",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,16 +114,16 @@ also apply this patch (after the first)
 archive/issue_comments_007444.json:
 ```json
 {
-    "body": "Attachment [7421.patch](tarball://root/attachments/some-uuid/ticket1201/7421.patch) by mhansen created at 2007-12-01 17:12:17",
+    "body": "Attachment [7421.patch](tarball://root/attachments/some-uuid/ticket1201/7421.patch) by @mwhansen created at 2007-12-01 17:12:17",
     "created_at": "2007-12-01T17:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1201#issuecomment-7444",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [7421.patch](tarball://root/attachments/some-uuid/ticket1201/7421.patch) by mhansen created at 2007-12-01 17:12:17
+Attachment [7421.patch](tarball://root/attachments/some-uuid/ticket1201/7421.patch) by @mwhansen created at 2007-12-01 17:12:17
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_007445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1201#issuecomment-7445",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000496.json:
     "title": "In several places the generic powering and n*x code is stupid.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/496",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -166,7 +166,7 @@ archive/issue_comments_002480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/496#issuecomment-2480",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_002481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/496#issuecomment-2481",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_002482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/496#issuecomment-2482",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

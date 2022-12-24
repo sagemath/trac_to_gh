@@ -14,7 +14,7 @@ archive/issues_003235.json:
     "title": "cygwin -- mpfi; get it to work with Cygwin by fixing configure.ac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3235",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

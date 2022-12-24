@@ -3,7 +3,7 @@
 archive/issues_006816.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhansen\n\nIntegration sometimes hangs in sage-4.1.1.\n\n\n```\nflat:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('t,theta')\n(t, theta)\nsage: integrate(t * cos(-theta*t), (t,-oo,oo))\n[.. and it hangs forever ..]\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nIn fact, in Maxima what is happening is the following:\n\n```\n(%i6) integrate(t*cos(-theta*t),t,-inf,inf);\nIs  theta  positive, negative, or zero?\n\npositive       <--- i type this.\n\n;\n(%o6)                                  0\n(%i7) \n```\n\n\nFor some reason the question \"Is  theta  positive, negative, or zero?\" is not getting seen by pexpect as it should.  Argh!\n\nThis works in Maxima:\n\n```\n(%i1) assume(theta>0);\n(%o1)                             [theta > 0]\n(%i2) integrate(t*cos(-theta*t),t,-inf,inf);\n(%o2)                                  0\n```\n\n\nThe same doesn't work in Sage though, which is very weird:\n\n```\nsage: var('t,theta')\n(t, theta)\nsage: assume(theta>0)\nsage: integrate(t * cos(-theta*t), (t,-oo,oo))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6816\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nIntegration sometimes hangs in sage-4.1.1.\n\n\n```\nflat:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('t,theta')\n(t, theta)\nsage: integrate(t * cos(-theta*t), (t,-oo,oo))\n[.. and it hangs forever ..]\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nIn fact, in Maxima what is happening is the following:\n\n```\n(%i6) integrate(t*cos(-theta*t),t,-inf,inf);\nIs  theta  positive, negative, or zero?\n\npositive       <--- i type this.\n\n;\n(%o6)                                  0\n(%i7) \n```\n\n\nFor some reason the question \"Is  theta  positive, negative, or zero?\" is not getting seen by pexpect as it should.  Argh!\n\nThis works in Maxima:\n\n```\n(%i1) assume(theta>0);\n(%o1)                             [theta > 0]\n(%i2) integrate(t*cos(-theta*t),t,-inf,inf);\n(%o2)                                  0\n```\n\n\nThe same doesn't work in Sage though, which is very weird:\n\n```\nsage: var('t,theta')\n(t, theta)\nsage: assume(theta>0)\nsage: integrate(t * cos(-theta*t), (t,-oo,oo))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6816\n\n",
     "created_at": "2009-08-24T00:07:01Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_006816.json:
     "title": "sage/maxima hang when doing an indefinite integral",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6816",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mhansen
+CC:  @mwhansen
 
 Integration sometimes hangs in sage-4.1.1.
 
@@ -88,7 +88,7 @@ archive/issue_comments_056203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56203",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_056204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56204",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_056205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56205",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_056206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56206",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_056207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56207",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_056208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56208",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_056209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56209",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -222,16 +222,16 @@ Based on 4.2.alpha0
 archive/issue_comments_056210.json:
 ```json
 {
-    "body": "Attachment [trac_6816-tuples-in-integral.patch](tarball://root/attachments/some-uuid/ticket6816/trac_6816-tuples-in-integral.patch) by kcrisman created at 2009-10-20 06:23:37\n\nRebased, otherwise should be fine.",
+    "body": "Attachment [trac_6816-tuples-in-integral.patch](tarball://root/attachments/some-uuid/ticket6816/trac_6816-tuples-in-integral.patch) by @kcrisman created at 2009-10-20 06:23:37\n\nRebased, otherwise should be fine.",
     "created_at": "2009-10-20T06:23:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56210",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6816-tuples-in-integral.patch](tarball://root/attachments/some-uuid/ticket6816/trac_6816-tuples-in-integral.patch) by kcrisman created at 2009-10-20 06:23:37
+Attachment [trac_6816-tuples-in-integral.patch](tarball://root/attachments/some-uuid/ticket6816/trac_6816-tuples-in-integral.patch) by @kcrisman created at 2009-10-20 06:23:37
 
 Rebased, otherwise should be fine.
 
@@ -247,7 +247,7 @@ archive/issue_comments_056211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56211",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_056212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56212",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_056213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56213",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_056214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56214",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_056215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56215",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_056216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56216",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

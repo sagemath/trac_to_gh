@@ -3,7 +3,7 @@
 archive/issues_005610.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThis patch attempts to implement LaTeX customizations for the following things:\n\n1. matrix and vector delimiters (see #5474 -- this patch moves that code around)\n\n2. the use of plain bold vs. blackboard bold for ZZ, RR, etc.\n\nIt almost succeeds, except that I don't know how to get jsMath to display blackboard bold fonts, so it doesn't work completely in the notebook.  (This is why the ticket is labeled as not being ready for review.)\n\nHere's what it does: from the command line,\n\n\n```\nsage: latex_customize.use_blackboard_bold(True)\nsage: view(ZZ)\n```\n\n\nwill pop up a PDF or DVI file with a blackboard bold ZZ.  Similarly, in the notebook,\n\n```\nlatex_customize.use_blackboard_bold(True)\n```\n\nfollowed by a cell containing\n\n```\n%latex\n$\\ZZ$\n```\n\nwill show a blackboard bold Z.\n\nFrom either the command line or the notebook,\n\n```\nlatex_customize.set_vector_delimiters(\"\\\\langle\", \"\\\\rangle\")\nlatex_customize.set_matrix_delimiters(\"\\\\{\", \"]\")\n```\n\nwill change the left and right vector and matrix delimiters as indicated.\n\nThere are also tons of changes in the second patch of the sort \"\\mathbf{Q}\" --> \"\\QQ\".  The idea here is, first, to make the docstrings more readable, and second, to make it easy to change between \\mathbf and \\mathbb.  Note that \"\\QQ\" is defined (via #5555) as the output of the `_latex_` method for QQ which this patch redefines to be \"\\Bold{QQ}\", and setting `use_blackboard_bold` controls the definition of the command \"\\Bold\". \n\nNow, if you want to typeset the reference manual, say, with blackboard bold instead of the default bold, the PDF version is relatively easy: just create the latex version (`sage -docbuild reference latex`) and edit the preamble: change the definition of \\Bold, and run latex.  For the html version, you probably have to edit the definition of \\Bold in sage/misc/latex_macros.py, or add \\renewcommand{\\Bold}... in the right place in sage/doc/conf.py; then run `sage -b`, then build the docs. As you can see, I don't have very good ideas about how to change the reference manuals -- should there be a command-line switch to `sage -docbuild`? -- so please chime in if you think of something.\n\nSee [this thread](http://groups.google.com/group/sage-devel/browse_frm/thread/68cdf05b40303286) on sage-devel for some more discussion, especially about mathbf vs. mathbb.\n\nThis ticket depends on #5359, #5433, and #5568 (all of which will be part of Sage 3.4.1.alpha0), and also on #5555.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5610\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThis patch attempts to implement LaTeX customizations for the following things:\n\n1. matrix and vector delimiters (see #5474 -- this patch moves that code around)\n\n2. the use of plain bold vs. blackboard bold for ZZ, RR, etc.\n\nIt almost succeeds, except that I don't know how to get jsMath to display blackboard bold fonts, so it doesn't work completely in the notebook.  (This is why the ticket is labeled as not being ready for review.)\n\nHere's what it does: from the command line,\n\n\n```\nsage: latex_customize.use_blackboard_bold(True)\nsage: view(ZZ)\n```\n\n\nwill pop up a PDF or DVI file with a blackboard bold ZZ.  Similarly, in the notebook,\n\n```\nlatex_customize.use_blackboard_bold(True)\n```\n\nfollowed by a cell containing\n\n```\n%latex\n$\\ZZ$\n```\n\nwill show a blackboard bold Z.\n\nFrom either the command line or the notebook,\n\n```\nlatex_customize.set_vector_delimiters(\"\\\\langle\", \"\\\\rangle\")\nlatex_customize.set_matrix_delimiters(\"\\\\{\", \"]\")\n```\n\nwill change the left and right vector and matrix delimiters as indicated.\n\nThere are also tons of changes in the second patch of the sort \"\\mathbf{Q}\" --> \"\\QQ\".  The idea here is, first, to make the docstrings more readable, and second, to make it easy to change between \\mathbf and \\mathbb.  Note that \"\\QQ\" is defined (via #5555) as the output of the `_latex_` method for QQ which this patch redefines to be \"\\Bold{QQ}\", and setting `use_blackboard_bold` controls the definition of the command \"\\Bold\". \n\nNow, if you want to typeset the reference manual, say, with blackboard bold instead of the default bold, the PDF version is relatively easy: just create the latex version (`sage -docbuild reference latex`) and edit the preamble: change the definition of \\Bold, and run latex.  For the html version, you probably have to edit the definition of \\Bold in sage/misc/latex_macros.py, or add \\renewcommand{\\Bold}... in the right place in sage/doc/conf.py; then run `sage -b`, then build the docs. As you can see, I don't have very good ideas about how to change the reference manuals -- should there be a command-line switch to `sage -docbuild`? -- so please chime in if you think of something.\n\nSee [this thread](http://groups.google.com/group/sage-devel/browse_frm/thread/68cdf05b40303286) on sage-devel for some more discussion, especially about mathbf vs. mathbb.\n\nThis ticket depends on #5359, #5433, and #5568 (all of which will be part of Sage 3.4.1.alpha0), and also on #5555.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5610\n\n",
     "created_at": "2009-03-25T17:56:57Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_005610.json:
     "title": "[with patch, not ready for review?] LaTeX customization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5610",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 This patch attempts to implement LaTeX customizations for the following things:
 
@@ -84,7 +84,7 @@ archive/issue_comments_043793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43793",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_043794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43794",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_043795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43795",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_043796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43796",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_043797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43797",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_043798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43798",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_043799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43799",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_043800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43800",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_043801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43801",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_043802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43802",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_043803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43803",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_043804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43804",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -397,16 +397,16 @@ Screenshot of garbled list_function() documentation (yellow highlight on "indire
 archive/issue_comments_043805.json:
 ```json
 {
-    "body": "Attachment [list-function-pdf.png](tarball://root/attachments/some-uuid/ticket5610/list-function-pdf.png) by jhpalmieri created at 2009-04-20 21:18:30\n\nReplying to [comment:11 rbeezer]:\n>The new methods for setting matrix and vector delimiters are a very welcome addition, and the options for \"bolding\" rings provide a good example for future options like this. One should note that work still needs to be done to make this work for all rings, this patch appears to only demonstrate use for ZZ and GF (though I could have missed some). \n\nThe second patch also changes QQ, RR, and CC.  It leaves `\\mathbb{P`} and `\\mathbb{A`} unchanged.  (The first patch includes only the core of the customization code, and the relevant files happened not to use QQ, RR, or CC.)\n\n> The use of an instance of the Latex class, named \"latex\" had me confused for a while, since now `latex.__call__` replaces the functionality of the old `latex()`.  Some commentary highlighting the `latex` instance in the source (at some point - either now, or later) might save others the same confusion.\n\nDoes this affect end-users, or just developers?  I mean, does `latex(blah)` behave the same as it used to?  I hope so -- that was my intention.  You're right, though, that the syntax from the development end is different, but that seemed like the nicest way to do the customization: as methods (which could be tab-completed) attached to latex.  Do you have suggestions about what sorts of comments to add?\n\n> `sage -docbuild pdf reference` seemed to choke on the doctest for the `list_function` method in `misc/latex.py`.  \n\nI think this is easy to fix: put an \"r\" in front of the triple quotes at the beginning of the docstring.  It was there originally, and then I deleted it (I don't know why) in the new version.\n\nI'll produce a new patch soon with the \"r\", and with part 2 rebased against 3.4.1.rc4.",
+    "body": "Attachment [list-function-pdf.png](tarball://root/attachments/some-uuid/ticket5610/list-function-pdf.png) by @jhpalmieri created at 2009-04-20 21:18:30\n\nReplying to [comment:11 rbeezer]:\n>The new methods for setting matrix and vector delimiters are a very welcome addition, and the options for \"bolding\" rings provide a good example for future options like this. One should note that work still needs to be done to make this work for all rings, this patch appears to only demonstrate use for ZZ and GF (though I could have missed some). \n\nThe second patch also changes QQ, RR, and CC.  It leaves `\\mathbb{P`} and `\\mathbb{A`} unchanged.  (The first patch includes only the core of the customization code, and the relevant files happened not to use QQ, RR, or CC.)\n\n> The use of an instance of the Latex class, named \"latex\" had me confused for a while, since now `latex.__call__` replaces the functionality of the old `latex()`.  Some commentary highlighting the `latex` instance in the source (at some point - either now, or later) might save others the same confusion.\n\nDoes this affect end-users, or just developers?  I mean, does `latex(blah)` behave the same as it used to?  I hope so -- that was my intention.  You're right, though, that the syntax from the development end is different, but that seemed like the nicest way to do the customization: as methods (which could be tab-completed) attached to latex.  Do you have suggestions about what sorts of comments to add?\n\n> `sage -docbuild pdf reference` seemed to choke on the doctest for the `list_function` method in `misc/latex.py`.  \n\nI think this is easy to fix: put an \"r\" in front of the triple quotes at the beginning of the docstring.  It was there originally, and then I deleted it (I don't know why) in the new version.\n\nI'll produce a new patch soon with the \"r\", and with part 2 rebased against 3.4.1.rc4.",
     "created_at": "2009-04-20T21:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43805",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [list-function-pdf.png](tarball://root/attachments/some-uuid/ticket5610/list-function-pdf.png) by jhpalmieri created at 2009-04-20 21:18:30
+Attachment [list-function-pdf.png](tarball://root/attachments/some-uuid/ticket5610/list-function-pdf.png) by @jhpalmieri created at 2009-04-20 21:18:30
 
 Replying to [comment:11 rbeezer]:
 >The new methods for setting matrix and vector delimiters are a very welcome addition, and the options for "bolding" rings provide a good example for future options like this. One should note that work still needs to be done to make this work for all rings, this patch appears to only demonstrate use for ZZ and GF (though I could have missed some). 
@@ -435,7 +435,7 @@ archive/issue_comments_043806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43806",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_043807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43807",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -484,16 +484,16 @@ in latex.py.
 archive/issue_comments_043808.json:
 ```json
 {
-    "body": "Attachment [latex-customization.patch](tarball://root/attachments/some-uuid/ticket5610/latex-customization.patch) by jhpalmieri created at 2009-04-21 05:42:13\n\napply this one first",
+    "body": "Attachment [latex-customization.patch](tarball://root/attachments/some-uuid/ticket5610/latex-customization.patch) by @jhpalmieri created at 2009-04-21 05:42:13\n\napply this one first",
     "created_at": "2009-04-21T05:42:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43808",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [latex-customization.patch](tarball://root/attachments/some-uuid/ticket5610/latex-customization.patch) by jhpalmieri created at 2009-04-21 05:42:13
+Attachment [latex-customization.patch](tarball://root/attachments/some-uuid/ticket5610/latex-customization.patch) by @jhpalmieri created at 2009-04-21 05:42:13
 
 apply this one first
 
@@ -504,16 +504,16 @@ apply this one first
 archive/issue_comments_043809.json:
 ```json
 {
-    "body": "Attachment [latex-customization-part2.patch](tarball://root/attachments/some-uuid/ticket5610/latex-customization-part2.patch) by jhpalmieri created at 2009-04-21 05:43:06\n\napply this one second (this is the same as latex-customization-part2.2.patch)",
+    "body": "Attachment [latex-customization-part2.patch](tarball://root/attachments/some-uuid/ticket5610/latex-customization-part2.patch) by @jhpalmieri created at 2009-04-21 05:43:06\n\napply this one second (this is the same as latex-customization-part2.2.patch)",
     "created_at": "2009-04-21T05:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43809",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [latex-customization-part2.patch](tarball://root/attachments/some-uuid/ticket5610/latex-customization-part2.patch) by jhpalmieri created at 2009-04-21 05:43:06
+Attachment [latex-customization-part2.patch](tarball://root/attachments/some-uuid/ticket5610/latex-customization-part2.patch) by @jhpalmieri created at 2009-04-21 05:43:06
 
 apply this one second (this is the same as latex-customization-part2.2.patch)
 
@@ -529,7 +529,7 @@ archive/issue_comments_043810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5610#issuecomment-43810",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004452.json:
     "title": "[with patch; needs review] optimize next_prime",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4452",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4452
 archive/issue_comments_032820.json:
 ```json
 {
-    "body": "Attachment [sage-4452.patch](tarball://root/attachments/some-uuid/ticket4452/sage-4452.patch) by was created at 2008-11-06 00:44:22",
+    "body": "Attachment [sage-4452.patch](tarball://root/attachments/some-uuid/ticket4452/sage-4452.patch) by @williamstein created at 2008-11-06 00:44:22",
     "created_at": "2008-11-06T00:44:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4452#issuecomment-32820",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4452.patch](tarball://root/attachments/some-uuid/ticket4452/sage-4452.patch) by was created at 2008-11-06 00:44:22
+Attachment [sage-4452.patch](tarball://root/attachments/some-uuid/ticket4452/sage-4452.patch) by @williamstein created at 2008-11-06 00:44:22
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_032821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4452#issuecomment-32821",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003556.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nNotice the following:\n\n\n```\nsage: IntegerModRing(next_prime(10^30)).unit_gens()\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/home/craigcitro/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/rings/integer_mod_ring.py in unit_gens(self)\n    780             m = n/(p**r)\n    781             for g in self.__unit_gens_primepowercase(p, r):\n--> 782                 x = g.crt(integer_mod.Mod(1,m))\n    783                 self.__unit_gens.append(x)\n    784         return self.__unit_gens\n\n/home/craigcitro/integer_mod.pyx in sage.rings.integer_mod.IntegerMod_abstract.crt (sage/rings/integer_mod.c:7044)()\n\n/home/craigcitro/integer_mod.pyx in sage.rings.integer_mod.IntegerMod_gmp.__crt (sage/rings/integer_mod.c:8578)()\n\nZeroDivisionError: moduli must be coprime\nsage: \n```\n\n\nThe issue is that `crt` doesn't play well when one of the moduli is 1. The attached patch fixes it, and adds a few doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3556\n\n",
+    "body": "Assignee: @craigcitro\n\nNotice the following:\n\n\n```\nsage: IntegerModRing(next_prime(10^30)).unit_gens()\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/home/craigcitro/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/rings/integer_mod_ring.py in unit_gens(self)\n    780             m = n/(p**r)\n    781             for g in self.__unit_gens_primepowercase(p, r):\n--> 782                 x = g.crt(integer_mod.Mod(1,m))\n    783                 self.__unit_gens.append(x)\n    784         return self.__unit_gens\n\n/home/craigcitro/integer_mod.pyx in sage.rings.integer_mod.IntegerMod_abstract.crt (sage/rings/integer_mod.c:7044)()\n\n/home/craigcitro/integer_mod.pyx in sage.rings.integer_mod.IntegerMod_gmp.__crt (sage/rings/integer_mod.c:8578)()\n\nZeroDivisionError: moduli must be coprime\nsage: \n```\n\n\nThe issue is that `crt` doesn't play well when one of the moduli is 1. The attached patch fixes it, and adds a few doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3556\n\n",
     "created_at": "2008-07-06T01:20:25Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_003556.json:
     "title": "[with patch, needs review] Bug in IntegerModRing(n) for very large n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3556",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Notice the following:
 
@@ -58,16 +58,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3556
 archive/issue_comments_025145.json:
 ```json
 {
-    "body": "Attachment [trac-3556.patch](tarball://root/attachments/some-uuid/ticket3556/trac-3556.patch) by wjp created at 2008-07-06 14:13:49",
+    "body": "Attachment [trac-3556.patch](tarball://root/attachments/some-uuid/ticket3556/trac-3556.patch) by @wjp created at 2008-07-06 14:13:49",
     "created_at": "2008-07-06T14:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3556#issuecomment-25145",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac-3556.patch](tarball://root/attachments/some-uuid/ticket3556/trac-3556.patch) by wjp created at 2008-07-06 14:13:49
+Attachment [trac-3556.patch](tarball://root/attachments/some-uuid/ticket3556/trac-3556.patch) by @wjp created at 2008-07-06 14:13:49
 
 
 

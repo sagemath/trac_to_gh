@@ -14,7 +14,7 @@ archive/issues_000665.json:
     "title": "notebook() failure under VMware Player",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/665",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 Assignee: boothby
@@ -68,16 +68,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/665
 archive/issue_comments_003451.json:
 ```json
 {
-    "body": "Changing assignee from boothby to was.",
+    "body": "Changing assignee from boothby to @williamstein.",
     "created_at": "2007-09-21T00:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/665#issuecomment-3451",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from boothby to was.
+Changing assignee from boothby to @williamstein.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_003452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/665#issuecomment-3452",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_003453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/665#issuecomment-3453",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003755.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis improves the examples, documentation, and implementation of the code in\nthe finance package for computing the Hurst exponent.  The main core improvement\nis that the algorithm is more sophisticated than the very naive one currently\nin Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3755\n\n",
+    "body": "Assignee: @williamstein\n\nThis improves the examples, documentation, and implementation of the code in\nthe finance package for computing the Hurst exponent.  The main core improvement\nis that the algorithm is more sophisticated than the very naive one currently\nin Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3755\n\n",
     "created_at": "2008-08-01T16:07:13Z",
     "labels": [
         "finance",
@@ -14,10 +14,10 @@ archive/issues_003755.json:
     "title": "[with patch; needs review] finance -- improve implementation of hurst exponent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3755",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This improves the examples, documentation, and implementation of the code in
 the finance package for computing the Hurst exponent.  The main core improvement
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3755
 archive/issue_comments_026676.json:
 ```json
 {
-    "body": "Attachment [sage-3755.patch](tarball://root/attachments/some-uuid/ticket3755/sage-3755.patch) by was created at 2008-08-01 16:07:44",
+    "body": "Attachment [sage-3755.patch](tarball://root/attachments/some-uuid/ticket3755/sage-3755.patch) by @williamstein created at 2008-08-01 16:07:44",
     "created_at": "2008-08-01T16:07:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3755#issuecomment-26676",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3755.patch](tarball://root/attachments/some-uuid/ticket3755/sage-3755.patch) by was created at 2008-08-01 16:07:44
+Attachment [sage-3755.patch](tarball://root/attachments/some-uuid/ticket3755/sage-3755.patch) by @williamstein created at 2008-08-01 16:07:44
 
 
 

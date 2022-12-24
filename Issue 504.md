@@ -3,7 +3,7 @@
 archive/issues_000504.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe Lie interface doesn't gracefully handle errors, which totally corrupt the io stream. \n\n\n```\nsage: A4 = lie('A4')\nsage: A4.i_Cartan()\n\n     [[4,3,2,1]\n     ,[3,6,4,2]\n     ,[2,4,6,3]\n     ,[1,2,3,4]\n     ]\n\nsage: A4.multiplicative_order()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/home/was/<ipython console> in <module>()\n\n/home/was/element.pyx in element.RingElement.multiplicative_order()\n\n/home/was/element.pyx in element.RingElement.is_unit()\n\n<type 'exceptions.NotImplementedError'>:\nsage: A4.i_Cartan()\n\nsage: A4.i_Cartan()\nsage0\nsage: A4.i_Cartan()\n\nArgument types do not match in call. Types are: ==(grp, bin).\nValid argument types are for instance: ==(bin, bin).\nsage: A4.i_Cartan()\n\n     [[4,3,2,1]\n     ,[3,6,4,2]\n     ,[2,4,6,3]\n     ,[1,2,3,4]\n     ]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/504\n\n",
+    "body": "Assignee: @williamstein\n\nThe Lie interface doesn't gracefully handle errors, which totally corrupt the io stream. \n\n\n```\nsage: A4 = lie('A4')\nsage: A4.i_Cartan()\n\n     [[4,3,2,1]\n     ,[3,6,4,2]\n     ,[2,4,6,3]\n     ,[1,2,3,4]\n     ]\n\nsage: A4.multiplicative_order()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/home/was/<ipython console> in <module>()\n\n/home/was/element.pyx in element.RingElement.multiplicative_order()\n\n/home/was/element.pyx in element.RingElement.is_unit()\n\n<type 'exceptions.NotImplementedError'>:\nsage: A4.i_Cartan()\n\nsage: A4.i_Cartan()\nsage0\nsage: A4.i_Cartan()\n\nArgument types do not match in call. Types are: ==(grp, bin).\nValid argument types are for instance: ==(bin, bin).\nsage: A4.i_Cartan()\n\n     [[4,3,2,1]\n     ,[3,6,4,2]\n     ,[2,4,6,3]\n     ,[1,2,3,4]\n     ]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/504\n\n",
     "created_at": "2007-08-28T23:38:44Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000504.json:
     "title": "make lie interface more robust",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/504",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The Lie interface doesn't gracefully handle errors, which totally corrupt the io stream. 
 
@@ -72,16 +72,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/504
 archive/issue_comments_002525.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-08-28T23:53:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/504#issuecomment-2525",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -90,16 +90,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_002526.json:
 ```json
 {
-    "body": "Attachment [lie.py](tarball://root/attachments/some-uuid/ticket504/lie.py) by mhansen created at 2007-08-28 23:58:42",
+    "body": "Attachment [lie.py](tarball://root/attachments/some-uuid/ticket504/lie.py) by @mwhansen created at 2007-08-28 23:58:42",
     "created_at": "2007-08-28T23:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/504#issuecomment-2526",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [lie.py](tarball://root/attachments/some-uuid/ticket504/lie.py) by mhansen created at 2007-08-28 23:58:42
+Attachment [lie.py](tarball://root/attachments/some-uuid/ticket504/lie.py) by @mwhansen created at 2007-08-28 23:58:42
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_002527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/504#issuecomment-2527",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

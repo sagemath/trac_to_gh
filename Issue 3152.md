@@ -14,7 +14,7 @@ archive/issues_003152.json:
     "title": "notebook -- improve gap-mode help interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3152",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -58,7 +58,7 @@ archive/issue_comments_021857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3152#issuecomment-21857",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_021858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3152#issuecomment-21858",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_021859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3152#issuecomment-21859",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_021860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3152#issuecomment-21860",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

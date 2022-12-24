@@ -3,7 +3,7 @@
 archive/issues_008417.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nsee the title...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8417\n\n",
+    "body": "Assignee: @rlmill\n\nsee the title...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8417\n\n",
     "created_at": "2010-03-02T11:00:37Z",
     "labels": [
         "graph theory",
@@ -17,7 +17,7 @@ archive/issues_008417.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 see the title...
 
@@ -92,7 +92,7 @@ archive/issue_comments_075426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8417#issuecomment-75426",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_075427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8417#issuecomment-75427",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_075429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8417#issuecomment-75429",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -179,16 +179,16 @@ apply on top of other patch
 archive/issue_comments_075430.json:
 ```json
 {
-    "body": "Attachment [trac_8417-ref.patch](tarball://root/attachments/some-uuid/ticket8417/trac_8417-ref.patch) by rlm created at 2010-03-09 18:23:57\n\nReplying to [comment:3 ylchapuy]:\n> Beware, with your patch applied I get:\n\nThank you for pointing this out. I've reverted that part of the patch.\n\nCan you see any way to make the overhead from checking in this case any better? Also, what do you think about a check=False option in graph construction, more generally?",
+    "body": "Attachment [trac_8417-ref.patch](tarball://root/attachments/some-uuid/ticket8417/trac_8417-ref.patch) by @rlmill created at 2010-03-09 18:23:57\n\nReplying to [comment:3 ylchapuy]:\n> Beware, with your patch applied I get:\n\nThank you for pointing this out. I've reverted that part of the patch.\n\nCan you see any way to make the overhead from checking in this case any better? Also, what do you think about a check=False option in graph construction, more generally?",
     "created_at": "2010-03-09T18:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8417#issuecomment-75430",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8417-ref.patch](tarball://root/attachments/some-uuid/ticket8417/trac_8417-ref.patch) by rlm created at 2010-03-09 18:23:57
+Attachment [trac_8417-ref.patch](tarball://root/attachments/some-uuid/ticket8417/trac_8417-ref.patch) by @rlmill created at 2010-03-09 18:23:57
 
 Replying to [comment:3 ylchapuy]:
 > Beware, with your patch applied I get:
@@ -209,7 +209,7 @@ archive/issue_comments_075431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8417#issuecomment-75431",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_075432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8417#issuecomment-75432",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

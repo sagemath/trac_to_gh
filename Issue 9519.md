@@ -3,7 +3,7 @@
 archive/issues_009519.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  leif mpatel mvngu jhpalmieri dimpase\n\nBuilding Sage 4.5 on a Sun Blade 2000, with dual UltraSPARC III+ processors in 64-bit mode, the build process produces some obvious **error** messages. These are not warnings, but errors. \n\n\n```\ngcc _configtest.o -L/export/home/drkirkby/64/sage-4.5/local/lib -lf77blas -lcblas -latlas -o _configtest\nld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64\nld: fatal: File processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64\nld: fatal: File processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nfailure.\nremoving: _configtest.c _configtest.o\nStatus: 255\nOutput:\n```\n\n\n`wrong ELF class:` messages mean an attempt what made to link a mixture of 32-bit and 64-bit object files. \n\nBut the build process still goes on to report that scipy has installed OK. \n\n\n```\nreal    22m34.927s\nuser    20m23.356s\nsys     1m5.603s\nSuccessfully installed scipy-0.7.p5\n```\n\n\nWhat is odd, is that `spkg-install` looks to be OK to me. \n\n\n```\npython setup.py build\nif [ $? -ne 0 ]; then\n    echo \"Error building scipy.\"\n    exit 1\nfi\n\n# Intall\npython setup.py install\nif [ $? -ne 0 ]; then\n    echo \"Error installing scipy.\"\n    exit 1\nfi\n```\n\n\nThe problem is **not** like the cephes package, or several others, where the return code of *make* is not checked.  \n\nAt this point, I've not no idea if this is an upstream bug, or a Sage bug. \n\nAnyone got any ideas? \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9519\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime @qed777 mvngu @jhpalmieri @dimpase\n\nBuilding Sage 4.5 on a Sun Blade 2000, with dual UltraSPARC III+ processors in 64-bit mode, the build process produces some obvious **error** messages. These are not warnings, but errors. \n\n\n```\ngcc _configtest.o -L/export/home/drkirkby/64/sage-4.5/local/lib -lf77blas -lcblas -latlas -o _configtest\nld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64\nld: fatal: File processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64\nld: fatal: File processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\nfailure.\nremoving: _configtest.c _configtest.o\nStatus: 255\nOutput:\n```\n\n\n`wrong ELF class:` messages mean an attempt what made to link a mixture of 32-bit and 64-bit object files. \n\nBut the build process still goes on to report that scipy has installed OK. \n\n\n```\nreal    22m34.927s\nuser    20m23.356s\nsys     1m5.603s\nSuccessfully installed scipy-0.7.p5\n```\n\n\nWhat is odd, is that `spkg-install` looks to be OK to me. \n\n\n```\npython setup.py build\nif [ $? -ne 0 ]; then\n    echo \"Error building scipy.\"\n    exit 1\nfi\n\n# Intall\npython setup.py install\nif [ $? -ne 0 ]; then\n    echo \"Error installing scipy.\"\n    exit 1\nfi\n```\n\n\nThe problem is **not** like the cephes package, or several others, where the return code of *make* is not checked.  \n\nAt this point, I've not no idea if this is an upstream bug, or a Sage bug. \n\nAnyone got any ideas? \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9519\n\n",
     "created_at": "2010-07-16T22:43:58Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009519.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  leif mpatel mvngu jhpalmieri dimpase
+CC:  @nexttime @qed777 mvngu @jhpalmieri @dimpase
 
 Building Sage 4.5 on a Sun Blade 2000, with dual UltraSPARC III+ processors in 64-bit mode, the build process produces some obvious **error** messages. These are not warnings, but errors. 
 
@@ -95,7 +95,7 @@ archive/issue_comments_091510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9519#issuecomment-91510",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_091511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9519#issuecomment-91511",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_091514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9519#issuecomment-91514",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_091518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9519#issuecomment-91518",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_091519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9519#issuecomment-91519",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_091520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9519#issuecomment-91520",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_091521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9519#issuecomment-91521",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_091522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9519#issuecomment-91522",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

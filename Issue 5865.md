@@ -14,7 +14,7 @@ archive/issues_005865.json:
     "title": "Add SAGE_SIMD_FLAG=\"SSE2\" README.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5865",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -85,7 +85,7 @@ archive/issue_comments_046335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5865#issuecomment-46335",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_046336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5865#issuecomment-46336",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

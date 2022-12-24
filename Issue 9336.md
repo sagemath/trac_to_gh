@@ -3,7 +3,7 @@
 archive/issues_009336.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  cremona\n\nKeywords: doctest\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9336\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nKeywords: doctest\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9336\n\n",
     "created_at": "2010-06-25T15:10:10Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_009336.json:
     "title": "Improve doctest coverage for sage/rings/number_field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9336",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  cremona
+CC:  @JohnCremona
 
 Keywords: doctest
 
@@ -41,7 +41,7 @@ archive/issue_comments_088145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9336#issuecomment-88145",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_088146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9336#issuecomment-88146",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_088147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9336#issuecomment-88147",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_088150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9336#issuecomment-88150",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -188,16 +188,16 @@ OK, I agree that would be better.
 archive/issue_comments_088151.json:
 ```json
 {
-    "body": "Attachment [trac_9336.patch](tarball://root/attachments/some-uuid/ticket9336/trac_9336.patch) by davidloeffler created at 2010-06-28 08:52:14\n\npatch against 4.4.4",
+    "body": "Attachment [trac_9336.patch](tarball://root/attachments/some-uuid/ticket9336/trac_9336.patch) by @loefflerd created at 2010-06-28 08:52:14\n\npatch against 4.4.4",
     "created_at": "2010-06-28T08:52:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9336#issuecomment-88151",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9336.patch](tarball://root/attachments/some-uuid/ticket9336/trac_9336.patch) by davidloeffler created at 2010-06-28 08:52:14
+Attachment [trac_9336.patch](tarball://root/attachments/some-uuid/ticket9336/trac_9336.patch) by @loefflerd created at 2010-06-28 08:52:14
 
 patch against 4.4.4
 
@@ -213,7 +213,7 @@ archive/issue_comments_088152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9336#issuecomment-88152",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_088153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9336#issuecomment-88153",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_088156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9336#issuecomment-88156",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

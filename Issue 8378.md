@@ -3,7 +3,7 @@
 archive/issues_008378.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  cremona jason\n\n\n```\nsage: crt(15,1,30,4)\n...\nValueError: arguments a and b must be coprime\n```\n\nHowever in the documentation of `crt` a, b are the residues,\nand the moduli are called m, n. Thus the message should be:\n\n```\nValueError: arguments m and n must be coprime\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8378\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @jasongrout\n\n\n```\nsage: crt(15,1,30,4)\n...\nValueError: arguments a and b must be coprime\n```\n\nHowever in the documentation of `crt` a, b are the residues,\nand the moduli are called m, n. Thus the message should be:\n\n```\nValueError: arguments m and n must be coprime\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8378\n\n",
     "created_at": "2010-02-26T10:14:22Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_008378.json:
     "title": "[trivial to fix] typo in documentation of crt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8378",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  cremona jason
+CC:  @JohnCremona @jasongrout
 
 
 ```
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8378
 archive/issue_comments_074904.json:
 ```json
 {
-    "body": "Attachment [trac_8378.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378.patch) by zimmerma created at 2010-04-23 10:31:47",
+    "body": "Attachment [trac_8378.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378.patch) by @zimmermann6 created at 2010-04-23 10:31:47",
     "created_at": "2010-04-23T10:31:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74904",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_8378.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378.patch) by zimmerma created at 2010-04-23 10:31:47
+Attachment [trac_8378.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378.patch) by @zimmermann6 created at 2010-04-23 10:31:47
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_074905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74905",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_074906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74906",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_074907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74907",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_074908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74908",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -172,16 +172,16 @@ will be happy with that.
 archive/issue_comments_074909.json:
 ```json
 {
-    "body": "Attachment [trac_8378-crt.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378-crt.patch) by cremona created at 2010-04-25 10:39:39\n\nreplaces previous;  applies to 4.4.rc0",
+    "body": "Attachment [trac_8378-crt.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378-crt.patch) by @JohnCremona created at 2010-04-25 10:39:39\n\nreplaces previous;  applies to 4.4.rc0",
     "created_at": "2010-04-25T10:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74909",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8378-crt.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378-crt.patch) by cremona created at 2010-04-25 10:39:39
+Attachment [trac_8378-crt.patch](tarball://root/attachments/some-uuid/ticket8378/trac_8378-crt.patch) by @JohnCremona created at 2010-04-25 10:39:39
 
 replaces previous;  applies to 4.4.rc0
 
@@ -197,7 +197,7 @@ archive/issue_comments_074910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74910",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_074911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74911",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_074912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74912",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_074915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74915",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -314,16 +314,16 @@ Reviewer patch looks good;   testing now.  Thank a lot, Minh, for tidying upwhat
 archive/issue_comments_074916.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to cremona.",
+    "body": "Changing assignee from @aghitza to @JohnCremona.",
     "created_at": "2010-04-28T11:52:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74916",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Changing assignee from AlexGhitza to cremona.
+Changing assignee from @aghitza to @JohnCremona.
 
 
 
@@ -337,7 +337,7 @@ archive/issue_comments_074917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74917",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_074918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74918",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_074919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8378#issuecomment-74919",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

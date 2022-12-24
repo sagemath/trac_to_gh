@@ -3,7 +3,7 @@
 archive/issues_003670.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nAs detailed in emails with cwitty, SymbolicEquation should be absorbed into a ==, <, etc, SymbolicOperator that is of sym_parent boolean parent (which is not yet implemented), to be based off of BooleanLattice.  Notzero should remain as is, but raise an exception of sym_parent is not boolean.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3670\n\n",
+    "body": "Assignee: @garyfurnish\n\nAs detailed in emails with cwitty, SymbolicEquation should be absorbed into a ==, <, etc, SymbolicOperator that is of sym_parent boolean parent (which is not yet implemented), to be based off of BooleanLattice.  Notzero should remain as is, but raise an exception of sym_parent is not boolean.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3670\n\n",
     "created_at": "2008-07-17T11:14:45Z",
     "labels": [
         "symbolics",
@@ -13,10 +13,10 @@ archive/issues_003670.json:
     "title": "symbolic equation should be merged into symbolic opeartors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3670",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 As detailed in emails with cwitty, SymbolicEquation should be absorbed into a ==, <, etc, SymbolicOperator that is of sym_parent boolean parent (which is not yet implemented), to be based off of BooleanLattice.  Notzero should remain as is, but raise an exception of sym_parent is not boolean.  
 
@@ -36,7 +36,7 @@ archive/issue_comments_025942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3670#issuecomment-25942",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -54,7 +54,7 @@ archive/issue_comments_025943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3670#issuecomment-25943",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_025944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3670#issuecomment-25944",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_025945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3670#issuecomment-25945",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

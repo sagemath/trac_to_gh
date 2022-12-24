@@ -14,7 +14,7 @@ archive/issues_005872.json:
     "title": "[with patch, needs review] Explicitly pass -fPIC into ntl shared object build.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5872",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 Assignee: mabshoff
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5872
 archive/issue_comments_046373.json:
 ```json
 {
-    "body": "Attachment [ntl-5.4.2.p6.patch](tarball://root/attachments/some-uuid/ticket5872/ntl-5.4.2.p6.patch) by mhansen created at 2009-06-20 07:13:30\n\nLooks good to me.\n\nThe spkg incorporating this patch can be found at http://sage.math.washington.edu/home/mhansen/ntl-5.4.2.p8.spkg",
+    "body": "Attachment [ntl-5.4.2.p6.patch](tarball://root/attachments/some-uuid/ticket5872/ntl-5.4.2.p6.patch) by @mwhansen created at 2009-06-20 07:13:30\n\nLooks good to me.\n\nThe spkg incorporating this patch can be found at http://sage.math.washington.edu/home/mhansen/ntl-5.4.2.p8.spkg",
     "created_at": "2009-06-20T07:13:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5872#issuecomment-46373",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [ntl-5.4.2.p6.patch](tarball://root/attachments/some-uuid/ticket5872/ntl-5.4.2.p6.patch) by mhansen created at 2009-06-20 07:13:30
+Attachment [ntl-5.4.2.p6.patch](tarball://root/attachments/some-uuid/ticket5872/ntl-5.4.2.p6.patch) by @mwhansen created at 2009-06-20 07:13:30
 
 Looks good to me.
 
@@ -62,7 +62,7 @@ archive/issue_comments_046374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5872#issuecomment-46374",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,16 +75,16 @@ Changing status from new to assigned.
 archive/issue_comments_046375.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-20T07:13:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5872#issuecomment-46375",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_046376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5872#issuecomment-46376",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

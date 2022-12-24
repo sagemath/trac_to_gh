@@ -3,7 +3,7 @@
 archive/issues_004251.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mhansen\n\nThis was reported to by a new user:\n\nSection 2.2 Microsoft Windows in the \nInstallation Guide seems to have a dead line.\nMaybe \n\"http://www.sagemath.org/SAGEbin/vmware/\"\nshould be \n\"http://www.sagemath.org/download.html\"?\n\nI'm not sure what milestone to assign this nor how to\nsubmit a patch since we are in the process of \nswitching the documentation over to a new system.\n\n\n\n```\nDear David,\n  I went to your first link, went to Windows version, at page:\nhttp://www.sagemath.org/doc/inst/node4.html\n\nwhere the first link is dead: http://www.sagemath.org/SAGEbin/vmware/\n\nBut I got the vmware download through some other path (that I don't remember\nright now).\n        Mark\n\n-----Original Message-----\nFrom: David Joyner \nSent: Monday, October 06, 2008 12:06 PM\nTo: ....\nSubject: Re: Sage question\n\nMark Meyerson wrote:\n> Dear Dave,\n>\n> Is their a \"quick start\" document on line somewhere for SAGE - brief\n> directions for a. installing it on my computer and b. using it?  Thanks.\n>\n> Mark\n>\n> -----------      \n>\n>\n>   \n\nYes.\nThe installation document\nhttp://www.sagemath.org/doc/inst/inst.html\n\ndiscusses installation and the tutorial\nhttp://www.sagemath.org/doc/tut/tut.html\n\nand constructions document\nhttp://www.sagemath.org/doc/const/const.html\n\nhave lots of examples.\n\nLet me know if you need help.\n\nDavid \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4251\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen\n\nThis was reported to by a new user:\n\nSection 2.2 Microsoft Windows in the \nInstallation Guide seems to have a dead line.\nMaybe \n\"http://www.sagemath.org/SAGEbin/vmware/\"\nshould be \n\"http://www.sagemath.org/download.html\"?\n\nI'm not sure what milestone to assign this nor how to\nsubmit a patch since we are in the process of \nswitching the documentation over to a new system.\n\n\n\n```\nDear David,\n  I went to your first link, went to Windows version, at page:\nhttp://www.sagemath.org/doc/inst/node4.html\n\nwhere the first link is dead: http://www.sagemath.org/SAGEbin/vmware/\n\nBut I got the vmware download through some other path (that I don't remember\nright now).\n        Mark\n\n-----Original Message-----\nFrom: David Joyner \nSent: Monday, October 06, 2008 12:06 PM\nTo: ....\nSubject: Re: Sage question\n\nMark Meyerson wrote:\n> Dear Dave,\n>\n> Is their a \"quick start\" document on line somewhere for SAGE - brief\n> directions for a. installing it on my computer and b. using it?  Thanks.\n>\n> Mark\n>\n> -----------      \n>\n>\n>   \n\nYes.\nThe installation document\nhttp://www.sagemath.org/doc/inst/inst.html\n\ndiscusses installation and the tutorial\nhttp://www.sagemath.org/doc/tut/tut.html\n\nand constructions document\nhttp://www.sagemath.org/doc/const/const.html\n\nhave lots of examples.\n\nLet me know if you need help.\n\nDavid \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4251\n\n",
     "created_at": "2008-10-07T17:47:52Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_004251.json:
     "title": "typo in installation manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4251",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: tba
 
-CC:  mhansen
+CC:  @mwhansen
 
 This was reported to by a new user:
 
@@ -119,16 +119,16 @@ Michael
 archive/issue_comments_030928.json:
 ```json
 {
-    "body": "Attachment [trac_4251-typo-install-guide.patch](tarball://root/attachments/some-uuid/ticket4251/trac_4251-typo-install-guide.patch) by wdj created at 2008-10-08 00:05:13\n\na change to 2 lines of inst.tex, based on 3.1.3.alpha2",
+    "body": "Attachment [trac_4251-typo-install-guide.patch](tarball://root/attachments/some-uuid/ticket4251/trac_4251-typo-install-guide.patch) by @wdjoyner created at 2008-10-08 00:05:13\n\na change to 2 lines of inst.tex, based on 3.1.3.alpha2",
     "created_at": "2008-10-08T00:05:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4251#issuecomment-30928",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4251-typo-install-guide.patch](tarball://root/attachments/some-uuid/ticket4251/trac_4251-typo-install-guide.patch) by wdj created at 2008-10-08 00:05:13
+Attachment [trac_4251-typo-install-guide.patch](tarball://root/attachments/some-uuid/ticket4251/trac_4251-typo-install-guide.patch) by @wdjoyner created at 2008-10-08 00:05:13
 
 a change to 2 lines of inst.tex, based on 3.1.3.alpha2
 
@@ -144,7 +144,7 @@ archive/issue_comments_030929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4251#issuecomment-30929",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_030930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4251#issuecomment-30930",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -175,16 +175,16 @@ The patch looks good to me, but I couldn't get it to apply, I think because the 
 archive/issue_comments_030931.json:
 ```json
 {
-    "body": "Attachment [4251.patch](tarball://root/attachments/some-uuid/ticket4251/4251.patch) by jhpalmieri created at 2008-10-17 21:12:55",
+    "body": "Attachment [4251.patch](tarball://root/attachments/some-uuid/ticket4251/4251.patch) by @jhpalmieri created at 2008-10-17 21:12:55",
     "created_at": "2008-10-17T21:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4251#issuecomment-30931",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [4251.patch](tarball://root/attachments/some-uuid/ticket4251/4251.patch) by jhpalmieri created at 2008-10-17 21:12:55
+Attachment [4251.patch](tarball://root/attachments/some-uuid/ticket4251/4251.patch) by @jhpalmieri created at 2008-10-17 21:12:55
 
 
 

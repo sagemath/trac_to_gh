@@ -3,7 +3,7 @@
 archive/issues_004111.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nThis ticket depends on #4058\n\nIssue created by migration from https://trac.sagemath.org/ticket/4111\n\n",
+    "body": "Assignee: @robertwb\n\nThis ticket depends on #4058\n\nIssue created by migration from https://trac.sagemath.org/ticket/4111\n\n",
     "created_at": "2008-09-14T01:30:08Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_004111.json:
     "title": "[with patch, needs review] move QQ to new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4111",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 This ticket depends on #4058
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4111
 archive/issue_comments_029763.json:
 ```json
 {
-    "body": "Attachment [4111-coerce-QQ.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-QQ.patch) by robertwb created at 2008-09-23 19:53:24",
+    "body": "Attachment [4111-coerce-QQ.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-QQ.patch) by @robertwb created at 2008-09-23 19:53:24",
     "created_at": "2008-09-23T19:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4111#issuecomment-29763",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4111-coerce-QQ.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-QQ.patch) by robertwb created at 2008-09-23 19:53:24
+Attachment [4111-coerce-QQ.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-QQ.patch) by @robertwb created at 2008-09-23 19:53:24
 
 
 
@@ -50,16 +50,16 @@ Attachment [4111-coerce-QQ.patch](tarball://root/attachments/some-uuid/ticket411
 archive/issue_comments_029764.json:
 ```json
 {
-    "body": "Attachment [4111-coerce-RR.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-RR.patch) by robertwb created at 2008-09-23 19:53:48",
+    "body": "Attachment [4111-coerce-RR.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-RR.patch) by @robertwb created at 2008-09-23 19:53:48",
     "created_at": "2008-09-23T19:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4111#issuecomment-29764",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4111-coerce-RR.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-RR.patch) by robertwb created at 2008-09-23 19:53:48
+Attachment [4111-coerce-RR.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-RR.patch) by @robertwb created at 2008-09-23 19:53:48
 
 
 
@@ -68,16 +68,16 @@ Attachment [4111-coerce-RR.patch](tarball://root/attachments/some-uuid/ticket411
 archive/issue_comments_029765.json:
 ```json
 {
-    "body": "Attachment [4111-coerce-simplify.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-simplify.patch) by robertwb created at 2008-09-23 19:54:11",
+    "body": "Attachment [4111-coerce-simplify.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-simplify.patch) by @robertwb created at 2008-09-23 19:54:11",
     "created_at": "2008-09-23T19:54:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4111#issuecomment-29765",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4111-coerce-simplify.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-simplify.patch) by robertwb created at 2008-09-23 19:54:11
+Attachment [4111-coerce-simplify.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-simplify.patch) by @robertwb created at 2008-09-23 19:54:11
 
 
 
@@ -86,16 +86,16 @@ Attachment [4111-coerce-simplify.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_029766.json:
 ```json
 {
-    "body": "Attachment [4111-coerce-CC.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-CC.patch) by robertwb created at 2008-09-23 19:54:55\n\nPatches rebased against 3.1.2.",
+    "body": "Attachment [4111-coerce-CC.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-CC.patch) by @robertwb created at 2008-09-23 19:54:55\n\nPatches rebased against 3.1.2.",
     "created_at": "2008-09-23T19:54:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4111#issuecomment-29766",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4111-coerce-CC.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-CC.patch) by robertwb created at 2008-09-23 19:54:55
+Attachment [4111-coerce-CC.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-CC.patch) by @robertwb created at 2008-09-23 19:54:55
 
 Patches rebased against 3.1.2.
 
@@ -111,7 +111,7 @@ archive/issue_comments_029767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4111#issuecomment-29767",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_029769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4111#issuecomment-29769",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_029770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4111#issuecomment-29770",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_029771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4111#issuecomment-29771",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -204,16 +204,16 @@ against 3.1.3.alpha1
 archive/issue_comments_029772.json:
 ```json
 {
-    "body": "Attachment [4111-coerce-RR.2.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-RR.2.patch) by robertwb created at 2008-09-24 17:21:38\n\nagainst alpha 3.1.3.alpha1",
+    "body": "Attachment [4111-coerce-RR.2.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-RR.2.patch) by @robertwb created at 2008-09-24 17:21:38\n\nagainst alpha 3.1.3.alpha1",
     "created_at": "2008-09-24T17:21:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4111#issuecomment-29772",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4111-coerce-RR.2.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-RR.2.patch) by robertwb created at 2008-09-24 17:21:38
+Attachment [4111-coerce-RR.2.patch](tarball://root/attachments/some-uuid/ticket4111/4111-coerce-RR.2.patch) by @robertwb created at 2008-09-24 17:21:38
 
 against alpha 3.1.3.alpha1
 
@@ -229,7 +229,7 @@ archive/issue_comments_029773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4111#issuecomment-29773",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_029777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4111#issuecomment-29777",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_029778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4111#issuecomment-29778",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_029779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4111#issuecomment-29779",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

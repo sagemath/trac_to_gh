@@ -3,7 +3,7 @@
 archive/issues_002859.json:
 ```json
 {
-    "body": "Assignee: was\n\nTry the following:\n\n\n```\nplot(vector((0,0,-1)))\n```\n\n\nThe resulting vector points up, but should point down.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2859\n\n",
+    "body": "Assignee: @williamstein\n\nTry the following:\n\n\n```\nplot(vector((0,0,-1)))\n```\n\n\nThe resulting vector points up, but should point down.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2859\n\n",
     "created_at": "2008-04-08T21:10:09Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002859.json:
     "title": "plotting the vector (0,0,-1) really plots (0,0,1)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2859",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Try the following:
 
@@ -45,7 +45,7 @@ archive/issue_comments_019615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2859#issuecomment-19615",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_019616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2859#issuecomment-19616",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_019617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2859#issuecomment-19617",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_019619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2859#issuecomment-19619",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_019620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2859#issuecomment-19620",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_019621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2859#issuecomment-19621",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -189,16 +189,16 @@ Arrows are always constructed pointing up in the z direction from the origin, an
 archive/issue_comments_019622.json:
 ```json
 {
-    "body": "Attachment [trac-2859-arrow3d.patch](tarball://root/attachments/some-uuid/ticket2859/trac-2859-arrow3d.patch) by jason created at 2008-04-09 08:53:34\n\nI put up a new patch with the above explanation above the doctest.",
+    "body": "Attachment [trac-2859-arrow3d.patch](tarball://root/attachments/some-uuid/ticket2859/trac-2859-arrow3d.patch) by @jasongrout created at 2008-04-09 08:53:34\n\nI put up a new patch with the above explanation above the doctest.",
     "created_at": "2008-04-09T08:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2859#issuecomment-19622",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-2859-arrow3d.patch](tarball://root/attachments/some-uuid/ticket2859/trac-2859-arrow3d.patch) by jason created at 2008-04-09 08:53:34
+Attachment [trac-2859-arrow3d.patch](tarball://root/attachments/some-uuid/ticket2859/trac-2859-arrow3d.patch) by @jasongrout created at 2008-04-09 08:53:34
 
 I put up a new patch with the above explanation above the doctest.
 

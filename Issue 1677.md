@@ -14,7 +14,7 @@ archive/issues_001677.json:
     "title": "trivial-to-fix mistake in the rubiks spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1677",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -70,7 +70,7 @@ archive/issue_comments_010635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1677#issuecomment-10635",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_010636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1677#issuecomment-10636",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -101,16 +101,16 @@ Updated spkg at http://sage.math.washington.edu/home/robertwb/spkgs/
 archive/issue_comments_010637.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to robertwb.",
+    "body": "Changing assignee from mabshoff to @robertwb.",
     "created_at": "2008-01-04T08:41:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1677#issuecomment-10637",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from mabshoff to robertwb.
+Changing assignee from mabshoff to @robertwb.
 
 
 

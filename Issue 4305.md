@@ -14,7 +14,7 @@ archive/issues_004305.json:
     "title": "[with patch, needs review] move finite fields into their own directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4305",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4305
 archive/issue_comments_031498.json:
 ```json
 {
-    "body": "Attachment [4305-move-finite-field.patch](tarball://root/attachments/some-uuid/ticket4305/4305-move-finite-field.patch) by robertwb created at 2008-10-15 20:52:02",
+    "body": "Attachment [4305-move-finite-field.patch](tarball://root/attachments/some-uuid/ticket4305/4305-move-finite-field.patch) by @robertwb created at 2008-10-15 20:52:02",
     "created_at": "2008-10-15T20:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4305#issuecomment-31498",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4305-move-finite-field.patch](tarball://root/attachments/some-uuid/ticket4305/4305-move-finite-field.patch) by robertwb created at 2008-10-15 20:52:02
+Attachment [4305-move-finite-field.patch](tarball://root/attachments/some-uuid/ticket4305/4305-move-finite-field.patch) by @robertwb created at 2008-10-15 20:52:02
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_031499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4305#issuecomment-31499",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_031504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4305#issuecomment-31504",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_031507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4305#issuecomment-31507",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_031508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4305#issuecomment-31508",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_031509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4305#issuecomment-31509",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_031510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4305#issuecomment-31510",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_031511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4305#issuecomment-31511",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

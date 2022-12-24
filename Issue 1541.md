@@ -3,7 +3,7 @@
 archive/issues_001541.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin\n\nThe attached patch provides:\n* `mq.SR` can now construct PolyBoRi polynomial systems \n* some comments added to `pbori.pyx`\n* `BooleanPolynomial.__hash__`\n* `BooleanPolynomial.variables`\n* coercion of GF(2) elements to `BooleanPolynomialRing`\n* `BooleanPolynomialRing.__call__` accepts strings\n* `_sig_on`/`_sig_off` around `groebner_basis` call\n\nIssue created by migration from https://trac.sagemath.org/ticket/1541\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nThe attached patch provides:\n* `mq.SR` can now construct PolyBoRi polynomial systems \n* some comments added to `pbori.pyx`\n* `BooleanPolynomial.__hash__`\n* `BooleanPolynomial.variables`\n* coercion of GF(2) elements to `BooleanPolynomialRing`\n* `BooleanPolynomialRing.__call__` accepts strings\n* `_sig_on`/`_sig_off` around `groebner_basis` call\n\nIssue created by migration from https://trac.sagemath.org/ticket/1541\n\n",
     "created_at": "2007-12-16T21:38:51Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_001541.json:
     "title": "[with patch] improve PolyBoRi integration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1541",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin
+CC:  @burcin
 
 The attached patch provides:
 * `mq.SR` can now construct PolyBoRi polynomial systems 
@@ -46,7 +46,7 @@ archive/issue_comments_009835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1541#issuecomment-9835",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_009836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1541#issuecomment-9836",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_009837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1541#issuecomment-9837",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_009838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1541#issuecomment-9838",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_009839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1541#issuecomment-9839",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -141,16 +141,16 @@ Make the methods of BooleanPolynomial in __getattr__ directly available.
 archive/issue_comments_009840.json:
 ```json
 {
-    "body": "Attachment [polybori_booleanpolynomial_getattr.patch](tarball://root/attachments/some-uuid/ticket1541/polybori_booleanpolynomial_getattr.patch) by burcin created at 2007-12-27 13:52:29\n\nFollowing Martin's comments on the slowdown caused by using `__getattr__` in `BooleanPolynomial`, attached patch with file name `polybori_booleanpolynomial_getattr.patch` makes the methods directly available.\n\nSome timings (using random polynomials in each case might not be a good idea, but it still demonstrates the point):\n\nWithout the patch:\n\n\n```\nsage: P = BooleanPolynomialRing(100,'x')\nsage: from polybori.randompoly import gen_random_poly\nsage: p = gen_random_poly(int(100))\nsage: %timeit s = p.set()\n100000 loops, best of 3: 2.85 \u00b5s per loop\nsage: %timeit d = p.deg()\n100000 loops, best of 3: 2.26 \u00b5s per loop\nsage: %timeit m = p.lead()\n100000 loops, best of 3: 6.7 \u00b5s per loop\nsage: %timeit n = p.navigation()\n100000 loops, best of 3: 2.82 \u00b5s per loop\nsage: %timeit c = p.constant()\n100000 loops, best of 3: 2.02 \u00b5s per loop\n```\n\n\nWith the patch:\n\n\n```\nsage: %timeit s = p.set()\n1000000 loops, best of 3: 540 ns per loop\nsage: %timeit d = p.deg()\n1000000 loops, best of 3: 382 ns per loop\nsage: %timeit m = p.lead()\n100000 loops, best of 3: 3.76 \u00b5s per loop\nsage: %timeit n = p.navigation()\n1000000 loops, best of 3: 453 ns per loop\nsage: %timeit c = p.constant()\n1000000 loops, best of 3: 305 ns per loop\n```\n",
+    "body": "Attachment [polybori_booleanpolynomial_getattr.patch](tarball://root/attachments/some-uuid/ticket1541/polybori_booleanpolynomial_getattr.patch) by @burcin created at 2007-12-27 13:52:29\n\nFollowing Martin's comments on the slowdown caused by using `__getattr__` in `BooleanPolynomial`, attached patch with file name `polybori_booleanpolynomial_getattr.patch` makes the methods directly available.\n\nSome timings (using random polynomials in each case might not be a good idea, but it still demonstrates the point):\n\nWithout the patch:\n\n\n```\nsage: P = BooleanPolynomialRing(100,'x')\nsage: from polybori.randompoly import gen_random_poly\nsage: p = gen_random_poly(int(100))\nsage: %timeit s = p.set()\n100000 loops, best of 3: 2.85 \u00b5s per loop\nsage: %timeit d = p.deg()\n100000 loops, best of 3: 2.26 \u00b5s per loop\nsage: %timeit m = p.lead()\n100000 loops, best of 3: 6.7 \u00b5s per loop\nsage: %timeit n = p.navigation()\n100000 loops, best of 3: 2.82 \u00b5s per loop\nsage: %timeit c = p.constant()\n100000 loops, best of 3: 2.02 \u00b5s per loop\n```\n\n\nWith the patch:\n\n\n```\nsage: %timeit s = p.set()\n1000000 loops, best of 3: 540 ns per loop\nsage: %timeit d = p.deg()\n1000000 loops, best of 3: 382 ns per loop\nsage: %timeit m = p.lead()\n100000 loops, best of 3: 3.76 \u00b5s per loop\nsage: %timeit n = p.navigation()\n1000000 loops, best of 3: 453 ns per loop\nsage: %timeit c = p.constant()\n1000000 loops, best of 3: 305 ns per loop\n```\n",
     "created_at": "2007-12-27T13:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1541#issuecomment-9840",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [polybori_booleanpolynomial_getattr.patch](tarball://root/attachments/some-uuid/ticket1541/polybori_booleanpolynomial_getattr.patch) by burcin created at 2007-12-27 13:52:29
+Attachment [polybori_booleanpolynomial_getattr.patch](tarball://root/attachments/some-uuid/ticket1541/polybori_booleanpolynomial_getattr.patch) by @burcin created at 2007-12-27 13:52:29
 
 Following Martin's comments on the slowdown caused by using `__getattr__` in `BooleanPolynomial`, attached patch with file name `polybori_booleanpolynomial_getattr.patch` makes the methods directly available.
 
@@ -205,7 +205,7 @@ archive/issue_comments_009841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1541#issuecomment-9841",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_009842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1541#issuecomment-9842",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_009843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1541#issuecomment-9843",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_009844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1541#issuecomment-9844",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_009845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1541#issuecomment-9845",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

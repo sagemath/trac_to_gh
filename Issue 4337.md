@@ -3,7 +3,7 @@
 archive/issues_004337.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\n\n```\nsage: ModularForms(Gamma1(11),2).hecke_matrix(2)\nboom!\n```\n\n\nand a genuine bug:\n\n```\nsage: ModularForms(GammaH(11, [2]),2).hecke_matrix(2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nRuntimeError: maximum recursion depth exceeded in cmp\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4337\n\n",
+    "body": "Assignee: @craigcitro\n\n\n```\nsage: ModularForms(Gamma1(11),2).hecke_matrix(2)\nboom!\n```\n\n\nand a genuine bug:\n\n```\nsage: ModularForms(GammaH(11, [2]),2).hecke_matrix(2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nRuntimeError: maximum recursion depth exceeded in cmp\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4337\n\n",
     "created_at": "2008-10-22T17:46:16Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_004337.json:
     "title": "modular forms -- compute action of Hecke operators on Gamma_1(N) modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4337",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 
 ```
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4337
 archive/issue_comments_031806.json:
 ```json
 {
-    "body": "Attachment [trac_4337.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337.patch) by davidloeffler created at 2009-05-05 16:42:54\n\npatch against 3.4.2.final",
+    "body": "Attachment [trac_4337.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337.patch) by @loefflerd created at 2009-05-05 16:42:54\n\npatch against 3.4.2.final",
     "created_at": "2009-05-05T16:42:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4337#issuecomment-31806",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_4337.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337.patch) by davidloeffler created at 2009-05-05 16:42:54
+Attachment [trac_4337.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337.patch) by @loefflerd created at 2009-05-05 16:42:54
 
 patch against 3.4.2.final
 
@@ -68,16 +68,16 @@ patch against 3.4.2.final
 archive/issue_comments_031807.json:
 ```json
 {
-    "body": "Changing assignee from craigcitro to davidloeffler.",
+    "body": "Changing assignee from @craigcitro to @loefflerd.",
     "created_at": "2009-05-05T16:49:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4337#issuecomment-31807",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from craigcitro to davidloeffler.
+Changing assignee from @craigcitro to @loefflerd.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_031808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4337#issuecomment-31808",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_031809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4337#issuecomment-31809",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -124,16 +124,16 @@ Changing status from new to assigned.
 archive/issue_comments_031810.json:
 ```json
 {
-    "body": "Attachment [trac_4337_pt2.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_pt2.patch) by craigcitro created at 2009-05-08 06:51:35",
+    "body": "Attachment [trac_4337_pt2.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_pt2.patch) by @craigcitro created at 2009-05-08 06:51:35",
     "created_at": "2009-05-08T06:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4337#issuecomment-31810",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_4337_pt2.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_pt2.patch) by craigcitro created at 2009-05-08 06:51:35
+Attachment [trac_4337_pt2.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_pt2.patch) by @craigcitro created at 2009-05-08 06:51:35
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_031811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4337#issuecomment-31811",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_031812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4337#issuecomment-31812",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_031813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4337#issuecomment-31813",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -212,16 +212,16 @@ I think something is wrong with the third patch? trac tells me it's 225 bytes, w
 archive/issue_comments_031814.json:
 ```json
 {
-    "body": "Attachment [trac_4337_pt3.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_pt3.patch) by davidloeffler created at 2009-05-08 10:07:38",
+    "body": "Attachment [trac_4337_pt3.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_pt3.patch) by @loefflerd created at 2009-05-08 10:07:38",
     "created_at": "2009-05-08T10:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4337#issuecomment-31814",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_4337_pt3.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_pt3.patch) by davidloeffler created at 2009-05-08 10:07:38
+Attachment [trac_4337_pt3.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_pt3.patch) by @loefflerd created at 2009-05-08 10:07:38
 
 
 
@@ -235,7 +235,7 @@ archive/issue_comments_031815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4337#issuecomment-31815",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_031816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4337#issuecomment-31816",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_031817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4337#issuecomment-31817",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -284,16 +284,16 @@ Looks like you weren't the only one that was sloppy: neither of us ran a full do
 archive/issue_comments_031818.json:
 ```json
 {
-    "body": "Attachment [trac_4337_docfix.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_docfix.patch) by davidloeffler created at 2009-05-11 07:06:10\n\napply over previous three",
+    "body": "Attachment [trac_4337_docfix.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_docfix.patch) by @loefflerd created at 2009-05-11 07:06:10\n\napply over previous three",
     "created_at": "2009-05-11T07:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4337#issuecomment-31818",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_4337_docfix.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_docfix.patch) by davidloeffler created at 2009-05-11 07:06:10
+Attachment [trac_4337_docfix.patch](tarball://root/attachments/some-uuid/ticket4337/trac_4337_docfix.patch) by @loefflerd created at 2009-05-11 07:06:10
 
 apply over previous three
 

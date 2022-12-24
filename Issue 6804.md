@@ -3,7 +3,7 @@
 archive/issues_006804.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  mjo\n\nEither code or docstring is wrong in 4.1.1, \"=\" vs. \">=\":\n\n\n```\nReturns all the numbers self[i] such that self[i] = i+1\n```\n\n\n\n```\nif self[i] >= i + 1:\n    res.append(self[i])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6804\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @orlitzky\n\nEither code or docstring is wrong in 4.1.1, \"=\" vs. \">=\":\n\n\n```\nReturns all the numbers self[i] such that self[i] = i+1\n```\n\n\n\n```\nif self[i] >= i + 1:\n    res.append(self[i])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6804\n\n",
     "created_at": "2009-08-22T17:16:29Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_006804.json:
     "title": "Permutation.weak_excedences inconsistency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6804",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  mjo
+CC:  @orlitzky
 
 Either code or docstring is wrong in 4.1.1, "=" vs. ">=":
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6804
 archive/issue_comments_056025.json:
 ```json
 {
-    "body": "Attachment [sage-trac_6804.patch](tarball://root/attachments/some-uuid/ticket6804/sage-trac_6804.patch) by mjo created at 2012-01-09 05:24:49\n\nFix the docstring.",
+    "body": "Attachment [sage-trac_6804.patch](tarball://root/attachments/some-uuid/ticket6804/sage-trac_6804.patch) by @orlitzky created at 2012-01-09 05:24:49\n\nFix the docstring.",
     "created_at": "2012-01-09T05:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56025",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_6804.patch](tarball://root/attachments/some-uuid/ticket6804/sage-trac_6804.patch) by mjo created at 2012-01-09 05:24:49
+Attachment [sage-trac_6804.patch](tarball://root/attachments/some-uuid/ticket6804/sage-trac_6804.patch) by @orlitzky created at 2012-01-09 05:24:49
 
 Fix the docstring.
 
@@ -72,7 +72,7 @@ archive/issue_comments_056026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56026",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_056027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56027",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_056028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56028",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_056029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56029",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_056030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56030",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008560.json:
 ```json
 {
-    "body": "Assignee: was\n\nLatest Magma v2.16-6 fails to load under Sage 4.3.3, with \n  the following error message: \n\n\nsage: magma_console() \n  dyld: Library not loaded: `@`executable_path/libgmp.3.dylib \n \u00a0  Referenced from: /Applications/Magma/bin/magma.exe \n \u00a0 Reason:  Incompatible library version: magma.exe requires version \n 9.0.0 or  later, but libgmp.3.dylib provides version 8.0.0 \n /usr/bin/magma:  line 72: 16880 Trace/BPT trap \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\"${ROOT}/bin/ \n magma.exe\" $* \n\n\nThe reason of the failure is  that Sage defines the variable DYLD_LIBRARY_PATH when it executes  Magma. If you undefine it or define it to point to the right place,  then there is no problem\n\nThe solution is to use sage-native-execute in Magma interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8560\n\n",
+    "body": "Assignee: @williamstein\n\nLatest Magma v2.16-6 fails to load under Sage 4.3.3, with \n  the following error message: \n\n\nsage: magma_console() \n  dyld: Library not loaded: `@`executable_path/libgmp.3.dylib \n \u00a0  Referenced from: /Applications/Magma/bin/magma.exe \n \u00a0 Reason:  Incompatible library version: magma.exe requires version \n 9.0.0 or  later, but libgmp.3.dylib provides version 8.0.0 \n /usr/bin/magma:  line 72: 16880 Trace/BPT trap \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\"${ROOT}/bin/ \n magma.exe\" $* \n\n\nThe reason of the failure is  that Sage defines the variable DYLD_LIBRARY_PATH when it executes  Magma. If you undefine it or define it to point to the right place,  then there is no problem\n\nThe solution is to use sage-native-execute in Magma interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8560\n\n",
     "created_at": "2010-03-19T09:14:06Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_008560.json:
     "title": "magma interface should be changed to use sage-native-execute",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8560",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Latest Magma v2.16-6 fails to load under Sage 4.3.3, with 
   the following error message: 
@@ -52,7 +52,7 @@ archive/issue_comments_077507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8560#issuecomment-77507",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -65,16 +65,16 @@ Changing status from new to needs_review.
 archive/issue_comments_077508.json:
 ```json
 {
-    "body": "Attachment [trac_8560.patch](tarball://root/attachments/some-uuid/ticket8560/trac_8560.patch) by klee created at 2010-03-20 03:38:05\n\nI implemented the simple solution.",
+    "body": "Attachment [trac_8560.patch](tarball://root/attachments/some-uuid/ticket8560/trac_8560.patch) by @kwankyu created at 2010-03-20 03:38:05\n\nI implemented the simple solution.",
     "created_at": "2010-03-20T03:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8560#issuecomment-77508",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Attachment [trac_8560.patch](tarball://root/attachments/some-uuid/ticket8560/trac_8560.patch) by klee created at 2010-03-20 03:38:05
+Attachment [trac_8560.patch](tarball://root/attachments/some-uuid/ticket8560/trac_8560.patch) by @kwankyu created at 2010-03-20 03:38:05
 
 I implemented the simple solution.
 
@@ -90,7 +90,7 @@ archive/issue_comments_077509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8560#issuecomment-77509",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_077510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8560#issuecomment-77510",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_077511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8560#issuecomment-77511",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005803.json:
     "title": "[with patch, needs review] Upgrade Cython to 0.11.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5803",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5803
 archive/issue_comments_045549.json:
 ```json
 {
-    "body": "Attachment [5803-cython-0.11.1.patch](tarball://root/attachments/some-uuid/ticket5803/5803-cython-0.11.1.patch) by robertwb created at 2009-04-16 08:44:53",
+    "body": "Attachment [5803-cython-0.11.1.patch](tarball://root/attachments/some-uuid/ticket5803/5803-cython-0.11.1.patch) by @robertwb created at 2009-04-16 08:44:53",
     "created_at": "2009-04-16T08:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5803#issuecomment-45549",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5803-cython-0.11.1.patch](tarball://root/attachments/some-uuid/ticket5803/5803-cython-0.11.1.patch) by robertwb created at 2009-04-16 08:44:53
+Attachment [5803-cython-0.11.1.patch](tarball://root/attachments/some-uuid/ticket5803/5803-cython-0.11.1.patch) by @robertwb created at 2009-04-16 08:44:53
 
 
 

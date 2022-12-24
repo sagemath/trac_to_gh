@@ -3,7 +3,7 @@
 archive/issues_009976.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  jdemeyer cremona lorenz\n\nKeywords: CM\n\nIt would be great if we could do\n\n```\nsage: E = EllipticCurve([0,0,0,3,0]) # curve with CM by Q[I]\nsage: (1 + I) * P([1,2])\n```\n\nThis wouldn't be very hard for CM elliptic curves over QQ, since the necessary functionality is there in PARI's `ellpow`; see #6327. CM elliptic curves over number fields might be a bit harder. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9977\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @jdemeyer @JohnCremona @yyyyx4\n\nKeywords: CM\n\nIt would be great if we could do\n\n```\nsage: E = EllipticCurve([0,0,0,3,0]) # curve with CM by Q[I]\nsage: (1 + I) * P([1,2])\n```\n\nThis wouldn't be very hard for CM elliptic curves over QQ, since the necessary functionality is there in PARI's `ellpow`; see #6327. CM elliptic curves over number fields might be a bit harder. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9977\n\n",
     "created_at": "2010-09-23T12:11:05Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_009976.json:
     "title": "Implement complex multiplication for points of CM elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9976",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  jdemeyer cremona lorenz
+CC:  @jdemeyer @JohnCremona @yyyyx4
 
 Keywords: CM
 
@@ -48,7 +48,7 @@ archive/issue_comments_100286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9976#issuecomment-100286",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_100287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9976#issuecomment-100287",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_100288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9976#issuecomment-100288",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_100289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9976#issuecomment-100289",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_100290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9976#issuecomment-100290",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_100291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9976#issuecomment-100291",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_100292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9976#issuecomment-100292",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

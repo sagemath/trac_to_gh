@@ -14,7 +14,7 @@ archive/issues_006201.json:
     "title": "CC() raises exception instead of returning 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6201",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 Assignee: somebody
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6201
 archive/issue_comments_049540.json:
 ```json
 {
-    "body": "Changing assignee from somebody to AlexGhitza.",
+    "body": "Changing assignee from somebody to @aghitza.",
     "created_at": "2009-06-03T23:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49540",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from somebody to AlexGhitza.
+Changing assignee from somebody to @aghitza.
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_049541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49541",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_049542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49542",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -99,16 +99,16 @@ Simple fix up for review.
 archive/issue_comments_049543.json:
 ```json
 {
-    "body": "Attachment [trac_6201.patch](tarball://root/attachments/some-uuid/ticket6201/trac_6201.patch) by jhpalmieri created at 2009-06-09 03:41:34\n\nSimple change to the code, includes a doctest, passes all tests, reference manual builds.  Positive review.\n\nNow should we do the same thing with GF(2)(), CDF(), etc.?",
+    "body": "Attachment [trac_6201.patch](tarball://root/attachments/some-uuid/ticket6201/trac_6201.patch) by @jhpalmieri created at 2009-06-09 03:41:34\n\nSimple change to the code, includes a doctest, passes all tests, reference manual builds.  Positive review.\n\nNow should we do the same thing with GF(2)(), CDF(), etc.?",
     "created_at": "2009-06-09T03:41:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49543",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6201.patch](tarball://root/attachments/some-uuid/ticket6201/trac_6201.patch) by jhpalmieri created at 2009-06-09 03:41:34
+Attachment [trac_6201.patch](tarball://root/attachments/some-uuid/ticket6201/trac_6201.patch) by @jhpalmieri created at 2009-06-09 03:41:34
 
 Simple change to the code, includes a doctest, passes all tests, reference manual builds.  Positive review.
 
@@ -126,7 +126,7 @@ archive/issue_comments_049544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49544",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

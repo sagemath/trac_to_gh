@@ -101,7 +101,7 @@ Changing priority from major to critical.
 archive/issue_comments_006248.json:
 ```json
 {
-    "body": "Changing assignee from boothby to was.",
+    "body": "Changing assignee from boothby to @williamstein.",
     "created_at": "2008-03-05T07:14:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1019",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_006248.json:
 }
 ```
 
-Changing assignee from boothby to was.
+Changing assignee from boothby to @williamstein.
 
 
 
@@ -119,16 +119,16 @@ Changing assignee from boothby to was.
 archive/issue_comments_006249.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-09-03T00:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6249",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -142,7 +142,7 @@ archive/issue_comments_006250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6250",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -155,16 +155,16 @@ Changing status from new to assigned.
 archive/issue_comments_006251.json:
 ```json
 {
-    "body": "Attachment [trac_1019.patch](tarball://root/attachments/some-uuid/ticket1019/trac_1019.patch) by mhansen created at 2009-01-22 09:19:40",
+    "body": "Attachment [trac_1019.patch](tarball://root/attachments/some-uuid/ticket1019/trac_1019.patch) by @mwhansen created at 2009-01-22 09:19:40",
     "created_at": "2009-01-22T09:19:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6251",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_1019.patch](tarball://root/attachments/some-uuid/ticket1019/trac_1019.patch) by mhansen created at 2009-01-22 09:19:40
+Attachment [trac_1019.patch](tarball://root/attachments/some-uuid/ticket1019/trac_1019.patch) by @mwhansen created at 2009-01-22 09:19:40
 
 
 
@@ -178,7 +178,7 @@ archive/issue_comments_006252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6252",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_006253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1019#issuecomment-6253",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

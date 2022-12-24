@@ -14,7 +14,7 @@ archive/issues_003594.json:
     "title": "lisp -- impossible to run command line!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3594",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -185,7 +185,7 @@ archive/issue_comments_025405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3594#issuecomment-25405",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

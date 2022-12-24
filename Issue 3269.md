@@ -3,7 +3,7 @@
 archive/issues_003269.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: dyck words\n\nCleaned up some of the documentation issues in dyck_words that were noted here:\nLink:[http://wiki.sagemath.org/combinat/Weirdness](http://wiki.sagemath.org/combinat/Weirdness)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3269\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: dyck words\n\nCleaned up some of the documentation issues in dyck_words that were noted here:\nLink:[http://wiki.sagemath.org/combinat/Weirdness](http://wiki.sagemath.org/combinat/Weirdness)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3269\n\n",
     "created_at": "2008-05-21T22:30:11Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_003269.json:
     "title": "Improved documentation to combinat/dyck_word.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3269",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3269
 archive/issue_comments_022631.json:
 ```json
 {
-    "body": "Attachment [dyckwords.patch](tarball://root/attachments/some-uuid/ticket3269/dyckwords.patch) by mhansen created at 2008-05-22 05:49:35",
+    "body": "Attachment [dyckwords.patch](tarball://root/attachments/some-uuid/ticket3269/dyckwords.patch) by @mwhansen created at 2008-05-22 05:49:35",
     "created_at": "2008-05-22T05:49:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3269#issuecomment-22631",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [dyckwords.patch](tarball://root/attachments/some-uuid/ticket3269/dyckwords.patch) by mhansen created at 2008-05-22 05:49:35
+Attachment [dyckwords.patch](tarball://root/attachments/some-uuid/ticket3269/dyckwords.patch) by @mwhansen created at 2008-05-22 05:49:35
 
 
 
@@ -60,7 +60,7 @@ archive/issue_comments_022632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3269#issuecomment-22632",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

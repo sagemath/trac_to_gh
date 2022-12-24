@@ -3,7 +3,7 @@
 archive/issues_006062.json:
 ```json
 {
-    "body": "Assignee: tornaria\n\nWith sage-4.0.alpha0:\n\n```\nsage: QQ(5).is_padic_square(int(2))\n...\nAttributeError: 'int' object has no attribute 'is_prime'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6062\n\n",
+    "body": "Assignee: @tornaria\n\nWith sage-4.0.alpha0:\n\n```\nsage: QQ(5).is_padic_square(int(2))\n...\nAttributeError: 'int' object has no attribute 'is_prime'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6062\n\n",
     "created_at": "2009-05-18T05:08:40Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_006062.json:
     "title": "[with patch; needs review] QQ method is_padic_square fails when argument is python int",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6062",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
-Assignee: tornaria
+Assignee: @tornaria
 
 With sage-4.0.alpha0:
 
@@ -44,7 +44,7 @@ archive/issue_comments_048253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48253",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -57,16 +57,16 @@ allow python int argument in is_padic_square
 archive/issue_comments_048254.json:
 ```json
 {
-    "body": "Attachment [trac_6062.patch](tarball://root/attachments/some-uuid/ticket6062/trac_6062.patch) by tornaria created at 2009-05-18 05:20:43\n\nNote: this is needed to fix doctests in quadratic forms (#5954, #6037, #6040).",
+    "body": "Attachment [trac_6062.patch](tarball://root/attachments/some-uuid/ticket6062/trac_6062.patch) by @tornaria created at 2009-05-18 05:20:43\n\nNote: this is needed to fix doctests in quadratic forms (#5954, #6037, #6040).",
     "created_at": "2009-05-18T05:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48254",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [trac_6062.patch](tarball://root/attachments/some-uuid/ticket6062/trac_6062.patch) by tornaria created at 2009-05-18 05:20:43
+Attachment [trac_6062.patch](tarball://root/attachments/some-uuid/ticket6062/trac_6062.patch) by @tornaria created at 2009-05-18 05:20:43
 
 Note: this is needed to fix doctests in quadratic forms (#5954, #6037, #6040).
 
@@ -82,7 +82,7 @@ archive/issue_comments_048255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48255",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_048256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48256",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003879.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nKeywords: c_graph\n\n\n```\nsage: D = DiGraph({0:[1]})\nsage: D.edges()\n[(0, 1, None)]\nsage: DiGraph(D).edges()\n[(0, 1, None)]\nsage: DiGraph(D,implementation=\"c_graph\").edges()\n[(0, 1, None), (1, 0, None)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3879\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: c_graph\n\n\n```\nsage: D = DiGraph({0:[1]})\nsage: D.edges()\n[(0, 1, None)]\nsage: DiGraph(D).edges()\n[(0, 1, None)]\nsage: DiGraph(D,implementation=\"c_graph\").edges()\n[(0, 1, None), (1, 0, None)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3879\n\n",
     "created_at": "2008-08-16T08:49:18Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003879.json:
     "title": "Constructing a c_graph from a DiGraph doubles the edges.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3879",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Keywords: c_graph
 
@@ -49,7 +49,7 @@ archive/issue_comments_027678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3879#issuecomment-27678",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_027679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3879#issuecomment-27679",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

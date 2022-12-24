@@ -3,7 +3,7 @@
 archive/issues_000919.json:
 ```json
 {
-    "body": "Assignee: roed\n\nKeywords: padics\n\nUpon creation, p-adic rings currently cache powers of p from 0 up to their precision cap.  This uses O(n^2) space, and is very unfriendly to someone who wants to use a capped relative ring with very high precision in order to never run into the precision cap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/919\n\n",
+    "body": "Assignee: @roed314\n\nKeywords: padics\n\nUpon creation, p-adic rings currently cache powers of p from 0 up to their precision cap.  This uses O(n^2) space, and is very unfriendly to someone who wants to use a capped relative ring with very high precision in order to never run into the precision cap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/919\n\n",
     "created_at": "2007-10-18T14:51:33Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_000919.json:
     "title": "creation of p-adic rings uses O(n^2) memory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/919",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 Keywords: padics
 
@@ -39,7 +39,7 @@ archive/issue_comments_005634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/919#issuecomment-5634",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -52,16 +52,16 @@ Fixes the problem, adds some functionality for padic extensions
 archive/issue_comments_005635.json:
 ```json
 {
-    "body": "Attachment [padic_framework.hg](tarball://root/attachments/some-uuid/ticket919/padic_framework.hg) by roed created at 2007-10-19 22:09:53",
+    "body": "Attachment [padic_framework.hg](tarball://root/attachments/some-uuid/ticket919/padic_framework.hg) by @roed314 created at 2007-10-19 22:09:53",
     "created_at": "2007-10-19T22:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/919#issuecomment-5635",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [padic_framework.hg](tarball://root/attachments/some-uuid/ticket919/padic_framework.hg) by roed created at 2007-10-19 22:09:53
+Attachment [padic_framework.hg](tarball://root/attachments/some-uuid/ticket919/padic_framework.hg) by @roed314 created at 2007-10-19 22:09:53
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_005636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/919#issuecomment-5636",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_005637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/919#issuecomment-5637",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

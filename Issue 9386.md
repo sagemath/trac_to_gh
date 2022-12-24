@@ -3,7 +3,7 @@
 archive/issues_009386.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  iandrus leif vbraun\n\nThe following shows that `sage-native-execute` creates a very hostile environment for running python:\n\n```\n$ sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nBypassing shell configuration files ...\n\n> sage-native-execute sh\n\nsh-3.2$ python\npython: error while loading shared libraries: libpython2.6.so.1.0:\ncannot open shared object file: No such file or directory\nsh-3.2$ which python\n/usr/local/sage/4.4.4/local/bin/python\nsh-3.2$ /usr/bin/python\n'import site' failed; use -v for traceback\nPython 2.4.3 (#1, Jun 11 2009, 14:09:37)\n[GCC 4.1.2 20080704 (Red Hat 4.1.2-44)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n\nsh-3.2$ echo $PYTHONPATH\n:/usr/local/sage/4.4.4/local/lib/python\nsh-3.2$ echo $PYTHONHOME\n/usr/local/sage/4.4.4/local\nsh-3.2$ unset PYTHONPATH\nsh-3.2$ unset PYTHONHOME\nsh-3.2$ /usr/bin/python\nPython 2.4.3 (#1, Jun 11 2009, 14:09:37)\n[GCC 4.1.2 20080704 (Red Hat 4.1.2-44)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n```\n\nThe problem is `python` refers to the sage python, because $PATH still has sage paths in it. This doesn't run because LD_LIBRARY_PATH does not point at sage library anymore\n\nThe system python `/usr/bin/python` doesn't run successfully either because PYTHONPATH and PYTHONHOME still point at sage locations.\n\nThis problem arose while trying to use the magma interface. My magma startup script uses python to resolve some paths, which didn't work anymore.\n\nThere are other traces left by sage-native-execute:\n\n\n```\nECLDIR=/usr/local/sage/4.4.4/local/lib/ecl/\nGP_DATA_DIR=/usr/local/sage/4.4.4/local/share/pari\nGPDOCDIR=/usr/local/sage/4.4.4/local/share/pari/doc\nGPHELP=/usr/local/sage/4.4.4/local/bin/gphelp\nLD_LIBRARY_PATH=\nLIBRARY_PATH=/usr/local/sage/4.4.4/local/lib/\nPATH=/usr/local/sage/4.4.4:/usr/local/sage/4.4.4/local/bin:   #.....\nPYTHONHOME=/usr/local/sage/4.4.4/local\nPYTHONPATH=:/usr/local/sage/4.4.4/local/lib/python\nSINGULAR_EXECUTABLE=/usr/local/sage/4.4.4/local/bin/Singular\nSINGULARPATH=/usr/local/sage/4.4.4/local/share/singular\n```\n\n\nso I imagine local ecl, gp python, singular will all have problems.\nI include LD_LIBRARY_PATH because that variable was originally undefined, not just empty. The variables PYTHONHOME and PYTHONPATH really need to be unset, not just emptied.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9386\n\n",
+    "body": "Assignee: tbd\n\nCC:  @gvol @nexttime @vbraun\n\nThe following shows that `sage-native-execute` creates a very hostile environment for running python:\n\n```\n$ sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nBypassing shell configuration files ...\n\n> sage-native-execute sh\n\nsh-3.2$ python\npython: error while loading shared libraries: libpython2.6.so.1.0:\ncannot open shared object file: No such file or directory\nsh-3.2$ which python\n/usr/local/sage/4.4.4/local/bin/python\nsh-3.2$ /usr/bin/python\n'import site' failed; use -v for traceback\nPython 2.4.3 (#1, Jun 11 2009, 14:09:37)\n[GCC 4.1.2 20080704 (Red Hat 4.1.2-44)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n\nsh-3.2$ echo $PYTHONPATH\n:/usr/local/sage/4.4.4/local/lib/python\nsh-3.2$ echo $PYTHONHOME\n/usr/local/sage/4.4.4/local\nsh-3.2$ unset PYTHONPATH\nsh-3.2$ unset PYTHONHOME\nsh-3.2$ /usr/bin/python\nPython 2.4.3 (#1, Jun 11 2009, 14:09:37)\n[GCC 4.1.2 20080704 (Red Hat 4.1.2-44)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n```\n\nThe problem is `python` refers to the sage python, because $PATH still has sage paths in it. This doesn't run because LD_LIBRARY_PATH does not point at sage library anymore\n\nThe system python `/usr/bin/python` doesn't run successfully either because PYTHONPATH and PYTHONHOME still point at sage locations.\n\nThis problem arose while trying to use the magma interface. My magma startup script uses python to resolve some paths, which didn't work anymore.\n\nThere are other traces left by sage-native-execute:\n\n\n```\nECLDIR=/usr/local/sage/4.4.4/local/lib/ecl/\nGP_DATA_DIR=/usr/local/sage/4.4.4/local/share/pari\nGPDOCDIR=/usr/local/sage/4.4.4/local/share/pari/doc\nGPHELP=/usr/local/sage/4.4.4/local/bin/gphelp\nLD_LIBRARY_PATH=\nLIBRARY_PATH=/usr/local/sage/4.4.4/local/lib/\nPATH=/usr/local/sage/4.4.4:/usr/local/sage/4.4.4/local/bin:   #.....\nPYTHONHOME=/usr/local/sage/4.4.4/local\nPYTHONPATH=:/usr/local/sage/4.4.4/local/lib/python\nSINGULAR_EXECUTABLE=/usr/local/sage/4.4.4/local/bin/Singular\nSINGULARPATH=/usr/local/sage/4.4.4/local/share/singular\n```\n\n\nso I imagine local ecl, gp python, singular will all have problems.\nI include LD_LIBRARY_PATH because that variable was originally undefined, not just empty. The variables PYTHONHOME and PYTHONPATH really need to be unset, not just emptied.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9386\n\n",
     "created_at": "2010-06-29T23:05:43Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009386.json:
     "title": "sage-native-execute leaves traces of sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9386",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: tbd
 
-CC:  iandrus leif vbraun
+CC:  @gvol @nexttime @vbraun
 
 The following shows that `sage-native-execute` creates a very hostile environment for running python:
 
@@ -136,7 +136,7 @@ archive/issue_comments_089305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89305",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_089307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89307",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_089309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89309",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_089311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89311",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_089312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89312",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_089313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89313",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -397,16 +397,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_089314.json:
 ```json
 {
-    "body": "Attachment [sage_restore.sh](tarball://root/attachments/some-uuid/ticket9386/sage_restore.sh) by jdemeyer created at 2015-02-09 07:36:28\n\n*Unsetting* `PATH`? Then nothing will work...",
+    "body": "Attachment [sage_restore.sh](tarball://root/attachments/some-uuid/ticket9386/sage_restore.sh) by @jdemeyer created at 2015-02-09 07:36:28\n\n*Unsetting* `PATH`? Then nothing will work...",
     "created_at": "2015-02-09T07:36:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89314",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [sage_restore.sh](tarball://root/attachments/some-uuid/ticket9386/sage_restore.sh) by jdemeyer created at 2015-02-09 07:36:28
+Attachment [sage_restore.sh](tarball://root/attachments/some-uuid/ticket9386/sage_restore.sh) by @jdemeyer created at 2015-02-09 07:36:28
 
 *Unsetting* `PATH`? Then nothing will work...
 
@@ -422,7 +422,7 @@ archive/issue_comments_089315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89315",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_089316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89316",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_089318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89318",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_089319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89319",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -572,7 +572,7 @@ archive/issue_comments_089322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89322",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -615,7 +615,7 @@ archive/issue_comments_089323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89323",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -675,7 +675,7 @@ archive/issue_comments_089325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89325",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -718,7 +718,7 @@ archive/issue_comments_089326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89326",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -745,7 +745,7 @@ archive/issue_comments_089327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89327",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -769,7 +769,7 @@ archive/issue_comments_089328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89328",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -787,7 +787,7 @@ archive/issue_comments_089329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89329",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -805,7 +805,7 @@ archive/issue_comments_089330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89330",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -831,7 +831,7 @@ archive/issue_comments_089331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89331",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -855,7 +855,7 @@ archive/issue_comments_089332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89332",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -910,7 +910,7 @@ archive/issue_comments_089333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89333",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -935,7 +935,7 @@ archive/issue_comments_089334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89334",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -966,7 +966,7 @@ archive/issue_comments_089335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89335",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -993,7 +993,7 @@ archive/issue_comments_089336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89336",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -1022,7 +1022,7 @@ archive/issue_comments_089337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89337",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -1040,7 +1040,7 @@ archive/issue_comments_089338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9386#issuecomment-89338",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

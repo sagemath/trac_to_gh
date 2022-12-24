@@ -3,7 +3,7 @@
 archive/issues_007556.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThis is inconsistent:\n\n```\nsage: (9/2).round()\n4\nsage: RDF('4.5').round()\n5\nsage: import __builtin__\nsage: __builtin__.round(float('4.5'))\n5.0\nsage: RR('4.5').round()\n5\n```\n\n\nIt's also inconsistent for negatives.  The simple fix is to make the default rounding direction 'away' in rational.pyx. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7556\n\n",
+    "body": "Assignee: @aghitza\n\nThis is inconsistent:\n\n```\nsage: (9/2).round()\n4\nsage: RDF('4.5').round()\n5\nsage: import __builtin__\nsage: __builtin__.round(float('4.5'))\n5.0\nsage: RR('4.5').round()\n5\n```\n\n\nIt's also inconsistent for negatives.  The simple fix is to make the default rounding direction 'away' in rational.pyx. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7556\n\n",
     "created_at": "2009-11-29T23:34:16Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007556.json:
     "title": "change default rounding behavior for QQ to",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7556",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 This is inconsistent:
 
@@ -52,7 +52,7 @@ archive/issue_comments_064262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64262",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,16 +65,16 @@ Changing status from new to needs_review.
 archive/issue_comments_064263.json:
 ```json
 {
-    "body": "Attachment [trac_7556.patch](tarball://root/attachments/some-uuid/ticket7556/trac_7556.patch) by was created at 2009-11-29 23:41:25",
+    "body": "Attachment [trac_7556.patch](tarball://root/attachments/some-uuid/ticket7556/trac_7556.patch) by @williamstein created at 2009-11-29 23:41:25",
     "created_at": "2009-11-29T23:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64263",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7556.patch](tarball://root/attachments/some-uuid/ticket7556/trac_7556.patch) by was created at 2009-11-29 23:41:25
+Attachment [trac_7556.patch](tarball://root/attachments/some-uuid/ticket7556/trac_7556.patch) by @williamstein created at 2009-11-29 23:41:25
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_064264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64264",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_064265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64265",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_064266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64266",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

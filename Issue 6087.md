@@ -3,7 +3,7 @@
 archive/issues_006087.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm mjo\n\nEven though the input is invalid (the partition isn't a valid partition), I think segfaulting is considered a bug:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: g=graphs.CubeGraph(3)\nsage: \nsage: g.relabel()\nsage: g.automorphism_group(partition=[[0,1,2],[3,4,5]])\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6087\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill @orlitzky\n\nEven though the input is invalid (the partition isn't a valid partition), I think segfaulting is considered a bug:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: g=graphs.CubeGraph(3)\nsage: \nsage: g.relabel()\nsage: g.automorphism_group(partition=[[0,1,2],[3,4,5]])\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6087\n\n",
     "created_at": "2009-05-19T21:38:06Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_006087.json:
     "title": "graph automorphism group segfaults on invalid input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6087",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm mjo
+CC:  @rlmill @orlitzky
 
 Even though the input is invalid (the partition isn't a valid partition), I think segfaulting is considered a bug:
 
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6087
 archive/issue_comments_048496.json:
 ```json
 {
-    "body": "Attachment [sage-trac_6087.patch](tarball://root/attachments/some-uuid/ticket6087/sage-trac_6087.patch) by mjo created at 2011-12-15 15:09:47\n\nPatch adding a doctest for the correct behavior",
+    "body": "Attachment [sage-trac_6087.patch](tarball://root/attachments/some-uuid/ticket6087/sage-trac_6087.patch) by @orlitzky created at 2011-12-15 15:09:47\n\nPatch adding a doctest for the correct behavior",
     "created_at": "2011-12-15T15:09:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6087#issuecomment-48496",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_6087.patch](tarball://root/attachments/some-uuid/ticket6087/sage-trac_6087.patch) by mjo created at 2011-12-15 15:09:47
+Attachment [sage-trac_6087.patch](tarball://root/attachments/some-uuid/ticket6087/sage-trac_6087.patch) by @orlitzky created at 2011-12-15 15:09:47
 
 Patch adding a doctest for the correct behavior
 
@@ -82,7 +82,7 @@ archive/issue_comments_048497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6087#issuecomment-48497",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_048498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6087#issuecomment-48498",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_048499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6087#issuecomment-48499",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_048500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6087#issuecomment-48500",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_048501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6087#issuecomment-48501",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_048502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6087#issuecomment-48502",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

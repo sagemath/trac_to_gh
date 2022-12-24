@@ -3,7 +3,7 @@
 archive/issues_003872.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nCC:  burcin robertwb\n\nThe goal of this ticket:\n\n1. Remove all dependency of ginac (http://www.ginac.de/) on CLN, so (a) Ginac builds in 2 minutes, (b) Ginac makes use of libraries like MPFR that are better than cln, and (c) in the future ginac will be able to work directly with *any* Sage objects. \n\n2. Create a purely optional symbolic arithmetic class that works like this in parallel with the existing sage symbolics, but is far from feature complete:\n\n\n```\nsage: var(\"x y\",ns=1)\n(x, y)\nsage: type(x)\n<type 'sage.symbolic.expression.Expression'>\nsage: expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)\ncos(y)^2-2*cos(y)*sin(y)-2*cos(y)*x^3*tan(y^x*x) + x^6*tan(y^x*x)^2 + sin(y)^2 + 2*x^3*sin(y)*tan(y^x*x)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n625 loops, best of 3: 107 \u00b5s per loop\n\n\nsage: var(\"x y\")\n(x, y)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n5 loops, best of 3: 24.5 ms per loop\nsage: 24.5/(107*(10^(-3)))\n228.971962616822\n\n\nsage: x = sympy.var('x'); y = sympy.var('y')\nsage: timeit(\"((x^3r * sympy.tan(x*y^x) + sympy.sin(y) - sympy.cos(y))^2r).expand()\")\n625 loops, best of 3: 691 \u00b5s per loop\n```\n\n\n\nThe above would go in *before* any of this replaces the existing symbolic framework.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3872\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @burcin @robertwb\n\nThe goal of this ticket:\n\n1. Remove all dependency of ginac (http://www.ginac.de/) on CLN, so (a) Ginac builds in 2 minutes, (b) Ginac makes use of libraries like MPFR that are better than cln, and (c) in the future ginac will be able to work directly with *any* Sage objects. \n\n2. Create a purely optional symbolic arithmetic class that works like this in parallel with the existing sage symbolics, but is far from feature complete:\n\n\n```\nsage: var(\"x y\",ns=1)\n(x, y)\nsage: type(x)\n<type 'sage.symbolic.expression.Expression'>\nsage: expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)\ncos(y)^2-2*cos(y)*sin(y)-2*cos(y)*x^3*tan(y^x*x) + x^6*tan(y^x*x)^2 + sin(y)^2 + 2*x^3*sin(y)*tan(y^x*x)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n625 loops, best of 3: 107 \u00b5s per loop\n\n\nsage: var(\"x y\")\n(x, y)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n5 loops, best of 3: 24.5 ms per loop\nsage: 24.5/(107*(10^(-3)))\n228.971962616822\n\n\nsage: x = sympy.var('x'); y = sympy.var('y')\nsage: timeit(\"((x^3r * sympy.tan(x*y^x) + sympy.sin(y) - sympy.cos(y))^2r).expand()\")\n625 loops, best of 3: 691 \u00b5s per loop\n```\n\n\n\nThe above would go in *before* any of this replaces the existing symbolic framework.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3872\n\n",
     "created_at": "2008-08-15T10:11:17Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_003872.json:
     "title": "calculus -- incorporate ginac into without cln",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3872",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
-CC:  burcin robertwb
+CC:  @burcin @robertwb
 
 The goal of this ticket:
 
@@ -67,16 +67,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3872
 archive/issue_comments_027597.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to was.",
+    "body": "Changing assignee from @garyfurnish to @williamstein.",
     "created_at": "2008-08-15T10:20:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27597",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from gfurnish to was.
+Changing assignee from @garyfurnish to @williamstein.
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_027598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27598",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_027599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27599",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_027600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27600",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_027601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27601",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_027602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27602",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -244,16 +244,16 @@ I don't have more time to investigate.
 archive/issue_comments_027603.json:
 ```json
 {
-    "body": "Attachment [pynac.2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac.2.hg) by burcin created at 2008-09-19 11:17:24\n\nattachment:pynac.2.hg (and also pynac.2.2.hg, thanks to trac) has a clean version of William's bundle, plus two changesets (one trivial).\n\nI give a positive review to William's patch, someone should review mine.\n\nThere is also a new package file here:\n\nhttp://www.risc.jku.at/people/berocal/sage/pynac-0.1.spkg\n\nThe only difference is a new SPKG.txt and an environment check on top of spkg-install.\n\nAs the ticket description states, these should go in after my changes are reviewed. I'll open new tickets for further additions to the pynac interface.",
+    "body": "Attachment [pynac.2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac.2.hg) by @burcin created at 2008-09-19 11:17:24\n\nattachment:pynac.2.hg (and also pynac.2.2.hg, thanks to trac) has a clean version of William's bundle, plus two changesets (one trivial).\n\nI give a positive review to William's patch, someone should review mine.\n\nThere is also a new package file here:\n\nhttp://www.risc.jku.at/people/berocal/sage/pynac-0.1.spkg\n\nThe only difference is a new SPKG.txt and an environment check on top of spkg-install.\n\nAs the ticket description states, these should go in after my changes are reviewed. I'll open new tickets for further additions to the pynac interface.",
     "created_at": "2008-09-19T11:17:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27603",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [pynac.2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac.2.hg) by burcin created at 2008-09-19 11:17:24
+Attachment [pynac.2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac.2.hg) by @burcin created at 2008-09-19 11:17:24
 
 attachment:pynac.2.hg (and also pynac.2.2.hg, thanks to trac) has a clean version of William's bundle, plus two changesets (one trivial).
 
@@ -279,7 +279,7 @@ archive/issue_comments_027604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27604",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_027606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27606",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -454,16 +454,16 @@ Michael
 archive/issue_comments_027610.json:
 ```json
 {
-    "body": "Attachment [pynac_3.1.3.alpha2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac_3.1.3.alpha2.hg) by burcin created at 2008-10-01 17:29:15\n\npynac bundle against 3.1.3.alpha2",
+    "body": "Attachment [pynac_3.1.3.alpha2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac_3.1.3.alpha2.hg) by @burcin created at 2008-10-01 17:29:15\n\npynac bundle against 3.1.3.alpha2",
     "created_at": "2008-10-01T17:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27610",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [pynac_3.1.3.alpha2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac_3.1.3.alpha2.hg) by burcin created at 2008-10-01 17:29:15
+Attachment [pynac_3.1.3.alpha2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac_3.1.3.alpha2.hg) by @burcin created at 2008-10-01 17:29:15
 
 pynac bundle against 3.1.3.alpha2
 
@@ -479,7 +479,7 @@ archive/issue_comments_027611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27611",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_027612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27612",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -575,7 +575,7 @@ archive/issue_comments_027616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27616",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

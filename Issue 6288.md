@@ -3,7 +3,7 @@
 archive/issues_006288.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n> Another thing that does not work is \"sage -\n> lisp\" which gave the clisp prompt. I found this rather convenient\n> since I could just use the clisp within sage. Is there any plan/\n> interest to switch the this lisp interface to ecl? Does ecl use\n> readline?\n\nFor now you can at least start sage then type\n\nsage: !ecl\n\nto start ecl.  It appears to not make any use of ecl.  I don't know if this is just\na compilation problem or an ecl limitation.\n\nThe Sage <--> lisp interface already works fine:\n\nsage: lisp.eval('(+ 2 3)')\n'5'\n\nI'm not sure why %gap works but not %lisp:\n\nsage: %lisp\nERROR: Magic function `lisp` not found.\nsage: %gap\n  --> Switching to Gap <-- \ngap: \n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6288\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n> Another thing that does not work is \"sage -\n> lisp\" which gave the clisp prompt. I found this rather convenient\n> since I could just use the clisp within sage. Is there any plan/\n> interest to switch the this lisp interface to ecl? Does ecl use\n> readline?\n\nFor now you can at least start sage then type\n\nsage: !ecl\n\nto start ecl.  It appears to not make any use of ecl.  I don't know if this is just\na compilation problem or an ecl limitation.\n\nThe Sage <--> lisp interface already works fine:\n\nsage: lisp.eval('(+ 2 3)')\n'5'\n\nI'm not sure why %gap works but not %lisp:\n\nsage: %lisp\nERROR: Magic function `lisp` not found.\nsage: %gap\n  --> Switching to Gap <-- \ngap: \n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6288\n\n",
     "created_at": "2009-06-14T20:57:48Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_006288.json:
     "title": "%lisp mode on the command line doesn't work.  why?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6288",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -62,16 +62,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6288
 archive/issue_comments_050206.json:
 ```json
 {
-    "body": "Attachment [trac_6288.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288.patch) by mhansen created at 2013-07-23 13:23:57",
+    "body": "Attachment [trac_6288.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288.patch) by @mwhansen created at 2013-07-23 13:23:57",
     "created_at": "2013-07-23T13:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50206",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6288.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288.patch) by mhansen created at 2013-07-23 13:23:57
+Attachment [trac_6288.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288.patch) by @mwhansen created at 2013-07-23 13:23:57
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_050207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50207",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_050208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50208",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -134,16 +134,16 @@ I also wonder if it is necessary to deprecate the bad names, instead of just usi
 archive/issue_comments_050209.json:
 ```json
 {
-    "body": "Attachment [trac_6288_addon_pep8.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288_addon_pep8.patch) by chapoton created at 2013-08-25 13:25:46",
+    "body": "Attachment [trac_6288_addon_pep8.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288_addon_pep8.patch) by @fchapoton created at 2013-08-25 13:25:46",
     "created_at": "2013-08-25T13:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50209",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_6288_addon_pep8.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288_addon_pep8.patch) by chapoton created at 2013-08-25 13:25:46
+Attachment [trac_6288_addon_pep8.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288_addon_pep8.patch) by @fchapoton created at 2013-08-25 13:25:46
 
 
 
@@ -157,7 +157,7 @@ archive/issue_comments_050210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50210",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_050211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50211",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_050212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50212",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_050213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50213",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_050214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50214",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_050215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50215",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_050216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50216",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

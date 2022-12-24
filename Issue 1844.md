@@ -3,7 +3,7 @@
 archive/issues_001844.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThis patch brings doctest coverage up to 100% for every file in sage/modular/modform except for find_generators.py, which isn't imported into sage by default anyway. Needless to say, there are lots of small fixes and whatnot. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1844\n\n",
+    "body": "Assignee: @craigcitro\n\nThis patch brings doctest coverage up to 100% for every file in sage/modular/modform except for find_generators.py, which isn't imported into sage by default anyway. Needless to say, there are lots of small fixes and whatnot. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1844\n\n",
     "created_at": "2008-01-19T01:50:38Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_001844.json:
     "title": "[with bundle] Get doctest coverage in sage/modular/modform up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1844",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 This patch brings doctest coverage up to 100% for every file in sage/modular/modform except for find_generators.py, which isn't imported into sage by default anyway. Needless to say, there are lots of small fixes and whatnot. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1844
 archive/issue_comments_011673.json:
 ```json
 {
-    "body": "Attachment [modform-doctest.hg](tarball://root/attachments/some-uuid/ticket1844/modform-doctest.hg) by mhansen created at 2008-01-19 02:46:45",
+    "body": "Attachment [modform-doctest.hg](tarball://root/attachments/some-uuid/ticket1844/modform-doctest.hg) by @mwhansen created at 2008-01-19 02:46:45",
     "created_at": "2008-01-19T02:46:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1844#issuecomment-11673",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [modform-doctest.hg](tarball://root/attachments/some-uuid/ticket1844/modform-doctest.hg) by mhansen created at 2008-01-19 02:46:45
+Attachment [modform-doctest.hg](tarball://root/attachments/some-uuid/ticket1844/modform-doctest.hg) by @mwhansen created at 2008-01-19 02:46:45
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_011674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1844#issuecomment-11674",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_011675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1844#issuecomment-11675",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -86,16 +86,16 @@ I'm adding a patch that one should use *instead* of the .hg bundle above. (It's 
 archive/issue_comments_011676.json:
 ```json
 {
-    "body": "Attachment [1844.patch](tarball://root/attachments/some-uuid/ticket1844/1844.patch) by craigcitro created at 2008-01-19 06:27:39",
+    "body": "Attachment [1844.patch](tarball://root/attachments/some-uuid/ticket1844/1844.patch) by @craigcitro created at 2008-01-19 06:27:39",
     "created_at": "2008-01-19T06:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1844#issuecomment-11676",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [1844.patch](tarball://root/attachments/some-uuid/ticket1844/1844.patch) by craigcitro created at 2008-01-19 06:27:39
+Attachment [1844.patch](tarball://root/attachments/some-uuid/ticket1844/1844.patch) by @craigcitro created at 2008-01-19 06:27:39
 
 
 
@@ -104,16 +104,16 @@ Attachment [1844.patch](tarball://root/attachments/some-uuid/ticket1844/1844.pat
 archive/issue_comments_011677.json:
 ```json
 {
-    "body": "Attachment [1844-2.patch](tarball://root/attachments/some-uuid/ticket1844/1844-2.patch) by mhansen created at 2008-01-19 07:55:29",
+    "body": "Attachment [1844-2.patch](tarball://root/attachments/some-uuid/ticket1844/1844-2.patch) by @mwhansen created at 2008-01-19 07:55:29",
     "created_at": "2008-01-19T07:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1844#issuecomment-11677",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1844-2.patch](tarball://root/attachments/some-uuid/ticket1844/1844-2.patch) by mhansen created at 2008-01-19 07:55:29
+Attachment [1844-2.patch](tarball://root/attachments/some-uuid/ticket1844/1844-2.patch) by @mwhansen created at 2008-01-19 07:55:29
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_011678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1844#issuecomment-11678",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -140,16 +140,16 @@ I added a new patch which should apply cleanly against 2.10.
 archive/issue_comments_011679.json:
 ```json
 {
-    "body": "Attachment [1844-2a.patch](tarball://root/attachments/some-uuid/ticket1844/1844-2a.patch) by craigcitro created at 2008-01-19 09:53:41",
+    "body": "Attachment [1844-2a.patch](tarball://root/attachments/some-uuid/ticket1844/1844-2a.patch) by @craigcitro created at 2008-01-19 09:53:41",
     "created_at": "2008-01-19T09:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1844#issuecomment-11679",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [1844-2a.patch](tarball://root/attachments/some-uuid/ticket1844/1844-2a.patch) by craigcitro created at 2008-01-19 09:53:41
+Attachment [1844-2a.patch](tarball://root/attachments/some-uuid/ticket1844/1844-2a.patch) by @craigcitro created at 2008-01-19 09:53:41
 
 
 
@@ -163,7 +163,7 @@ archive/issue_comments_011680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1844#issuecomment-11680",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

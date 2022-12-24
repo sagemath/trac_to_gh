@@ -14,7 +14,7 @@ archive/issues_003672.json:
     "title": "wrong hg repository url in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3672",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: tba
@@ -51,7 +51,7 @@ archive/issue_comments_025961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3672#issuecomment-25961",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_025962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3672#issuecomment-25962",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_025963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3672#issuecomment-25963",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

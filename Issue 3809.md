@@ -3,7 +3,7 @@
 archive/issues_003809.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: number field check\n\nReordering the checks for creating a number field prevents such strange things as:\n\n\n```\nsage: x = GF(7)['x'].0\nsage: x.parent()\nUnivariate Polynomial Ring in x over Finite Field of size 7\nsage: x^4 + 23\nx^4 + 2\nsage: K.<a> = NumberField(x^4 + 23)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in NumberField(polynomial, name, check, names, cache)\n    278         K = NumberField_quadratic(polynomial, name, check)\n    279     else:\n--> 280         K = NumberField_absolute(polynomial, name, None, check)\n    281 \n    282     if cache:\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in __init__(self, polynomial, name, latex_name, check)\n   3219 \n   3220     def __init__(self, polynomial, name, latex_name=None, check=True):\n-> 3221         NumberField_generic.__init__(self, polynomial, name, latex_name, check)\n   3222         self._element_class = number_field_element.NumberFieldElement_absolute\n   3223 \n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in __init__(self, polynomial, name, latex_name, check)\n    644         if check:\n    645             if not polynomial.is_irreducible():\n--> 646                 raise ValueError, \"defining polynomial (%s) must be irreducible\"%polynomial\n    647             if not polynomial.parent().base_ring() == QQ:\n    648                 raise TypeError, \"polynomial must be defined over rational field\"\n\nValueError: defining polynomial (x^4 + 2) must be irreducible\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3809\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: number field check\n\nReordering the checks for creating a number field prevents such strange things as:\n\n\n```\nsage: x = GF(7)['x'].0\nsage: x.parent()\nUnivariate Polynomial Ring in x over Finite Field of size 7\nsage: x^4 + 23\nx^4 + 2\nsage: K.<a> = NumberField(x^4 + 23)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in NumberField(polynomial, name, check, names, cache)\n    278         K = NumberField_quadratic(polynomial, name, check)\n    279     else:\n--> 280         K = NumberField_absolute(polynomial, name, None, check)\n    281 \n    282     if cache:\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in __init__(self, polynomial, name, latex_name, check)\n   3219 \n   3220     def __init__(self, polynomial, name, latex_name=None, check=True):\n-> 3221         NumberField_generic.__init__(self, polynomial, name, latex_name, check)\n   3222         self._element_class = number_field_element.NumberFieldElement_absolute\n   3223 \n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py in __init__(self, polynomial, name, latex_name, check)\n    644         if check:\n    645             if not polynomial.is_irreducible():\n--> 646                 raise ValueError, \"defining polynomial (%s) must be irreducible\"%polynomial\n    647             if not polynomial.parent().base_ring() == QQ:\n    648                 raise TypeError, \"polynomial must be defined over rational field\"\n\nValueError: defining polynomial (x^4 + 2) must be irreducible\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3809\n\n",
     "created_at": "2008-08-12T04:48:24Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003809.json:
     "title": "reorder checks for creating a number field; prevents some silly errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3809",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: number field check
 
@@ -72,16 +72,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3809
 archive/issue_comments_027063.json:
 ```json
 {
-    "body": "Attachment [3809-ncalexan-number-field-checking.patch](tarball://root/attachments/some-uuid/ticket3809/3809-ncalexan-number-field-checking.patch) by ncalexan created at 2008-08-12 04:49:10",
+    "body": "Attachment [3809-ncalexan-number-field-checking.patch](tarball://root/attachments/some-uuid/ticket3809/3809-ncalexan-number-field-checking.patch) by @ncalexan created at 2008-08-12 04:49:10",
     "created_at": "2008-08-12T04:49:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3809#issuecomment-27063",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3809-ncalexan-number-field-checking.patch](tarball://root/attachments/some-uuid/ticket3809/3809-ncalexan-number-field-checking.patch) by ncalexan created at 2008-08-12 04:49:10
+Attachment [3809-ncalexan-number-field-checking.patch](tarball://root/attachments/some-uuid/ticket3809/3809-ncalexan-number-field-checking.patch) by @ncalexan created at 2008-08-12 04:49:10
 
 
 
@@ -90,16 +90,16 @@ Attachment [3809-ncalexan-number-field-checking.patch](tarball://root/attachment
 archive/issue_comments_027064.json:
 ```json
 {
-    "body": "Attachment [sage-3809-referee.patch](tarball://root/attachments/some-uuid/ticket3809/sage-3809-referee.patch) by was created at 2008-08-13 02:31:52",
+    "body": "Attachment [sage-3809-referee.patch](tarball://root/attachments/some-uuid/ticket3809/sage-3809-referee.patch) by @williamstein created at 2008-08-13 02:31:52",
     "created_at": "2008-08-13T02:31:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3809#issuecomment-27064",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3809-referee.patch](tarball://root/attachments/some-uuid/ticket3809/sage-3809-referee.patch) by was created at 2008-08-13 02:31:52
+Attachment [sage-3809-referee.patch](tarball://root/attachments/some-uuid/ticket3809/sage-3809-referee.patch) by @williamstein created at 2008-08-13 02:31:52
 
 
 

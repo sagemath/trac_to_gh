@@ -14,7 +14,7 @@ archive/issues_008963.json:
     "title": "Make tableau row_stabilizer return group of perms involving all elements of the tableau",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8963",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 Assignee: sage-combinat
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8963
 archive/issue_comments_082610.json:
 ```json
 {
-    "body": "Attachment [trac_8963_row_stabilizer.patch](tarball://root/attachments/some-uuid/ticket8963/trac_8963_row_stabilizer.patch) by jdc created at 2010-05-14 15:41:34\n\nThe attached patch also adds a method called entries() which returns a list containing the entries of the tableau.  All tests pass and coverage for tableau.py is 100%.  The patch is based on sage-4.4.",
+    "body": "Attachment [trac_8963_row_stabilizer.patch](tarball://root/attachments/some-uuid/ticket8963/trac_8963_row_stabilizer.patch) by @jdchristensen created at 2010-05-14 15:41:34\n\nThe attached patch also adds a method called entries() which returns a list containing the entries of the tableau.  All tests pass and coverage for tableau.py is 100%.  The patch is based on sage-4.4.",
     "created_at": "2010-05-14T15:41:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82610",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 
-Attachment [trac_8963_row_stabilizer.patch](tarball://root/attachments/some-uuid/ticket8963/trac_8963_row_stabilizer.patch) by jdc created at 2010-05-14 15:41:34
+Attachment [trac_8963_row_stabilizer.patch](tarball://root/attachments/some-uuid/ticket8963/trac_8963_row_stabilizer.patch) by @jdchristensen created at 2010-05-14 15:41:34
 
 The attached patch also adds a method called entries() which returns a list containing the entries of the tableau.  All tests pass and coverage for tableau.py is 100%.  The patch is based on sage-4.4.
 
@@ -92,7 +92,7 @@ archive/issue_comments_082612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82612",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_082613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82613",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_082614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82614",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

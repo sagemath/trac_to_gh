@@ -3,7 +3,7 @@
 archive/issues_005100.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jason mhansen was\n\nKeywords: trash, safari\n\nWith Safari on an Intel iMac, sage 3.3.alpha1:\n\nFrom the notebook interface, if I select \"Trash\" to get the list of deleted worksheets, then clicking \"Empty trash\" doesn't actually empty the trash.  It sends me back to the list of active worksheets, but if I click on \"Trash\" again, I see the same list of deleted worksheets.\n\nWith Firefox on the same iMac, emptying the trash works just fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5100\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jasongrout @mwhansen @williamstein\n\nKeywords: trash, safari\n\nWith Safari on an Intel iMac, sage 3.3.alpha1:\n\nFrom the notebook interface, if I select \"Trash\" to get the list of deleted worksheets, then clicking \"Empty trash\" doesn't actually empty the trash.  It sends me back to the list of active worksheets, but if I click on \"Trash\" again, I see the same list of deleted worksheets.\n\nWith Firefox on the same iMac, emptying the trash works just fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5100\n\n",
     "created_at": "2009-01-25T17:01:45Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005100.json:
     "title": "worksheets: can't empty the trash (safari only?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5100",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: boothby
 
-CC:  jason mhansen was
+CC:  @jasongrout @mwhansen @williamstein
 
 Keywords: trash, safari
 
@@ -69,7 +69,7 @@ archive/issue_comments_038929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38929",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_038930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38930",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -100,16 +100,16 @@ Changing priority from minor to blocker.
 archive/issue_comments_038931.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-25T20:16:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38931",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -123,7 +123,7 @@ archive/issue_comments_038932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38932",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_038933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38933",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_038934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38934",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_038935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38935",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_038936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38936",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_038937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38937",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_038938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38938",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_038939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38939",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_038940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38940",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_038941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38941",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_038942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38942",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_038943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38943",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_038944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38944",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_038948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38948",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_038949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38949",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_038950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38950",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_038951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38951",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -548,16 +548,16 @@ It's still a problem for me: with Sage 4.2.1 on OS X 10.5, Safari 4.0.4, it stil
 archive/issue_comments_038952.json:
 ```json
 {
-    "body": "Attachment [trac_5100-empty-trash.patch](tarball://root/attachments/some-uuid/ticket5100/trac_5100-empty-trash.patch) by timdumol created at 2009-12-05 12:04:38\n\nAn attempt at fixing the bug.",
+    "body": "Attachment [trac_5100-empty-trash.patch](tarball://root/attachments/some-uuid/ticket5100/trac_5100-empty-trash.patch) by @TimDumol created at 2009-12-05 12:04:38\n\nAn attempt at fixing the bug.",
     "created_at": "2009-12-05T12:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38952",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_5100-empty-trash.patch](tarball://root/attachments/some-uuid/ticket5100/trac_5100-empty-trash.patch) by timdumol created at 2009-12-05 12:04:38
+Attachment [trac_5100-empty-trash.patch](tarball://root/attachments/some-uuid/ticket5100/trac_5100-empty-trash.patch) by @TimDumol created at 2009-12-05 12:04:38
 
 An attempt at fixing the bug.
 
@@ -573,7 +573,7 @@ archive/issue_comments_038953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38953",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -591,7 +591,7 @@ archive/issue_comments_038954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38954",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -609,7 +609,7 @@ archive/issue_comments_038955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38955",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -629,7 +629,7 @@ archive/issue_comments_038956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38956",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -647,7 +647,7 @@ archive/issue_comments_038957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38957",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -665,7 +665,7 @@ archive/issue_comments_038958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38958",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -683,7 +683,7 @@ archive/issue_comments_038959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38959",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -701,7 +701,7 @@ archive/issue_comments_038960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5100#issuecomment-38960",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

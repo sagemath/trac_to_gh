@@ -3,7 +3,7 @@
 archive/issues_002149.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin\n\nKeywords: polybori\n\nWilliam Stein wrote in #2146:\n\n\"\"\"\n\nBy the way, wouldn't it be better to call it `PolynomialBooleanRing` instead of `BooleanPolynomialRing` I suggest this for two reasons: \n* It is `PolyBoRi`, after all, not `BoPolyRi`. \n* The other Sage polynomial ring(s) starts with \"Polynomial\" \n\n\"\"\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/2149\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\nWilliam Stein wrote in #2146:\n\n\"\"\"\n\nBy the way, wouldn't it be better to call it `PolynomialBooleanRing` instead of `BooleanPolynomialRing` I suggest this for two reasons: \n* It is `PolyBoRi`, after all, not `BoPolyRi`. \n* The other Sage polynomial ring(s) starts with \"Polynomial\" \n\n\"\"\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/2149\n\n",
     "created_at": "2008-02-13T13:11:35Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_002149.json:
     "title": "Rename BooleanPolynomialRing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2149",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin
+CC:  @burcin
 
 Keywords: polybori
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2149
 archive/issue_comments_014103.json:
 ```json
 {
-    "body": "Attachment [2149.patch](tarball://root/attachments/some-uuid/ticket2149/2149.patch) by mhansen created at 2008-02-29 02:15:05",
+    "body": "Attachment [2149.patch](tarball://root/attachments/some-uuid/ticket2149/2149.patch) by @mwhansen created at 2008-02-29 02:15:05",
     "created_at": "2008-02-29T02:15:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2149#issuecomment-14103",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2149.patch](tarball://root/attachments/some-uuid/ticket2149/2149.patch) by mhansen created at 2008-02-29 02:15:05
+Attachment [2149.patch](tarball://root/attachments/some-uuid/ticket2149/2149.patch) by @mwhansen created at 2008-02-29 02:15:05
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_014104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2149#issuecomment-14104",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing status from new to assigned.
 archive/issue_comments_014105.json:
 ```json
 {
-    "body": "Changing assignee from malb to mhansen.",
+    "body": "Changing assignee from @malb to @mwhansen.",
     "created_at": "2008-02-29T02:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2149#issuecomment-14105",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from malb to mhansen.
+Changing assignee from @malb to @mwhansen.
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_014106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2149#issuecomment-14106",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_014107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2149#issuecomment-14107",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_014108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2149#issuecomment-14108",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_014109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2149#issuecomment-14109",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

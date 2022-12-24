@@ -14,7 +14,7 @@ archive/issues_007731.json:
     "title": "knoboo --> codenode optional spkg transition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7731",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd

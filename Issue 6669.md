@@ -3,7 +3,7 @@
 archive/issues_006669.json:
 ```json
 {
-    "body": "Assignee: mraum\n\nCC:  mhansen alexghitza\n\nThis is an error which occurs if one tries to construct coercing from a matrix group into an algebra. The current implementation of homomorphisms with domain a matrix group require the codomain to be a matrix group, too.\n \n\n```\n/home/martin/sage-4.1_compiled/local/lib/python2.6/site-packages/sage/categories/homset.pyc in Hom(X, Y, cat)\n     64     \"\"\"\n     65     if hasattr(X, '_Hom_'):\n---> 66         return X._Hom_(Y, cat)\n     67 \n     68     global _cache\n\n/home/martin/sage-4.1_compiled/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in _Hom_(self, G, cat)\n    230             raise NotImplementedError\n    231         if not is_MatrixGroup(G):\n--> 232             raise TypeError, \"G (=%s) must be a matrix group.\"%G\n    233         import homset\n    234         return homset.MatrixGroupHomset(self, G)\n\nTypeError: G (=Group algebra of group \"General Linear Group of degree 3 over Finite Field of size 7\" over base ring Integer Ring) must be a matrix group.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6669\n\n",
+    "body": "Assignee: mraum\n\nCC:  @mwhansen alexghitza\n\nThis is an error which occurs if one tries to construct coercing from a matrix group into an algebra. The current implementation of homomorphisms with domain a matrix group require the codomain to be a matrix group, too.\n \n\n```\n/home/martin/sage-4.1_compiled/local/lib/python2.6/site-packages/sage/categories/homset.pyc in Hom(X, Y, cat)\n     64     \"\"\"\n     65     if hasattr(X, '_Hom_'):\n---> 66         return X._Hom_(Y, cat)\n     67 \n     68     global _cache\n\n/home/martin/sage-4.1_compiled/local/lib/python2.6/site-packages/sage/groups/matrix_gps/matrix_group.pyc in _Hom_(self, G, cat)\n    230             raise NotImplementedError\n    231         if not is_MatrixGroup(G):\n--> 232             raise TypeError, \"G (=%s) must be a matrix group.\"%G\n    233         import homset\n    234         return homset.MatrixGroupHomset(self, G)\n\nTypeError: G (=Group algebra of group \"General Linear Group of degree 3 over Finite Field of size 7\" over base ring Integer Ring) must be a matrix group.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6669\n\n",
     "created_at": "2009-08-03T20:36:35Z",
     "labels": [
         "coercion",
@@ -19,7 +19,7 @@ archive/issues_006669.json:
 ```
 Assignee: mraum
 
-CC:  mhansen alexghitza
+CC:  @mwhansen alexghitza
 
 This is an error which occurs if one tries to construct coercing from a matrix group into an algebra. The current implementation of homomorphisms with domain a matrix group require the codomain to be a matrix group, too.
  
@@ -96,7 +96,7 @@ archive/issue_comments_054756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6669#issuecomment-54756",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_054757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6669#issuecomment-54757",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_054759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6669#issuecomment-54759",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_054760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6669#issuecomment-54760",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_054761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6669#issuecomment-54761",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_054762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6669#issuecomment-54762",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_054763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6669#issuecomment-54763",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

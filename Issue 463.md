@@ -3,7 +3,7 @@
 archive/issues_000463.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n[12:25] <william> interesting feature idea:\n[12:25] <william> extend the \"sage -upgrade\" command so you an give the directory or URL\n[12:26] <william> of any other installed version of SAGE, and it will pull everything from there.\n[12:26] <william> install any newer spkg's and pull from any active repo.\n[12:26] <malb> definitely nice for sysadmins I guess\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/463\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n[12:25] <william> interesting feature idea:\n[12:25] <william> extend the \"sage -upgrade\" command so you an give the directory or URL\n[12:26] <william> of any other installed version of SAGE, and it will pull everything from there.\n[12:26] <william> install any newer spkg's and pull from any active repo.\n[12:26] <malb> definitely nice for sysadmins I guess\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/463\n\n",
     "created_at": "2007-08-19T19:32:14Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000463.json:
     "title": "sage -upgrade:  make it more flexible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/463",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/463
 archive/issue_comments_002295.json:
 ```json
 {
-    "body": "Attachment [sage-463.patch](tarball://root/attachments/some-uuid/ticket463/sage-463.patch) by was created at 2008-11-27 01:24:31\n\nsomewhat orthogonal -- changes to use \"sage -br\" instead of \"sage -ba\" on upgrade.  apply to sage repo.",
+    "body": "Attachment [sage-463.patch](tarball://root/attachments/some-uuid/ticket463/sage-463.patch) by @williamstein created at 2008-11-27 01:24:31\n\nsomewhat orthogonal -- changes to use \"sage -br\" instead of \"sage -ba\" on upgrade.  apply to sage repo.",
     "created_at": "2008-11-27T01:24:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/463#issuecomment-2295",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-463.patch](tarball://root/attachments/some-uuid/ticket463/sage-463.patch) by was created at 2008-11-27 01:24:31
+Attachment [sage-463.patch](tarball://root/attachments/some-uuid/ticket463/sage-463.patch) by @williamstein created at 2008-11-27 01:24:31
 
 somewhat orthogonal -- changes to use "sage -br" instead of "sage -ba" on upgrade.  apply to sage repo.
 
@@ -60,16 +60,16 @@ somewhat orthogonal -- changes to use "sage -br" instead of "sage -ba" on upgrad
 archive/issue_comments_002296.json:
 ```json
 {
-    "body": "Attachment [scripts-463.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463.patch) by was created at 2008-11-27 01:25:47\n\napply to the scripts repo.",
+    "body": "Attachment [scripts-463.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463.patch) by @williamstein created at 2008-11-27 01:25:47\n\napply to the scripts repo.",
     "created_at": "2008-11-27T01:25:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/463#issuecomment-2296",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-463.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463.patch) by was created at 2008-11-27 01:25:47
+Attachment [scripts-463.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463.patch) by @williamstein created at 2008-11-27 01:25:47
 
 apply to the scripts repo.
 
@@ -85,7 +85,7 @@ archive/issue_comments_002297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/463#issuecomment-2297",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,16 +113,16 @@ to upgrade to the latest devel version.
 archive/issue_comments_002298.json:
 ```json
 {
-    "body": "Attachment [scripts-463-rebase-3.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.1.alpha1.patch) by was created at 2008-11-27 01:45:43",
+    "body": "Attachment [scripts-463-rebase-3.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.1.alpha1.patch) by @williamstein created at 2008-11-27 01:45:43",
     "created_at": "2008-11-27T01:45:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/463#issuecomment-2298",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-463-rebase-3.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.1.alpha1.patch) by was created at 2008-11-27 01:45:43
+Attachment [scripts-463-rebase-3.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.1.alpha1.patch) by @williamstein created at 2008-11-27 01:45:43
 
 
 
@@ -131,16 +131,16 @@ Attachment [scripts-463-rebase-3.1.alpha1.patch](tarball://root/attachments/some
 archive/issue_comments_002299.json:
 ```json
 {
-    "body": "Attachment [scripts-463-rebase-3.2.1.alpha1-part2.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.2.1.alpha1-part2.patch) by was created at 2008-11-27 02:02:26\n\nApply these to 3.2.1.alpha1:\n\n```\nsage-463.patch \nscripts-463-rebase-3.1.alpha1.patch \nscripts-463-rebase-3.2.1.alpha1-part2.patch \n```\n",
+    "body": "Attachment [scripts-463-rebase-3.2.1.alpha1-part2.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.2.1.alpha1-part2.patch) by @williamstein created at 2008-11-27 02:02:26\n\nApply these to 3.2.1.alpha1:\n\n```\nsage-463.patch \nscripts-463-rebase-3.1.alpha1.patch \nscripts-463-rebase-3.2.1.alpha1-part2.patch \n```\n",
     "created_at": "2008-11-27T02:02:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/463#issuecomment-2299",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-463-rebase-3.2.1.alpha1-part2.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.2.1.alpha1-part2.patch) by was created at 2008-11-27 02:02:26
+Attachment [scripts-463-rebase-3.2.1.alpha1-part2.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-rebase-3.2.1.alpha1-part2.patch) by @williamstein created at 2008-11-27 02:02:26
 
 Apply these to 3.2.1.alpha1:
 
@@ -218,16 +218,16 @@ Resolution: fixed
 archive/issue_comments_002303.json:
 ```json
 {
-    "body": "Attachment [scripts-463-part3.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-part3.patch) by was created at 2008-11-27 05:14:06",
+    "body": "Attachment [scripts-463-part3.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-part3.patch) by @williamstein created at 2008-11-27 05:14:06",
     "created_at": "2008-11-27T05:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/463#issuecomment-2303",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-463-part3.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-part3.patch) by was created at 2008-11-27 05:14:06
+Attachment [scripts-463-part3.patch](tarball://root/attachments/some-uuid/ticket463/scripts-463-part3.patch) by @williamstein created at 2008-11-27 05:14:06
 
 
 

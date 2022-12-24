@@ -14,7 +14,7 @@ archive/issues_008354.json:
     "title": "ReST fixes based on Sage 4.3.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8354",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8354
 archive/issue_comments_074617.json:
 ```json
 {
-    "body": "Attachment [trac_8354-rest.patch](tarball://root/attachments/some-uuid/ticket8354/trac_8354-rest.patch) by jhpalmieri created at 2010-02-24 23:06:19",
+    "body": "Attachment [trac_8354-rest.patch](tarball://root/attachments/some-uuid/ticket8354/trac_8354-rest.patch) by @jhpalmieri created at 2010-02-24 23:06:19",
     "created_at": "2010-02-24T23:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8354#issuecomment-74617",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8354-rest.patch](tarball://root/attachments/some-uuid/ticket8354/trac_8354-rest.patch) by jhpalmieri created at 2010-02-24 23:06:19
+Attachment [trac_8354-rest.patch](tarball://root/attachments/some-uuid/ticket8354/trac_8354-rest.patch) by @jhpalmieri created at 2010-02-24 23:06:19
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_074619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8354#issuecomment-74619",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_074620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8354#issuecomment-74620",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_074621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8354#issuecomment-74621",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_074622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8354#issuecomment-74622",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

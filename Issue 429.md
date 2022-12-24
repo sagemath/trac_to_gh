@@ -3,7 +3,7 @@
 archive/issues_000429.json:
 ```json
 {
-    "body": "Assignee: was\n\nTry:\n\n```\nsage: A = Matrix(RR,2,2,sparse=True) \n<type 'exceptions.TypeError'>: Unable to convert x (='None')\nto real number.\n```\n\nwhile\n\n```\nsage: A = Matrix(GF(127),2,2,sparse=True)\n```\n\nworks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/429\n\n",
+    "body": "Assignee: @williamstein\n\nTry:\n\n```\nsage: A = Matrix(RR,2,2,sparse=True) \n<type 'exceptions.TypeError'>: Unable to convert x (='None')\nto real number.\n```\n\nwhile\n\n```\nsage: A = Matrix(GF(127),2,2,sparse=True)\n```\n\nworks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/429\n\n",
     "created_at": "2007-08-15T16:53:44Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000429.json:
     "title": "cannot create empty sparse matrix over reals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/429",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Try:
 
@@ -51,7 +51,7 @@ archive/issue_comments_002152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/429#issuecomment-2152",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_002153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/429#issuecomment-2153",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_002154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/429#issuecomment-2154",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

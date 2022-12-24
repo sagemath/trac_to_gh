@@ -3,7 +3,7 @@
 archive/issues_006250.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat wdjoyner@gmail.com\n\nKeywords: cardinality, __len__, order, groups\n\nFollowup on #5308:\n- cardinality now returns the size of the group (was order)\n- order is a backward compatibility alias for cardinality\n- __len__ raises a deprecation error\n\nIssue created by migration from https://trac.sagemath.org/ticket/6250\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat wdjoyner@gmail.com\n\nKeywords: cardinality, __len__, order, groups\n\nFollowup on #5308:\n- cardinality now returns the size of the group (was order)\n- order is a backward compatibility alias for cardinality\n- __len__ raises a deprecation error\n\nIssue created by migration from https://trac.sagemath.org/ticket/6250\n\n",
     "created_at": "2009-06-08T23:23:10Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_006250.json:
     "title": "[with patch, needs review] Standardize MatrixGroup_gap: by adding .cardinality, and deprecating __len__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6250",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat wdjoyner@gmail.com
 
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6250
 archive/issue_comments_049911.json:
 ```json
 {
-    "body": "Attachment [matrix_group_gap-cardinality_len-6250-nt.2.patch](tarball://root/attachments/some-uuid/ticket6250/matrix_group_gap-cardinality_len-6250-nt.2.patch) by nthiery created at 2009-06-08 23:26:26",
+    "body": "Attachment [matrix_group_gap-cardinality_len-6250-nt.2.patch](tarball://root/attachments/some-uuid/ticket6250/matrix_group_gap-cardinality_len-6250-nt.2.patch) by @nthiery created at 2009-06-08 23:26:26",
     "created_at": "2009-06-08T23:26:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6250#issuecomment-49911",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [matrix_group_gap-cardinality_len-6250-nt.2.patch](tarball://root/attachments/some-uuid/ticket6250/matrix_group_gap-cardinality_len-6250-nt.2.patch) by nthiery created at 2009-06-08 23:26:26
+Attachment [matrix_group_gap-cardinality_len-6250-nt.2.patch](tarball://root/attachments/some-uuid/ticket6250/matrix_group_gap-cardinality_len-6250-nt.2.patch) by @nthiery created at 2009-06-08 23:26:26
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_049912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6250#issuecomment-49912",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_049913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6250#issuecomment-49913",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_049914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6250#issuecomment-49914",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_049915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6250#issuecomment-49915",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_049916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6250#issuecomment-49916",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_049917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6250#issuecomment-49917",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_049918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6250#issuecomment-49918",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_049919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6250#issuecomment-49919",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_049920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6250#issuecomment-49920",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

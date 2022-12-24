@@ -14,7 +14,7 @@ archive/issues_004980.json:
     "title": "add info about slices to developer guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4980",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tba
@@ -45,7 +45,7 @@ archive/issue_comments_037966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4980#issuecomment-37966",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_037967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4980#issuecomment-37967",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

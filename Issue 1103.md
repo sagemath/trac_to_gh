@@ -93,7 +93,7 @@ archive/issue_comments_006672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1103#issuecomment-6672",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_006673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1103#issuecomment-6673",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -124,16 +124,16 @@ This was caused by me fixing another trac bug on osx, then putting in a doctest 
 archive/issue_comments_006674.json:
 ```json
 {
-    "body": "Changing assignee from failure to was.",
+    "body": "Changing assignee from failure to @williamstein.",
     "created_at": "2007-11-05T13:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1103#issuecomment-6674",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from failure to was.
+Changing assignee from failure to @williamstein.
 
 
 
@@ -287,7 +287,7 @@ archive/issue_comments_006677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1103#issuecomment-6677",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

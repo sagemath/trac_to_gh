@@ -132,16 +132,16 @@ Michael
 archive/issue_comments_006613.json:
 ```json
 {
-    "body": "Attachment [memleak_ZZ_pE_to_ZZ_pX.patch](tarball://root/attachments/some-uuid/ticket1092/memleak_ZZ_pE_to_ZZ_pX.patch) by wjp created at 2008-01-08 00:20:30",
+    "body": "Attachment [memleak_ZZ_pE_to_ZZ_pX.patch](tarball://root/attachments/some-uuid/ticket1092/memleak_ZZ_pE_to_ZZ_pX.patch) by @wjp created at 2008-01-08 00:20:30",
     "created_at": "2008-01-08T00:20:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1092#issuecomment-6613",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [memleak_ZZ_pE_to_ZZ_pX.patch](tarball://root/attachments/some-uuid/ticket1092/memleak_ZZ_pE_to_ZZ_pX.patch) by wjp created at 2008-01-08 00:20:30
+Attachment [memleak_ZZ_pE_to_ZZ_pX.patch](tarball://root/attachments/some-uuid/ticket1092/memleak_ZZ_pE_to_ZZ_pX.patch) by @wjp created at 2008-01-08 00:20:30
 
 
 

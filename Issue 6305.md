@@ -14,7 +14,7 @@ archive/issues_006305.json:
     "title": "preparser issue with recurssive loading of .sage files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6305",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -105,7 +105,7 @@ archive/issue_comments_050325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6305#issuecomment-50325",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_050326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6305#issuecomment-50326",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

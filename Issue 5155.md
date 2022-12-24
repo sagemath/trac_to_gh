@@ -3,7 +3,7 @@
 archive/issues_005155.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  lftabera leif\n\nAll doctests in Sage should pass when they are run as a user that does not own the Sage tree. To do that set SAGE_TESTDIR to some place writable, i.e.\n\n```\nexport SAGE_TESTDIR=/scratch/mabshoff/tmp\n```\n\nand run the doctests on a Sage install that isn't owned by the user. When doing so the following doctests fail:\n\n```\n\tsage -t -long devel/sage/sage/matrix/matrix2.pyx # 1 doctests failed\n\tsage -t -long devel/doc/tut/tut.tex # 5 doctests failed\n\tsage -t -long devel/sage/sage/interfaces/qepcad.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/plot/plot.py # 6 doctests failed\n\tsage -t -long devel/sage/sage/databases/database.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/calculus/calculus.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/misc/package.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/gsl/ode.pyx # 4 doctests failed\n\tsage -t -long devel/sage/sage/server/support.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/notebook.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/twist.py # 8 doctests failed\n\tsage -t -long devel/sage/sage/structure/sage_object.pyx # 6 doctests failed\n```\n\nThis ticket might need to be split up since it covers a rather large number of doctest failures.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5155\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @lftabera @nexttime\n\nAll doctests in Sage should pass when they are run as a user that does not own the Sage tree. To do that set SAGE_TESTDIR to some place writable, i.e.\n\n```\nexport SAGE_TESTDIR=/scratch/mabshoff/tmp\n```\n\nand run the doctests on a Sage install that isn't owned by the user. When doing so the following doctests fail:\n\n```\n\tsage -t -long devel/sage/sage/matrix/matrix2.pyx # 1 doctests failed\n\tsage -t -long devel/doc/tut/tut.tex # 5 doctests failed\n\tsage -t -long devel/sage/sage/interfaces/qepcad.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/plot/plot.py # 6 doctests failed\n\tsage -t -long devel/sage/sage/databases/database.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/calculus/calculus.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/misc/package.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/gsl/ode.pyx # 4 doctests failed\n\tsage -t -long devel/sage/sage/server/support.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/notebook.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/twist.py # 8 doctests failed\n\tsage -t -long devel/sage/sage/structure/sage_object.pyx # 6 doctests failed\n```\n\nThis ticket might need to be split up since it covers a rather large number of doctest failures.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5155\n\n",
     "created_at": "2009-02-02T01:25:42Z",
     "labels": [
         "doctest",
@@ -19,7 +19,7 @@ archive/issues_005155.json:
 ```
 Assignee: mabshoff
 
-CC:  lftabera leif
+CC:  @lftabera @nexttime
 
 All doctests in Sage should pass when they are run as a user that does not own the Sage tree. To do that set SAGE_TESTDIR to some place writable, i.e.
 
@@ -66,7 +66,7 @@ archive/issue_comments_039456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39456",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_039457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39457",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_039458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39458",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_039459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39459",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_039460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39460",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_039461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39461",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_039462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39462",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_039463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39463",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -326,16 +326,16 @@ I'm not sure this patch is a good idea or needed, considering #11926.  If the Sa
 archive/issue_comments_039464.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to jdemeyer.",
+    "body": "Changing assignee from mabshoff to @jdemeyer.",
     "created_at": "2011-10-17T12:24:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39464",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from mabshoff to jdemeyer.
+Changing assignee from mabshoff to @jdemeyer.
 
 
 
@@ -349,7 +349,7 @@ archive/issue_comments_039465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39465",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_039466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39466",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_039467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39467",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_039468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39468",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_039469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39469",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -478,7 +478,7 @@ archive/issue_comments_039470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39470",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_039471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39471",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_039472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39472",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_039473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39473",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_039474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39474",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -577,7 +577,7 @@ archive/issue_comments_039475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39475",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_039476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39476",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_039477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39477",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -628,16 +628,16 @@ However, this depends on so many other tickets, so it might be good to postpone 
 archive/issue_comments_039478.json:
 ```json
 {
-    "body": "Attachment [5155_sage_location.patch](tarball://root/attachments/some-uuid/ticket5155/5155_sage_location.patch) by jdemeyer created at 2012-09-16 18:44:12",
+    "body": "Attachment [5155_sage_location.patch](tarball://root/attachments/some-uuid/ticket5155/5155_sage_location.patch) by @jdemeyer created at 2012-09-16 18:44:12",
     "created_at": "2012-09-16T18:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39478",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [5155_sage_location.patch](tarball://root/attachments/some-uuid/ticket5155/5155_sage_location.patch) by jdemeyer created at 2012-09-16 18:44:12
+Attachment [5155_sage_location.patch](tarball://root/attachments/some-uuid/ticket5155/5155_sage_location.patch) by @jdemeyer created at 2012-09-16 18:44:12
 
 
 
@@ -651,7 +651,7 @@ archive/issue_comments_039479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39479",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -669,7 +669,7 @@ archive/issue_comments_039480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39480",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -687,7 +687,7 @@ archive/issue_comments_039481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39481",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -705,7 +705,7 @@ archive/issue_comments_039482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39482",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -718,16 +718,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_039483.json:
 ```json
 {
-    "body": "Attachment [5155_sagelib.patch](tarball://root/attachments/some-uuid/ticket5155/5155_sagelib.patch) by jdemeyer created at 2012-12-19 21:01:28",
+    "body": "Attachment [5155_sagelib.patch](tarball://root/attachments/some-uuid/ticket5155/5155_sagelib.patch) by @jdemeyer created at 2012-12-19 21:01:28",
     "created_at": "2012-12-19T21:01:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39483",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [5155_sagelib.patch](tarball://root/attachments/some-uuid/ticket5155/5155_sagelib.patch) by jdemeyer created at 2012-12-19 21:01:28
+Attachment [5155_sagelib.patch](tarball://root/attachments/some-uuid/ticket5155/5155_sagelib.patch) by @jdemeyer created at 2012-12-19 21:01:28
 
 
 
@@ -741,7 +741,7 @@ archive/issue_comments_039484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39484",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -759,7 +759,7 @@ archive/issue_comments_039485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39485",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -777,7 +777,7 @@ archive/issue_comments_039486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39486",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -795,7 +795,7 @@ archive/issue_comments_039487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39487",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -817,7 +817,7 @@ archive/issue_comments_039488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39488",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -835,7 +835,7 @@ archive/issue_comments_039489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5155#issuecomment-39489",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

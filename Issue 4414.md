@@ -3,7 +3,7 @@
 archive/issues_004414.json:
 ```json
 {
-    "body": "Assignee: ahupfer\n\nCC:  jason\n\nEvery user action should result in immediate feedback. If the feedback is not available some placeholder animation should be displayed during the calculation is done or until the feedback is received. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4414\n\n",
+    "body": "Assignee: ahupfer\n\nCC:  @jasongrout\n\nEvery user action should result in immediate feedback. If the feedback is not available some placeholder animation should be displayed during the calculation is done or until the feedback is received. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4414\n\n",
     "created_at": "2008-10-31T21:46:28Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_004414.json:
 ```
 Assignee: ahupfer
 
-CC:  jason
+CC:  @jasongrout
 
 Every user action should result in immediate feedback. If the feedback is not available some placeholder animation should be displayed during the calculation is done or until the feedback is received. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_032472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4414#issuecomment-32472",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_032473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4414#issuecomment-32473",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_032474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4414#issuecomment-32474",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_032475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4414#issuecomment-32475",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

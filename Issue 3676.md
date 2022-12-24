@@ -3,7 +3,7 @@
 archive/issues_003676.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  boothby\n\nKeywords: graphs\n\nAfter this patch, `graph_isom` will be essentially obsolete. Brought to the GNU General Public by Google, Inc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3676\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  boothby\n\nKeywords: graphs\n\nAfter this patch, `graph_isom` will be essentially obsolete. Brought to the GNU General Public by Google, Inc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3676\n\n",
     "created_at": "2008-07-19T00:07:34Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_003676.json:
     "title": "[with patch, needs review] Refactor graph isom code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3676",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 CC:  boothby
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3676
 archive/issue_comments_026020.json:
 ```json
 {
-    "body": "Attachment [trac3676-refactor_graph_isom.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-refactor_graph_isom.patch) by rlm created at 2008-07-19 00:08:30",
+    "body": "Attachment [trac3676-refactor_graph_isom.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-refactor_graph_isom.patch) by @rlmill created at 2008-07-19 00:08:30",
     "created_at": "2008-07-19T00:08:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3676#issuecomment-26020",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac3676-refactor_graph_isom.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-refactor_graph_isom.patch) by rlm created at 2008-07-19 00:08:30
+Attachment [trac3676-refactor_graph_isom.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-refactor_graph_isom.patch) by @rlmill created at 2008-07-19 00:08:30
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_026021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3676#issuecomment-26021",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_026023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3676#issuecomment-26023",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -161,16 +161,16 @@ It's so... readable...
 archive/issue_comments_026025.json:
 ```json
 {
-    "body": "Attachment [trac3676-cleanup.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-cleanup.patch) by rlm created at 2008-08-06 17:39:33",
+    "body": "Attachment [trac3676-cleanup.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-cleanup.patch) by @rlmill created at 2008-08-06 17:39:33",
     "created_at": "2008-08-06T17:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3676#issuecomment-26025",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac3676-cleanup.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-cleanup.patch) by rlm created at 2008-08-06 17:39:33
+Attachment [trac3676-cleanup.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-cleanup.patch) by @rlmill created at 2008-08-06 17:39:33
 
 
 
@@ -184,7 +184,7 @@ archive/issue_comments_026026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3676#issuecomment-26026",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -197,16 +197,16 @@ The patches here may depend on #3703.
 archive/issue_comments_026027.json:
 ```json
 {
-    "body": "Attachment [trac3676-cleanup2.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-cleanup2.patch) by rlm created at 2008-08-06 18:02:41",
+    "body": "Attachment [trac3676-cleanup2.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-cleanup2.patch) by @rlmill created at 2008-08-06 18:02:41",
     "created_at": "2008-08-06T18:02:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3676#issuecomment-26027",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac3676-cleanup2.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-cleanup2.patch) by rlm created at 2008-08-06 18:02:41
+Attachment [trac3676-cleanup2.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-cleanup2.patch) by @rlmill created at 2008-08-06 18:02:41
 
 
 
@@ -215,16 +215,16 @@ Attachment [trac3676-cleanup2.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_026028.json:
 ```json
 {
-    "body": "Attachment [trac3676-cleanup3.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-cleanup3.patch) by rlm created at 2008-08-06 22:41:56\n\nI can flatten those last three if desired...",
+    "body": "Attachment [trac3676-cleanup3.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-cleanup3.patch) by @rlmill created at 2008-08-06 22:41:56\n\nI can flatten those last three if desired...",
     "created_at": "2008-08-06T22:41:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3676#issuecomment-26028",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac3676-cleanup3.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-cleanup3.patch) by rlm created at 2008-08-06 22:41:56
+Attachment [trac3676-cleanup3.patch](tarball://root/attachments/some-uuid/ticket3676/trac3676-cleanup3.patch) by @rlmill created at 2008-08-06 22:41:56
 
 I can flatten those last three if desired...
 
@@ -257,16 +257,16 @@ Michael
 archive/issue_comments_026030.json:
 ```json
 {
-    "body": "Attachment [3676-ncalexan-docstring-changes.patch](tarball://root/attachments/some-uuid/ticket3676/3676-ncalexan-docstring-changes.patch) by ncalexan created at 2008-08-11 18:34:19",
+    "body": "Attachment [3676-ncalexan-docstring-changes.patch](tarball://root/attachments/some-uuid/ticket3676/3676-ncalexan-docstring-changes.patch) by @ncalexan created at 2008-08-11 18:34:19",
     "created_at": "2008-08-11T18:34:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3676#issuecomment-26030",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3676-ncalexan-docstring-changes.patch](tarball://root/attachments/some-uuid/ticket3676/3676-ncalexan-docstring-changes.patch) by ncalexan created at 2008-08-11 18:34:19
+Attachment [3676-ncalexan-docstring-changes.patch](tarball://root/attachments/some-uuid/ticket3676/3676-ncalexan-docstring-changes.patch) by @ncalexan created at 2008-08-11 18:34:19
 
 
 
@@ -280,7 +280,7 @@ archive/issue_comments_026031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3676#issuecomment-26031",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_026033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3676#issuecomment-26033",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_026034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3676#issuecomment-26034",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -352,16 +352,16 @@ Apply only this patch (please do not delete the others!)
 archive/issue_comments_026035.json:
 ```json
 {
-    "body": "Attachment [trac_3676-graph_isom_refactor.patch](tarball://root/attachments/some-uuid/ticket3676/trac_3676-graph_isom_refactor.patch) by ncalexan created at 2008-08-12 01:31:44\n\nrlm and I have gone back and forth on this and I think it's great.  I say apply!",
+    "body": "Attachment [trac_3676-graph_isom_refactor.patch](tarball://root/attachments/some-uuid/ticket3676/trac_3676-graph_isom_refactor.patch) by @ncalexan created at 2008-08-12 01:31:44\n\nrlm and I have gone back and forth on this and I think it's great.  I say apply!",
     "created_at": "2008-08-12T01:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3676#issuecomment-26035",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_3676-graph_isom_refactor.patch](tarball://root/attachments/some-uuid/ticket3676/trac_3676-graph_isom_refactor.patch) by ncalexan created at 2008-08-12 01:31:44
+Attachment [trac_3676-graph_isom_refactor.patch](tarball://root/attachments/some-uuid/ticket3676/trac_3676-graph_isom_refactor.patch) by @ncalexan created at 2008-08-12 01:31:44
 
 rlm and I have gone back and forth on this and I think it's great.  I say apply!
 

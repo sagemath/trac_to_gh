@@ -3,7 +3,7 @@
 archive/issues_008507.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n```\n            sage: GF(107)(0).sqrt(all=True)\n            0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8507\n\n",
+    "body": "Assignee: @aghitza\n\n\n```\n            sage: GF(107)(0).sqrt(all=True)\n            0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8507\n\n",
     "created_at": "2010-03-12T05:59:18Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_008507.json:
     "title": "all flag ignored for GF(107)(0).sqrt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8507",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 ```
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8507
 archive/issue_comments_076821.json:
 ```json
 {
-    "body": "Attachment [8507-sqrt-all.patch](tarball://root/attachments/some-uuid/ticket8507/8507-sqrt-all.patch) by robertwb created at 2010-03-12 06:00:45",
+    "body": "Attachment [8507-sqrt-all.patch](tarball://root/attachments/some-uuid/ticket8507/8507-sqrt-all.patch) by @robertwb created at 2010-03-12 06:00:45",
     "created_at": "2010-03-12T06:00:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8507#issuecomment-76821",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8507-sqrt-all.patch](tarball://root/attachments/some-uuid/ticket8507/8507-sqrt-all.patch) by robertwb created at 2010-03-12 06:00:45
+Attachment [8507-sqrt-all.patch](tarball://root/attachments/some-uuid/ticket8507/8507-sqrt-all.patch) by @robertwb created at 2010-03-12 06:00:45
 
 
 
@@ -60,7 +60,7 @@ archive/issue_comments_076822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8507#issuecomment-76822",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_076823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8507#issuecomment-76823",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_076824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8507#issuecomment-76824",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_076825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8507#issuecomment-76825",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

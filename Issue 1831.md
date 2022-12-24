@@ -3,7 +3,7 @@
 archive/issues_001831.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1831\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1831\n\n",
     "created_at": "2008-01-18T15:19:25Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001831.json:
     "title": "[with patch] 3d docs: add more examples of parametric plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1831",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_011591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1831#issuecomment-11591",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ these are from David Joyner
 archive/issue_comments_011592.json:
 ```json
 {
-    "body": "Attachment [trac-1831.patch](tarball://root/attachments/some-uuid/ticket1831/trac-1831.patch) by mhansen created at 2008-01-21 03:30:55\n\nLooks good to me",
+    "body": "Attachment [trac-1831.patch](tarball://root/attachments/some-uuid/ticket1831/trac-1831.patch) by @mwhansen created at 2008-01-21 03:30:55\n\nLooks good to me",
     "created_at": "2008-01-21T03:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1831#issuecomment-11592",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac-1831.patch](tarball://root/attachments/some-uuid/ticket1831/trac-1831.patch) by mhansen created at 2008-01-21 03:30:55
+Attachment [trac-1831.patch](tarball://root/attachments/some-uuid/ticket1831/trac-1831.patch) by @mwhansen created at 2008-01-21 03:30:55
 
 Looks good to me
 

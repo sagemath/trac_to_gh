@@ -3,7 +3,7 @@
 archive/issues_002619.json:
 ```json
 {
-    "body": "Assignee: malb\n\nAfter the patch was applied (which depends on #2618) this should work again:\n\n```\nsage: P.<a,b,c,d,e> = PolynomialRing(GF(2), 5, order='lex')\nsage: I1 = ideal([a*b + c*d + 1, a*c*e + d*e, a*b*e + c*e, b*c + c*d*e + 1])\nsage: Q = P.quotient( sage.rings.ideal.FieldIdeal(P) )\nsage: I2 = ideal([Q(f) for f in I1.gens()])\nsage: I2.groebner_basis()\n[ebar, cbar + 1, bbar + 1, abar + dbar + 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2619\n\n",
+    "body": "Assignee: @malb\n\nAfter the patch was applied (which depends on #2618) this should work again:\n\n```\nsage: P.<a,b,c,d,e> = PolynomialRing(GF(2), 5, order='lex')\nsage: I1 = ideal([a*b + c*d + 1, a*c*e + d*e, a*b*e + c*e, b*c + c*d*e + 1])\nsage: Q = P.quotient( sage.rings.ideal.FieldIdeal(P) )\nsage: I2 = ideal([Q(f) for f in I1.gens()])\nsage: I2.groebner_basis()\n[ebar, cbar + 1, bbar + 1, abar + dbar + 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2619\n\n",
     "created_at": "2008-03-20T21:58:52Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_002619.json:
     "title": "[with patch, needs review] Gr\u00f6bner bases over quotient rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2619",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 After the patch was applied (which depends on #2618) this should work again:
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2619
 archive/issue_comments_017992.json:
 ```json
 {
-    "body": "Attachment [quotient_ring_gb.patch](tarball://root/attachments/some-uuid/ticket2619/quotient_ring_gb.patch) by mhansen created at 2008-03-21 02:05:40\n\nLooks good to me.",
+    "body": "Attachment [quotient_ring_gb.patch](tarball://root/attachments/some-uuid/ticket2619/quotient_ring_gb.patch) by @mwhansen created at 2008-03-21 02:05:40\n\nLooks good to me.",
     "created_at": "2008-03-21T02:05:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2619#issuecomment-17992",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [quotient_ring_gb.patch](tarball://root/attachments/some-uuid/ticket2619/quotient_ring_gb.patch) by mhansen created at 2008-03-21 02:05:40
+Attachment [quotient_ring_gb.patch](tarball://root/attachments/some-uuid/ticket2619/quotient_ring_gb.patch) by @mwhansen created at 2008-03-21 02:05:40
 
 Looks good to me.
 

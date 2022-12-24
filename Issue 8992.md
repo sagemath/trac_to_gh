@@ -3,7 +3,7 @@
 archive/issues_008992.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nKeywords: coercion quotient ring\n\nConsider the following setting:\n\n```\nsage: P.<x> = QQ[]\nsage: Q1 = P.quo([(x^2+1)^2*(x^2-3)])\nsage: Q2 = P.quo([(x^2+1)^2*(x^5+3)])\n```\n\n\nThe gcd of the moduli is `(x<sup>2+1)</sup>2`, and so it should be true that the pushout of Q1 and Q2 is the quotient ring with this gcd as modulus. Currently, the pushout raises an error, but with #8800 one has:\n\n```\nsage: from sage.categories.pushout import pushout\nsage: Q = pushout(Q1,Q2); Q\nUnivariate Quotient Polynomial Ring in xbar over Rational Field with modulus x^4 + 2*x^2 + 1\n```\n\n\nHowever, there remain two bugs that are not covered in #8800 and that prevent a proper coercion of Q1 and Q2.\n\nFirst bug:\n\n```\nsage: Q.has_coerce_map_from(Q1)\nFalse\nsage: Q.has_coerce_map_from(Q2)\nFalse\n```\n\n\nSecond bug:\n\n```\nsage: Q(Q1.gen())\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (932, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (932, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/SAGE/sage-4.3.1/devel/<ipython console> in <module>()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_quotient_ring.pyc in __call__(self, x)\n    272                 return PolynomialQuotientRingElement(self, self.__ring(x.lift()), check=False)\n    273         return PolynomialQuotientRingElement(\n--> 274                         self, self.__ring(x) , check=True)\n    275\n    276     def _is_valid_homomorphism_(self, codomain, im_gens):\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.pyc in _element_constructor_(self, x, check, is_gen, construct, **kwds)\n    310                 x = x.Polrev()\n    311\n--> 312         return C(self, x, check, is_gen, construct=construct, **kwds)\n    313\n    314     def is_integral_domain(self, proof = True):\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element_generic.pyc in __init__(self, parent, x, check, is_gen, construct)\n    654\n    655         if check:\n--> 656             x = [QQ(z) for z in x]\n    657\n    658         self.__list = list(x)\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/rational.so in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:5781)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/rational.so in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:7052)()\n\nTypeError: Unable to coerce xbar (<class 'sage.rings.polynomial.polynomial_quotient_ring_element.PolynomialQuotientRingElement'>) to Rational\nsage: Q.gen()\nxbar\n```\n\n\nIt could be that the following is an additional bug, but perhaps it is just a special case of the previous:\n\n```\nsage: Q(str(Q.gen()))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (932, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (932, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/SAGE/sage-4.3.1/devel/<ipython console> in <module>()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_quotient_ring.pyc in __call__(self, x)\n    272                 return PolynomialQuotientRingElement(self, self.__ring(x.lift()), check=False)\n    273         return PolynomialQuotientRingElement(\n--> 274                         self, self.__ring(x) , check=True)\n    275\n    276     def _is_valid_homomorphism_(self, codomain, im_gens):\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.pyc in _element_constructor_(self, x, check, is_gen, construct, **kwds)\n    297                 R = self.base_ring()\n    298                 p = Parser(Integer, R, LookupNameMaker({self.variable_name(): self.gen()}, R))\n--> 299                 return self(p.parse(x))\n    300             except NameError:\n    301                 raise TypeError,\"Unable to coerce string\"\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.parse (sage/misc/parser.c:3481)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.parse (sage/misc/parser.c:3345)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_eqn (sage/misc/parser.c:5136)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_expr (sage/misc/parser.c:5456)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_term (sage/misc/parser.c:5681)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_factor (sage/misc/parser.c:6044)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_power (sage/misc/parser.c:6158)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_atom (sage/misc/parser.c:6711)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.LookupNameMaker.__call__ (sage/misc/parser.c:7653)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/rational.so in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:5781)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/rational.so in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:6517)()\n\nTypeError: unable to convert xbar to a rational\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8992\n\n",
+    "body": "Assignee: @robertwb\n\nKeywords: coercion quotient ring\n\nConsider the following setting:\n\n```\nsage: P.<x> = QQ[]\nsage: Q1 = P.quo([(x^2+1)^2*(x^2-3)])\nsage: Q2 = P.quo([(x^2+1)^2*(x^5+3)])\n```\n\n\nThe gcd of the moduli is `(x<sup>2+1)</sup>2`, and so it should be true that the pushout of Q1 and Q2 is the quotient ring with this gcd as modulus. Currently, the pushout raises an error, but with #8800 one has:\n\n```\nsage: from sage.categories.pushout import pushout\nsage: Q = pushout(Q1,Q2); Q\nUnivariate Quotient Polynomial Ring in xbar over Rational Field with modulus x^4 + 2*x^2 + 1\n```\n\n\nHowever, there remain two bugs that are not covered in #8800 and that prevent a proper coercion of Q1 and Q2.\n\nFirst bug:\n\n```\nsage: Q.has_coerce_map_from(Q1)\nFalse\nsage: Q.has_coerce_map_from(Q2)\nFalse\n```\n\n\nSecond bug:\n\n```\nsage: Q(Q1.gen())\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (932, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (932, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/SAGE/sage-4.3.1/devel/<ipython console> in <module>()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_quotient_ring.pyc in __call__(self, x)\n    272                 return PolynomialQuotientRingElement(self, self.__ring(x.lift()), check=False)\n    273         return PolynomialQuotientRingElement(\n--> 274                         self, self.__ring(x) , check=True)\n    275\n    276     def _is_valid_homomorphism_(self, codomain, im_gens):\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.pyc in _element_constructor_(self, x, check, is_gen, construct, **kwds)\n    310                 x = x.Polrev()\n    311\n--> 312         return C(self, x, check, is_gen, construct=construct, **kwds)\n    313\n    314     def is_integral_domain(self, proof = True):\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element_generic.pyc in __init__(self, parent, x, check, is_gen, construct)\n    654\n    655         if check:\n--> 656             x = [QQ(z) for z in x]\n    657\n    658         self.__list = list(x)\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/rational.so in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:5781)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/rational.so in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:7052)()\n\nTypeError: Unable to coerce xbar (<class 'sage.rings.polynomial.polynomial_quotient_ring_element.PolynomialQuotientRingElement'>) to Rational\nsage: Q.gen()\nxbar\n```\n\n\nIt could be that the following is an additional bug, but perhaps it is just a special case of the previous:\n\n```\nsage: Q(str(Q.gen()))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (932, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (932, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/SAGE/sage-4.3.1/devel/<ipython console> in <module>()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_quotient_ring.pyc in __call__(self, x)\n    272                 return PolynomialQuotientRingElement(self, self.__ring(x.lift()), check=False)\n    273         return PolynomialQuotientRingElement(\n--> 274                         self, self.__ring(x) , check=True)\n    275\n    276     def _is_valid_homomorphism_(self, codomain, im_gens):\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.pyc in _element_constructor_(self, x, check, is_gen, construct, **kwds)\n    297                 R = self.base_ring()\n    298                 p = Parser(Integer, R, LookupNameMaker({self.variable_name(): self.gen()}, R))\n--> 299                 return self(p.parse(x))\n    300             except NameError:\n    301                 raise TypeError,\"Unable to coerce string\"\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.parse (sage/misc/parser.c:3481)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.parse (sage/misc/parser.c:3345)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_eqn (sage/misc/parser.c:5136)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_expr (sage/misc/parser.c:5456)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_term (sage/misc/parser.c:5681)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_factor (sage/misc/parser.c:6044)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_power (sage/misc/parser.c:6158)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.Parser.p_atom (sage/misc/parser.c:6711)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/misc/parser.so in sage.misc.parser.LookupNameMaker.__call__ (sage/misc/parser.c:7653)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/rational.so in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:5781)()\n\n/home/king/SAGE/sage-4.3.1/local/lib/python2.6/site-packages/sage/rings/rational.so in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:6517)()\n\nTypeError: unable to convert xbar to a rational\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8992\n\n",
     "created_at": "2010-05-19T10:26:01Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_008992.json:
     "title": "Coercion of univariate quotient polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8992",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 Keywords: coercion quotient ring
 
@@ -196,7 +196,7 @@ archive/issue_comments_083125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83125",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_083126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83126",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_083127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83127",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -265,16 +265,16 @@ A side remark: I just noticed that univariate quotient rings have no representat
 archive/issue_comments_083128.json:
 ```json
 {
-    "body": "Attachment [8992_coercion_for_polynomial_quotient_rings.patch](tarball://root/attachments/some-uuid/ticket8992/8992_coercion_for_polynomial_quotient_rings.patch) by SimonKing created at 2010-05-19 13:36:43\n\n_element_constructor_ and _coerce_map_from_ for polynomial quotient rings; may depend on #8800",
+    "body": "Attachment [8992_coercion_for_polynomial_quotient_rings.patch](tarball://root/attachments/some-uuid/ticket8992/8992_coercion_for_polynomial_quotient_rings.patch) by @simon-king-jena created at 2010-05-19 13:36:43\n\n_element_constructor_ and _coerce_map_from_ for polynomial quotient rings; may depend on #8800",
     "created_at": "2010-05-19T13:36:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83128",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [8992_coercion_for_polynomial_quotient_rings.patch](tarball://root/attachments/some-uuid/ticket8992/8992_coercion_for_polynomial_quotient_rings.patch) by SimonKing created at 2010-05-19 13:36:43
+Attachment [8992_coercion_for_polynomial_quotient_rings.patch](tarball://root/attachments/some-uuid/ticket8992/8992_coercion_for_polynomial_quotient_rings.patch) by @simon-king-jena created at 2010-05-19 13:36:43
 
 _element_constructor_ and _coerce_map_from_ for polynomial quotient rings; may depend on #8800
 
@@ -290,7 +290,7 @@ archive/issue_comments_083129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83129",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -366,16 +366,16 @@ I just realise that I forgot to provide a doc test for _coerce_map_from_. I will
 archive/issue_comments_083130.json:
 ```json
 {
-    "body": "Attachment [8992_test_for_coerce_map_from.patch](tarball://root/attachments/some-uuid/ticket8992/8992_test_for_coerce_map_from.patch) by SimonKing created at 2010-05-19 14:07:20\n\nAdditional doc test; to be applied after the previous patch",
+    "body": "Attachment [8992_test_for_coerce_map_from.patch](tarball://root/attachments/some-uuid/ticket8992/8992_test_for_coerce_map_from.patch) by @simon-king-jena created at 2010-05-19 14:07:20\n\nAdditional doc test; to be applied after the previous patch",
     "created_at": "2010-05-19T14:07:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83130",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [8992_test_for_coerce_map_from.patch](tarball://root/attachments/some-uuid/ticket8992/8992_test_for_coerce_map_from.patch) by SimonKing created at 2010-05-19 14:07:20
+Attachment [8992_test_for_coerce_map_from.patch](tarball://root/attachments/some-uuid/ticket8992/8992_test_for_coerce_map_from.patch) by @simon-king-jena created at 2010-05-19 14:07:20
 
 Additional doc test; to be applied after the previous patch
 
@@ -391,7 +391,7 @@ archive/issue_comments_083131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83131",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_083132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83132",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_083133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83133",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_083134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83134",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -463,7 +463,7 @@ archive/issue_comments_083135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83135",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_083136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83136",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_083137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83137",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_083138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83138",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -626,7 +626,7 @@ archive/issue_comments_083139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83139",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -644,7 +644,7 @@ archive/issue_comments_083140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83140",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -662,7 +662,7 @@ archive/issue_comments_083141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83141",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -684,7 +684,7 @@ archive/issue_comments_083142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83142",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -702,7 +702,7 @@ archive/issue_comments_083143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83143",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_083144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83144",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -740,7 +740,7 @@ archive/issue_comments_083145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83145",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -758,7 +758,7 @@ archive/issue_comments_083146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83146",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -776,7 +776,7 @@ archive/issue_comments_083147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83147",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -852,7 +852,7 @@ archive/issue_comments_083148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83148",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -873,7 +873,7 @@ archive/issue_comments_083149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83149",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -904,7 +904,7 @@ archive/issue_comments_083150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83150",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -925,16 +925,16 @@ Integer Ring
 archive/issue_comments_083151.json:
 ```json
 {
-    "body": "Attachment [trac8992_conversion_polynomial_quotient_ring.patch](tarball://root/attachments/some-uuid/ticket8992/trac8992_conversion_polynomial_quotient_ring.patch) by SimonKing created at 2012-05-31 08:39:25\n\nNew patch, replacing the old patches",
+    "body": "Attachment [trac8992_conversion_polynomial_quotient_ring.patch](tarball://root/attachments/some-uuid/ticket8992/trac8992_conversion_polynomial_quotient_ring.patch) by @simon-king-jena created at 2012-05-31 08:39:25\n\nNew patch, replacing the old patches",
     "created_at": "2012-05-31T08:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83151",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac8992_conversion_polynomial_quotient_ring.patch](tarball://root/attachments/some-uuid/ticket8992/trac8992_conversion_polynomial_quotient_ring.patch) by SimonKing created at 2012-05-31 08:39:25
+Attachment [trac8992_conversion_polynomial_quotient_ring.patch](tarball://root/attachments/some-uuid/ticket8992/trac8992_conversion_polynomial_quotient_ring.patch) by @simon-king-jena created at 2012-05-31 08:39:25
 
 New patch, replacing the old patches
 
@@ -950,7 +950,7 @@ archive/issue_comments_083152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83152",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -970,7 +970,7 @@ archive/issue_comments_083153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83153",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -988,7 +988,7 @@ archive/issue_comments_083154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83154",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1006,7 +1006,7 @@ archive/issue_comments_083155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83155",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1024,7 +1024,7 @@ archive/issue_comments_083156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83156",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1042,7 +1042,7 @@ archive/issue_comments_083157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8992#issuecomment-83157",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

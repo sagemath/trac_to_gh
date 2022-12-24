@@ -3,7 +3,7 @@
 archive/issues_007722.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nAnother one of the big holes we have to fill !\n\nIssue created by migration from https://trac.sagemath.org/ticket/7722\n\n",
+    "body": "Assignee: @rlmill\n\nAnother one of the big holes we have to fill !\n\nIssue created by migration from https://trac.sagemath.org/ticket/7722\n\n",
     "created_at": "2009-12-17T13:01:40Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007722.json:
     "title": "is_strongly_connected function for digraphs !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7722",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Another one of the big holes we have to fill !
 
@@ -37,7 +37,7 @@ archive/issue_comments_066335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7722#issuecomment-66335",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_066336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7722#issuecomment-66336",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

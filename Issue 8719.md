@@ -3,7 +3,7 @@
 archive/issues_008719.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  rbeezer\n\nThis patch makes the following work:\n\n\n```\n            sage: import numpy\n            sage: m = matrix(RDF, 2, range(6)); m\n            [0.0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.,  1.,  2.],\n            [ 3.,  4.,  5.]])\n            sage: numpy.array(m).dtype            \n            dtype('float64')\n            sage: m = matrix(CDF, 2, range(6)); m\n            [  0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.+0.j,  1.+0.j,  2.+0.j],\n            [ 3.+0.j,  4.+0.j,  5.+0.j]])\n            sage: numpy.array(m).dtype            \n            dtype('complex128')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8719\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @rbeezer\n\nThis patch makes the following work:\n\n\n```\n            sage: import numpy\n            sage: m = matrix(RDF, 2, range(6)); m\n            [0.0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.,  1.,  2.],\n            [ 3.,  4.,  5.]])\n            sage: numpy.array(m).dtype            \n            dtype('float64')\n            sage: m = matrix(CDF, 2, range(6)); m\n            [  0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.+0.j,  1.+0.j,  2.+0.j],\n            [ 3.+0.j,  4.+0.j,  5.+0.j]])\n            sage: numpy.array(m).dtype            \n            dtype('complex128')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8719\n\n",
     "created_at": "2010-04-20T00:07:17Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_008719.json:
     "title": "convert RDF/CDF matrices to numpy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8719",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  rbeezer
+CC:  @rbeezer
 
 This patch makes the following work:
 
@@ -61,7 +61,7 @@ archive/issue_comments_079592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79592",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,16 +74,16 @@ Changing status from new to needs_review.
 archive/issue_comments_079593.json:
 ```json
 {
-    "body": "Changing assignee from jason, was to jason.",
+    "body": "Changing assignee from jason, was to @jasongrout.",
     "created_at": "2010-05-03T19:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79593",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from jason, was to jason.
+Changing assignee from jason, was to @jasongrout.
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_079594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79594",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_079595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79595",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -136,16 +136,16 @@ Rob
 archive/issue_comments_079596.json:
 ```json
 {
-    "body": "Attachment [trac_8719-numpy-conversion.patch](tarball://root/attachments/some-uuid/ticket8719/trac_8719-numpy-conversion.patch) by jason created at 2010-05-04 05:11:23",
+    "body": "Attachment [trac_8719-numpy-conversion.patch](tarball://root/attachments/some-uuid/ticket8719/trac_8719-numpy-conversion.patch) by @jasongrout created at 2010-05-04 05:11:23",
     "created_at": "2010-05-04T05:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79596",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_8719-numpy-conversion.patch](tarball://root/attachments/some-uuid/ticket8719/trac_8719-numpy-conversion.patch) by jason created at 2010-05-04 05:11:23
+Attachment [trac_8719-numpy-conversion.patch](tarball://root/attachments/some-uuid/ticket8719/trac_8719-numpy-conversion.patch) by @jasongrout created at 2010-05-04 05:11:23
 
 
 
@@ -159,7 +159,7 @@ archive/issue_comments_079597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79597",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_079598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79598",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_079599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79599",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_079600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79600",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

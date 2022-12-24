@@ -3,7 +3,7 @@
 archive/issues_008761.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  kcrisman jhpalmieri boothby\n\nFirst, see this screenshot:\n   http://sage.math.washington.edu/home/wstein/tmp/button.png\n\nNow imagine that when you push either of the buttons, the interact is triggered and the button comes back up (it does not get *stuck* down as a selector).  \n\nWhen the interact triggers calling of the function, if this is triggered by a button being clicked then the corresponding variable is set to the value of that button (usually the text label).  Otherwise, the variable is set to None.  Then interact applications can tell if a button being pushed triggered the function being called based on whether or not the variable is None.\n\n\n```\n@interact\ndef f(X = button(['Ok', 'Cancel', \"Continue\"])):\n    print X\n```\n\n\nNotice that button is much like selector with buttons=True...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8761\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman @jhpalmieri boothby\n\nFirst, see this screenshot:\n   http://sage.math.washington.edu/home/wstein/tmp/button.png\n\nNow imagine that when you push either of the buttons, the interact is triggered and the button comes back up (it does not get *stuck* down as a selector).  \n\nWhen the interact triggers calling of the function, if this is triggered by a button being clicked then the corresponding variable is set to the value of that button (usually the text label).  Otherwise, the variable is set to None.  Then interact applications can tell if a button being pushed triggered the function being called based on whether or not the variable is None.\n\n\n```\n@interact\ndef f(X = button(['Ok', 'Cancel', \"Continue\"])):\n    print X\n```\n\n\nNotice that button is much like selector with buttons=True...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8761\n\n",
     "created_at": "2010-04-25T01:11:12Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008761.json:
     "title": "sage notebook: make a new interact control (like selector) that really works like a button",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8761",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
 
-CC:  kcrisman jhpalmieri boothby
+CC:  @kcrisman @jhpalmieri boothby
 
 First, see this screenshot:
    http://sage.math.washington.edu/home/wstein/tmp/button.png
@@ -54,7 +54,7 @@ archive/issue_comments_080157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8761#issuecomment-80157",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_080158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8761#issuecomment-80158",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_080159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8761#issuecomment-80159",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_080160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8761#issuecomment-80160",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_080161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8761#issuecomment-80161",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

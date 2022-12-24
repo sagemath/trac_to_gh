@@ -14,7 +14,7 @@ archive/issues_004626.json:
     "title": "error in bessel_J(0,0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4626",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: somebody
@@ -71,7 +71,7 @@ archive/issue_comments_034783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34783",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_034784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34784",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_034785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34785",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -159,16 +159,16 @@ Changing status from new to assigned.
 archive/issue_comments_034786.json:
 ```json
 {
-    "body": "Changing assignee from somebody to rlm.",
+    "body": "Changing assignee from somebody to @rlmill.",
     "created_at": "2009-01-22T06:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34786",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from somebody to rlm.
+Changing assignee from somebody to @rlmill.
 
 
 
@@ -182,7 +182,7 @@ archive/issue_comments_034787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34787",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_034788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34788",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_034789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34789",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_034790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34790",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -268,16 +268,16 @@ and make clear in the documentation which argument types are allowed.
 archive/issue_comments_034791.json:
 ```json
 {
-    "body": "Attachment [trac_4626-bessel_J_ints.patch](tarball://root/attachments/some-uuid/ticket4626/trac_4626-bessel_J_ints.patch) by rlm created at 2009-01-22 16:40:18\n\nFixed.",
+    "body": "Attachment [trac_4626-bessel_J_ints.patch](tarball://root/attachments/some-uuid/ticket4626/trac_4626-bessel_J_ints.patch) by @rlmill created at 2009-01-22 16:40:18\n\nFixed.",
     "created_at": "2009-01-22T16:40:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34791",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_4626-bessel_J_ints.patch](tarball://root/attachments/some-uuid/ticket4626/trac_4626-bessel_J_ints.patch) by rlm created at 2009-01-22 16:40:18
+Attachment [trac_4626-bessel_J_ints.patch](tarball://root/attachments/some-uuid/ticket4626/trac_4626-bessel_J_ints.patch) by @rlmill created at 2009-01-22 16:40:18
 
 Fixed.
 
@@ -293,7 +293,7 @@ archive/issue_comments_034792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34792",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

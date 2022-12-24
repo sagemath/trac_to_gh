@@ -14,7 +14,7 @@ archive/issues_006127.json:
     "title": "[with patch; needs review] fix trivial typo in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6127",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6127
 archive/issue_comments_048952.json:
 ```json
 {
-    "body": "Attachment [trac_6127.patch](tarball://root/attachments/some-uuid/ticket6127/trac_6127.patch) by was created at 2009-05-25 01:14:34",
+    "body": "Attachment [trac_6127.patch](tarball://root/attachments/some-uuid/ticket6127/trac_6127.patch) by @williamstein created at 2009-05-25 01:14:34",
     "created_at": "2009-05-25T01:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6127#issuecomment-48952",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6127.patch](tarball://root/attachments/some-uuid/ticket6127/trac_6127.patch) by was created at 2009-05-25 01:14:34
+Attachment [trac_6127.patch](tarball://root/attachments/some-uuid/ticket6127/trac_6127.patch) by @williamstein created at 2009-05-25 01:14:34
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_048953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6127#issuecomment-48953",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_048954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6127#issuecomment-48954",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

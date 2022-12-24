@@ -3,7 +3,7 @@
 archive/issues_008866.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhansen burcin kcrisman rbeezer\n\nHere is a rough patch which enables the following:\n\n\n```\nsage: T(r,theta)=[r*cos(theta),r*sin(theta)]\nsage: T\n((r, theta) |--> r*cos(theta), (r, theta) |--> r*sin(theta))\nsage: T.diff() # Jacobian matrix\n[   (r, theta) |--> cos(theta) (r, theta) |--> -r*sin(theta)]\n[   (r, theta) |--> sin(theta)  (r, theta) |--> r*cos(theta)]\nsage: diff(T) # Jacobian matrix\n[   (r, theta) |--> cos(theta) (r, theta) |--> -r*sin(theta)]\n[   (r, theta) |--> sin(theta)  (r, theta) |--> r*cos(theta)]\nsage: T.diff().det() # Jacobian \n(r, theta) |--> r*sin(theta)^2 + r*cos(theta)^2\n\nsage: f(x,y)=x^2+y\nsage: f.diff() # gradient\n((x, y) |--> 2*x, (x, y) |--> 1)\nsage: f.diff().diff() # Hessian matrix\n[(x, y) |--> 2 (x, y) |--> 0]\n[(x, y) |--> 0 (x, y) |--> 0]\nsage: r(t)=[cos(t),sin(t)]\nsage: parametric_plot(r(t), (t,0,2*pi))\n\nsage: # multivariable 2nd derivative test\nsage: f(x,y)=x^2*y+y^2+y\nsage: f.diff() # gradient\n((x, y) |--> 2*x*y, (x, y) |--> x^2 + 2*y + 1)\nsage: solve(list(f.diff()),[x,y])\n[[x == -I, y == 0], [x == I, y == 0], [x == 0, y == (-1/2)]]\nsage: f.diff(2)  # Hessian matrix\n[(x, y) |--> 2*y (x, y) |--> 2*x]\n[(x, y) |--> 2*x   (x, y) |--> 2]\nsage: f.diff(2)(x=0,y=-1/2)\n[-1  0]\n[ 0  2]\nsage: f.diff(2)(x=0,y=-1/2).eigenvalues()\n[-1, 2]\nsage: # we have a saddle point\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8866\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen @burcin @kcrisman @rbeezer\n\nHere is a rough patch which enables the following:\n\n\n```\nsage: T(r,theta)=[r*cos(theta),r*sin(theta)]\nsage: T\n((r, theta) |--> r*cos(theta), (r, theta) |--> r*sin(theta))\nsage: T.diff() # Jacobian matrix\n[   (r, theta) |--> cos(theta) (r, theta) |--> -r*sin(theta)]\n[   (r, theta) |--> sin(theta)  (r, theta) |--> r*cos(theta)]\nsage: diff(T) # Jacobian matrix\n[   (r, theta) |--> cos(theta) (r, theta) |--> -r*sin(theta)]\n[   (r, theta) |--> sin(theta)  (r, theta) |--> r*cos(theta)]\nsage: T.diff().det() # Jacobian \n(r, theta) |--> r*sin(theta)^2 + r*cos(theta)^2\n\nsage: f(x,y)=x^2+y\nsage: f.diff() # gradient\n((x, y) |--> 2*x, (x, y) |--> 1)\nsage: f.diff().diff() # Hessian matrix\n[(x, y) |--> 2 (x, y) |--> 0]\n[(x, y) |--> 0 (x, y) |--> 0]\nsage: r(t)=[cos(t),sin(t)]\nsage: parametric_plot(r(t), (t,0,2*pi))\n\nsage: # multivariable 2nd derivative test\nsage: f(x,y)=x^2*y+y^2+y\nsage: f.diff() # gradient\n((x, y) |--> 2*x*y, (x, y) |--> x^2 + 2*y + 1)\nsage: solve(list(f.diff()),[x,y])\n[[x == -I, y == 0], [x == I, y == 0], [x == 0, y == (-1/2)]]\nsage: f.diff(2)  # Hessian matrix\n[(x, y) |--> 2*y (x, y) |--> 2*x]\n[(x, y) |--> 2*x   (x, y) |--> 2]\nsage: f.diff(2)(x=0,y=-1/2)\n[-1  0]\n[ 0  2]\nsage: f.diff(2)(x=0,y=-1/2).eigenvalues()\n[-1, 2]\nsage: # we have a saddle point\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8866\n\n",
     "created_at": "2010-05-04T03:14:57Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_008866.json:
     "title": "preparse vector-valued functions and derivatives",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8866",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mhansen burcin kcrisman rbeezer
+CC:  @mwhansen @burcin @kcrisman @rbeezer
 
 Here is a rough patch which enables the following:
 
@@ -81,7 +81,7 @@ archive/issue_comments_081473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81473",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_081474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81474",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -112,16 +112,16 @@ Right now, all the docs are wrong or missing for the added functionality.
 archive/issue_comments_081475.json:
 ```json
 {
-    "body": "Attachment [trac-8866-preparse-vector-functions-derivatives.patch](tarball://root/attachments/some-uuid/ticket8866/trac-8866-preparse-vector-functions-derivatives.patch) by jason created at 2010-05-04 03:57:15",
+    "body": "Attachment [trac-8866-preparse-vector-functions-derivatives.patch](tarball://root/attachments/some-uuid/ticket8866/trac-8866-preparse-vector-functions-derivatives.patch) by @jasongrout created at 2010-05-04 03:57:15",
     "created_at": "2010-05-04T03:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81475",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8866-preparse-vector-functions-derivatives.patch](tarball://root/attachments/some-uuid/ticket8866/trac-8866-preparse-vector-functions-derivatives.patch) by jason created at 2010-05-04 03:57:15
+Attachment [trac-8866-preparse-vector-functions-derivatives.patch](tarball://root/attachments/some-uuid/ticket8866/trac-8866-preparse-vector-functions-derivatives.patch) by @jasongrout created at 2010-05-04 03:57:15
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_081476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81476",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_081477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81477",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_081478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81478",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_081479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81479",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_081480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81480",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_081481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81481",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_081482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81482",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_081483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81483",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

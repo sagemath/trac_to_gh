@@ -3,7 +3,7 @@
 archive/issues_009387.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nKeywords: elliptic curve, tamagawa number\n\nElliptic curves over the rationals have a method that returns a list of tamagawa numbers for the curve.  There is no such method in the case of number fields.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9387\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: elliptic curve, tamagawa number\n\nElliptic curves over the rationals have a method that returns a list of tamagawa numbers for the curve.  There is no such method in the case of number fields.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9387\n\n",
     "created_at": "2010-06-29T23:32:43Z",
     "labels": [
         "elliptic curves",
@@ -17,7 +17,7 @@ archive/issues_009387.json:
     "user": "justin"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Keywords: elliptic curve, tamagawa number
 
@@ -94,7 +94,7 @@ archive/issue_comments_089342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9387#issuecomment-89342",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_089343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9387#issuecomment-89343",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_089344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9387#issuecomment-89344",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_089346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9387#issuecomment-89346",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_089347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9387#issuecomment-89347",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_089352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9387#issuecomment-89352",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_089353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9387#issuecomment-89353",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_089354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9387#issuecomment-89354",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

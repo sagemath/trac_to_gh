@@ -14,7 +14,7 @@ archive/issues_000622.json:
     "title": "SAGE's factor function is not provably correct",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/622",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -64,16 +64,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/622
 archive/issue_comments_003199.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2007-09-12T16:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/622#issuecomment-3199",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -82,16 +82,16 @@ Changing assignee from somebody to was.
 archive/issue_comments_003200.json:
 ```json
 {
-    "body": "Attachment [6288.patch](tarball://root/attachments/some-uuid/ticket622/6288.patch) by was created at 2007-09-12 18:32:38\n\nthis should fix the problem pretty well",
+    "body": "Attachment [6288.patch](tarball://root/attachments/some-uuid/ticket622/6288.patch) by @williamstein created at 2007-09-12 18:32:38\n\nthis should fix the problem pretty well",
     "created_at": "2007-09-12T18:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/622#issuecomment-3200",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [6288.patch](tarball://root/attachments/some-uuid/ticket622/6288.patch) by was created at 2007-09-12 18:32:38
+Attachment [6288.patch](tarball://root/attachments/some-uuid/ticket622/6288.patch) by @williamstein created at 2007-09-12 18:32:38
 
 this should fix the problem pretty well
 
@@ -107,7 +107,7 @@ archive/issue_comments_003201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/622#issuecomment-3201",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003328.json:
     "title": "minor fix rpy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3328",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 Assignee: mabshoff
@@ -59,16 +59,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3328
 archive/issue_comments_023079.json:
 ```json
 {
-    "body": "Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3328/spkg-install.patch) by fbissey created at 2008-05-29 09:38:48",
+    "body": "Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3328/spkg-install.patch) by @kiwifb created at 2008-05-29 09:38:48",
     "created_at": "2008-05-29T09:38:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3328#issuecomment-23079",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3328/spkg-install.patch) by fbissey created at 2008-05-29 09:38:48
+Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3328/spkg-install.patch) by @kiwifb created at 2008-05-29 09:38:48
 
 
 
@@ -77,16 +77,16 @@ Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3328/
 archive/issue_comments_023080.json:
 ```json
 {
-    "body": "Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket3328/sage-env.patch) by fbissey created at 2008-05-29 09:39:18",
+    "body": "Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket3328/sage-env.patch) by @kiwifb created at 2008-05-29 09:39:18",
     "created_at": "2008-05-29T09:39:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3328#issuecomment-23080",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket3328/sage-env.patch) by fbissey created at 2008-05-29 09:39:18
+Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket3328/sage-env.patch) by @kiwifb created at 2008-05-29 09:39:18
 
 
 

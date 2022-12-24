@@ -3,7 +3,7 @@
 archive/issues_004932.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4932\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4932\n\n",
     "created_at": "2009-01-03T06:25:33Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004932.json:
     "title": "fix solve_left_LU for matrix_double_dense, which was totally broken forever (?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4932",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_037413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37413",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_037414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37414",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -124,16 +124,16 @@ Changing status from new to assigned.
 archive/issue_comments_037415.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2009-01-03T08:08:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37415",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_037416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37416",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_037417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37417",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_037418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37418",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_037423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37423",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_037424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37424",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_037425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37425",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_037426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37426",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -393,16 +393,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_037427.json:
 ```json
 {
-    "body": "Attachment [trac_4932-remove-solve-left-LU.patch](tarball://root/attachments/some-uuid/ticket4932/trac_4932-remove-solve-left-LU.patch) by rbeezer created at 2011-02-24 22:46:37\n\nThis routine needs lots of work, has been \"Not Implemented\" for a long time, and with two routines for solving systems available (#7852), this should be removed.  Patch does just that.",
+    "body": "Attachment [trac_4932-remove-solve-left-LU.patch](tarball://root/attachments/some-uuid/ticket4932/trac_4932-remove-solve-left-LU.patch) by @rbeezer created at 2011-02-24 22:46:37\n\nThis routine needs lots of work, has been \"Not Implemented\" for a long time, and with two routines for solving systems available (#7852), this should be removed.  Patch does just that.",
     "created_at": "2011-02-24T22:46:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37427",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_4932-remove-solve-left-LU.patch](tarball://root/attachments/some-uuid/ticket4932/trac_4932-remove-solve-left-LU.patch) by rbeezer created at 2011-02-24 22:46:37
+Attachment [trac_4932-remove-solve-left-LU.patch](tarball://root/attachments/some-uuid/ticket4932/trac_4932-remove-solve-left-LU.patch) by @rbeezer created at 2011-02-24 22:46:37
 
 This routine needs lots of work, has been "Not Implemented" for a long time, and with two routines for solving systems available (#7852), this should be removed.  Patch does just that.
 
@@ -418,7 +418,7 @@ archive/issue_comments_037428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37428",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_037429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37429",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -463,7 +463,7 @@ archive/issue_comments_037430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37430",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_037431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37431",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_037432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37432",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_037433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37433",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_037434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4932#issuecomment-37434",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

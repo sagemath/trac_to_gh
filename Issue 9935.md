@@ -14,7 +14,7 @@ archive/issues_009935.json:
     "title": "add sage.symbolic.function_factory to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9935",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mvngu
@@ -91,7 +91,7 @@ archive/issue_comments_098921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9935#issuecomment-98921",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_098922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9935#issuecomment-98922",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_098923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9935#issuecomment-98923",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

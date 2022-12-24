@@ -14,7 +14,7 @@ archive/issues_008153.json:
     "title": "[with patch] typo in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8153",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: mvngu
@@ -57,7 +57,7 @@ archive/issue_comments_071681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8153#issuecomment-71681",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_071682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8153#issuecomment-71682",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_071688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8153#issuecomment-71688",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_071689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8153#issuecomment-71689",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

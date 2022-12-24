@@ -14,7 +14,7 @@ archive/issues_005980.json:
     "title": "In sage-3.4.2.final on 32 bits there is a failure in prime_pi()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5980",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: mabshoff

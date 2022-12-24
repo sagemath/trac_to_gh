@@ -46,7 +46,7 @@ archive/issue_comments_001384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/293#issuecomment-1384",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_001385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/293#issuecomment-1385",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_001386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/293#issuecomment-1386",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,16 +127,16 @@ Changing priority from major to blocker.
 archive/issue_comments_001387.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2007-08-19T01:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/293#issuecomment-1387",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -150,7 +150,7 @@ archive/issue_comments_001388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/293#issuecomment-1388",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -163,16 +163,16 @@ patch to remove all uses of FAST_SEQ_UNSAFE
 archive/issue_comments_001389.json:
 ```json
 {
-    "body": "Attachment [no-FAST_SEQ_UNSAFE.patch](tarball://root/attachments/some-uuid/ticket293/no-FAST_SEQ_UNSAFE.patch) by robertwb created at 2007-08-19 07:54:24",
+    "body": "Attachment [no-FAST_SEQ_UNSAFE.patch](tarball://root/attachments/some-uuid/ticket293/no-FAST_SEQ_UNSAFE.patch) by @robertwb created at 2007-08-19 07:54:24",
     "created_at": "2007-08-19T07:54:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/293#issuecomment-1389",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [no-FAST_SEQ_UNSAFE.patch](tarball://root/attachments/some-uuid/ticket293/no-FAST_SEQ_UNSAFE.patch) by robertwb created at 2007-08-19 07:54:24
+Attachment [no-FAST_SEQ_UNSAFE.patch](tarball://root/attachments/some-uuid/ticket293/no-FAST_SEQ_UNSAFE.patch) by @robertwb created at 2007-08-19 07:54:24
 
 
 
@@ -186,7 +186,7 @@ archive/issue_comments_001390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/293#issuecomment-1390",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

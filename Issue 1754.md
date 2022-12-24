@@ -3,7 +3,7 @@
 archive/issues_001754.json:
 ```json
 {
-    "body": "Assignee: yi\n\nKeywords: gnutls https ssl\n\nUsing the latest beta version of firefox 3, if one tries to connect to the notebook via ssl, the following happens as outlined in the screenshots. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1754\n\n",
+    "body": "Assignee: @yqiang\n\nKeywords: gnutls https ssl\n\nUsing the latest beta version of firefox 3, if one tries to connect to the notebook via ssl, the following happens as outlined in the screenshots. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1754\n\n",
     "created_at": "2008-01-11T00:44:18Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_001754.json:
     "title": "gnutls self signed certificates do not work with firefox 3 (pre-beta 3)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1754",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 Keywords: gnutls https ssl
 
@@ -40,7 +40,7 @@ archive/issue_comments_011064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1754#issuecomment-11064",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -53,16 +53,16 @@ What happens when you connect to the notebook server.
 archive/issue_comments_011065.json:
 ```json
 {
-    "body": "Attachment [firefox_gnutls_1.png](tarball://root/attachments/some-uuid/ticket1754/firefox_gnutls_1.png) by yi created at 2008-01-11 00:45:18\n\nSecurity dialogue box",
+    "body": "Attachment [firefox_gnutls_1.png](tarball://root/attachments/some-uuid/ticket1754/firefox_gnutls_1.png) by @yqiang created at 2008-01-11 00:45:18\n\nSecurity dialogue box",
     "created_at": "2008-01-11T00:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1754#issuecomment-11065",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [firefox_gnutls_1.png](tarball://root/attachments/some-uuid/ticket1754/firefox_gnutls_1.png) by yi created at 2008-01-11 00:45:18
+Attachment [firefox_gnutls_1.png](tarball://root/attachments/some-uuid/ticket1754/firefox_gnutls_1.png) by @yqiang created at 2008-01-11 00:45:18
 
 Security dialogue box
 
@@ -73,16 +73,16 @@ Security dialogue box
 archive/issue_comments_011066.json:
 ```json
 {
-    "body": "Attachment [firefox_gnutls_3.png](tarball://root/attachments/some-uuid/ticket1754/firefox_gnutls_3.png) by yi created at 2008-01-11 00:45:45\n\nError message",
+    "body": "Attachment [firefox_gnutls_3.png](tarball://root/attachments/some-uuid/ticket1754/firefox_gnutls_3.png) by @yqiang created at 2008-01-11 00:45:45\n\nError message",
     "created_at": "2008-01-11T00:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1754#issuecomment-11066",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [firefox_gnutls_3.png](tarball://root/attachments/some-uuid/ticket1754/firefox_gnutls_3.png) by yi created at 2008-01-11 00:45:45
+Attachment [firefox_gnutls_3.png](tarball://root/attachments/some-uuid/ticket1754/firefox_gnutls_3.png) by @yqiang created at 2008-01-11 00:45:45
 
 Error message
 
@@ -165,7 +165,7 @@ archive/issue_comments_011070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1754#issuecomment-11070",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_011074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1754#issuecomment-11074",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

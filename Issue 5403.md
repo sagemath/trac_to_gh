@@ -14,7 +14,7 @@ archive/issues_005403.json:
     "title": "fix \"from ... import *\" in class QuadraticForm (cf #4470)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5403",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 Assignee: mabshoff
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5403
 archive/issue_comments_041739.json:
 ```json
 {
-    "body": "Attachment [patch.QF.fix_import_star](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star) by tornaria created at 2009-02-28 21:31:14\n\npatch to fix import * issues in quadratic forms",
+    "body": "Attachment [patch.QF.fix_import_star](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star) by @tornaria created at 2009-02-28 21:31:14\n\npatch to fix import * issues in quadratic forms",
     "created_at": "2009-02-28T21:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5403#issuecomment-41739",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [patch.QF.fix_import_star](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star) by tornaria created at 2009-02-28 21:31:14
+Attachment [patch.QF.fix_import_star](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star) by @tornaria created at 2009-02-28 21:31:14
 
 patch to fix import * issues in quadratic forms
 
@@ -59,7 +59,7 @@ archive/issue_comments_041740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5403#issuecomment-41740",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_041741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5403#issuecomment-41741",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -90,16 +90,16 @@ Changing status from new to assigned.
 archive/issue_comments_041742.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to tornaria.",
+    "body": "Changing assignee from mabshoff to @tornaria.",
     "created_at": "2009-02-28T22:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5403#issuecomment-41742",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Changing assignee from mabshoff to tornaria.
+Changing assignee from mabshoff to @tornaria.
 
 
 
@@ -108,16 +108,16 @@ Changing assignee from mabshoff to tornaria.
 archive/issue_comments_041743.json:
 ```json
 {
-    "body": "Attachment [patch.QF.fix_import_star.2nd](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star.2nd) by tornaria created at 2009-02-28 22:54:25\n\n2nd version of the patch, stilll some issue with deepcopy",
+    "body": "Attachment [patch.QF.fix_import_star.2nd](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star.2nd) by @tornaria created at 2009-02-28 22:54:25\n\n2nd version of the patch, stilll some issue with deepcopy",
     "created_at": "2009-02-28T22:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5403#issuecomment-41743",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [patch.QF.fix_import_star.2nd](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star.2nd) by tornaria created at 2009-02-28 22:54:25
+Attachment [patch.QF.fix_import_star.2nd](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star.2nd) by @tornaria created at 2009-02-28 22:54:25
 
 2nd version of the patch, stilll some issue with deepcopy
 
@@ -170,16 +170,16 @@ Michael
 archive/issue_comments_041746.json:
 ```json
 {
-    "body": "Attachment [patch.QF.fix_import_star.3rd](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star.3rd) by tornaria created at 2009-03-01 04:15:26\n\n3rd version of the patch, tests pass now",
+    "body": "Attachment [patch.QF.fix_import_star.3rd](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star.3rd) by @tornaria created at 2009-03-01 04:15:26\n\n3rd version of the patch, tests pass now",
     "created_at": "2009-03-01T04:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5403#issuecomment-41746",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [patch.QF.fix_import_star.3rd](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star.3rd) by tornaria created at 2009-03-01 04:15:26
+Attachment [patch.QF.fix_import_star.3rd](tarball://root/attachments/some-uuid/ticket5403/patch.QF.fix_import_star.3rd) by @tornaria created at 2009-03-01 04:15:26
 
 3rd version of the patch, tests pass now
 
@@ -195,7 +195,7 @@ archive/issue_comments_041747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5403#issuecomment-41747",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -210,16 +210,16 @@ All quadratic_form tests pass with this patch applied (NOT incremental, just get
 archive/issue_comments_041748.json:
 ```json
 {
-    "body": "Changing assignee from tornaria to mabshoff.",
+    "body": "Changing assignee from @tornaria to mabshoff.",
     "created_at": "2009-03-01T04:17:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5403#issuecomment-41748",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Changing assignee from tornaria to mabshoff.
+Changing assignee from @tornaria to mabshoff.
 
 
 
@@ -233,7 +233,7 @@ archive/issue_comments_041749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5403#issuecomment-41749",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_041750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5403#issuecomment-41750",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -264,16 +264,16 @@ Changing status from new to assigned.
 archive/issue_comments_041751.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to tornaria.",
+    "body": "Changing assignee from mabshoff to @tornaria.",
     "created_at": "2009-03-01T04:21:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5403#issuecomment-41751",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Changing assignee from mabshoff to tornaria.
+Changing assignee from mabshoff to @tornaria.
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_002609.json:
 ```json
 {
-    "body": "Assignee: was\n\nGenerators for Gamma0, Gamma1 and GammaH.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2609\n\n",
+    "body": "Assignee: @williamstein\n\nGenerators for Gamma0, Gamma1 and GammaH.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2609\n\n",
     "created_at": "2008-03-20T08:56:45Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_002609.json:
     "title": "[with patch, needs review] generators for congruence subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2609",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Generators for Gamma0, Gamma1 and GammaH.
 
@@ -37,7 +37,7 @@ archive/issue_comments_017906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17906",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_017907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17907",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_017908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17908",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_017909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17909",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_017910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17910",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_017911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17911",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

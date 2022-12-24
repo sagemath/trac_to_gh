@@ -3,7 +3,7 @@
 archive/issues_001062.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  vdelecroix jdemeyer slelievre\n\n\n```\n<wstein> \n The new ?? help looks quite nice. It would\n be good for gp.foo? to use it.\n```\n\n\nThe idea is that\n\n```\nsage: foo = gp(x)\nsage: foo.polroots?\n```\n\n\nshould use the help text from the gp command `??polroots`.\n\nThe obvious approach is to change '?%s' to '??%s' in gp.py's help() method.  This doesn't quite work, for two reasons:\n\n1) gphelp carefully formats the text to fit in the current line width, and then Sage displays this text indented; so almost every line wraps.\n\n2) gphelp uses control characters to make words bold, underlined, etc.; when the help is viewed from the notebook, these control codes are visible in the output, and look very ugly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1062\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @videlec @jdemeyer @slel\n\n\n```\n<wstein> \n The new ?? help looks quite nice. It would\n be good for gp.foo? to use it.\n```\n\n\nThe idea is that\n\n```\nsage: foo = gp(x)\nsage: foo.polroots?\n```\n\n\nshould use the help text from the gp command `??polroots`.\n\nThe obvious approach is to change '?%s' to '??%s' in gp.py's help() method.  This doesn't quite work, for two reasons:\n\n1) gphelp carefully formats the text to fit in the current line width, and then Sage displays this text indented; so almost every line wraps.\n\n2) gphelp uses control characters to make words bold, underlined, etc.; when the help is viewed from the notebook, these control codes are visible in the output, and look very ugly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1062\n\n",
     "created_at": "2007-11-02T01:31:09Z",
     "labels": [
         "interfaces",
@@ -17,9 +17,9 @@ archive/issues_001062.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  vdelecroix jdemeyer slelievre
+CC:  @videlec @jdemeyer @slel
 
 
 ```
@@ -61,7 +61,7 @@ archive/issue_comments_006449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6449",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_006450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6450",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_006451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6451",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_006452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6452",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_006453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6453",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_006454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6454",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_006455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1062#issuecomment-6455",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

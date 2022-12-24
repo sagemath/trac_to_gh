@@ -3,7 +3,7 @@
 archive/issues_007335.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\nIt fails with the following error\n\n\n```\ncc1: error: unrecognized command line option \"-mpentium\"\n```\n\n\nThe fix is simply to simply remove that part of the flags from the Make-arch file for the win32 target.\n\nI will post an updated spkg shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7335\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nIt fails with the following error\n\n\n```\ncc1: error: unrecognized command line option \"-mpentium\"\n```\n\n\nThe fix is simply to simply remove that part of the flags from the Make-arch file for the win32 target.\n\nI will post an updated spkg shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7335\n\n",
     "created_at": "2009-10-28T19:33:41Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_007335.json:
     "title": "tachyon fails to build on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7335",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 It fails with the following error
 
@@ -49,7 +49,7 @@ archive/issue_comments_061377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7335#issuecomment-61377",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_061378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7335#issuecomment-61378",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_061379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7335#issuecomment-61379",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_061380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7335#issuecomment-61380",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_061381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7335#issuecomment-61381",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_061382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7335#issuecomment-61382",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

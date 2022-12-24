@@ -14,7 +14,7 @@ archive/issues_002782.json:
     "title": "notebook: Make it so the default reference manual, etc., is static instead of dynamic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2782",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -39,7 +39,7 @@ archive/issue_comments_019104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2782#issuecomment-19104",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_019105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2782#issuecomment-19105",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

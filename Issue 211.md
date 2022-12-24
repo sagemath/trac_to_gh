@@ -14,7 +14,7 @@ archive/issues_000211.json:
     "title": "speed up polynomial root finding",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/211",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -102,7 +102,7 @@ archive/issue_comments_000945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/211#issuecomment-945",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_000946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/211#issuecomment-946",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_000947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/211#issuecomment-947",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

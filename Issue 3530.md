@@ -3,7 +3,7 @@
 archive/issues_003530.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  craigcitro wstein\n\nKeywords: cython, documentation\n\nCraig wrote off list:\n> hey martin -- william tells me you created these pragmas for .spyx\n> files. can you document them somewhere?\n\nThis patch documents the pragmas in the docstring. I also changed the behaviour of atlas() which now assumes that ATLAS is installed, since we ship it. mabshoff/wstein please check if my assumption is correct e.g. on OSX.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3530\n\n",
+    "body": "Assignee: @malb\n\nCC:  @craigcitro wstein\n\nKeywords: cython, documentation\n\nCraig wrote off list:\n> hey martin -- william tells me you created these pragmas for .spyx\n> files. can you document them somewhere?\n\nThis patch documents the pragmas in the docstring. I also changed the behaviour of atlas() which now assumes that ATLAS is installed, since we ship it. mabshoff/wstein please check if my assumption is correct e.g. on OSX.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3530\n\n",
     "created_at": "2008-06-28T14:45:26Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_003530.json:
     "title": "[with patch, needs review] documentation for clib, cinclude pragmas",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3530",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  craigcitro wstein
+CC:  @craigcitro wstein
 
 Keywords: cython, documentation
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3530
 archive/issue_comments_024896.json:
 ```json
 {
-    "body": "Attachment [clib_pragmas.patch](tarball://root/attachments/some-uuid/ticket3530/clib_pragmas.patch) by malb created at 2008-06-28 14:45:47",
+    "body": "Attachment [clib_pragmas.patch](tarball://root/attachments/some-uuid/ticket3530/clib_pragmas.patch) by @malb created at 2008-06-28 14:45:47",
     "created_at": "2008-06-28T14:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3530#issuecomment-24896",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [clib_pragmas.patch](tarball://root/attachments/some-uuid/ticket3530/clib_pragmas.patch) by malb created at 2008-06-28 14:45:47
+Attachment [clib_pragmas.patch](tarball://root/attachments/some-uuid/ticket3530/clib_pragmas.patch) by @malb created at 2008-06-28 14:45:47
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_024897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3530#issuecomment-24897",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_024898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3530#issuecomment-24898",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_024899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3530#issuecomment-24899",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_024901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3530#issuecomment-24901",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_024906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3530#issuecomment-24906",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

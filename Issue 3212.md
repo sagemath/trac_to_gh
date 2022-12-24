@@ -3,7 +3,7 @@
 archive/issues_003212.json:
 ```json
 {
-    "body": "Assignee: was\n\nCurrently, rescale_row and rescale_col don't allow you to rescale by something mathematically right but outside the current matrix base ring.  Discussion from sage-devel follows.\n\n> Under the current scaling code, this happens: \n> sage: N.rescale_col(2,i/2) \n> --------------------------------------------------------------------------- \n> <type 'exceptions.TypeError'>             Traceback (most recent call \n> last) \n> <snip> \n> <type 'exceptions.TypeError'>: unable to convert I/2 to a rational \n\n\nYep, this is orthogonal.  You're just suggesting that scale_row \nbe improved. \n> What I am wondering is whether throwing an exception of TypeError \n> under the current code should be replaced by a try statement first \n> attempting N.changering(??) . The problem is I have no idea what to \n> use for ??, because unfortunately i/2 lives in Symbolic Ring, not in \n> CC, so I can't just put in ??=parent(i/2). \n\n\nThe Sequence constructor is the canonical answer to this question. \nGiven any list v of Sage object it will find a canonical place to put \nthem all: \nsage: v = [3, I/2] \nsage: w = Sequence(v) \nsage: w \n[3, I/2] \nsage: w.universe() \nSymbolic Ring\n\nIssue created by migration from https://trac.sagemath.org/ticket/3212\n\n",
+    "body": "Assignee: @williamstein\n\nCurrently, rescale_row and rescale_col don't allow you to rescale by something mathematically right but outside the current matrix base ring.  Discussion from sage-devel follows.\n\n> Under the current scaling code, this happens: \n> sage: N.rescale_col(2,i/2) \n> --------------------------------------------------------------------------- \n> <type 'exceptions.TypeError'>             Traceback (most recent call \n> last) \n> <snip> \n> <type 'exceptions.TypeError'>: unable to convert I/2 to a rational \n\n\nYep, this is orthogonal.  You're just suggesting that scale_row \nbe improved. \n> What I am wondering is whether throwing an exception of TypeError \n> under the current code should be replaced by a try statement first \n> attempting N.changering(??) . The problem is I have no idea what to \n> use for ??, because unfortunately i/2 lives in Symbolic Ring, not in \n> CC, so I can't just put in ??=parent(i/2). \n\n\nThe Sequence constructor is the canonical answer to this question. \nGiven any list v of Sage object it will find a canonical place to put \nthem all: \nsage: v = [3, I/2] \nsage: w = Sequence(v) \nsage: w \n[3, I/2] \nsage: w.universe() \nSymbolic Ring\n\nIssue created by migration from https://trac.sagemath.org/ticket/3212\n\n",
     "created_at": "2008-05-15T16:31:37Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003212.json:
     "title": "Improving rescaling of matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3212",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Currently, rescale_row and rescale_col don't allow you to rescale by something mathematically right but outside the current matrix base ring.  Discussion from sage-devel follows.
 
@@ -65,7 +65,7 @@ archive/issue_comments_022221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3212#issuecomment-22221",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -78,16 +78,16 @@ This is a first try at a patch improving documentation and removing the problem.
 archive/issue_comments_022222.json:
 ```json
 {
-    "body": "Attachment [8867.patch](tarball://root/attachments/some-uuid/ticket3212/8867.patch) by kcrisman created at 2008-05-16 05:23:22\n\nI should point out that the above patch does not yet work.  It DOES remove the TypeError problem, but doesn't actually give the correct new matrix.",
+    "body": "Attachment [8867.patch](tarball://root/attachments/some-uuid/ticket3212/8867.patch) by @kcrisman created at 2008-05-16 05:23:22\n\nI should point out that the above patch does not yet work.  It DOES remove the TypeError problem, but doesn't actually give the correct new matrix.",
     "created_at": "2008-05-16T05:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3212#issuecomment-22222",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [8867.patch](tarball://root/attachments/some-uuid/ticket3212/8867.patch) by kcrisman created at 2008-05-16 05:23:22
+Attachment [8867.patch](tarball://root/attachments/some-uuid/ticket3212/8867.patch) by @kcrisman created at 2008-05-16 05:23:22
 
 I should point out that the above patch does not yet work.  It DOES remove the TypeError problem, but doesn't actually give the correct new matrix.
 
@@ -103,7 +103,7 @@ archive/issue_comments_022223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3212#issuecomment-22223",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -116,16 +116,16 @@ Changing status from new to assigned.
 archive/issue_comments_022224.json:
 ```json
 {
-    "body": "Changing assignee from was to kcrisman.",
+    "body": "Changing assignee from @williamstein to @kcrisman.",
     "created_at": "2008-05-16T05:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3212#issuecomment-22224",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from was to kcrisman.
+Changing assignee from @williamstein to @kcrisman.
 
 
 
@@ -134,16 +134,16 @@ Changing assignee from was to kcrisman.
 archive/issue_comments_022225.json:
 ```json
 {
-    "body": "Attachment [8869.patch](tarball://root/attachments/some-uuid/ticket3212/8869.patch) by kcrisman created at 2008-05-18 03:33:08\n\nPatch for allowing row mult by non-ring elements",
+    "body": "Attachment [8869.patch](tarball://root/attachments/some-uuid/ticket3212/8869.patch) by @kcrisman created at 2008-05-18 03:33:08\n\nPatch for allowing row mult by non-ring elements",
     "created_at": "2008-05-18T03:33:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3212#issuecomment-22225",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [8869.patch](tarball://root/attachments/some-uuid/ticket3212/8869.patch) by kcrisman created at 2008-05-18 03:33:08
+Attachment [8869.patch](tarball://root/attachments/some-uuid/ticket3212/8869.patch) by @kcrisman created at 2008-05-18 03:33:08
 
 Patch for allowing row mult by non-ring elements
 
@@ -159,7 +159,7 @@ archive/issue_comments_022226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3212#issuecomment-22226",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_022227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3212#issuecomment-22227",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_022228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3212#issuecomment-22228",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_022229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3212#issuecomment-22229",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -230,16 +230,16 @@ Improves documentation and error messages and adds alternate methods for rescali
 archive/issue_comments_022230.json:
 ```json
 {
-    "body": "Attachment [rescaling.patch](tarball://root/attachments/some-uuid/ticket3212/rescaling.patch) by kcrisman created at 2008-06-06 03:12:13\n\nUse only rescaling.patch.",
+    "body": "Attachment [rescaling.patch](tarball://root/attachments/some-uuid/ticket3212/rescaling.patch) by @kcrisman created at 2008-06-06 03:12:13\n\nUse only rescaling.patch.",
     "created_at": "2008-06-06T03:12:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3212#issuecomment-22230",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [rescaling.patch](tarball://root/attachments/some-uuid/ticket3212/rescaling.patch) by kcrisman created at 2008-06-06 03:12:13
+Attachment [rescaling.patch](tarball://root/attachments/some-uuid/ticket3212/rescaling.patch) by @kcrisman created at 2008-06-06 03:12:13
 
 Use only rescaling.patch.
 
@@ -255,7 +255,7 @@ archive/issue_comments_022231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3212#issuecomment-22231",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -272,16 +272,16 @@ Works well for me. The only comments I have are
 archive/issue_comments_022232.json:
 ```json
 {
-    "body": "Attachment [rescale.patch](tarball://root/attachments/some-uuid/ticket3212/rescale.patch) by kcrisman created at 2008-06-06 21:04:18\n\nUse only rescale.patch.  This is hopefully the final version.",
+    "body": "Attachment [rescale.patch](tarball://root/attachments/some-uuid/ticket3212/rescale.patch) by @kcrisman created at 2008-06-06 21:04:18\n\nUse only rescale.patch.  This is hopefully the final version.",
     "created_at": "2008-06-06T21:04:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3212#issuecomment-22232",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [rescale.patch](tarball://root/attachments/some-uuid/ticket3212/rescale.patch) by kcrisman created at 2008-06-06 21:04:18
+Attachment [rescale.patch](tarball://root/attachments/some-uuid/ticket3212/rescale.patch) by @kcrisman created at 2008-06-06 21:04:18
 
 Use only rescale.patch.  This is hopefully the final version.
 
@@ -297,7 +297,7 @@ archive/issue_comments_022233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3212#issuecomment-22233",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

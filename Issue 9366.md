@@ -3,7 +3,7 @@
 archive/issues_009366.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  malb\n\nthe input was badly checked.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9366\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @malb\n\nthe input was badly checked.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9366\n\n",
     "created_at": "2010-06-28T21:40:43Z",
     "labels": [
         "cryptography",
@@ -19,7 +19,7 @@ archive/issues_009366.json:
 ```
 Assignee: mvngu
 
-CC:  malb
+CC:  @malb
 
 the input was badly checked.
 
@@ -93,7 +93,7 @@ archive/issue_comments_088969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9366#issuecomment-88969",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_088970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9366#issuecomment-88970",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_088971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9366#issuecomment-88971",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006578.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm\n\nCurrently, to create a subgraph, Sage copies the graph and then deletes everything not specified.  This is very slow if you just want a small part of a large graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6578\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nCurrently, to create a subgraph, Sage copies the graph and then deletes everything not specified.  This is very slow if you just want a small part of a large graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6578\n\n",
     "created_at": "2009-07-21T11:08:27Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_006578.json:
     "title": "fast subgraphs by building the graph instead of deleting things",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6578",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm
+CC:  @rlmill
 
 Currently, to create a subgraph, Sage copies the graph and then deletes everything not specified.  This is very slow if you just want a small part of a large graph.
 
@@ -39,7 +39,7 @@ archive/issue_comments_053698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6578#issuecomment-53698",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -52,16 +52,16 @@ This patch refactors the subgraph code into two functions, and then tries to int
 archive/issue_comments_053699.json:
 ```json
 {
-    "body": "Attachment [trac-6578-subgraph-refactoring.patch](tarball://root/attachments/some-uuid/ticket6578/trac-6578-subgraph-refactoring.patch) by jason created at 2009-07-21 11:41:40\n\nTiming comparison:\n\n\n```\nsage: g=graphs.PathGraph(100000)                     \nsage: %time g.subgraph(range(20), algorithm='add')   \nCPU times: user 0.61 s, sys: 0.01 s, total: 0.62 s\nWall time: 0.68 s\nSubgraph of (Path Graph): Graph on 20 vertices\nsage: %time g.subgraph(range(20), algorithm='delete') # the old algorithm\nCPU times: user 3.96 s, sys: 0.04 s, total: 4.00 s\nWall time: 4.15 s\nSubgraph of (Path Graph): Graph on 20 vertices\n```\n",
+    "body": "Attachment [trac-6578-subgraph-refactoring.patch](tarball://root/attachments/some-uuid/ticket6578/trac-6578-subgraph-refactoring.patch) by @jasongrout created at 2009-07-21 11:41:40\n\nTiming comparison:\n\n\n```\nsage: g=graphs.PathGraph(100000)                     \nsage: %time g.subgraph(range(20), algorithm='add')   \nCPU times: user 0.61 s, sys: 0.01 s, total: 0.62 s\nWall time: 0.68 s\nSubgraph of (Path Graph): Graph on 20 vertices\nsage: %time g.subgraph(range(20), algorithm='delete') # the old algorithm\nCPU times: user 3.96 s, sys: 0.04 s, total: 4.00 s\nWall time: 4.15 s\nSubgraph of (Path Graph): Graph on 20 vertices\n```\n",
     "created_at": "2009-07-21T11:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6578#issuecomment-53699",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6578-subgraph-refactoring.patch](tarball://root/attachments/some-uuid/ticket6578/trac-6578-subgraph-refactoring.patch) by jason created at 2009-07-21 11:41:40
+Attachment [trac-6578-subgraph-refactoring.patch](tarball://root/attachments/some-uuid/ticket6578/trac-6578-subgraph-refactoring.patch) by @jasongrout created at 2009-07-21 11:41:40
 
 Timing comparison:
 
@@ -91,7 +91,7 @@ archive/issue_comments_053700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6578#issuecomment-53700",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_053701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6578#issuecomment-53701",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_053702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6578#issuecomment-53702",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_053703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6578#issuecomment-53703",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

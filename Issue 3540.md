@@ -3,7 +3,7 @@
 archive/issues_003540.json:
 ```json
 {
-    "body": "Assignee: was\n\nFor example:\n\n```\nsage: M = Matrix(GF(2), 0, 0, 0)\nsage: M\n[]\nsage: M.nrows()\n0\nsage: M.ncols()\n0\nsage: N = Matrix(GF(2), 0, 19, 0)\nsage: N\n[]\nsage: N.nrows()\n0\nsage: N.ncols()\n19\nsage: W = M.augment(N)\nsage: W\n[]\nsage: W.nrows()\n0\nsage: W.ncols()\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3540\n\n",
+    "body": "Assignee: @williamstein\n\nFor example:\n\n```\nsage: M = Matrix(GF(2), 0, 0, 0)\nsage: M\n[]\nsage: M.nrows()\n0\nsage: M.ncols()\n0\nsage: N = Matrix(GF(2), 0, 19, 0)\nsage: N\n[]\nsage: N.nrows()\n0\nsage: N.ncols()\n19\nsage: W = M.augment(N)\nsage: W\n[]\nsage: W.nrows()\n0\nsage: W.ncols()\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3540\n\n",
     "created_at": "2008-07-01T19:27:28Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003540.json:
     "title": "[with patch, needs review] Augment messes up the ncols for flat matrices.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3540",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 For example:
 
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3540
 archive/issue_comments_025019.json:
 ```json
 {
-    "body": "Attachment [trac3540-augment-gf2.patch](tarball://root/attachments/some-uuid/ticket3540/trac3540-augment-gf2.patch) by malb created at 2008-07-02 20:30:51\n\nfixes SIGSEGV in first patch",
+    "body": "Attachment [trac3540-augment-gf2.patch](tarball://root/attachments/some-uuid/ticket3540/trac3540-augment-gf2.patch) by @malb created at 2008-07-02 20:30:51\n\nfixes SIGSEGV in first patch",
     "created_at": "2008-07-02T20:30:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3540#issuecomment-25019",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac3540-augment-gf2.patch](tarball://root/attachments/some-uuid/ticket3540/trac3540-augment-gf2.patch) by malb created at 2008-07-02 20:30:51
+Attachment [trac3540-augment-gf2.patch](tarball://root/attachments/some-uuid/ticket3540/trac3540-augment-gf2.patch) by @malb created at 2008-07-02 20:30:51
 
 fixes SIGSEGV in first patch
 
@@ -77,16 +77,16 @@ fixes SIGSEGV in first patch
 archive/issue_comments_025020.json:
 ```json
 {
-    "body": "Attachment [trac3540-augment-gf2-fix.patch](tarball://root/attachments/some-uuid/ticket3540/trac3540-augment-gf2-fix.patch) by malb created at 2008-07-02 20:31:59\n\nThe original patch introduced a SIGSEGV which I've fixed in `trac-3540-augment-fix.patch`. Together with my fix I'll give it a positive review, so somebody needs to approve my fix.",
+    "body": "Attachment [trac3540-augment-gf2-fix.patch](tarball://root/attachments/some-uuid/ticket3540/trac3540-augment-gf2-fix.patch) by @malb created at 2008-07-02 20:31:59\n\nThe original patch introduced a SIGSEGV which I've fixed in `trac-3540-augment-fix.patch`. Together with my fix I'll give it a positive review, so somebody needs to approve my fix.",
     "created_at": "2008-07-02T20:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3540#issuecomment-25020",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac3540-augment-gf2-fix.patch](tarball://root/attachments/some-uuid/ticket3540/trac3540-augment-gf2-fix.patch) by malb created at 2008-07-02 20:31:59
+Attachment [trac3540-augment-gf2-fix.patch](tarball://root/attachments/some-uuid/ticket3540/trac3540-augment-gf2-fix.patch) by @malb created at 2008-07-02 20:31:59
 
 The original patch introduced a SIGSEGV which I've fixed in `trac-3540-augment-fix.patch`. Together with my fix I'll give it a positive review, so somebody needs to approve my fix.
 
@@ -102,7 +102,7 @@ archive/issue_comments_025021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3540#issuecomment-25021",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000435.json:
     "title": "sage notebooks have hardcoded absolute paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/435",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -38,7 +38,7 @@ archive/issue_comments_002180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/435#issuecomment-2180",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -51,16 +51,16 @@ Changing priority from major to critical.
 archive/issue_comments_002181.json:
 ```json
 {
-    "body": "Attachment [trac435.patch](tarball://root/attachments/some-uuid/ticket435/trac435.patch) by was created at 2007-11-03 17:53:32\n\nthis fixes the bug.",
+    "body": "Attachment [trac435.patch](tarball://root/attachments/some-uuid/ticket435/trac435.patch) by @williamstein created at 2007-11-03 17:53:32\n\nthis fixes the bug.",
     "created_at": "2007-11-03T17:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/435#issuecomment-2181",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac435.patch](tarball://root/attachments/some-uuid/ticket435/trac435.patch) by was created at 2007-11-03 17:53:32
+Attachment [trac435.patch](tarball://root/attachments/some-uuid/ticket435/trac435.patch) by @williamstein created at 2007-11-03 17:53:32
 
 this fixes the bug.
 
@@ -76,7 +76,7 @@ archive/issue_comments_002182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/435#issuecomment-2182",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002947.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhile debugging #2946 on IRC, Jason found that `block_matrix()` doesn't properly handle an empty list.\n\nThe attached patch makes `block_matrix([])` return a 0x0 matrix over ZZ. If nrows and ncols are also specified, and subdivide isn't false, this 0x0 matrix will be further subdivided into nrows x ncols 0x0 matrices. This subdivision might be overkill, but it's probably the most consistent return value. Other opinions are welcome, of course.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2947\n\n",
+    "body": "Assignee: @williamstein\n\nWhile debugging #2946 on IRC, Jason found that `block_matrix()` doesn't properly handle an empty list.\n\nThe attached patch makes `block_matrix([])` return a 0x0 matrix over ZZ. If nrows and ncols are also specified, and subdivide isn't false, this 0x0 matrix will be further subdivided into nrows x ncols 0x0 matrices. This subdivision might be overkill, but it's probably the most consistent return value. Other opinions are welcome, of course.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2947\n\n",
     "created_at": "2008-04-17T22:19:05Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002947.json:
     "title": "[with patch; needs review] block_matrix([]) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2947",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 While debugging #2946 on IRC, Jason found that `block_matrix()` doesn't properly handle an empty list.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2947
 archive/issue_comments_020324.json:
 ```json
 {
-    "body": "Attachment [block_matrix_empty.patch](tarball://root/attachments/some-uuid/ticket2947/block_matrix_empty.patch) by wjp created at 2008-04-17 22:19:15",
+    "body": "Attachment [block_matrix_empty.patch](tarball://root/attachments/some-uuid/ticket2947/block_matrix_empty.patch) by @wjp created at 2008-04-17 22:19:15",
     "created_at": "2008-04-17T22:19:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2947#issuecomment-20324",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [block_matrix_empty.patch](tarball://root/attachments/some-uuid/ticket2947/block_matrix_empty.patch) by wjp created at 2008-04-17 22:19:15
+Attachment [block_matrix_empty.patch](tarball://root/attachments/some-uuid/ticket2947/block_matrix_empty.patch) by @wjp created at 2008-04-17 22:19:15
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_020325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2947#issuecomment-20325",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

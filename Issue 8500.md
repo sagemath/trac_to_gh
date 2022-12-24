@@ -105,7 +105,7 @@ archive/issue_comments_076741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76741",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_076742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76742",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_076744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76744",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -282,16 +282,16 @@ I just update the patch : I forgot some # optional. Done..
 archive/issue_comments_076749.json:
 ```json
 {
-    "body": "Attachment [trac_8500_number_transitive_group-review-nt.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_number_transitive_group-review-nt.patch) by nthiery created at 2010-04-18 20:00:19",
+    "body": "Attachment [trac_8500_number_transitive_group-review-nt.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_number_transitive_group-review-nt.patch) by @nthiery created at 2010-04-18 20:00:19",
     "created_at": "2010-04-18T20:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76749",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8500_number_transitive_group-review-nt.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_number_transitive_group-review-nt.patch) by nthiery created at 2010-04-18 20:00:19
+Attachment [trac_8500_number_transitive_group-review-nt.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_number_transitive_group-review-nt.patch) by @nthiery created at 2010-04-18 20:00:19
 
 
 
@@ -305,7 +305,7 @@ archive/issue_comments_076750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76750",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_076754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76754",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_076755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76755",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_076756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76756",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_076757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76757",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -496,16 +496,16 @@ Changing keywords from "transitive group" to "transitive groups".
 archive/issue_comments_076758.json:
 ```json
 {
-    "body": "Attachment [trac_8500_transitive_groups-final.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_transitive_groups-final.patch) by nthiery created at 2010-04-19 17:33:14",
+    "body": "Attachment [trac_8500_transitive_groups-final.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_transitive_groups-final.patch) by @nthiery created at 2010-04-19 17:33:14",
     "created_at": "2010-04-19T17:33:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76758",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8500_transitive_groups-final.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_transitive_groups-final.patch) by nthiery created at 2010-04-19 17:33:14
+Attachment [trac_8500_transitive_groups-final.patch](tarball://root/attachments/some-uuid/ticket8500/trac_8500_transitive_groups-final.patch) by @nthiery created at 2010-04-19 17:33:14
 
 
 
@@ -519,7 +519,7 @@ archive/issue_comments_076759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76759",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -537,7 +537,7 @@ archive/issue_comments_076760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76760",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_076761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76761",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -620,7 +620,7 @@ archive/issue_comments_076762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76762",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -646,7 +646,7 @@ archive/issue_comments_076763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76763",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -664,7 +664,7 @@ archive/issue_comments_076764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76764",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -706,7 +706,7 @@ archive/issue_comments_076765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76765",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -724,7 +724,7 @@ archive/issue_comments_076766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76766",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -742,7 +742,7 @@ archive/issue_comments_076767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8500#issuecomment-76767",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

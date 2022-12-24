@@ -3,7 +3,7 @@
 archive/issues_007464.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  was drkirkby\n\nKeywords: optional GNUism\n\nThe use of a non-POSIX option '-v' to the 'cp' command prevents this package installing on Solaris. The option, which can also be written as --verbose, is only to show what is actually being copied, so removing it should have no impact. \nTherefore\n\n```\ncp -rv cremona $SAGE_DATA/\n```\n\nwas changed to \n\n```\ncp -r cremona $SAGE_DATA/\n```\n\nin spkg-install. \n\nI also renamed 'SAGE.txt' to SPKG.txt, and added a slightly better description, and upstream contact information, to make it more consistent with other packages. \n\nThis is an optional Sage package. \n\nIt is unusual in that the .spkg file, was a tar file, and not a compressed tar file as they usually are. \n\nThe updated files can be found at: \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/database_cremona_ellcurve/\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7464\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @williamstein drkirkby\n\nKeywords: optional GNUism\n\nThe use of a non-POSIX option '-v' to the 'cp' command prevents this package installing on Solaris. The option, which can also be written as --verbose, is only to show what is actually being copied, so removing it should have no impact. \nTherefore\n\n```\ncp -rv cremona $SAGE_DATA/\n```\n\nwas changed to \n\n```\ncp -r cremona $SAGE_DATA/\n```\n\nin spkg-install. \n\nI also renamed 'SAGE.txt' to SPKG.txt, and added a slightly better description, and upstream contact information, to make it more consistent with other packages. \n\nThis is an optional Sage package. \n\nIt is unusual in that the .spkg file, was a tar file, and not a compressed tar file as they usually are. \n\nThe updated files can be found at: \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/database_cremona_ellcurve/\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7464\n\n",
     "created_at": "2009-11-14T20:33:48Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_007464.json:
 ```
 Assignee: drkirkby
 
-CC:  was drkirkby
+CC:  @williamstein drkirkby
 
 Keywords: optional GNUism
 
@@ -84,7 +84,7 @@ archive/issue_comments_062866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7464#issuecomment-62866",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_062868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7464#issuecomment-62868",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_062869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7464#issuecomment-62869",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_062870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7464#issuecomment-62870",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_062871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7464#issuecomment-62871",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_062872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7464#issuecomment-62872",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

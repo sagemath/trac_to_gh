@@ -3,7 +3,7 @@
 archive/issues_002200.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nAs part of adding Debian copyright files to all the Debian packages, I tried to verify the copyright status of all the SAGE dependencies I'm packaging for Debian.  The following are the list of packages for which I have questions about:\n\n- givaro: I can only verify this is GPL2; is it supposed to be GPL3 compatible?\n\n- genus2reduction: The genus2reduction package itself doesn't mention copyright; though the SAGE COPYING.txt file claims GPL...\n\n- libm4ri: I can't find an upstream URL for this.  Is there one?\n\n- tachyon: still has 4-clause BSD in the sources (It apparently hasn't been released since the author agreed to relicense to 3-clause over email; since the email is 6 months old, it might be useful to email John Stone again?).\n\n- sympow: the copyright statement in the SAGE COPYING.txt differs from that in the sympow sources (the latter seems to not be a standard BSD license).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2200\n\n",
+    "body": "Assignee: @timabbott\n\nAs part of adding Debian copyright files to all the Debian packages, I tried to verify the copyright status of all the SAGE dependencies I'm packaging for Debian.  The following are the list of packages for which I have questions about:\n\n- givaro: I can only verify this is GPL2; is it supposed to be GPL3 compatible?\n\n- genus2reduction: The genus2reduction package itself doesn't mention copyright; though the SAGE COPYING.txt file claims GPL...\n\n- libm4ri: I can't find an upstream URL for this.  Is there one?\n\n- tachyon: still has 4-clause BSD in the sources (It apparently hasn't been released since the author agreed to relicense to 3-clause over email; since the email is 6 months old, it might be useful to email John Stone again?).\n\n- sympow: the copyright statement in the SAGE COPYING.txt differs from that in the sympow sources (the latter seems to not be a standard BSD license).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2200\n\n",
     "created_at": "2008-02-17T21:53:31Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002200.json:
     "title": "copyright documentation for various spkgs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2200",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 As part of adding Debian copyright files to all the Debian packages, I tried to verify the copyright status of all the SAGE dependencies I'm packaging for Debian.  The following are the list of packages for which I have questions about:
 
@@ -48,7 +48,7 @@ archive/issue_comments_014475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14475",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_014476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14476",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_014477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14477",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_014479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14479",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_014480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14480",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_014481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14481",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_014482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14482",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001414.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThis should work but doesn't\n\n```\nsage: p = 17; q = (p-1)//2\nsage: inject_on()\nRedefining: Frac FreeMonoid GF FractionField FiniteField PolynomialRing quotient NumberField LaurentSeriesRing quo \nsage: R = MPolynomialRing(GF(p),q,\"x\")\nDefining x\nDefining x0, x1, x2, x3, x4, x5, x6, x7\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1414\n\n",
+    "body": "Assignee: @malb\n\nThis should work but doesn't\n\n```\nsage: p = 17; q = (p-1)//2\nsage: inject_on()\nRedefining: Frac FreeMonoid GF FractionField FiniteField PolynomialRing quotient NumberField LaurentSeriesRing quo \nsage: R = MPolynomialRing(GF(p),q,\"x\")\nDefining x\nDefining x0, x1, x2, x3, x4, x5, x6, x7\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1414\n\n",
     "created_at": "2007-12-07T02:15:00Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001414.json:
     "title": "wrap MPolynomialRing so inject_on() works.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1414",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 This should work but doesn't
 
@@ -48,7 +48,7 @@ archive/issue_comments_009123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1414#issuecomment-9123",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_009124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1414#issuecomment-9124",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_009125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1414#issuecomment-9125",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000059.json:
     "title": "optimize elliptic curve arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/59",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -53,7 +53,7 @@ archive/issue_comments_000307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-307",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_000309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-309",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_000310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-310",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_000314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-314",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_000315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-315",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

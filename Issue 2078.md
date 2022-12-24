@@ -14,7 +14,7 @@ archive/issues_002078.json:
     "title": "programming guide: section \"quick Mercurial tutorial for Sage\" is wrong/misleading",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2078",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: tba

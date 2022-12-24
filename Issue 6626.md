@@ -3,7 +3,7 @@
 archive/issues_006626.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  ncohen rlm\n\nKeywords: cliquer\n\nAs the subject says. This is a follow up to #6355.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6626\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @nathanncohen @rlmill\n\nKeywords: cliquer\n\nAs the subject says. This is a follow up to #6355.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6626\n\n",
     "created_at": "2009-07-26T08:26:02Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_006626.json:
 ```
 Assignee: mabshoff
 
-CC:  ncohen rlm
+CC:  @nathanncohen @rlmill
 
 Keywords: cliquer
 
@@ -144,7 +144,7 @@ archive/issue_comments_054286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6626#issuecomment-54286",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_054288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6626#issuecomment-54288",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

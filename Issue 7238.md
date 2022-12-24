@@ -14,7 +14,7 @@ archive/issues_007238.json:
     "title": "sagenb notebook: insert new cell *above* text cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7238",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7238
 archive/issue_comments_060041.json:
 ```json
 {
-    "body": "Attachment [trac_7238.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238.patch) by was created at 2009-10-18 09:22:16\n\npart 1",
+    "body": "Attachment [trac_7238.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238.patch) by @williamstein created at 2009-10-18 09:22:16\n\npart 1",
     "created_at": "2009-10-18T09:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7238#issuecomment-60041",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7238.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238.patch) by was created at 2009-10-18 09:22:16
+Attachment [trac_7238.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238.patch) by @williamstein created at 2009-10-18 09:22:16
 
 part 1
 
@@ -57,7 +57,7 @@ archive/issue_comments_060042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7238#issuecomment-60042",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,16 +73,16 @@ deleting then everything is fine.
 archive/issue_comments_060043.json:
 ```json
 {
-    "body": "Attachment [trac_7238-part2.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238-part2.patch) by was created at 2009-10-19 17:35:30\n\nthis fixes moving between cells",
+    "body": "Attachment [trac_7238-part2.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238-part2.patch) by @williamstein created at 2009-10-19 17:35:30\n\nthis fixes moving between cells",
     "created_at": "2009-10-19T17:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7238#issuecomment-60043",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7238-part2.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238-part2.patch) by was created at 2009-10-19 17:35:30
+Attachment [trac_7238-part2.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238-part2.patch) by @williamstein created at 2009-10-19 17:35:30
 
 this fixes moving between cells
 
@@ -98,7 +98,7 @@ archive/issue_comments_060044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7238#issuecomment-60044",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_060045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7238#issuecomment-60045",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_060046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7238#issuecomment-60046",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_060047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7238#issuecomment-60047",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_060048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7238#issuecomment-60048",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_060049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7238#issuecomment-60049",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -212,16 +212,16 @@ Part 3.  Various small fixes.  Apply on top of other patches.
 archive/issue_comments_060050.json:
 ```json
 {
-    "body": "Attachment [trac_7238-insert_above_text_cell.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238-insert_above_text_cell.patch) by was created at 2009-10-20 18:07:25\n\n> A potential annoyance: Reopening (or editing) a worksheet fuses consecutive \n> text cells. Should we have \"special\" delimiters for text cells? \n\nThis has been the case since there first were text cells.  Some people consider it good (a feature), and others find it confusing.",
+    "body": "Attachment [trac_7238-insert_above_text_cell.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238-insert_above_text_cell.patch) by @williamstein created at 2009-10-20 18:07:25\n\n> A potential annoyance: Reopening (or editing) a worksheet fuses consecutive \n> text cells. Should we have \"special\" delimiters for text cells? \n\nThis has been the case since there first were text cells.  Some people consider it good (a feature), and others find it confusing.",
     "created_at": "2009-10-20T18:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7238#issuecomment-60050",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7238-insert_above_text_cell.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238-insert_above_text_cell.patch) by was created at 2009-10-20 18:07:25
+Attachment [trac_7238-insert_above_text_cell.patch](tarball://root/attachments/some-uuid/ticket7238/trac_7238-insert_above_text_cell.patch) by @williamstein created at 2009-10-20 18:07:25
 
 > A potential annoyance: Reopening (or editing) a worksheet fuses consecutive 
 > text cells. Should we have "special" delimiters for text cells? 
@@ -240,7 +240,7 @@ archive/issue_comments_060051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7238#issuecomment-60051",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_060052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7238#issuecomment-60052",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006390.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb rlm\n\nKeywords: elliptic curve logarithm\n\nAs of 4.0.2 we only have elliptic logs for curves defined over the reals (including curves over number fields with a real embedding).  We also need the complex case, which can be implemented using the complex AGM.  I expect to be adding this during June/July 2009.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6390\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @rlmill\n\nKeywords: elliptic curve logarithm\n\nAs of 4.0.2 we only have elliptic logs for curves defined over the reals (including curves over number fields with a real embedding).  We also need the complex case, which can be implemented using the complex AGM.  I expect to be adding this during June/July 2009.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6390\n\n",
     "created_at": "2009-06-23T19:59:32Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_006390.json:
     "title": "Implement elliptic logarithms (complex case)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6390",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb rlm
+CC:  @robertwb @rlmill
 
 Keywords: elliptic curve logarithm
 
@@ -41,7 +41,7 @@ archive/issue_comments_051165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51165",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing component from number theory to elliptic curves.
 archive/issue_comments_051166.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-21T08:16:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51166",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_051167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51167",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -90,16 +90,16 @@ Update 2009-07-21: I still have this only half done, the gap being proof of a th
 archive/issue_comments_051168.json:
 ```json
 {
-    "body": "Remove assignee davidloeffler.",
+    "body": "Remove assignee @loefflerd.",
     "created_at": "2009-10-09T09:11:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51168",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Remove assignee davidloeffler.
+Remove assignee @loefflerd.
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_051169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51169",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_051170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51170",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -151,16 +151,16 @@ Applies to 4.3.4
 archive/issue_comments_051171.json:
 ```json
 {
-    "body": "Attachment [trac_6390-celog.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-celog.patch) by cremona created at 2010-03-20 20:55:27\n\nThe patch implements complex elliptic logs as promised, and makes a few minor improvements to the periods & elliptic log code generally.\n\nThe new code works fine for real embeddings too, and is almost as fast:  for the database curves up to conductor 1000 (and with the optional database installed so that all generators are pre-installed) the new code takes 183 seconds to find all logs of all generators (for the optimal curves) while the old code takes 154s.  The new code is also rather simpler.  I have left in the old code.  Reviewers wishing to test this can do so by switching lines 1243 and 1244 of period_lattice.py: doctests almost all succeed, with a tiny amount of fuzz in some elliptic exponential computations.\n\nI am CC'ing rlm since after installing the optional database of curves (and generators) and testing all of sage/schemes/elliptic_curves, I found that there were some failures in heegner.py, mainly caused by E.gens() sometimes now producing different generators.  I fixed almost all of these (since I think that as a matter of principle these doctests should not be dependent on the database not being installed!) but there are two I cannot fix (lines 1409 and 1415 of heegner.py) and I am hoping that Robert M will be able to.",
+    "body": "Attachment [trac_6390-celog.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-celog.patch) by @JohnCremona created at 2010-03-20 20:55:27\n\nThe patch implements complex elliptic logs as promised, and makes a few minor improvements to the periods & elliptic log code generally.\n\nThe new code works fine for real embeddings too, and is almost as fast:  for the database curves up to conductor 1000 (and with the optional database installed so that all generators are pre-installed) the new code takes 183 seconds to find all logs of all generators (for the optimal curves) while the old code takes 154s.  The new code is also rather simpler.  I have left in the old code.  Reviewers wishing to test this can do so by switching lines 1243 and 1244 of period_lattice.py: doctests almost all succeed, with a tiny amount of fuzz in some elliptic exponential computations.\n\nI am CC'ing rlm since after installing the optional database of curves (and generators) and testing all of sage/schemes/elliptic_curves, I found that there were some failures in heegner.py, mainly caused by E.gens() sometimes now producing different generators.  I fixed almost all of these (since I think that as a matter of principle these doctests should not be dependent on the database not being installed!) but there are two I cannot fix (lines 1409 and 1415 of heegner.py) and I am hoping that Robert M will be able to.",
     "created_at": "2010-03-20T20:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51171",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6390-celog.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-celog.patch) by cremona created at 2010-03-20 20:55:27
+Attachment [trac_6390-celog.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-celog.patch) by @JohnCremona created at 2010-03-20 20:55:27
 
 The patch implements complex elliptic logs as promised, and makes a few minor improvements to the periods & elliptic log code generally.
 
@@ -175,16 +175,16 @@ I am CC'ing rlm since after installing the optional database of curves (and gene
 archive/issue_comments_051172.json:
 ```json
 {
-    "body": "Set assignee to cremona.",
+    "body": "Set assignee to @JohnCremona.",
     "created_at": "2010-03-20T20:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51172",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Set assignee to cremona.
+Set assignee to @JohnCremona.
 
 
 
@@ -198,7 +198,7 @@ archive/issue_comments_051173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51173",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -211,16 +211,16 @@ Changing status from new to needs_review.
 archive/issue_comments_051174.json:
 ```json
 {
-    "body": "Attachment [trac_6390-doc.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-doc.patch) by rlm created at 2010-03-23 15:41:30",
+    "body": "Attachment [trac_6390-doc.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-doc.patch) by @rlmill created at 2010-03-23 15:41:30",
     "created_at": "2010-03-23T15:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51174",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6390-doc.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-doc.patch) by rlm created at 2010-03-23 15:41:30
+Attachment [trac_6390-doc.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-doc.patch) by @rlmill created at 2010-03-23 15:41:30
 
 
 
@@ -234,7 +234,7 @@ archive/issue_comments_051175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51175",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_051176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51176",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_051177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51177",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_051178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51178",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -325,16 +325,16 @@ It is a shame that the tabs are not visible here.
 archive/issue_comments_051179.json:
 ```json
 {
-    "body": "Attachment [trac_6390.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390.patch) by wuthrich created at 2010-03-28 19:05:22\n\nexported against 4.3.4, replaces the previous patches",
+    "body": "Attachment [trac_6390.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390.patch) by @categorie created at 2010-03-28 19:05:22\n\nexported against 4.3.4, replaces the previous patches",
     "created_at": "2010-03-28T19:05:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51179",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_6390.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390.patch) by wuthrich created at 2010-03-28 19:05:22
+Attachment [trac_6390.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390.patch) by @categorie created at 2010-03-28 19:05:22
 
 exported against 4.3.4, replaces the previous patches
 
@@ -350,7 +350,7 @@ archive/issue_comments_051180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51180",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_051181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51181",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_051182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51182",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_051183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51183",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_051184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51184",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_051185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51185",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_051186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51186",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_051187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51187",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_051188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51188",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_051189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51189",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -534,7 +534,7 @@ archive/issue_comments_051190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51190",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

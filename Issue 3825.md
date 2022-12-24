@@ -3,7 +3,7 @@
 archive/issues_003825.json:
 ```json
 {
-    "body": "Assignee: saliola\n\nIt would be nice to be able to add grids to 2d plots in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3825\n\n",
+    "body": "Assignee: @saliola\n\nIt would be nice to be able to add grids to 2d plots in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3825\n\n",
     "created_at": "2008-08-12T22:11:38Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003825.json:
     "title": "2d-plots has no functionality for grid lines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3825",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: saliola
+Assignee: @saliola
 
 It would be nice to be able to add grids to 2d plots in Sage.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3825
 archive/issue_comments_027204.json:
 ```json
 {
-    "body": "Attachment [trac_3825-gridlines.patch](tarball://root/attachments/some-uuid/ticket3825/trac_3825-gridlines.patch) by saliola created at 2008-08-12 23:30:09",
+    "body": "Attachment [trac_3825-gridlines.patch](tarball://root/attachments/some-uuid/ticket3825/trac_3825-gridlines.patch) by @saliola created at 2008-08-12 23:30:09",
     "created_at": "2008-08-12T23:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3825#issuecomment-27204",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_3825-gridlines.patch](tarball://root/attachments/some-uuid/ticket3825/trac_3825-gridlines.patch) by saliola created at 2008-08-12 23:30:09
+Attachment [trac_3825-gridlines.patch](tarball://root/attachments/some-uuid/ticket3825/trac_3825-gridlines.patch) by @saliola created at 2008-08-12 23:30:09
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_027205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3825#issuecomment-27205",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_027206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3825#issuecomment-27206",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_027207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3825#issuecomment-27207",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_027208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3825#issuecomment-27208",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_027209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3825#issuecomment-27209",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -252,16 +252,16 @@ patch with changes made after review
 archive/issue_comments_027210.json:
 ```json
 {
-    "body": "Attachment [trac_3825-gridlines-2.patch](tarball://root/attachments/some-uuid/ticket3825/trac_3825-gridlines-2.patch) by saliola created at 2008-08-13 06:58:23",
+    "body": "Attachment [trac_3825-gridlines-2.patch](tarball://root/attachments/some-uuid/ticket3825/trac_3825-gridlines-2.patch) by @saliola created at 2008-08-13 06:58:23",
     "created_at": "2008-08-13T06:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3825#issuecomment-27210",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_3825-gridlines-2.patch](tarball://root/attachments/some-uuid/ticket3825/trac_3825-gridlines-2.patch) by saliola created at 2008-08-13 06:58:23
+Attachment [trac_3825-gridlines-2.patch](tarball://root/attachments/some-uuid/ticket3825/trac_3825-gridlines-2.patch) by @saliola created at 2008-08-13 06:58:23
 
 
 
@@ -275,7 +275,7 @@ archive/issue_comments_027211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3825#issuecomment-27211",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

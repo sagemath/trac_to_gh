@@ -14,7 +14,7 @@ archive/issues_004490.json:
     "title": "notebook -- add a checkbox that enables/disables implicit multiplication",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4490",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_033164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4490#issuecomment-33164",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_033165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4490#issuecomment-33165",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_033166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4490#issuecomment-33166",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

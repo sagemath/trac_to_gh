@@ -3,7 +3,7 @@
 archive/issues_007738.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\nMichael Abshoff is listed as maintainer of many spkg's, but he quit, so we need to delete his name from all of them:\n\n```\noptional/graphviz-2.16.1.p0.txt: * Michael Abshoff\noptional/guppy-0.1.8.txt: * Michael Abshoff\noptional/jsmath-image-fonts-1.4.p2.txt: * Michael Abshoff\noptional/lrs-4.2b.p1.txt: * Michael Abshoff\noptional/valgrind_3.3.1.txt: * Michael Abshoff\nstandard/boost-cropped-1.34.1.txt: * Michael Abshoff\nstandard/eclib-20080310.p7.txt: * Michael Abshoff\nstandard/ecm-6.2.1.p1.txt: * Michael Abshoff\nstandard/gap-4.4.10.p12.txt: * Michael Abshoff\nstandard/gdmodule-0.56.p6.txt: * Michael Abshoff\nstandard/gsl-1.10.p1.txt: * Michael Abshoff\nstandard/iml-1.0.1.p11.txt: * Michael Abshoff\nstandard/ipython-0.9.1.p0.txt: * Michael Abshoff\nstandard/libfplll-3.0.12.p0.txt: * Michael Abshoff\nstandard/libpng-1.2.35.txt: * Michael Abshoff\nstandard/mpfr-2.4.1.p0.txt: * Michael Abshoff \nstandard/networkx-0.99.p1-fake_really-0.36.p1.txt: * Michael Abshoff\nstandard/ntl-5.4.2.p9.txt: * Michael Abshoff\nstandard/numpy-1.3.0.p2.txt:  Michael Abshoff\nstandard/pari-2.3.3.p5.txt: * Michael Abshoff\nstandard/polybori-0.6.3-20090827.txt: * Michael Abshoff\nstandard/pynac-0.1.9.p0.txt: * Michael Abshoff \nstandard/python-2.6.2.p4.txt: * Included a fix by Michael Abshoff: patch posixmodule.c to avoid an\nstandard/scipy_sandbox-20071020.p4.txt: * Michael Abshoff\nstandard/scons-1.2.0.txt: * Michael Abshoff\nstandard/setuptools-0.6c9.p0.txt: * Michael Abshoff\nstandard/symmetrica-2.0.p4.txt: * Michael Abshoff\nstandard/tachyon-0.98beta.p10.txt: * Michael Abshoff\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7738\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nMichael Abshoff is listed as maintainer of many spkg's, but he quit, so we need to delete his name from all of them:\n\n```\noptional/graphviz-2.16.1.p0.txt: * Michael Abshoff\noptional/guppy-0.1.8.txt: * Michael Abshoff\noptional/jsmath-image-fonts-1.4.p2.txt: * Michael Abshoff\noptional/lrs-4.2b.p1.txt: * Michael Abshoff\noptional/valgrind_3.3.1.txt: * Michael Abshoff\nstandard/boost-cropped-1.34.1.txt: * Michael Abshoff\nstandard/eclib-20080310.p7.txt: * Michael Abshoff\nstandard/ecm-6.2.1.p1.txt: * Michael Abshoff\nstandard/gap-4.4.10.p12.txt: * Michael Abshoff\nstandard/gdmodule-0.56.p6.txt: * Michael Abshoff\nstandard/gsl-1.10.p1.txt: * Michael Abshoff\nstandard/iml-1.0.1.p11.txt: * Michael Abshoff\nstandard/ipython-0.9.1.p0.txt: * Michael Abshoff\nstandard/libfplll-3.0.12.p0.txt: * Michael Abshoff\nstandard/libpng-1.2.35.txt: * Michael Abshoff\nstandard/mpfr-2.4.1.p0.txt: * Michael Abshoff \nstandard/networkx-0.99.p1-fake_really-0.36.p1.txt: * Michael Abshoff\nstandard/ntl-5.4.2.p9.txt: * Michael Abshoff\nstandard/numpy-1.3.0.p2.txt:  Michael Abshoff\nstandard/pari-2.3.3.p5.txt: * Michael Abshoff\nstandard/polybori-0.6.3-20090827.txt: * Michael Abshoff\nstandard/pynac-0.1.9.p0.txt: * Michael Abshoff \nstandard/python-2.6.2.p4.txt: * Included a fix by Michael Abshoff: patch posixmodule.c to avoid an\nstandard/scipy_sandbox-20071020.p4.txt: * Michael Abshoff\nstandard/scons-1.2.0.txt: * Michael Abshoff\nstandard/setuptools-0.6c9.p0.txt: * Michael Abshoff\nstandard/symmetrica-2.0.p4.txt: * Michael Abshoff\nstandard/tachyon-0.98beta.p10.txt: * Michael Abshoff\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7738\n\n",
     "created_at": "2009-12-18T22:04:03Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_007738.json:
     "title": "remove Michael Abshoff as maintainer of any of spkg's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7738",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 Michael Abshoff is listed as maintainer of many spkg's, but he quit, so we need to delete his name from all of them:
 
@@ -71,7 +71,7 @@ archive/issue_comments_066487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66487",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_066488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66488",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_066489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66489",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_066490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66490",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_066491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66491",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_066492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66492",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_066493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66493",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_066494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66494",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_066495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66495",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_066496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66496",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_066497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66497",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_066498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66498",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_066499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66499",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_066501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66501",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_066502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66502",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_066503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66503",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

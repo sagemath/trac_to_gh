@@ -14,7 +14,7 @@ archive/issues_004371.json:
     "title": "Add support for lazy attributes via a decorator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4371",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: cwitty
@@ -41,7 +41,7 @@ archive/issue_comments_032128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4371#issuecomment-32128",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -54,16 +54,16 @@ Patch
 archive/issue_comments_032129.json:
 ```json
 {
-    "body": "Attachment [lazy_attributes-4371-nt.patch](tarball://root/attachments/some-uuid/ticket4371/lazy_attributes-4371-nt.patch) by nthiery created at 2008-10-26 13:35:59\n\nIn case I did not make myself clear: this patch is *not* ready for insertion in sage.\nIt's more of a request for comments!",
+    "body": "Attachment [lazy_attributes-4371-nt.patch](tarball://root/attachments/some-uuid/ticket4371/lazy_attributes-4371-nt.patch) by @nthiery created at 2008-10-26 13:35:59\n\nIn case I did not make myself clear: this patch is *not* ready for insertion in sage.\nIt's more of a request for comments!",
     "created_at": "2008-10-26T13:35:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4371#issuecomment-32129",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [lazy_attributes-4371-nt.patch](tarball://root/attachments/some-uuid/ticket4371/lazy_attributes-4371-nt.patch) by nthiery created at 2008-10-26 13:35:59
+Attachment [lazy_attributes-4371-nt.patch](tarball://root/attachments/some-uuid/ticket4371/lazy_attributes-4371-nt.patch) by @nthiery created at 2008-10-26 13:35:59
 
 In case I did not make myself clear: this patch is *not* ready for insertion in sage.
 It's more of a request for comments!
@@ -126,7 +126,7 @@ archive/issue_comments_032131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4371#issuecomment-32131",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_032134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4371#issuecomment-32134",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -213,16 +213,16 @@ Changing status from new to assigned.
 archive/issue_comments_032135.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to nthiery.",
+    "body": "Changing assignee from cwitty to @nthiery.",
     "created_at": "2008-11-09T21:10:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4371#issuecomment-32135",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Changing assignee from cwitty to nthiery.
+Changing assignee from cwitty to @nthiery.
 
 
 
@@ -236,7 +236,7 @@ archive/issue_comments_032136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4371#issuecomment-32136",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_032137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4371#issuecomment-32137",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -272,16 +272,16 @@ Not all desired features are implemented, but we need the bulk for upcoming patc
 archive/issue_comments_032138.json:
 ```json
 {
-    "body": "Attachment [lazy_attributes-4371-nt.2.patch](tarball://root/attachments/some-uuid/ticket4371/lazy_attributes-4371-nt.2.patch) by nthiery created at 2009-02-13 16:12:26",
+    "body": "Attachment [lazy_attributes-4371-nt.2.patch](tarball://root/attachments/some-uuid/ticket4371/lazy_attributes-4371-nt.2.patch) by @nthiery created at 2009-02-13 16:12:26",
     "created_at": "2009-02-13T16:12:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4371#issuecomment-32138",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [lazy_attributes-4371-nt.2.patch](tarball://root/attachments/some-uuid/ticket4371/lazy_attributes-4371-nt.2.patch) by nthiery created at 2009-02-13 16:12:26
+Attachment [lazy_attributes-4371-nt.2.patch](tarball://root/attachments/some-uuid/ticket4371/lazy_attributes-4371-nt.2.patch) by @nthiery created at 2009-02-13 16:12:26
 
 
 
@@ -295,7 +295,7 @@ archive/issue_comments_032139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4371#issuecomment-32139",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_032143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4371#issuecomment-32143",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

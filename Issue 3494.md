@@ -3,7 +3,7 @@
 archive/issues_003494.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nLots of things that are matrix-related in `sage` use `var`, whereas `name` would often be more appropriate. Someone should fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3494\n\n",
+    "body": "Assignee: @craigcitro\n\nLots of things that are matrix-related in `sage` use `var`, whereas `name` would often be more appropriate. Someone should fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3494\n\n",
     "created_at": "2008-06-23T18:49:35Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003494.json:
     "title": "var --> name",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3494",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Lots of things that are matrix-related in `sage` use `var`, whereas `name` would often be more appropriate. Someone should fix this.
 
@@ -37,7 +37,7 @@ archive/issue_comments_024605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24605",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_024606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24606",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_024607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24607",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_024608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24608",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_024609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24609",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_024610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24610",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

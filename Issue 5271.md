@@ -3,7 +3,7 @@
 archive/issues_005271.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jason\n\njmol-11.6.16.spkg from #2873 was **not** based on the latest upstream jmol.spkg. While taking a closer look I found all kind of other odd things, so I moved the updated spkg to a new ticker. The spkg can be found at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/rc1/jmol-11.6.16.p0.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5271\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout\n\njmol-11.6.16.spkg from #2873 was **not** based on the latest upstream jmol.spkg. While taking a closer look I found all kind of other odd things, so I moved the updated spkg to a new ticker. The spkg can be found at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/rc1/jmol-11.6.16.p0.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5271\n\n",
     "created_at": "2009-02-14T14:30:46Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_005271.json:
 ```
 Assignee: mabshoff
 
-CC:  jason
+CC:  @jasongrout
 
 jmol-11.6.16.spkg from #2873 was **not** based on the latest upstream jmol.spkg. While taking a closer look I found all kind of other odd things, so I moved the updated spkg to a new ticker. The spkg can be found at 
 
@@ -63,7 +63,7 @@ archive/issue_comments_040467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5271#issuecomment-40467",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_040470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5271",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5271#issuecomment-40470",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

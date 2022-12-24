@@ -3,7 +3,7 @@
 archive/issues_008107.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb timdumol\n\nThis should reduce startup time, according to `sage -startuptime`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8107\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @TimDumol\n\nThis should reduce startup time, according to `sage -startuptime`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8107\n\n",
     "created_at": "2010-01-28T05:33:30Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008107.json:
     "title": "Fewer unnecessary imports from `sage.server.*`",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8107",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb timdumol
+CC:  @robertwb @TimDumol
 
 This should reduce startup time, according to `sage -startuptime`.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8107
 archive/issue_comments_071150.json:
 ```json
 {
-    "body": "Attachment [trac_8107-server_imports.patch](tarball://root/attachments/some-uuid/ticket8107/trac_8107-server_imports.patch) by mpatel created at 2010-01-28 05:35:42\n\n*sage* repo.",
+    "body": "Attachment [trac_8107-server_imports.patch](tarball://root/attachments/some-uuid/ticket8107/trac_8107-server_imports.patch) by @qed777 created at 2010-01-28 05:35:42\n\n*sage* repo.",
     "created_at": "2010-01-28T05:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71150",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8107-server_imports.patch](tarball://root/attachments/some-uuid/ticket8107/trac_8107-server_imports.patch) by mpatel created at 2010-01-28 05:35:42
+Attachment [trac_8107-server_imports.patch](tarball://root/attachments/some-uuid/ticket8107/trac_8107-server_imports.patch) by @qed777 created at 2010-01-28 05:35:42
 
 *sage* repo.
 
@@ -61,7 +61,7 @@ archive/issue_comments_071151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71151",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_071152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71152",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_071153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71153",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_071154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71154",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_071155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71155",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_071156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71156",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_071157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71157",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

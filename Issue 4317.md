@@ -14,7 +14,7 @@ archive/issues_004317.json:
     "title": "relocation after make install is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4317",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: cwitty
@@ -188,16 +188,16 @@ Michael
 archive/issue_comments_031599.json:
 ```json
 {
-    "body": "Attachment [trac_4317_scripts.patch](tarball://root/attachments/some-uuid/ticket4317/trac_4317_scripts.patch) by was created at 2008-12-01 08:37:43",
+    "body": "Attachment [trac_4317_scripts.patch](tarball://root/attachments/some-uuid/ticket4317/trac_4317_scripts.patch) by @williamstein created at 2008-12-01 08:37:43",
     "created_at": "2008-12-01T08:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4317#issuecomment-31599",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4317_scripts.patch](tarball://root/attachments/some-uuid/ticket4317/trac_4317_scripts.patch) by was created at 2008-12-01 08:37:43
+Attachment [trac_4317_scripts.patch](tarball://root/attachments/some-uuid/ticket4317/trac_4317_scripts.patch) by @williamstein created at 2008-12-01 08:37:43
 
 
 

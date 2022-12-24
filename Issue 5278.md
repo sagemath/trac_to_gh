@@ -14,7 +14,7 @@ archive/issues_005278.json:
     "title": "On modern fedora 64 installs, sage exists frequently when omalloc things there is no memory left",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5278",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -162,7 +162,7 @@ archive/issue_comments_040501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5278#issuecomment-40501",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_040510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5278#issuecomment-40510",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

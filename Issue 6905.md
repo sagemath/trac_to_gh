@@ -14,7 +14,7 @@ archive/issues_006905.json:
     "title": "real(0.0r) is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6905",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Keywords: real, symbolic, plot
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6905
 archive/issue_comments_057050.json:
 ```json
 {
-    "body": "Attachment [trac_6905.patch](tarball://root/attachments/some-uuid/ticket6905/trac_6905.patch) by mhansen created at 2009-09-08 21:13:04",
+    "body": "Attachment [trac_6905.patch](tarball://root/attachments/some-uuid/ticket6905/trac_6905.patch) by @mwhansen created at 2009-09-08 21:13:04",
     "created_at": "2009-09-08T21:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6905#issuecomment-57050",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6905.patch](tarball://root/attachments/some-uuid/ticket6905/trac_6905.patch) by mhansen created at 2009-09-08 21:13:04
+Attachment [trac_6905.patch](tarball://root/attachments/some-uuid/ticket6905/trac_6905.patch) by @mwhansen created at 2009-09-08 21:13:04
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_057051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6905#issuecomment-57051",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -89,16 +89,16 @@ Changing status from new to assigned.
 archive/issue_comments_057052.json:
 ```json
 {
-    "body": "Set assignee to mhansen.",
+    "body": "Set assignee to @mwhansen.",
     "created_at": "2009-09-08T21:13:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6905#issuecomment-57052",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Set assignee to mhansen.
+Set assignee to @mwhansen.
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_057053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6905#issuecomment-57053",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

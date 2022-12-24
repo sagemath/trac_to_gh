@@ -14,7 +14,7 @@ archive/issues_002072.json:
     "title": "Remove _neg_c_impl and _invert_c_impl from some classes.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2072",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_013399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2072#issuecomment-13399",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_013400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2072#issuecomment-13400",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_013401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2072#issuecomment-13401",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_013402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2072#issuecomment-13402",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_013403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2072#issuecomment-13403",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_013405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2072#issuecomment-13405",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_013406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2072#issuecomment-13406",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_013407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2072#issuecomment-13407",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

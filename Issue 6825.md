@@ -3,7 +3,7 @@
 archive/issues_006825.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jason\n\nMariah Lenox reported the following doctest failure when running the test suite:\n\n```\nsage -t  \"devel/sage/sage/modules/vector_real_double_dense.pyx\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.1.1-x86_64-Linux-core2-fc-move/devel/sage/sage/modules/vector_real_double_dense.pyx\",\nline 72:\n   sage: v.stats_skew()\nExpected:\n   0.0\nGot:\n   doctest:106: SyntaxWarning: assertion is always true, perhaps\nremove parentheses?\n   0.0\n**********************************************************************\n1 items had failures:\n```\n\nBut if you run doctest again on `sage/modules/vector_real_double_dense.pyx`, the failure would disappear. This is an intermittent failure I came across while managing the release of Sage 4.1.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6825\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout\n\nMariah Lenox reported the following doctest failure when running the test suite:\n\n```\nsage -t  \"devel/sage/sage/modules/vector_real_double_dense.pyx\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.1.1-x86_64-Linux-core2-fc-move/devel/sage/sage/modules/vector_real_double_dense.pyx\",\nline 72:\n   sage: v.stats_skew()\nExpected:\n   0.0\nGot:\n   doctest:106: SyntaxWarning: assertion is always true, perhaps\nremove parentheses?\n   0.0\n**********************************************************************\n1 items had failures:\n```\n\nBut if you run doctest again on `sage/modules/vector_real_double_dense.pyx`, the failure would disappear. This is an intermittent failure I came across while managing the release of Sage 4.1.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6825\n\n",
     "created_at": "2009-08-25T17:18:55Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_006825.json:
 ```
 Assignee: tbd
 
-CC:  jason
+CC:  @jasongrout
 
 Mariah Lenox reported the following doctest failure when running the test suite:
 
@@ -57,7 +57,7 @@ archive/issue_comments_056288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56288",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_056289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56289",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_056290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56290",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_056292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56292",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_056293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56293",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_056294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56294",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_056295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56295",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_056296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56296",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_056297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56297",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_056298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56298",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_056299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56299",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_056300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56300",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_056301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56301",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_056302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56302",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_056303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6825#issuecomment-56303",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

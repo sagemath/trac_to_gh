@@ -14,7 +14,7 @@ archive/issues_007769.json:
     "title": "delete some rst files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7769",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -48,7 +48,7 @@ archive/issue_comments_066965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7769#issuecomment-66965",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_066966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7769#issuecomment-66966",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_066967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7769#issuecomment-66967",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003601.json:
     "title": "Reimplementation of tensor products",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3601",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 Assignee: Mike Hansen
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3601
 archive/issue_comments_025453.json:
 ```json
 {
-    "body": "Attachment [tensor_product-for_trac.patch](tarball://root/attachments/some-uuid/ticket3601/tensor_product-for_trac.patch) by aschilling created at 2008-07-08 03:39:19",
+    "body": "Attachment [tensor_product-for_trac.patch](tarball://root/attachments/some-uuid/ticket3601/tensor_product-for_trac.patch) by @anneschilling created at 2008-07-08 03:39:19",
     "created_at": "2008-07-08T03:39:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3601#issuecomment-25453",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [tensor_product-for_trac.patch](tarball://root/attachments/some-uuid/ticket3601/tensor_product-for_trac.patch) by aschilling created at 2008-07-08 03:39:19
+Attachment [tensor_product-for_trac.patch](tarball://root/attachments/some-uuid/ticket3601/tensor_product-for_trac.patch) by @anneschilling created at 2008-07-08 03:39:19
 
 
 
@@ -63,16 +63,16 @@ Attachment [tensor_product-for_trac.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_025454.json:
 ```json
 {
-    "body": "Attachment [tensor_product-3601-review.patch](tarball://root/attachments/some-uuid/ticket3601/tensor_product-3601-review.patch) by mhansen created at 2008-07-09 20:46:43\n\nHi Anne,\n\nI added a few doctests and fixed some whitespace issues (there were tabs instead of spaces).  If you're fine with these changes, I'll go ahead and give it a positive review so it can get merged.\n\n--Mike",
+    "body": "Attachment [tensor_product-3601-review.patch](tarball://root/attachments/some-uuid/ticket3601/tensor_product-3601-review.patch) by @mwhansen created at 2008-07-09 20:46:43\n\nHi Anne,\n\nI added a few doctests and fixed some whitespace issues (there were tabs instead of spaces).  If you're fine with these changes, I'll go ahead and give it a positive review so it can get merged.\n\n--Mike",
     "created_at": "2008-07-09T20:46:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3601#issuecomment-25454",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [tensor_product-3601-review.patch](tarball://root/attachments/some-uuid/ticket3601/tensor_product-3601-review.patch) by mhansen created at 2008-07-09 20:46:43
+Attachment [tensor_product-3601-review.patch](tarball://root/attachments/some-uuid/ticket3601/tensor_product-3601-review.patch) by @mwhansen created at 2008-07-09 20:46:43
 
 Hi Anne,
 
@@ -92,7 +92,7 @@ archive/issue_comments_025455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3601#issuecomment-25455",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_025456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3601#issuecomment-25456",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_025458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3601#issuecomment-25458",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

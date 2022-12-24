@@ -14,7 +14,7 @@ archive/issues_009223.json:
     "title": "improve doctest coverage of databases/cremona.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9223",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: mvngu
@@ -74,7 +74,7 @@ archive/issue_comments_086522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9223#issuecomment-86522",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -107,16 +107,16 @@ I'm not sure how to test the remaining ones...
 archive/issue_comments_086523.json:
 ```json
 {
-    "body": "Attachment [trac_9223.patch](tarball://root/attachments/some-uuid/ticket9223/trac_9223.patch) by AlexGhitza created at 2010-06-12 11:48:58",
+    "body": "Attachment [trac_9223.patch](tarball://root/attachments/some-uuid/ticket9223/trac_9223.patch) by @aghitza created at 2010-06-12 11:48:58",
     "created_at": "2010-06-12T11:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9223#issuecomment-86523",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_9223.patch](tarball://root/attachments/some-uuid/ticket9223/trac_9223.patch) by AlexGhitza created at 2010-06-12 11:48:58
+Attachment [trac_9223.patch](tarball://root/attachments/some-uuid/ticket9223/trac_9223.patch) by @aghitza created at 2010-06-12 11:48:58
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_086524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9223#issuecomment-86524",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_086525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9223#issuecomment-86525",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_086526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9223#issuecomment-86526",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -183,16 +183,16 @@ Apply after previous patch
 archive/issue_comments_086527.json:
 ```json
 {
-    "body": "Attachment [trac_9223-reviewer.patch](tarball://root/attachments/some-uuid/ticket9223/trac_9223-reviewer.patch) by cremona created at 2010-06-12 17:12:29\n\nPS Apart from that range issue, I give a positive review to everything else Alex did, so all we need is someone to review my additional patch, and a decision on what to do about the remaining missing tests.  Can we tag them as \"not tested\" with some extra explanatory code?  Of course, somce one other than William ought to test the rebuilding of the database, and it should probably be me as I am the only one who has the raw data.",
+    "body": "Attachment [trac_9223-reviewer.patch](tarball://root/attachments/some-uuid/ticket9223/trac_9223-reviewer.patch) by @JohnCremona created at 2010-06-12 17:12:29\n\nPS Apart from that range issue, I give a positive review to everything else Alex did, so all we need is someone to review my additional patch, and a decision on what to do about the remaining missing tests.  Can we tag them as \"not tested\" with some extra explanatory code?  Of course, somce one other than William ought to test the rebuilding of the database, and it should probably be me as I am the only one who has the raw data.",
     "created_at": "2010-06-12T17:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9223#issuecomment-86527",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9223-reviewer.patch](tarball://root/attachments/some-uuid/ticket9223/trac_9223-reviewer.patch) by cremona created at 2010-06-12 17:12:29
+Attachment [trac_9223-reviewer.patch](tarball://root/attachments/some-uuid/ticket9223/trac_9223-reviewer.patch) by @JohnCremona created at 2010-06-12 17:12:29
 
 PS Apart from that range issue, I give a positive review to everything else Alex did, so all we need is someone to review my additional patch, and a decision on what to do about the remaining missing tests.  Can we tag them as "not tested" with some extra explanatory code?  Of course, somce one other than William ought to test the rebuilding of the database, and it should probably be me as I am the only one who has the raw data.
 
@@ -208,7 +208,7 @@ archive/issue_comments_086528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9223#issuecomment-86528",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_086529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9223#issuecomment-86529",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_086530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9223#issuecomment-86530",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

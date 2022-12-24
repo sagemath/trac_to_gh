@@ -3,7 +3,7 @@
 archive/issues_005578.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe fix is trivial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5578\n\n",
+    "body": "Assignee: @williamstein\n\nThe fix is trivial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5578\n\n",
     "created_at": "2009-03-21T11:29:24Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005578.json:
     "title": "[with patch, needs review] elliptic curve local data cache ignores proof flag",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5578",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The fix is trivial.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5578
 archive/issue_comments_043496.json:
 ```json
 {
-    "body": "Attachment [5578-local-data.patch](tarball://root/attachments/some-uuid/ticket5578/5578-local-data.patch) by robertwb created at 2009-03-21 11:30:04",
+    "body": "Attachment [5578-local-data.patch](tarball://root/attachments/some-uuid/ticket5578/5578-local-data.patch) by @robertwb created at 2009-03-21 11:30:04",
     "created_at": "2009-03-21T11:30:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5578#issuecomment-43496",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5578-local-data.patch](tarball://root/attachments/some-uuid/ticket5578/5578-local-data.patch) by robertwb created at 2009-03-21 11:30:04
+Attachment [5578-local-data.patch](tarball://root/attachments/some-uuid/ticket5578/5578-local-data.patch) by @robertwb created at 2009-03-21 11:30:04
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_043497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5578#issuecomment-43497",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007455.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nSearching for anything on the Log page does not work due to missing javascript libraries.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7455\n\n",
+    "body": "Assignee: @aghitza\n\nSearching for anything on the Log page does not work due to missing javascript libraries.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7455\n\n",
     "created_at": "2009-11-13T20:28:26Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007455.json:
     "title": "SageNB - Searching on Log page does not work.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7455",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Searching for anything on the Log page does not work due to missing javascript libraries.
 
@@ -37,7 +37,7 @@ archive/issue_comments_062787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7455#issuecomment-62787",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing component from algebra to notebook.
 archive/issue_comments_062788.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to boothby.",
+    "body": "Changing assignee from @aghitza to boothby.",
     "created_at": "2009-11-13T22:20:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7455#issuecomment-62788",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from AlexGhitza to boothby.
+Changing assignee from @aghitza to boothby.
 
 
 
@@ -68,16 +68,16 @@ Changing assignee from AlexGhitza to boothby.
 archive/issue_comments_062789.json:
 ```json
 {
-    "body": "Attachment [trac_7455-searching-on-log-page.patch](tarball://root/attachments/some-uuid/ticket7455/trac_7455-searching-on-log-page.patch) by timdumol created at 2009-11-13 23:31:29\n\nThis remvoes the search bar from the history page and updates the tests to reflect that.",
+    "body": "Attachment [trac_7455-searching-on-log-page.patch](tarball://root/attachments/some-uuid/ticket7455/trac_7455-searching-on-log-page.patch) by @TimDumol created at 2009-11-13 23:31:29\n\nThis remvoes the search bar from the history page and updates the tests to reflect that.",
     "created_at": "2009-11-13T23:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7455#issuecomment-62789",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7455-searching-on-log-page.patch](tarball://root/attachments/some-uuid/ticket7455/trac_7455-searching-on-log-page.patch) by timdumol created at 2009-11-13 23:31:29
+Attachment [trac_7455-searching-on-log-page.patch](tarball://root/attachments/some-uuid/ticket7455/trac_7455-searching-on-log-page.patch) by @TimDumol created at 2009-11-13 23:31:29
 
 This remvoes the search bar from the history page and updates the tests to reflect that.
 
@@ -93,7 +93,7 @@ archive/issue_comments_062790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7455#issuecomment-62790",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_062791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7455#issuecomment-62791",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_062792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7455#issuecomment-62792",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_062793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7455#issuecomment-62793",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_062794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7455#issuecomment-62794",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_062795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7455#issuecomment-62795",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_062796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7455#issuecomment-62796",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

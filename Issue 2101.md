@@ -3,7 +3,7 @@
 archive/issues_002101.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nWe started with NTL:\n\nhttp://sage.math.washington.edu/home/mabshoff/SPKG-Debian/ntl-5.4.1.p11.spkg\n\nMore to come.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2101\n\n",
+    "body": "Assignee: @timabbott\n\nWe started with NTL:\n\nhttp://sage.math.washington.edu/home/mabshoff/SPKG-Debian/ntl-5.4.1.p11.spkg\n\nMore to come.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2101\n\n",
     "created_at": "2008-02-08T05:54:41Z",
     "labels": [
         "debian-package",
@@ -17,7 +17,7 @@ archive/issues_002101.json:
     "user": "mabshoff"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 We started with NTL:
 
@@ -41,7 +41,7 @@ archive/issue_comments_013690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2101#issuecomment-13690",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_013691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2101#issuecomment-13691",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_013692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2101#issuecomment-13692",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 

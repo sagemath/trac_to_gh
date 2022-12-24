@@ -3,7 +3,7 @@
 archive/issues_009810.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  leif mpatel jhpalmieri\n\nI wanted to do some testing of Sage in a loop and would check the return code to see if what I used worked or not. But this is impossible, as Sage appears to exit with 0, even if it should not have. In the example below, I try to install a non-existent package using Sage. The return code in a case like this should be non-zero, but it is not. \n\n\n```\ndrkirkby@hawk:~/sage-4.5.2$ ./sage -f some-non-existant-package\nForce installing some-non-existant-package\nCalling sage-spkg on some-non-existant-package\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\nsome-non-existant-package\nMachine:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\nDeleting directories from past builds of previous/current versions of some-non-existant-package\n/export/home/drkirkby/sage-4.5.2/local/bin/sage-spkg: file some-non-existant-package does not exist\nAttempting to download it.\nhttp://www.sagemath.org//packages/optional/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/standard/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/experimental/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/archive/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\n**********************************************************************\n* Unable to download some-non-existant-package\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\nsage: Failed to download package some-non-existant-package from http://www.sagemath.org/\ndrkirkby@hawk:~/sage-4.5.2$ $?\nbash: 0: command not found\ndrkirkby@hawk:~/sage-4.5.2$ \n```\n\n\nIn contrast, if I try this with a well written command like `ls`\n\n\n```\ndrkirkby@hawk:~/sage-4.5.2$ ls some-non-existant-package\nsome-non-existant-package: No such file or directory\ndrkirkby@hawk:~/sage-4.5.2$ $?\nbash: 2: command not found\n```\n\n\nthe exit code is non-zero - in this case 2. \n\nAlso on a similar theme is #9799, showing that `make` can exit with the wrong code too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9811\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime @qed777 @jhpalmieri\n\nI wanted to do some testing of Sage in a loop and would check the return code to see if what I used worked or not. But this is impossible, as Sage appears to exit with 0, even if it should not have. In the example below, I try to install a non-existent package using Sage. The return code in a case like this should be non-zero, but it is not. \n\n\n```\ndrkirkby@hawk:~/sage-4.5.2$ ./sage -f some-non-existant-package\nForce installing some-non-existant-package\nCalling sage-spkg on some-non-existant-package\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\nsome-non-existant-package\nMachine:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\nDeleting directories from past builds of previous/current versions of some-non-existant-package\n/export/home/drkirkby/sage-4.5.2/local/bin/sage-spkg: file some-non-existant-package does not exist\nAttempting to download it.\nhttp://www.sagemath.org//packages/optional/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/standard/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/experimental/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/archive/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\n**********************************************************************\n* Unable to download some-non-existant-package\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\nsage: Failed to download package some-non-existant-package from http://www.sagemath.org/\ndrkirkby@hawk:~/sage-4.5.2$ $?\nbash: 0: command not found\ndrkirkby@hawk:~/sage-4.5.2$ \n```\n\n\nIn contrast, if I try this with a well written command like `ls`\n\n\n```\ndrkirkby@hawk:~/sage-4.5.2$ ls some-non-existant-package\nsome-non-existant-package: No such file or directory\ndrkirkby@hawk:~/sage-4.5.2$ $?\nbash: 2: command not found\n```\n\n\nthe exit code is non-zero - in this case 2. \n\nAlso on a similar theme is #9799, showing that `make` can exit with the wrong code too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9811\n\n",
     "created_at": "2010-08-26T21:32:46Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009810.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  leif mpatel jhpalmieri
+CC:  @nexttime @qed777 @jhpalmieri
 
 I wanted to do some testing of Sage in a loop and would check the return code to see if what I used worked or not. But this is impossible, as Sage appears to exit with 0, even if it should not have. In the example below, I try to install a non-existent package using Sage. The return code in a case like this should be non-zero, but it is not. 
 
@@ -90,7 +90,7 @@ archive/issue_comments_096742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96742",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_096744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96744",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_096745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96745",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_096746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96746",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_096747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96747",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_096748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96748",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_096749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96749",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_096750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96750",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_096751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96751",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_096752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96752",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -386,16 +386,16 @@ SCRIPTS repo. Based on Sage 4.7.2.alpha4.
 archive/issue_comments_096753.json:
 ```json
 {
-    "body": "Attachment [trac_9811-use_pipestatus_in_sage-sage.scripts.patch](tarball://root/attachments/some-uuid/ticket9811/trac_9811-use_pipestatus_in_sage-sage.scripts.patch) by leif created at 2011-10-13 14:37:57\n\nFixed a typo in a comment.\n\nSorry, patch (diff) doesn't look very nice, as I've changed the indentation (and replaced spaces by tabs).",
+    "body": "Attachment [trac_9811-use_pipestatus_in_sage-sage.scripts.patch](tarball://root/attachments/some-uuid/ticket9811/trac_9811-use_pipestatus_in_sage-sage.scripts.patch) by @nexttime created at 2011-10-13 14:37:57\n\nFixed a typo in a comment.\n\nSorry, patch (diff) doesn't look very nice, as I've changed the indentation (and replaced spaces by tabs).",
     "created_at": "2011-10-13T14:37:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96753",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9811-use_pipestatus_in_sage-sage.scripts.patch](tarball://root/attachments/some-uuid/ticket9811/trac_9811-use_pipestatus_in_sage-sage.scripts.patch) by leif created at 2011-10-13 14:37:57
+Attachment [trac_9811-use_pipestatus_in_sage-sage.scripts.patch](tarball://root/attachments/some-uuid/ticket9811/trac_9811-use_pipestatus_in_sage-sage.scripts.patch) by @nexttime created at 2011-10-13 14:37:57
 
 Fixed a typo in a comment.
 
@@ -413,7 +413,7 @@ archive/issue_comments_096754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96754",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_096755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96755",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_096756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96756",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

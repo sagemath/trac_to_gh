@@ -3,7 +3,7 @@
 archive/issues_004154.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere ought to be a way to set defaults for the options to show.  Even just a dictionary in sage.plot.plot would be nice.\n\nA use-case would be setting the default aspect ratio to 1 so that if you are plotting lots of circles, it looks okay.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4154\n\n",
+    "body": "Assignee: @williamstein\n\nThere ought to be a way to set defaults for the options to show.  Even just a dictionary in sage.plot.plot would be nice.\n\nA use-case would be setting the default aspect ratio to 1 so that if you are plotting lots of circles, it looks okay.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4154\n\n",
     "created_at": "2008-09-19T22:28:23Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004154.json:
     "title": "setting defaults for show options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4154",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There ought to be a way to set defaults for the options to show.  Even just a dictionary in sage.plot.plot would be nice.
 
@@ -39,7 +39,7 @@ archive/issue_comments_030162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4154#issuecomment-30162",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_030163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4154#issuecomment-30163",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_030164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4154#issuecomment-30164",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_030165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4154#issuecomment-30165",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_030166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4154#issuecomment-30166",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_030167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4154#issuecomment-30167",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

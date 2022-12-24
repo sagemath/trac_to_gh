@@ -89,16 +89,16 @@ Michael
 archive/issue_comments_034483.json:
 ```json
 {
-    "body": "Attachment [trac_4599.patch](tarball://root/attachments/some-uuid/ticket4599/trac_4599.patch) by jsp created at 2008-11-24 23:33:30\n\nThe patch worked for me:\n\n\n\n```\n[jaap@paix sage-3.2.1.alpha0]$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\nsage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n\t [86.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 86.9 seconds\n\n```\n",
+    "body": "Attachment [trac_4599.patch](tarball://root/attachments/some-uuid/ticket4599/trac_4599.patch) by @jaapspies created at 2008-11-24 23:33:30\n\nThe patch worked for me:\n\n\n\n```\n[jaap@paix sage-3.2.1.alpha0]$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\nsage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n\t [86.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 86.9 seconds\n\n```\n",
     "created_at": "2008-11-24T23:33:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4599#issuecomment-34483",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [trac_4599.patch](tarball://root/attachments/some-uuid/ticket4599/trac_4599.patch) by jsp created at 2008-11-24 23:33:30
+Attachment [trac_4599.patch](tarball://root/attachments/some-uuid/ticket4599/trac_4599.patch) by @jaapspies created at 2008-11-24 23:33:30
 
 The patch worked for me:
 

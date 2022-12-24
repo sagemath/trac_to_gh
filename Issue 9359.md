@@ -3,7 +3,7 @@
 archive/issues_009359.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  rishi jdemeyer\n\nKeywords: doctest\n\nThis patch removes the outdated file sage.rings.number_field.totallyreal_dsage (DSage was removed months ago), adds several number field files to the reference manual, and adds a number of missing doctests. Together with the independent but complementary patch at #9336 this gets doctest coverage up to 100%.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9359\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @rishikesha @jdemeyer\n\nKeywords: doctest\n\nThis patch removes the outdated file sage.rings.number_field.totallyreal_dsage (DSage was removed months ago), adds several number field files to the reference manual, and adds a number of missing doctests. Together with the independent but complementary patch at #9336 this gets doctest coverage up to 100%.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9359\n\n",
     "created_at": "2010-06-28T16:50:54Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_009359.json:
     "title": "Get number field coverage up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9359",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  rishi jdemeyer
+CC:  @rishikesha @jdemeyer
 
 Keywords: doctest
 
@@ -41,7 +41,7 @@ archive/issue_comments_088854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88854",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_088855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88855",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_088856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88856",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_088857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88857",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_088858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88858",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_088859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88859",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_088860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88860",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_088861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88861",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_088862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88862",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_088863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88863",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_088864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88864",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -283,16 +283,16 @@ Apart from that, the patch applies fine and doctests fine, even with #9753 and #
 archive/issue_comments_088865.json:
 ```json
 {
-    "body": "Attachment [trac_9359.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359.patch) by davidloeffler created at 2010-09-23 10:21:51\n\nNew version without change to \"ideal_below\"",
+    "body": "Attachment [trac_9359.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359.patch) by @loefflerd created at 2010-09-23 10:21:51\n\nNew version without change to \"ideal_below\"",
     "created_at": "2010-09-23T10:21:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88865",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9359.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359.patch) by davidloeffler created at 2010-09-23 10:21:51
+Attachment [trac_9359.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359.patch) by @loefflerd created at 2010-09-23 10:21:51
 
 New version without change to "ideal_below"
 
@@ -308,7 +308,7 @@ archive/issue_comments_088866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88866",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_088867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88867",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_088868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88868",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_088869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88869",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -401,7 +401,7 @@ archive/issue_comments_088870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88870",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_088871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88871",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -437,7 +437,7 @@ archive/issue_comments_088872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88872",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -450,16 +450,16 @@ There are a few conflicts with #8334. I will rebase this patch.
 archive/issue_comments_088873.json:
 ```json
 {
-    "body": "Attachment [9359_rebase_to_8334.patch](tarball://root/attachments/some-uuid/ticket9359/9359_rebase_to_8334.patch) by jdemeyer created at 2010-09-27 21:04:06\n\nApply on top of #7883, #9898, #9753, #9764, #8334 and trac_9359.patch",
+    "body": "Attachment [9359_rebase_to_8334.patch](tarball://root/attachments/some-uuid/ticket9359/9359_rebase_to_8334.patch) by @jdemeyer created at 2010-09-27 21:04:06\n\nApply on top of #7883, #9898, #9753, #9764, #8334 and trac_9359.patch",
     "created_at": "2010-09-27T21:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88873",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9359_rebase_to_8334.patch](tarball://root/attachments/some-uuid/ticket9359/9359_rebase_to_8334.patch) by jdemeyer created at 2010-09-27 21:04:06
+Attachment [9359_rebase_to_8334.patch](tarball://root/attachments/some-uuid/ticket9359/9359_rebase_to_8334.patch) by @jdemeyer created at 2010-09-27 21:04:06
 
 Apply on top of #7883, #9898, #9753, #9764, #8334 and trac_9359.patch
 
@@ -475,7 +475,7 @@ archive/issue_comments_088874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88874",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_088875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88875",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_088876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88876",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_088877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88877",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -547,7 +547,7 @@ archive/issue_comments_088878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88878",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -565,7 +565,7 @@ archive/issue_comments_088879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88879",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -583,7 +583,7 @@ archive/issue_comments_088880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88880",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -596,16 +596,16 @@ Could someone update the commit string of the patch so its first line is a < 80 
 archive/issue_comments_088881.json:
 ```json
 {
-    "body": "Attachment [trac_9359-fixed.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359-fixed.patch) by davidloeffler created at 2010-09-28 10:13:47\n\nQfolded patch with better commit string. Apply only this patch.",
+    "body": "Attachment [trac_9359-fixed.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359-fixed.patch) by @loefflerd created at 2010-09-28 10:13:47\n\nQfolded patch with better commit string. Apply only this patch.",
     "created_at": "2010-09-28T10:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88881",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9359-fixed.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359-fixed.patch) by davidloeffler created at 2010-09-28 10:13:47
+Attachment [trac_9359-fixed.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359-fixed.patch) by @loefflerd created at 2010-09-28 10:13:47
 
 Qfolded patch with better commit string. Apply only this patch.
 
@@ -621,7 +621,7 @@ archive/issue_comments_088882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88882",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -639,7 +639,7 @@ archive/issue_comments_088883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88883",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -657,7 +657,7 @@ archive/issue_comments_088884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88884",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -685,7 +685,7 @@ archive/issue_comments_088885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88885",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -703,7 +703,7 @@ archive/issue_comments_088886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88886",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -716,16 +716,16 @@ fix duplicate citation
 archive/issue_comments_088887.json:
 ```json
 {
-    "body": "Attachment [trac_9359-docfix.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359-docfix.patch) by davidloeffler created at 2010-09-28 11:18:58\n\nDocfix patch as requested. We should really have a single table of citations for the whole reference manual -- one of the conflicts here was with another file citing 'the same textbook' -- but this'll do for now.",
+    "body": "Attachment [trac_9359-docfix.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359-docfix.patch) by @loefflerd created at 2010-09-28 11:18:58\n\nDocfix patch as requested. We should really have a single table of citations for the whole reference manual -- one of the conflicts here was with another file citing 'the same textbook' -- but this'll do for now.",
     "created_at": "2010-09-28T11:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88887",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9359-docfix.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359-docfix.patch) by davidloeffler created at 2010-09-28 11:18:58
+Attachment [trac_9359-docfix.patch](tarball://root/attachments/some-uuid/ticket9359/trac_9359-docfix.patch) by @loefflerd created at 2010-09-28 11:18:58
 
 Docfix patch as requested. We should really have a single table of citations for the whole reference manual -- one of the conflicts here was with another file citing 'the same textbook' -- but this'll do for now.
 
@@ -741,7 +741,7 @@ archive/issue_comments_088888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88888",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -759,7 +759,7 @@ archive/issue_comments_088889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88889",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -777,7 +777,7 @@ archive/issue_comments_088890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9359#issuecomment-88890",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

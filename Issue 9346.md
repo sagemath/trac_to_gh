@@ -3,7 +3,7 @@
 archive/issues_009346.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  mpatel jsp\n\nA recent update to the sage_fortran package (#7982), was made to aid the creation of 64-bit object files when the environment variable SAGE64 was set to yes. The patch accomplished that task. \n\nUnfortunately, this was as the cost of 32-bit object files. \n\nInstead of the file sage_fortran being a small script to invoke the Fortran compiler, it is now a broken script.\n\n\n```\n$ cat local/bin/sage_fortran\n#!/bin/sh \n```\n\n\nSince a 64-bit port is not complete and this breaks a 32-bit build, it means Sage is totally broken on Solaris. \n\nFortunately the required change is very small indeed. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9346\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @qed777 @jaapspies\n\nA recent update to the sage_fortran package (#7982), was made to aid the creation of 64-bit object files when the environment variable SAGE64 was set to yes. The patch accomplished that task. \n\nUnfortunately, this was as the cost of 32-bit object files. \n\nInstead of the file sage_fortran being a small script to invoke the Fortran compiler, it is now a broken script.\n\n\n```\n$ cat local/bin/sage_fortran\n#!/bin/sh \n```\n\n\nSince a 64-bit port is not complete and this breaks a 32-bit build, it means Sage is totally broken on Solaris. \n\nFortunately the required change is very small indeed. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9346\n\n",
     "created_at": "2010-06-26T18:06:03Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009346.json:
 ```
 Assignee: drkirkby
 
-CC:  mpatel jsp
+CC:  @qed777 @jaapspies
 
 A recent update to the sage_fortran package (#7982), was made to aid the creation of 64-bit object files when the environment variable SAGE64 was set to yes. The patch accomplished that task. 
 
@@ -56,7 +56,7 @@ archive/issue_comments_088724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9346#issuecomment-88724",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_088725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9346#issuecomment-88725",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -89,16 +89,16 @@ Changing status from new to needs_review.
 archive/issue_comments_088726.json:
 ```json
 {
-    "body": "Attachment [fortran20100626.patch](tarball://root/attachments/some-uuid/ticket9346/fortran20100626.patch) by jhpalmieri created at 2010-06-26 23:24:39\n\nBy the way, this spkg is not compressed, so if you want to manually extract it, type \"tar xf ...\" rather than \"tar jxf ...\".  (The uncompressed version ended up being a little smaller than the compressed one, and is faster to create and to uncompress.)",
+    "body": "Attachment [fortran20100626.patch](tarball://root/attachments/some-uuid/ticket9346/fortran20100626.patch) by @jhpalmieri created at 2010-06-26 23:24:39\n\nBy the way, this spkg is not compressed, so if you want to manually extract it, type \"tar xf ...\" rather than \"tar jxf ...\".  (The uncompressed version ended up being a little smaller than the compressed one, and is faster to create and to uncompress.)",
     "created_at": "2010-06-26T23:24:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9346#issuecomment-88726",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [fortran20100626.patch](tarball://root/attachments/some-uuid/ticket9346/fortran20100626.patch) by jhpalmieri created at 2010-06-26 23:24:39
+Attachment [fortran20100626.patch](tarball://root/attachments/some-uuid/ticket9346/fortran20100626.patch) by @jhpalmieri created at 2010-06-26 23:24:39
 
 By the way, this spkg is not compressed, so if you want to manually extract it, type "tar xf ..." rather than "tar jxf ...".  (The uncompressed version ended up being a little smaller than the compressed one, and is faster to create and to uncompress.)
 
@@ -251,7 +251,7 @@ archive/issue_comments_088729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9346#issuecomment-88729",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_088730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9346#issuecomment-88730",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

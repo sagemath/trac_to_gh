@@ -3,7 +3,7 @@
 archive/issues_005836.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was\n\nThe patch makes the cell containing:\n\n```\nshow(plot(x^2, (x, -2,2)))\nprint \"hi\"\n```\n\ndisplay the plot before printing \"hi\".  This makes it much easier to construct nice-looking output.\n\nWilliam should get author credit on this one as well as me, since he showed how it could be done in a demo.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5836\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nThe patch makes the cell containing:\n\n```\nshow(plot(x^2, (x, -2,2)))\nprint \"hi\"\n```\n\ndisplay the plot before printing \"hi\".  This makes it much easier to construct nice-looking output.\n\nWilliam should get author credit on this one as well as me, since he showed how it could be done in a demo.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5836\n\n",
     "created_at": "2009-04-20T18:30:27Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_005836.json:
     "title": "Make show() immediately show an image in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5836",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was
+CC:  @williamstein
 
 The patch makes the cell containing:
 
@@ -48,7 +48,7 @@ archive/issue_comments_045861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5836#issuecomment-45861",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_045862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5836#issuecomment-45862",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,16 +117,16 @@ Got:
 archive/issue_comments_045863.json:
 ```json
 {
-    "body": "Attachment [trac-5836-show-html.patch](tarball://root/attachments/some-uuid/ticket5836/trac-5836-show-html.patch) by jason created at 2009-04-20 18:46:00\n\nPatch redone to correct the doctests.",
+    "body": "Attachment [trac-5836-show-html.patch](tarball://root/attachments/some-uuid/ticket5836/trac-5836-show-html.patch) by @jasongrout created at 2009-04-20 18:46:00\n\nPatch redone to correct the doctests.",
     "created_at": "2009-04-20T18:46:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5836#issuecomment-45863",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-5836-show-html.patch](tarball://root/attachments/some-uuid/ticket5836/trac-5836-show-html.patch) by jason created at 2009-04-20 18:46:00
+Attachment [trac-5836-show-html.patch](tarball://root/attachments/some-uuid/ticket5836/trac-5836-show-html.patch) by @jasongrout created at 2009-04-20 18:46:00
 
 Patch redone to correct the doctests.
 

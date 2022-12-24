@@ -3,7 +3,7 @@
 archive/issues_003985.json:
 ```json
 {
-    "body": "Assignee: was\n\nPlotting functions like 1/x, tan, etc. have asymptotes essentially plotted in Sage at this point.  This is okay, except that the scale is way out of whack, so things look very odd.  Sage should either remove the asymptote piece of these plots somehow (how is not obvious) or fix the ymin and ymax in show so that it just looks like the asymptotes are plotted.  \nE.g.\n\n```\nsage: plot(tan,-20,20).show(ymin=-5, ymax=5) \n```\n\nexcept automatic detection of the ymin and ymax.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3985\n\n",
+    "body": "Assignee: @williamstein\n\nPlotting functions like 1/x, tan, etc. have asymptotes essentially plotted in Sage at this point.  This is okay, except that the scale is way out of whack, so things look very odd.  Sage should either remove the asymptote piece of these plots somehow (how is not obvious) or fix the ymin and ymax in show so that it just looks like the asymptotes are plotted.  \nE.g.\n\n```\nsage: plot(tan,-20,20).show(ymin=-5, ymax=5) \n```\n\nexcept automatic detection of the ymin and ymax.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3985\n\n",
     "created_at": "2008-08-29T02:28:48Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003985.json:
     "title": "Asymptote plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3985",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Plotting functions like 1/x, tan, etc. have asymptotes essentially plotted in Sage at this point.  This is okay, except that the scale is way out of whack, so things look very odd.  Sage should either remove the asymptote piece of these plots somehow (how is not obvious) or fix the ymin and ymax in show so that it just looks like the asymptotes are plotted.  
 E.g.
@@ -66,7 +66,7 @@ archive/issue_comments_028664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3985#issuecomment-28664",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_028665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3985#issuecomment-28665",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_028666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3985#issuecomment-28666",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_028667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3985#issuecomment-28667",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

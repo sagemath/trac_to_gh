@@ -3,7 +3,7 @@
 archive/issues_000553.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\nThe input should be\n\n       f = x^(1/9) + (2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9)\n\nNote that * before (x-1).  That your input was accepted is an indication\nthat SAGE should be more restrictive with what it allows.  What's\nhappening is that (2^(8/9) - 2^(1/9)) is parsed as a symbolic expression (a\nconstant function), and then 2^(8/9) - 2^(1/9))(x - 1) is the value of that\nconstant function at x-1.  Yep, that this is allowed is ridiculous, and should\nbe changed (I've filed a bug report). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/553\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\nThe input should be\n\n       f = x^(1/9) + (2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9)\n\nNote that * before (x-1).  That your input was accepted is an indication\nthat SAGE should be more restrictive with what it allows.  What's\nhappening is that (2^(8/9) - 2^(1/9)) is parsed as a symbolic expression (a\nconstant function), and then 2^(8/9) - 2^(1/9))(x - 1) is the value of that\nconstant function at x-1.  Yep, that this is allowed is ridiculous, and should\nbe changed (I've filed a bug report). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/553\n\n",
     "created_at": "2007-09-01T17:22:55Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_000553.json:
     "title": "calling of symbolic expressions is sometimes ridiculous",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/553",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/553
 archive/issue_comments_002851.json:
 ```json
 {
-    "body": "Attachment [553.patch](tarball://root/attachments/some-uuid/ticket553/553.patch) by mhansen created at 2007-09-06 22:49:40\n\nI attached a patch which throws an error when trying to substitute into a constant expression.\nIt can be overridden by passing a substitute=True parameter to __call__. \n\nAll doc tests pass with it.",
+    "body": "Attachment [553.patch](tarball://root/attachments/some-uuid/ticket553/553.patch) by @mwhansen created at 2007-09-06 22:49:40\n\nI attached a patch which throws an error when trying to substitute into a constant expression.\nIt can be overridden by passing a substitute=True parameter to __call__. \n\nAll doc tests pass with it.",
     "created_at": "2007-09-06T22:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2851",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [553.patch](tarball://root/attachments/some-uuid/ticket553/553.patch) by mhansen created at 2007-09-06 22:49:40
+Attachment [553.patch](tarball://root/attachments/some-uuid/ticket553/553.patch) by @mwhansen created at 2007-09-06 22:49:40
 
 I attached a patch which throws an error when trying to substitute into a constant expression.
 It can be overridden by passing a substitute=True parameter to __call__. 
@@ -69,16 +69,16 @@ All doc tests pass with it.
 archive/issue_comments_002852.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-09-06T22:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2852",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_002853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2853",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_002854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2854",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_002855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2855",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_002856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2856",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_002857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2857",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_002858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2858",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -217,16 +217,16 @@ sage: (2^(8/9)-2^(1/9)).number_of_arguments()
 archive/issue_comments_002859.json:
 ```json
 {
-    "body": "Attachment [533.patch](tarball://root/attachments/some-uuid/ticket553/533.patch) by mhansen created at 2007-12-06 10:55:08",
+    "body": "Attachment [533.patch](tarball://root/attachments/some-uuid/ticket553/533.patch) by @mwhansen created at 2007-12-06 10:55:08",
     "created_at": "2007-12-06T10:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2859",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [533.patch](tarball://root/attachments/some-uuid/ticket553/533.patch) by mhansen created at 2007-12-06 10:55:08
+Attachment [533.patch](tarball://root/attachments/some-uuid/ticket553/533.patch) by @mwhansen created at 2007-12-06 10:55:08
 
 
 
@@ -240,7 +240,7 @@ archive/issue_comments_002860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2860",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_002861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2861",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -271,16 +271,16 @@ apply this patch and the one right above it.
 archive/issue_comments_002862.json:
 ```json
 {
-    "body": "Attachment [trac-553-part2.patch](tarball://root/attachments/some-uuid/ticket553/trac-553-part2.patch) by was created at 2007-12-15 11:13:06",
+    "body": "Attachment [trac-553-part2.patch](tarball://root/attachments/some-uuid/ticket553/trac-553-part2.patch) by @williamstein created at 2007-12-15 11:13:06",
     "created_at": "2007-12-15T11:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/553#issuecomment-2862",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-553-part2.patch](tarball://root/attachments/some-uuid/ticket553/trac-553-part2.patch) by was created at 2007-12-15 11:13:06
+Attachment [trac-553-part2.patch](tarball://root/attachments/some-uuid/ticket553/trac-553-part2.patch) by @williamstein created at 2007-12-15 11:13:06
 
 
 

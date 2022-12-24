@@ -14,7 +14,7 @@ archive/issues_005054.json:
     "title": "add support for doctesting worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5054",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -61,7 +61,7 @@ archive/issue_comments_038508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5054#issuecomment-38508",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

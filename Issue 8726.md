@@ -3,7 +3,7 @@
 archive/issues_008726.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  chapoton\n\nEvery now and then, I work on a worksheet in my office and accidentally leave it open when I go to class.  In class, as I'm using the worksheet, at seemingly random times, the worksheet jumps up to the top of the worksheet.  I think it's the \"auto-update of changes\" feature that is the problem (i.e., the worksheet in my office somehow broadcasts changes to the worksheet I'm using in class, which causes the worksheet in class to jump around at occasionally).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8726\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nEvery now and then, I work on a worksheet in my office and accidentally leave it open when I go to class.  In class, as I'm using the worksheet, at seemingly random times, the worksheet jumps up to the top of the worksheet.  I think it's the \"auto-update of changes\" feature that is the problem (i.e., the worksheet in my office somehow broadcasts changes to the worksheet I'm using in class, which causes the worksheet in class to jump around at occasionally).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8726\n\n",
     "created_at": "2010-04-20T15:57:45Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008726.json:
     "title": "opening two copies of a worksheet causes jumping",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8726",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  chapoton
+CC:  @fchapoton
 
 Every now and then, I work on a worksheet in my office and accidentally leave it open when I go to class.  In class, as I'm using the worksheet, at seemingly random times, the worksheet jumps up to the top of the worksheet.  I think it's the "auto-update of changes" feature that is the problem (i.e., the worksheet in my office somehow broadcasts changes to the worksheet I'm using in class, which causes the worksheet in class to jump around at occasionally).
 
@@ -40,7 +40,7 @@ archive/issue_comments_079703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8726#issuecomment-79703",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_079704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8726#issuecomment-79704",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_079705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8726#issuecomment-79705",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

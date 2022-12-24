@@ -14,7 +14,7 @@ archive/issues_009298.json:
     "title": "Memory leak in libsingular polynomial evaluation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9298",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -90,7 +90,7 @@ Indeed, the leak seems fixed. This ticket can be closed.
 archive/issue_comments_087593.json:
 ```json
 {
-    "body": "Changing assignee from tbd to malb.",
+    "body": "Changing assignee from tbd to @malb.",
     "created_at": "2013-01-02T14:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9298",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_087593.json:
 }
 ```
 
-Changing assignee from tbd to malb.
+Changing assignee from tbd to @malb.
 
 
 
@@ -167,7 +167,7 @@ archive/issue_comments_087597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9298#issuecomment-87597",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

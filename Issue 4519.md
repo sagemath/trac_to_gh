@@ -3,7 +3,7 @@
 archive/issues_004519.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThere's a problem with the build code that was first introduced by #4377. Here's an example of how to see this: pick your favorite `.pyx` file (I was using `gen.pyx`), and break it -- just make some syntax error, and save. Now do a `sage -br` -- you see that it says there's an error ... but then it still runs sage! Oops.\n\nThe underlying problem is that if we pass back a different exit code (in the case I was running into, it was 256), the `python setup.py install` still returns 0. \n\nThe attached patch fixes the trouble. Is there a way to test something like this?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4519\n\n",
+    "body": "Assignee: @craigcitro\n\nThere's a problem with the build code that was first introduced by #4377. Here's an example of how to see this: pick your favorite `.pyx` file (I was using `gen.pyx`), and break it -- just make some syntax error, and save. Now do a `sage -br` -- you see that it says there's an error ... but then it still runs sage! Oops.\n\nThe underlying problem is that if we pass back a different exit code (in the case I was running into, it was 256), the `python setup.py install` still returns 0. \n\nThe attached patch fixes the trouble. Is there a way to test something like this?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4519\n\n",
     "created_at": "2008-11-14T06:26:15Z",
     "labels": [
         "build",
@@ -14,10 +14,10 @@ archive/issues_004519.json:
     "title": "[with patch, needs review] problem with build code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4519",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 There's a problem with the build code that was first introduced by #4377. Here's an example of how to see this: pick your favorite `.pyx` file (I was using `gen.pyx`), and break it -- just make some syntax error, and save. Now do a `sage -br` -- you see that it says there's an error ... but then it still runs sage! Oops.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4519
 archive/issue_comments_033540.json:
 ```json
 {
-    "body": "Attachment [trac-4519.patch](tarball://root/attachments/some-uuid/ticket4519/trac-4519.patch) by craigcitro created at 2008-11-14 06:26:54",
+    "body": "Attachment [trac-4519.patch](tarball://root/attachments/some-uuid/ticket4519/trac-4519.patch) by @craigcitro created at 2008-11-14 06:26:54",
     "created_at": "2008-11-14T06:26:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4519#issuecomment-33540",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4519.patch](tarball://root/attachments/some-uuid/ticket4519/trac-4519.patch) by craigcitro created at 2008-11-14 06:26:54
+Attachment [trac-4519.patch](tarball://root/attachments/some-uuid/ticket4519/trac-4519.patch) by @craigcitro created at 2008-11-14 06:26:54
 
 
 

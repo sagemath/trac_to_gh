@@ -3,7 +3,7 @@
 archive/issues_005588.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nKeywords: developer\n\nThe attachment does the following things:\n\n1. It says that the Sage style for typesetting the standard rings (ZZ, CC, etc.) is to use mathbf, not mathbb.\n\n2. It discusses trying to achieve a balance between the appearance of the docstring in interactive help vs. in the reference manual.\n\n3. In the paragraph starting \"Finally\", it mentions some nonstandard macros available for use in docstrings.  This part depends on #5555.\n\n4. It mentions that methods which start with an underscore don't appear in the reference manual, and this should be taken into consideration when writing documentation. The example in this part depends on #5529.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5588\n\n",
+    "body": "Assignee: @jhpalmieri\n\nKeywords: developer\n\nThe attachment does the following things:\n\n1. It says that the Sage style for typesetting the standard rings (ZZ, CC, etc.) is to use mathbf, not mathbb.\n\n2. It discusses trying to achieve a balance between the appearance of the docstring in interactive help vs. in the reference manual.\n\n3. In the paragraph starting \"Finally\", it mentions some nonstandard macros available for use in docstrings.  This part depends on #5555.\n\n4. It mentions that methods which start with an underscore don't appear in the reference manual, and this should be taken into consideration when writing documentation. The example in this part depends on #5529.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5588\n\n",
     "created_at": "2009-03-23T04:35:58Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_005588.json:
     "title": "[with patch, needs review] developer's guide: more information about docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5588",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 Keywords: developer
 
@@ -48,7 +48,7 @@ archive/issue_comments_043549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5588#issuecomment-43549",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_043550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5588#issuecomment-43550",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_043551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5588#issuecomment-43551",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -102,16 +102,16 @@ Let's delay this one for a while.  If #5610 gets in, then I'll need to revise th
 archive/issue_comments_043552.json:
 ```json
 {
-    "body": "Attachment [developer.patch](tarball://root/attachments/some-uuid/ticket5588/developer.patch) by jhpalmieri created at 2009-04-24 17:11:40\n\nNow that #5610 is in (as of 3.4.2.alpha0), here's a version of the patch which is ready for review.",
+    "body": "Attachment [developer.patch](tarball://root/attachments/some-uuid/ticket5588/developer.patch) by @jhpalmieri created at 2009-04-24 17:11:40\n\nNow that #5610 is in (as of 3.4.2.alpha0), here's a version of the patch which is ready for review.",
     "created_at": "2009-04-24T17:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5588#issuecomment-43552",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [developer.patch](tarball://root/attachments/some-uuid/ticket5588/developer.patch) by jhpalmieri created at 2009-04-24 17:11:40
+Attachment [developer.patch](tarball://root/attachments/some-uuid/ticket5588/developer.patch) by @jhpalmieri created at 2009-04-24 17:11:40
 
 Now that #5610 is in (as of 3.4.2.alpha0), here's a version of the patch which is ready for review.
 
@@ -127,7 +127,7 @@ archive/issue_comments_043553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5588#issuecomment-43553",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

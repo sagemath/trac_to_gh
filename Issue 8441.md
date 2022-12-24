@@ -3,7 +3,7 @@
 archive/issues_008441.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kedlaya\n\nKeywords: heights, Coleman integration, hyperelliptic curves\n\nCurrently, a work in progress (lots of doctests need to be written and internal print statements removed; the code itself will be cleaned up over the next few weeks), but the main function, which computes the Coleman-Gross local height pairing at p for hyperelliptic curves, does the following:\n\n(This example is computing h_7(D_1, D_2) and h_7(D_2, D_1), for D_1 = (P) - (Q) and D_2 = (Pprime)-(Qprime), in the notation of R. Coleman and B. Gross, p-adic heights on curves, Algebraic Number Theory, 1989, pp-73-81.)\n\n\n```\n        sage: R.<x> = QQ[]                                                                                \n        sage: H = HyperellipticCurve(x*(x-1)*(x+9))                                                       \n        sage: K = Qp(7,10)                                                                                \n        sage: HK = H.change_ring(K)                                                                       \n        sage: P = HK(9,36)                                                                                \n        sage: Q = HK.teichmuller(P)                                                                       \n        sage: Pprime = HK(-4,10)                                                                          \n        sage: Qprime = HK.teichmuller(Pprime)                                                             \n        sage: HK.height([(1,P),(-1,Q)],[(1,Pprime),(-1,Qprime)],10)                                       \n        2*7^2 + 5*7^3 + 7^4 + 7^5 + 2*7^6 + 3*7^7 + 7^8 + 3*7^9 + O(7^10)                                 \n        sage: HK.height([(1,Pprime),(-1,Qprime)],[(1,P),(-1,Q)],10)                                       \n        2*7^2 + 5*7^3 + 7^4 + 7^5 + 2*7^6 + 3*7^7 + 7^8 + 3*7^9 + O(7^10)      \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8441\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kedlaya\n\nKeywords: heights, Coleman integration, hyperelliptic curves\n\nCurrently, a work in progress (lots of doctests need to be written and internal print statements removed; the code itself will be cleaned up over the next few weeks), but the main function, which computes the Coleman-Gross local height pairing at p for hyperelliptic curves, does the following:\n\n(This example is computing h_7(D_1, D_2) and h_7(D_2, D_1), for D_1 = (P) - (Q) and D_2 = (Pprime)-(Qprime), in the notation of R. Coleman and B. Gross, p-adic heights on curves, Algebraic Number Theory, 1989, pp-73-81.)\n\n\n```\n        sage: R.<x> = QQ[]                                                                                \n        sage: H = HyperellipticCurve(x*(x-1)*(x+9))                                                       \n        sage: K = Qp(7,10)                                                                                \n        sage: HK = H.change_ring(K)                                                                       \n        sage: P = HK(9,36)                                                                                \n        sage: Q = HK.teichmuller(P)                                                                       \n        sage: Pprime = HK(-4,10)                                                                          \n        sage: Qprime = HK.teichmuller(Pprime)                                                             \n        sage: HK.height([(1,P),(-1,Q)],[(1,Pprime),(-1,Qprime)],10)                                       \n        2*7^2 + 5*7^3 + 7^4 + 7^5 + 2*7^6 + 3*7^7 + 7^8 + 3*7^9 + O(7^10)                                 \n        sage: HK.height([(1,Pprime),(-1,Qprime)],[(1,P),(-1,Q)],10)                                       \n        2*7^2 + 5*7^3 + 7^4 + 7^5 + 2*7^6 + 3*7^7 + 7^8 + 3*7^9 + O(7^10)      \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8441\n\n",
     "created_at": "2010-03-05T01:26:33Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_008441.json:
     "title": "Coleman-Gross local height pairing on hyperelliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8441",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kedlaya
+CC:  @kedlaya
 
 Keywords: heights, Coleman integration, hyperelliptic curves
 
@@ -60,7 +60,7 @@ archive/issue_comments_075791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8441#issuecomment-75791",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_075792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8441#issuecomment-75792",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -91,16 +91,16 @@ Changing status from new to needs_work.
 archive/issue_comments_075793.json:
 ```json
 {
-    "body": "Attachment [13544.patch](tarball://root/attachments/some-uuid/ticket8441/13544.patch) by jen created at 2010-03-05 01:34:27",
+    "body": "Attachment [13544.patch](tarball://root/attachments/some-uuid/ticket8441/13544.patch) by @jbalakrishnan created at 2010-03-05 01:34:27",
     "created_at": "2010-03-05T01:34:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8441#issuecomment-75793",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [13544.patch](tarball://root/attachments/some-uuid/ticket8441/13544.patch) by jen created at 2010-03-05 01:34:27
+Attachment [13544.patch](tarball://root/attachments/some-uuid/ticket8441/13544.patch) by @jbalakrishnan created at 2010-03-05 01:34:27
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_075794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8441#issuecomment-75794",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_075795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8441#issuecomment-75795",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_075796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8441#issuecomment-75796",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -167,16 +167,16 @@ apply only trac_8441_rebased.patch
 archive/issue_comments_075797.json:
 ```json
 {
-    "body": "Attachment [trac_8441_rebased.patch](tarball://root/attachments/some-uuid/ticket8441/trac_8441_rebased.patch) by chapoton created at 2013-10-04 21:14:51",
+    "body": "Attachment [trac_8441_rebased.patch](tarball://root/attachments/some-uuid/ticket8441/trac_8441_rebased.patch) by @fchapoton created at 2013-10-04 21:14:51",
     "created_at": "2013-10-04T21:14:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8441#issuecomment-75797",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_8441_rebased.patch](tarball://root/attachments/some-uuid/ticket8441/trac_8441_rebased.patch) by chapoton created at 2013-10-04 21:14:51
+Attachment [trac_8441_rebased.patch](tarball://root/attachments/some-uuid/ticket8441/trac_8441_rebased.patch) by @fchapoton created at 2013-10-04 21:14:51
 
 
 
@@ -190,7 +190,7 @@ archive/issue_comments_075798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8441#issuecomment-75798",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_075799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8441#issuecomment-75799",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_075807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8441#issuecomment-75807",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_075808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8441#issuecomment-75808",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_075810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8441#issuecomment-75810",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

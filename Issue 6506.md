@@ -14,7 +14,7 @@ archive/issues_006506.json:
     "title": "further numpy type conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6506",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: jkantor
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6506
 archive/issue_comments_053004.json:
 ```json
 {
-    "body": "Attachment [6506-numpy-types.patch](tarball://root/attachments/some-uuid/ticket6506/6506-numpy-types.patch) by jason created at 2009-07-18 23:57:17\n\nCarl, as one of the resident experts on precision issues, could you glance at the last part of this patch, which touches real_mpfr.pyx and seems to deal with precision issues?",
+    "body": "Attachment [6506-numpy-types.patch](tarball://root/attachments/some-uuid/ticket6506/6506-numpy-types.patch) by @jasongrout created at 2009-07-18 23:57:17\n\nCarl, as one of the resident experts on precision issues, could you glance at the last part of this patch, which touches real_mpfr.pyx and seems to deal with precision issues?",
     "created_at": "2009-07-18T23:57:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53004",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [6506-numpy-types.patch](tarball://root/attachments/some-uuid/ticket6506/6506-numpy-types.patch) by jason created at 2009-07-18 23:57:17
+Attachment [6506-numpy-types.patch](tarball://root/attachments/some-uuid/ticket6506/6506-numpy-types.patch) by @jasongrout created at 2009-07-18 23:57:17
 
 Carl, as one of the resident experts on precision issues, could you glance at the last part of this patch, which touches real_mpfr.pyx and seems to deal with precision issues?
 
@@ -59,7 +59,7 @@ archive/issue_comments_053005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53005",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -72,16 +72,16 @@ apply on top of previous patch
 archive/issue_comments_053006.json:
 ```json
 {
-    "body": "Attachment [trac-6506-doc-fixes.patch](tarball://root/attachments/some-uuid/ticket6506/trac-6506-doc-fixes.patch) by jason created at 2009-07-19 03:44:02\n\nI posted a patch which fixes lots of the documentation errors on #5081.  There are still some problems.\n\n* printing issues, presumably because of the work from the patch on this ticket on the precision code.  It appears there is one less zero printed in numbers.\n\n\n```\n$ sage -t complex_number.pyx \nsage -t  \"devel/sage-main/sage/rings/complex_number.pyx\"    \n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/complex_number.pyx\", line 1917:\n    sage: ComplexNumber(1.000000000000000000000000000,2)\nExpected:\n    1.000000000000000000000000000 + 2.000000000000000000000000000*I\nGot:\n    1.00000000000000000000000000 + 2.00000000000000000000000000*I\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/complex_number.pyx\", line 1919:\n    sage: ComplexNumber(1,2.000000000000000000000)\nExpected:\n    1.000000000000000000000 + 2.000000000000000000000*I\nGot:\n    1.00000000000000000000 + 2.00000000000000000000*I\n**********************************************************************\n1 items had failures:\n   2 of   9 in __main__.example_74\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/grout/sage/tmp/.doctest_complex_number.py\n\t [11.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/complex_number.pyx\"\nTotal time for all tests: 11.8 seconds\n\n\n$ sage -t real_mpfr.pyx \nsage -t  \"devel/sage-main/sage/rings/real_mpfr.pyx\"         \n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/real_mpfr.pyx\", line 4299:\n    sage: RealNumber('1.0000000000000000000000000000000000')\nExpected:\n    1.0000000000000000000000000000000000\nGot:\n    1.000000000000000000000000000000000\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_126\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/grout/sage/tmp/.doctest_real_mpfr.py\n\t [15.1 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/real_mpfr.pyx\"\nTotal time for all tests: 15.1 seconds\n\n\n\n```\n\n\n\n* Another error pointed out on #5081 that is deeper than a printing issue.  There appears to be a bug in the code---the same variable is used in a list comprehension as is used in an enclosing loop.  I rewrote some of the code to not use some numpy and string parsing, instead using python zip and string join methods.  However, there still seems to be an error.  Can someone more familiar with the code look at this?  I think all of these errors stem from the same problem.\n\n\n```\n$ sage -t rings/number_field/totallyreal_rel.py \nsage -t  \"devel/sage-main/sage/rings/number_field/totallyreal_rel.py\"\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 156:\n    sage: T = sage.rings.number_field.totallyreal_rel.tr_data_rel(F, 2, 2000)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[3]>\", line 1, in <module>\n        T = sage.rings.number_field.totallyreal_rel.tr_data_rel(F, Integer(2), Integer(2000))###line 156:\n    sage: T = sage.rings.number_field.totallyreal_rel.tr_data_rel(F, 2, 2000)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 200, in __init__\n        anm1s[i] += sum([m*Z_Fbasis[i]*adj[i].__int__()//adj[self.d].__int__() for i in range(self.d)])\n    IndexError: list index out of range\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 568:\n    sage: enumerate_totallyreal_fields_rel(F, 2, 2000)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[4]>\", line 1, in <module>\n        enumerate_totallyreal_fields_rel(F, Integer(2), Integer(2000))###line 568:\n    sage: enumerate_totallyreal_fields_rel(F, 2, 2000)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 646, in enumerate_totallyreal_fields_rel\n        T = tr_data_rel(F,m,B,a)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 200, in __init__\n        anm1s[i] += sum([m*Z_Fbasis[i]*adj[i].__int__()//adj[self.d].__int__() for i in range(self.d)])\n    IndexError: list index out of range\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 577:\n    sage: ls = enumerate_totallyreal_fields_rel(F, 2, 10^4)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[6]>\", line 1, in <module>\n        ls = enumerate_totallyreal_fields_rel(F, Integer(2), Integer(10)**Integer(4))###line 577:\n    sage: ls = enumerate_totallyreal_fields_rel(F, 2, 10^4)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 646, in enumerate_totallyreal_fields_rel\n        T = tr_data_rel(F,m,B,a)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 200, in __init__\n        anm1s[i] += sum([m*Z_Fbasis[i]*adj[i].__int__()//adj[self.d].__int__() for i in range(self.d)])\n    IndexError: list index out of range\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 578:\n    sage: print \"ignore this\";  ls # random (the second factor is platform-dependent)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[7]>\", line 1, in <module>\n        print \"ignore this\";  ls # random (the second factor is platform-dependent)###line 578:\n    sage: print \"ignore this\";  ls # random (the second factor is platform-dependent)\n    NameError: name 'ls' is not defined\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 600:\n    sage: [ f[0] for f in ls ]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[8]>\", line 1, in <module>\n        [ f[Integer(0)] for f in ls ]###line 600:\n    sage: [ f[0] for f in ls ]\n    NameError: name 'ls' is not defined\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 603:\n    sage: [NumberField(ZZx(x[1]), 't').is_galois() for x in ls]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[9]>\", line 1, in <module>\n        [NumberField(ZZx(x[Integer(1)]), 't').is_galois() for x in ls]###line 603:\n    sage: [NumberField(ZZx(x[1]), 't').is_galois() for x in ls]\n    NameError: name 'ls' is not defined\n**********************************************************************\n2 items had failures:\n   1 of   4 in __main__.example_3\n   5 of  12 in __main__.example_5\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/grout/sage/tmp/.doctest_totallyreal_rel.py\n\t [4.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/number_field/totallyreal_rel.py\"\nTotal time for all tests: 4.3 seconds\n```\n",
+    "body": "Attachment [trac-6506-doc-fixes.patch](tarball://root/attachments/some-uuid/ticket6506/trac-6506-doc-fixes.patch) by @jasongrout created at 2009-07-19 03:44:02\n\nI posted a patch which fixes lots of the documentation errors on #5081.  There are still some problems.\n\n* printing issues, presumably because of the work from the patch on this ticket on the precision code.  It appears there is one less zero printed in numbers.\n\n\n```\n$ sage -t complex_number.pyx \nsage -t  \"devel/sage-main/sage/rings/complex_number.pyx\"    \n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/complex_number.pyx\", line 1917:\n    sage: ComplexNumber(1.000000000000000000000000000,2)\nExpected:\n    1.000000000000000000000000000 + 2.000000000000000000000000000*I\nGot:\n    1.00000000000000000000000000 + 2.00000000000000000000000000*I\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/complex_number.pyx\", line 1919:\n    sage: ComplexNumber(1,2.000000000000000000000)\nExpected:\n    1.000000000000000000000 + 2.000000000000000000000*I\nGot:\n    1.00000000000000000000 + 2.00000000000000000000*I\n**********************************************************************\n1 items had failures:\n   2 of   9 in __main__.example_74\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/grout/sage/tmp/.doctest_complex_number.py\n\t [11.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/complex_number.pyx\"\nTotal time for all tests: 11.8 seconds\n\n\n$ sage -t real_mpfr.pyx \nsage -t  \"devel/sage-main/sage/rings/real_mpfr.pyx\"         \n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/real_mpfr.pyx\", line 4299:\n    sage: RealNumber('1.0000000000000000000000000000000000')\nExpected:\n    1.0000000000000000000000000000000000\nGot:\n    1.000000000000000000000000000000000\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_126\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/grout/sage/tmp/.doctest_real_mpfr.py\n\t [15.1 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/real_mpfr.pyx\"\nTotal time for all tests: 15.1 seconds\n\n\n\n```\n\n\n\n* Another error pointed out on #5081 that is deeper than a printing issue.  There appears to be a bug in the code---the same variable is used in a list comprehension as is used in an enclosing loop.  I rewrote some of the code to not use some numpy and string parsing, instead using python zip and string join methods.  However, there still seems to be an error.  Can someone more familiar with the code look at this?  I think all of these errors stem from the same problem.\n\n\n```\n$ sage -t rings/number_field/totallyreal_rel.py \nsage -t  \"devel/sage-main/sage/rings/number_field/totallyreal_rel.py\"\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 156:\n    sage: T = sage.rings.number_field.totallyreal_rel.tr_data_rel(F, 2, 2000)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[3]>\", line 1, in <module>\n        T = sage.rings.number_field.totallyreal_rel.tr_data_rel(F, Integer(2), Integer(2000))###line 156:\n    sage: T = sage.rings.number_field.totallyreal_rel.tr_data_rel(F, 2, 2000)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 200, in __init__\n        anm1s[i] += sum([m*Z_Fbasis[i]*adj[i].__int__()//adj[self.d].__int__() for i in range(self.d)])\n    IndexError: list index out of range\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 568:\n    sage: enumerate_totallyreal_fields_rel(F, 2, 2000)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[4]>\", line 1, in <module>\n        enumerate_totallyreal_fields_rel(F, Integer(2), Integer(2000))###line 568:\n    sage: enumerate_totallyreal_fields_rel(F, 2, 2000)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 646, in enumerate_totallyreal_fields_rel\n        T = tr_data_rel(F,m,B,a)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 200, in __init__\n        anm1s[i] += sum([m*Z_Fbasis[i]*adj[i].__int__()//adj[self.d].__int__() for i in range(self.d)])\n    IndexError: list index out of range\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 577:\n    sage: ls = enumerate_totallyreal_fields_rel(F, 2, 10^4)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[6]>\", line 1, in <module>\n        ls = enumerate_totallyreal_fields_rel(F, Integer(2), Integer(10)**Integer(4))###line 577:\n    sage: ls = enumerate_totallyreal_fields_rel(F, 2, 10^4)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 646, in enumerate_totallyreal_fields_rel\n        T = tr_data_rel(F,m,B,a)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 200, in __init__\n        anm1s[i] += sum([m*Z_Fbasis[i]*adj[i].__int__()//adj[self.d].__int__() for i in range(self.d)])\n    IndexError: list index out of range\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 578:\n    sage: print \"ignore this\";  ls # random (the second factor is platform-dependent)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[7]>\", line 1, in <module>\n        print \"ignore this\";  ls # random (the second factor is platform-dependent)###line 578:\n    sage: print \"ignore this\";  ls # random (the second factor is platform-dependent)\n    NameError: name 'ls' is not defined\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 600:\n    sage: [ f[0] for f in ls ]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[8]>\", line 1, in <module>\n        [ f[Integer(0)] for f in ls ]###line 600:\n    sage: [ f[0] for f in ls ]\n    NameError: name 'ls' is not defined\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 603:\n    sage: [NumberField(ZZx(x[1]), 't').is_galois() for x in ls]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[9]>\", line 1, in <module>\n        [NumberField(ZZx(x[Integer(1)]), 't').is_galois() for x in ls]###line 603:\n    sage: [NumberField(ZZx(x[1]), 't').is_galois() for x in ls]\n    NameError: name 'ls' is not defined\n**********************************************************************\n2 items had failures:\n   1 of   4 in __main__.example_3\n   5 of  12 in __main__.example_5\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/grout/sage/tmp/.doctest_totallyreal_rel.py\n\t [4.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/number_field/totallyreal_rel.py\"\nTotal time for all tests: 4.3 seconds\n```\n",
     "created_at": "2009-07-19T03:44:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53006",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6506-doc-fixes.patch](tarball://root/attachments/some-uuid/ticket6506/trac-6506-doc-fixes.patch) by jason created at 2009-07-19 03:44:02
+Attachment [trac-6506-doc-fixes.patch](tarball://root/attachments/some-uuid/ticket6506/trac-6506-doc-fixes.patch) by @jasongrout created at 2009-07-19 03:44:02
 
 I posted a patch which fixes lots of the documentation errors on #5081.  There are still some problems.
 
@@ -287,7 +287,7 @@ archive/issue_comments_053007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53007",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_053008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53008",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_053009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53009",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -338,16 +338,16 @@ It'd be nice to get this into 4.1.1.
 archive/issue_comments_053010.json:
 ```json
 {
-    "body": "Attachment [6506-numpy-types-fixes.patch](tarball://root/attachments/some-uuid/ticket6506/6506-numpy-types-fixes.patch) by jason created at 2009-07-27 16:26:13\n\nAll doctests pass now.  I assume your comments mean that you are giving a positive review to my changes in totallyreal_rel.py (correct me if I'm wrong!).  Doctests now pass in totallyreal_rel.py and the other files mentioned above, so I'm changing this to a positive review and marking you as a reviewer too.\n\nI agree that it would be very, very nice to get this into 4.1.1, especially considering how many times it's come up on the mailing lists just in the past week.",
+    "body": "Attachment [6506-numpy-types-fixes.patch](tarball://root/attachments/some-uuid/ticket6506/6506-numpy-types-fixes.patch) by @jasongrout created at 2009-07-27 16:26:13\n\nAll doctests pass now.  I assume your comments mean that you are giving a positive review to my changes in totallyreal_rel.py (correct me if I'm wrong!).  Doctests now pass in totallyreal_rel.py and the other files mentioned above, so I'm changing this to a positive review and marking you as a reviewer too.\n\nI agree that it would be very, very nice to get this into 4.1.1, especially considering how many times it's come up on the mailing lists just in the past week.",
     "created_at": "2009-07-27T16:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53010",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [6506-numpy-types-fixes.patch](tarball://root/attachments/some-uuid/ticket6506/6506-numpy-types-fixes.patch) by jason created at 2009-07-27 16:26:13
+Attachment [6506-numpy-types-fixes.patch](tarball://root/attachments/some-uuid/ticket6506/6506-numpy-types-fixes.patch) by @jasongrout created at 2009-07-27 16:26:13
 
 All doctests pass now.  I assume your comments mean that you are giving a positive review to my changes in totallyreal_rel.py (correct me if I'm wrong!).  Doctests now pass in totallyreal_rel.py and the other files mentioned above, so I'm changing this to a positive review and marking you as a reviewer too.
 
@@ -365,7 +365,7 @@ archive/issue_comments_053011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53011",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_053013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53013",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_053014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53014",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -566,16 +566,16 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp
 archive/issue_comments_053016.json:
 ```json
 {
-    "body": "Attachment [numpy-fixes-3.patch](tarball://root/attachments/some-uuid/ticket6506/numpy-fixes-3.patch) by robertwb created at 2009-07-29 13:24:05\n\nOh, somehow I missed that one. I've refreshed the patch.",
+    "body": "Attachment [numpy-fixes-3.patch](tarball://root/attachments/some-uuid/ticket6506/numpy-fixes-3.patch) by @robertwb created at 2009-07-29 13:24:05\n\nOh, somehow I missed that one. I've refreshed the patch.",
     "created_at": "2009-07-29T13:24:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53016",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [numpy-fixes-3.patch](tarball://root/attachments/some-uuid/ticket6506/numpy-fixes-3.patch) by robertwb created at 2009-07-29 13:24:05
+Attachment [numpy-fixes-3.patch](tarball://root/attachments/some-uuid/ticket6506/numpy-fixes-3.patch) by @robertwb created at 2009-07-29 13:24:05
 
 Oh, somehow I missed that one. I've refreshed the patch.
 
@@ -627,7 +627,7 @@ archive/issue_comments_053019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53019",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_053020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53020",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

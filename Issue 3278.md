@@ -3,7 +3,7 @@
 archive/issues_003278.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3278\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3278\n\n",
     "created_at": "2008-05-23T10:12:49Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_003278.json:
     "title": "[with patch, needs review] update the crystal iterator to use the new backtracking code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3278",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3278
 archive/issue_comments_022679.json:
 ```json
 {
-    "body": "Attachment [3278.patch](tarball://root/attachments/some-uuid/ticket3278/3278.patch) by mhansen created at 2008-05-23 10:13:01",
+    "body": "Attachment [3278.patch](tarball://root/attachments/some-uuid/ticket3278/3278.patch) by @mwhansen created at 2008-05-23 10:13:01",
     "created_at": "2008-05-23T10:13:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3278#issuecomment-22679",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [3278.patch](tarball://root/attachments/some-uuid/ticket3278/3278.patch) by mhansen created at 2008-05-23 10:13:01
+Attachment [3278.patch](tarball://root/attachments/some-uuid/ticket3278/3278.patch) by @mwhansen created at 2008-05-23 10:13:01
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_022680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3278#issuecomment-22680",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

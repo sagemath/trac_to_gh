@@ -3,7 +3,7 @@
 archive/issues_007201.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was timdumol\n\nEvery now and then, the auto-expansion of code cells doesn't quite get all of the code, which leads to frustration because you can't see the last line or two of your code in a cell.  I think this has happened when the code on a line wraps to the next line maybe (I don't have an example of it happening right now).\n\nAnyways, putting scroll bars on the code cells using the overflow attribute (so they're only there when they are needed) is an easy way to guard against errors in the auto-expansion code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7201\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @TimDumol\n\nEvery now and then, the auto-expansion of code cells doesn't quite get all of the code, which leads to frustration because you can't see the last line or two of your code in a cell.  I think this has happened when the code on a line wraps to the next line maybe (I don't have an example of it happening right now).\n\nAnyways, putting scroll bars on the code cells using the overflow attribute (so they're only there when they are needed) is an easy way to guard against errors in the auto-expansion code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7201\n\n",
     "created_at": "2009-10-13T14:41:07Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007201.json:
     "title": "overflow: auto CSS on code cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7201",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  was timdumol
+CC:  @williamstein @TimDumol
 
 Every now and then, the auto-expansion of code cells doesn't quite get all of the code, which leads to frustration because you can't see the last line or two of your code in a cell.  I think this has happened when the code on a line wraps to the next line maybe (I don't have an example of it happening right now).
 
@@ -41,7 +41,7 @@ archive/issue_comments_059758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7201#issuecomment-59758",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_059759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7201#issuecomment-59759",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -76,16 +76,16 @@ Ticket #2902 is related.
 archive/issue_comments_059760.json:
 ```json
 {
-    "body": "Attachment [trac-7201-auto-flow-input-cells.patch](tarball://root/attachments/some-uuid/ticket7201/trac-7201-auto-flow-input-cells.patch) by jason created at 2010-05-13 11:41:57",
+    "body": "Attachment [trac-7201-auto-flow-input-cells.patch](tarball://root/attachments/some-uuid/ticket7201/trac-7201-auto-flow-input-cells.patch) by @jasongrout created at 2010-05-13 11:41:57",
     "created_at": "2010-05-13T11:41:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7201#issuecomment-59760",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7201-auto-flow-input-cells.patch](tarball://root/attachments/some-uuid/ticket7201/trac-7201-auto-flow-input-cells.patch) by jason created at 2010-05-13 11:41:57
+Attachment [trac-7201-auto-flow-input-cells.patch](tarball://root/attachments/some-uuid/ticket7201/trac-7201-auto-flow-input-cells.patch) by @jasongrout created at 2010-05-13 11:41:57
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_059761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7201#issuecomment-59761",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_059762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7201#issuecomment-59762",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -130,16 +130,16 @@ Changing status from new to needs_review.
 archive/issue_comments_059763.json:
 ```json
 {
-    "body": "Attachment [trac_7201-reviewer.patch](tarball://root/attachments/some-uuid/ticket7201/trac_7201-reviewer.patch) by timdumol created at 2010-07-05 10:11:36\n\nEdits the SASS source files too.",
+    "body": "Attachment [trac_7201-reviewer.patch](tarball://root/attachments/some-uuid/ticket7201/trac_7201-reviewer.patch) by @TimDumol created at 2010-07-05 10:11:36\n\nEdits the SASS source files too.",
     "created_at": "2010-07-05T10:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7201#issuecomment-59763",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7201-reviewer.patch](tarball://root/attachments/some-uuid/ticket7201/trac_7201-reviewer.patch) by timdumol created at 2010-07-05 10:11:36
+Attachment [trac_7201-reviewer.patch](tarball://root/attachments/some-uuid/ticket7201/trac_7201-reviewer.patch) by @TimDumol created at 2010-07-05 10:11:36
 
 Edits the SASS source files too.
 
@@ -155,7 +155,7 @@ archive/issue_comments_059764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7201#issuecomment-59764",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_059765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7201#issuecomment-59765",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_059766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7201#issuecomment-59766",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_059767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7201#issuecomment-59767",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_059768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7201#issuecomment-59768",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_059769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7201#issuecomment-59769",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

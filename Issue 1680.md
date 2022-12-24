@@ -3,7 +3,7 @@
 archive/issues_001680.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  mhansen mvngu\n\nSAGE has a built-in copy of the complex numbers, so it knows what I is. However, one gets slightly odd behaviour from this:\n\n`sage: (1+I)^2 - 2*I`\n\n`(1+I)^2 - 2*I`\n\nand one has to use the .expand() command to get the correct answer 2*I. This is not the behaviour of a user-defined quadratic field, which automatically evaluates such things. I think that the computation should resolve to 0 without having to be expanded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1680\n\n",
+    "body": "Assignee: @malb\n\nCC:  @mwhansen mvngu\n\nSAGE has a built-in copy of the complex numbers, so it knows what I is. However, one gets slightly odd behaviour from this:\n\n`sage: (1+I)^2 - 2*I`\n\n`(1+I)^2 - 2*I`\n\nand one has to use the .expand() command to get the correct answer 2*I. This is not the behaviour of a user-defined quadratic field, which automatically evaluates such things. I think that the computation should resolve to 0 without having to be expanded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1680\n\n",
     "created_at": "2008-01-04T17:17:29Z",
     "labels": [
         "commutative algebra",
@@ -17,9 +17,9 @@ archive/issues_001680.json:
     "user": "ljpk"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  mhansen mvngu
+CC:  @mwhansen mvngu
 
 SAGE has a built-in copy of the complex numbers, so it knows what I is. However, one gets slightly odd behaviour from this:
 
@@ -45,7 +45,7 @@ archive/issue_comments_010654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1680#issuecomment-10654",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_010655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1680#issuecomment-10655",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -96,16 +96,16 @@ it doesn't know whether to send I to -I or I in `CC`, and a mechanism for this n
 archive/issue_comments_010656.json:
 ```json
 {
-    "body": "Changing assignee from malb to robertwb.",
+    "body": "Changing assignee from @malb to @robertwb.",
     "created_at": "2008-01-15T06:13:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1680#issuecomment-10656",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from malb to robertwb.
+Changing assignee from @malb to @robertwb.
 
 
 
@@ -119,7 +119,7 @@ archive/issue_comments_010657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1680#issuecomment-10657",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_010658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1680#issuecomment-10658",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_010659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1680#issuecomment-10659",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_010660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1680#issuecomment-10660",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_010661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1680#issuecomment-10661",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003154.json:
     "title": "notebook -- spurious u0027's output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3154",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3154
 archive/issue_comments_021867.json:
 ```json
 {
-    "body": "Attachment [trac_3154-spurious-u0027-output.patch](tarball://root/attachments/some-uuid/ticket3154/trac_3154-spurious-u0027-output.patch) by timdumol created at 2010-01-17 00:30:44\n\nUses base64.b64en/decode instead.",
+    "body": "Attachment [trac_3154-spurious-u0027-output.patch](tarball://root/attachments/some-uuid/ticket3154/trac_3154-spurious-u0027-output.patch) by @TimDumol created at 2010-01-17 00:30:44\n\nUses base64.b64en/decode instead.",
     "created_at": "2010-01-17T00:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21867",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_3154-spurious-u0027-output.patch](tarball://root/attachments/some-uuid/ticket3154/trac_3154-spurious-u0027-output.patch) by timdumol created at 2010-01-17 00:30:44
+Attachment [trac_3154-spurious-u0027-output.patch](tarball://root/attachments/some-uuid/ticket3154/trac_3154-spurious-u0027-output.patch) by @TimDumol created at 2010-01-17 00:30:44
 
 Uses base64.b64en/decode instead.
 
@@ -68,7 +68,7 @@ archive/issue_comments_021868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21868",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_021869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21869",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -99,16 +99,16 @@ I think using %r to handle escaping quotes would be cleaner than using intermedi
 archive/issue_comments_021870.json:
 ```json
 {
-    "body": "Attachment [3154_escaping_quotes.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.patch) by wjp created at 2010-01-17 21:45:10",
+    "body": "Attachment [3154_escaping_quotes.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.patch) by @wjp created at 2010-01-17 21:45:10",
     "created_at": "2010-01-17T21:45:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21870",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [3154_escaping_quotes.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.patch) by wjp created at 2010-01-17 21:45:10
+Attachment [3154_escaping_quotes.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.patch) by @wjp created at 2010-01-17 21:45:10
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_021871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21871",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_021872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21872",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_021873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21873",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_021874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21874",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_021875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21875",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -242,16 +242,16 @@ Fixes a few doctests and a unicode encoding issue.
 archive/issue_comments_021876.json:
 ```json
 {
-    "body": "Attachment [3154_escaping_quotes.2.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.2.patch) by mpatel created at 2010-01-20 01:54:58\n\nRebase for minor \"hunk\" failure.  Replaces previous.",
+    "body": "Attachment [3154_escaping_quotes.2.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.2.patch) by @qed777 created at 2010-01-20 01:54:58\n\nRebase for minor \"hunk\" failure.  Replaces previous.",
     "created_at": "2010-01-20T01:54:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21876",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [3154_escaping_quotes.2.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.2.patch) by mpatel created at 2010-01-20 01:54:58
+Attachment [3154_escaping_quotes.2.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.2.patch) by @qed777 created at 2010-01-20 01:54:58
 
 Rebase for minor "hunk" failure.  Replaces previous.
 
@@ -267,7 +267,7 @@ archive/issue_comments_021877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21877",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -280,16 +280,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_021878.json:
 ```json
 {
-    "body": "Attachment [3154_escaping_quotes.3.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.3.patch) by mpatel created at 2010-01-20 01:57:40\n\nNice work!  V3 is just a rebase of V2.",
+    "body": "Attachment [3154_escaping_quotes.3.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.3.patch) by @qed777 created at 2010-01-20 01:57:40\n\nNice work!  V3 is just a rebase of V2.",
     "created_at": "2010-01-20T01:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21878",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [3154_escaping_quotes.3.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.3.patch) by mpatel created at 2010-01-20 01:57:40
+Attachment [3154_escaping_quotes.3.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.3.patch) by @qed777 created at 2010-01-20 01:57:40
 
 Nice work!  V3 is just a rebase of V2.
 
@@ -305,7 +305,7 @@ archive/issue_comments_021879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21879",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_021880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21880",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -336,16 +336,16 @@ Rebased vs. SageNB 0.7.4.  Replaces previous.
 archive/issue_comments_021881.json:
 ```json
 {
-    "body": "Attachment [3154_escaping_quotes.4.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.4.patch) by mpatel created at 2010-02-06 19:27:11",
+    "body": "Attachment [3154_escaping_quotes.4.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.4.patch) by @qed777 created at 2010-02-06 19:27:11",
     "created_at": "2010-02-06T19:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21881",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [3154_escaping_quotes.4.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.4.patch) by mpatel created at 2010-02-06 19:27:11
+Attachment [3154_escaping_quotes.4.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.4.patch) by @qed777 created at 2010-02-06 19:27:11
 
 
 
@@ -359,7 +359,7 @@ archive/issue_comments_021882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21882",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_021883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21883",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_021884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21884",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_021885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21885",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -426,16 +426,16 @@ Doctest fixes.  Replaces all previous.
 archive/issue_comments_021886.json:
 ```json
 {
-    "body": "Attachment [3154_escaping_quotes.5.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.5.patch) by mpatel created at 2010-02-09 05:24:16\n\nV5 is rebased for SageNB 0.7.4 and it includes several new doctest fixes.  Can someone review my changes?",
+    "body": "Attachment [3154_escaping_quotes.5.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.5.patch) by @qed777 created at 2010-02-09 05:24:16\n\nV5 is rebased for SageNB 0.7.4 and it includes several new doctest fixes.  Can someone review my changes?",
     "created_at": "2010-02-09T05:24:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21886",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [3154_escaping_quotes.5.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.5.patch) by mpatel created at 2010-02-09 05:24:16
+Attachment [3154_escaping_quotes.5.patch](tarball://root/attachments/some-uuid/ticket3154/3154_escaping_quotes.5.patch) by @qed777 created at 2010-02-09 05:24:16
 
 V5 is rebased for SageNB 0.7.4 and it includes several new doctest fixes.  Can someone review my changes?
 
@@ -451,7 +451,7 @@ archive/issue_comments_021887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21887",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_021888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21888",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_021889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3154#issuecomment-21889",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

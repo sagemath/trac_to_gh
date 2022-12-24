@@ -3,7 +3,7 @@
 archive/issues_006859.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis patch add graph generators for the hyper star, (n,k)-star, n-star, and bubble sort graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6859\n\n",
+    "body": "Assignee: @rlmill\n\nThis patch add graph generators for the hyper star, (n,k)-star, n-star, and bubble sort graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6859\n\n",
     "created_at": "2009-09-02T01:42:16Z",
     "labels": [
         "graph theory",
@@ -17,7 +17,7 @@ archive/issues_006859.json:
     "user": "myurko"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This patch add graph generators for the hyper star, (n,k)-star, n-star, and bubble sort graph.
 
@@ -55,7 +55,7 @@ archive/issue_comments_056560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6859#issuecomment-56560",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_056562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6859#issuecomment-56562",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_056565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6859#issuecomment-56565",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -170,16 +170,16 @@ I'm attaching a patch which optimizes some of the code to use more python things
 archive/issue_comments_056566.json:
 ```json
 {
-    "body": "Attachment [trac-6859-optimize.patch](tarball://root/attachments/some-uuid/ticket6859/trac-6859-optimize.patch) by jason created at 2009-09-22 16:46:11\n\napply on top of previous patches",
+    "body": "Attachment [trac-6859-optimize.patch](tarball://root/attachments/some-uuid/ticket6859/trac-6859-optimize.patch) by @jasongrout created at 2009-09-22 16:46:11\n\napply on top of previous patches",
     "created_at": "2009-09-22T16:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6859#issuecomment-56566",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6859-optimize.patch](tarball://root/attachments/some-uuid/ticket6859/trac-6859-optimize.patch) by jason created at 2009-09-22 16:46:11
+Attachment [trac-6859-optimize.patch](tarball://root/attachments/some-uuid/ticket6859/trac-6859-optimize.patch) by @jasongrout created at 2009-09-22 16:46:11
 
 apply on top of previous patches
 
@@ -213,7 +213,7 @@ archive/issue_comments_056568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6859#issuecomment-56568",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_056571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6859#issuecomment-56571",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

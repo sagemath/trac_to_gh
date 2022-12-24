@@ -14,7 +14,7 @@ archive/issues_009159.json:
     "title": "(modular decomposition) Improvement to graph coloring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9159",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -37,7 +37,7 @@ archive/issue_comments_085491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9159#issuecomment-85491",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

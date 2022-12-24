@@ -3,7 +3,7 @@
 archive/issues_001851.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nIn sage/graphs/bruhat_sn.pyx, a file nobody likely uses much...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1851\n\n",
+    "body": "Assignee: @rlmill\n\nIn sage/graphs/bruhat_sn.pyx, a file nobody likely uses much...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1851\n\n",
     "created_at": "2008-01-19T20:47:32Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_001851.json:
     "title": "[with patch, needs (easy) review] increase documentation...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1851",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 In sage/graphs/bruhat_sn.pyx, a file nobody likely uses much...
 

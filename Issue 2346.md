@@ -3,7 +3,7 @@
 archive/issues_002346.json:
 ```json
 {
-    "body": "Assignee: was\n\nMany people have shown interest in a simple API that could be used to interface with Sage. This would be useful for java applets, moodle plugins, and other applications to use Sage as a computational back end. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2346\n\n",
+    "body": "Assignee: @williamstein\n\nMany people have shown interest in a simple API that could be used to interface with Sage. This would be useful for java applets, moodle plugins, and other applications to use Sage as a computational back end. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2346\n\n",
     "created_at": "2008-02-28T08:53:49Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_002346.json:
     "title": "Sage needs a simple api for interaction with other applications",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2346",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Many people have shown interest in a simple API that could be used to interface with Sage. This would be useful for java applets, moodle plugins, and other applications to use Sage as a computational back end. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2346
 archive/issue_comments_015710.json:
 ```json
 {
-    "body": "Attachment [simple-api.hg](tarball://root/attachments/some-uuid/ticket2346/simple-api.hg) by robertwb created at 2008-02-28 08:54:07",
+    "body": "Attachment [simple-api.hg](tarball://root/attachments/some-uuid/ticket2346/simple-api.hg) by @robertwb created at 2008-02-28 08:54:07",
     "created_at": "2008-02-28T08:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2346#issuecomment-15710",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [simple-api.hg](tarball://root/attachments/some-uuid/ticket2346/simple-api.hg) by robertwb created at 2008-02-28 08:54:07
+Attachment [simple-api.hg](tarball://root/attachments/some-uuid/ticket2346/simple-api.hg) by @robertwb created at 2008-02-28 08:54:07
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_015711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2346#issuecomment-15711",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -70,16 +70,16 @@ It should be completely useable in its current form, though of course there is l
 archive/issue_comments_015712.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2008-02-28T08:57:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2346#issuecomment-15712",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_015713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2346#issuecomment-15713",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_015714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2346#issuecomment-15714",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_015715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2346#issuecomment-15715",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_015716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2346#issuecomment-15716",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -178,16 +178,16 @@ The Errno url error is strange, does your urllib not support secure http connect
 archive/issue_comments_015717.json:
 ```json
 {
-    "body": "Attachment [2346-loops.patch](tarball://root/attachments/some-uuid/ticket2346/2346-loops.patch) by robertwb created at 2008-03-07 19:59:13\n\nI've re-implemented the waiting using LoopingCall, and also reduced the amount of time it spends blocking waiting for Sage input. \n\nI'm not sure what to do about the https error--we don't want to doctest with http as that would be a potential security vulnerability. \n\nmhansen: what system are you getting that error on. Is it the Sage python?",
+    "body": "Attachment [2346-loops.patch](tarball://root/attachments/some-uuid/ticket2346/2346-loops.patch) by @robertwb created at 2008-03-07 19:59:13\n\nI've re-implemented the waiting using LoopingCall, and also reduced the amount of time it spends blocking waiting for Sage input. \n\nI'm not sure what to do about the https error--we don't want to doctest with http as that would be a potential security vulnerability. \n\nmhansen: what system are you getting that error on. Is it the Sage python?",
     "created_at": "2008-03-07T19:59:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2346#issuecomment-15717",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2346-loops.patch](tarball://root/attachments/some-uuid/ticket2346/2346-loops.patch) by robertwb created at 2008-03-07 19:59:13
+Attachment [2346-loops.patch](tarball://root/attachments/some-uuid/ticket2346/2346-loops.patch) by @robertwb created at 2008-03-07 19:59:13
 
 I've re-implemented the waiting using LoopingCall, and also reduced the amount of time it spends blocking waiting for Sage input. 
 
@@ -207,7 +207,7 @@ archive/issue_comments_015718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2346#issuecomment-15718",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -222,16 +222,16 @@ Perhaps we can use http://twistedmatrix.com/documents/current/api/twisted.web.cl
 archive/issue_comments_015719.json:
 ```json
 {
-    "body": "Attachment [2346-gnutls.patch](tarball://root/attachments/some-uuid/ticket2346/2346-gnutls.patch) by robertwb created at 2008-04-06 04:42:03",
+    "body": "Attachment [2346-gnutls.patch](tarball://root/attachments/some-uuid/ticket2346/2346-gnutls.patch) by @robertwb created at 2008-04-06 04:42:03",
     "created_at": "2008-04-06T04:42:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2346#issuecomment-15719",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2346-gnutls.patch](tarball://root/attachments/some-uuid/ticket2346/2346-gnutls.patch) by robertwb created at 2008-04-06 04:42:03
+Attachment [2346-gnutls.patch](tarball://root/attachments/some-uuid/ticket2346/2346-gnutls.patch) by @robertwb created at 2008-04-06 04:42:03
 
 
 
@@ -245,7 +245,7 @@ archive/issue_comments_015720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2346#issuecomment-15720",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -258,16 +258,16 @@ Using twisted.web.client with the reactor and all is a major pain to do interact
 archive/issue_comments_015721.json:
 ```json
 {
-    "body": "Attachment [2346-early-ssl-import.patch](tarball://root/attachments/some-uuid/ticket2346/2346-early-ssl-import.patch) by robertwb created at 2008-04-06 05:21:20",
+    "body": "Attachment [2346-early-ssl-import.patch](tarball://root/attachments/some-uuid/ticket2346/2346-early-ssl-import.patch) by @robertwb created at 2008-04-06 05:21:20",
     "created_at": "2008-04-06T05:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2346#issuecomment-15721",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2346-early-ssl-import.patch](tarball://root/attachments/some-uuid/ticket2346/2346-early-ssl-import.patch) by robertwb created at 2008-04-06 05:21:20
+Attachment [2346-early-ssl-import.patch](tarball://root/attachments/some-uuid/ticket2346/2346-early-ssl-import.patch) by @robertwb created at 2008-04-06 05:21:20
 
 
 
@@ -281,7 +281,7 @@ archive/issue_comments_015722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2346#issuecomment-15722",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

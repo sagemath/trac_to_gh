@@ -14,7 +14,7 @@ archive/issues_004267.json:
     "title": "Make javascript packages spkgs instead of part of the extcode repository",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4267",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -39,7 +39,7 @@ archive/issue_comments_031118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31118",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_031121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31121",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_031122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31122",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_031123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31123",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_031124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31124",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -192,16 +192,16 @@ Updated the edit-in-place patch to fix two bugs.
 archive/issue_comments_031125.json:
 ```json
 {
-    "body": "Attachment [edit-in-place-and-javascript-spkgs.patch](tarball://root/attachments/some-uuid/ticket4267/edit-in-place-and-javascript-spkgs.patch) by jason created at 2008-10-18 07:55:10\n\nApply only this patch from here and the extcode patch from the coments below.",
+    "body": "Attachment [edit-in-place-and-javascript-spkgs.patch](tarball://root/attachments/some-uuid/ticket4267/edit-in-place-and-javascript-spkgs.patch) by @jasongrout created at 2008-10-18 07:55:10\n\nApply only this patch from here and the extcode patch from the coments below.",
     "created_at": "2008-10-18T07:55:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31125",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [edit-in-place-and-javascript-spkgs.patch](tarball://root/attachments/some-uuid/ticket4267/edit-in-place-and-javascript-spkgs.patch) by jason created at 2008-10-18 07:55:10
+Attachment [edit-in-place-and-javascript-spkgs.patch](tarball://root/attachments/some-uuid/ticket4267/edit-in-place-and-javascript-spkgs.patch) by @jasongrout created at 2008-10-18 07:55:10
 
 Apply only this patch from here and the extcode patch from the coments below.
 
@@ -217,7 +217,7 @@ archive/issue_comments_031126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31126",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_031127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31127",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_031129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31129",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_031133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31133",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_031135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31135",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_031136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31136",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_031140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31140",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -526,16 +526,16 @@ Thanks for the extensive testing!
 archive/issue_comments_031141.json:
 ```json
 {
-    "body": "Attachment [flora.patch](tarball://root/attachments/some-uuid/ticket4267/flora.patch) by jason created at 2008-10-22 00:15:32\n\nThe flora.patch should be applied on top of the previous patches and switches the default theme back to flora (the old theme).  I've also updated the http://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6r807svn.spkg to contain this theme (and I ported the modifications that we made to it as well).",
+    "body": "Attachment [flora.patch](tarball://root/attachments/some-uuid/ticket4267/flora.patch) by @jasongrout created at 2008-10-22 00:15:32\n\nThe flora.patch should be applied on top of the previous patches and switches the default theme back to flora (the old theme).  I've also updated the http://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6r807svn.spkg to contain this theme (and I ported the modifications that we made to it as well).",
     "created_at": "2008-10-22T00:15:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31141",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [flora.patch](tarball://root/attachments/some-uuid/ticket4267/flora.patch) by jason created at 2008-10-22 00:15:32
+Attachment [flora.patch](tarball://root/attachments/some-uuid/ticket4267/flora.patch) by @jasongrout created at 2008-10-22 00:15:32
 
 The flora.patch should be applied on top of the previous patches and switches the default theme back to flora (the old theme).  I've also updated the http://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6r807svn.spkg to contain this theme (and I ported the modifications that we made to it as well).
 
@@ -569,7 +569,7 @@ archive/issue_comments_031143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31143",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -599,7 +599,7 @@ archive/issue_comments_031144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31144",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -637,7 +637,7 @@ archive/issue_comments_031146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31146",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -657,7 +657,7 @@ archive/issue_comments_031147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31147",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -679,7 +679,7 @@ archive/issue_comments_031148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31148",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -697,7 +697,7 @@ archive/issue_comments_031149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31149",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -715,7 +715,7 @@ archive/issue_comments_031150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31150",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -733,16 +733,16 @@ As noted on #4674, this should be broken into four tickets:
 archive/issue_comments_031151.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2008-12-04T18:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31151",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 
@@ -756,7 +756,7 @@ archive/issue_comments_031152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31152",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -774,7 +774,7 @@ archive/issue_comments_031153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31153",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -792,7 +792,7 @@ archive/issue_comments_031154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31154",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

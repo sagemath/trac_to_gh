@@ -3,7 +3,7 @@
 archive/issues_007838.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jsp vengoroso@gmail.com\n\n#1497 added a few lines of code \n\n\n```/usr/bin/env\nimport ctypes\nprint str(8*ctypes.sizeof(ctypes.c_long))\n```\n\ninto the ATLAS build process, which reports the number of bits Sage was compiled as. It makes use of the module 'ctypes' in Python, but \n\nhttp://docs.activestate.com/activepython/2.5/whatsincluded.html\n\nshows that ctypes is seriouly on many platforms, including\n\n* Older linux-x86 - build failures\n* aix-powerpc\tbuild failures\n* linux-ia64\tbuild failures\n* solaris-sparc build failures\n* solaris-x86\tbuild failures\n* hpux-parisc\tlibffi not ported to PA-RISC arch\n* hpux-ia64\tbuild failures\n* win64\t\n\nHence the code needs replacing with something less broken\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/7838\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies vengoroso@gmail.com\n\n#1497 added a few lines of code \n\n\n```/usr/bin/env\nimport ctypes\nprint str(8*ctypes.sizeof(ctypes.c_long))\n```\n\ninto the ATLAS build process, which reports the number of bits Sage was compiled as. It makes use of the module 'ctypes' in Python, but \n\nhttp://docs.activestate.com/activepython/2.5/whatsincluded.html\n\nshows that ctypes is seriouly on many platforms, including\n\n* Older linux-x86 - build failures\n* aix-powerpc\tbuild failures\n* linux-ia64\tbuild failures\n* solaris-sparc build failures\n* solaris-x86\tbuild failures\n* hpux-parisc\tlibffi not ported to PA-RISC arch\n* hpux-ia64\tbuild failures\n* win64\t\n\nHence the code needs replacing with something less broken\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/7838\n\n",
     "created_at": "2010-01-04T03:07:50Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_007838.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  jsp vengoroso@gmail.com
+CC:  @jaapspies vengoroso@gmail.com
 
 #1497 added a few lines of code 
 
@@ -128,7 +128,7 @@ archive/issue_comments_067902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67902",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_067903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67903",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_067904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67904",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_067905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67905",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_067906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67906",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

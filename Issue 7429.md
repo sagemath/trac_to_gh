@@ -14,7 +14,7 @@ archive/issues_007429.json:
     "title": "pari is misbuilt on OS X using xcode 3.2.1, making sage be mostly broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7429",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: drkirkby
@@ -61,7 +61,7 @@ archive/issue_comments_062515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7429#issuecomment-62515",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_062516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7429#issuecomment-62516",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

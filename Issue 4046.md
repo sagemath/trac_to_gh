@@ -14,7 +14,7 @@ archive/issues_004046.json:
     "title": "add support for Google's new browser to the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4046",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_029173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29173",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_029174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29174",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_029175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29175",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_029176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29176",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -229,16 +229,16 @@ Keyboard support for Chrome 2 & Safari 4 on Windows and Chromium 3 on Linux.
 archive/issue_comments_029177.json:
 ```json
 {
-    "body": "Attachment [keys_capture_v2.html](tarball://root/attachments/some-uuid/ticket4046/keys_capture_v2.html) by mpatel created at 2009-08-14 04:52:32\n\nModified keys_capture.html that formats key information for keyboard.py.",
+    "body": "Attachment [keys_capture_v2.html](tarball://root/attachments/some-uuid/ticket4046/keys_capture_v2.html) by @qed777 created at 2009-08-14 04:52:32\n\nModified keys_capture.html that formats key information for keyboard.py.",
     "created_at": "2009-08-14T04:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29177",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [keys_capture_v2.html](tarball://root/attachments/some-uuid/ticket4046/keys_capture_v2.html) by mpatel created at 2009-08-14 04:52:32
+Attachment [keys_capture_v2.html](tarball://root/attachments/some-uuid/ticket4046/keys_capture_v2.html) by @qed777 created at 2009-08-14 04:52:32
 
 Modified keys_capture.html that formats key information for keyboard.py.
 
@@ -254,7 +254,7 @@ archive/issue_comments_029178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29178",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_029179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29179",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_029181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29181",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

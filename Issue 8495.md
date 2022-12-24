@@ -3,7 +3,7 @@
 archive/issues_008495.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  burcin jason\n\nSince #3587, which implements a _sage_() method for mathematica elements, many mathematica doctests fail.  E.g:\n\n\n```\nsage: def math_bessel_K(nu,x): \n     ...       return mathematica(nu).BesselK(x).N(20).sage() \n     ... \n     sage: math_bessel_K(2,I) \nNotImplementedError: Unable to parse \nMathematica output: \n-2.5928861754911969781676606702635284285719718407749199115289`20.1494653502 82203 \n+ \n0.1804899720669620266296208808560650432663536549483055754141`18.99213497581 376*i \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8495\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin @jasongrout\n\nSince #3587, which implements a _sage_() method for mathematica elements, many mathematica doctests fail.  E.g:\n\n\n```\nsage: def math_bessel_K(nu,x): \n     ...       return mathematica(nu).BesselK(x).N(20).sage() \n     ... \n     sage: math_bessel_K(2,I) \nNotImplementedError: Unable to parse \nMathematica output: \n-2.5928861754911969781676606702635284285719718407749199115289`20.1494653502 82203 \n+ \n0.1804899720669620266296208808560650432663536549483055754141`18.99213497581 376*i \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8495\n\n",
     "created_at": "2010-03-11T06:33:47Z",
     "labels": [
         "interfaces",
@@ -17,9 +17,9 @@ archive/issues_008495.json:
     "user": "flawrence"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  burcin jason
+CC:  @burcin @jasongrout
 
 Since #3587, which implements a _sage_() method for mathematica elements, many mathematica doctests fail.  E.g:
 
@@ -93,7 +93,7 @@ that would be grand.
 archive/issue_comments_076618.json:
 ```json
 {
-    "body": "Changing assignee from was to flawrence.",
+    "body": "Changing assignee from @williamstein to flawrence.",
     "created_at": "2010-03-14T12:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_076618.json:
 }
 ```
 
-Changing assignee from was to flawrence.
+Changing assignee from @williamstein to flawrence.
 
 
 
@@ -152,7 +152,7 @@ archive/issue_comments_076621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76621",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_076624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76624",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_076625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76625",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_076626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76626",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -699,7 +699,7 @@ archive/issue_comments_076638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76638",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -938,7 +938,7 @@ archive/issue_comments_076648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76648",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -963,7 +963,7 @@ archive/issue_comments_076649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76649",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1078,7 +1078,7 @@ archive/issue_comments_076655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76655",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

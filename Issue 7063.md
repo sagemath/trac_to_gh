@@ -3,7 +3,7 @@
 archive/issues_007063.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\nKeywords: sagenb notebook\n\n[ ] make sure that the old notebook directory \"just works\" with the new notebook:\nproblem -- old notebooks unpickle into the old notebook code!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7063\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nKeywords: sagenb notebook\n\n[ ] make sure that the old notebook directory \"just works\" with the new notebook:\nproblem -- old notebooks unpickle into the old notebook code!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7063\n\n",
     "created_at": "2009-09-29T04:37:12Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007063.json:
     "title": "SageNB -- Get SageNB to work seamlessly with old notebook saves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7063",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 Keywords: sagenb notebook
 
@@ -42,7 +42,7 @@ archive/issue_comments_058426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7063#issuecomment-58426",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -55,16 +55,16 @@ Migrates old notebook saves to the new notebook
 archive/issue_comments_058427.json:
 ```json
 {
-    "body": "Attachment [trac_7063-sagenb-migrate-old-notebook.2.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.2.patch) by timdumol created at 2009-09-29 04:57:33\n\nApply this patch only.",
+    "body": "Attachment [trac_7063-sagenb-migrate-old-notebook.2.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.2.patch) by @TimDumol created at 2009-09-29 04:57:33\n\nApply this patch only.",
     "created_at": "2009-09-29T04:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7063#issuecomment-58427",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7063-sagenb-migrate-old-notebook.2.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.2.patch) by timdumol created at 2009-09-29 04:57:33
+Attachment [trac_7063-sagenb-migrate-old-notebook.2.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.2.patch) by @TimDumol created at 2009-09-29 04:57:33
 
 Apply this patch only.
 
@@ -75,16 +75,16 @@ Apply this patch only.
 archive/issue_comments_058428.json:
 ```json
 {
-    "body": "Attachment [trac_7063-sagenb-migrate-old-notebook.3.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.3.patch) by timdumol created at 2009-09-29 05:37:42\n\nExcludes everything under `backups` and `worksheets`. Apply this patch only./",
+    "body": "Attachment [trac_7063-sagenb-migrate-old-notebook.3.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.3.patch) by @TimDumol created at 2009-09-29 05:37:42\n\nExcludes everything under `backups` and `worksheets`. Apply this patch only./",
     "created_at": "2009-09-29T05:37:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7063#issuecomment-58428",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7063-sagenb-migrate-old-notebook.3.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.3.patch) by timdumol created at 2009-09-29 05:37:42
+Attachment [trac_7063-sagenb-migrate-old-notebook.3.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.3.patch) by @TimDumol created at 2009-09-29 05:37:42
 
 Excludes everything under `backups` and `worksheets`. Apply this patch only./
 
@@ -100,7 +100,7 @@ archive/issue_comments_058429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7063#issuecomment-58429",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_058430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7063#issuecomment-58430",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,16 +131,16 @@ Resolution: fixed
 archive/issue_comments_058431.json:
 ```json
 {
-    "body": "Attachment [trac_7063-sagenb-migrate-old-notebook.4.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.4.patch) by was created at 2009-09-29 06:28:34",
+    "body": "Attachment [trac_7063-sagenb-migrate-old-notebook.4.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.4.patch) by @williamstein created at 2009-09-29 06:28:34",
     "created_at": "2009-09-29T06:28:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7063#issuecomment-58431",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7063-sagenb-migrate-old-notebook.4.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.4.patch) by was created at 2009-09-29 06:28:34
+Attachment [trac_7063-sagenb-migrate-old-notebook.4.patch](tarball://root/attachments/some-uuid/ticket7063/trac_7063-sagenb-migrate-old-notebook.4.patch) by @williamstein created at 2009-09-29 06:28:34
 
 
 
@@ -154,7 +154,7 @@ archive/issue_comments_058432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7063#issuecomment-58432",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

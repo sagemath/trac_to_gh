@@ -3,7 +3,7 @@
 archive/issues_007154.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason kcrisman\n\nKeywords: point arrow thickness\n\nThere should be a consistent naming scheme for the \"thickness\" of graphics objects. If I have a function my_plot(**kwds) that passes **kwds to all constructed graphics objects, then my_plot(thickness=5) should consistently scale the thickness. \n\nThe current status is:\n\n\n```\n  sage: point([0,0], pointsize = 5)\n  sage: point3d((0,0,0), thickness=5)                      \n  sage: line2d([[0,0],[1,1]], thickness=5)\n  sage: line3d([[0,0,0],[1,1,0]], thickness=5)\n  sage: arrow([0,0],[1,1], width=5)    \n  sage: arrow3d([0,0,0],[1,1,1], thickness=5)\n  sage: polygon([(0,0), (1,1), (0,1)], thickness=5)      \n  sage: polygon3d([(0,0,0), (1,1,0), (0,1,0)], thickness=5)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7154\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @kcrisman\n\nKeywords: point arrow thickness\n\nThere should be a consistent naming scheme for the \"thickness\" of graphics objects. If I have a function my_plot(**kwds) that passes **kwds to all constructed graphics objects, then my_plot(thickness=5) should consistently scale the thickness. \n\nThe current status is:\n\n\n```\n  sage: point([0,0], pointsize = 5)\n  sage: point3d((0,0,0), thickness=5)                      \n  sage: line2d([[0,0],[1,1]], thickness=5)\n  sage: line3d([[0,0,0],[1,1,0]], thickness=5)\n  sage: arrow([0,0],[1,1], width=5)    \n  sage: arrow3d([0,0,0],[1,1,1], thickness=5)\n  sage: polygon([(0,0), (1,1), (0,1)], thickness=5)      \n  sage: polygon3d([(0,0,0), (1,1,0), (0,1,0)], thickness=5)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7154\n\n",
     "created_at": "2009-10-08T11:07:33Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_007154.json:
     "title": "options for point/arrow thickness are inconsistently named",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7154",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason kcrisman
+CC:  @jasongrout @kcrisman
 
 Keywords: point arrow thickness
 
@@ -57,7 +57,7 @@ archive/issue_comments_059265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7154#issuecomment-59265",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_059266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7154#issuecomment-59266",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_059267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7154#issuecomment-59267",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_059273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7154#issuecomment-59273",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_059274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7154#issuecomment-59274",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_059279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7154#issuecomment-59279",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_059284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7154#issuecomment-59284",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_059285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7154#issuecomment-59285",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -471,16 +471,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_059286.json:
 ```json
 {
-    "body": "Attachment [trac_7154_arrow3d_width.4.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow3d_width.4.patch) by jason created at 2010-09-11 16:56:33\n\nLooks good.  I updated the version number in trac_7154_arrow3d_width.4.patch; apply only that patch.  \n\nThanks!\n\nThis is Ryan's first contribution, along with #8838 and #9199.",
+    "body": "Attachment [trac_7154_arrow3d_width.4.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow3d_width.4.patch) by @jasongrout created at 2010-09-11 16:56:33\n\nLooks good.  I updated the version number in trac_7154_arrow3d_width.4.patch; apply only that patch.  \n\nThanks!\n\nThis is Ryan's first contribution, along with #8838 and #9199.",
     "created_at": "2010-09-11T16:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7154#issuecomment-59286",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_7154_arrow3d_width.4.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow3d_width.4.patch) by jason created at 2010-09-11 16:56:33
+Attachment [trac_7154_arrow3d_width.4.patch](tarball://root/attachments/some-uuid/ticket7154/trac_7154_arrow3d_width.4.patch) by @jasongrout created at 2010-09-11 16:56:33
 
 Looks good.  I updated the version number in trac_7154_arrow3d_width.4.patch; apply only that patch.  
 
@@ -500,7 +500,7 @@ archive/issue_comments_059287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7154#issuecomment-59287",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

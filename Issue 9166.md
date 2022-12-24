@@ -3,7 +3,7 @@
 archive/issues_009166.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mhansen\n\nBasically, Mark Watkins program Sympow is completely broken on Microsoft Windows (Cygwin):\n\n\n```\n\nsage -t  \"devel/sage/sage/lfunctions/sympow.py\"             \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/lfunctions/sympow.py\", line 213:\n    sage: sympow.modular_degree(EllipticCurve('11a'))\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[2]>\", line 1, in <module>\n        sympow.modular_degree(EllipticCurve('11a'))###line 213:\n    sage: sympow.modular_degree(EllipticCurve('11a'))\n      File \"/home/wstein/sage-4.4.3/local/lib/python/site-packages/sage/lfunctions/sympow.py\", line 229, in modular_degree\n        raise RuntimeError, \"failed to compute modular degree\"\n    RuntimeError: failed to compute modular degree\n\n... etc.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9166\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nBasically, Mark Watkins program Sympow is completely broken on Microsoft Windows (Cygwin):\n\n\n```\n\nsage -t  \"devel/sage/sage/lfunctions/sympow.py\"             \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/lfunctions/sympow.py\", line 213:\n    sage: sympow.modular_degree(EllipticCurve('11a'))\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[2]>\", line 1, in <module>\n        sympow.modular_degree(EllipticCurve('11a'))###line 213:\n    sage: sympow.modular_degree(EllipticCurve('11a'))\n      File \"/home/wstein/sage-4.4.3/local/lib/python/site-packages/sage/lfunctions/sympow.py\", line 229, in modular_degree\n        raise RuntimeError, \"failed to compute modular degree\"\n    RuntimeError: failed to compute modular degree\n\n... etc.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9166\n\n",
     "created_at": "2010-06-07T04:22:20Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_009166.json:
     "title": "cygwin: sympow does not work on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9166",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  mhansen
+CC:  @mwhansen
 
 Basically, Mark Watkins program Sympow is completely broken on Microsoft Windows (Cygwin):
 
@@ -65,7 +65,7 @@ archive/issue_comments_085579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9166#issuecomment-85579",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_085580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9166#issuecomment-85580",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_085584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9166#issuecomment-85584",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_085585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9166#issuecomment-85585",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

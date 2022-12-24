@@ -14,7 +14,7 @@ archive/issues_009323.json:
     "title": "Remove devel/sage/doc/en/faq/Makefile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9323",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mvngu
@@ -100,7 +100,7 @@ archive/issue_comments_087926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87926",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_087927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87927",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_087928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87928",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_087929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87929",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_087932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87932",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000026.json:
     "title": "add docs to eigenvectors function.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/26",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -120,7 +120,7 @@ archive/issue_comments_000191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/26",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/26#issuecomment-191",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -133,16 +133,16 @@ Changing status from new to assigned.
 archive/issue_comments_000192.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2007-12-06T21:17:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/26",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/26#issuecomment-192",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -156,7 +156,7 @@ archive/issue_comments_000193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/26",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/26#issuecomment-193",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_000194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/26",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/26#issuecomment-194",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

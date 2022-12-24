@@ -3,7 +3,7 @@
 archive/issues_002741.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  timothyclemans\n\n> >  Is there an easy way to get mesh lines in a plot3d surface?\n\nThis is not implemented.  I wish you would implement it  :-) \n\nRobert Bradshaw might have some useful advise.\n\n> > Sometimes\n> >  it is hard to visualize the plot (especially when it is printed) without\n> >  the mesh lines.\n> >\n> >  If that is easy, what about the possibility of doing some of things that\n> >  Mma does with different types of meshes?  For reference, see:\n> >\n> >  http://reference.wolfram.com/mathematica/ref/Mesh.html\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshFunctions.html\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshShading.html\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshStyle.html\n> >\n\nIssue created by migration from https://trac.sagemath.org/ticket/2741\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  timothyclemans\n\n> >  Is there an easy way to get mesh lines in a plot3d surface?\n\nThis is not implemented.  I wish you would implement it  :-) \n\nRobert Bradshaw might have some useful advise.\n\n> > Sometimes\n> >  it is hard to visualize the plot (especially when it is printed) without\n> >  the mesh lines.\n> >\n> >  If that is easy, what about the possibility of doing some of things that\n> >  Mma does with different types of meshes?  For reference, see:\n> >\n> >  http://reference.wolfram.com/mathematica/ref/Mesh.html\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshFunctions.html\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshShading.html\n> >\n> >  http://reference.wolfram.com/mathematica/ref/MeshStyle.html\n> >\n\nIssue created by migration from https://trac.sagemath.org/ticket/2741\n\n",
     "created_at": "2008-03-31T18:19:49Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002741.json:
     "title": "Implement mesh lines in 3d plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2741",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  timothyclemans
 
@@ -59,7 +59,7 @@ archive/issue_comments_018845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2741#issuecomment-18845",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -85,16 +85,16 @@ Uncommenting the appropriate line does indeed give a mesh in JMOL.  So now the q
 archive/issue_comments_018846.json:
 ```json
 {
-    "body": "Attachment [sage-2741.patch](tarball://root/attachments/some-uuid/ticket2741/sage-2741.patch) by was created at 2008-04-30 04:24:33",
+    "body": "Attachment [sage-2741.patch](tarball://root/attachments/some-uuid/ticket2741/sage-2741.patch) by @williamstein created at 2008-04-30 04:24:33",
     "created_at": "2008-04-30T04:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2741#issuecomment-18846",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2741.patch](tarball://root/attachments/some-uuid/ticket2741/sage-2741.patch) by was created at 2008-04-30 04:24:33
+Attachment [sage-2741.patch](tarball://root/attachments/some-uuid/ticket2741/sage-2741.patch) by @williamstein created at 2008-04-30 04:24:33
 
 
 

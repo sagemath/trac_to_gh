@@ -14,7 +14,7 @@ archive/issues_006080.json:
     "title": "Add utility methods to Integer (needed for mpmath)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6080",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 Assignee: somebody
@@ -57,7 +57,7 @@ archive/issue_comments_048397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6080#issuecomment-48397",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

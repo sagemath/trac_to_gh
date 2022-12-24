@@ -3,7 +3,7 @@
 archive/issues_006568.json:
 ```json
 {
-    "body": "Assignee: timdumol\n\nCC:  jason\n\nKeywords: notebook, jinja,templating engine\n\nJinja is a templating engine based on Django's. It's already included\nin Sage due to the inclusion of Sphinx. Migrating from HTML to\ntemplates should make it easier to make future changes to the code,\nand make things easier to read.\n\nAdditionally, this will give us the option of switching to a web framework such as Django.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6568\n\n",
+    "body": "Assignee: @TimDumol\n\nCC:  @jasongrout\n\nKeywords: notebook, jinja,templating engine\n\nJinja is a templating engine based on Django's. It's already included\nin Sage due to the inclusion of Sphinx. Migrating from HTML to\ntemplates should make it easier to make future changes to the code,\nand make things easier to read.\n\nAdditionally, this will give us the option of switching to a web framework such as Django.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6568\n\n",
     "created_at": "2009-07-20T13:50:24Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006568.json:
     "title": "Migrate Notebook to Jinja",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6568",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
-Assignee: timdumol
+Assignee: @TimDumol
 
-CC:  jason
+CC:  @jasongrout
 
 Keywords: notebook, jinja,templating engine
 
@@ -46,7 +46,7 @@ archive/issue_comments_053580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53580",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_053581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53581",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_053583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53583",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_053584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53584",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_053585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53585",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_053586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53586",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_053587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53587",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_053588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53588",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_053589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53589",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_053590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53590",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -341,16 +341,16 @@ Migrated notebook.py from HTML to Jinja. Base: r12658 (Sage 4.4.1)
 archive/issue_comments_053591.json:
 ```json
 {
-    "body": "Attachment [sage-trac-6568.1.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.1.patch) by timdumol created at 2009-08-05 01:39:37\n\nMigrated worksheet.py to Jinja. Added doctests. Removed html_slide_controls. Incremental patch from the first patch.",
+    "body": "Attachment [sage-trac-6568.1.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.1.patch) by @TimDumol created at 2009-08-05 01:39:37\n\nMigrated worksheet.py to Jinja. Added doctests. Removed html_slide_controls. Incremental patch from the first patch.",
     "created_at": "2009-08-05T01:39:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53591",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [sage-trac-6568.1.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.1.patch) by timdumol created at 2009-08-05 01:39:37
+Attachment [sage-trac-6568.1.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.1.patch) by @TimDumol created at 2009-08-05 01:39:37
 
 Migrated worksheet.py to Jinja. Added doctests. Removed html_slide_controls. Incremental patch from the first patch.
 
@@ -361,16 +361,16 @@ Migrated worksheet.py to Jinja. Added doctests. Removed html_slide_controls. Inc
 archive/issue_comments_053592.json:
 ```json
 {
-    "body": "Attachment [12659.patch](tarball://root/attachments/some-uuid/ticket6568/12659.patch) by timdumol created at 2009-08-05 01:40:54\n\nOBSOLETE.",
+    "body": "Attachment [12659.patch](tarball://root/attachments/some-uuid/ticket6568/12659.patch) by @TimDumol created at 2009-08-05 01:40:54\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:40:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53592",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [12659.patch](tarball://root/attachments/some-uuid/ticket6568/12659.patch) by timdumol created at 2009-08-05 01:40:54
+Attachment [12659.patch](tarball://root/attachments/some-uuid/ticket6568/12659.patch) by @TimDumol created at 2009-08-05 01:40:54
 
 OBSOLETE.
 
@@ -386,7 +386,7 @@ archive/issue_comments_053593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53593",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -399,16 +399,16 @@ OBSOLETE.
 archive/issue_comments_053594.json:
 ```json
 {
-    "body": "Attachment [12660.patch](tarball://root/attachments/some-uuid/ticket6568/12660.patch) by timdumol created at 2009-08-05 01:41:23\n\nOBSOLETE.",
+    "body": "Attachment [12660.patch](tarball://root/attachments/some-uuid/ticket6568/12660.patch) by @TimDumol created at 2009-08-05 01:41:23\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:41:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53594",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [12660.patch](tarball://root/attachments/some-uuid/ticket6568/12660.patch) by timdumol created at 2009-08-05 01:41:23
+Attachment [12660.patch](tarball://root/attachments/some-uuid/ticket6568/12660.patch) by @TimDumol created at 2009-08-05 01:41:23
 
 OBSOLETE.
 
@@ -419,16 +419,16 @@ OBSOLETE.
 archive/issue_comments_053595.json:
 ```json
 {
-    "body": "Attachment [12662.patch](tarball://root/attachments/some-uuid/ticket6568/12662.patch) by timdumol created at 2009-08-05 01:41:35\n\nOBSOLETE.",
+    "body": "Attachment [12662.patch](tarball://root/attachments/some-uuid/ticket6568/12662.patch) by @TimDumol created at 2009-08-05 01:41:35\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53595",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [12662.patch](tarball://root/attachments/some-uuid/ticket6568/12662.patch) by timdumol created at 2009-08-05 01:41:35
+Attachment [12662.patch](tarball://root/attachments/some-uuid/ticket6568/12662.patch) by @TimDumol created at 2009-08-05 01:41:35
 
 OBSOLETE.
 
@@ -444,7 +444,7 @@ archive/issue_comments_053596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53596",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -457,16 +457,16 @@ OBSOLETE.
 archive/issue_comments_053597.json:
 ```json
 {
-    "body": "Attachment [12664.patch](tarball://root/attachments/some-uuid/ticket6568/12664.patch) by timdumol created at 2009-08-05 01:42:00\n\nOBSOLETE.",
+    "body": "Attachment [12664.patch](tarball://root/attachments/some-uuid/ticket6568/12664.patch) by @TimDumol created at 2009-08-05 01:42:00\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:42:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53597",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [12664.patch](tarball://root/attachments/some-uuid/ticket6568/12664.patch) by timdumol created at 2009-08-05 01:42:00
+Attachment [12664.patch](tarball://root/attachments/some-uuid/ticket6568/12664.patch) by @TimDumol created at 2009-08-05 01:42:00
 
 OBSOLETE.
 
@@ -477,16 +477,16 @@ OBSOLETE.
 archive/issue_comments_053598.json:
 ```json
 {
-    "body": "Attachment [12665.patch](tarball://root/attachments/some-uuid/ticket6568/12665.patch) by timdumol created at 2009-08-05 01:42:12\n\nOBSOLETE.",
+    "body": "Attachment [12665.patch](tarball://root/attachments/some-uuid/ticket6568/12665.patch) by @TimDumol created at 2009-08-05 01:42:12\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53598",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [12665.patch](tarball://root/attachments/some-uuid/ticket6568/12665.patch) by timdumol created at 2009-08-05 01:42:12
+Attachment [12665.patch](tarball://root/attachments/some-uuid/ticket6568/12665.patch) by @TimDumol created at 2009-08-05 01:42:12
 
 OBSOLETE.
 
@@ -502,7 +502,7 @@ archive/issue_comments_053599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53599",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -515,16 +515,16 @@ OBSOLETE.
 archive/issue_comments_053600.json:
 ```json
 {
-    "body": "Attachment [12667.patch](tarball://root/attachments/some-uuid/ticket6568/12667.patch) by timdumol created at 2009-08-05 01:42:41\n\nOBSOLETE.",
+    "body": "Attachment [12667.patch](tarball://root/attachments/some-uuid/ticket6568/12667.patch) by @TimDumol created at 2009-08-05 01:42:41\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53600",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [12667.patch](tarball://root/attachments/some-uuid/ticket6568/12667.patch) by timdumol created at 2009-08-05 01:42:41
+Attachment [12667.patch](tarball://root/attachments/some-uuid/ticket6568/12667.patch) by @TimDumol created at 2009-08-05 01:42:41
 
 OBSOLETE.
 
@@ -540,7 +540,7 @@ archive/issue_comments_053601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53601",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -553,16 +553,16 @@ OBSOLETE.
 archive/issue_comments_053602.json:
 ```json
 {
-    "body": "Attachment [_12659.patch](tarball://root/attachments/some-uuid/ticket6568/_12659.patch) by timdumol created at 2009-08-05 01:43:09\n\nOBSOLETE.",
+    "body": "Attachment [_12659.patch](tarball://root/attachments/some-uuid/ticket6568/_12659.patch) by @TimDumol created at 2009-08-05 01:43:09\n\nOBSOLETE.",
     "created_at": "2009-08-05T01:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53602",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [_12659.patch](tarball://root/attachments/some-uuid/ticket6568/_12659.patch) by timdumol created at 2009-08-05 01:43:09
+Attachment [_12659.patch](tarball://root/attachments/some-uuid/ticket6568/_12659.patch) by @TimDumol created at 2009-08-05 01:43:09
 
 OBSOLETE.
 
@@ -573,16 +573,16 @@ OBSOLETE.
 archive/issue_comments_053603.json:
 ```json
 {
-    "body": "Attachment [_12660.patch](tarball://root/attachments/some-uuid/ticket6568/_12660.patch) by mpatel created at 2009-08-10 09:27:17\n\n#4808 appears to be a duplicate of this ticket.  When one is merged, please consider closing the other.",
+    "body": "Attachment [_12660.patch](tarball://root/attachments/some-uuid/ticket6568/_12660.patch) by @qed777 created at 2009-08-10 09:27:17\n\n#4808 appears to be a duplicate of this ticket.  When one is merged, please consider closing the other.",
     "created_at": "2009-08-10T09:27:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53603",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [_12660.patch](tarball://root/attachments/some-uuid/ticket6568/_12660.patch) by mpatel created at 2009-08-10 09:27:17
+Attachment [_12660.patch](tarball://root/attachments/some-uuid/ticket6568/_12660.patch) by @qed777 created at 2009-08-10 09:27:17
 
 #4808 appears to be a duplicate of this ticket.  When one is merged, please consider closing the other.
 
@@ -598,7 +598,7 @@ archive/issue_comments_053604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53604",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -653,7 +653,7 @@ archive/issue_comments_053605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53605",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -677,7 +677,7 @@ archive/issue_comments_053606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53606",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -697,7 +697,7 @@ archive/issue_comments_053607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53607",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -720,7 +720,7 @@ archive/issue_comments_053608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53608",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -733,16 +733,16 @@ Fixed several bugs. Incremental patch from sage-trac-6568.2.patch
 archive/issue_comments_053609.json:
 ```json
 {
-    "body": "Attachment [sage-trac-6568.4.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.4.patch) by timdumol created at 2009-08-13 13:51:08\n\nFixed bug in styling of documentation pages.",
+    "body": "Attachment [sage-trac-6568.4.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.4.patch) by @TimDumol created at 2009-08-13 13:51:08\n\nFixed bug in styling of documentation pages.",
     "created_at": "2009-08-13T13:51:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53609",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [sage-trac-6568.4.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.4.patch) by timdumol created at 2009-08-13 13:51:08
+Attachment [sage-trac-6568.4.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.4.patch) by @TimDumol created at 2009-08-13 13:51:08
 
 Fixed bug in styling of documentation pages.
 
@@ -758,7 +758,7 @@ archive/issue_comments_053610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53610",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -776,7 +776,7 @@ archive/issue_comments_053611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53611",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -804,7 +804,7 @@ archive/issue_comments_053612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53612",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -822,7 +822,7 @@ archive/issue_comments_053613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53613",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -864,7 +864,7 @@ archive/issue_comments_053615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53615",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -882,7 +882,7 @@ archive/issue_comments_053616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53616",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -895,16 +895,16 @@ Actually, I meant "I don't know." as in I don't know about the possibility of fi
 archive/issue_comments_053617.json:
 ```json
 {
-    "body": "Attachment [sage-trac-6568.5.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.5.patch) by timdumol created at 2009-08-14 09:43:24\n\nFixed a few bugs in templating.",
+    "body": "Attachment [sage-trac-6568.5.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.5.patch) by @TimDumol created at 2009-08-14 09:43:24\n\nFixed a few bugs in templating.",
     "created_at": "2009-08-14T09:43:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53617",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [sage-trac-6568.5.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.5.patch) by timdumol created at 2009-08-14 09:43:24
+Attachment [sage-trac-6568.5.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.5.patch) by @TimDumol created at 2009-08-14 09:43:24
 
 Fixed a few bugs in templating.
 
@@ -915,16 +915,16 @@ Fixed a few bugs in templating.
 archive/issue_comments_053618.json:
 ```json
 {
-    "body": "Attachment [sage-trac-6568.6.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.6.patch) by timdumol created at 2009-08-14 09:52:32\n\nRemoved hack in twist.py for documentation page creation. Removed unused files.",
+    "body": "Attachment [sage-trac-6568.6.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.6.patch) by @TimDumol created at 2009-08-14 09:52:32\n\nRemoved hack in twist.py for documentation page creation. Removed unused files.",
     "created_at": "2009-08-14T09:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53618",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [sage-trac-6568.6.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.6.patch) by timdumol created at 2009-08-14 09:52:32
+Attachment [sage-trac-6568.6.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.6.patch) by @TimDumol created at 2009-08-14 09:52:32
 
 Removed hack in twist.py for documentation page creation. Removed unused files.
 
@@ -935,16 +935,16 @@ Removed hack in twist.py for documentation page creation. Removed unused files.
 archive/issue_comments_053619.json:
 ```json
 {
-    "body": "Attachment [sage-trac-6568.6.cumulative.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.6.cumulative.patch) by timdumol created at 2009-08-14 09:57:19\n\nCumulative patches from sage-trac-6568.2.patch to sage-trac-6568.6.patch. Incremental patch from sage-trac-6568.1.patch.",
+    "body": "Attachment [sage-trac-6568.6.cumulative.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.6.cumulative.patch) by @TimDumol created at 2009-08-14 09:57:19\n\nCumulative patches from sage-trac-6568.2.patch to sage-trac-6568.6.patch. Incremental patch from sage-trac-6568.1.patch.",
     "created_at": "2009-08-14T09:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53619",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [sage-trac-6568.6.cumulative.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.6.cumulative.patch) by timdumol created at 2009-08-14 09:57:19
+Attachment [sage-trac-6568.6.cumulative.patch](tarball://root/attachments/some-uuid/ticket6568/sage-trac-6568.6.cumulative.patch) by @TimDumol created at 2009-08-14 09:57:19
 
 Cumulative patches from sage-trac-6568.2.patch to sage-trac-6568.6.patch. Incremental patch from sage-trac-6568.1.patch.
 
@@ -960,7 +960,7 @@ archive/issue_comments_053620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53620",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -978,7 +978,7 @@ archive/issue_comments_053621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53621",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -991,16 +991,16 @@ All-in-one.  Apply only this patch.
 archive/issue_comments_053622.json:
 ```json
 {
-    "body": "Attachment [trac_6568-jinja_migration.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-jinja_migration.patch) by mpatel created at 2009-08-15 03:30:41\n\nI've attached a solo patch comprised of Tim Dumol's six recent patches.  (I did not use the cumulative patch.)  I've ignored a few small rejected hunks from the sixth patch --- in `notebook.py`, `twist.py`, and `base.html` --- since it appears that the rejected changes are applied by an earlier patch.  Of course, all credit for the hard work of migrating the notebook to Jinja should go to Tim.\n\nI haven't tested the latest changes extensively, but I've noticed no unwelcome surprises.",
+    "body": "Attachment [trac_6568-jinja_migration.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-jinja_migration.patch) by @qed777 created at 2009-08-15 03:30:41\n\nI've attached a solo patch comprised of Tim Dumol's six recent patches.  (I did not use the cumulative patch.)  I've ignored a few small rejected hunks from the sixth patch --- in `notebook.py`, `twist.py`, and `base.html` --- since it appears that the rejected changes are applied by an earlier patch.  Of course, all credit for the hard work of migrating the notebook to Jinja should go to Tim.\n\nI haven't tested the latest changes extensively, but I've noticed no unwelcome surprises.",
     "created_at": "2009-08-15T03:30:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53622",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6568-jinja_migration.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-jinja_migration.patch) by mpatel created at 2009-08-15 03:30:41
+Attachment [trac_6568-jinja_migration.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-jinja_migration.patch) by @qed777 created at 2009-08-15 03:30:41
 
 I've attached a solo patch comprised of Tim Dumol's six recent patches.  (I did not use the cumulative patch.)  I've ignored a few small rejected hunks from the sixth patch --- in `notebook.py`, `twist.py`, and `base.html` --- since it appears that the rejected changes are applied by an earlier patch.  Of course, all credit for the hard work of migrating the notebook to Jinja should go to Tim.
 
@@ -1018,7 +1018,7 @@ archive/issue_comments_053623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53623",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1031,16 +1031,16 @@ Fixed introspection, minor clean-ups.  Apply only this patch.
 archive/issue_comments_053624.json:
 ```json
 {
-    "body": "Attachment [trac_6568-jinja_migration_v2.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-jinja_migration_v2.patch) by mpatel created at 2009-08-16 14:08:08\n\nVersion 2 (of the uber-patch) should fix introspection.  It also\n* Simplifies `Notebook.plain_text_worksheet_html()`.\n* Indents `Notebook.html_debug_window()`'s docstring.\n\nThere's still some HTML generation in\n* `Notebook.object_list_html()`, `Notebook.list_window_javascript()`, `Notebook.html_settings()`.\n* `Worksheet.html_ratings_into()`\nbut these methods are unused or minor.  Of course, there's markup in `interact.py`, etc.\n\nShould we make a separate ticket for moving `css.py`'s stylesheets to `templates/`?  Rebasing other tickets against this one may be easier than the opposite.\n\nMy review is positive, though someone else should check the most recent changes.  It would be useful to get feedback from other testers.",
+    "body": "Attachment [trac_6568-jinja_migration_v2.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-jinja_migration_v2.patch) by @qed777 created at 2009-08-16 14:08:08\n\nVersion 2 (of the uber-patch) should fix introspection.  It also\n* Simplifies `Notebook.plain_text_worksheet_html()`.\n* Indents `Notebook.html_debug_window()`'s docstring.\n\nThere's still some HTML generation in\n* `Notebook.object_list_html()`, `Notebook.list_window_javascript()`, `Notebook.html_settings()`.\n* `Worksheet.html_ratings_into()`\nbut these methods are unused or minor.  Of course, there's markup in `interact.py`, etc.\n\nShould we make a separate ticket for moving `css.py`'s stylesheets to `templates/`?  Rebasing other tickets against this one may be easier than the opposite.\n\nMy review is positive, though someone else should check the most recent changes.  It would be useful to get feedback from other testers.",
     "created_at": "2009-08-16T14:08:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53624",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6568-jinja_migration_v2.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-jinja_migration_v2.patch) by mpatel created at 2009-08-16 14:08:08
+Attachment [trac_6568-jinja_migration_v2.patch](tarball://root/attachments/some-uuid/ticket6568/trac_6568-jinja_migration_v2.patch) by @qed777 created at 2009-08-16 14:08:08
 
 Version 2 (of the uber-patch) should fix introspection.  It also
 * Simplifies `Notebook.plain_text_worksheet_html()`.
@@ -1067,7 +1067,7 @@ archive/issue_comments_053625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53625",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -1087,7 +1087,7 @@ archive/issue_comments_053626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53626",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1107,7 +1107,7 @@ archive/issue_comments_053627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53627",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1142,7 +1142,7 @@ archive/issue_comments_053628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53628",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -1160,7 +1160,7 @@ archive/issue_comments_053629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53629",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1254,7 +1254,7 @@ archive/issue_comments_053632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53632",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1299,7 +1299,7 @@ archive/issue_comments_053634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6568#issuecomment-53634",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

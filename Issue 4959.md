@@ -3,7 +3,7 @@
 archive/issues_004959.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jason mvngu\n\nSee, e.g., this from sage-devel\n\n```\nI had a similar failure today, trying to:\n\nr.install_packages(\"adapt\")\n\nafter some fussing, runing ./sage as root, and using the notebook\ninterface I could get through the download phase, but same sorts of\nfailures in just as the gcc kicks in.  Seems several of the key R\nscripts have \"/home/wstein/...\"  hard wired in to R_HOME_XXX, which\nobviously will fail.  I tried editing the R startup scripts (among\nothers) but couldn't get it to work.\n\nBTW, I installed from the latest Debian tarball into a Debian/VMWARE\nmachine just today.  So installing R packages is still an issue.\n```\n\n\nSince most of the value of R is the huge list of third party packages, it's very important that this get fixed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4959\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout mvngu\n\nSee, e.g., this from sage-devel\n\n```\nI had a similar failure today, trying to:\n\nr.install_packages(\"adapt\")\n\nafter some fussing, runing ./sage as root, and using the notebook\ninterface I could get through the download phase, but same sorts of\nfailures in just as the gcc kicks in.  Seems several of the key R\nscripts have \"/home/wstein/...\"  hard wired in to R_HOME_XXX, which\nobviously will fail.  I tried editing the R startup scripts (among\nothers) but couldn't get it to work.\n\nBTW, I installed from the latest Debian tarball into a Debian/VMWARE\nmachine just today.  So installing R packages is still an issue.\n```\n\n\nSince most of the value of R is the huge list of third party packages, it's very important that this get fixed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4959\n\n",
     "created_at": "2009-01-09T16:36:50Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_004959.json:
     "title": "r's install_packages is broken in many variants of sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4959",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  jason mvngu
+CC:  @jasongrout mvngu
 
 See, e.g., this from sage-devel
 
@@ -58,7 +58,7 @@ archive/issue_comments_037694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4959#issuecomment-37694",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_037695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4959#issuecomment-37695",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_037696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4959#issuecomment-37696",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_037697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4959#issuecomment-37697",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_037698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4959#issuecomment-37698",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_037699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4959#issuecomment-37699",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_037700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4959#issuecomment-37700",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

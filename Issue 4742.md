@@ -3,7 +3,7 @@
 archive/issues_004742.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  jdemeyer\n\nKeywords: elementary divisors\n\nPari has a function (\"nfsnf\" in GP, \"nfsmith\" in the C library) that calculates the generalised elementary divisors (a list of ideals rather than elements) for a matrix over the ring of integers of a number field. In the current pari stable (2.3.4) and testing (2.4.2) this is so broken as to be useless, but Karim Belabas has fixed it in svn, so when we catch up with Pari 2.4.3 it would be worth providing a Sage wrapper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4742\n\n",
+    "body": "Assignee: somebody\n\nCC:  @jdemeyer\n\nKeywords: elementary divisors\n\nPari has a function (\"nfsnf\" in GP, \"nfsmith\" in the C library) that calculates the generalised elementary divisors (a list of ideals rather than elements) for a matrix over the ring of integers of a number field. In the current pari stable (2.3.4) and testing (2.4.2) this is so broken as to be useless, but Karim Belabas has fixed it in svn, so when we catch up with Pari 2.4.3 it would be worth providing a Sage wrapper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4742\n\n",
     "created_at": "2008-12-08T17:15:50Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_004742.json:
     "title": "Wrap Pari's generalised Smith form (when it is fixed)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4742",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 Assignee: somebody
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 Keywords: elementary divisors
 
@@ -41,7 +41,7 @@ archive/issue_comments_035873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35873",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_035874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35874",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_035875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35875",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_035876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35876",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_035877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35877",
-    "user": "alexjbest"
+    "user": "@alexjbest"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_035878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35878",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_035879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35879",
-    "user": "alexjbest"
+    "user": "@alexjbest"
 }
 ```
 

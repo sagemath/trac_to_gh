@@ -14,7 +14,7 @@ archive/issues_007300.json:
     "title": "Display tight constraints",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7300",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
@@ -37,7 +37,7 @@ archive/issue_comments_060845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7300#issuecomment-60845",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_060846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7300#issuecomment-60846",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004761.json:
 ```json
 {
-    "body": "Assignee: malb\n\nI always found this annoying:\n\n\n```\nsage: t = cputime()\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nsage: print cputime(t)\n0.217967\n```\n\n\nso here's my proposal for a fix:\n\n\n```\nsage: t = cputime_gobal()\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nsage: print cputime_global(t)\n5.647973\n```\n\n\nI am not sure if the design is particularly nice though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4761\n\n",
+    "body": "Assignee: @malb\n\nI always found this annoying:\n\n\n```\nsage: t = cputime()\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nsage: print cputime(t)\n0.217967\n```\n\n\nso here's my proposal for a fix:\n\n\n```\nsage: t = cputime_gobal()\nsage: P = PolynomialRing(QQ,8,'x')\nsage: I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nsage: print cputime_global(t)\n5.647973\n```\n\n\nI am not sure if the design is particularly nice though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4761\n\n",
     "created_at": "2008-12-11T15:34:42Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_004761.json:
     "title": "[iwth patch, needs review] global cputime (inclusive some subprocesses like Singular)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4761",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 I always found this annoying:
 
@@ -63,7 +63,7 @@ archive/issue_comments_036081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4761#issuecomment-36081",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_036082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4761#issuecomment-36082",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_036083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4761#issuecomment-36083",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_036084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4761#issuecomment-36084",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_036085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4761#issuecomment-36085",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_036086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4761#issuecomment-36086",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_036087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4761#issuecomment-36087",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_036088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4761#issuecomment-36088",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -337,16 +337,16 @@ Just a quick note: The docstring formatting should now follow the ReST format.
 archive/issue_comments_036090.json:
 ```json
 {
-    "body": "Attachment [cputime_global.patch](tarball://root/attachments/some-uuid/ticket4761/cputime_global.patch) by malb created at 2009-06-08 10:49:14",
+    "body": "Attachment [cputime_global.patch](tarball://root/attachments/some-uuid/ticket4761/cputime_global.patch) by @malb created at 2009-06-08 10:49:14",
     "created_at": "2009-06-08T10:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4761#issuecomment-36090",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [cputime_global.patch](tarball://root/attachments/some-uuid/ticket4761/cputime_global.patch) by malb created at 2009-06-08 10:49:14
+Attachment [cputime_global.patch](tarball://root/attachments/some-uuid/ticket4761/cputime_global.patch) by @malb created at 2009-06-08 10:49:14
 
 
 
@@ -360,7 +360,7 @@ archive/issue_comments_036091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4761#issuecomment-36091",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_036092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4761#issuecomment-36092",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_036093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4761#issuecomment-36093",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

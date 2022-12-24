@@ -14,7 +14,7 @@ archive/issues_006283.json:
     "title": "Make it so NUM_THREADS is set intelligently instead of idiotically in makefile so doing \"make ptest\" or \"make ptestlong\" doesn't kill some computers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6283",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6283
 archive/issue_comments_050162.json:
 ```json
 {
-    "body": "Attachment [trac_6283-numthreads.patch](tarball://root/attachments/some-uuid/ticket6283/trac_6283-numthreads.patch) by jhpalmieri created at 2009-09-21 23:08:42\n\napply to scripts repository.  depends on #2624.",
+    "body": "Attachment [trac_6283-numthreads.patch](tarball://root/attachments/some-uuid/ticket6283/trac_6283-numthreads.patch) by @jhpalmieri created at 2009-09-21 23:08:42\n\napply to scripts repository.  depends on #2624.",
     "created_at": "2009-09-21T23:08:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6283#issuecomment-50162",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6283-numthreads.patch](tarball://root/attachments/some-uuid/ticket6283/trac_6283-numthreads.patch) by jhpalmieri created at 2009-09-21 23:08:42
+Attachment [trac_6283-numthreads.patch](tarball://root/attachments/some-uuid/ticket6283/trac_6283-numthreads.patch) by @jhpalmieri created at 2009-09-21 23:08:42
 
 apply to scripts repository.  depends on #2624.
 
@@ -67,7 +67,7 @@ archive/issue_comments_050163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6283#issuecomment-50163",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -80,16 +80,16 @@ patch for SAGE_ROOT/makefile
 archive/issue_comments_050164.json:
 ```json
 {
-    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket6283/makefile) by jhpalmieri created at 2009-09-21 23:12:51\n\nthe file SAGE_ROOT/makefile",
+    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket6283/makefile) by @jhpalmieri created at 2009-09-21 23:12:51\n\nthe file SAGE_ROOT/makefile",
     "created_at": "2009-09-21T23:12:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6283#issuecomment-50164",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [makefile](tarball://root/attachments/some-uuid/ticket6283/makefile) by jhpalmieri created at 2009-09-21 23:12:51
+Attachment [makefile](tarball://root/attachments/some-uuid/ticket6283/makefile) by @jhpalmieri created at 2009-09-21 23:12:51
 
 the file SAGE_ROOT/makefile
 
@@ -105,7 +105,7 @@ archive/issue_comments_050165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6283#issuecomment-50165",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_050166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6283#issuecomment-50166",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -138,16 +138,16 @@ Changing status from new to assigned.
 archive/issue_comments_050167.json:
 ```json
 {
-    "body": "Changing assignee from tbd to jhpalmieri.",
+    "body": "Changing assignee from tbd to @jhpalmieri.",
     "created_at": "2009-09-21T23:13:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6283#issuecomment-50167",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from tbd to jhpalmieri.
+Changing assignee from tbd to @jhpalmieri.
 
 
 
@@ -161,7 +161,7 @@ archive/issue_comments_050168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6283#issuecomment-50168",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_050169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6283#issuecomment-50169",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_050170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6283#issuecomment-50170",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_050171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6283#issuecomment-50171",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_050174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6283#issuecomment-50174",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_050179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6283#issuecomment-50179",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

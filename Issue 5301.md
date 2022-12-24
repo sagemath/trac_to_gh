@@ -3,7 +3,7 @@
 archive/issues_005301.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ghtdak jason\n\nThis happens on OS X with a local GUI. Moreover, I get this doctest failure, which is perhaps related:\n\n```\n\t [2.5 s]\nsage -t -long \"devel/sage/sage/plot/plot.py\"                \n**********************************************************************\nFile \"/Users/wstein/build/build/sage-3.3.rc2/devel/sage/sage/plot/plot.py\", line 173:\n    sage: savefig('sage.png')\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[61]>\", line 1, in <module>\n        savefig('sage.png')###line 173:\n    sage: savefig('sage.png')\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 346, in savefig\n        return fig.savefig(*args, **kwargs)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/figure.py\", line 1001, in savefig\n        self.canvas.print_figure(*args, **kwargs)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/backends/backend_macosx.py\", line 268, in print_figure\n        self.write_bitmap(filename, width, height)\n    ValueError: Unknown file type\n**********************************************************************\n1 items had failures:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5301\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  ghtdak @jasongrout\n\nThis happens on OS X with a local GUI. Moreover, I get this doctest failure, which is perhaps related:\n\n```\n\t [2.5 s]\nsage -t -long \"devel/sage/sage/plot/plot.py\"                \n**********************************************************************\nFile \"/Users/wstein/build/build/sage-3.3.rc2/devel/sage/sage/plot/plot.py\", line 173:\n    sage: savefig('sage.png')\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[61]>\", line 1, in <module>\n        savefig('sage.png')###line 173:\n    sage: savefig('sage.png')\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/pyplot.py\", line 346, in savefig\n        return fig.savefig(*args, **kwargs)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/figure.py\", line 1001, in savefig\n        self.canvas.print_figure(*args, **kwargs)\n      File \"/Users/wstein/build/build/sage-3.3.rc2/local/lib/python2.5/site-packages/matplotlib/backends/backend_macosx.py\", line 268, in print_figure\n        self.write_bitmap(filename, width, height)\n    ValueError: Unknown file type\n**********************************************************************\n1 items had failures:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5301\n\n",
     "created_at": "2009-02-18T06:57:29Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_005301.json:
     "title": "In sage-3.3.rc2, doing sage -t -long \"devel/sage/sage/plot/plot.py\" causing a matplotlib GUI window to popup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5301",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ghtdak jason
+CC:  ghtdak @jasongrout
 
 This happens on OS X with a local GUI. Moreover, I get this doctest failure, which is perhaps related:
 
@@ -127,7 +127,7 @@ archive/issue_comments_040779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5301#issuecomment-40779",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_040780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5301#issuecomment-40780",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_040781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5301#issuecomment-40781",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_040782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5301#issuecomment-40782",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_040787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5301#issuecomment-40787",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

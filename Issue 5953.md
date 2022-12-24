@@ -67,7 +67,7 @@ archive/issue_comments_047088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47088",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_047089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47089",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

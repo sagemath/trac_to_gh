@@ -3,7 +3,7 @@
 archive/issues_006838.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was rbradshaw malb\n\nYet another thing I can't understand:\n\n\n```\nsage: GF(2)(1/3)\n1\nsage: MatrixSpace(GF(2), 1, 1)([1/3])\n[0]\n```\n\n\nFor the record:\n\n\n```\nsage: MatrixSpace(Zmod(4), 1, 1)([1/3])\n[3]\nsage: Zmod(4)(1/3)\n3\n```\n\n\nSo it's not always broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6838\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  was rbradshaw malb\n\nYet another thing I can't understand:\n\n\n```\nsage: GF(2)(1/3)\n1\nsage: MatrixSpace(GF(2), 1, 1)([1/3])\n[0]\n```\n\n\nFor the record:\n\n\n```\nsage: MatrixSpace(Zmod(4), 1, 1)([1/3])\n[3]\nsage: Zmod(4)(1/3)\n3\n```\n\n\nSo it's not always broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6838\n\n",
     "created_at": "2009-08-28T21:05:10Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_006838.json:
     "title": "error creating matrices over GF(2) from elements of QQ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6838",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  was rbradshaw malb
 
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6838
 archive/issue_comments_056400.json:
 ```json
 {
-    "body": "Attachment [trac_6838.patch](tarball://root/attachments/some-uuid/ticket6838/trac_6838.patch) by mhansen created at 2009-09-01 22:36:10",
+    "body": "Attachment [trac_6838.patch](tarball://root/attachments/some-uuid/ticket6838/trac_6838.patch) by @mwhansen created at 2009-09-01 22:36:10",
     "created_at": "2009-09-01T22:36:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6838#issuecomment-56400",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6838.patch](tarball://root/attachments/some-uuid/ticket6838/trac_6838.patch) by mhansen created at 2009-09-01 22:36:10
+Attachment [trac_6838.patch](tarball://root/attachments/some-uuid/ticket6838/trac_6838.patch) by @mwhansen created at 2009-09-01 22:36:10
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_056401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6838#issuecomment-56401",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -92,16 +92,16 @@ Changing status from new to assigned.
 archive/issue_comments_056402.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2009-09-01T22:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6838#issuecomment-56402",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_056403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6838#issuecomment-56403",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002332.json:
     "title": "notebook -- the evaluate link doesn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2332",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -183,7 +183,7 @@ archive/issue_comments_015601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2332#issuecomment-15601",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

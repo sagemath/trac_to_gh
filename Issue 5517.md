@@ -14,7 +14,7 @@ archive/issues_005517.json:
     "title": "cvxopt-0.9.p7: build failure due to missing perl modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5517",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 Assignee: mabshoff
@@ -65,16 +65,16 @@ Michael
 archive/issue_comments_042881.json:
 ```json
 {
-    "body": "Attachment [trac_5517.cvxopt.patch](tarball://root/attachments/some-uuid/ticket5517/trac_5517.cvxopt.patch) by tornaria created at 2009-05-01 21:03:31\n\npatch for cvxopt-0.9.p7.spkg: replace spkg-install perl script by a bash script, eliminating the dependency on perl",
+    "body": "Attachment [trac_5517.cvxopt.patch](tarball://root/attachments/some-uuid/ticket5517/trac_5517.cvxopt.patch) by @tornaria created at 2009-05-01 21:03:31\n\npatch for cvxopt-0.9.p7.spkg: replace spkg-install perl script by a bash script, eliminating the dependency on perl",
     "created_at": "2009-05-01T21:03:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5517#issuecomment-42881",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [trac_5517.cvxopt.patch](tarball://root/attachments/some-uuid/ticket5517/trac_5517.cvxopt.patch) by tornaria created at 2009-05-01 21:03:31
+Attachment [trac_5517.cvxopt.patch](tarball://root/attachments/some-uuid/ticket5517/trac_5517.cvxopt.patch) by @tornaria created at 2009-05-01 21:03:31
 
 patch for cvxopt-0.9.p7.spkg: replace spkg-install perl script by a bash script, eliminating the dependency on perl
 
@@ -85,16 +85,16 @@ patch for cvxopt-0.9.p7.spkg: replace spkg-install perl script by a bash script,
 archive/issue_comments_042882.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to tornaria.",
+    "body": "Changing assignee from mabshoff to @tornaria.",
     "created_at": "2009-05-01T21:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5517#issuecomment-42882",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Changing assignee from mabshoff to tornaria.
+Changing assignee from mabshoff to @tornaria.
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_042883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5517#issuecomment-42883",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_042884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5517#issuecomment-42884",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_042885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5517#issuecomment-42885",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_042886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5517#issuecomment-42886",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_042887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5517#issuecomment-42887",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

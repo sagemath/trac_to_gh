@@ -3,7 +3,7 @@
 archive/issues_004855.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is a followup to $4814 to properly fix the interface. \n\nI suspect that the interface also leaks file handles which causes it to stop working after a while. This issue can be split off if the it cannot be fixed in a timely manner or if there is a patch for the other issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4855\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a followup to $4814 to properly fix the interface. \n\nI suspect that the interface also leaks file handles which causes it to stop working after a while. This issue can be split off if the it cannot be fixed in a timely manner or if there is a patch for the other issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4855\n\n",
     "created_at": "2008-12-22T23:02:48Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_004855.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is a followup to $4814 to properly fix the interface. 
 
@@ -43,7 +43,7 @@ archive/issue_comments_036805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4855#issuecomment-36805",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

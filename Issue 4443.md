@@ -3,7 +3,7 @@
 archive/issues_004443.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  cremona zimmerma\n\nThis bundle does several things:\n\n1. Massively speed up `prime_range`. Before:\n\n   {{{\nsage: time ls = prime_range(10^8)\nCPU times: user 143.74 s, sys: 1.51 s, total: 145.26 s\nWall time: 145.93 s\n    }}}\n\n After:\n    \n    {{{\nsage: %time ls = prime_range(10^8)\nCPU times: user 1.76 s, sys: 1.08 s, total: 2.84 s\nWall time: 2.87 s\n    }}}\n\n This was first mentioned during the `3.1.3.alpha0` testing cycle. \n\n2. Speed up `gcd` and `lcm`. These were rewritten to be much more robust as part of #3118. However, these were accidentally made much slower. This patch fixes that. \n\n Before #3118:\n    {{{\nsage: n = 928374923\nsage: m = 892734\nsage: %timeit gcd(n,m)\n100000 loops, best of 3: 6.13 \u00c2\u00b5s per loop\n    }}}\n    \n After #3118:\n    {{{\nsage: n = 928374923\nsage: m = 892734\nsage: %timeit gcd(n,m)\n10000 loops, best of 3: 25.7 \u00c2\u00b5s per loop\n    }}}   \n   \n With this patch:\n    {{{\nsage: n = 928374923\nsage: m = 892734\nsage: %timeit gcd(n,m)\n100000 loops, best of 3: 3.97 \u00c2\u00b5s per loop\n    }}}\n\n I also tested on lots of other kinds of input (lists of `Integer`s, list of `int`s, list of `long`s, etc), and the code **seems** to be always at least as fast as both before and after the patch at #3118. If there are cases I've missed, please let me know! \n   \n3. Tidy up `sage/rings/arith.py`. This was mostly small cosmetic changes; it would be a good project to go through this file, remove more cruft, and move some functions to Cython. If someone wants to make a ticket and assign it to me, I'll try to get to it at some point.\n\n4. Clean up and reorganize all of the files with `arith` in their name. In particular, I moved `sage/ext/arith.pyx` to `sage/rings/fast_arith.pyx`, and removed all of the legacy `arith_c`, `arith_gmp`, etc. Most of these were empty files that dated back to the days when Pyrex wouldn't let us keep `.pyx` files in multiple directories. There were also two files which seemed to be a Pyrex implementation of polynomials mod n, I believe by Didier Deshommes. These aren't used anywhere in Sage, and we have new code that does that (based on David Harvey's `znpoly`), so I've removed them.\n\nI have tested all of `sage/rings/`, but one should really do a `sage -br` and a `sage -testall` before giving this bundle a positive review. I'll try to do this soon, but I wanted to get the patch posted while I was at it.\n\nSince several files were added and removed from the mercurial archive, I'm attaching a bundle instead of a patch. I'm adding John Cremona and Paul Zimmerman to the `cc`, because they're most qualified to look at the changes I made after #3118 and see if I accidentally un-did any of their work on some corner cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4443\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @JohnCremona @zimmermann6\n\nThis bundle does several things:\n\n1. Massively speed up `prime_range`. Before:\n\n   {{{\nsage: time ls = prime_range(10^8)\nCPU times: user 143.74 s, sys: 1.51 s, total: 145.26 s\nWall time: 145.93 s\n    }}}\n\n After:\n    \n    {{{\nsage: %time ls = prime_range(10^8)\nCPU times: user 1.76 s, sys: 1.08 s, total: 2.84 s\nWall time: 2.87 s\n    }}}\n\n This was first mentioned during the `3.1.3.alpha0` testing cycle. \n\n2. Speed up `gcd` and `lcm`. These were rewritten to be much more robust as part of #3118. However, these were accidentally made much slower. This patch fixes that. \n\n Before #3118:\n    {{{\nsage: n = 928374923\nsage: m = 892734\nsage: %timeit gcd(n,m)\n100000 loops, best of 3: 6.13 \u00c2\u00b5s per loop\n    }}}\n    \n After #3118:\n    {{{\nsage: n = 928374923\nsage: m = 892734\nsage: %timeit gcd(n,m)\n10000 loops, best of 3: 25.7 \u00c2\u00b5s per loop\n    }}}   \n   \n With this patch:\n    {{{\nsage: n = 928374923\nsage: m = 892734\nsage: %timeit gcd(n,m)\n100000 loops, best of 3: 3.97 \u00c2\u00b5s per loop\n    }}}\n\n I also tested on lots of other kinds of input (lists of `Integer`s, list of `int`s, list of `long`s, etc), and the code **seems** to be always at least as fast as both before and after the patch at #3118. If there are cases I've missed, please let me know! \n   \n3. Tidy up `sage/rings/arith.py`. This was mostly small cosmetic changes; it would be a good project to go through this file, remove more cruft, and move some functions to Cython. If someone wants to make a ticket and assign it to me, I'll try to get to it at some point.\n\n4. Clean up and reorganize all of the files with `arith` in their name. In particular, I moved `sage/ext/arith.pyx` to `sage/rings/fast_arith.pyx`, and removed all of the legacy `arith_c`, `arith_gmp`, etc. Most of these were empty files that dated back to the days when Pyrex wouldn't let us keep `.pyx` files in multiple directories. There were also two files which seemed to be a Pyrex implementation of polynomials mod n, I believe by Didier Deshommes. These aren't used anywhere in Sage, and we have new code that does that (based on David Harvey's `znpoly`), so I've removed them.\n\nI have tested all of `sage/rings/`, but one should really do a `sage -br` and a `sage -testall` before giving this bundle a positive review. I'll try to do this soon, but I wanted to get the patch posted while I was at it.\n\nSince several files were added and removed from the mercurial archive, I'm attaching a bundle instead of a patch. I'm adding John Cremona and Paul Zimmerman to the `cc`, because they're most qualified to look at the changes I made after #3118 and see if I accidentally un-did any of their work on some corner cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4443\n\n",
     "created_at": "2008-11-05T10:08:50Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_004443.json:
     "title": "[with patch, needs review] Massive prime_range speedup, arith* files cleanup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4443",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  cremona zimmerma
+CC:  @JohnCremona @zimmermann6
 
 This bundle does several things:
 
@@ -88,16 +88,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4443
 archive/issue_comments_032675.json:
 ```json
 {
-    "body": "Attachment [trac-4443.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443.patch) by craigcitro created at 2008-11-05 10:14:31",
+    "body": "Attachment [trac-4443.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443.patch) by @craigcitro created at 2008-11-05 10:14:31",
     "created_at": "2008-11-05T10:14:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32675",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4443.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443.patch) by craigcitro created at 2008-11-05 10:14:31
+Attachment [trac-4443.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443.patch) by @craigcitro created at 2008-11-05 10:14:31
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_032676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32676",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_032677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32677",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_032678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32678",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_032679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32679",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_032681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32681",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_032683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32683",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_032684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32684",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -325,16 +325,16 @@ Anyway this is a basically positive review, and I'll be happy to look at it agai
 archive/issue_comments_032685.json:
 ```json
 {
-    "body": "Attachment [trac-4443-pt2.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt2.patch) by craigcitro created at 2008-11-06 08:58:37",
+    "body": "Attachment [trac-4443-pt2.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt2.patch) by @craigcitro created at 2008-11-06 08:58:37",
     "created_at": "2008-11-06T08:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32685",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4443-pt2.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt2.patch) by craigcitro created at 2008-11-06 08:58:37
+Attachment [trac-4443-pt2.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt2.patch) by @craigcitro created at 2008-11-06 08:58:37
 
 
 
@@ -348,7 +348,7 @@ archive/issue_comments_032686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32686",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_032687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32687",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_032688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32688",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_032689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32689",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_032690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32690",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -516,16 +516,16 @@ Michael
 archive/issue_comments_032692.json:
 ```json
 {
-    "body": "Attachment [trac-4443-rebase.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-rebase.patch) by craigcitro created at 2008-11-07 20:02:48",
+    "body": "Attachment [trac-4443-rebase.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-rebase.patch) by @craigcitro created at 2008-11-07 20:02:48",
     "created_at": "2008-11-07T20:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32692",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4443-rebase.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-rebase.patch) by craigcitro created at 2008-11-07 20:02:48
+Attachment [trac-4443-rebase.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-rebase.patch) by @craigcitro created at 2008-11-07 20:02:48
 
 
 
@@ -534,16 +534,16 @@ Attachment [trac-4443-rebase.patch](tarball://root/attachments/some-uuid/ticket4
 archive/issue_comments_032693.json:
 ```json
 {
-    "body": "Attachment [trac-4443-pt3.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt3.patch) by craigcitro created at 2008-11-07 20:03:47\n\nThis should work. Apply\n\n\n```\ntrac-4443-rebase.patch\ntrac-4443-pt2.patch\ntrac-4443-pt3.patch\n```\n\n\nin that order.",
+    "body": "Attachment [trac-4443-pt3.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt3.patch) by @craigcitro created at 2008-11-07 20:03:47\n\nThis should work. Apply\n\n\n```\ntrac-4443-rebase.patch\ntrac-4443-pt2.patch\ntrac-4443-pt3.patch\n```\n\n\nin that order.",
     "created_at": "2008-11-07T20:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32693",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4443-pt3.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt3.patch) by craigcitro created at 2008-11-07 20:03:47
+Attachment [trac-4443-pt3.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt3.patch) by @craigcitro created at 2008-11-07 20:03:47
 
 This should work. Apply
 
@@ -569,7 +569,7 @@ archive/issue_comments_032694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32694",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

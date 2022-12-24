@@ -14,7 +14,7 @@ archive/issues_007015.json:
     "title": "[with patch; needs review] cygwin port -- ratpoints -- don't build executable since we don't need it (and fails on cygwin)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7015",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -45,7 +45,7 @@ archive/issue_comments_058059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7015#issuecomment-58059",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_058060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7015#issuecomment-58060",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_058062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7015#issuecomment-58062",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_058063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7015#issuecomment-58063",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

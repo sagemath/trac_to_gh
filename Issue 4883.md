@@ -14,7 +14,7 @@ archive/issues_004883.json:
     "title": "possible memory leak in sage.matrix.matrix_integer_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4883",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: mabshoff
@@ -69,7 +69,7 @@ archive/issue_comments_037007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4883#issuecomment-37007",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -82,13 +82,13 @@ Changing status from new to assigned.
 archive/issue_comments_037008.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to malb.",
+    "body": "Changing assignee from mabshoff to @malb.",
     "created_at": "2009-01-25T19:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4883",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4883#issuecomment-37008",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from mabshoff to malb.
+Changing assignee from mabshoff to @malb.

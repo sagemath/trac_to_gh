@@ -3,7 +3,7 @@
 archive/issues_006439.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mjo\n\nThis doctest is silently ignored:\n\n\n```\nSage: 1+1\n45\n```\n\n\nI.e. no warning is displayed, and doctesting the file it is in produces no failures. This is because I wrote Sage: rather than sage:. I don't now if other capitalizations than \"sage\" should be accepted, but certainly they should not be silently ignored.\n\nI propose to report an error on \"Sage:\" or any other capitalization of that in any context where \"sage:\" would be interpreted as a doctest.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6439\n\n",
+    "body": "Assignee: tbd\n\nCC:  @orlitzky\n\nThis doctest is silently ignored:\n\n\n```\nSage: 1+1\n45\n```\n\n\nI.e. no warning is displayed, and doctesting the file it is in produces no failures. This is because I wrote Sage: rather than sage:. I don't now if other capitalizations than \"sage\" should be accepted, but certainly they should not be silently ignored.\n\nI propose to report an error on \"Sage:\" or any other capitalization of that in any context where \"sage:\" would be interpreted as a doctest.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6439\n\n",
     "created_at": "2009-06-28T09:45:32Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_006439.json:
 ```
 Assignee: tbd
 
-CC:  mjo
+CC:  @orlitzky
 
 This doctest is silently ignored:
 
@@ -51,7 +51,7 @@ archive/issue_comments_051689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6439#issuecomment-51689",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_051690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6439#issuecomment-51690",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_051691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6439#issuecomment-51691",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_051692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6439#issuecomment-51692",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_051693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6439#issuecomment-51693",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

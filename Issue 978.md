@@ -14,7 +14,7 @@ archive/issues_000978.json:
     "title": "bug in Sequence __str__ method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/978",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -79,16 +79,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/978
 archive/issue_comments_005967.json:
 ```json
 {
-    "body": "Attachment [7085.patch](tarball://root/attachments/some-uuid/ticket978/7085.patch) by was created at 2007-10-24 02:29:57",
+    "body": "Attachment [7085.patch](tarball://root/attachments/some-uuid/ticket978/7085.patch) by @williamstein created at 2007-10-24 02:29:57",
     "created_at": "2007-10-24T02:29:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/978#issuecomment-5967",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [7085.patch](tarball://root/attachments/some-uuid/ticket978/7085.patch) by was created at 2007-10-24 02:29:57
+Attachment [7085.patch](tarball://root/attachments/some-uuid/ticket978/7085.patch) by @williamstein created at 2007-10-24 02:29:57
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_005968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/978#issuecomment-5968",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_005969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/978#issuecomment-5969",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

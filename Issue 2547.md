@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2547
 archive/issue_comments_017383.json:
 ```json
 {
-    "body": "Changing assignee from joyner to gfurnish.",
+    "body": "Changing assignee from joyner to @garyfurnish.",
     "created_at": "2008-03-16T20:09:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17383",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from joyner to gfurnish.
+Changing assignee from joyner to @garyfurnish.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_017384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17384",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_017385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17385",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_017386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17386",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_017387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17387",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_017388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17388",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_017389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17389",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -165,16 +165,16 @@ archive/issue_comments_017389.json:
 archive/issue_comments_017390.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to jkantor.",
+    "body": "Changing assignee from @garyfurnish to jkantor.",
     "created_at": "2008-03-16T20:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17390",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from gfurnish to jkantor.
+Changing assignee from @garyfurnish to jkantor.
 
 
 
@@ -188,7 +188,7 @@ archive/issue_comments_017391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17391",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_017392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17392",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_017393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17393",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_017394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17394",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -255,16 +255,16 @@ I did a little spelunking on this one, and so far, what it appears to come down 
 archive/issue_comments_017395.json:
 ```json
 {
-    "body": "Attachment [function_derivatives.patch](tarball://root/attachments/some-uuid/ticket2547/function_derivatives.patch) by jwmerrill created at 2008-09-01 04:28:40",
+    "body": "Attachment [function_derivatives.patch](tarball://root/attachments/some-uuid/ticket2547/function_derivatives.patch) by @jicama created at 2008-09-01 04:28:40",
     "created_at": "2008-09-01T04:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17395",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Attachment [function_derivatives.patch](tarball://root/attachments/some-uuid/ticket2547/function_derivatives.patch) by jwmerrill created at 2008-09-01 04:28:40
+Attachment [function_derivatives.patch](tarball://root/attachments/some-uuid/ticket2547/function_derivatives.patch) by @jicama created at 2008-09-01 04:28:40
 
 
 
@@ -273,16 +273,16 @@ Attachment [function_derivatives.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_017396.json:
 ```json
 {
-    "body": "Changing assignee from jkantor to jwmerrill.",
+    "body": "Changing assignee from jkantor to @jicama.",
     "created_at": "2008-09-01T04:33:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17396",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Changing assignee from jkantor to jwmerrill.
+Changing assignee from jkantor to @jicama.
 
 
 
@@ -296,7 +296,7 @@ archive/issue_comments_017397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17397",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_017398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2547#issuecomment-17398",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

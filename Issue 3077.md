@@ -3,7 +3,7 @@
 archive/issues_003077.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nKeywords: pbuild\n\npbuild does not return an exceptional value to the operating system on failure.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3077\n\n",
+    "body": "Assignee: @garyfurnish\n\nKeywords: pbuild\n\npbuild does not return an exceptional value to the operating system on failure.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3077\n\n",
     "created_at": "2008-05-02T10:06:58Z",
     "labels": [
         "build",
@@ -14,10 +14,10 @@ archive/issues_003077.json:
     "title": "pbuild does not return properly on failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3077",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 Keywords: pbuild
 
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3077
 archive/issue_comments_021229.json:
 ```json
 {
-    "body": "Attachment [trac_3077.patch](tarball://root/attachments/some-uuid/ticket3077/trac_3077.patch) by gfurnish created at 2008-05-02 10:10:21",
+    "body": "Attachment [trac_3077.patch](tarball://root/attachments/some-uuid/ticket3077/trac_3077.patch) by @garyfurnish created at 2008-05-02 10:10:21",
     "created_at": "2008-05-02T10:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3077#issuecomment-21229",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3077.patch](tarball://root/attachments/some-uuid/ticket3077/trac_3077.patch) by gfurnish created at 2008-05-02 10:10:21
+Attachment [trac_3077.patch](tarball://root/attachments/some-uuid/ticket3077/trac_3077.patch) by @garyfurnish created at 2008-05-02 10:10:21
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_021230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3077#issuecomment-21230",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_021231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3077#issuecomment-21231",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

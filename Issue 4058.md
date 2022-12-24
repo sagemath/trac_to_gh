@@ -3,7 +3,7 @@
 archive/issues_004058.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  alexghitza malb\n\nA couple of bugfixes are included as well. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4058\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  alexghitza @malb\n\nA couple of bugfixes are included as well. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4058\n\n",
     "created_at": "2008-09-04T04:27:58Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_004058.json:
     "title": "[with patch, needs review] move integer ring to the new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4058",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  alexghitza malb
+CC:  alexghitza @malb
 
 A couple of bugfixes are included as well. 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4058
 archive/issue_comments_029251.json:
 ```json
 {
-    "body": "Attachment [4058-integer-coerce.patch](tarball://root/attachments/some-uuid/ticket4058/4058-integer-coerce.patch) by robertwb created at 2008-09-04 04:28:33",
+    "body": "Attachment [4058-integer-coerce.patch](tarball://root/attachments/some-uuid/ticket4058/4058-integer-coerce.patch) by @robertwb created at 2008-09-04 04:28:33",
     "created_at": "2008-09-04T04:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4058#issuecomment-29251",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4058-integer-coerce.patch](tarball://root/attachments/some-uuid/ticket4058/4058-integer-coerce.patch) by robertwb created at 2008-09-04 04:28:33
+Attachment [4058-integer-coerce.patch](tarball://root/attachments/some-uuid/ticket4058/4058-integer-coerce.patch) by @robertwb created at 2008-09-04 04:28:33
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_029252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4058#issuecomment-29252",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_029253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4058#issuecomment-29253",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -98,16 +98,16 @@ I'll rebase this as soon as I get 3.1.2.
 archive/issue_comments_029254.json:
 ```json
 {
-    "body": "Attachment [4058-integer-coerce.2.patch](tarball://root/attachments/some-uuid/ticket4058/4058-integer-coerce.2.patch) by robertwb created at 2008-09-23 19:00:07",
+    "body": "Attachment [4058-integer-coerce.2.patch](tarball://root/attachments/some-uuid/ticket4058/4058-integer-coerce.2.patch) by @robertwb created at 2008-09-23 19:00:07",
     "created_at": "2008-09-23T19:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4058#issuecomment-29254",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4058-integer-coerce.2.patch](tarball://root/attachments/some-uuid/ticket4058/4058-integer-coerce.2.patch) by robertwb created at 2008-09-23 19:00:07
+Attachment [4058-integer-coerce.2.patch](tarball://root/attachments/some-uuid/ticket4058/4058-integer-coerce.2.patch) by @robertwb created at 2008-09-23 19:00:07
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_029255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4058#issuecomment-29255",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_029256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4058#issuecomment-29256",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_029260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4058#issuecomment-29260",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_029261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4058#issuecomment-29261",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_029262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4058#issuecomment-29262",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

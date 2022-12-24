@@ -3,7 +3,7 @@
 archive/issues_009066.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jason mvngu robertwb\n\nplot.plot3d.shapes2.py was a mess, including having several weird helper functions that didn't really need doctests, such as\n\n```\n    def avg(a,b):\n        return (a+b)/2.0\n```\n\nThis cleans up the situation here.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9066\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jasongrout mvngu @robertwb\n\nplot.plot3d.shapes2.py was a mess, including having several weird helper functions that didn't really need doctests, such as\n\n```\n    def avg(a,b):\n        return (a+b)/2.0\n```\n\nThis cleans up the situation here.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9066\n\n",
     "created_at": "2010-05-27T15:03:33Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009066.json:
     "title": "Improve documentation in shapes2.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9066",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: mvngu
 
-CC:  jason mvngu robertwb
+CC:  @jasongrout mvngu @robertwb
 
 plot.plot3d.shapes2.py was a mess, including having several weird helper functions that didn't really need doctests, such as
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9066
 archive/issue_comments_084130.json:
 ```json
 {
-    "body": "Attachment [trac_9066-shapes2-doc.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-shapes2-doc.patch) by kcrisman created at 2010-05-27 15:10:46\n\nBased on 4.4.2",
+    "body": "Attachment [trac_9066-shapes2-doc.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-shapes2-doc.patch) by @kcrisman created at 2010-05-27 15:10:46\n\nBased on 4.4.2",
     "created_at": "2010-05-27T15:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84130",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9066-shapes2-doc.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-shapes2-doc.patch) by kcrisman created at 2010-05-27 15:10:46
+Attachment [trac_9066-shapes2-doc.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-shapes2-doc.patch) by @kcrisman created at 2010-05-27 15:10:46
 
 Based on 4.4.2
 
@@ -66,7 +66,7 @@ archive/issue_comments_084131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84131",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_084132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84132",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_084135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84135",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_084136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84136",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_084137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84137",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_084138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84138",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_084139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84139",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_084140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84140",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_084141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84141",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_084142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84142",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_084143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84143",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -351,16 +351,16 @@ That's no problem at all.
 archive/issue_comments_084144.json:
 ```json
 {
-    "body": "Attachment [trac_9066-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-doctest-fix.patch) by kcrisman created at 2010-07-22 13:30:38\n\nApply this last.",
+    "body": "Attachment [trac_9066-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-doctest-fix.patch) by @kcrisman created at 2010-07-22 13:30:38\n\nApply this last.",
     "created_at": "2010-07-22T13:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84144",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9066-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-doctest-fix.patch) by kcrisman created at 2010-07-22 13:30:38
+Attachment [trac_9066-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket9066/trac_9066-doctest-fix.patch) by @kcrisman created at 2010-07-22 13:30:38
 
 Apply this last.
 
@@ -376,7 +376,7 @@ archive/issue_comments_084145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84145",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_084146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84146",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_084147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84147",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_084148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84148",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_084149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84149",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_084150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9066#issuecomment-84150",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

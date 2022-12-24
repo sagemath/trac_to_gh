@@ -3,7 +3,7 @@
 archive/issues_002128.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nThe function\n\n random_prime(n)\n\nreturns differing types of objects. When n is 2, it returns a Sage\ninteger. When n is > 2, it returns a Python integer. A look at the\nsource code gives the impression that it should return a Sage\ninteger.\n\nPerhaps devel/sage-main/sage/rings/arith.py line 907 should be\nchanged from\n   return p\nto\n   return integer_ring.ZZ(p)\n\n -- Kate Minola\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2128\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nThe function\n\n random_prime(n)\n\nreturns differing types of objects. When n is 2, it returns a Sage\ninteger. When n is > 2, it returns a Python integer. A look at the\nsource code gives the impression that it should return a Sage\ninteger.\n\nPerhaps devel/sage-main/sage/rings/arith.py line 907 should be\nchanged from\n   return p\nto\n   return integer_ring.ZZ(p)\n\n -- Kate Minola\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2128\n\n",
     "created_at": "2008-02-09T19:26:29Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002128.json:
     "title": "bug in random_prime (trivial to fix!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2128",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -56,7 +56,7 @@ archive/issue_comments_013962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2128#issuecomment-13962",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -91,16 +91,16 @@ Michael
 archive/issue_comments_013964.json:
 ```json
 {
-    "body": "Attachment [2128-random_prime.patch](tarball://root/attachments/some-uuid/ticket2128/2128-random_prime.patch) by AlexGhitza created at 2008-02-17 18:49:30\n\nI've added the doctests and replaced the patch.",
+    "body": "Attachment [2128-random_prime.patch](tarball://root/attachments/some-uuid/ticket2128/2128-random_prime.patch) by @aghitza created at 2008-02-17 18:49:30\n\nI've added the doctests and replaced the patch.",
     "created_at": "2008-02-17T18:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2128#issuecomment-13964",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [2128-random_prime.patch](tarball://root/attachments/some-uuid/ticket2128/2128-random_prime.patch) by AlexGhitza created at 2008-02-17 18:49:30
+Attachment [2128-random_prime.patch](tarball://root/attachments/some-uuid/ticket2128/2128-random_prime.patch) by @aghitza created at 2008-02-17 18:49:30
 
 I've added the doctests and replaced the patch.
 

@@ -3,7 +3,7 @@
 archive/issues_002398.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nm = lattice_polytope.read_palp_matrix(r\"\"\"4 9\n...    0  0  0  0  0  0  0  0  0\n...    0  3  0 -2  1 -2 -2  1 -2\n...    0  0  3  2  2  5  0  0  3\n...    0  0  0  0  0  0  0  0  0\"\"\")\n\nsage: Ns = (ZZ^4).submodule(m.columns())\nsage: Ns\n\nFree module of degree 4 and rank 2 over Integer Ring\nEchelon basis matrix:\n[0 0 0 0]\n[0 1 0 0]\n```\n\n\nWhat's with the 0 row above?!!?  That's insanely wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2398\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nm = lattice_polytope.read_palp_matrix(r\"\"\"4 9\n...    0  0  0  0  0  0  0  0  0\n...    0  3  0 -2  1 -2 -2  1 -2\n...    0  0  3  2  2  5  0  0  3\n...    0  0  0  0  0  0  0  0  0\"\"\")\n\nsage: Ns = (ZZ^4).submodule(m.columns())\nsage: Ns\n\nFree module of degree 4 and rank 2 over Integer Ring\nEchelon basis matrix:\n[0 0 0 0]\n[0 1 0 0]\n```\n\n\nWhat's with the 0 row above?!!?  That's insanely wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2398\n\n",
     "created_at": "2008-03-05T20:23:03Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002398.json:
     "title": "free modules over ZZ -- major bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2398",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -55,7 +55,7 @@ archive/issue_comments_016181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2398#issuecomment-16181",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_016182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2398#issuecomment-16182",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_016183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2398#issuecomment-16183",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_016184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2398#issuecomment-16184",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_016185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2398#issuecomment-16185",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_016186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2398#issuecomment-16186",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_016187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2398#issuecomment-16187",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_016188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2398#issuecomment-16188",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -243,16 +243,16 @@ this fixes the bug
 archive/issue_comments_016189.json:
 ```json
 {
-    "body": "Attachment [sage-2398.patch](tarball://root/attachments/some-uuid/ticket2398/sage-2398.patch) by was created at 2008-03-06 02:49:23\n\nI've attached a patch that fixes the problem.  It was actually potentially fairly\nserious, though something one wouldn't see much on \"random\" input.\n\nThe fix involves changing one line (the patch is longer, but only for cosmetic reasons and because of adding a doctest).\n\nI ran the sanity check scripts and this code still works after the patch, by the way.  So that one tiny patch, which is clearly right, doesn't break things.",
+    "body": "Attachment [sage-2398.patch](tarball://root/attachments/some-uuid/ticket2398/sage-2398.patch) by @williamstein created at 2008-03-06 02:49:23\n\nI've attached a patch that fixes the problem.  It was actually potentially fairly\nserious, though something one wouldn't see much on \"random\" input.\n\nThe fix involves changing one line (the patch is longer, but only for cosmetic reasons and because of adding a doctest).\n\nI ran the sanity check scripts and this code still works after the patch, by the way.  So that one tiny patch, which is clearly right, doesn't break things.",
     "created_at": "2008-03-06T02:49:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2398#issuecomment-16189",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2398.patch](tarball://root/attachments/some-uuid/ticket2398/sage-2398.patch) by was created at 2008-03-06 02:49:23
+Attachment [sage-2398.patch](tarball://root/attachments/some-uuid/ticket2398/sage-2398.patch) by @williamstein created at 2008-03-06 02:49:23
 
 I've attached a patch that fixes the problem.  It was actually potentially fairly
 serious, though something one wouldn't see much on "random" input.
@@ -273,7 +273,7 @@ archive/issue_comments_016190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2398#issuecomment-16190",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

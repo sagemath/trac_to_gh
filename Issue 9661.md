@@ -3,7 +3,7 @@
 archive/issues_009661.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen executing a PARI or GP command from Sage, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):\n\n\n```\ngp> kill(x)   /* No output */\n```\n\n\nBut in Sage:\n\n```\nsage: gp('kill(x)')\n0\nsage: pari('kill(x)')\n0\n```\n\n\nIt should be possible to fix this by checking for `gnil` as return value.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9661\n\n",
+    "body": "Assignee: @williamstein\n\nWhen executing a PARI or GP command from Sage, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):\n\n\n```\ngp> kill(x)   /* No output */\n```\n\n\nBut in Sage:\n\n```\nsage: gp('kill(x)')\n0\nsage: pari('kill(x)')\n0\n```\n\n\nIt should be possible to fix this by checking for `gnil` as return value.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9661\n\n",
     "created_at": "2010-08-01T16:47:28Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_009661.json:
     "title": "pari(string) and gp(string) always returns a value, even when it should not",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9661",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When executing a PARI or GP command from Sage, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):
 
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9661
 archive/issue_comments_093773.json:
 ```json
 {
-    "body": "Attachment [9661.patch](tarball://root/attachments/some-uuid/ticket9661/9661.patch) by jdemeyer created at 2010-08-02 07:15:18",
+    "body": "Attachment [9661.patch](tarball://root/attachments/some-uuid/ticket9661/9661.patch) by @jdemeyer created at 2010-08-02 07:15:18",
     "created_at": "2010-08-02T07:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9661#issuecomment-93773",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9661.patch](tarball://root/attachments/some-uuid/ticket9661/9661.patch) by jdemeyer created at 2010-08-02 07:15:18
+Attachment [9661.patch](tarball://root/attachments/some-uuid/ticket9661/9661.patch) by @jdemeyer created at 2010-08-02 07:15:18
 
 
 
@@ -68,16 +68,16 @@ Attachment [9661.patch](tarball://root/attachments/some-uuid/ticket9661/9661.pat
 archive/issue_comments_093774.json:
 ```json
 {
-    "body": "Changing assignee from was to jdemeyer.",
+    "body": "Changing assignee from @williamstein to @jdemeyer.",
     "created_at": "2010-08-02T07:23:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9661#issuecomment-93774",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from was to jdemeyer.
+Changing assignee from @williamstein to @jdemeyer.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_093775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9661#issuecomment-93775",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_093776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9661#issuecomment-93776",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_093777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9661#issuecomment-93777",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_093778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9661#issuecomment-93778",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_093779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9661#issuecomment-93779",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_093780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9661#issuecomment-93780",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

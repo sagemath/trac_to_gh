@@ -14,7 +14,7 @@ archive/issues_002587.json:
     "title": "[with 2-line patch, needs review] subgroup of a permutation group is so slow it's silly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2587",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: joyner
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2587
 archive/issue_comments_017708.json:
 ```json
 {
-    "body": "Attachment [2587-subgroups-are-slow.patch](tarball://root/attachments/some-uuid/ticket2587/2587-subgroups-are-slow.patch) by mhansen created at 2008-03-18 22:38:55\n\nThis looks good and works for me.",
+    "body": "Attachment [2587-subgroups-are-slow.patch](tarball://root/attachments/some-uuid/ticket2587/2587-subgroups-are-slow.patch) by @mwhansen created at 2008-03-18 22:38:55\n\nThis looks good and works for me.",
     "created_at": "2008-03-18T22:38:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2587#issuecomment-17708",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2587-subgroups-are-slow.patch](tarball://root/attachments/some-uuid/ticket2587/2587-subgroups-are-slow.patch) by mhansen created at 2008-03-18 22:38:55
+Attachment [2587-subgroups-are-slow.patch](tarball://root/attachments/some-uuid/ticket2587/2587-subgroups-are-slow.patch) by @mwhansen created at 2008-03-18 22:38:55
 
 This looks good and works for me.
 

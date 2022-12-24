@@ -14,7 +14,7 @@ archive/issues_008633.json:
     "title": "remove more instances of 'texttt' from jsmath output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8633",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8633
 archive/issue_comments_078297.json:
 ```json
 {
-    "body": "Attachment [trac_8633-texttt.patch](tarball://root/attachments/some-uuid/ticket8633/trac_8633-texttt.patch) by novoselt created at 2010-04-01 01:47:20\n\nWorks for me (I had another case of \\texttt - thank you for providing such a timely patch!) and for the given code.\n\nIs it ready for review? The patch does not add any doctests, but I am not sure if it is possible to test such an issue in doctests. At least it does not break any existing ones.",
+    "body": "Attachment [trac_8633-texttt.patch](tarball://root/attachments/some-uuid/ticket8633/trac_8633-texttt.patch) by @novoselt created at 2010-04-01 01:47:20\n\nWorks for me (I had another case of \\texttt - thank you for providing such a timely patch!) and for the given code.\n\nIs it ready for review? The patch does not add any doctests, but I am not sure if it is possible to test such an issue in doctests. At least it does not break any existing ones.",
     "created_at": "2010-04-01T01:47:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78297",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8633-texttt.patch](tarball://root/attachments/some-uuid/ticket8633/trac_8633-texttt.patch) by novoselt created at 2010-04-01 01:47:20
+Attachment [trac_8633-texttt.patch](tarball://root/attachments/some-uuid/ticket8633/trac_8633-texttt.patch) by @novoselt created at 2010-04-01 01:47:20
 
 Works for me (I had another case of \texttt - thank you for providing such a timely patch!) and for the given code.
 
@@ -67,7 +67,7 @@ archive/issue_comments_078298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78298",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_078299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78299",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_078300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78300",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_078301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78301",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_078302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78302",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_078303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78303",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_078304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78304",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_078305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78305",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

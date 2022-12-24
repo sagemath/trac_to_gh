@@ -3,7 +3,7 @@
 archive/issues_009930.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nKeywords: elliptic curve point pari\n\nCurrently, points on elliptic curves cannot automatically be converted to PARI:\n\n\n```\nsage: E = EllipticCurve([0,0,0,3,0])\nsage: P = E.point([1,2]); P\n(1 : 2 : 1)\nsage: pari(P)\nTraceback (most recent call last):\n...\nRuntimeError: evaluating PARI string\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9931\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: elliptic curve point pari\n\nCurrently, points on elliptic curves cannot automatically be converted to PARI:\n\n\n```\nsage: E = EllipticCurve([0,0,0,3,0])\nsage: P = E.point([1,2]); P\n(1 : 2 : 1)\nsage: pari(P)\nTraceback (most recent call last):\n...\nRuntimeError: evaluating PARI string\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9931\n\n",
     "created_at": "2010-09-17T09:50:24Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_009930.json:
     "title": "Implement conversion from EllipticCurvePoint to PARI",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9930",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Keywords: elliptic curve point pari
 
@@ -51,7 +51,7 @@ archive/issue_comments_098888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9930#issuecomment-98888",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -64,16 +64,16 @@ Changing status from new to needs_review.
 archive/issue_comments_098889.json:
 ```json
 {
-    "body": "Attachment [9931_ell_point_pari.patch](tarball://root/attachments/some-uuid/ticket9931/9931_ell_point_pari.patch) by jdemeyer created at 2010-09-19 12:18:04",
+    "body": "Attachment [9931_ell_point_pari.patch](tarball://root/attachments/some-uuid/ticket9931/9931_ell_point_pari.patch) by @jdemeyer created at 2010-09-19 12:18:04",
     "created_at": "2010-09-19T12:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9930#issuecomment-98889",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9931_ell_point_pari.patch](tarball://root/attachments/some-uuid/ticket9931/9931_ell_point_pari.patch) by jdemeyer created at 2010-09-19 12:18:04
+Attachment [9931_ell_point_pari.patch](tarball://root/attachments/some-uuid/ticket9931/9931_ell_point_pari.patch) by @jdemeyer created at 2010-09-19 12:18:04
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_098890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9930#issuecomment-98890",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_098891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9930#issuecomment-98891",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_098892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9930#issuecomment-98892",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_098893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9930#issuecomment-98893",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

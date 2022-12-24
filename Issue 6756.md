@@ -3,7 +3,7 @@
 archive/issues_006756.json:
 ```json
 {
-    "body": "CC:  ncalexan mhansen kcrisman\n\nImplement diff format symbolic derivative in new symbolics as the second form of abstract derivative to be avialable in Sage. See this long thread\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ff10f99729a74eea/73308bf626ae06b3\n\nfor rationale behind it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6756\n\n",
+    "body": "CC:  @ncalexan @mwhansen @kcrisman\n\nImplement diff format symbolic derivative in new symbolics as the second form of abstract derivative to be avialable in Sage. See this long thread\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ff10f99729a74eea/73308bf626ae06b3\n\nfor rationale behind it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6756\n\n",
     "created_at": "2009-08-16T02:02:23Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006756.json:
     "title": "Implement ``diff`` format symbolic derivative in new symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6756",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
-CC:  ncalexan mhansen kcrisman
+CC:  @ncalexan @mwhansen @kcrisman
 
 Implement diff format symbolic derivative in new symbolics as the second form of abstract derivative to be avialable in Sage. See this long thread
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6756
 archive/issue_comments_055603.json:
 ```json
 {
-    "body": "Attachment [trac_6756-diff-derivative-sage.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-diff-derivative-sage.patch) by ncalexan created at 2009-08-21 17:21:03\n\nI am interested in reviewing this, but I'm not sure that I can at this time.  I have a heavily modified `Sage Version 4.1.rc1, Release Date: 2009-07-07` tree that I can't really upgrade right now.  I have applied this patch and installed your modified spkg.  I am getting the following doctest failures\n\n\n```\n-*- mode: sage-test; default-directory: \"~/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/\" -*-\nsage-test started at Fri Aug 21 10:18:46\n\n/Users/ncalexan/bin/sage -b >/dev/null && /Users/ncalexan/bin/sage -tp 4 /Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\n\nreal\t0m2.361s\nuser\t0m1.297s\nsys\t0m0.591s\nGlobal iterations: 1\nFile iterations: 1\nUsing cached timings to run longest doctests first.\nDoctesting 1 files doing 4 jobs in parallel\nsage -t  derivative.py\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 51:\n    sage: f(x).diff(x)\nExpected:\n    diff(f(x), x, 1)\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 53:\n    sage: diff(f(x), x, 1)\nExpected:\n    diff(f(x), x, 1)\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 68:\n    sage: h.diff(x)\nExpected:\n    diff(f(x), x, n + 1)\nGot:\n    D[0](diff)(f(x), x, n)*D[0](f)(x) + D[1](diff)(f(x), x, n)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 112:\n    sage: f(x^2).diff(x)\nExpected:\n    diff(f(x^2), x, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 118:\n    sage: f(x^2).diff(x)\nExpected:\n    2*x*diff(f(x^2), x^2, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 121:\n    sage: f(sin(x^2)).diff(x)\nExpected:\n    2*x*cos(x^2)*diff(f(sin(x^2)), sin(x^2), 1)\nGot:\n    2*x*D[0](f)(sin(x^2))*cos(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 124:\n    sage: g(x,f(x)).diff(x)\nExpected:\n    diff(f(x), x, 1)*diff(g(x, f(x)), f(x), 1) + diff(g(x, f(x)), x, 1)\nGot:\n    D[0](f)(x)*D[1](g)(x, f(x)) + D[0](g)(x, f(x))\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 129:\n    sage: symbolic_diff(f(x^2), x, 1)\nExpected:\n    diff(f(x^2), x, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 138:\n    sage: g(x,x).diff(x)\nExpected:\n    2*diff(g(x, x), x, 1)\nGot:\n    D[0](g)(x, x) + D[1](g)(x, x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 147:\n    sage: h = f(x).diff(x); h\nExpected:\n    diff(f(x), x, 1)\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 149:\n    sage: h.subs(f(x)==x^4)\nExpected:\n    4*x^3\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 155:\n    sage: h = f(x^2).diff(x); h\nExpected:\n    2*x*diff(f(x^2), x^2, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 157:\n    sage: h.subs(f(x^2)==x^4)\nExpected:\n    4*x^3\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 159:\n    sage: symbolic_diff(f(x)^2, f(x), 1)\nExpected:\n    2*f(x)\nGot:\n    diff(f(x)^2, f(x), 1)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 186:\n    sage: h = f(x).diff(x) + f(x^2).diff(x); h\nExpected:\n    2*x*diff(f(x^2), x^2, 1) +  diff(f(x), x, 1)\nGot:\n    2*x*D[0](f)(x^2) + D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 217:\n    sage: f(x,y).diff(x,y)\nExpected:\n    diff(f(x, y), x, 1, y, 1)\nGot:\n    D[0, 1](f)(x, y)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 219:\n    sage: f(x,y).diff(x,2)\nExpected:\n    diff(f(x, y), x, 2)\nGot:\n    D[0, 0](f)(x, y)\n**********************************************************************\n2 items had failures:\n  15 of  40 in __main__.example_1\n   2 of  10 in __main__.example_2\n***Test Failed*** 17 failures.\nFor whitespace errors, see the file /Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/tmp/.doctest_derivative.py\n\t [3.8 s]\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t  devel/sage-main/sage/symbolic/derivative.py # 17 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 4.1 seconds\n\nsage-test finished with failing tests at Fri Aug 21 10:18:53\n```\n\n\nWhen I work from the command line, I get things like\n\n```\nsage: default_level=set_diff_derivative_level()\nsage: set_diff_derivative_level(1)\nsage: f(x) = function('f', x)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/.sage/temp/mero.local/93112/_Users_ncalexan__sage_init_sage_1.py in <module>()\n\n/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/local/lib/python2.6/site-packages/sage/calculus/var.so in sage.calculus.var.function (sage/calculus/var.c:709)()\n\n/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.SFunction.__call__ (sage/symbolic/function.cpp:4655)()\n\nTypeError: Symbolic function f takes exactly 2 arguments (1 given)\n```\n\n\nSo there must be some calculus or symbolic patches that I'm missing.  Any suggestions?",
+    "body": "Attachment [trac_6756-diff-derivative-sage.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-diff-derivative-sage.patch) by @ncalexan created at 2009-08-21 17:21:03\n\nI am interested in reviewing this, but I'm not sure that I can at this time.  I have a heavily modified `Sage Version 4.1.rc1, Release Date: 2009-07-07` tree that I can't really upgrade right now.  I have applied this patch and installed your modified spkg.  I am getting the following doctest failures\n\n\n```\n-*- mode: sage-test; default-directory: \"~/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/\" -*-\nsage-test started at Fri Aug 21 10:18:46\n\n/Users/ncalexan/bin/sage -b >/dev/null && /Users/ncalexan/bin/sage -tp 4 /Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\n\nreal\t0m2.361s\nuser\t0m1.297s\nsys\t0m0.591s\nGlobal iterations: 1\nFile iterations: 1\nUsing cached timings to run longest doctests first.\nDoctesting 1 files doing 4 jobs in parallel\nsage -t  derivative.py\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 51:\n    sage: f(x).diff(x)\nExpected:\n    diff(f(x), x, 1)\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 53:\n    sage: diff(f(x), x, 1)\nExpected:\n    diff(f(x), x, 1)\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 68:\n    sage: h.diff(x)\nExpected:\n    diff(f(x), x, n + 1)\nGot:\n    D[0](diff)(f(x), x, n)*D[0](f)(x) + D[1](diff)(f(x), x, n)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 112:\n    sage: f(x^2).diff(x)\nExpected:\n    diff(f(x^2), x, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 118:\n    sage: f(x^2).diff(x)\nExpected:\n    2*x*diff(f(x^2), x^2, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 121:\n    sage: f(sin(x^2)).diff(x)\nExpected:\n    2*x*cos(x^2)*diff(f(sin(x^2)), sin(x^2), 1)\nGot:\n    2*x*D[0](f)(sin(x^2))*cos(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 124:\n    sage: g(x,f(x)).diff(x)\nExpected:\n    diff(f(x), x, 1)*diff(g(x, f(x)), f(x), 1) + diff(g(x, f(x)), x, 1)\nGot:\n    D[0](f)(x)*D[1](g)(x, f(x)) + D[0](g)(x, f(x))\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 129:\n    sage: symbolic_diff(f(x^2), x, 1)\nExpected:\n    diff(f(x^2), x, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 138:\n    sage: g(x,x).diff(x)\nExpected:\n    2*diff(g(x, x), x, 1)\nGot:\n    D[0](g)(x, x) + D[1](g)(x, x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 147:\n    sage: h = f(x).diff(x); h\nExpected:\n    diff(f(x), x, 1)\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 149:\n    sage: h.subs(f(x)==x^4)\nExpected:\n    4*x^3\nGot:\n    D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 155:\n    sage: h = f(x^2).diff(x); h\nExpected:\n    2*x*diff(f(x^2), x^2, 1)\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 157:\n    sage: h.subs(f(x^2)==x^4)\nExpected:\n    4*x^3\nGot:\n    2*x*D[0](f)(x^2)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 159:\n    sage: symbolic_diff(f(x)^2, f(x), 1)\nExpected:\n    2*f(x)\nGot:\n    diff(f(x)^2, f(x), 1)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 186:\n    sage: h = f(x).diff(x) + f(x^2).diff(x); h\nExpected:\n    2*x*diff(f(x^2), x^2, 1) +  diff(f(x), x, 1)\nGot:\n    2*x*D[0](f)(x^2) + D[0](f)(x)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 217:\n    sage: f(x,y).diff(x,y)\nExpected:\n    diff(f(x, y), x, 1, y, 1)\nGot:\n    D[0, 1](f)(x, y)\n**********************************************************************\nFile \"/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/devel/sage-main/sage/symbolic/derivative.py\", line 219:\n    sage: f(x,y).diff(x,2)\nExpected:\n    diff(f(x, y), x, 2)\nGot:\n    D[0, 0](f)(x, y)\n**********************************************************************\n2 items had failures:\n  15 of  40 in __main__.example_1\n   2 of  10 in __main__.example_2\n***Test Failed*** 17 failures.\nFor whitespace errors, see the file /Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/tmp/.doctest_derivative.py\n\t [3.8 s]\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t  devel/sage-main/sage/symbolic/derivative.py # 17 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 4.1 seconds\n\nsage-test finished with failing tests at Fri Aug 21 10:18:53\n```\n\n\nWhen I work from the command line, I get things like\n\n```\nsage: default_level=set_diff_derivative_level()\nsage: set_diff_derivative_level(1)\nsage: f(x) = function('f', x)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/.sage/temp/mero.local/93112/_Users_ncalexan__sage_init_sage_1.py in <module>()\n\n/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/local/lib/python2.6/site-packages/sage/calculus/var.so in sage.calculus.var.function (sage/calculus/var.c:709)()\n\n/Users/ncalexan/sage-4.1-OSX-10.5-Intel-64bit-i386-Darwin/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.SFunction.__call__ (sage/symbolic/function.cpp:4655)()\n\nTypeError: Symbolic function f takes exactly 2 arguments (1 given)\n```\n\n\nSo there must be some calculus or symbolic patches that I'm missing.  Any suggestions?",
     "created_at": "2009-08-21T17:21:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55603",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_6756-diff-derivative-sage.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-diff-derivative-sage.patch) by ncalexan created at 2009-08-21 17:21:03
+Attachment [trac_6756-diff-derivative-sage.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-diff-derivative-sage.patch) by @ncalexan created at 2009-08-21 17:21:03
 
 I am interested in reviewing this, but I'm not sure that I can at this time.  I have a heavily modified `Sage Version 4.1.rc1, Release Date: 2009-07-07` tree that I can't really upgrade right now.  I have applied this patch and installed your modified spkg.  I am getting the following doctest failures
 
@@ -236,7 +236,7 @@ archive/issue_comments_055604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55604",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_055605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55605",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -337,16 +337,16 @@ Sorry, same problems with a new 4.1.1 binary.  It's possible I'm building in the
 archive/issue_comments_055606.json:
 ```json
 {
-    "body": "Attachment [trac_6756-referee-patch-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-referee-patch-ncalexan-1.patch) by ncalexan created at 2009-08-26 19:01:53",
+    "body": "Attachment [trac_6756-referee-patch-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-referee-patch-ncalexan-1.patch) by @ncalexan created at 2009-08-26 19:01:53",
     "created_at": "2009-08-26T19:01:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55606",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_6756-referee-patch-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-referee-patch-ncalexan-1.patch) by ncalexan created at 2009-08-26 19:01:53
+Attachment [trac_6756-referee-patch-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-referee-patch-ncalexan-1.patch) by @ncalexan created at 2009-08-26 19:01:53
 
 
 
@@ -360,7 +360,7 @@ archive/issue_comments_055607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55607",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_055608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55608",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_055609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55609",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_055610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55610",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -444,16 +444,16 @@ you finish your first round of reviewing.
 archive/issue_comments_055611.json:
 ```json
 {
-    "body": "Attachment [trac_6756-diff-derivative-sage-v2.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-diff-derivative-sage-v2.patch) by gmhossain created at 2009-09-05 14:33:45\n\nApply only this patch and ignore first two patches",
+    "body": "Attachment [trac_6756-diff-derivative-sage-v2.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-diff-derivative-sage-v2.patch) by @golam-m-hossain created at 2009-09-05 14:33:45\n\nApply only this patch and ignore first two patches",
     "created_at": "2009-09-05T14:33:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55611",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
-Attachment [trac_6756-diff-derivative-sage-v2.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-diff-derivative-sage-v2.patch) by gmhossain created at 2009-09-05 14:33:45
+Attachment [trac_6756-diff-derivative-sage-v2.patch](tarball://root/attachments/some-uuid/ticket6756/trac_6756-diff-derivative-sage-v2.patch) by @golam-m-hossain created at 2009-09-05 14:33:45
 
 Apply only this patch and ignore first two patches
 
@@ -469,7 +469,7 @@ archive/issue_comments_055612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55612",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_055613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55613",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_055614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55614",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -649,7 +649,7 @@ archive/issue_comments_055615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55615",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -681,7 +681,7 @@ archive/issue_comments_055616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55616",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -717,7 +717,7 @@ archive/issue_comments_055617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55617",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -758,7 +758,7 @@ archive/issue_comments_055618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55618",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -791,7 +791,7 @@ archive/issue_comments_055619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55619",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -883,7 +883,7 @@ archive/issue_comments_055620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55620",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -903,7 +903,7 @@ archive/issue_comments_055621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55621",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -921,7 +921,7 @@ archive/issue_comments_055622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55622",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -949,7 +949,7 @@ archive/issue_comments_055623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55623",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -967,7 +967,7 @@ archive/issue_comments_055624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55624",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -998,7 +998,7 @@ archive/issue_comments_055625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55625",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1018,7 +1018,7 @@ archive/issue_comments_055626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6756#issuecomment-55626",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007732.json:
     "title": "remove binary files from ECL distribution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7732",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -42,7 +42,7 @@ archive/issue_comments_066433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7732#issuecomment-66433",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_066434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7732#issuecomment-66434",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_066435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7732#issuecomment-66435",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_066436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7732#issuecomment-66436",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_066439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7732#issuecomment-66439",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

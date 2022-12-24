@@ -3,7 +3,7 @@
 archive/issues_009805.json:
 ```json
 {
-    "body": "Assignee: vdelecroix\n\nCC:  vdelecroix slelievre\n\nKeywords: constellation, permutation, surfaces, graphs\n\nA constellation is a combinatorial description (via elements of the symmetric group) of graphs embedded in surfaces (also called G-map). This ticket aims to implement a basic class for it with:\n* fast data type\n* normal form and isomorphism test\n* enumeration/generation with constraints\n\nIssue created by migration from https://trac.sagemath.org/ticket/9806\n\n",
+    "body": "Assignee: @videlec\n\nCC:  @videlec @slel\n\nKeywords: constellation, permutation, surfaces, graphs\n\nA constellation is a combinatorial description (via elements of the symmetric group) of graphs embedded in surfaces (also called G-map). This ticket aims to implement a basic class for it with:\n* fast data type\n* normal form and isomorphism test\n* enumeration/generation with constraints\n\nIssue created by migration from https://trac.sagemath.org/ticket/9806\n\n",
     "created_at": "2010-08-26T14:18:20Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009805.json:
     "title": "Constellations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9805",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
-Assignee: vdelecroix
+Assignee: @videlec
 
-CC:  vdelecroix slelievre
+CC:  @videlec @slel
 
 Keywords: constellation, permutation, surfaces, graphs
 
@@ -44,7 +44,7 @@ archive/issue_comments_096338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96338",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_096339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96339",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_096340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96340",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_096341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96341",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_096342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96342",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_096343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96343",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_096344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96344",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_096345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96345",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -218,16 +218,16 @@ Could you please upload the most recent constellation patch from the sage-combin
 archive/issue_comments_096346.json:
 ```json
 {
-    "body": "Attachment [trac_9806-constellations-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-vd.patch) by vdelecroix created at 2012-07-23 20:48:36\n\nReplying to [comment:7 chapoton]:\n> Could you please upload the most recent constellation patch from the sage-combinat queue ? It seems that the version there is not the same, and my review patch does not apply ..\n\nDone.",
+    "body": "Attachment [trac_9806-constellations-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-vd.patch) by @videlec created at 2012-07-23 20:48:36\n\nReplying to [comment:7 chapoton]:\n> Could you please upload the most recent constellation patch from the sage-combinat queue ? It seems that the version there is not the same, and my review patch does not apply ..\n\nDone.",
     "created_at": "2012-07-23T20:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96346",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_9806-constellations-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-vd.patch) by vdelecroix created at 2012-07-23 20:48:36
+Attachment [trac_9806-constellations-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-vd.patch) by @videlec created at 2012-07-23 20:48:36
 
 Replying to [comment:7 chapoton]:
 > Could you please upload the most recent constellation patch from the sage-combinat queue ? It seems that the version there is not the same, and my review patch does not apply ..
@@ -246,7 +246,7 @@ archive/issue_comments_096347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96347",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -262,16 +262,16 @@ Apply:
 archive/issue_comments_096348.json:
 ```json
 {
-    "body": "Attachment [trac_9806-constellations-doc-patch-fc.2.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-doc-patch-fc.2.patch) by chapoton created at 2012-09-22 12:29:49",
+    "body": "Attachment [trac_9806-constellations-doc-patch-fc.2.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-doc-patch-fc.2.patch) by @fchapoton created at 2012-09-22 12:29:49",
     "created_at": "2012-09-22T12:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96348",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_9806-constellations-doc-patch-fc.2.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-doc-patch-fc.2.patch) by chapoton created at 2012-09-22 12:29:49
+Attachment [trac_9806-constellations-doc-patch-fc.2.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-doc-patch-fc.2.patch) by @fchapoton created at 2012-09-22 12:29:49
 
 
 
@@ -285,7 +285,7 @@ archive/issue_comments_096349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96349",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_096350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96350",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_096351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96351",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_096352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96352",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_096353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96353",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -377,16 +377,16 @@ coverage 80%
 archive/issue_comments_096354.json:
 ```json
 {
-    "body": "Attachment [trac_9806-constellations-doc-patch-fc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-doc-patch-fc.patch) by chapoton created at 2013-05-24 18:59:21",
+    "body": "Attachment [trac_9806-constellations-doc-patch-fc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-doc-patch-fc.patch) by @fchapoton created at 2013-05-24 18:59:21",
     "created_at": "2013-05-24T18:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96354",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_9806-constellations-doc-patch-fc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-doc-patch-fc.patch) by chapoton created at 2013-05-24 18:59:21
+Attachment [trac_9806-constellations-doc-patch-fc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-doc-patch-fc.patch) by @fchapoton created at 2013-05-24 18:59:21
 
 
 
@@ -400,7 +400,7 @@ archive/issue_comments_096355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96355",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_096356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96356",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_096357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96357",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_096358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96358",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_096359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96359",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_096360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96360",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_096361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96361",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_096362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96362",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -557,7 +557,7 @@ archive/issue_comments_096363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96363",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -575,7 +575,7 @@ archive/issue_comments_096364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96364",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -593,7 +593,7 @@ archive/issue_comments_096365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96365",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_096366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96366",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -626,16 +626,16 @@ I have taken care of the assert statements, but there is still a gap in the docu
 archive/issue_comments_096367.json:
 ```json
 {
-    "body": "Attachment [trac_9806_review_fc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806_review_fc.patch) by chapoton created at 2013-07-25 14:37:10",
+    "body": "Attachment [trac_9806_review_fc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806_review_fc.patch) by @fchapoton created at 2013-07-25 14:37:10",
     "created_at": "2013-07-25T14:37:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96367",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_9806_review_fc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806_review_fc.patch) by chapoton created at 2013-07-25 14:37:10
+Attachment [trac_9806_review_fc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806_review_fc.patch) by @fchapoton created at 2013-07-25 14:37:10
 
 
 
@@ -649,7 +649,7 @@ archive/issue_comments_096368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96368",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -669,7 +669,7 @@ archive/issue_comments_096369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96369",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -686,16 +686,16 @@ I am starting to use intinsively the patch. And the most interesting part is not
 archive/issue_comments_096370.json:
 ```json
 {
-    "body": "Attachment [trac_9806-constellations-all_in_one-vdfc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-all_in_one-vdfc.patch) by vdelecroix created at 2013-09-22 14:11:01",
+    "body": "Attachment [trac_9806-constellations-all_in_one-vdfc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-all_in_one-vdfc.patch) by @videlec created at 2013-09-22 14:11:01",
     "created_at": "2013-09-22T14:11:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96370",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_9806-constellations-all_in_one-vdfc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-all_in_one-vdfc.patch) by vdelecroix created at 2013-09-22 14:11:01
+Attachment [trac_9806-constellations-all_in_one-vdfc.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806-constellations-all_in_one-vdfc.patch) by @videlec created at 2013-09-22 14:11:01
 
 
 
@@ -704,16 +704,16 @@ Attachment [trac_9806-constellations-all_in_one-vdfc.patch](tarball://root/attac
 archive/issue_comments_096371.json:
 ```json
 {
-    "body": "Attachment [trac_9806_doc_canonical_labels-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806_doc_canonical_labels-vd.patch) by vdelecroix created at 2013-09-22 14:29:54",
+    "body": "Attachment [trac_9806_doc_canonical_labels-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806_doc_canonical_labels-vd.patch) by @videlec created at 2013-09-22 14:29:54",
     "created_at": "2013-09-22T14:29:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96371",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_9806_doc_canonical_labels-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806_doc_canonical_labels-vd.patch) by vdelecroix created at 2013-09-22 14:29:54
+Attachment [trac_9806_doc_canonical_labels-vd.patch](tarball://root/attachments/some-uuid/ticket9806/trac_9806_doc_canonical_labels-vd.patch) by @videlec created at 2013-09-22 14:29:54
 
 
 
@@ -727,7 +727,7 @@ archive/issue_comments_096372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96372",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -745,7 +745,7 @@ archive/issue_comments_096373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96373",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -763,7 +763,7 @@ archive/issue_comments_096374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96374",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -781,7 +781,7 @@ archive/issue_comments_096375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96375",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -801,7 +801,7 @@ archive/issue_comments_096376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96376",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -857,7 +857,7 @@ archive/issue_comments_096379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96379",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -879,7 +879,7 @@ archive/issue_comments_096380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96380",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -897,7 +897,7 @@ archive/issue_comments_096381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96381",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -915,7 +915,7 @@ archive/issue_comments_096382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96382",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -1034,7 +1034,7 @@ archive/issue_comments_096388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96388",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1106,7 +1106,7 @@ archive/issue_comments_096392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96392",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1124,7 +1124,7 @@ archive/issue_comments_096393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96393",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1162,7 +1162,7 @@ archive/issue_comments_096395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96395",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1219,7 +1219,7 @@ archive/issue_comments_096398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96398",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -1283,7 +1283,7 @@ archive/issue_comments_096400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96400",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1354,7 +1354,7 @@ archive/issue_comments_096402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96402",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1372,7 +1372,7 @@ archive/issue_comments_096403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96403",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -1430,7 +1430,7 @@ archive/issue_comments_096406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96406",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1452,7 +1452,7 @@ archive/issue_comments_096407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96407",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1470,7 +1470,7 @@ archive/issue_comments_096408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96408",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1488,7 +1488,7 @@ archive/issue_comments_096409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96409",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1542,7 +1542,7 @@ archive/issue_comments_096412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96412",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1578,7 +1578,7 @@ archive/issue_comments_096414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96414",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1596,7 +1596,7 @@ archive/issue_comments_096415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96415",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -1614,7 +1614,7 @@ archive/issue_comments_096416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96416",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1632,7 +1632,7 @@ archive/issue_comments_096417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96417",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1650,7 +1650,7 @@ archive/issue_comments_096418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9805#issuecomment-96418",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

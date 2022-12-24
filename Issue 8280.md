@@ -14,7 +14,7 @@ archive/issues_008280.json:
     "title": "cygwin: zn_poly shared library named incorrectly on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8280",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -44,7 +44,7 @@ archive/issue_comments_073319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8280#issuecomment-73319",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_073320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8280#issuecomment-73320",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_073322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8280#issuecomment-73322",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

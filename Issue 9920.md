@@ -3,7 +3,7 @@
 archive/issues_009920.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby jhpalmieri\n\nSeveral projects we depend on use nose to do self-tests.  In order to test these packages, we'd have to have nose installed.\n\nThis is fairly simple without an spkg:\n\n\n```\nwget http://somethingaboutorange.com/mrl/projects/nose/nose-0.11.2.tar.gz\ntar xzvf nose-0.11.2.tar.gz\ncd nose-0.11.2\nsage -python setup.py install  \n```\n\n\nHowever, it might make sense to have nose be an optional spkg.\n\nMatplotlib relies on nose to do tests (http://matplotlib.sourceforge.net/devel/coding_guide.html#testing), as well as numpy/scipy (http://projects.scipy.org/numpy/wiki/TestingGuidelines).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9921\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri\n\nSeveral projects we depend on use nose to do self-tests.  In order to test these packages, we'd have to have nose installed.\n\nThis is fairly simple without an spkg:\n\n\n```\nwget http://somethingaboutorange.com/mrl/projects/nose/nose-0.11.2.tar.gz\ntar xzvf nose-0.11.2.tar.gz\ncd nose-0.11.2\nsage -python setup.py install  \n```\n\n\nHowever, it might make sense to have nose be an optional spkg.\n\nMatplotlib relies on nose to do tests (http://matplotlib.sourceforge.net/devel/coding_guide.html#testing), as well as numpy/scipy (http://projects.scipy.org/numpy/wiki/TestingGuidelines).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9921\n\n",
     "created_at": "2010-09-16T17:32:19Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_009920.json:
     "title": "nose testing suite as an optional spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9920",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
 
-CC:  drkirkby jhpalmieri
+CC:  drkirkby @jhpalmieri
 
 Several projects we depend on use nose to do self-tests.  In order to test these packages, we'd have to have nose installed.
 
@@ -54,7 +54,7 @@ archive/issue_comments_098737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98737",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_098739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98739",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_098741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98741",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_098743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98743",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_098744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98744",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_098745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98745",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_098746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98746",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_098747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98747",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_098749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98749",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_098750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98750",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_098751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98751",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_098752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98752",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_098753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98753",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_098754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98754",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -443,16 +443,16 @@ scripts repo
 archive/issue_comments_098755.json:
 ```json
 {
-    "body": "Attachment [trac_9921-nose-scripts.patch](tarball://root/attachments/some-uuid/ticket9921/trac_9921-nose-scripts.patch) by jhpalmieri created at 2012-06-14 23:20:18",
+    "body": "Attachment [trac_9921-nose-scripts.patch](tarball://root/attachments/some-uuid/ticket9921/trac_9921-nose-scripts.patch) by @jhpalmieri created at 2012-06-14 23:20:18",
     "created_at": "2012-06-14T23:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98755",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9921-nose-scripts.patch](tarball://root/attachments/some-uuid/ticket9921/trac_9921-nose-scripts.patch) by jhpalmieri created at 2012-06-14 23:20:18
+Attachment [trac_9921-nose-scripts.patch](tarball://root/attachments/some-uuid/ticket9921/trac_9921-nose-scripts.patch) by @jhpalmieri created at 2012-06-14 23:20:18
 
 
 
@@ -466,7 +466,7 @@ archive/issue_comments_098756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98756",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_098757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98757",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_098758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98758",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -515,16 +515,16 @@ patch for spkg, for review only
 archive/issue_comments_098759.json:
 ```json
 {
-    "body": "Attachment [trac_9921-nose-spkg.git.patch](tarball://root/attachments/some-uuid/ticket9921/trac_9921-nose-spkg.git.patch) by jhpalmieri created at 2012-06-14 23:39:24\n\npatch for spkg, for review only (version 1.1.3)",
+    "body": "Attachment [trac_9921-nose-spkg.git.patch](tarball://root/attachments/some-uuid/ticket9921/trac_9921-nose-spkg.git.patch) by @jhpalmieri created at 2012-06-14 23:39:24\n\npatch for spkg, for review only (version 1.1.3)",
     "created_at": "2012-06-14T23:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98759",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9921-nose-spkg.git.patch](tarball://root/attachments/some-uuid/ticket9921/trac_9921-nose-spkg.git.patch) by jhpalmieri created at 2012-06-14 23:39:24
+Attachment [trac_9921-nose-spkg.git.patch](tarball://root/attachments/some-uuid/ticket9921/trac_9921-nose-spkg.git.patch) by @jhpalmieri created at 2012-06-14 23:39:24
 
 patch for spkg, for review only (version 1.1.3)
 
@@ -540,7 +540,7 @@ archive/issue_comments_098760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98760",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_098761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98761",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -579,7 +579,7 @@ archive/issue_comments_098762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98762",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_098763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98763",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -615,7 +615,7 @@ archive/issue_comments_098764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98764",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_098765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98765",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -784,7 +784,7 @@ archive/issue_comments_098768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98768",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -802,7 +802,7 @@ archive/issue_comments_098769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9920#issuecomment-98769",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

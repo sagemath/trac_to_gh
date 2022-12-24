@@ -54,16 +54,16 @@ Attachment [trac2753-randstate.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_018910.json:
 ```json
 {
-    "body": "Attachment [trac2753-hg_scripts-randstate-doctest.patch](tarball://root/attachments/some-uuid/ticket2753/trac2753-hg_scripts-randstate-doctest.patch) by rlm created at 2008-04-04 02:22:56\n\nApplies cleanly to Sage 2.11. I am taking cwitty's word on doctests- I haven't run any of my own. IMO, this greatly improves the robustness of our doctesting infrastructure.",
+    "body": "Attachment [trac2753-hg_scripts-randstate-doctest.patch](tarball://root/attachments/some-uuid/ticket2753/trac2753-hg_scripts-randstate-doctest.patch) by @rlmill created at 2008-04-04 02:22:56\n\nApplies cleanly to Sage 2.11. I am taking cwitty's word on doctests- I haven't run any of my own. IMO, this greatly improves the robustness of our doctesting infrastructure.",
     "created_at": "2008-04-04T02:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18910",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac2753-hg_scripts-randstate-doctest.patch](tarball://root/attachments/some-uuid/ticket2753/trac2753-hg_scripts-randstate-doctest.patch) by rlm created at 2008-04-04 02:22:56
+Attachment [trac2753-hg_scripts-randstate-doctest.patch](tarball://root/attachments/some-uuid/ticket2753/trac2753-hg_scripts-randstate-doctest.patch) by @rlmill created at 2008-04-04 02:22:56
 
 Applies cleanly to Sage 2.11. I am taking cwitty's word on doctests- I haven't run any of my own. IMO, this greatly improves the robustness of our doctesting infrastructure.
 
@@ -79,7 +79,7 @@ archive/issue_comments_018911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18911",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

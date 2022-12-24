@@ -3,7 +3,7 @@
 archive/issues_001397.json:
 ```json
 {
-    "body": "Assignee: was\n\n\"sage -uprgrade\" should print brief release notes when it is done upgrading (or before it starts upgrading, and give the chance to abort the upgrade).\n\nThis is inspired by the following, from IRC:\n\n```\n did the notebook change location 2.8.14 --> 2.8.15?\n```\n\n...\n\n```\nok, i just panicked for a second...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1397\n\n",
+    "body": "Assignee: @williamstein\n\n\"sage -uprgrade\" should print brief release notes when it is done upgrading (or before it starts upgrading, and give the chance to abort the upgrade).\n\nThis is inspired by the following, from IRC:\n\n```\n did the notebook change location 2.8.14 --> 2.8.15?\n```\n\n...\n\n```\nok, i just panicked for a second...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1397\n\n",
     "created_at": "2007-12-04T19:39:01Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_001397.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 "sage -uprgrade" should print brief release notes when it is done upgrading (or before it starts upgrading, and give the chance to abort the upgrade).
 
@@ -73,7 +73,7 @@ archive/issue_comments_009000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1397#issuecomment-9000",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_009001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1397#issuecomment-9001",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_009002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1397#issuecomment-9002",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_009003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1397#issuecomment-9003",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_009004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1397#issuecomment-9004",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_009005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1397#issuecomment-9005",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

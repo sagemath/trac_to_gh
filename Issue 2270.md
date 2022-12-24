@@ -3,7 +3,7 @@
 archive/issues_002270.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nglib is a c library with algorithms for just about everything under the sun.  The documentation for the library is available at http://library.gnome.org/devel/glib/2.14/ and the spkg itself may be downloaded at http://www.indirectproof.net/sage/glib-2.14.0.spkg\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2270\n\n",
+    "body": "Assignee: @garyfurnish\n\nglib is a c library with algorithms for just about everything under the sun.  The documentation for the library is available at http://library.gnome.org/devel/glib/2.14/ and the spkg itself may be downloaded at http://www.indirectproof.net/sage/glib-2.14.0.spkg\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2270\n\n",
     "created_at": "2008-02-22T23:17:14Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_002270.json:
     "title": "glib spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2270",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 glib is a c library with algorithms for just about everything under the sun.  The documentation for the library is available at http://library.gnome.org/devel/glib/2.14/ and the spkg itself may be downloaded at http://www.indirectproof.net/sage/glib-2.14.0.spkg
 
@@ -57,7 +57,7 @@ archive/issue_comments_015042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2270#issuecomment-15042",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_015043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2270#issuecomment-15043",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_015044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2270#issuecomment-15044",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_015045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2270#issuecomment-15045",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_015046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2270#issuecomment-15046",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_015047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2270#issuecomment-15047",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_015048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2270#issuecomment-15048",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_015049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2270#issuecomment-15049",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_015050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2270#issuecomment-15050",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_015051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2270#issuecomment-15051",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_015052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2270#issuecomment-15052",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_015053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2270#issuecomment-15053",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_015054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2270#issuecomment-15054",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

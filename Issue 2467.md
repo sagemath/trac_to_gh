@@ -14,7 +14,7 @@ archive/issues_002467.json:
     "title": "sage-2.10.3: failures in tut.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2467",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure

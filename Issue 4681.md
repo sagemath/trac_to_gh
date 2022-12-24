@@ -3,7 +3,7 @@
 archive/issues_004681.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  ncalexan\n\nKeywords: matrix, smith normal form\n\nSmith form is a useful canonical form for matrices over a PID. Sage already has it for ZZ. I've coded up a very basic implementation that should work over any PID Sage knows about (although it is not fast).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4681\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @ncalexan\n\nKeywords: matrix, smith normal form\n\nSmith form is a useful canonical form for matrices over a PID. Sage already has it for ZZ. I've coded up a very basic implementation that should work over any PID Sage knows about (although it is not fast).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4681\n\n",
     "created_at": "2008-12-03T00:01:47Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_004681.json:
     "title": "General Smith normal form implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4681",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: matrix, smith normal form
 
@@ -41,7 +41,7 @@ archive/issue_comments_035261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35261",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_035262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35262",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_035263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35263",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -90,16 +90,16 @@ I just glanced at this; could you put in doctests for the additive_order functio
 archive/issue_comments_035264.json:
 ```json
 {
-    "body": "Attachment [4681-smithform.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform.patch) by davidloeffler created at 2008-12-03 20:35:27\n\nI've done a new patch (replacing the old one) which includes a doctest; sorry for the omission.",
+    "body": "Attachment [4681-smithform.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform.patch) by @loefflerd created at 2008-12-03 20:35:27\n\nI've done a new patch (replacing the old one) which includes a doctest; sorry for the omission.",
     "created_at": "2008-12-03T20:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35264",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [4681-smithform.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform.patch) by davidloeffler created at 2008-12-03 20:35:27
+Attachment [4681-smithform.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform.patch) by @loefflerd created at 2008-12-03 20:35:27
 
 I've done a new patch (replacing the old one) which includes a doctest; sorry for the omission.
 
@@ -115,7 +115,7 @@ archive/issue_comments_035265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35265",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_035266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35266",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,16 +153,16 @@ I noticed that this docstring is slightly wrong.  The m and y are confused:
 archive/issue_comments_035267.json:
 ```json
 {
-    "body": "Attachment [4681-smithform.2.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform.2.patch) by davidloeffler created at 2008-12-05 11:36:49",
+    "body": "Attachment [4681-smithform.2.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform.2.patch) by @loefflerd created at 2008-12-05 11:36:49",
     "created_at": "2008-12-05T11:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35267",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [4681-smithform.2.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform.2.patch) by davidloeffler created at 2008-12-05 11:36:49
+Attachment [4681-smithform.2.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform.2.patch) by @loefflerd created at 2008-12-05 11:36:49
 
 
 
@@ -176,7 +176,7 @@ archive/issue_comments_035268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35268",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_035269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35269",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -284,16 +284,16 @@ To get this into Sage, please:
 archive/issue_comments_035270.json:
 ```json
 {
-    "body": "Attachment [trac_4681-smithform_integer.patch](tarball://root/attachments/some-uuid/ticket4681/trac_4681-smithform_integer.patch) by davidloeffler created at 2008-12-08 12:55:12\n\nHmm. On reflection, perhaps the way the Sage code was already doing it is the right way: smith_form should always return the transformation matrix, and elementary_divisors should be provided separately.\n\nThis seems more logical to me, because one can define analogues of elementary divisors over any Dedekind domain, but the result is a list of ideals rather than of elements and thus there is no analogue of the transformation matrix. PARI/GP has a function that does this over rings of integers of a general number field. Also, even over ZZ where the transformation matrices do make sense there are some fast algorithms for elementary divisors that don't give them.\n\nAs for the inconsistency of ordering the results, I've called for a quick straw poll on sage-devel.\n\nThe other issue is one of sign. Conventionally elementary divisors are always *nonnegative* integers; one wouldn't want to calculate the invariants of a finitely generated abelian group and be told that it had a direct summand that was cyclic of order -5. But for general PID's there's no canonical choice of sign for the generator of an ideal. I'm sure nobody will actually be all that bothered by this, but I will drop the insistence that U and V have det 1 and replace it with the insistence that the d_i are >= 0, even though this is pretty meaningless.\n\nIncidentally, I just realised the doctests don't pass! I added an is_noetherian method for number field orders, but didn't notice that there is a doctest in sage/rings/ring.pyx that is actually broken by this -- it creates an order, calls is_noetherian() on it and insists that the result should be NotImplementedError. I will fix this.",
+    "body": "Attachment [trac_4681-smithform_integer.patch](tarball://root/attachments/some-uuid/ticket4681/trac_4681-smithform_integer.patch) by @loefflerd created at 2008-12-08 12:55:12\n\nHmm. On reflection, perhaps the way the Sage code was already doing it is the right way: smith_form should always return the transformation matrix, and elementary_divisors should be provided separately.\n\nThis seems more logical to me, because one can define analogues of elementary divisors over any Dedekind domain, but the result is a list of ideals rather than of elements and thus there is no analogue of the transformation matrix. PARI/GP has a function that does this over rings of integers of a general number field. Also, even over ZZ where the transformation matrices do make sense there are some fast algorithms for elementary divisors that don't give them.\n\nAs for the inconsistency of ordering the results, I've called for a quick straw poll on sage-devel.\n\nThe other issue is one of sign. Conventionally elementary divisors are always *nonnegative* integers; one wouldn't want to calculate the invariants of a finitely generated abelian group and be told that it had a direct summand that was cyclic of order -5. But for general PID's there's no canonical choice of sign for the generator of an ideal. I'm sure nobody will actually be all that bothered by this, but I will drop the insistence that U and V have det 1 and replace it with the insistence that the d_i are >= 0, even though this is pretty meaningless.\n\nIncidentally, I just realised the doctests don't pass! I added an is_noetherian method for number field orders, but didn't notice that there is a doctest in sage/rings/ring.pyx that is actually broken by this -- it creates an order, calls is_noetherian() on it and insists that the result should be NotImplementedError. I will fix this.",
     "created_at": "2008-12-08T12:55:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35270",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_4681-smithform_integer.patch](tarball://root/attachments/some-uuid/ticket4681/trac_4681-smithform_integer.patch) by davidloeffler created at 2008-12-08 12:55:12
+Attachment [trac_4681-smithform_integer.patch](tarball://root/attachments/some-uuid/ticket4681/trac_4681-smithform_integer.patch) by @loefflerd created at 2008-12-08 12:55:12
 
 Hmm. On reflection, perhaps the way the Sage code was already doing it is the right way: smith_form should always return the transformation matrix, and elementary_divisors should be provided separately.
 
@@ -317,7 +317,7 @@ archive/issue_comments_035271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35271",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -330,16 +330,16 @@ New patch, against 3.2.2.alpha0
 archive/issue_comments_035272.json:
 ```json
 {
-    "body": "Attachment [4681-smithform-consistent.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform-consistent.patch) by davidloeffler created at 2008-12-08 16:50:50\n\n(cc'ed to ncalexan as symplectic_basis is his territory)\n\nNobody's objected violently to the change yet on sage-devel, so the following patch changes SNF over ZZ, to put 1's first and 0's last. (Also, when M is non-square it puts the nonzero entries in the [i,i] diagonal, not on some shifted diagonal ending in the bottom corner like the previous code did -- I found that rather inconvenient.)\n\nAs I suggested above, I've changed the call syntax over a general ring to be consistent with the existing code over ZZ, so I got rid of the \"transformation=True\" argument and added an extra function \"elementary_divisors\" which returns the diagonal entries of M. This can be overridden later, if anyone feels like implementing a fast algorithm for elementary divisors for more general rings.\n\nI've also fixed up \"symplectic_basis\" to be consistent with the new \"smith_form\"; it doesn't explicitly use smith_form, but the conventions for the output are chosen for consistency with smith_form, so I've changed them in tandem. (ncalexan: is this OK with you?)\n\nI didn't actually make it choose ideal representatives that compare as >= 0 -- I decided I couldn't bear to fix such a horrible convention. This means that if R is a general PID, coercing integer matrices from ZZ to R doesn't quite commute with Smith form, but I don't see why one should expect it to.",
+    "body": "Attachment [4681-smithform-consistent.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform-consistent.patch) by @loefflerd created at 2008-12-08 16:50:50\n\n(cc'ed to ncalexan as symplectic_basis is his territory)\n\nNobody's objected violently to the change yet on sage-devel, so the following patch changes SNF over ZZ, to put 1's first and 0's last. (Also, when M is non-square it puts the nonzero entries in the [i,i] diagonal, not on some shifted diagonal ending in the bottom corner like the previous code did -- I found that rather inconvenient.)\n\nAs I suggested above, I've changed the call syntax over a general ring to be consistent with the existing code over ZZ, so I got rid of the \"transformation=True\" argument and added an extra function \"elementary_divisors\" which returns the diagonal entries of M. This can be overridden later, if anyone feels like implementing a fast algorithm for elementary divisors for more general rings.\n\nI've also fixed up \"symplectic_basis\" to be consistent with the new \"smith_form\"; it doesn't explicitly use smith_form, but the conventions for the output are chosen for consistency with smith_form, so I've changed them in tandem. (ncalexan: is this OK with you?)\n\nI didn't actually make it choose ideal representatives that compare as >= 0 -- I decided I couldn't bear to fix such a horrible convention. This means that if R is a general PID, coercing integer matrices from ZZ to R doesn't quite commute with Smith form, but I don't see why one should expect it to.",
     "created_at": "2008-12-08T16:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35272",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [4681-smithform-consistent.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform-consistent.patch) by davidloeffler created at 2008-12-08 16:50:50
+Attachment [4681-smithform-consistent.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform-consistent.patch) by @loefflerd created at 2008-12-08 16:50:50
 
 (cc'ed to ncalexan as symplectic_basis is his territory)
 
@@ -363,7 +363,7 @@ archive/issue_comments_035273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35273",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_035275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35275",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_035276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35276",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_035277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35277",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_035278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35278",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -470,16 +470,16 @@ Works for me, and the code is fairly straight forward.  It also fixes (and docte
 archive/issue_comments_035279.json:
 ```json
 {
-    "body": "Attachment [4681-more-doctests.patch](tarball://root/attachments/some-uuid/ticket4681/4681-more-doctests.patch) by davidloeffler created at 2008-12-09 21:53:50\n\napply after previous two patches",
+    "body": "Attachment [4681-more-doctests.patch](tarball://root/attachments/some-uuid/ticket4681/4681-more-doctests.patch) by @loefflerd created at 2008-12-09 21:53:50\n\napply after previous two patches",
     "created_at": "2008-12-09T21:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35279",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [4681-more-doctests.patch](tarball://root/attachments/some-uuid/ticket4681/4681-more-doctests.patch) by davidloeffler created at 2008-12-09 21:53:50
+Attachment [4681-more-doctests.patch](tarball://root/attachments/some-uuid/ticket4681/4681-more-doctests.patch) by @loefflerd created at 2008-12-09 21:53:50
 
 apply after previous two patches
 
@@ -495,7 +495,7 @@ archive/issue_comments_035280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35280",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -515,7 +515,7 @@ archive/issue_comments_035281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35281",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -577,7 +577,7 @@ archive/issue_comments_035283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35283",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -628,7 +628,7 @@ archive/issue_comments_035285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35285",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -641,16 +641,16 @@ Replaces all previous patches, rebased to apply over the top of #4493
 archive/issue_comments_035286.json:
 ```json
 {
-    "body": "Attachment [4681-smithform-all.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform-all.patch) by davidloeffler created at 2008-12-10 11:03:38\n\nHere is the rebased combined patch. I've checked on sage.math as you suggest and it applies OK to the current merge tree.",
+    "body": "Attachment [4681-smithform-all.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform-all.patch) by @loefflerd created at 2008-12-10 11:03:38\n\nHere is the rebased combined patch. I've checked on sage.math as you suggest and it applies OK to the current merge tree.",
     "created_at": "2008-12-10T11:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35286",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [4681-smithform-all.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform-all.patch) by davidloeffler created at 2008-12-10 11:03:38
+Attachment [4681-smithform-all.patch](tarball://root/attachments/some-uuid/ticket4681/4681-smithform-all.patch) by @loefflerd created at 2008-12-10 11:03:38
 
 Here is the rebased combined patch. I've checked on sage.math as you suggest and it applies OK to the current merge tree.
 

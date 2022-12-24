@@ -14,7 +14,7 @@ archive/issues_002722.json:
     "title": "[with patch; needs trivial review] interact -- a doctest problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2722",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -59,16 +59,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2722
 archive/issue_comments_018762.json:
 ```json
 {
-    "body": "Attachment [sage-2722.patch](tarball://root/attachments/some-uuid/ticket2722/sage-2722.patch) by was created at 2008-03-29 17:50:07",
+    "body": "Attachment [sage-2722.patch](tarball://root/attachments/some-uuid/ticket2722/sage-2722.patch) by @williamstein created at 2008-03-29 17:50:07",
     "created_at": "2008-03-29T17:50:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2722#issuecomment-18762",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2722.patch](tarball://root/attachments/some-uuid/ticket2722/sage-2722.patch) by was created at 2008-03-29 17:50:07
+Attachment [sage-2722.patch](tarball://root/attachments/some-uuid/ticket2722/sage-2722.patch) by @williamstein created at 2008-03-29 17:50:07
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_018763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2722#issuecomment-18763",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_018764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2722#issuecomment-18764",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

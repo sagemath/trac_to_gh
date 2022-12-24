@@ -3,7 +3,7 @@
 archive/issues_002172.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\n$SAGE_ROOT/devel/sage/spkg-dist currently does not copy the debian directory as well as `spkg-debian-maybe`. It is easily fixed in `spkg-dist`, patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2172\n\n",
+    "body": "Assignee: @timabbott\n\n$SAGE_ROOT/devel/sage/spkg-dist currently does not copy the debian directory as well as `spkg-debian-maybe`. It is easily fixed in `spkg-dist`, patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2172\n\n",
     "created_at": "2008-02-15T17:50:39Z",
     "labels": [
         "debian-package",
@@ -17,7 +17,7 @@ archive/issues_002172.json:
     "user": "mabshoff"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 $SAGE_ROOT/devel/sage/spkg-dist currently does not copy the debian directory as well as `spkg-debian-maybe`. It is easily fixed in `spkg-dist`, patch coming up.
 
@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2172
 archive/issue_comments_014264.json:
 ```json
 {
-    "body": "Changing assignee from tabbott to mabshoff.",
+    "body": "Changing assignee from @timabbott to mabshoff.",
     "created_at": "2008-02-15T17:54:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2172",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_014264.json:
 }
 ```
 
-Changing assignee from tabbott to mabshoff.
+Changing assignee from @timabbott to mabshoff.
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_014267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2172#issuecomment-14267",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_014268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2172#issuecomment-14268",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

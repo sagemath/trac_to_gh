@@ -14,7 +14,7 @@ archive/issues_009048.json:
     "title": "different behaviour of var in notebook and text version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9048",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: jason, was
@@ -41,7 +41,7 @@ archive/issue_comments_083770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9048#issuecomment-83770",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_083771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9048#issuecomment-83771",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_083772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9048#issuecomment-83772",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_083773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9048#issuecomment-83773",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_083774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9048#issuecomment-83774",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_083775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9048#issuecomment-83775",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_083776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9048#issuecomment-83776",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

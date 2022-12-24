@@ -3,7 +3,7 @@
 archive/issues_001850.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis works fine\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi))\n```\n\n\nThis is missing half of the parametric plot!!\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi), plot_points=500)\n```\n\n\nI suspect this may be a bug introduced by me or Bobby M. in refactoring some plotting code. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1850\n\n",
+    "body": "Assignee: @williamstein\n\nThis works fine\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi))\n```\n\n\nThis is missing half of the parametric plot!!\n\n```\nsage: parametric_plot3d((sin(x), cos(x), x), (x,0,10*pi), plot_points=500)\n```\n\n\nI suspect this may be a bug introduced by me or Bobby M. in refactoring some plotting code. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1850\n\n",
     "created_at": "2008-01-19T20:26:06Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001850.json:
     "title": "graphics -- serious bug in parametric plotting of curves.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1850",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This works fine
 
@@ -51,7 +51,7 @@ archive/issue_comments_011707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1850#issuecomment-11707",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_011708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1850#issuecomment-11708",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -99,16 +99,16 @@ I guess we could either change jmol to support arbitrary numbers of points, or s
 archive/issue_comments_011709.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2008-01-20T00:45:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1850#issuecomment-11709",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_011710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1850#issuecomment-11710",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_011711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1850#issuecomment-11711",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -153,16 +153,16 @@ Chopping it up seems like the simplest choice, preferably at a point of maximum 
 archive/issue_comments_011712.json:
 ```json
 {
-    "body": "Attachment [1850-jmol-pointlimit.diff](tarball://root/attachments/some-uuid/ticket1850/1850-jmol-pointlimit.diff) by robertwb created at 2008-01-20 01:06:15",
+    "body": "Attachment [1850-jmol-pointlimit.diff](tarball://root/attachments/some-uuid/ticket1850/1850-jmol-pointlimit.diff) by @robertwb created at 2008-01-20 01:06:15",
     "created_at": "2008-01-20T01:06:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1850#issuecomment-11712",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1850-jmol-pointlimit.diff](tarball://root/attachments/some-uuid/ticket1850/1850-jmol-pointlimit.diff) by robertwb created at 2008-01-20 01:06:15
+Attachment [1850-jmol-pointlimit.diff](tarball://root/attachments/some-uuid/ticket1850/1850-jmol-pointlimit.diff) by @robertwb created at 2008-01-20 01:06:15
 
 
 
@@ -176,7 +176,7 @@ archive/issue_comments_011713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1850#issuecomment-11713",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003917.json:
     "title": "make %html (and other text-cell indicators) imply %hide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3917",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_028024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3917#issuecomment-28024",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_028025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3917#issuecomment-28025",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_028026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3917#issuecomment-28026",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

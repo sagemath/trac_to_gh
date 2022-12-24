@@ -3,7 +3,7 @@
 archive/issues_005297.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\n\n```\nsage: v = vector({1: 1, 3: -2})  \nsage: w = vector({3: 3})       \nsage: v\n(0, 1, 0, -2)\nsage: w\n(0, 0, 0, 3)\nsage: v.pairwise_product(w)\n(0, 1, 0, -6)\nsage: v.dense_vector().pairwise_product(w)\n(0, 0, 0, -6)\n```\n\n(The last line illustrates that dense vectors seem to work okay.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5297\n\n",
+    "body": "Assignee: @jhpalmieri\n\n\n```\nsage: v = vector({1: 1, 3: -2})  \nsage: w = vector({3: 3})       \nsage: v\n(0, 1, 0, -2)\nsage: w\n(0, 0, 0, 3)\nsage: v.pairwise_product(w)\n(0, 1, 0, -6)\nsage: v.dense_vector().pairwise_product(w)\n(0, 0, 0, -6)\n```\n\n(The last line illustrates that dense vectors seem to work okay.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5297\n\n",
     "created_at": "2009-02-17T20:55:05Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005297.json:
     "title": "[with patch, needs review] sparse vectors and free module elements: pairwise_product is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5297",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 
 ```
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5297
 archive/issue_comments_040763.json:
 ```json
 {
-    "body": "Attachment [5297.patch](tarball://root/attachments/some-uuid/ticket5297/5297.patch) by jhpalmieri created at 2009-02-17 20:56:16",
+    "body": "Attachment [5297.patch](tarball://root/attachments/some-uuid/ticket5297/5297.patch) by @jhpalmieri created at 2009-02-17 20:56:16",
     "created_at": "2009-02-17T20:56:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5297#issuecomment-40763",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5297.patch](tarball://root/attachments/some-uuid/ticket5297/5297.patch) by jhpalmieri created at 2009-02-17 20:56:16
+Attachment [5297.patch](tarball://root/attachments/some-uuid/ticket5297/5297.patch) by @jhpalmieri created at 2009-02-17 20:56:16
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_040764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5297#issuecomment-40764",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

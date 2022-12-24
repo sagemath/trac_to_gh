@@ -3,7 +3,7 @@
 archive/issues_006481.json:
 ```json
 {
-    "body": "Assignee: malb\n\nreported by Kwankyu on [sage-support]:\n\n\n```\nI mean the substitution y:x*y is applied first in the following\n\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + y + 1\n\nwhere I think applying x:x+1 first seems intuitive if order ever\nshould be significant.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6481\n\n",
+    "body": "Assignee: @malb\n\nreported by Kwankyu on [sage-support]:\n\n\n```\nI mean the substitution y:x*y is applied first in the following\n\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + y + 1\n\nwhere I think applying x:x+1 first seems intuitive if order ever\nshould be significant.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6481\n\n",
     "created_at": "2009-07-08T12:58:14Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_006481.json:
     "title": "g.subs({x:1,y:2}) should walk through x,y sorted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6481",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 reported by Kwankyu on [sage-support]:
 
@@ -52,7 +52,7 @@ archive/issue_comments_052399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6481#issuecomment-52399",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_052400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6481#issuecomment-52400",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_052401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6481#issuecomment-52401",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

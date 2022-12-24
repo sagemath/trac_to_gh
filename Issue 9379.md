@@ -3,7 +3,7 @@
 archive/issues_009379.json:
 ```json
 {
-    "body": "Assignee: Mariah Lenox\n\nCC:  jason jeroen\n\nSage built on skynet/cleo (ia64-Linux-rhel) \nfails the following test when run on \nskynet/iras (ia64-Linux-suse):\n\n./sage -t -long \"devel/sage/sage/plot/plot3d/tachyon.py\"\n\nThe reason is because tachyon is being\nbuilt with cc rather than gcc.\n\nThe attached mercurial patch causes tachyon \nto be built with gcc rather than cc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9379\n\n",
+    "body": "Assignee: Mariah Lenox\n\nCC:  @jasongrout jeroen\n\nSage built on skynet/cleo (ia64-Linux-rhel) \nfails the following test when run on \nskynet/iras (ia64-Linux-suse):\n\n./sage -t -long \"devel/sage/sage/plot/plot3d/tachyon.py\"\n\nThe reason is because tachyon is being\nbuilt with cc rather than gcc.\n\nThe attached mercurial patch causes tachyon \nto be built with gcc rather than cc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9379\n\n",
     "created_at": "2010-06-29T19:18:51Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_009379.json:
 ```
 Assignee: Mariah Lenox
 
-CC:  jason jeroen
+CC:  @jasongrout jeroen
 
 Sage built on skynet/cleo (ia64-Linux-rhel) 
 fails the following test when run on 
@@ -85,7 +85,7 @@ archive/issue_comments_089141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89141",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_089146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89146",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_089147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89147",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_089148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89148",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_089149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89149",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_089150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89150",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_089151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89151",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_089152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89152",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_089153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89153",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_089154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89154",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_089155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89155",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_089156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89156",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_089157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89157",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -457,16 +457,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089158.json:
 ```json
 {
-    "body": "Attachment [Make-arch.patch](tarball://root/attachments/some-uuid/ticket9379/Make-arch.patch) by vbraun created at 2011-01-11 09:06:15\n\nPatch to Make.arch that removed CC, AR, RANLIB overrides",
+    "body": "Attachment [Make-arch.patch](tarball://root/attachments/some-uuid/ticket9379/Make-arch.patch) by @vbraun created at 2011-01-11 09:06:15\n\nPatch to Make.arch that removed CC, AR, RANLIB overrides",
     "created_at": "2011-01-11T09:06:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89158",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [Make-arch.patch](tarball://root/attachments/some-uuid/ticket9379/Make-arch.patch) by vbraun created at 2011-01-11 09:06:15
+Attachment [Make-arch.patch](tarball://root/attachments/some-uuid/ticket9379/Make-arch.patch) by @vbraun created at 2011-01-11 09:06:15
 
 Patch to Make.arch that removed CC, AR, RANLIB overrides
 
@@ -509,7 +509,7 @@ archive/issue_comments_089160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89160",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_089161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9379#issuecomment-89161",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

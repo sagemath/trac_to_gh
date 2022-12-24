@@ -3,7 +3,7 @@
 archive/issues_009821.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jason kcrisman mpatel boothby\n\nc.f. http://groups.google.com/group/sage-support/msg/2fd79e5ccfceb728 and http://groups.google.com/group/sage-support/msg/10a3d906b6a0e675\n\nIssue created by migration from https://trac.sagemath.org/ticket/9822\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout @kcrisman @qed777 boothby\n\nc.f. http://groups.google.com/group/sage-support/msg/2fd79e5ccfceb728 and http://groups.google.com/group/sage-support/msg/10a3d906b6a0e675\n\nIssue created by migration from https://trac.sagemath.org/ticket/9822\n\n",
     "created_at": "2010-08-27T15:29:01Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009821.json:
     "title": "Cookies are still causing problems in SageNB (Safari)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9821",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: jason, was
 
-CC:  jason kcrisman mpatel boothby
+CC:  @jasongrout @kcrisman @qed777 boothby
 
 c.f. http://groups.google.com/group/sage-support/msg/2fd79e5ccfceb728 and http://groups.google.com/group/sage-support/msg/10a3d906b6a0e675
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9822
 archive/issue_comments_096838.json:
 ```json
 {
-    "body": "Attachment [trac_9822-cookie-path-fix.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-path-fix.patch) by timdumol created at 2010-08-27 15:30:01\n\nSageNB. Attempted fix for Safari (setting cookie path to '/')",
+    "body": "Attachment [trac_9822-cookie-path-fix.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-path-fix.patch) by @TimDumol created at 2010-08-27 15:30:01\n\nSageNB. Attempted fix for Safari (setting cookie path to '/')",
     "created_at": "2010-08-27T15:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96838",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9822-cookie-path-fix.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-path-fix.patch) by timdumol created at 2010-08-27 15:30:01
+Attachment [trac_9822-cookie-path-fix.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-path-fix.patch) by @TimDumol created at 2010-08-27 15:30:01
 
 SageNB. Attempted fix for Safari (setting cookie path to '/')
 
@@ -59,7 +59,7 @@ archive/issue_comments_096839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96839",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_096840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96840",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_096841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96841",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_096842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96842",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_096843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96843",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_096844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96844",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_096845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96845",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_096846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96846",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -201,16 +201,16 @@ Replaces all others. Includes Jason Grout's fix ( http://groups.google.com/group
 archive/issue_comments_096847.json:
 ```json
 {
-    "body": "Attachment [trac_9822-cookie-fix.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.patch) by timdumol created at 2010-09-10 04:20:23",
+    "body": "Attachment [trac_9822-cookie-fix.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.patch) by @TimDumol created at 2010-09-10 04:20:23",
     "created_at": "2010-09-10T04:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96847",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9822-cookie-fix.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.patch) by timdumol created at 2010-09-10 04:20:23
+Attachment [trac_9822-cookie-fix.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.patch) by @TimDumol created at 2010-09-10 04:20:23
 
 
 
@@ -224,7 +224,7 @@ archive/issue_comments_096848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96848",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_096849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96849",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -255,16 +255,16 @@ Gets the port number from the HTTP header instead (this fixes the issue given by
 archive/issue_comments_096850.json:
 ```json
 {
-    "body": "Attachment [trac_9822-cookie-fix.2.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.2.patch) by timdumol created at 2010-09-10 04:41:55\n\nReplying to [comment:8 jason]:\n> Setting the port for the cookie worries me.  How does that play with using a proxy server (where Sage thinks it is running on a certain port, like 8000, but the web browser thinks it is running on port 80)?\n\nGood point. I've added a new patch that fixes that issue.",
+    "body": "Attachment [trac_9822-cookie-fix.2.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.2.patch) by @TimDumol created at 2010-09-10 04:41:55\n\nReplying to [comment:8 jason]:\n> Setting the port for the cookie worries me.  How does that play with using a proxy server (where Sage thinks it is running on a certain port, like 8000, but the web browser thinks it is running on port 80)?\n\nGood point. I've added a new patch that fixes that issue.",
     "created_at": "2010-09-10T04:41:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96850",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9822-cookie-fix.2.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.2.patch) by timdumol created at 2010-09-10 04:41:55
+Attachment [trac_9822-cookie-fix.2.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.2.patch) by @TimDumol created at 2010-09-10 04:41:55
 
 Replying to [comment:8 jason]:
 > Setting the port for the cookie worries me.  How does that play with using a proxy server (where Sage thinks it is running on a certain port, like 8000, but the web browser thinks it is running on port 80)?
@@ -283,7 +283,7 @@ archive/issue_comments_096851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96851",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -304,16 +304,16 @@ if request.headers.hasHeader('cookie'):
 archive/issue_comments_096852.json:
 ```json
 {
-    "body": "Attachment [trac_9822-cookie-fix.3.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.3.patch) by timdumol created at 2010-09-10 10:49:53\n\nMakes the default port 443 if the connection is HTTPS.",
+    "body": "Attachment [trac_9822-cookie-fix.3.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.3.patch) by @TimDumol created at 2010-09-10 10:49:53\n\nMakes the default port 443 if the connection is HTTPS.",
     "created_at": "2010-09-10T10:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96852",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9822-cookie-fix.3.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.3.patch) by timdumol created at 2010-09-10 10:49:53
+Attachment [trac_9822-cookie-fix.3.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.3.patch) by @TimDumol created at 2010-09-10 10:49:53
 
 Makes the default port 443 if the connection is HTTPS.
 
@@ -329,7 +329,7 @@ archive/issue_comments_096853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96853",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -344,16 +344,16 @@ It is insecure to let any site under the domain to access the cookie (cross-site
 archive/issue_comments_096854.json:
 ```json
 {
-    "body": "Attachment [trac_9822-cookie-fix.4.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.4.patch) by timdumol created at 2010-09-16 17:00:53\n\nFixes a bug.",
+    "body": "Attachment [trac_9822-cookie-fix.4.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.4.patch) by @TimDumol created at 2010-09-16 17:00:53\n\nFixes a bug.",
     "created_at": "2010-09-16T17:00:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96854",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9822-cookie-fix.4.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.4.patch) by timdumol created at 2010-09-16 17:00:53
+Attachment [trac_9822-cookie-fix.4.patch](tarball://root/attachments/some-uuid/ticket9822/trac_9822-cookie-fix.4.patch) by @TimDumol created at 2010-09-16 17:00:53
 
 Fixes a bug.
 
@@ -369,7 +369,7 @@ archive/issue_comments_096855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96855",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_096856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96856",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_096857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96857",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_096858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96858",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_096859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96859",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_096860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96860",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_096861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96861",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_096862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96862",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -516,16 +516,16 @@ I've split Tim's changes to cookies out to #10029, since they don't seem to be q
 archive/issue_comments_096863.json:
 ```json
 {
-    "body": "Attachment [9822-multiple-cookies.patch](tarball://root/attachments/some-uuid/ticket9822/9822-multiple-cookies.patch) by jason created at 2010-09-29 01:06:00\n\napply instead of previous patches",
+    "body": "Attachment [9822-multiple-cookies.patch](tarball://root/attachments/some-uuid/ticket9822/9822-multiple-cookies.patch) by @jasongrout created at 2010-09-29 01:06:00\n\napply instead of previous patches",
     "created_at": "2010-09-29T01:06:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96863",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [9822-multiple-cookies.patch](tarball://root/attachments/some-uuid/ticket9822/9822-multiple-cookies.patch) by jason created at 2010-09-29 01:06:00
+Attachment [9822-multiple-cookies.patch](tarball://root/attachments/some-uuid/ticket9822/9822-multiple-cookies.patch) by @jasongrout created at 2010-09-29 01:06:00
 
 apply instead of previous patches
 
@@ -541,7 +541,7 @@ archive/issue_comments_096864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96864",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_096865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96865",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -577,7 +577,7 @@ archive/issue_comments_096866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96866",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_096867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96867",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -617,7 +617,7 @@ archive/issue_comments_096868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96868",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_096869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96869",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -665,7 +665,7 @@ archive/issue_comments_096870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96870",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -686,7 +686,7 @@ archive/issue_comments_096871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96871",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -704,7 +704,7 @@ archive/issue_comments_096872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96872",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_096873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9821#issuecomment-96873",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

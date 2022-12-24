@@ -3,7 +3,7 @@
 archive/issues_009357.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: SIGFPE, ZeroDivisionError\n\n\n```\nsage: d=QQ[i](0)\nsage: ~d\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\n\nThe code dos not check if the element to be inverted is zero or not and does not handle the exception that ocurred in the c extension.\n\nThere is a trivial patch that checks if the input is zero or not. I am not sure if the sourronding code should have some _sig_on _sig_off to made it more robust. _sig_on _sig_off would avoid the sage crash but would raise a RunTime exception.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9357\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: SIGFPE, ZeroDivisionError\n\n\n```\nsage: d=QQ[i](0)\nsage: ~d\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\n\nThe code dos not check if the element to be inverted is zero or not and does not handle the exception that ocurred in the c extension.\n\nThere is a trivial patch that checks if the input is zero or not. I am not sure if the sourronding code should have some _sig_on _sig_off to made it more robust. _sig_on _sig_off would avoid the sage crash but would raise a RunTime exception.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9357\n\n",
     "created_at": "2010-06-28T16:18:05Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009357.json:
     "title": "Unhandled SIGFPE: in number_field_element_quadratic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9357",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: SIGFPE, ZeroDivisionError
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9357
 archive/issue_comments_088840.json:
 ```json
 {
-    "body": "Attachment [trac_9357.patch](tarball://root/attachments/some-uuid/ticket9357/trac_9357.patch) by lftabera created at 2010-06-28 16:45:24",
+    "body": "Attachment [trac_9357.patch](tarball://root/attachments/some-uuid/ticket9357/trac_9357.patch) by @lftabera created at 2010-06-28 16:45:24",
     "created_at": "2010-06-28T16:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9357#issuecomment-88840",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [trac_9357.patch](tarball://root/attachments/some-uuid/ticket9357/trac_9357.patch) by lftabera created at 2010-06-28 16:45:24
+Attachment [trac_9357.patch](tarball://root/attachments/some-uuid/ticket9357/trac_9357.patch) by @lftabera created at 2010-06-28 16:45:24
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_088841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9357#issuecomment-88841",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_088842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9357#issuecomment-88842",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_088843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9357#issuecomment-88843",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

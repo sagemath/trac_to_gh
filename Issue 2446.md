@@ -3,7 +3,7 @@
 archive/issues_002446.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: algebras modules\n\nMost files in sage/algebras have little or no docstrings and almost no doctests.  This patch makes a start on remedying this, but there is a lot more to be done.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2446\n\n",
+    "body": "Assignee: @malb\n\nKeywords: algebras modules\n\nMost files in sage/algebras have little or no docstrings and almost no doctests.  This patch makes a start on remedying this, but there is a lot more to be done.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2446\n\n",
     "created_at": "2008-03-09T21:22:36Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_002446.json:
     "title": "algebras module lacks many docstrings and tests (score 15.7%)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2446",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: algebras modules
 
@@ -40,7 +40,7 @@ archive/issue_comments_016537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2446#issuecomment-16537",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

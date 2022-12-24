@@ -14,7 +14,7 @@ archive/issues_005694.json:
     "title": "[with patch; needs review] _ for previous output is completely broken in the notebook due to the preparser",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5694",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5694
 archive/issue_comments_044515.json:
 ```json
 {
-    "body": "Attachment [trac_5694.patch](tarball://root/attachments/some-uuid/ticket5694/trac_5694.patch) by was created at 2009-04-06 18:11:38",
+    "body": "Attachment [trac_5694.patch](tarball://root/attachments/some-uuid/ticket5694/trac_5694.patch) by @williamstein created at 2009-04-06 18:11:38",
     "created_at": "2009-04-06T18:11:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5694#issuecomment-44515",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5694.patch](tarball://root/attachments/some-uuid/ticket5694/trac_5694.patch) by was created at 2009-04-06 18:11:38
+Attachment [trac_5694.patch](tarball://root/attachments/some-uuid/ticket5694/trac_5694.patch) by @williamstein created at 2009-04-06 18:11:38
 
 
 

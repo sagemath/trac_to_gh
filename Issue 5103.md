@@ -14,7 +14,7 @@ archive/issues_005103.json:
     "title": "setup.py: dependency checking does not ignore comments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5103",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -54,7 +54,7 @@ archive/issue_comments_038970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5103#issuecomment-38970",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_038971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5103#issuecomment-38971",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004104.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe attached patch adds a plot_slope_field function and also exposes a bit more of the quiver API to the vector field plotting routines.  I wish I had had this when I started teaching differential equations!\n\nIssue created by migration from https://trac.sagemath.org/ticket/4104\n\n",
+    "body": "Assignee: @williamstein\n\nThe attached patch adds a plot_slope_field function and also exposes a bit more of the quiver API to the vector field plotting routines.  I wish I had had this when I started teaching differential equations!\n\nIssue created by migration from https://trac.sagemath.org/ticket/4104\n\n",
     "created_at": "2008-09-12T04:15:51Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004104.json:
     "title": "Create plot_slope_field function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4104",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The attached patch adds a plot_slope_field function and also exposes a bit more of the quiver API to the vector field plotting routines.  I wish I had had this when I started teaching differential equations!
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4104
 archive/issue_comments_029717.json:
 ```json
 {
-    "body": "Attachment [plot_slope_field.patch](tarball://root/attachments/some-uuid/ticket4104/plot_slope_field.patch) by jason created at 2008-09-12 04:16:01",
+    "body": "Attachment [plot_slope_field.patch](tarball://root/attachments/some-uuid/ticket4104/plot_slope_field.patch) by @jasongrout created at 2008-09-12 04:16:01",
     "created_at": "2008-09-12T04:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4104#issuecomment-29717",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [plot_slope_field.patch](tarball://root/attachments/some-uuid/ticket4104/plot_slope_field.patch) by jason created at 2008-09-12 04:16:01
+Attachment [plot_slope_field.patch](tarball://root/attachments/some-uuid/ticket4104/plot_slope_field.patch) by @jasongrout created at 2008-09-12 04:16:01
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_029718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4104#issuecomment-29718",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_029719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4104#issuecomment-29719",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_029720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4104#issuecomment-29720",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_029721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4104#issuecomment-29721",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_029722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4104#issuecomment-29722",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_029723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4104#issuecomment-29723",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_029724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4104#issuecomment-29724",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

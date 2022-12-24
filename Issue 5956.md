@@ -3,7 +3,7 @@
 archive/issues_005956.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\nKeywords: image dimensions, figsize\n\nAs discussed at this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/c411254b7bc0bb97), the optional argument `figsize` of the command `show()` needs to clearly state that the units of the image are in inches. As of Sage 3.4.1, the docstring for `show()` says:\n\n```\n- ``figsize``- [width, height] (same for square aspect)\n```\n\nwhich can be interpreted to mean that one can do something like `figsize=[w,h]`. But something like the following produces a segmentation fault:\n\n```\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: q = var(\"q\")\nsage: f(q) = (q^4 - q^2 + 1) * (q^4 + q^3 + q^2 + q + 1) * (q^4 - q^3 \\\n+ q^2 - q + 1) * (q^6 + q^5 + q^4 + q^3 + q^2 + q + 1) * (q^6 - q^5 + \\\nq^4 - q^3 + q^2 - q + 1) * (q^(20) - q^(18) - q^(14) - q^(12) + q^(10) \\\n- q^8 - q^6 - q^2 + 1)\nsage: g(q) = q^8 * (q^4 + q^2 + 1)^2 * (q^4 + 1)^5\nsage: p = complex_plot(f/g, (-2,2), (-2,2))\nsage: p.show(figsize=[256,256])\n```\n\nwhile the following results in a `ValueError`:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: q = var(\"q\")\nsage: f(q) = (q^4 - q^2 + 1) * (q^4 + q^3 + q^2 + q + 1) * (q^4 - q^3 \\\n+ q^2 - q + 1) * (q^6 + q^5 + q^4 + q^3 + q^2 + q + 1) * (q^6 - q^5 + \\\nq^4 - q^3 + q^2 - q + 1) * (q^(20) - q^(18) - q^(14) - q^(12) + q^(10) \\\n- q^8 - q^6 - q^2 + 1)\nsage: g(q) = q^8 * (q^4 + q^2 + 1)^2 * (q^4 + 1)^5\nsage: p = complex_plot(f/g, (-2,2), (-2,2))\nsage: p.show(figsize=[500,500])\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: width and height must each be below 32768\n```\n\nEssentially, the documentation for `show()` needs to be updated, especially the optional arguments, to clearly explain the units of measurement of the width and height of the image size. Also, it would be a good idea to specify how one can pass in values for those dimensions. For example, can one do this `figsize=[124,124]`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5956\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: image dimensions, figsize\n\nAs discussed at this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/c411254b7bc0bb97), the optional argument `figsize` of the command `show()` needs to clearly state that the units of the image are in inches. As of Sage 3.4.1, the docstring for `show()` says:\n\n```\n- ``figsize``- [width, height] (same for square aspect)\n```\n\nwhich can be interpreted to mean that one can do something like `figsize=[w,h]`. But something like the following produces a segmentation fault:\n\n```\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: q = var(\"q\")\nsage: f(q) = (q^4 - q^2 + 1) * (q^4 + q^3 + q^2 + q + 1) * (q^4 - q^3 \\\n+ q^2 - q + 1) * (q^6 + q^5 + q^4 + q^3 + q^2 + q + 1) * (q^6 - q^5 + \\\nq^4 - q^3 + q^2 - q + 1) * (q^(20) - q^(18) - q^(14) - q^(12) + q^(10) \\\n- q^8 - q^6 - q^2 + 1)\nsage: g(q) = q^8 * (q^4 + q^2 + 1)^2 * (q^4 + 1)^5\nsage: p = complex_plot(f/g, (-2,2), (-2,2))\nsage: p.show(figsize=[256,256])\n```\n\nwhile the following results in a `ValueError`:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: q = var(\"q\")\nsage: f(q) = (q^4 - q^2 + 1) * (q^4 + q^3 + q^2 + q + 1) * (q^4 - q^3 \\\n+ q^2 - q + 1) * (q^6 + q^5 + q^4 + q^3 + q^2 + q + 1) * (q^6 - q^5 + \\\nq^4 - q^3 + q^2 - q + 1) * (q^(20) - q^(18) - q^(14) - q^(12) + q^(10) \\\n- q^8 - q^6 - q^2 + 1)\nsage: g(q) = q^8 * (q^4 + q^2 + 1)^2 * (q^4 + 1)^5\nsage: p = complex_plot(f/g, (-2,2), (-2,2))\nsage: p.show(figsize=[500,500])\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: width and height must each be below 32768\n```\n\nEssentially, the documentation for `show()` needs to be updated, especially the optional arguments, to clearly explain the units of measurement of the width and height of the image size. Also, it would be a good idea to specify how one can pass in values for those dimensions. For example, can one do this `figsize=[124,124]`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5956\n\n",
     "created_at": "2009-05-01T07:17:25Z",
     "labels": [
         "graphics",
@@ -17,9 +17,9 @@ archive/issues_005956.json:
     "user": "mvngu"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Keywords: image dimensions, figsize
 
@@ -82,7 +82,7 @@ archive/issue_comments_047109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47109",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_047112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47112",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_047113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47113",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_047116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47116",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_047117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47117",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_047118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47118",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_047120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47120",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_047121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47121",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -462,16 +462,16 @@ Attachment [trac_5956_figsize_units.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_047123.json:
 ```json
 {
-    "body": "Attachment [trac_5956_figsize_units.1.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956_figsize_units.1.patch) by ppurka created at 2013-02-02 08:42:37\n\napply only this",
+    "body": "Attachment [trac_5956_figsize_units.1.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956_figsize_units.1.patch) by @ppurka created at 2013-02-02 08:42:37\n\napply only this",
     "created_at": "2013-02-02T08:42:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47123",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [trac_5956_figsize_units.1.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956_figsize_units.1.patch) by ppurka created at 2013-02-02 08:42:37
+Attachment [trac_5956_figsize_units.1.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956_figsize_units.1.patch) by @ppurka created at 2013-02-02 08:42:37
 
 apply only this
 
@@ -482,16 +482,16 @@ apply only this
 archive/issue_comments_047124.json:
 ```json
 {
-    "body": "Attachment [only_for_review.patch](tarball://root/attachments/some-uuid/ticket5956/only_for_review.patch) by ppurka created at 2013-02-02 08:43:03\n\nnot to be merged. only for review.",
+    "body": "Attachment [only_for_review.patch](tarball://root/attachments/some-uuid/ticket5956/only_for_review.patch) by @ppurka created at 2013-02-02 08:43:03\n\nnot to be merged. only for review.",
     "created_at": "2013-02-02T08:43:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47124",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [only_for_review.patch](tarball://root/attachments/some-uuid/ticket5956/only_for_review.patch) by ppurka created at 2013-02-02 08:43:03
+Attachment [only_for_review.patch](tarball://root/attachments/some-uuid/ticket5956/only_for_review.patch) by @ppurka created at 2013-02-02 08:43:03
 
 not to be merged. only for review.
 
@@ -507,7 +507,7 @@ archive/issue_comments_047125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47125",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_047126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47126",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_047127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47127",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -569,7 +569,7 @@ archive/issue_comments_047128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47128",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -587,7 +587,7 @@ archive/issue_comments_047129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47129",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -602,16 +602,16 @@ I'll add a reviewer patch momentarily.
 archive/issue_comments_047130.json:
 ```json
 {
-    "body": "Attachment [trac_5956-reviewer.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956-reviewer.patch) by kcrisman created at 2013-03-23 02:24:38\n\nI think this needs some review, since I add some assertions and so forth.   I hope this clarifies things more, though, and adds doc in the main plot page where it is probably needed.\n\nppurka, if you are an author too, feel free to add yourself.  Positive review to everything before my patch.\n\nPatchbot: apply trac_5956_figsize_units.1.patch and trac_5956-reviewer.patch to devel/sage.",
+    "body": "Attachment [trac_5956-reviewer.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956-reviewer.patch) by @kcrisman created at 2013-03-23 02:24:38\n\nI think this needs some review, since I add some assertions and so forth.   I hope this clarifies things more, though, and adds doc in the main plot page where it is probably needed.\n\nppurka, if you are an author too, feel free to add yourself.  Positive review to everything before my patch.\n\nPatchbot: apply trac_5956_figsize_units.1.patch and trac_5956-reviewer.patch to devel/sage.",
     "created_at": "2013-03-23T02:24:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47130",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_5956-reviewer.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956-reviewer.patch) by kcrisman created at 2013-03-23 02:24:38
+Attachment [trac_5956-reviewer.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956-reviewer.patch) by @kcrisman created at 2013-03-23 02:24:38
 
 I think this needs some review, since I add some assertions and so forth.   I hope this clarifies things more, though, and adds doc in the main plot page where it is probably needed.
 
@@ -631,7 +631,7 @@ archive/issue_comments_047131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47131",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -656,7 +656,7 @@ archive/issue_comments_047132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47132",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -674,7 +674,7 @@ archive/issue_comments_047133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47133",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -694,7 +694,7 @@ archive/issue_comments_047134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47134",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -712,7 +712,7 @@ archive/issue_comments_047135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47135",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -731,7 +731,7 @@ archive/issue_comments_047136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47136",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -758,7 +758,7 @@ archive/issue_comments_047137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47137",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -776,7 +776,7 @@ archive/issue_comments_047138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47138",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -802,7 +802,7 @@ archive/issue_comments_047139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47139",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -820,7 +820,7 @@ archive/issue_comments_047140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47140",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -845,7 +845,7 @@ archive/issue_comments_047141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47141",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -865,7 +865,7 @@ archive/issue_comments_047142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47142",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -883,7 +883,7 @@ archive/issue_comments_047143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47143",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -910,7 +910,7 @@ archive/issue_comments_047144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47144",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -928,7 +928,7 @@ archive/issue_comments_047145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47145",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -954,7 +954,7 @@ archive/issue_comments_047146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47146",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -992,7 +992,7 @@ archive/issue_comments_047148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47148",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1012,7 +1012,7 @@ archive/issue_comments_047149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47149",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1030,7 +1030,7 @@ archive/issue_comments_047150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47150",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1076,7 +1076,7 @@ archive/issue_comments_047151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47151",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1112,7 +1112,7 @@ archive/issue_comments_047153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47153",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1130,7 +1130,7 @@ archive/issue_comments_047154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47154",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1148,7 +1148,7 @@ archive/issue_comments_047155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47155",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1166,7 +1166,7 @@ archive/issue_comments_047156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47156",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1184,7 +1184,7 @@ archive/issue_comments_047157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47157",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1202,7 +1202,7 @@ archive/issue_comments_047158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47158",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

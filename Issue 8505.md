@@ -3,7 +3,7 @@
 archive/issues_008505.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nThis is because it chooses only the first of the (usually) two possible lifts of a random x. Computing both is not more expensive, and this avoids the (expensive) exception creation and throwing as well. \n\nMay have a bit of fuzz with #8311.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8505\n\n",
+    "body": "Assignee: @JohnCremona\n\nThis is because it chooses only the first of the (usually) two possible lifts of a random x. Computing both is not more expensive, and this avoids the (expensive) exception creation and throwing as well. \n\nMay have a bit of fuzz with #8311.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8505\n\n",
     "created_at": "2010-03-12T00:34:32Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_008505.json:
     "title": "random points on elliptic curve misses half the group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8505",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 This is because it chooses only the first of the (usually) two possible lifts of a random x. Computing both is not more expensive, and this avoids the (expensive) exception creation and throwing as well. 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8505
 archive/issue_comments_076786.json:
 ```json
 {
-    "body": "Attachment [8505-ell-finite-random.patch](tarball://root/attachments/some-uuid/ticket8505/8505-ell-finite-random.patch) by robertwb created at 2010-03-12 00:35:53",
+    "body": "Attachment [8505-ell-finite-random.patch](tarball://root/attachments/some-uuid/ticket8505/8505-ell-finite-random.patch) by @robertwb created at 2010-03-12 00:35:53",
     "created_at": "2010-03-12T00:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76786",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8505-ell-finite-random.patch](tarball://root/attachments/some-uuid/ticket8505/8505-ell-finite-random.patch) by robertwb created at 2010-03-12 00:35:53
+Attachment [8505-ell-finite-random.patch](tarball://root/attachments/some-uuid/ticket8505/8505-ell-finite-random.patch) by @robertwb created at 2010-03-12 00:35:53
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_076787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76787",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_076788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76788",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_076789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76789",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_076790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76790",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -187,16 +187,16 @@ replaces previous
 archive/issue_comments_076791.json:
 ```json
 {
-    "body": "Attachment [trac_8505-review.patch](tarball://root/attachments/some-uuid/ticket8505/trac_8505-review.patch) by cremona created at 2010-03-12 17:14:00\n\nMy patch (after reviewing and testing the whole sage library) has to be applied *instead* of Robert's, though it still has his tag on it (sorry).  It does two things relative to his:\n1. I changed a few doctest outputs for the random point tests.  I am worried though, since these changes were not only replacing a point by its negative!  Why?\n2. testing with -long revealed a bug in sqrt() for integer-mods: when 0 then the return was 0 and not [0] which broke the new code since it uses the all=true option.  This was *only* revealed in the -long test!  Take note!!\n\nI left this as \"needs review\" since it needs someone else (e.g. robertwb) to check my change, especially the one at 2. above, and also I would like to hear views on my other remark under 1.",
+    "body": "Attachment [trac_8505-review.patch](tarball://root/attachments/some-uuid/ticket8505/trac_8505-review.patch) by @JohnCremona created at 2010-03-12 17:14:00\n\nMy patch (after reviewing and testing the whole sage library) has to be applied *instead* of Robert's, though it still has his tag on it (sorry).  It does two things relative to his:\n1. I changed a few doctest outputs for the random point tests.  I am worried though, since these changes were not only replacing a point by its negative!  Why?\n2. testing with -long revealed a bug in sqrt() for integer-mods: when 0 then the return was 0 and not [0] which broke the new code since it uses the all=true option.  This was *only* revealed in the -long test!  Take note!!\n\nI left this as \"needs review\" since it needs someone else (e.g. robertwb) to check my change, especially the one at 2. above, and also I would like to hear views on my other remark under 1.",
     "created_at": "2010-03-12T17:14:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76791",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8505-review.patch](tarball://root/attachments/some-uuid/ticket8505/trac_8505-review.patch) by cremona created at 2010-03-12 17:14:00
+Attachment [trac_8505-review.patch](tarball://root/attachments/some-uuid/ticket8505/trac_8505-review.patch) by @JohnCremona created at 2010-03-12 17:14:00
 
 My patch (after reviewing and testing the whole sage library) has to be applied *instead* of Robert's, though it still has his tag on it (sorry).  It does two things relative to his:
 1. I changed a few doctest outputs for the random point tests.  I am worried though, since these changes were not only replacing a point by its negative!  Why?
@@ -216,7 +216,7 @@ archive/issue_comments_076792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76792",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_076793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76793",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_076794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76794",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_076795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76795",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -283,16 +283,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076796.json:
 ```json
 {
-    "body": "Attachment [trac_8505-review-post-8507.patch](tarball://root/attachments/some-uuid/ticket8505/trac_8505-review-post-8507.patch) by robertwb created at 2010-03-15 19:18:21\n\nYes, I'm happy with it. I re-posted the patch removing the conflict with #8507, just in case that gets into an alpha before this. \n\nRelease manager: exactly one of `trac_8505-review.patch` or `trac_8505-review-post-8507.patch` should be applied.",
+    "body": "Attachment [trac_8505-review-post-8507.patch](tarball://root/attachments/some-uuid/ticket8505/trac_8505-review-post-8507.patch) by @robertwb created at 2010-03-15 19:18:21\n\nYes, I'm happy with it. I re-posted the patch removing the conflict with #8507, just in case that gets into an alpha before this. \n\nRelease manager: exactly one of `trac_8505-review.patch` or `trac_8505-review-post-8507.patch` should be applied.",
     "created_at": "2010-03-15T19:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76796",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac_8505-review-post-8507.patch](tarball://root/attachments/some-uuid/ticket8505/trac_8505-review-post-8507.patch) by robertwb created at 2010-03-15 19:18:21
+Attachment [trac_8505-review-post-8507.patch](tarball://root/attachments/some-uuid/ticket8505/trac_8505-review-post-8507.patch) by @robertwb created at 2010-03-15 19:18:21
 
 Yes, I'm happy with it. I re-posted the patch removing the conflict with #8507, just in case that gets into an alpha before this. 
 
@@ -310,7 +310,7 @@ archive/issue_comments_076797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76797",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_076798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76798",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -341,16 +341,16 @@ This (" trac_8505-review-post-8507.patch") doesn't apply cleanly to 4.3.5 or to 
 archive/issue_comments_076799.json:
 ```json
 {
-    "body": "Attachment [8505-ell-finite-random-rebased.patch](tarball://root/attachments/some-uuid/ticket8505/8505-ell-finite-random-rebased.patch) by robertwb created at 2010-04-17 19:26:45\n\nRebased on 4.4.alpha0",
+    "body": "Attachment [8505-ell-finite-random-rebased.patch](tarball://root/attachments/some-uuid/ticket8505/8505-ell-finite-random-rebased.patch) by @robertwb created at 2010-04-17 19:26:45\n\nRebased on 4.4.alpha0",
     "created_at": "2010-04-17T19:26:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76799",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8505-ell-finite-random-rebased.patch](tarball://root/attachments/some-uuid/ticket8505/8505-ell-finite-random-rebased.patch) by robertwb created at 2010-04-17 19:26:45
+Attachment [8505-ell-finite-random-rebased.patch](tarball://root/attachments/some-uuid/ticket8505/8505-ell-finite-random-rebased.patch) by @robertwb created at 2010-04-17 19:26:45
 
 Rebased on 4.4.alpha0
 
@@ -366,7 +366,7 @@ archive/issue_comments_076800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76800",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_076801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76801",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_076802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76802",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_076803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76803",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_076804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8505#issuecomment-76804",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000380.json:
 ```json
 {
-    "body": "Assignee: was\n\nDimitar Jetchev found the following bug:\n\n\n```\nsage: k.<a> = NumberField(x^2+1); k\nNumber Field in a with defining polynomial x^2 + 1\nsage: m.<b> = k.extension(y^2+1); m\n```\n\n\nand it fails .... it says: variable name should be alphanumeric.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/380\n\n",
+    "body": "Assignee: @williamstein\n\nDimitar Jetchev found the following bug:\n\n\n```\nsage: k.<a> = NumberField(x^2+1); k\nNumber Field in a with defining polynomial x^2 + 1\nsage: m.<b> = k.extension(y^2+1); m\n```\n\n\nand it fails .... it says: variable name should be alphanumeric.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/380\n\n",
     "created_at": "2007-05-26T02:29:56Z",
     "labels": [
         "number theory",
@@ -13,10 +13,10 @@ archive/issues_000380.json:
     "title": "bug when defining a relative extension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/380",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Dimitar Jetchev found the following bug:
 
@@ -48,7 +48,7 @@ archive/issue_comments_001842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/380#issuecomment-1842",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_001843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/380#issuecomment-1843",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

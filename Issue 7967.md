@@ -14,7 +14,7 @@ archive/issues_007967.json:
     "title": "DeprecationWarning for popen3 in hg_sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7967",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: tbd
@@ -44,7 +44,7 @@ archive/issue_comments_069511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7967#issuecomment-69511",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -57,16 +57,16 @@ Changing status from new to needs_review.
 archive/issue_comments_069512.json:
 ```json
 {
-    "body": "Attachment [7967_popen3.patch](tarball://root/attachments/some-uuid/ticket7967/7967_popen3.patch) by timdumol created at 2010-01-17 19:19:07\n\nGood job; looks good.",
+    "body": "Attachment [7967_popen3.patch](tarball://root/attachments/some-uuid/ticket7967/7967_popen3.patch) by @TimDumol created at 2010-01-17 19:19:07\n\nGood job; looks good.",
     "created_at": "2010-01-17T19:19:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7967#issuecomment-69512",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [7967_popen3.patch](tarball://root/attachments/some-uuid/ticket7967/7967_popen3.patch) by timdumol created at 2010-01-17 19:19:07
+Attachment [7967_popen3.patch](tarball://root/attachments/some-uuid/ticket7967/7967_popen3.patch) by @TimDumol created at 2010-01-17 19:19:07
 
 Good job; looks good.
 
@@ -82,7 +82,7 @@ archive/issue_comments_069513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7967#issuecomment-69513",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_069514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7967#issuecomment-69514",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

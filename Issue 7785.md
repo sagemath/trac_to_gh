@@ -3,7 +3,7 @@
 archive/issues_007785.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7785\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7785\n\n",
     "created_at": "2009-12-29T09:14:15Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007785.json:
     "title": "notebook -- include version >= 0.4.9 in sage-4.3.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7785",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_067141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7785#issuecomment-67141",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_067142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7785#issuecomment-67142",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_067143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7785#issuecomment-67143",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_067144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7785#issuecomment-67144",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_067145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7785#issuecomment-67145",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

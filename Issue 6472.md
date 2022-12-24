@@ -66,7 +66,7 @@ archive/issue_comments_052320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6472#issuecomment-52320",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_052323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6472#issuecomment-52323",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_052325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6472#issuecomment-52325",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_052326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6472#issuecomment-52326",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_052327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6472#issuecomment-52327",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_052328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6472#issuecomment-52328",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008610.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThere is a bug in caching, which this fixes.  Also, I add a missing doctest to get coverage to 100% on that file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8610\n\n",
+    "body": "Assignee: @craigcitro\n\nThere is a bug in caching, which this fixes.  Also, I add a missing doctest to get coverage to 100% on that file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8610\n\n",
     "created_at": "2010-03-26T02:00:35Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_008610.json:
     "title": "fix caching bug in modular/modsym/element.pyx (very easy to review!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8610",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 There is a bug in caching, which this fixes.  Also, I add a missing doctest to get coverage to 100% on that file.
 
@@ -37,7 +37,7 @@ archive/issue_comments_078000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8610#issuecomment-78000",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_078001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8610#issuecomment-78001",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_078002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8610#issuecomment-78002",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -86,16 +86,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_078003.json:
 ```json
 {
-    "body": "Attachment [trac_8610.patch](tarball://root/attachments/some-uuid/ticket8610/trac_8610.patch) by AlexGhitza created at 2010-03-26 03:52:11\n\nLooks good to me.  Passes tests, etc.",
+    "body": "Attachment [trac_8610.patch](tarball://root/attachments/some-uuid/ticket8610/trac_8610.patch) by @aghitza created at 2010-03-26 03:52:11\n\nLooks good to me.  Passes tests, etc.",
     "created_at": "2010-03-26T03:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8610#issuecomment-78003",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_8610.patch](tarball://root/attachments/some-uuid/ticket8610/trac_8610.patch) by AlexGhitza created at 2010-03-26 03:52:11
+Attachment [trac_8610.patch](tarball://root/attachments/some-uuid/ticket8610/trac_8610.patch) by @aghitza created at 2010-03-26 03:52:11
 
 Looks good to me.  Passes tests, etc.
 
@@ -111,7 +111,7 @@ archive/issue_comments_078004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8610#issuecomment-78004",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_078005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8610#issuecomment-78005",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

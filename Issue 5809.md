@@ -3,7 +3,7 @@
 archive/issues_005809.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: hypersurface\n\nThe file has zero doctests, imports nonexisting classes and looks like it's never been used.\n\nI'm attaching a patch that implements only the basic constructors and properties of projective and affine hypersurfaces, with 100% doctest coverage (of course :)\n\nI plan to add some more interesting functionality later, but this is a start.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5809\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: hypersurface\n\nThe file has zero doctests, imports nonexisting classes and looks like it's never been used.\n\nI'm attaching a patch that implements only the basic constructors and properties of projective and affine hypersurfaces, with 100% doctest coverage (of course :)\n\nI plan to add some more interesting functionality later, but this is a start.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5809\n\n",
     "created_at": "2009-04-17T10:44:25Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_005809.json:
     "title": "schemes/generic/hypersurface.py is completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5809",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: hypersurface
 
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5809
 archive/issue_comments_045624.json:
 ```json
 {
-    "body": "Attachment [trac_5809.patch](tarball://root/attachments/some-uuid/ticket5809/trac_5809.patch) by AlexGhitza created at 2009-04-17 10:46:27",
+    "body": "Attachment [trac_5809.patch](tarball://root/attachments/some-uuid/ticket5809/trac_5809.patch) by @aghitza created at 2009-04-17 10:46:27",
     "created_at": "2009-04-17T10:46:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5809#issuecomment-45624",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5809.patch](tarball://root/attachments/some-uuid/ticket5809/trac_5809.patch) by AlexGhitza created at 2009-04-17 10:46:27
+Attachment [trac_5809.patch](tarball://root/attachments/some-uuid/ticket5809/trac_5809.patch) by @aghitza created at 2009-04-17 10:46:27
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_045625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5809#issuecomment-45625",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_045626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5809#issuecomment-45626",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -93,16 +93,16 @@ apply after the main patch
 archive/issue_comments_045627.json:
 ```json
 {
-    "body": "Attachment [trac_5809-review.patch](tarball://root/attachments/some-uuid/ticket5809/trac_5809-review.patch) by cremona created at 2009-04-18 16:12:11\n\nPositive review!\n\nI added this to the reference manual which required a little tweaking (the EXAMPLES in an __init__ docstring are excluded from the manual since the function name starts with an underscore;  what works well is to copy the same examples into the class's own docstring, then they get into the manual).\n\nI tested that the docs now build ok and look ok in the html ref manual.\n\nI guess Alex should ok the extra patch.",
+    "body": "Attachment [trac_5809-review.patch](tarball://root/attachments/some-uuid/ticket5809/trac_5809-review.patch) by @JohnCremona created at 2009-04-18 16:12:11\n\nPositive review!\n\nI added this to the reference manual which required a little tweaking (the EXAMPLES in an __init__ docstring are excluded from the manual since the function name starts with an underscore;  what works well is to copy the same examples into the class's own docstring, then they get into the manual).\n\nI tested that the docs now build ok and look ok in the html ref manual.\n\nI guess Alex should ok the extra patch.",
     "created_at": "2009-04-18T16:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5809#issuecomment-45627",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5809-review.patch](tarball://root/attachments/some-uuid/ticket5809/trac_5809-review.patch) by cremona created at 2009-04-18 16:12:11
+Attachment [trac_5809-review.patch](tarball://root/attachments/some-uuid/ticket5809/trac_5809-review.patch) by @JohnCremona created at 2009-04-18 16:12:11
 
 Positive review!
 
@@ -124,7 +124,7 @@ archive/issue_comments_045628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5809#issuecomment-45628",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

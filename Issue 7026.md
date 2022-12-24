@@ -3,7 +3,7 @@
 archive/issues_007026.json:
 ```json
 {
-    "body": "Assignee: cpernet\n\nWhen using the Sun compiler with sage-4.1.2.alpha2, linbox 1.1.6.p0 seems to think GMP is not installed, even though the substitute mpir is installed. See below.\n\nThis is very similar to #7025, which occurs with givaro. \n\nAll these files actually exist\n\n\n```\nlocal/include/gmp.h\nlocal/include/gmpxx.h\nlocal/lib/libgmp.la\nlocal/lib/libgmp.so\nlocal/lib/libgmp.so.3\nlocal/lib/libgmp.so.3.4.4\nlocal/lib/libgmpxx.la\nlocal/lib/libgmpxx.so\nlocal/lib/libgmpxx.so.3\nlocal/lib/libgmpxx.so.3.1.4\n```\n\n\nHere's the error:\n\n\n```\n\nchecking size of long long... 8\nchecking for __int64... no\nchecking size of __int64... 0\nchecking whether byte ordering is bigendian... yes\nDefault path = /usr /usr/local\nchecking whether to compile the drivers... no\nchecking for GMP >= 3.1.1... *******************************************************************************\n ERROR: GMP not found!\n\n GMP version 3.1.1 or greater with --enable-cxx is required for this library to compile. Please\n make sure GMP is installed and specify its location with the option\n --with-gmp=<prefix> when running configure.\n*******************************************************************************\nError configuring linbox\n\nreal    0m29.178s\nuser    0m7.691s\nsys     0m12.302s\nsage: An error occurred while installing linbox-1.1.6.p0\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7026\n\n",
+    "body": "Assignee: @ClementPernet\n\nWhen using the Sun compiler with sage-4.1.2.alpha2, linbox 1.1.6.p0 seems to think GMP is not installed, even though the substitute mpir is installed. See below.\n\nThis is very similar to #7025, which occurs with givaro. \n\nAll these files actually exist\n\n\n```\nlocal/include/gmp.h\nlocal/include/gmpxx.h\nlocal/lib/libgmp.la\nlocal/lib/libgmp.so\nlocal/lib/libgmp.so.3\nlocal/lib/libgmp.so.3.4.4\nlocal/lib/libgmpxx.la\nlocal/lib/libgmpxx.so\nlocal/lib/libgmpxx.so.3\nlocal/lib/libgmpxx.so.3.1.4\n```\n\n\nHere's the error:\n\n\n```\n\nchecking size of long long... 8\nchecking for __int64... no\nchecking size of __int64... 0\nchecking whether byte ordering is bigendian... yes\nDefault path = /usr /usr/local\nchecking whether to compile the drivers... no\nchecking for GMP >= 3.1.1... *******************************************************************************\n ERROR: GMP not found!\n\n GMP version 3.1.1 or greater with --enable-cxx is required for this library to compile. Please\n make sure GMP is installed and specify its location with the option\n --with-gmp=<prefix> when running configure.\n*******************************************************************************\nError configuring linbox\n\nreal    0m29.178s\nuser    0m7.691s\nsys     0m12.302s\nsage: An error occurred while installing linbox-1.1.6.p0\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7026\n\n",
     "created_at": "2009-09-27T11:33:31Z",
     "labels": [
         "linbox",
@@ -17,7 +17,7 @@ archive/issues_007026.json:
     "user": "drkirkby"
 }
 ```
-Assignee: cpernet
+Assignee: @ClementPernet
 
 When using the Sun compiler with sage-4.1.2.alpha2, linbox 1.1.6.p0 seems to think GMP is not installed, even though the substitute mpir is installed. See below.
 
@@ -246,7 +246,7 @@ archive/issue_comments_058182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58182",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_058183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58183",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_058184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58184",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_058185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58185",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

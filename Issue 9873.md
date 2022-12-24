@@ -3,7 +3,7 @@
 archive/issues_009873.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  ktkohl rws kcrisman pelegm\n\nWe should define a new symbolic function for the derivative of `ceil` or `floor`. \n\nIn Maple:\n\n\n```\n> diff(floor(x),x);\n                                  floor(1, x)\n> diff(floor(x),x,x);\n                                  floor(1, x)\n> diff(ceil(x),x,x); \n                                  floor(1, x)\n> eval(diff(ceil(x),x,x),x=1.5);\n                                       0\n> eval(diff(ceil(x),x,x),x=0);  \nError, (in floor) floor is not differentiable at integers\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9874\n\n",
+    "body": "Assignee: @burcin\n\nCC:  ktkohl @rwst @kcrisman @pelegm\n\nWe should define a new symbolic function for the derivative of `ceil` or `floor`. \n\nIn Maple:\n\n\n```\n> diff(floor(x),x);\n                                  floor(1, x)\n> diff(floor(x),x,x);\n                                  floor(1, x)\n> diff(ceil(x),x,x); \n                                  floor(1, x)\n> eval(diff(ceil(x),x,x),x=1.5);\n                                       0\n> eval(diff(ceil(x),x,x),x=0);  \nError, (in floor) floor is not differentiable at integers\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9874\n\n",
     "created_at": "2010-09-08T11:41:23Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009873.json:
     "title": "add a function for the derivative of ceil and floor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9873",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  ktkohl rws kcrisman pelegm
+CC:  ktkohl @rwst @kcrisman @pelegm
 
 We should define a new symbolic function for the derivative of `ceil` or `floor`. 
 
@@ -105,7 +105,7 @@ archive/issue_comments_097697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9873#issuecomment-97697",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009607.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  ddrake jhpalmieri mvngu rbeezer\n\nSeen on sage.math and bsd.math with Sage 4.5.2.alpha1:\n\n```python\nsage -t -long  devel/sage/doc/en/tutorial/latex.rst\n**********************************************************************\nFile \"/Users/mpatel/apps/sage-4.5.2.alpha1/devel/sage-main/doc/en/tutorial/latex\n.rst\", line 459:\n    sage: latex.extra_preamble()\nExpected:\n    '\\\\usepackage{tikz}\\n\\\\usepackage{tkz-graph}\\n\\\\usepackage{tkz-berge}\\n'\nGot:\n    '\\\\usepackage{tikz}\\n'\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_11\n***Test Failed*** 1 failures.\n```\n\n\nThis may be caused by #9027.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9607\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @dandrake @jhpalmieri mvngu @rbeezer\n\nSeen on sage.math and bsd.math with Sage 4.5.2.alpha1:\n\n```python\nsage -t -long  devel/sage/doc/en/tutorial/latex.rst\n**********************************************************************\nFile \"/Users/mpatel/apps/sage-4.5.2.alpha1/devel/sage-main/doc/en/tutorial/latex\n.rst\", line 459:\n    sage: latex.extra_preamble()\nExpected:\n    '\\\\usepackage{tikz}\\n\\\\usepackage{tkz-graph}\\n\\\\usepackage{tkz-berge}\\n'\nGot:\n    '\\\\usepackage{tikz}\\n'\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_11\n***Test Failed*** 1 failures.\n```\n\n\nThis may be caused by #9027.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9607\n\n",
     "created_at": "2010-07-27T07:00:47Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009607.json:
     "title": "Doctest failure in latex.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9607",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  ddrake jhpalmieri mvngu rbeezer
+CC:  @dandrake @jhpalmieri mvngu @rbeezer
 
 Seen on sage.math and bsd.math with Sage 4.5.2.alpha1:
 
@@ -58,7 +58,7 @@ archive/issue_comments_093060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9607#issuecomment-93060",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_093061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9607#issuecomment-93061",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_093062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9607#issuecomment-93062",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -123,16 +123,16 @@ Got:
 archive/issue_comments_093063.json:
 ```json
 {
-    "body": "Attachment [trac_9607-tikz-latex-missing.patch](tarball://root/attachments/some-uuid/ticket9607/trac_9607-tikz-latex-missing.patch) by rbeezer created at 2010-07-27 15:09:29\n\nPatch marks the test as random, which I think is the right thing to do, not just an expedient.\n\nThere is no way to know what extra packages a system will have, and this block of code is meant more as an illustration than as a test.  So in particular, the line in question could even be removed, but then there would be less of the behavior documented.",
+    "body": "Attachment [trac_9607-tikz-latex-missing.patch](tarball://root/attachments/some-uuid/ticket9607/trac_9607-tikz-latex-missing.patch) by @rbeezer created at 2010-07-27 15:09:29\n\nPatch marks the test as random, which I think is the right thing to do, not just an expedient.\n\nThere is no way to know what extra packages a system will have, and this block of code is meant more as an illustration than as a test.  So in particular, the line in question could even be removed, but then there would be less of the behavior documented.",
     "created_at": "2010-07-27T15:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9607#issuecomment-93063",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9607-tikz-latex-missing.patch](tarball://root/attachments/some-uuid/ticket9607/trac_9607-tikz-latex-missing.patch) by rbeezer created at 2010-07-27 15:09:29
+Attachment [trac_9607-tikz-latex-missing.patch](tarball://root/attachments/some-uuid/ticket9607/trac_9607-tikz-latex-missing.patch) by @rbeezer created at 2010-07-27 15:09:29
 
 Patch marks the test as random, which I think is the right thing to do, not just an expedient.
 
@@ -150,7 +150,7 @@ archive/issue_comments_093064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9607#issuecomment-93064",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_093065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9607#issuecomment-93065",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_093066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9607#issuecomment-93066",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_093067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9607#issuecomment-93067",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_093068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9607#issuecomment-93068",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_093069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9607#issuecomment-93069",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -261,16 +261,16 @@ I'll put the ticket number in the commit string before I make 4.5.2.rc0.
 archive/issue_comments_093070.json:
 ```json
 {
-    "body": "Attachment [trac_9607-tikz-latex-missing-v2.patch](tarball://root/attachments/some-uuid/ticket9607/trac_9607-tikz-latex-missing-v2.patch) by rbeezer created at 2010-07-29 06:07:18",
+    "body": "Attachment [trac_9607-tikz-latex-missing-v2.patch](tarball://root/attachments/some-uuid/ticket9607/trac_9607-tikz-latex-missing-v2.patch) by @rbeezer created at 2010-07-29 06:07:18",
     "created_at": "2010-07-29T06:07:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9607#issuecomment-93070",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9607-tikz-latex-missing-v2.patch](tarball://root/attachments/some-uuid/ticket9607/trac_9607-tikz-latex-missing-v2.patch) by rbeezer created at 2010-07-29 06:07:18
+Attachment [trac_9607-tikz-latex-missing-v2.patch](tarball://root/attachments/some-uuid/ticket9607/trac_9607-tikz-latex-missing-v2.patch) by @rbeezer created at 2010-07-29 06:07:18
 
 
 
@@ -284,7 +284,7 @@ archive/issue_comments_093071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9607#issuecomment-93071",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_093072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9607#issuecomment-93072",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004047.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nAlso known as nonlinear binary codes. This patch sets up the framework needed for matrix automorphism groups, and automorphism groups of nonbinary linear codes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4047\n\n",
+    "body": "Assignee: @rlmill\n\nAlso known as nonlinear binary codes. This patch sets up the framework needed for matrix automorphism groups, and automorphism groups of nonbinary linear codes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4047\n\n",
     "created_at": "2008-09-03T17:40:41Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_004047.json:
     "title": "[with patch, needs review] automorphism groups/canonical labels for hypergraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4047",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Also known as nonlinear binary codes. This patch sets up the framework needed for matrix automorphism groups, and automorphism groups of nonbinary linear codes.
 
@@ -37,7 +37,7 @@ archive/issue_comments_029184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4047#issuecomment-29184",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_029185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4047#issuecomment-29185",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_029186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4047#issuecomment-29186",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -105,16 +105,16 @@ Looks good to me.
 archive/issue_comments_029187.json:
 ```json
 {
-    "body": "Attachment [trac_4047-hypergraphs.patch](tarball://root/attachments/some-uuid/ticket4047/trac_4047-hypergraphs.patch) by mhansen created at 2008-09-05 19:37:04\n\nThe updated patch is good too :-)",
+    "body": "Attachment [trac_4047-hypergraphs.patch](tarball://root/attachments/some-uuid/ticket4047/trac_4047-hypergraphs.patch) by @mwhansen created at 2008-09-05 19:37:04\n\nThe updated patch is good too :-)",
     "created_at": "2008-09-05T19:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4047#issuecomment-29187",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4047-hypergraphs.patch](tarball://root/attachments/some-uuid/ticket4047/trac_4047-hypergraphs.patch) by mhansen created at 2008-09-05 19:37:04
+Attachment [trac_4047-hypergraphs.patch](tarball://root/attachments/some-uuid/ticket4047/trac_4047-hypergraphs.patch) by @mwhansen created at 2008-09-05 19:37:04
 
 The updated patch is good too :-)
 

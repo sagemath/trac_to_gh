@@ -3,7 +3,7 @@
 archive/issues_004942.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  kcrisman\n\nReported in http://groups.google.com/group/sage-support/browse_thread/thread/40da8039090c3e8a\n\n\n```\nHi, I'm trying out SAGE for the first time, so I entered what you \nsuggested (see above). \nNow, from the plot, it there seems to be no other roots between 0 and 2 \nso I entered \nsage: find_root(x^2*log(x,2)-1,0, 2) \nand got the root = 0.0 \nwhat am I missing here? \nTIA, \nAJG \n```\n\nBut note the following:\n\n```\nsage: find_root(1/(x-1)+1,0, 2) \n0.0 \nsage: find_root(1/(x-1)+1,0.00001, 2) \n1.0000000000011564 \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4942\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @kcrisman\n\nReported in http://groups.google.com/group/sage-support/browse_thread/thread/40da8039090c3e8a\n\n\n```\nHi, I'm trying out SAGE for the first time, so I entered what you \nsuggested (see above). \nNow, from the plot, it there seems to be no other roots between 0 and 2 \nso I entered \nsage: find_root(x^2*log(x,2)-1,0, 2) \nand got the root = 0.0 \nwhat am I missing here? \nTIA, \nAJG \n```\n\nBut note the following:\n\n```\nsage: find_root(1/(x-1)+1,0, 2) \n0.0 \nsage: find_root(1/(x-1)+1,0.00001, 2) \n1.0000000000011564 \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4942\n\n",
     "created_at": "2009-01-05T20:32:08Z",
     "labels": [
         "numerical",
@@ -19,7 +19,7 @@ archive/issues_004942.json:
 ```
 Assignee: jkantor
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Reported in http://groups.google.com/group/sage-support/browse_thread/thread/40da8039090c3e8a
 
@@ -66,7 +66,7 @@ archive/issue_comments_037504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37504",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -79,16 +79,16 @@ Changing status from new to assigned.
 archive/issue_comments_037505.json:
 ```json
 {
-    "body": "Changing assignee from jkantor to mhansen.",
+    "body": "Changing assignee from jkantor to @mwhansen.",
     "created_at": "2009-01-30T23:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37505",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from jkantor to mhansen.
+Changing assignee from jkantor to @mwhansen.
 
 
 
@@ -126,7 +126,7 @@ archive/issue_comments_037507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37507",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_037510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37510",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_037511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37511",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_037512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37512",
-    "user": "assaferan"
+    "user": "@assaferan"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_037513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37513",
-    "user": "assaferan"
+    "user": "@assaferan"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_037514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37514",
-    "user": "assaferan"
+    "user": "@assaferan"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_037515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37515",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_037518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37518",
-    "user": "assaferan"
+    "user": "@assaferan"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_037519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37519",
-    "user": "assaferan"
+    "user": "@assaferan"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_037520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37520",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_037522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37522",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_037523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37523",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_037524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37524",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

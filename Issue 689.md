@@ -14,7 +14,7 @@ archive/issues_000689.json:
     "title": "modifying preparse.py to benefit from the Python standard tokenize module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/689",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody

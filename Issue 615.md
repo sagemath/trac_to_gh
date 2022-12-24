@@ -3,7 +3,7 @@
 archive/issues_000615.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/615\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/615\n\n",
     "created_at": "2007-09-07T05:14:57Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_000615.json:
     "title": "doctest errors in piecewise.py due to calling a constant function.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/615",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/615
 archive/issue_comments_003155.json:
 ```json
 {
-    "body": "Attachment [615.patch](tarball://root/attachments/some-uuid/ticket615/615.patch) by mhansen created at 2007-09-07 05:18:53",
+    "body": "Attachment [615.patch](tarball://root/attachments/some-uuid/ticket615/615.patch) by @mwhansen created at 2007-09-07 05:18:53",
     "created_at": "2007-09-07T05:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/615#issuecomment-3155",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [615.patch](tarball://root/attachments/some-uuid/ticket615/615.patch) by mhansen created at 2007-09-07 05:18:53
+Attachment [615.patch](tarball://root/attachments/some-uuid/ticket615/615.patch) by @mwhansen created at 2007-09-07 05:18:53
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_003156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/615#issuecomment-3156",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_003157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/615#issuecomment-3157",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002980.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\n```\nsage -t  devel/sage/sage/combinat/root_system/weyl_group.py **********************************************************************\nFile \"/home/wstein/sage-3.0.rc0/tmp/weyl_group.py\", line 235:\n    sage: [WeylGroup(t).long_element().length() for t in ['A',5],['B',3],['C',3],['D',4],['G',2],['F',4],['E',6]]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[1]>\", line 1, in <module>\n        [WeylGroup(t).long_element().length() for t in ['A',Integer(5)],['B',Integer(3)],['C',Integer(3)],['D',Integer(4)],['G',Integer(2)],['F',Integer(\n4)],['E',Integer(6)]]###line 235:\n    sage: [WeylGroup(t).long_element().length() for t in ['A',5],['B',3],['C',3],['D',4],['G',2],['F',4],['E',6]]\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/combinat/root_system/weyl_group.py\", line 271, in long_element\n        return self.__call__(m)\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/combinat/root_system/weyl_group.py\", line 146, in __call__\n        raise TypeError, \"no way to coerce element into self.\"\n    TypeError: no way to coerce element into self.\n**********************************************************************\n1 items had failures:\n   1 of   2 in __main__.example_13\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/sage-3.0.rc0/tmp/.doctest_weyl_group.py\n         [61.1 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2980\n\n",
+    "body": "Assignee: @mwhansen\n\n\n```\nsage -t  devel/sage/sage/combinat/root_system/weyl_group.py **********************************************************************\nFile \"/home/wstein/sage-3.0.rc0/tmp/weyl_group.py\", line 235:\n    sage: [WeylGroup(t).long_element().length() for t in ['A',5],['B',3],['C',3],['D',4],['G',2],['F',4],['E',6]]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[1]>\", line 1, in <module>\n        [WeylGroup(t).long_element().length() for t in ['A',Integer(5)],['B',Integer(3)],['C',Integer(3)],['D',Integer(4)],['G',Integer(2)],['F',Integer(\n4)],['E',Integer(6)]]###line 235:\n    sage: [WeylGroup(t).long_element().length() for t in ['A',5],['B',3],['C',3],['D',4],['G',2],['F',4],['E',6]]\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/combinat/root_system/weyl_group.py\", line 271, in long_element\n        return self.__call__(m)\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/combinat/root_system/weyl_group.py\", line 146, in __call__\n        raise TypeError, \"no way to coerce element into self.\"\n    TypeError: no way to coerce element into self.\n**********************************************************************\n1 items had failures:\n   1 of   2 in __main__.example_13\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/sage-3.0.rc0/tmp/.doctest_weyl_group.py\n         [61.1 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2980\n\n",
     "created_at": "2008-04-21T03:21:13Z",
     "labels": [
         "porting",
@@ -14,10 +14,10 @@ archive/issues_002980.json:
     "title": "itanium (RHEL 5) -- weyl_group.py is broken on itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2980",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 ```
@@ -62,7 +62,7 @@ archive/issue_comments_020525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2980#issuecomment-20525",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

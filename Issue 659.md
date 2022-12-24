@@ -14,7 +14,7 @@ archive/issues_000659.json:
     "title": "ZeroInversions for 0^(-1) [with patch]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/659",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/659
 archive/issue_comments_003428.json:
 ```json
 {
-    "body": "Attachment [zeroinversion1.patch](tarball://root/attachments/some-uuid/ticket659/zeroinversion1.patch) by malb created at 2007-09-15 13:07:15",
+    "body": "Attachment [zeroinversion1.patch](tarball://root/attachments/some-uuid/ticket659/zeroinversion1.patch) by @malb created at 2007-09-15 13:07:15",
     "created_at": "2007-09-15T13:07:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/659#issuecomment-3428",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [zeroinversion1.patch](tarball://root/attachments/some-uuid/ticket659/zeroinversion1.patch) by malb created at 2007-09-15 13:07:15
+Attachment [zeroinversion1.patch](tarball://root/attachments/some-uuid/ticket659/zeroinversion1.patch) by @malb created at 2007-09-15 13:07:15
 
 
 
@@ -50,16 +50,16 @@ Attachment [zeroinversion1.patch](tarball://root/attachments/some-uuid/ticket659
 archive/issue_comments_003429.json:
 ```json
 {
-    "body": "Attachment [zeroinversion2.patch](tarball://root/attachments/some-uuid/ticket659/zeroinversion2.patch) by malb created at 2007-09-15 13:07:28",
+    "body": "Attachment [zeroinversion2.patch](tarball://root/attachments/some-uuid/ticket659/zeroinversion2.patch) by @malb created at 2007-09-15 13:07:28",
     "created_at": "2007-09-15T13:07:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/659#issuecomment-3429",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [zeroinversion2.patch](tarball://root/attachments/some-uuid/ticket659/zeroinversion2.patch) by malb created at 2007-09-15 13:07:28
+Attachment [zeroinversion2.patch](tarball://root/attachments/some-uuid/ticket659/zeroinversion2.patch) by @malb created at 2007-09-15 13:07:28
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_003430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/659#issuecomment-3430",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_003431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/659#issuecomment-3431",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

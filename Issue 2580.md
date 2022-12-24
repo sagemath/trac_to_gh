@@ -3,7 +3,7 @@
 archive/issues_002580.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis abstracts the layer between NetworkX and Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2580\n\n",
+    "body": "Assignee: @rlmill\n\nThis abstracts the layer between NetworkX and Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2580\n\n",
     "created_at": "2008-03-18T01:56:35Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002580.json:
     "title": "[with patch, needs review] Implement backends for graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2580",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This abstracts the layer between NetworkX and Sage.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2580
 archive/issue_comments_017648.json:
 ```json
 {
-    "body": "Attachment [2580-graph_backends.patch](tarball://root/attachments/some-uuid/ticket2580/2580-graph_backends.patch) by rlm created at 2008-03-18 02:00:07",
+    "body": "Attachment [2580-graph_backends.patch](tarball://root/attachments/some-uuid/ticket2580/2580-graph_backends.patch) by @rlmill created at 2008-03-18 02:00:07",
     "created_at": "2008-03-18T02:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2580#issuecomment-17648",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [2580-graph_backends.patch](tarball://root/attachments/some-uuid/ticket2580/2580-graph_backends.patch) by rlm created at 2008-03-18 02:00:07
+Attachment [2580-graph_backends.patch](tarball://root/attachments/some-uuid/ticket2580/2580-graph_backends.patch) by @rlmill created at 2008-03-18 02:00:07
 
 
 
@@ -50,16 +50,16 @@ Attachment [2580-graph_backends.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_017649.json:
 ```json
 {
-    "body": "Attachment [2580-graph_backends_added_files.patch](tarball://root/attachments/some-uuid/ticket2580/2580-graph_backends_added_files.patch) by rlm created at 2008-03-18 02:01:14\n\nMake sure to apply both patches before building. :)",
+    "body": "Attachment [2580-graph_backends_added_files.patch](tarball://root/attachments/some-uuid/ticket2580/2580-graph_backends_added_files.patch) by @rlmill created at 2008-03-18 02:01:14\n\nMake sure to apply both patches before building. :)",
     "created_at": "2008-03-18T02:01:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2580#issuecomment-17649",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [2580-graph_backends_added_files.patch](tarball://root/attachments/some-uuid/ticket2580/2580-graph_backends_added_files.patch) by rlm created at 2008-03-18 02:01:14
+Attachment [2580-graph_backends_added_files.patch](tarball://root/attachments/some-uuid/ticket2580/2580-graph_backends_added_files.patch) by @rlmill created at 2008-03-18 02:01:14
 
 Make sure to apply both patches before building. :)
 
@@ -75,7 +75,7 @@ archive/issue_comments_017650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2580#issuecomment-17650",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_017651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2580#issuecomment-17651",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

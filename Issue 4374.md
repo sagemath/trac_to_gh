@@ -3,7 +3,7 @@
 archive/issues_004374.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  craigcitro\n\n\n```\nsage -t  devel/sage/sage/tests/book_stein_ent.py \n********************************************************************** \nFile \"/local/jec/sage-3.1.4/tmp/book_stein_ent.py\", line 5056: \n    : g2.complex_embedding() \nExpected: \n    -2.2360679775 + 3.33066907388e-16*I \nGot: \n    -2.2360679775 + 3.83970199386e-16*I \n********************************************************************** \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4374\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @craigcitro\n\n\n```\nsage -t  devel/sage/sage/tests/book_stein_ent.py \n********************************************************************** \nFile \"/local/jec/sage-3.1.4/tmp/book_stein_ent.py\", line 5056: \n    : g2.complex_embedding() \nExpected: \n    -2.2360679775 + 3.33066907388e-16*I \nGot: \n    -2.2360679775 + 3.83970199386e-16*I \n********************************************************************** \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4374\n\n",
     "created_at": "2008-10-27T17:12:43Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_004374.json:
 ```
 Assignee: mabshoff
 
-CC:  craigcitro
+CC:  @craigcitro
 
 
 ```
@@ -150,16 +150,16 @@ Michael
 archive/issue_comments_032168.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to craigcitro.",
+    "body": "Changing assignee from mabshoff to @craigcitro.",
     "created_at": "2008-10-27T19:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4374#issuecomment-32168",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from mabshoff to craigcitro.
+Changing assignee from mabshoff to @craigcitro.
 
 
 
@@ -173,7 +173,7 @@ archive/issue_comments_032169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4374#issuecomment-32169",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -186,16 +186,16 @@ Changing status from assigned to new.
 archive/issue_comments_032170.json:
 ```json
 {
-    "body": "Attachment [trac-4374.patch](tarball://root/attachments/some-uuid/ticket4374/trac-4374.patch) by craigcitro created at 2008-10-27 19:47:28\n\nThe attached patch fixes the above issues, as well as cleaning up the files `book_stein_ent.py` and `book_stein_modform.py`. I'll keep an eye out for any new numerical noise that pops up during testing ...",
+    "body": "Attachment [trac-4374.patch](tarball://root/attachments/some-uuid/ticket4374/trac-4374.patch) by @craigcitro created at 2008-10-27 19:47:28\n\nThe attached patch fixes the above issues, as well as cleaning up the files `book_stein_ent.py` and `book_stein_modform.py`. I'll keep an eye out for any new numerical noise that pops up during testing ...",
     "created_at": "2008-10-27T19:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4374#issuecomment-32170",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4374.patch](tarball://root/attachments/some-uuid/ticket4374/trac-4374.patch) by craigcitro created at 2008-10-27 19:47:28
+Attachment [trac-4374.patch](tarball://root/attachments/some-uuid/ticket4374/trac-4374.patch) by @craigcitro created at 2008-10-27 19:47:28
 
 The attached patch fixes the above issues, as well as cleaning up the files `book_stein_ent.py` and `book_stein_modform.py`. I'll keep an eye out for any new numerical noise that pops up during testing ...
 
@@ -211,7 +211,7 @@ archive/issue_comments_032171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4374#issuecomment-32171",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

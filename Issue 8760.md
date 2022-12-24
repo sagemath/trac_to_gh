@@ -14,7 +14,7 @@ archive/issues_008760.json:
     "title": "change sage notebook to use HTML5 doctype, and also change the email part of registration form to actually use something from html5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8760",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -37,7 +37,7 @@ archive/issue_comments_080152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8760#issuecomment-80152",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_080153.json:
 ```json
 {
-    "body": "Attachment [trac_8760-sagenb.patch](tarball://root/attachments/some-uuid/ticket8760/trac_8760-sagenb.patch) by was created at 2010-04-25 00:09:03",
+    "body": "Attachment [trac_8760-sagenb.patch](tarball://root/attachments/some-uuid/ticket8760/trac_8760-sagenb.patch) by @williamstein created at 2010-04-25 00:09:03",
     "created_at": "2010-04-25T00:09:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8760#issuecomment-80153",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8760-sagenb.patch](tarball://root/attachments/some-uuid/ticket8760/trac_8760-sagenb.patch) by was created at 2010-04-25 00:09:03
+Attachment [trac_8760-sagenb.patch](tarball://root/attachments/some-uuid/ticket8760/trac_8760-sagenb.patch) by @williamstein created at 2010-04-25 00:09:03
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_080156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8760#issuecomment-80156",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

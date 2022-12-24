@@ -3,7 +3,7 @@
 archive/issues_005938.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nWant to see some truly hideous plotting output?  Try this:\n\n\n```\nQ = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'],num_edges=['<=',5],min_degree=1)\n\nv = Q.get_graphs_list(); v\n\ngraphics_array([g.plot() for g in v], 3, len(v)//3).show()\n```\n\n\nI guess the problem is maybe Networkx drawing the plots instead of Sage (??), hence the cropping/layout is wrong?  I don't know.  Why do we use networkx at all for any part of plotting?  It would be better to plot to native Sage primitives, wouldn't it?\n\nFix?  make it so the edges aren't cropped wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5938\n\n",
+    "body": "Assignee: @rlmill\n\nWant to see some truly hideous plotting output?  Try this:\n\n\n```\nQ = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'],num_edges=['<=',5],min_degree=1)\n\nv = Q.get_graphs_list(); v\n\ngraphics_array([g.plot() for g in v], 3, len(v)//3).show()\n```\n\n\nI guess the problem is maybe Networkx drawing the plots instead of Sage (??), hence the cropping/layout is wrong?  I don't know.  Why do we use networkx at all for any part of plotting?  It would be better to plot to native Sage primitives, wouldn't it?\n\nFix?  make it so the edges aren't cropped wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5938\n\n",
     "created_at": "2009-04-29T16:11:45Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_005938.json:
     "title": "graph plotting -- ploting of graphs (networks) is somehow messed up/scaled wrong/cropped wrong since it doesn't work with graphics_array",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5938",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Want to see some truly hideous plotting output?  Try this:
 
@@ -51,7 +51,7 @@ archive/issue_comments_046941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5938#issuecomment-46941",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_046942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5938#issuecomment-46942",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_046944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5938#issuecomment-46944",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_046945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5938#issuecomment-46945",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_046946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5938#issuecomment-46946",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_046947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5938#issuecomment-46947",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_046948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5938#issuecomment-46948",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_046949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5938#issuecomment-46949",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_046950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5938#issuecomment-46950",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_046951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5938#issuecomment-46951",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_046952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5938#issuecomment-46952",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_046953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5938#issuecomment-46953",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

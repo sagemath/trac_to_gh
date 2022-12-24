@@ -3,7 +3,7 @@
 archive/issues_006876.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\nPlotting **prime_pi** gives the following error:\n\n\n```\nsage: plot(prime_pi(x), (x, 1, 100))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/huss/.sage/temp/bernoulli/12905/_home_huss__sage_init_sage_0.py in <module>()\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/functions/prime_pi.so in sage.functions.prime_pi.PrimePi.__call__ (sage/functions/prime_pi.c:1038)()\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__int__ (sage/symbolic/expression.cpp:4389)()\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__float__ (sage/symbolic/expression.cpp:5526)()\n\nTypeError: float() argument must be a string or a number\n```\n\n\nIt also does not work without the variable:\n\n\n```\nsage: plot(prime_pi, (1, 100))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (35, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/huss/.sage/temp/bernoulli/12905/_home_huss__sage_init_sage_0.py in <module>()\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    238                     kwds[new_name] = kwds[old_name]\n    239                     del kwds[old_name]\n--> 240             return func(*args, **kwds)\n    241\n    242         from sage.misc.sageinspect import sage_getsource\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    133                 options['__original_opts'] = kwds\n    134             options.update(kwds)\n--> 135             return func(*args, **options)\n    136\n    137\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/plot/plot.pyc in plot(funcs, *args, **kwds)\n   2052     do_show = kwds.pop('show',False)\n   2053     if hasattr(funcs, 'plot'):\n-> 2054         G = funcs.plot(*args, **original_opts)\n   2055     # if we are using the generic plotting method\n   2056     else:\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/functions/prime_pi.so in sage.functions.prime_pi.PrimePi.plot (sage/functions/prime_pi.c:2395)()\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/functions/prime_pi.so in sage.functions.prime_pi.PrimePi.__call__ (sage/functions/prime_pi.c:1038)()\n\nTypeError: an integer is required\n```\n\n\nFor **nth_prime**\n\n\n```\nsage: plot(nth_prime(x), (x, 1, 100))\n```\n\n\nalso gives an error, but\n\n\n```\nsage: plot(nth_prime, (1, 100))\n```\n\n\nworks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6876\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nPlotting **prime_pi** gives the following error:\n\n\n```\nsage: plot(prime_pi(x), (x, 1, 100))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/huss/.sage/temp/bernoulli/12905/_home_huss__sage_init_sage_0.py in <module>()\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/functions/prime_pi.so in sage.functions.prime_pi.PrimePi.__call__ (sage/functions/prime_pi.c:1038)()\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__int__ (sage/symbolic/expression.cpp:4389)()\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__float__ (sage/symbolic/expression.cpp:5526)()\n\nTypeError: float() argument must be a string or a number\n```\n\n\nIt also does not work without the variable:\n\n\n```\nsage: plot(prime_pi, (1, 100))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (35, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/huss/.sage/temp/bernoulli/12905/_home_huss__sage_init_sage_0.py in <module>()\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    238                     kwds[new_name] = kwds[old_name]\n    239                     del kwds[old_name]\n--> 240             return func(*args, **kwds)\n    241\n    242         from sage.misc.sageinspect import sage_getsource\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    133                 options['__original_opts'] = kwds\n    134             options.update(kwds)\n--> 135             return func(*args, **options)\n    136\n    137\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/plot/plot.pyc in plot(funcs, *args, **kwds)\n   2052     do_show = kwds.pop('show',False)\n   2053     if hasattr(funcs, 'plot'):\n-> 2054         G = funcs.plot(*args, **original_opts)\n   2055     # if we are using the generic plotting method\n   2056     else:\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/functions/prime_pi.so in sage.functions.prime_pi.PrimePi.plot (sage/functions/prime_pi.c:2395)()\n\n/local/data/huss/software/sage-4.1.1/local/lib/python2.6/site-packages/sage/functions/prime_pi.so in sage.functions.prime_pi.PrimePi.__call__ (sage/functions/prime_pi.c:1038)()\n\nTypeError: an integer is required\n```\n\n\nFor **nth_prime**\n\n\n```\nsage: plot(nth_prime(x), (x, 1, 100))\n```\n\n\nalso gives an error, but\n\n\n```\nsage: plot(nth_prime, (1, 100))\n```\n\n\nworks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6876\n\n",
     "created_at": "2009-09-03T11:30:15Z",
     "labels": [
         "graphics",
@@ -16,9 +16,9 @@ archive/issues_006876.json:
     "user": "whuss"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Plotting **prime_pi** gives the following error:
 
@@ -117,7 +117,7 @@ archive/issue_comments_056763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6876#issuecomment-56763",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_056764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6876#issuecomment-56764",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_056765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6876#issuecomment-56765",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_056766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6876#issuecomment-56766",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_056767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6876#issuecomment-56767",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_056768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6876#issuecomment-56768",
-    "user": "paulmasson"
+    "user": "@paulmasson"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_056769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6876#issuecomment-56769",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

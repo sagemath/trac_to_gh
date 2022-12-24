@@ -14,7 +14,7 @@ archive/issues_003136.json:
     "title": "the readme for osx should be changed to delete the line about inotebook()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3136",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3136
 archive/issue_comments_021781.json:
 ```json
 {
-    "body": "Attachment [scripts-3136.patch](tarball://root/attachments/some-uuid/ticket3136/scripts-3136.patch) by was created at 2008-05-10 23:21:19",
+    "body": "Attachment [scripts-3136.patch](tarball://root/attachments/some-uuid/ticket3136/scripts-3136.patch) by @williamstein created at 2008-05-10 23:21:19",
     "created_at": "2008-05-10T23:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3136#issuecomment-21781",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-3136.patch](tarball://root/attachments/some-uuid/ticket3136/scripts-3136.patch) by was created at 2008-05-10 23:21:19
+Attachment [scripts-3136.patch](tarball://root/attachments/some-uuid/ticket3136/scripts-3136.patch) by @williamstein created at 2008-05-10 23:21:19
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_021782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3136#issuecomment-21782",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

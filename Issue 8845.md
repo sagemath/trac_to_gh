@@ -14,7 +14,7 @@ archive/issues_008845.json:
     "title": "fix install_package in Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8845",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8845
 archive/issue_comments_081323.json:
 ```json
 {
-    "body": "Attachment [trac_8845-fix_package.patch](tarball://root/attachments/some-uuid/ticket8845/trac_8845-fix_package.patch) by mhansen created at 2010-05-03 13:24:33",
+    "body": "Attachment [trac_8845-fix_package.patch](tarball://root/attachments/some-uuid/ticket8845/trac_8845-fix_package.patch) by @mwhansen created at 2010-05-03 13:24:33",
     "created_at": "2010-05-03T13:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8845#issuecomment-81323",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8845-fix_package.patch](tarball://root/attachments/some-uuid/ticket8845/trac_8845-fix_package.patch) by mhansen created at 2010-05-03 13:24:33
+Attachment [trac_8845-fix_package.patch](tarball://root/attachments/some-uuid/ticket8845/trac_8845-fix_package.patch) by @mwhansen created at 2010-05-03 13:24:33
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_081324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8845#issuecomment-81324",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to needs_review.
 archive/issue_comments_081325.json:
 ```json
 {
-    "body": "Attachment [trac_8845-referee.patch](tarball://root/attachments/some-uuid/ticket8845/trac_8845-referee.patch) by was created at 2010-05-26 00:37:58\n\nreferee followup",
+    "body": "Attachment [trac_8845-referee.patch](tarball://root/attachments/some-uuid/ticket8845/trac_8845-referee.patch) by @williamstein created at 2010-05-26 00:37:58\n\nreferee followup",
     "created_at": "2010-05-26T00:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8845#issuecomment-81325",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8845-referee.patch](tarball://root/attachments/some-uuid/ticket8845/trac_8845-referee.patch) by was created at 2010-05-26 00:37:58
+Attachment [trac_8845-referee.patch](tarball://root/attachments/some-uuid/ticket8845/trac_8845-referee.patch) by @williamstein created at 2010-05-26 00:37:58
 
 referee followup
 
@@ -93,7 +93,7 @@ archive/issue_comments_081326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8845#issuecomment-81326",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

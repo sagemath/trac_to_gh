@@ -3,7 +3,7 @@
 archive/issues_000769.json:
 ```json
 {
-    "body": "Assignee: was\n\nEven though this method is probably not be used anyway, it is worth noticing that it gives False results from time to time:\n\n```\nsage: for i in range(10): \n....:   A = random_matrix(GF(2),20,20);\n....:   B = A.echelon_form();\n....:   A._clear_cache(); \n....:   A._echelon_strassen(cutoff=10); \n....:   A == B\nFalse\nTrue\nTrue\nFalse\nTrue\nFalse\nTrue\nTrue\nTrue\nFalse\n```\n\n\n\n```\nsage: for i in range(10): \n....:   A = random_matrix(GF(7),20,20);\n....:   B = A.echelon_form();\n....:   A._clear_cache(); \n....:   A._echelon_strassen(cutoff=10); \n....:   A == B\nTrue\nTrue\nTrue\nFalse\nTrue\nTrue\nTrue\nTrue\nTrue\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/769\n\n",
+    "body": "Assignee: @williamstein\n\nEven though this method is probably not be used anyway, it is worth noticing that it gives False results from time to time:\n\n```\nsage: for i in range(10): \n....:   A = random_matrix(GF(2),20,20);\n....:   B = A.echelon_form();\n....:   A._clear_cache(); \n....:   A._echelon_strassen(cutoff=10); \n....:   A == B\nFalse\nTrue\nTrue\nFalse\nTrue\nFalse\nTrue\nTrue\nTrue\nFalse\n```\n\n\n\n```\nsage: for i in range(10): \n....:   A = random_matrix(GF(7),20,20);\n....:   B = A.echelon_form();\n....:   A._clear_cache(); \n....:   A._echelon_strassen(cutoff=10); \n....:   A == B\nTrue\nTrue\nTrue\nFalse\nTrue\nTrue\nTrue\nTrue\nTrue\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/769\n\n",
     "created_at": "2007-10-01T04:21:25Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000769.json:
     "title": "Matrix_mod2_dense._echelon_strassen gives fals results sometimes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/769",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Even though this method is probably not be used anyway, it is worth noticing that it gives False results from time to time:
 
@@ -78,7 +78,7 @@ archive/issue_comments_004568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4568",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_004569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4569",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_004570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4570",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_004571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4571",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_004572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4572",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_004573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4573",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_004574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4574",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -212,16 +212,16 @@ Resolution: fixed
 archive/issue_comments_004575.json:
 ```json
 {
-    "body": "Attachment [strassen-fix.patch](tarball://root/attachments/some-uuid/ticket769/strassen-fix.patch) by was created at 2007-10-05 02:16:07",
+    "body": "Attachment [strassen-fix.patch](tarball://root/attachments/some-uuid/ticket769/strassen-fix.patch) by @williamstein created at 2007-10-05 02:16:07",
     "created_at": "2007-10-05T02:16:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4575",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [strassen-fix.patch](tarball://root/attachments/some-uuid/ticket769/strassen-fix.patch) by was created at 2007-10-05 02:16:07
+Attachment [strassen-fix.patch](tarball://root/attachments/some-uuid/ticket769/strassen-fix.patch) by @williamstein created at 2007-10-05 02:16:07
 
 
 
@@ -235,7 +235,7 @@ archive/issue_comments_004576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/769#issuecomment-4576",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

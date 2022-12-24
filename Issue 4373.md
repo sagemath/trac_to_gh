@@ -3,7 +3,7 @@
 archive/issues_004373.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mhansen\n\n\n```\nsage -t  devel/sage/sage/algebras/group_algebra.py          \n********************************************************************** \nFile \"/home/jaap/downloads/sage-3.2.alpha0/tmp/group_algebra.py\", line 230: \n     sage: OG(FormalSum([ (1, G(2)), (2, RR(0.77)) ]), check=False) \nExpected: \n     [2 0] \n     [0 2] + 2*0.770000000000000 \nGot: \n     2*0.770000000000000 + [2 0] \n     [0 2] \n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4373\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\n\n```\nsage -t  devel/sage/sage/algebras/group_algebra.py          \n********************************************************************** \nFile \"/home/jaap/downloads/sage-3.2.alpha0/tmp/group_algebra.py\", line 230: \n     sage: OG(FormalSum([ (1, G(2)), (2, RR(0.77)) ]), check=False) \nExpected: \n     [2 0] \n     [0 2] + 2*0.770000000000000 \nGot: \n     2*0.770000000000000 + [2 0] \n     [0 2] \n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4373\n\n",
     "created_at": "2008-10-27T05:35:02Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_004373.json:
 ```
 Assignee: mabshoff
 
-CC:  mhansen
+CC:  @mwhansen
 
 
 ```
@@ -90,16 +90,16 @@ Changing priority from major to blocker.
 archive/issue_comments_032155.json:
 ```json
 {
-    "body": "Attachment [4373.patch](tarball://root/attachments/some-uuid/ticket4373/4373.patch) by davidloeffler created at 2008-10-28 13:22:46",
+    "body": "Attachment [4373.patch](tarball://root/attachments/some-uuid/ticket4373/4373.patch) by @loefflerd created at 2008-10-28 13:22:46",
     "created_at": "2008-10-28T13:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4373#issuecomment-32155",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [4373.patch](tarball://root/attachments/some-uuid/ticket4373/4373.patch) by davidloeffler created at 2008-10-28 13:22:46
+Attachment [4373.patch](tarball://root/attachments/some-uuid/ticket4373/4373.patch) by @loefflerd created at 2008-10-28 13:22:46
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_032156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4373#issuecomment-32156",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_032157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4373#issuecomment-32157",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -148,16 +148,16 @@ All that's really needed is to check that the method runs; it's inconceivable th
 archive/issue_comments_032158.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to davidloeffler.",
+    "body": "Changing assignee from mabshoff to @loefflerd.",
     "created_at": "2008-10-28T13:31:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4373#issuecomment-32158",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from mabshoff to davidloeffler.
+Changing assignee from mabshoff to @loefflerd.
 
 
 
@@ -190,16 +190,16 @@ Michael
 archive/issue_comments_032160.json:
 ```json
 {
-    "body": "Attachment [4373-new.patch](tarball://root/attachments/some-uuid/ticket4373/4373-new.patch) by davidloeffler created at 2008-10-28 14:21:36\n\nok, here it is again, with a more informative comment on the doctest.",
+    "body": "Attachment [4373-new.patch](tarball://root/attachments/some-uuid/ticket4373/4373-new.patch) by @loefflerd created at 2008-10-28 14:21:36\n\nok, here it is again, with a more informative comment on the doctest.",
     "created_at": "2008-10-28T14:21:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4373#issuecomment-32160",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [4373-new.patch](tarball://root/attachments/some-uuid/ticket4373/4373-new.patch) by davidloeffler created at 2008-10-28 14:21:36
+Attachment [4373-new.patch](tarball://root/attachments/some-uuid/ticket4373/4373-new.patch) by @loefflerd created at 2008-10-28 14:21:36
 
 ok, here it is again, with a more informative comment on the doctest.
 

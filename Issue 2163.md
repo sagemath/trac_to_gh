@@ -3,7 +3,7 @@
 archive/issues_002163.json:
 ```json
 {
-    "body": "Assignee: was\n\nAt the command line:\n\n\n```\nsage: a=plot(x^2,(x,-1,1))\nsage: a.show??\nsage: a.show?\n```\n\n\nIn either of the last two commands, the plot pops up on my Ubuntu 7.10 box (as well as the help).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2163\n\n",
+    "body": "Assignee: @williamstein\n\nAt the command line:\n\n\n```\nsage: a=plot(x^2,(x,-1,1))\nsage: a.show??\nsage: a.show?\n```\n\n\nIn either of the last two commands, the plot pops up on my Ubuntu 7.10 box (as well as the help).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2163\n\n",
     "created_at": "2008-02-14T23:00:03Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_002163.json:
     "title": ".show?? pops up the graphics item as well as the help page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2163",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 At the command line:
 
@@ -66,7 +66,7 @@ archive/issue_comments_014201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14201",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -79,16 +79,16 @@ Changing status from new to assigned.
 archive/issue_comments_014202.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-02-15T01:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14202",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_014203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14203",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_014204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14204",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_014205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14205",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_014206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14206",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_014207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14207",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -201,16 +201,16 @@ Changing status from closed to reopened.
 archive/issue_comments_014208.json:
 ```json
 {
-    "body": "Attachment [trac_2163.patch](tarball://root/attachments/some-uuid/ticket2163/trac_2163.patch) by mhansen created at 2008-12-02 08:44:34\n\nI had already fixed some problems caused by removing the 'nodoctest' at the top before realizing there's no good way to test the function which I added.\n\nThe thing which addresses this ticket is the last hunk at the bottom of the patch.",
+    "body": "Attachment [trac_2163.patch](tarball://root/attachments/some-uuid/ticket2163/trac_2163.patch) by @mwhansen created at 2008-12-02 08:44:34\n\nI had already fixed some problems caused by removing the 'nodoctest' at the top before realizing there's no good way to test the function which I added.\n\nThe thing which addresses this ticket is the last hunk at the bottom of the patch.",
     "created_at": "2008-12-02T08:44:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14208",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2163.patch](tarball://root/attachments/some-uuid/ticket2163/trac_2163.patch) by mhansen created at 2008-12-02 08:44:34
+Attachment [trac_2163.patch](tarball://root/attachments/some-uuid/ticket2163/trac_2163.patch) by @mwhansen created at 2008-12-02 08:44:34
 
 I had already fixed some problems caused by removing the 'nodoctest' at the top before realizing there's no good way to test the function which I added.
 
@@ -228,7 +228,7 @@ archive/issue_comments_014209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14209",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

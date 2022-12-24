@@ -3,7 +3,7 @@
 archive/issues_009297.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp leif mkoeppe\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and Sun assembler)\n* Sage 4.4.4.alpha1\n* #9041 to allow Python to build _socket. (Not needed on SPARC, but it was applied)\n* #9295 to permit Python test suite to build. \n\n## Background\nAlthough Sage 4.4.4.alpha1 builds fully on Solaris 10 (SPARC), there are some test failures of the Python test suite, which are discovered if SAGE_CHECK is exported to \"yes\", and #9295 included in Sage, which allows SAGE_CHECK to work with Python. \n\n## Summary of test results\n\n```\n322 tests OK.\n5 tests failed:\n    test_distutils test_float test_hotshot test_multiprocessing\n    test_sunaudiodev\n38 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_epoll test_gdbm test_gl test_imgfile test_kqueue\n    test_linuxaudiodev test_macos test_macostools test_normalization\n    test_ossaudiodev test_pep277 test_py3kwarn test_scriptpackages\n    test_smtpnet test_socketserver test_ssl test_startfile test_tcl\n    test_timeout test_urllib2net test_urllibnet test_winreg\n    test_winsound test_zipfile64\n2 skips unexpected on sunos5:\n    test_tcl test_ssl\n```\n\n## Individual test failures\n\n```\ntest test_distutils failed -- errors occurred; run in verbose mode for details\n\ntest test_float failed -- Traceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_float.py\", line 765, in test_roundtrip\n    self.identical(-x, roundtrip(-x))\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_float.py\", line 375, in identical\n    self.fail('%r not identical to %r' % (x, y))\nAssertionError: -0.0 not identical to 0.0\n\ntest_hotshot\ntest test_hotshot failed -- Traceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_hotshot.py\", line 130, in test_logreader_eof_error\n    self.assertRaises((IOError, EOFError), _hotshot.logreader, \".\")\nAssertionError: (<type 'exceptions.IOError'>, <type 'exceptions.EOFError'>) not raised\n\ntest_multiprocessing\ntest test_multiprocessing failed -- Traceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_multiprocessing.py\", line 1666, in test_import\n    __import__(name)\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/multiprocessing/reduction.py\", line 29, in <module>\n    raise ImportError('pickling of connections not supported')\nImportError: pickling of connections not supported\n\n\ntest test_sunaudiodev failed -- (13, 'Permission denied', '/dev/audio')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9297\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @nexttime @mkoeppe\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and Sun assembler)\n* Sage 4.4.4.alpha1\n* #9041 to allow Python to build _socket. (Not needed on SPARC, but it was applied)\n* #9295 to permit Python test suite to build. \n\n## Background\nAlthough Sage 4.4.4.alpha1 builds fully on Solaris 10 (SPARC), there are some test failures of the Python test suite, which are discovered if SAGE_CHECK is exported to \"yes\", and #9295 included in Sage, which allows SAGE_CHECK to work with Python. \n\n## Summary of test results\n\n```\n322 tests OK.\n5 tests failed:\n    test_distutils test_float test_hotshot test_multiprocessing\n    test_sunaudiodev\n38 tests skipped:\n    test_aepack test_al test_applesingle test_bsddb test_bsddb185\n    test_bsddb3 test_cd test_cl test_codecmaps_cn test_codecmaps_hk\n    test_codecmaps_jp test_codecmaps_kr test_codecmaps_tw test_curses\n    test_epoll test_gdbm test_gl test_imgfile test_kqueue\n    test_linuxaudiodev test_macos test_macostools test_normalization\n    test_ossaudiodev test_pep277 test_py3kwarn test_scriptpackages\n    test_smtpnet test_socketserver test_ssl test_startfile test_tcl\n    test_timeout test_urllib2net test_urllibnet test_winreg\n    test_winsound test_zipfile64\n2 skips unexpected on sunos5:\n    test_tcl test_ssl\n```\n\n## Individual test failures\n\n```\ntest test_distutils failed -- errors occurred; run in verbose mode for details\n\ntest test_float failed -- Traceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_float.py\", line 765, in test_roundtrip\n    self.identical(-x, roundtrip(-x))\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_float.py\", line 375, in identical\n    self.fail('%r not identical to %r' % (x, y))\nAssertionError: -0.0 not identical to 0.0\n\ntest_hotshot\ntest test_hotshot failed -- Traceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_hotshot.py\", line 130, in test_logreader_eof_error\n    self.assertRaises((IOError, EOFError), _hotshot.logreader, \".\")\nAssertionError: (<type 'exceptions.IOError'>, <type 'exceptions.EOFError'>) not raised\n\ntest_multiprocessing\ntest test_multiprocessing failed -- Traceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/test/test_multiprocessing.py\", line 1666, in test_import\n    __import__(name)\n  File \"/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/python-2.6.4.p9/src/Lib/multiprocessing/reduction.py\", line 29, in <module>\n    raise ImportError('pickling of connections not supported')\nImportError: pickling of connections not supported\n\n\ntest test_sunaudiodev failed -- (13, 'Permission denied', '/dev/audio')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9297\n\n",
     "created_at": "2010-06-21T16:20:21Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009297.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp leif mkoeppe
+CC:  @jaapspies @nexttime @mkoeppe
 
 ## Hardware & associated software
 
@@ -121,7 +121,7 @@ archive/issue_comments_087579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9297#issuecomment-87579",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_087580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9297#issuecomment-87580",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_087583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9297#issuecomment-87583",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_087584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9297#issuecomment-87584",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_087586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9297#issuecomment-87586",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_087587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9297#issuecomment-87587",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_087588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9297#issuecomment-87588",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_087589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9297#issuecomment-87589",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_087590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9297#issuecomment-87590",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -37,7 +37,7 @@ archive/issue_comments_003717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/707#issuecomment-3717",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

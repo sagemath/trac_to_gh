@@ -3,7 +3,7 @@
 archive/issues_009308.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif jhpalmieri pjeremy\n\nGnuTLS is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to \"yes\", no self-tests of the package will be run. This is silly, as GnuTLS has a test suite.\n\nAfter adding the required file, the test suite is run and at least on my OpenSolaris laptop, passes all tests. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9308\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @jhpalmieri @peterjeremy\n\nGnuTLS is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to \"yes\", no self-tests of the package will be run. This is silly, as GnuTLS has a test suite.\n\nAfter adding the required file, the test suite is run and at least on my OpenSolaris laptop, passes all tests. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9308\n\n",
     "created_at": "2010-06-22T13:28:23Z",
     "labels": [
         "spkg-check",
@@ -19,7 +19,7 @@ archive/issues_009308.json:
 ```
 Assignee: tbd
 
-CC:  leif jhpalmieri pjeremy
+CC:  @nexttime @jhpalmieri @peterjeremy
 
 GnuTLS is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to "yes", no self-tests of the package will be run. This is silly, as GnuTLS has a test suite.
 
@@ -146,7 +146,7 @@ archive/issue_comments_087659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9308#issuecomment-87659",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_087660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9308#issuecomment-87660",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

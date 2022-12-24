@@ -3,7 +3,7 @@
 archive/issues_009407.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nKeywords: Dirichlet characters, abelian fields, class field theory\n\nThere is a correspondance between groups of Dirichlet characters and Galois groups of abelian fields (over Q). We implement here three functions\n\n* the conductor of an abelian field\n\n* the set of Dirichlet characters of an abelian field\n\n* the fixed field of a Dirichlet character\n\nIssue created by migration from https://trac.sagemath.org/ticket/9407\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: Dirichlet characters, abelian fields, class field theory\n\nThere is a correspondance between groups of Dirichlet characters and Galois groups of abelian fields (over Q). We implement here three functions\n\n* the conductor of an abelian field\n\n* the set of Dirichlet characters of an abelian field\n\n* the fixed field of a Dirichlet character\n\nIssue created by migration from https://trac.sagemath.org/ticket/9407\n\n",
     "created_at": "2010-07-02T05:16:55Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_009407.json:
     "title": "fixed fields for dirichlet characters and conductors and dirichlet characters for abelian fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9407",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 Keywords: Dirichlet characters, abelian fields, class field theory
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9407
 archive/issue_comments_089632.json:
 ```json
 {
-    "body": "Attachment [trac_9407.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407.patch) by wuthrich created at 2010-07-02 05:27:33\n\nexported against 4.4.4.alpha0",
+    "body": "Attachment [trac_9407.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407.patch) by @categorie created at 2010-07-02 05:27:33\n\nexported against 4.4.4.alpha0",
     "created_at": "2010-07-02T05:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89632",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_9407.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407.patch) by wuthrich created at 2010-07-02 05:27:33
+Attachment [trac_9407.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407.patch) by @categorie created at 2010-07-02 05:27:33
 
 exported against 4.4.4.alpha0
 
@@ -65,7 +65,7 @@ archive/issue_comments_089633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89633",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -78,16 +78,16 @@ exported against 4.5.2.alpha1
 archive/issue_comments_089634.json:
 ```json
 {
-    "body": "Attachment [trac_9407.2.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407.2.patch) by wuthrich created at 2010-07-30 17:19:26\n\nApart from the above the patch here also introduces the function `is_abelian` and improves `is_galois` for number fields. Subfields of abelian fields inherit both.\n\nThere are a few minor things that could be improved at a later state (which I write down here so that I won't forget) :\n\n* The 2-part of the conductor needs adjustment\n\n* We can prove that a field is NOT abelian even if we can not decide that it is Galois, by finding that a prime congruent to 1 modulo the hypothetical conductor that does not completely split.\n\n* Is there some effective Chebotarev that can be used to prove that a field is Galois ?",
+    "body": "Attachment [trac_9407.2.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407.2.patch) by @categorie created at 2010-07-30 17:19:26\n\nApart from the above the patch here also introduces the function `is_abelian` and improves `is_galois` for number fields. Subfields of abelian fields inherit both.\n\nThere are a few minor things that could be improved at a later state (which I write down here so that I won't forget) :\n\n* The 2-part of the conductor needs adjustment\n\n* We can prove that a field is NOT abelian even if we can not decide that it is Galois, by finding that a prime congruent to 1 modulo the hypothetical conductor that does not completely split.\n\n* Is there some effective Chebotarev that can be used to prove that a field is Galois ?",
     "created_at": "2010-07-30T17:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89634",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_9407.2.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407.2.patch) by wuthrich created at 2010-07-30 17:19:26
+Attachment [trac_9407.2.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407.2.patch) by @categorie created at 2010-07-30 17:19:26
 
 Apart from the above the patch here also introduces the function `is_abelian` and improves `is_galois` for number fields. Subfields of abelian fields inherit both.
 
@@ -111,7 +111,7 @@ archive/issue_comments_089635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89635",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_089636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89636",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_089637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89637",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_089638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89638",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_089639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89639",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_089641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89641",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_089642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89642",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -352,16 +352,16 @@ replaces the previsou patches. exported against 4.6.1
 archive/issue_comments_089643.json:
 ```json
 {
-    "body": "Attachment [trac_9407_new.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407_new.patch) by wuthrich created at 2011-02-07 17:29:14",
+    "body": "Attachment [trac_9407_new.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407_new.patch) by @categorie created at 2011-02-07 17:29:14",
     "created_at": "2011-02-07T17:29:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89643",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_9407_new.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407_new.patch) by wuthrich created at 2011-02-07 17:29:14
+Attachment [trac_9407_new.patch](tarball://root/attachments/some-uuid/ticket9407/trac_9407_new.patch) by @categorie created at 2011-02-07 17:29:14
 
 
 
@@ -375,7 +375,7 @@ archive/issue_comments_089644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89644",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_089645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89645",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_089646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89646",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_089647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89647",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_089648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89648",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_089649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89649",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_089651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89651",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_089652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89652",
-    "user": "alexjbest"
+    "user": "@alexjbest"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_089653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89653",
-    "user": "alexjbest"
+    "user": "@alexjbest"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_089654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89654",
-    "user": "edgarcosta"
+    "user": "@edgarcosta"
 }
 ```
 
@@ -697,7 +697,7 @@ archive/issue_comments_089657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89657",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -725,7 +725,7 @@ archive/issue_comments_089658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89658",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -774,7 +774,7 @@ archive/issue_comments_089660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89660",
-    "user": "alexjbest"
+    "user": "@alexjbest"
 }
 ```
 
@@ -810,7 +810,7 @@ archive/issue_comments_089662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89662",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -828,7 +828,7 @@ archive/issue_comments_089663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89663",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -846,7 +846,7 @@ archive/issue_comments_089664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9407#issuecomment-89664",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

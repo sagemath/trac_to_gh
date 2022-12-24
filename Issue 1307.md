@@ -3,7 +3,7 @@
 archive/issues_001307.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  mvngu dimpase\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist:\n\n\n```\n> \n>>> A database of small graphs. Put Ted Spence's strongly regular graphs\n>>> into a\n>>> database. (In this case the important thing is to have the graphs\n>>> themselves,\n>>> we would not necessarily need much data.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1307\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  mvngu @dimpase\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist:\n\n\n```\n> \n>>> A database of small graphs. Put Ted Spence's strongly regular graphs\n>>> into a\n>>> database. (In this case the important thing is to have the graphs\n>>> themselves,\n>>> we would not necessarily need much data.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1307\n\n",
     "created_at": "2007-11-28T19:54:36Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_001307.json:
     "title": "[graphs] Strongly regular graph database",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1307",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  mvngu dimpase
+CC:  mvngu @dimpase
 
 Keywords: graphs
 
@@ -52,7 +52,7 @@ archive/issue_comments_008223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1307#issuecomment-8223",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_008224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1307#issuecomment-8224",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -83,16 +83,16 @@ Changing keywords from "graphs" to "database".
 archive/issue_comments_008225.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-17T15:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1307#issuecomment-8225",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_008227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1307#issuecomment-8227",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_008228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1307#issuecomment-8228",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_008229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1307#issuecomment-8229",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_008230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1307#issuecomment-8230",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_008231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1307#issuecomment-8231",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_008232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1307#issuecomment-8232",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_008233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1307#issuecomment-8233",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005168.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: matrix0, commutator\n\nHere is the extent of the docstring for the commutator method in matrix0.pyx:\n\n```\n        Return the commutator self*other - other*self.\n\n        EXAMPLES:\n            sage: A = Matrix(QQ[['t']], 2, 2, range(4))\n```\n\nFix the doctest so that it actually computes a commutator.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5168\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: matrix0, commutator\n\nHere is the extent of the docstring for the commutator method in matrix0.pyx:\n\n```\n        Return the commutator self*other - other*self.\n\n        EXAMPLES:\n            sage: A = Matrix(QQ[['t']], 2, 2, range(4))\n```\n\nFix the doctest so that it actually computes a commutator.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5168\n\n",
     "created_at": "2009-02-03T21:17:52Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005168.json:
     "title": "[with patch, needs review] matrix0.pyx: fix doctest for commutator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5168",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: matrix0, commutator
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5168
 archive/issue_comments_039594.json:
 ```json
 {
-    "body": "Attachment [5168.patch](tarball://root/attachments/some-uuid/ticket5168/5168.patch) by jhpalmieri created at 2009-02-03 21:18:25",
+    "body": "Attachment [5168.patch](tarball://root/attachments/some-uuid/ticket5168/5168.patch) by @jhpalmieri created at 2009-02-03 21:18:25",
     "created_at": "2009-02-03T21:18:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5168#issuecomment-39594",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5168.patch](tarball://root/attachments/some-uuid/ticket5168/5168.patch) by jhpalmieri created at 2009-02-03 21:18:25
+Attachment [5168.patch](tarball://root/attachments/some-uuid/ticket5168/5168.patch) by @jhpalmieri created at 2009-02-03 21:18:25
 
 
 

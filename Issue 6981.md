@@ -14,7 +14,7 @@ archive/issues_006981.json:
     "title": "include 64-bit OS X gfortran in standard SAge",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6981",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -46,7 +46,7 @@ archive/issue_comments_057732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57732",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_057733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57733",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_057738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57738",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_057739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57739",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_057740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57740",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_057741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57741",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_057742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57742",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_057743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57743",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009838.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  vbraun\n\nThis patch allows computing dual cones, including non-strictly convex and non-full-dimensional cases. \n\nThe actual work is done in `facet_normals` which now works for non-strictly convex cones as well. The method `base_extend` for quotient lattices was added during one of the implementation attempts and I left it for future use as well (the hope was to create cones in quotient lattices, but it does not work yet).\n\nThere is still a dimension 6 limitation stemming from PALP for computing duals and facet normals. This is still our best option for low dimension, but perhaps it would be nice if `facet_normals` caught the exception when PALP does not work and used polyhedra module in this case. Then computing the dual cone and face lattices should work automatically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9839\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nThis patch allows computing dual cones, including non-strictly convex and non-full-dimensional cases. \n\nThe actual work is done in `facet_normals` which now works for non-strictly convex cones as well. The method `base_extend` for quotient lattices was added during one of the implementation attempts and I left it for future use as well (the hope was to create cones in quotient lattices, but it does not work yet).\n\nThere is still a dimension 6 limitation stemming from PALP for computing duals and facet normals. This is still our best option for low dimension, but perhaps it would be nice if `facet_normals` caught the exception when PALP does not work and used polyhedra module in this case. Then computing the dual cone and face lattices should work automatically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9839\n\n",
     "created_at": "2010-08-30T05:49:07Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_009838.json:
     "title": "Add dual cone computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9838",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
 
-CC:  vbraun
+CC:  @vbraun
 
 This patch allows computing dual cones, including non-strictly convex and non-full-dimensional cases. 
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9839
 archive/issue_comments_097106.json:
 ```json
 {
-    "body": "Attachment [trac_9839_add_dual_cone_computation.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_add_dual_cone_computation.patch) by novoselt created at 2010-08-30 05:53:15",
+    "body": "Attachment [trac_9839_add_dual_cone_computation.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_add_dual_cone_computation.patch) by @novoselt created at 2010-08-30 05:53:15",
     "created_at": "2010-08-30T05:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97106",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9839_add_dual_cone_computation.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_add_dual_cone_computation.patch) by novoselt created at 2010-08-30 05:53:15
+Attachment [trac_9839_add_dual_cone_computation.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_add_dual_cone_computation.patch) by @novoselt created at 2010-08-30 05:53:15
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_097107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97107",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_097108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97108",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_097109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97109",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_097110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97110",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_097111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97111",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -180,16 +180,16 @@ Updated patch
 archive/issue_comments_097112.json:
 ```json
 {
-    "body": "Attachment [trac_9839_reviewer.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.patch) by vbraun created at 2010-08-30 21:02:18\n\nRenamed to `dual_lattice` and added documentation.",
+    "body": "Attachment [trac_9839_reviewer.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.patch) by @vbraun created at 2010-08-30 21:02:18\n\nRenamed to `dual_lattice` and added documentation.",
     "created_at": "2010-08-30T21:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97112",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9839_reviewer.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.patch) by vbraun created at 2010-08-30 21:02:18
+Attachment [trac_9839_reviewer.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.patch) by @vbraun created at 2010-08-30 21:02:18
 
 Renamed to `dual_lattice` and added documentation.
 
@@ -205,7 +205,7 @@ archive/issue_comments_097113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97113",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -218,16 +218,16 @@ Adjusted version
 archive/issue_comments_097114.json:
 ```json
 {
-    "body": "Attachment [trac_9839_reviewer.2.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.2.patch) by novoselt created at 2010-08-31 00:30:43\n\nThank you! I caught a broken link and changed a little bit documentation in lines 1743-1749 of the new patch. If it looks OK, please switch to positive review!",
+    "body": "Attachment [trac_9839_reviewer.2.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.2.patch) by @novoselt created at 2010-08-31 00:30:43\n\nThank you! I caught a broken link and changed a little bit documentation in lines 1743-1749 of the new patch. If it looks OK, please switch to positive review!",
     "created_at": "2010-08-31T00:30:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97114",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9839_reviewer.2.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.2.patch) by novoselt created at 2010-08-31 00:30:43
+Attachment [trac_9839_reviewer.2.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.2.patch) by @novoselt created at 2010-08-31 00:30:43
 
 Thank you! I caught a broken link and changed a little bit documentation in lines 1743-1749 of the new patch. If it looks OK, please switch to positive review!
 
@@ -243,7 +243,7 @@ archive/issue_comments_097115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97115",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_097116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97116",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_097117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97117",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

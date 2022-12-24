@@ -3,7 +3,7 @@
 archive/issues_009220.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nI doubt that it is intended that the names of the variables of a polynomial ring can affect the parent of the result of evaluating such a polynomial:\n\n\n```\nsage: R=QQ['x']\nsage: S=QQ['x','y']\nsage: h=S.0^2\nsage: parent(h(R.0,0))\nMultivariate Polynomial Ring in x, y over Rational Field\n\nsage: R=QQ['x']\nsage: S=QQ['u','v']\nsage: h=S.0^2\nsage: parent(h(R.0,0))\nUnivariate Polynomial Ring in x over Rational Field \n```\n\nI would expect the result of the second example in both cases.\n\nIn\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4607f62126303ddd?pli=1\n\nJohn Cremona mentions #8502 as fixing a different but similar issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9220\n\n",
+    "body": "Assignee: @robertwb\n\nI doubt that it is intended that the names of the variables of a polynomial ring can affect the parent of the result of evaluating such a polynomial:\n\n\n```\nsage: R=QQ['x']\nsage: S=QQ['x','y']\nsage: h=S.0^2\nsage: parent(h(R.0,0))\nMultivariate Polynomial Ring in x, y over Rational Field\n\nsage: R=QQ['x']\nsage: S=QQ['u','v']\nsage: h=S.0^2\nsage: parent(h(R.0,0))\nUnivariate Polynomial Ring in x over Rational Field \n```\n\nI would expect the result of the second example in both cases.\n\nIn\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4607f62126303ddd?pli=1\n\nJohn Cremona mentions #8502 as fixing a different but similar issue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9220\n\n",
     "created_at": "2010-06-11T21:06:02Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_009220.json:
     "title": "Upredictable parent for polynomial evaluation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9220",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 I doubt that it is intended that the names of the variables of a polynomial ring can affect the parent of the result of evaluating such a polynomial:
 
@@ -60,7 +60,7 @@ archive/issue_comments_086392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86392",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_086393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86393",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_086394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86394",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_086395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86395",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_086396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86396",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -198,16 +198,16 @@ To reviewer or merger: feel free to change patch. I won't be touching the code a
 archive/issue_comments_086397.json:
 ```json
 {
-    "body": "Attachment [9220-poly-evaluation-coerce.patch](tarball://root/attachments/some-uuid/ticket9220/9220-poly-evaluation-coerce.patch) by robertwb created at 2010-06-22 23:43:58\n\nadd instead of previous",
+    "body": "Attachment [9220-poly-evaluation-coerce.patch](tarball://root/attachments/some-uuid/ticket9220/9220-poly-evaluation-coerce.patch) by @robertwb created at 2010-06-22 23:43:58\n\nadd instead of previous",
     "created_at": "2010-06-22T23:43:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86397",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9220-poly-evaluation-coerce.patch](tarball://root/attachments/some-uuid/ticket9220/9220-poly-evaluation-coerce.patch) by robertwb created at 2010-06-22 23:43:58
+Attachment [9220-poly-evaluation-coerce.patch](tarball://root/attachments/some-uuid/ticket9220/9220-poly-evaluation-coerce.patch) by @robertwb created at 2010-06-22 23:43:58
 
 add instead of previous
 
@@ -223,7 +223,7 @@ archive/issue_comments_086398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86398",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_086399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86399",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_086402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86402",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_086403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86403",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -338,16 +338,16 @@ errors during apply, please fix and refresh 9220-poly-evaluation-coerce.patch
 archive/issue_comments_086404.json:
 ```json
 {
-    "body": "Attachment [9220-poly-evaluation-coerce-5.4.rebase.patch](tarball://root/attachments/some-uuid/ticket9220/9220-poly-evaluation-coerce-5.4.rebase.patch) by robertwb created at 2012-10-24 07:01:35\n\nRebased on sage-5.4.rc2, apply only this patch.",
+    "body": "Attachment [9220-poly-evaluation-coerce-5.4.rebase.patch](tarball://root/attachments/some-uuid/ticket9220/9220-poly-evaluation-coerce-5.4.rebase.patch) by @robertwb created at 2012-10-24 07:01:35\n\nRebased on sage-5.4.rc2, apply only this patch.",
     "created_at": "2012-10-24T07:01:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86404",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9220-poly-evaluation-coerce-5.4.rebase.patch](tarball://root/attachments/some-uuid/ticket9220/9220-poly-evaluation-coerce-5.4.rebase.patch) by robertwb created at 2012-10-24 07:01:35
+Attachment [9220-poly-evaluation-coerce-5.4.rebase.patch](tarball://root/attachments/some-uuid/ticket9220/9220-poly-evaluation-coerce-5.4.rebase.patch) by @robertwb created at 2012-10-24 07:01:35
 
 Rebased on sage-5.4.rc2, apply only this patch.
 
@@ -363,7 +363,7 @@ archive/issue_comments_086405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86405",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_086406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86406",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_086407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86407",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -436,16 +436,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_086408.json:
 ```json
 {
-    "body": "Attachment [13933-doctests.patch](tarball://root/attachments/some-uuid/ticket9220/13933-doctests.patch) by robertwb created at 2013-01-22 05:24:15\n\nminor docstring fixes",
+    "body": "Attachment [13933-doctests.patch](tarball://root/attachments/some-uuid/ticket9220/13933-doctests.patch) by @robertwb created at 2013-01-22 05:24:15\n\nminor docstring fixes",
     "created_at": "2013-01-22T05:24:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86408",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [13933-doctests.patch](tarball://root/attachments/some-uuid/ticket9220/13933-doctests.patch) by robertwb created at 2013-01-22 05:24:15
+Attachment [13933-doctests.patch](tarball://root/attachments/some-uuid/ticket9220/13933-doctests.patch) by @robertwb created at 2013-01-22 05:24:15
 
 minor docstring fixes
 
@@ -461,7 +461,7 @@ archive/issue_comments_086409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86409",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -479,7 +479,7 @@ archive/issue_comments_086410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86410",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -492,16 +492,16 @@ Minor fixes to docstrings
 archive/issue_comments_086411.json:
 ```json
 {
-    "body": "Attachment [trac_9220-poly_evaluation-review-ts.patch](tarball://root/attachments/some-uuid/ticket9220/trac_9220-poly_evaluation-review-ts.patch) by tscrim created at 2013-01-31 17:12:04\n\nThe rebased version worked for me. I've attached a small reviewer patch which just does the minor tweaks to the docstrings. Jeroen, I hope you don't mind me setting this back to a positive review.\n\nBest,\n\nTravis\n\nFor patchbot:\n\nApply only: 9220-poly-evaluation-coerce-5.4.rebase.patch, trac_9220-poly_evaluation-review-ts.patch",
+    "body": "Attachment [trac_9220-poly_evaluation-review-ts.patch](tarball://root/attachments/some-uuid/ticket9220/trac_9220-poly_evaluation-review-ts.patch) by @tscrim created at 2013-01-31 17:12:04\n\nThe rebased version worked for me. I've attached a small reviewer patch which just does the minor tweaks to the docstrings. Jeroen, I hope you don't mind me setting this back to a positive review.\n\nBest,\n\nTravis\n\nFor patchbot:\n\nApply only: 9220-poly-evaluation-coerce-5.4.rebase.patch, trac_9220-poly_evaluation-review-ts.patch",
     "created_at": "2013-01-31T17:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86411",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_9220-poly_evaluation-review-ts.patch](tarball://root/attachments/some-uuid/ticket9220/trac_9220-poly_evaluation-review-ts.patch) by tscrim created at 2013-01-31 17:12:04
+Attachment [trac_9220-poly_evaluation-review-ts.patch](tarball://root/attachments/some-uuid/ticket9220/trac_9220-poly_evaluation-review-ts.patch) by @tscrim created at 2013-01-31 17:12:04
 
 The rebased version worked for me. I've attached a small reviewer patch which just does the minor tweaks to the docstrings. Jeroen, I hope you don't mind me setting this back to a positive review.
 
@@ -525,7 +525,7 @@ archive/issue_comments_086412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86412",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_086413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9220#issuecomment-86413",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

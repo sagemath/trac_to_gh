@@ -14,7 +14,7 @@ archive/issues_006298.json:
     "title": "create an experimental libcocoa spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6298",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_050250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6298#issuecomment-50250",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_050251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6298#issuecomment-50251",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_050252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6298#issuecomment-50252",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_050253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6298#issuecomment-50253",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

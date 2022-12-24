@@ -3,7 +3,7 @@
 archive/issues_003276.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nFor example: \n\n\n```\nsage: var('n,m')\n(n, m)\nsage: assume(n, m, 'integer')\nsage: sin(n*m*pi)\n0\nsage: forget()\nsage: sin(n*m*pi)\nsin(pi*m*n)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3276\n\n",
+    "body": "Assignee: @garyfurnish\n\nFor example: \n\n\n```\nsage: var('n,m')\n(n, m)\nsage: assume(n, m, 'integer')\nsage: sin(n*m*pi)\n0\nsage: forget()\nsage: sin(n*m*pi)\nsin(pi*m*n)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3276\n\n",
     "created_at": "2008-05-23T08:13:34Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003276.json:
     "title": "[with patch] more generic assumptions in calculus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3276",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 For example: 
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3276
 archive/issue_comments_022658.json:
 ```json
 {
-    "body": "Attachment [3276-assume.patch](tarball://root/attachments/some-uuid/ticket3276/3276-assume.patch) by robertwb created at 2008-05-23 08:16:38",
+    "body": "Attachment [3276-assume.patch](tarball://root/attachments/some-uuid/ticket3276/3276-assume.patch) by @robertwb created at 2008-05-23 08:16:38",
     "created_at": "2008-05-23T08:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3276#issuecomment-22658",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3276-assume.patch](tarball://root/attachments/some-uuid/ticket3276/3276-assume.patch) by robertwb created at 2008-05-23 08:16:38
+Attachment [3276-assume.patch](tarball://root/attachments/some-uuid/ticket3276/3276-assume.patch) by @robertwb created at 2008-05-23 08:16:38
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_022659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3276#issuecomment-22659",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_022660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3276#issuecomment-22660",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_022661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3276#issuecomment-22661",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_022662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3276#issuecomment-22662",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_022663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3276#issuecomment-22663",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_022664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3276#issuecomment-22664",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_022665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3276#issuecomment-22665",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

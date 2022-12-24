@@ -14,7 +14,7 @@ archive/issues_000844.json:
     "title": "dsage -- priority queues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/844",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: yqiang

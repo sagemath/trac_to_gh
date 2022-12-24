@@ -3,7 +3,7 @@
 archive/issues_009721.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  kcrisman leif\n\nReported by Karl-Dieter Crisman on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/7abfbeedb07abb53/a487f3968757f7b4#a487f3968757f7b4):\n\n```\n4.5.3.alpha0 did NOT upgrade successfully for me on OS X 10.6 from\n4.5.2.  See below - though note that Sage does start up properly, and\nsage -i returns (among others)\n\nlibm4ri-20100221\n\nhowever the\n\npycrypto-2.1.0 pynac-0.2.0.p5 sage-4.5.3.alpha0\n\npackages did then not update either, presumably.\n\n- kcrisman\n\nThread model: posix\ngcc version 4.2.1 (Apple Inc. build 5664)\n****************************************************\nStarting build...\nRemoving old PolyBoRi install...\nDone removing old PolyBoRi install.\nRunning build_polybori...\nscons: Reading SConscript files ...\nChecking for C header file gd.h... yes\nChecking for C library gd... no\nChecking for C++ header file ext/hash_map... yes\nWarning: No LaTeX to html converter found, Tutorial will not be installed\nChecking for C library m4ri... no\nChecking for C header file gd.h... yes\nChecking for C library gd... no\nSymlinking to M4RI/m4ri ...\nOSError: [Errno 2] No such file or directory:\n  File \"/Users/.../sage-4.5.2/spkg/build/polybori-0.6.4.p2/src/polybori-0.6.4/SConstruct\", line 421:\n    os.symlink('.', m4ri_inc)\nError building PolyBoRi.\n\nreal    0m1.425s\nuser    0m0.860s\nsys     0m0.473s\nsage: An error occurred while installing polybori-0.6.4.p2\n```\n\nLeif Leonhardy [replied](http://groups.google.com/group/sage-release/browse_thread/thread/7abfbeedb07abb53/69df2817539da964#69df2817539da964):\n\n```\nThat's apparently due to my new (stripped) PolyBoRi spkg (#9472).\n\nI'm currently looking at this, but in principle SCons should find the\n\"external m4ri\" (on MacOS X, too) and not try to use the (now obsolete)\ncopy of it that was included in previous PolyBoRi spkgs. \n```\n\nRelated: #9472.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9721\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kcrisman @nexttime\n\nReported by Karl-Dieter Crisman on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/7abfbeedb07abb53/a487f3968757f7b4#a487f3968757f7b4):\n\n```\n4.5.3.alpha0 did NOT upgrade successfully for me on OS X 10.6 from\n4.5.2.  See below - though note that Sage does start up properly, and\nsage -i returns (among others)\n\nlibm4ri-20100221\n\nhowever the\n\npycrypto-2.1.0 pynac-0.2.0.p5 sage-4.5.3.alpha0\n\npackages did then not update either, presumably.\n\n- kcrisman\n\nThread model: posix\ngcc version 4.2.1 (Apple Inc. build 5664)\n****************************************************\nStarting build...\nRemoving old PolyBoRi install...\nDone removing old PolyBoRi install.\nRunning build_polybori...\nscons: Reading SConscript files ...\nChecking for C header file gd.h... yes\nChecking for C library gd... no\nChecking for C++ header file ext/hash_map... yes\nWarning: No LaTeX to html converter found, Tutorial will not be installed\nChecking for C library m4ri... no\nChecking for C header file gd.h... yes\nChecking for C library gd... no\nSymlinking to M4RI/m4ri ...\nOSError: [Errno 2] No such file or directory:\n  File \"/Users/.../sage-4.5.2/spkg/build/polybori-0.6.4.p2/src/polybori-0.6.4/SConstruct\", line 421:\n    os.symlink('.', m4ri_inc)\nError building PolyBoRi.\n\nreal    0m1.425s\nuser    0m0.860s\nsys     0m0.473s\nsage: An error occurred while installing polybori-0.6.4.p2\n```\n\nLeif Leonhardy [replied](http://groups.google.com/group/sage-release/browse_thread/thread/7abfbeedb07abb53/69df2817539da964#69df2817539da964):\n\n```\nThat's apparently due to my new (stripped) PolyBoRi spkg (#9472).\n\nI'm currently looking at this, but in principle SCons should find the\n\"external m4ri\" (on MacOS X, too) and not try to use the (now obsolete)\ncopy of it that was included in previous PolyBoRi spkgs. \n```\n\nRelated: #9472.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9721\n\n",
     "created_at": "2010-08-11T01:17:29Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009721.json:
     "title": "Problem upgrading from 4.5.2 to 4.5.3.alpha0 on OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9721",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
 
-CC:  kcrisman leif
+CC:  @kcrisman @nexttime
 
 Reported by Karl-Dieter Crisman on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/7abfbeedb07abb53/a487f3968757f7b4#a487f3968757f7b4):
 
@@ -93,7 +93,7 @@ archive/issue_comments_094898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9721#issuecomment-94898",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_094899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9721#issuecomment-94899",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_094900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9721#issuecomment-94900",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_094901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9721#issuecomment-94901",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_094902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9721#issuecomment-94902",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_094903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9721#issuecomment-94903",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_094904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9721#issuecomment-94904",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_094905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9721#issuecomment-94905",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_094906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9721#issuecomment-94906",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

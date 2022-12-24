@@ -3,7 +3,7 @@
 archive/issues_002435.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  gfurnish\n\nThe workaround for the double free in #1337 causes memory leaks if the integer pool is full\n\nIssue created by migration from https://trac.sagemath.org/ticket/2435\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @garyfurnish\n\nThe workaround for the double free in #1337 causes memory leaks if the integer pool is full\n\nIssue created by migration from https://trac.sagemath.org/ticket/2435\n\n",
     "created_at": "2008-03-09T05:32:17Z",
     "labels": [
         "memleak",
@@ -14,12 +14,12 @@ archive/issues_002435.json:
     "title": "Fix memory leak from #1337 workaround",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2435",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
 
-CC:  gfurnish
+CC:  @garyfurnish
 
 The workaround for the double free in #1337 causes memory leaks if the integer pool is full
 
@@ -81,7 +81,7 @@ archive/issue_comments_016473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2435#issuecomment-16473",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_016474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2435#issuecomment-16474",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_016475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2435#issuecomment-16475",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_016476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2435#issuecomment-16476",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_016477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2435#issuecomment-16477",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -184,16 +184,16 @@ Resolution: fixed
 archive/issue_comments_016478.json:
 ```json
 {
-    "body": "Attachment [2435-integer-fix.patch](tarball://root/attachments/some-uuid/ticket2435/2435-integer-fix.patch) by was created at 2008-03-11 15:41:39",
+    "body": "Attachment [2435-integer-fix.patch](tarball://root/attachments/some-uuid/ticket2435/2435-integer-fix.patch) by @williamstein created at 2008-03-11 15:41:39",
     "created_at": "2008-03-11T15:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2435#issuecomment-16478",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [2435-integer-fix.patch](tarball://root/attachments/some-uuid/ticket2435/2435-integer-fix.patch) by was created at 2008-03-11 15:41:39
+Attachment [2435-integer-fix.patch](tarball://root/attachments/some-uuid/ticket2435/2435-integer-fix.patch) by @williamstein created at 2008-03-11 15:41:39
 
 
 
@@ -247,7 +247,7 @@ archive/issue_comments_016481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2435#issuecomment-16481",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

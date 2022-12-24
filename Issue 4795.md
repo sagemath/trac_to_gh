@@ -3,7 +3,7 @@
 archive/issues_004795.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThe modular forms code hasn't really been tested too much with the base ring being a finite field. There was an old file `sage/modular/modform/bugs.py` which contained two tests, both of which fail.\n\nFirst, we have what seems to be an infinite loop:\n\n```\n sage: m = ModularForms(DirichletGroup(8).1,2,GF(7)); m\n   Modular Forms space of dimension 2, character [1, -1] and weight 2 over Finite Field of size 7\n   sage: m.basis()   # this just goes into infinite loop (???)\n```\n\n\nAnd now for a `NotImplementedError` -- the following **should** work but doesn't:\n\n```\n   sage: ModularForms(DirichletGroup(13, GF(7)).0^6,3).base_ring()\n   Finite Field of size 7\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4795\n\n",
+    "body": "Assignee: @craigcitro\n\nThe modular forms code hasn't really been tested too much with the base ring being a finite field. There was an old file `sage/modular/modform/bugs.py` which contained two tests, both of which fail.\n\nFirst, we have what seems to be an infinite loop:\n\n```\n sage: m = ModularForms(DirichletGroup(8).1,2,GF(7)); m\n   Modular Forms space of dimension 2, character [1, -1] and weight 2 over Finite Field of size 7\n   sage: m.basis()   # this just goes into infinite loop (???)\n```\n\n\nAnd now for a `NotImplementedError` -- the following **should** work but doesn't:\n\n```\n   sage: ModularForms(DirichletGroup(13, GF(7)).0^6,3).base_ring()\n   Finite Field of size 7\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4795\n\n",
     "created_at": "2008-12-14T07:55:10Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_004795.json:
     "title": "Modular forms over finite fields need work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4795",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 The modular forms code hasn't really been tested too much with the base ring being a finite field. There was an old file `sage/modular/modform/bugs.py` which contained two tests, both of which fail.
 
@@ -55,7 +55,7 @@ archive/issue_comments_036353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4795#issuecomment-36353",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_036354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4795#issuecomment-36354",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_036355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4795#issuecomment-36355",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

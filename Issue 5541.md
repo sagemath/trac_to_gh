@@ -101,7 +101,7 @@ archive/issue_comments_043107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43107",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -116,16 +116,16 @@ Looks good to me except for two very minor issues, which are taken care of in th
 archive/issue_comments_043108.json:
 ```json
 {
-    "body": "Attachment [5541-referee.patch](tarball://root/attachments/some-uuid/ticket5541/5541-referee.patch) by jhpalmieri created at 2009-03-29 16:27:32",
+    "body": "Attachment [5541-referee.patch](tarball://root/attachments/some-uuid/ticket5541/5541-referee.patch) by @jhpalmieri created at 2009-03-29 16:27:32",
     "created_at": "2009-03-29T16:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43108",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5541-referee.patch](tarball://root/attachments/some-uuid/ticket5541/5541-referee.patch) by jhpalmieri created at 2009-03-29 16:27:32
+Attachment [5541-referee.patch](tarball://root/attachments/some-uuid/ticket5541/5541-referee.patch) by @jhpalmieri created at 2009-03-29 16:27:32
 
 
 
@@ -224,7 +224,7 @@ archive/issue_comments_043111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43111",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_043112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43112",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -255,16 +255,16 @@ Here's a rebased version, plus more.  This includes all of mvngu's work, so he s
 archive/issue_comments_043113.json:
 ```json
 {
-    "body": "Attachment [5541-rebased.patch](tarball://root/attachments/some-uuid/ticket5541/5541-rebased.patch) by jhpalmieri created at 2009-04-01 02:55:19\n\n(this replaces both of the earlier patches)",
+    "body": "Attachment [5541-rebased.patch](tarball://root/attachments/some-uuid/ticket5541/5541-rebased.patch) by @jhpalmieri created at 2009-04-01 02:55:19\n\n(this replaces both of the earlier patches)",
     "created_at": "2009-04-01T02:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43113",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5541-rebased.patch](tarball://root/attachments/some-uuid/ticket5541/5541-rebased.patch) by jhpalmieri created at 2009-04-01 02:55:19
+Attachment [5541-rebased.patch](tarball://root/attachments/some-uuid/ticket5541/5541-rebased.patch) by @jhpalmieri created at 2009-04-01 02:55:19
 
 (this replaces both of the earlier patches)
 
@@ -280,7 +280,7 @@ archive/issue_comments_043114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43114",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -399,16 +399,16 @@ doesn't show up in the [HTML version](http://sage.math.washington.edu/home/mvngu
 archive/issue_comments_043117.json:
 ```json
 {
-    "body": "Attachment [5541-second.patch](tarball://root/attachments/some-uuid/ticket5541/5541-second.patch) by jhpalmieri created at 2009-04-17 03:23:56\n\napply on top of 5541-rebased.patch",
+    "body": "Attachment [5541-second.patch](tarball://root/attachments/some-uuid/ticket5541/5541-second.patch) by @jhpalmieri created at 2009-04-17 03:23:56\n\napply on top of 5541-rebased.patch",
     "created_at": "2009-04-17T03:23:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43117",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5541-second.patch](tarball://root/attachments/some-uuid/ticket5541/5541-second.patch) by jhpalmieri created at 2009-04-17 03:23:56
+Attachment [5541-second.patch](tarball://root/attachments/some-uuid/ticket5541/5541-second.patch) by @jhpalmieri created at 2009-04-17 03:23:56
 
 apply on top of 5541-rebased.patch
 
@@ -424,7 +424,7 @@ archive/issue_comments_043118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43118",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002094.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  dimpase\n\njpeg is a common format that most people keep their pictures in -- let's support it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2094\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @dimpase\n\njpeg is a common format that most people keep their pictures in -- let's support it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2094\n\n",
     "created_at": "2008-02-08T01:21:07Z",
     "labels": [
         "graphics",
@@ -17,9 +17,9 @@ archive/issues_002094.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  dimpase
+CC:  @dimpase
 
 jpeg is a common format that most people keep their pictures in -- let's support it!
 
@@ -115,7 +115,7 @@ archive/issue_comments_013539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2094#issuecomment-13539",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_013544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2094#issuecomment-13544",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_013545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2094#issuecomment-13545",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_013553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2094#issuecomment-13553",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_013554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2094#issuecomment-13554",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_013555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2094#issuecomment-13555",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

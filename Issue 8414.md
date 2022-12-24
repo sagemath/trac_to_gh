@@ -3,7 +3,7 @@
 archive/issues_008414.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\nWeylGroups and WeylGroupElements have a method lattice() and also an attribute _lattice. At one time this pointed to the ambient lattice, but now it points to the ambient space.\n\nFor consistency perhaps the name of the method and attribute should therefore be changed to space(). The patch makes this change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8414\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nWeylGroups and WeylGroupElements have a method lattice() and also an attribute _lattice. At one time this pointed to the ambient lattice, but now it points to the ambient space.\n\nFor consistency perhaps the name of the method and attribute should therefore be changed to space(). The patch makes this change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8414\n\n",
     "created_at": "2010-03-02T01:36:04Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008414.json:
     "title": "lattice -> space in weyl_groups.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8414",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -41,7 +41,7 @@ archive/issue_comments_075385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75385",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing component from algebra to combinatorics.
 archive/issue_comments_075386.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to bump.",
+    "body": "Changing assignee from @aghitza to @dwbump.",
     "created_at": "2010-03-02T01:41:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75386",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Changing assignee from AlexGhitza to bump.
+Changing assignee from @aghitza to @dwbump.
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_075387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75387",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_075388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75388",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_075389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75389",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_075390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75390",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_075391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75391",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_075392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75392",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_075393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75393",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_075394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75394",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_075395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75395",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_075396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75396",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_075397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75397",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_075398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75398",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_075399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75399",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_075400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75400",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_075401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75401",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_075402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75402",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -441,16 +441,16 @@ non-ascii characters which I had to delete before merging his patch.
 archive/issue_comments_075403.json:
 ```json
 {
-    "body": "Attachment [trac_8414_weyl_group_space-review-nt.patch](tarball://root/attachments/some-uuid/ticket8414/trac_8414_weyl_group_space-review-nt.patch) by nthiery created at 2010-04-18 18:09:08",
+    "body": "Attachment [trac_8414_weyl_group_space-review-nt.patch](tarball://root/attachments/some-uuid/ticket8414/trac_8414_weyl_group_space-review-nt.patch) by @nthiery created at 2010-04-18 18:09:08",
     "created_at": "2010-04-18T18:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75403",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8414_weyl_group_space-review-nt.patch](tarball://root/attachments/some-uuid/ticket8414/trac_8414_weyl_group_space-review-nt.patch) by nthiery created at 2010-04-18 18:09:08
+Attachment [trac_8414_weyl_group_space-review-nt.patch](tarball://root/attachments/some-uuid/ticket8414/trac_8414_weyl_group_space-review-nt.patch) by @nthiery created at 2010-04-18 18:09:08
 
 
 
@@ -464,7 +464,7 @@ archive/issue_comments_075404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75404",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_075405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75405",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -505,16 +505,16 @@ Rename lattice() method space() in WeylGroups. Add keys option to reflections()
 archive/issue_comments_075406.json:
 ```json
 {
-    "body": "Attachment [trac_8414_weyl_group_space.patch](tarball://root/attachments/some-uuid/ticket8414/trac_8414_weyl_group_space.patch) by bump created at 2010-04-19 01:21:22\n\n> Please also include #8414: in front of the patch description!\n\nOK, I changed the patch description to begin #8414.",
+    "body": "Attachment [trac_8414_weyl_group_space.patch](tarball://root/attachments/some-uuid/ticket8414/trac_8414_weyl_group_space.patch) by @dwbump created at 2010-04-19 01:21:22\n\n> Please also include #8414: in front of the patch description!\n\nOK, I changed the patch description to begin #8414.",
     "created_at": "2010-04-19T01:21:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75406",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_8414_weyl_group_space.patch](tarball://root/attachments/some-uuid/ticket8414/trac_8414_weyl_group_space.patch) by bump created at 2010-04-19 01:21:22
+Attachment [trac_8414_weyl_group_space.patch](tarball://root/attachments/some-uuid/ticket8414/trac_8414_weyl_group_space.patch) by @dwbump created at 2010-04-19 01:21:22
 
 > Please also include #8414: in front of the patch description!
 
@@ -532,7 +532,7 @@ archive/issue_comments_075407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75407",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_075408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8414#issuecomment-75408",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

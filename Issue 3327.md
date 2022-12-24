@@ -65,7 +65,7 @@ archive/issue_comments_023075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3327#issuecomment-23075",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_023076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3327#issuecomment-23076",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

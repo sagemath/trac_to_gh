@@ -3,7 +3,7 @@
 archive/issues_005462.json:
 ```json
 {
-    "body": "Assignee: cswiercz\n\nCC:  cswiercz\n\nKeywords: clawpack, numerical, differential equations\n\nCLAWPACK (Conservation Laws Package) is a software package designed to compute numerical solutions to hyperbolic partial differential equations using a wave propagation approach.\n\nhttp://www.amath.washington.edu/~claw/\n\nThis ticket will include an spkg containing a C wrapper of Clawpack's Fortran source code as well as a Cython interface for that wrapper. The spkg and C wrapper are part of the Clawpack package. You can obtain the main development branch's source using Subversion:\n\n\n```\n$ svn checkout http://kingkong.amath.washington.edu/svn/claw/trunk/claw\n```\n\n\nCode for creating the wrapper can be found in the clawpack/sageclaw subdirectory.\n\nThe primary developer for this project is Chris Swierczewski <cswiercz`@`gmail.com>.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5462\n\n",
+    "body": "Assignee: @cswiercz\n\nCC:  @cswiercz\n\nKeywords: clawpack, numerical, differential equations\n\nCLAWPACK (Conservation Laws Package) is a software package designed to compute numerical solutions to hyperbolic partial differential equations using a wave propagation approach.\n\nhttp://www.amath.washington.edu/~claw/\n\nThis ticket will include an spkg containing a C wrapper of Clawpack's Fortran source code as well as a Cython interface for that wrapper. The spkg and C wrapper are part of the Clawpack package. You can obtain the main development branch's source using Subversion:\n\n\n```\n$ svn checkout http://kingkong.amath.washington.edu/svn/claw/trunk/claw\n```\n\n\nCode for creating the wrapper can be found in the clawpack/sageclaw subdirectory.\n\nThe primary developer for this project is Chris Swierczewski <cswiercz`@`gmail.com>.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5462\n\n",
     "created_at": "2009-03-09T21:02:43Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_005462.json:
     "title": "[in progress] Add support for Clawpack to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5462",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
-Assignee: cswiercz
+Assignee: @cswiercz
 
-CC:  cswiercz
+CC:  @cswiercz
 
 Keywords: clawpack, numerical, differential equations
 
@@ -86,7 +86,7 @@ archive/issue_comments_042410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5462#issuecomment-42410",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_042411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5462#issuecomment-42411",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_042412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5462#issuecomment-42412",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_042413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5462#issuecomment-42413",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_042414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5462#issuecomment-42414",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_042415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5462#issuecomment-42415",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

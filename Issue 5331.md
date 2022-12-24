@@ -14,7 +14,7 @@ archive/issues_005331.json:
     "title": "[with patch, needs review] update sage_scripts to deal with the new documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5331",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -95,7 +95,7 @@ archive/issue_comments_041036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5331#issuecomment-41036",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -108,16 +108,16 @@ archive/issue_comments_041036.json:
 archive/issue_comments_041037.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-02-22T15:45:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5331#issuecomment-41037",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_041038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5331#issuecomment-41038",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

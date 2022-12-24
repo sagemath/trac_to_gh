@@ -14,7 +14,7 @@ archive/issues_008132.json:
     "title": "fix documentation related to ODE solvers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8132",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 Assignee: mvngu
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8132
 archive/issue_comments_071501.json:
 ```json
 {
-    "body": "Attachment [trac_8132.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132.patch) by robert.marik created at 2010-01-31 00:34:33",
+    "body": "Attachment [trac_8132.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132.patch) by @robert-marik created at 2010-01-31 00:34:33",
     "created_at": "2010-01-31T00:34:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8132#issuecomment-71501",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_8132.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132.patch) by robert.marik created at 2010-01-31 00:34:33
+Attachment [trac_8132.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132.patch) by @robert-marik created at 2010-01-31 00:34:33
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_071502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8132#issuecomment-71502",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_071503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8132#issuecomment-71503",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -90,16 +90,16 @@ this patch
 archive/issue_comments_071504.json:
 ```json
 {
-    "body": "Attachment [trac_8132_fixed_doctests.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132_fixed_doctests.patch) by robert.marik created at 2010-01-31 08:26:03\n\nfixes one failed doctest, apply on the top of previous poatch",
+    "body": "Attachment [trac_8132_fixed_doctests.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132_fixed_doctests.patch) by @robert-marik created at 2010-01-31 08:26:03\n\nfixes one failed doctest, apply on the top of previous poatch",
     "created_at": "2010-01-31T08:26:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8132#issuecomment-71504",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_8132_fixed_doctests.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132_fixed_doctests.patch) by robert.marik created at 2010-01-31 08:26:03
+Attachment [trac_8132_fixed_doctests.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132_fixed_doctests.patch) by @robert-marik created at 2010-01-31 08:26:03
 
 fixes one failed doctest, apply on the top of previous poatch
 
@@ -115,7 +115,7 @@ archive/issue_comments_071505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8132#issuecomment-71505",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_071506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8132#issuecomment-71506",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_071507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8132#issuecomment-71507",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -176,16 +176,16 @@ apply on the top of the previous two patches
 archive/issue_comments_071508.json:
 ```json
 {
-    "body": "Attachment [trac_8132_fixed_reference_manual.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132_fixed_reference_manual.patch) by robert.marik created at 2010-01-31 16:38:06\n\nbtw: the second problem which caused pdf not to build has been fixed by #8021",
+    "body": "Attachment [trac_8132_fixed_reference_manual.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132_fixed_reference_manual.patch) by @robert-marik created at 2010-01-31 16:38:06\n\nbtw: the second problem which caused pdf not to build has been fixed by #8021",
     "created_at": "2010-01-31T16:38:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8132#issuecomment-71508",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_8132_fixed_reference_manual.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132_fixed_reference_manual.patch) by robert.marik created at 2010-01-31 16:38:06
+Attachment [trac_8132_fixed_reference_manual.patch](tarball://root/attachments/some-uuid/ticket8132/trac_8132_fixed_reference_manual.patch) by @robert-marik created at 2010-01-31 16:38:06
 
 btw: the second problem which caused pdf not to build has been fixed by #8021
 
@@ -201,7 +201,7 @@ archive/issue_comments_071509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8132#issuecomment-71509",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_071510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8132",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8132#issuecomment-71510",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005292.json:
     "title": "Error in FractionField conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5292",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -61,7 +61,7 @@ archive/issue_comments_040668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40668",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_040669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40669",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -100,16 +100,16 @@ is still wrong. There are better ways of going about this but at least it doesn'
 archive/issue_comments_040670.json:
 ```json
 {
-    "body": "Attachment [5292-parsing-fix.patch](tarball://root/attachments/some-uuid/ticket5292/5292-parsing-fix.patch) by robertwb created at 2009-02-17 08:19:01",
+    "body": "Attachment [5292-parsing-fix.patch](tarball://root/attachments/some-uuid/ticket5292/5292-parsing-fix.patch) by @robertwb created at 2009-02-17 08:19:01",
     "created_at": "2009-02-17T08:19:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40670",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5292-parsing-fix.patch](tarball://root/attachments/some-uuid/ticket5292/5292-parsing-fix.patch) by robertwb created at 2009-02-17 08:19:01
+Attachment [5292-parsing-fix.patch](tarball://root/attachments/some-uuid/ticket5292/5292-parsing-fix.patch) by @robertwb created at 2009-02-17 08:19:01
 
 
 
@@ -145,7 +145,7 @@ archive/issue_comments_040672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40672",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_040673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40673",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -206,16 +206,16 @@ fixed the previous very broken patch.
 archive/issue_comments_040674.json:
 ```json
 {
-    "body": "Attachment [trac_5292-part2.patch](tarball://root/attachments/some-uuid/ticket5292/trac_5292-part2.patch) by was created at 2009-02-17 23:46:41\n\nI've attached a patch addressing all my remarks.  Somebody review this.  Mabshoff -- apply both patches in order.",
+    "body": "Attachment [trac_5292-part2.patch](tarball://root/attachments/some-uuid/ticket5292/trac_5292-part2.patch) by @williamstein created at 2009-02-17 23:46:41\n\nI've attached a patch addressing all my remarks.  Somebody review this.  Mabshoff -- apply both patches in order.",
     "created_at": "2009-02-17T23:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40674",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5292-part2.patch](tarball://root/attachments/some-uuid/ticket5292/trac_5292-part2.patch) by was created at 2009-02-17 23:46:41
+Attachment [trac_5292-part2.patch](tarball://root/attachments/some-uuid/ticket5292/trac_5292-part2.patch) by @williamstein created at 2009-02-17 23:46:41
 
 I've attached a patch addressing all my remarks.  Somebody review this.  Mabshoff -- apply both patches in order.
 
@@ -231,7 +231,7 @@ archive/issue_comments_040675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40675",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_040676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40676",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

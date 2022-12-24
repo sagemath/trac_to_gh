@@ -14,7 +14,7 @@ archive/issues_003986.json:
     "title": "notebook -- a doc browser bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3986",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -54,7 +54,7 @@ archive/issue_comments_028668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3986#issuecomment-28668",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_028669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3986#issuecomment-28669",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_028670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3986#issuecomment-28670",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_028671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3986#issuecomment-28671",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

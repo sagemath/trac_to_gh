@@ -3,7 +3,7 @@
 archive/issues_007444.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was timdumol\n\nFrom Tim Dumol (also [comment:6:ticket:7343 here]):\n\nCreating and publishing a worksheet, and then searching for it on the /pub/ page causes an HTTP 500. Server logs show:\n\n\n```\n[...]\nFile \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 1652, in render\n            s = render_worksheet_list(ctx.args, pub=True, username=self.username)\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 1483, in render_worksheet_list\n            search=search, reverse=reverse)\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/notebook.py\", line 1292, in worksheet_list_for_public\n            W = [x for x in W if x.satisfies_search(search)]\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/worksheet.py\", line 1977, in satisfies_search\n            + open(filename).read().lower())\nexceptions.IOError: [Errno 2] No such file or directory: '/home/timdumol/.sage/sage_notebook.sagenb/home/pub/0/worksheet.html'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7444\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @TimDumol\n\nFrom Tim Dumol (also [comment:6:ticket:7343 here]):\n\nCreating and publishing a worksheet, and then searching for it on the /pub/ page causes an HTTP 500. Server logs show:\n\n\n```\n[...]\nFile \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 1652, in render\n            s = render_worksheet_list(ctx.args, pub=True, username=self.username)\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 1483, in render_worksheet_list\n            search=search, reverse=reverse)\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/notebook.py\", line 1292, in worksheet_list_for_public\n            W = [x for x in W if x.satisfies_search(search)]\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/worksheet.py\", line 1977, in satisfies_search\n            + open(filename).read().lower())\nexceptions.IOError: [Errno 2] No such file or directory: '/home/timdumol/.sage/sage_notebook.sagenb/home/pub/0/worksheet.html'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7444\n\n",
     "created_at": "2009-11-12T14:02:43Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007444.json:
     "title": "Broken: searching published worksheets after publishing a worksheet for the first time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7444",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
 
-CC:  was timdumol
+CC:  @williamstein @TimDumol
 
 From Tim Dumol (also [comment:6:ticket:7343 here]):
 
@@ -56,7 +56,7 @@ archive/issue_comments_062671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62671",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_062672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62672",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -87,16 +87,16 @@ Changing status from new to needs_review.
 archive/issue_comments_062673.json:
 ```json
 {
-    "body": "Attachment [trac_7444-search_after_publish.patch](tarball://root/attachments/some-uuid/ticket7444/trac_7444-search_after_publish.patch) by mpatel created at 2009-11-12 14:33:03\n\nNotes:\n\n* This depends on #7428.\n* I assume it's OK to call `worksheet.save` in `notebook._initialize_worksheet`.\n* `TestWorksheetList.test_searching_for_worksheets` no longer fails --- it now yields an error.",
+    "body": "Attachment [trac_7444-search_after_publish.patch](tarball://root/attachments/some-uuid/ticket7444/trac_7444-search_after_publish.patch) by @qed777 created at 2009-11-12 14:33:03\n\nNotes:\n\n* This depends on #7428.\n* I assume it's OK to call `worksheet.save` in `notebook._initialize_worksheet`.\n* `TestWorksheetList.test_searching_for_worksheets` no longer fails --- it now yields an error.",
     "created_at": "2009-11-12T14:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62673",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7444-search_after_publish.patch](tarball://root/attachments/some-uuid/ticket7444/trac_7444-search_after_publish.patch) by mpatel created at 2009-11-12 14:33:03
+Attachment [trac_7444-search_after_publish.patch](tarball://root/attachments/some-uuid/ticket7444/trac_7444-search_after_publish.patch) by @qed777 created at 2009-11-12 14:33:03
 
 Notes:
 
@@ -116,7 +116,7 @@ archive/issue_comments_062674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62674",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_062675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62675",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_062676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62676",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

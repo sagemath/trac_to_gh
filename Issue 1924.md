@@ -3,7 +3,7 @@
 archive/issues_001924.json:
 ```json
 {
-    "body": "Assignee: was\n\nToday in the sage seminar Cl\u00e9ment Pernet demonstrated that in the naive matrix multiply algorithm (used as a basecase for all others)\n\nSpecifically, for computing C = A*B,\n\n\n```\nfor i in A.nrows:\n    for j in B.ncols:\n        for k in B.nrows:\n            C[i,j] += A[i,k] * B[k,j]\n```\n\n\nis bad for the cache as one is iterating over the columns of B in the inner loop. Changing this to \n\n\n```\nfor i in A.nrows:\n    for k in B.nrows:\n        for j in B.ncols:\n            C[i,j] += A[i,k] * B[k,j]\n```\n\n\ngives the same result, but much better cache performance.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1924\n\n",
+    "body": "Assignee: @williamstein\n\nToday in the sage seminar Cl\u00e9ment Pernet demonstrated that in the naive matrix multiply algorithm (used as a basecase for all others)\n\nSpecifically, for computing C = A*B,\n\n\n```\nfor i in A.nrows:\n    for j in B.ncols:\n        for k in B.nrows:\n            C[i,j] += A[i,k] * B[k,j]\n```\n\n\nis bad for the cache as one is iterating over the columns of B in the inner loop. Changing this to \n\n\n```\nfor i in A.nrows:\n    for k in B.nrows:\n        for j in B.ncols:\n            C[i,j] += A[i,k] * B[k,j]\n```\n\n\ngives the same result, but much better cache performance.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1924\n\n",
     "created_at": "2008-01-25T10:45:12Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001924.json:
     "title": "Optimize matrix multiply cache friendliness",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1924",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Today in the sage seminar Clément Pernet demonstrated that in the naive matrix multiply algorithm (used as a basecase for all others)
 
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1924
 archive/issue_comments_012202.json:
 ```json
 {
-    "body": "Attachment [1924-matrix-mul-loop-order.patch](tarball://root/attachments/some-uuid/ticket1924/1924-matrix-mul-loop-order.patch) by robertwb created at 2008-01-25 10:46:06",
+    "body": "Attachment [1924-matrix-mul-loop-order.patch](tarball://root/attachments/some-uuid/ticket1924/1924-matrix-mul-loop-order.patch) by @robertwb created at 2008-01-25 10:46:06",
     "created_at": "2008-01-25T10:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1924#issuecomment-12202",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1924-matrix-mul-loop-order.patch](tarball://root/attachments/some-uuid/ticket1924/1924-matrix-mul-loop-order.patch) by robertwb created at 2008-01-25 10:46:06
+Attachment [1924-matrix-mul-loop-order.patch](tarball://root/attachments/some-uuid/ticket1924/1924-matrix-mul-loop-order.patch) by @robertwb created at 2008-01-25 10:46:06
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_012203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1924#issuecomment-12203",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_012204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1924#issuecomment-12204",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -110,16 +110,16 @@ The above patch integrates this loop-order change into the modn case, reducing t
 archive/issue_comments_012205.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2008-01-25T10:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1924#issuecomment-12205",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -168,7 +168,7 @@ archive/issue_comments_012207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1924#issuecomment-12207",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -181,16 +181,16 @@ I just applied the patch (which works fine for me), then exported it again.  May
 archive/issue_comments_012208.json:
 ```json
 {
-    "body": "Attachment [trac-1924-fixed_I_think.patch](tarball://root/attachments/some-uuid/ticket1924/trac-1924-fixed_I_think.patch) by was created at 2008-01-25 13:24:29\n\nI just applied the patch without any funny business to 2.10:\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1924/1924-matrix-mul-loop-order.patch?format=raw')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/1924/1924-matrix-mul-loop-order.patch?format=raw\nLoading: [..]\ncd \"/Users/was/s/devel/sage\" && hg status\ncd \"/Users/was/s/devel/sage\" && hg status\ncd \"/Users/was/s/devel/sage\" && hg import   \"/Users/was/.sage/temp/teragon.local/47537/tmp_1.patch\"\napplying /Users/was/.sage/temp/teragon.local/47537/tmp_1.patch\n```\n\n\nAfter applying the patch I do *not* have a line like this:\n\n```\n def mod_int A_row_k,\n```\n\nThis is because the first part of the diff adds that line, but the\nsecond part removes it.  \n\nBy the way, on my laptop before and after applying this patch:\n\nBEFORE:\n\n```\nsage: sage: a = random_matrix(GF(101),500); b = random_matrix(GF(101),500)\nsage: sage: time c=a*b\nCPU times: user 0.38 s, sys: 0.02 s, total: 0.40 s\nWall time: 0.42\nsage: sage: a = random_matrix(GF(101),1000); b = random_matrix(GF(101),1000)\nsage: sage: time c=a*b\nCPU times: user 2.63 s, sys: 0.13 s, total: 2.76 s\nWall time: 2.78\n```\n\n\nAFTER:\n\n```\nsage: a = random_matrix(GF(101),500); b = random_matrix(GF(101),500)\nsage: time c=a*b\nCPU times: user 0.23 s, sys: 0.02 s, total: 0.25 s\nWall time: 0.25\nsage: a = random_matrix(GF(101),1000); b = random_matrix(GF(101),1000)\nsage: time c=a*b\nCPU times: user 1.60 s, sys: 0.13 s, total: 1.73 s\nWall time: 1.73\n```\n\n\nNot bad for basically swapping the order of two for loops!",
+    "body": "Attachment [trac-1924-fixed_I_think.patch](tarball://root/attachments/some-uuid/ticket1924/trac-1924-fixed_I_think.patch) by @williamstein created at 2008-01-25 13:24:29\n\nI just applied the patch without any funny business to 2.10:\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1924/1924-matrix-mul-loop-order.patch?format=raw')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/1924/1924-matrix-mul-loop-order.patch?format=raw\nLoading: [..]\ncd \"/Users/was/s/devel/sage\" && hg status\ncd \"/Users/was/s/devel/sage\" && hg status\ncd \"/Users/was/s/devel/sage\" && hg import   \"/Users/was/.sage/temp/teragon.local/47537/tmp_1.patch\"\napplying /Users/was/.sage/temp/teragon.local/47537/tmp_1.patch\n```\n\n\nAfter applying the patch I do *not* have a line like this:\n\n```\n def mod_int A_row_k,\n```\n\nThis is because the first part of the diff adds that line, but the\nsecond part removes it.  \n\nBy the way, on my laptop before and after applying this patch:\n\nBEFORE:\n\n```\nsage: sage: a = random_matrix(GF(101),500); b = random_matrix(GF(101),500)\nsage: sage: time c=a*b\nCPU times: user 0.38 s, sys: 0.02 s, total: 0.40 s\nWall time: 0.42\nsage: sage: a = random_matrix(GF(101),1000); b = random_matrix(GF(101),1000)\nsage: sage: time c=a*b\nCPU times: user 2.63 s, sys: 0.13 s, total: 2.76 s\nWall time: 2.78\n```\n\n\nAFTER:\n\n```\nsage: a = random_matrix(GF(101),500); b = random_matrix(GF(101),500)\nsage: time c=a*b\nCPU times: user 0.23 s, sys: 0.02 s, total: 0.25 s\nWall time: 0.25\nsage: a = random_matrix(GF(101),1000); b = random_matrix(GF(101),1000)\nsage: time c=a*b\nCPU times: user 1.60 s, sys: 0.13 s, total: 1.73 s\nWall time: 1.73\n```\n\n\nNot bad for basically swapping the order of two for loops!",
     "created_at": "2008-01-25T13:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1924#issuecomment-12208",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1924-fixed_I_think.patch](tarball://root/attachments/some-uuid/ticket1924/trac-1924-fixed_I_think.patch) by was created at 2008-01-25 13:24:29
+Attachment [trac-1924-fixed_I_think.patch](tarball://root/attachments/some-uuid/ticket1924/trac-1924-fixed_I_think.patch) by @williamstein created at 2008-01-25 13:24:29
 
 I just applied the patch without any funny business to 2.10:
 
@@ -258,7 +258,7 @@ archive/issue_comments_012209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1924#issuecomment-12209",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_012210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1924#issuecomment-12210",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_012214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1924#issuecomment-12214",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

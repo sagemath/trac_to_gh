@@ -14,7 +14,7 @@ archive/issues_000570.json:
     "title": "rubik.solve doesn't work (sage -t --long groups/perm_gps/cubegroup.py  fails.)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/570",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -67,16 +67,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/570
 archive/issue_comments_002953.json:
 ```json
 {
-    "body": "Attachment [cube-trac570fix-20070905.hg](tarball://root/attachments/some-uuid/ticket570/cube-trac570fix-20070905.hg) by wdj created at 2007-09-06 01:52:44",
+    "body": "Attachment [cube-trac570fix-20070905.hg](tarball://root/attachments/some-uuid/ticket570/cube-trac570fix-20070905.hg) by @wdjoyner created at 2007-09-06 01:52:44",
     "created_at": "2007-09-06T01:52:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/570#issuecomment-2953",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [cube-trac570fix-20070905.hg](tarball://root/attachments/some-uuid/ticket570/cube-trac570fix-20070905.hg) by wdj created at 2007-09-06 01:52:44
+Attachment [cube-trac570fix-20070905.hg](tarball://root/attachments/some-uuid/ticket570/cube-trac570fix-20070905.hg) by @wdjoyner created at 2007-09-06 01:52:44
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_002954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/570#issuecomment-2954",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -115,16 +115,16 @@ Total time for all tests: 31.2 seconds
 archive/issue_comments_002955.json:
 ```json
 {
-    "body": "Attachment [cubegroup-fix.hg](tarball://root/attachments/some-uuid/ticket570/cubegroup-fix.hg) by robertwb created at 2007-09-06 19:19:47",
+    "body": "Attachment [cubegroup-fix.hg](tarball://root/attachments/some-uuid/ticket570/cubegroup-fix.hg) by @robertwb created at 2007-09-06 19:19:47",
     "created_at": "2007-09-06T19:19:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/570#issuecomment-2955",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [cubegroup-fix.hg](tarball://root/attachments/some-uuid/ticket570/cubegroup-fix.hg) by robertwb created at 2007-09-06 19:19:47
+Attachment [cubegroup-fix.hg](tarball://root/attachments/some-uuid/ticket570/cubegroup-fix.hg) by @robertwb created at 2007-09-06 19:19:47
 
 
 
@@ -138,7 +138,7 @@ archive/issue_comments_002956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/570#issuecomment-2956",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_002957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/570#issuecomment-2957",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_002958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/570#issuecomment-2958",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_002959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/570#issuecomment-2959",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_002960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/570#issuecomment-2960",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_002961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/570#issuecomment-2961",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

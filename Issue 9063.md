@@ -3,7 +3,7 @@
 archive/issues_009063.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nIf you create a polynomial in one variable over a finite field and ask for the denominator, then the answer you get has the wrong type when the polynomial is the zero polynomial.  Here's an example:\n\n\n```\nsage: R.<t> = GF(5)['t']\nsage: x = R(0)\nsage: type(x.denominator())\n<type 'int'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9063\n\n",
+    "body": "Assignee: @aghitza\n\nIf you create a polynomial in one variable over a finite field and ask for the denominator, then the answer you get has the wrong type when the polynomial is the zero polynomial.  Here's an example:\n\n\n```\nsage: R.<t> = GF(5)['t']\nsage: x = R(0)\nsage: type(x.denominator())\n<type 'int'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9063\n\n",
     "created_at": "2010-05-27T06:51:35Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_009063.json:
     "user": "cjh"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 If you create a polynomial in one variable over a finite field and ask for the denominator, then the answer you get has the wrong type when the polynomial is the zero polynomial.  Here's an example:
 
@@ -46,7 +46,7 @@ archive/issue_comments_084091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84091",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_084092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84092",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -77,16 +77,16 @@ Changing status from new to needs_review.
 archive/issue_comments_084093.json:
 ```json
 {
-    "body": "Attachment [trac_9063.patch](tarball://root/attachments/some-uuid/ticket9063/trac_9063.patch) by lftabera created at 2010-06-24 11:26:48\n\nCorrected a typo in documentation",
+    "body": "Attachment [trac_9063.patch](tarball://root/attachments/some-uuid/ticket9063/trac_9063.patch) by @lftabera created at 2010-06-24 11:26:48\n\nCorrected a typo in documentation",
     "created_at": "2010-06-24T11:26:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84093",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [trac_9063.patch](tarball://root/attachments/some-uuid/ticket9063/trac_9063.patch) by lftabera created at 2010-06-24 11:26:48
+Attachment [trac_9063.patch](tarball://root/attachments/some-uuid/ticket9063/trac_9063.patch) by @lftabera created at 2010-06-24 11:26:48
 
 Corrected a typo in documentation
 
@@ -102,7 +102,7 @@ archive/issue_comments_084094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84094",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_084095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84095",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_084096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84096",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_084097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84097",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_084098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84098",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_084099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84099",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_084100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84100",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -331,16 +331,16 @@ What do you exactly mean? I think this is the correct wayy to go. The problem ma
 archive/issue_comments_084101.json:
 ```json
 {
-    "body": "Attachment [weak-popof-form.patch](tarball://root/attachments/some-uuid/ticket9063/weak-popof-form.patch) by lftabera created at 2010-09-03 11:37:47\n\nI have attached another patch that solves the problem in weak_popov_form.\n\nI follow the python mantra of 'explicit better than implicit'. The algorithm expects as entries a matrix with rational functions as entries.\n\nIf the entries are polynomials, then the algorithm may fail because the denominators will be elements in a field and currently sage does not consider this case for all fields.\n\nNow, the algorithm first transforms the input matrix to a matrix with rational functions as entries which is the domain the algorithm is expected to work. The denominators will then be polynomials and the algorithm will work as expected.\n\nI have added a doctest to check that the output is the same in the polynomial and rational function case.\n\nAs a side effect, I correct a typo in the documentation of weak_popov_form. The documentation asserts that the output is (W, N, t) where W and N are matrices of rational functions. In fact, N is a matrix of polynomials.\n\nBoth patches can be applied in any order. With this patch bug #9819 does not apply.",
+    "body": "Attachment [weak-popof-form.patch](tarball://root/attachments/some-uuid/ticket9063/weak-popof-form.patch) by @lftabera created at 2010-09-03 11:37:47\n\nI have attached another patch that solves the problem in weak_popov_form.\n\nI follow the python mantra of 'explicit better than implicit'. The algorithm expects as entries a matrix with rational functions as entries.\n\nIf the entries are polynomials, then the algorithm may fail because the denominators will be elements in a field and currently sage does not consider this case for all fields.\n\nNow, the algorithm first transforms the input matrix to a matrix with rational functions as entries which is the domain the algorithm is expected to work. The denominators will then be polynomials and the algorithm will work as expected.\n\nI have added a doctest to check that the output is the same in the polynomial and rational function case.\n\nAs a side effect, I correct a typo in the documentation of weak_popov_form. The documentation asserts that the output is (W, N, t) where W and N are matrices of rational functions. In fact, N is a matrix of polynomials.\n\nBoth patches can be applied in any order. With this patch bug #9819 does not apply.",
     "created_at": "2010-09-03T11:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84101",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [weak-popof-form.patch](tarball://root/attachments/some-uuid/ticket9063/weak-popof-form.patch) by lftabera created at 2010-09-03 11:37:47
+Attachment [weak-popof-form.patch](tarball://root/attachments/some-uuid/ticket9063/weak-popof-form.patch) by @lftabera created at 2010-09-03 11:37:47
 
 I have attached another patch that solves the problem in weak_popov_form.
 
@@ -368,7 +368,7 @@ archive/issue_comments_084102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84102",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_084103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84103",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_084104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84104",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -419,16 +419,16 @@ Can't we just avoid clearing the denominators if `R` (in the first line) is a fi
 archive/issue_comments_084105.json:
 ```json
 {
-    "body": "Attachment [weak-popof-form.2.patch](tarball://root/attachments/some-uuid/ticket9063/weak-popof-form.2.patch) by lftabera created at 2010-10-08 16:08:52\n\nI have added a new patch to weak_popov_form so it does not perform any cleaning of denominadors when the matrix has polynomial entries.\n\nApply:\n\n\ntrac_9063.patch\n\nweak-popof-form.2.patch\n\nIn any order",
+    "body": "Attachment [weak-popof-form.2.patch](tarball://root/attachments/some-uuid/ticket9063/weak-popof-form.2.patch) by @lftabera created at 2010-10-08 16:08:52\n\nI have added a new patch to weak_popov_form so it does not perform any cleaning of denominadors when the matrix has polynomial entries.\n\nApply:\n\n\ntrac_9063.patch\n\nweak-popof-form.2.patch\n\nIn any order",
     "created_at": "2010-10-08T16:08:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84105",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [weak-popof-form.2.patch](tarball://root/attachments/some-uuid/ticket9063/weak-popof-form.2.patch) by lftabera created at 2010-10-08 16:08:52
+Attachment [weak-popof-form.2.patch](tarball://root/attachments/some-uuid/ticket9063/weak-popof-form.2.patch) by @lftabera created at 2010-10-08 16:08:52
 
 I have added a new patch to weak_popov_form so it does not perform any cleaning of denominadors when the matrix has polynomial entries.
 
@@ -453,7 +453,7 @@ archive/issue_comments_084106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84106",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -579,7 +579,7 @@ archive/issue_comments_084111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84111",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_084112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84112",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -615,7 +615,7 @@ archive/issue_comments_084113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9063#issuecomment-84113",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

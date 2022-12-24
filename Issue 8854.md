@@ -3,7 +3,7 @@
 archive/issues_008854.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jpflori dimpase\n\nThe segfault occurred when trying to get the timings from all of the mirrors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8854\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  jpflori @dimpase\n\nThe segfault occurred when trying to get the timings from all of the mirrors.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8854\n\n",
     "created_at": "2010-05-03T12:32:08Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008854.json:
     "title": "sage -upgrade segfaults on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8854",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jpflori dimpase
+CC:  jpflori @dimpase
 
 The segfault occurred when trying to get the timings from all of the mirrors.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8854
 archive/issue_comments_081369.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to tbd.",
+    "body": "Changing assignee from @aghitza to tbd.",
     "created_at": "2010-09-02T10:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8854#issuecomment-81369",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from AlexGhitza to tbd.
+Changing assignee from @aghitza to tbd.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_081370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8854#issuecomment-81370",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_081371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8854#issuecomment-81371",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_081372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8854#issuecomment-81372",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_081373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8854#issuecomment-81373",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_081374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8854#issuecomment-81374",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_081377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8854#issuecomment-81377",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

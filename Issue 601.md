@@ -14,7 +14,7 @@ archive/issues_000601.json:
     "title": "bug -- caused by fixing#549 -- now there is too much space around output.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/601",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -57,7 +57,7 @@ archive/issue_comments_003104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/601#issuecomment-3104",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

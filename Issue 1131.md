@@ -3,7 +3,7 @@
 archive/issues_001131.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1131\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1131\n\n",
     "created_at": "2007-11-08T22:18:04Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001131.json:
     "title": "[with patch] EllipticCurve.order alias for EllipticCurve.cardinality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1131",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -50,16 +50,16 @@ Attachment [ell_order.patch](tarball://root/attachments/some-uuid/ticket1131/ell
 archive/issue_comments_006858.json:
 ```json
 {
-    "body": "Attachment [1131-alt.patch](tarball://root/attachments/some-uuid/ticket1131/1131-alt.patch) by robertwb created at 2007-11-18 08:59:27",
+    "body": "Attachment [1131-alt.patch](tarball://root/attachments/some-uuid/ticket1131/1131-alt.patch) by @robertwb created at 2007-11-18 08:59:27",
     "created_at": "2007-11-18T08:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1131#issuecomment-6858",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1131-alt.patch](tarball://root/attachments/some-uuid/ticket1131/1131-alt.patch) by robertwb created at 2007-11-18 08:59:27
+Attachment [1131-alt.patch](tarball://root/attachments/some-uuid/ticket1131/1131-alt.patch) by @robertwb created at 2007-11-18 08:59:27
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_006859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1131#issuecomment-6859",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

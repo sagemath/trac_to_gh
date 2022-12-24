@@ -14,7 +14,7 @@ archive/issues_007975.json:
     "title": "remove dsage from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7975",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -47,7 +47,7 @@ archive/issue_comments_069570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7975#issuecomment-69570",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -60,16 +60,16 @@ Reminder to anyone who wants to deal with this: in addition to removing any actu
 archive/issue_comments_069571.json:
 ```json
 {
-    "body": "Attachment [sagelib-7975-part2-DOCUMENTATION.patch](tarball://root/attachments/some-uuid/ticket7975/sagelib-7975-part2-DOCUMENTATION.patch) by was created at 2010-01-19 06:27:38",
+    "body": "Attachment [sagelib-7975-part2-DOCUMENTATION.patch](tarball://root/attachments/some-uuid/ticket7975/sagelib-7975-part2-DOCUMENTATION.patch) by @williamstein created at 2010-01-19 06:27:38",
     "created_at": "2010-01-19T06:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7975#issuecomment-69571",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagelib-7975-part2-DOCUMENTATION.patch](tarball://root/attachments/some-uuid/ticket7975/sagelib-7975-part2-DOCUMENTATION.patch) by was created at 2010-01-19 06:27:38
+Attachment [sagelib-7975-part2-DOCUMENTATION.patch](tarball://root/attachments/some-uuid/ticket7975/sagelib-7975-part2-DOCUMENTATION.patch) by @williamstein created at 2010-01-19 06:27:38
 
 
 
@@ -83,7 +83,7 @@ archive/issue_comments_069572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7975#issuecomment-69572",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -96,16 +96,16 @@ This is the new deps file, which is fine assuming you didn't change the deps fil
 archive/issue_comments_069573.json:
 ```json
 {
-    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket7975/deps) by was created at 2010-01-19 06:40:31\n\nThis is the new spkg/install file, which is fine assuming you didn't change the install file in making the 4.3.1.rc1 release (I just took 4.3.1.rc0's install and fixed it).",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket7975/deps) by @williamstein created at 2010-01-19 06:40:31\n\nThis is the new spkg/install file, which is fine assuming you didn't change the install file in making the 4.3.1.rc1 release (I just took 4.3.1.rc0's install and fixed it).",
     "created_at": "2010-01-19T06:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7975#issuecomment-69573",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [deps](tarball://root/attachments/some-uuid/ticket7975/deps) by was created at 2010-01-19 06:40:31
+Attachment [deps](tarball://root/attachments/some-uuid/ticket7975/deps) by @williamstein created at 2010-01-19 06:40:31
 
 This is the new spkg/install file, which is fine assuming you didn't change the install file in making the 4.3.1.rc1 release (I just took 4.3.1.rc0's install and fixed it).
 
@@ -116,16 +116,16 @@ This is the new spkg/install file, which is fine assuming you didn't change the 
 archive/issue_comments_069574.json:
 ```json
 {
-    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket7975/install) by was created at 2010-01-19 07:17:21",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket7975/install) by @williamstein created at 2010-01-19 07:17:21",
     "created_at": "2010-01-19T07:17:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7975#issuecomment-69574",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [install](tarball://root/attachments/some-uuid/ticket7975/install) by was created at 2010-01-19 07:17:21
+Attachment [install](tarball://root/attachments/some-uuid/ticket7975/install) by @williamstein created at 2010-01-19 07:17:21
 
 
 
@@ -134,16 +134,16 @@ Attachment [install](tarball://root/attachments/some-uuid/ticket7975/install) by
 archive/issue_comments_069575.json:
 ```json
 {
-    "body": "Attachment [sagenb-7975.patch](tarball://root/attachments/some-uuid/ticket7975/sagenb-7975.patch) by was created at 2010-01-19 07:20:24\n\nSee http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.6.spkg for the new sagenb spkg.",
+    "body": "Attachment [sagenb-7975.patch](tarball://root/attachments/some-uuid/ticket7975/sagenb-7975.patch) by @williamstein created at 2010-01-19 07:20:24\n\nSee http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.6.spkg for the new sagenb spkg.",
     "created_at": "2010-01-19T07:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7975#issuecomment-69575",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb-7975.patch](tarball://root/attachments/some-uuid/ticket7975/sagenb-7975.patch) by was created at 2010-01-19 07:20:24
+Attachment [sagenb-7975.patch](tarball://root/attachments/some-uuid/ticket7975/sagenb-7975.patch) by @williamstein created at 2010-01-19 07:20:24
 
 See http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.6.spkg for the new sagenb spkg.
 
@@ -159,7 +159,7 @@ archive/issue_comments_069576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7975#issuecomment-69576",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -172,16 +172,16 @@ Changing status from new to needs_review.
 archive/issue_comments_069577.json:
 ```json
 {
-    "body": "Attachment [scripts-7975.patch](tarball://root/attachments/some-uuid/ticket7975/scripts-7975.patch) by was created at 2010-01-19 07:29:35",
+    "body": "Attachment [scripts-7975.patch](tarball://root/attachments/some-uuid/ticket7975/scripts-7975.patch) by @williamstein created at 2010-01-19 07:29:35",
     "created_at": "2010-01-19T07:29:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7975#issuecomment-69577",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-7975.patch](tarball://root/attachments/some-uuid/ticket7975/scripts-7975.patch) by was created at 2010-01-19 07:29:35
+Attachment [scripts-7975.patch](tarball://root/attachments/some-uuid/ticket7975/scripts-7975.patch) by @williamstein created at 2010-01-19 07:29:35
 
 
 
@@ -195,7 +195,7 @@ archive/issue_comments_069578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7975#issuecomment-69578",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_069579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7975#issuecomment-69579",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

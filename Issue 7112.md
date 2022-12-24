@@ -14,7 +14,7 @@ archive/issues_007112.json:
     "title": "os x 10.5 powerpc -- there are many many doctest failures all over",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7112",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7112
 archive/issue_comments_058942.json:
 ```json
 {
-    "body": "Attachment [trac_7112.patch](tarball://root/attachments/some-uuid/ticket7112/trac_7112.patch) by was created at 2009-10-07 12:15:31\n\nwith this patch applied all doctest pass for me on OS X 10.5 PPC",
+    "body": "Attachment [trac_7112.patch](tarball://root/attachments/some-uuid/ticket7112/trac_7112.patch) by @williamstein created at 2009-10-07 12:15:31\n\nwith this patch applied all doctest pass for me on OS X 10.5 PPC",
     "created_at": "2009-10-07T12:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7112#issuecomment-58942",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7112.patch](tarball://root/attachments/some-uuid/ticket7112/trac_7112.patch) by was created at 2009-10-07 12:15:31
+Attachment [trac_7112.patch](tarball://root/attachments/some-uuid/ticket7112/trac_7112.patch) by @williamstein created at 2009-10-07 12:15:31
 
 with this patch applied all doctest pass for me on OS X 10.5 PPC
 
@@ -77,7 +77,7 @@ archive/issue_comments_058943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7112#issuecomment-58943",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_058944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7112#issuecomment-58944",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,16 +120,16 @@ needed so that all tests also pass on sage.math.
 archive/issue_comments_058945.json:
 ```json
 {
-    "body": "Attachment [trac_7112-part2.patch](tarball://root/attachments/some-uuid/ticket7112/trac_7112-part2.patch) by was created at 2009-10-07 12:57:20\n\n(Note that I already merged this in sage-4.1.2.rc1.alpha3.  However, it awaits review before I'll release sage-4.1.2.)",
+    "body": "Attachment [trac_7112-part2.patch](tarball://root/attachments/some-uuid/ticket7112/trac_7112-part2.patch) by @williamstein created at 2009-10-07 12:57:20\n\n(Note that I already merged this in sage-4.1.2.rc1.alpha3.  However, it awaits review before I'll release sage-4.1.2.)",
     "created_at": "2009-10-07T12:57:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7112#issuecomment-58945",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7112-part2.patch](tarball://root/attachments/some-uuid/ticket7112/trac_7112-part2.patch) by was created at 2009-10-07 12:57:20
+Attachment [trac_7112-part2.patch](tarball://root/attachments/some-uuid/ticket7112/trac_7112-part2.patch) by @williamstein created at 2009-10-07 12:57:20
 
 (Note that I already merged this in sage-4.1.2.rc1.alpha3.  However, it awaits review before I'll release sage-4.1.2.)
 
@@ -145,7 +145,7 @@ archive/issue_comments_058946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7112#issuecomment-58946",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_058947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7112#issuecomment-58947",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_058948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7112#issuecomment-58948",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_058949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7112#issuecomment-58949",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_058950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7112#issuecomment-58950",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_058955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7112#issuecomment-58955",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

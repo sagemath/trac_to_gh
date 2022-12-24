@@ -3,7 +3,7 @@
 archive/issues_005476.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: k.<a> = GF(9); R.<x> = k[]\nsage: HyperellipticCurve(x^3 + x - 1, x+a).jacobian().dimension()\nboom!\n```\n\n\nThis was found during Alex G.'s talk at Sage Days 14.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5476\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: k.<a> = GF(9); R.<x> = k[]\nsage: HyperellipticCurve(x^3 + x - 1, x+a).jacobian().dimension()\nboom!\n```\n\n\nThis was found during Alex G.'s talk at Sage Days 14.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5476\n\n",
     "created_at": "2009-03-10T22:02:08Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_005476.json:
     "title": "dimension of jacobian of curves broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5476",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5476
 archive/issue_comments_042477.json:
 ```json
 {
-    "body": "Attachment [trac_5476.patch](tarball://root/attachments/some-uuid/ticket5476/trac_5476.patch) by was created at 2009-03-10 22:03:24",
+    "body": "Attachment [trac_5476.patch](tarball://root/attachments/some-uuid/ticket5476/trac_5476.patch) by @williamstein created at 2009-03-10 22:03:24",
     "created_at": "2009-03-10T22:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5476#issuecomment-42477",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5476.patch](tarball://root/attachments/some-uuid/ticket5476/trac_5476.patch) by was created at 2009-03-10 22:03:24
+Attachment [trac_5476.patch](tarball://root/attachments/some-uuid/ticket5476/trac_5476.patch) by @williamstein created at 2009-03-10 22:03:24
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_042478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5476#issuecomment-42478",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

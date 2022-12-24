@@ -14,7 +14,7 @@ archive/issues_009060.json:
     "title": "break symmetries in subgraph search",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9060",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -43,7 +43,7 @@ archive/issue_comments_084060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9060#issuecomment-84060",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

@@ -37,7 +37,7 @@ archive/issue_comments_059878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7218#issuecomment-59878",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing keywords from "" to "spanish".
 archive/issue_comments_059879.json:
 ```json
 {
-    "body": "Attachment [half_integral.rst](tarball://root/attachments/some-uuid/ticket7218/half_integral.rst) by chapoton created at 2014-07-18 12:50:46",
+    "body": "Attachment [half_integral.rst](tarball://root/attachments/some-uuid/ticket7218/half_integral.rst) by @fchapoton created at 2014-07-18 12:50:46",
     "created_at": "2014-07-18T12:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7218#issuecomment-59879",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [half_integral.rst](tarball://root/attachments/some-uuid/ticket7218/half_integral.rst) by chapoton created at 2014-07-18 12:50:46
+Attachment [half_integral.rst](tarball://root/attachments/some-uuid/ticket7218/half_integral.rst) by @fchapoton created at 2014-07-18 12:50:46
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_059880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7218#issuecomment-59880",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_059881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7218#issuecomment-59881",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_059882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7218#issuecomment-59882",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_059883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7218#issuecomment-59883",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

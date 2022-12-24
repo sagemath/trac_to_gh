@@ -3,7 +3,7 @@
 archive/issues_001166.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: f = (exp(x)-1)/(exp(x/2)+1)\nsage: g = exp(x/2)-1\nsage: print f(10.0), g(10.0)\n                               147.4131591025766                               \\\n 147.4131591025766\nsage: print 1, 2\n1 2\nsage: print f(10), g(10)\n                                     10\n                                    e   - 1\n                                   --------\n                                     5\n                                    e  + 1                                     \\\n  5\n                                     e  - 1\n```\n\n\nThe output of f(10.0), g(10.0) [with many spaces] seems inconsistent with that of 1, 2 [no spaces]. With f(10), g(10) the exponent 5 of g(10) wraps around the terminal line, and is thus\nnot properly aligned with e - 1. (all this in a 80-column xterm)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1166\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: f = (exp(x)-1)/(exp(x/2)+1)\nsage: g = exp(x/2)-1\nsage: print f(10.0), g(10.0)\n                               147.4131591025766                               \\\n 147.4131591025766\nsage: print 1, 2\n1 2\nsage: print f(10), g(10)\n                                     10\n                                    e   - 1\n                                   --------\n                                     5\n                                    e  + 1                                     \\\n  5\n                                     e  - 1\n```\n\n\nThe output of f(10.0), g(10.0) [with many spaces] seems inconsistent with that of 1, 2 [no spaces]. With f(10), g(10) the exponent 5 of g(10) wraps around the terminal line, and is thus\nnot properly aligned with e - 1. (all this in a 80-column xterm)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1166\n\n",
     "created_at": "2007-11-13T22:44:08Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_001166.json:
     "title": "2D terminal output is inconsistent and corrupted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1166",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -106,16 +106,16 @@ Michael
 archive/issue_comments_007150.json:
 ```json
 {
-    "body": "Attachment [trac-1166.patch](tarball://root/attachments/some-uuid/ticket1166/trac-1166.patch) by was created at 2008-01-21 11:38:37",
+    "body": "Attachment [trac-1166.patch](tarball://root/attachments/some-uuid/ticket1166/trac-1166.patch) by @williamstein created at 2008-01-21 11:38:37",
     "created_at": "2008-01-21T11:38:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1166#issuecomment-7150",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1166.patch](tarball://root/attachments/some-uuid/ticket1166/trac-1166.patch) by was created at 2008-01-21 11:38:37
+Attachment [trac-1166.patch](tarball://root/attachments/some-uuid/ticket1166/trac-1166.patch) by @williamstein created at 2008-01-21 11:38:37
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_007151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1166#issuecomment-7151",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

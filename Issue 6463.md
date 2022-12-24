@@ -3,7 +3,7 @@
 archive/issues_006463.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: ideals\n\nThe code for residue fields of ideals in number fields is broken for ideals of relative extensions, as it tries to call \"norm\" on an ideal, which we have chosen to deliberately break for relative ideals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6463\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: ideals\n\nThe code for residue fields of ideals in number fields is broken for ideals of relative extensions, as it tries to call \"norm\" on an ideal, which we have chosen to deliberately break for relative ideals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6463\n\n",
     "created_at": "2009-07-04T15:42:22Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006463.json:
     "title": "Residue fields broken for relative extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6463",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: ideals
 
@@ -39,7 +39,7 @@ archive/issue_comments_052229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6463#issuecomment-52229",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -52,16 +52,16 @@ patch against 4.1.alpha2
 archive/issue_comments_052230.json:
 ```json
 {
-    "body": "Attachment [trac_6463-relative_residue_field.patch](tarball://root/attachments/some-uuid/ticket6463/trac_6463-relative_residue_field.patch) by davidloeffler created at 2009-07-04 15:52:37",
+    "body": "Attachment [trac_6463-relative_residue_field.patch](tarball://root/attachments/some-uuid/ticket6463/trac_6463-relative_residue_field.patch) by @loefflerd created at 2009-07-04 15:52:37",
     "created_at": "2009-07-04T15:52:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6463#issuecomment-52230",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6463-relative_residue_field.patch](tarball://root/attachments/some-uuid/ticket6463/trac_6463-relative_residue_field.patch) by davidloeffler created at 2009-07-04 15:52:37
+Attachment [trac_6463-relative_residue_field.patch](tarball://root/attachments/some-uuid/ticket6463/trac_6463-relative_residue_field.patch) by @loefflerd created at 2009-07-04 15:52:37
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_052231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6463#issuecomment-52231",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

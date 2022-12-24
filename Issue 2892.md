@@ -14,7 +14,7 @@ archive/issues_002892.json:
     "title": "notebook -- traceback shrinking/expanding in the notebook is broken in an obscure case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2892",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -40,7 +40,7 @@ archive/issue_comments_019895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2892#issuecomment-19895",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,16 +77,16 @@ f(5)
 archive/issue_comments_019896.json:
 ```json
 {
-    "body": "Attachment [sage-2892.patch](tarball://root/attachments/some-uuid/ticket2892/sage-2892.patch) by was created at 2008-04-12 03:56:25",
+    "body": "Attachment [sage-2892.patch](tarball://root/attachments/some-uuid/ticket2892/sage-2892.patch) by @williamstein created at 2008-04-12 03:56:25",
     "created_at": "2008-04-12T03:56:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2892#issuecomment-19896",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2892.patch](tarball://root/attachments/some-uuid/ticket2892/sage-2892.patch) by was created at 2008-04-12 03:56:25
+Attachment [sage-2892.patch](tarball://root/attachments/some-uuid/ticket2892/sage-2892.patch) by @williamstein created at 2008-04-12 03:56:25
 
 
 

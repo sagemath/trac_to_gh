@@ -3,7 +3,7 @@
 archive/issues_003169.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  slelievre\n\nIt would be nice if these worked:\n\n\n```\nsage: m=matrix(3,range(9))\nsage: v=vector([-1,-2,-3])\nsage: m.augment(v)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/matrix1.pyx in sage.matrix.matrix1.Matrix.augment (sage/matrix/matrix1.c:7099)()\n\n<type 'exceptions.TypeError'>: Argument 'other' has incorrect type (expected sage.matrix.matrix1.Matrix, got sage.modules.vector_integer_dense.Vector_integer_dense)\nsage: m.stack(v)\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/matrix_integer_dense.pyx in sage.matrix.matrix_integer_dense.Matrix_integer_dense.stack (sage/matrix/matrix_integer_dense.c:24661)()\n\n<type 'exceptions.AttributeError'>: 'sage.modules.vector_integer_dense.Vector_integer_d' object has no attribute 'ncols'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3169\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @slel\n\nIt would be nice if these worked:\n\n\n```\nsage: m=matrix(3,range(9))\nsage: v=vector([-1,-2,-3])\nsage: m.augment(v)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/matrix1.pyx in sage.matrix.matrix1.Matrix.augment (sage/matrix/matrix1.c:7099)()\n\n<type 'exceptions.TypeError'>: Argument 'other' has incorrect type (expected sage.matrix.matrix1.Matrix, got sage.modules.vector_integer_dense.Vector_integer_dense)\nsage: m.stack(v)\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/matrix_integer_dense.pyx in sage.matrix.matrix_integer_dense.Matrix_integer_dense.stack (sage/matrix/matrix_integer_dense.c:24661)()\n\n<type 'exceptions.AttributeError'>: 'sage.modules.vector_integer_dense.Vector_integer_d' object has no attribute 'ncols'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3169\n\n",
     "created_at": "2008-05-12T22:21:56Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_003169.json:
     "title": "matrix augment and stack should take vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3169",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  slelievre
+CC:  @slel
 
 It would be nice if these worked:
 
@@ -59,16 +59,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3169
 archive/issue_comments_021959.json:
 ```json
 {
-    "body": "Attachment [trac_3169-part1.patch](tarball://root/attachments/some-uuid/ticket3169/trac_3169-part1.patch) by jdemeyer created at 2013-08-13 15:35:53",
+    "body": "Attachment [trac_3169-part1.patch](tarball://root/attachments/some-uuid/ticket3169/trac_3169-part1.patch) by @jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3169#issuecomment-21959",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_3169-part1.patch](tarball://root/attachments/some-uuid/ticket3169/trac_3169-part1.patch) by jdemeyer created at 2013-08-13 15:35:53
+Attachment [trac_3169-part1.patch](tarball://root/attachments/some-uuid/ticket3169/trac_3169-part1.patch) by @jdemeyer created at 2013-08-13 15:35:53
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_021960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3169#issuecomment-21960",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_021961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3169#issuecomment-21961",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_021962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3169#issuecomment-21962",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_021963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3169#issuecomment-21963",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_021964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3169#issuecomment-21964",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_021965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3169#issuecomment-21965",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

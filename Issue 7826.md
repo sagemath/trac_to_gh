@@ -3,7 +3,7 @@
 archive/issues_007826.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp\n\nmpfi like many packages ignores the setting of SAGE64. mpfi clears CFLAGS, so even setting environment variables will not allow this to build. Hence spkg-install needed updating. \n\nI left some remarks for the package maintainer, on how to get rid of the SAGE64 junk. \n\nAn updated package can be found at the following address. All changes are checked in. \n\nSee:\nhttp://boxen.math.washington.edu/home/kirkby/portability/mpfi-1.3.4-cvs20071125.p8/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7826\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nmpfi like many packages ignores the setting of SAGE64. mpfi clears CFLAGS, so even setting environment variables will not allow this to build. Hence spkg-install needed updating. \n\nI left some remarks for the package maintainer, on how to get rid of the SAGE64 junk. \n\nAn updated package can be found at the following address. All changes are checked in. \n\nSee:\nhttp://boxen.math.washington.edu/home/kirkby/portability/mpfi-1.3.4-cvs20071125.p8/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7826\n\n",
     "created_at": "2010-01-03T03:05:51Z",
     "labels": [
         "porting",
@@ -19,7 +19,7 @@ archive/issues_007826.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp
+CC:  @jaapspies
 
 mpfi like many packages ignores the setting of SAGE64. mpfi clears CFLAGS, so even setting environment variables will not allow this to build. Hence spkg-install needed updating. 
 
@@ -65,7 +65,7 @@ archive/issue_comments_067742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7826#issuecomment-67742",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_067743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7826#issuecomment-67743",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_067744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7826#issuecomment-67744",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_067746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7826#issuecomment-67746",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_067748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7826#issuecomment-67748",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_067749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7826#issuecomment-67749",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_067751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7826#issuecomment-67751",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

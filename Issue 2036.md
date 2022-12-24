@@ -3,7 +3,7 @@
 archive/issues_002036.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: matrix(SR, 5, [1..5^2]).charpoly().expand()\n-x^5 + 65*x^4 + 250*x^3\nsage: matrix(QQ, 5, [1..5^2]).charpoly()\nx^5 - 65*x^4 - 250*x^3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2036\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: matrix(SR, 5, [1..5^2]).charpoly().expand()\n-x^5 + 65*x^4 + 250*x^3\nsage: matrix(QQ, 5, [1..5^2]).charpoly()\nx^5 - 65*x^4 - 250*x^3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2036\n\n",
     "created_at": "2008-02-03T04:18:45Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002036.json:
     "title": "maxima is off by -5 with it's charpoly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2036",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -44,7 +44,7 @@ archive/issue_comments_013172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2036#issuecomment-13172",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_013173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2036#issuecomment-13173",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,16 +81,16 @@ William
 archive/issue_comments_013174.json:
 ```json
 {
-    "body": "Attachment [maxima-charpoly.patch](tarball://root/attachments/some-uuid/ticket2036/maxima-charpoly.patch) by jason created at 2008-02-04 21:00:40",
+    "body": "Attachment [maxima-charpoly.patch](tarball://root/attachments/some-uuid/ticket2036/maxima-charpoly.patch) by @jasongrout created at 2008-02-04 21:00:40",
     "created_at": "2008-02-04T21:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2036#issuecomment-13174",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [maxima-charpoly.patch](tarball://root/attachments/some-uuid/ticket2036/maxima-charpoly.patch) by jason created at 2008-02-04 21:00:40
+Attachment [maxima-charpoly.patch](tarball://root/attachments/some-uuid/ticket2036/maxima-charpoly.patch) by @jasongrout created at 2008-02-04 21:00:40
 
 
 
@@ -104,7 +104,7 @@ archive/issue_comments_013175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2036#issuecomment-13175",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

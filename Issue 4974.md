@@ -3,7 +3,7 @@
 archive/issues_004974.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  jason\n\nAlso, it would be good to optimize it if possible.\n\n\n```\n[04:21] <craigcitro> yeah, file a ticket for that and assign it to me.\n[04:21] <jason-> (couldn't get cimport to work...)\n[04:22] <craigcitro> well, the pari gen.pyx probably wasn't the best place for that function\n[04:22] <craigcitro> so it needs to be moved anyway\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4974\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @jasongrout\n\nAlso, it would be good to optimize it if possible.\n\n\n```\n[04:21] <craigcitro> yeah, file a ticket for that and assign it to me.\n[04:21] <jason-> (couldn't get cimport to work...)\n[04:22] <craigcitro> well, the pari gen.pyx probably wasn't the best place for that function\n[04:22] <craigcitro> so it needs to be moved anyway\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4974\n\n",
     "created_at": "2009-01-14T10:27:30Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_004974.json:
     "title": "make sage.libs.pari.gen._normalize_slice a miscellaneous function for dealing with slices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4974",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  jason
+CC:  @jasongrout
 
 Also, it would be good to optimize it if possible.
 
@@ -49,7 +49,7 @@ archive/issue_comments_037897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37897",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_037898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37898",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_037899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37899",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_037902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37902",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_037903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37903",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_037904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37904",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_037905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37905",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -267,16 +267,16 @@ sage: range(20)[5:8:-1]
 archive/issue_comments_037907.json:
 ```json
 {
-    "body": "Attachment [normalize_size.patch](tarball://root/attachments/some-uuid/ticket4974/normalize_size.patch) by jason created at 2009-01-14 20:37:02\n\napply normalize_size.patch on top of previous patch.  This corrects all errors pointed out above and I believe is faster and simpler as well.",
+    "body": "Attachment [normalize_size.patch](tarball://root/attachments/some-uuid/ticket4974/normalize_size.patch) by @jasongrout created at 2009-01-14 20:37:02\n\napply normalize_size.patch on top of previous patch.  This corrects all errors pointed out above and I believe is faster and simpler as well.",
     "created_at": "2009-01-14T20:37:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37907",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [normalize_size.patch](tarball://root/attachments/some-uuid/ticket4974/normalize_size.patch) by jason created at 2009-01-14 20:37:02
+Attachment [normalize_size.patch](tarball://root/attachments/some-uuid/ticket4974/normalize_size.patch) by @jasongrout created at 2009-01-14 20:37:02
 
 apply normalize_size.patch on top of previous patch.  This corrects all errors pointed out above and I believe is faster and simpler as well.
 
@@ -378,7 +378,7 @@ archive/issue_comments_037911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37911",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_037912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37912",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_037913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37913",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_037914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37914",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -457,16 +457,16 @@ I think we should do this. One question: should we keep all our doctests? It's l
 archive/issue_comments_037915.json:
 ```json
 {
-    "body": "Attachment [trac-4974.patch](tarball://root/attachments/some-uuid/ticket4974/trac-4974.patch) by craigcitro created at 2009-01-15 05:50:38",
+    "body": "Attachment [trac-4974.patch](tarball://root/attachments/some-uuid/ticket4974/trac-4974.patch) by @craigcitro created at 2009-01-15 05:50:38",
     "created_at": "2009-01-15T05:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37915",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4974.patch](tarball://root/attachments/some-uuid/ticket4974/trac-4974.patch) by craigcitro created at 2009-01-15 05:50:38
+Attachment [trac-4974.patch](tarball://root/attachments/some-uuid/ticket4974/trac-4974.patch) by @craigcitro created at 2009-01-15 05:50:38
 
 
 
@@ -480,7 +480,7 @@ archive/issue_comments_037916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37916",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_037917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4974#issuecomment-37917",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

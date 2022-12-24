@@ -14,7 +14,7 @@ archive/issues_005400.json:
     "title": "parser error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5400",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: cwitty
@@ -66,7 +66,7 @@ archive/issue_comments_041696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41696",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -100,16 +100,16 @@ The error message is: ('EOF in multi-line statement', (1419, 0))
 archive/issue_comments_041697.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to robertwb.",
+    "body": "Changing assignee from cwitty to @robertwb.",
     "created_at": "2009-02-28T16:30:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41697",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from cwitty to robertwb.
+Changing assignee from cwitty to @robertwb.
 
 
 
@@ -123,7 +123,7 @@ archive/issue_comments_041698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41698",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_041700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41700",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_041702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41702",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_041703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41703",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_041704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41704",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_041705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41705",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_041706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41706",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_041707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41707",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_041708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41708",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_041709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41709",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_041710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41710",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

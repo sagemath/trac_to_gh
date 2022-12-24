@@ -3,7 +3,7 @@
 archive/issues_006503.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mhansen\n\nIn sage-4.1 we ship pyprocessing-0.52.p0.spkg, however a newer better version of that same code is standard in Python-2.6.x, which we also ship.  So we need to remove pyprocessing, do a clean build/test cycle, and see what problems arise, then sort them out. \n\nBe sure to test \"sage -tp\", which isn't tested by the test suite unless you do \"make ptest\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/6503\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nIn sage-4.1 we ship pyprocessing-0.52.p0.spkg, however a newer better version of that same code is standard in Python-2.6.x, which we also ship.  So we need to remove pyprocessing, do a clean build/test cycle, and see what problems arise, then sort them out. \n\nBe sure to test \"sage -tp\", which isn't tested by the test suite unless you do \"make ptest\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/6503\n\n",
     "created_at": "2009-07-09T19:01:10Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_006503.json:
     "title": "remove the pyprocessing spkg from sage, then sort out any fallout that results",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6503",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  mhansen
+CC:  @mwhansen
 
 In sage-4.1 we ship pyprocessing-0.52.p0.spkg, however a newer better version of that same code is standard in Python-2.6.x, which we also ship.  So we need to remove pyprocessing, do a clean build/test cycle, and see what problems arise, then sort them out. 
 
@@ -41,7 +41,7 @@ archive/issue_comments_052943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52943",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_052944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52944",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_052945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52945",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_052946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52946",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_052949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52949",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_052950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52950",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_052951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52951",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_052952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52952",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_052953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52953",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -301,16 +301,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_052954.json:
 ```json
 {
-    "body": "Attachment [trac_6503-scripts.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-scripts.patch) by jhpalmieri created at 2010-01-26 19:57:35\n\nHere are two patches, one for the scripts repo and one for the main repo.  Note that one patch removes the file \"parallel/multiprocessing.py\" (actually renaming it to \"multiprocessing_sage.py\" plus the requisite changes to import statements).  When I tried to run Sage after applying this patch, I still had copies of multiprocessing.py lying around which I had to delete by hand (this won't be a problem from a build from scratch, but upgrading could problematic): I had to delete the files\n\n```\nSAGE_ROOT/devel/sage/build/lib.macosx-10.6-i386-2.6/sage/parallel/multiprocessing.py\nSAGE_ROOT/local/lib/python/site-packages/sage/parallel/multiprocessing.py\n```\n\n(Without deleting these files, commands like `import multiprocessing` in parallel/multiprocessing_sage.py imported the old Sage file `multiprocessing.py` instead of the Python module `multiprocessing`.)\n\nI haven't run a full test suite yet, but \"sage -tp 2 SAGE_ROOT/devel/sage/sage/parallel/\" passes all tests for me.",
+    "body": "Attachment [trac_6503-scripts.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-scripts.patch) by @jhpalmieri created at 2010-01-26 19:57:35\n\nHere are two patches, one for the scripts repo and one for the main repo.  Note that one patch removes the file \"parallel/multiprocessing.py\" (actually renaming it to \"multiprocessing_sage.py\" plus the requisite changes to import statements).  When I tried to run Sage after applying this patch, I still had copies of multiprocessing.py lying around which I had to delete by hand (this won't be a problem from a build from scratch, but upgrading could problematic): I had to delete the files\n\n```\nSAGE_ROOT/devel/sage/build/lib.macosx-10.6-i386-2.6/sage/parallel/multiprocessing.py\nSAGE_ROOT/local/lib/python/site-packages/sage/parallel/multiprocessing.py\n```\n\n(Without deleting these files, commands like `import multiprocessing` in parallel/multiprocessing_sage.py imported the old Sage file `multiprocessing.py` instead of the Python module `multiprocessing`.)\n\nI haven't run a full test suite yet, but \"sage -tp 2 SAGE_ROOT/devel/sage/sage/parallel/\" passes all tests for me.",
     "created_at": "2010-01-26T19:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52954",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6503-scripts.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-scripts.patch) by jhpalmieri created at 2010-01-26 19:57:35
+Attachment [trac_6503-scripts.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-scripts.patch) by @jhpalmieri created at 2010-01-26 19:57:35
 
 Here are two patches, one for the scripts repo and one for the main repo.  Note that one patch removes the file "parallel/multiprocessing.py" (actually renaming it to "multiprocessing_sage.py" plus the requisite changes to import statements).  When I tried to run Sage after applying this patch, I still had copies of multiprocessing.py lying around which I had to delete by hand (this won't be a problem from a build from scratch, but upgrading could problematic): I had to delete the files
 
@@ -335,7 +335,7 @@ archive/issue_comments_052955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52955",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_052960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52960",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_052961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52961",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -577,16 +577,16 @@ patch for Sage library
 archive/issue_comments_052962.json:
 ```json
 {
-    "body": "Attachment [trac_6503-sage.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-sage.patch) by jhpalmieri created at 2010-02-26 20:32:11\n\nOkay, I took a copy of Sage, applied the attached patches and made Minh's suggested changes to install and deps, then ran `sage -sdist`.  I took the resulting tar file and tried to build it.  With MAKE defined as \"make -j2\", I ran into the same issue that Minh did.  At that point I redefined MAKE to be \"make\", and the build finished.  I'm running doctests now, but everything looks good.  In particular, `sage/sage/parallel` passes doctests.",
+    "body": "Attachment [trac_6503-sage.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-sage.patch) by @jhpalmieri created at 2010-02-26 20:32:11\n\nOkay, I took a copy of Sage, applied the attached patches and made Minh's suggested changes to install and deps, then ran `sage -sdist`.  I took the resulting tar file and tried to build it.  With MAKE defined as \"make -j2\", I ran into the same issue that Minh did.  At that point I redefined MAKE to be \"make\", and the build finished.  I'm running doctests now, but everything looks good.  In particular, `sage/sage/parallel` passes doctests.",
     "created_at": "2010-02-26T20:32:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52962",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6503-sage.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-sage.patch) by jhpalmieri created at 2010-02-26 20:32:11
+Attachment [trac_6503-sage.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-sage.patch) by @jhpalmieri created at 2010-02-26 20:32:11
 
 Okay, I took a copy of Sage, applied the attached patches and made Minh's suggested changes to install and deps, then ran `sage -sdist`.  I took the resulting tar file and tried to build it.  With MAKE defined as "make -j2", I ran into the same issue that Minh did.  At that point I redefined MAKE to be "make", and the build finished.  I'm running doctests now, but everything looks good.  In particular, `sage/sage/parallel` passes doctests.
 
@@ -624,7 +624,7 @@ archive/issue_comments_052964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52964",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -649,7 +649,7 @@ archive/issue_comments_052965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52965",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -669,16 +669,16 @@ http://wiki.sagemath.org/MercurialQueues
 archive/issue_comments_052966.json:
 ```json
 {
-    "body": "Attachment [trac_6503-fix.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-fix.patch) by mhansen created at 2010-02-27 20:12:36",
+    "body": "Attachment [trac_6503-fix.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-fix.patch) by @mwhansen created at 2010-02-27 20:12:36",
     "created_at": "2010-02-27T20:12:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52966",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6503-fix.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-fix.patch) by mhansen created at 2010-02-27 20:12:36
+Attachment [trac_6503-fix.patch](tarball://root/attachments/some-uuid/ticket6503/trac_6503-fix.patch) by @mwhansen created at 2010-02-27 20:12:36
 
 
 
@@ -692,7 +692,7 @@ archive/issue_comments_052967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52967",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -710,7 +710,7 @@ archive/issue_comments_052968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52968",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -728,7 +728,7 @@ archive/issue_comments_052969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52969",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -784,7 +784,7 @@ archive/issue_comments_052972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52972",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -802,7 +802,7 @@ archive/issue_comments_052973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52973",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -820,7 +820,7 @@ archive/issue_comments_052974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52974",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -833,16 +833,16 @@ rebased against #8191
 archive/issue_comments_052975.json:
 ```json
 {
-    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket6503/install) by jhpalmieri created at 2010-03-02 20:14:39\n\nrebased against #8191",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket6503/install) by @jhpalmieri created at 2010-03-02 20:14:39\n\nrebased against #8191",
     "created_at": "2010-03-02T20:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52975",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [install](tarball://root/attachments/some-uuid/ticket6503/install) by jhpalmieri created at 2010-03-02 20:14:39
+Attachment [install](tarball://root/attachments/some-uuid/ticket6503/install) by @jhpalmieri created at 2010-03-02 20:14:39
 
 rebased against #8191
 
@@ -858,7 +858,7 @@ archive/issue_comments_052976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52976",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -871,16 +871,16 @@ rebased against #8191
 archive/issue_comments_052977.json:
 ```json
 {
-    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket6503/deps) by jhpalmieri created at 2010-03-02 20:14:58",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket6503/deps) by @jhpalmieri created at 2010-03-02 20:14:58",
     "created_at": "2010-03-02T20:14:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52977",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [deps](tarball://root/attachments/some-uuid/ticket6503/deps) by jhpalmieri created at 2010-03-02 20:14:58
+Attachment [deps](tarball://root/attachments/some-uuid/ticket6503/deps) by @jhpalmieri created at 2010-03-02 20:14:58
 
 
 
@@ -889,16 +889,16 @@ Attachment [deps](tarball://root/attachments/some-uuid/ticket6503/deps) by jhpal
 archive/issue_comments_052978.json:
 ```json
 {
-    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket6503/install.diff) by jhpalmieri created at 2010-03-02 20:15:06",
+    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket6503/install.diff) by @jhpalmieri created at 2010-03-02 20:15:06",
     "created_at": "2010-03-02T20:15:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6503",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6503#issuecomment-52978",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [install.diff](tarball://root/attachments/some-uuid/ticket6503/install.diff) by jhpalmieri created at 2010-03-02 20:15:06
+Attachment [install.diff](tarball://root/attachments/some-uuid/ticket6503/install.diff) by @jhpalmieri created at 2010-03-02 20:15:06
 
 
 

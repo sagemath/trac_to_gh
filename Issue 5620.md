@@ -85,7 +85,7 @@ in each version.
 archive/issue_comments_043887.json:
 ```json
 {
-    "body": "Changing assignee from ekirkman to rlm.",
+    "body": "Changing assignee from ekirkman to @rlmill.",
     "created_at": "2009-03-28T02:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5620",
     "type": "issue_comment",
@@ -94,7 +94,7 @@ archive/issue_comments_043887.json:
 }
 ```
 
-Changing assignee from ekirkman to rlm.
+Changing assignee from ekirkman to @rlmill.
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_043888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5620#issuecomment-43888",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -121,16 +121,16 @@ Reviewer patch to original
 archive/issue_comments_043889.json:
 ```json
 {
-    "body": "Attachment [trac5620_digraph_plotting.patch](tarball://root/attachments/some-uuid/ticket5620/trac5620_digraph_plotting.patch) by rlm created at 2009-03-31 23:15:07",
+    "body": "Attachment [trac5620_digraph_plotting.patch](tarball://root/attachments/some-uuid/ticket5620/trac5620_digraph_plotting.patch) by @rlmill created at 2009-03-31 23:15:07",
     "created_at": "2009-03-31T23:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5620#issuecomment-43889",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac5620_digraph_plotting.patch](tarball://root/attachments/some-uuid/ticket5620/trac5620_digraph_plotting.patch) by rlm created at 2009-03-31 23:15:07
+Attachment [trac5620_digraph_plotting.patch](tarball://root/attachments/some-uuid/ticket5620/trac5620_digraph_plotting.patch) by @rlmill created at 2009-03-31 23:15:07
 
 
 

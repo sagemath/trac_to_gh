@@ -3,7 +3,7 @@
 archive/issues_009206.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9206\n\n",
+    "body": "Assignee: @aghitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9206\n\n",
     "created_at": "2010-06-10T19:59:00Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_009206.json:
     "title": "faster finite field creation with proof=False, done right (via proof architecture)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9206",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_086166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9206#issuecomment-86166",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -72,16 +72,16 @@ David Harvey: "Maybe not literally forever, but I got sick of waiting. Should be
 archive/issue_comments_086167.json:
 ```json
 {
-    "body": "Attachment [trac_9206.patch](tarball://root/attachments/some-uuid/ticket9206/trac_9206.patch) by was created at 2010-07-07 20:12:53\n\nI didn't write the attached patch, but I polished it up, so it would be good if somebody else could sign off on this.  I'm OK with it, as is.",
+    "body": "Attachment [trac_9206.patch](tarball://root/attachments/some-uuid/ticket9206/trac_9206.patch) by @williamstein created at 2010-07-07 20:12:53\n\nI didn't write the attached patch, but I polished it up, so it would be good if somebody else could sign off on this.  I'm OK with it, as is.",
     "created_at": "2010-07-07T20:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9206#issuecomment-86167",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9206.patch](tarball://root/attachments/some-uuid/ticket9206/trac_9206.patch) by was created at 2010-07-07 20:12:53
+Attachment [trac_9206.patch](tarball://root/attachments/some-uuid/ticket9206/trac_9206.patch) by @williamstein created at 2010-07-07 20:12:53
 
 I didn't write the attached patch, but I polished it up, so it would be good if somebody else could sign off on this.  I'm OK with it, as is.
 
@@ -97,7 +97,7 @@ archive/issue_comments_086168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9206#issuecomment-86168",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_086169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9206#issuecomment-86169",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_086170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9206#issuecomment-86170",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_086171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9206#issuecomment-86171",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

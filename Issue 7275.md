@@ -3,7 +3,7 @@
 archive/issues_007275.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/d2b922ad4ffba33c):\n\n```\nsage -t  \"devel/sage/doc/en/tutorial/tour_algebra.rst\" \n********************************************************************** \nFile \"/home/jaap/downloads/sage-4.2.alpha0/devel/sage/doc/en/tutorial/tour_algeb ra.rst\", line 87: \n     sage: find_root(cos(phi)==sin(phi),0,pi/2) \nExpected: \n     0.78539816339744839 \nGot: \n     0.78539816339744828 \n********************************************************************** \n1 items had failures: \nSame as in alpha0! No ticket yet? \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7275\n\n",
+    "body": "Assignee: @jhpalmieri\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/d2b922ad4ffba33c):\n\n```\nsage -t  \"devel/sage/doc/en/tutorial/tour_algebra.rst\" \n********************************************************************** \nFile \"/home/jaap/downloads/sage-4.2.alpha0/devel/sage/doc/en/tutorial/tour_algeb ra.rst\", line 87: \n     sage: find_root(cos(phi)==sin(phi),0,pi/2) \nExpected: \n     0.78539816339744839 \nGot: \n     0.78539816339744828 \n********************************************************************** \n1 items had failures: \nSame as in alpha0! No ticket yet? \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7275\n\n",
     "created_at": "2009-10-23T21:43:58Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_007275.json:
     "title": "[with patch, needs review] numerical noise in tutorial/tour_algebra.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7275",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/d2b922ad4ffba33c):
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7275
 archive/issue_comments_060541.json:
 ```json
 {
-    "body": "Attachment [trac_7275-tutorial-noise.patch](tarball://root/attachments/some-uuid/ticket7275/trac_7275-tutorial-noise.patch) by jhpalmieri created at 2009-10-23 21:44:30",
+    "body": "Attachment [trac_7275-tutorial-noise.patch](tarball://root/attachments/some-uuid/ticket7275/trac_7275-tutorial-noise.patch) by @jhpalmieri created at 2009-10-23 21:44:30",
     "created_at": "2009-10-23T21:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7275#issuecomment-60541",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7275-tutorial-noise.patch](tarball://root/attachments/some-uuid/ticket7275/trac_7275-tutorial-noise.patch) by jhpalmieri created at 2009-10-23 21:44:30
+Attachment [trac_7275-tutorial-noise.patch](tarball://root/attachments/some-uuid/ticket7275/trac_7275-tutorial-noise.patch) by @jhpalmieri created at 2009-10-23 21:44:30
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_060542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7275#issuecomment-60542",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_060543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7275#issuecomment-60543",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_060544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7275#issuecomment-60544",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_060545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7275#issuecomment-60545",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_060546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7275#issuecomment-60546",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

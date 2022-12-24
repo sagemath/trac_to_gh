@@ -3,7 +3,7 @@
 archive/issues_002456.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nFile \"matrix_symbolic_dense.pyx\", line 873:\n    sage: list(a.fcp())\nExpected:\n    [(x^2 - 65*x - 250, 1), (x, 3)]\nGot:\n    [(x, 3), (x^2 - 65*x - 250, 1)]\n```\n\nBut inside sage:\n\n```\nsage: a = matrix(SR, 5, [1..5^2]) \nsage: a.fcp()\n(x^2 - 65*x - 250) * x^3\nsage: list(a.fcp())\n[(x^2 - 65*x - 250, 1), (x, 3)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2456\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nFile \"matrix_symbolic_dense.pyx\", line 873:\n    sage: list(a.fcp())\nExpected:\n    [(x^2 - 65*x - 250, 1), (x, 3)]\nGot:\n    [(x, 3), (x^2 - 65*x - 250, 1)]\n```\n\nBut inside sage:\n\n```\nsage: a = matrix(SR, 5, [1..5^2]) \nsage: a.fcp()\n(x^2 - 65*x - 250) * x^3\nsage: list(a.fcp())\n[(x^2 - 65*x - 250, 1), (x, 3)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2456\n\n",
     "created_at": "2008-03-10T13:53:55Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002456.json:
     "title": "matrix_symbolic_dense doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2456",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -56,7 +56,7 @@ archive/issue_comments_016631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2456#issuecomment-16631",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -69,16 +69,16 @@ This patch is correct because of changes in #2206
 archive/issue_comments_016632.json:
 ```json
 {
-    "body": "Changing assignee from was to gfurnish.",
+    "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-10T14:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2456#issuecomment-16632",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was to gfurnish.
+Changing assignee from @williamstein to @garyfurnish.
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_016633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2456#issuecomment-16633",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_016634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2456#issuecomment-16634",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_016635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2456#issuecomment-16635",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -145,16 +145,16 @@ REFEREE REPORT:
 archive/issue_comments_016636.json:
 ```json
 {
-    "body": "Attachment [trac_2456.patch](tarball://root/attachments/some-uuid/ticket2456/trac_2456.patch) by was created at 2008-03-10 16:09:58\n\nreplaced patch addresses my concern.",
+    "body": "Attachment [trac_2456.patch](tarball://root/attachments/some-uuid/ticket2456/trac_2456.patch) by @williamstein created at 2008-03-10 16:09:58\n\nreplaced patch addresses my concern.",
     "created_at": "2008-03-10T16:09:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2456#issuecomment-16636",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_2456.patch](tarball://root/attachments/some-uuid/ticket2456/trac_2456.patch) by was created at 2008-03-10 16:09:58
+Attachment [trac_2456.patch](tarball://root/attachments/some-uuid/ticket2456/trac_2456.patch) by @williamstein created at 2008-03-10 16:09:58
 
 replaced patch addresses my concern.
 

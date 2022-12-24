@@ -3,7 +3,7 @@
 archive/issues_007450.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: prime ideal\n\nThe attached patch implements a generic primality testing method for ideals.  It is based on the computation of the associated primes of an ideal, and so at the moment will only work for ideals that have this implemented (e.g. ideals in multivariate polynomial rings that Singular can handle).\n\nThere are also a few related methods such as `is_primary()` and `embedded_primes()`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7450\n\n",
+    "body": "Assignee: @malb\n\nKeywords: prime ideal\n\nThe attached patch implements a generic primality testing method for ideals.  It is based on the computation of the associated primes of an ideal, and so at the moment will only work for ideals that have this implemented (e.g. ideals in multivariate polynomial rings that Singular can handle).\n\nThere are also a few related methods such as `is_primary()` and `embedded_primes()`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7450\n\n",
     "created_at": "2009-11-13T12:30:17Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_007450.json:
     "title": "implement is_prime() for ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7450",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: prime ideal
 
@@ -42,7 +42,7 @@ archive/issue_comments_062750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7450#issuecomment-62750",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_062751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7450#issuecomment-62751",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_062752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7450#issuecomment-62752",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_062753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7450#issuecomment-62753",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -116,16 +116,16 @@ I have replaced the patch with one that has the proper citation markup.  Having 
 archive/issue_comments_062754.json:
 ```json
 {
-    "body": "Attachment [trac_7450.patch](tarball://root/attachments/some-uuid/ticket7450/trac_7450.patch) by AlexGhitza created at 2009-11-15 01:01:23\n\nAnd I replaced it once more, having added an optional argument to `is_primary` to check whether an ideal is primary wrt a given prime ideal; also added more doctests borrowed from the Macaulay2 docs.",
+    "body": "Attachment [trac_7450.patch](tarball://root/attachments/some-uuid/ticket7450/trac_7450.patch) by @aghitza created at 2009-11-15 01:01:23\n\nAnd I replaced it once more, having added an optional argument to `is_primary` to check whether an ideal is primary wrt a given prime ideal; also added more doctests borrowed from the Macaulay2 docs.",
     "created_at": "2009-11-15T01:01:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7450#issuecomment-62754",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_7450.patch](tarball://root/attachments/some-uuid/ticket7450/trac_7450.patch) by AlexGhitza created at 2009-11-15 01:01:23
+Attachment [trac_7450.patch](tarball://root/attachments/some-uuid/ticket7450/trac_7450.patch) by @aghitza created at 2009-11-15 01:01:23
 
 And I replaced it once more, having added an optional argument to `is_primary` to check whether an ideal is primary wrt a given prime ideal; also added more doctests borrowed from the Macaulay2 docs.
 
@@ -141,7 +141,7 @@ archive/issue_comments_062755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7450#issuecomment-62755",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_062756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7450#issuecomment-62756",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_062757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7450#issuecomment-62757",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

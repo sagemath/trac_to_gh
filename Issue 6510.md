@@ -67,7 +67,7 @@ archive/issue_comments_053038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6510#issuecomment-53038",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_053040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6510#issuecomment-53040",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_053042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6510#issuecomment-53042",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -221,16 +221,16 @@ Choose which block of function definition you want, and upload a new patch. Pref
 archive/issue_comments_053045.json:
 ```json
 {
-    "body": "Attachment [trac_6510.3.patch](tarball://root/attachments/some-uuid/ticket6510/trac_6510.3.patch) by roed created at 2009-07-16 18:21:10",
+    "body": "Attachment [trac_6510.3.patch](tarball://root/attachments/some-uuid/ticket6510/trac_6510.3.patch) by @roed314 created at 2009-07-16 18:21:10",
     "created_at": "2009-07-16T18:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6510#issuecomment-53045",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_6510.3.patch](tarball://root/attachments/some-uuid/ticket6510/trac_6510.3.patch) by roed created at 2009-07-16 18:21:10
+Attachment [trac_6510.3.patch](tarball://root/attachments/some-uuid/ticket6510/trac_6510.3.patch) by @roed314 created at 2009-07-16 18:21:10
 
 
 
@@ -244,7 +244,7 @@ archive/issue_comments_053046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6510#issuecomment-53046",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

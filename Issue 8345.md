@@ -3,7 +3,7 @@
 archive/issues_008345.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\nFrom sage-devel:\n\n\n```\nOn Mon, 22 Feb 2010 07:02:21 -0800 (PST)\nH\u00e5kan Granath <hakan.granath@googlemail.com> wrote:\n\n> Typesetting conjugates of variables (that has been passed to\n> Maxima and back?) is strange. In e.g. Sage 4.2 this did not\n> happen.\n> \n> ----------------------------------------------------------------------\n> | Sage Version 4.3.3, Release Date: 2010-02-21                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: assume(x,'complex')\n> sage: latex(x.conjugate())\n> \\overline{x}\n> sage: latex(x.conjugate().factor())\n> {\\rm conjugate}\\left(x\\right)\n```\n\n\nSomehow we don't recognize the conjugate function in the string we get back from maxima, and create a new one. The last line above is the default latex typesetting for symbolic functions.\n\n\nThe thread is here:\n\nhttp://groups.google.com/group/sage-devel/t/cd43a14bee6e9be\n\nIssue created by migration from https://trac.sagemath.org/ticket/8345\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nFrom sage-devel:\n\n\n```\nOn Mon, 22 Feb 2010 07:02:21 -0800 (PST)\nH\u00e5kan Granath <hakan.granath@googlemail.com> wrote:\n\n> Typesetting conjugates of variables (that has been passed to\n> Maxima and back?) is strange. In e.g. Sage 4.2 this did not\n> happen.\n> \n> ----------------------------------------------------------------------\n> | Sage Version 4.3.3, Release Date: 2010-02-21                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: assume(x,'complex')\n> sage: latex(x.conjugate())\n> \\overline{x}\n> sage: latex(x.conjugate().factor())\n> {\\rm conjugate}\\left(x\\right)\n```\n\n\nSomehow we don't recognize the conjugate function in the string we get back from maxima, and create a new one. The last line above is the default latex typesetting for symbolic functions.\n\n\nThe thread is here:\n\nhttp://groups.google.com/group/sage-devel/t/cd43a14bee6e9be\n\nIssue created by migration from https://trac.sagemath.org/ticket/8345\n\n",
     "created_at": "2010-02-24T11:36:28Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_008345.json:
     "title": "cannot convert symbolic functions back from maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8345",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 From sage-devel:
 
@@ -67,7 +67,7 @@ archive/issue_comments_074505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8345#issuecomment-74505",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_074506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8345#issuecomment-74506",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_074507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8345#issuecomment-74507",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_074508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8345#issuecomment-74508",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_074509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8345#issuecomment-74509",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -164,16 +164,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_074510.json:
 ```json
 {
-    "body": "Attachment [trac_8345-doctest.patch](tarball://root/attachments/some-uuid/ticket8345/trac_8345-doctest.patch) by burcin created at 2011-06-09 11:17:47\n\nReplying to [comment:3 kcrisman]:\n> This patch does not apply to 4.7.1.alpha1 because of a blank line someone must have removed earlier.  Unfortunately, I can't figure out how to fix the patch easily (so that Burcin remains the author of the patch), so it will have to be rebased.  Hopefully that won't be too much trouble :(\n\nI uploaded a rebased patch with the same name.\n\nIf you `qimport` a patch which already has mercurial headers, make changes, then `qrefresh` and `export`, the author shouldn't change. In this case, it wouldn't matter even if you changed it. :)\n\n> This also exposes a different problem - that our variables are assumed to be real.  This is known elsewhere.\n> {{{\n> sage: latex(x.conjugate())\n> \\overline{x}\n> sage: latex(x.conjugate().simplify())\n> x\n> }}}\n> \n> Not sure if that needs to be addressed on this ticket, though.\n\nThat is #6882, well beyond the scope of this ticket.",
+    "body": "Attachment [trac_8345-doctest.patch](tarball://root/attachments/some-uuid/ticket8345/trac_8345-doctest.patch) by @burcin created at 2011-06-09 11:17:47\n\nReplying to [comment:3 kcrisman]:\n> This patch does not apply to 4.7.1.alpha1 because of a blank line someone must have removed earlier.  Unfortunately, I can't figure out how to fix the patch easily (so that Burcin remains the author of the patch), so it will have to be rebased.  Hopefully that won't be too much trouble :(\n\nI uploaded a rebased patch with the same name.\n\nIf you `qimport` a patch which already has mercurial headers, make changes, then `qrefresh` and `export`, the author shouldn't change. In this case, it wouldn't matter even if you changed it. :)\n\n> This also exposes a different problem - that our variables are assumed to be real.  This is known elsewhere.\n> {{{\n> sage: latex(x.conjugate())\n> \\overline{x}\n> sage: latex(x.conjugate().simplify())\n> x\n> }}}\n> \n> Not sure if that needs to be addressed on this ticket, though.\n\nThat is #6882, well beyond the scope of this ticket.",
     "created_at": "2011-06-09T11:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8345#issuecomment-74510",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8345-doctest.patch](tarball://root/attachments/some-uuid/ticket8345/trac_8345-doctest.patch) by burcin created at 2011-06-09 11:17:47
+Attachment [trac_8345-doctest.patch](tarball://root/attachments/some-uuid/ticket8345/trac_8345-doctest.patch) by @burcin created at 2011-06-09 11:17:47
 
 Replying to [comment:3 kcrisman]:
 > This patch does not apply to 4.7.1.alpha1 because of a blank line someone must have removed earlier.  Unfortunately, I can't figure out how to fix the patch easily (so that Burcin remains the author of the patch), so it will have to be rebased.  Hopefully that won't be too much trouble :(
@@ -206,7 +206,7 @@ archive/issue_comments_074511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8345#issuecomment-74511",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_074512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8345#issuecomment-74512",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_074513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8345#issuecomment-74513",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

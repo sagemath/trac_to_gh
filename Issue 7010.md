@@ -3,7 +3,7 @@
 archive/issues_007010.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  rbeezer\n\nThis is a follow up to ticket #6841.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7010\n\n",
+    "body": "Assignee: somebody\n\nCC:  @rbeezer\n\nThis is a follow up to ticket #6841.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7010\n\n",
     "created_at": "2009-09-25T07:13:23Z",
     "labels": [
         "cryptography",
@@ -19,7 +19,7 @@ archive/issues_007010.json:
 ```
 Assignee: somebody
 
-CC:  rbeezer
+CC:  @rbeezer
 
 This is a follow up to ticket #6841.
 
@@ -97,7 +97,7 @@ archive/issue_comments_057965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7010#issuecomment-57965",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_057966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7010",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7010#issuecomment-57966",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

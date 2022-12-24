@@ -3,7 +3,7 @@
 archive/issues_006188.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: documentation\n\nThis patch adds the files {{{\norder.py}}}, `number_field_element_quadratic.pyx`, `number_field_rel.py`, `number_field_ideal_rel.py`, and `unit_group.py` to the reference manual, and makes the necessary ReST formatting fixes to get them to build correctly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6188\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: documentation\n\nThis patch adds the files {{{\norder.py}}}, `number_field_element_quadratic.pyx`, `number_field_rel.py`, `number_field_ideal_rel.py`, and `unit_group.py` to the reference manual, and makes the necessary ReST formatting fixes to get them to build correctly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6188\n\n",
     "created_at": "2009-06-02T17:22:41Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006188.json:
     "title": "[with patch, needs review] Add more files in sage/rings/number_field to reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6188",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: documentation
 
@@ -40,7 +40,7 @@ archive/issue_comments_049433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6188#issuecomment-49433",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_049434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6188#issuecomment-49434",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -71,16 +71,16 @@ Changing status from new to assigned.
 archive/issue_comments_049435.json:
 ```json
 {
-    "body": "Attachment [trac_6188.patch](tarball://root/attachments/some-uuid/ticket6188/trac_6188.patch) by davidloeffler created at 2009-06-02 17:25:51",
+    "body": "Attachment [trac_6188.patch](tarball://root/attachments/some-uuid/ticket6188/trac_6188.patch) by @loefflerd created at 2009-06-02 17:25:51",
     "created_at": "2009-06-02T17:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6188#issuecomment-49435",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6188.patch](tarball://root/attachments/some-uuid/ticket6188/trac_6188.patch) by davidloeffler created at 2009-06-02 17:25:51
+Attachment [trac_6188.patch](tarball://root/attachments/some-uuid/ticket6188/trac_6188.patch) by @loefflerd created at 2009-06-02 17:25:51
 
 
 
@@ -89,16 +89,16 @@ Attachment [trac_6188.patch](tarball://root/attachments/some-uuid/ticket6188/tra
 archive/issue_comments_049436.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-06-02T17:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6188#issuecomment-49436",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_049437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6188#issuecomment-49437",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -125,16 +125,16 @@ I am half way through reviewing this and should be able to finish tomorrow.
 archive/issue_comments_049438.json:
 ```json
 {
-    "body": "Attachment [trac_6188_review.patch](tarball://root/attachments/some-uuid/ticket6188/trac_6188_review.patch) by cremona created at 2009-06-04 21:41:35\n\nApply after previous",
+    "body": "Attachment [trac_6188_review.patch](tarball://root/attachments/some-uuid/ticket6188/trac_6188_review.patch) by @JohnCremona created at 2009-06-04 21:41:35\n\nApply after previous",
     "created_at": "2009-06-04T21:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6188#issuecomment-49438",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6188_review.patch](tarball://root/attachments/some-uuid/ticket6188/trac_6188_review.patch) by cremona created at 2009-06-04 21:41:35
+Attachment [trac_6188_review.patch](tarball://root/attachments/some-uuid/ticket6188/trac_6188_review.patch) by @JohnCremona created at 2009-06-04 21:41:35
 
 Apply after previous
 
@@ -150,7 +150,7 @@ archive/issue_comments_049439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6188#issuecomment-49439",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_049440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6188#issuecomment-49440",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_049441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6188#issuecomment-49441",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002107.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: B = victor_miller_basis(100,30)\nsage: t2 = hecke_operator_on_basis(B, 100, 2)\nsage.bin(40290) malloc: *** error for object 0x37e2f10: incorrect checksum for freed object - object was probably modified after being freed.\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37e2f80: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37e2f20: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37e2f40: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37d6120: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37d6170: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3780500: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3781090: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37dce90: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\nsage.bin(40290) malloc: *** error for object 0x3796f40: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37975b0: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3797890: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3797880: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3746ef0: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3773150: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x373c6c0: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3767990: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3762180: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2107\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: B = victor_miller_basis(100,30)\nsage: t2 = hecke_operator_on_basis(B, 100, 2)\nsage.bin(40290) malloc: *** error for object 0x37e2f10: incorrect checksum for freed object - object was probably modified after being freed.\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37e2f80: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37e2f20: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37e2f40: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37d6120: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37d6170: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3780500: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3781090: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37dce90: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\nsage.bin(40290) malloc: *** error for object 0x3796f40: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x37975b0: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3797890: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3797880: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3746ef0: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3773150: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x373c6c0: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3767990: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(40290) malloc: *** error for object 0x3762180: Non-aligned pointer being freed (2)\n*** set a breakpoint in malloc_error_break to debug\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2107\n\n",
     "created_at": "2008-02-08T09:50:23Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_002107.json:
     "title": "serious malloc problem triggered by Hecke operator computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2107",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -203,16 +203,16 @@ Michael
 archive/issue_comments_013737.json:
 ```json
 {
-    "body": "Attachment [trac-2107.patch](tarball://root/attachments/some-uuid/ticket2107/trac-2107.patch) by cpernet created at 2008-02-09 00:31:39\n\nChange the wrapper for linbox rank, to directly use FFPACK rank.",
+    "body": "Attachment [trac-2107.patch](tarball://root/attachments/some-uuid/ticket2107/trac-2107.patch) by @ClementPernet created at 2008-02-09 00:31:39\n\nChange the wrapper for linbox rank, to directly use FFPACK rank.",
     "created_at": "2008-02-09T00:31:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2107#issuecomment-13737",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
-Attachment [trac-2107.patch](tarball://root/attachments/some-uuid/ticket2107/trac-2107.patch) by cpernet created at 2008-02-09 00:31:39
+Attachment [trac-2107.patch](tarball://root/attachments/some-uuid/ticket2107/trac-2107.patch) by @ClementPernet created at 2008-02-09 00:31:39
 
 Change the wrapper for linbox rank, to directly use FFPACK rank.
 
@@ -272,7 +272,7 @@ archive/issue_comments_013740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2107#issuecomment-13740",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 

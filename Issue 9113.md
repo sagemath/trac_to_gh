@@ -14,7 +14,7 @@ archive/issues_009113.json:
     "title": "sage-4.4.3.alpha1 -lpng blocker issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9113",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -57,7 +57,7 @@ archive/issue_comments_084792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9113#issuecomment-84792",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_084793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9113#issuecomment-84793",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_084794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9113#issuecomment-84794",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

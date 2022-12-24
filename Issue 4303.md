@@ -3,7 +3,7 @@
 archive/issues_004303.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: plotting\n\nFrom the docstring for point2d, the following works fine:\n\nsage: p = point(((0.5, 0.5), (1, 2), (0.5, 0.9), (-1,-1)), rgbcolor=hue(1), pointsize=30); p.show()\n\nHowever\n\nsage: p = point(((0.5, 0.5), (1, 2), (0.5, 0.9)), rgbcolor=hue(1), pointsize=30); p.show()\n\ngives one purple(?) point and two blue points.  This seems to happen if and only if the number of points specified is exactly three, regardless of the specified color.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4303\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: plotting\n\nFrom the docstring for point2d, the following works fine:\n\nsage: p = point(((0.5, 0.5), (1, 2), (0.5, 0.9), (-1,-1)), rgbcolor=hue(1), pointsize=30); p.show()\n\nHowever\n\nsage: p = point(((0.5, 0.5), (1, 2), (0.5, 0.9)), rgbcolor=hue(1), pointsize=30); p.show()\n\ngives one purple(?) point and two blue points.  This seems to happen if and only if the number of points specified is exactly three, regardless of the specified color.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4303\n\n",
     "created_at": "2008-10-15T17:33:34Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_004303.json:
     "title": "Plotting: points(list_of_points, rgbcolor=c) gives strangely colored results with exactly 3 points.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4303",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: plotting
 
@@ -106,7 +106,7 @@ archive/issue_comments_031490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4303#issuecomment-31490",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_031491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4303#issuecomment-31491",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

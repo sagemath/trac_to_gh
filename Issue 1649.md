@@ -208,16 +208,16 @@ Michael
 archive/issue_comments_010491.json:
 ```json
 {
-    "body": "Attachment [trac-1649-update_mwrank_wrapper.patch](tarball://root/attachments/some-uuid/ticket1649/trac-1649-update_mwrank_wrapper.patch) by was created at 2008-01-27 19:16:04",
+    "body": "Attachment [trac-1649-update_mwrank_wrapper.patch](tarball://root/attachments/some-uuid/ticket1649/trac-1649-update_mwrank_wrapper.patch) by @williamstein created at 2008-01-27 19:16:04",
     "created_at": "2008-01-27T19:16:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10491",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1649-update_mwrank_wrapper.patch](tarball://root/attachments/some-uuid/ticket1649/trac-1649-update_mwrank_wrapper.patch) by was created at 2008-01-27 19:16:04
+Attachment [trac-1649-update_mwrank_wrapper.patch](tarball://root/attachments/some-uuid/ticket1649/trac-1649-update_mwrank_wrapper.patch) by @williamstein created at 2008-01-27 19:16:04
 
 
 
@@ -231,7 +231,7 @@ archive/issue_comments_010492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10492",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -263,16 +263,16 @@ Patch looks good to me. The spkg from #1650 was merged.
 archive/issue_comments_010494.json:
 ```json
 {
-    "body": "Attachment [1649-part2.patch](tarball://root/attachments/some-uuid/ticket1649/1649-part2.patch) by was created at 2008-01-27 20:09:44",
+    "body": "Attachment [1649-part2.patch](tarball://root/attachments/some-uuid/ticket1649/1649-part2.patch) by @williamstein created at 2008-01-27 20:09:44",
     "created_at": "2008-01-27T20:09:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1649#issuecomment-10494",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [1649-part2.patch](tarball://root/attachments/some-uuid/ticket1649/1649-part2.patch) by was created at 2008-01-27 20:09:44
+Attachment [1649-part2.patch](tarball://root/attachments/some-uuid/ticket1649/1649-part2.patch) by @williamstein created at 2008-01-27 20:09:44
 
 
 

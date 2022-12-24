@@ -3,7 +3,7 @@
 archive/issues_001077.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen a job times out, the worker restarts running two jobs.  This slows things down and is not natural.\n\nAnd when one of those new jobs finishes, it performs a hard reset, killing the second job, which then never gets completed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1077\n\n",
+    "body": "Assignee: @williamstein\n\nWhen a job times out, the worker restarts running two jobs.  This slows things down and is not natural.\n\nAnd when one of those new jobs finishes, it performs a hard reset, killing the second job, which then never gets completed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1077\n\n",
     "created_at": "2007-11-03T17:07:55Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001077.json:
     "title": "DSage restarts two workers after timeout",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1077",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When a job times out, the worker restarts running two jobs.  This slows things down and is not natural.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1077
 archive/issue_comments_006515.json:
 ```json
 {
-    "body": "Changing assignee from was to yi.",
+    "body": "Changing assignee from @williamstein to @yqiang.",
     "created_at": "2007-11-03T17:33:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6515",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Changing assignee from was to yi.
+Changing assignee from @williamstein to @yqiang.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_006516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6516",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_006517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6517",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_006518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6518",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_006519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6519",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_006521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1077#issuecomment-6521",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

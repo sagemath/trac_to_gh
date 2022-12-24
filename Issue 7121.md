@@ -14,7 +14,7 @@ archive/issues_007121.json:
     "title": "Make it possible to build Sage but not documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7121",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tbd
@@ -57,7 +57,7 @@ archive/issue_comments_059029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7121#issuecomment-59029",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_059030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7121#issuecomment-59030",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_059031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7121#issuecomment-59031",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_059032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7121#issuecomment-59032",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_059033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7121#issuecomment-59033",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

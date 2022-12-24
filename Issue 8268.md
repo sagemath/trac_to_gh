@@ -3,7 +3,7 @@
 archive/issues_008268.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  abmasse\n\nThis patch adds a new implementation for construction of Christoffel words using continued fraction :\n\n\n```\nsage: %timeit words.ChristoffelWord(5, 9, algorithm='linear')\n625 loops, best of 3: 67.7 \u00b5s per loop\nsage: %timeit words.ChristoffelWord(5, 9, algorithm='cf')\n625 loops, best of 3: 309 \u00b5s per loop\n```\n\n\nFor large words, it is much faster than the actual implementation.\n\n\n```\nsage: %timeit words.ChristoffelWord(500, 90001, algorithm='linear')\n5 loops, best of 3: 111 ms per loop\nsage: %timeit words.ChristoffelWord(500, 90001, algorithm='cf')\n125 loops, best of 3: 4 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8268\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nThis patch adds a new implementation for construction of Christoffel words using continued fraction :\n\n\n```\nsage: %timeit words.ChristoffelWord(5, 9, algorithm='linear')\n625 loops, best of 3: 67.7 \u00b5s per loop\nsage: %timeit words.ChristoffelWord(5, 9, algorithm='cf')\n625 loops, best of 3: 309 \u00b5s per loop\n```\n\n\nFor large words, it is much faster than the actual implementation.\n\n\n```\nsage: %timeit words.ChristoffelWord(500, 90001, algorithm='linear')\n5 loops, best of 3: 111 ms per loop\nsage: %timeit words.ChristoffelWord(500, 90001, algorithm='cf')\n125 loops, best of 3: 4 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8268\n\n",
     "created_at": "2010-02-15T00:15:17Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008268.json:
     "title": "Improve speed of Christoffel word construction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8268",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  abmasse
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8268
 archive/issue_comments_073185.json:
 ```json
 {
-    "body": "Attachment [trac_8268_speed_up_Christoffel-sl.patch](tarball://root/attachments/some-uuid/ticket8268/trac_8268_speed_up_Christoffel-sl.patch) by slabbe created at 2010-02-15 00:21:53",
+    "body": "Attachment [trac_8268_speed_up_Christoffel-sl.patch](tarball://root/attachments/some-uuid/ticket8268/trac_8268_speed_up_Christoffel-sl.patch) by @seblabbe created at 2010-02-15 00:21:53",
     "created_at": "2010-02-15T00:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73185",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8268_speed_up_Christoffel-sl.patch](tarball://root/attachments/some-uuid/ticket8268/trac_8268_speed_up_Christoffel-sl.patch) by slabbe created at 2010-02-15 00:21:53
+Attachment [trac_8268_speed_up_Christoffel-sl.patch](tarball://root/attachments/some-uuid/ticket8268/trac_8268_speed_up_Christoffel-sl.patch) by @seblabbe created at 2010-02-15 00:21:53
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_073186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73186",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006749.json:
     "title": "[with patch, needs review] Knapsack algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6749",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
@@ -37,7 +37,7 @@ archive/issue_comments_055521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55521",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_055522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55522",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_055523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55523",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_055524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55524",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_055525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55525",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_055526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55526",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_055527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55527",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_055528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55528",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_055529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55529",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_055530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55530",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -299,16 +299,16 @@ This will have to wait until #6502 is resolved. Which patch is to be merged? Mos
 archive/issue_comments_055532.json:
 ```json
 {
-    "body": "Attachment [knapsack.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack.patch) by ncohen created at 2009-08-25 06:55:31",
+    "body": "Attachment [knapsack.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack.patch) by @nathanncohen created at 2009-08-25 06:55:31",
     "created_at": "2009-08-25T06:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55532",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [knapsack.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack.patch) by ncohen created at 2009-08-25 06:55:31
+Attachment [knapsack.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack.patch) by @nathanncohen created at 2009-08-25 06:55:31
 
 
 
@@ -317,16 +317,16 @@ Attachment [knapsack.patch](tarball://root/attachments/some-uuid/ticket6749/knap
 archive/issue_comments_055533.json:
 ```json
 {
-    "body": "Attachment [knapsack.2.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack.2.patch) by ncohen created at 2009-08-25 06:56:21\n\nUpdated. And you can apply any one of them, they're both the same ( I uploaded two by mistake the first time, then updated both )",
+    "body": "Attachment [knapsack.2.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack.2.patch) by @nathanncohen created at 2009-08-25 06:56:21\n\nUpdated. And you can apply any one of them, they're both the same ( I uploaded two by mistake the first time, then updated both )",
     "created_at": "2009-08-25T06:56:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55533",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [knapsack.2.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack.2.patch) by ncohen created at 2009-08-25 06:56:21
+Attachment [knapsack.2.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack.2.patch) by @nathanncohen created at 2009-08-25 06:56:21
 
 Updated. And you can apply any one of them, they're both the same ( I uploaded two by mistake the first time, then updated both )
 
@@ -342,7 +342,7 @@ archive/issue_comments_055534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55534",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_055535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55535",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_055536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55536",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_055537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55537",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_055538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55538",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -441,7 +441,7 @@ archive/issue_comments_055539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55539",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -454,16 +454,16 @@ Here is the new version, slightly modified to use the symbolics from #6869 ( the
 archive/issue_comments_055540.json:
 ```json
 {
-    "body": "Attachment [knapsack-symbolics.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack-symbolics.patch) by ncohen created at 2009-09-03 09:44:24",
+    "body": "Attachment [knapsack-symbolics.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack-symbolics.patch) by @nathanncohen created at 2009-09-03 09:44:24",
     "created_at": "2009-09-03T09:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55540",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [knapsack-symbolics.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack-symbolics.patch) by ncohen created at 2009-09-03 09:44:24
+Attachment [knapsack-symbolics.patch](tarball://root/attachments/some-uuid/ticket6749/knapsack-symbolics.patch) by @nathanncohen created at 2009-09-03 09:44:24
 
 
 
@@ -477,7 +477,7 @@ archive/issue_comments_055541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55541",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_055542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6749#issuecomment-55542",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

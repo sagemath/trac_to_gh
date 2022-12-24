@@ -3,7 +3,7 @@
 archive/issues_002654.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  rlb\n\nKeywords: cyclotomic polynomial\n\nThe current implementation of cyclotomic polynomials in sage/rings/polynomial/cyclotomic.pyx uses the Mobius inversion formula.\n\nI think it would be more efficient to use the recursion\n\n```\n\\Phi_{p*n}(X) = \\Phi_n(X^p) # if p|n\n              = \\Phi_n(X^p)/\\Phi_n(X) # else\n```\n\n(though probably not implemented recursively).  This would be simpler than what is currently done, and it would be worth implementing this to see if was really faster.\n\nSecondly, it would be easy to implement a function is_cyclotomic() using the algorithm of Smyth and Beukers.  This could just return True/False, or even n if the input is the n'th cyclotomic poly.  One application would be to improve the function multiplicative_order() for elements of number fields (and more general algebras), by checking if the minimal poly is cyclotomic.  There are a couple of TODOs in sage.rings.number_field.number_field_element which this would address (the algorithm there describes itself as \"very dumb\" and it is hard to disagree!).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2654\n\n",
+    "body": "Assignee: @malb\n\nCC:  rlb\n\nKeywords: cyclotomic polynomial\n\nThe current implementation of cyclotomic polynomials in sage/rings/polynomial/cyclotomic.pyx uses the Mobius inversion formula.\n\nI think it would be more efficient to use the recursion\n\n```\n\\Phi_{p*n}(X) = \\Phi_n(X^p) # if p|n\n              = \\Phi_n(X^p)/\\Phi_n(X) # else\n```\n\n(though probably not implemented recursively).  This would be simpler than what is currently done, and it would be worth implementing this to see if was really faster.\n\nSecondly, it would be easy to implement a function is_cyclotomic() using the algorithm of Smyth and Beukers.  This could just return True/False, or even n if the input is the n'th cyclotomic poly.  One application would be to improve the function multiplicative_order() for elements of number fields (and more general algebras), by checking if the minimal poly is cyclotomic.  There are a couple of TODOs in sage.rings.number_field.number_field_element which this would address (the algorithm there describes itself as \"very dumb\" and it is hard to disagree!).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2654\n\n",
     "created_at": "2008-03-23T12:24:24Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_002654.json:
     "title": "Cyclotomic polynomials -- suggested improvement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2654",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  rlb
 
@@ -52,7 +52,7 @@ archive/issue_comments_018241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18241",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_018242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18242",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_018243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18243",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -128,16 +128,16 @@ In that case I'll leave this alone and wait for you to provide a suitable patch!
 archive/issue_comments_018244.json:
 ```json
 {
-    "body": "Attachment [2654-cyclo.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo.patch) by robertwb created at 2008-04-01 00:13:21",
+    "body": "Attachment [2654-cyclo.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo.patch) by @robertwb created at 2008-04-01 00:13:21",
     "created_at": "2008-04-01T00:13:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18244",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2654-cyclo.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo.patch) by robertwb created at 2008-04-01 00:13:21
+Attachment [2654-cyclo.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo.patch) by @robertwb created at 2008-04-01 00:13:21
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_018245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18245",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_018246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18246",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -239,16 +239,16 @@ Fix the above 2, and it's a positive review.
 archive/issue_comments_018247.json:
 ```json
 {
-    "body": "Attachment [2654-cyclo-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-fixes.patch) by robertwb created at 2008-04-01 05:14:23\n\nFixes area attached.",
+    "body": "Attachment [2654-cyclo-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-fixes.patch) by @robertwb created at 2008-04-01 05:14:23\n\nFixes area attached.",
     "created_at": "2008-04-01T05:14:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18247",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2654-cyclo-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-fixes.patch) by robertwb created at 2008-04-01 05:14:23
+Attachment [2654-cyclo-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-fixes.patch) by @robertwb created at 2008-04-01 05:14:23
 
 Fixes area attached.
 
@@ -264,7 +264,7 @@ archive/issue_comments_018248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18248",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -277,16 +277,16 @@ I really have no horses in this race.
 archive/issue_comments_018249.json:
 ```json
 {
-    "body": "Changing assignee from malb to robertwb.",
+    "body": "Changing assignee from @malb to @robertwb.",
     "created_at": "2008-04-01T12:07:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18249",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from malb to robertwb.
+Changing assignee from @malb to @robertwb.
 
 
 
@@ -363,7 +363,7 @@ archive/issue_comments_018251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18251",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_018252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18252",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_018253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18253",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_018254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18254",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -480,16 +480,16 @@ No such limit is mentioned at http://www.shoup.net/ntl/doc/ZZX.txt
 archive/issue_comments_018255.json:
 ```json
 {
-    "body": "Attachment [2654-cyclo-printing.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-printing.patch) by robertwb created at 2008-04-02 19:54:50",
+    "body": "Attachment [2654-cyclo-printing.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-printing.patch) by @robertwb created at 2008-04-02 19:54:50",
     "created_at": "2008-04-02T19:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18255",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2654-cyclo-printing.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-printing.patch) by robertwb created at 2008-04-02 19:54:50
+Attachment [2654-cyclo-printing.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-printing.patch) by @robertwb created at 2008-04-02 19:54:50
 
 
 
@@ -498,16 +498,16 @@ Attachment [2654-cyclo-printing.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_018256.json:
 ```json
 {
-    "body": "Attachment [2654-cyclo-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-doctest-fixes.patch) by robertwb created at 2008-04-02 19:58:29\n\nI implemented fast printing for `ZZ[x]`, but the generic case could be done better in some cases and I didn't touch that. \n\nAs for the limit, it's buried in ntl/include/ctools.h. \n\n\n```\n#define NTL_OVFBND (1L << (NTL_BITS_PER_LONG-4))\n```\n\n\nwhich is now checked for (rather than inducing a crash). Also, the failing doctests are fixed.",
+    "body": "Attachment [2654-cyclo-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-doctest-fixes.patch) by @robertwb created at 2008-04-02 19:58:29\n\nI implemented fast printing for `ZZ[x]`, but the generic case could be done better in some cases and I didn't touch that. \n\nAs for the limit, it's buried in ntl/include/ctools.h. \n\n\n```\n#define NTL_OVFBND (1L << (NTL_BITS_PER_LONG-4))\n```\n\n\nwhich is now checked for (rather than inducing a crash). Also, the failing doctests are fixed.",
     "created_at": "2008-04-02T19:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18256",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2654-cyclo-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-doctest-fixes.patch) by robertwb created at 2008-04-02 19:58:29
+Attachment [2654-cyclo-doctest-fixes.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-doctest-fixes.patch) by @robertwb created at 2008-04-02 19:58:29
 
 I implemented fast printing for `ZZ[x]`, but the generic case could be done better in some cases and I didn't touch that. 
 
@@ -533,7 +533,7 @@ archive/issue_comments_018257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18257",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -588,16 +588,16 @@ Michael
 archive/issue_comments_018259.json:
 ```json
 {
-    "body": "Attachment [2654-cyclo-64bit.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-64bit.patch) by robertwb created at 2008-04-04 18:23:19",
+    "body": "Attachment [2654-cyclo-64bit.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-64bit.patch) by @robertwb created at 2008-04-04 18:23:19",
     "created_at": "2008-04-04T18:23:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18259",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2654-cyclo-64bit.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-64bit.patch) by robertwb created at 2008-04-04 18:23:19
+Attachment [2654-cyclo-64bit.patch](tarball://root/attachments/some-uuid/ticket2654/2654-cyclo-64bit.patch) by @robertwb created at 2008-04-04 18:23:19
 
 
 
@@ -611,7 +611,7 @@ archive/issue_comments_018260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2654#issuecomment-18260",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

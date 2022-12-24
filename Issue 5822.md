@@ -3,7 +3,7 @@
 archive/issues_005822.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb craigcitro\n\nIt would be very useful if for a congruence subgroup G and an integer d coprime to the level N of G, one could compute the action on cusps (modulo G) of `tau_d \\in Gal(Q(zeta_N)/Q)`.   This action is described on page 12 of Steven's \"Arithmetic on Modular Curves\". \n\nNote that Sage does not have a data type for \"equivalence classes of cusps\" yet, and the action is only well defined on equivalence classes.  However, one easy thing to implement (hopefully) is a function so that if G is a congruence subgroup, then we have\n\n```\nsage: G.galois_action_on_cusps(d, alpha)\n```\n\nwhich returns a cusp beta that is in the class of tau_d([alpha]).\n\nLater when there is a data structure for equivalence classes of cusps, and also one for these Galois groups (as abstract groups), then that will call the above function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5822\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @craigcitro\n\nIt would be very useful if for a congruence subgroup G and an integer d coprime to the level N of G, one could compute the action on cusps (modulo G) of `tau_d \\in Gal(Q(zeta_N)/Q)`.   This action is described on page 12 of Steven's \"Arithmetic on Modular Curves\". \n\nNote that Sage does not have a data type for \"equivalence classes of cusps\" yet, and the action is only well defined on equivalence classes.  However, one easy thing to implement (hopefully) is a function so that if G is a congruence subgroup, then we have\n\n```\nsage: G.galois_action_on_cusps(d, alpha)\n```\n\nwhich returns a cusp beta that is in the class of tau_d([alpha]).\n\nLater when there is a data structure for equivalence classes of cusps, and also one for these Galois groups (as abstract groups), then that will call the above function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5822\n\n",
     "created_at": "2009-04-19T03:54:35Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_005822.json:
     "title": "cusps -- implement action of the Galois group on cusps for congruence subgroups as on page 12 of Steven's \"Arithmetic on Modular Curves\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5822",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb craigcitro
+CC:  @robertwb @craigcitro
 
 It would be very useful if for a congruence subgroup G and an integer d coprime to the level N of G, one could compute the action on cusps (modulo G) of `tau_d \in Gal(Q(zeta_N)/Q)`.   This action is described on page 12 of Steven's "Arithmetic on Modular Curves". 
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5822
 archive/issue_comments_045751.json:
 ```json
 {
-    "body": "Attachment [trac_5822.patch](tarball://root/attachments/some-uuid/ticket5822/trac_5822.patch) by was created at 2009-04-19 06:01:46",
+    "body": "Attachment [trac_5822.patch](tarball://root/attachments/some-uuid/ticket5822/trac_5822.patch) by @williamstein created at 2009-04-19 06:01:46",
     "created_at": "2009-04-19T06:01:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45751",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5822.patch](tarball://root/attachments/some-uuid/ticket5822/trac_5822.patch) by was created at 2009-04-19 06:01:46
+Attachment [trac_5822.patch](tarball://root/attachments/some-uuid/ticket5822/trac_5822.patch) by @williamstein created at 2009-04-19 06:01:46
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_045752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45752",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_045753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45753",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_045754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45754",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_045755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45755",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

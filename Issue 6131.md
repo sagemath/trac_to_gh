@@ -14,7 +14,7 @@ archive/issues_006131.json:
     "title": "cmp for number field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6131",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -39,7 +39,7 @@ archive/issue_comments_048972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6131#issuecomment-48972",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_048973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6131#issuecomment-48973",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

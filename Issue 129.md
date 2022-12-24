@@ -3,7 +3,7 @@
 archive/issues_000129.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen you build a sage tree at one location and then move it to another location, introspection is broken. Example:\n\nNumberField?\n\nwould still quote an absolute file name in the old location and\n\nNumberField??\n\nwould fail.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/129\n\n",
+    "body": "Assignee: @williamstein\n\nWhen you build a sage tree at one location and then move it to another location, introspection is broken. Example:\n\nNumberField?\n\nwould still quote an absolute file name in the old location and\n\nNumberField??\n\nwould fail.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/129\n\n",
     "created_at": "2006-10-14T05:35:46Z",
     "labels": [
         "interfaces",
@@ -13,10 +13,10 @@ archive/issues_000129.json:
     "title": "relocation problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/129",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When you build a sage tree at one location and then move it to another location, introspection is broken. Example:
 
@@ -45,7 +45,7 @@ archive/issue_comments_000607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/129#issuecomment-607",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_000608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/129#issuecomment-608",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_000609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/129#issuecomment-609",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

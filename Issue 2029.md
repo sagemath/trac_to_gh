@@ -144,7 +144,7 @@ archive/issue_comments_013135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2029#issuecomment-13135",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005760.json:
     "title": "bring doctest coverage of plot3d/shapes.pyx to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5760",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5760
 archive/issue_comments_045022.json:
 ```json
 {
-    "body": "Attachment [5760-shapes-doctests.patch](tarball://root/attachments/some-uuid/ticket5760/5760-shapes-doctests.patch) by robertwb created at 2009-04-11 23:56:14",
+    "body": "Attachment [5760-shapes-doctests.patch](tarball://root/attachments/some-uuid/ticket5760/5760-shapes-doctests.patch) by @robertwb created at 2009-04-11 23:56:14",
     "created_at": "2009-04-11T23:56:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5760#issuecomment-45022",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5760-shapes-doctests.patch](tarball://root/attachments/some-uuid/ticket5760/5760-shapes-doctests.patch) by robertwb created at 2009-04-11 23:56:14
+Attachment [5760-shapes-doctests.patch](tarball://root/attachments/some-uuid/ticket5760/5760-shapes-doctests.patch) by @robertwb created at 2009-04-11 23:56:14
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_045023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5760#issuecomment-45023",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -45,7 +45,7 @@ archive/issue_comments_055941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6788#issuecomment-55941",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_055942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6788#issuecomment-55942",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -76,16 +76,16 @@ On the various machines I tried (no Solaris though!) I don't get a timeout but r
 archive/issue_comments_055943.json:
 ```json
 {
-    "body": "Attachment [trac_6788.patch](tarball://root/attachments/some-uuid/ticket6788/trac_6788.patch) by AlexGhitza created at 2009-08-21 01:38:28\n\napply after spkg's at #6564 and #6699",
+    "body": "Attachment [trac_6788.patch](tarball://root/attachments/some-uuid/ticket6788/trac_6788.patch) by @aghitza created at 2009-08-21 01:38:28\n\napply after spkg's at #6564 and #6699",
     "created_at": "2009-08-21T01:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6788#issuecomment-55943",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6788.patch](tarball://root/attachments/some-uuid/ticket6788/trac_6788.patch) by AlexGhitza created at 2009-08-21 01:38:28
+Attachment [trac_6788.patch](tarball://root/attachments/some-uuid/ticket6788/trac_6788.patch) by @aghitza created at 2009-08-21 01:38:28
 
 apply after spkg's at #6564 and #6699
 
@@ -101,7 +101,7 @@ archive/issue_comments_055944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6788#issuecomment-55944",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_055946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6788#issuecomment-55946",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_055947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6788#issuecomment-55947",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_055948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6788#issuecomment-55948",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_055950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6788#issuecomment-55950",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

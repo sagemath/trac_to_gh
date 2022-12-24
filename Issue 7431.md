@@ -3,7 +3,7 @@
 archive/issues_007431.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\nCC:  jason\n\n\n```\n%hide \n@interact \ndef _(n=2): \n    f(x,y)=x^n \n    show(plot(f,(x,0,1))) \n```\n\ndoesn't work well, especially if you update the interact. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7431\n\n",
+    "body": "Assignee: @itolkov\n\nCC:  @jasongrout\n\n\n```\n%hide \n@interact \ndef _(n=2): \n    f(x,y)=x^n \n    show(plot(f,(x,0,1))) \n```\n\ndoesn't work well, especially if you update the interact. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7431\n\n",
     "created_at": "2009-11-11T19:47:36Z",
     "labels": [
         "interact",
@@ -14,12 +14,12 @@ archive/issues_007431.json:
     "title": "@interact and %hide don't play nice together",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7431",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
-CC:  jason
+CC:  @jasongrout
 
 
 ```
@@ -48,7 +48,7 @@ archive/issue_comments_062527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7431#issuecomment-62527",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_062528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7431#issuecomment-62528",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_062529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7431#issuecomment-62529",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

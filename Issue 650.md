@@ -14,7 +14,7 @@ archive/issues_000650.json:
     "title": "serious modular forms bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/650",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: was or craigcitro
@@ -51,7 +51,7 @@ archive/issue_comments_003379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3379",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -64,16 +64,16 @@ Added a patch that turns this into a NotImplementedError. The problem is that th
 archive/issue_comments_003380.json:
 ```json
 {
-    "body": "Changing assignee from was or craigcitro to craigcitro.",
+    "body": "Changing assignee from was or craigcitro to @craigcitro.",
     "created_at": "2007-10-02T00:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3380",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was or craigcitro to craigcitro.
+Changing assignee from was or craigcitro to @craigcitro.
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_003381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3381",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_003382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3382",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -118,16 +118,16 @@ Actually, I discovered a second place where this needed to be turned into a NotI
 archive/issue_comments_003383.json:
 ```json
 {
-    "body": "Attachment [trac_650_bandaid.hg](tarball://root/attachments/some-uuid/ticket650/trac_650_bandaid.hg) by craigcitro created at 2007-10-12 21:59:03",
+    "body": "Attachment [trac_650_bandaid.hg](tarball://root/attachments/some-uuid/ticket650/trac_650_bandaid.hg) by @craigcitro created at 2007-10-12 21:59:03",
     "created_at": "2007-10-12T21:59:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3383",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_650_bandaid.hg](tarball://root/attachments/some-uuid/ticket650/trac_650_bandaid.hg) by craigcitro created at 2007-10-12 21:59:03
+Attachment [trac_650_bandaid.hg](tarball://root/attachments/some-uuid/ticket650/trac_650_bandaid.hg) by @craigcitro created at 2007-10-12 21:59:03
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_003384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3384",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_003385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3385",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_003386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3386",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -201,13 +201,13 @@ Resolution: fixed
 archive/issue_comments_003387.json:
 ```json
 {
-    "body": "Attachment [trac_650_bandaid.2.hg](tarball://root/attachments/some-uuid/ticket650/trac_650_bandaid.2.hg) by was created at 2007-10-19 01:48:40",
+    "body": "Attachment [trac_650_bandaid.2.hg](tarball://root/attachments/some-uuid/ticket650/trac_650_bandaid.2.hg) by @williamstein created at 2007-10-19 01:48:40",
     "created_at": "2007-10-19T01:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/650#issuecomment-3387",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_650_bandaid.2.hg](tarball://root/attachments/some-uuid/ticket650/trac_650_bandaid.2.hg) by was created at 2007-10-19 01:48:40
+Attachment [trac_650_bandaid.2.hg](tarball://root/attachments/some-uuid/ticket650/trac_650_bandaid.2.hg) by @williamstein created at 2007-10-19 01:48:40

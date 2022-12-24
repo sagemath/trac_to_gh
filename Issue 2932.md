@@ -3,7 +3,7 @@
 archive/issues_002932.json:
 ```json
 {
-    "body": "Assignee: was\n\nFrom Alex Ghitza:\n\n\n```\nsage: M = matrix(CDF, 2, 2, [(-1 - 2*I, 5 - 6*I), (-2 - 4*I, 10 - 12*I)])\nsage: M.is_invertible()\nTrue\nsage: M.determinant()\n5.3290705182e-15 + 1.7763568394e-15*I\nsage: M.inverse()\n[ 1.01330991616e+15 - 2.58956978574e+15*I -5.06654958079e+14 +\n1.29478489287e+15*I]\n[ 5.62949953421e+14 + 5.62949953421e+14*I -2.81474976711e+14 -\n2.81474976711e+14*I]\n\nSo because of roundoff errors, Sage thinks that we have an invertible\nmatrix.  But the code for echelon_form knows that it's not invertible:\n\nsage: M.echelon_form()\n[                                    1.0                             1.4\n+ 3.2*I]\n[-2.22044604925e-16 - 4.4408920985e-16*I\n~       0]\nsage: M.rank()\n1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2932\n\n",
+    "body": "Assignee: @williamstein\n\nFrom Alex Ghitza:\n\n\n```\nsage: M = matrix(CDF, 2, 2, [(-1 - 2*I, 5 - 6*I), (-2 - 4*I, 10 - 12*I)])\nsage: M.is_invertible()\nTrue\nsage: M.determinant()\n5.3290705182e-15 + 1.7763568394e-15*I\nsage: M.inverse()\n[ 1.01330991616e+15 - 2.58956978574e+15*I -5.06654958079e+14 +\n1.29478489287e+15*I]\n[ 5.62949953421e+14 + 5.62949953421e+14*I -2.81474976711e+14 -\n2.81474976711e+14*I]\n\nSo because of roundoff errors, Sage thinks that we have an invertible\nmatrix.  But the code for echelon_form knows that it's not invertible:\n\nsage: M.echelon_form()\n[                                    1.0                             1.4\n+ 3.2*I]\n[-2.22044604925e-16 - 4.4408920985e-16*I\n~       0]\nsage: M.rank()\n1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2932\n\n",
     "created_at": "2008-04-15T14:52:28Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002932.json:
     "title": "matrix.is_invertible() has inconsisten behavior over CDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2932",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 From Alex Ghitza:
 
@@ -63,7 +63,7 @@ archive/issue_comments_020186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2932#issuecomment-20186",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -153,7 +153,7 @@ Changing priority from critical to major.
 archive/issue_comments_020189.json:
 ```json
 {
-    "body": "Changing assignee from was to broune.",
+    "body": "Changing assignee from @williamstein to broune.",
     "created_at": "2008-05-10T21:04:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2932",
     "type": "issue_comment",
@@ -162,7 +162,7 @@ archive/issue_comments_020189.json:
 }
 ```
 
-Changing assignee from was to broune.
+Changing assignee from @williamstein to broune.
 
 
 
@@ -212,7 +212,7 @@ archive/issue_comments_020192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2932#issuecomment-20192",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_020193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2932#issuecomment-20193",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_020194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2932#issuecomment-20194",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_020195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2932#issuecomment-20195",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_020196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2932#issuecomment-20196",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_020197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2932#issuecomment-20197",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_020198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2932#issuecomment-20198",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_020199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2932#issuecomment-20199",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

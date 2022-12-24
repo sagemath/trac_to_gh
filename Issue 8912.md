@@ -3,7 +3,7 @@
 archive/issues_008912.json:
 ```json
 {
-    "body": "Assignee: saliola\n\nKeywords: documentation\n\nthe word self is latexed in the first line of the documentation string, but it shouldn't be.\n\n\n```\nm = FiniteMonoids().example()\nx = m.an_element()\nx.pseudo_order??\n```\n\n\na patch is coming soon\n\nIssue created by migration from https://trac.sagemath.org/ticket/8912\n\n",
+    "body": "Assignee: @saliola\n\nKeywords: documentation\n\nthe word self is latexed in the first line of the documentation string, but it shouldn't be.\n\n\n```\nm = FiniteMonoids().example()\nx = m.an_element()\nx.pseudo_order??\n```\n\n\na patch is coming soon\n\nIssue created by migration from https://trac.sagemath.org/ticket/8912\n\n",
     "created_at": "2010-05-07T14:56:05Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_008912.json:
     "title": "documentation error in pseudo_order for finite monoid element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8912",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: saliola
+Assignee: @saliola
 
 Keywords: documentation
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8912
 archive/issue_comments_082098.json:
 ```json
 {
-    "body": "Attachment [trac8912.patch](tarball://root/attachments/some-uuid/ticket8912/trac8912.patch) by saliola created at 2010-05-07 15:28:50",
+    "body": "Attachment [trac8912.patch](tarball://root/attachments/some-uuid/ticket8912/trac8912.patch) by @saliola created at 2010-05-07 15:28:50",
     "created_at": "2010-05-07T15:28:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8912#issuecomment-82098",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac8912.patch](tarball://root/attachments/some-uuid/ticket8912/trac8912.patch) by saliola created at 2010-05-07 15:28:50
+Attachment [trac8912.patch](tarball://root/attachments/some-uuid/ticket8912/trac8912.patch) by @saliola created at 2010-05-07 15:28:50
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_082099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8912#issuecomment-82099",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001380.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following code should not give an error:\n\n```\nsage: R.<x,y>=QQ[]\nsage: x.subs(x=1/y)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n...\n<type 'exceptions.TypeError'>: no implicit coercion of element to the rational numbers\n```\n\n\nAs evidence, I give,\n\n```\nsage: R.<x,y>=ZZ[]\nsage: x.subs(x=1/y)\n1/y\n```\n\nwhich makes perfect sense to me.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1380\n\n",
+    "body": "Assignee: @williamstein\n\nThe following code should not give an error:\n\n```\nsage: R.<x,y>=QQ[]\nsage: x.subs(x=1/y)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n...\n<type 'exceptions.TypeError'>: no implicit coercion of element to the rational numbers\n```\n\n\nAs evidence, I give,\n\n```\nsage: R.<x,y>=ZZ[]\nsage: x.subs(x=1/y)\n1/y\n```\n\nwhich makes perfect sense to me.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1380\n\n",
     "created_at": "2007-12-03T10:01:35Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001380.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following code should not give an error:
 
@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1380
 archive/issue_comments_008850.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-12-03T10:01:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1380",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_008850.json:
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -246,16 +246,16 @@ Michael
 archive/issue_comments_008855.json:
 ```json
 {
-    "body": "Attachment [trac1380.patch](tarball://root/attachments/some-uuid/ticket1380/trac1380.patch) by rlm created at 2007-12-18 21:09:00",
+    "body": "Attachment [trac1380.patch](tarball://root/attachments/some-uuid/ticket1380/trac1380.patch) by @rlmill created at 2007-12-18 21:09:00",
     "created_at": "2007-12-18T21:09:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1380#issuecomment-8855",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac1380.patch](tarball://root/attachments/some-uuid/ticket1380/trac1380.patch) by rlm created at 2007-12-18 21:09:00
+Attachment [trac1380.patch](tarball://root/attachments/some-uuid/ticket1380/trac1380.patch) by @rlmill created at 2007-12-18 21:09:00
 
 
 
@@ -269,7 +269,7 @@ archive/issue_comments_008856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1380#issuecomment-8856",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_008857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1380#issuecomment-8857",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

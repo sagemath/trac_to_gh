@@ -14,7 +14,7 @@ archive/issues_005143.json:
     "title": "shift-enter should save and exit tinyMCE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5143",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -46,7 +46,7 @@ archive/issue_comments_039344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5143#issuecomment-39344",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -59,16 +59,16 @@ See also: http://wiki.moxiecode.com/index.php/TinyMCE:API/tinymce.Editor/onKeyDo
 archive/issue_comments_039345.json:
 ```json
 {
-    "body": "Attachment [trac_5143-tinymce-shift-enter.patch](tarball://root/attachments/some-uuid/ticket5143/trac_5143-tinymce-shift-enter.patch) by jason created at 2009-02-03 08:15:04",
+    "body": "Attachment [trac_5143-tinymce-shift-enter.patch](tarball://root/attachments/some-uuid/ticket5143/trac_5143-tinymce-shift-enter.patch) by @jasongrout created at 2009-02-03 08:15:04",
     "created_at": "2009-02-03T08:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5143#issuecomment-39345",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5143-tinymce-shift-enter.patch](tarball://root/attachments/some-uuid/ticket5143/trac_5143-tinymce-shift-enter.patch) by jason created at 2009-02-03 08:15:04
+Attachment [trac_5143-tinymce-shift-enter.patch](tarball://root/attachments/some-uuid/ticket5143/trac_5143-tinymce-shift-enter.patch) by @jasongrout created at 2009-02-03 08:15:04
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_039346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5143#issuecomment-39346",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_039347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5143#issuecomment-39347",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_039348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5143#issuecomment-39348",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -131,16 +131,16 @@ Changing status from new to assigned.
 archive/issue_comments_039349.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2009-02-03T09:25:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5143#issuecomment-39349",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 

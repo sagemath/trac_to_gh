@@ -14,7 +14,7 @@ archive/issues_006385.json:
     "title": "Python relative import messes up Sage command line arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6385",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tbd
@@ -79,7 +79,7 @@ archive/issue_comments_051120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6385#issuecomment-51120",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_051121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6385#issuecomment-51121",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_051122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6385#issuecomment-51122",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_051123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6385#issuecomment-51123",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_051124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6385#issuecomment-51124",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

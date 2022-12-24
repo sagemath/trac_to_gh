@@ -13,7 +13,7 @@ archive/issues_000091.json:
     "title": "gcd for polynomials over ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/91",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 Assignee: somebody
@@ -54,7 +54,7 @@ archive/issue_comments_000446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/91",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/91#issuecomment-446",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_000447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/91",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/91#issuecomment-447",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

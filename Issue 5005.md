@@ -14,7 +14,7 @@ archive/issues_005005.json:
     "title": "polynomial_template __init__ from list horribly innefficient",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5005",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -49,7 +49,7 @@ archive/issue_comments_038173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5005#issuecomment-38173",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_038174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5005#issuecomment-38174",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

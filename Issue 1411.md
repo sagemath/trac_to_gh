@@ -14,7 +14,7 @@ archive/issues_001411.json:
     "title": "[with patch] Update the README.txt file included in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1411",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1411
 archive/issue_comments_009101.json:
 ```json
 {
-    "body": "Attachment [README.2.txt](tarball://root/attachments/some-uuid/ticket1411/README.2.txt) by was created at 2007-12-06 14:53:11",
+    "body": "Attachment [README.2.txt](tarball://root/attachments/some-uuid/ticket1411/README.2.txt) by @williamstein created at 2007-12-06 14:53:11",
     "created_at": "2007-12-06T14:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1411#issuecomment-9101",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [README.2.txt](tarball://root/attachments/some-uuid/ticket1411/README.2.txt) by was created at 2007-12-06 14:53:11
+Attachment [README.2.txt](tarball://root/attachments/some-uuid/ticket1411/README.2.txt) by @williamstein created at 2007-12-06 14:53:11
 
 
 
@@ -50,16 +50,16 @@ Attachment [README.2.txt](tarball://root/attachments/some-uuid/ticket1411/README
 archive/issue_comments_009102.json:
 ```json
 {
-    "body": "Attachment [README.3.txt](tarball://root/attachments/some-uuid/ticket1411/README.3.txt) by was created at 2007-12-06 14:53:16",
+    "body": "Attachment [README.3.txt](tarball://root/attachments/some-uuid/ticket1411/README.3.txt) by @williamstein created at 2007-12-06 14:53:16",
     "created_at": "2007-12-06T14:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1411#issuecomment-9102",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [README.3.txt](tarball://root/attachments/some-uuid/ticket1411/README.3.txt) by was created at 2007-12-06 14:53:16
+Attachment [README.3.txt](tarball://root/attachments/some-uuid/ticket1411/README.3.txt) by @williamstein created at 2007-12-06 14:53:16
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008703.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  chapoton sage-combinat vivianepons darij\n\nPatch in preparation in sage-combinat queue\n\nDepends on #8702\n\nIssue created by migration from https://trac.sagemath.org/ticket/8703\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @fchapoton sage-combinat vivianepons @darijgr\n\nPatch in preparation in sage-combinat queue\n\nDepends on #8702\n\nIssue created by migration from https://trac.sagemath.org/ticket/8703\n\n",
     "created_at": "2010-04-17T09:36:21Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_008703.json:
     "title": "Combinatorial Rooted Ordered and Binary Trees",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8703",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
-CC:  chapoton sage-combinat vivianepons darij
+CC:  @fchapoton sage-combinat vivianepons @darijgr
 
 Patch in preparation in sage-combinat queue
 
@@ -41,7 +41,7 @@ archive/issue_comments_079325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79325",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_079326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79326",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_079327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79327",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_079328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79328",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_079329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79329",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_079330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79330",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_079331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79331",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_079332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79332",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_079333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79333",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_079334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79334",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_079335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79335",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_079336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79336",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_079337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79337",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_079338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79338",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_079339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79339",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_079340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79340",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_079341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79341",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_079342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79342",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_079344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79344",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_079345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79345",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_079346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79346",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -536,7 +536,7 @@ archive/issue_comments_079349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79349",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
@@ -554,7 +554,7 @@ archive/issue_comments_079350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79350",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
@@ -588,16 +588,16 @@ Thanks -- I wait for Florent or Fred for approval of your change.
 archive/issue_comments_079352.json:
 ```json
 {
-    "body": "Attachment [trac_8703-additional-feature-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-fh.patch) by hivert created at 2013-02-18 17:56:56\n\nReplying to [comment:24 stumpc5]:\n> Thanks -- I wait for Florent or Fred for approval of your change.\n\nThanks Viviane for this very good idea ! However, I feel that it should be more documented as well as tested. That's why I revamped your patch in a bigger patch. Please review it knowing that I'm Ok with your changes (the tests I added pass :-).\n\nFlorent",
+    "body": "Attachment [trac_8703-additional-feature-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-fh.patch) by @hivert created at 2013-02-18 17:56:56\n\nReplying to [comment:24 stumpc5]:\n> Thanks -- I wait for Florent or Fred for approval of your change.\n\nThanks Viviane for this very good idea ! However, I feel that it should be more documented as well as tested. That's why I revamped your patch in a bigger patch. Please review it knowing that I'm Ok with your changes (the tests I added pass :-).\n\nFlorent",
     "created_at": "2013-02-18T17:56:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79352",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8703-additional-feature-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-fh.patch) by hivert created at 2013-02-18 17:56:56
+Attachment [trac_8703-additional-feature-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-fh.patch) by @hivert created at 2013-02-18 17:56:56
 
 Replying to [comment:24 stumpc5]:
 > Thanks -- I wait for Florent or Fred for approval of your change.
@@ -645,7 +645,7 @@ archive/issue_comments_079354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79354",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_079355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79355",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -763,7 +763,7 @@ archive/issue_comments_079356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79356",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -862,7 +862,7 @@ archive/issue_comments_079357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79357",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -901,7 +901,7 @@ archive/issue_comments_079358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79358",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -962,7 +962,7 @@ archive/issue_comments_079359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79359",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -975,16 +975,16 @@ attempting manual override
 archive/issue_comments_079360.json:
 ```json
 {
-    "body": "Attachment [trees.tar.gz](tarball://root/attachments/some-uuid/ticket8703/trees.tar.gz) by darij created at 2013-02-20 06:57:22\n\nOK, I'm really not getting this:\n\n```\ndarij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ hg commit\nabort: cannot commit over an applied mq patch\n```\n\n\nAnyway, attaching my changed versions as a tar.gz [trees.tar.gz] containing the three relevant .py files (I only modified docstrings). Sorry for the format :( Hope someone transforms it into a .patch.\n\nHere's something else I'm finding weird:\n\n```\nsage: a = []\nsage: BinaryTree(a)\n[., .]\nsage: b = ()\nsage: BinaryTree(b)\n.\n```\n\nOr shouldn't lists and tuples behave alike here?",
+    "body": "Attachment [trees.tar.gz](tarball://root/attachments/some-uuid/ticket8703/trees.tar.gz) by @darijgr created at 2013-02-20 06:57:22\n\nOK, I'm really not getting this:\n\n```\ndarij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ hg commit\nabort: cannot commit over an applied mq patch\n```\n\n\nAnyway, attaching my changed versions as a tar.gz [trees.tar.gz] containing the three relevant .py files (I only modified docstrings). Sorry for the format :( Hope someone transforms it into a .patch.\n\nHere's something else I'm finding weird:\n\n```\nsage: a = []\nsage: BinaryTree(a)\n[., .]\nsage: b = ()\nsage: BinaryTree(b)\n.\n```\n\nOr shouldn't lists and tuples behave alike here?",
     "created_at": "2013-02-20T06:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79360",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
-Attachment [trees.tar.gz](tarball://root/attachments/some-uuid/ticket8703/trees.tar.gz) by darij created at 2013-02-20 06:57:22
+Attachment [trees.tar.gz](tarball://root/attachments/some-uuid/ticket8703/trees.tar.gz) by @darijgr created at 2013-02-20 06:57:22
 
 OK, I'm really not getting this:
 
@@ -1021,7 +1021,7 @@ archive/issue_comments_079361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79361",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
@@ -1043,7 +1043,7 @@ archive/issue_comments_079362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79362",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -1089,7 +1089,7 @@ archive/issue_comments_079363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79363",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
@@ -1109,7 +1109,7 @@ archive/issue_comments_079364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79364",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -1128,7 +1128,7 @@ archive/issue_comments_079365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79365",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
@@ -1146,7 +1146,7 @@ archive/issue_comments_079366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79366",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -1212,7 +1212,7 @@ archive/issue_comments_079368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79368",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -1281,7 +1281,7 @@ archive/issue_comments_079370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79370",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -1298,16 +1298,16 @@ EDIT: Ooops... The changes to ordered_tree.py look weird to me; I certainly did 
 archive/issue_comments_079371.json:
 ```json
 {
-    "body": "Attachment [trac_8703-trees_addition-dg.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg.patch) by darij created at 2013-03-02 08:23:11\n\ndocstrings improved. let's see if this works...",
+    "body": "Attachment [trac_8703-trees_addition-dg.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg.patch) by @darijgr created at 2013-03-02 08:23:11\n\ndocstrings improved. let's see if this works...",
     "created_at": "2013-03-02T08:23:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79371",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
-Attachment [trac_8703-trees_addition-dg.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg.patch) by darij created at 2013-03-02 08:23:11
+Attachment [trac_8703-trees_addition-dg.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg.patch) by @darijgr created at 2013-03-02 08:23:11
 
 docstrings improved. let's see if this works...
 
@@ -1323,7 +1323,7 @@ archive/issue_comments_079372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79372",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -1338,16 +1338,16 @@ Rogue edits are gone (they were due to me incorrectly resolving a conflict with 
 archive/issue_comments_079373.json:
 ```json
 {
-    "body": "Attachment [trac_8703-trees-fh-rebase.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-fh-rebase.patch) by VivianePons created at 2013-03-20 10:16:39",
+    "body": "Attachment [trac_8703-trees-fh-rebase.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-fh-rebase.patch) by @VivianePons created at 2013-03-20 10:16:39",
     "created_at": "2013-03-20T10:16:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79373",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
-Attachment [trac_8703-trees-fh-rebase.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-fh-rebase.patch) by VivianePons created at 2013-03-20 10:16:39
+Attachment [trac_8703-trees-fh-rebase.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-fh-rebase.patch) by @VivianePons created at 2013-03-20 10:16:39
 
 
 
@@ -1361,7 +1361,7 @@ archive/issue_comments_079374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79374",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
@@ -1379,7 +1379,7 @@ archive/issue_comments_079375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79375",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1401,7 +1401,7 @@ archive/issue_comments_079376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79376",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -1416,16 +1416,16 @@ Thanks, Frédéric! I was about to tell Viviane not to bother fixing my patch, a
 archive/issue_comments_079377.json:
 ```json
 {
-    "body": "Attachment [trac_8703-additional-feature-vp.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-vp.patch) by VivianePons created at 2013-03-21 09:01:51\n\nThanks a lot Fr\u00e9d\u00e9ric.\n\nI just uploaded a new version of \"additional feature\", it's just a small fix about the \"eval\" function. I was using the \"eval\" function to transform a string into an object, I changed it to use \"litteral_eval\" which is more secured (it won't eval just any python code, it is restricted to simple objects).\n\nOnce the bot is happy, is there anything else to do on this patch or can it go with \"positive review\" ?\n\n for the bot:\n\napply trac_8703-trees-fh-rebase.patch trac_8703-additional-feature-vp.patch trac_8703-trees_addition-dg-v2.patch",
+    "body": "Attachment [trac_8703-additional-feature-vp.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-vp.patch) by @VivianePons created at 2013-03-21 09:01:51\n\nThanks a lot Fr\u00e9d\u00e9ric.\n\nI just uploaded a new version of \"additional feature\", it's just a small fix about the \"eval\" function. I was using the \"eval\" function to transform a string into an object, I changed it to use \"litteral_eval\" which is more secured (it won't eval just any python code, it is restricted to simple objects).\n\nOnce the bot is happy, is there anything else to do on this patch or can it go with \"positive review\" ?\n\n for the bot:\n\napply trac_8703-trees-fh-rebase.patch trac_8703-additional-feature-vp.patch trac_8703-trees_addition-dg-v2.patch",
     "created_at": "2013-03-21T09:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79377",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
-Attachment [trac_8703-additional-feature-vp.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-vp.patch) by VivianePons created at 2013-03-21 09:01:51
+Attachment [trac_8703-additional-feature-vp.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-vp.patch) by @VivianePons created at 2013-03-21 09:01:51
 
 Thanks a lot Frédéric.
 
@@ -1449,7 +1449,7 @@ archive/issue_comments_079378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79378",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1472,7 +1472,7 @@ archive/issue_comments_079379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79379",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1500,7 +1500,7 @@ archive/issue_comments_079380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79380",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -1518,7 +1518,7 @@ archive/issue_comments_079381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79381",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1531,16 +1531,16 @@ I have made more changes in the new review patch. And yes, comment 33 should be 
 archive/issue_comments_079382.json:
 ```json
 {
-    "body": "Attachment [trac_8703-trees_addition-dg-v2.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg-v2.patch) by chapoton created at 2013-03-21 18:37:12\n\nnew patch, solving all issues in comments 33,52 and 53",
+    "body": "Attachment [trac_8703-trees_addition-dg-v2.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg-v2.patch) by @fchapoton created at 2013-03-21 18:37:12\n\nnew patch, solving all issues in comments 33,52 and 53",
     "created_at": "2013-03-21T18:37:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79382",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_8703-trees_addition-dg-v2.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg-v2.patch) by chapoton created at 2013-03-21 18:37:12
+Attachment [trac_8703-trees_addition-dg-v2.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg-v2.patch) by @fchapoton created at 2013-03-21 18:37:12
 
 new patch, solving all issues in comments 33,52 and 53
 
@@ -1556,7 +1556,7 @@ archive/issue_comments_079383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79383",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1575,16 +1575,16 @@ apply trac_8703-trees-fh-rebase.patch trac_8703-additional-feature-vp.patch trac
 archive/issue_comments_079384.json:
 ```json
 {
-    "body": "Attachment [trac_8703-review-fc.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-review-fc.patch) by chapoton created at 2013-03-31 19:29:18",
+    "body": "Attachment [trac_8703-review-fc.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-review-fc.patch) by @fchapoton created at 2013-03-31 19:29:18",
     "created_at": "2013-03-31T19:29:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79384",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_8703-review-fc.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-review-fc.patch) by chapoton created at 2013-03-31 19:29:18
+Attachment [trac_8703-review-fc.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-review-fc.patch) by @fchapoton created at 2013-03-31 19:29:18
 
 
 
@@ -1598,7 +1598,7 @@ archive/issue_comments_079385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79385",
-    "user": "VivianePons"
+    "user": "@VivianePons"
 }
 ```
 
@@ -1618,7 +1618,7 @@ archive/issue_comments_079386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79386",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -1631,16 +1631,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_079387.json:
 ```json
 {
-    "body": "Attachment [trac_8703-trees-folded.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-folded.patch) by hivert created at 2013-04-11 10:19:26\n\nI folded the patches for the release manager.\n\nFlorent",
+    "body": "Attachment [trac_8703-trees-folded.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-folded.patch) by @hivert created at 2013-04-11 10:19:26\n\nI folded the patches for the release manager.\n\nFlorent",
     "created_at": "2013-04-11T10:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79387",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8703-trees-folded.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-folded.patch) by hivert created at 2013-04-11 10:19:26
+Attachment [trac_8703-trees-folded.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-folded.patch) by @hivert created at 2013-04-11 10:19:26
 
 I folded the patches for the release manager.
 
@@ -1658,7 +1658,7 @@ archive/issue_comments_079388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79388",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1676,7 +1676,7 @@ archive/issue_comments_079389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79389",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1699,7 +1699,7 @@ archive/issue_comments_079390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79390",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1712,16 +1712,16 @@ And this patch should be rebased to sage-5.9.beta5.
 archive/issue_comments_079391.json:
 ```json
 {
-    "body": "Attachment [trac_8703-trees-rebased.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-rebased.patch) by tscrim created at 2013-04-15 00:32:40\n\nRebased patch.\n\nFor patchbot:\n\nApply: trac_8703-trees-rebased.patch",
+    "body": "Attachment [trac_8703-trees-rebased.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-rebased.patch) by @tscrim created at 2013-04-15 00:32:40\n\nRebased patch.\n\nFor patchbot:\n\nApply: trac_8703-trees-rebased.patch",
     "created_at": "2013-04-15T00:32:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79391",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_8703-trees-rebased.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-rebased.patch) by tscrim created at 2013-04-15 00:32:40
+Attachment [trac_8703-trees-rebased.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-rebased.patch) by @tscrim created at 2013-04-15 00:32:40
 
 Rebased patch.
 
@@ -1741,7 +1741,7 @@ archive/issue_comments_079392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79392",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1759,7 +1759,7 @@ archive/issue_comments_079393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79393",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1777,7 +1777,7 @@ archive/issue_comments_079394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79394",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

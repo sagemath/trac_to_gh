@@ -3,7 +3,7 @@
 archive/issues_005524.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  sage-combinat jbandlow\n\nsage: f = attrcall(\"bla\")\nsage: dumps(f)\nsage: loads(dumps(f)) == f\nFalse\n\nThis is because AttrCallObject doesn't have a __cmp__ method:\n\nIssue created by migration from https://trac.sagemath.org/ticket/5524\n\n",
+    "body": "Assignee: cwitty\n\nCC:  sage-combinat @jbandlow\n\nsage: f = attrcall(\"bla\")\nsage: dumps(f)\nsage: loads(dumps(f)) == f\nFalse\n\nThis is because AttrCallObject doesn't have a __cmp__ method:\n\nIssue created by migration from https://trac.sagemath.org/ticket/5524\n\n",
     "created_at": "2009-03-15T05:03:19Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_005524.json:
     "title": "attrcall missing __cmp__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5524",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: cwitty
 
-CC:  sage-combinat jbandlow
+CC:  sage-combinat @jbandlow
 
 sage: f = attrcall("bla")
 sage: dumps(f)
@@ -44,7 +44,7 @@ archive/issue_comments_042976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5524#issuecomment-42976",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_042977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5524#issuecomment-42977",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -75,16 +75,16 @@ Changing status from new to needs_review.
 archive/issue_comments_042978.json:
 ```json
 {
-    "body": "Attachment [trac_5524_attrcall_eq.patch](tarball://root/attachments/some-uuid/ticket5524/trac_5524_attrcall_eq.patch) by nthiery created at 2010-01-26 21:30:26",
+    "body": "Attachment [trac_5524_attrcall_eq.patch](tarball://root/attachments/some-uuid/ticket5524/trac_5524_attrcall_eq.patch) by @nthiery created at 2010-01-26 21:30:26",
     "created_at": "2010-01-26T21:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5524#issuecomment-42978",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_5524_attrcall_eq.patch](tarball://root/attachments/some-uuid/ticket5524/trac_5524_attrcall_eq.patch) by nthiery created at 2010-01-26 21:30:26
+Attachment [trac_5524_attrcall_eq.patch](tarball://root/attachments/some-uuid/ticket5524/trac_5524_attrcall_eq.patch) by @nthiery created at 2010-01-26 21:30:26
 
 
 
@@ -93,16 +93,16 @@ Attachment [trac_5524_attrcall_eq.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_042979.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to nthiery.",
+    "body": "Changing assignee from cwitty to @nthiery.",
     "created_at": "2010-01-26T21:30:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5524#issuecomment-42979",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Changing assignee from cwitty to nthiery.
+Changing assignee from cwitty to @nthiery.
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_042980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5524#issuecomment-42980",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_042981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5524#issuecomment-42981",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_042982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5524#issuecomment-42982",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_042983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5524#issuecomment-42983",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_042984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5524#issuecomment-42984",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_042985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5524#issuecomment-42985",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 

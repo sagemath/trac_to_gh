@@ -14,7 +14,7 @@ archive/issues_005718.json:
     "title": "notebook -- %hide works fine in the worksheet but shows up when printing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5718",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -69,16 +69,16 @@ Michael
 archive/issue_comments_044685.json:
 ```json
 {
-    "body": "Attachment [hide_print_5718.patch](tarball://root/attachments/some-uuid/ticket5718/hide_print_5718.patch) by mpatel created at 2009-04-14 09:15:33",
+    "body": "Attachment [hide_print_5718.patch](tarball://root/attachments/some-uuid/ticket5718/hide_print_5718.patch) by @qed777 created at 2009-04-14 09:15:33",
     "created_at": "2009-04-14T09:15:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5718#issuecomment-44685",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [hide_print_5718.patch](tarball://root/attachments/some-uuid/ticket5718/hide_print_5718.patch) by mpatel created at 2009-04-14 09:15:33
+Attachment [hide_print_5718.patch](tarball://root/attachments/some-uuid/ticket5718/hide_print_5718.patch) by @qed777 created at 2009-04-14 09:15:33
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_044686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5718#issuecomment-44686",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_044687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5718",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5718#issuecomment-44687",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

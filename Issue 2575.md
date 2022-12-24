@@ -14,7 +14,7 @@ archive/issues_002575.json:
     "title": "GAP doesn't compile with CC='ccache gcc'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2575",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: mabshoff
@@ -95,16 +95,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2575
 archive/issue_comments_017590.json:
 ```json
 {
-    "body": "Attachment [config.log](tarball://root/attachments/some-uuid/ticket2575/config.log) by schilly created at 2008-03-17 18:29:10\n\nconfig.log produced by the configure process, for debugging, see BASECC variable",
+    "body": "Attachment [config.log](tarball://root/attachments/some-uuid/ticket2575/config.log) by @haraldschilly created at 2008-03-17 18:29:10\n\nconfig.log produced by the configure process, for debugging, see BASECC variable",
     "created_at": "2008-03-17T18:29:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2575#issuecomment-17590",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [config.log](tarball://root/attachments/some-uuid/ticket2575/config.log) by schilly created at 2008-03-17 18:29:10
+Attachment [config.log](tarball://root/attachments/some-uuid/ticket2575/config.log) by @haraldschilly created at 2008-03-17 18:29:10
 
 config.log produced by the configure process, for debugging, see BASECC variable
 
@@ -120,7 +120,7 @@ archive/issue_comments_017591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2575#issuecomment-17591",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_017597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2575#issuecomment-17597",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_017598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2575#issuecomment-17598",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_017599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2575#issuecomment-17599",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_017604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2575#issuecomment-17604",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_017605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2575#issuecomment-17605",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_017606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2575#issuecomment-17606",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

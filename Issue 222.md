@@ -14,7 +14,7 @@ archive/issues_000222.json:
     "title": "field mutability issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/222",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -47,7 +47,7 @@ archive/issue_comments_000991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/222#issuecomment-991",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_000992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/222#issuecomment-992",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

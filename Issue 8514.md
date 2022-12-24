@@ -3,7 +3,7 @@
 archive/issues_008514.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  wdj\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n\nThis builds fully on Solaris 10, and passes all doc tests. This is the first version of Sage to do this. \n\n == The problem with the optional database_gap-4.4.12 ==\n\n```\ndatabase_gap-4.4.12/.hg/requires\ndatabase_gap-4.4.12/.hg/00changelog.i\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\n./spkg-install: bad substitution\n\nreal    0m0.015s\nuser    0m0.004s\nsys     0m0.011s\nsage: An error occurred while installing database_gap-4.4.12\n```\n\n\n == The solution ==\n\nspkg-install looks a bit of a mess to me. I will need to try to work out what the author intended. SPKG.txt gives no idea of the author or anything very useful. It's contents are just:\n\n\n```\nGAP's databases of finite groups and table of marks.\n```\n\n\nI need to be a bit of a detective to work this out!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8514\n\n",
+    "body": "Assignee: tbd\n\nCC:  @wdjoyner\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n\nThis builds fully on Solaris 10, and passes all doc tests. This is the first version of Sage to do this. \n\n == The problem with the optional database_gap-4.4.12 ==\n\n```\ndatabase_gap-4.4.12/.hg/requires\ndatabase_gap-4.4.12/.hg/00changelog.i\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\n./spkg-install: bad substitution\n\nreal    0m0.015s\nuser    0m0.004s\nsys     0m0.011s\nsage: An error occurred while installing database_gap-4.4.12\n```\n\n\n == The solution ==\n\nspkg-install looks a bit of a mess to me. I will need to try to work out what the author intended. SPKG.txt gives no idea of the author or anything very useful. It's contents are just:\n\n\n```\nGAP's databases of finite groups and table of marks.\n```\n\n\nI need to be a bit of a detective to work this out!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8514\n\n",
     "created_at": "2010-03-13T01:13:49Z",
     "labels": [
         "packages: optional",
@@ -19,7 +19,7 @@ archive/issues_008514.json:
 ```
 Assignee: tbd
 
-CC:  wdj
+CC:  @wdjoyner
 
 ## Hardware & associated software
 
@@ -91,7 +91,7 @@ archive/issue_comments_076901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8514#issuecomment-76901",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_076902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8514#issuecomment-76902",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_076903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8514#issuecomment-76903",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_076907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8514#issuecomment-76907",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_076908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8514#issuecomment-76908",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_076909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8514#issuecomment-76909",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_076910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8514#issuecomment-76910",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_076914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8514#issuecomment-76914",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_076915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8514#issuecomment-76915",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

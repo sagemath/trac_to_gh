@@ -14,7 +14,7 @@ archive/issues_006468.json:
     "title": "FiniteField_prime_modn.__call__ should raise an error, rather than return an error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6468",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: somebody
@@ -76,7 +76,7 @@ archive/issue_comments_052289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6468#issuecomment-52289",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -89,16 +89,16 @@ Changing status from new to assigned.
 archive/issue_comments_052290.json:
 ```json
 {
-    "body": "Changing assignee from somebody to SimonKing.",
+    "body": "Changing assignee from somebody to @simon-king-jena.",
     "created_at": "2009-07-06T13:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6468#issuecomment-52290",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Changing assignee from somebody to SimonKing.
+Changing assignee from somebody to @simon-king-jena.
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_052291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6468#issuecomment-52291",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_052292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6468#issuecomment-52292",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_052293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6468#issuecomment-52293",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_052294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6468#issuecomment-52294",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_052295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6468#issuecomment-52295",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -230,16 +230,16 @@ FiniteField.__call__ should raise an error rather than return an error
 archive/issue_comments_052296.json:
 ```json
 {
-    "body": "Attachment [GF_call_.patch](tarball://root/attachments/some-uuid/ticket6468/GF_call_.patch) by SimonKing created at 2009-07-07 13:19:26\n\nReplying to [comment:5 SimonKing]:\n> OK, done, there is a new patch including doc tests.\n\nPS: I did the doc tests for the patched version of sage/rings/integer_mod_ring.py, and they passed. However, as I have only sage-4.0.2, it'd be better if someone else runs the tests as well.\n\nCheers,\n  Simon",
+    "body": "Attachment [GF_call_.patch](tarball://root/attachments/some-uuid/ticket6468/GF_call_.patch) by @simon-king-jena created at 2009-07-07 13:19:26\n\nReplying to [comment:5 SimonKing]:\n> OK, done, there is a new patch including doc tests.\n\nPS: I did the doc tests for the patched version of sage/rings/integer_mod_ring.py, and they passed. However, as I have only sage-4.0.2, it'd be better if someone else runs the tests as well.\n\nCheers,\n  Simon",
     "created_at": "2009-07-07T13:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6468#issuecomment-52296",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [GF_call_.patch](tarball://root/attachments/some-uuid/ticket6468/GF_call_.patch) by SimonKing created at 2009-07-07 13:19:26
+Attachment [GF_call_.patch](tarball://root/attachments/some-uuid/ticket6468/GF_call_.patch) by @simon-king-jena created at 2009-07-07 13:19:26
 
 Replying to [comment:5 SimonKing]:
 > OK, done, there is a new patch including doc tests.
@@ -261,7 +261,7 @@ archive/issue_comments_052297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6468#issuecomment-52297",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

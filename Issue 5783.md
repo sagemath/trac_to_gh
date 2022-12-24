@@ -14,7 +14,7 @@ archive/issues_005783.json:
     "title": "[with patch, needs review]  Lazy attributes: fix infinite recursion bug + support for cpdefs methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5783",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: cwitty
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5783
 archive/issue_comments_045268.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to nthiery.",
+    "body": "Changing assignee from cwitty to @nthiery.",
     "created_at": "2009-05-18T03:07:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45268",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Changing assignee from cwitty to nthiery.
+Changing assignee from cwitty to @nthiery.
 
 
 
@@ -52,16 +52,16 @@ Changing assignee from cwitty to nthiery.
 archive/issue_comments_045269.json:
 ```json
 {
-    "body": "Attachment [lazy_attributes-fixes-5783-final.patch](tarball://root/attachments/some-uuid/ticket5783/lazy_attributes-fixes-5783-final.patch) by nthiery created at 2009-05-19 06:19:22",
+    "body": "Attachment [lazy_attributes-fixes-5783-final.patch](tarball://root/attachments/some-uuid/ticket5783/lazy_attributes-fixes-5783-final.patch) by @nthiery created at 2009-05-19 06:19:22",
     "created_at": "2009-05-19T06:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45269",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [lazy_attributes-fixes-5783-final.patch](tarball://root/attachments/some-uuid/ticket5783/lazy_attributes-fixes-5783-final.patch) by nthiery created at 2009-05-19 06:19:22
+Attachment [lazy_attributes-fixes-5783-final.patch](tarball://root/attachments/some-uuid/ticket5783/lazy_attributes-fixes-5783-final.patch) by @nthiery created at 2009-05-19 06:19:22
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_045270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45270",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_045271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45271",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_045272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45272",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

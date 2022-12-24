@@ -3,7 +3,7 @@
 archive/issues_007593.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nAs the title says, this patch implements a function solving the maximum weight matching problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7593\n\n",
+    "body": "Assignee: @rlmill\n\nAs the title says, this patch implements a function solving the maximum weight matching problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7593\n\n",
     "created_at": "2009-12-03T14:46:04Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007593.json:
     "title": "Matching using LP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7593",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 As the title says, this patch implements a function solving the maximum weight matching problem.
 
@@ -37,7 +37,7 @@ archive/issue_comments_064737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64737",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_064738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64738",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_064739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64739",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_064740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64740",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_064741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64741",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_064742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64742",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_064743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64743",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_064744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64744",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_064745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64745",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_064746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64746",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_064747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64747",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_064748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64748",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_064749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64749",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_064750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64750",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_064751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64751",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -382,16 +382,16 @@ It should be `.. math::` instead of `.. MATH::`.  Also, it would be good to foll
 archive/issue_comments_064752.json:
 ```json
 {
-    "body": "Attachment [trac_7593.patch](tarball://root/attachments/some-uuid/ticket7593/trac_7593.patch) by ncohen created at 2009-12-15 16:12:01\n\nI just updated the path to replace MATH by math :-)",
+    "body": "Attachment [trac_7593.patch](tarball://root/attachments/some-uuid/ticket7593/trac_7593.patch) by @nathanncohen created at 2009-12-15 16:12:01\n\nI just updated the path to replace MATH by math :-)",
     "created_at": "2009-12-15T16:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64752",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7593.patch](tarball://root/attachments/some-uuid/ticket7593/trac_7593.patch) by ncohen created at 2009-12-15 16:12:01
+Attachment [trac_7593.patch](tarball://root/attachments/some-uuid/ticket7593/trac_7593.patch) by @nathanncohen created at 2009-12-15 16:12:01
 
 I just updated the path to replace MATH by math :-)
 
@@ -407,7 +407,7 @@ archive/issue_comments_064753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64753",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

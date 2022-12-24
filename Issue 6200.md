@@ -14,7 +14,7 @@ archive/issues_006200.json:
     "title": "Use mpmath to compute constants",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6200",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 Assignee: jkantor
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6200
 archive/issue_comments_049535.json:
 ```json
 {
-    "body": "Attachment [constants.patch](tarball://root/attachments/some-uuid/ticket6200/constants.patch) by fredrik.johansson created at 2009-06-19 17:30:38",
+    "body": "Attachment [constants.patch](tarball://root/attachments/some-uuid/ticket6200/constants.patch) by @fredrik-johansson created at 2009-06-19 17:30:38",
     "created_at": "2009-06-19T17:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6200#issuecomment-49535",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [constants.patch](tarball://root/attachments/some-uuid/ticket6200/constants.patch) by fredrik.johansson created at 2009-06-19 17:30:38
+Attachment [constants.patch](tarball://root/attachments/some-uuid/ticket6200/constants.patch) by @fredrik-johansson created at 2009-06-19 17:30:38
 
 
 
@@ -60,16 +60,16 @@ Attachment [constants.patch](tarball://root/attachments/some-uuid/ticket6200/con
 archive/issue_comments_049536.json:
 ```json
 {
-    "body": "Attachment [trac_6200-review.patch](tarball://root/attachments/some-uuid/ticket6200/trac_6200-review.patch) by mhansen created at 2009-06-19 23:06:59",
+    "body": "Attachment [trac_6200-review.patch](tarball://root/attachments/some-uuid/ticket6200/trac_6200-review.patch) by @mwhansen created at 2009-06-19 23:06:59",
     "created_at": "2009-06-19T23:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6200#issuecomment-49536",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6200-review.patch](tarball://root/attachments/some-uuid/ticket6200/trac_6200-review.patch) by mhansen created at 2009-06-19 23:06:59
+Attachment [trac_6200-review.patch](tarball://root/attachments/some-uuid/ticket6200/trac_6200-review.patch) by @mwhansen created at 2009-06-19 23:06:59
 
 
 
@@ -83,7 +83,7 @@ archive/issue_comments_049537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6200#issuecomment-49537",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_049538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6200#issuecomment-49538",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_049539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6200#issuecomment-49539",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

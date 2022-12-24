@@ -3,7 +3,7 @@
 archive/issues_006162.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  cswiercz\n\nSince R's histogram plotting is not working for me, I added some functionality to dft.py's plot_histogram method for IndexedSequences.\nHope this is useful to other.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6162\n\n",
+    "body": "Assignee: tbd\n\nCC:  @cswiercz\n\nSince R's histogram plotting is not working for me, I added some functionality to dft.py's plot_histogram method for IndexedSequences.\nHope this is useful to other.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6162\n\n",
     "created_at": "2009-05-30T22:16:10Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_006162.json:
     "title": "plot_histogram improvments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6162",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: tbd
 
-CC:  cswiercz
+CC:  @cswiercz
 
 Since R's histogram plotting is not working for me, I added some functionality to dft.py's plot_histogram method for IndexedSequences.
 Hope this is useful to other.
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6162
 archive/issue_comments_049144.json:
 ```json
 {
-    "body": "Attachment [trac_6162-histogram.patch](tarball://root/attachments/some-uuid/ticket6162/trac_6162-histogram.patch) by wdj created at 2009-05-30 22:20:45\n\nbased on 4.0.rc1",
+    "body": "Attachment [trac_6162-histogram.patch](tarball://root/attachments/some-uuid/ticket6162/trac_6162-histogram.patch) by @wdjoyner created at 2009-05-30 22:20:45\n\nbased on 4.0.rc1",
     "created_at": "2009-05-30T22:20:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49144",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_6162-histogram.patch](tarball://root/attachments/some-uuid/ticket6162/trac_6162-histogram.patch) by wdj created at 2009-05-30 22:20:45
+Attachment [trac_6162-histogram.patch](tarball://root/attachments/some-uuid/ticket6162/trac_6162-histogram.patch) by @wdjoyner created at 2009-05-30 22:20:45
 
 based on 4.0.rc1
 
@@ -60,7 +60,7 @@ archive/issue_comments_049145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49145",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_049146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49146",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -91,16 +91,16 @@ Changing component from algebra to graphics.
 archive/issue_comments_049147.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2009-06-01T03:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49147",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_049148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49148",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_049149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49149",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_049150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49150",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -165,16 +165,16 @@ Changing keywords from "" to "plot histogram".
 archive/issue_comments_049151.json:
 ```json
 {
-    "body": "Attachment [trac_6162-plotting.patch](tarball://root/attachments/some-uuid/ticket6162/trac_6162-plotting.patch) by wdj created at 2009-06-15 20:35:28\n\nThanks Nick!\n\nShould I review your patches or does someone other than the 2 of us review both patches?",
+    "body": "Attachment [trac_6162-plotting.patch](tarball://root/attachments/some-uuid/ticket6162/trac_6162-plotting.patch) by @wdjoyner created at 2009-06-15 20:35:28\n\nThanks Nick!\n\nShould I review your patches or does someone other than the 2 of us review both patches?",
     "created_at": "2009-06-15T20:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49151",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_6162-plotting.patch](tarball://root/attachments/some-uuid/ticket6162/trac_6162-plotting.patch) by wdj created at 2009-06-15 20:35:28
+Attachment [trac_6162-plotting.patch](tarball://root/attachments/some-uuid/ticket6162/trac_6162-plotting.patch) by @wdjoyner created at 2009-06-15 20:35:28
 
 Thanks Nick!
 
@@ -192,7 +192,7 @@ archive/issue_comments_049152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49152",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_049153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49153",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_049154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49154",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_049155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49155",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_049156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49156",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_049157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49157",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_049158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6162#issuecomment-49158",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

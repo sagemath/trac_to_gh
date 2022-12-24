@@ -14,7 +14,7 @@ archive/issues_004679.json:
     "title": "Spelling errors in documentation for sage.rings.polynomial.polynomial_element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4679",
-    "user": "tjlahey"
+    "user": "@tjl"
 }
 ```
 Assignee: tba
@@ -41,7 +41,7 @@ archive/issue_comments_035249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4679#issuecomment-35249",
-    "user": "tjlahey"
+    "user": "@tjl"
 }
 ```
 
@@ -54,16 +54,16 @@ Spelling errors patch for Trac 4679.
 archive/issue_comments_035250.json:
 ```json
 {
-    "body": "Attachment [trac_4679.patch](tarball://root/attachments/some-uuid/ticket4679/trac_4679.patch) by tjlahey created at 2008-12-02 18:20:14\n\nAdded patch to fix spelling errors.",
+    "body": "Attachment [trac_4679.patch](tarball://root/attachments/some-uuid/ticket4679/trac_4679.patch) by @tjl created at 2008-12-02 18:20:14\n\nAdded patch to fix spelling errors.",
     "created_at": "2008-12-02T18:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4679#issuecomment-35250",
-    "user": "tjlahey"
+    "user": "@tjl"
 }
 ```
 
-Attachment [trac_4679.patch](tarball://root/attachments/some-uuid/ticket4679/trac_4679.patch) by tjlahey created at 2008-12-02 18:20:14
+Attachment [trac_4679.patch](tarball://root/attachments/some-uuid/ticket4679/trac_4679.patch) by @tjl created at 2008-12-02 18:20:14
 
 Added patch to fix spelling errors.
 
@@ -103,7 +103,7 @@ archive/issue_comments_035252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4679#issuecomment-35252",
-    "user": "tjlahey"
+    "user": "@tjl"
 }
 ```
 

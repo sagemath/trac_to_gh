@@ -14,7 +14,7 @@ archive/issues_006323.json:
     "title": "optional doctest failure -- problem in species code (easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6323",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -73,7 +73,7 @@ archive/issue_comments_050466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50466",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_050467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50467",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_050468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50468",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -122,16 +122,16 @@ Changing component from packages: optional to combinatorics.
 archive/issue_comments_050469.json:
 ```json
 {
-    "body": "Attachment [trac_6323.patch](tarball://root/attachments/some-uuid/ticket6323/trac_6323.patch) by mhansen created at 2013-06-21 15:29:41",
+    "body": "Attachment [trac_6323.patch](tarball://root/attachments/some-uuid/ticket6323/trac_6323.patch) by @mwhansen created at 2013-06-21 15:29:41",
     "created_at": "2013-06-21T15:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50469",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6323.patch](tarball://root/attachments/some-uuid/ticket6323/trac_6323.patch) by mhansen created at 2013-06-21 15:29:41
+Attachment [trac_6323.patch](tarball://root/attachments/some-uuid/ticket6323/trac_6323.patch) by @mwhansen created at 2013-06-21 15:29:41
 
 
 
@@ -145,7 +145,7 @@ archive/issue_comments_050470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50470",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_050471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50471",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -180,16 +180,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_050472.json:
 ```json
 {
-    "body": "Attachment [trac_6323-rev.patch](tarball://root/attachments/some-uuid/ticket6323/trac_6323-rev.patch) by ncohen created at 2013-06-27 17:08:20\n\nHmmmmmm... The doctests do not pass because of a bug in Sage's interface with sloane, and #10358 fixes the file anyway !\n\nNathann",
+    "body": "Attachment [trac_6323-rev.patch](tarball://root/attachments/some-uuid/ticket6323/trac_6323-rev.patch) by @nathanncohen created at 2013-06-27 17:08:20\n\nHmmmmmm... The doctests do not pass because of a bug in Sage's interface with sloane, and #10358 fixes the file anyway !\n\nNathann",
     "created_at": "2013-06-27T17:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50472",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_6323-rev.patch](tarball://root/attachments/some-uuid/ticket6323/trac_6323-rev.patch) by ncohen created at 2013-06-27 17:08:20
+Attachment [trac_6323-rev.patch](tarball://root/attachments/some-uuid/ticket6323/trac_6323-rev.patch) by @nathanncohen created at 2013-06-27 17:08:20
 
 Hmmmmmm... The doctests do not pass because of a bug in Sage's interface with sloane, and #10358 fixes the file anyway !
 
@@ -207,7 +207,7 @@ archive/issue_comments_050473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50473",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

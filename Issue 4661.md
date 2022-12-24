@@ -3,7 +3,7 @@
 archive/issues_004661.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThere were a few duplicate entries in  `module_list.py`, which didn't cause any trouble, but caused sage to build some extensions (like `sage/structure/sage_object.pyx`) multiple times during the build. The attached patch alphabetizes the module list, and removes duplicates.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4661\n\n",
+    "body": "Assignee: @craigcitro\n\nThere were a few duplicate entries in  `module_list.py`, which didn't cause any trouble, but caused sage to build some extensions (like `sage/structure/sage_object.pyx`) multiple times during the build. The attached patch alphabetizes the module list, and removes duplicates.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4661\n\n",
     "created_at": "2008-11-30T09:00:21Z",
     "labels": [
         "build",
@@ -14,10 +14,10 @@ archive/issues_004661.json:
     "title": "clean up module_list.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4661",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 There were a few duplicate entries in  `module_list.py`, which didn't cause any trouble, but caused sage to build some extensions (like `sage/structure/sage_object.pyx`) multiple times during the build. The attached patch alphabetizes the module list, and removes duplicates.
 

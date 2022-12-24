@@ -14,7 +14,7 @@ archive/issues_004827.json:
     "title": "[with patch, needs review] add L-BFGS-B bound constraint solver to minimize_constraint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4827",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: jkantor
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4827
 archive/issue_comments_036596.json:
 ```json
 {
-    "body": "Attachment [lbfgsb-v1.patch](tarball://root/attachments/some-uuid/ticket4827/lbfgsb-v1.patch) by schilly created at 2008-12-18 17:32:43\n\nadds lbfgsb to minimize_constraint",
+    "body": "Attachment [lbfgsb-v1.patch](tarball://root/attachments/some-uuid/ticket4827/lbfgsb-v1.patch) by @haraldschilly created at 2008-12-18 17:32:43\n\nadds lbfgsb to minimize_constraint",
     "created_at": "2008-12-18T17:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4827#issuecomment-36596",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [lbfgsb-v1.patch](tarball://root/attachments/some-uuid/ticket4827/lbfgsb-v1.patch) by schilly created at 2008-12-18 17:32:43
+Attachment [lbfgsb-v1.patch](tarball://root/attachments/some-uuid/ticket4827/lbfgsb-v1.patch) by @haraldschilly created at 2008-12-18 17:32:43
 
 adds lbfgsb to minimize_constraint
 
@@ -52,16 +52,16 @@ adds lbfgsb to minimize_constraint
 archive/issue_comments_036597.json:
 ```json
 {
-    "body": "Attachment [trac_4827-optimize-doc.patch](tarball://root/attachments/some-uuid/ticket4827/trac_4827-optimize-doc.patch) by jason created at 2009-01-28 19:32:32\n\napply on top of previous patch",
+    "body": "Attachment [trac_4827-optimize-doc.patch](tarball://root/attachments/some-uuid/ticket4827/trac_4827-optimize-doc.patch) by @jasongrout created at 2009-01-28 19:32:32\n\napply on top of previous patch",
     "created_at": "2009-01-28T19:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4827#issuecomment-36597",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_4827-optimize-doc.patch](tarball://root/attachments/some-uuid/ticket4827/trac_4827-optimize-doc.patch) by jason created at 2009-01-28 19:32:32
+Attachment [trac_4827-optimize-doc.patch](tarball://root/attachments/some-uuid/ticket4827/trac_4827-optimize-doc.patch) by @jasongrout created at 2009-01-28 19:32:32
 
 apply on top of previous patch
 
@@ -77,7 +77,7 @@ archive/issue_comments_036598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4827#issuecomment-36598",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_036599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4827#issuecomment-36599",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

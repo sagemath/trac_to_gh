@@ -3,7 +3,7 @@
 archive/issues_007956.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mjo\n\nFrom http://groups.google.com/group/sage-devel/browse_thread/thread/1f3d4eca8bbff6c2/d3108ab8f2060050\n\nRonald van Luijk encountered the following problem:\n\nsage: S.<p,q> = QQ[]\nsage: A1.<r> = AffineSpace(QQ,1)\nsage: A1_emb = Curve(p-2)\nsage: type(A1_emb)\n<class 'sage.schemes.plane_curves.affine_curve.AffineCurve_generic'>\nsage: g = A1.hom([2,r],A1_emb)\nTypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 \ngiven)\n\nWe browsed through the schemes module a bit, and the functionality for a morphism to an affine curve does seem to exist through functions such as AlgebraicScheme_subscheme_affine._point_morphism_class(), but\nis not accessible since AlgebraicScheme_subscheme_affine is not a superclass of AffineCurve_generic. Comparing it to the projective case, AlgebraicScheme_subscheme_projective _is_ a superclass of ProjectiveCurve_generic.\n\nIs this a simple oversight in the class hierarchy for AffineCurve_generic, or is there a more fundamental reason why this does not yet work?\n\n\nI made a patch (for sage 4.2) that makes the class hierarchy for affine curves similar to that of projective curves, but would appreciate if someone familiar with the schemes module could take a look since it is a rather invasive change:\n\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/affine_morphism.patch\n\nThe patch also changes the constructor of SchemeMorphism_on_points_affine_space to expect a number of polynomials equal to the dimension of the ambient space instead of the dimension of the curve/subscheme, analogous to a change to\nSchemeMorphism_on_points_projective_space by David Kohel from 2007.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7956\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\nFrom http://groups.google.com/group/sage-devel/browse_thread/thread/1f3d4eca8bbff6c2/d3108ab8f2060050\n\nRonald van Luijk encountered the following problem:\n\nsage: S.<p,q> = QQ[]\nsage: A1.<r> = AffineSpace(QQ,1)\nsage: A1_emb = Curve(p-2)\nsage: type(A1_emb)\n<class 'sage.schemes.plane_curves.affine_curve.AffineCurve_generic'>\nsage: g = A1.hom([2,r],A1_emb)\nTypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 \ngiven)\n\nWe browsed through the schemes module a bit, and the functionality for a morphism to an affine curve does seem to exist through functions such as AlgebraicScheme_subscheme_affine._point_morphism_class(), but\nis not accessible since AlgebraicScheme_subscheme_affine is not a superclass of AffineCurve_generic. Comparing it to the projective case, AlgebraicScheme_subscheme_projective _is_ a superclass of ProjectiveCurve_generic.\n\nIs this a simple oversight in the class hierarchy for AffineCurve_generic, or is there a more fundamental reason why this does not yet work?\n\n\nI made a patch (for sage 4.2) that makes the class hierarchy for affine curves similar to that of projective curves, but would appreciate if someone familiar with the schemes module could take a look since it is a rather invasive change:\n\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/affine_morphism.patch\n\nThe patch also changes the constructor of SchemeMorphism_on_points_affine_space to expect a number of polynomials equal to the dimension of the ambient space instead of the dimension of the curve/subscheme, analogous to a change to\nSchemeMorphism_on_points_projective_space by David Kohel from 2007.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7956\n\n",
     "created_at": "2010-01-16T18:27:44Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_007956.json:
     "title": "constructing a scheme morphism to an affine curve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7956",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mjo
+CC:  @orlitzky
 
 From http://groups.google.com/group/sage-devel/browse_thread/thread/1f3d4eca8bbff6c2/d3108ab8f2060050
 
@@ -63,7 +63,7 @@ archive/issue_comments_069421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69421",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -88,16 +88,16 @@ TypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given
 archive/issue_comments_069422.json:
 ```json
 {
-    "body": "Attachment [affine_morphism.patch](tarball://root/attachments/some-uuid/ticket7956/affine_morphism.patch) by wjp created at 2010-01-16 18:32:00",
+    "body": "Attachment [affine_morphism.patch](tarball://root/attachments/some-uuid/ticket7956/affine_morphism.patch) by @wjp created at 2010-01-16 18:32:00",
     "created_at": "2010-01-16T18:32:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69422",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [affine_morphism.patch](tarball://root/attachments/some-uuid/ticket7956/affine_morphism.patch) by wjp created at 2010-01-16 18:32:00
+Attachment [affine_morphism.patch](tarball://root/attachments/some-uuid/ticket7956/affine_morphism.patch) by @wjp created at 2010-01-16 18:32:00
 
 
 
@@ -106,16 +106,16 @@ Attachment [affine_morphism.patch](tarball://root/attachments/some-uuid/ticket79
 archive/issue_comments_069423.json:
 ```json
 {
-    "body": "Attachment [sage-trac_7956.patch](tarball://root/attachments/some-uuid/ticket7956/sage-trac_7956.patch) by mjo created at 2012-01-13 19:24:00\n\nAdd a doctest constructing such a morphism.",
+    "body": "Attachment [sage-trac_7956.patch](tarball://root/attachments/some-uuid/ticket7956/sage-trac_7956.patch) by @orlitzky created at 2012-01-13 19:24:00\n\nAdd a doctest constructing such a morphism.",
     "created_at": "2012-01-13T19:24:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69423",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_7956.patch](tarball://root/attachments/some-uuid/ticket7956/sage-trac_7956.patch) by mjo created at 2012-01-13 19:24:00
+Attachment [sage-trac_7956.patch](tarball://root/attachments/some-uuid/ticket7956/sage-trac_7956.patch) by @orlitzky created at 2012-01-13 19:24:00
 
 Add a doctest constructing such a morphism.
 
@@ -131,7 +131,7 @@ archive/issue_comments_069424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69424",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_069425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69425",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_069426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69426",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_069427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69427",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_069428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69428",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_069429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69429",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_069430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69430",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

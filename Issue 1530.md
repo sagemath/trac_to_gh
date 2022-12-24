@@ -3,7 +3,7 @@
 archive/issues_001530.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1530\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1530\n\n",
     "created_at": "2007-12-16T02:02:38Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001530.json:
     "title": "[with patch] building tut.tex is currently broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1530",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 

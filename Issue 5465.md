@@ -14,7 +14,7 @@ archive/issues_005465.json:
     "title": "render3d for groebner fans is totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5465",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mhampton

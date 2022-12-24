@@ -3,7 +3,7 @@
 archive/issues_005115.json:
 ```json
 {
-    "body": "Assignee: ddrake\n\nThe docstrings for CartesianProduct and IterableFunctionCall don't tell you how to use them with functions that actually take arguments.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5115\n\n",
+    "body": "Assignee: @dandrake\n\nThe docstrings for CartesianProduct and IterableFunctionCall don't tell you how to use them with functions that actually take arguments.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5115\n\n",
     "created_at": "2009-01-28T08:13:51Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_005115.json:
     "title": "documentation for IterableFunctionCall is poor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5115",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: ddrake
+Assignee: @dandrake
 
 The docstrings for CartesianProduct and IterableFunctionCall don't tell you how to use them with functions that actually take arguments.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5115
 archive/issue_comments_039097.json:
 ```json
 {
-    "body": "Attachment [trac_5115.patch](tarball://root/attachments/some-uuid/ticket5115/trac_5115.patch) by ddrake created at 2009-01-28 08:33:57",
+    "body": "Attachment [trac_5115.patch](tarball://root/attachments/some-uuid/ticket5115/trac_5115.patch) by @dandrake created at 2009-01-28 08:33:57",
     "created_at": "2009-01-28T08:33:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5115#issuecomment-39097",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5115.patch](tarball://root/attachments/some-uuid/ticket5115/trac_5115.patch) by ddrake created at 2009-01-28 08:33:57
+Attachment [trac_5115.patch](tarball://root/attachments/some-uuid/ticket5115/trac_5115.patch) by @dandrake created at 2009-01-28 08:33:57
 
 
 

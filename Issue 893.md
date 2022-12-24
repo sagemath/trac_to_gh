@@ -73,7 +73,7 @@ archive/issue_comments_005499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/893#issuecomment-5499",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,16 +88,16 @@ Now one does L = E.Lseries(), and there is a method
 archive/issue_comments_005500.json:
 ```json
 {
-    "body": "Attachment [trac893.patch](tarball://root/attachments/some-uuid/ticket893/trac893.patch) by roed created at 2007-10-14 03:08:13\n\nText patch fixing the doctest",
+    "body": "Attachment [trac893.patch](tarball://root/attachments/some-uuid/ticket893/trac893.patch) by @roed314 created at 2007-10-14 03:08:13\n\nText patch fixing the doctest",
     "created_at": "2007-10-14T03:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/893#issuecomment-5500",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac893.patch](tarball://root/attachments/some-uuid/ticket893/trac893.patch) by roed created at 2007-10-14 03:08:13
+Attachment [trac893.patch](tarball://root/attachments/some-uuid/ticket893/trac893.patch) by @roed314 created at 2007-10-14 03:08:13
 
 Text patch fixing the doctest
 
@@ -113,7 +113,7 @@ archive/issue_comments_005501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/893#issuecomment-5501",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

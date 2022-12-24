@@ -3,7 +3,7 @@
 archive/issues_005178.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  boothby craigcitro cremona kohel mabshoff malb ncalexan slelievre tornaria was\n\nThis patch changes LLL_gram to work with Gram matrices with not-necessarily integer entries.  Also it fixes several \"non-optimal\" coding issues both in the old implementation and the doctests.  For example, instead of computing U.det() to determine if the unimodular A has det -1 or 1, we just compute A.change_ring(GF(3)).det(), which is much faster. \n\nChanging LLL_gram to work for nonintegral gram matrices is critical for applications to computing class groups for the course I'm teaching right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5178\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  boothby @craigcitro @JohnCremona kohel mabshoff @malb @ncalexan @slel @tornaria @williamstein\n\nThis patch changes LLL_gram to work with Gram matrices with not-necessarily integer entries.  Also it fixes several \"non-optimal\" coding issues both in the old implementation and the doctests.  For example, instead of computing U.det() to determine if the unimodular A has det -1 or 1, we just compute A.change_ring(GF(3)).det(), which is much faster. \n\nChanging LLL_gram to work for nonintegral gram matrices is critical for applications to computing class groups for the course I'm teaching right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5178\n\n",
     "created_at": "2009-02-04T18:23:08Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005178.json:
     "title": "[with patch; needs review] change LLL_gram to work with Gram matrices with not-necessarily integer entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5178",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  boothby craigcitro cremona kohel mabshoff malb ncalexan slelievre tornaria was
+CC:  boothby @craigcitro @JohnCremona kohel mabshoff @malb @ncalexan @slel @tornaria @williamstein
 
 This patch changes LLL_gram to work with Gram matrices with not-necessarily integer entries.  Also it fixes several "non-optimal" coding issues both in the old implementation and the doctests.  For example, instead of computing U.det() to determine if the unimodular A has det -1 or 1, we just compute A.change_ring(GF(3)).det(), which is much faster. 
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5178
 archive/issue_comments_039688.json:
 ```json
 {
-    "body": "Attachment [trac_5178.patch](tarball://root/attachments/some-uuid/ticket5178/trac_5178.patch) by was created at 2009-02-04 18:23:40",
+    "body": "Attachment [trac_5178.patch](tarball://root/attachments/some-uuid/ticket5178/trac_5178.patch) by @williamstein created at 2009-02-04 18:23:40",
     "created_at": "2009-02-04T18:23:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5178#issuecomment-39688",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5178.patch](tarball://root/attachments/some-uuid/ticket5178/trac_5178.patch) by was created at 2009-02-04 18:23:40
+Attachment [trac_5178.patch](tarball://root/attachments/some-uuid/ticket5178/trac_5178.patch) by @williamstein created at 2009-02-04 18:23:40
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_039689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5178#issuecomment-39689",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_039693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5178#issuecomment-39693",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_039694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5178#issuecomment-39694",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_039702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5178#issuecomment-39702",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_039703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5178#issuecomment-39703",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_039704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5178#issuecomment-39704",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_039705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5178#issuecomment-39705",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_039706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5178#issuecomment-39706",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_039707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5178#issuecomment-39707",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_039708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5178#issuecomment-39708",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_039709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5178#issuecomment-39709",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_039710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5178#issuecomment-39710",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

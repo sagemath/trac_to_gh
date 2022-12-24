@@ -3,7 +3,7 @@
 archive/issues_009390.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  cturner mstreng\n\nKeywords: galois extension\n\nIn 4.4.4 the following code produces a number field which is Galois over the rationals but (allegedly) not over an intermediate field.\n\n\n```\nsage: K.<a>=NumberField(x^2+1)\nsage: Kt.<t> = K[]\nsage: L.<b> = K.extension(t^3-3*t-1)\nsage: L.is_galois_absolute()\nTrue\nsage: L.is_galois_relative()\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9390\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  cturner @mstreng\n\nKeywords: galois extension\n\nIn 4.4.4 the following code produces a number field which is Galois over the rationals but (allegedly) not over an intermediate field.\n\n\n```\nsage: K.<a>=NumberField(x^2+1)\nsage: Kt.<t> = K[]\nsage: L.<b> = K.extension(t^3-3*t-1)\nsage: L.is_galois_absolute()\nTrue\nsage: L.is_galois_relative()\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9390\n\n",
     "created_at": "2010-06-30T04:33:44Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_009390.json:
     "title": "is_galois_relative() not always right",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9390",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  cturner mstreng
+CC:  cturner @mstreng
 
 Keywords: galois extension
 
@@ -152,7 +152,7 @@ archive/issue_comments_089393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9390#issuecomment-89393",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_089394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9390#issuecomment-89394",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_089398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9390#issuecomment-89398",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_089399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9390#issuecomment-89399",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -477,16 +477,16 @@ Replaces previous two patches
 archive/issue_comments_089403.json:
 ```json
 {
-    "body": "Attachment [trac_9390-2nd_replacement.patch](tarball://root/attachments/some-uuid/ticket9390/trac_9390-2nd_replacement.patch) by mstreng created at 2010-12-17 11:49:08\n\nReplying to [comment:7 fwclarke]:\n> I can't reproduce this.  Actually `is_galois` is not particularly ubiquitous (and certainly does figure in `gal_reps.py`):\n\nHow could you be so sure about that? The timeout is caused by the long test `EllipticCurve([1,-1,0,-107,-379]).galois_representation().image_type(7)`\nThe image_type() part runs forever on 4.6.1.alpha2 with your second patch, and is quite fast without any patches. That method is a long piece of code, so I didn't read it all, but it does suggest that it uses is_galois somewhere via another function.",
+    "body": "Attachment [trac_9390-2nd_replacement.patch](tarball://root/attachments/some-uuid/ticket9390/trac_9390-2nd_replacement.patch) by @mstreng created at 2010-12-17 11:49:08\n\nReplying to [comment:7 fwclarke]:\n> I can't reproduce this.  Actually `is_galois` is not particularly ubiquitous (and certainly does figure in `gal_reps.py`):\n\nHow could you be so sure about that? The timeout is caused by the long test `EllipticCurve([1,-1,0,-107,-379]).galois_representation().image_type(7)`\nThe image_type() part runs forever on 4.6.1.alpha2 with your second patch, and is quite fast without any patches. That method is a long piece of code, so I didn't read it all, but it does suggest that it uses is_galois somewhere via another function.",
     "created_at": "2010-12-17T11:49:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9390#issuecomment-89403",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_9390-2nd_replacement.patch](tarball://root/attachments/some-uuid/ticket9390/trac_9390-2nd_replacement.patch) by mstreng created at 2010-12-17 11:49:08
+Attachment [trac_9390-2nd_replacement.patch](tarball://root/attachments/some-uuid/ticket9390/trac_9390-2nd_replacement.patch) by @mstreng created at 2010-12-17 11:49:08
 
 Replying to [comment:7 fwclarke]:
 > I can't reproduce this.  Actually `is_galois` is not particularly ubiquitous (and certainly does figure in `gal_reps.py`):
@@ -529,7 +529,7 @@ archive/issue_comments_089405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9390#issuecomment-89405",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_089406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9390#issuecomment-89406",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_089407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9390#issuecomment-89407",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -684,7 +684,7 @@ archive/issue_comments_089411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9390#issuecomment-89411",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -702,7 +702,7 @@ archive/issue_comments_089412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9390#issuecomment-89412",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_089413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9390#issuecomment-89413",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -128,7 +128,7 @@ archive/issue_comments_014963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2260#issuecomment-14963",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

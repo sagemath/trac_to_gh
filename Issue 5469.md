@@ -14,7 +14,7 @@ archive/issues_005469.json:
     "title": "sage -clone ...  should copy the sage/doc/output directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5469",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tba
@@ -38,7 +38,7 @@ archive/issue_comments_042447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5469#issuecomment-42447",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

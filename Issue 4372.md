@@ -3,7 +3,7 @@
 archive/issues_004372.json:
 ```json
 {
-    "body": "Assignee: was\n\nTwo changes/updates to get totallyreal_dsage to work:\n\n(1) Craig improved the totally real field enumeration, but changed the public incr() to increment().\n\n(2) dsage had some update where wall_time of a job is returned as a datetime object.\n\ntotallyreal_dsage is still at a nodoctest status, so shouldn't require any (meaningful) review if the patch works (it's against 3.1.4).\n\nJV\n\nIssue created by migration from https://trac.sagemath.org/ticket/4372\n\n",
+    "body": "Assignee: @williamstein\n\nTwo changes/updates to get totallyreal_dsage to work:\n\n(1) Craig improved the totally real field enumeration, but changed the public incr() to increment().\n\n(2) dsage had some update where wall_time of a job is returned as a datetime object.\n\ntotallyreal_dsage is still at a nodoctest status, so shouldn't require any (meaningful) review if the patch works (it's against 3.1.4).\n\nJV\n\nIssue created by migration from https://trac.sagemath.org/ticket/4372\n\n",
     "created_at": "2008-10-26T16:45:38Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004372.json:
     "title": "[with patch] Repair to totallyreal_dsage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4372",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Two changes/updates to get totallyreal_dsage to work:
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4372
 archive/issue_comments_032144.json:
 ```json
 {
-    "body": "Attachment [10735.patch](tarball://root/attachments/some-uuid/ticket4372/10735.patch) by jvoight created at 2008-10-26 16:45:56",
+    "body": "Attachment [10735.patch](tarball://root/attachments/some-uuid/ticket4372/10735.patch) by @jvoight created at 2008-10-26 16:45:56",
     "created_at": "2008-10-26T16:45:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4372#issuecomment-32144",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
-Attachment [10735.patch](tarball://root/attachments/some-uuid/ticket4372/10735.patch) by jvoight created at 2008-10-26 16:45:56
+Attachment [10735.patch](tarball://root/attachments/some-uuid/ticket4372/10735.patch) by @jvoight created at 2008-10-26 16:45:56
 
 
 
@@ -82,16 +82,16 @@ Michael
 archive/issue_comments_032146.json:
 ```json
 {
-    "body": "Attachment [10737.patch](tarball://root/attachments/some-uuid/ticket4372/10737.patch) by jvoight created at 2008-10-27 14:12:09",
+    "body": "Attachment [10737.patch](tarball://root/attachments/some-uuid/ticket4372/10737.patch) by @jvoight created at 2008-10-27 14:12:09",
     "created_at": "2008-10-27T14:12:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4372#issuecomment-32146",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
-Attachment [10737.patch](tarball://root/attachments/some-uuid/ticket4372/10737.patch) by jvoight created at 2008-10-27 14:12:09
+Attachment [10737.patch](tarball://root/attachments/some-uuid/ticket4372/10737.patch) by @jvoight created at 2008-10-27 14:12:09
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_032147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4372#issuecomment-32147",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_032148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4372#issuecomment-32148",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_032149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4372#issuecomment-32149",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_032150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4372#issuecomment-32150",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 

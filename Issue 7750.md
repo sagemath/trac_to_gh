@@ -13,7 +13,7 @@ archive/issues_007750.json:
     "title": "search_doc: print warning if some Sage docs are missing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7750",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -67,7 +67,7 @@ archive/issue_comments_066738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66738",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing status from new to needs_review.
 archive/issue_comments_066739.json:
 ```json
 {
-    "body": "Attachment [trac_7750-search-doc.patch](tarball://root/attachments/some-uuid/ticket7750/trac_7750-search-doc.patch) by jhpalmieri created at 2009-12-22 21:18:20",
+    "body": "Attachment [trac_7750-search-doc.patch](tarball://root/attachments/some-uuid/ticket7750/trac_7750-search-doc.patch) by @jhpalmieri created at 2009-12-22 21:18:20",
     "created_at": "2009-12-22T21:18:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66739",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7750-search-doc.patch](tarball://root/attachments/some-uuid/ticket7750/trac_7750-search-doc.patch) by jhpalmieri created at 2009-12-22 21:18:20
+Attachment [trac_7750-search-doc.patch](tarball://root/attachments/some-uuid/ticket7750/trac_7750-search-doc.patch) by @jhpalmieri created at 2009-12-22 21:18:20
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_066740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66740",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_066741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66741",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_066742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66742",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

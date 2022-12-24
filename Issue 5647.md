@@ -14,7 +14,7 @@ archive/issues_005647.json:
     "title": "Random testing improvement (follow up to #5318)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5647",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: mabshoff
@@ -49,7 +49,7 @@ archive/issue_comments_044099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5647#issuecomment-44099",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 

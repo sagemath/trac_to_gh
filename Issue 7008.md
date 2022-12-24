@@ -3,7 +3,7 @@
 archive/issues_007008.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman mhansen rbeezer robertwb\n\nCurrently, code for extracting variables, dealing with ranges of variables, and making the functions fast_float is scattered throughout the plotting directory.  There are multiple implementations, each having its own quirks.\n\nThis patch consolidates all of this to two functions in sage.plot.misc and makes all the necessary changes to use this consolidated function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7008\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @mwhansen @rbeezer @robertwb\n\nCurrently, code for extracting variables, dealing with ranges of variables, and making the functions fast_float is scattered throughout the plotting directory.  There are multiple implementations, each having its own quirks.\n\nThis patch consolidates all of this to two functions in sage.plot.misc and makes all the necessary changes to use this consolidated function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7008\n\n",
     "created_at": "2009-09-25T04:09:34Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_007008.json:
     "title": "consolidate in plotting all extraction of variables, ranges, and fast_float setup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7008",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman mhansen rbeezer robertwb
+CC:  @kcrisman @mwhansen @rbeezer @robertwb
 
 Currently, code for extracting variables, dealing with ranges of variables, and making the functions fast_float is scattered throughout the plotting directory.  There are multiple implementations, each having its own quirks.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7008
 archive/issue_comments_057950.json:
 ```json
 {
-    "body": "Attachment [trac-7008-refactor-setup-eval-on-grid.patch](tarball://root/attachments/some-uuid/ticket7008/trac-7008-refactor-setup-eval-on-grid.patch) by jason created at 2009-09-25 04:14:51",
+    "body": "Attachment [trac-7008-refactor-setup-eval-on-grid.patch](tarball://root/attachments/some-uuid/ticket7008/trac-7008-refactor-setup-eval-on-grid.patch) by @jasongrout created at 2009-09-25 04:14:51",
     "created_at": "2009-09-25T04:14:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7008#issuecomment-57950",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7008-refactor-setup-eval-on-grid.patch](tarball://root/attachments/some-uuid/ticket7008/trac-7008-refactor-setup-eval-on-grid.patch) by jason created at 2009-09-25 04:14:51
+Attachment [trac-7008-refactor-setup-eval-on-grid.patch](tarball://root/attachments/some-uuid/ticket7008/trac-7008-refactor-setup-eval-on-grid.patch) by @jasongrout created at 2009-09-25 04:14:51
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_057951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7008#issuecomment-57951",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_057952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7008#issuecomment-57952",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_057953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7008#issuecomment-57953",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_057954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7008#issuecomment-57954",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_057956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7008#issuecomment-57956",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_057957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7008#issuecomment-57957",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -380,16 +380,16 @@ apply on top of previous patch
 archive/issue_comments_057958.json:
 ```json
 {
-    "body": "Attachment [trac-7008-doctests.patch](tarball://root/attachments/some-uuid/ticket7008/trac-7008-doctests.patch) by jason created at 2009-09-29 06:08:12\n\nI posted about the parametric_plot deprecation and no one opposed the deprecation.  So the new patch should fix everything up just right.",
+    "body": "Attachment [trac-7008-doctests.patch](tarball://root/attachments/some-uuid/ticket7008/trac-7008-doctests.patch) by @jasongrout created at 2009-09-29 06:08:12\n\nI posted about the parametric_plot deprecation and no one opposed the deprecation.  So the new patch should fix everything up just right.",
     "created_at": "2009-09-29T06:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7008#issuecomment-57958",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7008-doctests.patch](tarball://root/attachments/some-uuid/ticket7008/trac-7008-doctests.patch) by jason created at 2009-09-29 06:08:12
+Attachment [trac-7008-doctests.patch](tarball://root/attachments/some-uuid/ticket7008/trac-7008-doctests.patch) by @jasongrout created at 2009-09-29 06:08:12
 
 I posted about the parametric_plot deprecation and no one opposed the deprecation.  So the new patch should fix everything up just right.
 
@@ -405,7 +405,7 @@ archive/issue_comments_057959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7008#issuecomment-57959",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

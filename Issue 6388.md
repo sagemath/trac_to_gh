@@ -14,7 +14,7 @@ archive/issues_006388.json:
     "title": "Logarithm function log(x) is partially broken for x <= 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6388",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 Keywords: negative argument, log
@@ -59,16 +59,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6388
 archive/issue_comments_051145.json:
 ```json
 {
-    "body": "Attachment [trac_6388-log-behavior.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior.patch) by kcrisman created at 2009-09-02 12:21:55\n\nBased on 4.1.1",
+    "body": "Attachment [trac_6388-log-behavior.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior.patch) by @kcrisman created at 2009-09-02 12:21:55\n\nBased on 4.1.1",
     "created_at": "2009-09-02T12:21:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51145",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6388-log-behavior.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior.patch) by kcrisman created at 2009-09-02 12:21:55
+Attachment [trac_6388-log-behavior.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior.patch) by @kcrisman created at 2009-09-02 12:21:55
 
 Based on 4.1.1
 
@@ -79,16 +79,16 @@ Based on 4.1.1
 archive/issue_comments_051146.json:
 ```json
 {
-    "body": "Attachment [trac_6388-log-behavior.2.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior.2.patch) by kcrisman created at 2009-09-02 12:55:39\n\nBased on 4.1.1",
+    "body": "Attachment [trac_6388-log-behavior.2.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior.2.patch) by @kcrisman created at 2009-09-02 12:55:39\n\nBased on 4.1.1",
     "created_at": "2009-09-02T12:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51146",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6388-log-behavior.2.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior.2.patch) by kcrisman created at 2009-09-02 12:55:39
+Attachment [trac_6388-log-behavior.2.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior.2.patch) by @kcrisman created at 2009-09-02 12:55:39
 
 Based on 4.1.1
 
@@ -104,7 +104,7 @@ archive/issue_comments_051147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51147",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_051148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51148",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_051149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51149",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -165,16 +165,16 @@ The supplemental patch requires the previous patch, and adds a few cases I misse
 archive/issue_comments_051150.json:
 ```json
 {
-    "body": "Attachment [trac_6388-log-behavior-supplement.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior-supplement.patch) by kcrisman created at 2009-09-03 01:59:04\n\nRequires regular patch, based on 4.1.1",
+    "body": "Attachment [trac_6388-log-behavior-supplement.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior-supplement.patch) by @kcrisman created at 2009-09-03 01:59:04\n\nRequires regular patch, based on 4.1.1",
     "created_at": "2009-09-03T01:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51150",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6388-log-behavior-supplement.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior-supplement.patch) by kcrisman created at 2009-09-03 01:59:04
+Attachment [trac_6388-log-behavior-supplement.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior-supplement.patch) by @kcrisman created at 2009-09-03 01:59:04
 
 Requires regular patch, based on 4.1.1
 
@@ -190,7 +190,7 @@ archive/issue_comments_051151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51151",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_051152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51152",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -255,16 +255,16 @@ Just to clarify: changing above two lines should also fix the issue I mentioned.
 archive/issue_comments_051153.json:
 ```json
 {
-    "body": "Attachment [trac_6388-log-behavior-supp2.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior-supp2.patch) by kcrisman created at 2009-09-05 17:36:32\n\nApply after others",
+    "body": "Attachment [trac_6388-log-behavior-supp2.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior-supp2.patch) by @kcrisman created at 2009-09-05 17:36:32\n\nApply after others",
     "created_at": "2009-09-05T17:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51153",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6388-log-behavior-supp2.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior-supp2.patch) by kcrisman created at 2009-09-05 17:36:32
+Attachment [trac_6388-log-behavior-supp2.patch](tarball://root/attachments/some-uuid/ticket6388/trac_6388-log-behavior-supp2.patch) by @kcrisman created at 2009-09-05 17:36:32
 
 Apply after others
 
@@ -280,7 +280,7 @@ archive/issue_comments_051154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51154",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_051155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51155",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 

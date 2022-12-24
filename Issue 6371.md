@@ -3,7 +3,7 @@
 archive/issues_006371.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  cswiercz fredrik.johannson mstreng jpflori slelievre\n\nKeywords: riemann theta klein\n\nIn the theory of differential equations and abelian varieties, Riemann theta functions and there relatives play an important role.  Implement these in sage!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6371\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @cswiercz fredrik.johannson @mstreng jpflori @slel\n\nKeywords: riemann theta klein\n\nIn the theory of differential equations and abelian varieties, Riemann theta functions and there relatives play an important role.  Implement these in sage!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6371\n\n",
     "created_at": "2009-06-20T18:15:55Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_006371.json:
     "title": "implement Riemann theta functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6371",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: jkantor
 
-CC:  cswiercz fredrik.johannson mstreng jpflori slelievre
+CC:  @cswiercz fredrik.johannson @mstreng jpflori @slel
 
 Keywords: riemann theta klein
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6371
 archive/issue_comments_050950.json:
 ```json
 {
-    "body": "Attachment [trac_6371-riemann-theta.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta.patch) by ncalexan created at 2009-06-20 18:39:57",
+    "body": "Attachment [trac_6371-riemann-theta.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta.patch) by @ncalexan created at 2009-06-20 18:39:57",
     "created_at": "2009-06-20T18:39:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50950",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_6371-riemann-theta.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta.patch) by ncalexan created at 2009-06-20 18:39:57
+Attachment [trac_6371-riemann-theta.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta.patch) by @ncalexan created at 2009-06-20 18:39:57
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_050951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50951",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_050952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50952",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_050953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50953",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_050954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50954",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -140,16 +140,16 @@ sage: now you have the new code
 archive/issue_comments_050955.json:
 ```json
 {
-    "body": "Changing assignee from jkantor to cswiercz.",
+    "body": "Changing assignee from jkantor to @cswiercz.",
     "created_at": "2010-12-10T18:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50955",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Changing assignee from jkantor to cswiercz.
+Changing assignee from jkantor to @cswiercz.
 
 
 
@@ -163,7 +163,7 @@ archive/issue_comments_050956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50956",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_050957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50957",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_050958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50958",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -227,16 +227,16 @@ Huzzah! Thank _you_ for your help!
 archive/issue_comments_050959.json:
 ```json
 {
-    "body": "Attachment [trac_6371-riemann-theta-REPLACEMENT.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT.patch) by cswiercz created at 2011-03-25 00:08:59\n\nReplacement for first patch by ncalexan",
+    "body": "Attachment [trac_6371-riemann-theta-REPLACEMENT.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT.patch) by @cswiercz created at 2011-03-25 00:08:59\n\nReplacement for first patch by ncalexan",
     "created_at": "2011-03-25T00:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50959",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [trac_6371-riemann-theta-REPLACEMENT.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT.patch) by cswiercz created at 2011-03-25 00:08:59
+Attachment [trac_6371-riemann-theta-REPLACEMENT.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT.patch) by @cswiercz created at 2011-03-25 00:08:59
 
 Replacement for first patch by ncalexan
 
@@ -252,7 +252,7 @@ archive/issue_comments_050960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50960",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_050961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50961",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_050962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50962",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_050963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50963",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_050964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50964",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -337,16 +337,16 @@ Part 2 of the replacement patch. Includes documentation fixes.
 archive/issue_comments_050965.json:
 ```json
 {
-    "body": "Attachment [trac_6371-riemann-theta-REPLACEMENT-PART2.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART2.patch) by cswiercz created at 2011-03-28 18:22:31",
+    "body": "Attachment [trac_6371-riemann-theta-REPLACEMENT-PART2.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART2.patch) by @cswiercz created at 2011-03-28 18:22:31",
     "created_at": "2011-03-28T18:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50965",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [trac_6371-riemann-theta-REPLACEMENT-PART2.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART2.patch) by cswiercz created at 2011-03-28 18:22:31
+Attachment [trac_6371-riemann-theta-REPLACEMENT-PART2.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART2.patch) by @cswiercz created at 2011-03-28 18:22:31
 
 
 
@@ -360,7 +360,7 @@ archive/issue_comments_050966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50966",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_050967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50967",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -391,16 +391,16 @@ Minor last-minute bug.
 archive/issue_comments_050968.json:
 ```json
 {
-    "body": "Attachment [trac_6371_riemann-theta-REPLACEMENT-PART3.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371_riemann-theta-REPLACEMENT-PART3.patch) by mstreng created at 2011-03-28 18:47:07\n\n(for patchbot)\n\nApply \n\n* [attachment:trac_6371-riemann-theta-REPLACEMENT.patch]\n\n* [attachment:trac_6371-riemann-theta-REPLACEMENT-PART2.patch]\n\n* [attachment:trac_6371_riemann-theta-REPLACEMENT-PART3.patch]",
+    "body": "Attachment [trac_6371_riemann-theta-REPLACEMENT-PART3.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371_riemann-theta-REPLACEMENT-PART3.patch) by @mstreng created at 2011-03-28 18:47:07\n\n(for patchbot)\n\nApply \n\n* [attachment:trac_6371-riemann-theta-REPLACEMENT.patch]\n\n* [attachment:trac_6371-riemann-theta-REPLACEMENT-PART2.patch]\n\n* [attachment:trac_6371_riemann-theta-REPLACEMENT-PART3.patch]",
     "created_at": "2011-03-28T18:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50968",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_6371_riemann-theta-REPLACEMENT-PART3.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371_riemann-theta-REPLACEMENT-PART3.patch) by mstreng created at 2011-03-28 18:47:07
+Attachment [trac_6371_riemann-theta-REPLACEMENT-PART3.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371_riemann-theta-REPLACEMENT-PART3.patch) by @mstreng created at 2011-03-28 18:47:07
 
 (for patchbot)
 
@@ -424,7 +424,7 @@ archive/issue_comments_050969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50969",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_050970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50970",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_050971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50971",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -478,16 +478,16 @@ More documentation fixes.
 archive/issue_comments_050972.json:
 ```json
 {
-    "body": "Attachment [trac_6371-riemann-theta-REPLACEMENT-PART4.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART4.patch) by cswiercz created at 2011-03-28 21:20:31",
+    "body": "Attachment [trac_6371-riemann-theta-REPLACEMENT-PART4.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART4.patch) by @cswiercz created at 2011-03-28 21:20:31",
     "created_at": "2011-03-28T21:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50972",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [trac_6371-riemann-theta-REPLACEMENT-PART4.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART4.patch) by cswiercz created at 2011-03-28 21:20:31
+Attachment [trac_6371-riemann-theta-REPLACEMENT-PART4.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART4.patch) by @cswiercz created at 2011-03-28 21:20:31
 
 
 
@@ -501,7 +501,7 @@ archive/issue_comments_050973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50973",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_050974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50974",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -537,7 +537,7 @@ archive/issue_comments_050975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50975",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -550,16 +550,16 @@ Fixed derivative calculation errors that resulted in incorrect doctests.
 archive/issue_comments_050976.json:
 ```json
 {
-    "body": "Attachment [trac_6371-riemann-theta-REPLACEMENT-PART5.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART5.patch) by cswiercz created at 2011-03-29 20:51:59\n\nFixed issues with computing derivatives that resulted in doctest failures. Minor documentation fixes as well.",
+    "body": "Attachment [trac_6371-riemann-theta-REPLACEMENT-PART5.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART5.patch) by @cswiercz created at 2011-03-29 20:51:59\n\nFixed issues with computing derivatives that resulted in doctest failures. Minor documentation fixes as well.",
     "created_at": "2011-03-29T20:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50976",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [trac_6371-riemann-theta-REPLACEMENT-PART5.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART5.patch) by cswiercz created at 2011-03-29 20:51:59
+Attachment [trac_6371-riemann-theta-REPLACEMENT-PART5.patch](tarball://root/attachments/some-uuid/ticket6371/trac_6371-riemann-theta-REPLACEMENT-PART5.patch) by @cswiercz created at 2011-03-29 20:51:59
 
 Fixed issues with computing derivatives that resulted in doctest failures. Minor documentation fixes as well.
 
@@ -575,7 +575,7 @@ archive/issue_comments_050977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50977",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -593,7 +593,7 @@ archive/issue_comments_050978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50978",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -611,7 +611,7 @@ archive/issue_comments_050979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50979",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -624,16 +624,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_050980.json:
 ```json
 {
-    "body": "Attachment [trac-6371-part2.patch](tarball://root/attachments/some-uuid/ticket6371/trac-6371-part2.patch) by cswiercz created at 2011-12-07 19:06:09",
+    "body": "Attachment [trac-6371-part2.patch](tarball://root/attachments/some-uuid/ticket6371/trac-6371-part2.patch) by @cswiercz created at 2011-12-07 19:06:09",
     "created_at": "2011-12-07T19:06:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50980",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [trac-6371-part2.patch](tarball://root/attachments/some-uuid/ticket6371/trac-6371-part2.patch) by cswiercz created at 2011-12-07 19:06:09
+Attachment [trac-6371-part2.patch](tarball://root/attachments/some-uuid/ticket6371/trac-6371-part2.patch) by @cswiercz created at 2011-12-07 19:06:09
 
 
 
@@ -647,7 +647,7 @@ archive/issue_comments_050981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50981",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -660,16 +660,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_050982.json:
 ```json
 {
-    "body": "Attachment [trac-6371-part3.patch](tarball://root/attachments/some-uuid/ticket6371/trac-6371-part3.patch) by cswiercz created at 2011-12-07 19:38:40",
+    "body": "Attachment [trac-6371-part3.patch](tarball://root/attachments/some-uuid/ticket6371/trac-6371-part3.patch) by @cswiercz created at 2011-12-07 19:38:40",
     "created_at": "2011-12-07T19:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50982",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [trac-6371-part3.patch](tarball://root/attachments/some-uuid/ticket6371/trac-6371-part3.patch) by cswiercz created at 2011-12-07 19:38:40
+Attachment [trac-6371-part3.patch](tarball://root/attachments/some-uuid/ticket6371/trac-6371-part3.patch) by @cswiercz created at 2011-12-07 19:38:40
 
 
 
@@ -701,7 +701,7 @@ archive/issue_comments_050984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50984",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -719,7 +719,7 @@ archive/issue_comments_050985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50985",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -737,7 +737,7 @@ archive/issue_comments_050986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50986",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -780,7 +780,7 @@ archive/issue_comments_050987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50987",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -798,7 +798,7 @@ archive/issue_comments_050988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50988",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -843,7 +843,7 @@ archive/issue_comments_050989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50989",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -867,7 +867,7 @@ archive/issue_comments_050990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50990",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -906,7 +906,7 @@ archive/issue_comments_050991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50991",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -937,7 +937,7 @@ archive/issue_comments_050992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50992",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -965,7 +965,7 @@ archive/issue_comments_050993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-50993",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1094,7 +1094,7 @@ archive/issue_comments_051000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-51000",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -1112,7 +1112,7 @@ archive/issue_comments_051001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-51001",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1130,7 +1130,7 @@ archive/issue_comments_051002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-51002",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -1148,7 +1148,7 @@ archive/issue_comments_051003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6371#issuecomment-51003",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 

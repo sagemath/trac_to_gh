@@ -3,7 +3,7 @@
 archive/issues_001783.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\nsage:             sage: R = PolynomialRing(QQ, 'x').fraction_field()\nsage:             sage: x = R.gen()\nsage:             sage: a = 1/x\nsage:             sage: a._FractionFieldElement__numerator = R(0)\nsage:             sage: latex(a)\n\\frac{0}{x}\n```\n\n\nIt should instead give 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1783\n\n",
+    "body": "Assignee: @malb\n\n\n```\nsage:             sage: R = PolynomialRing(QQ, 'x').fraction_field()\nsage:             sage: x = R.gen()\nsage:             sage: a = 1/x\nsage:             sage: a._FractionFieldElement__numerator = R(0)\nsage:             sage: latex(a)\n\\frac{0}{x}\n```\n\n\nIt should instead give 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1783\n\n",
     "created_at": "2008-01-15T19:06:52Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001783.json:
     "title": "fix latex errors with fraction field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1783",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1783
 archive/issue_comments_011288.json:
 ```json
 {
-    "body": "Attachment [1783.patch](tarball://root/attachments/some-uuid/ticket1783/1783.patch) by mhansen created at 2008-01-15 19:08:09",
+    "body": "Attachment [1783.patch](tarball://root/attachments/some-uuid/ticket1783/1783.patch) by @mwhansen created at 2008-01-15 19:08:09",
     "created_at": "2008-01-15T19:08:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11288",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1783.patch](tarball://root/attachments/some-uuid/ticket1783/1783.patch) by mhansen created at 2008-01-15 19:08:09
+Attachment [1783.patch](tarball://root/attachments/some-uuid/ticket1783/1783.patch) by @mwhansen created at 2008-01-15 19:08:09
 
 
 
@@ -61,16 +61,16 @@ Attachment [1783.patch](tarball://root/attachments/some-uuid/ticket1783/1783.pat
 archive/issue_comments_011289.json:
 ```json
 {
-    "body": "Attachment [1783-doctests.patch](tarball://root/attachments/some-uuid/ticket1783/1783-doctests.patch) by mhansen created at 2008-01-15 19:22:39",
+    "body": "Attachment [1783-doctests.patch](tarball://root/attachments/some-uuid/ticket1783/1783-doctests.patch) by @mwhansen created at 2008-01-15 19:22:39",
     "created_at": "2008-01-15T19:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11289",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1783-doctests.patch](tarball://root/attachments/some-uuid/ticket1783/1783-doctests.patch) by mhansen created at 2008-01-15 19:22:39
+Attachment [1783-doctests.patch](tarball://root/attachments/some-uuid/ticket1783/1783-doctests.patch) by @mwhansen created at 2008-01-15 19:22:39
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_011290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11290",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

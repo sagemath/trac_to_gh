@@ -3,7 +3,7 @@
 archive/issues_005233.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5233\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5233\n\n",
     "created_at": "2009-02-11T06:14:54Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_005233.json:
     "title": "[with patch, needs review] improve timings for adjacency_matrix, weighted_adjacency_matrix, and kirchoff_matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5233",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm
+CC:  @rlmill
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_040102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5233#issuecomment-40102",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_040103.json:
 ```json
 {
-    "body": "Changing assignee from rlm to mhansen.",
+    "body": "Changing assignee from @rlmill to @mwhansen.",
     "created_at": "2009-02-11T06:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5233#issuecomment-40103",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from rlm to mhansen.
+Changing assignee from @rlmill to @mwhansen.
 
 
 
@@ -70,16 +70,16 @@ Changing assignee from rlm to mhansen.
 archive/issue_comments_040104.json:
 ```json
 {
-    "body": "Attachment [trac_5233.patch](tarball://root/attachments/some-uuid/ticket5233/trac_5233.patch) by jason created at 2009-02-11 06:46:20\n\nThe code looks reasonable, so positive review pending the doctests passing.",
+    "body": "Attachment [trac_5233.patch](tarball://root/attachments/some-uuid/ticket5233/trac_5233.patch) by @jasongrout created at 2009-02-11 06:46:20\n\nThe code looks reasonable, so positive review pending the doctests passing.",
     "created_at": "2009-02-11T06:46:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5233#issuecomment-40104",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5233.patch](tarball://root/attachments/some-uuid/ticket5233/trac_5233.patch) by jason created at 2009-02-11 06:46:20
+Attachment [trac_5233.patch](tarball://root/attachments/some-uuid/ticket5233/trac_5233.patch) by @jasongrout created at 2009-02-11 06:46:20
 
 The code looks reasonable, so positive review pending the doctests passing.
 

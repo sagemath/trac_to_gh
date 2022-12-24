@@ -14,7 +14,7 @@ archive/issues_000908.json:
     "title": "paru/gen.c causes internal compiler error on OpenSuSE 10.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/908",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: mabshoff
@@ -84,7 +84,7 @@ archive/issue_comments_005584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/908#issuecomment-5584",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,16 +108,16 @@ to see if I can get around the broken compilers on SUSE.
 archive/issue_comments_005585.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2007-10-16T18:20:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/908#issuecomment-5585",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_005586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/908#issuecomment-5586",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

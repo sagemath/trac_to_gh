@@ -3,7 +3,7 @@
 archive/issues_002109.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: maxima.eval('sage0: x == x;')\ndisplay2d : false; \n(%o2) false\n\n0; \n(%o4) 0\n```\n\n\nIt hangs there.  If doing the same thing in Maxima, we get the following results:\n\n\n```\n(%i1) sage0: x==x;\nIncorrect syntax: = is not a prefix operator\nsage0: x==\n        ^\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2109\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: maxima.eval('sage0: x == x;')\ndisplay2d : false; \n(%o2) false\n\n0; \n(%o4) 0\n```\n\n\nIt hangs there.  If doing the same thing in Maxima, we get the following results:\n\n\n```\n(%i1) sage0: x==x;\nIncorrect syntax: = is not a prefix operator\nsage0: x==\n        ^\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2109\n\n",
     "created_at": "2008-02-08T10:44:29Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002109.json:
     "title": "the maxima interface doesn't recognize a syntax error (and then hangs)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2109",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -58,7 +58,7 @@ archive/issue_comments_013754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2109#issuecomment-13754",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_013755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2109#issuecomment-13755",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -96,16 +96,16 @@ So at least it doesn't hang anymore.  I will change the summary.
 archive/issue_comments_013756.json:
 ```json
 {
-    "body": "Attachment [trac_2109.patch](tarball://root/attachments/some-uuid/ticket2109/trac_2109.patch) by mhansen created at 2010-01-17 04:16:27",
+    "body": "Attachment [trac_2109.patch](tarball://root/attachments/some-uuid/ticket2109/trac_2109.patch) by @mwhansen created at 2010-01-17 04:16:27",
     "created_at": "2010-01-17T04:16:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2109#issuecomment-13756",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2109.patch](tarball://root/attachments/some-uuid/ticket2109/trac_2109.patch) by mhansen created at 2010-01-17 04:16:27
+Attachment [trac_2109.patch](tarball://root/attachments/some-uuid/ticket2109/trac_2109.patch) by @mwhansen created at 2010-01-17 04:16:27
 
 
 
@@ -119,7 +119,7 @@ archive/issue_comments_013757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2109#issuecomment-13757",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_013758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2109#issuecomment-13758",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_013759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2109#issuecomment-13759",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_013760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2109#issuecomment-13760",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

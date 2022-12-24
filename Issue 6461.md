@@ -3,7 +3,7 @@
 archive/issues_006461.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  malb\n\nKeywords: cryptography, DES, S-DES\n\nThis is a follow-up to #6164. The goal here is to implement the S-DES block cipher of Schaefer as described in the paper:\n\nE. Schaefer. A simplified data encryption algorithm. Cryptologia, 20(1):77--84, 1996.\n\nThis is a simplified variant of the Data Encryption Standard (DES) to be used for cryptography education.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6461\n\n",
+    "body": "Assignee: somebody\n\nCC:  @malb\n\nKeywords: cryptography, DES, S-DES\n\nThis is a follow-up to #6164. The goal here is to implement the S-DES block cipher of Schaefer as described in the paper:\n\nE. Schaefer. A simplified data encryption algorithm. Cryptologia, 20(1):77--84, 1996.\n\nThis is a simplified variant of the Data Encryption Standard (DES) to be used for cryptography education.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6461\n\n",
     "created_at": "2009-07-04T09:44:37Z",
     "labels": [
         "cryptography",
@@ -19,7 +19,7 @@ archive/issues_006461.json:
 ```
 Assignee: somebody
 
-CC:  malb
+CC:  @malb
 
 Keywords: cryptography, DES, S-DES
 
@@ -45,7 +45,7 @@ archive/issue_comments_052217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6461#issuecomment-52217",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_052219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6461#issuecomment-52219",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_052222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6461#issuecomment-52222",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

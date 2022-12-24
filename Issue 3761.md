@@ -14,7 +14,7 @@ archive/issues_003761.json:
     "title": "don't allow a sage binary to run if the processor instruction set doesn't support everything that was on the machine where sage was built",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3761",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -68,16 +68,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3761
 archive/issue_comments_026720.json:
 ```json
 {
-    "body": "Attachment [scripts-3761.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761.patch) by was created at 2008-08-02 21:24:02",
+    "body": "Attachment [scripts-3761.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761.patch) by @williamstein created at 2008-08-02 21:24:02",
     "created_at": "2008-08-02T21:24:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3761#issuecomment-26720",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-3761.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761.patch) by was created at 2008-08-02 21:24:02
+Attachment [scripts-3761.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761.patch) by @williamstein created at 2008-08-02 21:24:02
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_026721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3761#issuecomment-26721",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_026725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3761#issuecomment-26725",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_026727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3761#issuecomment-26727",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -330,16 +330,16 @@ Michael
 archive/issue_comments_026729.json:
 ```json
 {
-    "body": "Attachment [scripts-3761-3.2.alpha3.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-3.2.alpha3.patch) by was created at 2008-11-12 03:51:06",
+    "body": "Attachment [scripts-3761-3.2.alpha3.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-3.2.alpha3.patch) by @williamstein created at 2008-11-12 03:51:06",
     "created_at": "2008-11-12T03:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3761#issuecomment-26729",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-3761-3.2.alpha3.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-3.2.alpha3.patch) by was created at 2008-11-12 03:51:06
+Attachment [scripts-3761-3.2.alpha3.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-3.2.alpha3.patch) by @williamstein created at 2008-11-12 03:51:06
 
 
 
@@ -353,7 +353,7 @@ archive/issue_comments_026730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3761#issuecomment-26730",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_026734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3761#issuecomment-26734",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_026735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3761#issuecomment-26735",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -514,16 +514,16 @@ apply this after the scripts patch above.  This makes sure that "sage -bdist" ru
 archive/issue_comments_026736.json:
 ```json
 {
-    "body": "Attachment [scripts-3761-PART2-bdist.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-PART2-bdist.patch) by was created at 2008-11-13 01:32:54\n\nI attached a patch that makes sure sage runs right when one does \"sage -bdist\".",
+    "body": "Attachment [scripts-3761-PART2-bdist.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-PART2-bdist.patch) by @williamstein created at 2008-11-13 01:32:54\n\nI attached a patch that makes sure sage runs right when one does \"sage -bdist\".",
     "created_at": "2008-11-13T01:32:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3761#issuecomment-26736",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-3761-PART2-bdist.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-PART2-bdist.patch) by was created at 2008-11-13 01:32:54
+Attachment [scripts-3761-PART2-bdist.patch](tarball://root/attachments/some-uuid/ticket3761/scripts-3761-PART2-bdist.patch) by @williamstein created at 2008-11-13 01:32:54
 
 I attached a patch that makes sure sage runs right when one does "sage -bdist".
 
@@ -646,7 +646,7 @@ archive/issue_comments_026741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3761#issuecomment-26741",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -670,7 +670,7 @@ archive/issue_comments_026742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3761#issuecomment-26742",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

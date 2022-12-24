@@ -3,7 +3,7 @@
 archive/issues_004900.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: elliptic curves finite fields\n\nPoint counting on elliptic curves where the j-invariant is not in the prime field has been implemented up to now via the same function that determines the group structure.  The reason was that \"Mestre's trick\" does not always work over non-prime fields (specifically, over F_q where q is square there are always counterexamples).  I worked out how to extend Mestre to the general case about 9 months ago but did not want to contribute the resulting code until it was written up.  That has now been done, in a 4-page note joint with Drew Sutherland.  (See http://www.warwick.ac.uk/staff/J.E.Cremona/papers/MestreNote.pdf;  it should be on ArXiV early January 2009).\n\nThe current patch implements this in a new function cardinality_bsgs().  This will always be used in computing the cardinality of curves whose j-invariant is not in the prime field.  Over prime fields it can be used by giving algorithm='bsgs' to the cardinality() function.  [The old use of algorithm='bsgs' is renamed algorithm='pari' since that's the option to call pari, which is only over prime fields.]\n\nThis also means that the abelian_group() function is simpler since it always computes the cardinality first, which simplifies that code.\n\nLastly, the new code uses quadratic twists, and the quadratic_twist() funtion in ell_generic.py can now be called with no twisting parameter for curves over finite fields, with the single exception of characteristic 2 and j=0.\n\nThe patch applies to 3.2.2 and has been tested on lots of curves (including all the -long tests in sage/schemes/elliptic_curves).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4900\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: elliptic curves finite fields\n\nPoint counting on elliptic curves where the j-invariant is not in the prime field has been implemented up to now via the same function that determines the group structure.  The reason was that \"Mestre's trick\" does not always work over non-prime fields (specifically, over F_q where q is square there are always counterexamples).  I worked out how to extend Mestre to the general case about 9 months ago but did not want to contribute the resulting code until it was written up.  That has now been done, in a 4-page note joint with Drew Sutherland.  (See http://www.warwick.ac.uk/staff/J.E.Cremona/papers/MestreNote.pdf;  it should be on ArXiV early January 2009).\n\nThe current patch implements this in a new function cardinality_bsgs().  This will always be used in computing the cardinality of curves whose j-invariant is not in the prime field.  Over prime fields it can be used by giving algorithm='bsgs' to the cardinality() function.  [The old use of algorithm='bsgs' is renamed algorithm='pari' since that's the option to call pari, which is only over prime fields.]\n\nThis also means that the abelian_group() function is simpler since it always computes the cardinality first, which simplifies that code.\n\nLastly, the new code uses quadratic twists, and the quadratic_twist() funtion in ell_generic.py can now be called with no twisting parameter for curves over finite fields, with the single exception of characteristic 2 and j=0.\n\nThe patch applies to 3.2.2 and has been tested on lots of curves (including all the -long tests in sage/schemes/elliptic_curves).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4900\n\n",
     "created_at": "2009-01-01T15:34:17Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004900.json:
     "title": "New BSGS point counting on elliptic curves over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4900",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: elliptic curves finite fields
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4900
 archive/issue_comments_037168.json:
 ```json
 {
-    "body": "Attachment [bsgs.patch](tarball://root/attachments/some-uuid/ticket4900/bsgs.patch) by cremona created at 2009-01-01 15:34:37",
+    "body": "Attachment [bsgs.patch](tarball://root/attachments/some-uuid/ticket4900/bsgs.patch) by @JohnCremona created at 2009-01-01 15:34:37",
     "created_at": "2009-01-01T15:34:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4900#issuecomment-37168",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [bsgs.patch](tarball://root/attachments/some-uuid/ticket4900/bsgs.patch) by cremona created at 2009-01-01 15:34:37
+Attachment [bsgs.patch](tarball://root/attachments/some-uuid/ticket4900/bsgs.patch) by @JohnCremona created at 2009-01-01 15:34:37
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_037169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4900#issuecomment-37169",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_037170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4900#issuecomment-37170",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_037171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4900#issuecomment-37171",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_037172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4900#issuecomment-37172",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -168,16 +168,16 @@ NB This function is called in ell_torsion.py in computing torsion groups over nu
 archive/issue_comments_037173.json:
 ```json
 {
-    "body": "Attachment [bsgs-new.patch](tarball://root/attachments/some-uuid/ticket4900/bsgs-new.patch) by cremona created at 2009-01-06 21:37:00\n\nThe new patch replaces the old.  It is based on 3.2.3+#4926 which means that both the files touched (ell_generic.py and ell_finite_field.py) are fully sphinxified.  It does the following:\n1. Implements the new point-counting algorithm much as before.\n2. Adds a preliminary computation of l-power torsion for l in [2,3,5] (depending on the size q of the field) which (when non-trivial) helps the bsgs routine for finding the order of random points.  This part revealed a bad bug in _p_primary_torsion() which was posted at #4937, but note that...\n3. The bug in #4937 is fixed here.\n4. Following malb's comments I have separated out functions cardinality_sea() and cardinality_pari() to be separate functions, as is cardinality_bsgs().  None of these caches the result.  The main functions cardinality(), which has the algorithm parameter ('heuristic' by default) does cache.  The 'all' option still does not work as advertised because of the caching (but then it never did).  I think it should be done away with since testing should be done independently using the cardinality_*() functions directly.  The old cardinality_from_group() function is now redundant and has been deleted (please don't ask me to deprecate it!)\n5. The abelian_group() function is now cleaner and simpler since in all cases the group order is known at the start.\n\nSo I have broken some rules by having this patch deal with #4937 too;  by the time I realised, it was too late to separate the two.  As a consolation I'll add a patch at #4937, based on this one, which adds the doctest which (as usual) I forgot.",
+    "body": "Attachment [bsgs-new.patch](tarball://root/attachments/some-uuid/ticket4900/bsgs-new.patch) by @JohnCremona created at 2009-01-06 21:37:00\n\nThe new patch replaces the old.  It is based on 3.2.3+#4926 which means that both the files touched (ell_generic.py and ell_finite_field.py) are fully sphinxified.  It does the following:\n1. Implements the new point-counting algorithm much as before.\n2. Adds a preliminary computation of l-power torsion for l in [2,3,5] (depending on the size q of the field) which (when non-trivial) helps the bsgs routine for finding the order of random points.  This part revealed a bad bug in _p_primary_torsion() which was posted at #4937, but note that...\n3. The bug in #4937 is fixed here.\n4. Following malb's comments I have separated out functions cardinality_sea() and cardinality_pari() to be separate functions, as is cardinality_bsgs().  None of these caches the result.  The main functions cardinality(), which has the algorithm parameter ('heuristic' by default) does cache.  The 'all' option still does not work as advertised because of the caching (but then it never did).  I think it should be done away with since testing should be done independently using the cardinality_*() functions directly.  The old cardinality_from_group() function is now redundant and has been deleted (please don't ask me to deprecate it!)\n5. The abelian_group() function is now cleaner and simpler since in all cases the group order is known at the start.\n\nSo I have broken some rules by having this patch deal with #4937 too;  by the time I realised, it was too late to separate the two.  As a consolation I'll add a patch at #4937, based on this one, which adds the doctest which (as usual) I forgot.",
     "created_at": "2009-01-06T21:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4900#issuecomment-37173",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [bsgs-new.patch](tarball://root/attachments/some-uuid/ticket4900/bsgs-new.patch) by cremona created at 2009-01-06 21:37:00
+Attachment [bsgs-new.patch](tarball://root/attachments/some-uuid/ticket4900/bsgs-new.patch) by @JohnCremona created at 2009-01-06 21:37:00
 
 The new patch replaces the old.  It is based on 3.2.3+#4926 which means that both the files touched (ell_generic.py and ell_finite_field.py) are fully sphinxified.  It does the following:
 1. Implements the new point-counting algorithm much as before.
@@ -200,7 +200,7 @@ archive/issue_comments_037174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4900#issuecomment-37174",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -213,16 +213,16 @@ Based on 3.2.3 without REST conversion
 archive/issue_comments_037175.json:
 ```json
 {
-    "body": "Attachment [trac_4900.patch](tarball://root/attachments/some-uuid/ticket4900/trac_4900.patch) by cremona created at 2009-01-07 11:57:16\n\ntrac_4900.patch should be identical to the previous one except that it is based on 3.2.3 vanilla without the sphinx/rest converted doctests.",
+    "body": "Attachment [trac_4900.patch](tarball://root/attachments/some-uuid/ticket4900/trac_4900.patch) by @JohnCremona created at 2009-01-07 11:57:16\n\ntrac_4900.patch should be identical to the previous one except that it is based on 3.2.3 vanilla without the sphinx/rest converted doctests.",
     "created_at": "2009-01-07T11:57:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4900#issuecomment-37175",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4900.patch](tarball://root/attachments/some-uuid/ticket4900/trac_4900.patch) by cremona created at 2009-01-07 11:57:16
+Attachment [trac_4900.patch](tarball://root/attachments/some-uuid/ticket4900/trac_4900.patch) by @JohnCremona created at 2009-01-07 11:57:16
 
 trac_4900.patch should be identical to the previous one except that it is based on 3.2.3 vanilla without the sphinx/rest converted doctests.
 
@@ -238,7 +238,7 @@ archive/issue_comments_037176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4900#issuecomment-37176",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_037177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4900#issuecomment-37177",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -269,16 +269,16 @@ Same as previous without the typo
 archive/issue_comments_037178.json:
 ```json
 {
-    "body": "Attachment [trac_4900_typo.patch](tarball://root/attachments/some-uuid/ticket4900/trac_4900_typo.patch) by cremona created at 2009-01-24 17:46:09\n\nReplying to [comment:8 roed]:\n> Looks good to me.  One typo (combinarion).  I read through the paper and the code and didn't find any obvious errors.  I tried a few examples and the results seemed reasonable.\n\nThanks.  I added a patch which corrects the typo, otherwise is identical to the last one.",
+    "body": "Attachment [trac_4900_typo.patch](tarball://root/attachments/some-uuid/ticket4900/trac_4900_typo.patch) by @JohnCremona created at 2009-01-24 17:46:09\n\nReplying to [comment:8 roed]:\n> Looks good to me.  One typo (combinarion).  I read through the paper and the code and didn't find any obvious errors.  I tried a few examples and the results seemed reasonable.\n\nThanks.  I added a patch which corrects the typo, otherwise is identical to the last one.",
     "created_at": "2009-01-24T17:46:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4900#issuecomment-37178",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4900_typo.patch](tarball://root/attachments/some-uuid/ticket4900/trac_4900_typo.patch) by cremona created at 2009-01-24 17:46:09
+Attachment [trac_4900_typo.patch](tarball://root/attachments/some-uuid/ticket4900/trac_4900_typo.patch) by @JohnCremona created at 2009-01-24 17:46:09
 
 Replying to [comment:8 roed]:
 > Looks good to me.  One typo (combinarion).  I read through the paper and the code and didn't find any obvious errors.  I tried a few examples and the results seemed reasonable.

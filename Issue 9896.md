@@ -3,7 +3,7 @@
 archive/issues_009896.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif jdemeyer\n\nOn the skynet machines cleo (ia64-Linux-rhel) and iras (ia64-Linux-suse), each using gcc 4.5.1, the PARI spkg in 4.6.alpha0 fails to build:\n\n```\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -I. -I../src/headers -fPIC -o mpqs.o ../src/modules/mpqs.c\n../src/modules/krasner.c: In function 'GetRamifiedPol': \n../src/modules/krasner.c:878:1: error: unrecognizable insn: \n(insn:TI 7910 7861 7937 509 (parallel [ \n            (set (reg:DI 134 f6) \n                (asm_operands:DI (\"xma.hu %0 = %2, %3, f0 \n        ;; \n        xma.l %1 = %2, %3, f0\") (\"=&f\") 0 [ \n                        (reg:DI 135 f7) \n                        (reg/v:DI 130 f2 [orig:1756 pmodg ] [1756]) \n                    ] \n                     [ \n                        (asm_input:DI (\"f\") (null):0) \n                        (asm_input:DI (\"f\") (null):0) \n                    ] \n                     [] ../src/modules/krasner.c:878)) \n            (set (reg:DI 135 f7) \n                (asm_operands:DI (\"xma.hu %0 = %2, %3, f0 \n        ;; \n        xma.l %1 = %2, %3, f0\") (\"=f\") 1 [ \n                        (reg:DI 135 f7) \n                        (reg/v:DI 130 f2 [orig:1756 pmodg ] [1756]) \n                    ] \n                     [ \n                        (asm_input:DI (\"f\") (null):0) \n                        (asm_input:DI (\"f\") (null):0) \n                    ] \n                     [] ../src/modules/krasner.c:878)) \n        ]) -1 (nil)) \n../src/modules/krasner.c:878:1: internal compiler error: in \nget_attr_first_insn, at config/ia64/itanium2.md:1909 \nPlease submit a full bug report, \nwith preprocessed source if appropriate. \nSee <http://gcc.gnu.org/bugs.html> for instructions. \nmake[3]: *** [krasner.o] Error 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9897\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @jdemeyer\n\nOn the skynet machines cleo (ia64-Linux-rhel) and iras (ia64-Linux-suse), each using gcc 4.5.1, the PARI spkg in 4.6.alpha0 fails to build:\n\n```\ngcc  -c -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -O3 -g   -I. -I../src/headers -fPIC -o mpqs.o ../src/modules/mpqs.c\n../src/modules/krasner.c: In function 'GetRamifiedPol': \n../src/modules/krasner.c:878:1: error: unrecognizable insn: \n(insn:TI 7910 7861 7937 509 (parallel [ \n            (set (reg:DI 134 f6) \n                (asm_operands:DI (\"xma.hu %0 = %2, %3, f0 \n        ;; \n        xma.l %1 = %2, %3, f0\") (\"=&f\") 0 [ \n                        (reg:DI 135 f7) \n                        (reg/v:DI 130 f2 [orig:1756 pmodg ] [1756]) \n                    ] \n                     [ \n                        (asm_input:DI (\"f\") (null):0) \n                        (asm_input:DI (\"f\") (null):0) \n                    ] \n                     [] ../src/modules/krasner.c:878)) \n            (set (reg:DI 135 f7) \n                (asm_operands:DI (\"xma.hu %0 = %2, %3, f0 \n        ;; \n        xma.l %1 = %2, %3, f0\") (\"=f\") 1 [ \n                        (reg:DI 135 f7) \n                        (reg/v:DI 130 f2 [orig:1756 pmodg ] [1756]) \n                    ] \n                     [ \n                        (asm_input:DI (\"f\") (null):0) \n                        (asm_input:DI (\"f\") (null):0) \n                    ] \n                     [] ../src/modules/krasner.c:878)) \n        ]) -1 (nil)) \n../src/modules/krasner.c:878:1: internal compiler error: in \nget_attr_first_insn, at config/ia64/itanium2.md:1909 \nPlease submit a full bug report, \nwith preprocessed source if appropriate. \nSee <http://gcc.gnu.org/bugs.html> for instructions. \nmake[3]: *** [krasner.o] Error 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9897\n\n",
     "created_at": "2010-09-11T06:08:39Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009896.json:
     "title": "pari-2.4.3.svn-12577 fails to build on itanium with gcc 4.5.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9896",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
 
-CC:  leif jdemeyer
+CC:  @nexttime @jdemeyer
 
 On the skynet machines cleo (ia64-Linux-rhel) and iras (ia64-Linux-suse), each using gcc 4.5.1, the PARI spkg in 4.6.alpha0 fails to build:
 
@@ -78,7 +78,7 @@ archive/issue_comments_098372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98372",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_098373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98373",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_098374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98374",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_098375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98375",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_098376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98376",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_098377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98377",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_098378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98378",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_098380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98380",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_098381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98381",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_098382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98382",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_098383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98383",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_098384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98384",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_098385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98385",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_098386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98386",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_098387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98387",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_098388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98388",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -448,16 +448,16 @@ Minimal testcase exhibiting the bug
 archive/issue_comments_098389.json:
 ```json
 {
-    "body": "Attachment [krasner.i](tarball://root/attachments/some-uuid/ticket9897/krasner.i) by mpatel created at 2010-10-16 22:50:38\n\nCool.  Thanks!",
+    "body": "Attachment [krasner.i](tarball://root/attachments/some-uuid/ticket9897/krasner.i) by @qed777 created at 2010-10-16 22:50:38\n\nCool.  Thanks!",
     "created_at": "2010-10-16T22:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98389",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [krasner.i](tarball://root/attachments/some-uuid/ticket9897/krasner.i) by mpatel created at 2010-10-16 22:50:38
+Attachment [krasner.i](tarball://root/attachments/some-uuid/ticket9897/krasner.i) by @qed777 created at 2010-10-16 22:50:38
 
 Cool.  Thanks!
 
@@ -473,7 +473,7 @@ archive/issue_comments_098390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98390",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_098391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98391",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -533,7 +533,7 @@ archive/issue_comments_098393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98393",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -579,7 +579,7 @@ archive/issue_comments_098395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9896#issuecomment-98395",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

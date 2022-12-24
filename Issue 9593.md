@@ -3,7 +3,7 @@
 archive/issues_009593.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  rlm chapoton\n\nTry the following in 4.5.2.alpha0 (or after applying #9532):\n\n```\nsage: G = graphs.PetersenGraph()\nsage: set_random_seed(0); G.plot(layout='spring', iterations=10000)\nsage: set_random_seed(0); G.plot(layout='spring', iterations=10001)\n```\n\nI get very different-looking graphs.  (If you go back and try with iterations=10000 again, you get the same graph again, showing that #9532 did make it reproducible, at least.)\n\nMaybe some constants need tweaking?\n\nI think this may be causing the problem reported in the first comment on #9584.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9593\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill @fchapoton\n\nTry the following in 4.5.2.alpha0 (or after applying #9532):\n\n```\nsage: G = graphs.PetersenGraph()\nsage: set_random_seed(0); G.plot(layout='spring', iterations=10000)\nsage: set_random_seed(0); G.plot(layout='spring', iterations=10001)\n```\n\nI get very different-looking graphs.  (If you go back and try with iterations=10000 again, you get the same graph again, showing that #9532 did make it reproducible, at least.)\n\nMaybe some constants need tweaking?\n\nI think this may be causing the problem reported in the first comment on #9584.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9593\n\n",
     "created_at": "2010-07-24T18:32:43Z",
     "labels": [
         "graph theory",
@@ -19,7 +19,7 @@ archive/issues_009593.json:
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  rlm chapoton
+CC:  @rlmill @fchapoton
 
 Try the following in 4.5.2.alpha0 (or after applying #9532):
 
@@ -51,7 +51,7 @@ archive/issue_comments_092813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9593#issuecomment-92813",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_092815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9593#issuecomment-92815",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_092816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9593#issuecomment-92816",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_092817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9593#issuecomment-92817",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_092818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9593#issuecomment-92818",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_092819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9593#issuecomment-92819",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_092820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9593#issuecomment-92820",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_092821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9593#issuecomment-92821",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_092822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9593#issuecomment-92822",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

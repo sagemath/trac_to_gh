@@ -90,16 +90,16 @@ I deleted the optional argument "k=1" from Euler_Phi, since it didn't seem to be
 archive/issue_comments_053231.json:
 ```json
 {
-    "body": "Attachment [trac_6529_reviewer.patch](tarball://root/attachments/some-uuid/ticket6529/trac_6529_reviewer.patch) by davidloeffler created at 2009-07-16 16:55:27",
+    "body": "Attachment [trac_6529_reviewer.patch](tarball://root/attachments/some-uuid/ticket6529/trac_6529_reviewer.patch) by @loefflerd created at 2009-07-16 16:55:27",
     "created_at": "2009-07-16T16:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6529#issuecomment-53231",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6529_reviewer.patch](tarball://root/attachments/some-uuid/ticket6529/trac_6529_reviewer.patch) by davidloeffler created at 2009-07-16 16:55:27
+Attachment [trac_6529_reviewer.patch](tarball://root/attachments/some-uuid/ticket6529/trac_6529_reviewer.patch) by @loefflerd created at 2009-07-16 16:55:27
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_053232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6529#issuecomment-53232",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

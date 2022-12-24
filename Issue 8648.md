@@ -3,7 +3,7 @@
 archive/issues_008648.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  sage-combinat\n\nKeywords: element constructor\n\nGeneric __call__ function for parents has a default value for its first argument. This prevents from making a difference between A() and A(0). This causes problems for crystal code, where the typical input is A(2,1,4,3,0,...). For example:\n\n\n```\n    sage: T = CrystalOfTableaux(['B',3], shape=[3])\n    sage: t=T(1,2,0)\n    sage: t\n    [[1, 2, 0]]\n\n    sage: T = CrystalOfTableaux(['B',3], shape=[])\n    sage: t=T()\n    sage: t     # goes boom\n    sage: t._list # this list should be empty\n    [0]\n```\n\n\nSuggestion: self.__call__() could instead call right away self._element_constructor_().\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8648\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  sage-combinat\n\nKeywords: element constructor\n\nGeneric __call__ function for parents has a default value for its first argument. This prevents from making a difference between A() and A(0). This causes problems for crystal code, where the typical input is A(2,1,4,3,0,...). For example:\n\n\n```\n    sage: T = CrystalOfTableaux(['B',3], shape=[3])\n    sage: t=T(1,2,0)\n    sage: t\n    [[1, 2, 0]]\n\n    sage: T = CrystalOfTableaux(['B',3], shape=[])\n    sage: t=T()\n    sage: t     # goes boom\n    sage: t._list # this list should be empty\n    [0]\n```\n\n\nSuggestion: self.__call__() could instead call right away self._element_constructor_().\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8648\n\n",
     "created_at": "2010-04-03T15:34:28Z",
     "labels": [
         "coercion",
@@ -13,10 +13,10 @@ archive/issues_008648.json:
     "title": "Generic __call__ function for parents prevents empty input in constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8648",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 CC:  sage-combinat
 
@@ -58,7 +58,7 @@ archive/issue_comments_078463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8648#issuecomment-78463",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_078464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8648#issuecomment-78464",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_078465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8648#issuecomment-78465",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_078466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8648#issuecomment-78466",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_078467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8648#issuecomment-78467",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_078468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8648#issuecomment-78468",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_078469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8648#issuecomment-78469",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

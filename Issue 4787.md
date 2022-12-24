@@ -3,7 +3,7 @@
 archive/issues_004787.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThere is a race condition in sage-doctest during folder creation at line 586, which is in a function called at line 441.  This can cause doctesting a file to fail with file not found errors.  This is different then the other file not found error that was in ptest.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4787\n\n",
+    "body": "Assignee: @garyfurnish\n\nThere is a race condition in sage-doctest during folder creation at line 586, which is in a function called at line 441.  This can cause doctesting a file to fail with file not found errors.  This is different then the other file not found error that was in ptest.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4787\n\n",
     "created_at": "2008-12-14T00:58:37Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_004787.json:
     "title": "Race condition in sage-doctest folder creation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4787",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 There is a race condition in sage-doctest during folder creation at line 586, which is in a function called at line 441.  This can cause doctesting a file to fail with file not found errors.  This is different then the other file not found error that was in ptest.  
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4787
 archive/issue_comments_036293.json:
 ```json
 {
-    "body": "Attachment [trac_4787_bin.patch](tarball://root/attachments/some-uuid/ticket4787/trac_4787_bin.patch) by gfurnish created at 2008-12-14 01:48:32",
+    "body": "Attachment [trac_4787_bin.patch](tarball://root/attachments/some-uuid/ticket4787/trac_4787_bin.patch) by @garyfurnish created at 2008-12-14 01:48:32",
     "created_at": "2008-12-14T01:48:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4787#issuecomment-36293",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_4787_bin.patch](tarball://root/attachments/some-uuid/ticket4787/trac_4787_bin.patch) by gfurnish created at 2008-12-14 01:48:32
+Attachment [trac_4787_bin.patch](tarball://root/attachments/some-uuid/ticket4787/trac_4787_bin.patch) by @garyfurnish created at 2008-12-14 01:48:32
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_036294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4787#issuecomment-36294",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_036295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4787#issuecomment-36295",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_036296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4787#issuecomment-36296",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1171
 archive/issue_comments_007176.json:
 ```json
 {
-    "body": "Attachment [1171-quadratic-field-new.patch](tarball://root/attachments/some-uuid/ticket1171/1171-quadratic-field-new.patch) by robertwb created at 2007-12-02 09:32:20",
+    "body": "Attachment [1171-quadratic-field-new.patch](tarball://root/attachments/some-uuid/ticket1171/1171-quadratic-field-new.patch) by @robertwb created at 2007-12-02 09:32:20",
     "created_at": "2007-12-02T09:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7176",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1171-quadratic-field-new.patch](tarball://root/attachments/some-uuid/ticket1171/1171-quadratic-field-new.patch) by robertwb created at 2007-12-02 09:32:20
+Attachment [1171-quadratic-field-new.patch](tarball://root/attachments/some-uuid/ticket1171/1171-quadratic-field-new.patch) by @robertwb created at 2007-12-02 09:32:20
 
 
 
@@ -56,7 +56,7 @@ archive/issue_comments_007177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7177",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -69,16 +69,16 @@ Changing status from new to assigned.
 archive/issue_comments_007178.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2007-12-02T09:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7178",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_007180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7180",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

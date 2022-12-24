@@ -3,7 +3,7 @@
 archive/issues_007898.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jsp\n\nIt was agreed recently that variables would not be used for very common commands like MV, MKDIR etc. \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\n#7818 usets these, so this package will break. The fix is to simply replace things like \n\n$LN with 'ln'\n\nAn updated .spkg can be found at\n\nhttp://boxen.math.washington.edu/home/kirkby/portability/singular-3-1-0-4-20090818.p3/singular-3-1-0-4-20090818.p3.spkg\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7898\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies\n\nIt was agreed recently that variables would not be used for very common commands like MV, MKDIR etc. \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\n#7818 usets these, so this package will break. The fix is to simply replace things like \n\n$LN with 'ln'\n\nAn updated .spkg can be found at\n\nhttp://boxen.math.washington.edu/home/kirkby/portability/singular-3-1-0-4-20090818.p3/singular-3-1-0-4-20090818.p3.spkg\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7898\n\n",
     "created_at": "2010-01-12T03:12:28Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_007898.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  jsp
+CC:  @jaapspies
 
 It was agreed recently that variables would not be used for very common commands like MV, MKDIR etc. 
 
@@ -107,7 +107,7 @@ archive/issue_comments_068694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68694",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_068695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68695",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_068696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68696",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_068697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68697",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_068698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68698",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_068699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68699",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_068700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68700",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_068702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68702",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_068703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68703",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

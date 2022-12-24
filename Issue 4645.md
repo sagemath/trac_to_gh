@@ -14,7 +14,7 @@ archive/issues_004645.json:
     "title": "in setup.py module_list.py is hidden with no comment.  VERY CONFUSING",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4645",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -111,7 +111,7 @@ archive/issue_comments_034968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4645#issuecomment-34968",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

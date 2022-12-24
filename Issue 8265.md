@@ -3,7 +3,7 @@
 archive/issues_008265.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jhpalmieri\n\nIt seems the only problem is in\n\n   `sagenb.notebook.worksheet.Worksheet.__init__`\n\nSee #7549.  This is a follow-up to #8167.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8265\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\nIt seems the only problem is in\n\n   `sagenb.notebook.worksheet.Worksheet.__init__`\n\nSee #7549.  This is a follow-up to #8167.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8265\n\n",
     "created_at": "2010-02-14T18:54:03Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008265.json:
     "title": "LaTeX-friendly Unicode characters in underscored methods' docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8265",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 It seems the only problem is in
 
@@ -43,7 +43,7 @@ archive/issue_comments_073162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8265#issuecomment-73162",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -56,16 +56,16 @@ Applies #8167's treatment to `Worksheet.__init__`.  sagenb repo.
 archive/issue_comments_073163.json:
 ```json
 {
-    "body": "Attachment [trac_8265-unicode_underscore.patch](tarball://root/attachments/some-uuid/ticket8265/trac_8265-unicode_underscore.patch) by mpatel created at 2010-02-14 19:05:38",
+    "body": "Attachment [trac_8265-unicode_underscore.patch](tarball://root/attachments/some-uuid/ticket8265/trac_8265-unicode_underscore.patch) by @qed777 created at 2010-02-14 19:05:38",
     "created_at": "2010-02-14T19:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8265#issuecomment-73163",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8265-unicode_underscore.patch](tarball://root/attachments/some-uuid/ticket8265/trac_8265-unicode_underscore.patch) by mpatel created at 2010-02-14 19:05:38
+Attachment [trac_8265-unicode_underscore.patch](tarball://root/attachments/some-uuid/ticket8265/trac_8265-unicode_underscore.patch) by @qed777 created at 2010-02-14 19:05:38
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_073164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8265#issuecomment-73164",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_073165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8265#issuecomment-73165",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_073166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8265#issuecomment-73166",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_073167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8265#issuecomment-73167",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_073168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8265#issuecomment-73168",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

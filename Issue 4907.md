@@ -14,7 +14,7 @@ archive/issues_004907.json:
     "title": "convert sage.crypto.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4907",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4907
 archive/issue_comments_037247.json:
 ```json
 {
-    "body": "Attachment [trac_4907.patch](tarball://root/attachments/some-uuid/ticket4907/trac_4907.patch) by mhansen created at 2009-01-02 02:55:57",
+    "body": "Attachment [trac_4907.patch](tarball://root/attachments/some-uuid/ticket4907/trac_4907.patch) by @mwhansen created at 2009-01-02 02:55:57",
     "created_at": "2009-01-02T02:55:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4907#issuecomment-37247",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4907.patch](tarball://root/attachments/some-uuid/ticket4907/trac_4907.patch) by mhansen created at 2009-01-02 02:55:57
+Attachment [trac_4907.patch](tarball://root/attachments/some-uuid/ticket4907/trac_4907.patch) by @mwhansen created at 2009-01-02 02:55:57
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_037248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4907#issuecomment-37248",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_037249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4907#issuecomment-37249",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,16 +109,16 @@ Good catch.  Just deleting the space should be enough.  ReST works with indentat
 archive/issue_comments_037250.json:
 ```json
 {
-    "body": "Attachment [trac_4907-2.patch](tarball://root/attachments/some-uuid/ticket4907/trac_4907-2.patch) by mhansen created at 2009-01-02 20:20:50\n\nI've attached a patch which fixes this.",
+    "body": "Attachment [trac_4907-2.patch](tarball://root/attachments/some-uuid/ticket4907/trac_4907-2.patch) by @mwhansen created at 2009-01-02 20:20:50\n\nI've attached a patch which fixes this.",
     "created_at": "2009-01-02T20:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4907#issuecomment-37250",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4907-2.patch](tarball://root/attachments/some-uuid/ticket4907/trac_4907-2.patch) by mhansen created at 2009-01-02 20:20:50
+Attachment [trac_4907-2.patch](tarball://root/attachments/some-uuid/ticket4907/trac_4907-2.patch) by @mwhansen created at 2009-01-02 20:20:50
 
 I've attached a patch which fixes this.
 

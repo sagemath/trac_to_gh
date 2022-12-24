@@ -3,7 +3,7 @@
 archive/issues_009744.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  kcrisman\n\nI was browsing the docs and noticed this example completely fills the plot black:\n\n\n```\nx,y = var('x,y')\nf(x,y) = x^2 + y^2 - 2\nimplicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1)\n```\n\n\nThe docs say it should fill the region f(x)<0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9744\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nI was browsing the docs and noticed this example completely fills the plot black:\n\n\n```\nx,y = var('x,y')\nf(x,y) = x^2 + y^2 - 2\nimplicit_plot(f, (-3, 3), (-3, 3),fill=True).show(aspect_ratio=1)\n```\n\n\nThe docs say it should fill the region f(x)<0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9744\n\n",
     "created_at": "2010-08-14T09:13:18Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009744.json:
     "title": "implicit_plot fill option fills entire plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9744",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  kcrisman
+CC:  @kcrisman
 
 I was browsing the docs and noticed this example completely fills the plot black:
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9744
 archive/issue_comments_095406.json:
 ```json
 {
-    "body": "Attachment [implicit-plot-fill.patch](tarball://root/attachments/some-uuid/ticket9744/implicit-plot-fill.patch) by jason created at 2010-08-14 16:40:45",
+    "body": "Attachment [implicit-plot-fill.patch](tarball://root/attachments/some-uuid/ticket9744/implicit-plot-fill.patch) by @jasongrout created at 2010-08-14 16:40:45",
     "created_at": "2010-08-14T16:40:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95406",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [implicit-plot-fill.patch](tarball://root/attachments/some-uuid/ticket9744/implicit-plot-fill.patch) by jason created at 2010-08-14 16:40:45
+Attachment [implicit-plot-fill.patch](tarball://root/attachments/some-uuid/ticket9744/implicit-plot-fill.patch) by @jasongrout created at 2010-08-14 16:40:45
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_095407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95407",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_095408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95408",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_095409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95409",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_095410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95410",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -134,16 +134,16 @@ I think it's #8529 that you meant.  Anyway, is there anything wrong with this ro
 archive/issue_comments_095411.json:
 ```json
 {
-    "body": "Attachment [trac_9744.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744.patch) by mboratko created at 2011-11-22 16:38:40\n\nThis is just a modification of Jason's fix to work with the current version. I had to change 'contour' to 'contours', and also remove the 'cmap' option in order for it to work (you can see what I mean by comparing the two patches). I'm pretty new to this, so I'm not sure if this is the appropriate fix or not, but it has the desired effect.",
+    "body": "Attachment [trac_9744.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744.patch) by @mboratko created at 2011-11-22 16:38:40\n\nThis is just a modification of Jason's fix to work with the current version. I had to change 'contour' to 'contours', and also remove the 'cmap' option in order for it to work (you can see what I mean by comparing the two patches). I'm pretty new to this, so I'm not sure if this is the appropriate fix or not, but it has the desired effect.",
     "created_at": "2011-11-22T16:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95411",
-    "user": "mboratko"
+    "user": "@mboratko"
 }
 ```
 
-Attachment [trac_9744.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744.patch) by mboratko created at 2011-11-22 16:38:40
+Attachment [trac_9744.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744.patch) by @mboratko created at 2011-11-22 16:38:40
 
 This is just a modification of Jason's fix to work with the current version. I had to change 'contour' to 'contours', and also remove the 'cmap' option in order for it to work (you can see what I mean by comparing the two patches). I'm pretty new to this, so I'm not sure if this is the appropriate fix or not, but it has the desired effect.
 
@@ -159,7 +159,7 @@ archive/issue_comments_095412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95412",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_095413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95413",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_095414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95414",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_095415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95415",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_095416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95416",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_095417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95417",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_095418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95418",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_095419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95419",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_095420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95420",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_095421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95421",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_095422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95422",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_095423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95423",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_095424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95424",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_095425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95425",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -578,7 +578,7 @@ archive/issue_comments_095426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95426",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -598,7 +598,7 @@ archive/issue_comments_095427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95427",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_095428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95428",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -643,7 +643,7 @@ archive/issue_comments_095429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95429",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -661,7 +661,7 @@ archive/issue_comments_095430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95430",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -681,7 +681,7 @@ archive/issue_comments_095431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95431",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -711,7 +711,7 @@ archive/issue_comments_095432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95432",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -729,7 +729,7 @@ archive/issue_comments_095433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95433",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -742,16 +742,16 @@ fixes filled implicit plotting with lambdas
 archive/issue_comments_095434.json:
 ```json
 {
-    "body": "Attachment [trac_9744_v2.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744_v2.patch) by benjaminfjones created at 2012-02-25 02:29:30\n\nAh, good point. The new patch should do the job.",
+    "body": "Attachment [trac_9744_v2.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744_v2.patch) by @benjaminfjones created at 2012-02-25 02:29:30\n\nAh, good point. The new patch should do the job.",
     "created_at": "2012-02-25T02:29:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95434",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_9744_v2.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744_v2.patch) by benjaminfjones created at 2012-02-25 02:29:30
+Attachment [trac_9744_v2.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744_v2.patch) by @benjaminfjones created at 2012-02-25 02:29:30
 
 Ah, good point. The new patch should do the job.
 
@@ -767,7 +767,7 @@ archive/issue_comments_095435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95435",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -785,7 +785,7 @@ archive/issue_comments_095436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95436",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -803,7 +803,7 @@ archive/issue_comments_095437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95437",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -816,16 +816,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_095438.json:
 ```json
 {
-    "body": "Attachment [trac_9744-reviewer.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744-reviewer.patch) by kcrisman created at 2012-02-25 04:09:23",
+    "body": "Attachment [trac_9744-reviewer.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744-reviewer.patch) by @kcrisman created at 2012-02-25 04:09:23",
     "created_at": "2012-02-25T04:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95438",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9744-reviewer.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744-reviewer.patch) by kcrisman created at 2012-02-25 04:09:23
+Attachment [trac_9744-reviewer.patch](tarball://root/attachments/some-uuid/ticket9744/trac_9744-reviewer.patch) by @kcrisman created at 2012-02-25 04:09:23
 
 
 
@@ -839,7 +839,7 @@ archive/issue_comments_095439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9744#issuecomment-95439",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

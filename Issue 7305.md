@@ -3,7 +3,7 @@
 archive/issues_007305.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ncohen\n\nAdd the Higman-Sims graph to the graph generators collection.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7305\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nAdd the Higman-Sims graph to the graph generators collection.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7305\n\n",
     "created_at": "2009-10-26T04:14:49Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007305.json:
     "title": "Implement the Higman-Sims graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7305",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  ncohen
+CC:  @nathanncohen
 
 Add the Higman-Sims graph to the graph generators collection.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7305
 archive/issue_comments_061008.json:
 ```json
 {
-    "body": "Attachment [trac_7305_higman_sims_graph.patch](tarball://root/attachments/some-uuid/ticket7305/trac_7305_higman_sims_graph.patch) by rbeezer created at 2009-10-26 04:18:36",
+    "body": "Attachment [trac_7305_higman_sims_graph.patch](tarball://root/attachments/some-uuid/ticket7305/trac_7305_higman_sims_graph.patch) by @rbeezer created at 2009-10-26 04:18:36",
     "created_at": "2009-10-26T04:18:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7305#issuecomment-61008",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_7305_higman_sims_graph.patch](tarball://root/attachments/some-uuid/ticket7305/trac_7305_higman_sims_graph.patch) by rbeezer created at 2009-10-26 04:18:36
+Attachment [trac_7305_higman_sims_graph.patch](tarball://root/attachments/some-uuid/ticket7305/trac_7305_higman_sims_graph.patch) by @rbeezer created at 2009-10-26 04:18:36
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_061009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7305#issuecomment-61009",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_061010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7305#issuecomment-61010",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_061011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7305#issuecomment-61011",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -117,16 +117,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061012.json:
 ```json
 {
-    "body": "Attachment [trac_7305_higman_sims_graph_2.patch](tarball://root/attachments/some-uuid/ticket7305/trac_7305_higman_sims_graph_2.patch) by rbeezer created at 2009-11-08 22:21:14\n\nHi Nathann,\n\nNice catch, on both counts.  Thanks for the review.\n\nThe \"_2\" patch is self-contained (ie apply just the single revised patch on a fresh install) and addresses both your comments.\n\nRob",
+    "body": "Attachment [trac_7305_higman_sims_graph_2.patch](tarball://root/attachments/some-uuid/ticket7305/trac_7305_higman_sims_graph_2.patch) by @rbeezer created at 2009-11-08 22:21:14\n\nHi Nathann,\n\nNice catch, on both counts.  Thanks for the review.\n\nThe \"_2\" patch is self-contained (ie apply just the single revised patch on a fresh install) and addresses both your comments.\n\nRob",
     "created_at": "2009-11-08T22:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7305#issuecomment-61012",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_7305_higman_sims_graph_2.patch](tarball://root/attachments/some-uuid/ticket7305/trac_7305_higman_sims_graph_2.patch) by rbeezer created at 2009-11-08 22:21:14
+Attachment [trac_7305_higman_sims_graph_2.patch](tarball://root/attachments/some-uuid/ticket7305/trac_7305_higman_sims_graph_2.patch) by @rbeezer created at 2009-11-08 22:21:14
 
 Hi Nathann,
 
@@ -148,7 +148,7 @@ archive/issue_comments_061013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7305#issuecomment-61013",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_061014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7305#issuecomment-61014",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_061015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7305#issuecomment-61015",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_061016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7305#issuecomment-61016",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

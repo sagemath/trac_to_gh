@@ -14,7 +14,7 @@ archive/issues_007101.json:
     "title": "Inconsistency in polynomial ring creation.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7101",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: tbd
@@ -78,7 +78,7 @@ archive/issue_comments_058776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7101#issuecomment-58776",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_058777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7101#issuecomment-58777",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_058778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7101#issuecomment-58778",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

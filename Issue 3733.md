@@ -14,7 +14,7 @@ archive/issues_003733.json:
     "title": "notebook -- add something to reference manual about user-customizable css (easy ticket)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3733",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -95,7 +95,7 @@ archive/issue_comments_026504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3733#issuecomment-26504",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing status from new to needs_review.
 archive/issue_comments_026505.json:
 ```json
 {
-    "body": "Attachment [sagenb-3733.patch](tarball://root/attachments/some-uuid/ticket3733/sagenb-3733.patch) by was created at 2009-11-19 23:26:47\n\nNote only does this add the remark to the manual, but also sphinxifies the ``notebook?`` docstring.",
+    "body": "Attachment [sagenb-3733.patch](tarball://root/attachments/some-uuid/ticket3733/sagenb-3733.patch) by @williamstein created at 2009-11-19 23:26:47\n\nNote only does this add the remark to the manual, but also sphinxifies the ``notebook?`` docstring.",
     "created_at": "2009-11-19T23:26:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3733#issuecomment-26505",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb-3733.patch](tarball://root/attachments/some-uuid/ticket3733/sagenb-3733.patch) by was created at 2009-11-19 23:26:47
+Attachment [sagenb-3733.patch](tarball://root/attachments/some-uuid/ticket3733/sagenb-3733.patch) by @williamstein created at 2009-11-19 23:26:47
 
 Note only does this add the remark to the manual, but also sphinxifies the ``notebook?`` docstring.
 
@@ -133,7 +133,7 @@ archive/issue_comments_026506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3733#issuecomment-26506",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_026507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3733#issuecomment-26507",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_026508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3733#issuecomment-26508",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

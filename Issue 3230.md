@@ -14,7 +14,7 @@ archive/issues_003230.json:
     "title": "[with patch; needs review] cygwin -- new givaro spkg that works around stupidity in cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3230",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

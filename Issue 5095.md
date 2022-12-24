@@ -14,7 +14,7 @@ archive/issues_005095.json:
     "title": "[with patch, needs review] AJAX requests don't work from the worksheet listing page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5095",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5095
 archive/issue_comments_038856.json:
 ```json
 {
-    "body": "Attachment [trac_5095.patch](tarball://root/attachments/some-uuid/ticket5095/trac_5095.patch) by mhansen created at 2009-01-25 07:17:09",
+    "body": "Attachment [trac_5095.patch](tarball://root/attachments/some-uuid/ticket5095/trac_5095.patch) by @mwhansen created at 2009-01-25 07:17:09",
     "created_at": "2009-01-25T07:17:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5095#issuecomment-38856",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5095.patch](tarball://root/attachments/some-uuid/ticket5095/trac_5095.patch) by mhansen created at 2009-01-25 07:17:09
+Attachment [trac_5095.patch](tarball://root/attachments/some-uuid/ticket5095/trac_5095.patch) by @mwhansen created at 2009-01-25 07:17:09
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_038857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5095#issuecomment-38857",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

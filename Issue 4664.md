@@ -3,7 +3,7 @@
 archive/issues_004664.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  robertwb\n\nSage's dependency checking code should be useful for many Cython projects. So let's move that code upstream.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4664\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @robertwb\n\nSage's dependency checking code should be useful for many Cython projects. So let's move that code upstream.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4664\n\n",
     "created_at": "2008-11-30T09:36:25Z",
     "labels": [
         "build",
@@ -17,9 +17,9 @@ archive/issues_004664.json:
     "user": "mabshoff"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  robertwb
+CC:  @robertwb
 
 Sage's dependency checking code should be useful for many Cython projects. So let's move that code upstream.
 
@@ -43,7 +43,7 @@ archive/issue_comments_035111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4664#issuecomment-35111",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_035112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4664#issuecomment-35112",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_035113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4664#issuecomment-35113",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_035114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4664#issuecomment-35114",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_035115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4664#issuecomment-35115",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

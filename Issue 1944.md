@@ -14,7 +14,7 @@ archive/issues_001944.json:
     "title": "subsections not honored in ref manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1944",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tba
@@ -43,7 +43,7 @@ archive/issue_comments_012338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1944#issuecomment-12338",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_012339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1944#issuecomment-12339",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,16 +74,16 @@ Changing to major priority since it seems very confusing for a new user and look
 archive/issue_comments_012340.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2008-12-25T07:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1944#issuecomment-12340",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_012341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1944#issuecomment-12341",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_012342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1944#issuecomment-12342",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_012343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1944#issuecomment-12343",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_012344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1944#issuecomment-12344",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

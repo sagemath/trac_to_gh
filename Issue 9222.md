@@ -14,7 +14,7 @@ archive/issues_009222.json:
     "title": "improve doctest coverage of databases/conway.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9222",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: tbd
@@ -64,7 +64,7 @@ archive/issue_comments_086512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9222#issuecomment-86512",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_086513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9222#issuecomment-86513",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_086514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9222#issuecomment-86514",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_086515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9222#issuecomment-86515",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_086516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9222#issuecomment-86516",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_086517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9222#issuecomment-86517",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_086518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9222#issuecomment-86518",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -197,16 +197,16 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_086519.json:
 ```json
 {
-    "body": "Attachment [trac_9222.patch](tarball://root/attachments/some-uuid/ticket9222/trac_9222.patch) by AlexGhitza created at 2010-07-22 03:12:03\n\nDone.",
+    "body": "Attachment [trac_9222.patch](tarball://root/attachments/some-uuid/ticket9222/trac_9222.patch) by @aghitza created at 2010-07-22 03:12:03\n\nDone.",
     "created_at": "2010-07-22T03:12:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9222#issuecomment-86519",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_9222.patch](tarball://root/attachments/some-uuid/ticket9222/trac_9222.patch) by AlexGhitza created at 2010-07-22 03:12:03
+Attachment [trac_9222.patch](tarball://root/attachments/some-uuid/ticket9222/trac_9222.patch) by @aghitza created at 2010-07-22 03:12:03
 
 Done.
 
@@ -222,7 +222,7 @@ archive/issue_comments_086520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9222#issuecomment-86520",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_086521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9222#issuecomment-86521",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

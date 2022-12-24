@@ -3,7 +3,7 @@
 archive/issues_006018.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: Dirichlet characters\n\nFunny things happen if you have two Dirichlet groups with the same modulus and the same base ring, but different roots of unity. This can happen if you use base_extend:\n\n\n```\nsage: G = DirichletGroup(10, QQ).base_extend(CyclotomicField(4))\nsage: H = DirichletGroup(10, CyclotomicField(4))\n```\n\n\nNow G and H look pretty similar:\n\n```\nsage: G\nGroup of Dirichlet characters of modulus 10 over Cyclotomic Field of order 4 and degree 2\nsage: H\nGroup of Dirichlet characters of modulus 10 over Cyclotomic Field of order 4 and degree 2\n```\n\n\nBut they don't compare as equal and the generators of H don't live in G:\n\n```\nsage: G == H\nFalse\nsage: H.0 in G\nFalse\n```\n\n\nHere G only actually contains those characters which factor through its original base ring, namely QQ. This is probably going to be a bit mystifying for the end-user.\n\nSimilar phenomena can make it next to impossible to do arithmetic with characters obtained by base extension, which somehow are second-class citizens:\n\n\n```\nsage: K5 = CyclotomicField(5); K3 = CyclotomicField(3); K30 = CyclotomicField(30)\nsage: (DirichletGroup(31, K5).0).base_extend(K30) * (DirichletGroup(31, K3).0).base_extend(K30)\nTypeError: unsupported operand parent(s) for '*': \n'Group of Dirichlet characters of modulus 31 over Cyclotomic Field of order 30 and degree 8' and \n'Group of Dirichlet characters of modulus 31 over Cyclotomic Field of order 30 and degree 8'\n```\n\n\nThis is a particularly mystifying error for the uninitiated, since it's asserting that it can't find a common parent, but the string representations of the parents it already has are identical.\n\nI can see a couple of solutions:\n\n- Change base_extend for Dirichlet groups to pick a maximal order root of unity in the new base ring, rather than just base-extending the root of unity it already has. This is nice and transparent, but it could be slow in some cases, and it prevents us constructing Dirichlet characters with values in rings where the unit group isn't cyclic or we can't compute a generator (e.g. we'd lose the ability to base extend elements of `DirichletGroup(N, ZZ)` to `DirichletGroup(N, Integers(15))`).\n\n- Change the `_repr_` method for Dirichlet groups so it explicitly prints the root of unity involved. I don't like this idea much.\n\n- Some combination of the above two, with a special class for Dirichlet groups over domains where a unique root of unity of maximal order dividing `euler_phi(N)` doesn't exist or can't be calculated. This might be fiddly to write and maintain.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6018\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: Dirichlet characters\n\nFunny things happen if you have two Dirichlet groups with the same modulus and the same base ring, but different roots of unity. This can happen if you use base_extend:\n\n\n```\nsage: G = DirichletGroup(10, QQ).base_extend(CyclotomicField(4))\nsage: H = DirichletGroup(10, CyclotomicField(4))\n```\n\n\nNow G and H look pretty similar:\n\n```\nsage: G\nGroup of Dirichlet characters of modulus 10 over Cyclotomic Field of order 4 and degree 2\nsage: H\nGroup of Dirichlet characters of modulus 10 over Cyclotomic Field of order 4 and degree 2\n```\n\n\nBut they don't compare as equal and the generators of H don't live in G:\n\n```\nsage: G == H\nFalse\nsage: H.0 in G\nFalse\n```\n\n\nHere G only actually contains those characters which factor through its original base ring, namely QQ. This is probably going to be a bit mystifying for the end-user.\n\nSimilar phenomena can make it next to impossible to do arithmetic with characters obtained by base extension, which somehow are second-class citizens:\n\n\n```\nsage: K5 = CyclotomicField(5); K3 = CyclotomicField(3); K30 = CyclotomicField(30)\nsage: (DirichletGroup(31, K5).0).base_extend(K30) * (DirichletGroup(31, K3).0).base_extend(K30)\nTypeError: unsupported operand parent(s) for '*': \n'Group of Dirichlet characters of modulus 31 over Cyclotomic Field of order 30 and degree 8' and \n'Group of Dirichlet characters of modulus 31 over Cyclotomic Field of order 30 and degree 8'\n```\n\n\nThis is a particularly mystifying error for the uninitiated, since it's asserting that it can't find a common parent, but the string representations of the parents it already has are identical.\n\nI can see a couple of solutions:\n\n- Change base_extend for Dirichlet groups to pick a maximal order root of unity in the new base ring, rather than just base-extending the root of unity it already has. This is nice and transparent, but it could be slow in some cases, and it prevents us constructing Dirichlet characters with values in rings where the unit group isn't cyclic or we can't compute a generator (e.g. we'd lose the ability to base extend elements of `DirichletGroup(N, ZZ)` to `DirichletGroup(N, Integers(15))`).\n\n- Change the `_repr_` method for Dirichlet groups so it explicitly prints the root of unity involved. I don't like this idea much.\n\n- Some combination of the above two, with a special class for Dirichlet groups over domains where a unique root of unity of maximal order dividing `euler_phi(N)` doesn't exist or can't be calculated. This might be fiddly to write and maintain.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6018\n\n",
     "created_at": "2009-05-11T09:18:29Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_006018.json:
     "title": "Confusing behaviour with Dirichlet characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6018",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: Dirichlet characters
 
@@ -90,7 +90,7 @@ archive/issue_comments_047879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47879",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -103,16 +103,16 @@ David, I like your analysis of the situation a lot.  I'm going to do what you su
 archive/issue_comments_047880.json:
 ```json
 {
-    "body": "Attachment [trac_6018.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018.patch) by was created at 2010-01-19 03:56:40",
+    "body": "Attachment [trac_6018.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018.patch) by @williamstein created at 2010-01-19 03:56:40",
     "created_at": "2010-01-19T03:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47880",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6018.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018.patch) by was created at 2010-01-19 03:56:40
+Attachment [trac_6018.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018.patch) by @williamstein created at 2010-01-19 03:56:40
 
 
 
@@ -126,7 +126,7 @@ archive/issue_comments_047881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47881",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_047882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47882",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_047883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47883",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -188,16 +188,16 @@ I suggest a further modification which makes the constructor raise a more intell
 archive/issue_comments_047884.json:
 ```json
 {
-    "body": "Attachment [trac_6018-2.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018-2.patch) by davidloeffler created at 2010-01-20 19:21:15\n\napply over previous patch",
+    "body": "Attachment [trac_6018-2.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018-2.patch) by @loefflerd created at 2010-01-20 19:21:15\n\napply over previous patch",
     "created_at": "2010-01-20T19:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47884",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6018-2.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018-2.patch) by davidloeffler created at 2010-01-20 19:21:15
+Attachment [trac_6018-2.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018-2.patch) by @loefflerd created at 2010-01-20 19:21:15
 
 apply over previous patch
 
@@ -213,7 +213,7 @@ archive/issue_comments_047885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47885",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_047886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47886",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_047887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47887",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_047888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47888",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -290,16 +290,16 @@ I'm a big fan of just removing the `zeta_order` argument -- looking at the code,
 archive/issue_comments_047889.json:
 ```json
 {
-    "body": "Attachment [trac_6018-3.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018-3.patch) by davidloeffler created at 2010-01-20 22:22:43",
+    "body": "Attachment [trac_6018-3.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018-3.patch) by @loefflerd created at 2010-01-20 22:22:43",
     "created_at": "2010-01-20T22:22:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47889",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6018-3.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018-3.patch) by davidloeffler created at 2010-01-20 22:22:43
+Attachment [trac_6018-3.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018-3.patch) by @loefflerd created at 2010-01-20 22:22:43
 
 
 
@@ -313,7 +313,7 @@ archive/issue_comments_047890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47890",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_047891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47891",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_047892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47892",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_047893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47893",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -380,16 +380,16 @@ apply only this patch
 archive/issue_comments_047894.json:
 ```json
 {
-    "body": "Attachment [trac_6018_folded.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018_folded.patch) by was created at 2010-01-20 23:57:21\n\nHey, why, wait, what happens if you create a zeta such that zeta.multiplicative_order() doesn't work?!\n\n```\nsage: a = CDF(CyclotomicField(5).0)\nsage: G = DirichletGroup(11, base_ring=a.parent(), zeta=a, zeta_order=5)\nsage: G\nGroup of Dirichlet characters of modulus 11 over Complex Double Field\nsage: G.0\n[0.309016994375 + 0.951056516295*I]\nsage: G.0(2)\n0.309016994375 + 0.951056516295*I\n```\n\n\nPlease revert getting rid of zeta_order and make that part of another ticket, keeping in mind that you can't exactly do that, since it is important.  The above doctest should be put in that ticket since this problem wouldn't have happened if I had included the above test.",
+    "body": "Attachment [trac_6018_folded.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018_folded.patch) by @williamstein created at 2010-01-20 23:57:21\n\nHey, why, wait, what happens if you create a zeta such that zeta.multiplicative_order() doesn't work?!\n\n```\nsage: a = CDF(CyclotomicField(5).0)\nsage: G = DirichletGroup(11, base_ring=a.parent(), zeta=a, zeta_order=5)\nsage: G\nGroup of Dirichlet characters of modulus 11 over Complex Double Field\nsage: G.0\n[0.309016994375 + 0.951056516295*I]\nsage: G.0(2)\n0.309016994375 + 0.951056516295*I\n```\n\n\nPlease revert getting rid of zeta_order and make that part of another ticket, keeping in mind that you can't exactly do that, since it is important.  The above doctest should be put in that ticket since this problem wouldn't have happened if I had included the above test.",
     "created_at": "2010-01-20T23:57:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47894",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6018_folded.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018_folded.patch) by was created at 2010-01-20 23:57:21
+Attachment [trac_6018_folded.patch](tarball://root/attachments/some-uuid/ticket6018/trac_6018_folded.patch) by @williamstein created at 2010-01-20 23:57:21
 
 Hey, why, wait, what happens if you create a zeta such that zeta.multiplicative_order() doesn't work?!
 
@@ -419,7 +419,7 @@ archive/issue_comments_047895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47895",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -437,7 +437,7 @@ archive/issue_comments_047896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47896",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_047897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47897",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_047898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47898",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -520,7 +520,7 @@ archive/issue_comments_047899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47899",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_047903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47903",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_047904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47904",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -644,7 +644,7 @@ archive/issue_comments_047905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47905",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -687,7 +687,7 @@ archive/issue_comments_047907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47907",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -789,7 +789,7 @@ archive/issue_comments_047912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47912",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -807,7 +807,7 @@ archive/issue_comments_047913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47913",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -825,7 +825,7 @@ archive/issue_comments_047914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47914",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -843,7 +843,7 @@ archive/issue_comments_047915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47915",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -861,7 +861,7 @@ archive/issue_comments_047916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47916",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -879,7 +879,7 @@ archive/issue_comments_047917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47917",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -897,7 +897,7 @@ archive/issue_comments_047918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47918",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -917,7 +917,7 @@ archive/issue_comments_047919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47919",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -935,7 +935,7 @@ archive/issue_comments_047920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6018#issuecomment-47920",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

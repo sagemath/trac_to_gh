@@ -3,7 +3,7 @@
 archive/issues_004725.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is totally wrong!\n\n```\nsage: K.<j,b> = QQ[sqrt(-1), sqrt(2)]\nsage: j.conjugate()\n0\n```\n\n\nMuch better would be either an error message (since the docs for conjugate say it isn't implemented except for cyclotomic and quadratic fields!) or an actual correct answer using a number field embedding.  But giving 0 is just crazy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4725\n\n",
+    "body": "Assignee: @williamstein\n\nThis is totally wrong!\n\n```\nsage: K.<j,b> = QQ[sqrt(-1), sqrt(2)]\nsage: j.conjugate()\n0\n```\n\n\nMuch better would be either an error message (since the docs for conjugate say it isn't implemented except for cyclotomic and quadratic fields!) or an actual correct answer using a number field embedding.  But giving 0 is just crazy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4725\n\n",
     "created_at": "2008-12-06T18:37:26Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004725.json:
     "title": "bug in number field conjugate function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4725",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is totally wrong!
 
@@ -66,7 +66,7 @@ archive/issue_comments_035671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4725#issuecomment-35671",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_035672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4725#issuecomment-35672",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -97,16 +97,16 @@ I can confirm that this is indeed fixed (although the fix has now drifted to lin
 archive/issue_comments_035673.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-21T08:07:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4725#issuecomment-35673",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 

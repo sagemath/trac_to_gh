@@ -3,7 +3,7 @@
 archive/issues_004240.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  georgsweber\n\nRight now the doctest coverage of devel/sage/sage/interfaces/magma.py is a pitiful 17%.  Increase this to 100%.   This will involving adding about 59 doctests and docstrings.  See also #4231, which adds two docstrings/doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4240\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  georgsweber\n\nRight now the doctest coverage of devel/sage/sage/interfaces/magma.py is a pitiful 17%.  Increase this to 100%.   This will involving adding about 59 doctests and docstrings.  See also #4231, which adds two docstrings/doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4240\n\n",
     "created_at": "2008-10-04T03:42:48Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004240.json:
     "title": "magma -- increase doctest coverage of magma.py from current 17% to 100%.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4240",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  georgsweber
 
@@ -39,7 +39,7 @@ archive/issue_comments_030814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30814",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_030815.json:
 ```json
 {
-    "body": "Attachment [trac-4240.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240.patch) by was created at 2008-10-04 05:43:52",
+    "body": "Attachment [trac-4240.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240.patch) by @williamstein created at 2008-10-04 05:43:52",
     "created_at": "2008-10-04T05:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30815",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-4240.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240.patch) by was created at 2008-10-04 05:43:52
+Attachment [trac-4240.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240.patch) by @williamstein created at 2008-10-04 05:43:52
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_030816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30816",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,16 +88,16 @@ coverage up to 69% -- all non underscore methods are now documented.
 archive/issue_comments_030817.json:
 ```json
 {
-    "body": "Attachment [trac-4240-part2.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part2.patch) by was created at 2008-10-11 15:38:29\n\ninsert all needed # optional's",
+    "body": "Attachment [trac-4240-part2.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part2.patch) by @williamstein created at 2008-10-11 15:38:29\n\ninsert all needed # optional's",
     "created_at": "2008-10-11T15:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30817",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-4240-part2.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part2.patch) by was created at 2008-10-11 15:38:29
+Attachment [trac-4240-part2.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part2.patch) by @williamstein created at 2008-10-11 15:38:29
 
 insert all needed # optional's
 
@@ -108,16 +108,16 @@ insert all needed # optional's
 archive/issue_comments_030818.json:
 ```json
 {
-    "body": "Attachment [trac-4240-part3.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part3.patch) by was created at 2008-10-11 15:39:22",
+    "body": "Attachment [trac-4240-part3.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part3.patch) by @williamstein created at 2008-10-11 15:39:22",
     "created_at": "2008-10-11T15:39:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30818",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-4240-part3.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part3.patch) by was created at 2008-10-11 15:39:22
+Attachment [trac-4240-part3.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part3.patch) by @williamstein created at 2008-10-11 15:39:22
 
 
 
@@ -245,7 +245,7 @@ archive/issue_comments_030821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30821",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

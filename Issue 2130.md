@@ -3,7 +3,7 @@
 archive/issues_002130.json:
 ```json
 {
-    "body": "Assignee: malb\n\nGiven a factorization of a polynomial formed by ans.factor(); list(ans.factor()) does not change * symbols to commas, but ignores constants.\n\n\n```\nsage: t = PolynomialRing(QQ,'t',20).gens();\nans =  -t[1]^4*t[10]^3*t[13]*t[12] + t[1]^4*t[10]^2*t[12] + t[1]^2*t[11]*t[10]^2*t[13]*t[12] + t[1]^2*t[10]^2*t[13] - t[1]^2*t[11]*t[10]*t[12] - t[1]^2*t[10] - t[11]*t[10]*t[13] + t[11]; ans;\nfactt = ans.factor(); factt\n\n(-1) * (x0*x3 - 1) * (t1^2*x0 - x1) * (t1^2*x0*x2 - 1)\n```\n\n\n\n``` \nsage: list(factt)\n[(x0*x3 - 1, 1), (t1^2*x0 - x1, 1), (t1^2*x0*x2 - 1, 1)]\n```\n\n\nCan this be corrected, or is there a different command I can use?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2130\n\n",
+    "body": "Assignee: @malb\n\nGiven a factorization of a polynomial formed by ans.factor(); list(ans.factor()) does not change * symbols to commas, but ignores constants.\n\n\n```\nsage: t = PolynomialRing(QQ,'t',20).gens();\nans =  -t[1]^4*t[10]^3*t[13]*t[12] + t[1]^4*t[10]^2*t[12] + t[1]^2*t[11]*t[10]^2*t[13]*t[12] + t[1]^2*t[10]^2*t[13] - t[1]^2*t[11]*t[10]*t[12] - t[1]^2*t[10] - t[11]*t[10]*t[13] + t[11]; ans;\nfactt = ans.factor(); factt\n\n(-1) * (x0*x3 - 1) * (t1^2*x0 - x1) * (t1^2*x0*x2 - 1)\n```\n\n\n\n``` \nsage: list(factt)\n[(x0*x3 - 1, 1), (t1^2*x0 - x1, 1), (t1^2*x0*x2 - 1, 1)]\n```\n\n\nCan this be corrected, or is there a different command I can use?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2130\n\n",
     "created_at": "2008-02-09T20:04:40Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_002130.json:
     "user": "gmoose05"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Given a factorization of a polynomial formed by ans.factor(); list(ans.factor()) does not change * symbols to commas, but ignores constants.
 
@@ -57,7 +57,7 @@ archive/issue_comments_013976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2130#issuecomment-13976",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_013977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2130#issuecomment-13977",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

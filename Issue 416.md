@@ -14,7 +14,7 @@ archive/issues_000416.json:
     "title": "Faster GF(2^n) arithmetic for n >= 16",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/416",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/416
 archive/issue_comments_002051.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2007-10-21T22:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/416#issuecomment-2051",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_002052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/416#issuecomment-2052",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_002053.json:
 ```json
 {
-    "body": "Attachment [gf2e.patch](tarball://root/attachments/some-uuid/ticket416/gf2e.patch) by malb created at 2007-10-25 12:56:02",
+    "body": "Attachment [gf2e.patch](tarball://root/attachments/some-uuid/ticket416/gf2e.patch) by @malb created at 2007-10-25 12:56:02",
     "created_at": "2007-10-25T12:56:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/416#issuecomment-2053",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [gf2e.patch](tarball://root/attachments/some-uuid/ticket416/gf2e.patch) by malb created at 2007-10-25 12:56:02
+Attachment [gf2e.patch](tarball://root/attachments/some-uuid/ticket416/gf2e.patch) by @malb created at 2007-10-25 12:56:02
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_002054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/416#issuecomment-2054",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001391.json:
 ```json
 {
-    "body": "Assignee: malb\n\nBehold this behavior:\n\n\n```\nsage: R.<a,b,c,d> = QQ[]\nsage: f =  (-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nsage: f.factor()\n(-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nsage: F = f.factor()\nsage: F[0][0]\n-1\nsage: F.unit_part ()\n1\n```\n\n\nHowever it should be that F.unit_part() is -1 and F[0][0] is a-d.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1391\n\n",
+    "body": "Assignee: @malb\n\nBehold this behavior:\n\n\n```\nsage: R.<a,b,c,d> = QQ[]\nsage: f =  (-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nsage: f.factor()\n(-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nsage: F = f.factor()\nsage: F[0][0]\n-1\nsage: F.unit_part ()\n1\n```\n\n\nHowever it should be that F.unit_part() is -1 and F[0][0] is a-d.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1391\n\n",
     "created_at": "2007-12-04T04:38:52Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001391.json:
     "title": "bug in unit part of factorizations of multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1391",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Behold this behavior:
 
@@ -70,16 +70,16 @@ Michael
 archive/issue_comments_008949.json:
 ```json
 {
-    "body": "Attachment [trac_1391.patch](tarball://root/attachments/some-uuid/ticket1391/trac_1391.patch) by malb created at 2008-01-16 17:09:12",
+    "body": "Attachment [trac_1391.patch](tarball://root/attachments/some-uuid/ticket1391/trac_1391.patch) by @malb created at 2008-01-16 17:09:12",
     "created_at": "2008-01-16T17:09:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1391#issuecomment-8949",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1391.patch](tarball://root/attachments/some-uuid/ticket1391/trac_1391.patch) by malb created at 2008-01-16 17:09:12
+Attachment [trac_1391.patch](tarball://root/attachments/some-uuid/ticket1391/trac_1391.patch) by @malb created at 2008-01-16 17:09:12
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_008950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1391#issuecomment-8950",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_008951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1391#issuecomment-8951",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -154,16 +154,16 @@ Michael
 archive/issue_comments_008953.json:
 ```json
 {
-    "body": "Attachment [trac-1391-apply_after_patch_rej_from_other_patch.patch](tarball://root/attachments/some-uuid/ticket1391/trac-1391-apply_after_patch_rej_from_other_patch.patch) by was created at 2008-01-20 02:15:35",
+    "body": "Attachment [trac-1391-apply_after_patch_rej_from_other_patch.patch](tarball://root/attachments/some-uuid/ticket1391/trac-1391-apply_after_patch_rej_from_other_patch.patch) by @williamstein created at 2008-01-20 02:15:35",
     "created_at": "2008-01-20T02:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1391#issuecomment-8953",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1391-apply_after_patch_rej_from_other_patch.patch](tarball://root/attachments/some-uuid/ticket1391/trac-1391-apply_after_patch_rej_from_other_patch.patch) by was created at 2008-01-20 02:15:35
+Attachment [trac-1391-apply_after_patch_rej_from_other_patch.patch](tarball://root/attachments/some-uuid/ticket1391/trac-1391-apply_after_patch_rej_from_other_patch.patch) by @williamstein created at 2008-01-20 02:15:35
 
 
 

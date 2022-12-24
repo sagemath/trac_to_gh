@@ -3,7 +3,7 @@
 archive/issues_004540.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: kschur, symmetrica, segfault\n\nExample:\n\n\n```\nsage: ks3 = kSchurFunctions(QQ,3,1)  # k-Schur functions without a 't' variable\nsage: s = SFASchur(base_ring())\nsage: ks3(s([3]))\n\nException exceptions.TypeError: 'cannot convert a (= 1) to OP' in 'sage.libs.symmetrica.symmetrica._op_schur_general_dict' ignored\nfunction: mult(1) \npython: mult(1): Unknown error 3052408646\n```\n\n\nI don't know if the definition of ks3 above was ever intended to be supported.  I just tried it because I wanted k-Schur functions without a 't' and it seemed the natural thing to do.  Conversions the other way (i.e., s(ks3([3])) ) do seem to work.  And, whether it's intended to be supported or not, segfaults are bad.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4540\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: kschur, symmetrica, segfault\n\nExample:\n\n\n```\nsage: ks3 = kSchurFunctions(QQ,3,1)  # k-Schur functions without a 't' variable\nsage: s = SFASchur(base_ring())\nsage: ks3(s([3]))\n\nException exceptions.TypeError: 'cannot convert a (= 1) to OP' in 'sage.libs.symmetrica.symmetrica._op_schur_general_dict' ignored\nfunction: mult(1) \npython: mult(1): Unknown error 3052408646\n```\n\n\nI don't know if the definition of ks3 above was ever intended to be supported.  I just tried it because I wanted k-Schur functions without a 't' and it seemed the natural thing to do.  Conversions the other way (i.e., s(ks3([3])) ) do seem to work.  And, whether it's intended to be supported or not, segfaults are bad.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4540\n\n",
     "created_at": "2008-11-17T19:01:51Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_004540.json:
     "title": "Symmetrica segfault converting Schur functions to k-Schurs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4540",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4540
 archive/issue_comments_034010.json:
 ```json
 {
-    "body": "Attachment [4540.patch](tarball://root/attachments/some-uuid/ticket4540/4540.patch) by jbandlow created at 2008-11-18 04:03:36",
+    "body": "Attachment [4540.patch](tarball://root/attachments/some-uuid/ticket4540/4540.patch) by @jbandlow created at 2008-11-18 04:03:36",
     "created_at": "2008-11-18T04:03:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4540#issuecomment-34010",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [4540.patch](tarball://root/attachments/some-uuid/ticket4540/4540.patch) by jbandlow created at 2008-11-18 04:03:36
+Attachment [4540.patch](tarball://root/attachments/some-uuid/ticket4540/4540.patch) by @jbandlow created at 2008-11-18 04:03:36
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_034013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4540#issuecomment-34013",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_034014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4540#issuecomment-34014",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007461.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nI have witnessed this on many 32-bit linux machines:\n\n```\n[wstein@flavius sage-4.2.1.rc0]$ ./sage -t --long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\nsage -t --long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n\n[[times out after 1800 seconds]]\n\n^CKeyboardInterrupt -- interrupted after 1386.7687881 seconds!\n         [1387.2 s]\n \n```\n\n\nDoing the same with --verbose dosn't necessarily time out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7461\n\n",
+    "body": "Assignee: @mwhansen\n\nI have witnessed this on many 32-bit linux machines:\n\n```\n[wstein@flavius sage-4.2.1.rc0]$ ./sage -t --long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\nsage -t --long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n\n[[times out after 1800 seconds]]\n\n^CKeyboardInterrupt -- interrupted after 1386.7687881 seconds!\n         [1387.2 s]\n \n```\n\n\nDoing the same with --verbose dosn't necessarily time out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7461\n\n",
     "created_at": "2009-11-14T18:38:48Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_007461.json:
     "title": "partition_refinement.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7461",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 I have witnessed this on many 32-bit linux machines:
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7461
 archive/issue_comments_062841.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2009-11-14T18:39:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7461#issuecomment-62841",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_062842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7461#issuecomment-62842",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_062843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7461#issuecomment-62843",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_062844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7461#issuecomment-62844",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_062845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7461#issuecomment-62845",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_062846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7461#issuecomment-62846",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_062847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7461#issuecomment-62847",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_062848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7461#issuecomment-62848",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -249,16 +249,16 @@ Also, I have fixed the doctests to ensure that they are truly random, so that al
 archive/issue_comments_062849.json:
 ```json
 {
-    "body": "Attachment [trac_7461.patch](tarball://root/attachments/some-uuid/ticket7461/trac_7461.patch) by rlm created at 2009-11-28 06:42:42",
+    "body": "Attachment [trac_7461.patch](tarball://root/attachments/some-uuid/ticket7461/trac_7461.patch) by @rlmill created at 2009-11-28 06:42:42",
     "created_at": "2009-11-28T06:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7461#issuecomment-62849",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7461.patch](tarball://root/attachments/some-uuid/ticket7461/trac_7461.patch) by rlm created at 2009-11-28 06:42:42
+Attachment [trac_7461.patch](tarball://root/attachments/some-uuid/ticket7461/trac_7461.patch) by @rlmill created at 2009-11-28 06:42:42
 
 
 
@@ -272,7 +272,7 @@ archive/issue_comments_062850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7461#issuecomment-62850",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_062851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7461#issuecomment-62851",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

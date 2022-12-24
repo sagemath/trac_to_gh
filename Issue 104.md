@@ -3,7 +3,7 @@
 archive/issues_000104.json:
 ```json
 {
-    "body": "Assignee: was\n\nI've tried this on both MacIntel and PowerPC Macs (10.4.8).  I get this from SAGE:\n\n\n```\n....\nSuccessfully installed moin-1.5.4.p0\n<justin@zippo-w:sage-1.4> sage\n--------------------------------------------------------\n--------------------------------------------------------\n| SAGE Version 1.4, Build Date: 2006-10-01             |\n| Distributed under the GNU General Public License V2. |\n\nsage: wiki() \nServing on localhost:9000\nlocalhost - - [01/Oct/2006 23:14:42] \"GET / HTTP/1.1\" 500 -\n[Sun Oct  1 23:14:42 2006] UnboundLocalError: local variable 'File' referenced before assignment\n\nlocalhost - - [01/Oct/2006 23:14:43] \"GET /favicon.ico HTTP/1.1\" 200 -\nlocalhost - - [01/Oct/2006 23:14:53] \"GET / HTTP/1.1\" 500 -\n[Sun Oct  1 23:14:53 2006] UnboundLocalError: local variable 'File' referenced before assignment\n```\n\nThe first entry is from my first contact with the wiki (using http://localhost:9000).  If I refresh, I get the second (from the favicon line).\n\nThe first time I contact the wiki, I get a blank page (it's blank when I \"view source\" as well).  If I refresh the page, I get the crud I'll try to attach to this ticket.\n\nOnce I use this the first time, all subsequent attempts, even with a fresh copy of SAGE, give me the crud I'm going to try to attach here.  It's only the very first attempt where I see a totally blank page.\n\nThis is with SAGE 1.4, but this same behavior has been with me since the MSRI workshop.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/104\n\n",
+    "body": "Assignee: @williamstein\n\nI've tried this on both MacIntel and PowerPC Macs (10.4.8).  I get this from SAGE:\n\n\n```\n....\nSuccessfully installed moin-1.5.4.p0\n<justin@zippo-w:sage-1.4> sage\n--------------------------------------------------------\n--------------------------------------------------------\n| SAGE Version 1.4, Build Date: 2006-10-01             |\n| Distributed under the GNU General Public License V2. |\n\nsage: wiki() \nServing on localhost:9000\nlocalhost - - [01/Oct/2006 23:14:42] \"GET / HTTP/1.1\" 500 -\n[Sun Oct  1 23:14:42 2006] UnboundLocalError: local variable 'File' referenced before assignment\n\nlocalhost - - [01/Oct/2006 23:14:43] \"GET /favicon.ico HTTP/1.1\" 200 -\nlocalhost - - [01/Oct/2006 23:14:53] \"GET / HTTP/1.1\" 500 -\n[Sun Oct  1 23:14:53 2006] UnboundLocalError: local variable 'File' referenced before assignment\n```\n\nThe first entry is from my first contact with the wiki (using http://localhost:9000).  If I refresh, I get the second (from the favicon line).\n\nThe first time I contact the wiki, I get a blank page (it's blank when I \"view source\" as well).  If I refresh the page, I get the crud I'll try to attach to this ticket.\n\nOnce I use this the first time, all subsequent attempts, even with a fresh copy of SAGE, give me the crud I'm going to try to attach here.  It's only the very first attempt where I see a totally blank page.\n\nThis is with SAGE 1.4, but this same behavior has been with me since the MSRI workshop.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/104\n\n",
     "created_at": "2006-10-02T06:34:20Z",
     "labels": [
         "algebraic geometry",
@@ -16,7 +16,7 @@ archive/issues_000104.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I've tried this on both MacIntel and PowerPC Macs (10.4.8).  I get this from SAGE:
 
@@ -120,7 +120,7 @@ archive/issue_comments_000489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/104#issuecomment-489",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_000490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/104#issuecomment-490",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_000491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/104#issuecomment-491",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_000492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/104#issuecomment-492",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

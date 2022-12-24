@@ -63,16 +63,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2465
 archive/issue_comments_016706.json:
 ```json
 {
-    "body": "Changing assignee from failure to was.",
+    "body": "Changing assignee from failure to @williamstein.",
     "created_at": "2008-03-11T01:44:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2465",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2465#issuecomment-16706",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from failure to was.
+Changing assignee from failure to @williamstein.
 
 
 
@@ -81,16 +81,16 @@ Changing assignee from failure to was.
 archive/issue_comments_016707.json:
 ```json
 {
-    "body": "Attachment [sage-2465.patch](tarball://root/attachments/some-uuid/ticket2465/sage-2465.patch) by was created at 2008-03-11 02:02:49",
+    "body": "Attachment [sage-2465.patch](tarball://root/attachments/some-uuid/ticket2465/sage-2465.patch) by @williamstein created at 2008-03-11 02:02:49",
     "created_at": "2008-03-11T02:02:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2465",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2465#issuecomment-16707",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2465.patch](tarball://root/attachments/some-uuid/ticket2465/sage-2465.patch) by was created at 2008-03-11 02:02:49
+Attachment [sage-2465.patch](tarball://root/attachments/some-uuid/ticket2465/sage-2465.patch) by @williamstein created at 2008-03-11 02:02:49
 
 
 
@@ -104,7 +104,7 @@ archive/issue_comments_016708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2465",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2465#issuecomment-16708",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

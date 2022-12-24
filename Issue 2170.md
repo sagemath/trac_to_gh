@@ -14,7 +14,7 @@ archive/issues_002170.json:
     "title": "sage's integer.pyx digits function sucks in the base 10 case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2170",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -57,7 +57,7 @@ archive/issue_comments_014236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2170#issuecomment-14236",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -79,16 +79,16 @@ Wall time: 0.01
 archive/issue_comments_014237.json:
 ```json
 {
-    "body": "Attachment [8312.patch](tarball://root/attachments/some-uuid/ticket2170/8312.patch) by zimmerma created at 2008-02-15 13:56:15",
+    "body": "Attachment [8312.patch](tarball://root/attachments/some-uuid/ticket2170/8312.patch) by @zimmermann6 created at 2008-02-15 13:56:15",
     "created_at": "2008-02-15T13:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2170#issuecomment-14237",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [8312.patch](tarball://root/attachments/some-uuid/ticket2170/8312.patch) by zimmerma created at 2008-02-15 13:56:15
+Attachment [8312.patch](tarball://root/attachments/some-uuid/ticket2170/8312.patch) by @zimmermann6 created at 2008-02-15 13:56:15
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_014238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2170#issuecomment-14238",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_014239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2170#issuecomment-14239",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -180,16 +180,16 @@ It certainly needs to be fixed to handle the base > 62 case, and this patch chan
 archive/issue_comments_014240.json:
 ```json
 {
-    "body": "Attachment [8312.2.patch](tarball://root/attachments/some-uuid/ticket2170/8312.2.patch) by zimmerma created at 2008-02-25 14:18:47\n\nAttached is a revised patch, fixing the issues reported by the reviewers (whom we thank):\n\n```\nsage: a = 9939082340\nsage: a.digits(512)\n[100, 302, 26, 74]\nsage: a.digits(10)\n[0, 4, 3, 2, 8, 0, 9, 3, 9, 9]\nsage: a = 3^100000\nsage: time w = a.digits(base=10)\nCPU times: user 0.12 s, sys: 0.00 s, total: 0.12 s\nWall time: 0.11\nsage: w[:10]\n[1, 0, 0, 0, 0, 0, 2, 2, 5, 5]\n```\n\nWe also made the change suggested by Robert (in Integer.str() too).\nThe new digits() function is faster for 10 <= base <= 62, but not as fast as in the 1st (wrong)\npatch; the bottleneck seems to be the map(make_integer, l) call.",
+    "body": "Attachment [8312.2.patch](tarball://root/attachments/some-uuid/ticket2170/8312.2.patch) by @zimmermann6 created at 2008-02-25 14:18:47\n\nAttached is a revised patch, fixing the issues reported by the reviewers (whom we thank):\n\n```\nsage: a = 9939082340\nsage: a.digits(512)\n[100, 302, 26, 74]\nsage: a.digits(10)\n[0, 4, 3, 2, 8, 0, 9, 3, 9, 9]\nsage: a = 3^100000\nsage: time w = a.digits(base=10)\nCPU times: user 0.12 s, sys: 0.00 s, total: 0.12 s\nWall time: 0.11\nsage: w[:10]\n[1, 0, 0, 0, 0, 0, 2, 2, 5, 5]\n```\n\nWe also made the change suggested by Robert (in Integer.str() too).\nThe new digits() function is faster for 10 <= base <= 62, but not as fast as in the 1st (wrong)\npatch; the bottleneck seems to be the map(make_integer, l) call.",
     "created_at": "2008-02-25T14:18:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2170#issuecomment-14240",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [8312.2.patch](tarball://root/attachments/some-uuid/ticket2170/8312.2.patch) by zimmerma created at 2008-02-25 14:18:47
+Attachment [8312.2.patch](tarball://root/attachments/some-uuid/ticket2170/8312.2.patch) by @zimmermann6 created at 2008-02-25 14:18:47
 
 Attached is a revised patch, fixing the issues reported by the reviewers (whom we thank):
 
@@ -223,7 +223,7 @@ archive/issue_comments_014241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2170#issuecomment-14241",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -238,16 +238,16 @@ This patch seems to be identical to the original patch.
 archive/issue_comments_014242.json:
 ```json
 {
-    "body": "Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket2170/8683.patch) by zimmerma created at 2008-02-25 16:32:56\n\n> This patch seems to be identical to the original patch.\n\nSorry for that. The new one (8683.patch) should be the correct one.",
+    "body": "Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket2170/8683.patch) by @zimmermann6 created at 2008-02-25 16:32:56\n\n> This patch seems to be identical to the original patch.\n\nSorry for that. The new one (8683.patch) should be the correct one.",
     "created_at": "2008-02-25T16:32:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2170#issuecomment-14242",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket2170/8683.patch) by zimmerma created at 2008-02-25 16:32:56
+Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket2170/8683.patch) by @zimmermann6 created at 2008-02-25 16:32:56
 
 > This patch seems to be identical to the original patch.
 

@@ -14,7 +14,7 @@ archive/issues_002703.json:
     "title": "make _fast_float_ work on inequality testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2703",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -59,7 +59,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2703
 archive/issue_comments_018643.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2008-03-28T18:06:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2703",
     "type": "issue_comment",
@@ -68,7 +68,7 @@ archive/issue_comments_018643.json:
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_018645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2703",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2703#issuecomment-18645",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008484.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8484\n\n",
+    "body": "Assignee: @aghitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8484\n\n",
     "created_at": "2010-03-10T02:19:10Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008484.json:
     "title": "incremental improvements to prove_BSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8484",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_076458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8484#issuecomment-76458",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_076459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8484#issuecomment-76459",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing component from algebra to elliptic curves.
 archive/issue_comments_076460.json:
 ```json
 {
-    "body": "Attachment [trac_8484.patch](tarball://root/attachments/some-uuid/ticket8484/trac_8484.patch) by rlm created at 2010-03-11 01:17:43",
+    "body": "Attachment [trac_8484.patch](tarball://root/attachments/some-uuid/ticket8484/trac_8484.patch) by @rlmill created at 2010-03-11 01:17:43",
     "created_at": "2010-03-11T01:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8484#issuecomment-76460",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8484.patch](tarball://root/attachments/some-uuid/ticket8484/trac_8484.patch) by rlm created at 2010-03-11 01:17:43
+Attachment [trac_8484.patch](tarball://root/attachments/some-uuid/ticket8484/trac_8484.patch) by @rlmill created at 2010-03-11 01:17:43
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_076461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8484#issuecomment-76461",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_076462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8484#issuecomment-76462",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -133,16 +133,16 @@ That was entirely for my own convenience in doing my research. I didn't want to 
 archive/issue_comments_076463.json:
 ```json
 {
-    "body": "Attachment [trac_8484-wo-src.patch](tarball://root/attachments/some-uuid/ticket8484/trac_8484-wo-src.patch) by rlm created at 2010-03-13 19:19:59\n\nSame as other patch, minus small_rank_curves function",
+    "body": "Attachment [trac_8484-wo-src.patch](tarball://root/attachments/some-uuid/ticket8484/trac_8484-wo-src.patch) by @rlmill created at 2010-03-13 19:19:59\n\nSame as other patch, minus small_rank_curves function",
     "created_at": "2010-03-13T19:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8484#issuecomment-76463",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8484-wo-src.patch](tarball://root/attachments/some-uuid/ticket8484/trac_8484-wo-src.patch) by rlm created at 2010-03-13 19:19:59
+Attachment [trac_8484-wo-src.patch](tarball://root/attachments/some-uuid/ticket8484/trac_8484-wo-src.patch) by @rlmill created at 2010-03-13 19:19:59
 
 Same as other patch, minus small_rank_curves function
 
@@ -158,7 +158,7 @@ archive/issue_comments_076464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8484#issuecomment-76464",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_076465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8484#issuecomment-76465",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_076466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8484#issuecomment-76466",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_076467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8484#issuecomment-76467",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_076468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8484#issuecomment-76468",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

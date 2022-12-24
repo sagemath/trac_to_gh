@@ -3,7 +3,7 @@
 archive/issues_004332.json:
 ```json
 {
-    "body": "Assignee: ddrake\n\nCC:  jason\n\nThe docstring for notebook() could use a bit of improvement. In particular, the `directory` option should be clearer. I also think we should *not* say \"do a web search for more details\"; if the information is too much for the docstring, we should make a page on the wiki and point users to that.\n\nAlso, given the recent forkbomb on sage.math, the `-u` flag for ulimit should be documented.\n\nI plan to work on this during this week's Bug Day.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4332\n\n",
+    "body": "Assignee: @dandrake\n\nCC:  @jasongrout\n\nThe docstring for notebook() could use a bit of improvement. In particular, the `directory` option should be clearer. I also think we should *not* say \"do a web search for more details\"; if the information is too much for the docstring, we should make a page on the wiki and point users to that.\n\nAlso, given the recent forkbomb on sage.math, the `-u` flag for ulimit should be documented.\n\nI plan to work on this during this week's Bug Day.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4332\n\n",
     "created_at": "2008-10-21T00:28:35Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_004332.json:
     "title": "notebook() docstring needs improvement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4332",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: ddrake
+Assignee: @dandrake
 
-CC:  jason
+CC:  @jasongrout
 
 The docstring for notebook() could use a bit of improvement. In particular, the `directory` option should be clearer. I also think we should *not* say "do a web search for more details"; if the information is too much for the docstring, we should make a page on the wiki and point users to that.
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4332
 archive/issue_comments_031767.json:
 ```json
 {
-    "body": "Attachment [trac4332.patch](tarball://root/attachments/some-uuid/ticket4332/trac4332.patch) by ddrake created at 2008-10-24 02:50:21\n\nPatch attached. A lot of it is reformatting and typos, but I also added a reference to a new page on the wiki: http://wiki.sagemath.org/StartingTheNotebook. The installation guide only has a page on running a publically-accessible notebook server (http://sagemath.org/doc/inst/node10.html) and nothing on other single-user cases.\n\nAlso, that page on the installation guide is outdated; someone should go through and fix it up, and perhaps add something on using virtual machines, which these days seems to be the way to go; I have a start at that at http://wiki.sagemath.org/DanDrake/JustEnoughSageServer.",
+    "body": "Attachment [trac4332.patch](tarball://root/attachments/some-uuid/ticket4332/trac4332.patch) by @dandrake created at 2008-10-24 02:50:21\n\nPatch attached. A lot of it is reformatting and typos, but I also added a reference to a new page on the wiki: http://wiki.sagemath.org/StartingTheNotebook. The installation guide only has a page on running a publically-accessible notebook server (http://sagemath.org/doc/inst/node10.html) and nothing on other single-user cases.\n\nAlso, that page on the installation guide is outdated; someone should go through and fix it up, and perhaps add something on using virtual machines, which these days seems to be the way to go; I have a start at that at http://wiki.sagemath.org/DanDrake/JustEnoughSageServer.",
     "created_at": "2008-10-24T02:50:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4332#issuecomment-31767",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac4332.patch](tarball://root/attachments/some-uuid/ticket4332/trac4332.patch) by ddrake created at 2008-10-24 02:50:21
+Attachment [trac4332.patch](tarball://root/attachments/some-uuid/ticket4332/trac4332.patch) by @dandrake created at 2008-10-24 02:50:21
 
 Patch attached. A lot of it is reformatting and typos, but I also added a reference to a new page on the wiki: http://wiki.sagemath.org/StartingTheNotebook. The installation guide only has a page on running a publically-accessible notebook server (http://sagemath.org/doc/inst/node10.html) and nothing on other single-user cases.
 
@@ -65,7 +65,7 @@ archive/issue_comments_031768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4332#issuecomment-31768",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_031771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4332#issuecomment-31771",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

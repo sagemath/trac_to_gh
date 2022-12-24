@@ -13,7 +13,7 @@ archive/issues_006083.json:
     "title": "speedup integer division",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6083",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -31,16 +31,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6083
 archive/issue_comments_048410.json:
 ```json
 {
-    "body": "Attachment [6083-integer-div.patch](tarball://root/attachments/some-uuid/ticket6083/6083-integer-div.patch) by robertwb created at 2009-05-20 03:53:45",
+    "body": "Attachment [6083-integer-div.patch](tarball://root/attachments/some-uuid/ticket6083/6083-integer-div.patch) by @robertwb created at 2009-05-20 03:53:45",
     "created_at": "2009-05-20T03:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48410",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6083-integer-div.patch](tarball://root/attachments/some-uuid/ticket6083/6083-integer-div.patch) by robertwb created at 2009-05-20 03:53:45
+Attachment [6083-integer-div.patch](tarball://root/attachments/some-uuid/ticket6083/6083-integer-div.patch) by @robertwb created at 2009-05-20 03:53:45
 
 
 
@@ -54,7 +54,7 @@ archive/issue_comments_048411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48411",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_048412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48412",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_048413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48413",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_048414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48414",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_048415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48415",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -182,16 +182,16 @@ Tests failed!
 archive/issue_comments_048416.json:
 ```json
 {
-    "body": "Attachment [trac-6083-referee.patch](tarball://root/attachments/some-uuid/ticket6083/trac-6083-referee.patch) by craigcitro created at 2009-06-22 07:45:17\n\nIt turns out the segfault was coming from an infinite loop in Cython. The issue was that after the first patch above, doing `Integer % IntegerMod_gmp` would call into the `__mod__` on `IntegerMod_gmp`, which tried to check if something was zero by doing something of the form `Integer % IntegerMod_gmp` ... and repeat ad infinitum. \n\nSo the new patch adds a small snippet to fix this, and a doctest.",
+    "body": "Attachment [trac-6083-referee.patch](tarball://root/attachments/some-uuid/ticket6083/trac-6083-referee.patch) by @craigcitro created at 2009-06-22 07:45:17\n\nIt turns out the segfault was coming from an infinite loop in Cython. The issue was that after the first patch above, doing `Integer % IntegerMod_gmp` would call into the `__mod__` on `IntegerMod_gmp`, which tried to check if something was zero by doing something of the form `Integer % IntegerMod_gmp` ... and repeat ad infinitum. \n\nSo the new patch adds a small snippet to fix this, and a doctest.",
     "created_at": "2009-06-22T07:45:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48416",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-6083-referee.patch](tarball://root/attachments/some-uuid/ticket6083/trac-6083-referee.patch) by craigcitro created at 2009-06-22 07:45:17
+Attachment [trac-6083-referee.patch](tarball://root/attachments/some-uuid/ticket6083/trac-6083-referee.patch) by @craigcitro created at 2009-06-22 07:45:17
 
 It turns out the segfault was coming from an infinite loop in Cython. The issue was that after the first patch above, doing `Integer % IntegerMod_gmp` would call into the `__mod__` on `IntegerMod_gmp`, which tried to check if something was zero by doing something of the form `Integer % IntegerMod_gmp` ... and repeat ad infinitum. 
 
@@ -209,7 +209,7 @@ archive/issue_comments_048417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48417",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_048418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48418",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

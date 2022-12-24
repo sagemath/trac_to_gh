@@ -3,7 +3,7 @@
 archive/issues_005731.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  cremona\n\n2009.04.08: Changes between NTL 5.4.2 and 5.5 from http://www.shoup.net/ntl/doc/tour-changes.html\n\n* Added the ability to generate a shared library (with help from Tim Abbott). Details.\n* Fixed some standardization issues (with help from Tim Abbot): default location of installed documentation files now conforms to standards; use of EOF now conforms to standards.\nAdded a callback mechanism to NTL's error reporting function. See ErrorCallback in tools.txt.\n* Added support for the gf2x library for speeding up arithmetic in GF2X (with help from Emmanuel Thom\u00e9).\n  * In conjuction with the above, I also changed the GF2X so that it works better with very large polynomials: large blocks of memory are released, recursive HalfGCD algorithms are used for large polynomials.\n* Fixed a bug in void TraceMod(zz_p& x, const zz_pX& a, const zz_pXModulus& F) (reported by Luca De Feo).\n* Fixed a performance issue in various versions of SetCoeff (reported by Luca De Feo).\n* Fixed the declaration of mat_zz_p transpose(const mat_zz_p& a) (reported by Benoit Lacelle).\n\nSo we should be able to drop a couple custom patches.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5731\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @JohnCremona\n\n2009.04.08: Changes between NTL 5.4.2 and 5.5 from http://www.shoup.net/ntl/doc/tour-changes.html\n\n* Added the ability to generate a shared library (with help from Tim Abbott). Details.\n* Fixed some standardization issues (with help from Tim Abbot): default location of installed documentation files now conforms to standards; use of EOF now conforms to standards.\nAdded a callback mechanism to NTL's error reporting function. See ErrorCallback in tools.txt.\n* Added support for the gf2x library for speeding up arithmetic in GF2X (with help from Emmanuel Thom\u00e9).\n  * In conjuction with the above, I also changed the GF2X so that it works better with very large polynomials: large blocks of memory are released, recursive HalfGCD algorithms are used for large polynomials.\n* Fixed a bug in void TraceMod(zz_p& x, const zz_pX& a, const zz_pXModulus& F) (reported by Luca De Feo).\n* Fixed a performance issue in various versions of SetCoeff (reported by Luca De Feo).\n* Fixed the declaration of mat_zz_p transpose(const mat_zz_p& a) (reported by Benoit Lacelle).\n\nSo we should be able to drop a couple custom patches.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5731\n\n",
     "created_at": "2009-04-10T08:11:36Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_005731.json:
 ```
 Assignee: mabshoff
 
-CC:  cremona
+CC:  @JohnCremona
 
 2009.04.08: Changes between NTL 5.4.2 and 5.5 from http://www.shoup.net/ntl/doc/tour-changes.html
 
@@ -72,7 +72,7 @@ archive/issue_comments_044775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44775",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_044776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44776",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_044777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44777",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_044780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44780",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_044781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44781",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_044782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44782",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_044783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44783",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_044784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44784",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_044785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44785",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_044786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44786",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_044787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44787",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_044788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44788",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_044789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44789",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_044790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44790",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_044791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44791",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_044792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5731#issuecomment-44792",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

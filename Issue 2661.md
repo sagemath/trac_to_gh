@@ -3,7 +3,7 @@
 archive/issues_002661.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis happens because the interval remains centered around an integer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2661\n\n",
+    "body": "Assignee: @williamstein\n\nThis happens because the interval remains centered around an integer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2661\n\n",
     "created_at": "2008-03-24T20:13:01Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002661.json:
     "title": "sage cannot compute floor / ceil of log(8)/log(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2661",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This happens because the interval remains centered around an integer.
 
@@ -37,7 +37,7 @@ archive/issue_comments_018319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2661#issuecomment-18319",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -50,16 +50,16 @@ Some concerns about this were raised on IRC.  It seems that the real problem is 
 archive/issue_comments_018320.json:
 ```json
 {
-    "body": "Attachment [2661.patch](tarball://root/attachments/some-uuid/ticket2661/2661.patch) by jason created at 2008-03-24 21:26:49\n\nlooks good to me.",
+    "body": "Attachment [2661.patch](tarball://root/attachments/some-uuid/ticket2661/2661.patch) by @jasongrout created at 2008-03-24 21:26:49\n\nlooks good to me.",
     "created_at": "2008-03-24T21:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2661#issuecomment-18320",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [2661.patch](tarball://root/attachments/some-uuid/ticket2661/2661.patch) by jason created at 2008-03-24 21:26:49
+Attachment [2661.patch](tarball://root/attachments/some-uuid/ticket2661/2661.patch) by @jasongrout created at 2008-03-24 21:26:49
 
 looks good to me.
 

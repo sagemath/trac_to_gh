@@ -3,7 +3,7 @@
 archive/issues_002217.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  abrochard\n\n\n```\nI agree that this would be a useful funtion to have.  I would call it\nsplitting_field() with a description similar to that of root_field() \n\n...\n\nIn the meantim you should be able to work with what is available as follows:\n\nsage: QQx.<x>=QQ[]\nsage: f=(x^2-2)*(x^2-3)\nsage: F=NumberField([p for p,n in f.factor()],'a')\nsage: F2=F.absolute_field('b')\nsage: F2.structure()\n\n(Isomorphism from Number Field in b with defining polynomial x^4 -\n10*x^2 + 1 to Number Field in a0 with defining polynomial x^2 - 3 over\nits base field,\n Isomorphism from Number Field in a0 with defining polynomial x^2 - 3\nover its base field to Number Field in b with defining polynomial x^4\n- 10*x^2 + 1)\n\nHere F is first defined as a relative extension, with generators a0,a1\nsatisfying the equations:\n\nsage: a0,a1=F.gens()\nsage: a0^2, a1^2\n(3, 2)\n\nthen F2 is the associated absolute field, with F2.structure() giving\nmaps from each of these into the other.\n\nsage: F2toF, FtoF2=F2.structure()\nsage: FtoF2(a0)\n-1/2*b^3 + 11/2*b\nsage: FtoF2(a0).minpoly()\nx^2 - 3\nsage: FtoF2(a1)\n-1/2*b^3 + 9/2*b\nsage: FtoF2(a1).minpoly()\nx^2 - 2\n\n\n```\n\n\nSee the thread at http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9\n\nIssue created by migration from https://trac.sagemath.org/ticket/2217\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @abrochard\n\n\n```\nI agree that this would be a useful funtion to have.  I would call it\nsplitting_field() with a description similar to that of root_field() \n\n...\n\nIn the meantim you should be able to work with what is available as follows:\n\nsage: QQx.<x>=QQ[]\nsage: f=(x^2-2)*(x^2-3)\nsage: F=NumberField([p for p,n in f.factor()],'a')\nsage: F2=F.absolute_field('b')\nsage: F2.structure()\n\n(Isomorphism from Number Field in b with defining polynomial x^4 -\n10*x^2 + 1 to Number Field in a0 with defining polynomial x^2 - 3 over\nits base field,\n Isomorphism from Number Field in a0 with defining polynomial x^2 - 3\nover its base field to Number Field in b with defining polynomial x^4\n- 10*x^2 + 1)\n\nHere F is first defined as a relative extension, with generators a0,a1\nsatisfying the equations:\n\nsage: a0,a1=F.gens()\nsage: a0^2, a1^2\n(3, 2)\n\nthen F2 is the associated absolute field, with F2.structure() giving\nmaps from each of these into the other.\n\nsage: F2toF, FtoF2=F2.structure()\nsage: FtoF2(a0)\n-1/2*b^3 + 11/2*b\nsage: FtoF2(a0).minpoly()\nx^2 - 3\nsage: FtoF2(a1)\n-1/2*b^3 + 9/2*b\nsage: FtoF2(a1).minpoly()\nx^2 - 2\n\n\n```\n\n\nSee the thread at http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9\n\nIssue created by migration from https://trac.sagemath.org/ticket/2217\n\n",
     "created_at": "2008-02-20T03:50:21Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_002217.json:
     "title": "splitting field function for number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2217",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  abrochard
+CC:  @abrochard
 
 
 ```
@@ -105,7 +105,7 @@ archive/issue_comments_014660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14660",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -118,16 +118,16 @@ Changing component from number theory to number fields.
 archive/issue_comments_014661.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:58:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14661",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_014662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14662",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -154,16 +154,16 @@ Add splitting_field() function
 archive/issue_comments_014663.json:
 ```json
 {
-    "body": "Attachment [2217_splitting_field.patch](tarball://root/attachments/some-uuid/ticket2217/2217_splitting_field.patch) by abrochard created at 2012-08-18 17:52:00",
+    "body": "Attachment [2217_splitting_field.patch](tarball://root/attachments/some-uuid/ticket2217/2217_splitting_field.patch) by @abrochard created at 2012-08-18 17:52:00",
     "created_at": "2012-08-18T17:52:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14663",
-    "user": "abrochard"
+    "user": "@abrochard"
 }
 ```
 
-Attachment [2217_splitting_field.patch](tarball://root/attachments/some-uuid/ticket2217/2217_splitting_field.patch) by abrochard created at 2012-08-18 17:52:00
+Attachment [2217_splitting_field.patch](tarball://root/attachments/some-uuid/ticket2217/2217_splitting_field.patch) by @abrochard created at 2012-08-18 17:52:00
 
 
 
@@ -177,7 +177,7 @@ archive/issue_comments_014664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14664",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_014665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14665",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_014666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14666",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_014667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14667",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -337,16 +337,16 @@ Field in b with defining polynomial x^6 - 14*x^4 + 20*x^3 + 49*x^2 -
 archive/issue_comments_014670.json:
 ```json
 {
-    "body": "Attachment [trac_2217_correction.patch](tarball://root/attachments/some-uuid/ticket2217/trac_2217_correction.patch) by chapoton created at 2013-08-04 19:46:23\n\nhere is a patch to correct the failing doctest\n\nlet us see if the bot is happy\n\napply 2217_splitting_field.patch\u200b trac_2217_correction.patch\u200b",
+    "body": "Attachment [trac_2217_correction.patch](tarball://root/attachments/some-uuid/ticket2217/trac_2217_correction.patch) by @fchapoton created at 2013-08-04 19:46:23\n\nhere is a patch to correct the failing doctest\n\nlet us see if the bot is happy\n\napply 2217_splitting_field.patch\u200b trac_2217_correction.patch\u200b",
     "created_at": "2013-08-04T19:46:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14670",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_2217_correction.patch](tarball://root/attachments/some-uuid/ticket2217/trac_2217_correction.patch) by chapoton created at 2013-08-04 19:46:23
+Attachment [trac_2217_correction.patch](tarball://root/attachments/some-uuid/ticket2217/trac_2217_correction.patch) by @fchapoton created at 2013-08-04 19:46:23
 
 here is a patch to correct the failing doctest
 
@@ -366,7 +366,7 @@ archive/issue_comments_014671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14671",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_014672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14672",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_014673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14673",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_014674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14674",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_014675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14675",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -460,7 +460,7 @@ archive/issue_comments_014676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14676",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_014677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14677",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_014678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14678",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_014679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14679",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -534,7 +534,7 @@ archive/issue_comments_014680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14680",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_014681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14681",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_014682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14682",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -606,7 +606,7 @@ archive/issue_comments_014684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14684",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -624,7 +624,7 @@ archive/issue_comments_014685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14685",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -642,7 +642,7 @@ archive/issue_comments_014686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14686",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -664,7 +664,7 @@ archive/issue_comments_014687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14687",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -718,7 +718,7 @@ archive/issue_comments_014690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14690",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -736,7 +736,7 @@ archive/issue_comments_014691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14691",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -754,7 +754,7 @@ archive/issue_comments_014692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14692",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -772,7 +772,7 @@ archive/issue_comments_014693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14693",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -792,7 +792,7 @@ archive/issue_comments_014694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14694",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -818,7 +818,7 @@ archive/issue_comments_014695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14695",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -836,7 +836,7 @@ archive/issue_comments_014696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14696",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -856,7 +856,7 @@ archive/issue_comments_014697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14697",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -874,7 +874,7 @@ archive/issue_comments_014698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2217#issuecomment-14698",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008236.json:
     "title": "installing spkg from remote location must leave a spkg (placeholder) in spkg/",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8236",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 Assignee: GeorgSWeber
@@ -50,7 +50,7 @@ archive/issue_comments_072752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8236#issuecomment-72752",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_072753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8236#issuecomment-72753",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_072754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8236#issuecomment-72754",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_072755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8236#issuecomment-72755",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_072756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8236#issuecomment-72756",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_072757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8236#issuecomment-72757",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

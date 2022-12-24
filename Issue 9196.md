@@ -3,7 +3,7 @@
 archive/issues_009196.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nAs discussed here\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/f3fa4f8737437d7f/5528028cc0c16975?lnk=gst&q=atlas#5528028cc0c16975\n\nATLAS needs to be updated. I'll take on that task. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9196\n\n",
+    "body": "Assignee: @aghitza\n\nAs discussed here\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/f3fa4f8737437d7f/5528028cc0c16975?lnk=gst&q=atlas#5528028cc0c16975\n\nATLAS needs to be updated. I'll take on that task. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9196\n\n",
     "created_at": "2010-06-09T14:02:49Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_009196.json:
     "user": "drkirkby"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 As discussed here
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9196
 archive/issue_comments_086031.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to tbd.",
+    "body": "Changing assignee from @aghitza to tbd.",
     "created_at": "2010-09-02T11:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9196#issuecomment-86031",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from AlexGhitza to tbd.
+Changing assignee from @aghitza to tbd.
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_086032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9196#issuecomment-86032",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_086034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9196#issuecomment-86034",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_086036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9196#issuecomment-86036",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_086037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9196#issuecomment-86037",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

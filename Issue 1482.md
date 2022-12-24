@@ -14,7 +14,7 @@ archive/issues_001482.json:
     "title": "xgcd suboptimal output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1482",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: somebody
@@ -132,7 +132,7 @@ archive/issue_comments_009539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1482#issuecomment-9539",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_009542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1482#issuecomment-9542",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008978.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  leif dimpase\n\nThere has been a recent report about Sage not building on (64bit) OpenSuse 11., see \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/6947016a2d3f664e#\n\nOne issue is readline, and if one looks at the following snippet from the readline-6.0.p1 spkg-install:\n\n```\nif [ -f /etc/SuSE-release ]; then\n    if [ `grep 11.1 /etc/SuSE-release > /dev/null; echo $?` -eq 0 ]; then\n        echo \"OpenSUSE 11.1 detected\"\n        if [ -d /usr/include/readline/ ]; then\n            echo \"The development version of libreadline is installed -> copying\"\n            if [ `uname -p` = \"x86_64\" ]; then\n                cp /lib64/libreadline.so.* \"$SAGE_LOCAL\"/lib\n            else\n                cp /lib/libreadline.so.* \"$SAGE_LOCAL\"/lib\n            fi\n            cp -r /usr/include/readline  \"$SAGE_LOCAL\"/include\n            exit 0\n```\n\nit seems clear why this did work for OpenSuse 11.1 --- but not OpenSuse 11.2.\nThe user report mentioned also a problem with building Symmetrica (probably $SAGE64 is not set, but should).\nMaybe there are even more problems lurking.\n\nCan someone confirm these issues (I don't have access to a 64bit OpenSuse 11.2 installation myself)?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8978\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @nexttime @dimpase\n\nThere has been a recent report about Sage not building on (64bit) OpenSuse 11., see \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/6947016a2d3f664e#\n\nOne issue is readline, and if one looks at the following snippet from the readline-6.0.p1 spkg-install:\n\n```\nif [ -f /etc/SuSE-release ]; then\n    if [ `grep 11.1 /etc/SuSE-release > /dev/null; echo $?` -eq 0 ]; then\n        echo \"OpenSUSE 11.1 detected\"\n        if [ -d /usr/include/readline/ ]; then\n            echo \"The development version of libreadline is installed -> copying\"\n            if [ `uname -p` = \"x86_64\" ]; then\n                cp /lib64/libreadline.so.* \"$SAGE_LOCAL\"/lib\n            else\n                cp /lib/libreadline.so.* \"$SAGE_LOCAL\"/lib\n            fi\n            cp -r /usr/include/readline  \"$SAGE_LOCAL\"/include\n            exit 0\n```\n\nit seems clear why this did work for OpenSuse 11.1 --- but not OpenSuse 11.2.\nThe user report mentioned also a problem with building Symmetrica (probably $SAGE64 is not set, but should).\nMaybe there are even more problems lurking.\n\nCan someone confirm these issues (I don't have access to a 64bit OpenSuse 11.2 installation myself)?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8978\n\n",
     "created_at": "2010-05-16T13:09:09Z",
     "labels": [
         "porting",
@@ -19,7 +19,7 @@ archive/issues_008978.json:
 ```
 Assignee: drkirkby
 
-CC:  leif dimpase
+CC:  @nexttime @dimpase
 
 There has been a recent report about Sage not building on (64bit) OpenSuse 11., see 
 
@@ -142,7 +142,7 @@ archive/issue_comments_082838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8978#issuecomment-82838",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_082839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8978#issuecomment-82839",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_082840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8978#issuecomment-82840",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_082841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8978#issuecomment-82841",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

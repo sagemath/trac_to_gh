@@ -3,7 +3,7 @@
 archive/issues_003404.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nBoth of the graphs below are the path graph on 3 vertices.  The problem is that the first labeling returns a permutation group of degree 2, when it should be of degree 3.\n\n\n```\nsage: g=Graph('Bo')\nsage: print g.automorphism_group().degree()\n2\nsage: h=Graph('Bg')\nsage: print h.automorphism_group().degree()\n3\nsage: g.is_isomorphic(h)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3404\n\n",
+    "body": "Assignee: @rlmill\n\nBoth of the graphs below are the path graph on 3 vertices.  The problem is that the first labeling returns a permutation group of degree 2, when it should be of degree 3.\n\n\n```\nsage: g=Graph('Bo')\nsage: print g.automorphism_group().degree()\n2\nsage: h=Graph('Bg')\nsage: print h.automorphism_group().degree()\n3\nsage: g.is_isomorphic(h)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3404\n\n",
     "created_at": "2008-06-12T18:09:14Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003404.json:
     "title": "graph.automorphism_group returns permutations with the wrong number of elements.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3404",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Both of the graphs below are the path graph on 3 vertices.  The problem is that the first labeling returns a permutation group of degree 2, when it should be of degree 3.
 
@@ -50,7 +50,7 @@ archive/issue_comments_023879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3404#issuecomment-23879",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_023880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3404#issuecomment-23880",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_023881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3404#issuecomment-23881",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_023882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3404#issuecomment-23882",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_023883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3404#issuecomment-23883",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009029.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp was\n\nWhen building 'sympow' on OpenSolaris, with SAGE64 set to yes, I see: \n\n\n\n```\n**ATTENTION** If you wish build SYMPOW, please ensure beforehand\nthat the various licenses of your C compiler, linker, assembler, etc.\nallow you to create a derived work based on SYMPOW and your C libraries\ngcc -O3   -c -o analrank.o analrank.c\ngcc -O3   -c -o analytic.o analytic.c\ngcc -O3   -c -o compute.o compute.c\ngcc -O3   -c -o compute2.o compute2.c\ngcc -O3   -c -o fpu.o fpu.c\ngcc -O3   -c -o help.o help.c\ngcc -O3   -c -o conductors.o conductors.c\ngcc -O3   -c -o disk.o disk.c\ngcc -O3   -c -o ec_ap.o ec_ap.c\ngcc -O3   -c -o ec_ap_bsgs.o ec_ap_bsgs.c\ngcc -O3   -c -o ec_ap_large.o ec_ap_large.c\ngcc -O3   -c -o eulerfactors.o eulerfactors.c\ngcc -O3   -c -o factor.o factor.c\ngcc -O3   -c -o generate.o generate.c\ngcc -O3   -c -o init_curve.o init_curve.c\ngcc -O3   -c -o main.o main.c\ngcc -O3   -c -o moddeg.o moddeg.c\ngcc -O3   -c -o periods.o periods.c\ngcc -O3   -c -o prepare.o prepare.c\ngcc -O3   -c -o QD.o QD.c\ngcc -O3   -c -o rootno.o rootno.c\ngcc -O3   -c -o util.o util.c\nmkdir -p datafiles\ntouch datafiles/param_data\ngcc -O3  -o sympow  analrank.o analytic.o compute.o compute2.o fpu.o help.o conductors.o disk.o ec_ap.o ec_ap_bsgs.o ec_ap_large.o eulerfactors.o factor.o generate.o init_curve.o main.o moddeg.o periods.o prepare.o QD.o rootno.o util.o \n```\n\n\nThen checking one of the generated files, \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file ./local/lib/sympow/sympow\n./local/lib/sympow/sympow:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\n```\n\n\nwe see it is indeed a 32-bit file. \n\nLooking at sympow-1.018.1.p6 source code, I can't see anything that would attempt to build 64-bit on any platform, so I doubt sympow ever built 64-bit on OS X versions where 32-bit was the default. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9029\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @williamstein\n\nWhen building 'sympow' on OpenSolaris, with SAGE64 set to yes, I see: \n\n\n\n```\n**ATTENTION** If you wish build SYMPOW, please ensure beforehand\nthat the various licenses of your C compiler, linker, assembler, etc.\nallow you to create a derived work based on SYMPOW and your C libraries\ngcc -O3   -c -o analrank.o analrank.c\ngcc -O3   -c -o analytic.o analytic.c\ngcc -O3   -c -o compute.o compute.c\ngcc -O3   -c -o compute2.o compute2.c\ngcc -O3   -c -o fpu.o fpu.c\ngcc -O3   -c -o help.o help.c\ngcc -O3   -c -o conductors.o conductors.c\ngcc -O3   -c -o disk.o disk.c\ngcc -O3   -c -o ec_ap.o ec_ap.c\ngcc -O3   -c -o ec_ap_bsgs.o ec_ap_bsgs.c\ngcc -O3   -c -o ec_ap_large.o ec_ap_large.c\ngcc -O3   -c -o eulerfactors.o eulerfactors.c\ngcc -O3   -c -o factor.o factor.c\ngcc -O3   -c -o generate.o generate.c\ngcc -O3   -c -o init_curve.o init_curve.c\ngcc -O3   -c -o main.o main.c\ngcc -O3   -c -o moddeg.o moddeg.c\ngcc -O3   -c -o periods.o periods.c\ngcc -O3   -c -o prepare.o prepare.c\ngcc -O3   -c -o QD.o QD.c\ngcc -O3   -c -o rootno.o rootno.c\ngcc -O3   -c -o util.o util.c\nmkdir -p datafiles\ntouch datafiles/param_data\ngcc -O3  -o sympow  analrank.o analytic.o compute.o compute2.o fpu.o help.o conductors.o disk.o ec_ap.o ec_ap_bsgs.o ec_ap_large.o eulerfactors.o factor.o generate.o init_curve.o main.o moddeg.o periods.o prepare.o QD.o rootno.o util.o \n```\n\n\nThen checking one of the generated files, \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file ./local/lib/sympow/sympow\n./local/lib/sympow/sympow:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\n```\n\n\nwe see it is indeed a 32-bit file. \n\nLooking at sympow-1.018.1.p6 source code, I can't see anything that would attempt to build 64-bit on any platform, so I doubt sympow ever built 64-bit on OS X versions where 32-bit was the default. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9029\n\n",
     "created_at": "2010-05-24T07:34:13Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009029.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp was
+CC:  @jaapspies @williamstein
 
 When building 'sympow' on OpenSolaris, with SAGE64 set to yes, I see: 
 
@@ -198,7 +198,7 @@ archive/issue_comments_083567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9029#issuecomment-83567",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_083568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9029#issuecomment-83568",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_083569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9029#issuecomment-83569",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

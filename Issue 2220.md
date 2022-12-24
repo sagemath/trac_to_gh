@@ -3,7 +3,7 @@
 archive/issues_002220.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan ccitro mjo\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9\n\n\n\n```\n> Is the following output for b.gens() correct?\n\n> sage: NumberField([x,x^2-3],'a')\n> Number Field in a0 with defining polynomial x over its base field\n> sage: b=NumberField([x,x^2-3],'a')\n> sage: b.gens()\n> (0, 0)\n\n> To contrast:\n\n> sage: c=NumberField([x^2-3, x^2-2],'a')\n> sage: c.gens()\n> (a0, a1)\n\n> Also, this blows up:\n\n> sage: c=NumberField([x^2-3, x],'a')\n\nThe problem here is that x is triggering a an error in the\nirreducibility test, which is a little bizarre since of course x is\nirreducible.\n\nSo the real issue is: why is x allowed to determine an absolute number\nfield (base Q) but not a relative one?  My guess is that this is a\nside-effect of the differing code being used to test irreducibility in\nthe two cases,\n\nPersonally, I think that trivial extensions should be allowed and\ntreated just as non-trivial ones.  I have recently had to define\nextensions of the ring ZZ, and find this awkward:\n\nsage: R=ZZ.extension(x^2+5,'a')\nsage: R.gens()\n[1, a]\nsage: S=ZZ.extension(x+5,'b')\nsage: S.gens()\n[1]\n\nIn the latter case I need S to remember the polynomial used to\ngeneraite it and would expect its gens() to include (in this case) -5.\n\nOn the same topic, R and S above have no defining_polynomial() method.\n I'll try to fix that if it looks easy. \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2220\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan ccitro @orlitzky\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9\n\n\n\n```\n> Is the following output for b.gens() correct?\n\n> sage: NumberField([x,x^2-3],'a')\n> Number Field in a0 with defining polynomial x over its base field\n> sage: b=NumberField([x,x^2-3],'a')\n> sage: b.gens()\n> (0, 0)\n\n> To contrast:\n\n> sage: c=NumberField([x^2-3, x^2-2],'a')\n> sage: c.gens()\n> (a0, a1)\n\n> Also, this blows up:\n\n> sage: c=NumberField([x^2-3, x],'a')\n\nThe problem here is that x is triggering a an error in the\nirreducibility test, which is a little bizarre since of course x is\nirreducible.\n\nSo the real issue is: why is x allowed to determine an absolute number\nfield (base Q) but not a relative one?  My guess is that this is a\nside-effect of the differing code being used to test irreducibility in\nthe two cases,\n\nPersonally, I think that trivial extensions should be allowed and\ntreated just as non-trivial ones.  I have recently had to define\nextensions of the ring ZZ, and find this awkward:\n\nsage: R=ZZ.extension(x^2+5,'a')\nsage: R.gens()\n[1, a]\nsage: S=ZZ.extension(x+5,'b')\nsage: S.gens()\n[1]\n\nIn the latter case I need S to remember the polynomial used to\ngeneraite it and would expect its gens() to include (in this case) -5.\n\nOn the same topic, R and S above have no defining_polynomial() method.\n I'll try to fix that if it looks easy. \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2220\n\n",
     "created_at": "2008-02-20T03:54:04Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_002220.json:
     "title": "irreducibility testing in relative extensions seems to be messed up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2220",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan ccitro mjo
+CC:  @ncalexan ccitro @orlitzky
 
 See http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9
 
@@ -89,7 +89,7 @@ archive/issue_comments_014708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2220#issuecomment-14708",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_014709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2220#issuecomment-14709",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_014710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2220#issuecomment-14710",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -180,16 +180,16 @@ Changing component from number theory to number fields.
 archive/issue_comments_014711.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:57:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2220#issuecomment-14711",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -224,16 +224,16 @@ sage: b.gens()
 archive/issue_comments_014713.json:
 ```json
 {
-    "body": "Attachment [sage-trac_2220.patch](tarball://root/attachments/some-uuid/ticket2220/sage-trac_2220.patch) by mjo created at 2011-12-17 20:37:32\n\nAdd doctest for a trivial extension",
+    "body": "Attachment [sage-trac_2220.patch](tarball://root/attachments/some-uuid/ticket2220/sage-trac_2220.patch) by @orlitzky created at 2011-12-17 20:37:32\n\nAdd doctest for a trivial extension",
     "created_at": "2011-12-17T20:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2220#issuecomment-14713",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_2220.patch](tarball://root/attachments/some-uuid/ticket2220/sage-trac_2220.patch) by mjo created at 2011-12-17 20:37:32
+Attachment [sage-trac_2220.patch](tarball://root/attachments/some-uuid/ticket2220/sage-trac_2220.patch) by @orlitzky created at 2011-12-17 20:37:32
 
 Add doctest for a trivial extension
 
@@ -249,7 +249,7 @@ archive/issue_comments_014714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2220#issuecomment-14714",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_014715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2220#issuecomment-14715",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_014718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2220#issuecomment-14718",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

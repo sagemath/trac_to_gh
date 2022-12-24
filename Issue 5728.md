@@ -3,7 +3,7 @@
 archive/issues_005728.json:
 ```json
 {
-    "body": "Assignee: was\n\nif limit is beyond pari prime bound, then limit is just replaced by min(limit, pari prime bound), which silently misleads the poor user. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5728\n\n",
+    "body": "Assignee: @williamstein\n\nif limit is beyond pari prime bound, then limit is just replaced by min(limit, pari prime bound), which silently misleads the poor user. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5728\n\n",
     "created_at": "2009-04-09T19:55:51Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005728.json:
     "title": "limit option is misdocumented in n=100; n.factor?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5728",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 if limit is beyond pari prime bound, then limit is just replaced by min(limit, pari prime bound), which silently misleads the poor user. 
 

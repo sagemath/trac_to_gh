@@ -14,7 +14,7 @@ archive/issues_000202.json:
     "title": "Elliptic curve point multiplication bug.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/202",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -79,7 +79,7 @@ archive/issue_comments_000913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/202#issuecomment-913",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_000914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/202#issuecomment-914",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

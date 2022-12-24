@@ -3,7 +3,7 @@
 archive/issues_003420.json:
 ```json
 {
-    "body": "Assignee: was\n\nOn Fedora 9:\n\n\n```\nsage -t  devel/sage/sage/finance/markov_multifractal.py     **********************************************************************\nFile \"/home/jaap/downloads/sage-3.0.3.alpha2/tmp/markov_multifractal.py\", line 56:\n    sage: msm.__cmp__(3)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\n1 items had failures:\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3420\n\n",
+    "body": "Assignee: @williamstein\n\nOn Fedora 9:\n\n\n```\nsage -t  devel/sage/sage/finance/markov_multifractal.py     **********************************************************************\nFile \"/home/jaap/downloads/sage-3.0.3.alpha2/tmp/markov_multifractal.py\", line 56:\n    sage: msm.__cmp__(3)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\n1 items had failures:\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3420\n\n",
     "created_at": "2008-06-13T18:55:59Z",
     "labels": [
         "finance",
@@ -14,10 +14,10 @@ archive/issues_003420.json:
     "title": "Failure in markov_multifractal (random?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3420",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 On Fedora 9:
 
@@ -84,7 +84,7 @@ Attachment [trac_3420.patch](tarball://root/attachments/some-uuid/ticket3420/tra
 archive/issue_comments_024074.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-06-13T22:45:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3420",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_024074.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_024075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3420#issuecomment-24075",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

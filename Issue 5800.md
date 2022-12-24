@@ -3,7 +3,7 @@
 archive/issues_005800.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  robertwb mhansen rlm mvngu\n\nbitset.pxi provides a set of inline functions for dealing with bitsets. It would be nice to wrap this in a C class with automatic memory management for ease of use as well as testing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5800\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @robertwb @mwhansen @rlmill mvngu\n\nbitset.pxi provides a set of inline functions for dealing with bitsets. It would be nice to wrap this in a C class with automatic memory management for ease of use as well as testing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5800\n\n",
     "created_at": "2009-04-16T05:01:03Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_005800.json:
     "title": "Nice wrapper for bitset",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5800",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: cwitty
 
-CC:  robertwb mhansen rlm mvngu
+CC:  @robertwb @mwhansen @rlmill mvngu
 
 bitset.pxi provides a set of inline functions for dealing with bitsets. It would be nice to wrap this in a C class with automatic memory management for ease of use as well as testing. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_045523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45523",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_045524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45524",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_045525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45525",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_045526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45526",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_045527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45527",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_045528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45528",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -142,16 +142,16 @@ Yep, that's part of the reason it is still [needs work]
 archive/issue_comments_045529.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to jason.",
+    "body": "Changing assignee from cwitty to @jasongrout.",
     "created_at": "2009-09-29T05:51:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45529",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from cwitty to jason.
+Changing assignee from cwitty to @jasongrout.
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_045530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45530",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_045531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45531",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_045532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45532",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_045533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45533",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_045534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45534",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -271,16 +271,16 @@ CCing some more people that would be great reviewers.
 archive/issue_comments_045535.json:
 ```json
 {
-    "body": "Attachment [trac-5800-bitset-class.patch](tarball://root/attachments/some-uuid/ticket5800/trac-5800-bitset-class.patch) by jason created at 2009-10-16 11:45:37",
+    "body": "Attachment [trac-5800-bitset-class.patch](tarball://root/attachments/some-uuid/ticket5800/trac-5800-bitset-class.patch) by @jasongrout created at 2009-10-16 11:45:37",
     "created_at": "2009-10-16T11:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45535",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-5800-bitset-class.patch](tarball://root/attachments/some-uuid/ticket5800/trac-5800-bitset-class.patch) by jason created at 2009-10-16 11:45:37
+Attachment [trac-5800-bitset-class.patch](tarball://root/attachments/some-uuid/ticket5800/trac-5800-bitset-class.patch) by @jasongrout created at 2009-10-16 11:45:37
 
 
 
@@ -294,7 +294,7 @@ archive/issue_comments_045536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45536",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_045537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45537",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_045538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45538",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -343,16 +343,16 @@ apply on top of previous patch
 archive/issue_comments_045539.json:
 ```json
 {
-    "body": "Attachment [trac-5800-bitset-class-docs.patch](tarball://root/attachments/some-uuid/ticket5800/trac-5800-bitset-class-docs.patch) by jason created at 2009-10-23 00:47:51\n\nApologies: that last patch had a bit of another unrelated patch in it.  I've just uploaded the corrected patch.",
+    "body": "Attachment [trac-5800-bitset-class-docs.patch](tarball://root/attachments/some-uuid/ticket5800/trac-5800-bitset-class-docs.patch) by @jasongrout created at 2009-10-23 00:47:51\n\nApologies: that last patch had a bit of another unrelated patch in it.  I've just uploaded the corrected patch.",
     "created_at": "2009-10-23T00:47:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45539",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-5800-bitset-class-docs.patch](tarball://root/attachments/some-uuid/ticket5800/trac-5800-bitset-class-docs.patch) by jason created at 2009-10-23 00:47:51
+Attachment [trac-5800-bitset-class-docs.patch](tarball://root/attachments/some-uuid/ticket5800/trac-5800-bitset-class-docs.patch) by @jasongrout created at 2009-10-23 00:47:51
 
 Apologies: that last patch had a bit of another unrelated patch in it.  I've just uploaded the corrected patch.
 
@@ -368,7 +368,7 @@ archive/issue_comments_045540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45540",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_045541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45541",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_045542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5800#issuecomment-45542",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

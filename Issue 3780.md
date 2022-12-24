@@ -3,7 +3,7 @@
 archive/issues_003780.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: m4ri\n\nadd fast col_swap method for dense matrices over GF(2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3780\n\n",
+    "body": "Assignee: @malb\n\nKeywords: m4ri\n\nadd fast col_swap method for dense matrices over GF(2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3780\n\n",
     "created_at": "2008-08-06T16:28:22Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003780.json:
     "title": "[with patch, depends on #3324",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3780",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: m4ri
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3780
 archive/issue_comments_026877.json:
 ```json
 {
-    "body": "Attachment [m4ri_col_swap.patch](tarball://root/attachments/some-uuid/ticket3780/m4ri_col_swap.patch) by malb created at 2008-08-06 16:29:12",
+    "body": "Attachment [m4ri_col_swap.patch](tarball://root/attachments/some-uuid/ticket3780/m4ri_col_swap.patch) by @malb created at 2008-08-06 16:29:12",
     "created_at": "2008-08-06T16:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3780#issuecomment-26877",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [m4ri_col_swap.patch](tarball://root/attachments/some-uuid/ticket3780/m4ri_col_swap.patch) by malb created at 2008-08-06 16:29:12
+Attachment [m4ri_col_swap.patch](tarball://root/attachments/some-uuid/ticket3780/m4ri_col_swap.patch) by @malb created at 2008-08-06 16:29:12
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_026878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3780#issuecomment-26878",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_026879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3780#issuecomment-26879",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009012.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThe docstring of ``sage.ring.polynomial.multi_polynomial_ideal.triangular_decomposition`` says:\n\n```\n        This requires that the given basis is reduced w.r.t. to the\n        lexicographical monomial ordering. If the basis of self does\n        not have this property, the required Groebner basis is\n        computed implicitly.\n```\n\nhowever (Sage 4.4.1):\n\n```\nsage: R.<x,y> = QQ[]\nsage: J = Ideal(x^2+y^2-2, y^2-1)\nsage: J.triangular_decomposition()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n[...]\nTypeError: Singular error:\n// ** _ is no standard basis\n   ? The ideal sage22 has to be given by a reduced SB\n   ? error occurred in STDIN line 101: `def sage24=fglm(sage19,sage22);\n\nIssue created by migration from https://trac.sagemath.org/ticket/9012\n\n",
+    "body": "Assignee: @malb\n\nThe docstring of ``sage.ring.polynomial.multi_polynomial_ideal.triangular_decomposition`` says:\n\n```\n        This requires that the given basis is reduced w.r.t. to the\n        lexicographical monomial ordering. If the basis of self does\n        not have this property, the required Groebner basis is\n        computed implicitly.\n```\n\nhowever (Sage 4.4.1):\n\n```\nsage: R.<x,y> = QQ[]\nsage: J = Ideal(x^2+y^2-2, y^2-1)\nsage: J.triangular_decomposition()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n[...]\nTypeError: Singular error:\n// ** _ is no standard basis\n   ? The ideal sage22 has to be given by a reduced SB\n   ? error occurred in STDIN line 101: `def sage24=fglm(sage19,sage22);\n\nIssue created by migration from https://trac.sagemath.org/ticket/9012\n\n",
     "created_at": "2010-05-21T20:14:24Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_009012.json:
     "title": "singular_decomposition fails on non-interreduced Gr\u00f6bner basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9012",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 The docstring of ``sage.ring.polynomial.multi_polynomial_ideal.triangular_decomposition`` says:
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9012
 archive/issue_comments_083364.json:
 ```json
 {
-    "body": "Attachment [trac_9012.patch](tarball://root/attachments/some-uuid/ticket9012/trac_9012.patch) by malb created at 2010-07-12 15:39:07",
+    "body": "Attachment [trac_9012.patch](tarball://root/attachments/some-uuid/ticket9012/trac_9012.patch) by @malb created at 2010-07-12 15:39:07",
     "created_at": "2010-07-12T15:39:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9012#issuecomment-83364",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_9012.patch](tarball://root/attachments/some-uuid/ticket9012/trac_9012.patch) by malb created at 2010-07-12 15:39:07
+Attachment [trac_9012.patch](tarball://root/attachments/some-uuid/ticket9012/trac_9012.patch) by @malb created at 2010-07-12 15:39:07
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_083365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9012#issuecomment-83365",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_083366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9012#issuecomment-83366",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_083367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9012#issuecomment-83367",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_083368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9012#issuecomment-83368",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

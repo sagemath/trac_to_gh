@@ -3,7 +3,7 @@
 archive/issues_008390.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  robert.marik kcrisman mhansen\n\nKeywords: trigonometric, roots\n\nWhen using\n\n\n```\nx,y=var('x,y')\nsolve([sin(2*x-pi/6)==1/2],x)\n```\n\n\nsage returns [x == 1/6*pi]. Which is correct, but we would wish to have all roots. This can be done with:\n\n\n```\nsolve([sin(2*x-pi/6)==y,y==1/2],[x,y])\n```\n\n\nwhich returns [[x == 1/2*pi + pi*z5, y == (1/2)], [x == 1/6*pi + pi*z7, y == (1/2)]]\n\nBut this is a very weird way to do things. Surely solve([sin(2*x-pi/6)==y,y==1/2],[x,y]) should also give all roots.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8390\n\n",
+    "body": "Assignee: olazo\n\nCC:  @robert-marik @kcrisman @mwhansen\n\nKeywords: trigonometric, roots\n\nWhen using\n\n\n```\nx,y=var('x,y')\nsolve([sin(2*x-pi/6)==1/2],x)\n```\n\n\nsage returns [x == 1/6*pi]. Which is correct, but we would wish to have all roots. This can be done with:\n\n\n```\nsolve([sin(2*x-pi/6)==y,y==1/2],[x,y])\n```\n\n\nwhich returns [[x == 1/2*pi + pi*z5, y == (1/2)], [x == 1/6*pi + pi*z7, y == (1/2)]]\n\nBut this is a very weird way to do things. Surely solve([sin(2*x-pi/6)==y,y==1/2],[x,y]) should also give all roots.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8390\n\n",
     "created_at": "2010-02-27T19:07:36Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_008390.json:
 ```
 Assignee: olazo
 
-CC:  robert.marik kcrisman mhansen
+CC:  @robert-marik @kcrisman @mwhansen
 
 Keywords: trigonometric, roots
 
@@ -60,7 +60,7 @@ archive/issue_comments_075129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8390#issuecomment-75129",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_075130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8390#issuecomment-75130",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_075131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8390#issuecomment-75131",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_075132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8390#issuecomment-75132",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_075133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8390#issuecomment-75133",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -213,16 +213,16 @@ The patch introduces option to_poly_solve='force'. Perhaps, could be done automa
 archive/issue_comments_075134.json:
 ```json
 {
-    "body": "Attachment [trac-8390.patch](tarball://root/attachments/some-uuid/ticket8390/trac-8390.patch) by robert.marik created at 2010-04-06 20:51:20\n\nrebased for Sage 4.3.5",
+    "body": "Attachment [trac-8390.patch](tarball://root/attachments/some-uuid/ticket8390/trac-8390.patch) by @robert-marik created at 2010-04-06 20:51:20\n\nrebased for Sage 4.3.5",
     "created_at": "2010-04-06T20:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8390#issuecomment-75134",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac-8390.patch](tarball://root/attachments/some-uuid/ticket8390/trac-8390.patch) by robert.marik created at 2010-04-06 20:51:20
+Attachment [trac-8390.patch](tarball://root/attachments/some-uuid/ticket8390/trac-8390.patch) by @robert-marik created at 2010-04-06 20:51:20
 
 rebased for Sage 4.3.5
 
@@ -238,7 +238,7 @@ archive/issue_comments_075135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8390#issuecomment-75135",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_075136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8390#issuecomment-75136",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_075137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8390#issuecomment-75137",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_075138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8390#issuecomment-75138",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

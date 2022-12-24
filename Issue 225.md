@@ -3,7 +3,7 @@
 archive/issues_000225.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nOn Sat, 27 Jan 2007 21:02:14 -0800, Timothy Clemans <timothy.clemans@gmail.com> wrote:\n\n>\n> Could a system be added for loading code from a url \n\nYes. \n\n> and uploading\n> worksheets from urls?\n\nYes. \n\nGreat idea!  It wouldn't be hard either, since I just\nadded (for sage-1.9.1) a file remote_file.py with this\nfunction, which would make adding what you suggest\nquite easy.   This will have to wait until > sage-2.0 though.\nSo this is now trac # \n\ndef get_remote_file(filename, verbose=True):\n    \"\"\"\n    INPUT:\n        filename -- the URL of a file on the web, e.g.,\n             \"http://modular.math.washington.edu/myfile.txt\"\n        verbose -- whether to display download status\n    OUTPUT:\n        creates a file in the temp directory and returns the\n        absolute path to that file.\n    \"\"\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/225\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nOn Sat, 27 Jan 2007 21:02:14 -0800, Timothy Clemans <timothy.clemans@gmail.com> wrote:\n\n>\n> Could a system be added for loading code from a url \n\nYes. \n\n> and uploading\n> worksheets from urls?\n\nYes. \n\nGreat idea!  It wouldn't be hard either, since I just\nadded (for sage-1.9.1) a file remote_file.py with this\nfunction, which would make adding what you suggest\nquite easy.   This will have to wait until > sage-2.0 though.\nSo this is now trac # \n\ndef get_remote_file(filename, verbose=True):\n    \"\"\"\n    INPUT:\n        filename -- the URL of a file on the web, e.g.,\n             \"http://modular.math.washington.edu/myfile.txt\"\n        verbose -- whether to display download status\n    OUTPUT:\n        creates a file in the temp directory and returns the\n        absolute path to that file.\n    \"\"\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/225\n\n",
     "created_at": "2007-01-28T05:13:49Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000225.json:
     "title": "loading files and worksheets from urls",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/225",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -63,16 +63,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/225
 archive/issue_comments_001003.json:
 ```json
 {
-    "body": "Attachment [5821.patch](tarball://root/attachments/some-uuid/ticket225/5821.patch) by was created at 2007-08-23 06:00:56",
+    "body": "Attachment [5821.patch](tarball://root/attachments/some-uuid/ticket225/5821.patch) by @williamstein created at 2007-08-23 06:00:56",
     "created_at": "2007-08-23T06:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/225#issuecomment-1003",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [5821.patch](tarball://root/attachments/some-uuid/ticket225/5821.patch) by was created at 2007-08-23 06:00:56
+Attachment [5821.patch](tarball://root/attachments/some-uuid/ticket225/5821.patch) by @williamstein created at 2007-08-23 06:00:56
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_001004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/225#issuecomment-1004",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_001005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/225#issuecomment-1005",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

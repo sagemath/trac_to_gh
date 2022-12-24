@@ -3,7 +3,7 @@
 archive/issues_006354.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat mhansen rlm\n\nKeywords: fix doctests\n\nAfter this patch, sage -fixdoctest handles multiline doctests,\nand use the line number info of sage -t to be more robust (handles\nmultiple doctests with the same expected output in the same file).\n\nBy the way, sage -advanced advertises sage -fixdoctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6354\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @mwhansen @rlmill\n\nKeywords: fix doctests\n\nAfter this patch, sage -fixdoctest handles multiline doctests,\nand use the line number info of sage -t to be more robust (handles\nmultiple doctests with the same expected output in the same file).\n\nBy the way, sage -advanced advertises sage -fixdoctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6354\n\n",
     "created_at": "2009-06-18T05:51:15Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_006354.json:
     "title": "[with patch, needs review] Advertise and improve sage -fixdoctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6354",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat mhansen rlm
+CC:  sage-combinat @mwhansen @rlmill
 
 Keywords: fix doctests
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6354
 archive/issue_comments_050796.json:
 ```json
 {
-    "body": "Attachment [sage-fixdoctests-6354-nt.patch](tarball://root/attachments/some-uuid/ticket6354/sage-fixdoctests-6354-nt.patch) by mhansen created at 2009-06-18 06:43:42\n\nLooks good to me.",
+    "body": "Attachment [sage-fixdoctests-6354-nt.patch](tarball://root/attachments/some-uuid/ticket6354/sage-fixdoctests-6354-nt.patch) by @mwhansen created at 2009-06-18 06:43:42\n\nLooks good to me.",
     "created_at": "2009-06-18T06:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6354#issuecomment-50796",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage-fixdoctests-6354-nt.patch](tarball://root/attachments/some-uuid/ticket6354/sage-fixdoctests-6354-nt.patch) by mhansen created at 2009-06-18 06:43:42
+Attachment [sage-fixdoctests-6354-nt.patch](tarball://root/attachments/some-uuid/ticket6354/sage-fixdoctests-6354-nt.patch) by @mwhansen created at 2009-06-18 06:43:42
 
 Looks good to me.
 
@@ -65,7 +65,7 @@ archive/issue_comments_050797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6354#issuecomment-50797",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_050798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6354#issuecomment-50798",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_050799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6354#issuecomment-50799",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_050800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6354#issuecomment-50800",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_050801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6354#issuecomment-50801",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_050802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6354#issuecomment-50802",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_050803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6354#issuecomment-50803",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_050804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6354#issuecomment-50804",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_050805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6354",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6354#issuecomment-50805",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

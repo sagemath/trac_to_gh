@@ -14,7 +14,7 @@ archive/issues_001764.json:
     "title": "the url in the trac emails is wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1764",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -52,7 +52,7 @@ archive/issue_comments_011142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1764#issuecomment-11142",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_011143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1764#issuecomment-11143",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

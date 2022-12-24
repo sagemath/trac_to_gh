@@ -14,7 +14,7 @@ archive/issues_007092.json:
     "title": "build failure of pari-2.3.3.p1.spkg  with gcc-4.4.1 as distributed by Fedora 11",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7092",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: mabshoff
@@ -79,7 +79,7 @@ archive/issue_comments_058605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7092#issuecomment-58605",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_058607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7092#issuecomment-58607",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_058608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7092#issuecomment-58608",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_058609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7092#issuecomment-58609",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_058611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7092#issuecomment-58611",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_058613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7092#issuecomment-58613",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_058614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7092#issuecomment-58614",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_058615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7092#issuecomment-58615",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

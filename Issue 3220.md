@@ -14,7 +14,7 @@ archive/issues_003220.json:
     "title": "[with patch; needs review] readline -- fix a couple of issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3220",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -46,7 +46,7 @@ archive/issue_comments_022294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3220",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3220#issuecomment-22294",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

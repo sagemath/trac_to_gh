@@ -3,7 +3,7 @@
 archive/issues_004549.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nSee the title. Patch integer_lists_lex-nt in development in sage-combinat.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4549\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nSee the title. Patch integer_lists_lex-nt in development in sage-combinat.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4549\n\n",
     "created_at": "2008-11-19T16:24:29Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_004549.json:
     "title": "New method horizontal_border_strip using new IntegerListsLex combinatorial class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4549",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4549
 archive/issue_comments_034077.json:
 ```json
 {
-    "body": "Attachment [integer_lists_lex-4549-nt.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-nt.patch) by nthiery created at 2009-02-13 16:34:51\n\nReworked the integer lists lexicographic generator into a full featured combinatorial class IntegerListsLex\nUse it systematically in Partitions to get constant amortized time iterators.\nAlso implements horizontal_border_strip.\n\nNote: the attached patch does not contain the commit messages!",
+    "body": "Attachment [integer_lists_lex-4549-nt.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-nt.patch) by @nthiery created at 2009-02-13 16:34:51\n\nReworked the integer lists lexicographic generator into a full featured combinatorial class IntegerListsLex\nUse it systematically in Partitions to get constant amortized time iterators.\nAlso implements horizontal_border_strip.\n\nNote: the attached patch does not contain the commit messages!",
     "created_at": "2009-02-13T16:34:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34077",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [integer_lists_lex-4549-nt.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-nt.patch) by nthiery created at 2009-02-13 16:34:51
+Attachment [integer_lists_lex-4549-nt.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-nt.patch) by @nthiery created at 2009-02-13 16:34:51
 
 Reworked the integer lists lexicographic generator into a full featured combinatorial class IntegerListsLex
 Use it systematically in Partitions to get constant amortized time iterators.
@@ -63,7 +63,7 @@ archive/issue_comments_034078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34078",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -79,16 +79,16 @@ Note: this patch depends on #4371 and #5255.
 archive/issue_comments_034079.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to nthiery.",
+    "body": "Changing assignee from @mwhansen to @nthiery.",
     "created_at": "2009-02-14T18:27:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34079",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Changing assignee from mhansen to nthiery.
+Changing assignee from @mwhansen to @nthiery.
 
 
 
@@ -97,16 +97,16 @@ Changing assignee from mhansen to nthiery.
 archive/issue_comments_034080.json:
 ```json
 {
-    "body": "Attachment [trac_4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/trac_4549-review.patch) by mhansen created at 2009-02-14 23:26:56",
+    "body": "Attachment [trac_4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/trac_4549-review.patch) by @mwhansen created at 2009-02-14 23:26:56",
     "created_at": "2009-02-14T23:26:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34080",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/trac_4549-review.patch) by mhansen created at 2009-02-14 23:26:56
+Attachment [trac_4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/trac_4549-review.patch) by @mwhansen created at 2009-02-14 23:26:56
 
 
 
@@ -120,7 +120,7 @@ archive/issue_comments_034081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34081",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_034082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34082",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_034084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34084",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_034085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34085",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -283,16 +283,16 @@ Michael
 archive/issue_comments_034087.json:
 ```json
 {
-    "body": "Attachment [integer_lists_lex-4549-submitted.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-submitted.patch) by nthiery created at 2009-04-02 05:27:50",
+    "body": "Attachment [integer_lists_lex-4549-submitted.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-submitted.patch) by @nthiery created at 2009-04-02 05:27:50",
     "created_at": "2009-04-02T05:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34087",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [integer_lists_lex-4549-submitted.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-submitted.patch) by nthiery created at 2009-04-02 05:27:50
+Attachment [integer_lists_lex-4549-submitted.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-submitted.patch) by @nthiery created at 2009-04-02 05:27:50
 
 
 
@@ -306,7 +306,7 @@ archive/issue_comments_034088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34088",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_034089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34089",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_034090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34090",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_034091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34091",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -397,16 +397,16 @@ Fix for the remaining broken pickle + tests for the other one.
 archive/issue_comments_034092.json:
 ```json
 {
-    "body": "Attachment [integer_lists_lex-4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-review.patch) by hivert created at 2009-04-03 16:36:02\n\nDear All,\n\n> The patch looks good to me. However, though I'm not 100% sure I launched the correct check, it seems that one of the old pickle is still broken:\n\nI added a review patch which should fix this remaining pickle problem. If someone reread it I'm ready to give a positive review. \n\nFlorent",
+    "body": "Attachment [integer_lists_lex-4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-review.patch) by @hivert created at 2009-04-03 16:36:02\n\nDear All,\n\n> The patch looks good to me. However, though I'm not 100% sure I launched the correct check, it seems that one of the old pickle is still broken:\n\nI added a review patch which should fix this remaining pickle problem. If someone reread it I'm ready to give a positive review. \n\nFlorent",
     "created_at": "2009-04-03T16:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34092",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [integer_lists_lex-4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-review.patch) by hivert created at 2009-04-03 16:36:02
+Attachment [integer_lists_lex-4549-review.patch](tarball://root/attachments/some-uuid/ticket4549/integer_lists_lex-4549-review.patch) by @hivert created at 2009-04-03 16:36:02
 
 Dear All,
 
@@ -428,7 +428,7 @@ archive/issue_comments_034093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34093",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_034094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34094",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_034095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4549#issuecomment-34095",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

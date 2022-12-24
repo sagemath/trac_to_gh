@@ -14,7 +14,7 @@ archive/issues_005565.json:
     "title": "sage crashes because of too small stacksize",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5565",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: cwitty
@@ -62,7 +62,7 @@ archive/issue_comments_043325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5565#issuecomment-43325",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_043327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5565#issuecomment-43327",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_043328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5565#issuecomment-43328",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_043329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5565#issuecomment-43329",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_043331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5565#issuecomment-43331",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

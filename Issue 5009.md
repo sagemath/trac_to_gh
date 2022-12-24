@@ -3,7 +3,7 @@
 archive/issues_005009.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: elementary divisor\n\nThe doc string for the `elementary_divisors` method in matrix_integer_dense.pyx says\n\n```\nThe elementary divisors are the invariants of the finite\nabelian group that is the cokernel of this matrix. \n```\n\nThe word \"cokernel\" needs to be expanded upon.  I think, from trial and error, that this is computing the cokernel of left multiplication by the matrix, and this needs to be **clearly stated**, especially given other left/right issues with matrices in Sage.  (See #1587, for example.)\n\nFurthermore, give at least one example where the matrix *isn't square* so we can see a bit more clearly on which side the matrix is acting, say a simple matrix like [[3, 0, 0], [0, 0, 0]].  Maybe even include both this and its transpose.\n\n(As an editorial comment, I find it really annoying that methods like this are for left multiplication, while methods like `restrict_codomain` are for right multiplication, so if I want to use them both, I have to take transposes way too many times.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5009\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: elementary divisor\n\nThe doc string for the `elementary_divisors` method in matrix_integer_dense.pyx says\n\n```\nThe elementary divisors are the invariants of the finite\nabelian group that is the cokernel of this matrix. \n```\n\nThe word \"cokernel\" needs to be expanded upon.  I think, from trial and error, that this is computing the cokernel of left multiplication by the matrix, and this needs to be **clearly stated**, especially given other left/right issues with matrices in Sage.  (See #1587, for example.)\n\nFurthermore, give at least one example where the matrix *isn't square* so we can see a bit more clearly on which side the matrix is acting, say a simple matrix like [[3, 0, 0], [0, 0, 0]].  Maybe even include both this and its transpose.\n\n(As an editorial comment, I find it really annoying that methods like this are for left multiplication, while methods like `restrict_codomain` are for right multiplication, so if I want to use them both, I have to take transposes way too many times.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5009\n\n",
     "created_at": "2009-01-18T06:32:17Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005009.json:
     "title": "elementary_divisors for integer matrices: fix doc string",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5009",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: elementary divisor
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5009
 archive/issue_comments_038188.json:
 ```json
 {
-    "body": "Attachment [trac-5009.patch](tarball://root/attachments/some-uuid/ticket5009/trac-5009.patch) by rlm created at 2009-01-23 15:13:28",
+    "body": "Attachment [trac-5009.patch](tarball://root/attachments/some-uuid/ticket5009/trac-5009.patch) by @rlmill created at 2009-01-23 15:13:28",
     "created_at": "2009-01-23T15:13:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5009#issuecomment-38188",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-5009.patch](tarball://root/attachments/some-uuid/ticket5009/trac-5009.patch) by rlm created at 2009-01-23 15:13:28
+Attachment [trac-5009.patch](tarball://root/attachments/some-uuid/ticket5009/trac-5009.patch) by @rlmill created at 2009-01-23 15:13:28
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_038189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5009#issuecomment-38189",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

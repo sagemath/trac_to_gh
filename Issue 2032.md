@@ -14,7 +14,7 @@ archive/issues_002032.json:
     "title": "bug in bundle script for sage hg repo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2032",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2032
 archive/issue_comments_013150.json:
 ```json
 {
-    "body": "Attachment [trac-2032.patch](tarball://root/attachments/some-uuid/ticket2032/trac-2032.patch) by was created at 2008-02-02 10:15:11",
+    "body": "Attachment [trac-2032.patch](tarball://root/attachments/some-uuid/ticket2032/trac-2032.patch) by @williamstein created at 2008-02-02 10:15:11",
     "created_at": "2008-02-02T10:15:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2032#issuecomment-13150",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-2032.patch](tarball://root/attachments/some-uuid/ticket2032/trac-2032.patch) by was created at 2008-02-02 10:15:11
+Attachment [trac-2032.patch](tarball://root/attachments/some-uuid/ticket2032/trac-2032.patch) by @williamstein created at 2008-02-02 10:15:11
 
 
 

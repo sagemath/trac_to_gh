@@ -3,7 +3,7 @@
 archive/issues_006358.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rbeezer\n\n\n```\n> Does sage have a way to use a numeric method (such as Jacobi, or Gauss-\n> Sidel) to solve matrix equations of the form A*x = b? (CDF matrices by\n> the way). the A.solve_right(b) method is too slow.\n>\n> Thanks,\n> Ethan\n\nHere is an example of how to convert back/forth to numpy to solve A*x\n# b very quickly.  Below we do this with A a 1000x1000 matrix, and it\ntakes about a half second.   It would be *great* if somebody made it\nso this would work in Sage automatically without having to explicitly\nuse numpy like I've done before.  But for you, I bet this is a minor\ninconvenience.\n\nsage: n = 1000\nsage: a = random_matrix(CDF,n); v = random_matrix(CDF,n,1)\nsage: aa = a.numpy(); vv = v.numpy()\nsage: import numpy\nsage: time ww = numpy.linalg.solve(aa, vv)\nTime: CPU 0.57 s, Wall: 0.41 s\nsage: w = matrix(CDF, ww)\nsage: max([abs(z) for z in a*w - v])\n5.46740430707e-12 + 8.431033649e-13*I\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6358\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\n\n```\n> Does sage have a way to use a numeric method (such as Jacobi, or Gauss-\n> Sidel) to solve matrix equations of the form A*x = b? (CDF matrices by\n> the way). the A.solve_right(b) method is too slow.\n>\n> Thanks,\n> Ethan\n\nHere is an example of how to convert back/forth to numpy to solve A*x\n# b very quickly.  Below we do this with A a 1000x1000 matrix, and it\ntakes about a half second.   It would be *great* if somebody made it\nso this would work in Sage automatically without having to explicitly\nuse numpy like I've done before.  But for you, I bet this is a minor\ninconvenience.\n\nsage: n = 1000\nsage: a = random_matrix(CDF,n); v = random_matrix(CDF,n,1)\nsage: aa = a.numpy(); vv = v.numpy()\nsage: import numpy\nsage: time ww = numpy.linalg.solve(aa, vv)\nTime: CPU 0.57 s, Wall: 0.41 s\nsage: w = matrix(CDF, ww)\nsage: max([abs(z) for z in a*w - v])\n5.46740430707e-12 + 8.431033649e-13*I\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6358\n\n",
     "created_at": "2009-06-18T19:44:09Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_006358.json:
     "title": "use numpy to optimize RDF and CDF solve_right functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6358",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rbeezer
+CC:  @rbeezer
 
 
 ```
@@ -65,7 +65,7 @@ archive/issue_comments_050844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6358#issuecomment-50844",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_050845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6358#issuecomment-50845",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_050846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6358#issuecomment-50846",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_050847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6358#issuecomment-50847",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_050848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6358#issuecomment-50848",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_050849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6358#issuecomment-50849",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

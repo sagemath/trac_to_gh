@@ -3,7 +3,7 @@
 archive/issues_005639.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman\n\n\n```\nsage: m = matrix(2,[1,sqrt(2), 3, -5/2])\nsage: m.minpoly()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5639\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\n\n```\nsage: m = matrix(2,[1,sqrt(2), 3, -5/2])\nsage: m.minpoly()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5639\n\n",
     "created_at": "2009-03-30T03:03:04Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_005639.json:
     "title": "minpoly of symbolic matrices is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5639",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman
+CC:  @kcrisman
 
 
 ```
@@ -44,7 +44,7 @@ archive/issue_comments_044029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44029",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_044030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44030",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,16 +75,16 @@ Changing keywords from "" to "".
 archive/issue_comments_044031.json:
 ```json
 {
-    "body": "Changing assignee from burcin to mhansen.",
+    "body": "Changing assignee from @burcin to @mwhansen.",
     "created_at": "2009-09-30T07:49:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44031",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from burcin to mhansen.
+Changing assignee from @burcin to @mwhansen.
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_044032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44032",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_044033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44033",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_044034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44034",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_044035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44035",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_044036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44036",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_044037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44037",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_044038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44038",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_044039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44039",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_044040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44040",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_044041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44041",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_044042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44042",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_044043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44043",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_044044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44044",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_044045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44045",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_044046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44046",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_044047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44047",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -475,16 +475,16 @@ Changing status from closed to needs_work.
 archive/issue_comments_044048.json:
 ```json
 {
-    "body": "Attachment [trac_5639.patch](tarball://root/attachments/some-uuid/ticket5639/trac_5639.patch) by mhansen created at 2009-11-03 10:14:48\n\nI've posted a new patch which takes care of these issues.",
+    "body": "Attachment [trac_5639.patch](tarball://root/attachments/some-uuid/ticket5639/trac_5639.patch) by @mwhansen created at 2009-11-03 10:14:48\n\nI've posted a new patch which takes care of these issues.",
     "created_at": "2009-11-03T10:14:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44048",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5639.patch](tarball://root/attachments/some-uuid/ticket5639/trac_5639.patch) by mhansen created at 2009-11-03 10:14:48
+Attachment [trac_5639.patch](tarball://root/attachments/some-uuid/ticket5639/trac_5639.patch) by @mwhansen created at 2009-11-03 10:14:48
 
 I've posted a new patch which takes care of these issues.
 
@@ -500,7 +500,7 @@ archive/issue_comments_044049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44049",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -518,7 +518,7 @@ archive/issue_comments_044050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44050",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -536,7 +536,7 @@ archive/issue_comments_044051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44051",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_044052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44052",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -569,16 +569,16 @@ apply on top of previous patch
 archive/issue_comments_044053.json:
 ```json
 {
-    "body": "Attachment [trac-5639-doctest.patch](tarball://root/attachments/some-uuid/ticket5639/trac-5639-doctest.patch) by jason created at 2009-11-10 04:37:32\n\nLooks okay, doctests pass on affected files.  I posted a patch with a doctest as well, as a reviewer patch.  Positive review.",
+    "body": "Attachment [trac-5639-doctest.patch](tarball://root/attachments/some-uuid/ticket5639/trac-5639-doctest.patch) by @jasongrout created at 2009-11-10 04:37:32\n\nLooks okay, doctests pass on affected files.  I posted a patch with a doctest as well, as a reviewer patch.  Positive review.",
     "created_at": "2009-11-10T04:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44053",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-5639-doctest.patch](tarball://root/attachments/some-uuid/ticket5639/trac-5639-doctest.patch) by jason created at 2009-11-10 04:37:32
+Attachment [trac-5639-doctest.patch](tarball://root/attachments/some-uuid/ticket5639/trac-5639-doctest.patch) by @jasongrout created at 2009-11-10 04:37:32
 
 Looks okay, doctests pass on affected files.  I posted a patch with a doctest as well, as a reviewer patch.  Positive review.
 
@@ -594,7 +594,7 @@ archive/issue_comments_044054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5639#issuecomment-44054",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

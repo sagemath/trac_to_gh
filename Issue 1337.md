@@ -265,16 +265,16 @@ Michael
 archive/issue_comments_008550.json:
 ```json
 {
-    "body": "Attachment [1337.diff](tarball://root/attachments/some-uuid/ticket1337/1337.diff) by robertwb created at 2008-01-18 02:41:38",
+    "body": "Attachment [1337.diff](tarball://root/attachments/some-uuid/ticket1337/1337.diff) by @robertwb created at 2008-01-18 02:41:38",
     "created_at": "2008-01-18T02:41:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8550",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1337.diff](tarball://root/attachments/some-uuid/ticket1337/1337.diff) by robertwb created at 2008-01-18 02:41:38
+Attachment [1337.diff](tarball://root/attachments/some-uuid/ticket1337/1337.diff) by @robertwb created at 2008-01-18 02:41:38
 
 
 
@@ -288,7 +288,7 @@ archive/issue_comments_008551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8551",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_008555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8555",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_008556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8556",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -421,16 +421,16 @@ I am attaching a patch that should fix the issue, as the elements of the structu
 archive/issue_comments_008557.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to gfurnish.",
+    "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-02-27T08:01:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8557",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from mabshoff to gfurnish.
+Changing assignee from mabshoff to @garyfurnish.
 
 
 
@@ -444,7 +444,7 @@ archive/issue_comments_008558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8558",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_008559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8559",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_008561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8561",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -511,16 +511,16 @@ The ZZ constructor breaks in the case of x=NULL because it was relying on broken
 archive/issue_comments_008562.json:
 ```json
 {
-    "body": "Attachment [integer.pyx.patch](tarball://root/attachments/some-uuid/ticket1337/integer.pyx.patch) by gfurnish created at 2008-02-27 10:13:17\n\nFixed doctest issues",
+    "body": "Attachment [integer.pyx.patch](tarball://root/attachments/some-uuid/ticket1337/integer.pyx.patch) by @garyfurnish created at 2008-02-27 10:13:17\n\nFixed doctest issues",
     "created_at": "2008-02-27T10:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8562",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [integer.pyx.patch](tarball://root/attachments/some-uuid/ticket1337/integer.pyx.patch) by gfurnish created at 2008-02-27 10:13:17
+Attachment [integer.pyx.patch](tarball://root/attachments/some-uuid/ticket1337/integer.pyx.patch) by @garyfurnish created at 2008-02-27 10:13:17
 
 Fixed doctest issues
 
@@ -536,7 +536,7 @@ archive/issue_comments_008563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8563",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -554,7 +554,7 @@ archive/issue_comments_008564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8564",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -609,7 +609,7 @@ archive/issue_comments_008566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8566",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -646,16 +646,16 @@ Michael
 archive/issue_comments_008568.json:
 ```json
 {
-    "body": "Attachment [trac_1337.patch](tarball://root/attachments/some-uuid/ticket1337/trac_1337.patch) by gfurnish created at 2008-03-09 01:12:14\n\ndouble free fix (needs test all)",
+    "body": "Attachment [trac_1337.patch](tarball://root/attachments/some-uuid/ticket1337/trac_1337.patch) by @garyfurnish created at 2008-03-09 01:12:14\n\ndouble free fix (needs test all)",
     "created_at": "2008-03-09T01:12:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8568",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_1337.patch](tarball://root/attachments/some-uuid/ticket1337/trac_1337.patch) by gfurnish created at 2008-03-09 01:12:14
+Attachment [trac_1337.patch](tarball://root/attachments/some-uuid/ticket1337/trac_1337.patch) by @garyfurnish created at 2008-03-09 01:12:14
 
 double free fix (needs test all)
 
@@ -691,7 +691,7 @@ archive/issue_comments_008570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1337#issuecomment-8570",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

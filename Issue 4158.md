@@ -14,7 +14,7 @@ archive/issues_004158.json:
     "title": "system dependent doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4158",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

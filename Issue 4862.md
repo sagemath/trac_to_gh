@@ -3,7 +3,7 @@
 archive/issues_004862.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  schilly\n\n1. The name of it in experimental is macaulay2-20061014.p1.spkg but it should be macaulay2-20081014.p1.spkg\n\n2. If you do `export MAKE=\"make -j4\"` then the build fails as follows:\n\n```\nchecking for gmake... make -j20\nchecking whether make -j20 is GNU make... ./configure: line 1497: make -j20: command not found\nconfigure: make -j20: GNU make is required\n```\n\n\nThis could be fixed by not using $MAKE to do anything in parallel, which would be better than just having it break.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4862\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @haraldschilly\n\n1. The name of it in experimental is macaulay2-20061014.p1.spkg but it should be macaulay2-20081014.p1.spkg\n\n2. If you do `export MAKE=\"make -j4\"` then the build fails as follows:\n\n```\nchecking for gmake... make -j20\nchecking whether make -j20 is GNU make... ./configure: line 1497: make -j20: command not found\nconfigure: make -j20: GNU make is required\n```\n\n\nThis could be fixed by not using $MAKE to do anything in parallel, which would be better than just having it break.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4862\n\n",
     "created_at": "2008-12-24T02:16:14Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_004862.json:
     "title": "two trivial-to-fix issues with the macaulay2 spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4862",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  schilly
+CC:  @haraldschilly
 
 1. The name of it in experimental is macaulay2-20061014.p1.spkg but it should be macaulay2-20081014.p1.spkg
 
@@ -50,7 +50,7 @@ archive/issue_comments_036851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4862#issuecomment-36851",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_036853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4862#issuecomment-36853",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_036855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4862#issuecomment-36855",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

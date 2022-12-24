@@ -3,7 +3,7 @@
 archive/issues_005969.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  boothby\n\nThis will depend on #5882.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5969\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  boothby\n\nThis will depend on #5882.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5969\n\n",
     "created_at": "2009-05-03T05:49:30Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005969.json:
     "title": "implement computation of rational cuspidal subgroups of modular abelian varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5969",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  boothby
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5969
 archive/issue_comments_047309.json:
 ```json
 {
-    "body": "Attachment [trac_5969-part2.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part2.patch) by was created at 2009-09-16 04:50:01",
+    "body": "Attachment [trac_5969-part2.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part2.patch) by @williamstein created at 2009-09-16 04:50:01",
     "created_at": "2009-09-16T04:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5969#issuecomment-47309",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5969-part2.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part2.patch) by was created at 2009-09-16 04:50:01
+Attachment [trac_5969-part2.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part2.patch) by @williamstein created at 2009-09-16 04:50:01
 
 
 
@@ -52,16 +52,16 @@ Attachment [trac_5969-part2.patch](tarball://root/attachments/some-uuid/ticket59
 archive/issue_comments_047310.json:
 ```json
 {
-    "body": "Attachment [trac-5969-part3.patch](tarball://root/attachments/some-uuid/ticket5969/trac-5969-part3.patch) by was created at 2010-01-21 19:36:24",
+    "body": "Attachment [trac-5969-part3.patch](tarball://root/attachments/some-uuid/ticket5969/trac-5969-part3.patch) by @williamstein created at 2010-01-21 19:36:24",
     "created_at": "2010-01-21T19:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5969#issuecomment-47310",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-5969-part3.patch](tarball://root/attachments/some-uuid/ticket5969/trac-5969-part3.patch) by was created at 2010-01-21 19:36:24
+Attachment [trac-5969-part3.patch](tarball://root/attachments/some-uuid/ticket5969/trac-5969-part3.patch) by @williamstein created at 2010-01-21 19:36:24
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_047311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5969#issuecomment-47311",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_047312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5969#issuecomment-47312",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing status from new to needs_review.
 archive/issue_comments_047313.json:
 ```json
 {
-    "body": "Attachment [trac_5969-part4.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part4.patch) by was created at 2010-03-30 00:47:12\n\nI just checked that all four patches apply fine to sage-4.3.5 still with no rebasing necessary.",
+    "body": "Attachment [trac_5969-part4.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part4.patch) by @williamstein created at 2010-03-30 00:47:12\n\nI just checked that all four patches apply fine to sage-4.3.5 still with no rebasing necessary.",
     "created_at": "2010-03-30T00:47:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5969#issuecomment-47313",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5969-part4.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part4.patch) by was created at 2010-03-30 00:47:12
+Attachment [trac_5969-part4.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part4.patch) by @williamstein created at 2010-03-30 00:47:12
 
 I just checked that all four patches apply fine to sage-4.3.5 still with no rebasing necessary.
 
@@ -133,7 +133,7 @@ archive/issue_comments_047314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5969#issuecomment-47314",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_047315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5969#issuecomment-47315",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_047316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5969#issuecomment-47316",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -208,16 +208,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_047317.json:
 ```json
 {
-    "body": "Attachment [trac_5969-part5.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part5.patch) by was created at 2010-04-23 23:36:57\n\nIt turns out that part 2 fixes a *MAJOR* bug in SNF for matrices over ZZ in an edge case.  The doctest in finitely generated modules was just wrong (ouch).    I carefully checked through this with Robert Bradshaw, and posted a patch that updates the doctest.",
+    "body": "Attachment [trac_5969-part5.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part5.patch) by @williamstein created at 2010-04-23 23:36:57\n\nIt turns out that part 2 fixes a *MAJOR* bug in SNF for matrices over ZZ in an edge case.  The doctest in finitely generated modules was just wrong (ouch).    I carefully checked through this with Robert Bradshaw, and posted a patch that updates the doctest.",
     "created_at": "2010-04-23T23:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5969#issuecomment-47317",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5969-part5.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part5.patch) by was created at 2010-04-23 23:36:57
+Attachment [trac_5969-part5.patch](tarball://root/attachments/some-uuid/ticket5969/trac_5969-part5.patch) by @williamstein created at 2010-04-23 23:36:57
 
 It turns out that part 2 fixes a *MAJOR* bug in SNF for matrices over ZZ in an edge case.  The doctest in finitely generated modules was just wrong (ouch).    I carefully checked through this with Robert Bradshaw, and posted a patch that updates the doctest.
 
@@ -233,7 +233,7 @@ archive/issue_comments_047318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5969#issuecomment-47318",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_047319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5969#issuecomment-47319",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_047320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5969#issuecomment-47320",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003842.json:
     "title": "notebook -- major bug in how javascript <script> tags are interpreted by the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3842",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3842
 archive/issue_comments_027325.json:
 ```json
 {
-    "body": "Attachment [sage-3842.patch](tarball://root/attachments/some-uuid/ticket3842/sage-3842.patch) by was created at 2008-08-14 01:57:24",
+    "body": "Attachment [sage-3842.patch](tarball://root/attachments/some-uuid/ticket3842/sage-3842.patch) by @williamstein created at 2008-08-14 01:57:24",
     "created_at": "2008-08-14T01:57:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3842#issuecomment-27325",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3842.patch](tarball://root/attachments/some-uuid/ticket3842/sage-3842.patch) by was created at 2008-08-14 01:57:24
+Attachment [sage-3842.patch](tarball://root/attachments/some-uuid/ticket3842/sage-3842.patch) by @williamstein created at 2008-08-14 01:57:24
 
 
 

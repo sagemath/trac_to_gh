@@ -14,7 +14,7 @@ archive/issues_002288.json:
     "title": "tutorial -- fix some typos (easy)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2288",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: wdjoyner
@@ -114,16 +114,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2288
 archive/issue_comments_015173.json:
 ```json
 {
-    "body": "Attachment [442.patch](tarball://root/attachments/some-uuid/ticket2288/442.patch) by wdj created at 2008-02-24 22:13:12",
+    "body": "Attachment [442.patch](tarball://root/attachments/some-uuid/ticket2288/442.patch) by @wdjoyner created at 2008-02-24 22:13:12",
     "created_at": "2008-02-24T22:13:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2288#issuecomment-15173",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [442.patch](tarball://root/attachments/some-uuid/ticket2288/442.patch) by wdj created at 2008-02-24 22:13:12
+Attachment [442.patch](tarball://root/attachments/some-uuid/ticket2288/442.patch) by @wdjoyner created at 2008-02-24 22:13:12
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_015174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2288#issuecomment-15174",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

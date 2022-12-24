@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3009
 archive/issue_comments_020688.json:
 ```json
 {
-    "body": "Attachment [3009_tex.patch](tarball://root/attachments/some-uuid/ticket3009/3009_tex.patch) by jwmerrill created at 2008-09-14 05:59:12",
+    "body": "Attachment [3009_tex.patch](tarball://root/attachments/some-uuid/ticket3009/3009_tex.patch) by @jicama created at 2008-09-14 05:59:12",
     "created_at": "2008-09-14T05:59:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3009#issuecomment-20688",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Attachment [3009_tex.patch](tarball://root/attachments/some-uuid/ticket3009/3009_tex.patch) by jwmerrill created at 2008-09-14 05:59:12
+Attachment [3009_tex.patch](tarball://root/attachments/some-uuid/ticket3009/3009_tex.patch) by @jicama created at 2008-09-14 05:59:12
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_020689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3009#issuecomment-20689",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -86,16 +86,16 @@ I did a regex search on all the tex documentation and all the docstrings for the
 archive/issue_comments_020690.json:
 ```json
 {
-    "body": "Changing assignee from tba to jwmerrill.",
+    "body": "Changing assignee from tba to @jicama.",
     "created_at": "2008-09-14T06:10:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3009#issuecomment-20690",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Changing assignee from tba to jwmerrill.
+Changing assignee from tba to @jicama.
 
 
 

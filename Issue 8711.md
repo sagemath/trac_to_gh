@@ -14,7 +14,7 @@ archive/issues_008711.json:
     "title": "fix warnings when building the ref manual (4.4.alpha0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8711",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -118,7 +118,7 @@ archive/issue_comments_079489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8711#issuecomment-79489",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_079490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8711#issuecomment-79490",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007725.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  roed\n\nIn Sage 4.3.rc0 it is possible to cause a segmentation fault as described in this message:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/35fd7617cf3c89a5?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/7725\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @roed314\n\nIn Sage 4.3.rc0 it is possible to cause a segmentation fault as described in this message:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/35fd7617cf3c89a5?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/7725\n\n",
     "created_at": "2009-12-17T17:54:29Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_007725.json:
     "title": "Segmentation fault in coerce_actions.c",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7725",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  roed
+CC:  @roed314
 
 In Sage 4.3.rc0 it is possible to cause a segmentation fault as described in this message:
 
@@ -41,7 +41,7 @@ archive/issue_comments_066375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7725#issuecomment-66375",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_066376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7725#issuecomment-66376",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -72,16 +72,16 @@ Since the issue is fixed by #7718 I am changing the status to fixed.
 archive/issue_comments_066377.json:
 ```json
 {
-    "body": "Changing assignee from robertwb to bump.",
+    "body": "Changing assignee from @robertwb to @dwbump.",
     "created_at": "2009-12-18T16:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7725#issuecomment-66377",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Changing assignee from robertwb to bump.
+Changing assignee from @robertwb to @dwbump.
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_066378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7725#issuecomment-66378",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_066379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7725#issuecomment-66379",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 

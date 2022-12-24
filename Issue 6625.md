@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6625
 archive/issue_comments_054277.json:
 ```json
 {
-    "body": "Attachment [scripts_6625_no_x_bit.patch](tarball://root/attachments/some-uuid/ticket6625/scripts_6625_no_x_bit.patch) by wjp created at 2010-01-19 02:18:05\n\nThe `sage-make_devel_packages` explicitly set the x bit on all `sage-*` files.",
+    "body": "Attachment [scripts_6625_no_x_bit.patch](tarball://root/attachments/some-uuid/ticket6625/scripts_6625_no_x_bit.patch) by @wjp created at 2010-01-19 02:18:05\n\nThe `sage-make_devel_packages` explicitly set the x bit on all `sage-*` files.",
     "created_at": "2010-01-19T02:18:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6625#issuecomment-54277",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [scripts_6625_no_x_bit.patch](tarball://root/attachments/some-uuid/ticket6625/scripts_6625_no_x_bit.patch) by wjp created at 2010-01-19 02:18:05
+Attachment [scripts_6625_no_x_bit.patch](tarball://root/attachments/some-uuid/ticket6625/scripts_6625_no_x_bit.patch) by @wjp created at 2010-01-19 02:18:05
 
 The `sage-make_devel_packages` explicitly set the x bit on all `sage-*` files.
 
@@ -76,7 +76,7 @@ archive/issue_comments_054278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6625#issuecomment-54278",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_054281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6625#issuecomment-54281",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_054282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6625#issuecomment-54282",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 

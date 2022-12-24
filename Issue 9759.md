@@ -3,7 +3,7 @@
 archive/issues_009759.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jhpalmieri\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/67feb1b840ff2710/90a82acffe8f10de#90a82acffe8f10de):\n\n```\nOn t2, I'm getting a failure:\n\nsage -t  -long devel/sage/sage/matrix/matrix2.pyx\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.5.3.alpha1/devel/sage-main/sage/matrix/\nmatrix2.pyx\", line 6406:\n    sage: all(imag(e) < 1e-15 for e in eigs)\nExpected:\n    True\nGot:\n    False\n\nThis looks like numerical noise: if I replace 1e-15 by 1e-14, it passes.  Has anyone else seen this?  Could it possibly be dependent on ATLAS (e.g., the load on the system when it's tuning itself)? \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9760\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/67feb1b840ff2710/90a82acffe8f10de#90a82acffe8f10de):\n\n```\nOn t2, I'm getting a failure:\n\nsage -t  -long devel/sage/sage/matrix/matrix2.pyx\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.5.3.alpha1/devel/sage-main/sage/matrix/\nmatrix2.pyx\", line 6406:\n    sage: all(imag(e) < 1e-15 for e in eigs)\nExpected:\n    True\nGot:\n    False\n\nThis looks like numerical noise: if I replace 1e-15 by 1e-14, it passes.  Has anyone else seen this?  Could it possibly be dependent on ATLAS (e.g., the load on the system when it's tuning itself)? \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9760\n\n",
     "created_at": "2010-08-17T23:46:36Z",
     "labels": [
         "porting: Solaris",
@@ -14,12 +14,12 @@ archive/issues_009759.json:
     "title": "Possible numerical noise doctest failure in sage/matrix/matrix2.pyx on t2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9759",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: drkirkby
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 Reported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/67feb1b840ff2710/90a82acffe8f10de#90a82acffe8f10de):
 
@@ -89,7 +89,7 @@ archive/issue_comments_095592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95592",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_095593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95593",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_095594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95594",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_095596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95596",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_095597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95597",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_095598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95598",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_095599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95599",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -326,16 +326,16 @@ Changing status from new to needs_review.
 archive/issue_comments_095600.json:
 ```json
 {
-    "body": "Attachment [trac_9760-matrix2-noise.pyx](tarball://root/attachments/some-uuid/ticket9760/trac_9760-matrix2-noise.pyx) by jhpalmieri created at 2010-08-18 22:11:26",
+    "body": "Attachment [trac_9760-matrix2-noise.pyx](tarball://root/attachments/some-uuid/ticket9760/trac_9760-matrix2-noise.pyx) by @jhpalmieri created at 2010-08-18 22:11:26",
     "created_at": "2010-08-18T22:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95600",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9760-matrix2-noise.pyx](tarball://root/attachments/some-uuid/ticket9760/trac_9760-matrix2-noise.pyx) by jhpalmieri created at 2010-08-18 22:11:26
+Attachment [trac_9760-matrix2-noise.pyx](tarball://root/attachments/some-uuid/ticket9760/trac_9760-matrix2-noise.pyx) by @jhpalmieri created at 2010-08-18 22:11:26
 
 
 
@@ -349,7 +349,7 @@ archive/issue_comments_095601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95601",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -362,16 +362,16 @@ See #9765 for the "abs" issue.
 archive/issue_comments_095602.json:
 ```json
 {
-    "body": "Attachment [trac_9760-matrix2-noise.patch](tarball://root/attachments/some-uuid/ticket9760/trac_9760-matrix2-noise.patch) by jhpalmieri created at 2010-08-18 22:21:16",
+    "body": "Attachment [trac_9760-matrix2-noise.patch](tarball://root/attachments/some-uuid/ticket9760/trac_9760-matrix2-noise.patch) by @jhpalmieri created at 2010-08-18 22:21:16",
     "created_at": "2010-08-18T22:21:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95602",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9760-matrix2-noise.patch](tarball://root/attachments/some-uuid/ticket9760/trac_9760-matrix2-noise.patch) by jhpalmieri created at 2010-08-18 22:21:16
+Attachment [trac_9760-matrix2-noise.patch](tarball://root/attachments/some-uuid/ticket9760/trac_9760-matrix2-noise.patch) by @jhpalmieri created at 2010-08-18 22:21:16
 
 
 
@@ -385,7 +385,7 @@ archive/issue_comments_095603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95603",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_095607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95607",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_095608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95608",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_095610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9759#issuecomment-95610",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004479.json:
     "title": "sage/logic/logic.py contains a trivial typo: \" varaiable\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4479",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty

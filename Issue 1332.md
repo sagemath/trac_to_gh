@@ -13,7 +13,7 @@ archive/issues_001332.json:
     "title": "sage -b is really slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1332",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 Assignee: cwitty
@@ -36,7 +36,7 @@ archive/issue_comments_008526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1332#issuecomment-8526",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

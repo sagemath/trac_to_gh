@@ -3,7 +3,7 @@
 archive/issues_008504.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThis is an easy fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8504\n\n",
+    "body": "Assignee: @aghitza\n\nThis is an easy fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8504\n\n",
     "created_at": "2010-03-11T23:39:13Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008504.json:
     "title": "AbelianGroup.exponent() uses GAP (slow)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8504",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 This is an easy fix. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8504
 archive/issue_comments_076780.json:
 ```json
 {
-    "body": "Attachment [8504-ab_gp-exponent.patch](tarball://root/attachments/some-uuid/ticket8504/8504-ab_gp-exponent.patch) by robertwb created at 2010-03-11 23:45:40",
+    "body": "Attachment [8504-ab_gp-exponent.patch](tarball://root/attachments/some-uuid/ticket8504/8504-ab_gp-exponent.patch) by @robertwb created at 2010-03-11 23:45:40",
     "created_at": "2010-03-11T23:45:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8504#issuecomment-76780",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8504-ab_gp-exponent.patch](tarball://root/attachments/some-uuid/ticket8504/8504-ab_gp-exponent.patch) by robertwb created at 2010-03-11 23:45:40
+Attachment [8504-ab_gp-exponent.patch](tarball://root/attachments/some-uuid/ticket8504/8504-ab_gp-exponent.patch) by @robertwb created at 2010-03-11 23:45:40
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_076781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8504#issuecomment-76781",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_076782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8504#issuecomment-76782",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_076783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8504#issuecomment-76783",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_076784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8504#issuecomment-76784",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_076785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8504#issuecomment-76785",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

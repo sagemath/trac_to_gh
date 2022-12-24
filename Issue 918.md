@@ -14,7 +14,7 @@ archive/issues_000918.json:
     "title": "[with patch] improvements for crypto.mq module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/918",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: failure
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/918
 archive/issue_comments_005631.json:
 ```json
 {
-    "body": "Attachment [mq.patch](tarball://root/attachments/some-uuid/ticket918/mq.patch) by malb created at 2007-10-18 14:05:28",
+    "body": "Attachment [mq.patch](tarball://root/attachments/some-uuid/ticket918/mq.patch) by @malb created at 2007-10-18 14:05:28",
     "created_at": "2007-10-18T14:05:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/918#issuecomment-5631",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mq.patch](tarball://root/attachments/some-uuid/ticket918/mq.patch) by malb created at 2007-10-18 14:05:28
+Attachment [mq.patch](tarball://root/attachments/some-uuid/ticket918/mq.patch) by @malb created at 2007-10-18 14:05:28
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_005632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/918#issuecomment-5632",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_005633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/918#issuecomment-5633",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

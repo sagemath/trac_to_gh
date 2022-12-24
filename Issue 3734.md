@@ -3,7 +3,7 @@
 archive/issues_003734.json:
 ```json
 {
-    "body": "Assignee: was\n\nAs reported to sage-devel on 2008-07-19:\n\n\n```\nPuzzle question:  find a matrix with rank 0 but determinant 1:\n\nsage: type(M)\n<type 'sage.matrix.matrix_generic_dense.Matrix_generic_dense'>\nsage: M.rank()\n0\nsage: M.determinant()\n1.00000000000000\n\nAnswer:  M is 0x0:\nsage: M\n[]\nsage: [M.nrows(), M.ncols()]\n[0, 0]\n\nNow I am happy with all that (since I am computing regulators of\nelliptic curves which may have rank 0).  And with this:\nsage: M.is_invertible()\nTrue\nbut then disappointed by this:\nsage: M.inverse()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/john/sage-3.0.4/<ipython console> in <module>()\n\n/home/john/sage-3.0.4/matrix2.pyx in\nsage.matrix.matrix2.Matrix.inverse (sage/matrix/matrix2.c:19932)()\n\n/home/john/sage-3.0.4/matrix0.pyx in\nsage.matrix.matrix0.Matrix.__invert__ (sage/matrix/matrix0.c:14525)()\n\n/home/john/sage-3.0.4/matrix0.pyx in\nsage.matrix.matrix0.Matrix.__getitem__ (sage/matrix/matrix0.c:3129)()\n\nIndexError: matrix index out of range\n```\n\n\nThe matrix inversion code should catch this case and return the same matrix.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3734\n\n",
+    "body": "Assignee: @williamstein\n\nAs reported to sage-devel on 2008-07-19:\n\n\n```\nPuzzle question:  find a matrix with rank 0 but determinant 1:\n\nsage: type(M)\n<type 'sage.matrix.matrix_generic_dense.Matrix_generic_dense'>\nsage: M.rank()\n0\nsage: M.determinant()\n1.00000000000000\n\nAnswer:  M is 0x0:\nsage: M\n[]\nsage: [M.nrows(), M.ncols()]\n[0, 0]\n\nNow I am happy with all that (since I am computing regulators of\nelliptic curves which may have rank 0).  And with this:\nsage: M.is_invertible()\nTrue\nbut then disappointed by this:\nsage: M.inverse()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/john/sage-3.0.4/<ipython console> in <module>()\n\n/home/john/sage-3.0.4/matrix2.pyx in\nsage.matrix.matrix2.Matrix.inverse (sage/matrix/matrix2.c:19932)()\n\n/home/john/sage-3.0.4/matrix0.pyx in\nsage.matrix.matrix0.Matrix.__invert__ (sage/matrix/matrix0.c:14525)()\n\n/home/john/sage-3.0.4/matrix0.pyx in\nsage.matrix.matrix0.Matrix.__getitem__ (sage/matrix/matrix0.c:3129)()\n\nIndexError: matrix index out of range\n```\n\n\nThe matrix inversion code should catch this case and return the same matrix.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3734\n\n",
     "created_at": "2008-07-28T09:36:29Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003734.json:
     "title": "inverse() fails for 0 by 0 matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3734",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 As reported to sage-devel on 2008-07-19:
 
@@ -76,16 +76,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3734
 archive/issue_comments_026509.json:
 ```json
 {
-    "body": "Attachment [sage-trac3734.patch](tarball://root/attachments/some-uuid/ticket3734/sage-trac3734.patch) by cremona created at 2008-07-29 00:36:25",
+    "body": "Attachment [sage-trac3734.patch](tarball://root/attachments/some-uuid/ticket3734/sage-trac3734.patch) by @JohnCremona created at 2008-07-29 00:36:25",
     "created_at": "2008-07-29T00:36:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3734#issuecomment-26509",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac3734.patch](tarball://root/attachments/some-uuid/ticket3734/sage-trac3734.patch) by cremona created at 2008-07-29 00:36:25
+Attachment [sage-trac3734.patch](tarball://root/attachments/some-uuid/ticket3734/sage-trac3734.patch) by @JohnCremona created at 2008-07-29 00:36:25
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_026510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3734#issuecomment-26510",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_026511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3734#issuecomment-26511",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 

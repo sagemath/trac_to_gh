@@ -3,7 +3,7 @@
 archive/issues_008707.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\nKeywords: latex\n\nlatex(x) calls x._latex_() twice, and view(x) 5 times!!!\n\nFor small objects, that's fine, but when x is a graph, and latex'ing it requires calling graphviz, dot2tex, ... it is not reasonable!\n\n\n```\nsage: class blah():\n....:     def _latex_(x):\n....:         print \"coucou\"\n....:         return \"x\"\n....: \nsage: latex(blah())\ncoucou\ncoucou\nx\nsage: view(blah())\ncoucou\ncoucou\ncoucou\ncoucou\ncoucou\n```\n\n\nAnalysis:\n- latex makes use of has_latex_expr which makes a call to _latex_ but discards the result\n\n- latex_file does not reuse its calls to latex(x)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8707\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: latex\n\nlatex(x) calls x._latex_() twice, and view(x) 5 times!!!\n\nFor small objects, that's fine, but when x is a graph, and latex'ing it requires calling graphviz, dot2tex, ... it is not reasonable!\n\n\n```\nsage: class blah():\n....:     def _latex_(x):\n....:         print \"coucou\"\n....:         return \"x\"\n....: \nsage: latex(blah())\ncoucou\ncoucou\nx\nsage: view(blah())\ncoucou\ncoucou\ncoucou\ncoucou\ncoucou\n```\n\n\nAnalysis:\n- latex makes use of has_latex_expr which makes a call to _latex_ but discards the result\n\n- latex_file does not reuse its calls to latex(x)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8707\n\n",
     "created_at": "2010-04-17T21:52:29Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008707.json:
     "title": "view(x) calls x._latex_() 5 times!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8707",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -63,16 +63,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8707
 archive/issue_comments_079418.json:
 ```json
 {
-    "body": "Attachment [trac_8707-5x_faster_latex-nt.patch](tarball://root/attachments/some-uuid/ticket8707/trac_8707-5x_faster_latex-nt.patch) by nthiery created at 2010-04-17 22:10:27",
+    "body": "Attachment [trac_8707-5x_faster_latex-nt.patch](tarball://root/attachments/some-uuid/ticket8707/trac_8707-5x_faster_latex-nt.patch) by @nthiery created at 2010-04-17 22:10:27",
     "created_at": "2010-04-17T22:10:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8707#issuecomment-79418",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8707-5x_faster_latex-nt.patch](tarball://root/attachments/some-uuid/ticket8707/trac_8707-5x_faster_latex-nt.patch) by nthiery created at 2010-04-17 22:10:27
+Attachment [trac_8707-5x_faster_latex-nt.patch](tarball://root/attachments/some-uuid/ticket8707/trac_8707-5x_faster_latex-nt.patch) by @nthiery created at 2010-04-17 22:10:27
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_079419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8707#issuecomment-79419",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_079420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8707#issuecomment-79420",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_079421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8707#issuecomment-79421",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_079422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8707#issuecomment-79422",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_079423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8707#issuecomment-79423",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_079424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8707#issuecomment-79424",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_079425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8707#issuecomment-79425",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_079426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8707#issuecomment-79426",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_079427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8707#issuecomment-79427",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

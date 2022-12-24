@@ -189,7 +189,7 @@ archive/issue_comments_039306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5140#issuecomment-39306",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_039307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5140#issuecomment-39307",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -236,16 +236,16 @@ Changing priority from trivial to minor.
 archive/issue_comments_039308.json:
 ```json
 {
-    "body": "Attachment [trac_5140.patch](tarball://root/attachments/some-uuid/ticket5140/trac_5140.patch) by cremona created at 2009-02-01 16:12:58\n\nReplaces earlier patches; based on 3.3.alpha3",
+    "body": "Attachment [trac_5140.patch](tarball://root/attachments/some-uuid/ticket5140/trac_5140.patch) by @JohnCremona created at 2009-02-01 16:12:58\n\nReplaces earlier patches; based on 3.3.alpha3",
     "created_at": "2009-02-01T16:12:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5140#issuecomment-39308",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5140.patch](tarball://root/attachments/some-uuid/ticket5140/trac_5140.patch) by cremona created at 2009-02-01 16:12:58
+Attachment [trac_5140.patch](tarball://root/attachments/some-uuid/ticket5140/trac_5140.patch) by @JohnCremona created at 2009-02-01 16:12:58
 
 Replaces earlier patches; based on 3.3.alpha3
 
@@ -256,16 +256,16 @@ Replaces earlier patches; based on 3.3.alpha3
 archive/issue_comments_039309.json:
 ```json
 {
-    "body": "Attachment [trac_5140_rebase.patch](tarball://root/attachments/some-uuid/ticket5140/trac_5140_rebase.patch) by cremona created at 2009-03-18 17:33:39\n\nReplaces all previous; based on 3.4",
+    "body": "Attachment [trac_5140_rebase.patch](tarball://root/attachments/some-uuid/ticket5140/trac_5140_rebase.patch) by @JohnCremona created at 2009-03-18 17:33:39\n\nReplaces all previous; based on 3.4",
     "created_at": "2009-03-18T17:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5140#issuecomment-39309",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5140_rebase.patch](tarball://root/attachments/some-uuid/ticket5140/trac_5140_rebase.patch) by cremona created at 2009-03-18 17:33:39
+Attachment [trac_5140_rebase.patch](tarball://root/attachments/some-uuid/ticket5140/trac_5140_rebase.patch) by @JohnCremona created at 2009-03-18 17:33:39
 
 Replaces all previous; based on 3.4
 
@@ -281,7 +281,7 @@ archive/issue_comments_039310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5140#issuecomment-39310",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_039312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5140#issuecomment-39312",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_039313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5140#issuecomment-39313",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

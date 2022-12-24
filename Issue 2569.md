@@ -14,7 +14,7 @@ archive/issues_002569.json:
     "title": "Add XOR to preparser",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2569",
-    "user": "vgermrk"
+    "user": "@m-r-k"
 }
 ```
 Assignee: cwitty
@@ -71,7 +71,7 @@ archive/issue_comments_017557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2569#issuecomment-17557",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

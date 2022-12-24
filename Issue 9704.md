@@ -3,7 +3,7 @@
 archive/issues_009704.json:
 ```json
 {
-    "body": "Assignee: jason\n\nThis is confusing.  Refactor to fix it:\n\n\n```\nsage: det(matrix(2,[1,2,3,4]))\n-2\nsage: trace(matrix(2,[1,2,3,4]))\nTraceback (most recent call last)\n...\nAttributeError: 'sage.matrix.matrix_integer_dense.Matrix_integer_dense' object has no attribute 'lstrip'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9704\n\n",
+    "body": "Assignee: @jasongrout\n\nThis is confusing.  Refactor to fix it:\n\n\n```\nsage: det(matrix(2,[1,2,3,4]))\n-2\nsage: trace(matrix(2,[1,2,3,4]))\nTraceback (most recent call last)\n...\nAttributeError: 'sage.matrix.matrix_integer_dense.Matrix_integer_dense' object has no attribute 'lstrip'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9704\n\n",
     "created_at": "2010-08-07T17:31:41Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_009704.json:
     "title": "refactor \"trace\" -- make trace command call trace method on input if available",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9704",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 This is confusing.  Refactor to fix it:
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9704
 archive/issue_comments_094396.json:
 ```json
 {
-    "body": "Attachment [trac_9704-trace.patch](tarball://root/attachments/some-uuid/ticket9704/trac_9704-trace.patch) by was created at 2010-08-07 17:43:27",
+    "body": "Attachment [trac_9704-trace.patch](tarball://root/attachments/some-uuid/ticket9704/trac_9704-trace.patch) by @williamstein created at 2010-08-07 17:43:27",
     "created_at": "2010-08-07T17:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94396",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9704-trace.patch](tarball://root/attachments/some-uuid/ticket9704/trac_9704-trace.patch) by was created at 2010-08-07 17:43:27
+Attachment [trac_9704-trace.patch](tarball://root/attachments/some-uuid/ticket9704/trac_9704-trace.patch) by @williamstein created at 2010-08-07 17:43:27
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_094397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94397",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_094398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94398",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_094399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94399",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_094400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94400",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_094401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94401",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_094402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94402",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_094403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94403",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_094404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94404",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_094405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94405",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_094406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94406",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_094407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94407",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -299,16 +299,16 @@ apply instead of previous patch
 archive/issue_comments_094408.json:
 ```json
 {
-    "body": "Attachment [trac-9704-trace.patch](tarball://root/attachments/some-uuid/ticket9704/trac-9704-trace.patch) by klee created at 2010-08-14 04:22:53\n\nI incline to Jason's argument. I propose 'trace_through' as a more palpable name than Jason's 'trace_execution'.",
+    "body": "Attachment [trac-9704-trace.patch](tarball://root/attachments/some-uuid/ticket9704/trac-9704-trace.patch) by @kwankyu created at 2010-08-14 04:22:53\n\nI incline to Jason's argument. I propose 'trace_through' as a more palpable name than Jason's 'trace_execution'.",
     "created_at": "2010-08-14T04:22:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94408",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Attachment [trac-9704-trace.patch](tarball://root/attachments/some-uuid/ticket9704/trac-9704-trace.patch) by klee created at 2010-08-14 04:22:53
+Attachment [trac-9704-trace.patch](tarball://root/attachments/some-uuid/ticket9704/trac-9704-trace.patch) by @kwankyu created at 2010-08-14 04:22:53
 
 I incline to Jason's argument. I propose 'trace_through' as a more palpable name than Jason's 'trace_execution'.
 
@@ -324,7 +324,7 @@ archive/issue_comments_094409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94409",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_094410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94410",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_094411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94411",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_094412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94412",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_094413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94413",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_094414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94414",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_094415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94415",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_094416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94416",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -470,7 +470,7 @@ archive/issue_comments_094417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94417",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_094418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94418",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -524,7 +524,7 @@ archive/issue_comments_094420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94420",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -542,7 +542,7 @@ archive/issue_comments_094421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94421",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_094422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94422",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -596,7 +596,7 @@ archive/issue_comments_094424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94424",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -632,7 +632,7 @@ archive/issue_comments_094426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94426",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -652,7 +652,7 @@ archive/issue_comments_094427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94427",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -670,7 +670,7 @@ archive/issue_comments_094428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94428",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -706,7 +706,7 @@ archive/issue_comments_094430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94430",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -724,7 +724,7 @@ archive/issue_comments_094431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9704#issuecomment-94431",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 

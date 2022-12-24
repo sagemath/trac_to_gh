@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/889
 archive/issue_comments_005489.json:
 ```json
 {
-    "body": "Attachment [trac889.patch](tarball://root/attachments/some-uuid/ticket889/trac889.patch) by roed created at 2007-10-14 03:12:31\n\nFixes the doctest",
+    "body": "Attachment [trac889.patch](tarball://root/attachments/some-uuid/ticket889/trac889.patch) by @roed314 created at 2007-10-14 03:12:31\n\nFixes the doctest",
     "created_at": "2007-10-14T03:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/889#issuecomment-5489",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac889.patch](tarball://root/attachments/some-uuid/ticket889/trac889.patch) by roed created at 2007-10-14 03:12:31
+Attachment [trac889.patch](tarball://root/attachments/some-uuid/ticket889/trac889.patch) by @roed314 created at 2007-10-14 03:12:31
 
 Fixes the doctest
 
@@ -67,7 +67,7 @@ archive/issue_comments_005490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/889#issuecomment-5490",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

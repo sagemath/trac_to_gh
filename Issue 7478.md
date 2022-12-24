@@ -14,7 +14,7 @@ archive/issues_007478.json:
     "title": "Remove \"...\" in the output of TestSuite.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7478",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: tbd
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7478
 archive/issue_comments_063124.json:
 ```json
 {
-    "body": "Changing assignee from tbd to hivert.",
+    "body": "Changing assignee from tbd to @hivert.",
     "created_at": "2009-11-17T08:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7478#issuecomment-63124",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from tbd to hivert.
+Changing assignee from tbd to @hivert.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_063125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7478#issuecomment-63125",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_063126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7478#issuecomment-63126",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_063127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7478#issuecomment-63127",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_063128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7478#issuecomment-63128",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_063129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7478#issuecomment-63129",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_063130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7478#issuecomment-63130",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_063131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7478#issuecomment-63131",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -207,16 +207,16 @@ on the queue. Then either me or you fold, reupload and set positive review.
 archive/issue_comments_063132.json:
 ```json
 {
-    "body": "Attachment [trac_7478_testsuite_dots-fh.patch](tarball://root/attachments/some-uuid/ticket7478/trac_7478_testsuite_dots-fh.patch) by nthiery created at 2009-11-18 22:09:46\n\nReplying to [comment:7 hivert]:\n> There are still some minor problems (missing ```...``` in the documentation of testsuite. Aside those everything is ok for me. Nicolas can you review \n> `trac_7478_testsuite_dots-fh-review.patch`\n> on the queue. Then either me or you fold, reupload and set positive review. \n> \n> ...trying to ping you on irc for synchro.\n\nReview patch is good. Folded and uploaded. positive review.",
+    "body": "Attachment [trac_7478_testsuite_dots-fh.patch](tarball://root/attachments/some-uuid/ticket7478/trac_7478_testsuite_dots-fh.patch) by @nthiery created at 2009-11-18 22:09:46\n\nReplying to [comment:7 hivert]:\n> There are still some minor problems (missing ```...``` in the documentation of testsuite. Aside those everything is ok for me. Nicolas can you review \n> `trac_7478_testsuite_dots-fh-review.patch`\n> on the queue. Then either me or you fold, reupload and set positive review. \n> \n> ...trying to ping you on irc for synchro.\n\nReview patch is good. Folded and uploaded. positive review.",
     "created_at": "2009-11-18T22:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7478#issuecomment-63132",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7478_testsuite_dots-fh.patch](tarball://root/attachments/some-uuid/ticket7478/trac_7478_testsuite_dots-fh.patch) by nthiery created at 2009-11-18 22:09:46
+Attachment [trac_7478_testsuite_dots-fh.patch](tarball://root/attachments/some-uuid/ticket7478/trac_7478_testsuite_dots-fh.patch) by @nthiery created at 2009-11-18 22:09:46
 
 Replying to [comment:7 hivert]:
 > There are still some minor problems (missing ```...``` in the documentation of testsuite. Aside those everything is ok for me. Nicolas can you review 
@@ -239,7 +239,7 @@ archive/issue_comments_063133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7478#issuecomment-63133",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_063134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7478#issuecomment-63134",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_063135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7478#issuecomment-63135",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

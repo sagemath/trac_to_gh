@@ -3,7 +3,7 @@
 archive/issues_007774.json:
 ```json
 {
-    "body": "Assignee: was\n\nsage 4.3, 32-bit Athlon XP, OS: Debian \"lenny\", this issue appears in a local notebook as well as on www.sagenb.org using firefox 3.0.6 and epiphany\n\nWhen working in the notebook, usually after evaluating the last cell, the result is printed out and the cursor is placed in a newly created empty cell.\n\nThis behaviour changes if \"evaluate all\" is performed on the worksheet:\n\nCreate a new worksheet, type \"1+1\" into the first cell and evaluate it, then go to the menu \"action\" and perform \"evaluate all\", then go to the last empty cell again, type something like \"1+2\" and evaluate the cell (by pressing Shift-Return), the result is printed out, but instead of creating a new empty cell and placing the cursor there, no new cell will be created, the cursor is placed in the beginning of the last evaluated cell.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7774\n\n",
+    "body": "Assignee: @williamstein\n\nsage 4.3, 32-bit Athlon XP, OS: Debian \"lenny\", this issue appears in a local notebook as well as on www.sagenb.org using firefox 3.0.6 and epiphany\n\nWhen working in the notebook, usually after evaluating the last cell, the result is printed out and the cursor is placed in a newly created empty cell.\n\nThis behaviour changes if \"evaluate all\" is performed on the worksheet:\n\nCreate a new worksheet, type \"1+1\" into the first cell and evaluate it, then go to the menu \"action\" and perform \"evaluate all\", then go to the last empty cell again, type something like \"1+2\" and evaluate the cell (by pressing Shift-Return), the result is printed out, but instead of creating a new empty cell and placing the cursor there, no new cell will be created, the cursor is placed in the beginning of the last evaluated cell.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7774\n\n",
     "created_at": "2009-12-27T16:10:19Z",
     "labels": [
         "notebook",
@@ -17,7 +17,7 @@ archive/issues_007774.json:
     "user": "ggrafendorfer"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 sage 4.3, 32-bit Athlon XP, OS: Debian "lenny", this issue appears in a local notebook as well as on www.sagenb.org using firefox 3.0.6 and epiphany
 
@@ -44,7 +44,7 @@ archive/issue_comments_067030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7774#issuecomment-67030",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_067031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7774#issuecomment-67031",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_067032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7774#issuecomment-67032",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_067033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7774#issuecomment-67033",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_067034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7774#issuecomment-67034",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_067035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7774#issuecomment-67035",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

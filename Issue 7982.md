@@ -14,7 +14,7 @@ archive/issues_007982.json:
     "title": "sage_fortran on Open Solaris 64 bit is the wrong thing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7982",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -114,7 +114,7 @@ archive/issue_comments_069684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7982#issuecomment-69684",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_069685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7982#issuecomment-69685",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_069688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7982#issuecomment-69688",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_069689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7982#issuecomment-69689",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -277,16 +277,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069690.json:
 ```json
 {
-    "body": "Attachment [fortran-20100118.p0.patch](tarball://root/attachments/some-uuid/ticket7982/fortran-20100118.p0.patch) by jsp created at 2010-02-22 23:23:30\n\nMade a new spkg:\n\n[http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch](http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch)\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.3.alpha1$ cat local/bin/sage_fortran \n#!/bin/sh \n\n/usr/local/gcc-4.4.2/bin/gfortran -m64 -fPIC $@\n\n```\n\n\nAnd on hawk:\n\n\n```\n-bash-3.2$ file local/lib/*fortran*\nlocal/lib/libgfortran.so:       ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n-bash-3.2$ \n\n```\n\n\nJaap",
+    "body": "Attachment [fortran-20100118.p0.patch](tarball://root/attachments/some-uuid/ticket7982/fortran-20100118.p0.patch) by @jaapspies created at 2010-02-22 23:23:30\n\nMade a new spkg:\n\n[http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch](http://boxen.math.washington.edu/home/jsp/ports/fortran-20100118.p0.patch)\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.3.alpha1$ cat local/bin/sage_fortran \n#!/bin/sh \n\n/usr/local/gcc-4.4.2/bin/gfortran -m64 -fPIC $@\n\n```\n\n\nAnd on hawk:\n\n\n```\n-bash-3.2$ file local/lib/*fortran*\nlocal/lib/libgfortran.so:       ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n-bash-3.2$ \n\n```\n\n\nJaap",
     "created_at": "2010-02-22T23:23:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7982#issuecomment-69690",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [fortran-20100118.p0.patch](tarball://root/attachments/some-uuid/ticket7982/fortran-20100118.p0.patch) by jsp created at 2010-02-22 23:23:30
+Attachment [fortran-20100118.p0.patch](tarball://root/attachments/some-uuid/ticket7982/fortran-20100118.p0.patch) by @jaapspies created at 2010-02-22 23:23:30
 
 Made a new spkg:
 
@@ -328,7 +328,7 @@ archive/issue_comments_069691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7982#issuecomment-69691",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_069693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7982#issuecomment-69693",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_069694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7982#issuecomment-69694",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_069695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7982#issuecomment-69695",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -468,7 +468,7 @@ archive/issue_comments_069697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7982#issuecomment-69697",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_069698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7982#issuecomment-69698",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_069699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7982#issuecomment-69699",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_069702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7982#issuecomment-69702",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

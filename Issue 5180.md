@@ -3,7 +3,7 @@
 archive/issues_005180.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  craigcitro georgsweber\n\nKeywords: congruence subgroups\n\nThe attached patch splits up the code for congruence subgroups into several files in a directory sage/modular/congroups. The old file sage/modular/congroup.py still exists, so pickles created with previous versions should unpickle safely under the new one.\n\nI've added a little functionality in the process: congruence subgroups can now calculate the width and regularity of their cusps, and their number of elliptic points.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5180\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro georgsweber\n\nKeywords: congruence subgroups\n\nThe attached patch splits up the code for congruence subgroups into several files in a directory sage/modular/congroups. The old file sage/modular/congroup.py still exists, so pickles created with previous versions should unpickle safely under the new one.\n\nI've added a little functionality in the process: congruence subgroups can now calculate the width and regularity of their cusps, and their number of elliptic points.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5180\n\n",
     "created_at": "2009-02-04T18:35:29Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_005180.json:
     "title": "[with patch, needs review] Improvements to congruence subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5180",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  craigcitro georgsweber
+CC:  @craigcitro georgsweber
 
 Keywords: congruence subgroups
 
@@ -43,7 +43,7 @@ archive/issue_comments_039716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5180#issuecomment-39716",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -56,16 +56,16 @@ Oops, just realised that is the wrong patch -- wait a moment
 archive/issue_comments_039717.json:
 ```json
 {
-    "body": "Changing assignee from craigcitro to davidloeffler.",
+    "body": "Changing assignee from @craigcitro to @loefflerd.",
     "created_at": "2009-02-04T18:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5180#issuecomment-39717",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from craigcitro to davidloeffler.
+Changing assignee from @craigcitro to @loefflerd.
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_039718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5180#issuecomment-39718",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_039719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5180#issuecomment-39719",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -110,16 +110,16 @@ Changing status from new to assigned.
 archive/issue_comments_039720.json:
 ```json
 {
-    "body": "Attachment [congroups.patch](tarball://root/attachments/some-uuid/ticket5180/congroups.patch) by davidloeffler created at 2009-02-04 19:10:27\n\nOK, that's the right patch (replacing the old one).",
+    "body": "Attachment [congroups.patch](tarball://root/attachments/some-uuid/ticket5180/congroups.patch) by @loefflerd created at 2009-02-04 19:10:27\n\nOK, that's the right patch (replacing the old one).",
     "created_at": "2009-02-04T19:10:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5180#issuecomment-39720",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [congroups.patch](tarball://root/attachments/some-uuid/ticket5180/congroups.patch) by davidloeffler created at 2009-02-04 19:10:27
+Attachment [congroups.patch](tarball://root/attachments/some-uuid/ticket5180/congroups.patch) by @loefflerd created at 2009-02-04 19:10:27
 
 OK, that's the right patch (replacing the old one).
 
@@ -157,7 +157,7 @@ archive/issue_comments_039722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5180#issuecomment-39722",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -194,16 +194,16 @@ David
 archive/issue_comments_039723.json:
 ```json
 {
-    "body": "Attachment [5180-arithgroups.patch](tarball://root/attachments/some-uuid/ticket5180/5180-arithgroups.patch) by davidloeffler created at 2009-03-23 17:34:46\n\nreplaces previous patch; rebased to 3.4",
+    "body": "Attachment [5180-arithgroups.patch](tarball://root/attachments/some-uuid/ticket5180/5180-arithgroups.patch) by @loefflerd created at 2009-03-23 17:34:46\n\nreplaces previous patch; rebased to 3.4",
     "created_at": "2009-03-23T17:34:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5180#issuecomment-39723",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [5180-arithgroups.patch](tarball://root/attachments/some-uuid/ticket5180/5180-arithgroups.patch) by davidloeffler created at 2009-03-23 17:34:46
+Attachment [5180-arithgroups.patch](tarball://root/attachments/some-uuid/ticket5180/5180-arithgroups.patch) by @loefflerd created at 2009-03-23 17:34:46
 
 replaces previous patch; rebased to 3.4
 
@@ -219,7 +219,7 @@ archive/issue_comments_039724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5180#issuecomment-39724",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_039725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5180#issuecomment-39725",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -250,16 +250,16 @@ For some reason Mercurial seems to be extremely unwilling to accept me adding a 
 archive/issue_comments_039726.json:
 ```json
 {
-    "body": "Attachment [5180-patch2.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch2.patch) by davidloeffler created at 2009-03-23 18:39:24\n\nmicro-patch: apply on top of previous patch",
+    "body": "Attachment [5180-patch2.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch2.patch) by @loefflerd created at 2009-03-23 18:39:24\n\nmicro-patch: apply on top of previous patch",
     "created_at": "2009-03-23T18:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5180#issuecomment-39726",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [5180-patch2.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch2.patch) by davidloeffler created at 2009-03-23 18:39:24
+Attachment [5180-patch2.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch2.patch) by @loefflerd created at 2009-03-23 18:39:24
 
 micro-patch: apply on top of previous patch
 
@@ -270,16 +270,16 @@ micro-patch: apply on top of previous patch
 archive/issue_comments_039727.json:
 ```json
 {
-    "body": "Attachment [5180-patch3-unpickling.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch3-unpickling.patch) by davidloeffler created at 2009-03-25 12:09:34\n\nApply over previous two patches",
+    "body": "Attachment [5180-patch3-unpickling.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch3-unpickling.patch) by @loefflerd created at 2009-03-25 12:09:34\n\nApply over previous two patches",
     "created_at": "2009-03-25T12:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5180#issuecomment-39727",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [5180-patch3-unpickling.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch3-unpickling.patch) by davidloeffler created at 2009-03-25 12:09:34
+Attachment [5180-patch3-unpickling.patch](tarball://root/attachments/some-uuid/ticket5180/5180-patch3-unpickling.patch) by @loefflerd created at 2009-03-25 12:09:34
 
 Apply over previous two patches
 
@@ -295,7 +295,7 @@ archive/issue_comments_039728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5180#issuecomment-39728",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_039735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5180#issuecomment-39735",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

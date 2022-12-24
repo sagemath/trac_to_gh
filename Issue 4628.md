@@ -14,7 +14,7 @@ archive/issues_004628.json:
     "title": "[with patch; needs review] sage-3.2.1.alpha1 -- setup.py build system is foobar'd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4628",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4628
 archive/issue_comments_034801.json:
 ```json
 {
-    "body": "Attachment [sage-4628.patch](tarball://root/attachments/some-uuid/ticket4628/sage-4628.patch) by was created at 2008-11-26 22:35:02",
+    "body": "Attachment [sage-4628.patch](tarball://root/attachments/some-uuid/ticket4628/sage-4628.patch) by @williamstein created at 2008-11-26 22:35:02",
     "created_at": "2008-11-26T22:35:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4628#issuecomment-34801",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4628.patch](tarball://root/attachments/some-uuid/ticket4628/sage-4628.patch) by was created at 2008-11-26 22:35:02
+Attachment [sage-4628.patch](tarball://root/attachments/some-uuid/ticket4628/sage-4628.patch) by @williamstein created at 2008-11-26 22:35:02
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_034802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4628#issuecomment-34802",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

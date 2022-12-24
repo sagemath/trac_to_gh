@@ -14,7 +14,7 @@ archive/issues_000413.json:
     "title": "saving non-evaluated cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/413",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -56,7 +56,7 @@ archive/issue_comments_002038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/413#issuecomment-2038",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

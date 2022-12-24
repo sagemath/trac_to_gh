@@ -3,7 +3,7 @@
 archive/issues_005521.json:
 ```json
 {
-    "body": "Assignee: malb\n\nAfter converting QQ to Magma it suddenly stops pickling!\n\n\n```\nwstein@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: loads(dumps(QQ))\nRational Field\nsage: magma(QQ)\nRational Field\nsage: loads(dumps(QQ))\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/wstein/sage/temp/sage.math.washington.edu/13063/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:6159)()\n\nRuntimeError: (TypeError(RuntimeError('Error evaluating Magma code.\\nIN:_sage_[3]:=Rational Field;\\nOUT:\\n>> _sage_[3]:=Rational Field;\\n                       ^\\nUser error: bad syntax',),), <function reduce_load at 0x11318c0>, (Magma, 'Rational Field'))\ninvalid data stream\ninvalid load key, 'x'.\nUnable to load pickled data.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5521\n\n",
+    "body": "Assignee: @malb\n\nAfter converting QQ to Magma it suddenly stops pickling!\n\n\n```\nwstein@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: loads(dumps(QQ))\nRational Field\nsage: magma(QQ)\nRational Field\nsage: loads(dumps(QQ))\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/wstein/sage/temp/sage.math.washington.edu/13063/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:6159)()\n\nRuntimeError: (TypeError(RuntimeError('Error evaluating Magma code.\\nIN:_sage_[3]:=Rational Field;\\nOUT:\\n>> _sage_[3]:=Rational Field;\\n                       ^\\nUser error: bad syntax',),), <function reduce_load at 0x11318c0>, (Magma, 'Rational Field'))\ninvalid data stream\ninvalid load key, 'x'.\nUnable to load pickled data.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5521\n\n",
     "created_at": "2009-03-14T22:39:00Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_005521.json:
     "title": "fix serious bug in pickling the rational numbers and the magma interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5521",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 After converting QQ to Magma it suddenly stops pickling!
 

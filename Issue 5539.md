@@ -14,7 +14,7 @@ archive/issues_005539.json:
     "title": "\"sage -docbuild\" could use a better error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5539",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tba
@@ -44,7 +44,7 @@ archive/issue_comments_043091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5539#issuecomment-43091",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_043092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5539#issuecomment-43092",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -75,16 +75,16 @@ Here's a patch which doesn't do what you're asking, but tells you how to get the
 archive/issue_comments_043093.json:
 ```json
 {
-    "body": "Attachment [trac_5539.patch](tarball://root/attachments/some-uuid/ticket5539/trac_5539.patch) by jhpalmieri created at 2009-06-10 21:58:02",
+    "body": "Attachment [trac_5539.patch](tarball://root/attachments/some-uuid/ticket5539/trac_5539.patch) by @jhpalmieri created at 2009-06-10 21:58:02",
     "created_at": "2009-06-10T21:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5539#issuecomment-43093",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_5539.patch](tarball://root/attachments/some-uuid/ticket5539/trac_5539.patch) by jhpalmieri created at 2009-06-10 21:58:02
+Attachment [trac_5539.patch](tarball://root/attachments/some-uuid/ticket5539/trac_5539.patch) by @jhpalmieri created at 2009-06-10 21:58:02
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_043095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5539#issuecomment-43095",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003793.json:
 ```json
 {
-    "body": "Assignee: was\n\nA few of the doctests in `ell_rational_field.py` fail when the optional package database_cremona_ellcurve-20071019 is installed, mainly because for curves in the database the gens() as supplied by the database may differ from those computed on the fly.  (In almost all cases the generators are not uniquely determined, being the generators of a finitely-generated abelian group.  We have put some thought into how to make the generators canonical but have not yet succeeded.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3793\n\n",
+    "body": "Assignee: @williamstein\n\nA few of the doctests in `ell_rational_field.py` fail when the optional package database_cremona_ellcurve-20071019 is installed, mainly because for curves in the database the gens() as supplied by the database may differ from those computed on the fly.  (In almost all cases the generators are not uniquely determined, being the generators of a finitely-generated abelian group.  We have put some thought into how to make the generators canonical but have not yet succeeded.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3793\n\n",
     "created_at": "2008-08-09T12:51:34Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_003793.json:
     "title": "Some elliptic curve doctests fail when the optional database is installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3793",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 A few of the doctests in `ell_rational_field.py` fail when the optional package database_cremona_ellcurve-20071019 is installed, mainly because for curves in the database the gens() as supplied by the database may differ from those computed on the fly.  (In almost all cases the generators are not uniquely determined, being the generators of a finitely-generated abelian group.  We have put some thought into how to make the generators canonical but have not yet succeeded.)
 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3793
 archive/issue_comments_026969.json:
 ```json
 {
-    "body": "Attachment [10109.patch](tarball://root/attachments/some-uuid/ticket3793/10109.patch) by cremona created at 2008-08-09 12:54:54\n\nTo test this you should really test the doctests in ell_rational_field.py both before and after installing the database.",
+    "body": "Attachment [10109.patch](tarball://root/attachments/some-uuid/ticket3793/10109.patch) by @JohnCremona created at 2008-08-09 12:54:54\n\nTo test this you should really test the doctests in ell_rational_field.py both before and after installing the database.",
     "created_at": "2008-08-09T12:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3793#issuecomment-26969",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [10109.patch](tarball://root/attachments/some-uuid/ticket3793/10109.patch) by cremona created at 2008-08-09 12:54:54
+Attachment [10109.patch](tarball://root/attachments/some-uuid/ticket3793/10109.patch) by @JohnCremona created at 2008-08-09 12:54:54
 
 To test this you should really test the doctests in ell_rational_field.py both before and after installing the database.
 
@@ -58,7 +58,7 @@ archive/issue_comments_026970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3793#issuecomment-26970",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_026971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3793#issuecomment-26971",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_026972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3793#issuecomment-26972",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

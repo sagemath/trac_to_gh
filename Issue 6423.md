@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6423
 archive/issue_comments_051569.json:
 ```json
 {
-    "body": "Changing assignee from tbd to burcin.",
+    "body": "Changing assignee from tbd to @burcin.",
     "created_at": "2009-07-05T05:51:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6423#issuecomment-51569",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to burcin.
+Changing assignee from tbd to @burcin.
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_051570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6423#issuecomment-51570",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_051571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6423#issuecomment-51571",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -111,16 +111,16 @@ This is fixed by the spkg and patch at #6699.  I will put up a patch with a doct
 archive/issue_comments_051572.json:
 ```json
 {
-    "body": "Changing assignee from burcin to AlexGhitza.",
+    "body": "Changing assignee from @burcin to @aghitza.",
     "created_at": "2009-08-24T09:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6423#issuecomment-51572",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from burcin to AlexGhitza.
+Changing assignee from @burcin to @aghitza.
 
 
 
@@ -134,7 +134,7 @@ archive/issue_comments_051573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6423#issuecomment-51573",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_051574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6423#issuecomment-51574",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_051575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6423#issuecomment-51575",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_051576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6423#issuecomment-51576",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_051577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6423#issuecomment-51577",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_051578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6423#issuecomment-51578",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -292,16 +292,16 @@ Based on 4.3.alpha1
 archive/issue_comments_051579.json:
 ```json
 {
-    "body": "Attachment [trac_6423-exp.patch](tarball://root/attachments/some-uuid/ticket6423/trac_6423-exp.patch) by robert.marik created at 2009-12-23 08:38:28\n\nPositive review! Tested on 4.3.rc0 and got only errors which have been reported on sage-devel and are not relevent to this ticket. Tested together with #7745 and #4142.\n\nPositive review, thanks for upgrading.",
+    "body": "Attachment [trac_6423-exp.patch](tarball://root/attachments/some-uuid/ticket6423/trac_6423-exp.patch) by @robert-marik created at 2009-12-23 08:38:28\n\nPositive review! Tested on 4.3.rc0 and got only errors which have been reported on sage-devel and are not relevent to this ticket. Tested together with #7745 and #4142.\n\nPositive review, thanks for upgrading.",
     "created_at": "2009-12-23T08:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6423#issuecomment-51579",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_6423-exp.patch](tarball://root/attachments/some-uuid/ticket6423/trac_6423-exp.patch) by robert.marik created at 2009-12-23 08:38:28
+Attachment [trac_6423-exp.patch](tarball://root/attachments/some-uuid/ticket6423/trac_6423-exp.patch) by @robert-marik created at 2009-12-23 08:38:28
 
 Positive review! Tested on 4.3.rc0 and got only errors which have been reported on sage-devel and are not relevent to this ticket. Tested together with #7745 and #4142.
 
@@ -319,7 +319,7 @@ archive/issue_comments_051580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6423#issuecomment-51580",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_051581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6423#issuecomment-51581",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

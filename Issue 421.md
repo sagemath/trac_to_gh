@@ -3,7 +3,7 @@
 archive/issues_000421.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen printing in the notebook the input now is completely missing!\n\nIssue created by migration from https://trac.sagemath.org/ticket/421\n\n",
+    "body": "Assignee: @williamstein\n\nWhen printing in the notebook the input now is completely missing!\n\nIssue created by migration from https://trac.sagemath.org/ticket/421\n\n",
     "created_at": "2007-08-10T20:21:43Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_000421.json:
     "title": "notebook printing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/421",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When printing in the notebook the input now is completely missing!
 
@@ -37,7 +37,7 @@ archive/issue_comments_002115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/421#issuecomment-2115",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_002116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/421#issuecomment-2116",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

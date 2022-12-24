@@ -14,7 +14,7 @@ archive/issues_000281.json:
     "title": "Errors in matrix for extensions of NumberFields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/281",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: somebody
@@ -59,7 +59,7 @@ archive/issue_comments_001334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/281#issuecomment-1334",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_001335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/281#issuecomment-1335",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_001338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/281#issuecomment-1338",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_001339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/281#issuecomment-1339",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

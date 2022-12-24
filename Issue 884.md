@@ -80,7 +80,7 @@ archive/issue_comments_005458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/884#issuecomment-5458",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -93,16 +93,16 @@ Changing status from new to assigned.
 archive/issue_comments_005459.json:
 ```json
 {
-    "body": "Changing assignee from failure to roed.",
+    "body": "Changing assignee from failure to @roed314.",
     "created_at": "2007-10-14T03:13:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/884#issuecomment-5459",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Changing assignee from failure to roed.
+Changing assignee from failure to @roed314.
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_005460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/884#issuecomment-5460",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -129,16 +129,16 @@ Uncommented region that shouldn't have been commented out.
 archive/issue_comments_005461.json:
 ```json
 {
-    "body": "Attachment [trac884.patch](tarball://root/attachments/some-uuid/ticket884/trac884.patch) by roed created at 2007-10-14 03:24:34",
+    "body": "Attachment [trac884.patch](tarball://root/attachments/some-uuid/ticket884/trac884.patch) by @roed314 created at 2007-10-14 03:24:34",
     "created_at": "2007-10-14T03:24:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/884#issuecomment-5461",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac884.patch](tarball://root/attachments/some-uuid/ticket884/trac884.patch) by roed created at 2007-10-14 03:24:34
+Attachment [trac884.patch](tarball://root/attachments/some-uuid/ticket884/trac884.patch) by @roed314 created at 2007-10-14 03:24:34
 
 
 
@@ -152,7 +152,7 @@ archive/issue_comments_005462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/884#issuecomment-5462",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_005463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/884#issuecomment-5463",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_005464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/884#issuecomment-5464",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_005465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/884#issuecomment-5465",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -219,16 +219,16 @@ Changing status from assigned to new.
 archive/issue_comments_005466.json:
 ```json
 {
-    "body": "Changing assignee from roed to was*.",
+    "body": "Changing assignee from @roed314 to was*.",
     "created_at": "2007-10-14T19:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/884#issuecomment-5466",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from roed to was*.
+Changing assignee from @roed314 to was*.
 
 
 
@@ -242,7 +242,7 @@ archive/issue_comments_005467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/884#issuecomment-5467",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -255,16 +255,16 @@ Changing status from new to assigned.
 archive/issue_comments_005468.json:
 ```json
 {
-    "body": "Changing assignee from was* to was.",
+    "body": "Changing assignee from was* to @williamstein.",
     "created_at": "2007-10-14T19:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/884#issuecomment-5468",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from was* to was.
+Changing assignee from was* to @williamstein.
 
 
 
@@ -278,7 +278,7 @@ archive/issue_comments_005469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/884#issuecomment-5469",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

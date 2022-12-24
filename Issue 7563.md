@@ -3,7 +3,7 @@
 archive/issues_007563.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  dimpase mvngu rlm wdj jason\n\nRecognition of interval graphs and representation of a given graph as a list of intervals\n\nIssue created by migration from https://trac.sagemath.org/ticket/7563\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @dimpase mvngu @rlmill @wdjoyner @jasongrout\n\nRecognition of interval graphs and representation of a given graph as a list of intervals\n\nIssue created by migration from https://trac.sagemath.org/ticket/7563\n\n",
     "created_at": "2009-11-30T18:18:46Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007563.json:
     "title": "Interval Graphs : recognition and interval representation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7563",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  dimpase mvngu rlm wdj jason
+CC:  @dimpase mvngu @rlmill @wdjoyner @jasongrout
 
 Recognition of interval graphs and representation of a given graph as a list of intervals
 
@@ -39,7 +39,7 @@ archive/issue_comments_064352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7563#issuecomment-64352",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_064353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7563#issuecomment-64353",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_064354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7563#issuecomment-64354",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_064355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7563#issuecomment-64355",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_064356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7563#issuecomment-64356",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -135,16 +135,16 @@ Nathann
 archive/issue_comments_064357.json:
 ```json
 {
-    "body": "Attachment [trac_7563.patch](tarball://root/attachments/some-uuid/ticket7563/trac_7563.patch) by ncohen created at 2010-06-12 20:45:06",
+    "body": "Attachment [trac_7563.patch](tarball://root/attachments/some-uuid/ticket7563/trac_7563.patch) by @nathanncohen created at 2010-06-12 20:45:06",
     "created_at": "2010-06-12T20:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7563#issuecomment-64357",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7563.patch](tarball://root/attachments/some-uuid/ticket7563/trac_7563.patch) by ncohen created at 2010-06-12 20:45:06
+Attachment [trac_7563.patch](tarball://root/attachments/some-uuid/ticket7563/trac_7563.patch) by @nathanncohen created at 2010-06-12 20:45:06
 
 
 
@@ -158,7 +158,7 @@ archive/issue_comments_064358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7563#issuecomment-64358",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_064359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7563#issuecomment-64359",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_064360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7563#issuecomment-64360",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

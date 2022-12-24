@@ -3,7 +3,7 @@
 archive/issues_005996.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  certik jdc\n\nPython file for calculating Wigner 3j, 6j, 9j, Clebsch-Gordan, Racah and Gaunt coefficients (integrals over 3 spherical\nharmonics) exactly. \n\nHas already received some positive review at \nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ca312a02de54553e\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5996\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @certik @jdchristensen\n\nPython file for calculating Wigner 3j, 6j, 9j, Clebsch-Gordan, Racah and Gaunt coefficients (integrals over 3 spherical\nharmonics) exactly. \n\nHas already received some positive review at \nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ca312a02de54553e\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5996\n\n",
     "created_at": "2009-05-06T13:27:07Z",
     "labels": [
         "calculus",
@@ -17,9 +17,9 @@ archive/issues_005996.json:
     "user": "jrasch"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  certik jdc
+CC:  @certik @jdchristensen
 
 Python file for calculating Wigner 3j, 6j, 9j, Clebsch-Gordan, Racah and Gaunt coefficients (integrals over 3 spherical
 harmonics) exactly. 
@@ -88,7 +88,7 @@ archive/issue_comments_047694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47694",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -103,16 +103,16 @@ So I'm leaving this as "needs work".
 archive/issue_comments_047695.json:
 ```json
 {
-    "body": "Attachment [trac_5996.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996.patch) by AlexGhitza created at 2009-06-01 10:58:14",
+    "body": "Attachment [trac_5996.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996.patch) by @aghitza created at 2009-06-01 10:58:14",
     "created_at": "2009-06-01T10:58:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47695",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5996.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996.patch) by AlexGhitza created at 2009-06-01 10:58:14
+Attachment [trac_5996.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996.patch) by @aghitza created at 2009-06-01 10:58:14
 
 
 
@@ -186,7 +186,7 @@ archive/issue_comments_047699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47699",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -217,16 +217,16 @@ Added path to remove all Latex formulas and replace them with text formulas in a
 archive/issue_comments_047701.json:
 ```json
 {
-    "body": "Attachment [12429.patch](tarball://root/attachments/some-uuid/ticket5996/12429.patch) by AlexGhitza created at 2009-07-11 08:56:32\n\nOK, I finally managed to get around to looking at this.  There were still some ReST issues, which I fixed in the latest patch `trac_5996_doc.patch`.  I also added the documentation to the reference manual.\n\nIf someone can double-check my patch, we're good to go.\n\nThe patches need to be applied in the order they appear on the ticket.",
+    "body": "Attachment [12429.patch](tarball://root/attachments/some-uuid/ticket5996/12429.patch) by @aghitza created at 2009-07-11 08:56:32\n\nOK, I finally managed to get around to looking at this.  There were still some ReST issues, which I fixed in the latest patch `trac_5996_doc.patch`.  I also added the documentation to the reference manual.\n\nIf someone can double-check my patch, we're good to go.\n\nThe patches need to be applied in the order they appear on the ticket.",
     "created_at": "2009-07-11T08:56:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47701",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [12429.patch](tarball://root/attachments/some-uuid/ticket5996/12429.patch) by AlexGhitza created at 2009-07-11 08:56:32
+Attachment [12429.patch](tarball://root/attachments/some-uuid/ticket5996/12429.patch) by @aghitza created at 2009-07-11 08:56:32
 
 OK, I finally managed to get around to looking at this.  There were still some ReST issues, which I fixed in the latest patch `trac_5996_doc.patch`.  I also added the documentation to the reference manual.
 
@@ -337,7 +337,7 @@ archive/issue_comments_047705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47705",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -352,16 +352,16 @@ I didn't check all the issues raised by Minh, since there are quite a few patche
 archive/issue_comments_047706.json:
 ```json
 {
-    "body": "Attachment [trac_5996_doc.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996_doc.patch) by AlexGhitza created at 2009-07-13 12:32:44\n\nOK, I think I fixed all the issues that Minh pointed out, and replaced my latest patch.\n\nIn reply to Jens' comment about latex: I have fixed things so that the docstrings do have the nice latex expressions in them, which means that the pdf and html versions of the reference manual will have nicely typeset formulae.",
+    "body": "Attachment [trac_5996_doc.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996_doc.patch) by @aghitza created at 2009-07-13 12:32:44\n\nOK, I think I fixed all the issues that Minh pointed out, and replaced my latest patch.\n\nIn reply to Jens' comment about latex: I have fixed things so that the docstrings do have the nice latex expressions in them, which means that the pdf and html versions of the reference manual will have nicely typeset formulae.",
     "created_at": "2009-07-13T12:32:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47706",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5996_doc.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996_doc.patch) by AlexGhitza created at 2009-07-13 12:32:44
+Attachment [trac_5996_doc.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996_doc.patch) by @aghitza created at 2009-07-13 12:32:44
 
 OK, I think I fixed all the issues that Minh pointed out, and replaced my latest patch.
 
@@ -461,7 +461,7 @@ Just to let people know, this has been merged in sage-4.1.1-alpha0. I can't clos
 archive/issue_comments_047711.json:
 ```json
 {
-    "body": "Changing assignee from burcin to jrasch.",
+    "body": "Changing assignee from @burcin to jrasch.",
     "created_at": "2009-07-16T21:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
@@ -470,7 +470,7 @@ archive/issue_comments_047711.json:
 }
 ```
 
-Changing assignee from burcin to jrasch.
+Changing assignee from @burcin to jrasch.
 
 
 
@@ -538,7 +538,7 @@ archive/issue_comments_047715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47715",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003979.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  chapoton\n\nKeywords: power series, composition, precision\n\nThe composition of two power series is sometimes returned with the wrong precision. A trivial example:\n\n```\nsage: pow.<u> = PowerSeriesRing(Rationals()); print (1 + O(u^4))(u)\n1\n```\n\nwhere the return value should have precision 4 rather than infinity. A more nontrivial example:\n\n```\nsage: pow.<u> = PowerSeriesRing(Rationals()); print (1 + u^2 + O(u^4))(u^2)\n1 + u^4 + O(u^10)\n```\n\nwhere the return value should have precision 8 instead of 10.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3979\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @fchapoton\n\nKeywords: power series, composition, precision\n\nThe composition of two power series is sometimes returned with the wrong precision. A trivial example:\n\n```\nsage: pow.<u> = PowerSeriesRing(Rationals()); print (1 + O(u^4))(u)\n1\n```\n\nwhere the return value should have precision 4 rather than infinity. A more nontrivial example:\n\n```\nsage: pow.<u> = PowerSeriesRing(Rationals()); print (1 + u^2 + O(u^4))(u^2)\n1 + u^4 + O(u^10)\n```\n\nwhere the return value should have precision 8 instead of 10.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3979\n\n",
     "created_at": "2008-08-28T20:16:02Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_003979.json:
     "title": "Power series composition messes up precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3979",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  chapoton
+CC:  @fchapoton
 
 Keywords: power series, composition, precision
 
@@ -55,7 +55,7 @@ archive/issue_comments_028580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28580",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_028581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28581",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -86,16 +86,16 @@ Changing component from calculus to basic arithmetic.
 archive/issue_comments_028582.json:
 ```json
 {
-    "body": "Changing assignee from burcin to somebody.",
+    "body": "Changing assignee from @burcin to somebody.",
     "created_at": "2009-04-16T11:38:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28582",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from burcin to somebody.
+Changing assignee from @burcin to somebody.
 
 
 
@@ -233,7 +233,7 @@ archive/issue_comments_028588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28588",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_028589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28589",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_028594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28594",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_028595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28595",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -522,7 +522,7 @@ archive/issue_comments_028597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28597",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -632,7 +632,7 @@ archive/issue_comments_028602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28602",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -652,7 +652,7 @@ archive/issue_comments_028603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28603",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -670,7 +670,7 @@ archive/issue_comments_028604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28604",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -749,7 +749,7 @@ archive/issue_comments_028608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28608",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -767,7 +767,7 @@ archive/issue_comments_028609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28609",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -785,7 +785,7 @@ archive/issue_comments_028610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28610",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -849,16 +849,16 @@ A good point.  The new patch (to be applied after trac_3979_power_series_substit
 archive/issue_comments_028613.json:
 ```json
 {
-    "body": "Attachment [trac_3979_power_series_substitution_rev4.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev4.patch) by chapoton created at 2012-09-24 18:56:24",
+    "body": "Attachment [trac_3979_power_series_substitution_rev4.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev4.patch) by @fchapoton created at 2012-09-24 18:56:24",
     "created_at": "2012-09-24T18:56:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28613",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_3979_power_series_substitution_rev4.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev4.patch) by chapoton created at 2012-09-24 18:56:24
+Attachment [trac_3979_power_series_substitution_rev4.patch](tarball://root/attachments/some-uuid/ticket3979/trac_3979_power_series_substitution_rev4.patch) by @fchapoton created at 2012-09-24 18:56:24
 
 
 
@@ -872,7 +872,7 @@ archive/issue_comments_028614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28614",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -890,7 +890,7 @@ archive/issue_comments_028615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28615",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -908,7 +908,7 @@ archive/issue_comments_028616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28616",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1077,7 +1077,7 @@ archive/issue_comments_028622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3979#issuecomment-28622",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

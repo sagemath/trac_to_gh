@@ -14,7 +14,7 @@ archive/issues_000794.json:
     "title": "[with patch] MPolynomial_libsingular.jacob()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/794",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/794
 archive/issue_comments_004782.json:
 ```json
 {
-    "body": "Attachment [jacob.patch](tarball://root/attachments/some-uuid/ticket794/jacob.patch) by malb created at 2007-10-02 21:19:15",
+    "body": "Attachment [jacob.patch](tarball://root/attachments/some-uuid/ticket794/jacob.patch) by @malb created at 2007-10-02 21:19:15",
     "created_at": "2007-10-02T21:19:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/794#issuecomment-4782",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [jacob.patch](tarball://root/attachments/some-uuid/ticket794/jacob.patch) by malb created at 2007-10-02 21:19:15
+Attachment [jacob.patch](tarball://root/attachments/some-uuid/ticket794/jacob.patch) by @malb created at 2007-10-02 21:19:15
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_004783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/794#issuecomment-4783",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

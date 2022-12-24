@@ -3,7 +3,7 @@
 archive/issues_007664.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jason iandrus\n\nKeywords: latex, R, jsmath\n\njsmath doesn't understand output from R, so you have to turn off typesetting for it to work.  E.g., it doesn't know what to do with this table which results from R output - I guess it's really a latex() problem.\n\n```\nsage: r.data('Cars93')\n[1] \"sage0\"\nsage: a._latex_()\n\n% latex.default(sage3, file = \"\") \n%\n\\begin{table}[!tbp]\n \\begin{center}\n \\begin{tabular}{l}\\hline\\hline\n\\multicolumn{1}{c}{}\\tabularnewline\n\\hline\nsage0\\tabularnewline\n\\hline\n\\end{tabular}\n\n\\end{center}\n\n\\end{table}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7664\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout @gvol\n\nKeywords: latex, R, jsmath\n\njsmath doesn't understand output from R, so you have to turn off typesetting for it to work.  E.g., it doesn't know what to do with this table which results from R output - I guess it's really a latex() problem.\n\n```\nsage: r.data('Cars93')\n[1] \"sage0\"\nsage: a._latex_()\n\n% latex.default(sage3, file = \"\") \n%\n\\begin{table}[!tbp]\n \\begin{center}\n \\begin{tabular}{l}\\hline\\hline\n\\multicolumn{1}{c}{}\\tabularnewline\n\\hline\nsage0\\tabularnewline\n\\hline\n\\end{tabular}\n\n\\end{center}\n\n\\end{table}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7664\n\n",
     "created_at": "2009-12-11T20:11:23Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_007664.json:
     "title": "Make sure latex doesn't do weird things with R output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7664",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tbd
 
-CC:  jason iandrus
+CC:  @jasongrout @gvol
 
 Keywords: latex, R, jsmath
 
@@ -63,7 +63,7 @@ archive/issue_comments_065630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7664#issuecomment-65630",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_065631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7664#issuecomment-65631",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_065632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7664#issuecomment-65632",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_065633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7664#issuecomment-65633",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 

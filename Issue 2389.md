@@ -3,7 +3,7 @@
 archive/issues_002389.json:
 ```json
 {
-    "body": "Assignee: cpernet\n\nThe proposed linbox-1.1.5rc1.p0 crashes on OS X 10.5-intel for charpoly computations. The bug shows up at initialization of static variables, and may be related to the specific OS X gcc compiler behaviour.\n\nhttp://gcc.gnu.org/ml/gcc-bugs/2004-02/msg02055.html, may help. \n\nSame issue as #2388, but need a clean fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2389\n\n",
+    "body": "Assignee: @ClementPernet\n\nThe proposed linbox-1.1.5rc1.p0 crashes on OS X 10.5-intel for charpoly computations. The bug shows up at initialization of static variables, and may be related to the specific OS X gcc compiler behaviour.\n\nhttp://gcc.gnu.org/ml/gcc-bugs/2004-02/msg02055.html, may help. \n\nSame issue as #2388, but need a clean fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2389\n\n",
     "created_at": "2008-03-04T22:07:30Z",
     "labels": [
         "Cygwin",
@@ -14,10 +14,10 @@ archive/issues_002389.json:
     "title": "linbox charpoly crashes on OS X 10.5-intel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2389",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
-Assignee: cpernet
+Assignee: @ClementPernet
 
 The proposed linbox-1.1.5rc1.p0 crashes on OS X 10.5-intel for charpoly computations. The bug shows up at initialization of static variables, and may be related to the specific OS X gcc compiler behaviour.
 
@@ -41,7 +41,7 @@ archive/issue_comments_016122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2389#issuecomment-16122",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -76,7 +76,7 @@ Michael
 archive/issue_comments_016124.json:
 ```json
 {
-    "body": "Changing assignee from cpernet to mabshoff.",
+    "body": "Changing assignee from @ClementPernet to mabshoff.",
     "created_at": "2008-03-15T05:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2389",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_016124.json:
 }
 ```
 
-Changing assignee from cpernet to mabshoff.
+Changing assignee from @ClementPernet to mabshoff.
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_005032.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is a bug:\n\n```\nsage: A = matrix(ZZ, 2, [1..4], sparse=True)\nsage: type(A*1)\n<type 'sage.matrix.matrix_integer_sparse.Matrix_integer_sparse'>\nsage: type(A/1)\n<type 'sage.matrix.matrix_rational_dense.Matrix_rational_dense'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5032\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a bug:\n\n```\nsage: A = matrix(ZZ, 2, [1..4], sparse=True)\nsage: type(A*1)\n<type 'sage.matrix.matrix_integer_sparse.Matrix_integer_sparse'>\nsage: type(A/1)\n<type 'sage.matrix.matrix_rational_dense.Matrix_rational_dense'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5032\n\n",
     "created_at": "2009-01-20T05:59:45Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005032.json:
     "title": "dividing a sparse matrix by a scalar gives a dense matrix, but multiplying gives a sparse one",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5032",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is a bug:
 
@@ -46,7 +46,7 @@ archive/issue_comments_038324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5032#issuecomment-38324",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -90,16 +90,16 @@ It should read
 archive/issue_comments_038325.json:
 ```json
 {
-    "body": "Attachment [5032-sparce-matrix.patch](tarball://root/attachments/some-uuid/ticket5032/5032-sparce-matrix.patch) by robertwb created at 2009-01-23 04:19:53",
+    "body": "Attachment [5032-sparce-matrix.patch](tarball://root/attachments/some-uuid/ticket5032/5032-sparce-matrix.patch) by @robertwb created at 2009-01-23 04:19:53",
     "created_at": "2009-01-23T04:19:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5032#issuecomment-38325",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5032-sparce-matrix.patch](tarball://root/attachments/some-uuid/ticket5032/5032-sparce-matrix.patch) by robertwb created at 2009-01-23 04:19:53
+Attachment [5032-sparce-matrix.patch](tarball://root/attachments/some-uuid/ticket5032/5032-sparce-matrix.patch) by @robertwb created at 2009-01-23 04:19:53
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_038326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5032#issuecomment-38326",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

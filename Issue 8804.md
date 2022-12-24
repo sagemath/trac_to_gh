@@ -3,7 +3,7 @@
 archive/issues_008804.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  robertwb\n\nBring plot/plot3d/parametric_surface.pyx to 100% doctest coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8804\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @robertwb\n\nBring plot/plot3d/parametric_surface.pyx to 100% doctest coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8804\n\n",
     "created_at": "2010-04-28T15:20:22Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008804.json:
     "title": "Bring plot/plot3d/parametric_surface.pyx to 100% doctest coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8804",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: mvngu
 
-CC:  robertwb
+CC:  @robertwb
 
 Bring plot/plot3d/parametric_surface.pyx to 100% doctest coverage.
 
@@ -39,7 +39,7 @@ archive/issue_comments_080782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80782",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_080783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80783",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_080784.json:
 ```json
 {
-    "body": "Attachment [trac_8804-param-surface-docs.patch](tarball://root/attachments/some-uuid/ticket8804/trac_8804-param-surface-docs.patch) by kcrisman created at 2010-04-29 20:27:03\n\nAlso fixes a few inconsistencies with formula for MobiusStrip that wasn't used and dual() that I checked with robertwb.",
+    "body": "Attachment [trac_8804-param-surface-docs.patch](tarball://root/attachments/some-uuid/ticket8804/trac_8804-param-surface-docs.patch) by @kcrisman created at 2010-04-29 20:27:03\n\nAlso fixes a few inconsistencies with formula for MobiusStrip that wasn't used and dual() that I checked with robertwb.",
     "created_at": "2010-04-29T20:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80784",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_8804-param-surface-docs.patch](tarball://root/attachments/some-uuid/ticket8804/trac_8804-param-surface-docs.patch) by kcrisman created at 2010-04-29 20:27:03
+Attachment [trac_8804-param-surface-docs.patch](tarball://root/attachments/some-uuid/ticket8804/trac_8804-param-surface-docs.patch) by @kcrisman created at 2010-04-29 20:27:03
 
 Also fixes a few inconsistencies with formula for MobiusStrip that wasn't used and dual() that I checked with robertwb.
 
@@ -131,7 +131,7 @@ archive/issue_comments_080787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80787",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_080789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80789",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_080790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80790",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

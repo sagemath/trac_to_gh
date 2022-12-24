@@ -3,7 +3,7 @@
 archive/issues_003813.json:
 ```json
 {
-    "body": "Assignee: was\n\nWilliam said at Sage Days 9 that he wanted better adaptive rendering.  So I did it.  \n\nIt actually looks much better by default.  Better enough that I don't think users will have to touch plot_points anymore.\n\nAnd it runs just as fast.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3813\n\n",
+    "body": "Assignee: @williamstein\n\nWilliam said at Sage Days 9 that he wanted better adaptive rendering.  So I did it.  \n\nIt actually looks much better by default.  Better enough that I don't think users will have to touch plot_points anymore.\n\nAnd it runs just as fast.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3813\n\n",
     "created_at": "2008-08-12T05:43:05Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_003813.json:
     "user": "anakha"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 William said at Sage Days 9 that he wanted better adaptive rendering.  So I did it.  
 
@@ -61,7 +61,7 @@ archive/issue_comments_027107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3813#issuecomment-27107",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -74,16 +74,16 @@ reviewers changes
 archive/issue_comments_027108.json:
 ```json
 {
-    "body": "Attachment [trac_3813-review.patch](tarball://root/attachments/some-uuid/ticket3813/trac_3813-review.patch) by saliola created at 2008-08-13 01:54:10\n\nslabbe and I have some suggestions that we are submitting as trac_3813-review.patch. Most are documentation edits. Two noteworthy changes:\n\n1. Below data is a list of floats since that is the output of var_and_list_of_values:\n\n```\n3632\t\t        x, data = var_and_list_of_values(xrange, plot_points) \n3633\t- \t        data = list(data) \n```\n\n\n2. Lines 3683--3699: We moved the adaptive refinement algorithm into a standalone function and added documentation and doctests for it. It's an interesting enough function that a user might want to play with it.\n\n(sage-adaptive-plot.patch needs to be applied first.)",
+    "body": "Attachment [trac_3813-review.patch](tarball://root/attachments/some-uuid/ticket3813/trac_3813-review.patch) by @saliola created at 2008-08-13 01:54:10\n\nslabbe and I have some suggestions that we are submitting as trac_3813-review.patch. Most are documentation edits. Two noteworthy changes:\n\n1. Below data is a list of floats since that is the output of var_and_list_of_values:\n\n```\n3632\t\t        x, data = var_and_list_of_values(xrange, plot_points) \n3633\t- \t        data = list(data) \n```\n\n\n2. Lines 3683--3699: We moved the adaptive refinement algorithm into a standalone function and added documentation and doctests for it. It's an interesting enough function that a user might want to play with it.\n\n(sage-adaptive-plot.patch needs to be applied first.)",
     "created_at": "2008-08-13T01:54:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3813#issuecomment-27108",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_3813-review.patch](tarball://root/attachments/some-uuid/ticket3813/trac_3813-review.patch) by saliola created at 2008-08-13 01:54:10
+Attachment [trac_3813-review.patch](tarball://root/attachments/some-uuid/ticket3813/trac_3813-review.patch) by @saliola created at 2008-08-13 01:54:10
 
 slabbe and I have some suggestions that we are submitting as trac_3813-review.patch. Most are documentation edits. Two noteworthy changes:
 
@@ -111,7 +111,7 @@ archive/issue_comments_027109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3813#issuecomment-27109",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_027110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3813#issuecomment-27110",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_027111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3813#issuecomment-27111",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -244,16 +244,16 @@ Integrate all feedback and fix all reported issues.  This patch is cumulative, s
 archive/issue_comments_027114.json:
 ```json
 {
-    "body": "Attachment [3813-diff.patch](tarball://root/attachments/some-uuid/ticket3813/3813-diff.patch) by ncalexan created at 2008-08-13 21:33:53",
+    "body": "Attachment [3813-diff.patch](tarball://root/attachments/some-uuid/ticket3813/3813-diff.patch) by @ncalexan created at 2008-08-13 21:33:53",
     "created_at": "2008-08-13T21:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3813#issuecomment-27114",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3813-diff.patch](tarball://root/attachments/some-uuid/ticket3813/3813-diff.patch) by ncalexan created at 2008-08-13 21:33:53
+Attachment [3813-diff.patch](tarball://root/attachments/some-uuid/ticket3813/3813-diff.patch) by @ncalexan created at 2008-08-13 21:33:53
 
 
 
@@ -267,7 +267,7 @@ archive/issue_comments_027115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3813#issuecomment-27115",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_027117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3813#issuecomment-27117",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -596,16 +596,16 @@ Also, just to make it clear, the two patches that are needed for anybody wanting
 archive/issue_comments_027130.json:
 ```json
 {
-    "body": "Attachment [trac_3813-final.patch](tarball://root/attachments/some-uuid/ticket3813/trac_3813-final.patch) by mhansen created at 2008-08-27 00:15:44\n\nThe latest trac_3813-final.patch should apply to the latest Sage.",
+    "body": "Attachment [trac_3813-final.patch](tarball://root/attachments/some-uuid/ticket3813/trac_3813-final.patch) by @mwhansen created at 2008-08-27 00:15:44\n\nThe latest trac_3813-final.patch should apply to the latest Sage.",
     "created_at": "2008-08-27T00:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3813#issuecomment-27130",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3813-final.patch](tarball://root/attachments/some-uuid/ticket3813/trac_3813-final.patch) by mhansen created at 2008-08-27 00:15:44
+Attachment [trac_3813-final.patch](tarball://root/attachments/some-uuid/ticket3813/trac_3813-final.patch) by @mwhansen created at 2008-08-27 00:15:44
 
 The latest trac_3813-final.patch should apply to the latest Sage.
 

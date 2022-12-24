@@ -118,7 +118,7 @@ archive/issue_comments_078964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78964",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_078965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78965",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_078966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78966",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -175,16 +175,16 @@ Changing priority from major to critical.
 archive/issue_comments_078967.json:
 ```json
 {
-    "body": "Attachment [trac_8677.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.patch) by was created at 2010-10-02 06:44:32",
+    "body": "Attachment [trac_8677.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.patch) by @williamstein created at 2010-10-02 06:44:32",
     "created_at": "2010-10-02T06:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78967",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8677.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.patch) by was created at 2010-10-02 06:44:32
+Attachment [trac_8677.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.patch) by @williamstein created at 2010-10-02 06:44:32
 
 
 
@@ -198,7 +198,7 @@ archive/issue_comments_078968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78968",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_078969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78969",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_078970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78970",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_078971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78971",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_078972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78972",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_078973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78973",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_078974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78974",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -372,16 +372,16 @@ What if we use William's solution for the first "hunk" and Volker's for the seco
 archive/issue_comments_078975.json:
 ```json
 {
-    "body": "Attachment [trac_8677.2.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.2.patch) by mpatel created at 2010-10-05 05:42:28\n\nAlternate version, fix commit string.  Apply just one patch.",
+    "body": "Attachment [trac_8677.2.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.2.patch) by @qed777 created at 2010-10-05 05:42:28\n\nAlternate version, fix commit string.  Apply just one patch.",
     "created_at": "2010-10-05T05:42:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78975",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8677.2.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.2.patch) by mpatel created at 2010-10-05 05:42:28
+Attachment [trac_8677.2.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.2.patch) by @qed777 created at 2010-10-05 05:42:28
 
 Alternate version, fix commit string.  Apply just one patch.
 
@@ -397,7 +397,7 @@ archive/issue_comments_078976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78976",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_078977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78977",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_078978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78978",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -451,16 +451,16 @@ Yet another alternate version
 archive/issue_comments_078979.json:
 ```json
 {
-    "body": "Attachment [trac_8677.3.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.3.patch) by mpatel created at 2010-10-10 04:43:53\n\nWith a clean, built-from-scratch 4.6.alpha3 on sage.math, I applied v3, did `rm -rf devel/sage/build/` and then `env MAKE=\"make -j20\" ./sage -ba-force`.  The latter fails after a number of \n`python `which cython`` commands:\n\n```python\n[...]\nTraceback (most recent call last):\n  File \"setup.py\", line 799, in <module>\n    execute_list_of_commands(queue)\n  File \"setup.py\", line 319, in execute_list_of_commands\n    execute_list_of_commands_in_parallel(command_list, nthreads)\n  File \"setup.py\", line 252, in execute_list_of_commands_in_parallel\n    process_command_results(p.imap(apply_pair, command_list))\n  File \"setup.py\", line 256, in process_command_results\n    for r in result_values:\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha3-working2/local/lib/python/multiprocessing/pool.py\", line 520, in next\n    raise value\nNameError: global name 'path' is not defined\nsage: There was an error installing modified sage library code.\n```\n\nThis doesn't happen with v1 or v2, but I'm not sure why.  Thoughts?",
+    "body": "Attachment [trac_8677.3.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.3.patch) by @qed777 created at 2010-10-10 04:43:53\n\nWith a clean, built-from-scratch 4.6.alpha3 on sage.math, I applied v3, did `rm -rf devel/sage/build/` and then `env MAKE=\"make -j20\" ./sage -ba-force`.  The latter fails after a number of \n`python `which cython`` commands:\n\n```python\n[...]\nTraceback (most recent call last):\n  File \"setup.py\", line 799, in <module>\n    execute_list_of_commands(queue)\n  File \"setup.py\", line 319, in execute_list_of_commands\n    execute_list_of_commands_in_parallel(command_list, nthreads)\n  File \"setup.py\", line 252, in execute_list_of_commands_in_parallel\n    process_command_results(p.imap(apply_pair, command_list))\n  File \"setup.py\", line 256, in process_command_results\n    for r in result_values:\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha3-working2/local/lib/python/multiprocessing/pool.py\", line 520, in next\n    raise value\nNameError: global name 'path' is not defined\nsage: There was an error installing modified sage library code.\n```\n\nThis doesn't happen with v1 or v2, but I'm not sure why.  Thoughts?",
     "created_at": "2010-10-10T04:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78979",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8677.3.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.3.patch) by mpatel created at 2010-10-10 04:43:53
+Attachment [trac_8677.3.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.3.patch) by @qed777 created at 2010-10-10 04:43:53
 
 With a clean, built-from-scratch 4.6.alpha3 on sage.math, I applied v3, did `rm -rf devel/sage/build/` and then `env MAKE="make -j20" ./sage -ba-force`.  The latter fails after a number of 
 `python `which cython`` commands:
@@ -496,7 +496,7 @@ archive/issue_comments_078980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78980",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -511,16 +511,16 @@ Probably on lines 687-690, "path" should be "dirname"?  I'm attaching a new vers
 archive/issue_comments_078981.json:
 ```json
 {
-    "body": "Attachment [trac_8677.4.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.4.patch) by jhpalmieri created at 2010-10-11 20:38:14\n\nStill another alternate version",
+    "body": "Attachment [trac_8677.4.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.4.patch) by @jhpalmieri created at 2010-10-11 20:38:14\n\nStill another alternate version",
     "created_at": "2010-10-11T20:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78981",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8677.4.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.4.patch) by jhpalmieri created at 2010-10-11 20:38:14
+Attachment [trac_8677.4.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.4.patch) by @jhpalmieri created at 2010-10-11 20:38:14
 
 Still another alternate version
 
@@ -536,7 +536,7 @@ archive/issue_comments_078982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78982",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_078983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78983",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -577,7 +577,7 @@ archive/issue_comments_078984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78984",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_078985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78985",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009701.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nThe missing conversion from `NumberFieldElement` to float is the cause of this strangeness:\n\n\n```\nsage: RR(I*I)\n-1.00000000000000\nsage: float(I*I)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/cwitty/svn-ironpython/IronPython_Main/<ipython console> in <module>()\n\n/home/cwitty/sage-4.5.2.alpha1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__float__ (sage/symbolic/expression.cpp:5205)()\n\nTypeError: unable to simplify to float approximation\n```\n\n\n(I'll have a patch posted for this in a few minutes.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9701\n\n",
+    "body": "Assignee: @loefflerd\n\nThe missing conversion from `NumberFieldElement` to float is the cause of this strangeness:\n\n\n```\nsage: RR(I*I)\n-1.00000000000000\nsage: float(I*I)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/cwitty/svn-ironpython/IronPython_Main/<ipython console> in <module>()\n\n/home/cwitty/sage-4.5.2.alpha1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__float__ (sage/symbolic/expression.cpp:5205)()\n\nTypeError: unable to simplify to float approximation\n```\n\n\n(I'll have a patch posted for this in a few minutes.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9701\n\n",
     "created_at": "2010-08-07T00:37:10Z",
     "labels": [
         "number fields",
@@ -17,7 +17,7 @@ archive/issues_009701.json:
     "user": "cwitty"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 The missing conversion from `NumberFieldElement` to float is the cause of this strangeness:
 
@@ -95,7 +95,7 @@ archive/issue_comments_094339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9701#issuecomment-94339",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_094340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9701#issuecomment-94340",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_094341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9701#issuecomment-94341",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006986.json:
     "title": "[with spkg, needs review] Make PIL standard",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6986",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_057791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6986#issuecomment-57791",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_057792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6986#issuecomment-57792",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_057794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6986#issuecomment-57794",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_057795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6986#issuecomment-57795",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_057796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6986#issuecomment-57796",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

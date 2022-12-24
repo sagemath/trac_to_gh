@@ -14,7 +14,7 @@ archive/issues_001809.json:
     "title": "[with patch] refactoring to improve finite field reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1809",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_011439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1809#issuecomment-11439",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

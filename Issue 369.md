@@ -14,7 +14,7 @@ archive/issues_000369.json:
     "title": "tiny notebook bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/369",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

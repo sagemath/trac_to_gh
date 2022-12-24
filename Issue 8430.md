@@ -49,7 +49,7 @@ archive/issue_comments_075579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8430#issuecomment-75579",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_075580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8430#issuecomment-75580",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_075581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8430#issuecomment-75581",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_075582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8430#issuecomment-75582",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -180,16 +180,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_075585.json:
 ```json
 {
-    "body": "Attachment [trac_8430-semigroup_doctest_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8430/trac_8430-semigroup_doctest_fix-fh.patch) by hivert created at 2010-03-04 21:41:49\n\nReplying to [comment:5 mhampton]:\n\n> There is one doctest failure still:\n\n```\nFile \"/Volumes/E/sage-4.3.4.alpha0/devel/sage-t1/sage/categories/finite_semigroups.py\", line 229:\n    sage: sorted(S.j_transversal_of_idempotents())\nExpected:\n    ['a', 'ab', 'ac', 'acb', 'b', 'bc', 'c']\nGot:\n    ['a', 'ab', 'ac', 'acb', 'b', 'c', 'cb']\n*********************************************\n```\n \n> which is not covered by the patch.  Seems like maybe the expected string is wrong, unless the sorted function has varying behavior.\n\nI'm not sure to understand:\n- why I missed this one;\n- why the result of sorted changed between 4.3.3 and 4.3.4;\n- why despite of this change it seems to be stable on both version...\nAnyway the newly uploaded patch passed the tests 10 times in a raw on the machine sage. Maybe it could be worth checking of it is also stable on other architectures.\n\nSorry for the mess and please review.",
+    "body": "Attachment [trac_8430-semigroup_doctest_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8430/trac_8430-semigroup_doctest_fix-fh.patch) by @hivert created at 2010-03-04 21:41:49\n\nReplying to [comment:5 mhampton]:\n\n> There is one doctest failure still:\n\n```\nFile \"/Volumes/E/sage-4.3.4.alpha0/devel/sage-t1/sage/categories/finite_semigroups.py\", line 229:\n    sage: sorted(S.j_transversal_of_idempotents())\nExpected:\n    ['a', 'ab', 'ac', 'acb', 'b', 'bc', 'c']\nGot:\n    ['a', 'ab', 'ac', 'acb', 'b', 'c', 'cb']\n*********************************************\n```\n \n> which is not covered by the patch.  Seems like maybe the expected string is wrong, unless the sorted function has varying behavior.\n\nI'm not sure to understand:\n- why I missed this one;\n- why the result of sorted changed between 4.3.3 and 4.3.4;\n- why despite of this change it seems to be stable on both version...\nAnyway the newly uploaded patch passed the tests 10 times in a raw on the machine sage. Maybe it could be worth checking of it is also stable on other architectures.\n\nSorry for the mess and please review.",
     "created_at": "2010-03-04T21:41:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8430#issuecomment-75585",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8430-semigroup_doctest_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8430/trac_8430-semigroup_doctest_fix-fh.patch) by hivert created at 2010-03-04 21:41:49
+Attachment [trac_8430-semigroup_doctest_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8430/trac_8430-semigroup_doctest_fix-fh.patch) by @hivert created at 2010-03-04 21:41:49
 
 Replying to [comment:5 mhampton]:
 
@@ -227,7 +227,7 @@ archive/issue_comments_075586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8430#issuecomment-75586",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -240,16 +240,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_075587.json:
 ```json
 {
-    "body": "Changing assignee from tbd to hivert.",
+    "body": "Changing assignee from tbd to @hivert.",
     "created_at": "2010-03-04T21:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8430#issuecomment-75587",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from tbd to hivert.
+Changing assignee from tbd to @hivert.
 
 
 
@@ -299,7 +299,7 @@ archive/issue_comments_075590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8430#issuecomment-75590",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_075592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8430#issuecomment-75592",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

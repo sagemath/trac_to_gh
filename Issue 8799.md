@@ -3,7 +3,7 @@
 archive/issues_008799.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  rlm\n\nKeywords: mwrank\n\nImprove documentation for this:\n\n```\nsage/libs/mwrank/mwrank.pyx:  3% (1 of 30)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8799\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rlmill\n\nKeywords: mwrank\n\nImprove documentation for this:\n\n```\nsage/libs/mwrank/mwrank.pyx:  3% (1 of 30)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8799\n\n",
     "created_at": "2010-04-28T08:11:56Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008799.json:
     "title": "Bring doctests for mwrank.pyx up to 100% (from 3%)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8799",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: mvngu
 
-CC:  rlm
+CC:  @rlmill
 
 Keywords: mwrank
 
@@ -46,7 +46,7 @@ archive/issue_comments_080591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80591",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_080592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80592",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_080593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80593",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -99,16 +99,16 @@ Applies to 4.4
 archive/issue_comments_080594.json:
 ```json
 {
-    "body": "Attachment [trac_8799-mwrank-doctest.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-mwrank-doctest.patch) by cremona created at 2010-05-02 20:01:50\n\nI am flagging this as \"needs review\", while still testing.  Not expecting any surprises since the patch is almost entirely in docstrings.  (I did also test the building of the docs).",
+    "body": "Attachment [trac_8799-mwrank-doctest.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-mwrank-doctest.patch) by @JohnCremona created at 2010-05-02 20:01:50\n\nI am flagging this as \"needs review\", while still testing.  Not expecting any surprises since the patch is almost entirely in docstrings.  (I did also test the building of the docs).",
     "created_at": "2010-05-02T20:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80594",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8799-mwrank-doctest.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-mwrank-doctest.patch) by cremona created at 2010-05-02 20:01:50
+Attachment [trac_8799-mwrank-doctest.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-mwrank-doctest.patch) by @JohnCremona created at 2010-05-02 20:01:50
 
 I am flagging this as "needs review", while still testing.  Not expecting any surprises since the patch is almost entirely in docstrings.  (I did also test the building of the docs).
 
@@ -124,7 +124,7 @@ archive/issue_comments_080595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80595",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_080596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80596",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_080599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80599",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_080600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80600",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_080601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80601",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_080602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80602",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_080603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80603",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_080604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80604",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_080605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80605",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -400,16 +400,16 @@ Feel free to add a second reviewer's patch!
 archive/issue_comments_080606.json:
 ```json
 {
-    "body": "Attachment [trac_8799-reviewer_too.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer_too.patch) by leif created at 2010-05-10 23:08:32\n\nA (rough) second reviewer patch based on Minh's.",
+    "body": "Attachment [trac_8799-reviewer_too.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer_too.patch) by @nexttime created at 2010-05-10 23:08:32\n\nA (rough) second reviewer patch based on Minh's.",
     "created_at": "2010-05-10T23:08:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80606",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_8799-reviewer_too.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer_too.patch) by leif created at 2010-05-10 23:08:32
+Attachment [trac_8799-reviewer_too.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer_too.patch) by @nexttime created at 2010-05-10 23:08:32
 
 A (rough) second reviewer patch based on Minh's.
 
@@ -425,7 +425,7 @@ archive/issue_comments_080607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80607",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_080608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80608",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_080610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80610",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -525,16 +525,16 @@ archive/issue_comments_080610.json:
 archive/issue_comments_080611.json:
 ```json
 {
-    "body": "Attachment [trac_8799-reviewer-part4.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-part4.patch) by leif created at 2010-05-11 02:41:42\n\nSorry, yet another patch. (It also fixes a doctest failure **introduced by me**. 8/ )\n\nMinh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)\n\nShouldn't we replace\n\n```\n - foo (bool) -- ...\n - bar (int, default 12) -- ...\n```\n\nby\n\n```\n - foo (:class:`bool`) -- ...\n - bar (:class:`int`, default 12) -- ...\n```\n\ntoo?\n\n-Leif\n\nP.S.: Note that despite the ticket title, my patches also change the code.",
+    "body": "Attachment [trac_8799-reviewer-part4.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-part4.patch) by @nexttime created at 2010-05-11 02:41:42\n\nSorry, yet another patch. (It also fixes a doctest failure **introduced by me**. 8/ )\n\nMinh, you vote in favour of math-typeset numbers? (I don't like e.g. ``L`-functions` either...)\n\nShouldn't we replace\n\n```\n - foo (bool) -- ...\n - bar (int, default 12) -- ...\n```\n\nby\n\n```\n - foo (:class:`bool`) -- ...\n - bar (:class:`int`, default 12) -- ...\n```\n\ntoo?\n\n-Leif\n\nP.S.: Note that despite the ticket title, my patches also change the code.",
     "created_at": "2010-05-11T02:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80611",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_8799-reviewer-part4.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-part4.patch) by leif created at 2010-05-11 02:41:42
+Attachment [trac_8799-reviewer-part4.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-reviewer-part4.patch) by @nexttime created at 2010-05-11 02:41:42
 
 Sorry, yet another patch. (It also fixes a doctest failure **introduced by me**. 8/ )
 
@@ -634,7 +634,7 @@ archive/issue_comments_080614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80614",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -666,16 +666,16 @@ So unfortunately someone else (other than John and us) has to review the cumulat
 archive/issue_comments_080615.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to cremona.",
+    "body": "Changing assignee from mvngu to @JohnCremona.",
     "created_at": "2010-05-11T08:23:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80615",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Changing assignee from mvngu to cremona.
+Changing assignee from mvngu to @JohnCremona.
 
 
 
@@ -689,7 +689,7 @@ archive/issue_comments_080616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80616",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -711,7 +711,7 @@ archive/issue_comments_080617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80617",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -774,7 +774,7 @@ archive/issue_comments_080618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80618",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -795,7 +795,7 @@ archive/issue_comments_080619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80619",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -813,7 +813,7 @@ archive/issue_comments_080620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80620",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -835,7 +835,7 @@ archive/issue_comments_080621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80621",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -859,7 +859,7 @@ archive/issue_comments_080622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80622",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -881,16 +881,16 @@ I know (and with that in mind I asked a couple of people of they would step in) 
 archive/issue_comments_080623.json:
 ```json
 {
-    "body": "Attachment [trac_8799-extra.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-extra.patch) by cremona created at 2010-05-15 19:49:15\n\nAdditional small fixes",
+    "body": "Attachment [trac_8799-extra.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-extra.patch) by @JohnCremona created at 2010-05-15 19:49:15\n\nAdditional small fixes",
     "created_at": "2010-05-15T19:49:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80623",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8799-extra.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-extra.patch) by cremona created at 2010-05-15 19:49:15
+Attachment [trac_8799-extra.patch](tarball://root/attachments/some-uuid/ticket8799/trac_8799-extra.patch) by @JohnCremona created at 2010-05-15 19:49:15
 
 Additional small fixes
 
@@ -906,7 +906,7 @@ archive/issue_comments_080624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80624",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -924,7 +924,7 @@ archive/issue_comments_080625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80625",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -942,7 +942,7 @@ archive/issue_comments_080626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80626",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -960,7 +960,7 @@ archive/issue_comments_080627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80627",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -978,7 +978,7 @@ archive/issue_comments_080628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8799#issuecomment-80628",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

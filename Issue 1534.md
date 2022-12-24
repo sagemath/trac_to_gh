@@ -3,7 +3,7 @@
 archive/issues_001534.json:
 ```json
 {
-    "body": "Assignee: was\n\nOnce #1533 is done, we need to remove the files from extcode. This should be done is such a way that the history of the (several MB) jar files is purged, I'm still looking for the best way to do this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1534\n\n",
+    "body": "Assignee: @williamstein\n\nOnce #1533 is done, we need to remove the files from extcode. This should be done is such a way that the history of the (several MB) jar files is purged, I'm still looking for the best way to do this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1534\n\n",
     "created_at": "2007-12-16T07:24:54Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001534.json:
     "title": "Purge java3d from extcode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1534",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Once #1533 is done, we need to remove the files from extcode. This should be done is such a way that the history of the (several MB) jar files is purged, I'm still looking for the best way to do this. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1534
 archive/issue_comments_009791.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-12-16T07:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1534#issuecomment-9791",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_009792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1534#issuecomment-9792",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_009794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1534#issuecomment-9794",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_009795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1534#issuecomment-9795",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_009796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1534#issuecomment-9796",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_009797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1534#issuecomment-9797",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_009798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1534#issuecomment-9798",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_009799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1534#issuecomment-9799",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_009800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1534#issuecomment-9800",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

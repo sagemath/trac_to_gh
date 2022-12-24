@@ -3,7 +3,7 @@
 archive/issues_002751.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2751\n\n",
+    "body": "Assignee: @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2751\n\n",
     "created_at": "2008-04-01T13:18:31Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_002751.json:
     "title": "[with patch, needs review] multivariate polynomials i_homogeneous",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2751",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2751
 archive/issue_comments_018888.json:
 ```json
 {
-    "body": "Attachment [mpoly_is_homogenous.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous.patch) by malb created at 2008-04-01 13:19:05",
+    "body": "Attachment [mpoly_is_homogenous.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous.patch) by @malb created at 2008-04-01 13:19:05",
     "created_at": "2008-04-01T13:19:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18888",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpoly_is_homogenous.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous.patch) by malb created at 2008-04-01 13:19:05
+Attachment [mpoly_is_homogenous.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous.patch) by @malb created at 2008-04-01 13:19:05
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_018890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18890",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -105,16 +105,16 @@ That means that I forgot to submit the degree method, sorry bout that. I think b
 archive/issue_comments_018891.json:
 ```json
 {
-    "body": "Attachment [mpoly_is_homogenous_addon.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous_addon.patch) by malb created at 2008-04-04 11:35:05",
+    "body": "Attachment [mpoly_is_homogenous_addon.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous_addon.patch) by @malb created at 2008-04-04 11:35:05",
     "created_at": "2008-04-04T11:35:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18891",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpoly_is_homogenous_addon.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous_addon.patch) by malb created at 2008-04-04 11:35:05
+Attachment [mpoly_is_homogenous_addon.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous_addon.patch) by @malb created at 2008-04-04 11:35:05
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_018892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18892",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_018894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18894",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -234,16 +234,16 @@ Yes, passing doc-tests are sufficient (I was using 2.11) (I wasn't aware that 3.
 archive/issue_comments_018897.json:
 ```json
 {
-    "body": "Attachment [2751-2.patch](tarball://root/attachments/some-uuid/ticket2751/2751-2.patch) by mhansen created at 2008-04-04 20:56:19",
+    "body": "Attachment [2751-2.patch](tarball://root/attachments/some-uuid/ticket2751/2751-2.patch) by @mwhansen created at 2008-04-04 20:56:19",
     "created_at": "2008-04-04T20:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18897",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2751-2.patch](tarball://root/attachments/some-uuid/ticket2751/2751-2.patch) by mhansen created at 2008-04-04 20:56:19
+Attachment [2751-2.patch](tarball://root/attachments/some-uuid/ticket2751/2751-2.patch) by @mwhansen created at 2008-04-04 20:56:19
 
 
 

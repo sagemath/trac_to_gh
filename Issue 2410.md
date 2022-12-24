@@ -3,7 +3,7 @@
 archive/issues_002410.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is a companion to #2409\n\n\n```\nsage: parametric_plot((t^2,t),-12,12)\n```\n\nworks as expected, but \n\n```\nsage: parametric_plot((1,t),-12,12)\n...\n<type 'exceptions.TypeError'>: 'float' object is unsubscriptable\n```\n\ndoes not.\n\nMore generally, I would like to see the following syntax supported \n\n```\nsage: parametric_plot((1,t),(t,-12,12))\n```\n\nwhich is much cleaner mathematically (no hidden reliance on variable name 't') and is also very analogous to \n\n```\nsage: plot(t,(t,-12,12))\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2410\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a companion to #2409\n\n\n```\nsage: parametric_plot((t^2,t),-12,12)\n```\n\nworks as expected, but \n\n```\nsage: parametric_plot((1,t),-12,12)\n...\n<type 'exceptions.TypeError'>: 'float' object is unsubscriptable\n```\n\ndoes not.\n\nMore generally, I would like to see the following syntax supported \n\n```\nsage: parametric_plot((1,t),(t,-12,12))\n```\n\nwhich is much cleaner mathematically (no hidden reliance on variable name 't') and is also very analogous to \n\n```\nsage: plot(t,(t,-12,12))\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2410\n\n",
     "created_at": "2008-03-06T20:48:30Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_002410.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is a companion to #2409
 
@@ -66,7 +66,7 @@ archive/issue_comments_016268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2410#issuecomment-16268",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -85,16 +85,16 @@ Here, I'll post a patch which corrects a bug in how exceptions are handled in pl
 archive/issue_comments_016269.json:
 ```json
 {
-    "body": "Attachment [plotting-exceptions.patch](tarball://root/attachments/some-uuid/ticket2410/plotting-exceptions.patch) by jason created at 2008-08-25 21:53:53",
+    "body": "Attachment [plotting-exceptions.patch](tarball://root/attachments/some-uuid/ticket2410/plotting-exceptions.patch) by @jasongrout created at 2008-08-25 21:53:53",
     "created_at": "2008-08-25T21:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2410#issuecomment-16269",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [plotting-exceptions.patch](tarball://root/attachments/some-uuid/ticket2410/plotting-exceptions.patch) by jason created at 2008-08-25 21:53:53
+Attachment [plotting-exceptions.patch](tarball://root/attachments/some-uuid/ticket2410/plotting-exceptions.patch) by @jasongrout created at 2008-08-25 21:53:53
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_016270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2410#issuecomment-16270",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_016271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2410#issuecomment-16271",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -139,16 +139,16 @@ The other issues will be fixed in #3952.
 archive/issue_comments_016272.json:
 ```json
 {
-    "body": "Attachment [trac_2140.patch](tarball://root/attachments/some-uuid/ticket2410/trac_2140.patch) by mhansen created at 2008-08-26 03:00:40\n\nApply trac_2140.patch _after_ #3853",
+    "body": "Attachment [trac_2140.patch](tarball://root/attachments/some-uuid/ticket2410/trac_2140.patch) by @mwhansen created at 2008-08-26 03:00:40\n\nApply trac_2140.patch _after_ #3853",
     "created_at": "2008-08-26T03:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2410#issuecomment-16272",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2140.patch](tarball://root/attachments/some-uuid/ticket2410/trac_2140.patch) by mhansen created at 2008-08-26 03:00:40
+Attachment [trac_2140.patch](tarball://root/attachments/some-uuid/ticket2410/trac_2140.patch) by @mwhansen created at 2008-08-26 03:00:40
 
 Apply trac_2140.patch _after_ #3853
 

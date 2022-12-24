@@ -3,7 +3,7 @@
 archive/issues_008620.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: modular symbols\n\nThere is a minus sign in the code for diamond operators which shouldn't be there; what actually gets returned is the diamond operator times the star involution! In particular, ```< 1 >``` really ought to be the identity map. This patch corrects the error and adds a doctest to prove it. (This is needed for some code I wrote with Jared Weinstein at the 2010 Montreal conference, in which it's really vital to work with sign 0 symbols.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8620\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: modular symbols\n\nThere is a minus sign in the code for diamond operators which shouldn't be there; what actually gets returned is the diamond operator times the star involution! In particular, ```< 1 >``` really ought to be the identity map. This patch corrects the error and adds a doctest to prove it. (This is needed for some code I wrote with Jared Weinstein at the 2010 Montreal conference, in which it's really vital to work with sign 0 symbols.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8620\n\n",
     "created_at": "2010-03-28T21:46:38Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_008620.json:
     "title": "Rogue minus sign in sage.modular.modsym.ambient.diamond_bracket_operator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8620",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: modular symbols
 
@@ -39,7 +39,7 @@ archive/issue_comments_078113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8620#issuecomment-78113",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_078114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8620#issuecomment-78114",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_078115.json:
 ```json
 {
-    "body": "Attachment [trac_8620-diamond_operator_bug.patch](tarball://root/attachments/some-uuid/ticket8620/trac_8620-diamond_operator_bug.patch) by davidloeffler created at 2010-03-28 22:02:20",
+    "body": "Attachment [trac_8620-diamond_operator_bug.patch](tarball://root/attachments/some-uuid/ticket8620/trac_8620-diamond_operator_bug.patch) by @loefflerd created at 2010-03-28 22:02:20",
     "created_at": "2010-03-28T22:02:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8620#issuecomment-78115",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8620-diamond_operator_bug.patch](tarball://root/attachments/some-uuid/ticket8620/trac_8620-diamond_operator_bug.patch) by davidloeffler created at 2010-03-28 22:02:20
+Attachment [trac_8620-diamond_operator_bug.patch](tarball://root/attachments/some-uuid/ticket8620/trac_8620-diamond_operator_bug.patch) by @loefflerd created at 2010-03-28 22:02:20
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_078116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8620#issuecomment-78116",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_078117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8620#issuecomment-78117",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_078118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8620#issuecomment-78118",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

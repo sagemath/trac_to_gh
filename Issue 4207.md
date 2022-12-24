@@ -3,7 +3,7 @@
 archive/issues_004207.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mjo vbraun ebray\n\n\n```\n[05:16] <mabshoff> One thing we should definitely do is to have some infrastructure to give a vector or matrix and check if all values are without $foo in some norm to a given vector or matrix\n[05:16] <jason-> like numpy.allclose?\n[05:17] <jason-> but that doesn't use norms\n[05:17] <jason-> it just compares entry-wise\n[05:17] <mabshoff> Well, we can do entry by entry or some vector/matrix norm.\n[05:17] <jason-> well, you can't choose the norm.\n[05:17] <mabshoff> the numpy.allclose would work in most cases, but we are mathematicians :)\n[05:17] <mabshoff> So using a norm is natural IMHO\n[05:18] <jason-> so matrix.is_close(other_matrix, norm='blah')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4207\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @orlitzky @vbraun ebray\n\n\n```\n[05:16] <mabshoff> One thing we should definitely do is to have some infrastructure to give a vector or matrix and check if all values are without $foo in some norm to a given vector or matrix\n[05:16] <jason-> like numpy.allclose?\n[05:17] <jason-> but that doesn't use norms\n[05:17] <jason-> it just compares entry-wise\n[05:17] <mabshoff> Well, we can do entry by entry or some vector/matrix norm.\n[05:17] <jason-> well, you can't choose the norm.\n[05:17] <mabshoff> the numpy.allclose would work in most cases, but we are mathematicians :)\n[05:17] <mabshoff> So using a norm is natural IMHO\n[05:18] <jason-> so matrix.is_close(other_matrix, norm='blah')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4207\n\n",
     "created_at": "2008-09-27T10:23:19Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_004207.json:
     "title": "implement an is_close function for matrices and vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4207",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mjo vbraun ebray
+CC:  @orlitzky @vbraun ebray
 
 
 ```
@@ -51,7 +51,7 @@ archive/issue_comments_030584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4207",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4207#issuecomment-30584",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 

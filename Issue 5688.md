@@ -3,7 +3,7 @@
 archive/issues_005688.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThe spkg package is at:\n\nhttp://sympy.googlecode.com/files/sympy-0.6.4.spkg\n\nAll calculus tests run fine, I am now testing the whole sage. When it's done, I'll append the log.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5688\n\n",
+    "body": "Assignee: @burcin\n\nThe spkg package is at:\n\nhttp://sympy.googlecode.com/files/sympy-0.6.4.spkg\n\nAll calculus tests run fine, I am now testing the whole sage. When it's done, I'll append the log.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5688\n\n",
     "created_at": "2009-04-05T08:13:22Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_005688.json:
     "title": "update to sympy 0.6.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5688",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 The spkg package is at:
 
@@ -41,7 +41,7 @@ archive/issue_comments_044483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5688#issuecomment-44483",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_044484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5688#issuecomment-44484",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 

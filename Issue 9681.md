@@ -3,7 +3,7 @@
 archive/issues_009681.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  ddrake mpatel leif jhpalmieri\n\nThe zn_poly package lists in `SPKG.txt` the only dependencies are GMP, but this is not true, as zn_poly's configure script has in it:\n\n\n```\n/configure --gmp-prefix=\"$SAGE_LOCAL\" --ntl-prefix=\"$SAGE_LOCAL\" \\\n            --prefix=\"$SAGE_LOCAL\" --cflags=\"$CFLAGS\" --ldflags=\"$LDFLAGS\"\n```\n\n\nLooking at $SAGE_ROOT/spkg/standard/deps, I see: \n\n\n```\n$(INST)/$(ZNPOLY): $(BASE) $(INST)/$(MPIR)\n        $(INSTALL) \"$(SAGE_SPKG) $(ZNPOLY) 2>&1\" \"tee -a $(SAGE_LOGS)/$(ZNPOLY).log\"\n```\n\n\nthen looking at MPIR I see the dependencies are only BASE and ICONV. But ICONV only depends on BASE, so there is nothing to force ntl to build before zn_poly.\n\nI am aware of two other changes that are desirable in the 'deps' file too, as they add clarity. \n\n* #9464 \n* #9637 \n\nThese might as well be fixed at the same time. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9681\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @dandrake @qed777 @nexttime @jhpalmieri\n\nThe zn_poly package lists in `SPKG.txt` the only dependencies are GMP, but this is not true, as zn_poly's configure script has in it:\n\n\n```\n/configure --gmp-prefix=\"$SAGE_LOCAL\" --ntl-prefix=\"$SAGE_LOCAL\" \\\n            --prefix=\"$SAGE_LOCAL\" --cflags=\"$CFLAGS\" --ldflags=\"$LDFLAGS\"\n```\n\n\nLooking at $SAGE_ROOT/spkg/standard/deps, I see: \n\n\n```\n$(INST)/$(ZNPOLY): $(BASE) $(INST)/$(MPIR)\n        $(INSTALL) \"$(SAGE_SPKG) $(ZNPOLY) 2>&1\" \"tee -a $(SAGE_LOGS)/$(ZNPOLY).log\"\n```\n\n\nthen looking at MPIR I see the dependencies are only BASE and ICONV. But ICONV only depends on BASE, so there is nothing to force ntl to build before zn_poly.\n\nI am aware of two other changes that are desirable in the 'deps' file too, as they add clarity. \n\n* #9464 \n* #9637 \n\nThese might as well be fixed at the same time. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9681\n\n",
     "created_at": "2010-08-04T00:32:03Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009681.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  ddrake mpatel leif jhpalmieri
+CC:  @dandrake @qed777 @nexttime @jhpalmieri
 
 The zn_poly package lists in `SPKG.txt` the only dependencies are GMP, but this is not true, as zn_poly's configure script has in it:
 
@@ -166,7 +166,7 @@ archive/issue_comments_094118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9681#issuecomment-94118",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

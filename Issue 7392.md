@@ -3,7 +3,7 @@
 archive/issues_007392.json:
 ```json
 {
-    "body": "Assignee: was\n\nRight now, we rely on the horrible (for floating point) generic echelon implementation to calculate the rank of an RDF/CDF matrix.\n\nIn fact, over RR, it wouldn't hurt to call numpy/scipy either.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7392\n\n",
+    "body": "Assignee: @williamstein\n\nRight now, we rely on the horrible (for floating point) generic echelon implementation to calculate the rank of an RDF/CDF matrix.\n\nIn fact, over RR, it wouldn't hurt to call numpy/scipy either.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7392\n\n",
     "created_at": "2009-11-04T21:37:51Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_007392.json:
     "title": "RDF/CDF matrices should call scipy for rank",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7392",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Right now, we rely on the horrible (for floating point) generic echelon implementation to calculate the rank of an RDF/CDF matrix.
 
@@ -41,7 +41,7 @@ archive/issue_comments_062170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7392#issuecomment-62170",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_062171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7392#issuecomment-62171",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_062172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7392#issuecomment-62172",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_062173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7392#issuecomment-62173",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_062174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7392#issuecomment-62174",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_062175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7392#issuecomment-62175",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

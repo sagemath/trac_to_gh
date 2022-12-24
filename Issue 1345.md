@@ -3,7 +3,7 @@
 archive/issues_001345.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nThis behavior seems strange:\n\n```\n sage: foo = I+I\n sage: foo._operands\n [I, I]\n sage: [type(i) for i in foo._operands]\n [<class 'sage.calculus.calculus.SymbolicConstant'>,\n  <class 'sage.functions.constants.I_class'>]\n```\n\nAnd here's another strange thing (probably the same bug):\n\n```\n sage: is_SymbolicExpression(SR(I))\n False\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1345\n\n",
+    "body": "Assignee: @mwhansen\n\nThis behavior seems strange:\n\n```\n sage: foo = I+I\n sage: foo._operands\n [I, I]\n sage: [type(i) for i in foo._operands]\n [<class 'sage.calculus.calculus.SymbolicConstant'>,\n  <class 'sage.functions.constants.I_class'>]\n```\n\nAnd here's another strange thing (probably the same bug):\n\n```\n sage: is_SymbolicExpression(SR(I))\n False\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1345\n\n",
     "created_at": "2007-11-30T22:20:45Z",
     "labels": [
         "calculus",
@@ -17,7 +17,7 @@ archive/issues_001345.json:
     "user": "cwitty"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 This behavior seems strange:
 
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1345
 archive/issue_comments_008622.json:
 ```json
 {
-    "body": "Attachment [1345.patch](tarball://root/attachments/some-uuid/ticket1345/1345.patch) by mhansen created at 2007-11-30 22:56:37",
+    "body": "Attachment [1345.patch](tarball://root/attachments/some-uuid/ticket1345/1345.patch) by @mwhansen created at 2007-11-30 22:56:37",
     "created_at": "2007-11-30T22:56:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1345#issuecomment-8622",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1345.patch](tarball://root/attachments/some-uuid/ticket1345/1345.patch) by mhansen created at 2007-11-30 22:56:37
+Attachment [1345.patch](tarball://root/attachments/some-uuid/ticket1345/1345.patch) by @mwhansen created at 2007-11-30 22:56:37
 
 
 
@@ -72,7 +72,7 @@ archive/issue_comments_008623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1345#issuecomment-8623",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_008624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1345#issuecomment-8624",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

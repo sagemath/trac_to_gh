@@ -14,7 +14,7 @@ archive/issues_007452.json:
     "title": "Make it easier to diagnose build problems by allowing copy-paste",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7452",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7452
 archive/issue_comments_062760.json:
 ```json
 {
-    "body": "Attachment [trac7452.patch](tarball://root/attachments/some-uuid/ticket7452/trac7452.patch) by iandrus created at 2009-11-13 17:28:36\n\nMake debugging instructions copy/pastable",
+    "body": "Attachment [trac7452.patch](tarball://root/attachments/some-uuid/ticket7452/trac7452.patch) by @gvol created at 2009-11-13 17:28:36\n\nMake debugging instructions copy/pastable",
     "created_at": "2009-11-13T17:28:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7452#issuecomment-62760",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
-Attachment [trac7452.patch](tarball://root/attachments/some-uuid/ticket7452/trac7452.patch) by iandrus created at 2009-11-13 17:28:36
+Attachment [trac7452.patch](tarball://root/attachments/some-uuid/ticket7452/trac7452.patch) by @gvol created at 2009-11-13 17:28:36
 
 Make debugging instructions copy/pastable
 
@@ -57,7 +57,7 @@ archive/issue_comments_062761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7452#issuecomment-62761",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_062763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7452#issuecomment-62763",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_062764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7452#issuecomment-62764",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_062769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7452#issuecomment-62769",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_062770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7452#issuecomment-62770",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

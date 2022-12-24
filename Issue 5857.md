@@ -3,7 +3,7 @@
 archive/issues_005857.json:
 ```json
 {
-    "body": "Assignee: was\n\nE.list() doesn't work, but list(E) works fine.\n\n\n```\nsage: E = EllipticCurve(GF(11), [1,2])\nsage: E.list()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon.local/15239/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.list (sage/structure/parent.c:5196)()\n\nAttributeError: 'EllipticCurve_finite_field' object has no attribute '__iter__'\nsage: list(E)\n\n[(0 : 1 : 0),\n (1 : 2 : 1),\n (1 : 9 : 1),\n (2 : 1 : 1),\n...\n```\n\n\nSee also #5856\n\nIssue created by migration from https://trac.sagemath.org/ticket/5857\n\n",
+    "body": "Assignee: @williamstein\n\nE.list() doesn't work, but list(E) works fine.\n\n\n```\nsage: E = EllipticCurve(GF(11), [1,2])\nsage: E.list()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon.local/15239/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.list (sage/structure/parent.c:5196)()\n\nAttributeError: 'EllipticCurve_finite_field' object has no attribute '__iter__'\nsage: list(E)\n\n[(0 : 1 : 0),\n (1 : 2 : 1),\n (1 : 9 : 1),\n (2 : 1 : 1),\n...\n```\n\n\nSee also #5856\n\nIssue created by migration from https://trac.sagemath.org/ticket/5857\n\n",
     "created_at": "2009-04-22T15:47:55Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005857.json:
     "title": "E.list() for E an elliptic curve over a finite field is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5857",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 E.list() doesn't work, but list(E) works fine.
 
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5857
 archive/issue_comments_046278.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-21T08:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5857#issuecomment-46278",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_046279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5857#issuecomment-46279",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -92,16 +92,16 @@ Changing component from number theory to elliptic curves.
 archive/issue_comments_046280.json:
 ```json
 {
-    "body": "Attachment [trac_5857-elliptic_curve_iterator.patch](tarball://root/attachments/some-uuid/ticket5857/trac_5857-elliptic_curve_iterator.patch) by cremona created at 2009-08-18 20:52:02\n\nApplies to 4.1.1",
+    "body": "Attachment [trac_5857-elliptic_curve_iterator.patch](tarball://root/attachments/some-uuid/ticket5857/trac_5857-elliptic_curve_iterator.patch) by @JohnCremona created at 2009-08-18 20:52:02\n\nApplies to 4.1.1",
     "created_at": "2009-08-18T20:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5857#issuecomment-46280",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5857-elliptic_curve_iterator.patch](tarball://root/attachments/some-uuid/ticket5857/trac_5857-elliptic_curve_iterator.patch) by cremona created at 2009-08-18 20:52:02
+Attachment [trac_5857-elliptic_curve_iterator.patch](tarball://root/attachments/some-uuid/ticket5857/trac_5857-elliptic_curve_iterator.patch) by @JohnCremona created at 2009-08-18 20:52:02
 
 Applies to 4.1.1
 
@@ -117,7 +117,7 @@ archive/issue_comments_046281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5857#issuecomment-46281",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_046282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5857#issuecomment-46282",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

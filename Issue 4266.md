@@ -3,7 +3,7 @@
 archive/issues_004266.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\nsage: round(sqrt(Integer('1'*500)))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 865, in round\n    except AttributeError: return RealDoubleElement(__builtin__.round(x, 0))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 6164, in __float__\n    return float(f._approx_(float(g)))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 7941, in _approx_\n    return math.sqrt(x)\nOverflowError: math range error\n```\n\n\nApprox should fall back to mpfr if float fails. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4266\n\n",
+    "body": "Assignee: @burcin\n\n\n```\nsage: round(sqrt(Integer('1'*500)))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 865, in round\n    except AttributeError: return RealDoubleElement(__builtin__.round(x, 0))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 6164, in __float__\n    return float(f._approx_(float(g)))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 7941, in _approx_\n    return math.sqrt(x)\nOverflowError: math range error\n```\n\n\nApprox should fall back to mpfr if float fails. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4266\n\n",
     "created_at": "2008-10-11T14:06:33Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004266.json:
     "title": "overflow error in SR approx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4266",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -53,7 +53,7 @@ archive/issue_comments_031112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4266#issuecomment-31112",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -66,16 +66,16 @@ This is related to #188...
 archive/issue_comments_031113.json:
 ```json
 {
-    "body": "Attachment [4266-sr-round.patch](tarball://root/attachments/some-uuid/ticket4266/4266-sr-round.patch) by robertwb created at 2008-10-30 22:16:29\n\nI assume there is good reason that \"always return an RDF\" is enforced. SR elements should probably implement round() themselves.",
+    "body": "Attachment [4266-sr-round.patch](tarball://root/attachments/some-uuid/ticket4266/4266-sr-round.patch) by @robertwb created at 2008-10-30 22:16:29\n\nI assume there is good reason that \"always return an RDF\" is enforced. SR elements should probably implement round() themselves.",
     "created_at": "2008-10-30T22:16:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4266#issuecomment-31113",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4266-sr-round.patch](tarball://root/attachments/some-uuid/ticket4266/4266-sr-round.patch) by robertwb created at 2008-10-30 22:16:29
+Attachment [4266-sr-round.patch](tarball://root/attachments/some-uuid/ticket4266/4266-sr-round.patch) by @robertwb created at 2008-10-30 22:16:29
 
 I assume there is good reason that "always return an RDF" is enforced. SR elements should probably implement round() themselves.
 
@@ -91,7 +91,7 @@ archive/issue_comments_031114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4266#issuecomment-31114",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_031115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4266#issuecomment-31115",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

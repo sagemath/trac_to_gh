@@ -14,7 +14,7 @@ archive/issues_002827.json:
     "title": "sage -notebook does not handle options passed to it correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2827",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: boothby
@@ -44,7 +44,7 @@ archive/issue_comments_019407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2827#issuecomment-19407",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_019409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2827#issuecomment-19409",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

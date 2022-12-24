@@ -3,7 +3,7 @@
 archive/issues_007319.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\nOn Cywgin, the gdmodule spkg requires libiconv.  I think we have two choices for handling this:\n\n1. Making sure that libiconv is always installed in the system Cygwin environment.  We can probably have control over this if we include the Cygwin install with Sage.\n\n2. Add a libiconv spkg that is only installed if we are in Cygwin.  Note that this would probably amount to including it in all source tarballs.\n\nOnce libiconv is present, we need to patch Setup.py in gdmodule to add libiconv to the list of required libraries.\n\nI'll put up an spkg for libiconv and gdmodule here shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7319\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nOn Cywgin, the gdmodule spkg requires libiconv.  I think we have two choices for handling this:\n\n1. Making sure that libiconv is always installed in the system Cygwin environment.  We can probably have control over this if we include the Cygwin install with Sage.\n\n2. Add a libiconv spkg that is only installed if we are in Cygwin.  Note that this would probably amount to including it in all source tarballs.\n\nOnce libiconv is present, we need to patch Setup.py in gdmodule to add libiconv to the list of required libraries.\n\nI'll put up an spkg for libiconv and gdmodule here shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7319\n\n",
     "created_at": "2009-10-27T05:13:46Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_007319.json:
     "title": "gdmodule requires libiconv on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7319",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 On Cywgin, the gdmodule spkg requires libiconv.  I think we have two choices for handling this:
 
@@ -47,7 +47,7 @@ archive/issue_comments_061149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61149",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_061150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61150",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_061158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61158",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_061159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61159",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_061160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61160",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_061162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61162",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_061163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61163",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_061164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61164",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_061165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61165",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

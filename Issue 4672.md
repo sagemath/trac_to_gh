@@ -3,7 +3,7 @@
 archive/issues_004672.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: bar_chart??\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function bar_chart at 0x88b4b1c>\nNamespace:\tInteractive\nFile:\t\t/home/jason/sage/local/lib/python2.5/site-packages/sage/plot/misc.py\nDefinition:\tbar_chart(*args, **kwds)\nSource:\n        @wraps(func)\n        def wrapper(*args, **kwds):\n            options = copy(wrapper.options)\n            if self.original_opts:\n                options['__original_opts'] = kwds\n            options.update(kwds)\n            return func(*args, **options)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4672\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: bar_chart??\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function bar_chart at 0x88b4b1c>\nNamespace:\tInteractive\nFile:\t\t/home/jason/sage/local/lib/python2.5/site-packages/sage/plot/misc.py\nDefinition:\tbar_chart(*args, **kwds)\nSource:\n        @wraps(func)\n        def wrapper(*args, **kwds):\n            options = copy(wrapper.options)\n            if self.original_opts:\n                options['__original_opts'] = kwds\n            options.update(kwds)\n            return func(*args, **options)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4672\n\n",
     "created_at": "2008-12-02T05:43:05Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004672.json:
     "title": "plot functions do not work with ?? because they are wrapped in @options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4672",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -55,7 +55,7 @@ archive/issue_comments_035194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35194",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_035195.json:
 ```json
 {
-    "body": "Attachment [trac_4672.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672.patch) by mhansen created at 2008-12-02 06:00:34",
+    "body": "Attachment [trac_4672.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672.patch) by @mwhansen created at 2008-12-02 06:00:34",
     "created_at": "2008-12-02T06:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35195",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4672.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672.patch) by mhansen created at 2008-12-02 06:00:34
+Attachment [trac_4672.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672.patch) by @mwhansen created at 2008-12-02 06:00:34
 
 
 
@@ -86,16 +86,16 @@ Attachment [trac_4672.patch](tarball://root/attachments/some-uuid/ticket4672/tra
 archive/issue_comments_035196.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-12-02T06:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35196",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_035197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35197",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_035198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35198",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -198,16 +198,16 @@ exit code: 1024
 archive/issue_comments_035200.json:
 ```json
 {
-    "body": "Attachment [trac_4672-2.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672-2.patch) by mhansen created at 2008-12-04 10:57:08",
+    "body": "Attachment [trac_4672-2.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672-2.patch) by @mwhansen created at 2008-12-04 10:57:08",
     "created_at": "2008-12-04T10:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35200",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4672-2.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672-2.patch) by mhansen created at 2008-12-04 10:57:08
+Attachment [trac_4672-2.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672-2.patch) by @mwhansen created at 2008-12-04 10:57:08
 
 
 
@@ -221,7 +221,7 @@ archive/issue_comments_035201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35201",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005346.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cremona\n\nReported by Jan Groenewald in http://groups.google.com/group/sage-devel/browse_thread/thread/d5db5c25fbce1e99\n\n```\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n**********************************************************************\nFile \"/usr/local/src/sage-3.3/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2675:\n    sage: E.cremona_label()\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + x*y + 3*y = x^3 + 2*x^2 + 4*x + 5 over Rational Field.\nGot:\n    '10351a1'\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5346\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nReported by Jan Groenewald in http://groups.google.com/group/sage-devel/browse_thread/thread/d5db5c25fbce1e99\n\n```\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n**********************************************************************\nFile \"/usr/local/src/sage-3.3/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2675:\n    sage: E.cremona_label()\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + x*y + 3*y = x^3 + 2*x^2 + 4*x + 5 over Rational Field.\nGot:\n    '10351a1'\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5346\n\n",
     "created_at": "2009-02-23T07:34:07Z",
     "labels": [
         "number theory",
@@ -17,9 +17,9 @@ archive/issues_005346.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cremona
+CC:  @JohnCremona
 
 Reported by Jan Groenewald in http://groups.google.com/group/sage-devel/browse_thread/thread/d5db5c25fbce1e99
 
@@ -99,7 +99,7 @@ archive/issue_comments_041194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5346#issuecomment-41194",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_041195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5346#issuecomment-41195",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -160,16 +160,16 @@ Apply to 3.4.1
 archive/issue_comments_041196.json:
 ```json
 {
-    "body": "Attachment [trac_5346.patch](tarball://root/attachments/some-uuid/ticket5346/trac_5346.patch) by cremona created at 2009-04-23 09:22:06\n\nThe patch cahnges taht example to the one with condictor 234446 as I suggested.\n\nIt also make another doctest work ok with & without the database (at line 4941) by hard-wiring in some points instead of getting the gens.\n\nI tested this on sage-3.4.1 with & without the database installed.",
+    "body": "Attachment [trac_5346.patch](tarball://root/attachments/some-uuid/ticket5346/trac_5346.patch) by @JohnCremona created at 2009-04-23 09:22:06\n\nThe patch cahnges taht example to the one with condictor 234446 as I suggested.\n\nIt also make another doctest work ok with & without the database (at line 4941) by hard-wiring in some points instead of getting the gens.\n\nI tested this on sage-3.4.1 with & without the database installed.",
     "created_at": "2009-04-23T09:22:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5346#issuecomment-41196",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5346.patch](tarball://root/attachments/some-uuid/ticket5346/trac_5346.patch) by cremona created at 2009-04-23 09:22:06
+Attachment [trac_5346.patch](tarball://root/attachments/some-uuid/ticket5346/trac_5346.patch) by @JohnCremona created at 2009-04-23 09:22:06
 
 The patch cahnges taht example to the one with condictor 234446 as I suggested.
 

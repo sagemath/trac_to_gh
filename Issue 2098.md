@@ -3,7 +3,7 @@
 archive/issues_002098.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nAdd spkg-build-debian, and hook it in to sage-spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2098\n\n",
+    "body": "Assignee: @timabbott\n\nAdd spkg-build-debian, and hook it in to sage-spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2098\n\n",
     "created_at": "2008-02-08T03:51:37Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002098.json:
     "title": "[with patch; needs review] rudimentary debian package build support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2098",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 Add spkg-build-debian, and hook it in to sage-spkg.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2098
 archive/issue_comments_013569.json:
 ```json
 {
-    "body": "Attachment [debian1.patch](tarball://root/attachments/some-uuid/ticket2098/debian1.patch) by tabbott created at 2008-02-08 03:52:53",
+    "body": "Attachment [debian1.patch](tarball://root/attachments/some-uuid/ticket2098/debian1.patch) by @timabbott created at 2008-02-08 03:52:53",
     "created_at": "2008-02-08T03:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13569",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [debian1.patch](tarball://root/attachments/some-uuid/ticket2098/debian1.patch) by tabbott created at 2008-02-08 03:52:53
+Attachment [debian1.patch](tarball://root/attachments/some-uuid/ticket2098/debian1.patch) by @timabbott created at 2008-02-08 03:52:53
 
 
 
@@ -50,16 +50,16 @@ Attachment [debian1.patch](tarball://root/attachments/some-uuid/ticket2098/debia
 archive/issue_comments_013570.json:
 ```json
 {
-    "body": "Attachment [debian2.patch](tarball://root/attachments/some-uuid/ticket2098/debian2.patch) by tabbott created at 2008-02-08 21:40:07",
+    "body": "Attachment [debian2.patch](tarball://root/attachments/some-uuid/ticket2098/debian2.patch) by @timabbott created at 2008-02-08 21:40:07",
     "created_at": "2008-02-08T21:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13570",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [debian2.patch](tarball://root/attachments/some-uuid/ticket2098/debian2.patch) by tabbott created at 2008-02-08 21:40:07
+Attachment [debian2.patch](tarball://root/attachments/some-uuid/ticket2098/debian2.patch) by @timabbott created at 2008-02-08 21:40:07
 
 
 
@@ -68,16 +68,16 @@ Attachment [debian2.patch](tarball://root/attachments/some-uuid/ticket2098/debia
 archive/issue_comments_013571.json:
 ```json
 {
-    "body": "Attachment [debian4.patch](tarball://root/attachments/some-uuid/ticket2098/debian4.patch) by tabbott created at 2008-02-10 02:07:43",
+    "body": "Attachment [debian4.patch](tarball://root/attachments/some-uuid/ticket2098/debian4.patch) by @timabbott created at 2008-02-10 02:07:43",
     "created_at": "2008-02-10T02:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13571",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [debian4.patch](tarball://root/attachments/some-uuid/ticket2098/debian4.patch) by tabbott created at 2008-02-10 02:07:43
+Attachment [debian4.patch](tarball://root/attachments/some-uuid/ticket2098/debian4.patch) by @timabbott created at 2008-02-10 02:07:43
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_013572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13572",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_013573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13573",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -136,16 +136,16 @@ The 5th patch is to the sage spkg, not sage_scripts.
 archive/issue_comments_013574.json:
 ```json
 {
-    "body": "Attachment [debian5.patch](tarball://root/attachments/some-uuid/ticket2098/debian5.patch) by tabbott created at 2008-02-10 03:21:32",
+    "body": "Attachment [debian5.patch](tarball://root/attachments/some-uuid/ticket2098/debian5.patch) by @timabbott created at 2008-02-10 03:21:32",
     "created_at": "2008-02-10T03:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13574",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [debian5.patch](tarball://root/attachments/some-uuid/ticket2098/debian5.patch) by tabbott created at 2008-02-10 03:21:32
+Attachment [debian5.patch](tarball://root/attachments/some-uuid/ticket2098/debian5.patch) by @timabbott created at 2008-02-10 03:21:32
 
 
 

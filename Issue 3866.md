@@ -3,7 +3,7 @@
 archive/issues_003866.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\nThis is a *very* *extremely* rough-cut of a 2d locator widget.  All the docstrings are blatantly wrong and the code is full of ugly things.  But it works, sort of.  It's a starting point for someone to finish.\n\nAn example:\n\n\n```\n@interact\ndef _(pos=locator(3)):\n    print pos\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3866\n\n",
+    "body": "Assignee: @itolkov\n\nThis is a *very* *extremely* rough-cut of a 2d locator widget.  All the docstrings are blatantly wrong and the code is full of ugly things.  But it works, sort of.  It's a starting point for someone to finish.\n\nAn example:\n\n\n```\n@interact\ndef _(pos=locator(3)):\n    print pos\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3866\n\n",
     "created_at": "2008-08-15T03:46:33Z",
     "labels": [
         "interact",
@@ -14,10 +14,10 @@ archive/issues_003866.json:
     "title": "Create a 2d locator interact widget",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3866",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
 This is a *very* *extremely* rough-cut of a 2d locator widget.  All the docstrings are blatantly wrong and the code is full of ugly things.  But it works, sort of.  It's a starting point for someone to finish.
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3866
 archive/issue_comments_027557.json:
 ```json
 {
-    "body": "Attachment [locator.patch](tarball://root/attachments/some-uuid/ticket3866/locator.patch) by jason created at 2008-08-15 03:48:16",
+    "body": "Attachment [locator.patch](tarball://root/attachments/some-uuid/ticket3866/locator.patch) by @jasongrout created at 2008-08-15 03:48:16",
     "created_at": "2008-08-15T03:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3866#issuecomment-27557",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [locator.patch](tarball://root/attachments/some-uuid/ticket3866/locator.patch) by jason created at 2008-08-15 03:48:16
+Attachment [locator.patch](tarball://root/attachments/some-uuid/ticket3866/locator.patch) by @jasongrout created at 2008-08-15 03:48:16
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_027559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3866#issuecomment-27559",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_027563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3866#issuecomment-27563",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_027564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3866#issuecomment-27564",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_027565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3866#issuecomment-27565",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_027566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3866#issuecomment-27566",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_027567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3866#issuecomment-27567",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_027568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3866#issuecomment-27568",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

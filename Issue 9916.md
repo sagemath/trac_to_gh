@@ -3,7 +3,7 @@
 archive/issues_009916.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jhpalmieri\n\nKeywords: ecl\n\nWhen I'm building ecl-10.2.1 as part of Sage I get too warning messages from gcc. \n\n/export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p2/src/src/c/dpp.c: In function 'put_declaration':\n/export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p2/src/src/c/dpp.c:678:5: warning: too few arguments for format\n/export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p2/src/src/c/dpp.c:680:13: warning: too many arguments for format\n\n\nLooking at line 678 of dpp.c, I see:\n\n    fprintf(out, \"\\tif (ecl_unlikely(narg!=%d))\");\n\nSo there's a %d, but what is associate with the %d? There should be an integer, but there is not one. So it seems to me gcc is right to complain there are too few arguments for format. \n\nLikewise, on line 680, I see:\n\n    fprintf(out, \"\\t   FEwrong_num_arguments(MAKE_FIXNUM(%d));\\n\",\n            nreq, function_code);\n\nThere's one two arguments supplied, but only one %d is there. That does not make any sense to me. Both \"nreq\" and \"function_code\" are declared as integers, so should there not two %d's and not one? \n\nAgain, it seems gcc is right to complain that. \n\nThere are thousands of warning messages in Sage, but I'm a bit concerned about resolving those in ecl, as the ecl library being built has text relocation problems - see #9840\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9917\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jhpalmieri\n\nKeywords: ecl\n\nWhen I'm building ecl-10.2.1 as part of Sage I get too warning messages from gcc. \n\n/export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p2/src/src/c/dpp.c: In function 'put_declaration':\n/export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p2/src/src/c/dpp.c:678:5: warning: too few arguments for format\n/export/home/drkirkby/sage-4.6.alpha0/spkg/build/ecl-10.2.1.p2/src/src/c/dpp.c:680:13: warning: too many arguments for format\n\n\nLooking at line 678 of dpp.c, I see:\n\n    fprintf(out, \"\\tif (ecl_unlikely(narg!=%d))\");\n\nSo there's a %d, but what is associate with the %d? There should be an integer, but there is not one. So it seems to me gcc is right to complain there are too few arguments for format. \n\nLikewise, on line 680, I see:\n\n    fprintf(out, \"\\t   FEwrong_num_arguments(MAKE_FIXNUM(%d));\\n\",\n            nreq, function_code);\n\nThere's one two arguments supplied, but only one %d is there. That does not make any sense to me. Both \"nreq\" and \"function_code\" are declared as integers, so should there not two %d's and not one? \n\nAgain, it seems gcc is right to complain that. \n\nThere are thousands of warning messages in Sage, but I'm a bit concerned about resolving those in ecl, as the ecl library being built has text relocation problems - see #9840\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9917\n\n",
     "created_at": "2010-09-16T10:27:54Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009916.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 Keywords: ecl
 
@@ -65,7 +65,7 @@ archive/issue_comments_098673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9916#issuecomment-98673",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_098680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9916#issuecomment-98680",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_098681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9916#issuecomment-98681",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_098682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9916#issuecomment-98682",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_098683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9916#issuecomment-98683",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_098687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9916#issuecomment-98687",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_098688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9916#issuecomment-98688",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

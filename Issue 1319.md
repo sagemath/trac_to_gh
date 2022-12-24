@@ -3,7 +3,7 @@
 archive/issues_001319.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1319\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1319\n\n",
     "created_at": "2007-11-28T20:06:47Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001319.json:
     "title": "[graphs] calculate the characteristic polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1319",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1319
 archive/issue_comments_008391.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-17T15:21:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1319#issuecomment-8391",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_008392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1319#issuecomment-8392",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_008393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1319#issuecomment-8393",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing component from combinatorics to graph theory.
 archive/issue_comments_008394.json:
 ```json
 {
-    "body": "Attachment [charpoly_for_graphs.patch](tarball://root/attachments/some-uuid/ticket1319/charpoly_for_graphs.patch) by rlm created at 2007-12-17 21:18:31",
+    "body": "Attachment [charpoly_for_graphs.patch](tarball://root/attachments/some-uuid/ticket1319/charpoly_for_graphs.patch) by @rlmill created at 2007-12-17 21:18:31",
     "created_at": "2007-12-17T21:18:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1319#issuecomment-8394",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [charpoly_for_graphs.patch](tarball://root/attachments/some-uuid/ticket1319/charpoly_for_graphs.patch) by rlm created at 2007-12-17 21:18:31
+Attachment [charpoly_for_graphs.patch](tarball://root/attachments/some-uuid/ticket1319/charpoly_for_graphs.patch) by @rlmill created at 2007-12-17 21:18:31
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_008395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1319#issuecomment-8395",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_008396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1319#issuecomment-8396",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

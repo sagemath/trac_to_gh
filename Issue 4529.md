@@ -199,7 +199,7 @@ archive/issue_comments_033635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33635",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_033636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33636",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_033637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33637",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_033638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33638",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_033639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33639",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_033640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33640",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_033641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33641",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_033642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33642",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -382,16 +382,16 @@ plot in logarithmic scale.
 archive/issue_comments_033643.json:
 ```json
 {
-    "body": "Attachment [logplots.py](tarball://root/attachments/some-uuid/ticket4529/logplots.py) by ppurka created at 2012-02-08 12:50:17\n\n[attachment:logplots.py] has a new class `LogGraphics` that I implemented and have been using for the past few months. Integrating it with Graphics seemed quite a painful process, so I had to go this direction and make my own class. Currently, it handles many *but not all* of the arguments that the `Graphics` class supports. In addition it uses `matplotlib.plt` to do the log plot; otherwise I ran into all sorts of problems with matplotlib (like the ones mentioned in earlier comments).\n\nIn engineering, we often need logarithmic plots and the logarithmic plots sometimes is of the form that the x-axis *decreases* as we go towards the right (for example if we plot decreasing probabilities on the x-axis). This `LogGraphics` takes this into account and makes sure that if a list of x-axis points with decreasing values along the higher indices of the list, then it plots the graph with a decreasing x-axis.",
+    "body": "Attachment [logplots.py](tarball://root/attachments/some-uuid/ticket4529/logplots.py) by @ppurka created at 2012-02-08 12:50:17\n\n[attachment:logplots.py] has a new class `LogGraphics` that I implemented and have been using for the past few months. Integrating it with Graphics seemed quite a painful process, so I had to go this direction and make my own class. Currently, it handles many *but not all* of the arguments that the `Graphics` class supports. In addition it uses `matplotlib.plt` to do the log plot; otherwise I ran into all sorts of problems with matplotlib (like the ones mentioned in earlier comments).\n\nIn engineering, we often need logarithmic plots and the logarithmic plots sometimes is of the form that the x-axis *decreases* as we go towards the right (for example if we plot decreasing probabilities on the x-axis). This `LogGraphics` takes this into account and makes sure that if a list of x-axis points with decreasing values along the higher indices of the list, then it plots the graph with a decreasing x-axis.",
     "created_at": "2012-02-08T12:50:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33643",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [logplots.py](tarball://root/attachments/some-uuid/ticket4529/logplots.py) by ppurka created at 2012-02-08 12:50:17
+Attachment [logplots.py](tarball://root/attachments/some-uuid/ticket4529/logplots.py) by @ppurka created at 2012-02-08 12:50:17
 
 [attachment:logplots.py] has a new class `LogGraphics` that I implemented and have been using for the past few months. Integrating it with Graphics seemed quite a painful process, so I had to go this direction and make my own class. Currently, it handles many *but not all* of the arguments that the `Graphics` class supports. In addition it uses `matplotlib.plt` to do the log plot; otherwise I ran into all sorts of problems with matplotlib (like the ones mentioned in earlier comments).
 
@@ -409,7 +409,7 @@ archive/issue_comments_033644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33644",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_033645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33645",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_033646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33646",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_033647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33647",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_033648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33648",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_033649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33649",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_033650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33650",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_033651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33651",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_033652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33652",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -585,7 +585,7 @@ archive/issue_comments_033653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33653",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_033654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33654",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_033655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33655",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -668,7 +668,7 @@ archive/issue_comments_033656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33656",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -681,16 +681,16 @@ Apply to devel/sage
 archive/issue_comments_033657.json:
 ```json
 {
-    "body": "Attachment [trac_4529-add_docs_eg_to_some_user_facing_functions.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add_docs_eg_to_some_user_facing_functions.patch) by ppurka created at 2012-05-20 17:14:13\n\nApply to devel/sage",
+    "body": "Attachment [trac_4529-add_docs_eg_to_some_user_facing_functions.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add_docs_eg_to_some_user_facing_functions.patch) by @ppurka created at 2012-05-20 17:14:13\n\nApply to devel/sage",
     "created_at": "2012-05-20T17:14:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33657",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [trac_4529-add_docs_eg_to_some_user_facing_functions.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add_docs_eg_to_some_user_facing_functions.patch) by ppurka created at 2012-05-20 17:14:13
+Attachment [trac_4529-add_docs_eg_to_some_user_facing_functions.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add_docs_eg_to_some_user_facing_functions.patch) by @ppurka created at 2012-05-20 17:14:13
 
 Apply to devel/sage
 
@@ -706,7 +706,7 @@ archive/issue_comments_033658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33658",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -728,7 +728,7 @@ archive/issue_comments_033659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33659",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -746,7 +746,7 @@ archive/issue_comments_033660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33660",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -764,7 +764,7 @@ archive/issue_comments_033661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33661",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -809,7 +809,7 @@ archive/issue_comments_033662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33662",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -831,7 +831,7 @@ archive/issue_comments_033663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33663",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -849,7 +849,7 @@ archive/issue_comments_033664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33664",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -867,7 +867,7 @@ archive/issue_comments_033665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33665",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -887,7 +887,7 @@ archive/issue_comments_033666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33666",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -905,7 +905,7 @@ archive/issue_comments_033667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33667",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -930,7 +930,7 @@ archive/issue_comments_033668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33668",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -963,7 +963,7 @@ archive/issue_comments_033669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33669",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -981,7 +981,7 @@ archive/issue_comments_033670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33670",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1003,7 +1003,7 @@ archive/issue_comments_033671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33671",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1027,7 +1027,7 @@ archive/issue_comments_033672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33672",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1045,7 +1045,7 @@ archive/issue_comments_033673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33673",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1087,7 +1087,7 @@ archive/issue_comments_033674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33674",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1151,7 +1151,7 @@ archive/issue_comments_033675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33675",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1169,7 +1169,7 @@ archive/issue_comments_033676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33676",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1224,7 +1224,7 @@ archive/issue_comments_033677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33677",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1240,16 +1240,16 @@ indeed, the replace seems much better. Thanks.
 archive/issue_comments_033678.json:
 ```json
 {
-    "body": "Attachment [trac_4529-check_for_single_tick.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-check_for_single_tick.patch) by ppurka created at 2012-05-27 09:12:18\n\napply to devel/sage",
+    "body": "Attachment [trac_4529-check_for_single_tick.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-check_for_single_tick.patch) by @ppurka created at 2012-05-27 09:12:18\n\napply to devel/sage",
     "created_at": "2012-05-27T09:12:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33678",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [trac_4529-check_for_single_tick.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-check_for_single_tick.patch) by ppurka created at 2012-05-27 09:12:18
+Attachment [trac_4529-check_for_single_tick.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-check_for_single_tick.patch) by @ppurka created at 2012-05-27 09:12:18
 
 apply to devel/sage
 
@@ -1265,7 +1265,7 @@ archive/issue_comments_033679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33679",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1287,16 +1287,16 @@ plot(x).show(xmin=1, xmax=-1)
 archive/issue_comments_033680.json:
 ```json
 {
-    "body": "Attachment [trac_4529-add_logscale_to_Graphics.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add_logscale_to_Graphics.2.patch) by ppurka created at 2012-05-27 09:39:26\n\napply to devel/sage",
+    "body": "Attachment [trac_4529-add_logscale_to_Graphics.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add_logscale_to_Graphics.2.patch) by @ppurka created at 2012-05-27 09:39:26\n\napply to devel/sage",
     "created_at": "2012-05-27T09:39:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33680",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [trac_4529-add_logscale_to_Graphics.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add_logscale_to_Graphics.2.patch) by ppurka created at 2012-05-27 09:39:26
+Attachment [trac_4529-add_logscale_to_Graphics.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add_logscale_to_Graphics.2.patch) by @ppurka created at 2012-05-27 09:39:26
 
 apply to devel/sage
 
@@ -1312,7 +1312,7 @@ archive/issue_comments_033681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33681",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1363,7 +1363,7 @@ archive/issue_comments_033682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33682",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1418,7 +1418,7 @@ archive/issue_comments_033683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33683",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1485,7 +1485,7 @@ archive/issue_comments_033684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33684",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1540,7 +1540,7 @@ archive/issue_comments_033685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33685",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1583,16 +1583,16 @@ between doctests which were meant to be viewed, because otherwise one will not b
 archive/issue_comments_033686.json:
 ```json
 {
-    "body": "Attachment [trac_4529-add-log-scale.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add-log-scale.patch) by kcrisman created at 2012-05-29 00:05:05",
+    "body": "Attachment [trac_4529-add-log-scale.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add-log-scale.patch) by @kcrisman created at 2012-05-29 00:05:05",
     "created_at": "2012-05-29T00:05:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33686",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4529-add-log-scale.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add-log-scale.patch) by kcrisman created at 2012-05-29 00:05:05
+Attachment [trac_4529-add-log-scale.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-add-log-scale.patch) by @kcrisman created at 2012-05-29 00:05:05
 
 
 
@@ -1601,16 +1601,16 @@ Attachment [trac_4529-add-log-scale.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_033687.json:
 ```json
 {
-    "body": "Attachment [trac_4529-single-tick.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-single-tick.patch) by kcrisman created at 2012-05-29 00:05:17",
+    "body": "Attachment [trac_4529-single-tick.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-single-tick.patch) by @kcrisman created at 2012-05-29 00:05:17",
     "created_at": "2012-05-29T00:05:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33687",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4529-single-tick.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-single-tick.patch) by kcrisman created at 2012-05-29 00:05:17
+Attachment [trac_4529-single-tick.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-single-tick.patch) by @kcrisman created at 2012-05-29 00:05:17
 
 
 
@@ -1619,16 +1619,16 @@ Attachment [trac_4529-single-tick.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_033688.json:
 ```json
 {
-    "body": "Attachment [trac_4529-docs-and-funcs.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-docs-and-funcs.patch) by kcrisman created at 2012-05-29 00:05:29",
+    "body": "Attachment [trac_4529-docs-and-funcs.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-docs-and-funcs.patch) by @kcrisman created at 2012-05-29 00:05:29",
     "created_at": "2012-05-29T00:05:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33688",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4529-docs-and-funcs.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-docs-and-funcs.patch) by kcrisman created at 2012-05-29 00:05:29
+Attachment [trac_4529-docs-and-funcs.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-docs-and-funcs.patch) by @kcrisman created at 2012-05-29 00:05:29
 
 
 
@@ -1637,16 +1637,16 @@ Attachment [trac_4529-docs-and-funcs.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_033689.json:
 ```json
 {
-    "body": "Attachment [trac_4529-more-doc.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-more-doc.patch) by kcrisman created at 2012-05-29 00:06:15",
+    "body": "Attachment [trac_4529-more-doc.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-more-doc.patch) by @kcrisman created at 2012-05-29 00:06:15",
     "created_at": "2012-05-29T00:06:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33689",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4529-more-doc.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-more-doc.patch) by kcrisman created at 2012-05-29 00:06:15
+Attachment [trac_4529-more-doc.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-more-doc.patch) by @kcrisman created at 2012-05-29 00:06:15
 
 
 
@@ -1660,7 +1660,7 @@ archive/issue_comments_033690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33690",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1680,7 +1680,7 @@ archive/issue_comments_033691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33691",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1713,7 +1713,7 @@ archive/issue_comments_033692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33692",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1731,7 +1731,7 @@ archive/issue_comments_033693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33693",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1749,7 +1749,7 @@ archive/issue_comments_033694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33694",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1767,7 +1767,7 @@ archive/issue_comments_033695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33695",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1785,7 +1785,7 @@ archive/issue_comments_033696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33696",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1828,7 +1828,7 @@ archive/issue_comments_033697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33697",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1846,7 +1846,7 @@ archive/issue_comments_033698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33698",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1864,7 +1864,7 @@ archive/issue_comments_033699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33699",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1882,7 +1882,7 @@ archive/issue_comments_033700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33700",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -1900,7 +1900,7 @@ archive/issue_comments_033701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33701",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1956,16 +1956,16 @@ Unfortunately it's too late now for me to properly test everything again - time 
 archive/issue_comments_033702.json:
 ```json
 {
-    "body": "Attachment [trac_4529-typo_fixes.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes.patch) by ppurka created at 2012-05-29 07:17:00",
+    "body": "Attachment [trac_4529-typo_fixes.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes.patch) by @ppurka created at 2012-05-29 07:17:00",
     "created_at": "2012-05-29T07:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33702",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [trac_4529-typo_fixes.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes.patch) by ppurka created at 2012-05-29 07:17:00
+Attachment [trac_4529-typo_fixes.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes.patch) by @ppurka created at 2012-05-29 07:17:00
 
 
 
@@ -1979,7 +1979,7 @@ archive/issue_comments_033703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33703",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2052,16 +2052,16 @@ Build finished.  The built documents can be found in /home/punarbasu/Installatio
 archive/issue_comments_033704.json:
 ```json
 {
-    "body": "Attachment [trac_4529-final-fixes.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-final-fixes.patch) by kcrisman created at 2012-05-29 17:27:39",
+    "body": "Attachment [trac_4529-final-fixes.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-final-fixes.patch) by @kcrisman created at 2012-05-29 17:27:39",
     "created_at": "2012-05-29T17:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33704",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4529-final-fixes.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-final-fixes.patch) by kcrisman created at 2012-05-29 17:27:39
+Attachment [trac_4529-final-fixes.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-final-fixes.patch) by @kcrisman created at 2012-05-29 17:27:39
 
 
 
@@ -2075,7 +2075,7 @@ archive/issue_comments_033705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33705",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2101,7 +2101,7 @@ archive/issue_comments_033706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33706",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2121,7 +2121,7 @@ archive/issue_comments_033707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33707",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2141,7 +2141,7 @@ archive/issue_comments_033708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33708",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2161,7 +2161,7 @@ archive/issue_comments_033709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33709",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -2179,7 +2179,7 @@ archive/issue_comments_033710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33710",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2200,7 +2200,7 @@ archive/issue_comments_033711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33711",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2218,7 +2218,7 @@ archive/issue_comments_033712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33712",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2231,16 +2231,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_033713.json:
 ```json
 {
-    "body": "Attachment [trac_4529-typo_fixes-rebase.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes-rebase.patch) by kcrisman created at 2012-05-30 04:34:17\n\nLuckily I only had to rebase one of these, due to some fuzz which the release manager doesn't always like.  Otherwise this is good to go!  Note the long list of dependencies, only so that all patches apply properly on 5.1.beta1.\n\nPositive review!\n\nPatchbot, apply apply trac_4529-add-log-scale.patch trac_4529-single-tick.patch trac_4529-docs-and-funcs.patch trac_4529-more-doc.patch trac_4529-typo_fixes-rebase.patch trac_4529-final-fixes.patch",
+    "body": "Attachment [trac_4529-typo_fixes-rebase.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes-rebase.patch) by @kcrisman created at 2012-05-30 04:34:17\n\nLuckily I only had to rebase one of these, due to some fuzz which the release manager doesn't always like.  Otherwise this is good to go!  Note the long list of dependencies, only so that all patches apply properly on 5.1.beta1.\n\nPositive review!\n\nPatchbot, apply apply trac_4529-add-log-scale.patch trac_4529-single-tick.patch trac_4529-docs-and-funcs.patch trac_4529-more-doc.patch trac_4529-typo_fixes-rebase.patch trac_4529-final-fixes.patch",
     "created_at": "2012-05-30T04:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33713",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4529-typo_fixes-rebase.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes-rebase.patch) by kcrisman created at 2012-05-30 04:34:17
+Attachment [trac_4529-typo_fixes-rebase.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes-rebase.patch) by @kcrisman created at 2012-05-30 04:34:17
 
 Luckily I only had to rebase one of these, due to some fuzz which the release manager doesn't always like.  Otherwise this is good to go!  Note the long list of dependencies, only so that all patches apply properly on 5.1.beta1.
 
@@ -2260,7 +2260,7 @@ archive/issue_comments_033714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33714",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2273,16 +2273,16 @@ Patchbot apply: trac_4529-add-log-scale.patch trac_4529-single-tick.patch trac_4
 archive/issue_comments_033715.json:
 ```json
 {
-    "body": "Attachment [trac_4529-docs-and-funcs.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-docs-and-funcs.2.patch) by ppurka created at 2012-06-02 02:52:17",
+    "body": "Attachment [trac_4529-docs-and-funcs.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-docs-and-funcs.2.patch) by @ppurka created at 2012-06-02 02:52:17",
     "created_at": "2012-06-02T02:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33715",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [trac_4529-docs-and-funcs.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-docs-and-funcs.2.patch) by ppurka created at 2012-06-02 02:52:17
+Attachment [trac_4529-docs-and-funcs.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-docs-and-funcs.2.patch) by @ppurka created at 2012-06-02 02:52:17
 
 
 
@@ -2291,16 +2291,16 @@ Attachment [trac_4529-docs-and-funcs.2.patch](tarball://root/attachments/some-uu
 archive/issue_comments_033716.json:
 ```json
 {
-    "body": "Attachment [trac_4529-typo_fixes-rebase.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes-rebase.2.patch) by ppurka created at 2012-06-02 02:53:32",
+    "body": "Attachment [trac_4529-typo_fixes-rebase.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes-rebase.2.patch) by @ppurka created at 2012-06-02 02:53:32",
     "created_at": "2012-06-02T02:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33716",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
-Attachment [trac_4529-typo_fixes-rebase.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes-rebase.2.patch) by ppurka created at 2012-06-02 02:53:32
+Attachment [trac_4529-typo_fixes-rebase.2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-typo_fixes-rebase.2.patch) by @ppurka created at 2012-06-02 02:53:32
 
 
 
@@ -2314,7 +2314,7 @@ archive/issue_comments_033717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33717",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2334,7 +2334,7 @@ archive/issue_comments_033718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33718",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2352,7 +2352,7 @@ archive/issue_comments_033719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33719",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2370,7 +2370,7 @@ archive/issue_comments_033720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33720",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2388,7 +2388,7 @@ archive/issue_comments_033721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33721",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2407,7 +2407,7 @@ archive/issue_comments_033722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33722",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2425,7 +2425,7 @@ archive/issue_comments_033723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33723",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2443,7 +2443,7 @@ archive/issue_comments_033724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33724",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2461,7 +2461,7 @@ archive/issue_comments_033725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33725",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -2479,7 +2479,7 @@ archive/issue_comments_033726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33726",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2495,16 +2495,16 @@ Anyway, I just finished, so hold on a sec.  It would be good for someone to look
 archive/issue_comments_033727.json:
 ```json
 {
-    "body": "Attachment [trac_4529-patch2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch2.patch) by kcrisman created at 2012-06-28 19:15:36",
+    "body": "Attachment [trac_4529-patch2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch2.patch) by @kcrisman created at 2012-06-28 19:15:36",
     "created_at": "2012-06-28T19:15:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33727",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4529-patch2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch2.patch) by kcrisman created at 2012-06-28 19:15:36
+Attachment [trac_4529-patch2.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch2.patch) by @kcrisman created at 2012-06-28 19:15:36
 
 
 
@@ -2513,16 +2513,16 @@ Attachment [trac_4529-patch2.patch](tarball://root/attachments/some-uuid/ticket4
 archive/issue_comments_033728.json:
 ```json
 {
-    "body": "Attachment [trac_4529-patch5.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch5.patch) by kcrisman created at 2012-06-28 19:16:23",
+    "body": "Attachment [trac_4529-patch5.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch5.patch) by @kcrisman created at 2012-06-28 19:16:23",
     "created_at": "2012-06-28T19:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33728",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4529-patch5.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch5.patch) by kcrisman created at 2012-06-28 19:16:23
+Attachment [trac_4529-patch5.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch5.patch) by @kcrisman created at 2012-06-28 19:16:23
 
 
 
@@ -2531,16 +2531,16 @@ Attachment [trac_4529-patch5.patch](tarball://root/attachments/some-uuid/ticket4
 archive/issue_comments_033729.json:
 ```json
 {
-    "body": "Attachment [trac_4529-patch6.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch6.patch) by kcrisman created at 2012-06-28 19:16:40",
+    "body": "Attachment [trac_4529-patch6.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch6.patch) by @kcrisman created at 2012-06-28 19:16:40",
     "created_at": "2012-06-28T19:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33729",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4529-patch6.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch6.patch) by kcrisman created at 2012-06-28 19:16:40
+Attachment [trac_4529-patch6.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch6.patch) by @kcrisman created at 2012-06-28 19:16:40
 
 
 
@@ -2554,7 +2554,7 @@ archive/issue_comments_033730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33730",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2581,7 +2581,7 @@ archive/issue_comments_033731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33731",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2610,7 +2610,7 @@ archive/issue_comments_033732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33732",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2628,7 +2628,7 @@ archive/issue_comments_033733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33733",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -2646,7 +2646,7 @@ archive/issue_comments_033734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33734",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2667,7 +2667,7 @@ archive/issue_comments_033735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33735",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2688,7 +2688,7 @@ archive/issue_comments_033736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33736",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2706,7 +2706,7 @@ archive/issue_comments_033737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33737",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2724,7 +2724,7 @@ archive/issue_comments_033738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33738",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2743,7 +2743,7 @@ archive/issue_comments_033739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33739",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2756,16 +2756,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_033740.json:
 ```json
 {
-    "body": "Attachment [trac_4529-patch4.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch4.patch) by kcrisman created at 2012-07-03 13:18:40",
+    "body": "Attachment [trac_4529-patch4.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch4.patch) by @kcrisman created at 2012-07-03 13:18:40",
     "created_at": "2012-07-03T13:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33740",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4529-patch4.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch4.patch) by kcrisman created at 2012-07-03 13:18:40
+Attachment [trac_4529-patch4.patch](tarball://root/attachments/some-uuid/ticket4529/trac_4529-patch4.patch) by @kcrisman created at 2012-07-03 13:18:40
 
 
 
@@ -2779,7 +2779,7 @@ archive/issue_comments_033741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33741",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2797,7 +2797,7 @@ archive/issue_comments_033742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33742",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2815,7 +2815,7 @@ archive/issue_comments_033743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33743",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2833,7 +2833,7 @@ archive/issue_comments_033744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4529#issuecomment-33744",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

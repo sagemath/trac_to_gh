@@ -3,7 +3,7 @@
 archive/issues_006959.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6959\n\n",
+    "body": "Assignee: @craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6959\n\n",
     "created_at": "2009-09-19T05:01:49Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_006959.json:
     "title": "modular forms -- add aplist and anlist for newforms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6959",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6959
 archive/issue_comments_057561.json:
 ```json
 {
-    "body": "Attachment [trac_6959.patch](tarball://root/attachments/some-uuid/ticket6959/trac_6959.patch) by was created at 2009-09-19 05:02:55",
+    "body": "Attachment [trac_6959.patch](tarball://root/attachments/some-uuid/ticket6959/trac_6959.patch) by @williamstein created at 2009-09-19 05:02:55",
     "created_at": "2009-09-19T05:02:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57561",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6959.patch](tarball://root/attachments/some-uuid/ticket6959/trac_6959.patch) by was created at 2009-09-19 05:02:55
+Attachment [trac_6959.patch](tarball://root/attachments/some-uuid/ticket6959/trac_6959.patch) by @williamstein created at 2009-09-19 05:02:55
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_057562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57562",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_057563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57563",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_057564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57564",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_057565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57565",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_057566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57566",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_057567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57567",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

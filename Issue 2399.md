@@ -3,7 +3,7 @@
 archive/issues_002399.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  burcin\n\nFrom sage-support:\n\n\n```\nWhen I was writing some other code this came out; finally decided to report it.  Do the following\nin an online SAGE notebook:\n\n1+1\n\nWe get two.  Now run the following:\n\n# Lima\u00e7on\n1+1\n\nGet:\n\nException (click to the left for traceback):\n...\nSyntaxError: Non-ASCII character '\\xe7' in file /home/server2/sage_notebook/worksheets/dino/9/code/3.py on line 4, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/server2/sage_notebook/worksheets/dino/9/code/3.py\", line 4\nSyntaxError: Non-ASCII character '\\xe7' in file /home/server2/sage_notebook/worksheets/dino/9/code/3.py on line 4, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details\n\n---\n\nSacre bleu!  It's in a comment!  Looking at the error & the web site it may be a Python thing & untouchable.\nBut can we get around this?  Shouldn't our French friends (and countless others) be able to use SAGE?\n\nDean\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2399\n\n",
+    "body": "Assignee: boothby\n\nCC:  @burcin\n\nFrom sage-support:\n\n\n```\nWhen I was writing some other code this came out; finally decided to report it.  Do the following\nin an online SAGE notebook:\n\n1+1\n\nWe get two.  Now run the following:\n\n# Lima\u00e7on\n1+1\n\nGet:\n\nException (click to the left for traceback):\n...\nSyntaxError: Non-ASCII character '\\xe7' in file /home/server2/sage_notebook/worksheets/dino/9/code/3.py on line 4, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/server2/sage_notebook/worksheets/dino/9/code/3.py\", line 4\nSyntaxError: Non-ASCII character '\\xe7' in file /home/server2/sage_notebook/worksheets/dino/9/code/3.py on line 4, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details\n\n---\n\nSacre bleu!  It's in a comment!  Looking at the error & the web site it may be a Python thing & untouchable.\nBut can we get around this?  Shouldn't our French friends (and countless others) be able to use SAGE?\n\nDean\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2399\n\n",
     "created_at": "2008-03-05T22:38:15Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_002399.json:
     "title": "allow utf8 characters in the notebook cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2399",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  burcin
+CC:  @burcin
 
 From sage-support:
 
@@ -67,16 +67,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2399
 archive/issue_comments_016193.json:
 ```json
 {
-    "body": "Attachment [utf8.patch](tarball://root/attachments/some-uuid/ticket2399/utf8.patch) by jason created at 2008-03-05 22:48:21",
+    "body": "Attachment [utf8.patch](tarball://root/attachments/some-uuid/ticket2399/utf8.patch) by @jasongrout created at 2008-03-05 22:48:21",
     "created_at": "2008-03-05T22:48:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2399#issuecomment-16193",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [utf8.patch](tarball://root/attachments/some-uuid/ticket2399/utf8.patch) by jason created at 2008-03-05 22:48:21
+Attachment [utf8.patch](tarball://root/attachments/some-uuid/ticket2399/utf8.patch) by @jasongrout created at 2008-03-05 22:48:21
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_016194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2399#issuecomment-16194",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_016195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2399#issuecomment-16195",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_016196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2399#issuecomment-16196",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_016197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2399#issuecomment-16197",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

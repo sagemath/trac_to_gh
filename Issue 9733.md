@@ -3,7 +3,7 @@
 archive/issues_009733.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  polybori drkirkby malb burcin leif\n\nIt was discovered in #8059 , that the parallel build of the Singular 3-1-1-4 packages still breaks in rare cases (many CPU cores, slow hard disk).\n\nThere are two patches which should fix this issue upstream:\nhttp://www.singular.uni-kl.de:8002/trac/ticket/250, see\n\n```\nsvn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9733\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  polybori drkirkby @malb @burcin @nexttime\n\nIt was discovered in #8059 , that the parallel build of the Singular 3-1-1-4 packages still breaks in rare cases (many CPU cores, slow hard disk).\n\nThere are two patches which should fix this issue upstream:\nhttp://www.singular.uni-kl.de:8002/trac/ticket/250, see\n\n```\nsvn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9733\n\n",
     "created_at": "2010-08-12T12:18:45Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009733.json:
     "title": "Parallel build of Singular 3-1-1-4-package fails in rare case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9733",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  polybori drkirkby malb burcin leif
+CC:  polybori drkirkby @malb @burcin @nexttime
 
 It was discovered in #8059 , that the parallel build of the Singular 3-1-1-4 packages still breaks in rare cases (many CPU cores, slow hard disk).
 
@@ -47,7 +47,7 @@ archive/issue_comments_095117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95117",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -60,16 +60,16 @@ svn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/
 archive/issue_comments_095118.json:
 ```json
 {
-    "body": "Attachment [SingularSvn13111-13112.patch](tarball://root/attachments/some-uuid/ticket9733/SingularSvn13111-13112.patch) by AlexanderDreyer created at 2010-08-12 12:20:58",
+    "body": "Attachment [SingularSvn13111-13112.patch](tarball://root/attachments/some-uuid/ticket9733/SingularSvn13111-13112.patch) by @alexanderdreyer created at 2010-08-12 12:20:58",
     "created_at": "2010-08-12T12:20:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95118",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
-Attachment [SingularSvn13111-13112.patch](tarball://root/attachments/some-uuid/ticket9733/SingularSvn13111-13112.patch) by AlexanderDreyer created at 2010-08-12 12:20:58
+Attachment [SingularSvn13111-13112.patch](tarball://root/attachments/some-uuid/ticket9733/SingularSvn13111-13112.patch) by @alexanderdreyer created at 2010-08-12 12:20:58
 
 
 
@@ -78,16 +78,16 @@ Attachment [SingularSvn13111-13112.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_095119.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to AlexanderDreyer.",
+    "body": "Changing assignee from @aghitza to @alexanderdreyer.",
     "created_at": "2010-08-12T12:20:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95119",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
-Changing assignee from AlexGhitza to AlexanderDreyer.
+Changing assignee from @aghitza to @alexanderdreyer.
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_095120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95120",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_095121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95121",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_095122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95122",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_095123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95123",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -173,16 +173,16 @@ replace make by ${MAKE} in top Makefile.in
 archive/issue_comments_095124.json:
 ```json
 {
-    "body": "Attachment [singular-3.1.1.4-MAKE.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-MAKE.patch) by AlexanderDreyer created at 2010-08-13 11:35:31\n\nBut that's actually not a problem for the spkg, because the `spkg-install` does not call these target from the top-level `Makefile`.",
+    "body": "Attachment [singular-3.1.1.4-MAKE.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-MAKE.patch) by @alexanderdreyer created at 2010-08-13 11:35:31\n\nBut that's actually not a problem for the spkg, because the `spkg-install` does not call these target from the top-level `Makefile`.",
     "created_at": "2010-08-13T11:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95124",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
-Attachment [singular-3.1.1.4-MAKE.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-MAKE.patch) by AlexanderDreyer created at 2010-08-13 11:35:31
+Attachment [singular-3.1.1.4-MAKE.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-MAKE.patch) by @alexanderdreyer created at 2010-08-13 11:35:31
 
 But that's actually not a problem for the spkg, because the `spkg-install` does not call these target from the top-level `Makefile`.
 
@@ -198,7 +198,7 @@ archive/issue_comments_095125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95125",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_095126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95126",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_095127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95127",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_095128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95128",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_095129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95129",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_095130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95130",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_095131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95131",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_095132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95132",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_095133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95133",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_095134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95134",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_095135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95135",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_095136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95136",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_095137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95137",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_095138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95138",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_095139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95139",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_095140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95140",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_095141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95141",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_095142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95142",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -568,16 +568,16 @@ THis patch adresses ranlib issue of comment 21
 archive/issue_comments_095143.json:
 ```json
 {
-    "body": "Attachment [ranlib_libkernel.patch](tarball://root/attachments/some-uuid/ticket9733/ranlib_libkernel.patch) by AlexanderDreyer created at 2010-09-10 08:18:06\n\n>  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  \nI think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)\n\n>  * Are the object files for `libcf.a`, `libsingcf_g.a`, `libfac.a`, and `libsingfac.a` built in parallel?\nFrom the Makefiles there's no restriction, so the dependencies of each of which can be build in parallel. But there may be dependencies, that that there is no parallel build in fact.\n\n>  * Is the message `install:  libsingcf_p.a does not exist` harmless?  It's printed three times per install.\n> \n> I did all of the runs above under `/scratch`.\nAs fbissey said, this should not cause problems here.",
+    "body": "Attachment [ranlib_libkernel.patch](tarball://root/attachments/some-uuid/ticket9733/ranlib_libkernel.patch) by @alexanderdreyer created at 2010-09-10 08:18:06\n\n>  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  \nI think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)\n\n>  * Are the object files for `libcf.a`, `libsingcf_g.a`, `libfac.a`, and `libsingfac.a` built in parallel?\nFrom the Makefiles there's no restriction, so the dependencies of each of which can be build in parallel. But there may be dependencies, that that there is no parallel build in fact.\n\n>  * Is the message `install:  libsingcf_p.a does not exist` harmless?  It's printed three times per install.\n> \n> I did all of the runs above under `/scratch`.\nAs fbissey said, this should not cause problems here.",
     "created_at": "2010-09-10T08:18:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95143",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
-Attachment [ranlib_libkernel.patch](tarball://root/attachments/some-uuid/ticket9733/ranlib_libkernel.patch) by AlexanderDreyer created at 2010-09-10 08:18:06
+Attachment [ranlib_libkernel.patch](tarball://root/attachments/some-uuid/ticket9733/ranlib_libkernel.patch) by @alexanderdreyer created at 2010-09-10 08:18:06
 
 >  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  
 I think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)
@@ -602,7 +602,7 @@ archive/issue_comments_095144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95144",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -634,7 +634,7 @@ archive/issue_comments_095145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95145",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -652,7 +652,7 @@ archive/issue_comments_095146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95146",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_095147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95147",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -694,7 +694,7 @@ archive/issue_comments_095148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95148",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -712,7 +712,7 @@ archive/issue_comments_095149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95149",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -730,7 +730,7 @@ archive/issue_comments_095150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95150",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -754,7 +754,7 @@ archive/issue_comments_095151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95151",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -777,7 +777,7 @@ archive/issue_comments_095152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95152",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -799,7 +799,7 @@ archive/issue_comments_095153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95153",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -826,7 +826,7 @@ archive/issue_comments_095154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95154",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -865,7 +865,7 @@ archive/issue_comments_095155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95155",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -886,7 +886,7 @@ archive/issue_comments_095156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95156",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -910,7 +910,7 @@ archive/issue_comments_095157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95157",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -929,7 +929,7 @@ archive/issue_comments_095158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95158",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -950,7 +950,7 @@ archive/issue_comments_095159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95159",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -968,7 +968,7 @@ archive/issue_comments_095160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95160",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1028,7 +1028,7 @@ archive/issue_comments_095163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95163",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1046,7 +1046,7 @@ archive/issue_comments_095164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95164",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1064,7 +1064,7 @@ archive/issue_comments_095165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95165",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1077,16 +1077,16 @@ The patch I just posted has unforseen issues, so don't use it.
 archive/issue_comments_095166.json:
 ```json
 {
-    "body": "Attachment [singular-3.1.1.4-parrallelmake-2.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-parrallelmake-2.patch) by fbissey created at 2010-09-17 11:47:09\n\ntentative patch for the latest parallel make issue (bis repetitas)",
+    "body": "Attachment [singular-3.1.1.4-parrallelmake-2.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-parrallelmake-2.patch) by @kiwifb created at 2010-09-17 11:47:09\n\ntentative patch for the latest parallel make issue (bis repetitas)",
     "created_at": "2010-09-17T11:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95166",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [singular-3.1.1.4-parrallelmake-2.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-parrallelmake-2.patch) by fbissey created at 2010-09-17 11:47:09
+Attachment [singular-3.1.1.4-parrallelmake-2.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-parrallelmake-2.patch) by @kiwifb created at 2010-09-17 11:47:09
 
 tentative patch for the latest parallel make issue (bis repetitas)
 
@@ -1102,7 +1102,7 @@ archive/issue_comments_095167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95167",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1120,7 +1120,7 @@ archive/issue_comments_095168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95168",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1141,7 +1141,7 @@ archive/issue_comments_095169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95169",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1159,7 +1159,7 @@ archive/issue_comments_095170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95170",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1199,7 +1199,7 @@ archive/issue_comments_095171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95171",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -1212,16 +1212,16 @@ Another missing dependency
 archive/issue_comments_095172.json:
 ```json
 {
-    "body": "Attachment [factory-GNUmakefile.in.patch](tarball://root/attachments/some-uuid/ticket9733/factory-GNUmakefile.in.patch) by AlexanderDreyer created at 2010-09-17 13:20:41\n\nI attached another patch, which should fix this issue.\nThe spkg is here:\nhttp://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p2.spkg",
+    "body": "Attachment [factory-GNUmakefile.in.patch](tarball://root/attachments/some-uuid/ticket9733/factory-GNUmakefile.in.patch) by @alexanderdreyer created at 2010-09-17 13:20:41\n\nI attached another patch, which should fix this issue.\nThe spkg is here:\nhttp://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p2.spkg",
     "created_at": "2010-09-17T13:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95172",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
-Attachment [factory-GNUmakefile.in.patch](tarball://root/attachments/some-uuid/ticket9733/factory-GNUmakefile.in.patch) by AlexanderDreyer created at 2010-09-17 13:20:41
+Attachment [factory-GNUmakefile.in.patch](tarball://root/attachments/some-uuid/ticket9733/factory-GNUmakefile.in.patch) by @alexanderdreyer created at 2010-09-17 13:20:41
 
 I attached another patch, which should fix this issue.
 The spkg is here:
@@ -1239,7 +1239,7 @@ archive/issue_comments_095173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95173",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1262,7 +1262,7 @@ archive/issue_comments_095174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95174",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1280,7 +1280,7 @@ archive/issue_comments_095175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95175",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1401,7 +1401,7 @@ archive/issue_comments_095180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95180",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1419,7 +1419,7 @@ archive/issue_comments_095181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95181",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1437,7 +1437,7 @@ archive/issue_comments_095182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95182",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1495,7 +1495,7 @@ archive/issue_comments_095183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95183",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1508,16 +1508,16 @@ fixing parallel make issue in libfac
 archive/issue_comments_095184.json:
 ```json
 {
-    "body": "Attachment [singular-3.1.1.4-parrallelmake-3.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-parrallelmake-3.patch) by fbissey created at 2010-09-19 03:17:47\n\nSo he reported back and the patch worked for him.",
+    "body": "Attachment [singular-3.1.1.4-parrallelmake-3.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-parrallelmake-3.patch) by @kiwifb created at 2010-09-19 03:17:47\n\nSo he reported back and the patch worked for him.",
     "created_at": "2010-09-19T03:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95184",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [singular-3.1.1.4-parrallelmake-3.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-parrallelmake-3.patch) by fbissey created at 2010-09-19 03:17:47
+Attachment [singular-3.1.1.4-parrallelmake-3.patch](tarball://root/attachments/some-uuid/ticket9733/singular-3.1.1.4-parrallelmake-3.patch) by @kiwifb created at 2010-09-19 03:17:47
 
 So he reported back and the patch worked for him.
 
@@ -1533,7 +1533,7 @@ archive/issue_comments_095185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95185",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005421.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  mhansen\n\nBased on the thread at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/1e3928bc2bffe9a6?pli=1\n\nseveral speedups have been implemented:\n\n1. Graphs which can be switched to `c_graph` are automatically switched before isomorphism testing (see thread).\n\n2. Several cheap imports have been moved to module level.\n\n3. One unnecessary step was removed.\n\nBenchmark: Take a list of all isomorphism classes of graphs on 7 vertices. Take one representative from each, and test each unordered pair for isomorphism. With underlying `c_graph` implementation, previously was 31.11 seconds, is now 10.71 seconds.\n\nThis patch also enables the `implementation` syntax in the graph generators.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5421\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @mwhansen\n\nBased on the thread at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/1e3928bc2bffe9a6?pli=1\n\nseveral speedups have been implemented:\n\n1. Graphs which can be switched to `c_graph` are automatically switched before isomorphism testing (see thread).\n\n2. Several cheap imports have been moved to module level.\n\n3. One unnecessary step was removed.\n\nBenchmark: Take a list of all isomorphism classes of graphs on 7 vertices. Take one representative from each, and test each unordered pair for isomorphism. With underlying `c_graph` implementation, previously was 31.11 seconds, is now 10.71 seconds.\n\nThis patch also enables the `implementation` syntax in the graph generators.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5421\n\n",
     "created_at": "2009-03-02T18:36:52Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_005421.json:
     "title": "Speedup is_isomorphic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5421",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  mhansen
+CC:  @mwhansen
 
 Based on the thread at
 
@@ -53,7 +53,7 @@ archive/issue_comments_041937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5421#issuecomment-41937",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_041938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5421#issuecomment-41938",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_041939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5421#issuecomment-41939",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -150,16 +150,16 @@ Michael
 archive/issue_comments_041941.json:
 ```json
 {
-    "body": "Attachment [trac_5421.patch](tarball://root/attachments/some-uuid/ticket5421/trac_5421.patch) by rlm created at 2009-03-02 20:18:49\n\nI rebased the patch to 3.4.alpha0, but I don't have a built copy yet, so I couldn't test. But I'm pretty sure it should work. What could go wrong?",
+    "body": "Attachment [trac_5421.patch](tarball://root/attachments/some-uuid/ticket5421/trac_5421.patch) by @rlmill created at 2009-03-02 20:18:49\n\nI rebased the patch to 3.4.alpha0, but I don't have a built copy yet, so I couldn't test. But I'm pretty sure it should work. What could go wrong?",
     "created_at": "2009-03-02T20:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5421#issuecomment-41941",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5421.patch](tarball://root/attachments/some-uuid/ticket5421/trac_5421.patch) by rlm created at 2009-03-02 20:18:49
+Attachment [trac_5421.patch](tarball://root/attachments/some-uuid/ticket5421/trac_5421.patch) by @rlmill created at 2009-03-02 20:18:49
 
 I rebased the patch to 3.4.alpha0, but I don't have a built copy yet, so I couldn't test. But I'm pretty sure it should work. What could go wrong?
 
@@ -232,7 +232,7 @@ archive/issue_comments_041943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5421#issuecomment-41943",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -245,16 +245,16 @@ Looks like that second patch is not ready yet...
 archive/issue_comments_041944.json:
 ```json
 {
-    "body": "Attachment [trac_5421-b.patch](tarball://root/attachments/some-uuid/ticket5421/trac_5421-b.patch) by rlm created at 2009-03-04 20:02:41",
+    "body": "Attachment [trac_5421-b.patch](tarball://root/attachments/some-uuid/ticket5421/trac_5421-b.patch) by @rlmill created at 2009-03-04 20:02:41",
     "created_at": "2009-03-04T20:02:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5421#issuecomment-41944",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5421-b.patch](tarball://root/attachments/some-uuid/ticket5421/trac_5421-b.patch) by rlm created at 2009-03-04 20:02:41
+Attachment [trac_5421-b.patch](tarball://root/attachments/some-uuid/ticket5421/trac_5421-b.patch) by @rlmill created at 2009-03-04 20:02:41
 
 
 
@@ -268,7 +268,7 @@ archive/issue_comments_041945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5421#issuecomment-41945",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_041947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5421#issuecomment-41947",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001377.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere is code in integer_mod.pyx that coerces a Python int into an int_fast32_t.  This is wrong, since a Python int can hold a C long; so this might truncate if sizeof(int_fast32_t) < sizeof(long).\n\nHowever, the bug has little or no practical effect, since:\n1) on 64-bit x86 Linux, sizeof(int_fast32_t) == sizeof(long);\n2) the problem only occurs if you call `IntegerMod_int` directly (which nobody should); it looks like all the wrappers do the modulo before they create the `IntegerMod_int`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1377\n\n",
+    "body": "Assignee: @williamstein\n\nThere is code in integer_mod.pyx that coerces a Python int into an int_fast32_t.  This is wrong, since a Python int can hold a C long; so this might truncate if sizeof(int_fast32_t) < sizeof(long).\n\nHowever, the bug has little or no practical effect, since:\n1) on 64-bit x86 Linux, sizeof(int_fast32_t) == sizeof(long);\n2) the problem only occurs if you call `IntegerMod_int` directly (which nobody should); it looks like all the wrappers do the modulo before they create the `IntegerMod_int`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1377\n\n",
     "created_at": "2007-12-03T00:02:29Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001377.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There is code in integer_mod.pyx that coerces a Python int into an int_fast32_t.  This is wrong, since a Python int can hold a C long; so this might truncate if sizeof(int_fast32_t) < sizeof(long).
 
@@ -54,16 +54,16 @@ Attachment [1377.patch](tarball://root/attachments/some-uuid/ticket1377/1377.pat
 archive/issue_comments_008834.json:
 ```json
 {
-    "body": "Changing assignee from was to somebody.",
+    "body": "Changing assignee from @williamstein to somebody.",
     "created_at": "2007-12-04T08:13:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1377#issuecomment-8834",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to somebody.
+Changing assignee from @williamstein to somebody.
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_008835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1377#issuecomment-8835",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_008836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1377#issuecomment-8836",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

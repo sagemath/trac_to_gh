@@ -14,7 +14,7 @@ archive/issues_008789.json:
     "title": "Improve doctest coverage of modules/free_module_element.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8789",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8789
 archive/issue_comments_080476.json:
 ```json
 {
-    "body": "Attachment [trac_8789.patch](tarball://root/attachments/some-uuid/ticket8789/trac_8789.patch) by was created at 2010-04-29 05:17:43",
+    "body": "Attachment [trac_8789.patch](tarball://root/attachments/some-uuid/ticket8789/trac_8789.patch) by @williamstein created at 2010-04-29 05:17:43",
     "created_at": "2010-04-29T05:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8789#issuecomment-80476",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8789.patch](tarball://root/attachments/some-uuid/ticket8789/trac_8789.patch) by was created at 2010-04-29 05:17:43
+Attachment [trac_8789.patch](tarball://root/attachments/some-uuid/ticket8789/trac_8789.patch) by @williamstein created at 2010-04-29 05:17:43
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_080477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8789#issuecomment-80477",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -74,16 +74,16 @@ Changing status from new to needs_review.
 archive/issue_comments_080478.json:
 ```json
 {
-    "body": "Attachment [trac_8789_part2.patch](tarball://root/attachments/some-uuid/ticket8789/trac_8789_part2.patch) by mhansen created at 2010-05-01 17:41:20\n\nLooks good to me.",
+    "body": "Attachment [trac_8789_part2.patch](tarball://root/attachments/some-uuid/ticket8789/trac_8789_part2.patch) by @mwhansen created at 2010-05-01 17:41:20\n\nLooks good to me.",
     "created_at": "2010-05-01T17:41:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8789#issuecomment-80478",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8789_part2.patch](tarball://root/attachments/some-uuid/ticket8789/trac_8789_part2.patch) by mhansen created at 2010-05-01 17:41:20
+Attachment [trac_8789_part2.patch](tarball://root/attachments/some-uuid/ticket8789/trac_8789_part2.patch) by @mwhansen created at 2010-05-01 17:41:20
 
 Looks good to me.
 
@@ -99,7 +99,7 @@ archive/issue_comments_080479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8789#issuecomment-80479",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

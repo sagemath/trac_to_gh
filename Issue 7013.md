@@ -3,7 +3,7 @@
 archive/issues_007013.json:
 ```json
 {
-    "body": "Assignee: kevin.stueve\n\nCC:  was robertwb georgsweber kevin.stueve ohanar victor leif\n\nKeywords: primes, sieve, table,LMO\n\nComputes the prime counting and nth prime function.  This is my first Sage contribution.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7013\n\n",
+    "body": "Assignee: kevin.stueve\n\nCC:  @williamstein @robertwb georgsweber kevin.stueve @ohanar victor @nexttime\n\nKeywords: primes, sieve, table,LMO\n\nComputes the prime counting and nth prime function.  This is my first Sage contribution.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7013\n\n",
     "created_at": "2009-09-25T10:26:36Z",
     "labels": [
         "number theory",
@@ -19,7 +19,7 @@ archive/issues_007013.json:
 ```
 Assignee: kevin.stueve
 
-CC:  was robertwb georgsweber kevin.stueve ohanar victor leif
+CC:  @williamstein @robertwb georgsweber kevin.stueve @ohanar victor @nexttime
 
 Keywords: primes, sieve, table,LMO
 
@@ -97,7 +97,7 @@ archive/issue_comments_057999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-57999",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_058003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58003",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_058004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58004",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_058008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58008",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -357,16 +357,16 @@ Andrew
 archive/issue_comments_058009.json:
 ```json
 {
-    "body": "Attachment [7013.patch](tarball://root/attachments/some-uuid/ticket7013/7013.patch) by ohanar created at 2009-11-23 10:13:36\n\nRough first patch",
+    "body": "Attachment [7013.patch](tarball://root/attachments/some-uuid/ticket7013/7013.patch) by @ohanar created at 2009-11-23 10:13:36\n\nRough first patch",
     "created_at": "2009-11-23T10:13:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58009",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
-Attachment [7013.patch](tarball://root/attachments/some-uuid/ticket7013/7013.patch) by ohanar created at 2009-11-23 10:13:36
+Attachment [7013.patch](tarball://root/attachments/some-uuid/ticket7013/7013.patch) by @ohanar created at 2009-11-23 10:13:36
 
 Rough first patch
 
@@ -481,7 +481,7 @@ archive/issue_comments_058013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58013",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -609,7 +609,7 @@ archive/issue_comments_058016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58016",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -927,7 +927,7 @@ archive/issue_comments_058029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58029",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -965,7 +965,7 @@ archive/issue_comments_058031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58031",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1009,7 +1009,7 @@ archive/issue_comments_058033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58033",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1286,7 +1286,7 @@ archive/issue_comments_058036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58036",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1600,7 +1600,7 @@ archive/issue_comments_058039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58039",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1629,7 +1629,7 @@ archive/issue_comments_058040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58040",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1670,7 +1670,7 @@ archive/issue_comments_058042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58042",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1708,7 +1708,7 @@ archive/issue_comments_058043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58043",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1768,7 +1768,7 @@ archive/issue_comments_058045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58045",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1871,16 +1871,16 @@ Attachment [cython_table_based_prime_pi.pyx](tarball://root/attachments/some-uui
 archive/issue_comments_058048.json:
 ```json
 {
-    "body": "Attachment [prime_sieve.c](tarball://root/attachments/some-uuid/ticket7013/prime_sieve.c) by leif created at 2010-09-02 18:43:10\n\nJust for the record:\n\nTOS has published a new prime sieve program, which also incorporates some of my ideas (separate list for sieving primes that have multiples in every sieve segment, combined striking of multiples of the smallest primes).\n\nHowever, it is rather a rewrite from scratch than an update of his previous one.",
+    "body": "Attachment [prime_sieve.c](tarball://root/attachments/some-uuid/ticket7013/prime_sieve.c) by @nexttime created at 2010-09-02 18:43:10\n\nJust for the record:\n\nTOS has published a new prime sieve program, which also incorporates some of my ideas (separate list for sieving primes that have multiples in every sieve segment, combined striking of multiples of the smallest primes).\n\nHowever, it is rather a rewrite from scratch than an update of his previous one.",
     "created_at": "2010-09-02T18:43:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58048",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [prime_sieve.c](tarball://root/attachments/some-uuid/ticket7013/prime_sieve.c) by leif created at 2010-09-02 18:43:10
+Attachment [prime_sieve.c](tarball://root/attachments/some-uuid/ticket7013/prime_sieve.c) by @nexttime created at 2010-09-02 18:43:10
 
 Just for the record:
 
@@ -1959,7 +1959,7 @@ archive/issue_comments_058051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58051",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -1988,7 +1988,7 @@ archive/issue_comments_058052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58052",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -2003,16 +2003,16 @@ One question for this ticket. In the description you mention the idea of includi
 archive/issue_comments_058053.json:
 ```json
 {
-    "body": "Attachment [trac7013_rebased.patch](tarball://root/attachments/some-uuid/ticket7013/trac7013_rebased.patch) by ohanar created at 2012-01-22 15:29:15",
+    "body": "Attachment [trac7013_rebased.patch](tarball://root/attachments/some-uuid/ticket7013/trac7013_rebased.patch) by @ohanar created at 2012-01-22 15:29:15",
     "created_at": "2012-01-22T15:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58053",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
-Attachment [trac7013_rebased.patch](tarball://root/attachments/some-uuid/ticket7013/trac7013_rebased.patch) by ohanar created at 2012-01-22 15:29:15
+Attachment [trac7013_rebased.patch](tarball://root/attachments/some-uuid/ticket7013/trac7013_rebased.patch) by @ohanar created at 2012-01-22 15:29:15
 
 
 
@@ -2026,7 +2026,7 @@ archive/issue_comments_058054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7013#issuecomment-58054",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 

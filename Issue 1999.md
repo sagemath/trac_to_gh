@@ -3,7 +3,7 @@
 archive/issues_001999.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe code in \n\n```\n devel/sage-main/sage/plot/mpl3d\n```\n\nshould all be deleted from Sage.  It's ugly toy code, and Sage has much better 3d code now.  Also, there is likely a better version of that code in matplotlib itself. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1999\n\n",
+    "body": "Assignee: @williamstein\n\nThe code in \n\n```\n devel/sage-main/sage/plot/mpl3d\n```\n\nshould all be deleted from Sage.  It's ugly toy code, and Sage has much better 3d code now.  Also, there is likely a better version of that code in matplotlib itself. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1999\n\n",
     "created_at": "2008-01-31T05:16:17Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001999.json:
     "title": "delete mpl3d code from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1999",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The code in 
 
@@ -43,7 +43,7 @@ archive/issue_comments_012928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1999#issuecomment-12928",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,7 +80,7 @@ Changing status from new to assigned.
 archive/issue_comments_012930.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-02-02T07:12:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1999",
     "type": "issue_comment",
@@ -89,7 +89,7 @@ archive/issue_comments_012930.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -98,16 +98,16 @@ Changing assignee from was to mabshoff.
 archive/issue_comments_012931.json:
 ```json
 {
-    "body": "Attachment [trac-1999-part2.patch](tarball://root/attachments/some-uuid/ticket1999/trac-1999-part2.patch) by was created at 2008-02-02 07:52:04",
+    "body": "Attachment [trac-1999-part2.patch](tarball://root/attachments/some-uuid/ticket1999/trac-1999-part2.patch) by @williamstein created at 2008-02-02 07:52:04",
     "created_at": "2008-02-02T07:52:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1999#issuecomment-12931",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1999-part2.patch](tarball://root/attachments/some-uuid/ticket1999/trac-1999-part2.patch) by was created at 2008-02-02 07:52:04
+Attachment [trac-1999-part2.patch](tarball://root/attachments/some-uuid/ticket1999/trac-1999-part2.patch) by @williamstein created at 2008-02-02 07:52:04
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_012932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1999#issuecomment-12932",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009786.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mmarco\n\n\n```\nsage: R.<x>=GF(101)[]\nsage: R.lagrange_polynomial([[1,0],[2,0]])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/data/sage-4.5.1/<ipython console> in <module>()\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.pyc in lagrange_polynomial(self, points, algorithm, previous_row)\n   1481             P = F[n-1]\n   1482             for i in xrange(n-2, -1, -1):\n-> 1483                 P *= (var - points[i][0])\n   1484                 P += F[i]\n   1485             return P\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__imul__ (sage/structure/element.c:11631)()\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6966)()\n\nTypeError: unsupported operand parent(s) for '*': 'Rational Field' and 'Univariate Polynomial Ring in x over Finite Field of size 101'\nsage: R.lagrange_polynomial([[1,0],[2,0]],'neville')\n[0, 0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9787\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @miguelmarco\n\n\n```\nsage: R.<x>=GF(101)[]\nsage: R.lagrange_polynomial([[1,0],[2,0]])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/data/sage-4.5.1/<ipython console> in <module>()\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.pyc in lagrange_polynomial(self, points, algorithm, previous_row)\n   1481             P = F[n-1]\n   1482             for i in xrange(n-2, -1, -1):\n-> 1483                 P *= (var - points[i][0])\n   1484                 P += F[i]\n   1485             return P\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__imul__ (sage/structure/element.c:11631)()\n\n/data/sage-4.5.1/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6966)()\n\nTypeError: unsupported operand parent(s) for '*': 'Rational Field' and 'Univariate Polynomial Ring in x over Finite Field of size 101'\nsage: R.lagrange_polynomial([[1,0],[2,0]],'neville')\n[0, 0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9787\n\n",
     "created_at": "2010-08-23T13:09:53Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009786.json:
     "title": "lagrange_polynomial(algorithm='divided_difference') fails over finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9786",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mmarco
+CC:  @miguelmarco
 
 
 ```
@@ -63,7 +63,7 @@ archive/issue_comments_096051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96051",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_096052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96052",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_096053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96053",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_096054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96054",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_096055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96055",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_096056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96056",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_096057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96057",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_096058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96058",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_096059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96059",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_096060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96060",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_096061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96061",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_096062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96062",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_096064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96064",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_096066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96066",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_096067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96067",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_096068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96068",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_096069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96069",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -569,7 +569,7 @@ archive/issue_comments_096070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96070",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -607,7 +607,7 @@ archive/issue_comments_096071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96071",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -628,7 +628,7 @@ archive/issue_comments_096072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96072",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_096073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96073",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -669,7 +669,7 @@ archive/issue_comments_096074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96074",
-    "user": "dkrenn"
+    "user": "@dkrenn"
 }
 ```
 
@@ -690,7 +690,7 @@ archive/issue_comments_096075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96075",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -728,7 +728,7 @@ archive/issue_comments_096076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9786#issuecomment-96076",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

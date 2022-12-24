@@ -3,7 +3,7 @@
 archive/issues_000697.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is finally the big NTL rewrite.  It would be nice to get this integrated soon since David Harvey is already building on top of this for dense polys over ZZ.  Robert Bradshaw and Craig Citro are also champing at the bit.\n\nIssue created by migration from https://trac.sagemath.org/ticket/697\n\n",
+    "body": "Assignee: @williamstein\n\nThis is finally the big NTL rewrite.  It would be nice to get this integrated soon since David Harvey is already building on top of this for dense polys over ZZ.  Robert Bradshaw and Craig Citro are also champing at the bit.\n\nIssue created by migration from https://trac.sagemath.org/ticket/697\n\n",
     "created_at": "2007-09-19T20:56:57Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_000697.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is finally the big NTL rewrite.  It would be nice to get this integrated soon since David Harvey is already building on top of this for dense polys over ZZ.  Robert Bradshaw and Craig Citro are also champing at the bit.
 
@@ -73,7 +73,7 @@ archive/issue_comments_003647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/697#issuecomment-3647",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_003648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/697#issuecomment-3648",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

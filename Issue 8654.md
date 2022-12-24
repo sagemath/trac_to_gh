@@ -3,7 +3,7 @@
 archive/issues_008654.json:
 ```json
 {
-    "body": "Assignee: jason\n\nJust like \"sage -gap\", we should have \"sage -sqlite3\" to run the command line sqlite3 database included with Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8654\n\n",
+    "body": "Assignee: @jasongrout\n\nJust like \"sage -gap\", we should have \"sage -sqlite3\" to run the command line sqlite3 database included with Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8654\n\n",
     "created_at": "2010-04-06T16:49:12Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_008654.json:
     "title": "add \"sage -sqlite3\" command line option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8654",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 Just like "sage -gap", we should have "sage -sqlite3" to run the command line sqlite3 database included with Sage.
 
@@ -37,7 +37,7 @@ archive/issue_comments_078516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78516",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_078517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78517",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to needs_review.
 archive/issue_comments_078518.json:
 ```json
 {
-    "body": "Attachment [trac_8654.patch](tarball://root/attachments/some-uuid/ticket8654/trac_8654.patch) by ohanar created at 2011-09-13 01:51:15\n\nSince #21 probably needs to be rewritten from scratch by now.",
+    "body": "Attachment [trac_8654.patch](tarball://root/attachments/some-uuid/ticket8654/trac_8654.patch) by @ohanar created at 2011-09-13 01:51:15\n\nSince #21 probably needs to be rewritten from scratch by now.",
     "created_at": "2011-09-13T01:51:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78518",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
-Attachment [trac_8654.patch](tarball://root/attachments/some-uuid/ticket8654/trac_8654.patch) by ohanar created at 2011-09-13 01:51:15
+Attachment [trac_8654.patch](tarball://root/attachments/some-uuid/ticket8654/trac_8654.patch) by @ohanar created at 2011-09-13 01:51:15
 
 Since #21 probably needs to be rewritten from scratch by now.
 
@@ -93,7 +93,7 @@ archive/issue_comments_078519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78519",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_078520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78520",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_078521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78521",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_078522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78522",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_078523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78523",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_078524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78524",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_078525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78525",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_078526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78526",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_078527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78527",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -319,16 +319,16 @@ See #21, although that patch will probably need to get rewritten with argparse n
 archive/issue_comments_078528.json:
 ```json
 {
-    "body": "Attachment [8654_test.patch](tarball://root/attachments/some-uuid/ticket8654/8654_test.patch) by jdemeyer created at 2011-10-30 11:06:14\n\nAdd test for --sqlite3 command line option",
+    "body": "Attachment [8654_test.patch](tarball://root/attachments/some-uuid/ticket8654/8654_test.patch) by @jdemeyer created at 2011-10-30 11:06:14\n\nAdd test for --sqlite3 command line option",
     "created_at": "2011-10-30T11:06:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78528",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [8654_test.patch](tarball://root/attachments/some-uuid/ticket8654/8654_test.patch) by jdemeyer created at 2011-10-30 11:06:14
+Attachment [8654_test.patch](tarball://root/attachments/some-uuid/ticket8654/8654_test.patch) by @jdemeyer created at 2011-10-30 11:06:14
 
 Add test for --sqlite3 command line option
 
@@ -344,7 +344,7 @@ archive/issue_comments_078529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78529",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_078530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78530",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_078531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78531",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_078532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78532",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_078533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78533",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_078534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78534",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -460,7 +460,7 @@ archive/issue_comments_078535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78535",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

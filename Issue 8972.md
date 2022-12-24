@@ -3,7 +3,7 @@
 archive/issues_008972.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  tscrim mkoeppe nbruin jhpalmieri dkrenn bruno tmonteil vdelecroix @davewittemorris\n\nKeywords: power series ring, fraction field\n\nThis ticket is about at least three bugs related with inversion of elements of power series rings.\n\nHere is the first:\n\n```\nsage: R.<x> = ZZ[[]]\nsage: (1/x).parent()\nLaurent Series Ring in x over Integer Ring\nsage: (x/x).parent()\nPower Series Ring in x over Integer Ring\n```\n\n*Both* parents are wrong. Usually, the parent of ``a/b`` is the fraction field of the parent of ``a,b``, even if ``a==b``. And neither above parent is a field.\n\nNext bug:\n\n```\nsage: (1/(2*x)).parent()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (919, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n... very long traceback\nTypeError: no conversion of this rational to integer\n```\n\n\nAnd the third:\n\n```\nsage: F = FractionField(R)\nsage: 1/x in F\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8972\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @tscrim @mkoeppe @nbruin @jhpalmieri @dkrenn @bgrenet tmonteil @videlec @davewittemorris\n\nKeywords: power series ring, fraction field\n\nThis ticket is about at least three bugs related with inversion of elements of power series rings.\n\nHere is the first:\n\n```\nsage: R.<x> = ZZ[[]]\nsage: (1/x).parent()\nLaurent Series Ring in x over Integer Ring\nsage: (x/x).parent()\nPower Series Ring in x over Integer Ring\n```\n\n*Both* parents are wrong. Usually, the parent of ``a/b`` is the fraction field of the parent of ``a,b``, even if ``a==b``. And neither above parent is a field.\n\nNext bug:\n\n```\nsage: (1/(2*x)).parent()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (919, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n... very long traceback\nTypeError: no conversion of this rational to integer\n```\n\n\nAnd the third:\n\n```\nsage: F = FractionField(R)\nsage: 1/x in F\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8972\n\n",
     "created_at": "2010-05-15T15:46:05Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008972.json:
     "title": "Inversion and fraction fields for power series rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8972",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  tscrim mkoeppe nbruin jhpalmieri dkrenn bruno tmonteil vdelecroix @davewittemorris
+CC:  @tscrim @mkoeppe @nbruin @jhpalmieri @dkrenn @bgrenet tmonteil @videlec @davewittemorris
 
 Keywords: power series ring, fraction field
 
@@ -77,7 +77,7 @@ archive/issue_comments_082677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82677",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_082678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82678",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_082679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82679",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_082680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82680",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -185,16 +185,16 @@ The segfault problem seems to come from the fact that the div method for Laurent
 archive/issue_comments_082681.json:
 ```json
 {
-    "body": "Attachment [8972_power_series_inverses.patch](tarball://root/attachments/some-uuid/ticket8972/8972_power_series_inverses.patch) by SimonKing created at 2010-05-15 19:24:00\n\nBugfixes for fraction field and inverses of power series over non-fields",
+    "body": "Attachment [8972_power_series_inverses.patch](tarball://root/attachments/some-uuid/ticket8972/8972_power_series_inverses.patch) by @simon-king-jena created at 2010-05-15 19:24:00\n\nBugfixes for fraction field and inverses of power series over non-fields",
     "created_at": "2010-05-15T19:24:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82681",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [8972_power_series_inverses.patch](tarball://root/attachments/some-uuid/ticket8972/8972_power_series_inverses.patch) by SimonKing created at 2010-05-15 19:24:00
+Attachment [8972_power_series_inverses.patch](tarball://root/attachments/some-uuid/ticket8972/8972_power_series_inverses.patch) by @simon-king-jena created at 2010-05-15 19:24:00
 
 Bugfixes for fraction field and inverses of power series over non-fields
 
@@ -210,7 +210,7 @@ archive/issue_comments_082682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82682",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_082683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82683",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_082684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82684",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_082685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82685",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_082686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82686",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_082687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82687",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_082688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82688",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_082689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82689",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -403,16 +403,16 @@ Doing so brings the above timing to about 2ms, which is still a loss of factor t
 archive/issue_comments_082690.json:
 ```json
 {
-    "body": "Attachment [8972_power_series_timing.patch](tarball://root/attachments/some-uuid/ticket8972/8972_power_series_timing.patch) by SimonKing created at 2010-05-16 22:32:03\n\nImproving the timings, to be applied after the bug fix patch",
+    "body": "Attachment [8972_power_series_timing.patch](tarball://root/attachments/some-uuid/ticket8972/8972_power_series_timing.patch) by @simon-king-jena created at 2010-05-16 22:32:03\n\nImproving the timings, to be applied after the bug fix patch",
     "created_at": "2010-05-16T22:32:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82690",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [8972_power_series_timing.patch](tarball://root/attachments/some-uuid/ticket8972/8972_power_series_timing.patch) by SimonKing created at 2010-05-16 22:32:03
+Attachment [8972_power_series_timing.patch](tarball://root/attachments/some-uuid/ticket8972/8972_power_series_timing.patch) by @simon-king-jena created at 2010-05-16 22:32:03
 
 Improving the timings, to be applied after the bug fix patch
 
@@ -428,7 +428,7 @@ archive/issue_comments_082691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82691",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_082692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82692",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_082693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82693",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_082694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82694",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_082695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82695",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_082696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82696",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -718,7 +718,7 @@ archive/issue_comments_082697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82697",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -740,16 +740,16 @@ So, there will soon be a third patch...
 archive/issue_comments_082698.json:
 ```json
 {
-    "body": "Attachment [8972_power_series_sqrt_timing.patch](tarball://root/attachments/some-uuid/ticket8972/8972_power_series_sqrt_timing.patch) by SimonKing created at 2010-05-18 10:55:19\n\nImproving timings for sqrt, further bug fixes, more doc tests. To be applied after the two other patches",
+    "body": "Attachment [8972_power_series_sqrt_timing.patch](tarball://root/attachments/some-uuid/ticket8972/8972_power_series_sqrt_timing.patch) by @simon-king-jena created at 2010-05-18 10:55:19\n\nImproving timings for sqrt, further bug fixes, more doc tests. To be applied after the two other patches",
     "created_at": "2010-05-18T10:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82698",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [8972_power_series_sqrt_timing.patch](tarball://root/attachments/some-uuid/ticket8972/8972_power_series_sqrt_timing.patch) by SimonKing created at 2010-05-18 10:55:19
+Attachment [8972_power_series_sqrt_timing.patch](tarball://root/attachments/some-uuid/ticket8972/8972_power_series_sqrt_timing.patch) by @simon-king-jena created at 2010-05-18 10:55:19
 
 Improving timings for sqrt, further bug fixes, more doc tests. To be applied after the two other patches
 
@@ -765,7 +765,7 @@ archive/issue_comments_082699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82699",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -822,7 +822,7 @@ archive/issue_comments_082700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82700",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -840,7 +840,7 @@ archive/issue_comments_082701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82701",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -860,16 +860,16 @@ sage: y=y/x
 archive/issue_comments_082702.json:
 ```json
 {
-    "body": "Attachment [8972_laurent_div_fix.patch](tarball://root/attachments/some-uuid/ticket8972/8972_laurent_div_fix.patch) by SimonKing created at 2010-05-18 12:00:35\n\nBugfix for LaurentSeries._div_; to be applied after the other three patches",
+    "body": "Attachment [8972_laurent_div_fix.patch](tarball://root/attachments/some-uuid/ticket8972/8972_laurent_div_fix.patch) by @simon-king-jena created at 2010-05-18 12:00:35\n\nBugfix for LaurentSeries._div_; to be applied after the other three patches",
     "created_at": "2010-05-18T12:00:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82702",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [8972_laurent_div_fix.patch](tarball://root/attachments/some-uuid/ticket8972/8972_laurent_div_fix.patch) by SimonKing created at 2010-05-18 12:00:35
+Attachment [8972_laurent_div_fix.patch](tarball://root/attachments/some-uuid/ticket8972/8972_laurent_div_fix.patch) by @simon-king-jena created at 2010-05-18 12:00:35
 
 Bugfix for LaurentSeries._div_; to be applied after the other three patches
 
@@ -885,7 +885,7 @@ archive/issue_comments_082703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82703",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -933,7 +933,7 @@ archive/issue_comments_082704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82704",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -951,7 +951,7 @@ archive/issue_comments_082705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82705",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -964,16 +964,16 @@ Minor cosmetic changes, apply on top of previous.
 archive/issue_comments_082706.json:
 ```json
 {
-    "body": "Attachment [8972-referee.patch](tarball://root/attachments/some-uuid/ticket8972/8972-referee.patch) by robertwb created at 2010-05-25 06:40:43\n\nNice work. Apply all 5 patches.",
+    "body": "Attachment [8972-referee.patch](tarball://root/attachments/some-uuid/ticket8972/8972-referee.patch) by @robertwb created at 2010-05-25 06:40:43\n\nNice work. Apply all 5 patches.",
     "created_at": "2010-05-25T06:40:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82706",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8972-referee.patch](tarball://root/attachments/some-uuid/ticket8972/8972-referee.patch) by robertwb created at 2010-05-25 06:40:43
+Attachment [8972-referee.patch](tarball://root/attachments/some-uuid/ticket8972/8972-referee.patch) by @robertwb created at 2010-05-25 06:40:43
 
 Nice work. Apply all 5 patches.
 
@@ -989,7 +989,7 @@ archive/issue_comments_082707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82707",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1045,7 +1045,7 @@ archive/issue_comments_082710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82710",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1063,7 +1063,7 @@ archive/issue_comments_082711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82711",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1081,7 +1081,7 @@ archive/issue_comments_082712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82712",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1099,7 +1099,7 @@ archive/issue_comments_082713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82713",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1129,7 +1129,7 @@ archive/issue_comments_082714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82714",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1153,7 +1153,7 @@ archive/issue_comments_082715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82715",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1173,7 +1173,7 @@ archive/issue_comments_082716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82716",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1191,7 +1191,7 @@ archive/issue_comments_082717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82717",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1211,7 +1211,7 @@ archive/issue_comments_082718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82718",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1260,7 +1260,7 @@ archive/issue_comments_082719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82719",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1273,16 +1273,16 @@ Fixing some remaining bugs of Laurent/power series arithmetic; fixing doc tests 
 archive/issue_comments_082720.json:
 ```json
 {
-    "body": "Attachment [8972_elliptic_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket8972/8972_elliptic_doctest_fix.patch) by SimonKing created at 2010-06-07 18:55:23\n\nI think the problems are now solved. With the last patch, that is to be applied after all others, `sage -testall` works without errors (at least in version sage-4.4.2).\n\n**__Changes introduced by the patch__**\n\n* In some cases, if the code expects a power series, I replaced `a/b` for power series `a,b` by `a*~b`. Namely, the latter returns a power series (not a Laurent series), if possible. \n\n* I added a method `exp` for Laurent series, that returns the exponential if the Laurent series happens to be a power series.\n\n* With my previous patches, the underlying data of a Laurent series is not necessarily a power series. Therefore `add_bigoh` (similarly `_rmul_` and `_lmul_`) did in some cases not work. This is now fixed and doctested.\n\n* Some Power Series Rings still returned a *formal* fraction field. This is now fixed, they return a Laurent series ring.\n\n* If `a,b` are elements of a power series ring `R`, the rule is now:\n\n  1. If `R` is an integral domain, then `a/b` always belongs to `Frac(R)`. This is similar to `1/1` being rational, not integer.\n\n  2. If `R` is no integral domain, then `a/b` is an element of `R` or of the Laurent series ring over the base ring of `R`, if `b` is invertible. This is similar to division in `ZZ.quo(15)`.\n\n  3. If possible, `~b` is a power series (possibly over the fraction field of the base of `R`). So, we always have `~b==1/b`, but the parents may be different. I hope this is acceptable.\n\n* A change in the default `_div_` method of `RingElement`: Previously, the default for `a._div_(b)` was to return `a.parent().fraction_field()(a,b)`. But this may be a problem (e.g., if the fraction field is not a formal fraction field but a Laurent series ring). Therefore, if the old default results in an error, `a.parent().fraction_field(a)/a.parent().fraction_field(b)` is tried.\n\n**__Timings__**\n\nRobert was worried about potential slowdowns in the Monsky-Washnitzer code. It seems to me that my patches actually provide a considerably speedup.\n\nWithout my patches:\n\n```\nsage -t  \"devel/sage-powerseries/sage/schemes/elliptic_curves/monsky_washnitzer.py\"\n         [3.9 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.9 seconds\n```\n\n\nWith my patches:\n\n```\nsage -t  \"devel/sage-powerseries/sage/schemes/elliptic_curves/monsky_washnitzer.py\"\n         [2.3 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.3 seconds\n```\n\n\nSo, the code seems to become faster by more than 33%!\n\nReady for review again...",
+    "body": "Attachment [8972_elliptic_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket8972/8972_elliptic_doctest_fix.patch) by @simon-king-jena created at 2010-06-07 18:55:23\n\nI think the problems are now solved. With the last patch, that is to be applied after all others, `sage -testall` works without errors (at least in version sage-4.4.2).\n\n**__Changes introduced by the patch__**\n\n* In some cases, if the code expects a power series, I replaced `a/b` for power series `a,b` by `a*~b`. Namely, the latter returns a power series (not a Laurent series), if possible. \n\n* I added a method `exp` for Laurent series, that returns the exponential if the Laurent series happens to be a power series.\n\n* With my previous patches, the underlying data of a Laurent series is not necessarily a power series. Therefore `add_bigoh` (similarly `_rmul_` and `_lmul_`) did in some cases not work. This is now fixed and doctested.\n\n* Some Power Series Rings still returned a *formal* fraction field. This is now fixed, they return a Laurent series ring.\n\n* If `a,b` are elements of a power series ring `R`, the rule is now:\n\n  1. If `R` is an integral domain, then `a/b` always belongs to `Frac(R)`. This is similar to `1/1` being rational, not integer.\n\n  2. If `R` is no integral domain, then `a/b` is an element of `R` or of the Laurent series ring over the base ring of `R`, if `b` is invertible. This is similar to division in `ZZ.quo(15)`.\n\n  3. If possible, `~b` is a power series (possibly over the fraction field of the base of `R`). So, we always have `~b==1/b`, but the parents may be different. I hope this is acceptable.\n\n* A change in the default `_div_` method of `RingElement`: Previously, the default for `a._div_(b)` was to return `a.parent().fraction_field()(a,b)`. But this may be a problem (e.g., if the fraction field is not a formal fraction field but a Laurent series ring). Therefore, if the old default results in an error, `a.parent().fraction_field(a)/a.parent().fraction_field(b)` is tried.\n\n**__Timings__**\n\nRobert was worried about potential slowdowns in the Monsky-Washnitzer code. It seems to me that my patches actually provide a considerably speedup.\n\nWithout my patches:\n\n```\nsage -t  \"devel/sage-powerseries/sage/schemes/elliptic_curves/monsky_washnitzer.py\"\n         [3.9 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.9 seconds\n```\n\n\nWith my patches:\n\n```\nsage -t  \"devel/sage-powerseries/sage/schemes/elliptic_curves/monsky_washnitzer.py\"\n         [2.3 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.3 seconds\n```\n\n\nSo, the code seems to become faster by more than 33%!\n\nReady for review again...",
     "created_at": "2010-06-07T18:55:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82720",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [8972_elliptic_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket8972/8972_elliptic_doctest_fix.patch) by SimonKing created at 2010-06-07 18:55:23
+Attachment [8972_elliptic_doctest_fix.patch](tarball://root/attachments/some-uuid/ticket8972/8972_elliptic_doctest_fix.patch) by @simon-king-jena created at 2010-06-07 18:55:23
 
 I think the problems are now solved. With the last patch, that is to be applied after all others, `sage -testall` works without errors (at least in version sage-4.4.2).
 
@@ -1350,7 +1350,7 @@ archive/issue_comments_082721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82721",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1368,7 +1368,7 @@ archive/issue_comments_082722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82722",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1402,7 +1402,7 @@ archive/issue_comments_082723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82723",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1575,7 +1575,7 @@ archive/issue_comments_082729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82729",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1596,7 +1596,7 @@ archive/issue_comments_082730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82730",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1616,7 +1616,7 @@ archive/issue_comments_082731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82731",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1738,7 +1738,7 @@ archive/issue_comments_082732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82732",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1756,7 +1756,7 @@ archive/issue_comments_082733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82733",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1774,7 +1774,7 @@ archive/issue_comments_082734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82734",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1792,7 +1792,7 @@ archive/issue_comments_082735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82735",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1810,7 +1810,7 @@ archive/issue_comments_082736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82736",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -1846,7 +1846,7 @@ archive/issue_comments_082737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82737",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -1859,16 +1859,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_082738.json:
 ```json
 {
-    "body": "Remove assignee AlexGhitza.",
+    "body": "Remove assignee @aghitza.",
     "created_at": "2012-03-29T14:00:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82738",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Remove assignee AlexGhitza.
+Remove assignee @aghitza.
 
 
 
@@ -1882,7 +1882,7 @@ archive/issue_comments_082739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82739",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1895,16 +1895,16 @@ Apparently the trac is locked in "bold face mode". Trying to ''' change it.
 archive/issue_comments_082740.json:
 ```json
 {
-    "body": "Attachment [trac-8972_fraction_of_power_series_combined.patch](tarball://root/attachments/some-uuid/ticket8972/trac-8972_fraction_of_power_series_combined.patch) by SimonKing created at 2012-03-29 14:45:39\n\nReplaces all previous patches",
+    "body": "Attachment [trac-8972_fraction_of_power_series_combined.patch](tarball://root/attachments/some-uuid/ticket8972/trac-8972_fraction_of_power_series_combined.patch) by @simon-king-jena created at 2012-03-29 14:45:39\n\nReplaces all previous patches",
     "created_at": "2012-03-29T14:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82740",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac-8972_fraction_of_power_series_combined.patch](tarball://root/attachments/some-uuid/ticket8972/trac-8972_fraction_of_power_series_combined.patch) by SimonKing created at 2012-03-29 14:45:39
+Attachment [trac-8972_fraction_of_power_series_combined.patch](tarball://root/attachments/some-uuid/ticket8972/trac-8972_fraction_of_power_series_combined.patch) by @simon-king-jena created at 2012-03-29 14:45:39
 
 Replaces all previous patches
 
@@ -1920,7 +1920,7 @@ archive/issue_comments_082741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82741",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1938,7 +1938,7 @@ archive/issue_comments_082742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82742",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2113,7 +2113,7 @@ archive/issue_comments_082743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82743",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -2131,7 +2131,7 @@ archive/issue_comments_082744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82744",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -2191,7 +2191,7 @@ archive/issue_comments_082745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82745",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2211,7 +2211,7 @@ archive/issue_comments_082746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82746",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2229,7 +2229,7 @@ archive/issue_comments_082747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82747",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -2249,7 +2249,7 @@ archive/issue_comments_082748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82748",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2274,7 +2274,7 @@ archive/issue_comments_082749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82749",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -2312,7 +2312,7 @@ archive/issue_comments_082751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82751",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -2332,7 +2332,7 @@ archive/issue_comments_082752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82752",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -2396,7 +2396,7 @@ archive/issue_comments_082755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82755",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -2522,7 +2522,7 @@ archive/issue_comments_082762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82762",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2619,7 +2619,7 @@ archive/issue_comments_082767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82767",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -2743,7 +2743,7 @@ archive/issue_comments_082771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82771",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -2761,7 +2761,7 @@ archive/issue_comments_082772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82772",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -2779,7 +2779,7 @@ archive/issue_comments_082773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8972#issuecomment-82773",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

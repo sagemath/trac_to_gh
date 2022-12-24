@@ -14,7 +14,7 @@ archive/issues_003243.json:
     "title": "[with patch; needs review] cygwin -- get it to work on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3243",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

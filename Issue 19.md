@@ -13,7 +13,7 @@ archive/issues_000019.json:
     "title": "viewing source code with ?? in a binary install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/19",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_000077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/19",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/19#issuecomment-77",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007961.json:
 ```json
 {
-    "body": "Assignee: nbruin\n\nCurrently, the code that recognizes a source file is part of the sage library and hence is run from a different location than where the edit copy lives, is broken due to the python2.5 -> python2.6 upgrade. Attached fixes this problem and makes matching more robust so that it won't break the next time. To illustrate the problem, currently we have\n\n```\nsage: sage.misc.edit_module.file_and_line(edit)\n('/usr/local/sage/4.3/local/lib/python2.6/site-packages/sage/misc/edit_module.py', 194)\n```\n\nwhich obviously is NOT the file to edit. It should be `.../sage/devel/...` instead. Attached patch fixes this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7961\n\n",
+    "body": "Assignee: @nbruin\n\nCurrently, the code that recognizes a source file is part of the sage library and hence is run from a different location than where the edit copy lives, is broken due to the python2.5 -> python2.6 upgrade. Attached fixes this problem and makes matching more robust so that it won't break the next time. To illustrate the problem, currently we have\n\n```\nsage: sage.misc.edit_module.file_and_line(edit)\n('/usr/local/sage/4.3/local/lib/python2.6/site-packages/sage/misc/edit_module.py', 194)\n```\n\nwhich obviously is NOT the file to edit. It should be `.../sage/devel/...` instead. Attached patch fixes this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7961\n\n",
     "created_at": "2010-01-17T02:41:47Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_007961.json:
     "title": "Make recognition of runpath/develpath in editmodule more robust",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7961",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: nbruin
+Assignee: @nbruin
 
 Currently, the code that recognizes a source file is part of the sage library and hence is run from a different location than where the edit copy lives, is broken due to the python2.5 -> python2.6 upgrade. Attached fixes this problem and makes matching more robust so that it won't break the next time. To illustrate the problem, currently we have
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7961
 archive/issue_comments_069470.json:
 ```json
 {
-    "body": "Attachment [edit_module.patch](tarball://root/attachments/some-uuid/ticket7961/edit_module.patch) by nbruin created at 2010-01-17 02:46:14\n\nmaking misc.edit_module pathname mangling more robust",
+    "body": "Attachment [edit_module.patch](tarball://root/attachments/some-uuid/ticket7961/edit_module.patch) by @nbruin created at 2010-01-17 02:46:14\n\nmaking misc.edit_module pathname mangling more robust",
     "created_at": "2010-01-17T02:46:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7961#issuecomment-69470",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [edit_module.patch](tarball://root/attachments/some-uuid/ticket7961/edit_module.patch) by nbruin created at 2010-01-17 02:46:14
+Attachment [edit_module.patch](tarball://root/attachments/some-uuid/ticket7961/edit_module.patch) by @nbruin created at 2010-01-17 02:46:14
 
 making misc.edit_module pathname mangling more robust
 
@@ -65,7 +65,7 @@ archive/issue_comments_069471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7961#issuecomment-69471",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_069472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7961#issuecomment-69472",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_069473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7961#issuecomment-69473",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_069474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7961#issuecomment-69474",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

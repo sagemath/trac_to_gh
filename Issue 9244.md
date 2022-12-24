@@ -3,7 +3,7 @@
 archive/issues_009244.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nI was working on doctesting `sage/rings/number_field/class_group.py`, and I was unable to resist the temptation to rewrite it. (There were all sorts of failures and inconsistencies caused by the fact that `ClassGroup` derived from `AbelianGroup`, but `FractionalIdealClass` didn't derive from `AbelianGroupElement`.) \n\nI have a patch for this, depending on #9242, which I will upload as soon as someone explains how to squash the `_test_category()` error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9244\n\n",
+    "body": "Assignee: @loefflerd\n\nI was working on doctesting `sage/rings/number_field/class_group.py`, and I was unable to resist the temptation to rewrite it. (There were all sorts of failures and inconsistencies caused by the fact that `ClassGroup` derived from `AbelianGroup`, but `FractionalIdealClass` didn't derive from `AbelianGroupElement`.) \n\nI have a patch for this, depending on #9242, which I will upload as soon as someone explains how to squash the `_test_category()` error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9244\n\n",
     "created_at": "2010-06-15T10:49:08Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_009244.json:
     "title": "Number field class group improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9244",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 I was working on doctesting `sage/rings/number_field/class_group.py`, and I was unable to resist the temptation to rewrite it. (There were all sorts of failures and inconsistencies caused by the fact that `ClassGroup` derived from `AbelianGroup`, but `FractionalIdealClass` didn't derive from `AbelianGroupElement`.) 
 
@@ -39,7 +39,7 @@ archive/issue_comments_086938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86938",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_086939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86939",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_086940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86940",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_086943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86943",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_086944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86944",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_086945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86945",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_086946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86946",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_086949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86949",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_086952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86952",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_086953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86953",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_086954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86954",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_086955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86955",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_086956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86956",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_086959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86959",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_086960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86960",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_086962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86962",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -568,16 +568,16 @@ replaces all previous attempts
 archive/issue_comments_086963.json:
 ```json
 {
-    "body": "Attachment [trac_9244_ver4.patch](tarball://root/attachments/some-uuid/ticket9244/trac_9244_ver4.patch) by davidloeffler created at 2010-06-29 07:52:07\n\nNothing wrong with the code, just my brain, apparently. It should have been\n\n```\nK.<a, b> = NumberField([x^3 - x + 1, x^2 + 26])\n```\n\nwhich has class group `C_6 x C_3`, but I copied and pasted the wrong lines, and the #random flag hid that. I've uploaded a fourth attempt with this correction.\n\nApologies for the complete mess I have been making of this ticket from start to finish.",
+    "body": "Attachment [trac_9244_ver4.patch](tarball://root/attachments/some-uuid/ticket9244/trac_9244_ver4.patch) by @loefflerd created at 2010-06-29 07:52:07\n\nNothing wrong with the code, just my brain, apparently. It should have been\n\n```\nK.<a, b> = NumberField([x^3 - x + 1, x^2 + 26])\n```\n\nwhich has class group `C_6 x C_3`, but I copied and pasted the wrong lines, and the #random flag hid that. I've uploaded a fourth attempt with this correction.\n\nApologies for the complete mess I have been making of this ticket from start to finish.",
     "created_at": "2010-06-29T07:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86963",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9244_ver4.patch](tarball://root/attachments/some-uuid/ticket9244/trac_9244_ver4.patch) by davidloeffler created at 2010-06-29 07:52:07
+Attachment [trac_9244_ver4.patch](tarball://root/attachments/some-uuid/ticket9244/trac_9244_ver4.patch) by @loefflerd created at 2010-06-29 07:52:07
 
 Nothing wrong with the code, just my brain, apparently. It should have been
 
@@ -637,7 +637,7 @@ archive/issue_comments_086966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86966",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

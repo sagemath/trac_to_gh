@@ -3,7 +3,7 @@
 archive/issues_000644.json:
 ```json
 {
-    "body": "Assignee: was\n\nBoth sin and cos are functions of one (undetermined) variable, and can be called, but when one performs arithmetic on them this changes. \n\nMaybe there should be a CallableSymbolicExpressionRing with an unnamed variable that coerces into any CallableSymbolicExpressionRing with a specified variable name? \n\nsage: f = sin\nsage: g = cos\nsage: f(1)\nsin(1)\nsage: g(1)\ncos(1)\nsage: h = f+g\nsage: h(1)\nsin + cos # should be sin(1)+cos(1)\nsage: f = 3*sin\nsage: f(1)\n3*sin # should be 3*sin(1)\n\nIssue created by migration from https://trac.sagemath.org/ticket/644\n\n",
+    "body": "Assignee: @williamstein\n\nBoth sin and cos are functions of one (undetermined) variable, and can be called, but when one performs arithmetic on them this changes. \n\nMaybe there should be a CallableSymbolicExpressionRing with an unnamed variable that coerces into any CallableSymbolicExpressionRing with a specified variable name? \n\nsage: f = sin\nsage: g = cos\nsage: f(1)\nsin(1)\nsage: g(1)\ncos(1)\nsage: h = f+g\nsage: h(1)\nsin + cos # should be sin(1)+cos(1)\nsage: f = 3*sin\nsage: f(1)\n3*sin # should be 3*sin(1)\n\nIssue created by migration from https://trac.sagemath.org/ticket/644\n\n",
     "created_at": "2007-09-12T19:00:58Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_000644.json:
     "title": "(sin + cos)(1) does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/644",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Both sin and cos are functions of one (undetermined) variable, and can be called, but when one performs arithmetic on them this changes. 
 
@@ -52,7 +52,7 @@ archive/issue_comments_003338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/644#issuecomment-3338",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_003339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/644#issuecomment-3339",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_003340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/644#issuecomment-3340",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_003341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/644#issuecomment-3341",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -143,16 +143,16 @@ Changing status from new to assigned.
 archive/issue_comments_003342.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-12-01T06:50:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/644#issuecomment-3342",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -166,7 +166,7 @@ archive/issue_comments_003343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/644#issuecomment-3343",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

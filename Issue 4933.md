@@ -14,7 +14,7 @@ archive/issues_004933.json:
     "title": "lots of files in sage.schemes.elliptic_curves are not included in the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4933",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tba
@@ -99,16 +99,16 @@ Michael
 archive/issue_comments_037437.json:
 ```json
 {
-    "body": "Attachment [trac_4933-1.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-1.patch) by cremona created at 2009-04-15 16:26:46",
+    "body": "Attachment [trac_4933-1.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-1.patch) by @JohnCremona created at 2009-04-15 16:26:46",
     "created_at": "2009-04-15T16:26:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37437",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4933-1.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-1.patch) by cremona created at 2009-04-15 16:26:46
+Attachment [trac_4933-1.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-1.patch) by @JohnCremona created at 2009-04-15 16:26:46
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_037438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37438",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -143,16 +143,16 @@ To review/test the patch (which was based on 3.4.1.rc2), you need to apply it an
 archive/issue_comments_037439.json:
 ```json
 {
-    "body": "Attachment [trac_4933-2.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-2.patch) by cremona created at 2009-04-16 16:35:28\n\nTwo more;  apply after previous.",
+    "body": "Attachment [trac_4933-2.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-2.patch) by @JohnCremona created at 2009-04-16 16:35:28\n\nTwo more;  apply after previous.",
     "created_at": "2009-04-16T16:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37439",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4933-2.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-2.patch) by cremona created at 2009-04-16 16:35:28
+Attachment [trac_4933-2.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-2.patch) by @JohnCremona created at 2009-04-16 16:35:28
 
 Two more;  apply after previous.
 
@@ -168,7 +168,7 @@ archive/issue_comments_037440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37440",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -181,16 +181,16 @@ The second patch adds a couple more files (weierstrass_morphism and period_latti
 archive/issue_comments_037441.json:
 ```json
 {
-    "body": "Attachment [trac_4933-3.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-3.patch) by cremona created at 2009-04-17 14:02:20\n\nIGNORE all previous patches.  This is based on 3.4.1.rc3",
+    "body": "Attachment [trac_4933-3.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-3.patch) by @JohnCremona created at 2009-04-17 14:02:20\n\nIGNORE all previous patches.  This is based on 3.4.1.rc3",
     "created_at": "2009-04-17T14:02:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37441",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4933-3.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-3.patch) by cremona created at 2009-04-17 14:02:20
+Attachment [trac_4933-3.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-3.patch) by @JohnCremona created at 2009-04-17 14:02:20
 
 IGNORE all previous patches.  This is based on 3.4.1.rc3
 
@@ -206,7 +206,7 @@ archive/issue_comments_037442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37442",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_037443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37443",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_037444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37444",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_037445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37445",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_037446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37446",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_037447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37447",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -360,16 +360,16 @@ Yes!
 archive/issue_comments_037448.json:
 ```json
 {
-    "body": "Attachment [trac_4933-3-rebase.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-3-rebase.patch) by cremona created at 2009-04-17 15:52:59\n\nReplaces previous;  based on 3.4.1.rc3 + #5808 patch",
+    "body": "Attachment [trac_4933-3-rebase.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-3-rebase.patch) by @JohnCremona created at 2009-04-17 15:52:59\n\nReplaces previous;  based on 3.4.1.rc3 + #5808 patch",
     "created_at": "2009-04-17T15:52:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37448",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4933-3-rebase.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-3-rebase.patch) by cremona created at 2009-04-17 15:52:59
+Attachment [trac_4933-3-rebase.patch](tarball://root/attachments/some-uuid/ticket4933/trac_4933-3-rebase.patch) by @JohnCremona created at 2009-04-17 15:52:59
 
 Replaces previous;  based on 3.4.1.rc3 + #5808 patch
 
@@ -385,7 +385,7 @@ archive/issue_comments_037449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37449",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_037450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37450",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_037451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37451",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -436,16 +436,16 @@ apply on top of the other patch
 archive/issue_comments_037452.json:
 ```json
 {
-    "body": "Attachment [4933-ref.patch](tarball://root/attachments/some-uuid/ticket4933/4933-ref.patch) by cremona created at 2009-04-17 22:17:00\n\nReplying to [comment:12 jhpalmieri]:\n> Code looks good, all tests pass, the reference manual looks nice. I'm attaching a referee's patch with two very small changes.\n\nThanks John -- I am quite happy with your adjustments.",
+    "body": "Attachment [4933-ref.patch](tarball://root/attachments/some-uuid/ticket4933/4933-ref.patch) by @JohnCremona created at 2009-04-17 22:17:00\n\nReplying to [comment:12 jhpalmieri]:\n> Code looks good, all tests pass, the reference manual looks nice. I'm attaching a referee's patch with two very small changes.\n\nThanks John -- I am quite happy with your adjustments.",
     "created_at": "2009-04-17T22:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37452",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [4933-ref.patch](tarball://root/attachments/some-uuid/ticket4933/4933-ref.patch) by cremona created at 2009-04-17 22:17:00
+Attachment [4933-ref.patch](tarball://root/attachments/some-uuid/ticket4933/4933-ref.patch) by @JohnCremona created at 2009-04-17 22:17:00
 
 Replying to [comment:12 jhpalmieri]:
 > Code looks good, all tests pass, the reference manual looks nice. I'm attaching a referee's patch with two very small changes.
@@ -504,7 +504,7 @@ archive/issue_comments_037455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37455",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

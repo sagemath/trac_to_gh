@@ -14,7 +14,7 @@ archive/issues_005802.json:
     "title": "use tuples rather than copying lists for immutable data",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5802",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: cwitty
@@ -37,7 +37,7 @@ archive/issue_comments_045548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5802#issuecomment-45548",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

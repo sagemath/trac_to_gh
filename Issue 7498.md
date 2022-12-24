@@ -3,7 +3,7 @@
 archive/issues_007498.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was\n\nDespite the warning\n\n\n```\n## IMPORTANT: Do *not* import matplotlib at module scope.  It takes a\n## surprisingly long time to initialize itself.  It's better if it is\n## imported in functions, so it only gets started if it is actually\n## going to be used.\n```\n\n\nit's gotten back in there again. There should be a test. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7498\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nDespite the warning\n\n\n```\n## IMPORTANT: Do *not* import matplotlib at module scope.  It takes a\n## surprisingly long time to initialize itself.  It's better if it is\n## imported in functions, so it only gets started if it is actually\n## going to be used.\n```\n\n\nit's gotten back in there again. There should be a test. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7498\n\n",
     "created_at": "2009-11-20T06:34:07Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_007498.json:
     "title": "Do *not* import matplotlib at sage startup.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7498",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was
+CC:  @williamstein
 
 Despite the warning
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7498
 archive/issue_comments_063391.json:
 ```json
 {
-    "body": "Attachment [7498-no-matplotlib.patch](tarball://root/attachments/some-uuid/ticket7498/7498-no-matplotlib.patch) by robertwb created at 2009-11-20 06:40:45",
+    "body": "Attachment [7498-no-matplotlib.patch](tarball://root/attachments/some-uuid/ticket7498/7498-no-matplotlib.patch) by @robertwb created at 2009-11-20 06:40:45",
     "created_at": "2009-11-20T06:40:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7498#issuecomment-63391",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7498-no-matplotlib.patch](tarball://root/attachments/some-uuid/ticket7498/7498-no-matplotlib.patch) by robertwb created at 2009-11-20 06:40:45
+Attachment [7498-no-matplotlib.patch](tarball://root/attachments/some-uuid/ticket7498/7498-no-matplotlib.patch) by @robertwb created at 2009-11-20 06:40:45
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_063392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7498#issuecomment-63392",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_063393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7498#issuecomment-63393",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_063394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7498#issuecomment-63394",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_063395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7498#issuecomment-63395",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_063396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7498#issuecomment-63396",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -153,16 +153,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_063397.json:
 ```json
 {
-    "body": "Attachment [trac_7498-review.patch](tarball://root/attachments/some-uuid/ticket7498/trac_7498-review.patch) by mhansen created at 2009-12-01 09:01:26\n\nRobert's changes look good, but it looks like we also need to make some changes in plot_field3d.py.\n\nI've attached a patch for that.",
+    "body": "Attachment [trac_7498-review.patch](tarball://root/attachments/some-uuid/ticket7498/trac_7498-review.patch) by @mwhansen created at 2009-12-01 09:01:26\n\nRobert's changes look good, but it looks like we also need to make some changes in plot_field3d.py.\n\nI've attached a patch for that.",
     "created_at": "2009-12-01T09:01:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7498#issuecomment-63397",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7498-review.patch](tarball://root/attachments/some-uuid/ticket7498/trac_7498-review.patch) by mhansen created at 2009-12-01 09:01:26
+Attachment [trac_7498-review.patch](tarball://root/attachments/some-uuid/ticket7498/trac_7498-review.patch) by @mwhansen created at 2009-12-01 09:01:26
 
 Robert's changes look good, but it looks like we also need to make some changes in plot_field3d.py.
 
@@ -180,7 +180,7 @@ archive/issue_comments_063398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7498#issuecomment-63398",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_063399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7498#issuecomment-63399",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_063400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7498#issuecomment-63400",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004301.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  mhansen\n\nNo caching is done yet, but it shouldn't be too hard to add at some point. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4301\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @mwhansen\n\nNo caching is done yet, but it shouldn't be too hard to add at some point. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4301\n\n",
     "created_at": "2008-10-15T16:24:55Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_004301.json:
     "title": "[with patch, needs review] lookup generic methods on category",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4301",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  mhansen
+CC:  @mwhansen
 
 No caching is done yet, but it shouldn't be too hard to add at some point. 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4301
 archive/issue_comments_031449.json:
 ```json
 {
-    "body": "Attachment [4301-cat-lookup.patch](tarball://root/attachments/some-uuid/ticket4301/4301-cat-lookup.patch) by craigcitro created at 2008-11-27 08:16:48\n\nSo this patch looks good -- I believe that the code does what it claims to. \n\nHowever, there are no doctests. \n\nSo if you say \"there are no categories that implement anything like this yet,\" I believe you -- but let's add one, and put it in the docstring, so that we can use this as an example.",
+    "body": "Attachment [4301-cat-lookup.patch](tarball://root/attachments/some-uuid/ticket4301/4301-cat-lookup.patch) by @craigcitro created at 2008-11-27 08:16:48\n\nSo this patch looks good -- I believe that the code does what it claims to. \n\nHowever, there are no doctests. \n\nSo if you say \"there are no categories that implement anything like this yet,\" I believe you -- but let's add one, and put it in the docstring, so that we can use this as an example.",
     "created_at": "2008-11-27T08:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4301#issuecomment-31449",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [4301-cat-lookup.patch](tarball://root/attachments/some-uuid/ticket4301/4301-cat-lookup.patch) by craigcitro created at 2008-11-27 08:16:48
+Attachment [4301-cat-lookup.patch](tarball://root/attachments/some-uuid/ticket4301/4301-cat-lookup.patch) by @craigcitro created at 2008-11-27 08:16:48
 
 So this patch looks good -- I believe that the code does what it claims to. 
 
@@ -63,7 +63,7 @@ archive/issue_comments_031450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4301#issuecomment-31450",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_031451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4301#issuecomment-31451",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_031452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4301#issuecomment-31452",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_031453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4301#issuecomment-31453",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_031454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4301#issuecomment-31454",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_031455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4301#issuecomment-31455",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

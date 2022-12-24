@@ -3,7 +3,7 @@
 archive/issues_002023.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nI may be misinterpreting something but it seems to me that\nsage: dynkin_diagram(['C',4]).show()\ndoes not display the Dynkin diagram of C_4 correctly.\nThere is a an online generator at http://www-math.mit.edu/~lesha/dynkin-diagrams.html\nwhich indicates the arrow and the long root in that case.\nAlso, there are no examples for that function but the docstring says\n\"Returns a DiGraph corresponding to the Dynkin diagram...\" but the Dynkin \ndiagram is not a digraph, AFAIK.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2023\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nI may be misinterpreting something but it seems to me that\nsage: dynkin_diagram(['C',4]).show()\ndoes not display the Dynkin diagram of C_4 correctly.\nThere is a an online generator at http://www-math.mit.edu/~lesha/dynkin-diagrams.html\nwhich indicates the arrow and the long root in that case.\nAlso, there are no examples for that function but the docstring says\n\"Returns a DiGraph corresponding to the Dynkin diagram...\" but the Dynkin \ndiagram is not a digraph, AFAIK.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2023\n\n",
     "created_at": "2008-02-01T04:54:06Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002023.json:
     "title": "dynkin diagram weights",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2023",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -70,7 +70,7 @@ archive/issue_comments_013060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13060",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_013061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13061",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_013062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13062",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_013063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13063",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_013064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13064",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_013065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13065",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_013066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13066",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_013067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13067",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_013068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13068",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_013069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13069",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_013070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13070",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_013071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13071",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_013072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13072",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_013073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13073",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_013074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13074",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_013075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13075",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_013076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13076",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_013077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13077",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_013078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13078",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_013079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13079",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_013080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13080",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -484,16 +484,16 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_013081.json:
 ```json
 {
-    "body": "Attachment [trac_2023-dynkin_graphs-ts.patch](tarball://root/attachments/some-uuid/ticket2023/trac_2023-dynkin_graphs-ts.patch) by nthiery created at 2013-05-09 01:41:11\n\nMinor doc tweak",
+    "body": "Attachment [trac_2023-dynkin_graphs-ts.patch](tarball://root/attachments/some-uuid/ticket2023/trac_2023-dynkin_graphs-ts.patch) by @nthiery created at 2013-05-09 01:41:11\n\nMinor doc tweak",
     "created_at": "2013-05-09T01:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13081",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_2023-dynkin_graphs-ts.patch](tarball://root/attachments/some-uuid/ticket2023/trac_2023-dynkin_graphs-ts.patch) by nthiery created at 2013-05-09 01:41:11
+Attachment [trac_2023-dynkin_graphs-ts.patch](tarball://root/attachments/some-uuid/ticket2023/trac_2023-dynkin_graphs-ts.patch) by @nthiery created at 2013-05-09 01:41:11
 
 Minor doc tweak
 
@@ -509,7 +509,7 @@ archive/issue_comments_013082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2023#issuecomment-13082",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

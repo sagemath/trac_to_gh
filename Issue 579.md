@@ -14,7 +14,7 @@ archive/issues_000579.json:
     "title": "pass additional *args and **kwds for GF to finite field implementations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/579",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/579
 archive/issue_comments_002998.json:
 ```json
 {
-    "body": "Attachment [6078.patch](tarball://root/attachments/some-uuid/ticket579/6078.patch) by malb created at 2007-09-03 15:18:07",
+    "body": "Attachment [6078.patch](tarball://root/attachments/some-uuid/ticket579/6078.patch) by @malb created at 2007-09-03 15:18:07",
     "created_at": "2007-09-03T15:18:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/579#issuecomment-2998",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [6078.patch](tarball://root/attachments/some-uuid/ticket579/6078.patch) by malb created at 2007-09-03 15:18:07
+Attachment [6078.patch](tarball://root/attachments/some-uuid/ticket579/6078.patch) by @malb created at 2007-09-03 15:18:07
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_002999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/579#issuecomment-2999",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002970.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nThe gap and scipy_sandbox spkg-debian scripts aren't marked as executable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2970\n\n",
+    "body": "Assignee: @timabbott\n\nThe gap and scipy_sandbox spkg-debian scripts aren't marked as executable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2970\n\n",
     "created_at": "2008-04-20T04:28:47Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002970.json:
     "title": "Permissions on spkg-debian scripts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2970",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 The gap and scipy_sandbox spkg-debian scripts aren't marked as executable.
 

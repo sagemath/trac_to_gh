@@ -14,7 +14,7 @@ archive/issues_001801.json:
     "title": "[with spkg] Update cython package to 0.9.6.11",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1801",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -51,7 +51,7 @@ archive/issue_comments_011392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1801#issuecomment-11392",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_011393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1801#issuecomment-11393",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -82,16 +82,16 @@ Changing status from new to assigned.
 archive/issue_comments_011394.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to robertwb.",
+    "body": "Changing assignee from mabshoff to @robertwb.",
     "created_at": "2008-01-17T19:01:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1801#issuecomment-11394",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from mabshoff to robertwb.
+Changing assignee from mabshoff to @robertwb.
 
 
 
@@ -160,7 +160,7 @@ archive/issue_comments_011396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1801#issuecomment-11396",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

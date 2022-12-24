@@ -3,7 +3,7 @@
 archive/issues_008218.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  robertwb\n\nKeywords: finite fields\n\nMoves all of the finite field files, the integer_mod files and the base classes from sage.rings.ring and sage.structure.element into their own folder in sage.rings.  In preparation for more work on finite fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8218\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nKeywords: finite fields\n\nMoves all of the finite field files, the integer_mod files and the base classes from sage.rings.ring and sage.structure.element into their own folder in sage.rings.  In preparation for more work on finite fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8218\n\n",
     "created_at": "2010-02-09T03:39:15Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008218.json:
     "title": "Finite Field move",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8218",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: finite fields
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8218
 archive/issue_comments_072482.json:
 ```json
 {
-    "body": "Attachment [trac_8218_move.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.patch) by roed created at 2010-02-09 04:06:39\n\nJust moves the files",
+    "body": "Attachment [trac_8218_move.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.patch) by @roed314 created at 2010-02-09 04:06:39\n\nJust moves the files",
     "created_at": "2010-02-09T04:06:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72482",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_8218_move.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.patch) by roed created at 2010-02-09 04:06:39
+Attachment [trac_8218_move.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.patch) by @roed314 created at 2010-02-09 04:06:39
 
 Just moves the files
 
@@ -56,16 +56,16 @@ Just moves the files
 archive/issue_comments_072483.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to roed.",
+    "body": "Changing assignee from @aghitza to @roed314.",
     "created_at": "2010-02-09T04:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72483",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Changing assignee from AlexGhitza to roed.
+Changing assignee from @aghitza to @roed314.
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_072484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72484",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_072485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72485",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_072486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72486",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_072487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72487",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -167,16 +167,16 @@ Changing status from new to needs_review.
 archive/issue_comments_072488.json:
 ```json
 {
-    "body": "Attachment [trac_8218_move.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.bundle) by roed created at 2010-02-09 20:09:08\n\nI created the bundle with \n\n```\nsage -hg bundle -r 13801 --base 13800 ~/patches-out/trac_8218_move.bundle\n```\n\nI believe this is right, but it's been a while since I used bundles.",
+    "body": "Attachment [trac_8218_move.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.bundle) by @roed314 created at 2010-02-09 20:09:08\n\nI created the bundle with \n\n```\nsage -hg bundle -r 13801 --base 13800 ~/patches-out/trac_8218_move.bundle\n```\n\nI believe this is right, but it's been a while since I used bundles.",
     "created_at": "2010-02-09T20:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72488",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_8218_move.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.bundle) by roed created at 2010-02-09 20:09:08
+Attachment [trac_8218_move.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move.bundle) by @roed314 created at 2010-02-09 20:09:08
 
 I created the bundle with 
 
@@ -198,7 +198,7 @@ archive/issue_comments_072489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72489",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_072490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72490",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -229,16 +229,16 @@ Oops.  Forgot to fix pickles.  Doing so now...
 archive/issue_comments_072491.json:
 ```json
 {
-    "body": "Attachment [trac_8218_fixes.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes.patch) by roed created at 2010-02-09 21:37:39\n\nFixes the imports.",
+    "body": "Attachment [trac_8218_fixes.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes.patch) by @roed314 created at 2010-02-09 21:37:39\n\nFixes the imports.",
     "created_at": "2010-02-09T21:37:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72491",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_8218_fixes.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes.patch) by roed created at 2010-02-09 21:37:39
+Attachment [trac_8218_fixes.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes.patch) by @roed314 created at 2010-02-09 21:37:39
 
 Fixes the imports.
 
@@ -254,7 +254,7 @@ archive/issue_comments_072492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72492",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_072493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72493",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -316,7 +316,7 @@ Dave
 archive/issue_comments_072495.json:
 ```json
 {
-    "body": "Remove assignee roed.",
+    "body": "Remove assignee @roed314.",
     "created_at": "2010-02-22T00:45:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
@@ -325,7 +325,7 @@ archive/issue_comments_072495.json:
 }
 ```
 
-Remove assignee roed.
+Remove assignee @roed314.
 
 
 
@@ -357,7 +357,7 @@ archive/issue_comments_072497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72497",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_072498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72498",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_072500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72500",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -428,16 +428,16 @@ Rebased against 4.3.3: a bundle including all the moves; should be applied first
 archive/issue_comments_072501.json:
 ```json
 {
-    "body": "Attachment [trac_8218_move_433.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move_433.bundle) by cremona created at 2010-03-02 17:26:49\n\nHow do I apply a bundle?  Can it be done in queues?",
+    "body": "Attachment [trac_8218_move_433.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move_433.bundle) by @JohnCremona created at 2010-03-02 17:26:49\n\nHow do I apply a bundle?  Can it be done in queues?",
     "created_at": "2010-03-02T17:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72501",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8218_move_433.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move_433.bundle) by cremona created at 2010-03-02 17:26:49
+Attachment [trac_8218_move_433.bundle](tarball://root/attachments/some-uuid/ticket8218/trac_8218_move_433.bundle) by @JohnCremona created at 2010-03-02 17:26:49
 
 How do I apply a bundle?  Can it be done in queues?
 
@@ -453,7 +453,7 @@ archive/issue_comments_072502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72502",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -476,7 +476,7 @@ archive/issue_comments_072503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72503",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_072504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72504",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -514,7 +514,7 @@ archive/issue_comments_072505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72505",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_072506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72506",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_072507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72507",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -659,7 +659,7 @@ archive/issue_comments_072508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72508",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -674,16 +674,16 @@ This does illustrate why I'd like to get this reviewed.  :-)
 archive/issue_comments_072509.json:
 ```json
 {
-    "body": "Attachment [trac_8218_fixes_433.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes_433.patch) by roed created at 2010-03-12 01:00:12\n\nRebased against 4.3.3: should be applied after the bundle.",
+    "body": "Attachment [trac_8218_fixes_433.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes_433.patch) by @roed314 created at 2010-03-12 01:00:12\n\nRebased against 4.3.3: should be applied after the bundle.",
     "created_at": "2010-03-12T01:00:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72509",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_8218_fixes_433.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes_433.patch) by roed created at 2010-03-12 01:00:12
+Attachment [trac_8218_fixes_433.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes_433.patch) by @roed314 created at 2010-03-12 01:00:12
 
 Rebased against 4.3.3: should be applied after the bundle.
 
@@ -699,7 +699,7 @@ archive/issue_comments_072510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72510",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -717,7 +717,7 @@ archive/issue_comments_072511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72511",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -735,7 +735,7 @@ archive/issue_comments_072512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72512",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -770,7 +770,7 @@ archive/issue_comments_072513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72513",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -785,16 +785,16 @@ I will upload a new patch replacing trac_8218_fixes_433.patch, which fixes the m
 archive/issue_comments_072514.json:
 ```json
 {
-    "body": "Set assignee to davidloeffler.",
+    "body": "Set assignee to @loefflerd.",
     "created_at": "2010-03-16T12:39:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72514",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Set assignee to davidloeffler.
+Set assignee to @loefflerd.
 
 
 
@@ -803,16 +803,16 @@ Set assignee to davidloeffler.
 archive/issue_comments_072515.json:
 ```json
 {
-    "body": "Attachment [trac_8218_fixes_434alpha1.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes_434alpha1.patch) by davidloeffler created at 2010-03-16 12:40:16\n\napply after bundle (instead of trac_8218_fixes_433.patch)",
+    "body": "Attachment [trac_8218_fixes_434alpha1.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes_434alpha1.patch) by @loefflerd created at 2010-03-16 12:40:16\n\napply after bundle (instead of trac_8218_fixes_433.patch)",
     "created_at": "2010-03-16T12:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72515",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8218_fixes_434alpha1.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes_434alpha1.patch) by davidloeffler created at 2010-03-16 12:40:16
+Attachment [trac_8218_fixes_434alpha1.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_fixes_434alpha1.patch) by @loefflerd created at 2010-03-16 12:40:16
 
 apply after bundle (instead of trac_8218_fixes_433.patch)
 
@@ -828,7 +828,7 @@ archive/issue_comments_072516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72516",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -846,7 +846,7 @@ archive/issue_comments_072517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72517",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -889,7 +889,7 @@ archive/issue_comments_072519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72519",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -914,7 +914,7 @@ archive/issue_comments_072520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72520",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -932,7 +932,7 @@ archive/issue_comments_072521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72521",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -950,7 +950,7 @@ archive/issue_comments_072522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72522",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -963,16 +963,16 @@ Aargh! 19 hours later, my copy of 4.3.4.alpha1 I was building on T2 for testing 
 archive/issue_comments_072523.json:
 ```json
 {
-    "body": "Attachment [trac_8218_doc.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_doc.patch) by davidloeffler created at 2010-03-18 15:34:53\n\napply after bundle + trac_8218_fixes_434alpha1.patch",
+    "body": "Attachment [trac_8218_doc.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_doc.patch) by @loefflerd created at 2010-03-18 15:34:53\n\napply after bundle + trac_8218_fixes_434alpha1.patch",
     "created_at": "2010-03-18T15:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72523",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8218_doc.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_doc.patch) by davidloeffler created at 2010-03-18 15:34:53
+Attachment [trac_8218_doc.patch](tarball://root/attachments/some-uuid/ticket8218/trac_8218_doc.patch) by @loefflerd created at 2010-03-18 15:34:53
 
 apply after bundle + trac_8218_fixes_434alpha1.patch
 
@@ -988,7 +988,7 @@ archive/issue_comments_072524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72524",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1008,7 +1008,7 @@ archive/issue_comments_072525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72525",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1026,7 +1026,7 @@ archive/issue_comments_072526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72526",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1044,7 +1044,7 @@ archive/issue_comments_072527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72527",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1062,7 +1062,7 @@ archive/issue_comments_072528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72528",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1085,7 +1085,7 @@ archive/issue_comments_072529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72529",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1123,7 +1123,7 @@ archive/issue_comments_072530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72530",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1149,7 +1149,7 @@ archive/issue_comments_072531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72531",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1176,7 +1176,7 @@ archive/issue_comments_072532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72532",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1194,7 +1194,7 @@ archive/issue_comments_072533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72533",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1212,7 +1212,7 @@ archive/issue_comments_072534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72534",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1230,7 +1230,7 @@ archive/issue_comments_072535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72535",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1248,7 +1248,7 @@ archive/issue_comments_072536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72536",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1266,7 +1266,7 @@ archive/issue_comments_072537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8218#issuecomment-72537",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

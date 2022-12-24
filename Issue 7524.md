@@ -3,7 +3,7 @@
 archive/issues_007524.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  novoselt jason\n\nNotice that the frame axes are shown when using \"show\", but are missing when using \"save\"\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('x,y')                \n(x, y)\nsage: a=plot_vector_field((x,-y),(x,-1,1),(y,-1,1))\nsage: a.show()\nsage: a.save('test.png')\n```\n\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/7524\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @novoselt @jasongrout\n\nNotice that the frame axes are shown when using \"show\", but are missing when using \"save\"\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('x,y')                \n(x, y)\nsage: a=plot_vector_field((x,-y),(x,-1,1),(y,-1,1))\nsage: a.show()\nsage: a.save('test.png')\n```\n\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/7524\n\n",
     "created_at": "2009-11-24T08:28:25Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_007524.json:
     "title": "frame axes are lost when saving a graphic to a file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7524",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  novoselt jason
+CC:  @novoselt @jasongrout
 
 Notice that the frame axes are shown when using "show", but are missing when using "save"
 
@@ -53,7 +53,7 @@ archive/issue_comments_063773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63773",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_063774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63774",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_063777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63777",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_063778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63778",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_063779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63779",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -183,16 +183,16 @@ This test checks that it works.  Passes relevant test, plot looks good.
 archive/issue_comments_063780.json:
 ```json
 {
-    "body": "Attachment [trac_7524-options-save.patch](tarball://root/attachments/some-uuid/ticket7524/trac_7524-options-save.patch) by kcrisman created at 2011-01-17 21:18:35",
+    "body": "Attachment [trac_7524-options-save.patch](tarball://root/attachments/some-uuid/ticket7524/trac_7524-options-save.patch) by @kcrisman created at 2011-01-17 21:18:35",
     "created_at": "2011-01-17T21:18:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63780",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7524-options-save.patch](tarball://root/attachments/some-uuid/ticket7524/trac_7524-options-save.patch) by kcrisman created at 2011-01-17 21:18:35
+Attachment [trac_7524-options-save.patch](tarball://root/attachments/some-uuid/ticket7524/trac_7524-options-save.patch) by @kcrisman created at 2011-01-17 21:18:35
 
 
 
@@ -206,7 +206,7 @@ archive/issue_comments_063781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63781",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_063782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63782",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_063783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63783",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_063784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63784",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_063785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63785",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_063786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63786",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

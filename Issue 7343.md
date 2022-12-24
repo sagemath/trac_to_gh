@@ -3,7 +3,7 @@
 archive/issues_007343.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mpatel\n\nInclusion of a test suite will prevent regressions, and make development *much* easier.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7343\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nInclusion of a test suite will prevent regressions, and make development *much* easier.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7343\n\n",
     "created_at": "2009-10-29T04:05:54Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007343.json:
     "title": "SageNB -- Add a Selenium test suite.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7343",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
 
-CC:  was mpatel
+CC:  @williamstein @qed777
 
 Inclusion of a test suite will prevent regressions, and make development *much* easier.
 
@@ -39,7 +39,7 @@ archive/issue_comments_061446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61446",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_061447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61447",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_061448.json:
 ```json
 {
-    "body": "Attachment [trac_7343-selenium-tests.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.patch) by timdumol created at 2009-10-29 04:08:58\n\nDepends on #7309, #7310 and #7332. This is an initial version of the test suite. Many of these test cases were adapted and mildly modified from Mike Hansen's original Selenium test code.\n\nMore test cases to come, but I feel that having a test suite included asap is essential.",
+    "body": "Attachment [trac_7343-selenium-tests.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.patch) by @TimDumol created at 2009-10-29 04:08:58\n\nDepends on #7309, #7310 and #7332. This is an initial version of the test suite. Many of these test cases were adapted and mildly modified from Mike Hansen's original Selenium test code.\n\nMore test cases to come, but I feel that having a test suite included asap is essential.",
     "created_at": "2009-10-29T04:08:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61448",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7343-selenium-tests.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.patch) by timdumol created at 2009-10-29 04:08:58
+Attachment [trac_7343-selenium-tests.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.patch) by @TimDumol created at 2009-10-29 04:08:58
 
 Depends on #7309, #7310 and #7332. This is an initial version of the test suite. Many of these test cases were adapted and mildly modified from Mike Hansen's original Selenium test code.
 
@@ -97,7 +97,7 @@ archive/issue_comments_061449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61449",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_061450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61450",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_061451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61451",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -153,16 +153,16 @@ The previous patch had some errors (*~ files, missing file).
 archive/issue_comments_061452.json:
 ```json
 {
-    "body": "Attachment [trac_7343-selenium-tests.3.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.3.patch) by timdumol created at 2009-10-29 12:06:04\n\nAdded a test to confirm that #7341 works.",
+    "body": "Attachment [trac_7343-selenium-tests.3.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.3.patch) by @TimDumol created at 2009-10-29 12:06:04\n\nAdded a test to confirm that #7341 works.",
     "created_at": "2009-10-29T12:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61452",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7343-selenium-tests.3.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.3.patch) by timdumol created at 2009-10-29 12:06:04
+Attachment [trac_7343-selenium-tests.3.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.3.patch) by @TimDumol created at 2009-10-29 12:06:04
 
 Added a test to confirm that #7341 works.
 
@@ -178,7 +178,7 @@ archive/issue_comments_061453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61453",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -191,16 +191,16 @@ Added "Edit worksheet" test. Made sure that no orphan processes are left behind 
 archive/issue_comments_061454.json:
 ```json
 {
-    "body": "Attachment [trac_7343-selenium-tests.4.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.4.patch) by mpatel created at 2009-10-31 15:10:51\n\nSo far, this looks great!  I'm still reading through the [Selenium-RC documentation](http://seleniumhq.org/docs/05_selenium_rc.html), but I think I can review this ticket formally tomorrow.  At the risk of asking too soon: Can we specify the particular browser to test in `run_tests()`?  Another potentially useful option, at least for Firefox: Use, e.g., `firefox -P selenium-test -remote \"openURL($*, new-tab)\"`, to open multiple tabs instead of windows.  I'll investigate.\n\nAside: It's nice that both [Selenium](http://seleniumhq.org/) and [FunkLoad](http://funkload.nuxeo.org/) are build on Python's [unittest framework](http://docs.python.org/library/unittest.html).  Of course, FunkLoad only simulates a browser, but I think we can attain approximate parity between the notebook's functional (i.e., with Selenium) and load (i.e., with FunkLoad) tests.  Selenium's advantage is that it tests real-world browsers, but even with [Selenium-Grid](http://selenium-grid.seleniumhq.org/), we'd have difficulty (I think) simulating thousands of simultaneous notebook users.",
+    "body": "Attachment [trac_7343-selenium-tests.4.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.4.patch) by @qed777 created at 2009-10-31 15:10:51\n\nSo far, this looks great!  I'm still reading through the [Selenium-RC documentation](http://seleniumhq.org/docs/05_selenium_rc.html), but I think I can review this ticket formally tomorrow.  At the risk of asking too soon: Can we specify the particular browser to test in `run_tests()`?  Another potentially useful option, at least for Firefox: Use, e.g., `firefox -P selenium-test -remote \"openURL($*, new-tab)\"`, to open multiple tabs instead of windows.  I'll investigate.\n\nAside: It's nice that both [Selenium](http://seleniumhq.org/) and [FunkLoad](http://funkload.nuxeo.org/) are build on Python's [unittest framework](http://docs.python.org/library/unittest.html).  Of course, FunkLoad only simulates a browser, but I think we can attain approximate parity between the notebook's functional (i.e., with Selenium) and load (i.e., with FunkLoad) tests.  Selenium's advantage is that it tests real-world browsers, but even with [Selenium-Grid](http://selenium-grid.seleniumhq.org/), we'd have difficulty (I think) simulating thousands of simultaneous notebook users.",
     "created_at": "2009-10-31T15:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61454",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7343-selenium-tests.4.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.4.patch) by mpatel created at 2009-10-31 15:10:51
+Attachment [trac_7343-selenium-tests.4.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.4.patch) by @qed777 created at 2009-10-31 15:10:51
 
 So far, this looks great!  I'm still reading through the [Selenium-RC documentation](http://seleniumhq.org/docs/05_selenium_rc.html), but I think I can review this ticket formally tomorrow.  At the risk of asking too soon: Can we specify the particular browser to test in `run_tests()`?  Another potentially useful option, at least for Firefox: Use, e.g., `firefox -P selenium-test -remote "openURL($*, new-tab)"`, to open multiple tabs instead of windows.  I'll investigate.
 
@@ -218,7 +218,7 @@ archive/issue_comments_061455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61455",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_061456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61456",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -249,16 +249,16 @@ Tweaked a few tests.  See the comment.  Apply only this patch.
 archive/issue_comments_061457.json:
 ```json
 {
-    "body": "Attachment [trac_7343-selenium-tests.5.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.5.patch) by mpatel created at 2009-11-01 10:45:58\n\nVersion 5:\n\n* Fixes `TestWorksheet.test_edit`.\n\n* Changes `TestWorksheet.test_7341`, for now, to use\n\n```python\nsel.get_eval('window.evaluate_cell_introspection(1, null, null);')\n```\n\n   instead of\n\n```python\nself.tab('cell_input_1')\n```\n\n   For some reason, `self.selenium.key_press_native(9)` doesn't consistently send a TAB character in Firefox 3.5.3, at least for me.  I think the problem is Selenium's.\n\n* Simplifies `TestWorksheetsList.test_searching_for_worksheets`.  Is searching published worksheets broken in sagenb's tip?  I see, e.g.,\n\n```\n        exceptions.IOError: [Errno 2] No such file or directory: '/home/.sage/sage_notebook.sagenb/home/pub/12/worksheet.html\n```\n\n   if I publish a worksheet, visit \"Published,\" and try a search.  Restarting the server fixes the problem.\n\nAnyway, this is great work!  To the extent it counts, my review is positive.",
+    "body": "Attachment [trac_7343-selenium-tests.5.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.5.patch) by @qed777 created at 2009-11-01 10:45:58\n\nVersion 5:\n\n* Fixes `TestWorksheet.test_edit`.\n\n* Changes `TestWorksheet.test_7341`, for now, to use\n\n```python\nsel.get_eval('window.evaluate_cell_introspection(1, null, null);')\n```\n\n   instead of\n\n```python\nself.tab('cell_input_1')\n```\n\n   For some reason, `self.selenium.key_press_native(9)` doesn't consistently send a TAB character in Firefox 3.5.3, at least for me.  I think the problem is Selenium's.\n\n* Simplifies `TestWorksheetsList.test_searching_for_worksheets`.  Is searching published worksheets broken in sagenb's tip?  I see, e.g.,\n\n```\n        exceptions.IOError: [Errno 2] No such file or directory: '/home/.sage/sage_notebook.sagenb/home/pub/12/worksheet.html\n```\n\n   if I publish a worksheet, visit \"Published,\" and try a search.  Restarting the server fixes the problem.\n\nAnyway, this is great work!  To the extent it counts, my review is positive.",
     "created_at": "2009-11-01T10:45:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61457",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7343-selenium-tests.5.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.5.patch) by mpatel created at 2009-11-01 10:45:58
+Attachment [trac_7343-selenium-tests.5.patch](tarball://root/attachments/some-uuid/ticket7343/trac_7343-selenium-tests.5.patch) by @qed777 created at 2009-11-01 10:45:58
 
 Version 5:
 
@@ -300,7 +300,7 @@ archive/issue_comments_061458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61458",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_061459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61459",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_061460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61460",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_061461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61461",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_061462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61462",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_061463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61463",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -470,7 +470,7 @@ archive/issue_comments_061464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61464",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_061465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61465",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -506,7 +506,7 @@ archive/issue_comments_061466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61466",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -534,7 +534,7 @@ archive/issue_comments_061467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61467",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_061468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61468",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -588,7 +588,7 @@ archive/issue_comments_061469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61469",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -610,7 +610,7 @@ archive/issue_comments_061470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61470",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -630,7 +630,7 @@ archive/issue_comments_061471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61471",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -648,7 +648,7 @@ archive/issue_comments_061472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61472",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -668,7 +668,7 @@ archive/issue_comments_061473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61473",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -692,7 +692,7 @@ archive/issue_comments_061474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61474",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -715,7 +715,7 @@ archive/issue_comments_061475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61475",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -733,7 +733,7 @@ archive/issue_comments_061476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61476",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -751,7 +751,7 @@ archive/issue_comments_061477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61477",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -769,7 +769,7 @@ archive/issue_comments_061478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7343#issuecomment-61478",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

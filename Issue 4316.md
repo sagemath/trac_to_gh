@@ -14,7 +14,7 @@ archive/issues_004316.json:
     "title": "notebook: '%html $x<y$' doesn't work right",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4316",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: boothby
@@ -61,7 +61,7 @@ archive/issue_comments_031591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4316#issuecomment-31591",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_031592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4316#issuecomment-31592",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

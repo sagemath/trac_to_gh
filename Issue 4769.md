@@ -3,7 +3,7 @@
 archive/issues_004769.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mabshoff schilly\n\nKeywords: devmap\n\nAs the subject says. This is a joint project with Michael Abshoff and Harald Schilly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4769\n\n",
+    "body": "Assignee: tba\n\nCC:  mabshoff @haraldschilly\n\nKeywords: devmap\n\nAs the subject says. This is a joint project with Michael Abshoff and Harald Schilly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4769\n\n",
     "created_at": "2008-12-12T08:04:27Z",
     "labels": [
         "website/wiki",
@@ -19,7 +19,7 @@ archive/issues_004769.json:
 ```
 Assignee: tba
 
-CC:  mabshoff schilly
+CC:  mabshoff @haraldschilly
 
 Keywords: devmap
 
@@ -108,7 +108,7 @@ archive/issue_comments_036131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4769#issuecomment-36131",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_036132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4769#issuecomment-36132",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_036133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4769#issuecomment-36133",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

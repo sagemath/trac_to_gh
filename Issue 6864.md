@@ -14,7 +14,7 @@ archive/issues_006864.json:
     "title": "Stop Sage tests from saving things to hard drive",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6864",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tba
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6864
 archive/issue_comments_056644.json:
 ```json
 {
-    "body": "Attachment [sage.png](tarball://root/attachments/some-uuid/ticket6864/sage.png) by kcrisman created at 2009-09-02 14:19:17",
+    "body": "Attachment [sage.png](tarball://root/attachments/some-uuid/ticket6864/sage.png) by @kcrisman created at 2009-09-02 14:19:17",
     "created_at": "2009-09-02T14:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6864#issuecomment-56644",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [sage.png](tarball://root/attachments/some-uuid/ticket6864/sage.png) by kcrisman created at 2009-09-02 14:19:17
+Attachment [sage.png](tarball://root/attachments/some-uuid/ticket6864/sage.png) by @kcrisman created at 2009-09-02 14:19:17
 
 
 
@@ -74,16 +74,16 @@ Attachment [sage.png](tarball://root/attachments/some-uuid/ticket6864/sage.png) 
 archive/issue_comments_056645.json:
 ```json
 {
-    "body": "Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket6864/sage0.png) by kcrisman created at 2009-09-02 14:19:29",
+    "body": "Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket6864/sage0.png) by @kcrisman created at 2009-09-02 14:19:29",
     "created_at": "2009-09-02T14:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6864#issuecomment-56645",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket6864/sage0.png) by kcrisman created at 2009-09-02 14:19:29
+Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket6864/sage0.png) by @kcrisman created at 2009-09-02 14:19:29
 
 
 
@@ -92,16 +92,16 @@ Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket6864/sage0.png
 archive/issue_comments_056646.json:
 ```json
 {
-    "body": "Attachment [0.png](tarball://root/attachments/some-uuid/ticket6864/0.png) by kcrisman created at 2009-09-02 14:19:58",
+    "body": "Attachment [0.png](tarball://root/attachments/some-uuid/ticket6864/0.png) by @kcrisman created at 2009-09-02 14:19:58",
     "created_at": "2009-09-02T14:19:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6864#issuecomment-56646",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [0.png](tarball://root/attachments/some-uuid/ticket6864/0.png) by kcrisman created at 2009-09-02 14:19:58
+Attachment [0.png](tarball://root/attachments/some-uuid/ticket6864/0.png) by @kcrisman created at 2009-09-02 14:19:58
 
 
 
@@ -110,16 +110,16 @@ Attachment [0.png](tarball://root/attachments/some-uuid/ticket6864/0.png) by kcr
 archive/issue_comments_056647.json:
 ```json
 {
-    "body": "Attachment [zz.png](tarball://root/attachments/some-uuid/ticket6864/zz.png) by kcrisman created at 2009-09-02 14:23:08",
+    "body": "Attachment [zz.png](tarball://root/attachments/some-uuid/ticket6864/zz.png) by @kcrisman created at 2009-09-02 14:23:08",
     "created_at": "2009-09-02T14:23:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6864#issuecomment-56647",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [zz.png](tarball://root/attachments/some-uuid/ticket6864/zz.png) by kcrisman created at 2009-09-02 14:23:08
+Attachment [zz.png](tarball://root/attachments/some-uuid/ticket6864/zz.png) by @kcrisman created at 2009-09-02 14:23:08
 
 
 
@@ -133,7 +133,7 @@ archive/issue_comments_056648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6864#issuecomment-56648",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_056649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6864#issuecomment-56649",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_056650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6864#issuecomment-56650",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_056651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6864#issuecomment-56651",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_056652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6864#issuecomment-56652",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_056653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6864#issuecomment-56653",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -282,16 +282,16 @@ Here's a patch.  I couldn't figure out how to fix the one in database.py, so it 
 archive/issue_comments_056654.json:
 ```json
 {
-    "body": "Attachment [trac_6864-SAGETMP.patch](tarball://root/attachments/some-uuid/ticket6864/trac_6864-SAGETMP.patch) by kcrisman created at 2009-09-14 21:18:33\n\nGreat!  Thanks.   This passes all relevant doctests and nothing appears in my home directory.  I think not testing that example will be okay.",
+    "body": "Attachment [trac_6864-SAGETMP.patch](tarball://root/attachments/some-uuid/ticket6864/trac_6864-SAGETMP.patch) by @kcrisman created at 2009-09-14 21:18:33\n\nGreat!  Thanks.   This passes all relevant doctests and nothing appears in my home directory.  I think not testing that example will be okay.",
     "created_at": "2009-09-14T21:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6864#issuecomment-56654",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6864-SAGETMP.patch](tarball://root/attachments/some-uuid/ticket6864/trac_6864-SAGETMP.patch) by kcrisman created at 2009-09-14 21:18:33
+Attachment [trac_6864-SAGETMP.patch](tarball://root/attachments/some-uuid/ticket6864/trac_6864-SAGETMP.patch) by @kcrisman created at 2009-09-14 21:18:33
 
 Great!  Thanks.   This passes all relevant doctests and nothing appears in my home directory.  I think not testing that example will be okay.
 
@@ -343,7 +343,7 @@ archive/issue_comments_056657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6864#issuecomment-56657",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

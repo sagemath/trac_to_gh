@@ -3,7 +3,7 @@
 archive/issues_004776.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\nsage: R.<x> = PolynomialRing(Integers(3), 1)\nsage: R.random_element()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/devel/sage-main/sage/rings/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ring_generic.so in sage.rings.polynomial.multi_polynomial_ring_generic.MPolynomialRing_generic.random_element (sage/rings/polynomial/multi_polynomial_ring_generic.c:7404)()\n\nTypeError: Cannot compute polynomial with more terms than exist.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4776\n\n",
+    "body": "Assignee: @malb\n\n\n```\nsage: R.<x> = PolynomialRing(Integers(3), 1)\nsage: R.random_element()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/devel/sage-main/sage/rings/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ring_generic.so in sage.rings.polynomial.multi_polynomial_ring_generic.MPolynomialRing_generic.random_element (sage/rings/polynomial/multi_polynomial_ring_generic.c:7404)()\n\nTypeError: Cannot compute polynomial with more terms than exist.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4776\n\n",
     "created_at": "2008-12-13T02:07:22Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_004776.json:
     "title": "random element of multivariate polynomial ring in one variable is totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4776",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4776
 archive/issue_comments_036196.json:
 ```json
 {
-    "body": "Attachment [mpoly_random_element.patch](tarball://root/attachments/some-uuid/ticket4776/mpoly_random_element.patch) by malb created at 2008-12-13 15:31:30",
+    "body": "Attachment [mpoly_random_element.patch](tarball://root/attachments/some-uuid/ticket4776/mpoly_random_element.patch) by @malb created at 2008-12-13 15:31:30",
     "created_at": "2008-12-13T15:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4776#issuecomment-36196",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpoly_random_element.patch](tarball://root/attachments/some-uuid/ticket4776/mpoly_random_element.patch) by malb created at 2008-12-13 15:31:30
+Attachment [mpoly_random_element.patch](tarball://root/attachments/some-uuid/ticket4776/mpoly_random_element.patch) by @malb created at 2008-12-13 15:31:30
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_036197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4776#issuecomment-36197",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

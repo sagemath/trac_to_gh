@@ -3,7 +3,7 @@
 archive/issues_006407.json:
 ```json
 {
-    "body": "Assignee: hlaw\n\nKeywords: formal group elliptic curve\n\nCurrently `EllipticCurveFormalGroup.mult_by_n()` is implemented simply by applying the group law to itself *n* times (except when working over a field of characteristic zero, in which case a fast algorithm is used).  This linear algorithm should be replaced with the logarithmic double-and-add algorithm (i.e. the additive version of the standard square-and-multiply algorithm).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6407\n\n",
+    "body": "Assignee: @unzvfu\n\nKeywords: formal group elliptic curve\n\nCurrently `EllipticCurveFormalGroup.mult_by_n()` is implemented simply by applying the group law to itself *n* times (except when working over a field of characteristic zero, in which case a fast algorithm is used).  This linear algorithm should be replaced with the logarithmic double-and-add algorithm (i.e. the additive version of the standard square-and-multiply algorithm).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6407\n\n",
     "created_at": "2009-06-25T14:39:58Z",
     "labels": [
         "performance",
@@ -14,10 +14,10 @@ archive/issues_006407.json:
     "title": "Multiplication-by-n method on elliptic curve formal groups should use the double-and-add algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6407",
-    "user": "hlaw"
+    "user": "@unzvfu"
 }
 ```
-Assignee: hlaw
+Assignee: @unzvfu
 
 Keywords: formal group elliptic curve
 
@@ -39,7 +39,7 @@ archive/issue_comments_051447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6407#issuecomment-51447",
-    "user": "hlaw"
+    "user": "@unzvfu"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_051448.json:
 ```json
 {
-    "body": "Attachment [trac_6407_added_double-and-add_algo_to_EllipticCurveFormalGroup.patch](tarball://root/attachments/some-uuid/ticket6407/trac_6407_added_double-and-add_algo_to_EllipticCurveFormalGroup.patch) by hlaw created at 2009-07-12 19:53:06",
+    "body": "Attachment [trac_6407_added_double-and-add_algo_to_EllipticCurveFormalGroup.patch](tarball://root/attachments/some-uuid/ticket6407/trac_6407_added_double-and-add_algo_to_EllipticCurveFormalGroup.patch) by @unzvfu created at 2009-07-12 19:53:06",
     "created_at": "2009-07-12T19:53:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6407#issuecomment-51448",
-    "user": "hlaw"
+    "user": "@unzvfu"
 }
 ```
 
-Attachment [trac_6407_added_double-and-add_algo_to_EllipticCurveFormalGroup.patch](tarball://root/attachments/some-uuid/ticket6407/trac_6407_added_double-and-add_algo_to_EllipticCurveFormalGroup.patch) by hlaw created at 2009-07-12 19:53:06
+Attachment [trac_6407_added_double-and-add_algo_to_EllipticCurveFormalGroup.patch](tarball://root/attachments/some-uuid/ticket6407/trac_6407_added_double-and-add_algo_to_EllipticCurveFormalGroup.patch) by @unzvfu created at 2009-07-12 19:53:06
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_051451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6407#issuecomment-51451",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

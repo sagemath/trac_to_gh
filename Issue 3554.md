@@ -3,7 +3,7 @@
 archive/issues_003554.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3554\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3554\n\n",
     "created_at": "2008-07-05T21:09:00Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003554.json:
     "title": "[with patch, needs review] improve M2 pexpect interface.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3554",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3554
 archive/issue_comments_025135.json:
 ```json
 {
-    "body": "Attachment [m2.patch](tarball://root/attachments/some-uuid/ticket3554/m2.patch) by mhansen created at 2008-07-05 21:10:00",
+    "body": "Attachment [m2.patch](tarball://root/attachments/some-uuid/ticket3554/m2.patch) by @mwhansen created at 2008-07-05 21:10:00",
     "created_at": "2008-07-05T21:10:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3554#issuecomment-25135",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [m2.patch](tarball://root/attachments/some-uuid/ticket3554/m2.patch) by mhansen created at 2008-07-05 21:10:00
+Attachment [m2.patch](tarball://root/attachments/some-uuid/ticket3554/m2.patch) by @mwhansen created at 2008-07-05 21:10:00
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_025136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3554#issuecomment-25136",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_025137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3554#issuecomment-25137",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_025141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3554#issuecomment-25141",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

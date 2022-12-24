@@ -3,7 +3,7 @@
 archive/issues_000996.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nKeywords: graphs\n\nImplements a new feature that quickly generates representatives of distinct isomorphism classes satisfying some vertex-heredetary property.\n\nIssue created by migration from https://trac.sagemath.org/ticket/996\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: graphs\n\nImplements a new feature that quickly generates representatives of distinct isomorphism classes satisfying some vertex-heredetary property.\n\nIssue created by migration from https://trac.sagemath.org/ticket/996\n\n",
     "created_at": "2007-10-25T06:23:04Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000996.json:
     "title": "Isomorph-Free Exhaustive Generation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/996",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Keywords: graphs
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/996
 archive/issue_comments_006067.json:
 ```json
 {
-    "body": "Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket996/7087.patch) by rlm created at 2007-10-25 06:23:58",
+    "body": "Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket996/7087.patch) by @rlmill created at 2007-10-25 06:23:58",
     "created_at": "2007-10-25T06:23:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/996#issuecomment-6067",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket996/7087.patch) by rlm created at 2007-10-25 06:23:58
+Attachment [7087.patch](tarball://root/attachments/some-uuid/ticket996/7087.patch) by @rlmill created at 2007-10-25 06:23:58
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_006068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/996#issuecomment-6068",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

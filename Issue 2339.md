@@ -3,7 +3,7 @@
 archive/issues_002339.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  bober mhampton kcrisman\n\n\n```\nr(t) = 1000 * t * e^(-.5 * t)\nplot(r, xmin=0, xmax=20).show()\n```\n\n\ndoesn't work. But\n\n```\nplot(r, (0,20)).show()\n```\n\ndoes. The documentation still says\n\n```\n    PLOT OPTIONS:\n    The plot options are\n    [...]\n        xmin -- starting x value\n        xmax -- ending x value\n    [...]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2339\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  bober mhampton @kcrisman\n\n\n```\nr(t) = 1000 * t * e^(-.5 * t)\nplot(r, xmin=0, xmax=20).show()\n```\n\n\ndoesn't work. But\n\n```\nplot(r, (0,20)).show()\n```\n\ndoes. The documentation still says\n\n```\n    PLOT OPTIONS:\n    The plot options are\n    [...]\n        xmin -- starting x value\n        xmax -- ending x value\n    [...]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2339\n\n",
     "created_at": "2008-02-28T02:36:46Z",
     "labels": [
         "graphics",
@@ -17,9 +17,9 @@ archive/issues_002339.json:
     "user": "bober"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  bober mhampton kcrisman
+CC:  bober mhampton @kcrisman
 
 
 ```
@@ -79,7 +79,7 @@ Michael
 archive/issue_comments_015637.json:
 ```json
 {
-    "body": "Changing assignee from was to mhampton.",
+    "body": "Changing assignee from @williamstein to mhampton.",
     "created_at": "2008-05-17T18:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_015637.json:
 }
 ```
 
-Changing assignee from was to mhampton.
+Changing assignee from @williamstein to mhampton.
 
 
 
@@ -169,16 +169,16 @@ should fix the problem
 archive/issue_comments_015642.json:
 ```json
 {
-    "body": "Attachment [trac_2339_try1.patch](tarball://root/attachments/some-uuid/ticket2339/trac_2339_try1.patch) by jhpalmieri created at 2008-06-11 23:58:20\n\nLooks okay to me, although I don't understand the purpose of the change from\n\n\n```\nG = Graphics() \nfor i in range(0, len(funcs)): \n```\n\n\nto\n\n\n```\nG = plot(funcs[0], (xmin, xmax), polar=polar, **kwds) \nfor i in range(1, len(funcs)): \n```\n",
+    "body": "Attachment [trac_2339_try1.patch](tarball://root/attachments/some-uuid/ticket2339/trac_2339_try1.patch) by @jhpalmieri created at 2008-06-11 23:58:20\n\nLooks okay to me, although I don't understand the purpose of the change from\n\n\n```\nG = Graphics() \nfor i in range(0, len(funcs)): \n```\n\n\nto\n\n\n```\nG = plot(funcs[0], (xmin, xmax), polar=polar, **kwds) \nfor i in range(1, len(funcs)): \n```\n",
     "created_at": "2008-06-11T23:58:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15642",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_2339_try1.patch](tarball://root/attachments/some-uuid/ticket2339/trac_2339_try1.patch) by jhpalmieri created at 2008-06-11 23:58:20
+Attachment [trac_2339_try1.patch](tarball://root/attachments/some-uuid/ticket2339/trac_2339_try1.patch) by @jhpalmieri created at 2008-06-11 23:58:20
 
 Looks okay to me, although I don't understand the purpose of the change from
 
@@ -230,7 +230,7 @@ archive/issue_comments_015644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15644",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_015645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15645",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_015646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15646",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_015647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15647",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_015648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15648",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -357,16 +357,16 @@ new version of 2399 patch, fixing problem when xmin > xmax
 archive/issue_comments_015649.json:
 ```json
 {
-    "body": "Attachment [2339-new.patch](tarball://root/attachments/some-uuid/ticket2339/2339-new.patch) by jhpalmieri created at 2008-07-08 19:17:19\n\nBy the way, my patch supersedes Marshall's, but he should get credit for most of the work.  (Is it better to have one patch, for easier installation, or two, to make sure the right people get credit for their work?)\n\nOne question: in my patch, as I described, if you call plot with arguments xmin=10 and xmax=0, then the plot gets drawn between x=0 and x=10, with no error message.  Is this the best behavior, or should an exception be raised instead?",
+    "body": "Attachment [2339-new.patch](tarball://root/attachments/some-uuid/ticket2339/2339-new.patch) by @jhpalmieri created at 2008-07-08 19:17:19\n\nBy the way, my patch supersedes Marshall's, but he should get credit for most of the work.  (Is it better to have one patch, for easier installation, or two, to make sure the right people get credit for their work?)\n\nOne question: in my patch, as I described, if you call plot with arguments xmin=10 and xmax=0, then the plot gets drawn between x=0 and x=10, with no error message.  Is this the best behavior, or should an exception be raised instead?",
     "created_at": "2008-07-08T19:17:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15649",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [2339-new.patch](tarball://root/attachments/some-uuid/ticket2339/2339-new.patch) by jhpalmieri created at 2008-07-08 19:17:19
+Attachment [2339-new.patch](tarball://root/attachments/some-uuid/ticket2339/2339-new.patch) by @jhpalmieri created at 2008-07-08 19:17:19
 
 By the way, my patch supersedes Marshall's, but he should get credit for most of the work.  (Is it better to have one patch, for easier installation, or two, to make sure the right people get credit for their work?)
 
@@ -402,7 +402,7 @@ archive/issue_comments_015651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15651",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_015654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15654",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_015655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15655",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -547,7 +547,7 @@ archive/issue_comments_015658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15658",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

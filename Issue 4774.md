@@ -3,7 +3,7 @@
 archive/issues_004774.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ekirkman mhansen\n\nNice things include very nice arrow functionality, new legend functionality, and a fill_between keyword:\n\nhttp://matplotlib.sourceforge.net/users/whats_new.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/4774\n\n",
+    "body": "Assignee: tbd\n\nCC:  ekirkman @mwhansen\n\nNice things include very nice arrow functionality, new legend functionality, and a fill_between keyword:\n\nhttp://matplotlib.sourceforge.net/users/whats_new.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/4774\n\n",
     "created_at": "2008-12-12T21:47:52Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_004774.json:
     "title": "Upgrade matplotlib to 0.98.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4774",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
 
-CC:  ekirkman mhansen
+CC:  ekirkman @mwhansen
 
 Nice things include very nice arrow functionality, new legend functionality, and a fill_between keyword:
 
@@ -99,7 +99,7 @@ archive/issue_comments_036155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36155",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_036157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36157",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_036158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36158",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_036159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36159",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_036160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36160",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -214,16 +214,16 @@ apply in normal sage repository
 archive/issue_comments_036161.json:
 ```json
 {
-    "body": "Attachment [trac_4774_arrow.patch](tarball://root/attachments/some-uuid/ticket4774/trac_4774_arrow.patch) by jason created at 2009-01-26 22:49:47\n\nI've updated the spkg at http://sage.math.washington.edu/home/jason/matplotlib-svn6821.spkg\n\nIt should be ready to be reviewed now.",
+    "body": "Attachment [trac_4774_arrow.patch](tarball://root/attachments/some-uuid/ticket4774/trac_4774_arrow.patch) by @jasongrout created at 2009-01-26 22:49:47\n\nI've updated the spkg at http://sage.math.washington.edu/home/jason/matplotlib-svn6821.spkg\n\nIt should be ready to be reviewed now.",
     "created_at": "2009-01-26T22:49:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36161",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_4774_arrow.patch](tarball://root/attachments/some-uuid/ticket4774/trac_4774_arrow.patch) by jason created at 2009-01-26 22:49:47
+Attachment [trac_4774_arrow.patch](tarball://root/attachments/some-uuid/ticket4774/trac_4774_arrow.patch) by @jasongrout created at 2009-01-26 22:49:47
 
 I've updated the spkg at http://sage.math.washington.edu/home/jason/matplotlib-svn6821.spkg
 
@@ -241,7 +241,7 @@ archive/issue_comments_036162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36162",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_036163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36163",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_036164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36164",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_036170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36170",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_036171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36171",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_036172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36172",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -582,7 +582,7 @@ archive/issue_comments_036173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36173",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -601,7 +601,7 @@ archive/issue_comments_036174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36174",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_036175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36175",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -634,16 +634,16 @@ The spkg installs cleanly for me (ubuntu 8.10).
 archive/issue_comments_036176.json:
 ```json
 {
-    "body": "Attachment [trac_4774_BIN.patch](tarball://root/attachments/some-uuid/ticket4774/trac_4774_BIN.patch) by jason created at 2009-02-13 17:36:38",
+    "body": "Attachment [trac_4774_BIN.patch](tarball://root/attachments/some-uuid/ticket4774/trac_4774_BIN.patch) by @jasongrout created at 2009-02-13 17:36:38",
     "created_at": "2009-02-13T17:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36176",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_4774_BIN.patch](tarball://root/attachments/some-uuid/ticket4774/trac_4774_BIN.patch) by jason created at 2009-02-13 17:36:38
+Attachment [trac_4774_BIN.patch](tarball://root/attachments/some-uuid/ticket4774/trac_4774_BIN.patch) by @jasongrout created at 2009-02-13 17:36:38
 
 
 
@@ -657,7 +657,7 @@ archive/issue_comments_036177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36177",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -743,7 +743,7 @@ archive/issue_comments_036181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36181",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -756,16 +756,16 @@ Changing status from new to assigned.
 archive/issue_comments_036182.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to jason.",
+    "body": "Changing assignee from mabshoff to @jasongrout.",
     "created_at": "2009-02-14T10:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36182",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mabshoff to jason.
+Changing assignee from mabshoff to @jasongrout.
 
 
 
@@ -801,7 +801,7 @@ archive/issue_comments_036184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36184",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -920,7 +920,7 @@ archive/issue_comments_036188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4774#issuecomment-36188",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

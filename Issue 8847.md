@@ -14,7 +14,7 @@ archive/issues_008847.json:
     "title": "pynac.pyx use double precision special functions instead of long double",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8847",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8847
 archive/issue_comments_081330.json:
 ```json
 {
-    "body": "Attachment [trac_8847.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847.patch) by mhansen created at 2010-05-03 13:22:06",
+    "body": "Attachment [trac_8847.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847.patch) by @mwhansen created at 2010-05-03 13:22:06",
     "created_at": "2010-05-03T13:22:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81330",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8847.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847.patch) by mhansen created at 2010-05-03 13:22:06
+Attachment [trac_8847.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847.patch) by @mwhansen created at 2010-05-03 13:22:06
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_081331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81331",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_081332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81332",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_081333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81333",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_081334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81334",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_081335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81335",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_081336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81336",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_081337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81337",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_081338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81338",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_081339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81339",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -237,16 +237,16 @@ apply only this (not the one below)
 archive/issue_comments_081340.json:
 ```json
 {
-    "body": "Attachment [trac_8847-take3.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847-take3.patch) by was created at 2010-05-26 02:19:50",
+    "body": "Attachment [trac_8847-take3.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847-take3.patch) by @williamstein created at 2010-05-26 02:19:50",
     "created_at": "2010-05-26T02:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81340",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8847-take3.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847-take3.patch) by was created at 2010-05-26 02:19:50
+Attachment [trac_8847-take3.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847-take3.patch) by @williamstein created at 2010-05-26 02:19:50
 
 
 
@@ -255,16 +255,16 @@ Attachment [trac_8847-take3.patch](tarball://root/attachments/some-uuid/ticket88
 archive/issue_comments_081341.json:
 ```json
 {
-    "body": "Attachment [trac_8847-take4.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847-take4.patch) by mhansen created at 2010-05-26 02:50:13",
+    "body": "Attachment [trac_8847-take4.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847-take4.patch) by @mwhansen created at 2010-05-26 02:50:13",
     "created_at": "2010-05-26T02:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81341",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8847-take4.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847-take4.patch) by mhansen created at 2010-05-26 02:50:13
+Attachment [trac_8847-take4.patch](tarball://root/attachments/some-uuid/ticket8847/trac_8847-take4.patch) by @mwhansen created at 2010-05-26 02:50:13
 
 
 
@@ -278,7 +278,7 @@ archive/issue_comments_081342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81342",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

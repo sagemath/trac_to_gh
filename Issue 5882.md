@@ -3,7 +3,7 @@
 archive/issues_005882.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jhpalmieri davidloeffler bantieau\n\nI *really* need this for my research.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5882\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri @loefflerd @antieau\n\nI *really* need this for my research.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5882\n\n",
     "created_at": "2009-04-24T00:20:20Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005882.json:
     "title": "implement general package for finitely generated not-necessarily free R-modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5882",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jhpalmieri davidloeffler bantieau
+CC:  @jhpalmieri @loefflerd @antieau
 
 I *really* need this for my research.
 
@@ -39,7 +39,7 @@ archive/issue_comments_046476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46476",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_046477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46477",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_046478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46478",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_046479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46479",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_046480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46480",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_046481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46481",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_046482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46482",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_046483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46483",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_046484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46484",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_046485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46485",
-    "user": "bantieau"
+    "user": "@antieau"
 }
 ```
 
@@ -264,16 +264,16 @@ I like what I see in this patch. Especially the ability to lift an element of a 
 archive/issue_comments_046486.json:
 ```json
 {
-    "body": "Attachment [trac_5882.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882.patch) by was created at 2009-06-18 23:06:09\n\nthis one patch is based against 4.0.2.rc3.  it replaces the 8 patches from before.",
+    "body": "Attachment [trac_5882.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882.patch) by @williamstein created at 2009-06-18 23:06:09\n\nthis one patch is based against 4.0.2.rc3.  it replaces the 8 patches from before.",
     "created_at": "2009-06-18T23:06:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46486",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5882.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882.patch) by was created at 2009-06-18 23:06:09
+Attachment [trac_5882.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882.patch) by @williamstein created at 2009-06-18 23:06:09
 
 this one patch is based against 4.0.2.rc3.  it replaces the 8 patches from before.
 
@@ -289,7 +289,7 @@ archive/issue_comments_046487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46487",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_046488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46488",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_046489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46489",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_046490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46490",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_046491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46491",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_046492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46492",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_046493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46493",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_046494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46494",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -452,16 +452,16 @@ Random comments while various people (like rlm (I hope) and me) work on more tho
 archive/issue_comments_046495.json:
 ```json
 {
-    "body": "Attachment [ref_5882.patch](tarball://root/attachments/some-uuid/ticket5882/ref_5882.patch) by jhpalmieri created at 2009-06-20 03:11:12\n\nreferee's patch -- reST fixes",
+    "body": "Attachment [ref_5882.patch](tarball://root/attachments/some-uuid/ticket5882/ref_5882.patch) by @jhpalmieri created at 2009-06-20 03:11:12\n\nreferee's patch -- reST fixes",
     "created_at": "2009-06-20T03:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46495",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [ref_5882.patch](tarball://root/attachments/some-uuid/ticket5882/ref_5882.patch) by jhpalmieri created at 2009-06-20 03:11:12
+Attachment [ref_5882.patch](tarball://root/attachments/some-uuid/ticket5882/ref_5882.patch) by @jhpalmieri created at 2009-06-20 03:11:12
 
 referee's patch -- reST fixes
 
@@ -477,7 +477,7 @@ archive/issue_comments_046496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46496",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_046497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46497",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -531,16 +531,16 @@ I don't like that more, because they are modules.  In mathematics, modules are u
 archive/issue_comments_046498.json:
 ```json
 {
-    "body": "Attachment [trac_5882-final_referee_followup.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-final_referee_followup.patch) by was created at 2009-06-20 16:09:02",
+    "body": "Attachment [trac_5882-final_referee_followup.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-final_referee_followup.patch) by @williamstein created at 2009-06-20 16:09:02",
     "created_at": "2009-06-20T16:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46498",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5882-final_referee_followup.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-final_referee_followup.patch) by was created at 2009-06-20 16:09:02
+Attachment [trac_5882-final_referee_followup.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-final_referee_followup.patch) by @williamstein created at 2009-06-20 16:09:02
 
 
 
@@ -554,7 +554,7 @@ archive/issue_comments_046499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46499",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -663,7 +663,7 @@ archive/issue_comments_046500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46500",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -715,7 +715,7 @@ archive/issue_comments_046501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46501",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -740,7 +740,7 @@ archive/issue_comments_046502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46502",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -762,7 +762,7 @@ archive/issue_comments_046503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46503",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -801,7 +801,7 @@ archive/issue_comments_046504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46504",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -819,7 +819,7 @@ archive/issue_comments_046505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46505",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -848,7 +848,7 @@ archive/issue_comments_046506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46506",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -866,7 +866,7 @@ archive/issue_comments_046507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46507",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -906,7 +906,7 @@ archive/issue_comments_046508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46508",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -934,7 +934,7 @@ archive/issue_comments_046509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46509",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -962,7 +962,7 @@ archive/issue_comments_046510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46510",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -984,7 +984,7 @@ archive/issue_comments_046511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46511",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -997,16 +997,16 @@ Great, that all makes sense.  For annihilator, then, you could the docstring fro
 archive/issue_comments_046512.json:
 ```json
 {
-    "body": "Attachment [trac_5882-additions.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-additions.patch) by davidloeffler created at 2009-07-02 12:49:09\n\nI've uploaded a new patch taking into account John's suggestions.",
+    "body": "Attachment [trac_5882-additions.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-additions.patch) by @loefflerd created at 2009-07-02 12:49:09\n\nI've uploaded a new patch taking into account John's suggestions.",
     "created_at": "2009-07-02T12:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46512",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5882-additions.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-additions.patch) by davidloeffler created at 2009-07-02 12:49:09
+Attachment [trac_5882-additions.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-additions.patch) by @loefflerd created at 2009-07-02 12:49:09
 
 I've uploaded a new patch taking into account John's suggestions.
 
@@ -1022,7 +1022,7 @@ archive/issue_comments_046513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46513",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1329,16 +1329,16 @@ So we should make annihilator return an ideal.
 archive/issue_comments_046514.json:
 ```json
 {
-    "body": "Attachment [trac_5882-full_ref_report-comments_addressed.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-full_ref_report-comments_addressed.patch) by was created at 2009-07-02 16:53:00",
+    "body": "Attachment [trac_5882-full_ref_report-comments_addressed.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-full_ref_report-comments_addressed.patch) by @williamstein created at 2009-07-02 16:53:00",
     "created_at": "2009-07-02T16:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46514",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5882-full_ref_report-comments_addressed.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-full_ref_report-comments_addressed.patch) by was created at 2009-07-02 16:53:00
+Attachment [trac_5882-full_ref_report-comments_addressed.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-full_ref_report-comments_addressed.patch) by @williamstein created at 2009-07-02 16:53:00
 
 
 
@@ -1352,7 +1352,7 @@ archive/issue_comments_046515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46515",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1371,16 +1371,16 @@ Apply only "trac_5882-all-in-one.patch".
 archive/issue_comments_046516.json:
 ```json
 {
-    "body": "Attachment [trac_5882-delta.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-delta.patch) by jhpalmieri created at 2009-07-02 22:00:44\n\nfor reference only",
+    "body": "Attachment [trac_5882-delta.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-delta.patch) by @jhpalmieri created at 2009-07-02 22:00:44\n\nfor reference only",
     "created_at": "2009-07-02T22:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46516",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_5882-delta.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-delta.patch) by jhpalmieri created at 2009-07-02 22:00:44
+Attachment [trac_5882-delta.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-delta.patch) by @jhpalmieri created at 2009-07-02 22:00:44
 
 for reference only
 
@@ -1396,7 +1396,7 @@ archive/issue_comments_046517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46517",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1409,16 +1409,16 @@ apply only this patch!
 archive/issue_comments_046518.json:
 ```json
 {
-    "body": "Attachment [trac_5882-all-in-one.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-all-in-one.patch) by rlm created at 2009-07-02 22:15:52\n\nThere is one doctest failure:\n\n```\nsage -t  sage/modules/fg_pid/fgp_module.py\n**********************************************************************\nFile \"/space/rlm/sage-4.1.alpha3/devel/sage-main/sage/modules/fg_pid/fgp_module.py\", line 1453:\n    sage: hash(A)\nExpected nothing\nGot:\n    -7071641102956720018\n**********************************************************************\n```\n",
+    "body": "Attachment [trac_5882-all-in-one.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-all-in-one.patch) by @rlmill created at 2009-07-02 22:15:52\n\nThere is one doctest failure:\n\n```\nsage -t  sage/modules/fg_pid/fgp_module.py\n**********************************************************************\nFile \"/space/rlm/sage-4.1.alpha3/devel/sage-main/sage/modules/fg_pid/fgp_module.py\", line 1453:\n    sage: hash(A)\nExpected nothing\nGot:\n    -7071641102956720018\n**********************************************************************\n```\n",
     "created_at": "2009-07-02T22:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46518",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5882-all-in-one.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-all-in-one.patch) by rlm created at 2009-07-02 22:15:52
+Attachment [trac_5882-all-in-one.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882-all-in-one.patch) by @rlmill created at 2009-07-02 22:15:52
 
 There is one doctest failure:
 
@@ -1446,7 +1446,7 @@ archive/issue_comments_046519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46519",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1459,16 +1459,16 @@ Sorry, that's what I get for only doctesting on a 32-bit machine.  Here's a patc
 archive/issue_comments_046520.json:
 ```json
 {
-    "body": "Attachment [trac_5882_hash.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882_hash.patch) by jhpalmieri created at 2009-07-02 22:38:14",
+    "body": "Attachment [trac_5882_hash.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882_hash.patch) by @jhpalmieri created at 2009-07-02 22:38:14",
     "created_at": "2009-07-02T22:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46520",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_5882_hash.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882_hash.patch) by jhpalmieri created at 2009-07-02 22:38:14
+Attachment [trac_5882_hash.patch](tarball://root/attachments/some-uuid/ticket5882/trac_5882_hash.patch) by @jhpalmieri created at 2009-07-02 22:38:14
 
 
 
@@ -1482,7 +1482,7 @@ archive/issue_comments_046521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46521",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1508,7 +1508,7 @@ archive/issue_comments_046522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5882#issuecomment-46522",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

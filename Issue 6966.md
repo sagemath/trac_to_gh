@@ -3,7 +3,7 @@
 archive/issues_006966.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: shimura subgroup\n\nsmall patch to compute the Shimura subgroup of an Abelian subvariety of $J_0(N)$.\n\n\n```\nJ=J0(11)\nJ.shimura_subgroup()\n\nFinite subgroup with invariants [5] over QQ of Abelian variety J0(11) of dimension 1\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6966\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: shimura subgroup\n\nsmall patch to compute the Shimura subgroup of an Abelian subvariety of $J_0(N)$.\n\n\n```\nJ=J0(11)\nJ.shimura_subgroup()\n\nFinite subgroup with invariants [5] over QQ of Abelian variety J0(11) of dimension 1\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6966\n\n",
     "created_at": "2009-09-20T03:51:08Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_006966.json:
     "title": "Shimura subgroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6966",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: shimura subgroup
 
@@ -49,7 +49,7 @@ archive/issue_comments_057633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6966#issuecomment-57633",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
@@ -62,16 +62,16 @@ computes the Shimura subgroup of J0(N) and its subvarieties.
 archive/issue_comments_057634.json:
 ```json
 {
-    "body": "Attachment [6966-shimuracuspidal.patch](tarball://root/attachments/some-uuid/ticket6966/6966-shimuracuspidal.patch) by was created at 2009-09-20 07:15:08",
+    "body": "Attachment [6966-shimuracuspidal.patch](tarball://root/attachments/some-uuid/ticket6966/6966-shimuracuspidal.patch) by @williamstein created at 2009-09-20 07:15:08",
     "created_at": "2009-09-20T07:15:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6966#issuecomment-57634",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [6966-shimuracuspidal.patch](tarball://root/attachments/some-uuid/ticket6966/6966-shimuracuspidal.patch) by was created at 2009-09-20 07:15:08
+Attachment [6966-shimuracuspidal.patch](tarball://root/attachments/some-uuid/ticket6966/6966-shimuracuspidal.patch) by @williamstein created at 2009-09-20 07:15:08
 
 
 

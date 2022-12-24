@@ -3,7 +3,7 @@
 archive/issues_000979.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\n```\nsage: a = .00000000000000000000001;a\n0.000000000000000000000010000000000000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/979\n\n",
+    "body": "Assignee: @mwhansen\n\n\n```\nsage: a = .00000000000000000000001;a\n0.000000000000000000000010000000000000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/979\n\n",
     "created_at": "2007-10-24T03:49:28Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_000979.json:
     "title": "printing error with small reals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/979",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 ```
@@ -42,7 +42,7 @@ archive/issue_comments_005970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/979#issuecomment-5970",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_005971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/979#issuecomment-5971",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_005972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/979#issuecomment-5972",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

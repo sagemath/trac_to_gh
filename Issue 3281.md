@@ -3,7 +3,7 @@
 archive/issues_003281.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nlibecm was moved without updating pbuild and thus pbuild fails to compile sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3281\n\n",
+    "body": "Assignee: @garyfurnish\n\nlibecm was moved without updating pbuild and thus pbuild fails to compile sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3281\n\n",
     "created_at": "2008-05-23T16:30:17Z",
     "labels": [
         "pbuild",
@@ -14,10 +14,10 @@ archive/issues_003281.json:
     "title": "libecm fails to pbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3281",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 libecm was moved without updating pbuild and thus pbuild fails to compile sage.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3281
 archive/issue_comments_022694.json:
 ```json
 {
-    "body": "Attachment [trac_3281.patch](tarball://root/attachments/some-uuid/ticket3281/trac_3281.patch) by gfurnish created at 2008-05-23 16:30:27",
+    "body": "Attachment [trac_3281.patch](tarball://root/attachments/some-uuid/ticket3281/trac_3281.patch) by @garyfurnish created at 2008-05-23 16:30:27",
     "created_at": "2008-05-23T16:30:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3281#issuecomment-22694",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3281.patch](tarball://root/attachments/some-uuid/ticket3281/trac_3281.patch) by gfurnish created at 2008-05-23 16:30:27
+Attachment [trac_3281.patch](tarball://root/attachments/some-uuid/ticket3281/trac_3281.patch) by @garyfurnish created at 2008-05-23 16:30:27
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_022695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3281#issuecomment-22695",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

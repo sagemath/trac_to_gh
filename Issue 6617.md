@@ -14,7 +14,7 @@ archive/issues_006617.json:
     "title": "remove stale SageTeX files from latex_embed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6617",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tbd
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6617
 archive/issue_comments_054214.json:
 ```json
 {
-    "body": "Attachment [trac_6617.patch](tarball://root/attachments/some-uuid/ticket6617/trac_6617.patch) by ddrake created at 2009-07-25 12:42:28",
+    "body": "Attachment [trac_6617.patch](tarball://root/attachments/some-uuid/ticket6617/trac_6617.patch) by @dandrake created at 2009-07-25 12:42:28",
     "created_at": "2009-07-25T12:42:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6617#issuecomment-54214",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_6617.patch](tarball://root/attachments/some-uuid/ticket6617/trac_6617.patch) by ddrake created at 2009-07-25 12:42:28
+Attachment [trac_6617.patch](tarball://root/attachments/some-uuid/ticket6617/trac_6617.patch) by @dandrake created at 2009-07-25 12:42:28
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_054215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6617#issuecomment-54215",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -70,16 +70,16 @@ I don't know if the attached patch will do this, but be sure that the PDF files 
 archive/issue_comments_054216.json:
 ```json
 {
-    "body": "Changing assignee from tbd to ddrake.",
+    "body": "Changing assignee from tbd to @dandrake.",
     "created_at": "2009-07-25T13:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6617#issuecomment-54216",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from tbd to ddrake.
+Changing assignee from tbd to @dandrake.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_054217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6617#issuecomment-54217",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_054218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6617#issuecomment-54218",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_054219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6617#issuecomment-54219",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_054220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6617#issuecomment-54220",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_054221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6617#issuecomment-54221",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

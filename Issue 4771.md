@@ -14,7 +14,7 @@ archive/issues_004771.json:
     "title": "notebook -- get rid of these debug log messages I put in: \"Dumping ...\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4771",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

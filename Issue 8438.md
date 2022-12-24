@@ -3,7 +3,7 @@
 archive/issues_008438.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  nborie\n\nKeywords: skew partitions\n\n\n```\nsage: print from_row_and_column_length([3,1,2,2],[2,3,1,1,1]).diagram()\n         ###\n        #\n       ##\n       ##\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8438\n\n",
+    "body": "Assignee: @hivert\n\nCC:  nborie\n\nKeywords: skew partitions\n\n\n```\nsage: print from_row_and_column_length([3,1,2,2],[2,3,1,1,1]).diagram()\n         ###\n        #\n       ##\n       ##\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8438\n\n",
     "created_at": "2010-03-04T20:42:23Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008438.json:
     "title": "Construction of a skew partition from its row and column lengths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8438",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  nborie
 
@@ -49,7 +49,7 @@ archive/issue_comments_075749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8438#issuecomment-75749",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -175,16 +175,16 @@ Otherwise, the patch is correct (apply, test and doc.). I am not an expert with 
 archive/issue_comments_075754.json:
 ```json
 {
-    "body": "Attachment [trac_8438-skew_partitions_from_rc_lenghts-fh.patch](tarball://root/attachments/some-uuid/ticket8438/trac_8438-skew_partitions_from_rc_lenghts-fh.patch) by hivert created at 2010-03-10 08:33:41",
+    "body": "Attachment [trac_8438-skew_partitions_from_rc_lenghts-fh.patch](tarball://root/attachments/some-uuid/ticket8438/trac_8438-skew_partitions_from_rc_lenghts-fh.patch) by @hivert created at 2010-03-10 08:33:41",
     "created_at": "2010-03-10T08:33:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8438#issuecomment-75754",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8438-skew_partitions_from_rc_lenghts-fh.patch](tarball://root/attachments/some-uuid/ticket8438/trac_8438-skew_partitions_from_rc_lenghts-fh.patch) by hivert created at 2010-03-10 08:33:41
+Attachment [trac_8438-skew_partitions_from_rc_lenghts-fh.patch](tarball://root/attachments/some-uuid/ticket8438/trac_8438-skew_partitions_from_rc_lenghts-fh.patch) by @hivert created at 2010-03-10 08:33:41
 
 
 
@@ -198,7 +198,7 @@ archive/issue_comments_075755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8438#issuecomment-75755",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_075758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8438#issuecomment-75758",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_075759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8438#issuecomment-75759",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

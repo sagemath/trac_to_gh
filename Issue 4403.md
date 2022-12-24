@@ -3,7 +3,7 @@
 archive/issues_004403.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mhansen\n\nFix the following issues in section 3:\n\n* We do support gcc 4.3\n* We are not working on SunForte or Intel CC support\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4403\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen\n\nFix the following issues in section 3:\n\n* We do support gcc 4.3\n* We are not working on SunForte or Intel CC support\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4403\n\n",
     "created_at": "2008-10-30T18:12:07Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_004403.json:
 ```
 Assignee: tba
 
-CC:  mhansen
+CC:  @mwhansen
 
 Fix the following issues in section 3:
 
@@ -120,7 +120,7 @@ archive/issue_comments_032380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4403#issuecomment-32380",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003548.json:
     "title": "bug in Permutation creation from a string",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3548",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: joyner
@@ -89,16 +89,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3548
 archive/issue_comments_025097.json:
 ```json
 {
-    "body": "Attachment [sage-trac3548.patch](tarball://root/attachments/some-uuid/ticket3548/sage-trac3548.patch) by cremona created at 2008-07-04 22:09:15",
+    "body": "Attachment [sage-trac3548.patch](tarball://root/attachments/some-uuid/ticket3548/sage-trac3548.patch) by @JohnCremona created at 2008-07-04 22:09:15",
     "created_at": "2008-07-04T22:09:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3548#issuecomment-25097",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac3548.patch](tarball://root/attachments/some-uuid/ticket3548/sage-trac3548.patch) by cremona created at 2008-07-04 22:09:15
+Attachment [sage-trac3548.patch](tarball://root/attachments/some-uuid/ticket3548/sage-trac3548.patch) by @JohnCremona created at 2008-07-04 22:09:15
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_025098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3548#issuecomment-25098",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_025099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3548#issuecomment-25099",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

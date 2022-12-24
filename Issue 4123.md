@@ -14,7 +14,7 @@ archive/issues_004123.json:
     "title": "TOOLCHAIN_ENV script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4123",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: mabshoff
@@ -95,7 +95,7 @@ archive/issue_comments_029898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4123#issuecomment-29898",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

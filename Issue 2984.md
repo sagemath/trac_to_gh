@@ -14,7 +14,7 @@ archive/issues_002984.json:
     "title": "ITANIUM (RHEL 5) -- turn off all unaligned access messages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2984",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -106,7 +106,7 @@ archive/issue_comments_020549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2984",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2984#issuecomment-20549",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

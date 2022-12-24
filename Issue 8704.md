@@ -3,7 +3,7 @@
 archive/issues_008704.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nThe actual printing in in discussion on [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/5ff945e9d813392c) of sage-combinat-devel. I'll implement it as soon as the decision is made.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8704\n\n",
+    "body": "Assignee: @hivert\n\nThe actual printing in in discussion on [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/5ff945e9d813392c) of sage-combinat-devel. I'll implement it as soon as the decision is made.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8704\n\n",
     "created_at": "2010-04-17T09:53:05Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008704.json:
     "title": "Improve the _repr_ of IntegerRange",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8704",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 The actual printing in in discussion on [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/5ff945e9d813392c) of sage-combinat-devel. I'll implement it as soon as the decision is made.
 
@@ -37,7 +37,7 @@ archive/issue_comments_079395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79395",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_079396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79396",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_079397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79397",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_079398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79398",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_079399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79399",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -138,16 +138,16 @@ I fixed the following issues raised by Nicolas on sage-combinat-devel
 archive/issue_comments_079400.json:
 ```json
 {
-    "body": "Attachment [trac_8704-integer_range_print-fh.patch](tarball://root/attachments/some-uuid/ticket8704/trac_8704-integer_range_print-fh.patch) by hivert created at 2010-05-31 21:51:51",
+    "body": "Attachment [trac_8704-integer_range_print-fh.patch](tarball://root/attachments/some-uuid/ticket8704/trac_8704-integer_range_print-fh.patch) by @hivert created at 2010-05-31 21:51:51",
     "created_at": "2010-05-31T21:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79400",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8704-integer_range_print-fh.patch](tarball://root/attachments/some-uuid/ticket8704/trac_8704-integer_range_print-fh.patch) by hivert created at 2010-05-31 21:51:51
+Attachment [trac_8704-integer_range_print-fh.patch](tarball://root/attachments/some-uuid/ticket8704/trac_8704-integer_range_print-fh.patch) by @hivert created at 2010-05-31 21:51:51
 
 
 
@@ -161,7 +161,7 @@ archive/issue_comments_079401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79401",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_079402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79402",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_079403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79403",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

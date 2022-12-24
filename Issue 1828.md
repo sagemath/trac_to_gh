@@ -14,7 +14,7 @@ archive/issues_001828.json:
     "title": "add 3d graphics to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1828",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1828
 archive/issue_comments_011576.json:
 ```json
 {
-    "body": "Changing assignee from tba to was.",
+    "body": "Changing assignee from tba to @williamstein.",
     "created_at": "2008-01-18T06:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1828#issuecomment-11576",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from tba to was.
+Changing assignee from tba to @williamstein.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_011577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1828#issuecomment-11577",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_011578.json:
 ```json
 {
-    "body": "Attachment [sage-trac-1828.patch](tarball://root/attachments/some-uuid/ticket1828/sage-trac-1828.patch) by was created at 2008-01-18 07:36:09",
+    "body": "Attachment [sage-trac-1828.patch](tarball://root/attachments/some-uuid/ticket1828/sage-trac-1828.patch) by @williamstein created at 2008-01-18 07:36:09",
     "created_at": "2008-01-18T07:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1828#issuecomment-11578",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-trac-1828.patch](tarball://root/attachments/some-uuid/ticket1828/sage-trac-1828.patch) by was created at 2008-01-18 07:36:09
+Attachment [sage-trac-1828.patch](tarball://root/attachments/some-uuid/ticket1828/sage-trac-1828.patch) by @williamstein created at 2008-01-18 07:36:09
 
 
 
@@ -86,16 +86,16 @@ Attachment [sage-trac-1828.patch](tarball://root/attachments/some-uuid/ticket182
 archive/issue_comments_011579.json:
 ```json
 {
-    "body": "Attachment [doc-trac-1828.patch](tarball://root/attachments/some-uuid/ticket1828/doc-trac-1828.patch) by was created at 2008-01-18 07:37:40\n\nYou must first apply #1825 before applying the doc part of this patch.  You should also apply *both* of the patches attached to this ticket.",
+    "body": "Attachment [doc-trac-1828.patch](tarball://root/attachments/some-uuid/ticket1828/doc-trac-1828.patch) by @williamstein created at 2008-01-18 07:37:40\n\nYou must first apply #1825 before applying the doc part of this patch.  You should also apply *both* of the patches attached to this ticket.",
     "created_at": "2008-01-18T07:37:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1828#issuecomment-11579",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doc-trac-1828.patch](tarball://root/attachments/some-uuid/ticket1828/doc-trac-1828.patch) by was created at 2008-01-18 07:37:40
+Attachment [doc-trac-1828.patch](tarball://root/attachments/some-uuid/ticket1828/doc-trac-1828.patch) by @williamstein created at 2008-01-18 07:37:40
 
 You must first apply #1825 before applying the doc part of this patch.  You should also apply *both* of the patches attached to this ticket.
 
@@ -111,7 +111,7 @@ archive/issue_comments_011580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1828#issuecomment-11580",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_011581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1828#issuecomment-11581",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

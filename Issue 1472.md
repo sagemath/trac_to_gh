@@ -3,7 +3,7 @@
 archive/issues_001472.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe optional gnuplotpy package doesn't work with numpy (requires Numeric). Luckily this is fixed by doing a global search an replace of Numeric with numpy. Having done that \n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/gnuplotpy-1.7.p3.spkg\n\nnow works. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1472\n\n",
+    "body": "Assignee: @williamstein\n\nThe optional gnuplotpy package doesn't work with numpy (requires Numeric). Luckily this is fixed by doing a global search an replace of Numeric with numpy. Having done that \n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/gnuplotpy-1.7.p3.spkg\n\nnow works. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1472\n\n",
     "created_at": "2007-12-12T10:00:35Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001472.json:
     "user": "jkantor"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The optional gnuplotpy package doesn't work with numpy (requires Numeric). Luckily this is fixed by doing a global search an replace of Numeric with numpy. Having done that 
 

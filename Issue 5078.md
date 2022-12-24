@@ -14,7 +14,7 @@ archive/issues_005078.json:
     "title": "bug in factoring out constant literal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5078",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5078
 archive/issue_comments_038669.json:
 ```json
 {
-    "body": "Attachment [5078-preparse-const.patch](tarball://root/attachments/some-uuid/ticket5078/5078-preparse-const.patch) by robertwb created at 2009-01-24 02:05:15",
+    "body": "Attachment [5078-preparse-const.patch](tarball://root/attachments/some-uuid/ticket5078/5078-preparse-const.patch) by @robertwb created at 2009-01-24 02:05:15",
     "created_at": "2009-01-24T02:05:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5078#issuecomment-38669",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5078-preparse-const.patch](tarball://root/attachments/some-uuid/ticket5078/5078-preparse-const.patch) by robertwb created at 2009-01-24 02:05:15
+Attachment [5078-preparse-const.patch](tarball://root/attachments/some-uuid/ticket5078/5078-preparse-const.patch) by @robertwb created at 2009-01-24 02:05:15
 
 
 

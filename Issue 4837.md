@@ -3,7 +3,7 @@
 archive/issues_004837.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: random element number field\n\nAt the moment, if K is a number field then K.random_element() uses a generic implementation that simply returns a random *integer* coerced into K.  It would be useful to have a real implementation that returns an actual random element of K.\n\nA simple idea would be to find a primitive element j that generates K as a field extension over QQ, and to return a random polynomial of degree at most [K:QQ].  This should be easy since random polynomials in one variable are already implemented.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4837\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: random element number field\n\nAt the moment, if K is a number field then K.random_element() uses a generic implementation that simply returns a random *integer* coerced into K.  It would be useful to have a real implementation that returns an actual random element of K.\n\nA simple idea would be to find a primitive element j that generates K as a field extension over QQ, and to return a random polynomial of degree at most [K:QQ].  This should be easy since random polynomials in one variable are already implemented.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4837\n\n",
     "created_at": "2008-12-20T15:37:20Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004837.json:
     "title": "implement random_element for number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4837",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: random element number field
 
@@ -42,7 +42,7 @@ archive/issue_comments_036668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4837#issuecomment-36668",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_036669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4837#issuecomment-36669",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_036670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4837#issuecomment-36670",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_036671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4837#issuecomment-36671",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_036672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4837#issuecomment-36672",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_036673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4837#issuecomment-36673",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -163,16 +163,16 @@ John
 archive/issue_comments_036674.json:
 ```json
 {
-    "body": "Attachment [trac_4837.patch](tarball://root/attachments/some-uuid/ticket4837/trac_4837.patch) by AlexGhitza created at 2008-12-23 11:12:15\n\ndepends on the patch at #4218",
+    "body": "Attachment [trac_4837.patch](tarball://root/attachments/some-uuid/ticket4837/trac_4837.patch) by @aghitza created at 2008-12-23 11:12:15\n\ndepends on the patch at #4218",
     "created_at": "2008-12-23T11:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4837#issuecomment-36674",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_4837.patch](tarball://root/attachments/some-uuid/ticket4837/trac_4837.patch) by AlexGhitza created at 2008-12-23 11:12:15
+Attachment [trac_4837.patch](tarball://root/attachments/some-uuid/ticket4837/trac_4837.patch) by @aghitza created at 2008-12-23 11:12:15
 
 depends on the patch at #4218
 
@@ -188,7 +188,7 @@ archive/issue_comments_036675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4837#issuecomment-36675",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_036676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4837#issuecomment-36676",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_036677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4837#issuecomment-36677",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_036678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4837#issuecomment-36678",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_036679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4837#issuecomment-36679",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

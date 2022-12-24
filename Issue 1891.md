@@ -3,7 +3,7 @@
 archive/issues_001891.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nTo fix trac #1083, I added a workaround due to a bug in Pari. The code is fixed in their svn version, but it's unlikely that we'll see a new release terribly soon. However, when one comes along, someone should go to sage/rings/number_field/number_field.py and undo the following patch:\n\n-        g = self.__rnf.rnfeltabstorel(pari(f))\n+        if self.__K.degree() == 1:\n+            g = -1*self.__rnf[0][0]*f[1] + f[0]\n+        else:\n+            g = self.__rnf.rnfeltabstorel(pari(f))\n\nOr, if whoever is updating the pari spkg sends me an email, I'll take care of this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1891\n\n",
+    "body": "Assignee: @craigcitro\n\nTo fix trac #1083, I added a workaround due to a bug in Pari. The code is fixed in their svn version, but it's unlikely that we'll see a new release terribly soon. However, when one comes along, someone should go to sage/rings/number_field/number_field.py and undo the following patch:\n\n-        g = self.__rnf.rnfeltabstorel(pari(f))\n+        if self.__K.degree() == 1:\n+            g = -1*self.__rnf[0][0]*f[1] + f[0]\n+        else:\n+            g = self.__rnf.rnfeltabstorel(pari(f))\n\nOr, if whoever is updating the pari spkg sends me an email, I'll take care of this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1891\n\n",
     "created_at": "2008-01-23T11:25:28Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001891.json:
     "title": "remove workaround when Pari > 2.3.3 is released",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1891",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 To fix trac #1083, I added a workaround due to a bug in Pari. The code is fixed in their svn version, but it's unlikely that we'll see a new release terribly soon. However, when one comes along, someone should go to sage/rings/number_field/number_field.py and undo the following patch:
 
@@ -45,7 +45,7 @@ archive/issue_comments_011976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1891#issuecomment-11976",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_011977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1891#issuecomment-11977",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_011978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1891#issuecomment-11978",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_011979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1891#issuecomment-11979",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_011980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1891#issuecomment-11980",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_011981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1891#issuecomment-11981",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

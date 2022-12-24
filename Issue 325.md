@@ -3,7 +3,7 @@
 archive/issues_000325.json:
 ```json
 {
-    "body": "Assignee: was\n\nCurrently, if you make an integer matrix:\n\n```\nA=Matrix(Integers(),3,3,[1,2,3,4,5,6,7,8,9])\n```\n\nthere seems no direct way to get an LLL reduced basis of its row or column space (whichever is appropriate for SAGE).\nThere is `ntl.mat_ZZ.LLL`, which may or may not be good. pari also has LLL implementations.\n\nIt's really worth it to have a good integer LLL easily accessible in SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/325\n\n",
+    "body": "Assignee: @williamstein\n\nCurrently, if you make an integer matrix:\n\n```\nA=Matrix(Integers(),3,3,[1,2,3,4,5,6,7,8,9])\n```\n\nthere seems no direct way to get an LLL reduced basis of its row or column space (whichever is appropriate for SAGE).\nThere is `ntl.mat_ZZ.LLL`, which may or may not be good. pari also has LLL implementations.\n\nIt's really worth it to have a good integer LLL easily accessible in SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/325\n\n",
     "created_at": "2007-03-21T00:54:16Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000325.json:
     "title": "LLL for integer matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/325",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Currently, if you make an integer matrix:
 
@@ -63,16 +63,16 @@ Michael
 archive/issue_comments_001539.json:
 ```json
 {
-    "body": "Attachment [lll1.patch](tarball://root/attachments/some-uuid/ticket325/lll1.patch) by was created at 2007-09-20 23:29:16",
+    "body": "Attachment [lll1.patch](tarball://root/attachments/some-uuid/ticket325/lll1.patch) by @williamstein created at 2007-09-20 23:29:16",
     "created_at": "2007-09-20T23:29:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/325#issuecomment-1539",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [lll1.patch](tarball://root/attachments/some-uuid/ticket325/lll1.patch) by was created at 2007-09-20 23:29:16
+Attachment [lll1.patch](tarball://root/attachments/some-uuid/ticket325/lll1.patch) by @williamstein created at 2007-09-20 23:29:16
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_001540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/325#issuecomment-1540",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

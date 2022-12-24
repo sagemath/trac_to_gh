@@ -3,7 +3,7 @@
 archive/issues_005932.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe docstring for graphs.RandomRegular says\n\n```\nReturns a random d-regular graph on n vertices, or returns False on\nfailure.\n```\n\n\nHowever, try calling it a few times with input 3,10 and with probability about 25% you'll get back an empty graph!:\n\n```\nsage: graphs.RandomRegular(3,10)\nGraph on 0 vertices\n\nsage: [len(graphs.RandomRegular(3,10)) for _ in range(1000)].count(0)\n232\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5932\n\n",
+    "body": "Assignee: @rlmill\n\nThe docstring for graphs.RandomRegular says\n\n```\nReturns a random d-regular graph on n vertices, or returns False on\nfailure.\n```\n\n\nHowever, try calling it a few times with input 3,10 and with probability about 25% you'll get back an empty graph!:\n\n```\nsage: graphs.RandomRegular(3,10)\nGraph on 0 vertices\n\nsage: [len(graphs.RandomRegular(3,10)) for _ in range(1000)].count(0)\n232\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5932\n\n",
     "created_at": "2009-04-29T05:21:23Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_005932.json:
     "title": "graphs.RandomRegular(3,10) often returns a graph on 0 vertices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5932",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The docstring for graphs.RandomRegular says
 
@@ -55,7 +55,7 @@ archive/issue_comments_046913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5932#issuecomment-46913",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -78,16 +78,16 @@ def random_regular_graph(d, n, seed=None):
 archive/issue_comments_046914.json:
 ```json
 {
-    "body": "Attachment [trac_5932.patch](tarball://root/attachments/some-uuid/ticket5932/trac_5932.patch) by rlm created at 2009-07-16 22:05:49",
+    "body": "Attachment [trac_5932.patch](tarball://root/attachments/some-uuid/ticket5932/trac_5932.patch) by @rlmill created at 2009-07-16 22:05:49",
     "created_at": "2009-07-16T22:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5932#issuecomment-46914",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5932.patch](tarball://root/attachments/some-uuid/ticket5932/trac_5932.patch) by rlm created at 2009-07-16 22:05:49
+Attachment [trac_5932.patch](tarball://root/attachments/some-uuid/ticket5932/trac_5932.patch) by @rlmill created at 2009-07-16 22:05:49
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_046915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5932#issuecomment-46915",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005171.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n1. The adjacency matrix of a graph constructed from an adjacency matrix should either be the same or one should get an error when constructing the graph:\n\n```\nsage: a = matrix(2,2,[1,0,0,1])\nsage: Graph(a)\nGraph on 2 vertices\nsage: Graph(a).adjacency_matrix()  # I think Graph(a) should work or given an error\n[0 0]\n[0 0]\nsage: Graph(a, loops=True).adjacency_matrix()\n[1 0]\n[0 1]\n```\n\n\nAnother example -- this is WRONG, since multiple loops should not be ignored.\n\n```\nsage: a = matrix(2,2,[2,0,0,1])\nsage: Graph(a,loops=True).adjacency_matrix()\n[1 0]\n[0 1]\n```\n\n\nWhy not just make a graph with loops and multiple edges (or at least weighted edges) if and only if the adjacency matrix has diagonal entries or non-1 entries?  I'm guessing the Graph constructor just grew from a time when these constructions weren't allowed or that networkx is just poorly designed.  Either way, this needs to be fixed for Sage. \n\n2. When the input matrix is non-square, the error message is wrong in multiple ways:\n\n```\nsage: a = matrix([1,0,0,1])\nsage: Graph(a)\nTraceback (most recent call last):\n...\nAttributeError: Incidence Matrix must have one 1 and one -1 per column.\n```\n\n\n* it should be \"adjacency matrix\". \n\n* The exception should be ValueError, not AttributeError\n\n* The Graph constructor doesn't take only 1's or -1's as input (but see above)\n\n* The Graph constructor is perfectly fine with having multiple 1's per column!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5171\n\n",
+    "body": "Assignee: @rlmill\n\n1. The adjacency matrix of a graph constructed from an adjacency matrix should either be the same or one should get an error when constructing the graph:\n\n```\nsage: a = matrix(2,2,[1,0,0,1])\nsage: Graph(a)\nGraph on 2 vertices\nsage: Graph(a).adjacency_matrix()  # I think Graph(a) should work or given an error\n[0 0]\n[0 0]\nsage: Graph(a, loops=True).adjacency_matrix()\n[1 0]\n[0 1]\n```\n\n\nAnother example -- this is WRONG, since multiple loops should not be ignored.\n\n```\nsage: a = matrix(2,2,[2,0,0,1])\nsage: Graph(a,loops=True).adjacency_matrix()\n[1 0]\n[0 1]\n```\n\n\nWhy not just make a graph with loops and multiple edges (or at least weighted edges) if and only if the adjacency matrix has diagonal entries or non-1 entries?  I'm guessing the Graph constructor just grew from a time when these constructions weren't allowed or that networkx is just poorly designed.  Either way, this needs to be fixed for Sage. \n\n2. When the input matrix is non-square, the error message is wrong in multiple ways:\n\n```\nsage: a = matrix([1,0,0,1])\nsage: Graph(a)\nTraceback (most recent call last):\n...\nAttributeError: Incidence Matrix must have one 1 and one -1 per column.\n```\n\n\n* it should be \"adjacency matrix\". \n\n* The exception should be ValueError, not AttributeError\n\n* The Graph constructor doesn't take only 1's or -1's as input (but see above)\n\n* The Graph constructor is perfectly fine with having multiple 1's per column!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5171\n\n",
     "created_at": "2009-02-04T02:53:08Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_005171.json:
     "title": "Bugs in the Graph constructor when input an adjacency matrix.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5171",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 1. The adjacency matrix of a graph constructed from an adjacency matrix should either be the same or one should get an error when constructing the graph:
 
@@ -83,7 +83,7 @@ archive/issue_comments_039609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5171#issuecomment-39609",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_039610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5171#issuecomment-39610",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_039611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5171#issuecomment-39611",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_039612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5171#issuecomment-39612",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_039613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5171#issuecomment-39613",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_039615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5171#issuecomment-39615",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_039617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5171#issuecomment-39617",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -270,16 +270,16 @@ Otherwise I'm good with this patch.
 archive/issue_comments_039618.json:
 ```json
 {
-    "body": "Attachment [trac_5171.patch](tarball://root/attachments/some-uuid/ticket5171/trac_5171.patch) by rlm created at 2009-02-17 23:28:40",
+    "body": "Attachment [trac_5171.patch](tarball://root/attachments/some-uuid/ticket5171/trac_5171.patch) by @rlmill created at 2009-02-17 23:28:40",
     "created_at": "2009-02-17T23:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5171#issuecomment-39618",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5171.patch](tarball://root/attachments/some-uuid/ticket5171/trac_5171.patch) by rlm created at 2009-02-17 23:28:40
+Attachment [trac_5171.patch](tarball://root/attachments/some-uuid/ticket5171/trac_5171.patch) by @rlmill created at 2009-02-17 23:28:40
 
 
 
@@ -293,7 +293,7 @@ archive/issue_comments_039619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5171#issuecomment-39619",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_039624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5171#issuecomment-39624",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

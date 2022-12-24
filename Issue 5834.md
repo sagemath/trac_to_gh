@@ -3,7 +3,7 @@
 archive/issues_005834.json:
 ```json
 {
-    "body": "Assignee: justin\n\nCC:  tornaria jonhanke\n\nKeywords: quadratic forms\n\nAs first raised in #5627, concerning quadratic_forms/extras.py (which contains various utilities written for use in various places in thw quadratic_forms module):\n\nI have added a patch after looking carefully at this, which does the following:\n\n1. I removed hilbert_symbol_rational(), making a trivial change to hilbert_symbol() so that it already works on rationals. I think this will useful outside the quadratic forms module.\n\n2. I moved `IsPadicSquare()` to a member function for rationals, so you now say r.is_padic_square(p) instead of `IsPadicSquare(r,p)`, while at the same time making the function simpler and cleaner. I think this will also be useful outside the quadratic forms module.\n\n3. I removed random_int_upto(n) since it does the same as ZZ.random_element(n).\n\n4. I simplified quadratic_nonresidue() (and changed its name to least_quadratic_nonresidue()) -- by putting in three simple tests for when the answer is 2, 3 or 5 the loop is avoided in 7/8 of the cases. I also changed the loop to \"for r in xsrange(7,p)\", in response to the discussion earlier on this ticket: adding the x gives an iterator instead of making the whole list and iterating through it (bad for large p!), and adding the s makes the iterator yield Sage integers (so it works for p too large to fit into a python int). I also added an is_prime() test on p, since otherwise if you give it a huge composite number there seemed to be a danger that it would run through a loop of length p before realising that the input was invalid. \n\n   5. I simplified sgn().\n\nAll tests in sage/quadratic_forms pass, as do those in arith.py and rational.py which were also touched.\n\nThe patch needs to be applied to (at least) 3.4.1.rc3 + the two patches at #5627.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5834\n\n",
+    "body": "Assignee: justin\n\nCC:  @tornaria @jonhanke\n\nKeywords: quadratic forms\n\nAs first raised in #5627, concerning quadratic_forms/extras.py (which contains various utilities written for use in various places in thw quadratic_forms module):\n\nI have added a patch after looking carefully at this, which does the following:\n\n1. I removed hilbert_symbol_rational(), making a trivial change to hilbert_symbol() so that it already works on rationals. I think this will useful outside the quadratic forms module.\n\n2. I moved `IsPadicSquare()` to a member function for rationals, so you now say r.is_padic_square(p) instead of `IsPadicSquare(r,p)`, while at the same time making the function simpler and cleaner. I think this will also be useful outside the quadratic forms module.\n\n3. I removed random_int_upto(n) since it does the same as ZZ.random_element(n).\n\n4. I simplified quadratic_nonresidue() (and changed its name to least_quadratic_nonresidue()) -- by putting in three simple tests for when the answer is 2, 3 or 5 the loop is avoided in 7/8 of the cases. I also changed the loop to \"for r in xsrange(7,p)\", in response to the discussion earlier on this ticket: adding the x gives an iterator instead of making the whole list and iterating through it (bad for large p!), and adding the s makes the iterator yield Sage integers (so it works for p too large to fit into a python int). I also added an is_prime() test on p, since otherwise if you give it a huge composite number there seemed to be a danger that it would run through a loop of length p before realising that the input was invalid. \n\n   5. I simplified sgn().\n\nAll tests in sage/quadratic_forms pass, as do those in arith.py and rational.py which were also touched.\n\nThe patch needs to be applied to (at least) 3.4.1.rc3 + the two patches at #5627.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5834\n\n",
     "created_at": "2009-04-20T10:04:00Z",
     "labels": [
         "quadratic forms",
@@ -14,12 +14,12 @@ archive/issues_005834.json:
     "title": "Improvements to quadratic_forms/extras/py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5834",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: justin
 
-CC:  tornaria jonhanke
+CC:  @tornaria @jonhanke
 
 Keywords: quadratic forms
 
@@ -83,7 +83,7 @@ archive/issue_comments_045849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5834#issuecomment-45849",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_045850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5834#issuecomment-45850",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -125,16 +125,16 @@ Replaces earlier patch, based on 3.4.2.alpha0
 archive/issue_comments_045851.json:
 ```json
 {
-    "body": "Attachment [trac_5834-rebase.patch](tarball://root/attachments/some-uuid/ticket5834/trac_5834-rebase.patch) by cremona created at 2009-04-27 09:28:58\n\ntrac_5834-rebase.patch is rebased to 3.4.2.alpha0.  (Totally trivial, only a couple of whitespace changes).",
+    "body": "Attachment [trac_5834-rebase.patch](tarball://root/attachments/some-uuid/ticket5834/trac_5834-rebase.patch) by @JohnCremona created at 2009-04-27 09:28:58\n\ntrac_5834-rebase.patch is rebased to 3.4.2.alpha0.  (Totally trivial, only a couple of whitespace changes).",
     "created_at": "2009-04-27T09:28:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5834#issuecomment-45851",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5834-rebase.patch](tarball://root/attachments/some-uuid/ticket5834/trac_5834-rebase.patch) by cremona created at 2009-04-27 09:28:58
+Attachment [trac_5834-rebase.patch](tarball://root/attachments/some-uuid/ticket5834/trac_5834-rebase.patch) by @JohnCremona created at 2009-04-27 09:28:58
 
 trac_5834-rebase.patch is rebased to 3.4.2.alpha0.  (Totally trivial, only a couple of whitespace changes).
 
@@ -150,7 +150,7 @@ archive/issue_comments_045852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5834#issuecomment-45852",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_045853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5834#issuecomment-45853",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -187,16 +187,16 @@ Very minor changed to the rebase patch above
 archive/issue_comments_045854.json:
 ```json
 {
-    "body": "Attachment [trac_5834-rebase_changes.patch](tarball://root/attachments/some-uuid/ticket5834/trac_5834-rebase_changes.patch) by cremona created at 2009-05-02 08:41:44\n\nThanks, Jon.  Your small extra patch looks ok to me but I did not try applying it.\n\nI had not noticed the other quadratic_nonresidue() routine in integer_mod_ring.py!\n\nOn your other question, it seems rather random.  I'm not sure what we can do about that.  In some other languages, if there was a function which applied to rationals and you give it an integer, the compiler would insert the necessary coercion.  But cannot do that (it would involve making integer a subclass of rational, which does not seem a good idea!)",
+    "body": "Attachment [trac_5834-rebase_changes.patch](tarball://root/attachments/some-uuid/ticket5834/trac_5834-rebase_changes.patch) by @JohnCremona created at 2009-05-02 08:41:44\n\nThanks, Jon.  Your small extra patch looks ok to me but I did not try applying it.\n\nI had not noticed the other quadratic_nonresidue() routine in integer_mod_ring.py!\n\nOn your other question, it seems rather random.  I'm not sure what we can do about that.  In some other languages, if there was a function which applied to rationals and you give it an integer, the compiler would insert the necessary coercion.  But cannot do that (it would involve making integer a subclass of rational, which does not seem a good idea!)",
     "created_at": "2009-05-02T08:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5834#issuecomment-45854",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5834-rebase_changes.patch](tarball://root/attachments/some-uuid/ticket5834/trac_5834-rebase_changes.patch) by cremona created at 2009-05-02 08:41:44
+Attachment [trac_5834-rebase_changes.patch](tarball://root/attachments/some-uuid/ticket5834/trac_5834-rebase_changes.patch) by @JohnCremona created at 2009-05-02 08:41:44
 
 Thanks, Jon.  Your small extra patch looks ok to me but I did not try applying it.
 

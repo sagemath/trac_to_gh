@@ -3,7 +3,7 @@
 archive/issues_002265.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n```\nsage: C = graphs.CubeGraph(4)\nsage: C.shortest_paths('0000')\n\n{'0000': ['0000'],\n...\n '1111': ['0000', '0100', '0110', '1110', '1111']}\nsage: C.shortest_path_all_pairs()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/rlmill/sage/<ipython console> in <module>()\n\n/Users/rlmill/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in shortest_path_all_pairs(self)\n   2245             for u in verts:\n   2246                 for v in verts:\n-> 2247                     if dist[u][v] > dist[u][w] + dist[w][v]:\n   2248                         dist[u][v] = dist[u][w] + dist[w][v]\n   2249                         pred[u][v] = pred[w][v]\n\n<type 'exceptions.TypeError'>: unsupported operand type(s) for +: 'int' and 'NoneType'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2265\n\n",
+    "body": "Assignee: @rlmill\n\n\n```\nsage: C = graphs.CubeGraph(4)\nsage: C.shortest_paths('0000')\n\n{'0000': ['0000'],\n...\n '1111': ['0000', '0100', '0110', '1110', '1111']}\nsage: C.shortest_path_all_pairs()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/rlmill/sage/<ipython console> in <module>()\n\n/Users/rlmill/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in shortest_path_all_pairs(self)\n   2245             for u in verts:\n   2246                 for v in verts:\n-> 2247                     if dist[u][v] > dist[u][w] + dist[w][v]:\n   2248                         dist[u][v] = dist[u][w] + dist[w][v]\n   2249                         pred[u][v] = pred[w][v]\n\n<type 'exceptions.TypeError'>: unsupported operand type(s) for +: 'int' and 'NoneType'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2265\n\n",
     "created_at": "2008-02-22T19:29:13Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002265.json:
     "title": "fix shortest_path_all_pairs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2265",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 ```
@@ -60,7 +60,7 @@ archive/issue_comments_015004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2265#issuecomment-15004",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_015005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2265#issuecomment-15005",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_015006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2265#issuecomment-15006",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -135,16 +135,16 @@ I added a default_weight option which will be applied when an edge doesn't have 
 archive/issue_comments_015007.json:
 ```json
 {
-    "body": "Attachment [shortest-paths.patch](tarball://root/attachments/some-uuid/ticket2265/shortest-paths.patch) by jason created at 2008-02-22 20:21:42\n\nI also added a by_weight option as vgermrk suggested to be consistent with the other shortest path functions.",
+    "body": "Attachment [shortest-paths.patch](tarball://root/attachments/some-uuid/ticket2265/shortest-paths.patch) by @jasongrout created at 2008-02-22 20:21:42\n\nI also added a by_weight option as vgermrk suggested to be consistent with the other shortest path functions.",
     "created_at": "2008-02-22T20:21:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2265#issuecomment-15007",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [shortest-paths.patch](tarball://root/attachments/some-uuid/ticket2265/shortest-paths.patch) by jason created at 2008-02-22 20:21:42
+Attachment [shortest-paths.patch](tarball://root/attachments/some-uuid/ticket2265/shortest-paths.patch) by @jasongrout created at 2008-02-22 20:21:42
 
 I also added a by_weight option as vgermrk suggested to be consistent with the other shortest path functions.
 
@@ -160,7 +160,7 @@ archive/issue_comments_015008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2265#issuecomment-15008",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

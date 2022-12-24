@@ -3,7 +3,7 @@
 archive/issues_002648.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nThe octave.version() command is returning '.1.73' when it should\nalmost certainly be returning '2.1.73'\n\nThis has been verified on three systems:\n-- Sage 2.10.1 running in the Windows VM\n-- Sage 2.10.3 running in the Windows VM\n-- sagenb.org\n\nIf this is in fact a bug, I wonder if it is a bug in this command\nalone or a more general bug having to do with returning strings from\nOctave\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.1, Release Date: 2008-02-02                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: octave.min([1,2,3])\n 1\nsage: octave.version()\n'.1.73'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2648\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nThe octave.version() command is returning '.1.73' when it should\nalmost certainly be returning '2.1.73'\n\nThis has been verified on three systems:\n-- Sage 2.10.1 running in the Windows VM\n-- Sage 2.10.3 running in the Windows VM\n-- sagenb.org\n\nIf this is in fact a bug, I wonder if it is a bug in this command\nalone or a more general bug having to do with returning strings from\nOctave\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.1, Release Date: 2008-02-02                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: octave.min([1,2,3])\n 1\nsage: octave.version()\n'.1.73'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2648\n\n",
     "created_at": "2008-03-22T18:10:02Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002648.json:
     "title": "bug in octave version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2648",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2648
 archive/issue_comments_018205.json:
 ```json
 {
-    "body": "Attachment [sage-2648-octave.patch](tarball://root/attachments/some-uuid/ticket2648/sage-2648-octave.patch) by was created at 2008-03-22 18:12:52",
+    "body": "Attachment [sage-2648-octave.patch](tarball://root/attachments/some-uuid/ticket2648/sage-2648-octave.patch) by @williamstein created at 2008-03-22 18:12:52",
     "created_at": "2008-03-22T18:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2648#issuecomment-18205",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2648-octave.patch](tarball://root/attachments/some-uuid/ticket2648/sage-2648-octave.patch) by was created at 2008-03-22 18:12:52
+Attachment [sage-2648-octave.patch](tarball://root/attachments/some-uuid/ticket2648/sage-2648-octave.patch) by @williamstein created at 2008-03-22 18:12:52
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_018206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2648#issuecomment-18206",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

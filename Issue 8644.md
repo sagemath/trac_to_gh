@@ -14,7 +14,7 @@ archive/issues_008644.json:
     "title": "update pynac to 0.1.12",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8644",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: tbd
@@ -53,7 +53,7 @@ archive/issue_comments_078399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8644#issuecomment-78399",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_078400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8644#issuecomment-78400",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_078401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8644#issuecomment-78401",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_078402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8644#issuecomment-78402",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_078403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8644#issuecomment-78403",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

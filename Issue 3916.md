@@ -14,7 +14,7 @@ archive/issues_003916.json:
     "title": "Make a %wiki cell mode for the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3916",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -51,7 +51,7 @@ archive/issue_comments_028014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3916#issuecomment-28014",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_028015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3916#issuecomment-28015",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -82,16 +82,16 @@ Other options include Markdown ([http://www.freewisdom.org/projects/python-markd
 archive/issue_comments_028016.json:
 ```json
 {
-    "body": "Attachment [trac3916-creole.patch](tarball://root/attachments/some-uuid/ticket3916/trac3916-creole.patch) by AlexGhitza created at 2009-01-23 02:51:10",
+    "body": "Attachment [trac3916-creole.patch](tarball://root/attachments/some-uuid/ticket3916/trac3916-creole.patch) by @aghitza created at 2009-01-23 02:51:10",
     "created_at": "2009-01-23T02:51:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3916#issuecomment-28016",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac3916-creole.patch](tarball://root/attachments/some-uuid/ticket3916/trac3916-creole.patch) by AlexGhitza created at 2009-01-23 02:51:10
+Attachment [trac3916-creole.patch](tarball://root/attachments/some-uuid/ticket3916/trac3916-creole.patch) by @aghitza created at 2009-01-23 02:51:10
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_028017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3916#issuecomment-28017",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_028018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3916#issuecomment-28018",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_028019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3916#issuecomment-28019",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_028020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3916#issuecomment-28020",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_028021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3916#issuecomment-28021",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

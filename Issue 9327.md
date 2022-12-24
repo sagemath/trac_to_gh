@@ -3,7 +3,7 @@
 archive/issues_009327.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  robertwb jason\n\nKeywords: simple twist\n\nI found (and fixed) the following bugs in the file local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/simple/twist.py:\n\n* When trying to login via the Simple Sage Server API using the sagenb.notebook.notebook_object module the following error came up:\n....\n/sagenb-0.8-py2.6.egg/sagenb/simple/twist.py, line 206, in render\n   U = notebook_twist.notebook.user(username)\nexceptions.AttributeError: 'NoneType' object has no attribute 'user'\n--------------------------------------------------------------------\nThe problem is: The sagenb twist.py module still imports the (old and unmaintained) sage.server modules instead of the new sagenb files. It is quite logical that there is a NoneType error because there is no server started that relies on the (imported) old files.\nIf the two imports from sage.server in twist.py are replaced with the sagenb modules at least the login via Simple Sage Server API works quite fine.\n\n* When login works there is another bug: On line 286 in the twist.py file where it says \"return http.Response(...\" the stream variable has to be converted into a string (twisted somehow seems to have problems with unicode characters because IByteStream(stream) which is called in http.Response() fails with a TypeError if stream is of type 'unicode').\n\nIssue created by migration from https://trac.sagemath.org/ticket/9327\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @robertwb @jasongrout\n\nKeywords: simple twist\n\nI found (and fixed) the following bugs in the file local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/simple/twist.py:\n\n* When trying to login via the Simple Sage Server API using the sagenb.notebook.notebook_object module the following error came up:\n....\n/sagenb-0.8-py2.6.egg/sagenb/simple/twist.py, line 206, in render\n   U = notebook_twist.notebook.user(username)\nexceptions.AttributeError: 'NoneType' object has no attribute 'user'\n--------------------------------------------------------------------\nThe problem is: The sagenb twist.py module still imports the (old and unmaintained) sage.server modules instead of the new sagenb files. It is quite logical that there is a NoneType error because there is no server started that relies on the (imported) old files.\nIf the two imports from sage.server in twist.py are replaced with the sagenb modules at least the login via Simple Sage Server API works quite fine.\n\n* When login works there is another bug: On line 286 in the twist.py file where it says \"return http.Response(...\" the stream variable has to be converted into a string (twisted somehow seems to have problems with unicode characters because IByteStream(stream) which is called in http.Response() fails with a TypeError if stream is of type 'unicode').\n\nIssue created by migration from https://trac.sagemath.org/ticket/9327\n\n",
     "created_at": "2010-06-24T12:22:29Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_009327.json:
 ```
 Assignee: jason, was
 
-CC:  robertwb jason
+CC:  @robertwb @jasongrout
 
 Keywords: simple twist
 
@@ -52,7 +52,7 @@ archive/issue_comments_087980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9327#issuecomment-87980",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_087984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9327#issuecomment-87984",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -141,16 +141,16 @@ Changing status from new to needs_review.
 archive/issue_comments_087985.json:
 ```json
 {
-    "body": "Attachment [twist.py](tarball://root/attachments/some-uuid/ticket9327/twist.py) by rlm created at 2010-07-06 11:53:53",
+    "body": "Attachment [twist.py](tarball://root/attachments/some-uuid/ticket9327/twist.py) by @rlmill created at 2010-07-06 11:53:53",
     "created_at": "2010-07-06T11:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9327#issuecomment-87985",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [twist.py](tarball://root/attachments/some-uuid/ticket9327/twist.py) by rlm created at 2010-07-06 11:53:53
+Attachment [twist.py](tarball://root/attachments/some-uuid/ticket9327/twist.py) by @rlmill created at 2010-07-06 11:53:53
 
 
 
@@ -164,7 +164,7 @@ archive/issue_comments_087986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9327#issuecomment-87986",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_087987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9327#issuecomment-87987",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_087988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9327#issuecomment-87988",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_087989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9327#issuecomment-87989",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

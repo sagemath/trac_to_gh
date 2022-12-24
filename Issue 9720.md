@@ -3,7 +3,7 @@
 archive/issues_009720.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  rbeezer jason\n\nAdds two routines.  One creates random matrices in echelon form to be used in other routines to be added later.  The other creates random matrices whose echelon form has desirable properties, with the help of the first routine.  These routines are designed as educational tools, generating exam and homework problems, and problem generating interacts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9720\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @rbeezer @jasongrout\n\nAdds two routines.  One creates random matrices in echelon form to be used in other routines to be added later.  The other creates random matrices whose echelon form has desirable properties, with the help of the first routine.  These routines are designed as educational tools, generating exam and homework problems, and problem generating interacts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9720\n\n",
     "created_at": "2010-08-10T18:51:32Z",
     "labels": [
         "linear algebra",
@@ -19,7 +19,7 @@ archive/issues_009720.json:
 ```
 Assignee: jason, was
 
-CC:  rbeezer jason
+CC:  @rbeezer @jasongrout
 
 Adds two routines.  One creates random matrices in echelon form to be used in other routines to be added later.  The other creates random matrices whose echelon form has desirable properties, with the help of the first routine.  These routines are designed as educational tools, generating exam and homework problems, and problem generating interacts.
 
@@ -75,7 +75,7 @@ archive/issue_comments_094861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94861",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_094864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94864",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_094865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94865",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_094866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94866",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_094867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94867",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_094868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94868",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_094871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94871",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_094872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94872",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_094873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94873",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_094874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94874",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_094876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94876",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_094877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94877",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_094878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94878",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_094879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94879",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -536,7 +536,7 @@ archive/issue_comments_094880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94880",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -554,7 +554,7 @@ archive/issue_comments_094881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94881",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -586,7 +586,7 @@ archive/issue_comments_094882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94882",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_094883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94883",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_094884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94884",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -669,7 +669,7 @@ archive/issue_comments_094885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94885",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -684,16 +684,16 @@ I'm a slight -1 on making random_matrix take a ton of options, a lot of which ma
 archive/issue_comments_094886.json:
 ```json
 {
-    "body": "Attachment [trac_9720-random-echelonizable-matrices-v4.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices-v4.patch) by rbeezer created at 2010-08-25 21:33:27\n\nSame as v3, but removed routines from global namespace",
+    "body": "Attachment [trac_9720-random-echelonizable-matrices-v4.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices-v4.patch) by @rbeezer created at 2010-08-25 21:33:27\n\nSame as v3, but removed routines from global namespace",
     "created_at": "2010-08-25T21:33:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94886",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9720-random-echelonizable-matrices-v4.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices-v4.patch) by rbeezer created at 2010-08-25 21:33:27
+Attachment [trac_9720-random-echelonizable-matrices-v4.patch](tarball://root/attachments/some-uuid/ticket9720/trac_9720-random-echelonizable-matrices-v4.patch) by @rbeezer created at 2010-08-25 21:33:27
 
 Same as v3, but removed routines from global namespace
 
@@ -709,7 +709,7 @@ archive/issue_comments_094887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94887",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -733,7 +733,7 @@ archive/issue_comments_094888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94888",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -803,7 +803,7 @@ archive/issue_comments_094889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94889",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -821,7 +821,7 @@ archive/issue_comments_094890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94890",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -842,7 +842,7 @@ archive/issue_comments_094891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94891",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -860,7 +860,7 @@ archive/issue_comments_094892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94892",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -884,7 +884,7 @@ archive/issue_comments_094893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94893",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -913,7 +913,7 @@ archive/issue_comments_094894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94894",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -935,7 +935,7 @@ archive/issue_comments_094895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94895",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -974,7 +974,7 @@ archive/issue_comments_094897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9720#issuecomment-94897",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

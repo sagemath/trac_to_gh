@@ -3,7 +3,7 @@
 archive/issues_007367.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  timdumol\n\nCurrently, the [reference manual's](http://www.sagemath.org/doc/reference/index.html) [Notebook section](http://www.sagemath.org/doc/reference/notebook.html) documents the old Sage notebook.\n\nWe should update this section with docstrings from the recently separated [SageNB](http://nb.sagemath.org/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7367\n\n",
+    "body": "Assignee: tbd\n\nCC:  @TimDumol\n\nCurrently, the [reference manual's](http://www.sagemath.org/doc/reference/index.html) [Notebook section](http://www.sagemath.org/doc/reference/notebook.html) documents the old Sage notebook.\n\nWe should update this section with docstrings from the recently separated [SageNB](http://nb.sagemath.org/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7367\n\n",
     "created_at": "2009-11-01T13:35:58Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_007367.json:
     "title": "Add SageNB modules to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7367",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
 
-CC:  timdumol
+CC:  @TimDumol
 
 Currently, the [reference manual's](http://www.sagemath.org/doc/reference/index.html) [Notebook section](http://www.sagemath.org/doc/reference/notebook.html) documents the old Sage notebook.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7367
 archive/issue_comments_061737.json:
 ```json
 {
-    "body": "Attachment [trac_7367-sagenb_manual.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual.patch) by mpatel created at 2009-11-01 14:01:34\n\nAdd SageNB modules to reference manual.  Apply to sage repo.",
+    "body": "Attachment [trac_7367-sagenb_manual.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual.patch) by @qed777 created at 2009-11-01 14:01:34\n\nAdd SageNB modules to reference manual.  Apply to sage repo.",
     "created_at": "2009-11-01T14:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61737",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7367-sagenb_manual.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual.patch) by mpatel created at 2009-11-01 14:01:34
+Attachment [trac_7367-sagenb_manual.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual.patch) by @qed777 created at 2009-11-01 14:01:34
 
 Add SageNB modules to reference manual.  Apply to sage repo.
 
@@ -61,7 +61,7 @@ archive/issue_comments_061738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61738",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_061739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61739",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_061740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61740",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_061741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61741",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_061742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61742",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_061743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61743",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -175,16 +175,16 @@ archive/issue_comments_061743.json:
 archive/issue_comments_061744.json:
 ```json
 {
-    "body": "Attachment [trac_7367-sagenb_manual_v2.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual_v2.patch) by mpatel created at 2009-11-04 04:46:02\n\nLess confusing subheading.  Really skip interface modules.  Apply only this patch to sage repo.",
+    "body": "Attachment [trac_7367-sagenb_manual_v2.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual_v2.patch) by @qed777 created at 2009-11-04 04:46:02\n\nLess confusing subheading.  Really skip interface modules.  Apply only this patch to sage repo.",
     "created_at": "2009-11-04T04:46:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61744",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7367-sagenb_manual_v2.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual_v2.patch) by mpatel created at 2009-11-04 04:46:02
+Attachment [trac_7367-sagenb_manual_v2.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual_v2.patch) by @qed777 created at 2009-11-04 04:46:02
 
 Less confusing subheading.  Really skip interface modules.  Apply only this patch to sage repo.
 
@@ -200,7 +200,7 @@ archive/issue_comments_061745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61745",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_061746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61746",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_061747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61747",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_061748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61748",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

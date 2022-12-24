@@ -3,7 +3,7 @@
 archive/issues_008553.json:
 ```json
 {
-    "body": "Assignee: leif\n\nCC:  schilly mhansen burcin jason kcrisman\n\nKeywords: solve, solution_dict\n\nsolve() raises an index error on empty solutions if solution dictionary was requested; returns empty list instead of empty dictionary in other cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8553\n\n",
+    "body": "Assignee: @nexttime\n\nCC:  @haraldschilly @mwhansen @burcin @jasongrout @kcrisman\n\nKeywords: solve, solution_dict\n\nsolve() raises an index error on empty solutions if solution dictionary was requested; returns empty list instead of empty dictionary in other cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8553\n\n",
     "created_at": "2010-03-17T15:39:40Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_008553.json:
     "title": "Minor bugs in solve() if dictionary result requested",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8553",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
-Assignee: leif
+Assignee: @nexttime
 
-CC:  schilly mhansen burcin jason kcrisman
+CC:  @haraldschilly @mwhansen @burcin @jasongrout @kcrisman
 
 Keywords: solve, solution_dict
 
@@ -41,7 +41,7 @@ archive/issue_comments_077355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77355",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_077356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77356",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -87,16 +87,16 @@ Changing status from new to needs_review.
 archive/issue_comments_077357.json:
 ```json
 {
-    "body": "Attachment [trac_8553_solve_dictionary_result_fix.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_dictionary_result_fix.patch) by leif created at 2010-03-17 16:39:28",
+    "body": "Attachment [trac_8553_solve_dictionary_result_fix.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_dictionary_result_fix.patch) by @nexttime created at 2010-03-17 16:39:28",
     "created_at": "2010-03-17T16:39:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77357",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_8553_solve_dictionary_result_fix.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_dictionary_result_fix.patch) by leif created at 2010-03-17 16:39:28
+Attachment [trac_8553_solve_dictionary_result_fix.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_dictionary_result_fix.patch) by @nexttime created at 2010-03-17 16:39:28
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_077358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77358",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_077359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77359",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_077360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77360",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_077361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77361",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_077362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77362",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_077363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77363",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_077364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77364",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_077365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77365",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_077366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77366",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_077367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77367",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_077368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77368",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_077369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77369",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_077370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77370",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_077371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77371",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -466,16 +466,16 @@ I still get the empty **list** for the code above with 4.3.4.rc0 (just built on 
 archive/issue_comments_077372.json:
 ```json
 {
-    "body": "Attachment [trac_8553_solve_dictionary_result_fix-variant2.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_dictionary_result_fix-variant2.patch) by leif created at 2010-03-18 00:35:59\n\nApply **either** the first **or** the second patch, **not both**.",
+    "body": "Attachment [trac_8553_solve_dictionary_result_fix-variant2.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_dictionary_result_fix-variant2.patch) by @nexttime created at 2010-03-18 00:35:59\n\nApply **either** the first **or** the second patch, **not both**.",
     "created_at": "2010-03-18T00:35:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77372",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_8553_solve_dictionary_result_fix-variant2.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_dictionary_result_fix-variant2.patch) by leif created at 2010-03-18 00:35:59
+Attachment [trac_8553_solve_dictionary_result_fix-variant2.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_dictionary_result_fix-variant2.patch) by @nexttime created at 2010-03-18 00:35:59
 
 Apply **either** the first **or** the second patch, **not both**.
 
@@ -491,7 +491,7 @@ archive/issue_comments_077373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77373",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_077374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77374",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_077375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77375",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_077376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77376",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -582,7 +582,7 @@ archive/issue_comments_077377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77377",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -608,7 +608,7 @@ archive/issue_comments_077378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77378",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -628,16 +628,16 @@ Can you provide a patch that fixes the `IndexError` problem? If we get this revi
 archive/issue_comments_077379.json:
 ```json
 {
-    "body": "Attachment [trac_8553_solve_fix_IndexError.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.patch) by leif created at 2010-04-06 04:43:46",
+    "body": "Attachment [trac_8553_solve_fix_IndexError.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.patch) by @nexttime created at 2010-04-06 04:43:46",
     "created_at": "2010-04-06T04:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77379",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_8553_solve_fix_IndexError.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.patch) by leif created at 2010-04-06 04:43:46
+Attachment [trac_8553_solve_fix_IndexError.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.patch) by @nexttime created at 2010-04-06 04:43:46
 
 
 
@@ -651,7 +651,7 @@ archive/issue_comments_077380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77380",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -674,7 +674,7 @@ archive/issue_comments_077381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77381",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -687,16 +687,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_077382.json:
 ```json
 {
-    "body": "Attachment [trac_8553_solve_fix_IndexError.2.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.2.patch) by timdumol created at 2010-04-18 07:56:00\n\nRebase on sage-4.4.alpha0.",
+    "body": "Attachment [trac_8553_solve_fix_IndexError.2.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.2.patch) by @TimDumol created at 2010-04-18 07:56:00\n\nRebase on sage-4.4.alpha0.",
     "created_at": "2010-04-18T07:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77382",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_8553_solve_fix_IndexError.2.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.2.patch) by timdumol created at 2010-04-18 07:56:00
+Attachment [trac_8553_solve_fix_IndexError.2.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.2.patch) by @TimDumol created at 2010-04-18 07:56:00
 
 Rebase on sage-4.4.alpha0.
 
@@ -712,7 +712,7 @@ archive/issue_comments_077383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77383",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -725,16 +725,16 @@ Works perfectly after this rebase. Positive review, but someone has to review th
 archive/issue_comments_077384.json:
 ```json
 {
-    "body": "Attachment [trac_8553_solve_fix_IndexError.3.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.3.patch) by burcin created at 2010-05-05 01:23:35\n\nrevised version of Leif's patch",
+    "body": "Attachment [trac_8553_solve_fix_IndexError.3.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.3.patch) by @burcin created at 2010-05-05 01:23:35\n\nrevised version of Leif's patch",
     "created_at": "2010-05-05T01:23:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77384",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8553_solve_fix_IndexError.3.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.3.patch) by burcin created at 2010-05-05 01:23:35
+Attachment [trac_8553_solve_fix_IndexError.3.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553_solve_fix_IndexError.3.patch) by @burcin created at 2010-05-05 01:23:35
 
 revised version of Leif's patch
 
@@ -750,7 +750,7 @@ archive/issue_comments_077385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77385",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -763,16 +763,16 @@ reviewer's patch
 archive/issue_comments_077386.json:
 ```json
 {
-    "body": "Attachment [trac_8553-review.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553-review.patch) by burcin created at 2010-05-05 01:44:30\n\nThe doctests for using values that are taken to be True in Leif's patch added a few extra seconds to the time to test `sage/symbolic/relation.py`. I uploaded a revised version of Leif's patch, attachment:trac_8553_solve_fix_IndexError.3.patch, which cuts down on these examples.\n\nattachment:trac_8553-review.patch adds a new test condition to check if the first argument is a list, after the statement that handles a single symbolic expression.\n\nCan someone review my patch?",
+    "body": "Attachment [trac_8553-review.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553-review.patch) by @burcin created at 2010-05-05 01:44:30\n\nThe doctests for using values that are taken to be True in Leif's patch added a few extra seconds to the time to test `sage/symbolic/relation.py`. I uploaded a revised version of Leif's patch, attachment:trac_8553_solve_fix_IndexError.3.patch, which cuts down on these examples.\n\nattachment:trac_8553-review.patch adds a new test condition to check if the first argument is a list, after the statement that handles a single symbolic expression.\n\nCan someone review my patch?",
     "created_at": "2010-05-05T01:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77386",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8553-review.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553-review.patch) by burcin created at 2010-05-05 01:44:30
+Attachment [trac_8553-review.patch](tarball://root/attachments/some-uuid/ticket8553/trac_8553-review.patch) by @burcin created at 2010-05-05 01:44:30
 
 The doctests for using values that are taken to be True in Leif's patch added a few extra seconds to the time to test `sage/symbolic/relation.py`. I uploaded a revised version of Leif's patch, attachment:trac_8553_solve_fix_IndexError.3.patch, which cuts down on these examples.
 
@@ -792,7 +792,7 @@ archive/issue_comments_077387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77387",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_077388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77388",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -843,7 +843,7 @@ archive/issue_comments_077389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77389",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -861,7 +861,7 @@ archive/issue_comments_077390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77390",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -879,7 +879,7 @@ archive/issue_comments_077391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77391",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -902,7 +902,7 @@ archive/issue_comments_077392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77392",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -920,7 +920,7 @@ archive/issue_comments_077393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77393",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -938,7 +938,7 @@ archive/issue_comments_077394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77394",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -993,7 +993,7 @@ archive/issue_comments_077395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77395",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1011,7 +1011,7 @@ archive/issue_comments_077396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8553#issuecomment-77396",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

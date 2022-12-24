@@ -3,7 +3,7 @@
 archive/issues_004041.json:
 ```json
 {
-    "body": "Assignee: was\n\nImplementing non-monic number fields would be hard, but not if the   \nleading coefficient is a unit :)\n\n```\nsage: NumberField(x^2 - 2, 'a') \nNumber Field in a with defining polynomial x^2 - 2 \nsage: NumberField(-x^2 - 2, 'a') \n--------------------------------------------------------------------------- \nNotImplementedError                       Traceback (most recent call   \nlast) \n/Users/ncalexan/Devel/Squeak-3.10-1/platforms/unix/bld/<ipython   \nconsole> in <module>() \n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/ \nrings/number_field/number_field.py in NumberField(polynomial, name,   \ncheck, names, cache) \n     288 \n     289     if polynomial.degree() == 2: \n--> 290         K = NumberField_quadratic(polynomial, name, check) \n     291     else: \n     292         K = NumberField_absolute(polynomial, name, None, check) \n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/ \nrings/number_field/number_field.py in __init__(self, polynomial, name,   \ncheck) \n    6001             Number Field in a with defining polynomial x^2 - 4 \n    6002         \"\"\" \n-> 6003         NumberField_absolute.__init__(self, polynomial,   \nname=name, check=check) \n    6004         self._element_class =   \nnumber_field_element_quadratic.NumberFieldElement_quadratic \n    6005         c, b, a = [rational.Rational(t) for t in   \nself.defining_polynomial().list()] \n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/ \nrings/number_field/number_field.py in __init__(self, polynomial, name,   \nlatex_name, check) \n    3272 \n    3273     def __init__(self, polynomial, name, latex_name=None,   \ncheck=True): \n-> 3274         NumberField_generic.__init__(self, polynomial, name,   \nlatex_name, check) \n    3275         self._element_class =   \nnumber_field_element.NumberFieldElement_absolute \n    3276 \n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/ \nrings/number_field/number_field.py in __init__(self, polynomial, name,   \nlatex_name, check) \n     668                 raise TypeError, \"polynomial must be defined   \nover rational field\" \n     669             if not polynomial.is_monic(): \n--> 670                 raise NotImplementedError, \"number fields for   \nnon-monic polynomials not yet implemented.\" \n     671             if not polynomial.is_irreducible(): \n     672                 raise ValueError, \"defining polynomial (%s)   \nmust be irreducible\"%polynomial \nNotImplementedError: number fields for non-monic polynomials not yet   \nimplemented. \n```\n \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4041\n\n",
+    "body": "Assignee: @williamstein\n\nImplementing non-monic number fields would be hard, but not if the   \nleading coefficient is a unit :)\n\n```\nsage: NumberField(x^2 - 2, 'a') \nNumber Field in a with defining polynomial x^2 - 2 \nsage: NumberField(-x^2 - 2, 'a') \n--------------------------------------------------------------------------- \nNotImplementedError                       Traceback (most recent call   \nlast) \n/Users/ncalexan/Devel/Squeak-3.10-1/platforms/unix/bld/<ipython   \nconsole> in <module>() \n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/ \nrings/number_field/number_field.py in NumberField(polynomial, name,   \ncheck, names, cache) \n     288 \n     289     if polynomial.degree() == 2: \n--> 290         K = NumberField_quadratic(polynomial, name, check) \n     291     else: \n     292         K = NumberField_absolute(polynomial, name, None, check) \n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/ \nrings/number_field/number_field.py in __init__(self, polynomial, name,   \ncheck) \n    6001             Number Field in a with defining polynomial x^2 - 4 \n    6002         \"\"\" \n-> 6003         NumberField_absolute.__init__(self, polynomial,   \nname=name, check=check) \n    6004         self._element_class =   \nnumber_field_element_quadratic.NumberFieldElement_quadratic \n    6005         c, b, a = [rational.Rational(t) for t in   \nself.defining_polynomial().list()] \n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/ \nrings/number_field/number_field.py in __init__(self, polynomial, name,   \nlatex_name, check) \n    3272 \n    3273     def __init__(self, polynomial, name, latex_name=None,   \ncheck=True): \n-> 3274         NumberField_generic.__init__(self, polynomial, name,   \nlatex_name, check) \n    3275         self._element_class =   \nnumber_field_element.NumberFieldElement_absolute \n    3276 \n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/ \nrings/number_field/number_field.py in __init__(self, polynomial, name,   \nlatex_name, check) \n     668                 raise TypeError, \"polynomial must be defined   \nover rational field\" \n     669             if not polynomial.is_monic(): \n--> 670                 raise NotImplementedError, \"number fields for   \nnon-monic polynomials not yet implemented.\" \n     671             if not polynomial.is_irreducible(): \n     672                 raise ValueError, \"defining polynomial (%s)   \nmust be irreducible\"%polynomial \nNotImplementedError: number fields for non-monic polynomials not yet   \nimplemented. \n```\n \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4041\n\n",
     "created_at": "2008-09-02T20:40:36Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_004041.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Implementing non-monic number fields would be hard, but not if the   
 leading coefficient is a unit :)
@@ -94,7 +94,7 @@ archive/issue_comments_029145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4041#issuecomment-29145",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_029146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4041#issuecomment-29146",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

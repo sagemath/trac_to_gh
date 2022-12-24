@@ -3,7 +3,7 @@
 archive/issues_002621.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nWhen parallel doctesting a clean, i.e. never before doctested, tree there are concurrency issues when creating the .doctest directory:\n\n```\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/bin/sage-doctest\", line 427, in <module>\n    test_file(argv[1])\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/bin/sage-doctest\", line 321, in test_file\n    os.makedirs(\".doctest\")\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/lib/python2.5/os.py\", line 172, in makedirs\n    mkdir(name, mode)\nOSError: [Errno 17] File exists: '.doctest'\n```\n\nThe above is just a scary message and doesn't affect the operation of the doctests. Creating all the .doctest directories before starting to run the doctests would fix the problem.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2621\n\n",
+    "body": "Assignee: @garyfurnish\n\nWhen parallel doctesting a clean, i.e. never before doctested, tree there are concurrency issues when creating the .doctest directory:\n\n```\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/bin/sage-doctest\", line 427, in <module>\n    test_file(argv[1])\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/bin/sage-doctest\", line 321, in test_file\n    os.makedirs(\".doctest\")\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/lib/python2.5/os.py\", line 172, in makedirs\n    mkdir(name, mode)\nOSError: [Errno 17] File exists: '.doctest'\n```\n\nThe above is just a scary message and doesn't affect the operation of the doctests. Creating all the .doctest directories before starting to run the doctests would fix the problem.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2621\n\n",
     "created_at": "2008-03-20T23:36:40Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_002621.json:
     "user": "mabshoff"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 When parallel doctesting a clean, i.e. never before doctested, tree there are concurrency issues when creating the .doctest directory:
 
@@ -54,7 +54,7 @@ archive/issue_comments_017998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2621#issuecomment-17998",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -67,16 +67,16 @@ Changing status from new to assigned.
 archive/issue_comments_017999.json:
 ```json
 {
-    "body": "Attachment [trac_2621.patch](tarball://root/attachments/some-uuid/ticket2621/trac_2621.patch) by gfurnish created at 2008-03-20 23:41:00",
+    "body": "Attachment [trac_2621.patch](tarball://root/attachments/some-uuid/ticket2621/trac_2621.patch) by @garyfurnish created at 2008-03-20 23:41:00",
     "created_at": "2008-03-20T23:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2621#issuecomment-17999",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_2621.patch](tarball://root/attachments/some-uuid/ticket2621/trac_2621.patch) by gfurnish created at 2008-03-20 23:41:00
+Attachment [trac_2621.patch](tarball://root/attachments/some-uuid/ticket2621/trac_2621.patch) by @garyfurnish created at 2008-03-20 23:41:00
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007579.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  chapoton\n\n\n```\n> On both sagenb.org and my personal notebook the revision history for\n> any worksheet is blank. Is revision history no longer supported?\n\nThere is a bug. Thanks for the report!  A workaround is to *explicitly* click on the Save button -- that will  create a revision.  I should fix this.    However does this (likely me, as soon as Sage Days 18 is over I'll be done with everything and can focus totally on the notebook for the rest of the year), should also implement rolling backups (i.e., daily, weekly monthly only, i.e., smart deleting of old snapshots).  \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7579\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @fchapoton\n\n\n```\n> On both sagenb.org and my personal notebook the revision history for\n> any worksheet is blank. Is revision history no longer supported?\n\nThere is a bug. Thanks for the report!  A workaround is to *explicitly* click on the Save button -- that will  create a revision.  I should fix this.    However does this (likely me, as soon as Sage Days 18 is over I'll be done with everything and can focus totally on the notebook for the rest of the year), should also implement rolling backups (i.e., daily, weekly monthly only, i.e., smart deleting of old snapshots).  \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7579\n\n",
     "created_at": "2009-12-02T04:35:40Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007579.json:
     "title": "notebook -- autosave needs to save a snapshot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7579",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  chapoton
+CC:  @fchapoton
 
 
 ```
@@ -46,7 +46,7 @@ archive/issue_comments_064549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7579#issuecomment-64549",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_064550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7579#issuecomment-64550",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_064551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7579#issuecomment-64551",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_064552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7579#issuecomment-64552",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_064553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7579#issuecomment-64553",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_064554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7579#issuecomment-64554",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

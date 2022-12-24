@@ -3,7 +3,7 @@
 archive/issues_002347.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is a security risk, and limits the potential uses of Sage. For example, if I wanted to put a text box on my website where people could type in a function and it would return the derivative (computed using Sage) someone could \"ask\" for the derivative of `2*os.system('rm -rf /')`. Symbolic expressions should be able to be parsed in such a way that one can safely reject expressions using unknown (or non-whitelisted) functions. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2347\n\n",
+    "body": "Assignee: @williamstein\n\nThis is a security risk, and limits the potential uses of Sage. For example, if I wanted to put a text box on my website where people could type in a function and it would return the derivative (computed using Sage) someone could \"ask\" for the derivative of `2*os.system('rm -rf /')`. Symbolic expressions should be able to be parsed in such a way that one can safely reject expressions using unknown (or non-whitelisted) functions. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2347\n\n",
     "created_at": "2008-02-28T09:26:58Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002347.json:
     "title": "Symbolic parsing uses eval()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2347",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is a security risk, and limits the potential uses of Sage. For example, if I wanted to put a text box on my website where people could type in a function and it would return the derivative (computed using Sage) someone could "ask" for the derivative of `2*os.system('rm -rf /')`. Symbolic expressions should be able to be parsed in such a way that one can safely reject expressions using unknown (or non-whitelisted) functions. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2347
 archive/issue_comments_015725.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2008-02-28T11:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15725",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_015726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15726",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_015727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15727",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -88,16 +88,16 @@ There is an added benefit that unknown tokens gan be treated as symbolic variabl
 archive/issue_comments_015728.json:
 ```json
 {
-    "body": "Attachment [2347-parsing.hg](tarball://root/attachments/some-uuid/ticket2347/2347-parsing.hg) by robertwb created at 2008-04-11 11:25:10",
+    "body": "Attachment [2347-parsing.hg](tarball://root/attachments/some-uuid/ticket2347/2347-parsing.hg) by @robertwb created at 2008-04-11 11:25:10",
     "created_at": "2008-04-11T11:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15728",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2347-parsing.hg](tarball://root/attachments/some-uuid/ticket2347/2347-parsing.hg) by robertwb created at 2008-04-11 11:25:10
+Attachment [2347-parsing.hg](tarball://root/attachments/some-uuid/ticket2347/2347-parsing.hg) by @robertwb created at 2008-04-11 11:25:10
 
 
 
@@ -124,16 +124,16 @@ Changing priority from major to blocker.
 archive/issue_comments_015730.json:
 ```json
 {
-    "body": "Attachment [2347.patch](tarball://root/attachments/some-uuid/ticket2347/2347.patch) by mhansen created at 2008-04-11 20:45:53\n\nI've attached the bundle as a patch which I will review once 3.0.alpha4 comes out.  There were some problems applying the bundle against 3.0.alpha3.",
+    "body": "Attachment [2347.patch](tarball://root/attachments/some-uuid/ticket2347/2347.patch) by @mwhansen created at 2008-04-11 20:45:53\n\nI've attached the bundle as a patch which I will review once 3.0.alpha4 comes out.  There were some problems applying the bundle against 3.0.alpha3.",
     "created_at": "2008-04-11T20:45:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15730",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2347.patch](tarball://root/attachments/some-uuid/ticket2347/2347.patch) by mhansen created at 2008-04-11 20:45:53
+Attachment [2347.patch](tarball://root/attachments/some-uuid/ticket2347/2347.patch) by @mwhansen created at 2008-04-11 20:45:53
 
 I've attached the bundle as a patch which I will review once 3.0.alpha4 comes out.  There were some problems applying the bundle against 3.0.alpha3.
 
@@ -149,7 +149,7 @@ archive/issue_comments_015731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15731",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_015732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15732",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_015733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15733",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -198,16 +198,16 @@ Just FYI, you could use queue repositories to be able to get patches that have h
 archive/issue_comments_015734.json:
 ```json
 {
-    "body": "Attachment [2347-parsing-rebased.hg](tarball://root/attachments/some-uuid/ticket2347/2347-parsing-rebased.hg) by robertwb created at 2008-04-13 06:14:19\n\nThe new bundle (against alpha3) works fine. There was only one minor conflict. Do you anticipate any major changes with alpha4? (If it's up before I go to bed I'll make sure it works against that.) \n\nJason: Using mercurial queues won't help here, the issue is that half a dozen commits were compressed into a single patch. When there are more than four or five separate changesets attached to a given ticket, I find bundles a lot easier to deal with (rather than attaching all the patches separately).",
+    "body": "Attachment [2347-parsing-rebased.hg](tarball://root/attachments/some-uuid/ticket2347/2347-parsing-rebased.hg) by @robertwb created at 2008-04-13 06:14:19\n\nThe new bundle (against alpha3) works fine. There was only one minor conflict. Do you anticipate any major changes with alpha4? (If it's up before I go to bed I'll make sure it works against that.) \n\nJason: Using mercurial queues won't help here, the issue is that half a dozen commits were compressed into a single patch. When there are more than four or five separate changesets attached to a given ticket, I find bundles a lot easier to deal with (rather than attaching all the patches separately).",
     "created_at": "2008-04-13T06:14:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15734",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2347-parsing-rebased.hg](tarball://root/attachments/some-uuid/ticket2347/2347-parsing-rebased.hg) by robertwb created at 2008-04-13 06:14:19
+Attachment [2347-parsing-rebased.hg](tarball://root/attachments/some-uuid/ticket2347/2347-parsing-rebased.hg) by @robertwb created at 2008-04-13 06:14:19
 
 The new bundle (against alpha3) works fine. There was only one minor conflict. Do you anticipate any major changes with alpha4? (If it's up before I go to bed I'll make sure it works against that.) 
 
@@ -220,16 +220,16 @@ Jason: Using mercurial queues won't help here, the issue is that half a dozen co
 archive/issue_comments_015735.json:
 ```json
 {
-    "body": "Attachment [2347-1.patch](tarball://root/attachments/some-uuid/ticket2347/2347-1.patch) by robertwb created at 2008-04-13 07:26:46",
+    "body": "Attachment [2347-1.patch](tarball://root/attachments/some-uuid/ticket2347/2347-1.patch) by @robertwb created at 2008-04-13 07:26:46",
     "created_at": "2008-04-13T07:26:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15735",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2347-1.patch](tarball://root/attachments/some-uuid/ticket2347/2347-1.patch) by robertwb created at 2008-04-13 07:26:46
+Attachment [2347-1.patch](tarball://root/attachments/some-uuid/ticket2347/2347-1.patch) by @robertwb created at 2008-04-13 07:26:46
 
 
 
@@ -238,16 +238,16 @@ Attachment [2347-1.patch](tarball://root/attachments/some-uuid/ticket2347/2347-1
 archive/issue_comments_015736.json:
 ```json
 {
-    "body": "Attachment [2347-2.patch](tarball://root/attachments/some-uuid/ticket2347/2347-2.patch) by robertwb created at 2008-04-13 07:27:05",
+    "body": "Attachment [2347-2.patch](tarball://root/attachments/some-uuid/ticket2347/2347-2.patch) by @robertwb created at 2008-04-13 07:27:05",
     "created_at": "2008-04-13T07:27:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15736",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2347-2.patch](tarball://root/attachments/some-uuid/ticket2347/2347-2.patch) by robertwb created at 2008-04-13 07:27:05
+Attachment [2347-2.patch](tarball://root/attachments/some-uuid/ticket2347/2347-2.patch) by @robertwb created at 2008-04-13 07:27:05
 
 
 
@@ -256,16 +256,16 @@ Attachment [2347-2.patch](tarball://root/attachments/some-uuid/ticket2347/2347-2
 archive/issue_comments_015737.json:
 ```json
 {
-    "body": "Attachment [2347-3.patch](tarball://root/attachments/some-uuid/ticket2347/2347-3.patch) by robertwb created at 2008-04-13 07:27:15",
+    "body": "Attachment [2347-3.patch](tarball://root/attachments/some-uuid/ticket2347/2347-3.patch) by @robertwb created at 2008-04-13 07:27:15",
     "created_at": "2008-04-13T07:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15737",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2347-3.patch](tarball://root/attachments/some-uuid/ticket2347/2347-3.patch) by robertwb created at 2008-04-13 07:27:15
+Attachment [2347-3.patch](tarball://root/attachments/some-uuid/ticket2347/2347-3.patch) by @robertwb created at 2008-04-13 07:27:15
 
 
 
@@ -274,16 +274,16 @@ Attachment [2347-3.patch](tarball://root/attachments/some-uuid/ticket2347/2347-3
 archive/issue_comments_015738.json:
 ```json
 {
-    "body": "Attachment [2347-5.patch](tarball://root/attachments/some-uuid/ticket2347/2347-5.patch) by robertwb created at 2008-04-13 07:27:26",
+    "body": "Attachment [2347-5.patch](tarball://root/attachments/some-uuid/ticket2347/2347-5.patch) by @robertwb created at 2008-04-13 07:27:26",
     "created_at": "2008-04-13T07:27:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15738",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2347-5.patch](tarball://root/attachments/some-uuid/ticket2347/2347-5.patch) by robertwb created at 2008-04-13 07:27:26
+Attachment [2347-5.patch](tarball://root/attachments/some-uuid/ticket2347/2347-5.patch) by @robertwb created at 2008-04-13 07:27:26
 
 
 
@@ -292,16 +292,16 @@ Attachment [2347-5.patch](tarball://root/attachments/some-uuid/ticket2347/2347-5
 archive/issue_comments_015739.json:
 ```json
 {
-    "body": "Attachment [2347-7.patch](tarball://root/attachments/some-uuid/ticket2347/2347-7.patch) by robertwb created at 2008-04-13 07:27:44",
+    "body": "Attachment [2347-7.patch](tarball://root/attachments/some-uuid/ticket2347/2347-7.patch) by @robertwb created at 2008-04-13 07:27:44",
     "created_at": "2008-04-13T07:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15739",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2347-7.patch](tarball://root/attachments/some-uuid/ticket2347/2347-7.patch) by robertwb created at 2008-04-13 07:27:44
+Attachment [2347-7.patch](tarball://root/attachments/some-uuid/ticket2347/2347-7.patch) by @robertwb created at 2008-04-13 07:27:44
 
 
 
@@ -315,7 +315,7 @@ archive/issue_comments_015740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15740",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -328,16 +328,16 @@ For those of you who prefer patches, I've attached them. Patches 1-7 are exactly
 archive/issue_comments_015741.json:
 ```json
 {
-    "body": "Attachment [2347.hg](tarball://root/attachments/some-uuid/ticket2347/2347.hg) by mhansen created at 2008-04-14 22:43:00",
+    "body": "Attachment [2347.hg](tarball://root/attachments/some-uuid/ticket2347/2347.hg) by @mwhansen created at 2008-04-14 22:43:00",
     "created_at": "2008-04-14T22:43:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15741",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2347.hg](tarball://root/attachments/some-uuid/ticket2347/2347.hg) by mhansen created at 2008-04-14 22:43:00
+Attachment [2347.hg](tarball://root/attachments/some-uuid/ticket2347/2347.hg) by @mwhansen created at 2008-04-14 22:43:00
 
 
 
@@ -351,7 +351,7 @@ archive/issue_comments_015742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15742",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_015746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15746",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -502,16 +502,16 @@ Michael
 archive/issue_comments_015748.json:
 ```json
 {
-    "body": "Attachment [2347-doctest.patch](tarball://root/attachments/some-uuid/ticket2347/2347-doctest.patch) by mhansen created at 2008-04-14 23:53:23",
+    "body": "Attachment [2347-doctest.patch](tarball://root/attachments/some-uuid/ticket2347/2347-doctest.patch) by @mwhansen created at 2008-04-14 23:53:23",
     "created_at": "2008-04-14T23:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15748",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2347-doctest.patch](tarball://root/attachments/some-uuid/ticket2347/2347-doctest.patch) by mhansen created at 2008-04-14 23:53:23
+Attachment [2347-doctest.patch](tarball://root/attachments/some-uuid/ticket2347/2347-doctest.patch) by @mwhansen created at 2008-04-14 23:53:23
 
 
 
@@ -525,7 +525,7 @@ archive/issue_comments_015749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15749",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_015751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2347#issuecomment-15751",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

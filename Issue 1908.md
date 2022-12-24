@@ -3,7 +3,7 @@
 archive/issues_001908.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ekirkman\n\nThis patch extends the functionality introduced in #1869 .  It lets you show lists of things as tiled images.  This does take out the default settings for graphs that were set in #1869, though.  Should those be in the system show() command?\n\n\n\n```\n        sage: show(graphs(3), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show(list(graphs(3)), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show(graphs(4), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show([plot(sin(i*x)) for i in range(30)]) # Two pages of images\n        sage: show([sin(i*x) for i in range(2)])\n        sage: show([sin(i*x) for i in range(30)], columns=1, rows=10)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1908\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  ekirkman\n\nThis patch extends the functionality introduced in #1869 .  It lets you show lists of things as tiled images.  This does take out the default settings for graphs that were set in #1869, though.  Should those be in the system show() command?\n\n\n\n```\n        sage: show(graphs(3), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show(list(graphs(3)), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show(graphs(4), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show([plot(sin(i*x)) for i in range(30)]) # Two pages of images\n        sage: show([sin(i*x) for i in range(2)])\n        sage: show([sin(i*x) for i in range(30)], columns=1, rows=10)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1908\n\n",
     "created_at": "2008-01-24T03:56:49Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001908.json:
     "title": "Make it so that show plots a list as a grid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1908",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  ekirkman
 
@@ -52,7 +52,7 @@ archive/issue_comments_012084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12084",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -65,16 +65,16 @@ This should be applied after #1869.
 archive/issue_comments_012085.json:
 ```json
 {
-    "body": "Attachment [show_list.patch](tarball://root/attachments/some-uuid/ticket1908/show_list.patch) by jason created at 2008-01-24 04:46:30\n\nUpdated patch to fix typo in doctests",
+    "body": "Attachment [show_list.patch](tarball://root/attachments/some-uuid/ticket1908/show_list.patch) by @jasongrout created at 2008-01-24 04:46:30\n\nUpdated patch to fix typo in doctests",
     "created_at": "2008-01-24T04:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12085",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [show_list.patch](tarball://root/attachments/some-uuid/ticket1908/show_list.patch) by jason created at 2008-01-24 04:46:30
+Attachment [show_list.patch](tarball://root/attachments/some-uuid/ticket1908/show_list.patch) by @jasongrout created at 2008-01-24 04:46:30
 
 Updated patch to fix typo in doctests
 
@@ -90,7 +90,7 @@ archive/issue_comments_012086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12086",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_012087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12087",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_012088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12088",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_012089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12089",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -161,16 +161,16 @@ Yes, most of what I did was while I was looking at to_graphics_arrays().  Thanks
 archive/issue_comments_012090.json:
 ```json
 {
-    "body": "Attachment [show_list-updated.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated.patch) by jason created at 2008-01-24 22:14:09\n\nApply in place of show_list.patch",
+    "body": "Attachment [show_list-updated.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated.patch) by @jasongrout created at 2008-01-24 22:14:09\n\nApply in place of show_list.patch",
     "created_at": "2008-01-24T22:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12090",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [show_list-updated.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated.patch) by jason created at 2008-01-24 22:14:09
+Attachment [show_list-updated.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated.patch) by @jasongrout created at 2008-01-24 22:14:09
 
 Apply in place of show_list.patch
 
@@ -186,7 +186,7 @@ archive/issue_comments_012091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12091",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_012092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12092",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -223,16 +223,16 @@ I really like the idea of class defaults for list plots being in the classes the
 archive/issue_comments_012093.json:
 ```json
 {
-    "body": "Attachment [show_list-updated-ref.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref.patch) by rlm created at 2008-01-25 10:15:59",
+    "body": "Attachment [show_list-updated-ref.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref.patch) by @rlmill created at 2008-01-25 10:15:59",
     "created_at": "2008-01-25T10:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12093",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [show_list-updated-ref.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref.patch) by rlm created at 2008-01-25 10:15:59
+Attachment [show_list-updated-ref.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref.patch) by @rlmill created at 2008-01-25 10:15:59
 
 
 
@@ -246,7 +246,7 @@ archive/issue_comments_012094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12094",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_012095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12095",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -277,16 +277,16 @@ Doctest for Robert's addition.
 archive/issue_comments_012096.json:
 ```json
 {
-    "body": "Attachment [show_list-updated-ref-doctest.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref-doctest.patch) by jason created at 2008-01-28 19:18:11\n\nThere are three patches to be applied here, in this order:\n\n1.  show_list-updated.patch\n2.  show_list-updated-ref.patch\n3. show_list-updated-ref-doctest.patch",
+    "body": "Attachment [show_list-updated-ref-doctest.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref-doctest.patch) by @jasongrout created at 2008-01-28 19:18:11\n\nThere are three patches to be applied here, in this order:\n\n1.  show_list-updated.patch\n2.  show_list-updated-ref.patch\n3. show_list-updated-ref-doctest.patch",
     "created_at": "2008-01-28T19:18:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12096",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [show_list-updated-ref-doctest.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref-doctest.patch) by jason created at 2008-01-28 19:18:11
+Attachment [show_list-updated-ref-doctest.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref-doctest.patch) by @jasongrout created at 2008-01-28 19:18:11
 
 There are three patches to be applied here, in this order:
 

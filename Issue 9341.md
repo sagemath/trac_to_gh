@@ -3,7 +3,7 @@
 archive/issues_009341.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  rlm robertwb\n\nKeywords: S_units\n\nHere is a stupid example:\n\n```\nsage: _.<t>=QQ[]\nsage: K.<T>=NumberField(t-1)\nsage: I = K.ideal(2)\nsage: K.S_units([I])\n[2, -1]\nsage: K.S_units([I, I])\n[2, 2, -1]\n```\n\nLooking at the code, this seems to be an upstream issue with gp as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9341\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @rlmill @robertwb\n\nKeywords: S_units\n\nHere is a stupid example:\n\n```\nsage: _.<t>=QQ[]\nsage: K.<T>=NumberField(t-1)\nsage: I = K.ideal(2)\nsage: K.S_units([I])\n[2, -1]\nsage: K.S_units([I, I])\n[2, 2, -1]\n```\n\nLooking at the code, this seems to be an upstream issue with gp as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9341\n\n",
     "created_at": "2010-06-25T20:54:29Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_009341.json:
     "title": "K.S_units doesn't check for repeated entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9341",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  rlm robertwb
+CC:  @rlmill @robertwb
 
 Keywords: S_units
 
@@ -53,7 +53,7 @@ archive/issue_comments_088246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9341#issuecomment-88246",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_088247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9341#issuecomment-88247",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_088248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9341#issuecomment-88248",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_088251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9341#issuecomment-88251",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_088252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9341#issuecomment-88252",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_088253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9341#issuecomment-88253",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_088255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9341#issuecomment-88255",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_088256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9341#issuecomment-88256",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_088257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9341#issuecomment-88257",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

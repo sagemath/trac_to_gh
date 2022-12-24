@@ -3,7 +3,7 @@
 archive/issues_000711.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: P = PolynomialRing(QQ,10,'x')\nsage:  I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nInterrupting Singular...\nInterrupting Singular...\n\n<type 'exceptions.TypeError'>: Restarting Singular (WARNING: all variables defined in previous session are now invalid)\n```\n\nbut singular is still running!\n\nIssue created by migration from https://trac.sagemath.org/ticket/711\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: P = PolynomialRing(QQ,10,'x')\nsage:  I = sage.rings.ideal.Katsura(P)\nsage: I.groebner_basis()\nInterrupting Singular...\nInterrupting Singular...\n\n<type 'exceptions.TypeError'>: Restarting Singular (WARNING: all variables defined in previous session are now invalid)\n```\n\nbut singular is still running!\n\nIssue created by migration from https://trac.sagemath.org/ticket/711\n\n",
     "created_at": "2007-09-20T18:19:40Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000711.json:
     "title": "control-c and singular interface -- it doesn't quit singular for real.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/711",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -48,7 +48,7 @@ archive/issue_comments_003731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/711#issuecomment-3731",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

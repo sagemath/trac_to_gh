@@ -3,7 +3,7 @@
 archive/issues_009372.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  robertwb\n\nNow that we have canonical heights over number fields, the regulator_of_points code can be moved up from ell_rational_field to ell_number_field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9372\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nNow that we have canonical heights over number fields, the regulator_of_points code can be moved up from ell_rational_field to ell_number_field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9372\n\n",
     "created_at": "2010-06-29T04:58:30Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009372.json:
     "title": "implement regulator function for elliptic curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9372",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  robertwb
+CC:  @robertwb
 
 Now that we have canonical heights over number fields, the regulator_of_points code can be moved up from ell_rational_field to ell_number_field.
 
@@ -39,7 +39,7 @@ archive/issue_comments_089056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89056",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing component from algebra to elliptic curves.
 archive/issue_comments_089057.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to cremona.",
+    "body": "Changing assignee from @aghitza to @JohnCremona.",
     "created_at": "2010-06-29T04:58:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89057",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Changing assignee from AlexGhitza to cremona.
+Changing assignee from @aghitza to @JohnCremona.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_089058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89058",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -88,16 +88,16 @@ Applies to 4.4.4
 archive/issue_comments_089059.json:
 ```json
 {
-    "body": "Attachment [trac_9372-regulator.patch](tarball://root/attachments/some-uuid/ticket9372/trac_9372-regulator.patch) by cremona created at 2010-06-29 05:56:28\n\nThe patch moves the two functions height_pairing_matrix and regulator_of_points, and adds doctests over number fields.",
+    "body": "Attachment [trac_9372-regulator.patch](tarball://root/attachments/some-uuid/ticket9372/trac_9372-regulator.patch) by @JohnCremona created at 2010-06-29 05:56:28\n\nThe patch moves the two functions height_pairing_matrix and regulator_of_points, and adds doctests over number fields.",
     "created_at": "2010-06-29T05:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89059",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9372-regulator.patch](tarball://root/attachments/some-uuid/ticket9372/trac_9372-regulator.patch) by cremona created at 2010-06-29 05:56:28
+Attachment [trac_9372-regulator.patch](tarball://root/attachments/some-uuid/ticket9372/trac_9372-regulator.patch) by @JohnCremona created at 2010-06-29 05:56:28
 
 The patch moves the two functions height_pairing_matrix and regulator_of_points, and adds doctests over number fields.
 
@@ -113,7 +113,7 @@ archive/issue_comments_089060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89060",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_089061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89061",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_089062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89062",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_089063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89063",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_089064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89064",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_089065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89065",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_089066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89066",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -286,16 +286,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089067.json:
 ```json
 {
-    "body": "Attachment [trac_9372-regulator.2.patch](tarball://root/attachments/some-uuid/ticket9372/trac_9372-regulator.2.patch) by aly.deines created at 2010-06-30 03:35:34\n\nIf the only problem was that the doctest called E.gens(), this fixes those doctests and you can give this a positive review.",
+    "body": "Attachment [trac_9372-regulator.2.patch](tarball://root/attachments/some-uuid/ticket9372/trac_9372-regulator.2.patch) by @adeines created at 2010-06-30 03:35:34\n\nIf the only problem was that the doctest called E.gens(), this fixes those doctests and you can give this a positive review.",
     "created_at": "2010-06-30T03:35:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89067",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
-Attachment [trac_9372-regulator.2.patch](tarball://root/attachments/some-uuid/ticket9372/trac_9372-regulator.2.patch) by aly.deines created at 2010-06-30 03:35:34
+Attachment [trac_9372-regulator.2.patch](tarball://root/attachments/some-uuid/ticket9372/trac_9372-regulator.2.patch) by @adeines created at 2010-06-30 03:35:34
 
 If the only problem was that the doctest called E.gens(), this fixes those doctests and you can give this a positive review.
 
@@ -311,7 +311,7 @@ archive/issue_comments_089068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89068",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_089069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89069",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_089070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89070",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_089071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9372#issuecomment-89071",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

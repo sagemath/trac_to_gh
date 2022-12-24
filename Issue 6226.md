@@ -93,7 +93,7 @@ archive/issue_comments_049699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6226",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6226#issuecomment-49699",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_049700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6226",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6226#issuecomment-49700",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -132,16 +132,16 @@ Changing assignee from tba to mvngu.
 archive/issue_comments_049701.json:
 ```json
 {
-    "body": "Attachment [trac_6226_part2.patch](tarball://root/attachments/some-uuid/ticket6226/trac_6226_part2.patch) by jhpalmieri created at 2009-06-05 19:44:39",
+    "body": "Attachment [trac_6226_part2.patch](tarball://root/attachments/some-uuid/ticket6226/trac_6226_part2.patch) by @jhpalmieri created at 2009-06-05 19:44:39",
     "created_at": "2009-06-05T19:44:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6226",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6226#issuecomment-49701",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6226_part2.patch](tarball://root/attachments/some-uuid/ticket6226/trac_6226_part2.patch) by jhpalmieri created at 2009-06-05 19:44:39
+Attachment [trac_6226_part2.patch](tarball://root/attachments/some-uuid/ticket6226/trac_6226_part2.patch) by @jhpalmieri created at 2009-06-05 19:44:39
 
 
 
@@ -178,7 +178,7 @@ archive/issue_comments_049703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6226",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6226#issuecomment-49703",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

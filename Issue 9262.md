@@ -14,7 +14,7 @@ archive/issues_009262.json:
     "title": "Conversion from ReST markup to online text",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9262",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: mvngu

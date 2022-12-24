@@ -14,7 +14,7 @@ archive/issues_002368.json:
     "title": "Compiling Atlas on Powerbook G4, Tuning Information",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2368",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 Assignee: mabshoff

@@ -3,7 +3,7 @@
 archive/issues_009309.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif jhpalmieri pjeremy\n\nThe IML library is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to \"yes\", no self-tests of the package will be run. This is silly, as the IML library has a test suite, though it only consists of two tests. \n\nAfter adding the required file, the test suite is run. \n\n\n```\ncreating test-largeentry\nPASS: test-smallentry\nPASS: test-largeentry\n==================\nAll 2 tests passed\n==================\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/tests'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/tests'\nMaking check in examples\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/examples'\nmake[1]: Nothing to be done for `check'.\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/examples'\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src'\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing iml-1.0.1.p13.spkg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9309\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @jhpalmieri @peterjeremy\n\nThe IML library is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to \"yes\", no self-tests of the package will be run. This is silly, as the IML library has a test suite, though it only consists of two tests. \n\nAfter adding the required file, the test suite is run. \n\n\n```\ncreating test-largeentry\nPASS: test-smallentry\nPASS: test-largeentry\n==================\nAll 2 tests passed\n==================\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/tests'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/tests'\nMaking check in examples\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/examples'\nmake[1]: Nothing to be done for `check'.\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src/examples'\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src'\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13/src'\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/iml-1.0.1.p13\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing iml-1.0.1.p13.spkg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9309\n\n",
     "created_at": "2010-06-22T14:41:47Z",
     "labels": [
         "spkg-check",
@@ -19,7 +19,7 @@ archive/issues_009309.json:
 ```
 Assignee: tbd
 
-CC:  leif jhpalmieri pjeremy
+CC:  @nexttime @jhpalmieri @peterjeremy
 
 The IML library is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to "yes", no self-tests of the package will be run. This is silly, as the IML library has a test suite, though it only consists of two tests. 
 
@@ -144,7 +144,7 @@ archive/issue_comments_087665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9309#issuecomment-87665",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_087666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9309#issuecomment-87666",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_087667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9309#issuecomment-87667",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_087668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9309#issuecomment-87668",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_087669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9309#issuecomment-87669",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_087670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9309#issuecomment-87670",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_087671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9309#issuecomment-87671",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -284,16 +284,16 @@ Only updates upstream info in SPKG.txt
 archive/issue_comments_087672.json:
 ```json
 {
-    "body": "Attachment [trac_9309-IML-SPKG.txt_update.patch](tarball://root/attachments/some-uuid/ticket9309/trac_9309-IML-SPKG.txt_update.patch) by leif created at 2010-07-21 17:51:04\n\nDave, can you merge my patch to `SPKG.txt`?",
+    "body": "Attachment [trac_9309-IML-SPKG.txt_update.patch](tarball://root/attachments/some-uuid/ticket9309/trac_9309-IML-SPKG.txt_update.patch) by @nexttime created at 2010-07-21 17:51:04\n\nDave, can you merge my patch to `SPKG.txt`?",
     "created_at": "2010-07-21T17:51:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9309#issuecomment-87672",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9309-IML-SPKG.txt_update.patch](tarball://root/attachments/some-uuid/ticket9309/trac_9309-IML-SPKG.txt_update.patch) by leif created at 2010-07-21 17:51:04
+Attachment [trac_9309-IML-SPKG.txt_update.patch](tarball://root/attachments/some-uuid/ticket9309/trac_9309-IML-SPKG.txt_update.patch) by @nexttime created at 2010-07-21 17:51:04
 
 Dave, can you merge my patch to `SPKG.txt`?
 
@@ -344,7 +344,7 @@ archive/issue_comments_087674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9309#issuecomment-87674",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

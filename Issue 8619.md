@@ -14,7 +14,7 @@ archive/issues_008619.json:
     "title": "add check for SELinux to sage prereq script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8619",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -56,7 +56,7 @@ archive/issue_comments_078108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8619#issuecomment-78108",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_078109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8619#issuecomment-78109",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_078110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8619#issuecomment-78110",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_078111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8619#issuecomment-78111",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_078112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8619#issuecomment-78112",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

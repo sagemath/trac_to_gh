@@ -3,7 +3,7 @@
 archive/issues_008801.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThis was requested by Ursula Whitcher on sage-support.  She adds:\n\n\n```\n  I'm playing with a family of plane curves with rational coefficients in \n  the complex projective plane.  So rational or complex numbers would be \n  enough for me to test examples.  In a perfect world I'd be able to \n  specify a family using rational functions of arbitrary constants \n  (something like a x^2 + b/(a-1) y^2), and compute the projective dual in \n  terms of those constants.\n```\n\n\nA good place to start in implementing this could be http://www.emilvolcheck.com/dual.ps\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8801\n\n",
+    "body": "Assignee: @aghitza\n\nThis was requested by Ursula Whitcher on sage-support.  She adds:\n\n\n```\n  I'm playing with a family of plane curves with rational coefficients in \n  the complex projective plane.  So rational or complex numbers would be \n  enough for me to test examples.  In a perfect world I'd be able to \n  specify a family using rational functions of arbitrary constants \n  (something like a x^2 + b/(a-1) y^2), and compute the projective dual in \n  terms of those constants.\n```\n\n\nA good place to start in implementing this could be http://www.emilvolcheck.com/dual.ps\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8801\n\n",
     "created_at": "2010-04-28T14:24:54Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_008801.json:
     "title": "implement the projective dual of a plane curve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8801",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 This was requested by Ursula Whitcher on sage-support.  She adds:
 
@@ -133,7 +133,7 @@ archive/issue_comments_080737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8801#issuecomment-80737",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_080741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8801#issuecomment-80741",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_080742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8801#issuecomment-80742",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_080744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8801#issuecomment-80744",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_080745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8801#issuecomment-80745",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_080747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8801#issuecomment-80747",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_080748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8801#issuecomment-80748",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

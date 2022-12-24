@@ -14,7 +14,7 @@ archive/issues_001813.json:
     "title": "[with patch] misc enhancements for ref.pdf",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1813",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba

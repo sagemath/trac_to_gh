@@ -14,7 +14,7 @@ archive/issues_000624.json:
     "title": "Inplace operators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/624",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -59,16 +59,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/624
 archive/issue_comments_003208.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2007-09-07T19:44:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/624#issuecomment-3208",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_003209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/624#issuecomment-3209",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_003210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/624#issuecomment-3210",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_003211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/624#issuecomment-3211",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_003212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/624#issuecomment-3212",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_003213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/624#issuecomment-3213",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_003215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/624#issuecomment-3215",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

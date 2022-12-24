@@ -3,7 +3,7 @@
 archive/issues_003329.json:
 ```json
 {
-    "body": "Assignee: was\n\nConsider this example:\n\n```\n  R.<a,b> = NumberField(x^2-3,'g').extension(x^2-7,'h')[]\n  h = R.base_ring().gen()    \n  S.<y> = R.fraction_field()[]\n  xgcd(y^2, a*h*y+b) \n```\n\n(reported by Ga\u00ebtan Bisson here: http://groups.google.com/group/sage-support/browse_thread/thread/5338608bd7508b00/cd1d6555592e472f#cd1d6555592e472f)\n\nThis fails because it tries to use Singular to take the gcd of multivariate polynomials over a relative number field, and Singular does not support relative number fields.  However, the error message is quite poor; it would be better if it failed with a better error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3329\n\n",
+    "body": "Assignee: @williamstein\n\nConsider this example:\n\n```\n  R.<a,b> = NumberField(x^2-3,'g').extension(x^2-7,'h')[]\n  h = R.base_ring().gen()    \n  S.<y> = R.fraction_field()[]\n  xgcd(y^2, a*h*y+b) \n```\n\n(reported by Ga\u00ebtan Bisson here: http://groups.google.com/group/sage-support/browse_thread/thread/5338608bd7508b00/cd1d6555592e472f#cd1d6555592e472f)\n\nThis fails because it tries to use Singular to take the gcd of multivariate polynomials over a relative number field, and Singular does not support relative number fields.  However, the error message is quite poor; it would be better if it failed with a better error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3329\n\n",
     "created_at": "2008-05-29T17:32:53Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_003329.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Consider this example:
 
@@ -66,7 +66,7 @@ archive/issue_comments_023086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3329#issuecomment-23086",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_023087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3329#issuecomment-23087",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -114,16 +114,16 @@ Carl, any thoughts on this?
 archive/issue_comments_023088.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2009-01-25T19:02:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3329#issuecomment-23088",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_023089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3329#issuecomment-23089",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_023090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3329#issuecomment-23090",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_023091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3329#issuecomment-23091",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

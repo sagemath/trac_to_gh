@@ -3,7 +3,7 @@
 archive/issues_006392.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  mderickx\n\nThis isn't right:\n\n```\nsage: J = J0(43)\nsage: G,_ = J[0].intersection(J[1])\nsage: J[1]/G\nSimple abelian subvariety 43b(1,43) of dimension 2 of J0(43)\n```\n\n\nThis is\n\n```\nsage: J[0]/G\n\n(Abelian variety factor of dimension 1 of J0(43),\n Abelian variety morphism:\n  From: Simple abelian subvariety 43a(1,43) of dimension 1 of J0(43)\n  To:   Abelian variety factor of dimension 1 of J0(43))\n```\n\n\nFor some reason J[1]/G isn't even creating the right output (i.e., pair (abvar, map)). \n\nIssue created by migration from https://trac.sagemath.org/ticket/6392\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @koffie\n\nThis isn't right:\n\n```\nsage: J = J0(43)\nsage: G,_ = J[0].intersection(J[1])\nsage: J[1]/G\nSimple abelian subvariety 43b(1,43) of dimension 2 of J0(43)\n```\n\n\nThis is\n\n```\nsage: J[0]/G\n\n(Abelian variety factor of dimension 1 of J0(43),\n Abelian variety morphism:\n  From: Simple abelian subvariety 43a(1,43) of dimension 1 of J0(43)\n  To:   Abelian variety factor of dimension 1 of J0(43))\n```\n\n\nFor some reason J[1]/G isn't even creating the right output (i.e., pair (abvar, map)). \n\nIssue created by migration from https://trac.sagemath.org/ticket/6392\n\n",
     "created_at": "2009-06-24T09:53:32Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_006392.json:
     "title": "modular abelian quotient -- something goes wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6392",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  mderickx
+CC:  @koffie
 
 This isn't right:
 
@@ -61,7 +61,7 @@ archive/issue_comments_051356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6392#issuecomment-51356",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_051357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6392#issuecomment-51357",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_051358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6392#issuecomment-51358",
-    "user": "klui"
+    "user": "@kevinywlui"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_051359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6392#issuecomment-51359",
-    "user": "klui"
+    "user": "@kevinywlui"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_051360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6392#issuecomment-51360",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_051361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6392#issuecomment-51361",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_051362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6392#issuecomment-51362",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_051363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6392#issuecomment-51363",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_051364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6392#issuecomment-51364",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_051365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6392#issuecomment-51365",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

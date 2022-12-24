@@ -3,7 +3,7 @@
 archive/issues_008570.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason kcrisman\n\nKeywords: plot marker\n\nCurrently, there's no obvious way to pass the marker option to matplotlib when plotting individual points, which would be mostly with this option.\n\nIt appears that plot() has deviated from other plot types, since it does allow the marker option, but apparently only for function plots.\n\nusing plot(points(point_list),marker='x') ignores the marker option\nusing list_plot(point_list,marker='x') or points(point_list,marker='x') gives a warning:\n  verbose 0 (136: primitive.py, options) WARNING: Ignoring option 'marker'=x\nbut displays the points nevertheless, though ignoring the marker option.\n\nAlso, setting plot.options['marker'] = 'x' or Graphics().SHOW_OPTIONS['marker'] = 'x' do not work.\n\nSomewhat related to #4529, #1431 and #5448, which seem to be related to not passing kwargs to matplotlib.\n\nSo far, I haven't been able to find a way to seamless join matplotlib's system with the sage.plot options.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8570\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @kcrisman\n\nKeywords: plot marker\n\nCurrently, there's no obvious way to pass the marker option to matplotlib when plotting individual points, which would be mostly with this option.\n\nIt appears that plot() has deviated from other plot types, since it does allow the marker option, but apparently only for function plots.\n\nusing plot(points(point_list),marker='x') ignores the marker option\nusing list_plot(point_list,marker='x') or points(point_list,marker='x') gives a warning:\n  verbose 0 (136: primitive.py, options) WARNING: Ignoring option 'marker'=x\nbut displays the points nevertheless, though ignoring the marker option.\n\nAlso, setting plot.options['marker'] = 'x' or Graphics().SHOW_OPTIONS['marker'] = 'x' do not work.\n\nSomewhat related to #4529, #1431 and #5448, which seem to be related to not passing kwargs to matplotlib.\n\nSo far, I haven't been able to find a way to seamless join matplotlib's system with the sage.plot options.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8570\n\n",
     "created_at": "2010-03-21T15:17:23Z",
     "labels": [
         "graphics",
@@ -17,9 +17,9 @@ archive/issues_008570.json:
     "user": "ronanpaixao"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason kcrisman
+CC:  @jasongrout @kcrisman
 
 Keywords: plot marker
 
@@ -55,7 +55,7 @@ archive/issue_comments_077623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8570#issuecomment-77623",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_077624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8570#issuecomment-77624",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_077625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8570#issuecomment-77625",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_077626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8570#issuecomment-77626",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_077627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8570#issuecomment-77627",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_077628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8570#issuecomment-77628",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_077629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8570#issuecomment-77629",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_077630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8570#issuecomment-77630",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

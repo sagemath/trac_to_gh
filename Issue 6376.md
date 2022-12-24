@@ -3,7 +3,7 @@
 archive/issues_006376.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  gmhossain mhansen\n\n\n```\nsage: f(x) = function('f',x)\nsage: g = f(-x).diff(x); g\n-D[0](f)(-x)\nsage: g._maxima_init_()\n\"(diff('f(x), x, 1))*(-1)\"\n```\n\n\nNotice that the `-x` inside f is totally ignored!  This is because of code in the derivative method around line 454 of `sage/symbolic/expression_conversion.py`\n\nChanging the line\n\n```\nargs = ex.args()\n```\n\n\nto \n\n```\nargs = ex.operands()\n```\n\n\n\"fixes\" the problem, in that a NotImplementedError gets raised, instead of a wrong result returned.  This is **way** better than the current situation, and we better fix this asap.  \n\nA better fix of course is to implement proper conversion. mhansen wrote this code, so maybe it would be easy for him.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6376\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @golam-m-hossain @mwhansen\n\n\n```\nsage: f(x) = function('f',x)\nsage: g = f(-x).diff(x); g\n-D[0](f)(-x)\nsage: g._maxima_init_()\n\"(diff('f(x), x, 1))*(-1)\"\n```\n\n\nNotice that the `-x` inside f is totally ignored!  This is because of code in the derivative method around line 454 of `sage/symbolic/expression_conversion.py`\n\nChanging the line\n\n```\nargs = ex.args()\n```\n\n\nto \n\n```\nargs = ex.operands()\n```\n\n\n\"fixes\" the problem, in that a NotImplementedError gets raised, instead of a wrong result returned.  This is **way** better than the current situation, and we better fix this asap.  \n\nA better fix of course is to implement proper conversion. mhansen wrote this code, so maybe it would be easy for him.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6376\n\n",
     "created_at": "2009-06-21T14:13:14Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_006376.json:
     "title": "serious bug in _maxima_init_ method for formal derivatives with new symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6376",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  gmhossain mhansen
+CC:  @golam-m-hossain @mwhansen
 
 
 ```
@@ -68,7 +68,7 @@ archive/issue_comments_051021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6376#issuecomment-51021",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_051022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6376#issuecomment-51022",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_051023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6376#issuecomment-51023",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_051024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6376#issuecomment-51024",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_051025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6376#issuecomment-51025",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_051026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6376#issuecomment-51026",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_051027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6376#issuecomment-51027",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

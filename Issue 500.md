@@ -3,7 +3,7 @@
 archive/issues_000500.json:
 ```json
 {
-    "body": "Assignee: was\n\nhttp://maxima.sourceforge.net/\n\nIssue created by migration from https://trac.sagemath.org/ticket/500\n\n",
+    "body": "Assignee: @williamstein\n\nhttp://maxima.sourceforge.net/\n\nIssue created by migration from https://trac.sagemath.org/ticket/500\n\n",
     "created_at": "2007-08-28T17:58:58Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000500.json:
     "title": "upgrade maxima to version 5.13.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/500",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 http://maxima.sourceforge.net/
 
@@ -37,7 +37,7 @@ archive/issue_comments_002498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/500#issuecomment-2498",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_002499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/500#issuecomment-2499",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

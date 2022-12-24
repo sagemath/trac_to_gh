@@ -3,7 +3,7 @@
 archive/issues_009974.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif drkirkby\n\nThe current version of GnuTLS in Sage has multiple issues, not all of which will probably be solved by this ticket, but at least of subset of them will be. \n* The current version in Sage is very old. \n* There are security issues with the current version - see #7542\n* There's no `spkg-check` file - see #9308\n* It fails to build on AIX - see #9974\n* It fails to build on HP-UX - see  #7511\n* `make` is used instead of `$MAKE`\n* `-m64` is hard-coded as the compiler flag needed for 64-bit builds\n* `SPKG.txt` lacks the `Special Update/Build Instructions` section.\n* There's an incomplete list of dependencies in `SKG.txt`, with a remark to `FIXME`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9975\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime drkirkby\n\nThe current version of GnuTLS in Sage has multiple issues, not all of which will probably be solved by this ticket, but at least of subset of them will be. \n* The current version in Sage is very old. \n* There are security issues with the current version - see #7542\n* There's no `spkg-check` file - see #9308\n* It fails to build on AIX - see #9974\n* It fails to build on HP-UX - see  #7511\n* `make` is used instead of `$MAKE`\n* `-m64` is hard-coded as the compiler flag needed for 64-bit builds\n* `SPKG.txt` lacks the `Special Update/Build Instructions` section.\n* There's an incomplete list of dependencies in `SKG.txt`, with a remark to `FIXME`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9975\n\n",
     "created_at": "2010-09-23T09:54:59Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_009974.json:
 ```
 Assignee: tbd
 
-CC:  leif drkirkby
+CC:  @nexttime drkirkby
 
 The current version of GnuTLS in Sage has multiple issues, not all of which will probably be solved by this ticket, but at least of subset of them will be. 
 * The current version in Sage is very old. 
@@ -79,16 +79,16 @@ Diff for the gnutls spkg, for reviewing only.
 archive/issue_comments_100073.json:
 ```json
 {
-    "body": "Attachment [gnutls-2.2.1.p5-2.12.3.diff](tarball://root/attachments/some-uuid/ticket9975/gnutls-2.2.1.p5-2.12.3.diff) by jhpalmieri created at 2011-07-23 20:02:58\n\nThis seems to build on sage.math, an OS X box, and OpenSolaris.  I'm getting self-test failures, though.  On sage.math:\n\n```\nmake[5]: Leaving directory `/mnt/usb1/scratch/palmieri/gnutls/sage-4.7.1.rc0/spkg/build/gnutls-2.1\\\n2.3/src/tests/openpgp-certs'\nmake[4]: Leaving directory `/mnt/usb1/scratch/palmieri/gnutls/sage-4.7.1.rc0/spkg/build/gnutls-2.1\\\n2.3/src/tests/openpgp-certs'\nmake[3]: Leaving directory `/mnt/usb1/scratch/palmieri/gnutls/sage-4.7.1.rc0/spkg/build/gnutls-2.1\\\n2.3/src/tests'\nmake[3]: Entering directory `/mnt/usb1/scratch/palmieri/gnutls/sage-4.7.1.rc0/spkg/build/gnutls-2.\\\n12.3/src'\nmake[3]: warning: -jN forced in submake: disabling jobserver mode.\nmake[3]: Nothing to be done for `check-am'.\nmake[3]: INTERNAL: Exiting with 1 jobserver tokens available; should be 12!\nmake[3]: Leaving directory `/mnt/usb1/scratch/palmieri/gnutls/sage-4.7.1.rc0/spkg/build/gnutls-2.1\\\n2.3/src'\nmake[2]: Leaving directory `/mnt/usb1/scratch/palmieri/gnutls/sage-4.7.1.rc0/spkg/build/gnutls-2.1\\\n2.3/src'\nAn error occurred while testing GnuTLS\n*************************************\nError testing package ** gnutls-2.12.3 **\n*************************************\n```\n\nOn OS X:\n\n```\nsuccessSelf test `/Applications/sage/spkg/build/gnutls-2.12.3/src/tests/.libs/rng-fork' finished with 0 errors\nPASS: rng-fork\nSelf test `/Applications/sage/spkg/build/gnutls-2.12.3/src/tests/.libs/openssl' finished with 0 errors\nPASS: openssl\nserver handshake Error in the push function. (-53) \n```\n\nand then it hangs.  On OpenSolaris (David Kirkby's machine hawk):\n\n```\n  CC     test-vasnprintf.o\ntest-unistd.c:27:1: error: 'NULL' undeclared here (not in a function)\ntest-unistd.c:27:1: error: bit-field 'verify_error_if_negative_size__' width not an integer constant\ntest-unistd.c:30:14: error: 'SEEK_CUR' undeclared here (not in a function)\ntest-unistd.c:30:24: error: 'SEEK_END' undeclared here (not in a function)\ntest-unistd.c:30:34: error: 'SEEK_SET' undeclared here (not in a function)\ntest-unistd.c:35:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'or'\ntest-unistd.c:40:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before 't2'\ntest-unistd.c:45:7: error: expected '=', ',', ';', 'asm' or '__attribute__' before 't5'\ntest-unistd.c:46:7: error: expected '=', ',', ';', 'asm' or '__attribute__' before 't6'\n  CC     test-vasprintf.o\nmake[7]: *** [test-unistd.o] Error 1\nmake[7]: *** Waiting for unfinished jobs....\nmake[7]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib/gl/tests'\nmake[6]: *** [check-am] Error 2\nmake[6]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib/gl/tests'\nmake[5]: *** [check-recursive] Error 1\nmake[5]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib/gl/tests'\nmake[4]: *** [check] Error 2\nmake[4]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib/gl/tests'\nmake[3]: *** [check-recursive] Error 1\nmake[3]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib/gl'\nmake[2]: *** [check] Error 2\nmake[2]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib/gl'\nmake[1]: *** [check-recursive] Error 1\nmake[1]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib'\nmake: *** [check-recursive] Error 1\nAn error occurred while testing GnuTLS\n*************************************\nError testing package ** gnutls-2.12.3 **\n*************************************\n```\n\n\n\nOne more thing: `$RM` is no longer set by sage-env, so do you need to modify it in spkg-install?  If you do, should you test whether `$RM_SAVE` is nonempty before\n\n```\nRM=$RM_SAVE\nexport RM\n```\n\nDo you even need to export `RM` at the end, or are the changes in this script (in particular `unset RM`) just local to the script?",
+    "body": "Attachment [gnutls-2.2.1.p5-2.12.3.diff](tarball://root/attachments/some-uuid/ticket9975/gnutls-2.2.1.p5-2.12.3.diff) by @jhpalmieri created at 2011-07-23 20:02:58\n\nThis seems to build on sage.math, an OS X box, and OpenSolaris.  I'm getting self-test failures, though.  On sage.math:\n\n```\nmake[5]: Leaving directory `/mnt/usb1/scratch/palmieri/gnutls/sage-4.7.1.rc0/spkg/build/gnutls-2.1\\\n2.3/src/tests/openpgp-certs'\nmake[4]: Leaving directory `/mnt/usb1/scratch/palmieri/gnutls/sage-4.7.1.rc0/spkg/build/gnutls-2.1\\\n2.3/src/tests/openpgp-certs'\nmake[3]: Leaving directory `/mnt/usb1/scratch/palmieri/gnutls/sage-4.7.1.rc0/spkg/build/gnutls-2.1\\\n2.3/src/tests'\nmake[3]: Entering directory `/mnt/usb1/scratch/palmieri/gnutls/sage-4.7.1.rc0/spkg/build/gnutls-2.\\\n12.3/src'\nmake[3]: warning: -jN forced in submake: disabling jobserver mode.\nmake[3]: Nothing to be done for `check-am'.\nmake[3]: INTERNAL: Exiting with 1 jobserver tokens available; should be 12!\nmake[3]: Leaving directory `/mnt/usb1/scratch/palmieri/gnutls/sage-4.7.1.rc0/spkg/build/gnutls-2.1\\\n2.3/src'\nmake[2]: Leaving directory `/mnt/usb1/scratch/palmieri/gnutls/sage-4.7.1.rc0/spkg/build/gnutls-2.1\\\n2.3/src'\nAn error occurred while testing GnuTLS\n*************************************\nError testing package ** gnutls-2.12.3 **\n*************************************\n```\n\nOn OS X:\n\n```\nsuccessSelf test `/Applications/sage/spkg/build/gnutls-2.12.3/src/tests/.libs/rng-fork' finished with 0 errors\nPASS: rng-fork\nSelf test `/Applications/sage/spkg/build/gnutls-2.12.3/src/tests/.libs/openssl' finished with 0 errors\nPASS: openssl\nserver handshake Error in the push function. (-53) \n```\n\nand then it hangs.  On OpenSolaris (David Kirkby's machine hawk):\n\n```\n  CC     test-vasnprintf.o\ntest-unistd.c:27:1: error: 'NULL' undeclared here (not in a function)\ntest-unistd.c:27:1: error: bit-field 'verify_error_if_negative_size__' width not an integer constant\ntest-unistd.c:30:14: error: 'SEEK_CUR' undeclared here (not in a function)\ntest-unistd.c:30:24: error: 'SEEK_END' undeclared here (not in a function)\ntest-unistd.c:30:34: error: 'SEEK_SET' undeclared here (not in a function)\ntest-unistd.c:35:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'or'\ntest-unistd.c:40:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before 't2'\ntest-unistd.c:45:7: error: expected '=', ',', ';', 'asm' or '__attribute__' before 't5'\ntest-unistd.c:46:7: error: expected '=', ',', ';', 'asm' or '__attribute__' before 't6'\n  CC     test-vasprintf.o\nmake[7]: *** [test-unistd.o] Error 1\nmake[7]: *** Waiting for unfinished jobs....\nmake[7]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib/gl/tests'\nmake[6]: *** [check-am] Error 2\nmake[6]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib/gl/tests'\nmake[5]: *** [check-recursive] Error 1\nmake[5]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib/gl/tests'\nmake[4]: *** [check] Error 2\nmake[4]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib/gl/tests'\nmake[3]: *** [check-recursive] Error 1\nmake[3]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib/gl'\nmake[2]: *** [check] Error 2\nmake[2]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib/gl'\nmake[1]: *** [check-recursive] Error 1\nmake[1]: Leaving directory `/export/home/palmieri/testing/sage-4.7.1.rc0/spkg/build/gnutls-2.12.3/src/lib'\nmake: *** [check-recursive] Error 1\nAn error occurred while testing GnuTLS\n*************************************\nError testing package ** gnutls-2.12.3 **\n*************************************\n```\n\n\n\nOne more thing: `$RM` is no longer set by sage-env, so do you need to modify it in spkg-install?  If you do, should you test whether `$RM_SAVE` is nonempty before\n\n```\nRM=$RM_SAVE\nexport RM\n```\n\nDo you even need to export `RM` at the end, or are the changes in this script (in particular `unset RM`) just local to the script?",
     "created_at": "2011-07-23T20:02:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9974#issuecomment-100073",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [gnutls-2.2.1.p5-2.12.3.diff](tarball://root/attachments/some-uuid/ticket9975/gnutls-2.2.1.p5-2.12.3.diff) by jhpalmieri created at 2011-07-23 20:02:58
+Attachment [gnutls-2.2.1.p5-2.12.3.diff](tarball://root/attachments/some-uuid/ticket9975/gnutls-2.2.1.p5-2.12.3.diff) by @jhpalmieri created at 2011-07-23 20:02:58
 
 This seems to build on sage.math, an OS X box, and OpenSolaris.  I'm getting self-test failures, though.  On sage.math:
 
@@ -183,7 +183,7 @@ archive/issue_comments_100074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9974#issuecomment-100074",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_100075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9974#issuecomment-100075",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_100076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9974#issuecomment-100076",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_100077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9974#issuecomment-100077",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_100078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9974#issuecomment-100078",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_100079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9974#issuecomment-100079",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_100080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9974#issuecomment-100080",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_100081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9974#issuecomment-100081",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_100082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9974#issuecomment-100082",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -596,7 +596,7 @@ archive/issue_comments_100083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9974#issuecomment-100083",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -614,7 +614,7 @@ archive/issue_comments_100084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9974#issuecomment-100084",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -632,7 +632,7 @@ archive/issue_comments_100085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9974#issuecomment-100085",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

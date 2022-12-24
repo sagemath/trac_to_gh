@@ -3,7 +3,7 @@
 archive/issues_006952.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  ncohen jason\n\nThis is a follow-up to ticket #6774.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6952\n\n",
+    "body": "Assignee: tba\n\nCC:  @nathanncohen @jasongrout\n\nThis is a follow-up to ticket #6774.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6952\n\n",
     "created_at": "2009-09-17T23:02:29Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_006952.json:
 ```
 Assignee: tba
 
-CC:  ncohen jason
+CC:  @nathanncohen @jasongrout
 
 This is a follow-up to ticket #6774.
 
@@ -104,7 +104,7 @@ archive/issue_comments_057494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6952#issuecomment-57494",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

@@ -98,7 +98,7 @@ archive/issue_comments_056700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56700",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_056703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56703",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_056705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56705",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_056709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56709",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_056711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56711",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -507,16 +507,16 @@ I hope I finally got everything right in version 5 of the patch!
 archive/issue_comments_056713.json:
 ```json
 {
-    "body": "Attachment [binomial_bug_v5.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_v5.patch) by kcrisman created at 2009-09-22 15:36:52\n\nUnfortunately my Sage upgrade croaked, so I can't check it immediately.   I will try to do so as soon as possible.\n\nHowever, what does this patch do with this?\n\n```\nsage: binomial(SR(3/2),SR(1/1))?\n```\n\nTrying x-m won't work on this.   Note that \n\n```\nsage: type(SR(1/1).pyobject())\n<type 'sage.rings.rational.Rational'>\n```\n\nwhich means you may still want a m=ZZ(m) or rational check once you have discovered you aren't in the n+1 case.   I may have that wrong, though, since I can't actually try the patch out.\n\nAs for a trivial point, there is a misspelling of \"coerce\" as well.",
+    "body": "Attachment [binomial_bug_v5.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_v5.patch) by @kcrisman created at 2009-09-22 15:36:52\n\nUnfortunately my Sage upgrade croaked, so I can't check it immediately.   I will try to do so as soon as possible.\n\nHowever, what does this patch do with this?\n\n```\nsage: binomial(SR(3/2),SR(1/1))?\n```\n\nTrying x-m won't work on this.   Note that \n\n```\nsage: type(SR(1/1).pyobject())\n<type 'sage.rings.rational.Rational'>\n```\n\nwhich means you may still want a m=ZZ(m) or rational check once you have discovered you aren't in the n+1 case.   I may have that wrong, though, since I can't actually try the patch out.\n\nAs for a trivial point, there is a misspelling of \"coerce\" as well.",
     "created_at": "2009-09-22T15:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56713",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [binomial_bug_v5.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_v5.patch) by kcrisman created at 2009-09-22 15:36:52
+Attachment [binomial_bug_v5.patch](tarball://root/attachments/some-uuid/ticket6870/binomial_bug_v5.patch) by @kcrisman created at 2009-09-22 15:36:52
 
 Unfortunately my Sage upgrade croaked, so I can't check it immediately.   I will try to do so as soon as possible.
 
@@ -586,7 +586,7 @@ archive/issue_comments_056716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56716",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -613,16 +613,16 @@ One might as well add a doctest for that last case you mentioned, too.  I'm reba
 archive/issue_comments_056717.json:
 ```json
 {
-    "body": "Attachment [trac_6870-final.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final.patch) by kcrisman created at 2009-09-22 18:08:27\n\nBased on 4.1.2.alpha2; apply this patch only.",
+    "body": "Attachment [trac_6870-final.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final.patch) by @kcrisman created at 2009-09-22 18:08:27\n\nBased on 4.1.2.alpha2; apply this patch only.",
     "created_at": "2009-09-22T18:08:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56717",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6870-final.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final.patch) by kcrisman created at 2009-09-22 18:08:27
+Attachment [trac_6870-final.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final.patch) by @kcrisman created at 2009-09-22 18:08:27
 
 Based on 4.1.2.alpha2; apply this patch only.
 
@@ -638,7 +638,7 @@ archive/issue_comments_056718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56718",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -748,7 +748,7 @@ archive/issue_comments_056723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56723",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -768,7 +768,7 @@ archive/issue_comments_056724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56724",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -786,7 +786,7 @@ archive/issue_comments_056725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56725",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -855,7 +855,7 @@ archive/issue_comments_056728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56728",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -905,16 +905,16 @@ from that patch. The new patch would be the same as the original, only with chan
 archive/issue_comments_056730.json:
 ```json
 {
-    "body": "Attachment [trac_6870-final-v2.2.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final-v2.2.patch) by kcrisman created at 2009-09-27 00:48:10\n\nThe final patch.  No, really.",
+    "body": "Attachment [trac_6870-final-v2.2.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final-v2.2.patch) by @kcrisman created at 2009-09-27 00:48:10\n\nThe final patch.  No, really.",
     "created_at": "2009-09-27T00:48:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56730",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6870-final-v2.2.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final-v2.2.patch) by kcrisman created at 2009-09-27 00:48:10
+Attachment [trac_6870-final-v2.2.patch](tarball://root/attachments/some-uuid/ticket6870/trac_6870-final-v2.2.patch) by @kcrisman created at 2009-09-27 00:48:10
 
 The final patch.  No, really.
 
@@ -930,7 +930,7 @@ archive/issue_comments_056731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56731",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -952,7 +952,7 @@ archive/issue_comments_056732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6870#issuecomment-56732",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002298.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  jason ncalexan\n\nThe attached patch implements a way to compute a number field containing given algebraic numbers:\n\n```\nsage: nf_elements_from_algebraics([AA(sqrt(2)), AA(sqrt(3))])\n\n(Number Field in a with defining polynomial y^4 - 4*y^2 + 1,\n [-a^3 + 3*a, -a^2 + 2],\n Ring morphism:\n  From: Number Field in a with defining polynomial y^4 - 4*y^2 + 1\n  To:   Algebraic Real Field\n  Defn: a |--> [0.51763809020504147 .. 0.51763809020504159])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2298\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @jasongrout @ncalexan\n\nThe attached patch implements a way to compute a number field containing given algebraic numbers:\n\n```\nsage: nf_elements_from_algebraics([AA(sqrt(2)), AA(sqrt(3))])\n\n(Number Field in a with defining polynomial y^4 - 4*y^2 + 1,\n [-a^3 + 3*a, -a^2 + 2],\n Ring morphism:\n  From: Number Field in a with defining polynomial y^4 - 4*y^2 + 1\n  To:   Algebraic Real Field\n  Defn: a |--> [0.51763809020504147 .. 0.51763809020504159])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2298\n\n",
     "created_at": "2008-02-25T03:07:21Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_002298.json:
 ```
 Assignee: cwitty
 
-CC:  jason ncalexan
+CC:  @jasongrout @ncalexan
 
 The attached patch implements a way to compute a number field containing given algebraic numbers:
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2298
 archive/issue_comments_015237.json:
 ```json
 {
-    "body": "Attachment [nf-from-algebraic.patch](tarball://root/attachments/some-uuid/ticket2298/nf-from-algebraic.patch) by jason created at 2008-02-25 16:18:17",
+    "body": "Attachment [nf-from-algebraic.patch](tarball://root/attachments/some-uuid/ticket2298/nf-from-algebraic.patch) by @jasongrout created at 2008-02-25 16:18:17",
     "created_at": "2008-02-25T16:18:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2298#issuecomment-15237",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [nf-from-algebraic.patch](tarball://root/attachments/some-uuid/ticket2298/nf-from-algebraic.patch) by jason created at 2008-02-25 16:18:17
+Attachment [nf-from-algebraic.patch](tarball://root/attachments/some-uuid/ticket2298/nf-from-algebraic.patch) by @jasongrout created at 2008-02-25 16:18:17
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_015238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2298#issuecomment-15238",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_015242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2298#issuecomment-15242",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_015243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2298#issuecomment-15243",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_015246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2298#issuecomment-15246",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

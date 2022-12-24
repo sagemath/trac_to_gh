@@ -3,7 +3,7 @@
 archive/issues_002283.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nIn this example the last print statement goes boom, but should work fine.\n\n\n```\nclass Foo:\n   def __rmul__(self, left):\n      return 'hello'\n\nH = Foo()\nprint int(3)*H\nprint 3*H\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2283\n\n",
+    "body": "Assignee: @robertwb\n\nIn this example the last print statement goes boom, but should work fine.\n\n\n```\nclass Foo:\n   def __rmul__(self, left):\n      return 'hello'\n\nH = Foo()\nprint int(3)*H\nprint 3*H\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2283\n\n",
     "created_at": "2008-02-23T22:32:25Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_002283.json:
     "title": "the coercion code (in __mul__) should call __rmul__ when left or right is not coercible to a Sage element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2283",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 In this example the last print statement goes boom, but should work fine.
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2283
 archive/issue_comments_015145.json:
 ```json
 {
-    "body": "Attachment [coercion-rmul.patch](tarball://root/attachments/some-uuid/ticket2283/coercion-rmul.patch) by jason created at 2008-02-27 20:56:09",
+    "body": "Attachment [coercion-rmul.patch](tarball://root/attachments/some-uuid/ticket2283/coercion-rmul.patch) by @jasongrout created at 2008-02-27 20:56:09",
     "created_at": "2008-02-27T20:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2283#issuecomment-15145",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [coercion-rmul.patch](tarball://root/attachments/some-uuid/ticket2283/coercion-rmul.patch) by jason created at 2008-02-27 20:56:09
+Attachment [coercion-rmul.patch](tarball://root/attachments/some-uuid/ticket2283/coercion-rmul.patch) by @jasongrout created at 2008-02-27 20:56:09
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_015146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2283#issuecomment-15146",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_015147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2283#issuecomment-15147",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -110,16 +110,16 @@ disclaimer: I don't know much at all about the coercion system; the above statem
 archive/issue_comments_015148.json:
 ```json
 {
-    "body": "Attachment [coercion-rmul2.patch](tarball://root/attachments/some-uuid/ticket2283/coercion-rmul2.patch) by jason created at 2008-02-28 04:47:54\n\ncredit goes to gfurnish for noticing and helping track down the segfault that the original patch introduced!\n\nApply coercion-rmul2.patch instead of coercion-rmul.patch",
+    "body": "Attachment [coercion-rmul2.patch](tarball://root/attachments/some-uuid/ticket2283/coercion-rmul2.patch) by @jasongrout created at 2008-02-28 04:47:54\n\ncredit goes to gfurnish for noticing and helping track down the segfault that the original patch introduced!\n\nApply coercion-rmul2.patch instead of coercion-rmul.patch",
     "created_at": "2008-02-28T04:47:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2283#issuecomment-15148",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [coercion-rmul2.patch](tarball://root/attachments/some-uuid/ticket2283/coercion-rmul2.patch) by jason created at 2008-02-28 04:47:54
+Attachment [coercion-rmul2.patch](tarball://root/attachments/some-uuid/ticket2283/coercion-rmul2.patch) by @jasongrout created at 2008-02-28 04:47:54
 
 credit goes to gfurnish for noticing and helping track down the segfault that the original patch introduced!
 
@@ -137,7 +137,7 @@ archive/issue_comments_015149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2283#issuecomment-15149",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_015150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2283#issuecomment-15150",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_015151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2283#issuecomment-15151",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

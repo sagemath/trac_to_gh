@@ -108,16 +108,16 @@ Failed to load application: 'module' object has no attribute 'avatars'
 archive/issue_comments_024426.json:
 ```json
 {
-    "body": "Attachment [3463_2.patch](tarball://root/attachments/some-uuid/ticket3463/3463_2.patch) by was created at 2009-11-19 21:46:57\n\nThis was evidently the beginning of an unrealized vision.",
+    "body": "Attachment [3463_2.patch](tarball://root/attachments/some-uuid/ticket3463/3463_2.patch) by @williamstein created at 2009-11-19 21:46:57\n\nThis was evidently the beginning of an unrealized vision.",
     "created_at": "2009-11-19T21:46:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3463#issuecomment-24426",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [3463_2.patch](tarball://root/attachments/some-uuid/ticket3463/3463_2.patch) by was created at 2009-11-19 21:46:57
+Attachment [3463_2.patch](tarball://root/attachments/some-uuid/ticket3463/3463_2.patch) by @williamstein created at 2009-11-19 21:46:57
 
 This was evidently the beginning of an unrealized vision.
 
@@ -133,7 +133,7 @@ archive/issue_comments_024427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3463#issuecomment-24427",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

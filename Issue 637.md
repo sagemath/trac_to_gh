@@ -14,7 +14,7 @@ archive/issues_000637.json:
     "title": "notebook improvement --",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/637",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -46,7 +46,7 @@ archive/issue_comments_003283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/637#issuecomment-3283",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_003284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/637#issuecomment-3284",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,16 +113,16 @@ archive/issue_comments_003285.json:
 archive/issue_comments_003286.json:
 ```json
 {
-    "body": "Attachment [sage-637.patch](tarball://root/attachments/some-uuid/ticket637/sage-637.patch) by was created at 2008-05-11 05:03:26",
+    "body": "Attachment [sage-637.patch](tarball://root/attachments/some-uuid/ticket637/sage-637.patch) by @williamstein created at 2008-05-11 05:03:26",
     "created_at": "2008-05-11T05:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/637#issuecomment-3286",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-637.patch](tarball://root/attachments/some-uuid/ticket637/sage-637.patch) by was created at 2008-05-11 05:03:26
+Attachment [sage-637.patch](tarball://root/attachments/some-uuid/ticket637/sage-637.patch) by @williamstein created at 2008-05-11 05:03:26
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_003287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/637#issuecomment-3287",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -311,16 +311,16 @@ http://sage.math.washington.edu/home/boothby/pippenger.sws
 archive/issue_comments_003293.json:
 ```json
 {
-    "body": "Attachment [sage-637-part2.patch](tarball://root/attachments/some-uuid/ticket637/sage-637-part2.patch) by was created at 2008-05-15 01:12:27",
+    "body": "Attachment [sage-637-part2.patch](tarball://root/attachments/some-uuid/ticket637/sage-637-part2.patch) by @williamstein created at 2008-05-15 01:12:27",
     "created_at": "2008-05-15T01:12:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/637#issuecomment-3293",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-637-part2.patch](tarball://root/attachments/some-uuid/ticket637/sage-637-part2.patch) by was created at 2008-05-15 01:12:27
+Attachment [sage-637-part2.patch](tarball://root/attachments/some-uuid/ticket637/sage-637-part2.patch) by @williamstein created at 2008-05-15 01:12:27
 
 
 
@@ -370,16 +370,16 @@ This occurs whenever I try to upload from a URL:
 archive/issue_comments_003295.json:
 ```json
 {
-    "body": "Attachment [sage-637-part3.patch](tarball://root/attachments/some-uuid/ticket637/sage-637-part3.patch) by was created at 2008-05-15 02:16:05",
+    "body": "Attachment [sage-637-part3.patch](tarball://root/attachments/some-uuid/ticket637/sage-637-part3.patch) by @williamstein created at 2008-05-15 02:16:05",
     "created_at": "2008-05-15T02:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/637#issuecomment-3295",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-637-part3.patch](tarball://root/attachments/some-uuid/ticket637/sage-637-part3.patch) by was created at 2008-05-15 02:16:05
+Attachment [sage-637-part3.patch](tarball://root/attachments/some-uuid/ticket637/sage-637-part3.patch) by @williamstein created at 2008-05-15 02:16:05
 
 
 

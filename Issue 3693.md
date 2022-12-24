@@ -3,7 +3,7 @@
 archive/issues_003693.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  was mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3693\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @williamstein @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3693\n\n",
     "created_at": "2008-07-21T07:27:31Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_003693.json:
     "title": "upgrade moinmoin to 1.7.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3693",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  was mhansen
+CC:  @williamstein @mwhansen
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_026160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26160",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_026161.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2008-07-21T07:42:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26161",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_026162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26162",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -102,16 +102,16 @@ The current problems:
 archive/issue_comments_026163.json:
 ```json
 {
-    "body": "Attachment [sage-3693-part1.patch](tarball://root/attachments/some-uuid/ticket3693/sage-3693-part1.patch) by mhansen created at 2008-07-22 08:55:39\n\nI have an updated spkg at http://sage.math.washington.edu/home/mhansen/moin-1.7.1.spkg along with a new patch.\n\nIt takes care of all the issues listed above except the weird permissions errors on OS X.  The second patch is just a fairly quick version I did, and it would be good if someone else sat down and looked at it.  I tested the migration bit on a simple wiki and it worked correctly with jsMath, the textchas, etc.",
+    "body": "Attachment [sage-3693-part1.patch](tarball://root/attachments/some-uuid/ticket3693/sage-3693-part1.patch) by @mwhansen created at 2008-07-22 08:55:39\n\nI have an updated spkg at http://sage.math.washington.edu/home/mhansen/moin-1.7.1.spkg along with a new patch.\n\nIt takes care of all the issues listed above except the weird permissions errors on OS X.  The second patch is just a fairly quick version I did, and it would be good if someone else sat down and looked at it.  I tested the migration bit on a simple wiki and it worked correctly with jsMath, the textchas, etc.",
     "created_at": "2008-07-22T08:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26163",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage-3693-part1.patch](tarball://root/attachments/some-uuid/ticket3693/sage-3693-part1.patch) by mhansen created at 2008-07-22 08:55:39
+Attachment [sage-3693-part1.patch](tarball://root/attachments/some-uuid/ticket3693/sage-3693-part1.patch) by @mwhansen created at 2008-07-22 08:55:39
 
 I have an updated spkg at http://sage.math.washington.edu/home/mhansen/moin-1.7.1.spkg along with a new patch.
 
@@ -124,16 +124,16 @@ It takes care of all the issues listed above except the weird permissions errors
 archive/issue_comments_026164.json:
 ```json
 {
-    "body": "Attachment [trac_3693-part2.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-part2.patch) by mhansen created at 2008-07-22 08:57:40",
+    "body": "Attachment [trac_3693-part2.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-part2.patch) by @mwhansen created at 2008-07-22 08:57:40",
     "created_at": "2008-07-22T08:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26164",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3693-part2.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-part2.patch) by mhansen created at 2008-07-22 08:57:40
+Attachment [trac_3693-part2.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-part2.patch) by @mwhansen created at 2008-07-22 08:57:40
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_026165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26165",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_026167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26167",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -204,16 +204,16 @@ Also, it currently does write a backup before upgrading.
 archive/issue_comments_026168.json:
 ```json
 {
-    "body": "Attachment [trac_3693-part3.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-part3.patch) by mhansen created at 2008-10-02 08:13:57\n\nI posted an spkg for MoinMoin 1.7.2 here:\n\nhttp://sage.math.washington.edu/home/mhansen/moin-1.7.2.spkg",
+    "body": "Attachment [trac_3693-part3.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-part3.patch) by @mwhansen created at 2008-10-02 08:13:57\n\nI posted an spkg for MoinMoin 1.7.2 here:\n\nhttp://sage.math.washington.edu/home/mhansen/moin-1.7.2.spkg",
     "created_at": "2008-10-02T08:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26168",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3693-part3.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-part3.patch) by mhansen created at 2008-10-02 08:13:57
+Attachment [trac_3693-part3.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-part3.patch) by @mwhansen created at 2008-10-02 08:13:57
 
 I posted an spkg for MoinMoin 1.7.2 here:
 
@@ -231,7 +231,7 @@ archive/issue_comments_026169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26169",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_026170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26170",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -292,16 +292,16 @@ archive/issue_comments_026171.json:
 archive/issue_comments_026172.json:
 ```json
 {
-    "body": "Attachment [trac_3693-combined.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-combined.patch) by mhansen created at 2008-12-09 03:54:38",
+    "body": "Attachment [trac_3693-combined.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-combined.patch) by @mwhansen created at 2008-12-09 03:54:38",
     "created_at": "2008-12-09T03:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26172",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3693-combined.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-combined.patch) by mhansen created at 2008-12-09 03:54:38
+Attachment [trac_3693-combined.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3693-combined.patch) by @mwhansen created at 2008-12-09 03:54:38
 
 
 
@@ -315,7 +315,7 @@ archive/issue_comments_026173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26173",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_026174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26174",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_026176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26176",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_026177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26177",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -460,7 +460,7 @@ archive/issue_comments_026178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26178",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -478,7 +478,7 @@ archive/issue_comments_026179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26179",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_026180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26180",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -518,7 +518,7 @@ archive/issue_comments_026181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26181",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_026182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26182",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_026183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26183",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -576,7 +576,7 @@ archive/issue_comments_026184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26184",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -598,7 +598,7 @@ archive/issue_comments_026185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26185",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -618,7 +618,7 @@ archive/issue_comments_026186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26186",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_026187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26187",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -656,7 +656,7 @@ archive/issue_comments_026188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26188",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -674,7 +674,7 @@ archive/issue_comments_026189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26189",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -692,7 +692,7 @@ archive/issue_comments_026190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26190",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -705,16 +705,16 @@ Patch for moin-1.9.p0.spkg. Apply this patch alone to sage repo.
 archive/issue_comments_026191.json:
 ```json
 {
-    "body": "Attachment [trac_3683-moinmoin-1.9.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-moinmoin-1.9.patch) by timdumol created at 2009-12-20 12:11:58",
+    "body": "Attachment [trac_3683-moinmoin-1.9.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-moinmoin-1.9.patch) by @TimDumol created at 2009-12-20 12:11:58",
     "created_at": "2009-12-20T12:11:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26191",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_3683-moinmoin-1.9.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-moinmoin-1.9.patch) by timdumol created at 2009-12-20 12:11:58
+Attachment [trac_3683-moinmoin-1.9.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-moinmoin-1.9.patch) by @TimDumol created at 2009-12-20 12:11:58
 
 
 
@@ -728,7 +728,7 @@ archive/issue_comments_026192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26192",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -746,7 +746,7 @@ archive/issue_comments_026193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26193",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -801,7 +801,7 @@ archive/issue_comments_026194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26194",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -814,16 +814,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_026195.json:
 ```json
 {
-    "body": "Attachment [trac_3683-moinmoin-1.9.2.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-moinmoin-1.9.2.patch) by timdumol created at 2009-12-22 04:50:18\n\nAdds a `fork` argument.",
+    "body": "Attachment [trac_3683-moinmoin-1.9.2.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-moinmoin-1.9.2.patch) by @TimDumol created at 2009-12-22 04:50:18\n\nAdds a `fork` argument.",
     "created_at": "2009-12-22T04:50:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26195",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_3683-moinmoin-1.9.2.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-moinmoin-1.9.2.patch) by timdumol created at 2009-12-22 04:50:18
+Attachment [trac_3683-moinmoin-1.9.2.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-moinmoin-1.9.2.patch) by @TimDumol created at 2009-12-22 04:50:18
 
 Adds a `fork` argument.
 
@@ -839,7 +839,7 @@ archive/issue_comments_026196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26196",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -857,7 +857,7 @@ archive/issue_comments_026197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26197",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -875,7 +875,7 @@ archive/issue_comments_026198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26198",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -893,7 +893,7 @@ archive/issue_comments_026199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26199",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -911,7 +911,7 @@ archive/issue_comments_026200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26200",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -929,7 +929,7 @@ archive/issue_comments_026201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26201",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -947,7 +947,7 @@ archive/issue_comments_026202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26202",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -965,7 +965,7 @@ archive/issue_comments_026203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26203",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -978,16 +978,16 @@ Minor formatting, docstring changes.  Replaces previous.  sage repo.
 archive/issue_comments_026204.json:
 ```json
 {
-    "body": "Attachment [trac_3683-upgrade_moinmoin.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-upgrade_moinmoin.patch) by mpatel created at 2010-01-21 10:03:23",
+    "body": "Attachment [trac_3683-upgrade_moinmoin.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-upgrade_moinmoin.patch) by @qed777 created at 2010-01-21 10:03:23",
     "created_at": "2010-01-21T10:03:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26204",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_3683-upgrade_moinmoin.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-upgrade_moinmoin.patch) by mpatel created at 2010-01-21 10:03:23
+Attachment [trac_3683-upgrade_moinmoin.patch](tarball://root/attachments/some-uuid/ticket3693/trac_3683-upgrade_moinmoin.patch) by @qed777 created at 2010-01-21 10:03:23
 
 
 
@@ -1001,7 +1001,7 @@ archive/issue_comments_026205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26205",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1034,7 +1034,7 @@ archive/issue_comments_026206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26206",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1052,7 +1052,7 @@ archive/issue_comments_026207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26207",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1070,7 +1070,7 @@ archive/issue_comments_026208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3693#issuecomment-26208",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -91,7 +91,7 @@ archive/issue_comments_025538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3619#issuecomment-25538",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -209,16 +209,16 @@ Attachment [sage-3619.patch](tarball://root/attachments/some-uuid/ticket3619/sag
 archive/issue_comments_025543.json:
 ```json
 {
-    "body": "Attachment [sagenb-3619.patch](tarball://root/attachments/some-uuid/ticket3619/sagenb-3619.patch) by was created at 2009-11-19 22:43:29\n\nnew patch against sagenb that simply adds calls to log.msg in a few places, which will properly log user login attempts using the standard twisted loging facility",
+    "body": "Attachment [sagenb-3619.patch](tarball://root/attachments/some-uuid/ticket3619/sagenb-3619.patch) by @williamstein created at 2009-11-19 22:43:29\n\nnew patch against sagenb that simply adds calls to log.msg in a few places, which will properly log user login attempts using the standard twisted loging facility",
     "created_at": "2009-11-19T22:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3619#issuecomment-25543",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb-3619.patch](tarball://root/attachments/some-uuid/ticket3619/sagenb-3619.patch) by was created at 2009-11-19 22:43:29
+Attachment [sagenb-3619.patch](tarball://root/attachments/some-uuid/ticket3619/sagenb-3619.patch) by @williamstein created at 2009-11-19 22:43:29
 
 new patch against sagenb that simply adds calls to log.msg in a few places, which will properly log user login attempts using the standard twisted loging facility
 
@@ -234,7 +234,7 @@ archive/issue_comments_025544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3619#issuecomment-25544",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_025545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3619#issuecomment-25545",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_025546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3619#issuecomment-25546",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_025547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3619#issuecomment-25547",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_025548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3619#issuecomment-25548",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_025549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3619",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3619#issuecomment-25549",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

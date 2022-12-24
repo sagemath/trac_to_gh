@@ -3,7 +3,7 @@
 archive/issues_000878.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\n\n```\ndiff -r 04e9996b0332 sage/graphs/graph.py\n--- a/sage/graphs/graph.py      Sat Oct 13 13:12:24 2007 -0500\n+++ b/sage/graphs/graph.py      Sat Oct 13 13:39:03 2007 -0500\n@@ -2114,11 +2114,13 @@ class GenericGraph(SageObject):\n             (2, 3, None),\n             (2, 4, None),\n             (3, 4, None)]\n-            sage: h.edges()\n-            [((2, 3, None), (3, 4, None), None),\n-            ((1, 2, None), (2, 4, None), None),\n-            ((1, 2, None), (2, 3, None), None),\n-            ((1, 3, None), (3, 4, None), None)]\n+            sage: sage: h.am()\n+            [0 0 0 1 1 0]\n+            [0 0 0 0 0 1]\n+            [0 0 0 0 0 0]\n+            [0 0 0 0 0 1]\n+            [0 0 0 0 0 0]\n+            [0 0 0 0 0 0]\n\n         \"\"\"\n         if self.is_directed():\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/878\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\n\n```\ndiff -r 04e9996b0332 sage/graphs/graph.py\n--- a/sage/graphs/graph.py      Sat Oct 13 13:12:24 2007 -0500\n+++ b/sage/graphs/graph.py      Sat Oct 13 13:39:03 2007 -0500\n@@ -2114,11 +2114,13 @@ class GenericGraph(SageObject):\n             (2, 3, None),\n             (2, 4, None),\n             (3, 4, None)]\n-            sage: h.edges()\n-            [((2, 3, None), (3, 4, None), None),\n-            ((1, 2, None), (2, 4, None), None),\n-            ((1, 2, None), (2, 3, None), None),\n-            ((1, 3, None), (3, 4, None), None)]\n+            sage: sage: h.am()\n+            [0 0 0 1 1 0]\n+            [0 0 0 0 0 1]\n+            [0 0 0 0 0 0]\n+            [0 0 0 0 0 1]\n+            [0 0 0 0 0 0]\n+            [0 0 0 0 0 0]\n\n         \"\"\"\n         if self.is_directed():\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/878\n\n",
     "created_at": "2007-10-13T18:44:34Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000878.json:
     "title": "[with patch] graphs: Correct a doctest failing on some systems due to different output ordering.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/878",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -83,7 +83,7 @@ archive/issue_comments_005439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/878#issuecomment-5439",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

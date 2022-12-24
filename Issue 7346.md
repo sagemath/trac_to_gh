@@ -14,7 +14,7 @@ archive/issues_007346.json:
     "title": "notebook -- needless vertical scroll bars on output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7346",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7346
 archive/issue_comments_061564.json:
 ```json
 {
-    "body": "Attachment [trac_sagenb-7346.patch](tarball://root/attachments/some-uuid/ticket7346/trac_sagenb-7346.patch) by was created at 2009-10-29 07:04:33",
+    "body": "Attachment [trac_sagenb-7346.patch](tarball://root/attachments/some-uuid/ticket7346/trac_sagenb-7346.patch) by @williamstein created at 2009-10-29 07:04:33",
     "created_at": "2009-10-29T07:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7346#issuecomment-61564",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_sagenb-7346.patch](tarball://root/attachments/some-uuid/ticket7346/trac_sagenb-7346.patch) by was created at 2009-10-29 07:04:33
+Attachment [trac_sagenb-7346.patch](tarball://root/attachments/some-uuid/ticket7346/trac_sagenb-7346.patch) by @williamstein created at 2009-10-29 07:04:33
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_061565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7346#issuecomment-61565",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_061566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7346#issuecomment-61566",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_061567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7346#issuecomment-61567",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

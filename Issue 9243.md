@@ -3,7 +3,7 @@
 archive/issues_009243.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  wjp\n\nRight now, sage-doctest uses these return codes:\n\n```\n# Return value in process exit code:\n# 0: all tests passed\n# 1: file not found\n# 2: KeyboardInterrupt\n# 3: doctest process was terminated by a signal\n# 4: the doctesting framework raised an exception\n# 100: failed doctests\n```\n\nIn #8641 and #9224, we make sure that the return code gets passed on to the user, and for multiple files, we `or' the return codes together. It would be much nicer for the user if we used powers of 2 for return codes, so that it's easy to see exactly what happened. \n\nI recommend we change 3->4, 4->8, and 100->128 in sage-doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9243\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @wjp\n\nRight now, sage-doctest uses these return codes:\n\n```\n# Return value in process exit code:\n# 0: all tests passed\n# 1: file not found\n# 2: KeyboardInterrupt\n# 3: doctest process was terminated by a signal\n# 4: the doctesting framework raised an exception\n# 100: failed doctests\n```\n\nIn #8641 and #9224, we make sure that the return code gets passed on to the user, and for multiple files, we `or' the return codes together. It would be much nicer for the user if we used powers of 2 for return codes, so that it's easy to see exactly what happened. \n\nI recommend we change 3->4, 4->8, and 100->128 in sage-doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9243\n\n",
     "created_at": "2010-06-15T09:33:59Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009243.json:
     "title": "sage-doctest should use powers of 2 for return codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9243",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: mvngu
 
-CC:  wjp
+CC:  @wjp
 
 Right now, sage-doctest uses these return codes:
 
@@ -53,7 +53,7 @@ archive/issue_comments_086925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9243#issuecomment-86925",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_086926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9243#issuecomment-86926",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -84,16 +84,16 @@ Changing status from new to needs_review.
 archive/issue_comments_086927.json:
 ```json
 {
-    "body": "Attachment [trac_9243.patch](tarball://root/attachments/some-uuid/ticket9243/trac_9243.patch) by ddrake created at 2010-06-18 01:59:30\n\napply to scripts repo",
+    "body": "Attachment [trac_9243.patch](tarball://root/attachments/some-uuid/ticket9243/trac_9243.patch) by @dandrake created at 2010-06-18 01:59:30\n\napply to scripts repo",
     "created_at": "2010-06-18T01:59:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9243#issuecomment-86927",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_9243.patch](tarball://root/attachments/some-uuid/ticket9243/trac_9243.patch) by ddrake created at 2010-06-18 01:59:30
+Attachment [trac_9243.patch](tarball://root/attachments/some-uuid/ticket9243/trac_9243.patch) by @dandrake created at 2010-06-18 01:59:30
 
 apply to scripts repo
 
@@ -109,7 +109,7 @@ archive/issue_comments_086928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9243#issuecomment-86928",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_086929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9243#issuecomment-86929",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_086930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9243#issuecomment-86930",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_086931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9243#issuecomment-86931",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_086932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9243#issuecomment-86932",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -203,16 +203,16 @@ apply after trac_9243.patch
 archive/issue_comments_086933.json:
 ```json
 {
-    "body": "Attachment [trac_9243_2.patch](tarball://root/attachments/some-uuid/ticket9243/trac_9243_2.patch) by wjp created at 2010-07-06 20:53:48\n\nI added a patch to address the internally used error code 5.\n\nPositive review for the rest of the patch. Could someone review my small reviewer patch?",
+    "body": "Attachment [trac_9243_2.patch](tarball://root/attachments/some-uuid/ticket9243/trac_9243_2.patch) by @wjp created at 2010-07-06 20:53:48\n\nI added a patch to address the internally used error code 5.\n\nPositive review for the rest of the patch. Could someone review my small reviewer patch?",
     "created_at": "2010-07-06T20:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9243#issuecomment-86933",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac_9243_2.patch](tarball://root/attachments/some-uuid/ticket9243/trac_9243_2.patch) by wjp created at 2010-07-06 20:53:48
+Attachment [trac_9243_2.patch](tarball://root/attachments/some-uuid/ticket9243/trac_9243_2.patch) by @wjp created at 2010-07-06 20:53:48
 
 I added a patch to address the internally used error code 5.
 
@@ -230,7 +230,7 @@ archive/issue_comments_086934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9243#issuecomment-86934",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_086935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9243#issuecomment-86935",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_086936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9243#issuecomment-86936",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_086937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9243#issuecomment-86937",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003249.json:
 ```json
 {
-    "body": "Assignee: was\n\nI was doing the following, when testing the jordan_form method...\n\n\n``` \nsage: A=Matrix(ComplexField(200),[[1,-2],[2,-1]])\nsage: jordan=A.jordan_form(transformation=True,subdivide=False)\nsage: P=jordan[1]\n```\n\n\n(P is now the transformation matrix, jordan[1] is the jordan canonical\nform)\n\n\n```\nsage: det(P)\n1.7320508075688772935274463415058723669428052538103806280558*I\n```\n\n\nso clearly the matrix P has non zero determinant, as it should, however...\n\n\n```\nsage: P.inverse()\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/matrix2.pyx in sage.matrix.matrix2.Matrix.inverse (sage/matrix/matrix2.c:19571)()\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/matrix0.pyx in sage.matrix.matrix0.Matrix.__invert__ (sage/matrix/matrix0.c:12213)()\n\n<type 'exceptions.ZeroDivisionError'>: self is not invertible\n```\n\n\nThe most strange thing is that things depends strongly on the precision used for the\ncomplex field...the same computation using 20 bits of precision gives\n\n\n```\nsage:  A=Matrix(ComplexField(20),[[1,-2],[2,-1]])\nsage: jordan=B.jordan_form(transformation=True,subdivide=False)\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/matrix2.pyx in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20606)()\n\n<type 'exceptions.AttributeError'>: 'NoneType' object has no attribute 'is_exact'\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3249\n\n",
+    "body": "Assignee: @williamstein\n\nI was doing the following, when testing the jordan_form method...\n\n\n``` \nsage: A=Matrix(ComplexField(200),[[1,-2],[2,-1]])\nsage: jordan=A.jordan_form(transformation=True,subdivide=False)\nsage: P=jordan[1]\n```\n\n\n(P is now the transformation matrix, jordan[1] is the jordan canonical\nform)\n\n\n```\nsage: det(P)\n1.7320508075688772935274463415058723669428052538103806280558*I\n```\n\n\nso clearly the matrix P has non zero determinant, as it should, however...\n\n\n```\nsage: P.inverse()\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/matrix2.pyx in sage.matrix.matrix2.Matrix.inverse (sage/matrix/matrix2.c:19571)()\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/matrix0.pyx in sage.matrix.matrix0.Matrix.__invert__ (sage/matrix/matrix0.c:12213)()\n\n<type 'exceptions.ZeroDivisionError'>: self is not invertible\n```\n\n\nThe most strange thing is that things depends strongly on the precision used for the\ncomplex field...the same computation using 20 bits of precision gives\n\n\n```\nsage:  A=Matrix(ComplexField(20),[[1,-2],[2,-1]])\nsage: jordan=B.jordan_form(transformation=True,subdivide=False)\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/matrix2.pyx in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20606)()\n\n<type 'exceptions.AttributeError'>: 'NoneType' object has no attribute 'is_exact'\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3249\n\n",
     "created_at": "2008-05-17T22:28:46Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003249.json:
     "title": "a bug in computing the inverse of the matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3249",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I was doing the following, when testing the jordan_form method...
 
@@ -94,7 +94,7 @@ archive/issue_comments_022483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3249#issuecomment-22483",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_022484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3249#issuecomment-22484",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_022485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3249#issuecomment-22485",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_022486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3249#issuecomment-22486",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005873.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jason stephen\n\n1) Explicitly add SAGE_LOCAL to the dependency search path for matplotlib for FreeBSD.\n\n2) gcc-4.3 on FreeBSD (though not the base gcc4.2) appears to define putchar() in <stdio.h> in a way that breaks the putchar() definitions inside ttconv.  It's not immediately clear what the problem is (since there's no immediately obvious difference in the way putchar() is defined in <stdio.h>) so this patch takes\nthe easy way out and undef's the offending putchar() macro.\n\n3) Individual character bounding boxes in AFM files do not have to be integral so convert each bounding box to a list of floats, rather than a list of ints. This corrects a problem where most of the tests would fail with \"ValueError: invalid literal for int() with base 10: '539.621'\" on FreeBSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5873\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout stephen\n\n1) Explicitly add SAGE_LOCAL to the dependency search path for matplotlib for FreeBSD.\n\n2) gcc-4.3 on FreeBSD (though not the base gcc4.2) appears to define putchar() in <stdio.h> in a way that breaks the putchar() definitions inside ttconv.  It's not immediately clear what the problem is (since there's no immediately obvious difference in the way putchar() is defined in <stdio.h>) so this patch takes\nthe easy way out and undef's the offending putchar() macro.\n\n3) Individual character bounding boxes in AFM files do not have to be integral so convert each bounding box to a list of floats, rather than a list of ints. This corrects a problem where most of the tests would fail with \"ValueError: invalid literal for int() with base 10: '539.621'\" on FreeBSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5873\n\n",
     "created_at": "2009-04-23T08:43:34Z",
     "labels": [
         "porting: BSD",
@@ -14,12 +14,12 @@ archive/issues_005873.json:
     "title": "[with patch, needs review] Fix matplotlib build on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5873",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 Assignee: mabshoff
 
-CC:  jason stephen
+CC:  @jasongrout stephen
 
 1) Explicitly add SAGE_LOCAL to the dependency search path for matplotlib for FreeBSD.
 
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5873
 archive/issue_comments_046377.json:
 ```json
 {
-    "body": "Attachment [matplotlib-0.98.5.3rc0-svn6910.p3.patch](tarball://root/attachments/some-uuid/ticket5873/matplotlib-0.98.5.3rc0-svn6910.p3.patch) by jason created at 2009-09-22 19:57:03\n\nOf course, this should be added to the current matplotlib spkg.",
+    "body": "Attachment [matplotlib-0.98.5.3rc0-svn6910.p3.patch](tarball://root/attachments/some-uuid/ticket5873/matplotlib-0.98.5.3rc0-svn6910.p3.patch) by @jasongrout created at 2009-09-22 19:57:03\n\nOf course, this should be added to the current matplotlib spkg.",
     "created_at": "2009-09-22T19:57:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46377",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [matplotlib-0.98.5.3rc0-svn6910.p3.patch](tarball://root/attachments/some-uuid/ticket5873/matplotlib-0.98.5.3rc0-svn6910.p3.patch) by jason created at 2009-09-22 19:57:03
+Attachment [matplotlib-0.98.5.3rc0-svn6910.p3.patch](tarball://root/attachments/some-uuid/ticket5873/matplotlib-0.98.5.3rc0-svn6910.p3.patch) by @jasongrout created at 2009-09-22 19:57:03
 
 Of course, this should be added to the current matplotlib spkg.
 
@@ -59,16 +59,16 @@ Of course, this should be added to the current matplotlib spkg.
 archive/issue_comments_046378.json:
 ```json
 {
-    "body": "Attachment [5873.matplotlib.patch](tarball://root/attachments/some-uuid/ticket5873/5873.matplotlib.patch) by pjeremy created at 2010-01-03 09:45:44",
+    "body": "Attachment [5873.matplotlib.patch](tarball://root/attachments/some-uuid/ticket5873/5873.matplotlib.patch) by @peterjeremy created at 2010-01-03 09:45:44",
     "created_at": "2010-01-03T09:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46378",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [5873.matplotlib.patch](tarball://root/attachments/some-uuid/ticket5873/5873.matplotlib.patch) by pjeremy created at 2010-01-03 09:45:44
+Attachment [5873.matplotlib.patch](tarball://root/attachments/some-uuid/ticket5873/5873.matplotlib.patch) by @peterjeremy created at 2010-01-03 09:45:44
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_046379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46379",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_046380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46380",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_046381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46381",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_046383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46383",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_046384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46384",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -237,16 +237,16 @@ Dave
 archive/issue_comments_046386.json:
 ```json
 {
-    "body": "Attachment [matplotlib-0.99.1.p4.patch](tarball://root/attachments/some-uuid/ticket5873/matplotlib-0.99.1.p4.patch) by pjeremy created at 2010-07-17 20:53:07",
+    "body": "Attachment [matplotlib-0.99.1.p4.patch](tarball://root/attachments/some-uuid/ticket5873/matplotlib-0.99.1.p4.patch) by @peterjeremy created at 2010-07-17 20:53:07",
     "created_at": "2010-07-17T20:53:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46386",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [matplotlib-0.99.1.p4.patch](tarball://root/attachments/some-uuid/ticket5873/matplotlib-0.99.1.p4.patch) by pjeremy created at 2010-07-17 20:53:07
+Attachment [matplotlib-0.99.1.p4.patch](tarball://root/attachments/some-uuid/ticket5873/matplotlib-0.99.1.p4.patch) by @peterjeremy created at 2010-07-17 20:53:07
 
 
 
@@ -260,7 +260,7 @@ archive/issue_comments_046387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46387",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_046388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46388",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_046389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46389",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_046390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46390",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_046391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46391",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_046392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46392",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_046393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46393",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_046395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46395",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_046398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46398",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_046401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46401",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -557,7 +557,7 @@ archive/issue_comments_046402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5873#issuecomment-46402",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

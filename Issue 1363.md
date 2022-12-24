@@ -3,7 +3,7 @@
 archive/issues_001363.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere's a patch for this as part of Robert Bradshaw's patch attached to #1275.  I'll split it out and add the docstring warnings, and put the new patch here.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1363\n\n",
+    "body": "Assignee: @williamstein\n\nThere's a patch for this as part of Robert Bradshaw's patch attached to #1275.  I'll split it out and add the docstring warnings, and put the new patch here.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1363\n\n",
     "created_at": "2007-12-02T05:24:51Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001363.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There's a patch for this as part of Robert Bradshaw's patch attached to #1275.  I'll split it out and add the docstring warnings, and put the new patch here.
 
@@ -50,16 +50,16 @@ Attachment [1363.patch](tarball://root/attachments/some-uuid/ticket1363/1363.pat
 archive/issue_comments_008730.json:
 ```json
 {
-    "body": "Attachment [1363-doc.patch](tarball://root/attachments/some-uuid/ticket1363/1363-doc.patch) by rlm created at 2007-12-18 20:42:42\n\nAdjusts for mhansen's float printing patch.",
+    "body": "Attachment [1363-doc.patch](tarball://root/attachments/some-uuid/ticket1363/1363-doc.patch) by @rlmill created at 2007-12-18 20:42:42\n\nAdjusts for mhansen's float printing patch.",
     "created_at": "2007-12-18T20:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1363#issuecomment-8730",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [1363-doc.patch](tarball://root/attachments/some-uuid/ticket1363/1363-doc.patch) by rlm created at 2007-12-18 20:42:42
+Attachment [1363-doc.patch](tarball://root/attachments/some-uuid/ticket1363/1363-doc.patch) by @rlmill created at 2007-12-18 20:42:42
 
 Adjusts for mhansen's float printing patch.
 
@@ -75,7 +75,7 @@ archive/issue_comments_008731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1363#issuecomment-8731",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_008732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1363#issuecomment-8732",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

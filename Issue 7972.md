@@ -3,7 +3,7 @@
 archive/issues_007972.json:
 ```json
 {
-    "body": "Assignee: was\n\n`show_identifiers` works fine on the command line, but not in the notebook.\n\n```\nWhen I use show_identifiers() from the command line, the behaviour is\nas described.  But if I use it from a notebook, then it returns an\narray with 1746 elements, even if I call reset().  The first few\nelements are\n\n['paretovariate', 'is_MPolynomial', 'cartan_matrix',\n'is_NumberFieldElement', 'elliptic_curves', 'sleep',\n\nWould it be more sensible not to display these omnipresent\nidentifiers?  It's hard to find my own variables in the mess!\n(I'm on 10.6, core 2 duo, running 4.3, if this is a bug)\n\nCheers,\nFelix\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7972\n\n",
+    "body": "Assignee: @williamstein\n\n`show_identifiers` works fine on the command line, but not in the notebook.\n\n```\nWhen I use show_identifiers() from the command line, the behaviour is\nas described.  But if I use it from a notebook, then it returns an\narray with 1746 elements, even if I call reset().  The first few\nelements are\n\n['paretovariate', 'is_MPolynomial', 'cartan_matrix',\n'is_NumberFieldElement', 'elliptic_curves', 'sleep',\n\nWould it be more sensible not to display these omnipresent\nidentifiers?  It's hard to find my own variables in the mess!\n(I'm on 10.6, core 2 duo, running 4.3, if this is a bug)\n\nCheers,\nFelix\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7972\n\n",
     "created_at": "2010-01-18T06:13:19Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007972.json:
     "title": "show_identifiers is broken in the notebook; needs to not include globals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7972",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 `show_identifiers` works fine on the command line, but not in the notebook.
 
@@ -56,7 +56,7 @@ archive/issue_comments_069540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7972#issuecomment-69540",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -208,16 +208,16 @@ Minh Van Nguyen
 archive/issue_comments_069541.json:
 ```json
 {
-    "body": "Attachment [trac_7972.patch](tarball://root/attachments/some-uuid/ticket7972/trac_7972.patch) by was created at 2010-01-18 07:09:13",
+    "body": "Attachment [trac_7972.patch](tarball://root/attachments/some-uuid/ticket7972/trac_7972.patch) by @williamstein created at 2010-01-18 07:09:13",
     "created_at": "2010-01-18T07:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7972#issuecomment-69541",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7972.patch](tarball://root/attachments/some-uuid/ticket7972/trac_7972.patch) by was created at 2010-01-18 07:09:13
+Attachment [trac_7972.patch](tarball://root/attachments/some-uuid/ticket7972/trac_7972.patch) by @williamstein created at 2010-01-18 07:09:13
 
 
 
@@ -231,7 +231,7 @@ archive/issue_comments_069542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7972#issuecomment-69542",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_069545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7972#issuecomment-69545",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

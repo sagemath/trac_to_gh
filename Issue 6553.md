@@ -3,7 +3,7 @@
 archive/issues_006553.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rbeezer\n\nExtracting a slice from a sparse matrix is insanely slow, as the code effectively treats the matrix as a dense matrix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6553\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer\n\nExtracting a slice from a sparse matrix is insanely slow, as the code effectively treats the matrix as a dense matrix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6553\n\n",
     "created_at": "2009-07-18T12:46:30Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_006553.json:
     "title": "fast slicing of sparse matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6553",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rbeezer
+CC:  @rbeezer
 
 Extracting a slice from a sparse matrix is insanely slow, as the code effectively treats the matrix as a dense matrix.
 
@@ -39,7 +39,7 @@ archive/issue_comments_053440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6553#issuecomment-53440",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_053441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6553#issuecomment-53441",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_053442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6553#issuecomment-53442",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_053443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6553#issuecomment-53443",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_053444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6553#issuecomment-53444",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -209,16 +209,16 @@ Rob
 archive/issue_comments_053445.json:
 ```json
 {
-    "body": "Attachment [trac-6553-slicing-sparse-matrices.patch](tarball://root/attachments/some-uuid/ticket6553/trac-6553-slicing-sparse-matrices.patch) by jason created at 2009-07-21 06:50:33\n\nI've updated the patch again with both of our outputs.  It should pass your doctests now too.  Can you review it again?\n\nThanks!",
+    "body": "Attachment [trac-6553-slicing-sparse-matrices.patch](tarball://root/attachments/some-uuid/ticket6553/trac-6553-slicing-sparse-matrices.patch) by @jasongrout created at 2009-07-21 06:50:33\n\nI've updated the patch again with both of our outputs.  It should pass your doctests now too.  Can you review it again?\n\nThanks!",
     "created_at": "2009-07-21T06:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6553#issuecomment-53445",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6553-slicing-sparse-matrices.patch](tarball://root/attachments/some-uuid/ticket6553/trac-6553-slicing-sparse-matrices.patch) by jason created at 2009-07-21 06:50:33
+Attachment [trac-6553-slicing-sparse-matrices.patch](tarball://root/attachments/some-uuid/ticket6553/trac-6553-slicing-sparse-matrices.patch) by @jasongrout created at 2009-07-21 06:50:33
 
 I've updated the patch again with both of our outputs.  It should pass your doctests now too.  Can you review it again?
 
@@ -236,7 +236,7 @@ archive/issue_comments_053446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6553#issuecomment-53446",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

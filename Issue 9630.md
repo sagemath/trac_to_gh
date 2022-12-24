@@ -3,7 +3,7 @@
 archive/issues_009630.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mjo\n\nI don't know how this might be done, but \n\n```\nfor n in range(1,10): \n    sum(k, k, 1, n) \n```\n\ndoesn't work, while \n\n```\nfor n in [1..10]:\n    sum(k,k,1,n)\n```\n\ndoes.  We need to fix\n\n```\nint(3)._maxima_()\nAttributeError: 'int' object has no attribute '_maxima_'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9630\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @orlitzky\n\nI don't know how this might be done, but \n\n```\nfor n in range(1,10): \n    sum(k, k, 1, n) \n```\n\ndoesn't work, while \n\n```\nfor n in [1..10]:\n    sum(k,k,1,n)\n```\n\ndoes.  We need to fix\n\n```\nint(3)._maxima_()\nAttributeError: 'int' object has no attribute '_maxima_'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9630\n\n",
     "created_at": "2010-07-29T01:36:07Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009630.json:
     "title": "Python ints should have a conversion to Maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9630",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mjo
+CC:  @orlitzky
 
 I don't know how this might be done, but 
 
@@ -59,7 +59,7 @@ archive/issue_comments_093315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93315",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_093316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93316",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_093317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93317",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_093318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93318",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_093319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93319",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_093320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93320",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_093321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93321",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

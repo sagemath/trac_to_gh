@@ -3,7 +3,7 @@
 archive/issues_007418.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was timdumol\n\nIn the new sage notebook maxima cells do not work anymore for inputs\nstarting with '%'.\n\n\n```\n%maxima\n%pi\n\nTraceback (click to the left for traceback)\n...\nAttributeError: 'sage.symbolic.expression.Expression' object has no\nattribute 'eval'\n```\n\n\nor:\n\n\n```\n%maxima\n%e^(%i * %pi)\n\nSyntax Error:\n    %e^(%i * %pi)\n```\n\n\nThis used to work with older Sage versions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7418\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @TimDumol\n\nIn the new sage notebook maxima cells do not work anymore for inputs\nstarting with '%'.\n\n\n```\n%maxima\n%pi\n\nTraceback (click to the left for traceback)\n...\nAttributeError: 'sage.symbolic.expression.Expression' object has no\nattribute 'eval'\n```\n\n\nor:\n\n\n```\n%maxima\n%e^(%i * %pi)\n\nSyntax Error:\n    %e^(%i * %pi)\n```\n\n\nThis used to work with older Sage versions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7418\n\n",
     "created_at": "2009-11-09T16:47:10Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_007418.json:
 ```
 Assignee: boothby
 
-CC:  was timdumol
+CC:  @williamstein @TimDumol
 
 In the new sage notebook maxima cells do not work anymore for inputs
 starting with '%'.
@@ -66,7 +66,7 @@ archive/issue_comments_062415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62415",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_062416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62416",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_062417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62417",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_062418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62418",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_062419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62419",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_062420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62420",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_062421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62421",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_062422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62422",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_062423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62423",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_062424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62424",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -241,16 +241,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_062425.json:
 ```json
 {
-    "body": "Attachment [trac_7418-maxima_cells.2.patch](tarball://root/attachments/some-uuid/ticket7418/trac_7418-maxima_cells.2.patch) by mpatel created at 2010-01-25 08:07:53\n\nV2 adds one --- I hope it's in the right place.  The queue:\n\n```\nSageNB 0.7 / #8051\ntrac_7784-hgignore_update.patch\ntrac_5712-interrupt-notification.5.patch\ntrac_6069-missing_pub_ws.2.patch\ntrac_8038-email_plus_addressing_v2.patch\ntrac_7506-notebook_object-documentation.2.patch\ntrac_693-spawn_notebook.3.patch\ntrac_5177-delete-cell-dirs.2.patch\ntrac_7418-maxima_cells.2.patch\n```\n\nThe patch version numbers may be off by one or so.\n\nPositive review, but someone should review my change.",
+    "body": "Attachment [trac_7418-maxima_cells.2.patch](tarball://root/attachments/some-uuid/ticket7418/trac_7418-maxima_cells.2.patch) by @qed777 created at 2010-01-25 08:07:53\n\nV2 adds one --- I hope it's in the right place.  The queue:\n\n```\nSageNB 0.7 / #8051\ntrac_7784-hgignore_update.patch\ntrac_5712-interrupt-notification.5.patch\ntrac_6069-missing_pub_ws.2.patch\ntrac_8038-email_plus_addressing_v2.patch\ntrac_7506-notebook_object-documentation.2.patch\ntrac_693-spawn_notebook.3.patch\ntrac_5177-delete-cell-dirs.2.patch\ntrac_7418-maxima_cells.2.patch\n```\n\nThe patch version numbers may be off by one or so.\n\nPositive review, but someone should review my change.",
     "created_at": "2010-01-25T08:07:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62425",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7418-maxima_cells.2.patch](tarball://root/attachments/some-uuid/ticket7418/trac_7418-maxima_cells.2.patch) by mpatel created at 2010-01-25 08:07:53
+Attachment [trac_7418-maxima_cells.2.patch](tarball://root/attachments/some-uuid/ticket7418/trac_7418-maxima_cells.2.patch) by @qed777 created at 2010-01-25 08:07:53
 
 V2 adds one --- I hope it's in the right place.  The queue:
 
@@ -282,7 +282,7 @@ archive/issue_comments_062426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62426",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_062427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62427",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_062428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7418#issuecomment-62428",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

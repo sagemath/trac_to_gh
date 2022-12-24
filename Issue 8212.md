@@ -3,7 +3,7 @@
 archive/issues_008212.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe default polynomials chosen by Sage to perform arithmetic over\nGF(2**n) have sometimes Hamming weight 7 or more, which is not optimal.\nConsider for example:\n\n```\nsage: T.<a> = GF(2^211)\nsage: T.modulus()\nx^211 + x^9 + x^6 + x^5 + x^3 + x + 1\n\ndef bar(n):\n   f = a\n   for i in range(n):\n      f = f^2\n   return f\n\nsage: %timeit bar(10000)\n5 loops, best of 3: 88.5 ms per loop\n```\n\nWith the following pentanomial, we get a nice speedup:\n\n```\nsage: R.<x> = PolynomialRing(GF(2))\nsage: T.<a> = GF(2^211,name='a',modulus=x^211 + x^11 + x^10 + x^8 + 1)\n\nsage: %timeit bar(10000)\n5 loops, best of 3: 57.3 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8212\n\n",
+    "body": "Assignee: @aghitza\n\nThe default polynomials chosen by Sage to perform arithmetic over\nGF(2**n) have sometimes Hamming weight 7 or more, which is not optimal.\nConsider for example:\n\n```\nsage: T.<a> = GF(2^211)\nsage: T.modulus()\nx^211 + x^9 + x^6 + x^5 + x^3 + x + 1\n\ndef bar(n):\n   f = a\n   for i in range(n):\n      f = f^2\n   return f\n\nsage: %timeit bar(10000)\n5 loops, best of 3: 88.5 ms per loop\n```\n\nWith the following pentanomial, we get a nice speedup:\n\n```\nsage: R.<x> = PolynomialRing(GF(2))\nsage: T.<a> = GF(2^211,name='a',modulus=x^211 + x^11 + x^10 + x^8 + 1)\n\nsage: %timeit bar(10000)\n5 loops, best of 3: 57.3 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8212\n\n",
     "created_at": "2010-02-08T07:06:33Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_008212.json:
     "title": "arithmetic on GF(2^n) might be improved",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8212",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The default polynomials chosen by Sage to perform arithmetic over
 GF(2**n) have sometimes Hamming weight 7 or more, which is not optimal.
@@ -84,7 +84,7 @@ archive/issue_comments_072418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8212#issuecomment-72418",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_072421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8212#issuecomment-72421",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -169,16 +169,16 @@ TypeError: Cannot understand modulus
 archive/issue_comments_072422.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to zimmerma.",
+    "body": "Changing assignee from @aghitza to @zimmermann6.",
     "created_at": "2010-02-08T16:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8212#issuecomment-72422",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Changing assignee from AlexGhitza to zimmerma.
+Changing assignee from @aghitza to @zimmermann6.
 
 
 
@@ -192,7 +192,7 @@ archive/issue_comments_072423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8212#issuecomment-72423",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_072425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8212#issuecomment-72425",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_072427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8212#issuecomment-72427",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_072428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8212#issuecomment-72428",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_072429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8212#issuecomment-72429",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_072430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8212#issuecomment-72430",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

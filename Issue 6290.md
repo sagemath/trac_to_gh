@@ -3,7 +3,7 @@
 archive/issues_006290.json:
 ```json
 {
-    "body": "CC:  was\n\nKeywords: latex_name, symbolic function\n\nIn new symbolics, underlying \"sage.symbolic.SFunction\" class allows\none to pass the keyword \"latex_name=LaTeX\". It would be really good if we expose this feature at the user interface level. Currently,\nSage (4.0.1) raises error if one tries to do so.\n\n\nExample uses:\n\n\n```\nriemann(x) = function('riemann', x, latex_name=\"\\\\mathcal{R}\")\nlatex( riemann(x) )\n\\mathcal{R}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6290\n\n",
+    "body": "CC:  @williamstein\n\nKeywords: latex_name, symbolic function\n\nIn new symbolics, underlying \"sage.symbolic.SFunction\" class allows\none to pass the keyword \"latex_name=LaTeX\". It would be really good if we expose this feature at the user interface level. Currently,\nSage (4.0.1) raises error if one tries to do so.\n\n\nExample uses:\n\n\n```\nriemann(x) = function('riemann', x, latex_name=\"\\\\mathcal{R}\")\nlatex( riemann(x) )\n\\mathcal{R}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6290\n\n",
     "created_at": "2009-06-14T23:29:44Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006290.json:
     "title": "Allow latex_name=LaTeX keyword while defining symbolic function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6290",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
-CC:  was
+CC:  @williamstein
 
 Keywords: latex_name, symbolic function
 
@@ -52,7 +52,7 @@ archive/issue_comments_050219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6290#issuecomment-50219",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,16 +65,16 @@ Nice.  Could you add more to the docstring for function (at least the one that I
 archive/issue_comments_050220.json:
 ```json
 {
-    "body": "Attachment [allow-keyword-arguments-such-as-latex_name-in-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket6290/allow-keyword-arguments-such-as-latex_name-in-symbolic-functions.patch) by gmhossain created at 2009-06-15 20:07:59",
+    "body": "Attachment [allow-keyword-arguments-such-as-latex_name-in-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket6290/allow-keyword-arguments-such-as-latex_name-in-symbolic-functions.patch) by @golam-m-hossain created at 2009-06-15 20:07:59",
     "created_at": "2009-06-15T20:07:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6290#issuecomment-50220",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
-Attachment [allow-keyword-arguments-such-as-latex_name-in-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket6290/allow-keyword-arguments-such-as-latex_name-in-symbolic-functions.patch) by gmhossain created at 2009-06-15 20:07:59
+Attachment [allow-keyword-arguments-such-as-latex_name-in-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket6290/allow-keyword-arguments-such-as-latex_name-in-symbolic-functions.patch) by @golam-m-hossain created at 2009-06-15 20:07:59
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_050221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6290#issuecomment-50221",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_050222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6290#issuecomment-50222",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_050223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6290#issuecomment-50223",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_050224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6290#issuecomment-50224",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_050226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6290#issuecomment-50226",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 

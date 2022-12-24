@@ -3,7 +3,7 @@
 archive/issues_006372.json:
 ```json
 {
-    "body": "Assignee: was\n\ntachyon.py and tri_plot.py really belong in plot/plot3d, and there is an extra texture.py which is unused to remove.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6372\n\n",
+    "body": "Assignee: @williamstein\n\ntachyon.py and tri_plot.py really belong in plot/plot3d, and there is an extra texture.py which is unused to remove.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6372\n\n",
     "created_at": "2009-06-20T19:07:49Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_006372.json:
     "title": "Move a few 3d plot files into plot3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6372",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 tachyon.py and tri_plot.py really belong in plot/plot3d, and there is an extra texture.py which is unused to remove.
 
@@ -37,7 +37,7 @@ archive/issue_comments_051004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6372#issuecomment-51004",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -50,16 +50,16 @@ Depends on #6269
 archive/issue_comments_051005.json:
 ```json
 {
-    "body": "Attachment [trac_6372.patch](tarball://root/attachments/some-uuid/ticket6372/trac_6372.patch) by kcrisman created at 2009-06-20 19:16:26\n\nThis patch also makes necessary changes in a few other files to allow this, including in the plot3d rest documentation.",
+    "body": "Attachment [trac_6372.patch](tarball://root/attachments/some-uuid/ticket6372/trac_6372.patch) by @kcrisman created at 2009-06-20 19:16:26\n\nThis patch also makes necessary changes in a few other files to allow this, including in the plot3d rest documentation.",
     "created_at": "2009-06-20T19:16:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6372#issuecomment-51005",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6372.patch](tarball://root/attachments/some-uuid/ticket6372/trac_6372.patch) by kcrisman created at 2009-06-20 19:16:26
+Attachment [trac_6372.patch](tarball://root/attachments/some-uuid/ticket6372/trac_6372.patch) by @kcrisman created at 2009-06-20 19:16:26
 
 This patch also makes necessary changes in a few other files to allow this, including in the plot3d rest documentation.
 

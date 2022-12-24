@@ -14,7 +14,7 @@ archive/issues_000733.json:
     "title": "generating docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/733",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tba

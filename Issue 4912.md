@@ -14,7 +14,7 @@ archive/issues_004912.json:
     "title": "convert sage.geometry.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4912",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4912
 archive/issue_comments_037276.json:
 ```json
 {
-    "body": "Attachment [trac_4912.patch](tarball://root/attachments/some-uuid/ticket4912/trac_4912.patch) by mhansen created at 2009-01-02 02:35:11",
+    "body": "Attachment [trac_4912.patch](tarball://root/attachments/some-uuid/ticket4912/trac_4912.patch) by @mwhansen created at 2009-01-02 02:35:11",
     "created_at": "2009-01-02T02:35:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4912#issuecomment-37276",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4912.patch](tarball://root/attachments/some-uuid/ticket4912/trac_4912.patch) by mhansen created at 2009-01-02 02:35:11
+Attachment [trac_4912.patch](tarball://root/attachments/some-uuid/ticket4912/trac_4912.patch) by @mwhansen created at 2009-01-02 02:35:11
 
 
 
@@ -50,16 +50,16 @@ Attachment [trac_4912.patch](tarball://root/attachments/some-uuid/ticket4912/tra
 archive/issue_comments_037277.json:
 ```json
 {
-    "body": "Attachment [sage.geometry-final.patch](tarball://root/attachments/some-uuid/ticket4912/sage.geometry-final.patch) by mhansen created at 2009-02-21 19:18:10",
+    "body": "Attachment [sage.geometry-final.patch](tarball://root/attachments/some-uuid/ticket4912/sage.geometry-final.patch) by @mwhansen created at 2009-02-21 19:18:10",
     "created_at": "2009-02-21T19:18:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4912#issuecomment-37277",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage.geometry-final.patch](tarball://root/attachments/some-uuid/ticket4912/sage.geometry-final.patch) by mhansen created at 2009-02-21 19:18:10
+Attachment [sage.geometry-final.patch](tarball://root/attachments/some-uuid/ticket4912/sage.geometry-final.patch) by @mwhansen created at 2009-02-21 19:18:10
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_037278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4912#issuecomment-37278",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_037281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4912#issuecomment-37281",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

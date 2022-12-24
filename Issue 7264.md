@@ -3,7 +3,7 @@
 archive/issues_007264.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\nOn Wed, 21 Oct 2009 19:49:58 -0700 (PDT)\nIchnich <warmbau@web.de> wrote:\n\n> Hi,\n> \n> something does not work anymore in my notebook (with version 4.1.2\n> ubuntu 64bit):\n>\n> var('a,b,c,I')\n> model(I)=a*I+b\n> model_exp = exp(I)**a*(b)\n> sol1_l={b: 5.0, a: 1.1}\n> model_sol1_l(I)=model_exp.subs(sol1_l)\n> \n> The notebook hangs-up. It's critical on the parameter a, if you change\n> it to 1.0 it's o.k.\n```\n\n\nI can reproduce this:\n\n\n```\nsage: var('a,b,c,I')\n(a, b, c, I)\nsage: model_exp = exp(I)**a*(b)\nsage: sol1_l={b: 5.0, a: 1.1}\nsage: model_exp.subs(sol1_l)\n/home/burcin/sage/sage-4.1.2/local/bin/sage-sage: line 203: 23916\nSegmentation fault      sage-ipython \"$@\" -i\n```\n\n\nThe cause might be #6948.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7264\n\n",
+    "body": "Assignee: @burcin\n\n\n```\nOn Wed, 21 Oct 2009 19:49:58 -0700 (PDT)\nIchnich <warmbau@web.de> wrote:\n\n> Hi,\n> \n> something does not work anymore in my notebook (with version 4.1.2\n> ubuntu 64bit):\n>\n> var('a,b,c,I')\n> model(I)=a*I+b\n> model_exp = exp(I)**a*(b)\n> sol1_l={b: 5.0, a: 1.1}\n> model_sol1_l(I)=model_exp.subs(sol1_l)\n> \n> The notebook hangs-up. It's critical on the parameter a, if you change\n> it to 1.0 it's o.k.\n```\n\n\nI can reproduce this:\n\n\n```\nsage: var('a,b,c,I')\n(a, b, c, I)\nsage: model_exp = exp(I)**a*(b)\nsage: sol1_l={b: 5.0, a: 1.1}\nsage: model_exp.subs(sol1_l)\n/home/burcin/sage/sage-4.1.2/local/bin/sage-sage: line 203: 23916\nSegmentation fault      sage-ipython \"$@\" -i\n```\n\n\nThe cause might be #6948.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7264\n\n",
     "created_at": "2009-10-22T08:25:50Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_007264.json:
     "title": "segfault while substituting powers of exp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7264",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -72,7 +72,7 @@ archive/issue_comments_060342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60342",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_060343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60343",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_060344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60344",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_060345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60345",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -167,16 +167,16 @@ Changing keywords from "" to "pynac".
 archive/issue_comments_060346.json:
 ```json
 {
-    "body": "Attachment [trac_7264-exp_power_segfault.patch](tarball://root/attachments/some-uuid/ticket7264/trac_7264-exp_power_segfault.patch) by burcin created at 2009-11-22 17:58:49\n\nadd doctests",
+    "body": "Attachment [trac_7264-exp_power_segfault.patch](tarball://root/attachments/some-uuid/ticket7264/trac_7264-exp_power_segfault.patch) by @burcin created at 2009-11-22 17:58:49\n\nadd doctests",
     "created_at": "2009-11-22T17:58:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60346",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7264-exp_power_segfault.patch](tarball://root/attachments/some-uuid/ticket7264/trac_7264-exp_power_segfault.patch) by burcin created at 2009-11-22 17:58:49
+Attachment [trac_7264-exp_power_segfault.patch](tarball://root/attachments/some-uuid/ticket7264/trac_7264-exp_power_segfault.patch) by @burcin created at 2009-11-22 17:58:49
 
 add doctests
 
@@ -192,7 +192,7 @@ archive/issue_comments_060347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60347",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_060348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60348",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_060349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60349",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_060350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60350",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_060351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60351",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_060352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60352",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_060353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60353",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_060354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60354",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_060355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60355",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -439,16 +439,16 @@ apply only this patch
 archive/issue_comments_060356.json:
 ```json
 {
-    "body": "Attachment [trac_7264-exp_power_segfault.take2.patch](tarball://root/attachments/some-uuid/ticket7264/trac_7264-exp_power_segfault.take2.patch) by burcin created at 2009-12-09 00:03:50\n\nI put another version at the same place:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.spkg\n\nHopefully this is the last time. :)\n\nCan you try again?",
+    "body": "Attachment [trac_7264-exp_power_segfault.take2.patch](tarball://root/attachments/some-uuid/ticket7264/trac_7264-exp_power_segfault.take2.patch) by @burcin created at 2009-12-09 00:03:50\n\nI put another version at the same place:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.spkg\n\nHopefully this is the last time. :)\n\nCan you try again?",
     "created_at": "2009-12-09T00:03:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60356",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7264-exp_power_segfault.take2.patch](tarball://root/attachments/some-uuid/ticket7264/trac_7264-exp_power_segfault.take2.patch) by burcin created at 2009-12-09 00:03:50
+Attachment [trac_7264-exp_power_segfault.take2.patch](tarball://root/attachments/some-uuid/ticket7264/trac_7264-exp_power_segfault.take2.patch) by @burcin created at 2009-12-09 00:03:50
 
 I put another version at the same place:
 
@@ -470,7 +470,7 @@ archive/issue_comments_060357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60357",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_060358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60358",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -506,7 +506,7 @@ archive/issue_comments_060359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60359",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -524,7 +524,7 @@ archive/issue_comments_060360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60360",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -542,7 +542,7 @@ archive/issue_comments_060361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60361",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -562,7 +562,7 @@ archive/issue_comments_060362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60362",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -580,7 +580,7 @@ archive/issue_comments_060363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7264#issuecomment-60363",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

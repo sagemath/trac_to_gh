@@ -14,7 +14,7 @@ archive/issues_004779.json:
     "title": "[with patch; not ready for review] make function for creating random rings and running automated testing on them",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4779",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -59,7 +59,7 @@ archive/issue_comments_036221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4779#issuecomment-36221",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,16 +77,16 @@ This patch has zero overlap with anything else, so is fairly safe to apply.   Th
 archive/issue_comments_036222.json:
 ```json
 {
-    "body": "Attachment [trac_4779.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779.patch) by was created at 2008-12-31 02:37:09",
+    "body": "Attachment [trac_4779.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779.patch) by @williamstein created at 2008-12-31 02:37:09",
     "created_at": "2008-12-31T02:37:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4779#issuecomment-36222",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4779.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779.patch) by was created at 2008-12-31 02:37:09
+Attachment [trac_4779.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779.patch) by @williamstein created at 2008-12-31 02:37:09
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_036224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4779#issuecomment-36224",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_036225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4779#issuecomment-36225",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -180,16 +180,16 @@ I used this to test lots of polynomials and it was good.  Relative number fields
 archive/issue_comments_036226.json:
 ```json
 {
-    "body": "Attachment [trac_4779-part2.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779-part2.patch) by was created at 2009-02-20 05:06:49",
+    "body": "Attachment [trac_4779-part2.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779-part2.patch) by @williamstein created at 2009-02-20 05:06:49",
     "created_at": "2009-02-20T05:06:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4779#issuecomment-36226",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4779-part2.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779-part2.patch) by was created at 2009-02-20 05:06:49
+Attachment [trac_4779-part2.patch](tarball://root/attachments/some-uuid/ticket4779/trac_4779-part2.patch) by @williamstein created at 2009-02-20 05:06:49
 
 
 

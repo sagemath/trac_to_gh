@@ -3,7 +3,7 @@
 archive/issues_008905.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mderickx\n\nKeywords: memleak echelonize\n\nApparently there is a memory leak in Sage-4.4 when one echelonizes a matrix over ``QQ``:\n\n```\nsage: MS = MatrixSpace(QQ,8)\nsage: M = MS.random_element()\nsage: N = copy(M)\nsage: N.echelonize()\nsage: N==M\nFalse\nsage: mem = get_memory_usage()\nsage: n = 0\nsage: while(1):\n....:     n+=1\n....:     if get_memory_usage()>mem:\n....:         mem = get_memory_usage()\n....:         print mem,n\n....:     N = copy(M)\n....:     N.echelonize()\n....:\n797.95703125 1\n798.0859375 32\n798.21484375 71\n798.34375 110\n798.47265625 155\n798.6015625 199\n798.8515625 202\n798.98046875 243\n799.109375 292\n799.23828125 329\n799.37109375 371\n799.5 406\n799.79296875 426\n799.921875 471\n800.05078125 530\n800.1796875 582\n800.30859375 634\n800.61328125 666\n...\n```\n\n\nHere I show that the critical step really is the echelon form:\n\n```\nsage: MS = MatrixSpace(QQ,8)\nsage: M = MS.random_element()\nsage: N = copy(M)\nsage: mem = get_memory_usage()\nsage: n = 0\nsage: while(1):\n....:     n+=1\n....:     if get_memory_usage()>mem:\n....:         mem = get_memory_usage()\n....:         print mem,n\n....:     N = copy(M)\n....:\n797.92578125 1\n```\n\nThe memory consumption is stable at that point. So, copying ``M`` is no problem, but computing the echelon form is!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8905\n\n",
+    "body": "Assignee: tbd\n\nCC:  @koffie\n\nKeywords: memleak echelonize\n\nApparently there is a memory leak in Sage-4.4 when one echelonizes a matrix over ``QQ``:\n\n```\nsage: MS = MatrixSpace(QQ,8)\nsage: M = MS.random_element()\nsage: N = copy(M)\nsage: N.echelonize()\nsage: N==M\nFalse\nsage: mem = get_memory_usage()\nsage: n = 0\nsage: while(1):\n....:     n+=1\n....:     if get_memory_usage()>mem:\n....:         mem = get_memory_usage()\n....:         print mem,n\n....:     N = copy(M)\n....:     N.echelonize()\n....:\n797.95703125 1\n798.0859375 32\n798.21484375 71\n798.34375 110\n798.47265625 155\n798.6015625 199\n798.8515625 202\n798.98046875 243\n799.109375 292\n799.23828125 329\n799.37109375 371\n799.5 406\n799.79296875 426\n799.921875 471\n800.05078125 530\n800.1796875 582\n800.30859375 634\n800.61328125 666\n...\n```\n\n\nHere I show that the critical step really is the echelon form:\n\n```\nsage: MS = MatrixSpace(QQ,8)\nsage: M = MS.random_element()\nsage: N = copy(M)\nsage: mem = get_memory_usage()\nsage: n = 0\nsage: while(1):\n....:     n+=1\n....:     if get_memory_usage()>mem:\n....:         mem = get_memory_usage()\n....:         print mem,n\n....:     N = copy(M)\n....:\n797.92578125 1\n```\n\nThe memory consumption is stable at that point. So, copying ``M`` is no problem, but computing the echelon form is!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8905\n\n",
     "created_at": "2010-05-06T12:19:17Z",
     "labels": [
         "memleak",
@@ -14,12 +14,12 @@ archive/issues_008905.json:
     "title": "Memory leak in echelon over QQ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8905",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: tbd
 
-CC:  mderickx
+CC:  @koffie
 
 Keywords: memleak echelonize
 
@@ -100,7 +100,7 @@ archive/issue_comments_081971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8905#issuecomment-81971",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_081972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8905#issuecomment-81972",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_081973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8905#issuecomment-81973",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_081974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8905#issuecomment-81974",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_081975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8905#issuecomment-81975",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_081976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8905#issuecomment-81976",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_081977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8905#issuecomment-81977",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_081978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8905#issuecomment-81978",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_081979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8905#issuecomment-81979",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_081980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8905#issuecomment-81980",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_081981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8905#issuecomment-81981",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_081982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8905#issuecomment-81982",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_081983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8905#issuecomment-81983",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

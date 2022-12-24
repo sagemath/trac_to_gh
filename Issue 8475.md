@@ -3,7 +3,7 @@
 archive/issues_008475.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nKeywords: pickling nested classes\n\nThanks to #7448 and #8452, on can trace unpicklable class throughout sage. Here is one:\n\n```\nsage: sage: W = Words()\nsage: sage: A = W._python_object_alphabet()\nsage: TestSuite(A).run(verbose=True)\nrunning ._test_pickling() . . . fail\nTraceback (most recent call last):\n  File \"/mnt/usb1/scratch/hivert/sage-4.3.4.alpha0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/misc/sage_unittest.py\", line 268, in run\n    test_method(tester = tester)\n  File \"/mnt/usb1/scratch/hivert/sage-4.3.4.alpha0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/misc/sage_unittest.py\", line 484, in _test_pickling\n    tester.assertEqual(loads(dumps(self._instance)), self._instance)\n  File \"sage_object.pyx\", line 792, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8367)\nPicklingError: Can't pickle <class 'sage.combinat.words.words._python_object_alphabet'>: attribute lookup sage.combinat.words.words._python_object_alphabet failed\n------------------------------------------------------------\nThe following tests failed: _test_pickling\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8475\n\n",
+    "body": "Assignee: @hivert\n\nKeywords: pickling nested classes\n\nThanks to #7448 and #8452, on can trace unpicklable class throughout sage. Here is one:\n\n```\nsage: sage: W = Words()\nsage: sage: A = W._python_object_alphabet()\nsage: TestSuite(A).run(verbose=True)\nrunning ._test_pickling() . . . fail\nTraceback (most recent call last):\n  File \"/mnt/usb1/scratch/hivert/sage-4.3.4.alpha0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/misc/sage_unittest.py\", line 268, in run\n    test_method(tester = tester)\n  File \"/mnt/usb1/scratch/hivert/sage-4.3.4.alpha0-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/misc/sage_unittest.py\", line 484, in _test_pickling\n    tester.assertEqual(loads(dumps(self._instance)), self._instance)\n  File \"sage_object.pyx\", line 792, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8367)\nPicklingError: Can't pickle <class 'sage.combinat.words.words._python_object_alphabet'>: attribute lookup sage.combinat.words.words._python_object_alphabet failed\n------------------------------------------------------------\nThe following tests failed: _test_pickling\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8475\n\n",
     "created_at": "2010-03-07T09:14:12Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008475.json:
     "title": "Pickling of _python_object_alphabet is broken.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8475",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 Keywords: pickling nested classes
 
@@ -56,7 +56,7 @@ archive/issue_comments_076379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8475#issuecomment-76379",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_076380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8475#issuecomment-76380",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_076381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8475#issuecomment-76381",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_076382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8475#issuecomment-76382",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -212,16 +212,16 @@ That way, you provide more context for why you are writing that test. Plus, it m
 archive/issue_comments_076384.json:
 ```json
 {
-    "body": "Attachment [trac_8475-alphabet_pickling_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8475/trac_8475-alphabet_pickling_fix-fh.patch) by hivert created at 2010-03-10 08:09:39\n\nReplying to [comment:3 mvngu]:\n> In the \"TESTS:\" section, you should saying something like:\n> {{{\n> TESTS:\n> \n> Test that #8475 is fixed::\n> \n>     <put-your-tests-here>\n> }}}\n> That way, you provide more context for why you are writing that test. Plus, it makes it easier to locate the relevant ticket number. I leave it up to you to modify the patch as appropriate.\n\nDone. Please re-review.",
+    "body": "Attachment [trac_8475-alphabet_pickling_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8475/trac_8475-alphabet_pickling_fix-fh.patch) by @hivert created at 2010-03-10 08:09:39\n\nReplying to [comment:3 mvngu]:\n> In the \"TESTS:\" section, you should saying something like:\n> {{{\n> TESTS:\n> \n> Test that #8475 is fixed::\n> \n>     <put-your-tests-here>\n> }}}\n> That way, you provide more context for why you are writing that test. Plus, it makes it easier to locate the relevant ticket number. I leave it up to you to modify the patch as appropriate.\n\nDone. Please re-review.",
     "created_at": "2010-03-10T08:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8475#issuecomment-76384",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8475-alphabet_pickling_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8475/trac_8475-alphabet_pickling_fix-fh.patch) by hivert created at 2010-03-10 08:09:39
+Attachment [trac_8475-alphabet_pickling_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8475/trac_8475-alphabet_pickling_fix-fh.patch) by @hivert created at 2010-03-10 08:09:39
 
 Replying to [comment:3 mvngu]:
 > In the "TESTS:" section, you should saying something like:
@@ -248,7 +248,7 @@ archive/issue_comments_076385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8475#issuecomment-76385",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_076386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8475#issuecomment-76386",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_076387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8475#issuecomment-76387",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 

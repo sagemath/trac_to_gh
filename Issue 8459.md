@@ -3,7 +3,7 @@
 archive/issues_008459.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman burcin\n\nKeywords: symbolics\n\nMaixma's li[2](x) translates to polylog2(x) which is not defined in Sage\n\n```\nsage: maxima('li[1](x)').sage().subs(x=2).n() \n-3.14159265358979*I\nsage: maxima('li[2](x)').sage().subs(x=2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\n\nsage: f(x)= integrate(log(1-x^2)/x, x); f(2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\n\n```\n\n\npatch comes soon\n\nIssue created by migration from https://trac.sagemath.org/ticket/8459\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @burcin\n\nKeywords: symbolics\n\nMaixma's li[2](x) translates to polylog2(x) which is not defined in Sage\n\n```\nsage: maxima('li[1](x)').sage().subs(x=2).n() \n-3.14159265358979*I\nsage: maxima('li[2](x)').sage().subs(x=2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\n\nsage: f(x)= integrate(log(1-x^2)/x, x); f(2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\n\n```\n\n\npatch comes soon\n\nIssue created by migration from https://trac.sagemath.org/ticket/8459\n\n",
     "created_at": "2010-03-06T21:41:27Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_008459.json:
     "title": "broken translatin of polylog from Maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8459",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman burcin
+CC:  @kcrisman @burcin
 
 Keywords: symbolics
 
@@ -64,16 +64,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8459
 archive/issue_comments_076151.json:
 ```json
 {
-    "body": "Attachment [trac-8390.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8390.patch) by robert.marik created at 2010-03-06 22:28:53\n\napply only this patch",
+    "body": "Attachment [trac-8390.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8390.patch) by @robert-marik created at 2010-03-06 22:28:53\n\napply only this patch",
     "created_at": "2010-03-06T22:28:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76151",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac-8390.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8390.patch) by robert.marik created at 2010-03-06 22:28:53
+Attachment [trac-8390.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8390.patch) by @robert-marik created at 2010-03-06 22:28:53
 
 apply only this patch
 
@@ -84,16 +84,16 @@ apply only this patch
 archive/issue_comments_076152.json:
 ```json
 {
-    "body": "Attachment [trac-8459.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8459.patch) by robert.marik created at 2010-03-06 22:32:42\n\nThe patch is attached. Still have behavior which I do not understand:\nlog(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1) evaluates numerically at x=1/2 only if it is obtained from direct input and not from Maxima.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f(x)=integrate(ln(1-x^2)/x,x)                       \nsage: f\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: g(x)=log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: g\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: bool(f==g)                                          \nFalse\nsage: bool(f._repr_()==g._repr_())                        \nTrue\nsage: g(1/2).n()\n0.688640713882747\nsage: f(1/2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\nsage:\n```\n\nAny idea what happens?",
+    "body": "Attachment [trac-8459.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8459.patch) by @robert-marik created at 2010-03-06 22:32:42\n\nThe patch is attached. Still have behavior which I do not understand:\nlog(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1) evaluates numerically at x=1/2 only if it is obtained from direct input and not from Maxima.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f(x)=integrate(ln(1-x^2)/x,x)                       \nsage: f\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: g(x)=log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: g\nx |--> log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1)\nsage: bool(f==g)                                          \nFalse\nsage: bool(f._repr_()==g._repr_())                        \nTrue\nsage: g(1/2).n()\n0.688640713882747\nsage: f(1/2).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/opt/sage-4.3.3-i686-Linux/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17036)()\n\nTypeError: cannot evaluate symbolic expresssion numerically\nsage:\n```\n\nAny idea what happens?",
     "created_at": "2010-03-06T22:32:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76152",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac-8459.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8459.patch) by robert.marik created at 2010-03-06 22:32:42
+Attachment [trac-8459.patch](tarball://root/attachments/some-uuid/ticket8459/trac-8459.patch) by @robert-marik created at 2010-03-06 22:32:42
 
 The patch is attached. Still have behavior which I do not understand:
 log(-x^2 + 1)*log(x) + 1/2*polylog(2, -x^2 + 1) evaluates numerically at x=1/2 only if it is obtained from direct input and not from Maxima.
@@ -140,7 +140,7 @@ archive/issue_comments_076153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76153",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_076154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76154",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_076155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76155",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_076156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76156",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -232,16 +232,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_076157.json:
 ```json
 {
-    "body": "Attachment [trac_8459-doctest.patch](tarball://root/attachments/some-uuid/ticket8459/trac_8459-doctest.patch) by burcin created at 2010-04-05 10:51:47\n\nThank you for the patch and pointing out the conversion problem Robert.\n\nI fixed the problems reported in comment:2 in #7661.\n\nattachment:trac_8459-doctest.patch adds a doctest to sage.functions.log.Function_polylog to check if the conversion works. It also moves the compilation of the regular expression out of the `symbolic_expression_from_maxima_string()` function.\n\nPatches to be applied, in this order:\n* attachment:trac-8459.patch\n* attachment:trac_8459-doctest.patch\n\nThis ticket depends on #7661.",
+    "body": "Attachment [trac_8459-doctest.patch](tarball://root/attachments/some-uuid/ticket8459/trac_8459-doctest.patch) by @burcin created at 2010-04-05 10:51:47\n\nThank you for the patch and pointing out the conversion problem Robert.\n\nI fixed the problems reported in comment:2 in #7661.\n\nattachment:trac_8459-doctest.patch adds a doctest to sage.functions.log.Function_polylog to check if the conversion works. It also moves the compilation of the regular expression out of the `symbolic_expression_from_maxima_string()` function.\n\nPatches to be applied, in this order:\n* attachment:trac-8459.patch\n* attachment:trac_8459-doctest.patch\n\nThis ticket depends on #7661.",
     "created_at": "2010-04-05T10:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76157",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8459-doctest.patch](tarball://root/attachments/some-uuid/ticket8459/trac_8459-doctest.patch) by burcin created at 2010-04-05 10:51:47
+Attachment [trac_8459-doctest.patch](tarball://root/attachments/some-uuid/ticket8459/trac_8459-doctest.patch) by @burcin created at 2010-04-05 10:51:47
 
 Thank you for the patch and pointing out the conversion problem Robert.
 
@@ -267,7 +267,7 @@ archive/issue_comments_076158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76158",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_076159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76159",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_076160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76160",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_076161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76161",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_076162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76162",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_076163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76163",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_076164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8459#issuecomment-76164",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

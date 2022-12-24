@@ -14,7 +14,7 @@ archive/issues_004516.json:
     "title": "make check on binaries should smoothly 100% pass -- right now it fails on the docs and gives lots of verbosity at the start, and #4515",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4516",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_033523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4516#issuecomment-33523",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009549.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThe class `InfinitePolynomialRing_sparse` defines two methods called `is_field()`. The second definition rejects keyword arguments. This prevents from creating polynomial rings over infinite polynomial rings:\n\n```\n$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: InfinitePolynomialRing(QQ, 'a')['x']\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.5, Release Date: 2010-07-16                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/opt/sage-4.5/<ipython console> in <module>()\n\n/home/marc/opt/sage-4.5/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2550)()\n\n/home/marc/opt/sage-4.5/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in PolynomialRing(base_ring, arg1, arg2, sparse, order, names, name, implementation)\n    341                 raise TypeError, \"if second arguments is a string with no commas, then there must be no other non-optional arguments\"\n    342             name = arg1\n--> 343             R = _single_variate(base_ring, name, sparse, implementation)\n    344         else:\n    345             # 2-4. PolynomialRing(base_ring, names, order='degrevlex'):\n\n/home/marc/opt/sage-4.5/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in _single_variate(base_ring, name, sparse, implementation)\n    420             R = m.PolynomialRing_dense_padic_ring_fixed_mod(base_ring, name)\n    421 \n--> 422         elif base_ring.is_field(proof = False):\n    423             R = m.PolynomialRing_field(base_ring, name, sparse, implementation=implementation)\n    424 \n\nTypeError: is_field() got an unexpected keyword argument 'proof'\n```\n\n\nThere is a similar issue with ``is_integral_domain``, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9549\n\n",
+    "body": "Assignee: @malb\n\nThe class `InfinitePolynomialRing_sparse` defines two methods called `is_field()`. The second definition rejects keyword arguments. This prevents from creating polynomial rings over infinite polynomial rings:\n\n```\n$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: InfinitePolynomialRing(QQ, 'a')['x']\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.5, Release Date: 2010-07-16                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/opt/sage-4.5/<ipython console> in <module>()\n\n/home/marc/opt/sage-4.5/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2550)()\n\n/home/marc/opt/sage-4.5/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in PolynomialRing(base_ring, arg1, arg2, sparse, order, names, name, implementation)\n    341                 raise TypeError, \"if second arguments is a string with no commas, then there must be no other non-optional arguments\"\n    342             name = arg1\n--> 343             R = _single_variate(base_ring, name, sparse, implementation)\n    344         else:\n    345             # 2-4. PolynomialRing(base_ring, names, order='degrevlex'):\n\n/home/marc/opt/sage-4.5/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in _single_variate(base_ring, name, sparse, implementation)\n    420             R = m.PolynomialRing_dense_padic_ring_fixed_mod(base_ring, name)\n    421 \n--> 422         elif base_ring.is_field(proof = False):\n    423             R = m.PolynomialRing_field(base_ring, name, sparse, implementation=implementation)\n    424 \n\nTypeError: is_field() got an unexpected keyword argument 'proof'\n```\n\n\nThere is a similar issue with ``is_integral_domain``, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9549\n\n",
     "created_at": "2010-07-19T11:47:08Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_009549.json:
     "title": "InfinitePolynomialRing_sparse.is_field lacks `proof=...` option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9549",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 The class `InfinitePolynomialRing_sparse` defines two methods called `is_field()`. The second definition rejects keyword arguments. This prevents from creating polynomial rings over infinite polynomial rings:
 
@@ -70,7 +70,7 @@ archive/issue_comments_092045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9549#issuecomment-92045",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_092046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9549#issuecomment-92046",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_092047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9549#issuecomment-92047",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_092048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9549#issuecomment-92048",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_092049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9549#issuecomment-92049",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -166,16 +166,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_092050.json:
 ```json
 {
-    "body": "Attachment [trac_9549_InfinitePolynomialRing_is_field.patch](tarball://root/attachments/some-uuid/ticket9549/trac_9549_InfinitePolynomialRing_is_field.patch) by mmezzarobba created at 2010-07-19 20:08:02",
+    "body": "Attachment [trac_9549_InfinitePolynomialRing_is_field.patch](tarball://root/attachments/some-uuid/ticket9549/trac_9549_InfinitePolynomialRing_is_field.patch) by @mezzarobba created at 2010-07-19 20:08:02",
     "created_at": "2010-07-19T20:08:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9549#issuecomment-92050",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
-Attachment [trac_9549_InfinitePolynomialRing_is_field.patch](tarball://root/attachments/some-uuid/ticket9549/trac_9549_InfinitePolynomialRing_is_field.patch) by mmezzarobba created at 2010-07-19 20:08:02
+Attachment [trac_9549_InfinitePolynomialRing_is_field.patch](tarball://root/attachments/some-uuid/ticket9549/trac_9549_InfinitePolynomialRing_is_field.patch) by @mezzarobba created at 2010-07-19 20:08:02
 
 
 
@@ -189,7 +189,7 @@ archive/issue_comments_092051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9549#issuecomment-92051",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_092052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9549#issuecomment-92052",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_092053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9549#issuecomment-92053",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_092054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9549#issuecomment-92054",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004951.json:
     "title": "expose Singular's numerical solver",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4951",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: jkantor

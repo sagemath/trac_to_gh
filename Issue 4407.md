@@ -3,7 +3,7 @@
 archive/issues_004407.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: a = magma('\"%s\"'%('n'*1000000))\n[[works instantly, uses almost no memeory]]\nsage: magma.GetMemoryUsage()\n15728664\n```\n\nNow do the same, but with just 10 times as much input (be ready to kill magma processes).  This will uses several GIGABYTES.\n\n```\nsage: a = magma('\"%s\"'%('n'*10000000))\n^C^Z\n```\n\n\nThis is probably some major magma parser issue.  We should nail down the bound, then either:\n   (1) find some clever way to program around it,\n   (2) report it as a bug to Allan Steel,\n   (3) give an error message instead of blowing up people's computers\n\nIssue created by migration from https://trac.sagemath.org/ticket/4407\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: a = magma('\"%s\"'%('n'*1000000))\n[[works instantly, uses almost no memeory]]\nsage: magma.GetMemoryUsage()\n15728664\n```\n\nNow do the same, but with just 10 times as much input (be ready to kill magma processes).  This will uses several GIGABYTES.\n\n```\nsage: a = magma('\"%s\"'%('n'*10000000))\n^C^Z\n```\n\n\nThis is probably some major magma parser issue.  We should nail down the bound, then either:\n   (1) find some clever way to program around it,\n   (2) report it as a bug to Allan Steel,\n   (3) give an error message instead of blowing up people's computers\n\nIssue created by migration from https://trac.sagemath.org/ticket/4407\n\n",
     "created_at": "2008-10-31T00:01:27Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004407.json:
     "title": "magma -- painful scalability issue with parser and interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4407",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -56,7 +56,7 @@ archive/issue_comments_032409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4407#issuecomment-32409",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_032410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4407#issuecomment-32410",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

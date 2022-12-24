@@ -14,7 +14,7 @@ archive/issues_001875.json:
     "title": "increase idle timeout and save interval on the notebook to 6 minutes (shorter times cause serious performance problems, esp on large notebook servers)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1875",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

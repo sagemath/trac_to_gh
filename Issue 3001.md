@@ -14,7 +14,7 @@ archive/issues_003001.json:
     "title": "sage ignores custom environment variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3001",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 Assignee: mabshoff
@@ -103,16 +103,16 @@ Michael
 archive/issue_comments_020652.json:
 ```json
 {
-    "body": "Attachment [trac_3001.patch](tarball://root/attachments/some-uuid/ticket3001/trac_3001.patch) by ddrake created at 2009-07-02 02:30:25",
+    "body": "Attachment [trac_3001.patch](tarball://root/attachments/some-uuid/ticket3001/trac_3001.patch) by @dandrake created at 2009-07-02 02:30:25",
     "created_at": "2009-07-02T02:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3001#issuecomment-20652",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_3001.patch](tarball://root/attachments/some-uuid/ticket3001/trac_3001.patch) by ddrake created at 2009-07-02 02:30:25
+Attachment [trac_3001.patch](tarball://root/attachments/some-uuid/ticket3001/trac_3001.patch) by @dandrake created at 2009-07-02 02:30:25
 
 
 
@@ -126,7 +126,7 @@ archive/issue_comments_020653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3001#issuecomment-20653",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002504.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following was reported by Luis Finotti on sage-support, here: http://groups.google.com/group/sage-support/browse_thread/thread/f01e8661743d36d4#\n\nThe following commands return an error:\n\n```\n   P.<x>=PolynomialRing(QQ)\n   f=x^17+3\n   K=NumberField(f,'a')\n   K.units(proof=True) # default\n```\n\nbecause Sage is incapable of performing the computation with proof=True.\n(The error ends with \"not enough precomputed primes, need primelimit ~  (35)\".)\n\nIf you then do\n\n```\n   K.units(proof=False)\n```\n\nyou get an answer immediately; then repeating the original\n\n```\n   K.units(proof=True)\n```\n\ngives you the unproved answer again even though proof=True is specified.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2504\n\n",
+    "body": "Assignee: @williamstein\n\nThe following was reported by Luis Finotti on sage-support, here: http://groups.google.com/group/sage-support/browse_thread/thread/f01e8661743d36d4#\n\nThe following commands return an error:\n\n```\n   P.<x>=PolynomialRing(QQ)\n   f=x^17+3\n   K=NumberField(f,'a')\n   K.units(proof=True) # default\n```\n\nbecause Sage is incapable of performing the computation with proof=True.\n(The error ends with \"not enough precomputed primes, need primelimit ~  (35)\".)\n\nIf you then do\n\n```\n   K.units(proof=False)\n```\n\nyou get an answer immediately; then repeating the original\n\n```\n   K.units(proof=True)\n```\n\ngives you the unproved answer again even though proof=True is specified.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2504\n\n",
     "created_at": "2008-03-13T03:14:46Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_002504.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following was reported by Luis Finotti on sage-support, here: http://groups.google.com/group/sage-support/browse_thread/thread/f01e8661743d36d4#
 
@@ -58,16 +58,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2504
 archive/issue_comments_016963.json:
 ```json
 {
-    "body": "Attachment [2504-units_cache.patch](tarball://root/attachments/some-uuid/ticket2504/2504-units_cache.patch) by AlexGhitza created at 2008-04-13 02:27:55\n\nThe attached patch fixes this and adds doctests illustrating the correct behavior.",
+    "body": "Attachment [2504-units_cache.patch](tarball://root/attachments/some-uuid/ticket2504/2504-units_cache.patch) by @aghitza created at 2008-04-13 02:27:55\n\nThe attached patch fixes this and adds doctests illustrating the correct behavior.",
     "created_at": "2008-04-13T02:27:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2504#issuecomment-16963",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [2504-units_cache.patch](tarball://root/attachments/some-uuid/ticket2504/2504-units_cache.patch) by AlexGhitza created at 2008-04-13 02:27:55
+Attachment [2504-units_cache.patch](tarball://root/attachments/some-uuid/ticket2504/2504-units_cache.patch) by @aghitza created at 2008-04-13 02:27:55
 
 The attached patch fixes this and adds doctests illustrating the correct behavior.
 
@@ -83,7 +83,7 @@ archive/issue_comments_016964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2504#issuecomment-16964",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -96,16 +96,16 @@ Wait -- if you ask for units with proof, the value is cached.  If you then ask f
 archive/issue_comments_016965.json:
 ```json
 {
-    "body": "Attachment [2504-units_cache.2.patch](tarball://root/attachments/some-uuid/ticket2504/2504-units_cache.2.patch) by AlexGhitza created at 2008-04-15 20:18:32\n\nYou are completely right.  I've replaced the patch and reorganized the code so it looks a bit cleaner.",
+    "body": "Attachment [2504-units_cache.2.patch](tarball://root/attachments/some-uuid/ticket2504/2504-units_cache.2.patch) by @aghitza created at 2008-04-15 20:18:32\n\nYou are completely right.  I've replaced the patch and reorganized the code so it looks a bit cleaner.",
     "created_at": "2008-04-15T20:18:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2504#issuecomment-16965",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [2504-units_cache.2.patch](tarball://root/attachments/some-uuid/ticket2504/2504-units_cache.2.patch) by AlexGhitza created at 2008-04-15 20:18:32
+Attachment [2504-units_cache.2.patch](tarball://root/attachments/some-uuid/ticket2504/2504-units_cache.2.patch) by @aghitza created at 2008-04-15 20:18:32
 
 You are completely right.  I've replaced the patch and reorganized the code so it looks a bit cleaner.
 
@@ -121,7 +121,7 @@ archive/issue_comments_016966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2504#issuecomment-16966",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

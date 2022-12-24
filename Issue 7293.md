@@ -14,7 +14,7 @@ archive/issues_007293.json:
     "title": "Matrix of constraints as an input to MixedIntegerLinearProgram",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7293",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
@@ -39,7 +39,7 @@ archive/issue_comments_060722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7293#issuecomment-60722",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_060723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7293#issuecomment-60723",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_060724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7293#issuecomment-60724",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_060725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7293#issuecomment-60725",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_060726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7293#issuecomment-60726",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

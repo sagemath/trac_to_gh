@@ -3,7 +3,7 @@
 archive/issues_007200.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: permutation\n\nThe method \"longest_increasing_subsequence\" was computing the longest increasing factors of the permutation!\n\nThis patch fixes the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7200\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: permutation\n\nThe method \"longest_increasing_subsequence\" was computing the longest increasing factors of the permutation!\n\nThis patch fixes the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7200\n\n",
     "created_at": "2009-10-13T14:04:38Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_007200.json:
     "user": "vferay"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -74,7 +74,7 @@ Attachment [permutations_fix_longest_increasing_subsequence_vf.patch](tarball://
 archive/issue_comments_059744.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to vferay.",
+    "body": "Changing assignee from @mwhansen to vferay.",
     "created_at": "2009-10-14T08:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_059744.json:
 }
 ```
 
-Changing assignee from mhansen to vferay.
+Changing assignee from @mwhansen to vferay.
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_059745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7200#issuecomment-59745",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_059746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7200#issuecomment-59746",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_059748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7200#issuecomment-59748",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_059751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7200#issuecomment-59751",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_059752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7200#issuecomment-59752",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_059753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7200#issuecomment-59753",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_059754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7200#issuecomment-59754",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -310,16 +310,16 @@ Florent
 archive/issue_comments_059755.json:
 ```json
 {
-    "body": "Attachment [trac_7200.patch](tarball://root/attachments/some-uuid/ticket7200/trac_7200.patch) by mhansen created at 2009-11-05 01:43:03",
+    "body": "Attachment [trac_7200.patch](tarball://root/attachments/some-uuid/ticket7200/trac_7200.patch) by @mwhansen created at 2009-11-05 01:43:03",
     "created_at": "2009-11-05T01:43:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7200#issuecomment-59755",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7200.patch](tarball://root/attachments/some-uuid/ticket7200/trac_7200.patch) by mhansen created at 2009-11-05 01:43:03
+Attachment [trac_7200.patch](tarball://root/attachments/some-uuid/ticket7200/trac_7200.patch) by @mwhansen created at 2009-11-05 01:43:03
 
 
 
@@ -333,7 +333,7 @@ archive/issue_comments_059756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7200#issuecomment-59756",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_059757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7200#issuecomment-59757",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

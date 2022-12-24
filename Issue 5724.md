@@ -3,7 +3,7 @@
 archive/issues_005724.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5724\n\n",
+    "body": "Assignee: @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5724\n\n",
     "created_at": "2009-04-09T07:53:27Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_005724.json:
     "title": "[with patch; needs review] get coverage of quotient_ring_element.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5724",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5724
 archive/issue_comments_044728.json:
 ```json
 {
-    "body": "Attachment [trac_5724.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724.patch) by was created at 2009-04-09 07:54:00",
+    "body": "Attachment [trac_5724.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724.patch) by @williamstein created at 2009-04-09 07:54:00",
     "created_at": "2009-04-09T07:54:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5724#issuecomment-44728",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5724.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724.patch) by was created at 2009-04-09 07:54:00
+Attachment [trac_5724.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724.patch) by @williamstein created at 2009-04-09 07:54:00
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_044729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5724#issuecomment-44729",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_044730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5724#issuecomment-44730",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -86,16 +86,16 @@ You seem to prefer to write doctests which call the method directly rather than 
 archive/issue_comments_044731.json:
 ```json
 {
-    "body": "Attachment [trac_5724-part2.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724-part2.patch) by was created at 2009-04-10 01:15:29\n\nmove some doctests to TESTS:, change others to indirect tests.",
+    "body": "Attachment [trac_5724-part2.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724-part2.patch) by @williamstein created at 2009-04-10 01:15:29\n\nmove some doctests to TESTS:, change others to indirect tests.",
     "created_at": "2009-04-10T01:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5724#issuecomment-44731",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5724-part2.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724-part2.patch) by was created at 2009-04-10 01:15:29
+Attachment [trac_5724-part2.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724-part2.patch) by @williamstein created at 2009-04-10 01:15:29
 
 move some doctests to TESTS:, change others to indirect tests.
 
@@ -111,7 +111,7 @@ archive/issue_comments_044732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5724#issuecomment-44732",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -130,16 +130,16 @@ A side question: It seems `QuotientRingElement` is exclusively used for quotient
 archive/issue_comments_044733.json:
 ```json
 {
-    "body": "Attachment [trac_5724-part3.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724-part3.patch) by was created at 2009-04-10 14:43:06",
+    "body": "Attachment [trac_5724-part3.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724-part3.patch) by @williamstein created at 2009-04-10 14:43:06",
     "created_at": "2009-04-10T14:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5724#issuecomment-44733",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5724-part3.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724-part3.patch) by was created at 2009-04-10 14:43:06
+Attachment [trac_5724-part3.patch](tarball://root/attachments/some-uuid/ticket5724/trac_5724-part3.patch) by @williamstein created at 2009-04-10 14:43:06
 
 
 
@@ -153,7 +153,7 @@ archive/issue_comments_044734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5724#issuecomment-44734",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_044739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5724#issuecomment-44739",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008870.json:
     "title": "Multiflow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8870",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -37,7 +37,7 @@ archive/issue_comments_081539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8870#issuecomment-81539",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_081540.json:
 ```json
 {
-    "body": "Changing assignee from jason, ncohen, rlm to ncohen.",
+    "body": "Changing assignee from jason, ncohen, rlm to @nathanncohen.",
     "created_at": "2010-05-08T22:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8870#issuecomment-81540",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Changing assignee from jason, ncohen, rlm to ncohen.
+Changing assignee from jason, ncohen, rlm to @nathanncohen.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_081541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8870#issuecomment-81541",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_081542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8870#issuecomment-81542",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_081543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8870#issuecomment-81543",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_081544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8870#issuecomment-81544",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_081545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8870#issuecomment-81545",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -164,16 +164,16 @@ Nathann
 archive/issue_comments_081546.json:
 ```json
 {
-    "body": "Attachment [trac_8870.patch](tarball://root/attachments/some-uuid/ticket8870/trac_8870.patch) by ncohen created at 2010-06-21 21:06:53",
+    "body": "Attachment [trac_8870.patch](tarball://root/attachments/some-uuid/ticket8870/trac_8870.patch) by @nathanncohen created at 2010-06-21 21:06:53",
     "created_at": "2010-06-21T21:06:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8870#issuecomment-81546",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8870.patch](tarball://root/attachments/some-uuid/ticket8870/trac_8870.patch) by ncohen created at 2010-06-21 21:06:53
+Attachment [trac_8870.patch](tarball://root/attachments/some-uuid/ticket8870/trac_8870.patch) by @nathanncohen created at 2010-06-21 21:06:53
 
 
 
@@ -187,7 +187,7 @@ archive/issue_comments_081547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8870#issuecomment-81547",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -200,16 +200,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_081548.json:
 ```json
 {
-    "body": "Attachment [trac_8870-ref.patch](tarball://root/attachments/some-uuid/ticket8870/trac_8870-ref.patch) by rlm created at 2010-06-21 21:50:44\n\nLooks good to me. Apply both patches.",
+    "body": "Attachment [trac_8870-ref.patch](tarball://root/attachments/some-uuid/ticket8870/trac_8870-ref.patch) by @rlmill created at 2010-06-21 21:50:44\n\nLooks good to me. Apply both patches.",
     "created_at": "2010-06-21T21:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8870#issuecomment-81548",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8870-ref.patch](tarball://root/attachments/some-uuid/ticket8870/trac_8870-ref.patch) by rlm created at 2010-06-21 21:50:44
+Attachment [trac_8870-ref.patch](tarball://root/attachments/some-uuid/ticket8870/trac_8870-ref.patch) by @rlmill created at 2010-06-21 21:50:44
 
 Looks good to me. Apply both patches.
 
@@ -225,7 +225,7 @@ archive/issue_comments_081549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8870#issuecomment-81549",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

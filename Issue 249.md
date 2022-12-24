@@ -14,7 +14,7 @@ archive/issues_000249.json:
     "title": "possible optimization opportunity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/249",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -157,7 +157,7 @@ archive/issue_comments_001094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/249#issuecomment-1094",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_001095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/249#issuecomment-1095",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_001096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/249#issuecomment-1096",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -230,16 +230,16 @@ CPU time: 0.06 s,  Wall time: 0.06 s
 archive/issue_comments_001097.json:
 ```json
 {
-    "body": "Attachment [249-preparse-constants.patch](tarball://root/attachments/some-uuid/ticket249/249-preparse-constants.patch) by robertwb created at 2008-09-23 21:43:57",
+    "body": "Attachment [249-preparse-constants.patch](tarball://root/attachments/some-uuid/ticket249/249-preparse-constants.patch) by @robertwb created at 2008-09-23 21:43:57",
     "created_at": "2008-09-23T21:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/249#issuecomment-1097",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [249-preparse-constants.patch](tarball://root/attachments/some-uuid/ticket249/249-preparse-constants.patch) by robertwb created at 2008-09-23 21:43:57
+Attachment [249-preparse-constants.patch](tarball://root/attachments/some-uuid/ticket249/249-preparse-constants.patch) by @robertwb created at 2008-09-23 21:43:57
 
 
 
@@ -253,7 +253,7 @@ archive/issue_comments_001098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/249#issuecomment-1098",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

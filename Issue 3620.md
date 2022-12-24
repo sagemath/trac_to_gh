@@ -14,7 +14,7 @@ archive/issues_003620.json:
     "title": "minpoly slow for finte fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3620",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_025550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25550",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_025551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25551",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_025552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25552",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -198,16 +198,16 @@ Wall time: 20.51 s
 archive/issue_comments_025554.json:
 ```json
 {
-    "body": "Attachment [sage-3620.patch](tarball://root/attachments/some-uuid/ticket3620/sage-3620.patch) by was created at 2008-07-09 19:53:25",
+    "body": "Attachment [sage-3620.patch](tarball://root/attachments/some-uuid/ticket3620/sage-3620.patch) by @williamstein created at 2008-07-09 19:53:25",
     "created_at": "2008-07-09T19:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25554",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3620.patch](tarball://root/attachments/some-uuid/ticket3620/sage-3620.patch) by was created at 2008-07-09 19:53:25
+Attachment [sage-3620.patch](tarball://root/attachments/some-uuid/ticket3620/sage-3620.patch) by @williamstein created at 2008-07-09 19:53:25
 
 
 
@@ -221,7 +221,7 @@ archive/issue_comments_025555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25555",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_025556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25556",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_025560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25560",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_025561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25561",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_025562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25562",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

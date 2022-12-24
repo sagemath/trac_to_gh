@@ -3,7 +3,7 @@
 archive/issues_003385.json:
 ```json
 {
-    "body": "Assignee: was\n\nAs [reported to sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8f409c06fc3a291c), `plot_vector_field()` does not change the angle of the arrows as appropriate for the aspect ratio.\n\nTo see this, take [this `@`interact demo](http://wiki.sagemath.org/interact/diffeq#head-f79d3195e10d507bda57064c8b8d10d15e55a5e4) and change `xmin` to 1/4. The plotted solution is correct, but the angles of the arrows for the vector field aren't changed correctly. (Also see https://www.sagenb.org/home/pub/1794/, if it's actually loading.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3385\n\n",
+    "body": "Assignee: @williamstein\n\nAs [reported to sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8f409c06fc3a291c), `plot_vector_field()` does not change the angle of the arrows as appropriate for the aspect ratio.\n\nTo see this, take [this `@`interact demo](http://wiki.sagemath.org/interact/diffeq#head-f79d3195e10d507bda57064c8b8d10d15e55a5e4) and change `xmin` to 1/4. The plotted solution is correct, but the angles of the arrows for the vector field aren't changed correctly. (Also see https://www.sagenb.org/home/pub/1794/, if it's actually loading.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3385\n\n",
     "created_at": "2008-06-08T23:22:38Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003385.json:
     "title": "plot_vector_field does not deal with aspect ratios correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3385",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 As [reported to sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8f409c06fc3a291c), `plot_vector_field()` does not change the angle of the arrows as appropriate for the aspect ratio.
 
@@ -39,7 +39,7 @@ archive/issue_comments_023690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3385#issuecomment-23690",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_023691.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-09-03T01:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3385#issuecomment-23691",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_023692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3385#issuecomment-23692",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_023693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3385#issuecomment-23693",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_023694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3385#issuecomment-23694",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_023695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3385#issuecomment-23695",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_023696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3385#issuecomment-23696",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -188,16 +188,16 @@ This spkg needs to be installed before the attached patch is applied.
 archive/issue_comments_023697.json:
 ```json
 {
-    "body": "Attachment [plot_vector_field_aspect_ratio.patch](tarball://root/attachments/some-uuid/ticket3385/plot_vector_field_aspect_ratio.patch) by jason created at 2008-09-20 19:21:58",
+    "body": "Attachment [plot_vector_field_aspect_ratio.patch](tarball://root/attachments/some-uuid/ticket3385/plot_vector_field_aspect_ratio.patch) by @jasongrout created at 2008-09-20 19:21:58",
     "created_at": "2008-09-20T19:21:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3385#issuecomment-23697",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [plot_vector_field_aspect_ratio.patch](tarball://root/attachments/some-uuid/ticket3385/plot_vector_field_aspect_ratio.patch) by jason created at 2008-09-20 19:21:58
+Attachment [plot_vector_field_aspect_ratio.patch](tarball://root/attachments/some-uuid/ticket3385/plot_vector_field_aspect_ratio.patch) by @jasongrout created at 2008-09-20 19:21:58
 
 
 
@@ -211,7 +211,7 @@ archive/issue_comments_023698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3385#issuecomment-23698",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_023699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3385#issuecomment-23699",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_023700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3385#issuecomment-23700",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_023701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3385#issuecomment-23701",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_023702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3385#issuecomment-23702",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

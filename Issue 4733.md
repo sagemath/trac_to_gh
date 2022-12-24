@@ -3,7 +3,7 @@
 archive/issues_004733.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis adds a generic matrix exponential (convert to SR matrix; use maxima, or use scipy if RDF/CDF matrix)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4733\n\n",
+    "body": "Assignee: @williamstein\n\nThis adds a generic matrix exponential (convert to SR matrix; use maxima, or use scipy if RDF/CDF matrix)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4733\n\n",
     "created_at": "2008-12-06T23:35:17Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004733.json:
     "title": "matrix exponential for general matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4733",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This adds a generic matrix exponential (convert to SR matrix; use maxima, or use scipy if RDF/CDF matrix)
 
@@ -39,7 +39,7 @@ archive/issue_comments_035721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35721",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_035722.json:
 ```json
 {
-    "body": "Attachment [matrix-exp.patch](tarball://root/attachments/some-uuid/ticket4733/matrix-exp.patch) by jason created at 2008-12-06 23:36:03",
+    "body": "Attachment [matrix-exp.patch](tarball://root/attachments/some-uuid/ticket4733/matrix-exp.patch) by @jasongrout created at 2008-12-06 23:36:03",
     "created_at": "2008-12-06T23:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35722",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [matrix-exp.patch](tarball://root/attachments/some-uuid/ticket4733/matrix-exp.patch) by jason created at 2008-12-06 23:36:03
+Attachment [matrix-exp.patch](tarball://root/attachments/some-uuid/ticket4733/matrix-exp.patch) by @jasongrout created at 2008-12-06 23:36:03
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_035723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35723",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_035724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35724",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_035725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35725",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_035726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35726",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_035727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35727",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_035728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35728",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_035730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35730",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -330,16 +330,16 @@ trivial rebase to 3.3.alpha0
 archive/issue_comments_035731.json:
 ```json
 {
-    "body": "Attachment [trac_4733.patch](tarball://root/attachments/some-uuid/ticket4733/trac_4733.patch) by AlexGhitza created at 2009-01-22 06:18:04",
+    "body": "Attachment [trac_4733.patch](tarball://root/attachments/some-uuid/ticket4733/trac_4733.patch) by @aghitza created at 2009-01-22 06:18:04",
     "created_at": "2009-01-22T06:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4733",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35731",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_4733.patch](tarball://root/attachments/some-uuid/ticket4733/trac_4733.patch) by AlexGhitza created at 2009-01-22 06:18:04
+Attachment [trac_4733.patch](tarball://root/attachments/some-uuid/ticket4733/trac_4733.patch) by @aghitza created at 2009-01-22 06:18:04
 
 
 

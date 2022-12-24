@@ -3,7 +3,7 @@
 archive/issues_009325.json:
 ```json
 {
-    "body": "Assignee: ncalexan\n\nKeywords: preparse docstring\n\nI found (and fixed) a few Bugs in the file local/bin/sage-preparse.\n\nThese are the things I fixed:\n\n* The module docstrings disappeared when preparsing because the\npreparse_file function inserted those numeric_literals definitions before\nthe docstrings.\n\n* Now also unicode-docstrings (e.g. u\"\"\"foo\"\"\") are recognized as\ndocstrings. Also raw docstrings may now use an upper case R as string\nmodifier (R\"\"\"foo\"\"\" would work now) which is allowed in Python.\n\n* Now all coding-comments as specified by Python are found and excluded\nfrom preparsing.\n\n* I did not fix a bug that occurs when a statement is on the same line\nwhere the docstring ends (e.g. \"\"\"foo\"\"\"; print 2^5). It will not be\npreparsed! I added a TODO-comment on the according line. \n\ngreetings,\nDavid Poetzsch-Heffter\n\nIssue created by migration from https://trac.sagemath.org/ticket/9325\n\n",
+    "body": "Assignee: @ncalexan\n\nKeywords: preparse docstring\n\nI found (and fixed) a few Bugs in the file local/bin/sage-preparse.\n\nThese are the things I fixed:\n\n* The module docstrings disappeared when preparsing because the\npreparse_file function inserted those numeric_literals definitions before\nthe docstrings.\n\n* Now also unicode-docstrings (e.g. u\"\"\"foo\"\"\") are recognized as\ndocstrings. Also raw docstrings may now use an upper case R as string\nmodifier (R\"\"\"foo\"\"\" would work now) which is allowed in Python.\n\n* Now all coding-comments as specified by Python are found and excluded\nfrom preparsing.\n\n* I did not fix a bug that occurs when a statement is on the same line\nwhere the docstring ends (e.g. \"\"\"foo\"\"\"; print 2^5). It will not be\npreparsed! I added a TODO-comment on the according line. \n\ngreetings,\nDavid Poetzsch-Heffter\n\nIssue created by migration from https://trac.sagemath.org/ticket/9325\n\n",
     "created_at": "2010-06-24T10:02:02Z",
     "labels": [
         "sage-mode",
@@ -16,7 +16,7 @@ archive/issues_009325.json:
     "user": "dpoetzsch"
 }
 ```
-Assignee: ncalexan
+Assignee: @ncalexan
 
 Keywords: preparse docstring
 
@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9325
 archive/issue_comments_087939.json:
 ```json
 {
-    "body": "Changing assignee from ncalexan to jason.",
+    "body": "Changing assignee from @ncalexan to @jasongrout.",
     "created_at": "2010-06-24T10:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9325",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_087939.json:
 }
 ```
 
-Changing assignee from ncalexan to jason.
+Changing assignee from @ncalexan to @jasongrout.
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_087943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9325#issuecomment-87943",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_087944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9325#issuecomment-87944",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

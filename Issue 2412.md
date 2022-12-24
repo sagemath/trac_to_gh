@@ -3,7 +3,7 @@
 archive/issues_002412.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan jason\n\nKeywords: basis matrix basis_matrix ZZ\n\n\n```\nsage: (ZZ**3).basis_matrix()\n\n[1 0 0]\n[0 1 0]\n[0 0 1]\nsage: (ZZ**3).basis_matrix().parent()\nFull MatrixSpace of 3 by 3 dense matrices over Rational Field\n```\n\n\nThat should be over the integer ring; you can't do `(ZZ**3).basis_matrix().smith_form()` otherwise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2412\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan @jasongrout\n\nKeywords: basis matrix basis_matrix ZZ\n\n\n```\nsage: (ZZ**3).basis_matrix()\n\n[1 0 0]\n[0 1 0]\n[0 0 1]\nsage: (ZZ**3).basis_matrix().parent()\nFull MatrixSpace of 3 by 3 dense matrices over Rational Field\n```\n\n\nThat should be over the integer ring; you can't do `(ZZ**3).basis_matrix().smith_form()` otherwise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2412\n\n",
     "created_at": "2008-03-06T22:54:36Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_002412.json:
     "title": "basis_matrix returns matrix over wrong ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2412",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan jason
+CC:  @ncalexan @jasongrout
 
 Keywords: basis matrix basis_matrix ZZ
 
@@ -53,7 +53,7 @@ archive/issue_comments_016279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2412#issuecomment-16279",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_016280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2412#issuecomment-16280",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_016281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2412#issuecomment-16281",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

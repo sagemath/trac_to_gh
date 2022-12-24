@@ -3,7 +3,7 @@
 archive/issues_003623.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nUniqueness of parents makes Sage operate much more smoothly. This leads to an enormous amount of nearly identical caching code scattered throughout the library. This factory handles all the caching for you, and also provides a good pickling mechanism. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3623\n\n",
+    "body": "Assignee: @robertwb\n\nUniqueness of parents makes Sage operate much more smoothly. This leads to an enormous amount of nearly identical caching code scattered throughout the library. This factory handles all the caching for you, and also provides a good pickling mechanism. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3623\n\n",
     "created_at": "2008-07-09T08:03:41Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_003623.json:
     "title": "Factory and pickling framework (part of coercion branch)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3623",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 Uniqueness of parents makes Sage operate much more smoothly. This leads to an enormous amount of nearly identical caching code scattered throughout the library. This factory handles all the caching for you, and also provides a good pickling mechanism. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_025615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25615",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_025617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25617",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -105,16 +105,16 @@ Thanks. I'll rebase this as soon as 3.1.2 comes out (as I doubt this ticket will
 archive/issue_comments_025618.json:
 ```json
 {
-    "body": "Attachment [3623-factory-1.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-1.patch) by robertwb created at 2008-09-23 23:11:01",
+    "body": "Attachment [3623-factory-1.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-1.patch) by @robertwb created at 2008-09-23 23:11:01",
     "created_at": "2008-09-23T23:11:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25618",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3623-factory-1.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-1.patch) by robertwb created at 2008-09-23 23:11:01
+Attachment [3623-factory-1.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-1.patch) by @robertwb created at 2008-09-23 23:11:01
 
 
 
@@ -123,16 +123,16 @@ Attachment [3623-factory-1.patch](tarball://root/attachments/some-uuid/ticket362
 archive/issue_comments_025619.json:
 ```json
 {
-    "body": "Attachment [3623-factory-3.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-3.patch) by robertwb created at 2008-09-23 23:11:26",
+    "body": "Attachment [3623-factory-3.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-3.patch) by @robertwb created at 2008-09-23 23:11:26",
     "created_at": "2008-09-23T23:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25619",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3623-factory-3.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-3.patch) by robertwb created at 2008-09-23 23:11:26
+Attachment [3623-factory-3.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-3.patch) by @robertwb created at 2008-09-23 23:11:26
 
 
 
@@ -141,16 +141,16 @@ Attachment [3623-factory-3.patch](tarball://root/attachments/some-uuid/ticket362
 archive/issue_comments_025620.json:
 ```json
 {
-    "body": "Attachment [3623-factory-4.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-4.patch) by robertwb created at 2008-09-23 23:12:25\n\nAll four patches rebased.",
+    "body": "Attachment [3623-factory-4.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-4.patch) by @robertwb created at 2008-09-23 23:12:25\n\nAll four patches rebased.",
     "created_at": "2008-09-23T23:12:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25620",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3623-factory-4.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-4.patch) by robertwb created at 2008-09-23 23:12:25
+Attachment [3623-factory-4.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-4.patch) by @robertwb created at 2008-09-23 23:12:25
 
 All four patches rebased.
 
@@ -161,16 +161,16 @@ All four patches rebased.
 archive/issue_comments_025621.json:
 ```json
 {
-    "body": "Attachment [3623-factory-5.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-5.patch) by robertwb created at 2008-09-24 05:29:50",
+    "body": "Attachment [3623-factory-5.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-5.patch) by @robertwb created at 2008-09-24 05:29:50",
     "created_at": "2008-09-24T05:29:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25621",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3623-factory-5.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-5.patch) by robertwb created at 2008-09-24 05:29:50
+Attachment [3623-factory-5.patch](tarball://root/attachments/some-uuid/ticket3623/3623-factory-5.patch) by @robertwb created at 2008-09-24 05:29:50
 
 
 
@@ -184,7 +184,7 @@ archive/issue_comments_025622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25622",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_025623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25623",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -239,16 +239,16 @@ patches 1-5 folded and rebased onto 3.2.1
 archive/issue_comments_025624.json:
 ```json
 {
-    "body": "Attachment [3623-all-3.2.1.patch](tarball://root/attachments/some-uuid/ticket3623/3623-all-3.2.1.patch) by robertwb created at 2008-12-02 12:42:03\n\nOK, this is once again rebased.",
+    "body": "Attachment [3623-all-3.2.1.patch](tarball://root/attachments/some-uuid/ticket3623/3623-all-3.2.1.patch) by @robertwb created at 2008-12-02 12:42:03\n\nOK, this is once again rebased.",
     "created_at": "2008-12-02T12:42:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25624",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3623-all-3.2.1.patch](tarball://root/attachments/some-uuid/ticket3623/3623-all-3.2.1.patch) by robertwb created at 2008-12-02 12:42:03
+Attachment [3623-all-3.2.1.patch](tarball://root/attachments/some-uuid/ticket3623/3623-all-3.2.1.patch) by @robertwb created at 2008-12-02 12:42:03
 
 OK, this is once again rebased.
 
@@ -358,16 +358,16 @@ Michael
 archive/issue_comments_025626.json:
 ```json
 {
-    "body": "Attachment [3623-fix.patch](tarball://root/attachments/some-uuid/ticket3623/3623-fix.patch) by robertwb created at 2008-12-02 20:18:39\n\napply after 3623-3.2.1-all.patch",
+    "body": "Attachment [3623-fix.patch](tarball://root/attachments/some-uuid/ticket3623/3623-fix.patch) by @robertwb created at 2008-12-02 20:18:39\n\napply after 3623-3.2.1-all.patch",
     "created_at": "2008-12-02T20:18:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25626",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3623-fix.patch](tarball://root/attachments/some-uuid/ticket3623/3623-fix.patch) by robertwb created at 2008-12-02 20:18:39
+Attachment [3623-fix.patch](tarball://root/attachments/some-uuid/ticket3623/3623-fix.patch) by @robertwb created at 2008-12-02 20:18:39
 
 apply after 3623-3.2.1-all.patch
 
@@ -383,7 +383,7 @@ archive/issue_comments_025627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25627",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_025633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25633",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

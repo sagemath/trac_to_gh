@@ -3,7 +3,7 @@
 archive/issues_004314.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: eclib CremonaModularSymbols\n\nThe attached patch (based on 3.1.4) makes two changes in libs/cremona/mat*:\n1. Adds getitem methods to the matric class so i,j entries may be extracted;\n2. Changes the conversion to sage of matrices so that matrices over ZZ are constructed instead of ZZ.\n\nThese were done as part of a hands-on tutorial William gave to John in Bordeaux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4314\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: eclib CremonaModularSymbols\n\nThe attached patch (based on 3.1.4) makes two changes in libs/cremona/mat*:\n1. Adds getitem methods to the matric class so i,j entries may be extracted;\n2. Changes the conversion to sage of matrices so that matrices over ZZ are constructed instead of ZZ.\n\nThese were done as part of a hands-on tutorial William gave to John in Bordeaux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4314\n\n",
     "created_at": "2008-10-17T17:12:39Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004314.json:
     "title": "[with patch] Add some functionality to matrices in eclib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4314",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: eclib CremonaModularSymbols
 
@@ -43,7 +43,7 @@ archive/issue_comments_031583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4314#issuecomment-31583",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_031584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4314#issuecomment-31584",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_031585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4314#issuecomment-31585",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

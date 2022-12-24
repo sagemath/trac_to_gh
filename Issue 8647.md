@@ -14,7 +14,7 @@ archive/issues_008647.json:
     "title": "bump maxima artificially so upgrades aren't *all* broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8647",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -37,7 +37,7 @@ archive/issue_comments_078456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8647#issuecomment-78456",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_078457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8647#issuecomment-78457",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_078458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8647#issuecomment-78458",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_078459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8647#issuecomment-78459",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_078460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8647#issuecomment-78460",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_078461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8647#issuecomment-78461",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_078462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8647#issuecomment-78462",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

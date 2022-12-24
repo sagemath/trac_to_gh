@@ -3,7 +3,7 @@
 archive/issues_007885.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  roed saraedum fschulze\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7885\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @roed314 @saraedum fschulze\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7885\n\n",
     "created_at": "2010-01-09T20:15:48Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_007885.json:
     "title": "Tate's algorithm for function fields.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7885",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  roed saraedum fschulze
+CC:  @roed314 @saraedum fschulze
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_068530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7885#issuecomment-68530",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_068531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7885#issuecomment-68531",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_068532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7885#issuecomment-68532",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_068533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7885#issuecomment-68533",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_068534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7885#issuecomment-68534",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

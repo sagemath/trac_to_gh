@@ -3,7 +3,7 @@
 archive/issues_008447.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif mpatel was\n\nVarious threads - e.g\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/29ee9e1d4efdeda2\n\nindicate that it is problematic when very old distributions of Sage are used in distributions of Debian, Ubunta etc. \n\nWhilst this is \"shutting the gate afte the horse has bolted\", it would be useful if future versions of Sage indicated when they are very old. \n\nPerhaps one message should be generated if the date on the computer is more than 4 months in advance of the Sage release date, and a stronger message is isssues if it is more than 12 months old. The exact wording and periods would have to be discussed in sage-devel. \n\nWhatever method is used, it should be portable, and non rely on GNU-specific options to the 'date' command, or any other GNUism. \n\nSee \n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/date.html\n\n\nfor POSIX options to the *date* command. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8447\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @qed777 @williamstein\n\nVarious threads - e.g\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/29ee9e1d4efdeda2\n\nindicate that it is problematic when very old distributions of Sage are used in distributions of Debian, Ubunta etc. \n\nWhilst this is \"shutting the gate afte the horse has bolted\", it would be useful if future versions of Sage indicated when they are very old. \n\nPerhaps one message should be generated if the date on the computer is more than 4 months in advance of the Sage release date, and a stronger message is isssues if it is more than 12 months old. The exact wording and periods would have to be discussed in sage-devel. \n\nWhatever method is used, it should be portable, and non rely on GNU-specific options to the 'date' command, or any other GNUism. \n\nSee \n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/date.html\n\n\nfor POSIX options to the *date* command. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8447\n\n",
     "created_at": "2010-03-05T16:59:00Z",
     "labels": [
         "distribution",
@@ -19,7 +19,7 @@ archive/issues_008447.json:
 ```
 Assignee: tbd
 
-CC:  leif mpatel was
+CC:  @nexttime @qed777 @williamstein
 
 Various threads - e.g
 
@@ -95,7 +95,7 @@ archive/issue_comments_075944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75944",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_075946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75946",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_075947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75947",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_075948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75948",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_075949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75949",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_075950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75950",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

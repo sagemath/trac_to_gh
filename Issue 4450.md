@@ -3,7 +3,7 @@
 archive/issues_004450.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was acleone mpatel\n\nIn the notebook, hold down the down arrow in the last cell.  It doesn't just stop, but wraps around. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4450\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein acleone @qed777\n\nIn the notebook, hold down the down arrow in the last cell.  It doesn't just stop, but wraps around. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4450\n\n",
     "created_at": "2008-11-05T23:16:38Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_004450.json:
     "title": "notebook -- cursor down in last cell wraps around cell, instead of just staying at bottom",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4450",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  was acleone mpatel
+CC:  @williamstein acleone @qed777
 
 In the notebook, hold down the down arrow in the last cell.  It doesn't just stop, but wraps around. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_032809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32809",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -52,16 +52,16 @@ Is this still a problem?
 archive/issue_comments_032810.json:
 ```json
 {
-    "body": "Attachment [trac_4450-cursor-wrap-last-cell.patch](tarball://root/attachments/some-uuid/ticket4450/trac_4450-cursor-wrap-last-cell.patch) by timdumol created at 2010-01-19 11:14:00\n\nPrevents the cursor from wrapping aroundat last cell.",
+    "body": "Attachment [trac_4450-cursor-wrap-last-cell.patch](tarball://root/attachments/some-uuid/ticket4450/trac_4450-cursor-wrap-last-cell.patch) by @TimDumol created at 2010-01-19 11:14:00\n\nPrevents the cursor from wrapping aroundat last cell.",
     "created_at": "2010-01-19T11:14:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32810",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_4450-cursor-wrap-last-cell.patch](tarball://root/attachments/some-uuid/ticket4450/trac_4450-cursor-wrap-last-cell.patch) by timdumol created at 2010-01-19 11:14:00
+Attachment [trac_4450-cursor-wrap-last-cell.patch](tarball://root/attachments/some-uuid/ticket4450/trac_4450-cursor-wrap-last-cell.patch) by @TimDumol created at 2010-01-19 11:14:00
 
 Prevents the cursor from wrapping aroundat last cell.
 
@@ -77,7 +77,7 @@ archive/issue_comments_032811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32811",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_032812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32812",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_032815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32815",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

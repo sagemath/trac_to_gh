@@ -3,7 +3,7 @@
 archive/issues_003498.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n[20:17] <wstein-3053> numpy is usually better.\n[20:18] <jason--> okay; do you mind if we switch the determinant function to numpy for matrices over CDF?\n[20:18] <wstein-3053> jason-- please do.\n[20:19] <jason--> okay; ticket coming right up.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3498\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n[20:17] <wstein-3053> numpy is usually better.\n[20:18] <jason--> okay; do you mind if we switch the determinant function to numpy for matrices over CDF?\n[20:18] <wstein-3053> jason-- please do.\n[20:19] <jason--> okay; ticket coming right up.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3498\n\n",
     "created_at": "2008-06-23T22:51:33Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003498.json:
     "title": "make numpy the backend for matrices over CDF and RDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3498",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -45,7 +45,7 @@ archive/issue_comments_024635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24635",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -58,16 +58,16 @@ numpy.2.patch is an update.  RDF matrices seem to work all right, except for 4 d
 archive/issue_comments_024636.json:
 ```json
 {
-    "body": "Attachment [numpy-RDF-CDF.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-RDF-CDF.patch) by jason created at 2008-09-26 01:20:47\n\nThe numpy-RDF-CDF.patch replaces all previous patches.\n\nBasically, I factored out stuff that was common between RDF and CDF matrices (which turned out to be almost everything except the very initial part), stripped out GSL stuff, and wrote a few more doctests.\n\nOops, I just realized that I didn't delete a few pieces of cruft still hanging around from the GSL implementation.  I'll post a follow-up patch shortly.",
+    "body": "Attachment [numpy-RDF-CDF.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-RDF-CDF.patch) by @jasongrout created at 2008-09-26 01:20:47\n\nThe numpy-RDF-CDF.patch replaces all previous patches.\n\nBasically, I factored out stuff that was common between RDF and CDF matrices (which turned out to be almost everything except the very initial part), stripped out GSL stuff, and wrote a few more doctests.\n\nOops, I just realized that I didn't delete a few pieces of cruft still hanging around from the GSL implementation.  I'll post a follow-up patch shortly.",
     "created_at": "2008-09-26T01:20:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24636",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [numpy-RDF-CDF.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-RDF-CDF.patch) by jason created at 2008-09-26 01:20:47
+Attachment [numpy-RDF-CDF.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-RDF-CDF.patch) by @jasongrout created at 2008-09-26 01:20:47
 
 The numpy-RDF-CDF.patch replaces all previous patches.
 
@@ -87,7 +87,7 @@ archive/issue_comments_024637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24637",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -100,16 +100,16 @@ apply on top of previous patch
 archive/issue_comments_024638.json:
 ```json
 {
-    "body": "Attachment [numpy-2.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-2.patch) by jason created at 2008-09-26 01:39:59\n\nThese patches are for 3.1.3alpha1.  With these patches, sage -t *.py and sage -t *.pyx both pass in the matrix/ directory.",
+    "body": "Attachment [numpy-2.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-2.patch) by @jasongrout created at 2008-09-26 01:39:59\n\nThese patches are for 3.1.3alpha1.  With these patches, sage -t *.py and sage -t *.pyx both pass in the matrix/ directory.",
     "created_at": "2008-09-26T01:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24638",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [numpy-2.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-2.patch) by jason created at 2008-09-26 01:39:59
+Attachment [numpy-2.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-2.patch) by @jasongrout created at 2008-09-26 01:39:59
 
 These patches are for 3.1.3alpha1.  With these patches, sage -t *.py and sage -t *.pyx both pass in the matrix/ directory.
 
@@ -180,7 +180,7 @@ archive/issue_comments_024641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24641",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_024642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24642",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_024644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24644",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_024645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24645",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_024647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24647",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -590,7 +590,7 @@ archive/issue_comments_024650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24650",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -612,7 +612,7 @@ archive/issue_comments_024651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24651",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_024652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24652",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -646,16 +646,16 @@ apply on top of previous patches
 archive/issue_comments_024653.json:
 ```json
 {
-    "body": "Attachment [numpy-3.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-3.patch) by jason created at 2008-10-21 03:23:20\n\nI added numpy-3.patch (to be applied on top of the previous patches) which makes numpy *not* imported by default (imported lazily, though), and switches several functions from the numpy versions to the more careful/recommended scipy equivalents.\n\nEarlier today, I ran valgrind on several examples and mabshoff indicated that things looked good to him.  He might do additional testing to see if things really are okay to merge.",
+    "body": "Attachment [numpy-3.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-3.patch) by @jasongrout created at 2008-10-21 03:23:20\n\nI added numpy-3.patch (to be applied on top of the previous patches) which makes numpy *not* imported by default (imported lazily, though), and switches several functions from the numpy versions to the more careful/recommended scipy equivalents.\n\nEarlier today, I ran valgrind on several examples and mabshoff indicated that things looked good to him.  He might do additional testing to see if things really are okay to merge.",
     "created_at": "2008-10-21T03:23:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24653",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [numpy-3.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-3.patch) by jason created at 2008-10-21 03:23:20
+Attachment [numpy-3.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-3.patch) by @jasongrout created at 2008-10-21 03:23:20
 
 I added numpy-3.patch (to be applied on top of the previous patches) which makes numpy *not* imported by default (imported lazily, though), and switches several functions from the numpy versions to the more careful/recommended scipy equivalents.
 
@@ -673,7 +673,7 @@ archive/issue_comments_024654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24654",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -719,7 +719,7 @@ archive/issue_comments_024656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24656",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -737,7 +737,7 @@ archive/issue_comments_024657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24657",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -773,7 +773,7 @@ archive/issue_comments_024658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24658",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -791,7 +791,7 @@ archive/issue_comments_024659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24659",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -808,16 +808,16 @@ I agree it ought to be a separate ticket.
 archive/issue_comments_024660.json:
 ```json
 {
-    "body": "Attachment [remove-gsl-import.patch](tarball://root/attachments/some-uuid/ticket3498/remove-gsl-import.patch) by jason created at 2008-10-24 11:35:03\n\napply on top of previous patches",
+    "body": "Attachment [remove-gsl-import.patch](tarball://root/attachments/some-uuid/ticket3498/remove-gsl-import.patch) by @jasongrout created at 2008-10-24 11:35:03\n\napply on top of previous patches",
     "created_at": "2008-10-24T11:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24660",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [remove-gsl-import.patch](tarball://root/attachments/some-uuid/ticket3498/remove-gsl-import.patch) by jason created at 2008-10-24 11:35:03
+Attachment [remove-gsl-import.patch](tarball://root/attachments/some-uuid/ticket3498/remove-gsl-import.patch) by @jasongrout created at 2008-10-24 11:35:03
 
 apply on top of previous patches
 
@@ -833,7 +833,7 @@ archive/issue_comments_024661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24661",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -853,7 +853,7 @@ archive/issue_comments_024662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24662",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -871,7 +871,7 @@ archive/issue_comments_024663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24663",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -889,7 +889,7 @@ archive/issue_comments_024664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24664",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -907,7 +907,7 @@ archive/issue_comments_024665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24665",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -925,7 +925,7 @@ archive/issue_comments_024666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24666",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -943,7 +943,7 @@ archive/issue_comments_024667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24667",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -961,7 +961,7 @@ archive/issue_comments_024668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24668",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -987,7 +987,7 @@ archive/issue_comments_024669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24669",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1007,7 +1007,7 @@ archive/issue_comments_024670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24670",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1029,7 +1029,7 @@ archive/issue_comments_024671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24671",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1047,7 +1047,7 @@ archive/issue_comments_024672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24672",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1065,7 +1065,7 @@ archive/issue_comments_024673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24673",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1149,7 +1149,7 @@ archive/issue_comments_024676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24676",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1162,16 +1162,16 @@ ignore all previous files; this reverts the relevant parts of #4439 and then #77
 archive/issue_comments_024677.json:
 ```json
 {
-    "body": "Attachment [numpy-RDF-CDF-final.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-RDF-CDF-final.patch) by jason created at 2008-11-08 06:45:05\n\napply on top of revert-trac_4439_778.patch",
+    "body": "Attachment [numpy-RDF-CDF-final.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-RDF-CDF-final.patch) by @jasongrout created at 2008-11-08 06:45:05\n\napply on top of revert-trac_4439_778.patch",
     "created_at": "2008-11-08T06:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24677",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [numpy-RDF-CDF-final.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-RDF-CDF-final.patch) by jason created at 2008-11-08 06:45:05
+Attachment [numpy-RDF-CDF-final.patch](tarball://root/attachments/some-uuid/ticket3498/numpy-RDF-CDF-final.patch) by @jasongrout created at 2008-11-08 06:45:05
 
 apply on top of revert-trac_4439_778.patch
 
@@ -1187,7 +1187,7 @@ archive/issue_comments_024678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3498",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24678",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

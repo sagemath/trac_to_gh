@@ -14,7 +14,7 @@ archive/issues_004600.json:
     "title": "followup issue on sage -only_optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4600",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -58,7 +58,7 @@ archive/issue_comments_034487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4600#issuecomment-34487",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_034488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4600#issuecomment-34488",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -193,16 +193,16 @@ Total time for all tests: 207.7 seconds
 archive/issue_comments_034489.json:
 ```json
 {
-    "body": "Attachment [scripts-4600.patch](tarball://root/attachments/some-uuid/ticket4600/scripts-4600.patch) by was created at 2008-11-24 05:41:26\n\nthis patch to the scripts repo should fix everything.",
+    "body": "Attachment [scripts-4600.patch](tarball://root/attachments/some-uuid/ticket4600/scripts-4600.patch) by @williamstein created at 2008-11-24 05:41:26\n\nthis patch to the scripts repo should fix everything.",
     "created_at": "2008-11-24T05:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4600#issuecomment-34489",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-4600.patch](tarball://root/attachments/some-uuid/ticket4600/scripts-4600.patch) by was created at 2008-11-24 05:41:26
+Attachment [scripts-4600.patch](tarball://root/attachments/some-uuid/ticket4600/scripts-4600.patch) by @williamstein created at 2008-11-24 05:41:26
 
 this patch to the scripts repo should fix everything.
 

@@ -14,7 +14,7 @@ archive/issues_008232.json:
     "title": "cmp function for words is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8232",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 Assignee: sage-combinat
@@ -76,7 +76,7 @@ archive/issue_comments_072718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72718",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_072719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72719",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_072720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72720",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -189,16 +189,16 @@ Changing status from new to needs_review.
 archive/issue_comments_072721.json:
 ```json
 {
-    "body": "Attachment [trac_8232_word_cmp_bug-sl.patch](tarball://root/attachments/some-uuid/ticket8232/trac_8232_word_cmp_bug-sl.patch) by slabbe created at 2010-02-10 17:55:29",
+    "body": "Attachment [trac_8232_word_cmp_bug-sl.patch](tarball://root/attachments/some-uuid/ticket8232/trac_8232_word_cmp_bug-sl.patch) by @seblabbe created at 2010-02-10 17:55:29",
     "created_at": "2010-02-10T17:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72721",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8232_word_cmp_bug-sl.patch](tarball://root/attachments/some-uuid/ticket8232/trac_8232_word_cmp_bug-sl.patch) by slabbe created at 2010-02-10 17:55:29
+Attachment [trac_8232_word_cmp_bug-sl.patch](tarball://root/attachments/some-uuid/ticket8232/trac_8232_word_cmp_bug-sl.patch) by @seblabbe created at 2010-02-10 17:55:29
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007428.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was\n\nWhen I try to publish a worksheet, it does not initially show up in the list of published worksheets.  To reproduce, on sagenb.org:\n\n1. Create a new worksheet\n2. Click the Publish tab\n3. Click \"Yes\"\n4. Click the \"Published\" link at the very top right to look at the list of published worksheets.\n\nThe worksheet you just published should be up at the top of this list, but it's not.  This is the bug.\n5. Navigate back to your worksheet\n6. Click the publish tab again\n7. Click \"Re-publish worksheet\"\n8. Again click \"Published\" to go to the list of published worksheets\n\nNow your worksheet is listed at the top of this list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7428\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein\n\nWhen I try to publish a worksheet, it does not initially show up in the list of published worksheets.  To reproduce, on sagenb.org:\n\n1. Create a new worksheet\n2. Click the Publish tab\n3. Click \"Yes\"\n4. Click the \"Published\" link at the very top right to look at the list of published worksheets.\n\nThe worksheet you just published should be up at the top of this list, but it's not.  This is the bug.\n5. Navigate back to your worksheet\n6. Click the publish tab again\n7. Click \"Re-publish worksheet\"\n8. Again click \"Published\" to go to the list of published worksheets\n\nNow your worksheet is listed at the top of this list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7428\n\n",
     "created_at": "2009-11-11T07:31:12Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007428.json:
     "title": "worksheets listed on published list only after they are republished, but not after initial publication",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7428",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  was
+CC:  @williamstein
 
 When I try to publish a worksheet, it does not initially show up in the list of published worksheets.  To reproduce, on sagenb.org:
 
@@ -52,7 +52,7 @@ archive/issue_comments_062507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62507",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -65,16 +65,16 @@ The problem appears to be the "Last Edited" field.
 archive/issue_comments_062508.json:
 ```json
 {
-    "body": "Attachment [trac_7428-publish_last_edited.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited.patch) by mpatel created at 2009-11-12 09:29:19\n\nUpdate \"Last Edited\" field for newly published worksheets.  Apply to sagenb repo.",
+    "body": "Attachment [trac_7428-publish_last_edited.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited.patch) by @qed777 created at 2009-11-12 09:29:19\n\nUpdate \"Last Edited\" field for newly published worksheets.  Apply to sagenb repo.",
     "created_at": "2009-11-12T09:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62508",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7428-publish_last_edited.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited.patch) by mpatel created at 2009-11-12 09:29:19
+Attachment [trac_7428-publish_last_edited.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited.patch) by @qed777 created at 2009-11-12 09:29:19
 
 Update "Last Edited" field for newly published worksheets.  Apply to sagenb repo.
 
@@ -85,16 +85,16 @@ Update "Last Edited" field for newly published worksheets.  Apply to sagenb repo
 archive/issue_comments_062509.json:
 ```json
 {
-    "body": "Attachment [trac_7428-publish_last_edited_v2.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited_v2.patch) by mpatel created at 2009-11-12 14:00:06\n\nAdded Selenium test.  Apply only this patch to sagenb repo.",
+    "body": "Attachment [trac_7428-publish_last_edited_v2.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited_v2.patch) by @qed777 created at 2009-11-12 14:00:06\n\nAdded Selenium test.  Apply only this patch to sagenb repo.",
     "created_at": "2009-11-12T14:00:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62509",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7428-publish_last_edited_v2.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited_v2.patch) by mpatel created at 2009-11-12 14:00:06
+Attachment [trac_7428-publish_last_edited_v2.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited_v2.patch) by @qed777 created at 2009-11-12 14:00:06
 
 Added Selenium test.  Apply only this patch to sagenb repo.
 
@@ -110,7 +110,7 @@ archive/issue_comments_062510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62510",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_062511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62511",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_062512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62512",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_062513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62513",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_062514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62514",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000068.json:
     "title": "notebook/worksheets -- be able to edit them as plain text, just like one can edit a wiki page as plain text.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/68",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_000355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/68",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/68#issuecomment-355",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_000356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/68",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/68#issuecomment-356",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_000357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/68",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/68#issuecomment-357",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_000358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/68",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/68#issuecomment-358",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

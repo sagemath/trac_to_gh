@@ -3,7 +3,7 @@
 archive/issues_001382.json:
 ```json
 {
-    "body": "Assignee: was\n\nWe have\n\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0},{1},{2},{3},{4},{5},{6},{7},{8}}'\n```\n\n\nbut we should have\n\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0,1,2},{3,4,5},{6,7,8}}'\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1382\n\n",
+    "body": "Assignee: @williamstein\n\nWe have\n\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0},{1},{2},{3},{4},{5},{6},{7},{8}}'\n```\n\n\nbut we should have\n\n\n```\nsage: n = matrix(QQ, 3, range(9))\nsage: n._mathematica_init_()\n'{{0,1,2},{3,4,5},{6,7,8}}'\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1382\n\n",
     "created_at": "2007-12-03T17:09:37Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001382.json:
     "title": "conversion of sage matrices to mathematica is just completely totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1382",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 We have
 
@@ -125,7 +125,7 @@ Attachment [task_1382_4.patch](tarball://root/attachments/some-uuid/ticket1382/t
 archive/issue_comments_008863.json:
 ```json
 {
-    "body": "Changing assignee from was to TimothyClemans.",
+    "body": "Changing assignee from @williamstein to TimothyClemans.",
     "created_at": "2008-02-17T00:31:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
@@ -134,7 +134,7 @@ archive/issue_comments_008863.json:
 }
 ```
 
-Changing assignee from was to TimothyClemans.
+Changing assignee from @williamstein to TimothyClemans.
 
 
 
@@ -184,7 +184,7 @@ archive/issue_comments_008866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8866",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -213,16 +213,16 @@ Also, please post a unified patch making it easy to see just the total changes.
 archive/issue_comments_008867.json:
 ```json
 {
-    "body": "Attachment [1382_5.patch](tarball://root/attachments/some-uuid/ticket1382/1382_5.patch) by was created at 2008-02-23 00:57:10\n\n(this one by William and Timothy) apply this patch right after applying 1382_2.patch",
+    "body": "Attachment [1382_5.patch](tarball://root/attachments/some-uuid/ticket1382/1382_5.patch) by @williamstein created at 2008-02-23 00:57:10\n\n(this one by William and Timothy) apply this patch right after applying 1382_2.patch",
     "created_at": "2008-02-23T00:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8867",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [1382_5.patch](tarball://root/attachments/some-uuid/ticket1382/1382_5.patch) by was created at 2008-02-23 00:57:10
+Attachment [1382_5.patch](tarball://root/attachments/some-uuid/ticket1382/1382_5.patch) by @williamstein created at 2008-02-23 00:57:10
 
 (this one by William and Timothy) apply this patch right after applying 1382_2.patch
 
@@ -233,16 +233,16 @@ Attachment [1382_5.patch](tarball://root/attachments/some-uuid/ticket1382/1382_5
 archive/issue_comments_008868.json:
 ```json
 {
-    "body": "Attachment [1382_5-part2of2.patch](tarball://root/attachments/some-uuid/ticket1382/1382_5-part2of2.patch) by was created at 2008-02-23 00:57:26",
+    "body": "Attachment [1382_5-part2of2.patch](tarball://root/attachments/some-uuid/ticket1382/1382_5-part2of2.patch) by @williamstein created at 2008-02-23 00:57:26",
     "created_at": "2008-02-23T00:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8868",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [1382_5-part2of2.patch](tarball://root/attachments/some-uuid/ticket1382/1382_5-part2of2.patch) by was created at 2008-02-23 00:57:26
+Attachment [1382_5-part2of2.patch](tarball://root/attachments/some-uuid/ticket1382/1382_5-part2of2.patch) by @williamstein created at 2008-02-23 00:57:26
 
 
 
@@ -256,7 +256,7 @@ archive/issue_comments_008869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8869",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_008870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8870",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_008872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8872",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_008875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1382#issuecomment-8875",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

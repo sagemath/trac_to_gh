@@ -14,7 +14,7 @@ archive/issues_007090.json:
     "title": "R test suite fails when building with SAGE_CHECK",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7090",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 Assignee: tbd
@@ -81,7 +81,7 @@ archive/issue_comments_058595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7090",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7090#issuecomment-58595",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

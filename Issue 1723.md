@@ -3,7 +3,7 @@
 archive/issues_001723.json:
 ```json
 {
-    "body": "Assignee: was\n\nAdd functionality to read images into matrices, and combine matrices to make images.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1723\n\n",
+    "body": "Assignee: @williamstein\n\nAdd functionality to read images into matrices, and combine matrices to make images.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1723\n\n",
     "created_at": "2008-01-08T19:33:47Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_001723.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Add functionality to read images into matrices, and combine matrices to make images.
 

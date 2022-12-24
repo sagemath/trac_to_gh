@@ -3,7 +3,7 @@
 archive/issues_000096.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n> computed is for m=1001.  In testing the function I found something  \n> strange and maybe you can explain this.  The following code works fine  \n> when I type it into the terminal.\n>\n> m=201\n> time chi.bernoulli(m)\n> time bernq(m, chi)\n>\n> But when I try to load this code from a .SAGE file, I get an error.  Any  \n> suggestions?\n\nHere's a temporary work-around.  Get rid of the \"time\" commands.  \nUse something like this instead:\n\nt = cputime()\nprint chi.bernoulli(m)\n\netc.\n\nThat said, I consider this a bug, and will post it to the tracker. \n\nWilliam\n```\n\n\nExample code:\n\n\n```\nsha:~/tmp was$ more a.sage\ntime 2*3\nsha:~/tmp was$ sage a.sage\n  File \"a.py\", line 3\n    time Integer(2)*Integer(3)\n               ^\nSyntaxError: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/96\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n> computed is for m=1001.  In testing the function I found something  \n> strange and maybe you can explain this.  The following code works fine  \n> when I type it into the terminal.\n>\n> m=201\n> time chi.bernoulli(m)\n> time bernq(m, chi)\n>\n> But when I try to load this code from a .SAGE file, I get an error.  Any  \n> suggestions?\n\nHere's a temporary work-around.  Get rid of the \"time\" commands.  \nUse something like this instead:\n\nt = cputime()\nprint chi.bernoulli(m)\n\netc.\n\nThat said, I consider this a bug, and will post it to the tracker. \n\nWilliam\n```\n\n\nExample code:\n\n\n```\nsha:~/tmp was$ more a.sage\ntime 2*3\nsha:~/tmp was$ sage a.sage\n  File \"a.py\", line 3\n    time Integer(2)*Integer(3)\n               ^\nSyntaxError: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/96\n\n",
     "created_at": "2006-09-29T03:18:33Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000096.json:
     "title": "time command doesn't work in .sage files !?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/96",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -76,7 +76,7 @@ archive/issue_comments_000460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/96",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/96#issuecomment-460",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_000461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/96",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/96#issuecomment-461",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

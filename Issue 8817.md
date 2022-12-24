@@ -14,7 +14,7 @@ archive/issues_008817.json:
     "title": "Rplot001.png left around when doctesting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8817",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_080926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8817#issuecomment-80926",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_080927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8817#issuecomment-80927",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_080928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8817#issuecomment-80928",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_080929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8817#issuecomment-80929",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_080930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8817#issuecomment-80930",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_080931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8817#issuecomment-80931",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -167,16 +167,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_080932.json:
 ```json
 {
-    "body": "Attachment [trac_8817-R-plot-file-remove.patch](tarball://root/attachments/some-uuid/ticket8817/trac_8817-R-plot-file-remove.patch) by kcrisman created at 2010-04-30 15:05:48\n\nOkay, try this - it is VERY explicit.  I also replaced occurrences of os.unlink with os.remove, which is identical but makes far more sense to those who are not familiar with the unlink command (like me).",
+    "body": "Attachment [trac_8817-R-plot-file-remove.patch](tarball://root/attachments/some-uuid/ticket8817/trac_8817-R-plot-file-remove.patch) by @kcrisman created at 2010-04-30 15:05:48\n\nOkay, try this - it is VERY explicit.  I also replaced occurrences of os.unlink with os.remove, which is identical but makes far more sense to those who are not familiar with the unlink command (like me).",
     "created_at": "2010-04-30T15:05:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8817#issuecomment-80932",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_8817-R-plot-file-remove.patch](tarball://root/attachments/some-uuid/ticket8817/trac_8817-R-plot-file-remove.patch) by kcrisman created at 2010-04-30 15:05:48
+Attachment [trac_8817-R-plot-file-remove.patch](tarball://root/attachments/some-uuid/ticket8817/trac_8817-R-plot-file-remove.patch) by @kcrisman created at 2010-04-30 15:05:48
 
 Okay, try this - it is VERY explicit.  I also replaced occurrences of os.unlink with os.remove, which is identical but makes far more sense to those who are not familiar with the unlink command (like me).
 
@@ -192,7 +192,7 @@ archive/issue_comments_080933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8817#issuecomment-80933",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -207,16 +207,16 @@ William
 archive/issue_comments_080934.json:
 ```json
 {
-    "body": "Attachment [trac_8817-wstein.patch](tarball://root/attachments/some-uuid/ticket8817/trac_8817-wstein.patch) by was created at 2010-05-01 05:17:04",
+    "body": "Attachment [trac_8817-wstein.patch](tarball://root/attachments/some-uuid/ticket8817/trac_8817-wstein.patch) by @williamstein created at 2010-05-01 05:17:04",
     "created_at": "2010-05-01T05:17:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8817#issuecomment-80934",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8817-wstein.patch](tarball://root/attachments/some-uuid/ticket8817/trac_8817-wstein.patch) by was created at 2010-05-01 05:17:04
+Attachment [trac_8817-wstein.patch](tarball://root/attachments/some-uuid/ticket8817/trac_8817-wstein.patch) by @williamstein created at 2010-05-01 05:17:04
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007077.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mhansen\n\nwith 4.1.1:\n\n\n```\nsage: x,y,z=polygens(QQ,'x,y,z')\nsage: (x^2).variables()\n[x]\nsage: x=polygen(QQ)\nsage: (x^2).variables()\n(x,)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7077\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nwith 4.1.1:\n\n\n```\nsage: x,y,z=polygens(QQ,'x,y,z')\nsage: (x^2).variables()\n[x]\nsage: x=polygen(QQ)\nsage: (x^2).variables()\n(x,)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7077\n\n",
     "created_at": "2009-09-29T19:51:09Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007077.json:
     "title": "variables() inconsistently returns a list or tuple",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7077",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
 
-CC:  mhansen
+CC:  @mwhansen
 
 with 4.1.1:
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7077
 archive/issue_comments_058521.json:
 ```json
 {
-    "body": "Attachment [trac_7077.patch](tarball://root/attachments/some-uuid/ticket7077/trac_7077.patch) by AlexGhitza created at 2009-10-19 23:38:29\n\nThere are a number of methods called `variables()` in the Sage library.  The attached patch makes sure that all of them return tuples.  (This is what univariate polynomials, and symbolics return.)",
+    "body": "Attachment [trac_7077.patch](tarball://root/attachments/some-uuid/ticket7077/trac_7077.patch) by @aghitza created at 2009-10-19 23:38:29\n\nThere are a number of methods called `variables()` in the Sage library.  The attached patch makes sure that all of them return tuples.  (This is what univariate polynomials, and symbolics return.)",
     "created_at": "2009-10-19T23:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58521",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_7077.patch](tarball://root/attachments/some-uuid/ticket7077/trac_7077.patch) by AlexGhitza created at 2009-10-19 23:38:29
+Attachment [trac_7077.patch](tarball://root/attachments/some-uuid/ticket7077/trac_7077.patch) by @aghitza created at 2009-10-19 23:38:29
 
 There are a number of methods called `variables()` in the Sage library.  The attached patch makes sure that all of them return tuples.  (This is what univariate polynomials, and symbolics return.)
 
@@ -70,7 +70,7 @@ archive/issue_comments_058522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58522",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_058523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58523",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_058524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58524",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_058525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58525",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

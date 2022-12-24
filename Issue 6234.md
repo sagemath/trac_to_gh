@@ -3,7 +3,7 @@
 archive/issues_006234.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  mhansen ncalexan\n\nJust get rid of the SAGE_PARALLEL_DIST check here in `devel/sage/setup.py`:\n\n\n```\n        # See if we're trying out the experimental parallel build\n        # code.\n        if ncpus > 1 and os.environ.has_key('SAGE_PARALLEL_DIST'):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6234\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @mwhansen @ncalexan\n\nJust get rid of the SAGE_PARALLEL_DIST check here in `devel/sage/setup.py`:\n\n\n```\n        # See if we're trying out the experimental parallel build\n        # code.\n        if ncpus > 1 and os.environ.has_key('SAGE_PARALLEL_DIST'):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6234\n\n",
     "created_at": "2009-06-06T16:47:27Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_006234.json:
     "title": "make parallel GCC'ing of Sage library not experimental",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6234",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  mhansen ncalexan
+CC:  @mwhansen @ncalexan
 
 Just get rid of the SAGE_PARALLEL_DIST check here in `devel/sage/setup.py`:
 
@@ -47,7 +47,7 @@ archive/issue_comments_049735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6234#issuecomment-49735",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -60,16 +60,16 @@ I've added a patch that removes the check for the `SAGE_PARALLEL_DIST` flag, and
 archive/issue_comments_049736.json:
 ```json
 {
-    "body": "Attachment [trac-6234.patch](tarball://root/attachments/some-uuid/ticket6234/trac-6234.patch) by craigcitro created at 2009-06-10 00:39:43",
+    "body": "Attachment [trac-6234.patch](tarball://root/attachments/some-uuid/ticket6234/trac-6234.patch) by @craigcitro created at 2009-06-10 00:39:43",
     "created_at": "2009-06-10T00:39:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6234#issuecomment-49736",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-6234.patch](tarball://root/attachments/some-uuid/ticket6234/trac-6234.patch) by craigcitro created at 2009-06-10 00:39:43
+Attachment [trac-6234.patch](tarball://root/attachments/some-uuid/ticket6234/trac-6234.patch) by @craigcitro created at 2009-06-10 00:39:43
 
 
 
@@ -83,7 +83,7 @@ archive/issue_comments_049737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6234#issuecomment-49737",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_049738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6234#issuecomment-49738",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_049739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6234#issuecomment-49739",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -166,16 +166,16 @@ ERROR installing SAGE
 archive/issue_comments_049740.json:
 ```json
 {
-    "body": "Attachment [trac-6234-pt2.patch](tarball://root/attachments/some-uuid/ticket6234/trac-6234-pt2.patch) by craigcitro created at 2009-06-12 02:12:34",
+    "body": "Attachment [trac-6234-pt2.patch](tarball://root/attachments/some-uuid/ticket6234/trac-6234-pt2.patch) by @craigcitro created at 2009-06-12 02:12:34",
     "created_at": "2009-06-12T02:12:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6234#issuecomment-49740",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-6234-pt2.patch](tarball://root/attachments/some-uuid/ticket6234/trac-6234-pt2.patch) by craigcitro created at 2009-06-12 02:12:34
+Attachment [trac-6234-pt2.patch](tarball://root/attachments/some-uuid/ticket6234/trac-6234-pt2.patch) by @craigcitro created at 2009-06-12 02:12:34
 
 
 
@@ -189,7 +189,7 @@ archive/issue_comments_049741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6234#issuecomment-49741",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_049742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6234#issuecomment-49742",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_049743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6234#issuecomment-49743",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

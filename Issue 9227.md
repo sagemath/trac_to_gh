@@ -3,7 +3,7 @@
 archive/issues_009227.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  asjarman@xtra.co.nz\n\na millimeter [mm] is 1/1000 of a meter and very often used by engineers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9227\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  asjarman@xtra.co.nz\n\na millimeter [mm] is 1/1000 of a meter and very often used by engineers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9227\n\n",
     "created_at": "2010-06-12T12:55:42Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009227.json:
     "title": "units.length.millimeter missing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9227",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  asjarman@xtra.co.nz
 
@@ -77,7 +77,7 @@ archive/issue_comments_086587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9227#issuecomment-86587",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_086588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9227#issuecomment-86588",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -114,16 +114,16 @@ twice. You should replace one by a comparison to yards, feet or something else.
 archive/issue_comments_086589.json:
 ```json
 {
-    "body": "Attachment [trac_9227_mm_and_km_units.2.patch](tarball://root/attachments/some-uuid/ticket9227/trac_9227_mm_and_km_units.2.patch) by spice created at 2011-01-07 22:56:41",
+    "body": "Attachment [trac_9227_mm_and_km_units.2.patch](tarball://root/attachments/some-uuid/ticket9227/trac_9227_mm_and_km_units.2.patch) by @haikona created at 2011-01-07 22:56:41",
     "created_at": "2011-01-07T22:56:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9227#issuecomment-86589",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
-Attachment [trac_9227_mm_and_km_units.2.patch](tarball://root/attachments/some-uuid/ticket9227/trac_9227_mm_and_km_units.2.patch) by spice created at 2011-01-07 22:56:41
+Attachment [trac_9227_mm_and_km_units.2.patch](tarball://root/attachments/some-uuid/ticket9227/trac_9227_mm_and_km_units.2.patch) by @haikona created at 2011-01-07 22:56:41
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_086590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9227#issuecomment-86590",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_086591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9227#issuecomment-86591",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_086592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9227#issuecomment-86592",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_086593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9227#issuecomment-86593",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

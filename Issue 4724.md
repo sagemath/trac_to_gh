@@ -3,7 +3,7 @@
 archive/issues_004724.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: pari number field nf galois\n\nI would like to use pari's galois computations (such as nfgaloisconj) and finer number field functions (such as nfroots).  The interface (in sage.libs.pari.gen) needs to be upgraded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4724\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: pari number field nf galois\n\nI would like to use pari's galois computations (such as nfgaloisconj) and finer number field functions (such as nfroots).  The interface (in sage.libs.pari.gen) needs to be upgraded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4724\n\n",
     "created_at": "2008-12-06T04:05:45Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004724.json:
     "title": "expose pari's galois and finer number field interfaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4724",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: pari number field nf galois
 
@@ -39,7 +39,7 @@ archive/issue_comments_035659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4724#issuecomment-35659",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_035660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4724#issuecomment-35660",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_035661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4724#issuecomment-35661",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -90,16 +90,16 @@ Try it with a large degree number field -- you couldn't compute K.embeddings(K) 
 archive/issue_comments_035662.json:
 ```json
 {
-    "body": "Attachment [4724-ncalexan-pari-galois-functions.patch](tarball://root/attachments/some-uuid/ticket4724/4724-ncalexan-pari-galois-functions.patch) by ncalexan created at 2009-02-13 02:47:03",
+    "body": "Attachment [4724-ncalexan-pari-galois-functions.patch](tarball://root/attachments/some-uuid/ticket4724/4724-ncalexan-pari-galois-functions.patch) by @ncalexan created at 2009-02-13 02:47:03",
     "created_at": "2009-02-13T02:47:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4724#issuecomment-35662",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [4724-ncalexan-pari-galois-functions.patch](tarball://root/attachments/some-uuid/ticket4724/4724-ncalexan-pari-galois-functions.patch) by ncalexan created at 2009-02-13 02:47:03
+Attachment [4724-ncalexan-pari-galois-functions.patch](tarball://root/attachments/some-uuid/ticket4724/4724-ncalexan-pari-galois-functions.patch) by @ncalexan created at 2009-02-13 02:47:03
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_035663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4724#issuecomment-35663",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_035664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4724#issuecomment-35664",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_035665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4724#issuecomment-35665",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_035666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4724#issuecomment-35666",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -180,16 +180,16 @@ replaces the previous patch
 archive/issue_comments_035667.json:
 ```json
 {
-    "body": "Attachment [4724_rebased.patch](tarball://root/attachments/some-uuid/ticket4724/4724_rebased.patch) by AlexGhitza created at 2009-04-13 08:43:09\n\nAll I did was rebase Nick's patch against 3.4.1.rc2.  (ok, I also rest-ified a couple of his docstrings.)\n\nOne issue was that the original patch seems to have had a lot of things in double.  This is now fixed, hence the difference in size.\n\nThe code looks good to me and is nicely documented.  Positive review.",
+    "body": "Attachment [4724_rebased.patch](tarball://root/attachments/some-uuid/ticket4724/4724_rebased.patch) by @aghitza created at 2009-04-13 08:43:09\n\nAll I did was rebase Nick's patch against 3.4.1.rc2.  (ok, I also rest-ified a couple of his docstrings.)\n\nOne issue was that the original patch seems to have had a lot of things in double.  This is now fixed, hence the difference in size.\n\nThe code looks good to me and is nicely documented.  Positive review.",
     "created_at": "2009-04-13T08:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4724#issuecomment-35667",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [4724_rebased.patch](tarball://root/attachments/some-uuid/ticket4724/4724_rebased.patch) by AlexGhitza created at 2009-04-13 08:43:09
+Attachment [4724_rebased.patch](tarball://root/attachments/some-uuid/ticket4724/4724_rebased.patch) by @aghitza created at 2009-04-13 08:43:09
 
 All I did was rebase Nick's patch against 3.4.1.rc2.  (ok, I also rest-ified a couple of his docstrings.)
 

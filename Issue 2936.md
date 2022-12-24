@@ -14,7 +14,7 @@ archive/issues_002936.json:
     "title": "notebook -- write a completely new use/data/security model backend for the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2936",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -68,16 +68,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2936
 archive/issue_comments_020230.json:
 ```json
 {
-    "body": "Attachment [sage-2936-test.hg](tarball://root/attachments/some-uuid/ticket2936/sage-2936-test.hg) by was created at 2008-04-15 22:19:04",
+    "body": "Attachment [sage-2936-test.hg](tarball://root/attachments/some-uuid/ticket2936/sage-2936-test.hg) by @williamstein created at 2008-04-15 22:19:04",
     "created_at": "2008-04-15T22:19:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2936#issuecomment-20230",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2936-test.hg](tarball://root/attachments/some-uuid/ticket2936/sage-2936-test.hg) by was created at 2008-04-15 22:19:04
+Attachment [sage-2936-test.hg](tarball://root/attachments/some-uuid/ticket2936/sage-2936-test.hg) by @williamstein created at 2008-04-15 22:19:04
 
 
 

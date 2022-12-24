@@ -14,7 +14,7 @@ archive/issues_008063.json:
     "title": "New gsl-1.10.p2.spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8063",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -42,7 +42,7 @@ archive/issue_comments_070672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8063#issuecomment-70672",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_070674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8063#issuecomment-70674",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_070676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8063#issuecomment-70676",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

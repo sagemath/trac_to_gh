@@ -14,7 +14,7 @@ archive/issues_006219.json:
     "title": "[with spkg, needs review] Fix the silly fpmz.c typo in the flint spkg.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6219",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_049671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6219#issuecomment-49671",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_049672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6219#issuecomment-49672",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

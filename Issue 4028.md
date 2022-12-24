@@ -3,7 +3,7 @@
 archive/issues_004028.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4028\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4028\n\n",
     "created_at": "2008-09-01T02:40:26Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004028.json:
     "title": "doctest and improve sage/interfaces/axiom.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4028",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 

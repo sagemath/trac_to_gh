@@ -14,7 +14,7 @@ archive/issues_006932.json:
     "title": "jordan_form with transformation=true fails on a 1x1 matrix.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6932",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 Assignee: tbd
@@ -46,7 +46,7 @@ archive/issue_comments_057284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6932#issuecomment-57284",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_057287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6932#issuecomment-57287",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_057288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6932#issuecomment-57288",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

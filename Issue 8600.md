@@ -3,7 +3,7 @@
 archive/issues_008600.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nthe fibonacci tree, [wikipedia](http://de.wikipedia.org/wiki/Datei:Fibonacci_Tree_5.svg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8600\n\n",
+    "body": "Assignee: @rlmill\n\nthe fibonacci tree, [wikipedia](http://de.wikipedia.org/wiki/Datei:Fibonacci_Tree_5.svg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8600\n\n",
     "created_at": "2010-03-24T17:46:29Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_008600.json:
     "title": "fibonacci tree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8600",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 the fibonacci tree, [wikipedia](http://de.wikipedia.org/wiki/Datei:Fibonacci_Tree_5.svg)
 
@@ -37,7 +37,7 @@ archive/issue_comments_077881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8600#issuecomment-77881",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_077883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8600#issuecomment-77883",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -126,16 +126,16 @@ Thanks for your example and quick response, I like it! I've modified it a bit, a
 archive/issue_comments_077884.json:
 ```json
 {
-    "body": "Attachment [fibonaccy-graph.patch](tarball://root/attachments/some-uuid/ticket8600/fibonaccy-graph.patch) by schilly created at 2010-03-25 18:41:28",
+    "body": "Attachment [fibonaccy-graph.patch](tarball://root/attachments/some-uuid/ticket8600/fibonaccy-graph.patch) by @haraldschilly created at 2010-03-25 18:41:28",
     "created_at": "2010-03-25T18:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8600#issuecomment-77884",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [fibonaccy-graph.patch](tarball://root/attachments/some-uuid/ticket8600/fibonaccy-graph.patch) by schilly created at 2010-03-25 18:41:28
+Attachment [fibonaccy-graph.patch](tarball://root/attachments/some-uuid/ticket8600/fibonaccy-graph.patch) by @haraldschilly created at 2010-03-25 18:41:28
 
 
 
@@ -167,7 +167,7 @@ archive/issue_comments_077886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8600#issuecomment-77886",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_077887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8600#issuecomment-77887",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_077888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8600#issuecomment-77888",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_077889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8600#issuecomment-77889",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_077890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8600#issuecomment-77890",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_077891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8600#issuecomment-77891",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

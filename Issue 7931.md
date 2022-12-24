@@ -3,7 +3,7 @@
 archive/issues_007931.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  robertwb\n\nKeywords: finite fields, nth root\n\nImplements an algorithm described in \n{{\nJohnston, Anna M. A generalized qth root algorithm. \nProceedings of the tenth annual ACM-SIAM symposium on Discrete algorithms. \nBaltimore, 1999: pp 929-930.\n}}}\n\nThis means we can take nth roots with large n, since we no longer need to create the polynomial x^n-a.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7931\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nKeywords: finite fields, nth root\n\nImplements an algorithm described in \n{{\nJohnston, Anna M. A generalized qth root algorithm. \nProceedings of the tenth annual ACM-SIAM symposium on Discrete algorithms. \nBaltimore, 1999: pp 929-930.\n}}}\n\nThis means we can take nth roots with large n, since we no longer need to create the polynomial x^n-a.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7931\n\n",
     "created_at": "2010-01-14T15:27:30Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007931.json:
     "title": "Improved nth root for finite fields and integer_mods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7931",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: finite fields, nth root
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7931
 archive/issue_comments_069049.json:
 ```json
 {
-    "body": "Attachment [7931.patch](tarball://root/attachments/some-uuid/ticket7931/7931.patch) by roed created at 2010-01-14 15:30:02",
+    "body": "Attachment [7931.patch](tarball://root/attachments/some-uuid/ticket7931/7931.patch) by @roed314 created at 2010-01-14 15:30:02",
     "created_at": "2010-01-14T15:30:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69049",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7931.patch](tarball://root/attachments/some-uuid/ticket7931/7931.patch) by roed created at 2010-01-14 15:30:02
+Attachment [7931.patch](tarball://root/attachments/some-uuid/ticket7931/7931.patch) by @roed314 created at 2010-01-14 15:30:02
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_069050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69050",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_069051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69051",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_069052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69052",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_069053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69053",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_069054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69054",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -168,16 +168,16 @@ Patch applies fine to 4.3.1 and tests pass, but I reproduced the example from ri
 archive/issue_comments_069055.json:
 ```json
 {
-    "body": "Attachment [7931_nth_root.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root.patch) by roed created at 2010-02-23 15:30:11\n\nShould fix the problem observed earlier",
+    "body": "Attachment [7931_nth_root.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root.patch) by @roed314 created at 2010-02-23 15:30:11\n\nShould fix the problem observed earlier",
     "created_at": "2010-02-23T15:30:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69055",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7931_nth_root.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root.patch) by roed created at 2010-02-23 15:30:11
+Attachment [7931_nth_root.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root.patch) by @roed314 created at 2010-02-23 15:30:11
 
 Should fix the problem observed earlier
 
@@ -193,7 +193,7 @@ archive/issue_comments_069056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69056",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_069057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69057",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_069058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69058",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_069059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69059",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_069060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69060",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -278,16 +278,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_069061.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to roed.",
+    "body": "Changing assignee from @aghitza to @roed314.",
     "created_at": "2010-02-25T23:49:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69061",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Changing assignee from AlexGhitza to roed.
+Changing assignee from @aghitza to @roed314.
 
 
 
@@ -301,7 +301,7 @@ archive/issue_comments_069062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69062",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_069063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69063",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_069064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69064",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_069065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69065",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_069066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69066",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_069067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69067",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_069068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69068",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -446,16 +446,16 @@ I'd argue for not making this patch depend on #7240, since that patch seems to b
 archive/issue_comments_069069.json:
 ```json
 {
-    "body": "Attachment [7931_nth_root.2.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root.2.patch) by roed created at 2010-09-28 08:33:15\n\nApply just this patch",
+    "body": "Attachment [7931_nth_root.2.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root.2.patch) by @roed314 created at 2010-09-28 08:33:15\n\nApply just this patch",
     "created_at": "2010-09-28T08:33:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69069",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7931_nth_root.2.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root.2.patch) by roed created at 2010-09-28 08:33:15
+Attachment [7931_nth_root.2.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root.2.patch) by @roed314 created at 2010-09-28 08:33:15
 
 Apply just this patch
 
@@ -471,7 +471,7 @@ archive/issue_comments_069070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69070",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_069071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69071",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_069072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69072",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -520,16 +520,16 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_069073.json:
 ```json
 {
-    "body": "Attachment [7931_common_superclass.patch](tarball://root/attachments/some-uuid/ticket7931/7931_common_superclass.patch) by zimmerma created at 2010-09-29 08:57:33\n\nI tried applying both patches in sage-4.6.alpha1, but got a failure when running sage -br:\n\n```\npython `which cython` --embed-positions --directive cdivision=True -I/tmp/sage-4.6.alpha1/devel/sage-7931 -o sage/rings/finite_rings/element_ntl_gf2e.cpp sage/rings/finite_rings/element_ntl_gf2e.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        if PY_TYPE_CHECK(e, int) \\\n               or PY_TYPE_CHECK(e, long) or PY_TYPE_CHECK(e, Integer):\n            GF2E_conv_long(res.x,int(e))\n            return res\n\n        if PY_TYPE_CHECK(e, FiniteFieldElement) or \\\n                                             ^\n------------------------------------------------------------\n\n/tmp/sage-4.6.alpha1/devel/sage-7931/sage/rings/finite_rings/element_ntl_gf2e.pyx:515:46: undeclared name not builtin: FiniteFieldElement\nError running command, failed with status 256.\nsage: There was an error installing modified sage library code.\n```\n\nWhich version was used to produce the patches?\n\nPaul",
+    "body": "Attachment [7931_common_superclass.patch](tarball://root/attachments/some-uuid/ticket7931/7931_common_superclass.patch) by @zimmermann6 created at 2010-09-29 08:57:33\n\nI tried applying both patches in sage-4.6.alpha1, but got a failure when running sage -br:\n\n```\npython `which cython` --embed-positions --directive cdivision=True -I/tmp/sage-4.6.alpha1/devel/sage-7931 -o sage/rings/finite_rings/element_ntl_gf2e.cpp sage/rings/finite_rings/element_ntl_gf2e.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        if PY_TYPE_CHECK(e, int) \\\n               or PY_TYPE_CHECK(e, long) or PY_TYPE_CHECK(e, Integer):\n            GF2E_conv_long(res.x,int(e))\n            return res\n\n        if PY_TYPE_CHECK(e, FiniteFieldElement) or \\\n                                             ^\n------------------------------------------------------------\n\n/tmp/sage-4.6.alpha1/devel/sage-7931/sage/rings/finite_rings/element_ntl_gf2e.pyx:515:46: undeclared name not builtin: FiniteFieldElement\nError running command, failed with status 256.\nsage: There was an error installing modified sage library code.\n```\n\nWhich version was used to produce the patches?\n\nPaul",
     "created_at": "2010-09-29T08:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69073",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [7931_common_superclass.patch](tarball://root/attachments/some-uuid/ticket7931/7931_common_superclass.patch) by zimmerma created at 2010-09-29 08:57:33
+Attachment [7931_common_superclass.patch](tarball://root/attachments/some-uuid/ticket7931/7931_common_superclass.patch) by @zimmermann6 created at 2010-09-29 08:57:33
 
 I tried applying both patches in sage-4.6.alpha1, but got a failure when running sage -br:
 
@@ -569,7 +569,7 @@ archive/issue_comments_069074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69074",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -608,7 +608,7 @@ archive/issue_comments_069075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69075",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -628,7 +628,7 @@ archive/issue_comments_069076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69076",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -646,7 +646,7 @@ archive/issue_comments_069077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69077",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -667,7 +667,7 @@ archive/issue_comments_069078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69078",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -685,7 +685,7 @@ archive/issue_comments_069079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69079",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -714,7 +714,7 @@ archive/issue_comments_069080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69080",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -732,7 +732,7 @@ archive/issue_comments_069081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69081",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -773,7 +773,7 @@ archive/issue_comments_069082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69082",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -791,7 +791,7 @@ archive/issue_comments_069083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69083",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -809,7 +809,7 @@ archive/issue_comments_069084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69084",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -827,7 +827,7 @@ archive/issue_comments_069085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69085",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -840,16 +840,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069086.json:
 ```json
 {
-    "body": "Attachment [7931_fixes.patch](tarball://root/attachments/some-uuid/ticket7931/7931_fixes.patch) by zimmerma created at 2010-09-30 08:19:44\n\nwith the new patch, I still get unexpected results:\n\n```\nsage: K=Integers(6)\nsage: b=K(3)\nsage: b.nth_root(0,all=True)\n[3]\n```\n\nPaul",
+    "body": "Attachment [7931_fixes.patch](tarball://root/attachments/some-uuid/ticket7931/7931_fixes.patch) by @zimmermann6 created at 2010-09-30 08:19:44\n\nwith the new patch, I still get unexpected results:\n\n```\nsage: K=Integers(6)\nsage: b=K(3)\nsage: b.nth_root(0,all=True)\n[3]\n```\n\nPaul",
     "created_at": "2010-09-30T08:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69086",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [7931_fixes.patch](tarball://root/attachments/some-uuid/ticket7931/7931_fixes.patch) by zimmerma created at 2010-09-30 08:19:44
+Attachment [7931_fixes.patch](tarball://root/attachments/some-uuid/ticket7931/7931_fixes.patch) by @zimmermann6 created at 2010-09-30 08:19:44
 
 with the new patch, I still get unexpected results:
 
@@ -869,16 +869,16 @@ Paul
 archive/issue_comments_069087.json:
 ```json
 {
-    "body": "Attachment [7931_fix2.patch](tarball://root/attachments/some-uuid/ticket7931/7931_fix2.patch) by roed created at 2010-09-30 09:19:26\n\nApply on top of previous patches",
+    "body": "Attachment [7931_fix2.patch](tarball://root/attachments/some-uuid/ticket7931/7931_fix2.patch) by @roed314 created at 2010-09-30 09:19:26\n\nApply on top of previous patches",
     "created_at": "2010-09-30T09:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69087",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7931_fix2.patch](tarball://root/attachments/some-uuid/ticket7931/7931_fix2.patch) by roed created at 2010-09-30 09:19:26
+Attachment [7931_fix2.patch](tarball://root/attachments/some-uuid/ticket7931/7931_fix2.patch) by @roed314 created at 2010-09-30 09:19:26
 
 Apply on top of previous patches
 
@@ -894,7 +894,7 @@ archive/issue_comments_069088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69088",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -914,7 +914,7 @@ archive/issue_comments_069089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69089",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -932,7 +932,7 @@ archive/issue_comments_069090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69090",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -954,7 +954,7 @@ archive/issue_comments_069091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69091",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -979,7 +979,7 @@ archive/issue_comments_069092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69092",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -997,7 +997,7 @@ archive/issue_comments_069093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69093",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1047,7 +1047,7 @@ archive/issue_comments_069094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69094",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1065,7 +1065,7 @@ archive/issue_comments_069095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69095",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1083,7 +1083,7 @@ archive/issue_comments_069096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69096",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1101,7 +1101,7 @@ archive/issue_comments_069097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69097",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1123,16 +1123,16 @@ Paul
 archive/issue_comments_069098.json:
 ```json
 {
-    "body": "Attachment [7931_fix3.patch](tarball://root/attachments/some-uuid/ticket7931/7931_fix3.patch) by roed created at 2010-10-01 14:28:50\n\nApply on top of previous patches",
+    "body": "Attachment [7931_fix3.patch](tarball://root/attachments/some-uuid/ticket7931/7931_fix3.patch) by @roed314 created at 2010-10-01 14:28:50\n\nApply on top of previous patches",
     "created_at": "2010-10-01T14:28:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69098",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7931_fix3.patch](tarball://root/attachments/some-uuid/ticket7931/7931_fix3.patch) by roed created at 2010-10-01 14:28:50
+Attachment [7931_fix3.patch](tarball://root/attachments/some-uuid/ticket7931/7931_fix3.patch) by @roed314 created at 2010-10-01 14:28:50
 
 Apply on top of previous patches
 
@@ -1148,7 +1148,7 @@ archive/issue_comments_069099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69099",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1166,7 +1166,7 @@ archive/issue_comments_069100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69100",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1186,7 +1186,7 @@ archive/issue_comments_069101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69101",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1226,7 +1226,7 @@ archive/issue_comments_069102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69102",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1244,7 +1244,7 @@ archive/issue_comments_069103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69103",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1262,7 +1262,7 @@ archive/issue_comments_069104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69104",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1282,7 +1282,7 @@ archive/issue_comments_069105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69105",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1309,7 +1309,7 @@ archive/issue_comments_069106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69106",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1322,16 +1322,16 @@ This is now #10047.
 archive/issue_comments_069107.json:
 ```json
 {
-    "body": "Attachment [7931_crt.patch](tarball://root/attachments/some-uuid/ticket7931/7931_crt.patch) by roed created at 2010-10-01 16:06:49\n\nThis is now #10047.",
+    "body": "Attachment [7931_crt.patch](tarball://root/attachments/some-uuid/ticket7931/7931_crt.patch) by @roed314 created at 2010-10-01 16:06:49\n\nThis is now #10047.",
     "created_at": "2010-10-01T16:06:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69107",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7931_crt.patch](tarball://root/attachments/some-uuid/ticket7931/7931_crt.patch) by roed created at 2010-10-01 16:06:49
+Attachment [7931_crt.patch](tarball://root/attachments/some-uuid/ticket7931/7931_crt.patch) by @roed314 created at 2010-10-01 16:06:49
 
 This is now #10047.
 
@@ -1342,16 +1342,16 @@ This is now #10047.
 archive/issue_comments_069108.json:
 ```json
 {
-    "body": "Attachment [7931_nth_root-folded.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root-folded.patch) by davidloeffler created at 2011-01-19 16:31:29\n\nQfolded patch. Apply only this patch.",
+    "body": "Attachment [7931_nth_root-folded.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root-folded.patch) by @loefflerd created at 2011-01-19 16:31:29\n\nQfolded patch. Apply only this patch.",
     "created_at": "2011-01-19T16:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69108",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [7931_nth_root-folded.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root-folded.patch) by davidloeffler created at 2011-01-19 16:31:29
+Attachment [7931_nth_root-folded.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root-folded.patch) by @loefflerd created at 2011-01-19 16:31:29
 
 Qfolded patch. Apply only this patch.
 
@@ -1367,7 +1367,7 @@ archive/issue_comments_069109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69109",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1387,7 +1387,7 @@ archive/issue_comments_069110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69110",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1405,7 +1405,7 @@ archive/issue_comments_069111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69111",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1429,7 +1429,7 @@ archive/issue_comments_069112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69112",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1447,7 +1447,7 @@ archive/issue_comments_069113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69113",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1460,16 +1460,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069114.json:
 ```json
 {
-    "body": "Attachment [7931_nth_root-folded.2.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root-folded.2.patch) by davidloeffler created at 2011-01-25 14:04:36\n\nI checked this one with Bill Hart, who knows much more about these things than I, and he reckons that the implementation looks correct; I've run the tests and it seems to be fine. My only contribution has been to qfold everything and adjust some of the reference manual formatting, so I guess that doesn't need a separate review. \n\nApply only the last patch.",
+    "body": "Attachment [7931_nth_root-folded.2.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root-folded.2.patch) by @loefflerd created at 2011-01-25 14:04:36\n\nI checked this one with Bill Hart, who knows much more about these things than I, and he reckons that the implementation looks correct; I've run the tests and it seems to be fine. My only contribution has been to qfold everything and adjust some of the reference manual formatting, so I guess that doesn't need a separate review. \n\nApply only the last patch.",
     "created_at": "2011-01-25T14:04:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69114",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [7931_nth_root-folded.2.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root-folded.2.patch) by davidloeffler created at 2011-01-25 14:04:36
+Attachment [7931_nth_root-folded.2.patch](tarball://root/attachments/some-uuid/ticket7931/7931_nth_root-folded.2.patch) by @loefflerd created at 2011-01-25 14:04:36
 
 I checked this one with Bill Hart, who knows much more about these things than I, and he reckons that the implementation looks correct; I've run the tests and it seems to be fine. My only contribution has been to qfold everything and adjust some of the reference manual formatting, so I guess that doesn't need a separate review. 
 
@@ -1487,7 +1487,7 @@ archive/issue_comments_069115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69115",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1505,7 +1505,7 @@ archive/issue_comments_069116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7931#issuecomment-69116",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

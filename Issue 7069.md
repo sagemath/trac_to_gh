@@ -3,7 +3,7 @@
 archive/issues_007069.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mjo dimpase\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used #7021 \n\n\n```\ntachyon-0.98beta.p9/patches/\ntachyon-0.98beta.p9/patches/Make-arch.patch\ntachyon-0.98beta.p9/patches/Make-arch\ntachyon-0.98beta.p9/spkg-install\ntachyon-0.98beta.p9/.hgignore\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/tachyon-0.98beta.p9/src/unix'\nmake all \\\n\"ARCH = solaris-pthreads-gcc\" \\\n\"CC = gcc\" \\\n\"CFLAGS = -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS  -DUSEPNG    -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include  -DTHR -DUSEPOSIXTHREADS\" \\\n\"AR = ar\" \\\n\"ARFLAGS = r\" \\\n\"STRIP = strip\" \\\n\"LIBS = -L. -ltachyon  -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib -lpng12 -lz  -lm -lpthread\"\nmake[3]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/tachyon-0.98beta.p9/src/unix'\nBuilding Tachyon Parallel Ray Tracing library\nCopyright 1994-2007, John E. Stone\nAll Rights Reserveed\nMaking architecture directory ../compile/solaris-pthreads-gcc\nMaking library directory ../compile/solaris-pthreads-gcc/libtachyon\nmake ../compile ../compile/solaris-pthreads-gcc ../compile/solaris-pthreads-gcc/libtachyon  ../compile/solaris-pthreads-gcc/libtachyon.a  ../compile/solaris-pthreads-gcc/tachyon\nmake[4]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/tachyon-0.98beta.p9/src/unix'\nmake[4]: Nothing to be done for `../compile'.\nmake[4]: Nothing to be done for `../compile/solaris-pthreads-gcc'.\nmake[4]: Nothing to be done for `../compile/solaris-pthreads-gcc/libtachyon'.\ngcc -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS  -DUSEPNG    -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include  -DTHR -DUSEPOSIXTHREADS -c ../src/api.c -o ../compile/solaris-pthreads-gcc/libtachyon/api.o\ngcc -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS  -DUSEPNG    -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include  -DTHR -DUSEPOSIXTHREADS -c ../src/apigeom.c -o ../compile/solaris-pthreads-gcc/libtachyon/apigeom.o\ngcc -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS  -DUSEPNG    -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include  -DTHR -DUSEPOSIXTHREADS -c ../src/box.c -o ../compile/solaris-pthreads-gcc/libtachyon/box.o\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7069\n\n",
+    "body": "Assignee: tbd\n\nCC:  @orlitzky @dimpase\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used #7021 \n\n\n```\ntachyon-0.98beta.p9/patches/\ntachyon-0.98beta.p9/patches/Make-arch.patch\ntachyon-0.98beta.p9/patches/Make-arch\ntachyon-0.98beta.p9/spkg-install\ntachyon-0.98beta.p9/.hgignore\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/tachyon-0.98beta.p9/src/unix'\nmake all \\\n\"ARCH = solaris-pthreads-gcc\" \\\n\"CC = gcc\" \\\n\"CFLAGS = -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS  -DUSEPNG    -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include  -DTHR -DUSEPOSIXTHREADS\" \\\n\"AR = ar\" \\\n\"ARFLAGS = r\" \\\n\"STRIP = strip\" \\\n\"LIBS = -L. -ltachyon  -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib -lpng12 -lz  -lm -lpthread\"\nmake[3]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/tachyon-0.98beta.p9/src/unix'\nBuilding Tachyon Parallel Ray Tracing library\nCopyright 1994-2007, John E. Stone\nAll Rights Reserveed\nMaking architecture directory ../compile/solaris-pthreads-gcc\nMaking library directory ../compile/solaris-pthreads-gcc/libtachyon\nmake ../compile ../compile/solaris-pthreads-gcc ../compile/solaris-pthreads-gcc/libtachyon  ../compile/solaris-pthreads-gcc/libtachyon.a  ../compile/solaris-pthreads-gcc/tachyon\nmake[4]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/tachyon-0.98beta.p9/src/unix'\nmake[4]: Nothing to be done for `../compile'.\nmake[4]: Nothing to be done for `../compile/solaris-pthreads-gcc'.\nmake[4]: Nothing to be done for `../compile/solaris-pthreads-gcc/libtachyon'.\ngcc -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS  -DUSEPNG    -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include  -DTHR -DUSEPOSIXTHREADS -c ../src/api.c -o ../compile/solaris-pthreads-gcc/libtachyon/api.o\ngcc -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS  -DUSEPNG    -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include  -DTHR -DUSEPOSIXTHREADS -c ../src/apigeom.c -o ../compile/solaris-pthreads-gcc/libtachyon/apigeom.o\ngcc -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS  -DUSEPNG    -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include  -DTHR -DUSEPOSIXTHREADS -c ../src/box.c -o ../compile/solaris-pthreads-gcc/libtachyon/box.o\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7069\n\n",
     "created_at": "2009-09-29T13:06:53Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_007069.json:
 ```
 Assignee: tbd
 
-CC:  mjo dimpase
+CC:  @orlitzky @dimpase
 
 Using
 
@@ -106,7 +106,7 @@ archive/issue_comments_058475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58475",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_058476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58476",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_058477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58477",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_058478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58478",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

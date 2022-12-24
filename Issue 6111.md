@@ -3,7 +3,7 @@
 archive/issues_006111.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhansen\n\nGet sage-4.0.rc0 from \n\nhttp://sage.math.washington.edu/home/wstein/build/sage-4.0.rc0/dist/\n\nwhich is stable and has all the new symbolics code in it. \n\nYou can also do:\n\n./sage -upgrade http://sage.math.washington.edu/home/wstein/build/sage-4.0.rc0/\n\nNote that the code for symbolics is one big flattened patch.  The only way to referee it is is to read straight through all of devel/sage/sage/symbolics, devel/sage/sage/calculus, and also look at the diff outside of those two directories at the patch to see what else was changed. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6111\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nGet sage-4.0.rc0 from \n\nhttp://sage.math.washington.edu/home/wstein/build/sage-4.0.rc0/dist/\n\nwhich is stable and has all the new symbolics code in it. \n\nYou can also do:\n\n./sage -upgrade http://sage.math.washington.edu/home/wstein/build/sage-4.0.rc0/\n\nNote that the code for symbolics is one big flattened patch.  The only way to referee it is is to read straight through all of devel/sage/sage/symbolics, devel/sage/sage/calculus, and also look at the diff outside of those two directories at the patch to see what else was changed. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6111\n\n",
     "created_at": "2009-05-21T09:44:00Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_006111.json:
     "title": "[with patch; needs review] review symbolics in sage-4.0 (switch to pynac)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6111",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mhansen
+CC:  @mwhansen
 
 Get sage-4.0.rc0 from 
 
@@ -51,7 +51,7 @@ archive/issue_comments_048818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48818",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_048819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48819",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -101,16 +101,16 @@ I read through the first 2500 lines of expression.pyx earlier today, and it's lo
 archive/issue_comments_048820.json:
 ```json
 {
-    "body": "Attachment [6111-expression-referee.patch](tarball://root/attachments/some-uuid/ticket6111/6111-expression-referee.patch) by robertwb created at 2009-05-23 07:06:21\n\nFinished reading expression.pyx, it looks good. Should this work:\n\n\n```\nsage: ((x+y)^9).polynomial(None, ring=ZZ['x']['y']).list()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"expression.pyx\", line 3616, in sage.symbolic.expression.Expression.polynomial (sage/symbolic/expression.cpp:17320)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 975, in polynomial\n    converter = PolynomialConverter(ex, base_ring=base_ring, ring=ring)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 833, in __init__\n    raise TypeError, \"%s is not a variable of %s\" %(v, ring)\nTypeError: y is not a variable of Univariate Polynomial Ring in y over Univariate Polynomial Ring in x over Integer Ring\n```\n\n\nAlso, there are a lot (too many IMHO) aliases for simplify_radical\n\n\n```\n    radical_simplify = simplify_log = log_simplify = simplify_radical\n    simplify_exp = exp_simplify = simplify_radical\n```\n",
+    "body": "Attachment [6111-expression-referee.patch](tarball://root/attachments/some-uuid/ticket6111/6111-expression-referee.patch) by @robertwb created at 2009-05-23 07:06:21\n\nFinished reading expression.pyx, it looks good. Should this work:\n\n\n```\nsage: ((x+y)^9).polynomial(None, ring=ZZ['x']['y']).list()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"expression.pyx\", line 3616, in sage.symbolic.expression.Expression.polynomial (sage/symbolic/expression.cpp:17320)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 975, in polynomial\n    converter = PolynomialConverter(ex, base_ring=base_ring, ring=ring)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 833, in __init__\n    raise TypeError, \"%s is not a variable of %s\" %(v, ring)\nTypeError: y is not a variable of Univariate Polynomial Ring in y over Univariate Polynomial Ring in x over Integer Ring\n```\n\n\nAlso, there are a lot (too many IMHO) aliases for simplify_radical\n\n\n```\n    radical_simplify = simplify_log = log_simplify = simplify_radical\n    simplify_exp = exp_simplify = simplify_radical\n```\n",
     "created_at": "2009-05-23T07:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48820",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6111-expression-referee.patch](tarball://root/attachments/some-uuid/ticket6111/6111-expression-referee.patch) by robertwb created at 2009-05-23 07:06:21
+Attachment [6111-expression-referee.patch](tarball://root/attachments/some-uuid/ticket6111/6111-expression-referee.patch) by @robertwb created at 2009-05-23 07:06:21
 
 Finished reading expression.pyx, it looks good. Should this work:
 
@@ -150,7 +150,7 @@ archive/issue_comments_048821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48821",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_048822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48822",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -230,16 +230,16 @@ So: positive review for sage/symbolic/* except for expression.pyx (which I didn'
 archive/issue_comments_048824.json:
 ```json
 {
-    "body": "Attachment [trac_6111-stein_referee.patch](tarball://root/attachments/some-uuid/ticket6111/trac_6111-stein_referee.patch) by was created at 2009-05-25 04:28:55\n\nI read through most everything outside of symbolics/ and made a few little touchups in my attached patch.  Positive review for this part as well.",
+    "body": "Attachment [trac_6111-stein_referee.patch](tarball://root/attachments/some-uuid/ticket6111/trac_6111-stein_referee.patch) by @williamstein created at 2009-05-25 04:28:55\n\nI read through most everything outside of symbolics/ and made a few little touchups in my attached patch.  Positive review for this part as well.",
     "created_at": "2009-05-25T04:28:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48824",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6111-stein_referee.patch](tarball://root/attachments/some-uuid/ticket6111/trac_6111-stein_referee.patch) by was created at 2009-05-25 04:28:55
+Attachment [trac_6111-stein_referee.patch](tarball://root/attachments/some-uuid/ticket6111/trac_6111-stein_referee.patch) by @williamstein created at 2009-05-25 04:28:55
 
 I read through most everything outside of symbolics/ and made a few little touchups in my attached patch.  Positive review for this part as well.
 
@@ -250,16 +250,16 @@ I read through most everything outside of symbolics/ and made a few little touch
 archive/issue_comments_048825.json:
 ```json
 {
-    "body": "Attachment [trac_6111-sympy_oo.patch](tarball://root/attachments/some-uuid/ticket6111/trac_6111-sympy_oo.patch) by mhansen created at 2009-05-28 02:41:40",
+    "body": "Attachment [trac_6111-sympy_oo.patch](tarball://root/attachments/some-uuid/ticket6111/trac_6111-sympy_oo.patch) by @mwhansen created at 2009-05-28 02:41:40",
     "created_at": "2009-05-28T02:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48825",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6111-sympy_oo.patch](tarball://root/attachments/some-uuid/ticket6111/trac_6111-sympy_oo.patch) by mhansen created at 2009-05-28 02:41:40
+Attachment [trac_6111-sympy_oo.patch](tarball://root/attachments/some-uuid/ticket6111/trac_6111-sympy_oo.patch) by @mwhansen created at 2009-05-28 02:41:40
 
 
 
@@ -273,7 +273,7 @@ archive/issue_comments_048826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48826",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_048827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48827",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -306,16 +306,16 @@ I added a fourth patch which fixes a segfault that wstein's patch uncovers.
 archive/issue_comments_048828.json:
 ```json
 {
-    "body": "Changing assignee from burcin to mhansen.",
+    "body": "Changing assignee from @burcin to @mwhansen.",
     "created_at": "2009-05-28T02:42:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48828",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from burcin to mhansen.
+Changing assignee from @burcin to @mwhansen.
 
 
 
@@ -329,7 +329,7 @@ archive/issue_comments_048829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48829",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_048830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48830",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_048831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48831",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

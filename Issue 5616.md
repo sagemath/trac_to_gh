@@ -14,7 +14,7 @@ archive/issues_005616.json:
     "title": "speed regression with fast_callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5616",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: cwitty
@@ -153,7 +153,7 @@ archive/issue_comments_043857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5616#issuecomment-43857",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

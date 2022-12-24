@@ -14,7 +14,7 @@ archive/issues_006776.json:
     "title": "[with patch, needs review] plot3d improvement for lattice polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6776",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6776
 archive/issue_comments_055817.json:
 ```json
 {
-    "body": "Attachment [trac_6776_plot3d_improvement_for_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6776/trac_6776_plot3d_improvement_for_lattice_polytope.patch) by novoselt created at 2009-08-19 20:14:24",
+    "body": "Attachment [trac_6776_plot3d_improvement_for_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6776/trac_6776_plot3d_improvement_for_lattice_polytope.patch) by @novoselt created at 2009-08-19 20:14:24",
     "created_at": "2009-08-19T20:14:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6776#issuecomment-55817",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_6776_plot3d_improvement_for_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6776/trac_6776_plot3d_improvement_for_lattice_polytope.patch) by novoselt created at 2009-08-19 20:14:24
+Attachment [trac_6776_plot3d_improvement_for_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6776/trac_6776_plot3d_improvement_for_lattice_polytope.patch) by @novoselt created at 2009-08-19 20:14:24
 
 
 

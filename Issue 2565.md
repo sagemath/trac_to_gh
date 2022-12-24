@@ -14,7 +14,7 @@ archive/issues_002565.json:
     "title": "logging is extremely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2565",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: cwitty
@@ -67,7 +67,7 @@ archive/issue_comments_017484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2565#issuecomment-17484",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_017486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2565#issuecomment-17486",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_017487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2565#issuecomment-17487",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_017488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2565#issuecomment-17488",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_017489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2565#issuecomment-17489",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -209,16 +209,16 @@ and you get a directory in the `/tmp` directory. If you don't begin the path wit
 archive/issue_comments_017490.json:
 ```json
 {
-    "body": "Attachment [log.patch.1](tarball://root/attachments/some-uuid/ticket2565/log.patch.1) by ddrake created at 2008-03-27 06:40:37",
+    "body": "Attachment [log.patch.1](tarball://root/attachments/some-uuid/ticket2565/log.patch.1) by @dandrake created at 2008-03-27 06:40:37",
     "created_at": "2008-03-27T06:40:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2565#issuecomment-17490",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [log.patch.1](tarball://root/attachments/some-uuid/ticket2565/log.patch.1) by ddrake created at 2008-03-27 06:40:37
+Attachment [log.patch.1](tarball://root/attachments/some-uuid/ticket2565/log.patch.1) by @dandrake created at 2008-03-27 06:40:37
 
 
 

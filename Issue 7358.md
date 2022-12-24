@@ -3,7 +3,7 @@
 archive/issues_007358.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nA special case of #7303 ( which is much easier and efficient to implement ) is to find a strongly connected orientation of the edges of a bridgeless connected graph.\n\nThis can be done using the short algorithm given in :\nSchriver Combinatorial optimization\nVolume B \npage 1037\n\nIssue created by migration from https://trac.sagemath.org/ticket/7358\n\n",
+    "body": "Assignee: @rlmill\n\nA special case of #7303 ( which is much easier and efficient to implement ) is to find a strongly connected orientation of the edges of a bridgeless connected graph.\n\nThis can be done using the short algorithm given in :\nSchriver Combinatorial optimization\nVolume B \npage 1037\n\nIssue created by migration from https://trac.sagemath.org/ticket/7358\n\n",
     "created_at": "2009-10-31T08:44:40Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007358.json:
     "title": "Strong orientations of 2-connected graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7358",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 A special case of #7303 ( which is much easier and efficient to implement ) is to find a strongly connected orientation of the edges of a bridgeless connected graph.
 
@@ -42,7 +42,7 @@ archive/issue_comments_061664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7358#issuecomment-61664",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_061665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7358#issuecomment-61665",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_061666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7358#issuecomment-61666",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_061667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7358#issuecomment-61667",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_061668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7358#issuecomment-61668",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_061669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7358#issuecomment-61669",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -151,16 +151,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_061670.json:
 ```json
 {
-    "body": "Attachment [trac_7358.patch](tarball://root/attachments/some-uuid/ticket7358/trac_7358.patch) by rlm created at 2009-12-16 03:11:03",
+    "body": "Attachment [trac_7358.patch](tarball://root/attachments/some-uuid/ticket7358/trac_7358.patch) by @rlmill created at 2009-12-16 03:11:03",
     "created_at": "2009-12-16T03:11:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7358#issuecomment-61670",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7358.patch](tarball://root/attachments/some-uuid/ticket7358/trac_7358.patch) by rlm created at 2009-12-16 03:11:03
+Attachment [trac_7358.patch](tarball://root/attachments/some-uuid/ticket7358/trac_7358.patch) by @rlmill created at 2009-12-16 03:11:03
 
 
 
@@ -174,7 +174,7 @@ archive/issue_comments_061671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7358#issuecomment-61671",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_061672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7358#issuecomment-61672",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

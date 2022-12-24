@@ -81,7 +81,7 @@ archive/issue_comments_028176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3933#issuecomment-28176",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_028177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3933#issuecomment-28177",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -128,16 +128,16 @@ sage: set(Primes())
 archive/issue_comments_028178.json:
 ```json
 {
-    "body": "Attachment [trac-3933.patch](tarball://root/attachments/some-uuid/ticket3933/trac-3933.patch) by rlm created at 2009-01-23 14:13:26",
+    "body": "Attachment [trac-3933.patch](tarball://root/attachments/some-uuid/ticket3933/trac-3933.patch) by @rlmill created at 2009-01-23 14:13:26",
     "created_at": "2009-01-23T14:13:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3933#issuecomment-28178",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-3933.patch](tarball://root/attachments/some-uuid/ticket3933/trac-3933.patch) by rlm created at 2009-01-23 14:13:26
+Attachment [trac-3933.patch](tarball://root/attachments/some-uuid/ticket3933/trac-3933.patch) by @rlmill created at 2009-01-23 14:13:26
 
 
 

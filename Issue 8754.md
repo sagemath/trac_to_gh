@@ -3,7 +3,7 @@
 archive/issues_008754.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  chapoton\n\n\n```\n1. Doctest: \n       sage -t -sagenb \n2. Run the Selenium test suite:\n       sage -python sagenb/testing/run_tests.py \n\nTo use Selenium, you must visit http://seleniumhq.org/download/ and:\n\n      * Download and extract Selenium RC (\"the Selenium Remote Control\")\n\n      * Run it as follows on Linux:\n             $ cd /path/to/selenium-remote-control-1.0.3/selenium-server-1.0.3\n             $ java -jar selenium-server.jar\n             $ cd /path/to/sagenb-0.8/src/sagenb\n             $ sage  -python sagenb/testing/run_tests.py\n\n      * Run it as follows on OS X:\n             $ cd /path/to/selenium-remote-control-1.0.3/selenium-server-1.0.3\n             $ cd /path/to/sagenb-0.8/src/sagenb\n             $ sage\n             sage: import sagenb.testing.run_tests as rt \n             sage: rt.setup_tests('localhost', False, '*firefox')\n             sage: rt.run_any()\n```\n\n\nThat the instructions for OS X are different is probably a bug. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8754\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\n\n```\n1. Doctest: \n       sage -t -sagenb \n2. Run the Selenium test suite:\n       sage -python sagenb/testing/run_tests.py \n\nTo use Selenium, you must visit http://seleniumhq.org/download/ and:\n\n      * Download and extract Selenium RC (\"the Selenium Remote Control\")\n\n      * Run it as follows on Linux:\n             $ cd /path/to/selenium-remote-control-1.0.3/selenium-server-1.0.3\n             $ java -jar selenium-server.jar\n             $ cd /path/to/sagenb-0.8/src/sagenb\n             $ sage  -python sagenb/testing/run_tests.py\n\n      * Run it as follows on OS X:\n             $ cd /path/to/selenium-remote-control-1.0.3/selenium-server-1.0.3\n             $ cd /path/to/sagenb-0.8/src/sagenb\n             $ sage\n             sage: import sagenb.testing.run_tests as rt \n             sage: rt.setup_tests('localhost', False, '*firefox')\n             sage: rt.run_any()\n```\n\n\nThat the instructions for OS X are different is probably a bug. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8754\n\n",
     "created_at": "2010-04-24T21:00:55Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008754.json:
     "title": "sagenb -- add \"how to test\" directions to the sagenb README.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8754",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
 
-CC:  chapoton
+CC:  @fchapoton
 
 
 ```
@@ -68,7 +68,7 @@ archive/issue_comments_080081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8754#issuecomment-80081",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,16 +81,16 @@ Changing status from new to needs_review.
 archive/issue_comments_080082.json:
 ```json
 {
-    "body": "Attachment [trac_8754-sagenb.patch](tarball://root/attachments/some-uuid/ticket8754/trac_8754-sagenb.patch) by was created at 2010-04-25 00:41:39",
+    "body": "Attachment [trac_8754-sagenb.patch](tarball://root/attachments/some-uuid/ticket8754/trac_8754-sagenb.patch) by @williamstein created at 2010-04-25 00:41:39",
     "created_at": "2010-04-25T00:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8754#issuecomment-80082",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8754-sagenb.patch](tarball://root/attachments/some-uuid/ticket8754/trac_8754-sagenb.patch) by was created at 2010-04-25 00:41:39
+Attachment [trac_8754-sagenb.patch](tarball://root/attachments/some-uuid/ticket8754/trac_8754-sagenb.patch) by @williamstein created at 2010-04-25 00:41:39
 
 
 
@@ -104,7 +104,7 @@ archive/issue_comments_080083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8754#issuecomment-80083",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_080086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8754#issuecomment-80086",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_080087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8754#issuecomment-80087",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_080088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8754#issuecomment-80088",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_080089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8754#issuecomment-80089",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_080090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8754#issuecomment-80090",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_080091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8754#issuecomment-80091",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

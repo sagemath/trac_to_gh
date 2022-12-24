@@ -3,7 +3,7 @@
 archive/issues_007655.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  iandrus jason boothby kcrisman jhpalmieri\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7655\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @gvol @jasongrout boothby @kcrisman @jhpalmieri\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7655\n\n",
     "created_at": "2009-12-11T01:14:14Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007655.json:
     "title": "notebook: make it so worksheets can be organized into a tree structure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7655",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  iandrus jason boothby kcrisman jhpalmieri
+CC:  @gvol @jasongrout boothby @kcrisman @jhpalmieri
 
 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7655
 archive/issue_comments_065482.json:
 ```json
 {
-    "body": "Attachment [sagenb-7655-part1.patch](tarball://root/attachments/some-uuid/ticket7655/sagenb-7655-part1.patch) by was created at 2009-12-12 02:34:44",
+    "body": "Attachment [sagenb-7655-part1.patch](tarball://root/attachments/some-uuid/ticket7655/sagenb-7655-part1.patch) by @williamstein created at 2009-12-12 02:34:44",
     "created_at": "2009-12-12T02:34:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65482",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb-7655-part1.patch](tarball://root/attachments/some-uuid/ticket7655/sagenb-7655-part1.patch) by was created at 2009-12-12 02:34:44
+Attachment [sagenb-7655-part1.patch](tarball://root/attachments/some-uuid/ticket7655/sagenb-7655-part1.patch) by @williamstein created at 2009-12-12 02:34:44
 
 
 
@@ -52,16 +52,16 @@ Attachment [sagenb-7655-part1.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_065483.json:
 ```json
 {
-    "body": "Attachment [sagenb-7655-part2.patch](tarball://root/attachments/some-uuid/ticket7655/sagenb-7655-part2.patch) by was created at 2010-02-15 19:02:14",
+    "body": "Attachment [sagenb-7655-part2.patch](tarball://root/attachments/some-uuid/ticket7655/sagenb-7655-part2.patch) by @williamstein created at 2010-02-15 19:02:14",
     "created_at": "2010-02-15T19:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65483",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb-7655-part2.patch](tarball://root/attachments/some-uuid/ticket7655/sagenb-7655-part2.patch) by was created at 2010-02-15 19:02:14
+Attachment [sagenb-7655-part2.patch](tarball://root/attachments/some-uuid/ticket7655/sagenb-7655-part2.patch) by @williamstein created at 2010-02-15 19:02:14
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_065484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65484",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_065485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65485",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_065486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65486",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_065487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65487",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_065488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65488",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_065489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65489",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

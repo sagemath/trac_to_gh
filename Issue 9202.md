@@ -3,7 +3,7 @@
 archive/issues_009202.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby kcrisman\n\nThis spkg updates matplotlib to 0.99.3.  I've attached the patch as well (don't apply; it's just for reviewing purposes).\n\nThe new spkg is at http://sage.math.washington.edu/home/jason/matplotlib-0.99.3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9202\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby @kcrisman\n\nThis spkg updates matplotlib to 0.99.3.  I've attached the patch as well (don't apply; it's just for reviewing purposes).\n\nThe new spkg is at http://sage.math.washington.edu/home/jason/matplotlib-0.99.3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9202\n\n",
     "created_at": "2010-06-10T12:17:15Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009202.json:
     "title": "update matplotlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9202",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
 
-CC:  drkirkby kcrisman
+CC:  drkirkby @kcrisman
 
 This spkg updates matplotlib to 0.99.3.  I've attached the patch as well (don't apply; it's just for reviewing purposes).
 
@@ -41,7 +41,7 @@ archive/issue_comments_086102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86102",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_086103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86103",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_086109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86109",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_086110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86110",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_086111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86111",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_086112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86112",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_086119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86119",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_086120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86120",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_086123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86123",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_086124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86124",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_086125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86125",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -649,7 +649,7 @@ archive/issue_comments_086126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86126",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

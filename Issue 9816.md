@@ -3,7 +3,7 @@
 archive/issues_009816.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  pjeremy leif\n\nThe POSIX standard for Unix states the command `uname` must exist, and list the options it should take. See\n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/uname.html\n\nThe **only** options which should be given in code that can be run on any system is these:\n\n\n\n```\n    uname [-amnrsv]\n```\n\n\nbut the BLAS package ignores this, and calls `uname -p`, which screws up on systems like HP-UX where the -p option is not supported. \n\n\n```\nblas-20070724/src/ztrsm.f\nblas-20070724/src/ztrsv.f\nFinished extraction\n****************************************************\nHost system\nuname -a:\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: hppa2.0w-hp-hpux11.11\nConfigured with: ../gcc-4.3.4/configure --with-gnu-as --with-as=/home/dclarke/local/bin/as --without-gnu-ld --with-ld=/usr/bin/ld --enable-threads=posix --enable-nls --prefix=/home/dclarke/local --enable-shared --enable-multilib --with-included-gettext --with-libiconv-prefix=/home/dclarke/local --with-system-zlib --with-gmp=/home/dclarke/local --with-mpfr=/home/dclarke/local --enable-languages=c,c++,fortran,objc --enable-bootstrap\nThread model: posix\ngcc version 4.3.4 (GCC) \n****************************************************\nuname: illegal option -- p\nusage: uname [-amnrsvil] [-S nodename]\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9817\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @peterjeremy @nexttime\n\nThe POSIX standard for Unix states the command `uname` must exist, and list the options it should take. See\n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/uname.html\n\nThe **only** options which should be given in code that can be run on any system is these:\n\n\n\n```\n    uname [-amnrsv]\n```\n\n\nbut the BLAS package ignores this, and calls `uname -p`, which screws up on systems like HP-UX where the -p option is not supported. \n\n\n```\nblas-20070724/src/ztrsm.f\nblas-20070724/src/ztrsv.f\nFinished extraction\n****************************************************\nHost system\nuname -a:\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: hppa2.0w-hp-hpux11.11\nConfigured with: ../gcc-4.3.4/configure --with-gnu-as --with-as=/home/dclarke/local/bin/as --without-gnu-ld --with-ld=/usr/bin/ld --enable-threads=posix --enable-nls --prefix=/home/dclarke/local --enable-shared --enable-multilib --with-included-gettext --with-libiconv-prefix=/home/dclarke/local --with-system-zlib --with-gmp=/home/dclarke/local --with-mpfr=/home/dclarke/local --enable-languages=c,c++,fortran,objc --enable-bootstrap\nThread model: posix\ngcc version 4.3.4 (GCC) \n****************************************************\nuname: illegal option -- p\nusage: uname [-amnrsvil] [-S nodename]\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9817\n\n",
     "created_at": "2010-08-27T09:52:35Z",
     "labels": [
         "porting",
@@ -19,7 +19,7 @@ archive/issues_009816.json:
 ```
 Assignee: drkirkby
 
-CC:  pjeremy leif
+CC:  @peterjeremy @nexttime
 
 The POSIX standard for Unix states the command `uname` must exist, and list the options it should take. See
 
@@ -133,7 +133,7 @@ archive/issue_comments_096807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9816#issuecomment-96807",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_096808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9816#issuecomment-96808",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_096809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9816#issuecomment-96809",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_096810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9816#issuecomment-96810",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

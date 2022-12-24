@@ -3,7 +3,7 @@
 archive/issues_007490.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhansen jason\n\nKeywords: pynac\n\nAttached patch refactors the symbolic function code in `sage/symbolic/function.pyx`.\n\n* `evalf()` now accepts a parent argument instead of a precision\n  This allows us to use the numeric evaluation framework in ginac for\n  evaluating things with `RIF`, `CIF` as well, not just `RealField`, or `ComplexField` with the given precision.\n\n* python arguments passed to custom methods of sfunctions are not\n  wrapped in `Expression` objects any more. No need to call `.pyobject()`\n  to unwrap these.\n\n* custom methods support calling methods on `self`.\n  This would be useful if you need access to other function of the\n  defining class, or store tables of data calculated on demand.\n\n* `__call__` method supports hold parameter\n  This works:\n\n```\n\tsage: exp(log(x))\n        x\n        sage: exp(log(x), hold=True)\n        e^log(x)\n```\n\n\n* Custom methods for symbolic functions (`_eval_`, `_evalf_`, `_conjugate_`,\n  `_derivative_`, etc.) can be\n  written in Cython for builtin functions (that are provided by the\n  Sage library)\n\n* New class hiearchy:\n\n```\nFunction\n  GinacFunction\n  CustomizableFunction\n    BuiltinFunction\n    SymbolicFunction\n```\n\n We have 4 different types of functions, those defined by\n* ginac (sin, cos, ...),\n* the Sage library (cot)\n* the user (in a python file, subclassing the new\n  SymbolicFunction)\n* the command line function_factory (by calling function('f') )\n \n Things we need to do for these functions different for each of these,\n perhaps similar for the last two. Normally initializing a function\n means checking if it's already defined, if not, initializing a\n structure from ginac called function_options, and registering this in\n a table. There are also issues with pickling.\n \n For ginac functions, we don't need any of this, since we can't change\n it at python level. We only need to look up the serial number (the\n indicator in the table) of the function. We don't need to do anything\n to pickle or unpickle these either.\n \n Pickling and unpickling library functions only needs an identifier\n for the class to initialize it again if necessary. \n \n User defined functions need to lookup if there is an existing\n function in the table, since we should try to keep the table small.\n \n There is also a new `function_factory()` function in `sage.symbolic.function_factory`\n (it needs to be in a python file) that creates `NewSymbolicFunction`\n classes on the fly for the function() calls from the command line.\n\n\nThe pynac package here is required for this patch:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.a0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7490\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen @jasongrout\n\nKeywords: pynac\n\nAttached patch refactors the symbolic function code in `sage/symbolic/function.pyx`.\n\n* `evalf()` now accepts a parent argument instead of a precision\n  This allows us to use the numeric evaluation framework in ginac for\n  evaluating things with `RIF`, `CIF` as well, not just `RealField`, or `ComplexField` with the given precision.\n\n* python arguments passed to custom methods of sfunctions are not\n  wrapped in `Expression` objects any more. No need to call `.pyobject()`\n  to unwrap these.\n\n* custom methods support calling methods on `self`.\n  This would be useful if you need access to other function of the\n  defining class, or store tables of data calculated on demand.\n\n* `__call__` method supports hold parameter\n  This works:\n\n```\n\tsage: exp(log(x))\n        x\n        sage: exp(log(x), hold=True)\n        e^log(x)\n```\n\n\n* Custom methods for symbolic functions (`_eval_`, `_evalf_`, `_conjugate_`,\n  `_derivative_`, etc.) can be\n  written in Cython for builtin functions (that are provided by the\n  Sage library)\n\n* New class hiearchy:\n\n```\nFunction\n  GinacFunction\n  CustomizableFunction\n    BuiltinFunction\n    SymbolicFunction\n```\n\n We have 4 different types of functions, those defined by\n* ginac (sin, cos, ...),\n* the Sage library (cot)\n* the user (in a python file, subclassing the new\n  SymbolicFunction)\n* the command line function_factory (by calling function('f') )\n \n Things we need to do for these functions different for each of these,\n perhaps similar for the last two. Normally initializing a function\n means checking if it's already defined, if not, initializing a\n structure from ginac called function_options, and registering this in\n a table. There are also issues with pickling.\n \n For ginac functions, we don't need any of this, since we can't change\n it at python level. We only need to look up the serial number (the\n indicator in the table) of the function. We don't need to do anything\n to pickle or unpickle these either.\n \n Pickling and unpickling library functions only needs an identifier\n for the class to initialize it again if necessary. \n \n User defined functions need to lookup if there is an existing\n function in the table, since we should try to keep the table small.\n \n There is also a new `function_factory()` function in `sage.symbolic.function_factory`\n (it needs to be in a python file) that creates `NewSymbolicFunction`\n classes on the fly for the function() calls from the command line.\n\n\nThe pynac package here is required for this patch:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.a0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7490\n\n",
     "created_at": "2009-11-19T00:31:45Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_007490.json:
     "title": "refactor symbolic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7490",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mhansen jason
+CC:  @mwhansen @jasongrout
 
 Keywords: pynac
 
@@ -112,7 +112,7 @@ archive/issue_comments_063256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63256",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_063257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63257",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -164,16 +164,16 @@ refactor symbolic functions
 archive/issue_comments_063258.json:
 ```json
 {
-    "body": "Attachment [trac_7490-refactor_symbolic_functions.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.patch) by burcin created at 2009-11-19 11:58:58\n\nHi Jason,\n\nThis patch does not add a hold method to `integrate()` since it is not a *symbolic function*. Golam did some work in this direction at #6465, but more effort is needed to polish those patches.\n\nCheers,\n\nBurcin",
+    "body": "Attachment [trac_7490-refactor_symbolic_functions.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.patch) by @burcin created at 2009-11-19 11:58:58\n\nHi Jason,\n\nThis patch does not add a hold method to `integrate()` since it is not a *symbolic function*. Golam did some work in this direction at #6465, but more effort is needed to polish those patches.\n\nCheers,\n\nBurcin",
     "created_at": "2009-11-19T11:58:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63258",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7490-refactor_symbolic_functions.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.patch) by burcin created at 2009-11-19 11:58:58
+Attachment [trac_7490-refactor_symbolic_functions.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.patch) by @burcin created at 2009-11-19 11:58:58
 
 Hi Jason,
 
@@ -195,7 +195,7 @@ archive/issue_comments_063259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63259",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_063260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63260",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_063261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63261",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -250,16 +250,16 @@ rebased to 4.3.alpha0
 archive/issue_comments_063262.json:
 ```json
 {
-    "body": "Attachment [trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch) by burcin created at 2009-11-23 12:13:18\n\nI rebased the patch to 4.3.alpha0:\n\nattachment:trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch",
+    "body": "Attachment [trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch) by @burcin created at 2009-11-23 12:13:18\n\nI rebased the patch to 4.3.alpha0:\n\nattachment:trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch",
     "created_at": "2009-11-23T12:13:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63262",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch) by burcin created at 2009-11-23 12:13:18
+Attachment [trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.rebase-4.3.alpha0.patch) by @burcin created at 2009-11-23 12:13:18
 
 I rebased the patch to 4.3.alpha0:
 
@@ -277,7 +277,7 @@ archive/issue_comments_063263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63263",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_063264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63264",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_063265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63265",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_063266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63266",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -391,16 +391,16 @@ revised patch based on 4.3.alpha0
 archive/issue_comments_063267.json:
 ```json
 {
-    "body": "Attachment [trac_7490-refactor_symbolic_functions.take2.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.take2.patch) by burcin created at 2009-12-03 14:27:23\n\nThanks for your comments Mike.\n\nReplying to [comment:7 mhansen]:\n> Here's my review.\n> \n> There are a number of things which break old code -- they should be deprecated first.\n>\n {{{\n- exp(2,prec=100), gamma(pi,prec=100), etc.\n \n- sage: Q.<i> = NumberField(x^2+1) \n  sage: gamma(i) \n  sage: gamma(QQbar(I))\n }}}\n\nDone:\n\n\n```\nsage: exp(2,prec=100)\n...:...: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example exp(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., exp(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n7.3890560989306502272304274606\n\nsage: gamma(2.5, prec=100)\n...:...: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example gamma(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., gamma(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n1.3293403881791370224618731299\n\nsage: gamma(QQbar(I))\n-0.154949828301811 - 0.498015668118356*I\n\nsage: Q.<i> = NumberField(x^2+1)\nsage: gamma(i)\n...:...: DeprecationWarning: Calling symbolic functions with arguments that cannot be coerced into symbolic expressions is deprecated.\n  # -*- coding: utf-8 -*-\n-0.154949828301811 - 0.498015668118356*I\n```\n\n\n> Conversion of polylog to maxima is broken:\n {{{\n sage: polylog(2, x)._maxima_init_()\n 'polylog(2,x)'\n }}}\n> instead of `'li[2](x)'`.\n\nI don't know why I left `_maxima_init_evaled_()` commented. It works now:\n\n\n```\nsage: polylog(2, x)._maxima_()\nli[2](x)\nsage: polylog(4, x)._maxima_()\npolylog(4,x)\n```\n\n \n> Some doctests are missing:\n {{{\n sage/interfaces/maxima.py: _symbolic_\n sage/rings/number_field/number_field_element.pyx: _mpfr_, __complex__\n }}}\n\nDone.\n\n> Why do you have to use\n {{{\n f = CallableConvertMap(RR, RR, lambda x: x.exp(), parent_as_first_arg=False) \n }}}\n> instead of\n {{{\n f = CallableConvertMap(RR, RR, exp, parent_as_first_arg=False) \n }}}\n> , which is more natural?\n\nI converted the doctest back to the original form. Return values of `exp()` could be `int` for some inputs, even for arguments in `RR`. For example, `exp(RR(0))` used to return an `int(1)`. I added some code to wrap return values from GiNaC and convert them to something sensible in `sage.symbolic.function.GinacFunction.__call__()`.\n\n> In expression.pyx, some things are missing from the _convert docstring.  Also, f._convert(int) gives `-0.989992496600445*sqrt(2)` which seems unexpected.  Maybe the docstring can be clarified further?\n\nI wrote a little more for the docstring and added a few examples. The fact that GiNaC leaves the `power` objects exact is confusing, but I don't see any easy way to get around this.\n\n> Finally, there are some numerical issues it seems with evaluations: complex(I) gives 0.99999999999999967j instead of 1j.  I'm not sure where the discrepancy is occurring.\n\nThis seems to be an issue with complex embeddings of number field elements:\n\n\n```\nsage: complex(CDF.0)\n1j\nsage: complex(CC.0)\n1j\nsage: complex(CDF.0)\n1j\nsage: Q.<i> = NumberField(x^2+1)\nsage: complex(i)\n0.99999999999999967j\n```\n\n\nOf course, I added the last method that gets called for `complex(i)`, but all it does is to `return complex(self.complex_embedding())`. \n\nI suggest we open a separate ticket about this since it's independent of the symbolics code and someone who knows the number field code should take a look at it.",
+    "body": "Attachment [trac_7490-refactor_symbolic_functions.take2.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.take2.patch) by @burcin created at 2009-12-03 14:27:23\n\nThanks for your comments Mike.\n\nReplying to [comment:7 mhansen]:\n> Here's my review.\n> \n> There are a number of things which break old code -- they should be deprecated first.\n>\n {{{\n- exp(2,prec=100), gamma(pi,prec=100), etc.\n \n- sage: Q.<i> = NumberField(x^2+1) \n  sage: gamma(i) \n  sage: gamma(QQbar(I))\n }}}\n\nDone:\n\n\n```\nsage: exp(2,prec=100)\n...:...: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example exp(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., exp(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n7.3890560989306502272304274606\n\nsage: gamma(2.5, prec=100)\n...:...: DeprecationWarning: The prec keyword argument is deprecated. Explicitly set the precision of the input, for example gamma(RealField(300)(1)), or use the prec argument to .n() for exact inputs, e.g., gamma(1).n(300), instead.\n  # -*- coding: utf-8 -*-\n1.3293403881791370224618731299\n\nsage: gamma(QQbar(I))\n-0.154949828301811 - 0.498015668118356*I\n\nsage: Q.<i> = NumberField(x^2+1)\nsage: gamma(i)\n...:...: DeprecationWarning: Calling symbolic functions with arguments that cannot be coerced into symbolic expressions is deprecated.\n  # -*- coding: utf-8 -*-\n-0.154949828301811 - 0.498015668118356*I\n```\n\n\n> Conversion of polylog to maxima is broken:\n {{{\n sage: polylog(2, x)._maxima_init_()\n 'polylog(2,x)'\n }}}\n> instead of `'li[2](x)'`.\n\nI don't know why I left `_maxima_init_evaled_()` commented. It works now:\n\n\n```\nsage: polylog(2, x)._maxima_()\nli[2](x)\nsage: polylog(4, x)._maxima_()\npolylog(4,x)\n```\n\n \n> Some doctests are missing:\n {{{\n sage/interfaces/maxima.py: _symbolic_\n sage/rings/number_field/number_field_element.pyx: _mpfr_, __complex__\n }}}\n\nDone.\n\n> Why do you have to use\n {{{\n f = CallableConvertMap(RR, RR, lambda x: x.exp(), parent_as_first_arg=False) \n }}}\n> instead of\n {{{\n f = CallableConvertMap(RR, RR, exp, parent_as_first_arg=False) \n }}}\n> , which is more natural?\n\nI converted the doctest back to the original form. Return values of `exp()` could be `int` for some inputs, even for arguments in `RR`. For example, `exp(RR(0))` used to return an `int(1)`. I added some code to wrap return values from GiNaC and convert them to something sensible in `sage.symbolic.function.GinacFunction.__call__()`.\n\n> In expression.pyx, some things are missing from the _convert docstring.  Also, f._convert(int) gives `-0.989992496600445*sqrt(2)` which seems unexpected.  Maybe the docstring can be clarified further?\n\nI wrote a little more for the docstring and added a few examples. The fact that GiNaC leaves the `power` objects exact is confusing, but I don't see any easy way to get around this.\n\n> Finally, there are some numerical issues it seems with evaluations: complex(I) gives 0.99999999999999967j instead of 1j.  I'm not sure where the discrepancy is occurring.\n\nThis seems to be an issue with complex embeddings of number field elements:\n\n\n```\nsage: complex(CDF.0)\n1j\nsage: complex(CC.0)\n1j\nsage: complex(CDF.0)\n1j\nsage: Q.<i> = NumberField(x^2+1)\nsage: complex(i)\n0.99999999999999967j\n```\n\n\nOf course, I added the last method that gets called for `complex(i)`, but all it does is to `return complex(self.complex_embedding())`. \n\nI suggest we open a separate ticket about this since it's independent of the symbolics code and someone who knows the number field code should take a look at it.",
     "created_at": "2009-12-03T14:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63267",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7490-refactor_symbolic_functions.take2.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.take2.patch) by burcin created at 2009-12-03 14:27:23
+Attachment [trac_7490-refactor_symbolic_functions.take2.patch](tarball://root/attachments/some-uuid/ticket7490/trac_7490-refactor_symbolic_functions.take2.patch) by @burcin created at 2009-12-03 14:27:23
 
 Thanks for your comments Mike.
 
@@ -518,7 +518,7 @@ archive/issue_comments_063268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63268",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -536,7 +536,7 @@ archive/issue_comments_063269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63269",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -554,7 +554,7 @@ archive/issue_comments_063270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7490#issuecomment-63270",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

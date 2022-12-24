@@ -3,7 +3,7 @@
 archive/issues_008924.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nComparison between Sage and mpmath numbers works with mpmath numbers on the left, but not on the right:\n\n\n```\nsage: mpmath.mpf(1) < 3\nTrue\nsage: 1 < mpmath.mpf(3)\nFalse\nsage: 4 == mpmath.mpf(4)\nFalse\n```\n\n\nFound by Harald Schilly (see #8791).\n\nThis appears to be a bug in Sage (or Cython). Sage's numbers do the pure-Python equivalent of not returning NotImplemented when compared to unrecognized types. For a minimal example:\n\n\n```\nsage: class X(object):\n....:         def __init__(self, v): self.v = v\n....:     def __lt__(self, other): return self.v < int(other)\n....:     def __gt__(self, other): return self.v > int(other)\n....:\nsage: X(1) < 3\nTrue\nsage: 1 < X(3)\nFalse\nsage: X(1) < int(3)\nTrue\nsage: int(1) < X(3)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8924\n\n",
+    "body": "Assignee: @aghitza\n\nComparison between Sage and mpmath numbers works with mpmath numbers on the left, but not on the right:\n\n\n```\nsage: mpmath.mpf(1) < 3\nTrue\nsage: 1 < mpmath.mpf(3)\nFalse\nsage: 4 == mpmath.mpf(4)\nFalse\n```\n\n\nFound by Harald Schilly (see #8791).\n\nThis appears to be a bug in Sage (or Cython). Sage's numbers do the pure-Python equivalent of not returning NotImplemented when compared to unrecognized types. For a minimal example:\n\n\n```\nsage: class X(object):\n....:         def __init__(self, v): self.v = v\n....:     def __lt__(self, other): return self.v < int(other)\n....:     def __gt__(self, other): return self.v > int(other)\n....:\nsage: X(1) < 3\nTrue\nsage: 1 < X(3)\nFalse\nsage: X(1) < int(3)\nTrue\nsage: int(1) < X(3)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8924\n\n",
     "created_at": "2010-05-07T19:23:24Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_008924.json:
     "title": "Comparison between Sage and mpmath numbers is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8924",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Comparison between Sage and mpmath numbers works with mpmath numbers on the left, but not on the right:
 
@@ -70,7 +70,7 @@ archive/issue_comments_082211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8924#issuecomment-82211",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_082212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8924#issuecomment-82212",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_082213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8924#issuecomment-82213",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_082214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8924#issuecomment-82214",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_082215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8924#issuecomment-82215",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_082216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8924#issuecomment-82216",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

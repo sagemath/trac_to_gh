@@ -14,7 +14,7 @@ archive/issues_009303.json:
     "title": "dumb (easy-to-fix) mistake in sage notebook js.py file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9303",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -72,7 +72,7 @@ archive/issue_comments_087627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9303#issuecomment-87627",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_087628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9303#issuecomment-87628",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

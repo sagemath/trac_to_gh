@@ -3,7 +3,7 @@
 archive/issues_001761.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ncalexan\n\nAdd functionality to use graphviz for graph display.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1761\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @ncalexan\n\nAdd functionality to use graphviz for graph display.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1761\n\n",
     "created_at": "2008-01-12T04:16:39Z",
     "labels": [
         "graph theory",
@@ -17,9 +17,9 @@ archive/issues_001761.json:
     "user": "boothby"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Add functionality to use graphviz for graph display.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1761
 archive/issue_comments_011111.json:
 ```json
 {
-    "body": "Attachment [graphviz.hg](tarball://root/attachments/some-uuid/ticket1761/graphviz.hg) by mhansen created at 2008-01-13 13:31:51",
+    "body": "Attachment [graphviz.hg](tarball://root/attachments/some-uuid/ticket1761/graphviz.hg) by @mwhansen created at 2008-01-13 13:31:51",
     "created_at": "2008-01-13T13:31:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1761#issuecomment-11111",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [graphviz.hg](tarball://root/attachments/some-uuid/ticket1761/graphviz.hg) by mhansen created at 2008-01-13 13:31:51
+Attachment [graphviz.hg](tarball://root/attachments/some-uuid/ticket1761/graphviz.hg) by @mwhansen created at 2008-01-13 13:31:51
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_011112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1761#issuecomment-11112",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_011113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1761#issuecomment-11113",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_011114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1761#issuecomment-11114",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_011115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1761#issuecomment-11115",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -130,16 +130,16 @@ It also removes references to the actual graphviz/dot application.  I don't see 
 archive/issue_comments_011116.json:
 ```json
 {
-    "body": "Attachment [1761-ncalexan-graphviz-1.patch](tarball://root/attachments/some-uuid/ticket1761/1761-ncalexan-graphviz-1.patch) by ncalexan created at 2008-04-06 19:37:11\n\nThe original bundle is not needed; apply only the patch.",
+    "body": "Attachment [1761-ncalexan-graphviz-1.patch](tarball://root/attachments/some-uuid/ticket1761/1761-ncalexan-graphviz-1.patch) by @ncalexan created at 2008-04-06 19:37:11\n\nThe original bundle is not needed; apply only the patch.",
     "created_at": "2008-04-06T19:37:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1761#issuecomment-11116",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [1761-ncalexan-graphviz-1.patch](tarball://root/attachments/some-uuid/ticket1761/1761-ncalexan-graphviz-1.patch) by ncalexan created at 2008-04-06 19:37:11
+Attachment [1761-ncalexan-graphviz-1.patch](tarball://root/attachments/some-uuid/ticket1761/1761-ncalexan-graphviz-1.patch) by @ncalexan created at 2008-04-06 19:37:11
 
 The original bundle is not needed; apply only the patch.
 

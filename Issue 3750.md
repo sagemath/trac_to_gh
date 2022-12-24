@@ -63,7 +63,7 @@ archive/issue_comments_026639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26639",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing status from new to assigned.
 archive/issue_comments_026640.json:
 ```json
 {
-    "body": "Changing assignee from somebody to kcrisman.",
+    "body": "Changing assignee from somebody to @kcrisman.",
     "created_at": "2008-10-23T13:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26640",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from somebody to kcrisman.
+Changing assignee from somebody to @kcrisman.
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_026641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26641",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_026642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26642",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_026643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26643",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -158,16 +158,16 @@ Know what, I don't think I even realized that m was mandatory the way I wrote it
 archive/issue_comments_026644.json:
 ```json
 {
-    "body": "Attachment [integer-log-exp.patch](tarball://root/attachments/some-uuid/ticket3750/integer-log-exp.patch) by kcrisman created at 2008-10-26 00:15:09",
+    "body": "Attachment [integer-log-exp.patch](tarball://root/attachments/some-uuid/ticket3750/integer-log-exp.patch) by @kcrisman created at 2008-10-26 00:15:09",
     "created_at": "2008-10-26T00:15:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26644",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [integer-log-exp.patch](tarball://root/attachments/some-uuid/ticket3750/integer-log-exp.patch) by kcrisman created at 2008-10-26 00:15:09
+Attachment [integer-log-exp.patch](tarball://root/attachments/some-uuid/ticket3750/integer-log-exp.patch) by @kcrisman created at 2008-10-26 00:15:09
 
 
 
@@ -181,7 +181,7 @@ archive/issue_comments_026645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26645",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_026646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26646",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_026647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26647",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_026648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26648",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -270,16 +270,16 @@ then the last version of the patch should address all concerns raised above.  Th
 archive/issue_comments_026649.json:
 ```json
 {
-    "body": "Attachment [integer-log-exp-final.patch](tarball://root/attachments/some-uuid/ticket3750/integer-log-exp-final.patch) by kcrisman created at 2008-10-30 18:46:30\n\nBased on 3.2.alpha0",
+    "body": "Attachment [integer-log-exp-final.patch](tarball://root/attachments/some-uuid/ticket3750/integer-log-exp-final.patch) by @kcrisman created at 2008-10-30 18:46:30\n\nBased on 3.2.alpha0",
     "created_at": "2008-10-30T18:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26649",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [integer-log-exp-final.patch](tarball://root/attachments/some-uuid/ticket3750/integer-log-exp-final.patch) by kcrisman created at 2008-10-30 18:46:30
+Attachment [integer-log-exp-final.patch](tarball://root/attachments/some-uuid/ticket3750/integer-log-exp-final.patch) by @kcrisman created at 2008-10-30 18:46:30
 
 Based on 3.2.alpha0
 
@@ -295,7 +295,7 @@ archive/issue_comments_026650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26650",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -403,16 +403,16 @@ Michael
 archive/issue_comments_026652.json:
 ```json
 {
-    "body": "Attachment [trac_3750-fix.patch](tarball://root/attachments/some-uuid/ticket3750/trac_3750-fix.patch) by mhansen created at 2008-11-06 12:49:30\n\nI've attached a patch which fixes the issue.",
+    "body": "Attachment [trac_3750-fix.patch](tarball://root/attachments/some-uuid/ticket3750/trac_3750-fix.patch) by @mwhansen created at 2008-11-06 12:49:30\n\nI've attached a patch which fixes the issue.",
     "created_at": "2008-11-06T12:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26652",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3750-fix.patch](tarball://root/attachments/some-uuid/ticket3750/trac_3750-fix.patch) by mhansen created at 2008-11-06 12:49:30
+Attachment [trac_3750-fix.patch](tarball://root/attachments/some-uuid/ticket3750/trac_3750-fix.patch) by @mwhansen created at 2008-11-06 12:49:30
 
 I've attached a patch which fixes the issue.
 
@@ -428,7 +428,7 @@ archive/issue_comments_026653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3750#issuecomment-26653",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

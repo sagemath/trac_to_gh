@@ -14,7 +14,7 @@ archive/issues_009575.json:
     "title": "Grundy coloring of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9575",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9575
 archive/issue_comments_092473.json:
 ```json
 {
-    "body": "Attachment [trac_9575.patch](tarball://root/attachments/some-uuid/ticket9575/trac_9575.patch) by ncohen created at 2010-07-22 07:08:23",
+    "body": "Attachment [trac_9575.patch](tarball://root/attachments/some-uuid/ticket9575/trac_9575.patch) by @nathanncohen created at 2010-07-22 07:08:23",
     "created_at": "2010-07-22T07:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92473",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9575.patch](tarball://root/attachments/some-uuid/ticket9575/trac_9575.patch) by ncohen created at 2010-07-22 07:08:23
+Attachment [trac_9575.patch](tarball://root/attachments/some-uuid/ticket9575/trac_9575.patch) by @nathanncohen created at 2010-07-22 07:08:23
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_092474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92474",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_092477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92477",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_092478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92478",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_092479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92479",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

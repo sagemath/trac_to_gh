@@ -108,7 +108,7 @@ archive/issue_comments_091047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9483#issuecomment-91047",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_091048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9483#issuecomment-91048",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_091049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9483#issuecomment-91049",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_091050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9483#issuecomment-91050",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_091052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9483#issuecomment-91052",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_091053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9483#issuecomment-91053",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_091054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9483#issuecomment-91054",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_091055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9483#issuecomment-91055",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_091056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9483#issuecomment-91056",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_091057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9483#issuecomment-91057",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -332,13 +332,13 @@ Resolution: fixed
 archive/issue_comments_091058.json:
 ```json
 {
-    "body": "Attachment [trac_9483-implicit-plot3d-symbolic-diff-reviewed.patch](tarball://root/attachments/some-uuid/ticket9483/trac_9483-implicit-plot3d-symbolic-diff-reviewed.patch) by jdemeyer created at 2011-06-15 20:13:06",
+    "body": "Attachment [trac_9483-implicit-plot3d-symbolic-diff-reviewed.patch](tarball://root/attachments/some-uuid/ticket9483/trac_9483-implicit-plot3d-symbolic-diff-reviewed.patch) by @jdemeyer created at 2011-06-15 20:13:06",
     "created_at": "2011-06-15T20:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9483#issuecomment-91058",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_9483-implicit-plot3d-symbolic-diff-reviewed.patch](tarball://root/attachments/some-uuid/ticket9483/trac_9483-implicit-plot3d-symbolic-diff-reviewed.patch) by jdemeyer created at 2011-06-15 20:13:06
+Attachment [trac_9483-implicit-plot3d-symbolic-diff-reviewed.patch](tarball://root/attachments/some-uuid/ticket9483/trac_9483-implicit-plot3d-symbolic-diff-reviewed.patch) by @jdemeyer created at 2011-06-15 20:13:06

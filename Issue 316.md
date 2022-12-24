@@ -3,7 +3,7 @@
 archive/issues_000316.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\n```\ne = EllipticCurve('34a')\n```\n\n\n\n```\nm = ModularSymbols(34); s = m.cuspidal_submodule()\n```\n\n\n\n```\nd = s.decomposition(7)\n```\n\n\n\n```\nd\n///\n[\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field,\nModular Symbols subspace of dimension 4 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field\n]\n```\n\n\n\n```\na = d[0]; a\n///\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field\n```\n\n\n\n```\npi = a.projection()\n```\n\n\n\n```\npi(m([0,oo]))\n///\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/316\n\n",
+    "body": "Assignee: @williamstein\n\n\n\n```\ne = EllipticCurve('34a')\n```\n\n\n\n```\nm = ModularSymbols(34); s = m.cuspidal_submodule()\n```\n\n\n\n```\nd = s.decomposition(7)\n```\n\n\n\n```\nd\n///\n[\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field,\nModular Symbols subspace of dimension 4 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field\n]\n```\n\n\n\n```\na = d[0]; a\n///\nModular Symbols subspace of dimension 2 of Modular Symbols space of dimension 9 for Gamma_0(34) of weight 2 with sign 0 over Rational Field\n```\n\n\n\n```\npi = a.projection()\n```\n\n\n\n```\npi(m([0,oo]))\n///\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/316\n\n",
     "created_at": "2007-03-11T05:26:38Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000316.json:
     "title": "bug in modular symbols projection (probably really in linear algebra)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/316",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_001510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/316#issuecomment-1510",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_001511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/316#issuecomment-1511",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_001512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/316#issuecomment-1512",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

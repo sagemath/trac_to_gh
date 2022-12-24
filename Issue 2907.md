@@ -14,7 +14,7 @@ archive/issues_002907.json:
     "title": "polynomials lack content method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2907",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: somebody
@@ -45,7 +45,7 @@ archive/issue_comments_020034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2907#issuecomment-20034",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_020035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2907#issuecomment-20035",
-    "user": "bruno"
+    "user": "@bgrenet"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_020036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2907#issuecomment-20036",
-    "user": "bruno"
+    "user": "@bgrenet"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_020037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2907#issuecomment-20037",
-    "user": "bruno"
+    "user": "@bgrenet"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_020038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2907#issuecomment-20038",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_020039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2907#issuecomment-20039",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_020040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2907#issuecomment-20040",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003316.json:
 ```json
 {
-    "body": "Assignee: was\n\n\nI submit a patch that fixes a bug in jordan_form method in /matrix/matrix2.pyx\n\n\n```\nsage: A=Matrix(CDF,[[1,-2],[2,-1]])\nsage: A.jordan_form(transformation=True)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/matrix2.pyx in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20606)()\n\nAttributeError: 'NoneType' object has no attribute 'is_exact'\n\n```\n \n\n(second issue in ticket #3249)\n\nAfter this fix, the behavior will be:\n\n\n```\n\nsage: A.jordan_form(transformation=True)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/matrix2.pyx in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20625)()\n\nValueError: cannot compute the transformation matrix due to lack of precision\n\n```\n\n\nthat it is what it is intendend in the code.\n\n(The bug was that base_ring.is_exact() was used, instead of self.base_ring().is_exact().\n\nBesides that, this patch improves the documentation of this method, by adding\n\"Transformation\" to the list of INPUT parameters\n\nIssue created by migration from https://trac.sagemath.org/ticket/3316\n\n",
+    "body": "Assignee: @williamstein\n\n\nI submit a patch that fixes a bug in jordan_form method in /matrix/matrix2.pyx\n\n\n```\nsage: A=Matrix(CDF,[[1,-2],[2,-1]])\nsage: A.jordan_form(transformation=True)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/matrix2.pyx in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20606)()\n\nAttributeError: 'NoneType' object has no attribute 'is_exact'\n\n```\n \n\n(second issue in ticket #3249)\n\nAfter this fix, the behavior will be:\n\n\n```\n\nsage: A.jordan_form(transformation=True)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-3.0.2/matrix2.pyx in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20625)()\n\nValueError: cannot compute the transformation matrix due to lack of precision\n\n```\n\n\nthat it is what it is intendend in the code.\n\n(The bug was that base_ring.is_exact() was used, instead of self.base_ring().is_exact().\n\nBesides that, this patch improves the documentation of this method, by adding\n\"Transformation\" to the list of INPUT parameters\n\nIssue created by migration from https://trac.sagemath.org/ticket/3316\n\n",
     "created_at": "2008-05-27T23:36:32Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003316.json:
     "title": "Fix a bug and improve documentation in jordan_form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3316",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 I submit a patch that fixes a bug in jordan_form method in /matrix/matrix2.pyx
@@ -81,7 +81,7 @@ archive/issue_comments_022967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3316#issuecomment-22967",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -94,16 +94,16 @@ patch for fixing a bug and improving the documentation in jordan_form
 archive/issue_comments_022968.json:
 ```json
 {
-    "body": "Attachment [jordan_form_fixes.patch](tarball://root/attachments/some-uuid/ticket3316/jordan_form_fixes.patch) by pdenapo created at 2008-05-27 23:39:40",
+    "body": "Attachment [jordan_form_fixes.patch](tarball://root/attachments/some-uuid/ticket3316/jordan_form_fixes.patch) by @pdenapo created at 2008-05-27 23:39:40",
     "created_at": "2008-05-27T23:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3316#issuecomment-22968",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Attachment [jordan_form_fixes.patch](tarball://root/attachments/some-uuid/ticket3316/jordan_form_fixes.patch) by pdenapo created at 2008-05-27 23:39:40
+Attachment [jordan_form_fixes.patch](tarball://root/attachments/some-uuid/ticket3316/jordan_form_fixes.patch) by @pdenapo created at 2008-05-27 23:39:40
 
 
 
@@ -162,16 +162,16 @@ Michael
 archive/issue_comments_022970.json:
 ```json
 {
-    "body": "Attachment [jordan_form_fixes_correction.patch](tarball://root/attachments/some-uuid/ticket3316/jordan_form_fixes_correction.patch) by pdenapo created at 2008-06-12 02:13:56\n\na new patch (this time correct, I hope)",
+    "body": "Attachment [jordan_form_fixes_correction.patch](tarball://root/attachments/some-uuid/ticket3316/jordan_form_fixes_correction.patch) by @pdenapo created at 2008-06-12 02:13:56\n\na new patch (this time correct, I hope)",
     "created_at": "2008-06-12T02:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3316#issuecomment-22970",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Attachment [jordan_form_fixes_correction.patch](tarball://root/attachments/some-uuid/ticket3316/jordan_form_fixes_correction.patch) by pdenapo created at 2008-06-12 02:13:56
+Attachment [jordan_form_fixes_correction.patch](tarball://root/attachments/some-uuid/ticket3316/jordan_form_fixes_correction.patch) by @pdenapo created at 2008-06-12 02:13:56
 
 a new patch (this time correct, I hope)
 
@@ -187,7 +187,7 @@ archive/issue_comments_022971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3316#issuecomment-22971",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 

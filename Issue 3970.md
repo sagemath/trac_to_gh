@@ -3,7 +3,7 @@
 archive/issues_003970.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3970\n\n",
+    "body": "Assignee: @burcin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3970\n\n",
     "created_at": "2008-08-27T22:48:14Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003970.json:
     "title": "MaximaElements should not coerce into SR.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3970",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_028527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28527",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_028528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28528",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_028529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28529",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_028530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28530",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_028531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28531",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -190,16 +190,16 @@ Adam
 archive/issue_comments_028532.json:
 ```json
 {
-    "body": "Attachment [trac_3970.patch](tarball://root/attachments/some-uuid/ticket3970/trac_3970.patch) by mhansen created at 2009-10-07 04:20:59\n\nI forgot to remove the pari doctest.  It should also be removed since these parents should not have coercions going in both directions.\n\nThis is taken care of in the new patch.",
+    "body": "Attachment [trac_3970.patch](tarball://root/attachments/some-uuid/ticket3970/trac_3970.patch) by @mwhansen created at 2009-10-07 04:20:59\n\nI forgot to remove the pari doctest.  It should also be removed since these parents should not have coercions going in both directions.\n\nThis is taken care of in the new patch.",
     "created_at": "2009-10-07T04:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28532",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3970.patch](tarball://root/attachments/some-uuid/ticket3970/trac_3970.patch) by mhansen created at 2009-10-07 04:20:59
+Attachment [trac_3970.patch](tarball://root/attachments/some-uuid/ticket3970/trac_3970.patch) by @mwhansen created at 2009-10-07 04:20:59
 
 I forgot to remove the pari doctest.  It should also be removed since these parents should not have coercions going in both directions.
 
@@ -217,7 +217,7 @@ archive/issue_comments_028533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28533",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_028534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28534",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_028535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28535",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001423.json:
     "title": "bug/issue in python.eval from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1423",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -124,16 +124,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1423
 archive/issue_comments_009173.json:
 ```json
 {
-    "body": "Attachment [trac-1423.patch](tarball://root/attachments/some-uuid/ticket1423/trac-1423.patch) by was created at 2007-12-12 06:50:20",
+    "body": "Attachment [trac-1423.patch](tarball://root/attachments/some-uuid/ticket1423/trac-1423.patch) by @williamstein created at 2007-12-12 06:50:20",
     "created_at": "2007-12-12T06:50:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1423#issuecomment-9173",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1423.patch](tarball://root/attachments/some-uuid/ticket1423/trac-1423.patch) by was created at 2007-12-12 06:50:20
+Attachment [trac-1423.patch](tarball://root/attachments/some-uuid/ticket1423/trac-1423.patch) by @williamstein created at 2007-12-12 06:50:20
 
 
 

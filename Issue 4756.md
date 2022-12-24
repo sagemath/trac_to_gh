@@ -3,7 +3,7 @@
 archive/issues_004756.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\n\n```\nsage: a = matrix(CDF,2,[1,2,4,7])\nsage: a.eigenmatrix_right()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenmatrix_right (sage/matrix/matrix2.c:18170)()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenmatrix_left (sage/matrix/matrix2.c:17965)()\n\nIndexError: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4756\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n\n```\nsage: a = matrix(CDF,2,[1,2,4,7])\nsage: a.eigenmatrix_right()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenmatrix_right (sage/matrix/matrix2.c:18170)()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenmatrix_left (sage/matrix/matrix2.c:17965)()\n\nIndexError: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4756\n\n",
     "created_at": "2008-12-11T05:11:14Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_004756.json:
     "title": "eigenmatrix_right totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4756",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 
 ```
@@ -54,7 +54,7 @@ archive/issue_comments_036016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36016",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_036017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36017",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_036018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36018",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -107,16 +107,16 @@ Changing status from new to needs_work.
 archive/issue_comments_036019.json:
 ```json
 {
-    "body": "Attachment [trac_4756_eigenmatrices_double.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756_eigenmatrices_double.patch) by rbeezer created at 2010-01-19 02:47:05",
+    "body": "Attachment [trac_4756_eigenmatrices_double.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756_eigenmatrices_double.patch) by @rbeezer created at 2010-01-19 02:47:05",
     "created_at": "2010-01-19T02:47:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36019",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_4756_eigenmatrices_double.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756_eigenmatrices_double.patch) by rbeezer created at 2010-01-19 02:47:05
+Attachment [trac_4756_eigenmatrices_double.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756_eigenmatrices_double.patch) by @rbeezer created at 2010-01-19 02:47:05
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_036020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36020",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -143,16 +143,16 @@ Self-contained patch, apply only this
 archive/issue_comments_036021.json:
 ```json
 {
-    "body": "Attachment [trac_4756-double-eigen.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.patch) by rbeezer created at 2010-01-23 23:41:49\n\nThis patch fixes the bug and generally brings double-precision eigenvectors up-to-date.\n\n`left_eigenvectors` and `right_eigenvectors` now return their results in the same format as for exact matrices, so routines like `eigenmatrix_right` can digest the results properly.\n\nConsequently, `eigenspaces_left` was adjusted for this new format.  There was no `eigenspaces_right`, now there is.\n\nThe changed code in `modular/modform/numerical.py` simply adjusts for the new format to allow doctests to pass and is probably sub-optimal.  There is a bug nearby, so this will be addressed on #8018.\n\nDoctests:  I had some strange behavior for zero eigenvalues (ie very, very small eigenvalues), so the doctests avoid these.  For these eigenvalues, the tests would fail on a first run, but would pass on all subsequent runs (or vice-versa).  This was observed on my own machine and  boxen.math.washington.edu.  So I've avoided these eigenvalues by selecting certain ones in the doctests.\n\nDocumentation:  documentation was tested for these four functions via notebook introspection.  The rest of the file needs attention before it can go into the documentation, see #8046.",
+    "body": "Attachment [trac_4756-double-eigen.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.patch) by @rbeezer created at 2010-01-23 23:41:49\n\nThis patch fixes the bug and generally brings double-precision eigenvectors up-to-date.\n\n`left_eigenvectors` and `right_eigenvectors` now return their results in the same format as for exact matrices, so routines like `eigenmatrix_right` can digest the results properly.\n\nConsequently, `eigenspaces_left` was adjusted for this new format.  There was no `eigenspaces_right`, now there is.\n\nThe changed code in `modular/modform/numerical.py` simply adjusts for the new format to allow doctests to pass and is probably sub-optimal.  There is a bug nearby, so this will be addressed on #8018.\n\nDoctests:  I had some strange behavior for zero eigenvalues (ie very, very small eigenvalues), so the doctests avoid these.  For these eigenvalues, the tests would fail on a first run, but would pass on all subsequent runs (or vice-versa).  This was observed on my own machine and  boxen.math.washington.edu.  So I've avoided these eigenvalues by selecting certain ones in the doctests.\n\nDocumentation:  documentation was tested for these four functions via notebook introspection.  The rest of the file needs attention before it can go into the documentation, see #8046.",
     "created_at": "2010-01-23T23:41:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36021",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_4756-double-eigen.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.patch) by rbeezer created at 2010-01-23 23:41:49
+Attachment [trac_4756-double-eigen.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.patch) by @rbeezer created at 2010-01-23 23:41:49
 
 This patch fixes the bug and generally brings double-precision eigenvectors up-to-date.
 
@@ -178,7 +178,7 @@ archive/issue_comments_036022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36022",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_036023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36023",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_036024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36024",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_036025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36025",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_036026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36026",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_036027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36027",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_036028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36028",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -339,16 +339,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_036029.json:
 ```json
 {
-    "body": "Attachment [trac_4756-double-eigen.2.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.2.patch) by rbeezer created at 2010-01-24 05:13:23\n\nI've got some doctests failing on another machine due to \"zero\" eigenvalues, so I'm going to rework some of the doctests.",
+    "body": "Attachment [trac_4756-double-eigen.2.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.2.patch) by @rbeezer created at 2010-01-24 05:13:23\n\nI've got some doctests failing on another machine due to \"zero\" eigenvalues, so I'm going to rework some of the doctests.",
     "created_at": "2010-01-24T05:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36029",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_4756-double-eigen.2.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.2.patch) by rbeezer created at 2010-01-24 05:13:23
+Attachment [trac_4756-double-eigen.2.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.2.patch) by @rbeezer created at 2010-01-24 05:13:23
 
 I've got some doctests failing on another machine due to "zero" eigenvalues, so I'm going to rework some of the doctests.
 
@@ -359,16 +359,16 @@ I've got some doctests failing on another machine due to "zero" eigenvalues, so 
 archive/issue_comments_036030.json:
 ```json
 {
-    "body": "Attachment [trac_4756-double-eigen.3.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.3.patch) by rbeezer created at 2010-01-24 06:34:43\n\nSelf conatined",
+    "body": "Attachment [trac_4756-double-eigen.3.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.3.patch) by @rbeezer created at 2010-01-24 06:34:43\n\nSelf conatined",
     "created_at": "2010-01-24T06:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36030",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_4756-double-eigen.3.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.3.patch) by rbeezer created at 2010-01-24 06:34:43
+Attachment [trac_4756-double-eigen.3.patch](tarball://root/attachments/some-uuid/ticket4756/trac_4756-double-eigen.3.patch) by @rbeezer created at 2010-01-24 06:34:43
 
 Self conatined
 
@@ -384,7 +384,7 @@ archive/issue_comments_036031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36031",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_036032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36032",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -468,7 +468,7 @@ archive/issue_comments_036035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36035",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_036036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36036",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -514,7 +514,7 @@ archive/issue_comments_036037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36037",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_036038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36038",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -550,7 +550,7 @@ archive/issue_comments_036039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36039",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -568,7 +568,7 @@ archive/issue_comments_036040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4756#issuecomment-36040",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

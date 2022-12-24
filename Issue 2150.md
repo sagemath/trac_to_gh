@@ -14,7 +14,7 @@ archive/issues_002150.json:
     "title": "vmware sage image -- switch to using optimal 7zip compression",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2150",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -85,7 +85,7 @@ archive/issue_comments_014113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2150#issuecomment-14113",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

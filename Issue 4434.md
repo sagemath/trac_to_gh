@@ -14,7 +14,7 @@ archive/issues_004434.json:
     "title": "[with patch; needs review] hgmerge massively broken on os x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4434",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -109,7 +109,7 @@ archive/issue_comments_032600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4434#issuecomment-32600",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 

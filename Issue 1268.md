@@ -3,7 +3,7 @@
 archive/issues_001268.json:
 ```json
 {
-    "body": "Assignee: was\n\nI've built a new MPFI spkg that switches to using the current MPFI CVS.  (They have all the bug fixes from the previous Sage spkg, and more.)  Plus, they've started installing shared and static libraries, so we end up using the shared library version.\n\nThe new spkg is at http://sage.math.washington.edu/home/cwitty/mpfi-1.3.4-cvs20071125.spkg\n\ntestall passes on 32-bit x86 linux with the new spkg.\n\nBy the way, if you're going to test it, you can't just install the new spkg, because the old library will still be statically linked in to the relevant extension modules.  You also need to do:\n\n```\ntouch devel/sage/sage/rings/mpfi.pxi\nsage -b\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1268\n\n",
+    "body": "Assignee: @williamstein\n\nI've built a new MPFI spkg that switches to using the current MPFI CVS.  (They have all the bug fixes from the previous Sage spkg, and more.)  Plus, they've started installing shared and static libraries, so we end up using the shared library version.\n\nThe new spkg is at http://sage.math.washington.edu/home/cwitty/mpfi-1.3.4-cvs20071125.spkg\n\ntestall passes on 32-bit x86 linux with the new spkg.\n\nBy the way, if you're going to test it, you can't just install the new spkg, because the old library will still be statically linked in to the relevant extension modules.  You also need to do:\n\n```\ntouch devel/sage/sage/rings/mpfi.pxi\nsage -b\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1268\n\n",
     "created_at": "2007-11-25T15:26:58Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001268.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I've built a new MPFI spkg that switches to using the current MPFI CVS.  (They have all the bug fixes from the previous Sage spkg, and more.)  Plus, they've started installing shared and static libraries, so we end up using the shared library version.
 
@@ -67,7 +67,7 @@ archive/issue_comments_007952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1268#issuecomment-7952",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_007954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1268#issuecomment-7954",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

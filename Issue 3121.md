@@ -14,7 +14,7 @@ archive/issues_003121.json:
     "title": "@interact grid control",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3121",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -50,7 +50,7 @@ archive/issue_comments_021617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3121#issuecomment-21617",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_021618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3121#issuecomment-21618",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_021619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3121#issuecomment-21619",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_021620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3121#issuecomment-21620",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_021621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3121#issuecomment-21621",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_021622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3121#issuecomment-21622",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_021623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3121#issuecomment-21623",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -298,16 +298,16 @@ Just add something to the docstring for interact? and this will be done.
 archive/issue_comments_021624.json:
 ```json
 {
-    "body": "Attachment [trac-3121-input-grid.patch](tarball://root/attachments/some-uuid/ticket3121/trac-3121-input-grid.patch) by jason created at 2008-05-09 19:50:23\n\nI updated the patch again; sorry about not catching that typo (I apparently forgot to run sage -b before testing the last patch).  \n\nI also added an is_Matrix check to the automatic controls, so something like:\n\n\n```\n@interact\ndef _(A=matrix(3,3)):\n    print A\n```\n\n\ncreates the appropriate input_grid control.  I made my example in interact? use that method.\n\nThere are two patches above.  They are identical and one can be deleted.",
+    "body": "Attachment [trac-3121-input-grid.patch](tarball://root/attachments/some-uuid/ticket3121/trac-3121-input-grid.patch) by @jasongrout created at 2008-05-09 19:50:23\n\nI updated the patch again; sorry about not catching that typo (I apparently forgot to run sage -b before testing the last patch).  \n\nI also added an is_Matrix check to the automatic controls, so something like:\n\n\n```\n@interact\ndef _(A=matrix(3,3)):\n    print A\n```\n\n\ncreates the appropriate input_grid control.  I made my example in interact? use that method.\n\nThere are two patches above.  They are identical and one can be deleted.",
     "created_at": "2008-05-09T19:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3121#issuecomment-21624",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-3121-input-grid.patch](tarball://root/attachments/some-uuid/ticket3121/trac-3121-input-grid.patch) by jason created at 2008-05-09 19:50:23
+Attachment [trac-3121-input-grid.patch](tarball://root/attachments/some-uuid/ticket3121/trac-3121-input-grid.patch) by @jasongrout created at 2008-05-09 19:50:23
 
 I updated the patch again; sorry about not catching that typo (I apparently forgot to run sage -b before testing the last patch).  
 
@@ -337,7 +337,7 @@ archive/issue_comments_021625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3121#issuecomment-21625",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -350,16 +350,16 @@ this cleans up the docs a little bit and adds some consistency.  apply after the
 archive/issue_comments_021626.json:
 ```json
 {
-    "body": "Attachment [sage-3121-part2_doc.patch](tarball://root/attachments/some-uuid/ticket3121/sage-3121-part2_doc.patch) by was created at 2008-05-11 02:54:59\n\nI'm OK with this if Jason is ok with sage-3121-part2_doc.patch",
+    "body": "Attachment [sage-3121-part2_doc.patch](tarball://root/attachments/some-uuid/ticket3121/sage-3121-part2_doc.patch) by @williamstein created at 2008-05-11 02:54:59\n\nI'm OK with this if Jason is ok with sage-3121-part2_doc.patch",
     "created_at": "2008-05-11T02:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3121#issuecomment-21626",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3121-part2_doc.patch](tarball://root/attachments/some-uuid/ticket3121/sage-3121-part2_doc.patch) by was created at 2008-05-11 02:54:59
+Attachment [sage-3121-part2_doc.patch](tarball://root/attachments/some-uuid/ticket3121/sage-3121-part2_doc.patch) by @williamstein created at 2008-05-11 02:54:59
 
 I'm OK with this if Jason is ok with sage-3121-part2_doc.patch
 
@@ -375,7 +375,7 @@ archive/issue_comments_021627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3121#issuecomment-21627",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

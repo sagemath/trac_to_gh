@@ -3,7 +3,7 @@
 archive/issues_001581.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nfrom sage.plot.plot3d.all import Sphere\nSphere(.1).translate(1,2,3).show()\n```\n\n\ndoes not adjust the viewpoint, etc. to include the sphere, so it confusingly looks like a blank plot until, for example, the interactive version is rotated around.  It would be nice to have at least some part of the plot, if not the whole thing, visible by default.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1581\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nfrom sage.plot.plot3d.all import Sphere\nSphere(.1).translate(1,2,3).show()\n```\n\n\ndoes not adjust the viewpoint, etc. to include the sphere, so it confusingly looks like a blank plot until, for example, the interactive version is rotated around.  It would be nice to have at least some part of the plot, if not the whole thing, visible by default.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1581\n\n",
     "created_at": "2007-12-21T08:58:06Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001581.json:
     "title": "3d graphics do not show all objects by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1581",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1581
 archive/issue_comments_010073.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-12-30T10:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1581#issuecomment-10073",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_010074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1581#issuecomment-10074",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_010075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1581#issuecomment-10075",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_010076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1581#issuecomment-10076",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,16 +111,16 @@ This patch fixes the problem, plus does a *lot* of other work.  This is a snapsh
 archive/issue_comments_010077.json:
 ```json
 {
-    "body": "Attachment [3d.hg](tarball://root/attachments/some-uuid/ticket1581/3d.hg) by robertwb created at 2008-01-15 06:14:01\n\nThis has already been resolved included in Sage.",
+    "body": "Attachment [3d.hg](tarball://root/attachments/some-uuid/ticket1581/3d.hg) by @robertwb created at 2008-01-15 06:14:01\n\nThis has already been resolved included in Sage.",
     "created_at": "2008-01-15T06:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1581#issuecomment-10077",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3d.hg](tarball://root/attachments/some-uuid/ticket1581/3d.hg) by robertwb created at 2008-01-15 06:14:01
+Attachment [3d.hg](tarball://root/attachments/some-uuid/ticket1581/3d.hg) by @robertwb created at 2008-01-15 06:14:01
 
 This has already been resolved included in Sage.
 
@@ -136,7 +136,7 @@ archive/issue_comments_010078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1581#issuecomment-10078",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

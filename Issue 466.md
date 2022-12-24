@@ -3,7 +3,7 @@
 archive/issues_000466.json:
 ```json
 {
-    "body": "Assignee: was\n\nsage: hg_sage.merge?                        \nType:           instancemethod\nBase Class:     <type 'instancemethod'>\nString Form:    <bound method HG.merge of Hg repository 'SAGE Library Source Code' in directory /Library/sage/devel/sage>\nNamespace:      Interactive\nFile:           /Library/sage/local/lib/python2.5/site-packages/sage/misc/hg.py\nDefinition:     hg_sage.merge(self, options='')\nDocstring:\n    \n            Merge working directory with another revision\n            \n            Merge the contents of the current working directory and the\n            requested revision. Files that changed between either parent are\n            marked as changed for the next commit and a commit must be\n            performed before any further updates are allowed.\n    \n            INPUT:\n                options -- default: ''\n                    'tip' -- tip\n                     -b --branch  merge with head of a specific branch\n                     -f --force   force a merge with outstanding changes\n            \n\ncontradicted by\n\n\nsage: hg_sage.merge(options=\"--branch main\")\ncd \"/Library/sage/devel/sage\" && hg merge --branch main\nhg merge: option --branch not recognized\nhg merge [-f] [[-r] REV]\n\nmerge working directory with another revision\n\n    Merge the contents of the current working directory and the\n    requested revision. Files that changed between either parent are\n    marked as changed for the next commit and a commit must be\n    performed before any further updates are allowed.\n\n    If no revision is specified, the working directory's parent is a\n    head revision, and the repository contains exactly one other head,\n    the other head is merged with by default.  Otherwise, an explicit\n    revision to merge with must be provided.\n\noptions:\n\n -f --force  force a merge with outstanding changes\n -r --rev    revision to merge\n\nuse \"hg -v help merge\" to show global options\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/466\n\n",
+    "body": "Assignee: @williamstein\n\nsage: hg_sage.merge?                        \nType:           instancemethod\nBase Class:     <type 'instancemethod'>\nString Form:    <bound method HG.merge of Hg repository 'SAGE Library Source Code' in directory /Library/sage/devel/sage>\nNamespace:      Interactive\nFile:           /Library/sage/local/lib/python2.5/site-packages/sage/misc/hg.py\nDefinition:     hg_sage.merge(self, options='')\nDocstring:\n    \n            Merge working directory with another revision\n            \n            Merge the contents of the current working directory and the\n            requested revision. Files that changed between either parent are\n            marked as changed for the next commit and a commit must be\n            performed before any further updates are allowed.\n    \n            INPUT:\n                options -- default: ''\n                    'tip' -- tip\n                     -b --branch  merge with head of a specific branch\n                     -f --force   force a merge with outstanding changes\n            \n\ncontradicted by\n\n\nsage: hg_sage.merge(options=\"--branch main\")\ncd \"/Library/sage/devel/sage\" && hg merge --branch main\nhg merge: option --branch not recognized\nhg merge [-f] [[-r] REV]\n\nmerge working directory with another revision\n\n    Merge the contents of the current working directory and the\n    requested revision. Files that changed between either parent are\n    marked as changed for the next commit and a commit must be\n    performed before any further updates are allowed.\n\n    If no revision is specified, the working directory's parent is a\n    head revision, and the repository contains exactly one other head,\n    the other head is merged with by default.  Otherwise, an explicit\n    revision to merge with must be provided.\n\noptions:\n\n -f --force  force a merge with outstanding changes\n -r --rev    revision to merge\n\nuse \"hg -v help merge\" to show global options\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/466\n\n",
     "created_at": "2007-08-20T09:20:13Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_000466.json:
     "user": "pdehaye"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 sage: hg_sage.merge?                        
 Type:           instancemethod
@@ -205,7 +205,7 @@ the file attached should fix the bug
 archive/issue_comments_002317.json:
 ```json
 {
-    "body": "Changing assignee from was to pdehaye.",
+    "body": "Changing assignee from @williamstein to pdehaye.",
     "created_at": "2007-08-22T19:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/466",
     "type": "issue_comment",
@@ -214,7 +214,7 @@ archive/issue_comments_002317.json:
 }
 ```
 
-Changing assignee from was to pdehaye.
+Changing assignee from @williamstein to pdehaye.
 
 
 
@@ -228,7 +228,7 @@ archive/issue_comments_002318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/466#issuecomment-2318",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_002319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/466#issuecomment-2319",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

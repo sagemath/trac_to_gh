@@ -3,7 +3,7 @@
 archive/issues_000929.json:
 ```json
 {
-    "body": "Assignee: malb\n\nDamien Stehle published a new and much improved version of his fpLLL package at http://perso.ens-lyon.fr/damien.stehle/english.html . This should be wrapped for SAGE instead of fpLLL-1.3. This makes the fpLLL patch attached to #723 obsolete and should also provide SAGE with a performance comparable to MAGMA for LLL computations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/929\n\n",
+    "body": "Assignee: @malb\n\nDamien Stehle published a new and much improved version of his fpLLL package at http://perso.ens-lyon.fr/damien.stehle/english.html . This should be wrapped for SAGE instead of fpLLL-1.3. This makes the fpLLL patch attached to #723 obsolete and should also provide SAGE with a performance comparable to MAGMA for LLL computations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/929\n\n",
     "created_at": "2007-10-19T17:29:00Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000929.json:
     "title": "wrap fpLLL-2.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/929",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Damien Stehle published a new and much improved version of his fpLLL package at http://perso.ens-lyon.fr/damien.stehle/english.html . This should be wrapped for SAGE instead of fpLLL-1.3. This makes the fpLLL patch attached to #723 obsolete and should also provide SAGE with a performance comparable to MAGMA for LLL computations.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/929
 archive/issue_comments_005681.json:
 ```json
 {
-    "body": "Attachment [fpLLL-sage.patch](tarball://root/attachments/some-uuid/ticket929/fpLLL-sage.patch) by malb created at 2007-10-21 16:20:20\n\nThe attached patch requires http://sage.math.washington.edu/home/malb/pkgs/libfplll-2.0-20071020.spkg to be installed. After that package has be installed and the patch was applied, fpLLL is the default implementation for Matrix_integer_dense.LLL. I'd appreciate if somebody more into LLL would check my documentation.",
+    "body": "Attachment [fpLLL-sage.patch](tarball://root/attachments/some-uuid/ticket929/fpLLL-sage.patch) by @malb created at 2007-10-21 16:20:20\n\nThe attached patch requires http://sage.math.washington.edu/home/malb/pkgs/libfplll-2.0-20071020.spkg to be installed. After that package has be installed and the patch was applied, fpLLL is the default implementation for Matrix_integer_dense.LLL. I'd appreciate if somebody more into LLL would check my documentation.",
     "created_at": "2007-10-21T16:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/929#issuecomment-5681",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [fpLLL-sage.patch](tarball://root/attachments/some-uuid/ticket929/fpLLL-sage.patch) by malb created at 2007-10-21 16:20:20
+Attachment [fpLLL-sage.patch](tarball://root/attachments/some-uuid/ticket929/fpLLL-sage.patch) by @malb created at 2007-10-21 16:20:20
 
 The attached patch requires http://sage.math.washington.edu/home/malb/pkgs/libfplll-2.0-20071020.spkg to be installed. After that package has be installed and the patch was applied, fpLLL is the default implementation for Matrix_integer_dense.LLL. I'd appreciate if somebody more into LLL would check my documentation.
 
@@ -57,7 +57,7 @@ archive/issue_comments_005682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/929#issuecomment-5682",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_005683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/929#issuecomment-5683",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_005684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/929#issuecomment-5684",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_005685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/929#issuecomment-5685",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009267.json:
     "title": "Update the charge statistic on words",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9267",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 Assignee: sage-combinat
@@ -51,7 +51,7 @@ archive/issue_comments_087284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9267#issuecomment-87284",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_087285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9267#issuecomment-87285",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_087286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9267#issuecomment-87286",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_087287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9267#issuecomment-87287",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_087288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9267#issuecomment-87288",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_087289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9267#issuecomment-87289",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_087290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9267#issuecomment-87290",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -187,16 +187,16 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_087291.json:
 ```json
 {
-    "body": "Attachment [trac_9267-charge_jb.patch](tarball://root/attachments/some-uuid/ticket9267/trac_9267-charge_jb.patch) by jbandlow created at 2010-06-30 18:04:08",
+    "body": "Attachment [trac_9267-charge_jb.patch](tarball://root/attachments/some-uuid/ticket9267/trac_9267-charge_jb.patch) by @jbandlow created at 2010-06-30 18:04:08",
     "created_at": "2010-06-30T18:04:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9267#issuecomment-87291",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [trac_9267-charge_jb.patch](tarball://root/attachments/some-uuid/ticket9267/trac_9267-charge_jb.patch) by jbandlow created at 2010-06-30 18:04:08
+Attachment [trac_9267-charge_jb.patch](tarball://root/attachments/some-uuid/ticket9267/trac_9267-charge_jb.patch) by @jbandlow created at 2010-06-30 18:04:08
 
 
 
@@ -210,7 +210,7 @@ archive/issue_comments_087292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9267#issuecomment-87292",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_087293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9267#issuecomment-87293",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_087294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9267#issuecomment-87294",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_087295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9267#issuecomment-87295",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_087296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9267#issuecomment-87296",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

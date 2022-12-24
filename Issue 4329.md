@@ -3,7 +3,7 @@
 archive/issues_004329.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is just wrong (and easy to fix):\n\n```\nsage: R = ZZ[3*sqrt(-3)]\nsage: R.class_number??\nType:           instancemethod\nBase Class:     <type 'instancemethod'>\nString Form:    <bound method AbsoluteOrder.class_number of Order in Number Field in a with defining polynomial x^2 + 27>\nNamespace:      Interactive\nFile:           /home2/sage/build/sage-3.1.4/local/lib/python2.5/site-packages/sage/rings/number_field/order.py\nDefinition:     R.class_number(self, proof=None)\nSource:\n    def class_number(self, proof=None):\n        \"\"\"\n        EXAMPLES:\n            sage: ZZ[2^(1/3)].class_number()\n            1\n            sage: ZZ[sqrt(-23)].class_number()\n            3\n        \"\"\"\n        return self.number_field().class_number(proof=proof)   \n```\n\n\nFor a non-maximal order, the class_number (and class group) commands should return NotImplementedError, rather than give a wrong or meaningless answer.\n\nTo fix this, all you have to do is make these function raise NotImplementedError, except in the case of the maximal order.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4329\n\n",
+    "body": "Assignee: @williamstein\n\nThis is just wrong (and easy to fix):\n\n```\nsage: R = ZZ[3*sqrt(-3)]\nsage: R.class_number??\nType:           instancemethod\nBase Class:     <type 'instancemethod'>\nString Form:    <bound method AbsoluteOrder.class_number of Order in Number Field in a with defining polynomial x^2 + 27>\nNamespace:      Interactive\nFile:           /home2/sage/build/sage-3.1.4/local/lib/python2.5/site-packages/sage/rings/number_field/order.py\nDefinition:     R.class_number(self, proof=None)\nSource:\n    def class_number(self, proof=None):\n        \"\"\"\n        EXAMPLES:\n            sage: ZZ[2^(1/3)].class_number()\n            1\n            sage: ZZ[sqrt(-23)].class_number()\n            3\n        \"\"\"\n        return self.number_field().class_number(proof=proof)   \n```\n\n\nFor a non-maximal order, the class_number (and class group) commands should return NotImplementedError, rather than give a wrong or meaningless answer.\n\nTo fix this, all you have to do is make these function raise NotImplementedError, except in the case of the maximal order.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4329\n\n",
     "created_at": "2008-10-20T13:36:36Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004329.json:
     "title": "class numbers of non-maximal orders -- should return NotImplementedError for now",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4329",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is just wrong (and easy to fix):
 

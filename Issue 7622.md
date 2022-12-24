@@ -3,7 +3,7 @@
 archive/issues_007622.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  iandrus mhansen was\n\nFrom #5261: \n\n```\nremove the extra copyright work in credits as well as give credit to \"William Stein and the Sage Development Team\"\n```\n\n\n```\nSomeone with a better understanding of the copyright situation should change data/extcode/sage/ext/mac-app/Sage.app/Contents/Info.plist (it's an xml file) in two places.\n```\n\nThis shouldn't be hard to fix.  Use hg_sage.extcode!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7622\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @gvol @mwhansen @williamstein\n\nFrom #5261: \n\n```\nremove the extra copyright work in credits as well as give credit to \"William Stein and the Sage Development Team\"\n```\n\n\n```\nSomeone with a better understanding of the copyright situation should change data/extcode/sage/ext/mac-app/Sage.app/Contents/Info.plist (it's an xml file) in two places.\n```\n\nThis shouldn't be hard to fix.  Use hg_sage.extcode!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7622\n\n",
     "created_at": "2009-12-08T15:27:34Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_007622.json:
     "title": "Fix OSX plist copyright situation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7622",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: mvngu
 
-CC:  iandrus mhansen was
+CC:  @gvol @mwhansen @williamstein
 
 From #5261: 
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7622
 archive/issue_comments_065129.json:
 ```json
 {
-    "body": "Attachment [trac_7622.patch](tarball://root/attachments/some-uuid/ticket7622/trac_7622.patch) by kcrisman created at 2009-12-14 16:57:39\n\nBased on 4.3.alpha1",
+    "body": "Attachment [trac_7622.patch](tarball://root/attachments/some-uuid/ticket7622/trac_7622.patch) by @kcrisman created at 2009-12-14 16:57:39\n\nBased on 4.3.alpha1",
     "created_at": "2009-12-14T16:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7622#issuecomment-65129",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7622.patch](tarball://root/attachments/some-uuid/ticket7622/trac_7622.patch) by kcrisman created at 2009-12-14 16:57:39
+Attachment [trac_7622.patch](tarball://root/attachments/some-uuid/ticket7622/trac_7622.patch) by @kcrisman created at 2009-12-14 16:57:39
 
 Based on 4.3.alpha1
 
@@ -70,7 +70,7 @@ archive/issue_comments_065130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7622#issuecomment-65130",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_065131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7622#issuecomment-65131",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_065134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7622#issuecomment-65134",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_065135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7622#issuecomment-65135",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_065136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7622#issuecomment-65136",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

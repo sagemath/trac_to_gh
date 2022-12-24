@@ -59,7 +59,7 @@ archive/issue_comments_052984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6504#issuecomment-52984",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -72,16 +72,16 @@ fixes a few whitespace issues in the original patch
 archive/issue_comments_052985.json:
 ```json
 {
-    "body": "Attachment [trac_6504_toy_buch.2.patch](tarball://root/attachments/some-uuid/ticket6504/trac_6504_toy_buch.2.patch) by malb created at 2009-07-13 20:14:13\n\nI read the patch and it looks fine, it applies cleanly and passes doctest. There were a few whitespace issues w.r.t. the reference manual, which are fixed in the attached patch (only apply this one). The update needs signing off by mhampton.",
+    "body": "Attachment [trac_6504_toy_buch.2.patch](tarball://root/attachments/some-uuid/ticket6504/trac_6504_toy_buch.2.patch) by @malb created at 2009-07-13 20:14:13\n\nI read the patch and it looks fine, it applies cleanly and passes doctest. There were a few whitespace issues w.r.t. the reference manual, which are fixed in the attached patch (only apply this one). The update needs signing off by mhampton.",
     "created_at": "2009-07-13T20:14:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6504#issuecomment-52985",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_6504_toy_buch.2.patch](tarball://root/attachments/some-uuid/ticket6504/trac_6504_toy_buch.2.patch) by malb created at 2009-07-13 20:14:13
+Attachment [trac_6504_toy_buch.2.patch](tarball://root/attachments/some-uuid/ticket6504/trac_6504_toy_buch.2.patch) by @malb created at 2009-07-13 20:14:13
 
 I read the patch and it looks fine, it applies cleanly and passes doctest. There were a few whitespace issues w.r.t. the reference manual, which are fixed in the attached patch (only apply this one). The update needs signing off by mhampton.
 
@@ -137,7 +137,7 @@ archive/issue_comments_052988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6504#issuecomment-52988",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

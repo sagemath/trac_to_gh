@@ -3,7 +3,7 @@
 archive/issues_004634.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jhpalmieri\n\n\n```\nFile \"/Applications/sage-3.2.1.alpha1/devel/sage/sage/schemes/\nelliptic_curves/ell_rational_field.py\", line 4071:\n   sage: a = E.integral_points([P1,P2,P3], verbose=True)\nExpected:\n   Using mw_basis  [(2 : 0 : 1), (3 : -4 : 1), (8 : -22 : 1)]\n   e1,e2,e3:  -3.01243037259331 1.0658205476962... 1.94660982489710\n   Minimal eigenvalue of height pairing matrix:  0.63792081458500...\n   x-coords of points on compact component with  -3 <=x<= 1\n   [-3, -2, -1, 0, 1]\n   x-coords of points on non-compact component with  2 <=x<= 6\n   [2, 3, 4]\n   starting search of remaining points using coefficient bound  5\n   x-coords of extra integral points:\n   [2, 3, 4, 8, 11, 14, 21, 37, 52, 93, 342, 406, 816]\n   Total number of integral points: 18\nGot:\n   Using mw_basis  [(2 : 0 : 1), (3 : -4 : 1), (8 : -22 : 1)]\n   e1,e2,e3:  -3.01243037259330 1.06582054769621 1.94660982489710\n   Minimal eigenvalue of height pairing matrix:  0.637920814585007\n   x-coords of points on compact component with  -3 <=x<= 1\n   [-3, -2, -1, 0, 1]\n   x-coords of points on non-compact component with  2 <=x<= 6\n   [2, 3, 4]\n   starting search of remaining points using coefficient bound  5\n   x-coords of extra integral points:\n   [2, 3, 4, 8, 11, 14, 21, 37, 52, 93, 342, 406, 816]\n   Total number of integral points: 18\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4634\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri\n\n\n```\nFile \"/Applications/sage-3.2.1.alpha1/devel/sage/sage/schemes/\nelliptic_curves/ell_rational_field.py\", line 4071:\n   sage: a = E.integral_points([P1,P2,P3], verbose=True)\nExpected:\n   Using mw_basis  [(2 : 0 : 1), (3 : -4 : 1), (8 : -22 : 1)]\n   e1,e2,e3:  -3.01243037259331 1.0658205476962... 1.94660982489710\n   Minimal eigenvalue of height pairing matrix:  0.63792081458500...\n   x-coords of points on compact component with  -3 <=x<= 1\n   [-3, -2, -1, 0, 1]\n   x-coords of points on non-compact component with  2 <=x<= 6\n   [2, 3, 4]\n   starting search of remaining points using coefficient bound  5\n   x-coords of extra integral points:\n   [2, 3, 4, 8, 11, 14, 21, 37, 52, 93, 342, 406, 816]\n   Total number of integral points: 18\nGot:\n   Using mw_basis  [(2 : 0 : 1), (3 : -4 : 1), (8 : -22 : 1)]\n   e1,e2,e3:  -3.01243037259330 1.06582054769621 1.94660982489710\n   Minimal eigenvalue of height pairing matrix:  0.637920814585007\n   x-coords of points on compact component with  -3 <=x<= 1\n   [-3, -2, -1, 0, 1]\n   x-coords of points on non-compact component with  2 <=x<= 6\n   [2, 3, 4]\n   starting search of remaining points using coefficient bound  5\n   x-coords of extra integral points:\n   [2, 3, 4, 8, 11, 14, 21, 37, 52, 93, 342, 406, 816]\n   Total number of integral points: 18\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4634\n\n",
     "created_at": "2008-11-27T03:43:14Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_004634.json:
 ```
 Assignee: mabshoff
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 
 ```
@@ -133,7 +133,7 @@ archive/issue_comments_034848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4634#issuecomment-34848",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

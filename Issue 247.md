@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/247
 archive/issue_comments_001089.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2007-02-07T04:32:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/247#issuecomment-1089",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_001090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/247#issuecomment-1090",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_001091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/247#issuecomment-1091",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

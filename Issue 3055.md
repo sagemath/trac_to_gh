@@ -3,7 +3,7 @@
 archive/issues_003055.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis means that later, a call to relabel fails.  This affects, for example, the graph isomorphism code (which was how the error was originally found).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3055\n\n",
+    "body": "Assignee: @rlmill\n\nThis means that later, a call to relabel fails.  This affects, for example, the graph isomorphism code (which was how the error was originally found).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3055\n\n",
     "created_at": "2008-04-29T20:42:56Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003055.json:
     "title": "creating subgraph does not delete _pos entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3055",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This means that later, a call to relabel fails.  This affects, for example, the graph isomorphism code (which was how the error was originally found).
 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3055
 archive/issue_comments_021090.json:
 ```json
 {
-    "body": "Attachment [trac-3055-subgraph-del-pos.patch](tarball://root/attachments/some-uuid/ticket3055/trac-3055-subgraph-del-pos.patch) by jason created at 2008-04-29 21:09:18\n\nWith #3054 and #3055 applied, doctests pass in the graphs/ directory.",
+    "body": "Attachment [trac-3055-subgraph-del-pos.patch](tarball://root/attachments/some-uuid/ticket3055/trac-3055-subgraph-del-pos.patch) by @jasongrout created at 2008-04-29 21:09:18\n\nWith #3054 and #3055 applied, doctests pass in the graphs/ directory.",
     "created_at": "2008-04-29T21:09:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3055#issuecomment-21090",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-3055-subgraph-del-pos.patch](tarball://root/attachments/some-uuid/ticket3055/trac-3055-subgraph-del-pos.patch) by jason created at 2008-04-29 21:09:18
+Attachment [trac-3055-subgraph-del-pos.patch](tarball://root/attachments/some-uuid/ticket3055/trac-3055-subgraph-del-pos.patch) by @jasongrout created at 2008-04-29 21:09:18
 
 With #3054 and #3055 applied, doctests pass in the graphs/ directory.
 
@@ -58,7 +58,7 @@ archive/issue_comments_021091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3055#issuecomment-21091",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_021095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3055#issuecomment-21095",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

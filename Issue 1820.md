@@ -3,7 +3,7 @@
 archive/issues_001820.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1820\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1820\n\n",
     "created_at": "2008-01-18T00:55:20Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001820.json:
     "title": "update documentation for combinat/skew_partition.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1820",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1820
 archive/issue_comments_011517.json:
 ```json
 {
-    "body": "Attachment [1820.patch](tarball://root/attachments/some-uuid/ticket1820/1820.patch) by mhansen created at 2008-01-18 00:57:52",
+    "body": "Attachment [1820.patch](tarball://root/attachments/some-uuid/ticket1820/1820.patch) by @mwhansen created at 2008-01-18 00:57:52",
     "created_at": "2008-01-18T00:57:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1820#issuecomment-11517",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1820.patch](tarball://root/attachments/some-uuid/ticket1820/1820.patch) by mhansen created at 2008-01-18 00:57:52
+Attachment [1820.patch](tarball://root/attachments/some-uuid/ticket1820/1820.patch) by @mwhansen created at 2008-01-18 00:57:52
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_011518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1820#issuecomment-11518",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_011519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1820#issuecomment-11519",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

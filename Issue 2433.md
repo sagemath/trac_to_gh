@@ -3,7 +3,7 @@
 archive/issues_002433.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  jason\n\nThere are quite a few patches for this ticket, so I'll put them all on the ticket for easier review, but I'll also include a flattened patch, for easy merging.\n\n1. I have moved all functions that are specific to `Graph` or `DiGraph` to that class, and I have moved duplicate code into `GenericGraph`.\n\n2. In preparation for switching out the default backend for the much faster CGraphs, I have reduced the dependence on NetworkX as much as possible for the moment. For most of the rest of the functions, I have switched `G._nxg` to use `G.networkx_graph()` so that for functions where we still need to use NX, the switch won't be difficult, and we won't lose any functionality.\n\n3. In refactoring the code, and reducing duplicate code, I have combined the two plot3d options into one function, and made jmol the default, finally.\n\n4. Since I have been doing this during my visit with Godsil and Royle at Waterloo, there have been several very easy suggestions they have made which have gotten incorporated into this work as well. For example, providing much clearer aliases `num_verts` and `num_edges` for the somewhat cryptic `order` and `size` functions.\n\n5. I have fixed several documentation typos, and added several new doctests. The coverage score for `graph.py` has increased 87% -> 91%.\n\n6. The patches here are based on sage-2.10.3.rc2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2433\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nThere are quite a few patches for this ticket, so I'll put them all on the ticket for easier review, but I'll also include a flattened patch, for easy merging.\n\n1. I have moved all functions that are specific to `Graph` or `DiGraph` to that class, and I have moved duplicate code into `GenericGraph`.\n\n2. In preparation for switching out the default backend for the much faster CGraphs, I have reduced the dependence on NetworkX as much as possible for the moment. For most of the rest of the functions, I have switched `G._nxg` to use `G.networkx_graph()` so that for functions where we still need to use NX, the switch won't be difficult, and we won't lose any functionality.\n\n3. In refactoring the code, and reducing duplicate code, I have combined the two plot3d options into one function, and made jmol the default, finally.\n\n4. Since I have been doing this during my visit with Godsil and Royle at Waterloo, there have been several very easy suggestions they have made which have gotten incorporated into this work as well. For example, providing much clearer aliases `num_verts` and `num_edges` for the somewhat cryptic `order` and `size` functions.\n\n5. I have fixed several documentation typos, and added several new doctests. The coverage score for `graph.py` has increased 87% -> 91%.\n\n6. The patches here are based on sage-2.10.3.rc2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2433\n\n",
     "created_at": "2008-03-09T04:50:04Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_002433.json:
     "title": "[patches coming soon] Refactor graph code; prepare for backend migration; miscellaneous small things from Waterloo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2433",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  jason
+CC:  @jasongrout
 
 There are quite a few patches for this ticket, so I'll put them all on the ticket for easier review, but I'll also include a flattened patch, for easy merging.
 
@@ -51,7 +51,7 @@ archive/issue_comments_016464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2433#issuecomment-16464",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_016465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2433#issuecomment-16465",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

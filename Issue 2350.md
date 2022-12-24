@@ -3,7 +3,7 @@
 archive/issues_002350.json:
 ```json
 {
-    "body": "Assignee: was\n\nshow changed behavior in 2.10.2, which surprised lots of people.\n\n* revert show to the previous behavior.\n\n* plot(list) does what it currently does (i.e., superimpose the plots)\n\n* plot(list, array=True) does what show does in 2.10.2 (i.e., put the\nplots into an array).\n\n* change the docs to show() to more clearly reflect the purpose of the\nfunction.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2350\n\n",
+    "body": "Assignee: @williamstein\n\nshow changed behavior in 2.10.2, which surprised lots of people.\n\n* revert show to the previous behavior.\n\n* plot(list) does what it currently does (i.e., superimpose the plots)\n\n* plot(list, array=True) does what show does in 2.10.2 (i.e., put the\nplots into an array).\n\n* change the docs to show() to more clearly reflect the purpose of the\nfunction.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2350\n\n",
     "created_at": "2008-02-29T01:45:04Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_002350.json:
     "title": "The 2.10.2 behavior of show(list) should instead be available via plot(list, array=True)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2350",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 show changed behavior in 2.10.2, which surprised lots of people.
 
@@ -48,7 +48,7 @@ archive/issue_comments_015783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2350#issuecomment-15783",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -61,16 +61,16 @@ Changing status from new to assigned.
 archive/issue_comments_015784.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2008-02-29T01:45:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2350#issuecomment-15784",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_015785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2350#issuecomment-15785",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -97,16 +97,16 @@ The ticket that introduced the mentioned changes is #1908
 archive/issue_comments_015786.json:
 ```json
 {
-    "body": "Attachment [show-revert.patch](tarball://root/attachments/some-uuid/ticket2350/show-revert.patch) by jason created at 2008-03-03 22:41:24",
+    "body": "Attachment [show-revert.patch](tarball://root/attachments/some-uuid/ticket2350/show-revert.patch) by @jasongrout created at 2008-03-03 22:41:24",
     "created_at": "2008-03-03T22:41:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2350#issuecomment-15786",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [show-revert.patch](tarball://root/attachments/some-uuid/ticket2350/show-revert.patch) by jason created at 2008-03-03 22:41:24
+Attachment [show-revert.patch](tarball://root/attachments/some-uuid/ticket2350/show-revert.patch) by @jasongrout created at 2008-03-03 22:41:24
 
 
 
@@ -120,7 +120,7 @@ archive/issue_comments_015787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2350#issuecomment-15787",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_015788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2350#issuecomment-15788",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_015789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2350#issuecomment-15789",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007144.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThe following code fails\n\n```\ny=function('y',x)\neqn=x*diff(y,x)^2-(1+x*y)*diff(y,x)+y == 0\ndesolve(eqn,y)\n```\n\nHowever, Maxima is able to produce the solution using contrib_ode command. If ode2 fails, Sage should call contrib_ode\n\nmaxima commands\n\n```\nload('contrib_ode)$\neqn:x*'diff(y,x)^2-(1+x*y)*'diff(y,x)+y=0;\ncontrib_ode(eqn,y,x);\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7144\n\n",
+    "body": "Assignee: @burcin\n\nThe following code fails\n\n```\ny=function('y',x)\neqn=x*diff(y,x)^2-(1+x*y)*diff(y,x)+y == 0\ndesolve(eqn,y)\n```\n\nHowever, Maxima is able to produce the solution using contrib_ode command. If ode2 fails, Sage should call contrib_ode\n\nmaxima commands\n\n```\nload('contrib_ode)$\neqn:x*'diff(y,x)^2-(1+x*y)*'diff(y,x)+y=0;\ncontrib_ode(eqn,y,x);\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7144\n\n",
     "created_at": "2009-10-06T20:18:17Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_007144.json:
     "title": "desolve does not use contrib_ode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7144",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 The following code fails
 
@@ -54,7 +54,7 @@ archive/issue_comments_059188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7144#issuecomment-59188",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 

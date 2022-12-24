@@ -3,7 +3,7 @@
 archive/issues_007621.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  ncohen\n\nI have two small usability issues to report for the MIP interface:\n\n* Why is `p_mipvariables` a semi-private variable? There should be a method to get the variables defined so far (e.g. `p.get_mip_variables`).\n\n* Why are `p.__INTEGER`,`p.__BINARY`,`p.__REAL` private? This way the user needs to remember the integer assignment, which is unnecessary. Just rename them `p.INTEGER` etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7621\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @nathanncohen\n\nI have two small usability issues to report for the MIP interface:\n\n* Why is `p_mipvariables` a semi-private variable? There should be a method to get the variables defined so far (e.g. `p.get_mip_variables`).\n\n* Why are `p.__INTEGER`,`p.__BINARY`,`p.__REAL` private? This way the user needs to remember the integer assignment, which is unnecessary. Just rename them `p.INTEGER` etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7621\n\n",
     "created_at": "2009-12-08T13:49:57Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_007621.json:
     "title": "usability issues with MIP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7621",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: jkantor
 
-CC:  ncohen
+CC:  @nathanncohen
 
 I have two small usability issues to report for the MIP interface:
 
@@ -43,7 +43,7 @@ archive/issue_comments_065125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7621#issuecomment-65125",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_065126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7621#issuecomment-65126",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_065127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7621#issuecomment-65127",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_065128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7621#issuecomment-65128",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003906.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nNo response on sage-support, so I deem this a bug, not a feature:\n\n\n```\nsage: plot(sin,0,pi)\n<plots fine>\nsage: plot(2*sin,0,pi)\n<boom>\n\nAlthough I suppose we should always include variables -\n\nsage: plot(2*sin(x),0,pi)\n<plots fine>\n\n- for consistency's (and ease of use's) sake both of the above should\nwork. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3906\n\n",
+    "body": "Assignee: @garyfurnish\n\nNo response on sage-support, so I deem this a bug, not a feature:\n\n\n```\nsage: plot(sin,0,pi)\n<plots fine>\nsage: plot(2*sin,0,pi)\n<boom>\n\nAlthough I suppose we should always include variables -\n\nsage: plot(2*sin(x),0,pi)\n<plots fine>\n\n- for consistency's (and ease of use's) sake both of the above should\nwork. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3906\n\n",
     "created_at": "2008-08-20T01:16:20Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_003906.json:
     "title": "symbolic plotting bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3906",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 No response on sage-support, so I deem this a bug, not a feature:
 
@@ -54,7 +54,7 @@ archive/issue_comments_027946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3906#issuecomment-27946",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -67,15 +67,15 @@ Resolution: duplicate
 archive/issue_comments_027947.json:
 ```json
 {
-    "body": "Attachment [trac_3906.patch](tarball://root/attachments/some-uuid/ticket3906/trac_3906.patch) by rlm created at 2008-09-05 19:41:46\n\nThis patch is found also at #3907.",
+    "body": "Attachment [trac_3906.patch](tarball://root/attachments/some-uuid/ticket3906/trac_3906.patch) by @rlmill created at 2008-09-05 19:41:46\n\nThis patch is found also at #3907.",
     "created_at": "2008-09-05T19:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3906#issuecomment-27947",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3906.patch](tarball://root/attachments/some-uuid/ticket3906/trac_3906.patch) by rlm created at 2008-09-05 19:41:46
+Attachment [trac_3906.patch](tarball://root/attachments/some-uuid/ticket3906/trac_3906.patch) by @rlmill created at 2008-09-05 19:41:46
 
 This patch is found also at #3907.

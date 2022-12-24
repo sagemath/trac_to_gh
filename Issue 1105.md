@@ -14,7 +14,7 @@ archive/issues_001105.json:
     "title": "[with patch] static memory leak in libSingular interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1105",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1105
 archive/issue_comments_006689.json:
 ```json
 {
-    "body": "Attachment [libsingular-memleak.patch](tarball://root/attachments/some-uuid/ticket1105/libsingular-memleak.patch) by malb created at 2007-11-05 10:36:40",
+    "body": "Attachment [libsingular-memleak.patch](tarball://root/attachments/some-uuid/ticket1105/libsingular-memleak.patch) by @malb created at 2007-11-05 10:36:40",
     "created_at": "2007-11-05T10:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1105#issuecomment-6689",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [libsingular-memleak.patch](tarball://root/attachments/some-uuid/ticket1105/libsingular-memleak.patch) by malb created at 2007-11-05 10:36:40
+Attachment [libsingular-memleak.patch](tarball://root/attachments/some-uuid/ticket1105/libsingular-memleak.patch) by @malb created at 2007-11-05 10:36:40
 
 
 

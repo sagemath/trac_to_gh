@@ -3,7 +3,7 @@
 archive/issues_007414.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nThe method to_inversion_vector can be greatly improved by using a divide-and-conquer strategy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7414\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe method to_inversion_vector can be greatly improved by using a divide-and-conquer strategy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7414\n\n",
     "created_at": "2009-11-08T20:31:45Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_007414.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -99,7 +99,7 @@ archive/issue_comments_062382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7414#issuecomment-62382",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_062383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7414#issuecomment-62383",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_062384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7414#issuecomment-62384",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_062385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7414#issuecomment-62385",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_062391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7414#issuecomment-62391",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_062392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7414#issuecomment-62392",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_062393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7414#issuecomment-62393",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

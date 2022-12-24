@@ -14,7 +14,7 @@ archive/issues_005580.json:
     "title": "preparsing error in recursive load of .sage files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5580",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -81,7 +81,7 @@ archive/issue_comments_043502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5580#issuecomment-43502",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_043505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5580#issuecomment-43505",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003976.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3976\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3976\n\n",
     "created_at": "2008-08-28T19:39:29Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003976.json:
     "title": "[with patch, needs review] improve doctests to expect.py, maxima.py, and lie.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3976",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3976
 archive/issue_comments_028565.json:
 ```json
 {
-    "body": "Attachment [trac_3976.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976.patch) by mhansen created at 2008-08-28 19:39:49",
+    "body": "Attachment [trac_3976.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976.patch) by @mwhansen created at 2008-08-28 19:39:49",
     "created_at": "2008-08-28T19:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28565",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3976.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976.patch) by mhansen created at 2008-08-28 19:39:49
+Attachment [trac_3976.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976.patch) by @mwhansen created at 2008-08-28 19:39:49
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_028566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28566",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -68,16 +68,16 @@ After discussion with mhansen, we decided it would be better to use `os.popen` i
 archive/issue_comments_028567.json:
 ```json
 {
-    "body": "Attachment [trac_3976-2.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-2.patch) by mhansen created at 2008-08-28 22:51:29",
+    "body": "Attachment [trac_3976-2.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-2.patch) by @mwhansen created at 2008-08-28 22:51:29",
     "created_at": "2008-08-28T22:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28567",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3976-2.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-2.patch) by mhansen created at 2008-08-28 22:51:29
+Attachment [trac_3976-2.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-2.patch) by @mwhansen created at 2008-08-28 22:51:29
 
 
 
@@ -86,16 +86,16 @@ Attachment [trac_3976-2.patch](tarball://root/attachments/some-uuid/ticket3976/t
 archive/issue_comments_028568.json:
 ```json
 {
-    "body": "Attachment [trac_3976-3.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-3.patch) by rlm created at 2008-08-28 22:55:13\n\nThe patches apply cleanly (with some light fuzz for the first patch), and pass all tests. Apply this.",
+    "body": "Attachment [trac_3976-3.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-3.patch) by @rlmill created at 2008-08-28 22:55:13\n\nThe patches apply cleanly (with some light fuzz for the first patch), and pass all tests. Apply this.",
     "created_at": "2008-08-28T22:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28568",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3976-3.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-3.patch) by rlm created at 2008-08-28 22:55:13
+Attachment [trac_3976-3.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-3.patch) by @rlmill created at 2008-08-28 22:55:13
 
 The patches apply cleanly (with some light fuzz for the first patch), and pass all tests. Apply this.
 

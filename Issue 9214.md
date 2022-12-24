@@ -3,7 +3,7 @@
 archive/issues_009214.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9214\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9214\n\n",
     "created_at": "2010-06-11T10:51:04Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_009214.json:
     "title": "Bring doc coverage of combinat/lyndon_word.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9214",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9214
 archive/issue_comments_086341.json:
 ```json
 {
-    "body": "Attachment [trac_9214-doc_lyndon_word-sl.patch](tarball://root/attachments/some-uuid/ticket9214/trac_9214-doc_lyndon_word-sl.patch) by slabbe created at 2010-06-11 11:10:23",
+    "body": "Attachment [trac_9214-doc_lyndon_word-sl.patch](tarball://root/attachments/some-uuid/ticket9214/trac_9214-doc_lyndon_word-sl.patch) by @seblabbe created at 2010-06-11 11:10:23",
     "created_at": "2010-06-11T11:10:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86341",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_9214-doc_lyndon_word-sl.patch](tarball://root/attachments/some-uuid/ticket9214/trac_9214-doc_lyndon_word-sl.patch) by slabbe created at 2010-06-11 11:10:23
+Attachment [trac_9214-doc_lyndon_word-sl.patch](tarball://root/attachments/some-uuid/ticket9214/trac_9214-doc_lyndon_word-sl.patch) by @seblabbe created at 2010-06-11 11:10:23
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_086342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86342",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_086343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86343",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_086344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86344",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_086349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86349",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_086350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86350",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_086351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86351",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

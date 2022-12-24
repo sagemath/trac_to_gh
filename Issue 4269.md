@@ -14,7 +14,7 @@ archive/issues_004269.json:
     "title": "add code to help detect which systems are used in performing a computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4269",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4269
 archive/issue_comments_031166.json:
 ```json
 {
-    "body": "Attachment [trac_4269.patch](tarball://root/attachments/some-uuid/ticket4269/trac_4269.patch) by mhansen created at 2008-10-12 18:09:02\n\nThe detection strings could probably use some refinement, but I'm going to spend some time working one something else.",
+    "body": "Attachment [trac_4269.patch](tarball://root/attachments/some-uuid/ticket4269/trac_4269.patch) by @mwhansen created at 2008-10-12 18:09:02\n\nThe detection strings could probably use some refinement, but I'm going to spend some time working one something else.",
     "created_at": "2008-10-12T18:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31166",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4269.patch](tarball://root/attachments/some-uuid/ticket4269/trac_4269.patch) by mhansen created at 2008-10-12 18:09:02
+Attachment [trac_4269.patch](tarball://root/attachments/some-uuid/ticket4269/trac_4269.patch) by @mwhansen created at 2008-10-12 18:09:02
 
 The detection strings could probably use some refinement, but I'm going to spend some time working one something else.
 
@@ -52,16 +52,16 @@ The detection strings could probably use some refinement, but I'm going to spend
 archive/issue_comments_031167.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to mhansen.",
+    "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2008-10-12T18:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31167",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from cwitty to mhansen.
+Changing assignee from cwitty to @mwhansen.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_031168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31168",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to assigned.
 archive/issue_comments_031169.json:
 ```json
 {
-    "body": "Attachment [4269-referee.patch](tarball://root/attachments/some-uuid/ticket4269/4269-referee.patch) by robertwb created at 2008-10-14 20:17:37",
+    "body": "Attachment [4269-referee.patch](tarball://root/attachments/some-uuid/ticket4269/4269-referee.patch) by @robertwb created at 2008-10-14 20:17:37",
     "created_at": "2008-10-14T20:17:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31169",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4269-referee.patch](tarball://root/attachments/some-uuid/ticket4269/4269-referee.patch) by robertwb created at 2008-10-14 20:17:37
+Attachment [4269-referee.patch](tarball://root/attachments/some-uuid/ticket4269/4269-referee.patch) by @robertwb created at 2008-10-14 20:17:37
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_031170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31170",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

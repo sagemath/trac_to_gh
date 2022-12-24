@@ -3,7 +3,7 @@
 archive/issues_005582.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  jbandlow\n\n\n```\n\tsage: a = float(1.0)\n \tsage: QQ(a)\n \tTypeError: Unable to coerce 1.0 (<type 'float'>) to Rational\n```\n\nNote that the following works:\n\n```\n \tsage: a = float(1.0)\n \tsage: QQ(RR(a))\n \t1\n```\n\n\n> Yes, this conversion is missing. It should be easy to implement.\n> \n> - Robert\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5582\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @jbandlow\n\n\n```\n\tsage: a = float(1.0)\n \tsage: QQ(a)\n \tTypeError: Unable to coerce 1.0 (<type 'float'>) to Rational\n```\n\nNote that the following works:\n\n```\n \tsage: a = float(1.0)\n \tsage: QQ(RR(a))\n \t1\n```\n\n\n> Yes, this conversion is missing. It should be easy to implement.\n> \n> - Robert\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5582\n\n",
     "created_at": "2009-03-21T20:00:18Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_005582.json:
     "title": "Coercion from float to QQ is missing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5582",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  jbandlow
+CC:  @jbandlow
 
 
 ```
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5582
 archive/issue_comments_043511.json:
 ```json
 {
-    "body": "Attachment [5582-float-QQ.patch](tarball://root/attachments/some-uuid/ticket5582/5582-float-QQ.patch) by robertwb created at 2009-03-21 20:20:10",
+    "body": "Attachment [5582-float-QQ.patch](tarball://root/attachments/some-uuid/ticket5582/5582-float-QQ.patch) by @robertwb created at 2009-03-21 20:20:10",
     "created_at": "2009-03-21T20:20:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5582#issuecomment-43511",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5582-float-QQ.patch](tarball://root/attachments/some-uuid/ticket5582/5582-float-QQ.patch) by robertwb created at 2009-03-21 20:20:10
+Attachment [5582-float-QQ.patch](tarball://root/attachments/some-uuid/ticket5582/5582-float-QQ.patch) by @robertwb created at 2009-03-21 20:20:10
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_043512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5582#issuecomment-43512",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -124,16 +124,16 @@ Michael
 archive/issue_comments_043514.json:
 ```json
 {
-    "body": "Attachment [5582-QQfloat2.patch](tarball://root/attachments/some-uuid/ticket5582/5582-QQfloat2.patch) by robertwb created at 2009-05-18 22:11:09",
+    "body": "Attachment [5582-QQfloat2.patch](tarball://root/attachments/some-uuid/ticket5582/5582-QQfloat2.patch) by @robertwb created at 2009-05-18 22:11:09",
     "created_at": "2009-05-18T22:11:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5582#issuecomment-43514",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5582-QQfloat2.patch](tarball://root/attachments/some-uuid/ticket5582/5582-QQfloat2.patch) by robertwb created at 2009-05-18 22:11:09
+Attachment [5582-QQfloat2.patch](tarball://root/attachments/some-uuid/ticket5582/5582-QQfloat2.patch) by @robertwb created at 2009-05-18 22:11:09
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_043515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5582#issuecomment-43515",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

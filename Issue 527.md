@@ -3,7 +3,7 @@
 archive/issues_000527.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe gap workspace cache should be invalidated not only when the version of gap changes but when the\nspkg version number changes.  This very important. \n\nIssue created by migration from https://trac.sagemath.org/ticket/527\n\n",
+    "body": "Assignee: @williamstein\n\nThe gap workspace cache should be invalidated not only when the version of gap changes but when the\nspkg version number changes.  This very important. \n\nIssue created by migration from https://trac.sagemath.org/ticket/527\n\n",
     "created_at": "2007-08-30T06:49:55Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000527.json:
     "title": "gap -- gap_reset_workspace()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/527",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The gap workspace cache should be invalidated not only when the version of gap changes but when the
 spkg version number changes.  This very important. 
@@ -38,7 +38,7 @@ archive/issue_comments_002680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/527#issuecomment-2680",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_002681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/527#issuecomment-2681",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_002682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/527#issuecomment-2682",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,16 +109,16 @@ Michael
 archive/issue_comments_002684.json:
 ```json
 {
-    "body": "Attachment [trac527.patch](tarball://root/attachments/some-uuid/ticket527/trac527.patch) by was created at 2007-11-03 19:21:11",
+    "body": "Attachment [trac527.patch](tarball://root/attachments/some-uuid/ticket527/trac527.patch) by @williamstein created at 2007-11-03 19:21:11",
     "created_at": "2007-11-03T19:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/527#issuecomment-2684",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac527.patch](tarball://root/attachments/some-uuid/ticket527/trac527.patch) by was created at 2007-11-03 19:21:11
+Attachment [trac527.patch](tarball://root/attachments/some-uuid/ticket527/trac527.patch) by @williamstein created at 2007-11-03 19:21:11
 
 
 
@@ -132,7 +132,7 @@ archive/issue_comments_002685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/527#issuecomment-2685",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_002686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/527#issuecomment-2686",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

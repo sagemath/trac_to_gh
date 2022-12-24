@@ -57,7 +57,7 @@ archive/issue_comments_083551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83551",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_083552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83552",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_083553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83553",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_083554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83554",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_083555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83555",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -142,16 +142,16 @@ fix plus an example to test it
 archive/issue_comments_083556.json:
 ```json
 {
-    "body": "Attachment [trac_9028_stats_fix+example.patch](tarball://root/attachments/some-uuid/ticket9028/trac_9028_stats_fix+example.patch) by benjaminfjones created at 2010-11-18 22:18:49\n\nI've attached a new patch witch includes the fix plus an example to test the affected block of code. I couldn't think of a better way to access the block than to define a toy class that has its own mean() function which returns a Python long. If the mean() function from basic_stats.py has to be called, the type of 'x' at line 289 won't ever be 'int' or 'long' so the code block in question is never reached.\n\nMaybe someone can suggest a better example?\n\nHere is a before / after log to show that the fix works and that the example tests it.\n\n\n```\n\nsage: R = SillyPythonList()\nsage: list(R)\n[2L, 4L]\nsage: len(R)\n2\nsage: mean(R)\n3L\nsage: variance(R)\n1\nsage: variance(R, bias=True)\n1\n\nsage: R = [2,4]\nsage: mean(R)\n3\nsage: variance(R)\n2\nsage: variance(R,bias=True)\n1\n\n### LOG (after patch)\nsage: R=SillyPythonList()\nsage: len(R)\n2\nsage: mean(R)\n3L\nsage: variance(R)\n2\nsage: variance(R, bias=True)\n1\nsage: R = [2,4]\nsage: variance(R)\n2\nsage: variance(R, bias=True)\n1\n```\n",
+    "body": "Attachment [trac_9028_stats_fix+example.patch](tarball://root/attachments/some-uuid/ticket9028/trac_9028_stats_fix+example.patch) by @benjaminfjones created at 2010-11-18 22:18:49\n\nI've attached a new patch witch includes the fix plus an example to test the affected block of code. I couldn't think of a better way to access the block than to define a toy class that has its own mean() function which returns a Python long. If the mean() function from basic_stats.py has to be called, the type of 'x' at line 289 won't ever be 'int' or 'long' so the code block in question is never reached.\n\nMaybe someone can suggest a better example?\n\nHere is a before / after log to show that the fix works and that the example tests it.\n\n\n```\n\nsage: R = SillyPythonList()\nsage: list(R)\n[2L, 4L]\nsage: len(R)\n2\nsage: mean(R)\n3L\nsage: variance(R)\n1\nsage: variance(R, bias=True)\n1\n\nsage: R = [2,4]\nsage: mean(R)\n3\nsage: variance(R)\n2\nsage: variance(R,bias=True)\n1\n\n### LOG (after patch)\nsage: R=SillyPythonList()\nsage: len(R)\n2\nsage: mean(R)\n3L\nsage: variance(R)\n2\nsage: variance(R, bias=True)\n1\nsage: R = [2,4]\nsage: variance(R)\n2\nsage: variance(R, bias=True)\n1\n```\n",
     "created_at": "2010-11-18T22:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83556",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_9028_stats_fix+example.patch](tarball://root/attachments/some-uuid/ticket9028/trac_9028_stats_fix+example.patch) by benjaminfjones created at 2010-11-18 22:18:49
+Attachment [trac_9028_stats_fix+example.patch](tarball://root/attachments/some-uuid/ticket9028/trac_9028_stats_fix+example.patch) by @benjaminfjones created at 2010-11-18 22:18:49
 
 I've attached a new patch witch includes the fix plus an example to test the affected block of code. I couldn't think of a better way to access the block than to define a toy class that has its own mean() function which returns a Python long. If the mean() function from basic_stats.py has to be called, the type of 'x' at line 289 won't ever be 'int' or 'long' so the code block in question is never reached.
 
@@ -212,7 +212,7 @@ archive/issue_comments_083557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83557",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_083558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83558",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_083559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83559",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_083560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83560",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_083561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83561",
-    "user": "spice"
+    "user": "@haikona"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_083562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83562",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

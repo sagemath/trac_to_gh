@@ -3,7 +3,7 @@
 archive/issues_006213.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  davidloeffler\n\n\n```\n    Hi David,\n\n    This is inconsistent:\n\n\n    sage: e =EtaProduct(3, {3:12, 1:-12})\n    sage: e.qexp(10)  # but no q_expansion function\n\n    Everywhere else in Sage we write \"q_expansion\" and have qexp as an alias. It thus took me a while to find e.qexp, since I expected e.q_expansion. What do you think?\n\n\nAgreed. I wrote most of that class during a lunch break at a conference last summer, and at the time I didn't have much of a clue about Sage conventions (as is probably clear to anyone reading the code). Please feel free to change it!\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6213\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @loefflerd\n\n\n```\n    Hi David,\n\n    This is inconsistent:\n\n\n    sage: e =EtaProduct(3, {3:12, 1:-12})\n    sage: e.qexp(10)  # but no q_expansion function\n\n    Everywhere else in Sage we write \"q_expansion\" and have qexp as an alias. It thus took me a while to find e.qexp, since I expected e.q_expansion. What do you think?\n\n\nAgreed. I wrote most of that class during a lunch break at a conference last summer, and at the time I didn't have much of a clue about Sage conventions (as is probably clear to anyone reading the code). Please feel free to change it!\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6213\n\n",
     "created_at": "2009-06-04T21:01:26Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_006213.json:
     "title": "easy addition of an alias to eta product (trivial ticket to deal with)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6213",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  davidloeffler
+CC:  @loefflerd
 
 
 ```
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6213
 archive/issue_comments_049634.json:
 ```json
 {
-    "body": "Attachment [trac-6213.patch](tarball://root/attachments/some-uuid/ticket6213/trac-6213.patch) by craigcitro created at 2009-06-05 06:31:57",
+    "body": "Attachment [trac-6213.patch](tarball://root/attachments/some-uuid/ticket6213/trac-6213.patch) by @craigcitro created at 2009-06-05 06:31:57",
     "created_at": "2009-06-05T06:31:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6213#issuecomment-49634",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-6213.patch](tarball://root/attachments/some-uuid/ticket6213/trac-6213.patch) by craigcitro created at 2009-06-05 06:31:57
+Attachment [trac-6213.patch](tarball://root/attachments/some-uuid/ticket6213/trac-6213.patch) by @craigcitro created at 2009-06-05 06:31:57
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_049635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6213#issuecomment-49635",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_049636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6213#issuecomment-49636",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_049637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6213#issuecomment-49637",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_049638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6213#issuecomment-49638",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -140,16 +140,16 @@ This clearly belongs in component = modular forms (not that it really matters).
 archive/issue_comments_049639.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2009-06-07T13:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6213#issuecomment-49639",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -163,7 +163,7 @@ archive/issue_comments_049640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6213#issuecomment-49640",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_049641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6213#issuecomment-49641",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

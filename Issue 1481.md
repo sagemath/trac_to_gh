@@ -3,7 +3,7 @@
 archive/issues_001481.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\n\n```\nsage: m=matrix(ZZ,1,[16]); m\n[16]\nsage: matrix_plot(m^10).show()\n---------------------------------------------------------------------------\n<type 'exceptions.OverflowError'>         Traceback (most recent call last)\n\n/home/grout/.sage/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot.py in show(self, xmin, xmax, ymin, ymax, figsize, filename, dpi, axes, axes_label, frame, fontsize, **args)\n    654         if filename is None:\n    655             filename = sage.misc.misc.tmp_filename() + '.png'\n--> 656         self.save(filename, xmin, xmax, ymin, ymax, figsize, dpi=dpi, axes=axes,frame=frame, fontsize=fontsize)\n    657         os.system('%s %s 2>/dev/null 1>/dev/null &'%(sage.misc.viewer.browser(), filename))\n    658\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot.py in save(self, filename, xmin, xmax, ymin, ymax, figsize, figure, sub, savenow, dpi, axes, axes_label, fontsize, frame, verify)\n    766             if isinstance(g, GraphicPrimitive_MatrixPlot):\n    767                 matrixplot = True\n--> 768             g._render_on_subplot(subplot)\n    769\n    770         #adjust the xy limits and draw the axes:\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot.py in _render_on_subplot(self, subplot)\n   1102             print \"The possible color maps include: %s\"%possibilities\n   1103             raise RuntimeError, \"Color map %s not known\"%cmap\n-> 1104         subplot.imshow(self.xy_data_array, cmap=cmap, interpolation='nearest')\n   1105\n   1106 # Below is the base class that is used to make 'field plots'.\n\n/home/grout/sage/local/lib/python2.5/site-packages/matplotlib/axes.py in imshow(self, X, cmap, norm, aspect, interpolation, alpha, vmin, vmax, origin, extent, shape, filternorm, filterrad, imlim, **kwargs)\n   4053                        filterrad=filterrad, **kwargs)\n   4054\n-> 4055         im.set_data(X)\n   4056         im.set_alpha(alpha)\n   4057         self._set_artist_props(im)\n\n/home/grout/sage/local/lib/python2.5/site-packages/matplotlib/image.py in set_data(self, A, shape)\n    224             or X.shape[2] > 4\n    225             or X.shape[2] < 3):\n--> 226             cm.ScalarMappable.set_array(self, X)\n    227         else:\n    228             self._A = X\n\n/home/grout/sage/local/lib/python2.5/site-packages/matplotlib/cm.py in set_array(self, A)\n     65             self._A = A.astype(nx.Float32)\n     66         else:\n---> 67             self._A = A.astype(nx.Int16)\n     68\n     69     def get_array(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/numpy/core/ma.py in astype(self, tc)\n   1148     def astype (self, tc):\n   1149         \"return self as array of given type.\"\n-> 1150         d = self._data.astype(tc)\n   1151         return array(d, mask=self._mask)\n   1152\n\n<type 'exceptions.OverflowError'>: long int too large to convert to int\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1481\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\n\n```\nsage: m=matrix(ZZ,1,[16]); m\n[16]\nsage: matrix_plot(m^10).show()\n---------------------------------------------------------------------------\n<type 'exceptions.OverflowError'>         Traceback (most recent call last)\n\n/home/grout/.sage/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot.py in show(self, xmin, xmax, ymin, ymax, figsize, filename, dpi, axes, axes_label, frame, fontsize, **args)\n    654         if filename is None:\n    655             filename = sage.misc.misc.tmp_filename() + '.png'\n--> 656         self.save(filename, xmin, xmax, ymin, ymax, figsize, dpi=dpi, axes=axes,frame=frame, fontsize=fontsize)\n    657         os.system('%s %s 2>/dev/null 1>/dev/null &'%(sage.misc.viewer.browser(), filename))\n    658\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot.py in save(self, filename, xmin, xmax, ymin, ymax, figsize, figure, sub, savenow, dpi, axes, axes_label, fontsize, frame, verify)\n    766             if isinstance(g, GraphicPrimitive_MatrixPlot):\n    767                 matrixplot = True\n--> 768             g._render_on_subplot(subplot)\n    769\n    770         #adjust the xy limits and draw the axes:\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot.py in _render_on_subplot(self, subplot)\n   1102             print \"The possible color maps include: %s\"%possibilities\n   1103             raise RuntimeError, \"Color map %s not known\"%cmap\n-> 1104         subplot.imshow(self.xy_data_array, cmap=cmap, interpolation='nearest')\n   1105\n   1106 # Below is the base class that is used to make 'field plots'.\n\n/home/grout/sage/local/lib/python2.5/site-packages/matplotlib/axes.py in imshow(self, X, cmap, norm, aspect, interpolation, alpha, vmin, vmax, origin, extent, shape, filternorm, filterrad, imlim, **kwargs)\n   4053                        filterrad=filterrad, **kwargs)\n   4054\n-> 4055         im.set_data(X)\n   4056         im.set_alpha(alpha)\n   4057         self._set_artist_props(im)\n\n/home/grout/sage/local/lib/python2.5/site-packages/matplotlib/image.py in set_data(self, A, shape)\n    224             or X.shape[2] > 4\n    225             or X.shape[2] < 3):\n--> 226             cm.ScalarMappable.set_array(self, X)\n    227         else:\n    228             self._A = X\n\n/home/grout/sage/local/lib/python2.5/site-packages/matplotlib/cm.py in set_array(self, A)\n     65             self._A = A.astype(nx.Float32)\n     66         else:\n---> 67             self._A = A.astype(nx.Int16)\n     68\n     69     def get_array(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/numpy/core/ma.py in astype(self, tc)\n   1148     def astype (self, tc):\n   1149         \"return self as array of given type.\"\n-> 1150         d = self._data.astype(tc)\n   1151         return array(d, mask=self._mask)\n   1152\n\n<type 'exceptions.OverflowError'>: long int too large to convert to int\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1481\n\n",
     "created_at": "2007-12-12T19:51:52Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_001481.json:
     "title": "showing a matrix plot blows up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1481",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 
 ```
@@ -100,7 +100,7 @@ archive/issue_comments_009520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1481#issuecomment-9520",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_009521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1481#issuecomment-9521",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_009522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1481#issuecomment-9522",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_009526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1481#issuecomment-9526",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_009527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1481#issuecomment-9527",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -281,16 +281,16 @@ I think this problem is a matplotlib problem and has to do with not dealing with
 archive/issue_comments_009528.json:
 ```json
 {
-    "body": "Attachment [trac_1481-part1.patch](tarball://root/attachments/some-uuid/ticket1481/trac_1481-part1.patch) by was created at 2010-02-16 19:31:53\n\nthis should completely deal with the dense case.",
+    "body": "Attachment [trac_1481-part1.patch](tarball://root/attachments/some-uuid/ticket1481/trac_1481-part1.patch) by @williamstein created at 2010-02-16 19:31:53\n\nthis should completely deal with the dense case.",
     "created_at": "2010-02-16T19:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1481#issuecomment-9528",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_1481-part1.patch](tarball://root/attachments/some-uuid/ticket1481/trac_1481-part1.patch) by was created at 2010-02-16 19:31:53
+Attachment [trac_1481-part1.patch](tarball://root/attachments/some-uuid/ticket1481/trac_1481-part1.patch) by @williamstein created at 2010-02-16 19:31:53
 
 this should completely deal with the dense case.
 
@@ -306,7 +306,7 @@ archive/issue_comments_009529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1481#issuecomment-9529",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_009530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1481#issuecomment-9530",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_009531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1481#issuecomment-9531",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_009532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1481#issuecomment-9532",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_009533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1481#issuecomment-9533",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_009534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1481#issuecomment-9534",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

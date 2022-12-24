@@ -3,7 +3,7 @@
 archive/issues_009665.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  fbissey drkirkby georgsweber rishi robertwb was ylchapuy mrubinst@math.uwaterloo.ca kcrisman\n\nReported by Georg Weber on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/fa2facb36603675a/a19253d8c2f48d2f#a19253d8c2f48d2f):\n\n```\n...\nbuilding 'sage.libs.lcalc.lcalc_Lfunction' extension\n...\ng++ -L/Users/Shared/sage/sage-4.5.2.rc0/local/lib -bundle -undefined\ndynamic_lookup build/temp.macosx-10.4-i386-2.6/sage/libs/lcalc/\nlcalc_Lfunction.o -L/Users/Shared/sage/sage-4.5.2.rc0/local//lib -\nlcsage -lm -lntl -lmpfr -lgmp -lgmpxx -lLfunction -lstdc++ -lstdc++ -\nlntl -o build/lib.macosx-10.4-i386-2.6/sage/libs/lcalc/\nlcalc_Lfunction.so\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-\nprototypes -I/Users/Shared/sage/sage-4.5.2.rc0/local//include -I/Users/\nShared/sage/sage-4.5.2.rc0/local//include/csage -I/Users/Shared/sage/\nsage-4.5.2.rc0/devel//sage/sage/ext -I/Users/Shared/sage/\nsage-4.5.2.rc0/local/include/python2.6 -c sage/libs/pari/gen.c -o\nbuild/temp.macosx-10.4-i386-2.6/sage/libs/pari/gen.o -w\n/usr/libexec/gcc/i686-apple-darwin8/4.0.1/ld: can't locate file for: -\nlLfunction\ncollect2: ld returned 1 exit status\nerror: command 'g++' failed with exit status 1\nsage: There was an error installing modified sage library code.\n...\n\nIt seems that in the Sage library code, the usage of some \"Lfunction\"\nlibrary from the lcalc package was newly introduced. On my Mac, both\nthe (half-built) Sage-4.5.2 and the older (fuly working) Sage-4.5.1\nhave under local/lib/ some library \"libLfunction.so\". But on a Mac\nunder OS X (OS X 10.4 at least), this would need to be\n\"libLfunction.dylib\" to be usable ... \n```\n\n\n[Georg continues](http://groups.google.com/group/sage-release/browse_thread/thread/fa2facb36603675a/99b55c2958a197cb#99b55c2958a197cb):\n\n```\nfor the \"Lfunction\" issue, the relevant tickets are #5396 resp. #4793.\nIt seems to be as I thought --- the lcalc spkg (#4793) never built a\ncorrect dynamic (\".dylib\") library on OS X. But this was not relevant\nor did break anything, until the interface between Sage and lcalc was\nchanged from using pexpect to using this library directly (#5396,\nintroduced in Sage-4.5.2.alpha1). \n```\n\n\nRelated: #4793, #5396.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9665\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kiwifb drkirkby georgsweber @rishikesha @robertwb @williamstein ylchapuy mrubinst@math.uwaterloo.ca @kcrisman\n\nReported by Georg Weber on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/fa2facb36603675a/a19253d8c2f48d2f#a19253d8c2f48d2f):\n\n```\n...\nbuilding 'sage.libs.lcalc.lcalc_Lfunction' extension\n...\ng++ -L/Users/Shared/sage/sage-4.5.2.rc0/local/lib -bundle -undefined\ndynamic_lookup build/temp.macosx-10.4-i386-2.6/sage/libs/lcalc/\nlcalc_Lfunction.o -L/Users/Shared/sage/sage-4.5.2.rc0/local//lib -\nlcsage -lm -lntl -lmpfr -lgmp -lgmpxx -lLfunction -lstdc++ -lstdc++ -\nlntl -o build/lib.macosx-10.4-i386-2.6/sage/libs/lcalc/\nlcalc_Lfunction.so\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-\nprototypes -I/Users/Shared/sage/sage-4.5.2.rc0/local//include -I/Users/\nShared/sage/sage-4.5.2.rc0/local//include/csage -I/Users/Shared/sage/\nsage-4.5.2.rc0/devel//sage/sage/ext -I/Users/Shared/sage/\nsage-4.5.2.rc0/local/include/python2.6 -c sage/libs/pari/gen.c -o\nbuild/temp.macosx-10.4-i386-2.6/sage/libs/pari/gen.o -w\n/usr/libexec/gcc/i686-apple-darwin8/4.0.1/ld: can't locate file for: -\nlLfunction\ncollect2: ld returned 1 exit status\nerror: command 'g++' failed with exit status 1\nsage: There was an error installing modified sage library code.\n...\n\nIt seems that in the Sage library code, the usage of some \"Lfunction\"\nlibrary from the lcalc package was newly introduced. On my Mac, both\nthe (half-built) Sage-4.5.2 and the older (fuly working) Sage-4.5.1\nhave under local/lib/ some library \"libLfunction.so\". But on a Mac\nunder OS X (OS X 10.4 at least), this would need to be\n\"libLfunction.dylib\" to be usable ... \n```\n\n\n[Georg continues](http://groups.google.com/group/sage-release/browse_thread/thread/fa2facb36603675a/99b55c2958a197cb#99b55c2958a197cb):\n\n```\nfor the \"Lfunction\" issue, the relevant tickets are #5396 resp. #4793.\nIt seems to be as I thought --- the lcalc spkg (#4793) never built a\ncorrect dynamic (\".dylib\") library on OS X. But this was not relevant\nor did break anything, until the interface between Sage and lcalc was\nchanged from using pexpect to using this library directly (#5396,\nintroduced in Sage-4.5.2.alpha1). \n```\n\n\nRelated: #4793, #5396.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9665\n\n",
     "created_at": "2010-08-01T21:18:40Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009665.json:
     "title": "Make lcalc accessible as a library on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9665",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
 
-CC:  fbissey drkirkby georgsweber rishi robertwb was ylchapuy mrubinst@math.uwaterloo.ca kcrisman
+CC:  @kiwifb drkirkby georgsweber @rishikesha @robertwb @williamstein ylchapuy mrubinst@math.uwaterloo.ca @kcrisman
 
 Reported by Georg Weber on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/fa2facb36603675a/a19253d8c2f48d2f#a19253d8c2f48d2f):
 
@@ -85,7 +85,7 @@ archive/issue_comments_093827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93827",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_093829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93829",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_093830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93830",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_093831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93831",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_093832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93832",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_093833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93833",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_093835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93835",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_093838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93838",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_093839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93839",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_093840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93840",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_093841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93841",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -437,7 +437,7 @@ archive/issue_comments_093842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93842",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -470,7 +470,7 @@ archive/issue_comments_093843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93843",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_093844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93844",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -528,7 +528,7 @@ archive/issue_comments_093845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9665#issuecomment-93845",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

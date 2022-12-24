@@ -3,7 +3,7 @@
 archive/issues_000802.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n--- a/sage/graphs/graph.py      Wed Oct 03 02:18:16 2007 -0500\n+++ b/sage/graphs/graph.py      Wed Oct 03 02:25:05 2007 -0500\n@@ -255,6 +255,9 @@ class GenericGraph(SageObject):\n\n         Note that this is _not_ an isomorphism test.\n\n+        Note that the less-than and greater-than value returned here\n+        doesn't mean much.  The equality test is the useful thing.\n+\n         EXAMPLES:\n             sage: G = graphs.EmptyGraph()\n             sage: H = Graph()\n@@ -280,17 +283,19 @@ class GenericGraph(SageObject):\n             False\n\n         \"\"\"\n+        # If the graphs have different properties, they are not equal.\n         if type(self) != type(other):\n             return 1\n         elif self.loops() != other.loops():\n             return 1\n-        else:\n-            if self.multiple_edges() != other.multiple_edges():\n-                return 1\n+        elif self.multiple_edges() != other.multiple_edges():\n+            return 1\n\n         # If the vertices have different labels, the graphs are not equal.\n         if sorted(self.vertices()) != sorted(other.vertices()):\n             return 1\n+\n+        # Check that the edges are the same.\n         comp = enum(self) - enum(other)\n         if comp < 0:\n             return -1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/802\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n--- a/sage/graphs/graph.py      Wed Oct 03 02:18:16 2007 -0500\n+++ b/sage/graphs/graph.py      Wed Oct 03 02:25:05 2007 -0500\n@@ -255,6 +255,9 @@ class GenericGraph(SageObject):\n\n         Note that this is _not_ an isomorphism test.\n\n+        Note that the less-than and greater-than value returned here\n+        doesn't mean much.  The equality test is the useful thing.\n+\n         EXAMPLES:\n             sage: G = graphs.EmptyGraph()\n             sage: H = Graph()\n@@ -280,17 +283,19 @@ class GenericGraph(SageObject):\n             False\n\n         \"\"\"\n+        # If the graphs have different properties, they are not equal.\n         if type(self) != type(other):\n             return 1\n         elif self.loops() != other.loops():\n             return 1\n-        else:\n-            if self.multiple_edges() != other.multiple_edges():\n-                return 1\n+        elif self.multiple_edges() != other.multiple_edges():\n+            return 1\n\n         # If the vertices have different labels, the graphs are not equal.\n         if sorted(self.vertices()) != sorted(other.vertices()):\n             return 1\n+\n+        # Check that the edges are the same.\n         comp = enum(self) - enum(other)\n         if comp < 0:\n             return -1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/802\n\n",
     "created_at": "2007-10-03T07:35:11Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000802.json:
     "title": "[with patch] graphs: Streamline and document _cmp_ more",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/802",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -75,7 +75,7 @@ archive/issue_comments_004837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/802#issuecomment-4837",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_004838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/802#issuecomment-4838",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

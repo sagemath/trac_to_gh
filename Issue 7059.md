@@ -3,7 +3,7 @@
 archive/issues_007059.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  kcrisman\n\nThis is a followup to #6864. A few doctests are still writing some files to non-temporary directories.  I think the attached patch fixes this, and it also adds a paragraph to the developer's guide warning about this sort of thing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7059\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @kcrisman\n\nThis is a followup to #6864. A few doctests are still writing some files to non-temporary directories.  I think the attached patch fixes this, and it also adds a paragraph to the developer's guide warning about this sort of thing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7059\n\n",
     "created_at": "2009-09-29T02:59:58Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_007059.json:
     "title": "[with patch, needs review] Stop Sage tests from saving things to hard drive -- really!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7059",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
-CC:  kcrisman
+CC:  @kcrisman
 
 This is a followup to #6864. A few doctests are still writing some files to non-temporary directories.  I think the attached patch fixes this, and it also adds a paragraph to the developer's guide warning about this sort of thing.
 
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7059
 archive/issue_comments_058412.json:
 ```json
 {
-    "body": "Attachment [trac_7059-sagetmp.patch](tarball://root/attachments/some-uuid/ticket7059/trac_7059-sagetmp.patch) by kcrisman created at 2009-09-29 14:34:49\n\nPositive review.  You beat me to it!  Good idea to add it to the devel guide.",
+    "body": "Attachment [trac_7059-sagetmp.patch](tarball://root/attachments/some-uuid/ticket7059/trac_7059-sagetmp.patch) by @kcrisman created at 2009-09-29 14:34:49\n\nPositive review.  You beat me to it!  Good idea to add it to the devel guide.",
     "created_at": "2009-09-29T14:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7059#issuecomment-58412",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7059-sagetmp.patch](tarball://root/attachments/some-uuid/ticket7059/trac_7059-sagetmp.patch) by kcrisman created at 2009-09-29 14:34:49
+Attachment [trac_7059-sagetmp.patch](tarball://root/attachments/some-uuid/ticket7059/trac_7059-sagetmp.patch) by @kcrisman created at 2009-09-29 14:34:49
 
 Positive review.  You beat me to it!  Good idea to add it to the devel guide.
 
@@ -60,7 +60,7 @@ archive/issue_comments_058413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7059#issuecomment-58413",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_058414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7059#issuecomment-58414",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_058415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7059#issuecomment-58415",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

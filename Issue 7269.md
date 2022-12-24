@@ -3,7 +3,7 @@
 archive/issues_007269.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mpatel\n\nKeywords: sagenb notebook\n\nChanging the table layouts to CSS layouts will make it easier to make future edits, and will pave the path to user styling of the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7269\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nKeywords: sagenb notebook\n\nChanging the table layouts to CSS layouts will make it easier to make future edits, and will pave the path to user styling of the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7269\n\n",
     "created_at": "2009-10-23T15:26:53Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007269.json:
     "title": "SageNB -- Change table layouts to CSS layouts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7269",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
 
-CC:  was mpatel
+CC:  @williamstein @qed777
 
 Keywords: sagenb notebook
 
@@ -41,7 +41,7 @@ archive/issue_comments_060412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60412",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -54,16 +54,16 @@ Reduces/replaces table layouts with css layouts. Also cleans up the top bar temp
 archive/issue_comments_060413.json:
 ```json
 {
-    "body": "Attachment [trac_7269-table-reduction.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.patch) by timdumol created at 2009-10-23 15:33:18\n\nThis should do the job.",
+    "body": "Attachment [trac_7269-table-reduction.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.patch) by @TimDumol created at 2009-10-23 15:33:18\n\nThis should do the job.",
     "created_at": "2009-10-23T15:33:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60413",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7269-table-reduction.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.patch) by timdumol created at 2009-10-23 15:33:18
+Attachment [trac_7269-table-reduction.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.patch) by @TimDumol created at 2009-10-23 15:33:18
 
 This should do the job.
 
@@ -79,7 +79,7 @@ archive/issue_comments_060414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60414",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_060415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60415",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_060416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60416",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_060417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60417",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_060418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60418",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_060419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60419",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_060420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60420",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -239,16 +239,16 @@ Fixed the "Report a Problem" and "Toggle" links. Removed `user_controls.tmpl`. A
 archive/issue_comments_060421.json:
 ```json
 {
-    "body": "Attachment [trac_7269-table-reduction.2.2.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.2.2.patch) by timdumol created at 2009-10-24 02:38:22\n\nFixed the \"Report a Problem\" and \"Toggle\" links. Removed `user_controls.tmpl`. Added changes from #7249. Apply this patch only.",
+    "body": "Attachment [trac_7269-table-reduction.2.2.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.2.2.patch) by @TimDumol created at 2009-10-24 02:38:22\n\nFixed the \"Report a Problem\" and \"Toggle\" links. Removed `user_controls.tmpl`. Added changes from #7249. Apply this patch only.",
     "created_at": "2009-10-24T02:38:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60421",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7269-table-reduction.2.2.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.2.2.patch) by timdumol created at 2009-10-24 02:38:22
+Attachment [trac_7269-table-reduction.2.2.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.2.2.patch) by @TimDumol created at 2009-10-24 02:38:22
 
 Fixed the "Report a Problem" and "Toggle" links. Removed `user_controls.tmpl`. Added changes from #7249. Apply this patch only.
 
@@ -264,7 +264,7 @@ archive/issue_comments_060422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60422",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_060423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60423",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -295,16 +295,16 @@ The Toggle link problem was caused by a changed selector. Report a problem was d
 archive/issue_comments_060424.json:
 ```json
 {
-    "body": "Attachment [trac_7269-table-reduction.3.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.3.patch) by timdumol created at 2009-10-24 03:00:37\n\nFixed \"None\" value in search box due to Jinja2 migration.",
+    "body": "Attachment [trac_7269-table-reduction.3.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.3.patch) by @TimDumol created at 2009-10-24 03:00:37\n\nFixed \"None\" value in search box due to Jinja2 migration.",
     "created_at": "2009-10-24T03:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60424",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7269-table-reduction.3.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.3.patch) by timdumol created at 2009-10-24 03:00:37
+Attachment [trac_7269-table-reduction.3.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.3.patch) by @TimDumol created at 2009-10-24 03:00:37
 
 Fixed "None" value in search box due to Jinja2 migration.
 
@@ -320,7 +320,7 @@ archive/issue_comments_060425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60425",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -333,16 +333,16 @@ Removed an escape that was no longer needed.
 archive/issue_comments_060426.json:
 ```json
 {
-    "body": "Attachment [trac_7269-table-reduction.5.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.5.patch) by timdumol created at 2009-10-24 10:19:13\n\nAdded parentheses to macro `actions` (needed for Jinja2 migration)",
+    "body": "Attachment [trac_7269-table-reduction.5.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.5.patch) by @TimDumol created at 2009-10-24 10:19:13\n\nAdded parentheses to macro `actions` (needed for Jinja2 migration)",
     "created_at": "2009-10-24T10:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60426",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7269-table-reduction.5.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.5.patch) by timdumol created at 2009-10-24 10:19:13
+Attachment [trac_7269-table-reduction.5.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.5.patch) by @TimDumol created at 2009-10-24 10:19:13
 
 Added parentheses to macro `actions` (needed for Jinja2 migration)
 
@@ -358,7 +358,7 @@ archive/issue_comments_060427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60427",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_060428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60428",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_060429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60429",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_060430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60430",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_060431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60431",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -537,7 +537,7 @@ archive/issue_comments_060432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60432",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_060433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60433",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -575,7 +575,7 @@ archive/issue_comments_060434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60434",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -593,7 +593,7 @@ archive/issue_comments_060435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60435",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_060436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60436",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -634,7 +634,7 @@ archive/issue_comments_060437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60437",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -652,7 +652,7 @@ archive/issue_comments_060438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60438",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -675,16 +675,16 @@ That would be excellent. Would you mind posting the code?
 archive/issue_comments_060439.json:
 ```json
 {
-    "body": "Attachment [ws_list.js](tarball://root/attachments/some-uuid/ticket7269/ws_list.js) by mpatel created at 2009-10-31 10:40:58\n\nJust the separated minimal ws_list.js, for experiments.  This is not a patch.",
+    "body": "Attachment [ws_list.js](tarball://root/attachments/some-uuid/ticket7269/ws_list.js) by @qed777 created at 2009-10-31 10:40:58\n\nJust the separated minimal ws_list.js, for experiments.  This is not a patch.",
     "created_at": "2009-10-31T10:40:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60439",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [ws_list.js](tarball://root/attachments/some-uuid/ticket7269/ws_list.js) by mpatel created at 2009-10-31 10:40:58
+Attachment [ws_list.js](tarball://root/attachments/some-uuid/ticket7269/ws_list.js) by @qed777 created at 2009-10-31 10:40:58
 
 Just the separated minimal ws_list.js, for experiments.  This is not a patch.
 
@@ -700,7 +700,7 @@ archive/issue_comments_060440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60440",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -725,7 +725,7 @@ archive/issue_comments_060441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60441",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -746,7 +746,7 @@ archive/issue_comments_060442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60442",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -770,7 +770,7 @@ archive/issue_comments_060443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60443",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -788,7 +788,7 @@ archive/issue_comments_060444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60444",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -801,16 +801,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_060445.json:
 ```json
 {
-    "body": "Attachment [trac_7269-table-reduction.6.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.6.patch) by timdumol created at 2009-12-13 06:48:05\n\nThis patch should fix the problems. I have included the SASS source files, with a readme on how to edit them. I hope the patch file size does not daunt anyone -- a large contributor is that both the SASS source files and the generated CSS are included.",
+    "body": "Attachment [trac_7269-table-reduction.6.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.6.patch) by @TimDumol created at 2009-12-13 06:48:05\n\nThis patch should fix the problems. I have included the SASS source files, with a readme on how to edit them. I hope the patch file size does not daunt anyone -- a large contributor is that both the SASS source files and the generated CSS are included.",
     "created_at": "2009-12-13T06:48:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60445",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7269-table-reduction.6.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.6.patch) by timdumol created at 2009-12-13 06:48:05
+Attachment [trac_7269-table-reduction.6.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.6.patch) by @TimDumol created at 2009-12-13 06:48:05
 
 This patch should fix the problems. I have included the SASS source files, with a readme on how to edit them. I hope the patch file size does not daunt anyone -- a large contributor is that both the SASS source files and the generated CSS are included.
 
@@ -826,7 +826,7 @@ archive/issue_comments_060446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60446",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -839,16 +839,16 @@ A bit of cleanup to make the Se tests less mercurial.
 archive/issue_comments_060447.json:
 ```json
 {
-    "body": "Attachment [trac_7269-table-reduction.8.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.8.patch) by timdumol created at 2009-12-13 08:34:39\n\nFixed `ws_list.js` to include the fix from #5100",
+    "body": "Attachment [trac_7269-table-reduction.8.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.8.patch) by @TimDumol created at 2009-12-13 08:34:39\n\nFixed `ws_list.js` to include the fix from #5100",
     "created_at": "2009-12-13T08:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60447",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7269-table-reduction.8.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.8.patch) by timdumol created at 2009-12-13 08:34:39
+Attachment [trac_7269-table-reduction.8.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.8.patch) by @TimDumol created at 2009-12-13 08:34:39
 
 Fixed `ws_list.js` to include the fix from #5100
 
@@ -859,16 +859,16 @@ Fixed `ws_list.js` to include the fix from #5100
 archive/issue_comments_060448.json:
 ```json
 {
-    "body": "Attachment [trac_7269-table-reduction.9.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.9.patch) by mpatel created at 2009-12-13 12:51:45\n\nVarious fixes.  Rebased vs. #7650.",
+    "body": "Attachment [trac_7269-table-reduction.9.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.9.patch) by @qed777 created at 2009-12-13 12:51:45\n\nVarious fixes.  Rebased vs. #7650.",
     "created_at": "2009-12-13T12:51:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60448",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7269-table-reduction.9.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.9.patch) by mpatel created at 2009-12-13 12:51:45
+Attachment [trac_7269-table-reduction.9.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.9.patch) by @qed777 created at 2009-12-13 12:51:45
 
 Various fixes.  Rebased vs. #7650.
 
@@ -884,7 +884,7 @@ archive/issue_comments_060449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60449",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -936,7 +936,7 @@ archive/issue_comments_060450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60450",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -955,16 +955,16 @@ This patch update deletes the obsolete files, aligns the username and removes th
 archive/issue_comments_060451.json:
 ```json
 {
-    "body": "Attachment [trac_7269-table-reduction.10.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.10.patch) by timdumol created at 2009-12-19 11:45:08\n\nAligns the username, removes the Jinja2 migration, deletes some obsolete files.",
+    "body": "Attachment [trac_7269-table-reduction.10.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.10.patch) by @TimDumol created at 2009-12-19 11:45:08\n\nAligns the username, removes the Jinja2 migration, deletes some obsolete files.",
     "created_at": "2009-12-19T11:45:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60451",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7269-table-reduction.10.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.10.patch) by timdumol created at 2009-12-19 11:45:08
+Attachment [trac_7269-table-reduction.10.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.10.patch) by @TimDumol created at 2009-12-19 11:45:08
 
 Aligns the username, removes the Jinja2 migration, deletes some obsolete files.
 
@@ -980,7 +980,7 @@ archive/issue_comments_060452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60452",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1008,7 +1008,7 @@ archive/issue_comments_060453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60453",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1021,16 +1021,16 @@ Top bar tweaks and doctest fixes.  Replaces previous.
 archive/issue_comments_060454.json:
 ```json
 {
-    "body": "Attachment [trac_7269-table-reduction.12.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.12.patch) by mpatel created at 2009-12-30 07:31:24\n\nInput cell tweaks.  Include jQuery just once.  Replaces previous.",
+    "body": "Attachment [trac_7269-table-reduction.12.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.12.patch) by @qed777 created at 2009-12-30 07:31:24\n\nInput cell tweaks.  Include jQuery just once.  Replaces previous.",
     "created_at": "2009-12-30T07:31:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60454",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7269-table-reduction.12.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.12.patch) by mpatel created at 2009-12-30 07:31:24
+Attachment [trac_7269-table-reduction.12.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.12.patch) by @qed777 created at 2009-12-30 07:31:24
 
 Input cell tweaks.  Include jQuery just once.  Replaces previous.
 
@@ -1046,7 +1046,7 @@ archive/issue_comments_060455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60455",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1064,7 +1064,7 @@ archive/issue_comments_060456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60456",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1082,7 +1082,7 @@ archive/issue_comments_060457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60457",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1110,7 +1110,7 @@ archive/issue_comments_060458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60458",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1123,16 +1123,16 @@ Changing priority from minor to major.
 archive/issue_comments_060459.json:
 ```json
 {
-    "body": "Attachment [trac_7269-table-reduction.13.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.13.patch) by mpatel created at 2010-01-01 23:42:23\n\nApply #7811 to `ws_list.js`.  Replaces previous.",
+    "body": "Attachment [trac_7269-table-reduction.13.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.13.patch) by @qed777 created at 2010-01-01 23:42:23\n\nApply #7811 to `ws_list.js`.  Replaces previous.",
     "created_at": "2010-01-01T23:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60459",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7269-table-reduction.13.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.13.patch) by mpatel created at 2010-01-01 23:42:23
+Attachment [trac_7269-table-reduction.13.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.13.patch) by @qed777 created at 2010-01-01 23:42:23
 
 Apply #7811 to `ws_list.js`.  Replaces previous.
 
@@ -1148,7 +1148,7 @@ archive/issue_comments_060460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60460",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1166,7 +1166,7 @@ archive/issue_comments_060461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60461",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1179,16 +1179,16 @@ Rebase vs. #7811 v2.  Replaces previous.
 archive/issue_comments_060462.json:
 ```json
 {
-    "body": "Attachment [trac_7269-table-reduction.14.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.14.patch) by was created at 2010-01-04 07:00:05\n\nI can't merge this into sagenb-0.4.8 (which I'm about to release).   Please rebase it once sage-4.3.1.alpha0 comes out with this new sagenb.  Thanks!\n\n\n```\napplying trac_7269-table-reduction.14.patch\npatching file sagenb/notebook/notebook.py\nHunk #2 succeeded at 950 with fuzz 2 (offset 3 lines).\nHunk #3 FAILED at 1265\nHunk #4 succeeded at 1334 with fuzz 2 (offset 9 lines).\nHunk #5 succeeded at 1407 with fuzz 1 (offset 9 lines).\nHunk #6 succeeded at 1441 with fuzz 1 (offset 9 lines).\nHunk #7 FAILED at 1467\nHunk #8 succeeded at 1486 with fuzz 1 (offset 9 lines).\nHunk #9 succeeded at 1589 with fuzz 1 (offset 9 lines).\nHunk #10 FAILED at 1608\nHunk #11 succeeded at 1651 with fuzz 1 (offset 9 lines).\nHunk #12 FAILED at 1706\nHunk #13 succeeded at 1748 with fuzz 1 (offset 10 lines).\nHunk #14 FAILED at 1757\n5 out of 14 hunks FAILED -- saving rejects to file sagenb/notebook/notebook.py.rej\npatching file sagenb/notebook/twist.py\nHunk #7 succeeded at 960 with fuzz 2 (offset 2 lines).\npatching file sagenb/notebook/worksheet.py\nHunk #1 FAILED at 1712\nHunk #2 FAILED at 1763\nHunk #3 FAILED at 2300\nHunk #4 succeeded at 2442 with fuzz 1 (offset 87 lines).\nHunk #5 succeeded at 2458 with fuzz 1 (offset 87 lines).\n3 out of 6 hunks FAILED -- saving rejects to file sagenb/notebook/worksheet.py.rej\nabort: patch failed to apply\n\n```\n",
+    "body": "Attachment [trac_7269-table-reduction.14.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.14.patch) by @williamstein created at 2010-01-04 07:00:05\n\nI can't merge this into sagenb-0.4.8 (which I'm about to release).   Please rebase it once sage-4.3.1.alpha0 comes out with this new sagenb.  Thanks!\n\n\n```\napplying trac_7269-table-reduction.14.patch\npatching file sagenb/notebook/notebook.py\nHunk #2 succeeded at 950 with fuzz 2 (offset 3 lines).\nHunk #3 FAILED at 1265\nHunk #4 succeeded at 1334 with fuzz 2 (offset 9 lines).\nHunk #5 succeeded at 1407 with fuzz 1 (offset 9 lines).\nHunk #6 succeeded at 1441 with fuzz 1 (offset 9 lines).\nHunk #7 FAILED at 1467\nHunk #8 succeeded at 1486 with fuzz 1 (offset 9 lines).\nHunk #9 succeeded at 1589 with fuzz 1 (offset 9 lines).\nHunk #10 FAILED at 1608\nHunk #11 succeeded at 1651 with fuzz 1 (offset 9 lines).\nHunk #12 FAILED at 1706\nHunk #13 succeeded at 1748 with fuzz 1 (offset 10 lines).\nHunk #14 FAILED at 1757\n5 out of 14 hunks FAILED -- saving rejects to file sagenb/notebook/notebook.py.rej\npatching file sagenb/notebook/twist.py\nHunk #7 succeeded at 960 with fuzz 2 (offset 2 lines).\npatching file sagenb/notebook/worksheet.py\nHunk #1 FAILED at 1712\nHunk #2 FAILED at 1763\nHunk #3 FAILED at 2300\nHunk #4 succeeded at 2442 with fuzz 1 (offset 87 lines).\nHunk #5 succeeded at 2458 with fuzz 1 (offset 87 lines).\n3 out of 6 hunks FAILED -- saving rejects to file sagenb/notebook/worksheet.py.rej\nabort: patch failed to apply\n\n```\n",
     "created_at": "2010-01-04T07:00:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60462",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7269-table-reduction.14.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.14.patch) by was created at 2010-01-04 07:00:05
+Attachment [trac_7269-table-reduction.14.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.14.patch) by @williamstein created at 2010-01-04 07:00:05
 
 I can't merge this into sagenb-0.4.8 (which I'm about to release).   Please rebase it once sage-4.3.1.alpha0 comes out with this new sagenb.  Thanks!
 
@@ -1236,7 +1236,7 @@ archive/issue_comments_060463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60463",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -1249,16 +1249,16 @@ rebased vs sagenb-0.4.9
 archive/issue_comments_060464.json:
 ```json
 {
-    "body": "Attachment [trac_7269-table-reduction.15.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.15.patch) by timdumol created at 2010-01-04 20:00:08\n\nRebased version posted.",
+    "body": "Attachment [trac_7269-table-reduction.15.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.15.patch) by @TimDumol created at 2010-01-04 20:00:08\n\nRebased version posted.",
     "created_at": "2010-01-04T20:00:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60464",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7269-table-reduction.15.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.15.patch) by timdumol created at 2010-01-04 20:00:08
+Attachment [trac_7269-table-reduction.15.patch](tarball://root/attachments/some-uuid/ticket7269/trac_7269-table-reduction.15.patch) by @TimDumol created at 2010-01-04 20:00:08
 
 Rebased version posted.
 
@@ -1274,7 +1274,7 @@ archive/issue_comments_060465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60465",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1292,7 +1292,7 @@ archive/issue_comments_060466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60466",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1310,7 +1310,7 @@ archive/issue_comments_060467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60467",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1328,7 +1328,7 @@ archive/issue_comments_060468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7269",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7269#issuecomment-60468",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

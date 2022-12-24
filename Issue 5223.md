@@ -3,7 +3,7 @@
 archive/issues_005223.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  roed\n\nBEFORE:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 228 \u00b5s per loop\n```\n\n\nAFTER:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 48.3 \u00b5s per loop\n```\n\n\nThe bug was doing the shortcut case, but then not returning and hence doing the long case *as well*.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5223\n\n",
+    "body": "Assignee: somebody\n\nCC:  @roed314\n\nBEFORE:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 228 \u00b5s per loop\n```\n\n\nAFTER:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 48.3 \u00b5s per loop\n```\n\n\nThe bug was doing the shortcut case, but then not returning and hence doing the long case *as well*.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5223\n\n",
     "created_at": "2009-02-09T20:03:19Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_005223.json:
     "title": "[with patch; needs review] silly bug in flint wrapper makes it a factor of 10 slower for division of a polynomial by an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5223",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
 
-CC:  roed
+CC:  @roed314
 
 BEFORE:
 
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5223
 archive/issue_comments_040028.json:
 ```json
 {
-    "body": "Attachment [trac_5223.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.patch) by burcin created at 2009-02-09 20:18:21\n\nPatch looks good. Fixes obvious mistake on my part. :)",
+    "body": "Attachment [trac_5223.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.patch) by @burcin created at 2009-02-09 20:18:21\n\nPatch looks good. Fixes obvious mistake on my part. :)",
     "created_at": "2009-02-09T20:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40028",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5223.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.patch) by burcin created at 2009-02-09 20:18:21
+Attachment [trac_5223.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.patch) by @burcin created at 2009-02-09 20:18:21
 
 Patch looks good. Fixes obvious mistake on my part. :)
 
@@ -155,16 +155,16 @@ Michael
 archive/issue_comments_040031.json:
 ```json
 {
-    "body": "Attachment [trac_5223.take2.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.take2.patch) by burcin created at 2009-03-15 13:38:45",
+    "body": "Attachment [trac_5223.take2.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.take2.patch) by @burcin created at 2009-03-15 13:38:45",
     "created_at": "2009-03-15T13:38:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40031",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5223.take2.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.take2.patch) by burcin created at 2009-03-15 13:38:45
+Attachment [trac_5223.take2.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.take2.patch) by @burcin created at 2009-03-15 13:38:45
 
 
 
@@ -178,7 +178,7 @@ archive/issue_comments_040032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40032",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -193,16 +193,16 @@ All tests under sage/rings/polynomial pass with attachment:trac_5223.take2.patch
 archive/issue_comments_040033.json:
 ```json
 {
-    "body": "Changing assignee from somebody to burcin.",
+    "body": "Changing assignee from somebody to @burcin.",
     "created_at": "2009-03-15T13:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40033",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from somebody to burcin.
+Changing assignee from somebody to @burcin.
 
 
 
@@ -216,7 +216,7 @@ archive/issue_comments_040034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40034",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_040035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40035",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

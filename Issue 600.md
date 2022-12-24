@@ -3,7 +3,7 @@
 archive/issues_000600.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt takes nearly a gig at some points, which is bad on a system like my laptop.  This is quite painful.\n\nIssue created by migration from https://trac.sagemath.org/ticket/600\n\n",
+    "body": "Assignee: @williamstein\n\nIt takes nearly a gig at some points, which is bad on a system like my laptop.  This is quite painful.\n\nIssue created by migration from https://trac.sagemath.org/ticket/600\n\n",
     "created_at": "2007-09-06T17:48:58Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_000600.json:
     "title": "sage -t --optional multi_polynomial_element.py takes *way* too  ram",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/600",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It takes nearly a gig at some points, which is bad on a system like my laptop.  This is quite painful.
 
@@ -81,7 +81,7 @@ archive/issue_comments_003101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/600#issuecomment-3101",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_003102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/600#issuecomment-3102",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

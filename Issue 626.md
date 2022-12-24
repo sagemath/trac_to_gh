@@ -3,7 +3,7 @@
 archive/issues_000626.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/626\n\n",
+    "body": "Assignee: @craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/626\n\n",
     "created_at": "2007-09-09T05:12:41Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000626.json:
     "title": "error building libcsage.so on some machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/626",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_003218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/626#issuecomment-3218",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_003219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/626#issuecomment-3219",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_003220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/626#issuecomment-3220",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

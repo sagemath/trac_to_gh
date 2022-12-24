@@ -14,7 +14,7 @@ archive/issues_002670.json:
     "title": "matrix cmp expr should return a matrix with True/False entries from mapping the test to the entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2670",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -50,7 +50,7 @@ archive/issue_comments_018375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2670#issuecomment-18375",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -63,16 +63,16 @@ uh, the return above should be `matrix([[False, False], [True, True]])`, of cour
 archive/issue_comments_018376.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2008-03-26T18:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2670#issuecomment-18376",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_018377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2670#issuecomment-18377",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_018378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2670#issuecomment-18378",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_018379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2670#issuecomment-18379",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -147,16 +147,16 @@ sage: m.find(lambda x:x>2)
 archive/issue_comments_018380.json:
 ```json
 {
-    "body": "Attachment [2670.patch](tarball://root/attachments/some-uuid/ticket2670/2670.patch) by dfdeshom created at 2008-04-03 15:36:39\n\nA patch is up. Turns out you cannot create a matrix with True and False entries, so I returned one with entries in GF(2).",
+    "body": "Attachment [2670.patch](tarball://root/attachments/some-uuid/ticket2670/2670.patch) by @dfdeshom created at 2008-04-03 15:36:39\n\nA patch is up. Turns out you cannot create a matrix with True and False entries, so I returned one with entries in GF(2).",
     "created_at": "2008-04-03T15:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2670#issuecomment-18380",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2670.patch](tarball://root/attachments/some-uuid/ticket2670/2670.patch) by dfdeshom created at 2008-04-03 15:36:39
+Attachment [2670.patch](tarball://root/attachments/some-uuid/ticket2670/2670.patch) by @dfdeshom created at 2008-04-03 15:36:39
 
 A patch is up. Turns out you cannot create a matrix with True and False entries, so I returned one with entries in GF(2).
 
@@ -172,7 +172,7 @@ archive/issue_comments_018381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2670#issuecomment-18381",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

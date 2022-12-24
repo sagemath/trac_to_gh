@@ -14,7 +14,7 @@ archive/issues_001897.json:
     "title": "%latex -- bug in passing in predefined sage variables (serious but probably very easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1897",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1897
 archive/issue_comments_012005.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-19T13:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1897#issuecomment-12005",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_012006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1897#issuecomment-12006",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -86,16 +86,16 @@ Changing status from new to assigned.
 archive/issue_comments_012007.json:
 ```json
 {
-    "body": "Attachment [trac_1897.patch](tarball://root/attachments/some-uuid/ticket1897/trac_1897.patch) by mhansen created at 2009-01-19 13:50:11\n\nThe problem was caused by syseval in sage.server.support needing the second positional argument to be an argument for global variables.",
+    "body": "Attachment [trac_1897.patch](tarball://root/attachments/some-uuid/ticket1897/trac_1897.patch) by @mwhansen created at 2009-01-19 13:50:11\n\nThe problem was caused by syseval in sage.server.support needing the second positional argument to be an argument for global variables.",
     "created_at": "2009-01-19T13:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1897#issuecomment-12007",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_1897.patch](tarball://root/attachments/some-uuid/ticket1897/trac_1897.patch) by mhansen created at 2009-01-19 13:50:11
+Attachment [trac_1897.patch](tarball://root/attachments/some-uuid/ticket1897/trac_1897.patch) by @mwhansen created at 2009-01-19 13:50:11
 
 The problem was caused by syseval in sage.server.support needing the second positional argument to be an argument for global variables.
 
@@ -135,7 +135,7 @@ archive/issue_comments_012009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1897#issuecomment-12009",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

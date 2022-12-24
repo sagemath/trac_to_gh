@@ -3,7 +3,7 @@
 archive/issues_002766.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nWhen a graph is small or dense, the adjacency matrix should be a dense matrix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2766\n\n",
+    "body": "Assignee: @rlmill\n\nWhen a graph is small or dense, the adjacency matrix should be a dense matrix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2766\n\n",
     "created_at": "2008-04-02T02:24:18Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002766.json:
     "title": "graph adjacency matrix defaults to sparse",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2766",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 When a graph is small or dense, the adjacency matrix should be a dense matrix.
 
@@ -37,7 +37,7 @@ archive/issue_comments_018996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18996",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -50,16 +50,16 @@ This is the ONLY patch---ignore all others.
 archive/issue_comments_018997.json:
 ```json
 {
-    "body": "Attachment [trac-2766-graph-am-dense.patch](tarball://root/attachments/some-uuid/ticket2766/trac-2766-graph-am-dense.patch) by jason created at 2008-04-02 03:14:47\n\nIgnore the .2.patch file---it contains unrelated changes by accident.",
+    "body": "Attachment [trac-2766-graph-am-dense.patch](tarball://root/attachments/some-uuid/ticket2766/trac-2766-graph-am-dense.patch) by @jasongrout created at 2008-04-02 03:14:47\n\nIgnore the .2.patch file---it contains unrelated changes by accident.",
     "created_at": "2008-04-02T03:14:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18997",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-2766-graph-am-dense.patch](tarball://root/attachments/some-uuid/ticket2766/trac-2766-graph-am-dense.patch) by jason created at 2008-04-02 03:14:47
+Attachment [trac-2766-graph-am-dense.patch](tarball://root/attachments/some-uuid/ticket2766/trac-2766-graph-am-dense.patch) by @jasongrout created at 2008-04-02 03:14:47
 
 Ignore the .2.patch file---it contains unrelated changes by accident.
 
@@ -75,7 +75,7 @@ archive/issue_comments_018998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18998",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

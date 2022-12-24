@@ -3,7 +3,7 @@
 archive/issues_008702.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  novoselt mhansen sage-combinat\n\nThis is the future Cython replacement for CombinatorialObject. \n\nPatch in preparation in sage-combinat queue\n\nIssue created by migration from https://trac.sagemath.org/ticket/8702\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @novoselt @mwhansen sage-combinat\n\nThis is the future Cython replacement for CombinatorialObject. \n\nPatch in preparation in sage-combinat queue\n\nIssue created by migration from https://trac.sagemath.org/ticket/8702\n\n",
     "created_at": "2010-04-17T09:32:15Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_008702.json:
     "title": "Datastructure for objects with prototype (clone) design pattern.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8702",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
-CC:  novoselt mhansen sage-combinat
+CC:  @novoselt @mwhansen sage-combinat
 
 This is the future Cython replacement for CombinatorialObject. 
 
@@ -41,7 +41,7 @@ archive/issue_comments_079308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79308",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_079309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79309",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_079310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79310",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_079311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79311",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_079312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79312",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_079313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79313",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_079314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79314",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_079315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79315",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_079316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79316",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -232,16 +232,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_079317.json:
 ```json
 {
-    "body": "Attachment [diff-8702](tarball://root/attachments/some-uuid/ticket8702/diff-8702) by hivert created at 2010-11-19 08:53:09",
+    "body": "Attachment [diff-8702](tarball://root/attachments/some-uuid/ticket8702/diff-8702) by @hivert created at 2010-11-19 08:53:09",
     "created_at": "2010-11-19T08:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79317",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [diff-8702](tarball://root/attachments/some-uuid/ticket8702/diff-8702) by hivert created at 2010-11-19 08:53:09
+Attachment [diff-8702](tarball://root/attachments/some-uuid/ticket8702/diff-8702) by @hivert created at 2010-11-19 08:53:09
 
 
 
@@ -255,7 +255,7 @@ archive/issue_comments_079318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79318",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_079319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79319",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -299,16 +299,16 @@ Only apply [trac_8702-list_clone-fh.patch](http://trac.sagemath.org/sage_trac/at
 archive/issue_comments_079320.json:
 ```json
 {
-    "body": "Attachment [trac_8702-list_clone-fh.2.patch](tarball://root/attachments/some-uuid/ticket8702/trac_8702-list_clone-fh.2.patch) by hivert created at 2010-11-19 09:56:33",
+    "body": "Attachment [trac_8702-list_clone-fh.2.patch](tarball://root/attachments/some-uuid/ticket8702/trac_8702-list_clone-fh.2.patch) by @hivert created at 2010-11-19 09:56:33",
     "created_at": "2010-11-19T09:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79320",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8702-list_clone-fh.2.patch](tarball://root/attachments/some-uuid/ticket8702/trac_8702-list_clone-fh.2.patch) by hivert created at 2010-11-19 09:56:33
+Attachment [trac_8702-list_clone-fh.2.patch](tarball://root/attachments/some-uuid/ticket8702/trac_8702-list_clone-fh.2.patch) by @hivert created at 2010-11-19 09:56:33
 
 
 
@@ -322,7 +322,7 @@ archive/issue_comments_079321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79321",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -337,16 +337,16 @@ Apply only [trac_8702-list_clone-fh.2.patch](http://trac.sagemath.org/sage_trac/
 archive/issue_comments_079322.json:
 ```json
 {
-    "body": "Attachment [trac_8702-list_clone-fh.patch](tarball://root/attachments/some-uuid/ticket8702/trac_8702-list_clone-fh.patch) by hivert created at 2010-11-19 10:04:17\n\nOops ! I forgot to add Copyright notices... Sorry for the mess.\n\nApply only [trac_8702-list_clone-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8702/trac_8702-list_clone-fh.patch)",
+    "body": "Attachment [trac_8702-list_clone-fh.patch](tarball://root/attachments/some-uuid/ticket8702/trac_8702-list_clone-fh.patch) by @hivert created at 2010-11-19 10:04:17\n\nOops ! I forgot to add Copyright notices... Sorry for the mess.\n\nApply only [trac_8702-list_clone-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8702/trac_8702-list_clone-fh.patch)",
     "created_at": "2010-11-19T10:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79322",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8702-list_clone-fh.patch](tarball://root/attachments/some-uuid/ticket8702/trac_8702-list_clone-fh.patch) by hivert created at 2010-11-19 10:04:17
+Attachment [trac_8702-list_clone-fh.patch](tarball://root/attachments/some-uuid/ticket8702/trac_8702-list_clone-fh.patch) by @hivert created at 2010-11-19 10:04:17
 
 Oops ! I forgot to add Copyright notices... Sorry for the mess.
 
@@ -364,7 +364,7 @@ archive/issue_comments_079323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79323",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_079324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8702#issuecomment-79324",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

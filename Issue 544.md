@@ -14,7 +14,7 @@ archive/issues_000544.json:
     "title": "doctesting const.tex should not pop up any windows",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/544",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: wdjoyner
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/544
 archive/issue_comments_002755.json:
 ```json
 {
-    "body": "Changing assignee from wdjoyner to mhansen.",
+    "body": "Changing assignee from wdjoyner to @mwhansen.",
     "created_at": "2007-09-06T23:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/544#issuecomment-2755",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from wdjoyner to mhansen.
+Changing assignee from wdjoyner to @mwhansen.
 
 
 
@@ -55,16 +55,16 @@ Changing assignee from wdjoyner to mhansen.
 archive/issue_comments_002756.json:
 ```json
 {
-    "body": "Attachment [544.patch](tarball://root/attachments/some-uuid/ticket544/544.patch) by mhansen created at 2007-09-06 23:45:53\n\nPatch attached.",
+    "body": "Attachment [544.patch](tarball://root/attachments/some-uuid/ticket544/544.patch) by @mwhansen created at 2007-09-06 23:45:53\n\nPatch attached.",
     "created_at": "2007-09-06T23:45:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/544#issuecomment-2756",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [544.patch](tarball://root/attachments/some-uuid/ticket544/544.patch) by mhansen created at 2007-09-06 23:45:53
+Attachment [544.patch](tarball://root/attachments/some-uuid/ticket544/544.patch) by @mwhansen created at 2007-09-06 23:45:53
 
 Patch attached.
 
@@ -80,7 +80,7 @@ archive/issue_comments_002757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/544#issuecomment-2757",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

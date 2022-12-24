@@ -3,7 +3,7 @@
 archive/issues_008625.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  jason\n\nKeywords: scalar,plot\n\nThis should be a function that plots a two variable funtion as a group of isolines along a given place of the xy plane.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8625\n\n",
+    "body": "Assignee: olazo\n\nCC:  @jasongrout\n\nKeywords: scalar,plot\n\nThis should be a function that plots a two variable funtion as a group of isolines along a given place of the xy plane.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8625\n\n",
     "created_at": "2010-03-29T18:46:11Z",
     "labels": [
         "graphics",
@@ -19,7 +19,7 @@ archive/issues_008625.json:
 ```
 Assignee: olazo
 
-CC:  jason
+CC:  @jasongrout
 
 Keywords: scalar,plot
 
@@ -41,7 +41,7 @@ archive/issue_comments_078196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78196",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_078199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78199",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_078201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78201",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_078202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78202",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

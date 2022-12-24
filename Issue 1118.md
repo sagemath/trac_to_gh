@@ -3,7 +3,7 @@
 archive/issues_001118.json:
 ```json
 {
-    "body": "Assignee: was\n\nPaul Zimmermann wrote:\n\"\"\"\nIt seems the cpu time reported by SAGE does not include that of the spawned\nprocesses\n\n\n```\nmermoz% sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.10, Release Date: 2007-10-28                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: p=65257526772644948764799212887702573391887715235981530343703506731\nsage: time FindGroupOrder(p,489731259)\nCPU times: user 0.87 s, sys: 0.07 s, total: 0.94 s\nWall time: 70.30\n2^2 * 3^2 * 7 * 13 * 5521 * 589213 * 1103171 * 1149307 * 1310261 * 10091759 * 63065897 * 120597437 * 48024231181\n```\n\nI doubt the given cpu times take into account the PARI/GP computations. As a  comparison, Magma takes 55s for that computation on my computer.\n\nThe wall time is not very useful (my machine has a load of 3-4). It would be more useful to have to cpu time used by the spawned processes, or simply the total cpu time used by SAGE and those processes.\n\"\"\"\n\nThus we should figure out how to do this in a portable way. May the POSIX gurus speak up!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1118\n\n",
+    "body": "Assignee: @williamstein\n\nPaul Zimmermann wrote:\n\"\"\"\nIt seems the cpu time reported by SAGE does not include that of the spawned\nprocesses\n\n\n```\nmermoz% sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.10, Release Date: 2007-10-28                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: p=65257526772644948764799212887702573391887715235981530343703506731\nsage: time FindGroupOrder(p,489731259)\nCPU times: user 0.87 s, sys: 0.07 s, total: 0.94 s\nWall time: 70.30\n2^2 * 3^2 * 7 * 13 * 5521 * 589213 * 1103171 * 1149307 * 1310261 * 10091759 * 63065897 * 120597437 * 48024231181\n```\n\nI doubt the given cpu times take into account the PARI/GP computations. As a  comparison, Magma takes 55s for that computation on my computer.\n\nThe wall time is not very useful (my machine has a load of 3-4). It would be more useful to have to cpu time used by the spawned processes, or simply the total cpu time used by SAGE and those processes.\n\"\"\"\n\nThus we should figure out how to do this in a portable way. May the POSIX gurus speak up!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1118\n\n",
     "created_at": "2007-11-07T13:57:55Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001118.json:
     "title": "cputime should include the cpu times of all subprocesses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1118",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Paul Zimmermann wrote:
 """
@@ -61,7 +61,7 @@ archive/issue_comments_006757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1118#issuecomment-6757",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_006758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1118#issuecomment-6758",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_006759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1118#issuecomment-6759",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

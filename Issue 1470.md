@@ -3,7 +3,7 @@
 archive/issues_001470.json:
 ```json
 {
-    "body": "Assignee: was\n\nMaxima is currently at 5.14.rc1. Once it is release update the spkg.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1470\n\n",
+    "body": "Assignee: @williamstein\n\nMaxima is currently at 5.14.rc1. Once it is release update the spkg.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1470\n\n",
     "created_at": "2007-12-12T09:27:32Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001470.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Maxima is currently at 5.14.rc1. Once it is release update the spkg.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1470
 archive/issue_comments_009451.json:
 ```json
 {
-    "body": "Changing assignee from was to jmbr.",
+    "body": "Changing assignee from @williamstein to @jmbr.",
     "created_at": "2008-01-08T20:28:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9451",
-    "user": "jmbr"
+    "user": "@jmbr"
 }
 ```
 
-Changing assignee from was to jmbr.
+Changing assignee from @williamstein to @jmbr.
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_009452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9452",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ Peace
 archive/issue_comments_009453.json:
 ```json
 {
-    "body": "Changing assignee from jmbr to mabshoff.",
+    "body": "Changing assignee from @jmbr to mabshoff.",
     "created_at": "2008-03-22T07:06:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1470",
     "type": "issue_comment",
@@ -140,7 +140,7 @@ archive/issue_comments_009453.json:
 }
 ```
 
-Changing assignee from jmbr to mabshoff.
+Changing assignee from @jmbr to mabshoff.
 
 
 
@@ -261,7 +261,7 @@ archive/issue_comments_009456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9456",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_009458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9458",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_009460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9460",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_009464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1470#issuecomment-9464",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

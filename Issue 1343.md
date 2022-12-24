@@ -3,7 +3,7 @@
 archive/issues_001343.json:
 ```json
 {
-    "body": "Assignee: malb\n\nSingular's factorize command is immensely slow at times, but other times it is decent.  I'd not report this as a bug except for the fact that it appears that some tuning of something might fix this.\n\nRun this in singular (binary 3-0-4 from upstream as well):\n\n```\nring R=0,(p10,g0,g1,g2,g3,g4,X1,X2),dp;\npoly t=-p10^170*X1^10*X2^10+p10^130*X1^10*X2^5+p10^130*X1^5*X2^10-p10^90*X1^5*X2^5+p10^80*X1^5*X2^5-p10^40*X1^5-p10^40*X2^5+1;\nfactorize(t);\n```\n\nRepeat the factorize command a couple of times.  You'll get extreme fluctation on the amount of time required to factor (nearly instantaneous all the way out to 5-10 minutes!).\n\nObviously, sage demonstrates the same bizarre timing statistics:\n\n```\nsage: R.<p10,g0,g1,g2,g3,g4,X1,X2>=QQ[]\nsage: t=-p10^170*X1^10*X2^10+p10^130*X1^10*X2^5+p10^130*X1^5*X2^10-p10^90*X1^5*X2^5+p10^80*X1^5*X2^5-p10^40*X1^5-p10^40*X2^5+1\nsage: time _=t.factor()\nCPU times: user 25.63 s, sys: 0.02 s, total: 25.65 s\nWall time: 26.18\nsage: time _=t.factor()\nCPU times: user 5.95 s, sys: 0.00 s, total: 5.95 s\nWall time: 5.95\nsage: time _=t.factor()\nCPU times: user 310.76 s, sys: 0.21 s, total: 310.97 s\nWall time: 311.65\n```\n\n\nI've reported this to the upstream forum as well (with no response so far):\nhttp://singular.mathematik.uni-kl.de/forum/viewtopic.php?t=1652\nI also just now submitted the bug through the singular bug request form.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1343\n\n",
+    "body": "Assignee: @malb\n\nSingular's factorize command is immensely slow at times, but other times it is decent.  I'd not report this as a bug except for the fact that it appears that some tuning of something might fix this.\n\nRun this in singular (binary 3-0-4 from upstream as well):\n\n```\nring R=0,(p10,g0,g1,g2,g3,g4,X1,X2),dp;\npoly t=-p10^170*X1^10*X2^10+p10^130*X1^10*X2^5+p10^130*X1^5*X2^10-p10^90*X1^5*X2^5+p10^80*X1^5*X2^5-p10^40*X1^5-p10^40*X2^5+1;\nfactorize(t);\n```\n\nRepeat the factorize command a couple of times.  You'll get extreme fluctation on the amount of time required to factor (nearly instantaneous all the way out to 5-10 minutes!).\n\nObviously, sage demonstrates the same bizarre timing statistics:\n\n```\nsage: R.<p10,g0,g1,g2,g3,g4,X1,X2>=QQ[]\nsage: t=-p10^170*X1^10*X2^10+p10^130*X1^10*X2^5+p10^130*X1^5*X2^10-p10^90*X1^5*X2^5+p10^80*X1^5*X2^5-p10^40*X1^5-p10^40*X2^5+1\nsage: time _=t.factor()\nCPU times: user 25.63 s, sys: 0.02 s, total: 25.65 s\nWall time: 26.18\nsage: time _=t.factor()\nCPU times: user 5.95 s, sys: 0.00 s, total: 5.95 s\nWall time: 5.95\nsage: time _=t.factor()\nCPU times: user 310.76 s, sys: 0.21 s, total: 310.97 s\nWall time: 311.65\n```\n\n\nI've reported this to the upstream forum as well (with no response so far):\nhttp://singular.mathematik.uni-kl.de/forum/viewtopic.php?t=1652\nI also just now submitted the bug through the singular bug request form.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1343\n\n",
     "created_at": "2007-11-30T15:12:45Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_001343.json:
     "user": "jbmohler"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Singular's factorize command is immensely slow at times, but other times it is decent.  I'd not report this as a bug except for the fact that it appears that some tuning of something might fix this.
 
@@ -68,7 +68,7 @@ archive/issue_comments_008613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1343#issuecomment-8613",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_008614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1343#issuecomment-8614",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_008615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1343#issuecomment-8615",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_008616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1343#issuecomment-8616",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_008617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1343#issuecomment-8617",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_008618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1343#issuecomment-8618",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007326.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  whuss rbeezer kcrisman\n\nIt would be *really* nice if you could include latex code in a table, like this:\n\n\n```\nvar('t')\ndensity=t^2\nhtml.table([\n[\"Density $\\delta(x,y)$\", density]\n])\n```\n\n\nand have it do the jsmath magic on the $\\delta(x,y)$ part.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7326\n\n",
+    "body": "Assignee: cwitty\n\nCC:  whuss @rbeezer @kcrisman\n\nIt would be *really* nice if you could include latex code in a table, like this:\n\n\n```\nvar('t')\ndensity=t^2\nhtml.table([\n[\"Density $\\delta(x,y)$\", density]\n])\n```\n\n\nand have it do the jsmath magic on the $\\delta(x,y)$ part.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7326\n\n",
     "created_at": "2009-10-27T22:02:22Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_007326.json:
     "title": "html.table should run jsmath on the resulting table",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7326",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: cwitty
 
-CC:  whuss rbeezer kcrisman
+CC:  whuss @rbeezer @kcrisman
 
 It would be *really* nice if you could include latex code in a table, like this:
 
@@ -51,7 +51,7 @@ archive/issue_comments_061269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61269",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -94,16 +94,16 @@ I am not sure why jsmath does not pick up the $$s in this case.
 archive/issue_comments_061271.json:
 ```json
 {
-    "body": "Attachment [trac-7326-html-table-math.patch](tarball://root/attachments/some-uuid/ticket7326/trac-7326-html-table-math.patch) by jason created at 2009-10-28 08:43:35",
+    "body": "Attachment [trac-7326-html-table-math.patch](tarball://root/attachments/some-uuid/ticket7326/trac-7326-html-table-math.patch) by @jasongrout created at 2009-10-28 08:43:35",
     "created_at": "2009-10-28T08:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61271",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7326-html-table-math.patch](tarball://root/attachments/some-uuid/ticket7326/trac-7326-html-table-math.patch) by jason created at 2009-10-28 08:43:35
+Attachment [trac-7326-html-table-math.patch](tarball://root/attachments/some-uuid/ticket7326/trac-7326-html-table-math.patch) by @jasongrout created at 2009-10-28 08:43:35
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_061272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61272",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_061273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61273",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_061274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61274",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_061277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61277",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

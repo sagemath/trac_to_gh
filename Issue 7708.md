@@ -14,7 +14,7 @@ archive/issues_007708.json:
     "title": "upgrade openopt spkg to 0.27",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7708",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_066154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7708#issuecomment-66154",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_066155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7708#issuecomment-66155",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_066156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7708#issuecomment-66156",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_066157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7708#issuecomment-66157",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_066158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7708#issuecomment-66158",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_066159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7708#issuecomment-66159",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_066160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7708#issuecomment-66160",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_066161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7708#issuecomment-66161",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_066162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7708#issuecomment-66162",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -205,16 +205,16 @@ I hereby announce myself as the maintainer of this spkg and declare it as "contr
 archive/issue_comments_066163.json:
 ```json
 {
-    "body": "Changing assignee from tbd to schilly.",
+    "body": "Changing assignee from tbd to @haraldschilly.",
     "created_at": "2010-08-11T19:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7708#issuecomment-66163",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Changing assignee from tbd to schilly.
+Changing assignee from tbd to @haraldschilly.
 
 
 
@@ -228,7 +228,7 @@ archive/issue_comments_066164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7708#issuecomment-66164",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_066165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7708#issuecomment-66165",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

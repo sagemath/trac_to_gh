@@ -3,7 +3,7 @@
 archive/issues_006378.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  craigcitro leif\n\nA few features would be nice to add to sage -merge:\n\n1. Ask all questions at the start instead of between tickets (that way, the user can kick off the process and just wait until it finishes, instead of having to check back every 20 minutes)\n2. Display comments with the patches\n3. Email a final report\n\nAlso, sage -merge doesn't properly handle the '-a -f' combination.  Fix that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6378\n\n",
+    "body": "Assignee: tbd\n\nCC:  @craigcitro @nexttime\n\nA few features would be nice to add to sage -merge:\n\n1. Ask all questions at the start instead of between tickets (that way, the user can kick off the process and just wait until it finishes, instead of having to check back every 20 minutes)\n2. Display comments with the patches\n3. Email a final report\n\nAlso, sage -merge doesn't properly handle the '-a -f' combination.  Fix that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6378\n\n",
     "created_at": "2009-06-21T19:32:32Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_006378.json:
 ```
 Assignee: tbd
 
-CC:  craigcitro leif
+CC:  @craigcitro @nexttime
 
 A few features would be nice to add to sage -merge:
 
@@ -135,7 +135,7 @@ archive/issue_comments_051043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51043",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_051046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51046",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_051047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51047",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -235,16 +235,16 @@ apply to bin repo
 archive/issue_comments_051048.json:
 ```json
 {
-    "body": "Attachment [trac-6378-bin.patch](tarball://root/attachments/some-uuid/ticket6378/trac-6378-bin.patch) by craigcitro created at 2009-08-28 07:22:52\n\napply to main repo",
+    "body": "Attachment [trac-6378-bin.patch](tarball://root/attachments/some-uuid/ticket6378/trac-6378-bin.patch) by @craigcitro created at 2009-08-28 07:22:52\n\napply to main repo",
     "created_at": "2009-08-28T07:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51048",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-6378-bin.patch](tarball://root/attachments/some-uuid/ticket6378/trac-6378-bin.patch) by craigcitro created at 2009-08-28 07:22:52
+Attachment [trac-6378-bin.patch](tarball://root/attachments/some-uuid/ticket6378/trac-6378-bin.patch) by @craigcitro created at 2009-08-28 07:22:52
 
 apply to main repo
 
@@ -255,16 +255,16 @@ apply to main repo
 archive/issue_comments_051049.json:
 ```json
 {
-    "body": "Attachment [trac-6378-main.patch](tarball://root/attachments/some-uuid/ticket6378/trac-6378-main.patch) by cremona created at 2009-08-31 13:17:57\n\nQuestion:  how well is this documented?  As well as all the functions in the scripts having docstrings, I think we need to have this all properly in the developers manual.  Recently I wanted to demonstrate the merge feature to a newcomer, and found that I couldn't remember what all the command line options were, and could not find them documented.  (Of course, it is possible that they are somewhere!  I remember seeing them in a sage-devel post, but that is hardly acceptable!)",
+    "body": "Attachment [trac-6378-main.patch](tarball://root/attachments/some-uuid/ticket6378/trac-6378-main.patch) by @JohnCremona created at 2009-08-31 13:17:57\n\nQuestion:  how well is this documented?  As well as all the functions in the scripts having docstrings, I think we need to have this all properly in the developers manual.  Recently I wanted to demonstrate the merge feature to a newcomer, and found that I couldn't remember what all the command line options were, and could not find them documented.  (Of course, it is possible that they are somewhere!  I remember seeing them in a sage-devel post, but that is hardly acceptable!)",
     "created_at": "2009-08-31T13:17:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51049",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-6378-main.patch](tarball://root/attachments/some-uuid/ticket6378/trac-6378-main.patch) by cremona created at 2009-08-31 13:17:57
+Attachment [trac-6378-main.patch](tarball://root/attachments/some-uuid/ticket6378/trac-6378-main.patch) by @JohnCremona created at 2009-08-31 13:17:57
 
 Question:  how well is this documented?  As well as all the functions in the scripts having docstrings, I think we need to have this all properly in the developers manual.  Recently I wanted to demonstrate the merge feature to a newcomer, and found that I couldn't remember what all the command line options were, and could not find them documented.  (Of course, it is possible that they are somewhere!  I remember seeing them in a sage-devel post, but that is hardly acceptable!)
 
@@ -280,7 +280,7 @@ archive/issue_comments_051050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51050",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_051051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51051",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_051052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51052",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_051053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51053",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_051054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51054",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -390,16 +390,16 @@ Rebase on #8712. Apply this patch only. See comments for more info.
 archive/issue_comments_051055.json:
 ```json
 {
-    "body": "Attachment [trac_6378-scripts-rebase.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.patch) by timdumol created at 2010-04-18 13:23:22\n\nThe patch to the main Sage respository is unneeded now, as it's been fixed already by sage-4.4.alpha0. The patch to the scripts repository works fine, except for the email part. It doesn't get the mail argument. Calling it with, say,\n\n\n```\nsage -merge -a -e timdumol@gmail.com\n```\n\n\nresults in an error after merging everything, stating that the email address, which is the null string (''), is invalid.\n\nThis patch rebases it on #8712, while adding the requested documentation. This seems to detect the email argument.",
+    "body": "Attachment [trac_6378-scripts-rebase.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.patch) by @TimDumol created at 2010-04-18 13:23:22\n\nThe patch to the main Sage respository is unneeded now, as it's been fixed already by sage-4.4.alpha0. The patch to the scripts repository works fine, except for the email part. It doesn't get the mail argument. Calling it with, say,\n\n\n```\nsage -merge -a -e timdumol@gmail.com\n```\n\n\nresults in an error after merging everything, stating that the email address, which is the null string (''), is invalid.\n\nThis patch rebases it on #8712, while adding the requested documentation. This seems to detect the email argument.",
     "created_at": "2010-04-18T13:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51055",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_6378-scripts-rebase.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.patch) by timdumol created at 2010-04-18 13:23:22
+Attachment [trac_6378-scripts-rebase.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.patch) by @TimDumol created at 2010-04-18 13:23:22
 
 The patch to the main Sage respository is unneeded now, as it's been fixed already by sage-4.4.alpha0. The patch to the scripts repository works fine, except for the email part. It doesn't get the mail argument. Calling it with, say,
 
@@ -425,7 +425,7 @@ archive/issue_comments_051056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51056",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -440,16 +440,16 @@ Otherwise, I'm happy with it.
 archive/issue_comments_051057.json:
 ```json
 {
-    "body": "Attachment [trac_6378-scripts-rebase.v2.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.v2.patch) by jhpalmieri created at 2010-06-23 21:16:05\n\nuse this patch only",
+    "body": "Attachment [trac_6378-scripts-rebase.v2.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.v2.patch) by @jhpalmieri created at 2010-06-23 21:16:05\n\nuse this patch only",
     "created_at": "2010-06-23T21:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51057",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6378-scripts-rebase.v2.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.v2.patch) by jhpalmieri created at 2010-06-23 21:16:05
+Attachment [trac_6378-scripts-rebase.v2.patch](tarball://root/attachments/some-uuid/ticket6378/trac_6378-scripts-rebase.v2.patch) by @jhpalmieri created at 2010-06-23 21:16:05
 
 use this patch only
 
@@ -465,7 +465,7 @@ archive/issue_comments_051058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51058",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -485,7 +485,7 @@ archive/issue_comments_051059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51059",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_051060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51060",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -528,7 +528,7 @@ archive/issue_comments_051061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51061",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_051062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51062",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_051063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6378#issuecomment-51063",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

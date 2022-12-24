@@ -3,7 +3,7 @@
 archive/issues_006554.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rbeezer mhansen was wcauchois robertwb\n\nPlotting big sparse matrices doesn't even work since it automatically converts the matrix to a dense matrix, instead of calling the spy() function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6554\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer @mwhansen @williamstein wcauchois @robertwb\n\nPlotting big sparse matrices doesn't even work since it automatically converts the matrix to a dense matrix, instead of calling the spy() function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6554\n\n",
     "created_at": "2009-07-18T14:00:55Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_006554.json:
     "title": "[with patch, needs review] plotting sparse matrices converts the matrix to a dense matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6554",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rbeezer mhansen was wcauchois robertwb
+CC:  @rbeezer @mwhansen @williamstein wcauchois @robertwb
 
 Plotting big sparse matrices doesn't even work since it automatically converts the matrix to a dense matrix, instead of calling the spy() function.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6554
 archive/issue_comments_053448.json:
 ```json
 {
-    "body": "Attachment [trac-6554-sparse-matrix-plot.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-sparse-matrix-plot.patch) by jason created at 2009-07-18 14:54:27\n\nThis took a very long time before, if it was even possible.\n\n\n```\n        sage: A=random_matrix(ZZ,100000,density=.00001,sparse=True)\n        sage: matrix_plot(A,marker=',')\n```\n",
+    "body": "Attachment [trac-6554-sparse-matrix-plot.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-sparse-matrix-plot.patch) by @jasongrout created at 2009-07-18 14:54:27\n\nThis took a very long time before, if it was even possible.\n\n\n```\n        sage: A=random_matrix(ZZ,100000,density=.00001,sparse=True)\n        sage: matrix_plot(A,marker=',')\n```\n",
     "created_at": "2009-07-18T14:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6554#issuecomment-53448",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6554-sparse-matrix-plot.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-sparse-matrix-plot.patch) by jason created at 2009-07-18 14:54:27
+Attachment [trac-6554-sparse-matrix-plot.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-sparse-matrix-plot.patch) by @jasongrout created at 2009-07-18 14:54:27
 
 This took a very long time before, if it was even possible.
 
@@ -66,7 +66,7 @@ archive/issue_comments_053449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6554#issuecomment-53449",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_053450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6554#issuecomment-53450",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_053451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6554#issuecomment-53451",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -134,16 +134,16 @@ comment to this effect be added to the docstring?
 archive/issue_comments_053452.json:
 ```json
 {
-    "body": "Attachment [trac-6554-matrix-plot-docs.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-matrix-plot-docs.patch) by jason created at 2009-07-27 16:04:40\n\napply on top of previous patch",
+    "body": "Attachment [trac-6554-matrix-plot-docs.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-matrix-plot-docs.patch) by @jasongrout created at 2009-07-27 16:04:40\n\napply on top of previous patch",
     "created_at": "2009-07-27T16:04:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6554#issuecomment-53452",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6554-matrix-plot-docs.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-matrix-plot-docs.patch) by jason created at 2009-07-27 16:04:40
+Attachment [trac-6554-matrix-plot-docs.patch](tarball://root/attachments/some-uuid/ticket6554/trac-6554-matrix-plot-docs.patch) by @jasongrout created at 2009-07-27 16:04:40
 
 apply on top of previous patch
 
@@ -159,7 +159,7 @@ archive/issue_comments_053453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6554#issuecomment-53453",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_053454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6554#issuecomment-53454",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

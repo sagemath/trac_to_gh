@@ -14,7 +14,7 @@ archive/issues_009300.json:
     "title": "update french version of tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9300",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -40,7 +40,7 @@ archive/issue_comments_087605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9300#issuecomment-87605",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_087606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9300#issuecomment-87606",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_087607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9300#issuecomment-87607",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_087608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9300#issuecomment-87608",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_087609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9300#issuecomment-87609",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

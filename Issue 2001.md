@@ -14,7 +14,7 @@ archive/issues_002001.json:
     "title": "--long doctests -- seven files have doctst failures in sage-2.10.rc3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2001",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2001
 archive/issue_comments_012942.json:
 ```json
 {
-    "body": "Attachment [testlong.log](tarball://root/attachments/some-uuid/ticket2001/testlong.log) by was created at 2008-01-31 06:38:38",
+    "body": "Attachment [testlong.log](tarball://root/attachments/some-uuid/ticket2001/testlong.log) by @williamstein created at 2008-01-31 06:38:38",
     "created_at": "2008-01-31T06:38:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12942",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [testlong.log](tarball://root/attachments/some-uuid/ticket2001/testlong.log) by was created at 2008-01-31 06:38:38
+Attachment [testlong.log](tarball://root/attachments/some-uuid/ticket2001/testlong.log) by @williamstein created at 2008-01-31 06:38:38
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_012943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12943",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_012949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12949",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

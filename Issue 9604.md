@@ -3,7 +3,7 @@
 archive/issues_009604.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  novoselt\n\nThis bug tracks the current status of the toric varieties code and the interdependence of new patches. The prerequisites are Sage 4.5.2.alpha0 (which should be equivalent to the 4.5.2 release).\n\n* #9470: Switch toric varieties to enhanced fans\n* #9326: Add cohomology of toric varieties\n* #9502: Basis parent bug in FreeModule\n* #9504: Add support for toric sublattices\n* #9296: Add lattice computations for convex polyhedral cones\n* #9337: Toric divisors\n\nWe expect the above to be ready for inclusion in Sage 5.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9604\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nThis bug tracks the current status of the toric varieties code and the interdependence of new patches. The prerequisites are Sage 4.5.2.alpha0 (which should be equivalent to the 4.5.2 release).\n\n* #9470: Switch toric varieties to enhanced fans\n* #9326: Add cohomology of toric varieties\n* #9502: Basis parent bug in FreeModule\n* #9504: Add support for toric sublattices\n* #9296: Add lattice computations for convex polyhedral cones\n* #9337: Toric divisors\n\nWe expect the above to be ready for inclusion in Sage 5.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9604\n\n",
     "created_at": "2010-07-26T17:21:42Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_009604.json:
     "title": "Tracker bug for toric varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9604",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  novoselt
+CC:  @novoselt
 
 This bug tracks the current status of the toric varieties code and the interdependence of new patches. The prerequisites are Sage 4.5.2.alpha0 (which should be equivalent to the 4.5.2 release).
 
@@ -48,7 +48,7 @@ archive/issue_comments_093029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93029",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_093030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93030",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_093031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93031",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_093032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93032",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -118,16 +118,16 @@ updated patch
 archive/issue_comments_093033.json:
 ```json
 {
-    "body": "Attachment [toricvarieties.hg](tarball://root/attachments/some-uuid/ticket9604/toricvarieties.hg) by novoselt created at 2010-08-26 21:35:42\n\nI'll put bugs in front of toric divisors, since they have chances to be settled quickly.",
+    "body": "Attachment [toricvarieties.hg](tarball://root/attachments/some-uuid/ticket9604/toricvarieties.hg) by @novoselt created at 2010-08-26 21:35:42\n\nI'll put bugs in front of toric divisors, since they have chances to be settled quickly.",
     "created_at": "2010-08-26T21:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93033",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [toricvarieties.hg](tarball://root/attachments/some-uuid/ticket9604/toricvarieties.hg) by novoselt created at 2010-08-26 21:35:42
+Attachment [toricvarieties.hg](tarball://root/attachments/some-uuid/ticket9604/toricvarieties.hg) by @novoselt created at 2010-08-26 21:35:42
 
 I'll put bugs in front of toric divisors, since they have chances to be settled quickly.
 
@@ -143,7 +143,7 @@ archive/issue_comments_093034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93034",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_093035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93035",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_093036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93036",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_093037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93037",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_093038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93038",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_093039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93039",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_093040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93040",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_093041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93041",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_093042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93042",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_093043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93043",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_093044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93044",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_093045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93045",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_093046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93046",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_093047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93047",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_093048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93048",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_093049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93049",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_093050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9604#issuecomment-93050",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

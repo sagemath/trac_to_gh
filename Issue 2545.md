@@ -3,7 +3,7 @@
 archive/issues_002545.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nAttached patch adds a `derivative` method to `FractionFieldElement`s, and fixes a bug in the `_derivative` method of `Polynomial_rational_dense`.\n\nSo these now work:\n\n\n```\nsage: R = ZZ['x']\nsage: S = R.fraction_field(); x = S.gen()\nsage: R(1).derivative(R(x))\n0\n\nsage: F = FractionField(PolynomialRing(RationalField(),'x,y'))\nsage: x,y = F.gens()\nsage: (1/(x+y)).derivative(x,y)\n2/(x^3 + 3*x^2*y + 3*x*y^2 + y^3)\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2545\n\n",
+    "body": "Assignee: @burcin\n\nAttached patch adds a `derivative` method to `FractionFieldElement`s, and fixes a bug in the `_derivative` method of `Polynomial_rational_dense`.\n\nSo these now work:\n\n\n```\nsage: R = ZZ['x']\nsage: S = R.fraction_field(); x = S.gen()\nsage: R(1).derivative(R(x))\n0\n\nsage: F = FractionField(PolynomialRing(RationalField(),'x,y'))\nsage: x,y = F.gens()\nsage: (1/(x+y)).derivative(x,y)\n2/(x^3 + 3*x^2*y + 3*x*y^2 + y^3)\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2545\n\n",
     "created_at": "2008-03-16T12:35:22Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_002545.json:
     "title": "[with patch, needs review] FractionFieldElement lacks derivative method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2545",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Attached patch adds a `derivative` method to `FractionFieldElement`s, and fixes a bug in the `_derivative` method of `Polynomial_rational_dense`.
 
@@ -56,7 +56,7 @@ archive/issue_comments_017371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2545#issuecomment-17371",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -69,16 +69,16 @@ derivative method for FractionFieldElement
 archive/issue_comments_017372.json:
 ```json
 {
-    "body": "Attachment [sage_fraction_field_derivative.patch](tarball://root/attachments/some-uuid/ticket2545/sage_fraction_field_derivative.patch) by AlexGhitza created at 2008-03-16 14:34:11\n\nThis appears to work as advertised.  I have one request: the docstrings for derivative() and _derivative() refer to \"the derivative of this polynomial\", which is bad since these elements are (most of the time) not polynomials.  This should be replaced with \"rational function\" or something similar.",
+    "body": "Attachment [sage_fraction_field_derivative.patch](tarball://root/attachments/some-uuid/ticket2545/sage_fraction_field_derivative.patch) by @aghitza created at 2008-03-16 14:34:11\n\nThis appears to work as advertised.  I have one request: the docstrings for derivative() and _derivative() refer to \"the derivative of this polynomial\", which is bad since these elements are (most of the time) not polynomials.  This should be replaced with \"rational function\" or something similar.",
     "created_at": "2008-03-16T14:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2545#issuecomment-17372",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [sage_fraction_field_derivative.patch](tarball://root/attachments/some-uuid/ticket2545/sage_fraction_field_derivative.patch) by AlexGhitza created at 2008-03-16 14:34:11
+Attachment [sage_fraction_field_derivative.patch](tarball://root/attachments/some-uuid/ticket2545/sage_fraction_field_derivative.patch) by @aghitza created at 2008-03-16 14:34:11
 
 This appears to work as advertised.  I have one request: the docstrings for derivative() and _derivative() refer to "the derivative of this polynomial", which is bad since these elements are (most of the time) not polynomials.  This should be replaced with "rational function" or something similar.
 
@@ -94,7 +94,7 @@ archive/issue_comments_017373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2545#issuecomment-17373",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -107,16 +107,16 @@ new patch with requested doc changes
 archive/issue_comments_017374.json:
 ```json
 {
-    "body": "Attachment [2545-sage_fraction_field_derivative-1.patch](tarball://root/attachments/some-uuid/ticket2545/2545-sage_fraction_field_derivative-1.patch) by burcin created at 2008-03-16 14:51:03\n\nYou're right, I copied the text from the docstring for polynomials, and forgot to change it. :)\n\nattachment:2545-sage_fraction_field_derivative-1.patch replaces \"polynomial\" with \"rational function\" as suggested.",
+    "body": "Attachment [2545-sage_fraction_field_derivative-1.patch](tarball://root/attachments/some-uuid/ticket2545/2545-sage_fraction_field_derivative-1.patch) by @burcin created at 2008-03-16 14:51:03\n\nYou're right, I copied the text from the docstring for polynomials, and forgot to change it. :)\n\nattachment:2545-sage_fraction_field_derivative-1.patch replaces \"polynomial\" with \"rational function\" as suggested.",
     "created_at": "2008-03-16T14:51:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2545#issuecomment-17374",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [2545-sage_fraction_field_derivative-1.patch](tarball://root/attachments/some-uuid/ticket2545/2545-sage_fraction_field_derivative-1.patch) by burcin created at 2008-03-16 14:51:03
+Attachment [2545-sage_fraction_field_derivative-1.patch](tarball://root/attachments/some-uuid/ticket2545/2545-sage_fraction_field_derivative-1.patch) by @burcin created at 2008-03-16 14:51:03
 
 You're right, I copied the text from the docstring for polynomials, and forgot to change it. :)
 
@@ -134,7 +134,7 @@ archive/issue_comments_017375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2545#issuecomment-17375",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

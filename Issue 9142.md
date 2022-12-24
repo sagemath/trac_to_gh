@@ -3,7 +3,7 @@
 archive/issues_009142.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  ncohen rlm\n\nThe Fuzzy Ball graphs are cospectral with respect to the normalized laplacian matrix.  This patch makes a function to construct such graphs.  I will be adding a reference in a separate patch once we publish our paper :).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9142\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen @rlmill\n\nThe Fuzzy Ball graphs are cospectral with respect to the normalized laplacian matrix.  This patch makes a function to construct such graphs.  I will be adding a reference in a separate patch once we publish our paper :).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9142\n\n",
     "created_at": "2010-06-04T21:18:55Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009142.json:
     "title": "construct \"fuzzy ball\" graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9142",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  ncohen rlm
+CC:  @nathanncohen @rlmill
 
 The Fuzzy Ball graphs are cospectral with respect to the normalized laplacian matrix.  This patch makes a function to construct such graphs.  I will be adding a reference in a separate patch once we publish our paper :).
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9142
 archive/issue_comments_085366.json:
 ```json
 {
-    "body": "Attachment [trac-9142-fuzzy-ball.patch](tarball://root/attachments/some-uuid/ticket9142/trac-9142-fuzzy-ball.patch) by jason created at 2010-06-04 21:20:03",
+    "body": "Attachment [trac-9142-fuzzy-ball.patch](tarball://root/attachments/some-uuid/ticket9142/trac-9142-fuzzy-ball.patch) by @jasongrout created at 2010-06-04 21:20:03",
     "created_at": "2010-06-04T21:20:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85366",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9142-fuzzy-ball.patch](tarball://root/attachments/some-uuid/ticket9142/trac-9142-fuzzy-ball.patch) by jason created at 2010-06-04 21:20:03
+Attachment [trac-9142-fuzzy-ball.patch](tarball://root/attachments/some-uuid/ticket9142/trac-9142-fuzzy-ball.patch) by @jasongrout created at 2010-06-04 21:20:03
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_085367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85367",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_085368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85368",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_085369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85369",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_085370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85370",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_085371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85371",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_085372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85372",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_085373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85373",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_085374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85374",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -204,16 +204,16 @@ Nathann
 archive/issue_comments_085375.json:
 ```json
 {
-    "body": "Attachment [trac_9142-reviewer.patch](tarball://root/attachments/some-uuid/ticket9142/trac_9142-reviewer.patch) by jason created at 2010-06-04 22:15:52\n\napply on top of previous patches",
+    "body": "Attachment [trac_9142-reviewer.patch](tarball://root/attachments/some-uuid/ticket9142/trac_9142-reviewer.patch) by @jasongrout created at 2010-06-04 22:15:52\n\napply on top of previous patches",
     "created_at": "2010-06-04T22:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85375",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_9142-reviewer.patch](tarball://root/attachments/some-uuid/ticket9142/trac_9142-reviewer.patch) by jason created at 2010-06-04 22:15:52
+Attachment [trac_9142-reviewer.patch](tarball://root/attachments/some-uuid/ticket9142/trac_9142-reviewer.patch) by @jasongrout created at 2010-06-04 22:15:52
 
 apply on top of previous patches
 
@@ -224,16 +224,16 @@ apply on top of previous patches
 archive/issue_comments_085376.json:
 ```json
 {
-    "body": "Attachment [trac-9142-small-doc-fix.patch](tarball://root/attachments/some-uuid/ticket9142/trac-9142-small-doc-fix.patch) by jason created at 2010-06-04 22:16:40\n\nPositive review to your patch.  Can you look at my minor change in the explanation, to make it clear that you pass a list instead of a sum in for the partition?",
+    "body": "Attachment [trac-9142-small-doc-fix.patch](tarball://root/attachments/some-uuid/ticket9142/trac-9142-small-doc-fix.patch) by @jasongrout created at 2010-06-04 22:16:40\n\nPositive review to your patch.  Can you look at my minor change in the explanation, to make it clear that you pass a list instead of a sum in for the partition?",
     "created_at": "2010-06-04T22:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85376",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9142-small-doc-fix.patch](tarball://root/attachments/some-uuid/ticket9142/trac-9142-small-doc-fix.patch) by jason created at 2010-06-04 22:16:40
+Attachment [trac-9142-small-doc-fix.patch](tarball://root/attachments/some-uuid/ticket9142/trac-9142-small-doc-fix.patch) by @jasongrout created at 2010-06-04 22:16:40
 
 Positive review to your patch.  Can you look at my minor change in the explanation, to make it clear that you pass a list instead of a sum in for the partition?
 
@@ -249,7 +249,7 @@ archive/issue_comments_085377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85377",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_085378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85378",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_085379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9142#issuecomment-85379",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

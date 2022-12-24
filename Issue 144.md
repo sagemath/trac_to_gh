@@ -3,7 +3,7 @@
 archive/issues_000144.json:
 ```json
 {
-    "body": "Assignee: was\n\nGets a key error here:\n\nnumpy-2006-08-16: blew chunks here;\n    File \"/SandBox/Justin/sb/sage-1.4/spkg/build/numpy-2006-08-16/numpy/distutils/\\\n            ..../fcompiler/__init__.py\", line 199, in get_flags_linker_exe\n      if self.executables['linker_exe']:\n    KeyError: 'linker_exe'\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/144\n\n",
+    "body": "Assignee: @williamstein\n\nGets a key error here:\n\nnumpy-2006-08-16: blew chunks here;\n    File \"/SandBox/Justin/sb/sage-1.4/spkg/build/numpy-2006-08-16/numpy/distutils/\\\n            ..../fcompiler/__init__.py\", line 199, in get_flags_linker_exe\n      if self.executables['linker_exe']:\n    KeyError: 'linker_exe'\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/144\n\n",
     "created_at": "2006-10-21T20:44:08Z",
     "labels": [
         "algebraic geometry",
@@ -16,7 +16,7 @@ archive/issues_000144.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Gets a key error here:
 
@@ -99,7 +99,7 @@ archive/issue_comments_000665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/144#issuecomment-665",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_000666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/144#issuecomment-666",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

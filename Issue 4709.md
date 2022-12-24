@@ -3,7 +3,7 @@
 archive/issues_004709.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis patch depends on #4702.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4709\n\n",
+    "body": "Assignee: @williamstein\n\nThis patch depends on #4702.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4709\n\n",
     "created_at": "2008-12-05T05:41:53Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004709.json:
     "title": "[with patch; needs review] sage/magma hyperelliptic curve conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4709",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This patch depends on #4702.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4709
 archive/issue_comments_035511.json:
 ```json
 {
-    "body": "Attachment [trac_4709.patch](tarball://root/attachments/some-uuid/ticket4709/trac_4709.patch) by was created at 2008-12-05 05:43:34\n\nThe attached patch implements Hyperelliptic conversions, plus just adds a few more doctests, since that's always a good idea.",
+    "body": "Attachment [trac_4709.patch](tarball://root/attachments/some-uuid/ticket4709/trac_4709.patch) by @williamstein created at 2008-12-05 05:43:34\n\nThe attached patch implements Hyperelliptic conversions, plus just adds a few more doctests, since that's always a good idea.",
     "created_at": "2008-12-05T05:43:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4709#issuecomment-35511",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4709.patch](tarball://root/attachments/some-uuid/ticket4709/trac_4709.patch) by was created at 2008-12-05 05:43:34
+Attachment [trac_4709.patch](tarball://root/attachments/some-uuid/ticket4709/trac_4709.patch) by @williamstein created at 2008-12-05 05:43:34
 
 The attached patch implements Hyperelliptic conversions, plus just adds a few more doctests, since that's always a good idea.
 
@@ -57,7 +57,7 @@ archive/issue_comments_035512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4709#issuecomment-35512",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

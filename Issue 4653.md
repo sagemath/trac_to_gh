@@ -3,7 +3,7 @@
 archive/issues_004653.json:
 ```json
 {
-    "body": "Assignee: saliola\n\nCC:  saliola anakha slabbe mhansen sage-combinat\n\nKeywords: sage-combinat\n\nThe sage-word project wants to implement a complete package for word manipulation and combinatorics under Sage. The project maintains a [Google code page](http://code.google.com/p/sage-words).\n\nThe code has already been merged into sage-combinat, and although it needs a bit of work, it is ready to be merged into Sage. (By \"needs a bit of work\", I mean that there are some algorithms that need to be improved, but the code greatly improves the rudimentary functionality that exists in Sage.) The code is well documented, and a worksheet highlighting the features of the code can be found here:\n\n* [Sage worksheet](http://www-igm.univ-mlv.fr/~saliola/maths/talks/slides/SageTalk2/06_Words.sws)\n* [PDF file of worksheet](http://www-igm.univ-mlv.fr/~saliola/maths/talks/slides/SageTalk2/06_Words.pdf)\n\nArnaud Bergeron, Amy Glen, S\u00e9bastien Labb\u00e9, and Franco Saliola all contributed to the project, so they all deserve credit for this patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4653\n\n",
+    "body": "Assignee: @saliola\n\nCC:  @saliola anakha @seblabbe @mwhansen sage-combinat\n\nKeywords: sage-combinat\n\nThe sage-word project wants to implement a complete package for word manipulation and combinatorics under Sage. The project maintains a [Google code page](http://code.google.com/p/sage-words).\n\nThe code has already been merged into sage-combinat, and although it needs a bit of work, it is ready to be merged into Sage. (By \"needs a bit of work\", I mean that there are some algorithms that need to be improved, but the code greatly improves the rudimentary functionality that exists in Sage.) The code is well documented, and a worksheet highlighting the features of the code can be found here:\n\n* [Sage worksheet](http://www-igm.univ-mlv.fr/~saliola/maths/talks/slides/SageTalk2/06_Words.sws)\n* [PDF file of worksheet](http://www-igm.univ-mlv.fr/~saliola/maths/talks/slides/SageTalk2/06_Words.pdf)\n\nArnaud Bergeron, Amy Glen, S\u00e9bastien Labb\u00e9, and Franco Saliola all contributed to the project, so they all deserve credit for this patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4653\n\n",
     "created_at": "2008-11-29T12:45:28Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_004653.json:
     "title": "Merge sage-words code into Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4653",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: saliola
+Assignee: @saliola
 
-CC:  saliola anakha slabbe mhansen sage-combinat
+CC:  @saliola anakha @seblabbe @mwhansen sage-combinat
 
 Keywords: sage-combinat
 
@@ -48,7 +48,7 @@ archive/issue_comments_035025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35025",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_035026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35026",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_035027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35027",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -99,16 +99,16 @@ Good move saliola! I was going to ask what were the objectives before getting th
 archive/issue_comments_035028.json:
 ```json
 {
-    "body": "Attachment [sage_words-4653-final.patch](tarball://root/attachments/some-uuid/ticket4653/sage_words-4653-final.patch) by saliola created at 2008-11-29 23:56:09\n\npatch against 3.2",
+    "body": "Attachment [sage_words-4653-final.patch](tarball://root/attachments/some-uuid/ticket4653/sage_words-4653-final.patch) by @saliola created at 2008-11-29 23:56:09\n\npatch against 3.2",
     "created_at": "2008-11-29T23:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35028",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [sage_words-4653-final.patch](tarball://root/attachments/some-uuid/ticket4653/sage_words-4653-final.patch) by saliola created at 2008-11-29 23:56:09
+Attachment [sage_words-4653-final.patch](tarball://root/attachments/some-uuid/ticket4653/sage_words-4653-final.patch) by @saliola created at 2008-11-29 23:56:09
 
 patch against 3.2
 
@@ -124,7 +124,7 @@ archive/issue_comments_035029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35029",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_035031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35031",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_035033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35033",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_035035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35035",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_035036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35036",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_035041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35041",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_035042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35042",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -596,16 +596,16 @@ slabbe
 archive/issue_comments_035043.json:
 ```json
 {
-    "body": "Attachment [trac_4653.patch](tarball://root/attachments/some-uuid/ticket4653/trac_4653.patch) by saliola created at 2008-12-15 22:57:25\n\nrebased version of the previous patch (so apply only this patch)",
+    "body": "Attachment [trac_4653.patch](tarball://root/attachments/some-uuid/ticket4653/trac_4653.patch) by @saliola created at 2008-12-15 22:57:25\n\nrebased version of the previous patch (so apply only this patch)",
     "created_at": "2008-12-15T22:57:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35043",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_4653.patch](tarball://root/attachments/some-uuid/ticket4653/trac_4653.patch) by saliola created at 2008-12-15 22:57:25
+Attachment [trac_4653.patch](tarball://root/attachments/some-uuid/ticket4653/trac_4653.patch) by @saliola created at 2008-12-15 22:57:25
 
 rebased version of the previous patch (so apply only this patch)
 
@@ -621,7 +621,7 @@ archive/issue_comments_035044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35044",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -678,7 +678,7 @@ archive/issue_comments_035046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4653#issuecomment-35046",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

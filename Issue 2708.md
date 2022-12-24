@@ -3,7 +3,7 @@
 archive/issues_002708.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2708\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2708\n\n",
     "created_at": "2008-03-28T20:56:37Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002708.json:
     "title": "add support for nonsymmetric Macdonald polynomials in type A via HHL formula",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2708",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2708
 archive/issue_comments_018676.json:
 ```json
 {
-    "body": "Attachment [2708.patch](tarball://root/attachments/some-uuid/ticket2708/2708.patch) by mhansen created at 2008-03-28 21:36:04",
+    "body": "Attachment [2708.patch](tarball://root/attachments/some-uuid/ticket2708/2708.patch) by @mwhansen created at 2008-03-28 21:36:04",
     "created_at": "2008-03-28T21:36:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2708#issuecomment-18676",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2708.patch](tarball://root/attachments/some-uuid/ticket2708/2708.patch) by mhansen created at 2008-03-28 21:36:04
+Attachment [2708.patch](tarball://root/attachments/some-uuid/ticket2708/2708.patch) by @mwhansen created at 2008-03-28 21:36:04
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_018677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2708#issuecomment-18677",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_018678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2708#issuecomment-18678",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_018679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2708#issuecomment-18679",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

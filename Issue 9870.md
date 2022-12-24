@@ -3,7 +3,7 @@
 archive/issues_009870.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  ncohen mpatel jhpalmieri\n\nAs documented at #9833, the Cliquer library is causing problems on 64-bit Solaris and 64-bit OpenSolaris. This needs **urgently** resolving, as it is the first problem hit when building a 64-bit version of Sage on Solaris or OpenSolaris. \n\nAs documented at #9521, the test suite for Cliquer is not run correctly. It should generally be run from `spkg-install`, but given it takes only a few seconds to run on even slow hardware, it makes sense to run the tests each time Sage is built. \n\nThe upstream source code has modifications too. Given the latest version is a bug-fix only release, it is wise to update this. (Rather confusingly, the version currently in Sage is 1.2, but the bug-fix release is 1.21. I believe the authors should have called it 1.2.1) See http://users.tkk.fi/pat/cliquer.html\n\n**There are a number of other issues with Cliquer's spkg-install and Makefile. These are the subject of ticket #9870 and will NOT be addressed here to save time, and allow the critical Solaris fix to be integrated as soon as possible.**\n\nThe changes which are made are:\n* Change the compiler options for Solaris from \n\n `-G -Bdynamic`\n\n to \n\n `-shared`\n\n as this avoid the fatal relocation error documented at #9833. \n* Update the source code to the latest version. \n* Run the test cases every time Sage is built, as they take only a few seconds to run. Since the exit code of `make test` is always zero, even if tests fail, it was decided to save the output of `make test` into a file, then check for the word \"ERROR\" in that file. If it exists, a test has failed. If not, all tests have passed. \n* Add correct compiler flags for AIX and HP-UX. These have not been checked, but should work. \n* Add an `spkg-check` file which prints a message that the self-tests are run each time Sage is built. \n* Copy the shared library to the filename `libcliquer.sl` on HP-UX, as that is the extension HP use for shared libraries. (The package currently always builds this as `libcliquer.so` on all platforms), despite that is wrong for several platforms. Most cases are already covered in `spkg-install`, but HP-UX was not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9871\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nathanncohen @qed777 @jhpalmieri\n\nAs documented at #9833, the Cliquer library is causing problems on 64-bit Solaris and 64-bit OpenSolaris. This needs **urgently** resolving, as it is the first problem hit when building a 64-bit version of Sage on Solaris or OpenSolaris. \n\nAs documented at #9521, the test suite for Cliquer is not run correctly. It should generally be run from `spkg-install`, but given it takes only a few seconds to run on even slow hardware, it makes sense to run the tests each time Sage is built. \n\nThe upstream source code has modifications too. Given the latest version is a bug-fix only release, it is wise to update this. (Rather confusingly, the version currently in Sage is 1.2, but the bug-fix release is 1.21. I believe the authors should have called it 1.2.1) See http://users.tkk.fi/pat/cliquer.html\n\n**There are a number of other issues with Cliquer's spkg-install and Makefile. These are the subject of ticket #9870 and will NOT be addressed here to save time, and allow the critical Solaris fix to be integrated as soon as possible.**\n\nThe changes which are made are:\n* Change the compiler options for Solaris from \n\n `-G -Bdynamic`\n\n to \n\n `-shared`\n\n as this avoid the fatal relocation error documented at #9833. \n* Update the source code to the latest version. \n* Run the test cases every time Sage is built, as they take only a few seconds to run. Since the exit code of `make test` is always zero, even if tests fail, it was decided to save the output of `make test` into a file, then check for the word \"ERROR\" in that file. If it exists, a test has failed. If not, all tests have passed. \n* Add correct compiler flags for AIX and HP-UX. These have not been checked, but should work. \n* Add an `spkg-check` file which prints a message that the self-tests are run each time Sage is built. \n* Copy the shared library to the filename `libcliquer.sl` on HP-UX, as that is the extension HP use for shared libraries. (The package currently always builds this as `libcliquer.so` on all platforms), despite that is wrong for several platforms. Most cases are already covered in `spkg-install`, but HP-UX was not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9871\n\n",
     "created_at": "2010-09-07T22:05:09Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009870.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  ncohen mpatel jhpalmieri
+CC:  @nathanncohen @qed777 @jhpalmieri
 
 As documented at #9833, the Cliquer library is causing problems on 64-bit Solaris and 64-bit OpenSolaris. This needs **urgently** resolving, as it is the first problem hit when building a 64-bit version of Sage on Solaris or OpenSolaris. 
 
@@ -206,7 +206,7 @@ archive/issue_comments_097515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97515",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_097516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97516",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_097517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97517",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_097519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97519",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_097521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97521",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -637,7 +637,7 @@ archive/issue_comments_097526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97526",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -655,7 +655,7 @@ archive/issue_comments_097527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97527",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -675,7 +675,7 @@ archive/issue_comments_097528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97528",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -711,7 +711,7 @@ archive/issue_comments_097529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97529",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -782,7 +782,7 @@ archive/issue_comments_097531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97531",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -800,7 +800,7 @@ archive/issue_comments_097532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97532",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -972,7 +972,7 @@ archive/issue_comments_097537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97537",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1016,7 +1016,7 @@ archive/issue_comments_097539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97539",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1034,7 +1034,7 @@ archive/issue_comments_097540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97540",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1097,7 +1097,7 @@ archive/issue_comments_097542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97542",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1115,7 +1115,7 @@ archive/issue_comments_097543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97543",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1191,7 +1191,7 @@ archive/issue_comments_097545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97545",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1320,7 +1320,7 @@ archive/issue_comments_097550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97550",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1340,7 +1340,7 @@ archive/issue_comments_097551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97551",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1358,7 +1358,7 @@ archive/issue_comments_097552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97552",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1376,7 +1376,7 @@ archive/issue_comments_097553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9870#issuecomment-97553",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

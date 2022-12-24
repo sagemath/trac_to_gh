@@ -14,7 +14,7 @@ archive/issues_005735.json:
     "title": "delete extended rationals and integers completely",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5735",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -51,7 +51,7 @@ archive/issue_comments_044811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5735#issuecomment-44811",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_044812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5735#issuecomment-44812",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -94,16 +94,16 @@ sage/rings/rational_field.py:        sage: E = ExtendedRationalField
 archive/issue_comments_044813.json:
 ```json
 {
-    "body": "Attachment [5735-remove-extended-QQ-ZZ.patch](tarball://root/attachments/some-uuid/ticket5735/5735-remove-extended-QQ-ZZ.patch) by robertwb created at 2009-04-12 00:33:21\n\nI've removed these files, it only required two minor changes outside of this removal (padic valuation and a coercion test). All doctests in piadics pass.",
+    "body": "Attachment [5735-remove-extended-QQ-ZZ.patch](tarball://root/attachments/some-uuid/ticket5735/5735-remove-extended-QQ-ZZ.patch) by @robertwb created at 2009-04-12 00:33:21\n\nI've removed these files, it only required two minor changes outside of this removal (padic valuation and a coercion test). All doctests in piadics pass.",
     "created_at": "2009-04-12T00:33:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5735#issuecomment-44813",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5735-remove-extended-QQ-ZZ.patch](tarball://root/attachments/some-uuid/ticket5735/5735-remove-extended-QQ-ZZ.patch) by robertwb created at 2009-04-12 00:33:21
+Attachment [5735-remove-extended-QQ-ZZ.patch](tarball://root/attachments/some-uuid/ticket5735/5735-remove-extended-QQ-ZZ.patch) by @robertwb created at 2009-04-12 00:33:21
 
 I've removed these files, it only required two minor changes outside of this removal (padic valuation and a coercion test). All doctests in piadics pass.
 

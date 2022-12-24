@@ -14,7 +14,7 @@ archive/issues_006364.json:
     "title": "error message at end of successful \"sage -merge\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6364",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
@@ -69,16 +69,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6364
 archive/issue_comments_050912.json:
 ```json
 {
-    "body": "Attachment [trac-6364-bin.patch](tarball://root/attachments/some-uuid/ticket6364/trac-6364-bin.patch) by craigcitro created at 2009-06-20 17:55:37",
+    "body": "Attachment [trac-6364-bin.patch](tarball://root/attachments/some-uuid/ticket6364/trac-6364-bin.patch) by @craigcitro created at 2009-06-20 17:55:37",
     "created_at": "2009-06-20T17:55:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6364#issuecomment-50912",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-6364-bin.patch](tarball://root/attachments/some-uuid/ticket6364/trac-6364-bin.patch) by craigcitro created at 2009-06-20 17:55:37
+Attachment [trac-6364-bin.patch](tarball://root/attachments/some-uuid/ticket6364/trac-6364-bin.patch) by @craigcitro created at 2009-06-20 17:55:37
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_050913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6364#issuecomment-50913",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_050914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6364#issuecomment-50914",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_050915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6364#issuecomment-50915",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_050916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6364#issuecomment-50916",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -162,16 +162,16 @@ apply to 4.1 (instead of previous patch)
 archive/issue_comments_050917.json:
 ```json
 {
-    "body": "Attachment [trac_6364.patch](tarball://root/attachments/some-uuid/ticket6364/trac_6364.patch) by cremona created at 2009-07-11 15:23:29\n\nCraig's patch would not work for me, it failed to apply, perhaps because the script has changed in the interim.\n\nI have added a new patch and hope it can be reviewed before things  change again!",
+    "body": "Attachment [trac_6364.patch](tarball://root/attachments/some-uuid/ticket6364/trac_6364.patch) by @JohnCremona created at 2009-07-11 15:23:29\n\nCraig's patch would not work for me, it failed to apply, perhaps because the script has changed in the interim.\n\nI have added a new patch and hope it can be reviewed before things  change again!",
     "created_at": "2009-07-11T15:23:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6364#issuecomment-50917",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6364.patch](tarball://root/attachments/some-uuid/ticket6364/trac_6364.patch) by cremona created at 2009-07-11 15:23:29
+Attachment [trac_6364.patch](tarball://root/attachments/some-uuid/ticket6364/trac_6364.patch) by @JohnCremona created at 2009-07-11 15:23:29
 
 Craig's patch would not work for me, it failed to apply, perhaps because the script has changed in the interim.
 

@@ -3,7 +3,7 @@
 archive/issues_008766.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  tscrim\n\nI looked in integer.pyx at the two methods _iadd_ and _imul_, which both mutate self, e.g., allow for:\n\n```\nsage: a = 2010\nsage: a._imul_(19)\nsage: a\n38190\n```\n\nI expected to find a bug exciting docstring about how these methods are unsafe, etc.   Instead, there is *NOTHING* -- not even a doctest or docstring at all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8766\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @tscrim\n\nI looked in integer.pyx at the two methods _iadd_ and _imul_, which both mutate self, e.g., allow for:\n\n```\nsage: a = 2010\nsage: a._imul_(19)\nsage: a\n38190\n```\n\nI expected to find a bug exciting docstring about how these methods are unsafe, etc.   Instead, there is *NOTHING* -- not even a doctest or docstring at all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8766\n\n",
     "created_at": "2010-04-26T13:47:27Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_008766.json:
     "title": "document the _iadd_ and _imul_ special integer.pyx methods, which mutate self",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8766",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  tscrim
+CC:  @tscrim
 
 I looked in integer.pyx at the two methods _iadd_ and _imul_, which both mutate self, e.g., allow for:
 
@@ -48,7 +48,7 @@ archive/issue_comments_080224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8766#issuecomment-80224",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_080225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8766#issuecomment-80225",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_080226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8766#issuecomment-80226",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_080227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8766#issuecomment-80227",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_080228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8766#issuecomment-80228",
-    "user": "lorenz"
+    "user": "@yyyyx4"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_080229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8766#issuecomment-80229",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

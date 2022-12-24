@@ -14,7 +14,7 @@ archive/issues_004055.json:
     "title": "serious bug in polynomial multiplication",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4055",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -52,7 +52,7 @@ archive/issue_comments_029227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4055#issuecomment-29227",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

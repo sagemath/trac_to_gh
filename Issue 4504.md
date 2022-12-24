@@ -135,16 +135,16 @@ Michael
 archive/issue_comments_033378.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to was.",
+    "body": "Changing assignee from mvngu to @williamstein.",
     "created_at": "2008-11-13T05:56:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4504#issuecomment-33378",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from mvngu to was.
+Changing assignee from mvngu to @williamstein.
 
 
 
@@ -158,7 +158,7 @@ archive/issue_comments_033379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4504#issuecomment-33379",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_033388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4504#issuecomment-33388",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -436,16 +436,16 @@ In a source install, these are all Sage spkg files (actually .tar or .tar.bz2 fi
 archive/issue_comments_033389.json:
 ```json
 {
-    "body": "Attachment [trac_4504_scripts_sdist.patch](tarball://root/attachments/some-uuid/ticket4504/trac_4504_scripts_sdist.patch) by was created at 2008-12-06 21:50:24",
+    "body": "Attachment [trac_4504_scripts_sdist.patch](tarball://root/attachments/some-uuid/ticket4504/trac_4504_scripts_sdist.patch) by @williamstein created at 2008-12-06 21:50:24",
     "created_at": "2008-12-06T21:50:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4504#issuecomment-33389",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4504_scripts_sdist.patch](tarball://root/attachments/some-uuid/ticket4504/trac_4504_scripts_sdist.patch) by was created at 2008-12-06 21:50:24
+Attachment [trac_4504_scripts_sdist.patch](tarball://root/attachments/some-uuid/ticket4504/trac_4504_scripts_sdist.patch) by @williamstein created at 2008-12-06 21:50:24
 
 
 
@@ -481,7 +481,7 @@ archive/issue_comments_033391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4504#issuecomment-33391",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -756,7 +756,7 @@ archive/issue_comments_033403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4504#issuecomment-33403",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -774,7 +774,7 @@ archive/issue_comments_033404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4504#issuecomment-33404",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

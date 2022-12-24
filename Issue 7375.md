@@ -14,7 +14,7 @@ archive/issues_007375.json:
     "title": "upgrade M4RI to newest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7375",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tbd
@@ -49,7 +49,7 @@ archive/issue_comments_061781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61781",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_061782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61782",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_061783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61783",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_061784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61784",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_061786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61786",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_061792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61792",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_061793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61793",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -589,7 +589,7 @@ archive/issue_comments_061795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61795",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -751,7 +751,7 @@ archive/issue_comments_061798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61798",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -795,7 +795,7 @@ archive/issue_comments_061800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61800",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -813,7 +813,7 @@ archive/issue_comments_061801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61801",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -841,7 +841,7 @@ archive/issue_comments_061802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61802",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -911,7 +911,7 @@ archive/issue_comments_061805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61805",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -960,7 +960,7 @@ archive/issue_comments_061807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61807",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

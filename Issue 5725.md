@@ -14,7 +14,7 @@ archive/issues_005725.json:
     "title": "[with patch; needs review] sequences -- bring coverage to 100%; don't allow hashing of mutable sequences",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5725",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -63,7 +63,7 @@ archive/issue_comments_044741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5725",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5725#issuecomment-44741",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

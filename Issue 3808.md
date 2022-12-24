@@ -14,7 +14,7 @@ archive/issues_003808.json:
     "title": "bug in Hom constructor for finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3808",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody

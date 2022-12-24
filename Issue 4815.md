@@ -3,7 +3,7 @@
 archive/issues_004815.json:
 ```json
 {
-    "body": "Assignee: was\n\nIn sage-3.2.1 the following segfaults.  Fortunately, in sage-3.2.2.alpha2 it gives only a traceback (as given below):\n\n```\nsage: sage: X = list_plot3d([(1,1,1), (1,2,3), (1,2,5), (1,1,1)])\nsage: sage: X.show(viewer='tachyon')\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/Users/was/build/sage-3.2.2.alpha2/<ipython console> in <module>()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:8436)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d._prepare_for_tachyon (sage/plot/plot3d/base.c:5912)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d._box_for_aspect_ratio (sage/plot/plot3d/base.c:6124)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d._safe_bounding_box (sage/plot/plot3d/base.c:2743)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_surface.so in sage.plot.plot3d.parametric_surface.ParametricSurface.bounding_box (sage/plot/plot3d/parametric_surface.c:2133)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_surface.so in sage.plot.plot3d.parametric_surface.ParametricSurface.triangulate (sage/plot/plot3d/parametric_surface.c:2612)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_surface.so in sage.plot.plot3d.parametric_surface.triangulate (sage/plot/plot3d/parametric_surface.c:2551)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_surface.so in sage.plot.plot3d.parametric_surface.ParametricSurface.eval_grid (sage/plot/plot3d/parametric_surface.c:4108)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/list_plot3d.pyc in g(x, y)\n    210         from parametric_surface import ParametricSurface\n    211         def g(x,y):\n--> 212             i=round( (x-xmin)/(xmax-xmin)*(num_points-1) )\n    213             j=round( (y-ymin)/(ymax-ymin)*(num_points-1) )\n    214             z=vals[int(j),int(i)]\n\nZeroDivisionError: float division\n```\n\n\nlist_plot3d is supposed to work on *any* input, so this is a bug. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4815\n\n",
+    "body": "Assignee: @williamstein\n\nIn sage-3.2.1 the following segfaults.  Fortunately, in sage-3.2.2.alpha2 it gives only a traceback (as given below):\n\n```\nsage: sage: X = list_plot3d([(1,1,1), (1,2,3), (1,2,5), (1,1,1)])\nsage: sage: X.show(viewer='tachyon')\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/Users/was/build/sage-3.2.2.alpha2/<ipython console> in <module>()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:8436)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d._prepare_for_tachyon (sage/plot/plot3d/base.c:5912)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d._box_for_aspect_ratio (sage/plot/plot3d/base.c:6124)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d._safe_bounding_box (sage/plot/plot3d/base.c:2743)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_surface.so in sage.plot.plot3d.parametric_surface.ParametricSurface.bounding_box (sage/plot/plot3d/parametric_surface.c:2133)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_surface.so in sage.plot.plot3d.parametric_surface.ParametricSurface.triangulate (sage/plot/plot3d/parametric_surface.c:2612)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_surface.so in sage.plot.plot3d.parametric_surface.triangulate (sage/plot/plot3d/parametric_surface.c:2551)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/parametric_surface.so in sage.plot.plot3d.parametric_surface.ParametricSurface.eval_grid (sage/plot/plot3d/parametric_surface.c:4108)()\n\n/Users/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/plot/plot3d/list_plot3d.pyc in g(x, y)\n    210         from parametric_surface import ParametricSurface\n    211         def g(x,y):\n--> 212             i=round( (x-xmin)/(xmax-xmin)*(num_points-1) )\n    213             j=round( (y-ymin)/(ymax-ymin)*(num_points-1) )\n    214             z=vals[int(j),int(i)]\n\nZeroDivisionError: float division\n```\n\n\nlist_plot3d is supposed to work on *any* input, so this is a bug. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4815\n\n",
     "created_at": "2008-12-16T16:37:42Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004815.json:
     "title": "list_plot3d is broken (segfaults, zero division errors)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4815",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 In sage-3.2.1 the following segfaults.  Fortunately, in sage-3.2.2.alpha2 it gives only a traceback (as given below):
 
@@ -74,7 +74,7 @@ archive/issue_comments_036502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4815#issuecomment-36502",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_036503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4815#issuecomment-36503",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_036504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4815#issuecomment-36504",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_036505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4815#issuecomment-36505",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_036506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4815#issuecomment-36506",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_036509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4815#issuecomment-36509",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

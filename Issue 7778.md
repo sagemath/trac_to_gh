@@ -3,7 +3,7 @@
 archive/issues_007778.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  drkirkby robert.marik timdumol was\n\nPost-#7467, the SageNB install path depends on its version, but `jsmath-image-fonts-1.4.p2.spkg` expects a slightly different format.\n\nThis ticket just updates `spkg-install`.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/82304cb7adbb22f9), [sage-devel](http://groups.google.com/group/sage-devel/msg/10b3e588e9110322).\n\nRelated tickets: #7196, #7229, #7467, #7755.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7778\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  drkirkby @robert-marik @TimDumol @williamstein\n\nPost-#7467, the SageNB install path depends on its version, but `jsmath-image-fonts-1.4.p2.spkg` expects a slightly different format.\n\nThis ticket just updates `spkg-install`.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/82304cb7adbb22f9), [sage-devel](http://groups.google.com/group/sage-devel/msg/10b3e588e9110322).\n\nRelated tickets: #7196, #7229, #7467, #7755.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7778\n\n",
     "created_at": "2009-12-28T05:32:11Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007778.json:
     "title": "Update jsMath-image-fonts install path detection",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7778",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  drkirkby robert.marik timdumol was
+CC:  drkirkby @robert-marik @TimDumol @williamstein
 
 Post-#7467, the SageNB install path depends on its version, but `jsmath-image-fonts-1.4.p2.spkg` expects a slightly different format.
 
@@ -45,7 +45,7 @@ archive/issue_comments_067066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7778#issuecomment-67066",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_067067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7778#issuecomment-67067",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_067068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7778#issuecomment-67068",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_067069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7778#issuecomment-67069",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_067070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7778#issuecomment-67070",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_067071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7778#issuecomment-67071",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_067072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7778#issuecomment-67072",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_067073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7778#issuecomment-67073",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

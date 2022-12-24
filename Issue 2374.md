@@ -3,7 +3,7 @@
 archive/issues_002374.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nsage-ptest only works from $SAGE_ROOT\n\nIssue created by migration from https://trac.sagemath.org/ticket/2374\n\n",
+    "body": "Assignee: @garyfurnish\n\nsage-ptest only works from $SAGE_ROOT\n\nIssue created by migration from https://trac.sagemath.org/ticket/2374\n\n",
     "created_at": "2008-03-03T15:59:56Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_002374.json:
     "title": "sage-ptest must run in $SAGE_ROOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2374",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 sage-ptest only works from $SAGE_ROOT
 
@@ -37,7 +37,7 @@ archive/issue_comments_016018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2374#issuecomment-16018",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_016019.json:
 ```json
 {
-    "body": "Attachment [trac_2374.patch](tarball://root/attachments/some-uuid/ticket2374/trac_2374.patch) by gfurnish created at 2008-03-10 07:12:13",
+    "body": "Attachment [trac_2374.patch](tarball://root/attachments/some-uuid/ticket2374/trac_2374.patch) by @garyfurnish created at 2008-03-10 07:12:13",
     "created_at": "2008-03-10T07:12:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2374#issuecomment-16019",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_2374.patch](tarball://root/attachments/some-uuid/ticket2374/trac_2374.patch) by gfurnish created at 2008-03-10 07:12:13
+Attachment [trac_2374.patch](tarball://root/attachments/some-uuid/ticket2374/trac_2374.patch) by @garyfurnish created at 2008-03-10 07:12:13
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_016020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2374#issuecomment-16020",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

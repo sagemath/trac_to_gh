@@ -14,7 +14,7 @@ archive/issues_009172.json:
     "title": "cygwin: numerical noise in sage/rings/integer.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9172",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -81,7 +81,7 @@ archive/issue_comments_085784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9172#issuecomment-85784",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_085785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9172#issuecomment-85785",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_085786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9172#issuecomment-85786",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_085787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9172#issuecomment-85787",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_085789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9172#issuecomment-85789",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_085790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9172#issuecomment-85790",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_085791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9172#issuecomment-85791",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_085792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9172#issuecomment-85792",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_085797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9172#issuecomment-85797",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003293.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nAttached patch changes `MPolynomialRing_generic.random_element` so that a random element from the base ring is returned when a degree 0 polynomial is requested.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3293\n\n",
+    "body": "Assignee: @burcin\n\nAttached patch changes `MPolynomialRing_generic.random_element` so that a random element from the base ring is returned when a degree 0 polynomial is requested.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3293\n\n",
     "created_at": "2008-05-24T18:00:26Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_003293.json:
     "title": "[with patch, needs review] MPolynomialRing_generic.random_element returns tuple when degree=0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3293",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Attached patch changes `MPolynomialRing_generic.random_element` so that a random element from the base ring is returned when a degree 0 polynomial is requested.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3293
 archive/issue_comments_022778.json:
 ```json
 {
-    "body": "Attachment [mpolynomialring_random_element_d0_fix.patch](tarball://root/attachments/some-uuid/ticket3293/mpolynomialring_random_element_d0_fix.patch) by burcin created at 2008-05-24 18:00:50\n\nfix for MPolynomialRing_generic.random_element",
+    "body": "Attachment [mpolynomialring_random_element_d0_fix.patch](tarball://root/attachments/some-uuid/ticket3293/mpolynomialring_random_element_d0_fix.patch) by @burcin created at 2008-05-24 18:00:50\n\nfix for MPolynomialRing_generic.random_element",
     "created_at": "2008-05-24T18:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3293#issuecomment-22778",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [mpolynomialring_random_element_d0_fix.patch](tarball://root/attachments/some-uuid/ticket3293/mpolynomialring_random_element_d0_fix.patch) by burcin created at 2008-05-24 18:00:50
+Attachment [mpolynomialring_random_element_d0_fix.patch](tarball://root/attachments/some-uuid/ticket3293/mpolynomialring_random_element_d0_fix.patch) by @burcin created at 2008-05-24 18:00:50
 
 fix for MPolynomialRing_generic.random_element
 
@@ -57,7 +57,7 @@ archive/issue_comments_022779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3293#issuecomment-22779",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

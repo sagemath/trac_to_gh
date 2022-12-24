@@ -3,7 +3,7 @@
 archive/issues_008591.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  malb schilly\n\nYet another solver, which has been reported to be interesting several times...\n\nIt shouldn't be hard to implement as it can be done through Coin's interface, as Cplex and Cbc, so it should mainly consist in a copy of a 15-lines file and a basic update of Cbc's package\n\nhttp://www.gurobi.com/\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8591\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @malb @haraldschilly\n\nYet another solver, which has been reported to be interesting several times...\n\nIt shouldn't be hard to implement as it can be done through Coin's interface, as Cplex and Cbc, so it should mainly consist in a copy of a 15-lines file and a basic update of Cbc's package\n\nhttp://www.gurobi.com/\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8591\n\n",
     "created_at": "2010-03-23T18:26:56Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_008591.json:
     "title": "Support for Gurobi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8591",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
 
-CC:  malb schilly
+CC:  @malb @haraldschilly
 
 Yet another solver, which has been reported to be interesting several times...
 
@@ -45,7 +45,7 @@ archive/issue_comments_077814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8591#issuecomment-77814",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_077815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8591#issuecomment-77815",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_077816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8591#issuecomment-77816",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_077817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8591#issuecomment-77817",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_077818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8591#issuecomment-77818",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_077819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8591#issuecomment-77819",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000351.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nHello William:\n\nI was trying to compute with elliptic curves on SAGE (and\nwww.sagenb.com) and I have found a problem since in MAGMA works very fast.\n\nHere are the output of both programs:\n\n\n///////////////////////\nIN SAGE\n//////////////////////\n\n\nE=EllipticCurve(GF(2^192-2^64-1),[-3,100001010101])\nE\nsage: E=EllipticCurve(GF(2^192-2^64-1),[-3,100001010101])\nsage: E\nElliptic Curve defined by y^2  = x^3 +\n6277101735386680763835789423207666416083908700390324961276*x +\n100001010101 over Finite Field of size\n6277101735386680763835789423207666416083908700390324961279\nsage: n=E.cardinality()\nnsage: n.factor()\n2 * 3 * 5^2 * 7 * 29 * 83 * 642529 * 71354419 *\n54172661118016618880771252420611881049\nsage: E.abelian_group()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/enrique/<ipython console> in <module>()\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\nin abelian_group(self)\n   334             pass\n   335         if self.base_ring().degree() == 1:\n--> 336             I, G = self._cremona_abgrp_data()\n   337             A = AbelianGroup(I)\n   338             G = tuple(reversed([self(P) for P in G]))\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\nin _cremona_abgrp_data(self)\n   297\n   298     def _cremona_abgrp_data(self):\n--> 299         E = self._gp()\n   300         gp = E.parent()\n   301         return eval(gp.eval('[%s.isotype,\nlift(%s.generators)]'%(E.name(), E.name())))\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\nin _gp(self)\n    77         if not F.is_prime():\n    78             raise NotImplementedError\n---> 79         self.__gp = gp_cremona.ellinit(self.a_invariants(),\nF.characteristic())\n    80         return self.__gp\n    81\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/gp_cremona.py\nin ellinit(e, p)\n    74     \"\"\"\n    75     init()\n---> 76     return gp(\"e=ellzpinit(%s,%s);\"%(e,p))\n    77\n    78\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\nin __call__(self, x)\n   490             return x\n   491         if isinstance(x, str):\n--> 492             return cls(self, x)\n   493         try:\n   494             return self._coerce_impl(x)\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\nin __init__(self, parent, value, is_name)\n   719             except (TypeError, KeyboardInterrupt, RuntimeError,\nValueError), x:\n   720                 self._session_number = -1\n--> 721                 raise TypeError, x\n   722         self._session_number = parent._session_number\n   723\n\n<type 'exceptions.TypeError'>: Error executing code in GP/PARI:\nCODE:\n       sage[1]=e=ellzpinit([0, 0, 0,\n6277101735386680763835789423207666416083908700390324961276,\n100001010101],6277101735386680763835789423207666416083908700390324961279);;\nGP/PARI ERROR:\n *** ellap: not enough memory\n\n\n///////////////////////\nIN MAGMA\n//////////////////////\n> K:=GF(2^192-2^64-1);\n> K;\nFinite field of size\n6277101735386680763835789423207666416083908700390324961279\n> E:=EllipticCurve([-3,K!100001010101])\n> ;\n> E;\nElliptic Curve defined by y^2 = x^3 +\n6277101735386680763835789423207666416083908700390324961276*x +\n100001010101 over\nGF(6277101735386680763835789423207666416083908700390324961279)\n> A:=AbelianGroup(E);\n> A;\nAbelian Group isomorphic to\nZ/6277101735386680763835789423079145837183917076777215537650\nDefined on 1 generator\nRelations:\n   6277101735386680763835789423079145837183917076777215537650*A.1 = 0\n> #A;\n6277101735386680763835789423079145837183917076777215537650\n\nTotal time: 6.629 seconds, Total memory usage: 5.53MB\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/351\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nHello William:\n\nI was trying to compute with elliptic curves on SAGE (and\nwww.sagenb.com) and I have found a problem since in MAGMA works very fast.\n\nHere are the output of both programs:\n\n\n///////////////////////\nIN SAGE\n//////////////////////\n\n\nE=EllipticCurve(GF(2^192-2^64-1),[-3,100001010101])\nE\nsage: E=EllipticCurve(GF(2^192-2^64-1),[-3,100001010101])\nsage: E\nElliptic Curve defined by y^2  = x^3 +\n6277101735386680763835789423207666416083908700390324961276*x +\n100001010101 over Finite Field of size\n6277101735386680763835789423207666416083908700390324961279\nsage: n=E.cardinality()\nnsage: n.factor()\n2 * 3 * 5^2 * 7 * 29 * 83 * 642529 * 71354419 *\n54172661118016618880771252420611881049\nsage: E.abelian_group()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/enrique/<ipython console> in <module>()\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\nin abelian_group(self)\n   334             pass\n   335         if self.base_ring().degree() == 1:\n--> 336             I, G = self._cremona_abgrp_data()\n   337             A = AbelianGroup(I)\n   338             G = tuple(reversed([self(P) for P in G]))\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\nin _cremona_abgrp_data(self)\n   297\n   298     def _cremona_abgrp_data(self):\n--> 299         E = self._gp()\n   300         gp = E.parent()\n   301         return eval(gp.eval('[%s.isotype,\nlift(%s.generators)]'%(E.name(), E.name())))\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\nin _gp(self)\n    77         if not F.is_prime():\n    78             raise NotImplementedError\n---> 79         self.__gp = gp_cremona.ellinit(self.a_invariants(),\nF.characteristic())\n    80         return self.__gp\n    81\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/gp_cremona.py\nin ellinit(e, p)\n    74     \"\"\"\n    75     init()\n---> 76     return gp(\"e=ellzpinit(%s,%s);\"%(e,p))\n    77\n    78\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\nin __call__(self, x)\n   490             return x\n   491         if isinstance(x, str):\n--> 492             return cls(self, x)\n   493         try:\n   494             return self._coerce_impl(x)\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\nin __init__(self, parent, value, is_name)\n   719             except (TypeError, KeyboardInterrupt, RuntimeError,\nValueError), x:\n   720                 self._session_number = -1\n--> 721                 raise TypeError, x\n   722         self._session_number = parent._session_number\n   723\n\n<type 'exceptions.TypeError'>: Error executing code in GP/PARI:\nCODE:\n       sage[1]=e=ellzpinit([0, 0, 0,\n6277101735386680763835789423207666416083908700390324961276,\n100001010101],6277101735386680763835789423207666416083908700390324961279);;\nGP/PARI ERROR:\n *** ellap: not enough memory\n\n\n///////////////////////\nIN MAGMA\n//////////////////////\n> K:=GF(2^192-2^64-1);\n> K;\nFinite field of size\n6277101735386680763835789423207666416083908700390324961279\n> E:=EllipticCurve([-3,K!100001010101])\n> ;\n> E;\nElliptic Curve defined by y^2 = x^3 +\n6277101735386680763835789423207666416083908700390324961276*x +\n100001010101 over\nGF(6277101735386680763835789423207666416083908700390324961279)\n> A:=AbelianGroup(E);\n> A;\nAbelian Group isomorphic to\nZ/6277101735386680763835789423079145837183917076777215537650\nDefined on 1 generator\nRelations:\n   6277101735386680763835789423079145837183917076777215537650*A.1 = 0\n> #A;\n6277101735386680763835789423079145837183917076777215537650\n\nTotal time: 6.629 seconds, Total memory usage: 5.53MB\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/351\n\n",
     "created_at": "2007-04-11T15:15:33Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000351.json:
     "title": "issue running cremona's abelian_group command and memory usage in gp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/351",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -151,16 +151,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/351
 archive/issue_comments_001699.json:
 ```json
 {
-    "body": "Changing assignee from was to cremona.",
+    "body": "Changing assignee from @williamstein to @JohnCremona.",
     "created_at": "2007-08-18T09:49:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1699",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Changing assignee from was to cremona.
+Changing assignee from @williamstein to @JohnCremona.
 
 
 
@@ -174,7 +174,7 @@ archive/issue_comments_001700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1700",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_001701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1701",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_001702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1702",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_001703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1703",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_001704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1704",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_001705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1705",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_001706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1706",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

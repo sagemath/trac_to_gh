@@ -14,7 +14,7 @@ archive/issues_000197.json:
     "title": "improve export/import capabilities of the SAGE notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/197",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -76,7 +76,7 @@ archive/issue_comments_000895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/197#issuecomment-895",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_000896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/197#issuecomment-896",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002129.json:
     "title": "implement \"sage -t\" for .pyx files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2129",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -105,7 +105,7 @@ archive/issue_comments_013968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2129#issuecomment-13968",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -118,16 +118,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_013969.json:
 ```json
 {
-    "body": "Attachment [trac_2129-scripts.patch](tarball://root/attachments/some-uuid/ticket2129/trac_2129-scripts.patch) by was created at 2009-01-24 13:57:14",
+    "body": "Attachment [trac_2129-scripts.patch](tarball://root/attachments/some-uuid/ticket2129/trac_2129-scripts.patch) by @williamstein created at 2009-01-24 13:57:14",
     "created_at": "2009-01-24T13:57:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2129#issuecomment-13969",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_2129-scripts.patch](tarball://root/attachments/some-uuid/ticket2129/trac_2129-scripts.patch) by was created at 2009-01-24 13:57:14
+Attachment [trac_2129-scripts.patch](tarball://root/attachments/some-uuid/ticket2129/trac_2129-scripts.patch) by @williamstein created at 2009-01-24 13:57:14
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_013970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2129#issuecomment-13970",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -156,16 +156,16 @@ I manually updated the patch for 3.4 and added trac_2129-scripts-v3_4.patch, but
 archive/issue_comments_013971.json:
 ```json
 {
-    "body": "Attachment [trac_2129-scripts-v3_4.patch](tarball://root/attachments/some-uuid/ticket2129/trac_2129-scripts-v3_4.patch) by rhinton created at 2009-03-12 00:34:53",
+    "body": "Attachment [trac_2129-scripts-v3_4.patch](tarball://root/attachments/some-uuid/ticket2129/trac_2129-scripts-v3_4.patch) by @rhinton created at 2009-03-12 00:34:53",
     "created_at": "2009-03-12T00:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2129#issuecomment-13971",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [trac_2129-scripts-v3_4.patch](tarball://root/attachments/some-uuid/ticket2129/trac_2129-scripts-v3_4.patch) by rhinton created at 2009-03-12 00:34:53
+Attachment [trac_2129-scripts-v3_4.patch](tarball://root/attachments/some-uuid/ticket2129/trac_2129-scripts-v3_4.patch) by @rhinton created at 2009-03-12 00:34:53
 
 
 
@@ -174,16 +174,16 @@ Attachment [trac_2129-scripts-v3_4.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_013972.json:
 ```json
 {
-    "body": "Attachment [trac_2129.spyx](tarball://root/attachments/some-uuid/ticket2129/trac_2129.spyx) by rhinton created at 2009-03-13 15:47:29\n\n.spyx file with a doctest that fails (since previous doctesting blithely reported all tests pass)",
+    "body": "Attachment [trac_2129.spyx](tarball://root/attachments/some-uuid/ticket2129/trac_2129.spyx) by @rhinton created at 2009-03-13 15:47:29\n\n.spyx file with a doctest that fails (since previous doctesting blithely reported all tests pass)",
     "created_at": "2009-03-13T15:47:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2129#issuecomment-13972",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [trac_2129.spyx](tarball://root/attachments/some-uuid/ticket2129/trac_2129.spyx) by rhinton created at 2009-03-13 15:47:29
+Attachment [trac_2129.spyx](tarball://root/attachments/some-uuid/ticket2129/trac_2129.spyx) by @rhinton created at 2009-03-13 15:47:29
 
 .spyx file with a doctest that fails (since previous doctesting blithely reported all tests pass)
 
@@ -199,7 +199,7 @@ archive/issue_comments_013973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2129#issuecomment-13973",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

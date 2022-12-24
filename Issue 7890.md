@@ -3,7 +3,7 @@
 archive/issues_007890.json:
 ```json
 {
-    "body": "Assignee: was\n\nAs of now, certain kinds of sage objects can be converted into GAP objects, but the resulting GAP objects cannot be converted back to sage objects.\n\nExamples of this are matrices over finite fields:\n\n\n```\nsage: g = matrix(GF(5),2,[1,2, -1, 1])\nsage: gg = g._gap_()\nsage: gg.sage()\n---------------------------------------------------------------------------\nNotImplementedError\n```\n\n\n\n```\nsage: a = gap('E(9)')\nsage: a\n-E(9)^4-E(9)^7\nsage: a.sage()\n---------------------------------------------------------------------------\nNotImplementedError  \n```\n\n\nBeing able to translate gap field elements into sage ones would help accesing GAP character tables, and a good conversion of matrices would allow many methods to be available for matrix groups.\n\nSee this thread at sage devel for more details:\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a04006e5da578bd\n\nIssue created by migration from https://trac.sagemath.org/ticket/7890\n\n",
+    "body": "Assignee: @williamstein\n\nAs of now, certain kinds of sage objects can be converted into GAP objects, but the resulting GAP objects cannot be converted back to sage objects.\n\nExamples of this are matrices over finite fields:\n\n\n```\nsage: g = matrix(GF(5),2,[1,2, -1, 1])\nsage: gg = g._gap_()\nsage: gg.sage()\n---------------------------------------------------------------------------\nNotImplementedError\n```\n\n\n\n```\nsage: a = gap('E(9)')\nsage: a\n-E(9)^4-E(9)^7\nsage: a.sage()\n---------------------------------------------------------------------------\nNotImplementedError  \n```\n\n\nBeing able to translate gap field elements into sage ones would help accesing GAP character tables, and a good conversion of matrices would allow many methods to be available for matrix groups.\n\nSee this thread at sage devel for more details:\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a04006e5da578bd\n\nIssue created by migration from https://trac.sagemath.org/ticket/7890\n\n",
     "created_at": "2010-01-10T10:45:46Z",
     "labels": [
         "interfaces",
@@ -16,7 +16,7 @@ archive/issues_007890.json:
     "user": "jlopez"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 As of now, certain kinds of sage objects can be converted into GAP objects, but the resulting GAP objects cannot be converted back to sage objects.
 
@@ -213,7 +213,7 @@ archive/issue_comments_068640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7890#issuecomment-68640",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -226,16 +226,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068641.json:
 ```json
 {
-    "body": "Attachment [gap_to_sage.patch](tarball://root/attachments/some-uuid/ticket7890/gap_to_sage.patch) by wdj created at 2010-01-12 03:06:28\n\nLast patch applied fine to sage-4.3.a0 on a 64bit ubuntu machine, but the following tests failed:\n\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n        sage -t  \"devel/sage/sage/structure/parent.pyx\"\n        sage -t  \"devel/sage/sage/structure/parent_old.pyx\"\n        sage -t  \"devel/sage/sage/misc/sagedoc.py\"\n        sage -t  \"devel/sage/sage/misc/sage_eval.py\"\n\n```\n",
+    "body": "Attachment [gap_to_sage.patch](tarball://root/attachments/some-uuid/ticket7890/gap_to_sage.patch) by @wdjoyner created at 2010-01-12 03:06:28\n\nLast patch applied fine to sage-4.3.a0 on a 64bit ubuntu machine, but the following tests failed:\n\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n        sage -t  \"devel/sage/sage/structure/parent.pyx\"\n        sage -t  \"devel/sage/sage/structure/parent_old.pyx\"\n        sage -t  \"devel/sage/sage/misc/sagedoc.py\"\n        sage -t  \"devel/sage/sage/misc/sage_eval.py\"\n\n```\n",
     "created_at": "2010-01-12T03:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7890#issuecomment-68641",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [gap_to_sage.patch](tarball://root/attachments/some-uuid/ticket7890/gap_to_sage.patch) by wdj created at 2010-01-12 03:06:28
+Attachment [gap_to_sage.patch](tarball://root/attachments/some-uuid/ticket7890/gap_to_sage.patch) by @wdjoyner created at 2010-01-12 03:06:28
 
 Last patch applied fine to sage-4.3.a0 on a 64bit ubuntu machine, but the following tests failed:
 
@@ -265,7 +265,7 @@ archive/issue_comments_068642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7890#issuecomment-68642",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_068644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7890#issuecomment-68644",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_068645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7890#issuecomment-68645",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

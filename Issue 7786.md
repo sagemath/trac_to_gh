@@ -3,7 +3,7 @@
 archive/issues_007786.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mpatel was\n\nBy idiomatic Jinja, I mean\n\n* Inheritance instead of inclusion\n\n* Arguments required are only the needed models to produce the required view [1]\n\nThis will make editing the templates easier, and will allow for a more consistent interface (by specifying base templates for each section).\n\n[1] [Model-View-Controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7786\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @qed777 @williamstein\n\nBy idiomatic Jinja, I mean\n\n* Inheritance instead of inclusion\n\n* Arguments required are only the needed models to produce the required view [1]\n\nThis will make editing the templates easier, and will allow for a more consistent interface (by specifying base templates for each section).\n\n[1] [Model-View-Controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7786\n\n",
     "created_at": "2009-12-29T09:19:36Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007786.json:
     "title": "Restructure templates to idiomatic Jinja",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7786",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mpatel was
+CC:  @qed777 @williamstein
 
 By idiomatic Jinja, I mean
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7786
 archive/issue_comments_067146.json:
 ```json
 {
-    "body": "Attachment [trac_7783-sage-scripts.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7783-sage-scripts.patch) by timdumol created at 2009-12-29 09:21:01\n\nPreliminary work. Worksheet pages not yet done.",
+    "body": "Attachment [trac_7783-sage-scripts.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7783-sage-scripts.patch) by @TimDumol created at 2009-12-29 09:21:01\n\nPreliminary work. Worksheet pages not yet done.",
     "created_at": "2009-12-29T09:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67146",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7783-sage-scripts.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7783-sage-scripts.patch) by timdumol created at 2009-12-29 09:21:01
+Attachment [trac_7783-sage-scripts.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7783-sage-scripts.patch) by @TimDumol created at 2009-12-29 09:21:01
 
 Preliminary work. Worksheet pages not yet done.
 
@@ -62,16 +62,16 @@ Preliminary work. Worksheet pages not yet done.
 archive/issue_comments_067147.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.patch) by timdumol created at 2010-01-02 06:50:07\n\nConverts template structure to an inheritance based tree. Apply this patch alone to sagenb repo.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.patch) by @TimDumol created at 2010-01-02 06:50:07\n\nConverts template structure to an inheritance based tree. Apply this patch alone to sagenb repo.",
     "created_at": "2010-01-02T06:50:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67147",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.patch) by timdumol created at 2010-01-02 06:50:07
+Attachment [trac_7786-template-jinja-idiomatic.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.patch) by @TimDumol created at 2010-01-02 06:50:07
 
 Converts template structure to an inheritance based tree. Apply this patch alone to sagenb repo.
 
@@ -87,7 +87,7 @@ archive/issue_comments_067148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67148",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_067149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67149",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_067150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67150",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_067151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67151",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -156,16 +156,16 @@ As the merge nears, I'll rebase #7666 and its descendants, as necessary.
 archive/issue_comments_067152.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.2.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.2.patch) by timdumol created at 2010-01-02 17:20:16\n\nRebased on #7650 and its dependencies. Apply this patch alone to sagenb repo.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.2.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.2.patch) by @TimDumol created at 2010-01-02 17:20:16\n\nRebased on #7650 and its dependencies. Apply this patch alone to sagenb repo.",
     "created_at": "2010-01-02T17:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67152",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.2.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.2.patch) by timdumol created at 2010-01-02 17:20:16
+Attachment [trac_7786-template-jinja-idiomatic.2.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.2.patch) by @TimDumol created at 2010-01-02 17:20:16
 
 Rebased on #7650 and its dependencies. Apply this patch alone to sagenb repo.
 
@@ -181,7 +181,7 @@ archive/issue_comments_067153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67153",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -194,16 +194,16 @@ Rebased on #7650 and its dependencies. Apply this patch alone to sagenb repo.
 archive/issue_comments_067154.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.3.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.3.patch) by timdumol created at 2010-01-03 17:20:50\n\nUpdates `source_code.html` and adds styling for it. Also adds a warning to the .css files.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.3.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.3.patch) by @TimDumol created at 2010-01-03 17:20:50\n\nUpdates `source_code.html` and adds styling for it. Also adds a warning to the .css files.",
     "created_at": "2010-01-03T17:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67154",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.3.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.3.patch) by timdumol created at 2010-01-03 17:20:50
+Attachment [trac_7786-template-jinja-idiomatic.3.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.3.patch) by @TimDumol created at 2010-01-03 17:20:50
 
 Updates `source_code.html` and adds styling for it. Also adds a warning to the .css files.
 
@@ -214,16 +214,16 @@ Updates `source_code.html` and adds styling for it. Also adds a warning to the .
 archive/issue_comments_067155.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.4.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.4.patch) by timdumol created at 2010-01-03 17:31:39\n\nAdds missing div_wrap argument to template call at `Cell.html()`",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.4.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.4.patch) by @TimDumol created at 2010-01-03 17:31:39\n\nAdds missing div_wrap argument to template call at `Cell.html()`",
     "created_at": "2010-01-03T17:31:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67155",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.4.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.4.patch) by timdumol created at 2010-01-03 17:31:39
+Attachment [trac_7786-template-jinja-idiomatic.4.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.4.patch) by @TimDumol created at 2010-01-03 17:31:39
 
 Adds missing div_wrap argument to template call at `Cell.html()`
 
@@ -239,7 +239,7 @@ archive/issue_comments_067156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67156",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_067157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67157",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_067158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67158",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_067159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67159",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_067160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67160",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -357,16 +357,16 @@ Simple Jinja template dependency graph worksheet.  Not a patch.
 archive/issue_comments_067161.json:
 ```json
 {
-    "body": "Attachment [jinja_template_deps.html](tarball://root/attachments/some-uuid/ticket7786/jinja_template_deps.html) by mpatel created at 2010-01-05 12:47:16\n\nThe [attachment:jinja_template_deps.html attached worksheet] (just paste it into an \"Edit\" window) generates a template dependency graph in Sage.  I'm sure there are many improvements to make, but I hope it's a useful start.  By the way, the last non-empty cell requires [Graphviz's](http://www.graphviz.org/) `dot`.",
+    "body": "Attachment [jinja_template_deps.html](tarball://root/attachments/some-uuid/ticket7786/jinja_template_deps.html) by @qed777 created at 2010-01-05 12:47:16\n\nThe [attachment:jinja_template_deps.html attached worksheet] (just paste it into an \"Edit\" window) generates a template dependency graph in Sage.  I'm sure there are many improvements to make, but I hope it's a useful start.  By the way, the last non-empty cell requires [Graphviz's](http://www.graphviz.org/) `dot`.",
     "created_at": "2010-01-05T12:47:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67161",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [jinja_template_deps.html](tarball://root/attachments/some-uuid/ticket7786/jinja_template_deps.html) by mpatel created at 2010-01-05 12:47:16
+Attachment [jinja_template_deps.html](tarball://root/attachments/some-uuid/ticket7786/jinja_template_deps.html) by @qed777 created at 2010-01-05 12:47:16
 
 The [attachment:jinja_template_deps.html attached worksheet] (just paste it into an "Edit" window) generates a template dependency graph in Sage.  I'm sure there are many improvements to make, but I hope it's a useful start.  By the way, the last non-empty cell requires [Graphviz's](http://www.graphviz.org/) `dot`.
 
@@ -382,7 +382,7 @@ archive/issue_comments_067162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67162",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_067163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67163",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_067164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67164",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_067165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67165",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_067166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67166",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -467,16 +467,16 @@ By the way, the dependency graph is *awesome*. You may want to put it in the wik
 archive/issue_comments_067167.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.5.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.5.patch) by timdumol created at 2010-01-05 20:28:40\n\nFixes the issues pointed out (Se failures, etc.)",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.5.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.5.patch) by @TimDumol created at 2010-01-05 20:28:40\n\nFixes the issues pointed out (Se failures, etc.)",
     "created_at": "2010-01-05T20:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67167",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.5.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.5.patch) by timdumol created at 2010-01-05 20:28:40
+Attachment [trac_7786-template-jinja-idiomatic.5.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.5.patch) by @TimDumol created at 2010-01-05 20:28:40
 
 Fixes the issues pointed out (Se failures, etc.)
 
@@ -492,7 +492,7 @@ archive/issue_comments_067168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67168",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -505,16 +505,16 @@ The doctest failures are not yet fixed. I am having trouble with the Se tests: a
 archive/issue_comments_067169.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.6.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.6.patch) by mpatel created at 2010-01-06 15:20:33\n\nNew test options.  Should fix Se + doc tests.  Replaces previous.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.6.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.6.patch) by @qed777 created at 2010-01-06 15:20:33\n\nNew test options.  Should fix Se + doc tests.  Replaces previous.",
     "created_at": "2010-01-06T15:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67169",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.6.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.6.patch) by mpatel created at 2010-01-06 15:20:33
+Attachment [trac_7786-template-jinja-idiomatic.6.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.6.patch) by @qed777 created at 2010-01-06 15:20:33
 
 New test options.  Should fix Se + doc tests.  Replaces previous.
 
@@ -530,7 +530,7 @@ archive/issue_comments_067170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67170",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -575,7 +575,7 @@ archive/issue_comments_067171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67171",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -590,16 +590,16 @@ On the dependency graph:  Thanks!  Maybe we should include parts of the code (wr
 archive/issue_comments_067172.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.7.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.7.patch) by mpatel created at 2010-01-06 15:59:40\n\nConditional `main.js` compression.  See `js.py`.  Replaces previous.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.7.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.7.patch) by @qed777 created at 2010-01-06 15:59:40\n\nConditional `main.js` compression.  See `js.py`.  Replaces previous.",
     "created_at": "2010-01-06T15:59:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67172",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.7.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.7.patch) by mpatel created at 2010-01-06 15:59:40
+Attachment [trac_7786-template-jinja-idiomatic.7.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.7.patch) by @qed777 created at 2010-01-06 15:59:40
 
 Conditional `main.js` compression.  See `js.py`.  Replaces previous.
 
@@ -615,7 +615,7 @@ archive/issue_comments_067173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67173",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_067174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67174",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_067175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67175",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -669,7 +669,7 @@ archive/issue_comments_067176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67176",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -692,7 +692,7 @@ archive/issue_comments_067177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67177",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -710,7 +710,7 @@ archive/issue_comments_067178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67178",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -737,7 +737,7 @@ archive/issue_comments_067179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67179",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -753,16 +753,16 @@ Sounds good.  I need to do this anyway for public / remote interacts.
 archive/issue_comments_067180.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.8.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.8.patch) by mpatel created at 2010-01-07 01:08:26\n\nFurther small fixes.  Replaces previous.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.8.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.8.patch) by @qed777 created at 2010-01-07 01:08:26\n\nFurther small fixes.  Replaces previous.",
     "created_at": "2010-01-07T01:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67180",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.8.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.8.patch) by mpatel created at 2010-01-07 01:08:26
+Attachment [trac_7786-template-jinja-idiomatic.8.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.8.patch) by @qed777 created at 2010-01-07 01:08:26
 
 Further small fixes.  Replaces previous.
 
@@ -778,7 +778,7 @@ archive/issue_comments_067181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67181",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -806,7 +806,7 @@ archive/issue_comments_067182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67182",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -819,16 +819,16 @@ Adds missing file `_topbar.sass`
 archive/issue_comments_067183.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.9.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.9.patch) by timdumol created at 2010-01-07 17:30:43\n\nYes, it was missing. This patch fixes that problem.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.9.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.9.patch) by @TimDumol created at 2010-01-07 17:30:43\n\nYes, it was missing. This patch fixes that problem.",
     "created_at": "2010-01-07T17:30:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67183",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.9.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.9.patch) by timdumol created at 2010-01-07 17:30:43
+Attachment [trac_7786-template-jinja-idiomatic.9.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.9.patch) by @TimDumol created at 2010-01-07 17:30:43
 
 Yes, it was missing. This patch fixes that problem.
 
@@ -844,7 +844,7 @@ archive/issue_comments_067184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67184",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -862,7 +862,7 @@ archive/issue_comments_067185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67185",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -875,16 +875,16 @@ Actually, I just noticed some problems with `$(document).ready()`.  I'm working 
 archive/issue_comments_067186.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.10.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.10.patch) by mpatel created at 2010-01-08 16:32:28\n\nDOM ready / load event timing fixes.  Replaces previous.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.10.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.10.patch) by @qed777 created at 2010-01-08 16:32:28\n\nDOM ready / load event timing fixes.  Replaces previous.",
     "created_at": "2010-01-08T16:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67186",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.10.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.10.patch) by mpatel created at 2010-01-08 16:32:28
+Attachment [trac_7786-template-jinja-idiomatic.10.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.10.patch) by @qed777 created at 2010-01-08 16:32:28
 
 DOM ready / load event timing fixes.  Replaces previous.
 
@@ -900,7 +900,7 @@ archive/issue_comments_067187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67187",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -930,16 +930,16 @@ I'll try to fix this in V11...
 archive/issue_comments_067188.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.11.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.11.patch) by mpatel created at 2010-01-08 17:07:41\n\nCache HTML for published worksheets.  Replaces previous.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.11.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.11.patch) by @qed777 created at 2010-01-08 17:07:41\n\nCache HTML for published worksheets.  Replaces previous.",
     "created_at": "2010-01-08T17:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67188",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.11.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.11.patch) by mpatel created at 2010-01-08 17:07:41
+Attachment [trac_7786-template-jinja-idiomatic.11.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.11.patch) by @qed777 created at 2010-01-08 17:07:41
 
 Cache HTML for published worksheets.  Replaces previous.
 
@@ -955,7 +955,7 @@ archive/issue_comments_067189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67189",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -973,7 +973,7 @@ archive/issue_comments_067190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67190",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -991,7 +991,7 @@ archive/issue_comments_067191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67191",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1004,16 +1004,16 @@ Fix text cell typesetting.  Replaces previous.
 archive/issue_comments_067192.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.12.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.12.patch) by mpatel created at 2010-01-08 22:11:45\n\nReplying to [comment:31 mpatel]:\n> If I save `$\\alpha$` in a text cell, then edit the cell again, I see `\u00cb` in the editor.  Moreover, the HTML source now contains `<span>` tags, etc.\nV12 should fix this.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.12.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.12.patch) by @qed777 created at 2010-01-08 22:11:45\n\nReplying to [comment:31 mpatel]:\n> If I save `$\\alpha$` in a text cell, then edit the cell again, I see `\u00cb` in the editor.  Moreover, the HTML source now contains `<span>` tags, etc.\nV12 should fix this.",
     "created_at": "2010-01-08T22:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67192",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.12.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.12.patch) by mpatel created at 2010-01-08 22:11:45
+Attachment [trac_7786-template-jinja-idiomatic.12.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.12.patch) by @qed777 created at 2010-01-08 22:11:45
 
 Replying to [comment:31 mpatel]:
 > If I save `$\alpha$` in a text cell, then edit the cell again, I see `Ë` in the editor.  Moreover, the HTML source now contains `<span>` tags, etc.
@@ -1031,7 +1031,7 @@ archive/issue_comments_067193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67193",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1055,7 +1055,7 @@ archive/issue_comments_067194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67194",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1068,16 +1068,16 @@ Fix HTML reference manual build.  Replaces previous.
 archive/issue_comments_067195.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.13.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.13.patch) by mpatel created at 2010-01-09 02:55:25\n\nReplying to [comment:33 mpatel]:\n> I just noticed that Sphinx fails to build the reference manual.  The \"problem\" may be in `template.py`:\nV13 should fix this.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.13.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.13.patch) by @qed777 created at 2010-01-09 02:55:25\n\nReplying to [comment:33 mpatel]:\n> I just noticed that Sphinx fails to build the reference manual.  The \"problem\" may be in `template.py`:\nV13 should fix this.",
     "created_at": "2010-01-09T02:55:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67195",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.13.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.13.patch) by mpatel created at 2010-01-09 02:55:25
+Attachment [trac_7786-template-jinja-idiomatic.13.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.13.patch) by @qed777 created at 2010-01-09 02:55:25
 
 Replying to [comment:33 mpatel]:
 > I just noticed that Sphinx fails to build the reference manual.  The "problem" may be in `template.py`:
@@ -1095,7 +1095,7 @@ archive/issue_comments_067196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67196",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1113,7 +1113,7 @@ archive/issue_comments_067197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67197",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1131,16 +1131,16 @@ Or the same?  Anyway, possibilities for a completely different ticket:
 archive/issue_comments_067198.json:
 ```json
 {
-    "body": "Attachment [trac_7786-template-jinja-idiomatic.14.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.14.patch) by timdumol created at 2010-01-17 19:27:26\n\nRebased on #7650 reviewer patch.",
+    "body": "Attachment [trac_7786-template-jinja-idiomatic.14.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.14.patch) by @TimDumol created at 2010-01-17 19:27:26\n\nRebased on #7650 reviewer patch.",
     "created_at": "2010-01-17T19:27:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67198",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7786-template-jinja-idiomatic.14.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.14.patch) by timdumol created at 2010-01-17 19:27:26
+Attachment [trac_7786-template-jinja-idiomatic.14.patch](tarball://root/attachments/some-uuid/ticket7786/trac_7786-template-jinja-idiomatic.14.patch) by @TimDumol created at 2010-01-17 19:27:26
 
 Rebased on #7650 reviewer patch.
 
@@ -1156,7 +1156,7 @@ archive/issue_comments_067199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67199",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -1185,7 +1185,7 @@ archive/issue_comments_067200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67200",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1203,7 +1203,7 @@ archive/issue_comments_067201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67201",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -1221,7 +1221,7 @@ archive/issue_comments_067202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67202",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -1239,7 +1239,7 @@ archive/issue_comments_067203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7786#issuecomment-67203",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

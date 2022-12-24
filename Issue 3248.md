@@ -3,7 +3,7 @@
 archive/issues_003248.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  craigcitro\n\n1. Something involving the python library in SConstruct that affect c_lib\n\n2. Something library ordering issues that break matrix_real_double_dense in setup.py\n\n3. Choosing ATLAS instead of GSL by default in setup.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/3248\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @craigcitro\n\n1. Something involving the python library in SConstruct that affect c_lib\n\n2. Something library ordering issues that break matrix_real_double_dense in setup.py\n\n3. Choosing ATLAS instead of GSL by default in setup.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/3248\n\n",
     "created_at": "2008-05-17T20:55:36Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_003248.json:
     "title": "[with patch; needs review] cygwin -- fix some sagelib setup.py issues and Sconstruct issues involving library includes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3248",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  craigcitro
+CC:  @craigcitro
 
 1. Something involving the python library in SConstruct that affect c_lib
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3248
 archive/issue_comments_022477.json:
 ```json
 {
-    "body": "Attachment [sage-3248.patch](tarball://root/attachments/some-uuid/ticket3248/sage-3248.patch) by was created at 2008-05-17 20:56:29",
+    "body": "Attachment [sage-3248.patch](tarball://root/attachments/some-uuid/ticket3248/sage-3248.patch) by @williamstein created at 2008-05-17 20:56:29",
     "created_at": "2008-05-17T20:56:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3248#issuecomment-22477",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3248.patch](tarball://root/attachments/some-uuid/ticket3248/sage-3248.patch) by was created at 2008-05-17 20:56:29
+Attachment [sage-3248.patch](tarball://root/attachments/some-uuid/ticket3248/sage-3248.patch) by @williamstein created at 2008-05-17 20:56:29
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_022480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3248#issuecomment-22480",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_022481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3248#issuecomment-22481",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_022482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3248#issuecomment-22482",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

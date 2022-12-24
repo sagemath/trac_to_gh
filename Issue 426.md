@@ -13,7 +13,7 @@ archive/issues_000426.json:
     "title": "notebook -- interactive documentation doesn't interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/426",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

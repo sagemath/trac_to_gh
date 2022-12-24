@@ -3,7 +3,7 @@
 archive/issues_006431.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  robertwb was\n\nKeywords: Laurent series power series call method\n\n\n```\nsage: CDF[['t']]( ~(~CDF[['t']].gen()^2) )\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/period_matrix/riemann_surface.py in <module>()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/power_series_ring.pyc in __call__(self, f, prec, check)\n    378             v = sage_eval(f.Eltseq())\n    379             return self(v) * (self.gen(0)**f.Valuation())\n--> 380         return self.__power_series_class(self, f, prec, check=check)\n    381         \n    382     def construction(self):\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/power_series_poly.so in sage.rings.power_series_poly.PowerSeries_poly.__init__ (sage/rings/power_series_poly.c:2307)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4150)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_with_args (sage/structure/coerce_maps.c:3448)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_with_args (sage/structure/coerce_maps.c:3262)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.pyc in _element_constructor_(self, x, check, is_gen, construct, **kwds)\n    310                 x = x.Polrev()\n    311 \n--> 312         return C(self, x, check, is_gen, construct=construct, **kwds)\n    313 \n    314     def is_integral_domain(self):\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element_generic.pyc in __init__(self, parent, x, check, is_gen, construct)\n    581 class Polynomial_generic_dense_field(Polynomial_generic_dense, Polynomial_generic_field):\n    582     def __init__(self, parent, x=None, check=True, is_gen = False, construct=False):\n--> 583         Polynomial_generic_dense.__init__(self, parent, x, check, is_gen)\n    584 \n    585 \n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__init__ (sage/rings/polynomial/polynomial_element.c:35169)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleField_class.__call__ (sage/rings/complex_double.c:3596)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4130)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3058)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2949)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleField_class._element_constructor_ (sage/rings/complex_double.c:4022)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__init__ (sage/rings/complex_double.c:5765)()\n\nTypeError: a float is required\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6431\n\n",
+    "body": "Assignee: @malb\n\nCC:  @robertwb @williamstein\n\nKeywords: Laurent series power series call method\n\n\n```\nsage: CDF[['t']]( ~(~CDF[['t']].gen()^2) )\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/period_matrix/riemann_surface.py in <module>()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/power_series_ring.pyc in __call__(self, f, prec, check)\n    378             v = sage_eval(f.Eltseq())\n    379             return self(v) * (self.gen(0)**f.Valuation())\n--> 380         return self.__power_series_class(self, f, prec, check=check)\n    381         \n    382     def construction(self):\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/power_series_poly.so in sage.rings.power_series_poly.PowerSeries_poly.__init__ (sage/rings/power_series_poly.c:2307)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4150)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_with_args (sage/structure/coerce_maps.c:3448)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_with_args (sage/structure/coerce_maps.c:3262)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.pyc in _element_constructor_(self, x, check, is_gen, construct, **kwds)\n    310                 x = x.Polrev()\n    311 \n--> 312         return C(self, x, check, is_gen, construct=construct, **kwds)\n    313 \n    314     def is_integral_domain(self):\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element_generic.pyc in __init__(self, parent, x, check, is_gen, construct)\n    581 class Polynomial_generic_dense_field(Polynomial_generic_dense, Polynomial_generic_field):\n    582     def __init__(self, parent, x=None, check=True, is_gen = False, construct=False):\n--> 583         Polynomial_generic_dense.__init__(self, parent, x, check, is_gen)\n    584 \n    585 \n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__init__ (sage/rings/polynomial/polynomial_element.c:35169)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleField_class.__call__ (sage/rings/complex_double.c:3596)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4130)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3058)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2949)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleField_class._element_constructor_ (sage/rings/complex_double.c:4022)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__init__ (sage/rings/complex_double.c:5765)()\n\nTypeError: a float is required\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6431\n\n",
     "created_at": "2009-06-27T04:39:42Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_006431.json:
     "title": "no call method from Laurent series into Power series ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6431",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  robertwb was
+CC:  @robertwb @williamstein
 
 Keywords: Laurent series power series call method
 
@@ -94,7 +94,7 @@ archive/issue_comments_051649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6431#issuecomment-51649",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_051650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6431#issuecomment-51650",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_051651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6431#issuecomment-51651",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_051652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6431#issuecomment-51652",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_051653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6431#issuecomment-51653",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

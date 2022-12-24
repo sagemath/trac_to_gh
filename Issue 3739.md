@@ -14,7 +14,7 @@ archive/issues_003739.json:
     "title": "notebook -- new user default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3739",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -59,16 +59,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3739
 archive/issue_comments_026566.json:
 ```json
 {
-    "body": "Attachment [sage-3739-part2.patch](tarball://root/attachments/some-uuid/ticket3739/sage-3739-part2.patch) by was created at 2008-07-29 21:57:22\n\nsmall followup when refereeing patch",
+    "body": "Attachment [sage-3739-part2.patch](tarball://root/attachments/some-uuid/ticket3739/sage-3739-part2.patch) by @williamstein created at 2008-07-29 21:57:22\n\nsmall followup when refereeing patch",
     "created_at": "2008-07-29T21:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3739#issuecomment-26566",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3739-part2.patch](tarball://root/attachments/some-uuid/ticket3739/sage-3739-part2.patch) by was created at 2008-07-29 21:57:22
+Attachment [sage-3739-part2.patch](tarball://root/attachments/some-uuid/ticket3739/sage-3739-part2.patch) by @williamstein created at 2008-07-29 21:57:22
 
 small followup when refereeing patch
 

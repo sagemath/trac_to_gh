@@ -14,7 +14,7 @@ archive/issues_000808.json:
     "title": "construction of function fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/808",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: somebody
@@ -44,7 +44,7 @@ archive/issue_comments_004899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/808#issuecomment-4899",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 

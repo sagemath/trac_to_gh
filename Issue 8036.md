@@ -112,7 +112,7 @@ archive/issue_comments_070188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70188",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_070189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70189",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -149,16 +149,16 @@ IOW, it's the latex preamble which needs fixing.
 archive/issue_comments_070190.json:
 ```json
 {
-    "body": "Attachment [utf8.tex](tarball://root/attachments/some-uuid/ticket8036/utf8.tex) by tornaria created at 2010-01-22 03:09:47\n\nLatex file which shows usage of utf8",
+    "body": "Attachment [utf8.tex](tarball://root/attachments/some-uuid/ticket8036/utf8.tex) by @tornaria created at 2010-01-22 03:09:47\n\nLatex file which shows usage of utf8",
     "created_at": "2010-01-22T03:09:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70190",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [utf8.tex](tarball://root/attachments/some-uuid/ticket8036/utf8.tex) by tornaria created at 2010-01-22 03:09:47
+Attachment [utf8.tex](tarball://root/attachments/some-uuid/ticket8036/utf8.tex) by @tornaria created at 2010-01-22 03:09:47
 
 Latex file which shows usage of utf8
 
@@ -174,7 +174,7 @@ archive/issue_comments_070191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70191",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_070192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70192",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -217,16 +217,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_070193.json:
 ```json
 {
-    "body": "Attachment [trac_8036-tex-replacements.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-tex-replacements.patch) by jhpalmieri created at 2010-01-22 05:45:00\n\napply only this patch",
+    "body": "Attachment [trac_8036-tex-replacements.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-tex-replacements.patch) by @jhpalmieri created at 2010-01-22 05:45:00\n\napply only this patch",
     "created_at": "2010-01-22T05:45:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70193",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8036-tex-replacements.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-tex-replacements.patch) by jhpalmieri created at 2010-01-22 05:45:00
+Attachment [trac_8036-tex-replacements.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-tex-replacements.patch) by @jhpalmieri created at 2010-01-22 05:45:00
 
 apply only this patch
 
@@ -242,7 +242,7 @@ archive/issue_comments_070194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70194",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_070195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70195",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_070196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70196",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_070197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70197",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_070198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70198",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -354,16 +354,16 @@ The patch simply identifies the three characters and replaces them with straight
 archive/issue_comments_070199.json:
 ```json
 {
-    "body": "Attachment [trac_8036-three-non-ascii.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-three-non-ascii.patch) by mpatel created at 2010-01-31 07:48:55\n\n#7999 should take care of the HTML reference manual.",
+    "body": "Attachment [trac_8036-three-non-ascii.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-three-non-ascii.patch) by @qed777 created at 2010-01-31 07:48:55\n\n#7999 should take care of the HTML reference manual.",
     "created_at": "2010-01-31T07:48:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70199",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8036-three-non-ascii.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-three-non-ascii.patch) by mpatel created at 2010-01-31 07:48:55
+Attachment [trac_8036-three-non-ascii.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-three-non-ascii.patch) by @qed777 created at 2010-01-31 07:48:55
 
 #7999 should take care of the HTML reference manual.
 
@@ -379,7 +379,7 @@ archive/issue_comments_070200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70200",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -400,16 +400,16 @@ in `doc/common/conf.py`?
 archive/issue_comments_070201.json:
 ```json
 {
-    "body": "Attachment [trac_8036-docbuild_utf8x.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-docbuild_utf8x.patch) by mpatel created at 2010-01-31 08:48:30\n\nSet utf8x in Sphinx option.  Solo patch.",
+    "body": "Attachment [trac_8036-docbuild_utf8x.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-docbuild_utf8x.patch) by @qed777 created at 2010-01-31 08:48:30\n\nSet utf8x in Sphinx option.  Solo patch.",
     "created_at": "2010-01-31T08:48:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70201",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8036-docbuild_utf8x.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-docbuild_utf8x.patch) by mpatel created at 2010-01-31 08:48:30
+Attachment [trac_8036-docbuild_utf8x.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-docbuild_utf8x.patch) by @qed777 created at 2010-01-31 08:48:30
 
 Set utf8x in Sphinx option.  Solo patch.
 
@@ -425,7 +425,7 @@ archive/issue_comments_070202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70202",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_070203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70203",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -468,7 +468,7 @@ archive/issue_comments_070204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70204",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

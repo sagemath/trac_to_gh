@@ -3,7 +3,7 @@
 archive/issues_008993.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: polynomial quotient ring, singular\n\nCurrently there is no representation of univariate polynomial quotient rings in the Singular interface; it was only implemented for the multivariate case.\n\nThe attached patch implements it:\n\n```\nsage: P.<x> = QQ[]\nsage: Q.<xi> = P.quo([(x^2+1)])\nsage: singular(xi)\nxi\nsage: singular(Q)\n//   characteristic : 0\n//   number of vars : 1\n//        block   1 : ordering lp\n//                  : names    xi\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=xi^2+1\nsage: (singular(xi)*singular(xi)).NF('std(0)')\n-1\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8993\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: polynomial quotient ring, singular\n\nCurrently there is no representation of univariate polynomial quotient rings in the Singular interface; it was only implemented for the multivariate case.\n\nThe attached patch implements it:\n\n```\nsage: P.<x> = QQ[]\nsage: Q.<xi> = P.quo([(x^2+1)])\nsage: singular(xi)\nxi\nsage: singular(Q)\n//   characteristic : 0\n//   number of vars : 1\n//        block   1 : ordering lp\n//                  : names    xi\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=xi^2+1\nsage: (singular(xi)*singular(xi)).NF('std(0)')\n-1\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8993\n\n",
     "created_at": "2010-05-19T16:48:31Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_008993.json:
     "title": "Representation of polynomial quotient rings in Singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8993",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: polynomial quotient ring, singular
 
@@ -60,7 +60,7 @@ archive/issue_comments_083158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83158",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_083159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83159",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_083160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83160",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_083161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83161",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_083162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83162",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_083163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83163",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_083164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83164",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_083165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83165",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_083166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83166",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_083167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83167",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_083168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83168",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -270,16 +270,16 @@ Please include the ticket number in the commit messages for your patches!
 archive/issue_comments_083169.json:
 ```json
 {
-    "body": "Attachment [8993_poly_quotient_in_singular.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.patch) by SimonKing created at 2010-07-22 08:11:25\n\nImplement polynomial quotient rings in singular interface",
+    "body": "Attachment [8993_poly_quotient_in_singular.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.patch) by @simon-king-jena created at 2010-07-22 08:11:25\n\nImplement polynomial quotient rings in singular interface",
     "created_at": "2010-07-22T08:11:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83169",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [8993_poly_quotient_in_singular.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.patch) by SimonKing created at 2010-07-22 08:11:25
+Attachment [8993_poly_quotient_in_singular.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.patch) by @simon-king-jena created at 2010-07-22 08:11:25
 
 Implement polynomial quotient rings in singular interface
 
@@ -290,16 +290,16 @@ Implement polynomial quotient rings in singular interface
 archive/issue_comments_083170.json:
 ```json
 {
-    "body": "Attachment [8993_poly_quotient_in_singular.p1.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.p1.patch) by SimonKing created at 2010-07-22 08:12:02\n\nAvoid \"import sage\" according to the reviewer's request - apply after first patch",
+    "body": "Attachment [8993_poly_quotient_in_singular.p1.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.p1.patch) by @simon-king-jena created at 2010-07-22 08:12:02\n\nAvoid \"import sage\" according to the reviewer's request - apply after first patch",
     "created_at": "2010-07-22T08:12:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83170",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [8993_poly_quotient_in_singular.p1.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.p1.patch) by SimonKing created at 2010-07-22 08:12:02
+Attachment [8993_poly_quotient_in_singular.p1.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.p1.patch) by @simon-king-jena created at 2010-07-22 08:12:02
 
 Avoid "import sage" according to the reviewer's request - apply after first patch
 
@@ -315,7 +315,7 @@ archive/issue_comments_083171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83171",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_083172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83172",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_083173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83173",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_083174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83174",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_083175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83175",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

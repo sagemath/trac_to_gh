@@ -3,7 +3,7 @@
 archive/issues_005109.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5109\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5109\n\n",
     "created_at": "2009-01-27T00:14:11Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005109.json:
     "title": "add support for Bell polynomials in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5109",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5109
 archive/issue_comments_039030.json:
 ```json
 {
-    "body": "Attachment [trac_5109.patch](tarball://root/attachments/some-uuid/ticket5109/trac_5109.patch) by mhansen created at 2009-01-27 01:18:03",
+    "body": "Attachment [trac_5109.patch](tarball://root/attachments/some-uuid/ticket5109/trac_5109.patch) by @mwhansen created at 2009-01-27 01:18:03",
     "created_at": "2009-01-27T01:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39030",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5109.patch](tarball://root/attachments/some-uuid/ticket5109/trac_5109.patch) by mhansen created at 2009-01-27 01:18:03
+Attachment [trac_5109.patch](tarball://root/attachments/some-uuid/ticket5109/trac_5109.patch) by @mwhansen created at 2009-01-27 01:18:03
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_039031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39031",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_039032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39032",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_039034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39034",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_039035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39035",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

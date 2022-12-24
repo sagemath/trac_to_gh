@@ -3,7 +3,7 @@
 archive/issues_008288.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat nthiery\n\nKeywords: enumeration depth breadth forest children\n\nThe goal of this patch is to include breadth enumeration method for SearchForest...\n\nThe interested is for enumerated Set defined by a set of roots and a children function. For a finite set of roots but infinite set (infinite depth of the tree), the breadth method is a necessity.\n\nThe breadth method is also a need to define properly indices of infinite Graded algebra (but finite degree by degree). The patch contains method returning iterator of all element of given depth.\n\nUsing extra argument : father and next_brother method, it is possible to enumerate not starting from the roots of trees. a _iter_from_to method build an iterator keeping nothing in memory than the first and the last point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8288\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat @nthiery\n\nKeywords: enumeration depth breadth forest children\n\nThe goal of this patch is to include breadth enumeration method for SearchForest...\n\nThe interested is for enumerated Set defined by a set of roots and a children function. For a finite set of roots but infinite set (infinite depth of the tree), the breadth method is a necessity.\n\nThe breadth method is also a need to define properly indices of infinite Graded algebra (but finite degree by degree). The patch contains method returning iterator of all element of given depth.\n\nUsing extra argument : father and next_brother method, it is possible to enumerate not starting from the roots of trees. a _iter_from_to method build an iterator keeping nothing in memory than the first and the last point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8288\n\n",
     "created_at": "2010-02-16T22:17:26Z",
     "labels": [
         "combinatorics",
@@ -19,7 +19,7 @@ archive/issues_008288.json:
 ```
 Assignee: sage-combinat
 
-CC:  sage-combinat nthiery
+CC:  sage-combinat @nthiery
 
 Keywords: enumeration depth breadth forest children
 
@@ -83,7 +83,7 @@ archive/issue_comments_073386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73386",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_073387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73387",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_073388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73388",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_073389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73389",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_073390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73390",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_073392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73392",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_073393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73393",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_073399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73399",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_073402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73402",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_073403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73403",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -583,7 +583,7 @@ archive/issue_comments_073407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73407",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -625,7 +625,7 @@ archive/issue_comments_073409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73409",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -663,7 +663,7 @@ archive/issue_comments_073411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73411",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -740,7 +740,7 @@ archive/issue_comments_073415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73415",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -764,7 +764,7 @@ archive/issue_comments_073416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8288#issuecomment-73416",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

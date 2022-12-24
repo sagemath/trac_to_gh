@@ -3,7 +3,7 @@
 archive/issues_002026.json:
 ```json
 {
-    "body": "Assignee: was\n\nIn matrix2.pyx under eigenspaces():\n\n\n```\n        Next we compute the eigenspaces over the finite field\n        of order 11:\n        \n            sage: # A = ModularSymbols(43, base_ring=GF(11), sign=1).T(2).matrix()\n            sage: A = matrix(QQ, 4, [3, 9, 0, 0, 0, 9, 0, 1, 0, 10, 9, 2, 0, 9, 0, 2])\n```\n\n\nIt seems like the description should be deleted or the doctest should be run and the output included.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2026\n\n",
+    "body": "Assignee: @williamstein\n\nIn matrix2.pyx under eigenspaces():\n\n\n```\n        Next we compute the eigenspaces over the finite field\n        of order 11:\n        \n            sage: # A = ModularSymbols(43, base_ring=GF(11), sign=1).T(2).matrix()\n            sage: A = matrix(QQ, 4, [3, 9, 0, 0, 0, 9, 0, 1, 0, 10, 9, 2, 0, 9, 0, 2])\n```\n\n\nIt seems like the description should be deleted or the doctest should be run and the output included.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2026\n\n",
     "created_at": "2008-02-01T19:18:58Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002026.json:
     "title": "matrix.eigenspaces doctest description is misleading",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2026",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 In matrix2.pyx under eigenspaces():
 
@@ -50,7 +50,7 @@ archive/issue_comments_013105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2026#issuecomment-13105",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,16 +63,16 @@ Changing status from new to assigned.
 archive/issue_comments_013106.json:
 ```json
 {
-    "body": "Attachment [trac-2026.patch](tarball://root/attachments/some-uuid/ticket2026/trac-2026.patch) by was created at 2008-02-01 23:11:04",
+    "body": "Attachment [trac-2026.patch](tarball://root/attachments/some-uuid/ticket2026/trac-2026.patch) by @williamstein created at 2008-02-01 23:11:04",
     "created_at": "2008-02-01T23:11:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2026#issuecomment-13106",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-2026.patch](tarball://root/attachments/some-uuid/ticket2026/trac-2026.patch) by was created at 2008-02-01 23:11:04
+Attachment [trac-2026.patch](tarball://root/attachments/some-uuid/ticket2026/trac-2026.patch) by @williamstein created at 2008-02-01 23:11:04
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_013107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2026#issuecomment-13107",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -99,16 +99,16 @@ apply on top of first patch.
 archive/issue_comments_013108.json:
 ```json
 {
-    "body": "Attachment [eigenspace-docs.2.patch](tarball://root/attachments/some-uuid/ticket2026/eigenspace-docs.2.patch) by jason created at 2008-02-01 23:39:21\n\nApply instead of first patch (this includes the first patch)",
+    "body": "Attachment [eigenspace-docs.2.patch](tarball://root/attachments/some-uuid/ticket2026/eigenspace-docs.2.patch) by @jasongrout created at 2008-02-01 23:39:21\n\nApply instead of first patch (this includes the first patch)",
     "created_at": "2008-02-01T23:39:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2026#issuecomment-13108",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [eigenspace-docs.2.patch](tarball://root/attachments/some-uuid/ticket2026/eigenspace-docs.2.patch) by jason created at 2008-02-01 23:39:21
+Attachment [eigenspace-docs.2.patch](tarball://root/attachments/some-uuid/ticket2026/eigenspace-docs.2.patch) by @jasongrout created at 2008-02-01 23:39:21
 
 Apply instead of first patch (this includes the first patch)
 
@@ -124,7 +124,7 @@ archive/issue_comments_013109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2026#issuecomment-13109",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_013110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2026#issuecomment-13110",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

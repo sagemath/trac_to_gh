@@ -14,7 +14,7 @@ archive/issues_004039.json:
     "title": "choose one name for  partial fraction decompositions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4039",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
@@ -52,7 +52,7 @@ archive/issue_comments_029135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4039#issuecomment-29135",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_029136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4039#issuecomment-29136",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_029137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4039#issuecomment-29137",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_029138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4039#issuecomment-29138",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_029139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4039#issuecomment-29139",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_029140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4039#issuecomment-29140",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

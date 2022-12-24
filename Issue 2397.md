@@ -3,7 +3,7 @@
 archive/issues_002397.json:
 ```json
 {
-    "body": "Assignee: dfdeshom\n\nmatrix_from_rows could be made faster by using  PY_TYPE_CHECK or pyrex-style for loops.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2397\n\n",
+    "body": "Assignee: @dfdeshom\n\nmatrix_from_rows could be made faster by using  PY_TYPE_CHECK or pyrex-style for loops.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2397\n\n",
     "created_at": "2008-03-05T16:47:07Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002397.json:
     "title": "speed up matrix_from_rows",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2397",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: dfdeshom
+Assignee: @dfdeshom
 
 matrix_from_rows could be made faster by using  PY_TYPE_CHECK or pyrex-style for loops.
 
@@ -37,7 +37,7 @@ archive/issue_comments_016166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16166",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_016167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16167",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_016168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16168",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_016169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16169",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_016170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16170",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -184,16 +184,16 @@ This patch actually causes segfaults all over the map.
 archive/issue_comments_016172.json:
 ```json
 {
-    "body": "Attachment [2397.patch](tarball://root/attachments/some-uuid/ticket2397/2397.patch) by dfdeshom created at 2008-03-12 22:19:17\n\nFound the bug and doctests on matrix0,1,2 pass. I've updated the patch (2397.patch) but please ignore the bundle file (I'm having trouble making hg bundles work). More ewviews, please!",
+    "body": "Attachment [2397.patch](tarball://root/attachments/some-uuid/ticket2397/2397.patch) by @dfdeshom created at 2008-03-12 22:19:17\n\nFound the bug and doctests on matrix0,1,2 pass. I've updated the patch (2397.patch) but please ignore the bundle file (I'm having trouble making hg bundles work). More ewviews, please!",
     "created_at": "2008-03-12T22:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16172",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2397.patch](tarball://root/attachments/some-uuid/ticket2397/2397.patch) by dfdeshom created at 2008-03-12 22:19:17
+Attachment [2397.patch](tarball://root/attachments/some-uuid/ticket2397/2397.patch) by @dfdeshom created at 2008-03-12 22:19:17
 
 Found the bug and doctests on matrix0,1,2 pass. I've updated the patch (2397.patch) but please ignore the bundle file (I'm having trouble making hg bundles work). More ewviews, please!
 
@@ -204,16 +204,16 @@ Found the bug and doctests on matrix0,1,2 pass. I've updated the patch (2397.pat
 archive/issue_comments_016173.json:
 ```json
 {
-    "body": "Attachment [2397.hg](tarball://root/attachments/some-uuid/ticket2397/2397.hg) by dfdeshom created at 2008-03-12 23:50:22\n\nThe hg bundle should also work now.",
+    "body": "Attachment [2397.hg](tarball://root/attachments/some-uuid/ticket2397/2397.hg) by @dfdeshom created at 2008-03-12 23:50:22\n\nThe hg bundle should also work now.",
     "created_at": "2008-03-12T23:50:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16173",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2397.hg](tarball://root/attachments/some-uuid/ticket2397/2397.hg) by dfdeshom created at 2008-03-12 23:50:22
+Attachment [2397.hg](tarball://root/attachments/some-uuid/ticket2397/2397.hg) by @dfdeshom created at 2008-03-12 23:50:22
 
 The hg bundle should also work now.
 
@@ -229,7 +229,7 @@ archive/issue_comments_016174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16174",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_016175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16175",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_016177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16177",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001076.json:
     "title": "some notebook css/javascript bugs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1076",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1076
 archive/issue_comments_006509.json:
 ```json
 {
-    "body": "Changing assignee from boothby to was.",
+    "body": "Changing assignee from boothby to @williamstein.",
     "created_at": "2007-11-03T15:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1076#issuecomment-6509",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from boothby to was.
+Changing assignee from boothby to @williamstein.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_006510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1076#issuecomment-6510",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -92,16 +92,16 @@ Ondrej
 archive/issue_comments_006511.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-11-20T00:07:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1076#issuecomment-6511",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -110,16 +110,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_006512.json:
 ```json
 {
-    "body": "Attachment [1076.patch](tarball://root/attachments/some-uuid/ticket1076/1076.patch) by mhansen created at 2007-11-20 00:07:12",
+    "body": "Attachment [1076.patch](tarball://root/attachments/some-uuid/ticket1076/1076.patch) by @mwhansen created at 2007-11-20 00:07:12",
     "created_at": "2007-11-20T00:07:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1076#issuecomment-6512",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1076.patch](tarball://root/attachments/some-uuid/ticket1076/1076.patch) by mhansen created at 2007-11-20 00:07:12
+Attachment [1076.patch](tarball://root/attachments/some-uuid/ticket1076/1076.patch) by @mwhansen created at 2007-11-20 00:07:12
 
 
 
@@ -133,7 +133,7 @@ archive/issue_comments_006513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1076#issuecomment-6513",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_006514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1076",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1076#issuecomment-6514",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

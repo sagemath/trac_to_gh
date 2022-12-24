@@ -3,7 +3,7 @@
 archive/issues_000408.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is on Mac OS X, 10.4.10, with Safari, using SAGE 2.7.1.\n\nIf I create a worksheet, fiddle around with it, and then quit and restart the server,\ngoing to \"localhost/8000\" gives me a page with the worksheet shown (as possibly\none of many).  If I click the adjacent check box and then the DELETE button, the\ncheck box is cleared but the worksheet entry remains.  Only when I 'refresh' the page\ndoes the worksheet entry disappear.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/408\n\n",
+    "body": "Assignee: @williamstein\n\nThis is on Mac OS X, 10.4.10, with Safari, using SAGE 2.7.1.\n\nIf I create a worksheet, fiddle around with it, and then quit and restart the server,\ngoing to \"localhost/8000\" gives me a page with the worksheet shown (as possibly\none of many).  If I click the adjacent check box and then the DELETE button, the\ncheck box is cleared but the worksheet entry remains.  Only when I 'refresh' the page\ndoes the worksheet entry disappear.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/408\n\n",
     "created_at": "2007-07-27T05:16:05Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_000408.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is on Mac OS X, 10.4.10, with Safari, using SAGE 2.7.1.
 
@@ -57,16 +57,16 @@ Oh: on a MacBook Pro, FWIW.
 archive/issue_comments_002008.json:
 ```json
 {
-    "body": "Changing assignee from was to boothby.",
+    "body": "Changing assignee from @williamstein to boothby.",
     "created_at": "2007-07-27T19:19:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/408#issuecomment-2008",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from was to boothby.
+Changing assignee from @williamstein to boothby.
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_002009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/408#issuecomment-2009",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_002010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/408#issuecomment-2010",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_002011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/408#issuecomment-2011",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_002012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/408#issuecomment-2012",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_002014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/408#issuecomment-2014",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_002015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/408#issuecomment-2015",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

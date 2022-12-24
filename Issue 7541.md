@@ -3,7 +3,7 @@
 archive/issues_007541.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nLex BFS is a variant of the breadth first search. It is used to detect whether a Graph is chordal. Both algorithms are described there :\n\nhttp://en.wikipedia.org/wiki/Lexicographic_breadth-first_search\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7541\n\n",
+    "body": "Assignee: @rlmill\n\nLex BFS is a variant of the breadth first search. It is used to detect whether a Graph is chordal. Both algorithms are described there :\n\nhttp://en.wikipedia.org/wiki/Lexicographic_breadth-first_search\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7541\n\n",
     "created_at": "2009-11-27T13:01:17Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007541.json:
     "title": "LexBFS and is_chordal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7541",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Lex BFS is a variant of the breadth first search. It is used to detect whether a Graph is chordal. Both algorithms are described there :
 
@@ -41,7 +41,7 @@ archive/issue_comments_063991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7541#issuecomment-63991",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_063992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7541#issuecomment-63992",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_063993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7541#issuecomment-63993",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_063994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7541#issuecomment-63994",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_063995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7541#issuecomment-63995",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -126,13 +126,13 @@ Resolution: fixed
 archive/issue_comments_063996.json:
 ```json
 {
-    "body": "Attachment [trac_7541.patch](tarball://root/attachments/some-uuid/ticket7541/trac_7541.patch) by mhansen created at 2009-12-19 21:26:33",
+    "body": "Attachment [trac_7541.patch](tarball://root/attachments/some-uuid/ticket7541/trac_7541.patch) by @mwhansen created at 2009-12-19 21:26:33",
     "created_at": "2009-12-19T21:26:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7541#issuecomment-63996",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7541.patch](tarball://root/attachments/some-uuid/ticket7541/trac_7541.patch) by mhansen created at 2009-12-19 21:26:33
+Attachment [trac_7541.patch](tarball://root/attachments/some-uuid/ticket7541/trac_7541.patch) by @mwhansen created at 2009-12-19 21:26:33

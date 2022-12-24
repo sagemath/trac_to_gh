@@ -3,7 +3,7 @@
 archive/issues_001199.json:
 ```json
 {
-    "body": "Assignee: was\n\nMinor addition to cvxopt package so that when building with gfortran, sage/local/lib is in the library path. Also stripped out documentation to save some space. \n\ncvxopt-0.9.p1.spkg\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs\n\nThis supercedes the cvxopt versions in 1125 and 1161\n\nIssue created by migration from https://trac.sagemath.org/ticket/1199\n\n",
+    "body": "Assignee: @williamstein\n\nMinor addition to cvxopt package so that when building with gfortran, sage/local/lib is in the library path. Also stripped out documentation to save some space. \n\ncvxopt-0.9.p1.spkg\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs\n\nThis supercedes the cvxopt versions in 1125 and 1161\n\nIssue created by migration from https://trac.sagemath.org/ticket/1199\n\n",
     "created_at": "2007-11-18T08:03:11Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001199.json:
     "user": "jkantor"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Minor addition to cvxopt package so that when building with gfortran, sage/local/lib is in the library path. Also stripped out documentation to save some space. 
 
@@ -38,7 +38,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1199
 archive/issue_comments_007432.json:
 ```json
 {
-    "body": "Changing assignee from was to jkantor.",
+    "body": "Changing assignee from @williamstein to jkantor.",
     "created_at": "2007-11-18T08:03:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1199",
     "type": "issue_comment",
@@ -47,7 +47,7 @@ archive/issue_comments_007432.json:
 }
 ```
 
-Changing assignee from was to jkantor.
+Changing assignee from @williamstein to jkantor.
 
 
 
@@ -92,7 +92,7 @@ Changing component from numerical to packages.
 archive/issue_comments_007435.json:
 ```json
 {
-    "body": "Changing assignee from jkantor to was.",
+    "body": "Changing assignee from jkantor to @williamstein.",
     "created_at": "2007-11-18T08:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1199",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_007435.json:
 }
 ```
 
-Changing assignee from jkantor to was.
+Changing assignee from jkantor to @williamstein.
 
 
 

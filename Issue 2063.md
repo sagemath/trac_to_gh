@@ -3,7 +3,7 @@
 archive/issues_002063.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2063\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2063\n\n",
     "created_at": "2008-02-05T19:11:39Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_002063.json:
     "title": "sage -q is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2063",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2063
 archive/issue_comments_013354.json:
 ```json
 {
-    "body": "Attachment [scripts-trac2063.patch](tarball://root/attachments/some-uuid/ticket2063/scripts-trac2063.patch) by was created at 2008-02-05 19:12:00",
+    "body": "Attachment [scripts-trac2063.patch](tarball://root/attachments/some-uuid/ticket2063/scripts-trac2063.patch) by @williamstein created at 2008-02-05 19:12:00",
     "created_at": "2008-02-05T19:12:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2063#issuecomment-13354",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-trac2063.patch](tarball://root/attachments/some-uuid/ticket2063/scripts-trac2063.patch) by was created at 2008-02-05 19:12:00
+Attachment [scripts-trac2063.patch](tarball://root/attachments/some-uuid/ticket2063/scripts-trac2063.patch) by @williamstein created at 2008-02-05 19:12:00
 
 
 

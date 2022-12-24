@@ -3,7 +3,7 @@
 archive/issues_006319.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  awebb\n\nThis was clearly *never* tested, since eval always returns a string (it can't return nothing). \n\n\n```\nsage -t -long --optional devel/sage/doc/en/constructions/plotting.rst\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/constructions/plotting.rst\", line 211:\n    sage: maxima.eval('plotdf(x+y,[trajectory_at,2,-0.1]); ') #optional\nExpected nothing\nGot:\n    '1'\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_11\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6319\n\n",
+    "body": "Assignee: tbd\n\nCC:  @maxthemouse\n\nThis was clearly *never* tested, since eval always returns a string (it can't return nothing). \n\n\n```\nsage -t -long --optional devel/sage/doc/en/constructions/plotting.rst\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/constructions/plotting.rst\", line 211:\n    sage: maxima.eval('plotdf(x+y,[trajectory_at,2,-0.1]); ') #optional\nExpected nothing\nGot:\n    '1'\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_11\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6319\n\n",
     "created_at": "2009-06-16T14:47:30Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_006319.json:
     "title": "optional doctest failure -- mistake in constructions guide wrt maxima interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6319",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  awebb
+CC:  @maxthemouse
 
 This was clearly *never* tested, since eval always returns a string (it can't return nothing). 
 
@@ -56,7 +56,7 @@ archive/issue_comments_050437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6319#issuecomment-50437",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -69,16 +69,16 @@ applies to 4.0.2.rc1
 archive/issue_comments_050438.json:
 ```json
 {
-    "body": "Attachment [trac_6319.patch](tarball://root/attachments/some-uuid/ticket6319/trac_6319.patch) by wdj created at 2009-06-16 23:26:40\n\nPasses sage -tp 1 SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild  constructions html (resp., pdf) went fine.",
+    "body": "Attachment [trac_6319.patch](tarball://root/attachments/some-uuid/ticket6319/trac_6319.patch) by @wdjoyner created at 2009-06-16 23:26:40\n\nPasses sage -tp 1 SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild  constructions html (resp., pdf) went fine.",
     "created_at": "2009-06-16T23:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6319#issuecomment-50438",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_6319.patch](tarball://root/attachments/some-uuid/ticket6319/trac_6319.patch) by wdj created at 2009-06-16 23:26:40
+Attachment [trac_6319.patch](tarball://root/attachments/some-uuid/ticket6319/trac_6319.patch) by @wdjoyner created at 2009-06-16 23:26:40
 
 Passes sage -tp 1 SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild  constructions html (resp., pdf) went fine.
 
@@ -94,7 +94,7 @@ archive/issue_comments_050439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6319",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6319#issuecomment-50439",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 

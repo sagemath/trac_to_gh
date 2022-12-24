@@ -14,7 +14,7 @@ archive/issues_006369.json:
     "title": "the sage cleaner should kill all notebook servers if sage that spawned them is killed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6369",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -46,7 +46,7 @@ archive/issue_comments_050942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6369#issuecomment-50942",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_050943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6369#issuecomment-50943",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

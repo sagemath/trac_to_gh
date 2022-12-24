@@ -3,7 +3,7 @@
 archive/issues_000116.json:
 ```json
 {
-    "body": "Assignee: was\n\nNeed text format for worksheets.  Have them in directory, with output included, and\ndo tests of all input blocks and verify that output agrees.\n\nIssue created by migration from https://trac.sagemath.org/ticket/116\n\n",
+    "body": "Assignee: @williamstein\n\nNeed text format for worksheets.  Have them in directory, with output included, and\ndo tests of all input blocks and verify that output agrees.\n\nIssue created by migration from https://trac.sagemath.org/ticket/116\n\n",
     "created_at": "2006-10-07T17:58:52Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000116.json:
     "title": "notebook doctest -- should be able to doctest a worksheet, so we can distribute worksheets with SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/116",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Need text format for worksheets.  Have them in directory, with output included, and
 do tests of all input blocks and verify that output agrees.
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/116
 archive/issue_comments_000546.json:
 ```json
 {
-    "body": "Changing assignee from was to tbd.",
+    "body": "Changing assignee from @williamstein to tbd.",
     "created_at": "2009-07-22T03:33:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/116#issuecomment-546",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from was to tbd.
+Changing assignee from @williamstein to tbd.
 
 
 
@@ -56,7 +56,7 @@ archive/issue_comments_000547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/116#issuecomment-547",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_000548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/116#issuecomment-548",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_000549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/116#issuecomment-549",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_000550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/116#issuecomment-550",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

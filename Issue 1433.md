@@ -14,7 +14,7 @@ archive/issues_001433.json:
     "title": "Fix some documentation typos pointed out by Rich Morin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1433",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1433
 archive/issue_comments_009266.json:
 ```json
 {
-    "body": "Attachment [doc-trac-1433.patch](tarball://root/attachments/some-uuid/ticket1433/doc-trac-1433.patch) by was created at 2007-12-09 06:54:33\n\napply this to the doc repo",
+    "body": "Attachment [doc-trac-1433.patch](tarball://root/attachments/some-uuid/ticket1433/doc-trac-1433.patch) by @williamstein created at 2007-12-09 06:54:33\n\napply this to the doc repo",
     "created_at": "2007-12-09T06:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1433#issuecomment-9266",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doc-trac-1433.patch](tarball://root/attachments/some-uuid/ticket1433/doc-trac-1433.patch) by was created at 2007-12-09 06:54:33
+Attachment [doc-trac-1433.patch](tarball://root/attachments/some-uuid/ticket1433/doc-trac-1433.patch) by @williamstein created at 2007-12-09 06:54:33
 
 apply this to the doc repo
 
@@ -57,7 +57,7 @@ archive/issue_comments_009267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1433#issuecomment-9267",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,16 +70,16 @@ apply this to the main sage repo
 archive/issue_comments_009268.json:
 ```json
 {
-    "body": "Attachment [sage-trac-1433.patch](tarball://root/attachments/some-uuid/ticket1433/sage-trac-1433.patch) by mhansen created at 2007-12-09 17:19:04",
+    "body": "Attachment [sage-trac-1433.patch](tarball://root/attachments/some-uuid/ticket1433/sage-trac-1433.patch) by @mwhansen created at 2007-12-09 17:19:04",
     "created_at": "2007-12-09T17:19:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1433#issuecomment-9268",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage-trac-1433.patch](tarball://root/attachments/some-uuid/ticket1433/sage-trac-1433.patch) by mhansen created at 2007-12-09 17:19:04
+Attachment [sage-trac-1433.patch](tarball://root/attachments/some-uuid/ticket1433/sage-trac-1433.patch) by @mwhansen created at 2007-12-09 17:19:04
 
 
 

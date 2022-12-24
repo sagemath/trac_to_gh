@@ -14,7 +14,7 @@ archive/issues_001980.json:
     "title": "flint fails to build with -fstack-protector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1980",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mabshoff
@@ -77,7 +77,7 @@ archive/issue_comments_012835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1980#issuecomment-12835",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_012836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1980#issuecomment-12836",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_012837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1980#issuecomment-12837",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_012838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1980#issuecomment-12838",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_012839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1980",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1980#issuecomment-12839",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005463.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThere are lots of questions sage-support in which people trying to do basic calculus or plotting have gotten confused about how to specify a \"function\" to be plotted, differentiated, etc. The attached patch adds a section to the tutorial with some remarks about this issue.\n\nSee [http://www.math.washington.edu/~palmieri/tutorial/tour_functions.html](http://www.math.washington.edu/~palmieri/tutorial/tour_functions.html) for a typeset version (although you can just type 'sage -docbuild tutorial html' to get your own version).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5463\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThere are lots of questions sage-support in which people trying to do basic calculus or plotting have gotten confused about how to specify a \"function\" to be plotted, differentiated, etc. The attached patch adds a section to the tutorial with some remarks about this issue.\n\nSee [http://www.math.washington.edu/~palmieri/tutorial/tour_functions.html](http://www.math.washington.edu/~palmieri/tutorial/tour_functions.html) for a typeset version (although you can just type 'sage -docbuild tutorial html' to get your own version).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5463\n\n",
     "created_at": "2009-03-09T23:27:00Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_005463.json:
     "title": "[with patch, needs review] new section for tutorial about functions vs. expressions, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5463",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 There are lots of questions sage-support in which people trying to do basic calculus or plotting have gotten confused about how to specify a "function" to be plotted, differentiated, etc. The attached patch adds a section to the tutorial with some remarks about this issue.
 
@@ -40,7 +40,7 @@ archive/issue_comments_042416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5463#issuecomment-42416",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_042418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5463#issuecomment-42418",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

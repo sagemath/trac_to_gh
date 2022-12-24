@@ -3,7 +3,7 @@
 archive/issues_000780.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\n\n```\nHi,\n\nThis is a quick and possibly not so useful answer. \n(1) I think you're running into a bug in Maxima (hence Sage) below, since\nyour assumption should be passed through.  It's pretty hard for us Sage\ndevelopers to fix bugs in Maxima, unfortunately.   Nonetheless, we are\nvery thankful for the bug report.\n\n(2) Possibly doing the following workaround would be OK for you, i.e.,\njust compute the definite integral you want by computing an antiderivative\nand use the fundamental theorem of calculus:\n\nsage: x,y=var('x,y')\nsage: f = log(x^2+y^2)\nsage: integrate(f,x)\nx*log(y^2 + x^2) - 2*(x - atan(x/y)*y)\nsage: g = integrate(f,x)\nsage: h = g(x=1.) - g(x=0.0001415); h    # this is what you want.\n1.00000000000000*log(y^2 + 1.00000000000000) - 0.0001415000000000000000*log(y^2 + 0.000000020022250000000000000000) - 2*(1.00000000000000 - atan(1.00000000000000/y)*y) + 2*(0.0001415000000000000000 - atan(0.0001415000000000000000/y)*y)\nsage: h(y=5)\n3.231596665591034\n\nOn 10/1/07, Eliz <elyip@comcast.net> wrote:\n> \n> Attached is the 'edit' view of my worksheet.  When I changed the lower\n> bound of the definite integral from 0.0001415 to  0.0001414, we got\n> into trouble.\n> \n> Elizabeth\n> ------------------------------------------------------------------------------------------------------------\n> integration_exercise\n> system:sage\n> \n> {{{id=0|\n> x,y=var('x,y')\n> f=log(x^2+y^2)\n> integrate(f,x)\n> ///\n> x*log(y^2 + x^2) - 2*(x - atan(x/y)*y)\n> }}}\n> \n> {{{id=11|\n> assume(y^2>1)\n> integrate(f,x,0.0001415,1.)\n> ///\n> 1.00000000000000*log(1.00000000000000*y^2 + 1.00000000000000) -\n> 0.0001415000000000000000*log(1.00000000000000*y^2 +\n> 0.000000020022250000000000000000) +\n> 2.00000000000000*atan(1.00000000000000/y)*y -\n> 2.00000000000000*atan(0.0001415000000000000000/y)*y - 1.99971700000000\n> }}}\n> \n> {{{id=16|\n> assume(y^2<1)\n> integrate(f,x,0.0001415,1.)\n> ///\n> 1.00000000000000*log(1.00000000000000*y^2 + 1.00000000000000) -\n> 0.0001415000000000000000*log(1.00000000000000*y^2 +\n> 0.000000020022250000000000000000) +\n> 2.00000000000000*atan(1.00000000000000/y)*y -\n> 2.00000000000000*atan(0.0001415000000000000000/y)*y - 1.99971700000000\n> }}}\n> \n> {{{id=17|\n> assume(y^2==1)\n> integrate(f,x,0.0001415,1.)\n> ///\n> 1.00000000000000*log(1.00000000000000*y^2 + 1.00000000000000) -\n> 0.0001415000000000000000*log(1.00000000000000*y^2 +\n> 0.000000020022250000000000000000) +\n> 2.00000000000000*atan(1.00000000000000/y)*y -\n> 2.00000000000000*atan(0.0001415000000000000000/y)*y - 1.99971700000000\n> }}}\n> \n> {{{id=19|\n> assume(y^2>1)\n> integrate(f,x,0.0001414,1.)\n> ///\n> Traceback (most recent call last):\n>   File \"<stdin>\", line 1, in <module>\n>   File \"/home/yip/sage_notebook/worksheets/admin/10/code/47.py\", line\n> 5, in <module>\n>     exec\n> compile(ur'integrate(f,x,RealNumber(\\u00270.0001414\\u0027),RealNumber(\\u00271.\\u0027))'\n> + '\\n', '', 'single')\n>   File \"/local/sage-2.8.5.1/data/extcode/sage/\", line 1, in <module>\n> \n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> calculus/functional.py\", line 175, in integral\n>     return f.integral(*args, **kwds)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> calculus/calculus.py\", line 1652, in integral\n>     return self.parent()(self._maxima_().integrate(v, a, b))\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/maxima.py\", line 1391, in integral\n>     return I(var, min, max)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 884, in __call__\n>     return self._obj.parent().function_call(self._name, [self._obj] +\n> list(args))\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 831, in function_call\n>     return self.new(\"%s(%s)\"%(function, \",\".join([s.name() for s in\n> args])))\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 733, in new\n>     return self(code)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/maxima.py\", line 376, in __call__\n>     return Expect.__call__(self, x)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 678, in __call__\n>     return cls(self, x)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 919, in __init__\n>     raise TypeError, x\n> TypeError: Computation failed since Maxima requested additional\n> constraints (use assume):\n> Is  (y-1)*(y+1)  positive, negative, or zero?\n> }}}\n> \n> {{{id=20|\n> \n> }}}\n> \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/780\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n\n```\nHi,\n\nThis is a quick and possibly not so useful answer. \n(1) I think you're running into a bug in Maxima (hence Sage) below, since\nyour assumption should be passed through.  It's pretty hard for us Sage\ndevelopers to fix bugs in Maxima, unfortunately.   Nonetheless, we are\nvery thankful for the bug report.\n\n(2) Possibly doing the following workaround would be OK for you, i.e.,\njust compute the definite integral you want by computing an antiderivative\nand use the fundamental theorem of calculus:\n\nsage: x,y=var('x,y')\nsage: f = log(x^2+y^2)\nsage: integrate(f,x)\nx*log(y^2 + x^2) - 2*(x - atan(x/y)*y)\nsage: g = integrate(f,x)\nsage: h = g(x=1.) - g(x=0.0001415); h    # this is what you want.\n1.00000000000000*log(y^2 + 1.00000000000000) - 0.0001415000000000000000*log(y^2 + 0.000000020022250000000000000000) - 2*(1.00000000000000 - atan(1.00000000000000/y)*y) + 2*(0.0001415000000000000000 - atan(0.0001415000000000000000/y)*y)\nsage: h(y=5)\n3.231596665591034\n\nOn 10/1/07, Eliz <elyip@comcast.net> wrote:\n> \n> Attached is the 'edit' view of my worksheet.  When I changed the lower\n> bound of the definite integral from 0.0001415 to  0.0001414, we got\n> into trouble.\n> \n> Elizabeth\n> ------------------------------------------------------------------------------------------------------------\n> integration_exercise\n> system:sage\n> \n> {{{id=0|\n> x,y=var('x,y')\n> f=log(x^2+y^2)\n> integrate(f,x)\n> ///\n> x*log(y^2 + x^2) - 2*(x - atan(x/y)*y)\n> }}}\n> \n> {{{id=11|\n> assume(y^2>1)\n> integrate(f,x,0.0001415,1.)\n> ///\n> 1.00000000000000*log(1.00000000000000*y^2 + 1.00000000000000) -\n> 0.0001415000000000000000*log(1.00000000000000*y^2 +\n> 0.000000020022250000000000000000) +\n> 2.00000000000000*atan(1.00000000000000/y)*y -\n> 2.00000000000000*atan(0.0001415000000000000000/y)*y - 1.99971700000000\n> }}}\n> \n> {{{id=16|\n> assume(y^2<1)\n> integrate(f,x,0.0001415,1.)\n> ///\n> 1.00000000000000*log(1.00000000000000*y^2 + 1.00000000000000) -\n> 0.0001415000000000000000*log(1.00000000000000*y^2 +\n> 0.000000020022250000000000000000) +\n> 2.00000000000000*atan(1.00000000000000/y)*y -\n> 2.00000000000000*atan(0.0001415000000000000000/y)*y - 1.99971700000000\n> }}}\n> \n> {{{id=17|\n> assume(y^2==1)\n> integrate(f,x,0.0001415,1.)\n> ///\n> 1.00000000000000*log(1.00000000000000*y^2 + 1.00000000000000) -\n> 0.0001415000000000000000*log(1.00000000000000*y^2 +\n> 0.000000020022250000000000000000) +\n> 2.00000000000000*atan(1.00000000000000/y)*y -\n> 2.00000000000000*atan(0.0001415000000000000000/y)*y - 1.99971700000000\n> }}}\n> \n> {{{id=19|\n> assume(y^2>1)\n> integrate(f,x,0.0001414,1.)\n> ///\n> Traceback (most recent call last):\n>   File \"<stdin>\", line 1, in <module>\n>   File \"/home/yip/sage_notebook/worksheets/admin/10/code/47.py\", line\n> 5, in <module>\n>     exec\n> compile(ur'integrate(f,x,RealNumber(\\u00270.0001414\\u0027),RealNumber(\\u00271.\\u0027))'\n> + '\\n', '', 'single')\n>   File \"/local/sage-2.8.5.1/data/extcode/sage/\", line 1, in <module>\n> \n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> calculus/functional.py\", line 175, in integral\n>     return f.integral(*args, **kwds)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> calculus/calculus.py\", line 1652, in integral\n>     return self.parent()(self._maxima_().integrate(v, a, b))\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/maxima.py\", line 1391, in integral\n>     return I(var, min, max)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 884, in __call__\n>     return self._obj.parent().function_call(self._name, [self._obj] +\n> list(args))\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 831, in function_call\n>     return self.new(\"%s(%s)\"%(function, \",\".join([s.name() for s in\n> args])))\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 733, in new\n>     return self(code)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/maxima.py\", line 376, in __call__\n>     return Expect.__call__(self, x)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 678, in __call__\n>     return cls(self, x)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 919, in __init__\n>     raise TypeError, x\n> TypeError: Computation failed since Maxima requested additional\n> constraints (use assume):\n> Is  (y-1)*(y+1)  positive, negative, or zero?\n> }}}\n> \n> {{{id=20|\n> \n> }}}\n> \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/780\n\n",
     "created_at": "2007-10-02T02:10:15Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_000780.json:
     "title": "calculus integration failing due to maxima interacting when it shouldn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/780",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 
 ```
@@ -167,7 +167,7 @@ archive/issue_comments_004655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4655",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_004656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4656",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_004657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4657",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -219,16 +219,16 @@ Changing status from new to assigned.
 archive/issue_comments_004658.json:
 ```json
 {
-    "body": "Changing assignee from was to gfurnish.",
+    "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-16T20:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4658",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was to gfurnish.
+Changing assignee from @williamstein to @garyfurnish.
 
 
 
@@ -242,7 +242,7 @@ archive/issue_comments_004659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4659",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_004660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4660",
-    "user": "tjlahey"
+    "user": "@tjl"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_004661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4661",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_004662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4662",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -334,16 +334,16 @@ https://sourceforge.net/tracker/?func=detail&atid=104933&aid=1899352&group_id=49
 archive/issue_comments_004663.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to AlexGhitza.",
+    "body": "Changing assignee from @garyfurnish to @aghitza.",
     "created_at": "2009-08-24T09:08:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4663",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from gfurnish to AlexGhitza.
+Changing assignee from @garyfurnish to @aghitza.
 
 
 
@@ -357,7 +357,7 @@ archive/issue_comments_004664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4664",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_004665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4665",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -388,16 +388,16 @@ Changing status from assigned to new.
 archive/issue_comments_004666.json:
 ```json
 {
-    "body": "Attachment [trac_780-maxima_integral.patch](tarball://root/attachments/some-uuid/ticket780/trac_780-maxima_integral.patch) by burcin created at 2009-09-22 20:11:32\n\nattachment:trac_780-maxima_integral.patch adds doctests to show that this is fixed.\n\nAlex, many thanks for your work on updating maxima. I'm trying to get as many symbolics/calculus tickets closed as possible for this release now.",
+    "body": "Attachment [trac_780-maxima_integral.patch](tarball://root/attachments/some-uuid/ticket780/trac_780-maxima_integral.patch) by @burcin created at 2009-09-22 20:11:32\n\nattachment:trac_780-maxima_integral.patch adds doctests to show that this is fixed.\n\nAlex, many thanks for your work on updating maxima. I'm trying to get as many symbolics/calculus tickets closed as possible for this release now.",
     "created_at": "2009-09-22T20:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4666",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_780-maxima_integral.patch](tarball://root/attachments/some-uuid/ticket780/trac_780-maxima_integral.patch) by burcin created at 2009-09-22 20:11:32
+Attachment [trac_780-maxima_integral.patch](tarball://root/attachments/some-uuid/ticket780/trac_780-maxima_integral.patch) by @burcin created at 2009-09-22 20:11:32
 
 attachment:trac_780-maxima_integral.patch adds doctests to show that this is fixed.
 
@@ -415,7 +415,7 @@ archive/issue_comments_004667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4667",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

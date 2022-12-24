@@ -63,16 +63,16 @@ Attachment [probability_distribution.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_056312.json:
 ```json
 {
-    "body": "Attachment [trac_6827_review.patch](tarball://root/attachments/some-uuid/ticket6827/trac_6827_review.patch) by mhansen created at 2009-09-07 21:22:28\n\nLooks good to me.  I added a one character change to get the docs to build without warning.  Both patches should be applied.\n\nIt would probably be good to factor each of the RealDistributions out into their own classes so we don't have to have the massive if/elif/else statements.  It might be a good easy project if someone is working on stats stuff this fall.",
+    "body": "Attachment [trac_6827_review.patch](tarball://root/attachments/some-uuid/ticket6827/trac_6827_review.patch) by @mwhansen created at 2009-09-07 21:22:28\n\nLooks good to me.  I added a one character change to get the docs to build without warning.  Both patches should be applied.\n\nIt would probably be good to factor each of the RealDistributions out into their own classes so we don't have to have the massive if/elif/else statements.  It might be a good easy project if someone is working on stats stuff this fall.",
     "created_at": "2009-09-07T21:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6827#issuecomment-56312",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6827_review.patch](tarball://root/attachments/some-uuid/ticket6827/trac_6827_review.patch) by mhansen created at 2009-09-07 21:22:28
+Attachment [trac_6827_review.patch](tarball://root/attachments/some-uuid/ticket6827/trac_6827_review.patch) by @mwhansen created at 2009-09-07 21:22:28
 
 Looks good to me.  I added a one character change to get the docs to build without warning.  Both patches should be applied.
 

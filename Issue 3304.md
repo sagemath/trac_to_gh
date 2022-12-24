@@ -3,7 +3,7 @@
 archive/issues_003304.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nCC:  vbraun mhampton\n\nI've attached a patch to make the Debian package use the cddlib shared library code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3304\n\n",
+    "body": "Assignee: @timabbott\n\nCC:  @vbraun mhampton\n\nI've attached a patch to make the Debian package use the cddlib shared library code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3304\n\n",
     "created_at": "2008-05-26T01:31:25Z",
     "labels": [
         "debian-package",
@@ -14,12 +14,12 @@ archive/issues_003304.json:
     "title": "[with patch; needs review] Make cddlib Debian package use shared library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3304",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
-CC:  vbraun mhampton
+CC:  @vbraun mhampton
 
 I've attached a patch to make the Debian package use the cddlib shared library code.
 
@@ -39,7 +39,7 @@ archive/issue_comments_022849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3304#issuecomment-22849",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing keywords from "" to "editor_mabshoff".
 archive/issue_comments_022850.json:
 ```json
 {
-    "body": "Attachment [cddlib-debian-shared-library.patch](tarball://root/attachments/some-uuid/ticket3304/cddlib-debian-shared-library.patch) by craigcitro created at 2008-06-15 21:31:26",
+    "body": "Attachment [cddlib-debian-shared-library.patch](tarball://root/attachments/some-uuid/ticket3304/cddlib-debian-shared-library.patch) by @craigcitro created at 2008-06-15 21:31:26",
     "created_at": "2008-06-15T21:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3304#issuecomment-22850",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [cddlib-debian-shared-library.patch](tarball://root/attachments/some-uuid/ticket3304/cddlib-debian-shared-library.patch) by craigcitro created at 2008-06-15 21:31:26
+Attachment [cddlib-debian-shared-library.patch](tarball://root/attachments/some-uuid/ticket3304/cddlib-debian-shared-library.patch) by @craigcitro created at 2008-06-15 21:31:26
 
 
 
@@ -70,16 +70,16 @@ Attachment [cddlib-debian-shared-library.patch](tarball://root/attachments/some-
 archive/issue_comments_022851.json:
 ```json
 {
-    "body": "Attachment [cddlib-shared-library.patch](tarball://root/attachments/some-uuid/ticket3304/cddlib-shared-library.patch) by tabbott created at 2008-12-12 18:55:11",
+    "body": "Attachment [cddlib-shared-library.patch](tarball://root/attachments/some-uuid/ticket3304/cddlib-shared-library.patch) by @timabbott created at 2008-12-12 18:55:11",
     "created_at": "2008-12-12T18:55:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3304#issuecomment-22851",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [cddlib-shared-library.patch](tarball://root/attachments/some-uuid/ticket3304/cddlib-shared-library.patch) by tabbott created at 2008-12-12 18:55:11
+Attachment [cddlib-shared-library.patch](tarball://root/attachments/some-uuid/ticket3304/cddlib-shared-library.patch) by @timabbott created at 2008-12-12 18:55:11
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_022852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3304#issuecomment-22852",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_022855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3304#issuecomment-22855",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_022856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3304#issuecomment-22856",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_022857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3304#issuecomment-22857",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_022858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3304#issuecomment-22858",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_022859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3304#issuecomment-22859",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_022860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3304#issuecomment-22860",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

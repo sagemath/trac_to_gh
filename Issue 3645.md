@@ -14,7 +14,7 @@ archive/issues_003645.json:
     "title": "tutorial: make documentation for .n() more prominent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3645",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tba
@@ -43,7 +43,7 @@ archive/issue_comments_025768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3645#issuecomment-25768",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -56,16 +56,16 @@ archive/issue_comments_025768.json:
 archive/issue_comments_025769.json:
 ```json
 {
-    "body": "Attachment [3645.patch](tarball://root/attachments/some-uuid/ticket3645/3645.patch) by jhpalmieri created at 2008-07-11 22:06:22",
+    "body": "Attachment [3645.patch](tarball://root/attachments/some-uuid/ticket3645/3645.patch) by @jhpalmieri created at 2008-07-11 22:06:22",
     "created_at": "2008-07-11T22:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3645#issuecomment-25769",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [3645.patch](tarball://root/attachments/some-uuid/ticket3645/3645.patch) by jhpalmieri created at 2008-07-11 22:06:22
+Attachment [3645.patch](tarball://root/attachments/some-uuid/ticket3645/3645.patch) by @jhpalmieri created at 2008-07-11 22:06:22
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_025770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3645#issuecomment-25770",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -92,16 +92,16 @@ Looks good to me!
 archive/issue_comments_025771.json:
 ```json
 {
-    "body": "Attachment [doc-3645-part2.patch](tarball://root/attachments/some-uuid/ticket3645/doc-3645-part2.patch) by was created at 2008-07-24 10:36:00\n\nREFEREE REPORT:\n\nI've added a patch that\n1. Note that capital N is a synomym for n?\n2. Note that digits is the number of *decimal* digits?\n\nWith that I give this a positive review. \n\n -- William",
+    "body": "Attachment [doc-3645-part2.patch](tarball://root/attachments/some-uuid/ticket3645/doc-3645-part2.patch) by @williamstein created at 2008-07-24 10:36:00\n\nREFEREE REPORT:\n\nI've added a patch that\n1. Note that capital N is a synomym for n?\n2. Note that digits is the number of *decimal* digits?\n\nWith that I give this a positive review. \n\n -- William",
     "created_at": "2008-07-24T10:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3645#issuecomment-25771",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doc-3645-part2.patch](tarball://root/attachments/some-uuid/ticket3645/doc-3645-part2.patch) by was created at 2008-07-24 10:36:00
+Attachment [doc-3645-part2.patch](tarball://root/attachments/some-uuid/ticket3645/doc-3645-part2.patch) by @williamstein created at 2008-07-24 10:36:00
 
 REFEREE REPORT:
 
@@ -125,7 +125,7 @@ archive/issue_comments_025772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3645#issuecomment-25772",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

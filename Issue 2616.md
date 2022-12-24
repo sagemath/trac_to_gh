@@ -3,7 +3,7 @@
 archive/issues_002616.json:
 ```json
 {
-    "body": "Assignee: dfdeshom\n\nPending review and inclusion of #2355, we can replace all instances of M.submatrix() with `M[indexa, indexb]`\n\nNote: I only found one function is using the submatrix method (subdivisions in matrix2.pyx). \n\nIssue created by migration from https://trac.sagemath.org/ticket/2616\n\n",
+    "body": "Assignee: @dfdeshom\n\nPending review and inclusion of #2355, we can replace all instances of M.submatrix() with `M[indexa, indexb]`\n\nNote: I only found one function is using the submatrix method (subdivisions in matrix2.pyx). \n\nIssue created by migration from https://trac.sagemath.org/ticket/2616\n\n",
     "created_at": "2008-03-20T17:51:24Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002616.json:
     "title": "Replace all matrix.submatrix() instances",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2616",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: dfdeshom
+Assignee: @dfdeshom
 
 Pending review and inclusion of #2355, we can replace all instances of M.submatrix() with `M[indexa, indexb]`
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2616
 archive/issue_comments_017955.json:
 ```json
 {
-    "body": "Attachment [2616-replace_submatrix.patch](tarball://root/attachments/some-uuid/ticket2616/2616-replace_submatrix.patch) by AlexGhitza created at 2008-04-13 22:21:20",
+    "body": "Attachment [2616-replace_submatrix.patch](tarball://root/attachments/some-uuid/ticket2616/2616-replace_submatrix.patch) by @aghitza created at 2008-04-13 22:21:20",
     "created_at": "2008-04-13T22:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2616#issuecomment-17955",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [2616-replace_submatrix.patch](tarball://root/attachments/some-uuid/ticket2616/2616-replace_submatrix.patch) by AlexGhitza created at 2008-04-13 22:21:20
+Attachment [2616-replace_submatrix.patch](tarball://root/attachments/some-uuid/ticket2616/2616-replace_submatrix.patch) by @aghitza created at 2008-04-13 22:21:20
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_017956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2616#issuecomment-17956",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_017957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2616#issuecomment-17957",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 

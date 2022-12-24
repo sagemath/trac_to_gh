@@ -14,7 +14,7 @@ archive/issues_004957.json:
     "title": "inconsistent integer hashing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4957",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -49,7 +49,7 @@ archive/issue_comments_037677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4957#issuecomment-37677",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -64,16 +64,16 @@ The attached patch fixes this, and adds some doctests.
 archive/issue_comments_037678.json:
 ```json
 {
-    "body": "Changing assignee from somebody to craigcitro.",
+    "body": "Changing assignee from somebody to @craigcitro.",
     "created_at": "2009-01-23T12:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4957#issuecomment-37678",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from somebody to craigcitro.
+Changing assignee from somebody to @craigcitro.
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_037679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4957#issuecomment-37679",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_037680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4957#issuecomment-37680",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_037682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4957#issuecomment-37682",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -181,16 +181,16 @@ Darn :(. The first two may be OK (we need to see what hash(int(n)) is, but the s
 archive/issue_comments_037683.json:
 ```json
 {
-    "body": "Attachment [trac-4957.patch](tarball://root/attachments/some-uuid/ticket4957/trac-4957.patch) by craigcitro created at 2009-01-24 23:24:15",
+    "body": "Attachment [trac-4957.patch](tarball://root/attachments/some-uuid/ticket4957/trac-4957.patch) by @craigcitro created at 2009-01-24 23:24:15",
     "created_at": "2009-01-24T23:24:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4957#issuecomment-37683",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4957.patch](tarball://root/attachments/some-uuid/ticket4957/trac-4957.patch) by craigcitro created at 2009-01-24 23:24:15
+Attachment [trac-4957.patch](tarball://root/attachments/some-uuid/ticket4957/trac-4957.patch) by @craigcitro created at 2009-01-24 23:24:15
 
 
 
@@ -204,7 +204,7 @@ archive/issue_comments_037684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4957#issuecomment-37684",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_037685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4957#issuecomment-37685",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_037686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4957#issuecomment-37686",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

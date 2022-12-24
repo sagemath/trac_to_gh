@@ -3,7 +3,7 @@
 archive/issues_006212.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jason jthurber\n\nKeywords: sage upgrade applied hg queue\n\nIt would be nice if sage -upgrade aborted if are applied hg queue patches, in the same way it aborts if there are local changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6212\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jasongrout jthurber\n\nKeywords: sage upgrade applied hg queue\n\nIt would be nice if sage -upgrade aborted if are applied hg queue patches, in the same way it aborts if there are local changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6212\n\n",
     "created_at": "2009-06-04T20:40:01Z",
     "labels": [
         "distribution",
@@ -14,12 +14,12 @@ archive/issues_006212.json:
     "title": "make sage -upgrade check that there are no applied hg queue patches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6212",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: tbd
 
-CC:  jason jthurber
+CC:  @jasongrout jthurber
 
 Keywords: sage upgrade applied hg queue
 
@@ -41,7 +41,7 @@ archive/issue_comments_049629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6212#issuecomment-49629",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_049630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6212#issuecomment-49630",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_049631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6212#issuecomment-49631",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_049632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6212#issuecomment-49632",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_049633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6212#issuecomment-49633",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

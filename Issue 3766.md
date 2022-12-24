@@ -14,7 +14,7 @@ archive/issues_003766.json:
     "title": "move sage_fortran from fortran spkg to sage_scripts spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3766",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_026790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3766#issuecomment-26790",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_026791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3766#issuecomment-26791",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_026792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3766#issuecomment-26792",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_026793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3766#issuecomment-26793",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_026794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3766#issuecomment-26794",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

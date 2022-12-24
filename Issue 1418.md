@@ -3,7 +3,7 @@
 archive/issues_001418.json:
 ```json
 {
-    "body": "Assignee: was\n\nI added a !__floordiv!__ to the magma element for the 'div' operator.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1418\n\n",
+    "body": "Assignee: @williamstein\n\nI added a !__floordiv!__ to the magma element for the 'div' operator.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1418\n\n",
     "created_at": "2007-12-07T11:52:22Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_001418.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I added a !__floordiv!__ to the magma element for the 'div' operator.
 
@@ -93,7 +93,7 @@ archive/issue_comments_009152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1418#issuecomment-9152",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

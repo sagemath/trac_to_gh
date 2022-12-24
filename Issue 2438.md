@@ -14,7 +14,7 @@ archive/issues_002438.json:
     "title": "[with patch, positive review] get the reference manual to build again",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2438",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_016494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2438#issuecomment-16494",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -50,16 +50,16 @@ patch for documentation
 archive/issue_comments_016495.json:
 ```json
 {
-    "body": "Attachment [ref-builds-doc.patch](tarball://root/attachments/some-uuid/ticket2438/ref-builds-doc.patch) by malb created at 2008-03-09 17:31:40\n\npatch for sage library",
+    "body": "Attachment [ref-builds-doc.patch](tarball://root/attachments/some-uuid/ticket2438/ref-builds-doc.patch) by @malb created at 2008-03-09 17:31:40\n\npatch for sage library",
     "created_at": "2008-03-09T17:31:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2438#issuecomment-16495",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [ref-builds-doc.patch](tarball://root/attachments/some-uuid/ticket2438/ref-builds-doc.patch) by malb created at 2008-03-09 17:31:40
+Attachment [ref-builds-doc.patch](tarball://root/attachments/some-uuid/ticket2438/ref-builds-doc.patch) by @malb created at 2008-03-09 17:31:40
 
 patch for sage library
 
@@ -70,16 +70,16 @@ patch for sage library
 archive/issue_comments_016496.json:
 ```json
 {
-    "body": "Attachment [ref-builds-code.patch](tarball://root/attachments/some-uuid/ticket2438/ref-builds-code.patch) by malb created at 2008-03-09 17:43:53",
+    "body": "Attachment [ref-builds-code.patch](tarball://root/attachments/some-uuid/ticket2438/ref-builds-code.patch) by @malb created at 2008-03-09 17:43:53",
     "created_at": "2008-03-09T17:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2438#issuecomment-16496",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [ref-builds-code.patch](tarball://root/attachments/some-uuid/ticket2438/ref-builds-code.patch) by malb created at 2008-03-09 17:43:53
+Attachment [ref-builds-code.patch](tarball://root/attachments/some-uuid/ticket2438/ref-builds-code.patch) by @malb created at 2008-03-09 17:43:53
 
 
 

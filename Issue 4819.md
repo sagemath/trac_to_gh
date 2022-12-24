@@ -14,7 +14,7 @@ archive/issues_004819.json:
     "title": "[with spkg, needs review] update Cython to 0.10.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4819",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff

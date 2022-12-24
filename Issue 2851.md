@@ -14,7 +14,7 @@ archive/issues_002851.json:
     "title": "clean binary install of sage followed by \"sage -br\" is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2851",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -55,16 +55,16 @@ Michael
 archive/issue_comments_019563.json:
 ```json
 {
-    "body": "Attachment [sage-2851.patch](tarball://root/attachments/some-uuid/ticket2851/sage-2851.patch) by was created at 2008-04-15 00:44:16",
+    "body": "Attachment [sage-2851.patch](tarball://root/attachments/some-uuid/ticket2851/sage-2851.patch) by @williamstein created at 2008-04-15 00:44:16",
     "created_at": "2008-04-15T00:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2851#issuecomment-19563",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2851.patch](tarball://root/attachments/some-uuid/ticket2851/sage-2851.patch) by was created at 2008-04-15 00:44:16
+Attachment [sage-2851.patch](tarball://root/attachments/some-uuid/ticket2851/sage-2851.patch) by @williamstein created at 2008-04-15 00:44:16
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_019567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2851#issuecomment-19567",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_019568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2851#issuecomment-19568",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_019569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2851#issuecomment-19569",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -210,16 +210,16 @@ Changing status from closed to reopened.
 archive/issue_comments_019570.json:
 ```json
 {
-    "body": "Attachment [scripts-2851.patch](tarball://root/attachments/some-uuid/ticket2851/scripts-2851.patch) by was created at 2008-04-15 17:19:41\n\nnew patch (we want both) -- this to the SCRIPTS repo.",
+    "body": "Attachment [scripts-2851.patch](tarball://root/attachments/some-uuid/ticket2851/scripts-2851.patch) by @williamstein created at 2008-04-15 17:19:41\n\nnew patch (we want both) -- this to the SCRIPTS repo.",
     "created_at": "2008-04-15T17:19:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2851#issuecomment-19570",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-2851.patch](tarball://root/attachments/some-uuid/ticket2851/scripts-2851.patch) by was created at 2008-04-15 17:19:41
+Attachment [scripts-2851.patch](tarball://root/attachments/some-uuid/ticket2851/scripts-2851.patch) by @williamstein created at 2008-04-15 17:19:41
 
 new patch (we want both) -- this to the SCRIPTS repo.
 

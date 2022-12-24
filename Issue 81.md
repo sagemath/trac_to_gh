@@ -3,7 +3,7 @@
 archive/issues_000081.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nBut I'm somewhat\nsurprised, it's specified, in the \"SAGE Installation Guide\", that \"The\ndirectory where you built SAGE is NOT hardcoded into any part of SAGE.\"\nbut it's not possible to see the source code of a function if you moved\nSAGE after the build. Same thing when an error is reported, for example:\n \n===========================================================================\nR = PolynomialRing(QQ)\nfactor(R)\n---------------------------------------------------------------------------\nexceptions.TypeError                                 Traceback (most\nrecent call last)\n \n/usr/local/sage-test/<ipython console> \n \n/usr/local/sage/local/lib/python2.4/site-packages/sage/rings/arith.py in\nfactor(n, proof, int_, algorithm, verbose)\n \nTypeError: unable to factor n\n \n============================================================================\nbut here, the path to sage is /usr/local/sage-test. Do I have to report\nthis as a bug ?\n \nGreg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/81\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nBut I'm somewhat\nsurprised, it's specified, in the \"SAGE Installation Guide\", that \"The\ndirectory where you built SAGE is NOT hardcoded into any part of SAGE.\"\nbut it's not possible to see the source code of a function if you moved\nSAGE after the build. Same thing when an error is reported, for example:\n \n===========================================================================\nR = PolynomialRing(QQ)\nfactor(R)\n---------------------------------------------------------------------------\nexceptions.TypeError                                 Traceback (most\nrecent call last)\n \n/usr/local/sage-test/<ipython console> \n \n/usr/local/sage/local/lib/python2.4/site-packages/sage/rings/arith.py in\nfactor(n, proof, int_, algorithm, verbose)\n \nTypeError: unable to factor n\n \n============================================================================\nbut here, the path to sage is /usr/local/sage-test. Do I have to report\nthis as a bug ?\n \nGreg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/81\n\n",
     "created_at": "2006-09-24T16:11:01Z",
     "labels": [
         "user interface",
@@ -13,10 +13,10 @@ archive/issues_000081.json:
     "title": "directory paths hardcoded into .pyc installed files. (?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/81",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -64,7 +64,7 @@ archive/issue_comments_000412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/81",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/81#issuecomment-412",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_000413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/81",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/81#issuecomment-413",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_000414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/81",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/81#issuecomment-414",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_000415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/81",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/81#issuecomment-415",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003277.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nCC:  mmezzarobba charpent\n\none should be able to do something like\n\n```\nwith assumptions(x<0):\n    ...\n```\n\n\nwhere assume() and forget() would be called on the entering and exiting of the block. This could probably be cleanly done with maxima's contexts. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3277\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @mezzarobba @EmmanuelCharpentier\n\none should be able to do something like\n\n```\nwith assumptions(x<0):\n    ...\n```\n\n\nwhere assume() and forget() would be called on the entering and exiting of the block. This could probably be cleanly done with maxima's contexts. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3277\n\n",
     "created_at": "2008-05-23T08:15:57Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_003277.json:
     "title": "context for calculus assumptions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3277",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
-CC:  mmezzarobba charpent
+CC:  @mezzarobba @EmmanuelCharpentier
 
 one should be able to do something like
 
@@ -47,7 +47,7 @@ archive/issue_comments_022668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3277#issuecomment-22668",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_022669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3277#issuecomment-22669",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_022670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3277#issuecomment-22670",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_022671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3277#issuecomment-22671",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_022672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3277#issuecomment-22672",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_022673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3277#issuecomment-22673",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_022675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3277#issuecomment-22675",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_022676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3277#issuecomment-22676",
-    "user": "charpent"
+    "user": "@EmmanuelCharpentier"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_022677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3277#issuecomment-22677",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_022678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3277#issuecomment-22678",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

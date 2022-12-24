@@ -3,7 +3,7 @@
 archive/issues_009699.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  rlm boothby\n\nPositions of vertices returned by planar_layout can be set to have the vertices of an equilateral triangle as exterior vertices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9699\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill boothby\n\nPositions of vertices returned by planar_layout can be set to have the vertices of an equilateral triangle as exterior vertices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9699\n\n",
     "created_at": "2010-08-06T19:24:42Z",
     "labels": [
         "graph theory",
@@ -19,7 +19,7 @@ archive/issues_009699.json:
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  rlm boothby
+CC:  @rlmill boothby
 
 Positions of vertices returned by planar_layout can be set to have the vertices of an equilateral triangle as exterior vertices.
 
@@ -70,16 +70,16 @@ Updated patch, it includes an example.
 archive/issue_comments_094296.json:
 ```json
 {
-    "body": "Attachment [trac_9699.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699.patch) by rlm created at 2010-08-07 11:58:53",
+    "body": "Attachment [trac_9699.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699.patch) by @rlmill created at 2010-08-07 11:58:53",
     "created_at": "2010-08-07T11:58:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94296",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9699.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699.patch) by rlm created at 2010-08-07 11:58:53
+Attachment [trac_9699.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699.patch) by @rlmill created at 2010-08-07 11:58:53
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_094297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94297",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_094301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94301",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_094302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94302",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_094305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94305",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_094308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94308",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -358,16 +358,16 @@ Nathann
 archive/issue_comments_094309.json:
 ```json
 {
-    "body": "Attachment [trac_9699 - docstring fixes.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699 - docstring fixes.patch) by rlm created at 2010-11-11 13:15:42\n\nDoctest fail:\n\n\n```\nsage -t -long ./sage/graphs/generic_graph.py\n**********************************************************************\nFile \"/home/rlmill/sage-4.6/devel/sage-main/sage/graphs/generic_graph.py\", line 2620:\n    sage: g.layout(layout = \"planar\", save_pos = True)\nExpected:\n    {0: [1, 1], 1: [2, 2], 2: [3, 2], 3: [1, 4], 4: [5, 1], 5: [0, 5], 6: [1, 0]}\nGot:\n    {0: (-0.433012701892, -0.25), 1: (1.11022302463e-16, -7.40148683083e-17), 2: (0.144337567297, 0.25), 3: (0.433012701892, -0.25), 4: [0.0, 1.0], 5: [0.866025403784, -0.5], 6: [-0.866025403784, -0.5]}\n**********************************************************************\n```\n\n\nAlso, all of the positions should be the same format: here some are tuples and others are lists.",
+    "body": "Attachment [trac_9699 - docstring fixes.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699 - docstring fixes.patch) by @rlmill created at 2010-11-11 13:15:42\n\nDoctest fail:\n\n\n```\nsage -t -long ./sage/graphs/generic_graph.py\n**********************************************************************\nFile \"/home/rlmill/sage-4.6/devel/sage-main/sage/graphs/generic_graph.py\", line 2620:\n    sage: g.layout(layout = \"planar\", save_pos = True)\nExpected:\n    {0: [1, 1], 1: [2, 2], 2: [3, 2], 3: [1, 4], 4: [5, 1], 5: [0, 5], 6: [1, 0]}\nGot:\n    {0: (-0.433012701892, -0.25), 1: (1.11022302463e-16, -7.40148683083e-17), 2: (0.144337567297, 0.25), 3: (0.433012701892, -0.25), 4: [0.0, 1.0], 5: [0.866025403784, -0.5], 6: [-0.866025403784, -0.5]}\n**********************************************************************\n```\n\n\nAlso, all of the positions should be the same format: here some are tuples and others are lists.",
     "created_at": "2010-11-11T13:15:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94309",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9699 - docstring fixes.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699 - docstring fixes.patch) by rlm created at 2010-11-11 13:15:42
+Attachment [trac_9699 - docstring fixes.patch](tarball://root/attachments/some-uuid/ticket9699/trac_9699 - docstring fixes.patch) by @rlmill created at 2010-11-11 13:15:42
 
 Doctest fail:
 
@@ -399,7 +399,7 @@ archive/issue_comments_094310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94310",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_094314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94314",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_094315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94315",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_094316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94316",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -565,7 +565,7 @@ archive/issue_comments_094318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94318",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -588,7 +588,7 @@ archive/issue_comments_094319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94319",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -667,7 +667,7 @@ archive/issue_comments_094323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94323",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -685,7 +685,7 @@ archive/issue_comments_094324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94324",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -703,7 +703,7 @@ archive/issue_comments_094325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94325",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -721,7 +721,7 @@ archive/issue_comments_094326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94326",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -753,7 +753,7 @@ archive/issue_comments_094327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9699#issuecomment-94327",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003168.json:
     "title": "Source introspection does not work for outside Cython extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3168",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 Assignee: cwitty
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3168
 archive/issue_comments_021954.json:
 ```json
 {
-    "body": "Attachment [intro.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.tgz) by dunfield created at 2008-05-12 19:34:46\n\nMinimal example",
+    "body": "Attachment [intro.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.tgz) by @NathanDunfield created at 2008-05-12 19:34:46\n\nMinimal example",
     "created_at": "2008-05-12T19:34:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21954",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
-Attachment [intro.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.tgz) by dunfield created at 2008-05-12 19:34:46
+Attachment [intro.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.tgz) by @NathanDunfield created at 2008-05-12 19:34:46
 
 Minimal example
 
@@ -78,7 +78,7 @@ archive/issue_comments_021955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21955",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -91,16 +91,16 @@ Minimal example
 archive/issue_comments_021956.json:
 ```json
 {
-    "body": "Attachment [intro.2.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.2.tgz) by dunfield created at 2008-05-12 19:36:49",
+    "body": "Attachment [intro.2.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.2.tgz) by @NathanDunfield created at 2008-05-12 19:36:49",
     "created_at": "2008-05-12T19:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21956",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
-Attachment [intro.2.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.2.tgz) by dunfield created at 2008-05-12 19:36:49
+Attachment [intro.2.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.2.tgz) by @NathanDunfield created at 2008-05-12 19:36:49
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_021957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21957",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_021958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21958",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

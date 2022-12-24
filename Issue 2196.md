@@ -3,7 +3,7 @@
 archive/issues_002196.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe code for quadratic, quartic and sextic twists of elliptic curves does not check that the twisting parameter is nonzero, and hence fail when a singular curve tries to be constructed.  Instead we output a helpful message.\n\nNote that in characteristic 2, the quadratic twist by 0 is allowed (but gives back the same curve), just as twisting by 1 in odd characteristic.\n\nThe patch provided also enhances the Hasse_bounds function (which should probably be put somewhere other than ell_generic.py).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2196\n\n",
+    "body": "Assignee: @williamstein\n\nThe code for quadratic, quartic and sextic twists of elliptic curves does not check that the twisting parameter is nonzero, and hence fail when a singular curve tries to be constructed.  Instead we output a helpful message.\n\nNote that in characteristic 2, the quadratic twist by 0 is allowed (but gives back the same curve), just as twisting by 1 in odd characteristic.\n\nThe patch provided also enhances the Hasse_bounds function (which should probably be put somewhere other than ell_generic.py).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2196\n\n",
     "created_at": "2008-02-17T19:09:35Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_002196.json:
     "title": "Elliptic Curve quadratic/quartic/sextic twists: unhelpful error message when D=0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2196",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The code for quadratic, quartic and sextic twists of elliptic curves does not check that the twisting parameter is nonzero, and hence fail when a singular curve tries to be constructed.  Instead we output a helpful message.
 
@@ -59,7 +59,7 @@ archive/issue_comments_014425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2196#issuecomment-14425",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -83,16 +83,16 @@ There are some typos.  Lines 964 and 965 don't line up, and line 968 should say 
 archive/issue_comments_014426.json:
 ```json
 {
-    "body": "Attachment [8314.patch](tarball://root/attachments/some-uuid/ticket2196/8314.patch) by cremona created at 2008-02-17 20:21:21\n\nto be applied after 8313.patch",
+    "body": "Attachment [8314.patch](tarball://root/attachments/some-uuid/ticket2196/8314.patch) by @JohnCremona created at 2008-02-17 20:21:21\n\nto be applied after 8313.patch",
     "created_at": "2008-02-17T20:21:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2196#issuecomment-14426",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8314.patch](tarball://root/attachments/some-uuid/ticket2196/8314.patch) by cremona created at 2008-02-17 20:21:21
+Attachment [8314.patch](tarball://root/attachments/some-uuid/ticket2196/8314.patch) by @JohnCremona created at 2008-02-17 20:21:21
 
 to be applied after 8313.patch
 
@@ -108,7 +108,7 @@ archive/issue_comments_014427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2196#issuecomment-14427",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_014428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2196#issuecomment-14428",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -145,16 +145,16 @@ The test is for $K(0)$ but the message reads $j != 1728$.  What is the correct f
 archive/issue_comments_014429.json:
 ```json
 {
-    "body": "Attachment [8315.patch](tarball://root/attachments/some-uuid/ticket2196/8315.patch) by cremona created at 2008-02-17 20:35:51\n\nand finally....",
+    "body": "Attachment [8315.patch](tarball://root/attachments/some-uuid/ticket2196/8315.patch) by @JohnCremona created at 2008-02-17 20:35:51\n\nand finally....",
     "created_at": "2008-02-17T20:35:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2196#issuecomment-14429",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8315.patch](tarball://root/attachments/some-uuid/ticket2196/8315.patch) by cremona created at 2008-02-17 20:35:51
+Attachment [8315.patch](tarball://root/attachments/some-uuid/ticket2196/8315.patch) by @JohnCremona created at 2008-02-17 20:35:51
 
 and finally....
 
@@ -170,7 +170,7 @@ archive/issue_comments_014430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2196#issuecomment-14430",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_014431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2196#issuecomment-14431",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

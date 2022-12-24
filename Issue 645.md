@@ -3,7 +3,7 @@
 archive/issues_000645.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: x,y = var('x y')\nsage: f(3)\ny + 3\nsage: f(3)(4)\n7\nsage: f(3,4)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/robert/sage/sage-2.5/devel/sage-working/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: __call__() takes at most 2 arguments (3 given)\nsage: \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/645\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: x,y = var('x y')\nsage: f(3)\ny + 3\nsage: f(3)(4)\n7\nsage: f(3,4)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/robert/sage/sage-2.5/devel/sage-working/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: __call__() takes at most 2 arguments (3 given)\nsage: \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/645\n\n",
     "created_at": "2007-09-12T21:32:07Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_000645.json:
     "title": "multi-argument call for symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/645",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/645
 archive/issue_comments_003346.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-11-30T23:24:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3346",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -72,7 +72,7 @@ archive/issue_comments_003347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3347",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -85,16 +85,16 @@ Changing status from new to assigned.
 archive/issue_comments_003348.json:
 ```json
 {
-    "body": "Attachment [645.patch](tarball://root/attachments/some-uuid/ticket645/645.patch) by mhansen created at 2007-11-30 23:25:01\n\nThis should be applied after #1345.",
+    "body": "Attachment [645.patch](tarball://root/attachments/some-uuid/ticket645/645.patch) by @mwhansen created at 2007-11-30 23:25:01\n\nThis should be applied after #1345.",
     "created_at": "2007-11-30T23:25:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3348",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [645.patch](tarball://root/attachments/some-uuid/ticket645/645.patch) by mhansen created at 2007-11-30 23:25:01
+Attachment [645.patch](tarball://root/attachments/some-uuid/ticket645/645.patch) by @mwhansen created at 2007-11-30 23:25:01
 
 This should be applied after #1345.
 

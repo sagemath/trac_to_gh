@@ -3,7 +3,7 @@
 archive/issues_005649.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nHow about:\n\nplot(P(6.403124+x), 0, 0.00001) -> okay\nplot(P(6.403124+x), 0, 0.000001) -> tick marks on both axes are\nmissing\nplot(P(6.403124+x), 0, 0.0000001) -> IndexError: list index out of\nrange\nplot(P(x), 0, 0.0001) -> ZeroDivisionError: float division\n\nThis doesn't look too good...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5649\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nHow about:\n\nplot(P(6.403124+x), 0, 0.00001) -> okay\nplot(P(6.403124+x), 0, 0.000001) -> tick marks on both axes are\nmissing\nplot(P(6.403124+x), 0, 0.0000001) -> IndexError: list index out of\nrange\nplot(P(x), 0, 0.0001) -> ZeroDivisionError: float division\n\nThis doesn't look too good...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5649\n\n",
     "created_at": "2009-03-31T15:48:08Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005649.json:
     "title": "plot doesn't work when x-range too small",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5649",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -51,7 +51,7 @@ archive/issue_comments_044107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5649#issuecomment-44107",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_044108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5649#issuecomment-44108",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to assigned.
 archive/issue_comments_044109.json:
 ```json
 {
-    "body": "Changing assignee from was to kcrisman.",
+    "body": "Changing assignee from @williamstein to @kcrisman.",
     "created_at": "2009-06-26T20:29:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5649#issuecomment-44109",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from was to kcrisman.
+Changing assignee from @williamstein to @kcrisman.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_044110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5649#issuecomment-44110",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_044112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5649#issuecomment-44112",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_044114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5649#issuecomment-44114",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_044117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5649",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5649#issuecomment-44117",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

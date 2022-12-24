@@ -14,7 +14,7 @@ archive/issues_003692.json:
     "title": "notebook -- issue with quotes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3692",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -49,7 +49,7 @@ archive/issue_comments_026158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3692#issuecomment-26158",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_026159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3692#issuecomment-26159",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

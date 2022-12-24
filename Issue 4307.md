@@ -3,7 +3,7 @@
 archive/issues_004307.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\n\n```\nsage: SupersingularModule(15)\nTraceback (most recent call last):\n...\nValueError: order of finite field must be a prime power\n```\n\n\nThe error message should say something like:\n\n```\nNotImplementedError: supersingular module of non-prime level not yet implemented\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4307\n\n",
+    "body": "Assignee: @craigcitro\n\n\n```\nsage: SupersingularModule(15)\nTraceback (most recent call last):\n...\nValueError: order of finite field must be a prime power\n```\n\n\nThe error message should say something like:\n\n```\nNotImplementedError: supersingular module of non-prime level not yet implemented\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4307\n\n",
     "created_at": "2008-10-16T09:21:45Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_004307.json:
     "title": "bad error message in SupersingularModule constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4307",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 
 ```
@@ -51,7 +51,7 @@ archive/issue_comments_031525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4307#issuecomment-31525",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_031526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4307#issuecomment-31526",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -110,16 +110,16 @@ Michael
 archive/issue_comments_031528.json:
 ```json
 {
-    "body": "Attachment [trac4307-ssmod_init.patch](tarball://root/attachments/some-uuid/ticket4307/trac4307-ssmod_init.patch) by AlexGhitza created at 2008-10-20 22:01:28\n\nYes.  Done, and replaced the patch.",
+    "body": "Attachment [trac4307-ssmod_init.patch](tarball://root/attachments/some-uuid/ticket4307/trac4307-ssmod_init.patch) by @aghitza created at 2008-10-20 22:01:28\n\nYes.  Done, and replaced the patch.",
     "created_at": "2008-10-20T22:01:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4307#issuecomment-31528",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac4307-ssmod_init.patch](tarball://root/attachments/some-uuid/ticket4307/trac4307-ssmod_init.patch) by AlexGhitza created at 2008-10-20 22:01:28
+Attachment [trac4307-ssmod_init.patch](tarball://root/attachments/some-uuid/ticket4307/trac4307-ssmod_init.patch) by @aghitza created at 2008-10-20 22:01:28
 
 Yes.  Done, and replaced the patch.
 
@@ -135,7 +135,7 @@ archive/issue_comments_031529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4307#issuecomment-31529",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

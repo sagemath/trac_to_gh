@@ -3,7 +3,7 @@
 archive/issues_005546.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  wstein mhansen robertwb\n\nReported by Alex Raichev on sage-support:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('x,y', ns=1)\n(x, y)\nsage: f= x+y\nsage: type(f)\n<type 'sage.symbolic.expression.Expression'>\nsage: jacobian(f,[x,y])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call\nlast)\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/arai021/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\nfunctions.pyc in jacobian(functions, variables)\n    136\n    137     if not isinstance(variables, (tuple, list)) and not\nis_Vector(variables):\n    138         variables = [variables]\n    139\n--> 140     return matrix([[diff(f, v) for v in variables] for f in  \nfunctions])\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\nfunctional.pyc in derivative(f, *args, **kwds)\n    145         pass\n    146     if not isinstance(f, SymbolicExpression):\n--> 147         f = SR(f)  \n    148     return f.derivative(*args, **kwds)\n    149\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\ncalculus.pyc in __call__(self, x)\n    504                 msg, s, pos = err.args\n    505                 raise TypeError, \"%s: %s !!! %s\" % (msg, s\n[:pos], s[pos:])\n--> 506         return self._coerce_impl(x)  \n    507\n    508     def _coerce_impl(self, x):\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\ncalculus.pyc in _coerce_impl(self, x)\n    566             return self(x._sage_())\n    567         else:\n--> 568             raise TypeError, \"cannot coerce type '%s' into a  \nSymbolicExpression.\"%type(x)\n    569\n    570     def _repr_(self):\n\nTypeError: cannot coerce type '<type\n'sage.symbolic.expression.Expression'>' into a SymbolicExpression.  \n```\n\n\n`sage.symbolic.expression.Expression` doesn't support .derivative(), and the interface to .diff() doesn't match the Sage conventions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5546\n\n",
+    "body": "Assignee: @burcin\n\nCC:  wstein @mwhansen @robertwb\n\nReported by Alex Raichev on sage-support:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('x,y', ns=1)\n(x, y)\nsage: f= x+y\nsage: type(f)\n<type 'sage.symbolic.expression.Expression'>\nsage: jacobian(f,[x,y])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call\nlast)\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/arai021/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\nfunctions.pyc in jacobian(functions, variables)\n    136\n    137     if not isinstance(variables, (tuple, list)) and not\nis_Vector(variables):\n    138         variables = [variables]\n    139\n--> 140     return matrix([[diff(f, v) for v in variables] for f in  \nfunctions])\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\nfunctional.pyc in derivative(f, *args, **kwds)\n    145         pass\n    146     if not isinstance(f, SymbolicExpression):\n--> 147         f = SR(f)  \n    148     return f.derivative(*args, **kwds)\n    149\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\ncalculus.pyc in __call__(self, x)\n    504                 msg, s, pos = err.args\n    505                 raise TypeError, \"%s: %s !!! %s\" % (msg, s\n[:pos], s[pos:])\n--> 506         return self._coerce_impl(x)  \n    507\n    508     def _coerce_impl(self, x):\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/\ncalculus.pyc in _coerce_impl(self, x)\n    566             return self(x._sage_())\n    567         else:\n--> 568             raise TypeError, \"cannot coerce type '%s' into a  \nSymbolicExpression.\"%type(x)\n    569\n    570     def _repr_(self):\n\nTypeError: cannot coerce type '<type\n'sage.symbolic.expression.Expression'>' into a SymbolicExpression.  \n```\n\n\n`sage.symbolic.expression.Expression` doesn't support .derivative(), and the interface to .diff() doesn't match the Sage conventions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5546\n\n",
     "created_at": "2009-03-17T09:36:03Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_005546.json:
     "title": "jacobian fails for pynac expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5546",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  wstein mhansen robertwb
+CC:  wstein @mwhansen @robertwb
 
 Reported by Alex Raichev on sage-support:
 
@@ -99,7 +99,7 @@ archive/issue_comments_043140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5546#issuecomment-43140",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_043141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5546#issuecomment-43141",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_043142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5546#issuecomment-43142",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -148,16 +148,16 @@ allow forming matrices and vectors from pynac expressions
 archive/issue_comments_043143.json:
 ```json
 {
-    "body": "Attachment [trac_5546-2-pynac_derivative.patch](tarball://root/attachments/some-uuid/ticket5546/trac_5546-2-pynac_derivative.patch) by burcin created at 2009-03-24 16:33:56\n\nmake pynac expressions use the multi_derivative framework",
+    "body": "Attachment [trac_5546-2-pynac_derivative.patch](tarball://root/attachments/some-uuid/ticket5546/trac_5546-2-pynac_derivative.patch) by @burcin created at 2009-03-24 16:33:56\n\nmake pynac expressions use the multi_derivative framework",
     "created_at": "2009-03-24T16:33:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5546#issuecomment-43143",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5546-2-pynac_derivative.patch](tarball://root/attachments/some-uuid/ticket5546/trac_5546-2-pynac_derivative.patch) by burcin created at 2009-03-24 16:33:56
+Attachment [trac_5546-2-pynac_derivative.patch](tarball://root/attachments/some-uuid/ticket5546/trac_5546-2-pynac_derivative.patch) by @burcin created at 2009-03-24 16:33:56
 
 make pynac expressions use the multi_derivative framework
 
@@ -173,7 +173,7 @@ archive/issue_comments_043144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5546#issuecomment-43144",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -218,16 +218,16 @@ sage: v * (M * v)
 archive/issue_comments_043145.json:
 ```json
 {
-    "body": "Attachment [pynac-hash_exception.patch](tarball://root/attachments/some-uuid/ticket5546/pynac-hash_exception.patch) by burcin created at 2009-04-24 15:34:24\n\npatch to pynac to handle exceptions during hashing",
+    "body": "Attachment [pynac-hash_exception.patch](tarball://root/attachments/some-uuid/ticket5546/pynac-hash_exception.patch) by @burcin created at 2009-04-24 15:34:24\n\npatch to pynac to handle exceptions during hashing",
     "created_at": "2009-04-24T15:34:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5546#issuecomment-43145",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [pynac-hash_exception.patch](tarball://root/attachments/some-uuid/ticket5546/pynac-hash_exception.patch) by burcin created at 2009-04-24 15:34:24
+Attachment [pynac-hash_exception.patch](tarball://root/attachments/some-uuid/ticket5546/pynac-hash_exception.patch) by @burcin created at 2009-04-24 15:34:24
 
 patch to pynac to handle exceptions during hashing
 
@@ -243,7 +243,7 @@ archive/issue_comments_043146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5546#issuecomment-43146",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -256,16 +256,16 @@ doctests for the fix
 archive/issue_comments_043147.json:
 ```json
 {
-    "body": "Attachment [5546_doctests.patch](tarball://root/attachments/some-uuid/ticket5546/5546_doctests.patch) by burcin created at 2009-04-24 15:40:17\n\nattachment:pynac-hash_exception.patch fixes exception handling during hashing in pynac and the problems reported by Nick in comment:2.\n\nI will hold off on doing another pynac release to address this, since I don't know if mhansen made any changes which might be affected.\n\nBTW, another pynac release, 0.1.6 in this case, would introduce circular dependencies in trac. :)\n\nComments on how to proceed?",
+    "body": "Attachment [5546_doctests.patch](tarball://root/attachments/some-uuid/ticket5546/5546_doctests.patch) by @burcin created at 2009-04-24 15:40:17\n\nattachment:pynac-hash_exception.patch fixes exception handling during hashing in pynac and the problems reported by Nick in comment:2.\n\nI will hold off on doing another pynac release to address this, since I don't know if mhansen made any changes which might be affected.\n\nBTW, another pynac release, 0.1.6 in this case, would introduce circular dependencies in trac. :)\n\nComments on how to proceed?",
     "created_at": "2009-04-24T15:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5546#issuecomment-43147",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [5546_doctests.patch](tarball://root/attachments/some-uuid/ticket5546/5546_doctests.patch) by burcin created at 2009-04-24 15:40:17
+Attachment [5546_doctests.patch](tarball://root/attachments/some-uuid/ticket5546/5546_doctests.patch) by @burcin created at 2009-04-24 15:40:17
 
 attachment:pynac-hash_exception.patch fixes exception handling during hashing in pynac and the problems reported by Nick in comment:2.
 
@@ -287,7 +287,7 @@ archive/issue_comments_043148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5546#issuecomment-43148",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_043149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5546#issuecomment-43149",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_043150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5546#issuecomment-43150",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_043151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5546#issuecomment-43151",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_043152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5546#issuecomment-43152",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

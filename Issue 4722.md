@@ -3,7 +3,7 @@
 archive/issues_004722.json:
 ```json
 {
-    "body": "Assignee: was\n\nI'm in a talk right now, and the speaker (Marco from Holland) just pointed out that\nSage's K.hilbert_class_polynomial() function, for K quadratic imaginary, is a *LIE*.\nIt returns a poly that defines that Hilbert class field, but it is *not* the Hilbert Class Polynomial.\n\nObserve:\n\n\n```\nsage: K.<a> =QuadraticField(-97)\nsage: K.hilbert_class_polynomial()\nx^4 + 9*x^2 - 6*x + 1\nsage: magma(K.discriminant()).HilbertClassPolynomial()\n$.1^4 - 750062398364686994581728000*$.1^3 - 20542159225989612130996373047535232000000*$.1^2 + 208224136957169320201407896480139264000000000*$.1 - 1121692648948590091501551223636881408000000000000\n```\n\n\nSolution: change the name of this function and add documentation clarifying this, say including the above example.\n\nThe difference is *very* important, given the use of the Hilbert class polynomial in computing elliptic curves with a given number of rational points. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4722\n\n",
+    "body": "Assignee: @williamstein\n\nI'm in a talk right now, and the speaker (Marco from Holland) just pointed out that\nSage's K.hilbert_class_polynomial() function, for K quadratic imaginary, is a *LIE*.\nIt returns a poly that defines that Hilbert class field, but it is *not* the Hilbert Class Polynomial.\n\nObserve:\n\n\n```\nsage: K.<a> =QuadraticField(-97)\nsage: K.hilbert_class_polynomial()\nx^4 + 9*x^2 - 6*x + 1\nsage: magma(K.discriminant()).HilbertClassPolynomial()\n$.1^4 - 750062398364686994581728000*$.1^3 - 20542159225989612130996373047535232000000*$.1^2 + 208224136957169320201407896480139264000000000*$.1 - 1121692648948590091501551223636881408000000000000\n```\n\n\nSolution: change the name of this function and add documentation clarifying this, say including the above example.\n\nThe difference is *very* important, given the use of the Hilbert class polynomial in computing elliptic curves with a given number of rational points. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4722\n\n",
     "created_at": "2008-12-05T23:04:07Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004722.json:
     "title": "BUG - number field K.hilbert_class_polynomial() is a *lie*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4722",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I'm in a talk right now, and the speaker (Marco from Holland) just pointed out that
 Sage's K.hilbert_class_polynomial() function, for K quadratic imaginary, is a *LIE*.
@@ -55,7 +55,7 @@ archive/issue_comments_035645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35645",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,16 +135,16 @@ Michael
 archive/issue_comments_035648.json:
 ```json
 {
-    "body": "Attachment [trac_4722.patch](tarball://root/attachments/some-uuid/ticket4722/trac_4722.patch) by was created at 2008-12-11 04:56:32",
+    "body": "Attachment [trac_4722.patch](tarball://root/attachments/some-uuid/ticket4722/trac_4722.patch) by @williamstein created at 2008-12-11 04:56:32",
     "created_at": "2008-12-11T04:56:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35648",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4722.patch](tarball://root/attachments/some-uuid/ticket4722/trac_4722.patch) by was created at 2008-12-11 04:56:32
+Attachment [trac_4722.patch](tarball://root/attachments/some-uuid/ticket4722/trac_4722.patch) by @williamstein created at 2008-12-11 04:56:32
 
 
 
@@ -158,7 +158,7 @@ archive/issue_comments_035649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35649",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

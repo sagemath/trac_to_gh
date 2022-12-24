@@ -14,7 +14,7 @@ archive/issues_005855.json:
     "title": "[with patch, needs review] implement squarefree_divisors function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5855",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: somebody
@@ -61,7 +61,7 @@ archive/issue_comments_046257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5855#issuecomment-46257",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_046258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5855#issuecomment-46258",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,16 +127,16 @@ I also don't like that the `divisors` function returns only positive divisors, b
 archive/issue_comments_046260.json:
 ```json
 {
-    "body": "Attachment [trac_5855-squarefree_divisors.patch](tarball://root/attachments/some-uuid/ticket5855/trac_5855-squarefree_divisors.patch) by rlm created at 2009-04-27 15:18:09",
+    "body": "Attachment [trac_5855-squarefree_divisors.patch](tarball://root/attachments/some-uuid/ticket5855/trac_5855-squarefree_divisors.patch) by @rlmill created at 2009-04-27 15:18:09",
     "created_at": "2009-04-27T15:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5855#issuecomment-46260",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5855-squarefree_divisors.patch](tarball://root/attachments/some-uuid/ticket5855/trac_5855-squarefree_divisors.patch) by rlm created at 2009-04-27 15:18:09
+Attachment [trac_5855-squarefree_divisors.patch](tarball://root/attachments/some-uuid/ticket5855/trac_5855-squarefree_divisors.patch) by @rlmill created at 2009-04-27 15:18:09
 
 
 
@@ -150,7 +150,7 @@ archive/issue_comments_046261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5855#issuecomment-46261",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_046263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5855#issuecomment-46263",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_046264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5855#issuecomment-46264",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008403.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  jason\n\nHere is a patch containing the function Graph.steiner_tree.\n\nIt consists in finding in a graph, given a set S of vertices, a tree in G of minimum weight/cardinality containing the vertices from S. \n\nEverything is explained in the docstrings anyway :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8403\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nHere is a patch containing the function Graph.steiner_tree.\n\nIt consists in finding in a graph, given a set S of vertices, a tree in G of minimum weight/cardinality containing the vertices from S. \n\nEverything is explained in the docstrings anyway :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8403\n\n",
     "created_at": "2010-02-28T17:57:45Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_008403.json:
     "title": "Steiner Tree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8403",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  jason
+CC:  @jasongrout
 
 Here is a patch containing the function Graph.steiner_tree.
 
@@ -45,7 +45,7 @@ archive/issue_comments_075257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75257",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_075258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75258",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_075259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75259",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_075260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75260",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_075261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75261",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_075262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75262",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_075263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75263",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -170,16 +170,16 @@ Nathann
 archive/issue_comments_075264.json:
 ```json
 {
-    "body": "Attachment [trac_8403.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403.patch) by rlm created at 2010-06-18 15:04:22\n\nReplying to [comment:5 ncohen]:\n> And you are right. I was thinking about spanning trees, as I usually do not care about weights...\n\nI don't think spanning tree is linear: the standard method is a BFS/DFS, which is still worst case quadratic. I know this is no longer relevant here, but I want to make sure I have this right. If you do know of a linear time spanning tree algorithm, I'm curious about it.",
+    "body": "Attachment [trac_8403.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403.patch) by @rlmill created at 2010-06-18 15:04:22\n\nReplying to [comment:5 ncohen]:\n> And you are right. I was thinking about spanning trees, as I usually do not care about weights...\n\nI don't think spanning tree is linear: the standard method is a BFS/DFS, which is still worst case quadratic. I know this is no longer relevant here, but I want to make sure I have this right. If you do know of a linear time spanning tree algorithm, I'm curious about it.",
     "created_at": "2010-06-18T15:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75264",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8403.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403.patch) by rlm created at 2010-06-18 15:04:22
+Attachment [trac_8403.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403.patch) by @rlmill created at 2010-06-18 15:04:22
 
 Replying to [comment:5 ncohen]:
 > And you are right. I was thinking about spanning trees, as I usually do not care about weights...
@@ -198,7 +198,7 @@ archive/issue_comments_075265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75265",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_075266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75266",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_075267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75267",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -252,16 +252,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_075268.json:
 ```json
 {
-    "body": "Attachment [trac_8403-part2.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403-part2.patch) by ncohen created at 2010-06-20 17:46:59\n\nThank you again ! :-)\n\nNathann",
+    "body": "Attachment [trac_8403-part2.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403-part2.patch) by @nathanncohen created at 2010-06-20 17:46:59\n\nThank you again ! :-)\n\nNathann",
     "created_at": "2010-06-20T17:46:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75268",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8403-part2.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403-part2.patch) by ncohen created at 2010-06-20 17:46:59
+Attachment [trac_8403-part2.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403-part2.patch) by @nathanncohen created at 2010-06-20 17:46:59
 
 Thank you again ! :-)
 
@@ -279,7 +279,7 @@ archive/issue_comments_075269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75269",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -292,16 +292,16 @@ apply before part 2
 archive/issue_comments_075270.json:
 ```json
 {
-    "body": "Attachment [trac_8403-rebased.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403-rebased.patch) by rlm created at 2010-06-29 16:49:24",
+    "body": "Attachment [trac_8403-rebased.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403-rebased.patch) by @rlmill created at 2010-06-29 16:49:24",
     "created_at": "2010-06-29T16:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75270",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8403-rebased.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403-rebased.patch) by rlm created at 2010-06-29 16:49:24
+Attachment [trac_8403-rebased.patch](tarball://root/attachments/some-uuid/ticket8403/trac_8403-rebased.patch) by @rlmill created at 2010-06-29 16:49:24
 
 
 
@@ -315,7 +315,7 @@ archive/issue_comments_075271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8403#issuecomment-75271",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

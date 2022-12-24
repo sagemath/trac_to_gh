@@ -14,7 +14,7 @@ archive/issues_005699.json:
     "title": "notebook -- %r mode is completely broken (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5699",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5699
 archive/issue_comments_044547.json:
 ```json
 {
-    "body": "Attachment [trac_5699.patch](tarball://root/attachments/some-uuid/ticket5699/trac_5699.patch) by was created at 2009-04-07 18:59:12",
+    "body": "Attachment [trac_5699.patch](tarball://root/attachments/some-uuid/ticket5699/trac_5699.patch) by @williamstein created at 2009-04-07 18:59:12",
     "created_at": "2009-04-07T18:59:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5699#issuecomment-44547",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5699.patch](tarball://root/attachments/some-uuid/ticket5699/trac_5699.patch) by was created at 2009-04-07 18:59:12
+Attachment [trac_5699.patch](tarball://root/attachments/some-uuid/ticket5699/trac_5699.patch) by @williamstein created at 2009-04-07 18:59:12
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_044548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5699#issuecomment-44548",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

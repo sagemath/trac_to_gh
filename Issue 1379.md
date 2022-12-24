@@ -3,7 +3,7 @@
 archive/issues_001379.json:
 ```json
 {
-    "body": "Assignee: was\n\nApp is live at http://sagemath.timothyclemans.com/whatis/\n\nThe app is a pretty interactive box where users click the three definitions of Sage and see the definitions one at a time.\n\nTo implement on sagemath.org homepage download http://sagemath.timothyclemans.com/whatis/whatis.zip and place in root of sagemath.org \n\nIndex.html is replaced, javascript, css file, images folder added.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1379\n\n",
+    "body": "Assignee: @williamstein\n\nApp is live at http://sagemath.timothyclemans.com/whatis/\n\nThe app is a pretty interactive box where users click the three definitions of Sage and see the definitions one at a time.\n\nTo implement on sagemath.org homepage download http://sagemath.timothyclemans.com/whatis/whatis.zip and place in root of sagemath.org \n\nIndex.html is replaced, javascript, css file, images folder added.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1379\n\n",
     "created_at": "2007-12-03T07:10:23Z",
     "labels": [
         "website/wiki",
@@ -17,7 +17,7 @@ archive/issues_001379.json:
     "user": "TimothyClemans"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 App is live at http://sagemath.timothyclemans.com/whatis/
 
@@ -69,7 +69,7 @@ archive/issue_comments_008846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1379#issuecomment-8846",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

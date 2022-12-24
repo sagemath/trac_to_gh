@@ -3,7 +3,7 @@
 archive/issues_008004.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\n\n```\nsage: sage: region_plot(lambda x,y: x>y, (-4,4), (-4,4))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/mnt/usb1/scratch/jason/sage-4.3.1.rc1-x86_64-Linux/devel/sage-main/sage/<ipython console> in <module>()\n\n/mnt/usb1/scratch/jason/sage-4.3.1.rc1-x86_64-Linux/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    136                 options['__original_opts'] = kwds\n    137             options.update(kwds)\n--> 138             return func(*args, **options)\n    139 \n    140         \n\n/mnt/usb1/scratch/jason/sage-4.3.1.rc1-x86_64-Linux/local/lib/python2.6/site-packages/sage/plot/contour_plot.pyc in region_plot(f, xrange, yrange, plot_points, incol, outcol, bordercol, borderstyle, borderwidth)\n    561         f = [f]\n    562 \n--> 563     f = [equify(g) for g in f]\n    564 \n    565     g, ranges = setup_for_eval_on_grid(f, [xrange, yrange], plot_points)\n\n/mnt/usb1/scratch/jason/sage-4.3.1.rc1-x86_64-Linux/local/lib/python2.6/site-packages/sage/plot/contour_plot.pyc in equify(f)\n    626     import operator\n    627     from sage.calculus.all import symbolic_expression\n--> 628     op = f.operator()\n    629     if op is operator.gt or op is operator.ge:\n    630         return symbolic_expression(f.rhs() - f.lhs())\n\nAttributeError: 'function' object has no attribute 'operator'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8004\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\n\n```\nsage: sage: region_plot(lambda x,y: x>y, (-4,4), (-4,4))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/mnt/usb1/scratch/jason/sage-4.3.1.rc1-x86_64-Linux/devel/sage-main/sage/<ipython console> in <module>()\n\n/mnt/usb1/scratch/jason/sage-4.3.1.rc1-x86_64-Linux/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    136                 options['__original_opts'] = kwds\n    137             options.update(kwds)\n--> 138             return func(*args, **options)\n    139 \n    140         \n\n/mnt/usb1/scratch/jason/sage-4.3.1.rc1-x86_64-Linux/local/lib/python2.6/site-packages/sage/plot/contour_plot.pyc in region_plot(f, xrange, yrange, plot_points, incol, outcol, bordercol, borderstyle, borderwidth)\n    561         f = [f]\n    562 \n--> 563     f = [equify(g) for g in f]\n    564 \n    565     g, ranges = setup_for_eval_on_grid(f, [xrange, yrange], plot_points)\n\n/mnt/usb1/scratch/jason/sage-4.3.1.rc1-x86_64-Linux/local/lib/python2.6/site-packages/sage/plot/contour_plot.pyc in equify(f)\n    626     import operator\n    627     from sage.calculus.all import symbolic_expression\n--> 628     op = f.operator()\n    629     if op is operator.gt or op is operator.ge:\n    630         return symbolic_expression(f.rhs() - f.lhs())\n\nAttributeError: 'function' object has no attribute 'operator'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8004\n\n",
     "created_at": "2010-01-19T22:59:50Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_008004.json:
     "title": "region_plot does not handle lambda functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8004",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 
 ```
@@ -65,16 +65,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8004
 archive/issue_comments_069943.json:
 ```json
 {
-    "body": "Attachment [trac-8004-region_plot.patch](tarball://root/attachments/some-uuid/ticket8004/trac-8004-region_plot.patch) by jason created at 2010-01-20 00:12:51",
+    "body": "Attachment [trac-8004-region_plot.patch](tarball://root/attachments/some-uuid/ticket8004/trac-8004-region_plot.patch) by @jasongrout created at 2010-01-20 00:12:51",
     "created_at": "2010-01-20T00:12:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8004#issuecomment-69943",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8004-region_plot.patch](tarball://root/attachments/some-uuid/ticket8004/trac-8004-region_plot.patch) by jason created at 2010-01-20 00:12:51
+Attachment [trac-8004-region_plot.patch](tarball://root/attachments/some-uuid/ticket8004/trac-8004-region_plot.patch) by @jasongrout created at 2010-01-20 00:12:51
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_069944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8004#issuecomment-69944",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_069945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8004#issuecomment-69945",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_069946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8004#issuecomment-69946",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_069949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8004#issuecomment-69949",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_069950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8004#issuecomment-69950",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

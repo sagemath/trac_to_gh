@@ -3,7 +3,7 @@
 archive/issues_004552.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  wjp\n\nDepends on #4551\n\nIssue created by migration from https://trac.sagemath.org/ticket/4552\n\n",
+    "body": "Assignee: boothby\n\nCC:  @wjp\n\nDepends on #4551\n\nIssue created by migration from https://trac.sagemath.org/ticket/4552\n\n",
     "created_at": "2008-11-19T18:00:43Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_004552.json:
 ```
 Assignee: boothby
 
-CC:  wjp
+CC:  @wjp
 
 Depends on #4551
 
@@ -88,16 +88,16 @@ If the email config is set to True then registration doesn't work.
 archive/issue_comments_034123.json:
 ```json
 {
-    "body": "Attachment [trac_4552-notebook_account_email.patch](tarball://root/attachments/some-uuid/ticket4552/trac_4552-notebook_account_email.patch) by wjp created at 2009-09-01 18:40:58\n\nmodified patch without dependency on #4551",
+    "body": "Attachment [trac_4552-notebook_account_email.patch](tarball://root/attachments/some-uuid/ticket4552/trac_4552-notebook_account_email.patch) by @wjp created at 2009-09-01 18:40:58\n\nmodified patch without dependency on #4551",
     "created_at": "2009-09-01T18:40:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4552#issuecomment-34123",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac_4552-notebook_account_email.patch](tarball://root/attachments/some-uuid/ticket4552/trac_4552-notebook_account_email.patch) by wjp created at 2009-09-01 18:40:58
+Attachment [trac_4552-notebook_account_email.patch](tarball://root/attachments/some-uuid/ticket4552/trac_4552-notebook_account_email.patch) by @wjp created at 2009-09-01 18:40:58
 
 modified patch without dependency on #4551
 
@@ -113,7 +113,7 @@ archive/issue_comments_034124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4552#issuecomment-34124",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_034125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4552#issuecomment-34125",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008065.json:
     "title": "irreducible_characters() and word_problem() should sort their output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8065",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: joyner
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8065
 archive/issue_comments_070681.json:
 ```json
 {
-    "body": "Attachment [trac_8065.patch](tarball://root/attachments/some-uuid/ticket8065/trac_8065.patch) by AlexGhitza created at 2010-01-25 22:21:22",
+    "body": "Attachment [trac_8065.patch](tarball://root/attachments/some-uuid/ticket8065/trac_8065.patch) by @aghitza created at 2010-01-25 22:21:22",
     "created_at": "2010-01-25T22:21:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8065#issuecomment-70681",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_8065.patch](tarball://root/attachments/some-uuid/ticket8065/trac_8065.patch) by AlexGhitza created at 2010-01-25 22:21:22
+Attachment [trac_8065.patch](tarball://root/attachments/some-uuid/ticket8065/trac_8065.patch) by @aghitza created at 2010-01-25 22:21:22
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_070682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8065#issuecomment-70682",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_070683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8065#issuecomment-70683",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_070684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8065#issuecomment-70684",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 

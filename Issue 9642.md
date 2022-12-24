@@ -3,7 +3,7 @@
 archive/issues_009642.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  kcrisman\n\nReported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/efae2db905b3ee8f/1a2312f22bc40d9a#1a2312f22bc40d9a) by K.-D. Crisman:\n\n```\nSubject: can sage -testall use threads?\n\nThat is, without setting NUM_THREADS or something.  I tried\n\n./sage -testall -p 8\n\nbut I just get lots of error messages in addition to my test output.\nI guess I have the same question about sage -tnew as well.\n```\n\n\nSomewhat related: #279\n\nIssue created by migration from https://trac.sagemath.org/ticket/9642\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nReported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/efae2db905b3ee8f/1a2312f22bc40d9a#1a2312f22bc40d9a) by K.-D. Crisman:\n\n```\nSubject: can sage -testall use threads?\n\nThat is, without setting NUM_THREADS or something.  I tried\n\n./sage -testall -p 8\n\nbut I just get lots of error messages in addition to my test output.\nI guess I have the same question about sage -tnew as well.\n```\n\n\nSomewhat related: #279\n\nIssue created by migration from https://trac.sagemath.org/ticket/9642\n\n",
     "created_at": "2010-07-29T22:46:39Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009642.json:
     "title": "sage-maketest and sage-test-new should be able to run tests in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9642",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/efae2db905b3ee8f/1a2312f22bc40d9a#1a2312f22bc40d9a) by K.-D. Crisman:
 
@@ -53,7 +53,7 @@ archive/issue_comments_093462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9642#issuecomment-93462",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_093463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9642#issuecomment-93463",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_093464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9642#issuecomment-93464",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_093465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9642#issuecomment-93465",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_093466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9642",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9642#issuecomment-93466",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

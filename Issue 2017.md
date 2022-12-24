@@ -14,7 +14,7 @@ archive/issues_002017.json:
     "title": "crap -- singular includes surfex as a precompiled binary.  Remove it.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2017",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -71,7 +71,7 @@ archive/issue_comments_013021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2017#issuecomment-13021",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_013022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2017#issuecomment-13022",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009197.json:
     "title": "If latex() causes an error or doesn't work, we should just default to repr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9197",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: jason, was

@@ -14,7 +14,7 @@ archive/issues_004499.json:
     "title": "Fix latex for sech and csch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4499",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: cwitty
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4499
 archive/issue_comments_033302.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to mhansen.",
+    "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2008-11-12T01:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33302",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from cwitty to mhansen.
+Changing assignee from cwitty to @mwhansen.
 
 
 
@@ -70,16 +70,16 @@ Changing assignee from cwitty to mhansen.
 archive/issue_comments_033303.json:
 ```json
 {
-    "body": "Attachment [trac_4499.patch](tarball://root/attachments/some-uuid/ticket4499/trac_4499.patch) by mhansen created at 2008-11-12 01:25:57",
+    "body": "Attachment [trac_4499.patch](tarball://root/attachments/some-uuid/ticket4499/trac_4499.patch) by @mwhansen created at 2008-11-12 01:25:57",
     "created_at": "2008-11-12T01:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33303",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4499.patch](tarball://root/attachments/some-uuid/ticket4499/trac_4499.patch) by mhansen created at 2008-11-12 01:25:57
+Attachment [trac_4499.patch](tarball://root/attachments/some-uuid/ticket4499/trac_4499.patch) by @mwhansen created at 2008-11-12 01:25:57
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_033304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33304",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_033306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33306",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

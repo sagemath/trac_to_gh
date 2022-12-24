@@ -3,7 +3,7 @@
 archive/issues_003137.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nOn Wed, May 7, 2008 at 12:26 PM, John H Palmieri <jhpalmieri64@gmail.com> wrote:\n>\n> A problem: on my linux box, if I use 'view' (not in a notebook), an\n> xdvi window appears then immediately disappears.  If I run view with\n> 'debug=True', toward the end I get this:\n>\n> Output written on sage.dvi (1 page, 740 bytes).\n> Transcript written on sage.log.\n> gs: Unrecoverable error: limitcheck in .putdeviceprops\n> xdvik gs_io: Broken pipe\n> xdvik gs_io: Broken pipe\n> xdvik gs_io: Broken pipe\n> ghostscript died unexpectedly.\n> xdvi.bin: spcl_scan: shouldn't happen: POST encountered, offset 659\n>\n> Has anyone seen this before?  (This works on my mac, just not on my\n> linux box.)\n>\n\nI have never seen that before.\n\n> And a question: on my mac, suppose I want to use TeXShop instead of\n> xdvi to display the output of the view command.  Is there a way to do\n> this?\n>\n\nThe use of xdvi is hardcoded in\n\nsage/misc/latex.py\n\nso the answer is I guess to change this and submit a patch\nor make it a trac ticket.   It's reasonable to consider this\na bug, since view should I think just use the OS X open\ncommand as defined in sage/misc/viewer.py, i.e., use\nwhatever is the default opener for a dvi file on your system.\n\nIt's hardcoded xdvi right now since that was some of the first\nsage code I ever wrote and that was long before I ported\nSage to run on OS X...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3137\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nOn Wed, May 7, 2008 at 12:26 PM, John H Palmieri <jhpalmieri64@gmail.com> wrote:\n>\n> A problem: on my linux box, if I use 'view' (not in a notebook), an\n> xdvi window appears then immediately disappears.  If I run view with\n> 'debug=True', toward the end I get this:\n>\n> Output written on sage.dvi (1 page, 740 bytes).\n> Transcript written on sage.log.\n> gs: Unrecoverable error: limitcheck in .putdeviceprops\n> xdvik gs_io: Broken pipe\n> xdvik gs_io: Broken pipe\n> xdvik gs_io: Broken pipe\n> ghostscript died unexpectedly.\n> xdvi.bin: spcl_scan: shouldn't happen: POST encountered, offset 659\n>\n> Has anyone seen this before?  (This works on my mac, just not on my\n> linux box.)\n>\n\nI have never seen that before.\n\n> And a question: on my mac, suppose I want to use TeXShop instead of\n> xdvi to display the output of the view command.  Is there a way to do\n> this?\n>\n\nThe use of xdvi is hardcoded in\n\nsage/misc/latex.py\n\nso the answer is I guess to change this and submit a patch\nor make it a trac ticket.   It's reasonable to consider this\na bug, since view should I think just use the OS X open\ncommand as defined in sage/misc/viewer.py, i.e., use\nwhatever is the default opener for a dvi file on your system.\n\nIt's hardcoded xdvi right now since that was some of the first\nsage code I ever wrote and that was long before I ported\nSage to run on OS X...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3137\n\n",
     "created_at": "2008-05-09T00:15:30Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_003137.json:
     "title": "view command in misc/latex.py -- fix to not hardcode xdvi command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3137",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -74,16 +74,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3137
 archive/issue_comments_021785.json:
 ```json
 {
-    "body": "Attachment [view_trac_3137.patch](tarball://root/attachments/some-uuid/ticket3137/view_trac_3137.patch) by yi created at 2008-05-09 16:21:24\n\npatch to use dvi_viewer() from misc/viewer.py",
+    "body": "Attachment [view_trac_3137.patch](tarball://root/attachments/some-uuid/ticket3137/view_trac_3137.patch) by @yqiang created at 2008-05-09 16:21:24\n\npatch to use dvi_viewer() from misc/viewer.py",
     "created_at": "2008-05-09T16:21:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3137",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3137#issuecomment-21785",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [view_trac_3137.patch](tarball://root/attachments/some-uuid/ticket3137/view_trac_3137.patch) by yi created at 2008-05-09 16:21:24
+Attachment [view_trac_3137.patch](tarball://root/attachments/some-uuid/ticket3137/view_trac_3137.patch) by @yqiang created at 2008-05-09 16:21:24
 
 patch to use dvi_viewer() from misc/viewer.py
 
@@ -99,7 +99,7 @@ archive/issue_comments_021786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3137",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3137#issuecomment-21786",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_021787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3137",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3137#issuecomment-21787",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

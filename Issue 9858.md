@@ -14,7 +14,7 @@ archive/issues_009858.json:
     "title": "Doctest failures due to hard-coded line numbers in (doctests of) sage/rings/*.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9858",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 Assignee: mvngu
@@ -92,7 +92,7 @@ archive/issue_comments_097330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9858#issuecomment-97330",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_097331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9858#issuecomment-97331",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -123,16 +123,16 @@ Based on Sage 4.5.3.rc0. Apply to Sage library.
 archive/issue_comments_097332.json:
 ```json
 {
-    "body": "Attachment [trac_9859-fix_hard-coded_doctest_line_numbers.patch](tarball://root/attachments/some-uuid/ticket9859/trac_9859-fix_hard-coded_doctest_line_numbers.patch) by leif created at 2010-09-06 05:06:53\n\nOk, I'm a beginner. ;-)\n\n(I've uploaded a patch.)",
+    "body": "Attachment [trac_9859-fix_hard-coded_doctest_line_numbers.patch](tarball://root/attachments/some-uuid/ticket9859/trac_9859-fix_hard-coded_doctest_line_numbers.patch) by @nexttime created at 2010-09-06 05:06:53\n\nOk, I'm a beginner. ;-)\n\n(I've uploaded a patch.)",
     "created_at": "2010-09-06T05:06:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9858#issuecomment-97332",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9859-fix_hard-coded_doctest_line_numbers.patch](tarball://root/attachments/some-uuid/ticket9859/trac_9859-fix_hard-coded_doctest_line_numbers.patch) by leif created at 2010-09-06 05:06:53
+Attachment [trac_9859-fix_hard-coded_doctest_line_numbers.patch](tarball://root/attachments/some-uuid/ticket9859/trac_9859-fix_hard-coded_doctest_line_numbers.patch) by @nexttime created at 2010-09-06 05:06:53
 
 Ok, I'm a beginner. ;-)
 
@@ -150,7 +150,7 @@ archive/issue_comments_097333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9858#issuecomment-97333",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_097336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9858#issuecomment-97336",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_097337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9858#issuecomment-97337",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

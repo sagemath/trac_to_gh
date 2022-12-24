@@ -14,7 +14,7 @@ archive/issues_005624.json:
     "title": "matrices cache their hash, which causes subtle bugs when moving objects between 32/64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5624",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty

@@ -14,7 +14,7 @@ archive/issues_005684.json:
     "title": "[with patch, needs review] Taking negative powers of Laurent polynomial throws exception",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5684",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: tbd
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5684
 archive/issue_comments_044448.json:
 ```json
 {
-    "body": "Attachment [laurent_polynomial_negpow.patch](tarball://root/attachments/some-uuid/ticket5684/laurent_polynomial_negpow.patch) by wjp created at 2009-04-04 20:41:12",
+    "body": "Attachment [laurent_polynomial_negpow.patch](tarball://root/attachments/some-uuid/ticket5684/laurent_polynomial_negpow.patch) by @wjp created at 2009-04-04 20:41:12",
     "created_at": "2009-04-04T20:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5684#issuecomment-44448",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [laurent_polynomial_negpow.patch](tarball://root/attachments/some-uuid/ticket5684/laurent_polynomial_negpow.patch) by wjp created at 2009-04-04 20:41:12
+Attachment [laurent_polynomial_negpow.patch](tarball://root/attachments/some-uuid/ticket5684/laurent_polynomial_negpow.patch) by @wjp created at 2009-04-04 20:41:12
 
 
 

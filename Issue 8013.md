@@ -14,7 +14,7 @@ archive/issues_008013.json:
     "title": "add libSingular interface to reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8013",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mvngu

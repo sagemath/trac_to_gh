@@ -14,7 +14,7 @@ archive/issues_004544.json:
     "title": "comparison of CDF (or any inexact) elements needs work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4544",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: jkantor
@@ -72,7 +72,7 @@ archive/issue_comments_034036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4544#issuecomment-34036",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_034037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4544#issuecomment-34037",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007315.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nFrom [ this thread]: \n\n```\nsage: var('m')\nm\nsage: var('n')\nn\nsage: assume(n, 'integer'); assume(m, 'integer')\nsage: sin(n*pi).simplify()\n0\nsage: sin(m*pi).simplify()\n0\nsage: forget()\nsage: sin(m*pi).simplify()\n0\nsage: sin(n*pi).simplify()\nsin(pi*n)\n```\n\nThe problem seems to lie in the last few lines of _forget_all in sage.symbolic.assumptions.py, where for some reason the loop isn't doing what it should.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7315\n\n",
+    "body": "Assignee: @burcin\n\nFrom [ this thread]: \n\n```\nsage: var('m')\nm\nsage: var('n')\nn\nsage: assume(n, 'integer'); assume(m, 'integer')\nsage: sin(n*pi).simplify()\n0\nsage: sin(m*pi).simplify()\n0\nsage: forget()\nsage: sin(m*pi).simplify()\n0\nsage: sin(n*pi).simplify()\nsin(pi*n)\n```\n\nThe problem seems to lie in the last few lines of _forget_all in sage.symbolic.assumptions.py, where for some reason the loop isn't doing what it should.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7315\n\n",
     "created_at": "2009-10-26T19:56:08Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_007315.json:
     "title": "Can only forget one GenericDeclaration at a time for some reason",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7315",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 From [ this thread]: 
 
@@ -56,7 +56,7 @@ archive/issue_comments_061125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7315#issuecomment-61125",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_061126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7315#issuecomment-61126",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -102,16 +102,16 @@ So this piece of code is apparently using the wrong/un-Pythonic way of removing 
 archive/issue_comments_061127.json:
 ```json
 {
-    "body": "Attachment [trac_7315-forget-all.patch](tarball://root/attachments/some-uuid/ticket7315/trac_7315-forget-all.patch) by kcrisman created at 2009-10-27 13:37:06\n\nBased on 4.2",
+    "body": "Attachment [trac_7315-forget-all.patch](tarball://root/attachments/some-uuid/ticket7315/trac_7315-forget-all.patch) by @kcrisman created at 2009-10-27 13:37:06\n\nBased on 4.2",
     "created_at": "2009-10-27T13:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7315#issuecomment-61127",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7315-forget-all.patch](tarball://root/attachments/some-uuid/ticket7315/trac_7315-forget-all.patch) by kcrisman created at 2009-10-27 13:37:06
+Attachment [trac_7315-forget-all.patch](tarball://root/attachments/some-uuid/ticket7315/trac_7315-forget-all.patch) by @kcrisman created at 2009-10-27 13:37:06
 
 Based on 4.2
 
@@ -127,7 +127,7 @@ archive/issue_comments_061128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7315#issuecomment-61128",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_061129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7315#issuecomment-61129",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_061130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7315#issuecomment-61130",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_061131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7315#issuecomment-61131",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_061132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7315#issuecomment-61132",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

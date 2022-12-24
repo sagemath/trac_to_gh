@@ -3,7 +3,7 @@
 archive/issues_000094.json:
 ```json
 {
-    "body": "Assignee: was\n\nDavid Harvey requested this.  There's all kinds of weird url encoding to\nget to the source, which I don't understand, so possibly we need to improve\nthe cgi-bin script.   \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/94\n\n",
+    "body": "Assignee: @williamstein\n\nDavid Harvey requested this.  There's all kinds of weird url encoding to\nget to the source, which I don't understand, so possibly we need to improve\nthe cgi-bin script.   \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/94\n\n",
     "created_at": "2006-09-28T17:45:41Z",
     "labels": [
         "user interface",
@@ -13,10 +13,10 @@ archive/issues_000094.json:
     "title": "mercurial -- need easy way to safely link directly to source browser",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/94",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 David Harvey requested this.  There's all kinds of weird url encoding to
 get to the source, which I don't understand, so possibly we need to improve
@@ -40,7 +40,7 @@ archive/issue_comments_000452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/94",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/94#issuecomment-452",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_000453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/94",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/94#issuecomment-453",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

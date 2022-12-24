@@ -3,7 +3,7 @@
 archive/issues_009264.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was jhpalmieri mpatel leif jsp jason vbraun jdemeyer\n\nThere are a number of tickets active at the minute with patches to ECL\n\n* #8808\n* #9187\n* #8951\n* #8089\n\nnone have been merged, but the patches are not consistent across all or them. \n\n* The option --with-dffi=no  from #8089 has not been been missed which is very important. \n* Some other less important changes (such as removing an inaccurate, but innocuous mention of building a 32-bit version) are removed. \n* There is a 10.4.1.p0 package, despite no 10.4.1 has actually been merged. \n\nThe aim of this ticket is to update to the 10.4.1 source code, whilst ensuring all the relevant patches are applied. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9264\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein @jhpalmieri @qed777 @nexttime @jaapspies @jasongrout @vbraun @jdemeyer\n\nThere are a number of tickets active at the minute with patches to ECL\n\n* #8808\n* #9187\n* #8951\n* #8089\n\nnone have been merged, but the patches are not consistent across all or them. \n\n* The option --with-dffi=no  from #8089 has not been been missed which is very important. \n* Some other less important changes (such as removing an inaccurate, but innocuous mention of building a 32-bit version) are removed. \n* There is a 10.4.1.p0 package, despite no 10.4.1 has actually been merged. \n\nThe aim of this ticket is to update to the 10.4.1 source code, whilst ensuring all the relevant patches are applied. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9264\n\n",
     "created_at": "2010-06-18T12:16:14Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_009264.json:
 ```
 Assignee: tbd
 
-CC:  was jhpalmieri mpatel leif jsp jason vbraun jdemeyer
+CC:  @williamstein @jhpalmieri @qed777 @nexttime @jaapspies @jasongrout @vbraun @jdemeyer
 
 There are a number of tickets active at the minute with patches to ECL
 
@@ -54,7 +54,7 @@ archive/issue_comments_087178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87178",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_087181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87181",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_087182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87182",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_087184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87184",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_087185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87185",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_087186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87186",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_087187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87187",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_087188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87188",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_087192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87192",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_087193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87193",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_087194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87194",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_087195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87195",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_087196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87196",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -585,7 +585,7 @@ archive/issue_comments_087197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87197",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -606,7 +606,7 @@ archive/issue_comments_087198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87198",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -624,7 +624,7 @@ archive/issue_comments_087199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87199",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -644,7 +644,7 @@ archive/issue_comments_087200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87200",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -665,7 +665,7 @@ archive/issue_comments_087201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9264#issuecomment-87201",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

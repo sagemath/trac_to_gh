@@ -3,7 +3,7 @@
 archive/issues_004326.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nDoc:\n- Use $F_4$ instead of F4 \n\nDynkinDiagram:\n- allow for slicing notation for column/row extraction: c[i,:]\n\nAmbientSpace:\n- fundamental coweights by appropriate scaling of the fundamental weights\n- embedding coweight lattice\n\nWeightLatticeRealization\n- scalar product with coweight lattice in finite dimension\n\nGeneric:\n- (signed) reduced word for a chamber/alcove\n\nClassical case:\n- reverse map to coroot space and coroot lattice by scalar product with the fundamental weights\n- => associated coroot\n- s_\\alpha on the (co)root and (co)weight lattice for any root \\alpha\n\nAffine case:\n- analogues whenever well defined \n- reduced words for translations elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4326\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nDoc:\n- Use $F_4$ instead of F4 \n\nDynkinDiagram:\n- allow for slicing notation for column/row extraction: c[i,:]\n\nAmbientSpace:\n- fundamental coweights by appropriate scaling of the fundamental weights\n- embedding coweight lattice\n\nWeightLatticeRealization\n- scalar product with coweight lattice in finite dimension\n\nGeneric:\n- (signed) reduced word for a chamber/alcove\n\nClassical case:\n- reverse map to coroot space and coroot lattice by scalar product with the fundamental weights\n- => associated coroot\n- s_\\alpha on the (co)root and (co)weight lattice for any root \\alpha\n\nAffine case:\n- analogues whenever well defined \n- reduced words for translations elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4326\n\n",
     "created_at": "2008-10-20T08:17:24Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_004326.json:
     "title": "Root systems improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4326",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -62,7 +62,7 @@ archive/issue_comments_031695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31695",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -75,16 +75,16 @@ Changing status from new to assigned.
 archive/issue_comments_031696.json:
 ```json
 {
-    "body": "Attachment [root_systems-4326-nt.patch](tarball://root/attachments/some-uuid/ticket4326/root_systems-4326-nt.patch) by nthiery created at 2009-06-11 05:48:44",
+    "body": "Attachment [root_systems-4326-nt.patch](tarball://root/attachments/some-uuid/ticket4326/root_systems-4326-nt.patch) by @nthiery created at 2009-06-11 05:48:44",
     "created_at": "2009-06-11T05:48:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31696",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [root_systems-4326-nt.patch](tarball://root/attachments/some-uuid/ticket4326/root_systems-4326-nt.patch) by nthiery created at 2009-06-11 05:48:44
+Attachment [root_systems-4326-nt.patch](tarball://root/attachments/some-uuid/ticket4326/root_systems-4326-nt.patch) by @nthiery created at 2009-06-11 05:48:44
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_031697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31697",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_031698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31698",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_031700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31700",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_031702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31702",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -264,16 +264,16 @@ Latest version of the patch from the Sage-Combinat patch server (no change since
 archive/issue_comments_031703.json:
 ```json
 {
-    "body": "Attachment [trac_4326-root_systems-nt.patch](tarball://root/attachments/some-uuid/ticket4326/trac_4326-root_systems-nt.patch) by nthiery created at 2009-11-10 14:50:18",
+    "body": "Attachment [trac_4326-root_systems-nt.patch](tarball://root/attachments/some-uuid/ticket4326/trac_4326-root_systems-nt.patch) by @nthiery created at 2009-11-10 14:50:18",
     "created_at": "2009-11-10T14:50:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31703",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_4326-root_systems-nt.patch](tarball://root/attachments/some-uuid/ticket4326/trac_4326-root_systems-nt.patch) by nthiery created at 2009-11-10 14:50:18
+Attachment [trac_4326-root_systems-nt.patch](tarball://root/attachments/some-uuid/ticket4326/trac_4326-root_systems-nt.patch) by @nthiery created at 2009-11-10 14:50:18
 
 
 
@@ -287,7 +287,7 @@ archive/issue_comments_031704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31704",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -300,16 +300,16 @@ Fix ClassicalWeylSubgroup and remove unneeded long time, as spotted by Mike
 archive/issue_comments_031705.json:
 ```json
 {
-    "body": "Attachment [trac_4326-root_systems-fix-nt.patch](tarball://root/attachments/some-uuid/ticket4326/trac_4326-root_systems-fix-nt.patch) by nthiery created at 2009-11-18 13:27:39",
+    "body": "Attachment [trac_4326-root_systems-fix-nt.patch](tarball://root/attachments/some-uuid/ticket4326/trac_4326-root_systems-fix-nt.patch) by @nthiery created at 2009-11-18 13:27:39",
     "created_at": "2009-11-18T13:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31705",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_4326-root_systems-fix-nt.patch](tarball://root/attachments/some-uuid/ticket4326/trac_4326-root_systems-fix-nt.patch) by nthiery created at 2009-11-18 13:27:39
+Attachment [trac_4326-root_systems-fix-nt.patch](tarball://root/attachments/some-uuid/ticket4326/trac_4326-root_systems-fix-nt.patch) by @nthiery created at 2009-11-18 13:27:39
 
 
 
@@ -323,7 +323,7 @@ archive/issue_comments_031706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31706",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_031707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31707",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_031708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31708",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_031709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31709",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_031710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4326#issuecomment-31710",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

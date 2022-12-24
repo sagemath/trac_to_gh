@@ -70,7 +70,7 @@ archive/issue_comments_019308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19308",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_019309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19309",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_019310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19310",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,16 +126,16 @@ That has to be fixed before this patch gets accepted.  Even javascript functions
 archive/issue_comments_019311.json:
 ```json
 {
-    "body": "Attachment [sage-2813.patch](tarball://root/attachments/some-uuid/ticket2813/sage-2813.patch) by was created at 2008-04-06 02:29:09\n\nthis should be applied after tom's first patch",
+    "body": "Attachment [sage-2813.patch](tarball://root/attachments/some-uuid/ticket2813/sage-2813.patch) by @williamstein created at 2008-04-06 02:29:09\n\nthis should be applied after tom's first patch",
     "created_at": "2008-04-06T02:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19311",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2813.patch](tarball://root/attachments/some-uuid/ticket2813/sage-2813.patch) by was created at 2008-04-06 02:29:09
+Attachment [sage-2813.patch](tarball://root/attachments/some-uuid/ticket2813/sage-2813.patch) by @williamstein created at 2008-04-06 02:29:09
 
 this should be applied after tom's first patch
 
@@ -146,16 +146,16 @@ this should be applied after tom's first patch
 archive/issue_comments_019312.json:
 ```json
 {
-    "body": "Attachment [sage-2813_part3.patch](tarball://root/attachments/some-uuid/ticket2813/sage-2813_part3.patch) by was created at 2008-04-06 03:58:23\n\nthis adds opera support, at least under os x.",
+    "body": "Attachment [sage-2813_part3.patch](tarball://root/attachments/some-uuid/ticket2813/sage-2813_part3.patch) by @williamstein created at 2008-04-06 03:58:23\n\nthis adds opera support, at least under os x.",
     "created_at": "2008-04-06T03:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19312",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2813_part3.patch](tarball://root/attachments/some-uuid/ticket2813/sage-2813_part3.patch) by was created at 2008-04-06 03:58:23
+Attachment [sage-2813_part3.patch](tarball://root/attachments/some-uuid/ticket2813/sage-2813_part3.patch) by @williamstein created at 2008-04-06 03:58:23
 
 this adds opera support, at least under os x.
 
@@ -189,7 +189,7 @@ archive/issue_comments_019314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19314",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_019315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19315",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

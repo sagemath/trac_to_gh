@@ -3,7 +3,7 @@
 archive/issues_004118.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThis patch fixes two things:\n\n1. In various places, we used something like `x.type() == 't_INT'` in Cython code, and with Pari already linked in. In this case, it's much faster to use `typ(x.g) == t_INT`. \n2. Several `_sig_on`s were missing, so I've gone through and added the ones I saw missing. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4118\n\n",
+    "body": "Assignee: @craigcitro\n\nThis patch fixes two things:\n\n1. In various places, we used something like `x.type() == 't_INT'` in Cython code, and with Pari already linked in. In this case, it's much faster to use `typ(x.g) == t_INT`. \n2. Several `_sig_on`s were missing, so I've gone through and added the ones I saw missing. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4118\n\n",
     "created_at": "2008-09-14T11:49:11Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004118.json:
     "title": "[with patch, needs review] fix various Pari-related issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4118",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 This patch fixes two things:
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4118
 archive/issue_comments_029817.json:
 ```json
 {
-    "body": "Attachment [trac-4118.patch](tarball://root/attachments/some-uuid/ticket4118/trac-4118.patch) by craigcitro created at 2008-09-14 11:49:45",
+    "body": "Attachment [trac-4118.patch](tarball://root/attachments/some-uuid/ticket4118/trac-4118.patch) by @craigcitro created at 2008-09-14 11:49:45",
     "created_at": "2008-09-14T11:49:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4118#issuecomment-29817",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4118.patch](tarball://root/attachments/some-uuid/ticket4118/trac-4118.patch) by craigcitro created at 2008-09-14 11:49:45
+Attachment [trac-4118.patch](tarball://root/attachments/some-uuid/ticket4118/trac-4118.patch) by @craigcitro created at 2008-09-14 11:49:45
 
 
 

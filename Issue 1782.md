@@ -3,7 +3,7 @@
 archive/issues_001782.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: test doctest multi polynomial ideal reporducible\n\nIn multi_polynomial_ideal.py, the doctests for\n\n* complete_primary_decomposition\n* groebner_basis\n* primary_decomposition\n\nwork under `sage -t` but do not work from the `sage:` prompt.  Presumably there is some singular initialization that is not being reproduced at the prompt?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1782\n\n",
+    "body": "Assignee: @malb\n\nKeywords: test doctest multi polynomial ideal reporducible\n\nIn multi_polynomial_ideal.py, the doctests for\n\n* complete_primary_decomposition\n* groebner_basis\n* primary_decomposition\n\nwork under `sage -t` but do not work from the `sage:` prompt.  Presumably there is some singular initialization that is not being reproduced at the prompt?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1782\n\n",
     "created_at": "2008-01-15T18:55:47Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001782.json:
     "title": "doctests for multi_polynomial_ideal.py not reproducible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1782",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: test doctest multi polynomial ideal reporducible
 
@@ -45,7 +45,7 @@ archive/issue_comments_011282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1782#issuecomment-11282",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_011283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1782#issuecomment-11283",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_011284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1782#issuecomment-11284",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_011285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1782#issuecomment-11285",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

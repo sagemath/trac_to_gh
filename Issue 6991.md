@@ -3,7 +3,7 @@
 archive/issues_006991.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  novoselt\n\nIn the nfacets method, for non-reflexive lattice polytopes this is computed from:\n\n```\nself._nfacets = len(self._facet_normals)\n```\n\nbut self._facet_normals is a matrix, which does not have a len method.  So I think this should instead be\n\n```\nself._nfacets = self._facet_normals.nrows()\n```\n\n\nA doctest should also be added for this case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6991\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nIn the nfacets method, for non-reflexive lattice polytopes this is computed from:\n\n```\nself._nfacets = len(self._facet_normals)\n```\n\nbut self._facet_normals is a matrix, which does not have a len method.  So I think this should instead be\n\n```\nself._nfacets = self._facet_normals.nrows()\n```\n\n\nA doctest should also be added for this case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6991\n\n",
     "created_at": "2009-09-22T18:45:43Z",
     "labels": [
         "geometry",
@@ -19,7 +19,7 @@ archive/issues_006991.json:
 ```
 Assignee: mhampton
 
-CC:  novoselt
+CC:  @novoselt
 
 In the nfacets method, for non-reflexive lattice polytopes this is computed from:
 
@@ -52,7 +52,7 @@ archive/issue_comments_057826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6991#issuecomment-57826",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_057829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6991#issuecomment-57829",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 

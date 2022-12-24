@@ -3,7 +3,7 @@
 archive/issues_004780.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: L.<b> = NumberField(K['y'](1))\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.pyc in NumberField(polynomial, name, check, names, cache, embedding)\n    374 \n    375     if isinstance(R, NumberField_generic):\n--> 376         S = R.extension(polynomial, name, check=check)\n    377         if cache:\n    378             _nf_cache[key] = weakref.ref(S)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.pyc in extension(self, poly, name, names, check, embedding)\n   2570         if name is None:\n   2571             raise TypeError, \"the variable name must be specified.\"\n-> 2572         return NumberField_relative(self, poly, str(name), check=check, embedding=embedding)\n   2573 \n   2574     def factor(self, n):\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.pyc in __init__(self, base, polynomial, name, latex_name, names, check, embedding)\n   4567 \n   4568         self.__pari_relative_polynomial = pari(str(polynomial_y))\n-> 4569         self.__rnf = self.__base_nf.rnfinit(self.__pari_relative_polynomial)\n   4570         \n   4571         self.__base_field = base\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:38578)()\n\nPariError: not a polynomial (38)\n> /Users/wstein/sage/build/sage-3.2.2.alpha0/gen.pyx(8050)sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:38578)()\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4780\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: K.<a> = NumberField(x^2 + 1)\nsage: L.<b> = NumberField(K['y'](1))\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.pyc in NumberField(polynomial, name, check, names, cache, embedding)\n    374 \n    375     if isinstance(R, NumberField_generic):\n--> 376         S = R.extension(polynomial, name, check=check)\n    377         if cache:\n    378             _nf_cache[key] = weakref.ref(S)\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.pyc in extension(self, poly, name, names, check, embedding)\n   2570         if name is None:\n   2571             raise TypeError, \"the variable name must be specified.\"\n-> 2572         return NumberField_relative(self, poly, str(name), check=check, embedding=embedding)\n   2573 \n   2574     def factor(self, n):\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.pyc in __init__(self, base, polynomial, name, latex_name, names, check, embedding)\n   4567 \n   4568         self.__pari_relative_polynomial = pari(str(polynomial_y))\n-> 4569         self.__rnf = self.__base_nf.rnfinit(self.__pari_relative_polynomial)\n   4570         \n   4571         self.__base_field = base\n\n/Users/wstein/sage/build/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:38578)()\n\nPariError: not a polynomial (38)\n> /Users/wstein/sage/build/sage-3.2.2.alpha0/gen.pyx(8050)sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:38578)()\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4780\n\n",
     "created_at": "2008-12-13T03:14:59Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004780.json:
     "title": "relative number field constructor -- error message when given poly of degree < 1 is bad",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4780",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -73,7 +73,7 @@ archive/issue_comments_036232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4780#issuecomment-36232",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -125,16 +125,16 @@ Comments?
 archive/issue_comments_036233.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T20:30:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4780#issuecomment-36233",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -148,7 +148,7 @@ archive/issue_comments_036234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4780#issuecomment-36234",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_036235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4780#issuecomment-36235",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_036236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4780#issuecomment-36236",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_036237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4780#issuecomment-36237",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_036238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4780#issuecomment-36238",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_036239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4780#issuecomment-36239",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

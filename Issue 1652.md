@@ -3,7 +3,7 @@
 archive/issues_001652.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nG4 has a loop: 2->4 and 4->2\n\n\n\n```\nG4 = DiGraph({1:[2,2,3,5], 2:[3,4], 3:[4], 4:[2,5,7], 5:[6]}, multiedges=True)\nG4_path.count()\n\nRuntimeError: maximum recursion depth exceeded\n```\n\n\n\nThere are related issues calulating *incoming_paths* and possibly more in *sage.combinat.graph_path*!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1652\n\n",
+    "body": "Assignee: @rlmill\n\nG4 has a loop: 2->4 and 4->2\n\n\n\n```\nG4 = DiGraph({1:[2,2,3,5], 2:[3,4], 3:[4], 4:[2,5,7], 5:[6]}, multiedges=True)\nG4_path.count()\n\nRuntimeError: maximum recursion depth exceeded\n```\n\n\n\nThere are related issues calulating *incoming_paths* and possibly more in *sage.combinat.graph_path*!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1652\n\n",
     "created_at": "2008-01-01T19:23:44Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_001652.json:
     "title": "length of DAGs with loops calculation runs infinite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1652",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 G4 has a loop: 2->4 and 4->2
 
@@ -50,7 +50,7 @@ archive/issue_comments_010515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1652#issuecomment-10515",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_010516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1652#issuecomment-10516",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_010517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1652#issuecomment-10517",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,16 +99,16 @@ Changing status from new to assigned.
 archive/issue_comments_010518.json:
 ```json
 {
-    "body": "Changing assignee from rlm to mhansen.",
+    "body": "Changing assignee from @rlmill to @mwhansen.",
     "created_at": "2008-01-19T19:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1652#issuecomment-10518",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from rlm to mhansen.
+Changing assignee from @rlmill to @mwhansen.
 
 
 
@@ -117,16 +117,16 @@ Changing assignee from rlm to mhansen.
 archive/issue_comments_010519.json:
 ```json
 {
-    "body": "Attachment [1652.patch](tarball://root/attachments/some-uuid/ticket1652/1652.patch) by mhansen created at 2008-01-20 00:41:12",
+    "body": "Attachment [1652.patch](tarball://root/attachments/some-uuid/ticket1652/1652.patch) by @mwhansen created at 2008-01-20 00:41:12",
     "created_at": "2008-01-20T00:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1652#issuecomment-10519",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1652.patch](tarball://root/attachments/some-uuid/ticket1652/1652.patch) by mhansen created at 2008-01-20 00:41:12
+Attachment [1652.patch](tarball://root/attachments/some-uuid/ticket1652/1652.patch) by @mwhansen created at 2008-01-20 00:41:12
 
 
 
@@ -140,7 +140,7 @@ archive/issue_comments_010520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1652#issuecomment-10520",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007849.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  wbhart jsp\n\nSun's recent compilers for Solaris (and I assume Linux too), ship with two standard C++ libraries:\n\nhttp://developers.sun.com/solaris/articles/cmp_stlport_libCstd.html\n\n* libCstd for backward compatibility with the old C+++ standard\n* libstlport for almost 100% compatibility with the latest C++ standard. (If Wikipedia is to be believe, there is no C++ compiler in existence which is 100% compatible). \n\nPolyBoRi will not build without the newer library. Since libraries can't be mixed and backward compatibility to a library released before Sage was released is not important. It therefore makes sensce to use the latest library on Solaris. That means adding the option\n\n\n```\n-library=stlport4.\n```\n\n\nto CXXFLAGS. \n\nSomething like the following show allow a 64-bit build of Sage (though many bits do not work yet). \n\n\n```\n$ export CC=/opt/sunstudio12.1/bin/cc\n$ export CXX=/opt/sunstudio12.1/bin/CC\n$ export CFLAGS=-m64\n$ export CXXFLAGS=-m64 \n$ export ABI=64\n$ configure --enable-cxx\n$ make\n$ make check\n```\n\n\nMPIR is one such package. Bill Hart suggested a fix:\n\n-----\nTry #including stddef.h and stdarg.h in gmp-h.in.\n\nProbably that won't be the end of the problems....\n\nBill Hart\n-----\nI will simply added this temporary fix to the stop of the file. It did fix the problem. but Bill notes it needs more extensive testing on other platforms. \n\nI'll probably add a patch in Sage, which only includes the fix for the Sun Studio compilers. There's nothing in that web page from Sun to indicate the problem is specific to Solaris (Sun also ships Sun Studio for Linux), so I'll **not** make it Solaris specific, but only Sun Studio specific. That's easy using the script \n\n\n```\n$SAGE_LOCAL/bin/testcxx.sh\n```\n\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/7849\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  wbhart @jaapspies\n\nSun's recent compilers for Solaris (and I assume Linux too), ship with two standard C++ libraries:\n\nhttp://developers.sun.com/solaris/articles/cmp_stlport_libCstd.html\n\n* libCstd for backward compatibility with the old C+++ standard\n* libstlport for almost 100% compatibility with the latest C++ standard. (If Wikipedia is to be believe, there is no C++ compiler in existence which is 100% compatible). \n\nPolyBoRi will not build without the newer library. Since libraries can't be mixed and backward compatibility to a library released before Sage was released is not important. It therefore makes sensce to use the latest library on Solaris. That means adding the option\n\n\n```\n-library=stlport4.\n```\n\n\nto CXXFLAGS. \n\nSomething like the following show allow a 64-bit build of Sage (though many bits do not work yet). \n\n\n```\n$ export CC=/opt/sunstudio12.1/bin/cc\n$ export CXX=/opt/sunstudio12.1/bin/CC\n$ export CFLAGS=-m64\n$ export CXXFLAGS=-m64 \n$ export ABI=64\n$ configure --enable-cxx\n$ make\n$ make check\n```\n\n\nMPIR is one such package. Bill Hart suggested a fix:\n\n-----\nTry #including stddef.h and stdarg.h in gmp-h.in.\n\nProbably that won't be the end of the problems....\n\nBill Hart\n-----\nI will simply added this temporary fix to the stop of the file. It did fix the problem. but Bill notes it needs more extensive testing on other platforms. \n\nI'll probably add a patch in Sage, which only includes the fix for the Sun Studio compilers. There's nothing in that web page from Sun to indicate the problem is specific to Solaris (Sun also ships Sun Studio for Linux), so I'll **not** make it Solaris specific, but only Sun Studio specific. That's easy using the script \n\n\n```\n$SAGE_LOCAL/bin/testcxx.sh\n```\n\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/7849\n\n",
     "created_at": "2010-01-05T13:39:03Z",
     "labels": [
         "porting",
@@ -19,7 +19,7 @@ archive/issues_007849.json:
 ```
 Assignee: drkirkby
 
-CC:  wbhart jsp
+CC:  wbhart @jaapspies
 
 Sun's recent compilers for Solaris (and I assume Linux too), ship with two standard C++ libraries:
 
@@ -247,7 +247,7 @@ archive/issue_comments_067989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7849#issuecomment-67989",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_067992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7849#issuecomment-67992",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_067993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7849#issuecomment-67993",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_067994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7849#issuecomment-67994",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

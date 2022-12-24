@@ -14,7 +14,7 @@ archive/issues_001902.json:
     "title": "mistake in the documentation for gens for Finite field givaro",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1902",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1902
 archive/issue_comments_012042.json:
 ```json
 {
-    "body": "Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket1902/8683.patch) by cremona created at 2008-03-01 16:31:24\n\nAttached patch corrects the docstring and adds a new doctest which is relevant,",
+    "body": "Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket1902/8683.patch) by @JohnCremona created at 2008-03-01 16:31:24\n\nAttached patch corrects the docstring and adds a new doctest which is relevant,",
     "created_at": "2008-03-01T16:31:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12042",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket1902/8683.patch) by cremona created at 2008-03-01 16:31:24
+Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket1902/8683.patch) by @JohnCremona created at 2008-03-01 16:31:24
 
 Attached patch corrects the docstring and adds a new doctest which is relevant,
 
@@ -70,7 +70,7 @@ archive/issue_comments_012043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12043",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -83,16 +83,16 @@ Changing status from new to assigned.
 archive/issue_comments_012044.json:
 ```json
 {
-    "body": "Changing assignee from somebody to cremona.",
+    "body": "Changing assignee from somebody to @JohnCremona.",
     "created_at": "2008-03-01T16:31:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12044",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Changing assignee from somebody to cremona.
+Changing assignee from somebody to @JohnCremona.
 
 
 

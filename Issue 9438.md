@@ -3,7 +3,7 @@
 archive/issues_009438.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: log finite field pari\n\nMotivated by a bug hunt for #2420, I found:\n\n```\nsage: R.<a, b> = QQ[]\nsage: b._pari_()\nb\nsage: GF(7)(5).log()\n5\nsage: b._pari_()\nMod(3, 7)\n```\n\n\nThe reason is that in the `log` method, the string\n\n```\n'b=Mod(%s,%s); if(znorder(b)!=eulerphi(%s),-1,znlog(%s,b))'%(b, self.__modulus.sageInteger,\n                                                                           self.__modulus.sageInteger, self)\n```\n\nis evaluated in `pari`, so that afterwards `pari('b')` isn't doing what it should.\n\nSince this bug is triggered whenever a GAP representation of a finite field element is created, I mark this ticket \"critical\". I hope \"basic arithmetic\" is the right component.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9438\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: log finite field pari\n\nMotivated by a bug hunt for #2420, I found:\n\n```\nsage: R.<a, b> = QQ[]\nsage: b._pari_()\nb\nsage: GF(7)(5).log()\n5\nsage: b._pari_()\nMod(3, 7)\n```\n\n\nThe reason is that in the `log` method, the string\n\n```\n'b=Mod(%s,%s); if(znorder(b)!=eulerphi(%s),-1,znlog(%s,b))'%(b, self.__modulus.sageInteger,\n                                                                           self.__modulus.sageInteger, self)\n```\n\nis evaluated in `pari`, so that afterwards `pari('b')` isn't doing what it should.\n\nSince this bug is triggered whenever a GAP representation of a finite field element is created, I mark this ticket \"critical\". I hope \"basic arithmetic\" is the right component.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9438\n\n",
     "created_at": "2010-07-06T15:34:02Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_009438.json:
     "title": "IntegerMod_int.log has side-effect in Pari",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9438",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: log finite field pari
 
@@ -61,7 +61,7 @@ archive/issue_comments_090354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9438#issuecomment-90354",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_090355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9438#issuecomment-90355",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_090356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9438#issuecomment-90356",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_090357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9438#issuecomment-90357",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -134,16 +134,16 @@ David
 archive/issue_comments_090358.json:
 ```json
 {
-    "body": "Attachment [trac_9438_IntegerMod_log_vs_PARI.patch](tarball://root/attachments/some-uuid/ticket9438/trac_9438_IntegerMod_log_vs_PARI.patch) by SimonKing created at 2010-07-07 11:48:43\n\nFixes a side effect of log on PARI",
+    "body": "Attachment [trac_9438_IntegerMod_log_vs_PARI.patch](tarball://root/attachments/some-uuid/ticket9438/trac_9438_IntegerMod_log_vs_PARI.patch) by @simon-king-jena created at 2010-07-07 11:48:43\n\nFixes a side effect of log on PARI",
     "created_at": "2010-07-07T11:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9438#issuecomment-90358",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac_9438_IntegerMod_log_vs_PARI.patch](tarball://root/attachments/some-uuid/ticket9438/trac_9438_IntegerMod_log_vs_PARI.patch) by SimonKing created at 2010-07-07 11:48:43
+Attachment [trac_9438_IntegerMod_log_vs_PARI.patch](tarball://root/attachments/some-uuid/ticket9438/trac_9438_IntegerMod_log_vs_PARI.patch) by @simon-king-jena created at 2010-07-07 11:48:43
 
 Fixes a side effect of log on PARI
 
@@ -159,7 +159,7 @@ archive/issue_comments_090359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9438#issuecomment-90359",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_090360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9438#issuecomment-90360",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_090361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9438",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9438#issuecomment-90361",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

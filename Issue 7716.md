@@ -14,7 +14,7 @@ archive/issues_007716.json:
     "title": "sage -coverage enhancement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7716",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 Assignee: mvngu
@@ -49,7 +49,7 @@ archive/issue_comments_066266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66266",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_066267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66267",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_066268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66268",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_066269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66269",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_066270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66270",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_066271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66271",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -175,16 +175,16 @@ Changes behavior for functions with underscores beginning and ending the name.  
 archive/issue_comments_066272.json:
 ```json
 {
-    "body": "Attachment [7716_underscores.patch](tarball://root/attachments/some-uuid/ticket7716/7716_underscores.patch) by was created at 2009-12-24 07:05:01\n\nI'm declaring a total feature freeze on sage-4.3.",
+    "body": "Attachment [7716_underscores.patch](tarball://root/attachments/some-uuid/ticket7716/7716_underscores.patch) by @williamstein created at 2009-12-24 07:05:01\n\nI'm declaring a total feature freeze on sage-4.3.",
     "created_at": "2009-12-24T07:05:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66272",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [7716_underscores.patch](tarball://root/attachments/some-uuid/ticket7716/7716_underscores.patch) by was created at 2009-12-24 07:05:01
+Attachment [7716_underscores.patch](tarball://root/attachments/some-uuid/ticket7716/7716_underscores.patch) by @williamstein created at 2009-12-24 07:05:01
 
 I'm declaring a total feature freeze on sage-4.3.
 
@@ -200,7 +200,7 @@ archive/issue_comments_066273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66273",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_066274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66274",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -295,16 +295,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_066275.json:
 ```json
 {
-    "body": "Attachment [7716_coverage.patch](tarball://root/attachments/some-uuid/ticket7716/7716_coverage.patch) by roed created at 2010-01-01 00:34:20\n\nYeah, I don't know what that was.  Here's a new patch (against 4.3.rc0) that gets rid of the weird double header problem.  7716_coverage.patch should be applied first, then 7716_underscores.patch\n\nIt doesn't need to be rebased against 4.3, since there are no changes to sage-coverage or sage-coverageall since 4.3.rc0.  William, are you up for reviewing this now that it should apply?",
+    "body": "Attachment [7716_coverage.patch](tarball://root/attachments/some-uuid/ticket7716/7716_coverage.patch) by @roed314 created at 2010-01-01 00:34:20\n\nYeah, I don't know what that was.  Here's a new patch (against 4.3.rc0) that gets rid of the weird double header problem.  7716_coverage.patch should be applied first, then 7716_underscores.patch\n\nIt doesn't need to be rebased against 4.3, since there are no changes to sage-coverage or sage-coverageall since 4.3.rc0.  William, are you up for reviewing this now that it should apply?",
     "created_at": "2010-01-01T00:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66275",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7716_coverage.patch](tarball://root/attachments/some-uuid/ticket7716/7716_coverage.patch) by roed created at 2010-01-01 00:34:20
+Attachment [7716_coverage.patch](tarball://root/attachments/some-uuid/ticket7716/7716_coverage.patch) by @roed314 created at 2010-01-01 00:34:20
 
 Yeah, I don't know what that was.  Here's a new patch (against 4.3.rc0) that gets rid of the weird double header problem.  7716_coverage.patch should be applied first, then 7716_underscores.patch
 
@@ -322,7 +322,7 @@ archive/issue_comments_066276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66276",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_066277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66277",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -367,16 +367,16 @@ I'm attaching a "diff" which makes these changes.  I haven't looked at the rest 
 archive/issue_comments_066278.json:
 ```json
 {
-    "body": "Attachment [trac_7716-ref.patch](tarball://root/attachments/some-uuid/ticket7716/trac_7716-ref.patch) by jhpalmieri created at 2011-10-13 16:59:40\n\napply on top of other patches",
+    "body": "Attachment [trac_7716-ref.patch](tarball://root/attachments/some-uuid/ticket7716/trac_7716-ref.patch) by @jhpalmieri created at 2011-10-13 16:59:40\n\napply on top of other patches",
     "created_at": "2011-10-13T16:59:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66278",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7716-ref.patch](tarball://root/attachments/some-uuid/ticket7716/trac_7716-ref.patch) by jhpalmieri created at 2011-10-13 16:59:40
+Attachment [trac_7716-ref.patch](tarball://root/attachments/some-uuid/ticket7716/trac_7716-ref.patch) by @jhpalmieri created at 2011-10-13 16:59:40
 
 apply on top of other patches
 
@@ -392,7 +392,7 @@ archive/issue_comments_066279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66279",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_066280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66280",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_066281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66281",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_066282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7716#issuecomment-66282",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003759.json:
     "title": "make testlong leaves all kinds of crap in SAGE_ROOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3759",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -56,7 +56,7 @@ archive/issue_comments_026698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3759#issuecomment-26698",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -69,16 +69,16 @@ This should remove one of the files...
 archive/issue_comments_026699.json:
 ```json
 {
-    "body": "Attachment [trac_3759-no_more_isogeny_graph.png.patch](tarball://root/attachments/some-uuid/ticket3759/trac_3759-no_more_isogeny_graph.png.patch) by rlm created at 2008-08-13 07:59:52",
+    "body": "Attachment [trac_3759-no_more_isogeny_graph.png.patch](tarball://root/attachments/some-uuid/ticket3759/trac_3759-no_more_isogeny_graph.png.patch) by @rlmill created at 2008-08-13 07:59:52",
     "created_at": "2008-08-13T07:59:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3759#issuecomment-26699",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3759-no_more_isogeny_graph.png.patch](tarball://root/attachments/some-uuid/ticket3759/trac_3759-no_more_isogeny_graph.png.patch) by rlm created at 2008-08-13 07:59:52
+Attachment [trac_3759-no_more_isogeny_graph.png.patch](tarball://root/attachments/some-uuid/ticket3759/trac_3759-no_more_isogeny_graph.png.patch) by @rlmill created at 2008-08-13 07:59:52
 
 
 
@@ -87,16 +87,16 @@ Attachment [trac_3759-no_more_isogeny_graph.png.patch](tarball://root/attachment
 archive/issue_comments_026700.json:
 ```json
 {
-    "body": "Attachment [trac_3759-no_more_a.png.patch](tarball://root/attachments/some-uuid/ticket3759/trac_3759-no_more_a.png.patch) by rlm created at 2008-08-13 08:32:39",
+    "body": "Attachment [trac_3759-no_more_a.png.patch](tarball://root/attachments/some-uuid/ticket3759/trac_3759-no_more_a.png.patch) by @rlmill created at 2008-08-13 08:32:39",
     "created_at": "2008-08-13T08:32:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3759#issuecomment-26700",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3759-no_more_a.png.patch](tarball://root/attachments/some-uuid/ticket3759/trac_3759-no_more_a.png.patch) by rlm created at 2008-08-13 08:32:39
+Attachment [trac_3759-no_more_a.png.patch](tarball://root/attachments/some-uuid/ticket3759/trac_3759-no_more_a.png.patch) by @rlmill created at 2008-08-13 08:32:39
 
 
 
@@ -105,16 +105,16 @@ Attachment [trac_3759-no_more_a.png.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_026701.json:
 ```json
 {
-    "body": "Attachment [trac_3759-no_more_sage.eps.patch](tarball://root/attachments/some-uuid/ticket3759/trac_3759-no_more_sage.eps.patch) by rlm created at 2008-08-13 08:32:56",
+    "body": "Attachment [trac_3759-no_more_sage.eps.patch](tarball://root/attachments/some-uuid/ticket3759/trac_3759-no_more_sage.eps.patch) by @rlmill created at 2008-08-13 08:32:56",
     "created_at": "2008-08-13T08:32:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3759#issuecomment-26701",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3759-no_more_sage.eps.patch](tarball://root/attachments/some-uuid/ticket3759/trac_3759-no_more_sage.eps.patch) by rlm created at 2008-08-13 08:32:56
+Attachment [trac_3759-no_more_sage.eps.patch](tarball://root/attachments/some-uuid/ticket3759/trac_3759-no_more_sage.eps.patch) by @rlmill created at 2008-08-13 08:32:56
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_026702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3759#issuecomment-26702",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_026703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3759#issuecomment-26703",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_026704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3759#issuecomment-26704",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

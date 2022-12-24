@@ -14,7 +14,7 @@ archive/issues_004001.json:
     "title": "[with patch, needs review] ZZ['x'].gen()^(2^20) should work but doesn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4001",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4001
 archive/issue_comments_028894.json:
 ```json
 {
-    "body": "Attachment [4001_flint_gen_power.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.patch) by malb created at 2008-08-30 12:37:52",
+    "body": "Attachment [4001_flint_gen_power.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.patch) by @malb created at 2008-08-30 12:37:52",
     "created_at": "2008-08-30T12:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4001#issuecomment-28894",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [4001_flint_gen_power.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.patch) by malb created at 2008-08-30 12:37:52
+Attachment [4001_flint_gen_power.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.patch) by @malb created at 2008-08-30 12:37:52
 
 
 
@@ -72,7 +72,7 @@ archive/issue_comments_028895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4001#issuecomment-28895",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_028896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4001#issuecomment-28896",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -110,16 +110,16 @@ Wow, I even doctested the wrong behavior. No clue, how I managed to miss that. S
 archive/issue_comments_028897.json:
 ```json
 {
-    "body": "Attachment [4001_flint_gen_power.2.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.2.patch) by malb created at 2008-08-30 16:22:09\n\nActually, It was only a copy'n'paste error in the doctest, the actual implementation was fine. I was just too lazy to run the doctest afterwards, that should teach me.",
+    "body": "Attachment [4001_flint_gen_power.2.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.2.patch) by @malb created at 2008-08-30 16:22:09\n\nActually, It was only a copy'n'paste error in the doctest, the actual implementation was fine. I was just too lazy to run the doctest afterwards, that should teach me.",
     "created_at": "2008-08-30T16:22:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4001#issuecomment-28897",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [4001_flint_gen_power.2.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.2.patch) by malb created at 2008-08-30 16:22:09
+Attachment [4001_flint_gen_power.2.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.2.patch) by @malb created at 2008-08-30 16:22:09
 
 Actually, It was only a copy'n'paste error in the doctest, the actual implementation was fine. I was just too lazy to run the doctest afterwards, that should teach me.
 
@@ -135,7 +135,7 @@ archive/issue_comments_028898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4001#issuecomment-28898",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -165,16 +165,16 @@ Does that mean that your new special code should have _sig_on, _sig_off?
 archive/issue_comments_028899.json:
 ```json
 {
-    "body": "Attachment [4001_flint_gen_power.3.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.3.patch) by malb created at 2008-08-30 16:49:50\n\nReplying to [comment:4 cremona]:\n> Does that mean that your new special code should have _sig_on, _sig_off?\n\nYes, I've just updated the patch. I'm not going to write a doctest for this, since it unnecessarily slows down the user's computer by filling up his/her RAM ... on a related note: Incredible in how many ways I can screw up such a short patch.",
+    "body": "Attachment [4001_flint_gen_power.3.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.3.patch) by @malb created at 2008-08-30 16:49:50\n\nReplying to [comment:4 cremona]:\n> Does that mean that your new special code should have _sig_on, _sig_off?\n\nYes, I've just updated the patch. I'm not going to write a doctest for this, since it unnecessarily slows down the user's computer by filling up his/her RAM ... on a related note: Incredible in how many ways I can screw up such a short patch.",
     "created_at": "2008-08-30T16:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4001#issuecomment-28899",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [4001_flint_gen_power.3.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.3.patch) by malb created at 2008-08-30 16:49:50
+Attachment [4001_flint_gen_power.3.patch](tarball://root/attachments/some-uuid/ticket4001/4001_flint_gen_power.3.patch) by @malb created at 2008-08-30 16:49:50
 
 Replying to [comment:4 cremona]:
 > Does that mean that your new special code should have _sig_on, _sig_off?
@@ -193,7 +193,7 @@ archive/issue_comments_028900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4001#issuecomment-28900",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

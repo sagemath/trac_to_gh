@@ -3,7 +3,7 @@
 archive/issues_009724.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  schilly\n\nKeywords: variable empty name\n\nSage allows you to create a variable with an empty name.  While this at first appears not to cause any problems, one thing it does break is reset():\n\n```\nsage: var(' ')\n(, )\nsage: whos\nVariable   Type          Data/Info\n----------------------------------\n           Expression    \nsage: reset()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (437, 0))\n\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/all_cmdline.pyc in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/misc/reset.so in sage.misc.reset.reset (sage/misc/reset.c:838)()\n\nIndexError: string index out of range\nsage: del globals()['']\nsage: reset()\n```\n\nSage also allows the creation of variables with other illegal names (e.g. '1a' or '1'), but for these at least reset() still works.  There are two ways to fix this, the first is to disallow the creation of such variables via var(), but then all illegal cases would have to be taken care of, and it wouldn't help if you created illegal variables manually by inserting them into globals() (but I would argue that if you do this, you're on your own anyway).  The second way to fix the behaviour above would be to make reset() able to delete empty variables too.  This however is only viable if these variables don't break anything else, other than the case mentioned above.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9724\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @haraldschilly\n\nKeywords: variable empty name\n\nSage allows you to create a variable with an empty name.  While this at first appears not to cause any problems, one thing it does break is reset():\n\n```\nsage: var(' ')\n(, )\nsage: whos\nVariable   Type          Data/Info\n----------------------------------\n           Expression    \nsage: reset()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (437, 0))\n\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/all_cmdline.pyc in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/misc/reset.so in sage.misc.reset.reset (sage/misc/reset.c:838)()\n\nIndexError: string index out of range\nsage: del globals()['']\nsage: reset()\n```\n\nSage also allows the creation of variables with other illegal names (e.g. '1a' or '1'), but for these at least reset() still works.  There are two ways to fix this, the first is to disallow the creation of such variables via var(), but then all illegal cases would have to be taken care of, and it wouldn't help if you created illegal variables manually by inserting them into globals() (but I would argue that if you do this, you're on your own anyway).  The second way to fix the behaviour above would be to make reset() able to delete empty variables too.  This however is only viable if these variables don't break anything else, other than the case mentioned above.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9724\n\n",
     "created_at": "2010-08-11T09:47:33Z",
     "labels": [
         "symbolics",
@@ -17,9 +17,9 @@ archive/issues_009724.json:
     "user": "logix"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  schilly
+CC:  @haraldschilly
 
 Keywords: variable empty name
 
@@ -67,7 +67,7 @@ archive/issue_comments_094996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9724#issuecomment-94996",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_094997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9724#issuecomment-94997",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_094998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9724#issuecomment-94998",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_094999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9724#issuecomment-94999",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_095000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9724#issuecomment-95000",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_095001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9724#issuecomment-95001",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_095002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9724#issuecomment-95002",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_095003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9724#issuecomment-95003",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_095004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9724#issuecomment-95004",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

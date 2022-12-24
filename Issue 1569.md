@@ -3,7 +3,7 @@
 archive/issues_001569.json:
 ```json
 {
-    "body": "Assignee: was\n\nAs reported by Brandon Barker at http://groups.google.com/group/sage-devel/browse_thread/thread/52683f508ccefb39#:\n\n```\nsage: solve([3==3, 1.00000000000000*x^3 == 0], x)\n[]\nsage: solve([1.00000000000000*x^3 == 0], x)\n[x == 0]\nsage: solve([1==3, 1.00000000000000*x^3 == 0], x)\n[]\n```\n\n\nThe first result is wrong; it should be the same as the second.\n\nNote that \"3==3\" will immediately evaluate to a Python boolean True; probably solve() should just strip list elements that are True.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1569\n\n",
+    "body": "Assignee: @williamstein\n\nAs reported by Brandon Barker at http://groups.google.com/group/sage-devel/browse_thread/thread/52683f508ccefb39#:\n\n```\nsage: solve([3==3, 1.00000000000000*x^3 == 0], x)\n[]\nsage: solve([1.00000000000000*x^3 == 0], x)\n[x == 0]\nsage: solve([1==3, 1.00000000000000*x^3 == 0], x)\n[]\n```\n\n\nThe first result is wrong; it should be the same as the second.\n\nNote that \"3==3\" will immediately evaluate to a Python boolean True; probably solve() should just strip list elements that are True.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1569\n\n",
     "created_at": "2007-12-19T18:45:46Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001569.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 As reported by Brandon Barker at http://groups.google.com/group/sage-devel/browse_thread/thread/52683f508ccefb39#:
 
@@ -51,7 +51,7 @@ archive/issue_comments_009995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1569#issuecomment-9995",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -64,16 +64,16 @@ Changing status from new to assigned.
 archive/issue_comments_009996.json:
 ```json
 {
-    "body": "Attachment [trac-1569.patch](tarball://root/attachments/some-uuid/ticket1569/trac-1569.patch) by was created at 2007-12-20 20:18:12",
+    "body": "Attachment [trac-1569.patch](tarball://root/attachments/some-uuid/ticket1569/trac-1569.patch) by @williamstein created at 2007-12-20 20:18:12",
     "created_at": "2007-12-20T20:18:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1569#issuecomment-9996",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1569.patch](tarball://root/attachments/some-uuid/ticket1569/trac-1569.patch) by was created at 2007-12-20 20:18:12
+Attachment [trac-1569.patch](tarball://root/attachments/some-uuid/ticket1569/trac-1569.patch) by @williamstein created at 2007-12-20 20:18:12
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_009997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1569#issuecomment-9997",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_009998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1569#issuecomment-9998",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

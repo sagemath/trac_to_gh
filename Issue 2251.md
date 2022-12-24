@@ -3,7 +3,7 @@
 archive/issues_002251.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\n\n```\nsage -t -long devel/sage-main/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"number_field.py\", line 2619:\n    sage: [Plist[i]==K.ideal(pilist[i]) for i in range(len(Plist))]\nExpected:\n    [True, False, False]\nGot:\n    [True, False, True]\n**********************************************************************\n1 items had failures:\n   1 of  13 in __main__.example_78\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_number_field.py\n         [20.4 s]\nexit code: 256\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2251\n\n",
+    "body": "Assignee: @craigcitro\n\n\n```\nsage -t -long devel/sage-main/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"number_field.py\", line 2619:\n    sage: [Plist[i]==K.ideal(pilist[i]) for i in range(len(Plist))]\nExpected:\n    [True, False, False]\nGot:\n    [True, False, True]\n**********************************************************************\n1 items had failures:\n   1 of  13 in __main__.example_78\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_number_field.py\n         [20.4 s]\nexit code: 256\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2251\n\n",
     "created_at": "2008-02-21T19:32:46Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_002251.json:
     "user": "mabshoff"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 
 ```
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2251
 archive/issue_comments_014913.json:
 ```json
 {
-    "body": "Attachment [trac-2252.patch](tarball://root/attachments/some-uuid/ticket2251/trac-2252.patch) by craigcitro created at 2008-02-21 23:13:49\n\nFixes the doctest to the answer that sage was producing, which is correct. (One can check it within sage, i.e. it's easy to check that the two ideals are equal to one another, and I even double-checked in Pari to make sure we weren't missing something in moving the answer from Pari to Sage.)",
+    "body": "Attachment [trac-2252.patch](tarball://root/attachments/some-uuid/ticket2251/trac-2252.patch) by @craigcitro created at 2008-02-21 23:13:49\n\nFixes the doctest to the answer that sage was producing, which is correct. (One can check it within sage, i.e. it's easy to check that the two ideals are equal to one another, and I even double-checked in Pari to make sure we weren't missing something in moving the answer from Pari to Sage.)",
     "created_at": "2008-02-21T23:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2251#issuecomment-14913",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2252.patch](tarball://root/attachments/some-uuid/ticket2251/trac-2252.patch) by craigcitro created at 2008-02-21 23:13:49
+Attachment [trac-2252.patch](tarball://root/attachments/some-uuid/ticket2251/trac-2252.patch) by @craigcitro created at 2008-02-21 23:13:49
 
 Fixes the doctest to the answer that sage was producing, which is correct. (One can check it within sage, i.e. it's easy to check that the two ideals are equal to one another, and I even double-checked in Pari to make sure we weren't missing something in moving the answer from Pari to Sage.)
 
@@ -75,7 +75,7 @@ archive/issue_comments_014914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2251#issuecomment-14914",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_014915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2251#issuecomment-14915",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008896.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jason\n\nIn Sage 0.0 and 0.00000000000000000000000000000000000000 should not denote the same thing, though sadly they do.  Note, however, that 1.0 and 1.00000000000000000000000000000000000000 are different in Sage (as I expect):\n\n```\nsage: 0.0\n0.000000000000000\nsage: 0.00000000000000000000000000000000000000\n0.000000000000000\nsage: parent(0.00000000000000000000000000000000000000)\nReal Field with 53 bits of precision\nsage: 1.00000000000000000000000000000000000000\n1.0000000000000000000000000000000000000\nsage: 1.0\n1.00000000000000\nsage: parent(1.00000000000000000000000000000000000000)\nReal Field with 130 bits of precision\nsage: parent(1.0)\nReal Field with 53 bits of precision\n```\n\nI consider the above inconsistency a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8896\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jasongrout\n\nIn Sage 0.0 and 0.00000000000000000000000000000000000000 should not denote the same thing, though sadly they do.  Note, however, that 1.0 and 1.00000000000000000000000000000000000000 are different in Sage (as I expect):\n\n```\nsage: 0.0\n0.000000000000000\nsage: 0.00000000000000000000000000000000000000\n0.000000000000000\nsage: parent(0.00000000000000000000000000000000000000)\nReal Field with 53 bits of precision\nsage: 1.00000000000000000000000000000000000000\n1.0000000000000000000000000000000000000\nsage: 1.0\n1.00000000000000\nsage: parent(1.00000000000000000000000000000000000000)\nReal Field with 130 bits of precision\nsage: parent(1.0)\nReal Field with 53 bits of precision\n```\n\nI consider the above inconsistency a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8896\n\n",
     "created_at": "2010-05-05T20:17:53Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_008896.json:
     "title": "0.0000000000000000000000000000 is parsed completely differently than 1.0000000000000000000000000000 for no good reason",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8896",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jason
+CC:  @jasongrout
 
 In Sage 0.0 and 0.00000000000000000000000000000000000000 should not denote the same thing, though sadly they do.  Note, however, that 1.0 and 1.00000000000000000000000000000000000000 are different in Sage (as I expect):
 
@@ -58,7 +58,7 @@ archive/issue_comments_081787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81787",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_081788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81788",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -91,16 +91,16 @@ Nice how trac interprets long decimal fractions of floats. :D
 archive/issue_comments_081789.json:
 ```json
 {
-    "body": "Attachment [8896-highprec-zero.patch](tarball://root/attachments/some-uuid/ticket8896/8896-highprec-zero.patch) by robertwb created at 2010-05-15 22:36:34",
+    "body": "Attachment [8896-highprec-zero.patch](tarball://root/attachments/some-uuid/ticket8896/8896-highprec-zero.patch) by @robertwb created at 2010-05-15 22:36:34",
     "created_at": "2010-05-15T22:36:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81789",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8896-highprec-zero.patch](tarball://root/attachments/some-uuid/ticket8896/8896-highprec-zero.patch) by robertwb created at 2010-05-15 22:36:34
+Attachment [8896-highprec-zero.patch](tarball://root/attachments/some-uuid/ticket8896/8896-highprec-zero.patch) by @robertwb created at 2010-05-15 22:36:34
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_081790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81790",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_081791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81791",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_081792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81792",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_081793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81793",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_081794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81794",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_081795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81795",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_081796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81796",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_081797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81797",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -295,16 +295,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081798.json:
 ```json
 {
-    "body": "Attachment [8896-part2.patch](tarball://root/attachments/some-uuid/ticket8896/8896-part2.patch) by robertwb created at 2010-05-27 18:51:01\n\nReplying to [comment:6 leif]:\n> No, the `else` belongs to the `for` statement.\n\nExactly. \n\n> But currently, *leading* zeros contribute to the precision, too: :)\n> {{{\n> sage: RealNumber(0.000000000000000000).prec()\n> 67\n> sage: RealNumber(00.000000000000000000).prec()\n> 70\n> sage: RealNumber(.000000000000000000).prec()\n> 64\n> }}}\n> I'm not sure if this is intentional, it's at least uncommon.\n\nThat's the point of this ticket. For 0, all zeros are leading. \n\n> (And a leading `+` also increases the precision.)\n> \n> It looks as if a decimal point is counted as a significant digit.\n\nGood catch, fixed. That required some adjustment to keep the input/str in sync. \n\n> And, sorry, the code is extremely ugly (not due to the patch) and inefficient.\n> Examples and parameter description can be improved as well.\n> \n> I'm not quite sure what kind of strings actually get in (i.e., where/if illegal syntax is catched, it seems all is left to `RealNumber._set()` if not already handled by the parser), this should perhaps be documented, too. \n\nUpdated the docstring a bit. This is mostly for use by the preparser, though of course it gets used directly as well.",
+    "body": "Attachment [8896-part2.patch](tarball://root/attachments/some-uuid/ticket8896/8896-part2.patch) by @robertwb created at 2010-05-27 18:51:01\n\nReplying to [comment:6 leif]:\n> No, the `else` belongs to the `for` statement.\n\nExactly. \n\n> But currently, *leading* zeros contribute to the precision, too: :)\n> {{{\n> sage: RealNumber(0.000000000000000000).prec()\n> 67\n> sage: RealNumber(00.000000000000000000).prec()\n> 70\n> sage: RealNumber(.000000000000000000).prec()\n> 64\n> }}}\n> I'm not sure if this is intentional, it's at least uncommon.\n\nThat's the point of this ticket. For 0, all zeros are leading. \n\n> (And a leading `+` also increases the precision.)\n> \n> It looks as if a decimal point is counted as a significant digit.\n\nGood catch, fixed. That required some adjustment to keep the input/str in sync. \n\n> And, sorry, the code is extremely ugly (not due to the patch) and inefficient.\n> Examples and parameter description can be improved as well.\n> \n> I'm not quite sure what kind of strings actually get in (i.e., where/if illegal syntax is catched, it seems all is left to `RealNumber._set()` if not already handled by the parser), this should perhaps be documented, too. \n\nUpdated the docstring a bit. This is mostly for use by the preparser, though of course it gets used directly as well.",
     "created_at": "2010-05-27T18:51:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81798",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8896-part2.patch](tarball://root/attachments/some-uuid/ticket8896/8896-part2.patch) by robertwb created at 2010-05-27 18:51:01
+Attachment [8896-part2.patch](tarball://root/attachments/some-uuid/ticket8896/8896-part2.patch) by @robertwb created at 2010-05-27 18:51:01
 
 Replying to [comment:6 leif]:
 > No, the `else` belongs to the `for` statement.
@@ -349,7 +349,7 @@ archive/issue_comments_081799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81799",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_081800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81800",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_081801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81801",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_081802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81802",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -463,7 +463,7 @@ archive/issue_comments_081803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81803",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_081804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81804",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_081805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81805",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_081806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81806",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -557,7 +557,7 @@ archive/issue_comments_081807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81807",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -606,7 +606,7 @@ archive/issue_comments_081808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81808",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -637,7 +637,7 @@ archive/issue_comments_081809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81809",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -656,16 +656,16 @@ Of course it's pretty ok to return `RR` in that case, too. (If someone really wa
 archive/issue_comments_081810.json:
 ```json
 {
-    "body": "Attachment [8896-doctests.patch](tarball://root/attachments/some-uuid/ticket8896/8896-doctests.patch) by robertwb created at 2011-01-26 06:44:11\n\nDoctest fixes for 4.6.1.",
+    "body": "Attachment [8896-doctests.patch](tarball://root/attachments/some-uuid/ticket8896/8896-doctests.patch) by @robertwb created at 2011-01-26 06:44:11\n\nDoctest fixes for 4.6.1.",
     "created_at": "2011-01-26T06:44:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81810",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8896-doctests.patch](tarball://root/attachments/some-uuid/ticket8896/8896-doctests.patch) by robertwb created at 2011-01-26 06:44:11
+Attachment [8896-doctests.patch](tarball://root/attachments/some-uuid/ticket8896/8896-doctests.patch) by @robertwb created at 2011-01-26 06:44:11
 
 Doctest fixes for 4.6.1.
 
@@ -681,7 +681,7 @@ archive/issue_comments_081811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81811",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -737,7 +737,7 @@ archive/issue_comments_081814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81814",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -755,7 +755,7 @@ archive/issue_comments_081815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81815",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -773,7 +773,7 @@ archive/issue_comments_081816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81816",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -811,7 +811,7 @@ archive/issue_comments_081817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81817",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -854,7 +854,7 @@ archive/issue_comments_081818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81818",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -893,7 +893,7 @@ archive/issue_comments_081819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81819",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -940,7 +940,7 @@ archive/issue_comments_081820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81820",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -992,7 +992,7 @@ archive/issue_comments_081821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81821",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1012,7 +1012,7 @@ archive/issue_comments_081822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8896#issuecomment-81822",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

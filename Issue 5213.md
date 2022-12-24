@@ -3,7 +3,7 @@
 archive/issues_005213.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: number field element minpoly charpoly\n\nSage computes charpoly's of large matrices *much* faster than Pari does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5213\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: number field element minpoly charpoly\n\nSage computes charpoly's of large matrices *much* faster than Pari does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5213\n\n",
     "created_at": "2009-02-09T04:47:01Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005213.json:
     "title": "[with patch, needs review] make charpoly/minpoly of number field elements use matrix()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5213",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: number field element minpoly charpoly
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5213
 archive/issue_comments_039938.json:
 ```json
 {
-    "body": "Attachment [trac_5213-number-field-element-charpoly.patch](tarball://root/attachments/some-uuid/ticket5213/trac_5213-number-field-element-charpoly.patch) by ncalexan created at 2009-02-09 06:12:01\n\nThe patch speeds up computations of charpoly and minpoly (a lot -- sage's linear algebra is much better than pari's for some of my examples).\n\nIt also makes charpoly, minpoly, absolute_charpoly, and absolute_minpoly work for relative order elements.",
+    "body": "Attachment [trac_5213-number-field-element-charpoly.patch](tarball://root/attachments/some-uuid/ticket5213/trac_5213-number-field-element-charpoly.patch) by @ncalexan created at 2009-02-09 06:12:01\n\nThe patch speeds up computations of charpoly and minpoly (a lot -- sage's linear algebra is much better than pari's for some of my examples).\n\nIt also makes charpoly, minpoly, absolute_charpoly, and absolute_minpoly work for relative order elements.",
     "created_at": "2009-02-09T06:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5213#issuecomment-39938",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_5213-number-field-element-charpoly.patch](tarball://root/attachments/some-uuid/ticket5213/trac_5213-number-field-element-charpoly.patch) by ncalexan created at 2009-02-09 06:12:01
+Attachment [trac_5213-number-field-element-charpoly.patch](tarball://root/attachments/some-uuid/ticket5213/trac_5213-number-field-element-charpoly.patch) by @ncalexan created at 2009-02-09 06:12:01
 
 The patch speeds up computations of charpoly and minpoly (a lot -- sage's linear algebra is much better than pari's for some of my examples).
 
@@ -85,7 +85,7 @@ archive/issue_comments_039940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5213#issuecomment-39940",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_039941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5213#issuecomment-39941",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_039942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5213#issuecomment-39942",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -302,16 +302,16 @@ Michael said he'd run the tuning on a lot of architectures, so we can pick a swi
 archive/issue_comments_039943.json:
 ```json
 {
-    "body": "Attachment [tune_charpoly_nf.sage](tarball://root/attachments/some-uuid/ticket5213/tune_charpoly_nf.sage) by AlexGhitza created at 2009-02-15 02:54:12\n\nNote: the tuning function doesn't work properly on sage-3.2.3 because it relies on K.random_element() which was only introduced recently.  Running it on 3.3.rc0 is fine.",
+    "body": "Attachment [tune_charpoly_nf.sage](tarball://root/attachments/some-uuid/ticket5213/tune_charpoly_nf.sage) by @aghitza created at 2009-02-15 02:54:12\n\nNote: the tuning function doesn't work properly on sage-3.2.3 because it relies on K.random_element() which was only introduced recently.  Running it on 3.3.rc0 is fine.",
     "created_at": "2009-02-15T02:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5213#issuecomment-39943",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [tune_charpoly_nf.sage](tarball://root/attachments/some-uuid/ticket5213/tune_charpoly_nf.sage) by AlexGhitza created at 2009-02-15 02:54:12
+Attachment [tune_charpoly_nf.sage](tarball://root/attachments/some-uuid/ticket5213/tune_charpoly_nf.sage) by @aghitza created at 2009-02-15 02:54:12
 
 Note: the tuning function doesn't work properly on sage-3.2.3 because it relies on K.random_element() which was only introduced recently.  Running it on 3.3.rc0 is fine.
 
@@ -550,7 +550,7 @@ archive/issue_comments_039945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5213#issuecomment-39945",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001927.json:
 ```json
 {
-    "body": "Assignee: was\n\nVariable names made with the var command should be valid identifiers, but\n\n```\nsage: var('.foo')\n.foo\nsage: var('.foo/x')\n.foo/x\n```\n\n\nThanks to janwil for pointing this out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1927\n\n",
+    "body": "Assignee: @williamstein\n\nVariable names made with the var command should be valid identifiers, but\n\n```\nsage: var('.foo')\n.foo\nsage: var('.foo/x')\n.foo/x\n```\n\n\nThanks to janwil for pointing this out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1927\n\n",
     "created_at": "2008-01-25T17:21:18Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001927.json:
     "title": "dots in symbolic variable names should not be allowed, etc. (probably easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1927",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Variable names made with the var command should be valid identifiers, but
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1927
 archive/issue_comments_012232.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-02-01T03:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12232",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -60,16 +60,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_012233.json:
 ```json
 {
-    "body": "Attachment [1927.patch](tarball://root/attachments/some-uuid/ticket1927/1927.patch) by mhansen created at 2008-02-01 03:34:42",
+    "body": "Attachment [1927.patch](tarball://root/attachments/some-uuid/ticket1927/1927.patch) by @mwhansen created at 2008-02-01 03:34:42",
     "created_at": "2008-02-01T03:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12233",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1927.patch](tarball://root/attachments/some-uuid/ticket1927/1927.patch) by mhansen created at 2008-02-01 03:34:42
+Attachment [1927.patch](tarball://root/attachments/some-uuid/ticket1927/1927.patch) by @mwhansen created at 2008-02-01 03:34:42
 
 
 
@@ -83,7 +83,7 @@ archive/issue_comments_012234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12234",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_012235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12235",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

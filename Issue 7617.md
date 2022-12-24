@@ -3,7 +3,7 @@
 archive/issues_007617.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ddrake jhpalmieri\n\nsagetex has been voted in to be a standard sage spkg. \n\nthe official maintainer for the \"next few years\" is Dan Drake.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7617\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dandrake @jhpalmieri\n\nsagetex has been voted in to be a standard sage spkg. \n\nthe official maintainer for the \"next few years\" is Dan Drake.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7617\n\n",
     "created_at": "2009-12-07T22:20:37Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_007617.json:
     "title": "include sagetex as a standard spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7617",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  ddrake jhpalmieri
+CC:  @dandrake @jhpalmieri
 
 sagetex has been voted in to be a standard sage spkg. 
 
@@ -41,7 +41,7 @@ archive/issue_comments_065058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65058",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_065059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65059",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_065060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65060",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_065061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65061",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_065062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65062",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_065063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65063",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_065064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65064",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_065065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65065",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_065066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65066",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_065067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65067",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -277,16 +277,16 @@ a draft of additions to the installation guide
 archive/issue_comments_065068.json:
 ```json
 {
-    "body": "Attachment [sample_for_installation_guide.patch](tarball://root/attachments/some-uuid/ticket7617/sample_for_installation_guide.patch) by ddrake created at 2009-12-11 09:35:44\n\nI've attached a draft of what we might add to the installation guide to help users, well, install SageTeX. I'd also like to add something to the reference manual, as users might after installation want to use SageTeX and not think of \"installing\" anything new (since their friends will tell them it's included in Sage). Mostly, I think we need to put pointers to the SageTeX documentation in several places. Where else should we mention it in the documentation?",
+    "body": "Attachment [sample_for_installation_guide.patch](tarball://root/attachments/some-uuid/ticket7617/sample_for_installation_guide.patch) by @dandrake created at 2009-12-11 09:35:44\n\nI've attached a draft of what we might add to the installation guide to help users, well, install SageTeX. I'd also like to add something to the reference manual, as users might after installation want to use SageTeX and not think of \"installing\" anything new (since their friends will tell them it's included in Sage). Mostly, I think we need to put pointers to the SageTeX documentation in several places. Where else should we mention it in the documentation?",
     "created_at": "2009-12-11T09:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65068",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [sample_for_installation_guide.patch](tarball://root/attachments/some-uuid/ticket7617/sample_for_installation_guide.patch) by ddrake created at 2009-12-11 09:35:44
+Attachment [sample_for_installation_guide.patch](tarball://root/attachments/some-uuid/ticket7617/sample_for_installation_guide.patch) by @dandrake created at 2009-12-11 09:35:44
 
 I've attached a draft of what we might add to the installation guide to help users, well, install SageTeX. I'd also like to add something to the reference manual, as users might after installation want to use SageTeX and not think of "installing" anything new (since their friends will tell them it's included in Sage). Mostly, I think we need to put pointers to the SageTeX documentation in several places. Where else should we mention it in the documentation?
 
@@ -297,16 +297,16 @@ I've attached a draft of what we might add to the installation guide to help use
 archive/issue_comments_065069.json:
 ```json
 {
-    "body": "Attachment [trac_7617.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.patch) by ddrake created at 2009-12-22 08:23:43\n\nadditions to the installation guide and tutorial",
+    "body": "Attachment [trac_7617.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.patch) by @dandrake created at 2009-12-22 08:23:43\n\nadditions to the installation guide and tutorial",
     "created_at": "2009-12-22T08:23:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65069",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_7617.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.patch) by ddrake created at 2009-12-22 08:23:43
+Attachment [trac_7617.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.patch) by @dandrake created at 2009-12-22 08:23:43
 
 additions to the installation guide and tutorial
 
@@ -322,7 +322,7 @@ archive/issue_comments_065070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65070",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_065071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65071",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_065072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65072",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_065073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65073",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_065074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65074",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_065075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65075",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_065076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65076",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -451,16 +451,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_065077.json:
 ```json
 {
-    "body": "Attachment [trac_7617.2.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.2.patch) by ddrake created at 2009-12-28 08:34:19\n\nadditions to the installation guide and tutorial",
+    "body": "Attachment [trac_7617.2.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.2.patch) by @dandrake created at 2009-12-28 08:34:19\n\nadditions to the installation guide and tutorial",
     "created_at": "2009-12-28T08:34:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65077",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_7617.2.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.2.patch) by ddrake created at 2009-12-28 08:34:19
+Attachment [trac_7617.2.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.2.patch) by @dandrake created at 2009-12-28 08:34:19
 
 additions to the installation guide and tutorial
 
@@ -476,7 +476,7 @@ archive/issue_comments_065078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65078",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_065079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65079",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -514,7 +514,7 @@ archive/issue_comments_065080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65080",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_065081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65081",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -550,7 +550,7 @@ archive/issue_comments_065082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65082",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -568,7 +568,7 @@ archive/issue_comments_065083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65083",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_065084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65084",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -610,7 +610,7 @@ archive/issue_comments_065085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65085",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -645,7 +645,7 @@ archive/issue_comments_065086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65086",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -658,16 +658,16 @@ The "detect version mismatch ticket" is #8035.
 archive/issue_comments_065087.json:
 ```json
 {
-    "body": "Attachment [trac_7617.3.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.3.patch) by ddrake created at 2010-01-22 05:21:54\n\nadditions to the installation guide and tutorial, v3. apply only this.",
+    "body": "Attachment [trac_7617.3.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.3.patch) by @dandrake created at 2010-01-22 05:21:54\n\nadditions to the installation guide and tutorial, v3. apply only this.",
     "created_at": "2010-01-22T05:21:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65087",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_7617.3.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.3.patch) by ddrake created at 2010-01-22 05:21:54
+Attachment [trac_7617.3.patch](tarball://root/attachments/some-uuid/ticket7617/trac_7617.3.patch) by @dandrake created at 2010-01-22 05:21:54
 
 additions to the installation guide and tutorial, v3. apply only this.
 
@@ -683,7 +683,7 @@ archive/issue_comments_065088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65088",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -701,7 +701,7 @@ archive/issue_comments_065089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65089",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -723,7 +723,7 @@ archive/issue_comments_065090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65090",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -741,7 +741,7 @@ archive/issue_comments_065091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65091",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -759,7 +759,7 @@ archive/issue_comments_065092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65092",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -797,7 +797,7 @@ archive/issue_comments_065094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65094",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -839,7 +839,7 @@ archive/issue_comments_065096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7617#issuecomment-65096",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

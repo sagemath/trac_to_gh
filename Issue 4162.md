@@ -3,7 +3,7 @@
 archive/issues_004162.json:
 ```json
 {
-    "body": "Assignee: was\n\nTrac 0.11.1 is the newest stable release of trac.  Upgrading to trac 0.11 will allow us to make the ticket review process an actual process (with discrete stages and a workflow that we can send tickets through), instead of the current adhoc keyword-based method.  I'm sure there are other things that are good too.\n\nOne thing that may need to be done is to make sure that Robert's extension to display bundles works.\n\nSee the suggestions in http://groups.google.com/group/sage-devel/browse_thread/thread/d794dcc6f98c17fe/cd75d577420d1764?lnk=gst&q=needs+review+needs+more+info#cd75d577420d1764 to see if we can implement these better with the new trac.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4162\n\n",
+    "body": "Assignee: @williamstein\n\nTrac 0.11.1 is the newest stable release of trac.  Upgrading to trac 0.11 will allow us to make the ticket review process an actual process (with discrete stages and a workflow that we can send tickets through), instead of the current adhoc keyword-based method.  I'm sure there are other things that are good too.\n\nOne thing that may need to be done is to make sure that Robert's extension to display bundles works.\n\nSee the suggestions in http://groups.google.com/group/sage-devel/browse_thread/thread/d794dcc6f98c17fe/cd75d577420d1764?lnk=gst&q=needs+review+needs+more+info#cd75d577420d1764 to see if we can implement these better with the new trac.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4162\n\n",
     "created_at": "2008-09-21T02:26:42Z",
     "labels": [
         "website/wiki",
@@ -14,10 +14,10 @@ archive/issues_004162.json:
     "title": "Upgrade trac to 0.11",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4162",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Trac 0.11.1 is the newest stable release of trac.  Upgrading to trac 0.11 will allow us to make the ticket review process an actual process (with discrete stages and a workflow that we can send tickets through), instead of the current adhoc keyword-based method.  I'm sure there are other things that are good too.
 
@@ -41,7 +41,7 @@ archive/issue_comments_030205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4162#issuecomment-30205",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_030206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4162#issuecomment-30206",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_030207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4162#issuecomment-30207",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

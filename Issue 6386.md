@@ -3,7 +3,7 @@
 archive/issues_006386.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\nKeywords: elliptic curve\n\nThe elliptic exponential is the inverse to the elliptic log, i.e. it is the Weierstrass parametrization CC/L -> E(CC) for an elliptic curve.\n\nThe patch implements this as a member function of the PeriodLattice_ell class.  It works for all period lattices, real or not.  Currently it is accessible via a member function for elliptic curves over Q;  I'll make it work over number fields too, but ona separate ticket.  [At present it would already work for real embeddings;  shortly a rigorously justified elliptic log for non-real embeddings will also be ready.]\n\nThe hard work is done by pari's ellwp0() function, which was already wrapped, but to get the precision right that had to be slightly changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6386\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nKeywords: elliptic curve\n\nThe elliptic exponential is the inverse to the elliptic log, i.e. it is the Weierstrass parametrization CC/L -> E(CC) for an elliptic curve.\n\nThe patch implements this as a member function of the PeriodLattice_ell class.  It works for all period lattices, real or not.  Currently it is accessible via a member function for elliptic curves over Q;  I'll make it work over number fields too, but ona separate ticket.  [At present it would already work for real embeddings;  shortly a rigorously justified elliptic log for non-real embeddings will also be ready.]\n\nThe hard work is done by pari's ellwp0() function, which was already wrapped, but to get the precision right that had to be slightly changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6386\n\n",
     "created_at": "2009-06-22T18:09:09Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_006386.json:
     "title": "[with patch, needs review] Implement elliptic exponential",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6386",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: elliptic curve
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6386
 archive/issue_comments_051125.json:
 ```json
 {
-    "body": "Attachment [ellexp.patch](tarball://root/attachments/some-uuid/ticket6386/ellexp.patch) by cremona created at 2009-06-22 18:09:33\n\nApplies to 4.0.2",
+    "body": "Attachment [ellexp.patch](tarball://root/attachments/some-uuid/ticket6386/ellexp.patch) by @JohnCremona created at 2009-06-22 18:09:33\n\nApplies to 4.0.2",
     "created_at": "2009-06-22T18:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51125",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [ellexp.patch](tarball://root/attachments/some-uuid/ticket6386/ellexp.patch) by cremona created at 2009-06-22 18:09:33
+Attachment [ellexp.patch](tarball://root/attachments/some-uuid/ticket6386/ellexp.patch) by @JohnCremona created at 2009-06-22 18:09:33
 
 Applies to 4.0.2
 
@@ -65,7 +65,7 @@ archive/issue_comments_051126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51126",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_051127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51127",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_051128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51128",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -157,16 +157,16 @@ Apply after previous
 archive/issue_comments_051129.json:
 ```json
 {
-    "body": "Attachment [trac_6386-post-review.patch](tarball://root/attachments/some-uuid/ticket6386/trac_6386-post-review.patch) by cremona created at 2009-06-25 16:08:13\n\nI have done the first thing requested, delivering a point in E(CC) or E(RR) in cases where it is possible to tell that the point is real.  I had to use \"check=False\" since the returned x,y do not necessarily satisfy the equation to the given precision.  I'm not sure what the problem was in the second point, but I changed the name of the parameter to \"to_curve\" and fixed a typo in the docstring (it said True instead of False, or possibly the other way round, at one point -- this might have caused the confusion).\n\nI have left the third point, with the explanation given above!",
+    "body": "Attachment [trac_6386-post-review.patch](tarball://root/attachments/some-uuid/ticket6386/trac_6386-post-review.patch) by @JohnCremona created at 2009-06-25 16:08:13\n\nI have done the first thing requested, delivering a point in E(CC) or E(RR) in cases where it is possible to tell that the point is real.  I had to use \"check=False\" since the returned x,y do not necessarily satisfy the equation to the given precision.  I'm not sure what the problem was in the second point, but I changed the name of the parameter to \"to_curve\" and fixed a typo in the docstring (it said True instead of False, or possibly the other way round, at one point -- this might have caused the confusion).\n\nI have left the third point, with the explanation given above!",
     "created_at": "2009-06-25T16:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51129",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6386-post-review.patch](tarball://root/attachments/some-uuid/ticket6386/trac_6386-post-review.patch) by cremona created at 2009-06-25 16:08:13
+Attachment [trac_6386-post-review.patch](tarball://root/attachments/some-uuid/ticket6386/trac_6386-post-review.patch) by @JohnCremona created at 2009-06-25 16:08:13
 
 I have done the first thing requested, delivering a point in E(CC) or E(RR) in cases where it is possible to tell that the point is real.  I had to use "check=False" since the returned x,y do not necessarily satisfy the equation to the given precision.  I'm not sure what the problem was in the second point, but I changed the name of the parameter to "to_curve" and fixed a typo in the docstring (it said True instead of False, or possibly the other way round, at one point -- this might have caused the confusion).
 
@@ -184,7 +184,7 @@ archive/issue_comments_051130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51130",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_051131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51131",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_051132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51132",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -241,16 +241,16 @@ apply after other two
 archive/issue_comments_051133.json:
 ```json
 {
-    "body": "Attachment [6386-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket6386/6386-referee-fixes.patch) by robertwb created at 2009-06-26 05:55:31\n\nOK, I resolved the issues above, and while I was at it modified antilogarithm to look at the imaginary parts. Now I need a review from you.",
+    "body": "Attachment [6386-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket6386/6386-referee-fixes.patch) by @robertwb created at 2009-06-26 05:55:31\n\nOK, I resolved the issues above, and while I was at it modified antilogarithm to look at the imaginary parts. Now I need a review from you.",
     "created_at": "2009-06-26T05:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51133",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6386-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket6386/6386-referee-fixes.patch) by robertwb created at 2009-06-26 05:55:31
+Attachment [6386-referee-fixes.patch](tarball://root/attachments/some-uuid/ticket6386/6386-referee-fixes.patch) by @robertwb created at 2009-06-26 05:55:31
 
 OK, I resolved the issues above, and while I was at it modified antilogarithm to look at the imaginary parts. Now I need a review from you.
 
@@ -266,7 +266,7 @@ archive/issue_comments_051134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51134",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_051136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51136",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_051137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51137",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_051138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51138",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -370,16 +370,16 @@ Yep, this was due to the method I added. I'm changing it back to what it used to
 archive/issue_comments_051139.json:
 ```json
 {
-    "body": "Attachment [6386-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket6386/6386-doctest-fix.patch) by robertwb created at 2009-06-27 17:15:57\n\napply after all others",
+    "body": "Attachment [6386-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket6386/6386-doctest-fix.patch) by @robertwb created at 2009-06-27 17:15:57\n\napply after all others",
     "created_at": "2009-06-27T17:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51139",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6386-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket6386/6386-doctest-fix.patch) by robertwb created at 2009-06-27 17:15:57
+Attachment [6386-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket6386/6386-doctest-fix.patch) by @robertwb created at 2009-06-27 17:15:57
 
 apply after all others
 
@@ -395,7 +395,7 @@ archive/issue_comments_051140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51140",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_051141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6386#issuecomment-51141",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

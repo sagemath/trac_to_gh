@@ -3,7 +3,7 @@
 archive/issues_002134.json:
 ```json
 {
-    "body": "Assignee: was\n\nnote - author of patch doesn't give a hoot. do what you will with it, i won't touch it again. several things may break, for example, the only guaranteed color format is a float tuple. also, no new documentation.\n\neverybody wants it, so here it is... :-D\n\nIssue created by migration from https://trac.sagemath.org/ticket/2134\n\n",
+    "body": "Assignee: @williamstein\n\nnote - author of patch doesn't give a hoot. do what you will with it, i won't touch it again. several things may break, for example, the only guaranteed color format is a float tuple. also, no new documentation.\n\neverybody wants it, so here it is... :-D\n\nIssue created by migration from https://trac.sagemath.org/ticket/2134\n\n",
     "created_at": "2008-02-10T00:25:14Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002134.json:
     "title": "arrows for digraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2134",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 note - author of patch doesn't give a hoot. do what you will with it, i won't touch it again. several things may break, for example, the only guaranteed color format is a float tuple. also, no new documentation.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2134
 archive/issue_comments_013992.json:
 ```json
 {
-    "body": "Attachment [arrows.patch](tarball://root/attachments/some-uuid/ticket2134/arrows.patch) by rlm created at 2008-02-10 00:26:13",
+    "body": "Attachment [arrows.patch](tarball://root/attachments/some-uuid/ticket2134/arrows.patch) by @rlmill created at 2008-02-10 00:26:13",
     "created_at": "2008-02-10T00:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2134#issuecomment-13992",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [arrows.patch](tarball://root/attachments/some-uuid/ticket2134/arrows.patch) by rlm created at 2008-02-10 00:26:13
+Attachment [arrows.patch](tarball://root/attachments/some-uuid/ticket2134/arrows.patch) by @rlmill created at 2008-02-10 00:26:13
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_013993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2134#issuecomment-13993",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,16 +70,16 @@ Note -- the author rlm of the patch was days without sleep at time of writing...
 archive/issue_comments_013994.json:
 ```json
 {
-    "body": "Attachment [arrows-2.patch](tarball://root/attachments/some-uuid/ticket2134/arrows-2.patch) by rlm created at 2008-02-11 21:02:55",
+    "body": "Attachment [arrows-2.patch](tarball://root/attachments/some-uuid/ticket2134/arrows-2.patch) by @rlmill created at 2008-02-11 21:02:55",
     "created_at": "2008-02-11T21:02:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2134#issuecomment-13994",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [arrows-2.patch](tarball://root/attachments/some-uuid/ticket2134/arrows-2.patch) by rlm created at 2008-02-11 21:02:55
+Attachment [arrows-2.patch](tarball://root/attachments/some-uuid/ticket2134/arrows-2.patch) by @rlmill created at 2008-02-11 21:02:55
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_013995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2134#issuecomment-13995",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_013996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2134#issuecomment-13996",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_013997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2134#issuecomment-13997",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_013998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2134#issuecomment-13998",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_014000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2134#issuecomment-14000",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -211,16 +211,16 @@ Apply this instead of the others.
 archive/issue_comments_014001.json:
 ```json
 {
-    "body": "Attachment [arrows-new.patch](tarball://root/attachments/some-uuid/ticket2134/arrows-new.patch) by rlm created at 2008-02-15 00:45:06\n\nRebased- in doing so, I uncovered two bugs:\n1 Graphics import depended magically on it happening on another level\n2 Arrow plotting would have crashed on plotting loops\n\nShould now be ready to include.",
+    "body": "Attachment [arrows-new.patch](tarball://root/attachments/some-uuid/ticket2134/arrows-new.patch) by @rlmill created at 2008-02-15 00:45:06\n\nRebased- in doing so, I uncovered two bugs:\n1 Graphics import depended magically on it happening on another level\n2 Arrow plotting would have crashed on plotting loops\n\nShould now be ready to include.",
     "created_at": "2008-02-15T00:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2134#issuecomment-14001",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [arrows-new.patch](tarball://root/attachments/some-uuid/ticket2134/arrows-new.patch) by rlm created at 2008-02-15 00:45:06
+Attachment [arrows-new.patch](tarball://root/attachments/some-uuid/ticket2134/arrows-new.patch) by @rlmill created at 2008-02-15 00:45:06
 
 Rebased- in doing so, I uncovered two bugs:
 1 Graphics import depended magically on it happening on another level

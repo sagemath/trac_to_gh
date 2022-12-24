@@ -3,7 +3,7 @@
 archive/issues_004535.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  timothyclemans\n\nThe main goals of this ticket are to split up plot.py so that it's not 4500 lines long and change the way the bounding boxes are computed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4535\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  timothyclemans\n\nThe main goals of this ticket are to split up plot.py so that it's not 4500 lines long and change the way the bounding boxes are computed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4535\n\n",
     "created_at": "2008-11-16T13:12:43Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004535.json:
     "title": "refactoring in plot/*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4535",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  timothyclemans
 
@@ -39,7 +39,7 @@ archive/issue_comments_033790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4535#issuecomment-33790",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_033791.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-11-16T13:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4535#issuecomment-33791",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_033793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4535#issuecomment-33793",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_033794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4535#issuecomment-33794",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,16 +155,16 @@ Assuming it works, it gets copyright headers, and passes all doctests (in the wh
 archive/issue_comments_033795.json:
 ```json
 {
-    "body": "Attachment [trac_4535.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535.patch) by mhansen created at 2008-11-27 21:34:37",
+    "body": "Attachment [trac_4535.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535.patch) by @mwhansen created at 2008-11-27 21:34:37",
     "created_at": "2008-11-27T21:34:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4535#issuecomment-33795",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4535.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535.patch) by mhansen created at 2008-11-27 21:34:37
+Attachment [trac_4535.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535.patch) by @mwhansen created at 2008-11-27 21:34:37
 
 
 
@@ -178,7 +178,7 @@ archive/issue_comments_033796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4535#issuecomment-33796",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -345,16 +345,16 @@ Michael
 archive/issue_comments_033800.json:
 ```json
 {
-    "body": "Attachment [trac_4535-fixes.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535-fixes.patch) by mhansen created at 2008-11-28 02:51:32",
+    "body": "Attachment [trac_4535-fixes.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535-fixes.patch) by @mwhansen created at 2008-11-28 02:51:32",
     "created_at": "2008-11-28T02:51:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4535#issuecomment-33800",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4535-fixes.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535-fixes.patch) by mhansen created at 2008-11-28 02:51:32
+Attachment [trac_4535-fixes.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535-fixes.patch) by @mwhansen created at 2008-11-28 02:51:32
 
 
 
@@ -363,16 +363,16 @@ Attachment [trac_4535-fixes.patch](tarball://root/attachments/some-uuid/ticket45
 archive/issue_comments_033801.json:
 ```json
 {
-    "body": "Attachment [trac_4535-pickle_jar.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535-pickle_jar.patch) by mhansen created at 2008-11-28 02:51:44",
+    "body": "Attachment [trac_4535-pickle_jar.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535-pickle_jar.patch) by @mwhansen created at 2008-11-28 02:51:44",
     "created_at": "2008-11-28T02:51:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4535#issuecomment-33801",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4535-pickle_jar.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535-pickle_jar.patch) by mhansen created at 2008-11-28 02:51:44
+Attachment [trac_4535-pickle_jar.patch](tarball://root/attachments/some-uuid/ticket4535/trac_4535-pickle_jar.patch) by @mwhansen created at 2008-11-28 02:51:44
 
 
 
@@ -386,7 +386,7 @@ archive/issue_comments_033802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4535#issuecomment-33802",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003644.json:
     "title": "re-enable server/simple/twist.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3644",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_025762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3644#issuecomment-25762",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_025765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3644#issuecomment-25765",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_025766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3644#issuecomment-25766",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_025767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3644#issuecomment-25767",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000117.json:
 ```json
 {
-    "body": "Assignee: was\n\nSubject line says it all.  Is  there a way that I missed?\n\nIssue created by migration from https://trac.sagemath.org/ticket/117\n\n",
+    "body": "Assignee: @williamstein\n\nSubject line says it all.  Is  there a way that I missed?\n\nIssue created by migration from https://trac.sagemath.org/ticket/117\n\n",
     "created_at": "2006-10-07T20:27:34Z",
     "labels": [
         "user interface",
@@ -16,7 +16,7 @@ archive/issues_000117.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Subject line says it all.  Is  there a way that I missed?
 
@@ -54,7 +54,7 @@ archive/issue_comments_000552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/117#issuecomment-552",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

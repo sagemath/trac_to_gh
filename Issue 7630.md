@@ -3,7 +3,7 @@
 archive/issues_007630.json:
 ```json
 {
-    "body": "Assignee: was\n\nRight now it says in the Settings page \"Require e-mail for account registration\".  This implies to me that an account will not be activated until a valid email address is added.  Furthermore, when this is checked, a new account screen says: \"Your email address is required for account confirmation and recovery. You will be emailed a confirmation link right after you successfully sign up.\"  This definitely implies that an account will not be activated until the user clicks on a link.\n\nHowever, the account is activated, whether or not the user clicks on the link in the email.\n\nIf we're going through the trouble of making a link and confirming email addresses, it makes sense to follow the well-established practice of not letting the user log in until they confirm their email address.\n\nIt seems that this could be a very easy check in the login stage, too.  Just check to see if \"require email address\" is set, and if so, check to make sure the user's email address is confirmed.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7630\n\n",
+    "body": "Assignee: @williamstein\n\nRight now it says in the Settings page \"Require e-mail for account registration\".  This implies to me that an account will not be activated until a valid email address is added.  Furthermore, when this is checked, a new account screen says: \"Your email address is required for account confirmation and recovery. You will be emailed a confirmation link right after you successfully sign up.\"  This definitely implies that an account will not be activated until the user clicks on a link.\n\nHowever, the account is activated, whether or not the user clicks on the link in the email.\n\nIf we're going through the trouble of making a link and confirming email addresses, it makes sense to follow the well-established practice of not letting the user log in until they confirm their email address.\n\nIt seems that this could be a very easy check in the login stage, too.  Just check to see if \"require email address\" is set, and if so, check to make sure the user's email address is confirmed.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7630\n\n",
     "created_at": "2009-12-08T20:04:21Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007630.json:
     "title": "Require email confirmation before account activation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7630",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Right now it says in the Settings page "Require e-mail for account registration".  This implies to me that an account will not be activated until a valid email address is added.  Furthermore, when this is checked, a new account screen says: "Your email address is required for account confirmation and recovery. You will be emailed a confirmation link right after you successfully sign up."  This definitely implies that an account will not be activated until the user clicks on a link.
 
@@ -45,7 +45,7 @@ archive/issue_comments_065191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65191",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_065192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65192",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_065193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65193",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_065194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65194",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_065195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65195",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_065196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65196",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_065197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65197",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -203,16 +203,16 @@ version 2 of patch, with lots of print statements
 archive/issue_comments_065198.json:
 ```json
 {
-    "body": "Attachment [trac_7630-with-debugging.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630-with-debugging.patch) by ddrake created at 2010-02-24 07:59:33\n\nCurrent version should pass doctests if you comment out the print statement in `add_user` in notebook.py (line 509).",
+    "body": "Attachment [trac_7630-with-debugging.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630-with-debugging.patch) by @dandrake created at 2010-02-24 07:59:33\n\nCurrent version should pass doctests if you comment out the print statement in `add_user` in notebook.py (line 509).",
     "created_at": "2010-02-24T07:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65198",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_7630-with-debugging.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630-with-debugging.patch) by ddrake created at 2010-02-24 07:59:33
+Attachment [trac_7630-with-debugging.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630-with-debugging.patch) by @dandrake created at 2010-02-24 07:59:33
 
 Current version should pass doctests if you comment out the print statement in `add_user` in notebook.py (line 509).
 
@@ -228,7 +228,7 @@ archive/issue_comments_065199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65199",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_065200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65200",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_065201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65201",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_065202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65202",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_065203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65203",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -339,16 +339,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_065204.json:
 ```json
 {
-    "body": "Attachment [trac_7630.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630.patch) by ddrake created at 2010-04-26 07:41:26\n\nversion 3 of patch. Apply only this.",
+    "body": "Attachment [trac_7630.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630.patch) by @dandrake created at 2010-04-26 07:41:26\n\nversion 3 of patch. Apply only this.",
     "created_at": "2010-04-26T07:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65204",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_7630.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630.patch) by ddrake created at 2010-04-26 07:41:26
+Attachment [trac_7630.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630.patch) by @dandrake created at 2010-04-26 07:41:26
 
 version 3 of patch. Apply only this.
 
@@ -364,7 +364,7 @@ archive/issue_comments_065205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65205",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_065206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65206",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_065207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65207",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_065208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65208",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_065209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65209",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_065210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65210",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007259.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: categories, sets\n\nIn Sage 4.1, the category of a category was changed from Objects() to\nSets(). I.e. we used to have:\n\n  \tsage: Groups().category()\n  \tCategory of objects\n\nAnd now we have:\n\n\tsage: Groups().category()\n\tCategory of sets\n\nThe former sounds more natural to me, in particular because the\nobjects of Sets() are exactly the parents.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7259\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: categories, sets\n\nIn Sage 4.1, the category of a category was changed from Objects() to\nSets(). I.e. we used to have:\n\n  \tsage: Groups().category()\n  \tCategory of objects\n\nAnd now we have:\n\n\tsage: Groups().category()\n\tCategory of sets\n\nThe former sounds more natural to me, in particular because the\nobjects of Sets() are exactly the parents.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7259\n\n",
     "created_at": "2009-10-21T08:36:14Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007259.json:
     "title": "Revert Sets().category() from Sets() to Objects()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7259",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -53,7 +53,7 @@ archive/issue_comments_060292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7259#issuecomment-60292",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -66,16 +66,16 @@ Changing status from new to needs_review.
 archive/issue_comments_060293.json:
 ```json
 {
-    "body": "Attachment [trac_7259-revert-category-in-sets.patch](tarball://root/attachments/some-uuid/ticket7259/trac_7259-revert-category-in-sets.patch) by nthiery created at 2009-10-21 08:42:11",
+    "body": "Attachment [trac_7259-revert-category-in-sets.patch](tarball://root/attachments/some-uuid/ticket7259/trac_7259-revert-category-in-sets.patch) by @nthiery created at 2009-10-21 08:42:11",
     "created_at": "2009-10-21T08:42:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7259#issuecomment-60293",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7259-revert-category-in-sets.patch](tarball://root/attachments/some-uuid/ticket7259/trac_7259-revert-category-in-sets.patch) by nthiery created at 2009-10-21 08:42:11
+Attachment [trac_7259-revert-category-in-sets.patch](tarball://root/attachments/some-uuid/ticket7259/trac_7259-revert-category-in-sets.patch) by @nthiery created at 2009-10-21 08:42:11
 
 
 
@@ -89,7 +89,7 @@ archive/issue_comments_060294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7259#issuecomment-60294",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_060295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7259#issuecomment-60295",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_060296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7259#issuecomment-60296",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_060297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7259#issuecomment-60297",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

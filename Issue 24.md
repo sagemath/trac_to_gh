@@ -13,7 +13,7 @@ archive/issues_000024.json:
     "title": "notebook -- prompts mess up implicit printing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/24",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_000184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/24",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/24#issuecomment-184",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_000185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/24",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/24#issuecomment-185",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

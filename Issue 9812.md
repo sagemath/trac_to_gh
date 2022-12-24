@@ -3,7 +3,7 @@
 archive/issues_009812.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  kcrisman rbeezer\n\nI think parametric_plot should default to having an aspect ratio of 1.  Often we are plotting circles or other objects where we actually want to see the relationship between the two variables.\n\nBesides, it seems like mma does this too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9813\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman @rbeezer\n\nI think parametric_plot should default to having an aspect ratio of 1.  Often we are plotting circles or other objects where we actually want to see the relationship between the two variables.\n\nBesides, it seems like mma does this too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9813\n\n",
     "created_at": "2010-08-27T01:39:32Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009812.json:
     "title": "parametric plot aspect ratio",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9812",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  kcrisman rbeezer
+CC:  @kcrisman @rbeezer
 
 I think parametric_plot should default to having an aspect ratio of 1.  Often we are plotting circles or other objects where we actually want to see the relationship between the two variables.
 
@@ -41,7 +41,7 @@ archive/issue_comments_096762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9812#issuecomment-96762",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_096763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9812#issuecomment-96763",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_096764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9812#issuecomment-96764",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_096765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9812#issuecomment-96765",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_096766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9812#issuecomment-96766",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -126,16 +126,16 @@ Oh, and I should point out that I expect this patch will work as advertised!  Co
 archive/issue_comments_096767.json:
 ```json
 {
-    "body": "Attachment [trac-9813-parametric-aspect.patch](tarball://root/attachments/some-uuid/ticket9813/trac-9813-parametric-aspect.patch) by jason created at 2010-09-05 03:00:39",
+    "body": "Attachment [trac-9813-parametric-aspect.patch](tarball://root/attachments/some-uuid/ticket9813/trac-9813-parametric-aspect.patch) by @jasongrout created at 2010-09-05 03:00:39",
     "created_at": "2010-09-05T03:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9812#issuecomment-96767",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9813-parametric-aspect.patch](tarball://root/attachments/some-uuid/ticket9813/trac-9813-parametric-aspect.patch) by jason created at 2010-09-05 03:00:39
+Attachment [trac-9813-parametric-aspect.patch](tarball://root/attachments/some-uuid/ticket9813/trac-9813-parametric-aspect.patch) by @jasongrout created at 2010-09-05 03:00:39
 
 
 
@@ -149,7 +149,7 @@ archive/issue_comments_096768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9812#issuecomment-96768",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -162,16 +162,16 @@ tiny reviewer patch
 archive/issue_comments_096769.json:
 ```json
 {
-    "body": "Attachment [trac_9813_reviewer.patch](tarball://root/attachments/some-uuid/ticket9813/trac_9813_reviewer.patch) by ddrake created at 2010-09-06 04:24:12\n\nLooks good. I've added a little reviewer patch that adds in hyperlinks for the polar_plot docstring.",
+    "body": "Attachment [trac_9813_reviewer.patch](tarball://root/attachments/some-uuid/ticket9813/trac_9813_reviewer.patch) by @dandrake created at 2010-09-06 04:24:12\n\nLooks good. I've added a little reviewer patch that adds in hyperlinks for the polar_plot docstring.",
     "created_at": "2010-09-06T04:24:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9812#issuecomment-96769",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_9813_reviewer.patch](tarball://root/attachments/some-uuid/ticket9813/trac_9813_reviewer.patch) by ddrake created at 2010-09-06 04:24:12
+Attachment [trac_9813_reviewer.patch](tarball://root/attachments/some-uuid/ticket9813/trac_9813_reviewer.patch) by @dandrake created at 2010-09-06 04:24:12
 
 Looks good. I've added a little reviewer patch that adds in hyperlinks for the polar_plot docstring.
 
@@ -187,7 +187,7 @@ archive/issue_comments_096770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9812#issuecomment-96770",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_096771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9812#issuecomment-96771",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_096772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9812#issuecomment-96772",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

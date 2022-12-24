@@ -3,7 +3,7 @@
 archive/issues_001794.json:
 ```json
 {
-    "body": "Assignee: was\n\nSage calls Gram-Schmidt Gramm-Schmidt in some places (including function names). The attached patch fixes the ones I found.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1794\n\n",
+    "body": "Assignee: @williamstein\n\nSage calls Gram-Schmidt Gramm-Schmidt in some places (including function names). The attached patch fixes the ones I found.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1794\n\n",
     "created_at": "2008-01-16T17:59:01Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001794.json:
     "title": "Gram-Schmidt typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1794",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Sage calls Gram-Schmidt Gramm-Schmidt in some places (including function names). The attached patch fixes the ones I found.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1794
 archive/issue_comments_011358.json:
 ```json
 {
-    "body": "Attachment [8014.patch](tarball://root/attachments/some-uuid/ticket1794/8014.patch) by wjp created at 2008-01-16 18:00:29",
+    "body": "Attachment [8014.patch](tarball://root/attachments/some-uuid/ticket1794/8014.patch) by @wjp created at 2008-01-16 18:00:29",
     "created_at": "2008-01-16T18:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1794#issuecomment-11358",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [8014.patch](tarball://root/attachments/some-uuid/ticket1794/8014.patch) by wjp created at 2008-01-16 18:00:29
+Attachment [8014.patch](tarball://root/attachments/some-uuid/ticket1794/8014.patch) by @wjp created at 2008-01-16 18:00:29
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_011359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1794#issuecomment-11359",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

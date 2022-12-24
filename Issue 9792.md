@@ -3,7 +3,7 @@
 archive/issues_009792.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jason ppurka\n\nKeywords: one-dimension, plot, graphics\n\nSometimes it would be nice to have the ability to plot one-dimensional things easily, like solutions to an inequality or something.  This would have just one (horizontal) axis and have options allowing plotting of individual points (perhaps if input is a list) or find a way to plot inequalities (maybe via thicker lines and/or tick marks at appropriate places).  \n\nIdeally, this would add with a 2D `Graphics` object by putting it below it and have the axes align, but this might be too hard to do with matplotlib.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9793\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout @ppurka\n\nKeywords: one-dimension, plot, graphics\n\nSometimes it would be nice to have the ability to plot one-dimensional things easily, like solutions to an inequality or something.  This would have just one (horizontal) axis and have options allowing plotting of individual points (perhaps if input is a list) or find a way to plot inequalities (maybe via thicker lines and/or tick marks at appropriate places).  \n\nIdeally, this would add with a 2D `Graphics` object by putting it below it and have the axes align, but this might be too hard to do with matplotlib.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9793\n\n",
     "created_at": "2010-08-24T13:24:28Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009792.json:
     "title": "Make plot1d function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9792",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: jason, was
 
-CC:  jason ppurka
+CC:  @jasongrout @ppurka
 
 Keywords: one-dimension, plot, graphics
 
@@ -43,7 +43,7 @@ archive/issue_comments_096162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9792#issuecomment-96162",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_096163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9792#issuecomment-96163",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_096164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9792#issuecomment-96164",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_096165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9792#issuecomment-96165",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

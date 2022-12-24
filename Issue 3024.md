@@ -14,7 +14,7 @@ archive/issues_003024.json:
     "title": "notebook -- parses tracebacks in the output of docstrings of help command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3024",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -62,16 +62,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3024
 archive/issue_comments_020797.json:
 ```json
 {
-    "body": "Attachment [sage-3024.patch](tarball://root/attachments/some-uuid/ticket3024/sage-3024.patch) by was created at 2008-05-11 08:05:14",
+    "body": "Attachment [sage-3024.patch](tarball://root/attachments/some-uuid/ticket3024/sage-3024.patch) by @williamstein created at 2008-05-11 08:05:14",
     "created_at": "2008-05-11T08:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3024#issuecomment-20797",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3024.patch](tarball://root/attachments/some-uuid/ticket3024/sage-3024.patch) by was created at 2008-05-11 08:05:14
+Attachment [sage-3024.patch](tarball://root/attachments/some-uuid/ticket3024/sage-3024.patch) by @williamstein created at 2008-05-11 08:05:14
 
 
 

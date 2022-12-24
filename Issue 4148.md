@@ -3,7 +3,7 @@
 archive/issues_004148.json:
 ```json
 {
-    "body": "Assignee: cpernet\n\nUpgrade the givaro spkg to upstream version 3.2.13rc1.\nThis is required for the resolution of ticket #4147 and is therefore a defect.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4148\n\n",
+    "body": "Assignee: @ClementPernet\n\nUpgrade the givaro spkg to upstream version 3.2.13rc1.\nThis is required for the resolution of ticket #4147 and is therefore a defect.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4148\n\n",
     "created_at": "2008-09-19T00:39:53Z",
     "labels": [
         "finite rings",
@@ -14,10 +14,10 @@ archive/issues_004148.json:
     "title": "Upgrade to givaro-3.2.13rc1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4148",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
-Assignee: cpernet
+Assignee: @ClementPernet
 
 Upgrade the givaro spkg to upstream version 3.2.13rc1.
 This is required for the resolution of ticket #4147 and is therefore a defect.
@@ -38,7 +38,7 @@ archive/issue_comments_030103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4148#issuecomment-30103",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_030104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4148#issuecomment-30104",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_030105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4148#issuecomment-30105",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 

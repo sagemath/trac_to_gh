@@ -3,7 +3,7 @@
 archive/issues_009538.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  nbruin\n\nKeywords: roots, side effect\n\nConsider the following with Sage 4.4.4:\n\n```\nsage: var('a6,a5,a4,x')\n(a6, a5, a4, x)\nsage: e=15*a6*x^2 + 5*a5*x + a4\nsage: e.roots(x)\n[(-1/30*(sqrt(-12*a4*a6 + 5*a5^2)*sqrt(5) + 5*a5)/a6, 1), (1/30*(sqrt(-12*a4*a6 + 5*a5^2)*sqrt(5) - 5*a5)/a6, 1)]\n```\n\nThis is fine. However:\n\n```\nsage: var('f6,f5,f4,x')\n(f6, f5, f4, x)\nsage: e=15*f6*x^2 + 5*f5*x + f4\nsage: e.roots(x)\n[(1/30*(-I*sqrt(35) - 5)/binomial(n, k), 1), (1/30*(I*sqrt(35) - 5)/binomial(n, k), 1)]\n```\n\nWTF???\n\nIssue created by migration from https://trac.sagemath.org/ticket/9538\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @nbruin\n\nKeywords: roots, side effect\n\nConsider the following with Sage 4.4.4:\n\n```\nsage: var('a6,a5,a4,x')\n(a6, a5, a4, x)\nsage: e=15*a6*x^2 + 5*a5*x + a4\nsage: e.roots(x)\n[(-1/30*(sqrt(-12*a4*a6 + 5*a5^2)*sqrt(5) + 5*a5)/a6, 1), (1/30*(sqrt(-12*a4*a6 + 5*a5^2)*sqrt(5) - 5*a5)/a6, 1)]\n```\n\nThis is fine. However:\n\n```\nsage: var('f6,f5,f4,x')\n(f6, f5, f4, x)\nsage: e=15*f6*x^2 + 5*f5*x + f4\nsage: e.roots(x)\n[(1/30*(-I*sqrt(35) - 5)/binomial(n, k), 1), (1/30*(I*sqrt(35) - 5)/binomial(n, k), 1)]\n```\n\nWTF???\n\nIssue created by migration from https://trac.sagemath.org/ticket/9538\n\n",
     "created_at": "2010-07-18T15:42:05Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_009538.json:
     "title": "internal side effect in roots?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9538",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  nbruin
+CC:  @nbruin
 
 Keywords: roots, side effect
 
@@ -61,7 +61,7 @@ archive/issue_comments_091898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91898",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_091899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91899",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_091900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91900",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_091901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91901",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_091902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91902",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -198,16 +198,16 @@ Paul
 archive/issue_comments_091903.json:
 ```json
 {
-    "body": "Attachment [trac_9538-maxima_kill.patch](tarball://root/attachments/some-uuid/ticket9538/trac_9538-maxima_kill.patch) by burcin created at 2010-09-26 15:58:09",
+    "body": "Attachment [trac_9538-maxima_kill.patch](tarball://root/attachments/some-uuid/ticket9538/trac_9538-maxima_kill.patch) by @burcin created at 2010-09-26 15:58:09",
     "created_at": "2010-09-26T15:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91903",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9538-maxima_kill.patch](tarball://root/attachments/some-uuid/ticket9538/trac_9538-maxima_kill.patch) by burcin created at 2010-09-26 15:58:09
+Attachment [trac_9538-maxima_kill.patch](tarball://root/attachments/some-uuid/ticket9538/trac_9538-maxima_kill.patch) by @burcin created at 2010-09-26 15:58:09
 
 
 
@@ -221,7 +221,7 @@ archive/issue_comments_091904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91904",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_091905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91905",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_091906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91906",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_091907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91907",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_091908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91908",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -346,16 +346,16 @@ patch for maxima spkg
 archive/issue_comments_091909.json:
 ```json
 {
-    "body": "Attachment [maxima_package.patch](tarball://root/attachments/some-uuid/ticket9538/maxima_package.patch) by burcin created at 2010-09-26 20:25:38\n\nReplying to [comment:7 zimmerma]:\n> Did I something wrong? How to install the patched spkg?\n\nI don't have any experience with the maxima spkg. I just applied the patch in attachment:maxima_package.patch. It works here, but just complains about not being able to build `maxima.fasb`:\n\n\n```\ncp: cannot stat `maxima.fasb': No such file or directory\n```\n\n\nPerhaps someone more knowledgeable can help out. Building maxima as a library is #8645.",
+    "body": "Attachment [maxima_package.patch](tarball://root/attachments/some-uuid/ticket9538/maxima_package.patch) by @burcin created at 2010-09-26 20:25:38\n\nReplying to [comment:7 zimmerma]:\n> Did I something wrong? How to install the patched spkg?\n\nI don't have any experience with the maxima spkg. I just applied the patch in attachment:maxima_package.patch. It works here, but just complains about not being able to build `maxima.fasb`:\n\n\n```\ncp: cannot stat `maxima.fasb': No such file or directory\n```\n\n\nPerhaps someone more knowledgeable can help out. Building maxima as a library is #8645.",
     "created_at": "2010-09-26T20:25:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91909",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [maxima_package.patch](tarball://root/attachments/some-uuid/ticket9538/maxima_package.patch) by burcin created at 2010-09-26 20:25:38
+Attachment [maxima_package.patch](tarball://root/attachments/some-uuid/ticket9538/maxima_package.patch) by @burcin created at 2010-09-26 20:25:38
 
 Replying to [comment:7 zimmerma]:
 > Did I something wrong? How to install the patched spkg?
@@ -382,7 +382,7 @@ archive/issue_comments_091910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91910",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_091911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91911",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_091912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91912",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_091913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91913",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_091914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91914",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_091915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91915",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -524,7 +524,7 @@ archive/issue_comments_091916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91916",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_091917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91917",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_091918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91918",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -588,7 +588,7 @@ archive/issue_comments_091919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91919",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -601,16 +601,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_091920.json:
 ```json
 {
-    "body": "Attachment [trac_9538-maxima_kill.take2.patch](tarball://root/attachments/some-uuid/ticket9538/trac_9538-maxima_kill.take2.patch) by burcin created at 2010-10-01 16:04:37\n\nI uploaded an alternate patch, attachment:trac_9538-maxima_kill.take2.patch. This issues the `kill` command Robert Dodier recommended when initializing maxima. There is no need for any changes to the maxima package.",
+    "body": "Attachment [trac_9538-maxima_kill.take2.patch](tarball://root/attachments/some-uuid/ticket9538/trac_9538-maxima_kill.take2.patch) by @burcin created at 2010-10-01 16:04:37\n\nI uploaded an alternate patch, attachment:trac_9538-maxima_kill.take2.patch. This issues the `kill` command Robert Dodier recommended when initializing maxima. There is no need for any changes to the maxima package.",
     "created_at": "2010-10-01T16:04:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91920",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9538-maxima_kill.take2.patch](tarball://root/attachments/some-uuid/ticket9538/trac_9538-maxima_kill.take2.patch) by burcin created at 2010-10-01 16:04:37
+Attachment [trac_9538-maxima_kill.take2.patch](tarball://root/attachments/some-uuid/ticket9538/trac_9538-maxima_kill.take2.patch) by @burcin created at 2010-10-01 16:04:37
 
 I uploaded an alternate patch, attachment:trac_9538-maxima_kill.take2.patch. This issues the `kill` command Robert Dodier recommended when initializing maxima. There is no need for any changes to the maxima package.
 
@@ -626,7 +626,7 @@ archive/issue_comments_091921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91921",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -644,7 +644,7 @@ archive/issue_comments_091922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91922",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -667,7 +667,7 @@ archive/issue_comments_091923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91923",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -701,7 +701,7 @@ archive/issue_comments_091924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91924",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -723,7 +723,7 @@ archive/issue_comments_091925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91925",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -741,7 +741,7 @@ archive/issue_comments_091926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9538#issuecomment-91926",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009983.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  chapoton\n\nUsing the following system: \n\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fair wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* DDS-4 tape drive \n\nECL fails to build properly. See the attached log. A rather obvious part of the failure message is:\n\n\n\n```\n*** Warning: Linking the shared library libecm.la against the\n*** static library /home/users/drkirkby/sage-4.6.alpha1/local/lib/libgmp.a is not portable!\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9984\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @fchapoton\n\nUsing the following system: \n\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fair wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* DDS-4 tape drive \n\nECL fails to build properly. See the attached log. A rather obvious part of the failure message is:\n\n\n\n```\n*** Warning: Linking the shared library libecm.la against the\n*** static library /home/users/drkirkby/sage-4.6.alpha1/local/lib/libgmp.a is not portable!\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9984\n\n",
     "created_at": "2010-09-23T20:34:12Z",
     "labels": [
         "porting: AIX or HP-UX",
@@ -19,7 +19,7 @@ archive/issues_009983.json:
 ```
 Assignee: drkirkby
 
-CC:  chapoton
+CC:  @fchapoton
 
 Using the following system: 
 
@@ -71,16 +71,16 @@ Build failure observed on an RS/6000 running AIX 5.3
 archive/issue_comments_100322.json:
 ```json
 {
-    "body": "Attachment [ecm-6.2.1.p2.log](tarball://root/attachments/some-uuid/ticket9984/ecm-6.2.1.p2.log) by jdemeyer created at 2013-08-13 15:35:53",
+    "body": "Attachment [ecm-6.2.1.p2.log](tarball://root/attachments/some-uuid/ticket9984/ecm-6.2.1.p2.log) by @jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9983#issuecomment-100322",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [ecm-6.2.1.p2.log](tarball://root/attachments/some-uuid/ticket9984/ecm-6.2.1.p2.log) by jdemeyer created at 2013-08-13 15:35:53
+Attachment [ecm-6.2.1.p2.log](tarball://root/attachments/some-uuid/ticket9984/ecm-6.2.1.p2.log) by @jdemeyer created at 2013-08-13 15:35:53
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_100323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9983#issuecomment-100323",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_100324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9983#issuecomment-100324",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_100325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9983#issuecomment-100325",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_100326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9983#issuecomment-100326",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

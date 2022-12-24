@@ -3,7 +3,7 @@
 archive/issues_008470.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  wdj rlm ncohen rbeezer sage-combinat bump jhpalmieri jason\n\nKeywords: FAQ, HOWTO\n\nThis is a meta-ticket that helps in organizing changes and additions to the Sage standard documentation. On [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc), it is proposed that we create two new documentation categories called:\n\n* FAQ --- a collection of answers to frequently asked questions.\n* Sage HOWTOs --- a collection of in-depth tutorials on specific topics.\n\nFor starters, here is a list of tickets with enhancements for those two new documentation categories:\n\n* #8442 Lie Methods and Related Combinatorics\n* #8464 FAQ\n* #8465 Python Functional Programming for Mathematicians\n* #8466 Sage and Coding Theory\n* #8467 Linear Programming in Sage\n* #8468 Group Theory and Sage: A Primer\n* #8469 Number Theory and the RSA Public Key Cryptosystem\n\nOnce all the above tickets are closed, the current ticket can be closed as fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8470\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @wdjoyner @rlmill @nathanncohen @rbeezer sage-combinat @dwbump @jhpalmieri @jasongrout\n\nKeywords: FAQ, HOWTO\n\nThis is a meta-ticket that helps in organizing changes and additions to the Sage standard documentation. On [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc), it is proposed that we create two new documentation categories called:\n\n* FAQ --- a collection of answers to frequently asked questions.\n* Sage HOWTOs --- a collection of in-depth tutorials on specific topics.\n\nFor starters, here is a list of tickets with enhancements for those two new documentation categories:\n\n* #8442 Lie Methods and Related Combinatorics\n* #8464 FAQ\n* #8465 Python Functional Programming for Mathematicians\n* #8466 Sage and Coding Theory\n* #8467 Linear Programming in Sage\n* #8468 Group Theory and Sage: A Primer\n* #8469 Number Theory and the RSA Public Key Cryptosystem\n\nOnce all the above tickets are closed, the current ticket can be closed as fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8470\n\n",
     "created_at": "2010-03-07T02:38:29Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008470.json:
 ```
 Assignee: mvngu
 
-CC:  wdj rlm ncohen rbeezer sage-combinat bump jhpalmieri jason
+CC:  @wdjoyner @rlmill @nathanncohen @rbeezer sage-combinat @dwbump @jhpalmieri @jasongrout
 
 Keywords: FAQ, HOWTO
 
@@ -56,7 +56,7 @@ archive/issue_comments_076295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76295",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_076297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76297",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_076298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76298",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_076299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76299",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_076300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76300",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_076301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76301",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_076302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76302",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007663.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n``` \nThis is weird. Occassionaly, in the SAGE notebook, version 4.2.1, the\nlast characters of output after evaluating a cell are supressed. I've\ntried all of string.printable: the only characters supressed are \"S\",\n\"A\", \"G\", \"E\" and \"_\". No kidding.\n Just try:\n\nprint \"ASAVFDBAAGGG___EEESS\"\n///\nASAVFDB\n\n\nprint \"ASAVFDBAAGGG___EEESS.\"\n///\nASAVFDBAAGGG___EEESS.\n\n Is this a private joke or an amazing coincidence?\n\n Regards\nPablo\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7663\n\n",
+    "body": "Assignee: @williamstein\n\n\n``` \nThis is weird. Occassionaly, in the SAGE notebook, version 4.2.1, the\nlast characters of output after evaluating a cell are supressed. I've\ntried all of string.printable: the only characters supressed are \"S\",\n\"A\", \"G\", \"E\" and \"_\". No kidding.\n Just try:\n\nprint \"ASAVFDBAAGGG___EEESS\"\n///\nASAVFDB\n\n\nprint \"ASAVFDBAAGGG___EEESS.\"\n///\nASAVFDBAAGGG___EEESS.\n\n Is this a private joke or an amazing coincidence?\n\n Regards\nPablo\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7663\n\n",
     "created_at": "2009-12-11T15:13:24Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007663.json:
     "title": "notebook -- synchronization code surprises printing of certain characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7663",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ``` 
@@ -59,7 +59,7 @@ archive/issue_comments_065617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7663#issuecomment-65617",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_065618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7663#issuecomment-65618",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_065619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7663#issuecomment-65619",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_065620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7663#issuecomment-65620",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -144,16 +144,16 @@ Don't use rstrip on internal prompt.  sagenb repo.
 archive/issue_comments_065621.json:
 ```json
 {
-    "body": "Attachment [trac_7663-rstrip_prompt.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.patch) by mpatel created at 2010-01-15 23:07:30",
+    "body": "Attachment [trac_7663-rstrip_prompt.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.patch) by @qed777 created at 2010-01-15 23:07:30",
     "created_at": "2010-01-15T23:07:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7663#issuecomment-65621",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7663-rstrip_prompt.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.patch) by mpatel created at 2010-01-15 23:07:30
+Attachment [trac_7663-rstrip_prompt.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.patch) by @qed777 created at 2010-01-15 23:07:30
 
 
 
@@ -167,7 +167,7 @@ archive/issue_comments_065622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7663#issuecomment-65622",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_065623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7663#issuecomment-65623",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_065624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7663#issuecomment-65624",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_065625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7663#issuecomment-65625",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -234,16 +234,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_065626.json:
 ```json
 {
-    "body": "Attachment [trac_7663-rstrip_prompt.2.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.2.patch) by timdumol created at 2010-01-17 18:31:44\n\nLGTM.",
+    "body": "Attachment [trac_7663-rstrip_prompt.2.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.2.patch) by @TimDumol created at 2010-01-17 18:31:44\n\nLGTM.",
     "created_at": "2010-01-17T18:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7663#issuecomment-65626",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7663-rstrip_prompt.2.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.2.patch) by timdumol created at 2010-01-17 18:31:44
+Attachment [trac_7663-rstrip_prompt.2.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.2.patch) by @TimDumol created at 2010-01-17 18:31:44
 
 LGTM.
 
@@ -254,16 +254,16 @@ LGTM.
 archive/issue_comments_065627.json:
 ```json
 {
-    "body": "Attachment [trac_7663-rstrip_prompt.3.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.3.patch) by mpatel created at 2010-01-18 08:41:35\n\nRemove extra line to fix #7648.  Replaces previous.",
+    "body": "Attachment [trac_7663-rstrip_prompt.3.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.3.patch) by @qed777 created at 2010-01-18 08:41:35\n\nRemove extra line to fix #7648.  Replaces previous.",
     "created_at": "2010-01-18T08:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7663#issuecomment-65627",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7663-rstrip_prompt.3.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.3.patch) by mpatel created at 2010-01-18 08:41:35
+Attachment [trac_7663-rstrip_prompt.3.patch](tarball://root/attachments/some-uuid/ticket7663/trac_7663-rstrip_prompt.3.patch) by @qed777 created at 2010-01-18 08:41:35
 
 Remove extra line to fix #7648.  Replaces previous.
 
@@ -279,7 +279,7 @@ archive/issue_comments_065628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7663#issuecomment-65628",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_065629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7663#issuecomment-65629",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

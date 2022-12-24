@@ -3,7 +3,7 @@
 archive/issues_006615.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nIt may take only two lines, but I do not know which ones (I got a bit lost reading graph_plot.py) and it may take half a second to who wrote it in the first place.\n\ng=graphs.PetersenGraph()\ng.plot(edge_colors={\"red\":[(0,1)]})\ng.plot(vertex_colors={\"red\":[1]})\n\nWhen you plot a graph and want some edges to have a different color, the first plot is perfect. In the second case, though, I think it would be better to assign the others vertices a default color ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6615\n\n",
+    "body": "Assignee: @rlmill\n\nIt may take only two lines, but I do not know which ones (I got a bit lost reading graph_plot.py) and it may take half a second to who wrote it in the first place.\n\ng=graphs.PetersenGraph()\ng.plot(edge_colors={\"red\":[(0,1)]})\ng.plot(vertex_colors={\"red\":[1]})\n\nWhen you plot a graph and want some edges to have a different color, the first plot is perfect. In the second case, though, I think it would be better to assign the others vertices a default color ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6615\n\n",
     "created_at": "2009-07-24T18:00:05Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_006615.json:
     "title": "Small bug in Graph.plot()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6615",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 It may take only two lines, but I do not know which ones (I got a bit lost reading graph_plot.py) and it may take half a second to who wrote it in the first place.
 
@@ -43,7 +43,7 @@ archive/issue_comments_054161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54161",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_054162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54162",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_054163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54163",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_054164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54164",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_054165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54165",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_054166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54166",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_054167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54167",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_054168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54168",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_054169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54169",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_054170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54170",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -227,16 +227,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_054171.json:
 ```json
 {
-    "body": "Attachment [trac_6615-ref.patch](tarball://root/attachments/some-uuid/ticket6615/trac_6615-ref.patch) by rlm created at 2010-01-06 16:34:54\n\ndepends: sage-4.3.1.alpha1 + #7634",
+    "body": "Attachment [trac_6615-ref.patch](tarball://root/attachments/some-uuid/ticket6615/trac_6615-ref.patch) by @rlmill created at 2010-01-06 16:34:54\n\ndepends: sage-4.3.1.alpha1 + #7634",
     "created_at": "2010-01-06T16:34:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54171",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6615-ref.patch](tarball://root/attachments/some-uuid/ticket6615/trac_6615-ref.patch) by rlm created at 2010-01-06 16:34:54
+Attachment [trac_6615-ref.patch](tarball://root/attachments/some-uuid/ticket6615/trac_6615-ref.patch) by @rlmill created at 2010-01-06 16:34:54
 
 depends: sage-4.3.1.alpha1 + #7634
 
@@ -252,7 +252,7 @@ archive/issue_comments_054172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54172",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_054173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54173",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_054174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6615#issuecomment-54174",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

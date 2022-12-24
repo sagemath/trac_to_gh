@@ -14,7 +14,7 @@ archive/issues_008850.json:
     "title": "Cython should link against BLAS instead of ATLAS on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8850",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8850
 archive/issue_comments_081352.json:
 ```json
 {
-    "body": "Attachment [trac_8850-fix_load_cython.patch](tarball://root/attachments/some-uuid/ticket8850/trac_8850-fix_load_cython.patch) by mhansen created at 2010-05-03 13:16:57",
+    "body": "Attachment [trac_8850-fix_load_cython.patch](tarball://root/attachments/some-uuid/ticket8850/trac_8850-fix_load_cython.patch) by @mwhansen created at 2010-05-03 13:16:57",
     "created_at": "2010-05-03T13:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8850#issuecomment-81352",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8850-fix_load_cython.patch](tarball://root/attachments/some-uuid/ticket8850/trac_8850-fix_load_cython.patch) by mhansen created at 2010-05-03 13:16:57
+Attachment [trac_8850-fix_load_cython.patch](tarball://root/attachments/some-uuid/ticket8850/trac_8850-fix_load_cython.patch) by @mwhansen created at 2010-05-03 13:16:57
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_081353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8850#issuecomment-81353",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_081354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8850#issuecomment-81354",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_081355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8850#issuecomment-81355",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008618.json:
     "title": "Non standard alphabet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8618",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 Assignee: sage-combinat
@@ -55,7 +55,7 @@ archive/issue_comments_078102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8618#issuecomment-78102",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to needs_review.
 archive/issue_comments_078103.json:
 ```json
 {
-    "body": "Attachment [trac_8618_is_identity-sl.patch](tarball://root/attachments/some-uuid/ticket8618/trac_8618_is_identity-sl.patch) by slabbe created at 2010-03-31 13:52:06\n\nDepends on #8595",
+    "body": "Attachment [trac_8618_is_identity-sl.patch](tarball://root/attachments/some-uuid/ticket8618/trac_8618_is_identity-sl.patch) by @seblabbe created at 2010-03-31 13:52:06\n\nDepends on #8595",
     "created_at": "2010-03-31T13:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8618#issuecomment-78103",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8618_is_identity-sl.patch](tarball://root/attachments/some-uuid/ticket8618/trac_8618_is_identity-sl.patch) by slabbe created at 2010-03-31 13:52:06
+Attachment [trac_8618_is_identity-sl.patch](tarball://root/attachments/some-uuid/ticket8618/trac_8618_is_identity-sl.patch) by @seblabbe created at 2010-03-31 13:52:06
 
 Depends on #8595
 
@@ -93,7 +93,7 @@ archive/issue_comments_078104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8618#issuecomment-78104",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_078105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8618#issuecomment-78105",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_078106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8618#issuecomment-78106",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_078107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8618#issuecomment-78107",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

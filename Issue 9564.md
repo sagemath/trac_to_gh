@@ -3,7 +3,7 @@
 archive/issues_009564.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: KeyboardInterrupt libsingular exponentiation\n\nWhen trying to get some timings for #7795, I did\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: p = R.random_element()\nsage: p\n-x^2 + 1/3*x*y + 7/2*y + 2*z\nsage: timeit('q=p^(2^10)')\n```\n\nwhich might be stupid. \n\nAnyway, it was impossible to interrupt the computation with ctrl-C, which I think is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9564\n\n",
+    "body": "Assignee: @malb\n\nKeywords: KeyboardInterrupt libsingular exponentiation\n\nWhen trying to get some timings for #7795, I did\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: p = R.random_element()\nsage: p\n-x^2 + 1/3*x*y + 7/2*y + 2*z\nsage: timeit('q=p^(2^10)')\n```\n\nwhich might be stupid. \n\nAnyway, it was impossible to interrupt the computation with ctrl-C, which I think is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9564\n\n",
     "created_at": "2010-07-21T13:50:23Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_009564.json:
     "title": "libsingular exponentiation can not be interrupted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9564",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: KeyboardInterrupt libsingular exponentiation
 
@@ -51,7 +51,7 @@ archive/issue_comments_092328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9564#issuecomment-92328",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_092329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9564#issuecomment-92329",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -82,16 +82,16 @@ Changing priority from major to critical.
 archive/issue_comments_092330.json:
 ```json
 {
-    "body": "Changing assignee from malb to tba.",
+    "body": "Changing assignee from @malb to tba.",
     "created_at": "2010-09-27T11:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9564#issuecomment-92330",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from malb to tba.
+Changing assignee from @malb to tba.
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_092331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9564#issuecomment-92331",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_092332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9564#issuecomment-92332",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_092333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9564#issuecomment-92333",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_092334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9564#issuecomment-92334",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_092335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9564#issuecomment-92335",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_092336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9564#issuecomment-92336",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_092337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9564#issuecomment-92337",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_092338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9564#issuecomment-92338",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

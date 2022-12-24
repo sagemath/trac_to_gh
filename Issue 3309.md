@@ -14,7 +14,7 @@ archive/issues_003309.json:
     "title": "massively optimize the binomial function when an input is real or complex floating point",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3309",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -118,7 +118,7 @@ archive/issue_comments_022885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3309#issuecomment-22885",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_022886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3309#issuecomment-22886",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_022887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3309#issuecomment-22887",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -248,16 +248,16 @@ sage: %timeit binomial(x, y)
 archive/issue_comments_022888.json:
 ```json
 {
-    "body": "Attachment [trac_3309.patch](tarball://root/attachments/some-uuid/ticket3309/trac_3309.patch) by ddrake created at 2009-03-24 06:47:04",
+    "body": "Attachment [trac_3309.patch](tarball://root/attachments/some-uuid/ticket3309/trac_3309.patch) by @dandrake created at 2009-03-24 06:47:04",
     "created_at": "2009-03-24T06:47:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3309#issuecomment-22888",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_3309.patch](tarball://root/attachments/some-uuid/ticket3309/trac_3309.patch) by ddrake created at 2009-03-24 06:47:04
+Attachment [trac_3309.patch](tarball://root/attachments/some-uuid/ticket3309/trac_3309.patch) by @dandrake created at 2009-03-24 06:47:04
 
 
 
@@ -266,16 +266,16 @@ Attachment [trac_3309.patch](tarball://root/attachments/some-uuid/ticket3309/tra
 archive/issue_comments_022889.json:
 ```json
 {
-    "body": "Attachment [trac_3309-referee.patch](tarball://root/attachments/some-uuid/ticket3309/trac_3309-referee.patch) by was created at 2009-04-12 03:25:05",
+    "body": "Attachment [trac_3309-referee.patch](tarball://root/attachments/some-uuid/ticket3309/trac_3309-referee.patch) by @williamstein created at 2009-04-12 03:25:05",
     "created_at": "2009-04-12T03:25:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3309#issuecomment-22889",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_3309-referee.patch](tarball://root/attachments/some-uuid/ticket3309/trac_3309-referee.patch) by was created at 2009-04-12 03:25:05
+Attachment [trac_3309-referee.patch](tarball://root/attachments/some-uuid/ticket3309/trac_3309-referee.patch) by @williamstein created at 2009-04-12 03:25:05
 
 
 

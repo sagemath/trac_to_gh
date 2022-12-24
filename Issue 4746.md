@@ -14,7 +14,7 @@ archive/issues_004746.json:
     "title": "Bug in srange",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4746",
-    "user": "vgermrk"
+    "user": "@m-r-k"
 }
 ```
 Assignee: cwitty
@@ -86,7 +86,7 @@ archive/issue_comments_035908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4746#issuecomment-35908",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_035909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4746#issuecomment-35909",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_035910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4746#issuecomment-35910",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_035912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4746#issuecomment-35912",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -244,16 +244,16 @@ array([ 0.5,  0.6,  0.7,  0.8,  0.9,  1. ,  1.1])
 archive/issue_comments_035913.json:
 ```json
 {
-    "body": "Attachment [4746-srange.patch](tarball://root/attachments/some-uuid/ticket4746/4746-srange.patch) by robertwb created at 2009-01-23 10:43:39\n\nBetter documentation, and hopefully a bit easier to follow.",
+    "body": "Attachment [4746-srange.patch](tarball://root/attachments/some-uuid/ticket4746/4746-srange.patch) by @robertwb created at 2009-01-23 10:43:39\n\nBetter documentation, and hopefully a bit easier to follow.",
     "created_at": "2009-01-23T10:43:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4746#issuecomment-35913",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4746-srange.patch](tarball://root/attachments/some-uuid/ticket4746/4746-srange.patch) by robertwb created at 2009-01-23 10:43:39
+Attachment [4746-srange.patch](tarball://root/attachments/some-uuid/ticket4746/4746-srange.patch) by @robertwb created at 2009-01-23 10:43:39
 
 Better documentation, and hopefully a bit easier to follow.
 

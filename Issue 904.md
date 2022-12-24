@@ -3,7 +3,7 @@
 archive/issues_000904.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\nThis adds is_clique and is_indendent_set functions to undirected graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/904\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThis adds is_clique and is_indendent_set functions to undirected graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/904\n\n",
     "created_at": "2007-10-15T22:19:21Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000904.json:
     "title": "[with patch] graphs: clique-testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/904",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/904
 archive/issue_comments_005566.json:
 ```json
 {
-    "body": "Attachment [clique_ind_set.patch](tarball://root/attachments/some-uuid/ticket904/clique_ind_set.patch) by jason created at 2007-10-15 22:19:30",
+    "body": "Attachment [clique_ind_set.patch](tarball://root/attachments/some-uuid/ticket904/clique_ind_set.patch) by @jasongrout created at 2007-10-15 22:19:30",
     "created_at": "2007-10-15T22:19:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/904#issuecomment-5566",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [clique_ind_set.patch](tarball://root/attachments/some-uuid/ticket904/clique_ind_set.patch) by jason created at 2007-10-15 22:19:30
+Attachment [clique_ind_set.patch](tarball://root/attachments/some-uuid/ticket904/clique_ind_set.patch) by @jasongrout created at 2007-10-15 22:19:30
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_005567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/904#issuecomment-5567",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,16 +74,16 @@ This functionality now gives us the Combinatorica EmptyQ and CompleteQ functions
 archive/issue_comments_005568.json:
 ```json
 {
-    "body": "Attachment [clique_ind_set-2.patch](tarball://root/attachments/some-uuid/ticket904/clique_ind_set-2.patch) by jason created at 2007-10-17 16:12:06\n\nReplaces the first patch above.",
+    "body": "Attachment [clique_ind_set-2.patch](tarball://root/attachments/some-uuid/ticket904/clique_ind_set-2.patch) by @jasongrout created at 2007-10-17 16:12:06\n\nReplaces the first patch above.",
     "created_at": "2007-10-17T16:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/904#issuecomment-5568",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [clique_ind_set-2.patch](tarball://root/attachments/some-uuid/ticket904/clique_ind_set-2.patch) by jason created at 2007-10-17 16:12:06
+Attachment [clique_ind_set-2.patch](tarball://root/attachments/some-uuid/ticket904/clique_ind_set-2.patch) by @jasongrout created at 2007-10-17 16:12:06
 
 Replaces the first patch above.
 
@@ -99,7 +99,7 @@ archive/issue_comments_005569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/904#issuecomment-5569",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_005570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/904#issuecomment-5570",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_005571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/904#issuecomment-5571",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

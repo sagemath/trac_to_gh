@@ -14,7 +14,7 @@ archive/issues_004868.json:
     "title": "optional polymake spkg quickly fails to build on sage.math",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4868",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -53,7 +53,7 @@ archive/issue_comments_036881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4868#issuecomment-36881",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_036882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4868#issuecomment-36882",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003817.json:
     "title": "notebook -- completel broken in sage-3.1.alpha1 -- one can't even log in.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3817",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -60,7 +60,7 @@ archive/issue_comments_027153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3817#issuecomment-27153",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_027154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3817#issuecomment-27154",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

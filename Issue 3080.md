@@ -3,7 +3,7 @@
 archive/issues_003080.json:
 ```json
 {
-    "body": "Assignee: yi\n\n\n```\nsage -t devel/sage/sage/dsage/tests/testdoc.py\n```\n\nnever finishes for me (even after 1hr +).  I have to Ctrl-C my doctests to get them to finish.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3080\n\n",
+    "body": "Assignee: @yqiang\n\n\n```\nsage -t devel/sage/sage/dsage/tests/testdoc.py\n```\n\nnever finishes for me (even after 1hr +).  I have to Ctrl-C my doctests to get them to finish.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3080\n\n",
     "created_at": "2008-05-02T13:26:09Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_003080.json:
     "title": "testdoc.py hangs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3080",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 
 ```
@@ -42,7 +42,7 @@ archive/issue_comments_021241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3080#issuecomment-21241",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

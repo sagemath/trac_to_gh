@@ -14,7 +14,7 @@ archive/issues_009790.json:
     "title": "Fix documentation for weave in the \"numerical_sage\" document",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9790",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mvngu
@@ -70,7 +70,7 @@ archive/issue_comments_096122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96122",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_096123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96123",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_096124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96124",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_096125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96125",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_096126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96126",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_096127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96127",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -188,16 +188,16 @@ This file is a mess, there is more clean-up to do.
 archive/issue_comments_096128.json:
 ```json
 {
-    "body": "Attachment [9791.patch](tarball://root/attachments/some-uuid/ticket9791/9791.patch) by jdemeyer created at 2011-01-25 17:52:04\n\nReplaces previous patch",
+    "body": "Attachment [9791.patch](tarball://root/attachments/some-uuid/ticket9791/9791.patch) by @jdemeyer created at 2011-01-25 17:52:04\n\nReplaces previous patch",
     "created_at": "2011-01-25T17:52:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96128",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9791.patch](tarball://root/attachments/some-uuid/ticket9791/9791.patch) by jdemeyer created at 2011-01-25 17:52:04
+Attachment [9791.patch](tarball://root/attachments/some-uuid/ticket9791/9791.patch) by @jdemeyer created at 2011-01-25 17:52:04
 
 Replaces previous patch
 
@@ -213,7 +213,7 @@ archive/issue_comments_096129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96129",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_096135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96135",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_096136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96136",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_096137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96137",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_096138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96138",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_096143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96143",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -522,7 +522,7 @@ archive/issue_comments_096144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96144",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -535,16 +535,16 @@ Fixed commit message, apply only this
 archive/issue_comments_096145.json:
 ```json
 {
-    "body": "Attachment [trac_9791_updatet_blitz_docu.3.patch](tarball://root/attachments/some-uuid/ticket9791/trac_9791_updatet_blitz_docu.3.patch) by jdemeyer created at 2011-01-28 13:47:51",
+    "body": "Attachment [trac_9791_updatet_blitz_docu.3.patch](tarball://root/attachments/some-uuid/ticket9791/trac_9791_updatet_blitz_docu.3.patch) by @jdemeyer created at 2011-01-28 13:47:51",
     "created_at": "2011-01-28T13:47:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96145",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_9791_updatet_blitz_docu.3.patch](tarball://root/attachments/some-uuid/ticket9791/trac_9791_updatet_blitz_docu.3.patch) by jdemeyer created at 2011-01-28 13:47:51
+Attachment [trac_9791_updatet_blitz_docu.3.patch](tarball://root/attachments/some-uuid/ticket9791/trac_9791_updatet_blitz_docu.3.patch) by @jdemeyer created at 2011-01-28 13:47:51
 
 
 
@@ -558,7 +558,7 @@ archive/issue_comments_096146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9790#issuecomment-96146",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

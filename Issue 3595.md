@@ -14,7 +14,7 @@ archive/issues_003595.json:
     "title": "the matplotlibrc file is missing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3595",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -46,7 +46,7 @@ archive/issue_comments_025407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3595#issuecomment-25407",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_025408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3595#issuecomment-25408",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002342.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis is a mistake from one of mabshoff's merges...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2342\n\n",
+    "body": "Assignee: @rlmill\n\nThis is a mistake from one of mabshoff's merges...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2342\n\n",
     "created_at": "2008-02-28T05:22:07Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002342.json:
     "title": "[with patch, needs easy review] digraphs show axes...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2342",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This is a mistake from one of mabshoff's merges...
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2342
 archive/issue_comments_015682.json:
 ```json
 {
-    "body": "Attachment [graph-axes.patch](tarball://root/attachments/some-uuid/ticket2342/graph-axes.patch) by rlm created at 2008-02-28 05:22:19",
+    "body": "Attachment [graph-axes.patch](tarball://root/attachments/some-uuid/ticket2342/graph-axes.patch) by @rlmill created at 2008-02-28 05:22:19",
     "created_at": "2008-02-28T05:22:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2342#issuecomment-15682",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [graph-axes.patch](tarball://root/attachments/some-uuid/ticket2342/graph-axes.patch) by rlm created at 2008-02-28 05:22:19
+Attachment [graph-axes.patch](tarball://root/attachments/some-uuid/ticket2342/graph-axes.patch) by @rlmill created at 2008-02-28 05:22:19
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_015683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2342#issuecomment-15683",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

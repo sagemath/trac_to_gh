@@ -3,7 +3,7 @@
 archive/issues_009344.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe is a bug in the matrix constructor. If the entries are given by a method, the output matrix is always square of dimension ncols\n\n\n```\nsage: matrix(QQ, 1, 3, lambda x,y: x)\n[0 0 0]\n[1 1 1]\n[2 2 2]\nsage: sage: matrix(QQ, 3, 1, lambda x,y: x)\n[0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9344\n\n",
+    "body": "Assignee: @aghitza\n\nThe is a bug in the matrix constructor. If the entries are given by a method, the output matrix is always square of dimension ncols\n\n\n```\nsage: matrix(QQ, 1, 3, lambda x,y: x)\n[0 0 0]\n[1 1 1]\n[2 2 2]\nsage: sage: matrix(QQ, 3, 1, lambda x,y: x)\n[0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9344\n\n",
     "created_at": "2010-06-26T10:13:59Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009344.json:
     "title": "matrix constructor does not honor nrows if given a method to generate the entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9344",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The is a bug in the matrix constructor. If the entries are given by a method, the output matrix is always square of dimension ncols
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9344
 archive/issue_comments_088695.json:
 ```json
 {
-    "body": "Attachment [matrices.patch](tarball://root/attachments/some-uuid/ticket9344/matrices.patch) by lftabera created at 2010-06-26 10:14:08",
+    "body": "Attachment [matrices.patch](tarball://root/attachments/some-uuid/ticket9344/matrices.patch) by @lftabera created at 2010-06-26 10:14:08",
     "created_at": "2010-06-26T10:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9344#issuecomment-88695",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [matrices.patch](tarball://root/attachments/some-uuid/ticket9344/matrices.patch) by lftabera created at 2010-06-26 10:14:08
+Attachment [matrices.patch](tarball://root/attachments/some-uuid/ticket9344/matrices.patch) by @lftabera created at 2010-06-26 10:14:08
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_088696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9344#issuecomment-88696",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_088697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9344#issuecomment-88697",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_088698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9344#issuecomment-88698",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -115,16 +115,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_088699.json:
 ```json
 {
-    "body": "Attachment [trac_9344-matrix_constructor_bug.patch](tarball://root/attachments/some-uuid/ticket9344/trac_9344-matrix_constructor_bug.patch) by davidloeffler created at 2010-06-30 08:56:04\n\napply this patch -- identical code but with more informative hg header information",
+    "body": "Attachment [trac_9344-matrix_constructor_bug.patch](tarball://root/attachments/some-uuid/ticket9344/trac_9344-matrix_constructor_bug.patch) by @loefflerd created at 2010-06-30 08:56:04\n\napply this patch -- identical code but with more informative hg header information",
     "created_at": "2010-06-30T08:56:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9344#issuecomment-88699",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9344-matrix_constructor_bug.patch](tarball://root/attachments/some-uuid/ticket9344/trac_9344-matrix_constructor_bug.patch) by davidloeffler created at 2010-06-30 08:56:04
+Attachment [trac_9344-matrix_constructor_bug.patch](tarball://root/attachments/some-uuid/ticket9344/trac_9344-matrix_constructor_bug.patch) by @loefflerd created at 2010-06-30 08:56:04
 
 apply this patch -- identical code but with more informative hg header information
 
@@ -140,7 +140,7 @@ archive/issue_comments_088700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9344#issuecomment-88700",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_088701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9344#issuecomment-88701",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

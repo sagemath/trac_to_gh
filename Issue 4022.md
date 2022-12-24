@@ -3,7 +3,7 @@
 archive/issues_004022.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThe attached patch implements -- in a slow, lame way -- Gr\u00f6bner bases over `ZZ` and `IntegerModRing` as defined in the Becker & Weispfenning. This code should be replaced by the new Singular code soon-ish, but it can't hurt to have a clean toy implementation.\n\nWhile I think that the `d_basis` implementation is correct, I recommend somebody double checks. Particularly, the `MPolynomial_libsingular.reduce` implementation  for ZZ should receive some careful examination.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4022\n\n",
+    "body": "Assignee: @malb\n\nThe attached patch implements -- in a slow, lame way -- Gr\u00f6bner bases over `ZZ` and `IntegerModRing` as defined in the Becker & Weispfenning. This code should be replaced by the new Singular code soon-ish, but it can't hurt to have a clean toy implementation.\n\nWhile I think that the `d_basis` implementation is correct, I recommend somebody double checks. Particularly, the `MPolynomial_libsingular.reduce` implementation  for ZZ should receive some careful examination.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4022\n\n",
     "created_at": "2008-08-31T17:13:50Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_004022.json:
     "title": "[with patch, needs review] Gr\u00f6bner bases over Z and Z/nZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4022",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 The attached patch implements -- in a slow, lame way -- Gröbner bases over `ZZ` and `IntegerModRing` as defined in the Becker & Weispfenning. This code should be replaced by the new Singular code soon-ish, but it can't hurt to have a clean toy implementation.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4022
 archive/issue_comments_029006.json:
 ```json
 {
-    "body": "Attachment [d_basis.patch](tarball://root/attachments/some-uuid/ticket4022/d_basis.patch) by malb created at 2008-08-31 17:14:13",
+    "body": "Attachment [d_basis.patch](tarball://root/attachments/some-uuid/ticket4022/d_basis.patch) by @malb created at 2008-08-31 17:14:13",
     "created_at": "2008-08-31T17:14:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4022",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-29006",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [d_basis.patch](tarball://root/attachments/some-uuid/ticket4022/d_basis.patch) by malb created at 2008-08-31 17:14:13
+Attachment [d_basis.patch](tarball://root/attachments/some-uuid/ticket4022/d_basis.patch) by @malb created at 2008-08-31 17:14:13
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_029007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4022",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-29007",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_029008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4022",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-29008",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_029009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4022",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-29009",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

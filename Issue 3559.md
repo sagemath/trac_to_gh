@@ -14,7 +14,7 @@ archive/issues_003559.json:
     "title": "[with patch; needs review] sage timeup script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3559",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3559
 archive/issue_comments_025155.json:
 ```json
 {
-    "body": "Attachment [scripts-3559.patch](tarball://root/attachments/some-uuid/ticket3559/scripts-3559.patch) by was created at 2008-07-06 08:21:14",
+    "body": "Attachment [scripts-3559.patch](tarball://root/attachments/some-uuid/ticket3559/scripts-3559.patch) by @williamstein created at 2008-07-06 08:21:14",
     "created_at": "2008-07-06T08:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3559#issuecomment-25155",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-3559.patch](tarball://root/attachments/some-uuid/ticket3559/scripts-3559.patch) by was created at 2008-07-06 08:21:14
+Attachment [scripts-3559.patch](tarball://root/attachments/some-uuid/ticket3559/scripts-3559.patch) by @williamstein created at 2008-07-06 08:21:14
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_025158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3559#issuecomment-25158",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -142,16 +142,16 @@ Cheers,
 archive/issue_comments_025159.json:
 ```json
 {
-    "body": "Attachment [scripts-3559-part2.patch](tarball://root/attachments/some-uuid/ticket3559/scripts-3559-part2.patch) by was created at 2008-07-06 17:15:51",
+    "body": "Attachment [scripts-3559-part2.patch](tarball://root/attachments/some-uuid/ticket3559/scripts-3559-part2.patch) by @williamstein created at 2008-07-06 17:15:51",
     "created_at": "2008-07-06T17:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3559#issuecomment-25159",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-3559-part2.patch](tarball://root/attachments/some-uuid/ticket3559/scripts-3559-part2.patch) by was created at 2008-07-06 17:15:51
+Attachment [scripts-3559-part2.patch](tarball://root/attachments/some-uuid/ticket3559/scripts-3559-part2.patch) by @williamstein created at 2008-07-06 17:15:51
 
 
 

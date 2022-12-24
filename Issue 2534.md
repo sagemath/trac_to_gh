@@ -3,7 +3,7 @@
 archive/issues_002534.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis causes problems when working with larger partitions.  For example,\n\n```\nsage: s = SFASchur(QQ)\nsage: a = s([8,8])\nsage: a.itensor(a)\n```\n\ngives the wrong results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2534\n\n",
+    "body": "Assignee: @williamstein\n\nThis causes problems when working with larger partitions.  For example,\n\n```\nsage: s = SFASchur(QQ)\nsage: a = s([8,8])\nsage: a.itensor(a)\n```\n\ngives the wrong results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2534\n\n",
     "created_at": "2008-03-15T23:36:24Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002534.json:
     "title": "Sage does not handle Symmetrica's large integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2534",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This causes problems when working with larger partitions.  For example,
 
@@ -45,7 +45,7 @@ archive/issue_comments_017276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2534#issuecomment-17276",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -58,16 +58,16 @@ Changing status from new to assigned.
 archive/issue_comments_017277.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-03-15T23:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2534#issuecomment-17277",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_017278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2534#issuecomment-17278",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -94,16 +94,16 @@ I have a fix for this, but cannot get the Cython generated code to compile.
 archive/issue_comments_017279.json:
 ```json
 {
-    "body": "Attachment [2534.patch](tarball://root/attachments/some-uuid/ticket2534/2534.patch) by mhansen created at 2008-03-16 03:32:25",
+    "body": "Attachment [2534.patch](tarball://root/attachments/some-uuid/ticket2534/2534.patch) by @mwhansen created at 2008-03-16 03:32:25",
     "created_at": "2008-03-16T03:32:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2534#issuecomment-17279",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2534.patch](tarball://root/attachments/some-uuid/ticket2534/2534.patch) by mhansen created at 2008-03-16 03:32:25
+Attachment [2534.patch](tarball://root/attachments/some-uuid/ticket2534/2534.patch) by @mwhansen created at 2008-03-16 03:32:25
 
 
 
@@ -112,16 +112,16 @@ Attachment [2534.patch](tarball://root/attachments/some-uuid/ticket2534/2534.pat
 archive/issue_comments_017280.json:
 ```json
 {
-    "body": "Attachment [2534.2.patch](tarball://root/attachments/some-uuid/ticket2534/2534.2.patch) by mhansen created at 2008-03-16 04:23:24\n\nOnly apply 2534.2.patch which was made against 2.10.4.alpha0.",
+    "body": "Attachment [2534.2.patch](tarball://root/attachments/some-uuid/ticket2534/2534.2.patch) by @mwhansen created at 2008-03-16 04:23:24\n\nOnly apply 2534.2.patch which was made against 2.10.4.alpha0.",
     "created_at": "2008-03-16T04:23:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2534#issuecomment-17280",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2534.2.patch](tarball://root/attachments/some-uuid/ticket2534/2534.2.patch) by mhansen created at 2008-03-16 04:23:24
+Attachment [2534.2.patch](tarball://root/attachments/some-uuid/ticket2534/2534.2.patch) by @mwhansen created at 2008-03-16 04:23:24
 
 Only apply 2534.2.patch which was made against 2.10.4.alpha0.
 

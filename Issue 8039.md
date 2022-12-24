@@ -14,7 +14,7 @@ archive/issues_008039.json:
     "title": "[with spkg, needs review] ATLAS libs fail to build on Open Solaris 64 bit due to wrong LDFLAG -melf_x86_64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8039",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -46,7 +46,7 @@ archive/issue_comments_070242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70242",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_070245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70245",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -232,16 +232,16 @@ Dave
 archive/issue_comments_070248.json:
 ```json
 {
-    "body": "Attachment [atlas-3.8.3.p11.patch](tarball://root/attachments/some-uuid/ticket8039/atlas-3.8.3.p11.patch) by jsp created at 2010-01-27 15:02:55\n\nMostly done as you wrote above.\n\nReported upstream:\n[https://sourceforge.net/tracker/?func=detail&aid=2941029&group_id=23725&atid=379483](https://sourceforge.net/tracker/?func=detail&aid=2941029&group_id=23725&atid=379483)\n\nJaap",
+    "body": "Attachment [atlas-3.8.3.p11.patch](tarball://root/attachments/some-uuid/ticket8039/atlas-3.8.3.p11.patch) by @jaapspies created at 2010-01-27 15:02:55\n\nMostly done as you wrote above.\n\nReported upstream:\n[https://sourceforge.net/tracker/?func=detail&aid=2941029&group_id=23725&atid=379483](https://sourceforge.net/tracker/?func=detail&aid=2941029&group_id=23725&atid=379483)\n\nJaap",
     "created_at": "2010-01-27T15:02:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70248",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [atlas-3.8.3.p11.patch](tarball://root/attachments/some-uuid/ticket8039/atlas-3.8.3.p11.patch) by jsp created at 2010-01-27 15:02:55
+Attachment [atlas-3.8.3.p11.patch](tarball://root/attachments/some-uuid/ticket8039/atlas-3.8.3.p11.patch) by @jaapspies created at 2010-01-27 15:02:55
 
 Mostly done as you wrote above.
 
@@ -262,7 +262,7 @@ archive/issue_comments_070249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70249",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_070253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70253",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_070254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70254",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_070255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70255",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_070258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70258",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_070259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70259",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_070260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70260",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_070261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70261",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -574,7 +574,7 @@ archive/issue_comments_070262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70262",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_070263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70263",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -610,16 +610,16 @@ Yes, I've already those.
 archive/issue_comments_070264.json:
 ```json
 {
-    "body": "Attachment [atlas-3.8.3.p12.patch](tarball://root/attachments/some-uuid/ticket8039/atlas-3.8.3.p12.patch) by jsp created at 2010-02-22 21:39:10\n\nUpdated patch",
+    "body": "Attachment [atlas-3.8.3.p12.patch](tarball://root/attachments/some-uuid/ticket8039/atlas-3.8.3.p12.patch) by @jaapspies created at 2010-02-22 21:39:10\n\nUpdated patch",
     "created_at": "2010-02-22T21:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70264",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [atlas-3.8.3.p12.patch](tarball://root/attachments/some-uuid/ticket8039/atlas-3.8.3.p12.patch) by jsp created at 2010-02-22 21:39:10
+Attachment [atlas-3.8.3.p12.patch](tarball://root/attachments/some-uuid/ticket8039/atlas-3.8.3.p12.patch) by @jaapspies created at 2010-02-22 21:39:10
 
 Updated patch
 
@@ -635,7 +635,7 @@ archive/issue_comments_070265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70265",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -653,7 +653,7 @@ archive/issue_comments_070266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8039#issuecomment-70266",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

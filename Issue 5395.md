@@ -3,7 +3,7 @@
 archive/issues_005395.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  mhansen\n\nWith the new version of the documentation, the first lines of some files in the Sage library got broken into two lines, and this messes up the table of contents in the reference manual.  The attached patch fixes the instances of that that I found, as well as a few other little things.\n\nNote that in order to see my changes, I couldn't just do 'sage -docbuild reference html' -- the file index.html wasn't getting rebuilt.  I ended up building the manual from scratch, but maybe there's an easier way...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5395\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @mwhansen\n\nWith the new version of the documentation, the first lines of some files in the Sage library got broken into two lines, and this messes up the table of contents in the reference manual.  The attached patch fixes the instances of that that I found, as well as a few other little things.\n\nNote that in order to see my changes, I couldn't just do 'sage -docbuild reference html' -- the file index.html wasn't getting rebuilt.  I ended up building the manual from scratch, but maybe there's an easier way...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5395\n\n",
     "created_at": "2009-02-27T20:09:38Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_005395.json:
     "title": "[with patch, needs review] a few fixes for the ReST conversion of the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5395",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
-CC:  mhansen
+CC:  @mwhansen
 
 With the new version of the documentation, the first lines of some files in the Sage library got broken into two lines, and this messes up the table of contents in the reference manual.  The attached patch fixes the instances of that that I found, as well as a few other little things.
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5395
 archive/issue_comments_041547.json:
 ```json
 {
-    "body": "Attachment [ref-headings.patch](tarball://root/attachments/some-uuid/ticket5395/ref-headings.patch) by jhpalmieri created at 2009-02-27 20:10:24",
+    "body": "Attachment [ref-headings.patch](tarball://root/attachments/some-uuid/ticket5395/ref-headings.patch) by @jhpalmieri created at 2009-02-27 20:10:24",
     "created_at": "2009-02-27T20:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5395#issuecomment-41547",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [ref-headings.patch](tarball://root/attachments/some-uuid/ticket5395/ref-headings.patch) by jhpalmieri created at 2009-02-27 20:10:24
+Attachment [ref-headings.patch](tarball://root/attachments/some-uuid/ticket5395/ref-headings.patch) by @jhpalmieri created at 2009-02-27 20:10:24
 
 
 
@@ -60,7 +60,7 @@ archive/issue_comments_041548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5395#issuecomment-41548",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_041549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5395#issuecomment-41549",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006869.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  schilly wdj mvngu\n\nHello everybody !!!\n\nAfter the work done in #6502 I rewrote the whole class taking into account the fact that some people may want to use this class too, instead of just focusing on the fact I needed it quickly to write Graph-Theoretic functions.\n\nHere is the new numerical.MIP class, using symbolics, I hope sufficiently documented and tested, and everything... Thank you for your help !! This should be the last run ;-)\n\nTo use it, you have to install either GLPK from ticket #6867 or Coin-OR CBC from #6868 ( if you have installed a former version, they won't be compatible ! )\n\nThe class and the doctests, though, should behave peacefully if none of them is installed ! :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6869\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @haraldschilly @wdjoyner mvngu\n\nHello everybody !!!\n\nAfter the work done in #6502 I rewrote the whole class taking into account the fact that some people may want to use this class too, instead of just focusing on the fact I needed it quickly to write Graph-Theoretic functions.\n\nHere is the new numerical.MIP class, using symbolics, I hope sufficiently documented and tested, and everything... Thank you for your help !! This should be the last run ;-)\n\nTo use it, you have to install either GLPK from ticket #6867 or Coin-OR CBC from #6868 ( if you have installed a former version, they won't be compatible ! )\n\nThe class and the doctests, though, should behave peacefully if none of them is installed ! :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6869\n\n",
     "created_at": "2009-09-02T17:39:06Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_006869.json:
     "title": "[with patch, needs work] LP and MIP Solvers in Sage ( with symbolics )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6869",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
 
-CC:  schilly wdj mvngu
+CC:  @haraldschilly @wdjoyner mvngu
 
 Hello everybody !!!
 
@@ -49,7 +49,7 @@ archive/issue_comments_056689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6869#issuecomment-56689",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_056691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6869#issuecomment-56691",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -127,16 +127,16 @@ Done !
 archive/issue_comments_056692.json:
 ```json
 {
-    "body": "Attachment [MIP-now-symbolic.patch](tarball://root/attachments/some-uuid/ticket6869/MIP-now-symbolic.patch) by ncohen created at 2009-09-09 17:53:08",
+    "body": "Attachment [MIP-now-symbolic.patch](tarball://root/attachments/some-uuid/ticket6869/MIP-now-symbolic.patch) by @nathanncohen created at 2009-09-09 17:53:08",
     "created_at": "2009-09-09T17:53:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6869#issuecomment-56692",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [MIP-now-symbolic.patch](tarball://root/attachments/some-uuid/ticket6869/MIP-now-symbolic.patch) by ncohen created at 2009-09-09 17:53:08
+Attachment [MIP-now-symbolic.patch](tarball://root/attachments/some-uuid/ticket6869/MIP-now-symbolic.patch) by @nathanncohen created at 2009-09-09 17:53:08
 
 
 
@@ -246,7 +246,7 @@ archive/issue_comments_056694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6869#issuecomment-56694",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_056697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6869#issuecomment-56697",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

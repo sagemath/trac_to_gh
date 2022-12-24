@@ -3,7 +3,7 @@
 archive/issues_009795.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  kcrisman\n\nSee http://ask.sagemath.org/question/54/how-to-get-the-diagonal-of-a-matrix\n\nIssue created by migration from https://trac.sagemath.org/ticket/9796\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nSee http://ask.sagemath.org/question/54/how-to-get-the-diagonal-of-a-matrix\n\nIssue created by migration from https://trac.sagemath.org/ticket/9796\n\n",
     "created_at": "2010-08-24T15:54:40Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_009795.json:
     "title": "Add a \"diagonal\" method for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9795",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  kcrisman
+CC:  @kcrisman
 
 See http://ask.sagemath.org/question/54/how-to-get-the-diagonal-of-a-matrix
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9796
 archive/issue_comments_096167.json:
 ```json
 {
-    "body": "Attachment [trac_9796-matrix-diagonal-elements.patch](tarball://root/attachments/some-uuid/ticket9796/trac_9796-matrix-diagonal-elements.patch) by rbeezer created at 2011-01-13 04:29:05",
+    "body": "Attachment [trac_9796-matrix-diagonal-elements.patch](tarball://root/attachments/some-uuid/ticket9796/trac_9796-matrix-diagonal-elements.patch) by @rbeezer created at 2011-01-13 04:29:05",
     "created_at": "2011-01-13T04:29:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96167",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9796-matrix-diagonal-elements.patch](tarball://root/attachments/some-uuid/ticket9796/trac_9796-matrix-diagonal-elements.patch) by rbeezer created at 2011-01-13 04:29:05
+Attachment [trac_9796-matrix-diagonal-elements.patch](tarball://root/attachments/some-uuid/ticket9796/trac_9796-matrix-diagonal-elements.patch) by @rbeezer created at 2011-01-13 04:29:05
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_096168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96168",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_096169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96169",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_096172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96172",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_096173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96173",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_096174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96174",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_096175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96175",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

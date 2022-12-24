@@ -3,7 +3,7 @@
 archive/issues_005795.json:
 ```json
 {
-    "body": "Assignee: SimonKing\n\nCC:  malb\n\nKeywords: MPolynomialRing_libsingular, coercion, call\n\nOne comment in the `__call__()` method of MPolynomialRing_libsingular states:\n #TODO: We can do this faster without the dict\n\nIn fact, we can!\n\nWithout the patch, we have the following timings on sage.math:\n\n```\nsage: R=PolynomialRing(QQ,5,'x')\nsage: S=PolynomialRing(QQ,6,'x')\nsage: T=PolynomialRing(QQ,5,'y')\nsage: U=PolynomialRing(GF(2),5,'x')\nsage: p=R('x0*x1+2*x4+x3*x1^2')^4\nsage: timeit('q=S(p)')\n625 loops, best of 3: 341 \u00c2\u00b5s per loop\nsage: timeit('q=T(p)')\n625 loops, best of 3: 370 \u00c2\u00b5s per loop\nsage: timeit('q=U(p)')\n625 loops, best of 3: 451 \u00c2\u00b5s per loop\n```\n\n\nWith the patch, we have\n\n```\nsage: timeit('q=S(p)')\n625 loops, best of 3: 328 \u00c2\u00b5s per loop\nsage: timeit('q=T(p)')\n625 loops, best of 3: 292 \u00c2\u00b5s per loop\nsage: timeit('q=U(p)')\n625 loops, best of 3: 396 \u00c2\u00b5s per loop\n```\n\nSo, the improvement is small, but it *is* an improvement.\n\nBackground: \n In the original version, if the input of `__call__` is MPolynomial_libsingular, then the `dict()` method of this polynomial was called in order to get the coefficients and exponent vectors. \n \n In the new version, the underlying libsingular methods are called directly, which is faster. The price to pay is that currRing changes more often. I hope change of currRing is not too expensive (in my examples above, apparently it isn't).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5795\n\n",
+    "body": "Assignee: @simon-king-jena\n\nCC:  @malb\n\nKeywords: MPolynomialRing_libsingular, coercion, call\n\nOne comment in the `__call__()` method of MPolynomialRing_libsingular states:\n #TODO: We can do this faster without the dict\n\nIn fact, we can!\n\nWithout the patch, we have the following timings on sage.math:\n\n```\nsage: R=PolynomialRing(QQ,5,'x')\nsage: S=PolynomialRing(QQ,6,'x')\nsage: T=PolynomialRing(QQ,5,'y')\nsage: U=PolynomialRing(GF(2),5,'x')\nsage: p=R('x0*x1+2*x4+x3*x1^2')^4\nsage: timeit('q=S(p)')\n625 loops, best of 3: 341 \u00c2\u00b5s per loop\nsage: timeit('q=T(p)')\n625 loops, best of 3: 370 \u00c2\u00b5s per loop\nsage: timeit('q=U(p)')\n625 loops, best of 3: 451 \u00c2\u00b5s per loop\n```\n\n\nWith the patch, we have\n\n```\nsage: timeit('q=S(p)')\n625 loops, best of 3: 328 \u00c2\u00b5s per loop\nsage: timeit('q=T(p)')\n625 loops, best of 3: 292 \u00c2\u00b5s per loop\nsage: timeit('q=U(p)')\n625 loops, best of 3: 396 \u00c2\u00b5s per loop\n```\n\nSo, the improvement is small, but it *is* an improvement.\n\nBackground: \n In the original version, if the input of `__call__` is MPolynomial_libsingular, then the `dict()` method of this polynomial was called in order to get the coefficients and exponent vectors. \n \n In the new version, the underlying libsingular methods are called directly, which is faster. The price to pay is that currRing changes more often. I hope change of currRing is not too expensive (in my examples above, apparently it isn't).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5795\n\n",
     "created_at": "2009-04-16T02:50:47Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_005795.json:
     "title": "Improved performance of MPolynomialRing_libsingular.__call__()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5795",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: SimonKing
+Assignee: @simon-king-jena
 
-CC:  malb
+CC:  @malb
 
 Keywords: MPolynomialRing_libsingular, coercion, call
 
@@ -75,16 +75,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5795
 archive/issue_comments_045443.json:
 ```json
 {
-    "body": "Attachment [MPolyRingCall.patch](tarball://root/attachments/some-uuid/ticket5795/MPolyRingCall.patch) by SimonKing created at 2009-04-16 02:51:35\n\nImproved performance for polynomial conversion",
+    "body": "Attachment [MPolyRingCall.patch](tarball://root/attachments/some-uuid/ticket5795/MPolyRingCall.patch) by @simon-king-jena created at 2009-04-16 02:51:35\n\nImproved performance for polynomial conversion",
     "created_at": "2009-04-16T02:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5795#issuecomment-45443",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [MPolyRingCall.patch](tarball://root/attachments/some-uuid/ticket5795/MPolyRingCall.patch) by SimonKing created at 2009-04-16 02:51:35
+Attachment [MPolyRingCall.patch](tarball://root/attachments/some-uuid/ticket5795/MPolyRingCall.patch) by @simon-king-jena created at 2009-04-16 02:51:35
 
 Improved performance for polynomial conversion
 
@@ -100,7 +100,7 @@ archive/issue_comments_045444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5795#issuecomment-45444",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_045445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5795#issuecomment-45445",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_045446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5795#issuecomment-45446",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_045447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5795#issuecomment-45447",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

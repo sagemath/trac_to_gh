@@ -3,7 +3,7 @@
 archive/issues_000198.json:
 ```json
 {
-    "body": "Assignee: was\n\n*  Some algorithms haven't been completely implemented.  (Some do things I never implemented in MAGMA.)\n    - finish modular forms algorithms\n    - enable modular forms doctests and test and fix\n    - finish implementing modular symbols factorization in general (eisenstein part is currently not fully implemented)\n    - computation of period mapping\n    - more testing, examples, etc., for modular symbos for GammaH\n     \n\nIssue created by migration from https://trac.sagemath.org/ticket/198\n\n",
+    "body": "Assignee: @williamstein\n\n*  Some algorithms haven't been completely implemented.  (Some do things I never implemented in MAGMA.)\n    - finish modular forms algorithms\n    - enable modular forms doctests and test and fix\n    - finish implementing modular symbols factorization in general (eisenstein part is currently not fully implemented)\n    - computation of period mapping\n    - more testing, examples, etc., for modular symbos for GammaH\n     \n\nIssue created by migration from https://trac.sagemath.org/ticket/198\n\n",
     "created_at": "2007-01-19T09:59:59Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_000198.json:
     "title": "Improve modular symbols and modular forms.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/198",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 *  Some algorithms haven't been completely implemented.  (Some do things I never implemented in MAGMA.)
     - finish modular forms algorithms
@@ -65,7 +65,7 @@ archive/issue_comments_000898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/198#issuecomment-898",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_000899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/198#issuecomment-899",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

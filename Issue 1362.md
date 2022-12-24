@@ -3,7 +3,7 @@
 archive/issues_001362.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1362\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1362\n\n",
     "created_at": "2007-12-02T04:42:20Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001362.json:
     "title": "edge labeled graph isomorphism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1362",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_008726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1362#issuecomment-8726",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_008727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1362#issuecomment-8727",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_008728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1362#issuecomment-8728",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

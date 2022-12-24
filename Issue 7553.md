@@ -3,7 +3,7 @@
 archive/issues_007553.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  mhansen\n\nAs discussed at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f59fc5f7aef7448a) thread, we need to document exactly where the environment variable `SAGE_FORTRAN` is used. The file README.txt mentions this environment variable. It should also say something about where exactly this variable is used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7553\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @mwhansen\n\nAs discussed at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f59fc5f7aef7448a) thread, we need to document exactly where the environment variable `SAGE_FORTRAN` is used. The file README.txt mentions this environment variable. It should also say something about where exactly this variable is used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7553\n\n",
     "created_at": "2009-11-29T08:47:51Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_007553.json:
 ```
 Assignee: mvngu
 
-CC:  mhansen
+CC:  @mwhansen
 
 As discussed at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f59fc5f7aef7448a) thread, we need to document exactly where the environment variable `SAGE_FORTRAN` is used. The file README.txt mentions this environment variable. It should also say something about where exactly this variable is used.
 
@@ -268,7 +268,7 @@ archive/issue_comments_064205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7553#issuecomment-64205",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_064206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7553",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7553#issuecomment-64206",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

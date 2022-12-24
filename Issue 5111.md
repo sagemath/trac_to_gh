@@ -3,7 +3,7 @@
 archive/issues_005111.json:
 ```json
 {
-    "body": "Assignee: was\n\nChange axiom.py to fricas.py and the axiom command to fricas.  \n\nThis is more logical since the doctests test fricas not axiom.  Also, this has been specifically requested by Tim Daly -- the trademark owner on the name Axiom -- and I think it is best to respect his request.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5111\n\n",
+    "body": "Assignee: @williamstein\n\nChange axiom.py to fricas.py and the axiom command to fricas.  \n\nThis is more logical since the doctests test fricas not axiom.  Also, this has been specifically requested by Tim Daly -- the trademark owner on the name Axiom -- and I think it is best to respect his request.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5111\n\n",
     "created_at": "2009-01-27T20:33:05Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_005111.json:
     "title": "axiom --> fricas",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5111",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Change axiom.py to fricas.py and the axiom command to fricas.  
 
@@ -39,7 +39,7 @@ archive/issue_comments_039047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5111#issuecomment-39047",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_039048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5111#issuecomment-39048",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_039049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5111#issuecomment-39049",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,16 +101,16 @@ archive/issue_comments_039049.json:
 archive/issue_comments_039050.json:
 ```json
 {
-    "body": "Attachment [trac_5111.patch](tarball://root/attachments/some-uuid/ticket5111/trac_5111.patch) by mhansen created at 2009-02-19 17:39:40",
+    "body": "Attachment [trac_5111.patch](tarball://root/attachments/some-uuid/ticket5111/trac_5111.patch) by @mwhansen created at 2009-02-19 17:39:40",
     "created_at": "2009-02-19T17:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5111#issuecomment-39050",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5111.patch](tarball://root/attachments/some-uuid/ticket5111/trac_5111.patch) by mhansen created at 2009-02-19 17:39:40
+Attachment [trac_5111.patch](tarball://root/attachments/some-uuid/ticket5111/trac_5111.patch) by @mwhansen created at 2009-02-19 17:39:40
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_039051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5111#issuecomment-39051",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -137,16 +137,16 @@ Changing status from new to assigned.
 archive/issue_comments_039052.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2009-02-19T17:41:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5111#issuecomment-39052",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -160,7 +160,7 @@ archive/issue_comments_039053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5111#issuecomment-39053",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_039054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5111#issuecomment-39054",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_039059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5111#issuecomment-39059",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_039062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5111#issuecomment-39062",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

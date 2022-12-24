@@ -3,7 +3,7 @@
 archive/issues_000347.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  slelievre tornaria was\n\nInclude all these gp scripts with SAGE and make them easily usable from SAGE itself:\n\n   http://www.ma.utexas.edu/users/villegas/cnt/cnt-no-frames.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/347\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @slel @tornaria @williamstein\n\nInclude all these gp scripts with SAGE and make them easily usable from SAGE itself:\n\n   http://www.ma.utexas.edu/users/villegas/cnt/cnt-no-frames.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/347\n\n",
     "created_at": "2007-04-05T19:07:50Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_000347.json:
     "title": "Get Fernando and Gonzalo's quaternion algebra and related code into SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/347",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  slelievre tornaria was
+CC:  @slel @tornaria @williamstein
 
 Include all these gp scripts with SAGE and make them easily usable from SAGE itself:
 
@@ -41,7 +41,7 @@ archive/issue_comments_001689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/347#issuecomment-1689",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_001690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/347#issuecomment-1690",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_001691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/347#issuecomment-1691",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

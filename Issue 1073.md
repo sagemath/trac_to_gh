@@ -3,7 +3,7 @@
 archive/issues_001073.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis would save people a lot of confusion.\n\n\n```\n$ sage -pkg foo-bar-2.3\n...\n\nCreated package foo-bar-2.3.spkg, \n\nNAME: foo\nVERSION: bar-2.3      (not version number looks suspicious)\nSIZE: 2.3MB\nHG REPO: Unchecked in changes (!)\nSPKG.txt: File is missing.\n\nPlease test this package using\n    sage -f foo-bar-2.3.spkg\nimmediately.   Also, note that you can use \n    sage -pkg_nc foo-bar-2.3\nto make an uncompressed version of the package (useful if the\npackage is full of compressed data).\n\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1073\n\n",
+    "body": "Assignee: @williamstein\n\nThis would save people a lot of confusion.\n\n\n```\n$ sage -pkg foo-bar-2.3\n...\n\nCreated package foo-bar-2.3.spkg, \n\nNAME: foo\nVERSION: bar-2.3      (not version number looks suspicious)\nSIZE: 2.3MB\nHG REPO: Unchecked in changes (!)\nSPKG.txt: File is missing.\n\nPlease test this package using\n    sage -f foo-bar-2.3.spkg\nimmediately.   Also, note that you can use \n    sage -pkg_nc foo-bar-2.3\nto make an uncompressed version of the package (useful if the\npackage is full of compressed data).\n\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1073\n\n",
     "created_at": "2007-11-02T23:49:55Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001073.json:
     "title": "right after \"sage -pkg\" creates a package, print out some useful information",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1073",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This would save people a lot of confusion.
 
@@ -62,7 +62,7 @@ archive/issue_comments_006495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1073",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1073#issuecomment-6495",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,16 +75,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_006496.json:
 ```json
 {
-    "body": "Attachment [trac_1073.patch](tarball://root/attachments/some-uuid/ticket1073/trac_1073.patch) by malb created at 2008-01-06 14:11:32\n\nI am not a bash expert but the attached patch does the job for me.",
+    "body": "Attachment [trac_1073.patch](tarball://root/attachments/some-uuid/ticket1073/trac_1073.patch) by @malb created at 2008-01-06 14:11:32\n\nI am not a bash expert but the attached patch does the job for me.",
     "created_at": "2008-01-06T14:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1073",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1073#issuecomment-6496",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1073.patch](tarball://root/attachments/some-uuid/ticket1073/trac_1073.patch) by malb created at 2008-01-06 14:11:32
+Attachment [trac_1073.patch](tarball://root/attachments/some-uuid/ticket1073/trac_1073.patch) by @malb created at 2008-01-06 14:11:32
 
 I am not a bash expert but the attached patch does the job for me.
 

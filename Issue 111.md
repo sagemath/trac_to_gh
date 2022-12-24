@@ -3,7 +3,7 @@
 archive/issues_000111.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb mhansen\n\nThere are many instances of copy methods in SAGE.  They should all be __copy__, which\nis what gets called by the standard copy module (part of the standard Python library). \n\n\n```\nsage: search_sage('def copy')\n\nmatrix/sparse_matrix.py:    def copy(self):\nmodules/free_module_element.py:    def copy(self):\nplot/graph.py:    def copy(self, name):\nrings/finite_field_element.py:    def copy(self):\nrings/fraction_field_element.py:    def copy(self):\nrings/laurent_series_ring_element.py:    def copy(self):\nrings/padic.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/power_series_ring_element.py:    def copy(self):\nrings/power_series_ring_element.py:    def copy(self):\nrings/quotient_ring_element.py:    def copy(self):\nlibs/pari/functional.py:def copy(self): return pari(self).copy()\nmodular/modsym/manin_symbols.py:    def copy(self):\nserver/server1/server1.py:    def copyfile(self, source, outputfile): \nmatrix/dense_matrix_pyx.pyx:    def copy(self):\nmatrix/matrix_generic.pyx:    def copy(self):\nmatrix/matrix_integer_dense.pyx:    def copy(self):\nmatrix/matrix_modn_dense.pyx:    def copy(Matrix_modn_dense self):\nmatrix/matrix_modn_sparse.pyx:    def copy(self):\nmatrix/matrix_rational_dense.pyx:    def copy(self):\nmatrix/sparse_matrix_pyx.pyx:    def copy(self):\nmatrix/sparse_matrix_pyx.pyx:    def copy(self):\nmatrix/sparse_matrix_pyx.pyx:    def copy(self):\nrings/integer.pyx:    def copy(self):\nrings/integer_mod.pyx:    def copy(IntegerMod_gmp self):\nrings/integer_mod.pyx:    def copy(IntegerMod_int self):\nrings/integer_mod.pyx:    def copy(IntegerMod_int64 self):\nrings/mpc.pyx:    def copy(self):\nrings/polynomial_pyx.pyx:    def copy(self):\nrings/polynomial_pyx.pyx:    def copy(self):\nrings/rational.pyx:    def copy(self):\nrings/real_double.pyx:    def copy(self):\nrings/real_mpfr.pyx:    def copy(self):\nrings/sparse_poly.pyx:    def copy(self):\nrings/sparse_poly.pyx:    def copy(self):\nlibs/linbox/finite_field_givaro.pyx:    def copy(self):\nlibs/ntl/ntl.pyx:    def copy(self):\nlibs/ntl/ntl.pyx:    def copy(self):\nlibs/ntl/ntl.pyx:    def copy(ntl_GF2E self):\nlibs/pari/_py_pari_orig.pyx:    def copy(gen self):\nlibs/pari/gen.pyx:    def copy(gen self):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/111\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @mwhansen\n\nThere are many instances of copy methods in SAGE.  They should all be __copy__, which\nis what gets called by the standard copy module (part of the standard Python library). \n\n\n```\nsage: search_sage('def copy')\n\nmatrix/sparse_matrix.py:    def copy(self):\nmodules/free_module_element.py:    def copy(self):\nplot/graph.py:    def copy(self, name):\nrings/finite_field_element.py:    def copy(self):\nrings/fraction_field_element.py:    def copy(self):\nrings/laurent_series_ring_element.py:    def copy(self):\nrings/padic.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/polynomial_element.py:    def copy(self):\nrings/power_series_ring_element.py:    def copy(self):\nrings/power_series_ring_element.py:    def copy(self):\nrings/quotient_ring_element.py:    def copy(self):\nlibs/pari/functional.py:def copy(self): return pari(self).copy()\nmodular/modsym/manin_symbols.py:    def copy(self):\nserver/server1/server1.py:    def copyfile(self, source, outputfile): \nmatrix/dense_matrix_pyx.pyx:    def copy(self):\nmatrix/matrix_generic.pyx:    def copy(self):\nmatrix/matrix_integer_dense.pyx:    def copy(self):\nmatrix/matrix_modn_dense.pyx:    def copy(Matrix_modn_dense self):\nmatrix/matrix_modn_sparse.pyx:    def copy(self):\nmatrix/matrix_rational_dense.pyx:    def copy(self):\nmatrix/sparse_matrix_pyx.pyx:    def copy(self):\nmatrix/sparse_matrix_pyx.pyx:    def copy(self):\nmatrix/sparse_matrix_pyx.pyx:    def copy(self):\nrings/integer.pyx:    def copy(self):\nrings/integer_mod.pyx:    def copy(IntegerMod_gmp self):\nrings/integer_mod.pyx:    def copy(IntegerMod_int self):\nrings/integer_mod.pyx:    def copy(IntegerMod_int64 self):\nrings/mpc.pyx:    def copy(self):\nrings/polynomial_pyx.pyx:    def copy(self):\nrings/polynomial_pyx.pyx:    def copy(self):\nrings/rational.pyx:    def copy(self):\nrings/real_double.pyx:    def copy(self):\nrings/real_mpfr.pyx:    def copy(self):\nrings/sparse_poly.pyx:    def copy(self):\nrings/sparse_poly.pyx:    def copy(self):\nlibs/linbox/finite_field_givaro.pyx:    def copy(self):\nlibs/ntl/ntl.pyx:    def copy(self):\nlibs/ntl/ntl.pyx:    def copy(self):\nlibs/ntl/ntl.pyx:    def copy(ntl_GF2E self):\nlibs/pari/_py_pari_orig.pyx:    def copy(gen self):\nlibs/pari/gen.pyx:    def copy(gen self):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/111\n\n",
     "created_at": "2006-10-05T06:24:07Z",
     "labels": [
         "user interface",
@@ -14,12 +14,12 @@ archive/issues_000111.json:
     "title": "def copy -- they should all be def __copy__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/111",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb mhansen
+CC:  @robertwb @mwhansen
 
 There are many instances of copy methods in SAGE.  They should all be __copy__, which
 is what gets called by the standard copy module (part of the standard Python library). 
@@ -91,7 +91,7 @@ archive/issue_comments_000517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-517",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_000518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-518",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_000519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-519",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_000520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-520",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_000521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-521",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_000522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-522",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_000524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-524",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_000525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-525",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_000526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-526",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -327,16 +327,16 @@ Doing all of these in one shot is pretty nasty.  I've attached a patch that fixe
 archive/issue_comments_000527.json:
 ```json
 {
-    "body": "Changing assignee from was to AlexGhitza.",
+    "body": "Changing assignee from @williamstein to @aghitza.",
     "created_at": "2009-07-13T10:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-527",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to AlexGhitza.
+Changing assignee from @williamstein to @aghitza.
 
 
 
@@ -345,16 +345,16 @@ Changing assignee from was to AlexGhitza.
 archive/issue_comments_000528.json:
 ```json
 {
-    "body": "Attachment [trac_111.patch](tarball://root/attachments/some-uuid/ticket111/trac_111.patch) by AlexGhitza created at 2009-07-13 10:40:07",
+    "body": "Attachment [trac_111.patch](tarball://root/attachments/some-uuid/ticket111/trac_111.patch) by @aghitza created at 2009-07-13 10:40:07",
     "created_at": "2009-07-13T10:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-528",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_111.patch](tarball://root/attachments/some-uuid/ticket111/trac_111.patch) by AlexGhitza created at 2009-07-13 10:40:07
+Attachment [trac_111.patch](tarball://root/attachments/some-uuid/ticket111/trac_111.patch) by @aghitza created at 2009-07-13 10:40:07
 
 
 
@@ -368,7 +368,7 @@ archive/issue_comments_000529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-529",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_000530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-530",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_000531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-531",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -417,16 +417,16 @@ apply over previous patch
 archive/issue_comments_000532.json:
 ```json
 {
-    "body": "Attachment [trac_111-reviewer.patch](tarball://root/attachments/some-uuid/ticket111/trac_111-reviewer.patch) by davidloeffler created at 2009-07-14 19:19:29\n\nI have uploaded a one-liner patch to deal with the `def copy` in `polynomial_element_generic` that got missed out. All doctests pass, both on sage.math and on my machine, so let's get this one in.",
+    "body": "Attachment [trac_111-reviewer.patch](tarball://root/attachments/some-uuid/ticket111/trac_111-reviewer.patch) by @loefflerd created at 2009-07-14 19:19:29\n\nI have uploaded a one-liner patch to deal with the `def copy` in `polynomial_element_generic` that got missed out. All doctests pass, both on sage.math and on my machine, so let's get this one in.",
     "created_at": "2009-07-14T19:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-532",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_111-reviewer.patch](tarball://root/attachments/some-uuid/ticket111/trac_111-reviewer.patch) by davidloeffler created at 2009-07-14 19:19:29
+Attachment [trac_111-reviewer.patch](tarball://root/attachments/some-uuid/ticket111/trac_111-reviewer.patch) by @loefflerd created at 2009-07-14 19:19:29
 
 I have uploaded a one-liner patch to deal with the `def copy` in `polynomial_element_generic` that got missed out. All doctests pass, both on sage.math and on my machine, so let's get this one in.
 
@@ -478,7 +478,7 @@ archive/issue_comments_000535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/111#issuecomment-535",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

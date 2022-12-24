@@ -3,7 +3,7 @@
 archive/issues_003995.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3995\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3995\n\n",
     "created_at": "2008-08-29T21:55:40Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003995.json:
     "title": "[with patch, needs review] improve and doctest the MuPAD interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3995",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3995
 archive/issue_comments_028706.json:
 ```json
 {
-    "body": "Attachment [trac_3995.patch](tarball://root/attachments/some-uuid/ticket3995/trac_3995.patch) by mhansen created at 2008-08-30 00:31:48",
+    "body": "Attachment [trac_3995.patch](tarball://root/attachments/some-uuid/ticket3995/trac_3995.patch) by @mwhansen created at 2008-08-30 00:31:48",
     "created_at": "2008-08-30T00:31:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3995#issuecomment-28706",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3995.patch](tarball://root/attachments/some-uuid/ticket3995/trac_3995.patch) by mhansen created at 2008-08-30 00:31:48
+Attachment [trac_3995.patch](tarball://root/attachments/some-uuid/ticket3995/trac_3995.patch) by @mwhansen created at 2008-08-30 00:31:48
 
 
 

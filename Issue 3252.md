@@ -3,7 +3,7 @@
 archive/issues_003252.json:
 ```json
 {
-    "body": "Assignee: was\n\nimplemented a cython wrapper for singular's kbase command. This is significantly faster than doing singular.kbase() because it doesn't have the pexpect overhead. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3252\n\n",
+    "body": "Assignee: @williamstein\n\nimplemented a cython wrapper for singular's kbase command. This is significantly faster than doing singular.kbase() because it doesn't have the pexpect overhead. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3252\n\n",
     "created_at": "2008-05-18T03:35:33Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_003252.json:
     "title": "add kbase functionality to libsingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3252",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 implemented a cython wrapper for singular's kbase command. This is significantly faster than doing singular.kbase() because it doesn't have the pexpect overhead. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3252
 archive/issue_comments_022495.json:
 ```json
 {
-    "body": "Attachment [libsingular_kbase.patch](tarball://root/attachments/some-uuid/ticket3252/libsingular_kbase.patch) by yi created at 2008-05-18 03:35:48",
+    "body": "Attachment [libsingular_kbase.patch](tarball://root/attachments/some-uuid/ticket3252/libsingular_kbase.patch) by @yqiang created at 2008-05-18 03:35:48",
     "created_at": "2008-05-18T03:35:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3252#issuecomment-22495",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [libsingular_kbase.patch](tarball://root/attachments/some-uuid/ticket3252/libsingular_kbase.patch) by yi created at 2008-05-18 03:35:48
+Attachment [libsingular_kbase.patch](tarball://root/attachments/some-uuid/ticket3252/libsingular_kbase.patch) by @yqiang created at 2008-05-18 03:35:48
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_022496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3252#issuecomment-22496",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -68,16 +68,16 @@ The patch looks good, applies cleanly and does as advertised. However, two new f
 archive/issue_comments_022497.json:
 ```json
 {
-    "body": "Attachment [libsingular_kbase_doctest.patch](tarball://root/attachments/some-uuid/ticket3252/libsingular_kbase_doctest.patch) by yi created at 2008-05-18 15:12:45\n\nadd doctests as requested by reviewer",
+    "body": "Attachment [libsingular_kbase_doctest.patch](tarball://root/attachments/some-uuid/ticket3252/libsingular_kbase_doctest.patch) by @yqiang created at 2008-05-18 15:12:45\n\nadd doctests as requested by reviewer",
     "created_at": "2008-05-18T15:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3252#issuecomment-22497",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [libsingular_kbase_doctest.patch](tarball://root/attachments/some-uuid/ticket3252/libsingular_kbase_doctest.patch) by yi created at 2008-05-18 15:12:45
+Attachment [libsingular_kbase_doctest.patch](tarball://root/attachments/some-uuid/ticket3252/libsingular_kbase_doctest.patch) by @yqiang created at 2008-05-18 15:12:45
 
 add doctests as requested by reviewer
 
@@ -93,7 +93,7 @@ archive/issue_comments_022498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3252#issuecomment-22498",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_022499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3252#issuecomment-22499",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005073.json:
     "title": "[with spkg, needs review] Update IPython to 0.9.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5073",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_038626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5073",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5073#issuecomment-38626",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_038629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5073",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5073#issuecomment-38629",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_038630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5073",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5073#issuecomment-38630",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,16 +131,16 @@ Changing status from new to assigned.
 archive/issue_comments_038631.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-01-24T22:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5073",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5073#issuecomment-38631",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 

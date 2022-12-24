@@ -3,7 +3,7 @@
 archive/issues_000283.json:
 ```json
 {
-    "body": "Assignee: was\n\nCreate the best vmware SAGE virtual machine that can be put on 1 CD.  Include as many\nextra nice options as possible, given the constraint of it fitting on a CD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/283\n\n",
+    "body": "Assignee: @williamstein\n\nCreate the best vmware SAGE virtual machine that can be put on 1 CD.  Include as many\nextra nice options as possible, given the constraint of it fitting on a CD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/283\n\n",
     "created_at": "2007-02-24T02:27:50Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000283.json:
     "title": "vmware -- create a deluxe SAGE vmware virtual machine",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/283",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Create the best vmware SAGE virtual machine that can be put on 1 CD.  Include as many
 extra nice options as possible, given the constraint of it fitting on a CD.
@@ -38,7 +38,7 @@ archive/issue_comments_001350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/283#issuecomment-1350",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_001352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/283",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/283#issuecomment-1352",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

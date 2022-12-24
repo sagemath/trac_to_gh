@@ -14,7 +14,7 @@ archive/issues_003014.json:
     "title": "ZZ.random_element -- corrupted docstring (easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3014",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -146,7 +146,7 @@ archive/issue_comments_020719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3014#issuecomment-20719",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

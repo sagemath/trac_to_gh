@@ -3,7 +3,7 @@
 archive/issues_001245.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\nKeywords: coercion coerce multivariate univariate composite\n\nThis works:\n\n\n```\nsage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 9)\nx0\nsage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 3)\nx0\n```\n\n\nThis doesn't:\n\n\n```\nsage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 3)\nx\nsage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 9)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n/Users/ncalexan/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/Users/ncalexan/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in x over Integer Ring' and 'Ring of integers modulo 9'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1245\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nKeywords: coercion coerce multivariate univariate composite\n\nThis works:\n\n\n```\nsage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 9)\nx0\nsage: PolynomialRing(ZZ, 2, 'x').gen() * Mod(1, 3)\nx0\n```\n\n\nThis doesn't:\n\n\n```\nsage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 3)\nx\nsage: PolynomialRing(ZZ, 1, 'x').gen() * Mod(1, 9)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n/Users/ncalexan/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/Users/ncalexan/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in x over Integer Ring' and 'Ring of integers modulo 9'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1245\n\n",
     "created_at": "2007-11-22T23:57:05Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_001245.json:
     "title": "Error coercing multivariate polynomial rings with one variable into composite integer rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1245",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: coercion coerce multivariate univariate composite
 
@@ -65,7 +65,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1245
 archive/issue_comments_007800.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-12-20T03:03:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1245",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_007800.json:
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_007802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1245#issuecomment-7802",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_007805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1245#issuecomment-7805",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_007806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1245#issuecomment-7806",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_007807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1245#issuecomment-7807",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

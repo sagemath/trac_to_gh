@@ -3,7 +3,7 @@
 archive/issues_007421.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  sage-combinat robertwb\n\nKeywords: coercion\n\nWith the attached patch, the precondition for registering a new\ncoercion from P to Q with register_coercion becomes: \n\n \"no over coercion from P to Q has been registered or discovered earlier\"\n\nWhich is a bit weaker than the previous:\n\n \"no coercion into P has been queried\"\n\nThis should still be quite safe, while covering all the formerly\nproblematic practical use cases coming up in the category code #5981.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7421\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  sage-combinat @robertwb\n\nKeywords: coercion\n\nWith the attached patch, the precondition for registering a new\ncoercion from P to Q with register_coercion becomes: \n\n \"no over coercion from P to Q has been registered or discovered earlier\"\n\nWhich is a bit weaker than the previous:\n\n \"no coercion into P has been queried\"\n\nThis should still be quite safe, while covering all the formerly\nproblematic practical use cases coming up in the category code #5981.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7421\n\n",
     "created_at": "2009-11-10T01:02:16Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_007421.json:
     "title": "Weaker precondition for registering a new coercion.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7421",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  sage-combinat robertwb
+CC:  sage-combinat @robertwb
 
 Keywords: coercion
 
@@ -51,7 +51,7 @@ archive/issue_comments_062452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7421#issuecomment-62452",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_062453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7421#issuecomment-62453",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_062454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7421#issuecomment-62454",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_062455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7421#issuecomment-62455",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_062456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7421#issuecomment-62456",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_062457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7421#issuecomment-62457",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -168,16 +168,16 @@ The previous version was missing a patch header.
 archive/issue_comments_062458.json:
 ```json
 {
-    "body": "Attachment [trac_7421-register_coercion_weaker_assertion.patch](tarball://root/attachments/some-uuid/ticket7421/trac_7421-register_coercion_weaker_assertion.patch) by mhansen created at 2009-11-13 04:48:17\n\nI'm going to move this to 4.3 where it's more relevant.",
+    "body": "Attachment [trac_7421-register_coercion_weaker_assertion.patch](tarball://root/attachments/some-uuid/ticket7421/trac_7421-register_coercion_weaker_assertion.patch) by @mwhansen created at 2009-11-13 04:48:17\n\nI'm going to move this to 4.3 where it's more relevant.",
     "created_at": "2009-11-13T04:48:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7421#issuecomment-62458",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7421-register_coercion_weaker_assertion.patch](tarball://root/attachments/some-uuid/ticket7421/trac_7421-register_coercion_weaker_assertion.patch) by mhansen created at 2009-11-13 04:48:17
+Attachment [trac_7421-register_coercion_weaker_assertion.patch](tarball://root/attachments/some-uuid/ticket7421/trac_7421-register_coercion_weaker_assertion.patch) by @mwhansen created at 2009-11-13 04:48:17
 
 I'm going to move this to 4.3 where it's more relevant.
 
@@ -193,7 +193,7 @@ archive/issue_comments_062459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7421#issuecomment-62459",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_062460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7421#issuecomment-62460",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_062461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7421#issuecomment-62461",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

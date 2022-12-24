@@ -3,7 +3,7 @@
 archive/issues_002427.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nsee sage-main/sage/combinat/partition.py line 1639\n\nIssue created by migration from https://trac.sagemath.org/ticket/2427\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nsee sage-main/sage/combinat/partition.py line 1639\n\nIssue created by migration from https://trac.sagemath.org/ticket/2427\n\n",
     "created_at": "2008-03-08T13:51:00Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002427.json:
     "title": "add docstring to Partitions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2427",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_016431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2427#issuecomment-16431",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_016432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2427#issuecomment-16432",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_016433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2427#issuecomment-16433",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

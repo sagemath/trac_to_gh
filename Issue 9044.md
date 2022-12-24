@@ -3,7 +3,7 @@
 archive/issues_009044.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  fredrik.johansson kcrisman\n\nAppears the current erf() function is limited to 53-bit accuracy, while using mpmath instead will provide greater accuracy and also greater speed.  This is from an IRC session - an edited version is below.\n\n\n```\n[09:55] --> E1ephant has joined this channel (~E1ephant@e1ephant.broker.freenet6.net).\n[09:55] <E1ephant> hi =)\n[09:57] <E1ephant> could you tell me please something? after integrating: integrate( (2/sqrt(2*pi)) * exp(-x^2/2), x, 0, 2)  a have erf(sqrt(2))\n[09:57] <E1ephant> how can i calculate than that value numerically?\n[09:57] <E1ephant> i mean erf(sqrt(2))\n[09:58] <rbeezer> E1ephant: N(erf(sqrt(2)))\n[09:59] <E1ephant> :-* thx\n[09:59] <rbeezer> N?  will give you documentation about using this to get different precision\n[10:46] <schilly> interesting, erf only works for the default 53 bits. if somebody needs more digits, resort to mpmath\n[10:46] <schilly> import mpmath; mpmath.mp.dps=200; mpmath.erf(mpmath.sqrt(2))\n[10:50] <schilly> mpmath is also neary 4 times faster for that one on my machine. i think the erf definition should be changed\n[10:51] <rbeezer> schilly: interesting (and even better that it is faster!)\n[11:00] <schilly> ah. end 16.5 times faster for the same 53bits prec (i still had it at 200 for the benachmark, where it was also faster)\n[11:02] <logix> mpmath is faster for 200 bits precision than sage is for 53 bits? uh :)\n[11:03] <schilly> logix: yes\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9044\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @fredrik-johansson @kcrisman\n\nAppears the current erf() function is limited to 53-bit accuracy, while using mpmath instead will provide greater accuracy and also greater speed.  This is from an IRC session - an edited version is below.\n\n\n```\n[09:55] --> E1ephant has joined this channel (~E1ephant@e1ephant.broker.freenet6.net).\n[09:55] <E1ephant> hi =)\n[09:57] <E1ephant> could you tell me please something? after integrating: integrate( (2/sqrt(2*pi)) * exp(-x^2/2), x, 0, 2)  a have erf(sqrt(2))\n[09:57] <E1ephant> how can i calculate than that value numerically?\n[09:57] <E1ephant> i mean erf(sqrt(2))\n[09:58] <rbeezer> E1ephant: N(erf(sqrt(2)))\n[09:59] <E1ephant> :-* thx\n[09:59] <rbeezer> N?  will give you documentation about using this to get different precision\n[10:46] <schilly> interesting, erf only works for the default 53 bits. if somebody needs more digits, resort to mpmath\n[10:46] <schilly> import mpmath; mpmath.mp.dps=200; mpmath.erf(mpmath.sqrt(2))\n[10:50] <schilly> mpmath is also neary 4 times faster for that one on my machine. i think the erf definition should be changed\n[10:51] <rbeezer> schilly: interesting (and even better that it is faster!)\n[11:00] <schilly> ah. end 16.5 times faster for the same 53bits prec (i still had it at 200 for the benachmark, where it was also faster)\n[11:02] <logix> mpmath is faster for 200 bits precision than sage is for 53 bits? uh :)\n[11:03] <schilly> logix: yes\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9044\n\n",
     "created_at": "2010-05-25T03:56:52Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_009044.json:
     "title": "Use mpmath for the erf() function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9044",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: jason, jkantor
 
-CC:  fredrik.johansson kcrisman
+CC:  @fredrik-johansson @kcrisman
 
 Appears the current erf() function is limited to 53-bit accuracy, while using mpmath instead will provide greater accuracy and also greater speed.  This is from an IRC session - an edited version is below.
 
@@ -59,7 +59,7 @@ archive/issue_comments_083732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83732",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_083733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83733",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_083734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83734",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_083735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83735",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_083736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83736",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_083737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83737",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_083738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83738",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

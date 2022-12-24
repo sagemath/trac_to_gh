@@ -14,7 +14,7 @@ archive/issues_002783.json:
     "title": "notebook -- ocassional \"crap\" in output like this   print \"\\x01r\\x01e580\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2783",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -103,7 +103,7 @@ archive/issue_comments_019109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2783#issuecomment-19109",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_019110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2783#issuecomment-19110",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_019111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2783#issuecomment-19111",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_019112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2783#issuecomment-19112",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_019115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2783#issuecomment-19115",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_019118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2783#issuecomment-19118",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_019119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2783#issuecomment-19119",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_019120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2783#issuecomment-19120",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

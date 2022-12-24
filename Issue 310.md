@@ -3,7 +3,7 @@
 archive/issues_000310.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: mercurial\n\nAt least the latest version of mercurial from Debian testing (version 0.9.3-2), and possibly earlier versions as well, have a line in /etc/mercurial/hgrc.d/hgext.rc that tries to load the extension hgext/churn.  Since SAGE mercurial does not include this extension, every mercurial operation gives the following warning:\n\n```\n*** failed to import extension hgext/churn: No module named hgext/churn\n```\n\n(However, mercurial seems to work fine even with the warning.)\n\nPerhaps SAGE's mercurial should ignore /etc/mercurial, or perhaps SAGE's mercurial should be updated to include the churn extension.\n\nOr, of course, Debian users can remove the line from hgext.rc, or just ignore the warning message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/310\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: mercurial\n\nAt least the latest version of mercurial from Debian testing (version 0.9.3-2), and possibly earlier versions as well, have a line in /etc/mercurial/hgrc.d/hgext.rc that tries to load the extension hgext/churn.  Since SAGE mercurial does not include this extension, every mercurial operation gives the following warning:\n\n```\n*** failed to import extension hgext/churn: No module named hgext/churn\n```\n\n(However, mercurial seems to work fine even with the warning.)\n\nPerhaps SAGE's mercurial should ignore /etc/mercurial, or perhaps SAGE's mercurial should be updated to include the churn extension.\n\nOr, of course, Debian users can remove the line from hgext.rc, or just ignore the warning message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/310\n\n",
     "created_at": "2007-03-06T06:18:40Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_000310.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: mercurial
 
@@ -90,7 +90,7 @@ archive/issue_comments_001481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/310#issuecomment-1481",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_001482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/310#issuecomment-1482",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

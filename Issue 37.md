@@ -14,7 +14,7 @@ archive/issues_000037.json:
     "title": "preparser doesn't parse hex input:",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/37",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -47,7 +47,7 @@ archive/issue_comments_000234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/37",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/37#issuecomment-234",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_000235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/37",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/37#issuecomment-235",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_000237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/37",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/37#issuecomment-237",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_000238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/37",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/37#issuecomment-238",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -156,16 +156,16 @@ Note: #2144 is (a) a dupe of this, and (b) actually doesn't fix the problem.
 archive/issue_comments_000239.json:
 ```json
 {
-    "body": "Attachment [sage-37.patch](tarball://root/attachments/some-uuid/ticket37/sage-37.patch) by was created at 2008-02-28 05:07:11",
+    "body": "Attachment [sage-37.patch](tarball://root/attachments/some-uuid/ticket37/sage-37.patch) by @williamstein created at 2008-02-28 05:07:11",
     "created_at": "2008-02-28T05:07:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/37",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/37#issuecomment-239",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-37.patch](tarball://root/attachments/some-uuid/ticket37/sage-37.patch) by was created at 2008-02-28 05:07:11
+Attachment [sage-37.patch](tarball://root/attachments/some-uuid/ticket37/sage-37.patch) by @williamstein created at 2008-02-28 05:07:11
 
 
 
@@ -179,7 +179,7 @@ archive/issue_comments_000240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/37",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/37#issuecomment-240",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_000241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/37",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/37#issuecomment-241",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_000244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/37",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/37#issuecomment-244",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

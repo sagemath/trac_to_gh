@@ -14,7 +14,7 @@ archive/issues_003398.json:
     "title": "make \"sage -c\" load init.sage on startup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3398",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty

@@ -3,7 +3,7 @@
 archive/issues_005458.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nRefactor the set partitions code to have a single entry point in the global name space for the various types. I.e. from the user point of view, replace the various:\n\n> > SetPartitions     SetPartitionsIk   SetPartitionsRk\n> > SetPartitionsAk   SetPartitionsPRk  SetPartitionsSk\n> > SetPartitionsBk   SetPartitionsPk   SetPartitionsTk\n\nBy something like:\n \tSetPartitions(..., type=[\"A\",3])\n\nSee also: http://groups.google.com/group/sage-devel/msg/a49f3288fca1b75c\n\nIssue created by migration from https://trac.sagemath.org/ticket/5458\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nRefactor the set partitions code to have a single entry point in the global name space for the various types. I.e. from the user point of view, replace the various:\n\n> > SetPartitions     SetPartitionsIk   SetPartitionsRk\n> > SetPartitionsAk   SetPartitionsPRk  SetPartitionsSk\n> > SetPartitionsBk   SetPartitionsPk   SetPartitionsTk\n\nBy something like:\n \tSetPartitions(..., type=[\"A\",3])\n\nSee also: http://groups.google.com/group/sage-devel/msg/a49f3288fca1b75c\n\nIssue created by migration from https://trac.sagemath.org/ticket/5458\n\n",
     "created_at": "2009-03-08T21:03:46Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005458.json:
     "title": "Refactor set partitions with a single entry points in global name space for the various cartan types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5458",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -48,7 +48,7 @@ archive/issue_comments_042388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5458#issuecomment-42388",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_042389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5458#issuecomment-42389",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_042390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5458#issuecomment-42390",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 

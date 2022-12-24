@@ -14,7 +14,7 @@ archive/issues_006078.json:
     "title": "Add compatibility functions with deprecation warnings for QF code after doctest patch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6078",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 Assignee: tbd
@@ -47,7 +47,7 @@ archive/issue_comments_048375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6078#issuecomment-48375",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_048379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6078#issuecomment-48379",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_048380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6078#issuecomment-48380",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_048381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6078#issuecomment-48381",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

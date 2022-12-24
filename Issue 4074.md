@@ -14,7 +14,7 @@ archive/issues_004074.json:
     "title": "[with spkg, needs review] the notebook is totally broken in secure mode with the new twisted spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4074",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_029403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4074#issuecomment-29403",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_029404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4074#issuecomment-29404",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -70,16 +70,16 @@ Thanks to exarkun on #twisted (irc.freenode.net) for helping me track this down.
 archive/issue_comments_029405.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2008-09-07T20:06:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4074#issuecomment-29405",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 

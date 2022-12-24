@@ -53,7 +53,7 @@ archive/issue_comments_019156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2789#issuecomment-19156",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_019157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2789#issuecomment-19157",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing component from basic arithmetic to commutative algebra.
 archive/issue_comments_019158.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2009-01-22T09:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2789#issuecomment-19158",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_019159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2789#issuecomment-19159",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_019160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2789#issuecomment-19160",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -142,16 +142,16 @@ Changing keywords from "" to "residue field multivariate prime groebner basis".
 archive/issue_comments_019161.json:
 ```json
 {
-    "body": "Attachment [trac_2789.2.patch](tarball://root/attachments/some-uuid/ticket2789/trac_2789.2.patch) by malb created at 2009-01-22 19:12:06\n\nreplaces some line numbers in verbose output by ...",
+    "body": "Attachment [trac_2789.2.patch](tarball://root/attachments/some-uuid/ticket2789/trac_2789.2.patch) by @malb created at 2009-01-22 19:12:06\n\nreplaces some line numbers in verbose output by ...",
     "created_at": "2009-01-22T19:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2789#issuecomment-19161",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_2789.2.patch](tarball://root/attachments/some-uuid/ticket2789/trac_2789.2.patch) by malb created at 2009-01-22 19:12:06
+Attachment [trac_2789.2.patch](tarball://root/attachments/some-uuid/ticket2789/trac_2789.2.patch) by @malb created at 2009-01-22 19:12:06
 
 replaces some line numbers in verbose output by ...
 

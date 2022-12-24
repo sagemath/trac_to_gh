@@ -14,7 +14,7 @@ archive/issues_009291.json:
     "title": "Constructing a root system / coxeter group from a pair of matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9291",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: sage-combinat
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9291
 archive/issue_comments_087514.json:
 ```json
 {
-    "body": "Attachment [cartan_type_from_matrices.py](tarball://root/attachments/some-uuid/ticket9291/cartan_type_from_matrices.py) by chapoton created at 2012-12-17 17:07:50",
+    "body": "Attachment [cartan_type_from_matrices.py](tarball://root/attachments/some-uuid/ticket9291/cartan_type_from_matrices.py) by @fchapoton created at 2012-12-17 17:07:50",
     "created_at": "2012-12-17T17:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9291#issuecomment-87514",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [cartan_type_from_matrices.py](tarball://root/attachments/some-uuid/ticket9291/cartan_type_from_matrices.py) by chapoton created at 2012-12-17 17:07:50
+Attachment [cartan_type_from_matrices.py](tarball://root/attachments/some-uuid/ticket9291/cartan_type_from_matrices.py) by @fchapoton created at 2012-12-17 17:07:50
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_087515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9291#issuecomment-87515",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

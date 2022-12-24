@@ -63,7 +63,7 @@ archive/issue_comments_035206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4674#issuecomment-35206",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_035207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4674#issuecomment-35207",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -94,16 +94,16 @@ Changing status from new to assigned.
 archive/issue_comments_035208.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2008-12-02T16:06:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4674#issuecomment-35208",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_035209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4674#issuecomment-35209",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_035210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4674#issuecomment-35210",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_035211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4674#issuecomment-35211",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_035212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4674#issuecomment-35212",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_035213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4674#issuecomment-35213",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_035214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4674#issuecomment-35214",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_035215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4674#issuecomment-35215",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_035216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4674#issuecomment-35216",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -264,16 +264,16 @@ jsmath was standard ever since we used it with the notebook.  That wasn't the po
 archive/issue_comments_035217.json:
 ```json
 {
-    "body": "Attachment [jsmath-spkg.patch](tarball://root/attachments/some-uuid/ticket4674/jsmath-spkg.patch) by jason created at 2008-12-20 20:51:28",
+    "body": "Attachment [jsmath-spkg.patch](tarball://root/attachments/some-uuid/ticket4674/jsmath-spkg.patch) by @jasongrout created at 2008-12-20 20:51:28",
     "created_at": "2008-12-20T20:51:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4674#issuecomment-35217",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [jsmath-spkg.patch](tarball://root/attachments/some-uuid/ticket4674/jsmath-spkg.patch) by jason created at 2008-12-20 20:51:28
+Attachment [jsmath-spkg.patch](tarball://root/attachments/some-uuid/ticket4674/jsmath-spkg.patch) by @jasongrout created at 2008-12-20 20:51:28
 
 
 
@@ -287,7 +287,7 @@ archive/issue_comments_035218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4674#issuecomment-35218",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

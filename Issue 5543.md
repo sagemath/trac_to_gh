@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5543
 archive/issue_comments_043131.json:
 ```json
 {
-    "body": "Attachment [rif-unique-parents.patch](tarball://root/attachments/some-uuid/ticket5543/rif-unique-parents.patch) by was created at 2009-04-12 04:20:16",
+    "body": "Attachment [rif-unique-parents.patch](tarball://root/attachments/some-uuid/ticket5543/rif-unique-parents.patch) by @williamstein created at 2009-04-12 04:20:16",
     "created_at": "2009-04-12T04:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5543#issuecomment-43131",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [rif-unique-parents.patch](tarball://root/attachments/some-uuid/ticket5543/rif-unique-parents.patch) by was created at 2009-04-12 04:20:16
+Attachment [rif-unique-parents.patch](tarball://root/attachments/some-uuid/ticket5543/rif-unique-parents.patch) by @williamstein created at 2009-04-12 04:20:16
 
 
 

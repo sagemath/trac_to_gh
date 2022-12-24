@@ -14,7 +14,7 @@ archive/issues_002790.json:
     "title": "very annoying output of new \"sage -tp\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2790",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -132,7 +132,7 @@ archive/issue_comments_019168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2790#issuecomment-19168",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 

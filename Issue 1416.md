@@ -3,7 +3,7 @@
 archive/issues_001416.json:
 ```json
 {
-    "body": "Assignee: was\n\nTODO list\n* upgrade to 2.6.1\n* patch rpy\n* fix build issues and install issues\n* finish pexpect interface.\n* worry about graphics / X11 issues\n* readline\n* gfortran support (extra setup.py in rpy package)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1416\n\n",
+    "body": "Assignee: @williamstein\n\nTODO list\n* upgrade to 2.6.1\n* patch rpy\n* fix build issues and install issues\n* finish pexpect interface.\n* worry about graphics / X11 issues\n* readline\n* gfortran support (extra setup.py in rpy package)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1416\n\n",
     "created_at": "2007-12-07T07:23:33Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001416.json:
     "title": "get the R statistics software into Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1416",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 TODO list
 * upgrade to 2.6.1
@@ -44,7 +44,7 @@ archive/issue_comments_009130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1416#issuecomment-9130",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_009131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1416#issuecomment-9131",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_009133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1416#issuecomment-9133",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_009134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1416#issuecomment-9134",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_009135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1416",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1416#issuecomment-9135",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

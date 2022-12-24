@@ -14,7 +14,7 @@ archive/issues_005870.json:
     "title": "Detect blas and atlas libraries for linbox on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5870",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5870
 archive/issue_comments_046364.json:
 ```json
 {
-    "body": "Attachment [linbox-1.1.6.patch](tarball://root/attachments/some-uuid/ticket5870/linbox-1.1.6.patch) by pjeremy created at 2009-04-23 07:12:14",
+    "body": "Attachment [linbox-1.1.6.patch](tarball://root/attachments/some-uuid/ticket5870/linbox-1.1.6.patch) by @peterjeremy created at 2009-04-23 07:12:14",
     "created_at": "2009-04-23T07:12:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5870#issuecomment-46364",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [linbox-1.1.6.patch](tarball://root/attachments/some-uuid/ticket5870/linbox-1.1.6.patch) by pjeremy created at 2009-04-23 07:12:14
+Attachment [linbox-1.1.6.patch](tarball://root/attachments/some-uuid/ticket5870/linbox-1.1.6.patch) by @peterjeremy created at 2009-04-23 07:12:14
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_046366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5870#issuecomment-46366",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -92,16 +92,16 @@ An spkg with this patch incorporated can be found at http://sage.math.washington
 archive/issue_comments_046367.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-20T07:29:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5870#issuecomment-46367",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_046368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5870#issuecomment-46368",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_046369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5870#issuecomment-46369",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

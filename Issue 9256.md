@@ -3,7 +3,7 @@
 archive/issues_009256.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nKeywords: Category Sets\n\nTitle says all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9256\n\n",
+    "body": "Assignee: @nthiery\n\nKeywords: Category Sets\n\nTitle says all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9256\n\n",
     "created_at": "2010-06-17T21:51:22Z",
     "labels": [
         "categories",
@@ -14,10 +14,10 @@ archive/issues_009256.json:
     "title": "Put Set in the category Sets()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9256",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 Keywords: Category Sets
 
@@ -39,7 +39,7 @@ archive/issue_comments_087106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9256#issuecomment-87106",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_087107.json:
 ```json
 {
-    "body": "Attachment [trac_9256-set_in_category-fh.patch](tarball://root/attachments/some-uuid/ticket9256/trac_9256-set_in_category-fh.patch) by hivert created at 2010-06-17 21:57:54",
+    "body": "Attachment [trac_9256-set_in_category-fh.patch](tarball://root/attachments/some-uuid/ticket9256/trac_9256-set_in_category-fh.patch) by @hivert created at 2010-06-17 21:57:54",
     "created_at": "2010-06-17T21:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9256#issuecomment-87107",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_9256-set_in_category-fh.patch](tarball://root/attachments/some-uuid/ticket9256/trac_9256-set_in_category-fh.patch) by hivert created at 2010-06-17 21:57:54
+Attachment [trac_9256-set_in_category-fh.patch](tarball://root/attachments/some-uuid/ticket9256/trac_9256-set_in_category-fh.patch) by @hivert created at 2010-06-17 21:57:54
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_087108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9256#issuecomment-87108",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_087109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9256#issuecomment-87109",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_087110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9256#issuecomment-87110",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_087111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9256#issuecomment-87111",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

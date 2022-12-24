@@ -3,7 +3,7 @@
 archive/issues_004509.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm rbeezer\n\nI'm still seeing the same segfault that I worked around in the patch on #4505.  Here is code that triggers it for me.\n\n\n```\n        sage: import networkx.generators.atlas  # long time\n        sage: atlas_graphs = [Graph(i) for i in networkx.generators.atlas.graph_atlas_g()] # long time\n        sage: a = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n        sage: b = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n```\n\n\nI've added that as a doctest to the planarity code.\n\nFor me, the segfault usually happens on the second run (the \"b =\" line), but occasionally happens on the first run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4509\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill @rbeezer\n\nI'm still seeing the same segfault that I worked around in the patch on #4505.  Here is code that triggers it for me.\n\n\n```\n        sage: import networkx.generators.atlas  # long time\n        sage: atlas_graphs = [Graph(i) for i in networkx.generators.atlas.graph_atlas_g()] # long time\n        sage: a = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n        sage: b = [i for i in [1..1252] if atlas_graphs[i].is_planar()] # long time\n```\n\n\nI've added that as a doctest to the planarity code.\n\nFor me, the segfault usually happens on the second run (the \"b =\" line), but occasionally happens on the first run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4509\n\n",
     "created_at": "2008-11-13T06:00:16Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_004509.json:
     "title": "doctests for planarity code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4509",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm rbeezer
+CC:  @rlmill @rbeezer
 
 I'm still seeing the same segfault that I worked around in the patch on #4505.  Here is code that triggers it for me.
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4509
 archive/issue_comments_033428.json:
 ```json
 {
-    "body": "Attachment [long-doctest-segfault.patch](tarball://root/attachments/some-uuid/ticket4509/long-doctest-segfault.patch) by jason created at 2008-11-13 06:01:22\n\nI think this might depend on one or more of #4505 or #4506.",
+    "body": "Attachment [long-doctest-segfault.patch](tarball://root/attachments/some-uuid/ticket4509/long-doctest-segfault.patch) by @jasongrout created at 2008-11-13 06:01:22\n\nI think this might depend on one or more of #4505 or #4506.",
     "created_at": "2008-11-13T06:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4509#issuecomment-33428",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [long-doctest-segfault.patch](tarball://root/attachments/some-uuid/ticket4509/long-doctest-segfault.patch) by jason created at 2008-11-13 06:01:22
+Attachment [long-doctest-segfault.patch](tarball://root/attachments/some-uuid/ticket4509/long-doctest-segfault.patch) by @jasongrout created at 2008-11-13 06:01:22
 
 I think this might depend on one or more of #4505 or #4506.
 
@@ -306,16 +306,16 @@ Michael
 archive/issue_comments_033430.json:
 ```json
 {
-    "body": "Attachment [planarity-segfault-trip-gdb.patch](tarball://root/attachments/some-uuid/ticket4509/planarity-segfault-trip-gdb.patch) by jason created at 2008-11-13 06:15:51\n\nplanarity-segfault-trip-gdb.patch is a patch which supplies a poor man's assert: we see the problem when Jfirst is -1 *and* when the random memory location happens to be 2.  The patch causes a segfault whenever Jfirst is -1.",
+    "body": "Attachment [planarity-segfault-trip-gdb.patch](tarball://root/attachments/some-uuid/ticket4509/planarity-segfault-trip-gdb.patch) by @jasongrout created at 2008-11-13 06:15:51\n\nplanarity-segfault-trip-gdb.patch is a patch which supplies a poor man's assert: we see the problem when Jfirst is -1 *and* when the random memory location happens to be 2.  The patch causes a segfault whenever Jfirst is -1.",
     "created_at": "2008-11-13T06:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4509#issuecomment-33430",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [planarity-segfault-trip-gdb.patch](tarball://root/attachments/some-uuid/ticket4509/planarity-segfault-trip-gdb.patch) by jason created at 2008-11-13 06:15:51
+Attachment [planarity-segfault-trip-gdb.patch](tarball://root/attachments/some-uuid/ticket4509/planarity-segfault-trip-gdb.patch) by @jasongrout created at 2008-11-13 06:15:51
 
 planarity-segfault-trip-gdb.patch is a patch which supplies a poor man's assert: we see the problem when Jfirst is -1 *and* when the random memory location happens to be 2.  The patch causes a segfault whenever Jfirst is -1.
 
@@ -331,7 +331,7 @@ archive/issue_comments_033431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4509#issuecomment-33431",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_033433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4509#issuecomment-33433",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -414,7 +414,7 @@ Do you have any suggestions for which fix would be better?  If fix #1 works, I p
 archive/issue_comments_033434.json:
 ```json
 {
-    "body": "Changing assignee from rlm to ekirkman.",
+    "body": "Changing assignee from @rlmill to ekirkman.",
     "created_at": "2008-11-15T02:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
@@ -423,7 +423,7 @@ archive/issue_comments_033434.json:
 }
 ```
 
-Changing assignee from rlm to ekirkman.
+Changing assignee from @rlmill to ekirkman.
 
 
 
@@ -455,7 +455,7 @@ archive/issue_comments_033436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4509#issuecomment-33436",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_033437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4509#issuecomment-33437",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_033442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4509#issuecomment-33442",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -776,16 +776,16 @@ rebased vs. Sage 4.3.4.alpha1; apply on this
 archive/issue_comments_033447.json:
 ```json
 {
-    "body": "Attachment [trac_4509-doctest-rebase.patch](tarball://root/attachments/some-uuid/ticket4509/trac_4509-doctest-rebase.patch) by AlexGhitza created at 2010-04-03 06:09:36\n\nLooks good and applies cleanly to 4.3.5.  Let's put it out of its misery.",
+    "body": "Attachment [trac_4509-doctest-rebase.patch](tarball://root/attachments/some-uuid/ticket4509/trac_4509-doctest-rebase.patch) by @aghitza created at 2010-04-03 06:09:36\n\nLooks good and applies cleanly to 4.3.5.  Let's put it out of its misery.",
     "created_at": "2010-04-03T06:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4509#issuecomment-33447",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_4509-doctest-rebase.patch](tarball://root/attachments/some-uuid/ticket4509/trac_4509-doctest-rebase.patch) by AlexGhitza created at 2010-04-03 06:09:36
+Attachment [trac_4509-doctest-rebase.patch](tarball://root/attachments/some-uuid/ticket4509/trac_4509-doctest-rebase.patch) by @aghitza created at 2010-04-03 06:09:36
 
 Looks good and applies cleanly to 4.3.5.  Let's put it out of its misery.
 
@@ -801,7 +801,7 @@ archive/issue_comments_033448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4509#issuecomment-33448",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -819,7 +819,7 @@ archive/issue_comments_033449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4509#issuecomment-33449",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -837,7 +837,7 @@ archive/issue_comments_033450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4509#issuecomment-33450",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

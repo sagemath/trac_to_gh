@@ -3,7 +3,7 @@
 archive/issues_004689.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mhansen\n\nThe examples in the documentation for the save method seems to be broken. If I try\n\n\n```\nsage: E=EllipticCurve([1,0])\nsage: Eplot=E.plot()\nsage: Eplot.save?\n```\n\n\nthen I get\n\n\n``` \nEXAMPLES:\n                sage: c = circle((1,1),1,rgbcolor=(1,0,0))\n                sage: c.show(xmin=-1,xmax=3,ymin=-1,ymax=3)\n\n                To correct the apect ratio of certain graphics, it is necessary\n                to show with a 'figsize' of square dimensions.\n\n                sage: c.show(figsize=[5,5],xmin=-1,xmax=3,ymin=-1,ymax=3)\n\n                sage: point((-1,1),pointsize=30, rgbcolor=(1,0,0))\n```\n\n\nwhich never mentions \"save\" at all. Presumably there should be an extra line, something like\n\n\n```\nsage: c.save(\"example.png\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4689\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nThe examples in the documentation for the save method seems to be broken. If I try\n\n\n```\nsage: E=EllipticCurve([1,0])\nsage: Eplot=E.plot()\nsage: Eplot.save?\n```\n\n\nthen I get\n\n\n``` \nEXAMPLES:\n                sage: c = circle((1,1),1,rgbcolor=(1,0,0))\n                sage: c.show(xmin=-1,xmax=3,ymin=-1,ymax=3)\n\n                To correct the apect ratio of certain graphics, it is necessary\n                to show with a 'figsize' of square dimensions.\n\n                sage: c.show(figsize=[5,5],xmin=-1,xmax=3,ymin=-1,ymax=3)\n\n                sage: point((-1,1),pointsize=30, rgbcolor=(1,0,0))\n```\n\n\nwhich never mentions \"save\" at all. Presumably there should be an extra line, something like\n\n\n```\nsage: c.save(\"example.png\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4689\n\n",
     "created_at": "2008-12-03T22:37:41Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_004689.json:
 ```
 Assignee: tbd
 
-CC:  mhansen
+CC:  @mwhansen
 
 The examples in the documentation for the save method seems to be broken. If I try
 
@@ -227,16 +227,16 @@ I think your idea of having a doctest which saves an image somewhere temporary w
 archive/issue_comments_035348.json:
 ```json
 {
-    "body": "Attachment [trac-4689-save-docstring.patch](tarball://root/attachments/some-uuid/ticket4689/trac-4689-save-docstring.patch) by jason created at 2010-01-20 06:56:08",
+    "body": "Attachment [trac-4689-save-docstring.patch](tarball://root/attachments/some-uuid/ticket4689/trac-4689-save-docstring.patch) by @jasongrout created at 2010-01-20 06:56:08",
     "created_at": "2010-01-20T06:56:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4689#issuecomment-35348",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-4689-save-docstring.patch](tarball://root/attachments/some-uuid/ticket4689/trac-4689-save-docstring.patch) by jason created at 2010-01-20 06:56:08
+Attachment [trac-4689-save-docstring.patch](tarball://root/attachments/some-uuid/ticket4689/trac-4689-save-docstring.patch) by @jasongrout created at 2010-01-20 06:56:08
 
 
 
@@ -250,7 +250,7 @@ archive/issue_comments_035349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4689#issuecomment-35349",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_035350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4689#issuecomment-35350",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_035351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4689#issuecomment-35351",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

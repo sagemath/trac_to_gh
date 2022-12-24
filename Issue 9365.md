@@ -14,7 +14,7 @@ archive/issues_009365.json:
     "title": "sage-4.5.alpha0: R fails to build on OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9365",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -65,7 +65,7 @@ archive/issue_comments_088963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9365#issuecomment-88963",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_088964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9365#issuecomment-88964",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_088965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9365#issuecomment-88965",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

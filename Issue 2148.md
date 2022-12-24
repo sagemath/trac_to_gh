@@ -3,7 +3,7 @@
 archive/issues_002148.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  malb\n\nKeywords: polybori\n\n\n```\nsage: P.<x,y> = PolynomialRing(GF(2),2,order='degrevlex')\nsage: x > y\nTrue\n\nsage: P.<x,y> = BooleanPolynomialRing(2,order='degrevlex')\nsage: x > y\nFalse\n```\n\n\nThis should be changed because it leads to funny performance figures.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2148\n\n",
+    "body": "Assignee: @malb\n\nCC:  @malb\n\nKeywords: polybori\n\n\n```\nsage: P.<x,y> = PolynomialRing(GF(2),2,order='degrevlex')\nsage: x > y\nTrue\n\nsage: P.<x,y> = BooleanPolynomialRing(2,order='degrevlex')\nsage: x > y\nFalse\n```\n\n\nThis should be changed because it leads to funny performance figures.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2148\n\n",
     "created_at": "2008-02-13T13:06:07Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_002148.json:
     "title": "PolyBoRi inconsistency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2148",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  malb
+CC:  @malb
 
 Keywords: polybori
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2148
 archive/issue_comments_014091.json:
 ```json
 {
-    "body": "Attachment [2148-polybori_monomial_order_keywords.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori_monomial_order_keywords.patch) by burcin created at 2008-02-17 16:51:36\n\nfix monomial order keywords in polybori wrapper",
+    "body": "Attachment [2148-polybori_monomial_order_keywords.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori_monomial_order_keywords.patch) by @burcin created at 2008-02-17 16:51:36\n\nfix monomial order keywords in polybori wrapper",
     "created_at": "2008-02-17T16:51:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2148#issuecomment-14091",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [2148-polybori_monomial_order_keywords.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori_monomial_order_keywords.patch) by burcin created at 2008-02-17 16:51:36
+Attachment [2148-polybori_monomial_order_keywords.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori_monomial_order_keywords.patch) by @burcin created at 2008-02-17 16:51:36
 
 fix monomial order keywords in polybori wrapper
 
@@ -68,16 +68,16 @@ fix monomial order keywords in polybori wrapper
 archive/issue_comments_014092.json:
 ```json
 {
-    "body": "Changing assignee from malb to burcin.",
+    "body": "Changing assignee from @malb to @burcin.",
     "created_at": "2008-02-17T16:53:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2148#issuecomment-14092",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from malb to burcin.
+Changing assignee from @malb to @burcin.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_014093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2148#issuecomment-14093",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_014094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2148#issuecomment-14094",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_014095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2148#issuecomment-14095",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_014096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2148#issuecomment-14096",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_014097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2148#issuecomment-14097",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_014098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2148#issuecomment-14098",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -237,16 +237,16 @@ reverse variables for degrevlex to dp_asc conversion
 archive/issue_comments_014099.json:
 ```json
 {
-    "body": "Attachment [2148-polybori-fix_degrevlex.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori-fix_degrevlex.patch) by burcin created at 2008-03-08 13:31:46\n\nattachment:2148-polybori-fix_degrevlex.patch arranges the variable indexes in the Sage - `PolyBoRi` interface to handle the difference between degrevlex and dp_asc orders.\n\nNote that with this patch, printing is reversed when using dp_asc orders:\n\n\n```\nsage: P.<x,y,z> = BooleanPolynomialRing(3,order='degrevlex')\nsage: x*y*z\nz*y*x\nsage: P.<x,y,z> = BooleanPolynomialRing(3,order='lex')\nsage: x*y*z\nx*y*z\n```\n",
+    "body": "Attachment [2148-polybori-fix_degrevlex.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori-fix_degrevlex.patch) by @burcin created at 2008-03-08 13:31:46\n\nattachment:2148-polybori-fix_degrevlex.patch arranges the variable indexes in the Sage - `PolyBoRi` interface to handle the difference between degrevlex and dp_asc orders.\n\nNote that with this patch, printing is reversed when using dp_asc orders:\n\n\n```\nsage: P.<x,y,z> = BooleanPolynomialRing(3,order='degrevlex')\nsage: x*y*z\nz*y*x\nsage: P.<x,y,z> = BooleanPolynomialRing(3,order='lex')\nsage: x*y*z\nx*y*z\n```\n",
     "created_at": "2008-03-08T13:31:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2148#issuecomment-14099",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [2148-polybori-fix_degrevlex.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori-fix_degrevlex.patch) by burcin created at 2008-03-08 13:31:46
+Attachment [2148-polybori-fix_degrevlex.patch](tarball://root/attachments/some-uuid/ticket2148/2148-polybori-fix_degrevlex.patch) by @burcin created at 2008-03-08 13:31:46
 
 attachment:2148-polybori-fix_degrevlex.patch arranges the variable indexes in the Sage - `PolyBoRi` interface to handle the difference between degrevlex and dp_asc orders.
 
@@ -275,7 +275,7 @@ archive/issue_comments_014100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2148#issuecomment-14100",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

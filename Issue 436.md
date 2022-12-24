@@ -14,7 +14,7 @@ archive/issues_000436.json:
     "title": "http to https redirect for secure notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/436",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby
@@ -61,7 +61,7 @@ archive/issue_comments_002184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2184",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_002185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2185",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_002187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2187",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_002188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2188",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

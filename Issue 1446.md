@@ -3,7 +3,7 @@
 archive/issues_001446.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen invoking `make check` and the build fails make will start doctesting whatever sage install is in $PATH. That is obviously a bad thing.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1446\n\n",
+    "body": "Assignee: @williamstein\n\nWhen invoking `make check` and the build fails make will start doctesting whatever sage install is in $PATH. That is obviously a bad thing.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1446\n\n",
     "created_at": "2007-12-10T08:06:39Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_001446.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When invoking `make check` and the build fails make will start doctesting whatever sage install is in $PATH. That is obviously a bad thing.
 
@@ -41,7 +41,7 @@ archive/issue_comments_009322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1446#issuecomment-9322",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_009323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1446#issuecomment-9323",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

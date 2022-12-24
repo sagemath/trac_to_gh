@@ -3,7 +3,7 @@
 archive/issues_004699.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  gfurnish\n\nFrom http://trac.sagemath.org/sage_trac/ticket/4684#comment:5 :\n\n> This is already closed, but I want to comment that I would vastly prefer if \"make ptest\" were to by default just parse the MAKE environment variable, and if it is \"make -j6\", say, then use 6 threads. This is what \"sage -t\" does now. This way, I just set MAKE in my .bash_profile, and everything works right.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4699\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @garyfurnish\n\nFrom http://trac.sagemath.org/sage_trac/ticket/4684#comment:5 :\n\n> This is already closed, but I want to comment that I would vastly prefer if \"make ptest\" were to by default just parse the MAKE environment variable, and if it is \"make -j6\", say, then use 6 threads. This is what \"sage -t\" does now. This way, I just set MAKE in my .bash_profile, and everything works right.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4699\n\n",
     "created_at": "2008-12-04T23:53:04Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_004699.json:
     "title": "should be even more easier to change how many threads used for \"make ptest\" and friends",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4699",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: mabshoff
 
-CC:  gfurnish
+CC:  @garyfurnish
 
 From http://trac.sagemath.org/sage_trac/ticket/4684#comment:5 :
 
@@ -41,7 +41,7 @@ archive/issue_comments_035394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4699#issuecomment-35394",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_035397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4699#issuecomment-35397",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -117,16 +117,16 @@ Changing status from new to assigned.
 archive/issue_comments_035398.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to gfurnish.",
+    "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-12-10T19:02:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4699#issuecomment-35398",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from mabshoff to gfurnish.
+Changing assignee from mabshoff to @garyfurnish.
 
 
 
@@ -140,7 +140,7 @@ archive/issue_comments_035399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4699#issuecomment-35399",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_035401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4699#issuecomment-35401",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -201,16 +201,16 @@ apply instead of other patches
 archive/issue_comments_035402.json:
 ```json
 {
-    "body": "Attachment [trac_4699_new_bin.patch](tarball://root/attachments/some-uuid/ticket4699/trac_4699_new_bin.patch) by gfurnish created at 2008-12-11 13:14:20",
+    "body": "Attachment [trac_4699_new_bin.patch](tarball://root/attachments/some-uuid/ticket4699/trac_4699_new_bin.patch) by @garyfurnish created at 2008-12-11 13:14:20",
     "created_at": "2008-12-11T13:14:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4699#issuecomment-35402",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_4699_new_bin.patch](tarball://root/attachments/some-uuid/ticket4699/trac_4699_new_bin.patch) by gfurnish created at 2008-12-11 13:14:20
+Attachment [trac_4699_new_bin.patch](tarball://root/attachments/some-uuid/ticket4699/trac_4699_new_bin.patch) by @garyfurnish created at 2008-12-11 13:14:20
 
 
 
@@ -219,16 +219,16 @@ Attachment [trac_4699_new_bin.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_035403.json:
 ```json
 {
-    "body": "Attachment [trac_4699_fix.patch](tarball://root/attachments/some-uuid/ticket4699/trac_4699_fix.patch) by gfurnish created at 2008-12-11 14:07:34",
+    "body": "Attachment [trac_4699_fix.patch](tarball://root/attachments/some-uuid/ticket4699/trac_4699_fix.patch) by @garyfurnish created at 2008-12-11 14:07:34",
     "created_at": "2008-12-11T14:07:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4699#issuecomment-35403",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_4699_fix.patch](tarball://root/attachments/some-uuid/ticket4699/trac_4699_fix.patch) by gfurnish created at 2008-12-11 14:07:34
+Attachment [trac_4699_fix.patch](tarball://root/attachments/some-uuid/ticket4699/trac_4699_fix.patch) by @garyfurnish created at 2008-12-11 14:07:34
 
 
 

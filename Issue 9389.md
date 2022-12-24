@@ -3,7 +3,7 @@
 archive/issues_009389.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  was cturner ylchapuy\n\nKeywords: segfault crash local_data\n\nIn 4.4.4 the following crashes Sage:\n\n\n```\nsage: K.<b3> = NumberField(x^6 + 15*x^4 + 2*x^3 + 156*x^2 - 48*x + 701)\nsage: E = EllipticCurve(K, [0, 1116/38413*b3^5+54/38413*b3^4+20460/38413*b3^3+3222/38413*b3^2+88752/38413*b3-34404/38413, 0, 54/38413*b3^5+3720/38413*b3^4+990/38413*b3^3+29895/38413*b3^2+19164/38413*b3+485313/38413, 0])\nsage: E.local_data()\n```\n\n\nBoom!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9389\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein cturner ylchapuy\n\nKeywords: segfault crash local_data\n\nIn 4.4.4 the following crashes Sage:\n\n\n```\nsage: K.<b3> = NumberField(x^6 + 15*x^4 + 2*x^3 + 156*x^2 - 48*x + 701)\nsage: E = EllipticCurve(K, [0, 1116/38413*b3^5+54/38413*b3^4+20460/38413*b3^3+3222/38413*b3^2+88752/38413*b3-34404/38413, 0, 54/38413*b3^5+3720/38413*b3^4+990/38413*b3^3+29895/38413*b3^2+19164/38413*b3+485313/38413, 0])\nsage: E.local_data()\n```\n\n\nBoom!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9389\n\n",
     "created_at": "2010-06-30T03:26:30Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009389.json:
     "title": "sage crashing when computing local_data() for an EC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9389",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  was cturner ylchapuy
+CC:  @williamstein cturner ylchapuy
 
 Keywords: segfault crash local_data
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9389
 archive/issue_comments_089370.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to cremona.",
+    "body": "Changing assignee from @aghitza to @JohnCremona.",
     "created_at": "2010-06-30T03:28:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89370",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
-Changing assignee from AlexGhitza to cremona.
+Changing assignee from @aghitza to @JohnCremona.
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_089371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89371",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_089372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89372",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_089373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89373",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_089374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89374",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_089375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89375",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -189,16 +189,16 @@ sage: R([23/36*a^3 + a^2 + 1/18*a + 1, 0, 7/18*a^3 + 3/4*a^2 + 1/18*a + 1/2, 1])
 archive/issue_comments_089376.json:
 ```json
 {
-    "body": "Changing assignee from cremona to davidloeffler.",
+    "body": "Changing assignee from @JohnCremona to @loefflerd.",
     "created_at": "2010-07-02T22:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89376",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from cremona to davidloeffler.
+Changing assignee from @JohnCremona to @loefflerd.
 
 
 
@@ -212,7 +212,7 @@ archive/issue_comments_089377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89377",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_089379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89379",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_089380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89380",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_089381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89381",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_089382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89382",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_089383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89383",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_089387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89387",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_089388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9389#issuecomment-89388",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

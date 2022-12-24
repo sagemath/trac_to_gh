@@ -3,7 +3,7 @@
 archive/issues_008195.json:
 ```json
 {
-    "body": "Assignee: schilly\n\nCC:  mvngu\n\nI believe there are several problems on the downloads page: http://www.sagemath.org/download.html\n\nThis is particularity important now, as I want to put an announcement on compu.unix.solaris about Sage on Solaris, but there is no point until the web pages are more accurate. \n\n## Download and Media\n* It says the current release is 4.3.1, yet there is no mention of the fact that for Solaris, the latest is 4.3.0.1. I think this is pretty important to have prominently, so a Solaris user does not download 4.3.1, which will not work for them. I would suggest adding \"Unfortunately, 4.3.1 will not build on any version of Solaris. We are working on fixing these issues. However, version 4.3.0.1 successfully builds on Solaris 10 (SPARC)\"\n* Further down (too far down IMHO), it says \"Sage 4.3.0.1 is the latest version that successfully builds on the Sun T5240. See the Sage wiki for build instructions\" This has three issues\n  * Solaris builds on many systems, not just the T5240. In fact, I rarely build it on that, as it is so slow. \n  * A lot of Solaris users wont even know what a T5240 is. It is probably the worst possible sort of machine for scientific users. \n  * The Wiki page it points to is **very** specific for 't2'. Those instructions will be of no use to anyone with any other Solaris machine, not even a T5240 unless it is 't2'.  I believe there should be a link to the build instructions for Solaris, which are at http://wiki.sagemath.org/solaris **plus** a note for users with access to t2.math.washington.edu, that there are very simpled instructions at http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2 specifically for 't2'. The point is, the instructions at http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2 are very specific to how 't2' has been configured. They would not apply to anyone elses T5240, nor any other Solaris machine. For other Solaris users, the only Solaris page of interest is http://wiki.sagemath.org/solaris\n\n## DVD\nThe link to Lulu to get a live CD reports a message that the CD is not available. As such, it should be removed until such time as the DVD becomes available, which does not look to be any time soon. It has been broken for months.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8195\n\n",
+    "body": "Assignee: @haraldschilly\n\nCC:  mvngu\n\nI believe there are several problems on the downloads page: http://www.sagemath.org/download.html\n\nThis is particularity important now, as I want to put an announcement on compu.unix.solaris about Sage on Solaris, but there is no point until the web pages are more accurate. \n\n## Download and Media\n* It says the current release is 4.3.1, yet there is no mention of the fact that for Solaris, the latest is 4.3.0.1. I think this is pretty important to have prominently, so a Solaris user does not download 4.3.1, which will not work for them. I would suggest adding \"Unfortunately, 4.3.1 will not build on any version of Solaris. We are working on fixing these issues. However, version 4.3.0.1 successfully builds on Solaris 10 (SPARC)\"\n* Further down (too far down IMHO), it says \"Sage 4.3.0.1 is the latest version that successfully builds on the Sun T5240. See the Sage wiki for build instructions\" This has three issues\n  * Solaris builds on many systems, not just the T5240. In fact, I rarely build it on that, as it is so slow. \n  * A lot of Solaris users wont even know what a T5240 is. It is probably the worst possible sort of machine for scientific users. \n  * The Wiki page it points to is **very** specific for 't2'. Those instructions will be of no use to anyone with any other Solaris machine, not even a T5240 unless it is 't2'.  I believe there should be a link to the build instructions for Solaris, which are at http://wiki.sagemath.org/solaris **plus** a note for users with access to t2.math.washington.edu, that there are very simpled instructions at http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2 specifically for 't2'. The point is, the instructions at http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2 are very specific to how 't2' has been configured. They would not apply to anyone elses T5240, nor any other Solaris machine. For other Solaris users, the only Solaris page of interest is http://wiki.sagemath.org/solaris\n\n## DVD\nThe link to Lulu to get a live CD reports a message that the CD is not available. As such, it should be removed until such time as the DVD becomes available, which does not look to be any time soon. It has been broken for months.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8195\n\n",
     "created_at": "2010-02-05T18:24:51Z",
     "labels": [
         "website/wiki",
@@ -17,7 +17,7 @@ archive/issues_008195.json:
     "user": "drkirkby"
 }
 ```
-Assignee: schilly
+Assignee: @haraldschilly
 
 CC:  mvngu
 
@@ -51,7 +51,7 @@ archive/issue_comments_072273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8195#issuecomment-72273",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_072276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8195#issuecomment-72276",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -238,7 +238,7 @@ However, check the pages and tell me what is left to do.
 archive/issue_comments_072277.json:
 ```json
 {
-    "body": "Changing assignee from schilly to drkirkby.",
+    "body": "Changing assignee from @haraldschilly to drkirkby.",
     "created_at": "2010-02-06T11:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8195",
     "type": "issue_comment",
@@ -247,7 +247,7 @@ archive/issue_comments_072277.json:
 }
 ```
 
-Changing assignee from schilly to drkirkby.
+Changing assignee from @haraldschilly to drkirkby.
 
 
 
@@ -345,7 +345,7 @@ archive/issue_comments_072279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8195#issuecomment-72279",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_072281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8195#issuecomment-72281",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_072282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8195#issuecomment-72282",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_072283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8195#issuecomment-72283",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_072284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8195#issuecomment-72284",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_072285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8195#issuecomment-72285",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

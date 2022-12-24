@@ -14,7 +14,7 @@ archive/issues_003522.json:
     "title": "[with spkgs, needs review] New experimental mayavi2 spkg based on vtk_5.2 for linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3522",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: mabshoff

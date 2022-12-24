@@ -14,7 +14,7 @@ archive/issues_008757.json:
     "title": "Use SQLAlchemy for storage in SageNB",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8757",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: jason, was
@@ -37,7 +37,7 @@ archive/issue_comments_080124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80124",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -50,16 +50,16 @@ Preliminary work. Schema in sagenb.notebook.models.models.
 archive/issue_comments_080125.json:
 ```json
 {
-    "body": "Attachment [trac_8757-sqlalchemy-storage-incomplete.patch](tarball://root/attachments/some-uuid/ticket8757/trac_8757-sqlalchemy-storage-incomplete.patch) by jdemeyer created at 2013-08-13 15:35:53",
+    "body": "Attachment [trac_8757-sqlalchemy-storage-incomplete.patch](tarball://root/attachments/some-uuid/ticket8757/trac_8757-sqlalchemy-storage-incomplete.patch) by @jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80125",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_8757-sqlalchemy-storage-incomplete.patch](tarball://root/attachments/some-uuid/ticket8757/trac_8757-sqlalchemy-storage-incomplete.patch) by jdemeyer created at 2013-08-13 15:35:53
+Attachment [trac_8757-sqlalchemy-storage-incomplete.patch](tarball://root/attachments/some-uuid/ticket8757/trac_8757-sqlalchemy-storage-incomplete.patch) by @jdemeyer created at 2013-08-13 15:35:53
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_080126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80126",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_080127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80127",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_080128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80128",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_080129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80129",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_080130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80130",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_080131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80131",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_080132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80132",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_080133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80133",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

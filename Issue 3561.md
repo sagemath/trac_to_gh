@@ -14,7 +14,7 @@ archive/issues_003561.json:
     "title": "make it so sage does *not* import numpy by default on startup.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3561",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -37,7 +37,7 @@ archive/issue_comments_025168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3561#issuecomment-25168",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

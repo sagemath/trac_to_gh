@@ -3,7 +3,7 @@
 archive/issues_000392.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: round, real, arithmetic\n\nThe function round() seems to ignore precision information slightly beyond the default 53 bits for a real number.  This leads to some incorrect rounding results for close calls.\n\n\n```\nsage: a = 5.499999999999999 \nsage: a.prec()\n56\nsage: round(a)  ## This is ok\n5.0\n\nsage: b = 5.4999999999999999\nsage: b.prec()\n59\nsage: round(b)  ## This isn't ok \n6.0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/392\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: round, real, arithmetic\n\nThe function round() seems to ignore precision information slightly beyond the default 53 bits for a real number.  This leads to some incorrect rounding results for close calls.\n\n\n```\nsage: a = 5.499999999999999 \nsage: a.prec()\n56\nsage: round(a)  ## This is ok\n5.0\n\nsage: b = 5.4999999999999999\nsage: b.prec()\n59\nsage: round(b)  ## This isn't ok \n6.0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/392\n\n",
     "created_at": "2007-06-28T06:03:57Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000392.json:
     "title": "round() ignores the innate precision of a real number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/392",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: round, real, arithmetic
 
@@ -55,7 +55,7 @@ archive/issue_comments_001926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/392#issuecomment-1926",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_001927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/392#issuecomment-1927",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

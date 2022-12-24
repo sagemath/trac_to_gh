@@ -3,7 +3,7 @@
 archive/issues_004847.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  wdj\n\nThe two files in question are ancient (2006 or earlier), not imported and deprecated. So let's get rid of them.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4847\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @wdjoyner\n\nThe two files in question are ancient (2006 or earlier), not imported and deprecated. So let's get rid of them.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4847\n\n",
     "created_at": "2008-12-21T15:49:08Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_004847.json:
 ```
 Assignee: mabshoff
 
-CC:  wdj
+CC:  @wdjoyner
 
 The two files in question are ancient (2006 or earlier), not imported and deprecated. So let's get rid of them.
 
@@ -123,7 +123,7 @@ archive/issue_comments_036756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4847#issuecomment-36756",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_036759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4847#issuecomment-36759",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

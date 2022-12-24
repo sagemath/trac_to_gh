@@ -3,7 +3,7 @@
 archive/issues_009641.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  craigcitro\n\nAll files are named .sage/tmp/filename. At high parallelism, there are often conflicts (e.g. all.py, proof.py, ...) that result in untested code and spurious errors. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9641\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @craigcitro\n\nAll files are named .sage/tmp/filename. At high parallelism, there are often conflicts (e.g. all.py, proof.py, ...) that result in untested code and spurious errors. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9641\n\n",
     "created_at": "2010-07-29T21:34:32Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009641.json:
     "title": "Race condition with sage -tp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9641",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  craigcitro
+CC:  @craigcitro
 
 All files are named .sage/tmp/filename. At high parallelism, there are often conflicts (e.g. all.py, proof.py, ...) that result in untested code and spurious errors. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_093458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9641#issuecomment-93458",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing component from algebra to doctest.
 archive/issue_comments_093459.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to mvngu.",
+    "body": "Changing assignee from @aghitza to mvngu.",
     "created_at": "2010-09-02T11:06:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9641#issuecomment-93459",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from AlexGhitza to mvngu.
+Changing assignee from @aghitza to mvngu.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_093460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9641#issuecomment-93460",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_093461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9641#issuecomment-93461",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

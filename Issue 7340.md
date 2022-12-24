@@ -3,7 +3,7 @@
 archive/issues_007340.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  rbeezer jason mvngu\n\n\n```\nsage: SymmetricGroup(6).cayley_table()\n------------------------------------------------------------\n   File \"<string>\", line 1\n     [(1,154,305,451,577,601,),(2,153,306,452,578,602,),(3,156,302,453,579,603,),(4,155,301,454,580,604,),(5,151,304,455,581,605,),(6,152,303,456,582,606,),(7,160,311,437,583,607,),(8,159,312,438,584,608,),(9,162,308,434,585,609,),(10,161,307,433,586,610,),(11,157,310,436,587,611,),(12,158,309,435,588,612,),(13,166,292,443,589,613,),(14,165,291,444,590,614,),(15,168,294,440,591,615,),(16,167,293,439,592,616,),(17,163,289,442,593,617,),(18,164,290,441,594,618,),(19,145,298,449,595,619,),(20,146,297,450,596,620,),(21,147,300,446,597,621,),(22,148,299,445,598,622,),(23,149,295,448,599,623,),(24,150,296,447,600,624,),(25,178,329,475,499,625,),(26,177,330,476,500,626,),(27,180,326,477,501,627,),(28,179,325,478,502,628,),(29,175,328,479,503,629,),(30,176,327,480,504,630,),(31,184,335,461,485,631,),(32,183,336,462,486,632,),(33,186,332,458,482,633,),(34,185,331,457,481,634,),([...],)]\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^\nSyntaxError: invalid syntax\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7340\n\n",
+    "body": "Assignee: tbd\n\nCC:  @rbeezer @jasongrout mvngu\n\n\n```\nsage: SymmetricGroup(6).cayley_table()\n------------------------------------------------------------\n   File \"<string>\", line 1\n     [(1,154,305,451,577,601,),(2,153,306,452,578,602,),(3,156,302,453,579,603,),(4,155,301,454,580,604,),(5,151,304,455,581,605,),(6,152,303,456,582,606,),(7,160,311,437,583,607,),(8,159,312,438,584,608,),(9,162,308,434,585,609,),(10,161,307,433,586,610,),(11,157,310,436,587,611,),(12,158,309,435,588,612,),(13,166,292,443,589,613,),(14,165,291,444,590,614,),(15,168,294,440,591,615,),(16,167,293,439,592,616,),(17,163,289,442,593,617,),(18,164,290,441,594,618,),(19,145,298,449,595,619,),(20,146,297,450,596,620,),(21,147,300,446,597,621,),(22,148,299,445,598,622,),(23,149,295,448,599,623,),(24,150,296,447,600,624,),(25,178,329,475,499,625,),(26,177,330,476,500,626,),(27,180,326,477,501,627,),(28,179,325,478,502,628,),(29,175,328,479,503,629,),(30,176,327,480,504,630,),(31,184,335,461,485,631,),(32,183,336,462,486,632,),(33,186,332,458,482,633,),(34,185,331,457,481,634,),([...],)]\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^\nSyntaxError: invalid syntax\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7340\n\n",
     "created_at": "2009-10-28T21:42:38Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007340.json:
     "title": "cayley_table has a syntax error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7340",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
 
-CC:  rbeezer jason mvngu
+CC:  @rbeezer @jasongrout mvngu
 
 
 ```
@@ -50,7 +50,7 @@ archive/issue_comments_061425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7340#issuecomment-61425",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_061426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7340#issuecomment-61426",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_061427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7340#issuecomment-61427",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_061428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7340#issuecomment-61428",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_061429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7340#issuecomment-61429",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_061430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7340#issuecomment-61430",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_061431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7340#issuecomment-61431",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_061432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7340#issuecomment-61432",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_061433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7340#issuecomment-61433",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_061434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7340#issuecomment-61434",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

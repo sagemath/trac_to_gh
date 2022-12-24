@@ -3,7 +3,7 @@
 archive/issues_007753.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: Bruhat order, Weak order\n\nNew methods:\n- bruhat_le (code inspired from code by Daniel Bump)\n- weak_le\n- bruhat_poset (finite Coxeter groups)\n- weak_poset   (finite Coxeter groups)\n\nImproved doctests for related methods\n\nIssue created by migration from https://trac.sagemath.org/ticket/7753\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: Bruhat order, Weak order\n\nNew methods:\n- bruhat_le (code inspired from code by Daniel Bump)\n- weak_le\n- bruhat_poset (finite Coxeter groups)\n- weak_poset   (finite Coxeter groups)\n\nImproved doctests for related methods\n\nIssue created by migration from https://trac.sagemath.org/ticket/7753\n\n",
     "created_at": "2009-12-23T22:55:34Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_007753.json:
     "title": "Coxeter groups: more Bruhat and weak order features",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7753",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -47,7 +47,7 @@ archive/issue_comments_066770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7753#issuecomment-66770",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_066771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7753#issuecomment-66771",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_066772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7753#issuecomment-66772",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_066773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7753#issuecomment-66773",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_066774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7753#issuecomment-66774",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_066775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7753#issuecomment-66775",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -175,16 +175,16 @@ Updated timings w.r.t. #7754 which is already in Sage
 archive/issue_comments_066776.json:
 ```json
 {
-    "body": "Attachment [trac_7753_root_systems-bruhat_order-nt.patch](tarball://root/attachments/some-uuid/ticket7753/trac_7753_root_systems-bruhat_order-nt.patch) by bump created at 2010-01-07 14:18:37\n\nBy now this code is tested a lot, at least for finite Weyl groups, and\nthe previous reviewer comments were addressed. I am changing the\nstatus to positive review.",
+    "body": "Attachment [trac_7753_root_systems-bruhat_order-nt.patch](tarball://root/attachments/some-uuid/ticket7753/trac_7753_root_systems-bruhat_order-nt.patch) by @dwbump created at 2010-01-07 14:18:37\n\nBy now this code is tested a lot, at least for finite Weyl groups, and\nthe previous reviewer comments were addressed. I am changing the\nstatus to positive review.",
     "created_at": "2010-01-07T14:18:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7753#issuecomment-66776",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_7753_root_systems-bruhat_order-nt.patch](tarball://root/attachments/some-uuid/ticket7753/trac_7753_root_systems-bruhat_order-nt.patch) by bump created at 2010-01-07 14:18:37
+Attachment [trac_7753_root_systems-bruhat_order-nt.patch](tarball://root/attachments/some-uuid/ticket7753/trac_7753_root_systems-bruhat_order-nt.patch) by @dwbump created at 2010-01-07 14:18:37
 
 By now this code is tested a lot, at least for finite Weyl groups, and
 the previous reviewer comments were addressed. I am changing the
@@ -202,7 +202,7 @@ archive/issue_comments_066777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7753#issuecomment-66777",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_066778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7753#issuecomment-66778",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

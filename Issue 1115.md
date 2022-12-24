@@ -3,7 +3,7 @@
 archive/issues_001115.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis example illustrates the problem:\n\n```\nsage: E = EllipticCurve('389a')\nsage: sha = E.sha()\nsage: sha.an_numerical(200)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '/': 'Complex Field with 200 bits of precision' and 'Real Field with 53 bits of precision'\nsage: sha.an_numerical()\n0.999999999999998\nsage: sha.an_numerical(200)\n0.999999999999998\nsage: sha.an_numerical(300)\n0.999999999999998\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1115\n\n",
+    "body": "Assignee: @williamstein\n\nThis example illustrates the problem:\n\n```\nsage: E = EllipticCurve('389a')\nsage: sha = E.sha()\nsage: sha.an_numerical(200)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '/': 'Complex Field with 200 bits of precision' and 'Real Field with 53 bits of precision'\nsage: sha.an_numerical()\n0.999999999999998\nsage: sha.an_numerical(200)\n0.999999999999998\nsage: sha.an_numerical(300)\n0.999999999999998\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1115\n\n",
     "created_at": "2007-11-06T21:54:49Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001115.json:
     "title": "Sha_an either fails or lies when prec isn't the default 53",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1115",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This example illustrates the problem:
 
@@ -53,7 +53,7 @@ archive/issue_comments_006729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6729",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_006730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6730",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_006731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6731",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_006732.json:
 ```json
 {
-    "body": "Attachment [sage-trac1115.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115.patch) by cremona created at 2008-09-01 11:34:15\n\nThe patch sage-trac1115.patch implements the following:\n\nIn ell_point.py: arbitrary precision for canonical heights (over Q)\n\nIn ell_rational_field.py: improved use of database for gens() (e.g. if the curve is not in the database but an isomorphic curve is);  no longer gets regulator from db but computes it from gens;  regulator_of_points() function to find the regulators (i.e. det of height pairing matrix) for any list of points, to arbitrary precision;  revised regulator() function handles arbitrary precision with caching.\n\nIn ell_sha.py:  full precision setting for an_numerical(), which amongst other things deals with the original posting.",
+    "body": "Attachment [sage-trac1115.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115.patch) by @JohnCremona created at 2008-09-01 11:34:15\n\nThe patch sage-trac1115.patch implements the following:\n\nIn ell_point.py: arbitrary precision for canonical heights (over Q)\n\nIn ell_rational_field.py: improved use of database for gens() (e.g. if the curve is not in the database but an isomorphic curve is);  no longer gets regulator from db but computes it from gens;  regulator_of_points() function to find the regulators (i.e. det of height pairing matrix) for any list of points, to arbitrary precision;  revised regulator() function handles arbitrary precision with caching.\n\nIn ell_sha.py:  full precision setting for an_numerical(), which amongst other things deals with the original posting.",
     "created_at": "2008-09-01T11:34:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6732",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac1115.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115.patch) by cremona created at 2008-09-01 11:34:15
+Attachment [sage-trac1115.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115.patch) by @JohnCremona created at 2008-09-01 11:34:15
 
 The patch sage-trac1115.patch implements the following:
 
@@ -139,7 +139,7 @@ archive/issue_comments_006733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6733",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_006735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6735",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_006736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6736",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -250,16 +250,16 @@ True
 archive/issue_comments_006737.json:
 ```json
 {
-    "body": "Attachment [sage-trac1115a.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.patch) by cremona created at 2008-09-02 09:59:34\n\nCorrection of docstring typos in previous patch",
+    "body": "Attachment [sage-trac1115a.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.patch) by @JohnCremona created at 2008-09-02 09:59:34\n\nCorrection of docstring typos in previous patch",
     "created_at": "2008-09-02T09:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6737",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac1115a.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.patch) by cremona created at 2008-09-02 09:59:34
+Attachment [sage-trac1115a.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.patch) by @JohnCremona created at 2008-09-02 09:59:34
 
 Correction of docstring typos in previous patch
 
@@ -270,16 +270,16 @@ Correction of docstring typos in previous patch
 archive/issue_comments_006738.json:
 ```json
 {
-    "body": "Attachment [sage-trac1115a.2.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.2.patch) by cremona created at 2008-09-02 10:05:24\n\nThe second patch corrects the typos (and makes the description of the precision parameter consistent in those three places). [I think I may have attached it twice: if so ignore one of the files sage-trac1115a.patch .  Sorry.]\n\nI tried the dumps() thing again on a 64-bit machine and got the same error as you.\n\nMichael A, any chance you can help determine what makes this dumps() call work ok in 32-bit but not in 64-bit?",
+    "body": "Attachment [sage-trac1115a.2.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.2.patch) by @JohnCremona created at 2008-09-02 10:05:24\n\nThe second patch corrects the typos (and makes the description of the precision parameter consistent in those three places). [I think I may have attached it twice: if so ignore one of the files sage-trac1115a.patch .  Sorry.]\n\nI tried the dumps() thing again on a 64-bit machine and got the same error as you.\n\nMichael A, any chance you can help determine what makes this dumps() call work ok in 32-bit but not in 64-bit?",
     "created_at": "2008-09-02T10:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6738",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac1115a.2.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.2.patch) by cremona created at 2008-09-02 10:05:24
+Attachment [sage-trac1115a.2.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.2.patch) by @JohnCremona created at 2008-09-02 10:05:24
 
 The second patch corrects the typos (and makes the description of the precision parameter consistent in those three places). [I think I may have attached it twice: if so ignore one of the files sage-trac1115a.patch .  Sorry.]
 
@@ -299,7 +299,7 @@ archive/issue_comments_006739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6739",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -316,16 +316,16 @@ I'll have a new patch up soon.
 archive/issue_comments_006740.json:
 ```json
 {
-    "body": "Attachment [1115-sha_prec.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec.patch) by AlexGhitza created at 2008-09-03 06:55:36\n\napply only this patch, after #3377",
+    "body": "Attachment [1115-sha_prec.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec.patch) by @aghitza created at 2008-09-03 06:55:36\n\napply only this patch, after #3377",
     "created_at": "2008-09-03T06:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6740",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [1115-sha_prec.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec.patch) by AlexGhitza created at 2008-09-03 06:55:36
+Attachment [1115-sha_prec.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec.patch) by @aghitza created at 2008-09-03 06:55:36
 
 apply only this patch, after #3377
 
@@ -341,7 +341,7 @@ archive/issue_comments_006741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6741",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_006742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6742",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -389,16 +389,16 @@ I'll do this and test it after sorting out #3377.
 archive/issue_comments_006743.json:
 ```json
 {
-    "body": "Attachment [1115-sha_prec-1.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec-1.patch) by cremona created at 2008-09-03 10:50:15",
+    "body": "Attachment [1115-sha_prec-1.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec-1.patch) by @JohnCremona created at 2008-09-03 10:50:15",
     "created_at": "2008-09-03T10:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6743",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [1115-sha_prec-1.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec-1.patch) by cremona created at 2008-09-03 10:50:15
+Attachment [1115-sha_prec-1.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec-1.patch) by @JohnCremona created at 2008-09-03 10:50:15
 
 
 
@@ -412,7 +412,7 @@ archive/issue_comments_006744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6744",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_006745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6745",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

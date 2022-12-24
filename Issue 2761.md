@@ -3,7 +3,7 @@
 archive/issues_002761.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nThis makes the Debian tachyon spkg build on amd64.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2761\n\n",
+    "body": "Assignee: @timabbott\n\nThis makes the Debian tachyon spkg build on amd64.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2761\n\n",
     "created_at": "2008-04-01T21:30:06Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002761.json:
     "title": "[with patch; needs review] Debian amd64 fixes for tachyon",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2761",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 This makes the Debian tachyon spkg build on amd64.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2761
 archive/issue_comments_018971.json:
 ```json
 {
-    "body": "Attachment [tachyon-amd64.patch](tarball://root/attachments/some-uuid/ticket2761/tachyon-amd64.patch) by tabbott created at 2008-04-01 21:30:15",
+    "body": "Attachment [tachyon-amd64.patch](tarball://root/attachments/some-uuid/ticket2761/tachyon-amd64.patch) by @timabbott created at 2008-04-01 21:30:15",
     "created_at": "2008-04-01T21:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2761",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2761#issuecomment-18971",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [tachyon-amd64.patch](tarball://root/attachments/some-uuid/ticket2761/tachyon-amd64.patch) by tabbott created at 2008-04-01 21:30:15
+Attachment [tachyon-amd64.patch](tarball://root/attachments/some-uuid/ticket2761/tachyon-amd64.patch) by @timabbott created at 2008-04-01 21:30:15
 
 
 

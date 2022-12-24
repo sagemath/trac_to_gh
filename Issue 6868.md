@@ -14,7 +14,7 @@ archive/issues_006868.json:
     "title": "[with SPKG, needs review] Coin-OR CBC ( compatible with the symbolics from MIP )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6868",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: tbd
@@ -65,7 +65,7 @@ archive/issue_comments_056685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6868#issuecomment-56685",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

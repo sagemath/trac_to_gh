@@ -14,7 +14,7 @@ archive/issues_004031.json:
     "title": "Callable symbolic expressions should allow keyword args",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4031",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 Assignee: tbd
@@ -63,16 +63,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4031
 archive/issue_comments_029082.json:
 ```json
 {
-    "body": "Attachment [add_kwargs.patch](tarball://root/attachments/some-uuid/ticket4031/add_kwargs.patch) by jwmerrill created at 2008-09-01 06:27:23",
+    "body": "Attachment [add_kwargs.patch](tarball://root/attachments/some-uuid/ticket4031/add_kwargs.patch) by @jicama created at 2008-09-01 06:27:23",
     "created_at": "2008-09-01T06:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29082",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Attachment [add_kwargs.patch](tarball://root/attachments/some-uuid/ticket4031/add_kwargs.patch) by jwmerrill created at 2008-09-01 06:27:23
+Attachment [add_kwargs.patch](tarball://root/attachments/some-uuid/ticket4031/add_kwargs.patch) by @jicama created at 2008-09-01 06:27:23
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_029083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29083",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_029084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29084",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_029085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29085",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -135,16 +135,16 @@ Changing component from algebra to calculus.
 archive/issue_comments_029086.json:
 ```json
 {
-    "body": "Changing assignee from tbd to jwmerrill.",
+    "body": "Changing assignee from tbd to @jicama.",
     "created_at": "2008-09-01T06:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29086",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Changing assignee from tbd to jwmerrill.
+Changing assignee from tbd to @jicama.
 
 
 
@@ -171,16 +171,16 @@ Opps :)
 archive/issue_comments_029088.json:
 ```json
 {
-    "body": "Attachment [trac_4031.patch](tarball://root/attachments/some-uuid/ticket4031/trac_4031.patch) by mhansen created at 2008-09-01 22:38:24",
+    "body": "Attachment [trac_4031.patch](tarball://root/attachments/some-uuid/ticket4031/trac_4031.patch) by @mwhansen created at 2008-09-01 22:38:24",
     "created_at": "2008-09-01T22:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29088",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4031.patch](tarball://root/attachments/some-uuid/ticket4031/trac_4031.patch) by mhansen created at 2008-09-01 22:38:24
+Attachment [trac_4031.patch](tarball://root/attachments/some-uuid/ticket4031/trac_4031.patch) by @mwhansen created at 2008-09-01 22:38:24
 
 
 
@@ -194,7 +194,7 @@ archive/issue_comments_029089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29089",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_029090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29090",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_029091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29091",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_029092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29092",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 

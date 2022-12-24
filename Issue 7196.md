@@ -3,7 +3,7 @@
 archive/issues_007196.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  timdumol was\n\nReorganize `sagenb/data` around packages.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7196\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol @williamstein\n\nReorganize `sagenb/data` around packages.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7196\n\n",
     "created_at": "2009-10-12T17:16:48Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007196.json:
     "title": "SageNB: Reorganize the JS/Java/CSS/HTML \"data\" directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7196",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
 
-CC:  timdumol was
+CC:  @TimDumol @williamstein
 
 Reorganize `sagenb/data` around packages.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7196
 archive/issue_comments_059685.json:
 ```json
 {
-    "body": "Attachment [trac_7196-sagenb_data_reorg_part_A.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-sagenb_data_reorg_part_A.patch) by mpatel created at 2009-10-12 17:38:06\n\nSageNB data/ reorg part A: Shuffle files and directories.  Apply this patch first.",
+    "body": "Attachment [trac_7196-sagenb_data_reorg_part_A.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-sagenb_data_reorg_part_A.patch) by @qed777 created at 2009-10-12 17:38:06\n\nSageNB data/ reorg part A: Shuffle files and directories.  Apply this patch first.",
     "created_at": "2009-10-12T17:38:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7196#issuecomment-59685",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7196-sagenb_data_reorg_part_A.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-sagenb_data_reorg_part_A.patch) by mpatel created at 2009-10-12 17:38:06
+Attachment [trac_7196-sagenb_data_reorg_part_A.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-sagenb_data_reorg_part_A.patch) by @qed777 created at 2009-10-12 17:38:06
 
 SageNB data/ reorg part A: Shuffle files and directories.  Apply this patch first.
 
@@ -59,7 +59,7 @@ archive/issue_comments_059686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7196#issuecomment-59686",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_059687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7196#issuecomment-59687",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -90,16 +90,16 @@ Changing status from new to needs_review.
 archive/issue_comments_059688.json:
 ```json
 {
-    "body": "Attachment [trac_7196-sagenb_data_reorg_part_B.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-sagenb_data_reorg_part_B.patch) by mpatel created at 2009-10-12 17:40:49\n\nI made the change in two parts, since the shuffle slowed Mercurial significantly.",
+    "body": "Attachment [trac_7196-sagenb_data_reorg_part_B.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-sagenb_data_reorg_part_B.patch) by @qed777 created at 2009-10-12 17:40:49\n\nI made the change in two parts, since the shuffle slowed Mercurial significantly.",
     "created_at": "2009-10-12T17:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7196#issuecomment-59688",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7196-sagenb_data_reorg_part_B.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-sagenb_data_reorg_part_B.patch) by mpatel created at 2009-10-12 17:40:49
+Attachment [trac_7196-sagenb_data_reorg_part_B.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-sagenb_data_reorg_part_B.patch) by @qed777 created at 2009-10-12 17:40:49
 
 I made the change in two parts, since the shuffle slowed Mercurial significantly.
 
@@ -115,7 +115,7 @@ archive/issue_comments_059689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7196#issuecomment-59689",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_059690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7196#issuecomment-59690",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_059691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7196#issuecomment-59691",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -166,15 +166,15 @@ Resolution: fixed
 archive/issue_comments_059692.json:
 ```json
 {
-    "body": "Attachment [trac_7196-manifest.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-manifest.patch) by mpatel created at 2009-10-19 14:52:03\n\nUpdate MANIFEST.in.",
+    "body": "Attachment [trac_7196-manifest.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-manifest.patch) by @qed777 created at 2009-10-19 14:52:03\n\nUpdate MANIFEST.in.",
     "created_at": "2009-10-19T14:52:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7196#issuecomment-59692",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7196-manifest.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-manifest.patch) by mpatel created at 2009-10-19 14:52:03
+Attachment [trac_7196-manifest.patch](tarball://root/attachments/some-uuid/ticket7196/trac_7196-manifest.patch) by @qed777 created at 2009-10-19 14:52:03
 
 Update MANIFEST.in.

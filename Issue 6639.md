@@ -3,7 +3,7 @@
 archive/issues_006639.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  jbandlow pmcnamara sage-combinat\n\nAdded definition \n\nIssue created by migration from https://trac.sagemath.org/ticket/6639\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jbandlow @peter-mcnamara sage-combinat\n\nAdded definition \n\nIssue created by migration from https://trac.sagemath.org/ticket/6639\n\n",
     "created_at": "2009-07-27T13:05:58Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_006639.json:
     "title": "Documentation for Lyndon words, with patch, needs review",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6639",
-    "user": "pmcnamara"
+    "user": "@peter-mcnamara"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  jbandlow pmcnamara sage-combinat
+CC:  @jbandlow @peter-mcnamara sage-combinat
 
 Added definition 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6639
 archive/issue_comments_054433.json:
 ```json
 {
-    "body": "Attachment [lyndon_words_def-pm.patch](tarball://root/attachments/some-uuid/ticket6639/lyndon_words_def-pm.patch) by pmcnamara created at 2009-07-27 13:06:28",
+    "body": "Attachment [lyndon_words_def-pm.patch](tarball://root/attachments/some-uuid/ticket6639/lyndon_words_def-pm.patch) by @peter-mcnamara created at 2009-07-27 13:06:28",
     "created_at": "2009-07-27T13:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6639#issuecomment-54433",
-    "user": "pmcnamara"
+    "user": "@peter-mcnamara"
 }
 ```
 
-Attachment [lyndon_words_def-pm.patch](tarball://root/attachments/some-uuid/ticket6639/lyndon_words_def-pm.patch) by pmcnamara created at 2009-07-27 13:06:28
+Attachment [lyndon_words_def-pm.patch](tarball://root/attachments/some-uuid/ticket6639/lyndon_words_def-pm.patch) by @peter-mcnamara created at 2009-07-27 13:06:28
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_054434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6639#issuecomment-54434",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_054435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6639#issuecomment-54435",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_054436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6639#issuecomment-54436",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 

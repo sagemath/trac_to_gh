@@ -14,7 +14,7 @@ archive/issues_007388.json:
     "title": "upgrade ratpoints to 2.1.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7388",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_062128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7388#issuecomment-62128",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_062129.json:
 ```json
 {
-    "body": "Attachment [trac_7388.patch](tarball://root/attachments/some-uuid/ticket7388/trac_7388.patch) by rlm created at 2009-11-04 19:20:54",
+    "body": "Attachment [trac_7388.patch](tarball://root/attachments/some-uuid/ticket7388/trac_7388.patch) by @rlmill created at 2009-11-04 19:20:54",
     "created_at": "2009-11-04T19:20:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7388#issuecomment-62129",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7388.patch](tarball://root/attachments/some-uuid/ticket7388/trac_7388.patch) by rlm created at 2009-11-04 19:20:54
+Attachment [trac_7388.patch](tarball://root/attachments/some-uuid/ticket7388/trac_7388.patch) by @rlmill created at 2009-11-04 19:20:54
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_062130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7388#issuecomment-62130",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_062131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7388#issuecomment-62131",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_062132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7388#issuecomment-62132",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_062133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7388#issuecomment-62133",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_062134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7388#issuecomment-62134",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_062135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7388#issuecomment-62135",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_062136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7388#issuecomment-62136",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_062137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7388#issuecomment-62137",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

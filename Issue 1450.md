@@ -14,7 +14,7 @@ archive/issues_001450.json:
     "title": "update the error message for using maple / mathmatica from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1450",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1450
 archive/issue_comments_009341.json:
 ```json
 {
-    "body": "Attachment [trac-1450.patch](tarball://root/attachments/some-uuid/ticket1450/trac-1450.patch) by was created at 2007-12-10 17:13:38",
+    "body": "Attachment [trac-1450.patch](tarball://root/attachments/some-uuid/ticket1450/trac-1450.patch) by @williamstein created at 2007-12-10 17:13:38",
     "created_at": "2007-12-10T17:13:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1450",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1450#issuecomment-9341",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1450.patch](tarball://root/attachments/some-uuid/ticket1450/trac-1450.patch) by was created at 2007-12-10 17:13:38
+Attachment [trac-1450.patch](tarball://root/attachments/some-uuid/ticket1450/trac-1450.patch) by @williamstein created at 2007-12-10 17:13:38
 
 
 

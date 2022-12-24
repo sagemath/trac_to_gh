@@ -3,7 +3,7 @@
 archive/issues_006596.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  polybori burcin\n\nKeywords: singular\n\nThe attached patch factors out some commonly called code for dealing with libsingular to make it more accessible.\n\nAlso, the attached patch wraps Singular's Gr\u00f6bner strategy objects which allow much faster normal form computations.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6596\n\n",
+    "body": "Assignee: @malb\n\nCC:  polybori @burcin\n\nKeywords: singular\n\nThe attached patch factors out some commonly called code for dealing with libsingular to make it more accessible.\n\nAlso, the attached patch wraps Singular's Gr\u00f6bner strategy objects which allow much faster normal form computations.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6596\n\n",
     "created_at": "2009-07-23T07:57:04Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_006596.json:
     "title": "[with patch, needs review] Singular refactoring and Groebner Strategy objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6596",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  polybori burcin
+CC:  polybori @burcin
 
 Keywords: singular
 
@@ -44,7 +44,7 @@ archive/issue_comments_053994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6596#issuecomment-53994",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_053995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6596#issuecomment-53995",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_053996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6596#issuecomment-53996",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_053997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6596#issuecomment-53997",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_053998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6596#issuecomment-53998",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_053999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6596#issuecomment-53999",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_054000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6596#issuecomment-54000",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -211,16 +211,16 @@ instead.
 archive/issue_comments_054001.json:
 ```json
 {
-    "body": "Attachment [libsingular_refactoring.patch](tarball://root/attachments/some-uuid/ticket6596/libsingular_refactoring.patch) by malb created at 2009-08-19 11:42:45\n\nshould apply cleanly against 4.1.1",
+    "body": "Attachment [libsingular_refactoring.patch](tarball://root/attachments/some-uuid/ticket6596/libsingular_refactoring.patch) by @malb created at 2009-08-19 11:42:45\n\nshould apply cleanly against 4.1.1",
     "created_at": "2009-08-19T11:42:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6596#issuecomment-54001",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [libsingular_refactoring.patch](tarball://root/attachments/some-uuid/ticket6596/libsingular_refactoring.patch) by malb created at 2009-08-19 11:42:45
+Attachment [libsingular_refactoring.patch](tarball://root/attachments/some-uuid/ticket6596/libsingular_refactoring.patch) by @malb created at 2009-08-19 11:42:45
 
 should apply cleanly against 4.1.1
 
@@ -236,7 +236,7 @@ archive/issue_comments_054002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6596#issuecomment-54002",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -249,16 +249,16 @@ I rebased and updated the patch.
 archive/issue_comments_054003.json:
 ```json
 {
-    "body": "Attachment [trac_6596-referee.patch](tarball://root/attachments/some-uuid/ticket6596/trac_6596-referee.patch) by AlexGhitza created at 2009-08-27 00:53:23\n\napply after the previous patch",
+    "body": "Attachment [trac_6596-referee.patch](tarball://root/attachments/some-uuid/ticket6596/trac_6596-referee.patch) by @aghitza created at 2009-08-27 00:53:23\n\napply after the previous patch",
     "created_at": "2009-08-27T00:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6596#issuecomment-54003",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6596-referee.patch](tarball://root/attachments/some-uuid/ticket6596/trac_6596-referee.patch) by AlexGhitza created at 2009-08-27 00:53:23
+Attachment [trac_6596-referee.patch](tarball://root/attachments/some-uuid/ticket6596/trac_6596-referee.patch) by @aghitza created at 2009-08-27 00:53:23
 
 apply after the previous patch
 
@@ -274,7 +274,7 @@ archive/issue_comments_054004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6596#issuecomment-54004",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_054005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6596#issuecomment-54005",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

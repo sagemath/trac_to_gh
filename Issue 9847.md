@@ -3,7 +3,7 @@
 archive/issues_009847.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\nTo run the copy of R bundled with Sage, we can use `sage -R`, but this option is not documented in the help message returned by `sage -advanced`.\n\nThe relevant file is `SAGE_ROOT/local/bin/sage-sage`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9848\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nTo run the copy of R bundled with Sage, we can use `sage -R`, but this option is not documented in the help message returned by `sage -advanced`.\n\nThe relevant file is `SAGE_ROOT/local/bin/sage-sage`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9848\n\n",
     "created_at": "2010-09-01T09:51:49Z",
     "labels": [
         "user interface",
@@ -14,12 +14,12 @@ archive/issues_009847.json:
     "title": "'sage -advanced' does not mention the '-R' flag, which starts the R interpreter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9847",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 To run the copy of R bundled with Sage, we can use `sage -R`, but this option is not documented in the help message returned by `sage -advanced`.
 
@@ -41,7 +41,7 @@ archive/issue_comments_097195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9847#issuecomment-97195",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_097196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9847#issuecomment-97196",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_097197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9847#issuecomment-97197",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_097198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9847#issuecomment-97198",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_097199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9847#issuecomment-97199",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_097200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9847#issuecomment-97200",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

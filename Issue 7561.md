@@ -14,7 +14,7 @@ archive/issues_007561.json:
     "title": "Replaces InfinitePolynomialRing in MixedIntegerLinearProgram by 'var'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7561",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
@@ -41,7 +41,7 @@ archive/issue_comments_064325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7561#issuecomment-64325",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_064326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7561#issuecomment-64326",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_064327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7561#issuecomment-64327",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_064328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7561#issuecomment-64328",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_064329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7561#issuecomment-64329",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_064330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7561#issuecomment-64330",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_064331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7561#issuecomment-64331",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -182,16 +182,16 @@ Nathann
 archive/issue_comments_064332.json:
 ```json
 {
-    "body": "Attachment [trac_7561.patch](tarball://root/attachments/some-uuid/ticket7561/trac_7561.patch) by malb created at 2009-12-05 14:59:46\n\nThis should go into 4.3, it opens a whole new world for MIP problems.",
+    "body": "Attachment [trac_7561.patch](tarball://root/attachments/some-uuid/ticket7561/trac_7561.patch) by @malb created at 2009-12-05 14:59:46\n\nThis should go into 4.3, it opens a whole new world for MIP problems.",
     "created_at": "2009-12-05T14:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7561#issuecomment-64332",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_7561.patch](tarball://root/attachments/some-uuid/ticket7561/trac_7561.patch) by malb created at 2009-12-05 14:59:46
+Attachment [trac_7561.patch](tarball://root/attachments/some-uuid/ticket7561/trac_7561.patch) by @malb created at 2009-12-05 14:59:46
 
 This should go into 4.3, it opens a whole new world for MIP problems.
 
@@ -207,7 +207,7 @@ archive/issue_comments_064333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7561#issuecomment-64333",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_064334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7561#issuecomment-64334",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -238,16 +238,16 @@ Thankssssssssssssss :-)
 archive/issue_comments_064335.json:
 ```json
 {
-    "body": "Attachment [trac_7561-review.patch](tarball://root/attachments/some-uuid/ticket7561/trac_7561-review.patch) by mhansen created at 2009-12-06 08:51:22",
+    "body": "Attachment [trac_7561-review.patch](tarball://root/attachments/some-uuid/ticket7561/trac_7561-review.patch) by @mwhansen created at 2009-12-06 08:51:22",
     "created_at": "2009-12-06T08:51:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7561#issuecomment-64335",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7561-review.patch](tarball://root/attachments/some-uuid/ticket7561/trac_7561-review.patch) by mhansen created at 2009-12-06 08:51:22
+Attachment [trac_7561-review.patch](tarball://root/attachments/some-uuid/ticket7561/trac_7561-review.patch) by @mwhansen created at 2009-12-06 08:51:22
 
 
 
@@ -261,7 +261,7 @@ archive/issue_comments_064336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7561#issuecomment-64336",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008639.json:
     "title": "Bug when defining a MIPVariable's  type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8639",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, jkantor
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8639
 archive/issue_comments_078334.json:
 ```json
 {
-    "body": "Attachment [trac_8639.patch](tarball://root/attachments/some-uuid/ticket8639/trac_8639.patch) by ncohen created at 2010-04-01 14:07:21",
+    "body": "Attachment [trac_8639.patch](tarball://root/attachments/some-uuid/ticket8639/trac_8639.patch) by @nathanncohen created at 2010-04-01 14:07:21",
     "created_at": "2010-04-01T14:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8639#issuecomment-78334",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8639.patch](tarball://root/attachments/some-uuid/ticket8639/trac_8639.patch) by ncohen created at 2010-04-01 14:07:21
+Attachment [trac_8639.patch](tarball://root/attachments/some-uuid/ticket8639/trac_8639.patch) by @nathanncohen created at 2010-04-01 14:07:21
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_078335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8639#issuecomment-78335",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_078336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8639#issuecomment-78336",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -88,16 +88,16 @@ This seems to pass all tests on  sage 4.3.5 on a 10.6.2 mac (the only failure wa
 archive/issue_comments_078337.json:
 ```json
 {
-    "body": "Changing assignee from jason, jkantor to wdj.",
+    "body": "Changing assignee from jason, jkantor to @wdjoyner.",
     "created_at": "2010-04-02T23:01:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8639#issuecomment-78337",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Changing assignee from jason, jkantor to wdj.
+Changing assignee from jason, jkantor to @wdjoyner.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_078338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8639#issuecomment-78338",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_078339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8639#issuecomment-78339",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_078340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8639#issuecomment-78340",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_078341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8639#issuecomment-78341",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

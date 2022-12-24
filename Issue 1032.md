@@ -3,7 +3,7 @@
 archive/issues_001032.json:
 ```json
 {
-    "body": "Assignee: was\n\nI've refined the latex_variable_name function and called it a few more places to make latex'ing much much better.\n\nPatch attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1032\n\n",
+    "body": "Assignee: @williamstein\n\nI've refined the latex_variable_name function and called it a few more places to make latex'ing much much better.\n\nPatch attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1032\n\n",
     "created_at": "2007-10-29T20:47:42Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_001032.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I've refined the latex_variable_name function and called it a few more places to make latex'ing much much better.
 
@@ -59,7 +59,7 @@ archive/issue_comments_006302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6302",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_006305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6305",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_006308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6308",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_006309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6309",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_006310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1032#issuecomment-6310",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

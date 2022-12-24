@@ -3,7 +3,7 @@
 archive/issues_004658.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4658\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4658\n\n",
     "created_at": "2008-11-29T23:50:12Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004658.json:
     "title": "magma -- get rid of redundant caching: just have _magma_init_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4658",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4658
 archive/issue_comments_035088.json:
 ```json
 {
-    "body": "Attachment [trac_extcode-4658.patch](tarball://root/attachments/some-uuid/ticket4658/trac_extcode-4658.patch) by was created at 2008-11-30 07:35:48",
+    "body": "Attachment [trac_extcode-4658.patch](tarball://root/attachments/some-uuid/ticket4658/trac_extcode-4658.patch) by @williamstein created at 2008-11-30 07:35:48",
     "created_at": "2008-11-30T07:35:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4658#issuecomment-35088",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_extcode-4658.patch](tarball://root/attachments/some-uuid/ticket4658/trac_extcode-4658.patch) by was created at 2008-11-30 07:35:48
+Attachment [trac_extcode-4658.patch](tarball://root/attachments/some-uuid/ticket4658/trac_extcode-4658.patch) by @williamstein created at 2008-11-30 07:35:48
 
 
 
@@ -50,16 +50,16 @@ Attachment [trac_extcode-4658.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_035089.json:
 ```json
 {
-    "body": "Attachment [trac_4658-sage.patch](tarball://root/attachments/some-uuid/ticket4658/trac_4658-sage.patch) by was created at 2008-11-30 07:42:03",
+    "body": "Attachment [trac_4658-sage.patch](tarball://root/attachments/some-uuid/ticket4658/trac_4658-sage.patch) by @williamstein created at 2008-11-30 07:42:03",
     "created_at": "2008-11-30T07:42:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4658#issuecomment-35089",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4658-sage.patch](tarball://root/attachments/some-uuid/ticket4658/trac_4658-sage.patch) by was created at 2008-11-30 07:42:03
+Attachment [trac_4658-sage.patch](tarball://root/attachments/some-uuid/ticket4658/trac_4658-sage.patch) by @williamstein created at 2008-11-30 07:42:03
 
 
 

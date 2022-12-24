@@ -3,7 +3,7 @@
 archive/issues_004713.json:
 ```json
 {
-    "body": "Assignee: was\n\nMatrices have the function; it would be handy for vectors to also have this utility function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4713\n\n",
+    "body": "Assignee: @williamstein\n\nMatrices have the function; it would be handy for vectors to also have this utility function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4713\n\n",
     "created_at": "2008-12-05T08:08:13Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004713.json:
     "title": "make an apply_map function for vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4713",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Matrices have the function; it would be handy for vectors to also have this utility function.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4713
 archive/issue_comments_035529.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2008-12-05T08:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4713",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4713#issuecomment-35529",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_035530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4713",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4713#issuecomment-35530",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_035531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4713",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4713#issuecomment-35531",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_035532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4713",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4713#issuecomment-35532",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -123,16 +123,16 @@ By the way, definitely positive review pending adding the doctests suggested abo
 archive/issue_comments_035533.json:
 ```json
 {
-    "body": "Attachment [vector_apply_map.patch](tarball://root/attachments/some-uuid/ticket4713/vector_apply_map.patch) by jason created at 2008-12-06 23:45:23\n\nupdated patch with the suggestions.  Accordingly, marking this positive review.",
+    "body": "Attachment [vector_apply_map.patch](tarball://root/attachments/some-uuid/ticket4713/vector_apply_map.patch) by @jasongrout created at 2008-12-06 23:45:23\n\nupdated patch with the suggestions.  Accordingly, marking this positive review.",
     "created_at": "2008-12-06T23:45:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4713",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4713#issuecomment-35533",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [vector_apply_map.patch](tarball://root/attachments/some-uuid/ticket4713/vector_apply_map.patch) by jason created at 2008-12-06 23:45:23
+Attachment [vector_apply_map.patch](tarball://root/attachments/some-uuid/ticket4713/vector_apply_map.patch) by @jasongrout created at 2008-12-06 23:45:23
 
 updated patch with the suggestions.  Accordingly, marking this positive review.
 

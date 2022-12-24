@@ -14,7 +14,7 @@ archive/issues_004691.json:
     "title": "Minor docstring change for timeout on notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4691",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: boothby
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4691
 archive/issue_comments_035359.json:
 ```json
 {
-    "body": "Attachment [sage_trac_4691.patch](tarball://root/attachments/some-uuid/ticket4691/sage_trac_4691.patch) by ddrake created at 2008-12-04 05:34:58",
+    "body": "Attachment [sage_trac_4691.patch](tarball://root/attachments/some-uuid/ticket4691/sage_trac_4691.patch) by @dandrake created at 2008-12-04 05:34:58",
     "created_at": "2008-12-04T05:34:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4691#issuecomment-35359",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [sage_trac_4691.patch](tarball://root/attachments/some-uuid/ticket4691/sage_trac_4691.patch) by ddrake created at 2008-12-04 05:34:58
+Attachment [sage_trac_4691.patch](tarball://root/attachments/some-uuid/ticket4691/sage_trac_4691.patch) by @dandrake created at 2008-12-04 05:34:58
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_035360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4691#issuecomment-35360",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

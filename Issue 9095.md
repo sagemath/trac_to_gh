@@ -3,7 +3,7 @@
 archive/issues_009095.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mderickx mstreng pbruin\n\nCode at http://wiki.sagemath.org/daysff/lfcn-bsd\n\nIssue created by migration from https://trac.sagemath.org/ticket/9095\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @koffie @mstreng @pjbruin\n\nCode at http://wiki.sagemath.org/daysff/lfcn-bsd\n\nIssue created by migration from https://trac.sagemath.org/ticket/9095\n\n",
     "created_at": "2010-05-30T09:53:23Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_009095.json:
     "title": "Elliptic curve over function field heights",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9095",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mderickx mstreng pbruin
+CC:  @koffie @mstreng @pjbruin
 
 Code at http://wiki.sagemath.org/daysff/lfcn-bsd
 
@@ -39,7 +39,7 @@ archive/issue_comments_084505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9095#issuecomment-84505",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_084506.json:
 ```json
 {
-    "body": "Attachment [9095-ec-function-fields.patch](tarball://root/attachments/some-uuid/ticket9095/9095-ec-function-fields.patch) by robertwb created at 2010-05-30 10:17:55\n\nelliptic curve function field class",
+    "body": "Attachment [9095-ec-function-fields.patch](tarball://root/attachments/some-uuid/ticket9095/9095-ec-function-fields.patch) by @robertwb created at 2010-05-30 10:17:55\n\nelliptic curve function field class",
     "created_at": "2010-05-30T10:17:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9095#issuecomment-84506",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9095-ec-function-fields.patch](tarball://root/attachments/some-uuid/ticket9095/9095-ec-function-fields.patch) by robertwb created at 2010-05-30 10:17:55
+Attachment [9095-ec-function-fields.patch](tarball://root/attachments/some-uuid/ticket9095/9095-ec-function-fields.patch) by @robertwb created at 2010-05-30 10:17:55
 
 elliptic curve function field class
 
@@ -72,16 +72,16 @@ elliptic curve function field class
 archive/issue_comments_084507.json:
 ```json
 {
-    "body": "Attachment [9095-ec-ff-heights.patch](tarball://root/attachments/some-uuid/ticket9095/9095-ec-ff-heights.patch) by robertwb created at 2010-05-30 10:18:31\n\nheights, apply on top of previous",
+    "body": "Attachment [9095-ec-ff-heights.patch](tarball://root/attachments/some-uuid/ticket9095/9095-ec-ff-heights.patch) by @robertwb created at 2010-05-30 10:18:31\n\nheights, apply on top of previous",
     "created_at": "2010-05-30T10:18:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9095#issuecomment-84507",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9095-ec-ff-heights.patch](tarball://root/attachments/some-uuid/ticket9095/9095-ec-ff-heights.patch) by robertwb created at 2010-05-30 10:18:31
+Attachment [9095-ec-ff-heights.patch](tarball://root/attachments/some-uuid/ticket9095/9095-ec-ff-heights.patch) by @robertwb created at 2010-05-30 10:18:31
 
 heights, apply on top of previous
 
@@ -97,7 +97,7 @@ archive/issue_comments_084508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9095#issuecomment-84508",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_084509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9095#issuecomment-84509",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_084510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9095#issuecomment-84510",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

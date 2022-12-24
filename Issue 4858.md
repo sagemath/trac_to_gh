@@ -14,7 +14,7 @@ archive/issues_004858.json:
     "title": "parenthesis badly handled in notebook sheet titles",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4858",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: boothby
@@ -78,7 +78,7 @@ archive/issue_comments_036825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4858#issuecomment-36825",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_036826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4858#issuecomment-36826",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

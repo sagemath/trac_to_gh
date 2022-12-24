@@ -3,7 +3,7 @@
 archive/issues_005920.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: latex view\n\nThis patch allows for:\n\n```\nsage: view(object, format = \"pdf\")\n```\n\n\nTypical use cases:\n- you prefer your pdf browser\n- view latex snippets which are not displayed in dvi viewers (e.g. tikzpicture)\n\nShould this use 'output=' rather than 'format='\n\nPotential extensions: `view(object, format='png')`, `view(object, format='html')`\n\nIssue created by migration from https://trac.sagemath.org/ticket/5920\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: latex view\n\nThis patch allows for:\n\n```\nsage: view(object, format = \"pdf\")\n```\n\n\nTypical use cases:\n- you prefer your pdf browser\n- view latex snippets which are not displayed in dvi viewers (e.g. tikzpicture)\n\nShould this use 'output=' rather than 'format='\n\nPotential extensions: `view(object, format='png')`, `view(object, format='html')`\n\nIssue created by migration from https://trac.sagemath.org/ticket/5920\n\n",
     "created_at": "2009-04-28T19:35:58Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_005920.json:
     "title": "Implements view(object, format='pdf')",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5920",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -54,7 +54,7 @@ archive/issue_comments_046788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5920#issuecomment-46788",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_046789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5920#issuecomment-46789",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_046791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5920#issuecomment-46791",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_046792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5920#issuecomment-46792",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_046793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5920#issuecomment-46793",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_046795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5920#issuecomment-46795",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_046797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5920#issuecomment-46797",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_046798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5920#issuecomment-46798",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -303,16 +303,16 @@ Oops, please ignore the updated patch for a second
 archive/issue_comments_046799.json:
 ```json
 {
-    "body": "Attachment [view_as_pdf-5920-final.patch](tarball://root/attachments/some-uuid/ticket5920/view_as_pdf-5920-final.patch) by nthiery created at 2009-04-30 17:41:40",
+    "body": "Attachment [view_as_pdf-5920-final.patch](tarball://root/attachments/some-uuid/ticket5920/view_as_pdf-5920-final.patch) by @nthiery created at 2009-04-30 17:41:40",
     "created_at": "2009-04-30T17:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5920#issuecomment-46799",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [view_as_pdf-5920-final.patch](tarball://root/attachments/some-uuid/ticket5920/view_as_pdf-5920-final.patch) by nthiery created at 2009-04-30 17:41:40
+Attachment [view_as_pdf-5920-final.patch](tarball://root/attachments/some-uuid/ticket5920/view_as_pdf-5920-final.patch) by @nthiery created at 2009-04-30 17:41:40
 
 
 
@@ -326,7 +326,7 @@ archive/issue_comments_046800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5920#issuecomment-46800",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_046802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5920#issuecomment-46802",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

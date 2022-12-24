@@ -14,7 +14,7 @@ archive/issues_006890.json:
     "title": "No help for is_SymbolicVariable ?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6890",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tba
@@ -49,7 +49,7 @@ archive/issue_comments_056935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6890#issuecomment-56935",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_056936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6890#issuecomment-56936",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

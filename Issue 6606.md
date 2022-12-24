@@ -3,7 +3,7 @@
 archive/issues_006606.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  roed\n\nGamma(N).index used the default implementation which was slow. Attached is a new implementation which works for the specific subgroup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6606\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @roed314\n\nGamma(N).index used the default implementation which was slow. Attached is a new implementation which works for the specific subgroup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6606\n\n",
     "created_at": "2009-07-23T21:13:12Z",
     "labels": [
         "modular forms",
@@ -17,9 +17,9 @@ archive/issues_006606.json:
     "user": "simon"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  roed
+CC:  @roed314
 
 Gamma(N).index used the default implementation which was slow. Attached is a new implementation which works for the specific subgroup.
 
@@ -57,7 +57,7 @@ archive/issue_comments_054089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-54089",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_054091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-54091",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_054092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-54092",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

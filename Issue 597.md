@@ -14,7 +14,7 @@ archive/issues_000597.json:
     "title": "Why are single-argument arithmetic functions in the coercion model?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/597",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_003084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/597#issuecomment-3084",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_003085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/597#issuecomment-3085",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_003086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/597#issuecomment-3086",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

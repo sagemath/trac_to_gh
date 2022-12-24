@@ -14,7 +14,7 @@ archive/issues_006555.json:
     "title": "Twisted produces deprecation warning about using md5 module in Python 2.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6555",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -56,7 +56,7 @@ archive/issue_comments_053457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6555#issuecomment-53457",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_053458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6555#issuecomment-53458",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_053459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6555#issuecomment-53459",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

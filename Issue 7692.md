@@ -14,7 +14,7 @@ archive/issues_007692.json:
     "title": "update the sloane OEIS database to the latest version; it is a little out of date.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7692",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_065990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65990",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,16 +70,16 @@ Steven
 archive/issue_comments_065991.json:
 ```json
 {
-    "body": "Attachment [update-sloane](tarball://root/attachments/some-uuid/ticket7692/update-sloane) by was created at 2009-12-18 01:14:33",
+    "body": "Attachment [update-sloane](tarball://root/attachments/some-uuid/ticket7692/update-sloane) by @williamstein created at 2009-12-18 01:14:33",
     "created_at": "2009-12-18T01:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65991",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [update-sloane](tarball://root/attachments/some-uuid/ticket7692/update-sloane) by was created at 2009-12-18 01:14:33
+Attachment [update-sloane](tarball://root/attachments/some-uuid/ticket7692/update-sloane) by @williamstein created at 2009-12-18 01:14:33
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_065992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65992",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_065993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65993",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_065994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65994",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_065995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65995",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_065996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65996",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_065997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65997",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_065998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65998",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_066002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-66002",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_066003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-66003",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_066004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-66004",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_066007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-66007",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

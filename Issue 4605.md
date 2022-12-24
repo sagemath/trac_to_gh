@@ -3,7 +3,7 @@
 archive/issues_004605.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCython 0.10.2 fixes a important bug that resolves an issue so that #4206 can be merged.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4605\n\n",
+    "body": "Assignee: @robertwb\n\nCython 0.10.2 fixes a important bug that resolves an issue so that #4206 can be merged.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4605\n\n",
     "created_at": "2008-11-24T20:49:40Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_004605.json:
     "user": "mabshoff"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 Cython 0.10.2 fixes a important bug that resolves an issue so that #4206 can be merged.
 
@@ -41,7 +41,7 @@ archive/issue_comments_034515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4605#issuecomment-34515",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_034519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4605#issuecomment-34519",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_034521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4605#issuecomment-34521",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_034522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4605#issuecomment-34522",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_034524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4605#issuecomment-34524",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_034526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4605#issuecomment-34526",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_034529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4605",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4605#issuecomment-34529",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

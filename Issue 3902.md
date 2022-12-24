@@ -14,7 +14,7 @@ archive/issues_003902.json:
     "title": "%cython -- add an option #clibinclude that is like cinclude; otherwise linking in your own libraries is impossible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3902",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -58,7 +58,7 @@ archive/issue_comments_027920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3902#issuecomment-27920",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_027921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3902#issuecomment-27921",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_027922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3902#issuecomment-27922",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001128.json:
     "title": "Coercion of complex numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1128",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1128
 archive/issue_comments_006819.json:
 ```json
 {
-    "body": "Changing assignee from somebody to roed.",
+    "body": "Changing assignee from somebody to @roed314.",
     "created_at": "2007-12-02T06:13:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1128#issuecomment-6819",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Changing assignee from somebody to roed.
+Changing assignee from somebody to @roed314.
 
 
 
@@ -62,16 +62,16 @@ Changing assignee from somebody to roed.
 archive/issue_comments_006820.json:
 ```json
 {
-    "body": "Attachment [trac1128.patch](tarball://root/attachments/some-uuid/ticket1128/trac1128.patch) by roed created at 2007-12-02 06:14:11\n\nAdds algebraic completion functor",
+    "body": "Attachment [trac1128.patch](tarball://root/attachments/some-uuid/ticket1128/trac1128.patch) by @roed314 created at 2007-12-02 06:14:11\n\nAdds algebraic completion functor",
     "created_at": "2007-12-02T06:14:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1128#issuecomment-6820",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac1128.patch](tarball://root/attachments/some-uuid/ticket1128/trac1128.patch) by roed created at 2007-12-02 06:14:11
+Attachment [trac1128.patch](tarball://root/attachments/some-uuid/ticket1128/trac1128.patch) by @roed314 created at 2007-12-02 06:14:11
 
 Adds algebraic completion functor
 
@@ -87,7 +87,7 @@ archive/issue_comments_006821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1128#issuecomment-6821",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -100,16 +100,16 @@ cleaner patch
 archive/issue_comments_006822.json:
 ```json
 {
-    "body": "Attachment [trac1128.2.patch](tarball://root/attachments/some-uuid/ticket1128/trac1128.2.patch) by robertwb created at 2007-12-02 07:31:01\n\nYep, works great.",
+    "body": "Attachment [trac1128.2.patch](tarball://root/attachments/some-uuid/ticket1128/trac1128.2.patch) by @robertwb created at 2007-12-02 07:31:01\n\nYep, works great.",
     "created_at": "2007-12-02T07:31:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1128#issuecomment-6822",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac1128.2.patch](tarball://root/attachments/some-uuid/ticket1128/trac1128.2.patch) by robertwb created at 2007-12-02 07:31:01
+Attachment [trac1128.2.patch](tarball://root/attachments/some-uuid/ticket1128/trac1128.2.patch) by @robertwb created at 2007-12-02 07:31:01
 
 Yep, works great.
 

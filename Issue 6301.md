@@ -3,7 +3,7 @@
 archive/issues_006301.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rbeezer ylchapuy\n\nKeywords: Hadamard matrix product\n\nThat is, given a matrix A and another matrix B (of the same dimensions), form C such that C[i, j] = A[i, j] * B[i, j].\n\nIssue created by migration from https://trac.sagemath.org/ticket/6301\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer ylchapuy\n\nKeywords: Hadamard matrix product\n\nThat is, given a matrix A and another matrix B (of the same dimensions), form C such that C[i, j] = A[i, j] * B[i, j].\n\nIssue created by migration from https://trac.sagemath.org/ticket/6301\n\n",
     "created_at": "2009-06-15T16:12:18Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_006301.json:
     "title": "implement the Hadamard product of two matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6301",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rbeezer ylchapuy
+CC:  @rbeezer ylchapuy
 
 Keywords: Hadamard matrix product
 
@@ -41,7 +41,7 @@ archive/issue_comments_050265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50265",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_050266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50266",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_050267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50267",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -96,16 +96,16 @@ Changing keywords from "Hadamard matrix product" to "elementwise Hadamard matrix
 archive/issue_comments_050268.json:
 ```json
 {
-    "body": "Attachment [trac_6301_elementwise_matrix_product.patch](tarball://root/attachments/some-uuid/ticket6301/trac_6301_elementwise_matrix_product.patch) by rbeezer created at 2009-07-14 22:33:02",
+    "body": "Attachment [trac_6301_elementwise_matrix_product.patch](tarball://root/attachments/some-uuid/ticket6301/trac_6301_elementwise_matrix_product.patch) by @rbeezer created at 2009-07-14 22:33:02",
     "created_at": "2009-07-14T22:33:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50268",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_6301_elementwise_matrix_product.patch](tarball://root/attachments/some-uuid/ticket6301/trac_6301_elementwise_matrix_product.patch) by rbeezer created at 2009-07-14 22:33:02
+Attachment [trac_6301_elementwise_matrix_product.patch](tarball://root/attachments/some-uuid/ticket6301/trac_6301_elementwise_matrix_product.patch) by @rbeezer created at 2009-07-14 22:33:02
 
 
 
@@ -119,7 +119,7 @@ archive/issue_comments_050269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50269",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

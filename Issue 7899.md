@@ -3,7 +3,7 @@
 archive/issues_007899.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jsp jhpalmieri\n\nIt was agreed recently that variables would not be used for very common commands like MV, MKDIR etc.\n\n http://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\n#7818 usets these, so this package will break. The fix is to simply replace things like\n\n$LN with 'ln'\n\nAn updated .spkg can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/ntl-5.4.2.p10/ntl-5.4.2.p10.spkg\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7899\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies @jhpalmieri\n\nIt was agreed recently that variables would not be used for very common commands like MV, MKDIR etc.\n\n http://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\n#7818 usets these, so this package will break. The fix is to simply replace things like\n\n$LN with 'ln'\n\nAn updated .spkg can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/ntl-5.4.2.p10/ntl-5.4.2.p10.spkg\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7899\n\n",
     "created_at": "2010-01-12T03:55:50Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_007899.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  jsp jhpalmieri
+CC:  @jaapspies @jhpalmieri
 
 It was agreed recently that variables would not be used for very common commands like MV, MKDIR etc.
 
@@ -87,7 +87,7 @@ archive/issue_comments_068706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7899#issuecomment-68706",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_068707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7899#issuecomment-68707",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_068708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7899#issuecomment-68708",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

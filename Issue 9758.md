@@ -3,7 +3,7 @@
 archive/issues_009758.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  rbeezer was\n\nAlthough the units module already has a si_prefixes component, it's not very convenient, since you have to do units.si_prefixes.nano*units.mass.gram, and you get something like \"gram*nano\" that doesn't look very well.\nThis ticket is a modification that adds properties named as the components of units.si_prefixes, so that calling something like units.mass.gram.nano will create a units.mass.nanogram element and return it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9759\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @rbeezer @williamstein\n\nAlthough the units module already has a si_prefixes component, it's not very convenient, since you have to do units.si_prefixes.nano*units.mass.gram, and you get something like \"gram*nano\" that doesn't look very well.\nThis ticket is a modification that adds properties named as the components of units.si_prefixes, so that calling something like units.mass.gram.nano will create a units.mass.nanogram element and return it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9759\n\n",
     "created_at": "2010-08-17T22:51:22Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009758.json:
     "title": "Addition of SI prefixes capabilities to the units module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9758",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  rbeezer was
+CC:  @rbeezer @williamstein
 
 Although the units module already has a si_prefixes component, it's not very convenient, since you have to do units.si_prefixes.nano*units.mass.gram, and you get something like "gram*nano" that doesn't look very well.
 This ticket is a modification that adds properties named as the components of units.si_prefixes, so that calling something like units.mass.gram.nano will create a units.mass.nanogram element and return it.
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9759
 archive/issue_comments_095580.json:
 ```json
 {
-    "body": "Attachment [trac_9759_si_prefixes.patch](tarball://root/attachments/some-uuid/ticket9759/trac_9759_si_prefixes.patch) by cousteau created at 2010-08-17 23:07:29\n\nPatch that adds components of units.si_prefixes as properties on the UnitExpression class",
+    "body": "Attachment [trac_9759_si_prefixes.patch](tarball://root/attachments/some-uuid/ticket9759/trac_9759_si_prefixes.patch) by @cousteaulecommandant created at 2010-08-17 23:07:29\n\nPatch that adds components of units.si_prefixes as properties on the UnitExpression class",
     "created_at": "2010-08-17T23:07:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9758#issuecomment-95580",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 
-Attachment [trac_9759_si_prefixes.patch](tarball://root/attachments/some-uuid/ticket9759/trac_9759_si_prefixes.patch) by cousteau created at 2010-08-17 23:07:29
+Attachment [trac_9759_si_prefixes.patch](tarball://root/attachments/some-uuid/ticket9759/trac_9759_si_prefixes.patch) by @cousteaulecommandant created at 2010-08-17 23:07:29
 
 Patch that adds components of units.si_prefixes as properties on the UnitExpression class
 
@@ -60,7 +60,7 @@ archive/issue_comments_095581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9758#issuecomment-95581",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_095582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9758#issuecomment-95582",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_095583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9758#issuecomment-95583",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_095584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9758#issuecomment-95584",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_095585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9758#issuecomment-95585",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_095586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9758#issuecomment-95586",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_095587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9758#issuecomment-95587",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_095588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9758#issuecomment-95588",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_095589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9758#issuecomment-95589",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_095590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9758#issuecomment-95590",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

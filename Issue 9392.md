@@ -3,7 +3,7 @@
 archive/issues_009392.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  rlm leif\n\nNot really broken, but subject to change of behaviours depending on the solver used.... ;-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9392\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @rlmill @nexttime\n\nNot really broken, but subject to change of behaviours depending on the solver used.... ;-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9392\n\n",
     "created_at": "2010-06-30T05:46:10Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_009392.json:
     "title": "Broken docstring in binpacking method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9392",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, jkantor
 
-CC:  rlm leif
+CC:  @rlmill @nexttime
 
 Not really broken, but subject to change of behaviours depending on the solver used.... ;-)
 
@@ -41,7 +41,7 @@ archive/issue_comments_089415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9392#issuecomment-89415",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_review.
 archive/issue_comments_089416.json:
 ```json
 {
-    "body": "Attachment [trac_9392.patch](tarball://root/attachments/some-uuid/ticket9392/trac_9392.patch) by ncohen created at 2010-06-30 05:47:05\n\nHere it is !\n\nNathann",
+    "body": "Attachment [trac_9392.patch](tarball://root/attachments/some-uuid/ticket9392/trac_9392.patch) by @nathanncohen created at 2010-06-30 05:47:05\n\nHere it is !\n\nNathann",
     "created_at": "2010-06-30T05:47:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9392#issuecomment-89416",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9392.patch](tarball://root/attachments/some-uuid/ticket9392/trac_9392.patch) by ncohen created at 2010-06-30 05:47:05
+Attachment [trac_9392.patch](tarball://root/attachments/some-uuid/ticket9392/trac_9392.patch) by @nathanncohen created at 2010-06-30 05:47:05
 
 Here it is !
 
@@ -81,7 +81,7 @@ archive/issue_comments_089417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9392#issuecomment-89417",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_089418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9392#issuecomment-89418",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_089419.json:
 ```json
 {
-    "body": "Attachment [trac_9392-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9392/trac_9392-first_reviewer.patch) by leif created at 2010-07-04 20:16:37\n\nFixes non-optional doctesting. Apply on top of Nathann's patch.",
+    "body": "Attachment [trac_9392-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9392/trac_9392-first_reviewer.patch) by @nexttime created at 2010-07-04 20:16:37\n\nFixes non-optional doctesting. Apply on top of Nathann's patch.",
     "created_at": "2010-07-04T20:16:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9392#issuecomment-89419",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9392-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9392/trac_9392-first_reviewer.patch) by leif created at 2010-07-04 20:16:37
+Attachment [trac_9392-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9392/trac_9392-first_reviewer.patch) by @nexttime created at 2010-07-04 20:16:37
 
 Fixes non-optional doctesting. Apply on top of Nathann's patch.
 
@@ -137,7 +137,7 @@ archive/issue_comments_089420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9392#issuecomment-89420",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_089421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9392#issuecomment-89421",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_089422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9392#issuecomment-89422",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_089423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9392#issuecomment-89423",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_089424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9392#issuecomment-89424",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_089425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9392#issuecomment-89425",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_089426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9392#issuecomment-89426",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_089427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9392#issuecomment-89427",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

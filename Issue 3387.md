@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3387
 archive/issue_comments_023709.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2008-06-09T22:31:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23709",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -61,16 +61,16 @@ Changing assignee from tbd to was.
 archive/issue_comments_023710.json:
 ```json
 {
-    "body": "Attachment [sage-3387.patch](tarball://root/attachments/some-uuid/ticket3387/sage-3387.patch) by was created at 2008-06-09 22:48:56",
+    "body": "Attachment [sage-3387.patch](tarball://root/attachments/some-uuid/ticket3387/sage-3387.patch) by @williamstein created at 2008-06-09 22:48:56",
     "created_at": "2008-06-09T22:48:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23710",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3387.patch](tarball://root/attachments/some-uuid/ticket3387/sage-3387.patch) by was created at 2008-06-09 22:48:56
+Attachment [sage-3387.patch](tarball://root/attachments/some-uuid/ticket3387/sage-3387.patch) by @williamstein created at 2008-06-09 22:48:56
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_023711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23711",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_023712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23712",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

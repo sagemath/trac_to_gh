@@ -3,7 +3,7 @@
 archive/issues_002295.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nMy SAGE_ROOT contains a symlinked component, upgrading from 2.10.2.alpha0 to 2.10.2 failed with the error message in this thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/d8ee3de015fbf7be\n\nOnly the filename listed was different.\n\nThis is caused by the module_path function in setup.py, assuming os.path.abspath starts with SAGE_ROOT, which is not the case when path contains a symlink. Attached patch fixes this issue.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2295\n\n",
+    "body": "Assignee: @burcin\n\nMy SAGE_ROOT contains a symlinked component, upgrading from 2.10.2.alpha0 to 2.10.2 failed with the error message in this thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/d8ee3de015fbf7be\n\nOnly the filename listed was different.\n\nThis is caused by the module_path function in setup.py, assuming os.path.abspath starts with SAGE_ROOT, which is not the case when path contains a symlink. Attached patch fixes this issue.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2295\n\n",
     "created_at": "2008-02-24T20:00:54Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_002295.json:
     "title": "[with patch, needs review] build cache check fails on paths containing symlinks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2295",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 My SAGE_ROOT contains a symlinked component, upgrading from 2.10.2.alpha0 to 2.10.2 failed with the error message in this thread:
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2295
 archive/issue_comments_015223.json:
 ```json
 {
-    "body": "Attachment [build_cache_symlink.patch](tarball://root/attachments/some-uuid/ticket2295/build_cache_symlink.patch) by burcin created at 2008-02-24 20:02:06\n\nfix build cache problem when sage_root has symlinks",
+    "body": "Attachment [build_cache_symlink.patch](tarball://root/attachments/some-uuid/ticket2295/build_cache_symlink.patch) by @burcin created at 2008-02-24 20:02:06\n\nfix build cache problem when sage_root has symlinks",
     "created_at": "2008-02-24T20:02:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2295#issuecomment-15223",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [build_cache_symlink.patch](tarball://root/attachments/some-uuid/ticket2295/build_cache_symlink.patch) by burcin created at 2008-02-24 20:02:06
+Attachment [build_cache_symlink.patch](tarball://root/attachments/some-uuid/ticket2295/build_cache_symlink.patch) by @burcin created at 2008-02-24 20:02:06
 
 fix build cache problem when sage_root has symlinks
 

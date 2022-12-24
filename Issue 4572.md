@@ -3,7 +3,7 @@
 archive/issues_004572.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nInternally, maxima uses floating point numbers internally unless explicitly told to use bigfloats (which we don't, and there's only one global precision in maxima so it will be non-trivial to try and do this consistantly). This patch changes the parsing code to use RDF instead, which is a better reflection of the underlying precision.\n\nIn addition, this has the benefit of removing the trailing zeros in calculus expressions involving real numbers (as they didn't really contain any information). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4572\n\n",
+    "body": "Assignee: @burcin\n\nInternally, maxima uses floating point numbers internally unless explicitly told to use bigfloats (which we don't, and there's only one global precision in maxima so it will be non-trivial to try and do this consistantly). This patch changes the parsing code to use RDF instead, which is a better reflection of the underlying precision.\n\nIn addition, this has the benefit of removing the trailing zeros in calculus expressions involving real numbers (as they didn't really contain any information). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4572\n\n",
     "created_at": "2008-11-20T22:00:37Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004572.json:
     "title": "[with patch, needs review] maxima output has misleading precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4572",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Internally, maxima uses floating point numbers internally unless explicitly told to use bigfloats (which we don't, and there's only one global precision in maxima so it will be non-trivial to try and do this consistantly). This patch changes the parsing code to use RDF instead, which is a better reflection of the underlying precision.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4572
 archive/issue_comments_034257.json:
 ```json
 {
-    "body": "Attachment [4572-maxima-float.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float.patch) by robertwb created at 2008-11-20 22:03:56",
+    "body": "Attachment [4572-maxima-float.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float.patch) by @robertwb created at 2008-11-20 22:03:56",
     "created_at": "2008-11-20T22:03:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4572#issuecomment-34257",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4572-maxima-float.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float.patch) by robertwb created at 2008-11-20 22:03:56
+Attachment [4572-maxima-float.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float.patch) by @robertwb created at 2008-11-20 22:03:56
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_034258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4572#issuecomment-34258",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -133,16 +133,16 @@ Michael
 archive/issue_comments_034261.json:
 ```json
 {
-    "body": "Attachment [4572-maxima-float-fixes.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float-fixes.patch) by robertwb created at 2008-11-25 11:26:57",
+    "body": "Attachment [4572-maxima-float-fixes.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float-fixes.patch) by @robertwb created at 2008-11-25 11:26:57",
     "created_at": "2008-11-25T11:26:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4572#issuecomment-34261",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4572-maxima-float-fixes.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float-fixes.patch) by robertwb created at 2008-11-25 11:26:57
+Attachment [4572-maxima-float-fixes.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float-fixes.patch) by @robertwb created at 2008-11-25 11:26:57
 
 
 
@@ -151,16 +151,16 @@ Attachment [4572-maxima-float-fixes.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_034262.json:
 ```json
 {
-    "body": "Attachment [4572-maxima-float-fixes-tut.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float-fixes-tut.patch) by robertwb created at 2008-11-25 11:27:21\n\napply to docs repo",
+    "body": "Attachment [4572-maxima-float-fixes-tut.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float-fixes-tut.patch) by @robertwb created at 2008-11-25 11:27:21\n\napply to docs repo",
     "created_at": "2008-11-25T11:27:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4572#issuecomment-34262",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4572-maxima-float-fixes-tut.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float-fixes-tut.patch) by robertwb created at 2008-11-25 11:27:21
+Attachment [4572-maxima-float-fixes-tut.patch](tarball://root/attachments/some-uuid/ticket4572/4572-maxima-float-fixes-tut.patch) by @robertwb created at 2008-11-25 11:27:21
 
 apply to docs repo
 
@@ -176,7 +176,7 @@ archive/issue_comments_034263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4572#issuecomment-34263",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

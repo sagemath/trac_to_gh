@@ -14,7 +14,7 @@ archive/issues_003361.json:
     "title": "fricas install problem.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3361",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: mabshoff

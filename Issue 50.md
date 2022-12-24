@@ -13,7 +13,7 @@ archive/issues_000050.json:
     "title": "install guide -- add more about colinux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/50",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -43,7 +43,7 @@ archive/issue_comments_000284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/50",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/50#issuecomment-284",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_000285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/50",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/50#issuecomment-285",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

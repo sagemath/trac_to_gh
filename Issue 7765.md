@@ -14,7 +14,7 @@ archive/issues_007765.json:
     "title": "In sage-4.3, the command \"sage -bdist\" is broken on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7765",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -41,7 +41,7 @@ archive/issue_comments_066895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66895",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_066896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66896",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -72,16 +72,16 @@ Changing status from new to needs_review.
 archive/issue_comments_066897.json:
 ```json
 {
-    "body": "Attachment [trac_7765-dmg.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg.patch) by kcrisman created at 2009-12-28 17:20:50\n\nThis is a very naive solution, but hopefully it is sufficient.  Since I was the one who didn't realize that was changing standard behavior (in fact, I thought it was a feature!) on the previous ticket, I figure I should attempt to fix it.",
+    "body": "Attachment [trac_7765-dmg.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg.patch) by @kcrisman created at 2009-12-28 17:20:50\n\nThis is a very naive solution, but hopefully it is sufficient.  Since I was the one who didn't realize that was changing standard behavior (in fact, I thought it was a feature!) on the previous ticket, I figure I should attempt to fix it.",
     "created_at": "2009-12-28T17:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66897",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7765-dmg.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg.patch) by kcrisman created at 2009-12-28 17:20:50
+Attachment [trac_7765-dmg.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg.patch) by @kcrisman created at 2009-12-28 17:20:50
 
 This is a very naive solution, but hopefully it is sufficient.  Since I was the one who didn't realize that was changing standard behavior (in fact, I thought it was a feature!) on the previous ticket, I figure I should attempt to fix it.
 
@@ -97,7 +97,7 @@ archive/issue_comments_066898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66898",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_066899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66899",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_066900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66900",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_066901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66901",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_066902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66902",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -287,16 +287,16 @@ Could you update the patch, or should I do it (I didn't because otherwise I coul
 archive/issue_comments_066906.json:
 ```json
 {
-    "body": "Attachment [trac_7765-dmg.2.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg.2.patch) by iandrus created at 2010-03-07 15:54:25\n\nSorry about that, mabshoff mentioned that making a dmg should be optional since it takes so long e.g. when testing things.  For some reason I took that to mean not the default.  I created a new patch trac_7765-dmg.2.patch so that either of you can referee it.",
+    "body": "Attachment [trac_7765-dmg.2.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg.2.patch) by @gvol created at 2010-03-07 15:54:25\n\nSorry about that, mabshoff mentioned that making a dmg should be optional since it takes so long e.g. when testing things.  For some reason I took that to mean not the default.  I created a new patch trac_7765-dmg.2.patch so that either of you can referee it.",
     "created_at": "2010-03-07T15:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66906",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
-Attachment [trac_7765-dmg.2.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg.2.patch) by iandrus created at 2010-03-07 15:54:25
+Attachment [trac_7765-dmg.2.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg.2.patch) by @gvol created at 2010-03-07 15:54:25
 
 Sorry about that, mabshoff mentioned that making a dmg should be optional since it takes so long e.g. when testing things.  For some reason I took that to mean not the default.  I created a new patch trac_7765-dmg.2.patch so that either of you can referee it.
 
@@ -312,7 +312,7 @@ archive/issue_comments_066907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66907",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_066908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66908",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_066909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66909",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -396,16 +396,16 @@ However, testing once again showed that default behavior is now .dmg creation (a
 archive/issue_comments_066910.json:
 ```json
 {
-    "body": "Attachment [trac_7765-dmg-or-tgz.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg-or-tgz.patch) by kcrisman created at 2010-04-22 12:52:51\n\nBased on Sage 4.3.5 - apply only this to scripts repo",
+    "body": "Attachment [trac_7765-dmg-or-tgz.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg-or-tgz.patch) by @kcrisman created at 2010-04-22 12:52:51\n\nBased on Sage 4.3.5 - apply only this to scripts repo",
     "created_at": "2010-04-22T12:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66910",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7765-dmg-or-tgz.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg-or-tgz.patch) by kcrisman created at 2010-04-22 12:52:51
+Attachment [trac_7765-dmg-or-tgz.patch](tarball://root/attachments/some-uuid/ticket7765/trac_7765-dmg-or-tgz.patch) by @kcrisman created at 2010-04-22 12:52:51
 
 Based on Sage 4.3.5 - apply only this to scripts repo
 
@@ -421,7 +421,7 @@ archive/issue_comments_066911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66911",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_066912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66912",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_066913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66913",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_066914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7765#issuecomment-66914",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

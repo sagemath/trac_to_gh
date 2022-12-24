@@ -3,7 +3,7 @@
 archive/issues_002160.json:
 ```json
 {
-    "body": "Assignee: was\n\nIn matrix/matrix_integer_dense.pyx and matrix//matrix_rational_dense.pyx we delete the line:\n\ntmp = []\n\nbecause tmp is never used\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2160\n\n",
+    "body": "Assignee: @williamstein\n\nIn matrix/matrix_integer_dense.pyx and matrix//matrix_rational_dense.pyx we delete the line:\n\ntmp = []\n\nbecause tmp is never used\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2160\n\n",
     "created_at": "2008-02-14T17:42:19Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002160.json:
     "title": "leftovers from python to cython translation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2160",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 In matrix/matrix_integer_dense.pyx and matrix//matrix_rational_dense.pyx we delete the line:
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2160
 archive/issue_comments_014187.json:
 ```json
 {
-    "body": "Attachment [trac_2160_leftovers.patch](tarball://root/attachments/some-uuid/ticket2160/trac_2160_leftovers.patch) by jsp created at 2008-02-14 17:44:27",
+    "body": "Attachment [trac_2160_leftovers.patch](tarball://root/attachments/some-uuid/ticket2160/trac_2160_leftovers.patch) by @jaapspies created at 2008-02-14 17:44:27",
     "created_at": "2008-02-14T17:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2160#issuecomment-14187",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [trac_2160_leftovers.patch](tarball://root/attachments/some-uuid/ticket2160/trac_2160_leftovers.patch) by jsp created at 2008-02-14 17:44:27
+Attachment [trac_2160_leftovers.patch](tarball://root/attachments/some-uuid/ticket2160/trac_2160_leftovers.patch) by @jaapspies created at 2008-02-14 17:44:27
 
 
 

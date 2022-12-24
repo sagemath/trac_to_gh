@@ -14,7 +14,7 @@ archive/issues_005794.json:
     "title": "[with patch, needs review] G2 branching rules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5794",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 Assignee: tbd
@@ -59,7 +59,7 @@ archive/issue_comments_045413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45413",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_045414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45414",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_045415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45415",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_045416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45416",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_045417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45417",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_045419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45419",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -220,16 +220,16 @@ Changing status from new to assigned.
 archive/issue_comments_045420.json:
 ```json
 {
-    "body": "Changing assignee from joyner to bump.",
+    "body": "Changing assignee from joyner to @dwbump.",
     "created_at": "2009-04-18T19:18:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45420",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Changing assignee from joyner to bump.
+Changing assignee from joyner to @dwbump.
 
 
 
@@ -238,16 +238,16 @@ Changing assignee from joyner to bump.
 archive/issue_comments_045421.json:
 ```json
 {
-    "body": "Attachment [trac_5794-revised.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-revised.patch) by bump created at 2009-05-06 20:16:33",
+    "body": "Attachment [trac_5794-revised.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-revised.patch) by @dwbump created at 2009-05-06 20:16:33",
     "created_at": "2009-05-06T20:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45421",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_5794-revised.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-revised.patch) by bump created at 2009-05-06 20:16:33
+Attachment [trac_5794-revised.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-revised.patch) by @dwbump created at 2009-05-06 20:16:33
 
 
 
@@ -261,7 +261,7 @@ archive/issue_comments_045422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45422",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_045423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45423",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -295,16 +295,16 @@ http://sporadic.stanford.edu/bump/branch.sage
 archive/issue_comments_045424.json:
 ```json
 {
-    "body": "Attachment [trac_5794-continued.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-continued.patch) by bump created at 2009-05-12 15:27:27",
+    "body": "Attachment [trac_5794-continued.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-continued.patch) by @dwbump created at 2009-05-12 15:27:27",
     "created_at": "2009-05-12T15:27:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45424",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_5794-continued.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-continued.patch) by bump created at 2009-05-12 15:27:27
+Attachment [trac_5794-continued.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-continued.patch) by @dwbump created at 2009-05-12 15:27:27
 
 
 
@@ -318,7 +318,7 @@ archive/issue_comments_045425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45425",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -345,16 +345,16 @@ Dan
 archive/issue_comments_045426.json:
 ```json
 {
-    "body": "Attachment [trac_5794-exceptional.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-exceptional.patch) by bump created at 2009-05-16 23:10:50",
+    "body": "Attachment [trac_5794-exceptional.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-exceptional.patch) by @dwbump created at 2009-05-16 23:10:50",
     "created_at": "2009-05-16T23:10:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45426",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_5794-exceptional.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-exceptional.patch) by bump created at 2009-05-16 23:10:50
+Attachment [trac_5794-exceptional.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-exceptional.patch) by @dwbump created at 2009-05-16 23:10:50
 
 
 
@@ -363,16 +363,16 @@ Attachment [trac_5794-exceptional.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_045427.json:
 ```json
 {
-    "body": "Attachment [trac_5794-more-exceptional.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-more-exceptional.patch) by bump created at 2009-05-20 20:23:44",
+    "body": "Attachment [trac_5794-more-exceptional.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-more-exceptional.patch) by @dwbump created at 2009-05-20 20:23:44",
     "created_at": "2009-05-20T20:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45427",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_5794-more-exceptional.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-more-exceptional.patch) by bump created at 2009-05-20 20:23:44
+Attachment [trac_5794-more-exceptional.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-more-exceptional.patch) by @dwbump created at 2009-05-20 20:23:44
 
 
 
@@ -404,7 +404,7 @@ archive/issue_comments_045429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45429",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -475,16 +475,16 @@ The following files are not in the reference manual. You might want to consider 
 archive/issue_comments_045431.json:
 ```json
 {
-    "body": "Attachment [trac_5794-reviewer-nt.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-reviewer-nt.patch) by bump created at 2009-07-21 17:08:40\n\nNicolas Thiery wrote the patch `trac_5794-reviewer-nt.patch`.\nIt is in the combinat patch queue. I took the liberty of uploading\nit.\n\nIt addresses at least some of the ReST complaints.\n\nI am changing the title back to [with patch, needs review] since\napart from the issue of the ReST formatting, the patches still\nneeds a technical review. The following remark is addressed\nto whoever does the technical review. (Brant Jones was suggested.)\n\nThe patches as posted differ slightly from the versions in the combinat queue.\nThe reason for the difference is that the meaning of the is_reducible\nCartan type attribute is changed by #4326. After #4326 (which preceed\nthese patches in the queue) the root system D2 is not reducible. See\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/8b3569b4e2f2b7e1?hl=en\n\nand thread for discussion. (Note: the `patch cartan_type_temporary-1.patch` \nmentioned in that message was qfolded shortly afterwards.)",
+    "body": "Attachment [trac_5794-reviewer-nt.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-reviewer-nt.patch) by @dwbump created at 2009-07-21 17:08:40\n\nNicolas Thiery wrote the patch `trac_5794-reviewer-nt.patch`.\nIt is in the combinat patch queue. I took the liberty of uploading\nit.\n\nIt addresses at least some of the ReST complaints.\n\nI am changing the title back to [with patch, needs review] since\napart from the issue of the ReST formatting, the patches still\nneeds a technical review. The following remark is addressed\nto whoever does the technical review. (Brant Jones was suggested.)\n\nThe patches as posted differ slightly from the versions in the combinat queue.\nThe reason for the difference is that the meaning of the is_reducible\nCartan type attribute is changed by #4326. After #4326 (which preceed\nthese patches in the queue) the root system D2 is not reducible. See\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/8b3569b4e2f2b7e1?hl=en\n\nand thread for discussion. (Note: the `patch cartan_type_temporary-1.patch` \nmentioned in that message was qfolded shortly afterwards.)",
     "created_at": "2009-07-21T17:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45431",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_5794-reviewer-nt.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-reviewer-nt.patch) by bump created at 2009-07-21 17:08:40
+Attachment [trac_5794-reviewer-nt.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-reviewer-nt.patch) by @dwbump created at 2009-07-21 17:08:40
 
 Nicolas Thiery wrote the patch `trac_5794-reviewer-nt.patch`.
 It is in the combinat patch queue. I took the liberty of uploading
@@ -556,16 +556,16 @@ This depends on #4326.
 archive/issue_comments_045434.json:
 ```json
 {
-    "body": "Attachment [trac_5794-long-time-nt.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-long-time-nt.patch) by nthiery created at 2009-11-19 11:25:22\n\nAnnotates the long tests with their time, and disables one which took 160s.",
+    "body": "Attachment [trac_5794-long-time-nt.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-long-time-nt.patch) by @nthiery created at 2009-11-19 11:25:22\n\nAnnotates the long tests with their time, and disables one which took 160s.",
     "created_at": "2009-11-19T11:25:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45434",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_5794-long-time-nt.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-long-time-nt.patch) by nthiery created at 2009-11-19 11:25:22
+Attachment [trac_5794-long-time-nt.patch](tarball://root/attachments/some-uuid/ticket5794/trac_5794-long-time-nt.patch) by @nthiery created at 2009-11-19 11:25:22
 
 Annotates the long tests with their time, and disables one which took 160s.
 
@@ -581,7 +581,7 @@ archive/issue_comments_045435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45435",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -599,7 +599,7 @@ archive/issue_comments_045436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45436",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -617,7 +617,7 @@ archive/issue_comments_045437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45437",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -635,7 +635,7 @@ archive/issue_comments_045438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45438",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -653,7 +653,7 @@ archive/issue_comments_045439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45439",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -671,7 +671,7 @@ archive/issue_comments_045440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45440",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -697,7 +697,7 @@ archive/issue_comments_045441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45441",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -715,7 +715,7 @@ archive/issue_comments_045442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45442",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

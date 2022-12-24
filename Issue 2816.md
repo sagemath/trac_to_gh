@@ -3,7 +3,7 @@
 archive/issues_002816.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee the conclusions from the discussion: \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/c8d2001f2b19a9bc#\n\nIssue created by migration from https://trac.sagemath.org/ticket/2816\n\n",
+    "body": "Assignee: @williamstein\n\nSee the conclusions from the discussion: \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/c8d2001f2b19a9bc#\n\nIssue created by migration from https://trac.sagemath.org/ticket/2816\n\n",
     "created_at": "2008-04-05T22:17:44Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002816.json:
     "title": "unify eigen* functions for different matrix classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2816",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See the conclusions from the discussion: 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2816
 archive/issue_comments_019334.json:
 ```json
 {
-    "body": "Attachment [linear-algebra-interface.patch](tarball://root/attachments/some-uuid/ticket2816/linear-algebra-interface.patch) by jason created at 2008-07-19 18:48:32",
+    "body": "Attachment [linear-algebra-interface.patch](tarball://root/attachments/some-uuid/ticket2816/linear-algebra-interface.patch) by @jasongrout created at 2008-07-19 18:48:32",
     "created_at": "2008-07-19T18:48:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2816#issuecomment-19334",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [linear-algebra-interface.patch](tarball://root/attachments/some-uuid/ticket2816/linear-algebra-interface.patch) by jason created at 2008-07-19 18:48:32
+Attachment [linear-algebra-interface.patch](tarball://root/attachments/some-uuid/ticket2816/linear-algebra-interface.patch) by @jasongrout created at 2008-07-19 18:48:32
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_019335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2816#issuecomment-19335",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_019336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2816#issuecomment-19336",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_019337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2816#issuecomment-19337",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_019338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2816#issuecomment-19338",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_019339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2816#issuecomment-19339",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_019340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2816#issuecomment-19340",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_019342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2816#issuecomment-19342",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

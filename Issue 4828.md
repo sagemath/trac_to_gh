@@ -57,16 +57,16 @@ Attachment [trac_4828_doc.patch](tarball://root/attachments/some-uuid/ticket4828
 archive/issue_comments_036603.json:
 ```json
 {
-    "body": "Attachment [trac_4828_sage.patch](tarball://root/attachments/some-uuid/ticket4828/trac_4828_sage.patch) by ddrake created at 2008-12-19 07:06:53\n\nI had to delete the patchlevel.tex hunk to get the doc patch to apply, but otherwise looks good, positive review.",
+    "body": "Attachment [trac_4828_sage.patch](tarball://root/attachments/some-uuid/ticket4828/trac_4828_sage.patch) by @dandrake created at 2008-12-19 07:06:53\n\nI had to delete the patchlevel.tex hunk to get the doc patch to apply, but otherwise looks good, positive review.",
     "created_at": "2008-12-19T07:06:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4828#issuecomment-36603",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_4828_sage.patch](tarball://root/attachments/some-uuid/ticket4828/trac_4828_sage.patch) by ddrake created at 2008-12-19 07:06:53
+Attachment [trac_4828_sage.patch](tarball://root/attachments/some-uuid/ticket4828/trac_4828_sage.patch) by @dandrake created at 2008-12-19 07:06:53
 
 I had to delete the patchlevel.tex hunk to get the doc patch to apply, but otherwise looks good, positive review.
 

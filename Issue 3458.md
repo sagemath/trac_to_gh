@@ -3,7 +3,7 @@
 archive/issues_003458.json:
 ```json
 {
-    "body": "Assignee: yi\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3458\n\n",
+    "body": "Assignee: @yqiang\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3458\n\n",
     "created_at": "2008-06-18T03:14:08Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_003458.json:
     "title": "parallel -- a very simple reference api for @parallel and parallel_eval",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3458",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3458
 archive/issue_comments_024379.json:
 ```json
 {
-    "body": "Attachment [sage-3458.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458.patch) by was created at 2008-06-18 03:15:04\n\nThis depends on #3453.",
+    "body": "Attachment [sage-3458.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458.patch) by @williamstein created at 2008-06-18 03:15:04\n\nThis depends on #3453.",
     "created_at": "2008-06-18T03:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24379",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3458.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458.patch) by was created at 2008-06-18 03:15:04
+Attachment [sage-3458.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458.patch) by @williamstein created at 2008-06-18 03:15:04
 
 This depends on #3453.
 
@@ -52,16 +52,16 @@ This depends on #3453.
 archive/issue_comments_024380.json:
 ```json
 {
-    "body": "Attachment [sage-3458-part2.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part2.patch) by was created at 2008-06-18 06:30:09",
+    "body": "Attachment [sage-3458-part2.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part2.patch) by @williamstein created at 2008-06-18 06:30:09",
     "created_at": "2008-06-18T06:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24380",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3458-part2.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part2.patch) by was created at 2008-06-18 06:30:09
+Attachment [sage-3458-part2.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part2.patch) by @williamstein created at 2008-06-18 06:30:09
 
 
 
@@ -70,16 +70,16 @@ Attachment [sage-3458-part2.patch](tarball://root/attachments/some-uuid/ticket34
 archive/issue_comments_024381.json:
 ```json
 {
-    "body": "Attachment [sage-3458-part3.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part3.patch) by was created at 2008-06-18 08:52:06",
+    "body": "Attachment [sage-3458-part3.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part3.patch) by @williamstein created at 2008-06-18 08:52:06",
     "created_at": "2008-06-18T08:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24381",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3458-part3.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part3.patch) by was created at 2008-06-18 08:52:06
+Attachment [sage-3458-part3.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part3.patch) by @williamstein created at 2008-06-18 08:52:06
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_024382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24382",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -106,16 +106,16 @@ first three patches have positive review
 archive/issue_comments_024383.json:
 ```json
 {
-    "body": "Attachment [sage-3458-part4.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part4.patch) by mhansen created at 2008-06-19 01:33:45",
+    "body": "Attachment [sage-3458-part4.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part4.patch) by @mwhansen created at 2008-06-19 01:33:45",
     "created_at": "2008-06-19T01:33:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24383",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage-3458-part4.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part4.patch) by mhansen created at 2008-06-19 01:33:45
+Attachment [sage-3458-part4.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part4.patch) by @mwhansen created at 2008-06-19 01:33:45
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_024384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24384",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -156,16 +156,16 @@ time v = MS1([(250,2), (11,2), (37,2)])
 archive/issue_comments_024385.json:
 ```json
 {
-    "body": "Attachment [sage-3458-processing.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-processing.patch) by mhansen created at 2008-06-19 02:47:09",
+    "body": "Attachment [sage-3458-processing.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-processing.patch) by @mwhansen created at 2008-06-19 02:47:09",
     "created_at": "2008-06-19T02:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24385",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage-3458-processing.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-processing.patch) by mhansen created at 2008-06-19 02:47:09
+Attachment [sage-3458-processing.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-processing.patch) by @mwhansen created at 2008-06-19 02:47:09
 
 
 
@@ -179,7 +179,7 @@ archive/issue_comments_024386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24386",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_024387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24387",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -215,16 +215,16 @@ patch 3 should still be applied since it changes things other then dsage.
 archive/issue_comments_024388.json:
 ```json
 {
-    "body": "Attachment [sage-3458-part6.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part6.patch) by was created at 2008-06-20 01:30:36",
+    "body": "Attachment [sage-3458-part6.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part6.patch) by @williamstein created at 2008-06-20 01:30:36",
     "created_at": "2008-06-20T01:30:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24388",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3458-part6.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part6.patch) by was created at 2008-06-20 01:30:36
+Attachment [sage-3458-part6.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part6.patch) by @williamstein created at 2008-06-20 01:30:36
 
 
 
@@ -238,7 +238,7 @@ archive/issue_comments_024389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24389",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_024390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24390",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -269,16 +269,16 @@ This is a clean bundle that one can apply instead of all the patches.
 archive/issue_comments_024391.json:
 ```json
 {
-    "body": "Attachment [sage-3458.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458.hg) by was created at 2008-06-21 23:53:56\n\nYi: bundle posted.",
+    "body": "Attachment [sage-3458.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458.hg) by @williamstein created at 2008-06-21 23:53:56\n\nYi: bundle posted.",
     "created_at": "2008-06-21T23:53:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24391",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3458.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458.hg) by was created at 2008-06-21 23:53:56
+Attachment [sage-3458.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458.hg) by @williamstein created at 2008-06-21 23:53:56
 
 Yi: bundle posted.
 
@@ -294,7 +294,7 @@ archive/issue_comments_024392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24392",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -307,16 +307,16 @@ Updated bundle which uses sage.dsage.interface.dsage_interface.BlockingDSage's p
 archive/issue_comments_024393.json:
 ```json
 {
-    "body": "Attachment [sage-3458-fixed.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458-fixed.hg) by was created at 2008-06-24 03:04:45",
+    "body": "Attachment [sage-3458-fixed.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458-fixed.hg) by @williamstein created at 2008-06-24 03:04:45",
     "created_at": "2008-06-24T03:04:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24393",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3458-fixed.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458-fixed.hg) by was created at 2008-06-24 03:04:45
+Attachment [sage-3458-fixed.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458-fixed.hg) by @williamstein created at 2008-06-24 03:04:45
 
 
 
@@ -330,7 +330,7 @@ archive/issue_comments_024394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24394",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_024395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24395",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

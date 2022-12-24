@@ -3,7 +3,7 @@
 archive/issues_004859.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nI maintain a database of covering designs (k-subsets of a v-set such that all t-sets are\nin at least one of the k-sets) at http://www.ccrwest.org/cover.html.  This patch implements\ncovering designs in Sage using the IncidenceStructure class, and allows a user to get coverings\nfrom the website.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4859\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nI maintain a database of covering designs (k-subsets of a v-set such that all t-sets are\nin at least one of the k-sets) at http://www.ccrwest.org/cover.html.  This patch implements\ncovering designs in Sage using the IncidenceStructure class, and allows a user to get coverings\nfrom the website.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4859\n\n",
     "created_at": "2008-12-23T17:18:59Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_004859.json:
     "user": "dgordon"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -60,7 +60,7 @@ archive/issue_comments_036828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36828",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_036829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36829",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_036830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36830",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_036832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36832",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_036833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36833",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

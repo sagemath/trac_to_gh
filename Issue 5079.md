@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5079
 archive/issue_comments_038673.json:
 ```json
 {
-    "body": "Attachment [5079-preparse-1.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-1.patch) by robertwb created at 2009-01-24 09:55:08",
+    "body": "Attachment [5079-preparse-1.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-1.patch) by @robertwb created at 2009-01-24 09:55:08",
     "created_at": "2009-01-24T09:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38673",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5079-preparse-1.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-1.patch) by robertwb created at 2009-01-24 09:55:08
+Attachment [5079-preparse-1.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-1.patch) by @robertwb created at 2009-01-24 09:55:08
 
 
 
@@ -61,16 +61,16 @@ Attachment [5079-preparse-1.patch](tarball://root/attachments/some-uuid/ticket50
 archive/issue_comments_038674.json:
 ```json
 {
-    "body": "Attachment [5079-preparse-2.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-2.patch) by robertwb created at 2009-01-24 10:25:59",
+    "body": "Attachment [5079-preparse-2.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-2.patch) by @robertwb created at 2009-01-24 10:25:59",
     "created_at": "2009-01-24T10:25:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38674",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5079-preparse-2.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-2.patch) by robertwb created at 2009-01-24 10:25:59
+Attachment [5079-preparse-2.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-2.patch) by @robertwb created at 2009-01-24 10:25:59
 
 
 
@@ -79,16 +79,16 @@ Attachment [5079-preparse-2.patch](tarball://root/attachments/some-uuid/ticket50
 archive/issue_comments_038675.json:
 ```json
 {
-    "body": "Attachment [5079-preparse-3.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-3.patch) by robertwb created at 2009-01-24 10:27:15\n\nAlso takes care of #4501 and parsing numbers of the form 5L, and Py3 binary and octal numbers, as well as simplifying the preparser.",
+    "body": "Attachment [5079-preparse-3.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-3.patch) by @robertwb created at 2009-01-24 10:27:15\n\nAlso takes care of #4501 and parsing numbers of the form 5L, and Py3 binary and octal numbers, as well as simplifying the preparser.",
     "created_at": "2009-01-24T10:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38675",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5079-preparse-3.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-3.patch) by robertwb created at 2009-01-24 10:27:15
+Attachment [5079-preparse-3.patch](tarball://root/attachments/some-uuid/ticket5079/5079-preparse-3.patch) by @robertwb created at 2009-01-24 10:27:15
 
 Also takes care of #4501 and parsing numbers of the form 5L, and Py3 binary and octal numbers, as well as simplifying the preparser.
 
@@ -104,7 +104,7 @@ archive/issue_comments_038676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38676",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -253,16 +253,16 @@ server/notebook/cell.py:        s = strip_string_literals(self.input_text())[0]
 archive/issue_comments_038680.json:
 ```json
 {
-    "body": "Attachment [trac_5079.patch](tarball://root/attachments/some-uuid/ticket5079/trac_5079.patch) by mhansen created at 2009-01-24 22:58:07\n\nI added a patch which folds all of the above ones together.\n\n+1 on Tom's changes.",
+    "body": "Attachment [trac_5079.patch](tarball://root/attachments/some-uuid/ticket5079/trac_5079.patch) by @mwhansen created at 2009-01-24 22:58:07\n\nI added a patch which folds all of the above ones together.\n\n+1 on Tom's changes.",
     "created_at": "2009-01-24T22:58:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38680",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5079.patch](tarball://root/attachments/some-uuid/ticket5079/trac_5079.patch) by mhansen created at 2009-01-24 22:58:07
+Attachment [trac_5079.patch](tarball://root/attachments/some-uuid/ticket5079/trac_5079.patch) by @mwhansen created at 2009-01-24 22:58:07
 
 I added a patch which folds all of the above ones together.
 
@@ -316,7 +316,7 @@ archive/issue_comments_038683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38683",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

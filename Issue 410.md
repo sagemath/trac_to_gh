@@ -3,7 +3,7 @@
 archive/issues_000410.json:
 ```json
 {
-    "body": "Assignee: was\n\nHere's a patch with a C++ section for the programming manual.  It's stuff that I learned from (re)writing the NTL interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/410\n\n",
+    "body": "Assignee: @williamstein\n\nHere's a patch with a C++ section for the programming manual.  It's stuff that I learned from (re)writing the NTL interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/410\n\n",
     "created_at": "2007-08-06T17:54:09Z",
     "labels": [
         "packages",
@@ -17,7 +17,7 @@ archive/issues_000410.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Here's a patch with a C++ section for the programming manual.  It's stuff that I learned from (re)writing the NTL interface.
 
@@ -50,7 +50,7 @@ Documentation patch
 archive/issue_comments_002019.json:
 ```json
 {
-    "body": "Changing assignee from was to tba.",
+    "body": "Changing assignee from @williamstein to tba.",
     "created_at": "2007-08-24T12:58:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/410",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_002019.json:
 }
 ```
 
-Changing assignee from was to tba.
+Changing assignee from @williamstein to tba.
 
 
 

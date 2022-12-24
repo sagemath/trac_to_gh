@@ -14,7 +14,7 @@ archive/issues_004363.json:
     "title": "Do not automatically evaluate interact cells in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4363",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: boothby
@@ -40,7 +40,7 @@ archive/issue_comments_032051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4363#issuecomment-32051",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_032052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4363#issuecomment-32052",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_032053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4363#issuecomment-32053",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -89,16 +89,16 @@ I've also added this as a test case to the notebook test suite.
 archive/issue_comments_032054.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2008-11-13T23:25:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4363#issuecomment-32054",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_032055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4363#issuecomment-32055",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_032056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4363#issuecomment-32056",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -147,16 +147,16 @@ Just to emphasize, the patch above mysteriously doesn't work with #auto...
 archive/issue_comments_032057.json:
 ```json
 {
-    "body": "Attachment [trac_4363.patch](tarball://root/attachments/some-uuid/ticket4363/trac_4363.patch) by mhansen created at 2009-01-19 04:16:14",
+    "body": "Attachment [trac_4363.patch](tarball://root/attachments/some-uuid/ticket4363/trac_4363.patch) by @mwhansen created at 2009-01-19 04:16:14",
     "created_at": "2009-01-19T04:16:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4363#issuecomment-32057",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4363.patch](tarball://root/attachments/some-uuid/ticket4363/trac_4363.patch) by mhansen created at 2009-01-19 04:16:14
+Attachment [trac_4363.patch](tarball://root/attachments/some-uuid/ticket4363/trac_4363.patch) by @mwhansen created at 2009-01-19 04:16:14
 
 
 
@@ -170,7 +170,7 @@ archive/issue_comments_032058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4363#issuecomment-32058",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

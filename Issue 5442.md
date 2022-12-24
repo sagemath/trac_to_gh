@@ -3,7 +3,7 @@
 archive/issues_005442.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis works:\n\nsage: s = \"\"\"\nx := [\n    1,\n    2,\n    3 ];\nx;\n\"\"\"\nsage: magma.eval(s)\n\nHowever, if one try to type the above interactively \nin the %magma shell, it crashes on the the first line \n'x := ['.\n\nThe problem is that either preparse_ipython or \nmagma.eval is too naive, inserting a ';' rather \nthan waiting for the completion of the expression.\n\nAs a start, I think the block:\n\nif interface_name in ['gap', 'magma', 'kash', 'singular']:\n    if not line.endswith(';'):\n        line += ';'\n\nshould be deleted, but I don't know the Expect \ninterface well-enough to suggest a complete fix.\n\nRemark: The magma.eval function handles for .. do,\nbut not if the logical is split over more than one \nline, so maybe this function can be easily fixed \nto not insert a ';' when an expression is incomplete\n(e.g. '\"..\"', 'for .. do', '[ .. ]', etc.).\n\nSubtleties arise when a opening to an expression is \ncontained in a string.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5442\n\n",
+    "body": "Assignee: @williamstein\n\nThis works:\n\nsage: s = \"\"\"\nx := [\n    1,\n    2,\n    3 ];\nx;\n\"\"\"\nsage: magma.eval(s)\n\nHowever, if one try to type the above interactively \nin the %magma shell, it crashes on the the first line \n'x := ['.\n\nThe problem is that either preparse_ipython or \nmagma.eval is too naive, inserting a ';' rather \nthan waiting for the completion of the expression.\n\nAs a start, I think the block:\n\nif interface_name in ['gap', 'magma', 'kash', 'singular']:\n    if not line.endswith(';'):\n        line += ';'\n\nshould be deleted, but I don't know the Expect \ninterface well-enough to suggest a complete fix.\n\nRemark: The magma.eval function handles for .. do,\nbut not if the logical is split over more than one \nline, so maybe this function can be easily fixed \nto not insert a ';' when an expression is incomplete\n(e.g. '\"..\"', 'for .. do', '[ .. ]', etc.).\n\nSubtleties arise when a opening to an expression is \ncontained in a string.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5442\n\n",
     "created_at": "2009-03-05T16:56:35Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_005442.json:
     "user": "kohel"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This works:
 
@@ -73,7 +73,7 @@ archive/issue_comments_042083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5442#issuecomment-42083",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_042084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5442#issuecomment-42084",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

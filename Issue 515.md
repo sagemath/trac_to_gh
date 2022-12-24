@@ -14,7 +14,7 @@ archive/issues_000515.json:
     "title": "memory leak in libSINGULAR conversion routine",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/515",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody

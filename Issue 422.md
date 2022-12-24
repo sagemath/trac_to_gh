@@ -3,7 +3,7 @@
 archive/issues_000422.json:
 ```json
 {
-    "body": "Assignee: was\n\nI discovered live during my SAGE demo at CECM that if the hostname is really weird,\ncomplicated, and has dashes, dots, spaces ? etc., in it, then e.g., \n\n```\n   maple('2+2')\n```\n\nwon't work.\n\nThe fix is to clean the hostname before using it to construct the relevant\ntemp directory in .sage/temp.  By clean, I mean replace any bad characters\nby underscores, say. \n\nIssue created by migration from https://trac.sagemath.org/ticket/422\n\n",
+    "body": "Assignee: @williamstein\n\nI discovered live during my SAGE demo at CECM that if the hostname is really weird,\ncomplicated, and has dashes, dots, spaces ? etc., in it, then e.g., \n\n```\n   maple('2+2')\n```\n\nwon't work.\n\nThe fix is to clean the hostname before using it to construct the relevant\ntemp directory in .sage/temp.  By clean, I mean replace any bad characters\nby underscores, say. \n\nIssue created by migration from https://trac.sagemath.org/ticket/422\n\n",
     "created_at": "2007-08-10T20:24:06Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000422.json:
     "title": "hostname's with dashes (?) in them break SAGE interfaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/422",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I discovered live during my SAGE demo at CECM that if the hostname is really weird,
 complicated, and has dashes, dots, spaces ? etc., in it, then e.g., 
@@ -48,7 +48,7 @@ archive/issue_comments_002117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/422#issuecomment-2117",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_002119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/422#issuecomment-2119",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_002120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/422#issuecomment-2120",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

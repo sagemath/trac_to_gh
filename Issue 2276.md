@@ -3,7 +3,7 @@
 archive/issues_002276.json:
 ```json
 {
-    "body": "Assignee: was\n\nsage: R.<x,y> = PolynomialRing(QQ)\nsage: M = x*y\nsage: N = x<sup>2*y</sup>3\nsage: M.divides(N)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/carlson/docs`@`chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/<ipython console> in <module>()\n\n/Users/carlson/docs`@`chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/element.pyx in sage.structure.element.CommutativeRingElement.divides()\n\n<type 'exceptions.TypeError'>: unsupported operand type(s) for %: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular' and 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'\n\nIssue created by migration from https://trac.sagemath.org/ticket/2276\n\n",
+    "body": "Assignee: @williamstein\n\nsage: R.<x,y> = PolynomialRing(QQ)\nsage: M = x*y\nsage: N = x<sup>2*y</sup>3\nsage: M.divides(N)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/carlson/docs`@`chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/<ipython console> in <module>()\n\n/Users/carlson/docs`@`chiquito/_Research/CIMAT_Lectures/Computation/sageprogs/element.pyx in sage.structure.element.CommutativeRingElement.divides()\n\n<type 'exceptions.TypeError'>: unsupported operand type(s) for %: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular' and 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'\n\nIssue created by migration from https://trac.sagemath.org/ticket/2276\n\n",
     "created_at": "2008-02-23T08:41:02Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_002276.json:
     "user": "jxxcarlson"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 sage: R.<x,y> = PolynomialRing(QQ)
 sage: M = x*y
@@ -61,7 +61,7 @@ Changing component from algebraic geometry to commutative algebra.
 archive/issue_comments_015101.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2008-02-23T14:58:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2276",
     "type": "issue_comment",
@@ -70,7 +70,7 @@ archive/issue_comments_015101.json:
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -119,16 +119,16 @@ Michael
 archive/issue_comments_015104.json:
 ```json
 {
-    "body": "Attachment [trac_2276.patch](tarball://root/attachments/some-uuid/ticket2276/trac_2276.patch) by malb created at 2008-03-28 12:00:36\n\nThe attached patch implements `__mod__` which fixes the issue. Note, that type checking is performed in `quo_rem` and thus is not needed in `__mod__`.",
+    "body": "Attachment [trac_2276.patch](tarball://root/attachments/some-uuid/ticket2276/trac_2276.patch) by @malb created at 2008-03-28 12:00:36\n\nThe attached patch implements `__mod__` which fixes the issue. Note, that type checking is performed in `quo_rem` and thus is not needed in `__mod__`.",
     "created_at": "2008-03-28T12:00:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2276#issuecomment-15104",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_2276.patch](tarball://root/attachments/some-uuid/ticket2276/trac_2276.patch) by malb created at 2008-03-28 12:00:36
+Attachment [trac_2276.patch](tarball://root/attachments/some-uuid/ticket2276/trac_2276.patch) by @malb created at 2008-03-28 12:00:36
 
 The attached patch implements `__mod__` which fixes the issue. Note, that type checking is performed in `quo_rem` and thus is not needed in `__mod__`.
 

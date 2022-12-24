@@ -3,7 +3,7 @@
 archive/issues_004413.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following code, entered in the command-line interface to Sage, shows the effect:\n\n```\nsage: def foo(x):\n   ....:     '''\n   ....:     Eh?\nObject `Eh` not found.\n   ....:     '''\n   ....:     return x\n   ....: \n```\n\nThe parser appears to act on the '?' right away, rather than wait for the end of the thing being defined (or realizing that '?' in this case is not to be acted on).\n\nThe effect shows up with both single- and double- quotes, and with and without the \"raw\" qualifier (r!''').\n\nThis may be related to Trac#4405.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4413\n\n",
+    "body": "Assignee: @williamstein\n\nThe following code, entered in the command-line interface to Sage, shows the effect:\n\n```\nsage: def foo(x):\n   ....:     '''\n   ....:     Eh?\nObject `Eh` not found.\n   ....:     '''\n   ....:     return x\n   ....: \n```\n\nThe parser appears to act on the '?' right away, rather than wait for the end of the thing being defined (or realizing that '?' in this case is not to be acted on).\n\nThe effect shows up with both single- and double- quotes, and with and without the \"raw\" qualifier (r!''').\n\nThis may be related to Trac#4405.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4413\n\n",
     "created_at": "2008-10-31T21:05:37Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_004413.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following code, entered in the command-line interface to Sage, shows the effect:
 
@@ -55,7 +55,7 @@ archive/issue_comments_032465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4413#issuecomment-32465",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_032466.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2009-01-23T13:19:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4413#issuecomment-32466",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_032467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4413#issuecomment-32467",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_032468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4413#issuecomment-32468",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_032469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4413#issuecomment-32469",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_032470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4413#issuecomment-32470",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_032471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4413#issuecomment-32471",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

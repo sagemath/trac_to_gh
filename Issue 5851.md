@@ -3,7 +3,7 @@
 archive/issues_005851.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: elliptic curve documentation\n\nThe patch fully ReST-ifies the files\n* ell_field.py\n* ec_database.py\n* kodaira_symbol.py\nin sage/schemes/elliptic_curves, and adds them to the reference manual.\n\nThese are all quite short and simple.  The patch is based on 3.4.1.rc4.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5851\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: elliptic curve documentation\n\nThe patch fully ReST-ifies the files\n* ell_field.py\n* ec_database.py\n* kodaira_symbol.py\nin sage/schemes/elliptic_curves, and adds them to the reference manual.\n\nThese are all quite short and simple.  The patch is based on 3.4.1.rc4.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5851\n\n",
     "created_at": "2009-04-22T10:41:17Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005851.json:
     "title": "[with patch, needs review] Convert 3 more elliptic curves files to ReST and add to reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5851",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: elliptic curve documentation
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5851
 archive/issue_comments_046170.json:
 ```json
 {
-    "body": "Attachment [ecdocs3.patch](tarball://root/attachments/some-uuid/ticket5851/ecdocs3.patch) by cremona created at 2009-04-22 10:41:34",
+    "body": "Attachment [ecdocs3.patch](tarball://root/attachments/some-uuid/ticket5851/ecdocs3.patch) by @JohnCremona created at 2009-04-22 10:41:34",
     "created_at": "2009-04-22T10:41:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5851#issuecomment-46170",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [ecdocs3.patch](tarball://root/attachments/some-uuid/ticket5851/ecdocs3.patch) by cremona created at 2009-04-22 10:41:34
+Attachment [ecdocs3.patch](tarball://root/attachments/some-uuid/ticket5851/ecdocs3.patch) by @JohnCremona created at 2009-04-22 10:41:34
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_046171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5851#issuecomment-46171",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_046172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5851#issuecomment-46172",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_046173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5851#issuecomment-46173",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

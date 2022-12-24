@@ -14,7 +14,7 @@ archive/issues_007902.json:
     "title": "scipy-0.7.p3: misbuilt silently, due to missing perl modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7902",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 Assignee: GeorgSWeber
@@ -45,7 +45,7 @@ archive/issue_comments_068721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7902#issuecomment-68721",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_068722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7902#issuecomment-68722",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_068725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7902#issuecomment-68725",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

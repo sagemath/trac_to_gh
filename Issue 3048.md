@@ -3,7 +3,7 @@
 archive/issues_003048.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rbeezer rishi yzh\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3048\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer @rishikesha @yuan-zhou\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3048\n\n",
     "created_at": "2008-04-27T21:40:02Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_003048.json:
     "title": "add generic LU decomposition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3048",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rbeezer rishi yzh
+CC:  @rbeezer @rishikesha @yuan-zhou
 
 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3048
 archive/issue_comments_020985.json:
 ```json
 {
-    "body": "Attachment [3048.patch](tarball://root/attachments/some-uuid/ticket3048/3048.patch) by mhansen created at 2008-04-27 21:41:19",
+    "body": "Attachment [3048.patch](tarball://root/attachments/some-uuid/ticket3048/3048.patch) by @mwhansen created at 2008-04-27 21:41:19",
     "created_at": "2008-04-27T21:41:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20985",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [3048.patch](tarball://root/attachments/some-uuid/ticket3048/3048.patch) by mhansen created at 2008-04-27 21:41:19
+Attachment [3048.patch](tarball://root/attachments/some-uuid/ticket3048/3048.patch) by @mwhansen created at 2008-04-27 21:41:19
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_020986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20986",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to assigned.
 archive/issue_comments_020987.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-04-27T21:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20987",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_020989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20989",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_020990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20990",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_020991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20991",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_020992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20992",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_020993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20993",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_020994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20994",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_020995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20995",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_020996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20996",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -387,16 +387,16 @@ Grr...We need to special-case symbolics because the entire symbolic ring is cons
 archive/issue_comments_020997.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to jason.",
+    "body": "Changing assignee from @mwhansen to @jasongrout.",
     "created_at": "2009-09-29T05:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20997",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mhansen to jason.
+Changing assignee from @mwhansen to @jasongrout.
 
 
 
@@ -410,7 +410,7 @@ archive/issue_comments_020998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20998",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_020999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20999",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -445,16 +445,16 @@ Things to do:
 archive/issue_comments_021000.json:
 ```json
 {
-    "body": "Attachment [lu_decomposition.patch](tarball://root/attachments/some-uuid/ticket3048/lu_decomposition.patch) by jason created at 2010-04-22 02:57:47\n\napply instead of previous patch",
+    "body": "Attachment [lu_decomposition.patch](tarball://root/attachments/some-uuid/ticket3048/lu_decomposition.patch) by @jasongrout created at 2010-04-22 02:57:47\n\napply instead of previous patch",
     "created_at": "2010-04-22T02:57:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-21000",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [lu_decomposition.patch](tarball://root/attachments/some-uuid/ticket3048/lu_decomposition.patch) by jason created at 2010-04-22 02:57:47
+Attachment [lu_decomposition.patch](tarball://root/attachments/some-uuid/ticket3048/lu_decomposition.patch) by @jasongrout created at 2010-04-22 02:57:47
 
 apply instead of previous patch
 
@@ -470,7 +470,7 @@ archive/issue_comments_021001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-21001",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

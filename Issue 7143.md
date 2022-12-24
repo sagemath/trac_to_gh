@@ -41,7 +41,7 @@ archive/issue_comments_059186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7143#issuecomment-59186",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_059187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7143#issuecomment-59187",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

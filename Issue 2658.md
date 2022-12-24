@@ -3,7 +3,7 @@
 archive/issues_002658.json:
 ```json
 {
-    "body": "Assignee: was\n\nCreating a matrix from a vector doesn't preserve the vector's parent ring automatically.:\n\n\n```\nsage: v = vector(RR,range(5)) ; v ; v.parent()\n (0.000000000000000, 1.00000000000000, 2.00000000000000, 3.00000000000000, 4.00000000000000)\n Vector space of dimension 5 over Real Field with 53 bits of precision\n\nsage: M=matrix(v) ; M ; M.parent()\n [0 1 2 3 4]\n Full MatrixSpace of 1 by 5 dense matrices over Integer Ring\n```\n\n\nThis works if you specify the ring explicitly (ie  `Matrix(RR,v)` ) but I don't see why sage can't do the \"right\" thing automatically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2658\n\n",
+    "body": "Assignee: @williamstein\n\nCreating a matrix from a vector doesn't preserve the vector's parent ring automatically.:\n\n\n```\nsage: v = vector(RR,range(5)) ; v ; v.parent()\n (0.000000000000000, 1.00000000000000, 2.00000000000000, 3.00000000000000, 4.00000000000000)\n Vector space of dimension 5 over Real Field with 53 bits of precision\n\nsage: M=matrix(v) ; M ; M.parent()\n [0 1 2 3 4]\n Full MatrixSpace of 1 by 5 dense matrices over Integer Ring\n```\n\n\nThis works if you specify the ring explicitly (ie  `Matrix(RR,v)` ) but I don't see why sage can't do the \"right\" thing automatically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2658\n\n",
     "created_at": "2008-03-24T03:13:50Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002658.json:
     "title": "Matrix from a vector doesn't preserve the vector's parent ring automatically",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2658",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Creating a matrix from a vector doesn't preserve the vector's parent ring automatically.:
 
@@ -51,7 +51,7 @@ archive/issue_comments_018293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2658#issuecomment-18293",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_018294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2658#issuecomment-18294",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_018295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2658#issuecomment-18295",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_018299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2658#issuecomment-18299",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_018300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2658#issuecomment-18300",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_018301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2658#issuecomment-18301",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_018302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2658#issuecomment-18302",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_018303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2658#issuecomment-18303",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

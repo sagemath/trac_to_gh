@@ -3,7 +3,7 @@
 archive/issues_006069.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  acleone robert.marik\n\nIf someone attempts to access a URL for a published worksheet that no longer exists (perhaps because the URL changed when the worksheet went through a published to unpublished to published cycle), or the URL was mistyped, they get a blank page titled \"Error | Sage Notebook\", with no hint on what to do to resolve the problem.\n\nIf they are trying to access a published worksheet that cannot be found, it is probably useful to redirect to the page with the list of published worksheets, perhaps after showing an error message like \"There is no worksheet currently available at this URL. You will be redirected to the <a href='URL of published worksheets index'>index of published worksheets</a> in 15 seconds.\"\n\nThis may be related to ticket 5988:\n\nhttp://trac.sagemath.org/sage_trac/ticket/5988\n\nIssue created by migration from https://trac.sagemath.org/ticket/6069\n\n",
+    "body": "Assignee: somebody\n\nCC:  acleone @robert-marik\n\nIf someone attempts to access a URL for a published worksheet that no longer exists (perhaps because the URL changed when the worksheet went through a published to unpublished to published cycle), or the URL was mistyped, they get a blank page titled \"Error | Sage Notebook\", with no hint on what to do to resolve the problem.\n\nIf they are trying to access a published worksheet that cannot be found, it is probably useful to redirect to the page with the list of published worksheets, perhaps after showing an error message like \"There is no worksheet currently available at this URL. You will be redirected to the <a href='URL of published worksheets index'>index of published worksheets</a> in 15 seconds.\"\n\nThis may be related to ticket 5988:\n\nhttp://trac.sagemath.org/sage_trac/ticket/5988\n\nIssue created by migration from https://trac.sagemath.org/ticket/6069\n\n",
     "created_at": "2009-05-18T13:16:06Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_006069.json:
 ```
 Assignee: somebody
 
-CC:  acleone robert.marik
+CC:  acleone @robert-marik
 
 If someone attempts to access a URL for a published worksheet that no longer exists (perhaps because the URL changed when the worksheet went through a published to unpublished to published cycle), or the URL was mistyped, they get a blank page titled "Error | Sage Notebook", with no hint on what to do to resolve the problem.
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6069
 archive/issue_comments_048294.json:
 ```json
 {
-    "body": "Attachment [trac_6069-missing-published-worksheet.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing-published-worksheet.patch) by timdumol created at 2010-01-18 19:53:09\n\nThis says that \"There is no published worksheet with name '%s'\" instead.",
+    "body": "Attachment [trac_6069-missing-published-worksheet.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing-published-worksheet.patch) by @TimDumol created at 2010-01-18 19:53:09\n\nThis says that \"There is no published worksheet with name '%s'\" instead.",
     "created_at": "2010-01-18T19:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48294",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_6069-missing-published-worksheet.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing-published-worksheet.patch) by timdumol created at 2010-01-18 19:53:09
+Attachment [trac_6069-missing-published-worksheet.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing-published-worksheet.patch) by @TimDumol created at 2010-01-18 19:53:09
 
 This says that "There is no published worksheet with name '%s'" instead.
 
@@ -65,7 +65,7 @@ archive/issue_comments_048295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48295",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_048296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48296",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_048297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48297",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -114,16 +114,16 @@ Redirect to `pub/` after delay.  Apply only this patch.  sagenb repo.
 archive/issue_comments_048298.json:
 ```json
 {
-    "body": "Attachment [trac_6069-missing_pub_ws.2.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.2.patch) by mpatel created at 2010-01-20 03:15:34\n\nV2 is an attempt to set up redirection.  It should also ensure for `guest` users that the error page does not include the full top bar (Settings, Log, etc.).\n\nFeel free to make changes.",
+    "body": "Attachment [trac_6069-missing_pub_ws.2.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.2.patch) by @qed777 created at 2010-01-20 03:15:34\n\nV2 is an attempt to set up redirection.  It should also ensure for `guest` users that the error page does not include the full top bar (Settings, Log, etc.).\n\nFeel free to make changes.",
     "created_at": "2010-01-20T03:15:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48298",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6069-missing_pub_ws.2.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.2.patch) by mpatel created at 2010-01-20 03:15:34
+Attachment [trac_6069-missing_pub_ws.2.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.2.patch) by @qed777 created at 2010-01-20 03:15:34
 
 V2 is an attempt to set up redirection.  It should also ensure for `guest` users that the error page does not include the full top bar (Settings, Log, etc.).
 
@@ -141,7 +141,7 @@ archive/issue_comments_048299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48299",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_048300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48300",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -172,16 +172,16 @@ Better titles for non-Error pages.  Apply only this patch.
 archive/issue_comments_048301.json:
 ```json
 {
-    "body": "Attachment [trac_6069-missing_pub_ws.3.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.3.patch) by mpatel created at 2010-02-14 01:31:08\n\nV3 should\n\n* Fix #8234.\n* Use a title more appropriate than `Error` for certain non-Error pages (see the patch).\n* Make \"Sign Out\" redirect to \"/\" when `require_login=False`.  This is better than returning a page whose header refers to a user named \"None\" and has a broken \"Home\" link!",
+    "body": "Attachment [trac_6069-missing_pub_ws.3.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.3.patch) by @qed777 created at 2010-02-14 01:31:08\n\nV3 should\n\n* Fix #8234.\n* Use a title more appropriate than `Error` for certain non-Error pages (see the patch).\n* Make \"Sign Out\" redirect to \"/\" when `require_login=False`.  This is better than returning a page whose header refers to a user named \"None\" and has a broken \"Home\" link!",
     "created_at": "2010-02-14T01:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48301",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6069-missing_pub_ws.3.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.3.patch) by mpatel created at 2010-02-14 01:31:08
+Attachment [trac_6069-missing_pub_ws.3.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.3.patch) by @qed777 created at 2010-02-14 01:31:08
 
 V3 should
 
@@ -201,7 +201,7 @@ archive/issue_comments_048302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48302",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_048303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48303",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_048304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48304",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_048305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48305",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_048306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48306",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

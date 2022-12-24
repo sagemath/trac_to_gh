@@ -3,7 +3,7 @@
 archive/issues_007950.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\nsage: P = PolynomialRing(QQ,0,'')\nsage: P\nMultivariate Polynomial Ring in no variables over Rational Field\nsage: t = P.random_element()\nsage: t.factor()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/24426/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_element.pyc in factor(self, proof)\n   1422         # try to use univariate factoring first\n\n   1423         try:\n-> 1424             F = self.univariate_polynomial().factor()\n   1425             return Factorization([(R(f),m) for f,m in F], unit=F.unit())\n   1426         except TypeError:\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_element.pyc in univariate_polynomial(self, R)\n   1055         #construct ring if None\n\n   1056         if R is None:\n-> 1057             R = self.base_ring()[str(self.variables()[0])]\n   1058 \n   1059         monomial_coefficients = self._MPolynomial_element__element.dict()\n\nIndexError: tuple index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7950\n\n",
+    "body": "Assignee: @malb\n\n\n```\nsage: P = PolynomialRing(QQ,0,'')\nsage: P\nMultivariate Polynomial Ring in no variables over Rational Field\nsage: t = P.random_element()\nsage: t.factor()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/24426/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_element.pyc in factor(self, proof)\n   1422         # try to use univariate factoring first\n\n   1423         try:\n-> 1424             F = self.univariate_polynomial().factor()\n   1425             return Factorization([(R(f),m) for f,m in F], unit=F.unit())\n   1426         except TypeError:\n\n/home/burcin/sage/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_element.pyc in univariate_polynomial(self, R)\n   1055         #construct ring if None\n\n   1056         if R is None:\n-> 1057             R = self.base_ring()[str(self.variables()[0])]\n   1058 \n   1059         monomial_coefficients = self._MPolynomial_element__element.dict()\n\nIndexError: tuple index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7950\n\n",
     "created_at": "2010-01-16T17:52:56Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_007950.json:
     "title": "factoring broken in 0 variable polynomial ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7950",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -67,7 +67,7 @@ archive/issue_comments_069365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7950#issuecomment-69365",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_069366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7950#issuecomment-69366",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -98,16 +98,16 @@ Changing status from new to needs_review.
 archive/issue_comments_069367.json:
 ```json
 {
-    "body": "Attachment [trac_7950-zero_variable_factor.patch](tarball://root/attachments/some-uuid/ticket7950/trac_7950-zero_variable_factor.patch) by burcin created at 2010-01-17 23:29:32\n\ntrivial review please?",
+    "body": "Attachment [trac_7950-zero_variable_factor.patch](tarball://root/attachments/some-uuid/ticket7950/trac_7950-zero_variable_factor.patch) by @burcin created at 2010-01-17 23:29:32\n\ntrivial review please?",
     "created_at": "2010-01-17T23:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7950#issuecomment-69367",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7950-zero_variable_factor.patch](tarball://root/attachments/some-uuid/ticket7950/trac_7950-zero_variable_factor.patch) by burcin created at 2010-01-17 23:29:32
+Attachment [trac_7950-zero_variable_factor.patch](tarball://root/attachments/some-uuid/ticket7950/trac_7950-zero_variable_factor.patch) by @burcin created at 2010-01-17 23:29:32
 
 trivial review please?
 
@@ -123,7 +123,7 @@ archive/issue_comments_069368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7950#issuecomment-69368",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_069369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7950#issuecomment-69369",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,16 +180,16 @@ So I think this patch needs work.
 archive/issue_comments_069370.json:
 ```json
 {
-    "body": "Attachment [trac_7950-zero_variable_factor.take2.patch](tarball://root/attachments/some-uuid/ticket7950/trac_7950-zero_variable_factor.take2.patch) by burcin created at 2010-01-18 17:48:38\n\nonly apply this patch",
+    "body": "Attachment [trac_7950-zero_variable_factor.take2.patch](tarball://root/attachments/some-uuid/ticket7950/trac_7950-zero_variable_factor.take2.patch) by @burcin created at 2010-01-18 17:48:38\n\nonly apply this patch",
     "created_at": "2010-01-18T17:48:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7950#issuecomment-69370",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7950-zero_variable_factor.take2.patch](tarball://root/attachments/some-uuid/ticket7950/trac_7950-zero_variable_factor.take2.patch) by burcin created at 2010-01-18 17:48:38
+Attachment [trac_7950-zero_variable_factor.take2.patch](tarball://root/attachments/some-uuid/ticket7950/trac_7950-zero_variable_factor.take2.patch) by @burcin created at 2010-01-18 17:48:38
 
 only apply this patch
 
@@ -205,7 +205,7 @@ archive/issue_comments_069371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7950#issuecomment-69371",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_069372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7950#issuecomment-69372",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_069373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7950#issuecomment-69373",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_069374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7950#issuecomment-69374",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

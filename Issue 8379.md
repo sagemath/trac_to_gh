@@ -3,7 +3,7 @@
 archive/issues_008379.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  malb\n\nwe define:\n\n* `~` : returns the complement Boolean function\n* `+`,`*` : corresponds to the same op. on the ANFs\n* `|` : concatenate the truth tables ( used for various constructions, e.g. http://eprint.iacr.org/2009/134.pdf )\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8379\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @malb\n\nwe define:\n\n* `~` : returns the complement Boolean function\n* `+`,`*` : corresponds to the same op. on the ANFs\n* `|` : concatenate the truth tables ( used for various constructions, e.g. http://eprint.iacr.org/2009/134.pdf )\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8379\n\n",
     "created_at": "2010-02-26T13:21:45Z",
     "labels": [
         "cryptography",
@@ -19,7 +19,7 @@ archive/issues_008379.json:
 ```
 Assignee: mvngu
 
-CC:  malb
+CC:  @malb
 
 we define:
 
@@ -98,7 +98,7 @@ archive/issue_comments_074923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8379#issuecomment-74923",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_074924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8379#issuecomment-74924",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_074925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8379#issuecomment-74925",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_074926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8379#issuecomment-74926",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_074930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8379#issuecomment-74930",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_074931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8379#issuecomment-74931",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_074932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8379#issuecomment-74932",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

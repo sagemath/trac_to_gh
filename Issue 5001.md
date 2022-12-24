@@ -3,7 +3,7 @@
 archive/issues_005001.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: matrix, kernel\n\n\n```\nsage: id = matrix(ZZ, 2, 2, [[1, 0], [0, 1]]) \nsage: id.left_kernel()\nTraceback\n...\nTypeError: Argument K (= Integer Ring) must be a field.\n```\n\nOn the other hand, `id.right_kernel()` and `id.kernel()` both work, and `id.kernel()` actually computes the left kernel.  Note also that the documentation for both left_kernel and right_kernel says that the answer will be a vector space, not a module over the integers; this should be fixed, too.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5001\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: matrix, kernel\n\n\n```\nsage: id = matrix(ZZ, 2, 2, [[1, 0], [0, 1]]) \nsage: id.left_kernel()\nTraceback\n...\nTypeError: Argument K (= Integer Ring) must be a field.\n```\n\nOn the other hand, `id.right_kernel()` and `id.kernel()` both work, and `id.kernel()` actually computes the left kernel.  Note also that the documentation for both left_kernel and right_kernel says that the answer will be a vector space, not a module over the integers; this should be fixed, too.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5001\n\n",
     "created_at": "2009-01-17T16:36:51Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005001.json:
     "title": "kernels of integer matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5001",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: matrix, kernel
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5001
 archive/issue_comments_038140.json:
 ```json
 {
-    "body": "Attachment [trac_5001.patch](tarball://root/attachments/some-uuid/ticket5001/trac_5001.patch) by was created at 2009-01-24 16:24:54",
+    "body": "Attachment [trac_5001.patch](tarball://root/attachments/some-uuid/ticket5001/trac_5001.patch) by @williamstein created at 2009-01-24 16:24:54",
     "created_at": "2009-01-24T16:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5001#issuecomment-38140",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5001.patch](tarball://root/attachments/some-uuid/ticket5001/trac_5001.patch) by was created at 2009-01-24 16:24:54
+Attachment [trac_5001.patch](tarball://root/attachments/some-uuid/ticket5001/trac_5001.patch) by @williamstein created at 2009-01-24 16:24:54
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_038141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5001#issuecomment-38141",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

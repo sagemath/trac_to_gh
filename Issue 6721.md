@@ -50,16 +50,16 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_055146.json:
 ```json
 {
-    "body": "Attachment [trac_6721-spell-check-media.patch](tarball://root/attachments/some-uuid/ticket6721/trac_6721-spell-check-media.patch) by mpatel created at 2009-08-14 07:16:01\n\nI ran `sage -merge <ticket_number> -t directory` and started the notebook without problems.",
+    "body": "Attachment [trac_6721-spell-check-media.patch](tarball://root/attachments/some-uuid/ticket6721/trac_6721-spell-check-media.patch) by @qed777 created at 2009-08-14 07:16:01\n\nI ran `sage -merge <ticket_number> -t directory` and started the notebook without problems.",
     "created_at": "2009-08-14T07:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6721#issuecomment-55146",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6721-spell-check-media.patch](tarball://root/attachments/some-uuid/ticket6721/trac_6721-spell-check-media.patch) by mpatel created at 2009-08-14 07:16:01
+Attachment [trac_6721-spell-check-media.patch](tarball://root/attachments/some-uuid/ticket6721/trac_6721-spell-check-media.patch) by @qed777 created at 2009-08-14 07:16:01
 
 I ran `sage -merge <ticket_number> -t directory` and started the notebook without problems.
 
@@ -75,7 +75,7 @@ archive/issue_comments_055147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6721#issuecomment-55147",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_055148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6721#issuecomment-55148",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

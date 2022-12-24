@@ -3,7 +3,7 @@
 archive/issues_007149.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b0d82d01bc1f123?tvc=2):\n\n```\nAs of version 4.1.2.alpha2, the Sage tutorial has a section containing \na guided tour of graph theory in Sage.  In principle, this is a good \nidea, but the execution is severely flawed: about 2/3 of the tour \nfocuses on the methods \"g.max_matching()\", \"g.edge_coloring()\", and \n\"g.vertex_coloring()\".  There are no such methods in Sage.  (The \nrelevant doctests were never executed because of the issue discussed \nat trac ticket #6572.)  Since the tutorial ought to be one of the \nfirst pieces of documentation people use, this situation is \ndisastrous. \n\nI suggest that before we release 4.1.2, we delete this part of the \ntutorial until the file is fixed.  (Alternatively, we could delete 2/3 \nof the file, but that might make it a bit short on substance.) \n```\n\nSee #6572 for some related issues.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7149\n\n",
+    "body": "Assignee: @jhpalmieri\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b0d82d01bc1f123?tvc=2):\n\n```\nAs of version 4.1.2.alpha2, the Sage tutorial has a section containing \na guided tour of graph theory in Sage.  In principle, this is a good \nidea, but the execution is severely flawed: about 2/3 of the tour \nfocuses on the methods \"g.max_matching()\", \"g.edge_coloring()\", and \n\"g.vertex_coloring()\".  There are no such methods in Sage.  (The \nrelevant doctests were never executed because of the issue discussed \nat trac ticket #6572.)  Since the tutorial ought to be one of the \nfirst pieces of documentation people use, this situation is \ndisastrous. \n\nI suggest that before we release 4.1.2, we delete this part of the \ntutorial until the file is fixed.  (Alternatively, we could delete 2/3 \nof the file, but that might make it a bit short on substance.) \n```\n\nSee #6572 for some related issues.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7149\n\n",
     "created_at": "2009-10-08T00:54:23Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_007149.json:
     "title": "[with patch, needs review] tutorial: delete the graph theory section",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7149",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b0d82d01bc1f123?tvc=2):
 
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7149
 archive/issue_comments_059237.json:
 ```json
 {
-    "body": "Attachment [trac_7149-delete-graphtheory.patch](tarball://root/attachments/some-uuid/ticket7149/trac_7149-delete-graphtheory.patch) by was created at 2009-10-08 01:05:41\n\nthanks for noticing this!\n\nmerged in 4.2.1.rc1",
+    "body": "Attachment [trac_7149-delete-graphtheory.patch](tarball://root/attachments/some-uuid/ticket7149/trac_7149-delete-graphtheory.patch) by @williamstein created at 2009-10-08 01:05:41\n\nthanks for noticing this!\n\nmerged in 4.2.1.rc1",
     "created_at": "2009-10-08T01:05:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7149#issuecomment-59237",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7149-delete-graphtheory.patch](tarball://root/attachments/some-uuid/ticket7149/trac_7149-delete-graphtheory.patch) by was created at 2009-10-08 01:05:41
+Attachment [trac_7149-delete-graphtheory.patch](tarball://root/attachments/some-uuid/ticket7149/trac_7149-delete-graphtheory.patch) by @williamstein created at 2009-10-08 01:05:41
 
 thanks for noticing this!
 
@@ -78,7 +78,7 @@ archive/issue_comments_059238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7149#issuecomment-59238",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_059239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7149#issuecomment-59239",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_059240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7149#issuecomment-59240",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

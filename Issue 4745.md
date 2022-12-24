@@ -3,7 +3,7 @@
 archive/issues_004745.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nCC:  mhansen\n\nDSage latency is poor, this patch seeks to improve this by a combination of pushing jobs and improving the speed of which new results are detected.  This is the first of many patches that could be made to organically improve DSage, so this is a small patch which should have big results (but there is still plenty of work to be done on DSage.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4745\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @mwhansen\n\nDSage latency is poor, this patch seeks to improve this by a combination of pushing jobs and improving the speed of which new results are detected.  This is the first of many patches that could be made to organically improve DSage, so this is a small patch which should have big results (but there is still plenty of work to be done on DSage.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4745\n\n",
     "created_at": "2008-12-09T07:23:01Z",
     "labels": [
         "dsage",
@@ -14,12 +14,12 @@ archive/issues_004745.json:
     "title": "[with patch, needs review] Dsage performance is poor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4745",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
-CC:  mhansen
+CC:  @mwhansen
 
 DSage latency is poor, this patch seeks to improve this by a combination of pushing jobs and improving the speed of which new results are detected.  This is the first of many patches that could be made to organically improve DSage, so this is a small patch which should have big results (but there is still plenty of work to be done on DSage.)
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4745
 archive/issue_comments_035900.json:
 ```json
 {
-    "body": "Attachment [trac_4745_2.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745_2.patch) by gfurnish created at 2008-12-09 08:43:17\n\nApply on top of first patch.",
+    "body": "Attachment [trac_4745_2.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745_2.patch) by @garyfurnish created at 2008-12-09 08:43:17\n\nApply on top of first patch.",
     "created_at": "2008-12-09T08:43:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4745#issuecomment-35900",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_4745_2.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745_2.patch) by gfurnish created at 2008-12-09 08:43:17
+Attachment [trac_4745_2.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745_2.patch) by @garyfurnish created at 2008-12-09 08:43:17
 
 Apply on top of first patch.
 
@@ -59,7 +59,7 @@ archive/issue_comments_035901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4745#issuecomment-35901",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_035902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4745#issuecomment-35902",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_035903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4745#issuecomment-35903",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -134,16 +134,16 @@ Michael
 archive/issue_comments_035905.json:
 ```json
 {
-    "body": "Attachment [trac_4745-combined.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745-combined.patch) by mhansen created at 2008-12-11 14:47:52\n\nI attached a folded patch since I wanted one for the review.  Really good work on this!  It make DSage way more useable.\n\nJust merge the -combined patch.",
+    "body": "Attachment [trac_4745-combined.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745-combined.patch) by @mwhansen created at 2008-12-11 14:47:52\n\nI attached a folded patch since I wanted one for the review.  Really good work on this!  It make DSage way more useable.\n\nJust merge the -combined patch.",
     "created_at": "2008-12-11T14:47:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4745#issuecomment-35905",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4745-combined.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745-combined.patch) by mhansen created at 2008-12-11 14:47:52
+Attachment [trac_4745-combined.patch](tarball://root/attachments/some-uuid/ticket4745/trac_4745-combined.patch) by @mwhansen created at 2008-12-11 14:47:52
 
 I attached a folded patch since I wanted one for the review.  Really good work on this!  It make DSage way more useable.
 

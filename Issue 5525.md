@@ -3,7 +3,7 @@
 archive/issues_005525.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\nsage: A = (QQ^1).span([[1/3]],ZZ); A\nFree module of degree 1 and rank 1 over Integer Ring\nEchelon basis matrix:\n[1/3]\nsage: B = (QQ^1).span([[1]],ZZ); B\nFree module of degree 1 and rank 1 over Integer Ring\nEchelon basis matrix:\n[1]\nsage: A.intersection(B)\nFree module of degree 1 and rank 1 over Integer Ring\nEchelon basis matrix:\n[1/3]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5525\n\n",
+    "body": "Assignee: @malb\n\n\n```\nsage: A = (QQ^1).span([[1/3]],ZZ); A\nFree module of degree 1 and rank 1 over Integer Ring\nEchelon basis matrix:\n[1/3]\nsage: B = (QQ^1).span([[1]],ZZ); B\nFree module of degree 1 and rank 1 over Integer Ring\nEchelon basis matrix:\n[1]\nsage: A.intersection(B)\nFree module of degree 1 and rank 1 over Integer Ring\nEchelon basis matrix:\n[1/3]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5525\n\n",
     "created_at": "2009-03-15T07:37:43Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_005525.json:
     "title": "fix bug in intersection of ZZ-modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5525",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5525
 archive/issue_comments_042987.json:
 ```json
 {
-    "body": "Attachment [trac_5525.patch](tarball://root/attachments/some-uuid/ticket5525/trac_5525.patch) by was created at 2009-03-15 08:22:26",
+    "body": "Attachment [trac_5525.patch](tarball://root/attachments/some-uuid/ticket5525/trac_5525.patch) by @williamstein created at 2009-03-15 08:22:26",
     "created_at": "2009-03-15T08:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5525#issuecomment-42987",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5525.patch](tarball://root/attachments/some-uuid/ticket5525/trac_5525.patch) by was created at 2009-03-15 08:22:26
+Attachment [trac_5525.patch](tarball://root/attachments/some-uuid/ticket5525/trac_5525.patch) by @williamstein created at 2009-03-15 08:22:26
 
 
 

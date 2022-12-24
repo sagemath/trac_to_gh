@@ -3,7 +3,7 @@
 archive/issues_001585.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nrm: remove write-protected regular file `sage-2.9.1.alpha3/local/lib/gap-4.4.10/pkg/guava3.1/guavapage/guava_light.jpg'? y\nrm: remove write-protected regular file `sage-2.9.1.alpha3/local/lib/gap-4.4.10/pkg/guava3.1/guavapage/guava.jpg'? y\nrm: remove write-protected regular file `sage-2.9.1.alpha3/local/lib/gap-4.4.10/pkg/guava3.1/guavapage/guava.ps'? y\nrm: remove write-protected regular file `sage-2.9.1.alpha3/local/lib/gap-4.4.10/pkg/guava3.1/src/leon/doc/leon_guava_manual.pdf'? y\nrm: remove write-protected regular file `sage-2.9.1.alpha3/local/lib/gap-4.4.10/pkg/guava3.1/src/leon/doc/README'? y\nrm: remove write-protected regular file `sage-2.9.1.alpha3/local/lib/gap-4.4.10/pkg/guava3.1/src/leon/doc/manual.tex'? y\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1585\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nrm: remove write-protected regular file `sage-2.9.1.alpha3/local/lib/gap-4.4.10/pkg/guava3.1/guavapage/guava_light.jpg'? y\nrm: remove write-protected regular file `sage-2.9.1.alpha3/local/lib/gap-4.4.10/pkg/guava3.1/guavapage/guava.jpg'? y\nrm: remove write-protected regular file `sage-2.9.1.alpha3/local/lib/gap-4.4.10/pkg/guava3.1/guavapage/guava.ps'? y\nrm: remove write-protected regular file `sage-2.9.1.alpha3/local/lib/gap-4.4.10/pkg/guava3.1/src/leon/doc/leon_guava_manual.pdf'? y\nrm: remove write-protected regular file `sage-2.9.1.alpha3/local/lib/gap-4.4.10/pkg/guava3.1/src/leon/doc/README'? y\nrm: remove write-protected regular file `sage-2.9.1.alpha3/local/lib/gap-4.4.10/pkg/guava3.1/src/leon/doc/manual.tex'? y\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1585\n\n",
     "created_at": "2007-12-22T01:26:31Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001585.json:
     "title": "fix file permissions in guava",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1585",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -46,7 +46,7 @@ archive/issue_comments_010089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1585#issuecomment-10089",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_010090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1585#issuecomment-10090",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

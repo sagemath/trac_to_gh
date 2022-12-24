@@ -3,7 +3,7 @@
 archive/issues_008950.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: desolve\n\nI've done a new function, named desolve_numerical, that solves a system of first order differential equations numerically. It seems to be quite more efficient than the function desolve_system_rk4, included in the same module. It can be seen in the following example (Lotka-Volterra Equations):\n\nsage: x,y,t=var('x,y,t')\u00a0\nsage: des=[x*(1-y),-y*(1-x)]\nsage: ics=[1,0.5] \nsage: times=srange(0,10.1,0.1)\n\nWith the new function we get:\u00a0\n\nsage: timeit('desolve_numerical(des,ics,times,(x,y))') \n125 loops, best of 3: **5.81 ms per loop**\n\nwhile with desolve_system_rk4 the result is:\n\nsage: timeit('desolve_system_rk4(des,[x,y],ics=[0,1,0.5],ivar=t)')\u00a0\n5 loops, best of 3: **558 ms per loop**\n\nIssue created by migration from https://trac.sagemath.org/ticket/8950\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: desolve\n\nI've done a new function, named desolve_numerical, that solves a system of first order differential equations numerically. It seems to be quite more efficient than the function desolve_system_rk4, included in the same module. It can be seen in the following example (Lotka-Volterra Equations):\n\nsage: x,y,t=var('x,y,t')\u00a0\nsage: des=[x*(1-y),-y*(1-x)]\nsage: ics=[1,0.5] \nsage: times=srange(0,10.1,0.1)\n\nWith the new function we get:\u00a0\n\nsage: timeit('desolve_numerical(des,ics,times,(x,y))') \n125 loops, best of 3: **5.81 ms per loop**\n\nwhile with desolve_system_rk4 the result is:\n\nsage: timeit('desolve_system_rk4(des,[x,y],ics=[0,1,0.5],ivar=t)')\u00a0\n5 loops, best of 3: **558 ms per loop**\n\nIssue created by migration from https://trac.sagemath.org/ticket/8950\n\n",
     "created_at": "2010-05-11T15:51:19Z",
     "labels": [
         "calculus",
@@ -17,7 +17,7 @@ archive/issues_008950.json:
     "user": "uri"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: desolve
 
@@ -114,7 +114,7 @@ archive/issue_comments_082403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82403",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_082404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82404",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_082407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82407",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_082408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82408",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -701,7 +701,7 @@ archive/issue_comments_082424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82424",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -807,7 +807,7 @@ archive/issue_comments_082429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82429",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -827,7 +827,7 @@ archive/issue_comments_082430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82430",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -884,7 +884,7 @@ archive/issue_comments_082433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82433",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -929,7 +929,7 @@ archive/issue_comments_082435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82435",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -970,7 +970,7 @@ archive/issue_comments_082437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82437",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -988,7 +988,7 @@ archive/issue_comments_082438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82438",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1012,7 +1012,7 @@ archive/issue_comments_082439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82439",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008426.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  was robertwb\n\nThis should work:\n\n\n```\nimport numpy\nR.<x>=RR[]\nx*numpy.float32('23.0')\n```\n\n\nInstead, I get:\n\n```\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/tmp/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11337)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6994)()\n\nTypeError: unsupported operand parent(s) for '*': 'Univariate Polynomial Ring in x over Real Field with 53 bits of precision' and '<type 'numpy.float32'>'\n```\n\n\nNote that this does work:\n\n\n```\nsage: numpy.float32('23.0')*x\n23.0000000000000*x\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8426\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein @robertwb\n\nThis should work:\n\n\n```\nimport numpy\nR.<x>=RR[]\nx*numpy.float32('23.0')\n```\n\n\nInstead, I get:\n\n```\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/tmp/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11337)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6994)()\n\nTypeError: unsupported operand parent(s) for '*': 'Univariate Polynomial Ring in x over Real Field with 53 bits of precision' and '<type 'numpy.float32'>'\n```\n\n\nNote that this does work:\n\n\n```\nsage: numpy.float32('23.0')*x\n23.0000000000000*x\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8426\n\n",
     "created_at": "2010-03-03T05:17:18Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008426.json:
     "title": "polynomial * constant does not work if constant is a numpy type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8426",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  was robertwb
+CC:  @williamstein @robertwb
 
 This should work:
 
@@ -73,7 +73,7 @@ archive/issue_comments_075543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8426#issuecomment-75543",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_075544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8426#issuecomment-75544",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_075545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8426#issuecomment-75545",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_075546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8426#issuecomment-75546",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_075547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8426#issuecomment-75547",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

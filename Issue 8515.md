@@ -3,7 +3,7 @@
 archive/issues_008515.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  slelievre chapoton\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n\nThis builds fully on Solaris 10, and passes all doc tests. This is the first version of Sage to do this. \n\n == The problem with the optional frobby-0.7.6 ==\n\n```\nfrobby-0.7.6/src/test/transform/t3.gen.m2\nfrobby-0.7.6/src/test/transform/t3.gen.nm\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\ng++ -Wall -ansi -pedantic -Wextra -Wno-uninitialized -Wno-unused-parameter -Werror -isystem /export/home/drkirkby/sage-4.3.4.alpha1/local/include -O3 -c src/main.cpp -o bin/release/main.o\nsrc/main.cpp: In function 'int main(int, const char**)':\nsrc/main.cpp:30: error: 'srand' was not declared in this scope\nmake: *** [bin/release/main.o] Error 1\nError building Frobby.\n\nreal    0m2.093s\nuser    0m1.446s\nsys     0m0.156s\nsage: An error occurred while installing frobby-0.7.6\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8515\n\n",
+    "body": "Assignee: tbd\n\nCC:  @slel @fchapoton\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n\nThis builds fully on Solaris 10, and passes all doc tests. This is the first version of Sage to do this. \n\n == The problem with the optional frobby-0.7.6 ==\n\n```\nfrobby-0.7.6/src/test/transform/t3.gen.m2\nfrobby-0.7.6/src/test/transform/t3.gen.nm\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\ng++ -Wall -ansi -pedantic -Wextra -Wno-uninitialized -Wno-unused-parameter -Werror -isystem /export/home/drkirkby/sage-4.3.4.alpha1/local/include -O3 -c src/main.cpp -o bin/release/main.o\nsrc/main.cpp: In function 'int main(int, const char**)':\nsrc/main.cpp:30: error: 'srand' was not declared in this scope\nmake: *** [bin/release/main.o] Error 1\nError building Frobby.\n\nreal    0m2.093s\nuser    0m1.446s\nsys     0m0.156s\nsage: An error occurred while installing frobby-0.7.6\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8515\n\n",
     "created_at": "2010-03-13T01:18:43Z",
     "labels": [
         "packages: optional",
@@ -19,7 +19,7 @@ archive/issues_008515.json:
 ```
 Assignee: tbd
 
-CC:  slelievre chapoton
+CC:  @slel @fchapoton
 
 ## Hardware & associated software
 
@@ -83,7 +83,7 @@ archive/issue_comments_076916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8515#issuecomment-76916",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_076917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8515#issuecomment-76917",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_076918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8515#issuecomment-76918",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_076919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8515#issuecomment-76919",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_076920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8515#issuecomment-76920",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_076921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8515#issuecomment-76921",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_076922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8515#issuecomment-76922",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_076923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8515#issuecomment-76923",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_076924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8515#issuecomment-76924",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

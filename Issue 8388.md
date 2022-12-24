@@ -3,7 +3,7 @@
 archive/issues_008388.json:
 ```json
 {
-    "body": "Assignee: vdelecroix\n\nCC:  sage-combinat tmonteil\n\nKeywords: pickle of a nested class\n\nThere is a pickle error with the nested class RauzyDiagram.Path in sage.combinat.iet.template\n\n\n```\nsage: p = iet.Permutation('a b c','c b a')\nsage: r = p.rauzy_diagram()\nsage: g = r.path(p, 't', 'b')\nsage: dumps(g)\nPicklingError Traceback(most recent call last)\n...\nPicklingError: Can't pickle <class 'sage.combinat.iet.labelled.Path'>: attribute lookup sage.combinat.iet.labelled.Path failed\n```\n\n\nA __metaclass__ must be defined for RauzyDiagram.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8388\n\n",
+    "body": "Assignee: @videlec\n\nCC:  sage-combinat tmonteil\n\nKeywords: pickle of a nested class\n\nThere is a pickle error with the nested class RauzyDiagram.Path in sage.combinat.iet.template\n\n\n```\nsage: p = iet.Permutation('a b c','c b a')\nsage: r = p.rauzy_diagram()\nsage: g = r.path(p, 't', 'b')\nsage: dumps(g)\nPicklingError Traceback(most recent call last)\n...\nPicklingError: Can't pickle <class 'sage.combinat.iet.labelled.Path'>: attribute lookup sage.combinat.iet.labelled.Path failed\n```\n\n\nA __metaclass__ must be defined for RauzyDiagram.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8388\n\n",
     "created_at": "2010-02-27T16:55:51Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008388.json:
     "title": "pickle the paths of Rauzy diagrams",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8388",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
-Assignee: vdelecroix
+Assignee: @videlec
 
 CC:  sage-combinat tmonteil
 
@@ -55,7 +55,7 @@ archive/issue_comments_075084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75084",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_075085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75085",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_075086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75086",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_075087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75087",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_075088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75088",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_075089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75089",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_075090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75090",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_075091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75091",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_075092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75092",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -224,16 +224,16 @@ Nathann
 archive/issue_comments_075093.json:
 ```json
 {
-    "body": "Attachment [trac_8388_pickling_path.patch](tarball://root/attachments/some-uuid/ticket8388/trac_8388_pickling_path.patch) by vdelecroix created at 2012-03-13 00:56:34\n\nDepends on ticket 8386.",
+    "body": "Attachment [trac_8388_pickling_path.patch](tarball://root/attachments/some-uuid/ticket8388/trac_8388_pickling_path.patch) by @videlec created at 2012-03-13 00:56:34\n\nDepends on ticket 8386.",
     "created_at": "2012-03-13T00:56:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75093",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_8388_pickling_path.patch](tarball://root/attachments/some-uuid/ticket8388/trac_8388_pickling_path.patch) by vdelecroix created at 2012-03-13 00:56:34
+Attachment [trac_8388_pickling_path.patch](tarball://root/attachments/some-uuid/ticket8388/trac_8388_pickling_path.patch) by @videlec created at 2012-03-13 00:56:34
 
 Depends on ticket 8386.
 
@@ -249,7 +249,7 @@ archive/issue_comments_075094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75094",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_075095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75095",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_075096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75096",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_075097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75097",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_075098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75098",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_075099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75099",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -352,16 +352,16 @@ apply trac_8388_pickling_path.v2.patch
 archive/issue_comments_075100.json:
 ```json
 {
-    "body": "Attachment [trac_8388_pickling_path.v2.patch](tarball://root/attachments/some-uuid/ticket8388/trac_8388_pickling_path.v2.patch) by chapoton created at 2013-08-29 11:11:36",
+    "body": "Attachment [trac_8388_pickling_path.v2.patch](tarball://root/attachments/some-uuid/ticket8388/trac_8388_pickling_path.v2.patch) by @fchapoton created at 2013-08-29 11:11:36",
     "created_at": "2013-08-29T11:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75100",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_8388_pickling_path.v2.patch](tarball://root/attachments/some-uuid/ticket8388/trac_8388_pickling_path.v2.patch) by chapoton created at 2013-08-29 11:11:36
+Attachment [trac_8388_pickling_path.v2.patch](tarball://root/attachments/some-uuid/ticket8388/trac_8388_pickling_path.v2.patch) by @fchapoton created at 2013-08-29 11:11:36
 
 
 
@@ -375,7 +375,7 @@ archive/issue_comments_075101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75101",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_075102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75102",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_075103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75103",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_075104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8388#issuecomment-75104",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

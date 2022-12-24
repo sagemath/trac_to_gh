@@ -3,7 +3,7 @@
 archive/issues_003531.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nBoehm GC is a prerequisite for ECL lisp and M2 (See #10)\nDownload at http://sage.math.washington.edu/home/gfurnish/spkg/boehm_gc-7.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3531\n\n",
+    "body": "Assignee: @garyfurnish\n\nBoehm GC is a prerequisite for ECL lisp and M2 (See #10)\nDownload at http://sage.math.washington.edu/home/gfurnish/spkg/boehm_gc-7.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3531\n\n",
     "created_at": "2008-06-28T23:36:39Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_003531.json:
     "title": "[With SPKG, needs review] Boehm_GC spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3531",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 Boehm GC is a prerequisite for ECL lisp and M2 (See #10)
 Download at http://sage.math.washington.edu/home/gfurnish/spkg/boehm_gc-7.1.spkg
@@ -38,7 +38,7 @@ archive/issue_comments_024907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3531#issuecomment-24907",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_024909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3531#issuecomment-24909",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_024911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3531#issuecomment-24911",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_024912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3531#issuecomment-24912",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

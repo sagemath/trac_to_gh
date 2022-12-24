@@ -14,7 +14,7 @@ archive/issues_002311.json:
     "title": "remove stupid timeout from sage-location",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2311",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2311
 archive/issue_comments_015379.json:
 ```json
 {
-    "body": "Attachment [scripts-2311.patch](tarball://root/attachments/some-uuid/ticket2311/scripts-2311.patch) by was created at 2008-02-26 04:45:41",
+    "body": "Attachment [scripts-2311.patch](tarball://root/attachments/some-uuid/ticket2311/scripts-2311.patch) by @williamstein created at 2008-02-26 04:45:41",
     "created_at": "2008-02-26T04:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2311#issuecomment-15379",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-2311.patch](tarball://root/attachments/some-uuid/ticket2311/scripts-2311.patch) by was created at 2008-02-26 04:45:41
+Attachment [scripts-2311.patch](tarball://root/attachments/some-uuid/ticket2311/scripts-2311.patch) by @williamstein created at 2008-02-26 04:45:41
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_015380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2311#issuecomment-15380",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

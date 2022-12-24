@@ -3,7 +3,7 @@
 archive/issues_001234.json:
 ```json
 {
-    "body": "Assignee: was\n\nMaybe the following is not feasible, but analytic_rank could crash smoothly.\n\n\n```\nsage: d=100032426715415089/251987961355200625\nsage: E = EllipticCurve([0, -d^3+5*d^2, 0, -8*d^5+8*d^4, 4*d^8-8*d^7+4*d^6])\nsage: F = E.minimal_model()\nsage: F.analytic_rank(algorithm='cremona')\n<type 'exceptions.RuntimeError'>: Error: '  *** elltors: precision too low in torsell.\n\nsage: F.analytic_rank(algorithm='rubinstein')\n<type 'exceptions.TypeError'>: unable to convert x (= 6.90579e+20 and is too large) to an integer\n\nsage: F.analytic_rank(algorithm='sympow')\nsympow 1.018 RELEASE  (c) Mark Watkins --- see README and COPYING for details\n**ERROR** c4 invariant is too large\n```\n\n\nFrom John Cremona: the \"cremona\" version just wraps a gp script, which\nneeds to have sufficient precision even for ellinit() to work ok here.\nUnfortunately this call will run in its own gp session, and it is not\npossible for the user to set the precision.  (I found the same while\nrunning a lot of examples through Denis Simon's gp scripts).  The\nsolution is to change the wrapper to have a precision parameter, with\nsome reasonable default for backwards compatibility, which gets passes\nthrough to gp.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1234\n\n",
+    "body": "Assignee: @williamstein\n\nMaybe the following is not feasible, but analytic_rank could crash smoothly.\n\n\n```\nsage: d=100032426715415089/251987961355200625\nsage: E = EllipticCurve([0, -d^3+5*d^2, 0, -8*d^5+8*d^4, 4*d^8-8*d^7+4*d^6])\nsage: F = E.minimal_model()\nsage: F.analytic_rank(algorithm='cremona')\n<type 'exceptions.RuntimeError'>: Error: '  *** elltors: precision too low in torsell.\n\nsage: F.analytic_rank(algorithm='rubinstein')\n<type 'exceptions.TypeError'>: unable to convert x (= 6.90579e+20 and is too large) to an integer\n\nsage: F.analytic_rank(algorithm='sympow')\nsympow 1.018 RELEASE  (c) Mark Watkins --- see README and COPYING for details\n**ERROR** c4 invariant is too large\n```\n\n\nFrom John Cremona: the \"cremona\" version just wraps a gp script, which\nneeds to have sufficient precision even for ellinit() to work ok here.\nUnfortunately this call will run in its own gp session, and it is not\npossible for the user to set the precision.  (I found the same while\nrunning a lot of examples through Denis Simon's gp scripts).  The\nsolution is to change the wrapper to have a precision parameter, with\nsome reasonable default for backwards compatibility, which gets passes\nthrough to gp.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1234\n\n",
     "created_at": "2007-11-21T14:04:25Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001234.json:
     "title": "analytic_rank crashes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1234",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Maybe the following is not feasible, but analytic_rank could crash smoothly.
 
@@ -64,7 +64,7 @@ archive/issue_comments_007692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1234#issuecomment-7692",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_007694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1234#issuecomment-7694",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_007696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1234#issuecomment-7696",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_007697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1234#issuecomment-7697",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -196,16 +196,16 @@ PS The vale of N_max would presumably be different for the different algorithms 
 archive/issue_comments_007698.json:
 ```json
 {
-    "body": "Attachment [trac_1234.patch](tarball://root/attachments/some-uuid/ticket1234/trac_1234.patch) by was created at 2009-01-22 08:20:11",
+    "body": "Attachment [trac_1234.patch](tarball://root/attachments/some-uuid/ticket1234/trac_1234.patch) by @williamstein created at 2009-01-22 08:20:11",
     "created_at": "2009-01-22T08:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1234#issuecomment-7698",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_1234.patch](tarball://root/attachments/some-uuid/ticket1234/trac_1234.patch) by was created at 2009-01-22 08:20:11
+Attachment [trac_1234.patch](tarball://root/attachments/some-uuid/ticket1234/trac_1234.patch) by @williamstein created at 2009-01-22 08:20:11
 
 
 
@@ -219,7 +219,7 @@ archive/issue_comments_007699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1234#issuecomment-7699",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_007700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1234#issuecomment-7700",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_007701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1234#issuecomment-7701",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_007702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1234#issuecomment-7702",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

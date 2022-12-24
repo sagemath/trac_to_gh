@@ -3,7 +3,7 @@
 archive/issues_000575.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nBuilding SAGE with Cygwin is absolutely definitely not supported,\nand will not work.  The only way to run SAGE on Windows, is via\nVMware (or Virtual PC or some other virtualization). \n\nI'll make a ticket for making it so that the SAGE build scrip very very\nclearly indicates that it won't work on Cygwin right at the beginning,\nto avoid such confusion in the future. \n\nNOTE: SAGE used to support Cygwin several months ago (around March\n2007), so you may have seen some old documentation about this.\n```\n\n\nThis will be easy to fix by modifying spkg/base/prereq-0* to check for the Cygwin UNAME.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/575\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nBuilding SAGE with Cygwin is absolutely definitely not supported,\nand will not work.  The only way to run SAGE on Windows, is via\nVMware (or Virtual PC or some other virtualization). \n\nI'll make a ticket for making it so that the SAGE build scrip very very\nclearly indicates that it won't work on Cygwin right at the beginning,\nto avoid such confusion in the future. \n\nNOTE: SAGE used to support Cygwin several months ago (around March\n2007), so you may have seen some old documentation about this.\n```\n\n\nThis will be easy to fix by modifying spkg/base/prereq-0* to check for the Cygwin UNAME.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/575\n\n",
     "created_at": "2007-09-03T13:53:44Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000575.json:
     "title": "make building SAGE on cygwin stop fast and clean",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/575",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -49,7 +49,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/575
 archive/issue_comments_002985.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-10-21T19:06:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/575",
     "type": "issue_comment",
@@ -58,7 +58,7 @@ archive/issue_comments_002985.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_002987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/575#issuecomment-2987",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_002988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/575#issuecomment-2988",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_002989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/575#issuecomment-2989",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

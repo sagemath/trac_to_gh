@@ -14,7 +14,7 @@ archive/issues_003550.json:
     "title": "notebook -- make saving and loading state of the notebook vastly faster and scale better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3550",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3550
 archive/issue_comments_025105.json:
 ```json
 {
-    "body": "Attachment [sage-3550-part1.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part1.patch) by was created at 2008-07-04 09:02:44\n\nfirst patch -- does everything but needs more testing and documentation",
+    "body": "Attachment [sage-3550-part1.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part1.patch) by @williamstein created at 2008-07-04 09:02:44\n\nfirst patch -- does everything but needs more testing and documentation",
     "created_at": "2008-07-04T09:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25105",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3550-part1.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part1.patch) by was created at 2008-07-04 09:02:44
+Attachment [sage-3550-part1.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part1.patch) by @williamstein created at 2008-07-04 09:02:44
 
 first patch -- does everything but needs more testing and documentation
 
@@ -59,7 +59,7 @@ archive/issue_comments_025106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25106",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_025107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25107",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,16 +108,16 @@ this should do it (modulo doctests)
 archive/issue_comments_025108.json:
 ```json
 {
-    "body": "Attachment [sage-3550-part2.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part2.patch) by was created at 2008-07-04 11:25:54",
+    "body": "Attachment [sage-3550-part2.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part2.patch) by @williamstein created at 2008-07-04 11:25:54",
     "created_at": "2008-07-04T11:25:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25108",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3550-part2.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part2.patch) by was created at 2008-07-04 11:25:54
+Attachment [sage-3550-part2.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part2.patch) by @williamstein created at 2008-07-04 11:25:54
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_025109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25109",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_025110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25110",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,16 +162,16 @@ Changing keywords from "" to "editor_wstein".
 archive/issue_comments_025111.json:
 ```json
 {
-    "body": "Attachment [sage-3550-part3.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part3.patch) by was created at 2008-07-05 17:58:13\n\nThis is now fully ready for review.",
+    "body": "Attachment [sage-3550-part3.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part3.patch) by @williamstein created at 2008-07-05 17:58:13\n\nThis is now fully ready for review.",
     "created_at": "2008-07-05T17:58:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25111",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3550-part3.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part3.patch) by was created at 2008-07-05 17:58:13
+Attachment [sage-3550-part3.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part3.patch) by @williamstein created at 2008-07-05 17:58:13
 
 This is now fully ready for review.
 

@@ -3,7 +3,7 @@
 archive/issues_001795.json:
 ```json
 {
-    "body": "Assignee: roed\n\nCC:  jason\n\nThe previous version of sage-coverage did not check cdef'd functions, and it incorrectly claimed that cpdef'd functions did not have doctests.  This patch fixes that problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1795\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @jasongrout\n\nThe previous version of sage-coverage did not check cdef'd functions, and it incorrectly claimed that cpdef'd functions did not have doctests.  This patch fixes that problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1795\n\n",
     "created_at": "2008-01-16T18:06:01Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_001795.json:
     "title": "[with-patch] Adds support for cdef'd and cpdef'd functions to sage-coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1795",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
-CC:  jason
+CC:  @jasongrout
 
 The previous version of sage-coverage did not check cdef'd functions, and it incorrectly claimed that cpdef'd functions did not have doctests.  This patch fixes that problem.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1795
 archive/issue_comments_011362.json:
 ```json
 {
-    "body": "Attachment [cdef-coverage.patch](tarball://root/attachments/some-uuid/ticket1795/cdef-coverage.patch) by roed created at 2008-01-16 18:06:42\n\nAdds cdef, cpdef support to sage-coverage",
+    "body": "Attachment [cdef-coverage.patch](tarball://root/attachments/some-uuid/ticket1795/cdef-coverage.patch) by @roed314 created at 2008-01-16 18:06:42\n\nAdds cdef, cpdef support to sage-coverage",
     "created_at": "2008-01-16T18:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1795#issuecomment-11362",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [cdef-coverage.patch](tarball://root/attachments/some-uuid/ticket1795/cdef-coverage.patch) by roed created at 2008-01-16 18:06:42
+Attachment [cdef-coverage.patch](tarball://root/attachments/some-uuid/ticket1795/cdef-coverage.patch) by @roed314 created at 2008-01-16 18:06:42
 
 Adds cdef, cpdef support to sage-coverage
 
@@ -59,7 +59,7 @@ archive/issue_comments_011363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1795#issuecomment-11363",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_011364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1795#issuecomment-11364",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -90,16 +90,16 @@ A minor fix to how Python classes are printed
 archive/issue_comments_011365.json:
 ```json
 {
-    "body": "Attachment [class-coverage.patch](tarball://root/attachments/some-uuid/ticket1795/class-coverage.patch) by roed created at 2008-01-16 19:31:14\n\nIt gives reasonable output on sage -coverageall and gives reasonable output on a few selected files (integer.pyx, padic_capped_relative_element.pyx, graph.py).",
+    "body": "Attachment [class-coverage.patch](tarball://root/attachments/some-uuid/ticket1795/class-coverage.patch) by @roed314 created at 2008-01-16 19:31:14\n\nIt gives reasonable output on sage -coverageall and gives reasonable output on a few selected files (integer.pyx, padic_capped_relative_element.pyx, graph.py).",
     "created_at": "2008-01-16T19:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1795#issuecomment-11365",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [class-coverage.patch](tarball://root/attachments/some-uuid/ticket1795/class-coverage.patch) by roed created at 2008-01-16 19:31:14
+Attachment [class-coverage.patch](tarball://root/attachments/some-uuid/ticket1795/class-coverage.patch) by @roed314 created at 2008-01-16 19:31:14
 
 It gives reasonable output on sage -coverageall and gives reasonable output on a few selected files (integer.pyx, padic_capped_relative_element.pyx, graph.py).
 
@@ -115,7 +115,7 @@ archive/issue_comments_011366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1795#issuecomment-11366",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -128,16 +128,16 @@ Changing status from new to assigned.
 archive/issue_comments_011367.json:
 ```json
 {
-    "body": "Changing assignee from roed to mhansen.",
+    "body": "Changing assignee from @roed314 to @mwhansen.",
     "created_at": "2008-09-19T07:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1795#issuecomment-11367",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from roed to mhansen.
+Changing assignee from @roed314 to @mwhansen.
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_011368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1795#issuecomment-11368",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_011371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1795#issuecomment-11371",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

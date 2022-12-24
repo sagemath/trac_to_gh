@@ -3,7 +3,7 @@
 archive/issues_006595.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was david.kirkby@onetel.net\n\nKeywords: scons SUNWspro SunStudio\n\nThis failure was first observed in Sage 4.1.1.alpha0.\n\nIf the Sun Studio compiler suite is installed, the C++ compiler will be at /opt/SUNWspro/bin/CC. This causes the failure below. note in particular the line, which shows the Sun C++ compiler being used. But only a line or two before, the GNU C compiler was used. Mixing object files between the two compilers is unlikely to work. \n\nIt might be worth taking note of the error though. The Sun compiler is a lot more fussy than g++, so probably picks up bad code that g++ will accept. \n\n\n```\n/opt/SUNWspro/bin/CC -o src/so_ZZ_pylong.o -c -KPIC -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/ZZ_pylong.cpp\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n\"src/ZZ_pylong.cpp\", line 47: Error: \"ZZ_set_pylong(NTL::ZZ&, _object*)\" is expected to return a value.\n1 Error(s) detected.\n\n```\n\nHere's the fuller output. I believe this is a SCons issue again. SCons on Solaris looks for /opt/SUNWspro/bin/CC and will use that sometimes. PolyBoRi did suffer this problem, but Alexander Dreyer has sorted that out.\n\n\n```\nDeleting the scons target.\nRemoved src/so_convert.o\nRemoved src/so_interrupt.o\nRemoved src/so_mpn_pylong.o\nRemoved src/so_mpz_pylong.o\nRemoved src/so_mpz_longlong.o\nRemoved src/so_stdsage.o\nRemoved src/so_gmp_globals.o\nscons: Reading SConscript files ...\nscons: done reading SConscript files.\nscons: Cleaning targets ...\nscons: done cleaning targets.\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/so_convert.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/convert.c\ngcc -o src/so_interrupt.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/interrupt.c\ngcc -o src/so_mpn_pylong.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/mpn_pylong.c\ngcc -o src/so_mpz_pylong.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/mpz_pylong.c\ngcc -o src/so_mpz_longlong.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/mpz_longlong.c\ngcc -o src/so_stdsage.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/stdsage.c\ngcc -o src/so_gmp_globals.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/gmp_globals.c\n/opt/SUNWspro/bin/CC -o src/so_ZZ_pylong.o -c -KPIC -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/ZZ_pylong.cpp\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n\"src/ZZ_pylong.cpp\", line 47: Error: \"ZZ_set_pylong(NTL::ZZ&, _object*)\" is expected to return a value.\n1 Error(s) detected.\nscons: *** [src/so_ZZ_pylong.o] Error 1\nERROR: There was an error building c_lib.\n\n\nreal    0m39.279s\nuser    0m33.652s\nsys     0m4.841s\nError building new version of SAGE.\nYou might try typing 'sage -ba' or write to sage-support with as much information as possible.\n\nreal    2m21.275s\nuser    2m2.010s\nsys     0m16.789s\nsage: An error occurred while installing sage-4.1.1.alpha0\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6595\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein david.kirkby@onetel.net\n\nKeywords: scons SUNWspro SunStudio\n\nThis failure was first observed in Sage 4.1.1.alpha0.\n\nIf the Sun Studio compiler suite is installed, the C++ compiler will be at /opt/SUNWspro/bin/CC. This causes the failure below. note in particular the line, which shows the Sun C++ compiler being used. But only a line or two before, the GNU C compiler was used. Mixing object files between the two compilers is unlikely to work. \n\nIt might be worth taking note of the error though. The Sun compiler is a lot more fussy than g++, so probably picks up bad code that g++ will accept. \n\n\n```\n/opt/SUNWspro/bin/CC -o src/so_ZZ_pylong.o -c -KPIC -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/ZZ_pylong.cpp\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n\"src/ZZ_pylong.cpp\", line 47: Error: \"ZZ_set_pylong(NTL::ZZ&, _object*)\" is expected to return a value.\n1 Error(s) detected.\n\n```\n\nHere's the fuller output. I believe this is a SCons issue again. SCons on Solaris looks for /opt/SUNWspro/bin/CC and will use that sometimes. PolyBoRi did suffer this problem, but Alexander Dreyer has sorted that out.\n\n\n```\nDeleting the scons target.\nRemoved src/so_convert.o\nRemoved src/so_interrupt.o\nRemoved src/so_mpn_pylong.o\nRemoved src/so_mpz_pylong.o\nRemoved src/so_mpz_longlong.o\nRemoved src/so_stdsage.o\nRemoved src/so_gmp_globals.o\nscons: Reading SConscript files ...\nscons: done reading SConscript files.\nscons: Cleaning targets ...\nscons: done cleaning targets.\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/so_convert.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/convert.c\ngcc -o src/so_interrupt.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/interrupt.c\ngcc -o src/so_mpn_pylong.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/mpn_pylong.c\ngcc -o src/so_mpz_pylong.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/mpz_pylong.c\ngcc -o src/so_mpz_longlong.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/mpz_longlong.c\ngcc -o src/so_stdsage.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/stdsage.c\ngcc -o src/so_gmp_globals.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/gmp_globals.c\n/opt/SUNWspro/bin/CC -o src/so_ZZ_pylong.o -c -KPIC -fPIC -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.1.1.alpha0/local/include/NTL -Iinclude src/ZZ_pylong.cpp\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n\"src/ZZ_pylong.cpp\", line 47: Error: \"ZZ_set_pylong(NTL::ZZ&, _object*)\" is expected to return a value.\n1 Error(s) detected.\nscons: *** [src/so_ZZ_pylong.o] Error 1\nERROR: There was an error building c_lib.\n\n\nreal    0m39.279s\nuser    0m33.652s\nsys     0m4.841s\nError building new version of SAGE.\nYou might try typing 'sage -ba' or write to sage-support with as much information as possible.\n\nreal    2m21.275s\nuser    2m2.010s\nsys     0m16.789s\nsage: An error occurred while installing sage-4.1.1.alpha0\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6595\n\n",
     "created_at": "2009-07-23T07:27:40Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_006595.json:
 ```
 Assignee: tbd
 
-CC:  was david.kirkby@onetel.net
+CC:  @williamstein david.kirkby@onetel.net
 
 Keywords: scons SUNWspro SunStudio
 
@@ -164,7 +164,7 @@ archive/issue_comments_053969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53969",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_053972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53972",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_053973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53973",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -300,16 +300,16 @@ Wow.  I fixed the first bug that the Sun compiler finds (which doesn't matter), 
 archive/issue_comments_053974.json:
 ```json
 {
-    "body": "Attachment [sagelib_6595.patch](tarball://root/attachments/some-uuid/ticket6595/sagelib_6595.patch) by was created at 2009-12-23 01:24:50\n\nThis one patch (sagelib_6595.patch) makes it so at least c_lib builds fine using CC... by fixing at least two potentially *major* bugs in c_lib.  Here's to porting/portability/multiple compilers/not ignoring warnings, etc!  And to Kirkby's persistence.",
+    "body": "Attachment [sagelib_6595.patch](tarball://root/attachments/some-uuid/ticket6595/sagelib_6595.patch) by @williamstein created at 2009-12-23 01:24:50\n\nThis one patch (sagelib_6595.patch) makes it so at least c_lib builds fine using CC... by fixing at least two potentially *major* bugs in c_lib.  Here's to porting/portability/multiple compilers/not ignoring warnings, etc!  And to Kirkby's persistence.",
     "created_at": "2009-12-23T01:24:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53974",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagelib_6595.patch](tarball://root/attachments/some-uuid/ticket6595/sagelib_6595.patch) by was created at 2009-12-23 01:24:50
+Attachment [sagelib_6595.patch](tarball://root/attachments/some-uuid/ticket6595/sagelib_6595.patch) by @williamstein created at 2009-12-23 01:24:50
 
 This one patch (sagelib_6595.patch) makes it so at least c_lib builds fine using CC... by fixing at least two potentially *major* bugs in c_lib.  Here's to porting/portability/multiple compilers/not ignoring warnings, etc!  And to Kirkby's persistence.
 
@@ -325,7 +325,7 @@ archive/issue_comments_053975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53975",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -401,7 +401,7 @@ archive/issue_comments_053977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53977",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_053980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53980",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_053981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53981",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_053982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53982",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_053983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53983",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_053984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53984",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_053986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53986",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -732,7 +732,7 @@ archive/issue_comments_053992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53992",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -750,7 +750,7 @@ archive/issue_comments_053993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6595",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6595#issuecomment-53993",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

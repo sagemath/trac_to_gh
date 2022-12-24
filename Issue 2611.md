@@ -3,7 +3,7 @@
 archive/issues_002611.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin\n\nWith the attached patch this works:\n\n```\nsage: sr = mq.SR(gf2=True)\nsage: sr\nSR(1,1,1,4)\n\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names(),R.term_order())\nsage: F = [B(f) for f in F]\nsage: F = mq.MPolynomialSystem(B,F)\nsage: F\nPolynomial System with 56 Polynomials in 20 Variables\nsage: A,v = F.coefficient_matrix() # this relies on monomial_coefficient\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2611\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nWith the attached patch this works:\n\n```\nsage: sr = mq.SR(gf2=True)\nsage: sr\nSR(1,1,1,4)\n\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names(),R.term_order())\nsage: F = [B(f) for f in F]\nsage: F = mq.MPolynomialSystem(B,F)\nsage: F\nPolynomial System with 56 Polynomials in 20 Variables\nsage: A,v = F.coefficient_matrix() # this relies on monomial_coefficient\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2611\n\n",
     "created_at": "2008-03-20T11:53:32Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_002611.json:
     "title": "[with patch, needs review] add monomial_coefficent to boolean polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2611",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin
+CC:  @burcin
 
 With the attached patch this works:
 
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2611
 archive/issue_comments_017920.json:
 ```json
 {
-    "body": "Attachment [pb_monomial_coefficient.patch](tarball://root/attachments/some-uuid/ticket2611/pb_monomial_coefficient.patch) by malb created at 2008-03-20 11:53:41",
+    "body": "Attachment [pb_monomial_coefficient.patch](tarball://root/attachments/some-uuid/ticket2611/pb_monomial_coefficient.patch) by @malb created at 2008-03-20 11:53:41",
     "created_at": "2008-03-20T11:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2611#issuecomment-17920",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [pb_monomial_coefficient.patch](tarball://root/attachments/some-uuid/ticket2611/pb_monomial_coefficient.patch) by malb created at 2008-03-20 11:53:41
+Attachment [pb_monomial_coefficient.patch](tarball://root/attachments/some-uuid/ticket2611/pb_monomial_coefficient.patch) by @malb created at 2008-03-20 11:53:41
 
 
 
@@ -101,16 +101,16 @@ I also notice that we don't have a coefficient method like the other mpoly rings
 archive/issue_comments_017922.json:
 ```json
 {
-    "body": "Attachment [pb_monomial_coefficient_types.patch](tarball://root/attachments/some-uuid/ticket2611/pb_monomial_coefficient_types.patch) by malb created at 2008-03-20 13:02:46\n\nThe attached patch fixes the issue with different types.",
+    "body": "Attachment [pb_monomial_coefficient_types.patch](tarball://root/attachments/some-uuid/ticket2611/pb_monomial_coefficient_types.patch) by @malb created at 2008-03-20 13:02:46\n\nThe attached patch fixes the issue with different types.",
     "created_at": "2008-03-20T13:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2611#issuecomment-17922",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [pb_monomial_coefficient_types.patch](tarball://root/attachments/some-uuid/ticket2611/pb_monomial_coefficient_types.patch) by malb created at 2008-03-20 13:02:46
+Attachment [pb_monomial_coefficient_types.patch](tarball://root/attachments/some-uuid/ticket2611/pb_monomial_coefficient_types.patch) by @malb created at 2008-03-20 13:02:46
 
 The attached patch fixes the issue with different types.
 
@@ -126,7 +126,7 @@ archive/issue_comments_017923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2611#issuecomment-17923",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

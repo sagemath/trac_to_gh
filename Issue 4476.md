@@ -14,7 +14,7 @@ archive/issues_004476.json:
     "title": "[with patch, spkg; needs review] Update to Cython 0.10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4476",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4476
 archive/issue_comments_033056.json:
 ```json
 {
-    "body": "Attachment [4476-cython-locals.patch](tarball://root/attachments/some-uuid/ticket4476/4476-cython-locals.patch) by robertwb created at 2008-11-09 06:02:11",
+    "body": "Attachment [4476-cython-locals.patch](tarball://root/attachments/some-uuid/ticket4476/4476-cython-locals.patch) by @robertwb created at 2008-11-09 06:02:11",
     "created_at": "2008-11-09T06:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4476#issuecomment-33056",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4476-cython-locals.patch](tarball://root/attachments/some-uuid/ticket4476/4476-cython-locals.patch) by robertwb created at 2008-11-09 06:02:11
+Attachment [4476-cython-locals.patch](tarball://root/attachments/some-uuid/ticket4476/4476-cython-locals.patch) by @robertwb created at 2008-11-09 06:02:11
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_033057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4476#issuecomment-33057",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

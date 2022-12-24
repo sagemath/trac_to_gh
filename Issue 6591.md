@@ -3,7 +3,7 @@
 archive/issues_006591.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  sage-combinat rbeezer fidelbarrera jhpalmieri\n\nThis small patch implements:\n\n```\nsage: view(object, viewer = \"pdf\")\n```\n\nwhich works even under the notebook.\n\nTypical use cases:\n\n* you prefer your pdf browser to your dvi browser\n* you want to view latex snippets which are not displayed well in dvi viewers or jsmath (e.g. tikzpicture) \n\nPotential extensions: view(object, viewer='png'), view(object, viewer='html') \n\nThis partially reinstates #5920 which got a positive review and was said to be merged and closed, but apparently later discarded upon the merge of the overlapping #6012 (pdflatex option)\n\n\nThis patch also adds a tightpage option, which uses the preview package to create a document with each displaymath on a single page whose size is exactly that of the displaymath. This is for example useful for very large pictures (graphs!) generated with tikz.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6591\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat @rbeezer fidelbarrera @jhpalmieri\n\nThis small patch implements:\n\n```\nsage: view(object, viewer = \"pdf\")\n```\n\nwhich works even under the notebook.\n\nTypical use cases:\n\n* you prefer your pdf browser to your dvi browser\n* you want to view latex snippets which are not displayed well in dvi viewers or jsmath (e.g. tikzpicture) \n\nPotential extensions: view(object, viewer='png'), view(object, viewer='html') \n\nThis partially reinstates #5920 which got a positive review and was said to be merged and closed, but apparently later discarded upon the merge of the overlapping #6012 (pdflatex option)\n\n\nThis patch also adds a tightpage option, which uses the preview package to create a document with each displaymath on a single page whose size is exactly that of the displaymath. This is for example useful for very large pictures (graphs!) generated with tikz.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6591\n\n",
     "created_at": "2009-07-22T14:38:27Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_006591.json:
     "title": "Implement view(object, viewer='pdf') and view(object, tightpage = True)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6591",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  sage-combinat rbeezer fidelbarrera jhpalmieri
+CC:  sage-combinat @rbeezer fidelbarrera @jhpalmieri
 
 This small patch implements:
 
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6591
 archive/issue_comments_053937.json:
 ```json
 {
-    "body": "Changing assignee from was to nthiery.",
+    "body": "Changing assignee from @williamstein to @nthiery.",
     "created_at": "2009-07-22T14:40:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6591#issuecomment-53937",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Changing assignee from was to nthiery.
+Changing assignee from @williamstein to @nthiery.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_053938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6591#issuecomment-53938",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_053939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6591#issuecomment-53939",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -108,16 +108,16 @@ I have no idea how to doctest this, by the way...
 archive/issue_comments_053940.json:
 ```json
 {
-    "body": "Attachment [trac_6591-doc.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591-doc.patch) by jhpalmieri created at 2009-07-22 21:48:49\n\napply on top of the other patch",
+    "body": "Attachment [trac_6591-doc.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591-doc.patch) by @jhpalmieri created at 2009-07-22 21:48:49\n\napply on top of the other patch",
     "created_at": "2009-07-22T21:48:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6591#issuecomment-53940",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6591-doc.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591-doc.patch) by jhpalmieri created at 2009-07-22 21:48:49
+Attachment [trac_6591-doc.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591-doc.patch) by @jhpalmieri created at 2009-07-22 21:48:49
 
 apply on top of the other patch
 
@@ -133,7 +133,7 @@ archive/issue_comments_053941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6591#issuecomment-53941",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_053942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6591#issuecomment-53942",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_053943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6591#issuecomment-53943",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -190,16 +190,16 @@ Apply only this one (it includes the doc patch)
 archive/issue_comments_053944.json:
 ```json
 {
-    "body": "Attachment [trac_6591_view_viewer_tightpage-nt.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591_view_viewer_tightpage-nt.patch) by jhpalmieri created at 2009-07-23 23:49:33\n\napply on top of the other patch",
+    "body": "Attachment [trac_6591_view_viewer_tightpage-nt.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591_view_viewer_tightpage-nt.patch) by @jhpalmieri created at 2009-07-23 23:49:33\n\napply on top of the other patch",
     "created_at": "2009-07-23T23:49:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6591#issuecomment-53944",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6591_view_viewer_tightpage-nt.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591_view_viewer_tightpage-nt.patch) by jhpalmieri created at 2009-07-23 23:49:33
+Attachment [trac_6591_view_viewer_tightpage-nt.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591_view_viewer_tightpage-nt.patch) by @jhpalmieri created at 2009-07-23 23:49:33
 
 apply on top of the other patch
 
@@ -210,16 +210,16 @@ apply on top of the other patch
 archive/issue_comments_053945.json:
 ```json
 {
-    "body": "Attachment [trac_6591-doc2.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591-doc2.patch) by jhpalmieri created at 2009-07-23 23:53:01\n\nPositive review.  A few very minor doc fixes added (for the change from `\\LaTeX` to `LaTeX`, it seems that jsMath doesn't know about this command, so it doesn't look good in the notebook with #5653 applied).\n\nApply patches trac_6591_view_viewer_tightpage-nt.patch and trac_6591-doc2.patch.\n\nI think it's fine to leave the description of notebook mode second; it would take actual thought to change it at this point.  When I worked on this docstring a while ago, my feeling was that since most of the options are ignored in notebook mode, command-line mode should come first.",
+    "body": "Attachment [trac_6591-doc2.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591-doc2.patch) by @jhpalmieri created at 2009-07-23 23:53:01\n\nPositive review.  A few very minor doc fixes added (for the change from `\\LaTeX` to `LaTeX`, it seems that jsMath doesn't know about this command, so it doesn't look good in the notebook with #5653 applied).\n\nApply patches trac_6591_view_viewer_tightpage-nt.patch and trac_6591-doc2.patch.\n\nI think it's fine to leave the description of notebook mode second; it would take actual thought to change it at this point.  When I worked on this docstring a while ago, my feeling was that since most of the options are ignored in notebook mode, command-line mode should come first.",
     "created_at": "2009-07-23T23:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6591#issuecomment-53945",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6591-doc2.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591-doc2.patch) by jhpalmieri created at 2009-07-23 23:53:01
+Attachment [trac_6591-doc2.patch](tarball://root/attachments/some-uuid/ticket6591/trac_6591-doc2.patch) by @jhpalmieri created at 2009-07-23 23:53:01
 
 Positive review.  A few very minor doc fixes added (for the change from `\LaTeX` to `LaTeX`, it seems that jsMath doesn't know about this command, so it doesn't look good in the notebook with #5653 applied).
 
@@ -239,7 +239,7 @@ archive/issue_comments_053946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6591#issuecomment-53946",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006857.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nReported by Chris Godsil\n\nIssue created by migration from https://trac.sagemath.org/ticket/6857\n\n",
+    "body": "Assignee: @rlmill\n\nReported by Chris Godsil\n\nIssue created by migration from https://trac.sagemath.org/ticket/6857\n\n",
     "created_at": "2009-09-02T01:00:23Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_006857.json:
     "title": "[with patch, needs review] in automorphism_group, orbits=True does not translate vertices back",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6857",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Reported by Chris Godsil
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6857
 archive/issue_comments_056552.json:
 ```json
 {
-    "body": "Attachment [trac_6857.patch](tarball://root/attachments/some-uuid/ticket6857/trac_6857.patch) by rlm created at 2009-09-02 01:02:09",
+    "body": "Attachment [trac_6857.patch](tarball://root/attachments/some-uuid/ticket6857/trac_6857.patch) by @rlmill created at 2009-09-02 01:02:09",
     "created_at": "2009-09-02T01:02:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6857#issuecomment-56552",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6857.patch](tarball://root/attachments/some-uuid/ticket6857/trac_6857.patch) by rlm created at 2009-09-02 01:02:09
+Attachment [trac_6857.patch](tarball://root/attachments/some-uuid/ticket6857/trac_6857.patch) by @rlmill created at 2009-09-02 01:02:09
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_056553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6857#issuecomment-56553",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

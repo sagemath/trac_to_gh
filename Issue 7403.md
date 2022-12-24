@@ -3,7 +3,7 @@
 archive/issues_007403.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: finite enumerated sets\n\nThis patch adds sage.sets.finite_enumerated_set.FiniteEnumeratedSet\n\ndepends on #5891\n\nIssue created by migration from https://trac.sagemath.org/ticket/7403\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: finite enumerated sets\n\nThis patch adds sage.sets.finite_enumerated_set.FiniteEnumeratedSet\n\ndepends on #5891\n\nIssue created by migration from https://trac.sagemath.org/ticket/7403\n\n",
     "created_at": "2009-11-06T15:56:12Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_007403.json:
     "title": "adds FiniteEnumeratedSet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7403",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -43,7 +43,7 @@ archive/issue_comments_062289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7403#issuecomment-62289",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_062290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7403#issuecomment-62290",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -74,16 +74,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_062291.json:
 ```json
 {
-    "body": "Attachment [trac_7403-finite-enumeratedsets-fh.2.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.2.patch) by nthiery created at 2009-11-06 16:17:53",
+    "body": "Attachment [trac_7403-finite-enumeratedsets-fh.2.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.2.patch) by @nthiery created at 2009-11-06 16:17:53",
     "created_at": "2009-11-06T16:17:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7403#issuecomment-62291",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7403-finite-enumeratedsets-fh.2.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.2.patch) by nthiery created at 2009-11-06 16:17:53
+Attachment [trac_7403-finite-enumeratedsets-fh.2.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.2.patch) by @nthiery created at 2009-11-06 16:17:53
 
 
 
@@ -92,16 +92,16 @@ Attachment [trac_7403-finite-enumeratedsets-fh.2.patch](tarball://root/attachmen
 archive/issue_comments_062292.json:
 ```json
 {
-    "body": "Attachment [trac_7403-finite-enumeratedsets-fh.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.patch) by nthiery created at 2009-11-06 16:18:51\n\nApply only this one (ignore the next one)",
+    "body": "Attachment [trac_7403-finite-enumeratedsets-fh.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.patch) by @nthiery created at 2009-11-06 16:18:51\n\nApply only this one (ignore the next one)",
     "created_at": "2009-11-06T16:18:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7403#issuecomment-62292",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7403-finite-enumeratedsets-fh.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.patch) by nthiery created at 2009-11-06 16:18:51
+Attachment [trac_7403-finite-enumeratedsets-fh.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.patch) by @nthiery created at 2009-11-06 16:18:51
 
 Apply only this one (ignore the next one)
 
@@ -117,7 +117,7 @@ archive/issue_comments_062293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7403#issuecomment-62293",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_062294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7403#issuecomment-62294",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -179,16 +179,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_062295.json:
 ```json
 {
-    "body": "Attachment [trac_7403-finite-enumeratedsets-fh.3.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.3.patch) by hivert created at 2009-11-09 07:55:54\n\nPlease Nicolas (or anyone else re-view the small change. \n\nOnly trac_7403-finite-enumeratedsets-fh.3.patch should be applied on top of #5891\n\nCheers,\n\nFlorent",
+    "body": "Attachment [trac_7403-finite-enumeratedsets-fh.3.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.3.patch) by @hivert created at 2009-11-09 07:55:54\n\nPlease Nicolas (or anyone else re-view the small change. \n\nOnly trac_7403-finite-enumeratedsets-fh.3.patch should be applied on top of #5891\n\nCheers,\n\nFlorent",
     "created_at": "2009-11-09T07:55:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7403#issuecomment-62295",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7403-finite-enumeratedsets-fh.3.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.3.patch) by hivert created at 2009-11-09 07:55:54
+Attachment [trac_7403-finite-enumeratedsets-fh.3.patch](tarball://root/attachments/some-uuid/ticket7403/trac_7403-finite-enumeratedsets-fh.3.patch) by @hivert created at 2009-11-09 07:55:54
 
 Please Nicolas (or anyone else re-view the small change. 
 
@@ -210,7 +210,7 @@ archive/issue_comments_062296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7403#issuecomment-62296",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_062297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7403#issuecomment-62297",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -241,16 +241,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_062298.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to hivert.",
+    "body": "Changing assignee from @mwhansen to @hivert.",
     "created_at": "2009-11-13T15:01:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7403#issuecomment-62298",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from mhansen to hivert.
+Changing assignee from @mwhansen to @hivert.
 
 
 
@@ -264,7 +264,7 @@ archive/issue_comments_062299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7403#issuecomment-62299",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007759.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  was dimpase\n\nSince sage-4.3.rc0 should build on Solaris, I think we need a README file. But I agree with William's suggestion some time ago, that this is a link to a Wiki. So the attached README.Solaris basically tells people where to get information on building Sage on Solaris. \n\nI'll update the Wili regularly. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7759\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @williamstein @dimpase\n\nSince sage-4.3.rc0 should build on Solaris, I think we need a README file. But I agree with William's suggestion some time ago, that this is a link to a Wiki. So the attached README.Solaris basically tells people where to get information on building Sage on Solaris. \n\nI'll update the Wili regularly. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7759\n\n",
     "created_at": "2009-12-24T10:20:46Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_007759.json:
 ```
 Assignee: drkirkby
 
-CC:  was dimpase
+CC:  @williamstein @dimpase
 
 Since sage-4.3.rc0 should build on Solaris, I think we need a README file. But I agree with William's suggestion some time ago, that this is a link to a Wiki. So the attached README.Solaris basically tells people where to get information on building Sage on Solaris. 
 
@@ -79,7 +79,7 @@ archive/issue_comments_066814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7759#issuecomment-66814",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_066815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7759#issuecomment-66815",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_066816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7759#issuecomment-66816",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_066817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7759#issuecomment-66817",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_066818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7759#issuecomment-66818",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

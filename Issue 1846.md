@@ -3,7 +3,7 @@
 archive/issues_001846.json:
 ```json
 {
-    "body": "Assignee: was\n\nConsider\n\n```\nlog(a*e^(-a*x-b)).simplify_exp()\n```\n\n\nThis gets expanded correctly, however\n\n\n```\nlog(a*e^(-a*x-b)/(1+exp(-a*x-b))^2 ).simplify_exp()\n```\n\nappears to lose the minus signs on ax and b.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1846\n\n",
+    "body": "Assignee: @williamstein\n\nConsider\n\n```\nlog(a*e^(-a*x-b)).simplify_exp()\n```\n\n\nThis gets expanded correctly, however\n\n\n```\nlog(a*e^(-a*x-b)/(1+exp(-a*x-b))^2 ).simplify_exp()\n```\n\nappears to lose the minus signs on ax and b.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1846\n\n",
     "created_at": "2008-01-19T09:43:52Z",
     "labels": [
         "calculus",
@@ -17,7 +17,7 @@ archive/issues_001846.json:
     "user": "jkantor"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Consider
 
@@ -54,7 +54,7 @@ archive/issue_comments_011687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1846#issuecomment-11687",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_011688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1846#issuecomment-11688",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

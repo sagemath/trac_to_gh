@@ -3,7 +3,7 @@
 archive/issues_001278.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee emails on sage-devel for details.   I'll post specific notes about what has to be done below.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1278\n\n",
+    "body": "Assignee: @williamstein\n\nSee emails on sage-devel for details.   I'll post specific notes about what has to be done below.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1278\n\n",
     "created_at": "2007-11-26T06:47:31Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001278.json:
     "title": "make R an optional Sage package that builds on everything (in prep for making it non-optional)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1278",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See emails on sage-devel for details.   I'll post specific notes about what has to be done below.
 
@@ -37,7 +37,7 @@ archive/issue_comments_008012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1278#issuecomment-8012",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008404.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis patch is a linear program to compute a H minor of a graph... I hope you will like it ! :-)\n\nWe say that a graph `G` has a `H`-minor (or that it has a graph isomorphic to `H` as a minor), if for all `h\\in H`, there exist disjoint sets `S_h \\subseteq V(G)` such that once the vertices of each `S_h` have been merged to create a new graph `G'`, this new graph contains `H` as a subgraph.\n\nFor more information of minor theory, see http://en.wikipedia.org/wiki/Minor_(graph_theory)\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8404\n\n",
+    "body": "Assignee: @rlmill\n\nThis patch is a linear program to compute a H minor of a graph... I hope you will like it ! :-)\n\nWe say that a graph `G` has a `H`-minor (or that it has a graph isomorphic to `H` as a minor), if for all `h\\in H`, there exist disjoint sets `S_h \\subseteq V(G)` such that once the vertices of each `S_h` have been merged to create a new graph `G'`, this new graph contains `H` as a subgraph.\n\nFor more information of minor theory, see http://en.wikipedia.org/wiki/Minor_(graph_theory)\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8404\n\n",
     "created_at": "2010-02-28T18:45:33Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_008404.json:
     "title": "Computing a H-minor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8404",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This patch is a linear program to compute a H minor of a graph... I hope you will like it ! :-)
 
@@ -44,7 +44,7 @@ archive/issue_comments_075272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75272",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_075273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75273",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_075274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75274",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_075275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75275",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_075276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75276",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_075277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75277",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_075278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75278",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_075279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75279",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -218,16 +218,16 @@ Nathann
 archive/issue_comments_075280.json:
 ```json
 {
-    "body": "Changing assignee from rlm to ncohen.",
+    "body": "Changing assignee from @rlmill to @nathanncohen.",
     "created_at": "2010-03-04T14:31:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75280",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Changing assignee from rlm to ncohen.
+Changing assignee from @rlmill to @nathanncohen.
 
 
 
@@ -236,16 +236,16 @@ Changing assignee from rlm to ncohen.
 archive/issue_comments_075281.json:
 ```json
 {
-    "body": "Changing assignee from ncohen to rlm.",
+    "body": "Changing assignee from @nathanncohen to @rlmill.",
     "created_at": "2010-03-04T14:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75281",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Changing assignee from ncohen to rlm.
+Changing assignee from @nathanncohen to @rlmill.
 
 
 
@@ -259,7 +259,7 @@ archive/issue_comments_075282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75282",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_075283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75283",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_075284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75284",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_075285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75285",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_075286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75286",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_075287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75287",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_075288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75288",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_075289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75289",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_075290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75290",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -500,7 +500,7 @@ archive/issue_comments_075291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75291",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -524,7 +524,7 @@ archive/issue_comments_075292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75292",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -551,7 +551,7 @@ archive/issue_comments_075293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75293",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -585,7 +585,7 @@ archive/issue_comments_075294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75294",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_075295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75295",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_075296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75296",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -658,7 +658,7 @@ archive/issue_comments_075297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75297",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -682,7 +682,7 @@ archive/issue_comments_075298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75298",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -727,7 +727,7 @@ archive/issue_comments_075299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75299",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -746,16 +746,16 @@ Nathann
 archive/issue_comments_075300.json:
 ```json
 {
-    "body": "Attachment [trac_8404.patch](tarball://root/attachments/some-uuid/ticket8404/trac_8404.patch) by dimpase created at 2010-03-09 12:03:52\n\nReplying to [comment:24 ncohen]:\n> The difference being that I am not your student, nor do I have any intention of standing your rudeness and the way you give me orders for very long.\n> \n\nPlease point me out to a place where I was rude to you.\nI apologize in advance, if you like, anyway.\n\nBy the way, I am considerably older than you, so please also forgive me slipping\ninto patronizing.\n\n> I write these patches, even though they require *a lot* of time, because I think people may be interested in them. If you are not (you had the kindness to mention earlier that it should be thrown away as useless), I do not need you here.\n> \n\nI just want your, and others, patches to be useful to people, this is all.\nI never said that your work should be thrown away, regardless. I said it should be thrown away if it does not work as advertised, and I asked you to provide few more examples to demonstrate the usefulness of them. This is downright normal reviewing process, believe me. \n\nIn fact, I am very patient with you. Many would have said \"meshugene genz, meshugene grivn\", and stopped dealing with you and your patches all together.  \n\nAnd this is exactly the point when I wondered aloud whether it would be better\nto have anonymous reviewers. :-)\n\n> This is the last time I edit the patch, I can not afford to update it each time you change your mind about what needs to be done.\n>\n\nIt's not that I change my mind, that is I see a way to improve it. It's normal process of work. I am only human after all.\n\nDima   \n\n> Nathann",
+    "body": "Attachment [trac_8404.patch](tarball://root/attachments/some-uuid/ticket8404/trac_8404.patch) by @dimpase created at 2010-03-09 12:03:52\n\nReplying to [comment:24 ncohen]:\n> The difference being that I am not your student, nor do I have any intention of standing your rudeness and the way you give me orders for very long.\n> \n\nPlease point me out to a place where I was rude to you.\nI apologize in advance, if you like, anyway.\n\nBy the way, I am considerably older than you, so please also forgive me slipping\ninto patronizing.\n\n> I write these patches, even though they require *a lot* of time, because I think people may be interested in them. If you are not (you had the kindness to mention earlier that it should be thrown away as useless), I do not need you here.\n> \n\nI just want your, and others, patches to be useful to people, this is all.\nI never said that your work should be thrown away, regardless. I said it should be thrown away if it does not work as advertised, and I asked you to provide few more examples to demonstrate the usefulness of them. This is downright normal reviewing process, believe me. \n\nIn fact, I am very patient with you. Many would have said \"meshugene genz, meshugene grivn\", and stopped dealing with you and your patches all together.  \n\nAnd this is exactly the point when I wondered aloud whether it would be better\nto have anonymous reviewers. :-)\n\n> This is the last time I edit the patch, I can not afford to update it each time you change your mind about what needs to be done.\n>\n\nIt's not that I change my mind, that is I see a way to improve it. It's normal process of work. I am only human after all.\n\nDima   \n\n> Nathann",
     "created_at": "2010-03-09T12:03:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75300",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [trac_8404.patch](tarball://root/attachments/some-uuid/ticket8404/trac_8404.patch) by dimpase created at 2010-03-09 12:03:52
+Attachment [trac_8404.patch](tarball://root/attachments/some-uuid/ticket8404/trac_8404.patch) by @dimpase created at 2010-03-09 12:03:52
 
 Replying to [comment:24 ncohen]:
 > The difference being that I am not your student, nor do I have any intention of standing your rudeness and the way you give me orders for very long.
@@ -799,7 +799,7 @@ archive/issue_comments_075301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75301",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -821,7 +821,7 @@ archive/issue_comments_075302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75302",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -841,7 +841,7 @@ archive/issue_comments_075303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75303",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -859,7 +859,7 @@ archive/issue_comments_075304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75304",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

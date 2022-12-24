@@ -3,7 +3,7 @@
 archive/issues_006759.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ddrake\n\nI tried to build Sage using Sun's compiler suite, based on Sun Studio 12 update 1. This is of course good for Solaris, but will also find other issues. Since the Sun compiler is a lot stricter than the GNU one, it will find bad code. (It has for example already found code in libgcrypt where the code attempts to return an integer from a function declared with a return type of void). \n\nThe version of sqlite in Sage (3.5.3) is the first package I found which failed to build with Sun's compiler. I downloaded the latest (3.6.17) source, and with the addition of \n\"-I $SAGE_LOCAL/include\" to CPPFLAGS, sqlite 3.6.17 will build with Sun's compiler. (I made many other changes to the spkg-install to, to generally improve it, but I think that was the only mandatory change).\n\nHere's the update spkg and associated files. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/sqlite-3.6.17/\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6759\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dandrake\n\nI tried to build Sage using Sun's compiler suite, based on Sun Studio 12 update 1. This is of course good for Solaris, but will also find other issues. Since the Sun compiler is a lot stricter than the GNU one, it will find bad code. (It has for example already found code in libgcrypt where the code attempts to return an integer from a function declared with a return type of void). \n\nThe version of sqlite in Sage (3.5.3) is the first package I found which failed to build with Sun's compiler. I downloaded the latest (3.6.17) source, and with the addition of \n\"-I $SAGE_LOCAL/include\" to CPPFLAGS, sqlite 3.6.17 will build with Sun's compiler. (I made many other changes to the spkg-install to, to generally improve it, but I think that was the only mandatory change).\n\nHere's the update spkg and associated files. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/sqlite-3.6.17/\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6759\n\n",
     "created_at": "2009-08-16T08:22:40Z",
     "labels": [
         "solaris",
@@ -19,7 +19,7 @@ archive/issues_006759.json:
 ```
 Assignee: tbd
 
-CC:  ddrake
+CC:  @dandrake
 
 I tried to build Sage using Sun's compiler suite, based on Sun Studio 12 update 1. This is of course good for Solaris, but will also find other issues. Since the Sun compiler is a lot stricter than the GNU one, it will find bad code. (It has for example already found code in libgcrypt where the code attempts to return an integer from a function declared with a return type of void). 
 
@@ -48,7 +48,7 @@ archive/issue_comments_055641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55641",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_055642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55642",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -707,7 +707,7 @@ archive/issue_comments_055645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55645",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -725,7 +725,7 @@ archive/issue_comments_055646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55646",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -780,7 +780,7 @@ archive/issue_comments_055647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55647",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -798,7 +798,7 @@ archive/issue_comments_055648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55648",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -840,7 +840,7 @@ archive/issue_comments_055649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55649",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -862,7 +862,7 @@ archive/issue_comments_055650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55650",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -882,7 +882,7 @@ archive/issue_comments_055651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55651",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -900,7 +900,7 @@ archive/issue_comments_055652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55652",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -921,7 +921,7 @@ archive/issue_comments_055653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55653",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -939,7 +939,7 @@ archive/issue_comments_055654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55654",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -957,7 +957,7 @@ archive/issue_comments_055655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55655",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -977,7 +977,7 @@ archive/issue_comments_055656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55656",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -997,7 +997,7 @@ archive/issue_comments_055657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55657",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1015,7 +1015,7 @@ archive/issue_comments_055658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55658",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1033,7 +1033,7 @@ archive/issue_comments_055659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55659",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1046,16 +1046,16 @@ Merged sqlite-3.6.19.p0.spkg
 archive/issue_comments_055660.json:
 ```json
 {
-    "body": "Attachment [trac_6759.patch](tarball://root/attachments/some-uuid/ticket6759/trac_6759.patch) by mhansen created at 2009-10-31 09:07:58",
+    "body": "Attachment [trac_6759.patch](tarball://root/attachments/some-uuid/ticket6759/trac_6759.patch) by @mwhansen created at 2009-10-31 09:07:58",
     "created_at": "2009-10-31T09:07:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55660",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6759.patch](tarball://root/attachments/some-uuid/ticket6759/trac_6759.patch) by mhansen created at 2009-10-31 09:07:58
+Attachment [trac_6759.patch](tarball://root/attachments/some-uuid/ticket6759/trac_6759.patch) by @mwhansen created at 2009-10-31 09:07:58
 
 
 
@@ -1069,7 +1069,7 @@ archive/issue_comments_055661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6759#issuecomment-55661",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

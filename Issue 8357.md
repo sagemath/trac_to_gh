@@ -3,7 +3,7 @@
 archive/issues_008357.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nFrom [John Palmieri](http://groups.google.com/group/sage-devel/browse_thread/thread/976cf8ecb4896e7c):\n\n```\nWhen I run doctests on the file ell_rational_field.py, I end up with a\nsmall file called PRIMES in the current directory. This shouldn't\nhappen: running doctests shouldn't produce files in a non-temporary\ndirectory.  However, I can't figure out how this file gets there.  In\nparticular, if I delete the following doctests from the rank method,\nthen the file is not produced:\n\n{{{\ndiff -r 23241bd151e3 sage/schemes/elliptic_curves/\nell_rational_field.py\n--- a/sage/schemes/elliptic_curves/ell_rational_field.py        Thu\nFeb 18 14:25:25 2010 -0800\n+++ b/sage/schemes/elliptic_curves/ell_rational_field.py        Wed\nFeb 24 20:37:09 2010 -0800\n@@ -1679,14 +1679,6 @@\n             sage: E.minimal_model().rank()\n             1\n\n-        A large example where mwrank doesn't determine the result\nwith certainty::\n-\n-            sage: EllipticCurve([1,0,0,0,37455]).rank(proof=False)\n-            0\n-            sage: EllipticCurve([1,0,0,0,37455]).rank(proof=True)\n-            Traceback (most recent call last):\n-            ...\n-            RuntimeError: Rank not provably correct.\n         \"\"\"\n         if proof is None:\n             from sage.structure.proof.proof import get_flag\n\n}}}\n\nIf I run these by hand from the command line, though, I don't see the\nfile PRIMES anywhere.  Can someone familiar with the elliptic curves\ncode open a ticket, chase this down, and fix it?\n```\n\n\nThis is a follow-up to #7575.  Please see [comment:ticket:7575:24 comment 24+] for some progress.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8357\n\n",
+    "body": "Assignee: @JohnCremona\n\nFrom [John Palmieri](http://groups.google.com/group/sage-devel/browse_thread/thread/976cf8ecb4896e7c):\n\n```\nWhen I run doctests on the file ell_rational_field.py, I end up with a\nsmall file called PRIMES in the current directory. This shouldn't\nhappen: running doctests shouldn't produce files in a non-temporary\ndirectory.  However, I can't figure out how this file gets there.  In\nparticular, if I delete the following doctests from the rank method,\nthen the file is not produced:\n\n{{{\ndiff -r 23241bd151e3 sage/schemes/elliptic_curves/\nell_rational_field.py\n--- a/sage/schemes/elliptic_curves/ell_rational_field.py        Thu\nFeb 18 14:25:25 2010 -0800\n+++ b/sage/schemes/elliptic_curves/ell_rational_field.py        Wed\nFeb 24 20:37:09 2010 -0800\n@@ -1679,14 +1679,6 @@\n             sage: E.minimal_model().rank()\n             1\n\n-        A large example where mwrank doesn't determine the result\nwith certainty::\n-\n-            sage: EllipticCurve([1,0,0,0,37455]).rank(proof=False)\n-            0\n-            sage: EllipticCurve([1,0,0,0,37455]).rank(proof=True)\n-            Traceback (most recent call last):\n-            ...\n-            RuntimeError: Rank not provably correct.\n         \"\"\"\n         if proof is None:\n             from sage.structure.proof.proof import get_flag\n\n}}}\n\nIf I run these by hand from the command line, though, I don't see the\nfile PRIMES anywhere.  Can someone familiar with the elliptic curves\ncode open a ticket, chase this down, and fix it?\n```\n\n\nThis is a follow-up to #7575.  Please see [comment:ticket:7575:24 comment 24+] for some progress.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8357\n\n",
     "created_at": "2010-02-25T06:05:03Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_008357.json:
     "title": "Doctesting ell_rational_field.py leaves a file PRIMES in the current directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8357",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 From [John Palmieri](http://groups.google.com/group/sage-devel/browse_thread/thread/976cf8ecb4896e7c):
 
@@ -79,7 +79,7 @@ archive/issue_comments_074651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74651",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_074652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74652",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_074653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74653",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_074654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74654",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -148,16 +148,16 @@ There's still a timing(?) problem ([log](http://sage.math.washington.edu/home/mp
 archive/issue_comments_074655.json:
 ```json
 {
-    "body": "Attachment [trac_8357-eclib_makefiles.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-eclib_makefiles.patch) by mpatel created at 2010-02-28 13:29:51\n\nTweak `MAKEFILE`s for parallel builds.  eclib src repo.",
+    "body": "Attachment [trac_8357-eclib_makefiles.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-eclib_makefiles.patch) by @qed777 created at 2010-02-28 13:29:51\n\nTweak `MAKEFILE`s for parallel builds.  eclib src repo.",
     "created_at": "2010-02-28T13:29:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74655",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8357-eclib_makefiles.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-eclib_makefiles.patch) by mpatel created at 2010-02-28 13:29:51
+Attachment [trac_8357-eclib_makefiles.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-eclib_makefiles.patch) by @qed777 created at 2010-02-28 13:29:51
 
 Tweak `MAKEFILE`s for parallel builds.  eclib src repo.
 
@@ -173,7 +173,7 @@ archive/issue_comments_074656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74656",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_074657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74657",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_074658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74658",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_074659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74659",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_074660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74660",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -302,16 +302,16 @@ Diff of `spkg-install`, `SPKG.txt`.  eclib spkg repo.
 archive/issue_comments_074661.json:
 ```json
 {
-    "body": "Attachment [trac_8357-suppress_PRIMES.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-suppress_PRIMES.patch) by mpatel created at 2010-03-01 00:18:24\n\nDon't write `PRIMES`. Delete `1` after check.  eclib src repo",
+    "body": "Attachment [trac_8357-suppress_PRIMES.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-suppress_PRIMES.patch) by @qed777 created at 2010-03-01 00:18:24\n\nDon't write `PRIMES`. Delete `1` after check.  eclib src repo",
     "created_at": "2010-03-01T00:18:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74661",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8357-suppress_PRIMES.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-suppress_PRIMES.patch) by mpatel created at 2010-03-01 00:18:24
+Attachment [trac_8357-suppress_PRIMES.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-suppress_PRIMES.patch) by @qed777 created at 2010-03-01 00:18:24
 
 Don't write `PRIMES`. Delete `1` after check.  eclib src repo
 
@@ -327,7 +327,7 @@ archive/issue_comments_074662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74662",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_074663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74663",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_074664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74664",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_074665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74665",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_074666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74666",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_074667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74667",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_074668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74668",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -479,16 +479,16 @@ replacement src/g0n/Makefile
 archive/issue_comments_074669.json:
 ```json
 {
-    "body": "Attachment [Makefile](tarball://root/attachments/some-uuid/ticket8357/Makefile) by cremona created at 2010-03-01 22:04:17\n\nReplying to [comment:12 mpatel]:\n> Sure, that sounds good.\nI have attached the replacement Makefile -- could you update the spkg with it?",
+    "body": "Attachment [Makefile](tarball://root/attachments/some-uuid/ticket8357/Makefile) by @JohnCremona created at 2010-03-01 22:04:17\n\nReplying to [comment:12 mpatel]:\n> Sure, that sounds good.\nI have attached the replacement Makefile -- could you update the spkg with it?",
     "created_at": "2010-03-01T22:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74669",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [Makefile](tarball://root/attachments/some-uuid/ticket8357/Makefile) by cremona created at 2010-03-01 22:04:17
+Attachment [Makefile](tarball://root/attachments/some-uuid/ticket8357/Makefile) by @JohnCremona created at 2010-03-01 22:04:17
 
 Replying to [comment:12 mpatel]:
 > Sure, that sounds good.
@@ -506,7 +506,7 @@ archive/issue_comments_074670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74670",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -519,16 +519,16 @@ Done!  The package now builds in parallel and `make check` now works for me on t
 archive/issue_comments_074671.json:
 ```json
 {
-    "body": "Attachment [trac_8357-newforms_dir.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-newforms_dir.patch) by mpatel created at 2010-03-02 22:34:35\n\nSimplify `g0n/Makefile`.  eclib src repo.",
+    "body": "Attachment [trac_8357-newforms_dir.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-newforms_dir.patch) by @qed777 created at 2010-03-02 22:34:35\n\nSimplify `g0n/Makefile`.  eclib src repo.",
     "created_at": "2010-03-02T22:34:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74671",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8357-newforms_dir.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-newforms_dir.patch) by mpatel created at 2010-03-02 22:34:35
+Attachment [trac_8357-newforms_dir.patch](tarball://root/attachments/some-uuid/ticket8357/trac_8357-newforms_dir.patch) by @qed777 created at 2010-03-02 22:34:35
 
 Simplify `g0n/Makefile`.  eclib src repo.
 
@@ -580,7 +580,7 @@ archive/issue_comments_074674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8357#issuecomment-74674",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

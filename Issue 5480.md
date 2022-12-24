@@ -3,7 +3,7 @@
 archive/issues_005480.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following seems absurd:\n\n```\nsage: R.<x> = PolynomialRing(QQ)\nsage: I = (x^2-1)*R\nsage: S = R.quotient_by_principal_ideal(I)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/justin/.sage/temp/Hasse_2.local/32509/_tmp_z_sage_9.py in <module>()\n\n/SandBox/Justin/sb/sage-3.2.2/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.pyc in quotient_by_principal_ideal(self=Univariate Polynomial Ring in x over Rational Field, f=Principal ideal (x^2 - 1) of Univariate Polynomial Ring in x over Rational Field, names=None)\n   1004         \"\"\"\n   1005         import sage.rings.polynomial.polynomial_quotient_ring\n-> 1006         return sage.rings.polynomial.polynomial_quotient_ring.PolynomialQuotientRing(self, f, names)\n   1007 \n   1008 \n\n/SandBox/Justin/sb/sage-3.2.2/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_quotient_ring.pyc in PolynomialQuotientRing(ring=Univariate Polynomial Ring in x over Rational Field, polynomial=Principal ideal (x^2 - 1) of Univariate Polynomial Ring in x over Rational Field, names=None)\n    128         raise TypeError, \"ring must be a polynomial ring\"\n    129     if not isinstance(polynomial, polynomial_element.Polynomial):\n--> 130         raise TypeError, \"must be a polynomial\"\n        global EXAMPLES = undefined\n    131     if not polynomial.parent() == ring:\n    132         raise TypeError, \"polynomial must be in ring\"\n\nTypeError: must be a polynomial\n```\n\nEither the procedure should be ...by_polynomial(), or it should really accept an ideal as an argument.\n\nSheesh.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5480\n\n",
+    "body": "Assignee: @williamstein\n\nThe following seems absurd:\n\n```\nsage: R.<x> = PolynomialRing(QQ)\nsage: I = (x^2-1)*R\nsage: S = R.quotient_by_principal_ideal(I)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/justin/.sage/temp/Hasse_2.local/32509/_tmp_z_sage_9.py in <module>()\n\n/SandBox/Justin/sb/sage-3.2.2/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.pyc in quotient_by_principal_ideal(self=Univariate Polynomial Ring in x over Rational Field, f=Principal ideal (x^2 - 1) of Univariate Polynomial Ring in x over Rational Field, names=None)\n   1004         \"\"\"\n   1005         import sage.rings.polynomial.polynomial_quotient_ring\n-> 1006         return sage.rings.polynomial.polynomial_quotient_ring.PolynomialQuotientRing(self, f, names)\n   1007 \n   1008 \n\n/SandBox/Justin/sb/sage-3.2.2/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_quotient_ring.pyc in PolynomialQuotientRing(ring=Univariate Polynomial Ring in x over Rational Field, polynomial=Principal ideal (x^2 - 1) of Univariate Polynomial Ring in x over Rational Field, names=None)\n    128         raise TypeError, \"ring must be a polynomial ring\"\n    129     if not isinstance(polynomial, polynomial_element.Polynomial):\n--> 130         raise TypeError, \"must be a polynomial\"\n        global EXAMPLES = undefined\n    131     if not polynomial.parent() == ring:\n    132         raise TypeError, \"polynomial must be in ring\"\n\nTypeError: must be a polynomial\n```\n\nEither the procedure should be ...by_polynomial(), or it should really accept an ideal as an argument.\n\nSheesh.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5480\n\n",
     "created_at": "2009-03-11T05:23:45Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_005480.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following seems absurd:
 
@@ -90,7 +90,7 @@ archive/issue_comments_042513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5480#issuecomment-42513",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -103,7 +103,7 @@ The patch looks ok but there should be doctests to illustrate the new behaviour,
 archive/issue_comments_042514.json:
 ```json
 {
-    "body": "Changing assignee from was to justin.",
+    "body": "Changing assignee from @williamstein to justin.",
     "created_at": "2009-03-16T03:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5480",
     "type": "issue_comment",
@@ -112,7 +112,7 @@ archive/issue_comments_042514.json:
 }
 ```
 
-Changing assignee from was to justin.
+Changing assignee from @williamstein to justin.
 
 
 
@@ -168,7 +168,7 @@ archive/issue_comments_042517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5480#issuecomment-42517",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_042518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5480#issuecomment-42518",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_042519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5480#issuecomment-42519",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_042520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5480#issuecomment-42520",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_042521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5480#issuecomment-42521",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -255,16 +255,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_042522.json:
 ```json
 {
-    "body": "Attachment [trac_5480.patch](tarball://root/attachments/some-uuid/ticket5480/trac_5480.patch) by mhansen created at 2009-11-17 08:04:35\n\nLooks good to me.",
+    "body": "Attachment [trac_5480.patch](tarball://root/attachments/some-uuid/ticket5480/trac_5480.patch) by @mwhansen created at 2009-11-17 08:04:35\n\nLooks good to me.",
     "created_at": "2009-11-17T08:04:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5480#issuecomment-42522",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5480.patch](tarball://root/attachments/some-uuid/ticket5480/trac_5480.patch) by mhansen created at 2009-11-17 08:04:35
+Attachment [trac_5480.patch](tarball://root/attachments/some-uuid/ticket5480/trac_5480.patch) by @mwhansen created at 2009-11-17 08:04:35
 
 Looks good to me.
 
@@ -280,7 +280,7 @@ archive/issue_comments_042523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5480#issuecomment-42523",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

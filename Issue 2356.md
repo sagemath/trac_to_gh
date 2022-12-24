@@ -14,7 +14,7 @@ archive/issues_002356.json:
     "title": "Bug in discrete_log_generic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2356",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: joyner
@@ -101,16 +101,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2356
 archive/issue_comments_015865.json:
 ```json
 {
-    "body": "Attachment [8682.patch](tarball://root/attachments/some-uuid/ticket2356/8682.patch) by cremona created at 2008-02-29 22:48:48\n\nAttached patch 8682 fixes both issues:  increases m by 1 and uses a dict() for fast lookup of the table.",
+    "body": "Attachment [8682.patch](tarball://root/attachments/some-uuid/ticket2356/8682.patch) by @JohnCremona created at 2008-02-29 22:48:48\n\nAttached patch 8682 fixes both issues:  increases m by 1 and uses a dict() for fast lookup of the table.",
     "created_at": "2008-02-29T22:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15865",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8682.patch](tarball://root/attachments/some-uuid/ticket2356/8682.patch) by cremona created at 2008-02-29 22:48:48
+Attachment [8682.patch](tarball://root/attachments/some-uuid/ticket2356/8682.patch) by @JohnCremona created at 2008-02-29 22:48:48
 
 Attached patch 8682 fixes both issues:  increases m by 1 and uses a dict() for fast lookup of the table.
 
@@ -126,7 +126,7 @@ archive/issue_comments_015866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15866",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -139,16 +139,16 @@ Changing status from new to assigned.
 archive/issue_comments_015867.json:
 ```json
 {
-    "body": "Changing assignee from joyner to cremona.",
+    "body": "Changing assignee from joyner to @JohnCremona.",
     "created_at": "2008-03-02T17:35:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15867",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Changing assignee from joyner to cremona.
+Changing assignee from joyner to @JohnCremona.
 
 
 
@@ -162,7 +162,7 @@ archive/issue_comments_015868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15868",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_015869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15869",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

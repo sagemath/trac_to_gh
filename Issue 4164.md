@@ -3,7 +3,7 @@
 archive/issues_004164.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe attached patch switches from random lifting to the fan algorithm for triangularization which work in all cases and should work with all dimensions.\n\nI left some safeguard code in there just in case I made assumptions that aren't always true (or have some bugs).\n\nFor the record the assumptions are:\n* faces are always convex\n* there won't ever be faces with no vertices\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4164\n\n",
+    "body": "Assignee: @williamstein\n\nThe attached patch switches from random lifting to the fan algorithm for triangularization which work in all cases and should work with all dimensions.\n\nI left some safeguard code in there just in case I made assumptions that aren't always true (or have some bugs).\n\nFor the record the assumptions are:\n* faces are always convex\n* there won't ever be faces with no vertices\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4164\n\n",
     "created_at": "2008-09-21T20:35:40Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_004164.json:
     "user": "anakha"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The attached patch switches from random lifting to the fan algorithm for triangularization which work in all cases and should work with all dimensions.
 
@@ -57,7 +57,7 @@ Attachment [trac_4164.patch](tarball://root/attachments/some-uuid/ticket4164/tra
 archive/issue_comments_030219.json:
 ```json
 {
-    "body": "Changing assignee from was to anakha.",
+    "body": "Changing assignee from @williamstein to anakha.",
     "created_at": "2008-09-22T22:38:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4164",
     "type": "issue_comment",
@@ -66,7 +66,7 @@ archive/issue_comments_030219.json:
 }
 ```
 
-Changing assignee from was to anakha.
+Changing assignee from @williamstein to anakha.
 
 
 

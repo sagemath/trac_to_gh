@@ -3,7 +3,7 @@
 archive/issues_006514.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  malb mvngu\n\nThis module provides a class to study properties such as nonlinearity, resiliency, correlation immunity, algebraic immunity and other cryptographic properties of Boolean functions.\n\nSome of these are still missing, but I think it is a good start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6514\n\n",
+    "body": "Assignee: somebody\n\nCC:  @malb mvngu\n\nThis module provides a class to study properties such as nonlinearity, resiliency, correlation immunity, algebraic immunity and other cryptographic properties of Boolean functions.\n\nSome of these are still missing, but I think it is a good start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6514\n\n",
     "created_at": "2009-07-11T18:09:13Z",
     "labels": [
         "cryptography",
@@ -19,7 +19,7 @@ archive/issues_006514.json:
 ```
 Assignee: somebody
 
-CC:  malb mvngu
+CC:  @malb mvngu
 
 This module provides a class to study properties such as nonlinearity, resiliency, correlation immunity, algebraic immunity and other cryptographic properties of Boolean functions.
 
@@ -59,7 +59,7 @@ archive/issue_comments_053062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6514#issuecomment-53062",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_053063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6514#issuecomment-53063",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_053067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6514#issuecomment-53067",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_053070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6514#issuecomment-53070",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

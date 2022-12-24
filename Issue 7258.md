@@ -14,7 +14,7 @@ archive/issues_007258.json:
     "title": "sagenb notebook: fix \"When saving a worksheet, the default filename has \"...\" in it. \"; also change some menu items related to loading and saving worksheets to be clearer.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7258",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7258
 archive/issue_comments_060287.json:
 ```json
 {
-    "body": "Attachment [sagenb-7258.patch](tarball://root/attachments/some-uuid/ticket7258/sagenb-7258.patch) by was created at 2009-10-21 07:37:58",
+    "body": "Attachment [sagenb-7258.patch](tarball://root/attachments/some-uuid/ticket7258/sagenb-7258.patch) by @williamstein created at 2009-10-21 07:37:58",
     "created_at": "2009-10-21T07:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60287",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb-7258.patch](tarball://root/attachments/some-uuid/ticket7258/sagenb-7258.patch) by was created at 2009-10-21 07:37:58
+Attachment [sagenb-7258.patch](tarball://root/attachments/some-uuid/ticket7258/sagenb-7258.patch) by @williamstein created at 2009-10-21 07:37:58
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_060288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60288",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_060289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60289",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_060290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60290",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_060291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60291",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

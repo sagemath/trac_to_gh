@@ -14,7 +14,7 @@ archive/issues_002821.json:
     "title": "get rid of anything \"about this document\" sections of any sage docs that say \"send email to stein\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2821",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2821
 archive/issue_comments_019365.json:
 ```json
 {
-    "body": "Attachment [2821-stop_bugging_wstein.patch](tarball://root/attachments/some-uuid/ticket2821/2821-stop_bugging_wstein.patch) by AlexGhitza created at 2008-04-25 00:36:07\n\ndoc patch",
+    "body": "Attachment [2821-stop_bugging_wstein.patch](tarball://root/attachments/some-uuid/ticket2821/2821-stop_bugging_wstein.patch) by @aghitza created at 2008-04-25 00:36:07\n\ndoc patch",
     "created_at": "2008-04-25T00:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2821#issuecomment-19365",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [2821-stop_bugging_wstein.patch](tarball://root/attachments/some-uuid/ticket2821/2821-stop_bugging_wstein.patch) by AlexGhitza created at 2008-04-25 00:36:07
+Attachment [2821-stop_bugging_wstein.patch](tarball://root/attachments/some-uuid/ticket2821/2821-stop_bugging_wstein.patch) by @aghitza created at 2008-04-25 00:36:07
 
 doc patch
 
@@ -57,7 +57,7 @@ archive/issue_comments_019366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2821#issuecomment-19366",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_019367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2821#issuecomment-19367",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

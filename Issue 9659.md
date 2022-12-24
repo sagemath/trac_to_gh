@@ -3,7 +3,7 @@
 archive/issues_009659.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  cremona ddrake leif\n\nReported by Leif Leonhardy on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/a932af7b005283b4#a932af7b005283b4):\n\n```\nOn 32-bit Ubuntu 9.04 (P4 Prescott 3.2GHz, gcc 4.3.3, native code) \n[...]\n   sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\"\n   ***************************************************************\n   File \"/home/leif/sage-4.5.2.alpha0/devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\", line 444:\n       sage: EK.regulator_of_points([P,T])\n   Expected:\n       -1.23259516440783e-32\n   Got:\n       -4.93038065763132e-32\n   ***************************************************************\n   1 items had failures:\n      1 of  42 in __main__.example_5\n   ***Test Failed*** 1 failures.\n   For whitespace errors, see the file /home/leif/.sage//tmp/.doctest_ell_number_field.py\n            [171.9 s] \n```\n\n\nSee [this thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8315/trac_8315-doc_sidebar.patch) for a discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9659\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @JohnCremona @dandrake @nexttime\n\nReported by Leif Leonhardy on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/a932af7b005283b4#a932af7b005283b4):\n\n```\nOn 32-bit Ubuntu 9.04 (P4 Prescott 3.2GHz, gcc 4.3.3, native code) \n[...]\n   sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\"\n   ***************************************************************\n   File \"/home/leif/sage-4.5.2.alpha0/devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\", line 444:\n       sage: EK.regulator_of_points([P,T])\n   Expected:\n       -1.23259516440783e-32\n   Got:\n       -4.93038065763132e-32\n   ***************************************************************\n   1 items had failures:\n      1 of  42 in __main__.example_5\n   ***Test Failed*** 1 failures.\n   For whitespace errors, see the file /home/leif/.sage//tmp/.doctest_ell_number_field.py\n            [171.9 s] \n```\n\n\nSee [this thread](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8315/trac_8315-doc_sidebar.patch) for a discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9659\n\n",
     "created_at": "2010-08-01T10:17:05Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009659.json:
     "title": "EK.regulator_of_points() doctest error in ell_number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9659",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  cremona ddrake leif
+CC:  @JohnCremona @dandrake @nexttime
 
 Reported by Leif Leonhardy on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/a932af7b005283b4#a932af7b005283b4):
 
@@ -61,7 +61,7 @@ archive/issue_comments_093755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93755",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_093756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93756",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_093757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93757",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_093758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93758",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_093759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93759",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_093760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93760",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_093761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93761",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_093762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93762",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_093763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93763",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -256,16 +256,16 @@ applies to 4.5.2.alpha0
 archive/issue_comments_093764.json:
 ```json
 {
-    "body": "Attachment [trac_9659-regulator.patch](tarball://root/attachments/some-uuid/ticket9659/trac_9659-regulator.patch) by cremona created at 2010-08-02 02:37:12\n\nOK, my mistake -- I have updated the patch so it now says 1e-30.\n\nThe optimization change will effect this a lot.   The optimization flag on a pari build was downgraded a while back for a silly reason; and upped again on the ticket upgrading pari.  This will effect all the number field code.",
+    "body": "Attachment [trac_9659-regulator.patch](tarball://root/attachments/some-uuid/ticket9659/trac_9659-regulator.patch) by @JohnCremona created at 2010-08-02 02:37:12\n\nOK, my mistake -- I have updated the patch so it now says 1e-30.\n\nThe optimization change will effect this a lot.   The optimization flag on a pari build was downgraded a while back for a silly reason; and upped again on the ticket upgrading pari.  This will effect all the number field code.",
     "created_at": "2010-08-02T02:37:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93764",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9659-regulator.patch](tarball://root/attachments/some-uuid/ticket9659/trac_9659-regulator.patch) by cremona created at 2010-08-02 02:37:12
+Attachment [trac_9659-regulator.patch](tarball://root/attachments/some-uuid/ticket9659/trac_9659-regulator.patch) by @JohnCremona created at 2010-08-02 02:37:12
 
 OK, my mistake -- I have updated the patch so it now says 1e-30.
 
@@ -283,7 +283,7 @@ archive/issue_comments_093765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93765",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_093766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93766",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_093769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93769",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_093770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93770",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_093771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9659#issuecomment-93771",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000973.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\n```\n> sage: time dance(10)\n> \n> \n> ------------------------------------------------------------\n> Unhandled SIGSEGV: A segmentation fault occured in SAGE.\n> This probably occured because a *compiled* component\n> of SAGE has a bug in it (typically accessing invalid memory)\n> or is not properly wrapped with _sig_on, _sig_off.\n> You might want to run SAGE under gdb with 'sage -gdb' to debug this.\n> SAGE will now terminate (sorry).\n> ------------------------------------------------------------\n```\n\n\nWith sage -gdb:\n\n\n```\n> sage: time dance(9)\n> h^9 - 27*h^8 + 414*h^7 - 4158*h^6 + 29421*h^5 - 148743*h^4 + 530796*h^3 - 1276992*h^2 + 1866384*h - 1255608\n> CPU times: user 1786.82 s, sys: 23.05 s, total: 1809.87 s\n> Wall time: 1831.52\n> \n> sage: time dance(10)\n> \n> Program received signal SIGSEGV, Segmentation fault.\n> [Switching to Thread -1208523072 (LWP 30162)]\n> 0x0064d473 in strlen () from /lib/libc.so.6\n> (gdb)\n\n```\n\nThe program (see below) uses methods from sage.matrix.matrix2.pyx:\n\n\n\n```\n##########################################################################\n#  Copyright (C) 2006 Jaap Spies, jaapspies@gmail.com\n#\n#  Distributed under the terms of the GNU General Public License (GPL):\n#\n#                  http://www.gnu.org/licenses/\n##########################################################################\n\n\"\"\"\n        Usage from sage\n\n        sage: attach 'dancing.sage'\n\n        sage: dance(4)\n        h^4 - 2*h^3 + 9*h^2 - 8*h + 6\n        \n\"\"\"\n\n# use variable 'h' in the polynomial ring over the rationals\n\nh = QQ['h'].gen()\n\ndef dance(m):\n    \"\"\"\n        Generates the polynomial solutions of the Dancing School Problem\n        Based on a modification of theorem 7.2.1 from Brualdi and Ryser,\n        Combinatorial Matrix Theory.\n\n        See NAW 5/7 nr. 4 december 2006 p. 285\n\n        INPUT: integer m \n\n        OUTPUT: polynomial in 'h'\n\n        EXAMPLE:\n            sage: dance(4)\n            h^4 - 2*h^3 + 9*h^2 - 8*h + 6\n\n        AUTHOR: Jaap Spies (2006)\n    \"\"\"    \n    n = 2*m-2\n    M = MatrixSpace(ZZ, m, n)\n    A = M([0 for i in range(m*n)])\n    for i in range(m):\n        for j in range(n):\n            if i > j or j > i + n - m:\n                A[i,j] = 1\n    rv = A.rook_vector()\n#   print rv\n    s = sum([(-1)^k*rv[k]*falling_factorial(m+h-k, m-k) for k in range(m+1)])\n    print s\n\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/973\n\n",
+    "body": "Assignee: @williamstein\n\n\n\n```\n> sage: time dance(10)\n> \n> \n> ------------------------------------------------------------\n> Unhandled SIGSEGV: A segmentation fault occured in SAGE.\n> This probably occured because a *compiled* component\n> of SAGE has a bug in it (typically accessing invalid memory)\n> or is not properly wrapped with _sig_on, _sig_off.\n> You might want to run SAGE under gdb with 'sage -gdb' to debug this.\n> SAGE will now terminate (sorry).\n> ------------------------------------------------------------\n```\n\n\nWith sage -gdb:\n\n\n```\n> sage: time dance(9)\n> h^9 - 27*h^8 + 414*h^7 - 4158*h^6 + 29421*h^5 - 148743*h^4 + 530796*h^3 - 1276992*h^2 + 1866384*h - 1255608\n> CPU times: user 1786.82 s, sys: 23.05 s, total: 1809.87 s\n> Wall time: 1831.52\n> \n> sage: time dance(10)\n> \n> Program received signal SIGSEGV, Segmentation fault.\n> [Switching to Thread -1208523072 (LWP 30162)]\n> 0x0064d473 in strlen () from /lib/libc.so.6\n> (gdb)\n\n```\n\nThe program (see below) uses methods from sage.matrix.matrix2.pyx:\n\n\n\n```\n##########################################################################\n#  Copyright (C) 2006 Jaap Spies, jaapspies@gmail.com\n#\n#  Distributed under the terms of the GNU General Public License (GPL):\n#\n#                  http://www.gnu.org/licenses/\n##########################################################################\n\n\"\"\"\n        Usage from sage\n\n        sage: attach 'dancing.sage'\n\n        sage: dance(4)\n        h^4 - 2*h^3 + 9*h^2 - 8*h + 6\n        \n\"\"\"\n\n# use variable 'h' in the polynomial ring over the rationals\n\nh = QQ['h'].gen()\n\ndef dance(m):\n    \"\"\"\n        Generates the polynomial solutions of the Dancing School Problem\n        Based on a modification of theorem 7.2.1 from Brualdi and Ryser,\n        Combinatorial Matrix Theory.\n\n        See NAW 5/7 nr. 4 december 2006 p. 285\n\n        INPUT: integer m \n\n        OUTPUT: polynomial in 'h'\n\n        EXAMPLE:\n            sage: dance(4)\n            h^4 - 2*h^3 + 9*h^2 - 8*h + 6\n\n        AUTHOR: Jaap Spies (2006)\n    \"\"\"    \n    n = 2*m-2\n    M = MatrixSpace(ZZ, m, n)\n    A = M([0 for i in range(m*n)])\n    for i in range(m):\n        for j in range(n):\n            if i > j or j > i + n - m:\n                A[i,j] = 1\n    rv = A.rook_vector()\n#   print rv\n    s = sum([(-1)^k*rv[k]*falling_factorial(m+h-k, m-k) for k in range(m+1)])\n    print s\n\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/973\n\n",
     "created_at": "2007-10-23T11:20:50Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000973.json:
     "title": "Unhandled SIGSEGV: A segmentation fault occured in SAGE matrix.matrix2.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/973",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -127,7 +127,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/973
 archive/issue_comments_005931.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-10-23T16:33:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/973",
     "type": "issue_comment",
@@ -136,7 +136,7 @@ archive/issue_comments_005931.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -199,7 +199,7 @@ archive/issue_comments_005934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/973#issuecomment-5934",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

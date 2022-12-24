@@ -3,7 +3,7 @@
 archive/issues_000842.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThe following takes a very long time, possibly forever (I waited several minutes before giving up and killing it):\n\n```\nsage:  MR.<x,w,v,u> = QQ['x','w','v','u']\nsage:  p = (4*v^4*u^2 - 16*v^2*u^4 + 16*u^6 - 4*v^4*u + 8*v^2*u^3 + v^4)\nsage:  %time p.factor()\n```\n\n\nSimilarly, if you run sage -singular, the equivalent code fails again:\n\n```\n> ring r = 0,(x,w,v,u),dp;\n> factorize(4*v^4*u^2 - 16*v^2*u^4 + 16*u^6 - 4*v^4*u + 8*v^2*u^3 + v^4);\n```\n\n\nHowever, if I build my own copy of Singular from the source on the Singular website, or if I download and install the Debian binary package from the Singular website, then this second factorization completes instantly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/842\n\n",
+    "body": "Assignee: @malb\n\nThe following takes a very long time, possibly forever (I waited several minutes before giving up and killing it):\n\n```\nsage:  MR.<x,w,v,u> = QQ['x','w','v','u']\nsage:  p = (4*v^4*u^2 - 16*v^2*u^4 + 16*u^6 - 4*v^4*u + 8*v^2*u^3 + v^4)\nsage:  %time p.factor()\n```\n\n\nSimilarly, if you run sage -singular, the equivalent code fails again:\n\n```\n> ring r = 0,(x,w,v,u),dp;\n> factorize(4*v^4*u^2 - 16*v^2*u^4 + 16*u^6 - 4*v^4*u + 8*v^2*u^3 + v^4);\n```\n\n\nHowever, if I build my own copy of Singular from the source on the Singular website, or if I download and install the Debian binary package from the Singular website, then this second factorization completes instantly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/842\n\n",
     "created_at": "2007-10-09T21:07:59Z",
     "labels": [
         "packages",
@@ -17,7 +17,7 @@ archive/issues_000842.json:
     "user": "cwitty"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 The following takes a very long time, possibly forever (I waited several minutes before giving up and killing it):
 
@@ -72,7 +72,7 @@ archive/issue_comments_005210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5210",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_005216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5216",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -219,16 +219,16 @@ An updated spkg can be found at
 archive/issue_comments_005217.json:
 ```json
 {
-    "body": "Attachment [multi_polynomial_ideal_singular_ntl_fixes.patch](tarball://root/attachments/some-uuid/ticket842/multi_polynomial_ideal_singular_ntl_fixes.patch) by malb created at 2007-10-12 10:36:04\n\n`multi_polynomial_ideal_singular_ntl_fixes.patch` fixes the doctest failures introduced by the switch to NTL.\n\nTo apply all patches:\n* install the new NTL spkg from http://sage.math.washington.edu/home/mabshoff/ntl-5.4.1.p6.spkg\n* install the new Singular spkg from http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-1-20071010.spkg\n* apply `6720.patch` attached above\n* apply `multi_polynomial_ideal_singular_ntl_fixes.patch`",
+    "body": "Attachment [multi_polynomial_ideal_singular_ntl_fixes.patch](tarball://root/attachments/some-uuid/ticket842/multi_polynomial_ideal_singular_ntl_fixes.patch) by @malb created at 2007-10-12 10:36:04\n\n`multi_polynomial_ideal_singular_ntl_fixes.patch` fixes the doctest failures introduced by the switch to NTL.\n\nTo apply all patches:\n* install the new NTL spkg from http://sage.math.washington.edu/home/mabshoff/ntl-5.4.1.p6.spkg\n* install the new Singular spkg from http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-1-20071010.spkg\n* apply `6720.patch` attached above\n* apply `multi_polynomial_ideal_singular_ntl_fixes.patch`",
     "created_at": "2007-10-12T10:36:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5217",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [multi_polynomial_ideal_singular_ntl_fixes.patch](tarball://root/attachments/some-uuid/ticket842/multi_polynomial_ideal_singular_ntl_fixes.patch) by malb created at 2007-10-12 10:36:04
+Attachment [multi_polynomial_ideal_singular_ntl_fixes.patch](tarball://root/attachments/some-uuid/ticket842/multi_polynomial_ideal_singular_ntl_fixes.patch) by @malb created at 2007-10-12 10:36:04
 
 `multi_polynomial_ideal_singular_ntl_fixes.patch` fixes the doctest failures introduced by the switch to NTL.
 
@@ -250,7 +250,7 @@ archive/issue_comments_005218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5218",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

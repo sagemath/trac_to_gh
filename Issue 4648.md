@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4648
 archive/issue_comments_034991.json:
 ```json
 {
-    "body": "Attachment [trac-4648.patch](tarball://root/attachments/some-uuid/ticket4648/trac-4648.patch) by rlm created at 2009-01-23 13:34:37",
+    "body": "Attachment [trac-4648.patch](tarball://root/attachments/some-uuid/ticket4648/trac-4648.patch) by @rlmill created at 2009-01-23 13:34:37",
     "created_at": "2009-01-23T13:34:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4648#issuecomment-34991",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-4648.patch](tarball://root/attachments/some-uuid/ticket4648/trac-4648.patch) by rlm created at 2009-01-23 13:34:37
+Attachment [trac-4648.patch](tarball://root/attachments/some-uuid/ticket4648/trac-4648.patch) by @rlmill created at 2009-01-23 13:34:37
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_034992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4648#issuecomment-34992",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_034993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4648#issuecomment-34993",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

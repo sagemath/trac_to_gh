@@ -3,7 +3,7 @@
 archive/issues_005504.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt would be great if the line\n\n\"$SAGE_ROOT/local/bin/sage-sage\" $*\n\nin the top level script 'sage' would be changed to\n\n\"$SAGE_ROOT/local/bin/sage-sage\" \"$`@`\"\n\nso it doesn't split up command line arguments that happen to have spaces in them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5504\n\n",
+    "body": "Assignee: @williamstein\n\nIt would be great if the line\n\n\"$SAGE_ROOT/local/bin/sage-sage\" $*\n\nin the top level script 'sage' would be changed to\n\n\"$SAGE_ROOT/local/bin/sage-sage\" \"$`@`\"\n\nso it doesn't split up command line arguments that happen to have spaces in them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5504\n\n",
     "created_at": "2009-03-12T21:03:27Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_005504.json:
     "title": "fix shell script \"sage\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5504",
-    "user": "dangrayson"
+    "user": "@DanGrayson"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It would be great if the line
 

@@ -3,7 +3,7 @@
 archive/issues_009533.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif mpatel\n\nThe version of the [GNU Scientific Library (GSL)](http://www.gnu.org/software/gsl/) in Sage is 1.10, which is almost 3 years old. The latest, 1.14 was released about 4 months ago. \n\nThere is also a large number of bugs in the `spkg-check` and `spkg-install` files\n \n* `spkg-check` did not exit with a non-zero error code if the `make check` failed. It did however report the error, but it is highly likely to be missed in a large log file. This issue was reported at #9531, so that ticket can be closed when this one is closed. \n* `spkg-install` did not exit if `configure` failed to configure properly. Again the error was reported. \n* `spkg-install` did not exit if `make` failed to build GSL correctly. Again the error was reported. \n* `spkg-install` did not exit if `make install` failed to install GSL properly. Again the error was reported. \n* The self-tests were failing on some platforms, due to the fact `/bin/rm: cannot remove `libtoolT`. This was also true of the latest version, but exporting RM to \"rm -f\" solved that, as discussed at [solution for libtoolT error](http://toxpenguin.blogspot.com/2009/09/solution-for-libtoolt-error.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9533\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @qed777\n\nThe version of the [GNU Scientific Library (GSL)](http://www.gnu.org/software/gsl/) in Sage is 1.10, which is almost 3 years old. The latest, 1.14 was released about 4 months ago. \n\nThere is also a large number of bugs in the `spkg-check` and `spkg-install` files\n \n* `spkg-check` did not exit with a non-zero error code if the `make check` failed. It did however report the error, but it is highly likely to be missed in a large log file. This issue was reported at #9531, so that ticket can be closed when this one is closed. \n* `spkg-install` did not exit if `configure` failed to configure properly. Again the error was reported. \n* `spkg-install` did not exit if `make` failed to build GSL correctly. Again the error was reported. \n* `spkg-install` did not exit if `make install` failed to install GSL properly. Again the error was reported. \n* The self-tests were failing on some platforms, due to the fact `/bin/rm: cannot remove `libtoolT`. This was also true of the latest version, but exporting RM to \"rm -f\" solved that, as discussed at [solution for libtoolT error](http://toxpenguin.blogspot.com/2009/09/solution-for-libtoolt-error.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9533\n\n",
     "created_at": "2010-07-17T21:00:52Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_009533.json:
 ```
 Assignee: tbd
 
-CC:  leif mpatel
+CC:  @nexttime @qed777
 
 The version of the [GNU Scientific Library (GSL)](http://www.gnu.org/software/gsl/) in Sage is 1.10, which is almost 3 years old. The latest, 1.14 was released about 4 months ago. 
 
@@ -47,7 +47,7 @@ archive/issue_comments_091768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91768",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_091778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91778",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_091779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91779",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_091780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91780",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -447,16 +447,16 @@ Slightlly simpler spkg-check
 archive/issue_comments_091785.json:
 ```json
 {
-    "body": "Attachment [9533-improve-spkg-check.patch](tarball://root/attachments/some-uuid/ticket9533/9533-improve-spkg-check.patch) by leif created at 2010-07-18 18:43:34\n\nA few (more general) questions:\n* Should we make sure that `$SAGE_LOCAL` is set? (in both `spkg-install` and `spkg-check`)\n* Should optimization be disabled (`-O0`) if `SAGE_DEBUG` is `yes` as some other packages do?\n* Anything to add if `SAGE_FAT_BINARY` is `yes`?\n* I think `CFLAGS` et al. should be set in `spkg-check` as well, as `make check` usually involves compilation, too.\n* Also modifying `LDFLAGS`, e.g. if `SAGE64=yes`, even if currently not directly used by upstream, should be safe.\n\nP.S.: My intention regarding the `else ... exit 0` part was rather avoiding other people adding \"dead code\" below it. Looking at the (fairly small) file in whole this seems less a danger... :)",
+    "body": "Attachment [9533-improve-spkg-check.patch](tarball://root/attachments/some-uuid/ticket9533/9533-improve-spkg-check.patch) by @nexttime created at 2010-07-18 18:43:34\n\nA few (more general) questions:\n* Should we make sure that `$SAGE_LOCAL` is set? (in both `spkg-install` and `spkg-check`)\n* Should optimization be disabled (`-O0`) if `SAGE_DEBUG` is `yes` as some other packages do?\n* Anything to add if `SAGE_FAT_BINARY` is `yes`?\n* I think `CFLAGS` et al. should be set in `spkg-check` as well, as `make check` usually involves compilation, too.\n* Also modifying `LDFLAGS`, e.g. if `SAGE64=yes`, even if currently not directly used by upstream, should be safe.\n\nP.S.: My intention regarding the `else ... exit 0` part was rather avoiding other people adding \"dead code\" below it. Looking at the (fairly small) file in whole this seems less a danger... :)",
     "created_at": "2010-07-18T18:43:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91785",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [9533-improve-spkg-check.patch](tarball://root/attachments/some-uuid/ticket9533/9533-improve-spkg-check.patch) by leif created at 2010-07-18 18:43:34
+Attachment [9533-improve-spkg-check.patch](tarball://root/attachments/some-uuid/ticket9533/9533-improve-spkg-check.patch) by @nexttime created at 2010-07-18 18:43:34
 
 A few (more general) questions:
 * Should we make sure that `$SAGE_LOCAL` is set? (in both `spkg-install` and `spkg-check`)
@@ -479,7 +479,7 @@ archive/issue_comments_091786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91786",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -593,7 +593,7 @@ archive/issue_comments_091790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91790",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -663,7 +663,7 @@ archive/issue_comments_091793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91793",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -684,7 +684,7 @@ archive/issue_comments_091794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91794",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -766,7 +766,7 @@ archive/issue_comments_091797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91797",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -840,7 +840,7 @@ archive/issue_comments_091799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91799",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -938,7 +938,7 @@ archive/issue_comments_091803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91803",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1005,7 +1005,7 @@ archive/issue_comments_091806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91806",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1028,7 +1028,7 @@ archive/issue_comments_091807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91807",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1093,7 +1093,7 @@ archive/issue_comments_091809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91809",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1151,7 +1151,7 @@ archive/issue_comments_091811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91811",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1198,7 +1198,7 @@ archive/issue_comments_091812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91812",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1216,7 +1216,7 @@ archive/issue_comments_091813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91813",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1254,7 +1254,7 @@ archive/issue_comments_091814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91814",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1355,7 +1355,7 @@ archive/issue_comments_091818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91818",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1384,7 +1384,7 @@ archive/issue_comments_091819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91819",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1475,7 +1475,7 @@ archive/issue_comments_091823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91823",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1522,7 +1522,7 @@ archive/issue_comments_091825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9533#issuecomment-91825",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

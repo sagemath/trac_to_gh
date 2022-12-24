@@ -114,7 +114,7 @@ archive/issue_comments_052844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6496#issuecomment-52844",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_052845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6496#issuecomment-52845",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_052846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6496#issuecomment-52846",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_052847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6496#issuecomment-52847",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -423,16 +423,16 @@ Could you attach your new patch instead of inlining it?
 archive/issue_comments_052848.json:
 ```json
 {
-    "body": "Attachment [13222.patch](tarball://root/attachments/some-uuid/ticket6496/13222.patch) by lftabera created at 2009-11-09 22:32:22\n\nTested with sage 4.2",
+    "body": "Attachment [13222.patch](tarball://root/attachments/some-uuid/ticket6496/13222.patch) by @lftabera created at 2009-11-09 22:32:22\n\nTested with sage 4.2",
     "created_at": "2009-11-09T22:32:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6496#issuecomment-52848",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [13222.patch](tarball://root/attachments/some-uuid/ticket6496/13222.patch) by lftabera created at 2009-11-09 22:32:22
+Attachment [13222.patch](tarball://root/attachments/some-uuid/ticket6496/13222.patch) by @lftabera created at 2009-11-09 22:32:22
 
 Tested with sage 4.2
 
@@ -443,16 +443,16 @@ Tested with sage 4.2
 archive/issue_comments_052849.json:
 ```json
 {
-    "body": "Attachment [multi-poly-denom-referee.patch](tarball://root/attachments/some-uuid/ticket6496/multi-poly-denom-referee.patch) by robertwb created at 2009-11-20 04:29:12\n\napply on top of other",
+    "body": "Attachment [multi-poly-denom-referee.patch](tarball://root/attachments/some-uuid/ticket6496/multi-poly-denom-referee.patch) by @robertwb created at 2009-11-20 04:29:12\n\napply on top of other",
     "created_at": "2009-11-20T04:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6496#issuecomment-52849",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [multi-poly-denom-referee.patch](tarball://root/attachments/some-uuid/ticket6496/multi-poly-denom-referee.patch) by robertwb created at 2009-11-20 04:29:12
+Attachment [multi-poly-denom-referee.patch](tarball://root/attachments/some-uuid/ticket6496/multi-poly-denom-referee.patch) by @robertwb created at 2009-11-20 04:29:12
 
 apply on top of other
 
@@ -468,7 +468,7 @@ archive/issue_comments_052850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6496#issuecomment-52850",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_052851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6496#issuecomment-52851",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_052852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6496#issuecomment-52852",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -527,7 +527,7 @@ archive/issue_comments_052853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6496#issuecomment-52853",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

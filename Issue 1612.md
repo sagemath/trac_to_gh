@@ -3,7 +3,7 @@
 archive/issues_001612.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere doesn't seem to be a way to find eigenforms within spaces of modular forms.\n\nAlso, the sturm_bound and hecke_bound methods seem not to work:\n\n\n```\nS37=CuspForms(37,2)\nS37.sturm_bound()}}}\n\n{{{Exception (click to the left for traceback):\n...\nAttributeError: 'CuspidalSubmodule_g0_Q' object has no attribute '_ModularFormsSpace__sturm_bound'}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/1612\n\n",
+    "body": "Assignee: @williamstein\n\nThere doesn't seem to be a way to find eigenforms within spaces of modular forms.\n\nAlso, the sturm_bound and hecke_bound methods seem not to work:\n\n\n```\nS37=CuspForms(37,2)\nS37.sturm_bound()}}}\n\n{{{Exception (click to the left for traceback):\n...\nAttributeError: 'CuspidalSubmodule_g0_Q' object has no attribute '_ModularFormsSpace__sturm_bound'}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/1612\n\n",
     "created_at": "2007-12-27T16:23:08Z",
     "labels": [
         "modular forms",
@@ -17,7 +17,7 @@ archive/issues_001612.json:
     "user": "ljpk"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There doesn't seem to be a way to find eigenforms within spaces of modular forms.
 
@@ -48,7 +48,7 @@ archive/issue_comments_010258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1612#issuecomment-10258",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_010259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1612#issuecomment-10259",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_010260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1612#issuecomment-10260",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

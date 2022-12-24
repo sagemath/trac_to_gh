@@ -14,7 +14,7 @@ archive/issues_002015.json:
     "title": "crap -- twisted contains a bunch of ._ osx crap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2015",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

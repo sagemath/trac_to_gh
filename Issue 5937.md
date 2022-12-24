@@ -3,7 +3,7 @@
 archive/issues_005937.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nHere is *yet another* example of non-tested code being totally broken.  Try this in the notebook.\n\n\n```\nQ = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'],\n   num_edges=['<=',5],min_degree=1)\n\nQ.show(with_picture=True)\n```\n\n\nthis silently outputs absolutely nothing. \n\nThe doctests don't test this -- they only test that this fails (with a message) on the command line. \n\nShorterm fix: completely remove this option from the documentation and code.\n\nLonterm fix: actually track down and fix the bug -- this would be nice, since I know the output looks good (I've seen Emily demo it).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5937\n\n",
+    "body": "Assignee: @rlmill\n\nHere is *yet another* example of non-tested code being totally broken.  Try this in the notebook.\n\n\n```\nQ = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'],\n   num_edges=['<=',5],min_degree=1)\n\nQ.show(with_picture=True)\n```\n\n\nthis silently outputs absolutely nothing. \n\nThe doctests don't test this -- they only test that this fails (with a message) on the command line. \n\nShorterm fix: completely remove this option from the documentation and code.\n\nLonterm fix: actually track down and fix the bug -- this would be nice, since I know the output looks good (I've seen Emily demo it).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5937\n\n",
     "created_at": "2009-04-29T16:05:22Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_005937.json:
     "title": "graph theory -- showing the result of a database query with_picture=True is totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5937",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Here is *yet another* example of non-tested code being totally broken.  Try this in the notebook.
 
@@ -74,7 +74,7 @@ archive/issue_comments_046938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5937#issuecomment-46938",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_046939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5937#issuecomment-46939",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_046940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5937#issuecomment-46940",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007350.json:
     "title": "notebook (sagenb); implement a more secure multi-computer server model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7350",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

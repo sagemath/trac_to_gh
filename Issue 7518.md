@@ -3,7 +3,7 @@
 archive/issues_007518.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  david.kirkby@onetel.net\n\nObserve:\n\n\n```\nsage: Q.<x> = ZZ[]\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n<hang forever!>\n```\n\n\nwhereas\n\n\n```\nsage: Q.<x> = PolynomialRing(ZZ,implementation=\"NTL\")\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl'>\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n(4, 2, 0)\n```\n\n\nworks fine.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7518\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  david.kirkby@onetel.net\n\nObserve:\n\n\n```\nsage: Q.<x> = ZZ[]\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n<hang forever!>\n```\n\n\nwhereas\n\n\n```\nsage: Q.<x> = PolynomialRing(ZZ,implementation=\"NTL\")\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl'>\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n(4, 2, 0)\n```\n\n\nworks fine.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7518\n\n",
     "created_at": "2009-11-23T07:00:21Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007518.json:
     "title": "flint -- hangs computing certain degenerate case xgcd's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7518",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  david.kirkby@onetel.net
 
@@ -84,7 +84,7 @@ archive/issue_comments_063684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7518#issuecomment-63684",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_063685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7518#issuecomment-63685",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_063687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7518#issuecomment-63687",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_063689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7518#issuecomment-63689",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -215,16 +215,16 @@ Changing component from basic arithmetic to packages.
 archive/issue_comments_063690.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to tbd.",
+    "body": "Changing assignee from @aghitza to tbd.",
     "created_at": "2011-09-01T22:46:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7518#issuecomment-63690",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Changing assignee from AlexGhitza to tbd.
+Changing assignee from @aghitza to tbd.
 
 
 
@@ -238,7 +238,7 @@ archive/issue_comments_063691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7518#issuecomment-63691",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_063692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7518#issuecomment-63692",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_063693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7518#issuecomment-63693",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_063694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7518#issuecomment-63694",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

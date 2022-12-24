@@ -14,7 +14,7 @@ archive/issues_002576.json:
     "title": "preserve docstrings of decorated methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2576",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -52,7 +52,7 @@ archive/issue_comments_017607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2576#issuecomment-17607",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,16 +65,16 @@ this fixes one particular instance of the problem
 archive/issue_comments_017608.json:
 ```json
 {
-    "body": "Attachment [sage-2576.patch](tarball://root/attachments/some-uuid/ticket2576/sage-2576.patch) by was created at 2008-03-17 18:52:06\n\nTo test the attached:\n\n```\nR.<x,y,z> = PolynomialRing(QQ, 3, order='lex')\np = z^2 + 1; q = z^3 + 2\nI = (p*q^2, y-z^2)*R\npd = I.complete_primary_decomposition?\n```\n",
+    "body": "Attachment [sage-2576.patch](tarball://root/attachments/some-uuid/ticket2576/sage-2576.patch) by @williamstein created at 2008-03-17 18:52:06\n\nTo test the attached:\n\n```\nR.<x,y,z> = PolynomialRing(QQ, 3, order='lex')\np = z^2 + 1; q = z^3 + 2\nI = (p*q^2, y-z^2)*R\npd = I.complete_primary_decomposition?\n```\n",
     "created_at": "2008-03-17T18:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2576#issuecomment-17608",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2576.patch](tarball://root/attachments/some-uuid/ticket2576/sage-2576.patch) by was created at 2008-03-17 18:52:06
+Attachment [sage-2576.patch](tarball://root/attachments/some-uuid/ticket2576/sage-2576.patch) by @williamstein created at 2008-03-17 18:52:06
 
 To test the attached:
 
@@ -98,7 +98,7 @@ archive/issue_comments_017609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2576#issuecomment-17609",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

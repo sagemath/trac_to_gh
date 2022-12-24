@@ -3,7 +3,7 @@
 archive/issues_009685.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jdemeyer\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9685\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jdemeyer\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9685\n\n",
     "created_at": "2010-08-04T13:30:38Z",
     "labels": [
         "user interface",
@@ -14,12 +14,12 @@ archive/issues_009685.json:
     "title": "constructor for the all ones matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9685",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9685
 archive/issue_comments_094147.json:
 ```json
 {
-    "body": "Attachment [trac_9685.patch](tarball://root/attachments/some-uuid/ticket9685/trac_9685.patch) by rlm created at 2010-08-04 13:34:03",
+    "body": "Attachment [trac_9685.patch](tarball://root/attachments/some-uuid/ticket9685/trac_9685.patch) by @rlmill created at 2010-08-04 13:34:03",
     "created_at": "2010-08-04T13:34:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9685#issuecomment-94147",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9685.patch](tarball://root/attachments/some-uuid/ticket9685/trac_9685.patch) by rlm created at 2010-08-04 13:34:03
+Attachment [trac_9685.patch](tarball://root/attachments/some-uuid/ticket9685/trac_9685.patch) by @rlmill created at 2010-08-04 13:34:03
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_094148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9685#issuecomment-94148",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_094151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9685#issuecomment-94151",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_094152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9685#issuecomment-94152",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_094154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9685#issuecomment-94154",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_094158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9685#issuecomment-94158",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_094159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9685#issuecomment-94159",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006393.json:
     "title": "Jacobi sums incorrect when exactly one chacater is trivial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6393",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: tbd
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6393
 archive/issue_comments_051366.json:
 ```json
 {
-    "body": "Attachment [trac_6393-jacobi-sum.patch](tarball://root/attachments/some-uuid/ticket6393/trac_6393-jacobi-sum.patch) by wdj created at 2009-06-24 14:41:07\n\napplies to 4.0.2.rc3 passes sage -testall",
+    "body": "Attachment [trac_6393-jacobi-sum.patch](tarball://root/attachments/some-uuid/ticket6393/trac_6393-jacobi-sum.patch) by @wdjoyner created at 2009-06-24 14:41:07\n\napplies to 4.0.2.rc3 passes sage -testall",
     "created_at": "2009-06-24T14:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6393#issuecomment-51366",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_6393-jacobi-sum.patch](tarball://root/attachments/some-uuid/ticket6393/trac_6393-jacobi-sum.patch) by wdj created at 2009-06-24 14:41:07
+Attachment [trac_6393-jacobi-sum.patch](tarball://root/attachments/some-uuid/ticket6393/trac_6393-jacobi-sum.patch) by @wdjoyner created at 2009-06-24 14:41:07
 
 applies to 4.0.2.rc3 passes sage -testall
 
@@ -71,7 +71,7 @@ archive/issue_comments_051367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6393#issuecomment-51367",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -84,16 +84,16 @@ Changing component from algebra to modular forms.
 archive/issue_comments_051368.json:
 ```json
 {
-    "body": "Changing assignee from tbd to craigcitro.",
+    "body": "Changing assignee from tbd to @craigcitro.",
     "created_at": "2009-06-24T14:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6393#issuecomment-51368",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Changing assignee from tbd to craigcitro.
+Changing assignee from tbd to @craigcitro.
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_051369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6393#issuecomment-51369",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_051370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6393#issuecomment-51370",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_051371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6393#issuecomment-51371",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

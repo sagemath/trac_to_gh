@@ -3,7 +3,7 @@
 archive/issues_001620.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1620\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1620\n\n",
     "created_at": "2007-12-29T04:34:42Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001620.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1620
 archive/issue_comments_010312.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-12-29T04:37:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1620",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_010312.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 

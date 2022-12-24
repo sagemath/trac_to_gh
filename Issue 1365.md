@@ -3,7 +3,7 @@
 archive/issues_001365.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  donmorrison robertwb\n\nRobert Bradshaw points out that golden_ratio._algebraic_ might as well synthesize the value, instead of using a special-purpose function in qqbar.py (and there's a patch to do this as part of Robert's patch at #1275).  But I want to make qqbar.py a bit more efficient for that case, before making the change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1365\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  donmorrison @robertwb\n\nRobert Bradshaw points out that golden_ratio._algebraic_ might as well synthesize the value, instead of using a special-purpose function in qqbar.py (and there's a patch to do this as part of Robert's patch at #1275).  But I want to make qqbar.py a bit more efficient for that case, before making the change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1365\n\n",
     "created_at": "2007-12-02T05:28:02Z",
     "labels": [
         "algebraic geometry",
@@ -17,9 +17,9 @@ archive/issues_001365.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  donmorrison robertwb
+CC:  donmorrison @robertwb
 
 Robert Bradshaw points out that golden_ratio._algebraic_ might as well synthesize the value, instead of using a special-purpose function in qqbar.py (and there's a patch to do this as part of Robert's patch at #1275).  But I want to make qqbar.py a bit more efficient for that case, before making the change.
 
@@ -52,7 +52,7 @@ Changing status from new to assigned.
 archive/issue_comments_008737.json:
 ```json
 {
-    "body": "Changing assignee from was to cwitty.",
+    "body": "Changing assignee from @williamstein to cwitty.",
     "created_at": "2007-12-02T18:24:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1365",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_008737.json:
 }
 ```
 
-Changing assignee from was to cwitty.
+Changing assignee from @williamstein to cwitty.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_008738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1365#issuecomment-8738",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_008744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1365#issuecomment-8744",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_008745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1365#issuecomment-8745",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_008746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1365#issuecomment-8746",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_008747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1365#issuecomment-8747",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

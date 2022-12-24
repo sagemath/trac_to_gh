@@ -14,7 +14,7 @@ archive/issues_006961.json:
     "title": "provide wrapper for psi function of GiNaC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6961",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 From sage-support:
@@ -57,7 +57,7 @@ archive/issue_comments_057575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6961#issuecomment-57575",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -77,16 +77,16 @@ but "psi" is unknown to Sage...
 archive/issue_comments_057576.json:
 ```json
 {
-    "body": "Attachment [trac_6961-psi.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-psi.patch) by burcin created at 2010-01-17 05:00:00\n\nwrappers for psi function from pynac",
+    "body": "Attachment [trac_6961-psi.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-psi.patch) by @burcin created at 2010-01-17 05:00:00\n\nwrappers for psi function from pynac",
     "created_at": "2010-01-17T05:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6961#issuecomment-57576",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6961-psi.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-psi.patch) by burcin created at 2010-01-17 05:00:00
+Attachment [trac_6961-psi.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-psi.patch) by @burcin created at 2010-01-17 05:00:00
 
 wrappers for psi function from pynac
 
@@ -102,7 +102,7 @@ archive/issue_comments_057577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6961#issuecomment-57577",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_057578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6961#issuecomment-57578",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_057579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6961#issuecomment-57579",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_057580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6961#issuecomment-57580",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -237,16 +237,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_057583.json:
 ```json
 {
-    "body": "Attachment [trac_6961-psi.rebased.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-psi.rebased.patch) by burcin created at 2010-01-25 20:23:22\n\nrebased",
+    "body": "Attachment [trac_6961-psi.rebased.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-psi.rebased.patch) by @burcin created at 2010-01-25 20:23:22\n\nrebased",
     "created_at": "2010-01-25T20:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6961#issuecomment-57583",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6961-psi.rebased.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-psi.rebased.patch) by burcin created at 2010-01-25 20:23:22
+Attachment [trac_6961-psi.rebased.patch](tarball://root/attachments/some-uuid/ticket6961/trac_6961-psi.rebased.patch) by @burcin created at 2010-01-25 20:23:22
 
 rebased
 
@@ -262,7 +262,7 @@ archive/issue_comments_057584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6961#issuecomment-57584",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_057585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6961#issuecomment-57585",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_057586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6961#issuecomment-57586",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_057594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6961#issuecomment-57594",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_057595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6961#issuecomment-57595",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

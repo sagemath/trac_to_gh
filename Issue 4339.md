@@ -3,7 +3,7 @@
 archive/issues_004339.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  nilsskoruppa\n\nCraig has an email from Nils with this code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4339\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  nilsskoruppa\n\nCraig has an email from Nils with this code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4339\n\n",
     "created_at": "2008-10-22T17:49:42Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_004339.json:
     "title": "modular forms -- incorporate Nils Skoruppa's code for computing generators for the ring of modular forms of given level",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4339",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 CC:  nilsskoruppa
 
@@ -87,7 +87,7 @@ archive/issue_comments_031826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4339#issuecomment-31826",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_031827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4339#issuecomment-31827",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_031828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4339#issuecomment-31828",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_031829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4339#issuecomment-31829",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_031830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4339#issuecomment-31830",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_031831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4339#issuecomment-31831",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_031832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4339#issuecomment-31832",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

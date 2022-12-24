@@ -3,7 +3,7 @@
 archive/issues_007476.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  jason\n\nThe theorem from Nash-Williams on the existence of k edge-disjoint spanning trees in a graph is both important, useful, and polynomial to compute. This could be implemented using the short proof described in the following article :\n\nhttp://arxiv.org/abs/0911.2809\n\nOr, if we achieve to eventually define in Sage a class Matroid, this could be done through the Matroid Union Theorem as presented in Schrijver's book.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7476\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nThe theorem from Nash-Williams on the existence of k edge-disjoint spanning trees in a graph is both important, useful, and polynomial to compute. This could be implemented using the short proof described in the following article :\n\nhttp://arxiv.org/abs/0911.2809\n\nOr, if we achieve to eventually define in Sage a class Matroid, this could be done through the Matroid Union Theorem as presented in Schrijver's book.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7476\n\n",
     "created_at": "2009-11-17T06:11:37Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007476.json:
     "title": "Edge-disjoint spanning trees",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7476",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  jason
+CC:  @jasongrout
 
 The theorem from Nash-Williams on the existence of k edge-disjoint spanning trees in a graph is both important, useful, and polynomial to compute. This could be implemented using the short proof described in the following article :
 
@@ -43,7 +43,7 @@ archive/issue_comments_063007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63007",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_063008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63008",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_063009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63009",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_063010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63010",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_063011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63011",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_063012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63012",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_063013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63013",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_063014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63014",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_063015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63015",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_063016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63016",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_063017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63017",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_063018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63018",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -260,16 +260,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_063019.json:
 ```json
 {
-    "body": "Attachment [trac_7476.patch](tarball://root/attachments/some-uuid/ticket7476/trac_7476.patch) by rlm created at 2010-06-21 17:49:43\n\nLooks good to me.",
+    "body": "Attachment [trac_7476.patch](tarball://root/attachments/some-uuid/ticket7476/trac_7476.patch) by @rlmill created at 2010-06-21 17:49:43\n\nLooks good to me.",
     "created_at": "2010-06-21T17:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63019",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7476.patch](tarball://root/attachments/some-uuid/ticket7476/trac_7476.patch) by rlm created at 2010-06-21 17:49:43
+Attachment [trac_7476.patch](tarball://root/attachments/some-uuid/ticket7476/trac_7476.patch) by @rlmill created at 2010-06-21 17:49:43
 
 Looks good to me.
 
@@ -285,7 +285,7 @@ archive/issue_comments_063020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7476",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7476#issuecomment-63020",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

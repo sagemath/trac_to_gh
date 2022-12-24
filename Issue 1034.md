@@ -3,7 +3,7 @@
 archive/issues_001034.json:
 ```json
 {
-    "body": "Assignee: malb\n\nWhat we call 'revlex' and which translates to 'rp' in Singular is not what is called 'revlex' in literature. Also our generic implementation doesn't match the one of Singular. This needs to be cleaned up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1034\n\n",
+    "body": "Assignee: @malb\n\nWhat we call 'revlex' and which translates to 'rp' in Singular is not what is called 'revlex' in literature. Also our generic implementation doesn't match the one of Singular. This needs to be cleaned up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1034\n\n",
     "created_at": "2007-10-30T15:03:33Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001034.json:
     "title": "clean up 'revlex' term ordering mess",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1034",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 What we call 'revlex' and which translates to 'rp' in Singular is not what is called 'revlex' in literature. Also our generic implementation doesn't match the one of Singular. This needs to be cleaned up.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1034
 archive/issue_comments_006318.json:
 ```json
 {
-    "body": "Attachment [revlex.patch](tarball://root/attachments/some-uuid/ticket1034/revlex.patch) by malb created at 2007-10-30 16:06:11",
+    "body": "Attachment [revlex.patch](tarball://root/attachments/some-uuid/ticket1034/revlex.patch) by @malb created at 2007-10-30 16:06:11",
     "created_at": "2007-10-30T16:06:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1034#issuecomment-6318",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [revlex.patch](tarball://root/attachments/some-uuid/ticket1034/revlex.patch) by malb created at 2007-10-30 16:06:11
+Attachment [revlex.patch](tarball://root/attachments/some-uuid/ticket1034/revlex.patch) by @malb created at 2007-10-30 16:06:11
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_006319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1034#issuecomment-6319",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_006320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1034#issuecomment-6320",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

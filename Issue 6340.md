@@ -3,7 +3,7 @@
 archive/issues_006340.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\nsage: type(var('x',ns=False))\n<type 'sage.symbolic.expression.Expression'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6340\n\n",
+    "body": "Assignee: @burcin\n\n\n```\nsage: type(var('x',ns=False))\n<type 'sage.symbolic.expression.Expression'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6340\n\n",
     "created_at": "2009-06-16T19:22:25Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_006340.json:
     "title": "var('x',ns=False)  -- should go boom but silently gives a new symbolic variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6340",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -42,7 +42,7 @@ archive/issue_comments_050604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50604",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_050605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50605",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_050606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50606",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_050607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50607",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_050608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50608",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -141,16 +141,16 @@ Based on 4.1.1 and #6559
 archive/issue_comments_050609.json:
 ```json
 {
-    "body": "Attachment [trac_6340-var-ns-based-6559.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-var-ns-based-6559.patch) by kcrisman created at 2009-09-21 15:16:20\n\nDepending on which one is reviewed first, here's a patch on top of #6559.  Should work identically.",
+    "body": "Attachment [trac_6340-var-ns-based-6559.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-var-ns-based-6559.patch) by @kcrisman created at 2009-09-21 15:16:20\n\nDepending on which one is reviewed first, here's a patch on top of #6559.  Should work identically.",
     "created_at": "2009-09-21T15:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50609",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6340-var-ns-based-6559.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-var-ns-based-6559.patch) by kcrisman created at 2009-09-21 15:16:20
+Attachment [trac_6340-var-ns-based-6559.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-var-ns-based-6559.patch) by @kcrisman created at 2009-09-21 15:16:20
 
 Depending on which one is reviewed first, here's a patch on top of #6559.  Should work identically.
 
@@ -166,7 +166,7 @@ archive/issue_comments_050610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50610",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_050611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50611",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_050612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50612",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_050613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50613",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_050614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50614",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_050615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50615",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -305,16 +305,16 @@ Based on 4.1.2.alpha2
 archive/issue_comments_050616.json:
 ```json
 {
-    "body": "Attachment [trac_6340-var-ns.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-var-ns.patch) by kcrisman created at 2009-09-22 19:45:49\n\nThis should take care of it, I hope.",
+    "body": "Attachment [trac_6340-var-ns.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-var-ns.patch) by @kcrisman created at 2009-09-22 19:45:49\n\nThis should take care of it, I hope.",
     "created_at": "2009-09-22T19:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50616",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6340-var-ns.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-var-ns.patch) by kcrisman created at 2009-09-22 19:45:49
+Attachment [trac_6340-var-ns.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-var-ns.patch) by @kcrisman created at 2009-09-22 19:45:49
 
 This should take care of it, I hope.
 
@@ -325,16 +325,16 @@ This should take care of it, I hope.
 archive/issue_comments_050617.json:
 ```json
 {
-    "body": "Attachment [trac_6340-missing_bits.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-missing_bits.patch) by burcin created at 2009-09-22 22:42:47\n\nmore doctest fixes",
+    "body": "Attachment [trac_6340-missing_bits.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-missing_bits.patch) by @burcin created at 2009-09-22 22:42:47\n\nmore doctest fixes",
     "created_at": "2009-09-22T22:42:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50617",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6340-missing_bits.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-missing_bits.patch) by burcin created at 2009-09-22 22:42:47
+Attachment [trac_6340-missing_bits.patch](tarball://root/attachments/some-uuid/ticket6340/trac_6340-missing_bits.patch) by @burcin created at 2009-09-22 22:42:47
 
 more doctest fixes
 
@@ -350,7 +350,7 @@ archive/issue_comments_050618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50618",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_050619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50619",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000599.json:
     "title": "sage -valgrind log file is placed in bad location.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/599",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: malb or mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_003096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/599#issuecomment-3096",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -50,16 +50,16 @@ change location of valgrind output
 archive/issue_comments_003097.json:
 ```json
 {
-    "body": "Attachment [sage-valgrind_output_place.patch](tarball://root/attachments/some-uuid/ticket599/sage-valgrind_output_place.patch) by burcin created at 2007-09-06 17:36:02\n\nOn IRC it was suggested the place should be $HOME/.sage/sage-memcheck.$PID\n\nSep 06 19:25:58 <malb>  I vote for $HOME/.sage/sage-memcheck.PID\nSep 06 19:26:23 <wstein>        #599: +1",
+    "body": "Attachment [sage-valgrind_output_place.patch](tarball://root/attachments/some-uuid/ticket599/sage-valgrind_output_place.patch) by @burcin created at 2007-09-06 17:36:02\n\nOn IRC it was suggested the place should be $HOME/.sage/sage-memcheck.$PID\n\nSep 06 19:25:58 <malb>  I vote for $HOME/.sage/sage-memcheck.PID\nSep 06 19:26:23 <wstein>        #599: +1",
     "created_at": "2007-09-06T17:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/599#issuecomment-3097",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [sage-valgrind_output_place.patch](tarball://root/attachments/some-uuid/ticket599/sage-valgrind_output_place.patch) by burcin created at 2007-09-06 17:36:02
+Attachment [sage-valgrind_output_place.patch](tarball://root/attachments/some-uuid/ticket599/sage-valgrind_output_place.patch) by @burcin created at 2007-09-06 17:36:02
 
 On IRC it was suggested the place should be $HOME/.sage/sage-memcheck.$PID
 

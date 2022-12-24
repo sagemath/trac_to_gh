@@ -3,7 +3,7 @@
 archive/issues_009144.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  chapoton\n\nIf we did this, then we could maybe just eliminate the \"Print\" button?  I don't know; maybe.\n\nSee http://groups.google.com/group/sage-devel/browse_frm/thread/98969b6b9035bf6d/3c5d4c2647e974b7 for a discussion of how to do this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9144\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nIf we did this, then we could maybe just eliminate the \"Print\" button?  I don't know; maybe.\n\nSee http://groups.google.com/group/sage-devel/browse_frm/thread/98969b6b9035bf6d/3c5d4c2647e974b7 for a discussion of how to do this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9144\n\n",
     "created_at": "2010-06-05T03:40:03Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009144.json:
     "title": "Make printing automatically load a print stylesheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9144",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  chapoton
+CC:  @fchapoton
 
 If we did this, then we could maybe just eliminate the "Print" button?  I don't know; maybe.
 
@@ -41,7 +41,7 @@ archive/issue_comments_085389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85389",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_085390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85390",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_085391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85391",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_085392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85392",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_085393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85393",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

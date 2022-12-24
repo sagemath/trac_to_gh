@@ -3,7 +3,7 @@
 archive/issues_004757.json:
 ```json
 {
-    "body": "Assignee: was\n\nI don't care what anybody says, this is a BUG.  Either the command should immediately raise a NotImplementedError, or it should give meaningful output (e.g., not vector spaces of dimension 0!)\n\n\n```\nsage: a = random_matrix(CDF,2)\nsage: a.eigenspaces_right()\n\n[\n(1.68954005899 + 0.570924387184*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[]),\n(-0.0345737707895 + 0.485480056628*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[])\n]\n```\n\n\nWe easily and quickly have the eigenvectors and eigenvalues in this case, so I don't see what the problem is:\n\n```\nsage: a.eigenvectors_right()\n\n([1.68954005899 + 0.570924387184*I, -0.0345737707895 + 0.485480056628*I],\n [                    0.800587795941                     0.758354735061]\n[  0.545800288485 - 0.24730795798*I -0.194687766428 + 0.622089036565*I])\n```\n\n\nSame comments for eigenspaces_left.\n\nNote that oddly a.eigenspaces() gives a sensible answer though neither left nor right does.\n\n```\nsage: a.eigenspaces_right()\n[\n(1.68954005899 + 0.570924387184*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[]),\n(-0.0345737707895 + 0.485480056628*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[])\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4757\n\n",
+    "body": "Assignee: @williamstein\n\nI don't care what anybody says, this is a BUG.  Either the command should immediately raise a NotImplementedError, or it should give meaningful output (e.g., not vector spaces of dimension 0!)\n\n\n```\nsage: a = random_matrix(CDF,2)\nsage: a.eigenspaces_right()\n\n[\n(1.68954005899 + 0.570924387184*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[]),\n(-0.0345737707895 + 0.485480056628*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[])\n]\n```\n\n\nWe easily and quickly have the eigenvectors and eigenvalues in this case, so I don't see what the problem is:\n\n```\nsage: a.eigenvectors_right()\n\n([1.68954005899 + 0.570924387184*I, -0.0345737707895 + 0.485480056628*I],\n [                    0.800587795941                     0.758354735061]\n[  0.545800288485 - 0.24730795798*I -0.194687766428 + 0.622089036565*I])\n```\n\n\nSame comments for eigenspaces_left.\n\nNote that oddly a.eigenspaces() gives a sensible answer though neither left nor right does.\n\n```\nsage: a.eigenspaces_right()\n[\n(1.68954005899 + 0.570924387184*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[]),\n(-0.0345737707895 + 0.485480056628*I, Vector space of degree 2 and dimension 0 over Complex Double Field\nUser basis matrix:\n[])\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4757\n\n",
     "created_at": "2008-12-11T05:17:47Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004757.json:
     "title": "eigenspaces_right over CDF gives total nonsense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4757",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I don't care what anybody says, this is a BUG.  Either the command should immediately raise a NotImplementedError, or it should give meaningful output (e.g., not vector spaces of dimension 0!)
 
@@ -81,7 +81,7 @@ archive/issue_comments_036041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4757#issuecomment-36041",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -96,16 +96,16 @@ Note that the eigenspaces method is now inherited from the parent class, and doe
 archive/issue_comments_036042.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-12-11T08:06:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4757#issuecomment-36042",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -119,7 +119,7 @@ archive/issue_comments_036043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4757#issuecomment-36043",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -132,16 +132,16 @@ Changing status from new to assigned.
 archive/issue_comments_036044.json:
 ```json
 {
-    "body": "Attachment [trac_4757.patch](tarball://root/attachments/some-uuid/ticket4757/trac_4757.patch) by mhansen created at 2008-12-11 08:07:05",
+    "body": "Attachment [trac_4757.patch](tarball://root/attachments/some-uuid/ticket4757/trac_4757.patch) by @mwhansen created at 2008-12-11 08:07:05",
     "created_at": "2008-12-11T08:07:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4757#issuecomment-36044",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4757.patch](tarball://root/attachments/some-uuid/ticket4757/trac_4757.patch) by mhansen created at 2008-12-11 08:07:05
+Attachment [trac_4757.patch](tarball://root/attachments/some-uuid/ticket4757/trac_4757.patch) by @mwhansen created at 2008-12-11 08:07:05
 
 
 
@@ -155,7 +155,7 @@ archive/issue_comments_036045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4757#issuecomment-36045",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_036046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4757#issuecomment-36046",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_036047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4757#issuecomment-36047",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -208,16 +208,16 @@ apply on top of previous patches
 archive/issue_comments_036048.json:
 ```json
 {
-    "body": "Attachment [trac_4757_review.patch](tarball://root/attachments/some-uuid/ticket4757/trac_4757_review.patch) by jason created at 2008-12-12 21:08:14\n\nThere already is a doctest which I think adequately covers the issue, but numerical error makes it so that it is marked #random.\n\nErring on the side of caution, my review patch probably ought to also be reviewed, as it changes code.",
+    "body": "Attachment [trac_4757_review.patch](tarball://root/attachments/some-uuid/ticket4757/trac_4757_review.patch) by @jasongrout created at 2008-12-12 21:08:14\n\nThere already is a doctest which I think adequately covers the issue, but numerical error makes it so that it is marked #random.\n\nErring on the side of caution, my review patch probably ought to also be reviewed, as it changes code.",
     "created_at": "2008-12-12T21:08:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4757#issuecomment-36048",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_4757_review.patch](tarball://root/attachments/some-uuid/ticket4757/trac_4757_review.patch) by jason created at 2008-12-12 21:08:14
+Attachment [trac_4757_review.patch](tarball://root/attachments/some-uuid/ticket4757/trac_4757_review.patch) by @jasongrout created at 2008-12-12 21:08:14
 
 There already is a doctest which I think adequately covers the issue, but numerical error makes it so that it is marked #random.
 
@@ -264,7 +264,7 @@ archive/issue_comments_036050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4757#issuecomment-36050",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_036051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4757#issuecomment-36051",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008456.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  rishi jason rlm\n\n1) Cythonize for speed.\n2) Insert original object into namespace on resolution\n3) Support import *\n\nIssue created by migration from https://trac.sagemath.org/ticket/8456\n\n",
+    "body": "Assignee: tbd\n\nCC:  @rishikesha @jasongrout @rlmill\n\n1) Cythonize for speed.\n2) Insert original object into namespace on resolution\n3) Support import *\n\nIssue created by migration from https://trac.sagemath.org/ticket/8456\n\n",
     "created_at": "2010-03-06T08:52:13Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_008456.json:
     "title": "lazy import improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8456",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
 
-CC:  rishi jason rlm
+CC:  @rishikesha @jasongrout @rlmill
 
 1) Cythonize for speed.
 2) Insert original object into namespace on resolution
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8456
 archive/issue_comments_076082.json:
 ```json
 {
-    "body": "Attachment [8456-lazy-import-enhancements.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-enhancements.patch) by robertwb created at 2010-03-06 09:37:25",
+    "body": "Attachment [8456-lazy-import-enhancements.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-enhancements.patch) by @robertwb created at 2010-03-06 09:37:25",
     "created_at": "2010-03-06T09:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76082",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8456-lazy-import-enhancements.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-enhancements.patch) by robertwb created at 2010-03-06 09:37:25
+Attachment [8456-lazy-import-enhancements.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-enhancements.patch) by @robertwb created at 2010-03-06 09:37:25
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_076083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76083",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_076084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76084",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_076085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76085",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_076086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76086",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_076087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76087",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_076088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76088",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -257,16 +257,16 @@ As for backing out, you can do "sage -hg rollback"
 archive/issue_comments_076089.json:
 ```json
 {
-    "body": "Attachment [8456-lazy-import-fixes.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-fixes.patch) by robertwb created at 2010-06-22 20:45:27",
+    "body": "Attachment [8456-lazy-import-fixes.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-fixes.patch) by @robertwb created at 2010-06-22 20:45:27",
     "created_at": "2010-06-22T20:45:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76089",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8456-lazy-import-fixes.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-fixes.patch) by robertwb created at 2010-06-22 20:45:27
+Attachment [8456-lazy-import-fixes.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-fixes.patch) by @robertwb created at 2010-06-22 20:45:27
 
 
 
@@ -280,7 +280,7 @@ archive/issue_comments_076090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76090",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_076091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76091",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_076092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76092",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_076093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76093",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_076094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76094",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_076095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76095",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_076096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76096",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_076097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76097",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_076098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76098",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -470,7 +470,7 @@ archive/issue_comments_076099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76099",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_076100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76100",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -506,7 +506,7 @@ archive/issue_comments_076101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76101",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_076102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76102",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -557,7 +557,7 @@ archive/issue_comments_076103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76103",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -575,7 +575,7 @@ archive/issue_comments_076104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76104",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -588,16 +588,16 @@ Sorry, I missed the dependency... :/
 archive/issue_comments_076105.json:
 ```json
 {
-    "body": "Attachment [8456-lazy-import-cython-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-cython-rebase-4.6.patch) by robertwb created at 2010-12-02 06:31:03\n\napply instead of 8456-lazy-import-cython.patch",
+    "body": "Attachment [8456-lazy-import-cython-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-cython-rebase-4.6.patch) by @robertwb created at 2010-12-02 06:31:03\n\napply instead of 8456-lazy-import-cython.patch",
     "created_at": "2010-12-02T06:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76105",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8456-lazy-import-cython-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-cython-rebase-4.6.patch) by robertwb created at 2010-12-02 06:31:03
+Attachment [8456-lazy-import-cython-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-cython-rebase-4.6.patch) by @robertwb created at 2010-12-02 06:31:03
 
 apply instead of 8456-lazy-import-cython.patch
 
@@ -613,7 +613,7 @@ archive/issue_comments_076106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76106",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_076107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76107",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_076108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76108",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -681,7 +681,7 @@ archive/issue_comments_076109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76109",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -694,16 +694,16 @@ No, you're absolutely right, that (half) doctest is an oversight on my part.
 archive/issue_comments_076110.json:
 ```json
 {
-    "body": "Attachment [8456-lazy-import-enhancements-4.6.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-enhancements-4.6.patch) by robertwb created at 2010-12-07 10:21:50",
+    "body": "Attachment [8456-lazy-import-enhancements-4.6.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-enhancements-4.6.patch) by @robertwb created at 2010-12-07 10:21:50",
     "created_at": "2010-12-07T10:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76110",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8456-lazy-import-enhancements-4.6.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-enhancements-4.6.patch) by robertwb created at 2010-12-07 10:21:50
+Attachment [8456-lazy-import-enhancements-4.6.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-enhancements-4.6.patch) by @robertwb created at 2010-12-07 10:21:50
 
 
 
@@ -717,7 +717,7 @@ archive/issue_comments_076111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76111",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -735,7 +735,7 @@ archive/issue_comments_076112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76112",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -756,7 +756,7 @@ archive/issue_comments_076113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76113",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -774,7 +774,7 @@ archive/issue_comments_076114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76114",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -792,7 +792,7 @@ archive/issue_comments_076115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76115",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_076116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76116",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -833,7 +833,7 @@ archive/issue_comments_076117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76117",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -846,16 +846,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_076118.json:
 ```json
 {
-    "body": "Attachment [8456-lazy-import-documentation.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-documentation.patch) by robertwb created at 2011-01-25 07:00:59\n\nI've refreshed the documentation patch to escape this asterisk.",
+    "body": "Attachment [8456-lazy-import-documentation.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-documentation.patch) by @robertwb created at 2011-01-25 07:00:59\n\nI've refreshed the documentation patch to escape this asterisk.",
     "created_at": "2011-01-25T07:00:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76118",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8456-lazy-import-documentation.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-documentation.patch) by robertwb created at 2011-01-25 07:00:59
+Attachment [8456-lazy-import-documentation.patch](tarball://root/attachments/some-uuid/ticket8456/8456-lazy-import-documentation.patch) by @robertwb created at 2011-01-25 07:00:59
 
 I've refreshed the documentation patch to escape this asterisk.
 
@@ -871,7 +871,7 @@ archive/issue_comments_076119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76119",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -889,7 +889,7 @@ archive/issue_comments_076120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76120",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -907,7 +907,7 @@ archive/issue_comments_076121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8456#issuecomment-76121",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

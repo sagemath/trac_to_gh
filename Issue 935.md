@@ -3,7 +3,7 @@
 archive/issues_000935.json:
 ```json
 {
-    "body": "Assignee: was\n\nWell, the title says it all. Patch is against 2.8.7.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/935\n\n",
+    "body": "Assignee: @williamstein\n\nWell, the title says it all. Patch is against 2.8.7.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/935\n\n",
     "created_at": "2007-10-19T22:56:39Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_000935.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Well, the title says it all. Patch is against 2.8.7.
 
@@ -54,7 +54,7 @@ Attachment [sage-2.8.7-remove-deleted-files-from-repo.patch](tarball://root/atta
 archive/issue_comments_005705.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-10-20T06:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/935",
     "type": "issue_comment",
@@ -63,7 +63,7 @@ archive/issue_comments_005705.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -126,7 +126,7 @@ archive/issue_comments_005708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/935#issuecomment-5708",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009684.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  cturner beankao\n\nKeywords: local_data\n\nCurrently, local_data() after running Tate's algorithm always also calls _tidy_model().  The attached patch makes this behaviour optional by introducing a parameter tidy.  This functionality is needed for the implementation of ticket #9320.\n\n\n```\nsage: E = EllipticCurve([2, 1, 0, -2, -1])\nsage: E.local_data(ZZ.ideal(2), algorithm=\"generic\").minimal_model()\nElliptic Curve defined by y^2 = x^3 - x^2 - 3*x + 2 over Rational Field\nsage: E.local_data(ZZ.ideal(2), algorithm=\"generic\").minimal_model(tidy=False)\nElliptic Curve defined by y^2 + 2*x*y + 2*y = x^3 + x^2 - 4*x - 2 over Rational Field\n```\n\n\nSince Pari also does this \"tidying\", the patch needs to add the parameter algorithm to various functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9684\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  cturner beankao\n\nKeywords: local_data\n\nCurrently, local_data() after running Tate's algorithm always also calls _tidy_model().  The attached patch makes this behaviour optional by introducing a parameter tidy.  This functionality is needed for the implementation of ticket #9320.\n\n\n```\nsage: E = EllipticCurve([2, 1, 0, -2, -1])\nsage: E.local_data(ZZ.ideal(2), algorithm=\"generic\").minimal_model()\nElliptic Curve defined by y^2 = x^3 - x^2 - 3*x + 2 over Rational Field\nsage: E.local_data(ZZ.ideal(2), algorithm=\"generic\").minimal_model(tidy=False)\nElliptic Curve defined by y^2 + 2*x*y + 2*y = x^3 + x^2 - 4*x - 2 over Rational Field\n```\n\n\nSince Pari also does this \"tidying\", the patch needs to add the parameter algorithm to various functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9684\n\n",
     "created_at": "2010-08-04T05:14:25Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_009684.json:
     "title": "Make use of _tidy_model() optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9684",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 CC:  cturner beankao
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9684
 archive/issue_comments_094138.json:
 ```json
 {
-    "body": "Attachment [9684_dirty_model.patch](tarball://root/attachments/some-uuid/ticket9684/9684_dirty_model.patch) by arminstraub created at 2010-08-04 05:16:15",
+    "body": "Attachment [9684_dirty_model.patch](tarball://root/attachments/some-uuid/ticket9684/9684_dirty_model.patch) by @arminstraub created at 2010-08-04 05:16:15",
     "created_at": "2010-08-04T05:16:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9684#issuecomment-94138",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
-Attachment [9684_dirty_model.patch](tarball://root/attachments/some-uuid/ticket9684/9684_dirty_model.patch) by arminstraub created at 2010-08-04 05:16:15
+Attachment [9684_dirty_model.patch](tarball://root/attachments/some-uuid/ticket9684/9684_dirty_model.patch) by @arminstraub created at 2010-08-04 05:16:15
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_094139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9684#issuecomment-94139",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_094140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9684#issuecomment-94140",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -102,16 +102,16 @@ I will review this.  I'm afraid that I coined the phrase "tidy model", which I n
 archive/issue_comments_094141.json:
 ```json
 {
-    "body": "Attachment [trac_9684-reviewer.patch](tarball://root/attachments/some-uuid/ticket9684/trac_9684-reviewer.patch) by cremona created at 2010-08-12 20:05:18\n\nApply after previous",
+    "body": "Attachment [trac_9684-reviewer.patch](tarball://root/attachments/some-uuid/ticket9684/trac_9684-reviewer.patch) by @JohnCremona created at 2010-08-12 20:05:18\n\nApply after previous",
     "created_at": "2010-08-12T20:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9684#issuecomment-94141",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9684-reviewer.patch](tarball://root/attachments/some-uuid/ticket9684/trac_9684-reviewer.patch) by cremona created at 2010-08-12 20:05:18
+Attachment [trac_9684-reviewer.patch](tarball://root/attachments/some-uuid/ticket9684/trac_9684-reviewer.patch) by @JohnCremona created at 2010-08-12 20:05:18
 
 Apply after previous
 
@@ -127,7 +127,7 @@ archive/issue_comments_094142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9684#issuecomment-94142",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_094143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9684#issuecomment-94143",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_094144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9684#issuecomment-94144",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_094145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9684#issuecomment-94145",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_094146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9684#issuecomment-94146",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

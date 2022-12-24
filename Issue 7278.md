@@ -3,7 +3,7 @@
 archive/issues_007278.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mhansen\n\n\n```\n> When I put this in a cell:\n> >\n> > %sh\n> > '''echo test to close of string\n> >\n> > I get:\n> >\n> > Traceback (most recent call last):\n> >  File \"<stdin>\", line 1, in <module>\n> >  File \"_sage_input_19.py\", line 4, in <module>\n> >   print _support_.syseval(sh, ur\\u0027\\u0027\\u0027\\u0027\\u0027\\u0027echo\n> > test to close of string\\u0027\\u0027\\u0027,\n> > \\u0027/home/sage/sagenb/sage_notebook-alpha.sagenb/home/jason3/38/cells/6\\u0027)\n> >  File \"\", line 1\n> >   print _support_.syseval(sh, ur''''''echo test to close of string''',\n> > '/home/sage/sagenb/sage_notebook-alpha.sagenb/home/jason3/38/cells/6')\n> >                                          ^\n> > SyntaxError: invalid syntax\n> >\n> >\n> > It looks like there was no escaping of the single quotes inside the string.\n> >\n> > Thanks,\n> >\n\nCan you report this as a bug to trac.  It's been around foreover.  And\nI'm sure it is totally general -- i.e. happens for all the interfaces.\n\nThe solution is not to escape certain characters but to base-64 encode\neverything.\n\nWilliam\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7278\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\n\n```\n> When I put this in a cell:\n> >\n> > %sh\n> > '''echo test to close of string\n> >\n> > I get:\n> >\n> > Traceback (most recent call last):\n> >  File \"<stdin>\", line 1, in <module>\n> >  File \"_sage_input_19.py\", line 4, in <module>\n> >   print _support_.syseval(sh, ur\\u0027\\u0027\\u0027\\u0027\\u0027\\u0027echo\n> > test to close of string\\u0027\\u0027\\u0027,\n> > \\u0027/home/sage/sagenb/sage_notebook-alpha.sagenb/home/jason3/38/cells/6\\u0027)\n> >  File \"\", line 1\n> >   print _support_.syseval(sh, ur''''''echo test to close of string''',\n> > '/home/sage/sagenb/sage_notebook-alpha.sagenb/home/jason3/38/cells/6')\n> >                                          ^\n> > SyntaxError: invalid syntax\n> >\n> >\n> > It looks like there was no escaping of the single quotes inside the string.\n> >\n> > Thanks,\n> >\n\nCan you report this as a bug to trac.  It's been around foreover.  And\nI'm sure it is totally general -- i.e. happens for all the interfaces.\n\nThe solution is not to escape certain characters but to base-64 encode\neverything.\n\nWilliam\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7278\n\n",
     "created_at": "2009-10-24T00:02:04Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007278.json:
     "title": "eval strings are not escaped",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7278",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  was mhansen
+CC:  @williamstein @mwhansen
 
 
 ```
@@ -75,7 +75,7 @@ archive/issue_comments_060574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7278#issuecomment-60574",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_060575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7278#issuecomment-60575",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

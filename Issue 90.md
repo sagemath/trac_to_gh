@@ -3,7 +3,7 @@
 archive/issues_000090.json:
 ```json
 {
-    "body": "Assignee: was\n\nSAGE can't build with GCC 2.9x, so it shouldn't try.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/90\n\n",
+    "body": "Assignee: @williamstein\n\nSAGE can't build with GCC 2.9x, so it shouldn't try.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/90\n\n",
     "created_at": "2006-09-27T17:33:45Z",
     "labels": [
         "user interface",
@@ -13,10 +13,10 @@ archive/issues_000090.json:
     "title": "SAGE build process -- immediately quite if GCC < 3 installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/90",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 SAGE can't build with GCC 2.9x, so it shouldn't try.  
 
@@ -36,7 +36,7 @@ archive/issue_comments_000444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/90",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/90#issuecomment-444",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -54,7 +54,7 @@ archive/issue_comments_000445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/90",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/90#issuecomment-445",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004564.json:
     "title": "[with patch, needs review] implement long long -> mpz_t",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4564",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4564
 archive/issue_comments_034182.json:
 ```json
 {
-    "body": "Attachment [4564-mpz-longlong.patch](tarball://root/attachments/some-uuid/ticket4564/4564-mpz-longlong.patch) by craigcitro created at 2008-11-20 23:00:09\n\nSo the code here looks good. I even pulled out my old G4 and tested it on a big-endian machine, and everything worked fine.\n\nI do have one question, though: doesn't the `mpz_set_longlong` belong somewhere more generic than `integer.pyx`? I would have put it somewhere in libcsage. Of course, then it wouldn't be so easy to raise the exception ...",
+    "body": "Attachment [4564-mpz-longlong.patch](tarball://root/attachments/some-uuid/ticket4564/4564-mpz-longlong.patch) by @craigcitro created at 2008-11-20 23:00:09\n\nSo the code here looks good. I even pulled out my old G4 and tested it on a big-endian machine, and everything worked fine.\n\nI do have one question, though: doesn't the `mpz_set_longlong` belong somewhere more generic than `integer.pyx`? I would have put it somewhere in libcsage. Of course, then it wouldn't be so easy to raise the exception ...",
     "created_at": "2008-11-20T23:00:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34182",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [4564-mpz-longlong.patch](tarball://root/attachments/some-uuid/ticket4564/4564-mpz-longlong.patch) by craigcitro created at 2008-11-20 23:00:09
+Attachment [4564-mpz-longlong.patch](tarball://root/attachments/some-uuid/ticket4564/4564-mpz-longlong.patch) by @craigcitro created at 2008-11-20 23:00:09
 
 So the code here looks good. I even pulled out my old G4 and tested it on a big-endian machine, and everything worked fine.
 
@@ -59,7 +59,7 @@ archive/issue_comments_034183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34183",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_034184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34184",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_034185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34185",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

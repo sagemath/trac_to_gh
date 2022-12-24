@@ -3,7 +3,7 @@
 archive/issues_005676.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\n\n```\n    sage: 0xe\n    Traceback (most recent call last)\n    ...\n    TypeError: Unable to convert x (='0xe') to real number.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5676\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\n\n```\n    sage: 0xe\n    Traceback (most recent call last)\n    ...\n    TypeError: Unable to convert x (='0xe') to real number.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5676\n\n",
     "created_at": "2009-04-03T16:26:19Z",
     "labels": [
         "user interface",
@@ -17,9 +17,9 @@ archive/issues_005676.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 
 ```
@@ -104,7 +104,7 @@ archive/issue_comments_044408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5676",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5676#issuecomment-44408",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

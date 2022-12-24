@@ -14,7 +14,7 @@ archive/issues_000989.json:
     "title": "Stripping $ from documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/989",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: tba
@@ -72,16 +72,16 @@ Perhaps the right fix is to notice doctests, and disable these modifications for
 archive/issue_comments_006037.json:
 ```json
 {
-    "body": "Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket989/683-989-ncalexan-1.patch) by ncalexan created at 2007-11-04 07:32:28\n\nChangelog for the patch:\n\n683,989: add 'nodetex' directive to docstrings: doesn't strip (la)tex code from docstrings.\n\nThe first line of a docstring is parsed as a comma-separated list of\ndirectives (no whitespace in directives!).  For example:\n\n\n```\nr\"\"\"nodetex,notyetimplemented\n...\n\"\"\"\n```\n\n\nIf 'nodetex' is one of the directives, then no (la)tex code is stripped from\nthe docstring.  The model was the 'nodoctest' directive already found at the\ntop of a file.",
+    "body": "Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket989/683-989-ncalexan-1.patch) by @ncalexan created at 2007-11-04 07:32:28\n\nChangelog for the patch:\n\n683,989: add 'nodetex' directive to docstrings: doesn't strip (la)tex code from docstrings.\n\nThe first line of a docstring is parsed as a comma-separated list of\ndirectives (no whitespace in directives!).  For example:\n\n\n```\nr\"\"\"nodetex,notyetimplemented\n...\n\"\"\"\n```\n\n\nIf 'nodetex' is one of the directives, then no (la)tex code is stripped from\nthe docstring.  The model was the 'nodoctest' directive already found at the\ntop of a file.",
     "created_at": "2007-11-04T07:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/989#issuecomment-6037",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket989/683-989-ncalexan-1.patch) by ncalexan created at 2007-11-04 07:32:28
+Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket989/683-989-ncalexan-1.patch) by @ncalexan created at 2007-11-04 07:32:28
 
 Changelog for the patch:
 

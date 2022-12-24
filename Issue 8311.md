@@ -3,7 +3,7 @@
 archive/issues_008311.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  schilly\n\nKeywords: random point\n\nAs reported:\n\n```\nE = EllipticCurve(GF(3), [0,0,0,2,2])\nE.random_element()\n```\n\nHangs since\n\n```\nsage: E.rational_points()\n[(0 : 1 : 0)]\n```\n\nso unless the point at infinity is picked (probability 1/(q+1)=1/4) no point will be found.\n\nThis can only happen for q=2,3,4 (try Hasse_bounds(q)) so these cases need separate treatment.\n\nPatch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8311\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @haraldschilly\n\nKeywords: random point\n\nAs reported:\n\n```\nE = EllipticCurve(GF(3), [0,0,0,2,2])\nE.random_element()\n```\n\nHangs since\n\n```\nsage: E.rational_points()\n[(0 : 1 : 0)]\n```\n\nso unless the point at infinity is picked (probability 1/(q+1)=1/4) no point will be found.\n\nThis can only happen for q=2,3,4 (try Hasse_bounds(q)) so these cases need separate treatment.\n\nPatch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8311\n\n",
     "created_at": "2010-02-20T12:06:17Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_008311.json:
     "title": "elliptic curve random point hangs when group is trivial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8311",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  schilly
+CC:  @haraldschilly
 
 Keywords: random point
 
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8311
 archive/issue_comments_073712.json:
 ```json
 {
-    "body": "Attachment [trac_8311-random-point.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311-random-point.patch) by cremona created at 2010-02-20 13:48:52\n\napplies to 4.3.3.alpha1",
+    "body": "Attachment [trac_8311-random-point.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311-random-point.patch) by @JohnCremona created at 2010-02-20 13:48:52\n\napplies to 4.3.3.alpha1",
     "created_at": "2010-02-20T13:48:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73712",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8311-random-point.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311-random-point.patch) by cremona created at 2010-02-20 13:48:52
+Attachment [trac_8311-random-point.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311-random-point.patch) by @JohnCremona created at 2010-02-20 13:48:52
 
 applies to 4.3.3.alpha1
 
@@ -80,7 +80,7 @@ archive/issue_comments_073713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73713",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_073714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73714",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_073715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73715",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_073716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73716",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -147,16 +147,16 @@ Replaces the previous patch
 archive/issue_comments_073717.json:
 ```json
 {
-    "body": "Attachment [trac_8311_random_point_2.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311_random_point_2.patch) by wuthrich created at 2010-03-05 18:26:42\n\nI changed a few tabulators to spaces. Other than that the patch is fine. And I started testing now.",
+    "body": "Attachment [trac_8311_random_point_2.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311_random_point_2.patch) by @categorie created at 2010-03-05 18:26:42\n\nI changed a few tabulators to spaces. Other than that the patch is fine. And I started testing now.",
     "created_at": "2010-03-05T18:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73717",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_8311_random_point_2.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311_random_point_2.patch) by wuthrich created at 2010-03-05 18:26:42
+Attachment [trac_8311_random_point_2.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311_random_point_2.patch) by @categorie created at 2010-03-05 18:26:42
 
 I changed a few tabulators to spaces. Other than that the patch is fine. And I started testing now.
 
@@ -172,7 +172,7 @@ archive/issue_comments_073718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73718",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_073719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73719",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_073720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73720",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_073723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73723",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

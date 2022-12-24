@@ -14,7 +14,7 @@ archive/issues_008455.json:
     "title": "Update MPIR to 1.3.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8455",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_076078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8455#issuecomment-76078",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_076079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8455#issuecomment-76079",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_076080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8455#issuecomment-76080",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_076081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8455#issuecomment-76081",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

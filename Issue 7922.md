@@ -3,7 +3,7 @@
 archive/issues_007922.json:
 ```json
 {
-    "body": "Assignee: bump\n\nCC:  bump sage-combinat\n\nFirst issue caught by #7921:\n\n\n```\nsage: A2 = WeylCharacterRing(['A',2])\nsage: a2 = WeightRing(A2)\nsage: TestSuite(a2).run()\nFailure in _test_element_pickling:\nTraceback (most recent call last):\n...\nAssertionError: 2*a2(0,0,0) != 2*a2(0,0,0)\n```\n\n\nIndeed:\n\n```\nsage: x = a2.an_element()\nsage: x == loads(dumps(x))\nFalse\n```\n\n\nI assume that this is an issue in equality test. This should be fixed for free when WeighRing's will use CombinatorialFreeModules\nand categories.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7922\n\n",
+    "body": "Assignee: @dwbump\n\nCC:  @dwbump sage-combinat\n\nFirst issue caught by #7921:\n\n\n```\nsage: A2 = WeylCharacterRing(['A',2])\nsage: a2 = WeightRing(A2)\nsage: TestSuite(a2).run()\nFailure in _test_element_pickling:\nTraceback (most recent call last):\n...\nAssertionError: 2*a2(0,0,0) != 2*a2(0,0,0)\n```\n\n\nIndeed:\n\n```\nsage: x = a2.an_element()\nsage: x == loads(dumps(x))\nFalse\n```\n\n\nI assume that this is an issue in equality test. This should be fixed for free when WeighRing's will use CombinatorialFreeModules\nand categories.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7922\n\n",
     "created_at": "2010-01-13T16:14:55Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_007922.json:
     "title": "Pickling fails in WeightRing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7922",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: bump
+Assignee: @dwbump
 
-CC:  bump sage-combinat
+CC:  @dwbump sage-combinat
 
 First issue caught by #7921:
 
@@ -63,7 +63,7 @@ archive/issue_comments_068934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68934",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_068935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68935",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_068936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68936",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_068937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68937",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -137,16 +137,16 @@ Converts WeylCharacterRings and WeightRings to use category framework
 archive/issue_comments_068938.json:
 ```json
 {
-    "body": "Attachment [trac_7922.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922.patch) by bump created at 2010-09-11 15:34:35\n\nI uploaded a revised version of the patch. The only change is in classical_crystals.py, where the revision of WeylCharacterRings necessitated a revision.",
+    "body": "Attachment [trac_7922.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922.patch) by @dwbump created at 2010-09-11 15:34:35\n\nI uploaded a revised version of the patch. The only change is in classical_crystals.py, where the revision of WeylCharacterRings necessitated a revision.",
     "created_at": "2010-09-11T15:34:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68938",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_7922.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922.patch) by bump created at 2010-09-11 15:34:35
+Attachment [trac_7922.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922.patch) by @dwbump created at 2010-09-11 15:34:35
 
 I uploaded a revised version of the patch. The only change is in classical_crystals.py, where the revision of WeylCharacterRings necessitated a revision.
 
@@ -162,7 +162,7 @@ archive/issue_comments_068939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68939",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -175,16 +175,16 @@ Requires rebuilding the pickle jar.
 archive/issue_comments_068940.json:
 ```json
 {
-    "body": "Attachment [trac_7922-rebased-4.6.1](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.6.1) by bump created at 2010-11-15 19:26:27\n\n#7922: WeylCharacters inherit from CombinatorialFreemodule (substantial speedup)",
+    "body": "Attachment [trac_7922-rebased-4.6.1](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.6.1) by @dwbump created at 2010-11-15 19:26:27\n\n#7922: WeylCharacters inherit from CombinatorialFreemodule (substantial speedup)",
     "created_at": "2010-11-15T19:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68940",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_7922-rebased-4.6.1](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.6.1) by bump created at 2010-11-15 19:26:27
+Attachment [trac_7922-rebased-4.6.1](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.6.1) by @dwbump created at 2010-11-15 19:26:27
 
 #7922: WeylCharacters inherit from CombinatorialFreemodule (substantial speedup)
 
@@ -200,7 +200,7 @@ archive/issue_comments_068941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68941",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_068942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68942",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -233,16 +233,16 @@ archive/issue_comments_068942.json:
 archive/issue_comments_068943.json:
 ```json
 {
-    "body": "Attachment [trac_7922-doc.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-doc.patch) by bump created at 2011-02-08 19:30:18\n\nThis patch slightly conflicts with #8442 which was merged. So I'm posting a second patch trac_7922-doc.patch which revises the thematic tutorial.",
+    "body": "Attachment [trac_7922-doc.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-doc.patch) by @dwbump created at 2011-02-08 19:30:18\n\nThis patch slightly conflicts with #8442 which was merged. So I'm posting a second patch trac_7922-doc.patch which revises the thematic tutorial.",
     "created_at": "2011-02-08T19:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68943",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_7922-doc.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-doc.patch) by bump created at 2011-02-08 19:30:18
+Attachment [trac_7922-doc.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-doc.patch) by @dwbump created at 2011-02-08 19:30:18
 
 This patch slightly conflicts with #8442 which was merged. So I'm posting a second patch trac_7922-doc.patch which revises the thematic tutorial.
 
@@ -253,16 +253,16 @@ This patch slightly conflicts with #8442 which was merged. So I'm posting a seco
 archive/issue_comments_068944.json:
 ```json
 {
-    "body": "Attachment [trac_7922-rebased-4.7.alpha1.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha1.patch) by bump created at 2011-03-18 12:27:29\n\n#7922: Revision of Weyl Character Rings",
+    "body": "Attachment [trac_7922-rebased-4.7.alpha1.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha1.patch) by @dwbump created at 2011-03-18 12:27:29\n\n#7922: Revision of Weyl Character Rings",
     "created_at": "2011-03-18T12:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68944",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_7922-rebased-4.7.alpha1.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha1.patch) by bump created at 2011-03-18 12:27:29
+Attachment [trac_7922-rebased-4.7.alpha1.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha1.patch) by @dwbump created at 2011-03-18 12:27:29
 
 #7922: Revision of Weyl Character Rings
 
@@ -278,7 +278,7 @@ archive/issue_comments_068945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68945",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_068946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68946",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -316,16 +316,16 @@ archive/issue_comments_068946.json:
 archive/issue_comments_068947.json:
 ```json
 {
-    "body": "Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket7922/pickle_jar.tar.bz2) by bump created at 2011-03-18 21:33:59",
+    "body": "Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket7922/pickle_jar.tar.bz2) by @dwbump created at 2011-03-18 21:33:59",
     "created_at": "2011-03-18T21:33:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68947",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket7922/pickle_jar.tar.bz2) by bump created at 2011-03-18 21:33:59
+Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket7922/pickle_jar.tar.bz2) by @dwbump created at 2011-03-18 21:33:59
 
 
 
@@ -334,16 +334,16 @@ Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket7922/
 archive/issue_comments_068948.json:
 ```json
 {
-    "body": "Attachment [pickle-notes](tarball://root/attachments/some-uuid/ticket7922/pickle-notes) by bump created at 2011-03-18 21:36:23\n\n#7922: explanation of how the pickle jar is remade",
+    "body": "Attachment [pickle-notes](tarball://root/attachments/some-uuid/ticket7922/pickle-notes) by @dwbump created at 2011-03-18 21:36:23\n\n#7922: explanation of how the pickle jar is remade",
     "created_at": "2011-03-18T21:36:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68948",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [pickle-notes](tarball://root/attachments/some-uuid/ticket7922/pickle-notes) by bump created at 2011-03-18 21:36:23
+Attachment [pickle-notes](tarball://root/attachments/some-uuid/ticket7922/pickle-notes) by @dwbump created at 2011-03-18 21:36:23
 
 #7922: explanation of how the pickle jar is remade
 
@@ -359,7 +359,7 @@ archive/issue_comments_068949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68949",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_068950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68950",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -401,7 +401,7 @@ archive/issue_comments_068951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68951",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -414,16 +414,16 @@ archive/issue_comments_068951.json:
 archive/issue_comments_068952.json:
 ```json
 {
-    "body": "Attachment [trac_7922-rebased-4.7.alpha2.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha2.patch) by bump created at 2011-03-25 13:09:59\n\n#7922: replacement pickles",
+    "body": "Attachment [trac_7922-rebased-4.7.alpha2.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha2.patch) by @dwbump created at 2011-03-25 13:09:59\n\n#7922: replacement pickles",
     "created_at": "2011-03-25T13:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68952",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_7922-rebased-4.7.alpha2.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha2.patch) by bump created at 2011-03-25 13:09:59
+Attachment [trac_7922-rebased-4.7.alpha2.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha2.patch) by @dwbump created at 2011-03-25 13:09:59
 
 #7922: replacement pickles
 
@@ -434,16 +434,16 @@ Attachment [trac_7922-rebased-4.7.alpha2.patch](tarball://root/attachments/some-
 archive/issue_comments_068953.json:
 ```json
 {
-    "body": "Attachment [trac_7922-new_pickles.tar.gz](tarball://root/attachments/some-uuid/ticket7922/trac_7922-new_pickles.tar.gz) by nthiery created at 2011-04-05 08:48:06\n\nHi Dan,\n\nI just did a final proofreading, fixed a couple typos, updated coerce_to_sl in the doctests of the thematic tutorials, and removed some trailing white space and tabs.\n\nFor me it is now all good to go. Please check my reviewer's patch on the sage-combinat patch server. If it's ok with you, you can fold/upload and set a positive review here on my behalf.\n\n[http://combinat.sagemath.org/patches/file/tip/trac_7922-final-review-nt.patch](http://combinat.sagemath.org/patches/file/tip/trac_7922-final-review-nt.patch)\n\nCheers,\n                       Nicolas",
+    "body": "Attachment [trac_7922-new_pickles.tar.gz](tarball://root/attachments/some-uuid/ticket7922/trac_7922-new_pickles.tar.gz) by @nthiery created at 2011-04-05 08:48:06\n\nHi Dan,\n\nI just did a final proofreading, fixed a couple typos, updated coerce_to_sl in the doctests of the thematic tutorials, and removed some trailing white space and tabs.\n\nFor me it is now all good to go. Please check my reviewer's patch on the sage-combinat patch server. If it's ok with you, you can fold/upload and set a positive review here on my behalf.\n\n[http://combinat.sagemath.org/patches/file/tip/trac_7922-final-review-nt.patch](http://combinat.sagemath.org/patches/file/tip/trac_7922-final-review-nt.patch)\n\nCheers,\n                       Nicolas",
     "created_at": "2011-04-05T08:48:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68953",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7922-new_pickles.tar.gz](tarball://root/attachments/some-uuid/ticket7922/trac_7922-new_pickles.tar.gz) by nthiery created at 2011-04-05 08:48:06
+Attachment [trac_7922-new_pickles.tar.gz](tarball://root/attachments/some-uuid/ticket7922/trac_7922-new_pickles.tar.gz) by @nthiery created at 2011-04-05 08:48:06
 
 Hi Dan,
 
@@ -468,7 +468,7 @@ archive/issue_comments_068954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68954",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_068955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68955",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -499,16 +499,16 @@ archive/issue_comments_068955.json:
 archive/issue_comments_068956.json:
 ```json
 {
-    "body": "Attachment [trac_7922-rebased-4.7.alpha3.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha3.patch) by nthiery created at 2011-04-07 14:29:48\n\nHi Dan,\n\nI just checked out your final changes on the Sage-Combinat queue (trac_7922_alpha3-changes.patch), and it looks all good. So the final rebased patch you just posted (and which includes the above) is good to go.\n\nPositive review!",
+    "body": "Attachment [trac_7922-rebased-4.7.alpha3.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha3.patch) by @nthiery created at 2011-04-07 14:29:48\n\nHi Dan,\n\nI just checked out your final changes on the Sage-Combinat queue (trac_7922_alpha3-changes.patch), and it looks all good. So the final rebased patch you just posted (and which includes the above) is good to go.\n\nPositive review!",
     "created_at": "2011-04-07T14:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68956",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7922-rebased-4.7.alpha3.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha3.patch) by nthiery created at 2011-04-07 14:29:48
+Attachment [trac_7922-rebased-4.7.alpha3.patch](tarball://root/attachments/some-uuid/ticket7922/trac_7922-rebased-4.7.alpha3.patch) by @nthiery created at 2011-04-07 14:29:48
 
 Hi Dan,
 
@@ -528,7 +528,7 @@ archive/issue_comments_068957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68957",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_068958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68958",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_068959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68959",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -586,7 +586,7 @@ archive/issue_comments_068960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68960",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -604,7 +604,7 @@ archive/issue_comments_068961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68961",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -622,7 +622,7 @@ archive/issue_comments_068962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68962",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -640,7 +640,7 @@ archive/issue_comments_068963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7922#issuecomment-68963",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006405.json:
 ```json
 {
-    "body": "CC:  robertwb\n\nIn new symbolics, imaginary 'I' is typeset as 'I' which is not \"textbook style\". This is a regression compared to Sage 3.4\n\n\n```\nsage: latex( exp(i*x))\ne^{I \\, x}\n```\n\n\nLower case letter 'i' should be used in the typeset version.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6405\n\n",
+    "body": "CC:  @robertwb\n\nIn new symbolics, imaginary 'I' is typeset as 'I' which is not \"textbook style\". This is a regression compared to Sage 3.4\n\n\n```\nsage: latex( exp(i*x))\ne^{I \\, x}\n```\n\n\nLower case letter 'i' should be used in the typeset version.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6405\n\n",
     "created_at": "2009-06-25T14:30:01Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006405.json:
     "title": "Typesetting of imaginary 'I' in new Symbolics is not proper",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6405",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
-CC:  robertwb
+CC:  @robertwb
 
 In new symbolics, imaginary 'I' is typeset as 'I' which is not "textbook style". This is a regression compared to Sage 3.4
 
@@ -47,7 +47,7 @@ archive/issue_comments_051439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6405#issuecomment-51439",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_051440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6405#issuecomment-51440",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_051441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6405#issuecomment-51441",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_051442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6405#issuecomment-51442",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009917.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  mhampton novoselt\n\nThe attached patch implements triangulations of point configurations in arbitrary dimensions in Sage/Cython/C++ without relying on TOPCOM. \n\n```\nsage: points = PointConfiguration([[0,0],[0,1],[1,0],[1,1],[-1,-1]]);\nsage: points\nA point configuration in QQ^2 consisting of 5 points. The \ntriangulations of this point configuration are assumed to \nbe connected, not necessarily fine, not necessarily regular.\nsage: triang = points.triangulate()   # find one triangulation       \nsage: triang\n(<0,1,2>, <0,1,4>, <0,2,4>, <1,2,3>)\nsage: triang[0]\n(0, 1, 2)\nsage: list( points.triangulations() )\n[(<0,1,2>, <0,1,4>, <0,2,4>, <1,2,3>), \n (<0,1,3>, <0,1,4>, <0,2,3>, <0,2,4>), \n (<1,2,3>, <1,2,4>), \n (<1,3,4>, <2,3,4>)]\nsage: triang.plot(axes=False)                                        \n```\n\nThe internal implementation covers finding a single triangulation as well as enumerating all triangulations connected to it by bistellar flips. TOPCOM is required to test for regularity and/or to find non-connected triangulations.\n\nWhile not quite as fast, my limited testing shows the performance to be in the same order of magnitude as TOPCOM:\n\n```\nsage: U=matrix([\n...      [ 0, 0, 0, 0, 0, 2, 4,-1, 1, 1, 0, 0, 1, 0],\n...      [ 0, 0, 0, 1, 0, 0,-1, 0, 0, 0, 0, 0, 0, 0],\n...      [ 0, 2, 0, 0, 0, 0,-1, 0, 1, 0, 1, 0, 0, 1],\n...      [ 0, 1, 1, 0, 0, 1, 0,-2, 1, 0, 0,-1, 1, 1],\n...      [ 0, 0, 0, 0, 1, 0,-1, 0, 0, 0, 0, 0, 0, 0]\n...   ])\nsage: pc = PointConfiguration(U.columns())\nsage: pc.set_engine('internal')\nsage: time len(pc.triangulations_list())\nCPU times: user 23.26 s, sys: 0.02 s, total: 23.29 s\nWall time: 23.32 s\n9623\nsage: pc.set_engine('TOPCOM')\nsage: time len(pc.triangulations_list())\nCPU times: user 7.80 s, sys: 0.13 s, total: 7.93 s\nWall time: 8.37 s\n9623\n```\n\nSee also #8169: include TOPCOM, where an optional spkg is being worked on.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9918\n\n",
+    "body": "Assignee: mhampton\n\nCC:  mhampton @novoselt\n\nThe attached patch implements triangulations of point configurations in arbitrary dimensions in Sage/Cython/C++ without relying on TOPCOM. \n\n```\nsage: points = PointConfiguration([[0,0],[0,1],[1,0],[1,1],[-1,-1]]);\nsage: points\nA point configuration in QQ^2 consisting of 5 points. The \ntriangulations of this point configuration are assumed to \nbe connected, not necessarily fine, not necessarily regular.\nsage: triang = points.triangulate()   # find one triangulation       \nsage: triang\n(<0,1,2>, <0,1,4>, <0,2,4>, <1,2,3>)\nsage: triang[0]\n(0, 1, 2)\nsage: list( points.triangulations() )\n[(<0,1,2>, <0,1,4>, <0,2,4>, <1,2,3>), \n (<0,1,3>, <0,1,4>, <0,2,3>, <0,2,4>), \n (<1,2,3>, <1,2,4>), \n (<1,3,4>, <2,3,4>)]\nsage: triang.plot(axes=False)                                        \n```\n\nThe internal implementation covers finding a single triangulation as well as enumerating all triangulations connected to it by bistellar flips. TOPCOM is required to test for regularity and/or to find non-connected triangulations.\n\nWhile not quite as fast, my limited testing shows the performance to be in the same order of magnitude as TOPCOM:\n\n```\nsage: U=matrix([\n...      [ 0, 0, 0, 0, 0, 2, 4,-1, 1, 1, 0, 0, 1, 0],\n...      [ 0, 0, 0, 1, 0, 0,-1, 0, 0, 0, 0, 0, 0, 0],\n...      [ 0, 2, 0, 0, 0, 0,-1, 0, 1, 0, 1, 0, 0, 1],\n...      [ 0, 1, 1, 0, 0, 1, 0,-2, 1, 0, 0,-1, 1, 1],\n...      [ 0, 0, 0, 0, 1, 0,-1, 0, 0, 0, 0, 0, 0, 0]\n...   ])\nsage: pc = PointConfiguration(U.columns())\nsage: pc.set_engine('internal')\nsage: time len(pc.triangulations_list())\nCPU times: user 23.26 s, sys: 0.02 s, total: 23.29 s\nWall time: 23.32 s\n9623\nsage: pc.set_engine('TOPCOM')\nsage: time len(pc.triangulations_list())\nCPU times: user 7.80 s, sys: 0.13 s, total: 7.93 s\nWall time: 8.37 s\n9623\n```\n\nSee also #8169: include TOPCOM, where an optional spkg is being worked on.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9918\n\n",
     "created_at": "2010-09-16T11:22:09Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_009917.json:
     "title": "triangulate point configurations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9917",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 Assignee: mhampton
 
-CC:  mhampton novoselt
+CC:  mhampton @novoselt
 
 The attached patch implements triangulations of point configurations in arbitrary dimensions in Sage/Cython/C++ without relying on TOPCOM. 
 
@@ -85,7 +85,7 @@ archive/issue_comments_098689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9917#issuecomment-98689",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_098692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9917#issuecomment-98692",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_098693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9917#issuecomment-98693",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_098694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9917#issuecomment-98694",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_098695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9917#issuecomment-98695",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -223,16 +223,16 @@ I'm afraid a Sphinx warning is sufficient reason for needs_work...
 archive/issue_comments_098696.json:
 ```json
 {
-    "body": "Attachment [trac_9918_triangulate_point_configurations.patch](tarball://root/attachments/some-uuid/ticket9918/trac_9918_triangulate_point_configurations.patch) by vbraun created at 2011-01-26 22:44:17\n\nUpdated patch",
+    "body": "Attachment [trac_9918_triangulate_point_configurations.patch](tarball://root/attachments/some-uuid/ticket9918/trac_9918_triangulate_point_configurations.patch) by @vbraun created at 2011-01-26 22:44:17\n\nUpdated patch",
     "created_at": "2011-01-26T22:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9917#issuecomment-98696",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9918_triangulate_point_configurations.patch](tarball://root/attachments/some-uuid/ticket9918/trac_9918_triangulate_point_configurations.patch) by vbraun created at 2011-01-26 22:44:17
+Attachment [trac_9918_triangulate_point_configurations.patch](tarball://root/attachments/some-uuid/ticket9918/trac_9918_triangulate_point_configurations.patch) by @vbraun created at 2011-01-26 22:44:17
 
 Updated patch
 
@@ -248,7 +248,7 @@ archive/issue_comments_098697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9917#issuecomment-98697",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_098698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9917#issuecomment-98698",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_098699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9917#issuecomment-98699",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006281.json:
     "title": "[with patch; needs review] enable parallel make for rubiks spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6281",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_050157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6281#issuecomment-50157",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

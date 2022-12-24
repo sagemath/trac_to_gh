@@ -3,7 +3,7 @@
 archive/issues_002781.json:
 ```json
 {
-    "body": "Assignee: was\n\nCurrently, it returns False, which makes a return value of False fairly worthless.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2781\n\n",
+    "body": "Assignee: @williamstein\n\nCurrently, it returns False, which makes a return value of False fairly worthless.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2781\n\n",
     "created_at": "2008-04-02T21:45:36Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002781.json:
     "title": "bool() for SymbolicEquation should raise an error when it doesn't know the answer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2781",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Currently, it returns False, which makes a return value of False fairly worthless.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2781
 archive/issue_comments_019101.json:
 ```json
 {
-    "body": "Attachment [trac-2781-symbolic-bool.patch](tarball://root/attachments/some-uuid/ticket2781/trac-2781-symbolic-bool.patch) by jason created at 2008-04-02 21:47:40\n\nThe patch currently passes minimal doctests, but breaks lots of other doctests.  I've run out of time to work on it now, but will look at this later.",
+    "body": "Attachment [trac-2781-symbolic-bool.patch](tarball://root/attachments/some-uuid/ticket2781/trac-2781-symbolic-bool.patch) by @jasongrout created at 2008-04-02 21:47:40\n\nThe patch currently passes minimal doctests, but breaks lots of other doctests.  I've run out of time to work on it now, but will look at this later.",
     "created_at": "2008-04-02T21:47:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2781#issuecomment-19101",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-2781-symbolic-bool.patch](tarball://root/attachments/some-uuid/ticket2781/trac-2781-symbolic-bool.patch) by jason created at 2008-04-02 21:47:40
+Attachment [trac-2781-symbolic-bool.patch](tarball://root/attachments/some-uuid/ticket2781/trac-2781-symbolic-bool.patch) by @jasongrout created at 2008-04-02 21:47:40
 
 The patch currently passes minimal doctests, but breaks lots of other doctests.  I've run out of time to work on it now, but will look at this later.
 
@@ -57,7 +57,7 @@ archive/issue_comments_019102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2781#issuecomment-19102",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_019103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2781#issuecomment-19103",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

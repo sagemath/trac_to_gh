@@ -55,7 +55,7 @@ archive/issue_comments_076940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76940",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_076943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76943",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_076944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76944",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_076948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76948",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -313,16 +313,16 @@ UNABLE TO FIND THE MODULE. Even after 3421 checks, I didn't succeed...
 archive/issue_comments_076951.json:
 ```json
 {
-    "body": "Attachment [trac_8519_Range_factory-nb.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-nb.patch) by hivert created at 2010-03-15 19:52:48",
+    "body": "Attachment [trac_8519_Range_factory-nb.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-nb.patch) by @hivert created at 2010-03-15 19:52:48",
     "created_at": "2010-03-15T19:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76951",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8519_Range_factory-nb.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-nb.patch) by hivert created at 2010-03-15 19:52:48
+Attachment [trac_8519_Range_factory-nb.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-nb.patch) by @hivert created at 2010-03-15 19:52:48
 
 
 
@@ -331,16 +331,16 @@ Attachment [trac_8519_Range_factory-nb.patch](tarball://root/attachments/some-uu
 archive/issue_comments_076952.json:
 ```json
 {
-    "body": "Attachment [trac_8519_Range_factory-review-fh.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-review-fh.patch) by hivert created at 2010-03-15 19:55:58\n\nHi Nicolas,\n\nI added a review patch which\n- Adds a class factory\n- Adds a cardinality method\n- Improves the doc\n- temporarily solve the handling of empty sets\n\nPlease review it,\n\nExcept for those issues your patch is good,\n\nFlorent",
+    "body": "Attachment [trac_8519_Range_factory-review-fh.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-review-fh.patch) by @hivert created at 2010-03-15 19:55:58\n\nHi Nicolas,\n\nI added a review patch which\n- Adds a class factory\n- Adds a cardinality method\n- Improves the doc\n- temporarily solve the handling of empty sets\n\nPlease review it,\n\nExcept for those issues your patch is good,\n\nFlorent",
     "created_at": "2010-03-15T19:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76952",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8519_Range_factory-review-fh.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-review-fh.patch) by hivert created at 2010-03-15 19:55:58
+Attachment [trac_8519_Range_factory-review-fh.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-review-fh.patch) by @hivert created at 2010-03-15 19:55:58
 
 Hi Nicolas,
 
@@ -368,7 +368,7 @@ archive/issue_comments_076953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76953",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_076956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76956",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_076957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76957",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_076959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76959",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -528,7 +528,7 @@ archive/issue_comments_076960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76960",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_076961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76961",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_076962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76962",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_076963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76963",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -618,7 +618,7 @@ archive/issue_comments_076964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76964",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

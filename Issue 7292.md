@@ -3,7 +3,7 @@
 archive/issues_007292.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nWith the functions from #6680, functions returning a maximal number of Vertex/Edge disjoint st-path should be defined. The will obviously use the flow functions, but in many applications the user is just interested in these paths, and so there should be an easy way to find them in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7292\n\n",
+    "body": "Assignee: @rlmill\n\nWith the functions from #6680, functions returning a maximal number of Vertex/Edge disjoint st-path should be defined. The will obviously use the flow functions, but in many applications the user is just interested in these paths, and so there should be an easy way to find them in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7292\n\n",
     "created_at": "2009-10-25T09:23:47Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007292.json:
     "title": "Max Vertex/Edge disjoint st-paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7292",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 With the functions from #6680, functions returning a maximal number of Vertex/Edge disjoint st-path should be defined. The will obviously use the flow functions, but in many applications the user is just interested in these paths, and so there should be an easy way to find them in Sage.
 
@@ -37,7 +37,7 @@ archive/issue_comments_060705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60705",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_060706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60706",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_060707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60707",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_060708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60708",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_060709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60709",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_060710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60710",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -140,16 +140,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_060711.json:
 ```json
 {
-    "body": "Attachment [trac_7292.patch](tarball://root/attachments/some-uuid/ticket7292/trac_7292.patch) by rlm created at 2009-12-16 02:56:13",
+    "body": "Attachment [trac_7292.patch](tarball://root/attachments/some-uuid/ticket7292/trac_7292.patch) by @rlmill created at 2009-12-16 02:56:13",
     "created_at": "2009-12-16T02:56:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60711",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7292.patch](tarball://root/attachments/some-uuid/ticket7292/trac_7292.patch) by rlm created at 2009-12-16 02:56:13
+Attachment [trac_7292.patch](tarball://root/attachments/some-uuid/ticket7292/trac_7292.patch) by @rlmill created at 2009-12-16 02:56:13
 
 
 
@@ -163,7 +163,7 @@ archive/issue_comments_060712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60712",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_060713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60713",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_060714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60714",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_060715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60715",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_060716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60716",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_060717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60717",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_060718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60718",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_060719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60719",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_060720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60720",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -340,15 +340,15 @@ Resolution: fixed
 archive/issue_comments_060721.json:
 ```json
 {
-    "body": "Attachment [trac_7292-2.patch](tarball://root/attachments/some-uuid/ticket7292/trac_7292-2.patch) by rlm created at 2010-01-13 11:39:11\n\npositive review",
+    "body": "Attachment [trac_7292-2.patch](tarball://root/attachments/some-uuid/ticket7292/trac_7292-2.patch) by @rlmill created at 2010-01-13 11:39:11\n\npositive review",
     "created_at": "2010-01-13T11:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7292#issuecomment-60721",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7292-2.patch](tarball://root/attachments/some-uuid/ticket7292/trac_7292-2.patch) by rlm created at 2010-01-13 11:39:11
+Attachment [trac_7292-2.patch](tarball://root/attachments/some-uuid/ticket7292/trac_7292-2.patch) by @rlmill created at 2010-01-13 11:39:11
 
 positive review

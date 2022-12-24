@@ -193,7 +193,7 @@ Fixed a bug that affected larger problems, added optional tag to doctests - I as
 archive/issue_comments_011911.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2008-02-28T18:52:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1882",
     "type": "issue_comment",
@@ -202,7 +202,7 @@ archive/issue_comments_011911.json:
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 
@@ -290,7 +290,7 @@ It looks like you may need to sort the results.  Also, printing dictionaries oft
 archive/issue_comments_011914.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-03-18T18:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1882",
     "type": "issue_comment",
@@ -299,7 +299,7 @@ archive/issue_comments_011914.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 

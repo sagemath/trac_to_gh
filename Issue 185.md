@@ -14,7 +14,7 @@ archive/issues_000185.json:
     "title": "Firefox + Xorg (Linux) take way too much cputime while waiting for results from the notebook server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/185",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: boothby
@@ -45,7 +45,7 @@ archive/issue_comments_000840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/185#issuecomment-840",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_000842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/185#issuecomment-842",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_000845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/185#issuecomment-845",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

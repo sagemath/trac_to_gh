@@ -3,7 +3,7 @@
 archive/issues_005859.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mjo\n\n\n```\n./sage -coverageall devel/sage/sage/catalogue/\n```\n\nresults in\n\n```\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-coverageall\", line 44, in <module>\n    coverage_all(sys.argv[1])\n  File \"/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-coverageall\", line 28, in coverage_all\n    score = (float(scr) / total)\nZeroDivisionError: float division\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5859\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\n\n```\n./sage -coverageall devel/sage/sage/catalogue/\n```\n\nresults in\n\n```\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-coverageall\", line 44, in <module>\n    coverage_all(sys.argv[1])\n  File \"/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-coverageall\", line 28, in coverage_all\n    score = (float(scr) / total)\nZeroDivisionError: float division\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5859\n\n",
     "created_at": "2009-04-22T23:31:00Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_005859.json:
 ```
 Assignee: mabshoff
 
-CC:  mjo
+CC:  @orlitzky
 
 
 ```
@@ -54,7 +54,7 @@ archive/issue_comments_046292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46292",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_046293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46293",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -85,16 +85,16 @@ Changing status from new to needs_review.
 archive/issue_comments_046294.json:
 ```json
 {
-    "body": "Attachment [sage-trac_5859.patch](tarball://root/attachments/some-uuid/ticket5859/sage-trac_5859.patch) by mjo created at 2012-01-09 05:03:05\n\nThis was a pretty small fix, so there it is.\n\nThe coverage score would naturally be undefined, but saying it's 100% of zero is a useful fiction in this case.",
+    "body": "Attachment [sage-trac_5859.patch](tarball://root/attachments/some-uuid/ticket5859/sage-trac_5859.patch) by @orlitzky created at 2012-01-09 05:03:05\n\nThis was a pretty small fix, so there it is.\n\nThe coverage score would naturally be undefined, but saying it's 100% of zero is a useful fiction in this case.",
     "created_at": "2012-01-09T05:03:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46294",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_5859.patch](tarball://root/attachments/some-uuid/ticket5859/sage-trac_5859.patch) by mjo created at 2012-01-09 05:03:05
+Attachment [sage-trac_5859.patch](tarball://root/attachments/some-uuid/ticket5859/sage-trac_5859.patch) by @orlitzky created at 2012-01-09 05:03:05
 
 This was a pretty small fix, so there it is.
 
@@ -112,7 +112,7 @@ archive/issue_comments_046295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46295",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_046296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46296",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

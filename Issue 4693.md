@@ -3,7 +3,7 @@
 archive/issues_004693.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nAfter looking at #4690, I realized that a lot could be done to \"update\" piecewise.py.  This includes not explicitly using Maxima where we don't need to in order to take advantage of pynac in the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4693\n\n",
+    "body": "Assignee: @wdjoyner\n\nAfter looking at #4690, I realized that a lot could be done to \"update\" piecewise.py.  This includes not explicitly using Maxima where we don't need to in order to take advantage of pynac in the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4693\n\n",
     "created_at": "2008-12-04T10:06:23Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004693.json:
     "title": "[with patch, needs review] cleanup work in sage/functions/piecewise.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4693",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 After looking at #4690, I realized that a lot could be done to "update" piecewise.py.  This includes not explicitly using Maxima where we don't need to in order to take advantage of pynac in the future.
 
@@ -37,7 +37,7 @@ archive/issue_comments_035368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4693#issuecomment-35368",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -73,16 +73,16 @@ Michael
 archive/issue_comments_035370.json:
 ```json
 {
-    "body": "Attachment [trac_4693.2.patch](tarball://root/attachments/some-uuid/ticket4693/trac_4693.2.patch) by wdj created at 2008-12-04 14:35:35\n\nI cannot apply this patch. I've tried various things (adding the 4690 patch first, not adding it, using different Sage releases, ...). As I said, I read through it and it looks very good. I wanted to read through the docstring descriptions to see if they still made sense. (For example, from the diff file, it seemed as though the docstring description for laplace needed a small rewording.) I also was hoping Mike added himself to the AUTHOR list at the top of the file. Since the diff doesn't contain that info and I can't apply the patch, I can't tell. \nStill these are very minor issues that can be taken care of later and should not prevent this from going into Sage. So, I give this a positive review, pending doctesting. Thanks again, Mike!",
+    "body": "Attachment [trac_4693.2.patch](tarball://root/attachments/some-uuid/ticket4693/trac_4693.2.patch) by @wdjoyner created at 2008-12-04 14:35:35\n\nI cannot apply this patch. I've tried various things (adding the 4690 patch first, not adding it, using different Sage releases, ...). As I said, I read through it and it looks very good. I wanted to read through the docstring descriptions to see if they still made sense. (For example, from the diff file, it seemed as though the docstring description for laplace needed a small rewording.) I also was hoping Mike added himself to the AUTHOR list at the top of the file. Since the diff doesn't contain that info and I can't apply the patch, I can't tell. \nStill these are very minor issues that can be taken care of later and should not prevent this from going into Sage. So, I give this a positive review, pending doctesting. Thanks again, Mike!",
     "created_at": "2008-12-04T14:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4693#issuecomment-35370",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4693.2.patch](tarball://root/attachments/some-uuid/ticket4693/trac_4693.2.patch) by wdj created at 2008-12-04 14:35:35
+Attachment [trac_4693.2.patch](tarball://root/attachments/some-uuid/ticket4693/trac_4693.2.patch) by @wdjoyner created at 2008-12-04 14:35:35
 
 I cannot apply this patch. I've tried various things (adding the 4690 patch first, not adding it, using different Sage releases, ...). As I said, I read through it and it looks very good. I wanted to read through the docstring descriptions to see if they still made sense. (For example, from the diff file, it seemed as though the docstring description for laplace needed a small rewording.) I also was hoping Mike added himself to the AUTHOR list at the top of the file. Since the diff doesn't contain that info and I can't apply the patch, I can't tell. 
 Still these are very minor issues that can be taken care of later and should not prevent this from going into Sage. So, I give this a positive review, pending doctesting. Thanks again, Mike!

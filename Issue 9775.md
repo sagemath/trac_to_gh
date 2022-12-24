@@ -3,7 +3,7 @@
 archive/issues_009775.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ncohen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9776\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nathanncohen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9776\n\n",
     "created_at": "2010-08-21T18:24:21Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_009775.json:
     "title": "Cygwin: GLPK extension module needs to be more explicit in its linking",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9775",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  ncohen
+CC:  @nathanncohen
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_095930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95930",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_095931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95931",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_095932.json:
 ```json
 {
-    "body": "Attachment [trac_9776.patch](tarball://root/attachments/some-uuid/ticket9776/trac_9776.patch) by mhansen created at 2010-08-21 18:26:55",
+    "body": "Attachment [trac_9776.patch](tarball://root/attachments/some-uuid/ticket9776/trac_9776.patch) by @mwhansen created at 2010-08-21 18:26:55",
     "created_at": "2010-08-21T18:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95932",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_9776.patch](tarball://root/attachments/some-uuid/ticket9776/trac_9776.patch) by mhansen created at 2010-08-21 18:26:55
+Attachment [trac_9776.patch](tarball://root/attachments/some-uuid/ticket9776/trac_9776.patch) by @mwhansen created at 2010-08-21 18:26:55
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_095933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95933",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_095934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95934",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_095935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95935",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

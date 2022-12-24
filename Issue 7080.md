@@ -14,7 +14,7 @@ archive/issues_007080.json:
     "title": "include new separated sage notebook in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7080",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7080
 archive/issue_comments_058540.json:
 ```json
 {
-    "body": "Attachment [trac_7080.patch](tarball://root/attachments/some-uuid/ticket7080/trac_7080.patch) by was created at 2009-09-30 09:21:47",
+    "body": "Attachment [trac_7080.patch](tarball://root/attachments/some-uuid/ticket7080/trac_7080.patch) by @williamstein created at 2009-09-30 09:21:47",
     "created_at": "2009-09-30T09:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7080#issuecomment-58540",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7080.patch](tarball://root/attachments/some-uuid/ticket7080/trac_7080.patch) by was created at 2009-09-30 09:21:47
+Attachment [trac_7080.patch](tarball://root/attachments/some-uuid/ticket7080/trac_7080.patch) by @williamstein created at 2009-09-30 09:21:47
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_058541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7080",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7080#issuecomment-58541",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

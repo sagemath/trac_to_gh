@@ -14,7 +14,7 @@ archive/issues_003030.json:
     "title": "Trivial cython patch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3030",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3030
 archive/issue_comments_020853.json:
 ```json
 {
-    "body": "Attachment [cython_096131devel1.patch](tarball://root/attachments/some-uuid/ticket3030/cython_096131devel1.patch) by gfurnish created at 2008-04-26 10:41:43",
+    "body": "Attachment [cython_096131devel1.patch](tarball://root/attachments/some-uuid/ticket3030/cython_096131devel1.patch) by @garyfurnish created at 2008-04-26 10:41:43",
     "created_at": "2008-04-26T10:41:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3030#issuecomment-20853",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [cython_096131devel1.patch](tarball://root/attachments/some-uuid/ticket3030/cython_096131devel1.patch) by gfurnish created at 2008-04-26 10:41:43
+Attachment [cython_096131devel1.patch](tarball://root/attachments/some-uuid/ticket3030/cython_096131devel1.patch) by @garyfurnish created at 2008-04-26 10:41:43
 
 
 
@@ -50,16 +50,16 @@ Attachment [cython_096131devel1.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_020854.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to gfurnish.",
+    "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-04-26T10:42:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3030#issuecomment-20854",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from mabshoff to gfurnish.
+Changing assignee from mabshoff to @garyfurnish.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_020855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3030#issuecomment-20855",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_020856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3030#issuecomment-20856",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

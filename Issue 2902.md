@@ -3,7 +3,7 @@
 archive/issues_002902.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mpatel\n\nWhen you paste into a cell it should resize as a result.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2902\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nWhen you paste into a cell it should resize as a result.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2902\n\n",
     "created_at": "2008-04-13T02:31:29Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_002902.json:
     "title": "notebook -- resize of cell should also fire on paste into the cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2902",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  was mpatel
+CC:  @williamstein @qed777
 
 When you paste into a cell it should resize as a result.
 
@@ -52,16 +52,16 @@ This isn't an "easy" problem, but it looks [this](http://www.intridea.com/2007/1
 archive/issue_comments_020000.json:
 ```json
 {
-    "body": "Attachment [trac_2902-paste-resize.patch](tarball://root/attachments/some-uuid/ticket2902/trac_2902-paste-resize.patch) by timdumol created at 2009-11-19 19:05:26\n\nSets `onpaste` handler to resize cells.",
+    "body": "Attachment [trac_2902-paste-resize.patch](tarball://root/attachments/some-uuid/ticket2902/trac_2902-paste-resize.patch) by @TimDumol created at 2009-11-19 19:05:26\n\nSets `onpaste` handler to resize cells.",
     "created_at": "2009-11-19T19:05:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20000",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_2902-paste-resize.patch](tarball://root/attachments/some-uuid/ticket2902/trac_2902-paste-resize.patch) by timdumol created at 2009-11-19 19:05:26
+Attachment [trac_2902-paste-resize.patch](tarball://root/attachments/some-uuid/ticket2902/trac_2902-paste-resize.patch) by @TimDumol created at 2009-11-19 19:05:26
 
 Sets `onpaste` handler to resize cells.
 
@@ -77,7 +77,7 @@ archive/issue_comments_020001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20001",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_020002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20002",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_020003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20003",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_020004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20004",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_020006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20006",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_020007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20007",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_020008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20008",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_020009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20009",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_020010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20010",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_020011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20011",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_020012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20012",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_020013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20013",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_020014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2902#issuecomment-20014",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

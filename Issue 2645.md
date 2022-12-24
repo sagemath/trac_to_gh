@@ -3,7 +3,7 @@
 archive/issues_002645.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe patch below cuts off the shaft and part of the head if an arrow3d is too long for the given vector.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2645\n\n",
+    "body": "Assignee: @williamstein\n\nThe patch below cuts off the shaft and part of the head if an arrow3d is too long for the given vector.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2645\n\n",
     "created_at": "2008-03-22T15:41:23Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002645.json:
     "title": "arrow3d is sometimes too long",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2645",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The patch below cuts off the shaft and part of the head if an arrow3d is too long for the given vector.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2645
 archive/issue_comments_018183.json:
 ```json
 {
-    "body": "Attachment [arrow3d-short.patch](tarball://root/attachments/some-uuid/ticket2645/arrow3d-short.patch) by jason created at 2008-03-22 15:41:45",
+    "body": "Attachment [arrow3d-short.patch](tarball://root/attachments/some-uuid/ticket2645/arrow3d-short.patch) by @jasongrout created at 2008-03-22 15:41:45",
     "created_at": "2008-03-22T15:41:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2645#issuecomment-18183",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [arrow3d-short.patch](tarball://root/attachments/some-uuid/ticket2645/arrow3d-short.patch) by jason created at 2008-03-22 15:41:45
+Attachment [arrow3d-short.patch](tarball://root/attachments/some-uuid/ticket2645/arrow3d-short.patch) by @jasongrout created at 2008-03-22 15:41:45
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_018185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2645#issuecomment-18185",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_018186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2645#issuecomment-18186",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

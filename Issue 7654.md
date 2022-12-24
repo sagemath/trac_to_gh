@@ -3,7 +3,7 @@
 archive/issues_007654.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: conversion libsingular\n\nThe following happens in sage-4.2.1 and sage-4.3.alpha1:\n\n```\nsage: R.<y_6, y_3, y_2, y_1, z_6, z_5, z_4, z_3, z_2, z_1> = QQ[]\nsage: R.<y_6, y_3, y_2, y_1, z_6, z_5, z_4, z_3, z_2, z_1> = GF(3)[]\nsage: S = GF(3)['y_4', 'y_3', 'y_2', 'y_1', 'z_5', 'z_4', 'z_3', 'z_2', 'z_1']\nsage: S(y_1*z_2^2*z_1)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (947, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (952, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/.sage/temp/gauss/12072/_home_king__sage_init_sage_0.py in <module>()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7032)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial.so in sage.rings.polynomial.multi_polynomial.MPolynomial._polynomial_ (sage/rings/polynomial/multi_polynomial.c:3259)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7195)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer_mod_ring.pyc in __call__(self, x)\n    761         \"\"\"\n    762         try:\n--> 763             return integer_mod.IntegerMod(self, x)\n    764         except (NotImplementedError, PariError):\n    765             raise TypeError, \"error coercing to finite field\"\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer_mod.so in sage.rings.integer_mod.IntegerMod (sage/rings/integer_mod.c:2969)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer_mod.so in sage.rings.integer_mod.IntegerMod_int.__init__ (sage/rings/integer_mod.c:13984)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4241)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3109)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:3000)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:7009)()\n\nTypeError: unable to coerce <type 'list'> to an integer\n```\n\n\nString conversion is fine.\n\n```\nsage: S('y_1*z_2^2*z_1')\ny_1*z_2^2*z_1\n```\n\n\nI know that there is no coercion between these two rings. However, here we have *conversion*. Conversion should -- as much as I understand -- try to make a meaning out of the input, even if the parents do not support coercion.\n\nTherefore I consider this a quite serious bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7654\n\n",
+    "body": "Assignee: @malb\n\nKeywords: conversion libsingular\n\nThe following happens in sage-4.2.1 and sage-4.3.alpha1:\n\n```\nsage: R.<y_6, y_3, y_2, y_1, z_6, z_5, z_4, z_3, z_2, z_1> = QQ[]\nsage: R.<y_6, y_3, y_2, y_1, z_6, z_5, z_4, z_3, z_2, z_1> = GF(3)[]\nsage: S = GF(3)['y_4', 'y_3', 'y_2', 'y_1', 'z_5', 'z_4', 'z_3', 'z_2', 'z_1']\nsage: S(y_1*z_2^2*z_1)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (947, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (952, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/.sage/temp/gauss/12072/_home_king__sage_init_sage_0.py in <module>()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7032)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial.so in sage.rings.polynomial.multi_polynomial.MPolynomial._polynomial_ (sage/rings/polynomial/multi_polynomial.c:3259)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7195)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer_mod_ring.pyc in __call__(self, x)\n    761         \"\"\"\n    762         try:\n--> 763             return integer_mod.IntegerMod(self, x)\n    764         except (NotImplementedError, PariError):\n    765             raise TypeError, \"error coercing to finite field\"\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer_mod.so in sage.rings.integer_mod.IntegerMod (sage/rings/integer_mod.c:2969)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer_mod.so in sage.rings.integer_mod.IntegerMod_int.__init__ (sage/rings/integer_mod.c:13984)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4241)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3109)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:3000)()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:7009)()\n\nTypeError: unable to coerce <type 'list'> to an integer\n```\n\n\nString conversion is fine.\n\n```\nsage: S('y_1*z_2^2*z_1')\ny_1*z_2^2*z_1\n```\n\n\nI know that there is no coercion between these two rings. However, here we have *conversion*. Conversion should -- as much as I understand -- try to make a meaning out of the input, even if the parents do not support coercion.\n\nTherefore I consider this a quite serious bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7654\n\n",
     "created_at": "2009-12-11T00:25:56Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_007654.json:
     "title": "Conversion bug in MPolynomialRing_libsingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7654",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: conversion libsingular
 
@@ -98,7 +98,7 @@ archive/issue_comments_065459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65459",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_065460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65460",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_065461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65461",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_065462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65462",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_065463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65463",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_065464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65464",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_065465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65465",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_065466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65466",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_065467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65467",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_065468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65468",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_065469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65469",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_065470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65470",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_065471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65471",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_065472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65472",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -588,7 +588,7 @@ archive/issue_comments_065473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65473",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -606,7 +606,7 @@ archive/issue_comments_065474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65474",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -624,7 +624,7 @@ archive/issue_comments_065475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65475",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -669,7 +669,7 @@ archive/issue_comments_065476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65476",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -687,7 +687,7 @@ archive/issue_comments_065477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65477",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -798,16 +798,16 @@ I am not sure, but it seems to me that the doc tests of the elliptic curves code
 archive/issue_comments_065478.json:
 ```json
 {
-    "body": "Attachment [trac_7654.patch](tarball://root/attachments/some-uuid/ticket7654/trac_7654.patch) by malb created at 2011-08-18 14:04:41\n\nReplying to [comment:18 SimonKing]:\n> We got two failures (interestingly in two modules I'm quite familiar with):\n> So, you just need to change two error messages.\n\nThe updated patch does just that.\n \n> I am not sure, but it seems to me that the doc tests of the elliptic curves code became slower. Testing it now.\n\nOkay, good. Let me know what the verdict is and I'll take a look at performance if needed.",
+    "body": "Attachment [trac_7654.patch](tarball://root/attachments/some-uuid/ticket7654/trac_7654.patch) by @malb created at 2011-08-18 14:04:41\n\nReplying to [comment:18 SimonKing]:\n> We got two failures (interestingly in two modules I'm quite familiar with):\n> So, you just need to change two error messages.\n\nThe updated patch does just that.\n \n> I am not sure, but it seems to me that the doc tests of the elliptic curves code became slower. Testing it now.\n\nOkay, good. Let me know what the verdict is and I'll take a look at performance if needed.",
     "created_at": "2011-08-18T14:04:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65478",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_7654.patch](tarball://root/attachments/some-uuid/ticket7654/trac_7654.patch) by malb created at 2011-08-18 14:04:41
+Attachment [trac_7654.patch](tarball://root/attachments/some-uuid/ticket7654/trac_7654.patch) by @malb created at 2011-08-18 14:04:41
 
 Replying to [comment:18 SimonKing]:
 > We got two failures (interestingly in two modules I'm quite familiar with):
@@ -831,7 +831,7 @@ archive/issue_comments_065479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65479",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -851,7 +851,7 @@ archive/issue_comments_065480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65480",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -869,7 +869,7 @@ archive/issue_comments_065481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7654#issuecomment-65481",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

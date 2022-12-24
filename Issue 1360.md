@@ -3,7 +3,7 @@
 archive/issues_001360.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nThe full discussion is here.\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/4c615950a190e3f3\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1360\n\n",
+    "body": "Assignee: @mwhansen\n\nThe full discussion is here.\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/4c615950a190e3f3\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1360\n\n",
     "created_at": "2007-12-02T04:21:06Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001360.json:
     "title": "Investigate long time graph_isom case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1360",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 The full discussion is here.
 
@@ -40,7 +40,7 @@ archive/issue_comments_008710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1360#issuecomment-8710",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_008711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1360#issuecomment-8711",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -71,16 +71,16 @@ Changing keywords from "" to "graph isomorphism".
 archive/issue_comments_008712.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-02T04:36:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1360#issuecomment-8712",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_008713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1360#issuecomment-8713",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_008714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1360#issuecomment-8714",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_008715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1360#issuecomment-8715",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_008716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1360#issuecomment-8716",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

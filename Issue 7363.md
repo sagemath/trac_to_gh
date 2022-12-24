@@ -3,7 +3,7 @@
 archive/issues_007363.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  burcin\n\nSee http://groups.google.com/group/sage-devel/browse_frm/thread/9d58693356e11947\n\nIssue created by migration from https://trac.sagemath.org/ticket/7363\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nSee http://groups.google.com/group/sage-devel/browse_frm/thread/9d58693356e11947\n\nIssue created by migration from https://trac.sagemath.org/ticket/7363\n\n",
     "created_at": "2009-10-31T14:44:49Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_007363.json:
     "title": "print symbolic fractions more naturally: print 2/(x+2) instead of 2 (1/(x+2))",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7363",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  burcin
+CC:  @burcin
 
 See http://groups.google.com/group/sage-devel/browse_frm/thread/9d58693356e11947
 
@@ -39,7 +39,7 @@ archive/issue_comments_061694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7363#issuecomment-61694",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_061695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7363#issuecomment-61695",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -70,16 +70,16 @@ add doctests
 archive/issue_comments_061696.json:
 ```json
 {
-    "body": "Attachment [trac_7363-mul_coeff.patch](tarball://root/attachments/some-uuid/ticket7363/trac_7363-mul_coeff.patch) by burcin created at 2010-01-17 07:22:12\n\nNext pynac release will have a patch for this. attachment:trac_7363-mul_coeff.patch fixes some doctests and adds a couple more.",
+    "body": "Attachment [trac_7363-mul_coeff.patch](tarball://root/attachments/some-uuid/ticket7363/trac_7363-mul_coeff.patch) by @burcin created at 2010-01-17 07:22:12\n\nNext pynac release will have a patch for this. attachment:trac_7363-mul_coeff.patch fixes some doctests and adds a couple more.",
     "created_at": "2010-01-17T07:22:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7363#issuecomment-61696",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7363-mul_coeff.patch](tarball://root/attachments/some-uuid/ticket7363/trac_7363-mul_coeff.patch) by burcin created at 2010-01-17 07:22:12
+Attachment [trac_7363-mul_coeff.patch](tarball://root/attachments/some-uuid/ticket7363/trac_7363-mul_coeff.patch) by @burcin created at 2010-01-17 07:22:12
 
 Next pynac release will have a patch for this. attachment:trac_7363-mul_coeff.patch fixes some doctests and adds a couple more.
 
@@ -95,7 +95,7 @@ archive/issue_comments_061697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7363#issuecomment-61697",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_061698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7363#issuecomment-61698",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_061699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7363#issuecomment-61699",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_061700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7363#issuecomment-61700",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_061701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7363",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7363#issuecomment-61701",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

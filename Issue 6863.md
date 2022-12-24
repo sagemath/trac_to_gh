@@ -3,7 +3,7 @@
 archive/issues_006863.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  mtaranes\n\nKeywords: number field modular\n\nThis is related to, but not dependent on, #6829.\n\nCusps over a number field K are elements of `P^1(K)`.  Support for these is to be provided as part of the general implementation of modular symbols and related matters over number fields.\n\nA patch which will be available shortly will supply this implementation, together with related utilities such as testing Gamma_0(N)-equivalence etc.\n\nThis work has been done by Maite Aranes, under the supervision of John Cremona.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6863\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  mtaranes\n\nKeywords: number field modular\n\nThis is related to, but not dependent on, #6829.\n\nCusps over a number field K are elements of `P^1(K)`.  Support for these is to be provided as part of the general implementation of modular symbols and related matters over number fields.\n\nA patch which will be available shortly will supply this implementation, together with related utilities such as testing Gamma_0(N)-equivalence etc.\n\nThis work has been done by Maite Aranes, under the supervision of John Cremona.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6863\n\n",
     "created_at": "2009-09-02T13:00:01Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_006863.json:
     "title": "Implement cusps over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6863",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 CC:  mtaranes
 
@@ -83,7 +83,7 @@ archive/issue_comments_056634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6863#issuecomment-56634",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_056635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6863#issuecomment-56635",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_056636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6863#issuecomment-56636",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_056637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6863#issuecomment-56637",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_056638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6863#issuecomment-56638",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_056639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6863#issuecomment-56639",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_056640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6863#issuecomment-56640",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_056641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6863#issuecomment-56641",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_056642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6863#issuecomment-56642",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

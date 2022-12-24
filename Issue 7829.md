@@ -3,7 +3,7 @@
 archive/issues_007829.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n```\nsage: float(e).hex()\n'0x1.5bf0a8b145769p+1'\nsage: RR(e).hex()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\nAttributeError: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'hex'\n```\n\n\nThere should probably be a __hex__ method as well, so hex(2.3) works. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7829\n\n",
+    "body": "Assignee: @aghitza\n\n\n```\nsage: float(e).hex()\n'0x1.5bf0a8b145769p+1'\nsage: RR(e).hex()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\nAttributeError: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'hex'\n```\n\n\nThere should probably be a __hex__ method as well, so hex(2.3) works. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7829\n\n",
     "created_at": "2010-01-03T05:37:30Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007829.json:
     "title": "implement hex for real numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7829",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 ```
@@ -49,7 +49,7 @@ archive/issue_comments_067790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67790",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_067791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67791",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_067792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67792",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_067794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67794",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_067797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67797",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_067798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67798",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_067799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67799",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

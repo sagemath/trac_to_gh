@@ -14,7 +14,7 @@ archive/issues_003560.json:
     "title": "optimize import of gnutls_socket_ssl.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3560",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3560
 archive/issue_comments_025163.json:
 ```json
 {
-    "body": "Attachment [sage-3560-part2.patch](tarball://root/attachments/some-uuid/ticket3560/sage-3560-part2.patch) by was created at 2008-07-06 08:55:12",
+    "body": "Attachment [sage-3560-part2.patch](tarball://root/attachments/some-uuid/ticket3560/sage-3560-part2.patch) by @williamstein created at 2008-07-06 08:55:12",
     "created_at": "2008-07-06T08:55:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3560#issuecomment-25163",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3560-part2.patch](tarball://root/attachments/some-uuid/ticket3560/sage-3560-part2.patch) by was created at 2008-07-06 08:55:12
+Attachment [sage-3560-part2.patch](tarball://root/attachments/some-uuid/ticket3560/sage-3560-part2.patch) by @williamstein created at 2008-07-06 08:55:12
 
 
 
@@ -51,16 +51,16 @@ Attachment [sage-3560-part2.patch](tarball://root/attachments/some-uuid/ticket35
 archive/issue_comments_025164.json:
 ```json
 {
-    "body": "Attachment [sage-3560-part3.patch](tarball://root/attachments/some-uuid/ticket3560/sage-3560-part3.patch) by was created at 2008-07-06 09:09:32",
+    "body": "Attachment [sage-3560-part3.patch](tarball://root/attachments/some-uuid/ticket3560/sage-3560-part3.patch) by @williamstein created at 2008-07-06 09:09:32",
     "created_at": "2008-07-06T09:09:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3560#issuecomment-25164",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3560-part3.patch](tarball://root/attachments/some-uuid/ticket3560/sage-3560-part3.patch) by was created at 2008-07-06 09:09:32
+Attachment [sage-3560-part3.patch](tarball://root/attachments/some-uuid/ticket3560/sage-3560-part3.patch) by @williamstein created at 2008-07-06 09:09:32
 
 
 
@@ -69,16 +69,16 @@ Attachment [sage-3560-part3.patch](tarball://root/attachments/some-uuid/ticket35
 archive/issue_comments_025165.json:
 ```json
 {
-    "body": "Attachment [trac_3560.patch](tarball://root/attachments/some-uuid/ticket3560/trac_3560.patch) by mhansen created at 2008-07-06 09:23:39\n\nWorks for me.\n\nApply only trac_3560.patch.",
+    "body": "Attachment [trac_3560.patch](tarball://root/attachments/some-uuid/ticket3560/trac_3560.patch) by @mwhansen created at 2008-07-06 09:23:39\n\nWorks for me.\n\nApply only trac_3560.patch.",
     "created_at": "2008-07-06T09:23:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3560#issuecomment-25165",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3560.patch](tarball://root/attachments/some-uuid/ticket3560/trac_3560.patch) by mhansen created at 2008-07-06 09:23:39
+Attachment [trac_3560.patch](tarball://root/attachments/some-uuid/ticket3560/trac_3560.patch) by @mwhansen created at 2008-07-06 09:23:39
 
 Works for me.
 

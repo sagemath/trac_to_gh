@@ -3,7 +3,7 @@
 archive/issues_005635.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nThe plot method on an object should return either a 2d plot or raise NotImplementedError (or not be defined).  On LatticePolytope's it returns a 3d Tachyon object.\n\n\n```\nsage: p = LatticePolytope(random_matrix(ZZ, 3,6, x=7)).plot()\nsage: type(p)\n<class 'sage.plot.tachyon.Tachyon'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5635\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe plot method on an object should return either a 2d plot or raise NotImplementedError (or not be defined).  On LatticePolytope's it returns a 3d Tachyon object.\n\n\n```\nsage: p = LatticePolytope(random_matrix(ZZ, 3,6, x=7)).plot()\nsage: type(p)\n<class 'sage.plot.tachyon.Tachyon'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5635\n\n",
     "created_at": "2009-03-29T20:25:02Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005635.json:
     "title": "plot method on lattice polytopes gives something ridiculous",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5635",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5635
 archive/issue_comments_044014.json:
 ```json
 {
-    "body": "Attachment [11803.patch](tarball://root/attachments/some-uuid/ticket5635/11803.patch) by novoselt created at 2009-03-31 04:26:55\n\nThe patch removes plot() method and fixes the documentation. I also changed show() to show3d(), which shows the plot without axes.",
+    "body": "Attachment [11803.patch](tarball://root/attachments/some-uuid/ticket5635/11803.patch) by @novoselt created at 2009-03-31 04:26:55\n\nThe patch removes plot() method and fixes the documentation. I also changed show() to show3d(), which shows the plot without axes.",
     "created_at": "2009-03-31T04:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5635#issuecomment-44014",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [11803.patch](tarball://root/attachments/some-uuid/ticket5635/11803.patch) by novoselt created at 2009-03-31 04:26:55
+Attachment [11803.patch](tarball://root/attachments/some-uuid/ticket5635/11803.patch) by @novoselt created at 2009-03-31 04:26:55
 
 The patch removes plot() method and fixes the documentation. I also changed show() to show3d(), which shows the plot without axes.
 

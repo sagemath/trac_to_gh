@@ -3,7 +3,7 @@
 archive/issues_009961.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  ryan kcrisman\n\nKeywords: beginner\n\nIt would be really nice if this plotted an arrow from (1,2) to (3,4):\n\n\n```\nsage: v=vector([1,2])\nsage: u=vector([2,2])\nsage: plot(u,start=v)\n```\n\n\nor maybe the option should be \"base\" or \"origin\"\n\nTo fix this, just change the plot method in `devel/sage/sage/modules/free_module_element.pyx`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9962\n\n",
+    "body": "Assignee: jason, was\n\nCC:  ryan @kcrisman\n\nKeywords: beginner\n\nIt would be really nice if this plotted an arrow from (1,2) to (3,4):\n\n\n```\nsage: v=vector([1,2])\nsage: u=vector([2,2])\nsage: plot(u,start=v)\n```\n\n\nor maybe the option should be \"base\" or \"origin\"\n\nTo fix this, just change the plot method in `devel/sage/sage/modules/free_module_element.pyx`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9962\n\n",
     "created_at": "2010-09-21T20:02:44Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009961.json:
     "title": "vector plot should have optional \"start\" argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9961",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  ryan kcrisman
+CC:  ryan @kcrisman
 
 Keywords: beginner
 
@@ -53,7 +53,7 @@ archive/issue_comments_099764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99764",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_099768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99768",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_099769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99769",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_099776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99776",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_099777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99777",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_099778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99778",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_099779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99779",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_099782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99782",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_099783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99783",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_099784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99784",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_099785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99785",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_099786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99786",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_099787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99787",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_099788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99788",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -534,7 +534,7 @@ archive/issue_comments_099789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99789",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -547,16 +547,16 @@ I think I have it fixed.  However, the bizarre error messages remain for one-dim
 archive/issue_comments_099790.json:
 ```json
 {
-    "body": "Attachment [trac_9962-reviewer.patch](tarball://root/attachments/some-uuid/ticket9962/trac_9962-reviewer.patch) by kcrisman created at 2011-03-13 01:58:22\n\nApply after vector_start.2 patch",
+    "body": "Attachment [trac_9962-reviewer.patch](tarball://root/attachments/some-uuid/ticket9962/trac_9962-reviewer.patch) by @kcrisman created at 2011-03-13 01:58:22\n\nApply after vector_start.2 patch",
     "created_at": "2011-03-13T01:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99790",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9962-reviewer.patch](tarball://root/attachments/some-uuid/ticket9962/trac_9962-reviewer.patch) by kcrisman created at 2011-03-13 01:58:22
+Attachment [trac_9962-reviewer.patch](tarball://root/attachments/some-uuid/ticket9962/trac_9962-reviewer.patch) by @kcrisman created at 2011-03-13 01:58:22
 
 Apply after vector_start.2 patch
 
@@ -572,7 +572,7 @@ archive/issue_comments_099791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99791",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_099792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99792",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -610,7 +610,7 @@ archive/issue_comments_099793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99793",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -685,7 +685,7 @@ archive/issue_comments_099797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9961#issuecomment-99797",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

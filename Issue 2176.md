@@ -3,7 +3,7 @@
 archive/issues_002176.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI've created a new spkg for tachyon that adds Debian build support.\n\nhttp://sage.math.washington.edu/home/tabbott/tachyon-0.98beta.p4.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2176\n\n",
+    "body": "Assignee: @timabbott\n\nI've created a new spkg for tachyon that adds Debian build support.\n\nhttp://sage.math.washington.edu/home/tabbott/tachyon-0.98beta.p4.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2176\n\n",
     "created_at": "2008-02-16T02:59:12Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002176.json:
     "title": "debianize tachyon spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2176",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I've created a new spkg for tachyon that adds Debian build support.
 

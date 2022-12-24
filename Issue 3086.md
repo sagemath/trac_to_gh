@@ -3,7 +3,7 @@
 archive/issues_003086.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jason\n\nR 2.7 is out, so let's upgrade. We should also more rpy to its own top level spkg and update to rpy 1.0.2\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3086\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout\n\nR 2.7 is out, so let's upgrade. We should also more rpy to its own top level spkg and update to rpy 1.0.2\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3086\n\n",
     "created_at": "2008-05-03T03:24:25Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_003086.json:
 ```
 Assignee: mabshoff
 
-CC:  jason
+CC:  @jasongrout
 
 R 2.7 is out, so let's upgrade. We should also more rpy to its own top level spkg and update to rpy 1.0.2
 
@@ -136,7 +136,7 @@ archive/issue_comments_021311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21311",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -149,16 +149,16 @@ Changing status from assigned to new.
 archive/issue_comments_021312.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to jason.",
+    "body": "Changing assignee from mabshoff to @jasongrout.",
     "created_at": "2009-09-16T13:41:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21312",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mabshoff to jason.
+Changing assignee from mabshoff to @jasongrout.
 
 
 
@@ -172,7 +172,7 @@ archive/issue_comments_021313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21313",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_021314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21314",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_021315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21315",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

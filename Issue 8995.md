@@ -3,7 +3,7 @@
 archive/issues_008995.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  dimpase\n\nSee the thread by Dennis Watson here:\n\nhttp://groups.google.com/group/sage-support/browse_frm/thread/2acd499a566efce1\n\nIn particular, some tinymce javascript files were trying to download from a URL that included the username, like:\n\nhttp://sagenb.org/home/usernamewith`@`/javascript/tiny_mce/langs/en.js\n\nIssue created by migration from https://trac.sagemath.org/ticket/8995\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @dimpase\n\nSee the thread by Dennis Watson here:\n\nhttp://groups.google.com/group/sage-support/browse_frm/thread/2acd499a566efce1\n\nIn particular, some tinymce javascript files were trying to download from a URL that included the username, like:\n\nhttp://sagenb.org/home/usernamewith`@`/javascript/tiny_mce/langs/en.js\n\nIssue created by migration from https://trac.sagemath.org/ticket/8995\n\n",
     "created_at": "2010-05-19T23:35:25Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008995.json:
     "title": "@ sign in notebook username prevents TinyMCE from working",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8995",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  dimpase
+CC:  @dimpase
 
 See the thread by Dennis Watson here:
 
@@ -45,7 +45,7 @@ archive/issue_comments_083177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8995#issuecomment-83177",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_083178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8995#issuecomment-83178",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_083179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8995#issuecomment-83179",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_083180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8995#issuecomment-83180",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_083181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8995#issuecomment-83181",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

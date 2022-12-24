@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2047
 archive/issue_comments_013254.json:
 ```json
 {
-    "body": "Attachment [trac-2047.patch](tarball://root/attachments/some-uuid/ticket2047/trac-2047.patch) by was created at 2008-02-05 05:14:27\n\nWorks, massively speeds things up (easily a factor of 100), and looks good.\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: f = (x+y+z+1)^20\nsage: h = f._fast_float_()\nsage: time for _ in xrange(100): k = f(1,2,3)\nCPU times: user 3.81 s, sys: 0.02 s, total: 3.84 s\nWall time: 3.87\nsage: time for _ in xrange(100): k = h(1,2,3)\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.05\nsage: 3.84 / 0.04\n96.0000000000000\n```\n",
+    "body": "Attachment [trac-2047.patch](tarball://root/attachments/some-uuid/ticket2047/trac-2047.patch) by @williamstein created at 2008-02-05 05:14:27\n\nWorks, massively speeds things up (easily a factor of 100), and looks good.\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: f = (x+y+z+1)^20\nsage: h = f._fast_float_()\nsage: time for _ in xrange(100): k = f(1,2,3)\nCPU times: user 3.81 s, sys: 0.02 s, total: 3.84 s\nWall time: 3.87\nsage: time for _ in xrange(100): k = h(1,2,3)\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.05\nsage: 3.84 / 0.04\n96.0000000000000\n```\n",
     "created_at": "2008-02-05T05:14:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2047#issuecomment-13254",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-2047.patch](tarball://root/attachments/some-uuid/ticket2047/trac-2047.patch) by was created at 2008-02-05 05:14:27
+Attachment [trac-2047.patch](tarball://root/attachments/some-uuid/ticket2047/trac-2047.patch) by @williamstein created at 2008-02-05 05:14:27
 
 Works, massively speeds things up (easily a factor of 100), and looks good.
 
@@ -79,7 +79,7 @@ archive/issue_comments_013255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2047#issuecomment-13255",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

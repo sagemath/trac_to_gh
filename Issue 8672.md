@@ -3,7 +3,7 @@
 archive/issues_008672.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  malb schilly r.gaia.cs\n\nBased upon Harald Schilly's SPKG for SCIP, here is a patch to enable the use of this solver through the usual interface for LP.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8672\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @malb @haraldschilly r.gaia.cs\n\nBased upon Harald Schilly's SPKG for SCIP, here is a patch to enable the use of this solver through the usual interface for LP.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8672\n\n",
     "created_at": "2010-04-11T12:32:06Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_008672.json:
     "title": "SCIP support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8672",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, jkantor
 
-CC:  malb schilly r.gaia.cs
+CC:  @malb @haraldschilly r.gaia.cs
 
 Based upon Harald Schilly's SPKG for SCIP, here is a patch to enable the use of this solver through the usual interface for LP.
 
@@ -41,7 +41,7 @@ archive/issue_comments_078917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8672#issuecomment-78917",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_078918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8672#issuecomment-78918",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_078919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8672#issuecomment-78919",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -92,16 +92,16 @@ Nathann
 archive/issue_comments_078920.json:
 ```json
 {
-    "body": "Attachment [trac_8672.patch](tarball://root/attachments/some-uuid/ticket8672/trac_8672.patch) by ncohen created at 2010-04-11 12:55:13",
+    "body": "Attachment [trac_8672.patch](tarball://root/attachments/some-uuid/ticket8672/trac_8672.patch) by @nathanncohen created at 2010-04-11 12:55:13",
     "created_at": "2010-04-11T12:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8672#issuecomment-78920",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8672.patch](tarball://root/attachments/some-uuid/ticket8672/trac_8672.patch) by ncohen created at 2010-04-11 12:55:13
+Attachment [trac_8672.patch](tarball://root/attachments/some-uuid/ticket8672/trac_8672.patch) by @nathanncohen created at 2010-04-11 12:55:13
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_078921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8672#issuecomment-78921",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_078922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8672#issuecomment-78922",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_078923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8672#issuecomment-78923",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_078924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8672#issuecomment-78924",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_078925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8672#issuecomment-78925",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_078926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8672#issuecomment-78926",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_078927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8672#issuecomment-78927",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -50,16 +50,16 @@ Attachment [introduction.rst](tarball://root/attachments/some-uuid/ticket7225/in
 archive/issue_comments_059923.json:
 ```json
 {
-    "body": "Attachment [introduction.2.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.2.rst) by pdenapo created at 2010-10-24 14:21:24",
+    "body": "Attachment [introduction.2.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.2.rst) by @pdenapo created at 2010-10-24 14:21:24",
     "created_at": "2010-10-24T14:21:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7225#issuecomment-59923",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Attachment [introduction.2.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.2.rst) by pdenapo created at 2010-10-24 14:21:24
+Attachment [introduction.2.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.2.rst) by @pdenapo created at 2010-10-24 14:21:24
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_059924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7225#issuecomment-59924",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -86,16 +86,16 @@ In my opinion, the original tanslation (first attachment) was too literal, and i
 archive/issue_comments_059925.json:
 ```json
 {
-    "body": "Attachment [introduction.3.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.3.rst) by pdenapo created at 2010-10-24 19:31:49",
+    "body": "Attachment [introduction.3.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.3.rst) by @pdenapo created at 2010-10-24 19:31:49",
     "created_at": "2010-10-24T19:31:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7225#issuecomment-59925",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Attachment [introduction.3.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.3.rst) by pdenapo created at 2010-10-24 19:31:49
+Attachment [introduction.3.rst](tarball://root/attachments/some-uuid/ticket7225/introduction.3.rst) by @pdenapo created at 2010-10-24 19:31:49
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_059926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7225#issuecomment-59926",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_059927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7225#issuecomment-59927",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_059928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7225#issuecomment-59928",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_059929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7225#issuecomment-59929",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_059930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7225#issuecomment-59930",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_059931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7225#issuecomment-59931",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_059932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7225#issuecomment-59932",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

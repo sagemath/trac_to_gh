@@ -3,7 +3,7 @@
 archive/issues_007145.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  slabbe\n\nThis module implement Interval exchange transformations (iet) (and linear involutions (li)) from a combinatorial point of vue. It also makes the link with strata of Abelian differentials on Riemann surfaces. The three main objects defined in this module are:\n\n- Special kinds of permutations\n- Rauzy diagrams (oriented graph)\n- Strata of differentials\n\nThere are different class of permuttations associated to iet, but all are constructed within a class factory:\n\n\n```\nsage: p = PermutationIET('a b c d','d c b a')\nsage: p\na b c d\nd c b a\nsage: p.stratum()\nH(2)\n```\n\n\nThe object which links those permutations to the dynamic of strata of differentials is the Rauzy diagram:\n\n\n```\nsage: p = PermutationIET('a b c','c b a')\nsage: d = p.rauzy_diagram()\nRauzy diagram with 3 permutations\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7145\n\n",
+    "body": "Assignee: somebody\n\nCC:  @seblabbe\n\nThis module implement Interval exchange transformations (iet) (and linear involutions (li)) from a combinatorial point of vue. It also makes the link with strata of Abelian differentials on Riemann surfaces. The three main objects defined in this module are:\n\n- Special kinds of permutations\n- Rauzy diagrams (oriented graph)\n- Strata of differentials\n\nThere are different class of permuttations associated to iet, but all are constructed within a class factory:\n\n\n```\nsage: p = PermutationIET('a b c d','d c b a')\nsage: p\na b c d\nd c b a\nsage: p.stratum()\nH(2)\n```\n\n\nThe object which links those permutations to the dynamic of strata of differentials is the Rauzy diagram:\n\n\n```\nsage: p = PermutationIET('a b c','c b a')\nsage: d = p.rauzy_diagram()\nRauzy diagram with 3 permutations\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7145\n\n",
     "created_at": "2009-10-07T11:48:19Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_007145.json:
     "title": "[with patch, needs review] Interval exchange transformations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7145",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 Assignee: somebody
 
-CC:  slabbe
+CC:  @seblabbe
 
 This module implement Interval exchange transformations (iet) (and linear involutions (li)) from a combinatorial point of vue. It also makes the link with strata of Abelian differentials on Riemann surfaces. The three main objects defined in this module are:
 
@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7145
 archive/issue_comments_059190.json:
 ```json
 {
-    "body": "Attachment [trac_7145-iet-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-iet-vd.patch) by vdelecroix created at 2009-10-07 12:15:27",
+    "body": "Attachment [trac_7145-iet-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-iet-vd.patch) by @videlec created at 2009-10-07 12:15:27",
     "created_at": "2009-10-07T12:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59190",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_7145-iet-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-iet-vd.patch) by vdelecroix created at 2009-10-07 12:15:27
+Attachment [trac_7145-iet-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-iet-vd.patch) by @videlec created at 2009-10-07 12:15:27
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_059191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59191",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -97,16 +97,16 @@ Changing status from new to needs_review.
 archive/issue_comments_059192.json:
 ```json
 {
-    "body": "Changing assignee from somebody to vdelecroix.",
+    "body": "Changing assignee from somebody to @videlec.",
     "created_at": "2009-10-11T20:45:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59192",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Changing assignee from somebody to vdelecroix.
+Changing assignee from somebody to @videlec.
 
 
 
@@ -120,7 +120,7 @@ archive/issue_comments_059193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59193",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_059194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59194",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_059195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59195",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_059196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59196",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -299,16 +299,16 @@ Applies over the precedent patch.
 archive/issue_comments_059197.json:
 ```json
 {
-    "body": "Attachment [trac_7145-review-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review-sl.patch) by slabbe created at 2009-12-10 16:17:35\n\nVincent, I tried your code again with Thierry Monteil who knows better this field and he liked all the functions you implemented.\n\nHe suggested that you change Permutation* to `LabelledPermutation` or `PermutationwithLabel`... up to you.\n\nAlso, I notice the following. I think it should be a method and not an attribute :\n\n\n```\nsage: p = Permutation([4,3,2,1])\nsage: pp = PermutationIET(p)\nsage: pp.alphabet\nOrdered Alphabet [1, 2, 3, 4]\n```\n",
+    "body": "Attachment [trac_7145-review-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review-sl.patch) by @seblabbe created at 2009-12-10 16:17:35\n\nVincent, I tried your code again with Thierry Monteil who knows better this field and he liked all the functions you implemented.\n\nHe suggested that you change Permutation* to `LabelledPermutation` or `PermutationwithLabel`... up to you.\n\nAlso, I notice the following. I think it should be a method and not an attribute :\n\n\n```\nsage: p = Permutation([4,3,2,1])\nsage: pp = PermutationIET(p)\nsage: pp.alphabet\nOrdered Alphabet [1, 2, 3, 4]\n```\n",
     "created_at": "2009-12-10T16:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59197",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7145-review-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review-sl.patch) by slabbe created at 2009-12-10 16:17:35
+Attachment [trac_7145-review-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review-sl.patch) by @seblabbe created at 2009-12-10 16:17:35
 
 Vincent, I tried your code again with Thierry Monteil who knows better this field and he liked all the functions you implemented.
 
@@ -337,7 +337,7 @@ archive/issue_comments_059198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59198",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_059199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59199",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_059200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59200",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -456,16 +456,16 @@ done.
 archive/issue_comments_059201.json:
 ```json
 {
-    "body": "Attachment [trac_7145-corrections-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-corrections-vd.patch) by vdelecroix created at 2009-12-13 13:52:00",
+    "body": "Attachment [trac_7145-corrections-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-corrections-vd.patch) by @videlec created at 2009-12-13 13:52:00",
     "created_at": "2009-12-13T13:52:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59201",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_7145-corrections-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-corrections-vd.patch) by vdelecroix created at 2009-12-13 13:52:00
+Attachment [trac_7145-corrections-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-corrections-vd.patch) by @videlec created at 2009-12-13 13:52:00
 
 
 
@@ -479,7 +479,7 @@ archive/issue_comments_059202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59202",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_059203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59203",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -666,16 +666,16 @@ I changed a little bit the `_repr_` of Interval exchange transformation. See the
 archive/issue_comments_059204.json:
 ```json
 {
-    "body": "Attachment [trac_7145-review2-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review2-sl.patch) by slabbe created at 2009-12-24 12:57:58\n\nApplies over the precedent 3 patches.",
+    "body": "Attachment [trac_7145-review2-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review2-sl.patch) by @seblabbe created at 2009-12-24 12:57:58\n\nApplies over the precedent 3 patches.",
     "created_at": "2009-12-24T12:57:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59204",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7145-review2-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review2-sl.patch) by slabbe created at 2009-12-24 12:57:58
+Attachment [trac_7145-review2-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review2-sl.patch) by @seblabbe created at 2009-12-24 12:57:58
 
 Applies over the precedent 3 patches.
 
@@ -691,7 +691,7 @@ archive/issue_comments_059205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59205",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -780,7 +780,7 @@ archive/issue_comments_059206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59206",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -798,7 +798,7 @@ archive/issue_comments_059207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59207",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -811,16 +811,16 @@ Applies over the 4 precedings
 archive/issue_comments_059208.json:
 ```json
 {
-    "body": "Attachment [trac_7145-corrections2-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-corrections2-vd.patch) by slabbe created at 2010-01-06 15:09:54\n\nGreat. Point ONE above was addressed. The documentation coverage is now 100% perfect. All tests passed. \n\nI builded the documentation and there was several sphinx issues. I corrected them in a patch that I will upload shortly.",
+    "body": "Attachment [trac_7145-corrections2-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-corrections2-vd.patch) by @seblabbe created at 2010-01-06 15:09:54\n\nGreat. Point ONE above was addressed. The documentation coverage is now 100% perfect. All tests passed. \n\nI builded the documentation and there was several sphinx issues. I corrected them in a patch that I will upload shortly.",
     "created_at": "2010-01-06T15:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59208",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7145-corrections2-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-corrections2-vd.patch) by slabbe created at 2010-01-06 15:09:54
+Attachment [trac_7145-corrections2-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-corrections2-vd.patch) by @seblabbe created at 2010-01-06 15:09:54
 
 Great. Point ONE above was addressed. The documentation coverage is now 100% perfect. All tests passed. 
 
@@ -833,16 +833,16 @@ I builded the documentation and there was several sphinx issues. I corrected the
 archive/issue_comments_059209.json:
 ```json
 {
-    "body": "Attachment [trac_7145-review3-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review3-sl.patch) by slabbe created at 2010-01-06 15:37:56\n\nApplies over all the precedent patches.",
+    "body": "Attachment [trac_7145-review3-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review3-sl.patch) by @seblabbe created at 2010-01-06 15:37:56\n\nApplies over all the precedent patches.",
     "created_at": "2010-01-06T15:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59209",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7145-review3-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review3-sl.patch) by slabbe created at 2010-01-06 15:37:56
+Attachment [trac_7145-review3-sl.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-review3-sl.patch) by @seblabbe created at 2010-01-06 15:37:56
 
 Applies over all the precedent patches.
 
@@ -858,7 +858,7 @@ archive/issue_comments_059210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59210",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -876,7 +876,7 @@ archive/issue_comments_059211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59211",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -910,7 +910,7 @@ archive/issue_comments_059212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59212",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -930,7 +930,7 @@ archive/issue_comments_059213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59213",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -947,16 +947,16 @@ I also made little modifications on default argument on some method (.flips() an
 archive/issue_comments_059214.json:
 ```json
 {
-    "body": "Attachment [trac_7145-documentation-review-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-documentation-review-vd.patch) by vdelecroix created at 2010-01-09 19:00:17\n\napplies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)",
+    "body": "Attachment [trac_7145-documentation-review-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-documentation-review-vd.patch) by @videlec created at 2010-01-09 19:00:17\n\napplies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)",
     "created_at": "2010-01-09T19:00:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59214",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_7145-documentation-review-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-documentation-review-vd.patch) by vdelecroix created at 2010-01-09 19:00:17
+Attachment [trac_7145-documentation-review-vd.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-documentation-review-vd.patch) by @videlec created at 2010-01-09 19:00:17
 
 applies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)
 
@@ -967,16 +967,16 @@ applies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corre
 archive/issue_comments_059215.json:
 ```json
 {
-    "body": "Attachment [trac_7145-documentation-review-vd.2.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-documentation-review-vd.2.patch) by vdelecroix created at 2010-01-09 19:00:40\n\napplies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)",
+    "body": "Attachment [trac_7145-documentation-review-vd.2.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-documentation-review-vd.2.patch) by @videlec created at 2010-01-09 19:00:40\n\napplies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)",
     "created_at": "2010-01-09T19:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59215",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_7145-documentation-review-vd.2.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-documentation-review-vd.2.patch) by vdelecroix created at 2010-01-09 19:00:40
+Attachment [trac_7145-documentation-review-vd.2.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-documentation-review-vd.2.patch) by @videlec created at 2010-01-09 19:00:40
 
 applies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)
 
@@ -987,16 +987,16 @@ applies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corre
 archive/issue_comments_059216.json:
 ```json
 {
-    "body": "Attachment [trac_7145-iet-final.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-iet-final.patch) by slabbe created at 2010-01-13 17:54:03\n\nApply only this one.",
+    "body": "Attachment [trac_7145-iet-final.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-iet-final.patch) by @seblabbe created at 2010-01-13 17:54:03\n\nApply only this one.",
     "created_at": "2010-01-13T17:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59216",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7145-iet-final.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-iet-final.patch) by slabbe created at 2010-01-13 17:54:03
+Attachment [trac_7145-iet-final.patch](tarball://root/attachments/some-uuid/ticket7145/trac_7145-iet-final.patch) by @seblabbe created at 2010-01-13 17:54:03
 
 Apply only this one.
 
@@ -1012,7 +1012,7 @@ archive/issue_comments_059217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59217",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1030,7 +1030,7 @@ archive/issue_comments_059218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59218",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1050,7 +1050,7 @@ archive/issue_comments_059219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59219",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1070,7 +1070,7 @@ archive/issue_comments_059220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59220",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

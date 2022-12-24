@@ -14,7 +14,7 @@ archive/issues_003418.json:
     "title": "added new combinatorial functions for tableaux and crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3418",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 Assignee: Mike Hansen
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3418
 archive/issue_comments_024060.json:
 ```json
 {
-    "body": "Attachment [promotion_reflection_for_trac.patch](tarball://root/attachments/some-uuid/ticket3418/promotion_reflection_for_trac.patch) by aschilling created at 2008-06-13 18:32:22",
+    "body": "Attachment [promotion_reflection_for_trac.patch](tarball://root/attachments/some-uuid/ticket3418/promotion_reflection_for_trac.patch) by @anneschilling created at 2008-06-13 18:32:22",
     "created_at": "2008-06-13T18:32:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3418#issuecomment-24060",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [promotion_reflection_for_trac.patch](tarball://root/attachments/some-uuid/ticket3418/promotion_reflection_for_trac.patch) by aschilling created at 2008-06-13 18:32:22
+Attachment [promotion_reflection_for_trac.patch](tarball://root/attachments/some-uuid/ticket3418/promotion_reflection_for_trac.patch) by @anneschilling created at 2008-06-13 18:32:22
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_024061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3418#issuecomment-24061",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_024062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3418#issuecomment-24062",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_024063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3418#issuecomment-24063",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -130,16 +130,16 @@ fixed the issues that Mike raised
 archive/issue_comments_024064.json:
 ```json
 {
-    "body": "Attachment [promotion_reflection-3418-submitted.patch](tarball://root/attachments/some-uuid/ticket3418/promotion_reflection-3418-submitted.patch) by mhansen created at 2008-06-13 22:37:32",
+    "body": "Attachment [promotion_reflection-3418-submitted.patch](tarball://root/attachments/some-uuid/ticket3418/promotion_reflection-3418-submitted.patch) by @mwhansen created at 2008-06-13 22:37:32",
     "created_at": "2008-06-13T22:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3418#issuecomment-24064",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [promotion_reflection-3418-submitted.patch](tarball://root/attachments/some-uuid/ticket3418/promotion_reflection-3418-submitted.patch) by mhansen created at 2008-06-13 22:37:32
+Attachment [promotion_reflection-3418-submitted.patch](tarball://root/attachments/some-uuid/ticket3418/promotion_reflection-3418-submitted.patch) by @mwhansen created at 2008-06-13 22:37:32
 
 
 

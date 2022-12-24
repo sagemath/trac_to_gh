@@ -55,7 +55,7 @@ archive/issue_comments_000374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/72",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/72#issuecomment-374",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ Changing component from basic arithmetic to user interface.
 archive/issue_comments_000376.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2006-10-07T23:16:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/72",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_000376.json:
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_000378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/72",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/72#issuecomment-378",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_000379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/72",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/72#issuecomment-379",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

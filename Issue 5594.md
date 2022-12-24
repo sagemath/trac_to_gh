@@ -3,7 +3,7 @@
 archive/issues_005594.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jhpalmieri\n\nWe might consider testing whether the second argument to list_plot (which is \"plotjoined\", should be boolean) is a list or tuple, and then print a warning, because perhaps someone ran \"list_plot([list1], [list2])\" without meaning to.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5594\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\nWe might consider testing whether the second argument to list_plot (which is \"plotjoined\", should be boolean) is a list or tuple, and then print a warning, because perhaps someone ran \"list_plot([list1], [list2])\" without meaning to.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5594\n\n",
     "created_at": "2009-03-23T21:22:32Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_005594.json:
     "title": "better error message for list_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5594",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 We might consider testing whether the second argument to list_plot (which is "plotjoined", should be boolean) is a list or tuple, and then print a warning, because perhaps someone ran "list_plot([list1], [list2])" without meaning to.
 
@@ -39,7 +39,7 @@ archive/issue_comments_043570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5594#issuecomment-43570",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -52,16 +52,16 @@ This patch raises a `TypeError` if plotjoined is a list or a tuple.
 archive/issue_comments_043571.json:
 ```json
 {
-    "body": "Attachment [trac_5594.patch](tarball://root/attachments/some-uuid/ticket5594/trac_5594.patch) by jhpalmieri created at 2009-06-10 22:34:40",
+    "body": "Attachment [trac_5594.patch](tarball://root/attachments/some-uuid/ticket5594/trac_5594.patch) by @jhpalmieri created at 2009-06-10 22:34:40",
     "created_at": "2009-06-10T22:34:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5594#issuecomment-43571",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_5594.patch](tarball://root/attachments/some-uuid/ticket5594/trac_5594.patch) by jhpalmieri created at 2009-06-10 22:34:40
+Attachment [trac_5594.patch](tarball://root/attachments/some-uuid/ticket5594/trac_5594.patch) by @jhpalmieri created at 2009-06-10 22:34:40
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_043572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5594#issuecomment-43572",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_043573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5594#issuecomment-43573",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

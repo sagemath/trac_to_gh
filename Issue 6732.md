@@ -50,16 +50,16 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_055196.json:
 ```json
 {
-    "body": "Attachment [trac_6732-spell-check-server.patch](tarball://root/attachments/some-uuid/ticket6732/trac_6732-spell-check-server.patch) by mpatel created at 2009-08-11 22:41:34\n\n\n```\n$ cd $SAGE_ROOT/devel/sage/sage/server/notebook; grep rrr *.py\n./notebook.py:        except AttributeErrro:\n```\n\nSeparate ticket?",
+    "body": "Attachment [trac_6732-spell-check-server.patch](tarball://root/attachments/some-uuid/ticket6732/trac_6732-spell-check-server.patch) by @qed777 created at 2009-08-11 22:41:34\n\n\n```\n$ cd $SAGE_ROOT/devel/sage/sage/server/notebook; grep rrr *.py\n./notebook.py:        except AttributeErrro:\n```\n\nSeparate ticket?",
     "created_at": "2009-08-11T22:41:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6732#issuecomment-55196",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6732-spell-check-server.patch](tarball://root/attachments/some-uuid/ticket6732/trac_6732-spell-check-server.patch) by mpatel created at 2009-08-11 22:41:34
+Attachment [trac_6732-spell-check-server.patch](tarball://root/attachments/some-uuid/ticket6732/trac_6732-spell-check-server.patch) by @qed777 created at 2009-08-11 22:41:34
 
 
 ```
@@ -119,7 +119,7 @@ archive/issue_comments_055198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6732#issuecomment-55198",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001937.json:
     "title": "fix LLL documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1937",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1937
 archive/issue_comments_012285.json:
 ```json
 {
-    "body": "Attachment [trac1937_LLL_doc.patch](tarball://root/attachments/some-uuid/ticket1937/trac1937_LLL_doc.patch) by malb created at 2008-01-26 11:01:57",
+    "body": "Attachment [trac1937_LLL_doc.patch](tarball://root/attachments/some-uuid/ticket1937/trac1937_LLL_doc.patch) by @malb created at 2008-01-26 11:01:57",
     "created_at": "2008-01-26T11:01:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1937#issuecomment-12285",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac1937_LLL_doc.patch](tarball://root/attachments/some-uuid/ticket1937/trac1937_LLL_doc.patch) by malb created at 2008-01-26 11:01:57
+Attachment [trac1937_LLL_doc.patch](tarball://root/attachments/some-uuid/ticket1937/trac1937_LLL_doc.patch) by @malb created at 2008-01-26 11:01:57
 
 
 

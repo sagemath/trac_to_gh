@@ -14,7 +14,7 @@ archive/issues_001968.json:
     "title": "notebook -- remove capability of using live tutorial for users not signed in to the notebook server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1968",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1968
 archive/issue_comments_012741.json:
 ```json
 {
-    "body": "Attachment [trac-1968.patch](tarball://root/attachments/some-uuid/ticket1968/trac-1968.patch) by was created at 2008-01-29 11:32:54",
+    "body": "Attachment [trac-1968.patch](tarball://root/attachments/some-uuid/ticket1968/trac-1968.patch) by @williamstein created at 2008-01-29 11:32:54",
     "created_at": "2008-01-29T11:32:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1968#issuecomment-12741",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1968.patch](tarball://root/attachments/some-uuid/ticket1968/trac-1968.patch) by was created at 2008-01-29 11:32:54
+Attachment [trac-1968.patch](tarball://root/attachments/some-uuid/ticket1968/trac-1968.patch) by @williamstein created at 2008-01-29 11:32:54
 
 
 
@@ -89,7 +89,7 @@ archive/issue_comments_012743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1968#issuecomment-12743",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

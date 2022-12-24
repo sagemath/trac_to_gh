@@ -14,7 +14,7 @@ archive/issues_006575.json:
     "title": "notebook bug in do_sage_extension_preparsing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6575",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -70,7 +70,7 @@ archive/issue_comments_053686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6575#issuecomment-53686",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_053687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6575#issuecomment-53687",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006551.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  malb\n\nKeywords: print latex multivariate polynomial\n\nThe printing (and latex-ing) of multivariate polynomials is sometimes quite ugly, and inconsistent with the much prettier printing of univariate polynomials.  One gets things like the following (taken from doctests in the Sage library):\n\n\n```\n(-6/5)*x^2*y^2 + (-3)*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 + (-18)*y^2 + (-3/4)*y\n```\n\n\nor even\n\n\n```\nsage: xgcd((b+g)*y^2, (a+g)*y+b)\n((b^3 + (g)*b^2)/(a^2 + (2*g)*a + 3), 1, ((-b + (-g))/(a + (g)))*y + (b^2 + (g)*b)/(a^2 + (2*g)*a + 3))\n```\n\n\nThe attached patch fixes this, factors out common code for printing and latex-ing, and makes printing consistent across various representations of multivariate polynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6551\n\n",
+    "body": "Assignee: tbd\n\nCC:  @malb\n\nKeywords: print latex multivariate polynomial\n\nThe printing (and latex-ing) of multivariate polynomials is sometimes quite ugly, and inconsistent with the much prettier printing of univariate polynomials.  One gets things like the following (taken from doctests in the Sage library):\n\n\n```\n(-6/5)*x^2*y^2 + (-3)*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 + (-18)*y^2 + (-3/4)*y\n```\n\n\nor even\n\n\n```\nsage: xgcd((b+g)*y^2, (a+g)*y+b)\n((b^3 + (g)*b^2)/(a^2 + (2*g)*a + 3), 1, ((-b + (-g))/(a + (g)))*y + (b^2 + (g)*b)/(a^2 + (2*g)*a + 3))\n```\n\n\nThe attached patch fixes this, factors out common code for printing and latex-ing, and makes printing consistent across various representations of multivariate polynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6551\n\n",
     "created_at": "2009-07-18T00:25:01Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_006551.json:
     "title": "fix ugliness in printing of multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6551",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: tbd
 
-CC:  malb
+CC:  @malb
 
 Keywords: print latex multivariate polynomial
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6551
 archive/issue_comments_053415.json:
 ```json
 {
-    "body": "Attachment [trac_6551.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551.patch) by AlexGhitza created at 2009-07-18 00:26:09",
+    "body": "Attachment [trac_6551.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551.patch) by @aghitza created at 2009-07-18 00:26:09",
     "created_at": "2009-07-18T00:26:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53415",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6551.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551.patch) by AlexGhitza created at 2009-07-18 00:26:09
+Attachment [trac_6551.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551.patch) by @aghitza created at 2009-07-18 00:26:09
 
 
 
@@ -72,16 +72,16 @@ Attachment [trac_6551.patch](tarball://root/attachments/some-uuid/ticket6551/tra
 archive/issue_comments_053416.json:
 ```json
 {
-    "body": "Changing assignee from tbd to AlexGhitza.",
+    "body": "Changing assignee from tbd to @aghitza.",
     "created_at": "2009-07-18T00:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53416",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to AlexGhitza.
+Changing assignee from tbd to @aghitza.
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_053417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53417",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_053418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53418",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -126,16 +126,16 @@ Bad news: this conflicts quite severely with my patches at #6500. I feel a bit g
 archive/issue_comments_053419.json:
 ```json
 {
-    "body": "Attachment [trac_6551-rebased_for_6500.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551-rebased_for_6500.patch) by davidloeffler created at 2009-07-20 09:05:14\n\napply after the three patches at #6500",
+    "body": "Attachment [trac_6551-rebased_for_6500.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551-rebased_for_6500.patch) by @loefflerd created at 2009-07-20 09:05:14\n\napply after the three patches at #6500",
     "created_at": "2009-07-20T09:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53419",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6551-rebased_for_6500.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551-rebased_for_6500.patch) by davidloeffler created at 2009-07-20 09:05:14
+Attachment [trac_6551-rebased_for_6500.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551-rebased_for_6500.patch) by @loefflerd created at 2009-07-20 09:05:14
 
 apply after the three patches at #6500
 
@@ -151,7 +151,7 @@ archive/issue_comments_053420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53420",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_053421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53421",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_053422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53422",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -239,16 +239,16 @@ Thanks for reviewing, and for the work you put in rebasing the patch.
 archive/issue_comments_053423.json:
 ```json
 {
-    "body": "Attachment [trac_6551_fix.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551_fix.patch) by AlexGhitza created at 2009-07-21 00:54:03",
+    "body": "Attachment [trac_6551_fix.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551_fix.patch) by @aghitza created at 2009-07-21 00:54:03",
     "created_at": "2009-07-21T00:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53423",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6551_fix.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551_fix.patch) by AlexGhitza created at 2009-07-21 00:54:03
+Attachment [trac_6551_fix.patch](tarball://root/attachments/some-uuid/ticket6551/trac_6551_fix.patch) by @aghitza created at 2009-07-21 00:54:03
 
 
 
@@ -262,7 +262,7 @@ archive/issue_comments_053424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53424",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_053425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53425",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_053426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53426",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_053427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53427",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_053428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53428",
-    "user": "bruno"
+    "user": "@bgrenet"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_053429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53429",
-    "user": "bruno"
+    "user": "@bgrenet"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_053430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53430",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

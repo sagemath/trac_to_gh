@@ -3,7 +3,7 @@
 archive/issues_000388.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nOn 6/21/07, Mak Trifkovic <mak@math.uvic.ca> wrote:\n> Hi William,\n>\n> I found an odd thing:\n> -----------------------\n> S=ModularSymbols(53,sign=1).cuspidal_subspace()[1];S\n>\n>         Modular Symbols subspace of dimension 3 of Modular Symbols space of\n>         dimension 5 for Gamma_0(53) of weight 2 with sign 1 over Rational Field\n>\n> p=S.projection()\n>\n>\n> S.basis()\n>\n>         ((1,33) - (1,37), (1,35), (1,49))\n>\n> for i in [0,1,2]: p(S.basis()[i])\n>\n>\n> (1,35)\n> (1,49)\n> 0\n> ------------------------------\n> Shouldn't the projection onto a subspace restricted to that subspace be\n> the identity?\n\nYes.  That's definitely a bug.  Thanks for finding it.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/388\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nOn 6/21/07, Mak Trifkovic <mak@math.uvic.ca> wrote:\n> Hi William,\n>\n> I found an odd thing:\n> -----------------------\n> S=ModularSymbols(53,sign=1).cuspidal_subspace()[1];S\n>\n>         Modular Symbols subspace of dimension 3 of Modular Symbols space of\n>         dimension 5 for Gamma_0(53) of weight 2 with sign 1 over Rational Field\n>\n> p=S.projection()\n>\n>\n> S.basis()\n>\n>         ((1,33) - (1,37), (1,35), (1,49))\n>\n> for i in [0,1,2]: p(S.basis()[i])\n>\n>\n> (1,35)\n> (1,49)\n> 0\n> ------------------------------\n> Shouldn't the projection onto a subspace restricted to that subspace be\n> the identity?\n\nYes.  That's definitely a bug.  Thanks for finding it.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/388\n\n",
     "created_at": "2007-06-22T11:25:44Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000388.json:
     "title": "bug in modular symbol projection function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/388",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -109,7 +109,7 @@ archive/issue_comments_001904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/388#issuecomment-1904",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -130,16 +130,16 @@ http://sage.math.washington.edu/home/citro/patches/ticket_388.hg
 archive/issue_comments_001905.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2007-09-01T07:42:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/388#issuecomment-1905",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -153,7 +153,7 @@ archive/issue_comments_001906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/388#issuecomment-1906",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -166,15 +166,15 @@ Resolution: fixed
 archive/issue_comments_001907.json:
 ```json
 {
-    "body": "Attachment [ticket_388.hg](tarball://root/attachments/some-uuid/ticket388/ticket_388.hg) by was created at 2007-09-01 18:12:07\n\nlooks good to me.",
+    "body": "Attachment [ticket_388.hg](tarball://root/attachments/some-uuid/ticket388/ticket_388.hg) by @williamstein created at 2007-09-01 18:12:07\n\nlooks good to me.",
     "created_at": "2007-09-01T18:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/388#issuecomment-1907",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [ticket_388.hg](tarball://root/attachments/some-uuid/ticket388/ticket_388.hg) by was created at 2007-09-01 18:12:07
+Attachment [ticket_388.hg](tarball://root/attachments/some-uuid/ticket388/ticket_388.hg) by @williamstein created at 2007-09-01 18:12:07
 
 looks good to me.

@@ -3,7 +3,7 @@
 archive/issues_008439.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mjo chapoton\n\nThis is a possible problem when using an external maxima, that uses a backend other then ecl.\n\nclisp has some peculiar ways to figure out there is an associated pty, that is created by pty.py from pexpect interface.\n\ngcl hangs due to an \"unexcaped\" ecl specific command at the start of maxima interface; this took quite some time to find, as I was thinking it was a clisp like related issue, and tried to correct the problem in gcl and/or sage-maxima.lisp.\n\nAlso, probably not related, or a know issue, any lisp backend will hang with a command as simple as:\n\n    sage: maxima.eval('1+1;;')\n\nthat is, two sequential semicolons will apparently confuse the expect interface.\n\nWith the attached patch, going to be used in mandriva rpm, all currently maxima backends works in sage. (When installing sagemath, unless using --auto-select, the installation process will ask what package that provides maxima-backend the user wants, and the options are sbcl, clisp, gcl and ecl).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8439\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @orlitzky @fchapoton\n\nThis is a possible problem when using an external maxima, that uses a backend other then ecl.\n\nclisp has some peculiar ways to figure out there is an associated pty, that is created by pty.py from pexpect interface.\n\ngcl hangs due to an \"unexcaped\" ecl specific command at the start of maxima interface; this took quite some time to find, as I was thinking it was a clisp like related issue, and tried to correct the problem in gcl and/or sage-maxima.lisp.\n\nAlso, probably not related, or a know issue, any lisp backend will hang with a command as simple as:\n\n    sage: maxima.eval('1+1;;')\n\nthat is, two sequential semicolons will apparently confuse the expect interface.\n\nWith the attached patch, going to be used in mandriva rpm, all currently maxima backends works in sage. (When installing sagemath, unless using --auto-select, the installation process will ask what package that provides maxima-backend the user wants, and the options are sbcl, clisp, gcl and ecl).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8439\n\n",
     "created_at": "2010-03-04T22:37:40Z",
     "labels": [
         "interfaces",
@@ -17,9 +17,9 @@ archive/issues_008439.json:
     "user": "pcpa"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mjo chapoton
+CC:  @orlitzky @fchapoton
 
 This is a possible problem when using an external maxima, that uses a backend other then ecl.
 
@@ -93,7 +93,7 @@ archive/issue_comments_075762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8439#issuecomment-75762",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -106,16 +106,16 @@ Changing status from new to needs_review.
 archive/issue_comments_075763.json:
 ```json
 {
-    "body": "Attachment [sage-4.3.3-maxima.patch](tarball://root/attachments/some-uuid/ticket8439/sage-4.3.3-maxima.patch) by mjo created at 2012-01-16 02:55:39",
+    "body": "Attachment [sage-4.3.3-maxima.patch](tarball://root/attachments/some-uuid/ticket8439/sage-4.3.3-maxima.patch) by @orlitzky created at 2012-01-16 02:55:39",
     "created_at": "2012-01-16T02:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8439#issuecomment-75763",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-4.3.3-maxima.patch](tarball://root/attachments/some-uuid/ticket8439/sage-4.3.3-maxima.patch) by mjo created at 2012-01-16 02:55:39
+Attachment [sage-4.3.3-maxima.patch](tarball://root/attachments/some-uuid/ticket8439/sage-4.3.3-maxima.patch) by @orlitzky created at 2012-01-16 02:55:39
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_075764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8439#issuecomment-75764",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_075765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8439#issuecomment-75765",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_075766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8439#issuecomment-75766",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_075767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8439#issuecomment-75767",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_075768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8439#issuecomment-75768",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_075770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8439#issuecomment-75770",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_075772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8439#issuecomment-75772",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_075773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8439#issuecomment-75773",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_075774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8439#issuecomment-75774",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

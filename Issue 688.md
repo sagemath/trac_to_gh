@@ -3,7 +3,7 @@
 archive/issues_000688.json:
 ```json
 {
-    "body": "Assignee: was\n\nConsider:\n\n\n```\nsage: P.<x,y>  = PolynomialRing(GF(2),2)\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: Q = P.quo(I)\nsage: Q._singular_()\n\n//   characteristic : 2\n//   number of vars : 2\n//        block   1 : ordering dp\n//                  : names    x y\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=x2+x\n_[2]=y2+y\nsage: Q(x)\nxbar\nsage: Q(x)._singular_()\n--------------------------------------------------------------\n<type 'exceptions.TypeError'> Traceback (most recent call last)\n...\n<type 'exceptions.TypeError'>: Singular error:\n   ? `xbar` is undefined\n   ? error occurred in STDIN line 185: `def sage69=xbar;`\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/688\n\n",
+    "body": "Assignee: @williamstein\n\nConsider:\n\n\n```\nsage: P.<x,y>  = PolynomialRing(GF(2),2)\nsage: I = sage.rings.ideal.FieldIdeal(P)\nsage: Q = P.quo(I)\nsage: Q._singular_()\n\n//   characteristic : 2\n//   number of vars : 2\n//        block   1 : ordering dp\n//                  : names    x y\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=x2+x\n_[2]=y2+y\nsage: Q(x)\nxbar\nsage: Q(x)._singular_()\n--------------------------------------------------------------\n<type 'exceptions.TypeError'> Traceback (most recent call last)\n...\n<type 'exceptions.TypeError'>: Singular error:\n   ? `xbar` is undefined\n   ? error occurred in STDIN line 185: `def sage69=xbar;`\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/688\n\n",
     "created_at": "2007-09-18T13:09:54Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000688.json:
     "title": "conversion to Singular for QuotientRingElements broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/688",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Consider:
 
@@ -64,7 +64,7 @@ archive/issue_comments_003580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3580",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,16 +77,16 @@ Did this ever work?  Is this really a feature request?
 archive/issue_comments_003581.json:
 ```json
 {
-    "body": "Attachment [qring.patch](tarball://root/attachments/some-uuid/ticket688/qring.patch) by malb created at 2007-10-20 21:45:37",
+    "body": "Attachment [qring.patch](tarball://root/attachments/some-uuid/ticket688/qring.patch) by @malb created at 2007-10-20 21:45:37",
     "created_at": "2007-10-20T21:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3581",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [qring.patch](tarball://root/attachments/some-uuid/ticket688/qring.patch) by malb created at 2007-10-20 21:45:37
+Attachment [qring.patch](tarball://root/attachments/some-uuid/ticket688/qring.patch) by @malb created at 2007-10-20 21:45:37
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_003582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3582",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -113,16 +113,16 @@ Changing status from new to assigned.
 archive/issue_comments_003583.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-10-20T21:46:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3583",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_003584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3584",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_003585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3585",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_003586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3586",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_003587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/688#issuecomment-3587",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

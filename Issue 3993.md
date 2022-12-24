@@ -3,7 +3,7 @@
 archive/issues_003993.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  was\n\nIn a notebook cell, do\n\n```\nimplicit_multiplication(True)\n2x\n```\n\n\nIt returns a syntax error.  Things work fine from the command line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3993\n\n",
+    "body": "Assignee: somebody\n\nCC:  @williamstein\n\nIn a notebook cell, do\n\n```\nimplicit_multiplication(True)\n2x\n```\n\n\nIt returns a syntax error.  Things work fine from the command line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3993\n\n",
     "created_at": "2008-08-29T18:00:58Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_003993.json:
     "title": "implicit multiplication doesn't work in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3993",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: somebody
 
-CC:  was
+CC:  @williamstein
 
 In a notebook cell, do
 
@@ -47,7 +47,7 @@ archive/issue_comments_028696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3993#issuecomment-28696",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_028697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3993#issuecomment-28697",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_028698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3993#issuecomment-28698",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_028699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3993#issuecomment-28699",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_028700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3993",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3993#issuecomment-28700",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

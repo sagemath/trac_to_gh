@@ -3,7 +3,7 @@
 archive/issues_004522.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nAttached patch makes the following changes to improve the user interface of the polynomial classes:\n\n* Remove .name() method, since .variable_name() already provides same functionality.\n* make the .degree() function of univariate polynomials accept one argument,\n  the generator, to be consistent with the .degree() of multivariate\n  polynomials.\n* Add an .is_monomial() method to univariate polynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4522\n\n",
+    "body": "Assignee: @burcin\n\nAttached patch makes the following changes to improve the user interface of the polynomial classes:\n\n* Remove .name() method, since .variable_name() already provides same functionality.\n* make the .degree() function of univariate polynomials accept one argument,\n  the generator, to be consistent with the .degree() of multivariate\n  polynomials.\n* Add an .is_monomial() method to univariate polynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4522\n\n",
     "created_at": "2008-11-14T09:17:02Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_004522.json:
     "title": "[with patch, needs review] polynomial interface improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4522",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Attached patch makes the following changes to improve the user interface of the polynomial classes:
 
@@ -44,7 +44,7 @@ archive/issue_comments_033563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33563",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_033564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33564",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_033565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33565",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -96,16 +96,16 @@ Oh yes, by the way, I doctested all of the rings directory after this patch and 
 archive/issue_comments_033566.json:
 ```json
 {
-    "body": "Attachment [trac_4522-polynomial_interface.patch](tarball://root/attachments/some-uuid/ticket4522/trac_4522-polynomial_interface.patch) by burcin created at 2008-11-28 12:41:51\n\nmake the interface of polynomials more consistent",
+    "body": "Attachment [trac_4522-polynomial_interface.patch](tarball://root/attachments/some-uuid/ticket4522/trac_4522-polynomial_interface.patch) by @burcin created at 2008-11-28 12:41:51\n\nmake the interface of polynomials more consistent",
     "created_at": "2008-11-28T12:41:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33566",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_4522-polynomial_interface.patch](tarball://root/attachments/some-uuid/ticket4522/trac_4522-polynomial_interface.patch) by burcin created at 2008-11-28 12:41:51
+Attachment [trac_4522-polynomial_interface.patch](tarball://root/attachments/some-uuid/ticket4522/trac_4522-polynomial_interface.patch) by @burcin created at 2008-11-28 12:41:51
 
 make the interface of polynomials more consistent
 
@@ -121,7 +121,7 @@ archive/issue_comments_033567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33567",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

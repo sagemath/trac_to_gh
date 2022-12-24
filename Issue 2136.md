@@ -3,7 +3,7 @@
 archive/issues_002136.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis ticket is a migration of #1137. There was a patch associated with the ticket, that was merged in to the library, but it was not related to the original issue. Below is a reproduction of the original description.\n\n\n```\nsage: sr = mq.SR(2,1,1,4,gf2=True)\nsage: sr\nSR(2,1,1,4)\nsage: F,s = sr.polynomial_system()\nsage: F\nPolynomial System with 104 Polynomials in 36 Variables\nsage: gb = F.groebner_basis()\nsage: Ideal(gb).variety()\n[{x101: 0, x100: 0, x103: 1, x102: 0, k103: 1, x202: 0, x203: 1, x200: 1, x201: 1, w100: 0, w101: 0, w102: 0, w103: 1, k102: 1, k203: 0, k202: 1, k201: 0, k200: 1, s001: 0, s000: 1, s003: 1, s002: 1, k001: 1, k000: 0, k003: 1, k002: 0, w203: 0, w202: 0, w201: 1, w200: 0, s100: 1, s101: 0, s102: 0, s103: 0, k100: 1, k101: 1}]\nsage: s\n{k001: 1, k000: 0, k003: 1, k002: 0}\nsage: A,v = F.coefficient_matrix()\nsage: A.visualize_structure()\nTraceback (most recent call last):\n...\nImportError: dlopen(/Users/was/s/local/lib/python2.5/site-packages/_gd.so, 2): Library not loaded: /Users/was/Desktop/sage-2.8.10.rc1/local/lib/libpng.3.dylib\n  Referenced from: /Users/was/s/local/lib/python2.5/site-packages/_gd.so\n  Reason: image not found\n```\n\n\nTodo:\n\n1. Make a doctest that would catch this\n2. Fix the problem. \n\nRobert WB's comments:\nI can't get this to work at all on OS X 10.4 (intel)\n\n\n```\nsage: sage: M.visualize_structure()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"matrix2.pyx\", line 2853, in sage.matrix.matrix2.Matrix.visualize_structure\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/gd.py\", line 10, in <module>\n    import _gd\n<type 'exceptions.ImportError'>: dlopen(/Users/robert/sage/current/local/lib/python2.5/site-packages/_gd.so, 2): Symbol not found: _png_get_rowbytes\n  Referenced from: /Users/robert/sage/current/local/lib//libgd.2.dylib\n  Expected in: flat namespace\n```\n\n\nMabshoff's comment:\n\nFixing the issue by updating libpng breaks other spkgs like R, so revert it until we can figure out how to solve it properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2136\n\n",
+    "body": "Assignee: @williamstein\n\nThis ticket is a migration of #1137. There was a patch associated with the ticket, that was merged in to the library, but it was not related to the original issue. Below is a reproduction of the original description.\n\n\n```\nsage: sr = mq.SR(2,1,1,4,gf2=True)\nsage: sr\nSR(2,1,1,4)\nsage: F,s = sr.polynomial_system()\nsage: F\nPolynomial System with 104 Polynomials in 36 Variables\nsage: gb = F.groebner_basis()\nsage: Ideal(gb).variety()\n[{x101: 0, x100: 0, x103: 1, x102: 0, k103: 1, x202: 0, x203: 1, x200: 1, x201: 1, w100: 0, w101: 0, w102: 0, w103: 1, k102: 1, k203: 0, k202: 1, k201: 0, k200: 1, s001: 0, s000: 1, s003: 1, s002: 1, k001: 1, k000: 0, k003: 1, k002: 0, w203: 0, w202: 0, w201: 1, w200: 0, s100: 1, s101: 0, s102: 0, s103: 0, k100: 1, k101: 1}]\nsage: s\n{k001: 1, k000: 0, k003: 1, k002: 0}\nsage: A,v = F.coefficient_matrix()\nsage: A.visualize_structure()\nTraceback (most recent call last):\n...\nImportError: dlopen(/Users/was/s/local/lib/python2.5/site-packages/_gd.so, 2): Library not loaded: /Users/was/Desktop/sage-2.8.10.rc1/local/lib/libpng.3.dylib\n  Referenced from: /Users/was/s/local/lib/python2.5/site-packages/_gd.so\n  Reason: image not found\n```\n\n\nTodo:\n\n1. Make a doctest that would catch this\n2. Fix the problem. \n\nRobert WB's comments:\nI can't get this to work at all on OS X 10.4 (intel)\n\n\n```\nsage: sage: M.visualize_structure()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"matrix2.pyx\", line 2853, in sage.matrix.matrix2.Matrix.visualize_structure\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/gd.py\", line 10, in <module>\n    import _gd\n<type 'exceptions.ImportError'>: dlopen(/Users/robert/sage/current/local/lib/python2.5/site-packages/_gd.so, 2): Symbol not found: _png_get_rowbytes\n  Referenced from: /Users/robert/sage/current/local/lib//libgd.2.dylib\n  Expected in: flat namespace\n```\n\n\nMabshoff's comment:\n\nFixing the issue by updating libpng breaks other spkgs like R, so revert it until we can figure out how to solve it properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2136\n\n",
     "created_at": "2008-02-10T03:06:18Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002136.json:
     "title": "matrix visualize_structure is completely broken on osx (at least 10.5) -- why no doctest to catch this!?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2136",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This ticket is a migration of #1137. There was a patch associated with the ticket, that was merged in to the library, but it was not related to the original issue. Below is a reproduction of the original description.
 
@@ -87,7 +87,7 @@ archive/issue_comments_014008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2136#issuecomment-14008",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -118,7 +118,7 @@ Changing component from linear algebra to doctest.
 archive/issue_comments_014010.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-12-05T04:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2136",
     "type": "issue_comment",
@@ -127,7 +127,7 @@ archive/issue_comments_014010.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -187,7 +187,7 @@ archive/issue_comments_014012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2136#issuecomment-14012",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

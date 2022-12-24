@@ -86,7 +86,7 @@ archive/issue_comments_015317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2303#issuecomment-15317",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_015318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2303#issuecomment-15318",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -198,16 +198,16 @@ Michael
 archive/issue_comments_015320.json:
 ```json
 {
-    "body": "Attachment [2303-scipy-bessel.patch](tarball://root/attachments/some-uuid/ticket2303/2303-scipy-bessel.patch) by robertwb created at 2008-07-08 23:55:51",
+    "body": "Attachment [2303-scipy-bessel.patch](tarball://root/attachments/some-uuid/ticket2303/2303-scipy-bessel.patch) by @robertwb created at 2008-07-08 23:55:51",
     "created_at": "2008-07-08T23:55:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2303#issuecomment-15320",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2303-scipy-bessel.patch](tarball://root/attachments/some-uuid/ticket2303/2303-scipy-bessel.patch) by robertwb created at 2008-07-08 23:55:51
+Attachment [2303-scipy-bessel.patch](tarball://root/attachments/some-uuid/ticket2303/2303-scipy-bessel.patch) by @robertwb created at 2008-07-08 23:55:51
 
 
 
@@ -221,7 +221,7 @@ archive/issue_comments_015321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2303#issuecomment-15321",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_015322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2303#issuecomment-15322",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_015323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2303#issuecomment-15323",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_015328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2303#issuecomment-15328",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

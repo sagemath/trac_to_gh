@@ -58,16 +58,16 @@ Michael
 archive/issue_comments_040743.json:
 ```json
 {
-    "body": "Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket5296/sage-README-osx.txt) by kcrisman created at 2009-09-23 20:19:42",
+    "body": "Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket5296/sage-README-osx.txt) by @kcrisman created at 2009-09-23 20:19:42",
     "created_at": "2009-09-23T20:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40743",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket5296/sage-README-osx.txt) by kcrisman created at 2009-09-23 20:19:42
+Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket5296/sage-README-osx.txt) by @kcrisman created at 2009-09-23 20:19:42
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_040744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40744",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_040745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40745",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -132,16 +132,16 @@ I'm fine with changing the priority. As far as I remember, Michael Abshoff asked
 archive/issue_comments_040747.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to iandrus.",
+    "body": "Changing assignee from mabshoff to @gvol.",
     "created_at": "2009-11-27T21:10:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40747",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
-Changing assignee from mabshoff to iandrus.
+Changing assignee from mabshoff to @gvol.
 
 
 
@@ -155,7 +155,7 @@ archive/issue_comments_040748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40748",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_040749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40749",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_040750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40750",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -206,16 +206,16 @@ But we're very, very close!  So much thanks to iandrus for making huge leaps ove
 archive/issue_comments_040751.json:
 ```json
 {
-    "body": "Attachment [sage-README-osx.2.txt](tarball://root/attachments/some-uuid/ticket5296/sage-README-osx.2.txt) by iandrus created at 2010-03-30 21:22:23",
+    "body": "Attachment [sage-README-osx.2.txt](tarball://root/attachments/some-uuid/ticket5296/sage-README-osx.2.txt) by @gvol created at 2010-03-30 21:22:23",
     "created_at": "2010-03-30T21:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40751",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
-Attachment [sage-README-osx.2.txt](tarball://root/attachments/some-uuid/ticket5296/sage-README-osx.2.txt) by iandrus created at 2010-03-30 21:22:23
+Attachment [sage-README-osx.2.txt](tarball://root/attachments/some-uuid/ticket5296/sage-README-osx.2.txt) by @gvol created at 2010-03-30 21:22:23
 
 
 
@@ -229,7 +229,7 @@ archive/issue_comments_040752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40752",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_040753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40753",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_040754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40754",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_040755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40755",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_040756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40756",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_040757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40757",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_040758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40758",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_040759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40759",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_040760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40760",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_040761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40761",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_040762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5296#issuecomment-40762",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

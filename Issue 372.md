@@ -13,7 +13,7 @@ archive/issues_000372.json:
     "title": "singular interface memory leaks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/372",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: michel v
@@ -61,7 +61,7 @@ archive/issue_comments_001780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/372",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/372#issuecomment-1780",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

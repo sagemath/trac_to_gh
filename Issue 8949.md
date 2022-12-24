@@ -3,7 +3,7 @@
 archive/issues_008949.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason\n\n\n```\nsage: import numpy\nsage: a = numpy.array([1,2])\nsage: type(a[0])\n<type 'numpy.int32'>\nsage: f(x) = x^2\nsage: f(a[0])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n./sage-4.4.2/<ipython console> in <module>()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__call__ (sage/symbolic/expression.cpp:15476)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/callable.pyc in _call_element_(self, _the_element, *args, **kwds)\n    454         d = dict(zip(map(repr, self.arguments()), args))\n    455         d.update(kwds)\n--> 456         return SR(_the_element.substitute(**d))\n    457\n    458\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.substitute (sage/symbolic/expression.cpp:14850)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.coerce_in (sage/symbolic/expression.cpp:10193)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/structure/parent_old.so in sage.structure.parent_old.Parent._coerce_ (sage/structure/parent_old.c:3288)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.coerce (sage/structure/parent.c:6970)()\n\nTypeError: no canonical coercion from <type 'numpy.int32'> to Callable function ring with arguments (x,)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8949\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n\n```\nsage: import numpy\nsage: a = numpy.array([1,2])\nsage: type(a[0])\n<type 'numpy.int32'>\nsage: f(x) = x^2\nsage: f(a[0])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n./sage-4.4.2/<ipython console> in <module>()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__call__ (sage/symbolic/expression.cpp:15476)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/callable.pyc in _call_element_(self, _the_element, *args, **kwds)\n    454         d = dict(zip(map(repr, self.arguments()), args))\n    455         d.update(kwds)\n--> 456         return SR(_the_element.substitute(**d))\n    457\n    458\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.substitute (sage/symbolic/expression.cpp:14850)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.coerce_in (sage/symbolic/expression.cpp:10193)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/structure/parent_old.so in sage.structure.parent_old.Parent._coerce_ (sage/structure/parent_old.c:3288)()\n\n./sage-4.4.2/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.coerce (sage/structure/parent.c:6970)()\n\nTypeError: no canonical coercion from <type 'numpy.int32'> to Callable function ring with arguments (x,)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8949\n\n",
     "created_at": "2010-05-11T08:18:24Z",
     "labels": [
         "symbolics",
@@ -17,9 +17,9 @@ archive/issues_008949.json:
     "user": "whuss"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason
+CC:  @jasongrout
 
 
 ```
@@ -71,7 +71,7 @@ archive/issue_comments_082394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8949#issuecomment-82394",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_082396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8949#issuecomment-82396",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_082397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8949#issuecomment-82397",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_082398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8949#issuecomment-82398",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_082399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8949#issuecomment-82399",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

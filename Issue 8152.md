@@ -3,7 +3,7 @@
 archive/issues_008152.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  was jsp\n\nSage currently depends on OpenSSL to build the haslib module in Python. OpenSSL is not distributed with Sage due to license issues. However, the GPL allows us to link to the libraries if they are part of the core operating system, such as the kernel or compilers. (Someone could argue OpenSSL is not part of the core operating system, so even if it comes with the operating system, we can't use it. However, that is another issue.)\n\nThe OpenSSL libraries are installed on Solaris 10 in /usr/sfw/lib.  The problem is, python does not currently look there for the libraries. I've submitted an enhancement request to the Python bug database. \n\nhttp://bugs.python.org/issue7836\n\nthat they add that directory to the list of directories searched. \n\nUntil this gets fixed, I believe we should add the directory /usr/sfw/lib to the top-level setup.py. Then Sage should build on Solaris 10 (but not OpenSolaris) without installation of any OpenSSL libraries. \n\nThere is no point making this patch operating system specific, as the code in python is only a search path: \n\n\n```\n       ssl_libs = find_library_file(self.compiler, 'ssl',lib_dirs,\n                                     ['/usr/local/ssl/lib',\n                                      '/usr/contrib/ssl/lib/'\n                                     ] )\n\n```\n\n\nI'm not sure if we need to know the location of the include directories, but they are in /usr/src/include/openssl. There is again similar code in setup.py to search for the include files:\n\n\n```\n        # Detect SSL support for the socket module (via _ssl)\n        search_for_ssl_incs_in = [\n                              '/usr/local/ssl/include',\n                              '/usr/contrib/ssl/include/'\n                             ]\n\n```\n\n\nAny comments, before I go to the trouble of making a patch, which just appends the search path for the OpenSSL directories?  Does this seem a reasonable thing to do? \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/8152\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @williamstein @jaapspies\n\nSage currently depends on OpenSSL to build the haslib module in Python. OpenSSL is not distributed with Sage due to license issues. However, the GPL allows us to link to the libraries if they are part of the core operating system, such as the kernel or compilers. (Someone could argue OpenSSL is not part of the core operating system, so even if it comes with the operating system, we can't use it. However, that is another issue.)\n\nThe OpenSSL libraries are installed on Solaris 10 in /usr/sfw/lib.  The problem is, python does not currently look there for the libraries. I've submitted an enhancement request to the Python bug database. \n\nhttp://bugs.python.org/issue7836\n\nthat they add that directory to the list of directories searched. \n\nUntil this gets fixed, I believe we should add the directory /usr/sfw/lib to the top-level setup.py. Then Sage should build on Solaris 10 (but not OpenSolaris) without installation of any OpenSSL libraries. \n\nThere is no point making this patch operating system specific, as the code in python is only a search path: \n\n\n```\n       ssl_libs = find_library_file(self.compiler, 'ssl',lib_dirs,\n                                     ['/usr/local/ssl/lib',\n                                      '/usr/contrib/ssl/lib/'\n                                     ] )\n\n```\n\n\nI'm not sure if we need to know the location of the include directories, but they are in /usr/src/include/openssl. There is again similar code in setup.py to search for the include files:\n\n\n```\n        # Detect SSL support for the socket module (via _ssl)\n        search_for_ssl_incs_in = [\n                              '/usr/local/ssl/include',\n                              '/usr/contrib/ssl/include/'\n                             ]\n\n```\n\n\nAny comments, before I go to the trouble of making a patch, which just appends the search path for the OpenSSL directories?  Does this seem a reasonable thing to do? \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/8152\n\n",
     "created_at": "2010-02-02T11:15:01Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_008152.json:
 ```
 Assignee: drkirkby
 
-CC:  was jsp
+CC:  @williamstein @jaapspies
 
 Sage currently depends on OpenSSL to build the haslib module in Python. OpenSSL is not distributed with Sage due to license issues. However, the GPL allows us to link to the libraries if they are part of the core operating system, such as the kernel or compilers. (Someone could argue OpenSSL is not part of the core operating system, so even if it comes with the operating system, we can't use it. However, that is another issue.)
 
@@ -76,7 +76,7 @@ archive/issue_comments_071671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8152#issuecomment-71671",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_071673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8152#issuecomment-71673",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_071676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8152#issuecomment-71676",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_071677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8152#issuecomment-71677",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_071678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8152#issuecomment-71678",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_071679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8152#issuecomment-71679",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

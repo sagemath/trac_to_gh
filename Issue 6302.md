@@ -14,7 +14,7 @@ archive/issues_006302.json:
     "title": "[with patch; needs review] make openopt an optional spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6302",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -40,7 +40,7 @@ archive/issue_comments_050271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6302#issuecomment-50271",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_050272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6302#issuecomment-50272",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_050278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6302#issuecomment-50278",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_050279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6302#issuecomment-50279",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_050280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6302#issuecomment-50280",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_050281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6302#issuecomment-50281",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_050282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6302#issuecomment-50282",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003135.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nCarlo Hamalainen: \n>  OK, but in solve_mod() perhaps the line\n>  \n>     vars.sort()\n>  \n>  should be\n>  \n>     vars.sort(cmp)\n>  \n>  so that the variables are actually sorted?\n>  \n\nYes, *that* is certainly a bug!\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3135\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nCarlo Hamalainen: \n>  OK, but in solve_mod() perhaps the line\n>  \n>     vars.sort()\n>  \n>  should be\n>  \n>     vars.sort(cmp)\n>  \n>  so that the variables are actually sorted?\n>  \n\nYes, *that* is certainly a bug!\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3135\n\n",
     "created_at": "2008-05-08T18:21:40Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003135.json:
     "title": "bug in solve_mod -- variable sorting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3135",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -55,7 +55,7 @@ archive/issue_comments_021778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3135#issuecomment-21778",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

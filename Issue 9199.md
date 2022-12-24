@@ -3,7 +3,7 @@
 archive/issues_009199.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  kcrisman\n\nTry `plot(x^2,(x,-1,1), fill=False)`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9199\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nTry `plot(x^2,(x,-1,1), fill=False)`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9199\n\n",
     "created_at": "2010-06-10T01:14:40Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009199.json:
     "title": "plot(..., fill=False) still turns on filling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9199",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Try `plot(x^2,(x,-1,1), fill=False)`.
 
@@ -39,7 +39,7 @@ archive/issue_comments_086041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9199#issuecomment-86041",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_086042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9199#issuecomment-86042",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_086047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9199#issuecomment-86047",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_086051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9199#issuecomment-86051",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -280,16 +280,16 @@ How did you get that second patch (i.e., how did you generated whatever you post
 archive/issue_comments_086052.json:
 ```json
 {
-    "body": "Attachment [trac_9199_plot_fill-rebased.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill-rebased.patch) by jason created at 2010-08-29 02:53:15\n\nRebased to 4.5.2; apply only this patch",
+    "body": "Attachment [trac_9199_plot_fill-rebased.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill-rebased.patch) by @jasongrout created at 2010-08-29 02:53:15\n\nRebased to 4.5.2; apply only this patch",
     "created_at": "2010-08-29T02:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9199#issuecomment-86052",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_9199_plot_fill-rebased.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill-rebased.patch) by jason created at 2010-08-29 02:53:15
+Attachment [trac_9199_plot_fill-rebased.patch](tarball://root/attachments/some-uuid/ticket9199/trac_9199_plot_fill-rebased.patch) by @jasongrout created at 2010-08-29 02:53:15
 
 Rebased to 4.5.2; apply only this patch
 
@@ -305,7 +305,7 @@ archive/issue_comments_086053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9199#issuecomment-86053",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_086054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9199#issuecomment-86054",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_086058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9199#issuecomment-86058",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_086059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9199#issuecomment-86059",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_086060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9199#issuecomment-86060",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_086061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9199#issuecomment-86061",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

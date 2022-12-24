@@ -14,7 +14,7 @@ archive/issues_002988.json:
     "title": "notebook -- issues with the CSS for the print display",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2988",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -86,16 +86,16 @@ Michael
 archive/issue_comments_020572.json:
 ```json
 {
-    "body": "Attachment [sage-2988_rebased.patch](tarball://root/attachments/some-uuid/ticket2988/sage-2988_rebased.patch) by was created at 2008-04-22 04:16:55",
+    "body": "Attachment [sage-2988_rebased.patch](tarball://root/attachments/some-uuid/ticket2988/sage-2988_rebased.patch) by @williamstein created at 2008-04-22 04:16:55",
     "created_at": "2008-04-22T04:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2988",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2988#issuecomment-20572",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2988_rebased.patch](tarball://root/attachments/some-uuid/ticket2988/sage-2988_rebased.patch) by was created at 2008-04-22 04:16:55
+Attachment [sage-2988_rebased.patch](tarball://root/attachments/some-uuid/ticket2988/sage-2988_rebased.patch) by @williamstein created at 2008-04-22 04:16:55
 
 
 

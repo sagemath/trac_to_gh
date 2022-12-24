@@ -14,7 +14,7 @@ archive/issues_003737.json:
     "title": "backslash in verbatim environment in tut.tex breaks doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3737",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: failure
@@ -54,7 +54,7 @@ archive/issue_comments_026523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26523",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -67,16 +67,16 @@ Changing status from new to assigned.
 archive/issue_comments_026524.json:
 ```json
 {
-    "body": "Changing assignee from failure to mhansen.",
+    "body": "Changing assignee from failure to @mwhansen.",
     "created_at": "2008-09-19T07:10:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26524",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from failure to mhansen.
+Changing assignee from failure to @mwhansen.
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_026525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26525",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_026526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26526",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_026527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26527",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

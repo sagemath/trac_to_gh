@@ -3,7 +3,7 @@
 archive/issues_002457.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\n\n```\nFile \"ideal.py\", line 384:\n    sage: I.is_prime()\nExpected:\n    Traceback (most recent call last):\n    ...\n    NotImplementedError\nGot:\n    True\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2457\n\n",
+    "body": "Assignee: @garyfurnish\n\n\n```\nFile \"ideal.py\", line 384:\n    sage: I.is_prime()\nExpected:\n    Traceback (most recent call last):\n    ...\n    NotImplementedError\nGot:\n    True\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2457\n\n",
     "created_at": "2008-03-10T14:07:03Z",
     "labels": [
         "group theory",
@@ -14,10 +14,10 @@ archive/issues_002457.json:
     "title": "ideal.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2457",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 
 ```
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2457
 archive/issue_comments_016639.json:
 ```json
 {
-    "body": "Attachment [trac_2457.patch](tarball://root/attachments/some-uuid/ticket2457/trac_2457.patch) by gfurnish created at 2008-03-10 14:08:33",
+    "body": "Attachment [trac_2457.patch](tarball://root/attachments/some-uuid/ticket2457/trac_2457.patch) by @garyfurnish created at 2008-03-10 14:08:33",
     "created_at": "2008-03-10T14:08:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16639",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_2457.patch](tarball://root/attachments/some-uuid/ticket2457/trac_2457.patch) by gfurnish created at 2008-03-10 14:08:33
+Attachment [trac_2457.patch](tarball://root/attachments/some-uuid/ticket2457/trac_2457.patch) by @garyfurnish created at 2008-03-10 14:08:33
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_016640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16640",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_016641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16641",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

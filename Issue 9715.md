@@ -3,7 +3,7 @@
 archive/issues_009715.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  dkirkby jason mpatel\n\nAs reported on :\n\nhttp://groups.google.com/group/sage-release/browse_thread/thread/fa2facb36603675a\n\nThe only random part being the graph generation, it shouldn't be hard to find a workaround....\n\n\n```\n>> sage -t  devel/sage-main/sage/graphs/graph.py\n>> **********************************************************************\n>> File \"/Volumes/E/sage-4.5.2.rc0/devel/sage-main/sage/graphs/graph.py\",\n>> line 1347:\n>>     sage: cycle.order() % 2 == 0\n>> Exception raised:\n>>     Traceback (most recent call last):\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line\n>> 1231, in run_one_test\n>>         self.run_one_example(test, example, filename, compileflags)\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/sagedoctest.py\", line\n>> 38, in run_one_example\n>>         OrigDocTestRunner.run_one_example(self, test, example,\n>> filename, compileflags)\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line\n>> 1172, in run_one_example\n>>         compileflags, 1) in test.globs\n>>       File \"<doctest __main__.example_6[9]>\", line 1, in <module>\n>>         cycle.order() % Integer(2) == Integer(0)###line 1347:\n>>     sage: cycle.order() % 2 == 0\n>>     AttributeError: 'bool' object has no attribute 'order' \n```\n\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9715\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  dkirkby @jasongrout @qed777\n\nAs reported on :\n\nhttp://groups.google.com/group/sage-release/browse_thread/thread/fa2facb36603675a\n\nThe only random part being the graph generation, it shouldn't be hard to find a workaround....\n\n\n```\n>> sage -t  devel/sage-main/sage/graphs/graph.py\n>> **********************************************************************\n>> File \"/Volumes/E/sage-4.5.2.rc0/devel/sage-main/sage/graphs/graph.py\",\n>> line 1347:\n>>     sage: cycle.order() % 2 == 0\n>> Exception raised:\n>>     Traceback (most recent call last):\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line\n>> 1231, in run_one_test\n>>         self.run_one_example(test, example, filename, compileflags)\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/sagedoctest.py\", line\n>> 38, in run_one_example\n>>         OrigDocTestRunner.run_one_example(self, test, example,\n>> filename, compileflags)\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line\n>> 1172, in run_one_example\n>>         compileflags, 1) in test.globs\n>>       File \"<doctest __main__.example_6[9]>\", line 1, in <module>\n>>         cycle.order() % Integer(2) == Integer(0)###line 1347:\n>>     sage: cycle.order() % 2 == 0\n>>     AttributeError: 'bool' object has no attribute 'order' \n```\n\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9715\n\n",
     "created_at": "2010-08-10T03:37:28Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009715.json:
     "title": "Failing doctest in even_hole_free",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9715",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  dkirkby jason mpatel
+CC:  dkirkby @jasongrout @qed777
 
 As reported on :
 
@@ -67,16 +67,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9715
 archive/issue_comments_094789.json:
 ```json
 {
-    "body": "Attachment [trac_9715.patch](tarball://root/attachments/some-uuid/ticket9715/trac_9715.patch) by ncohen created at 2010-08-10 04:10:14",
+    "body": "Attachment [trac_9715.patch](tarball://root/attachments/some-uuid/ticket9715/trac_9715.patch) by @nathanncohen created at 2010-08-10 04:10:14",
     "created_at": "2010-08-10T04:10:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94789",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9715.patch](tarball://root/attachments/some-uuid/ticket9715/trac_9715.patch) by ncohen created at 2010-08-10 04:10:14
+Attachment [trac_9715.patch](tarball://root/attachments/some-uuid/ticket9715/trac_9715.patch) by @nathanncohen created at 2010-08-10 04:10:14
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_094790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94790",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_094791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94791",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_094792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94792",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_094793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94793",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_094794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94794",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

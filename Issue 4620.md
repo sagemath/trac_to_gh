@@ -3,7 +3,7 @@
 archive/issues_004620.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThis is with 3.2.1.alpha1-current. To reproduce do a \"sage -ba\" and have a Cython process fail. Then the next \"sage -b\" will not pick up with the Cythonization again, but start building extensions.\n\nDeleting .cython_deps does not fix the problem.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4620\n\n",
+    "body": "Assignee: @craigcitro\n\nThis is with 3.2.1.alpha1-current. To reproduce do a \"sage -ba\" and have a Cython process fail. Then the next \"sage -b\" will not pick up with the Cythonization again, but start building extensions.\n\nDeleting .cython_deps does not fix the problem.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4620\n\n",
     "created_at": "2008-11-25T23:19:49Z",
     "labels": [
         "build",
@@ -17,7 +17,7 @@ archive/issues_004620.json:
     "user": "mabshoff"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 This is with 3.2.1.alpha1-current. To reproduce do a "sage -ba" and have a Cython process fail. Then the next "sage -b" will not pick up with the Cythonization again, but start building extensions.
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4620
 archive/issue_comments_034733.json:
 ```json
 {
-    "body": "Attachment [trac-4620.patch](tarball://root/attachments/some-uuid/ticket4620/trac-4620.patch) by craigcitro created at 2008-11-26 08:45:22",
+    "body": "Attachment [trac-4620.patch](tarball://root/attachments/some-uuid/ticket4620/trac-4620.patch) by @craigcitro created at 2008-11-26 08:45:22",
     "created_at": "2008-11-26T08:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4620#issuecomment-34733",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4620.patch](tarball://root/attachments/some-uuid/ticket4620/trac-4620.patch) by craigcitro created at 2008-11-26 08:45:22
+Attachment [trac-4620.patch](tarball://root/attachments/some-uuid/ticket4620/trac-4620.patch) by @craigcitro created at 2008-11-26 08:45:22
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_034734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4620#issuecomment-34734",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_034735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4620#issuecomment-34735",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

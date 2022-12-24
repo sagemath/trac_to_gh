@@ -3,7 +3,7 @@
 archive/issues_004609.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen running -only_optional=magma without the database_gap.spkg installed we see two failures:\n\n```\nsage -t -only-optional=magma -long devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage/sage/rings/number_field/number_field.py\", line 2455:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(algorithm='magma')   # optional - magma\nExpected:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\nGot:\n    verbose 0 (501: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap package. Please install it.\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\n**********************************************************************\n```\n\nand\n\n```\nsage -t -only-optional=magma -long devel/sage/sage/rings/polynomial/polynomial_element_generic.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage/sage/rings/polynomial/polynomial_element_generic.py\", line 742:\n    sage: f.galois_group(algorithm='magma')     # optional - magma\nExpected:\n    Transitive group number 5 of degree 4\nGot:\n    verbose 0 (501: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap package. Please install it.\n    Transitive group number 5 of degree 4\n**********************************************************************\n```\n\n\nThe fix should be obvious :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4609\n\n",
+    "body": "Assignee: @williamstein\n\nWhen running -only_optional=magma without the database_gap.spkg installed we see two failures:\n\n```\nsage -t -only-optional=magma -long devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage/sage/rings/number_field/number_field.py\", line 2455:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(algorithm='magma')   # optional - magma\nExpected:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\nGot:\n    verbose 0 (501: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap package. Please install it.\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\n**********************************************************************\n```\n\nand\n\n```\nsage -t -only-optional=magma -long devel/sage/sage/rings/polynomial/polynomial_element_generic.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage/sage/rings/polynomial/polynomial_element_generic.py\", line 742:\n    sage: f.galois_group(algorithm='magma')     # optional - magma\nExpected:\n    Transitive group number 5 of degree 4\nGot:\n    verbose 0 (501: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap package. Please install it.\n    Transitive group number 5 of degree 4\n**********************************************************************\n```\n\n\nThe fix should be obvious :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4609\n\n",
     "created_at": "2008-11-25T00:34:27Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_004609.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When running -only_optional=magma without the database_gap.spkg installed we see two failures:
 
@@ -67,16 +67,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4609
 archive/issue_comments_034594.json:
 ```json
 {
-    "body": "Attachment [sage-4609.patch](tarball://root/attachments/some-uuid/ticket4609/sage-4609.patch) by was created at 2008-11-25 05:09:36",
+    "body": "Attachment [sage-4609.patch](tarball://root/attachments/some-uuid/ticket4609/sage-4609.patch) by @williamstein created at 2008-11-25 05:09:36",
     "created_at": "2008-11-25T05:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4609#issuecomment-34594",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4609.patch](tarball://root/attachments/some-uuid/ticket4609/sage-4609.patch) by was created at 2008-11-25 05:09:36
+Attachment [sage-4609.patch](tarball://root/attachments/some-uuid/ticket4609/sage-4609.patch) by @williamstein created at 2008-11-25 05:09:36
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_003566.json:
 ```json
 {
-    "body": "Assignee: yi\n\nThis is to optimize startup time.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3566\n\n",
+    "body": "Assignee: @yqiang\n\nThis is to optimize startup time.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3566\n\n",
     "created_at": "2008-07-06T19:41:57Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_003566.json:
     "title": "dsage -- get rid of uuid import",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3566",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 This is to optimize startup time.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3566
 archive/issue_comments_025196.json:
 ```json
 {
-    "body": "Attachment [sage-3566.patch](tarball://root/attachments/some-uuid/ticket3566/sage-3566.patch) by mhansen created at 2008-07-06 19:45:33\n\n+1",
+    "body": "Attachment [sage-3566.patch](tarball://root/attachments/some-uuid/ticket3566/sage-3566.patch) by @mwhansen created at 2008-07-06 19:45:33\n\n+1",
     "created_at": "2008-07-06T19:45:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3566#issuecomment-25196",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage-3566.patch](tarball://root/attachments/some-uuid/ticket3566/sage-3566.patch) by mhansen created at 2008-07-06 19:45:33
+Attachment [sage-3566.patch](tarball://root/attachments/some-uuid/ticket3566/sage-3566.patch) by @mwhansen created at 2008-07-06 19:45:33
 
 +1
 
@@ -59,7 +59,7 @@ archive/issue_comments_025197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3566#issuecomment-25197",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

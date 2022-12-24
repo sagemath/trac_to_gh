@@ -14,7 +14,7 @@ archive/issues_002113.json:
     "title": "twisted.web2 should be gzip compressing things it sends out to the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2113",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -51,16 +51,16 @@ This needs to be optional; for local notebooks (where the notebook and web brows
 archive/issue_comments_013775.json:
 ```json
 {
-    "body": "Attachment [gzip.patch](tarball://root/attachments/some-uuid/ticket2113/gzip.patch) by jason created at 2008-10-19 05:07:25",
+    "body": "Attachment [gzip.patch](tarball://root/attachments/some-uuid/ticket2113/gzip.patch) by @jasongrout created at 2008-10-19 05:07:25",
     "created_at": "2008-10-19T05:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2113#issuecomment-13775",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [gzip.patch](tarball://root/attachments/some-uuid/ticket2113/gzip.patch) by jason created at 2008-10-19 05:07:25
+Attachment [gzip.patch](tarball://root/attachments/some-uuid/ticket2113/gzip.patch) by @jasongrout created at 2008-10-19 05:07:25
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_013776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2113#issuecomment-13776",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_013777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2113#issuecomment-13777",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_013778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2113#issuecomment-13778",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_013779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2113#issuecomment-13779",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_013780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2113#issuecomment-13780",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -224,16 +224,16 @@ Only one hunk fails, which doesn't really impact much how this works.
 archive/issue_comments_013781.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2008-11-28T04:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2113#issuecomment-13781",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 
@@ -247,7 +247,7 @@ archive/issue_comments_013782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2113#issuecomment-13782",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_013783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2113#issuecomment-13783",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_013784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2113#issuecomment-13784",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_013787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2113#issuecomment-13787",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

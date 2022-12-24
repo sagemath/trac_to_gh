@@ -3,7 +3,7 @@
 archive/issues_006849.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  craigcitro drkirkby\n\nAttach to this ticket some of the fixes for getting Sage to build on OS X 10.6 (the new release of OS X).\n\nNote that a Sage build on OS X 10.5 does seem to work fine on 10.6, but Sage does not \"just build\" on 10.6\n\nIssue created by migration from https://trac.sagemath.org/ticket/6849\n\n",
+    "body": "Assignee: tbd\n\nCC:  @craigcitro drkirkby\n\nAttach to this ticket some of the fixes for getting Sage to build on OS X 10.6 (the new release of OS X).\n\nNote that a Sage build on OS X 10.5 does seem to work fine on 10.6, but Sage does not \"just build\" on 10.6\n\nIssue created by migration from https://trac.sagemath.org/ticket/6849\n\n",
     "created_at": "2009-08-31T01:29:56Z",
     "labels": [
         "porting",
@@ -14,12 +14,12 @@ archive/issues_006849.json:
     "title": "port Sage to OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6849",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  craigcitro drkirkby
+CC:  @craigcitro drkirkby
 
 Attach to this ticket some of the fixes for getting Sage to build on OS X 10.6 (the new release of OS X).
 
@@ -41,7 +41,7 @@ archive/issue_comments_056476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6849#issuecomment-56476",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_056477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6849#issuecomment-56477",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_056480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6849#issuecomment-56480",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_056481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6849#issuecomment-56481",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_056485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6849#issuecomment-56485",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_056486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6849#issuecomment-56486",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_056487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6849#issuecomment-56487",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_056488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6849#issuecomment-56488",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

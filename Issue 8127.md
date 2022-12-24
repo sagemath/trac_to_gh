@@ -3,7 +3,7 @@
 archive/issues_008127.json:
 ```json
 {
-    "body": "Assignee: vdelecroix\n\nCC:  slabbe sage-combinat\n\nKeywords: string, word\n\nPython has low-level operations for strings and we should allow them for words. For example\n\n```\nsage: sage: s = \"ma maman est magique\"\nsage: s.split(' ')\n['ma', 'maman', 'est', 'magique']\nsage: s.split('ma')\n['', ' ', '', 'n est ', 'gique']\n```\n\n\nThe patch implements split and partition for words\n\n```\nsage: w = Word(\"ma maman est magique\")\nsage: w.split(' ')\n[word: ma, word: maman, word: est, word: magique]\nsage: w.split('ma')\n[word: , word:  , word: , word: n est , word: gique]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8127\n\n",
+    "body": "Assignee: @videlec\n\nCC:  @seblabbe sage-combinat\n\nKeywords: string, word\n\nPython has low-level operations for strings and we should allow them for words. For example\n\n```\nsage: sage: s = \"ma maman est magique\"\nsage: s.split(' ')\n['ma', 'maman', 'est', 'magique']\nsage: s.split('ma')\n['', ' ', '', 'n est ', 'gique']\n```\n\n\nThe patch implements split and partition for words\n\n```\nsage: w = Word(\"ma maman est magique\")\nsage: w.split(' ')\n[word: ma, word: maman, word: est, word: magique]\nsage: w.split('ma')\n[word: , word:  , word: , word: n est , word: gique]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8127\n\n",
     "created_at": "2010-01-29T23:05:14Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008127.json:
     "title": "Wraps string features into WordDatatypes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8127",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
-Assignee: vdelecroix
+Assignee: @videlec
 
-CC:  slabbe sage-combinat
+CC:  @seblabbe sage-combinat
 
 Keywords: string, word
 
@@ -62,7 +62,7 @@ archive/issue_comments_071452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8127#issuecomment-71452",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_071453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8127#issuecomment-71453",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_071454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8127#issuecomment-71454",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_071455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8127#issuecomment-71455",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_071456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8127#issuecomment-71456",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_071457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8127#issuecomment-71457",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_071458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8127#issuecomment-71458",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -327,16 +327,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_071459.json:
 ```json
 {
-    "body": "Attachment [trac_8127.patch](tarball://root/attachments/some-uuid/ticket8127/trac_8127.patch) by vdelecroix created at 2010-02-08 21:07:42\n\nThis now needed to have a string (or a WordDatatype_str) as separator. A ValueError is raised when it's not the case.",
+    "body": "Attachment [trac_8127.patch](tarball://root/attachments/some-uuid/ticket8127/trac_8127.patch) by @videlec created at 2010-02-08 21:07:42\n\nThis now needed to have a string (or a WordDatatype_str) as separator. A ValueError is raised when it's not the case.",
     "created_at": "2010-02-08T21:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8127#issuecomment-71459",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_8127.patch](tarball://root/attachments/some-uuid/ticket8127/trac_8127.patch) by vdelecroix created at 2010-02-08 21:07:42
+Attachment [trac_8127.patch](tarball://root/attachments/some-uuid/ticket8127/trac_8127.patch) by @videlec created at 2010-02-08 21:07:42
 
 This now needed to have a string (or a WordDatatype_str) as separator. A ValueError is raised when it's not the case.
 
@@ -352,7 +352,7 @@ archive/issue_comments_071460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8127#issuecomment-71460",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -365,16 +365,16 @@ Applies over the precedent patch
 archive/issue_comments_071461.json:
 ```json
 {
-    "body": "Attachment [trac_8127-review-sl.patch](tarball://root/attachments/some-uuid/ticket8127/trac_8127-review-sl.patch) by slabbe created at 2010-02-10 00:37:00\n\nI just added a patch which changes split function to follow python behavior for when no arguments are given and changed some doc mise en forme.\n\nAll tests passed. The above problem is solve. Sphinx builds fine on both functions. I am giving a positive review to Vincent's patch.\n\nVincent, if you agree with my patch, you can change the status of this ticket for positive review.",
+    "body": "Attachment [trac_8127-review-sl.patch](tarball://root/attachments/some-uuid/ticket8127/trac_8127-review-sl.patch) by @seblabbe created at 2010-02-10 00:37:00\n\nI just added a patch which changes split function to follow python behavior for when no arguments are given and changed some doc mise en forme.\n\nAll tests passed. The above problem is solve. Sphinx builds fine on both functions. I am giving a positive review to Vincent's patch.\n\nVincent, if you agree with my patch, you can change the status of this ticket for positive review.",
     "created_at": "2010-02-10T00:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8127#issuecomment-71461",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8127-review-sl.patch](tarball://root/attachments/some-uuid/ticket8127/trac_8127-review-sl.patch) by slabbe created at 2010-02-10 00:37:00
+Attachment [trac_8127-review-sl.patch](tarball://root/attachments/some-uuid/ticket8127/trac_8127-review-sl.patch) by @seblabbe created at 2010-02-10 00:37:00
 
 I just added a patch which changes split function to follow python behavior for when no arguments are given and changed some doc mise en forme.
 
@@ -394,7 +394,7 @@ archive/issue_comments_071462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8127#issuecomment-71462",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_071463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8127#issuecomment-71463",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_071464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8127#issuecomment-71464",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

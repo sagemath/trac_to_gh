@@ -14,7 +14,7 @@ archive/issues_002879.json:
     "title": "[with patch, needs review] Bug fix in totallyreal_rel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2879",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 Assignee: citro
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2879
 archive/issue_comments_019805.json:
 ```json
 {
-    "body": "Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2879/8681.patch) by jvoight created at 2008-04-11 18:10:03",
+    "body": "Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2879/8681.patch) by @jvoight created at 2008-04-11 18:10:03",
     "created_at": "2008-04-11T18:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2879#issuecomment-19805",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
-Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2879/8681.patch) by jvoight created at 2008-04-11 18:10:03
+Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2879/8681.patch) by @jvoight created at 2008-04-11 18:10:03
 
 
 
@@ -50,16 +50,16 @@ Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2879/8681.pat
 archive/issue_comments_019806.json:
 ```json
 {
-    "body": "Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket2879/8683.patch) by jvoight created at 2008-04-11 18:10:09",
+    "body": "Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket2879/8683.patch) by @jvoight created at 2008-04-11 18:10:09",
     "created_at": "2008-04-11T18:10:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2879#issuecomment-19806",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
-Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket2879/8683.patch) by jvoight created at 2008-04-11 18:10:09
+Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket2879/8683.patch) by @jvoight created at 2008-04-11 18:10:09
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_019807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2879#issuecomment-19807",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -86,16 +86,16 @@ Patch looks good. I'm attaching a new version of the patch, since I had merge tr
 archive/issue_comments_019808.json:
 ```json
 {
-    "body": "Attachment [trac-2879.patch](tarball://root/attachments/some-uuid/ticket2879/trac-2879.patch) by craigcitro created at 2008-04-15 10:49:02",
+    "body": "Attachment [trac-2879.patch](tarball://root/attachments/some-uuid/ticket2879/trac-2879.patch) by @craigcitro created at 2008-04-15 10:49:02",
     "created_at": "2008-04-15T10:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2879#issuecomment-19808",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2879.patch](tarball://root/attachments/some-uuid/ticket2879/trac-2879.patch) by craigcitro created at 2008-04-15 10:49:02
+Attachment [trac-2879.patch](tarball://root/attachments/some-uuid/ticket2879/trac-2879.patch) by @craigcitro created at 2008-04-15 10:49:02
 
 
 

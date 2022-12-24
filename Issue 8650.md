@@ -14,7 +14,7 @@ archive/issues_008650.json:
     "title": "Extreme faces of Polyhedra are inconsistent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8650",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
@@ -106,16 +106,16 @@ OK, I think the attached patch corrects things.
 archive/issue_comments_078487.json:
 ```json
 {
-    "body": "Attachment [trac_8650_fix_face_lattice_in_polyhedra.patch](tarball://root/attachments/some-uuid/ticket8650/trac_8650_fix_face_lattice_in_polyhedra.patch) by novoselt created at 2010-04-05 03:15:30\n\nApply this patch only",
+    "body": "Attachment [trac_8650_fix_face_lattice_in_polyhedra.patch](tarball://root/attachments/some-uuid/ticket8650/trac_8650_fix_face_lattice_in_polyhedra.patch) by @novoselt created at 2010-04-05 03:15:30\n\nApply this patch only",
     "created_at": "2010-04-05T03:15:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8650#issuecomment-78487",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8650_fix_face_lattice_in_polyhedra.patch](tarball://root/attachments/some-uuid/ticket8650/trac_8650_fix_face_lattice_in_polyhedra.patch) by novoselt created at 2010-04-05 03:15:30
+Attachment [trac_8650_fix_face_lattice_in_polyhedra.patch](tarball://root/attachments/some-uuid/ticket8650/trac_8650_fix_face_lattice_in_polyhedra.patch) by @novoselt created at 2010-04-05 03:15:30
 
 Apply this patch only
 
@@ -131,7 +131,7 @@ archive/issue_comments_078488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8650#issuecomment-78488",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_078489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8650#issuecomment-78489",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_078490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8650#issuecomment-78490",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_078491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8650#issuecomment-78491",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_078492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8650#issuecomment-78492",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_078493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8650#issuecomment-78493",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 

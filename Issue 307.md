@@ -3,7 +3,7 @@
 archive/issues_000307.json:
 ```json
 {
-    "body": "Assignee: was\n\nCurrently vector/vector multiplication returns a vector, when it should just return a scalar:\n\n```\nsage: b = vector([0,1,2]); u= vector([1,3,5]);\nsage: u*b\n(0, 3, 10)\n```\n\n\nIn this particular case, the answer should just be 13\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/307\n\n",
+    "body": "Assignee: @williamstein\n\nCurrently vector/vector multiplication returns a vector, when it should just return a scalar:\n\n```\nsage: b = vector([0,1,2]); u= vector([1,3,5]);\nsage: u*b\n(0, 3, 10)\n```\n\n\nIn this particular case, the answer should just be 13\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/307\n\n",
     "created_at": "2007-03-04T06:20:56Z",
     "labels": [
         "linear algebra",
@@ -13,10 +13,10 @@ archive/issues_000307.json:
     "title": "vector/vector multiplication should return a scalar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/307",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Currently vector/vector multiplication returns a vector, when it should just return a scalar:
 
@@ -46,7 +46,7 @@ archive/issue_comments_001461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/307#issuecomment-1461",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_001462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/307#issuecomment-1462",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

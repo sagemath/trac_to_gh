@@ -3,7 +3,7 @@
 archive/issues_003855.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\npoint3d((0,0,0))\n```\n\nversus\n\n```\npoint3d((0,0,0), size=10)\n```\n\n\nEasy to fix...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3855\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\npoint3d((0,0,0))\n```\n\nversus\n\n```\npoint3d((0,0,0), size=10)\n```\n\n\nEasy to fix...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3855\n\n",
     "created_at": "2008-08-14T19:31:44Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003855.json:
     "title": "point3d size default is too small to see",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3855",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/3855
 archive/issue_comments_027459.json:
 ```json
 {
-    "body": "Changing assignee from was to anakha.",
+    "body": "Changing assignee from @williamstein to anakha.",
     "created_at": "2008-09-21T19:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3855",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_027459.json:
 }
 ```
 
-Changing assignee from was to anakha.
+Changing assignee from @williamstein to anakha.
 
 
 

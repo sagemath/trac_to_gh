@@ -3,7 +3,7 @@
 archive/issues_002912.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: speed, build system\n\n* it is fairly straight forward C so it shouldn't break under `-O3`\n* it makes a noticeable speed difference. To echelonise a random 10<sup>4</sup> x 10<sup>4</sup> matrix takes ~ 8 seconds with `-O2` and ~ 6 seconds with `-O3`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2912\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: speed, build system\n\n* it is fairly straight forward C so it shouldn't break under `-O3`\n* it makes a noticeable speed difference. To echelonise a random 10<sup>4</sup> x 10<sup>4</sup> matrix takes ~ 8 seconds with `-O2` and ~ 6 seconds with `-O3`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2912\n\n",
     "created_at": "2008-04-13T21:05:11Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002912.json:
     "title": "M4RI should be built with -O3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2912",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: speed, build system
 
@@ -40,7 +40,7 @@ archive/issue_comments_020060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2912#issuecomment-20060",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

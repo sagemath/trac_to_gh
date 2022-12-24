@@ -3,7 +3,7 @@
 archive/issues_006252.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  schilly craigcitro ncalexan\n\nKeywords: development map, contributors.xml\n\nAdd the following people to the development map:\n1. David M\u00f8ller Hansen\n2. Fredrik Johansson\n3. Glenn Tarbox\n4. Lloyd Kilford\n5. Luis Berlioz\n6. Rob Beezer\n7. Paul Butler\n8. Ron Evans\n9. Ryan Dingman\n10. S\u00e9bastien Barth\u00e9lemy\n11. Tom Draper\n\nIssue created by migration from https://trac.sagemath.org/ticket/6252\n\n",
+    "body": "Assignee: tba\n\nCC:  @haraldschilly @craigcitro @ncalexan\n\nKeywords: development map, contributors.xml\n\nAdd the following people to the development map:\n1. David M\u00f8ller Hansen\n2. Fredrik Johansson\n3. Glenn Tarbox\n4. Lloyd Kilford\n5. Luis Berlioz\n6. Rob Beezer\n7. Paul Butler\n8. Ron Evans\n9. Ryan Dingman\n10. S\u00e9bastien Barth\u00e9lemy\n11. Tom Draper\n\nIssue created by migration from https://trac.sagemath.org/ticket/6252\n\n",
     "created_at": "2009-06-09T05:53:55Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_006252.json:
 ```
 Assignee: tba
 
-CC:  schilly craigcitro ncalexan
+CC:  @haraldschilly @craigcitro @ncalexan
 
 Keywords: development map, contributors.xml
 
@@ -86,7 +86,7 @@ Changing component from documentation to website/wiki.
 archive/issue_comments_049938.json:
 ```json
 {
-    "body": "Changing assignee from tba to schilly.",
+    "body": "Changing assignee from tba to @haraldschilly.",
     "created_at": "2009-06-09T18:20:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6252",
     "type": "issue_comment",
@@ -95,7 +95,7 @@ archive/issue_comments_049938.json:
 }
 ```
 
-Changing assignee from tba to schilly.
+Changing assignee from tba to @haraldschilly.
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_049940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6252#issuecomment-49940",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_049942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6252#issuecomment-49942",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

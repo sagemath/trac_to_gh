@@ -3,7 +3,7 @@
 archive/issues_000939.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n        sage: import sage.graphs.graph_isom\n        sage: from sage.graphs.graph_isom import search_tree, all_labeled_digraphs_with_loops\n        sage: from sage.graphs.graph import enum\n        sage: Glist = {}\n        sage: Giso  = {}\n        sage: for n in range(1,4):\n        ...    Glist[n] = all_labeled_digraphs_with_loops(n)\n        ...    Giso[n] = []\n        ...    for g in Glist[n]:\n        ...        a, b = search_tree(g, [range(n)], dig=True)\n        ...        inn = False\n        ...        for gi in Giso[n]:\n        ...            if enum(b) == enum(gi):\n        ...                inn = True\n        ...        if not inn:\n        ...            Giso[n].append(b)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/939\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n        sage: import sage.graphs.graph_isom\n        sage: from sage.graphs.graph_isom import search_tree, all_labeled_digraphs_with_loops\n        sage: from sage.graphs.graph import enum\n        sage: Glist = {}\n        sage: Giso  = {}\n        sage: for n in range(1,4):\n        ...    Glist[n] = all_labeled_digraphs_with_loops(n)\n        ...    Giso[n] = []\n        ...    for g in Glist[n]:\n        ...        a, b = search_tree(g, [range(n)], dig=True)\n        ...        inn = False\n        ...        for gi in Giso[n]:\n        ...            if enum(b) == enum(gi):\n        ...                inn = True\n        ...        if not inn:\n        ...            Giso[n].append(b)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/939\n\n",
     "created_at": "2007-10-20T06:55:13Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000939.json:
     "title": "segfault in graph_isom.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/939",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -56,7 +56,7 @@ archive/issue_comments_005741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/939#issuecomment-5741",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -252,16 +252,16 @@ Michael
 archive/issue_comments_005746.json:
 ```json
 {
-    "body": "Attachment [7031.patch](tarball://root/attachments/some-uuid/ticket939/7031.patch) by rlm created at 2007-10-21 02:38:49\n\nFix.",
+    "body": "Attachment [7031.patch](tarball://root/attachments/some-uuid/ticket939/7031.patch) by @rlmill created at 2007-10-21 02:38:49\n\nFix.",
     "created_at": "2007-10-21T02:38:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/939#issuecomment-5746",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [7031.patch](tarball://root/attachments/some-uuid/ticket939/7031.patch) by rlm created at 2007-10-21 02:38:49
+Attachment [7031.patch](tarball://root/attachments/some-uuid/ticket939/7031.patch) by @rlmill created at 2007-10-21 02:38:49
 
 Fix.
 
@@ -277,7 +277,7 @@ archive/issue_comments_005747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/939#issuecomment-5747",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -290,13 +290,13 @@ Resolution: fixed
 archive/issue_comments_005748.json:
 ```json
 {
-    "body": "Attachment [doctest.patch](tarball://root/attachments/some-uuid/ticket939/doctest.patch) by was created at 2007-10-21 02:46:12",
+    "body": "Attachment [doctest.patch](tarball://root/attachments/some-uuid/ticket939/doctest.patch) by @williamstein created at 2007-10-21 02:46:12",
     "created_at": "2007-10-21T02:46:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/939#issuecomment-5748",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doctest.patch](tarball://root/attachments/some-uuid/ticket939/doctest.patch) by was created at 2007-10-21 02:46:12
+Attachment [doctest.patch](tarball://root/attachments/some-uuid/ticket939/doctest.patch) by @williamstein created at 2007-10-21 02:46:12

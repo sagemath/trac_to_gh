@@ -3,7 +3,7 @@
 archive/issues_003669.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3669\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3669\n\n",
     "created_at": "2008-07-16T23:32:28Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003669.json:
     "title": "[with patch; needs review] improve multiple_of_order command for torsion subgroups of modular abelian varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3669",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3669
 archive/issue_comments_025937.json:
 ```json
 {
-    "body": "Attachment [sage-3669.patch](tarball://root/attachments/some-uuid/ticket3669/sage-3669.patch) by was created at 2008-07-16 23:32:49",
+    "body": "Attachment [sage-3669.patch](tarball://root/attachments/some-uuid/ticket3669/sage-3669.patch) by @williamstein created at 2008-07-16 23:32:49",
     "created_at": "2008-07-16T23:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3669#issuecomment-25937",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3669.patch](tarball://root/attachments/some-uuid/ticket3669/sage-3669.patch) by was created at 2008-07-16 23:32:49
+Attachment [sage-3669.patch](tarball://root/attachments/some-uuid/ticket3669/sage-3669.patch) by @williamstein created at 2008-07-16 23:32:49
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_025938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3669#issuecomment-25938",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_025939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3669#issuecomment-25939",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

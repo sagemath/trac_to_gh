@@ -3,7 +3,7 @@
 archive/issues_006268.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  ncalexan\n\nTypesettings of sec(x), csc(x), cot(x) are broken. It puts an\nextra \"\\mbox\" around them. However, typesetting for sin(x), \ncos(x), tan(x) works as expected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6268\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @ncalexan\n\nTypesettings of sec(x), csc(x), cot(x) are broken. It puts an\nextra \"\\mbox\" around them. However, typesetting for sin(x), \ncos(x), tan(x) works as expected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6268\n\n",
     "created_at": "2009-06-12T15:25:27Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_006268.json:
     "title": "Typesetting of sec(x), csc(x), cot(x) are broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6268",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 Assignee: cwitty
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Typesettings of sec(x), csc(x), cot(x) are broken. It puts an
 extra "\mbox" around them. However, typesetting for sin(x), 
@@ -79,7 +79,7 @@ archive/issue_comments_050066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6268#issuecomment-50066",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -111,16 +111,16 @@ It's possible to work around it, I think, with a patch like the attached, but I'
 archive/issue_comments_050067.json:
 ```json
 {
-    "body": "Attachment [trac_6268.patch](tarball://root/attachments/some-uuid/ticket6268/trac_6268.patch) by gmhossain created at 2009-06-12 22:35:18\n\nThe rebased patch for the ticket\n\nhttp://trac.sagemath.org/sage_trac/ticket/5711\n\nwill resolve this issue as an un-intended consequence.",
+    "body": "Attachment [trac_6268.patch](tarball://root/attachments/some-uuid/ticket6268/trac_6268.patch) by @golam-m-hossain created at 2009-06-12 22:35:18\n\nThe rebased patch for the ticket\n\nhttp://trac.sagemath.org/sage_trac/ticket/5711\n\nwill resolve this issue as an un-intended consequence.",
     "created_at": "2009-06-12T22:35:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6268#issuecomment-50067",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
-Attachment [trac_6268.patch](tarball://root/attachments/some-uuid/ticket6268/trac_6268.patch) by gmhossain created at 2009-06-12 22:35:18
+Attachment [trac_6268.patch](tarball://root/attachments/some-uuid/ticket6268/trac_6268.patch) by @golam-m-hossain created at 2009-06-12 22:35:18
 
 The rebased patch for the ticket
 
@@ -140,7 +140,7 @@ archive/issue_comments_050068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6268#issuecomment-50068",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_050069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6268#issuecomment-50069",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -171,16 +171,16 @@ Changing status from new to assigned.
 archive/issue_comments_050070.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to burcin.",
+    "body": "Changing assignee from cwitty to @burcin.",
     "created_at": "2009-06-14T22:17:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6268#issuecomment-50070",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from cwitty to burcin.
+Changing assignee from cwitty to @burcin.
 
 
 
@@ -194,7 +194,7 @@ archive/issue_comments_050071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6268#issuecomment-50071",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -207,16 +207,16 @@ Changing component from misc to symbolics.
 archive/issue_comments_050072.json:
 ```json
 {
-    "body": "Attachment [trac_6268-py_print_latex.patch](tarball://root/attachments/some-uuid/ticket6268/trac_6268-py_print_latex.patch) by burcin created at 2009-06-14 22:17:42\n\nattachment:trac_6268-py_print_latex.patch fixes the reported problem. Apply only this patch.",
+    "body": "Attachment [trac_6268-py_print_latex.patch](tarball://root/attachments/some-uuid/ticket6268/trac_6268-py_print_latex.patch) by @burcin created at 2009-06-14 22:17:42\n\nattachment:trac_6268-py_print_latex.patch fixes the reported problem. Apply only this patch.",
     "created_at": "2009-06-14T22:17:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6268#issuecomment-50072",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6268-py_print_latex.patch](tarball://root/attachments/some-uuid/ticket6268/trac_6268-py_print_latex.patch) by burcin created at 2009-06-14 22:17:42
+Attachment [trac_6268-py_print_latex.patch](tarball://root/attachments/some-uuid/ticket6268/trac_6268-py_print_latex.patch) by @burcin created at 2009-06-14 22:17:42
 
 attachment:trac_6268-py_print_latex.patch fixes the reported problem. Apply only this patch.
 
@@ -232,7 +232,7 @@ archive/issue_comments_050073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6268#issuecomment-50073",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

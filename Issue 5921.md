@@ -14,7 +14,7 @@ archive/issues_005921.json:
     "title": "factoring integer polynomials does not factor the content",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5921",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5921
 archive/issue_comments_046806.json:
 ```json
 {
-    "body": "Attachment [trac_5921.patch](tarball://root/attachments/some-uuid/ticket5921/trac_5921.patch) by cremona created at 2009-04-28 20:04:25",
+    "body": "Attachment [trac_5921.patch](tarball://root/attachments/some-uuid/ticket5921/trac_5921.patch) by @JohnCremona created at 2009-04-28 20:04:25",
     "created_at": "2009-04-28T20:04:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5921#issuecomment-46806",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5921.patch](tarball://root/attachments/some-uuid/ticket5921/trac_5921.patch) by cremona created at 2009-04-28 20:04:25
+Attachment [trac_5921.patch](tarball://root/attachments/some-uuid/ticket5921/trac_5921.patch) by @JohnCremona created at 2009-04-28 20:04:25
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_046807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5921#issuecomment-46807",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_046808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5921#issuecomment-46808",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_046809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5921#issuecomment-46809",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_046810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5921#issuecomment-46810",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_046811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5921#issuecomment-46811",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_046812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5921#issuecomment-46812",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_046813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5921#issuecomment-46813",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_046814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5921#issuecomment-46814",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_046816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5921#issuecomment-46816",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_046817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5921#issuecomment-46817",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -314,16 +314,16 @@ I have replaced my patch with the new version, so one still needs to apply both 
 archive/issue_comments_046818.json:
 ```json
 {
-    "body": "Attachment [trac_5921_fix.patch](tarball://root/attachments/some-uuid/ticket5921/trac_5921_fix.patch) by cremona created at 2009-04-30 08:29:02\n\nWith Alex's new patch (on top of mine all tests in modular/overconvergent/* pass  as well as all in rings/polynomial\n\nI reinstated Positive Review and am keeping my fingers crossed!",
+    "body": "Attachment [trac_5921_fix.patch](tarball://root/attachments/some-uuid/ticket5921/trac_5921_fix.patch) by @JohnCremona created at 2009-04-30 08:29:02\n\nWith Alex's new patch (on top of mine all tests in modular/overconvergent/* pass  as well as all in rings/polynomial\n\nI reinstated Positive Review and am keeping my fingers crossed!",
     "created_at": "2009-04-30T08:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5921#issuecomment-46818",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5921_fix.patch](tarball://root/attachments/some-uuid/ticket5921/trac_5921_fix.patch) by cremona created at 2009-04-30 08:29:02
+Attachment [trac_5921_fix.patch](tarball://root/attachments/some-uuid/ticket5921/trac_5921_fix.patch) by @JohnCremona created at 2009-04-30 08:29:02
 
 With Alex's new patch (on top of mine all tests in modular/overconvergent/* pass  as well as all in rings/polynomial
 

@@ -3,7 +3,7 @@
 archive/issues_009855.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  zimmerma\n\nsee #7199 for a patch improving `stack`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9856\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @zimmermann6\n\nsee #7199 for a patch improving `stack`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9856\n\n",
     "created_at": "2010-09-04T20:27:21Z",
     "labels": [
         "linear algebra",
@@ -19,7 +19,7 @@ archive/issues_009855.json:
 ```
 Assignee: jason, was
 
-CC:  zimmerma
+CC:  @zimmermann6
 
 see #7199 for a patch improving `stack`.
 
@@ -78,7 +78,7 @@ archive/issue_comments_097285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9855#issuecomment-97285",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_097286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9855#issuecomment-97286",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_097289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9855#issuecomment-97289",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_097290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9855#issuecomment-97290",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_097293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9855#issuecomment-97293",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_097294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9855#issuecomment-97294",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_097295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9855#issuecomment-97295",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000547.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/547\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/547\n\n",
     "created_at": "2007-08-31T23:10:59Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000547.json:
     "title": "hg_doc should merge repository on upgrade/install instead of overwriting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/547",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_002819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/547#issuecomment-2819",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_002820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/547#issuecomment-2820",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_002821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/547#issuecomment-2821",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_002822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/547#issuecomment-2822",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

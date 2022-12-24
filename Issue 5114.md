@@ -3,7 +3,7 @@
 archive/issues_005114.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\nConsider:\n\n```\nsage: QA = QuaternionAlgebra(QQ, -1, -1)\nsage: foo = QA(3.0); foo\n3.00000000000000\nsage: parent(foo)\nQuaternion algebra with generators (i, j, k) over Rational Field\nsage: parent(foo.vector()[0])\nReal Field with 53 bits of precision\n```\n\nI don't think the initializer should let you construct an element with RR members but still claim to be over QQ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5114\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nConsider:\n\n```\nsage: QA = QuaternionAlgebra(QQ, -1, -1)\nsage: foo = QA(3.0); foo\n3.00000000000000\nsage: parent(foo)\nQuaternion algebra with generators (i, j, k) over Rational Field\nsage: parent(foo.vector()[0])\nReal Field with 53 bits of precision\n```\n\nI don't think the initializer should let you construct an element with RR members but still claim to be over QQ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5114\n\n",
     "created_at": "2009-01-28T03:55:28Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_005114.json:
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 Consider:
 
@@ -51,7 +51,7 @@ archive/issue_comments_039087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5114#issuecomment-39087",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_039088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5114#issuecomment-39088",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_039090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5114#issuecomment-39090",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -178,16 +178,16 @@ The attached patch adds the requested doctest.
 archive/issue_comments_039091.json:
 ```json
 {
-    "body": "Changing assignee from tbd to AlexGhitza.",
+    "body": "Changing assignee from tbd to @aghitza.",
     "created_at": "2009-04-29T13:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5114#issuecomment-39091",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to AlexGhitza.
+Changing assignee from tbd to @aghitza.
 
 
 
@@ -201,7 +201,7 @@ archive/issue_comments_039092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5114#issuecomment-39092",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -214,16 +214,16 @@ Changing status from new to assigned.
 archive/issue_comments_039093.json:
 ```json
 {
-    "body": "Attachment [trac_5114.patch](tarball://root/attachments/some-uuid/ticket5114/trac_5114.patch) by AlexGhitza created at 2009-04-29 13:52:25",
+    "body": "Attachment [trac_5114.patch](tarball://root/attachments/some-uuid/ticket5114/trac_5114.patch) by @aghitza created at 2009-04-29 13:52:25",
     "created_at": "2009-04-29T13:52:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5114#issuecomment-39093",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5114.patch](tarball://root/attachments/some-uuid/ticket5114/trac_5114.patch) by AlexGhitza created at 2009-04-29 13:52:25
+Attachment [trac_5114.patch](tarball://root/attachments/some-uuid/ticket5114/trac_5114.patch) by @aghitza created at 2009-04-29 13:52:25
 
 
 
@@ -237,7 +237,7 @@ archive/issue_comments_039094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5114#issuecomment-39094",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_039095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5114#issuecomment-39095",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_039096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5114#issuecomment-39096",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

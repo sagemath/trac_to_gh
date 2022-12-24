@@ -61,7 +61,7 @@ archive/issue_comments_067508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7803#issuecomment-67508",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_067509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7803#issuecomment-67509",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_067510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7803#issuecomment-67510",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_067511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7803#issuecomment-67511",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_067513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7803#issuecomment-67513",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -206,16 +206,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_067514.json:
 ```json
 {
-    "body": "Attachment [sage-4.3.4-fix-usage-of-deprecated-sets-module.patch](tarball://root/attachments/some-uuid/ticket7803/sage-4.3.4-fix-usage-of-deprecated-sets-module.patch) by novoselt created at 2010-05-21 16:44:15\n\nMaking new attachments does not create \"ticket update\" messages, so I didn't know that a new version is added. As I understand, this is now ready for review, so I'll go ahead and change the status.",
+    "body": "Attachment [sage-4.3.4-fix-usage-of-deprecated-sets-module.patch](tarball://root/attachments/some-uuid/ticket7803/sage-4.3.4-fix-usage-of-deprecated-sets-module.patch) by @novoselt created at 2010-05-21 16:44:15\n\nMaking new attachments does not create \"ticket update\" messages, so I didn't know that a new version is added. As I understand, this is now ready for review, so I'll go ahead and change the status.",
     "created_at": "2010-05-21T16:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7803#issuecomment-67514",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [sage-4.3.4-fix-usage-of-deprecated-sets-module.patch](tarball://root/attachments/some-uuid/ticket7803/sage-4.3.4-fix-usage-of-deprecated-sets-module.patch) by novoselt created at 2010-05-21 16:44:15
+Attachment [sage-4.3.4-fix-usage-of-deprecated-sets-module.patch](tarball://root/attachments/some-uuid/ticket7803/sage-4.3.4-fix-usage-of-deprecated-sets-module.patch) by @novoselt created at 2010-05-21 16:44:15
 
 Making new attachments does not create "ticket update" messages, so I didn't know that a new version is added. As I understand, this is now ready for review, so I'll go ahead and change the status.
 
@@ -231,7 +231,7 @@ archive/issue_comments_067515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7803#issuecomment-67515",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_067516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7803#issuecomment-67516",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_067517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7803#issuecomment-67517",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

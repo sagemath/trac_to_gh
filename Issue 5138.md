@@ -3,7 +3,7 @@
 archive/issues_005138.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5138\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5138\n\n",
     "created_at": "2009-01-30T15:59:11Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005138.json:
     "title": "implement computing manin constants of elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5138",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_039287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5138#issuecomment-39287",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_039288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5138#issuecomment-39288",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_039289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5138#issuecomment-39289",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_039290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5138#issuecomment-39290",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,16 +128,16 @@ Thanks for pointing out the 990h issue which I had forgot.  I found a bug relate
 archive/issue_comments_039291.json:
 ```json
 {
-    "body": "Attachment [trac_5138.patch](tarball://root/attachments/some-uuid/ticket5138/trac_5138.patch) by was created at 2009-02-01 09:24:43",
+    "body": "Attachment [trac_5138.patch](tarball://root/attachments/some-uuid/ticket5138/trac_5138.patch) by @williamstein created at 2009-02-01 09:24:43",
     "created_at": "2009-02-01T09:24:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5138#issuecomment-39291",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5138.patch](tarball://root/attachments/some-uuid/ticket5138/trac_5138.patch) by was created at 2009-02-01 09:24:43
+Attachment [trac_5138.patch](tarball://root/attachments/some-uuid/ticket5138/trac_5138.patch) by @williamstein created at 2009-02-01 09:24:43
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_039292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5138#issuecomment-39292",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_039293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5138#issuecomment-39293",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_039294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5138#issuecomment-39294",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -210,16 +210,16 @@ Thanks John -- excellent catch.  And, I changed the code to use the code from da
 archive/issue_comments_039295.json:
 ```json
 {
-    "body": "Attachment [trac_5138_part2.patch](tarball://root/attachments/some-uuid/ticket5138/trac_5138_part2.patch) by cremona created at 2009-02-01 22:12:40\n\nLooks good!",
+    "body": "Attachment [trac_5138_part2.patch](tarball://root/attachments/some-uuid/ticket5138/trac_5138_part2.patch) by @JohnCremona created at 2009-02-01 22:12:40\n\nLooks good!",
     "created_at": "2009-02-01T22:12:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5138#issuecomment-39295",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5138_part2.patch](tarball://root/attachments/some-uuid/ticket5138/trac_5138_part2.patch) by cremona created at 2009-02-01 22:12:40
+Attachment [trac_5138_part2.patch](tarball://root/attachments/some-uuid/ticket5138/trac_5138_part2.patch) by @JohnCremona created at 2009-02-01 22:12:40
 
 Looks good!
 

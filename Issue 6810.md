@@ -3,7 +3,7 @@
 archive/issues_006810.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  vbraun\n\nKeywords: doctest schemes homset\n\nThe current coverage is 8% and should be brought up to 100%.\n\nAlso, there are small but annoying bugs such as: the methods that enumerate the points on schemes over finite fields do not sort the list before returning it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6810\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @vbraun\n\nKeywords: doctest schemes homset\n\nThe current coverage is 8% and should be brought up to 100%.\n\nAlso, there are small but annoying bugs such as: the methods that enumerate the points on schemes over finite fields do not sort the list before returning it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6810\n\n",
     "created_at": "2009-08-23T01:57:17Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_006810.json:
     "title": "improve doctest coverage in schemes/homset.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6810",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  vbraun
+CC:  @vbraun
 
 Keywords: doctest schemes homset
 
@@ -43,7 +43,7 @@ archive/issue_comments_056055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6810#issuecomment-56055",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_056056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6810#issuecomment-56056",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_056057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6810#issuecomment-56057",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_056058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6810#issuecomment-56058",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_056059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6810#issuecomment-56059",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_056060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6810",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6810#issuecomment-56060",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008146.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  mpatel\n\nKeywords: French tutorial\n\nTicket #8036 fixes some issues with non-ASCII characters in the reference manual. But it breaks the building of the HTML version of the French tutorial:\n\n```\nsphinx-build -b html -d /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/doctrees/fr/tutorial    /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/fr/tutorial /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/html/fr/tutorial\nRunning Sphinx v0.6.3\n\nException occurred:\n  File \"/scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/fr/tutorial/conf.py\", line 38, in <module>\n    latex_preamble += '\\\\DeclareUnicodeCharacter{00A0}{\\\\nobreakspace}\\n'\nNameError: name 'latex_preamble' is not defined\nThe full traceback has been saved in /tmp/sphinx-err-6XQBIT.log, if you want to report the issue to the author.\nPlease also report this if it was a user error, so that a better error message can be provided next time.\nSend reports to sphinx-dev@googlegroups.com. Thanks!\nBuild finished.  The built documents can be found in /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/html/fr/tutorial\n```\n\nThis is due to the deletion of the line\n\n```\nlatex_preamble = '\\usepackage{amsmath}\\n\\usepackage{amsfonts}\\n' \n```\n\nin [trac_8036-docbuild_utf8x.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8036/trac_8036-docbuild_utf8x.patch). I'm making this a blocker against Sage 4.3.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8146\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @qed777\n\nKeywords: French tutorial\n\nTicket #8036 fixes some issues with non-ASCII characters in the reference manual. But it breaks the building of the HTML version of the French tutorial:\n\n```\nsphinx-build -b html -d /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/doctrees/fr/tutorial    /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/fr/tutorial /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/html/fr/tutorial\nRunning Sphinx v0.6.3\n\nException occurred:\n  File \"/scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/fr/tutorial/conf.py\", line 38, in <module>\n    latex_preamble += '\\\\DeclareUnicodeCharacter{00A0}{\\\\nobreakspace}\\n'\nNameError: name 'latex_preamble' is not defined\nThe full traceback has been saved in /tmp/sphinx-err-6XQBIT.log, if you want to report the issue to the author.\nPlease also report this if it was a user error, so that a better error message can be provided next time.\nSend reports to sphinx-dev@googlegroups.com. Thanks!\nBuild finished.  The built documents can be found in /scratch/mvngu/release/sage-4.3.2.alpha1/devel/sage/doc/output/html/fr/tutorial\n```\n\nThis is due to the deletion of the line\n\n```\nlatex_preamble = '\\usepackage{amsmath}\\n\\usepackage{amsfonts}\\n' \n```\n\nin [trac_8036-docbuild_utf8x.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8036/trac_8036-docbuild_utf8x.patch). I'm making this a blocker against Sage 4.3.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8146\n\n",
     "created_at": "2010-02-02T02:02:41Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008146.json:
 ```
 Assignee: mvngu
 
-CC:  mpatel
+CC:  @qed777
 
 Keywords: French tutorial
 
@@ -63,7 +63,7 @@ archive/issue_comments_071609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8146#issuecomment-71609",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_071610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8146#issuecomment-71610",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_071611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8146#issuecomment-71611",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing status from new to needs_review.
 archive/issue_comments_071612.json:
 ```json
 {
-    "body": "Attachment [trac_8146-french.patch](tarball://root/attachments/some-uuid/ticket8146/trac_8146-french.patch) by jhpalmieri created at 2010-02-02 02:46:33\n\n(I didn't check `conf.py` for the other documents, but they build with just the usual warnings, so I don't think we need to modify them.)",
+    "body": "Attachment [trac_8146-french.patch](tarball://root/attachments/some-uuid/ticket8146/trac_8146-french.patch) by @jhpalmieri created at 2010-02-02 02:46:33\n\n(I didn't check `conf.py` for the other documents, but they build with just the usual warnings, so I don't think we need to modify them.)",
     "created_at": "2010-02-02T02:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8146#issuecomment-71612",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8146-french.patch](tarball://root/attachments/some-uuid/ticket8146/trac_8146-french.patch) by jhpalmieri created at 2010-02-02 02:46:33
+Attachment [trac_8146-french.patch](tarball://root/attachments/some-uuid/ticket8146/trac_8146-french.patch) by @jhpalmieri created at 2010-02-02 02:46:33
 
 (I didn't check `conf.py` for the other documents, but they build with just the usual warnings, so I don't think we need to modify them.)
 
@@ -137,7 +137,7 @@ archive/issue_comments_071613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8146#issuecomment-71613",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

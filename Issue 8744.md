@@ -3,7 +3,7 @@
 archive/issues_008744.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  rhinton brunellus\n\nThe current add_edge method in BipartiteGraph refuses to add an edge between two vertices belonging to the same set. This may seem perfectly fine, but when the two vertices are in distinct connected components, the graph may stay bipartite with a new edge even if the vertices are in the same partition :\n\n\n```\nsage: g = BipartiteGraph(2*graphs.GridGraph([4,4]))\nsage: g.add_edge(0,30)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/usr/local/sage/devel/sage-bip/sage/graphs/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/graphs/bipartite_graph.pyc in add_edge(self, u, v, label)\n    690         # check for endpoints in different partitions\n    691         if self.left.issuperset((u,v)) or self.right.issuperset((u,v)):\n--> 692             raise RuntimeError('Edge vertices must lie in different partitions.')\n    693 \n    694         # add the edge\n\nRuntimeError: Edge vertices must lie in different partitions.\n```\n\n\nFrom the discussion on #8425 :\n\n//////\nTo be honest, I really would like to be able to deal with Bipartite Graphs without having to specify myself in which set my vertices are... What would you think of setting a vertex to \"left\" if the users does not specify left=True or right=True, and modify a bit add_edge ? This way, the edge could be added immediately if the two vertices at its ends are in different sets, and if they are not the colors could be changed whenever possible to fit the graph with a new edge ?\n\nActually, when a graph is bipartite and split in two sets, you can add an edge in exactly two situations :\n\n- The colors between the endpoints are different\n\n- The colors are the same, but the vertices belong to two different connected components\n\nSo two solutions :\n\n- Add an edge if the colors are different. If they are not, check that there is no path from one vertex to the other, and if it is the case reverse the coloring of one of the two components and add the edge\n\n- Fix a partition for any connected component, and maintain them updated.\n\nThe problem is that the first makes of add_edge a linear-time function. The second way keeps it to O(1), but we would have to update the list of connected components, even if it is not so hard. The truth is I do not know what is best for this class, and I'm eager to learn your advice on it. It is also possible to add a flag like \"allow_set_modifications\" if you want to keep the possibility to refuse an addition in somec ases... But anyway this should be mentionned in the docstrings :-) \n///////\n\nIf anybody working on the BipartiteGraph class is willing to give all this a try.... :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8744\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rhinton brunellus\n\nThe current add_edge method in BipartiteGraph refuses to add an edge between two vertices belonging to the same set. This may seem perfectly fine, but when the two vertices are in distinct connected components, the graph may stay bipartite with a new edge even if the vertices are in the same partition :\n\n\n```\nsage: g = BipartiteGraph(2*graphs.GridGraph([4,4]))\nsage: g.add_edge(0,30)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/usr/local/sage/devel/sage-bip/sage/graphs/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/graphs/bipartite_graph.pyc in add_edge(self, u, v, label)\n    690         # check for endpoints in different partitions\n    691         if self.left.issuperset((u,v)) or self.right.issuperset((u,v)):\n--> 692             raise RuntimeError('Edge vertices must lie in different partitions.')\n    693 \n    694         # add the edge\n\nRuntimeError: Edge vertices must lie in different partitions.\n```\n\n\nFrom the discussion on #8425 :\n\n//////\nTo be honest, I really would like to be able to deal with Bipartite Graphs without having to specify myself in which set my vertices are... What would you think of setting a vertex to \"left\" if the users does not specify left=True or right=True, and modify a bit add_edge ? This way, the edge could be added immediately if the two vertices at its ends are in different sets, and if they are not the colors could be changed whenever possible to fit the graph with a new edge ?\n\nActually, when a graph is bipartite and split in two sets, you can add an edge in exactly two situations :\n\n- The colors between the endpoints are different\n\n- The colors are the same, but the vertices belong to two different connected components\n\nSo two solutions :\n\n- Add an edge if the colors are different. If they are not, check that there is no path from one vertex to the other, and if it is the case reverse the coloring of one of the two components and add the edge\n\n- Fix a partition for any connected component, and maintain them updated.\n\nThe problem is that the first makes of add_edge a linear-time function. The second way keeps it to O(1), but we would have to update the list of connected components, even if it is not so hard. The truth is I do not know what is best for this class, and I'm eager to learn your advice on it. It is also possible to add a flag like \"allow_set_modifications\" if you want to keep the possibility to refuse an addition in somec ases... But anyway this should be mentionned in the docstrings :-) \n///////\n\nIf anybody working on the BipartiteGraph class is willing to give all this a try.... :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8744\n\n",
     "created_at": "2010-04-22T08:14:52Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_008744.json:
     "title": "Improve add_edge in BipartiteGraph to make it independent from the current coloring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8744",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  rhinton brunellus
+CC:  @rhinton brunellus
 
 The current add_edge method in BipartiteGraph refuses to add an edge between two vertices belonging to the same set. This may seem perfectly fine, but when the two vertices are in distinct connected components, the graph may stay bipartite with a new edge even if the vertices are in the same partition :
 
@@ -101,7 +101,7 @@ archive/issue_comments_079999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8744#issuecomment-79999",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_080000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8744#issuecomment-80000",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_080002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8744#issuecomment-80002",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_080004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8744#issuecomment-80004",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_080007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8744#issuecomment-80007",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_080008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8744#issuecomment-80008",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_080009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8744#issuecomment-80009",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_080012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8744#issuecomment-80012",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 

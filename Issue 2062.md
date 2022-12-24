@@ -3,7 +3,7 @@
 archive/issues_002062.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nblah blah\n\nIssue created by migration from https://trac.sagemath.org/ticket/2062\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nblah blah\n\nIssue created by migration from https://trac.sagemath.org/ticket/2062\n\n",
     "created_at": "2008-02-05T18:55:33Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002062.json:
     "title": "[with patch] add support for binary vectors (sd7 test ticket)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2062",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2062
 archive/issue_comments_013351.json:
 ```json
 {
-    "body": "Attachment [bv.patch](tarball://root/attachments/some-uuid/ticket2062/bv.patch) by mhansen created at 2008-02-05 18:56:56",
+    "body": "Attachment [bv.patch](tarball://root/attachments/some-uuid/ticket2062/bv.patch) by @mwhansen created at 2008-02-05 18:56:56",
     "created_at": "2008-02-05T18:56:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2062#issuecomment-13351",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [bv.patch](tarball://root/attachments/some-uuid/ticket2062/bv.patch) by mhansen created at 2008-02-05 18:56:56
+Attachment [bv.patch](tarball://root/attachments/some-uuid/ticket2062/bv.patch) by @mwhansen created at 2008-02-05 18:56:56
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_013352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2062#issuecomment-13352",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_013353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2062#issuecomment-13353",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

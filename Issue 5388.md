@@ -3,7 +3,7 @@
 archive/issues_005388.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mhansen jhpalmieri\n\nThis come up via other tickets. Removing the functionality completely might be not the best solution, but having it print a warning and apply the patch to devel might be an alternative. Just printing the warning might be more prudent since any patch against the doc repo will likely be broken anyway.\n\nI am sure the manual needs to be updated about hg_doc.* going away, but that can be another ticket in case it isn't implemented yet.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5388\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen @jhpalmieri\n\nThis come up via other tickets. Removing the functionality completely might be not the best solution, but having it print a warning and apply the patch to devel might be an alternative. Just printing the warning might be more prudent since any patch against the doc repo will likely be broken anyway.\n\nI am sure the manual needs to be updated about hg_doc.* going away, but that can be another ticket in case it isn't implemented yet.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5388\n\n",
     "created_at": "2009-02-26T22:53:03Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_005388.json:
 ```
 Assignee: tba
 
-CC:  mhansen jhpalmieri
+CC:  @mwhansen @jhpalmieri
 
 This come up via other tickets. Removing the functionality completely might be not the best solution, but having it print a warning and apply the patch to devel might be an alternative. Just printing the warning might be more prudent since any patch against the doc repo will likely be broken anyway.
 
@@ -45,7 +45,7 @@ archive/issue_comments_041505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5388#issuecomment-41505",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004128.json:
     "title": "include vcov in the valgrind spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4128",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_029938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4128#issuecomment-29938",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_029939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4128#issuecomment-29939",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

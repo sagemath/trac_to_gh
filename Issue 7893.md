@@ -14,7 +14,7 @@ archive/issues_007893.json:
     "title": "Sage server launching script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7893",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7893
 archive/issue_comments_068655.json:
 ```json
 {
-    "body": "Changing assignee from tbd to klee.",
+    "body": "Changing assignee from tbd to @kwankyu.",
     "created_at": "2010-01-11T01:56:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68655",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Changing assignee from tbd to klee.
+Changing assignee from tbd to @kwankyu.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_068656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68656",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_068657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68657",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_068658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68658",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_068659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68659",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_068660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68660",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_068664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68664",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_068665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68665",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_068666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68666",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -303,16 +303,16 @@ revised for Sage 5.4; removed "upgrade" command
 archive/issue_comments_068667.json:
 ```json
 {
-    "body": "Attachment [sage-server.zip](tarball://root/attachments/some-uuid/ticket7893/sage-server.zip) by klee created at 2012-12-03 01:30:53\n\nrevised for Sage 5.4; removed \"upgrade\" command",
+    "body": "Attachment [sage-server.zip](tarball://root/attachments/some-uuid/ticket7893/sage-server.zip) by @kwankyu created at 2012-12-03 01:30:53\n\nrevised for Sage 5.4; removed \"upgrade\" command",
     "created_at": "2012-12-03T01:30:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68667",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Attachment [sage-server.zip](tarball://root/attachments/some-uuid/ticket7893/sage-server.zip) by klee created at 2012-12-03 01:30:53
+Attachment [sage-server.zip](tarball://root/attachments/some-uuid/ticket7893/sage-server.zip) by @kwankyu created at 2012-12-03 01:30:53
 
 revised for Sage 5.4; removed "upgrade" command
 
@@ -328,7 +328,7 @@ archive/issue_comments_068668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68668",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_068669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68669",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_068670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68670",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_068671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68671",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_068672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7893#issuecomment-68672",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

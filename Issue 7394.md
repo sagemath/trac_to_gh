@@ -3,7 +3,7 @@
 archive/issues_007394.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jason\n\nmultiplying/dividing sqrt(e) with anything other than 1 causes a segfault, for example:\n\n\n```\n2*sqrt(e)\n```\n\n\ntested with source compile i686 and sagenb.org\n\nIssue created by migration from https://trac.sagemath.org/ticket/7394\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jasongrout\n\nmultiplying/dividing sqrt(e) with anything other than 1 causes a segfault, for example:\n\n\n```\n2*sqrt(e)\n```\n\n\ntested with source compile i686 and sagenb.org\n\nIssue created by migration from https://trac.sagemath.org/ticket/7394\n\n",
     "created_at": "2009-11-05T07:07:06Z",
     "labels": [
         "algebra",
@@ -17,9 +17,9 @@ archive/issues_007394.json:
     "user": "edrex"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jason
+CC:  @jasongrout
 
 multiplying/dividing sqrt(e) with anything other than 1 causes a segfault, for example:
 
@@ -47,7 +47,7 @@ archive/issue_comments_062180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7394",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7394#issuecomment-62180",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_062181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7394",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7394#issuecomment-62181",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -85,16 +85,16 @@ Changing component from algebra to symbolics.
 archive/issue_comments_062182.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to burcin.",
+    "body": "Changing assignee from @aghitza to @burcin.",
     "created_at": "2009-11-15T13:12:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7394",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7394#issuecomment-62182",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from AlexGhitza to burcin.
+Changing assignee from @aghitza to @burcin.
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_062183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7394",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7394#issuecomment-62183",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_062184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7394",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7394#issuecomment-62184",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

@@ -99,7 +99,7 @@ archive/issue_comments_069595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7977#issuecomment-69595",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -112,16 +112,16 @@ apply on top of the other patch
 archive/issue_comments_069596.json:
 ```json
 {
-    "body": "Attachment [trac_7977-extra.patch](tarball://root/attachments/some-uuid/ticket7977/trac_7977-extra.patch) by jhpalmieri created at 2010-01-18 16:48:14\n\nLooks good to me.  I've attached a tiny patch fixing two typos unrelated to mvngu's patch.",
+    "body": "Attachment [trac_7977-extra.patch](tarball://root/attachments/some-uuid/ticket7977/trac_7977-extra.patch) by @jhpalmieri created at 2010-01-18 16:48:14\n\nLooks good to me.  I've attached a tiny patch fixing two typos unrelated to mvngu's patch.",
     "created_at": "2010-01-18T16:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7977#issuecomment-69596",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7977-extra.patch](tarball://root/attachments/some-uuid/ticket7977/trac_7977-extra.patch) by jhpalmieri created at 2010-01-18 16:48:14
+Attachment [trac_7977-extra.patch](tarball://root/attachments/some-uuid/ticket7977/trac_7977-extra.patch) by @jhpalmieri created at 2010-01-18 16:48:14
 
 Looks good to me.  I've attached a tiny patch fixing two typos unrelated to mvngu's patch.
 
@@ -137,7 +137,7 @@ archive/issue_comments_069597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7977#issuecomment-69597",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_069598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7977#issuecomment-69598",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

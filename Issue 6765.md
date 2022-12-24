@@ -14,7 +14,7 @@ archive/issues_006765.json:
     "title": "[with patch, needs review] Linear Programming in Tutorial's Tour !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6765",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: tba
@@ -160,7 +160,7 @@ archive/issue_comments_055717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55717",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_055718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55718",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_055719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55719",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -215,16 +215,16 @@ Nathann
 archive/issue_comments_055720.json:
 ```json
 {
-    "body": "Attachment [tutorial_lp.patch](tarball://root/attachments/some-uuid/ticket6765/tutorial_lp.patch) by ncohen created at 2009-09-29 12:53:03",
+    "body": "Attachment [tutorial_lp.patch](tarball://root/attachments/some-uuid/ticket6765/tutorial_lp.patch) by @nathanncohen created at 2009-09-29 12:53:03",
     "created_at": "2009-09-29T12:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55720",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [tutorial_lp.patch](tarball://root/attachments/some-uuid/ticket6765/tutorial_lp.patch) by ncohen created at 2009-09-29 12:53:03
+Attachment [tutorial_lp.patch](tarball://root/attachments/some-uuid/ticket6765/tutorial_lp.patch) by @nathanncohen created at 2009-09-29 12:53:03
 
 
 
@@ -238,7 +238,7 @@ archive/issue_comments_055721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55721",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_055722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55722",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_055723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55723",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_055724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55724",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_055725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55725",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_055726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55726",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_055728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55728",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

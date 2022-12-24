@@ -3,7 +3,7 @@
 archive/issues_002306.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen I use tab-complete in the command-line interface when typing an object name, the cursor moves to one space after the end of the name. This is unwanted behaviour, because this means that one cannot then type \".\" and tab-complete again to get the list of functions associated to the object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2306\n\n",
+    "body": "Assignee: @williamstein\n\nWhen I use tab-complete in the command-line interface when typing an object name, the cursor moves to one space after the end of the name. This is unwanted behaviour, because this means that one cannot then type \".\" and tab-complete again to get the list of functions associated to the object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2306\n\n",
     "created_at": "2008-02-25T23:33:46Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_002306.json:
     "user": "ljpk"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When I use tab-complete in the command-line interface when typing an object name, the cursor moves to one space after the end of the name. This is unwanted behaviour, because this means that one cannot then type "." and tab-complete again to get the list of functions associated to the object.
 
@@ -37,7 +37,7 @@ archive/issue_comments_015346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2306#issuecomment-15346",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_015348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2306#issuecomment-15348",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_015349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2306#issuecomment-15349",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_015351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2306#issuecomment-15351",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_015352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2306#issuecomment-15352",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_015353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2306#issuecomment-15353",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_015354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2306#issuecomment-15354",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_015355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2306#issuecomment-15355",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

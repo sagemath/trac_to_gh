@@ -14,7 +14,7 @@ archive/issues_005905.json:
     "title": "[with patch, needs review (trivial)] minor fix to ReST markup in ell_rational_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5905",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tba
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5905
 archive/issue_comments_046680.json:
 ```json
 {
-    "body": "Attachment [ell-doctest.patch](tarball://root/attachments/some-uuid/ticket5905/ell-doctest.patch) by cremona created at 2009-04-26 20:05:27",
+    "body": "Attachment [ell-doctest.patch](tarball://root/attachments/some-uuid/ticket5905/ell-doctest.patch) by @JohnCremona created at 2009-04-26 20:05:27",
     "created_at": "2009-04-26T20:05:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5905#issuecomment-46680",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [ell-doctest.patch](tarball://root/attachments/some-uuid/ticket5905/ell-doctest.patch) by cremona created at 2009-04-26 20:05:27
+Attachment [ell-doctest.patch](tarball://root/attachments/some-uuid/ticket5905/ell-doctest.patch) by @JohnCremona created at 2009-04-26 20:05:27
 
 
 
@@ -60,7 +60,7 @@ archive/issue_comments_046681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5905#issuecomment-46681",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_046682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5905#issuecomment-46682",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

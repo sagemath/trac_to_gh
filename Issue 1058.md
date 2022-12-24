@@ -3,7 +3,7 @@
 archive/issues_001058.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: mwrank\n\nIf give mwrank any invalid input, the running process quits, and you get a pexpect error, since Sage never restarts mwrank:\n\n# the a-list needs to be all integers\nsage: E = EllipticCurve( [0, 0, 0, 0, -675/4])\nsage: E.rank()\nException (click to the left for traceback):\n...\n# this should be valid\nsage: F = EllipticCurve( [0, 0, 1, 0, -169])\n# ... but calling mwrank again makes everything fail\nsage: F.rank()\nException (click to the left for traceback):\n...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1058\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: mwrank\n\nIf give mwrank any invalid input, the running process quits, and you get a pexpect error, since Sage never restarts mwrank:\n\n# the a-list needs to be all integers\nsage: E = EllipticCurve( [0, 0, 0, 0, -675/4])\nsage: E.rank()\nException (click to the left for traceback):\n...\n# this should be valid\nsage: F = EllipticCurve( [0, 0, 1, 0, -169])\n# ... but calling mwrank again makes everything fail\nsage: F.rank()\nException (click to the left for traceback):\n...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1058\n\n",
     "created_at": "2007-11-02T00:17:02Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001058.json:
     "title": "the mwrank interface barfs on bad input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1058",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: mwrank
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1058
 archive/issue_comments_006431.json:
 ```json
 {
-    "body": "Changing assignee from was to moretti.",
+    "body": "Changing assignee from @williamstein to @bobmoretti.",
     "created_at": "2007-11-02T00:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1058#issuecomment-6431",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
-Changing assignee from was to moretti.
+Changing assignee from @williamstein to @bobmoretti.
 
 
 
@@ -64,16 +64,16 @@ Changing assignee from was to moretti.
 archive/issue_comments_006432.json:
 ```json
 {
-    "body": "Changing assignee from moretti to cremona.",
+    "body": "Changing assignee from @bobmoretti to @JohnCremona.",
     "created_at": "2007-11-21T10:56:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1058#issuecomment-6432",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Changing assignee from moretti to cremona.
+Changing assignee from @bobmoretti to @JohnCremona.
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_006433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1058#issuecomment-6433",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_006434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1058#issuecomment-6434",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -215,16 +215,16 @@ Michael
 archive/issue_comments_006438.json:
 ```json
 {
-    "body": "Attachment [trac-1058.patch](tarball://root/attachments/some-uuid/ticket1058/trac-1058.patch) by was created at 2008-01-27 19:31:27",
+    "body": "Attachment [trac-1058.patch](tarball://root/attachments/some-uuid/ticket1058/trac-1058.patch) by @williamstein created at 2008-01-27 19:31:27",
     "created_at": "2008-01-27T19:31:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1058#issuecomment-6438",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1058.patch](tarball://root/attachments/some-uuid/ticket1058/trac-1058.patch) by was created at 2008-01-27 19:31:27
+Attachment [trac-1058.patch](tarball://root/attachments/some-uuid/ticket1058/trac-1058.patch) by @williamstein created at 2008-01-27 19:31:27
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009085.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  nthiery\n\nKeywords: random element cartesian product\n\nVictor Miller reports:\n\n```\nHere's something a bit odd:\n\nsage: F = GF(2)\nsage: A = CartesianProduct(F,F)\nsage: print A.random_element()\n\nThis gets a trace back and the message\n\nTypeError: You must specify the names of the variables \n```\n\n\nHere is what is happening (certainly a bug).  In the code which picks a random element from F, F is treated as a sequence and then\nsubscripted with a random subscript.  But (as you can verify)\nevaluating F[0] or F[1] raises an error, since the `__getitem__` method of a field is used to create polynomial rings (as in F['x']).\n\nThis does not happen when you just do F.random_element() since that\nhas an independent implementation.\n\nI think the fault lies in line 125 of /sage/misc/prandom.py in the\nfunction choice() which says\n\n```\nreturn _pyrand().choice(seq)\n```\n\nbut in your example \"seq\" is the field F.  It would work if that said list(seq), since\n\n```\n_pyrand().choice(F)\n```\n\nfails but\n\n```\n_pyrand().choice(list(F))\n```\n\nworks.  But it would be more efficient if that choice function tried\nto call a random_element() function on its  argument instead --\nimagine if the field was very large, it would be stupid to construct a list of its elements for each random choice. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9085\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @nthiery\n\nKeywords: random element cartesian product\n\nVictor Miller reports:\n\n```\nHere's something a bit odd:\n\nsage: F = GF(2)\nsage: A = CartesianProduct(F,F)\nsage: print A.random_element()\n\nThis gets a trace back and the message\n\nTypeError: You must specify the names of the variables \n```\n\n\nHere is what is happening (certainly a bug).  In the code which picks a random element from F, F is treated as a sequence and then\nsubscripted with a random subscript.  But (as you can verify)\nevaluating F[0] or F[1] raises an error, since the `__getitem__` method of a field is used to create polynomial rings (as in F['x']).\n\nThis does not happen when you just do F.random_element() since that\nhas an independent implementation.\n\nI think the fault lies in line 125 of /sage/misc/prandom.py in the\nfunction choice() which says\n\n```\nreturn _pyrand().choice(seq)\n```\n\nbut in your example \"seq\" is the field F.  It would work if that said list(seq), since\n\n```\n_pyrand().choice(F)\n```\n\nfails but\n\n```\n_pyrand().choice(list(F))\n```\n\nworks.  But it would be more efficient if that choice function tried\nto call a random_element() function on its  argument instead --\nimagine if the field was very large, it would be stupid to construct a list of its elements for each random choice. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9085\n\n",
     "created_at": "2010-05-29T11:24:12Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009085.json:
     "title": "random_element fails for a cartesian product of fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9085",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  nthiery
+CC:  @nthiery
 
 Keywords: random element cartesian product
 
@@ -85,7 +85,7 @@ archive/issue_comments_084361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9085#issuecomment-84361",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_084362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9085#issuecomment-84362",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_084363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9085#issuecomment-84363",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_084364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9085#issuecomment-84364",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_084365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9085#issuecomment-84365",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_084366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9085#issuecomment-84366",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

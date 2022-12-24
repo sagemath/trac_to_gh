@@ -14,7 +14,7 @@ archive/issues_002606.json:
     "title": "command line option to kill a background notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2606",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby
@@ -47,7 +47,7 @@ archive/issue_comments_017815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2606#issuecomment-17815",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

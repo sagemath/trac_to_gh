@@ -3,7 +3,7 @@
 archive/issues_004234.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mhansen\n\nKeywords: programming guide, prog.tex\n\nThis patch fixes various typos and annoying white spaces in the programming guide, i.e. the file prog.tex. Many .tex files contain trailing white spaces, which I personally find annoying when I view/edit them from within a terminal emulator. If other folks also find trailing white spaces annoying, then this patch fixes that annoyance in prog.tex. Otherwise, just leave those trailing white spaces as is and consider the typos.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4234\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen\n\nKeywords: programming guide, prog.tex\n\nThis patch fixes various typos and annoying white spaces in the programming guide, i.e. the file prog.tex. Many .tex files contain trailing white spaces, which I personally find annoying when I view/edit them from within a terminal emulator. If other folks also find trailing white spaces annoying, then this patch fixes that annoyance in prog.tex. Otherwise, just leave those trailing white spaces as is and consider the typos.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4234\n\n",
     "created_at": "2008-10-02T01:41:52Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_004234.json:
 ```
 Assignee: tba
 
-CC:  mhansen
+CC:  @mwhansen
 
 Keywords: programming guide, prog.tex
 
@@ -119,7 +119,7 @@ archive/issue_comments_030770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4234#issuecomment-30770",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

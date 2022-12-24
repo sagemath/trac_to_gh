@@ -3,7 +3,7 @@
 archive/issues_005396.json:
 ```json
 {
-    "body": "Assignee: Rishi\n\nCC:  craigcitro cremona bober mrubinst@math.uwaterloo.ca mvngu\n\nKeywords: lcalc\n\nI am wrapping lcalc library. It is working but still needs some work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5396\n\n",
+    "body": "Assignee: Rishi\n\nCC:  @craigcitro @JohnCremona bober mrubinst@math.uwaterloo.ca mvngu\n\nKeywords: lcalc\n\nI am wrapping lcalc library. It is working but still needs some work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5396\n\n",
     "created_at": "2009-02-27T20:29:50Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005396.json:
     "title": "Wrapping lcalc library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5396",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 Assignee: Rishi
 
-CC:  craigcitro cremona bober mrubinst@math.uwaterloo.ca mvngu
+CC:  @craigcitro @JohnCremona bober mrubinst@math.uwaterloo.ca mvngu
 
 Keywords: lcalc
 
@@ -41,7 +41,7 @@ archive/issue_comments_041552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41552",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -78,16 +78,16 @@ Michael
 archive/issue_comments_041554.json:
 ```json
 {
-    "body": "Attachment [Lcalc_in_sage.sws](tarball://root/attachments/some-uuid/ticket5396/Lcalc_in_sage.sws) by rishi created at 2009-08-12 15:42:54",
+    "body": "Attachment [Lcalc_in_sage.sws](tarball://root/attachments/some-uuid/ticket5396/Lcalc_in_sage.sws) by @rishikesha created at 2009-08-12 15:42:54",
     "created_at": "2009-08-12T15:42:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41554",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [Lcalc_in_sage.sws](tarball://root/attachments/some-uuid/ticket5396/Lcalc_in_sage.sws) by rishi created at 2009-08-12 15:42:54
+Attachment [Lcalc_in_sage.sws](tarball://root/attachments/some-uuid/ticket5396/Lcalc_in_sage.sws) by @rishikesha created at 2009-08-12 15:42:54
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_041555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41555",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_041556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41556",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_041557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41557",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_041558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41558",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -184,16 +184,16 @@ Because of the above I changed the tag from "needs review" to "needs work", sinc
 archive/issue_comments_041559.json:
 ```json
 {
-    "body": "Attachment [L-1.23.spkg](tarball://root/attachments/some-uuid/ticket5396/L-1.23.spkg) by rishi created at 2009-08-23 17:51:25",
+    "body": "Attachment [L-1.23.spkg](tarball://root/attachments/some-uuid/ticket5396/L-1.23.spkg) by @rishikesha created at 2009-08-23 17:51:25",
     "created_at": "2009-08-23T17:51:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41559",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [L-1.23.spkg](tarball://root/attachments/some-uuid/ticket5396/L-1.23.spkg) by rishi created at 2009-08-23 17:51:25
+Attachment [L-1.23.spkg](tarball://root/attachments/some-uuid/ticket5396/L-1.23.spkg) by @rishikesha created at 2009-08-23 17:51:25
 
 
 
@@ -207,7 +207,7 @@ archive/issue_comments_041560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41560",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_041561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41561",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_041562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41562",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_041563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41563",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -537,7 +537,7 @@ archive/issue_comments_041564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41564",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -657,7 +657,7 @@ archive/issue_comments_041565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41565",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -670,16 +670,16 @@ basic lcalc wrapper
 archive/issue_comments_041566.json:
 ```json
 {
-    "body": "Attachment [lcalc_wrapper.patch](tarball://root/attachments/some-uuid/ticket5396/lcalc_wrapper.patch) by rishi created at 2009-10-01 00:54:35\n\nThe new patch adds lot of documentation, and clean few typos. There are three functions where True or False is more natural as parameter, and I am going to change it. That is pretty much the only change left. Any program written using this patch will continue to work when I make those changes, so this patch can still be included. I will probably post the patch by tomorrow. Today I received an email that someone wants to use this program so I am uploading this patch.",
+    "body": "Attachment [lcalc_wrapper.patch](tarball://root/attachments/some-uuid/ticket5396/lcalc_wrapper.patch) by @rishikesha created at 2009-10-01 00:54:35\n\nThe new patch adds lot of documentation, and clean few typos. There are three functions where True or False is more natural as parameter, and I am going to change it. That is pretty much the only change left. Any program written using this patch will continue to work when I make those changes, so this patch can still be included. I will probably post the patch by tomorrow. Today I received an email that someone wants to use this program so I am uploading this patch.",
     "created_at": "2009-10-01T00:54:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41566",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [lcalc_wrapper.patch](tarball://root/attachments/some-uuid/ticket5396/lcalc_wrapper.patch) by rishi created at 2009-10-01 00:54:35
+Attachment [lcalc_wrapper.patch](tarball://root/attachments/some-uuid/ticket5396/lcalc_wrapper.patch) by @rishikesha created at 2009-10-01 00:54:35
 
 The new patch adds lot of documentation, and clean few typos. There are three functions where True or False is more natural as parameter, and I am going to change it. That is pretty much the only change left. Any program written using this patch will continue to work when I make those changes, so this patch can still be included. I will probably post the patch by tomorrow. Today I received an email that someone wants to use this program so I am uploading this patch.
 
@@ -733,16 +733,16 @@ I assume `L-1.23.spkg` is version 1.23 of lcalc. Then the package must use the n
 archive/issue_comments_041569.json:
 ```json
 {
-    "body": "Attachment [minor_revision.patch](tarball://root/attachments/some-uuid/ticket5396/minor_revision.patch) by rishi created at 2009-10-01 15:09:37",
+    "body": "Attachment [minor_revision.patch](tarball://root/attachments/some-uuid/ticket5396/minor_revision.patch) by @rishikesha created at 2009-10-01 15:09:37",
     "created_at": "2009-10-01T15:09:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41569",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [minor_revision.patch](tarball://root/attachments/some-uuid/ticket5396/minor_revision.patch) by rishi created at 2009-10-01 15:09:37
+Attachment [minor_revision.patch](tarball://root/attachments/some-uuid/ticket5396/minor_revision.patch) by @rishikesha created at 2009-10-01 15:09:37
 
 
 
@@ -808,7 +808,7 @@ archive/issue_comments_041572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41572",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -850,7 +850,7 @@ archive/issue_comments_041574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41574",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -868,7 +868,7 @@ archive/issue_comments_041575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41575",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -897,7 +897,7 @@ archive/issue_comments_041576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41576",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -915,7 +915,7 @@ archive/issue_comments_041577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41577",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -937,7 +937,7 @@ archive/issue_comments_041578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41578",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1045,7 +1045,7 @@ archive/issue_comments_041579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41579",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1169,7 +1169,7 @@ archive/issue_comments_041585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41585",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1209,7 +1209,7 @@ archive/issue_comments_041587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41587",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1229,7 +1229,7 @@ archive/issue_comments_041588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41588",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1247,7 +1247,7 @@ archive/issue_comments_041589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41589",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -1293,7 +1293,7 @@ archive/issue_comments_041590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41590",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -1311,7 +1311,7 @@ archive/issue_comments_041591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41591",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1329,7 +1329,7 @@ archive/issue_comments_041592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41592",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1383,7 +1383,7 @@ archive/issue_comments_041593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41593",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -1404,7 +1404,7 @@ archive/issue_comments_041594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41594",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1422,7 +1422,7 @@ archive/issue_comments_041595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41595",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1465,7 +1465,7 @@ archive/issue_comments_041596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41596",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1478,16 +1478,16 @@ This suggests to me that the build script in the spkg needs attention.
 archive/issue_comments_041597.json:
 ```json
 {
-    "body": "Attachment [lcalc-1.23.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.spkg) by rishi created at 2010-01-13 15:34:23",
+    "body": "Attachment [lcalc-1.23.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.spkg) by @rishikesha created at 2010-01-13 15:34:23",
     "created_at": "2010-01-13T15:34:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41597",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [lcalc-1.23.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.spkg) by rishi created at 2010-01-13 15:34:23
+Attachment [lcalc-1.23.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.spkg) by @rishikesha created at 2010-01-13 15:34:23
 
 
 
@@ -1501,7 +1501,7 @@ archive/issue_comments_041598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41598",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -1519,7 +1519,7 @@ archive/issue_comments_041599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41599",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -1537,7 +1537,7 @@ archive/issue_comments_041600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41600",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1555,7 +1555,7 @@ archive/issue_comments_041601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41601",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1670,7 +1670,7 @@ archive/issue_comments_041604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41604",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -1703,16 +1703,16 @@ Replying to [comment:44 bober]:
 archive/issue_comments_041605.json:
 ```json
 {
-    "body": "Attachment [lcalc-1.23.p1.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p1.spkg) by rishi created at 2010-01-14 03:43:41\n\nFor lcalc wrapper. This should work with the old code based on command line version of lcalc",
+    "body": "Attachment [lcalc-1.23.p1.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p1.spkg) by @rishikesha created at 2010-01-14 03:43:41\n\nFor lcalc wrapper. This should work with the old code based on command line version of lcalc",
     "created_at": "2010-01-14T03:43:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41605",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [lcalc-1.23.p1.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p1.spkg) by rishi created at 2010-01-14 03:43:41
+Attachment [lcalc-1.23.p1.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p1.spkg) by @rishikesha created at 2010-01-14 03:43:41
 
 For lcalc wrapper. This should work with the old code based on command line version of lcalc
 
@@ -1728,7 +1728,7 @@ archive/issue_comments_041606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41606",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -1748,7 +1748,7 @@ archive/issue_comments_041607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41607",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -1766,7 +1766,7 @@ archive/issue_comments_041608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41608",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -1824,7 +1824,7 @@ archive/issue_comments_041611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41611",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -1842,7 +1842,7 @@ archive/issue_comments_041612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41612",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -1855,16 +1855,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_041613.json:
 ```json
 {
-    "body": "Attachment [lcalc-1.23.p3.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p3.spkg) by rishi created at 2010-02-02 14:28:40\n\nI have removed the patch file, and gone back to the version 1.23.p1. This works on boxen. All the tests passed.",
+    "body": "Attachment [lcalc-1.23.p3.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p3.spkg) by @rishikesha created at 2010-02-02 14:28:40\n\nI have removed the patch file, and gone back to the version 1.23.p1. This works on boxen. All the tests passed.",
     "created_at": "2010-02-02T14:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41613",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [lcalc-1.23.p3.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p3.spkg) by rishi created at 2010-02-02 14:28:40
+Attachment [lcalc-1.23.p3.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p3.spkg) by @rishikesha created at 2010-02-02 14:28:40
 
 I have removed the patch file, and gone back to the version 1.23.p1. This works on boxen. All the tests passed.
 
@@ -1960,7 +1960,7 @@ archive/issue_comments_041617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41617",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1982,7 +1982,7 @@ archive/issue_comments_041618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41618",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -2000,7 +2000,7 @@ archive/issue_comments_041619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41619",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -2025,7 +2025,7 @@ archive/issue_comments_041620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41620",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -2079,7 +2079,7 @@ archive/issue_comments_041622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41622",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2097,7 +2097,7 @@ archive/issue_comments_041623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41623",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2115,7 +2115,7 @@ archive/issue_comments_041624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41624",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2151,7 +2151,7 @@ archive/issue_comments_041625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41625",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -2169,7 +2169,7 @@ archive/issue_comments_041626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41626",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -2447,7 +2447,7 @@ archive/issue_comments_041634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41634",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2473,16 +2473,16 @@ I have not seen -dn or -P options  in anything.
 archive/issue_comments_041635.json:
 ```json
 {
-    "body": "Attachment [lcalc-1.23.p4.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p4.spkg) by rishi created at 2010-02-23 13:20:02\n\nChanged makefile to compile on solaris",
+    "body": "Attachment [lcalc-1.23.p4.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p4.spkg) by @rishikesha created at 2010-02-23 13:20:02\n\nChanged makefile to compile on solaris",
     "created_at": "2010-02-23T13:20:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41635",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [lcalc-1.23.p4.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p4.spkg) by rishi created at 2010-02-23 13:20:02
+Attachment [lcalc-1.23.p4.spkg](tarball://root/attachments/some-uuid/ticket5396/lcalc-1.23.p4.spkg) by @rishikesha created at 2010-02-23 13:20:02
 
 Changed makefile to compile on solaris
 
@@ -2498,7 +2498,7 @@ archive/issue_comments_041636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41636",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2516,7 +2516,7 @@ archive/issue_comments_041637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41637",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2621,16 +2621,16 @@ Dave
 archive/issue_comments_041641.json:
 ```json
 {
-    "body": "Changing assignee from Rishi to rishi.",
+    "body": "Changing assignee from Rishi to @rishikesha.",
     "created_at": "2010-02-24T23:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41641",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Changing assignee from Rishi to rishi.
+Changing assignee from Rishi to @rishikesha.
 
 
 
@@ -2644,7 +2644,7 @@ archive/issue_comments_041642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41642",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2668,7 +2668,7 @@ archive/issue_comments_041643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41643",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2722,7 +2722,7 @@ archive/issue_comments_041645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41645",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2758,7 +2758,7 @@ archive/issue_comments_041646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41646",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2778,7 +2778,7 @@ archive/issue_comments_041647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41647",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2840,7 +2840,7 @@ archive/issue_comments_041650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41650",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2853,16 +2853,16 @@ combined patch rebased to 4.3.3
 archive/issue_comments_041651.json:
 ```json
 {
-    "body": "Attachment [trac_5396_combined_rebasedto_4.3.3.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396_combined_rebasedto_4.3.3.patch) by rishi created at 2010-03-09 21:26:22\n\nOops! I did not see Yann had already posted a patch.",
+    "body": "Attachment [trac_5396_combined_rebasedto_4.3.3.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396_combined_rebasedto_4.3.3.patch) by @rishikesha created at 2010-03-09 21:26:22\n\nOops! I did not see Yann had already posted a patch.",
     "created_at": "2010-03-09T21:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41651",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [trac_5396_combined_rebasedto_4.3.3.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396_combined_rebasedto_4.3.3.patch) by rishi created at 2010-03-09 21:26:22
+Attachment [trac_5396_combined_rebasedto_4.3.3.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396_combined_rebasedto_4.3.3.patch) by @rishikesha created at 2010-03-09 21:26:22
 
 Oops! I did not see Yann had already posted a patch.
 
@@ -2878,7 +2878,7 @@ archive/issue_comments_041652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41652",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2896,7 +2896,7 @@ archive/issue_comments_041653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41653",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2916,7 +2916,7 @@ archive/issue_comments_041654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41654",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2934,7 +2934,7 @@ archive/issue_comments_041655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41655",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2947,16 +2947,16 @@ Only the last patch  trac_5396_combined_rebasedto_4.3.3.patch is needed. It comb
 archive/issue_comments_041656.json:
 ```json
 {
-    "body": "Attachment [trac_5396_combined_rebased_4.3.4.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396_combined_rebased_4.3.4.patch) by rishi created at 2010-03-25 12:00:56\n\nThe location of header files have changed in the lcalc spkg. This incorporates neccessary changes to compile.",
+    "body": "Attachment [trac_5396_combined_rebased_4.3.4.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396_combined_rebased_4.3.4.patch) by @rishikesha created at 2010-03-25 12:00:56\n\nThe location of header files have changed in the lcalc spkg. This incorporates neccessary changes to compile.",
     "created_at": "2010-03-25T12:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41656",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [trac_5396_combined_rebased_4.3.4.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396_combined_rebased_4.3.4.patch) by rishi created at 2010-03-25 12:00:56
+Attachment [trac_5396_combined_rebased_4.3.4.patch](tarball://root/attachments/some-uuid/ticket5396/trac_5396_combined_rebased_4.3.4.patch) by @rishikesha created at 2010-03-25 12:00:56
 
 The location of header files have changed in the lcalc spkg. This incorporates neccessary changes to compile.
 
@@ -2972,7 +2972,7 @@ archive/issue_comments_041657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41657",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -2990,7 +2990,7 @@ archive/issue_comments_041658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41658",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -3008,7 +3008,7 @@ archive/issue_comments_041659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41659",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -3026,7 +3026,7 @@ archive/issue_comments_041660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41660",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -3044,7 +3044,7 @@ archive/issue_comments_041661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41661",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -3064,7 +3064,7 @@ archive/issue_comments_041662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41662",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -3082,7 +3082,7 @@ archive/issue_comments_041663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41663",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -3106,7 +3106,7 @@ archive/issue_comments_041664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41664",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -3133,7 +3133,7 @@ archive/issue_comments_041665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41665",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -3151,7 +3151,7 @@ archive/issue_comments_041666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41666",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -3184,7 +3184,7 @@ archive/issue_comments_041667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41667",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -3205,7 +3205,7 @@ archive/issue_comments_041668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41668",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -3225,16 +3225,16 @@ Till this patch, lcalc was not require to build sage library. The code William w
 archive/issue_comments_041669.json:
 ```json
 {
-    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket5396/deps) by mpatel created at 2010-07-27 07:44:10\n\nUpdated `spkg/standard/deps` merged into 4.5.2.alpha1.",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket5396/deps) by @qed777 created at 2010-07-27 07:44:10\n\nUpdated `spkg/standard/deps` merged into 4.5.2.alpha1.",
     "created_at": "2010-07-27T07:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41669",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [deps](tarball://root/attachments/some-uuid/ticket5396/deps) by mpatel created at 2010-07-27 07:44:10
+Attachment [deps](tarball://root/attachments/some-uuid/ticket5396/deps) by @qed777 created at 2010-07-27 07:44:10
 
 Updated `spkg/standard/deps` merged into 4.5.2.alpha1.
 
@@ -3250,7 +3250,7 @@ archive/issue_comments_041670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41670",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -3263,16 +3263,16 @@ Diff of `spkg/standard/deps` from 4.5.2.alpha0 to 4.5.2.alpha1, minus #9456's  "
 archive/issue_comments_041671.json:
 ```json
 {
-    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket5396/deps.diff) by mpatel created at 2010-07-27 07:49:37\n\nI've attached the updated `deps` file included in Sage 4.5.2.alpha1.  Please see [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/db2c5f0aa386eebb#db2c5f0aa386eebb) for an explanation.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket5396/deps.diff) by @qed777 created at 2010-07-27 07:49:37\n\nI've attached the updated `deps` file included in Sage 4.5.2.alpha1.  Please see [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/db2c5f0aa386eebb#db2c5f0aa386eebb) for an explanation.",
     "created_at": "2010-07-27T07:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41671",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket5396/deps.diff) by mpatel created at 2010-07-27 07:49:37
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket5396/deps.diff) by @qed777 created at 2010-07-27 07:49:37
 
 I've attached the updated `deps` file included in Sage 4.5.2.alpha1.  Please see [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/db2c5f0aa386eebb#db2c5f0aa386eebb) for an explanation.
 
@@ -3288,7 +3288,7 @@ archive/issue_comments_041672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41672",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -3306,7 +3306,7 @@ archive/issue_comments_041673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41673",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -3334,7 +3334,7 @@ archive/issue_comments_041674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41674",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -3352,7 +3352,7 @@ archive/issue_comments_041675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41675",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3431,7 +3431,7 @@ archive/issue_comments_041677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41677",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3478,7 +3478,7 @@ archive/issue_comments_041678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41678",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 

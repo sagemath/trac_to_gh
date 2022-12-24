@@ -3,7 +3,7 @@
 archive/issues_009345.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jdemeyer\n\nSsage crashes if try to perform a rational_reconstruction with zero modulus and compiled fast algorithm\n\n\n```\nsage: rational_reconstruction(1,0)\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9345\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jdemeyer\n\nSsage crashes if try to perform a rational_reconstruction with zero modulus and compiled fast algorithm\n\n\n```\nsage: rational_reconstruction(1,0)\n\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9345\n\n",
     "created_at": "2010-06-26T10:42:28Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009345.json:
     "title": "Unhandled SIGFPE is rational_reconstruction if the modulus is zero",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9345",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 Ssage crashes if try to perform a rational_reconstruction with zero modulus and compiled fast algorithm
 
@@ -56,7 +56,7 @@ archive/issue_comments_088702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88702",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -69,16 +69,16 @@ Changing status from new to needs_review.
 archive/issue_comments_088703.json:
 ```json
 {
-    "body": "Attachment [trac_9345.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.patch) by lftabera created at 2010-06-26 10:51:25",
+    "body": "Attachment [trac_9345.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.patch) by @lftabera created at 2010-06-26 10:51:25",
     "created_at": "2010-06-26T10:51:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88703",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [trac_9345.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.patch) by lftabera created at 2010-06-26 10:51:25
+Attachment [trac_9345.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.patch) by @lftabera created at 2010-06-26 10:51:25
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_088706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88706",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_088707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88707",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_088708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88708",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -296,16 +296,16 @@ m= mm.prod(); mpq_rational_reconstruction(Q_row[j], Z_row[j], m.value) So I cann
 archive/issue_comments_088709.json:
 ```json
 {
-    "body": "Attachment [trac_9345.3.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.3.patch) by lftabera created at 2010-07-02 10:07:18\n\nprevious patches merged",
+    "body": "Attachment [trac_9345.3.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.3.patch) by @lftabera created at 2010-07-02 10:07:18\n\nprevious patches merged",
     "created_at": "2010-07-02T10:07:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88709",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [trac_9345.3.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.3.patch) by lftabera created at 2010-07-02 10:07:18
+Attachment [trac_9345.3.patch](tarball://root/attachments/some-uuid/ticket9345/trac_9345.3.patch) by @lftabera created at 2010-07-02 10:07:18
 
 previous patches merged
 
@@ -321,7 +321,7 @@ archive/issue_comments_088710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88710",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_088711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88711",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_088712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88712",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_088713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88713",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_088714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88714",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -408,16 +408,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_088715.json:
 ```json
 {
-    "body": "Attachment [trac-9345-sigs.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs.patch) by lftabera created at 2010-09-06 09:03:03\n\nWell, there was a similar problem in #9357 and I got this answer to the question of _sig_onm, _sig_off\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/e8317365bfe9e6e8/2a4148024500dfd2\n\nNote that if the exception is controlled by _sig, it will raise a RuntimeError instead of ZeroDivisionError. Moreover, with the patch I provided, all ocurrences of being zero are catched and never reaches the C functions.\n\nAnyway, I have written a second patch that add the _sig_on, _sig_off to the problematic functions, so if they have to be added, apply the following patches (in order):\n\ntrac_9345.3.patch\ntrac-9345-sigs.patch",
+    "body": "Attachment [trac-9345-sigs.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs.patch) by @lftabera created at 2010-09-06 09:03:03\n\nWell, there was a similar problem in #9357 and I got this answer to the question of _sig_onm, _sig_off\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/e8317365bfe9e6e8/2a4148024500dfd2\n\nNote that if the exception is controlled by _sig, it will raise a RuntimeError instead of ZeroDivisionError. Moreover, with the patch I provided, all ocurrences of being zero are catched and never reaches the C functions.\n\nAnyway, I have written a second patch that add the _sig_on, _sig_off to the problematic functions, so if they have to be added, apply the following patches (in order):\n\ntrac_9345.3.patch\ntrac-9345-sigs.patch",
     "created_at": "2010-09-06T09:03:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88715",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [trac-9345-sigs.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs.patch) by lftabera created at 2010-09-06 09:03:03
+Attachment [trac-9345-sigs.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs.patch) by @lftabera created at 2010-09-06 09:03:03
 
 Well, there was a similar problem in #9357 and I got this answer to the question of _sig_onm, _sig_off
 
@@ -442,7 +442,7 @@ archive/issue_comments_088716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88716",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -463,16 +463,16 @@ Well, the _sig_on and _sig_off are in the wrong places (_sig_on should be before
 archive/issue_comments_088717.json:
 ```json
 {
-    "body": "Attachment [trac-9345-sigs-jd.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs-jd.patch) by jdemeyer created at 2010-09-07 20:54:54\n\nBetter alternative to trac-9345-sigs.patch",
+    "body": "Attachment [trac-9345-sigs-jd.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs-jd.patch) by @jdemeyer created at 2010-09-07 20:54:54\n\nBetter alternative to trac-9345-sigs.patch",
     "created_at": "2010-09-07T20:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88717",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac-9345-sigs-jd.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs-jd.patch) by jdemeyer created at 2010-09-07 20:54:54
+Attachment [trac-9345-sigs-jd.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs-jd.patch) by @jdemeyer created at 2010-09-07 20:54:54
 
 Better alternative to trac-9345-sigs.patch
 
@@ -488,7 +488,7 @@ archive/issue_comments_088718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88718",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -504,16 +504,16 @@ I agree that it is overkill, but I'm fine with it.  I'm giving positive_review f
 archive/issue_comments_088719.json:
 ```json
 {
-    "body": "Attachment [trac-9345-sigs-jd-2.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs-jd-2.patch) by lftabera created at 2010-09-08 08:13:31\n\nI have corrected jdemeyer patch to also  include the sparse matrix case. The patch to review is trac-9345-sigs-jd-2.patch",
+    "body": "Attachment [trac-9345-sigs-jd-2.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs-jd-2.patch) by @lftabera created at 2010-09-08 08:13:31\n\nI have corrected jdemeyer patch to also  include the sparse matrix case. The patch to review is trac-9345-sigs-jd-2.patch",
     "created_at": "2010-09-08T08:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88719",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [trac-9345-sigs-jd-2.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs-jd-2.patch) by lftabera created at 2010-09-08 08:13:31
+Attachment [trac-9345-sigs-jd-2.patch](tarball://root/attachments/some-uuid/ticket9345/trac-9345-sigs-jd-2.patch) by @lftabera created at 2010-09-08 08:13:31
 
 I have corrected jdemeyer patch to also  include the sparse matrix case. The patch to review is trac-9345-sigs-jd-2.patch
 
@@ -529,7 +529,7 @@ archive/issue_comments_088720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88720",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -550,7 +550,7 @@ archive/issue_comments_088721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88721",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -568,7 +568,7 @@ archive/issue_comments_088722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88722",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -586,7 +586,7 @@ archive/issue_comments_088723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9345#issuecomment-88723",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

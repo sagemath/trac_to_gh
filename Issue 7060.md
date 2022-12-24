@@ -14,7 +14,7 @@ archive/issues_007060.json:
     "title": "notebook -- templating patch introduces numerous bugs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7060",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -45,7 +45,7 @@ archive/issue_comments_058416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7060#issuecomment-58416",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_058417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7060#issuecomment-58417",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_058418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7060#issuecomment-58418",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_058419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7060#issuecomment-58419",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

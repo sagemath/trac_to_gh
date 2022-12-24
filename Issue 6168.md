@@ -76,7 +76,7 @@ archive/issue_comments_049206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49206",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,16 +89,16 @@ Changing component from algebra to basic arithmetic.
 archive/issue_comments_049207.json:
 ```json
 {
-    "body": "Attachment [zmod_poly_set_fix.patch](tarball://root/attachments/some-uuid/ticket6168/zmod_poly_set_fix.patch) by was created at 2009-05-31 20:51:33",
+    "body": "Attachment [zmod_poly_set_fix.patch](tarball://root/attachments/some-uuid/ticket6168/zmod_poly_set_fix.patch) by @williamstein created at 2009-05-31 20:51:33",
     "created_at": "2009-05-31T20:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49207",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [zmod_poly_set_fix.patch](tarball://root/attachments/some-uuid/ticket6168/zmod_poly_set_fix.patch) by was created at 2009-05-31 20:51:33
+Attachment [zmod_poly_set_fix.patch](tarball://root/attachments/some-uuid/ticket6168/zmod_poly_set_fix.patch) by @williamstein created at 2009-05-31 20:51:33
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_049208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49208",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_049209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49209",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_049210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49210",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_049211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49211",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_049212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49212",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

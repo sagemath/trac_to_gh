@@ -3,7 +3,7 @@
 archive/issues_002329.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan mstreng jdemeyer\n\nThis patch adds support to solve norm equations via Pari. \n\nQuick summary: given an element `x` of any number field (even `QQ`), `x.is_norm(L)` will return `False` if `x` is not a norm from `L`, and if `x` is a norm from `L`, will return an element of `L` whose norm is `x`. \n\nAccording to the Pari documentation, these functions depend on GRH when `L/K` is not known to be Galois, and work independent of any such hypothesis otherwise (at least, that's what I got from reading the Pari manual). \n\nThe data used by Pari to compute whether or not an element is a norm can be computed once for each extension `L/K`. The function `pari_rnfnorm_data` computes exactly this, and its result can be passed to `is_norm` to avoid recomputing it each time in the case that `K != QQ`. If `K` is `QQ`, there is no need to save any such data -- the only data needed is that of `K.pari_bnf()`, which is used instead, and is already cached by `K`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2329\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan @mstreng @jdemeyer\n\nThis patch adds support to solve norm equations via Pari. \n\nQuick summary: given an element `x` of any number field (even `QQ`), `x.is_norm(L)` will return `False` if `x` is not a norm from `L`, and if `x` is a norm from `L`, will return an element of `L` whose norm is `x`. \n\nAccording to the Pari documentation, these functions depend on GRH when `L/K` is not known to be Galois, and work independent of any such hypothesis otherwise (at least, that's what I got from reading the Pari manual). \n\nThe data used by Pari to compute whether or not an element is a norm can be computed once for each extension `L/K`. The function `pari_rnfnorm_data` computes exactly this, and its result can be passed to `is_norm` to avoid recomputing it each time in the case that `K != QQ`. If `K` is `QQ`, there is no need to save any such data -- the only data needed is that of `K.pari_bnf()`, which is used instead, and is already cached by `K`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2329\n\n",
     "created_at": "2008-02-27T09:03:44Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_002329.json:
     "title": "[with patch, needs review] add interface to Pari's rnfisnorm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2329",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan mstreng jdemeyer
+CC:  @ncalexan @mstreng @jdemeyer
 
 This patch adds support to solve norm equations via Pari. 
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2329
 archive/issue_comments_015503.json:
 ```json
 {
-    "body": "Attachment [trac-2329.patch](tarball://root/attachments/some-uuid/ticket2329/trac-2329.patch) by craigcitro created at 2008-02-27 09:04:30",
+    "body": "Attachment [trac-2329.patch](tarball://root/attachments/some-uuid/ticket2329/trac-2329.patch) by @craigcitro created at 2008-02-27 09:04:30",
     "created_at": "2008-02-27T09:04:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15503",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2329.patch](tarball://root/attachments/some-uuid/ticket2329/trac-2329.patch) by craigcitro created at 2008-02-27 09:04:30
+Attachment [trac-2329.patch](tarball://root/attachments/some-uuid/ticket2329/trac-2329.patch) by @craigcitro created at 2008-02-27 09:04:30
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_015504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15504",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -82,16 +82,16 @@ I will gladly referee and have cc'ed myself.
 archive/issue_comments_015505.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2008-02-27T21:49:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15505",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_015506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15506",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_015507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15507",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_015508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15508",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_015509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15509",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -172,16 +172,16 @@ Added a second patch that addresses all of the above issues.
 archive/issue_comments_015510.json:
 ```json
 {
-    "body": "Attachment [trac-2329-pt2.patch](tarball://root/attachments/some-uuid/ticket2329/trac-2329-pt2.patch) by craigcitro created at 2008-04-06 23:09:23",
+    "body": "Attachment [trac-2329-pt2.patch](tarball://root/attachments/some-uuid/ticket2329/trac-2329-pt2.patch) by @craigcitro created at 2008-04-06 23:09:23",
     "created_at": "2008-04-06T23:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15510",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2329-pt2.patch](tarball://root/attachments/some-uuid/ticket2329/trac-2329-pt2.patch) by craigcitro created at 2008-04-06 23:09:23
+Attachment [trac-2329-pt2.patch](tarball://root/attachments/some-uuid/ticket2329/trac-2329-pt2.patch) by @craigcitro created at 2008-04-06 23:09:23
 
 
 
@@ -190,16 +190,16 @@ Attachment [trac-2329-pt2.patch](tarball://root/attachments/some-uuid/ticket2329
 archive/issue_comments_015511.json:
 ```json
 {
-    "body": "Attachment [2329-ccitro-pari-indexing-fixes-1.patch](tarball://root/attachments/some-uuid/ticket2329/2329-ccitro-pari-indexing-fixes-1.patch) by ncalexan created at 2008-04-15 06:23:00\n\nThe last patch separates out very useful fixes to the pari/gen.pyx that should be applied now.\n\nThe remainder of the functionality requires some more substantial changes and is a work in progress.",
+    "body": "Attachment [2329-ccitro-pari-indexing-fixes-1.patch](tarball://root/attachments/some-uuid/ticket2329/2329-ccitro-pari-indexing-fixes-1.patch) by @ncalexan created at 2008-04-15 06:23:00\n\nThe last patch separates out very useful fixes to the pari/gen.pyx that should be applied now.\n\nThe remainder of the functionality requires some more substantial changes and is a work in progress.",
     "created_at": "2008-04-15T06:23:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15511",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2329-ccitro-pari-indexing-fixes-1.patch](tarball://root/attachments/some-uuid/ticket2329/2329-ccitro-pari-indexing-fixes-1.patch) by ncalexan created at 2008-04-15 06:23:00
+Attachment [2329-ccitro-pari-indexing-fixes-1.patch](tarball://root/attachments/some-uuid/ticket2329/2329-ccitro-pari-indexing-fixes-1.patch) by @ncalexan created at 2008-04-15 06:23:00
 
 The last patch separates out very useful fixes to the pari/gen.pyx that should be applied now.
 
@@ -217,7 +217,7 @@ archive/issue_comments_015512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15512",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_015514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15514",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_015515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15515",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_015516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15516",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_015517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15517",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -330,16 +330,16 @@ The output of is_norm is True or False. With element=True, it also gives an elem
 archive/issue_comments_015518.json:
 ```json
 {
-    "body": "Attachment [trac_2329_rnfisnorm.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm.patch) by mstreng created at 2010-08-18 14:09:34\n\napply only this latest file",
+    "body": "Attachment [trac_2329_rnfisnorm.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm.patch) by @mstreng created at 2010-08-18 14:09:34\n\napply only this latest file",
     "created_at": "2010-08-18T14:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15518",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_2329_rnfisnorm.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm.patch) by mstreng created at 2010-08-18 14:09:34
+Attachment [trac_2329_rnfisnorm.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm.patch) by @mstreng created at 2010-08-18 14:09:34
 
 apply only this latest file
 
@@ -355,7 +355,7 @@ archive/issue_comments_015519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15519",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_015520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15520",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -401,7 +401,7 @@ archive/issue_comments_015521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15521",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_015522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15522",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_015523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15523",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_015525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15525",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -637,7 +637,7 @@ archive/issue_comments_015527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15527",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -681,7 +681,7 @@ archive/issue_comments_015528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15528",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -696,16 +696,16 @@ The bugs have been reported to pari [http://pari.math.u-bordeaux.fr/cgi-bin/bugr
 archive/issue_comments_015529.json:
 ```json
 {
-    "body": "Attachment [trac_2329_rnfisnorm2.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm2.patch) by mstreng created at 2010-12-03 15:28:43\n\napply only this latest file (works on sage 4.6.1.alpha2)",
+    "body": "Attachment [trac_2329_rnfisnorm2.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm2.patch) by @mstreng created at 2010-12-03 15:28:43\n\napply only this latest file (works on sage 4.6.1.alpha2)",
     "created_at": "2010-12-03T15:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15529",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_2329_rnfisnorm2.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm2.patch) by mstreng created at 2010-12-03 15:28:43
+Attachment [trac_2329_rnfisnorm2.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm2.patch) by @mstreng created at 2010-12-03 15:28:43
 
 apply only this latest file (works on sage 4.6.1.alpha2)
 
@@ -721,7 +721,7 @@ archive/issue_comments_015530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15530",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -739,7 +739,7 @@ archive/issue_comments_015531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15531",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -757,7 +757,7 @@ archive/issue_comments_015532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15532",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -777,7 +777,7 @@ archive/issue_comments_015533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15533",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -795,7 +795,7 @@ archive/issue_comments_015534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15534",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -854,16 +854,16 @@ I will post a patch for this in the next couple of days, and suggest other chang
 archive/issue_comments_015536.json:
 ```json
 {
-    "body": "Attachment [trac_2329_rnfisnorm3.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm3.patch) by mstreng created at 2010-12-08 13:48:58\n\napply only this latest file (works on sage 4.6.1.alpha2)",
+    "body": "Attachment [trac_2329_rnfisnorm3.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm3.patch) by @mstreng created at 2010-12-08 13:48:58\n\napply only this latest file (works on sage 4.6.1.alpha2)",
     "created_at": "2010-12-08T13:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15536",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_2329_rnfisnorm3.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm3.patch) by mstreng created at 2010-12-08 13:48:58
+Attachment [trac_2329_rnfisnorm3.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm3.patch) by @mstreng created at 2010-12-08 13:48:58
 
 apply only this latest file (works on sage 4.6.1.alpha2)
 
@@ -879,7 +879,7 @@ archive/issue_comments_015537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15537",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -903,7 +903,7 @@ archive/issue_comments_015538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15538",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -921,7 +921,7 @@ archive/issue_comments_015539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15539",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -939,7 +939,7 @@ archive/issue_comments_015540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15540",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -957,7 +957,7 @@ archive/issue_comments_015541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15541",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1000,7 +1000,7 @@ archive/issue_comments_015543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15543",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1108,7 +1108,7 @@ archive/issue_comments_015548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15548",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1126,7 +1126,7 @@ archive/issue_comments_015549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15549",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1144,7 +1144,7 @@ archive/issue_comments_015550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15550",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1162,7 +1162,7 @@ archive/issue_comments_015551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15551",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1175,16 +1175,16 @@ I moved the PARI part of this patch to #10677, so this patch now depends on #106
 archive/issue_comments_015552.json:
 ```json
 {
-    "body": "Attachment [trac_2329_rnfisnorm5.2.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm5.2.patch) by jdemeyer created at 2011-01-23 18:13:51\n\nApply only this, rebased to sage-4.6.2.alpha1 + #10677",
+    "body": "Attachment [trac_2329_rnfisnorm5.2.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm5.2.patch) by @jdemeyer created at 2011-01-23 18:13:51\n\nApply only this, rebased to sage-4.6.2.alpha1 + #10677",
     "created_at": "2011-01-23T18:13:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15552",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_2329_rnfisnorm5.2.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm5.2.patch) by jdemeyer created at 2011-01-23 18:13:51
+Attachment [trac_2329_rnfisnorm5.2.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm5.2.patch) by @jdemeyer created at 2011-01-23 18:13:51
 
 Apply only this, rebased to sage-4.6.2.alpha1 + #10677
 
@@ -1195,16 +1195,16 @@ Apply only this, rebased to sage-4.6.2.alpha1 + #10677
 archive/issue_comments_015553.json:
 ```json
 {
-    "body": "Attachment [trac_2329_rnfisnorm5.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm5.patch) by jdemeyer created at 2011-01-23 18:16:25\n\nApply only this, rebased to sage-4.6.2.alpha1 + #10677",
+    "body": "Attachment [trac_2329_rnfisnorm5.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm5.patch) by @jdemeyer created at 2011-01-23 18:16:25\n\nApply only this, rebased to sage-4.6.2.alpha1 + #10677",
     "created_at": "2011-01-23T18:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15553",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_2329_rnfisnorm5.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm5.patch) by jdemeyer created at 2011-01-23 18:16:25
+Attachment [trac_2329_rnfisnorm5.patch](tarball://root/attachments/some-uuid/ticket2329/trac_2329_rnfisnorm5.patch) by @jdemeyer created at 2011-01-23 18:16:25
 
 Apply only this, rebased to sage-4.6.2.alpha1 + #10677
 
@@ -1220,7 +1220,7 @@ archive/issue_comments_015554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15554",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1238,7 +1238,7 @@ archive/issue_comments_015555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15555",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1256,7 +1256,7 @@ archive/issue_comments_015556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15556",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1281,7 +1281,7 @@ archive/issue_comments_015557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15557",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1294,16 +1294,16 @@ Apply on top of previous patch
 archive/issue_comments_015558.json:
 ```json
 {
-    "body": "Attachment [2329_reviewer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_reviewer.patch) by jdemeyer created at 2011-02-11 08:29:25\n\nReplying to [comment:45 davidloeffler]:\n> Is that supposed to be `(\"y\")` or `(\"'y'\")` perhaps?\n\nNo, `'y` is correct.  I have added some comments to that code in the patch.\n\nBasically, the `'y` syntax is PARI's way of refering to a *variable* (as opposed to the *value* of a variable).  See the following `gp` session:\n\n\n```\ngp> y = 42\n%1 = 42\ngp> y\n%2 = 42\ngp> 'y\n%3 = y\ngp> subst(x^3, x, y)\n%4 = 74088\ngp> subst(x^3, x, 'y)\n%5 = y^3\n```\n",
+    "body": "Attachment [2329_reviewer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_reviewer.patch) by @jdemeyer created at 2011-02-11 08:29:25\n\nReplying to [comment:45 davidloeffler]:\n> Is that supposed to be `(\"y\")` or `(\"'y'\")` perhaps?\n\nNo, `'y` is correct.  I have added some comments to that code in the patch.\n\nBasically, the `'y` syntax is PARI's way of refering to a *variable* (as opposed to the *value* of a variable).  See the following `gp` session:\n\n\n```\ngp> y = 42\n%1 = 42\ngp> y\n%2 = 42\ngp> 'y\n%3 = y\ngp> subst(x^3, x, y)\n%4 = 74088\ngp> subst(x^3, x, 'y)\n%5 = y^3\n```\n",
     "created_at": "2011-02-11T08:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15558",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [2329_reviewer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_reviewer.patch) by jdemeyer created at 2011-02-11 08:29:25
+Attachment [2329_reviewer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_reviewer.patch) by @jdemeyer created at 2011-02-11 08:29:25
 
 Replying to [comment:45 davidloeffler]:
 > Is that supposed to be `("y")` or `("'y'")` perhaps?
@@ -1339,7 +1339,7 @@ archive/issue_comments_015559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15559",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1357,7 +1357,7 @@ archive/issue_comments_015560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15560",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1375,7 +1375,7 @@ archive/issue_comments_015561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15561",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1393,7 +1393,7 @@ archive/issue_comments_015562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15562",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1411,7 +1411,7 @@ archive/issue_comments_015563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15563",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1429,7 +1429,7 @@ archive/issue_comments_015564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15564",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1447,7 +1447,7 @@ archive/issue_comments_015565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15565",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1465,7 +1465,7 @@ archive/issue_comments_015566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15566",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1498,7 +1498,7 @@ archive/issue_comments_015567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15567",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1516,7 +1516,7 @@ archive/issue_comments_015568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15568",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1534,16 +1534,16 @@ I will test this patch on a 32-bit system and see what needs to be fixed.
 archive/issue_comments_015569.json:
 ```json
 {
-    "body": "Attachment [2329_selmer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_selmer.patch) by jdemeyer created at 2011-03-11 12:53:51\n\nAdditional patch",
+    "body": "Attachment [2329_selmer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_selmer.patch) by @jdemeyer created at 2011-03-11 12:53:51\n\nAdditional patch",
     "created_at": "2011-03-11T12:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15569",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [2329_selmer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_selmer.patch) by jdemeyer created at 2011-03-11 12:53:51
+Attachment [2329_selmer.patch](tarball://root/attachments/some-uuid/ticket2329/2329_selmer.patch) by @jdemeyer created at 2011-03-11 12:53:51
 
 Additional patch
 
@@ -1559,7 +1559,7 @@ archive/issue_comments_015570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15570",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1624,7 +1624,7 @@ archive/issue_comments_015572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15572",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1664,7 +1664,7 @@ archive/issue_comments_015574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15574",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1684,7 +1684,7 @@ archive/issue_comments_015575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15575",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1702,7 +1702,7 @@ archive/issue_comments_015576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15576",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

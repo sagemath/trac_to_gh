@@ -3,7 +3,7 @@
 archive/issues_003369.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nCC:  cwitty jason\n\nSee, e.g. discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/bcdc671d2791056e/e086a9d59ff4b9ba\n\nIssue created by migration from https://trac.sagemath.org/ticket/3369\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  cwitty @jasongrout\n\nSee, e.g. discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/bcdc671d2791056e/e086a9d59ff4b9ba\n\nIssue created by migration from https://trac.sagemath.org/ticket/3369\n\n",
     "created_at": "2008-06-05T00:08:53Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_003369.json:
     "title": "bool(x<0) should raise an error rather than return False",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3369",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
-CC:  cwitty jason
+CC:  cwitty @jasongrout
 
 See, e.g. discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/bcdc671d2791056e/e086a9d59ff4b9ba
 
@@ -39,7 +39,7 @@ archive/issue_comments_023573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3369#issuecomment-23573",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_023574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3369#issuecomment-23574",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_023575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3369#issuecomment-23575",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_023577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3369#issuecomment-23577",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

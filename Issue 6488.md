@@ -3,7 +3,7 @@
 archive/issues_006488.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mhansen mpatel\n\n...so I don't know how to use it. :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6488\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen @qed777\n\n...so I don't know how to use it. :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6488\n\n",
     "created_at": "2009-07-08T20:20:40Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_006488.json:
     "title": "\"sage -docbuild -help\" doesn't mention the --jsmath option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6488",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tba
 
-CC:  mhansen mpatel
+CC:  @mwhansen @qed777
 
 ...so I don't know how to use it. :)
 
@@ -39,7 +39,7 @@ archive/issue_comments_052463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6488#issuecomment-52463",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -52,16 +52,16 @@ Here's a patch.  Is it accurate (especially the part about having jsMath install
 archive/issue_comments_052464.json:
 ```json
 {
-    "body": "Attachment [trac_6488-jsmath.patch](tarball://root/attachments/some-uuid/ticket6488/trac_6488-jsmath.patch) by mpatel created at 2009-07-22 04:21:40\n\nI apologize for not posting a note here earlier, but the latest changeset at #6187 \"documents\" the `--jsmath` flag and several new command-line options for `sage -docbuild`.  Of course, that approach may not be right, but if it's OK, should we modify it, instead?",
+    "body": "Attachment [trac_6488-jsmath.patch](tarball://root/attachments/some-uuid/ticket6488/trac_6488-jsmath.patch) by @qed777 created at 2009-07-22 04:21:40\n\nI apologize for not posting a note here earlier, but the latest changeset at #6187 \"documents\" the `--jsmath` flag and several new command-line options for `sage -docbuild`.  Of course, that approach may not be right, but if it's OK, should we modify it, instead?",
     "created_at": "2009-07-22T04:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6488#issuecomment-52464",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6488-jsmath.patch](tarball://root/attachments/some-uuid/ticket6488/trac_6488-jsmath.patch) by mpatel created at 2009-07-22 04:21:40
+Attachment [trac_6488-jsmath.patch](tarball://root/attachments/some-uuid/ticket6488/trac_6488-jsmath.patch) by @qed777 created at 2009-07-22 04:21:40
 
 I apologize for not posting a note here earlier, but the latest changeset at #6187 "documents" the `--jsmath` flag and several new command-line options for `sage -docbuild`.  Of course, that approach may not be right, but if it's OK, should we modify it, instead?
 
@@ -77,7 +77,7 @@ archive/issue_comments_052465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6488#issuecomment-52465",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_052466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6488#issuecomment-52466",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_052467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6488#issuecomment-52467",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

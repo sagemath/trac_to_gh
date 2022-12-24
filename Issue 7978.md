@@ -14,7 +14,7 @@ archive/issues_007978.json:
     "title": "The file sage/combinat/affine.py contains lots of 'tab' characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7978",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 Assignee: sage-combinat
@@ -39,7 +39,7 @@ archive/issue_comments_069599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69599",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_work.
 archive/issue_comments_069600.json:
 ```json
 {
-    "body": "Attachment [trac_7978_fix_tabs_in_affine_py-jb.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_fix_tabs_in_affine_py-jb.patch) by jbandlow created at 2010-01-18 15:17:51\n\nOops.  This patch depends on some patches in the combinat stack.  (I suspect the 'crystal-cleanup' patches.)  The change is trivial, but I'll coordinate with the sage-combinat list before marking this ready for review.",
+    "body": "Attachment [trac_7978_fix_tabs_in_affine_py-jb.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_fix_tabs_in_affine_py-jb.patch) by @jbandlow created at 2010-01-18 15:17:51\n\nOops.  This patch depends on some patches in the combinat stack.  (I suspect the 'crystal-cleanup' patches.)  The change is trivial, but I'll coordinate with the sage-combinat list before marking this ready for review.",
     "created_at": "2010-01-18T15:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69600",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [trac_7978_fix_tabs_in_affine_py-jb.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_fix_tabs_in_affine_py-jb.patch) by jbandlow created at 2010-01-18 15:17:51
+Attachment [trac_7978_fix_tabs_in_affine_py-jb.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_fix_tabs_in_affine_py-jb.patch) by @jbandlow created at 2010-01-18 15:17:51
 
 Oops.  This patch depends on some patches in the combinat stack.  (I suspect the 'crystal-cleanup' patches.)  The change is trivial, but I'll coordinate with the sage-combinat list before marking this ready for review.
 
@@ -72,16 +72,16 @@ Oops.  This patch depends on some patches in the combinat stack.  (I suspect the
 archive/issue_comments_069601.json:
 ```json
 {
-    "body": "Attachment [trac_7978_crystal_cleanup-as.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_crystal_cleanup-as.patch) by aschilling created at 2010-01-25 06:27:16",
+    "body": "Attachment [trac_7978_crystal_cleanup-as.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_crystal_cleanup-as.patch) by @anneschilling created at 2010-01-25 06:27:16",
     "created_at": "2010-01-25T06:27:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69601",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [trac_7978_crystal_cleanup-as.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_crystal_cleanup-as.patch) by aschilling created at 2010-01-25 06:27:16
+Attachment [trac_7978_crystal_cleanup-as.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_crystal_cleanup-as.patch) by @anneschilling created at 2010-01-25 06:27:16
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_069602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69602",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_069603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69603",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_069604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69604",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_069605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69605",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_069606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69606",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -180,16 +180,16 @@ Updated patch updates one doctest.
 archive/issue_comments_069607.json:
 ```json
 {
-    "body": "Attachment [trac_7978_crystal_cleanup-as.2.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_crystal_cleanup-as.2.patch) by bump created at 2010-02-02 14:45:40\n\nI checked that the patch passes sage --testall, either with or without #8028.\n\nI checked that it does not break latex method for classical crystals or metapost method for fastcrystals. I think the latex changes are specific to\naffine crystals.\n\nThe patch does not seem to break anything, and fixes some problems. I recommend merging it.",
+    "body": "Attachment [trac_7978_crystal_cleanup-as.2.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_crystal_cleanup-as.2.patch) by @dwbump created at 2010-02-02 14:45:40\n\nI checked that the patch passes sage --testall, either with or without #8028.\n\nI checked that it does not break latex method for classical crystals or metapost method for fastcrystals. I think the latex changes are specific to\naffine crystals.\n\nThe patch does not seem to break anything, and fixes some problems. I recommend merging it.",
     "created_at": "2010-02-02T14:45:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69607",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_7978_crystal_cleanup-as.2.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_crystal_cleanup-as.2.patch) by bump created at 2010-02-02 14:45:40
+Attachment [trac_7978_crystal_cleanup-as.2.patch](tarball://root/attachments/some-uuid/ticket7978/trac_7978_crystal_cleanup-as.2.patch) by @dwbump created at 2010-02-02 14:45:40
 
 I checked that the patch passes sage --testall, either with or without #8028.
 
@@ -210,7 +210,7 @@ archive/issue_comments_069608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69608",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_069609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69609",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_069610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69610",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_069611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69611",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_069612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7978#issuecomment-69612",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

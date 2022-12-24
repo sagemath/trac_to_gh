@@ -101,7 +101,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/511
 archive/issue_comments_002582.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2007-08-29T12:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/511",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_002582.json:
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -149,7 +149,7 @@ archive/issue_comments_002584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/511#issuecomment-2584",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_002586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/511#issuecomment-2586",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_002587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/511#issuecomment-2587",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

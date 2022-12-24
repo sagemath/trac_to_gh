@@ -3,7 +3,7 @@
 archive/issues_006847.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  eviatarbach\n\nCurrently, images included in the Sage documentation must be generated separately from the docbuild process itself (cf. #6685).  For the sake of consistency, convenience, testing, etc., we should have an option to automate this process, particularly for the reference manual.\n\nPlease see the discussion at #6685.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6847\n\n",
+    "body": "Assignee: tba\n\nCC:  @eviatarbach\n\nCurrently, images included in the Sage documentation must be generated separately from the docbuild process itself (cf. #6685).  For the sake of consistency, convenience, testing, etc., we should have an option to automate this process, particularly for the reference manual.\n\nPlease see the discussion at #6685.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6847\n\n",
     "created_at": "2009-08-30T13:00:09Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_006847.json:
     "title": "Auto-generate and insert images into the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6847",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tba
 
-CC:  eviatarbach
+CC:  @eviatarbach
 
 Currently, images included in the Sage documentation must be generated separately from the docbuild process itself (cf. #6685).  For the sake of consistency, convenience, testing, etc., we should have an option to automate this process, particularly for the reference manual.
 
@@ -42,7 +42,7 @@ archive/issue_comments_056466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6847#issuecomment-56466",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_056467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6847#issuecomment-56467",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_056468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6847#issuecomment-56468",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_056469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6847#issuecomment-56469",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_056470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6847#issuecomment-56470",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_056471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6847#issuecomment-56471",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_056472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6847#issuecomment-56472",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

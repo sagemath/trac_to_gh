@@ -14,7 +14,7 @@ archive/issues_003675.json:
     "title": "upgrade to valgrind 3.3.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3675",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: mabshoff
@@ -95,7 +95,7 @@ archive/issue_comments_026017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3675#issuecomment-26017",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

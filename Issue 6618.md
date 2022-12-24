@@ -3,7 +3,7 @@
 archive/issues_006618.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat rbeezer fidelbarrera jhpalmieri chapoton\n\nKeywords: view, pdflatex, tightpage, tikz\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6618\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @rbeezer fidelbarrera @jhpalmieri @fchapoton\n\nKeywords: view, pdflatex, tightpage, tikz\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6618\n\n",
     "created_at": "2009-07-25T14:52:25Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_006618.json:
     "title": "Follow up on #6591: make tightpage work even in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6618",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat rbeezer fidelbarrera jhpalmieri chapoton
+CC:  sage-combinat @rbeezer fidelbarrera @jhpalmieri @fchapoton
 
 Keywords: view, pdflatex, tightpage, tikz
 
@@ -41,7 +41,7 @@ archive/issue_comments_054224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54224",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_054225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54225",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_054226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54226",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_054227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54227",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_054228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54228",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_054229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54229",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_054230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54230",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_054231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54231",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_054232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54232",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -262,16 +262,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_054233.json:
 ```json
 {
-    "body": "Attachment [trac_6618_view_viewer_tightpage-followup-nt.patch](tarball://root/attachments/some-uuid/ticket6618/trac_6618_view_viewer_tightpage-followup-nt.patch) by mhansen created at 2012-08-04 04:24:49\n\nI've rebased this patch and made it so that engine is set to 'pdflatex' if tightpage=True is enabled.",
+    "body": "Attachment [trac_6618_view_viewer_tightpage-followup-nt.patch](tarball://root/attachments/some-uuid/ticket6618/trac_6618_view_viewer_tightpage-followup-nt.patch) by @mwhansen created at 2012-08-04 04:24:49\n\nI've rebased this patch and made it so that engine is set to 'pdflatex' if tightpage=True is enabled.",
     "created_at": "2012-08-04T04:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54233",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6618_view_viewer_tightpage-followup-nt.patch](tarball://root/attachments/some-uuid/ticket6618/trac_6618_view_viewer_tightpage-followup-nt.patch) by mhansen created at 2012-08-04 04:24:49
+Attachment [trac_6618_view_viewer_tightpage-followup-nt.patch](tarball://root/attachments/some-uuid/ticket6618/trac_6618_view_viewer_tightpage-followup-nt.patch) by @mwhansen created at 2012-08-04 04:24:49
 
 I've rebased this patch and made it so that engine is set to 'pdflatex' if tightpage=True is enabled.
 
@@ -287,7 +287,7 @@ archive/issue_comments_054234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54234",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_054235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54235",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_054236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54236",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_054237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54237",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_054238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54238",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_054239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54239",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_054240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54240",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_054241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6618#issuecomment-54241",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

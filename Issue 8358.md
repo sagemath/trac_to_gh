@@ -3,7 +3,7 @@
 archive/issues_008358.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  was wuthrich\n\nThere is an example in number_field.py which says it factors Gaussian integers however units are not considered, which might confuse the\nuser.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8358\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein @categorie\n\nThere is an example in number_field.py which says it factors Gaussian integers however units are not considered, which might confuse the\nuser.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8358\n\n",
     "created_at": "2010-02-25T08:22:30Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_008358.json:
     "title": "improved documentation of number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8358",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  was wuthrich
+CC:  @williamstein @categorie
 
 There is an example in number_field.py which says it factors Gaussian integers however units are not considered, which might confuse the
 user.
@@ -40,7 +40,7 @@ archive/issue_comments_074675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8358#issuecomment-74675",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -53,16 +53,16 @@ Changing keywords from "" to "Gaussian integers".
 archive/issue_comments_074676.json:
 ```json
 {
-    "body": "Attachment [trac_8358.patch](tarball://root/attachments/some-uuid/ticket8358/trac_8358.patch) by zimmerma created at 2010-02-25 08:25:06",
+    "body": "Attachment [trac_8358.patch](tarball://root/attachments/some-uuid/ticket8358/trac_8358.patch) by @zimmermann6 created at 2010-02-25 08:25:06",
     "created_at": "2010-02-25T08:25:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8358#issuecomment-74676",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_8358.patch](tarball://root/attachments/some-uuid/ticket8358/trac_8358.patch) by zimmerma created at 2010-02-25 08:25:06
+Attachment [trac_8358.patch](tarball://root/attachments/some-uuid/ticket8358/trac_8358.patch) by @zimmermann6 created at 2010-02-25 08:25:06
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_074677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8358#issuecomment-74677",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -89,16 +89,16 @@ Changing status from new to needs_review.
 archive/issue_comments_074678.json:
 ```json
 {
-    "body": "Changing assignee from davidloeffler to zimmerma.",
+    "body": "Changing assignee from @loefflerd to @zimmermann6.",
     "created_at": "2010-02-25T08:25:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8358#issuecomment-74678",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Changing assignee from davidloeffler to zimmerma.
+Changing assignee from @loefflerd to @zimmermann6.
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_074679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8358#issuecomment-74679",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -129,16 +129,16 @@ Paul
 archive/issue_comments_074680.json:
 ```json
 {
-    "body": "Changing assignee from zimmerma to davidloeffler.",
+    "body": "Changing assignee from @zimmermann6 to @loefflerd.",
     "created_at": "2010-02-26T09:40:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8358#issuecomment-74680",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Changing assignee from zimmerma to davidloeffler.
+Changing assignee from @zimmermann6 to @loefflerd.
 
 
 
@@ -152,7 +152,7 @@ archive/issue_comments_074681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8358#issuecomment-74681",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_074682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8358#issuecomment-74682",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004495.json:
     "title": "[with algorithm, needs implementation] weight distribution for binary codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4495",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tbd
@@ -45,7 +45,7 @@ archive/issue_comments_033241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33241",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -106,16 +106,16 @@ Michael
 archive/issue_comments_033243.json:
 ```json
 {
-    "body": "Changing assignee from tbd to rlm.",
+    "body": "Changing assignee from tbd to @rlmill.",
     "created_at": "2008-12-21T05:42:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33243",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to rlm.
+Changing assignee from tbd to @rlmill.
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_033244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33244",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_033245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33245",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_033246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33246",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -226,16 +226,16 @@ sage: timeit('C.spectrum()')
 archive/issue_comments_033247.json:
 ```json
 {
-    "body": "Attachment [trac_4495-weight_dist_binary.patch](tarball://root/attachments/some-uuid/ticket4495/trac_4495-weight_dist_binary.patch) by wdj created at 2008-12-24 22:18:07\n\nThis is a great patch. It applies cleanly and I've done lots of testing, which it passes. \n\nI have a question though and this is what the Wall time on the following test means?\n\n\nfor i in range(20):\n    C = RandomLinearCode(100, 25, GF(2))\n    time s1 = C.spectrum()             \n    time s2 = C.spectrum(method=\"gap\") \n    s1 == s2       \n\n          \t\n\nTime: CPU 0.84 s, Wall: 0.84 s\nTime: CPU 0.94 s, Wall: 5.05 s\nTrue\nTime: CPU 0.87 s, Wall: 0.90 s\nTime: CPU 1.05 s, Wall: 4.99 s\nTrue\nTime: CPU 0.87 s, Wall: 0.90 s\nTime: CPU 0.95 s, Wall: 4.94 s\nTrue\nTime: CPU 0.84 s, Wall: 0.86 s\nTime: CPU 0.96 s, Wall: 4.96 s\nTrue\nTime: CPU 0.88 s, Wall: 0.88 s\nTime: CPU 0.98 s, Wall: 4.98 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 0.92 s, Wall: 4.69 s\nTrue\nTime: CPU 0.85 s, Wall: 0.86 s\nTime: CPU 0.84 s, Wall: 4.76 s\nTrue\nTime: CPU 0.84 s, Wall: 0.84 s\nTime: CPU 0.98 s, Wall: 5.01 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 0.94 s, Wall: 4.97 s\nTrue\nTime: CPU 0.88 s, Wall: 0.89 s\nTime: CPU 0.94 s, Wall: 4.95 s\nTrue\nTime: CPU 0.85 s, Wall: 0.86 s\nTime: CPU 0.93 s, Wall: 4.99 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 1.00 s, Wall: 4.93 s\nTrue\nTime: CPU 0.93 s, Wall: 0.95 s\nTime: CPU 1.03 s, Wall: 4.97 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 1.04 s, Wall: 4.92 s\nTrue\nTime: CPU 0.84 s, Wall: 0.85 s\nTime: CPU 1.02 s, Wall: 5.00 s\nTrue\nTime: CPU 0.86 s, Wall: 0.87 s\nTime: CPU 0.85 s, Wall: 4.66 s\nTrue\nTime: CPU 0.85 s, Wall: 0.86 s\nTime: CPU 0.83 s, Wall: 4.59 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 0.86 s, Wall: 4.75 s\nTrue\nTime: CPU 0.91 s, Wall: 0.91 s\nTime: CPU 0.90 s, Wall: 4.73 s\nTrue\nTime: CPU 0.91 s, Wall: 0.92 s\nTime: CPU 0.88 s, Wall: 4.71 s\nTrue\n\n\nI wonder if this means that GAP's kernel computation (method=\"gap\" is the slowest of the three) beats binary some percentage of the time but GAP's interface takes a long time to parse that information back to Sage (via pexpect and whatever fiddling GAP does), as indicated by the Wall time?",
+    "body": "Attachment [trac_4495-weight_dist_binary.patch](tarball://root/attachments/some-uuid/ticket4495/trac_4495-weight_dist_binary.patch) by @wdjoyner created at 2008-12-24 22:18:07\n\nThis is a great patch. It applies cleanly and I've done lots of testing, which it passes. \n\nI have a question though and this is what the Wall time on the following test means?\n\n\nfor i in range(20):\n    C = RandomLinearCode(100, 25, GF(2))\n    time s1 = C.spectrum()             \n    time s2 = C.spectrum(method=\"gap\") \n    s1 == s2       \n\n          \t\n\nTime: CPU 0.84 s, Wall: 0.84 s\nTime: CPU 0.94 s, Wall: 5.05 s\nTrue\nTime: CPU 0.87 s, Wall: 0.90 s\nTime: CPU 1.05 s, Wall: 4.99 s\nTrue\nTime: CPU 0.87 s, Wall: 0.90 s\nTime: CPU 0.95 s, Wall: 4.94 s\nTrue\nTime: CPU 0.84 s, Wall: 0.86 s\nTime: CPU 0.96 s, Wall: 4.96 s\nTrue\nTime: CPU 0.88 s, Wall: 0.88 s\nTime: CPU 0.98 s, Wall: 4.98 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 0.92 s, Wall: 4.69 s\nTrue\nTime: CPU 0.85 s, Wall: 0.86 s\nTime: CPU 0.84 s, Wall: 4.76 s\nTrue\nTime: CPU 0.84 s, Wall: 0.84 s\nTime: CPU 0.98 s, Wall: 5.01 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 0.94 s, Wall: 4.97 s\nTrue\nTime: CPU 0.88 s, Wall: 0.89 s\nTime: CPU 0.94 s, Wall: 4.95 s\nTrue\nTime: CPU 0.85 s, Wall: 0.86 s\nTime: CPU 0.93 s, Wall: 4.99 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 1.00 s, Wall: 4.93 s\nTrue\nTime: CPU 0.93 s, Wall: 0.95 s\nTime: CPU 1.03 s, Wall: 4.97 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 1.04 s, Wall: 4.92 s\nTrue\nTime: CPU 0.84 s, Wall: 0.85 s\nTime: CPU 1.02 s, Wall: 5.00 s\nTrue\nTime: CPU 0.86 s, Wall: 0.87 s\nTime: CPU 0.85 s, Wall: 4.66 s\nTrue\nTime: CPU 0.85 s, Wall: 0.86 s\nTime: CPU 0.83 s, Wall: 4.59 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 0.86 s, Wall: 4.75 s\nTrue\nTime: CPU 0.91 s, Wall: 0.91 s\nTime: CPU 0.90 s, Wall: 4.73 s\nTrue\nTime: CPU 0.91 s, Wall: 0.92 s\nTime: CPU 0.88 s, Wall: 4.71 s\nTrue\n\n\nI wonder if this means that GAP's kernel computation (method=\"gap\" is the slowest of the three) beats binary some percentage of the time but GAP's interface takes a long time to parse that information back to Sage (via pexpect and whatever fiddling GAP does), as indicated by the Wall time?",
     "created_at": "2008-12-24T22:18:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33247",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4495-weight_dist_binary.patch](tarball://root/attachments/some-uuid/ticket4495/trac_4495-weight_dist_binary.patch) by wdj created at 2008-12-24 22:18:07
+Attachment [trac_4495-weight_dist_binary.patch](tarball://root/attachments/some-uuid/ticket4495/trac_4495-weight_dist_binary.patch) by @wdjoyner created at 2008-12-24 22:18:07
 
 This is a great patch. It applies cleanly and I've done lots of testing, which it passes. 
 

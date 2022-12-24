@@ -3,7 +3,7 @@
 archive/issues_009500.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nMake this work:\n\n\n```\n\n            sage: R.<x,y> = QQ[]\n            sage: I = R.ideal([x^2 + 1, y^3 - 2])\n            sage: S.<i,cuberoot> = R.quotient(I)\n            sage: 1/(1+i)\n            -1/2*i + 1/2\n\n        Confirm via symbolic computation::\n        \n            sage: 1/(1+sqrt(-1))\n            -1/2*I + 1/2\n\n        Another more complicated quotient::\n        \n            sage: b = 1/(i+cuberoot); b\n            1/5*i*cuberoot^2 - 2/5*i*cuberoot + 2/5*cuberoot^2 - 1/5*i + 1/5*cuberoot - 2/5\n            sage: b*(i+cuberoot)\n            1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9500\n\n",
+    "body": "Assignee: @aghitza\n\nMake this work:\n\n\n```\n\n            sage: R.<x,y> = QQ[]\n            sage: I = R.ideal([x^2 + 1, y^3 - 2])\n            sage: S.<i,cuberoot> = R.quotient(I)\n            sage: 1/(1+i)\n            -1/2*i + 1/2\n\n        Confirm via symbolic computation::\n        \n            sage: 1/(1+sqrt(-1))\n            -1/2*I + 1/2\n\n        Another more complicated quotient::\n        \n            sage: b = 1/(i+cuberoot); b\n            1/5*i*cuberoot^2 - 2/5*i*cuberoot + 2/5*cuberoot^2 - 1/5*i + 1/5*cuberoot - 2/5\n            sage: b*(i+cuberoot)\n            1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9500\n\n",
     "created_at": "2010-07-14T17:08:14Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009500.json:
     "title": "implement inversion of elements in a (more) general quotient ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9500",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Make this work:
 
@@ -60,7 +60,7 @@ archive/issue_comments_091227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9500#issuecomment-91227",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,16 +73,16 @@ Relevant benchmarks: http://wiki.sagemath.org/days23.5/projects/relative_number_
 archive/issue_comments_091228.json:
 ```json
 {
-    "body": "Attachment [trac_9500.patch](tarball://root/attachments/some-uuid/ticket9500/trac_9500.patch) by was created at 2010-07-14 20:29:36",
+    "body": "Attachment [trac_9500.patch](tarball://root/attachments/some-uuid/ticket9500/trac_9500.patch) by @williamstein created at 2010-07-14 20:29:36",
     "created_at": "2010-07-14T20:29:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9500#issuecomment-91228",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9500.patch](tarball://root/attachments/some-uuid/ticket9500/trac_9500.patch) by was created at 2010-07-14 20:29:36
+Attachment [trac_9500.patch](tarball://root/attachments/some-uuid/ticket9500/trac_9500.patch) by @williamstein created at 2010-07-14 20:29:36
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_091229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9500#issuecomment-91229",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_091230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9500#issuecomment-91230",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_091231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9500#issuecomment-91231",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_091232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9500#issuecomment-91232",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_091233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9500#issuecomment-91233",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_091234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9500#issuecomment-91234",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

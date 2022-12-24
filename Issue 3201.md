@@ -14,7 +14,7 @@ archive/issues_003201.json:
     "title": "notebook -- bug in parsing \\ at end of line in %latex mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3201",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -51,7 +51,7 @@ archive/issue_comments_022117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3201#issuecomment-22117",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_022118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3201#issuecomment-22118",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -92,16 +92,16 @@ in worksheet.py.  This should be cleaner to fix after some other changes I have 
 archive/issue_comments_022119.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-19T22:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3201#issuecomment-22119",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_022120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3201#issuecomment-22120",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -128,16 +128,16 @@ Changing status from new to assigned.
 archive/issue_comments_022121.json:
 ```json
 {
-    "body": "Attachment [trac_3201.patch](tarball://root/attachments/some-uuid/ticket3201/trac_3201.patch) by mhansen created at 2009-01-22 07:24:05",
+    "body": "Attachment [trac_3201.patch](tarball://root/attachments/some-uuid/ticket3201/trac_3201.patch) by @mwhansen created at 2009-01-22 07:24:05",
     "created_at": "2009-01-22T07:24:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3201#issuecomment-22121",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3201.patch](tarball://root/attachments/some-uuid/ticket3201/trac_3201.patch) by mhansen created at 2009-01-22 07:24:05
+Attachment [trac_3201.patch](tarball://root/attachments/some-uuid/ticket3201/trac_3201.patch) by @mwhansen created at 2009-01-22 07:24:05
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_022122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3201#issuecomment-22122",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_022123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3201#issuecomment-22123",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_022124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3201#issuecomment-22124",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000643.json:
     "title": "notebook -- fix space issues with the top bar.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/643",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -59,7 +59,7 @@ archive/issue_comments_003318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3318",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -72,16 +72,16 @@ timothy clemans wrote this example, which seems to be a good idea -- it uses jav
 archive/issue_comments_003319.json:
 ```json
 {
-    "body": "Attachment [example.html](tarball://root/attachments/some-uuid/ticket643/example.html) by mhansen created at 2007-09-21 03:54:13",
+    "body": "Attachment [example.html](tarball://root/attachments/some-uuid/ticket643/example.html) by @mwhansen created at 2007-09-21 03:54:13",
     "created_at": "2007-09-21T03:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3319",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [example.html](tarball://root/attachments/some-uuid/ticket643/example.html) by mhansen created at 2007-09-21 03:54:13
+Attachment [example.html](tarball://root/attachments/some-uuid/ticket643/example.html) by @mwhansen created at 2007-09-21 03:54:13
 
 
 
@@ -90,16 +90,16 @@ Attachment [example.html](tarball://root/attachments/some-uuid/ticket643/example
 archive/issue_comments_003320.json:
 ```json
 {
-    "body": "Attachment [643.patch](tarball://root/attachments/some-uuid/ticket643/643.patch) by mhansen created at 2007-09-21 03:54:40",
+    "body": "Attachment [643.patch](tarball://root/attachments/some-uuid/ticket643/643.patch) by @mwhansen created at 2007-09-21 03:54:40",
     "created_at": "2007-09-21T03:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3320",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [643.patch](tarball://root/attachments/some-uuid/ticket643/643.patch) by mhansen created at 2007-09-21 03:54:40
+Attachment [643.patch](tarball://root/attachments/some-uuid/ticket643/643.patch) by @mwhansen created at 2007-09-21 03:54:40
 
 
 
@@ -167,7 +167,7 @@ archive/issue_comments_003324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3324",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_003325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3325",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_003328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3328",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -259,16 +259,16 @@ Changing status from reopened to new.
 archive/issue_comments_003329.json:
 ```json
 {
-    "body": "Changing assignee from boothby to was.",
+    "body": "Changing assignee from boothby to @williamstein.",
     "created_at": "2007-09-21T18:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3329",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from boothby to was.
+Changing assignee from boothby to @williamstein.
 
 
 
@@ -277,16 +277,16 @@ Changing assignee from boothby to was.
 archive/issue_comments_003330.json:
 ```json
 {
-    "body": "Attachment [643.3.patch](tarball://root/attachments/some-uuid/ticket643/643.3.patch) by was created at 2007-09-21 18:56:54",
+    "body": "Attachment [643.3.patch](tarball://root/attachments/some-uuid/ticket643/643.3.patch) by @williamstein created at 2007-09-21 18:56:54",
     "created_at": "2007-09-21T18:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3330",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [643.3.patch](tarball://root/attachments/some-uuid/ticket643/643.3.patch) by was created at 2007-09-21 18:56:54
+Attachment [643.3.patch](tarball://root/attachments/some-uuid/ticket643/643.3.patch) by @williamstein created at 2007-09-21 18:56:54
 
 
 
@@ -300,7 +300,7 @@ archive/issue_comments_003331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3331",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -315,16 +315,16 @@ It looks like there is a fair amount of cleaning up to do.
 archive/issue_comments_003332.json:
 ```json
 {
-    "body": "Attachment [css.patch](tarball://root/attachments/some-uuid/ticket643/css.patch) by mhansen created at 2007-10-03 06:50:29",
+    "body": "Attachment [css.patch](tarball://root/attachments/some-uuid/ticket643/css.patch) by @mwhansen created at 2007-10-03 06:50:29",
     "created_at": "2007-10-03T06:50:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3332",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [css.patch](tarball://root/attachments/some-uuid/ticket643/css.patch) by mhansen created at 2007-10-03 06:50:29
+Attachment [css.patch](tarball://root/attachments/some-uuid/ticket643/css.patch) by @mwhansen created at 2007-10-03 06:50:29
 
 
 
@@ -333,16 +333,16 @@ Attachment [css.patch](tarball://root/attachments/some-uuid/ticket643/css.patch)
 archive/issue_comments_003333.json:
 ```json
 {
-    "body": "Attachment [toggle.2.patch](tarball://root/attachments/some-uuid/ticket643/toggle.2.patch) by mhansen created at 2007-10-04 06:57:24\n\nAccidental upload",
+    "body": "Attachment [toggle.2.patch](tarball://root/attachments/some-uuid/ticket643/toggle.2.patch) by @mwhansen created at 2007-10-04 06:57:24\n\nAccidental upload",
     "created_at": "2007-10-04T06:57:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3333",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [toggle.2.patch](tarball://root/attachments/some-uuid/ticket643/toggle.2.patch) by mhansen created at 2007-10-04 06:57:24
+Attachment [toggle.2.patch](tarball://root/attachments/some-uuid/ticket643/toggle.2.patch) by @mwhansen created at 2007-10-04 06:57:24
 
 Accidental upload
 
@@ -353,16 +353,16 @@ Accidental upload
 archive/issue_comments_003334.json:
 ```json
 {
-    "body": "Attachment [toggle.patch](tarball://root/attachments/some-uuid/ticket643/toggle.patch) by was created at 2007-10-04 19:02:45",
+    "body": "Attachment [toggle.patch](tarball://root/attachments/some-uuid/ticket643/toggle.patch) by @williamstein created at 2007-10-04 19:02:45",
     "created_at": "2007-10-04T19:02:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3334",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [toggle.patch](tarball://root/attachments/some-uuid/ticket643/toggle.patch) by was created at 2007-10-04 19:02:45
+Attachment [toggle.patch](tarball://root/attachments/some-uuid/ticket643/toggle.patch) by @williamstein created at 2007-10-04 19:02:45
 
 
 
@@ -376,7 +376,7 @@ archive/issue_comments_003335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3335",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_003336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3336",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_003337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/643#issuecomment-3337",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

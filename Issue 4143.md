@@ -14,7 +14,7 @@ archive/issues_004143.json:
     "title": "injvar() docstring should be the same as inject_variables()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4143",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: tbd
@@ -54,7 +54,7 @@ archive/issue_comments_030082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4143#issuecomment-30082",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -70,16 +70,16 @@ I vote for deprecation of `injvar`.
 archive/issue_comments_030083.json:
 ```json
 {
-    "body": "Attachment [4143.patch](tarball://root/attachments/some-uuid/ticket4143/4143.patch) by jhpalmieri created at 2008-12-10 21:07:41\n\nThis patch deprecates injvar.",
+    "body": "Attachment [4143.patch](tarball://root/attachments/some-uuid/ticket4143/4143.patch) by @jhpalmieri created at 2008-12-10 21:07:41\n\nThis patch deprecates injvar.",
     "created_at": "2008-12-10T21:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4143#issuecomment-30083",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [4143.patch](tarball://root/attachments/some-uuid/ticket4143/4143.patch) by jhpalmieri created at 2008-12-10 21:07:41
+Attachment [4143.patch](tarball://root/attachments/some-uuid/ticket4143/4143.patch) by @jhpalmieri created at 2008-12-10 21:07:41
 
 This patch deprecates injvar.
 
@@ -95,7 +95,7 @@ archive/issue_comments_030084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4143#issuecomment-30084",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

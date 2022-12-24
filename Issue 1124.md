@@ -3,7 +3,7 @@
 archive/issues_001124.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: zero_subspace\n\nHere is a bug in modular symbols code:\n\n``` \nsage: M=ModularSymbols(11,2,1)\nsage: M.complement()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/net/mathserv/1/home/syazdani/research/programs/<ipython console> in <module>()\n\n/home/syazdani/sage/local/lib/python2.5/site-packages/sage/modular/hecke/ambient_module.py in complement(self)\n     96         Return the largest Hecke-stable complement of this space.\n     97         \"\"\"\n---> 98         return self.zero_subspace()\n     99\n    100     def decomposition_matrix(self):\n\n<type 'exceptions.AttributeError'>: 'ModularSymbolsAmbient_wt2_g0' object has no attribute 'zero_subspace'\n```\n\n\nThe problem is that zero_subspace is not implemented. Although zero_submodule is.\nOne possible fix is to change self.zero_subspace to self.zero_submodule(). That's the included patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1124\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: zero_subspace\n\nHere is a bug in modular symbols code:\n\n``` \nsage: M=ModularSymbols(11,2,1)\nsage: M.complement()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/net/mathserv/1/home/syazdani/research/programs/<ipython console> in <module>()\n\n/home/syazdani/sage/local/lib/python2.5/site-packages/sage/modular/hecke/ambient_module.py in complement(self)\n     96         Return the largest Hecke-stable complement of this space.\n     97         \"\"\"\n---> 98         return self.zero_subspace()\n     99\n    100     def decomposition_matrix(self):\n\n<type 'exceptions.AttributeError'>: 'ModularSymbolsAmbient_wt2_g0' object has no attribute 'zero_subspace'\n```\n\n\nThe problem is that zero_subspace is not implemented. Although zero_submodule is.\nOne possible fix is to change self.zero_subspace to self.zero_submodule(). That's the included patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1124\n\n",
     "created_at": "2007-11-07T18:07:46Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_001124.json:
     "title": "ModularSymbol.complement crashes on full subspaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1124",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: zero_subspace
 
@@ -61,7 +61,7 @@ archive/issue_comments_006788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1124#issuecomment-6788",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
@@ -74,16 +74,16 @@ trivial patch
 archive/issue_comments_006789.json:
 ```json
 {
-    "body": "Attachment [zero_submodule](tarball://root/attachments/some-uuid/ticket1124/zero_submodule) by syazdani created at 2007-11-07 18:15:36\n\n[with patch]",
+    "body": "Attachment [zero_submodule](tarball://root/attachments/some-uuid/ticket1124/zero_submodule) by @syazdani77 created at 2007-11-07 18:15:36\n\n[with patch]",
     "created_at": "2007-11-07T18:15:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1124#issuecomment-6789",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
-Attachment [zero_submodule](tarball://root/attachments/some-uuid/ticket1124/zero_submodule) by syazdani created at 2007-11-07 18:15:36
+Attachment [zero_submodule](tarball://root/attachments/some-uuid/ticket1124/zero_submodule) by @syazdani77 created at 2007-11-07 18:15:36
 
 [with patch]
 
@@ -117,7 +117,7 @@ archive/issue_comments_006791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1124#issuecomment-6791",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_006793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1124#issuecomment-6793",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

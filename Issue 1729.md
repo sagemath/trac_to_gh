@@ -14,7 +14,7 @@ archive/issues_001729.json:
     "title": "disable password prompt on initial startup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1729",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: boothby
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1729
 archive/issue_comments_010944.json:
 ```json
 {
-    "body": "Attachment [1729-notebook-login.patch](tarball://root/attachments/some-uuid/ticket1729/1729-notebook-login.patch) by robertwb created at 2008-01-09 06:08:26",
+    "body": "Attachment [1729-notebook-login.patch](tarball://root/attachments/some-uuid/ticket1729/1729-notebook-login.patch) by @robertwb created at 2008-01-09 06:08:26",
     "created_at": "2008-01-09T06:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1729#issuecomment-10944",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1729-notebook-login.patch](tarball://root/attachments/some-uuid/ticket1729/1729-notebook-login.patch) by robertwb created at 2008-01-09 06:08:26
+Attachment [1729-notebook-login.patch](tarball://root/attachments/some-uuid/ticket1729/1729-notebook-login.patch) by @robertwb created at 2008-01-09 06:08:26
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_010945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1729#issuecomment-10945",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_010946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1729#issuecomment-10946",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_010948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1729#issuecomment-10948",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,16 +128,16 @@ is now broken.
 archive/issue_comments_010949.json:
 ```json
 {
-    "body": "Attachment [inotebook-fix.patch](tarball://root/attachments/some-uuid/ticket1729/inotebook-fix.patch) by robertwb created at 2008-01-09 07:21:01",
+    "body": "Attachment [inotebook-fix.patch](tarball://root/attachments/some-uuid/ticket1729/inotebook-fix.patch) by @robertwb created at 2008-01-09 07:21:01",
     "created_at": "2008-01-09T07:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1729#issuecomment-10949",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [inotebook-fix.patch](tarball://root/attachments/some-uuid/ticket1729/inotebook-fix.patch) by robertwb created at 2008-01-09 07:21:01
+Attachment [inotebook-fix.patch](tarball://root/attachments/some-uuid/ticket1729/inotebook-fix.patch) by @robertwb created at 2008-01-09 07:21:01
 
 
 
@@ -146,16 +146,16 @@ Attachment [inotebook-fix.patch](tarball://root/attachments/some-uuid/ticket1729
 archive/issue_comments_010950.json:
 ```json
 {
-    "body": "Changing assignee from boothby to robertwb.",
+    "body": "Changing assignee from boothby to @robertwb.",
     "created_at": "2008-01-09T07:21:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1729#issuecomment-10950",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from boothby to robertwb.
+Changing assignee from boothby to @robertwb.
 
 
 
@@ -169,7 +169,7 @@ archive/issue_comments_010951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1729#issuecomment-10951",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

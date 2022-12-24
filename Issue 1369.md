@@ -3,7 +3,7 @@
 archive/issues_001369.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1369\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1369\n\n",
     "created_at": "2007-12-02T09:45:58Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001369.json:
     "title": "fix a bug introduced in #787 -- algorithm for computing quotient was sometimes wrong.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1369",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_008797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1369#issuecomment-8797",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

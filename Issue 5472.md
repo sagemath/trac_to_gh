@@ -3,7 +3,7 @@
 archive/issues_005472.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nFirst noted in [this thread](http://groups.google.com/group/sage-devel/browse_frm/thread/9dbf78b5df933420).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5472\n\n",
+    "body": "Assignee: @jhpalmieri\n\nFirst noted in [this thread](http://groups.google.com/group/sage-devel/browse_frm/thread/9dbf78b5df933420).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5472\n\n",
     "created_at": "2009-03-10T20:38:19Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_005472.json:
     "title": "[with patch, needs review] typo in developer's guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5472",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 First noted in [this thread](http://groups.google.com/group/sage-devel/browse_frm/thread/9dbf78b5df933420).
 

@@ -3,7 +3,7 @@
 archive/issues_009556.json:
 ```json
 {
-    "body": "Assignee: segfaulting doctests\n\nCC:  burcin kcrisman vbraun eviatarbach\n\nKeywords: symbolic expression dynamic attribute\n\nLet `e` be a symbolic expression. It may happen that `e.operator()` has a certain callable attribute, say, `foo`, that is not a method of `Function`. In this situation, one would like to use `e.foo()`, which is supposed to return `e.operator().foo(*e.operands())` - apparently this is useful for working with hypergeometric functions.\n\n**__Example__**\n\n\n```\nsage: from sage.symbolic.function import BuiltinFunction\nsage: class ExampleBuiltin(BuiltinFunction):\n...     def __init__(self):\n...         BuiltinFunction.__init__(self, 'ex_func', nargs=0) #arbitrary no of args\n...     def some_function_name(self, *args):\n...         return len(args)\n...\nsage: ex_func = ExampleBuiltin()\nsage: ex_func\nex_func\n```\n\n\nWe obtain a symbolic expression by calling `ex_func`:\n\n```\nsage: e = ex_func(x,x+1, x+2)\nsage: type(e)\n<type 'sage.symbolic.expression.Expression'>\n```\n\n\nWe add a callable and a non-callable attribute to `ex_func`:\n\n```\nsage: def some_function(slf, *L): print slf,'called with',L\n...\nsage: ex_func.foo_bar = some_function\nsage: ex_func.bar_foo = 4\n```\n\n\nNow, both the new method and the callable attribute `foo_bar` of\n`ex_func` are available from `e`, but not the non-callable:\n\n\n```\nsage: e.some_function_name()\n3\nsage: e.foo_bar()\nex_func called with (x, x + 1, x + 2)\nsage: e.bar_foo\nTraceback (most recent call last):\n...\nAttributeError: <type 'sage.symbolic.expression.Expression'> has no attribute 'bar_foo'\n```\n\n\nTab completion  and introspection work:\n\n\n```\nsage: 'foo_bar' in dir(e)     # indirect doctest\nTrue\nsage: 'some_function_name' in dir(e)\nTrue\nsage: 'bar_foo' in dir(e)\nFalse\nsage: import sagenb.misc.support as s\nsage: s.completions('e.some', globals(), system='python')\n['e.some_function_name']\n```\n\n\n**__Problems__**\n\nWhen I ran `sage -testall`, several doctests segfaulted:\n\n```\n        sage -t  -verbose \"devel/sage/sage/functions/hyperbolic.py\"\n        sage -t  -verbose \"devel/sage/sage/games/hexad.py\"\n        sage -t  -verbose \"devel/sage/sage/matrix/tests.py\"\n        sage -t  -verbose \"devel/sage/sage/misc/sage_eval.py\"\n        sage -t  -verbose \"devel/sage/sage/plot/animate.py\"\n        sage -t  -verbose \"devel/sage/sage/quadratic_forms/quadratic_form__mass__Conway_Sloane_masses.py\"\n        sage -t  -verbose \"devel/sage/sage/rings/polynomial/polynomial_element.pyx\"\n```\n\n\nI tried (using `sage -t -verbose`) to find out what exactly fails. When I ran some of these failing examples in an interactive session, no segfault occured. So, is there a nasty side effect?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9556\n\n",
+    "body": "Assignee: segfaulting doctests\n\nCC:  @burcin @kcrisman @vbraun @eviatarbach\n\nKeywords: symbolic expression dynamic attribute\n\nLet `e` be a symbolic expression. It may happen that `e.operator()` has a certain callable attribute, say, `foo`, that is not a method of `Function`. In this situation, one would like to use `e.foo()`, which is supposed to return `e.operator().foo(*e.operands())` - apparently this is useful for working with hypergeometric functions.\n\n**__Example__**\n\n\n```\nsage: from sage.symbolic.function import BuiltinFunction\nsage: class ExampleBuiltin(BuiltinFunction):\n...     def __init__(self):\n...         BuiltinFunction.__init__(self, 'ex_func', nargs=0) #arbitrary no of args\n...     def some_function_name(self, *args):\n...         return len(args)\n...\nsage: ex_func = ExampleBuiltin()\nsage: ex_func\nex_func\n```\n\n\nWe obtain a symbolic expression by calling `ex_func`:\n\n```\nsage: e = ex_func(x,x+1, x+2)\nsage: type(e)\n<type 'sage.symbolic.expression.Expression'>\n```\n\n\nWe add a callable and a non-callable attribute to `ex_func`:\n\n```\nsage: def some_function(slf, *L): print slf,'called with',L\n...\nsage: ex_func.foo_bar = some_function\nsage: ex_func.bar_foo = 4\n```\n\n\nNow, both the new method and the callable attribute `foo_bar` of\n`ex_func` are available from `e`, but not the non-callable:\n\n\n```\nsage: e.some_function_name()\n3\nsage: e.foo_bar()\nex_func called with (x, x + 1, x + 2)\nsage: e.bar_foo\nTraceback (most recent call last):\n...\nAttributeError: <type 'sage.symbolic.expression.Expression'> has no attribute 'bar_foo'\n```\n\n\nTab completion  and introspection work:\n\n\n```\nsage: 'foo_bar' in dir(e)     # indirect doctest\nTrue\nsage: 'some_function_name' in dir(e)\nTrue\nsage: 'bar_foo' in dir(e)\nFalse\nsage: import sagenb.misc.support as s\nsage: s.completions('e.some', globals(), system='python')\n['e.some_function_name']\n```\n\n\n**__Problems__**\n\nWhen I ran `sage -testall`, several doctests segfaulted:\n\n```\n        sage -t  -verbose \"devel/sage/sage/functions/hyperbolic.py\"\n        sage -t  -verbose \"devel/sage/sage/games/hexad.py\"\n        sage -t  -verbose \"devel/sage/sage/matrix/tests.py\"\n        sage -t  -verbose \"devel/sage/sage/misc/sage_eval.py\"\n        sage -t  -verbose \"devel/sage/sage/plot/animate.py\"\n        sage -t  -verbose \"devel/sage/sage/quadratic_forms/quadratic_form__mass__Conway_Sloane_masses.py\"\n        sage -t  -verbose \"devel/sage/sage/rings/polynomial/polynomial_element.pyx\"\n```\n\n\nI tried (using `sage -t -verbose`) to find out what exactly fails. When I ran some of these failing examples in an interactive session, no segfault occured. So, is there a nasty side effect?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9556\n\n",
     "created_at": "2010-07-20T12:21:13Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009556.json:
     "title": "Dynamic attributes for symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9556",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: segfaulting doctests
 
-CC:  burcin kcrisman vbraun eviatarbach
+CC:  @burcin @kcrisman @vbraun @eviatarbach
 
 Keywords: symbolic expression dynamic attribute
 
@@ -126,7 +126,7 @@ archive/issue_comments_092111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92111",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -139,16 +139,16 @@ The patch implements dynamic attributes, but some doctests segfault
 archive/issue_comments_092112.json:
 ```json
 {
-    "body": "Attachment [trac-9556_dynamic_attributes_symbolics.patch](tarball://root/attachments/some-uuid/ticket9556/trac-9556_dynamic_attributes_symbolics.patch) by SimonKing created at 2010-07-20 12:26:59",
+    "body": "Attachment [trac-9556_dynamic_attributes_symbolics.patch](tarball://root/attachments/some-uuid/ticket9556/trac-9556_dynamic_attributes_symbolics.patch) by @simon-king-jena created at 2010-07-20 12:26:59",
     "created_at": "2010-07-20T12:26:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92112",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac-9556_dynamic_attributes_symbolics.patch](tarball://root/attachments/some-uuid/ticket9556/trac-9556_dynamic_attributes_symbolics.patch) by SimonKing created at 2010-07-20 12:26:59
+Attachment [trac-9556_dynamic_attributes_symbolics.patch](tarball://root/attachments/some-uuid/ticket9556/trac-9556_dynamic_attributes_symbolics.patch) by @simon-king-jena created at 2010-07-20 12:26:59
 
 
 
@@ -162,7 +162,7 @@ archive/issue_comments_092113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92113",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_092114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92114",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_092115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92115",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_092116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92116",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_092117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92117",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -283,16 +283,16 @@ abs(ex_func(x, x + 1, x + 2))
 archive/issue_comments_092118.json:
 ```json
 {
-    "body": "Attachment [trac_9556-dynamic_class.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class.patch) by mhansen created at 2010-07-20 14:22:01",
+    "body": "Attachment [trac_9556-dynamic_class.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class.patch) by @mwhansen created at 2010-07-20 14:22:01",
     "created_at": "2010-07-20T14:22:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92118",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_9556-dynamic_class.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class.patch) by mhansen created at 2010-07-20 14:22:01
+Attachment [trac_9556-dynamic_class.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class.patch) by @mwhansen created at 2010-07-20 14:22:01
 
 
 
@@ -306,7 +306,7 @@ archive/issue_comments_092119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92119",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_092120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92120",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_092121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92121",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_092122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92122",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_092123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92123",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_092124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92124",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_092125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92125",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_092126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92126",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -485,7 +485,7 @@ archive/issue_comments_092127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92127",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_092128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92128",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -516,16 +516,16 @@ Looks good to me
 archive/issue_comments_092129.json:
 ```json
 {
-    "body": "Attachment [trac_9556-dynamic_class_everywhere.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class_everywhere.patch) by burcin created at 2013-06-19 22:58:24",
+    "body": "Attachment [trac_9556-dynamic_class_everywhere.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class_everywhere.patch) by @burcin created at 2013-06-19 22:58:24",
     "created_at": "2013-06-19T22:58:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92129",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9556-dynamic_class_everywhere.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class_everywhere.patch) by burcin created at 2013-06-19 22:58:24
+Attachment [trac_9556-dynamic_class_everywhere.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class_everywhere.patch) by @burcin created at 2013-06-19 22:58:24
 
 
 
@@ -539,7 +539,7 @@ archive/issue_comments_092130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92130",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -552,16 +552,16 @@ Resolution: fixed
 archive/issue_comments_092131.json:
 ```json
 {
-    "body": "Attachment [trac_9556-dynamic_class_everywhere.part2.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class_everywhere.part2.patch) by burcin created at 2013-06-20 23:29:49",
+    "body": "Attachment [trac_9556-dynamic_class_everywhere.part2.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class_everywhere.part2.patch) by @burcin created at 2013-06-20 23:29:49",
     "created_at": "2013-06-20T23:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92131",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9556-dynamic_class_everywhere.part2.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class_everywhere.part2.patch) by burcin created at 2013-06-20 23:29:49
+Attachment [trac_9556-dynamic_class_everywhere.part2.patch](tarball://root/attachments/some-uuid/ticket9556/trac_9556-dynamic_class_everywhere.part2.patch) by @burcin created at 2013-06-20 23:29:49
 
 
 
@@ -575,7 +575,7 @@ archive/issue_comments_092132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92132",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -605,7 +605,7 @@ archive/issue_comments_092133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92133",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_092134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9556#issuecomment-92134",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

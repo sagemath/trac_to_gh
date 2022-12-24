@@ -3,7 +3,7 @@
 archive/issues_009880.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: pynac\n\nOur wrapper of the csgn function from GiNaC (in `sage/symbolic/expression.pyx`) doesn't reflect it's real definition:\n\n\n```\n  /** Return the complex half-plane (left or right) in which the number lies.\n   *  csgn(x)==0 for x==0, csgn(x)==1 for Re(x)>0 or Re(x)=0 and Im(x)>0,\n   *  csgn(x)==-1 for Re(x)<0 or Re(x)=0 and Im(x)<0.\n   *  */\n```\n\n\nFix this and add doctests.\n\nWe should also consider using GiNaC's `csgn()` function for the top level `sgn()` and `sign()` functions. This should be on a different ticket though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9881\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nOur wrapper of the csgn function from GiNaC (in `sage/symbolic/expression.pyx`) doesn't reflect it's real definition:\n\n\n```\n  /** Return the complex half-plane (left or right) in which the number lies.\n   *  csgn(x)==0 for x==0, csgn(x)==1 for Re(x)>0 or Re(x)=0 and Im(x)>0,\n   *  csgn(x)==-1 for Re(x)<0 or Re(x)=0 and Im(x)<0.\n   *  */\n```\n\n\nFix this and add doctests.\n\nWe should also consider using GiNaC's `csgn()` function for the top level `sgn()` and `sign()` functions. This should be on a different ticket though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9881\n\n",
     "created_at": "2010-09-09T09:04:30Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_009880.json:
     "title": "fix the symbolic csgn function on complex input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9880",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: pynac
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9881
 archive/issue_comments_097938.json:
 ```json
 {
-    "body": "Attachment [trac_9881-csgn.patch](tarball://root/attachments/some-uuid/ticket9881/trac_9881-csgn.patch) by burcin created at 2010-09-12 11:07:50",
+    "body": "Attachment [trac_9881-csgn.patch](tarball://root/attachments/some-uuid/ticket9881/trac_9881-csgn.patch) by @burcin created at 2010-09-12 11:07:50",
     "created_at": "2010-09-12T11:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9880#issuecomment-97938",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9881-csgn.patch](tarball://root/attachments/some-uuid/ticket9881/trac_9881-csgn.patch) by burcin created at 2010-09-12 11:07:50
+Attachment [trac_9881-csgn.patch](tarball://root/attachments/some-uuid/ticket9881/trac_9881-csgn.patch) by @burcin created at 2010-09-12 11:07:50
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_097939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9880#issuecomment-97939",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_097940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9880#issuecomment-97940",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_097941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9880#issuecomment-97941",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_097942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9880#issuecomment-97942",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_097943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9880#issuecomment-97943",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_097944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9880#issuecomment-97944",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_097945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9880#issuecomment-97945",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_097946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9880#issuecomment-97946",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -214,13 +214,13 @@ Resolution: fixed
 archive/issue_comments_097947.json:
 ```json
 {
-    "body": "Attachment [trac_9881-csgn-reviewer.patch](tarball://root/attachments/some-uuid/ticket9881/trac_9881-csgn-reviewer.patch) by mpatel created at 2010-10-06 03:20:19",
+    "body": "Attachment [trac_9881-csgn-reviewer.patch](tarball://root/attachments/some-uuid/ticket9881/trac_9881-csgn-reviewer.patch) by @qed777 created at 2010-10-06 03:20:19",
     "created_at": "2010-10-06T03:20:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9880#issuecomment-97947",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9881-csgn-reviewer.patch](tarball://root/attachments/some-uuid/ticket9881/trac_9881-csgn-reviewer.patch) by mpatel created at 2010-10-06 03:20:19
+Attachment [trac_9881-csgn-reviewer.patch](tarball://root/attachments/some-uuid/ticket9881/trac_9881-csgn-reviewer.patch) by @qed777 created at 2010-10-06 03:20:19

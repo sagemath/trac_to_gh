@@ -3,7 +3,7 @@
 archive/issues_004538.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  gfurnish\n\nCreate a script `sage-walltimekill` SAGE_ROOT/local/bin/ that would run\na subprocess, wait a certain amount of time, then killing it.  \n\n```\nsage-walltimekill 3600 sage\n```\n\nwould kill the process it starts after 3600 wall seconds.\n\nThis will be useful both for doctesting and the notebook.  It's the sort of\nthing ulimit \"should\" do, but doesn't. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4538\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @garyfurnish\n\nCreate a script `sage-walltimekill` SAGE_ROOT/local/bin/ that would run\na subprocess, wait a certain amount of time, then killing it.  \n\n```\nsage-walltimekill 3600 sage\n```\n\nwould kill the process it starts after 3600 wall seconds.\n\nThis will be useful both for doctesting and the notebook.  It's the sort of\nthing ulimit \"should\" do, but doesn't. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4538\n\n",
     "created_at": "2008-11-17T15:13:40Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_004538.json:
     "title": "write a python script that runs a subprocess and kills it after a while",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4538",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
 
-CC:  gfurnish
+CC:  @garyfurnish
 
 Create a script `sage-walltimekill` SAGE_ROOT/local/bin/ that would run
 a subprocess, wait a certain amount of time, then killing it.  
@@ -49,7 +49,7 @@ archive/issue_comments_033826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4538#issuecomment-33826",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_033828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4538#issuecomment-33828",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

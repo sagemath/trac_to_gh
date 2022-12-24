@@ -3,7 +3,7 @@
 archive/issues_001108.json:
 ```json
 {
-    "body": "Assignee: was\n\nFrom rpw:\n\n```\nAll my tests so far have shown that devel/sage-main/sage/combinat/\nsfa.py fails with a SIGSEGV (both on ppc and Intel, both on 10.5 and  \n10.4). Is this a known problem? I haven't been able to find any ticket  \nabout this in the TRAC.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1108\n\n",
+    "body": "Assignee: @williamstein\n\nFrom rpw:\n\n```\nAll my tests so far have shown that devel/sage-main/sage/combinat/\nsfa.py fails with a SIGSEGV (both on ppc and Intel, both on 10.5 and  \n10.4). Is this a known problem? I haven't been able to find any ticket  \nabout this in the TRAC.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1108\n\n",
     "created_at": "2007-11-05T23:17:05Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001108.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 From rpw:
 
@@ -44,7 +44,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1108
 archive/issue_comments_006706.json:
 ```json
 {
-    "body": "Changing assignee from was to failure.",
+    "body": "Changing assignee from @williamstein to failure.",
     "created_at": "2007-11-05T23:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1108",
     "type": "issue_comment",
@@ -53,7 +53,7 @@ archive/issue_comments_006706.json:
 }
 ```
 
-Changing assignee from was to failure.
+Changing assignee from @williamstein to failure.
 
 
 

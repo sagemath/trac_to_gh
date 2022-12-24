@@ -14,7 +14,7 @@ archive/issues_005367.json:
     "title": "bug in composition of power series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5367",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: tbd
@@ -52,7 +52,7 @@ archive/issue_comments_041340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41340",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_041341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41341",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_041342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41342",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_041343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41343",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_041345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41345",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_041346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41346",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_041347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41347",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_041348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41348",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

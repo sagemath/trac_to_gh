@@ -3,7 +3,7 @@
 archive/issues_003707.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThe attached patch is here like a request for comments. \n\nWe are about to release a new sympy that contains thorough tests for Sage <-> SymPy conversion:\n\nhttp://hg.sympy.org/sympy/file/16cfc09420ee/sympy/test_external/test_sage.py\n\nWhen sage 3.0.6 gets released, I'll create a new sympy spkg and expand tests in Sage too, so that we are sure things work in Sage environment too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3707\n\n",
+    "body": "Assignee: @garyfurnish\n\nThe attached patch is here like a request for comments. \n\nWe are about to release a new sympy that contains thorough tests for Sage <-> SymPy conversion:\n\nhttp://hg.sympy.org/sympy/file/16cfc09420ee/sympy/test_external/test_sage.py\n\nWhen sage 3.0.6 gets released, I'll create a new sympy spkg and expand tests in Sage too, so that we are sure things work in Sage environment too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3707\n\n",
     "created_at": "2008-07-22T11:19:25Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003707.json:
     "title": "Make all common Sage classes convertible to SymPy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3707",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 The attached patch is here like a request for comments. 
 
@@ -43,7 +43,7 @@ archive/issue_comments_026306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26306",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_026307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26307",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_026308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26308",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -103,16 +103,16 @@ Looking at those should get you started.
 archive/issue_comments_026309.json:
 ```json
 {
-    "body": "Attachment [sympy0.6.2fix.patch](tarball://root/attachments/some-uuid/ticket3707/sympy0.6.2fix.patch) by certik created at 2008-08-17 20:37:07\n\napply this together with sympy-0.6.2.spkg",
+    "body": "Attachment [sympy0.6.2fix.patch](tarball://root/attachments/some-uuid/ticket3707/sympy0.6.2fix.patch) by @certik created at 2008-08-17 20:37:07\n\napply this together with sympy-0.6.2.spkg",
     "created_at": "2008-08-17T20:37:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26309",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
-Attachment [sympy0.6.2fix.patch](tarball://root/attachments/some-uuid/ticket3707/sympy0.6.2fix.patch) by certik created at 2008-08-17 20:37:07
+Attachment [sympy0.6.2fix.patch](tarball://root/attachments/some-uuid/ticket3707/sympy0.6.2fix.patch) by @certik created at 2008-08-17 20:37:07
 
 apply this together with sympy-0.6.2.spkg
 
@@ -123,16 +123,16 @@ apply this together with sympy-0.6.2.spkg
 archive/issue_comments_026310.json:
 ```json
 {
-    "body": "Attachment [sage_sympy.patch](tarball://root/attachments/some-uuid/ticket3707/sage_sympy.patch) by certik created at 2008-08-17 20:37:32",
+    "body": "Attachment [sage_sympy.patch](tarball://root/attachments/some-uuid/ticket3707/sage_sympy.patch) by @certik created at 2008-08-17 20:37:32",
     "created_at": "2008-08-17T20:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26310",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
-Attachment [sage_sympy.patch](tarball://root/attachments/some-uuid/ticket3707/sage_sympy.patch) by certik created at 2008-08-17 20:37:32
+Attachment [sage_sympy.patch](tarball://root/attachments/some-uuid/ticket3707/sage_sympy.patch) by @certik created at 2008-08-17 20:37:32
 
 
 
@@ -146,7 +146,7 @@ archive/issue_comments_026311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26311",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -165,16 +165,16 @@ malb: I wrote docstrings and doctests. I didn't use late_import(), as I think in
 archive/issue_comments_026312.json:
 ```json
 {
-    "body": "Attachment [trac_3707_fixup.patch](tarball://root/attachments/some-uuid/ticket3707/trac_3707_fixup.patch) by malb created at 2008-08-18 10:07:56\n\napply after the other patches",
+    "body": "Attachment [trac_3707_fixup.patch](tarball://root/attachments/some-uuid/ticket3707/trac_3707_fixup.patch) by @malb created at 2008-08-18 10:07:56\n\napply after the other patches",
     "created_at": "2008-08-18T10:07:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26312",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_3707_fixup.patch](tarball://root/attachments/some-uuid/ticket3707/trac_3707_fixup.patch) by malb created at 2008-08-18 10:07:56
+Attachment [trac_3707_fixup.patch](tarball://root/attachments/some-uuid/ticket3707/trac_3707_fixup.patch) by @malb created at 2008-08-18 10:07:56
 
 apply after the other patches
 
@@ -190,7 +190,7 @@ archive/issue_comments_026313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26313",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_026314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26314",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -227,16 +227,16 @@ Oops, thanks you did so much work with it, this is weird, all tests passed for m
 archive/issue_comments_026315.json:
 ```json
 {
-    "body": "Attachment [trac_3707_fixup.2.patch](tarball://root/attachments/some-uuid/ticket3707/trac_3707_fixup.2.patch) by certik created at 2008-08-19 22:23:31",
+    "body": "Attachment [trac_3707_fixup.2.patch](tarball://root/attachments/some-uuid/ticket3707/trac_3707_fixup.2.patch) by @certik created at 2008-08-19 22:23:31",
     "created_at": "2008-08-19T22:23:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26315",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
-Attachment [trac_3707_fixup.2.patch](tarball://root/attachments/some-uuid/ticket3707/trac_3707_fixup.2.patch) by certik created at 2008-08-19 22:23:31
+Attachment [trac_3707_fixup.2.patch](tarball://root/attachments/some-uuid/ticket3707/trac_3707_fixup.2.patch) by @certik created at 2008-08-19 22:23:31
 
 
 
@@ -250,7 +250,7 @@ archive/issue_comments_026316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26316",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_026317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26317",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_026318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26318",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_026319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3707#issuecomment-26319",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 

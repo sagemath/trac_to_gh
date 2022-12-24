@@ -14,7 +14,7 @@ archive/issues_003558.json:
     "title": "[with patch, needs review] make  \"% cells\" work in the notebook when the mode is not set to \"sage\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3558",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_025150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3558#issuecomment-25150",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -50,16 +50,16 @@ I need to add doctests.
 archive/issue_comments_025151.json:
 ```json
 {
-    "body": "Attachment [trac_3558.patch](tarball://root/attachments/some-uuid/ticket3558/trac_3558.patch) by mhansen created at 2008-07-06 03:56:20",
+    "body": "Attachment [trac_3558.patch](tarball://root/attachments/some-uuid/ticket3558/trac_3558.patch) by @mwhansen created at 2008-07-06 03:56:20",
     "created_at": "2008-07-06T03:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3558#issuecomment-25151",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3558.patch](tarball://root/attachments/some-uuid/ticket3558/trac_3558.patch) by mhansen created at 2008-07-06 03:56:20
+Attachment [trac_3558.patch](tarball://root/attachments/some-uuid/ticket3558/trac_3558.patch) by @mwhansen created at 2008-07-06 03:56:20
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_025152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3558#issuecomment-25152",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

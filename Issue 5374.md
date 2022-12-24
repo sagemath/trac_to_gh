@@ -3,7 +3,7 @@
 archive/issues_005374.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThis fixes the one problem remaining from ticket #4919.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5374\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThis fixes the one problem remaining from ticket #4919.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5374\n\n",
     "created_at": "2009-02-26T00:17:28Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_005374.json:
     "title": "[with patch, needs review] minor problem with ReST in misc/hg.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5374",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 This fixes the one problem remaining from ticket #4919.
 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5374
 archive/issue_comments_041393.json:
 ```json
 {
-    "body": "Attachment [hg-rst.patch](tarball://root/attachments/some-uuid/ticket5374/hg-rst.patch) by jhpalmieri created at 2009-02-26 00:17:52",
+    "body": "Attachment [hg-rst.patch](tarball://root/attachments/some-uuid/ticket5374/hg-rst.patch) by @jhpalmieri created at 2009-02-26 00:17:52",
     "created_at": "2009-02-26T00:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5374#issuecomment-41393",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [hg-rst.patch](tarball://root/attachments/some-uuid/ticket5374/hg-rst.patch) by jhpalmieri created at 2009-02-26 00:17:52
+Attachment [hg-rst.patch](tarball://root/attachments/some-uuid/ticket5374/hg-rst.patch) by @jhpalmieri created at 2009-02-26 00:17:52
 
 
 
@@ -56,7 +56,7 @@ archive/issue_comments_041394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5374#issuecomment-41394",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

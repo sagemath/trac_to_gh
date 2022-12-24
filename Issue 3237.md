@@ -3,7 +3,7 @@
 archive/issues_003237.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  zimmerma\n\nPaul Zimmermann writes:\n\n```\nRelease notes:\n* New stage 2 for P-1 and P+1, described in Montgomery and Kruppa,\n  Improved Stage 2 to P+-1 Factoring Algorithms,\n  in A. J. van der Poorten and A. Stein (Eds.), ANTS-VIII 2008,\n  LNCS 5011, pp. 180-195.\n* Parallelization in the new P+-1 stage 2 (with --enable-openmp).\n* Optimizations to the NTT code by Jason S. Papadopoulos\n* Improved mulredc assembly code for Athlon64/Opteron\n* Improved modular reduction in the mpzmod range\n* Bugfix in P+1 stage 2 which caused incorrect initialisation if\n  Brent-Suyama polynomial had degree > 1 and i0 was negative (occurs\n  only with non-standard parameters)\n* Bugfix in generation of Lucas chains for P+1 and ECM, causing some\n  stage 1 primes close to 2^32 to be processed incorrectly on 32 bit\n  systems\n* Added build project for VC++ by Brian Gladman\n* File ecm.h changed from GPL to LGPL: the fact it was under GPL was an\n  unvoluntary mistake, which has the consequence that applications\n  linking with libecm for version < 6.2 should be under GPL too.\n* Fixed a regression introduced in 6.1.1: the default arithmetic (NTT)\n  for stage 2 was slower for large inputs. Now defaults to -no-ntt for\n  input numbers >30 machine words.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3237\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @zimmermann6\n\nPaul Zimmermann writes:\n\n```\nRelease notes:\n* New stage 2 for P-1 and P+1, described in Montgomery and Kruppa,\n  Improved Stage 2 to P+-1 Factoring Algorithms,\n  in A. J. van der Poorten and A. Stein (Eds.), ANTS-VIII 2008,\n  LNCS 5011, pp. 180-195.\n* Parallelization in the new P+-1 stage 2 (with --enable-openmp).\n* Optimizations to the NTT code by Jason S. Papadopoulos\n* Improved mulredc assembly code for Athlon64/Opteron\n* Improved modular reduction in the mpzmod range\n* Bugfix in P+1 stage 2 which caused incorrect initialisation if\n  Brent-Suyama polynomial had degree > 1 and i0 was negative (occurs\n  only with non-standard parameters)\n* Bugfix in generation of Lucas chains for P+1 and ECM, causing some\n  stage 1 primes close to 2^32 to be processed incorrectly on 32 bit\n  systems\n* Added build project for VC++ by Brian Gladman\n* File ecm.h changed from GPL to LGPL: the fact it was under GPL was an\n  unvoluntary mistake, which has the consequence that applications\n  linking with libecm for version < 6.2 should be under GPL too.\n* Fixed a regression introduced in 6.1.1: the default arithmetic (NTT)\n  for stage 2 was slower for large inputs. Now defaults to -no-ntt for\n  input numbers >30 machine words.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3237\n\n",
     "created_at": "2008-05-17T09:51:38Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_003237.json:
 ```
 Assignee: mabshoff
 
-CC:  zimmerma
+CC:  @zimmermann6
 
 Paul Zimmermann writes:
 
@@ -154,7 +154,7 @@ archive/issue_comments_022418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3237#issuecomment-22418",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_022420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3237#issuecomment-22420",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

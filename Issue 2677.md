@@ -3,7 +3,7 @@
 archive/issues_002677.json:
 ```json
 {
-    "body": "Assignee: dfdeshom\n\n\n```\nRe the doctest failure on Clement's G5:\n\nsage -t  devel/sage-main/sage/matrix/matrix_real_double_dense.pyx\n**********************************************************************\nFile \"matrix_real_double_dense.pyx\", line 331:\n    sage: ~A\nExpected:\n    [ 0.1  0.0]\n    [ 0.0 0.01]\nGot:\n    [ 0.1 -0.0]\n    [-0.0 0.01]\n**********************************************************************\nFile \"matrix_real_double_dense.pyx\", line 349:\n    sage: A.inverse()\nExpected:\n    [nan nan]\n    [nan inf]\nGot:\n    [ nan  nan]\n    [ nan -inf]\n**********************************************************************\n\nIt is a sign issue, but I am not sure what we can do here.\n\nCheers,\n\nMichael \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2677\n\n",
+    "body": "Assignee: @dfdeshom\n\n\n```\nRe the doctest failure on Clement's G5:\n\nsage -t  devel/sage-main/sage/matrix/matrix_real_double_dense.pyx\n**********************************************************************\nFile \"matrix_real_double_dense.pyx\", line 331:\n    sage: ~A\nExpected:\n    [ 0.1  0.0]\n    [ 0.0 0.01]\nGot:\n    [ 0.1 -0.0]\n    [-0.0 0.01]\n**********************************************************************\nFile \"matrix_real_double_dense.pyx\", line 349:\n    sage: A.inverse()\nExpected:\n    [nan nan]\n    [nan inf]\nGot:\n    [ nan  nan]\n    [ nan -inf]\n**********************************************************************\n\nIt is a sign issue, but I am not sure what we can do here.\n\nCheers,\n\nMichael \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2677\n\n",
     "created_at": "2008-03-26T18:04:16Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_002677.json:
     "title": "sage 2.11.alpha1: doctest failures in real_double_dense.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2677",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: dfdeshom
+Assignee: @dfdeshom
 
 
 ```
@@ -63,16 +63,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2677
 archive/issue_comments_018418.json:
 ```json
 {
-    "body": "Attachment [2677_trac.patch](tarball://root/attachments/some-uuid/ticket2677/2677_trac.patch) by dfdeshom created at 2008-03-26 20:34:34",
+    "body": "Attachment [2677_trac.patch](tarball://root/attachments/some-uuid/ticket2677/2677_trac.patch) by @dfdeshom created at 2008-03-26 20:34:34",
     "created_at": "2008-03-26T20:34:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2677#issuecomment-18418",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2677_trac.patch](tarball://root/attachments/some-uuid/ticket2677/2677_trac.patch) by dfdeshom created at 2008-03-26 20:34:34
+Attachment [2677_trac.patch](tarball://root/attachments/some-uuid/ticket2677/2677_trac.patch) by @dfdeshom created at 2008-03-26 20:34:34
 
 
 

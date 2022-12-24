@@ -3,7 +3,7 @@
 archive/issues_003111.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nPaste this code into a Sage session:\n\n```\nE = EllipticCurve('389a')\nfor p in prime_range(10000):\n    if p != 389:\n       try:\n           G = E.change_ring(GF(p)).abelian_group()\n       except Exception, msg:\n           print \"p = %s fails\"%p\n           print msg\n```\n\n\nThe output varies on run and computer.  Typical output looks like this:\n\n```\np = 7 fails\nNo solution in bsgs()\np = 1901 fails\n\np = 4273 fails\n\np = 5101 fails\n\np = 7177 fails\n\np = 7433 fails\n\np = 9013 fails\n\np = 9049 fails\n\np = 9749 fails\n```\n\n\nThe actual failures are assertion failures in the baby-step giant-step implementation.\n\n -- William\n\nIssue created by migration from https://trac.sagemath.org/ticket/3111\n\n",
+    "body": "Assignee: @JohnCremona\n\nPaste this code into a Sage session:\n\n```\nE = EllipticCurve('389a')\nfor p in prime_range(10000):\n    if p != 389:\n       try:\n           G = E.change_ring(GF(p)).abelian_group()\n       except Exception, msg:\n           print \"p = %s fails\"%p\n           print msg\n```\n\n\nThe output varies on run and computer.  Typical output looks like this:\n\n```\np = 7 fails\nNo solution in bsgs()\np = 1901 fails\n\np = 4273 fails\n\np = 5101 fails\n\np = 7177 fails\n\np = 7433 fails\n\np = 9013 fails\n\np = 9049 fails\n\np = 9749 fails\n```\n\n\nThe actual failures are assertion failures in the baby-step giant-step implementation.\n\n -- William\n\nIssue created by migration from https://trac.sagemath.org/ticket/3111\n\n",
     "created_at": "2008-05-06T16:07:05Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003111.json:
     "title": "sage's new baby-step giant step evidently needs additional polish",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3111",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Paste this code into a Sage session:
 
@@ -76,7 +76,7 @@ archive/issue_comments_021502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21502",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_021503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21503",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_021504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21504",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_021506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21506",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_021507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21507",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_021508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21508",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_021509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21509",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -284,16 +284,16 @@ Hmm ... there doesn't seem to be a patch attached, despite the title saying "wit
 archive/issue_comments_021510.json:
 ```json
 {
-    "body": "Attachment [sage-3111.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111.patch) by cremona created at 2008-05-08 21:26:16\n\nSorry about that, it is there now.\n\nAnd as I looked at the patch after uploading it I saw that there are a couple of debugging print statements which need deleting, near the end (lines 1194/5) but I'll leave that until tomorrow.",
+    "body": "Attachment [sage-3111.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111.patch) by @JohnCremona created at 2008-05-08 21:26:16\n\nSorry about that, it is there now.\n\nAnd as I looked at the patch after uploading it I saw that there are a couple of debugging print statements which need deleting, near the end (lines 1194/5) but I'll leave that until tomorrow.",
     "created_at": "2008-05-08T21:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21510",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-3111.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111.patch) by cremona created at 2008-05-08 21:26:16
+Attachment [sage-3111.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111.patch) by @JohnCremona created at 2008-05-08 21:26:16
 
 Sorry about that, it is there now.
 
@@ -329,7 +329,7 @@ archive/issue_comments_021512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21512",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_021513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21513",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -360,16 +360,16 @@ Additional tp sage-3111.patch
 archive/issue_comments_021514.json:
 ```json
 {
-    "body": "Attachment [sage-3111-extra.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra.patch) by cremona created at 2008-05-12 21:29:57\n\nsage-3111-extra.patch does the following:\n\n* deleted two debuggin print lines\n* added doctest to show that the original post is fixed\n* passes all doctests in sage/schemes/elliptic_curves\n\nFor the doctest I check that it is OK for 10 random primes up to `10^4` rather than all of them since that takes about 18s to run.",
+    "body": "Attachment [sage-3111-extra.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra.patch) by @JohnCremona created at 2008-05-12 21:29:57\n\nsage-3111-extra.patch does the following:\n\n* deleted two debuggin print lines\n* added doctest to show that the original post is fixed\n* passes all doctests in sage/schemes/elliptic_curves\n\nFor the doctest I check that it is OK for 10 random primes up to `10^4` rather than all of them since that takes about 18s to run.",
     "created_at": "2008-05-12T21:29:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21514",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-3111-extra.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra.patch) by cremona created at 2008-05-12 21:29:57
+Attachment [sage-3111-extra.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra.patch) by @JohnCremona created at 2008-05-12 21:29:57
 
 sage-3111-extra.patch does the following:
 
@@ -464,16 +464,16 @@ Michael
 archive/issue_comments_021518.json:
 ```json
 {
-    "body": "Attachment [sage-3111-extra2.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra2.patch) by cremona created at 2008-05-12 21:47:04\n\nApply after previous two",
+    "body": "Attachment [sage-3111-extra2.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra2.patch) by @JohnCremona created at 2008-05-12 21:47:04\n\nApply after previous two",
     "created_at": "2008-05-12T21:47:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21518",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-3111-extra2.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra2.patch) by cremona created at 2008-05-12 21:47:04
+Attachment [sage-3111-extra2.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra2.patch) by @JohnCremona created at 2008-05-12 21:47:04
 
 Apply after previous two
 
@@ -489,7 +489,7 @@ archive/issue_comments_021519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21519",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_021520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21520",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -544,16 +544,16 @@ Runnning the doctest code for the 10 primes with an unpatched Sage does not trig
 archive/issue_comments_021522.json:
 ```json
 {
-    "body": "Attachment [sage-3111-extra3.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra3.patch) by cremona created at 2008-05-13 08:18:56\n\napply after all previous",
+    "body": "Attachment [sage-3111-extra3.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra3.patch) by @JohnCremona created at 2008-05-13 08:18:56\n\napply after all previous",
     "created_at": "2008-05-13T08:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21522",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-3111-extra3.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra3.patch) by cremona created at 2008-05-13 08:18:56
+Attachment [sage-3111-extra3.patch](tarball://root/attachments/some-uuid/ticket3111/sage-3111-extra3.patch) by @JohnCremona created at 2008-05-13 08:18:56
 
 apply after all previous
 
@@ -569,7 +569,7 @@ archive/issue_comments_021523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21523",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -589,7 +589,7 @@ archive/issue_comments_021524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21524",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -607,7 +607,7 @@ archive/issue_comments_021525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3111#issuecomment-21525",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

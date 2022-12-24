@@ -3,7 +3,7 @@
 archive/issues_009834.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhampton\n\nFrom Sage Bugreports :\nconfusing error message\n\n\n```\nTraceback (click to the left of this block for traceback)\n...\nUnboundLocalError: local variable 'maxima_method' referenced before\nassignment\n```\n\nwhen trying\n\n```\nepsilon = 1e-2; vars = var('x'); y = function('y',x);\nde = epsilon*diff(y,x,2)+y*(1-y^2)==0;\nsoln = desolve(de,y[0,-1,1,1]);\n```\n\n\nExplanation: Currently Sage allows to use BVP only if the result is symbolic expression. In this case the result is list of two expresions and Sage fails, as mentioned very briefly in documentation of desolve. However, we could try to improve desolve or make the error message more informative.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9835\n\n",
+    "body": "Assignee: @burcin\n\nCC:  mhampton\n\nFrom Sage Bugreports :\nconfusing error message\n\n\n```\nTraceback (click to the left of this block for traceback)\n...\nUnboundLocalError: local variable 'maxima_method' referenced before\nassignment\n```\n\nwhen trying\n\n```\nepsilon = 1e-2; vars = var('x'); y = function('y',x);\nde = epsilon*diff(y,x,2)+y*(1-y^2)==0;\nsoln = desolve(de,y[0,-1,1,1]);\n```\n\n\nExplanation: Currently Sage allows to use BVP only if the result is symbolic expression. In this case the result is list of two expresions and Sage fails, as mentioned very briefly in documentation of desolve. However, we could try to improve desolve or make the error message more informative.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9835\n\n",
     "created_at": "2010-08-28T21:18:27Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_009834.json:
     "title": "Make desolve more informative when solving BVP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9834",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 CC:  mhampton
 
@@ -59,7 +59,7 @@ archive/issue_comments_097034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97034",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_097035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97035",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_097036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97036",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_097037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97037",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -256,7 +256,7 @@ NotImplementedError: Unable to use initial condition for this equation (freeofx)
 archive/issue_comments_097040.json:
 ```json
 {
-    "body": "Changing assignee from burcin to mhampton.",
+    "body": "Changing assignee from @burcin to mhampton.",
     "created_at": "2010-09-21T13:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
@@ -265,7 +265,7 @@ archive/issue_comments_097040.json:
 }
 ```
 
-Changing assignee from burcin to mhampton.
+Changing assignee from @burcin to mhampton.
 
 
 
@@ -279,7 +279,7 @@ archive/issue_comments_097041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97041",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -321,16 +321,16 @@ and the user does not know, what went wrong. With this patch the user knows, tha
 archive/issue_comments_097042.json:
 ```json
 {
-    "body": "Attachment [trac_9835.patch](tarball://root/attachments/some-uuid/ticket9835/trac_9835.patch) by robert.marik created at 2010-09-21 14:43:06\n\nrebased for Sage 4.5.3., fixed typo, replaces previous patch with the same name",
+    "body": "Attachment [trac_9835.patch](tarball://root/attachments/some-uuid/ticket9835/trac_9835.patch) by @robert-marik created at 2010-09-21 14:43:06\n\nrebased for Sage 4.5.3., fixed typo, replaces previous patch with the same name",
     "created_at": "2010-09-21T14:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97042",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_9835.patch](tarball://root/attachments/some-uuid/ticket9835/trac_9835.patch) by robert.marik created at 2010-09-21 14:43:06
+Attachment [trac_9835.patch](tarball://root/attachments/some-uuid/ticket9835/trac_9835.patch) by @robert-marik created at 2010-09-21 14:43:06
 
 rebased for Sage 4.5.3., fixed typo, replaces previous patch with the same name
 
@@ -346,7 +346,7 @@ archive/issue_comments_097043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97043",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -359,16 +359,16 @@ solves also #9710 and #8931
 archive/issue_comments_097044.json:
 ```json
 {
-    "body": "Attachment [trac_9835.take2.patch](tarball://root/attachments/some-uuid/ticket9835/trac_9835.take2.patch) by burcin created at 2010-09-26 13:25:25\n\nminor change - apply only this patch",
+    "body": "Attachment [trac_9835.take2.patch](tarball://root/attachments/some-uuid/ticket9835/trac_9835.take2.patch) by @burcin created at 2010-09-26 13:25:25\n\nminor change - apply only this patch",
     "created_at": "2010-09-26T13:25:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97044",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9835.take2.patch](tarball://root/attachments/some-uuid/ticket9835/trac_9835.take2.patch) by burcin created at 2010-09-26 13:25:25
+Attachment [trac_9835.take2.patch](tarball://root/attachments/some-uuid/ticket9835/trac_9835.take2.patch) by @burcin created at 2010-09-26 13:25:25
 
 minor change - apply only this patch
 
@@ -384,7 +384,7 @@ archive/issue_comments_097045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97045",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_097046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97046",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_097047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97047",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_097048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97048",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_097049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97049",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

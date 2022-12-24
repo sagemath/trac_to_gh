@@ -3,7 +3,7 @@
 archive/issues_008491.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  robert.marik\n\n\n```\nsage: f = 6.5/x\nsage: latex(f)\n\\frac{1}{x}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8491\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robert-marik\n\n\n```\nsage: f = 6.5/x\nsage: latex(f)\n\\frac{1}{x}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8491\n\n",
     "created_at": "2010-03-10T17:23:44Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008491.json:
     "title": "incorret latex produced for some symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8491",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  robert.marik
+CC:  @robert-marik
 
 
 ```
@@ -45,7 +45,7 @@ archive/issue_comments_076582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8491#issuecomment-76582",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -58,16 +58,16 @@ Changing priority from major to blocker.
 archive/issue_comments_076583.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to burcin.",
+    "body": "Changing assignee from @aghitza to @burcin.",
     "created_at": "2010-03-10T17:24:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8491#issuecomment-76583",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from AlexGhitza to burcin.
+Changing assignee from @aghitza to @burcin.
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_076584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8491#issuecomment-76584",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_076585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8491#issuecomment-76585",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing status from new to needs_review.
 archive/issue_comments_076586.json:
 ```json
 {
-    "body": "Attachment [trac_8491-py_numer.patch](tarball://root/attachments/some-uuid/ticket8491/trac_8491-py_numer.patch) by burcin created at 2010-03-10 22:05:10",
+    "body": "Attachment [trac_8491-py_numer.patch](tarball://root/attachments/some-uuid/ticket8491/trac_8491-py_numer.patch) by @burcin created at 2010-03-10 22:05:10",
     "created_at": "2010-03-10T22:05:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8491#issuecomment-76586",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8491-py_numer.patch](tarball://root/attachments/some-uuid/ticket8491/trac_8491-py_numer.patch) by burcin created at 2010-03-10 22:05:10
+Attachment [trac_8491-py_numer.patch](tarball://root/attachments/some-uuid/ticket8491/trac_8491-py_numer.patch) by @burcin created at 2010-03-10 22:05:10
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_076587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8491#issuecomment-76587",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_076588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8491#issuecomment-76588",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 

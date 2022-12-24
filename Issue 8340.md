@@ -3,7 +3,7 @@
 archive/issues_008340.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  roed\n\nMake this work:\n\n```\nsage: var('x')\nsage: K.<a> = NumberField(x^3 + x + 1)\nsage: P = K.factor(11)[0][0]; P\nFractional ideal (a^2 + 2*a + 5)\nsage: k = P.residue_field(); k\nResidue field in abar of Fractional ideal (a^2 + 2*a + 5)\nsage: k.degree()\n2\nsage: alpha = k.random_element(); alpha\n3*abar + 6\nsage: k.lift(alpha)\n3*a + 6\nsage: K(alpha)\nTraceback (most recent call last):\n...\nTypeError: <type 'sage.rings.finite_field_givaro.FiniteField_givaroElement'>\nsage: alpha.lift()\nTraceback (most recent call last):\n...\nAttributeError: 'sage.rings.finite_field_givaro.FiniteField_givaroElement' object has no attribute 'lift'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8340\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @roed314\n\nMake this work:\n\n```\nsage: var('x')\nsage: K.<a> = NumberField(x^3 + x + 1)\nsage: P = K.factor(11)[0][0]; P\nFractional ideal (a^2 + 2*a + 5)\nsage: k = P.residue_field(); k\nResidue field in abar of Fractional ideal (a^2 + 2*a + 5)\nsage: k.degree()\n2\nsage: alpha = k.random_element(); alpha\n3*abar + 6\nsage: k.lift(alpha)\n3*a + 6\nsage: K(alpha)\nTraceback (most recent call last):\n...\nTypeError: <type 'sage.rings.finite_field_givaro.FiniteField_givaroElement'>\nsage: alpha.lift()\nTraceback (most recent call last):\n...\nAttributeError: 'sage.rings.finite_field_givaro.FiniteField_givaroElement' object has no attribute 'lift'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8340\n\n",
     "created_at": "2010-02-23T22:46:40Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_008340.json:
     "title": "add a lift method to elements of the residue class field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8340",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  roed
+CC:  @roed314
 
 Make this work:
 
@@ -63,7 +63,7 @@ archive/issue_comments_074455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8340",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8340#issuecomment-74455",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003337.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mhansen\n\nUpgrading guava to 3.5 would be especially helpful for the Debianization, because that version includes fixes to several upstream problems that cause problems for the Debian package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3337\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nUpgrading guava to 3.5 would be especially helpful for the Debianization, because that version includes fixes to several upstream problems that cause problems for the Debian package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3337\n\n",
     "created_at": "2008-05-30T06:06:30Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_003337.json:
     "title": "Upgrade gap-guava to new 3.5 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3337",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
 
-CC:  mhansen
+CC:  @mwhansen
 
 Upgrading guava to 3.5 would be especially helpful for the Debianization, because that version includes fixes to several upstream problems that cause problems for the Debian package.
 
@@ -63,7 +63,7 @@ archive/issue_comments_023125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23125",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_023126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23126",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_023128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23128",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_023130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23130",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_023132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23132",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_023135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23135",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_023137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23137",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -518,7 +518,7 @@ archive/issue_comments_023138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23138",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -687,7 +687,7 @@ archive/issue_comments_023142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23142",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -709,7 +709,7 @@ archive/issue_comments_023143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23143",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -774,7 +774,7 @@ archive/issue_comments_023145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23145",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -929,7 +929,7 @@ archive/issue_comments_023150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23150",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -977,7 +977,7 @@ archive/issue_comments_023152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23152",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1114,7 +1114,7 @@ archive/issue_comments_023155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23155",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1240,7 +1240,7 @@ archive/issue_comments_023157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23157",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1253,16 +1253,16 @@ Thanks very much. That clarifies the errors I should focus on. I'll work on the 
 archive/issue_comments_023158.json:
 ```json
 {
-    "body": "Attachment [trac_3337-gap-docstrings.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings.patch) by wdj created at 2009-02-09 03:36:19\n\nto be applied to 3.3.alpha6",
+    "body": "Attachment [trac_3337-gap-docstrings.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings.patch) by @wdjoyner created at 2009-02-09 03:36:19\n\nto be applied to 3.3.alpha6",
     "created_at": "2009-02-09T03:36:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23158",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_3337-gap-docstrings.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings.patch) by wdj created at 2009-02-09 03:36:19
+Attachment [trac_3337-gap-docstrings.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings.patch) by @wdjoyner created at 2009-02-09 03:36:19
 
 to be applied to 3.3.alpha6
 
@@ -1278,7 +1278,7 @@ archive/issue_comments_023159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23159",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1369,7 +1369,7 @@ archive/issue_comments_023162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23162",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1382,16 +1382,16 @@ to be applied to 3.3.alpha6 with others (in order)
 archive/issue_comments_023163.json:
 ```json
 {
-    "body": "Attachment [trac_3337-gap-docstrings2.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings2.patch) by wdj created at 2009-02-10 00:28:41\n\nto be applied to 3.3.alpha6 with others (in order)",
+    "body": "Attachment [trac_3337-gap-docstrings2.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings2.patch) by @wdjoyner created at 2009-02-10 00:28:41\n\nto be applied to 3.3.alpha6 with others (in order)",
     "created_at": "2009-02-10T00:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23163",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_3337-gap-docstrings2.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings2.patch) by wdj created at 2009-02-10 00:28:41
+Attachment [trac_3337-gap-docstrings2.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings2.patch) by @wdjoyner created at 2009-02-10 00:28:41
 
 to be applied to 3.3.alpha6 with others (in order)
 
@@ -1402,16 +1402,16 @@ to be applied to 3.3.alpha6 with others (in order)
 archive/issue_comments_023164.json:
 ```json
 {
-    "body": "Attachment [trac_3337-gap-docstrings4.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings4.patch) by wdj created at 2009-02-10 00:29:07\n\nto be applied to 3.3.alpha6 with others (in order)",
+    "body": "Attachment [trac_3337-gap-docstrings4.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings4.patch) by @wdjoyner created at 2009-02-10 00:29:07\n\nto be applied to 3.3.alpha6 with others (in order)",
     "created_at": "2009-02-10T00:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23164",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_3337-gap-docstrings4.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings4.patch) by wdj created at 2009-02-10 00:29:07
+Attachment [trac_3337-gap-docstrings4.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap-docstrings4.patch) by @wdjoyner created at 2009-02-10 00:29:07
 
 to be applied to 3.3.alpha6 with others (in order)
 
@@ -1427,7 +1427,7 @@ archive/issue_comments_023165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23165",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1676,7 +1676,7 @@ archive/issue_comments_023172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23172",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1772,7 +1772,7 @@ archive/issue_comments_023174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23174",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -1943,7 +1943,7 @@ archive/issue_comments_023177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23177",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -2016,7 +2016,7 @@ archive/issue_comments_023178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23178",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -2089,7 +2089,7 @@ archive/issue_comments_023180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23180",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -2111,16 +2111,16 @@ archive/issue_comments_023180.json:
 archive/issue_comments_023181.json:
 ```json
 {
-    "body": "Attachment [trac_3337-gap_subprocesses.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap_subprocesses.patch) by was created at 2009-02-14 00:34:22\n\nfix \"this shouldn't happen\" issue",
+    "body": "Attachment [trac_3337-gap_subprocesses.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap_subprocesses.patch) by @williamstein created at 2009-02-14 00:34:22\n\nfix \"this shouldn't happen\" issue",
     "created_at": "2009-02-14T00:34:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3337#issuecomment-23181",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_3337-gap_subprocesses.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap_subprocesses.patch) by was created at 2009-02-14 00:34:22
+Attachment [trac_3337-gap_subprocesses.patch](tarball://root/attachments/some-uuid/ticket3337/trac_3337-gap_subprocesses.patch) by @williamstein created at 2009-02-14 00:34:22
 
 fix "this shouldn't happen" issue
 

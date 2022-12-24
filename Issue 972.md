@@ -3,7 +3,7 @@
 archive/issues_000972.json:
 ```json
 {
-    "body": "Assignee: was\n\nI encountered this on Mac OS X (10.4.10), on a dual Quad Xeon system.  The build of cddlib-094b blows up here:\n\nThe build of cddlib-094b blows chunks, with this complaint:\n\ng++  -I /SandBox/Justin/sb/sage-2.8.8.1/local/include   -L/usr/local/lib -o scdd_gmp  simplecdd.o ../lib-src-gmp/libcddgmp.a -lgmp\n\nbecause of a separately-built libgmp there.\n\nThe error produces this complaint:\n/usr/bin/ld: Undefined symbols:\n___gmpq_add\n___gmpq_clear\n___gmpq_cmp\n___gmpq_div\n___gmpq_init\n___gmpq_mul\n___gmpq_set\n___gmpq_sub\n___gmpq_get_d\n___gmpq_set_den\n___gmpq_set_num\n___gmpq_set_si\n___gmpq_set_ui\n___gmpz_clear\n___gmpz_init\n___gmpz_set_si\n___gmpz_set_ui\n___gmpq_canonicalize\n___gmpq_get_den\n___gmpq_get_num\n___gmpz_cmp_ui\n___gmpz_init_set_str\n___gmpz_out_str\n___gmpz_set\n\nIssue created by migration from https://trac.sagemath.org/ticket/972\n\n",
+    "body": "Assignee: @williamstein\n\nI encountered this on Mac OS X (10.4.10), on a dual Quad Xeon system.  The build of cddlib-094b blows up here:\n\nThe build of cddlib-094b blows chunks, with this complaint:\n\ng++  -I /SandBox/Justin/sb/sage-2.8.8.1/local/include   -L/usr/local/lib -o scdd_gmp  simplecdd.o ../lib-src-gmp/libcddgmp.a -lgmp\n\nbecause of a separately-built libgmp there.\n\nThe error produces this complaint:\n/usr/bin/ld: Undefined symbols:\n___gmpq_add\n___gmpq_clear\n___gmpq_cmp\n___gmpq_div\n___gmpq_init\n___gmpq_mul\n___gmpq_set\n___gmpq_sub\n___gmpq_get_d\n___gmpq_set_den\n___gmpq_set_num\n___gmpq_set_si\n___gmpq_set_ui\n___gmpz_clear\n___gmpz_init\n___gmpz_set_si\n___gmpz_set_ui\n___gmpq_canonicalize\n___gmpq_get_den\n___gmpq_get_num\n___gmpz_cmp_ui\n___gmpz_init_set_str\n___gmpz_out_str\n___gmpz_set\n\nIssue created by migration from https://trac.sagemath.org/ticket/972\n\n",
     "created_at": "2007-10-23T04:57:34Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_000972.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I encountered this on Mac OS X (10.4.10), on a dual Quad Xeon system.  The build of cddlib-094b blows up here:
 

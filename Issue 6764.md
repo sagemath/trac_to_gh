@@ -3,7 +3,7 @@
 archive/issues_006764.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/9d9b09274f1eab83/79938a2139ba25d9?lnk=gst&q=isr#79938a2139ba25d9\n\nThis patch add the ISR() function for graphs. The Independent Set of Representatives is a generalisation of graph coloring and list coloring, but goes way further ! I tried to take care of the documentation, so you will find some more informations in the docstrings if you need it ! ;-)\n\nThis patch uses Linear Programming, so you will have to first install GLPK (just type sage -i glpk 4.38), then the patch AllMIP at #6502 ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6764\n\n",
+    "body": "Assignee: @rlmill\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/9d9b09274f1eab83/79938a2139ba25d9?lnk=gst&q=isr#79938a2139ba25d9\n\nThis patch add the ISR() function for graphs. The Independent Set of Representatives is a generalisation of graph coloring and list coloring, but goes way further ! I tried to take care of the documentation, so you will find some more informations in the docstrings if you need it ! ;-)\n\nThis patch uses Linear Programming, so you will have to first install GLPK (just type sage -i glpk 4.38), then the patch AllMIP at #6502 ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6764\n\n",
     "created_at": "2009-08-16T17:06:55Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_006764.json:
     "title": "[with patch, needs review]  Independent Set of Reresentatives (uses Linear Programming)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6764",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 See http://groups.google.com/group/sage-devel/browse_thread/thread/9d9b09274f1eab83/79938a2139ba25d9?lnk=gst&q=isr#79938a2139ba25d9
 
@@ -41,7 +41,7 @@ archive/issue_comments_055697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55697",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_055698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55698",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_055699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55699",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_055700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55700",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -116,16 +116,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_055701.json:
 ```json
 {
-    "body": "Attachment [ISR.patch](tarball://root/attachments/some-uuid/ticket6764/ISR.patch) by rlm created at 2009-12-15 16:38:01\n\n1. The doctest needs to be marked as optional.\n\n2. There should be more examples.\n\n3. Whether or not GLPK is installed, the import `from sage.numerical.mip import MIP` fails. I suppose this is a rather old patch, should `MIP` be `MixedIntegerLinearProgram`?\n\n4. \"rebased for 4.3.rc1\" means 4.3.rc0 + #7640 + #7674 + #7673, all of which are merged in rc1.",
+    "body": "Attachment [ISR.patch](tarball://root/attachments/some-uuid/ticket6764/ISR.patch) by @rlmill created at 2009-12-15 16:38:01\n\n1. The doctest needs to be marked as optional.\n\n2. There should be more examples.\n\n3. Whether or not GLPK is installed, the import `from sage.numerical.mip import MIP` fails. I suppose this is a rather old patch, should `MIP` be `MixedIntegerLinearProgram`?\n\n4. \"rebased for 4.3.rc1\" means 4.3.rc0 + #7640 + #7674 + #7673, all of which are merged in rc1.",
     "created_at": "2009-12-15T16:38:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55701",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [ISR.patch](tarball://root/attachments/some-uuid/ticket6764/ISR.patch) by rlm created at 2009-12-15 16:38:01
+Attachment [ISR.patch](tarball://root/attachments/some-uuid/ticket6764/ISR.patch) by @rlmill created at 2009-12-15 16:38:01
 
 1. The doctest needs to be marked as optional.
 
@@ -147,7 +147,7 @@ archive/issue_comments_055702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55702",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_055703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55703",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_055704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55704",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_055705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55705",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_055706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55706",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_055707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55707",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_055708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55708",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_055709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55709",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -286,16 +286,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_055710.json:
 ```json
 {
-    "body": "Attachment [trac_6764.patch](tarball://root/attachments/some-uuid/ticket6764/trac_6764.patch) by ncohen created at 2009-12-16 00:41:57",
+    "body": "Attachment [trac_6764.patch](tarball://root/attachments/some-uuid/ticket6764/trac_6764.patch) by @nathanncohen created at 2009-12-16 00:41:57",
     "created_at": "2009-12-16T00:41:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55710",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_6764.patch](tarball://root/attachments/some-uuid/ticket6764/trac_6764.patch) by ncohen created at 2009-12-16 00:41:57
+Attachment [trac_6764.patch](tarball://root/attachments/some-uuid/ticket6764/trac_6764.patch) by @nathanncohen created at 2009-12-16 00:41:57
 
 
 
@@ -309,7 +309,7 @@ archive/issue_comments_055711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55711",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_055712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6764#issuecomment-55712",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

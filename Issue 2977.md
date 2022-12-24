@@ -3,7 +3,7 @@
 archive/issues_002977.json:
 ```json
 {
-    "body": "Assignee: was\n\nHi,\n\nHere's something unpleasant that occurs in sage-3.0.rc0:\n\n\n```\nsage: wronskian(1, e^(-x), e^(2*x))\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/root/<ipython console> in <module>()\n\n/opt/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/calculus/functions.py in wronskian(*args)\n     80             # if the last argument isn't a variable, just run\n     81             # .derivative on everything \n     82             fs = args\n     83             row = lambda n: map(lambda f: f.derivative(n), fs)\n---> 84         return matrix(map(row, range(len(fs)))).determinant()\n\n/opt/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/calculus/functions.py in <lambda>(n)\n     80             # if the last argument isn't a variable, just run\n     81             # .derivative on everything \n     82             fs = args\n---> 83             row = lambda n: map(lambda f: f.derivative(n), fs)\n     84         return matrix(map(row, range(len(fs)))).determinant()\n\n/opt/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/calculus/functions.py in <lambda>(f)\n     80             # if the last argument isn't a variable, just run\n     81             # .derivative on everything \n     82             fs = args\n---> 83             row = lambda n: map(lambda f: f.derivative(n), fs)\n     84         return matrix(map(row, range(len(fs)))).determinant()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.integer.Integer' object has no attribute 'derivative'\n```\n\n\nThere is an easy fix, see the patch.  I have also removed \"differentiate\" as an alias for \"derivative\", since I seem to remember that the consensus on sage-devel was to keep only \"derivative\" and \"diff\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2977\n\n",
+    "body": "Assignee: @williamstein\n\nHi,\n\nHere's something unpleasant that occurs in sage-3.0.rc0:\n\n\n```\nsage: wronskian(1, e^(-x), e^(2*x))\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/root/<ipython console> in <module>()\n\n/opt/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/calculus/functions.py in wronskian(*args)\n     80             # if the last argument isn't a variable, just run\n     81             # .derivative on everything \n     82             fs = args\n     83             row = lambda n: map(lambda f: f.derivative(n), fs)\n---> 84         return matrix(map(row, range(len(fs)))).determinant()\n\n/opt/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/calculus/functions.py in <lambda>(n)\n     80             # if the last argument isn't a variable, just run\n     81             # .derivative on everything \n     82             fs = args\n---> 83             row = lambda n: map(lambda f: f.derivative(n), fs)\n     84         return matrix(map(row, range(len(fs)))).determinant()\n\n/opt/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/calculus/functions.py in <lambda>(f)\n     80             # if the last argument isn't a variable, just run\n     81             # .derivative on everything \n     82             fs = args\n---> 83             row = lambda n: map(lambda f: f.derivative(n), fs)\n     84         return matrix(map(row, range(len(fs)))).determinant()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.integer.Integer' object has no attribute 'derivative'\n```\n\n\nThere is an easy fix, see the patch.  I have also removed \"differentiate\" as an alias for \"derivative\", since I seem to remember that the consensus on sage-devel was to keep only \"derivative\" and \"diff\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2977\n\n",
     "created_at": "2008-04-21T00:35:15Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002977.json:
     "title": "[with patch, needs review] wronskian is broken on constants",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2977",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Hi,
 
@@ -70,16 +70,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2977
 archive/issue_comments_020506.json:
 ```json
 {
-    "body": "Attachment [wronskian_constants.patch](tarball://root/attachments/some-uuid/ticket2977/wronskian_constants.patch) by mhansen created at 2008-04-21 02:02:32\n\nLooks good to me.",
+    "body": "Attachment [wronskian_constants.patch](tarball://root/attachments/some-uuid/ticket2977/wronskian_constants.patch) by @mwhansen created at 2008-04-21 02:02:32\n\nLooks good to me.",
     "created_at": "2008-04-21T02:02:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2977#issuecomment-20506",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [wronskian_constants.patch](tarball://root/attachments/some-uuid/ticket2977/wronskian_constants.patch) by mhansen created at 2008-04-21 02:02:32
+Attachment [wronskian_constants.patch](tarball://root/attachments/some-uuid/ticket2977/wronskian_constants.patch) by @mwhansen created at 2008-04-21 02:02:32
 
 Looks good to me.
 

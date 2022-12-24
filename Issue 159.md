@@ -3,7 +3,7 @@
 archive/issues_000159.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nKeywords: bessel functions\n\nInconsistent behaviour:\n\n\n```\nsage: bessel_J(2,5.135,\"maxima\")\n0.00021138927993558099\nsage: bessel_J(2,5.136,\"maxima\")\n-0.00012828753895466338\nsage: bessel_J(2,5.135)\n0.0056034700919736996\nsage: bessel_J(2,5.136)\n0.0055939359540343476\nsage: bessel_J(2,5.136,\"pari\")\n0.0055939359540343476\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/159\n\n",
+    "body": "Assignee: @wdjoyner\n\nKeywords: bessel functions\n\nInconsistent behaviour:\n\n\n```\nsage: bessel_J(2,5.135,\"maxima\")\n0.00021138927993558099\nsage: bessel_J(2,5.136,\"maxima\")\n-0.00012828753895466338\nsage: bessel_J(2,5.135)\n0.0056034700919736996\nsage: bessel_J(2,5.136)\n0.0055939359540343476\nsage: bessel_J(2,5.136,\"pari\")\n0.0055939359540343476\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/159\n\n",
     "created_at": "2006-10-28T16:22:30Z",
     "labels": [
         "numerical",
@@ -13,10 +13,10 @@ archive/issues_000159.json:
     "title": "bessel function bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/159",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 Keywords: bessel functions
 
@@ -54,7 +54,7 @@ archive/issue_comments_000712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/159#issuecomment-712",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_000713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/159#issuecomment-713",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

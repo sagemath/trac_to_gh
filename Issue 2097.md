@@ -3,7 +3,7 @@
 archive/issues_002097.json:
 ```json
 {
-    "body": "Assignee: moretti\n\n\n```\nplot(x^2, (x, -10, 10)).show(aspect_ratio=1)\n```\n\n\noutputs a figure which is wide and short. It should be skinny and tall.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2097\n\n",
+    "body": "Assignee: @bobmoretti\n\n\n```\nplot(x^2, (x, -10, 10)).show(aspect_ratio=1)\n```\n\n\noutputs a figure which is wide and short. It should be skinny and tall.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2097\n\n",
     "created_at": "2008-02-08T02:04:14Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002097.json:
     "title": "aspect_ratio option to show() for function plots does not work correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2097",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
-Assignee: moretti
+Assignee: @bobmoretti
 
 
 ```
@@ -43,7 +43,7 @@ archive/issue_comments_013564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2097#issuecomment-13564",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -56,16 +56,16 @@ Fixed in the attached patch.
 archive/issue_comments_013565.json:
 ```json
 {
-    "body": "Attachment [aspect.patch](tarball://root/attachments/some-uuid/ticket2097/aspect.patch) by moretti created at 2008-02-08 02:10:00",
+    "body": "Attachment [aspect.patch](tarball://root/attachments/some-uuid/ticket2097/aspect.patch) by @bobmoretti created at 2008-02-08 02:10:00",
     "created_at": "2008-02-08T02:10:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2097#issuecomment-13565",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
-Attachment [aspect.patch](tarball://root/attachments/some-uuid/ticket2097/aspect.patch) by moretti created at 2008-02-08 02:10:00
+Attachment [aspect.patch](tarball://root/attachments/some-uuid/ticket2097/aspect.patch) by @bobmoretti created at 2008-02-08 02:10:00
 
 
 

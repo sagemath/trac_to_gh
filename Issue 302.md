@@ -3,7 +3,7 @@
 archive/issues_000302.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf the notebook server gets messed up, the notebook server should display a web page in place of any other pages. \n\nIssue created by migration from https://trac.sagemath.org/ticket/302\n\n",
+    "body": "Assignee: @williamstein\n\nIf the notebook server gets messed up, the notebook server should display a web page in place of any other pages. \n\nIssue created by migration from https://trac.sagemath.org/ticket/302\n\n",
     "created_at": "2007-03-01T06:04:32Z",
     "labels": [
         "notebook",
@@ -17,7 +17,7 @@ archive/issues_000302.json:
     "user": "TimothyClemans"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If the notebook server gets messed up, the notebook server should display a web page in place of any other pages. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_001437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/302#issuecomment-1437",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_001438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/302#issuecomment-1438",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

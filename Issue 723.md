@@ -3,7 +3,7 @@
 archive/issues_000723.json:
 ```json
 {
-    "body": "Assignee: was\n\nMagma's LLL is... way way way faster than the one in LLL.  E.g., (this requires patch #325)\n\n```\nsage: a = random_matrix(ZZ,200)\nsage: time b=a.lll()\nCPU times: user 8.74 s, sys: 0.08 s, total: 8.83 s\nWall time: 8.85\n\nsage: m = magma(a)\nsage: time c=m.LLL()\nWall time: 1.02\n\nsage: a = random_matrix(ZZ,400)\nsage: time b=a.lll()\nCPU times: user 202.89 s, sys: 1.54 s, total: 204.44 s\nWall time: 206.16\nsage: time c=magma(a)\nCPU times: user 0.24 s, sys: 0.02 s, total: 0.26 s\nWall time: 0.38\nsage: time d=c.LLL()\nWall time: 13.23\n\n\n```\n\n\nIt would also be good to benchmark PARI's LLL and compare.\nMake sure to use the 1 option, so it knows the matrix is integral:\n\n\n```\nsage: a = random_matrix(ZZ,100)\nsage: time b=a.lll()\nCPU times: user 0.53 s, sys: 0.00 s, total: 0.53 s\nWall time: 0.53\nsage: c = pari(a)\nsage: time d=c.qflll(1)\nCPU times: user 0.47 s, sys: 0.00 s, total: 0.47 s\nWall time: 0.47\nsage: a = random_matrix(ZZ,200)\nsage: time b=a.lll()\nCPU times: user 9.02 s, sys: 0.06 s, total: 9.08 s\nWall time: 9.14\nsage: c = pari(a)\nsage: time d=c.qflll(1)\nCPU times: user 9.88 s, sys: 0.05 s, total: 9.93 s\nWall time: 9.95\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/723\n\n",
+    "body": "Assignee: @williamstein\n\nMagma's LLL is... way way way faster than the one in LLL.  E.g., (this requires patch #325)\n\n```\nsage: a = random_matrix(ZZ,200)\nsage: time b=a.lll()\nCPU times: user 8.74 s, sys: 0.08 s, total: 8.83 s\nWall time: 8.85\n\nsage: m = magma(a)\nsage: time c=m.LLL()\nWall time: 1.02\n\nsage: a = random_matrix(ZZ,400)\nsage: time b=a.lll()\nCPU times: user 202.89 s, sys: 1.54 s, total: 204.44 s\nWall time: 206.16\nsage: time c=magma(a)\nCPU times: user 0.24 s, sys: 0.02 s, total: 0.26 s\nWall time: 0.38\nsage: time d=c.LLL()\nWall time: 13.23\n\n\n```\n\n\nIt would also be good to benchmark PARI's LLL and compare.\nMake sure to use the 1 option, so it knows the matrix is integral:\n\n\n```\nsage: a = random_matrix(ZZ,100)\nsage: time b=a.lll()\nCPU times: user 0.53 s, sys: 0.00 s, total: 0.53 s\nWall time: 0.53\nsage: c = pari(a)\nsage: time d=c.qflll(1)\nCPU times: user 0.47 s, sys: 0.00 s, total: 0.47 s\nWall time: 0.47\nsage: a = random_matrix(ZZ,200)\nsage: time b=a.lll()\nCPU times: user 9.02 s, sys: 0.06 s, total: 9.08 s\nWall time: 9.14\nsage: c = pari(a)\nsage: time d=c.qflll(1)\nCPU times: user 9.88 s, sys: 0.05 s, total: 9.93 s\nWall time: 9.95\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/723\n\n",
     "created_at": "2007-09-20T23:28:12Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000723.json:
     "title": "Make Sage's LLL faster: Magma seems to totally blow Sage (i.e., NTL) away for large-ish problems.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/723",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Magma's LLL is... way way way faster than the one in LLL.  E.g., (this requires patch #325)
 
@@ -85,7 +85,7 @@ archive/issue_comments_004211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/723#issuecomment-4211",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_004212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/723#issuecomment-4212",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -143,16 +143,16 @@ The attached patch exposes NTL's floating point LLL implementations which are si
 archive/issue_comments_004213.json:
 ```json
 {
-    "body": "Attachment [ntls-fp-lll.patch](tarball://root/attachments/some-uuid/ticket723/ntls-fp-lll.patch) by malb created at 2007-09-21 23:33:59",
+    "body": "Attachment [ntls-fp-lll.patch](tarball://root/attachments/some-uuid/ticket723/ntls-fp-lll.patch) by @malb created at 2007-09-21 23:33:59",
     "created_at": "2007-09-21T23:33:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/723#issuecomment-4213",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [ntls-fp-lll.patch](tarball://root/attachments/some-uuid/ticket723/ntls-fp-lll.patch) by malb created at 2007-09-21 23:33:59
+Attachment [ntls-fp-lll.patch](tarball://root/attachments/some-uuid/ticket723/ntls-fp-lll.patch) by @malb created at 2007-09-21 23:33:59
 
 
 
@@ -166,7 +166,7 @@ archive/issue_comments_004214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/723#issuecomment-4214",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_004215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/723#issuecomment-4215",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_004216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/723#issuecomment-4216",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_004217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/723#issuecomment-4217",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_004218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/723#issuecomment-4218",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_004219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/723#issuecomment-4219",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

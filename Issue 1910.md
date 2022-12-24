@@ -3,7 +3,7 @@
 archive/issues_001910.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1910\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1910\n\n",
     "created_at": "2008-01-24T15:17:11Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001910.json:
     "title": "linear algebra -- doctesting for sage/matrix/matrix_field_dense.pyx is off for no good reason, and there are lots of problems when we turn it on.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1910",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_012102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1910#issuecomment-12102",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 

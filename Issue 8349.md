@@ -3,7 +3,7 @@
 archive/issues_008349.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nKeywords: isogeny, elliptic curves\n\nSomething is wrong with the post_isomorphism of isogenies of elliptic curves :\n\n\n```\nsage: E = EllipticCurve(GF(17), [0,-1,0,-3,-1])\nsage: P = E([16,0])\nsage: phi = E.isogeny(P,codomain=E)\nsage: phi(P)\n(9 : 11 : 1)\nsage: phi(P) in E\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8349\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: isogeny, elliptic curves\n\nSomething is wrong with the post_isomorphism of isogenies of elliptic curves :\n\n\n```\nsage: E = EllipticCurve(GF(17), [0,-1,0,-3,-1])\nsage: P = E([16,0])\nsage: phi = E.isogeny(P,codomain=E)\nsage: phi(P)\n(9 : 11 : 1)\nsage: phi(P) in E\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8349\n\n",
     "created_at": "2010-02-24T17:38:51Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_008349.json:
     "title": "bug in isogenies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8349",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Keywords: isogeny, elliptic curves
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8349
 archive/issue_comments_074554.json:
 ```json
 {
-    "body": "Attachment [trac_8349.patch](tarball://root/attachments/some-uuid/ticket8349/trac_8349.patch) by craigcitro created at 2010-02-24 18:35:48",
+    "body": "Attachment [trac_8349.patch](tarball://root/attachments/some-uuid/ticket8349/trac_8349.patch) by @craigcitro created at 2010-02-24 18:35:48",
     "created_at": "2010-02-24T18:35:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8349#issuecomment-74554",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_8349.patch](tarball://root/attachments/some-uuid/ticket8349/trac_8349.patch) by craigcitro created at 2010-02-24 18:35:48
+Attachment [trac_8349.patch](tarball://root/attachments/some-uuid/ticket8349/trac_8349.patch) by @craigcitro created at 2010-02-24 18:35:48
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_074555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8349#issuecomment-74555",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_074556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8349#issuecomment-74556",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_074557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8349#issuecomment-74557",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_074558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8349#issuecomment-74558",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -148,16 +148,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074559.json:
 ```json
 {
-    "body": "Attachment [trac_8349.2.patch](tarball://root/attachments/some-uuid/ticket8349/trac_8349.2.patch) by wuthrich created at 2010-02-24 19:02:53",
+    "body": "Attachment [trac_8349.2.patch](tarball://root/attachments/some-uuid/ticket8349/trac_8349.2.patch) by @categorie created at 2010-02-24 19:02:53",
     "created_at": "2010-02-24T19:02:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8349#issuecomment-74559",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_8349.2.patch](tarball://root/attachments/some-uuid/ticket8349/trac_8349.2.patch) by wuthrich created at 2010-02-24 19:02:53
+Attachment [trac_8349.2.patch](tarball://root/attachments/some-uuid/ticket8349/trac_8349.2.patch) by @categorie created at 2010-02-24 19:02:53
 
 
 
@@ -171,7 +171,7 @@ archive/issue_comments_074560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8349#issuecomment-74560",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_074561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8349#issuecomment-74561",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_074562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8349#issuecomment-74562",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_074563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8349#issuecomment-74563",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_074564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8349#issuecomment-74564",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_074565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8349#issuecomment-74565",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001502.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is wrong:\n\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(z, 2)\nsage: f(2,5)\nGamma(5, 2)\n```\n\n\nIt should be\n\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\n\nNote that this works:\n\n\n```\nsage: f(z,w) = function('Gamma'); f\n(z, w) |--> Gamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1502\n\n",
+    "body": "Assignee: @williamstein\n\nThis is wrong:\n\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(z, 2)\nsage: f(2,5)\nGamma(5, 2)\n```\n\n\nIt should be\n\n\n```\nsage: f = function('Gamma', var('z'), var('w')); f\nGamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\n\nNote that this works:\n\n\n```\nsage: f(z,w) = function('Gamma'); f\n(z, w) |--> Gamma(z, w)\nsage: f(2)\nGamma(2, w)\nsage: f(2,5)\nGamma(2, 5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1502\n\n",
     "created_at": "2007-12-14T05:41:19Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001502.json:
     "title": "calculus -- bug in argument ordering for formal functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1502",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is wrong:
 
@@ -69,16 +69,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1502
 archive/issue_comments_009627.json:
 ```json
 {
-    "body": "Attachment [1502.patch](tarball://root/attachments/some-uuid/ticket1502/1502.patch) by mhansen created at 2007-12-14 06:42:08",
+    "body": "Attachment [1502.patch](tarball://root/attachments/some-uuid/ticket1502/1502.patch) by @mwhansen created at 2007-12-14 06:42:08",
     "created_at": "2007-12-14T06:42:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1502#issuecomment-9627",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1502.patch](tarball://root/attachments/some-uuid/ticket1502/1502.patch) by mhansen created at 2007-12-14 06:42:08
+Attachment [1502.patch](tarball://root/attachments/some-uuid/ticket1502/1502.patch) by @mwhansen created at 2007-12-14 06:42:08
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_009628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1502#issuecomment-9628",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_009629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1502#issuecomment-9629",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -123,16 +123,16 @@ Apply after #553 .
 archive/issue_comments_009630.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-12-14T06:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1502#issuecomment-9630",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 

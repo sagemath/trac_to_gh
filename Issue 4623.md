@@ -14,7 +14,7 @@ archive/issues_004623.json:
     "title": "x^2 is wrong in RealIntervalField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4623",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: somebody
@@ -48,7 +48,7 @@ archive/issue_comments_034765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4623#issuecomment-34765",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -61,16 +61,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_034766.json:
 ```json
 {
-    "body": "Attachment [11285.patch](tarball://root/attachments/some-uuid/ticket4623/11285.patch) by zimmerma created at 2009-01-22 21:14:17\n\nThe attachment fixes that problem, and adds some doctest examples.\n\nFor the reviewer:\n* I'm not sure divmod is the best way to test if a number is even\n* I'm not sure .abs() is the best way to force the lower bound to 0\n\nNote also that x^0 returns 1, which is not an interval (but that was already the case before\nthat patch).",
+    "body": "Attachment [11285.patch](tarball://root/attachments/some-uuid/ticket4623/11285.patch) by @zimmermann6 created at 2009-01-22 21:14:17\n\nThe attachment fixes that problem, and adds some doctest examples.\n\nFor the reviewer:\n* I'm not sure divmod is the best way to test if a number is even\n* I'm not sure .abs() is the best way to force the lower bound to 0\n\nNote also that x^0 returns 1, which is not an interval (but that was already the case before\nthat patch).",
     "created_at": "2009-01-22T21:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4623#issuecomment-34766",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [11285.patch](tarball://root/attachments/some-uuid/ticket4623/11285.patch) by zimmerma created at 2009-01-22 21:14:17
+Attachment [11285.patch](tarball://root/attachments/some-uuid/ticket4623/11285.patch) by @zimmermann6 created at 2009-01-22 21:14:17
 
 The attachment fixes that problem, and adds some doctest examples.
 
@@ -88,16 +88,16 @@ that patch).
 archive/issue_comments_034767.json:
 ```json
 {
-    "body": "Attachment [trac_4623.patch](tarball://root/attachments/some-uuid/ticket4623/trac_4623.patch) by AlexGhitza created at 2009-01-24 07:05:15\n\napply on top of the previous patch",
+    "body": "Attachment [trac_4623.patch](tarball://root/attachments/some-uuid/ticket4623/trac_4623.patch) by @aghitza created at 2009-01-24 07:05:15\n\napply on top of the previous patch",
     "created_at": "2009-01-24T07:05:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4623#issuecomment-34767",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_4623.patch](tarball://root/attachments/some-uuid/ticket4623/trac_4623.patch) by AlexGhitza created at 2009-01-24 07:05:15
+Attachment [trac_4623.patch](tarball://root/attachments/some-uuid/ticket4623/trac_4623.patch) by @aghitza created at 2009-01-24 07:05:15
 
 apply on top of the previous patch
 
@@ -113,7 +113,7 @@ archive/issue_comments_034768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4623#issuecomment-34768",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_034769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4623#issuecomment-34769",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -192,16 +192,16 @@ Merged in Sage 3.3.alpha2
 archive/issue_comments_034772.json:
 ```json
 {
-    "body": "Attachment [trac_4623_2.patch](tarball://root/attachments/some-uuid/ticket4623/trac_4623_2.patch) by zimmerma created at 2009-01-24 19:34:33",
+    "body": "Attachment [trac_4623_2.patch](tarball://root/attachments/some-uuid/ticket4623/trac_4623_2.patch) by @zimmermann6 created at 2009-01-24 19:34:33",
     "created_at": "2009-01-24T19:34:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4623#issuecomment-34772",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_4623_2.patch](tarball://root/attachments/some-uuid/ticket4623/trac_4623_2.patch) by zimmerma created at 2009-01-24 19:34:33
+Attachment [trac_4623_2.patch](tarball://root/attachments/some-uuid/ticket4623/trac_4623_2.patch) by @zimmermann6 created at 2009-01-24 19:34:33
 
 
 

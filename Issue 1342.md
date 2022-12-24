@@ -3,7 +3,7 @@
 archive/issues_001342.json:
 ```json
 {
-    "body": "Assignee: was\n\nNotice that the parent of a changes below when you do a*a!!\n\n\n```\nsage: K.<z> = CyclotomicField(7)\nsage: P = K.factor_integer(17)[0][0]\nsage: ff = K.residue_field(P)\nsage: a = ff(z)\nsage: parent(a)\nResidue field of Fractional ideal (17)\nsage: parent(a*a)\nFinite Field in z of size 17^6\n```\n\n\nThis doesn't happen if 17 is replaced by something much smaller.\nThe problem is an optimization in finite field pari element, which\nhas two separate parent attributes. BAD.  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1342\n\n",
+    "body": "Assignee: @williamstein\n\nNotice that the parent of a changes below when you do a*a!!\n\n\n```\nsage: K.<z> = CyclotomicField(7)\nsage: P = K.factor_integer(17)[0][0]\nsage: ff = K.residue_field(P)\nsage: a = ff(z)\nsage: parent(a)\nResidue field of Fractional ideal (17)\nsage: parent(a*a)\nFinite Field in z of size 17^6\n```\n\n\nThis doesn't happen if 17 is replaced by something much smaller.\nThe problem is an optimization in finite field pari element, which\nhas two separate parent attributes. BAD.  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1342\n\n",
     "created_at": "2007-11-30T09:16:28Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001342.json:
     "title": "very serious bug in number field residue_field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1342",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Notice that the parent of a changes below when you do a*a!!
 
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1342
 archive/issue_comments_008609.json:
 ```json
 {
-    "body": "Attachment [trac1342-part2.patch](tarball://root/attachments/some-uuid/ticket1342/trac1342-part2.patch) by was created at 2007-12-02 03:45:16",
+    "body": "Attachment [trac1342-part2.patch](tarball://root/attachments/some-uuid/ticket1342/trac1342-part2.patch) by @williamstein created at 2007-12-02 03:45:16",
     "created_at": "2007-12-02T03:45:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1342#issuecomment-8609",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac1342-part2.patch](tarball://root/attachments/some-uuid/ticket1342/trac1342-part2.patch) by was created at 2007-12-02 03:45:16
+Attachment [trac1342-part2.patch](tarball://root/attachments/some-uuid/ticket1342/trac1342-part2.patch) by @williamstein created at 2007-12-02 03:45:16
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_008610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1342#issuecomment-8610",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

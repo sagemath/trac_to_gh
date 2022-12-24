@@ -3,7 +3,7 @@
 archive/issues_000212.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: m = MatrixSpace(RDF,1000).random_element()\nsage: time n=m.numpy('f')\nCPU time: 2.97 s,  Wall time: 3.00 s\nsage: import numpy\nsage: time k=numpy.dot(n,n)\nCPU time: 0.20 s,  Wall time: 0.11 s\nsage: time z=m*m\nCPU time: 3.69 s,  Wall time: 3.79 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/212\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: m = MatrixSpace(RDF,1000).random_element()\nsage: time n=m.numpy('f')\nCPU time: 2.97 s,  Wall time: 3.00 s\nsage: import numpy\nsage: time k=numpy.dot(n,n)\nCPU time: 0.20 s,  Wall time: 0.11 s\nsage: time z=m*m\nCPU time: 3.69 s,  Wall time: 3.79 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/212\n\n",
     "created_at": "2007-01-24T02:25:08Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000212.json:
     "title": "gsl matrix multiply too slow -- ???",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/212",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -145,7 +145,7 @@ archive/issue_comments_000955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/212#issuecomment-955",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_000956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/212",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/212#issuecomment-956",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

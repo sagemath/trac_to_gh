@@ -3,7 +3,7 @@
 archive/issues_006631.json:
 ```json
 {
-    "body": "Assignee: Franco Saliola\n\nCC:  slabbe\n\nKeywords: words\n\nThe current implementation of the method `is_lyndon` is too slow\n\n```\nsage: c = words.ChristoffelWord(380447,34369)\nsage: c\nLower Christoffel word of slope 380447/34369 over Ordered Alphabet [0, 1]\nsage: c.length()\n414816\nsage: time c.is_lyndon()\nCPU times: user 84.15 s, sys: 0.17 s, total: 84.33 s\nWall time: 84.52 s\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6631\n\n",
+    "body": "Assignee: Franco Saliola\n\nCC:  @seblabbe\n\nKeywords: words\n\nThe current implementation of the method `is_lyndon` is too slow\n\n```\nsage: c = words.ChristoffelWord(380447,34369)\nsage: c\nLower Christoffel word of slope 380447/34369 over Ordered Alphabet [0, 1]\nsage: c.length()\n414816\nsage: time c.is_lyndon()\nCPU times: user 84.15 s, sys: 0.17 s, total: 84.33 s\nWall time: 84.52 s\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6631\n\n",
     "created_at": "2009-07-26T22:04:26Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_006631.json:
     "title": "speed up is_lyndon method for words",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6631",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 Assignee: Franco Saliola
 
-CC:  slabbe
+CC:  @seblabbe
 
 Keywords: words
 
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6631
 archive/issue_comments_054340.json:
 ```json
 {
-    "body": "Attachment [trac_6631-is_lyndon.2.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-is_lyndon.2.patch) by saliola created at 2009-07-26 22:13:10\n\nDO NOT APPLY!",
+    "body": "Attachment [trac_6631-is_lyndon.2.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-is_lyndon.2.patch) by @saliola created at 2009-07-26 22:13:10\n\nDO NOT APPLY!",
     "created_at": "2009-07-26T22:13:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6631#issuecomment-54340",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_6631-is_lyndon.2.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-is_lyndon.2.patch) by saliola created at 2009-07-26 22:13:10
+Attachment [trac_6631-is_lyndon.2.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-is_lyndon.2.patch) by @saliola created at 2009-07-26 22:13:10
 
 DO NOT APPLY!
 
@@ -74,7 +74,7 @@ archive/issue_comments_054341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6631#issuecomment-54341",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_054342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6631#issuecomment-54342",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_054343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6631#issuecomment-54343",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -152,16 +152,16 @@ return i == 0
 archive/issue_comments_054344.json:
 ```json
 {
-    "body": "Attachment [trac_6631-is_lyndon.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-is_lyndon.patch) by saliola created at 2009-07-27 10:02:08\n\ndepends on #6627;",
+    "body": "Attachment [trac_6631-is_lyndon.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-is_lyndon.patch) by @saliola created at 2009-07-27 10:02:08\n\ndepends on #6627;",
     "created_at": "2009-07-27T10:02:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6631#issuecomment-54344",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_6631-is_lyndon.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-is_lyndon.patch) by saliola created at 2009-07-27 10:02:08
+Attachment [trac_6631-is_lyndon.patch](tarball://root/attachments/some-uuid/ticket6631/trac_6631-is_lyndon.patch) by @saliola created at 2009-07-27 10:02:08
 
 depends on #6627;
 
@@ -177,7 +177,7 @@ archive/issue_comments_054345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6631#issuecomment-54345",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

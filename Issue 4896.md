@@ -3,7 +3,7 @@
 archive/issues_004896.json:
 ```json
 {
-    "body": "Assignee: was\n\nMake it so all the following work:\n\n```\nsage: magma(QQ['x,y'].0).sage()\n```\n\n\nNote that a huge number of sage-->magma conversions for ring elements now work.  To find examples where the converse doesn't work, use this script:\n\n\n```\nsage: for R in sage.rings.tests.random_rings(): print R, magma(R.random_element()).sage()\n```\n\nafter applying #4779.\n\nWhen the above loop runs for \"a while\" without crashing (after applying #4779), then this ticket can be closed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4896\n\n",
+    "body": "Assignee: @williamstein\n\nMake it so all the following work:\n\n```\nsage: magma(QQ['x,y'].0).sage()\n```\n\n\nNote that a huge number of sage-->magma conversions for ring elements now work.  To find examples where the converse doesn't work, use this script:\n\n\n```\nsage: for R in sage.rings.tests.random_rings(): print R, magma(R.random_element()).sage()\n```\n\nafter applying #4779.\n\nWhen the above loop runs for \"a while\" without crashing (after applying #4779), then this ticket can be closed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4896\n\n",
     "created_at": "2008-12-31T02:33:36Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004896.json:
     "title": "fill in missing magma --> sage conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4896",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Make it so all the following work:
 
@@ -75,7 +75,7 @@ archive/issue_comments_037121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4896#issuecomment-37121",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_037122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4896#issuecomment-37122",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_037123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4896#issuecomment-37123",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_037124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4896#issuecomment-37124",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_037125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4896#issuecomment-37125",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_037126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4896#issuecomment-37126",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_037129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4896#issuecomment-37129",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_037130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4896#issuecomment-37130",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

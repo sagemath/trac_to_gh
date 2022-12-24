@@ -14,7 +14,7 @@ archive/issues_000456.json:
     "title": "TypeError: unable to coerce to a ComplexNumber",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/456",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: somebody
@@ -70,7 +70,7 @@ archive/issue_comments_002283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/456#issuecomment-2283",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002906.json:
     "title": "notebook -- there is a \"sagetex\" command; it is untested and completely broken right now.  remove it (i.e., don't export to top level all.py)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2906",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

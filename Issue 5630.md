@@ -3,7 +3,7 @@
 archive/issues_005630.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: spec doctest latex\n\nThe attached patch adds a `_latex_()` method for Spec's of rings and improves the doctest coverage of `spec.py` from 42% (3 of 7) to 75% (6 of 8).\n\nThe two remaining methods are currently involved in other tickets that will also take care of adding doctests: see #5629 for `dimension()` and #5479 for `__call__()`\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5630\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: spec doctest latex\n\nThe attached patch adds a `_latex_()` method for Spec's of rings and improves the doctest coverage of `spec.py` from 42% (3 of 7) to 75% (6 of 8).\n\nThe two remaining methods are currently involved in other tickets that will also take care of adding doctests: see #5629 for `dimension()` and #5479 for `__call__()`\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5630\n\n",
     "created_at": "2009-03-29T04:55:42Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_005630.json:
     "title": "improve doctest coverage for schemes/generic/spec.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5630",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: spec doctest latex
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5630
 archive/issue_comments_043966.json:
 ```json
 {
-    "body": "Changing assignee from was to AlexGhitza.",
+    "body": "Changing assignee from @williamstein to @aghitza.",
     "created_at": "2009-03-29T08:16:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5630#issuecomment-43966",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to AlexGhitza.
+Changing assignee from @williamstein to @aghitza.
 
 
 
@@ -60,7 +60,7 @@ archive/issue_comments_043967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5630#issuecomment-43967",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_043968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5630#issuecomment-43968",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,16 +121,16 @@ If you fix this one issue, then this will get "positive review" from me.
 archive/issue_comments_043969.json:
 ```json
 {
-    "body": "Attachment [trac_5630.patch](tarball://root/attachments/some-uuid/ticket5630/trac_5630.patch) by AlexGhitza created at 2009-03-29 21:08:35\n\nAh, I had misinterpreted the existing docstring for `_cmp_`.  I removed the offending doctest (the one with `Spec(QQ) == 5` is already there) and clarified the docstring a little bit.\n\nNew patch is up replacing the old one.",
+    "body": "Attachment [trac_5630.patch](tarball://root/attachments/some-uuid/ticket5630/trac_5630.patch) by @aghitza created at 2009-03-29 21:08:35\n\nAh, I had misinterpreted the existing docstring for `_cmp_`.  I removed the offending doctest (the one with `Spec(QQ) == 5` is already there) and clarified the docstring a little bit.\n\nNew patch is up replacing the old one.",
     "created_at": "2009-03-29T21:08:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5630#issuecomment-43969",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5630.patch](tarball://root/attachments/some-uuid/ticket5630/trac_5630.patch) by AlexGhitza created at 2009-03-29 21:08:35
+Attachment [trac_5630.patch](tarball://root/attachments/some-uuid/ticket5630/trac_5630.patch) by @aghitza created at 2009-03-29 21:08:35
 
 Ah, I had misinterpreted the existing docstring for `_cmp_`.  I removed the offending doctest (the one with `Spec(QQ) == 5` is already there) and clarified the docstring a little bit.
 

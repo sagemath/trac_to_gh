@@ -14,7 +14,7 @@ archive/issues_004324.json:
     "title": "[with patch, needs review] fix storage of GBs for PolyBoRi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4324",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tbd
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4324
 archive/issue_comments_031680.json:
 ```json
 {
-    "body": "Attachment [pbori_bugfix.patch](tarball://root/attachments/some-uuid/ticket4324/pbori_bugfix.patch) by malb created at 2008-10-19 15:54:40",
+    "body": "Attachment [pbori_bugfix.patch](tarball://root/attachments/some-uuid/ticket4324/pbori_bugfix.patch) by @malb created at 2008-10-19 15:54:40",
     "created_at": "2008-10-19T15:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4324#issuecomment-31680",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [pbori_bugfix.patch](tarball://root/attachments/some-uuid/ticket4324/pbori_bugfix.patch) by malb created at 2008-10-19 15:54:40
+Attachment [pbori_bugfix.patch](tarball://root/attachments/some-uuid/ticket4324/pbori_bugfix.patch) by @malb created at 2008-10-19 15:54:40
 
 
 

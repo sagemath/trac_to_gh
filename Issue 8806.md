@@ -14,7 +14,7 @@ archive/issues_008806.json:
     "title": "update the README.txt in sage-4.4.1 to reflect improved platform and compiler support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8806",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mvngu
@@ -57,7 +57,7 @@ archive/issue_comments_080800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8806#issuecomment-80800",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_080803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8806#issuecomment-80803",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

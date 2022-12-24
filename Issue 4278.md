@@ -3,7 +3,7 @@
 archive/issues_004278.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  mhansen\n\nBefore\n\n\n```\nsage: QQ['q,t'].coerce_map_from(int)\nsage:\n```\n\n\nAfter\n\n\n```\nComposite map:\n  From: Set of Python objects of type 'int'\n  To:   Multivariate Polynomial Ring in q, t over Rational Field\n  Defn:   Native morphism:\n          From: Set of Python objects of type 'int'\n          To:   Integer Ring\n        then\n          Call morphism:\n          From: Integer Ring\n          To:   Multivariate Polynomial Ring in q, t over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4278\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @mwhansen\n\nBefore\n\n\n```\nsage: QQ['q,t'].coerce_map_from(int)\nsage:\n```\n\n\nAfter\n\n\n```\nComposite map:\n  From: Set of Python objects of type 'int'\n  To:   Multivariate Polynomial Ring in q, t over Rational Field\n  Defn:   Native morphism:\n          From: Set of Python objects of type 'int'\n          To:   Integer Ring\n        then\n          Call morphism:\n          From: Integer Ring\n          To:   Multivariate Polynomial Ring in q, t over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4278\n\n",
     "created_at": "2008-10-13T21:24:42Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_004278.json:
     "title": "[with patch, needs review] Old parent's don't correctly handle coerce maps from Python's native types.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4278",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  mhansen
+CC:  @mwhansen
 
 Before
 
@@ -58,16 +58,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4278
 archive/issue_comments_031282.json:
 ```json
 {
-    "body": "Attachment [trac_4278.patch](tarball://root/attachments/some-uuid/ticket4278/trac_4278.patch) by robertwb created at 2008-10-14 10:59:59\n\nLooks good to me.",
+    "body": "Attachment [trac_4278.patch](tarball://root/attachments/some-uuid/ticket4278/trac_4278.patch) by @robertwb created at 2008-10-14 10:59:59\n\nLooks good to me.",
     "created_at": "2008-10-14T10:59:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4278#issuecomment-31282",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac_4278.patch](tarball://root/attachments/some-uuid/ticket4278/trac_4278.patch) by robertwb created at 2008-10-14 10:59:59
+Attachment [trac_4278.patch](tarball://root/attachments/some-uuid/ticket4278/trac_4278.patch) by @robertwb created at 2008-10-14 10:59:59
 
 Looks good to me.
 
@@ -105,7 +105,7 @@ archive/issue_comments_031284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4278#issuecomment-31284",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_031287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4278#issuecomment-31287",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -351,16 +351,16 @@ attachment:trac_4278_2.patch should fix the problems with the first patch.
 archive/issue_comments_031288.json:
 ```json
 {
-    "body": "Attachment [trac_4278_2.patch](tarball://root/attachments/some-uuid/ticket4278/trac_4278_2.patch) by mhansen created at 2008-10-24 02:52:26\n\n+1 for Burcin's patch.",
+    "body": "Attachment [trac_4278_2.patch](tarball://root/attachments/some-uuid/ticket4278/trac_4278_2.patch) by @mwhansen created at 2008-10-24 02:52:26\n\n+1 for Burcin's patch.",
     "created_at": "2008-10-24T02:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4278#issuecomment-31288",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4278_2.patch](tarball://root/attachments/some-uuid/ticket4278/trac_4278_2.patch) by mhansen created at 2008-10-24 02:52:26
+Attachment [trac_4278_2.patch](tarball://root/attachments/some-uuid/ticket4278/trac_4278_2.patch) by @mwhansen created at 2008-10-24 02:52:26
 
 +1 for Burcin's patch.
 
@@ -463,7 +463,7 @@ archive/issue_comments_031292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4278#issuecomment-31292",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_031293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4278#issuecomment-31293",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_031294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4278#issuecomment-31294",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -545,7 +545,7 @@ archive/issue_comments_031295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4278#issuecomment-31295",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -558,16 +558,16 @@ apply only this patch
 archive/issue_comments_031296.json:
 ```json
 {
-    "body": "Attachment [4278-final.patch](tarball://root/attachments/some-uuid/ticket4278/4278-final.patch) by robertwb created at 2008-11-14 07:09:22\n\nThe segfault was due to #4520, and in the process I streamlined this patch.",
+    "body": "Attachment [4278-final.patch](tarball://root/attachments/some-uuid/ticket4278/4278-final.patch) by @robertwb created at 2008-11-14 07:09:22\n\nThe segfault was due to #4520, and in the process I streamlined this patch.",
     "created_at": "2008-11-14T07:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4278#issuecomment-31296",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4278-final.patch](tarball://root/attachments/some-uuid/ticket4278/4278-final.patch) by robertwb created at 2008-11-14 07:09:22
+Attachment [4278-final.patch](tarball://root/attachments/some-uuid/ticket4278/4278-final.patch) by @robertwb created at 2008-11-14 07:09:22
 
 The segfault was due to #4520, and in the process I streamlined this patch.
 
@@ -583,7 +583,7 @@ archive/issue_comments_031297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4278#issuecomment-31297",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

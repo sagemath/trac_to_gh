@@ -14,7 +14,7 @@ archive/issues_001031.json:
     "title": "Add Py_ssize_t info to developer manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1031",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_006300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1031#issuecomment-6300",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002818.json:
     "title": "notebook -- document most functions in js.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2818",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

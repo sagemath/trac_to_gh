@@ -3,7 +3,7 @@
 archive/issues_007379.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mpatel robert.marik timdumol mhansen was mhampton\n\nA user should be able to specify a layout for interact controls.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7379\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777 @robert-marik @TimDumol @mwhansen @williamstein mhampton\n\nA user should be able to specify a layout for interact controls.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7379\n\n",
     "created_at": "2009-11-03T09:54:31Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007379.json:
     "title": "layout interact controls",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7379",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  mpatel robert.marik timdumol mhansen was mhampton
+CC:  @qed777 @robert-marik @TimDumol @mwhansen @williamstein mhampton
 
 A user should be able to specify a layout for interact controls.
 
@@ -39,7 +39,7 @@ archive/issue_comments_062053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62053",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -130,16 +130,16 @@ diff -r 69309549b229 notebook/interact.py
 archive/issue_comments_062054.json:
 ```json
 {
-    "body": "Attachment [trac-7379-interact-table-layout.patch](tarball://root/attachments/some-uuid/ticket7379/trac-7379-interact-table-layout.patch) by jason created at 2010-05-13 07:47:10\n\nFOR SAGENB REPOSITORY",
+    "body": "Attachment [trac-7379-interact-table-layout.patch](tarball://root/attachments/some-uuid/ticket7379/trac-7379-interact-table-layout.patch) by @jasongrout created at 2010-05-13 07:47:10\n\nFOR SAGENB REPOSITORY",
     "created_at": "2010-05-13T07:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62054",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7379-interact-table-layout.patch](tarball://root/attachments/some-uuid/ticket7379/trac-7379-interact-table-layout.patch) by jason created at 2010-05-13 07:47:10
+Attachment [trac-7379-interact-table-layout.patch](tarball://root/attachments/some-uuid/ticket7379/trac-7379-interact-table-layout.patch) by @jasongrout created at 2010-05-13 07:47:10
 
 FOR SAGENB REPOSITORY
 
@@ -150,16 +150,16 @@ FOR SAGENB REPOSITORY
 archive/issue_comments_062055.json:
 ```json
 {
-    "body": "Attachment [trac-7379-decorator-defaults.patch](tarball://root/attachments/some-uuid/ticket7379/trac-7379-decorator-defaults.patch) by jason created at 2010-05-13 07:48:51\n\nFOR SAGE DEVEL REPOSITORY",
+    "body": "Attachment [trac-7379-decorator-defaults.patch](tarball://root/attachments/some-uuid/ticket7379/trac-7379-decorator-defaults.patch) by @jasongrout created at 2010-05-13 07:48:51\n\nFOR SAGE DEVEL REPOSITORY",
     "created_at": "2010-05-13T07:48:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62055",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7379-decorator-defaults.patch](tarball://root/attachments/some-uuid/ticket7379/trac-7379-decorator-defaults.patch) by jason created at 2010-05-13 07:48:51
+Attachment [trac-7379-decorator-defaults.patch](tarball://root/attachments/some-uuid/ticket7379/trac-7379-decorator-defaults.patch) by @jasongrout created at 2010-05-13 07:48:51
 
 FOR SAGE DEVEL REPOSITORY
 
@@ -175,7 +175,7 @@ archive/issue_comments_062056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62056",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_062057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62057",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_062058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62058",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_062059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62059",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_062060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62060",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_062062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62062",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_062063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62063",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_062064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62064",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_062065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62065",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_062066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62066",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -418,16 +418,16 @@ I'm posting a fix to the auto_update doctest that Marshall mentioned on #8959.
 archive/issue_comments_062067.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2010-05-16T04:46:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62067",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 
@@ -477,7 +477,7 @@ archive/issue_comments_062070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62070",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_062071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62071",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_062072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62072",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_062073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62073",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -579,7 +579,7 @@ archive/issue_comments_062074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62074",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_062075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62075",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -615,7 +615,7 @@ archive/issue_comments_062076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62076",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_062077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62077",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_062078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7379#issuecomment-62078",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

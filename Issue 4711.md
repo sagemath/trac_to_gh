@@ -3,7 +3,7 @@
 archive/issues_004711.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\n\n```\n\n[10:16pm] mabshoff: gfurnish: just hit another race condition with ptest:\n[10:16pm] mabshoff: sage -t  devel/sage/sage/gsl/gsl_sf_result.pxi\n[10:16pm] mabshoff: Error running /scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/sage-doctest, since file gsl_sf_result.pxi does not exist.\n[10:16pm] mabshoff: It is probably the same as the one where the doctest is only half written\n[10:16pm] gfurnish: hm \n[10:17pm] gfurnish: don't touch anything\n[10:17pm] gfurnish: let me look in your directory\n[10:17pm] mabshoff: mk\n[10:17pm] You are now known as mabs|ds0.\n[10:17pm] You are now known as mab|ds9.\n[10:17pm] mab|ds9:\n[10:17pm] gfurnish: nothing in tmp dir?\n[10:18pm] gfurnish: oh nm\n[10:18pm] mab|ds9: The last line of the output was also \"sage -t  devel/sage/sage/gsl/gsl_sf_result.pxi # File not found\"\n[10:18pm] gfurnish: that sounds like a ptest bug.\n[10:19pm] gfurnish: yeah um\n[10:19pm] gfurnish: I know whats causing that problem\n[10:19pm] gfurnish: make a ticket\n[10:20pm] gfurnish: I fixed the bug in pbuild\n[10:20pm] mab|ds9: Is it orthogonal to the other race condition then I assume?\n[10:21pm] gfurnish: I think so\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4711\n\n",
+    "body": "Assignee: @garyfurnish\n\n\n```\n\n[10:16pm] mabshoff: gfurnish: just hit another race condition with ptest:\n[10:16pm] mabshoff: sage -t  devel/sage/sage/gsl/gsl_sf_result.pxi\n[10:16pm] mabshoff: Error running /scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/sage-doctest, since file gsl_sf_result.pxi does not exist.\n[10:16pm] mabshoff: It is probably the same as the one where the doctest is only half written\n[10:16pm] gfurnish: hm \n[10:17pm] gfurnish: don't touch anything\n[10:17pm] gfurnish: let me look in your directory\n[10:17pm] mabshoff: mk\n[10:17pm] You are now known as mabs|ds0.\n[10:17pm] You are now known as mab|ds9.\n[10:17pm] mab|ds9:\n[10:17pm] gfurnish: nothing in tmp dir?\n[10:18pm] gfurnish: oh nm\n[10:18pm] mab|ds9: The last line of the output was also \"sage -t  devel/sage/sage/gsl/gsl_sf_result.pxi # File not found\"\n[10:18pm] gfurnish: that sounds like a ptest bug.\n[10:19pm] gfurnish: yeah um\n[10:19pm] gfurnish: I know whats causing that problem\n[10:19pm] gfurnish: make a ticket\n[10:20pm] gfurnish: I fixed the bug in pbuild\n[10:20pm] mab|ds9: Is it orthogonal to the other race condition then I assume?\n[10:21pm] gfurnish: I think so\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4711\n\n",
     "created_at": "2008-12-05T06:24:50Z",
     "labels": [
         "build",
@@ -17,7 +17,7 @@ archive/issues_004711.json:
     "user": "mabshoff"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 
 ```
@@ -104,7 +104,7 @@ archive/issue_comments_035522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4711#issuecomment-35522",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_035523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4711#issuecomment-35523",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

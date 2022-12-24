@@ -3,7 +3,7 @@
 archive/issues_007852.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\nObserve the docstring for solve_left for an RDF matrix:\n\n```\nsage: A = random_matrix(RDF,3)\nsage: A.solve_left?\nSolve the equation A*x = b, where\n        \n        EXAMPLES:\n            sage: A = matrix(RDF, 3,3, [1,2,5,7.6,2.3,1,1,2,-1]); A\n            [ 1.0  2.0  5.0]\n            [ 7.6  2.3  1.0]\n            [ 1.0  2.0 -1.0]\n            sage: b = vector(RDF,[1,2,3])\n            sage: x = A.solve_left(b); x\n            (-0.113695090439, 1.39018087855, -0.333333333333)\n            sage: A*x\n            (1.0, 2.0, 3.0)\n```\n\n\nBut that is solve_right. \n\nThis was evidently introduced by maybe Grout's \"Switch the RDF and CDF matrices to a numpy 1.2 backend; factor out common functionality to matrix_double_dense.pyx.\".\n\nReported by Stephanie Dietzel\n\nIssue created by migration from https://trac.sagemath.org/ticket/7852\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nObserve the docstring for solve_left for an RDF matrix:\n\n```\nsage: A = random_matrix(RDF,3)\nsage: A.solve_left?\nSolve the equation A*x = b, where\n        \n        EXAMPLES:\n            sage: A = matrix(RDF, 3,3, [1,2,5,7.6,2.3,1,1,2,-1]); A\n            [ 1.0  2.0  5.0]\n            [ 7.6  2.3  1.0]\n            [ 1.0  2.0 -1.0]\n            sage: b = vector(RDF,[1,2,3])\n            sage: x = A.solve_left(b); x\n            (-0.113695090439, 1.39018087855, -0.333333333333)\n            sage: A*x\n            (1.0, 2.0, 3.0)\n```\n\n\nBut that is solve_right. \n\nThis was evidently introduced by maybe Grout's \"Switch the RDF and CDF matrices to a numpy 1.2 backend; factor out common functionality to matrix_double_dense.pyx.\".\n\nReported by Stephanie Dietzel\n\nIssue created by migration from https://trac.sagemath.org/ticket/7852\n\n",
     "created_at": "2010-01-05T21:40:18Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_007852.json:
     "title": "solve_left for RDF matrices is WRONG",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7852",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 Observe the docstring for solve_left for an RDF matrix:
 
@@ -63,7 +63,7 @@ archive/issue_comments_068015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68015",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -76,16 +76,16 @@ This might be related to #4932.  I'll put this on my list for the bug day coming
 archive/issue_comments_068016.json:
 ```json
 {
-    "body": "Attachment [trac_7852-solve-linear-systems-CDF.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-solve-linear-systems-CDF.patch) by rbeezer created at 2011-02-24 22:33:43",
+    "body": "Attachment [trac_7852-solve-linear-systems-CDF.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-solve-linear-systems-CDF.patch) by @rbeezer created at 2011-02-24 22:33:43",
     "created_at": "2011-02-24T22:33:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68016",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_7852-solve-linear-systems-CDF.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-solve-linear-systems-CDF.patch) by rbeezer created at 2011-02-24 22:33:43
+Attachment [trac_7852-solve-linear-systems-CDF.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-solve-linear-systems-CDF.patch) by @rbeezer created at 2011-02-24 22:33:43
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_068017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68017",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_068018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68018",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_068019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68019",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_068020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68020",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_068023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68023",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_068024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68024",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_068025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68025",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_068029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68029",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_068030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68030",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -369,16 +369,16 @@ Resolution: fixed
 archive/issue_comments_068031.json:
 ```json
 {
-    "body": "Attachment [trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch) by leif created at 2011-09-26 01:22:48\n\nReviewer patch. Apply on top of main patch, which causes a signed zero on Itanium 2.",
+    "body": "Attachment [trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch) by @nexttime created at 2011-09-26 01:22:48\n\nReviewer patch. Apply on top of main patch, which causes a signed zero on Itanium 2.",
     "created_at": "2011-09-26T01:22:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68031",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch) by leif created at 2011-09-26 01:22:48
+Attachment [trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noise_errors_in_preparser_examples.reviewer.patch) by @nexttime created at 2011-09-26 01:22:48
 
 Reviewer patch. Apply on top of main patch, which causes a signed zero on Itanium 2.
 
@@ -389,16 +389,16 @@ Reviewer patch. Apply on top of main patch, which causes a signed zero on Itaniu
 archive/issue_comments_068032.json:
 ```json
 {
-    "body": "Attachment [trac_7852-fix_noise_errors_in_polys.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noise_errors_in_polys.reviewer.patch) by leif created at 2011-09-26 01:24:49\n\nReviewer patch. Apply on top of main patch, which causes doctests to fail on a couple of systems due to noisy zero terms.",
+    "body": "Attachment [trac_7852-fix_noise_errors_in_polys.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noise_errors_in_polys.reviewer.patch) by @nexttime created at 2011-09-26 01:24:49\n\nReviewer patch. Apply on top of main patch, which causes doctests to fail on a couple of systems due to noisy zero terms.",
     "created_at": "2011-09-26T01:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68032",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_7852-fix_noise_errors_in_polys.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noise_errors_in_polys.reviewer.patch) by leif created at 2011-09-26 01:24:49
+Attachment [trac_7852-fix_noise_errors_in_polys.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noise_errors_in_polys.reviewer.patch) by @nexttime created at 2011-09-26 01:24:49
 
 Reviewer patch. Apply on top of main patch, which causes doctests to fail on a couple of systems due to noisy zero terms.
 
@@ -414,7 +414,7 @@ archive/issue_comments_068033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68033",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_068034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68034",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -449,16 +449,16 @@ Reviewer patch. Apply on top of main patch, which causes another doctest to fail
 archive/issue_comments_068035.json:
 ```json
 {
-    "body": "Attachment [trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch) by leif created at 2011-09-26 02:46:34\n\nThird reviewer patch (fixing a doctest error in `matrix_double_dense.pyx`) is up.",
+    "body": "Attachment [trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch) by @nexttime created at 2011-09-26 02:46:34\n\nThird reviewer patch (fixing a doctest error in `matrix_double_dense.pyx`) is up.",
     "created_at": "2011-09-26T02:46:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68035",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch) by leif created at 2011-09-26 02:46:34
+Attachment [trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-fix_noisy_zero_error_in_matrix_double_dense.reviewer.patch) by @nexttime created at 2011-09-26 02:46:34
 
 Third reviewer patch (fixing a doctest error in `matrix_double_dense.pyx`) is up.
 
@@ -474,7 +474,7 @@ archive/issue_comments_068036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68036",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_068037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68037",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -511,16 +511,16 @@ Reviewer patch. Slightly adjust threshold for noisy zero terms in polynomials, n
 archive/issue_comments_068038.json:
 ```json
 {
-    "body": "Attachment [trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch) by leif created at 2011-09-27 21:52:53\n\nI've attached yet another patch slightly increasing one epsilon, since one doctest still failed on MacOS X 10.6 (due to almost zero terms in a polynomial).",
+    "body": "Attachment [trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch) by @nexttime created at 2011-09-27 21:52:53\n\nI've attached yet another patch slightly increasing one epsilon, since one doctest still failed on MacOS X 10.6 (due to almost zero terms in a polynomial).",
     "created_at": "2011-09-27T21:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68038",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch) by leif created at 2011-09-27 21:52:53
+Attachment [trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch](tarball://root/attachments/some-uuid/ticket7852/trac_7852-adjust_noisy_zero_term_threshold_for_polys.reviewer.patch) by @nexttime created at 2011-09-27 21:52:53
 
 I've attached yet another patch slightly increasing one epsilon, since one doctest still failed on MacOS X 10.6 (due to almost zero terms in a polynomial).
 
@@ -536,7 +536,7 @@ archive/issue_comments_068039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68039",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_068040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68040",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

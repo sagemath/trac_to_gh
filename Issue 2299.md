@@ -3,7 +3,7 @@
 archive/issues_002299.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  ncalexan\n\nKeywords: zero matrix identity one\n\nThis adds the `zero_matrix` convenience constructor, just like `identity_matrix`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2299\n\n",
+    "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nKeywords: zero matrix identity one\n\nThis adds the `zero_matrix` convenience constructor, just like `identity_matrix`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2299\n\n",
     "created_at": "2008-02-25T08:10:33Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_002299.json:
     "title": "[with patch, needs review] add zero_matrix constructor.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2299",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: zero matrix identity one
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2299
 archive/issue_comments_015249.json:
 ```json
 {
-    "body": "Changing assignee from malb to was.",
+    "body": "Changing assignee from @malb to @williamstein.",
     "created_at": "2008-02-25T11:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2299#issuecomment-15249",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from malb to was.
+Changing assignee from @malb to @williamstein.
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_015250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2299#issuecomment-15250",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -72,16 +72,16 @@ Changing component from commutative algebra to linear algebra.
 archive/issue_comments_015251.json:
 ```json
 {
-    "body": "Attachment [2299-ncalexan-zero-matrix-1.patch](tarball://root/attachments/some-uuid/ticket2299/2299-ncalexan-zero-matrix-1.patch) by malb created at 2008-02-25 11:29:23\n\nYou replaced \"n x n\" by \"$n \\times n$\" which reads nicer if typesetted. However, it is harder to comprehend from the command line (`foo?`).\n\nI am not sure that we need `identity_matrix` and `zero_matrix` (i.e. the functional versions of `MS(0)` and `MS(1)`) but that is a matter of taste.",
+    "body": "Attachment [2299-ncalexan-zero-matrix-1.patch](tarball://root/attachments/some-uuid/ticket2299/2299-ncalexan-zero-matrix-1.patch) by @malb created at 2008-02-25 11:29:23\n\nYou replaced \"n x n\" by \"$n \\times n$\" which reads nicer if typesetted. However, it is harder to comprehend from the command line (`foo?`).\n\nI am not sure that we need `identity_matrix` and `zero_matrix` (i.e. the functional versions of `MS(0)` and `MS(1)`) but that is a matter of taste.",
     "created_at": "2008-02-25T11:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2299#issuecomment-15251",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [2299-ncalexan-zero-matrix-1.patch](tarball://root/attachments/some-uuid/ticket2299/2299-ncalexan-zero-matrix-1.patch) by malb created at 2008-02-25 11:29:23
+Attachment [2299-ncalexan-zero-matrix-1.patch](tarball://root/attachments/some-uuid/ticket2299/2299-ncalexan-zero-matrix-1.patch) by @malb created at 2008-02-25 11:29:23
 
 You replaced "n x n" by "$n \times n$" which reads nicer if typesetted. However, it is harder to comprehend from the command line (`foo?`).
 
@@ -99,7 +99,7 @@ archive/issue_comments_015252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2299#issuecomment-15252",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_015253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2299#issuecomment-15253",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_015254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2299#issuecomment-15254",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_015255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2299#issuecomment-15255",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -205,16 +205,16 @@ Full MatrixSpace of 2 by 3 sparse matrices over Integer Ring
 archive/issue_comments_015256.json:
 ```json
 {
-    "body": "Attachment [2299-ncalexan-zero-matrix-2.patch](tarball://root/attachments/some-uuid/ticket2299/2299-ncalexan-zero-matrix-2.patch) by ncalexan created at 2008-02-25 19:13:16",
+    "body": "Attachment [2299-ncalexan-zero-matrix-2.patch](tarball://root/attachments/some-uuid/ticket2299/2299-ncalexan-zero-matrix-2.patch) by @ncalexan created at 2008-02-25 19:13:16",
     "created_at": "2008-02-25T19:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2299#issuecomment-15256",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2299-ncalexan-zero-matrix-2.patch](tarball://root/attachments/some-uuid/ticket2299/2299-ncalexan-zero-matrix-2.patch) by ncalexan created at 2008-02-25 19:13:16
+Attachment [2299-ncalexan-zero-matrix-2.patch](tarball://root/attachments/some-uuid/ticket2299/2299-ncalexan-zero-matrix-2.patch) by @ncalexan created at 2008-02-25 19:13:16
 
 
 
@@ -228,7 +228,7 @@ archive/issue_comments_015257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2299#issuecomment-15257",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_015258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2299#issuecomment-15258",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -261,16 +261,16 @@ Works for me in 2.10.3.alpha0.  Note that only the last patch should be apply an
 archive/issue_comments_015259.json:
 ```json
 {
-    "body": "Attachment [2299.patch](tarball://root/attachments/some-uuid/ticket2299/2299.patch) by mhansen created at 2008-02-27 22:16:00",
+    "body": "Attachment [2299.patch](tarball://root/attachments/some-uuid/ticket2299/2299.patch) by @mwhansen created at 2008-02-27 22:16:00",
     "created_at": "2008-02-27T22:16:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2299#issuecomment-15259",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2299.patch](tarball://root/attachments/some-uuid/ticket2299/2299.patch) by mhansen created at 2008-02-27 22:16:00
+Attachment [2299.patch](tarball://root/attachments/some-uuid/ticket2299/2299.patch) by @mwhansen created at 2008-02-27 22:16:00
 
 
 
@@ -284,7 +284,7 @@ archive/issue_comments_015260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2299#issuecomment-15260",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

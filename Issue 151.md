@@ -3,7 +3,7 @@
 archive/issues_000151.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nOn Wed, 25 Oct 2006 15:42:31 -0500, Justin C. Walker <justin@mac.com> wrote:\n> On Oct 25, 2006, at 12:50 PM, Kate Minola wrote:\n>> Running sage-1.4.1.2 on my x86_64-Linux system,\n>> if I run the following command:\n>>\n>> maxima.eval(\"-(1/2)*taylor (sqrt (1-4*x^2), x, 0, 15)\")\n>>\n>> and then quit, I find that there is a process\n>> 'lisp.run' unexpectedly still running on my system\n>> (and using up CPU resources).\n>>\n>> Does this happen on anyone else's system?\n>\n> I've tried this specific sequence (run the above; exit) several\n> times, and it doesn't happen for me (Mac OS X, 32-bit, Intellimac).\n>\n> When you quit, do you recall whether you saw this:\n>\n> Exiting SAGE (CPU time 0m0.11s, Wall time 0m10.64s).\n> Exiting spawned Maxima process.\n\nI just observed the problem on sage.math.  (64-bit amd linux).\nIt doesn't happen on OS X.  The code's identical, so I guess \nthings like killpg work better on OS X...  In any case, I consider\nthis a very serious bug, and *will* add extra code to deal with it\nbetter on Linux 64-bit. \n\nI've posted this to trac.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/151\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nOn Wed, 25 Oct 2006 15:42:31 -0500, Justin C. Walker <justin@mac.com> wrote:\n> On Oct 25, 2006, at 12:50 PM, Kate Minola wrote:\n>> Running sage-1.4.1.2 on my x86_64-Linux system,\n>> if I run the following command:\n>>\n>> maxima.eval(\"-(1/2)*taylor (sqrt (1-4*x^2), x, 0, 15)\")\n>>\n>> and then quit, I find that there is a process\n>> 'lisp.run' unexpectedly still running on my system\n>> (and using up CPU resources).\n>>\n>> Does this happen on anyone else's system?\n>\n> I've tried this specific sequence (run the above; exit) several\n> times, and it doesn't happen for me (Mac OS X, 32-bit, Intellimac).\n>\n> When you quit, do you recall whether you saw this:\n>\n> Exiting SAGE (CPU time 0m0.11s, Wall time 0m10.64s).\n> Exiting spawned Maxima process.\n\nI just observed the problem on sage.math.  (64-bit amd linux).\nIt doesn't happen on OS X.  The code's identical, so I guess \nthings like killpg work better on OS X...  In any case, I consider\nthis a very serious bug, and *will* add extra code to deal with it\nbetter on Linux 64-bit. \n\nI've posted this to trac.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/151\n\n",
     "created_at": "2006-10-25T21:07:01Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000151.json:
     "title": "clisp.run being left running",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/151",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -70,7 +70,7 @@ archive/issue_comments_000687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/151#issuecomment-687",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_000688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/151#issuecomment-688",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_000689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/151#issuecomment-689",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_000690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/151#issuecomment-690",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_000691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/151#issuecomment-691",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_000692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/151#issuecomment-692",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_000693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/151#issuecomment-693",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_000694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/151#issuecomment-694",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_000695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/151#issuecomment-695",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

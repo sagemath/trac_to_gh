@@ -3,7 +3,7 @@
 archive/issues_002242.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nIt's available here:\n\nhttp://sage.math.washington.edu/home/jason/nauty-24b7.spkg\n\nIt is the 2.4 beta 7 version, since Brendan says that it is pretty stable.  It would be trivial to make a nauty 2.2 stable version if people wanted it.\n\nThis is the spkg for #1306.  Now we just need to make the interface in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2242\n\n",
+    "body": "Assignee: @rlmill\n\nIt's available here:\n\nhttp://sage.math.washington.edu/home/jason/nauty-24b7.spkg\n\nIt is the 2.4 beta 7 version, since Brendan says that it is pretty stable.  It would be trivial to make a nauty 2.2 stable version if people wanted it.\n\nThis is the spkg for #1306.  Now we just need to make the interface in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2242\n\n",
     "created_at": "2008-02-21T00:41:09Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002242.json:
     "title": "optional nauty package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2242",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 It's available here:
 
@@ -43,7 +43,7 @@ archive/issue_comments_014853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2242#issuecomment-14853",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_014854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2242#issuecomment-14854",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_014855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2242#issuecomment-14855",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_014856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2242#issuecomment-14856",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -140,16 +140,16 @@ The patch depends on the is_package_installed function, which won't appear until
 archive/issue_comments_014857.json:
 ```json
 {
-    "body": "Attachment [nauty_geng.patch](tarball://root/attachments/some-uuid/ticket2242/nauty_geng.patch) by rlm created at 2008-02-21 07:15:51\n\nIs there a better way to call nauty than from the command line? Is there some way to call the functions directly, by compiling nauty as a shared object, dynamic library, or something?",
+    "body": "Attachment [nauty_geng.patch](tarball://root/attachments/some-uuid/ticket2242/nauty_geng.patch) by @rlmill created at 2008-02-21 07:15:51\n\nIs there a better way to call nauty than from the command line? Is there some way to call the functions directly, by compiling nauty as a shared object, dynamic library, or something?",
     "created_at": "2008-02-21T07:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2242#issuecomment-14857",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [nauty_geng.patch](tarball://root/attachments/some-uuid/ticket2242/nauty_geng.patch) by rlm created at 2008-02-21 07:15:51
+Attachment [nauty_geng.patch](tarball://root/attachments/some-uuid/ticket2242/nauty_geng.patch) by @rlmill created at 2008-02-21 07:15:51
 
 Is there a better way to call nauty than from the command line? Is there some way to call the functions directly, by compiling nauty as a shared object, dynamic library, or something?
 
@@ -165,7 +165,7 @@ archive/issue_comments_014858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2242#issuecomment-14858",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_014859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2242#issuecomment-14859",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_014860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2242#issuecomment-14860",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -242,16 +242,16 @@ Michael
 archive/issue_comments_014862.json:
 ```json
 {
-    "body": "Attachment [2242.patch](tarball://root/attachments/some-uuid/ticket2242/2242.patch) by mhansen created at 2008-04-07 08:45:48\n\nI think this should go in now.  I've updated the patch against 3.0.alpha2, and only 2242.patch should be applied.  The spkg installs fine on sage.math, and the code passes tests.",
+    "body": "Attachment [2242.patch](tarball://root/attachments/some-uuid/ticket2242/2242.patch) by @mwhansen created at 2008-04-07 08:45:48\n\nI think this should go in now.  I've updated the patch against 3.0.alpha2, and only 2242.patch should be applied.  The spkg installs fine on sage.math, and the code passes tests.",
     "created_at": "2008-04-07T08:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2242#issuecomment-14862",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2242.patch](tarball://root/attachments/some-uuid/ticket2242/2242.patch) by mhansen created at 2008-04-07 08:45:48
+Attachment [2242.patch](tarball://root/attachments/some-uuid/ticket2242/2242.patch) by @mwhansen created at 2008-04-07 08:45:48
 
 I think this should go in now.  I've updated the patch against 3.0.alpha2, and only 2242.patch should be applied.  The spkg installs fine on sage.math, and the code passes tests.
 

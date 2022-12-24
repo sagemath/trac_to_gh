@@ -3,7 +3,7 @@
 archive/issues_000490.json:
 ```json
 {
-    "body": "Assignee: was\n\nHello,\n\nnot to be surprised by a new gcc version I have started building gcc 4.3 snapshots (20070824 in this particular case) and compile Sage with them. Here is a problem with gmp.h\n\nGivaro's gmp test fails:\n\n```\ng++ -I ../../../../local/include/ -L ../../../../local/lib/ -l gmp  gcc-test.cpp -o gcc-test\nIn file included from gcc-test.cpp:1:\n../../../../local/include/gmp.h:515: error: \u2018std::FILE\u2019 has not been declared\n```\n\nUncommenting \"std::FILE\" fixes the problem.\n\n```\n#if defined (__cplusplus)\nextern \"C\" {\n//using std::FILE;\n#endif\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/490\n\n",
+    "body": "Assignee: @williamstein\n\nHello,\n\nnot to be surprised by a new gcc version I have started building gcc 4.3 snapshots (20070824 in this particular case) and compile Sage with them. Here is a problem with gmp.h\n\nGivaro's gmp test fails:\n\n```\ng++ -I ../../../../local/include/ -L ../../../../local/lib/ -l gmp  gcc-test.cpp -o gcc-test\nIn file included from gcc-test.cpp:1:\n../../../../local/include/gmp.h:515: error: \u2018std::FILE\u2019 has not been declared\n```\n\nUncommenting \"std::FILE\" fixes the problem.\n\n```\n#if defined (__cplusplus)\nextern \"C\" {\n//using std::FILE;\n#endif\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/490\n\n",
     "created_at": "2007-08-25T23:13:13Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_000490.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Hello,
 
@@ -52,7 +52,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/490
 archive/issue_comments_002447.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-08-25T23:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/490",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_002447.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -206,7 +206,7 @@ archive/issue_comments_002454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/490#issuecomment-2454",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

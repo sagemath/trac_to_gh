@@ -14,7 +14,7 @@ archive/issues_007426.json:
     "title": "fix mpir spkg to correctly detect OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7426",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -52,7 +52,7 @@ archive/issue_comments_062496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7426#issuecomment-62496",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_062497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7426#issuecomment-62497",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_062500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7426#issuecomment-62500",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_062501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7426",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7426#issuecomment-62501",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

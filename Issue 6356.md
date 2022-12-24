@@ -13,7 +13,7 @@ archive/issues_006356.json:
     "title": "Implement sage -t notebook.sws",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6356",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: tbd
@@ -42,7 +42,7 @@ archive/issue_comments_050832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6356#issuecomment-50832",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_050833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6356#issuecomment-50833",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

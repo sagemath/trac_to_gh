@@ -14,7 +14,7 @@ archive/issues_006260.json:
     "title": "sage -startuptime is totally broken in sage-4.0.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6260",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6260
 archive/issue_comments_049990.json:
 ```json
 {
-    "body": "Attachment [trac_6260-apply_to_scripts_repo.patch](tarball://root/attachments/some-uuid/ticket6260/trac_6260-apply_to_scripts_repo.patch) by was created at 2009-06-11 15:38:26",
+    "body": "Attachment [trac_6260-apply_to_scripts_repo.patch](tarball://root/attachments/some-uuid/ticket6260/trac_6260-apply_to_scripts_repo.patch) by @williamstein created at 2009-06-11 15:38:26",
     "created_at": "2009-06-11T15:38:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6260#issuecomment-49990",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6260-apply_to_scripts_repo.patch](tarball://root/attachments/some-uuid/ticket6260/trac_6260-apply_to_scripts_repo.patch) by was created at 2009-06-11 15:38:26
+Attachment [trac_6260-apply_to_scripts_repo.patch](tarball://root/attachments/some-uuid/ticket6260/trac_6260-apply_to_scripts_repo.patch) by @williamstein created at 2009-06-11 15:38:26
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_049991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6260#issuecomment-49991",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_049992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6260#issuecomment-49992",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002249.json:
     "title": "[with patch; needs review] comments to indicate in docstrings that log is not finished in some cases for p-adics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2249",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody

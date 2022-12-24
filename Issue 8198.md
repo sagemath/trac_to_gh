@@ -3,7 +3,7 @@
 archive/issues_008198.json:
 ```json
 {
-    "body": "Assignee: roed\n\nCC:  niles jpflori\n\nKeywords: padics vector\n\nTrying to resolve #4656, I found the following unpleasant bug.\n\nthis looks good :\n\n```\nsage: R = Qp(5,5)\nsage: x = R(5).add_bigoh(1)\nsage: x\nO(5)\nsage: x*R(1)\nO(5)\n```\n\n\nBut when multiplied with the identity matrix the precision is lost\n\n```\nsage: I = matrix(R, [[1,0],[0,1]])\nsage: v = vector([R(1),x])\nsage: v\n(1 + O(5^5), O(5))\nsage: v*I\n(1 + O(5^5), 0)\nsage: v[0]*I[1,0] + v[1]*I[1,1]\nO(5)\n```\n\n\nThis causes things like\n\n```\nsage: M = matrix(R,[[1,2],[3,4]])\nsage: M*v\n(1 + O(5^5), 3 + O(5^5))\nsage: v[0]*M[0,0] + v[1]*M[0,1]\n1 + O(5)\nsage: v[0]*M[1,0] + v[1]*M[1,1]\n3 + O(5)\n```\n\n\nThis is an even worse example, which could be a different bug\n\n```\nsage: vv = vector(x)\nsage: vv\n(0)\nsage: vv[0]\n0\nsage: x\nO(5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8198\n\n",
+    "body": "Assignee: @roed314\n\nCC:  @nilesjohnson jpflori\n\nKeywords: padics vector\n\nTrying to resolve #4656, I found the following unpleasant bug.\n\nthis looks good :\n\n```\nsage: R = Qp(5,5)\nsage: x = R(5).add_bigoh(1)\nsage: x\nO(5)\nsage: x*R(1)\nO(5)\n```\n\n\nBut when multiplied with the identity matrix the precision is lost\n\n```\nsage: I = matrix(R, [[1,0],[0,1]])\nsage: v = vector([R(1),x])\nsage: v\n(1 + O(5^5), O(5))\nsage: v*I\n(1 + O(5^5), 0)\nsage: v[0]*I[1,0] + v[1]*I[1,1]\nO(5)\n```\n\n\nThis causes things like\n\n```\nsage: M = matrix(R,[[1,2],[3,4]])\nsage: M*v\n(1 + O(5^5), 3 + O(5^5))\nsage: v[0]*M[0,0] + v[1]*M[0,1]\n1 + O(5)\nsage: v[0]*M[1,0] + v[1]*M[1,1]\n3 + O(5)\n```\n\n\nThis is an even worse example, which could be a different bug\n\n```\nsage: vv = vector(x)\nsage: vv\n(0)\nsage: vv[0]\n0\nsage: x\nO(5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8198\n\n",
     "created_at": "2010-02-05T22:52:30Z",
     "labels": [
         "padics",
@@ -14,12 +14,12 @@ archive/issues_008198.json:
     "title": "p-adic precision in vector multiplication",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8198",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
-CC:  niles jpflori
+CC:  @nilesjohnson jpflori
 
 Keywords: padics vector
 
@@ -93,7 +93,7 @@ archive/issue_comments_072294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8198#issuecomment-72294",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_072295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8198#issuecomment-72295",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_072296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8198#issuecomment-72296",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_072297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8198#issuecomment-72297",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_072298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8198#issuecomment-72298",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_072299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8198#issuecomment-72299",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_072300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8198#issuecomment-72300",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_072301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8198#issuecomment-72301",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_072302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8198#issuecomment-72302",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_072303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8198#issuecomment-72303",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_072304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8198#issuecomment-72304",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_072305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8198#issuecomment-72305",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_072306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8198#issuecomment-72306",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

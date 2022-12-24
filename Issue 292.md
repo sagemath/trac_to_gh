@@ -14,7 +14,7 @@ archive/issues_000292.json:
     "title": "Problems with stacked polynomial rings and vector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/292",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: somebody
@@ -54,7 +54,7 @@ archive/issue_comments_001382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/292#issuecomment-1382",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_001383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/292#issuecomment-1383",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

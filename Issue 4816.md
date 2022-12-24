@@ -118,7 +118,7 @@ archive/issue_comments_036512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4816#issuecomment-36512",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -131,16 +131,16 @@ I'll put up a patch for this in a minute.
 archive/issue_comments_036513.json:
 ```json
 {
-    "body": "Attachment [trac-4816.patch](tarball://root/attachments/some-uuid/ticket4816/trac-4816.patch) by cremona created at 2008-12-16 17:00:11",
+    "body": "Attachment [trac-4816.patch](tarball://root/attachments/some-uuid/ticket4816/trac-4816.patch) by @JohnCremona created at 2008-12-16 17:00:11",
     "created_at": "2008-12-16T17:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4816#issuecomment-36513",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4816.patch](tarball://root/attachments/some-uuid/ticket4816/trac-4816.patch) by cremona created at 2008-12-16 17:00:11
+Attachment [trac-4816.patch](tarball://root/attachments/some-uuid/ticket4816/trac-4816.patch) by @JohnCremona created at 2008-12-16 17:00:11
 
 
 
@@ -154,7 +154,7 @@ archive/issue_comments_036514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4816#issuecomment-36514",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_036519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4816#issuecomment-36519",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003033.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf sage is compiled without the --incref-local-binop for Cython, calculus/equations.py segfaults.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3033\n\n",
+    "body": "Assignee: @williamstein\n\nIf sage is compiled without the --incref-local-binop for Cython, calculus/equations.py segfaults.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3033\n\n",
     "created_at": "2008-04-26T22:15:19Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003033.json:
     "title": "equations.py segfaults without --incref-local-binop cython flag",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3033",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If sage is compiled without the --incref-local-binop for Cython, calculus/equations.py segfaults.
 
@@ -37,7 +37,7 @@ archive/issue_comments_020877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3033#issuecomment-20877",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

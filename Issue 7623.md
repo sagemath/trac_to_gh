@@ -3,7 +3,7 @@
 archive/issues_007623.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  iandrus georgsweber\n\nThis was first requested in #5261, but no one is quite sure how to do it yet.   This would be the last thing to make OSX stuff more or less automatic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7623\n\n",
+    "body": "Assignee: tbd\n\nCC:  @gvol georgsweber\n\nThis was first requested in #5261, but no one is quite sure how to do it yet.   This would be the last thing to make OSX stuff more or less automatic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7623\n\n",
     "created_at": "2009-12-08T15:29:09Z",
     "labels": [
         "distribution",
@@ -14,12 +14,12 @@ archive/issues_007623.json:
     "title": "Name OS X distributions automatically for PPC or Intel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7623",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tbd
 
-CC:  iandrus georgsweber
+CC:  @gvol georgsweber
 
 This was first requested in #5261, but no one is quite sure how to do it yet.   This would be the last thing to make OSX stuff more or less automatic.
 
@@ -83,7 +83,7 @@ archive/issue_comments_065138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7623#issuecomment-65138",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_065139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7623#issuecomment-65139",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_065140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7623#issuecomment-65140",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_065141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7623#issuecomment-65141",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

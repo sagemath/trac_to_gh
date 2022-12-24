@@ -14,7 +14,7 @@ archive/issues_004484.json:
     "title": "make a platform_quirks.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4484",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: mabshoff
@@ -55,7 +55,7 @@ archive/issue_comments_033121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4484#issuecomment-33121",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_033122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4484#issuecomment-33122",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_033123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4484#issuecomment-33123",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_033124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4484#issuecomment-33124",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007287.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  alexghitza mhansen\n\nIn order to use Maxima as a library via ECL, we need to have maxima as a lisp library rather than a stand-alone executable.\n\nhttp://sage.math.washington.edu/home/nbruin/maxima-5.19.1.p1.spkg\n\nimplements this change. With this package properly installed, one can have the following session:\n\n```\n$ sage -ecl\nECL (Embeddable Common-Lisp) 9.8.4\nCopyright (C) 1984 Taiichi Yuasa and Masami Hagiya\nCopyright (C) 1993 Giuseppe Attardi\nCopyright (C) 2000 Juan J. Garcia-Ripoll\nECL is free software, and you are welcome to redistribute it\nunder certain conditions; see file 'Copyright' for details.\nType :h for Help.  \nTop level.\n> (require `maxima)\n\n;;; Loading #P\"/usr/local/sage/4.1.2/local/lib/ecl/maxima.fas\"\n(\"MAXIMA\")\n> (in-package :maxima)\n\n#<\"MAXIMA\" package>\nMAXIMA> #$integrate(cos(x),x)$\n\n((%SIN SIMP) $X)\n```\n\nAttached is the patch between maxima-5.19.1.p0.spkg and maxima-5.19.1.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7287\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  alexghitza @mwhansen\n\nIn order to use Maxima as a library via ECL, we need to have maxima as a lisp library rather than a stand-alone executable.\n\nhttp://sage.math.washington.edu/home/nbruin/maxima-5.19.1.p1.spkg\n\nimplements this change. With this package properly installed, one can have the following session:\n\n```\n$ sage -ecl\nECL (Embeddable Common-Lisp) 9.8.4\nCopyright (C) 1984 Taiichi Yuasa and Masami Hagiya\nCopyright (C) 1993 Giuseppe Attardi\nCopyright (C) 2000 Juan J. Garcia-Ripoll\nECL is free software, and you are welcome to redistribute it\nunder certain conditions; see file 'Copyright' for details.\nType :h for Help.  \nTop level.\n> (require `maxima)\n\n;;; Loading #P\"/usr/local/sage/4.1.2/local/lib/ecl/maxima.fas\"\n(\"MAXIMA\")\n> (in-package :maxima)\n\n#<\"MAXIMA\" package>\nMAXIMA> #$integrate(cos(x),x)$\n\n((%SIN SIMP) $X)\n```\n\nAttached is the patch between maxima-5.19.1.p0.spkg and maxima-5.19.1.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7287\n\n",
     "created_at": "2009-10-25T07:05:24Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_007287.json:
     "title": "[needs review] Update Maxima spkg to build ECL library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7287",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: mabshoff
 
-CC:  alexghitza mhansen
+CC:  alexghitza @mwhansen
 
 In order to use Maxima as a library via ECL, we need to have maxima as a lisp library rather than a stand-alone executable.
 
@@ -67,7 +67,7 @@ archive/issue_comments_060636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60636",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -80,16 +80,16 @@ Patch for maxima spkg
 archive/issue_comments_060637.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to nbruin.",
+    "body": "Changing assignee from mabshoff to @nbruin.",
     "created_at": "2009-10-25T07:09:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60637",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Changing assignee from mabshoff to nbruin.
+Changing assignee from mabshoff to @nbruin.
 
 
 
@@ -98,16 +98,16 @@ Changing assignee from mabshoff to nbruin.
 archive/issue_comments_060638.json:
 ```json
 {
-    "body": "Attachment [maxpackage.patch](tarball://root/attachments/some-uuid/ticket7287/maxpackage.patch) by nbruin created at 2009-10-25 07:09:11",
+    "body": "Attachment [maxpackage.patch](tarball://root/attachments/some-uuid/ticket7287/maxpackage.patch) by @nbruin created at 2009-10-25 07:09:11",
     "created_at": "2009-10-25T07:09:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60638",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [maxpackage.patch](tarball://root/attachments/some-uuid/ticket7287/maxpackage.patch) by nbruin created at 2009-10-25 07:09:11
+Attachment [maxpackage.patch](tarball://root/attachments/some-uuid/ticket7287/maxpackage.patch) by @nbruin created at 2009-10-25 07:09:11
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_060639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60639",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_060640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60640",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_060641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60641",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_060642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60642",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_060643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60643",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_060644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60644",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_060645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60645",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_060646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60646",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_060647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60647",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -463,7 +463,7 @@ archive/issue_comments_060648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60648",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_060649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60649",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_060651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60651",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -579,7 +579,7 @@ archive/issue_comments_060652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60652",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -689,7 +689,7 @@ archive/issue_comments_060655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60655",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -707,7 +707,7 @@ archive/issue_comments_060656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60656",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

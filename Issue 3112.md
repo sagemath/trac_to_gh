@@ -3,7 +3,7 @@
 archive/issues_003112.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  wdj mhansen\n\n\n```\nsage: for B in self_orthogonal_binary_codes(8,3):\n....:     print B.gen_mat()\n....:     print\n....:     \n[1 1]\n\n[1 1 0 0]\n[0 0 1 1]\n\n[1 0 1 0 0 0]\n[0 1 0 1 0 0]\n[0 0 0 0 1 1]\n\n[1 1 1 1]\n\n[1 1 1 1 0 0]\n[0 0 0 0 1 1]\n\n[1 0 1 1 1 0 0 0]\n[0 1 0 0 0 1 0 0]\n[0 0 0 0 0 0 1 1]\n\n[1 0 1 1 1 0 0 0]\n[0 1 0 0 0 1 0 0]\n[0 0 1 0 1 0 1 1]\n\n[1 1 1 1 0 0]\n[0 1 0 1 1 1]\n\n[1 0 1 1 0 1 0]\n[0 1 0 1 1 1 0]\n[0 0 1 0 1 1 1]\n\n[1 0 1 1 0 1 0 0]\n[0 1 0 1 1 1 0 0]\n[0 0 0 1 0 1 1 1]\n\n[1 1 1 1 0 0 0 0]\n[0 0 0 0 1 1 1 1]\n\n[1 1 1 1 1 1]\n\n[1 1 1 1 1 1 0 0]\n[0 0 0 0 0 0 1 1]\n\n[1 1 1 1 1 1 0 0]\n[0 1 0 0 0 1 1 1]\n\n[1 1 1 1 1 1 1 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3112\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @wdjoyner @mwhansen\n\n\n```\nsage: for B in self_orthogonal_binary_codes(8,3):\n....:     print B.gen_mat()\n....:     print\n....:     \n[1 1]\n\n[1 1 0 0]\n[0 0 1 1]\n\n[1 0 1 0 0 0]\n[0 1 0 1 0 0]\n[0 0 0 0 1 1]\n\n[1 1 1 1]\n\n[1 1 1 1 0 0]\n[0 0 0 0 1 1]\n\n[1 0 1 1 1 0 0 0]\n[0 1 0 0 0 1 0 0]\n[0 0 0 0 0 0 1 1]\n\n[1 0 1 1 1 0 0 0]\n[0 1 0 0 0 1 0 0]\n[0 0 1 0 1 0 1 1]\n\n[1 1 1 1 0 0]\n[0 1 0 1 1 1]\n\n[1 0 1 1 0 1 0]\n[0 1 0 1 1 1 0]\n[0 0 1 0 1 1 1]\n\n[1 0 1 1 0 1 0 0]\n[0 1 0 1 1 1 0 0]\n[0 0 0 1 0 1 1 1]\n\n[1 1 1 1 0 0 0 0]\n[0 0 0 0 1 1 1 1]\n\n[1 1 1 1 1 1]\n\n[1 1 1 1 1 1 0 0]\n[0 0 0 0 0 0 1 1]\n\n[1 1 1 1 1 1 0 0]\n[0 1 0 0 0 1 1 1]\n\n[1 1 1 1 1 1 1 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3112\n\n",
     "created_at": "2008-05-06T18:57:03Z",
     "labels": [
         "coding theory",
@@ -14,12 +14,12 @@ archive/issues_003112.json:
     "title": "[with patch, needs review] Generate self-orthogonal binary codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3112",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  wdj mhansen
+CC:  @wdjoyner @mwhansen
 
 
 ```
@@ -115,7 +115,7 @@ archive/issue_comments_021529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21529",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_021530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21530",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_021531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21531",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_021532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21532",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_021533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21533",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_021534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21534",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_021535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21535",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_021536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21536",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_021537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21537",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_021538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21538",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_021539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21539",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_021540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21540",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -464,16 +464,16 @@ These three patches apply cleanly to 3.0.1 and pass sage -testall. I think this 
 archive/issue_comments_021541.json:
 ```json
 {
-    "body": "Attachment [trac-3112-socodes.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-socodes.patch) by rlm created at 2008-05-19 18:26:54\n\nThis is a flat version of the previous three.",
+    "body": "Attachment [trac-3112-socodes.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-socodes.patch) by @rlmill created at 2008-05-19 18:26:54\n\nThis is a flat version of the previous three.",
     "created_at": "2008-05-19T18:26:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21541",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-3112-socodes.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-socodes.patch) by rlm created at 2008-05-19 18:26:54
+Attachment [trac-3112-socodes.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-socodes.patch) by @rlmill created at 2008-05-19 18:26:54
 
 This is a flat version of the previous three.
 
@@ -508,16 +508,16 @@ Michael
 archive/issue_comments_021543.json:
 ```json
 {
-    "body": "Attachment [trac-3112-doc.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-doc.patch) by rlm created at 2008-05-22 05:02:31\n\nThat should do it.",
+    "body": "Attachment [trac-3112-doc.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-doc.patch) by @rlmill created at 2008-05-22 05:02:31\n\nThat should do it.",
     "created_at": "2008-05-22T05:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21543",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-3112-doc.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-doc.patch) by rlm created at 2008-05-22 05:02:31
+Attachment [trac-3112-doc.patch](tarball://root/attachments/some-uuid/ticket3112/trac-3112-doc.patch) by @rlmill created at 2008-05-22 05:02:31
 
 That should do it.
 
@@ -613,7 +613,7 @@ archive/issue_comments_021545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3112#issuecomment-21545",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

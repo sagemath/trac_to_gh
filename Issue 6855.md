@@ -3,7 +3,7 @@
 archive/issues_006855.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was\n\nWorksheets in the Sage notebook can contain live `interact`-ive cells, which may make it easier to understand how an object's properties depend on a set of parameters.\n\nPlease visit the Sage Wiki to view [some examples](http://wiki.sagemath.org/interact).\n\nCurrently, `interact` cells do not work in published worksheets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6855\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein\n\nWorksheets in the Sage notebook can contain live `interact`-ive cells, which may make it easier to understand how an object's properties depend on a set of parameters.\n\nPlease visit the Sage Wiki to view [some examples](http://wiki.sagemath.org/interact).\n\nCurrently, `interact` cells do not work in published worksheets.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6855\n\n",
     "created_at": "2009-09-01T12:31:09Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006855.json:
     "title": "[with patch, needs work] Enable interacts in published worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6855",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
 
-CC:  was
+CC:  @williamstein
 
 Worksheets in the Sage notebook can contain live `interact`-ive cells, which may make it easier to understand how an object's properties depend on a set of parameters.
 
@@ -43,7 +43,7 @@ archive/issue_comments_056526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56526",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_056527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56527",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_056528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56528",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_056529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56529",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -119,16 +119,16 @@ Non-concurrent first version.  sagenb repo.
 archive/issue_comments_056530.json:
 ```json
 {
-    "body": "Attachment [trac_6855-published_interacts.patch](tarball://root/attachments/some-uuid/ticket6855/trac_6855-published_interacts.patch) by mpatel created at 2009-11-26 02:36:57\n\nThe [attachment:trac_6855-published_interacts.patch patch] enables interacts in published worksheets.  Still to do:\n\n* Gracefully handle simultaneous access by multiple clients.\n* Find an alternative to `twist.prep_interact` for rendering the interacts upon load.",
+    "body": "Attachment [trac_6855-published_interacts.patch](tarball://root/attachments/some-uuid/ticket6855/trac_6855-published_interacts.patch) by @qed777 created at 2009-11-26 02:36:57\n\nThe [attachment:trac_6855-published_interacts.patch patch] enables interacts in published worksheets.  Still to do:\n\n* Gracefully handle simultaneous access by multiple clients.\n* Find an alternative to `twist.prep_interact` for rendering the interacts upon load.",
     "created_at": "2009-11-26T02:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56530",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6855-published_interacts.patch](tarball://root/attachments/some-uuid/ticket6855/trac_6855-published_interacts.patch) by mpatel created at 2009-11-26 02:36:57
+Attachment [trac_6855-published_interacts.patch](tarball://root/attachments/some-uuid/ticket6855/trac_6855-published_interacts.patch) by @qed777 created at 2009-11-26 02:36:57
 
 The [attachment:trac_6855-published_interacts.patch patch] enables interacts in published worksheets.  Still to do:
 
@@ -147,7 +147,7 @@ archive/issue_comments_056531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56531",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_056532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56532",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_056533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56533",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -225,16 +225,16 @@ Save and serve the rendered HTML.
 archive/issue_comments_056534.json:
 ```json
 {
-    "body": "Attachment [trac_6855-published_interacts_v2.patch](tarball://root/attachments/some-uuid/ticket6855/trac_6855-published_interacts_v2.patch) by mpatel created at 2009-11-26 07:00:16\n\nRebased vs. rebased #4714.  Updated commit message.  Only this one.  sagenb repo.",
+    "body": "Attachment [trac_6855-published_interacts_v2.patch](tarball://root/attachments/some-uuid/ticket6855/trac_6855-published_interacts_v2.patch) by @qed777 created at 2009-11-26 07:00:16\n\nRebased vs. rebased #4714.  Updated commit message.  Only this one.  sagenb repo.",
     "created_at": "2009-11-26T07:00:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56534",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6855-published_interacts_v2.patch](tarball://root/attachments/some-uuid/ticket6855/trac_6855-published_interacts_v2.patch) by mpatel created at 2009-11-26 07:00:16
+Attachment [trac_6855-published_interacts_v2.patch](tarball://root/attachments/some-uuid/ticket6855/trac_6855-published_interacts_v2.patch) by @qed777 created at 2009-11-26 07:00:16
 
 Rebased vs. rebased #4714.  Updated commit message.  Only this one.  sagenb repo.
 
@@ -250,7 +250,7 @@ archive/issue_comments_056535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56535",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_056536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56536",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_056537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56537",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_056538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56538",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_056539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56539",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_056540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56540",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_056541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56541",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_056542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56542",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_056543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56543",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -476,7 +476,7 @@ archive/issue_comments_056544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56544",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_056545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56545",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_056546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56546",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_056547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6855#issuecomment-56547",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

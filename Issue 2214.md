@@ -3,7 +3,7 @@
 archive/issues_002214.json:
 ```json
 {
-    "body": "Assignee: yi\n\nIf a job has a memory leak, it is not reclaimed when the worker resets itself. If the memory after reset does not go down to \"normal\" (or, say, twice normal) then it should warn the user that the job leaked memory and actually restart the worker. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2214\n\n",
+    "body": "Assignee: @yqiang\n\nIf a job has a memory leak, it is not reclaimed when the worker resets itself. If the memory after reset does not go down to \"normal\" (or, say, twice normal) then it should warn the user that the job leaked memory and actually restart the worker. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2214\n\n",
     "created_at": "2008-02-19T22:05:09Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002214.json:
     "title": "DSage and memory leaks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2214",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 If a job has a memory leak, it is not reclaimed when the worker resets itself. If the memory after reset does not go down to "normal" (or, say, twice normal) then it should warn the user that the job leaked memory and actually restart the worker. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_014625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2214#issuecomment-14625",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_014626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2214#issuecomment-14626",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_014627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2214#issuecomment-14627",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

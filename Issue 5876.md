@@ -3,7 +3,7 @@
 archive/issues_005876.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  georgsweber mtaranes was\n\nKeywords: modular manin symbols\n\nThe P1List() constructor for Manin symbols (elements of `P^1(ZZ/NZZ)` was rather inefficient.  It constructed vastly too many symbols, normalised them all and then deleted duplicates.\n\nThis is quite unnecessary since it is easy to generate the list with no duplicates (and with simpler code).\n\nAs reported on sage-nt:\n\nBefore (3.4.1):\n\n\n```\nsage: time P1List(100000)\nCPU times: user 3.52 s, sys: 0.03 s, total: 3.55 s\nWall time: 3.55 s\nThe projective line over the integers modulo 100000\nsage: time P1List(1000000)\nCPU times: user 129.11 s, sys: 0.64 s, total: 129.75 s\nWall time: 131.96 s\nThe projective line over the integers modulo 1000000\n```\n\n\nAfter:\n\n\n```\nsage: time P1List(100000)\nCPU times: user 0.41 s, sys: 0.01 s, total: 0.42 s\nWall time: 0.42 s\nThe projective line over the integers modulo 100000\nsage: time P1List(1000000)\nCPU times: user 8.33 s, sys: 0.12 s, total: 8.45 s\nWall time: 8.80 s\nThe projective line over the integers modulo 1000000\n```\n\n\nThe patch does this for both versions `p1list_int()` and `p1list_llong()`.\n\nI think similar speedups are possible in the p1_normalise functions which would be significant in practice, and will try to get to that tomorrow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5876\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  georgsweber mtaranes @williamstein\n\nKeywords: modular manin symbols\n\nThe P1List() constructor for Manin symbols (elements of `P^1(ZZ/NZZ)` was rather inefficient.  It constructed vastly too many symbols, normalised them all and then deleted duplicates.\n\nThis is quite unnecessary since it is easy to generate the list with no duplicates (and with simpler code).\n\nAs reported on sage-nt:\n\nBefore (3.4.1):\n\n\n```\nsage: time P1List(100000)\nCPU times: user 3.52 s, sys: 0.03 s, total: 3.55 s\nWall time: 3.55 s\nThe projective line over the integers modulo 100000\nsage: time P1List(1000000)\nCPU times: user 129.11 s, sys: 0.64 s, total: 129.75 s\nWall time: 131.96 s\nThe projective line over the integers modulo 1000000\n```\n\n\nAfter:\n\n\n```\nsage: time P1List(100000)\nCPU times: user 0.41 s, sys: 0.01 s, total: 0.42 s\nWall time: 0.42 s\nThe projective line over the integers modulo 100000\nsage: time P1List(1000000)\nCPU times: user 8.33 s, sys: 0.12 s, total: 8.45 s\nWall time: 8.80 s\nThe projective line over the integers modulo 1000000\n```\n\n\nThe patch does this for both versions `p1list_int()` and `p1list_llong()`.\n\nI think similar speedups are possible in the p1_normalise functions which would be significant in practice, and will try to get to that tomorrow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5876\n\n",
     "created_at": "2009-04-23T16:23:46Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_005876.json:
     "title": "[with patch, needs review] Vast speedup in P1List construction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5876",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  georgsweber mtaranes was
+CC:  georgsweber mtaranes @williamstein
 
 Keywords: modular manin symbols
 
@@ -74,16 +74,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5876
 archive/issue_comments_046413.json:
 ```json
 {
-    "body": "Attachment [p1list.patch](tarball://root/attachments/some-uuid/ticket5876/p1list.patch) by cremona created at 2009-04-23 16:24:46\n\nBased on 3.4.1",
+    "body": "Attachment [p1list.patch](tarball://root/attachments/some-uuid/ticket5876/p1list.patch) by @JohnCremona created at 2009-04-23 16:24:46\n\nBased on 3.4.1",
     "created_at": "2009-04-23T16:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5876#issuecomment-46413",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [p1list.patch](tarball://root/attachments/some-uuid/ticket5876/p1list.patch) by cremona created at 2009-04-23 16:24:46
+Attachment [p1list.patch](tarball://root/attachments/some-uuid/ticket5876/p1list.patch) by @JohnCremona created at 2009-04-23 16:24:46
 
 Based on 3.4.1
 
@@ -99,7 +99,7 @@ archive/issue_comments_046414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5876#issuecomment-46414",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_046415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5876#issuecomment-46415",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_046416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5876#issuecomment-46416",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_046417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5876#issuecomment-46417",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -195,16 +195,16 @@ replaces previous
 archive/issue_comments_046418.json:
 ```json
 {
-    "body": "Attachment [trac_5876.patch](tarball://root/attachments/some-uuid/ticket5876/trac_5876.patch) by cremona created at 2009-04-23 20:03:13\n\nNew patch replaces previous and implements suggestions.  Hard to compare times as I'm on a different machine.",
+    "body": "Attachment [trac_5876.patch](tarball://root/attachments/some-uuid/ticket5876/trac_5876.patch) by @JohnCremona created at 2009-04-23 20:03:13\n\nNew patch replaces previous and implements suggestions.  Hard to compare times as I'm on a different machine.",
     "created_at": "2009-04-23T20:03:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5876#issuecomment-46418",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5876.patch](tarball://root/attachments/some-uuid/ticket5876/trac_5876.patch) by cremona created at 2009-04-23 20:03:13
+Attachment [trac_5876.patch](tarball://root/attachments/some-uuid/ticket5876/trac_5876.patch) by @JohnCremona created at 2009-04-23 20:03:13
 
 New patch replaces previous and implements suggestions.  Hard to compare times as I'm on a different machine.
 
@@ -220,7 +220,7 @@ archive/issue_comments_046419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5876#issuecomment-46419",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_046420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5876#issuecomment-46420",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_046424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5876#issuecomment-46424",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_046426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5876#issuecomment-46426",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008936.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  vbraun\n\nWhile lattice polytopes compute and store facet normals and shifts internally, there were no functions to access them. This patch adds functions facet_normal and facet_constant to fix the situation.\n\nI have also fixed a typo in the docstring of ReflexivePolytope, which has probably occurred during automatic conversion of docstrings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8936\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nWhile lattice polytopes compute and store facet normals and shifts internally, there were no functions to access them. This patch adds functions facet_normal and facet_constant to fix the situation.\n\nI have also fixed a typo in the docstring of ReflexivePolytope, which has probably occurred during automatic conversion of docstrings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8936\n\n",
     "created_at": "2010-05-09T04:24:47Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_008936.json:
     "title": "Expose facet inequalities for lattice polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8936",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
 
-CC:  vbraun
+CC:  @vbraun
 
 While lattice polytopes compute and store facet normals and shifts internally, there were no functions to access them. This patch adds functions facet_normal and facet_constant to fix the situation.
 
@@ -41,7 +41,7 @@ archive/issue_comments_082284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8936#issuecomment-82284",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_review.
 archive/issue_comments_082285.json:
 ```json
 {
-    "body": "Attachment [trac_8936_expose_facet_inequalities_for_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8936/trac_8936_expose_facet_inequalities_for_lattice_polytopes.patch) by novoselt created at 2010-05-09 04:57:08\n\nFixed a mistake in the first version...",
+    "body": "Attachment [trac_8936_expose_facet_inequalities_for_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8936/trac_8936_expose_facet_inequalities_for_lattice_polytopes.patch) by @novoselt created at 2010-05-09 04:57:08\n\nFixed a mistake in the first version...",
     "created_at": "2010-05-09T04:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8936#issuecomment-82285",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8936_expose_facet_inequalities_for_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8936/trac_8936_expose_facet_inequalities_for_lattice_polytopes.patch) by novoselt created at 2010-05-09 04:57:08
+Attachment [trac_8936_expose_facet_inequalities_for_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8936/trac_8936_expose_facet_inequalities_for_lattice_polytopes.patch) by @novoselt created at 2010-05-09 04:57:08
 
 Fixed a mistake in the first version...
 
@@ -79,7 +79,7 @@ archive/issue_comments_082286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8936#issuecomment-82286",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_082287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8936#issuecomment-82287",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_082288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8936#issuecomment-82288",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_082289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8936#issuecomment-82289",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

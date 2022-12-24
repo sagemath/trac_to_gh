@@ -14,7 +14,7 @@ archive/issues_005530.json:
     "title": "add absolute_diameter and relative_diameter to CIF (ComplexIntervalField)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5530",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: somebody

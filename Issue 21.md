@@ -3,7 +3,7 @@
 archive/issues_000021.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  kini saraedum iandrus\n\n`sage -br -notebook` doesn't start the notebook but it should\n\nIssue created by migration from https://trac.sagemath.org/ticket/21\n\n",
+    "body": "Assignee: somebody\n\nCC:  @kini @saraedum @gvol\n\n`sage -br -notebook` doesn't start the notebook but it should\n\nIssue created by migration from https://trac.sagemath.org/ticket/21\n\n",
     "created_at": "2006-09-12T23:21:18Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_000021.json:
     "title": "command line option parsing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/21",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
 
-CC:  kini saraedum iandrus
+CC:  @kini @saraedum @gvol
 
 `sage -br -notebook` doesn't start the notebook but it should
 
@@ -39,7 +39,7 @@ archive/issue_comments_000080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-80",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_000081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-81",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,16 +93,16 @@ Michael
 archive/issue_comments_000083.json:
 ```json
 {
-    "body": "Changing assignee from somebody to gfurnish.",
+    "body": "Changing assignee from somebody to @garyfurnish.",
     "created_at": "2008-03-16T07:59:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-83",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from somebody to gfurnish.
+Changing assignee from somebody to @garyfurnish.
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_000084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-84",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_000085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-85",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -187,7 +187,7 @@ Changing status from assigned to new.
 archive/issue_comments_000088.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to mabshoff.",
+    "body": "Changing assignee from @garyfurnish to mabshoff.",
     "created_at": "2008-09-24T02:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
@@ -196,7 +196,7 @@ archive/issue_comments_000088.json:
 }
 ```
 
-Changing assignee from gfurnish to mabshoff.
+Changing assignee from @garyfurnish to mabshoff.
 
 
 
@@ -228,7 +228,7 @@ archive/issue_comments_000090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-90",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_000091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-91",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -259,16 +259,16 @@ the file SAGE_ROOT/makefile
 archive/issue_comments_000092.json:
 ```json
 {
-    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket21/makefile) by jhpalmieri created at 2010-03-19 15:41:55",
+    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket21/makefile) by @jhpalmieri created at 2010-03-19 15:41:55",
     "created_at": "2010-03-19T15:41:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-92",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [makefile](tarball://root/attachments/some-uuid/ticket21/makefile) by jhpalmieri created at 2010-03-19 15:41:55
+Attachment [makefile](tarball://root/attachments/some-uuid/ticket21/makefile) by @jhpalmieri created at 2010-03-19 15:41:55
 
 
 
@@ -277,16 +277,16 @@ Attachment [makefile](tarball://root/attachments/some-uuid/ticket21/makefile) by
 archive/issue_comments_000093.json:
 ```json
 {
-    "body": "Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket21/makefile.diff) by jhpalmieri created at 2010-03-19 15:42:11\n\nextcode repo",
+    "body": "Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket21/makefile.diff) by @jhpalmieri created at 2010-03-19 15:42:11\n\nextcode repo",
     "created_at": "2010-03-19T15:42:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-93",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket21/makefile.diff) by jhpalmieri created at 2010-03-19 15:42:11
+Attachment [makefile.diff](tarball://root/attachments/some-uuid/ticket21/makefile.diff) by @jhpalmieri created at 2010-03-19 15:42:11
 
 extcode repo
 
@@ -297,16 +297,16 @@ extcode repo
 archive/issue_comments_000094.json:
 ```json
 {
-    "body": "Attachment [trac_21-extcode.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-extcode.patch) by jhpalmieri created at 2010-03-19 15:42:32\n\nsagenb repo",
+    "body": "Attachment [trac_21-extcode.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-extcode.patch) by @jhpalmieri created at 2010-03-19 15:42:32\n\nsagenb repo",
     "created_at": "2010-03-19T15:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-94",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_21-extcode.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-extcode.patch) by jhpalmieri created at 2010-03-19 15:42:32
+Attachment [trac_21-extcode.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-extcode.patch) by @jhpalmieri created at 2010-03-19 15:42:32
 
 sagenb repo
 
@@ -317,16 +317,16 @@ sagenb repo
 archive/issue_comments_000095.json:
 ```json
 {
-    "body": "Attachment [trac_21-sagenb.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sagenb.patch) by jhpalmieri created at 2010-03-19 15:50:37\n\nHere are patches.  After applying \"trac_21-scripts.patch\", you may need to make \"SAGE_ROOT/local/bin/sage-sage.py\" executable.  The build process works for me with these patches.  For the standard packages, the third line in\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n\nshould be changed to \"Maybe run 'sage --sh'?\", but this doesn't affect the functioning of the packages, and otherwise, they don't need changing.  I haven't looked at optional packages.\n\nThis approaches uses Python's optparse to parse command-line options.  If someone wants to write a version using [shflags](http://code.google.com/p/shflags/) or some other package, go ahead.\n\nI propose the following approach, whether using these patches or other ones:\n\n- first, we include new command-line options but don't turn them on  by default, instead printing a message like this one when you type \"sage [...]\" with a nonempty argument: \n\n```\n    Note: Using old-style Sage command-line options. \n\n    To try out Sage's experimental GNU/Posix-style command-line options \n    (for example, 'sage --notebook' instead of 'sage -notebook'), set the \n    environment variable $SAGE_NEW_OPTIONS to something nonempty. \n    To bypass this message, set the environment variable \n    $SAGE_SKIP_OPTIONS_MESSAGE to something nonempty. \n```\n\n Running \"sage\" (with no arguments) would not trigger this message.  (Perhaps we could only turn this on in prerelease (alpha and rc) versions?  Alternatively, a change like this could go with the version 5.0 release.) \n\n- after a while, we switch this to \n\n```\n    Warning: Using old-style Sage command-line options. \n\n    Sage is changing to use conventional GNU/Posix-style command-line options \n    (for example, 'sage --notebook instead of 'sage -notebook).  This change will \n    become the default soon.  Meanwhile, to use this new style (and therefore \n    to avoid seeing this message), set the environment variable \n    $SAGE_NEW_OPTIONS to something nonempty. \n```\n\n perhaps with no easy way of disabling this message while using old-style options. \n\n- finally, we turn on the new options, perhaps with an environment variable $SAGE_OLD_OPTIONS to use the old ones, with the understanding that any changes in command-line options may not be maintained for the old version. \n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/de30143ec073f31?tvc=2) for some discussion.",
+    "body": "Attachment [trac_21-sagenb.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sagenb.patch) by @jhpalmieri created at 2010-03-19 15:50:37\n\nHere are patches.  After applying \"trac_21-scripts.patch\", you may need to make \"SAGE_ROOT/local/bin/sage-sage.py\" executable.  The build process works for me with these patches.  For the standard packages, the third line in\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n\nshould be changed to \"Maybe run 'sage --sh'?\", but this doesn't affect the functioning of the packages, and otherwise, they don't need changing.  I haven't looked at optional packages.\n\nThis approaches uses Python's optparse to parse command-line options.  If someone wants to write a version using [shflags](http://code.google.com/p/shflags/) or some other package, go ahead.\n\nI propose the following approach, whether using these patches or other ones:\n\n- first, we include new command-line options but don't turn them on  by default, instead printing a message like this one when you type \"sage [...]\" with a nonempty argument: \n\n```\n    Note: Using old-style Sage command-line options. \n\n    To try out Sage's experimental GNU/Posix-style command-line options \n    (for example, 'sage --notebook' instead of 'sage -notebook'), set the \n    environment variable $SAGE_NEW_OPTIONS to something nonempty. \n    To bypass this message, set the environment variable \n    $SAGE_SKIP_OPTIONS_MESSAGE to something nonempty. \n```\n\n Running \"sage\" (with no arguments) would not trigger this message.  (Perhaps we could only turn this on in prerelease (alpha and rc) versions?  Alternatively, a change like this could go with the version 5.0 release.) \n\n- after a while, we switch this to \n\n```\n    Warning: Using old-style Sage command-line options. \n\n    Sage is changing to use conventional GNU/Posix-style command-line options \n    (for example, 'sage --notebook instead of 'sage -notebook).  This change will \n    become the default soon.  Meanwhile, to use this new style (and therefore \n    to avoid seeing this message), set the environment variable \n    $SAGE_NEW_OPTIONS to something nonempty. \n```\n\n perhaps with no easy way of disabling this message while using old-style options. \n\n- finally, we turn on the new options, perhaps with an environment variable $SAGE_OLD_OPTIONS to use the old ones, with the understanding that any changes in command-line options may not be maintained for the old version. \n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/de30143ec073f31?tvc=2) for some discussion.",
     "created_at": "2010-03-19T15:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-95",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_21-sagenb.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sagenb.patch) by jhpalmieri created at 2010-03-19 15:50:37
+Attachment [trac_21-sagenb.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sagenb.patch) by @jhpalmieri created at 2010-03-19 15:50:37
 
 Here are patches.  After applying "trac_21-scripts.patch", you may need to make "SAGE_ROOT/local/bin/sage-sage.py" executable.  The build process works for me with these patches.  For the standard packages, the third line in
 
@@ -388,7 +388,7 @@ archive/issue_comments_000096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-96",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_000097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-97",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_000098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-98",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -446,16 +446,16 @@ This is to speed up access to these programs: do a check like this in a shell sc
 archive/issue_comments_000099.json:
 ```json
 {
-    "body": "Attachment [sage](tarball://root/attachments/some-uuid/ticket21/sage) by jhpalmieri created at 2010-03-19 21:15:39\n\nthe file SAGE_ROOT/sage",
+    "body": "Attachment [sage](tarball://root/attachments/some-uuid/ticket21/sage) by @jhpalmieri created at 2010-03-19 21:15:39\n\nthe file SAGE_ROOT/sage",
     "created_at": "2010-03-19T21:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-99",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [sage](tarball://root/attachments/some-uuid/ticket21/sage) by jhpalmieri created at 2010-03-19 21:15:39
+Attachment [sage](tarball://root/attachments/some-uuid/ticket21/sage) by @jhpalmieri created at 2010-03-19 21:15:39
 
 the file SAGE_ROOT/sage
 
@@ -466,16 +466,16 @@ the file SAGE_ROOT/sage
 archive/issue_comments_000100.json:
 ```json
 {
-    "body": "Attachment [sage.diff](tarball://root/attachments/some-uuid/ticket21/sage.diff) by jhpalmieri created at 2010-03-19 21:22:45\n\nReplying to [comment:10 jhpalmieri]:\n> I've marked this as \"needs review\", but it might need work.  In the previously cited thread from sage-devel, there was the following suggestion:\n\n```\nAnother possibility might be to first check for \"--gp\", \"--gap\", etc., \nand do those before doing the general option parsing.   I.e., just do \nwhat you already planned, but with one optimization to deal with this \nuse case. \n```\n\n\nOkay, here's a new version which does this: it adds a file sage-sage-quickstart which gets run first, implementing the above idea.  Then if SAGE_NEW_OPTIONS is nonempty, it calls sage-sage.py, the Python/optparse version with GNU/Posix standard command-line options.  Otherwise, it calls the old parser sage-sage.\n\nFor the record, the commands in sage-sage-quickstart are: axiom, ecl/lisp, gap, gp, hg, ipython, maxima, mwrank, python, R, singular.  Are any others particularly sensitive to startup times?  (Using python adds something less than .1 second on my two-year old iMac, so we're not talking about a lot of time, in any case.)",
+    "body": "Attachment [sage.diff](tarball://root/attachments/some-uuid/ticket21/sage.diff) by @jhpalmieri created at 2010-03-19 21:22:45\n\nReplying to [comment:10 jhpalmieri]:\n> I've marked this as \"needs review\", but it might need work.  In the previously cited thread from sage-devel, there was the following suggestion:\n\n```\nAnother possibility might be to first check for \"--gp\", \"--gap\", etc., \nand do those before doing the general option parsing.   I.e., just do \nwhat you already planned, but with one optimization to deal with this \nuse case. \n```\n\n\nOkay, here's a new version which does this: it adds a file sage-sage-quickstart which gets run first, implementing the above idea.  Then if SAGE_NEW_OPTIONS is nonempty, it calls sage-sage.py, the Python/optparse version with GNU/Posix standard command-line options.  Otherwise, it calls the old parser sage-sage.\n\nFor the record, the commands in sage-sage-quickstart are: axiom, ecl/lisp, gap, gp, hg, ipython, maxima, mwrank, python, R, singular.  Are any others particularly sensitive to startup times?  (Using python adds something less than .1 second on my two-year old iMac, so we're not talking about a lot of time, in any case.)",
     "created_at": "2010-03-19T21:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-100",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [sage.diff](tarball://root/attachments/some-uuid/ticket21/sage.diff) by jhpalmieri created at 2010-03-19 21:22:45
+Attachment [sage.diff](tarball://root/attachments/some-uuid/ticket21/sage.diff) by @jhpalmieri created at 2010-03-19 21:22:45
 
 Replying to [comment:10 jhpalmieri]:
 > I've marked this as "needs review", but it might need work.  In the previously cited thread from sage-devel, there was the following suggestion:
@@ -504,7 +504,7 @@ archive/issue_comments_000101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-101",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -522,7 +522,7 @@ archive/issue_comments_000102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-102",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_000103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-103",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_000104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-104",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -576,7 +576,7 @@ archive/issue_comments_000105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-105",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_000106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-106",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -646,7 +646,7 @@ archive/issue_comments_000107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-107",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -659,16 +659,16 @@ scripts repo
 archive/issue_comments_000108.json:
 ```json
 {
-    "body": "Attachment [trac_21-scripts.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-scripts.patch) by jhpalmieri created at 2010-06-03 06:02:54\n\nsage repo",
+    "body": "Attachment [trac_21-scripts.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-scripts.patch) by @jhpalmieri created at 2010-06-03 06:02:54\n\nsage repo",
     "created_at": "2010-06-03T06:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-108",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_21-scripts.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-scripts.patch) by jhpalmieri created at 2010-06-03 06:02:54
+Attachment [trac_21-scripts.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-scripts.patch) by @jhpalmieri created at 2010-06-03 06:02:54
 
 sage repo
 
@@ -679,16 +679,16 @@ sage repo
 archive/issue_comments_000109.json:
 ```json
 {
-    "body": "Attachment [trac_21-sage.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sage.patch) by jhpalmieri created at 2010-06-03 06:04:06\n\n> John, can you please post clear directions about how to use the patches attached to this ticket?\n\nSorry, some parts needed rebasing.  I think it's okay now.  I've modified the summary with instructions for how to apply the patches.",
+    "body": "Attachment [trac_21-sage.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sage.patch) by @jhpalmieri created at 2010-06-03 06:04:06\n\n> John, can you please post clear directions about how to use the patches attached to this ticket?\n\nSorry, some parts needed rebasing.  I think it's okay now.  I've modified the summary with instructions for how to apply the patches.",
     "created_at": "2010-06-03T06:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-109",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_21-sage.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sage.patch) by jhpalmieri created at 2010-06-03 06:04:06
+Attachment [trac_21-sage.patch](tarball://root/attachments/some-uuid/ticket21/trac_21-sage.patch) by @jhpalmieri created at 2010-06-03 06:04:06
 
 > John, can you please post clear directions about how to use the patches attached to this ticket?
 
@@ -706,7 +706,7 @@ archive/issue_comments_000110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-110",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -724,7 +724,7 @@ archive/issue_comments_000111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-111",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -742,7 +742,7 @@ archive/issue_comments_000112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-112",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -757,16 +757,16 @@ I don't have the time to rebase it right now, so if anyone else wants to work it
 archive/issue_comments_000113.json:
 ```json
 {
-    "body": "Attachment [21-scripts-4.6.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket21/21-scripts-4.6.1.alpha1.patch) by ohanar created at 2010-11-12 10:48:35\n\nscripts repo, rebased on 4.6.1.alpha1",
+    "body": "Attachment [21-scripts-4.6.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket21/21-scripts-4.6.1.alpha1.patch) by @ohanar created at 2010-11-12 10:48:35\n\nscripts repo, rebased on 4.6.1.alpha1",
     "created_at": "2010-11-12T10:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-113",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
-Attachment [21-scripts-4.6.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket21/21-scripts-4.6.1.alpha1.patch) by ohanar created at 2010-11-12 10:48:35
+Attachment [21-scripts-4.6.1.alpha1.patch](tarball://root/attachments/some-uuid/ticket21/21-scripts-4.6.1.alpha1.patch) by @ohanar created at 2010-11-12 10:48:35
 
 scripts repo, rebased on 4.6.1.alpha1
 
@@ -782,7 +782,7 @@ archive/issue_comments_000114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-114",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -802,7 +802,7 @@ archive/issue_comments_000115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-115",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -820,7 +820,7 @@ archive/issue_comments_000116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-116",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -838,7 +838,7 @@ archive/issue_comments_000117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-117",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -856,7 +856,7 @@ archive/issue_comments_000118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-118",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -874,7 +874,7 @@ archive/issue_comments_000119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-119",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -895,7 +895,7 @@ archive/issue_comments_000120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-120",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -915,7 +915,7 @@ archive/issue_comments_000121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-121",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -956,7 +956,7 @@ archive/issue_comments_000122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-122",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -974,7 +974,7 @@ archive/issue_comments_000123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-123",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -994,7 +994,7 @@ archive/issue_comments_000124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-124",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1017,16 +1017,16 @@ I think these must be available from the start, before Python has been built.
 archive/issue_comments_000125.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to jdemeyer.",
+    "body": "Changing assignee from mabshoff to @jdemeyer.",
     "created_at": "2013-01-24T13:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-125",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from mabshoff to jdemeyer.
+Changing assignee from mabshoff to @jdemeyer.
 
 
 
@@ -1040,7 +1040,7 @@ archive/issue_comments_000126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-126",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1058,7 +1058,7 @@ archive/issue_comments_000127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-127",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1076,7 +1076,7 @@ archive/issue_comments_000128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-128",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1096,7 +1096,7 @@ archive/issue_comments_000129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-129",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1114,7 +1114,7 @@ archive/issue_comments_000130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-130",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1132,7 +1132,7 @@ archive/issue_comments_000131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-131",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1158,7 +1158,7 @@ archive/issue_comments_000132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-132",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1182,7 +1182,7 @@ archive/issue_comments_000133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-133",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1202,7 +1202,7 @@ archive/issue_comments_000134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-134",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1223,7 +1223,7 @@ archive/issue_comments_000135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-135",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -1254,7 +1254,7 @@ archive/issue_comments_000136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-136",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1272,7 +1272,7 @@ archive/issue_comments_000137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-137",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1299,7 +1299,7 @@ archive/issue_comments_000138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-138",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -1335,7 +1335,7 @@ archive/issue_comments_000139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-139",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -1368,7 +1368,7 @@ archive/issue_comments_000140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-140",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1396,7 +1396,7 @@ archive/issue_comments_000141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-141",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1414,7 +1414,7 @@ archive/issue_comments_000142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-142",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1432,7 +1432,7 @@ archive/issue_comments_000143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-143",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -1450,7 +1450,7 @@ archive/issue_comments_000144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-144",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1562,7 +1562,7 @@ archive/issue_comments_000145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-145",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -1590,7 +1590,7 @@ archive/issue_comments_000146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-146",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -1608,7 +1608,7 @@ archive/issue_comments_000147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-147",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1630,7 +1630,7 @@ archive/issue_comments_000148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-148",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1668,7 +1668,7 @@ archive/issue_comments_000149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-149",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1686,7 +1686,7 @@ archive/issue_comments_000150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-150",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -1711,7 +1711,7 @@ archive/issue_comments_000151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-151",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -1729,7 +1729,7 @@ archive/issue_comments_000152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-152",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -1747,7 +1747,7 @@ archive/issue_comments_000153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-153",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1772,7 +1772,7 @@ archive/issue_comments_000154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-154",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -1790,7 +1790,7 @@ archive/issue_comments_000155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-155",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -1811,7 +1811,7 @@ archive/issue_comments_000156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-156",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1833,7 +1833,7 @@ archive/issue_comments_000157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-157",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -1851,7 +1851,7 @@ archive/issue_comments_000158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-158",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -1873,7 +1873,7 @@ archive/issue_comments_000159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-159",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1897,7 +1897,7 @@ archive/issue_comments_000160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-160",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -1923,7 +1923,7 @@ archive/issue_comments_000161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-161",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -1946,7 +1946,7 @@ archive/issue_comments_000162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/21",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/21#issuecomment-162",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 

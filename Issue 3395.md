@@ -3,7 +3,7 @@
 archive/issues_003395.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nKeywords: pbuild\n\nEmacs prevents pbuild from building.  This patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3395\n\n",
+    "body": "Assignee: @garyfurnish\n\nKeywords: pbuild\n\nEmacs prevents pbuild from building.  This patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3395\n\n",
     "created_at": "2008-06-11T03:45:23Z",
     "labels": [
         "pbuild",
@@ -14,10 +14,10 @@ archive/issues_003395.json:
     "title": "[with patch, needs review] pbuild emacs fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3395",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 Keywords: pbuild
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3395
 archive/issue_comments_023776.json:
 ```json
 {
-    "body": "Attachment [trac_3395.patch](tarball://root/attachments/some-uuid/ticket3395/trac_3395.patch) by gfurnish created at 2008-06-11 03:46:49",
+    "body": "Attachment [trac_3395.patch](tarball://root/attachments/some-uuid/ticket3395/trac_3395.patch) by @garyfurnish created at 2008-06-11 03:46:49",
     "created_at": "2008-06-11T03:46:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3395#issuecomment-23776",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3395.patch](tarball://root/attachments/some-uuid/ticket3395/trac_3395.patch) by gfurnish created at 2008-06-11 03:46:49
+Attachment [trac_3395.patch](tarball://root/attachments/some-uuid/ticket3395/trac_3395.patch) by @garyfurnish created at 2008-06-11 03:46:49
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_023777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3395#issuecomment-23777",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

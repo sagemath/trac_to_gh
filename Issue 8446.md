@@ -3,7 +3,7 @@
 archive/issues_008446.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  cremona\n\nIn the case of a trivial number field, such as\n\n```\nK.<a> = NumberField(polygen(QQ))\n```\n\nthe Selmer group function doesn't work, since the generator `a` of the number field is 0, and when we're constructing polynomials we use the form `coeff*a**i`. However, if `i==0`, we get an `ArithmeticError` since Sage does not have conventions for `0^0`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8446\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nIn the case of a trivial number field, such as\n\n```\nK.<a> = NumberField(polygen(QQ))\n```\n\nthe Selmer group function doesn't work, since the generator `a` of the number field is 0, and when we're constructing polynomials we use the form `coeff*a**i`. However, if `i==0`, we get an `ArithmeticError` since Sage does not have conventions for `0^0`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8446\n\n",
     "created_at": "2010-03-05T16:28:40Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_008446.json:
     "title": "avoid 0^0 in Selmer groups of number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8446",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  cremona
+CC:  @JohnCremona
 
 In the case of a trivial number field, such as
 
@@ -45,7 +45,7 @@ archive/issue_comments_075933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8446#issuecomment-75933",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -58,16 +58,16 @@ Changing status from new to needs_review.
 archive/issue_comments_075934.json:
 ```json
 {
-    "body": "Attachment [trac_8446.patch](tarball://root/attachments/some-uuid/ticket8446/trac_8446.patch) by rlm created at 2010-03-07 19:58:53",
+    "body": "Attachment [trac_8446.patch](tarball://root/attachments/some-uuid/ticket8446/trac_8446.patch) by @rlmill created at 2010-03-07 19:58:53",
     "created_at": "2010-03-07T19:58:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8446#issuecomment-75934",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8446.patch](tarball://root/attachments/some-uuid/ticket8446/trac_8446.patch) by rlm created at 2010-03-07 19:58:53
+Attachment [trac_8446.patch](tarball://root/attachments/some-uuid/ticket8446/trac_8446.patch) by @rlmill created at 2010-03-07 19:58:53
 
 
 
@@ -76,16 +76,16 @@ Attachment [trac_8446.patch](tarball://root/attachments/some-uuid/ticket8446/tra
 archive/issue_comments_075935.json:
 ```json
 {
-    "body": "Attachment [trac_8446_microfix.patch](tarball://root/attachments/some-uuid/ticket8446/trac_8446_microfix.patch) by davidloeffler created at 2010-04-20 09:38:02\n\napply over previous patch",
+    "body": "Attachment [trac_8446_microfix.patch](tarball://root/attachments/some-uuid/ticket8446/trac_8446_microfix.patch) by @loefflerd created at 2010-04-20 09:38:02\n\napply over previous patch",
     "created_at": "2010-04-20T09:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8446#issuecomment-75935",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8446_microfix.patch](tarball://root/attachments/some-uuid/ticket8446/trac_8446_microfix.patch) by davidloeffler created at 2010-04-20 09:38:02
+Attachment [trac_8446_microfix.patch](tarball://root/attachments/some-uuid/ticket8446/trac_8446_microfix.patch) by @loefflerd created at 2010-04-20 09:38:02
 
 apply over previous patch
 
@@ -101,7 +101,7 @@ archive/issue_comments_075936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8446#issuecomment-75936",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_075937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8446#issuecomment-75937",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_075938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8446#issuecomment-75938",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_075939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8446#issuecomment-75939",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_075940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8446#issuecomment-75940",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_075941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8446#issuecomment-75941",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

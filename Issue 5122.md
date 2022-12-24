@@ -3,7 +3,7 @@
 archive/issues_005122.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis should draw a point at the origin in 2d:\n\n```\nE = EllipticCurve('37a')\nP = E([0,0])\npoint(P)\n```\n\n\nIt used to work but is now broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5122\n\n",
+    "body": "Assignee: @williamstein\n\nThis should draw a point at the origin in 2d:\n\n```\nE = EllipticCurve('37a')\nP = E([0,0])\npoint(P)\n```\n\n\nIt used to work but is now broken.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5122\n\n",
     "created_at": "2009-01-28T20:09:46Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005122.json:
     "title": "point -- plotting bug for point(Elliptic curve point)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5122",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This should draw a point at the origin in 2d:
 
@@ -46,7 +46,7 @@ archive/issue_comments_039158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5122#issuecomment-39158",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_039159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5122#issuecomment-39159",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_039160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5122#issuecomment-39160",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_039161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5122#issuecomment-39161",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_039162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5122#issuecomment-39162",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

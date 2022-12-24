@@ -3,7 +3,7 @@
 archive/issues_004627.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: hermite normal form hnf gcd\n\n\n```\nOn 4-Sep-08, at 3:57 PM, Clement Pernet wrote:\n\nHi,\n\nNo problem, the patch looks fine, and I will run some testings to check\nit. Nick, are you going to open a ticket?\n\n--\nCl\u00e9ment\n\nWilliam Stein a \u00e9crit :\nOn Wed, Sep 3, 2008 at 4:39 PM, Nick Alexander <ncalexander@gmail.com> wrote:\nHi William,\n\nThe attached patch prevents recomputing a CRT a number of times when doing a\nmulti modular Hermite normal form.  I was finding that this CRT computation\nwas taking *much* longer than the rest of the calculation of a midsize HNF\n(40 x 40).  Has this been addressed?\n\nNo.\n\n Should this be run by Clement and some\nrandomized testing?\n\nYes, definitely.   I've cc'd Clement and included the attachment.\n\n-- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4627\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: hermite normal form hnf gcd\n\n\n```\nOn 4-Sep-08, at 3:57 PM, Clement Pernet wrote:\n\nHi,\n\nNo problem, the patch looks fine, and I will run some testings to check\nit. Nick, are you going to open a ticket?\n\n--\nCl\u00e9ment\n\nWilliam Stein a \u00e9crit :\nOn Wed, Sep 3, 2008 at 4:39 PM, Nick Alexander <ncalexander@gmail.com> wrote:\nHi William,\n\nThe attached patch prevents recomputing a CRT a number of times when doing a\nmulti modular Hermite normal form.  I was finding that this CRT computation\nwas taking *much* longer than the rest of the calculation of a midsize HNF\n(40 x 40).  Has this been addressed?\n\nNo.\n\n Should this be run by Clement and some\nrandomized testing?\n\nYes, definitely.   I've cc'd Clement and included the attachment.\n\n-- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4627\n\n",
     "created_at": "2008-11-26T19:06:10Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004627.json:
     "title": "CRT_list in HNF dominates computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4627",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: hermite normal form hnf gcd
 
@@ -93,7 +93,7 @@ archive/issue_comments_034796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4627#issuecomment-34796",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -108,16 +108,16 @@ Nick, what is a good test case to see the performance improvement?
 archive/issue_comments_034797.json:
 ```json
 {
-    "body": "Attachment [trac-4627-v2.patch](tarball://root/attachments/some-uuid/ticket4627/trac-4627-v2.patch) by craigcitro created at 2008-11-27 04:18:30",
+    "body": "Attachment [trac-4627-v2.patch](tarball://root/attachments/some-uuid/ticket4627/trac-4627-v2.patch) by @craigcitro created at 2008-11-27 04:18:30",
     "created_at": "2008-11-27T04:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4627#issuecomment-34797",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4627-v2.patch](tarball://root/attachments/some-uuid/ticket4627/trac-4627-v2.patch) by craigcitro created at 2008-11-27 04:18:30
+Attachment [trac-4627-v2.patch](tarball://root/attachments/some-uuid/ticket4627/trac-4627-v2.patch) by @craigcitro created at 2008-11-27 04:18:30
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_034798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4627#issuecomment-34798",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001114.json:
     "title": "Delete a file to fix an example involving the sage latex mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1114",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -54,7 +54,7 @@ archive/issue_comments_006728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1114#issuecomment-6728",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

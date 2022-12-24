@@ -3,7 +3,7 @@
 archive/issues_004972.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following should work:\n\n\n```\na=matrix(QQ,3,[1,3,4,3,2,3,6,4,5])\na[1,:]=a[0,:]\n```\n\n\nInstead, I get an error:\n\n\n```\n          \t\n\nTraceback (click to the left for traceback)\n...\nTypeError: 'slice' object cannot be interpreted as an index\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/grout/.sage/sage_notebook/worksheets/admin/143/code/10.py\", line 7, in <module>\n    a[_sage_const_1 ,:]=a[_sage_const_0 ,:]\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"matrix0.pyx\", line 798, in sage.matrix.matrix0.Matrix.__setitem__ (sage/matrix/matrix0.c:4517)\nTypeError: 'slice' object cannot be interpreted as an index\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4972\n\n",
+    "body": "Assignee: @williamstein\n\nThe following should work:\n\n\n```\na=matrix(QQ,3,[1,3,4,3,2,3,6,4,5])\na[1,:]=a[0,:]\n```\n\n\nInstead, I get an error:\n\n\n```\n          \t\n\nTraceback (click to the left for traceback)\n...\nTypeError: 'slice' object cannot be interpreted as an index\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/grout/.sage/sage_notebook/worksheets/admin/143/code/10.py\", line 7, in <module>\n    a[_sage_const_1 ,:]=a[_sage_const_0 ,:]\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"matrix0.pyx\", line 798, in sage.matrix.matrix0.Matrix.__setitem__ (sage/matrix/matrix0.c:4517)\nTypeError: 'slice' object cannot be interpreted as an index\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4972\n\n",
     "created_at": "2009-01-14T08:33:23Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004972.json:
     "title": "matrix setitem should deal with slicing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4972",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following should work:
 
@@ -66,7 +66,7 @@ archive/issue_comments_037862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37862",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_037863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37863",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_037864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37864",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_037865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37865",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_037866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37866",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -151,16 +151,16 @@ ignore the .2.patch file.  I've refreshed the original .patch file.
 archive/issue_comments_037867.json:
 ```json
 {
-    "body": "Attachment [trac_4972-matrix-setitem.patch](tarball://root/attachments/some-uuid/ticket4972/trac_4972-matrix-setitem.patch) by jason created at 2009-02-05 08:08:23\n\nRefreshed patch to fix some doctests.",
+    "body": "Attachment [trac_4972-matrix-setitem.patch](tarball://root/attachments/some-uuid/ticket4972/trac_4972-matrix-setitem.patch) by @jasongrout created at 2009-02-05 08:08:23\n\nRefreshed patch to fix some doctests.",
     "created_at": "2009-02-05T08:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37867",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_4972-matrix-setitem.patch](tarball://root/attachments/some-uuid/ticket4972/trac_4972-matrix-setitem.patch) by jason created at 2009-02-05 08:08:23
+Attachment [trac_4972-matrix-setitem.patch](tarball://root/attachments/some-uuid/ticket4972/trac_4972-matrix-setitem.patch) by @jasongrout created at 2009-02-05 08:08:23
 
 Refreshed patch to fix some doctests.
 
@@ -228,7 +228,7 @@ archive/issue_comments_037869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37869",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -241,16 +241,16 @@ the fixups.patch addresses cwitty's concerns.  It should be applied on top of tr
 archive/issue_comments_037870.json:
 ```json
 {
-    "body": "Attachment [trac_4972-matrix-setitem-fixups.patch](tarball://root/attachments/some-uuid/ticket4972/trac_4972-matrix-setitem-fixups.patch) by jason created at 2009-02-06 06:28:43\n\ngrr, forgot to check the \"replace\" checkbox again.\n\nSo apply the following:\n\ntrac_4972-matrix-setitem.patch, then trac_4972-matrix-setitem-fixups.patch\n\nIgnore both .2.patch files.\n\nThis second refresh corrects some \"int\" cdefs in misc_c.pyx",
+    "body": "Attachment [trac_4972-matrix-setitem-fixups.patch](tarball://root/attachments/some-uuid/ticket4972/trac_4972-matrix-setitem-fixups.patch) by @jasongrout created at 2009-02-06 06:28:43\n\ngrr, forgot to check the \"replace\" checkbox again.\n\nSo apply the following:\n\ntrac_4972-matrix-setitem.patch, then trac_4972-matrix-setitem-fixups.patch\n\nIgnore both .2.patch files.\n\nThis second refresh corrects some \"int\" cdefs in misc_c.pyx",
     "created_at": "2009-02-06T06:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37870",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_4972-matrix-setitem-fixups.patch](tarball://root/attachments/some-uuid/ticket4972/trac_4972-matrix-setitem-fixups.patch) by jason created at 2009-02-06 06:28:43
+Attachment [trac_4972-matrix-setitem-fixups.patch](tarball://root/attachments/some-uuid/ticket4972/trac_4972-matrix-setitem-fixups.patch) by @jasongrout created at 2009-02-06 06:28:43
 
 grr, forgot to check the "replace" checkbox again.
 

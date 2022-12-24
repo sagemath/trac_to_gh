@@ -3,7 +3,7 @@
 archive/issues_007901.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jsp jhpalmieri\n\nIt was agreed recently that variables would not be used for very common commands like MV, MKDIR etc.\n\n     http://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\n#7818 usets these, so this package may break. The fix is to simply replace $MKDIR with 'mkdir' in spkg-install. \n\nAn updated .spkg can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/pari-2.3.3.p7/ari-2.3.3.p7.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7901\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies @jhpalmieri\n\nIt was agreed recently that variables would not be used for very common commands like MV, MKDIR etc.\n\n     http://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\n#7818 usets these, so this package may break. The fix is to simply replace $MKDIR with 'mkdir' in spkg-install. \n\nAn updated .spkg can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/pari-2.3.3.p7/ari-2.3.3.p7.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7901\n\n",
     "created_at": "2010-01-12T04:33:03Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_007901.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  jsp jhpalmieri
+CC:  @jaapspies @jhpalmieri
 
 It was agreed recently that variables would not be used for very common commands like MV, MKDIR etc.
 
@@ -65,7 +65,7 @@ archive/issue_comments_068715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7901#issuecomment-68715",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_068718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7901#issuecomment-68718",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_068719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7901#issuecomment-68719",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_068720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7901#issuecomment-68720",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

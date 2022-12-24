@@ -3,7 +3,7 @@
 archive/issues_003547.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis should be the 3d analogue of the polygon function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3547\n\n",
+    "body": "Assignee: @williamstein\n\nThis should be the 3d analogue of the polygon function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3547\n\n",
     "created_at": "2008-07-03T21:28:47Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003547.json:
     "title": "create a polygon3d function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3547",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This should be the 3d analogue of the polygon function.
 
@@ -59,7 +59,7 @@ archive/issue_comments_025088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3547#issuecomment-25088",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_025089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3547#issuecomment-25089",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -160,7 +160,7 @@ The alternative would have been to draw the enclosed space, but that functionali
 archive/issue_comments_025092.json:
 ```json
 {
-    "body": "Changing assignee from was to abergeron.",
+    "body": "Changing assignee from @williamstein to abergeron.",
     "created_at": "2008-12-24T23:01:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3547",
     "type": "issue_comment",
@@ -169,7 +169,7 @@ archive/issue_comments_025092.json:
 }
 ```
 
-Changing assignee from was to abergeron.
+Changing assignee from @williamstein to abergeron.
 
 
 

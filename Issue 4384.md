@@ -3,7 +3,7 @@
 archive/issues_004384.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  anakha jason mvngu\n\nKeywords: plot contant ZeroDivisionError\n\nFor a function which is constant, but not obviously so, it would appear that some computation for laying out the axis creates a step size of 0 (tick marks on the vertical axis?).\n\n\n```\nsage: h=plot(sin(x)^2+cos(x)^2, -6, 6)\nsage: show(h)\n```\n\n\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/rob/.sage/sage_notebook/worksheets/admin/48/code/6.py\", line 8, in <module>\n    show(h)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 882, in show\n    return x.show(*args, **kwds)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1350, in show\n    hgridlinesstyle=hgridlinesstyle)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1547, in save\n    xmin, xmax, ymin, ymax = sage_axes.add_xy_axes(subplot, xmin, xmax, ymin, ymax)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/plot/axes.py\", line 325, in add_xy_axes\n    x_axis_ypos, ystep, ytslminor, ytslmajor = self._find_axes(ymin, ymax)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/plot/axes.py\", line 239, in _find_axes\n    tslmajor, oppaxis, step = self._tasteless_ticks(minval, maxval, 10)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/plot/axes.py\", line 217, in _tasteless_ticks\n    tslmajor = sage.misc.misc.srange(minval, minval+(num_pieces+1)*step, step)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/misc/misc.py\", line 710, in srange\n    count = int(math.ceil((float((end-start)/step))))\nZeroDivisionError: float division\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4384\n\n",
+    "body": "Assignee: somebody\n\nCC:  anakha @jasongrout mvngu\n\nKeywords: plot contant ZeroDivisionError\n\nFor a function which is constant, but not obviously so, it would appear that some computation for laying out the axis creates a step size of 0 (tick marks on the vertical axis?).\n\n\n```\nsage: h=plot(sin(x)^2+cos(x)^2, -6, 6)\nsage: show(h)\n```\n\n\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/rob/.sage/sage_notebook/worksheets/admin/48/code/6.py\", line 8, in <module>\n    show(h)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 882, in show\n    return x.show(*args, **kwds)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1350, in show\n    hgridlinesstyle=hgridlinesstyle)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1547, in save\n    xmin, xmax, ymin, ymax = sage_axes.add_xy_axes(subplot, xmin, xmax, ymin, ymax)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/plot/axes.py\", line 325, in add_xy_axes\n    x_axis_ypos, ystep, ytslminor, ytslmajor = self._find_axes(ymin, ymax)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/plot/axes.py\", line 239, in _find_axes\n    tslmajor, oppaxis, step = self._tasteless_ticks(minval, maxval, 10)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/plot/axes.py\", line 217, in _tasteless_ticks\n    tslmajor = sage.misc.misc.srange(minval, minval+(num_pieces+1)*step, step)\n  File \"/opt/sage-3.1.4/local/lib/python2.5/site-packages/sage/misc/misc.py\", line 710, in srange\n    count = int(math.ceil((float((end-start)/step))))\nZeroDivisionError: float division\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4384\n\n",
     "created_at": "2008-10-30T04:14:30Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_004384.json:
     "title": "Axes computation for constant function causes division by zero",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4384",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: somebody
 
-CC:  anakha jason mvngu
+CC:  anakha @jasongrout mvngu
 
 Keywords: plot contant ZeroDivisionError
 
@@ -114,7 +114,7 @@ archive/issue_comments_032266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4384#issuecomment-32266",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_032267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4384#issuecomment-32267",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_032268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4384#issuecomment-32268",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_032269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4384#issuecomment-32269",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_032270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4384#issuecomment-32270",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_032271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4384#issuecomment-32271",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_032272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4384#issuecomment-32272",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_032273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4384#issuecomment-32273",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

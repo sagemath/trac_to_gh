@@ -14,7 +14,7 @@ archive/issues_006130.json:
     "title": "README about documentation is outdated.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6130",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6130
 archive/issue_comments_048967.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-05-28T07:37:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6130#issuecomment-48967",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_048968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6130#issuecomment-48968",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_048969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6130#issuecomment-48969",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_048970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6130#issuecomment-48970",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_048971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6130",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6130#issuecomment-48971",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

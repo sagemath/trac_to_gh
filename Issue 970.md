@@ -14,7 +14,7 @@ archive/issues_000970.json:
     "title": "ntl.GF2E",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/970",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/970
 archive/issue_comments_005921.json:
 ```json
 {
-    "body": "Attachment [ntl_GF2E.patch](tarball://root/attachments/some-uuid/ticket970/ntl_GF2E.patch) by malb created at 2007-10-22 22:42:53",
+    "body": "Attachment [ntl_GF2E.patch](tarball://root/attachments/some-uuid/ticket970/ntl_GF2E.patch) by @malb created at 2007-10-22 22:42:53",
     "created_at": "2007-10-22T22:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/970#issuecomment-5921",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [ntl_GF2E.patch](tarball://root/attachments/some-uuid/ticket970/ntl_GF2E.patch) by malb created at 2007-10-22 22:42:53
+Attachment [ntl_GF2E.patch](tarball://root/attachments/some-uuid/ticket970/ntl_GF2E.patch) by @malb created at 2007-10-22 22:42:53
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_005922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/970#issuecomment-5922",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_005923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/970",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/970#issuecomment-5923",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

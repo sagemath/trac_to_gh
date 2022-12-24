@@ -3,7 +3,7 @@
 archive/issues_003779.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\n\n```\n\nHi William:\n\nI was running Sage 3.0.2 on Linux when the error occurred.  Just now i\nupgraded to 'sage-3.0.6-i686-Linux-debian-intel' without problems, ran\nthe same code (in a notebook and on the command line), and got the\nsame error.  Hmm, i don't understand why Sage can do 'diff(f*SR(2),x)'\nbut not 'diff(f*SR(1),x)'.\n\nAlex\n```\n\n\nThis boils down to the fact that some symbolic objects take an extra argument in their `variables` method. It is unclear what the meaning of this argument is (couldn't find any examples) and if it should be removed, or added, to make things consistent. (I'd guess removed, but I don't want to break things.) \n\nIssue created by migration from https://trac.sagemath.org/ticket/3779\n\n",
+    "body": "Assignee: @garyfurnish\n\n\n```\n\nHi William:\n\nI was running Sage 3.0.2 on Linux when the error occurred.  Just now i\nupgraded to 'sage-3.0.6-i686-Linux-debian-intel' without problems, ran\nthe same code (in a notebook and on the command line), and got the\nsame error.  Hmm, i don't understand why Sage can do 'diff(f*SR(2),x)'\nbut not 'diff(f*SR(1),x)'.\n\nAlex\n```\n\n\nThis boils down to the fact that some symbolic objects take an extra argument in their `variables` method. It is unclear what the meaning of this argument is (couldn't find any examples) and if it should be removed, or added, to make things consistent. (I'd guess removed, but I don't want to break things.) \n\nIssue created by migration from https://trac.sagemath.org/ticket/3779\n\n",
     "created_at": "2008-08-06T04:29:22Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003779.json:
     "title": "inconsistency for variables method, leads to errors in differentiation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3779",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 
 ```
@@ -52,7 +52,7 @@ archive/issue_comments_026868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3779#issuecomment-26868",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -65,16 +65,16 @@ The argument doesn't exist in symbolics, so I'm in favor of removal (and I have 
 archive/issue_comments_026869.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to mhansen.",
+    "body": "Changing assignee from @garyfurnish to @mwhansen.",
     "created_at": "2008-08-06T20:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3779#issuecomment-26869",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from gfurnish to mhansen.
+Changing assignee from @garyfurnish to @mwhansen.
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_026870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3779#issuecomment-26870",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_026871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3779#issuecomment-26871",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -119,16 +119,16 @@ Changing status from new to assigned.
 archive/issue_comments_026872.json:
 ```json
 {
-    "body": "Attachment [trac_3779.patch](tarball://root/attachments/some-uuid/ticket3779/trac_3779.patch) by robertwb created at 2008-08-07 02:02:48\n\nLooks good to me, and fixes the bug. The only question I had is why you wrote tuple([]) rather than (), but I'm OK with that.",
+    "body": "Attachment [trac_3779.patch](tarball://root/attachments/some-uuid/ticket3779/trac_3779.patch) by @robertwb created at 2008-08-07 02:02:48\n\nLooks good to me, and fixes the bug. The only question I had is why you wrote tuple([]) rather than (), but I'm OK with that.",
     "created_at": "2008-08-07T02:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3779#issuecomment-26872",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac_3779.patch](tarball://root/attachments/some-uuid/ticket3779/trac_3779.patch) by robertwb created at 2008-08-07 02:02:48
+Attachment [trac_3779.patch](tarball://root/attachments/some-uuid/ticket3779/trac_3779.patch) by @robertwb created at 2008-08-07 02:02:48
 
 Looks good to me, and fixes the bug. The only question I had is why you wrote tuple([]) rather than (), but I'm OK with that.
 
@@ -144,7 +144,7 @@ archive/issue_comments_026873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3779#issuecomment-26873",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -157,16 +157,16 @@ There's no real reason -- it's just what I happened to type :-)
 archive/issue_comments_026874.json:
 ```json
 {
-    "body": "Attachment [trac_3779-2.patch](tarball://root/attachments/some-uuid/ticket3779/trac_3779-2.patch) by mhansen created at 2008-08-10 06:13:37",
+    "body": "Attachment [trac_3779-2.patch](tarball://root/attachments/some-uuid/ticket3779/trac_3779-2.patch) by @mwhansen created at 2008-08-10 06:13:37",
     "created_at": "2008-08-10T06:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3779#issuecomment-26874",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3779-2.patch](tarball://root/attachments/some-uuid/ticket3779/trac_3779-2.patch) by mhansen created at 2008-08-10 06:13:37
+Attachment [trac_3779-2.patch](tarball://root/attachments/some-uuid/ticket3779/trac_3779-2.patch) by @mwhansen created at 2008-08-10 06:13:37
 
 
 

@@ -188,7 +188,7 @@ archive/issue_comments_023721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3388#issuecomment-23721",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

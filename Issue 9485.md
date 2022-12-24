@@ -3,7 +3,7 @@
 archive/issues_009485.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  sage-combinat rlm\n\nKeywords: strongly connected components\n\nGraphs produced with strongly_connected_components_digraph had no\nedges in them due to a typo in the code:\n\n\n```\n    sage: g = DiGraph({0:[1,2,3],1:[2],2:[1,3]})\n    sage: scc_digraph = g.strongly_connected_components_digraph()\n    sage: scc_digraph.vertices()\n    [{0}, {3}, {1, 2}]\n    sage: scc_digraph.edges()\n    []\n```\n\n\nAfter this patch, the result is more likely to be correct:\n\n\n```\n    [({0}, {3}, None), ({0}, {1, 2}, None), ({1, 2}, {3}, None)]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9485\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  sage-combinat @rlmill\n\nKeywords: strongly connected components\n\nGraphs produced with strongly_connected_components_digraph had no\nedges in them due to a typo in the code:\n\n\n```\n    sage: g = DiGraph({0:[1,2,3],1:[2],2:[1,3]})\n    sage: scc_digraph = g.strongly_connected_components_digraph()\n    sage: scc_digraph.vertices()\n    [{0}, {3}, {1, 2}]\n    sage: scc_digraph.edges()\n    []\n```\n\n\nAfter this patch, the result is more likely to be correct:\n\n\n```\n    [({0}, {3}, None), ({0}, {1, 2}, None), ({1, 2}, {3}, None)]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9485\n\n",
     "created_at": "2010-07-12T18:55:21Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009485.json:
     "title": "Fix strongly_connected_components_digraph to actually do something",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9485",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  sage-combinat rlm
+CC:  sage-combinat @rlmill
 
 Keywords: strongly connected components
 
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9485
 archive/issue_comments_091066.json:
 ```json
 {
-    "body": "Attachment [trac_9485-strongly_connected_componnents_digraph-fix-nt.patch](tarball://root/attachments/some-uuid/ticket9485/trac_9485-strongly_connected_componnents_digraph-fix-nt.patch) by nthiery created at 2010-07-12 19:01:15",
+    "body": "Attachment [trac_9485-strongly_connected_componnents_digraph-fix-nt.patch](tarball://root/attachments/some-uuid/ticket9485/trac_9485-strongly_connected_componnents_digraph-fix-nt.patch) by @nthiery created at 2010-07-12 19:01:15",
     "created_at": "2010-07-12T19:01:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9485#issuecomment-91066",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_9485-strongly_connected_componnents_digraph-fix-nt.patch](tarball://root/attachments/some-uuid/ticket9485/trac_9485-strongly_connected_componnents_digraph-fix-nt.patch) by nthiery created at 2010-07-12 19:01:15
+Attachment [trac_9485-strongly_connected_componnents_digraph-fix-nt.patch](tarball://root/attachments/some-uuid/ticket9485/trac_9485-strongly_connected_componnents_digraph-fix-nt.patch) by @nthiery created at 2010-07-12 19:01:15
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_091067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9485#issuecomment-91067",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_091068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9485#issuecomment-91068",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_091069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9485#issuecomment-91069",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_091070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9485#issuecomment-91070",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_091071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9485#issuecomment-91071",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

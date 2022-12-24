@@ -3,7 +3,7 @@
 archive/issues_001962.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n```\nsage: g = Graph({0: [0,1,1,2]}, loops=True, multiedges=True)\nsage: g.set_edge_label(0,0,'test')\nsage: g.edges()\n\n[(0, 0, 'e'),\n (0, 0, 's'),\n (0, 0, 't'),\n (0, 0, 't'),\n (0, 1, None),\n (0, 1, None),\n (0, 2, None)]\n```\n\n\nI suggest that set_edge_labels should *never* create an edge or the function name should be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1962\n\n",
+    "body": "Assignee: @rlmill\n\n\n```\nsage: g = Graph({0: [0,1,1,2]}, loops=True, multiedges=True)\nsage: g.set_edge_label(0,0,'test')\nsage: g.edges()\n\n[(0, 0, 'e'),\n (0, 0, 's'),\n (0, 0, 't'),\n (0, 0, 't'),\n (0, 1, None),\n (0, 1, None),\n (0, 2, None)]\n```\n\n\nI suggest that set_edge_labels should *never* create an edge or the function name should be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1962\n\n",
     "created_at": "2008-01-28T19:49:16Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_001962.json:
     "title": "set_edge_label creates edges when multiple edges are allowed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1962",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 ```
@@ -53,7 +53,7 @@ archive/issue_comments_012670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12670",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_012671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12671",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_012672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12672",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -133,16 +133,16 @@ In fact, `set_edge_label` only makes sense when there is only one possible edge 
 archive/issue_comments_012673.json:
 ```json
 {
-    "body": "Attachment [1962.patch](tarball://root/attachments/some-uuid/ticket1962/1962.patch) by rlm created at 2008-02-17 00:24:54",
+    "body": "Attachment [1962.patch](tarball://root/attachments/some-uuid/ticket1962/1962.patch) by @rlmill created at 2008-02-17 00:24:54",
     "created_at": "2008-02-17T00:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12673",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [1962.patch](tarball://root/attachments/some-uuid/ticket1962/1962.patch) by rlm created at 2008-02-17 00:24:54
+Attachment [1962.patch](tarball://root/attachments/some-uuid/ticket1962/1962.patch) by @rlmill created at 2008-02-17 00:24:54
 
 
 
@@ -151,16 +151,16 @@ Attachment [1962.patch](tarball://root/attachments/some-uuid/ticket1962/1962.pat
 archive/issue_comments_012674.json:
 ```json
 {
-    "body": "Attachment [1962-ref.patch](tarball://root/attachments/some-uuid/ticket1962/1962-ref.patch) by ncalexan created at 2008-02-26 01:06:04\n\nAfter discussion on IRC, this looks good to me.  Apply.  Needs both patches, -ref second.",
+    "body": "Attachment [1962-ref.patch](tarball://root/attachments/some-uuid/ticket1962/1962-ref.patch) by @ncalexan created at 2008-02-26 01:06:04\n\nAfter discussion on IRC, this looks good to me.  Apply.  Needs both patches, -ref second.",
     "created_at": "2008-02-26T01:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12674",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [1962-ref.patch](tarball://root/attachments/some-uuid/ticket1962/1962-ref.patch) by ncalexan created at 2008-02-26 01:06:04
+Attachment [1962-ref.patch](tarball://root/attachments/some-uuid/ticket1962/1962-ref.patch) by @ncalexan created at 2008-02-26 01:06:04
 
 After discussion on IRC, this looks good to me.  Apply.  Needs both patches, -ref second.
 

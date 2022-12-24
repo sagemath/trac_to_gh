@@ -3,7 +3,7 @@
 archive/issues_005430.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  robertwb\n\nThe coercion seems to be fine, but the Coleman integral fails:\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x*(x-1)*(x+9))\nsage: K = Qp(7,10)\nsage: HK = H.change_ring(K)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: w = HK.invariant_differential()\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: f = forms[0]\nsage: S= HK(9,36)\nsage: Q = HK.teichmuller(S)\nsage: P = HK(-1,4)\nsage: b = x*w*w._coeff.parent()(f)            #this is ok\nsage: HK.coleman_integral(b,P,Q)              #this is not\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5430\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @robertwb\n\nThe coercion seems to be fine, but the Coleman integral fails:\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x*(x-1)*(x+9))\nsage: K = Qp(7,10)\nsage: HK = H.change_ring(K)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: w = HK.invariant_differential()\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: f = forms[0]\nsage: S= HK(9,36)\nsage: Q = HK.teichmuller(S)\nsage: P = HK(-1,4)\nsage: b = x*w*w._coeff.parent()(f)            #this is ok\nsage: HK.coleman_integral(b,P,Q)              #this is not\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5430\n\n",
     "created_at": "2009-03-03T18:10:24Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_005430.json:
     "title": "Coleman integrals of differential forms from different rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5430",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  robertwb
+CC:  @robertwb
 
 The coercion seems to be fine, but the Coleman integral fails:
 
@@ -57,7 +57,7 @@ archive/issue_comments_042013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5430#issuecomment-42013",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_042015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5430#issuecomment-42015",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_042016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5430#issuecomment-42016",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_042017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5430#issuecomment-42017",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -195,16 +195,16 @@ If there is an issue with rational reconstruction, I'd say make that a separate 
 archive/issue_comments_042018.json:
 ```json
 {
-    "body": "Attachment [5430.patch](tarball://root/attachments/some-uuid/ticket5430/5430.patch) by kedlaya created at 2009-05-21 06:14:30",
+    "body": "Attachment [5430.patch](tarball://root/attachments/some-uuid/ticket5430/5430.patch) by @kedlaya created at 2009-05-21 06:14:30",
     "created_at": "2009-05-21T06:14:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5430#issuecomment-42018",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Attachment [5430.patch](tarball://root/attachments/some-uuid/ticket5430/5430.patch) by kedlaya created at 2009-05-21 06:14:30
+Attachment [5430.patch](tarball://root/attachments/some-uuid/ticket5430/5430.patch) by @kedlaya created at 2009-05-21 06:14:30
 
 
 
@@ -213,16 +213,16 @@ Attachment [5430.patch](tarball://root/attachments/some-uuid/ticket5430/5430.pat
 archive/issue_comments_042019.json:
 ```json
 {
-    "body": "Attachment [5430-2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-2.patch) by kedlaya created at 2009-05-21 06:24:04\n\nSee attached patches. The first one eliminates all casting to/from QQ (I think). The second one adds a doctest to confirm that the above example now works:\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x*(x-1)*(x+9))\nsage: K = Qp(7,10)\nsage: HK = H.change_ring(K)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: w = HK.invariant_differential()\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: f = forms[0]\nsage: S= HK(9,36)\nsage: Q = HK.teichmuller(S)\nsage: P = HK(-1,4)\nsage: b = x*w*w._coeff.parent()(f)\nsage: HK.coleman_integral(b,P,Q)\n7 + 7^2 + 4*7^3 + 5*7^4 + 3*7^5 + 7^6 + 5*7^7 + 3*7^8 + 4*7^9 + 4*7^10 + O(7^11)\n```\n",
+    "body": "Attachment [5430-2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-2.patch) by @kedlaya created at 2009-05-21 06:24:04\n\nSee attached patches. The first one eliminates all casting to/from QQ (I think). The second one adds a doctest to confirm that the above example now works:\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x*(x-1)*(x+9))\nsage: K = Qp(7,10)\nsage: HK = H.change_ring(K)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: w = HK.invariant_differential()\nsage: x,y = HK.monsky_washnitzer_gens()\nsage: f = forms[0]\nsage: S= HK(9,36)\nsage: Q = HK.teichmuller(S)\nsage: P = HK(-1,4)\nsage: b = x*w*w._coeff.parent()(f)\nsage: HK.coleman_integral(b,P,Q)\n7 + 7^2 + 4*7^3 + 5*7^4 + 3*7^5 + 7^6 + 5*7^7 + 3*7^8 + 4*7^9 + 4*7^10 + O(7^11)\n```\n",
     "created_at": "2009-05-21T06:24:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5430#issuecomment-42019",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Attachment [5430-2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-2.patch) by kedlaya created at 2009-05-21 06:24:04
+Attachment [5430-2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-2.patch) by @kedlaya created at 2009-05-21 06:24:04
 
 See attached patches. The first one eliminates all casting to/from QQ (I think). The second one adds a doctest to confirm that the above example now works:
 
@@ -252,16 +252,16 @@ sage: HK.coleman_integral(b,P,Q)
 archive/issue_comments_042020.json:
 ```json
 {
-    "body": "Attachment [5430-v2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-v2.patch) by kedlaya created at 2009-05-22 21:09:20\n\nRebased against the revised patch to #5948. You may ignore the previous two patches.",
+    "body": "Attachment [5430-v2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-v2.patch) by @kedlaya created at 2009-05-22 21:09:20\n\nRebased against the revised patch to #5948. You may ignore the previous two patches.",
     "created_at": "2009-05-22T21:09:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5430#issuecomment-42020",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Attachment [5430-v2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-v2.patch) by kedlaya created at 2009-05-22 21:09:20
+Attachment [5430-v2.patch](tarball://root/attachments/some-uuid/ticket5430/5430-v2.patch) by @kedlaya created at 2009-05-22 21:09:20
 
 Rebased against the revised patch to #5948. You may ignore the previous two patches.
 
@@ -277,7 +277,7 @@ archive/issue_comments_042021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5430#issuecomment-42021",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_042022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5430#issuecomment-42022",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_042023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5430#issuecomment-42023",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_042024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5430#issuecomment-42024",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

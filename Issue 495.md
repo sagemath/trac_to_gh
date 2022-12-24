@@ -14,7 +14,7 @@ archive/issues_000495.json:
     "title": "internet explorer support for the SAGE notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/495",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_002471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/495#issuecomment-2471",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_002472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/495#issuecomment-2472",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

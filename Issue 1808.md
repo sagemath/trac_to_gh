@@ -14,7 +14,7 @@ archive/issues_001808.json:
     "title": "[with very short patch] two simple LaTeX fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1808",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1808
 archive/issue_comments_011435.json:
 ```json
 {
-    "body": "Attachment [latex_fixes.patch](tarball://root/attachments/some-uuid/ticket1808/latex_fixes.patch) by malb created at 2008-01-17 20:47:49",
+    "body": "Attachment [latex_fixes.patch](tarball://root/attachments/some-uuid/ticket1808/latex_fixes.patch) by @malb created at 2008-01-17 20:47:49",
     "created_at": "2008-01-17T20:47:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1808#issuecomment-11435",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [latex_fixes.patch](tarball://root/attachments/some-uuid/ticket1808/latex_fixes.patch) by malb created at 2008-01-17 20:47:49
+Attachment [latex_fixes.patch](tarball://root/attachments/some-uuid/ticket1808/latex_fixes.patch) by @malb created at 2008-01-17 20:47:49
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_011436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1808#issuecomment-11436",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008776.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  kcrisman schymans cremona\n\nI think Cremona's email says it best:\n\n```\nFor the first time, I just tried using the \"Undo\" function on a\nworksheet since I had messed something up.  But all the revisions I\nwas offered, even those from a day ago, look the same as the current\nversion!\n\nThis is 4.3.5 running on a 64-bit ubuntu server.\n\nI have found it very useful that my students can work on something in\na worksheet owned by them, and then share it with me, so that when\nthey come to see me to talk about it we can go through it in detail on\nmy own computer at our meeting.  (This is really a fantastic feature).\n But just now I was having a look at a student's worksheet the day\nbefore our meeting, and made some changed to it which I later\nregretted and tried to revert.  Without success....\n\nAny suggestions welcome!\n\nJohn Cremona\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8776\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman schymans @JohnCremona\n\nI think Cremona's email says it best:\n\n```\nFor the first time, I just tried using the \"Undo\" function on a\nworksheet since I had messed something up.  But all the revisions I\nwas offered, even those from a day ago, look the same as the current\nversion!\n\nThis is 4.3.5 running on a 64-bit ubuntu server.\n\nI have found it very useful that my students can work on something in\na worksheet owned by them, and then share it with me, so that when\nthey come to see me to talk about it we can go through it in detail on\nmy own computer at our meeting.  (This is really a fantastic feature).\n But just now I was having a look at a student's worksheet the day\nbefore our meeting, and made some changed to it which I later\nregretted and tried to revert.  Without success....\n\nAny suggestions welcome!\n\nJohn Cremona\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8776\n\n",
     "created_at": "2010-04-27T04:38:16Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008776.json:
     "title": "notebook: sage notebook undo doesn't really work, due to not enough (=no) automatic snapshots, or other bugs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8776",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
 
-CC:  kcrisman schymans cremona
+CC:  @kcrisman schymans @JohnCremona
 
 I think Cremona's email says it best:
 
@@ -61,7 +61,7 @@ archive/issue_comments_080344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80344",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -74,16 +74,16 @@ Depends on #9428. Fixes the given issue.
 archive/issue_comments_080345.json:
 ```json
 {
-    "body": "Attachment [trac_8776-sagenb-undo.2.patch](tarball://root/attachments/some-uuid/ticket8776/trac_8776-sagenb-undo.2.patch) by timdumol created at 2010-09-11 02:50:14\n\nDepends on #9428. Rebase on new #9428. Replaces previous version.",
+    "body": "Attachment [trac_8776-sagenb-undo.2.patch](tarball://root/attachments/some-uuid/ticket8776/trac_8776-sagenb-undo.2.patch) by @TimDumol created at 2010-09-11 02:50:14\n\nDepends on #9428. Rebase on new #9428. Replaces previous version.",
     "created_at": "2010-09-11T02:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80345",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_8776-sagenb-undo.2.patch](tarball://root/attachments/some-uuid/ticket8776/trac_8776-sagenb-undo.2.patch) by timdumol created at 2010-09-11 02:50:14
+Attachment [trac_8776-sagenb-undo.2.patch](tarball://root/attachments/some-uuid/ticket8776/trac_8776-sagenb-undo.2.patch) by @TimDumol created at 2010-09-11 02:50:14
 
 Depends on #9428. Rebase on new #9428. Replaces previous version.
 
@@ -99,7 +99,7 @@ archive/issue_comments_080346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80346",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_080348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80348",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_080350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80350",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_080352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80352",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_080354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80354",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_080355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80355",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_080356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80356",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_080359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80359",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_080360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80360",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_080361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80361",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_080362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80362",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_080363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80363",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

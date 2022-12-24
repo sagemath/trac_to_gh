@@ -14,7 +14,7 @@ archive/issues_008880.json:
     "title": "CPLEX can bi silenced",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8880",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, jkantor
@@ -39,7 +39,7 @@ archive/issue_comments_081596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81596",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_081597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81597",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_081598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81598",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_081599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81599",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_081600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81600",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_081601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81601",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_081602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81602",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_081603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81603",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_081604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81604",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_081605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81605",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_081606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81606",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_081607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81607",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -315,16 +315,16 @@ The cleanup code here should probably be put in a "finally" block, rather than b
 archive/issue_comments_081608.json:
 ```json
 {
-    "body": "Changing assignee from jason, jkantor to jason.",
+    "body": "Changing assignee from jason, jkantor to @jasongrout.",
     "created_at": "2010-05-15T03:34:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81608",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from jason, jkantor to jason.
+Changing assignee from jason, jkantor to @jasongrout.
 
 
 
@@ -333,16 +333,16 @@ Changing assignee from jason, jkantor to jason.
 archive/issue_comments_081609.json:
 ```json
 {
-    "body": "Changing assignee from jason to ncohen.",
+    "body": "Changing assignee from @jasongrout to @nathanncohen.",
     "created_at": "2010-05-15T03:34:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81609",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from jason to ncohen.
+Changing assignee from @jasongrout to @nathanncohen.
 
 
 
@@ -356,7 +356,7 @@ archive/issue_comments_081610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81610",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_081611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81611",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -399,16 +399,16 @@ Nathan
 archive/issue_comments_081612.json:
 ```json
 {
-    "body": "Attachment [trac_8880.patch](tarball://root/attachments/some-uuid/ticket8880/trac_8880.patch) by rlm created at 2010-06-17 21:38:40\n\nThis is 5 weeks stale by now. Jason-- do you have any further objections to the patch?",
+    "body": "Attachment [trac_8880.patch](tarball://root/attachments/some-uuid/ticket8880/trac_8880.patch) by @rlmill created at 2010-06-17 21:38:40\n\nThis is 5 weeks stale by now. Jason-- do you have any further objections to the patch?",
     "created_at": "2010-06-17T21:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81612",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8880.patch](tarball://root/attachments/some-uuid/ticket8880/trac_8880.patch) by rlm created at 2010-06-17 21:38:40
+Attachment [trac_8880.patch](tarball://root/attachments/some-uuid/ticket8880/trac_8880.patch) by @rlmill created at 2010-06-17 21:38:40
 
 This is 5 weeks stale by now. Jason-- do you have any further objections to the patch?
 
@@ -424,7 +424,7 @@ archive/issue_comments_081613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81613",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_081614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81614",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_081615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8880#issuecomment-81615",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

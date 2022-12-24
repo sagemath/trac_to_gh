@@ -3,7 +3,7 @@
 archive/issues_009977.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jhpalmieri nthiery\n\nThe 'prereq' script in `$SAGE_ROOT/spkg/base` is currently version 0.7. This does not check that the maths library `libm` exists. I thought that was pretty much a formality, but it is not on AIX, where the shared maths library `/usr/lib/libm.a` does not get installed by default. \n\n\n```\n-bash-4.1$ ls /usr/lib/libm*\n/usr/lib/libmbx.a\n```\n\n\nThe maths library is part of the `bos.adt` fileset. Hence a test for the maths library should be added. After installing `bos.adt`, so the maths library exists:\n\n\n```\n-bash-4.1$ ls /usr/lib/libm*\n/usr/lib/libm.a       /usr/lib/libmbx.a     /usr/lib/libm_r.a     /usr/lib/libmsaa.a    /usr/lib/libmsaa_r.a\n```\n\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9978\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @nthiery\n\nThe 'prereq' script in `$SAGE_ROOT/spkg/base` is currently version 0.7. This does not check that the maths library `libm` exists. I thought that was pretty much a formality, but it is not on AIX, where the shared maths library `/usr/lib/libm.a` does not get installed by default. \n\n\n```\n-bash-4.1$ ls /usr/lib/libm*\n/usr/lib/libmbx.a\n```\n\n\nThe maths library is part of the `bos.adt` fileset. Hence a test for the maths library should be added. After installing `bos.adt`, so the maths library exists:\n\n\n```\n-bash-4.1$ ls /usr/lib/libm*\n/usr/lib/libm.a       /usr/lib/libmbx.a     /usr/lib/libm_r.a     /usr/lib/libmsaa.a    /usr/lib/libmsaa_r.a\n```\n\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9978\n\n",
     "created_at": "2010-09-23T13:46:47Z",
     "labels": [
         "AIX or HP-UX ports",
@@ -19,7 +19,7 @@ archive/issues_009977.json:
 ```
 Assignee: drkirkby
 
-CC:  jhpalmieri nthiery
+CC:  @jhpalmieri @nthiery
 
 The 'prereq' script in `$SAGE_ROOT/spkg/base` is currently version 0.7. This does not check that the maths library `libm` exists. I thought that was pretty much a formality, but it is not on AIX, where the shared maths library `/usr/lib/libm.a` does not get installed by default. 
 
@@ -111,7 +111,7 @@ archive/issue_comments_100296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9977#issuecomment-100296",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_100304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9977#issuecomment-100304",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_100305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9977#issuecomment-100305",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

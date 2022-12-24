@@ -14,7 +14,7 @@ archive/issues_009350.json:
     "title": "Python max flow method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9350",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, mvngu, ncohen, rlm
@@ -41,7 +41,7 @@ archive/issue_comments_088745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88745",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_088746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88746",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_088747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88747",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_088748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88748",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_088749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88749",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_088750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88750",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -193,16 +193,16 @@ Does this seem reasonable?
 archive/issue_comments_088751.json:
 ```json
 {
-    "body": "Attachment [trac_9350.patch](tarball://root/attachments/some-uuid/ticket9350/trac_9350.patch) by ncohen created at 2010-07-29 17:00:56",
+    "body": "Attachment [trac_9350.patch](tarball://root/attachments/some-uuid/ticket9350/trac_9350.patch) by @nathanncohen created at 2010-07-29 17:00:56",
     "created_at": "2010-07-29T17:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88751",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9350.patch](tarball://root/attachments/some-uuid/ticket9350/trac_9350.patch) by ncohen created at 2010-07-29 17:00:56
+Attachment [trac_9350.patch](tarball://root/attachments/some-uuid/ticket9350/trac_9350.patch) by @nathanncohen created at 2010-07-29 17:00:56
 
 
 
@@ -216,7 +216,7 @@ archive/issue_comments_088752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88752",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_088753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88753",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_088754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88754",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_088755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88755",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_088756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88756",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_088757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88757",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_088758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88758",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_088759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9350#issuecomment-88759",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

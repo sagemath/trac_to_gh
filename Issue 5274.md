@@ -3,7 +3,7 @@
 archive/issues_005274.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  nthiery\n\nKeywords: matrix, category check framework\n\nThe coherency check for matrices is now done by hand in matrix/matrix_spaces.py When the automated check framework for categories is finished and integrated, we should use it to automatically ensure that all matrix spaces are checked. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5274\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @nthiery\n\nKeywords: matrix, category check framework\n\nThe coherency check for matrices is now done by hand in matrix/matrix_spaces.py When the automated check framework for categories is finished and integrated, we should use it to automatically ensure that all matrix spaces are checked. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5274\n\n",
     "created_at": "2009-02-14T17:33:26Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005274.json:
     "title": "Adapt matrices coherency check to (still future) Nicolas check framework.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5274",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
-CC:  nthiery
+CC:  @nthiery
 
 Keywords: matrix, category check framework
 
@@ -41,7 +41,7 @@ archive/issue_comments_040483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5274#issuecomment-40483",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_040484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5274#issuecomment-40484",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_040485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5274#issuecomment-40485",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

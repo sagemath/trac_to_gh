@@ -3,7 +3,7 @@
 archive/issues_005156.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5156\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5156\n\n",
     "created_at": "2009-02-02T02:35:56Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005156.json:
     "title": "implement computation of the conjectural (analytic) order of Sha for elliptic curves over Heegner quadratic imaginary fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5156",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5156
 archive/issue_comments_039490.json:
 ```json
 {
-    "body": "Attachment [trac_5156.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156.patch) by was created at 2009-02-02 08:35:43",
+    "body": "Attachment [trac_5156.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156.patch) by @williamstein created at 2009-02-02 08:35:43",
     "created_at": "2009-02-02T08:35:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39490",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5156.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156.patch) by was created at 2009-02-02 08:35:43
+Attachment [trac_5156.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156.patch) by @williamstein created at 2009-02-02 08:35:43
 
 
 
@@ -50,16 +50,16 @@ Attachment [trac_5156.patch](tarball://root/attachments/some-uuid/ticket5156/tra
 archive/issue_comments_039491.json:
 ```json
 {
-    "body": "Attachment [trac_5156-part2.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-part2.patch) by was created at 2009-02-02 09:01:58",
+    "body": "Attachment [trac_5156-part2.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-part2.patch) by @williamstein created at 2009-02-02 09:01:58",
     "created_at": "2009-02-02T09:01:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39491",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5156-part2.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-part2.patch) by was created at 2009-02-02 09:01:58
+Attachment [trac_5156-part2.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-part2.patch) by @williamstein created at 2009-02-02 09:01:58
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_039492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39492",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_039493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39493",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_039495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39495",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_039496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39496",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_039497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39497",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_039499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39499",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_039500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39500",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_039501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39501",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -373,16 +373,16 @@ Michael
 archive/issue_comments_039504.json:
 ```json
 {
-    "body": "Attachment [trac_5156-rebased_and_flattened.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-rebased_and_flattened.patch) by rlm created at 2009-04-08 21:24:20\n\nFinally the patch is ready to merge. Merge only the latest patch.",
+    "body": "Attachment [trac_5156-rebased_and_flattened.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-rebased_and_flattened.patch) by @rlmill created at 2009-04-08 21:24:20\n\nFinally the patch is ready to merge. Merge only the latest patch.",
     "created_at": "2009-04-08T21:24:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39504",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5156-rebased_and_flattened.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-rebased_and_flattened.patch) by rlm created at 2009-04-08 21:24:20
+Attachment [trac_5156-rebased_and_flattened.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-rebased_and_flattened.patch) by @rlmill created at 2009-04-08 21:24:20
 
 Finally the patch is ready to merge. Merge only the latest patch.
 

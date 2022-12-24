@@ -3,7 +3,7 @@
 archive/issues_007274.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis is work from Sage Days 16 in Barcelona.\n\nFirst patch implements Edmonds-Karp and Dinic algorithm for DiGraph. Second one uses this implementation to find maximum matching in bipartite graphs.\n\nI also include worksheet with simple usage example.\n\nPlease review. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7274\n\n",
+    "body": "Assignee: @rlmill\n\nThis is work from Sage Days 16 in Barcelona.\n\nFirst patch implements Edmonds-Karp and Dinic algorithm for DiGraph. Second one uses this implementation to find maximum matching in bipartite graphs.\n\nI also include worksheet with simple usage example.\n\nPlease review. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7274\n\n",
     "created_at": "2009-10-23T21:15:13Z",
     "labels": [
         "graph theory",
@@ -17,7 +17,7 @@ archive/issues_007274.json:
     "user": "tombuc"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This is work from Sage Days 16 in Barcelona.
 
@@ -121,7 +121,7 @@ archive/issue_comments_060533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7274#issuecomment-60533",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_060534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7274#issuecomment-60534",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_060535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7274#issuecomment-60535",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_060536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7274#issuecomment-60536",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_060537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7274#issuecomment-60537",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_060538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7274#issuecomment-60538",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

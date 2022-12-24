@@ -3,7 +3,7 @@
 archive/issues_001608.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mhansen jason kini\n\nIt is incredibly confusing for most people to install the jsmath fonts.  Morever, that they must download them off an external site is terrible -- what if they install Sage on an internal network or laptop with no net access, and need the fonts.  The fonts should be included in Sage, and the \"you should install the jsmath fonts\" warning should be much nicer and directly give a link to the fonts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1608\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen @jasongrout @kini\n\nIt is incredibly confusing for most people to install the jsmath fonts.  Morever, that they must download them off an external site is terrible -- what if they install Sage on an internal network or laptop with no net access, and need the fonts.  The fonts should be included in Sage, and the \"you should install the jsmath fonts\" warning should be much nicer and directly give a link to the fonts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1608\n\n",
     "created_at": "2007-12-27T04:31:05Z",
     "labels": [
         "notebook",
@@ -13,12 +13,12 @@ archive/issues_001608.json:
     "title": "jsmath fonts -- these should ship with Sage itself and be *vastly* easier to install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1608",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  was mhansen jason kini
+CC:  @williamstein @mwhansen @jasongrout @kini
 
 It is incredibly confusing for most people to install the jsmath fonts.  Morever, that they must download them off an external site is terrible -- what if they install Sage on an internal network or laptop with no net access, and need the fonts.  The fonts should be included in Sage, and the "you should install the jsmath fonts" warning should be much nicer and directly give a link to the fonts.
 
@@ -60,7 +60,7 @@ archive/issue_comments_010214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1608#issuecomment-10214",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_010215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1608#issuecomment-10215",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_010216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1608#issuecomment-10216",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_010217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1608#issuecomment-10217",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_010218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1608#issuecomment-10218",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_010219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1608#issuecomment-10219",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_010220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1608#issuecomment-10220",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_010221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1608#issuecomment-10221",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_010222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1608#issuecomment-10222",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_010223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1608#issuecomment-10223",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_010224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1608#issuecomment-10224",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_010225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1608#issuecomment-10225",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_010226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1608#issuecomment-10226",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

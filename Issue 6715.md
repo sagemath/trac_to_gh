@@ -90,16 +90,16 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_055117.json:
 ```json
 {
-    "body": "Attachment [trac_6715-spell-check-logic.patch](tarball://root/attachments/some-uuid/ticket6715/trac_6715-spell-check-logic.patch) by schilly created at 2009-08-14 10:18:39\n\nlooks good, only comments and doc-lines touched, no code or doctests.\n\nthere is just a \"newline missing\" note from mercurial at the bottom of the first part of the first patch. i think it is still ok, though (line 123 in sage/logic/booleval.py, first patch).",
+    "body": "Attachment [trac_6715-spell-check-logic.patch](tarball://root/attachments/some-uuid/ticket6715/trac_6715-spell-check-logic.patch) by @haraldschilly created at 2009-08-14 10:18:39\n\nlooks good, only comments and doc-lines touched, no code or doctests.\n\nthere is just a \"newline missing\" note from mercurial at the bottom of the first part of the first patch. i think it is still ok, though (line 123 in sage/logic/booleval.py, first patch).",
     "created_at": "2009-08-14T10:18:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6715#issuecomment-55117",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [trac_6715-spell-check-logic.patch](tarball://root/attachments/some-uuid/ticket6715/trac_6715-spell-check-logic.patch) by schilly created at 2009-08-14 10:18:39
+Attachment [trac_6715-spell-check-logic.patch](tarball://root/attachments/some-uuid/ticket6715/trac_6715-spell-check-logic.patch) by @haraldschilly created at 2009-08-14 10:18:39
 
 looks good, only comments and doc-lines touched, no code or doctests.
 

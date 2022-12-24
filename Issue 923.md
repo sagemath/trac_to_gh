@@ -14,7 +14,7 @@ archive/issues_000923.json:
     "title": "change all \"sage.:\"'s to \"sage: blah # not tested\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/923",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/923
 archive/issue_comments_005656.json:
 ```json
 {
-    "body": "Changing assignee from failure to was.",
+    "body": "Changing assignee from failure to @williamstein.",
     "created_at": "2007-10-20T02:01:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/923#issuecomment-5656",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from failure to was.
+Changing assignee from failure to @williamstein.
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_005657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/923#issuecomment-5657",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_005658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/923#issuecomment-5658",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_005659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/923#issuecomment-5659",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

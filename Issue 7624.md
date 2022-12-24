@@ -3,7 +3,7 @@
 archive/issues_007624.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7624\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7624\n\n",
     "created_at": "2009-12-08T16:38:42Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007624.json:
     "title": "notebook: get rid of nb.sobj stuff from any notebook docs.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7624",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_065142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7624#issuecomment-65142",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_065143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7624#issuecomment-65143",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

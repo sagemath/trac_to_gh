@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1356
 archive/issue_comments_008673.json:
 ```json
 {
-    "body": "Attachment [1356.patch](tarball://root/attachments/some-uuid/ticket1356/1356.patch) by rlm created at 2007-12-02 19:34:21\n\nNow:\n\n```\nsage: v = QQbar.zeta(3) + 1\nsage: v.exactify()\nsage: v.abs().minpoly()\nx - 1\n```\n",
+    "body": "Attachment [1356.patch](tarball://root/attachments/some-uuid/ticket1356/1356.patch) by @rlmill created at 2007-12-02 19:34:21\n\nNow:\n\n```\nsage: v = QQbar.zeta(3) + 1\nsage: v.exactify()\nsage: v.abs().minpoly()\nx - 1\n```\n",
     "created_at": "2007-12-02T19:34:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1356#issuecomment-8673",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [1356.patch](tarball://root/attachments/some-uuid/ticket1356/1356.patch) by rlm created at 2007-12-02 19:34:21
+Attachment [1356.patch](tarball://root/attachments/some-uuid/ticket1356/1356.patch) by @rlmill created at 2007-12-02 19:34:21
 
 Now:
 
@@ -73,7 +73,7 @@ archive/issue_comments_008674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1356#issuecomment-8674",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

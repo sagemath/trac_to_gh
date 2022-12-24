@@ -3,7 +3,7 @@
 archive/issues_002590.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe first attached patch returns an empty graphic when plotting a line with no points.\n\nThis addresses the concern in #2038 about not having any valid points in a plot (by returning an empty plot).\n\nThe second patch modifies using a tidbit from moretti's patch in #2038---he should get credit for it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2590\n\n",
+    "body": "Assignee: @williamstein\n\nThe first attached patch returns an empty graphic when plotting a line with no points.\n\nThis addresses the concern in #2038 about not having any valid points in a plot (by returning an empty plot).\n\nThe second patch modifies using a tidbit from moretti's patch in #2038---he should get credit for it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2590\n\n",
     "created_at": "2008-03-19T01:38:27Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002590.json:
     "title": "plotting a line with no points throws a nonsensical error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2590",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The first attached patch returns an empty graphic when plotting a line with no points.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2590
 archive/issue_comments_017724.json:
 ```json
 {
-    "body": "Attachment [zero-point-line.patch](tarball://root/attachments/some-uuid/ticket2590/zero-point-line.patch) by jason created at 2008-03-19 01:38:48",
+    "body": "Attachment [zero-point-line.patch](tarball://root/attachments/some-uuid/ticket2590/zero-point-line.patch) by @jasongrout created at 2008-03-19 01:38:48",
     "created_at": "2008-03-19T01:38:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2590#issuecomment-17724",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [zero-point-line.patch](tarball://root/attachments/some-uuid/ticket2590/zero-point-line.patch) by jason created at 2008-03-19 01:38:48
+Attachment [zero-point-line.patch](tarball://root/attachments/some-uuid/ticket2590/zero-point-line.patch) by @jasongrout created at 2008-03-19 01:38:48
 
 
 
@@ -54,16 +54,16 @@ Attachment [zero-point-line.patch](tarball://root/attachments/some-uuid/ticket25
 archive/issue_comments_017725.json:
 ```json
 {
-    "body": "Attachment [plot_use_data.patch](tarball://root/attachments/some-uuid/ticket2590/plot_use_data.patch) by jason created at 2008-03-19 01:43:06",
+    "body": "Attachment [plot_use_data.patch](tarball://root/attachments/some-uuid/ticket2590/plot_use_data.patch) by @jasongrout created at 2008-03-19 01:43:06",
     "created_at": "2008-03-19T01:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2590#issuecomment-17725",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [plot_use_data.patch](tarball://root/attachments/some-uuid/ticket2590/plot_use_data.patch) by jason created at 2008-03-19 01:43:06
+Attachment [plot_use_data.patch](tarball://root/attachments/some-uuid/ticket2590/plot_use_data.patch) by @jasongrout created at 2008-03-19 01:43:06
 
 
 
@@ -125,16 +125,16 @@ Michael
 archive/issue_comments_017727.json:
 ```json
 {
-    "body": "Attachment [plot_use_data-2.patch](tarball://root/attachments/some-uuid/ticket2590/plot_use_data-2.patch) by jason created at 2008-03-19 15:41:21\n\napply instead of plot_use_data.patch",
+    "body": "Attachment [plot_use_data-2.patch](tarball://root/attachments/some-uuid/ticket2590/plot_use_data-2.patch) by @jasongrout created at 2008-03-19 15:41:21\n\napply instead of plot_use_data.patch",
     "created_at": "2008-03-19T15:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2590#issuecomment-17727",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [plot_use_data-2.patch](tarball://root/attachments/some-uuid/ticket2590/plot_use_data-2.patch) by jason created at 2008-03-19 15:41:21
+Attachment [plot_use_data-2.patch](tarball://root/attachments/some-uuid/ticket2590/plot_use_data-2.patch) by @jasongrout created at 2008-03-19 15:41:21
 
 apply instead of plot_use_data.patch
 
@@ -150,7 +150,7 @@ archive/issue_comments_017728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2590#issuecomment-17728",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -189,16 +189,16 @@ Michael
 archive/issue_comments_017730.json:
 ```json
 {
-    "body": "Attachment [trac-2590-rebased.patch](tarball://root/attachments/some-uuid/ticket2590/trac-2590-rebased.patch) by jason created at 2008-04-09 04:22:31",
+    "body": "Attachment [trac-2590-rebased.patch](tarball://root/attachments/some-uuid/ticket2590/trac-2590-rebased.patch) by @jasongrout created at 2008-04-09 04:22:31",
     "created_at": "2008-04-09T04:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2590#issuecomment-17730",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-2590-rebased.patch](tarball://root/attachments/some-uuid/ticket2590/trac-2590-rebased.patch) by jason created at 2008-04-09 04:22:31
+Attachment [trac-2590-rebased.patch](tarball://root/attachments/some-uuid/ticket2590/trac-2590-rebased.patch) by @jasongrout created at 2008-04-09 04:22:31
 
 
 
@@ -212,7 +212,7 @@ archive/issue_comments_017731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2590#issuecomment-17731",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_017733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2590#issuecomment-17733",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

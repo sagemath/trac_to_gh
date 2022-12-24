@@ -3,7 +3,7 @@
 archive/issues_007940.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  kcrisman\n\nA triple quote `\"\"\"` in real_mpfr.pyx needs to be converted to `r\"\"\"`.  This patch does that.  Otherwise, the reference manual fails to build.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7940\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\nA triple quote `\"\"\"` in real_mpfr.pyx needs to be converted to `r\"\"\"`.  This patch does that.  Otherwise, the reference manual fails to build.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7940\n\n",
     "created_at": "2010-01-16T03:17:42Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007940.json:
     "title": "real_mpfr: fix docstring so ref manual builds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7940",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  kcrisman
+CC:  @kcrisman
 
 A triple quote `"""` in real_mpfr.pyx needs to be converted to `r"""`.  This patch does that.  Otherwise, the reference manual fails to build.
 
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7940
 archive/issue_comments_069270.json:
 ```json
 {
-    "body": "Attachment [trac_7940.patch](tarball://root/attachments/some-uuid/ticket7940/trac_7940.patch) by jhpalmieri created at 2010-01-16 03:19:00\n\nif I put a long enough description here, it will be longer than the patch itself...",
+    "body": "Attachment [trac_7940.patch](tarball://root/attachments/some-uuid/ticket7940/trac_7940.patch) by @jhpalmieri created at 2010-01-16 03:19:00\n\nif I put a long enough description here, it will be longer than the patch itself...",
     "created_at": "2010-01-16T03:19:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7940#issuecomment-69270",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7940.patch](tarball://root/attachments/some-uuid/ticket7940/trac_7940.patch) by jhpalmieri created at 2010-01-16 03:19:00
+Attachment [trac_7940.patch](tarball://root/attachments/some-uuid/ticket7940/trac_7940.patch) by @jhpalmieri created at 2010-01-16 03:19:00
 
 if I put a long enough description here, it will be longer than the patch itself...
 
@@ -60,7 +60,7 @@ archive/issue_comments_069271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7940#issuecomment-69271",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_069272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7940#issuecomment-69272",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_069273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7940#issuecomment-69273",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

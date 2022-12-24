@@ -3,7 +3,7 @@
 archive/issues_003411.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3411\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3411\n\n",
     "created_at": "2008-06-13T14:15:29Z",
     "labels": [
         "finance",
@@ -14,10 +14,10 @@ archive/issues_003411.json:
     "title": "[with patch; needs review] sage-3.0.3.alpha2 -- finance time_series doctest failure due to numerical precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3411",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3411
 archive/issue_comments_023927.json:
 ```json
 {
-    "body": "Attachment [sage-3411.patch](tarball://root/attachments/some-uuid/ticket3411/sage-3411.patch) by was created at 2008-06-13 14:17:29",
+    "body": "Attachment [sage-3411.patch](tarball://root/attachments/some-uuid/ticket3411/sage-3411.patch) by @williamstein created at 2008-06-13 14:17:29",
     "created_at": "2008-06-13T14:17:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3411#issuecomment-23927",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3411.patch](tarball://root/attachments/some-uuid/ticket3411/sage-3411.patch) by was created at 2008-06-13 14:17:29
+Attachment [sage-3411.patch](tarball://root/attachments/some-uuid/ticket3411/sage-3411.patch) by @williamstein created at 2008-06-13 14:17:29
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_023928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3411#issuecomment-23928",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

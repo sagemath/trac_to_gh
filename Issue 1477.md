@@ -14,7 +14,7 @@ archive/issues_001477.json:
     "title": "notebook -- make it unicode aware",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1477",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -68,7 +68,7 @@ archive/issue_comments_009503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1477#issuecomment-9503",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_009506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1477#issuecomment-9506",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_009507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1477#issuecomment-9507",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

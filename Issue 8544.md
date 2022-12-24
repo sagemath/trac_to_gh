@@ -3,7 +3,7 @@
 archive/issues_008544.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  zimmerma\n\nKeywords: factor polynomial QQbar\n\nQQbar and AA have root-finding but not polynomial factorization.\n\nSee the discussion at #8344, where a special case is dealt with and a possible solution outlined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8544\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @zimmermann6\n\nKeywords: factor polynomial QQbar\n\nQQbar and AA have root-finding but not polynomial factorization.\n\nSee the discussion at #8344, where a special case is dealt with and a possible solution outlined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8544\n\n",
     "created_at": "2010-03-15T20:44:31Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008544.json:
     "title": "Factor  polynomials over QQbar and AA",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8544",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  zimmerma
+CC:  @zimmermann6
 
 Keywords: factor polynomial QQbar
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8544
 archive/issue_comments_077255.json:
 ```json
 {
-    "body": "Attachment [trac_8544-polyfactor.patch](tarball://root/attachments/some-uuid/ticket8544/trac_8544-polyfactor.patch) by cremona created at 2010-05-26 20:01:14\n\nApplies to 4.4.2",
+    "body": "Attachment [trac_8544-polyfactor.patch](tarball://root/attachments/some-uuid/ticket8544/trac_8544-polyfactor.patch) by @JohnCremona created at 2010-05-26 20:01:14\n\nApplies to 4.4.2",
     "created_at": "2010-05-26T20:01:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8544#issuecomment-77255",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8544-polyfactor.patch](tarball://root/attachments/some-uuid/ticket8544/trac_8544-polyfactor.patch) by cremona created at 2010-05-26 20:01:14
+Attachment [trac_8544-polyfactor.patch](tarball://root/attachments/some-uuid/ticket8544/trac_8544-polyfactor.patch) by @JohnCremona created at 2010-05-26 20:01:14
 
 Applies to 4.4.2
 
@@ -63,7 +63,7 @@ archive/issue_comments_077256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8544#issuecomment-77256",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_077257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8544#issuecomment-77257",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_077258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8544#issuecomment-77258",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_077259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8544#issuecomment-77259",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_077260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8544#issuecomment-77260",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_077261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8544#issuecomment-77261",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

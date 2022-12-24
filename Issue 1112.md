@@ -14,7 +14,7 @@ archive/issues_001112.json:
     "title": "Integer.__pow__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1112",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1112
 archive/issue_comments_006723.json:
 ```json
 {
-    "body": "Attachment [pow.patch](tarball://root/attachments/some-uuid/ticket1112/pow.patch) by malb created at 2007-11-06 16:22:27",
+    "body": "Attachment [pow.patch](tarball://root/attachments/some-uuid/ticket1112/pow.patch) by @malb created at 2007-11-06 16:22:27",
     "created_at": "2007-11-06T16:22:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1112#issuecomment-6723",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [pow.patch](tarball://root/attachments/some-uuid/ticket1112/pow.patch) by malb created at 2007-11-06 16:22:27
+Attachment [pow.patch](tarball://root/attachments/some-uuid/ticket1112/pow.patch) by @malb created at 2007-11-06 16:22:27
 
 
 

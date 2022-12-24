@@ -3,7 +3,7 @@
 archive/issues_008343.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason chapoton\n\nWhile working on #7630, I discovered that even if a user has confirmed an email address, if the user changes it on the Account Settings page, the new address is marked as \"confirmed\" even though no re-confirmation email is sent out.\n\nI don't know if we want to re-send confirmation emails every time a user changes their email address, but at least we should mark the address as unconfirmed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8343\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @fchapoton\n\nWhile working on #7630, I discovered that even if a user has confirmed an email address, if the user changes it on the Account Settings page, the new address is marked as \"confirmed\" even though no re-confirmation email is sent out.\n\nI don't know if we want to re-send confirmation emails every time a user changes their email address, but at least we should mark the address as unconfirmed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8343\n\n",
     "created_at": "2010-02-24T03:38:29Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008343.json:
     "title": "email address marked as confirmed even after changing it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8343",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason chapoton
+CC:  @jasongrout @fchapoton
 
 While working on #7630, I discovered that even if a user has confirmed an email address, if the user changes it on the Account Settings page, the new address is marked as "confirmed" even though no re-confirmation email is sent out.
 
@@ -41,7 +41,7 @@ archive/issue_comments_074471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8343#issuecomment-74471",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_074472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8343#issuecomment-74472",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_074473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8343#issuecomment-74473",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_074474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8343#issuecomment-74474",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_074475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8343#issuecomment-74475",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

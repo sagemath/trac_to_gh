@@ -3,7 +3,7 @@
 archive/issues_009904.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  leif\n\nPut timestamps into the spkg logs, both at the beginning and the end of each build run for the spkg in question.\n\nThis aids both in debugging problems with the build and with evaluating performance issues in the build.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9905\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime\n\nPut timestamps into the spkg logs, both at the beginning and the end of each build run for the spkg in question.\n\nThis aids both in debugging problems with the build and with evaluating performance issues in the build.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9905\n\n",
     "created_at": "2010-09-13T20:49:39Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009904.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  leif
+CC:  @nexttime
 
 Put timestamps into the spkg logs, both at the beginning and the end of each build run for the spkg in question.
 
@@ -41,7 +41,7 @@ archive/issue_comments_098463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9904#issuecomment-98463",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_098464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9904#issuecomment-98464",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_098465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9904#issuecomment-98465",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

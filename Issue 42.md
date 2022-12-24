@@ -13,7 +13,7 @@ archive/issues_000042.json:
     "title": "Calling GAP commands via gap(\"command\") reacts badly sometimes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/42",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -36,7 +36,7 @@ archive/issue_comments_000261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/42",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/42#issuecomment-261",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -54,7 +54,7 @@ archive/issue_comments_000262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/42",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/42#issuecomment-262",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_000263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/42",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/42#issuecomment-263",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

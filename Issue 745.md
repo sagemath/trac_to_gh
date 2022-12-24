@@ -14,7 +14,7 @@ archive/issues_000745.json:
     "title": "update the version of FLINT that is in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/745",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -58,7 +58,7 @@ archive/issue_comments_004369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/745#issuecomment-4369",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

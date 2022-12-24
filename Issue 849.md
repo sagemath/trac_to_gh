@@ -3,7 +3,7 @@
 archive/issues_000849.json:
 ```json
 {
-    "body": "Assignee: was\n\nNew release of Cython at http://cython.org/cython-0.9.6.7.spkg . Everything builds and all doctests pass with 2.8.6 and patch below. \n\nThere will probably be another release soon (merging in latest Pyrex release, no promise on how long that will take) but this has the overrideable cdef methods (now rdef) that would be good to start taking advantage of. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/849\n\n",
+    "body": "Assignee: @williamstein\n\nNew release of Cython at http://cython.org/cython-0.9.6.7.spkg . Everything builds and all doctests pass with 2.8.6 and patch below. \n\nThere will probably be another release soon (merging in latest Pyrex release, no promise on how long that will take) but this has the overrideable cdef methods (now rdef) that would be good to start taking advantage of. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/849\n\n",
     "created_at": "2007-10-11T10:16:14Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000849.json:
     "title": "Cython 0.9.6.7",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/849",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 New release of Cython at http://cython.org/cython-0.9.6.7.spkg . Everything builds and all doctests pass with 2.8.6 and patch below. 
 
@@ -59,7 +59,7 @@ archive/issue_comments_005253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/849#issuecomment-5253",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

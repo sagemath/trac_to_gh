@@ -3,7 +3,7 @@
 archive/issues_008431.json:
 ```json
 {
-    "body": "Assignee: vdelecroix\n\nCC:  sage-combinat slabbe abmasse tmonteil\n\nKeywords: word morphism\n\nThinking about it for a long time and motivated by\u00a0[#8423](http://trac.sagemath.org/sage_trac/ticket/8423&usg=AFQjCNG8_y-UlT3ON3unoD3utIEHQfTYbQ) this ticket stands for\n* the creation of WordMorphismExtension and WordMorphismExtensionDual (from [an article of Sano-Arnoux-Ito](http://iml.univ-mrs.fr/~arnoux/AISrev.pdf))\n* Have easy to use function for plotting Rauzy fractals using those algebraic tools\n\nIssue created by migration from https://trac.sagemath.org/ticket/8431\n\n",
+    "body": "Assignee: @videlec\n\nCC:  sage-combinat @seblabbe abmasse tmonteil\n\nKeywords: word morphism\n\nThinking about it for a long time and motivated by\u00a0[#8423](http://trac.sagemath.org/sage_trac/ticket/8423&usg=AFQjCNG8_y-UlT3ON3unoD3utIEHQfTYbQ) this ticket stands for\n* the creation of WordMorphismExtension and WordMorphismExtensionDual (from [an article of Sano-Arnoux-Ito](http://iml.univ-mrs.fr/~arnoux/AISrev.pdf))\n* Have easy to use function for plotting Rauzy fractals using those algebraic tools\n\nIssue created by migration from https://trac.sagemath.org/ticket/8431\n\n",
     "created_at": "2010-03-03T23:49:21Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_008431.json:
     "title": "Rauzy fractal (discrete planes and broken lines)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8431",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
-Assignee: vdelecroix
+Assignee: @videlec
 
-CC:  sage-combinat slabbe abmasse tmonteil
+CC:  sage-combinat @seblabbe abmasse tmonteil
 
 Keywords: word morphism
 
@@ -43,7 +43,7 @@ archive/issue_comments_075593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75593",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_075594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75594",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -92,7 +92,7 @@ Changing keywords from "word morphism" to "word morphism unit face generalized s
 archive/issue_comments_075596.json:
 ```json
 {
-    "body": "Changing assignee from vdelecroix to tjolivet.",
+    "body": "Changing assignee from @videlec to tjolivet.",
     "created_at": "2010-09-17T11:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_075596.json:
 }
 ```
 
-Changing assignee from vdelecroix to tjolivet.
+Changing assignee from @videlec to tjolivet.
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_075599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75599",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_075600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75600",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_075601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75601",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_075602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75602",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_075603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75603",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_075604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75604",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_075605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75605",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_075607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75607",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_075609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75609",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_075610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75610",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -536,16 +536,16 @@ Timo, now that I uploaded a new patch, you will have to create a new separate pa
 archive/issue_comments_075611.json:
 ```json
 {
-    "body": "Attachment [trac_8431_review-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_review-sl.patch) by slabbe created at 2010-09-24 19:51:51\n\nApplies over the trac_8431_e_one_star.patch",
+    "body": "Attachment [trac_8431_review-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_review-sl.patch) by @seblabbe created at 2010-09-24 19:51:51\n\nApplies over the trac_8431_e_one_star.patch",
     "created_at": "2010-09-24T19:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75611",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8431_review-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_review-sl.patch) by slabbe created at 2010-09-24 19:51:51
+Attachment [trac_8431_review-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_review-sl.patch) by @seblabbe created at 2010-09-24 19:51:51
 
 Applies over the trac_8431_e_one_star.patch
 
@@ -561,7 +561,7 @@ archive/issue_comments_075612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75612",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -748,7 +748,7 @@ archive/issue_comments_075619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75619",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1050,7 +1050,7 @@ archive/issue_comments_075623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75623",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1136,7 +1136,7 @@ archive/issue_comments_075624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75624",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1162,16 +1162,16 @@ Forget about that, I was wrong. I like the way it is.
 archive/issue_comments_075625.json:
 ```json
 {
-    "body": "Attachment [trac_8431_colors_tikz-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_colors_tikz-sl.patch) by slabbe created at 2010-10-01 23:30:26\n\nApplies over the precedent 3 patches",
+    "body": "Attachment [trac_8431_colors_tikz-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_colors_tikz-sl.patch) by @seblabbe created at 2010-10-01 23:30:26\n\nApplies over the precedent 3 patches",
     "created_at": "2010-10-01T23:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75625",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8431_colors_tikz-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_colors_tikz-sl.patch) by slabbe created at 2010-10-01 23:30:26
+Attachment [trac_8431_colors_tikz-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_colors_tikz-sl.patch) by @seblabbe created at 2010-10-01 23:30:26
 
 Applies over the precedent 3 patches
 
@@ -1187,7 +1187,7 @@ archive/issue_comments_075626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75626",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1318,7 +1318,7 @@ archive/issue_comments_075631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75631",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1331,16 +1331,16 @@ Applies over the precedent 5 patches
 archive/issue_comments_075632.json:
 ```json
 {
-    "body": "Attachment [trac_8431-wordmorphism-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431-wordmorphism-sl.patch) by slabbe created at 2010-10-05 00:39:40\n\nJust added a new patch that adds two methods that might be useful : `E1Star.__mul__` and `WordMorphism.dual_map`.\n\nPatches need to be applied in this order:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch \n6. trac_8431-wordmorphism-sl.patch",
+    "body": "Attachment [trac_8431-wordmorphism-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431-wordmorphism-sl.patch) by @seblabbe created at 2010-10-05 00:39:40\n\nJust added a new patch that adds two methods that might be useful : `E1Star.__mul__` and `WordMorphism.dual_map`.\n\nPatches need to be applied in this order:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch \n6. trac_8431-wordmorphism-sl.patch",
     "created_at": "2010-10-05T00:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75632",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8431-wordmorphism-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431-wordmorphism-sl.patch) by slabbe created at 2010-10-05 00:39:40
+Attachment [trac_8431-wordmorphism-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431-wordmorphism-sl.patch) by @seblabbe created at 2010-10-05 00:39:40
 
 Just added a new patch that adds two methods that might be useful : `E1Star.__mul__` and `WordMorphism.dual_map`.
 
@@ -1365,7 +1365,7 @@ archive/issue_comments_075633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75633",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1832,7 +1832,7 @@ archive/issue_comments_075647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75647",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1850,7 +1850,7 @@ archive/issue_comments_075648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75648",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1874,7 +1874,7 @@ archive/issue_comments_075649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75649",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1892,7 +1892,7 @@ archive/issue_comments_075650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75650",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1921,7 +1921,7 @@ archive/issue_comments_075651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75651",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1934,16 +1934,16 @@ Folded all the 9 appropriate patches.
 archive/issue_comments_075652.json:
 ```json
 {
-    "body": "Attachment [trac_8431_folded.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_folded.patch) by slabbe created at 2010-11-15 14:15:31\n\nI just re-uploaded the folded patch.\n\n> 1) Please update the commit message of the folded patch (use `hg qrefresh -e` for that).\n\nDone.\n\n> 2) The copyright message in the files MUST be changed to state\n\nDone. I did not know the copyright message changed.\n\nNeeds review.",
+    "body": "Attachment [trac_8431_folded.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_folded.patch) by @seblabbe created at 2010-11-15 14:15:31\n\nI just re-uploaded the folded patch.\n\n> 1) Please update the commit message of the folded patch (use `hg qrefresh -e` for that).\n\nDone.\n\n> 2) The copyright message in the files MUST be changed to state\n\nDone. I did not know the copyright message changed.\n\nNeeds review.",
     "created_at": "2010-11-15T14:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75652",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8431_folded.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_folded.patch) by slabbe created at 2010-11-15 14:15:31
+Attachment [trac_8431_folded.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_folded.patch) by @seblabbe created at 2010-11-15 14:15:31
 
 I just re-uploaded the folded patch.
 
@@ -1969,7 +1969,7 @@ archive/issue_comments_075653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75653",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -2027,7 +2027,7 @@ archive/issue_comments_075656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75656",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

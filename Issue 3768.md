@@ -14,7 +14,7 @@ archive/issues_003768.json:
     "title": "move jsmath into its own spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3768",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_026814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26814",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_026816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26816",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_026817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26817",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_026819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26819",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_026820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26820",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_026821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26821",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

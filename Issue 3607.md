@@ -3,7 +3,7 @@
 archive/issues_003607.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n```\n==19975== Conditional jump or move depends on uninitialised value(s)\n==19975==    at 0x1F3E16DD: __pyx_pf_4sage_6graphs_10graph_isom_search_tree (graph_isom.c:12972)\n==19975==    by 0x4F0F43: PyCFunction_Call (methodobject.c:77)\n==19975==    by 0x41B0FA: PyObject_Call (abstract.c:1861)\n==19975==    by 0x4952F3: do_call (ceval.c:3784)\n==19975==    by 0x494BAA: call_function (ceval.c:3596)\n==19975==    by 0x491174: PyEval_EvalFrameEx (ceval.c:2272)\n==19975==    by 0x492E64: PyEval_EvalCodeEx (ceval.c:2836)\n==19975==    by 0x48B385: PyEval_EvalCode (ceval.c:494)\n==19975==    by 0x4965CA: exec_statement (ceval.c:4177)\n==19975==    by 0x48EE67: PyEval_EvalFrameEx (ceval.c:1666)\n==19975==    by 0x492E64: PyEval_EvalCodeEx (ceval.c:2836)\n==19975==    by 0x494E7C: fast_function (ceval.c:3669)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3607\n\n",
+    "body": "Assignee: @rlmill\n\n\n```\n==19975== Conditional jump or move depends on uninitialised value(s)\n==19975==    at 0x1F3E16DD: __pyx_pf_4sage_6graphs_10graph_isom_search_tree (graph_isom.c:12972)\n==19975==    by 0x4F0F43: PyCFunction_Call (methodobject.c:77)\n==19975==    by 0x41B0FA: PyObject_Call (abstract.c:1861)\n==19975==    by 0x4952F3: do_call (ceval.c:3784)\n==19975==    by 0x494BAA: call_function (ceval.c:3596)\n==19975==    by 0x491174: PyEval_EvalFrameEx (ceval.c:2272)\n==19975==    by 0x492E64: PyEval_EvalCodeEx (ceval.c:2836)\n==19975==    by 0x48B385: PyEval_EvalCode (ceval.c:494)\n==19975==    by 0x4965CA: exec_statement (ceval.c:4177)\n==19975==    by 0x48EE67: PyEval_EvalFrameEx (ceval.c:1666)\n==19975==    by 0x492E64: PyEval_EvalCodeEx (ceval.c:2836)\n==19975==    by 0x494E7C: fast_function (ceval.c:3669)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3607\n\n",
     "created_at": "2008-07-08T11:51:25Z",
     "labels": [
         "memleak",
@@ -17,7 +17,7 @@ archive/issues_003607.json:
     "user": "mabshoff"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 ```
@@ -53,7 +53,7 @@ archive/issue_comments_025478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3607#issuecomment-25478",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_025479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3607#issuecomment-25479",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_025484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3607#issuecomment-25484",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004183.json:
 ```json
 {
-    "body": "Assignee: was\n\nI think one needs to check bit 9 (Py_TPFLAGS_HEAPTYPE) of the __class__.__flags__ attribute to see if one should do the same trick as in #2777 or something like that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4183\n\n",
+    "body": "Assignee: @williamstein\n\nI think one needs to check bit 9 (Py_TPFLAGS_HEAPTYPE) of the __class__.__flags__ attribute to see if one should do the same trick as in #2777 or something like that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4183\n\n",
     "created_at": "2008-09-24T01:25:02Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_004183.json:
     "title": "?? can't always find the source for new style classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4183",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I think one needs to check bit 9 (Py_TPFLAGS_HEAPTYPE) of the __class__.__flags__ attribute to see if one should do the same trick as in #2777 or something like that.
 
@@ -59,7 +59,7 @@ archive/issue_comments_030359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4183#issuecomment-30359",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_030363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4183#issuecomment-30363",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_030364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4183#issuecomment-30364",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

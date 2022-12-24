@@ -3,7 +3,7 @@
 archive/issues_004990.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe attached Sage code has been written by\n\n* Eduardo Ocampo Alvarez\n* Andrey Timofeev\n\nfrom the University of Essen in Germany. It needs some integration, but other than that it should be ready to be merged.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4990\n\n",
+    "body": "Assignee: @williamstein\n\nThe attached Sage code has been written by\n\n* Eduardo Ocampo Alvarez\n* Andrey Timofeev\n\nfrom the University of Essen in Germany. It needs some integration, but other than that it should be ready to be merged.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4990\n\n",
     "created_at": "2009-01-17T08:47:24Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_004990.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The attached Sage code has been written by
 
@@ -59,16 +59,16 @@ This is the third verion of the code
 archive/issue_comments_038078.json:
 ```json
 {
-    "body": "Attachment [hcp3.sage.txt](tarball://root/attachments/some-uuid/ticket4990/hcp3.sage.txt) by mhansen created at 2009-01-17 22:04:59\n\nOne thing that needs to be done is to convert everything to four spaces.",
+    "body": "Attachment [hcp3.sage.txt](tarball://root/attachments/some-uuid/ticket4990/hcp3.sage.txt) by @mwhansen created at 2009-01-17 22:04:59\n\nOne thing that needs to be done is to convert everything to four spaces.",
     "created_at": "2009-01-17T22:04:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38078",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [hcp3.sage.txt](tarball://root/attachments/some-uuid/ticket4990/hcp3.sage.txt) by mhansen created at 2009-01-17 22:04:59
+Attachment [hcp3.sage.txt](tarball://root/attachments/some-uuid/ticket4990/hcp3.sage.txt) by @mwhansen created at 2009-01-17 22:04:59
 
 One thing that needs to be done is to convert everything to four spaces.
 
@@ -84,7 +84,7 @@ archive/issue_comments_038079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38079",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -97,16 +97,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_038080.json:
 ```json
 {
-    "body": "Changing assignee from was to AlexGhitza.",
+    "body": "Changing assignee from @williamstein to @aghitza.",
     "created_at": "2009-04-03T10:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38080",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to AlexGhitza.
+Changing assignee from @williamstein to @aghitza.
 
 
 
@@ -120,7 +120,7 @@ archive/issue_comments_038081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38081",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_038082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38082",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -151,16 +151,16 @@ Changing status from new to assigned.
 archive/issue_comments_038083.json:
 ```json
 {
-    "body": "Attachment [trac_4990.patch](tarball://root/attachments/some-uuid/ticket4990/trac_4990.patch) by AlexGhitza created at 2009-04-04 07:18:21\n\nThe attached patch adds the method `hilbert_class_polynomial()` to `NumberField_quadratic` and cleans the code up a little bit.\n\nI cannot perform comparative timings since I don't have access to Magma at the moment.  Doing `%prun` with large discriminants indicates that the large majority of the time is spent in the Pari library computing the j-invariants of the representative tau's.  So I don't think rewriting the method in Cython will have a significant effect.\n\nSee also the discussion at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/6c9aedf63106cc2d",
+    "body": "Attachment [trac_4990.patch](tarball://root/attachments/some-uuid/ticket4990/trac_4990.patch) by @aghitza created at 2009-04-04 07:18:21\n\nThe attached patch adds the method `hilbert_class_polynomial()` to `NumberField_quadratic` and cleans the code up a little bit.\n\nI cannot perform comparative timings since I don't have access to Magma at the moment.  Doing `%prun` with large discriminants indicates that the large majority of the time is spent in the Pari library computing the j-invariants of the representative tau's.  So I don't think rewriting the method in Cython will have a significant effect.\n\nSee also the discussion at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/6c9aedf63106cc2d",
     "created_at": "2009-04-04T07:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38083",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_4990.patch](tarball://root/attachments/some-uuid/ticket4990/trac_4990.patch) by AlexGhitza created at 2009-04-04 07:18:21
+Attachment [trac_4990.patch](tarball://root/attachments/some-uuid/ticket4990/trac_4990.patch) by @aghitza created at 2009-04-04 07:18:21
 
 The attached patch adds the method `hilbert_class_polynomial()` to `NumberField_quadratic` and cleans the code up a little bit.
 
@@ -182,7 +182,7 @@ archive/issue_comments_038084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38084",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_038085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38085",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_038086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38086",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_038089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38089",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

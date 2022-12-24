@@ -3,7 +3,7 @@
 archive/issues_004506.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ekirkman bober\n\nThe planarity code ignores errors when adding edges.  This patch also shortcuts the planarity checking when adding an edge returns the NONPLANAR code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4506\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  ekirkman bober\n\nThe planarity code ignores errors when adding edges.  This patch also shortcuts the planarity checking when adding an edge returns the NONPLANAR code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4506\n\n",
     "created_at": "2008-11-13T01:21:30Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_004506.json:
     "title": "planarity ignores error code when adding edge",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4506",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 CC:  ekirkman bober
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4506
 archive/issue_comments_033410.json:
 ```json
 {
-    "body": "Attachment [planarity-add-edge.patch](tarball://root/attachments/some-uuid/ticket4506/planarity-add-edge.patch) by jason created at 2008-11-13 01:22:43",
+    "body": "Attachment [planarity-add-edge.patch](tarball://root/attachments/some-uuid/ticket4506/planarity-add-edge.patch) by @jasongrout created at 2008-11-13 01:22:43",
     "created_at": "2008-11-13T01:22:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4506#issuecomment-33410",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [planarity-add-edge.patch](tarball://root/attachments/some-uuid/ticket4506/planarity-add-edge.patch) by jason created at 2008-11-13 01:22:43
+Attachment [planarity-add-edge.patch](tarball://root/attachments/some-uuid/ticket4506/planarity-add-edge.patch) by @jasongrout created at 2008-11-13 01:22:43
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_033412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4506#issuecomment-33412",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_033413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4506#issuecomment-33413",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

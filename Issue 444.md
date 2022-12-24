@@ -3,7 +3,7 @@
 archive/issues_000444.json:
 ```json
 {
-    "body": "Assignee: was\n\nHi:\n\nTwo Rubik's cube programs have just been posted to\nhttp://sage.math.washington.edu/home/wdj/rubik/\nBoth one is GPL's (Michael Reid's) and the other is\nunder the MIT license (Dik Winter's). These programs\nhave been around for some time but have never\nbeen licensed until recently (and I thank both the\nauthors for kindly replying to my emails and agreeing\nto an open source license). The tarballs you will find there\nare identical to the author's version except that I have\nadded a license.txt following their email directions.\nNow that the semester has started, I lack the time to\ndo anything but am emailing the list in case anyone\nis interested and has the time to create Python\nwrappers for one (or both) of them. SAGE\ncurrently has a Rubik's cube solver which uses GAP\nand is quite slow and far from optimal. Maybe one of these\ncould be used instead one day?\n --- David Joyner\n\nIssue created by migration from https://trac.sagemath.org/ticket/444\n\n",
+    "body": "Assignee: @williamstein\n\nHi:\n\nTwo Rubik's cube programs have just been posted to\nhttp://sage.math.washington.edu/home/wdj/rubik/\nBoth one is GPL's (Michael Reid's) and the other is\nunder the MIT license (Dik Winter's). These programs\nhave been around for some time but have never\nbeen licensed until recently (and I thank both the\nauthors for kindly replying to my emails and agreeing\nto an open source license). The tarballs you will find there\nare identical to the author's version except that I have\nadded a license.txt following their email directions.\nNow that the semester has started, I lack the time to\ndo anything but am emailing the list in case anyone\nis interested and has the time to create Python\nwrappers for one (or both) of them. SAGE\ncurrently has a Rubik's cube solver which uses GAP\nand is quite slow and far from optimal. Maybe one of these\ncould be used instead one day?\n --- David Joyner\n\nIssue created by migration from https://trac.sagemath.org/ticket/444\n\n",
     "created_at": "2007-08-18T20:32:09Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000444.json:
     "title": "solve the rubik's cube fast!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/444",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Hi:
 
@@ -56,7 +56,7 @@ archive/issue_comments_002217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/444#issuecomment-2217",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_002218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/444#issuecomment-2218",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -89,16 +89,16 @@ Changing status from new to assigned.
 archive/issue_comments_002219.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-09-12T09:22:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/444#issuecomment-2219",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -107,16 +107,16 @@ Changing assignee from was to robertwb.
 archive/issue_comments_002220.json:
 ```json
 {
-    "body": "Attachment [cube-solver.hg](tarball://root/attachments/some-uuid/ticket444/cube-solver.hg) by robertwb created at 2007-09-12 10:00:10",
+    "body": "Attachment [cube-solver.hg](tarball://root/attachments/some-uuid/ticket444/cube-solver.hg) by @robertwb created at 2007-09-12 10:00:10",
     "created_at": "2007-09-12T10:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/444#issuecomment-2220",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [cube-solver.hg](tarball://root/attachments/some-uuid/ticket444/cube-solver.hg) by robertwb created at 2007-09-12 10:00:10
+Attachment [cube-solver.hg](tarball://root/attachments/some-uuid/ticket444/cube-solver.hg) by @robertwb created at 2007-09-12 10:00:10
 
 
 
@@ -171,16 +171,16 @@ I'm removing "[with patch]" from the summary for now; anybody who supplies a rev
 archive/issue_comments_002223.json:
 ```json
 {
-    "body": "Attachment [rubiks-doctest.patch](tarball://root/attachments/some-uuid/ticket444/rubiks-doctest.patch) by robertwb created at 2007-11-27 11:28:48",
+    "body": "Attachment [rubiks-doctest.patch](tarball://root/attachments/some-uuid/ticket444/rubiks-doctest.patch) by @robertwb created at 2007-11-27 11:28:48",
     "created_at": "2007-11-27T11:28:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/444#issuecomment-2223",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [rubiks-doctest.patch](tarball://root/attachments/some-uuid/ticket444/rubiks-doctest.patch) by robertwb created at 2007-11-27 11:28:48
+Attachment [rubiks-doctest.patch](tarball://root/attachments/some-uuid/ticket444/rubiks-doctest.patch) by @robertwb created at 2007-11-27 11:28:48
 
 
 
@@ -194,7 +194,7 @@ archive/issue_comments_002224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/444#issuecomment-2224",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -211,16 +211,16 @@ I did, however, add doctests for the solvers.
 archive/issue_comments_002225.json:
 ```json
 {
-    "body": "Attachment [cubegroup-cleanup1.patch](tarball://root/attachments/some-uuid/ticket444/cubegroup-cleanup1.patch) by robertwb created at 2007-11-28 20:04:16",
+    "body": "Attachment [cubegroup-cleanup1.patch](tarball://root/attachments/some-uuid/ticket444/cubegroup-cleanup1.patch) by @robertwb created at 2007-11-28 20:04:16",
     "created_at": "2007-11-28T20:04:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/444#issuecomment-2225",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [cubegroup-cleanup1.patch](tarball://root/attachments/some-uuid/ticket444/cubegroup-cleanup1.patch) by robertwb created at 2007-11-28 20:04:16
+Attachment [cubegroup-cleanup1.patch](tarball://root/attachments/some-uuid/ticket444/cubegroup-cleanup1.patch) by @robertwb created at 2007-11-28 20:04:16
 
 
 
@@ -229,16 +229,16 @@ Attachment [cubegroup-cleanup1.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_002226.json:
 ```json
 {
-    "body": "Attachment [cubegroup-cleanup2.patch](tarball://root/attachments/some-uuid/ticket444/cubegroup-cleanup2.patch) by robertwb created at 2007-11-28 20:06:12",
+    "body": "Attachment [cubegroup-cleanup2.patch](tarball://root/attachments/some-uuid/ticket444/cubegroup-cleanup2.patch) by @robertwb created at 2007-11-28 20:06:12",
     "created_at": "2007-11-28T20:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/444#issuecomment-2226",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [cubegroup-cleanup2.patch](tarball://root/attachments/some-uuid/ticket444/cubegroup-cleanup2.patch) by robertwb created at 2007-11-28 20:06:12
+Attachment [cubegroup-cleanup2.patch](tarball://root/attachments/some-uuid/ticket444/cubegroup-cleanup2.patch) by @robertwb created at 2007-11-28 20:06:12
 
 
 

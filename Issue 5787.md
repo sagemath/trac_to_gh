@@ -3,7 +3,7 @@
 archive/issues_005787.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nKeywords: doctests\n\nThis is a continuation of #5736. The patch which I am about to upload contains more doctests and bugfixes for sage/modular/hecke. The main change this makes is in the methods for constructing elements of Hecke algebras: previously these accepted more or less arbitrary matrices as input (despite the fact that all Hecke algebras in Sage are supposed to be commutative). Similarly, any element of a full Hecke algebra could be coerced into the corresponding anemic algebra -- including the Hecke operators at primes dividing the level -- which is not great.\n\nI've also added an extra check into the !__mul!__ method of the MatrixMorphism class; what's the point of having morphism objects that remember their domain and codomain if one doesn't check compatibility when composing them?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5787\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: doctests\n\nThis is a continuation of #5736. The patch which I am about to upload contains more doctests and bugfixes for sage/modular/hecke. The main change this makes is in the methods for constructing elements of Hecke algebras: previously these accepted more or less arbitrary matrices as input (despite the fact that all Hecke algebras in Sage are supposed to be commutative). Similarly, any element of a full Hecke algebra could be coerced into the corresponding anemic algebra -- including the Hecke operators at primes dividing the level -- which is not great.\n\nI've also added an extra check into the !__mul!__ method of the MatrixMorphism class; what's the point of having morphism objects that remember their domain and codomain if one doesn't check compatibility when composing them?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5787\n\n",
     "created_at": "2009-04-14T21:06:02Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_005787.json:
     "title": "[with patch, needs review] Improve doctest coverage for sage/modular/hecke (continued)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5787",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 Keywords: doctests
 
@@ -41,7 +41,7 @@ archive/issue_comments_045293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5787#issuecomment-45293",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_045294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5787#issuecomment-45294",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_045295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5787#issuecomment-45295",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -90,16 +90,16 @@ replaces all previous patches
 archive/issue_comments_045296.json:
 ```json
 {
-    "body": "Attachment [trac_5787-all.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787-all.patch) by davidloeffler created at 2009-05-04 16:49:46\n\nThe patch I've just uploaded unifies the previous two patches, and adds some more doctests to bring the coverage higher still (although not quite to 100% as I don't have time right now to understand some of the weirder things that are going on in hecke/submodule.py). Note that again this patch is designed to be applied over the patches at #5736.",
+    "body": "Attachment [trac_5787-all.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787-all.patch) by @loefflerd created at 2009-05-04 16:49:46\n\nThe patch I've just uploaded unifies the previous two patches, and adds some more doctests to bring the coverage higher still (although not quite to 100% as I don't have time right now to understand some of the weirder things that are going on in hecke/submodule.py). Note that again this patch is designed to be applied over the patches at #5736.",
     "created_at": "2009-05-04T16:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5787#issuecomment-45296",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5787-all.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787-all.patch) by davidloeffler created at 2009-05-04 16:49:46
+Attachment [trac_5787-all.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787-all.patch) by @loefflerd created at 2009-05-04 16:49:46
 
 The patch I've just uploaded unifies the previous two patches, and adds some more doctests to bring the coverage higher still (although not quite to 100% as I don't have time right now to understand some of the weirder things that are going on in hecke/submodule.py). Note that again this patch is designed to be applied over the patches at #5736.
 
@@ -110,16 +110,16 @@ The patch I've just uploaded unifies the previous two patches, and adds some mor
 archive/issue_comments_045297.json:
 ```json
 {
-    "body": "Attachment [trac_5787_pt2.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt2.patch) by craigcitro created at 2009-05-08 09:44:31",
+    "body": "Attachment [trac_5787_pt2.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt2.patch) by @craigcitro created at 2009-05-08 09:44:31",
     "created_at": "2009-05-08T09:44:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5787#issuecomment-45297",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_5787_pt2.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt2.patch) by craigcitro created at 2009-05-08 09:44:31
+Attachment [trac_5787_pt2.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt2.patch) by @craigcitro created at 2009-05-08 09:44:31
 
 
 
@@ -133,7 +133,7 @@ archive/issue_comments_045298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5787#issuecomment-45298",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_045299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5787#issuecomment-45299",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_045300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5787#issuecomment-45300",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -191,16 +191,16 @@ David
 archive/issue_comments_045301.json:
 ```json
 {
-    "body": "Attachment [trac_5787_pt2_rebased.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt2_rebased.patch) by davidloeffler created at 2009-05-10 21:32:24\n\nrebased not  to conflict with #4357",
+    "body": "Attachment [trac_5787_pt2_rebased.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt2_rebased.patch) by @loefflerd created at 2009-05-10 21:32:24\n\nrebased not  to conflict with #4357",
     "created_at": "2009-05-10T21:32:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5787#issuecomment-45301",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5787_pt2_rebased.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt2_rebased.patch) by davidloeffler created at 2009-05-10 21:32:24
+Attachment [trac_5787_pt2_rebased.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt2_rebased.patch) by @loefflerd created at 2009-05-10 21:32:24
 
 rebased not  to conflict with #4357
 
@@ -211,16 +211,16 @@ rebased not  to conflict with #4357
 archive/issue_comments_045302.json:
 ```json
 {
-    "body": "Attachment [trac_5787_pt3.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt3.patch) by davidloeffler created at 2009-05-10 21:47:58\n\nOn inspection, it turns out that the `__cmp__` routine was written stupidly anyway, so I rewrote it. Hence the third patch above. So now applying trac_5787-all.patch, trac_5787_pt2_rebased.patch, and trac_5787_pt3.patch (on top of the already-merged #5736 patches and #4357) should not conflict -- at least it doesn't on my machine.\n\nCraig: I'm entirely happy with the rest of your changes, so if you could just check to make sure that applying #5736 + #4357 + the patches here works for you and passes doctests, I think we can call this a positive review at last.",
+    "body": "Attachment [trac_5787_pt3.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt3.patch) by @loefflerd created at 2009-05-10 21:47:58\n\nOn inspection, it turns out that the `__cmp__` routine was written stupidly anyway, so I rewrote it. Hence the third patch above. So now applying trac_5787-all.patch, trac_5787_pt2_rebased.patch, and trac_5787_pt3.patch (on top of the already-merged #5736 patches and #4357) should not conflict -- at least it doesn't on my machine.\n\nCraig: I'm entirely happy with the rest of your changes, so if you could just check to make sure that applying #5736 + #4357 + the patches here works for you and passes doctests, I think we can call this a positive review at last.",
     "created_at": "2009-05-10T21:47:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5787#issuecomment-45302",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5787_pt3.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt3.patch) by davidloeffler created at 2009-05-10 21:47:58
+Attachment [trac_5787_pt3.patch](tarball://root/attachments/some-uuid/ticket5787/trac_5787_pt3.patch) by @loefflerd created at 2009-05-10 21:47:58
 
 On inspection, it turns out that the `__cmp__` routine was written stupidly anyway, so I rewrote it. Hence the third patch above. So now applying trac_5787-all.patch, trac_5787_pt2_rebased.patch, and trac_5787_pt3.patch (on top of the already-merged #5736 patches and #4357) should not conflict -- at least it doesn't on my machine.
 
@@ -238,7 +238,7 @@ archive/issue_comments_045303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5787#issuecomment-45303",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

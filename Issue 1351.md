@@ -14,7 +14,7 @@ archive/issues_001351.json:
     "title": "notebook -- for person users admin is usually the only user -- in such cases fill it in as the default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1351",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -44,7 +44,7 @@ archive/issue_comments_008659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1351#issuecomment-8659",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_008660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1351#issuecomment-8660",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_008661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1351#issuecomment-8661",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

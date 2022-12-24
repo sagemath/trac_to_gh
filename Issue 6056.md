@@ -3,7 +3,7 @@
 archive/issues_006056.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  rlm boothby\n\nThe file starts:\n\n#####################################################################\nSAGE-3.2.3: January 5th, 2009\n#####################################################################\n\nIssue created by migration from https://trac.sagemath.org/ticket/6056\n\n",
+    "body": "Assignee: tba\n\nCC:  @rlmill boothby\n\nThe file starts:\n\n#####################################################################\nSAGE-3.2.3: January 5th, 2009\n#####################################################################\n\nIssue created by migration from https://trac.sagemath.org/ticket/6056\n\n",
     "created_at": "2009-05-17T08:40:03Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_006056.json:
 ```
 Assignee: tba
 
-CC:  rlm boothby
+CC:  @rlmill boothby
 
 The file starts:
 
@@ -113,7 +113,7 @@ archive/issue_comments_048229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6056#issuecomment-48229",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

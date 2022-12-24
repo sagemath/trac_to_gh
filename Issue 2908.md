@@ -14,7 +14,7 @@ archive/issues_002908.json:
     "title": "Polynomial gcd doesn't take coefficients into account",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2908",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: somebody
@@ -103,7 +103,7 @@ archive/issue_comments_020042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2908#issuecomment-20042",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_020043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2908#issuecomment-20043",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

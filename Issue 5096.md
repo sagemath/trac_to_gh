@@ -3,7 +3,7 @@
 archive/issues_005096.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5096\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5096\n\n",
     "created_at": "2009-01-25T08:14:36Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_005096.json:
     "title": "implement beautiful printing support for pynac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5096",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mhansen
+CC:  @mwhansen
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_038860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38860",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_038861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38861",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -74,16 +74,16 @@ REFEREE REPORT:
 archive/issue_comments_038862.json:
 ```json
 {
-    "body": "Attachment [trac_5096-01_pynac_operator.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-01_pynac_operator.patch) by burcin created at 2009-01-30 13:54:54\n\nadd .operator() method",
+    "body": "Attachment [trac_5096-01_pynac_operator.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-01_pynac_operator.patch) by @burcin created at 2009-01-30 13:54:54\n\nadd .operator() method",
     "created_at": "2009-01-30T13:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38862",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5096-01_pynac_operator.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-01_pynac_operator.patch) by burcin created at 2009-01-30 13:54:54
+Attachment [trac_5096-01_pynac_operator.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-01_pynac_operator.patch) by @burcin created at 2009-01-30 13:54:54
 
 add .operator() method
 
@@ -99,7 +99,7 @@ archive/issue_comments_038863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38863",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -112,16 +112,16 @@ allow pynac expressions as arguments to binomial and factorial
 archive/issue_comments_038864.json:
 ```json
 {
-    "body": "Attachment [trac_5096-03_expression_iterator.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-03_expression_iterator.patch) by burcin created at 2009-01-30 13:56:04\n\nadd iterator and __getitem__ support to expressions",
+    "body": "Attachment [trac_5096-03_expression_iterator.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-03_expression_iterator.patch) by @burcin created at 2009-01-30 13:56:04\n\nadd iterator and __getitem__ support to expressions",
     "created_at": "2009-01-30T13:56:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38864",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5096-03_expression_iterator.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-03_expression_iterator.patch) by burcin created at 2009-01-30 13:56:04
+Attachment [trac_5096-03_expression_iterator.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-03_expression_iterator.patch) by @burcin created at 2009-01-30 13:56:04
 
 add iterator and __getitem__ support to expressions
 
@@ -137,7 +137,7 @@ archive/issue_comments_038865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38865",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -150,16 +150,16 @@ archive/issue_comments_038865.json:
 archive/issue_comments_038866.json:
 ```json
 {
-    "body": "Attachment [trac_5096-05_print_order.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-05_print_order.patch) by burcin created at 2009-01-30 13:57:18\n\nfix doctests for printing changes",
+    "body": "Attachment [trac_5096-05_print_order.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-05_print_order.patch) by @burcin created at 2009-01-30 13:57:18\n\nfix doctests for printing changes",
     "created_at": "2009-01-30T13:57:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38866",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5096-05_print_order.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-05_print_order.patch) by burcin created at 2009-01-30 13:57:18
+Attachment [trac_5096-05_print_order.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-05_print_order.patch) by @burcin created at 2009-01-30 13:57:18
 
 fix doctests for printing changes
 
@@ -175,7 +175,7 @@ archive/issue_comments_038867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38867",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -188,16 +188,16 @@ add .collect_common_factors() method
 archive/issue_comments_038868.json:
 ```json
 {
-    "body": "Attachment [trac_5096-06_collect_common_factors.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-06_collect_common_factors.patch) by burcin created at 2009-01-30 13:58:12\n\nadd latex printing support, fix is_integer method",
+    "body": "Attachment [trac_5096-06_collect_common_factors.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-06_collect_common_factors.patch) by @burcin created at 2009-01-30 13:58:12\n\nadd latex printing support, fix is_integer method",
     "created_at": "2009-01-30T13:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38868",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5096-06_collect_common_factors.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-06_collect_common_factors.patch) by burcin created at 2009-01-30 13:58:12
+Attachment [trac_5096-06_collect_common_factors.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-06_collect_common_factors.patch) by @burcin created at 2009-01-30 13:58:12
 
 add latex printing support, fix is_integer method
 
@@ -208,16 +208,16 @@ add latex printing support, fix is_integer method
 archive/issue_comments_038869.json:
 ```json
 {
-    "body": "Attachment [trac_5096-08_constants.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-08_constants.patch) by burcin created at 2009-01-30 13:59:31\n\ncorrect coercion of symbolic constants",
+    "body": "Attachment [trac_5096-08_constants.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-08_constants.patch) by @burcin created at 2009-01-30 13:59:31\n\ncorrect coercion of symbolic constants",
     "created_at": "2009-01-30T13:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38869",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5096-08_constants.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-08_constants.patch) by burcin created at 2009-01-30 13:59:31
+Attachment [trac_5096-08_constants.patch](tarball://root/attachments/some-uuid/ticket5096/trac_5096-08_constants.patch) by @burcin created at 2009-01-30 13:59:31
 
 correct coercion of symbolic constants
 
@@ -233,7 +233,7 @@ archive/issue_comments_038870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38870",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_038871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38871",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_038873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38873",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_038875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38875",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_038876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38876",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

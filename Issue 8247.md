@@ -14,7 +14,7 @@ archive/issues_008247.json:
     "title": "Remove package GLPK 3.9",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8247",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: tbd

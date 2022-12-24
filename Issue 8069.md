@@ -3,7 +3,7 @@
 archive/issues_008069.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirby was\n\nYet another correction. SAGE64=yes works also on Open Solaris 64 bit.\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg)\n\n\n\n```\nmake[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\n\nreal\t0m15.129s\nuser\t0m7.916s\nsys\t0m6.259s\nSuccessfully installed mpfi-1.3.4-cvs20071125.p8\nYou can safely delete the temporary build directory\n/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing mpfi-1.3.4-cvs20071125.p8.spkg\njaap@opensolaris:~/Downloads/sage-4.3.1$ \n\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8069\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nYet another correction. SAGE64=yes works also on Open Solaris 64 bit.\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg)\n\n\n\n```\nmake[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\n\nreal\t0m15.129s\nuser\t0m7.916s\nsys\t0m6.259s\nSuccessfully installed mpfi-1.3.4-cvs20071125.p8\nYou can safely delete the temporary build directory\n/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing mpfi-1.3.4-cvs20071125.p8.spkg\njaap@opensolaris:~/Downloads/sage-4.3.1$ \n\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8069\n\n",
     "created_at": "2010-01-26T00:01:49Z",
     "labels": [
         "porting",
@@ -14,12 +14,12 @@ archive/issues_008069.json:
     "title": "New mpfi-1.3.4-cvs20071125.p8.spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8069",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
 
-CC:  drkirby was
+CC:  drkirby @williamstein
 
 Yet another correction. SAGE64=yes works also on Open Solaris 64 bit.
 
@@ -65,7 +65,7 @@ archive/issue_comments_070710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70710",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -116,16 +116,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070713.json:
 ```json
 {
-    "body": "Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8069/mpfr-2.4.1.p1.patch) by jsp created at 2010-01-26 18:34:07",
+    "body": "Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8069/mpfr-2.4.1.p1.patch) by @jaapspies created at 2010-01-26 18:34:07",
     "created_at": "2010-01-26T18:34:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70713",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8069/mpfr-2.4.1.p1.patch) by jsp created at 2010-01-26 18:34:07
+Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8069/mpfr-2.4.1.p1.patch) by @jaapspies created at 2010-01-26 18:34:07
 
 
 
@@ -139,7 +139,7 @@ archive/issue_comments_070714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70714",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -152,16 +152,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_070715.json:
 ```json
 {
-    "body": "Attachment [mpfi-1.3.4-cvs20071125.p8.patch](tarball://root/attachments/some-uuid/ticket8069/mpfi-1.3.4-cvs20071125.p8.patch) by jsp created at 2010-01-26 18:53:16",
+    "body": "Attachment [mpfi-1.3.4-cvs20071125.p8.patch](tarball://root/attachments/some-uuid/ticket8069/mpfi-1.3.4-cvs20071125.p8.patch) by @jaapspies created at 2010-01-26 18:53:16",
     "created_at": "2010-01-26T18:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70715",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [mpfi-1.3.4-cvs20071125.p8.patch](tarball://root/attachments/some-uuid/ticket8069/mpfi-1.3.4-cvs20071125.p8.patch) by jsp created at 2010-01-26 18:53:16
+Attachment [mpfi-1.3.4-cvs20071125.p8.patch](tarball://root/attachments/some-uuid/ticket8069/mpfi-1.3.4-cvs20071125.p8.patch) by @jaapspies created at 2010-01-26 18:53:16
 
 
 
@@ -175,7 +175,7 @@ archive/issue_comments_070716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70716",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_070720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70720",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003406.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  cremona wstein\n\n* doctest coverage 100%\n* improved documentation\n* more Python-ic interface\n* warning issued if an unknown term ordering is used (this addresses parts of #3383)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3406\n\n",
+    "body": "Assignee: @malb\n\nCC:  @JohnCremona wstein\n\n* doctest coverage 100%\n* improved documentation\n* more Python-ic interface\n* warning issued if an unknown term ordering is used (this addresses parts of #3383)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3406\n\n",
     "created_at": "2008-06-12T22:40:27Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_003406.json:
     "title": "[with patch, needs review] improve TermOrder class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3406",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  cremona wstein
+CC:  @JohnCremona wstein
 
 * doctest coverage 100%
 * improved documentation
@@ -42,7 +42,7 @@ archive/issue_comments_023887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3406#issuecomment-23887",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_023889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3406#issuecomment-23889",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -103,16 +103,16 @@ fixes the doctest issues in ell_...
 archive/issue_comments_023890.json:
 ```json
 {
-    "body": "Attachment [term_order_misc.patch](tarball://root/attachments/some-uuid/ticket3406/term_order_misc.patch) by malb created at 2008-06-23 17:42:09\n\nThe updated patch fixes the doctest issue. Elliptic curves used an unknown term ordering and the old -- buggy! -- code fell back to 'lex' silently. Now it is 'lex' explicitly, please speak up if that is not what is wanted.",
+    "body": "Attachment [term_order_misc.patch](tarball://root/attachments/some-uuid/ticket3406/term_order_misc.patch) by @malb created at 2008-06-23 17:42:09\n\nThe updated patch fixes the doctest issue. Elliptic curves used an unknown term ordering and the old -- buggy! -- code fell back to 'lex' silently. Now it is 'lex' explicitly, please speak up if that is not what is wanted.",
     "created_at": "2008-06-23T17:42:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3406#issuecomment-23890",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [term_order_misc.patch](tarball://root/attachments/some-uuid/ticket3406/term_order_misc.patch) by malb created at 2008-06-23 17:42:09
+Attachment [term_order_misc.patch](tarball://root/attachments/some-uuid/ticket3406/term_order_misc.patch) by @malb created at 2008-06-23 17:42:09
 
 The updated patch fixes the doctest issue. Elliptic curves used an unknown term ordering and the old -- buggy! -- code fell back to 'lex' silently. Now it is 'lex' explicitly, please speak up if that is not what is wanted.
 
@@ -188,7 +188,7 @@ archive/issue_comments_023894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3406#issuecomment-23894",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

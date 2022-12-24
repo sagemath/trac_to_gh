@@ -3,7 +3,7 @@
 archive/issues_008452.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  hivert jhpalmieri nthiery\n\nFlorent Hivert has recently devised a nice way to use Sphinx to test that nested classes in Sage are picklable.  Please see [attachment:ticket:7448:trac_7448-nested_class_sphinx-fh.4.patch V4] at #7448.  From #7448's description:\n\n   \"I also took the chance to raise a warning if someone forgot to set the metaclass leading to a unpicklable class. Several bug have been found that way. I'll add a ticket for this.\"\n\nThis ticket is about implementing Hivert's idea.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8452\n\n",
+    "body": "Assignee: tbd\n\nCC:  @hivert @jhpalmieri @nthiery\n\nFlorent Hivert has recently devised a nice way to use Sphinx to test that nested classes in Sage are picklable.  Please see [attachment:ticket:7448:trac_7448-nested_class_sphinx-fh.4.patch V4] at #7448.  From #7448's description:\n\n   \"I also took the chance to raise a warning if someone forgot to set the metaclass leading to a unpicklable class. Several bug have been found that way. I'll add a ticket for this.\"\n\nThis ticket is about implementing Hivert's idea.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8452\n\n",
     "created_at": "2010-03-06T00:43:33Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_008452.json:
     "title": "Code check: Pickling of nested classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8452",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
 
-CC:  hivert jhpalmieri nthiery
+CC:  @hivert @jhpalmieri @nthiery
 
 Florent Hivert has recently devised a nice way to use Sphinx to test that nested classes in Sage are picklable.  Please see [attachment:ticket:7448:trac_7448-nested_class_sphinx-fh.4.patch V4] at #7448.  From #7448's description:
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8452
 archive/issue_comments_076046.json:
 ```json
 {
-    "body": "Attachment [trac_8452-nested_class_check.patch](tarball://root/attachments/some-uuid/ticket8452/trac_8452-nested_class_check.patch) by mpatel created at 2010-03-06 09:44:12\n\nAdd `sage -docbuild` option `--check-nested` to check picklability",
+    "body": "Attachment [trac_8452-nested_class_check.patch](tarball://root/attachments/some-uuid/ticket8452/trac_8452-nested_class_check.patch) by @qed777 created at 2010-03-06 09:44:12\n\nAdd `sage -docbuild` option `--check-nested` to check picklability",
     "created_at": "2010-03-06T09:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76046",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8452-nested_class_check.patch](tarball://root/attachments/some-uuid/ticket8452/trac_8452-nested_class_check.patch) by mpatel created at 2010-03-06 09:44:12
+Attachment [trac_8452-nested_class_check.patch](tarball://root/attachments/some-uuid/ticket8452/trac_8452-nested_class_check.patch) by @qed777 created at 2010-03-06 09:44:12
 
 Add `sage -docbuild` option `--check-nested` to check picklability
 
@@ -63,7 +63,7 @@ archive/issue_comments_076047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76047",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_076048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76048",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_076049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76049",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_076050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76050",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_076051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76051",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_076052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76052",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_076053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76053",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_076054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76054",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_076055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76055",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_076056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76056",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

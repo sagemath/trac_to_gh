@@ -3,7 +3,7 @@
 archive/issues_005512.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: species\n\n\n```\nsage: T = species.BinaryTreeSpecies()\nsage: t = T.structures([1,2,3])[0]; t\n1*(2*3)\nsage: t[0], t[1][0]\n1, 2\nsage: t[0] == t[1][0]\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5512\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: species\n\n\n```\nsage: T = species.BinaryTreeSpecies()\nsage: t = T.structures([1,2,3])[0]; t\n1*(2*3)\nsage: t[0], t[1][0]\n1, 2\nsage: t[0] == t[1][0]\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5512\n\n",
     "created_at": "2009-03-13T17:31:47Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005512.json:
     "title": "CombinatorialSpeciesStructures with different labels are equal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5512",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -51,7 +51,7 @@ archive/issue_comments_042810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42810",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_042813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42813",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_042814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42814",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_042815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42815",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_042816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42816",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_042817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42817",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -203,16 +203,16 @@ Apply trac_5512-species_equality.patch
 archive/issue_comments_042818.json:
 ```json
 {
-    "body": "Attachment [trac_5512-species_equality.patch](tarball://root/attachments/some-uuid/ticket5512/trac_5512-species_equality.patch) by jdemeyer created at 2012-08-03 10:28:33",
+    "body": "Attachment [trac_5512-species_equality.patch](tarball://root/attachments/some-uuid/ticket5512/trac_5512-species_equality.patch) by @jdemeyer created at 2012-08-03 10:28:33",
     "created_at": "2012-08-03T10:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42818",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_5512-species_equality.patch](tarball://root/attachments/some-uuid/ticket5512/trac_5512-species_equality.patch) by jdemeyer created at 2012-08-03 10:28:33
+Attachment [trac_5512-species_equality.patch](tarball://root/attachments/some-uuid/ticket5512/trac_5512-species_equality.patch) by @jdemeyer created at 2012-08-03 10:28:33
 
 
 
@@ -226,7 +226,7 @@ archive/issue_comments_042819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42819",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_042820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42820",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

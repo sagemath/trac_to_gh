@@ -14,7 +14,7 @@ archive/issues_009444.json:
     "title": "Fix \"rm: Cannot remove any directory in the path of the current working directory\" on t2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9444",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: drkirkby
@@ -58,16 +58,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9444
 archive/issue_comments_090491.json:
 ```json
 {
-    "body": "Attachment [trac_9444-spkg_build_dir_t2.patch](tarball://root/attachments/some-uuid/ticket9444/trac_9444-spkg_build_dir_t2.patch) by mpatel created at 2010-07-07 05:37:54\n\nStep out of spkg/build/foo-x.y.z before deleting it.",
+    "body": "Attachment [trac_9444-spkg_build_dir_t2.patch](tarball://root/attachments/some-uuid/ticket9444/trac_9444-spkg_build_dir_t2.patch) by @qed777 created at 2010-07-07 05:37:54\n\nStep out of spkg/build/foo-x.y.z before deleting it.",
     "created_at": "2010-07-07T05:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9444#issuecomment-90491",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9444-spkg_build_dir_t2.patch](tarball://root/attachments/some-uuid/ticket9444/trac_9444-spkg_build_dir_t2.patch) by mpatel created at 2010-07-07 05:37:54
+Attachment [trac_9444-spkg_build_dir_t2.patch](tarball://root/attachments/some-uuid/ticket9444/trac_9444-spkg_build_dir_t2.patch) by @qed777 created at 2010-07-07 05:37:54
 
 Step out of spkg/build/foo-x.y.z before deleting it.
 
@@ -83,7 +83,7 @@ archive/issue_comments_090492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9444#issuecomment-90492",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_090494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9444#issuecomment-90494",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_090495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9444#issuecomment-90495",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_090496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9444#issuecomment-90496",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_090497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9444#issuecomment-90497",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_090498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9444#issuecomment-90498",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_090500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9444#issuecomment-90500",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_090501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9444#issuecomment-90501",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_090502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9444#issuecomment-90502",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_090503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9444#issuecomment-90503",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_090505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9444#issuecomment-90505",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

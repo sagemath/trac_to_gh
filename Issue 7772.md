@@ -166,7 +166,7 @@ archive/issue_comments_066997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7772#issuecomment-66997",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -179,16 +179,16 @@ diff between old and new patches
 archive/issue_comments_066998.json:
 ```json
 {
-    "body": "Attachment [trac_7772-all-in-one.patch](tarball://root/attachments/some-uuid/ticket7772/trac_7772-all-in-one.patch) by jhpalmieri created at 2009-12-27 17:26:28\n\napply only this patch",
+    "body": "Attachment [trac_7772-all-in-one.patch](tarball://root/attachments/some-uuid/ticket7772/trac_7772-all-in-one.patch) by @jhpalmieri created at 2009-12-27 17:26:28\n\napply only this patch",
     "created_at": "2009-12-27T17:26:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7772#issuecomment-66998",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7772-all-in-one.patch](tarball://root/attachments/some-uuid/ticket7772/trac_7772-all-in-one.patch) by jhpalmieri created at 2009-12-27 17:26:28
+Attachment [trac_7772-all-in-one.patch](tarball://root/attachments/some-uuid/ticket7772/trac_7772-all-in-one.patch) by @jhpalmieri created at 2009-12-27 17:26:28
 
 apply only this patch
 
@@ -204,7 +204,7 @@ archive/issue_comments_066999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7772#issuecomment-66999",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_067000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7772#issuecomment-67000",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_067001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7772#issuecomment-67001",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

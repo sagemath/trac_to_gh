@@ -3,7 +3,7 @@
 archive/issues_000850.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\nIt would be very useful to be able to create a graph by giving a list of vertices and a function which specified the adjacencies.  See the doc examples in the patch for several examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/850\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nIt would be very useful to be able to create a graph by giving a list of vertices and a function which specified the adjacencies.  See the doc examples in the patch for several examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/850\n\n",
     "created_at": "2007-10-11T15:33:15Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000850.json:
     "title": "graphs: create graph by specifying vertices and a function giving adjacencies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/850",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/850
 archive/issue_comments_005254.json:
 ```json
 {
-    "body": "Attachment [function-init.patch](tarball://root/attachments/some-uuid/ticket850/function-init.patch) by jason created at 2007-10-11 15:34:01",
+    "body": "Attachment [function-init.patch](tarball://root/attachments/some-uuid/ticket850/function-init.patch) by @jasongrout created at 2007-10-11 15:34:01",
     "created_at": "2007-10-11T15:34:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/850#issuecomment-5254",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [function-init.patch](tarball://root/attachments/some-uuid/ticket850/function-init.patch) by jason created at 2007-10-11 15:34:01
+Attachment [function-init.patch](tarball://root/attachments/some-uuid/ticket850/function-init.patch) by @jasongrout created at 2007-10-11 15:34:01
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_005255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/850#issuecomment-5255",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_005256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/850#issuecomment-5256",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

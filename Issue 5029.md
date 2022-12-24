@@ -3,7 +3,7 @@
 archive/issues_005029.json:
 ```json
 {
-    "body": "Assignee: schilly\n\nI got tired of not knowing what (new) file /dev/null is when reviewing tickets, or being able to see the hg comments, so I updated the hg plugin to show this info. I'm using this for trac.cython.org. \n\nThis just needs to go into the plugin directory of this trac server, and then restart the trac server. Make sure the filename matches the python version (e.g. py2.4 or py2.5), just rename it if not. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5029\n\n",
+    "body": "Assignee: @haraldschilly\n\nI got tired of not knowing what (new) file /dev/null is when reviewing tickets, or being able to see the hg comments, so I updated the hg plugin to show this info. I'm using this for trac.cython.org. \n\nThis just needs to go into the plugin directory of this trac server, and then restart the trac server. Make sure the filename matches the python version (e.g. py2.4 or py2.5), just rename it if not. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5029\n\n",
     "created_at": "2009-01-19T20:17:13Z",
     "labels": [
         "website/wiki",
@@ -14,10 +14,10 @@ archive/issues_005029.json:
     "title": "Better diffs for trac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5029",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: schilly
+Assignee: @haraldschilly
 
 I got tired of not knowing what (new) file /dev/null is when reviewing tickets, or being able to see the hg comments, so I updated the hg plugin to show this info. I'm using this for trac.cython.org. 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5029
 archive/issue_comments_038305.json:
 ```json
 {
-    "body": "Attachment [HgBundleViewer-0.2-py2.4.egg](tarball://root/attachments/some-uuid/ticket5029/HgBundleViewer-0.2-py2.4.egg) by robertwb created at 2009-01-19 20:18:12",
+    "body": "Attachment [HgBundleViewer-0.2-py2.4.egg](tarball://root/attachments/some-uuid/ticket5029/HgBundleViewer-0.2-py2.4.egg) by @robertwb created at 2009-01-19 20:18:12",
     "created_at": "2009-01-19T20:18:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5029#issuecomment-38305",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [HgBundleViewer-0.2-py2.4.egg](tarball://root/attachments/some-uuid/ticket5029/HgBundleViewer-0.2-py2.4.egg) by robertwb created at 2009-01-19 20:18:12
+Attachment [HgBundleViewer-0.2-py2.4.egg](tarball://root/attachments/some-uuid/ticket5029/HgBundleViewer-0.2-py2.4.egg) by @robertwb created at 2009-01-19 20:18:12
 
 
 
@@ -52,16 +52,16 @@ Attachment [HgBundleViewer-0.2-py2.4.egg](tarball://root/attachments/some-uuid/t
 archive/issue_comments_038306.json:
 ```json
 {
-    "body": "Changing assignee from schilly to mabshoff.",
+    "body": "Changing assignee from @haraldschilly to mabshoff.",
     "created_at": "2009-01-19T20:40:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5029#issuecomment-38306",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Changing assignee from schilly to mabshoff.
+Changing assignee from @haraldschilly to mabshoff.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_038307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5029#issuecomment-38307",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_038308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5029#issuecomment-38308",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_038309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5029#issuecomment-38309",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_038310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5029#issuecomment-38310",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_038311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5029#issuecomment-38311",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_038312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5029#issuecomment-38312",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

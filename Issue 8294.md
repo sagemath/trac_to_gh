@@ -14,7 +14,7 @@ archive/issues_008294.json:
     "title": "Copy is broken on 2x2 integer matrix (mutability is not set)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8294",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: h
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8294
 archive/issue_comments_073478.json:
 ```json
 {
-    "body": "Attachment [trac_8294-matrix_2x2_copy_mutability_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8294/trac_8294-matrix_2x2_copy_mutability_fix-fh.patch) by hivert created at 2010-02-17 15:41:33\n\nShould be ready for review.\n\nFlorent",
+    "body": "Attachment [trac_8294-matrix_2x2_copy_mutability_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8294/trac_8294-matrix_2x2_copy_mutability_fix-fh.patch) by @hivert created at 2010-02-17 15:41:33\n\nShould be ready for review.\n\nFlorent",
     "created_at": "2010-02-17T15:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8294#issuecomment-73478",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8294-matrix_2x2_copy_mutability_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8294/trac_8294-matrix_2x2_copy_mutability_fix-fh.patch) by hivert created at 2010-02-17 15:41:33
+Attachment [trac_8294-matrix_2x2_copy_mutability_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8294/trac_8294-matrix_2x2_copy_mutability_fix-fh.patch) by @hivert created at 2010-02-17 15:41:33
 
 Should be ready for review.
 
@@ -73,16 +73,16 @@ Florent
 archive/issue_comments_073479.json:
 ```json
 {
-    "body": "Changing assignee from h to hivert.",
+    "body": "Changing assignee from h to @hivert.",
     "created_at": "2010-02-17T15:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8294#issuecomment-73479",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from h to hivert.
+Changing assignee from h to @hivert.
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_073480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8294#issuecomment-73480",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_073483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8294#issuecomment-73483",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

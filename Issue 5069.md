@@ -14,7 +14,7 @@ archive/issues_005069.json:
     "title": "Move polynomial rings to new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5069",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5069
 archive/issue_comments_038609.json:
 ```json
 {
-    "body": "Changing assignee from tbd to robertwb.",
+    "body": "Changing assignee from tbd to @robertwb.",
     "created_at": "2009-01-23T10:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5069#issuecomment-38609",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from tbd to robertwb.
+Changing assignee from tbd to @robertwb.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_038610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5069#issuecomment-38610",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_038611.json:
 ```json
 {
-    "body": "Attachment [5069-coerce-poly.patch](tarball://root/attachments/some-uuid/ticket5069/5069-coerce-poly.patch) by robertwb created at 2009-01-23 12:20:06",
+    "body": "Attachment [5069-coerce-poly.patch](tarball://root/attachments/some-uuid/ticket5069/5069-coerce-poly.patch) by @robertwb created at 2009-01-23 12:20:06",
     "created_at": "2009-01-23T12:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5069#issuecomment-38611",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5069-coerce-poly.patch](tarball://root/attachments/some-uuid/ticket5069/5069-coerce-poly.patch) by robertwb created at 2009-01-23 12:20:06
+Attachment [5069-coerce-poly.patch](tarball://root/attachments/some-uuid/ticket5069/5069-coerce-poly.patch) by @robertwb created at 2009-01-23 12:20:06
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_038612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5069#issuecomment-38612",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_038614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5069",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5069#issuecomment-38614",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

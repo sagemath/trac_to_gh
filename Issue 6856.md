@@ -14,7 +14,7 @@ archive/issues_006856.json:
     "title": "cancel button in notebook user settings not working",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6856",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6856
 archive/issue_comments_056548.json:
 ```json
 {
-    "body": "Attachment [trac_6856-fix_account_settings_cancel.patch](tarball://root/attachments/some-uuid/ticket6856/trac_6856-fix_account_settings_cancel.patch) by wjp created at 2009-09-01 15:11:55",
+    "body": "Attachment [trac_6856-fix_account_settings_cancel.patch](tarball://root/attachments/some-uuid/ticket6856/trac_6856-fix_account_settings_cancel.patch) by @wjp created at 2009-09-01 15:11:55",
     "created_at": "2009-09-01T15:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6856#issuecomment-56548",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac_6856-fix_account_settings_cancel.patch](tarball://root/attachments/some-uuid/ticket6856/trac_6856-fix_account_settings_cancel.patch) by wjp created at 2009-09-01 15:11:55
+Attachment [trac_6856-fix_account_settings_cancel.patch](tarball://root/attachments/some-uuid/ticket6856/trac_6856-fix_account_settings_cancel.patch) by @wjp created at 2009-09-01 15:11:55
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_056549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6856#issuecomment-56549",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_056550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6856#issuecomment-56550",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

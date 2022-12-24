@@ -14,7 +14,7 @@ archive/issues_004005.json:
     "title": "[with patch, needs review] sage-coverage screws up with lambda functions as default arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4005",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_028920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4005#issuecomment-28920",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

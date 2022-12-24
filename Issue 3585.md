@@ -14,7 +14,7 @@ archive/issues_003585.json:
     "title": "time_series -- lots of numerical noise in the doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3585",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -171,16 +171,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3585
 archive/issue_comments_025306.json:
 ```json
 {
-    "body": "Attachment [trac-3585.patch](tarball://root/attachments/some-uuid/ticket3585/trac-3585.patch) by craigcitro created at 2008-07-07 18:48:33",
+    "body": "Attachment [trac-3585.patch](tarball://root/attachments/some-uuid/ticket3585/trac-3585.patch) by @craigcitro created at 2008-07-07 18:48:33",
     "created_at": "2008-07-07T18:48:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25306",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3585.patch](tarball://root/attachments/some-uuid/ticket3585/trac-3585.patch) by craigcitro created at 2008-07-07 18:48:33
+Attachment [trac-3585.patch](tarball://root/attachments/some-uuid/ticket3585/trac-3585.patch) by @craigcitro created at 2008-07-07 18:48:33
 
 
 
@@ -194,7 +194,7 @@ archive/issue_comments_025307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25307",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -207,16 +207,16 @@ Changing status from new to assigned.
 archive/issue_comments_025308.json:
 ```json
 {
-    "body": "Changing assignee from tbd to craigcitro.",
+    "body": "Changing assignee from tbd to @craigcitro.",
     "created_at": "2008-07-07T18:48:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25308",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from tbd to craigcitro.
+Changing assignee from tbd to @craigcitro.
 
 
 
@@ -230,7 +230,7 @@ archive/issue_comments_025309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25309",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_025310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25310",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_025311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25311",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

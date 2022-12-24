@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2421
 archive/issue_comments_016382.json:
 ```json
 {
-    "body": "Attachment [2421.patch](tarball://root/attachments/some-uuid/ticket2421/2421.patch) by dfdeshom created at 2008-03-10 20:17:42",
+    "body": "Attachment [2421.patch](tarball://root/attachments/some-uuid/ticket2421/2421.patch) by @dfdeshom created at 2008-03-10 20:17:42",
     "created_at": "2008-03-10T20:17:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2421#issuecomment-16382",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2421.patch](tarball://root/attachments/some-uuid/ticket2421/2421.patch) by dfdeshom created at 2008-03-10 20:17:42
+Attachment [2421.patch](tarball://root/attachments/some-uuid/ticket2421/2421.patch) by @dfdeshom created at 2008-03-10 20:17:42
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_016383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2421#issuecomment-16383",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_016384.json:
 ```json
 {
-    "body": "Changing assignee from somebody to dfdeshom.",
+    "body": "Changing assignee from somebody to @dfdeshom.",
     "created_at": "2008-03-10T20:18:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2421#issuecomment-16384",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Changing assignee from somebody to dfdeshom.
+Changing assignee from somebody to @dfdeshom.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_016385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2421#issuecomment-16385",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

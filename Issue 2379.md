@@ -3,7 +3,7 @@
 archive/issues_002379.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nWhen stable, merge sage-ptest into sage-test. This will also give us tex file failures in the list of failures when testing.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2379\n\n",
+    "body": "Assignee: @garyfurnish\n\nWhen stable, merge sage-ptest into sage-test. This will also give us tex file failures in the list of failures when testing.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2379\n\n",
     "created_at": "2008-03-03T22:42:17Z",
     "labels": [
         "build",
@@ -14,10 +14,10 @@ archive/issues_002379.json:
     "title": "Merge sage-ptest into sage-test",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2379",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 When stable, merge sage-ptest into sage-test. This will also give us tex file failures in the list of failures when testing.  
 
@@ -37,7 +37,7 @@ archive/issue_comments_016053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2379#issuecomment-16053",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_016054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2379#issuecomment-16054",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_016055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2379#issuecomment-16055",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -86,16 +86,16 @@ Hang on segfault appears to be fixed
 archive/issue_comments_016056.json:
 ```json
 {
-    "body": "Attachment [trac_2739_local_1.patch](tarball://root/attachments/some-uuid/ticket2379/trac_2739_local_1.patch) by gfurnish created at 2008-04-08 10:49:28",
+    "body": "Attachment [trac_2739_local_1.patch](tarball://root/attachments/some-uuid/ticket2379/trac_2739_local_1.patch) by @garyfurnish created at 2008-04-08 10:49:28",
     "created_at": "2008-04-08T10:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2379#issuecomment-16056",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_2739_local_1.patch](tarball://root/attachments/some-uuid/ticket2379/trac_2739_local_1.patch) by gfurnish created at 2008-04-08 10:49:28
+Attachment [trac_2739_local_1.patch](tarball://root/attachments/some-uuid/ticket2379/trac_2739_local_1.patch) by @garyfurnish created at 2008-04-08 10:49:28
 
 
 

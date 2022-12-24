@@ -14,7 +14,7 @@ archive/issues_004177.json:
     "title": "Put Sage version in Notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4177",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4177
 archive/issue_comments_030311.json:
 ```json
 {
-    "body": "Attachment [nb-version-number.patch](tarball://root/attachments/some-uuid/ticket4177/nb-version-number.patch) by kcrisman created at 2008-10-17 19:03:18",
+    "body": "Attachment [nb-version-number.patch](tarball://root/attachments/some-uuid/ticket4177/nb-version-number.patch) by @kcrisman created at 2008-10-17 19:03:18",
     "created_at": "2008-10-17T19:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4177#issuecomment-30311",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [nb-version-number.patch](tarball://root/attachments/some-uuid/ticket4177/nb-version-number.patch) by kcrisman created at 2008-10-17 19:03:18
+Attachment [nb-version-number.patch](tarball://root/attachments/some-uuid/ticket4177/nb-version-number.patch) by @kcrisman created at 2008-10-17 19:03:18
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_030312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4177#issuecomment-30312",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_030313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4177#issuecomment-30313",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003835.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ncalexan\n\nIt would be nice to be able to construct the algebraic closure of an object.  For example, QQ.algebraic_closure() should return QQbar.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3835\n\n",
+    "body": "Assignee: tbd\n\nCC:  @ncalexan\n\nIt would be nice to be able to construct the algebraic closure of an object.  For example, QQ.algebraic_closure() should return QQbar.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3835\n\n",
     "created_at": "2008-08-13T15:03:21Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_003835.json:
     "title": "Make an algebraic closure function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3835",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
 
-CC:  ncalexan
+CC:  @ncalexan
 
 It would be nice to be able to construct the algebraic closure of an object.  For example, QQ.algebraic_closure() should return QQbar.
 
@@ -39,7 +39,7 @@ archive/issue_comments_027266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3835#issuecomment-27266",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -52,16 +52,16 @@ Applies to 4.1.1
 archive/issue_comments_027267.json:
 ```json
 {
-    "body": "Attachment [trac_3835-algebraic_closure.patch](tarball://root/attachments/some-uuid/ticket3835/trac_3835-algebraic_closure.patch) by cremona created at 2009-08-30 20:36:33\n\nThe attached patch implements this in the trivial cases now possible:  for a number field (including QQ) return QQbar;  for RR return CC, with the same precision (this was already implemented);  for CC, return the same field;  for finite fields, raise NotImplementedError; else raise NotImplementedError.\n\nI'm not sure if this is what Jason intended, but it would be a major undertaking to implement this in any other cases (finite fields, p-adic fields, function fields. ...)",
+    "body": "Attachment [trac_3835-algebraic_closure.patch](tarball://root/attachments/some-uuid/ticket3835/trac_3835-algebraic_closure.patch) by @JohnCremona created at 2009-08-30 20:36:33\n\nThe attached patch implements this in the trivial cases now possible:  for a number field (including QQ) return QQbar;  for RR return CC, with the same precision (this was already implemented);  for CC, return the same field;  for finite fields, raise NotImplementedError; else raise NotImplementedError.\n\nI'm not sure if this is what Jason intended, but it would be a major undertaking to implement this in any other cases (finite fields, p-adic fields, function fields. ...)",
     "created_at": "2009-08-30T20:36:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3835#issuecomment-27267",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_3835-algebraic_closure.patch](tarball://root/attachments/some-uuid/ticket3835/trac_3835-algebraic_closure.patch) by cremona created at 2009-08-30 20:36:33
+Attachment [trac_3835-algebraic_closure.patch](tarball://root/attachments/some-uuid/ticket3835/trac_3835-algebraic_closure.patch) by @JohnCremona created at 2009-08-30 20:36:33
 
 The attached patch implements this in the trivial cases now possible:  for a number field (including QQ) return QQbar;  for RR return CC, with the same precision (this was already implemented);  for CC, return the same field;  for finite fields, raise NotImplementedError; else raise NotImplementedError.
 
@@ -79,7 +79,7 @@ archive/issue_comments_027268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3835#issuecomment-27268",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_027269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3835#issuecomment-27269",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_027270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3835#issuecomment-27270",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004245.json:
     "title": "notebook -- error clicking editing when there is a < in the html.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4245",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -63,7 +63,7 @@ archive/issue_comments_030853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30853",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -76,16 +76,16 @@ I can't tell if I'm seeing the same problem or not, so I have a new ticket which
 archive/issue_comments_030854.json:
 ```json
 {
-    "body": "Attachment [trac_4245.patch](tarball://root/attachments/some-uuid/ticket4245/trac_4245.patch) by mhansen created at 2009-01-24 07:33:57",
+    "body": "Attachment [trac_4245.patch](tarball://root/attachments/some-uuid/ticket4245/trac_4245.patch) by @mwhansen created at 2009-01-24 07:33:57",
     "created_at": "2009-01-24T07:33:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30854",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4245.patch](tarball://root/attachments/some-uuid/ticket4245/trac_4245.patch) by mhansen created at 2009-01-24 07:33:57
+Attachment [trac_4245.patch](tarball://root/attachments/some-uuid/ticket4245/trac_4245.patch) by @mwhansen created at 2009-01-24 07:33:57
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_030855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30855",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing status from new to assigned.
 archive/issue_comments_030856.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-24T07:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30856",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_030857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30857",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_030858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30858",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_030859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30859",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_030860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30860",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -223,16 +223,16 @@ I've attached a patch which fixes the quoting issue for the Edit button.  Basica
 archive/issue_comments_030861.json:
 ```json
 {
-    "body": "Attachment [trac_4245-html-escape.patch](tarball://root/attachments/some-uuid/ticket4245/trac_4245-html-escape.patch) by jason created at 2009-02-06 08:58:23",
+    "body": "Attachment [trac_4245-html-escape.patch](tarball://root/attachments/some-uuid/ticket4245/trac_4245-html-escape.patch) by @jasongrout created at 2009-02-06 08:58:23",
     "created_at": "2009-02-06T08:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30861",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_4245-html-escape.patch](tarball://root/attachments/some-uuid/ticket4245/trac_4245-html-escape.patch) by jason created at 2009-02-06 08:58:23
+Attachment [trac_4245-html-escape.patch](tarball://root/attachments/some-uuid/ticket4245/trac_4245-html-escape.patch) by @jasongrout created at 2009-02-06 08:58:23
 
 
 
@@ -246,7 +246,7 @@ archive/issue_comments_030862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30862",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -259,16 +259,16 @@ Apply only trac_4245-html-escape.patch
 archive/issue_comments_030863.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to jason.",
+    "body": "Changing assignee from @mwhansen to @jasongrout.",
     "created_at": "2009-02-06T08:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30863",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mhansen to jason.
+Changing assignee from @mwhansen to @jasongrout.
 
 
 
@@ -282,7 +282,7 @@ archive/issue_comments_030864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30864",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_030865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30865",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_030866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30866",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_030867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4245#issuecomment-30867",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

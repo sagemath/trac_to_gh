@@ -3,7 +3,7 @@
 archive/issues_009952.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  fredrik.johansson kcrisman zaf mjo\n\nProblem, last digit is either 6 or 7. In short:\n\n\n```\nfermat(n) = 2**2**n + 1\nfermat(9) gives ....4097 but:\nint(fermat(9)) gives ...4096L.\nSame with: long(fermat(9)).\nint(2**2**9 +1) gives ...4097L\n```\n\n\nBurcin says: int(x) for a symbolic expression x just calls int(x.n(prec=100)). We lose that 1 in the approximation.\n\nfull example in 4.5.2:\n\n\n```\nsage: fermat(n) = 2**2**n + 1\nsage: fermat(9)\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084097\nsage: int(fermat(9))\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084096L\nsage: long(fermat(9))\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084096L\nsage: int(2**2**9 +1)\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084097L\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9953\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @fredrik-johansson @kcrisman @zafeirakopoulos @orlitzky\n\nProblem, last digit is either 6 or 7. In short:\n\n\n```\nfermat(n) = 2**2**n + 1\nfermat(9) gives ....4097 but:\nint(fermat(9)) gives ...4096L.\nSame with: long(fermat(9)).\nint(2**2**9 +1) gives ...4097L\n```\n\n\nBurcin says: int(x) for a symbolic expression x just calls int(x.n(prec=100)). We lose that 1 in the approximation.\n\nfull example in 4.5.2:\n\n\n```\nsage: fermat(n) = 2**2**n + 1\nsage: fermat(9)\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084097\nsage: int(fermat(9))\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084096L\nsage: long(fermat(9))\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084096L\nsage: int(2**2**9 +1)\n134078079299425970995740249982058461274793658205923933777\\\n235614437217640300735469768018742981669034276900318581864\\\n86050853753882811946569946433649006084097L\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9953\n\n",
     "created_at": "2010-09-20T10:16:21Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009952.json:
     "title": "int(symbolic expr) off by 1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9952",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  fredrik.johansson kcrisman zaf mjo
+CC:  @fredrik-johansson @kcrisman @zafeirakopoulos @orlitzky
 
 Problem, last digit is either 6 or 7. In short:
 
@@ -71,16 +71,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9953
 archive/issue_comments_099270.json:
 ```json
 {
-    "body": "Attachment [9953.patch](tarball://root/attachments/some-uuid/ticket9953/9953.patch) by roed created at 2010-10-25 21:27:01",
+    "body": "Attachment [9953.patch](tarball://root/attachments/some-uuid/ticket9953/9953.patch) by @roed314 created at 2010-10-25 21:27:01",
     "created_at": "2010-10-25T21:27:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9952#issuecomment-99270",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [9953.patch](tarball://root/attachments/some-uuid/ticket9953/9953.patch) by roed created at 2010-10-25 21:27:01
+Attachment [9953.patch](tarball://root/attachments/some-uuid/ticket9953/9953.patch) by @roed314 created at 2010-10-25 21:27:01
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_099271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9952#issuecomment-99271",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_099272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9952#issuecomment-99272",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_099275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9952#issuecomment-99275",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_099276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9952#issuecomment-99276",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_099277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9952#issuecomment-99277",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

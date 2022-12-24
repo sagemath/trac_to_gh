@@ -14,7 +14,7 @@ archive/issues_008253.json:
     "title": "search_src (etc.) bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8253",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8253
 archive/issue_comments_073012.json:
 ```json
 {
-    "body": "Attachment [trac_8253-search.patch](tarball://root/attachments/some-uuid/ticket8253/trac_8253-search.patch) by jhpalmieri created at 2010-02-12 22:22:52",
+    "body": "Attachment [trac_8253-search.patch](tarball://root/attachments/some-uuid/ticket8253/trac_8253-search.patch) by @jhpalmieri created at 2010-02-12 22:22:52",
     "created_at": "2010-02-12T22:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73012",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8253-search.patch](tarball://root/attachments/some-uuid/ticket8253/trac_8253-search.patch) by jhpalmieri created at 2010-02-12 22:22:52
+Attachment [trac_8253-search.patch](tarball://root/attachments/some-uuid/ticket8253/trac_8253-search.patch) by @jhpalmieri created at 2010-02-12 22:22:52
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_073013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73013",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_073014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73014",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_073015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73015",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -113,16 +113,16 @@ Changing status from new to needs_review.
 archive/issue_comments_073016.json:
 ```json
 {
-    "body": "Attachment [trac_8253-search.v2.patch](tarball://root/attachments/some-uuid/ticket8253/trac_8253-search.v2.patch) by jhpalmieri created at 2010-02-17 20:58:13",
+    "body": "Attachment [trac_8253-search.v2.patch](tarball://root/attachments/some-uuid/ticket8253/trac_8253-search.v2.patch) by @jhpalmieri created at 2010-02-17 20:58:13",
     "created_at": "2010-02-17T20:58:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73016",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8253-search.v2.patch](tarball://root/attachments/some-uuid/ticket8253/trac_8253-search.v2.patch) by jhpalmieri created at 2010-02-17 20:58:13
+Attachment [trac_8253-search.v2.patch](tarball://root/attachments/some-uuid/ticket8253/trac_8253-search.v2.patch) by @jhpalmieri created at 2010-02-17 20:58:13
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_073017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73017",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -45,7 +45,7 @@ archive/issue_comments_077165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8537#issuecomment-77165",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_077166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8537#issuecomment-77166",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_077167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8537#issuecomment-77167",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_077168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8537#issuecomment-77168",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_077169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8537#issuecomment-77169",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_077170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8537#issuecomment-77170",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_077175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8537#issuecomment-77175",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -336,16 +336,16 @@ new spkg-install for reference
 archive/issue_comments_077179.json:
 ```json
 {
-    "body": "Attachment [spkg-install.2](tarball://root/attachments/some-uuid/ticket8537/spkg-install.2) by vbraun created at 2011-01-11 21:59:52\n\nNice! Functionality-wise it is all good. But would you mind filling in the `SPKG.txt` according to the template in the developer manual? See\n\nhttp://www.sagemath.org/doc/developer/producing_spkgs.html#the-file-spkg-txt\n\nThat'll give us a place to record future changes etc. You could also add `.*~` to the `.hgignore` so that mercurial doesn't complain about emacs backup files.\n\nBest wishes,\nVolker",
+    "body": "Attachment [spkg-install.2](tarball://root/attachments/some-uuid/ticket8537/spkg-install.2) by @vbraun created at 2011-01-11 21:59:52\n\nNice! Functionality-wise it is all good. But would you mind filling in the `SPKG.txt` according to the template in the developer manual? See\n\nhttp://www.sagemath.org/doc/developer/producing_spkgs.html#the-file-spkg-txt\n\nThat'll give us a place to record future changes etc. You could also add `.*~` to the `.hgignore` so that mercurial doesn't complain about emacs backup files.\n\nBest wishes,\nVolker",
     "created_at": "2011-01-11T21:59:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8537#issuecomment-77179",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [spkg-install.2](tarball://root/attachments/some-uuid/ticket8537/spkg-install.2) by vbraun created at 2011-01-11 21:59:52
+Attachment [spkg-install.2](tarball://root/attachments/some-uuid/ticket8537/spkg-install.2) by @vbraun created at 2011-01-11 21:59:52
 
 Nice! Functionality-wise it is all good. But would you mind filling in the `SPKG.txt` according to the template in the developer manual? See
 
@@ -403,7 +403,7 @@ archive/issue_comments_077181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8537#issuecomment-77181",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_077182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8537#issuecomment-77182",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_077183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8537#issuecomment-77183",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_077184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8537#issuecomment-77184",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

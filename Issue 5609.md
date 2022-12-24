@@ -3,7 +3,7 @@
 archive/issues_005609.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  polybori burcin rpw\n\nKeywords: polybori\n\nAdded `interreduced_basis()` and `__cmp__()` functions to `BooleanPolynomialIdeal`. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5609\n\n",
+    "body": "Assignee: @malb\n\nCC:  polybori @burcin rpw\n\nKeywords: polybori\n\nAdded `interreduced_basis()` and `__cmp__()` functions to `BooleanPolynomialIdeal`. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5609\n\n",
     "created_at": "2009-03-25T16:00:22Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_005609.json:
     "title": "[with patch, needs review] some functions for BooleanPolynomialIdeal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5609",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  polybori burcin rpw
+CC:  polybori @burcin rpw
 
 Keywords: polybori
 
@@ -41,7 +41,7 @@ archive/issue_comments_043783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5609#issuecomment-43783",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_043784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5609#issuecomment-43784",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_043785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5609#issuecomment-43785",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_043786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5609#issuecomment-43786",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_043787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5609#issuecomment-43787",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -128,16 +128,16 @@ rebased to 3.4.2
 archive/issue_comments_043788.json:
 ```json
 {
-    "body": "Attachment [pbori_interred.patch](tarball://root/attachments/some-uuid/ticket5609/pbori_interred.patch) by malb created at 2009-05-12 01:16:24\n\nrebased the attached patch to 3.4.2",
+    "body": "Attachment [pbori_interred.patch](tarball://root/attachments/some-uuid/ticket5609/pbori_interred.patch) by @malb created at 2009-05-12 01:16:24\n\nrebased the attached patch to 3.4.2",
     "created_at": "2009-05-12T01:16:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5609#issuecomment-43788",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [pbori_interred.patch](tarball://root/attachments/some-uuid/ticket5609/pbori_interred.patch) by malb created at 2009-05-12 01:16:24
+Attachment [pbori_interred.patch](tarball://root/attachments/some-uuid/ticket5609/pbori_interred.patch) by @malb created at 2009-05-12 01:16:24
 
 rebased the attached patch to 3.4.2
 
@@ -153,7 +153,7 @@ archive/issue_comments_043789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5609#issuecomment-43789",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004420.json:
 ```json
 {
-    "body": "Assignee: malb\n\nTo make the answer returned by `Ideal.groebner_basis` truely canonical, sort it. The attach patch also fixes some doctest failures in `rings/polynomial` and replaces #4035.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4420\n\n",
+    "body": "Assignee: @malb\n\nTo make the answer returned by `Ideal.groebner_basis` truely canonical, sort it. The attach patch also fixes some doctest failures in `rings/polynomial` and replaces #4035.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4420\n\n",
     "created_at": "2008-11-02T01:41:57Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_004420.json:
     "title": "[with patch, needs review] sort Gr\u00f6bner bases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4420",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 To make the answer returned by `Ideal.groebner_basis` truely canonical, sort it. The attach patch also fixes some doctest failures in `rings/polynomial` and replaces #4035.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4420
 archive/issue_comments_032503.json:
 ```json
 {
-    "body": "Attachment [sort_gb.patch](tarball://root/attachments/some-uuid/ticket4420/sort_gb.patch) by malb created at 2008-11-02 01:42:15",
+    "body": "Attachment [sort_gb.patch](tarball://root/attachments/some-uuid/ticket4420/sort_gb.patch) by @malb created at 2008-11-02 01:42:15",
     "created_at": "2008-11-02T01:42:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32503",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sort_gb.patch](tarball://root/attachments/some-uuid/ticket4420/sort_gb.patch) by malb created at 2008-11-02 01:42:15
+Attachment [sort_gb.patch](tarball://root/attachments/some-uuid/ticket4420/sort_gb.patch) by @malb created at 2008-11-02 01:42:15
 
 
 
@@ -212,7 +212,7 @@ archive/issue_comments_032507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32507",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -279,16 +279,16 @@ Michael
 archive/issue_comments_032510.json:
 ```json
 {
-    "body": "Attachment [sort_gb_doc.patch](tarball://root/attachments/some-uuid/ticket4420/sort_gb_doc.patch) by malb created at 2008-11-02 14:37:29\n\nThe attached patch fixes the doctest failures in `tut.tex` and `const.tex`",
+    "body": "Attachment [sort_gb_doc.patch](tarball://root/attachments/some-uuid/ticket4420/sort_gb_doc.patch) by @malb created at 2008-11-02 14:37:29\n\nThe attached patch fixes the doctest failures in `tut.tex` and `const.tex`",
     "created_at": "2008-11-02T14:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32510",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sort_gb_doc.patch](tarball://root/attachments/some-uuid/ticket4420/sort_gb_doc.patch) by malb created at 2008-11-02 14:37:29
+Attachment [sort_gb_doc.patch](tarball://root/attachments/some-uuid/ticket4420/sort_gb_doc.patch) by @malb created at 2008-11-02 14:37:29
 
 The attached patch fixes the doctest failures in `tut.tex` and `const.tex`
 

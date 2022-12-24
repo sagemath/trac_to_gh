@@ -3,7 +3,7 @@
 archive/issues_007787.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  chapoton\n\nA minifier is safer (less likely to cause errors), is faster (no need for client-side to unpack), and smaller (with gzip).\n\nGoogle has reimplemented Douglas Crockford's `jsmin.py` with a BSD License for its V8 engine. It is available here:\n\nhttp://code.google.com/p/v8/source/browse/branches/bleeding_edge/tools/jsmin.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/7787\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @fchapoton\n\nA minifier is safer (less likely to cause errors), is faster (no need for client-side to unpack), and smaller (with gzip).\n\nGoogle has reimplemented Douglas Crockford's `jsmin.py` with a BSD License for its V8 engine. It is available here:\n\nhttp://code.google.com/p/v8/source/browse/branches/bleeding_edge/tools/jsmin.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/7787\n\n",
     "created_at": "2009-12-29T10:20:28Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007787.json:
     "title": "Use a javascript minifier instead of a packer for sagenb",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7787",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  chapoton
+CC:  @fchapoton
 
 A minifier is safer (less likely to cause errors), is faster (no need for client-side to unpack), and smaller (with gzip).
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7787
 archive/issue_comments_067204.json:
 ```json
 {
-    "body": "Attachment [trac_7787-sagenb-js-minify.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.patch) by timdumol created at 2009-12-29 10:34:02\n\nAdds Google's jsmin.py",
+    "body": "Attachment [trac_7787-sagenb-js-minify.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.patch) by @TimDumol created at 2009-12-29 10:34:02\n\nAdds Google's jsmin.py",
     "created_at": "2009-12-29T10:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7787#issuecomment-67204",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7787-sagenb-js-minify.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.patch) by timdumol created at 2009-12-29 10:34:02
+Attachment [trac_7787-sagenb-js-minify.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.patch) by @TimDumol created at 2009-12-29 10:34:02
 
 Adds Google's jsmin.py
 
@@ -63,7 +63,7 @@ archive/issue_comments_067205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7787#issuecomment-67205",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing status from new to needs_review.
 archive/issue_comments_067206.json:
 ```json
 {
-    "body": "Attachment [trac_7787-sagenb-js-minify.2.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.2.patch) by timdumol created at 2009-12-29 10:37:45\n\nReplaces JavaScriptCompressor with JavaScriptMinifier",
+    "body": "Attachment [trac_7787-sagenb-js-minify.2.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.2.patch) by @TimDumol created at 2009-12-29 10:37:45\n\nReplaces JavaScriptCompressor with JavaScriptMinifier",
     "created_at": "2009-12-29T10:37:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7787#issuecomment-67206",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7787-sagenb-js-minify.2.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.2.patch) by timdumol created at 2009-12-29 10:37:45
+Attachment [trac_7787-sagenb-js-minify.2.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.2.patch) by @TimDumol created at 2009-12-29 10:37:45
 
 Replaces JavaScriptCompressor with JavaScriptMinifier
 
@@ -96,16 +96,16 @@ Replaces JavaScriptCompressor with JavaScriptMinifier
 archive/issue_comments_067207.json:
 ```json
 {
-    "body": "Attachment [trac_7787-sagenb-js-minify.3.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.3.patch) by timdumol created at 2009-12-29 10:40:53\n\nAdds Google's jsmin.py. Apply this patch alone.",
+    "body": "Attachment [trac_7787-sagenb-js-minify.3.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.3.patch) by @TimDumol created at 2009-12-29 10:40:53\n\nAdds Google's jsmin.py. Apply this patch alone.",
     "created_at": "2009-12-29T10:40:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7787#issuecomment-67207",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7787-sagenb-js-minify.3.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.3.patch) by timdumol created at 2009-12-29 10:40:53
+Attachment [trac_7787-sagenb-js-minify.3.patch](tarball://root/attachments/some-uuid/ticket7787/trac_7787-sagenb-js-minify.3.patch) by @TimDumol created at 2009-12-29 10:40:53
 
 Adds Google's jsmin.py. Apply this patch alone.
 
@@ -121,7 +121,7 @@ archive/issue_comments_067208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7787#issuecomment-67208",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_067209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7787#issuecomment-67209",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_067210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7787#issuecomment-67210",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_067211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7787#issuecomment-67211",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_067212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7787#issuecomment-67212",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

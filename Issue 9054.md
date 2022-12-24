@@ -3,7 +3,7 @@
 archive/issues_009054.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  burcin khwilson mderickx mstreng novoselt pbruin minz saraedum\n\nOne of the first things we learned at Sage Days 21: Function Fields, is that it is not even possible to really define or even do arithmetic in function fields *at all* in Sage!  It's amazing that this most basic arithmetic still isn't supported, but it isn't (maybe it used to be via generic machinery, but got broken...?).  The point of this ticket is to create classes for standard function field structures, along with support for arithmetic.   This should be organized in a way similar to number fields. \n\nFor this code, the main point is to establish an API that works solidly.  It will be insanely slow.  A subsequent patch will make things fast.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9054\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @burcin khwilson @koffie @mstreng @novoselt @pjbruin minz @saraedum\n\nOne of the first things we learned at Sage Days 21: Function Fields, is that it is not even possible to really define or even do arithmetic in function fields *at all* in Sage!  It's amazing that this most basic arithmetic still isn't supported, but it isn't (maybe it used to be via generic machinery, but got broken...?).  The point of this ticket is to create classes for standard function field structures, along with support for arithmetic.   This should be organized in a way similar to number fields. \n\nFor this code, the main point is to establish an API that works solidly.  It will be insanely slow.  A subsequent patch will make things fast.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9054\n\n",
     "created_at": "2010-05-26T11:21:12Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009054.json:
     "title": "create a class for basic function_field arithmetic for Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9054",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  burcin khwilson mderickx mstreng novoselt pbruin minz saraedum
+CC:  @burcin khwilson @koffie @mstreng @novoselt @pjbruin minz @saraedum
 
 One of the first things we learned at Sage Days 21: Function Fields, is that it is not even possible to really define or even do arithmetic in function fields *at all* in Sage!  It's amazing that this most basic arithmetic still isn't supported, but it isn't (maybe it used to be via generic machinery, but got broken...?).  The point of this ticket is to create classes for standard function field structures, along with support for arithmetic.   This should be organized in a way similar to number fields. 
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9054
 archive/issue_comments_083853.json:
 ```json
 {
-    "body": "Attachment [trac_9054-part1.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part1.patch) by burcin created at 2010-05-26 22:22:52",
+    "body": "Attachment [trac_9054-part1.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part1.patch) by @burcin created at 2010-05-26 22:22:52",
     "created_at": "2010-05-26T22:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83853",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9054-part1.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part1.patch) by burcin created at 2010-05-26 22:22:52
+Attachment [trac_9054-part1.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part1.patch) by @burcin created at 2010-05-26 22:22:52
 
 
 
@@ -54,16 +54,16 @@ Attachment [trac_9054-part1.patch](tarball://root/attachments/some-uuid/ticket90
 archive/issue_comments_083854.json:
 ```json
 {
-    "body": "Attachment [trac_9054-part2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part2.patch) by was created at 2010-05-27 01:27:22",
+    "body": "Attachment [trac_9054-part2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part2.patch) by @williamstein created at 2010-05-27 01:27:22",
     "created_at": "2010-05-27T01:27:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83854",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9054-part2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part2.patch) by was created at 2010-05-27 01:27:22
+Attachment [trac_9054-part2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part2.patch) by @williamstein created at 2010-05-27 01:27:22
 
 
 
@@ -72,16 +72,16 @@ Attachment [trac_9054-part2.patch](tarball://root/attachments/some-uuid/ticket90
 archive/issue_comments_083855.json:
 ```json
 {
-    "body": "Attachment [trac_9054-part3.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part3.patch) by was created at 2010-05-27 03:01:01",
+    "body": "Attachment [trac_9054-part3.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part3.patch) by @williamstein created at 2010-05-27 03:01:01",
     "created_at": "2010-05-27T03:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83855",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9054-part3.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part3.patch) by was created at 2010-05-27 03:01:01
+Attachment [trac_9054-part3.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part3.patch) by @williamstein created at 2010-05-27 03:01:01
 
 
 
@@ -126,16 +126,16 @@ True
 archive/issue_comments_083857.json:
 ```json
 {
-    "body": "Attachment [trac_9054-part5.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part5.patch) by robertwb created at 2010-05-27 10:10:47",
+    "body": "Attachment [trac_9054-part5.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part5.patch) by @robertwb created at 2010-05-27 10:10:47",
     "created_at": "2010-05-27T10:10:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83857",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac_9054-part5.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part5.patch) by robertwb created at 2010-05-27 10:10:47
+Attachment [trac_9054-part5.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part5.patch) by @robertwb created at 2010-05-27 10:10:47
 
 
 
@@ -149,7 +149,7 @@ archive/issue_comments_083858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83858",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -162,16 +162,16 @@ Looks like you forgot to add the file `function_field_order`, so I wasn't able t
 archive/issue_comments_083859.json:
 ```json
 {
-    "body": "Attachment [trac_9054-part7.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part7.patch) by was created at 2010-05-27 22:53:04\n\npolynomial factorization!",
+    "body": "Attachment [trac_9054-part7.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part7.patch) by @williamstein created at 2010-05-27 22:53:04\n\npolynomial factorization!",
     "created_at": "2010-05-27T22:53:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83859",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9054-part7.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part7.patch) by was created at 2010-05-27 22:53:04
+Attachment [trac_9054-part7.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part7.patch) by @williamstein created at 2010-05-27 22:53:04
 
 polynomial factorization!
 
@@ -187,7 +187,7 @@ archive/issue_comments_083860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83860",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_083861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83861",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -226,16 +226,16 @@ ideals and orders!
 archive/issue_comments_083862.json:
 ```json
 {
-    "body": "Attachment [trac_9054-part8.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part8.patch) by was created at 2010-05-28 08:22:52\n\ninverses of fractional ideals",
+    "body": "Attachment [trac_9054-part8.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part8.patch) by @williamstein created at 2010-05-28 08:22:52\n\ninverses of fractional ideals",
     "created_at": "2010-05-28T08:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83862",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9054-part8.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part8.patch) by was created at 2010-05-28 08:22:52
+Attachment [trac_9054-part8.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part8.patch) by @williamstein created at 2010-05-28 08:22:52
 
 inverses of fractional ideals
 
@@ -246,16 +246,16 @@ inverses of fractional ideals
 archive/issue_comments_083863.json:
 ```json
 {
-    "body": "Attachment [trac_9054-part9.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part9.patch) by was created at 2010-05-28 10:54:25\n\nReplying to [comment:2 salmanhb]:\n> There seems to be an issue with returning the base ring of a RationalFunctionField. Neither base() nor base_ring() return the correct ring:\n> \n> \n> {{{\n> sage: K.<t> = FunctionField(QQ); K\n> Rational function field in t over Rational Field\n> sage: R1 = K.base(); R1\n> Rational function field in t over Rational Field\n> sage: R2 = K.base_ring(); R2\n> Rational function field in t over Rational Field\n> sage: R3.<s> = QQ[]; K3 = Frac(R3); K3\n> Fraction Field of Univariate Polynomial Ring in s over Rational Field\n> sage: R3\n> Univariate Polynomial Ring in s over Rational Field\n> sage: K3.base() == R3\n> True\n> }}}\n\nThe above is correct.  To get what you want, use the constant_field() method. \n\n```\nsage: K.<t> = FunctionField(QQ);\nsage: K.constant_field()\nRational Field\n```\n",
+    "body": "Attachment [trac_9054-part9.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part9.patch) by @williamstein created at 2010-05-28 10:54:25\n\nReplying to [comment:2 salmanhb]:\n> There seems to be an issue with returning the base ring of a RationalFunctionField. Neither base() nor base_ring() return the correct ring:\n> \n> \n> {{{\n> sage: K.<t> = FunctionField(QQ); K\n> Rational function field in t over Rational Field\n> sage: R1 = K.base(); R1\n> Rational function field in t over Rational Field\n> sage: R2 = K.base_ring(); R2\n> Rational function field in t over Rational Field\n> sage: R3.<s> = QQ[]; K3 = Frac(R3); K3\n> Fraction Field of Univariate Polynomial Ring in s over Rational Field\n> sage: R3\n> Univariate Polynomial Ring in s over Rational Field\n> sage: K3.base() == R3\n> True\n> }}}\n\nThe above is correct.  To get what you want, use the constant_field() method. \n\n```\nsage: K.<t> = FunctionField(QQ);\nsage: K.constant_field()\nRational Field\n```\n",
     "created_at": "2010-05-28T10:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83863",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9054-part9.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part9.patch) by was created at 2010-05-28 10:54:25
+Attachment [trac_9054-part9.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part9.patch) by @williamstein created at 2010-05-28 10:54:25
 
 Replying to [comment:2 salmanhb]:
 > There seems to be an issue with returning the base ring of a RationalFunctionField. Neither base() nor base_ring() return the correct ring:
@@ -297,7 +297,7 @@ archive/issue_comments_083864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83864",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -310,16 +310,16 @@ morphisms of function fields
 archive/issue_comments_083865.json:
 ```json
 {
-    "body": "Attachment [trac_9054-part10.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part10.patch) by was created at 2010-05-29 03:13:02",
+    "body": "Attachment [trac_9054-part10.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part10.patch) by @williamstein created at 2010-05-29 03:13:02",
     "created_at": "2010-05-29T03:13:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83865",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9054-part10.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part10.patch) by was created at 2010-05-29 03:13:02
+Attachment [trac_9054-part10.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part10.patch) by @williamstein created at 2010-05-29 03:13:02
 
 
 
@@ -328,16 +328,16 @@ Attachment [trac_9054-part10.patch](tarball://root/attachments/some-uuid/ticket9
 archive/issue_comments_083866.json:
 ```json
 {
-    "body": "Attachment [trac_9054-part12.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part12.patch) by robertwb created at 2010-05-30 09:54:48\n\nVarious methods needed for #9095 (doctesets depend on #9094)",
+    "body": "Attachment [trac_9054-part12.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part12.patch) by @robertwb created at 2010-05-30 09:54:48\n\nVarious methods needed for #9095 (doctesets depend on #9094)",
     "created_at": "2010-05-30T09:54:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83866",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac_9054-part12.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part12.patch) by robertwb created at 2010-05-30 09:54:48
+Attachment [trac_9054-part12.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part12.patch) by @robertwb created at 2010-05-30 09:54:48
 
 Various methods needed for #9095 (doctesets depend on #9094)
 
@@ -376,16 +376,16 @@ R(f.element()).valuation(R(p.element()))
 archive/issue_comments_083868.json:
 ```json
 {
-    "body": "Attachment [trac_9054-part1-12.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part1-12.patch) by was created at 2010-07-06 09:25:32\n\nflattened patch that incorporates all of patches 1-12 above into a single patch.",
+    "body": "Attachment [trac_9054-part1-12.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part1-12.patch) by @williamstein created at 2010-07-06 09:25:32\n\nflattened patch that incorporates all of patches 1-12 above into a single patch.",
     "created_at": "2010-07-06T09:25:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83868",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9054-part1-12.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part1-12.patch) by was created at 2010-07-06 09:25:32
+Attachment [trac_9054-part1-12.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-part1-12.patch) by @williamstein created at 2010-07-06 09:25:32
 
 flattened patch that incorporates all of patches 1-12 above into a single patch.
 
@@ -401,7 +401,7 @@ archive/issue_comments_083869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83869",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -433,16 +433,16 @@ The following tests failed:
 archive/issue_comments_083870.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to was.",
+    "body": "Changing assignee from @aghitza to @williamstein.",
     "created_at": "2010-07-06T09:37:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83870",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from AlexGhitza to was.
+Changing assignee from @aghitza to @williamstein.
 
 
 
@@ -456,7 +456,7 @@ archive/issue_comments_083871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83871",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_083872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83872",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_083873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83873",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_083874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83874",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_083875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83875",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -577,16 +577,16 @@ Has there been any work on this since sage days > 23? Even if the work is only p
 archive/issue_comments_083876.json:
 ```json
 {
-    "body": "Attachment [trac_9054-doctest.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-doctest.patch) by mderickx created at 2010-07-31 16:08:17\n\nAplies to sage 4.4.4 after 1-12 patch and it also needs the #9054 patch trac_9094-sqrt-mderickx.patch",
+    "body": "Attachment [trac_9054-doctest.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-doctest.patch) by @koffie created at 2010-07-31 16:08:17\n\nAplies to sage 4.4.4 after 1-12 patch and it also needs the #9054 patch trac_9094-sqrt-mderickx.patch",
     "created_at": "2010-07-31T16:08:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83876",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
-Attachment [trac_9054-doctest.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-doctest.patch) by mderickx created at 2010-07-31 16:08:17
+Attachment [trac_9054-doctest.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-doctest.patch) by @koffie created at 2010-07-31 16:08:17
 
 Aplies to sage 4.4.4 after 1-12 patch and it also needs the #9054 patch trac_9094-sqrt-mderickx.patch
 
@@ -602,7 +602,7 @@ archive/issue_comments_083877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83877",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -624,7 +624,7 @@ archive/issue_comments_083878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83878",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -644,7 +644,7 @@ archive/issue_comments_083879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83879",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -662,7 +662,7 @@ archive/issue_comments_083880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83880",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -680,7 +680,7 @@ archive/issue_comments_083881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83881",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -698,7 +698,7 @@ archive/issue_comments_083882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83882",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -716,7 +716,7 @@ archive/issue_comments_083883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83883",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -756,7 +756,7 @@ archive/issue_comments_083885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83885",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -777,16 +777,16 @@ I think it is confusing that it does not make a difference whether you write R.e
 archive/issue_comments_083886.json:
 ```json
 {
-    "body": "Attachment [trac_9054_polynomial_base_field.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_polynomial_base_field.patch) by saraedum created at 2011-06-08 19:56:44\n\npolynomial used for a field extension must be defined over the base field",
+    "body": "Attachment [trac_9054_polynomial_base_field.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_polynomial_base_field.patch) by @saraedum created at 2011-06-08 19:56:44\n\npolynomial used for a field extension must be defined over the base field",
     "created_at": "2011-06-08T19:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83886",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_polynomial_base_field.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_polynomial_base_field.patch) by saraedum created at 2011-06-08 19:56:44
+Attachment [trac_9054_polynomial_base_field.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_polynomial_base_field.patch) by @saraedum created at 2011-06-08 19:56:44
 
 polynomial used for a field extension must be defined over the base field
 
@@ -802,7 +802,7 @@ archive/issue_comments_083887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83887",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -829,7 +829,7 @@ archive/issue_comments_083888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83888",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -842,16 +842,16 @@ fixes the problems regarding zero.
 archive/issue_comments_083889.json:
 ```json
 {
-    "body": "Attachment [trac_9054_zero.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_zero.patch) by saraedum created at 2011-07-22 16:26:22\n\nEntering the following at the sage prompt produces a `TypeError: Unable to coerce -u^2 (...) to Rational`.\n\n```\nK.<x> = FunctionField(QQ); R.<y> = K[]\nL.<y> = K.extension(y^2 - x)\nM.<u> = FunctionField(QQ); R.<v> = M[]\nN.<v> = M.extension(v-u^2)\nL.hom([u,v])\n```\n\nThis is due to the fact that `hom()` determines the codomain by looking only at the first element of `[u,v]`.",
+    "body": "Attachment [trac_9054_zero.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_zero.patch) by @saraedum created at 2011-07-22 16:26:22\n\nEntering the following at the sage prompt produces a `TypeError: Unable to coerce -u^2 (...) to Rational`.\n\n```\nK.<x> = FunctionField(QQ); R.<y> = K[]\nL.<y> = K.extension(y^2 - x)\nM.<u> = FunctionField(QQ); R.<v> = M[]\nN.<v> = M.extension(v-u^2)\nL.hom([u,v])\n```\n\nThis is due to the fact that `hom()` determines the codomain by looking only at the first element of `[u,v]`.",
     "created_at": "2011-07-22T16:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83889",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_zero.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_zero.patch) by saraedum created at 2011-07-22 16:26:22
+Attachment [trac_9054_zero.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_zero.patch) by @saraedum created at 2011-07-22 16:26:22
 
 Entering the following at the sage prompt produces a `TypeError: Unable to coerce -u^2 (...) to Rational`.
 
@@ -872,16 +872,16 @@ This is due to the fact that `hom()` determines the codomain by looking only at 
 archive/issue_comments_083890.json:
 ```json
 {
-    "body": "Attachment [trac_9054_codomain.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_codomain.patch) by saraedum created at 2011-07-22 16:27:07\n\nset the correct codomain for function fields",
+    "body": "Attachment [trac_9054_codomain.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_codomain.patch) by @saraedum created at 2011-07-22 16:27:07\n\nset the correct codomain for function fields",
     "created_at": "2011-07-22T16:27:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83890",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_codomain.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_codomain.patch) by saraedum created at 2011-07-22 16:27:07
+Attachment [trac_9054_codomain.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_codomain.patch) by @saraedum created at 2011-07-22 16:27:07
 
 set the correct codomain for function fields
 
@@ -892,16 +892,16 @@ set the correct codomain for function fields
 archive/issue_comments_083891.json:
 ```json
 {
-    "body": "Attachment [trac_9054_doctest-2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_doctest-2.patch) by saraedum created at 2011-07-22 16:49:18\n\nfixes hash doctests for 32bit and a random doctest",
+    "body": "Attachment [trac_9054_doctest-2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_doctest-2.patch) by @saraedum created at 2011-07-22 16:49:18\n\nfixes hash doctests for 32bit and a random doctest",
     "created_at": "2011-07-22T16:49:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83891",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_doctest-2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_doctest-2.patch) by saraedum created at 2011-07-22 16:49:18
+Attachment [trac_9054_doctest-2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_doctest-2.patch) by @saraedum created at 2011-07-22 16:49:18
 
 fixes hash doctests for 32bit and a random doctest
 
@@ -917,7 +917,7 @@ archive/issue_comments_083892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83892",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -930,16 +930,16 @@ Is there a reason why a FunctionFieldMorphism is a Map and not a RingHomomorphis
 archive/issue_comments_083893.json:
 ```json
 {
-    "body": "Attachment [trac_9054_function_fields_sd32.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_function_fields_sd32.patch) by saraedum created at 2011-08-25 05:04:33\n\nMinimal support for functions field. Does not include all of the above patches.",
+    "body": "Attachment [trac_9054_function_fields_sd32.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_function_fields_sd32.patch) by @saraedum created at 2011-08-25 05:04:33\n\nMinimal support for functions field. Does not include all of the above patches.",
     "created_at": "2011-08-25T05:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83893",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_function_fields_sd32.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_function_fields_sd32.patch) by saraedum created at 2011-08-25 05:04:33
+Attachment [trac_9054_function_fields_sd32.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_function_fields_sd32.patch) by @saraedum created at 2011-08-25 05:04:33
 
 Minimal support for functions field. Does not include all of the above patches.
 
@@ -955,7 +955,7 @@ archive/issue_comments_083894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83894",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -1000,7 +1000,7 @@ archive/issue_comments_083895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83895",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -1018,7 +1018,7 @@ archive/issue_comments_083896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83896",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1040,7 +1040,7 @@ archive/issue_comments_083897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83897",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1058,7 +1058,7 @@ archive/issue_comments_083898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83898",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1098,7 +1098,7 @@ archive/issue_comments_083899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83899",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1122,7 +1122,7 @@ archive/issue_comments_083900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83900",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1186,7 +1186,7 @@ archive/issue_comments_083901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83901",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1239,7 +1239,7 @@ archive/issue_comments_083902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83902",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1285,7 +1285,7 @@ archive/issue_comments_083903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83903",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -1303,7 +1303,7 @@ archive/issue_comments_083904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83904",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -1340,7 +1340,7 @@ archive/issue_comments_083905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83905",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -1358,7 +1358,7 @@ archive/issue_comments_083906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83906",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1404,7 +1404,7 @@ archive/issue_comments_083907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83907",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1476,7 +1476,7 @@ archive/issue_comments_083908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83908",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1574,7 +1574,7 @@ archive/issue_comments_083909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83909",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -1592,7 +1592,7 @@ archive/issue_comments_083910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83910",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -1610,7 +1610,7 @@ archive/issue_comments_083911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83911",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -1628,7 +1628,7 @@ archive/issue_comments_083912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83912",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -1641,16 +1641,16 @@ Ok #11751 is ready for review and the code here passes all tests (at least I tes
 archive/issue_comments_083913.json:
 ```json
 {
-    "body": "Attachment [trac_9054-review.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-review.patch) by mderickx created at 2011-09-11 09:19:14",
+    "body": "Attachment [trac_9054-review.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-review.patch) by @koffie created at 2011-09-11 09:19:14",
     "created_at": "2011-09-11T09:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83913",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
-Attachment [trac_9054-review.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-review.patch) by mderickx created at 2011-09-11 09:19:14
+Attachment [trac_9054-review.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-review.patch) by @koffie created at 2011-09-11 09:19:14
 
 
 
@@ -1659,16 +1659,16 @@ Attachment [trac_9054-review.patch](tarball://root/attachments/some-uuid/ticket9
 archive/issue_comments_083914.json:
 ```json
 {
-    "body": "Attachment [trac_9054_undo_unittest.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_undo_unittest.patch) by saraedum created at 2011-09-14 15:47:13\n\nrevert changes to misc.unittest introduced by the review patch",
+    "body": "Attachment [trac_9054_undo_unittest.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_undo_unittest.patch) by @saraedum created at 2011-09-14 15:47:13\n\nrevert changes to misc.unittest introduced by the review patch",
     "created_at": "2011-09-14T15:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83914",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_undo_unittest.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_undo_unittest.patch) by saraedum created at 2011-09-14 15:47:13
+Attachment [trac_9054_undo_unittest.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_undo_unittest.patch) by @saraedum created at 2011-09-14 15:47:13
 
 revert changes to misc.unittest introduced by the review patch
 
@@ -1679,16 +1679,16 @@ revert changes to misc.unittest introduced by the review patch
 archive/issue_comments_083915.json:
 ```json
 {
-    "body": "Attachment [trac_9054-invert_ideal.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-invert_ideal.patch) by saraedum created at 2011-09-15 00:54:34\n\nuse category in is_FunctionField()",
+    "body": "Attachment [trac_9054-invert_ideal.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-invert_ideal.patch) by @saraedum created at 2011-09-15 00:54:34\n\nuse category in is_FunctionField()",
     "created_at": "2011-09-15T00:54:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83915",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054-invert_ideal.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-invert_ideal.patch) by saraedum created at 2011-09-15 00:54:34
+Attachment [trac_9054-invert_ideal.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-invert_ideal.patch) by @saraedum created at 2011-09-15 00:54:34
 
 use category in is_FunctionField()
 
@@ -1699,16 +1699,16 @@ use category in is_FunctionField()
 archive/issue_comments_083916.json:
 ```json
 {
-    "body": "Attachment [trac_9054_cached_method.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_cached_method.patch) by saraedum created at 2011-09-15 01:04:28\n\nreplace manual caching with cached_method",
+    "body": "Attachment [trac_9054_cached_method.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_cached_method.patch) by @saraedum created at 2011-09-15 01:04:28\n\nreplace manual caching with cached_method",
     "created_at": "2011-09-15T01:04:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83916",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_cached_method.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_cached_method.patch) by saraedum created at 2011-09-15 01:04:28
+Attachment [trac_9054_cached_method.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_cached_method.patch) by @saraedum created at 2011-09-15 01:04:28
 
 replace manual caching with cached_method
 
@@ -1719,16 +1719,16 @@ replace manual caching with cached_method
 archive/issue_comments_083917.json:
 ```json
 {
-    "body": "Attachment [trac_9054_maximal_order_member_check.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_maximal_order_member_check.patch) by saraedum created at 2011-09-15 01:11:43\n\n_element_constructor_ checks that element is in maximal order",
+    "body": "Attachment [trac_9054_maximal_order_member_check.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_maximal_order_member_check.patch) by @saraedum created at 2011-09-15 01:11:43\n\n_element_constructor_ checks that element is in maximal order",
     "created_at": "2011-09-15T01:11:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83917",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_maximal_order_member_check.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_maximal_order_member_check.patch) by saraedum created at 2011-09-15 01:11:43
+Attachment [trac_9054_maximal_order_member_check.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_maximal_order_member_check.patch) by @saraedum created at 2011-09-15 01:11:43
 
 _element_constructor_ checks that element is in maximal order
 
@@ -1744,7 +1744,7 @@ archive/issue_comments_083918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83918",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -1757,16 +1757,16 @@ added missing calls to superclass constructors
 archive/issue_comments_083919.json:
 ```json
 {
-    "body": "Attachment [trac_9054_UniqueFactory.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_UniqueFactory.patch) by saraedum created at 2011-09-15 01:17:44\n\nuse UniqueFactory instead of cached_method in constructors",
+    "body": "Attachment [trac_9054_UniqueFactory.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_UniqueFactory.patch) by @saraedum created at 2011-09-15 01:17:44\n\nuse UniqueFactory instead of cached_method in constructors",
     "created_at": "2011-09-15T01:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83919",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_UniqueFactory.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_UniqueFactory.patch) by saraedum created at 2011-09-15 01:17:44
+Attachment [trac_9054_UniqueFactory.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_UniqueFactory.patch) by @saraedum created at 2011-09-15 01:17:44
 
 use UniqueFactory instead of cached_method in constructors
 
@@ -1782,7 +1782,7 @@ archive/issue_comments_083920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83920",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -1795,16 +1795,16 @@ refactored maps class hieararchy
 archive/issue_comments_083921.json:
 ```json
 {
-    "body": "Attachment [trac_9054_doctests-3.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_doctests-3.patch) by saraedum created at 2011-09-15 02:04:50\n\nextended and unified doctests",
+    "body": "Attachment [trac_9054_doctests-3.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_doctests-3.patch) by @saraedum created at 2011-09-15 02:04:50\n\nextended and unified doctests",
     "created_at": "2011-09-15T02:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83921",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_doctests-3.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_doctests-3.patch) by saraedum created at 2011-09-15 02:04:50
+Attachment [trac_9054_doctests-3.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_doctests-3.patch) by @saraedum created at 2011-09-15 02:04:50
 
 extended and unified doctests
 
@@ -1820,7 +1820,7 @@ archive/issue_comments_083922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83922",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -1833,16 +1833,16 @@ cleanup code and imports
 archive/issue_comments_083923.json:
 ```json
 {
-    "body": "Attachment [trac_9054_cleanup.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_cleanup.patch) by saraedum created at 2011-09-15 02:12:19\n\nadded authors and copyright headers",
+    "body": "Attachment [trac_9054_cleanup.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_cleanup.patch) by @saraedum created at 2011-09-15 02:12:19\n\nadded authors and copyright headers",
     "created_at": "2011-09-15T02:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83923",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_cleanup.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_cleanup.patch) by saraedum created at 2011-09-15 02:12:19
+Attachment [trac_9054_cleanup.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_cleanup.patch) by @saraedum created at 2011-09-15 02:12:19
 
 added authors and copyright headers
 
@@ -1853,16 +1853,16 @@ added authors and copyright headers
 archive/issue_comments_083924.json:
 ```json
 {
-    "body": "Attachment [trac_9054_authors.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_authors.patch) by saraedum created at 2011-09-15 02:18:19",
+    "body": "Attachment [trac_9054_authors.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_authors.patch) by @saraedum created at 2011-09-15 02:18:19",
     "created_at": "2011-09-15T02:18:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83924",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_authors.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_authors.patch) by saraedum created at 2011-09-15 02:18:19
+Attachment [trac_9054_authors.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_authors.patch) by @saraedum created at 2011-09-15 02:18:19
 
 
 
@@ -1876,7 +1876,7 @@ archive/issue_comments_083925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83925",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -1894,7 +1894,7 @@ archive/issue_comments_083926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83926",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -1921,16 +1921,16 @@ I also reviewed Maarten's changes and they looked good except for the very few t
 archive/issue_comments_083927.json:
 ```json
 {
-    "body": "Attachment [trac_9054_is_function_field.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_is_function_field.patch) by saraedum created at 2011-09-19 14:02:42\n\nidentical to trac_9054_isFunctionField.patch but the patch bot does not like upper case in patch files",
+    "body": "Attachment [trac_9054_is_function_field.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_is_function_field.patch) by @saraedum created at 2011-09-19 14:02:42\n\nidentical to trac_9054_isFunctionField.patch but the patch bot does not like upper case in patch files",
     "created_at": "2011-09-19T14:02:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83927",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_is_function_field.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_is_function_field.patch) by saraedum created at 2011-09-19 14:02:42
+Attachment [trac_9054_is_function_field.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_is_function_field.patch) by @saraedum created at 2011-09-19 14:02:42
 
 identical to trac_9054_isFunctionField.patch but the patch bot does not like upper case in patch files
 
@@ -1941,16 +1941,16 @@ identical to trac_9054_isFunctionField.patch but the patch bot does not like upp
 archive/issue_comments_083928.json:
 ```json
 {
-    "body": "Attachment [trac_9054_unique_factory.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_unique_factory.patch) by saraedum created at 2011-09-19 14:04:11\n\nidentical to trac_9054_UniqueFactory.patch (patchbot does not like uppercase)",
+    "body": "Attachment [trac_9054_unique_factory.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_unique_factory.patch) by @saraedum created at 2011-09-19 14:04:11\n\nidentical to trac_9054_UniqueFactory.patch (patchbot does not like uppercase)",
     "created_at": "2011-09-19T14:04:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83928",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_unique_factory.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_unique_factory.patch) by saraedum created at 2011-09-19 14:04:11
+Attachment [trac_9054_unique_factory.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_unique_factory.patch) by @saraedum created at 2011-09-19 14:04:11
 
 identical to trac_9054_UniqueFactory.patch (patchbot does not like uppercase)
 
@@ -1966,7 +1966,7 @@ archive/issue_comments_083929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83929",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -1984,7 +1984,7 @@ archive/issue_comments_083930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83930",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -1997,16 +1997,16 @@ fixes in the reference manual
 archive/issue_comments_083931.json:
 ```json
 {
-    "body": "Attachment [trac_9054_reference.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_reference.patch) by saraedum created at 2011-09-19 15:29:53",
+    "body": "Attachment [trac_9054_reference.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_reference.patch) by @saraedum created at 2011-09-19 15:29:53",
     "created_at": "2011-09-19T15:29:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83931",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_reference.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_reference.patch) by saraedum created at 2011-09-19 15:29:53
+Attachment [trac_9054_reference.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_reference.patch) by @saraedum created at 2011-09-19 15:29:53
 
 
 
@@ -2020,7 +2020,7 @@ archive/issue_comments_083932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83932",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2038,7 +2038,7 @@ archive/issue_comments_083933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83933",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2056,7 +2056,7 @@ archive/issue_comments_083934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83934",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2069,16 +2069,16 @@ fixes an import problem in factor()
 archive/issue_comments_083935.json:
 ```json
 {
-    "body": "Attachment [trac_9054_factor.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_factor.patch) by saraedum created at 2011-09-20 12:32:07\n\nIt turned out not to be a cyclic import problem but just the wrong module that was imported. I'm waiting for the doctests to set this back to needs_review.",
+    "body": "Attachment [trac_9054_factor.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_factor.patch) by @saraedum created at 2011-09-20 12:32:07\n\nIt turned out not to be a cyclic import problem but just the wrong module that was imported. I'm waiting for the doctests to set this back to needs_review.",
     "created_at": "2011-09-20T12:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83935",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_factor.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_factor.patch) by saraedum created at 2011-09-20 12:32:07
+Attachment [trac_9054_factor.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_factor.patch) by @saraedum created at 2011-09-20 12:32:07
 
 It turned out not to be a cyclic import problem but just the wrong module that was imported. I'm waiting for the doctests to set this back to needs_review.
 
@@ -2094,7 +2094,7 @@ archive/issue_comments_083936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83936",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2112,7 +2112,7 @@ archive/issue_comments_083937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83937",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2125,16 +2125,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_083938.json:
 ```json
 {
-    "body": "Attachment [trac_9054_order_category.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_order_category.patch) by saraedum created at 2011-09-20 13:48:04",
+    "body": "Attachment [trac_9054_order_category.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_order_category.patch) by @saraedum created at 2011-09-20 13:48:04",
     "created_at": "2011-09-20T13:48:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83938",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_order_category.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_order_category.patch) by saraedum created at 2011-09-20 13:48:04
+Attachment [trac_9054_order_category.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_order_category.patch) by @saraedum created at 2011-09-20 13:48:04
 
 
 
@@ -2148,7 +2148,7 @@ archive/issue_comments_083939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83939",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -2166,7 +2166,7 @@ archive/issue_comments_083940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83940",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -2224,7 +2224,7 @@ archive/issue_comments_083941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83941",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -2242,7 +2242,7 @@ archive/issue_comments_083942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83942",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -2260,7 +2260,7 @@ archive/issue_comments_083943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83943",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -2273,16 +2273,16 @@ All patches till review.patch combined
 archive/issue_comments_083944.json:
 ```json
 {
-    "body": "Attachment [trac_9054-all-parts.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-all-parts.patch) by mderickx created at 2011-11-07 13:37:13\n\nAll julians patches after review.patch combined",
+    "body": "Attachment [trac_9054-all-parts.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-all-parts.patch) by @koffie created at 2011-11-07 13:37:13\n\nAll julians patches after review.patch combined",
     "created_at": "2011-11-07T13:37:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83944",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
-Attachment [trac_9054-all-parts.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-all-parts.patch) by mderickx created at 2011-11-07 13:37:13
+Attachment [trac_9054-all-parts.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-all-parts.patch) by @koffie created at 2011-11-07 13:37:13
 
 All julians patches after review.patch combined
 
@@ -2293,16 +2293,16 @@ All julians patches after review.patch combined
 archive/issue_comments_083945.json:
 ```json
 {
-    "body": "Attachment [trac_9054-review2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-review2.patch) by mderickx created at 2011-11-07 13:37:58\n\nFixes last minor errors introduced by julians patches",
+    "body": "Attachment [trac_9054-review2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-review2.patch) by @koffie created at 2011-11-07 13:37:58\n\nFixes last minor errors introduced by julians patches",
     "created_at": "2011-11-07T13:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83945",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
-Attachment [trac_9054-review2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-review2.patch) by mderickx created at 2011-11-07 13:37:58
+Attachment [trac_9054-review2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-review2.patch) by @koffie created at 2011-11-07 13:37:58
 
 Fixes last minor errors introduced by julians patches
 
@@ -2318,7 +2318,7 @@ archive/issue_comments_083946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83946",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -2336,7 +2336,7 @@ archive/issue_comments_083947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83947",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2354,7 +2354,7 @@ archive/issue_comments_083948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83948",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -2411,7 +2411,7 @@ archive/issue_comments_083949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83949",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -2429,7 +2429,7 @@ archive/issue_comments_083950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83950",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2484,7 +2484,7 @@ archive/issue_comments_083951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83951",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2497,16 +2497,16 @@ patches to mderickx's review comments
 archive/issue_comments_083952.json:
 ```json
 {
-    "body": "Attachment [trac_9054_review_fixup.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_review_fixup.patch) by saraedum created at 2011-11-07 20:07:51\n\nApply trac_9054-all-parts.patch, trac_9054-julian-combined.patch, trac_9054-review2.patch, trac_9054_review_fixup.patch.\n\nMaarten, I'm not so sure about the is_Ideal() check anymore. Is it really expected behavior that ideal(I) creates the ideal generated by the generators of I \u2014 no matter where the ideal I lives? If you feel like that should happen, then add these two lines again and set the ticket to positive review. Or don't add them if you feel that people should be more explicit by actually calling ideal(I.gens()).",
+    "body": "Attachment [trac_9054_review_fixup.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_review_fixup.patch) by @saraedum created at 2011-11-07 20:07:51\n\nApply trac_9054-all-parts.patch, trac_9054-julian-combined.patch, trac_9054-review2.patch, trac_9054_review_fixup.patch.\n\nMaarten, I'm not so sure about the is_Ideal() check anymore. Is it really expected behavior that ideal(I) creates the ideal generated by the generators of I \u2014 no matter where the ideal I lives? If you feel like that should happen, then add these two lines again and set the ticket to positive review. Or don't add them if you feel that people should be more explicit by actually calling ideal(I.gens()).",
     "created_at": "2011-11-07T20:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83952",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_review_fixup.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_review_fixup.patch) by saraedum created at 2011-11-07 20:07:51
+Attachment [trac_9054_review_fixup.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_review_fixup.patch) by @saraedum created at 2011-11-07 20:07:51
 
 Apply trac_9054-all-parts.patch, trac_9054-julian-combined.patch, trac_9054-review2.patch, trac_9054_review_fixup.patch.
 
@@ -2524,7 +2524,7 @@ archive/issue_comments_083953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83953",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2542,7 +2542,7 @@ archive/issue_comments_083954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83954",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -2568,16 +2568,16 @@ Note that it also mathematically makes sense in the most general setting since t
 archive/issue_comments_083955.json:
 ```json
 {
-    "body": "Attachment [trac_9054-can_this_really_be_the_last.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-can_this_really_be_the_last.patch) by mderickx created at 2011-11-08 00:31:52",
+    "body": "Attachment [trac_9054-can_this_really_be_the_last.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-can_this_really_be_the_last.patch) by @koffie created at 2011-11-08 00:31:52",
     "created_at": "2011-11-08T00:31:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83955",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
-Attachment [trac_9054-can_this_really_be_the_last.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-can_this_really_be_the_last.patch) by mderickx created at 2011-11-08 00:31:52
+Attachment [trac_9054-can_this_really_be_the_last.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-can_this_really_be_the_last.patch) by @koffie created at 2011-11-08 00:31:52
 
 
 
@@ -2591,7 +2591,7 @@ archive/issue_comments_083956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83956",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -2609,7 +2609,7 @@ archive/issue_comments_083957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83957",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2641,7 +2641,7 @@ archive/issue_comments_083958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83958",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -2659,7 +2659,7 @@ archive/issue_comments_083959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83959",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -2681,7 +2681,7 @@ archive/issue_comments_083960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83960",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2694,16 +2694,16 @@ We could change it but it is not necessary. `FunctionField` is exported to sage.
 archive/issue_comments_083961.json:
 ```json
 {
-    "body": "Attachment [trac_9054_pickling.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_pickling.patch) by mderickx created at 2011-11-11 12:19:55\n\nfix pickling of FunctionField_polymod",
+    "body": "Attachment [trac_9054_pickling.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_pickling.patch) by @koffie created at 2011-11-11 12:19:55\n\nfix pickling of FunctionField_polymod",
     "created_at": "2011-11-11T12:19:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83961",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
-Attachment [trac_9054_pickling.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_pickling.patch) by mderickx created at 2011-11-11 12:19:55
+Attachment [trac_9054_pickling.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_pickling.patch) by @koffie created at 2011-11-11 12:19:55
 
 fix pickling of FunctionField_polymod
 
@@ -2719,7 +2719,7 @@ archive/issue_comments_083962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83962",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -2737,7 +2737,7 @@ archive/issue_comments_083963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83963",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2755,7 +2755,7 @@ archive/issue_comments_083964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83964",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2776,7 +2776,7 @@ archive/issue_comments_083965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83965",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2794,7 +2794,7 @@ archive/issue_comments_083966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83966",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2812,7 +2812,7 @@ archive/issue_comments_083967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83967",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2825,16 +2825,16 @@ provide basic function field arithmetic (combined patch by various authors)
 archive/issue_comments_083968.json:
 ```json
 {
-    "body": "Attachment [trac_9054-julian-combined.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-julian-combined.2.patch) by saraedum created at 2011-11-15 13:37:50\n\ncleanup function field code and documentation",
+    "body": "Attachment [trac_9054-julian-combined.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-julian-combined.2.patch) by @saraedum created at 2011-11-15 13:37:50\n\ncleanup function field code and documentation",
     "created_at": "2011-11-15T13:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83968",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054-julian-combined.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-julian-combined.2.patch) by saraedum created at 2011-11-15 13:37:50
+Attachment [trac_9054-julian-combined.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-julian-combined.2.patch) by @saraedum created at 2011-11-15 13:37:50
 
 cleanup function field code and documentation
 
@@ -2845,16 +2845,16 @@ cleanup function field code and documentation
 archive/issue_comments_083969.json:
 ```json
 {
-    "body": "Attachment [trac_9054-review2.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-review2.2.patch) by saraedum created at 2011-11-15 13:38:18\n\nfix doctests for function fields",
+    "body": "Attachment [trac_9054-review2.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-review2.2.patch) by @saraedum created at 2011-11-15 13:38:18\n\nfix doctests for function fields",
     "created_at": "2011-11-15T13:38:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83969",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054-review2.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-review2.2.patch) by saraedum created at 2011-11-15 13:38:18
+Attachment [trac_9054-review2.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-review2.2.patch) by @saraedum created at 2011-11-15 13:38:18
 
 fix doctests for function fields
 
@@ -2865,16 +2865,16 @@ fix doctests for function fields
 archive/issue_comments_083970.json:
 ```json
 {
-    "body": "Attachment [trac_9054_review_fixup.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_review_fixup.2.patch) by saraedum created at 2011-11-15 13:38:47\n\nfixes for function fields related to the review comments by mderickx",
+    "body": "Attachment [trac_9054_review_fixup.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_review_fixup.2.patch) by @saraedum created at 2011-11-15 13:38:47\n\nfixes for function fields related to the review comments by mderickx",
     "created_at": "2011-11-15T13:38:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83970",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_review_fixup.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_review_fixup.2.patch) by saraedum created at 2011-11-15 13:38:47
+Attachment [trac_9054_review_fixup.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_review_fixup.2.patch) by @saraedum created at 2011-11-15 13:38:47
 
 fixes for function fields related to the review comments by mderickx
 
@@ -2885,16 +2885,16 @@ fixes for function fields related to the review comments by mderickx
 archive/issue_comments_083971.json:
 ```json
 {
-    "body": "Attachment [trac_9054-can_this_really_be_the_last.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-can_this_really_be_the_last.2.patch) by saraedum created at 2011-11-15 13:39:14\n\nlast fixes for function fields",
+    "body": "Attachment [trac_9054-can_this_really_be_the_last.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-can_this_really_be_the_last.2.patch) by @saraedum created at 2011-11-15 13:39:14\n\nlast fixes for function fields",
     "created_at": "2011-11-15T13:39:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83971",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054-can_this_really_be_the_last.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-can_this_really_be_the_last.2.patch) by saraedum created at 2011-11-15 13:39:14
+Attachment [trac_9054-can_this_really_be_the_last.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054-can_this_really_be_the_last.2.patch) by @saraedum created at 2011-11-15 13:39:14
 
 last fixes for function fields
 
@@ -2910,7 +2910,7 @@ archive/issue_comments_083972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83972",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2923,16 +2923,16 @@ fix pickling for extensions of function fields
 archive/issue_comments_083973.json:
 ```json
 {
-    "body": "Attachment [trac_9054_pickling.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_pickling.2.patch) by saraedum created at 2011-11-15 13:42:17\n\nApply trac_9054-all-parts.2.patch, trac_9054-julian-combined.2.patch, trac_9054-review2.2.patch, trac_9054_review_fixup.2.patch, trac_9054-can_this_really_be_the_last.2.patch, trac_9054_pickling.2.patch",
+    "body": "Attachment [trac_9054_pickling.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_pickling.2.patch) by @saraedum created at 2011-11-15 13:42:17\n\nApply trac_9054-all-parts.2.patch, trac_9054-julian-combined.2.patch, trac_9054-review2.2.patch, trac_9054_review_fixup.2.patch, trac_9054-can_this_really_be_the_last.2.patch, trac_9054_pickling.2.patch",
     "created_at": "2011-11-15T13:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83973",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_9054_pickling.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_pickling.2.patch) by saraedum created at 2011-11-15 13:42:17
+Attachment [trac_9054_pickling.2.patch](tarball://root/attachments/some-uuid/ticket9054/trac_9054_pickling.2.patch) by @saraedum created at 2011-11-15 13:42:17
 
 Apply trac_9054-all-parts.2.patch, trac_9054-julian-combined.2.patch, trac_9054-review2.2.patch, trac_9054_review_fixup.2.patch, trac_9054-can_this_really_be_the_last.2.patch, trac_9054_pickling.2.patch
 
@@ -2948,7 +2948,7 @@ archive/issue_comments_083974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83974",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -2966,7 +2966,7 @@ archive/issue_comments_083975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83975",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2984,7 +2984,7 @@ archive/issue_comments_083976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83976",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -3002,7 +3002,7 @@ archive/issue_comments_083977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83977",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -3020,7 +3020,7 @@ archive/issue_comments_083978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83978",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -3033,16 +3033,16 @@ Thanks for rebasing, I added it to my todo list, but didn't get to it yet.
 archive/issue_comments_083979.json:
 ```json
 {
-    "body": "Attachment [9054_function_fields.patch](tarball://root/attachments/some-uuid/ticket9054/9054_function_fields.patch) by jdemeyer created at 2012-01-31 09:08:07",
+    "body": "Attachment [9054_function_fields.patch](tarball://root/attachments/some-uuid/ticket9054/9054_function_fields.patch) by @jdemeyer created at 2012-01-31 09:08:07",
     "created_at": "2012-01-31T09:08:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83979",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9054_function_fields.patch](tarball://root/attachments/some-uuid/ticket9054/9054_function_fields.patch) by jdemeyer created at 2012-01-31 09:08:07
+Attachment [9054_function_fields.patch](tarball://root/attachments/some-uuid/ticket9054/9054_function_fields.patch) by @jdemeyer created at 2012-01-31 09:08:07
 
 
 
@@ -3056,7 +3056,7 @@ archive/issue_comments_083980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9054",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9054#issuecomment-83980",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

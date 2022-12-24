@@ -3,7 +3,7 @@
 archive/issues_009310.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  vbraun\n\n\n```\n\nwstein@menas:~/screen/menas/sage-4.4.4.alpha1> ./sage -t  -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\nsage -t -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 647:\n    sage: G.random_element()\nExpected:\n    [2 1 1 1]\n    [1 0 2 1]\n    [0 1 1 0]\n    [1 0 0 1]\nGot:\n    [0 1 1 0]\n    [1 2 2 2]\n    [1 1 1 0]\n    [2 0 1 2]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 658:\n    sage: G.random_element()\nExpected:\n    [1 3]\n    [0 3]\nGot:\n    [4 2]\n    [1 0]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 661:\n    sage: G.random_element()\nExpected:\n    [2 2]\n    [1 0]\nGot:\n    [4 1]\n    [0 2]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 664:\n    sage: G.random_element()\nExpected:\n    [4 0]\n    [1 4]\n\nGot:\n    [2 4]\n    [2 3]\n**********************************************************************\n1 items had failures:\n   4 of  10 in __main__.example_22\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_matrix_group.py\n         [88.9 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9310\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @vbraun\n\n\n```\n\nwstein@menas:~/screen/menas/sage-4.4.4.alpha1> ./sage -t  -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\nsage -t -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 647:\n    sage: G.random_element()\nExpected:\n    [2 1 1 1]\n    [1 0 2 1]\n    [0 1 1 0]\n    [1 0 0 1]\nGot:\n    [0 1 1 0]\n    [1 2 2 2]\n    [1 1 1 0]\n    [2 0 1 2]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 658:\n    sage: G.random_element()\nExpected:\n    [1 3]\n    [0 3]\nGot:\n    [4 2]\n    [1 0]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 661:\n    sage: G.random_element()\nExpected:\n    [2 2]\n    [1 0]\nGot:\n    [4 1]\n    [0 2]\n**********************************************************************\nFile \"/home/wstein/screen/menas/sage-4.4.4.alpha1/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 664:\n    sage: G.random_element()\nExpected:\n    [4 0]\n    [1 4]\n\nGot:\n    [2 4]\n    [2 3]\n**********************************************************************\n1 items had failures:\n   4 of  10 in __main__.example_22\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_matrix_group.py\n         [88.9 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9310\n\n",
     "created_at": "2010-06-22T15:00:46Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009310.json:
     "title": "sage-4.4.4.alpha1 blocker -- random doctest failure on menas (skynet)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9310",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mvngu
 
-CC:  vbraun
+CC:  @vbraun
 
 
 ```
@@ -92,7 +92,7 @@ archive/issue_comments_087675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87675",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_087676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87676",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_087677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87677",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_087679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87679",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_087680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87680",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_087682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87682",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_087683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87683",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_087684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87684",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_087685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87685",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -374,16 +374,16 @@ The first two use `MeatAxe`. I think that `random_element` enumerates all group 
 archive/issue_comments_087686.json:
 ```json
 {
-    "body": "Attachment [trac_9310_matrix_group_random_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket9310/trac_9310_matrix_group_random_doctest_failure.patch) by vbraun created at 2011-02-21 19:05:34\n\nInitial patch",
+    "body": "Attachment [trac_9310_matrix_group_random_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket9310/trac_9310_matrix_group_random_doctest_failure.patch) by @vbraun created at 2011-02-21 19:05:34\n\nInitial patch",
     "created_at": "2011-02-21T19:05:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87686",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9310_matrix_group_random_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket9310/trac_9310_matrix_group_random_doctest_failure.patch) by vbraun created at 2011-02-21 19:05:34
+Attachment [trac_9310_matrix_group_random_doctest_failure.patch](tarball://root/attachments/some-uuid/ticket9310/trac_9310_matrix_group_random_doctest_failure.patch) by @vbraun created at 2011-02-21 19:05:34
 
 Initial patch
 
@@ -399,7 +399,7 @@ archive/issue_comments_087687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87687",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_087688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87688",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_087691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87691",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_087692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87692",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_087693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9310#issuecomment-87693",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

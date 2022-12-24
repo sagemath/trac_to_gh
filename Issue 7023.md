@@ -14,7 +14,7 @@ archive/issues_007023.json:
     "title": "Upgrade to Cython 0.11.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7023",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7023
 archive/issue_comments_058162.json:
 ```json
 {
-    "body": "Attachment [7023-cython-0.11.3.patch](tarball://root/attachments/some-uuid/ticket7023/7023-cython-0.11.3.patch) by robertwb created at 2009-09-27 07:53:53\n\nSpkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.11.3.spkg",
+    "body": "Attachment [7023-cython-0.11.3.patch](tarball://root/attachments/some-uuid/ticket7023/7023-cython-0.11.3.patch) by @robertwb created at 2009-09-27 07:53:53\n\nSpkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.11.3.spkg",
     "created_at": "2009-09-27T07:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7023#issuecomment-58162",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7023-cython-0.11.3.patch](tarball://root/attachments/some-uuid/ticket7023/7023-cython-0.11.3.patch) by robertwb created at 2009-09-27 07:53:53
+Attachment [7023-cython-0.11.3.patch](tarball://root/attachments/some-uuid/ticket7023/7023-cython-0.11.3.patch) by @robertwb created at 2009-09-27 07:53:53
 
 Spkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.11.3.spkg
 
@@ -63,7 +63,7 @@ archive/issue_comments_058163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7023#issuecomment-58163",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_058164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7023#issuecomment-58164",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_058165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7023#issuecomment-58165",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006925.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  pbruin\n\nKeywords: cuspidal subgroup, modular abelian variety\n\nThis is the first implementation of Ligozat's method of calculating the rational cuspidal subgroup of J_0(N). This is done by doing linear algebra in d(N)*d(N) matrices, which seems considerably faster than the modular symbol methods.\n\nThis code is functional at this point. The problems with it are\na) __cmp__ is not called.\nb) Hecke operators aren't defined yet.\nc) can't coerce specific degree zero cuspidal divisors in our group.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6925\n\n",
+    "body": "Assignee: tbd\n\nCC:  @pjbruin\n\nKeywords: cuspidal subgroup, modular abelian variety\n\nThis is the first implementation of Ligozat's method of calculating the rational cuspidal subgroup of J_0(N). This is done by doing linear algebra in d(N)*d(N) matrices, which seems considerably faster than the modular symbol methods.\n\nThis code is functional at this point. The problems with it are\na) __cmp__ is not called.\nb) Hecke operators aren't defined yet.\nc) can't coerce specific degree zero cuspidal divisors in our group.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6925\n\n",
     "created_at": "2009-09-11T23:49:01Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_006925.json:
     "title": "Fast way of calculating cuspidal subgroup of J0(N)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6925",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 Assignee: tbd
 
-CC:  pbruin
+CC:  @pjbruin
 
 Keywords: cuspidal subgroup, modular abelian variety
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6925
 archive/issue_comments_057181.json:
 ```json
 {
-    "body": "Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6925/12846.patch) by syazdani created at 2009-09-11 23:50:12\n\nThis patch touches abvar.py and cuspidal_subgroup.py",
+    "body": "Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6925/12846.patch) by @syazdani77 created at 2009-09-11 23:50:12\n\nThis patch touches abvar.py and cuspidal_subgroup.py",
     "created_at": "2009-09-11T23:50:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57181",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
-Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6925/12846.patch) by syazdani created at 2009-09-11 23:50:12
+Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket6925/12846.patch) by @syazdani77 created at 2009-09-11 23:50:12
 
 This patch touches abvar.py and cuspidal_subgroup.py
 
@@ -61,16 +61,16 @@ This patch touches abvar.py and cuspidal_subgroup.py
 archive/issue_comments_057182.json:
 ```json
 {
-    "body": "Attachment [6925-rationalcuspidal.patch](tarball://root/attachments/some-uuid/ticket6925/6925-rationalcuspidal.patch) by syazdani created at 2009-09-17 20:14:09\n\nrebased against 5969",
+    "body": "Attachment [6925-rationalcuspidal.patch](tarball://root/attachments/some-uuid/ticket6925/6925-rationalcuspidal.patch) by @syazdani77 created at 2009-09-17 20:14:09\n\nrebased against 5969",
     "created_at": "2009-09-17T20:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57182",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
-Attachment [6925-rationalcuspidal.patch](tarball://root/attachments/some-uuid/ticket6925/6925-rationalcuspidal.patch) by syazdani created at 2009-09-17 20:14:09
+Attachment [6925-rationalcuspidal.patch](tarball://root/attachments/some-uuid/ticket6925/6925-rationalcuspidal.patch) by @syazdani77 created at 2009-09-17 20:14:09
 
 rebased against 5969
 
@@ -86,7 +86,7 @@ archive/issue_comments_057183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57183",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_057184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57184",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_057187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57187",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_057188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57188",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_057189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57189",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_057190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57190",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_057191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57191",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_057192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57192",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -478,7 +478,7 @@ archive/issue_comments_057193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57193",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_057194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57194",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -514,7 +514,7 @@ archive/issue_comments_057195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57195",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -536,7 +536,7 @@ archive/issue_comments_057196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57196",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -554,7 +554,7 @@ archive/issue_comments_057197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57197",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
@@ -567,16 +567,16 @@ changed the name to rational_cuspidal_subgroup_ligozat, and few other changes.
 archive/issue_comments_057198.json:
 ```json
 {
-    "body": "Attachment [trac_6925_addon2.patch](tarball://root/attachments/some-uuid/ticket6925/trac_6925_addon2.patch) by syazdani created at 2013-10-07 05:55:00\n\nChapoton's fix was correct. The initial doctest was incorrect.\n\nAlso, that is the correct Ligozat reference. I added the reference to my paper as well, which is what the algorithm is based upon.\n\nI changed the name of rational_direct_cuspidal_subgroup to rational_cuspidal_subgroup_ligozat, as it was suggested, and replaced cmp function with eq and ne functions instead.\n\nFinally, sorry for being MIA on this ticket for so long. I think I had an incorrect filter archiving these emails automatically.",
+    "body": "Attachment [trac_6925_addon2.patch](tarball://root/attachments/some-uuid/ticket6925/trac_6925_addon2.patch) by @syazdani77 created at 2013-10-07 05:55:00\n\nChapoton's fix was correct. The initial doctest was incorrect.\n\nAlso, that is the correct Ligozat reference. I added the reference to my paper as well, which is what the algorithm is based upon.\n\nI changed the name of rational_direct_cuspidal_subgroup to rational_cuspidal_subgroup_ligozat, as it was suggested, and replaced cmp function with eq and ne functions instead.\n\nFinally, sorry for being MIA on this ticket for so long. I think I had an incorrect filter archiving these emails automatically.",
     "created_at": "2013-10-07T05:55:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57198",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
-Attachment [trac_6925_addon2.patch](tarball://root/attachments/some-uuid/ticket6925/trac_6925_addon2.patch) by syazdani created at 2013-10-07 05:55:00
+Attachment [trac_6925_addon2.patch](tarball://root/attachments/some-uuid/ticket6925/trac_6925_addon2.patch) by @syazdani77 created at 2013-10-07 05:55:00
 
 Chapoton's fix was correct. The initial doctest was incorrect.
 
@@ -598,7 +598,7 @@ archive/issue_comments_057199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57199",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_057200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57200",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
@@ -634,7 +634,7 @@ archive/issue_comments_057201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57201",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -651,16 +651,16 @@ apply 6925-rationalcuspidal.patch trac_6925_addon1.patch
 archive/issue_comments_057202.json:
 ```json
 {
-    "body": "Attachment [trac_6925_addon1.patch](tarball://root/attachments/some-uuid/ticket6925/trac_6925_addon1.patch) by chapoton created at 2013-10-23 19:13:31\n\nnew patch, minor details changed, should now pass the tests",
+    "body": "Attachment [trac_6925_addon1.patch](tarball://root/attachments/some-uuid/ticket6925/trac_6925_addon1.patch) by @fchapoton created at 2013-10-23 19:13:31\n\nnew patch, minor details changed, should now pass the tests",
     "created_at": "2013-10-23T19:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57202",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_6925_addon1.patch](tarball://root/attachments/some-uuid/ticket6925/trac_6925_addon1.patch) by chapoton created at 2013-10-23 19:13:31
+Attachment [trac_6925_addon1.patch](tarball://root/attachments/some-uuid/ticket6925/trac_6925_addon1.patch) by @fchapoton created at 2013-10-23 19:13:31
 
 new patch, minor details changed, should now pass the tests
 
@@ -671,16 +671,16 @@ new patch, minor details changed, should now pass the tests
 archive/issue_comments_057203.json:
 ```json
 {
-    "body": "Attachment [trac-6925-rationalcuspidal-rebased-v1.patch](tarball://root/attachments/some-uuid/ticket6925/trac-6925-rationalcuspidal-rebased-v1.patch) by chapoton created at 2013-10-25 18:00:00",
+    "body": "Attachment [trac-6925-rationalcuspidal-rebased-v1.patch](tarball://root/attachments/some-uuid/ticket6925/trac-6925-rationalcuspidal-rebased-v1.patch) by @fchapoton created at 2013-10-25 18:00:00",
     "created_at": "2013-10-25T18:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57203",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac-6925-rationalcuspidal-rebased-v1.patch](tarball://root/attachments/some-uuid/ticket6925/trac-6925-rationalcuspidal-rebased-v1.patch) by chapoton created at 2013-10-25 18:00:00
+Attachment [trac-6925-rationalcuspidal-rebased-v1.patch](tarball://root/attachments/some-uuid/ticket6925/trac-6925-rationalcuspidal-rebased-v1.patch) by @fchapoton created at 2013-10-25 18:00:00
 
 
 
@@ -694,7 +694,7 @@ archive/issue_comments_057204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57204",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -716,7 +716,7 @@ archive/issue_comments_057205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57205",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -752,7 +752,7 @@ archive/issue_comments_057207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57207",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -770,7 +770,7 @@ archive/issue_comments_057208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57208",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -788,7 +788,7 @@ archive/issue_comments_057209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57209",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -824,7 +824,7 @@ archive/issue_comments_057210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57210",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -844,7 +844,7 @@ archive/issue_comments_057211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57211",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -862,7 +862,7 @@ archive/issue_comments_057212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57212",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -892,7 +892,7 @@ archive/issue_comments_057213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57213",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -910,7 +910,7 @@ archive/issue_comments_057214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57214",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -928,7 +928,7 @@ archive/issue_comments_057215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57215",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -946,7 +946,7 @@ archive/issue_comments_057216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57216",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -966,7 +966,7 @@ archive/issue_comments_057217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57217",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -984,7 +984,7 @@ archive/issue_comments_057218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57218",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1020,7 +1020,7 @@ archive/issue_comments_057220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57220",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1056,7 +1056,7 @@ archive/issue_comments_057222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57222",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1110,7 +1110,7 @@ archive/issue_comments_057225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57225",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1128,7 +1128,7 @@ archive/issue_comments_057226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57226",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -1157,7 +1157,7 @@ archive/issue_comments_057227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57227",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -1175,7 +1175,7 @@ archive/issue_comments_057228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57228",
-    "user": "klui"
+    "user": "@kevinywlui"
 }
 ```
 
@@ -1250,7 +1250,7 @@ archive/issue_comments_057229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6925#issuecomment-57229",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

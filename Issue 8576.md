@@ -3,7 +3,7 @@
 archive/issues_008576.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\nKeywords: categories, real fields\n\nAfter this patch, QQ,ZZ,... inherit properly from categories: \n\n\n```\nsage: QQ.category()\nCategory of fields\nsage: TestSuite(QQ).run()\n```\n\n\nThis patch also documents the following effect discovered by TestSuite:\n\n```\n    sage: CDF = ComplexDoubleField()\n    sage: x = CDF.an_element()\n    sage: x\n    1.0*I\n    sage: x*x, x**2, x*x == x**2\n    (-1.0, -1.0 + 1.22460635382e-16*I, False)\n```\n\nThis effect won't be touched by this patch. Should anyone consider this as a bug, please open a new ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8576\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: categories, real fields\n\nAfter this patch, QQ,ZZ,... inherit properly from categories: \n\n\n```\nsage: QQ.category()\nCategory of fields\nsage: TestSuite(QQ).run()\n```\n\n\nThis patch also documents the following effect discovered by TestSuite:\n\n```\n    sage: CDF = ComplexDoubleField()\n    sage: x = CDF.an_element()\n    sage: x\n    1.0*I\n    sage: x*x, x**2, x*x == x**2\n    (-1.0, -1.0 + 1.22460635382e-16*I, False)\n```\n\nThis effect won't be touched by this patch. Should anyone consider this as a bug, please open a new ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8576\n\n",
     "created_at": "2010-03-22T10:16:15Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008576.json:
     "title": "Categories for QQ, CC, RR and friends",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8576",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8576
 archive/issue_comments_077680.json:
 ```json
 {
-    "body": "Attachment [trac_8576-category-QQ-RR-CC-nt.patch](tarball://root/attachments/some-uuid/ticket8576/trac_8576-category-QQ-RR-CC-nt.patch) by nthiery created at 2010-03-22 22:25:55\n\nAll test passed for me.",
+    "body": "Attachment [trac_8576-category-QQ-RR-CC-nt.patch](tarball://root/attachments/some-uuid/ticket8576/trac_8576-category-QQ-RR-CC-nt.patch) by @nthiery created at 2010-03-22 22:25:55\n\nAll test passed for me.",
     "created_at": "2010-03-22T22:25:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8576#issuecomment-77680",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8576-category-QQ-RR-CC-nt.patch](tarball://root/attachments/some-uuid/ticket8576/trac_8576-category-QQ-RR-CC-nt.patch) by nthiery created at 2010-03-22 22:25:55
+Attachment [trac_8576-category-QQ-RR-CC-nt.patch](tarball://root/attachments/some-uuid/ticket8576/trac_8576-category-QQ-RR-CC-nt.patch) by @nthiery created at 2010-03-22 22:25:55
 
 All test passed for me.
 
@@ -82,7 +82,7 @@ archive/issue_comments_077681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8576#issuecomment-77681",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_077682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8576#issuecomment-77682",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_077683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8576#issuecomment-77683",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_077684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8576#issuecomment-77684",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_077685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8576#issuecomment-77685",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_077686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8576",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8576#issuecomment-77686",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

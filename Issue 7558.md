@@ -14,7 +14,7 @@ archive/issues_007558.json:
     "title": "Replace deprecated functions by deprecated_function_alias whenever possible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7558",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_064297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7558#issuecomment-64297",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_064298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7558#issuecomment-64298",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

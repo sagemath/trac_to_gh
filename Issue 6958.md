@@ -3,7 +3,7 @@
 archive/issues_006958.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  was\n\nComments welcome!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6958\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein\n\nComments welcome!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6958\n\n",
     "created_at": "2009-09-19T03:13:09Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_006958.json:
     "title": "[with patch, not ready] prove_BSD function for elliptic curves over QQ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6958",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  was
+CC:  @williamstein
 
 Comments welcome!
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6958
 archive/issue_comments_057552.json:
 ```json
 {
-    "body": "Attachment [trac_6958.patch](tarball://root/attachments/some-uuid/ticket6958/trac_6958.patch) by rlm created at 2009-09-19 18:26:31",
+    "body": "Attachment [trac_6958.patch](tarball://root/attachments/some-uuid/ticket6958/trac_6958.patch) by @rlmill created at 2009-09-19 18:26:31",
     "created_at": "2009-09-19T18:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6958#issuecomment-57552",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6958.patch](tarball://root/attachments/some-uuid/ticket6958/trac_6958.patch) by rlm created at 2009-09-19 18:26:31
+Attachment [trac_6958.patch](tarball://root/attachments/some-uuid/ticket6958/trac_6958.patch) by @rlmill created at 2009-09-19 18:26:31
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_057553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6958#issuecomment-57553",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -149,16 +149,16 @@ so doing the index bound as a future patch is the way to go.
 archive/issue_comments_057554.json:
 ```json
 {
-    "body": "Attachment [trac-6958-referee_followup.patch](tarball://root/attachments/some-uuid/ticket6958/trac-6958-referee_followup.patch) by rlm created at 2009-09-19 22:38:57\n\nFor the second patch, proof=False and proof=True are reversed for the doctest on 389a.",
+    "body": "Attachment [trac-6958-referee_followup.patch](tarball://root/attachments/some-uuid/ticket6958/trac-6958-referee_followup.patch) by @rlmill created at 2009-09-19 22:38:57\n\nFor the second patch, proof=False and proof=True are reversed for the doctest on 389a.",
     "created_at": "2009-09-19T22:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6958#issuecomment-57554",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-6958-referee_followup.patch](tarball://root/attachments/some-uuid/ticket6958/trac-6958-referee_followup.patch) by rlm created at 2009-09-19 22:38:57
+Attachment [trac-6958-referee_followup.patch](tarball://root/attachments/some-uuid/ticket6958/trac-6958-referee_followup.patch) by @rlmill created at 2009-09-19 22:38:57
 
 For the second patch, proof=False and proof=True are reversed for the doctest on 389a.
 
@@ -174,7 +174,7 @@ archive/issue_comments_057555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6958#issuecomment-57555",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -218,16 +218,16 @@ Errors during apply, please fix and refresh trac_6958-typos_followup.patch
 archive/issue_comments_057557.json:
 ```json
 {
-    "body": "Attachment [trac_6958-typos_followup.patch](tarball://root/attachments/some-uuid/ticket6958/trac_6958-typos_followup.patch) by mhansen created at 2009-10-05 07:03:29",
+    "body": "Attachment [trac_6958-typos_followup.patch](tarball://root/attachments/some-uuid/ticket6958/trac_6958-typos_followup.patch) by @mwhansen created at 2009-10-05 07:03:29",
     "created_at": "2009-10-05T07:03:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6958#issuecomment-57557",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6958-typos_followup.patch](tarball://root/attachments/some-uuid/ticket6958/trac_6958-typos_followup.patch) by mhansen created at 2009-10-05 07:03:29
+Attachment [trac_6958-typos_followup.patch](tarball://root/attachments/some-uuid/ticket6958/trac_6958-typos_followup.patch) by @mwhansen created at 2009-10-05 07:03:29
 
 
 
@@ -241,7 +241,7 @@ archive/issue_comments_057558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6958#issuecomment-57558",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -254,16 +254,16 @@ I've attached a new version of `trac_6958-typos_followup.patch` which removes th
 archive/issue_comments_057559.json:
 ```json
 {
-    "body": "Remove assignee davidloeffler.",
+    "body": "Remove assignee @loefflerd.",
     "created_at": "2009-10-09T09:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6958#issuecomment-57559",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Remove assignee davidloeffler.
+Remove assignee @loefflerd.
 
 
 
@@ -277,7 +277,7 @@ archive/issue_comments_057560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6958#issuecomment-57560",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

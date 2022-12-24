@@ -3,7 +3,7 @@
 archive/issues_003167.json:
 ```json
 {
-    "body": "Assignee: was\n\n1. Go to the 3d plots section of the reference manual, e.g.,\n   http://localhost:8000/doc/live/ref/module-sage.plot.plot3d.parametric-plot3d.html\n\n2. Hit shift-enter to evaluate a plot.\n\n3. Observe that the plot doesn't work. \n\n\nThis should be easy to replicate on all operating systems, etc.  This bug was \nreported by walter neumann on March 11, 2008.\n\n\n----\n\nAs a temporary workaround you can do the following:\n\n1. View the page of the html reference manual of interest to you that contains 3d plotting code.\n2. Click in the upper left on File -> Copy Worksheet.\n\nYou'll get a complete copy of the page of the reference manual\nas a normal worksheet.  You can then use shift-enter to evaluate\n3d plots and they should work fine in that copy (since it is\njust a normal worksheet).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3167\n\n",
+    "body": "Assignee: @williamstein\n\n1. Go to the 3d plots section of the reference manual, e.g.,\n   http://localhost:8000/doc/live/ref/module-sage.plot.plot3d.parametric-plot3d.html\n\n2. Hit shift-enter to evaluate a plot.\n\n3. Observe that the plot doesn't work. \n\n\nThis should be easy to replicate on all operating systems, etc.  This bug was \nreported by walter neumann on March 11, 2008.\n\n\n----\n\nAs a temporary workaround you can do the following:\n\n1. View the page of the html reference manual of interest to you that contains 3d plotting code.\n2. Click in the upper left on File -> Copy Worksheet.\n\nYou'll get a complete copy of the page of the reference manual\nas a normal worksheet.  You can then use shift-enter to evaluate\n3d plots and they should work fine in that copy (since it is\njust a normal worksheet).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3167\n\n",
     "created_at": "2008-05-12T03:58:55Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003167.json:
     "title": "notebook -- jmol 3d plots in the dynamic live worksheet-based reference manual do not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3167",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 1. Go to the 3d plots section of the reference manual, e.g.,
    http://localhost:8000/doc/live/ref/module-sage.plot.plot3d.parametric-plot3d.html
@@ -96,7 +96,7 @@ Changing priority from major to blocker.
 archive/issue_comments_021944.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-09-29T22:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
@@ -105,7 +105,7 @@ archive/issue_comments_021944.json:
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_021946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21946",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_021947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21947",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_021948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21948",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -306,16 +306,16 @@ Changing priority from blocker to critical.
 archive/issue_comments_021949.json:
 ```json
 {
-    "body": "Attachment [trac_3167_blank_jmol.patch](tarball://root/attachments/some-uuid/ticket3167/trac_3167_blank_jmol.patch) by mpatel created at 2009-06-20 15:32:28",
+    "body": "Attachment [trac_3167_blank_jmol.patch](tarball://root/attachments/some-uuid/ticket3167/trac_3167_blank_jmol.patch) by @qed777 created at 2009-06-20 15:32:28",
     "created_at": "2009-06-20T15:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21949",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_3167_blank_jmol.patch](tarball://root/attachments/some-uuid/ticket3167/trac_3167_blank_jmol.patch) by mpatel created at 2009-06-20 15:32:28
+Attachment [trac_3167_blank_jmol.patch](tarball://root/attachments/some-uuid/ticket3167/trac_3167_blank_jmol.patch) by @qed777 created at 2009-06-20 15:32:28
 
 
 
@@ -329,7 +329,7 @@ archive/issue_comments_021950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21950",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_021951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21951",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_021952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21952",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_021953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21953",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

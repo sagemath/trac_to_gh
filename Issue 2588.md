@@ -3,7 +3,7 @@
 archive/issues_002588.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan\n\nKeywords: jacobian morphism hyperelliptic curve\n\nBefore:\n\n\n```\n----------------------------------------------------------------------\nsage/schemes/hyperelliptic_curves/jacobian_morphism.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE sage/schemes/hyperelliptic_curves/jacobian_morphism.py: 0% (0 of 15)\n\nMissing documentation:\n         * cantor_reduction_simple(a1,b1,f,genus)\n         * cantor_reduction(a,b,f,h,genus)\n         * cantor_composition_simple(D1,D2,f,genus)\n         * cantor_composition(D1,D2,f,h,genus)\n         * __init__(self, parent, polys, reduce=True, check=False)\n         * __repr__(self)\n         * scheme(self)\n         * list(self)\n         * __add__(self,other)\n         * __cmp__(self, other)\n         * __nonzero__(self)\n         * __sub__(self, other)\n         * __neg__(self)\n         * __mul__(self, n)\n         * _rmul_(self, n)\n\n----------------------------------------------------------------------\n```\n\n\nAfter:\n\n\n```\n----------------------------------------------------------------------\n./jacobian_morphism.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE ./jacobian_morphism.py: 100% (17 of 17)\n----------------------------------------------------------------------\n```\n\n\nThe final `s == loads(dumps(s))` requires lots of other fixes to happen first, so it could be a while.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2588\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: jacobian morphism hyperelliptic curve\n\nBefore:\n\n\n```\n----------------------------------------------------------------------\nsage/schemes/hyperelliptic_curves/jacobian_morphism.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE sage/schemes/hyperelliptic_curves/jacobian_morphism.py: 0% (0 of 15)\n\nMissing documentation:\n         * cantor_reduction_simple(a1,b1,f,genus)\n         * cantor_reduction(a,b,f,h,genus)\n         * cantor_composition_simple(D1,D2,f,genus)\n         * cantor_composition(D1,D2,f,h,genus)\n         * __init__(self, parent, polys, reduce=True, check=False)\n         * __repr__(self)\n         * scheme(self)\n         * list(self)\n         * __add__(self,other)\n         * __cmp__(self, other)\n         * __nonzero__(self)\n         * __sub__(self, other)\n         * __neg__(self)\n         * __mul__(self, n)\n         * _rmul_(self, n)\n\n----------------------------------------------------------------------\n```\n\n\nAfter:\n\n\n```\n----------------------------------------------------------------------\n./jacobian_morphism.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE ./jacobian_morphism.py: 100% (17 of 17)\n----------------------------------------------------------------------\n```\n\n\nThe final `s == loads(dumps(s))` requires lots of other fixes to happen first, so it could be a while.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2588\n\n",
     "created_at": "2008-03-18T18:38:29Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_002588.json:
     "title": "[with patch, needs review] documentation and tests for sage.schemes.hyperelliptic_curves.jacobian_morphism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2588",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: jacobian morphism hyperelliptic curve
 
@@ -78,16 +78,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2588
 archive/issue_comments_017711.json:
 ```json
 {
-    "body": "Attachment [2588-ncalexan-jacobian-morphism1.patch](tarball://root/attachments/some-uuid/ticket2588/2588-ncalexan-jacobian-morphism1.patch) by cremona created at 2008-03-18 21:39:59\n\nReview:  this looks like an excellent job with a lot of useful explanations and examples.  I successfully applied the patch to 2.10.4.rc0.  Testing all files in sage/schemes/hyperelliptic/ resulted in one error:\n\n```\n**********************************************************************\nFile \"jacobian_morphism.py\", line 382:\n    sage: print latex(Q + Q)\nExpected:\n    \\left(x^{2} + 5x + 1, y + 3\\alpha x + 6\\alpha + 2\\right) # known failure (trac #2586)\nGot:\n    \\left(x^{2} + 5x + 1, y + 3\\alphax + 6\\alpha + 2\\right)\n**********************************************************************\n```\n",
+    "body": "Attachment [2588-ncalexan-jacobian-morphism1.patch](tarball://root/attachments/some-uuid/ticket2588/2588-ncalexan-jacobian-morphism1.patch) by @JohnCremona created at 2008-03-18 21:39:59\n\nReview:  this looks like an excellent job with a lot of useful explanations and examples.  I successfully applied the patch to 2.10.4.rc0.  Testing all files in sage/schemes/hyperelliptic/ resulted in one error:\n\n```\n**********************************************************************\nFile \"jacobian_morphism.py\", line 382:\n    sage: print latex(Q + Q)\nExpected:\n    \\left(x^{2} + 5x + 1, y + 3\\alpha x + 6\\alpha + 2\\right) # known failure (trac #2586)\nGot:\n    \\left(x^{2} + 5x + 1, y + 3\\alphax + 6\\alpha + 2\\right)\n**********************************************************************\n```\n",
     "created_at": "2008-03-18T21:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2588#issuecomment-17711",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [2588-ncalexan-jacobian-morphism1.patch](tarball://root/attachments/some-uuid/ticket2588/2588-ncalexan-jacobian-morphism1.patch) by cremona created at 2008-03-18 21:39:59
+Attachment [2588-ncalexan-jacobian-morphism1.patch](tarball://root/attachments/some-uuid/ticket2588/2588-ncalexan-jacobian-morphism1.patch) by @JohnCremona created at 2008-03-18 21:39:59
 
 Review:  this looks like an excellent job with a lot of useful explanations and examples.  I successfully applied the patch to 2.10.4.rc0.  Testing all files in sage/schemes/hyperelliptic/ resulted in one error:
 
@@ -115,7 +115,7 @@ archive/issue_comments_017712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2588#issuecomment-17712",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_017714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2588#issuecomment-17714",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

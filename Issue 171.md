@@ -13,7 +13,7 @@ archive/issues_000171.json:
     "title": "bug in power series hom constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/171",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -104,7 +104,7 @@ archive/issue_comments_000784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/171#issuecomment-784",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_000785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/171",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/171#issuecomment-785",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005820.json:
     "title": "bug in comparison of ring morphisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5820",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: tbd
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5820
 archive/issue_comments_045738.json:
 ```json
 {
-    "body": "Changing assignee from tbd to AlexGhitza.",
+    "body": "Changing assignee from tbd to @aghitza.",
     "created_at": "2009-04-25T09:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45738",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to AlexGhitza.
+Changing assignee from tbd to @aghitza.
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_045739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45739",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_045740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45740",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_045741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45741",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -120,16 +120,16 @@ The attached patch does this and adds doctests (including `f == loads(dumps(f))`
 archive/issue_comments_045742.json:
 ```json
 {
-    "body": "Attachment [trac_5820.patch](tarball://root/attachments/some-uuid/ticket5820/trac_5820.patch) by AlexGhitza created at 2009-04-25 09:46:33",
+    "body": "Attachment [trac_5820.patch](tarball://root/attachments/some-uuid/ticket5820/trac_5820.patch) by @aghitza created at 2009-04-25 09:46:33",
     "created_at": "2009-04-25T09:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45742",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5820.patch](tarball://root/attachments/some-uuid/ticket5820/trac_5820.patch) by AlexGhitza created at 2009-04-25 09:46:33
+Attachment [trac_5820.patch](tarball://root/attachments/some-uuid/ticket5820/trac_5820.patch) by @aghitza created at 2009-04-25 09:46:33
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_045743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45743",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

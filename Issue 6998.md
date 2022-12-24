@@ -14,7 +14,7 @@ archive/issues_006998.json:
     "title": "wrong error for powerseries sqrt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6998",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -46,7 +46,7 @@ archive/issue_comments_057869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6998#issuecomment-57869",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_057870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6998#issuecomment-57870",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -77,16 +77,16 @@ Changing assignee from somebody to tbd.
 archive/issue_comments_057871.json:
 ```json
 {
-    "body": "Changing assignee from tbd to mhansen.",
+    "body": "Changing assignee from tbd to @mwhansen.",
     "created_at": "2009-09-24T06:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6998#issuecomment-57871",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tbd to mhansen.
+Changing assignee from tbd to @mwhansen.
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_057872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6998#issuecomment-57872",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -113,16 +113,16 @@ Changing status from new to assigned.
 archive/issue_comments_057873.json:
 ```json
 {
-    "body": "Attachment [trac_6998.patch](tarball://root/attachments/some-uuid/ticket6998/trac_6998.patch) by mhansen created at 2009-09-24 06:12:15",
+    "body": "Attachment [trac_6998.patch](tarball://root/attachments/some-uuid/ticket6998/trac_6998.patch) by @mwhansen created at 2009-09-24 06:12:15",
     "created_at": "2009-09-24T06:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6998#issuecomment-57873",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6998.patch](tarball://root/attachments/some-uuid/ticket6998/trac_6998.patch) by mhansen created at 2009-09-24 06:12:15
+Attachment [trac_6998.patch](tarball://root/attachments/some-uuid/ticket6998/trac_6998.patch) by @mwhansen created at 2009-09-24 06:12:15
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_057874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6998#issuecomment-57874",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_057875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6998#issuecomment-57875",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

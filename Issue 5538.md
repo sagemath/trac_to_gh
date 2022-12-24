@@ -3,7 +3,7 @@
 archive/issues_005538.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: Family, mutable input\n\nWhen family got a dictionary it does not copy it's input so that one can modify it. One should use a kind of frozen dictionary. \n\n```\nsage: d = {1:\"a\", 3:\"b\", 4:\"c\"}\nsage: f = Family(d)\nsage: f\nFinite family {1: 'a', 3: 'b', 4: 'c'}\nsage: d.\nsage: d[2] = 'DD'\nsage: d\n{1: 'a', 2: 'DD', 3: 'b', 4: 'c'}\nsage: f\nFinite family {1: 'a', 2: 'DD', 3: 'b', 4: 'c'}\n```\n\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/5538\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Family, mutable input\n\nWhen family got a dictionary it does not copy it's input so that one can modify it. One should use a kind of frozen dictionary. \n\n```\nsage: d = {1:\"a\", 3:\"b\", 4:\"c\"}\nsage: f = Family(d)\nsage: f\nFinite family {1: 'a', 3: 'b', 4: 'c'}\nsage: d.\nsage: d[2] = 'DD'\nsage: d\n{1: 'a', 2: 'DD', 3: 'b', 4: 'c'}\nsage: f\nFinite family {1: 'a', 2: 'DD', 3: 'b', 4: 'c'}\n```\n\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/5538\n\n",
     "created_at": "2009-03-16T23:43:12Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005538.json:
     "title": "Family does not copy it's input.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5538",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5538
 archive/issue_comments_043070.json:
 ```json
 {
-    "body": "Attachment [family_improve-fh-5538-submitted.patch](tarball://root/attachments/some-uuid/ticket5538/family_improve-fh-5538-submitted.patch) by hivert created at 2009-04-06 21:46:43",
+    "body": "Attachment [family_improve-fh-5538-submitted.patch](tarball://root/attachments/some-uuid/ticket5538/family_improve-fh-5538-submitted.patch) by @hivert created at 2009-04-06 21:46:43",
     "created_at": "2009-04-06T21:46:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43070",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [family_improve-fh-5538-submitted.patch](tarball://root/attachments/some-uuid/ticket5538/family_improve-fh-5538-submitted.patch) by hivert created at 2009-04-06 21:46:43
+Attachment [family_improve-fh-5538-submitted.patch](tarball://root/attachments/some-uuid/ticket5538/family_improve-fh-5538-submitted.patch) by @hivert created at 2009-04-06 21:46:43
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_043071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43071",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -100,16 +100,16 @@ Florent
 archive/issue_comments_043072.json:
 ```json
 {
-    "body": "Attachment [family_doc_fix-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_doc_fix-final.patch) by hivert created at 2009-04-07 07:56:44\n\nDoc fix",
+    "body": "Attachment [family_doc_fix-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_doc_fix-final.patch) by @hivert created at 2009-04-07 07:56:44\n\nDoc fix",
     "created_at": "2009-04-07T07:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43072",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [family_doc_fix-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_doc_fix-final.patch) by hivert created at 2009-04-07 07:56:44
+Attachment [family_doc_fix-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_doc_fix-final.patch) by @hivert created at 2009-04-07 07:56:44
 
 Doc fix
 
@@ -125,7 +125,7 @@ archive/issue_comments_043073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43073",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -138,16 +138,16 @@ Since the file is moved, the patch is not very useful. I added a diff from the f
 archive/issue_comments_043074.json:
 ```json
 {
-    "body": "Attachment [family.diff](tarball://root/attachments/some-uuid/ticket5538/family.diff) by hivert created at 2009-04-09 20:44:22\n\nDifference of family.py before and after the patch.",
+    "body": "Attachment [family.diff](tarball://root/attachments/some-uuid/ticket5538/family.diff) by @hivert created at 2009-04-09 20:44:22\n\nDifference of family.py before and after the patch.",
     "created_at": "2009-04-09T20:44:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43074",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [family.diff](tarball://root/attachments/some-uuid/ticket5538/family.diff) by hivert created at 2009-04-09 20:44:22
+Attachment [family.diff](tarball://root/attachments/some-uuid/ticket5538/family.diff) by @hivert created at 2009-04-09 20:44:22
 
 Difference of family.py before and after the patch.
 
@@ -163,7 +163,7 @@ archive/issue_comments_043075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43075",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_043076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43076",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -229,16 +229,16 @@ Just two suggestions in TrivialFamily:
 archive/issue_comments_043077.json:
 ```json
 {
-    "body": "Attachment [family_interface-cleanup-fh-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_interface-cleanup-fh-final.patch) by hivert created at 2009-04-14 17:01:51\n\nCleanup of the interface.",
+    "body": "Attachment [family_interface-cleanup-fh-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_interface-cleanup-fh-final.patch) by @hivert created at 2009-04-14 17:01:51\n\nCleanup of the interface.",
     "created_at": "2009-04-14T17:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43077",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [family_interface-cleanup-fh-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_interface-cleanup-fh-final.patch) by hivert created at 2009-04-14 17:01:51
+Attachment [family_interface-cleanup-fh-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_interface-cleanup-fh-final.patch) by @hivert created at 2009-04-14 17:01:51
 
 Cleanup of the interface.
 
@@ -249,16 +249,16 @@ Cleanup of the interface.
 archive/issue_comments_043078.json:
 ```json
 {
-    "body": "Attachment [family_adapt-fh-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_adapt-fh-final.patch) by hivert created at 2009-04-14 17:02:17\n\nAdapted root system with the new interface",
+    "body": "Attachment [family_adapt-fh-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_adapt-fh-final.patch) by @hivert created at 2009-04-14 17:02:17\n\nAdapted root system with the new interface",
     "created_at": "2009-04-14T17:02:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43078",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [family_adapt-fh-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_adapt-fh-final.patch) by hivert created at 2009-04-14 17:02:17
+Attachment [family_adapt-fh-final.patch](tarball://root/attachments/some-uuid/ticket5538/family_adapt-fh-final.patch) by @hivert created at 2009-04-14 17:02:17
 
 Adapted root system with the new interface
 
@@ -274,7 +274,7 @@ archive/issue_comments_043079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43079",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -302,16 +302,16 @@ Florent
 archive/issue_comments_043080.json:
 ```json
 {
-    "body": "Attachment [family_review.patch](tarball://root/attachments/some-uuid/ticket5538/family_review.patch) by nthiery created at 2009-04-14 18:09:51\n\nPositive review.\n\nFlorent: please update the summary accordingly, after double checking my (trivial) review patch. It needs to be applied last.\n\nMichael: do you mind setting the gard +3_4_1 on the patch server just after the merge?\n(and possibly also for the other recently merged in sage-combinat patches). Thanks!",
+    "body": "Attachment [family_review.patch](tarball://root/attachments/some-uuid/ticket5538/family_review.patch) by @nthiery created at 2009-04-14 18:09:51\n\nPositive review.\n\nFlorent: please update the summary accordingly, after double checking my (trivial) review patch. It needs to be applied last.\n\nMichael: do you mind setting the gard +3_4_1 on the patch server just after the merge?\n(and possibly also for the other recently merged in sage-combinat patches). Thanks!",
     "created_at": "2009-04-14T18:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43080",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [family_review.patch](tarball://root/attachments/some-uuid/ticket5538/family_review.patch) by nthiery created at 2009-04-14 18:09:51
+Attachment [family_review.patch](tarball://root/attachments/some-uuid/ticket5538/family_review.patch) by @nthiery created at 2009-04-14 18:09:51
 
 Positive review.
 
@@ -332,7 +332,7 @@ archive/issue_comments_043081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43081",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_043082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43082",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_043083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43083",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_043084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43084",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -461,7 +461,7 @@ archive/issue_comments_043086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43086",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_043087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5538#issuecomment-43087",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

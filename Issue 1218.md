@@ -3,7 +3,7 @@
 archive/issues_001218.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nSee http://sage.math.washington.edu/home/robertwb/cython/cython-0.9.6.9.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1218\n\n",
+    "body": "Assignee: @robertwb\n\nSee http://sage.math.washington.edu/home/robertwb/cython/cython-0.9.6.9.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1218\n\n",
     "created_at": "2007-11-20T15:59:22Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001218.json:
     "user": "mabshoff"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 See http://sage.math.washington.edu/home/robertwb/cython/cython-0.9.6.9.spkg
 

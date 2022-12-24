@@ -14,7 +14,7 @@ archive/issues_009250.json:
     "title": "Bug in crystal code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9250",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 Assignee: sage-combinat
@@ -44,7 +44,7 @@ archive/issue_comments_087057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9250#issuecomment-87057",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_087058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9250#issuecomment-87058",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -75,16 +75,16 @@ Changing keywords from "" to "crystals".
 archive/issue_comments_087059.json:
 ```json
 {
-    "body": "Attachment [trac_9250-crystalbug-as.patch](tarball://root/attachments/some-uuid/ticket9250/trac_9250-crystalbug-as.patch) by aschilling created at 2010-06-16 21:52:09",
+    "body": "Attachment [trac_9250-crystalbug-as.patch](tarball://root/attachments/some-uuid/ticket9250/trac_9250-crystalbug-as.patch) by @anneschilling created at 2010-06-16 21:52:09",
     "created_at": "2010-06-16T21:52:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9250#issuecomment-87059",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [trac_9250-crystalbug-as.patch](tarball://root/attachments/some-uuid/ticket9250/trac_9250-crystalbug-as.patch) by aschilling created at 2010-06-16 21:52:09
+Attachment [trac_9250-crystalbug-as.patch](tarball://root/attachments/some-uuid/ticket9250/trac_9250-crystalbug-as.patch) by @anneschilling created at 2010-06-16 21:52:09
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_087060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9250#issuecomment-87060",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_087061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9250#issuecomment-87061",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_087062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9250#issuecomment-87062",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

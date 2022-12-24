@@ -14,7 +14,7 @@ archive/issues_005654.json:
     "title": "[with patch, needs review] Boundary/interior points of vertices were computed wrong.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5654",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton

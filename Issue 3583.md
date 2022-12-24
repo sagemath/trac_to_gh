@@ -14,7 +14,7 @@ archive/issues_003583.json:
     "title": "randomness in some worksheet doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3583",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3583
 archive/issue_comments_025297.json:
 ```json
 {
-    "body": "Attachment [sage-3583.patch](tarball://root/attachments/some-uuid/ticket3583/sage-3583.patch) by was created at 2008-07-07 18:44:25",
+    "body": "Attachment [sage-3583.patch](tarball://root/attachments/some-uuid/ticket3583/sage-3583.patch) by @williamstein created at 2008-07-07 18:44:25",
     "created_at": "2008-07-07T18:44:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3583#issuecomment-25297",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3583.patch](tarball://root/attachments/some-uuid/ticket3583/sage-3583.patch) by was created at 2008-07-07 18:44:25
+Attachment [sage-3583.patch](tarball://root/attachments/some-uuid/ticket3583/sage-3583.patch) by @williamstein created at 2008-07-07 18:44:25
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_025298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3583#issuecomment-25298",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_025299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3583#issuecomment-25299",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

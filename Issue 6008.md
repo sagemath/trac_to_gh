@@ -3,7 +3,7 @@
 archive/issues_006008.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: elliptic curve torsion\n\nThis patch makes an improvement to the efficiency of elliptic curve torsion subgroup computation (over number fields).\n\nI noticed something in the code I wrote which can be improved.  This\nis something which was not in Chris Wuthrich's original\nimplementation, so it is my fault.\n\nHere's what we do:  (1) find an upper bound on the torsion order, i.e.\na positive integer N such that the torsion order is certainly a\ndivisor of N.  This uses the function _torsion_bound() in\nell_number_field.py.    (2) For each prime dividing N, find a basis\nfor  the p-primary torsion.  This is done in\n_p_primary_torsion_basis() in ell_generic.py.  (3) Put together the\nprimary parts.\n\nHere's the inefficiency.  In step (2) I ignore the bound we have on\nthe exponent of each prime.  This wastes time in computing the\np-primary torsion basis.  So I will change the function\n_p_primary_torsion_basis() to take an optional parameter which is a\nbound on the  exponent of the order (not the exponent of the p-primary\nsubgroup).\n\ne.g. in Jim's example, the bound is 49 and the actual torion is C7xC7. But when we compute the 7-primary torsion, after finding that the 7-torsion is complete and of order 49, we do not stop, but test 8 points in the 7-torsion subgroup to see if they can be divided further by 7.  that last part is obiously a waste of time since we have already reached the bound.\n\nBefore: Jim's example took 12.64s.  After: 9.73s.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6008\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: elliptic curve torsion\n\nThis patch makes an improvement to the efficiency of elliptic curve torsion subgroup computation (over number fields).\n\nI noticed something in the code I wrote which can be improved.  This\nis something which was not in Chris Wuthrich's original\nimplementation, so it is my fault.\n\nHere's what we do:  (1) find an upper bound on the torsion order, i.e.\na positive integer N such that the torsion order is certainly a\ndivisor of N.  This uses the function _torsion_bound() in\nell_number_field.py.    (2) For each prime dividing N, find a basis\nfor  the p-primary torsion.  This is done in\n_p_primary_torsion_basis() in ell_generic.py.  (3) Put together the\nprimary parts.\n\nHere's the inefficiency.  In step (2) I ignore the bound we have on\nthe exponent of each prime.  This wastes time in computing the\np-primary torsion basis.  So I will change the function\n_p_primary_torsion_basis() to take an optional parameter which is a\nbound on the  exponent of the order (not the exponent of the p-primary\nsubgroup).\n\ne.g. in Jim's example, the bound is 49 and the actual torion is C7xC7. But when we compute the 7-primary torsion, after finding that the 7-torsion is complete and of order 49, we do not stop, but test 8 points in the 7-torsion subgroup to see if they can be divided further by 7.  that last part is obiously a waste of time since we have already reached the bound.\n\nBefore: Jim's example took 12.64s.  After: 9.73s.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6008\n\n",
     "created_at": "2009-05-08T16:49:38Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006008.json:
     "title": "Improved efficiency  of elliptic curve torsion computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6008",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: elliptic curve torsion
 
@@ -82,7 +82,7 @@ archive/issue_comments_047805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47805",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_047809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47809",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -193,16 +193,16 @@ Michael
 archive/issue_comments_047811.json:
 ```json
 {
-    "body": "Attachment [ectorsion.2.patch](tarball://root/attachments/some-uuid/ticket6008/ectorsion.2.patch) by cremona created at 2009-05-10 08:07:17\n\nReplace previous one with this",
+    "body": "Attachment [ectorsion.2.patch](tarball://root/attachments/some-uuid/ticket6008/ectorsion.2.patch) by @JohnCremona created at 2009-05-10 08:07:17\n\nReplace previous one with this",
     "created_at": "2009-05-10T08:07:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47811",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [ectorsion.2.patch](tarball://root/attachments/some-uuid/ticket6008/ectorsion.2.patch) by cremona created at 2009-05-10 08:07:17
+Attachment [ectorsion.2.patch](tarball://root/attachments/some-uuid/ticket6008/ectorsion.2.patch) by @JohnCremona created at 2009-05-10 08:07:17
 
 Replace previous one with this
 
@@ -218,7 +218,7 @@ archive/issue_comments_047812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47812",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

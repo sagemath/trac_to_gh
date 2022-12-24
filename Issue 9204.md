@@ -3,7 +3,7 @@
 archive/issues_009204.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  iandrus chapoton\n\nSay we have a cell like this:\n\n\n```\n%hide\n1+1\n```\n\n\nafter Shift+Enter it would grey out the input but would **not** collapse the input cell to one line. If I click on the cell and then click somewhere else %hide works as expected and actually reduces the size of the input cell to one line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9204\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @gvol @fchapoton\n\nSay we have a cell like this:\n\n\n```\n%hide\n1+1\n```\n\n\nafter Shift+Enter it would grey out the input but would **not** collapse the input cell to one line. If I click on the cell and then click somewhere else %hide works as expected and actually reduces the size of the input cell to one line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9204\n\n",
     "created_at": "2010-06-10T14:10:24Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009204.json:
     "title": "%hide weirdness",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9204",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: jason, was
 
-CC:  iandrus chapoton
+CC:  @gvol @fchapoton
 
 Say we have a cell like this:
 
@@ -48,7 +48,7 @@ archive/issue_comments_086155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9204#issuecomment-86155",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_086156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9204#issuecomment-86156",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_086157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9204#issuecomment-86157",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

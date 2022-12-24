@@ -3,7 +3,7 @@
 archive/issues_009827.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  robertwb leif jason craigcitro timdumol mpatel\n\n[Here](http://wiki.cython.org/ReleaseNotes-0.13) are the release notes for [Cython](http://www.cython.org/) 0.13.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9828\n\n",
+    "body": "Assignee: tbd\n\nCC:  @robertwb @nexttime @jasongrout @craigcitro @TimDumol @qed777\n\n[Here](http://wiki.cython.org/ReleaseNotes-0.13) are the release notes for [Cython](http://www.cython.org/) 0.13.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9828\n\n",
     "created_at": "2010-08-28T00:36:27Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009827.json:
     "title": "Upgrade to Cython 0.13",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9827",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
 
-CC:  robertwb leif jason craigcitro timdumol mpatel
+CC:  @robertwb @nexttime @jasongrout @craigcitro @TimDumol @qed777
 
 [Here](http://wiki.cython.org/ReleaseNotes-0.13) are the release notes for [Cython](http://www.cython.org/) 0.13.
 
@@ -39,7 +39,7 @@ archive/issue_comments_096944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96944",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_096945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96945",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_096946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96946",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_096947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96947",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_096948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96948",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_096949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96949",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_096950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96950",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -379,16 +379,16 @@ Spkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.13.p0.s
 archive/issue_comments_096951.json:
 ```json
 {
-    "body": "Attachment [0_fix_setup.patch](tarball://root/attachments/some-uuid/ticket9828/0_fix_setup.patch) by robertwb created at 2010-09-16 09:24:43",
+    "body": "Attachment [0_fix_setup.patch](tarball://root/attachments/some-uuid/ticket9828/0_fix_setup.patch) by @robertwb created at 2010-09-16 09:24:43",
     "created_at": "2010-09-16T09:24:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96951",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [0_fix_setup.patch](tarball://root/attachments/some-uuid/ticket9828/0_fix_setup.patch) by robertwb created at 2010-09-16 09:24:43
+Attachment [0_fix_setup.patch](tarball://root/attachments/some-uuid/ticket9828/0_fix_setup.patch) by @robertwb created at 2010-09-16 09:24:43
 
 
 
@@ -397,16 +397,16 @@ Attachment [0_fix_setup.patch](tarball://root/attachments/some-uuid/ticket9828/0
 archive/issue_comments_096952.json:
 ```json
 {
-    "body": "Attachment [2_no_autodict.patch](tarball://root/attachments/some-uuid/ticket9828/2_no_autodict.patch) by robertwb created at 2010-09-16 09:25:03",
+    "body": "Attachment [2_no_autodict.patch](tarball://root/attachments/some-uuid/ticket9828/2_no_autodict.patch) by @robertwb created at 2010-09-16 09:25:03",
     "created_at": "2010-09-16T09:25:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96952",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2_no_autodict.patch](tarball://root/attachments/some-uuid/ticket9828/2_no_autodict.patch) by robertwb created at 2010-09-16 09:25:03
+Attachment [2_no_autodict.patch](tarball://root/attachments/some-uuid/ticket9828/2_no_autodict.patch) by @robertwb created at 2010-09-16 09:25:03
 
 
 
@@ -415,16 +415,16 @@ Attachment [2_no_autodict.patch](tarball://root/attachments/some-uuid/ticket9828
 archive/issue_comments_096953.json:
 ```json
 {
-    "body": "Attachment [3_broken_imports.patch](tarball://root/attachments/some-uuid/ticket9828/3_broken_imports.patch) by robertwb created at 2010-09-16 09:25:13",
+    "body": "Attachment [3_broken_imports.patch](tarball://root/attachments/some-uuid/ticket9828/3_broken_imports.patch) by @robertwb created at 2010-09-16 09:25:13",
     "created_at": "2010-09-16T09:25:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96953",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3_broken_imports.patch](tarball://root/attachments/some-uuid/ticket9828/3_broken_imports.patch) by robertwb created at 2010-09-16 09:25:13
+Attachment [3_broken_imports.patch](tarball://root/attachments/some-uuid/ticket9828/3_broken_imports.patch) by @robertwb created at 2010-09-16 09:25:13
 
 
 
@@ -433,16 +433,16 @@ Attachment [3_broken_imports.patch](tarball://root/attachments/some-uuid/ticket9
 archive/issue_comments_096954.json:
 ```json
 {
-    "body": "Attachment [4_typing_issue.patch](tarball://root/attachments/some-uuid/ticket9828/4_typing_issue.patch) by robertwb created at 2010-09-16 09:25:24",
+    "body": "Attachment [4_typing_issue.patch](tarball://root/attachments/some-uuid/ticket9828/4_typing_issue.patch) by @robertwb created at 2010-09-16 09:25:24",
     "created_at": "2010-09-16T09:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96954",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4_typing_issue.patch](tarball://root/attachments/some-uuid/ticket9828/4_typing_issue.patch) by robertwb created at 2010-09-16 09:25:24
+Attachment [4_typing_issue.patch](tarball://root/attachments/some-uuid/ticket9828/4_typing_issue.patch) by @robertwb created at 2010-09-16 09:25:24
 
 
 
@@ -451,16 +451,16 @@ Attachment [4_typing_issue.patch](tarball://root/attachments/some-uuid/ticket982
 archive/issue_comments_096955.json:
 ```json
 {
-    "body": "Attachment [5_random_typing.patch](tarball://root/attachments/some-uuid/ticket9828/5_random_typing.patch) by robertwb created at 2010-09-16 09:25:48",
+    "body": "Attachment [5_random_typing.patch](tarball://root/attachments/some-uuid/ticket9828/5_random_typing.patch) by @robertwb created at 2010-09-16 09:25:48",
     "created_at": "2010-09-16T09:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96955",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5_random_typing.patch](tarball://root/attachments/some-uuid/ticket9828/5_random_typing.patch) by robertwb created at 2010-09-16 09:25:48
+Attachment [5_random_typing.patch](tarball://root/attachments/some-uuid/ticket9828/5_random_typing.patch) by @robertwb created at 2010-09-16 09:25:48
 
 
 
@@ -469,16 +469,16 @@ Attachment [5_random_typing.patch](tarball://root/attachments/some-uuid/ticket98
 archive/issue_comments_096956.json:
 ```json
 {
-    "body": "Attachment [7_bool_bint.patch](tarball://root/attachments/some-uuid/ticket9828/7_bool_bint.patch) by robertwb created at 2010-09-16 09:26:08",
+    "body": "Attachment [7_bool_bint.patch](tarball://root/attachments/some-uuid/ticket9828/7_bool_bint.patch) by @robertwb created at 2010-09-16 09:26:08",
     "created_at": "2010-09-16T09:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96956",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7_bool_bint.patch](tarball://root/attachments/some-uuid/ticket9828/7_bool_bint.patch) by robertwb created at 2010-09-16 09:26:08
+Attachment [7_bool_bint.patch](tarball://root/attachments/some-uuid/ticket9828/7_bool_bint.patch) by @robertwb created at 2010-09-16 09:26:08
 
 
 
@@ -492,7 +492,7 @@ archive/issue_comments_096957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96957",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_096958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96958",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -528,7 +528,7 @@ archive/issue_comments_096959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96959",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_096960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96960",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_096961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96961",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -593,7 +593,7 @@ archive/issue_comments_096962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96962",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_096963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96963",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_096964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96964",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -649,7 +649,7 @@ archive/issue_comments_096965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96965",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -662,16 +662,16 @@ Oooops...
 archive/issue_comments_096966.json:
 ```json
 {
-    "body": "Attachment [trac_9828-fix_applying_patch_and_more-spkg.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-fix_applying_patch_and_more-spkg.patch) by leif created at 2010-09-16 17:54:47\n\nSPKG patch. As the name says... (also quotes SAGE_LOCAL; some clean-up) Now with corrected SPKG.txt (__getattr__).",
+    "body": "Attachment [trac_9828-fix_applying_patch_and_more-spkg.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-fix_applying_patch_and_more-spkg.patch) by @nexttime created at 2010-09-16 17:54:47\n\nSPKG patch. As the name says... (also quotes SAGE_LOCAL; some clean-up) Now with corrected SPKG.txt (__getattr__).",
     "created_at": "2010-09-16T17:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96966",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9828-fix_applying_patch_and_more-spkg.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-fix_applying_patch_and_more-spkg.patch) by leif created at 2010-09-16 17:54:47
+Attachment [trac_9828-fix_applying_patch_and_more-spkg.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-fix_applying_patch_and_more-spkg.patch) by @nexttime created at 2010-09-16 17:54:47
 
 SPKG patch. As the name says... (also quotes SAGE_LOCAL; some clean-up) Now with corrected SPKG.txt (__getattr__).
 
@@ -687,7 +687,7 @@ archive/issue_comments_096967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96967",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -700,16 +700,16 @@ I've replaced the patch with a corrected one (`__getitem__()` -> `__getattr__()`
 archive/issue_comments_096968.json:
 ```json
 {
-    "body": "Attachment [hudson_results.patch](tarball://root/attachments/some-uuid/ticket9828/hudson_results.patch) by robertwb created at 2010-09-17 07:01:47\n\napply to sage local repo",
+    "body": "Attachment [hudson_results.patch](tarball://root/attachments/some-uuid/ticket9828/hudson_results.patch) by @robertwb created at 2010-09-17 07:01:47\n\napply to sage local repo",
     "created_at": "2010-09-17T07:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96968",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [hudson_results.patch](tarball://root/attachments/some-uuid/ticket9828/hudson_results.patch) by robertwb created at 2010-09-17 07:01:47
+Attachment [hudson_results.patch](tarball://root/attachments/some-uuid/ticket9828/hudson_results.patch) by @robertwb created at 2010-09-17 07:01:47
 
 apply to sage local repo
 
@@ -720,16 +720,16 @@ apply to sage local repo
 archive/issue_comments_096969.json:
 ```json
 {
-    "body": "Attachment [sage-local-hudson.patch](tarball://root/attachments/some-uuid/ticket9828/sage-local-hudson.patch) by jason created at 2010-09-28 22:53:42\n\nOkay, now I'm really confused about what patches I should apply where to review this.  Can someone give directions for reviewing?  Thanks!",
+    "body": "Attachment [sage-local-hudson.patch](tarball://root/attachments/some-uuid/ticket9828/sage-local-hudson.patch) by @jasongrout created at 2010-09-28 22:53:42\n\nOkay, now I'm really confused about what patches I should apply where to review this.  Can someone give directions for reviewing?  Thanks!",
     "created_at": "2010-09-28T22:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96969",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [sage-local-hudson.patch](tarball://root/attachments/some-uuid/ticket9828/sage-local-hudson.patch) by jason created at 2010-09-28 22:53:42
+Attachment [sage-local-hudson.patch](tarball://root/attachments/some-uuid/ticket9828/sage-local-hudson.patch) by @jasongrout created at 2010-09-28 22:53:42
 
 Okay, now I'm really confused about what patches I should apply where to review this.  Can someone give directions for reviewing?  Thanks!
 
@@ -745,7 +745,7 @@ archive/issue_comments_096970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96970",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -763,7 +763,7 @@ archive/issue_comments_096971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96971",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -781,7 +781,7 @@ archive/issue_comments_096972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96972",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -871,7 +871,7 @@ archive/issue_comments_096973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96973",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -889,7 +889,7 @@ archive/issue_comments_096974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96974",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -910,7 +910,7 @@ archive/issue_comments_096975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96975",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -923,16 +923,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_096976.json:
 ```json
 {
-    "body": "Attachment [8_alpha_fixes.patch](tarball://root/attachments/some-uuid/ticket9828/8_alpha_fixes.patch) by robertwb created at 2010-10-01 08:33:51\n\nOK, one more patch, and an updated spkg.",
+    "body": "Attachment [8_alpha_fixes.patch](tarball://root/attachments/some-uuid/ticket9828/8_alpha_fixes.patch) by @robertwb created at 2010-10-01 08:33:51\n\nOK, one more patch, and an updated spkg.",
     "created_at": "2010-10-01T08:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96976",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8_alpha_fixes.patch](tarball://root/attachments/some-uuid/ticket9828/8_alpha_fixes.patch) by robertwb created at 2010-10-01 08:33:51
+Attachment [8_alpha_fixes.patch](tarball://root/attachments/some-uuid/ticket9828/8_alpha_fixes.patch) by @robertwb created at 2010-10-01 08:33:51
 
 OK, one more patch, and an updated spkg.
 
@@ -948,7 +948,7 @@ archive/issue_comments_096977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96977",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -990,7 +990,7 @@ archive/issue_comments_096978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96978",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1008,7 +1008,7 @@ archive/issue_comments_096979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96979",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1029,7 +1029,7 @@ archive/issue_comments_096980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96980",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1073,7 +1073,7 @@ archive/issue_comments_096981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96981",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1093,7 +1093,7 @@ archive/issue_comments_096982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96982",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -1116,7 +1116,7 @@ archive/issue_comments_096983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96983",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1143,7 +1143,7 @@ archive/issue_comments_096984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96984",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -1173,7 +1173,7 @@ archive/issue_comments_096985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96985",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1193,7 +1193,7 @@ archive/issue_comments_096986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96986",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1214,7 +1214,7 @@ archive/issue_comments_096987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96987",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1232,7 +1232,7 @@ archive/issue_comments_096988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96988",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1245,16 +1245,16 @@ SageNB doctest  fixes.  Apply to sagenb repository.
 archive/issue_comments_096989.json:
 ```json
 {
-    "body": "Attachment [trac_9828-sagenb_cython_0_13.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-sagenb_cython_0_13.patch) by mpatel created at 2010-10-07 09:48:09\n\nFolded sage repository patch.  Apply only this patch to the sage repository.",
+    "body": "Attachment [trac_9828-sagenb_cython_0_13.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-sagenb_cython_0_13.patch) by @qed777 created at 2010-10-07 09:48:09\n\nFolded sage repository patch.  Apply only this patch to the sage repository.",
     "created_at": "2010-10-07T09:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96989",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9828-sagenb_cython_0_13.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-sagenb_cython_0_13.patch) by mpatel created at 2010-10-07 09:48:09
+Attachment [trac_9828-sagenb_cython_0_13.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-sagenb_cython_0_13.patch) by @qed777 created at 2010-10-07 09:48:09
 
 Folded sage repository patch.  Apply only this patch to the sage repository.
 
@@ -1265,16 +1265,16 @@ Folded sage repository patch.  Apply only this patch to the sage repository.
 archive/issue_comments_096990.json:
 ```json
 {
-    "body": "Attachment [trac_9828-scripts_hudson.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-scripts_hudson.patch) by mpatel created at 2010-10-07 09:54:12\n\nTicket number in scripts repo patch.  Apply only this patch to the scripts repo.",
+    "body": "Attachment [trac_9828-scripts_hudson.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-scripts_hudson.patch) by @qed777 created at 2010-10-07 09:54:12\n\nTicket number in scripts repo patch.  Apply only this patch to the scripts repo.",
     "created_at": "2010-10-07T09:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96990",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9828-scripts_hudson.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-scripts_hudson.patch) by mpatel created at 2010-10-07 09:54:12
+Attachment [trac_9828-scripts_hudson.patch](tarball://root/attachments/some-uuid/ticket9828/trac_9828-scripts_hudson.patch) by @qed777 created at 2010-10-07 09:54:12
 
 Ticket number in scripts repo patch.  Apply only this patch to the scripts repo.
 
@@ -1290,7 +1290,7 @@ archive/issue_comments_096991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96991",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1308,7 +1308,7 @@ archive/issue_comments_096992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96992",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1339,7 +1339,7 @@ archive/issue_comments_096993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96993",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1357,7 +1357,7 @@ archive/issue_comments_096994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96994",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1375,7 +1375,7 @@ archive/issue_comments_096995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96995",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1408,7 +1408,7 @@ archive/issue_comments_096996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96996",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -1445,7 +1445,7 @@ archive/issue_comments_096997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96997",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1478,7 +1478,7 @@ archive/issue_comments_096998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9827",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96998",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

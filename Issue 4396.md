@@ -14,7 +14,7 @@ archive/issues_004396.json:
     "title": "create a \"sage -develupgrade\" command, that upgrades to the latest devel version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4396",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -64,7 +64,7 @@ archive/issue_comments_032351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4396#issuecomment-32351",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_032352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4396#issuecomment-32352",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_032353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4396#issuecomment-32353",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_032354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4396#issuecomment-32354",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

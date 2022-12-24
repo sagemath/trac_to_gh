@@ -14,7 +14,7 @@ archive/issues_003816.json:
     "title": "[with patch; needs review] notebook -- SyntaxWarning in twist.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3816",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3816
 archive/issue_comments_027148.json:
 ```json
 {
-    "body": "Attachment [sage-3816.patch](tarball://root/attachments/some-uuid/ticket3816/sage-3816.patch) by was created at 2008-08-12 13:17:10",
+    "body": "Attachment [sage-3816.patch](tarball://root/attachments/some-uuid/ticket3816/sage-3816.patch) by @williamstein created at 2008-08-12 13:17:10",
     "created_at": "2008-08-12T13:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3816",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3816#issuecomment-27148",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3816.patch](tarball://root/attachments/some-uuid/ticket3816/sage-3816.patch) by was created at 2008-08-12 13:17:10
+Attachment [sage-3816.patch](tarball://root/attachments/some-uuid/ticket3816/sage-3816.patch) by @williamstein created at 2008-08-12 13:17:10
 
 
 

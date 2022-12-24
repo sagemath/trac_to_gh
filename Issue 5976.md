@@ -3,7 +3,7 @@
 archive/issues_005976.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kohel\n\nKeywords: Elliptic Curves\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5976\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  kohel\n\nKeywords: Elliptic Curves\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5976\n\n",
     "created_at": "2009-05-04T05:40:10Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_005976.json:
     "user": "shumow"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  kohel
 
@@ -36,7 +36,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5976
 archive/issue_comments_047424.json:
 ```json
 {
-    "body": "Changing assignee from was to shumow.",
+    "body": "Changing assignee from @williamstein to shumow.",
     "created_at": "2009-05-04T05:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
@@ -45,7 +45,7 @@ archive/issue_comments_047424.json:
 }
 ```
 
-Changing assignee from was to shumow.
+Changing assignee from @williamstein to shumow.
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_047428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47428",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -142,16 +142,16 @@ This is an excellent contribution to Sage.  I will finish the review when I have
 archive/issue_comments_047429.json:
 ```json
 {
-    "body": "Attachment [trac_5976.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976.patch) by cremona created at 2009-05-04 17:14:32\n\nApply after previous (reviewer's patch)",
+    "body": "Attachment [trac_5976.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976.patch) by @JohnCremona created at 2009-05-04 17:14:32\n\nApply after previous (reviewer's patch)",
     "created_at": "2009-05-04T17:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47429",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5976.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976.patch) by cremona created at 2009-05-04 17:14:32
+Attachment [trac_5976.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976.patch) by @JohnCremona created at 2009-05-04 17:14:32
 
 Apply after previous (reviewer's patch)
 
@@ -167,7 +167,7 @@ archive/issue_comments_047430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47430",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_047432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47432",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_047433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47433",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_047435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47435",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_047437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47437",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -478,7 +478,7 @@ archive/issue_comments_047439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47439",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_047440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47440",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_047441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47441",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -668,7 +668,7 @@ archive/issue_comments_047443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47443",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -736,7 +736,7 @@ archive/issue_comments_047445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47445",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -868,7 +868,7 @@ archive/issue_comments_047450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47450",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -886,7 +886,7 @@ archive/issue_comments_047451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47451",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -966,7 +966,7 @@ archive/issue_comments_047453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47453",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1159,7 +1159,7 @@ archive/issue_comments_047460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47460",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1172,16 +1172,16 @@ Reviewer's patch;  apply *instead of* previous
 archive/issue_comments_047461.json:
 ```json
 {
-    "body": "Attachment [trac_5976_review.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976_review.patch) by cremona created at 2009-06-05 12:05:44\n\nI don't have time at the moment to go into this in a lot of detail.  The patch applies fine;  the examples I tried (including a 37-isogeny over Q) worked perfectly.\n\nI have a few minor comments listed below.  I found a lot of minor glitches in the docstrings when building the reference manual, and have fixed these.  My patch was supposed to be applied after yours, but owing to a mistake on my part is is a self-contained patch including all your code.  Sorry about that, I know that it makes it harder to see what I changed -- docstrings only!\n\nIt might be a good idea if David K also looked at it, since he is more familiar with \"his\" algorithm than I am;  I also know nothing about Stark's algorithm.\n\nOverall this is a very impressive piece of work (over 4000 lines!) and I think it should go in as soon as possible, since it is only when people start to use it for real that problems (if there are any) will surface.\n\nNow for the (mainly) minor points:\n\n* Several ReST glitches (e.g. missing double ::). [fixed]\n\n* In the doctests for the helper functions I think it would be better to\n  have direct rather than indirect doctests.  For example in the tests at \n  lines 98-99 surely the fact that the twosides agree is a tautology\n  since the same code is used on both sides?  And in\n  compute_codomain_formula(), why not put in a direct doctest.  (In that\n  function you do not really need A1,A2,A3 and you can define a1,...,a6\n  in one line via a1,a2,a3,a4,a6=E.ainvs().  Similarly elsewhere.)\n\n* compute_vw_kohel_even_deg1() does not use parameter a6.\n\n* l.225: incomplete sentence! [look for \"missing text\" in the source, I put in at least 2]\n\n* I like the very clear list of private data for the isogeny class,\n  where all are set to None by default, though I suspect this is more\n  like C++ than Python.  It makes it *very* much easier to see what is\n  going on.\n\n* There are lots of good examples.\n\n* The docstring for the isogeny method for elliptic curves should say\n  more: it should certainly detail the input parameters and give more\n  examples (possibly copied from the EllipticCurveIsogeny\n  documentation).  The point is the when someone E.<tab> and sees\n  E.isogeny is available and then types E.isogeny? they need to see how\n  to use that function.",
+    "body": "Attachment [trac_5976_review.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976_review.patch) by @JohnCremona created at 2009-06-05 12:05:44\n\nI don't have time at the moment to go into this in a lot of detail.  The patch applies fine;  the examples I tried (including a 37-isogeny over Q) worked perfectly.\n\nI have a few minor comments listed below.  I found a lot of minor glitches in the docstrings when building the reference manual, and have fixed these.  My patch was supposed to be applied after yours, but owing to a mistake on my part is is a self-contained patch including all your code.  Sorry about that, I know that it makes it harder to see what I changed -- docstrings only!\n\nIt might be a good idea if David K also looked at it, since he is more familiar with \"his\" algorithm than I am;  I also know nothing about Stark's algorithm.\n\nOverall this is a very impressive piece of work (over 4000 lines!) and I think it should go in as soon as possible, since it is only when people start to use it for real that problems (if there are any) will surface.\n\nNow for the (mainly) minor points:\n\n* Several ReST glitches (e.g. missing double ::). [fixed]\n\n* In the doctests for the helper functions I think it would be better to\n  have direct rather than indirect doctests.  For example in the tests at \n  lines 98-99 surely the fact that the twosides agree is a tautology\n  since the same code is used on both sides?  And in\n  compute_codomain_formula(), why not put in a direct doctest.  (In that\n  function you do not really need A1,A2,A3 and you can define a1,...,a6\n  in one line via a1,a2,a3,a4,a6=E.ainvs().  Similarly elsewhere.)\n\n* compute_vw_kohel_even_deg1() does not use parameter a6.\n\n* l.225: incomplete sentence! [look for \"missing text\" in the source, I put in at least 2]\n\n* I like the very clear list of private data for the isogeny class,\n  where all are set to None by default, though I suspect this is more\n  like C++ than Python.  It makes it *very* much easier to see what is\n  going on.\n\n* There are lots of good examples.\n\n* The docstring for the isogeny method for elliptic curves should say\n  more: it should certainly detail the input parameters and give more\n  examples (possibly copied from the EllipticCurveIsogeny\n  documentation).  The point is the when someone E.<tab> and sees\n  E.isogeny is available and then types E.isogeny? they need to see how\n  to use that function.",
     "created_at": "2009-06-05T12:05:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47461",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5976_review.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976_review.patch) by cremona created at 2009-06-05 12:05:44
+Attachment [trac_5976_review.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976_review.patch) by @JohnCremona created at 2009-06-05 12:05:44
 
 I don't have time at the moment to go into this in a lot of detail.  The patch applies fine;  the examples I tried (including a 37-isogeny over Q) worked perfectly.
 
@@ -1282,7 +1282,7 @@ archive/issue_comments_047464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47464",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1300,7 +1300,7 @@ archive/issue_comments_047465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47465",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

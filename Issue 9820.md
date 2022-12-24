@@ -3,7 +3,7 @@
 archive/issues_009820.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: infinite polynomial ring\n\nThe functions `is_field` and `is_integral_domain` for infinite polynomial rings lack the keyword `proof`.  This can give rise to errors.  For example,\n\n```\nsage: R.<x> = InfinitePolynomialRing(ZZ)\nsage: A.<t> = R[[]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9821\n\n",
+    "body": "Assignee: @malb\n\nKeywords: infinite polynomial ring\n\nThe functions `is_field` and `is_integral_domain` for infinite polynomial rings lack the keyword `proof`.  This can give rise to errors.  For example,\n\n```\nsage: R.<x> = InfinitePolynomialRing(ZZ)\nsage: A.<t> = R[[]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9821\n\n",
     "created_at": "2010-08-27T11:53:35Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_009820.json:
     "user": "fwclarke"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: infinite polynomial ring
 
@@ -99,7 +99,7 @@ archive/issue_comments_096833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96833",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

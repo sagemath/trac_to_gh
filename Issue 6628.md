@@ -3,7 +3,7 @@
 archive/issues_006628.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin\n\nKeywords: singular, libsingular, commutative algebra\n\nThe attached patch implements the following:\n\n\n```\nsage: P = PolynomialRing(GF(127),10,'x')\nsage: I = Ideal(P.random_element() for _ in range(3000))\nsage: from sage.libs.singular.function import singular_function, lib\nsage: groebner = singular_function('groebner')\nsage: %time groebner(I)\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\n[1]\n```\n\n\nFor comparison, the Singular pexpect interface needs almost two seconds for the same task (due to string parsing on both ends, IPC, etc.)\n\n\n```\nsage: %time I.groebner_basis()\nCPU times: user 0.96 s, sys: 0.24 s, total: 1.21 s\nWall time: 1.92 s\n[1]\n```\n\n\nThis patch requires an updated Singular SPKG (see below).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6628\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: singular, libsingular, commutative algebra\n\nThe attached patch implements the following:\n\n\n```\nsage: P = PolynomialRing(GF(127),10,'x')\nsage: I = Ideal(P.random_element() for _ in range(3000))\nsage: from sage.libs.singular.function import singular_function, lib\nsage: groebner = singular_function('groebner')\nsage: %time groebner(I)\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\n[1]\n```\n\n\nFor comparison, the Singular pexpect interface needs almost two seconds for the same task (due to string parsing on both ends, IPC, etc.)\n\n\n```\nsage: %time I.groebner_basis()\nCPU times: user 0.96 s, sys: 0.24 s, total: 1.21 s\nWall time: 1.92 s\n[1]\n```\n\n\nThis patch requires an updated Singular SPKG (see below).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6628\n\n",
     "created_at": "2009-07-26T13:59:05Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_006628.json:
     "title": "[with patch, needs review] Singular functions via libSingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6628",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin
+CC:  @burcin
 
 Keywords: singular, libsingular, commutative algebra
 
@@ -67,7 +67,7 @@ archive/issue_comments_054292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54292",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_054293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54293",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_054294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54294",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_054296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54296",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_054299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54299",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_054300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54300",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_054301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54301",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -343,16 +343,16 @@ On IRC:
 archive/issue_comments_054302.json:
 ```json
 {
-    "body": "Attachment [libsingular_functions.patch](tarball://root/attachments/some-uuid/ticket6628/libsingular_functions.patch) by malb created at 2009-08-19 11:56:08\n\nfixing docstring issue",
+    "body": "Attachment [libsingular_functions.patch](tarball://root/attachments/some-uuid/ticket6628/libsingular_functions.patch) by @malb created at 2009-08-19 11:56:08\n\nfixing docstring issue",
     "created_at": "2009-08-19T11:56:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54302",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [libsingular_functions.patch](tarball://root/attachments/some-uuid/ticket6628/libsingular_functions.patch) by malb created at 2009-08-19 11:56:08
+Attachment [libsingular_functions.patch](tarball://root/attachments/some-uuid/ticket6628/libsingular_functions.patch) by @malb created at 2009-08-19 11:56:08
 
 fixing docstring issue
 
@@ -363,16 +363,16 @@ fixing docstring issue
 archive/issue_comments_054303.json:
 ```json
 {
-    "body": "Attachment [trac_6628-referee.patch](tarball://root/attachments/some-uuid/ticket6628/trac_6628-referee.patch) by AlexGhitza created at 2009-08-20 11:05:08\n\napply after the previous patch",
+    "body": "Attachment [trac_6628-referee.patch](tarball://root/attachments/some-uuid/ticket6628/trac_6628-referee.patch) by @aghitza created at 2009-08-20 11:05:08\n\napply after the previous patch",
     "created_at": "2009-08-20T11:05:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54303",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6628-referee.patch](tarball://root/attachments/some-uuid/ticket6628/trac_6628-referee.patch) by AlexGhitza created at 2009-08-20 11:05:08
+Attachment [trac_6628-referee.patch](tarball://root/attachments/some-uuid/ticket6628/trac_6628-referee.patch) by @aghitza created at 2009-08-20 11:05:08
 
 apply after the previous patch
 
@@ -388,7 +388,7 @@ archive/issue_comments_054304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54304",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_054305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54305",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_054306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54306",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

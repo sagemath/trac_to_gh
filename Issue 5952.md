@@ -14,7 +14,7 @@ archive/issues_005952.json:
     "title": "Worksheet downloading blocks the entire server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5952",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5952
 archive/issue_comments_047080.json:
 ```json
 {
-    "body": "Attachment [5952-public-download.patch](tarball://root/attachments/some-uuid/ticket5952/5952-public-download.patch) by robertwb created at 2009-05-01 07:12:56\n\nWhen accounts=True, downloading is disabled.",
+    "body": "Attachment [5952-public-download.patch](tarball://root/attachments/some-uuid/ticket5952/5952-public-download.patch) by @robertwb created at 2009-05-01 07:12:56\n\nWhen accounts=True, downloading is disabled.",
     "created_at": "2009-05-01T07:12:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-47080",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5952-public-download.patch](tarball://root/attachments/some-uuid/ticket5952/5952-public-download.patch) by robertwb created at 2009-05-01 07:12:56
+Attachment [5952-public-download.patch](tarball://root/attachments/some-uuid/ticket5952/5952-public-download.patch) by @robertwb created at 2009-05-01 07:12:56
 
 When accounts=True, downloading is disabled.
 

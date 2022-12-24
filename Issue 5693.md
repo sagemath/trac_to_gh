@@ -14,7 +14,7 @@ archive/issues_005693.json:
     "title": "sloane_sequence -- very confusing error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5693",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -61,7 +61,7 @@ archive/issue_comments_044510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5693#issuecomment-44510",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,16 +89,16 @@ and
 archive/issue_comments_044511.json:
 ```json
 {
-    "body": "Attachment [trac_5693.patch](tarball://root/attachments/some-uuid/ticket5693/trac_5693.patch) by was created at 2009-04-06 17:08:17",
+    "body": "Attachment [trac_5693.patch](tarball://root/attachments/some-uuid/ticket5693/trac_5693.patch) by @williamstein created at 2009-04-06 17:08:17",
     "created_at": "2009-04-06T17:08:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5693#issuecomment-44511",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5693.patch](tarball://root/attachments/some-uuid/ticket5693/trac_5693.patch) by was created at 2009-04-06 17:08:17
+Attachment [trac_5693.patch](tarball://root/attachments/some-uuid/ticket5693/trac_5693.patch) by @williamstein created at 2009-04-06 17:08:17
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_044512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5693#issuecomment-44512",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

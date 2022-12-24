@@ -3,7 +3,7 @@
 archive/issues_002736.json:
 ```json
 {
-    "body": "Assignee: yi\n\nAttached is a patch which fixes the annoying exceptions thrown by the doctest runner at the end of the dsage doctests. \n\nThis patch does the following:\n1) Explicitly call .wait() on subprocess.Popen instances\n2) Explicitly delete the reference to the Popen instances before letting the interpreter exit\n3) Explicitly join the dsage thread before letting the interpreter exit in the doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2736\n\n",
+    "body": "Assignee: @yqiang\n\nAttached is a patch which fixes the annoying exceptions thrown by the doctest runner at the end of the dsage doctests. \n\nThis patch does the following:\n1) Explicitly call .wait() on subprocess.Popen instances\n2) Explicitly delete the reference to the Popen instances before letting the interpreter exit\n3) Explicitly join the dsage thread before letting the interpreter exit in the doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2736\n\n",
     "created_at": "2008-03-30T21:45:12Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002736.json:
     "title": "[with patch, needs review] fix for dsage doctest failures in sage-2.11.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2736",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 Attached is a patch which fixes the annoying exceptions thrown by the doctest runner at the end of the dsage doctests. 
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2736
 archive/issue_comments_018815.json:
 ```json
 {
-    "body": "Attachment [dsage_doctest_threading.patch](tarball://root/attachments/some-uuid/ticket2736/dsage_doctest_threading.patch) by was created at 2008-03-30 22:03:49\n\nTested on OS X.",
+    "body": "Attachment [dsage_doctest_threading.patch](tarball://root/attachments/some-uuid/ticket2736/dsage_doctest_threading.patch) by @williamstein created at 2008-03-30 22:03:49\n\nTested on OS X.",
     "created_at": "2008-03-30T22:03:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2736#issuecomment-18815",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [dsage_doctest_threading.patch](tarball://root/attachments/some-uuid/ticket2736/dsage_doctest_threading.patch) by was created at 2008-03-30 22:03:49
+Attachment [dsage_doctest_threading.patch](tarball://root/attachments/some-uuid/ticket2736/dsage_doctest_threading.patch) by @williamstein created at 2008-03-30 22:03:49
 
 Tested on OS X.
 

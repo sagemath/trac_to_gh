@@ -74,16 +74,16 @@ Changing priority from major to blocker.
 archive/issue_comments_039794.json:
 ```json
 {
-    "body": "Attachment [delete-all-cells.patch](tarball://root/attachments/some-uuid/ticket5189/delete-all-cells.patch) by jason created at 2009-02-06 08:18:30",
+    "body": "Attachment [delete-all-cells.patch](tarball://root/attachments/some-uuid/ticket5189/delete-all-cells.patch) by @jasongrout created at 2009-02-06 08:18:30",
     "created_at": "2009-02-06T08:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5189#issuecomment-39794",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [delete-all-cells.patch](tarball://root/attachments/some-uuid/ticket5189/delete-all-cells.patch) by jason created at 2009-02-06 08:18:30
+Attachment [delete-all-cells.patch](tarball://root/attachments/some-uuid/ticket5189/delete-all-cells.patch) by @jasongrout created at 2009-02-06 08:18:30
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_039795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5189#issuecomment-39795",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -110,16 +110,16 @@ Changing status from new to assigned.
 archive/issue_comments_039796.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2009-02-06T08:24:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5189#issuecomment-39796",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 

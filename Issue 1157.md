@@ -14,7 +14,7 @@ archive/issues_001157.json:
     "title": "make sure the sage vmware image files are < 2GB",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1157",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -55,7 +55,7 @@ archive/issue_comments_007061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1157#issuecomment-7061",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_007062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1157#issuecomment-7062",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -100,16 +100,16 @@ Michael
 archive/issue_comments_007063.json:
 ```json
 {
-    "body": "Changing assignee from was* to was.",
+    "body": "Changing assignee from was* to @williamstein.",
     "created_at": "2007-11-15T07:25:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1157#issuecomment-7063",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from was* to was.
+Changing assignee from was* to @williamstein.
 
 
 
@@ -123,7 +123,7 @@ archive/issue_comments_007064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1157#issuecomment-7064",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_007065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1157#issuecomment-7065",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

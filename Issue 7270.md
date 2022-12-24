@@ -14,7 +14,7 @@ archive/issues_007270.json:
     "title": "numerical.MIP : named constraints and variables, methods, structure, etc ...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7270",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
@@ -68,16 +68,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7270
 archive/issue_comments_060469.json:
 ```json
 {
-    "body": "Attachment [trac_7270.patch](tarball://root/attachments/some-uuid/ticket7270/trac_7270.patch) by ncohen created at 2009-10-23 15:29:11",
+    "body": "Attachment [trac_7270.patch](tarball://root/attachments/some-uuid/ticket7270/trac_7270.patch) by @nathanncohen created at 2009-10-23 15:29:11",
     "created_at": "2009-10-23T15:29:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7270#issuecomment-60469",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7270.patch](tarball://root/attachments/some-uuid/ticket7270/trac_7270.patch) by ncohen created at 2009-10-23 15:29:11
+Attachment [trac_7270.patch](tarball://root/attachments/some-uuid/ticket7270/trac_7270.patch) by @nathanncohen created at 2009-10-23 15:29:11
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_060470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7270#issuecomment-60470",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_060471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7270#issuecomment-60471",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_060472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7270#issuecomment-60472",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_060473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7270#issuecomment-60473",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_060474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7270#issuecomment-60474",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

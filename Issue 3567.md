@@ -14,7 +14,7 @@ archive/issues_003567.json:
     "title": "optimize startup of sage -- don't import global transaction module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3567",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3567
 archive/issue_comments_025200.json:
 ```json
 {
-    "body": "Attachment [sage-3567.patch](tarball://root/attachments/some-uuid/ticket3567/sage-3567.patch) by was created at 2008-07-06 19:50:48",
+    "body": "Attachment [sage-3567.patch](tarball://root/attachments/some-uuid/ticket3567/sage-3567.patch) by @williamstein created at 2008-07-06 19:50:48",
     "created_at": "2008-07-06T19:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25200",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3567.patch](tarball://root/attachments/some-uuid/ticket3567/sage-3567.patch) by was created at 2008-07-06 19:50:48
+Attachment [sage-3567.patch](tarball://root/attachments/some-uuid/ticket3567/sage-3567.patch) by @williamstein created at 2008-07-06 19:50:48
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_025201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25201",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_025202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25202",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_025203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3567",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25203",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

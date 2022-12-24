@@ -14,7 +14,7 @@ archive/issues_006902.json:
     "title": "log(x) is typeset as \\ln x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6902",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6902
 archive/issue_comments_057015.json:
 ```json
 {
-    "body": "Set assignee to burcin.",
+    "body": "Set assignee to @burcin.",
     "created_at": "2009-09-19T15:11:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6902#issuecomment-57015",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Set assignee to burcin.
+Set assignee to @burcin.
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_057016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6902#issuecomment-57016",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -77,16 +77,16 @@ Changing status from new to assigned.
 archive/issue_comments_057017.json:
 ```json
 {
-    "body": "Attachment [trac_6902-log_latex.patch](tarball://root/attachments/some-uuid/ticket6902/trac_6902-log_latex.patch) by burcin created at 2009-09-19 15:11:41\n\nThis is fixed in my pynac tree. Doctest for Sage is in attachment:trac_6902-log_latex.patch.\n\nI will post a new pynac spkg and review instructions soon.",
+    "body": "Attachment [trac_6902-log_latex.patch](tarball://root/attachments/some-uuid/ticket6902/trac_6902-log_latex.patch) by @burcin created at 2009-09-19 15:11:41\n\nThis is fixed in my pynac tree. Doctest for Sage is in attachment:trac_6902-log_latex.patch.\n\nI will post a new pynac spkg and review instructions soon.",
     "created_at": "2009-09-19T15:11:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6902#issuecomment-57017",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6902-log_latex.patch](tarball://root/attachments/some-uuid/ticket6902/trac_6902-log_latex.patch) by burcin created at 2009-09-19 15:11:41
+Attachment [trac_6902-log_latex.patch](tarball://root/attachments/some-uuid/ticket6902/trac_6902-log_latex.patch) by @burcin created at 2009-09-19 15:11:41
 
 This is fixed in my pynac tree. Doctest for Sage is in attachment:trac_6902-log_latex.patch.
 
@@ -104,7 +104,7 @@ archive/issue_comments_057018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6902#issuecomment-57018",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_057019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6902#issuecomment-57019",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009732.json:
     "title": "don't delete interact output when auto_update=False",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9732",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
@@ -37,7 +37,7 @@ archive/issue_comments_095116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9732#issuecomment-95116",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

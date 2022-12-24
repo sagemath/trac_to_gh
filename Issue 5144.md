@@ -3,7 +3,7 @@
 archive/issues_005144.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\nKeywords: right_nullity\n\nleft_nullity currently functions by computing the difference between self.nrows() and self.rank().\n\nright_nullity currently functions by calling left_nullity on the transpose of the matrix, and so it can be sped up if it instead computes self.ncols() - self.rank().  The attached patch does this.\n\nTo see the effect, try timing some things with\n\n```\nsage: m = random_matrix(ZZ, 50, x=2^16)\n```\n\nOn my machine, I get\n\n```\nsage: timeit('m.left_nullity()')\n625 loops, best of 3: 2.29 \u00b5s per loop\ntimeit('m.transpose()')\n125 loops, best of 3: 1.72 ms per loop\n```\n\nso the transpose operation is really slow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5144\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nKeywords: right_nullity\n\nleft_nullity currently functions by computing the difference between self.nrows() and self.rank().\n\nright_nullity currently functions by calling left_nullity on the transpose of the matrix, and so it can be sped up if it instead computes self.ncols() - self.rank().  The attached patch does this.\n\nTo see the effect, try timing some things with\n\n```\nsage: m = random_matrix(ZZ, 50, x=2^16)\n```\n\nOn my machine, I get\n\n```\nsage: timeit('m.left_nullity()')\n625 loops, best of 3: 2.29 \u00b5s per loop\ntimeit('m.transpose()')\n125 loops, best of 3: 1.72 ms per loop\n```\n\nso the transpose operation is really slow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5144\n\n",
     "created_at": "2009-01-31T01:13:24Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005144.json:
     "title": "[with patch, needs review] speed up right_nullity for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5144",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 Keywords: right_nullity
 
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5144
 archive/issue_comments_039353.json:
 ```json
 {
-    "body": "Attachment [5144.patch](tarball://root/attachments/some-uuid/ticket5144/5144.patch) by jhpalmieri created at 2009-01-31 01:14:07",
+    "body": "Attachment [5144.patch](tarball://root/attachments/some-uuid/ticket5144/5144.patch) by @jhpalmieri created at 2009-01-31 01:14:07",
     "created_at": "2009-01-31T01:14:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5144#issuecomment-39353",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5144.patch](tarball://root/attachments/some-uuid/ticket5144/5144.patch) by jhpalmieri created at 2009-01-31 01:14:07
+Attachment [5144.patch](tarball://root/attachments/some-uuid/ticket5144/5144.patch) by @jhpalmieri created at 2009-01-31 01:14:07
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_039354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5144#issuecomment-39354",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

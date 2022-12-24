@@ -14,7 +14,7 @@ archive/issues_008858.json:
     "title": "4.4.1 accessing internet during compilation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8858",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -102,7 +102,7 @@ archive/issue_comments_081404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8858#issuecomment-81404",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_081405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8858#issuecomment-81405",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

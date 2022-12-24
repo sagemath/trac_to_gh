@@ -3,7 +3,7 @@
 archive/issues_000736.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/736\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/736\n\n",
     "created_at": "2007-09-22T13:37:42Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000736.json:
     "title": "combinatorics updates",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/736",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_004310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4310",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_004311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4311",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_004312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4312",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_004313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4313",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_004314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4314",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_004315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4315",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -142,16 +142,16 @@ Changing status from closed to reopened.
 archive/issue_comments_004316.json:
 ```json
 {
-    "body": "Attachment [736.hg](tarball://root/attachments/some-uuid/ticket736/736.hg) by mhansen created at 2007-10-04 15:23:44\n\nHG bundle attached.",
+    "body": "Attachment [736.hg](tarball://root/attachments/some-uuid/ticket736/736.hg) by @mwhansen created at 2007-10-04 15:23:44\n\nHG bundle attached.",
     "created_at": "2007-10-04T15:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4316",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [736.hg](tarball://root/attachments/some-uuid/ticket736/736.hg) by mhansen created at 2007-10-04 15:23:44
+Attachment [736.hg](tarball://root/attachments/some-uuid/ticket736/736.hg) by @mwhansen created at 2007-10-04 15:23:44
 
 HG bundle attached.
 
@@ -167,7 +167,7 @@ archive/issue_comments_004317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4317",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_004318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4318",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

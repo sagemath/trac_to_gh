@@ -14,7 +14,7 @@ archive/issues_003062.json:
     "title": "implement __oct__ special method for the integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3062",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody

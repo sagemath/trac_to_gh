@@ -14,7 +14,7 @@ archive/issues_003219.json:
     "title": "spkg -- upgrad to gmp-4.2.2 while we wait for MPIR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3219",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -41,7 +41,7 @@ archive/issue_comments_022290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3219#issuecomment-22290",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

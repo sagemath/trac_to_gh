@@ -3,7 +3,7 @@
 archive/issues_006552.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm\n\nHere is a bug in the depth-first searching of a graph:\n\n\n```\n\nsage: D = DiGraph( { 0: [1,2,3], 1: [4,5], 2: [5], 3: [6], 5: [7], 6: [7], 7: [0]})\nsage: list(D.depth_first_search(0, ignore_direction=True))                         \n[0, 7, 6, 5, 3, 2, 1, 4]\n```\n\n\nIt should be `[0, 7, 6, 3, 5, 2, 1, 4]`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6552\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nHere is a bug in the depth-first searching of a graph:\n\n\n```\n\nsage: D = DiGraph( { 0: [1,2,3], 1: [4,5], 2: [5], 3: [6], 5: [7], 6: [7], 7: [0]})\nsage: list(D.depth_first_search(0, ignore_direction=True))                         \n[0, 7, 6, 5, 3, 2, 1, 4]\n```\n\n\nIt should be `[0, 7, 6, 3, 5, 2, 1, 4]`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6552\n\n",
     "created_at": "2009-07-18T10:28:04Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_006552.json:
     "title": "bug in depth-first searching",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6552",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm
+CC:  @rlmill
 
 Here is a bug in the depth-first searching of a graph:
 
@@ -52,7 +52,7 @@ archive/issue_comments_053431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6552#issuecomment-53431",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_053432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6552#issuecomment-53432",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -90,16 +90,16 @@ in `depth_first_search` and everything looks good!
 archive/issue_comments_053433.json:
 ```json
 {
-    "body": "Attachment [trac-6552-graph-traversal.patch](tarball://root/attachments/some-uuid/ticket6552/trac-6552-graph-traversal.patch) by jason created at 2009-07-18 19:15:39",
+    "body": "Attachment [trac-6552-graph-traversal.patch](tarball://root/attachments/some-uuid/ticket6552/trac-6552-graph-traversal.patch) by @jasongrout created at 2009-07-18 19:15:39",
     "created_at": "2009-07-18T19:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6552#issuecomment-53433",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6552-graph-traversal.patch](tarball://root/attachments/some-uuid/ticket6552/trac-6552-graph-traversal.patch) by jason created at 2009-07-18 19:15:39
+Attachment [trac-6552-graph-traversal.patch](tarball://root/attachments/some-uuid/ticket6552/trac-6552-graph-traversal.patch) by @jasongrout created at 2009-07-18 19:15:39
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_053434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6552#issuecomment-53434",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

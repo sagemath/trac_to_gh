@@ -14,7 +14,7 @@ archive/issues_003896.json:
     "title": "[with spkg, patch - needs review] Upgrade Cython to 0.9.8.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3896",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_027847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3896#issuecomment-27847",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_027850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3896#issuecomment-27850",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_027851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3896#issuecomment-27851",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -168,16 +168,16 @@ Changing status from new to assigned.
 archive/issue_comments_027852.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to robertwb.",
+    "body": "Changing assignee from mabshoff to @robertwb.",
     "created_at": "2008-08-22T22:46:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3896#issuecomment-27852",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from mabshoff to robertwb.
+Changing assignee from mabshoff to @robertwb.
 
 
 
@@ -212,16 +212,16 @@ Michael
 archive/issue_comments_027854.json:
 ```json
 {
-    "body": "Attachment [3896-cython-0.9.8.1.1.patch](tarball://root/attachments/some-uuid/ticket3896/3896-cython-0.9.8.1.1.patch) by robertwb created at 2008-08-23 16:44:28\n\nThis replaces the older patch.",
+    "body": "Attachment [3896-cython-0.9.8.1.1.patch](tarball://root/attachments/some-uuid/ticket3896/3896-cython-0.9.8.1.1.patch) by @robertwb created at 2008-08-23 16:44:28\n\nThis replaces the older patch.",
     "created_at": "2008-08-23T16:44:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3896#issuecomment-27854",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3896-cython-0.9.8.1.1.patch](tarball://root/attachments/some-uuid/ticket3896/3896-cython-0.9.8.1.1.patch) by robertwb created at 2008-08-23 16:44:28
+Attachment [3896-cython-0.9.8.1.1.patch](tarball://root/attachments/some-uuid/ticket3896/3896-cython-0.9.8.1.1.patch) by @robertwb created at 2008-08-23 16:44:28
 
 This replaces the older patch.
 
@@ -237,7 +237,7 @@ archive/issue_comments_027855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3896#issuecomment-27855",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

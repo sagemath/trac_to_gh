@@ -3,7 +3,7 @@
 archive/issues_005569.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  cremona\n\nWhile cleaning up `mq.MPolynomialSystem` I moved its misnamed `change_ring()` function to a more proper place, i.e. `weil_restriction()` on ideals. Note, that these are defined on varieties but we don't have any variety objects and the function indeed works with ideal generators.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5569\n\n",
+    "body": "Assignee: @malb\n\nCC:  @JohnCremona\n\nWhile cleaning up `mq.MPolynomialSystem` I moved its misnamed `change_ring()` function to a more proper place, i.e. `weil_restriction()` on ideals. Note, that these are defined on varieties but we don't have any variety objects and the function indeed works with ideal generators.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5569\n\n",
     "created_at": "2009-03-19T22:28:05Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_005569.json:
     "title": "[with patch, needs review] weil restriction of scalars",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5569",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  cremona
+CC:  @JohnCremona
 
 While cleaning up `mq.MPolynomialSystem` I moved its misnamed `change_ring()` function to a more proper place, i.e. `weil_restriction()` on ideals. Note, that these are defined on varieties but we don't have any variety objects and the function indeed works with ideal generators.
 
@@ -39,7 +39,7 @@ archive/issue_comments_043392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5569#issuecomment-43392",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -71,16 +71,16 @@ archive/issue_comments_043392.json:
 archive/issue_comments_043393.json:
 ```json
 {
-    "body": "Attachment [weil_restriction.patch](tarball://root/attachments/some-uuid/ticket5569/weil_restriction.patch) by malb created at 2009-03-20 00:06:15",
+    "body": "Attachment [weil_restriction.patch](tarball://root/attachments/some-uuid/ticket5569/weil_restriction.patch) by @malb created at 2009-03-20 00:06:15",
     "created_at": "2009-03-20T00:06:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5569#issuecomment-43393",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [weil_restriction.patch](tarball://root/attachments/some-uuid/ticket5569/weil_restriction.patch) by malb created at 2009-03-20 00:06:15
+Attachment [weil_restriction.patch](tarball://root/attachments/some-uuid/ticket5569/weil_restriction.patch) by @malb created at 2009-03-20 00:06:15
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_043394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5569#issuecomment-43394",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_043395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5569#issuecomment-43395",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

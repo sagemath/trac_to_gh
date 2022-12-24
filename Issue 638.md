@@ -14,7 +14,7 @@ archive/issues_000638.json:
     "title": "notebook improvement -- allow comment at beginning of text version of notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/638",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -66,7 +66,7 @@ archive/issue_comments_003300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/638#issuecomment-3300",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

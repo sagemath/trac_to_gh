@@ -14,7 +14,7 @@ archive/issues_004459.json:
     "title": "preparser incorrectly identifies integer methods that start with e",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4459",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: cwitty
@@ -50,7 +50,7 @@ archive/issue_comments_032905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4459#issuecomment-32905",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

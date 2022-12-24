@@ -13,7 +13,7 @@ archive/issues_000031.json:
     "title": "modular forms -- missing q_eigenform functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/31",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -47,7 +47,7 @@ archive/issue_comments_000210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/31",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/31#issuecomment-210",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_000211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/31",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/31#issuecomment-211",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

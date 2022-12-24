@@ -3,7 +3,7 @@
 archive/issues_000277.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: discrete log shanks pollard rho order group structure\n\nThe computational cost of Shanks' Baby-Step Giant-Step algorithm and Pollard's rho and lambda algorithms are more or less the same, but the memory costs is much worse for Shanks' algorithm.  It would be nice to have better discrete log algos and group structure computations, ala E. Teske, A Space Efficient Algorithm for Group Structure Computation (1998).\n\nIssue created by migration from https://trac.sagemath.org/ticket/277\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: discrete log shanks pollard rho order group structure\n\nThe computational cost of Shanks' Baby-Step Giant-Step algorithm and Pollard's rho and lambda algorithms are more or less the same, but the memory costs is much worse for Shanks' algorithm.  It would be nice to have better discrete log algos and group structure computations, ala E. Teske, A Space Efficient Algorithm for Group Structure Computation (1998).\n\nIssue created by migration from https://trac.sagemath.org/ticket/277\n\n",
     "created_at": "2007-02-22T23:53:02Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000277.json:
     "title": "Add generic_discrete_logarithm and order computation using Pollard's rho algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/277",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: discrete log shanks pollard rho order group structure
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/277
 archive/issue_comments_001314.json:
 ```json
 {
-    "body": "Remove assignee was.",
+    "body": "Remove assignee @williamstein.",
     "created_at": "2007-02-24T03:04:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1314",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Remove assignee was.
+Remove assignee @williamstein.
 
 
 
@@ -74,16 +74,16 @@ which gives a better algorithm for computing group orders
 archive/issue_comments_001316.json:
 ```json
 {
-    "body": "Attachment [8758.patch](tarball://root/attachments/some-uuid/ticket277/8758.patch) by cremona created at 2008-03-02 22:31:12\n\npatch applies to 2.10.3.rc0 after 8682.patch in #2356",
+    "body": "Attachment [8758.patch](tarball://root/attachments/some-uuid/ticket277/8758.patch) by @JohnCremona created at 2008-03-02 22:31:12\n\npatch applies to 2.10.3.rc0 after 8682.patch in #2356",
     "created_at": "2008-03-02T22:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1316",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8758.patch](tarball://root/attachments/some-uuid/ticket277/8758.patch) by cremona created at 2008-03-02 22:31:12
+Attachment [8758.patch](tarball://root/attachments/some-uuid/ticket277/8758.patch) by @JohnCremona created at 2008-03-02 22:31:12
 
 patch applies to 2.10.3.rc0 after 8682.patch in #2356
 
@@ -99,7 +99,7 @@ archive/issue_comments_001317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1317",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_001318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1318",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_001319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1319",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_001320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1320",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -188,16 +188,16 @@ apply after 8758.patch
 archive/issue_comments_001321.json:
 ```json
 {
-    "body": "Attachment [8759.patch](tarball://root/attachments/some-uuid/ticket277/8759.patch) by cremona created at 2008-03-04 09:26:20\n\nI liked the suggestion of using operators: 8759.patch does that (needs to be applied after 8758.patch).  At the same time it adds some more doctests, and makes a couple of minor efficiency savings.\n\nIf there are going to be more generic functions like this (and I hope there are) we need a better place for them than rings/arith.py.  I see that in structure/element.pyx there are also some generic things, including generic powering.  Perhaps this function should be moved to a new .py file under structures?  Or at least renamed generic.py.",
+    "body": "Attachment [8759.patch](tarball://root/attachments/some-uuid/ticket277/8759.patch) by @JohnCremona created at 2008-03-04 09:26:20\n\nI liked the suggestion of using operators: 8759.patch does that (needs to be applied after 8758.patch).  At the same time it adds some more doctests, and makes a couple of minor efficiency savings.\n\nIf there are going to be more generic functions like this (and I hope there are) we need a better place for them than rings/arith.py.  I see that in structure/element.pyx there are also some generic things, including generic powering.  Perhaps this function should be moved to a new .py file under structures?  Or at least renamed generic.py.",
     "created_at": "2008-03-04T09:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1321",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8759.patch](tarball://root/attachments/some-uuid/ticket277/8759.patch) by cremona created at 2008-03-04 09:26:20
+Attachment [8759.patch](tarball://root/attachments/some-uuid/ticket277/8759.patch) by @JohnCremona created at 2008-03-04 09:26:20
 
 I liked the suggestion of using operators: 8759.patch does that (needs to be applied after 8758.patch).  At the same time it adds some more doctests, and makes a couple of minor efficiency savings.
 
@@ -215,7 +215,7 @@ archive/issue_comments_001322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1322",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_001323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1323",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

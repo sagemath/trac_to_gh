@@ -3,7 +3,7 @@
 archive/issues_006143.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  rlm boothby tclemans was robertwb mhampton\n\nAn spkg is up at http://sage.math.washington.edu/home/jason/tinyMCE-3.2.4.1.spkg\n\nThe new version has lots and lots of bugfixes, including lots of fixes for Safari.  It also has a greatly improved paste-from-word functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6143\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @rlmill boothby tclemans @williamstein @robertwb mhampton\n\nAn spkg is up at http://sage.math.washington.edu/home/jason/tinyMCE-3.2.4.1.spkg\n\nThe new version has lots and lots of bugfixes, including lots of fixes for Safari.  It also has a greatly improved paste-from-word functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6143\n\n",
     "created_at": "2009-05-28T04:56:22Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_006143.json:
     "title": "Upgrade tinyMCE to 3.2.4.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6143",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
 
-CC:  rlm boothby tclemans was robertwb mhampton
+CC:  @rlmill boothby tclemans @williamstein @robertwb mhampton
 
 An spkg is up at http://sage.math.washington.edu/home/jason/tinyMCE-3.2.4.1.spkg
 
@@ -41,7 +41,7 @@ archive/issue_comments_049043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6143#issuecomment-49043",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_049044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6143#issuecomment-49044",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_049045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6143#issuecomment-49045",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001950.json:
     "title": "When one clicks the print button in the notebook it should render the html with jsmath but with no warning at all.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1950",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_012414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1950#issuecomment-12414",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_012415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1950#issuecomment-12415",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

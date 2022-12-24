@@ -3,7 +3,7 @@
 archive/issues_004697.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nFix the following instance by a trivial change to raising an exception.  This causes tons of confusion for (new) users, since there isn't any way to easily \"discover\" what to do.\n\n\n```\nOn Dec 4, 3:07 pm, \"William Stein\" <wst...@gmail.com> wrote:\n> Do you think it would be better if instead of\n>\n> sage: print integrate(integrate(f,y,x^3,x^0.5),y,0,1)\n> ... Is  x  positive or negative?\n>\n> one saw:\n> ... Is  x  positive or negative?  (Try using the assume command.)\n\nI think the latter is more intuitive; in fact, I would go as far as to\ndo something like this:\n\n ... Is x positive or negative? (Try the assume(x>0) command before\n integral evaluation)\n\nThanks,\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4697\n\n",
+    "body": "Assignee: @burcin\n\nFix the following instance by a trivial change to raising an exception.  This causes tons of confusion for (new) users, since there isn't any way to easily \"discover\" what to do.\n\n\n```\nOn Dec 4, 3:07 pm, \"William Stein\" <wst...@gmail.com> wrote:\n> Do you think it would be better if instead of\n>\n> sage: print integrate(integrate(f,y,x^3,x^0.5),y,0,1)\n> ... Is  x  positive or negative?\n>\n> one saw:\n> ... Is  x  positive or negative?  (Try using the assume command.)\n\nI think the latter is more intuitive; in fact, I would go as far as to\ndo something like this:\n\n ... Is x positive or negative? (Try the assume(x>0) command before\n integral evaluation)\n\nThanks,\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4697\n\n",
     "created_at": "2008-12-04T21:55:14Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004697.json:
     "title": "change integration error message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4697",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Fix the following instance by a trivial change to raising an exception.  This causes tons of confusion for (new) users, since there isn't any way to easily "discover" what to do.
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4697
 archive/issue_comments_035385.json:
 ```json
 {
-    "body": "Attachment [trac_4697.patch](tarball://root/attachments/some-uuid/ticket4697/trac_4697.patch) by kcrisman created at 2009-01-29 00:55:22\n\nBased on 3.3.alpha0",
+    "body": "Attachment [trac_4697.patch](tarball://root/attachments/some-uuid/ticket4697/trac_4697.patch) by @kcrisman created at 2009-01-29 00:55:22\n\nBased on 3.3.alpha0",
     "created_at": "2009-01-29T00:55:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4697#issuecomment-35385",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4697.patch](tarball://root/attachments/some-uuid/ticket4697/trac_4697.patch) by kcrisman created at 2009-01-29 00:55:22
+Attachment [trac_4697.patch](tarball://root/attachments/some-uuid/ticket4697/trac_4697.patch) by @kcrisman created at 2009-01-29 00:55:22
 
 Based on 3.3.alpha0
 
@@ -79,7 +79,7 @@ archive/issue_comments_035386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4697#issuecomment-35386",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

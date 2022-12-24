@@ -3,7 +3,7 @@
 archive/issues_001235.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nOn Nov 20, 2007 12:28 PM, Ted Kosan <ted.kosan@gmail.com> wrote:\n> Does anyone have any thoughts on why the solve() function this program\n> returns an empty list?:\n> \n> sage: var('t')\n> sage: a = .004*(8*e^(-(300*t)) - 8*e^(-(1200*t)))*(720000*e^(-(300*t))\n> - 11520000*e^(-(1200*t))) +.004*(9600*e^(-(1200*t)) -\n> 2400*e^(-(300*t)))^2\n> sage: print a(t=.000411)\n> sage: show(plot(a,0,.002),xmin=0, xmax=.002)\n> sage: solve(a==0,t)\n\nMaxima stupidly decides there is no solution.  This is clearly a bug.  This\nis the sort of bug in Sage that is very difficult for us to fix since it's really\na bug in Maxima, and it's entirely possible that maxima developers would\nnot even call it a bug.  But clearly it is, since it's a mathematically incorrect result. \n\nHere's what happens when you try this in Maxima directly:\n\nsage: !maxima\nMaxima 5.13.0 http://maxima.sourceforge.net\nUsing Lisp CLISP 2.41 (2006-10-13)\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThis is a development version of Maxima. The function bug_report()\nprovides bug reporting information.\n(%i1) solve(0.004*(8*%e^-(300*t)-8*%e^-(1200*t))*(720000*%e^-(300*t)-11520000*%e^-(1200*t))+0.004*(9600*%e^-(1200*t)-2400*%e^-(300*t))^2=0, t)\n;\n`rat' replaced 0.004 by 1/250 = 0.004\n`rat' replaced 0.004 by 1/250 = 0.004\n(%o1)                                 []\n\n\nI strongly encourage you to report this to the maxima list, if you agree that it is\na bug in Maxima. \n\nI think in the long-run Sage will have to completely implement its own solve\nfunction, which is better than Maxima's.  Thoughts from Ondrej-sympy would be\nappreciated here. \n\n> And why the solve() function in this program hangs?:\n> \n> sage: var('t')\n> sage: v = 0.004*(9600*e^(-(1200*t)) - 2400*e^(-(300*t)))\n> sage: show(plot(v,0,.002),xmin=0,xmax = .002)\n> sage: solve(v == 0,t)\n\nHere maxima also gives the wrong answer:\n\nsage: maxima(v == 0)\n0.004*(9600*%e^-(1200*t)-2400*%e^-(300*t))=0\nsage: maxima(v == 0).solve(t)\n[]\n\nJust to emphasize that in my opinion this is *definitely* a bug,\nI've entered this into the tracker:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1235\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nOn Nov 20, 2007 12:28 PM, Ted Kosan <ted.kosan@gmail.com> wrote:\n> Does anyone have any thoughts on why the solve() function this program\n> returns an empty list?:\n> \n> sage: var('t')\n> sage: a = .004*(8*e^(-(300*t)) - 8*e^(-(1200*t)))*(720000*e^(-(300*t))\n> - 11520000*e^(-(1200*t))) +.004*(9600*e^(-(1200*t)) -\n> 2400*e^(-(300*t)))^2\n> sage: print a(t=.000411)\n> sage: show(plot(a,0,.002),xmin=0, xmax=.002)\n> sage: solve(a==0,t)\n\nMaxima stupidly decides there is no solution.  This is clearly a bug.  This\nis the sort of bug in Sage that is very difficult for us to fix since it's really\na bug in Maxima, and it's entirely possible that maxima developers would\nnot even call it a bug.  But clearly it is, since it's a mathematically incorrect result. \n\nHere's what happens when you try this in Maxima directly:\n\nsage: !maxima\nMaxima 5.13.0 http://maxima.sourceforge.net\nUsing Lisp CLISP 2.41 (2006-10-13)\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThis is a development version of Maxima. The function bug_report()\nprovides bug reporting information.\n(%i1) solve(0.004*(8*%e^-(300*t)-8*%e^-(1200*t))*(720000*%e^-(300*t)-11520000*%e^-(1200*t))+0.004*(9600*%e^-(1200*t)-2400*%e^-(300*t))^2=0, t)\n;\n`rat' replaced 0.004 by 1/250 = 0.004\n`rat' replaced 0.004 by 1/250 = 0.004\n(%o1)                                 []\n\n\nI strongly encourage you to report this to the maxima list, if you agree that it is\na bug in Maxima. \n\nI think in the long-run Sage will have to completely implement its own solve\nfunction, which is better than Maxima's.  Thoughts from Ondrej-sympy would be\nappreciated here. \n\n> And why the solve() function in this program hangs?:\n> \n> sage: var('t')\n> sage: v = 0.004*(9600*e^(-(1200*t)) - 2400*e^(-(300*t)))\n> sage: show(plot(v,0,.002),xmin=0,xmax = .002)\n> sage: solve(v == 0,t)\n\nHere maxima also gives the wrong answer:\n\nsage: maxima(v == 0)\n0.004*(9600*%e^-(1200*t)-2400*%e^-(300*t))=0\nsage: maxima(v == 0).solve(t)\n[]\n\nJust to emphasize that in my opinion this is *definitely* a bug,\nI've entered this into the tracker:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1235\n\n",
     "created_at": "2007-11-21T16:08:22Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001235.json:
     "title": "bug solving equations using maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1235",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -97,7 +97,7 @@ archive/issue_comments_007705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1235#issuecomment-7705",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_007706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1235#issuecomment-7706",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_007707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1235#issuecomment-7707",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -254,16 +254,16 @@ which could be doable for many analytically defined functions at least.
 archive/issue_comments_007708.json:
 ```json
 {
-    "body": "Attachment [trac-1235.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235.patch) by was created at 2007-12-08 08:43:05",
+    "body": "Attachment [trac-1235.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235.patch) by @williamstein created at 2007-12-08 08:43:05",
     "created_at": "2007-12-08T08:43:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1235#issuecomment-7708",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1235.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235.patch) by was created at 2007-12-08 08:43:05
+Attachment [trac-1235.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235.patch) by @williamstein created at 2007-12-08 08:43:05
 
 
 
@@ -329,16 +329,16 @@ Merged in 2.9.alpha2.
 archive/issue_comments_007712.json:
 ```json
 {
-    "body": "Attachment [trac-1235-doctest_fix.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235-doctest_fix.patch) by was created at 2007-12-10 15:34:12\n\nThis fixes a doctest failure on Redhat Linux 32-bit.",
+    "body": "Attachment [trac-1235-doctest_fix.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235-doctest_fix.patch) by @williamstein created at 2007-12-10 15:34:12\n\nThis fixes a doctest failure on Redhat Linux 32-bit.",
     "created_at": "2007-12-10T15:34:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1235#issuecomment-7712",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1235-doctest_fix.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235-doctest_fix.patch) by was created at 2007-12-10 15:34:12
+Attachment [trac-1235-doctest_fix.patch](tarball://root/attachments/some-uuid/ticket1235/trac-1235-doctest_fix.patch) by @williamstein created at 2007-12-10 15:34:12
 
 This fixes a doctest failure on Redhat Linux 32-bit.
 
@@ -354,7 +354,7 @@ archive/issue_comments_007713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1235#issuecomment-7713",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_007714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1235#issuecomment-7714",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_007715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1235#issuecomment-7715",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

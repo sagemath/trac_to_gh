@@ -3,7 +3,7 @@
 archive/issues_009187.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby jhpalmieri leif jsp\n\nTo build ECL with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\n\nto the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9187\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri @nexttime @jaapspies\n\nTo build ECL with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\n\nto the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9187\n\n",
     "created_at": "2010-06-08T08:42:58Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009187.json:
     "title": "Update ECL's spkg-install for building multiple spkgs in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9187",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
 
-CC:  drkirkby jhpalmieri leif jsp
+CC:  drkirkby @jhpalmieri @nexttime @jaapspies
 
 To build ECL with `SAGE_PARALLEL_SPKG_BUILD="yes"` on Mac OS X, we need to add, e.g.,
 
@@ -48,7 +48,7 @@ archive/issue_comments_085933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85933",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_085934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85934",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_085935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85935",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -97,16 +97,16 @@ Changing status from new to needs_review.
 archive/issue_comments_085936.json:
 ```json
 {
-    "body": "Attachment [trac_9187-ecl_makeflags.patch](tarball://root/attachments/some-uuid/ticket9187/trac_9187-ecl_makeflags.patch) by mpatel created at 2010-06-09 02:30:02\n\nI've put a new spkg at\n\n* http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.4.1.p0.spkg\n\n(Or should it be p1?)  This is based against the package mentioned in [comment:ticket:8951:10 this comment] at #8951.",
+    "body": "Attachment [trac_9187-ecl_makeflags.patch](tarball://root/attachments/some-uuid/ticket9187/trac_9187-ecl_makeflags.patch) by @qed777 created at 2010-06-09 02:30:02\n\nI've put a new spkg at\n\n* http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.4.1.p0.spkg\n\n(Or should it be p1?)  This is based against the package mentioned in [comment:ticket:8951:10 this comment] at #8951.",
     "created_at": "2010-06-09T02:30:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85936",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9187-ecl_makeflags.patch](tarball://root/attachments/some-uuid/ticket9187/trac_9187-ecl_makeflags.patch) by mpatel created at 2010-06-09 02:30:02
+Attachment [trac_9187-ecl_makeflags.patch](tarball://root/attachments/some-uuid/ticket9187/trac_9187-ecl_makeflags.patch) by @qed777 created at 2010-06-09 02:30:02
 
 I've put a new spkg at
 
@@ -226,7 +226,7 @@ archive/issue_comments_085942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85942",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_085943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85943",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_085944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85944",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_085945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85945",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_085946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85946",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -311,16 +311,16 @@ spkg patch rebased vs. #9474.
 archive/issue_comments_085947.json:
 ```json
 {
-    "body": "Attachment [trac_9187-ecl_makeflags.2.patch](tarball://root/attachments/some-uuid/ticket9187/trac_9187-ecl_makeflags.2.patch) by mpatel created at 2010-07-12 20:32:07\n\nHere's a new spkg based on #9474:\n\n http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg\n\nIt works for me with 4.5.rc0 + #7379 on sage.math, but I have not yet had a chance to test it on bsd.math.",
+    "body": "Attachment [trac_9187-ecl_makeflags.2.patch](tarball://root/attachments/some-uuid/ticket9187/trac_9187-ecl_makeflags.2.patch) by @qed777 created at 2010-07-12 20:32:07\n\nHere's a new spkg based on #9474:\n\n http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg\n\nIt works for me with 4.5.rc0 + #7379 on sage.math, but I have not yet had a chance to test it on bsd.math.",
     "created_at": "2010-07-12T20:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85947",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9187-ecl_makeflags.2.patch](tarball://root/attachments/some-uuid/ticket9187/trac_9187-ecl_makeflags.2.patch) by mpatel created at 2010-07-12 20:32:07
+Attachment [trac_9187-ecl_makeflags.2.patch](tarball://root/attachments/some-uuid/ticket9187/trac_9187-ecl_makeflags.2.patch) by @qed777 created at 2010-07-12 20:32:07
 
 Here's a new spkg based on #9474:
 
@@ -340,7 +340,7 @@ archive/issue_comments_085948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85948",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_085950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85950",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_085951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85951",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_085953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85953",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -520,7 +520,7 @@ archive/issue_comments_085955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85955",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -562,7 +562,7 @@ archive/issue_comments_085956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85956",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -580,7 +580,7 @@ archive/issue_comments_085957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85957",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -598,7 +598,7 @@ archive/issue_comments_085958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85958",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -636,7 +636,7 @@ archive/issue_comments_085959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85959",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -657,7 +657,7 @@ archive/issue_comments_085960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85960",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_085961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85961",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -713,7 +713,7 @@ archive/issue_comments_085962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85962",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -738,7 +738,7 @@ archive/issue_comments_085963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85963",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -760,7 +760,7 @@ archive/issue_comments_085964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85964",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -781,7 +781,7 @@ archive/issue_comments_085965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85965",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -799,7 +799,7 @@ archive/issue_comments_085966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85966",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -823,7 +823,7 @@ archive/issue_comments_085967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85967",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -843,7 +843,7 @@ archive/issue_comments_085968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85968",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -861,7 +861,7 @@ archive/issue_comments_085969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85969",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -885,7 +885,7 @@ archive/issue_comments_085970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85970",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -972,7 +972,7 @@ archive/issue_comments_085972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85972",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -993,7 +993,7 @@ archive/issue_comments_085973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9187",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85973",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

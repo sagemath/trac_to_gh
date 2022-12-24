@@ -87,16 +87,16 @@ Changing assignee from somebody to tbd.
 archive/issue_comments_019097.json:
 ```json
 {
-    "body": "Attachment [2780-factorization_unit.patch](tarball://root/attachments/some-uuid/ticket2780/2780-factorization_unit.patch) by AlexGhitza created at 2008-04-11 23:24:49\n\nSee the patch.",
+    "body": "Attachment [2780-factorization_unit.patch](tarball://root/attachments/some-uuid/ticket2780/2780-factorization_unit.patch) by @aghitza created at 2008-04-11 23:24:49\n\nSee the patch.",
     "created_at": "2008-04-11T23:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2780#issuecomment-19097",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [2780-factorization_unit.patch](tarball://root/attachments/some-uuid/ticket2780/2780-factorization_unit.patch) by AlexGhitza created at 2008-04-11 23:24:49
+Attachment [2780-factorization_unit.patch](tarball://root/attachments/some-uuid/ticket2780/2780-factorization_unit.patch) by @aghitza created at 2008-04-11 23:24:49
 
 See the patch.
 
@@ -112,7 +112,7 @@ archive/issue_comments_019098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2780",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2780#issuecomment-19098",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

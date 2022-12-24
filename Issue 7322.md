@@ -3,7 +3,7 @@
 archive/issues_007322.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jhpalmieri\n\nVersion 3.6c of jsMath works around Firefox 3.5's single-origin policy for local files.  The policy can keep jsMath from loading its external components and functioning properly (cf. #6820).\n\nPlease see the [change log](http://www.math.union.edu/~dpvc/jsMath/changes.html) for other bug fixes. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7322\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jhpalmieri\n\nVersion 3.6c of jsMath works around Firefox 3.5's single-origin policy for local files.  The policy can keep jsMath from loading its external components and functioning properly (cf. #6820).\n\nPlease see the [change log](http://www.math.union.edu/~dpvc/jsMath/changes.html) for other bug fixes. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7322\n\n",
     "created_at": "2009-10-27T17:22:19Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007322.json:
     "title": "SageNB: Upgrade jsMath to 3.6c",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7322",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 Version 3.6c of jsMath works around Firefox 3.5's single-origin policy for local files.  The policy can keep jsMath from loading its external components and functioning properly (cf. #6820).
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7322
 archive/issue_comments_061184.json:
 ```json
 {
-    "body": "Attachment [trac_7322-jsmath_upgrade.patch](tarball://root/attachments/some-uuid/ticket7322/trac_7322-jsmath_upgrade.patch) by mpatel created at 2009-10-29 07:19:11\n\nUpgrade to jsMath 3.6c.",
+    "body": "Attachment [trac_7322-jsmath_upgrade.patch](tarball://root/attachments/some-uuid/ticket7322/trac_7322-jsmath_upgrade.patch) by @qed777 created at 2009-10-29 07:19:11\n\nUpgrade to jsMath 3.6c.",
     "created_at": "2009-10-29T07:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7322#issuecomment-61184",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7322-jsmath_upgrade.patch](tarball://root/attachments/some-uuid/ticket7322/trac_7322-jsmath_upgrade.patch) by mpatel created at 2009-10-29 07:19:11
+Attachment [trac_7322-jsmath_upgrade.patch](tarball://root/attachments/some-uuid/ticket7322/trac_7322-jsmath_upgrade.patch) by @qed777 created at 2009-10-29 07:19:11
 
 Upgrade to jsMath 3.6c.
 
@@ -61,7 +61,7 @@ archive/issue_comments_061185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7322#issuecomment-61185",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_061186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7322#issuecomment-61186",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_061187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7322#issuecomment-61187",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_061188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7322#issuecomment-61188",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_061189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7322#issuecomment-61189",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_061190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7322#issuecomment-61190",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

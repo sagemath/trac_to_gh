@@ -3,7 +3,7 @@
 archive/issues_008732.json:
 ```json
 {
-    "body": "Assignee: amhou\n\nCC:  mhampton boothby jason\n\nCrap, there is a bug in the new HMM code (#8547) that just went into sage-4.4.alpha0:\n\nTry this:\n\n\n```\nsage: m = hmm.DiscreteHiddenMarkovModel([[1/3]*3]*3, [ [5]*5 ]*3, [1/3]*3, 'abcde'); m\nsage: v = list('a'*100); v\nsage: m.baum_welch(v)\nsage: m.sample(10)\n['e', 'a', 'e', 'e', 'a', 'c', 'c', 'c', 'c', 'a']\nsage: m\nDiscrete Hidden Markov Model with 3 States and 5 Emissions\nTransition matrix:\n[0.333333333333 0.333333333333 0.333333333333]\n[0.333333333333 0.333333333333 0.333333333333]\n[0.333333333333 0.333333333333 0.333333333333]\nEmission matrix:\n[1.0 0.0 0.0 0.0 0.0]\n[1.0 0.0 0.0 0.0 0.0]\n[1.0 0.0 0.0 0.0 0.0]\nInitial probabilities: [0.3333, 0.3333, 0.3333]\n```\n\n\nNotice above that it is impossible for the model to emit anything except 'a'.  Yet in the sample it does!  \n\nThis bug wasn't in the previous HMM code, of course.  I'll fix this ASAP for sage-4.4. \n\n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/8732\n\n",
+    "body": "Assignee: amhou\n\nCC:  mhampton boothby @jasongrout\n\nCrap, there is a bug in the new HMM code (#8547) that just went into sage-4.4.alpha0:\n\nTry this:\n\n\n```\nsage: m = hmm.DiscreteHiddenMarkovModel([[1/3]*3]*3, [ [5]*5 ]*3, [1/3]*3, 'abcde'); m\nsage: v = list('a'*100); v\nsage: m.baum_welch(v)\nsage: m.sample(10)\n['e', 'a', 'e', 'e', 'a', 'c', 'c', 'c', 'c', 'a']\nsage: m\nDiscrete Hidden Markov Model with 3 States and 5 Emissions\nTransition matrix:\n[0.333333333333 0.333333333333 0.333333333333]\n[0.333333333333 0.333333333333 0.333333333333]\n[0.333333333333 0.333333333333 0.333333333333]\nEmission matrix:\n[1.0 0.0 0.0 0.0 0.0]\n[1.0 0.0 0.0 0.0 0.0]\n[1.0 0.0 0.0 0.0 0.0]\nInitial probabilities: [0.3333, 0.3333, 0.3333]\n```\n\n\nNotice above that it is impossible for the model to emit anything except 'a'.  Yet in the sample it does!  \n\nThis bug wasn't in the previous HMM code, of course.  I'll fix this ASAP for sage-4.4. \n\n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/8732\n\n",
     "created_at": "2010-04-20T20:48:47Z",
     "labels": [
         "statistics",
@@ -14,12 +14,12 @@ archive/issues_008732.json:
     "title": "bug in new HMM code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8732",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: amhou
 
-CC:  mhampton boothby jason
+CC:  mhampton boothby @jasongrout
 
 Crap, there is a bug in the new HMM code (#8547) that just went into sage-4.4.alpha0:
 
@@ -64,16 +64,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8732
 archive/issue_comments_079813.json:
 ```json
 {
-    "body": "Attachment [trac_8732.patch](tarball://root/attachments/some-uuid/ticket8732/trac_8732.patch) by was created at 2010-04-20 21:46:04",
+    "body": "Attachment [trac_8732.patch](tarball://root/attachments/some-uuid/ticket8732/trac_8732.patch) by @williamstein created at 2010-04-20 21:46:04",
     "created_at": "2010-04-20T21:46:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8732#issuecomment-79813",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8732.patch](tarball://root/attachments/some-uuid/ticket8732/trac_8732.patch) by was created at 2010-04-20 21:46:04
+Attachment [trac_8732.patch](tarball://root/attachments/some-uuid/ticket8732/trac_8732.patch) by @williamstein created at 2010-04-20 21:46:04
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_079814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8732#issuecomment-79814",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_079815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8732#issuecomment-79815",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_079816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8732#issuecomment-79816",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_079819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8732#issuecomment-79819",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_079820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8732#issuecomment-79820",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

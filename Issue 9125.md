@@ -3,7 +3,7 @@
 archive/issues_009125.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThis patch adds more examples of simplicial complexes: real projective spaces (that is, RP<sup>d</sup> for any positive d), CP<sup>2</sup>, and the Poincare homology sphere.  Some of these are the minimal triangulations, some are not; see the documentation.\n\nThese are important test cases for homology and other computations which I hope will be implemented soon -- see tickets #6102 and #6103, for instance.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9125\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThis patch adds more examples of simplicial complexes: real projective spaces (that is, RP<sup>d</sup> for any positive d), CP<sup>2</sup>, and the Poincare homology sphere.  Some of these are the minimal triangulations, some are not; see the documentation.\n\nThese are important test cases for homology and other computations which I hope will be implemented soon -- see tickets #6102 and #6103, for instance.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9125\n\n",
     "created_at": "2010-06-03T04:13:48Z",
     "labels": [
         "algebraic topology",
@@ -14,10 +14,10 @@ archive/issues_009125.json:
     "title": "more examples of simplicial complexes: RP^n, CP^2, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9125",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 This patch adds more examples of simplicial complexes: real projective spaces (that is, RP<sup>d</sup> for any positive d), CP<sup>2</sup>, and the Poincare homology sphere.  Some of these are the minimal triangulations, some are not; see the documentation.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9125
 archive/issue_comments_084878.json:
 ```json
 {
-    "body": "Attachment [trac_9125-projective-space.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-projective-space.patch) by jhpalmieri created at 2010-06-03 04:14:15",
+    "body": "Attachment [trac_9125-projective-space.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-projective-space.patch) by @jhpalmieri created at 2010-06-03 04:14:15",
     "created_at": "2010-06-03T04:14:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84878",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9125-projective-space.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-projective-space.patch) by jhpalmieri created at 2010-06-03 04:14:15
+Attachment [trac_9125-projective-space.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-projective-space.patch) by @jhpalmieri created at 2010-06-03 04:14:15
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_084879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84879",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_084882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84882",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_084883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84883",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_084885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84885",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_084887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84887",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_084888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84888",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_084889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84889",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_084890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84890",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_084891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84891",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_084892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84892",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_084893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84893",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_084894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84894",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_084895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84895",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_084896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84896",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -429,16 +429,16 @@ apply on top of other patch
 archive/issue_comments_084897.json:
 ```json
 {
-    "body": "Attachment [trac_9125-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-doctest-fix.patch) by jhpalmieri created at 2010-12-15 19:04:53\n\nCan this get reviewed soon?  The original patch was reviewed positively already, so I think only \"trac_9125-doctest-fix.patch\" needs to be reviewed.  That one just marks some doctests as being \"long time\" or \"optional - CHomP\", so I think it should be easy to review.",
+    "body": "Attachment [trac_9125-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-doctest-fix.patch) by @jhpalmieri created at 2010-12-15 19:04:53\n\nCan this get reviewed soon?  The original patch was reviewed positively already, so I think only \"trac_9125-doctest-fix.patch\" needs to be reviewed.  That one just marks some doctests as being \"long time\" or \"optional - CHomP\", so I think it should be easy to review.",
     "created_at": "2010-12-15T19:04:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84897",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9125-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-doctest-fix.patch) by jhpalmieri created at 2010-12-15 19:04:53
+Attachment [trac_9125-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket9125/trac_9125-doctest-fix.patch) by @jhpalmieri created at 2010-12-15 19:04:53
 
 Can this get reviewed soon?  The original patch was reviewed positively already, so I think only "trac_9125-doctest-fix.patch" needs to be reviewed.  That one just marks some doctests as being "long time" or "optional - CHomP", so I think it should be easy to review.
 
@@ -555,7 +555,7 @@ archive/issue_comments_084902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84902",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_084903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84903",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -591,7 +591,7 @@ archive/issue_comments_084904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9125#issuecomment-84904",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

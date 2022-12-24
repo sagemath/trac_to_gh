@@ -3,7 +3,7 @@
 archive/issues_002125.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe attached fixes this spelling in two files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2125\n\n",
+    "body": "Assignee: @williamstein\n\nThe attached fixes this spelling in two files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2125\n\n",
     "created_at": "2008-02-09T06:35:57Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_002125.json:
     "user": "bober"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The attached fixes this spelling in two files.
 

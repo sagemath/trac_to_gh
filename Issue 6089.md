@@ -3,7 +3,7 @@
 archive/issues_006089.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  rbeezer fidelbarrera\n\nThe attached patch provides a way to not always use jsMath when rendering LaTeX for the 'view' command in the notebook.  It works by looking for certain strings in the latex code for the object, and if it finds them, it creates and displays a png file, bypassing jsMath altogether.  The \"certain strings\" are stored in a list which is initially empty, but can be populated by using\n\n```\nlatex.jsmath_avoid_list(...)\n```\n\nor\n\n```\nlatex.add_to_jsmath_avoid_list(...)\n```\n\nTo test it out, for example: in a notebook cell, try\n\n```\nclass bozo(SageObject):\n    def __init__(self):\n        pass\n    def _latex_(self):\n        return r\"\"\"\\begin{pspicture}(0,-4)(14,0)\n  \\psline{-}(0,0)(0,-4)\n  \\psline[linewidth=2pt]{-}(0,0)(1,-3)\n  \\qdisk(1,-3){3pt}\n  \\psarc{-}(0,0){0.6}{270}{292}\n  \\psline{->}(1,-3.3)(1,-4)\n  \\psline{->}(1.1,-2.7)(0.85,-1.95)\n  \\psline{-}(5,0)(5,-4)\n  \\psline[linewidth=2pt]{-}(5,0)(6,-3)\n  \\qdisk(6,-3){3pt}\n  \\psarc{-}(5,0){0.6}{270}{292}\n  \\psarc{-}(5,0){3.2}{270}{290}\n\\end{pspicture}\"\"\"\n```\n \nThen the latex string for instances of this class contains commands that jsMath can't handle, and indeed, `view(bozo())` ought to produce a typical jsMath error: a little box saying `Unknown environment \"pspicture\"`.  Then do\n\n```\nlatex.add_to_jsmath_avoid_list(\"pspicture\")\n```\n\nand try viewing again; it ought to pop up a pstricks picture.  It's a little slow, but I think we may have to live with that.\n\nTo the graph theorists: You ought to be able to do the same thing with graphs, as long as `'\\\\usepackage{tkz-graph}'` has been added to the latex preamble.  If you're doing that automatically, then you could also add an entry to `jsmath_avoid_list`...\n\nIssue created by migration from https://trac.sagemath.org/ticket/6089\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @rbeezer fidelbarrera\n\nThe attached patch provides a way to not always use jsMath when rendering LaTeX for the 'view' command in the notebook.  It works by looking for certain strings in the latex code for the object, and if it finds them, it creates and displays a png file, bypassing jsMath altogether.  The \"certain strings\" are stored in a list which is initially empty, but can be populated by using\n\n```\nlatex.jsmath_avoid_list(...)\n```\n\nor\n\n```\nlatex.add_to_jsmath_avoid_list(...)\n```\n\nTo test it out, for example: in a notebook cell, try\n\n```\nclass bozo(SageObject):\n    def __init__(self):\n        pass\n    def _latex_(self):\n        return r\"\"\"\\begin{pspicture}(0,-4)(14,0)\n  \\psline{-}(0,0)(0,-4)\n  \\psline[linewidth=2pt]{-}(0,0)(1,-3)\n  \\qdisk(1,-3){3pt}\n  \\psarc{-}(0,0){0.6}{270}{292}\n  \\psline{->}(1,-3.3)(1,-4)\n  \\psline{->}(1.1,-2.7)(0.85,-1.95)\n  \\psline{-}(5,0)(5,-4)\n  \\psline[linewidth=2pt]{-}(5,0)(6,-3)\n  \\qdisk(6,-3){3pt}\n  \\psarc{-}(5,0){0.6}{270}{292}\n  \\psarc{-}(5,0){3.2}{270}{290}\n\\end{pspicture}\"\"\"\n```\n \nThen the latex string for instances of this class contains commands that jsMath can't handle, and indeed, `view(bozo())` ought to produce a typical jsMath error: a little box saying `Unknown environment \"pspicture\"`.  Then do\n\n```\nlatex.add_to_jsmath_avoid_list(\"pspicture\")\n```\n\nand try viewing again; it ought to pop up a pstricks picture.  It's a little slow, but I think we may have to live with that.\n\nTo the graph theorists: You ought to be able to do the same thing with graphs, as long as `'\\\\usepackage{tkz-graph}'` has been added to the latex preamble.  If you're doing that automatically, then you could also add an entry to `jsmath_avoid_list`...\n\nIssue created by migration from https://trac.sagemath.org/ticket/6089\n\n",
     "created_at": "2009-05-20T03:40:23Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_006089.json:
     "title": "[with patch, needs review] view command: don't always use jsMath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6089",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
-CC:  rbeezer fidelbarrera
+CC:  @rbeezer fidelbarrera
 
 The attached patch provides a way to not always use jsMath when rendering LaTeX for the 'view' command in the notebook.  It works by looking for certain strings in the latex code for the object, and if it finds them, it creates and displays a png file, bypassing jsMath altogether.  The "certain strings" are stored in a list which is initially empty, but can be populated by using
 
@@ -81,7 +81,7 @@ archive/issue_comments_048506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48506",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -104,16 +104,16 @@ Of course, the typeset button won't handle any of these yet, but I have hope tha
 archive/issue_comments_048507.json:
 ```json
 {
-    "body": "Attachment [avoid-jsmath.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath.patch) by jhpalmieri created at 2009-05-21 05:31:26",
+    "body": "Attachment [avoid-jsmath.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath.patch) by @jhpalmieri created at 2009-05-21 05:31:26",
     "created_at": "2009-05-21T05:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48507",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [avoid-jsmath.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath.patch) by jhpalmieri created at 2009-05-21 05:31:26
+Attachment [avoid-jsmath.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath.patch) by @jhpalmieri created at 2009-05-21 05:31:26
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_048508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48508",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_048509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48509",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_048510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48510",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_048511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48511",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_048512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48512",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_048513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48513",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -312,16 +312,16 @@ apply only this patch
 archive/issue_comments_048514.json:
 ```json
 {
-    "body": "Attachment [avoid-jsmath-version2.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version2.patch) by rbeezer created at 2009-05-24 00:21:57\n\nHi John,\n\nI've been putting this all through the paces, though I'm not sure I've covered every possible scenario.  ;-) Just one hitch that I have found.\n\n(a) Open a new worksheet, tick the typeset button, type `x<sup>2+y</sup>2` in a cell, and output is the appropriate jsMath rendering.\n\n(b) Mess around with some of the `latex_examples` - add preamble information, and add a string to the jsmath-avoid-list, and `view()` or evaluate with typeset ticked.\n\n(c) Now repeat part (a).  I get a graphic out (not jsMath) and the x is missing (but the exponent of 2 on x is there and in the right place).\n\nIts like the `jsMathOkay` boolean is still set to `False`, but I couldn't track down where in the code there might be a problem.  Certainly it shouldn't be a graphic, but I'm also getting the missing character problem when I try to view lists of objects.  For example, suppose `var('x y z')` and `k` and `g` are variables and the knot and graph examples and all the preamble/avoid setup is in place, then in the notebook\n\n`view([k, z<sup>2+x</sup>2+y^2, gr])`\n\nis a nice run of three graphics, but the x is missing from the expression, so this is after Sage has reordered the terms of the expression.\n\nA couple minor comments.\n\n1.  In latex _examples, the docstring might benefit from including \"\\\\usepackage{tkz-berge}\" in the preamble addition suggestion.  This package is not needed for the example, but will be needed for the more general latex code for graphs being built.  If somebody goes to get the one package, they might as well get the other one while they are at it.  Can you tell I made two trips to get the packages a while ago after being very confused for the need for the second one?  ;-)\n\n2.  I ran `_run_latex_on_file()` on a six-page test file I've been using for debugging lots of this.  It creates several PNG's (numbered) if you run it this way.  Maybe that can go in the doc_string.  Each page of my test file has one image that gets created by the PGF/tikz/tkz-graph stuff, and the pages seem to get clipped on the left/right sides appropriately, but are all 1293 pixels tall.  Not a big deal, but maybe a switch would control this better?  My test file is at http://sage.pastebin.com/m540bee4f\n\nGreat stuff - I'll keep looking at this and we can get it reviewed soon.\n\nRob",
+    "body": "Attachment [avoid-jsmath-version2.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version2.patch) by @rbeezer created at 2009-05-24 00:21:57\n\nHi John,\n\nI've been putting this all through the paces, though I'm not sure I've covered every possible scenario.  ;-) Just one hitch that I have found.\n\n(a) Open a new worksheet, tick the typeset button, type `x<sup>2+y</sup>2` in a cell, and output is the appropriate jsMath rendering.\n\n(b) Mess around with some of the `latex_examples` - add preamble information, and add a string to the jsmath-avoid-list, and `view()` or evaluate with typeset ticked.\n\n(c) Now repeat part (a).  I get a graphic out (not jsMath) and the x is missing (but the exponent of 2 on x is there and in the right place).\n\nIts like the `jsMathOkay` boolean is still set to `False`, but I couldn't track down where in the code there might be a problem.  Certainly it shouldn't be a graphic, but I'm also getting the missing character problem when I try to view lists of objects.  For example, suppose `var('x y z')` and `k` and `g` are variables and the knot and graph examples and all the preamble/avoid setup is in place, then in the notebook\n\n`view([k, z<sup>2+x</sup>2+y^2, gr])`\n\nis a nice run of three graphics, but the x is missing from the expression, so this is after Sage has reordered the terms of the expression.\n\nA couple minor comments.\n\n1.  In latex _examples, the docstring might benefit from including \"\\\\usepackage{tkz-berge}\" in the preamble addition suggestion.  This package is not needed for the example, but will be needed for the more general latex code for graphs being built.  If somebody goes to get the one package, they might as well get the other one while they are at it.  Can you tell I made two trips to get the packages a while ago after being very confused for the need for the second one?  ;-)\n\n2.  I ran `_run_latex_on_file()` on a six-page test file I've been using for debugging lots of this.  It creates several PNG's (numbered) if you run it this way.  Maybe that can go in the doc_string.  Each page of my test file has one image that gets created by the PGF/tikz/tkz-graph stuff, and the pages seem to get clipped on the left/right sides appropriately, but are all 1293 pixels tall.  Not a big deal, but maybe a switch would control this better?  My test file is at http://sage.pastebin.com/m540bee4f\n\nGreat stuff - I'll keep looking at this and we can get it reviewed soon.\n\nRob",
     "created_at": "2009-05-24T00:21:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48514",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [avoid-jsmath-version2.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version2.patch) by rbeezer created at 2009-05-24 00:21:57
+Attachment [avoid-jsmath-version2.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version2.patch) by @rbeezer created at 2009-05-24 00:21:57
 
 Hi John,
 
@@ -361,7 +361,7 @@ archive/issue_comments_048515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48515",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_048516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48516",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_048517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48517",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_048518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48518",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_048519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48519",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_048520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48520",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -480,16 +480,16 @@ I have not experimented with the scenarios where some of the tools (like convert
 archive/issue_comments_048521.json:
 ```json
 {
-    "body": "Attachment [avoid-jsmath-version3.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version3.patch) by jhpalmieri created at 2009-05-30 15:35:46\n\napply only this patch",
+    "body": "Attachment [avoid-jsmath-version3.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version3.patch) by @jhpalmieri created at 2009-05-30 15:35:46\n\napply only this patch",
     "created_at": "2009-05-30T15:35:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48521",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [avoid-jsmath-version3.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version3.patch) by jhpalmieri created at 2009-05-30 15:35:46
+Attachment [avoid-jsmath-version3.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version3.patch) by @jhpalmieri created at 2009-05-30 15:35:46
 
 apply only this patch
 
@@ -505,7 +505,7 @@ archive/issue_comments_048522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48522",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_048523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48523",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -571,7 +571,7 @@ archive/issue_comments_048524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48524",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -605,7 +605,7 @@ archive/issue_comments_048525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48525",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -618,16 +618,16 @@ apply only this patch
 archive/issue_comments_048526.json:
 ```json
 {
-    "body": "Attachment [avoid-jsmath-version4.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version4.patch) by jhpalmieri created at 2009-06-08 05:36:40\n\ndo not apply: for reference only",
+    "body": "Attachment [avoid-jsmath-version4.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version4.patch) by @jhpalmieri created at 2009-06-08 05:36:40\n\ndo not apply: for reference only",
     "created_at": "2009-06-08T05:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48526",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [avoid-jsmath-version4.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version4.patch) by jhpalmieri created at 2009-06-08 05:36:40
+Attachment [avoid-jsmath-version4.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-jsmath-version4.patch) by @jhpalmieri created at 2009-06-08 05:36:40
 
 do not apply: for reference only
 
@@ -638,16 +638,16 @@ do not apply: for reference only
 archive/issue_comments_048527.json:
 ```json
 {
-    "body": "Attachment [avoid-delta34.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-delta34.patch) by rbeezer created at 2009-06-08 06:56:58\n\nPasses all tests (sage -testall) and documentation builds cleanly.\n\nWorks well as designed, and I'm getting much more sensible behavior (fallbacks and error messages) when I simulate dvipng or convert missing.  The extra comments and rearrangements in the code make it easier to understand what's happening.\n\nI meant to say a while back that it makes sense to not work too hard on the lists of objects - if you want a nice graphic of just a single object, you can just view it all by itself.  And then simple lists should/can behave rationally.\n\nDocumentation looks real good, plus its great to see doctests getting very close to 100%.\n\nI applied #5975 on top of this, and then it works well for displaying any graph.\n\nNice work!",
+    "body": "Attachment [avoid-delta34.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-delta34.patch) by @rbeezer created at 2009-06-08 06:56:58\n\nPasses all tests (sage -testall) and documentation builds cleanly.\n\nWorks well as designed, and I'm getting much more sensible behavior (fallbacks and error messages) when I simulate dvipng or convert missing.  The extra comments and rearrangements in the code make it easier to understand what's happening.\n\nI meant to say a while back that it makes sense to not work too hard on the lists of objects - if you want a nice graphic of just a single object, you can just view it all by itself.  And then simple lists should/can behave rationally.\n\nDocumentation looks real good, plus its great to see doctests getting very close to 100%.\n\nI applied #5975 on top of this, and then it works well for displaying any graph.\n\nNice work!",
     "created_at": "2009-06-08T06:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48527",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [avoid-delta34.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-delta34.patch) by rbeezer created at 2009-06-08 06:56:58
+Attachment [avoid-delta34.patch](tarball://root/attachments/some-uuid/ticket6089/avoid-delta34.patch) by @rbeezer created at 2009-06-08 06:56:58
 
 Passes all tests (sage -testall) and documentation builds cleanly.
 
@@ -673,7 +673,7 @@ archive/issue_comments_048528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6089#issuecomment-48528",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

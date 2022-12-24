@@ -112,7 +112,7 @@ archive/issue_comments_054768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54768",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_054769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54769",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_054770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54770",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_054771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54771",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_054774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54774",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_054775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54775",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_054778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54778",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_054781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54781",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -408,16 +408,16 @@ UnpicklingError: NEWOBJ class argument isn't a type object
 archive/issue_comments_054782.json:
 ```json
 {
-    "body": "Attachment [trac-6670-group_algebra-5.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-5.patch) by davidloeffler created at 2010-07-03 09:53:00\n\nApply only this -- rebased against 4.5.alpha1 and docstrings ReSTified",
+    "body": "Attachment [trac-6670-group_algebra-5.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-5.patch) by @loefflerd created at 2010-07-03 09:53:00\n\nApply only this -- rebased against 4.5.alpha1 and docstrings ReSTified",
     "created_at": "2010-07-03T09:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54782",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac-6670-group_algebra-5.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-5.patch) by davidloeffler created at 2010-07-03 09:53:00
+Attachment [trac-6670-group_algebra-5.patch](tarball://root/attachments/some-uuid/ticket6670/trac-6670-group_algebra-5.patch) by @loefflerd created at 2010-07-03 09:53:00
 
 Apply only this -- rebased against 4.5.alpha1 and docstrings ReSTified
 
@@ -505,7 +505,7 @@ archive/issue_comments_054787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54787",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_054788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54788",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_054789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54789",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -574,7 +574,7 @@ archive/issue_comments_054790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54790",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_054791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54791",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -605,16 +605,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_054792.json:
 ```json
 {
-    "body": "Attachment [trac_6670-jhp.patch](tarball://root/attachments/some-uuid/ticket6670/trac_6670-jhp.patch) by jhpalmieri created at 2011-07-28 22:46:49",
+    "body": "Attachment [trac_6670-jhp.patch](tarball://root/attachments/some-uuid/ticket6670/trac_6670-jhp.patch) by @jhpalmieri created at 2011-07-28 22:46:49",
     "created_at": "2011-07-28T22:46:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54792",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6670-jhp.patch](tarball://root/attachments/some-uuid/ticket6670/trac_6670-jhp.patch) by jhpalmieri created at 2011-07-28 22:46:49
+Attachment [trac_6670-jhp.patch](tarball://root/attachments/some-uuid/ticket6670/trac_6670-jhp.patch) by @jhpalmieri created at 2011-07-28 22:46:49
 
 
 
@@ -688,7 +688,7 @@ archive/issue_comments_054796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54796",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -706,7 +706,7 @@ archive/issue_comments_054797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54797",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -724,7 +724,7 @@ archive/issue_comments_054798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6670#issuecomment-54798",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

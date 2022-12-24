@@ -14,7 +14,7 @@ archive/issues_001113.json:
     "title": "Delete a file to fix an example involving the sage latex mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1113",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -54,7 +54,7 @@ archive/issue_comments_006726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1113#issuecomment-6726",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_006727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1113#issuecomment-6727",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

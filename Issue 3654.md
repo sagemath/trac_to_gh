@@ -14,7 +14,7 @@ archive/issues_003654.json:
     "title": "[with patch, needs review] Deprecation warning function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3654",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: cwitty
@@ -63,16 +63,16 @@ Michael
 archive/issue_comments_025837.json:
 ```json
 {
-    "body": "Attachment [sage-3654-deprecation.patch](tarball://root/attachments/some-uuid/ticket3654/sage-3654-deprecation.patch) by jason created at 2008-08-25 20:35:33",
+    "body": "Attachment [sage-3654-deprecation.patch](tarball://root/attachments/some-uuid/ticket3654/sage-3654-deprecation.patch) by @jasongrout created at 2008-08-25 20:35:33",
     "created_at": "2008-08-25T20:35:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25837",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [sage-3654-deprecation.patch](tarball://root/attachments/some-uuid/ticket3654/sage-3654-deprecation.patch) by jason created at 2008-08-25 20:35:33
+Attachment [sage-3654-deprecation.patch](tarball://root/attachments/some-uuid/ticket3654/sage-3654-deprecation.patch) by @jasongrout created at 2008-08-25 20:35:33
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_025838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3654",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25838",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

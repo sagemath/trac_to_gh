@@ -3,7 +3,7 @@
 archive/issues_008945.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  was cremona\n\nIt's possible to create elliptic curves over QQ by giving a Cremona label, e.g. `EllipticCurve('225a1')`, or a short form which gives you the optimal curve, `EllipticCurve('225a')`. It's also possible to create weight 2 newforms using a similar constructor, `Newform('225a')` etc.\n\nThe problem is that they don't match! For instance:\n\n```\nsage: EllipticCurve('225c').aplist(50)                              \n[-1, 0, 0, 0, 4, 2, 2, 4, 0, 2, 0, 10, -10, -4, 8]\nsage: f = Newform('225c', names='a'); [f[p] for p in prime_range(50)]\n[0, 0, 0, -5, 0, -5, 0, -1, 0, 0, -7, 10, 0, -5, 0]\n```\n\n\nThis is pretty embarrasing, particularly because abelian varieties go with newforms rather than with elliptic curves, meaning that `AbelianVariety('225c')` should be the same object as `EllipticCurve('225c')` but it isn't!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8945\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @williamstein @JohnCremona\n\nIt's possible to create elliptic curves over QQ by giving a Cremona label, e.g. `EllipticCurve('225a1')`, or a short form which gives you the optimal curve, `EllipticCurve('225a')`. It's also possible to create weight 2 newforms using a similar constructor, `Newform('225a')` etc.\n\nThe problem is that they don't match! For instance:\n\n```\nsage: EllipticCurve('225c').aplist(50)                              \n[-1, 0, 0, 0, 4, 2, 2, 4, 0, 2, 0, 10, -10, -4, 8]\nsage: f = Newform('225c', names='a'); [f[p] for p in prime_range(50)]\n[0, 0, 0, -5, 0, -5, 0, -1, 0, 0, -7, 10, 0, -5, 0]\n```\n\n\nThis is pretty embarrasing, particularly because abelian varieties go with newforms rather than with elliptic curves, meaning that `AbelianVariety('225c')` should be the same object as `EllipticCurve('225c')` but it isn't!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8945\n\n",
     "created_at": "2010-05-10T17:01:33Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_008945.json:
     "title": "Cremona labels messed up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8945",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  was cremona
+CC:  @williamstein @JohnCremona
 
 It's possible to create elliptic curves over QQ by giving a Cremona label, e.g. `EllipticCurve('225a1')`, or a short form which gives you the optimal curve, `EllipticCurve('225a')`. It's also possible to create weight 2 newforms using a similar constructor, `Newform('225a')` etc.
 
@@ -51,7 +51,7 @@ archive/issue_comments_082357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8945#issuecomment-82357",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_082358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8945#issuecomment-82358",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_082359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8945#issuecomment-82359",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_082360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8945#issuecomment-82360",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_082361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8945#issuecomment-82361",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

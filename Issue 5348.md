@@ -3,7 +3,7 @@
 archive/issues_005348.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nImplements:\n-  sage -combinat qselect <myguards>\n-  sage -combinat qselect -n <myguards>\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5348\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nImplements:\n-  sage -combinat qselect <myguards>\n-  sage -combinat qselect -n <myguards>\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5348\n\n",
     "created_at": "2009-02-23T09:29:29Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005348.json:
     "title": "Implements guard selection in sage -combinat qselect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5348",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5348
 archive/issue_comments_041205.json:
 ```json
 {
-    "body": "Attachment [sage-combinat.patch](tarball://root/attachments/some-uuid/ticket5348/sage-combinat.patch) by nthiery created at 2009-02-23 09:29:47",
+    "body": "Attachment [sage-combinat.patch](tarball://root/attachments/some-uuid/ticket5348/sage-combinat.patch) by @nthiery created at 2009-02-23 09:29:47",
     "created_at": "2009-02-23T09:29:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5348#issuecomment-41205",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [sage-combinat.patch](tarball://root/attachments/some-uuid/ticket5348/sage-combinat.patch) by nthiery created at 2009-02-23 09:29:47
+Attachment [sage-combinat.patch](tarball://root/attachments/some-uuid/ticket5348/sage-combinat.patch) by @nthiery created at 2009-02-23 09:29:47
 
 
 
@@ -60,7 +60,7 @@ archive/issue_comments_041206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5348#issuecomment-41206",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

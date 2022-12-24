@@ -14,7 +14,7 @@ archive/issues_006324.json:
     "title": "optional doctest failure -- sloane functions and gap database",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6324",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -51,7 +51,7 @@ archive/issue_comments_050474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6324#issuecomment-50474",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_050475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6324#issuecomment-50475",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_050476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6324#issuecomment-50476",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_050477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6324#issuecomment-50477",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005763.json:
 ```json
 {
-    "body": "CC:  burcin mhansen was\n\nKeywords: pynac symbolics _polynomial_ constructor\n\nThe attached patch adds conversion to polynomial rings.  Two doctests fail at this time; they rely on being able to convert to CDF and ComplexField(100).  I didn't want them to get forgotten so I left them in.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5763\n\n",
+    "body": "CC:  @burcin @mwhansen @williamstein\n\nKeywords: pynac symbolics _polynomial_ constructor\n\nThe attached patch adds conversion to polynomial rings.  Two doctests fail at this time; they rely on being able to convert to CDF and ComplexField(100).  I didn't want them to get forgotten so I left them in.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5763\n\n",
     "created_at": "2009-04-11T21:40:01Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_005763.json:
     "title": "[with patch, needs review] pynac -- add _polynomial_ conversion constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5763",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-CC:  burcin mhansen was
+CC:  @burcin @mwhansen @williamstein
 
 Keywords: pynac symbolics _polynomial_ constructor
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5763
 archive/issue_comments_045046.json:
 ```json
 {
-    "body": "Attachment [trac_5763-symbolic-polynomial.patch](tarball://root/attachments/some-uuid/ticket5763/trac_5763-symbolic-polynomial.patch) by burcin created at 2009-04-12 09:25:09\n\nThanks Nick!\n\nThe patch looks great, I am looking at the doctests right now. \n\nNote that #5753 fixes the coercion of constants to pynac, so you can use `is_a_constant` in the .is_constant() function.\n\nI will see what I can do about the doctest failures, and hopefully post a patch fixing them soon.",
+    "body": "Attachment [trac_5763-symbolic-polynomial.patch](tarball://root/attachments/some-uuid/ticket5763/trac_5763-symbolic-polynomial.patch) by @burcin created at 2009-04-12 09:25:09\n\nThanks Nick!\n\nThe patch looks great, I am looking at the doctests right now. \n\nNote that #5753 fixes the coercion of constants to pynac, so you can use `is_a_constant` in the .is_constant() function.\n\nI will see what I can do about the doctest failures, and hopefully post a patch fixing them soon.",
     "created_at": "2009-04-12T09:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5763#issuecomment-45046",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5763-symbolic-polynomial.patch](tarball://root/attachments/some-uuid/ticket5763/trac_5763-symbolic-polynomial.patch) by burcin created at 2009-04-12 09:25:09
+Attachment [trac_5763-symbolic-polynomial.patch](tarball://root/attachments/some-uuid/ticket5763/trac_5763-symbolic-polynomial.patch) by @burcin created at 2009-04-12 09:25:09
 
 Thanks Nick!
 
@@ -65,7 +65,7 @@ archive/issue_comments_045047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5763#issuecomment-45047",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_045048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5763#issuecomment-45048",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_045049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5763#issuecomment-45049",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_045052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5763#issuecomment-45052",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_045053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5763#issuecomment-45053",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

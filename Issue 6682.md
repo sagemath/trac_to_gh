@@ -3,7 +3,7 @@
 archive/issues_006682.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mvngu kini\n\nThis involves at least fixing the documentation build process and trac to support utf-8. Possibly other components as well. \n\nDiscussion at http://groups.google.com/group/sage-devel/browse_thread/thread/ff129ae1c62d5a78\n\nIssue created by migration from https://trac.sagemath.org/ticket/6682\n\n",
+    "body": "Assignee: tbd\n\nCC:  mvngu @kini\n\nThis involves at least fixing the documentation build process and trac to support utf-8. Possibly other components as well. \n\nDiscussion at http://groups.google.com/group/sage-devel/browse_thread/thread/ff129ae1c62d5a78\n\nIssue created by migration from https://trac.sagemath.org/ticket/6682\n\n",
     "created_at": "2009-08-07T07:03:17Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_006682.json:
     "title": "Support non-ASCII characters in Sage sources",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6682",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
 
-CC:  mvngu kini
+CC:  mvngu @kini
 
 This involves at least fixing the documentation build process and trac to support utf-8. Possibly other components as well. 
 
@@ -41,7 +41,7 @@ archive/issue_comments_054947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6682#issuecomment-54947",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -54,16 +54,16 @@ Script to prepend coding to .py(x) files.  Not a patch.
 archive/issue_comments_054948.json:
 ```json
 {
-    "body": "Attachment [prependify.py](tarball://root/attachments/some-uuid/ticket6682/prependify.py) by mpatel created at 2010-01-21 04:47:22\n\nFrom my brief experience with Unicode in SageNB sources (#7249 adds them to doctests), we may just need to\n\n* Prepend `# -*- coding: utf-8 -*-` to every .py file.  I assume we should do this for .pyx files, too.  I've attached a [attachment:prependify.py script] that can do this, although I'm sure there are more succinct ways.\n\n* Use `unicode` strings for docstrings that contain non-ASCII Unicode characters.  For example,\n\n```python\ndef f(n):\n    u\"\"\"\n    Transmogrifies ``n``, heinously. \u263a\n    \"\"\"\n    return transmogrify(n, algorithm='heinous')\n```\n\n\nNote: At #8000, Minh suggested polling sage-devel about allowing non-ASCII characters in Sage library code.  I'll try to do this soon.",
+    "body": "Attachment [prependify.py](tarball://root/attachments/some-uuid/ticket6682/prependify.py) by @qed777 created at 2010-01-21 04:47:22\n\nFrom my brief experience with Unicode in SageNB sources (#7249 adds them to doctests), we may just need to\n\n* Prepend `# -*- coding: utf-8 -*-` to every .py file.  I assume we should do this for .pyx files, too.  I've attached a [attachment:prependify.py script] that can do this, although I'm sure there are more succinct ways.\n\n* Use `unicode` strings for docstrings that contain non-ASCII Unicode characters.  For example,\n\n```python\ndef f(n):\n    u\"\"\"\n    Transmogrifies ``n``, heinously. \u263a\n    \"\"\"\n    return transmogrify(n, algorithm='heinous')\n```\n\n\nNote: At #8000, Minh suggested polling sage-devel about allowing non-ASCII characters in Sage library code.  I'll try to do this soon.",
     "created_at": "2010-01-21T04:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6682#issuecomment-54948",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [prependify.py](tarball://root/attachments/some-uuid/ticket6682/prependify.py) by mpatel created at 2010-01-21 04:47:22
+Attachment [prependify.py](tarball://root/attachments/some-uuid/ticket6682/prependify.py) by @qed777 created at 2010-01-21 04:47:22
 
 From my brief experience with Unicode in SageNB sources (#7249 adds them to doctests), we may just need to
 
@@ -94,7 +94,7 @@ archive/issue_comments_054949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6682#issuecomment-54949",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_054950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6682#issuecomment-54950",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_054951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6682#issuecomment-54951",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_054952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6682#issuecomment-54952",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

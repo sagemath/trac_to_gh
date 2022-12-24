@@ -3,7 +3,7 @@
 archive/issues_004773.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: w = random_matrix(GF(3),3,4)\nsage: w.determinant()\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4773\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: w = random_matrix(GF(3),3,4)\nsage: w.determinant()\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4773\n\n",
     "created_at": "2008-12-12T19:34:29Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004773.json:
     "title": "determinants of non-square matrices over GF(p) (p odd) should raise an error -- instead they silently give nonsense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4773",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4773
 archive/issue_comments_036148.json:
 ```json
 {
-    "body": "Attachment [trac_4773.patch](tarball://root/attachments/some-uuid/ticket4773/trac_4773.patch) by AlexGhitza created at 2008-12-12 22:27:38\n\nTrivial patch is attached.",
+    "body": "Attachment [trac_4773.patch](tarball://root/attachments/some-uuid/ticket4773/trac_4773.patch) by @aghitza created at 2008-12-12 22:27:38\n\nTrivial patch is attached.",
     "created_at": "2008-12-12T22:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4773#issuecomment-36148",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_4773.patch](tarball://root/attachments/some-uuid/ticket4773/trac_4773.patch) by AlexGhitza created at 2008-12-12 22:27:38
+Attachment [trac_4773.patch](tarball://root/attachments/some-uuid/ticket4773/trac_4773.patch) by @aghitza created at 2008-12-12 22:27:38
 
 Trivial patch is attached.
 

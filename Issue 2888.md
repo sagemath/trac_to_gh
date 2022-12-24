@@ -3,7 +3,7 @@
 archive/issues_002888.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: slice\n\nThe following should return [] but it throws an exception instead:\n\n\n```\nsage: M = matrix(3, 4, range(12))\nsage: M[0:3, 2:2]\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/opt/sage-3.0.alpha2/devel/sage-main/<ipython console> in <module>()\n\n/opt/sage-3.0.alpha2/devel/sage-main/matrix0.pyx in sage.matrix.matrix0.Matrix.__getitem__()\n\n<type 'exceptions.ValueError'>: max() arg is an empty sequence\n```\n\n\nSame problem if I try M[0:0, 0:0].  This is an obstacle in doing #2616, since submatrix() does handle these cases properly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2888\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: slice\n\nThe following should return [] but it throws an exception instead:\n\n\n```\nsage: M = matrix(3, 4, range(12))\nsage: M[0:3, 2:2]\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/opt/sage-3.0.alpha2/devel/sage-main/<ipython console> in <module>()\n\n/opt/sage-3.0.alpha2/devel/sage-main/matrix0.pyx in sage.matrix.matrix0.Matrix.__getitem__()\n\n<type 'exceptions.ValueError'>: max() arg is an empty sequence\n```\n\n\nSame problem if I try M[0:0, 0:0].  This is an obstacle in doing #2616, since submatrix() does handle these cases properly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2888\n\n",
     "created_at": "2008-04-12T00:47:43Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002888.json:
     "title": "matrix slicing fails in degenerate cases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2888",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: slice
 
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2888
 archive/issue_comments_019857.json:
 ```json
 {
-    "body": "Changing assignee from was to dfdeshom.",
+    "body": "Changing assignee from @williamstein to @dfdeshom.",
     "created_at": "2008-04-12T16:47:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2888#issuecomment-19857",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Changing assignee from was to dfdeshom.
+Changing assignee from @williamstein to @dfdeshom.
 
 
 
@@ -70,16 +70,16 @@ Changing assignee from was to dfdeshom.
 archive/issue_comments_019858.json:
 ```json
 {
-    "body": "Attachment [2888.patch](tarball://root/attachments/some-uuid/ticket2888/2888.patch) by dfdeshom created at 2008-04-13 03:08:37\n\npatch against alpha3",
+    "body": "Attachment [2888.patch](tarball://root/attachments/some-uuid/ticket2888/2888.patch) by @dfdeshom created at 2008-04-13 03:08:37\n\npatch against alpha3",
     "created_at": "2008-04-13T03:08:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2888#issuecomment-19858",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2888.patch](tarball://root/attachments/some-uuid/ticket2888/2888.patch) by dfdeshom created at 2008-04-13 03:08:37
+Attachment [2888.patch](tarball://root/attachments/some-uuid/ticket2888/2888.patch) by @dfdeshom created at 2008-04-13 03:08:37
 
 patch against alpha3
 
@@ -95,7 +95,7 @@ archive/issue_comments_019859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2888#issuecomment-19859",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_019860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2888#issuecomment-19860",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -160,16 +160,16 @@ Michael
 archive/issue_comments_019862.json:
 ```json
 {
-    "body": "Attachment [2888-incoming-alpha4.patch](tarball://root/attachments/some-uuid/ticket2888/2888-incoming-alpha4.patch) by dfdeshom created at 2008-04-13 04:37:02\n\npatch against upcoming alpha release",
+    "body": "Attachment [2888-incoming-alpha4.patch](tarball://root/attachments/some-uuid/ticket2888/2888-incoming-alpha4.patch) by @dfdeshom created at 2008-04-13 04:37:02\n\npatch against upcoming alpha release",
     "created_at": "2008-04-13T04:37:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2888#issuecomment-19862",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2888-incoming-alpha4.patch](tarball://root/attachments/some-uuid/ticket2888/2888-incoming-alpha4.patch) by dfdeshom created at 2008-04-13 04:37:02
+Attachment [2888-incoming-alpha4.patch](tarball://root/attachments/some-uuid/ticket2888/2888-incoming-alpha4.patch) by @dfdeshom created at 2008-04-13 04:37:02
 
 patch against upcoming alpha release
 

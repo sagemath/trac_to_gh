@@ -3,7 +3,7 @@
 archive/issues_007974.json:
 ```json
 {
-    "body": "Assignee: was\n\n`hg_sage.diff()` silently appends to a preceding patch file of the same name rather than overwriting or warning of appending/overwriting.  This is due to the -o option used in implementing the command.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7974\n\n",
+    "body": "Assignee: @williamstein\n\n`hg_sage.diff()` silently appends to a preceding patch file of the same name rather than overwriting or warning of appending/overwriting.  This is due to the -o option used in implementing the command.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7974\n\n",
     "created_at": "2010-01-18T09:07:55Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_007974.json:
     "user": "gaer"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 `hg_sage.diff()` silently appends to a preceding patch file of the same name rather than overwriting or warning of appending/overwriting.  This is due to the -o option used in implementing the command.
 
@@ -37,7 +37,7 @@ archive/issue_comments_069565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7974#issuecomment-69565",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_069566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7974#issuecomment-69566",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_069567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7974#issuecomment-69567",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_069568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7974#issuecomment-69568",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_069569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7974#issuecomment-69569",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

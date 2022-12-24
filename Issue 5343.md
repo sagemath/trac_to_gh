@@ -3,7 +3,7 @@
 archive/issues_005343.json:
 ```json
 {
-    "body": "Assignee: schilly\n\nAfter updating to Trac 0.11.3, the login link takes the user to the front page instead of the page they were looking at when they tried to login. It's annoying to go back and refresh to add some comments to an issue you were looking at.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5343\n\n",
+    "body": "Assignee: @haraldschilly\n\nAfter updating to Trac 0.11.3, the login link takes the user to the front page instead of the page they were looking at when they tried to login. It's annoying to go back and refresh to add some comments to an issue you were looking at.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5343\n\n",
     "created_at": "2009-02-22T20:54:07Z",
     "labels": [
         "website/wiki",
@@ -14,10 +14,10 @@ archive/issues_005343.json:
     "title": "trac login redirects to the front page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5343",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: schilly
+Assignee: @haraldschilly
 
 After updating to Trac 0.11.3, the login link takes the user to the front page instead of the page they were looking at when they tried to login. It's annoying to go back and refresh to add some comments to an issue you were looking at.
 
@@ -55,7 +55,7 @@ archive/issue_comments_041156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5343#issuecomment-41156",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_041157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5343#issuecomment-41157",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

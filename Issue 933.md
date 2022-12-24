@@ -3,7 +3,7 @@
 archive/issues_000933.json:
 ```json
 {
-    "body": "Assignee: was\n\nLet A = (a_{ij}) be an m x n (m <= n) (0,1)-matrix. We define a\nmatrix X = (x_{ij}) with independent indeterminates x_{ij}:\nx_{ij} = 0 iff a_{ij} = 0.\n\nSo x_{ij} only exists iff a_{ij} = 1.\n\n\nNow define a list of equations: (how do I format them properly here?)\n\n\\sum_{i=1}^{i=m} x_{ij} = 1 for j = 1, ..., n\n\n\\sum_{j=1}^{j=n} x_{ij} = 1 for i = 1, ..., m\n\nx_{ij}^2 = x_{ij} for i = 1, ..., m and j = 1, ..., n\n\n\nIt is easy to prove that the number of solutions to this equations is\nequal to the permanent of A.\n\nBased on a paper from Bernasconi, et al.: Computing Groebner Bases\nin the Boolean Setting with Applications to Counting (1997) (which\nrestricts itself to square matrices and a number of polynomials less than 255),\nwe can do the following:\n\n1) calculate a Groebner basis\n\n2) compute the number of solutions (the permanent)\n\nIf this could be done fast, it beats Ryser's algorithm (See the\narticle above).\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/933\n\n",
+    "body": "Assignee: @williamstein\n\nLet A = (a_{ij}) be an m x n (m <= n) (0,1)-matrix. We define a\nmatrix X = (x_{ij}) with independent indeterminates x_{ij}:\nx_{ij} = 0 iff a_{ij} = 0.\n\nSo x_{ij} only exists iff a_{ij} = 1.\n\n\nNow define a list of equations: (how do I format them properly here?)\n\n\\sum_{i=1}^{i=m} x_{ij} = 1 for j = 1, ..., n\n\n\\sum_{j=1}^{j=n} x_{ij} = 1 for i = 1, ..., m\n\nx_{ij}^2 = x_{ij} for i = 1, ..., m and j = 1, ..., n\n\n\nIt is easy to prove that the number of solutions to this equations is\nequal to the permanent of A.\n\nBased on a paper from Bernasconi, et al.: Computing Groebner Bases\nin the Boolean Setting with Applications to Counting (1997) (which\nrestricts itself to square matrices and a number of polynomials less than 255),\nwe can do the following:\n\n1) calculate a Groebner basis\n\n2) compute the number of solutions (the permanent)\n\nIf this could be done fast, it beats Ryser's algorithm (See the\narticle above).\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/933\n\n",
     "created_at": "2007-10-19T19:00:37Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000933.json:
     "title": "Permanents of (0,1)-matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/933",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Let A = (a_{ij}) be an m x n (m <= n) (0,1)-matrix. We define a
 matrix X = (x_{ij}) with independent indeterminates x_{ij}:
@@ -68,7 +68,7 @@ archive/issue_comments_005699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/933#issuecomment-5699",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_005700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/933#issuecomment-5700",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

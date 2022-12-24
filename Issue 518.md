@@ -14,7 +14,7 @@ archive/issues_000518.json:
     "title": "fix the indentation in monsky_washnitzer.py to be *FOUR* spaces not two.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/518",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: dmharvey
@@ -91,7 +91,7 @@ archive/issue_comments_002621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/518#issuecomment-2621",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_002622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/518#issuecomment-2622",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_002624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/518#issuecomment-2624",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,13 +180,13 @@ Resolution: fixed
 archive/issue_comments_002625.json:
 ```json
 {
-    "body": "Attachment [mw-indentation2.hg](tarball://root/attachments/some-uuid/ticket518/mw-indentation2.hg) by was created at 2007-09-07 04:31:08",
+    "body": "Attachment [mw-indentation2.hg](tarball://root/attachments/some-uuid/ticket518/mw-indentation2.hg) by @williamstein created at 2007-09-07 04:31:08",
     "created_at": "2007-09-07T04:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/518#issuecomment-2625",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [mw-indentation2.hg](tarball://root/attachments/some-uuid/ticket518/mw-indentation2.hg) by was created at 2007-09-07 04:31:08
+Attachment [mw-indentation2.hg](tarball://root/attachments/some-uuid/ticket518/mw-indentation2.hg) by @williamstein created at 2007-09-07 04:31:08

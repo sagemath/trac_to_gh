@@ -3,7 +3,7 @@
 archive/issues_007801.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee `run_notebook.py`'s `run_twisted`, which generates `DOT_SAGE/sagen_notebook.sagenb/twistedconf.tac`.\n\nMentioned [comment:ticket:7514:16 here].\n\nIssue created by migration from https://trac.sagemath.org/ticket/7801\n\n",
+    "body": "Assignee: @williamstein\n\nSee `run_notebook.py`'s `run_twisted`, which generates `DOT_SAGE/sagen_notebook.sagenb/twistedconf.tac`.\n\nMentioned [comment:ticket:7514:16 here].\n\nIssue created by migration from https://trac.sagemath.org/ticket/7801\n\n",
     "created_at": "2010-01-01T05:03:22Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007801.json:
     "title": "save_notebook is called twice on notebook shutdown",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7801",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See `run_notebook.py`'s `run_twisted`, which generates `DOT_SAGE/sagen_notebook.sagenb/twistedconf.tac`.
 
@@ -99,7 +99,7 @@ archive/issue_comments_067499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7801#issuecomment-67499",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_067500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7801#issuecomment-67500",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_067501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7801#issuecomment-67501",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008163.json:
     "title": "Upgrade to Cython 0.12.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8163",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_071818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8163#issuecomment-71818",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

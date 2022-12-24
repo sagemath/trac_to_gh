@@ -85,7 +85,7 @@ archive/issue_comments_002882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/558#issuecomment-2882",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -124,16 +124,16 @@ free_integer_pool() is also called on exit() if the attached patch is applied.
 archive/issue_comments_002883.json:
 ```json
 {
-    "body": "Attachment [6169.patch](tarball://root/attachments/some-uuid/ticket558/6169.patch) by malb created at 2007-09-06 18:26:40\n\nwork in progress for freeing the integer pool on exit",
+    "body": "Attachment [6169.patch](tarball://root/attachments/some-uuid/ticket558/6169.patch) by @malb created at 2007-09-06 18:26:40\n\nwork in progress for freeing the integer pool on exit",
     "created_at": "2007-09-06T18:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/558#issuecomment-2883",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [6169.patch](tarball://root/attachments/some-uuid/ticket558/6169.patch) by malb created at 2007-09-06 18:26:40
+Attachment [6169.patch](tarball://root/attachments/some-uuid/ticket558/6169.patch) by @malb created at 2007-09-06 18:26:40
 
 work in progress for freeing the integer pool on exit
 
@@ -144,16 +144,16 @@ work in progress for freeing the integer pool on exit
 archive/issue_comments_002884.json:
 ```json
 {
-    "body": "Attachment [6170.patch](tarball://root/attachments/some-uuid/ticket558/6170.patch) by malb created at 2007-09-06 18:48:44\n\nPatch 6170.patch makes sure no new elements are added tot he pool once its free'd.",
+    "body": "Attachment [6170.patch](tarball://root/attachments/some-uuid/ticket558/6170.patch) by @malb created at 2007-09-06 18:48:44\n\nPatch 6170.patch makes sure no new elements are added tot he pool once its free'd.",
     "created_at": "2007-09-06T18:48:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/558#issuecomment-2884",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [6170.patch](tarball://root/attachments/some-uuid/ticket558/6170.patch) by malb created at 2007-09-06 18:48:44
+Attachment [6170.patch](tarball://root/attachments/some-uuid/ticket558/6170.patch) by @malb created at 2007-09-06 18:48:44
 
 Patch 6170.patch makes sure no new elements are added tot he pool once its free'd.
 
@@ -169,7 +169,7 @@ archive/issue_comments_002885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/558#issuecomment-2885",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_002886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/558#issuecomment-2886",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_002887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/558#issuecomment-2887",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_002888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/558#issuecomment-2888",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_002889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/558#issuecomment-2889",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_002890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/558#issuecomment-2890",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -288,13 +288,13 @@ Resolution: fixed
 archive/issue_comments_002891.json:
 ```json
 {
-    "body": "Attachment [6253.patch](tarball://root/attachments/some-uuid/ticket558/6253.patch) by malb created at 2007-09-07 11:11:23",
+    "body": "Attachment [6253.patch](tarball://root/attachments/some-uuid/ticket558/6253.patch) by @malb created at 2007-09-07 11:11:23",
     "created_at": "2007-09-07T11:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/558#issuecomment-2891",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [6253.patch](tarball://root/attachments/some-uuid/ticket558/6253.patch) by malb created at 2007-09-07 11:11:23
+Attachment [6253.patch](tarball://root/attachments/some-uuid/ticket558/6253.patch) by @malb created at 2007-09-07 11:11:23

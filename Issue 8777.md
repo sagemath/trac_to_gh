@@ -3,7 +3,7 @@
 archive/issues_008777.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nHi,\n\nMaybe this is a frivolous comment, but I'd like to express my surprise at the use of \"torsion_subgroup\" to mean two very different things for an abelian variety and for an elliptic curve:\n\nsage: E=EllipticCurve('11a')\nsage: E.torsion_subgroup()\nTorsion Subgroup isomorphic to Multiplicative Abelian Group isomorphic to C5 associated to the Elliptic Curve defined by y^2 + y = x^3 - x^2 - 10*x - 20 over Rational Field\nsage: A=J0(11)\nsage: A.torsion_subgroup()\nTraceback (most recent call last):\n...\nTypeError: torsion_subgroup() takes exactly 2 arguments (1 given)\nsage: A.torsion_subgroup(5)\nFinite subgroup with invariants [5, 5] over QQ of Abelian variety J0(11) of dimension 1\nsage: A.rational_torsion_subgroup()\nTorsion subgroup of Abelian variety J0(11) of dimension 1\nsage: A.rational_torsion_subgroup().order()\n5\nsage: A.rational_torsion_subgroup().abelian_group()\nTraceback (most recent call last):\n...\nAttributeError: 'RationalTorsionSubgroup' object has no attribute 'abelian_group'\n\nI'm surprised that \"torsion_subgroup\" for an elliptic curve over Q refers to *rational* torsion while for an abelian variety over Q it refers to *all* torsion.  Further, it's frustrating to me that the rational torsion subgroup of an abelian variety over Q has an order but not the structure of an abelian group.  I'm sure that there are good reasons for this, but this end user is kind of amazed.  Before the sage session above, I used to think that elliptic curves and abelian varieties of dimension 1 were the same thing!  Live and learn....\n\nBest,\nKen Ribet\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8777\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nHi,\n\nMaybe this is a frivolous comment, but I'd like to express my surprise at the use of \"torsion_subgroup\" to mean two very different things for an abelian variety and for an elliptic curve:\n\nsage: E=EllipticCurve('11a')\nsage: E.torsion_subgroup()\nTorsion Subgroup isomorphic to Multiplicative Abelian Group isomorphic to C5 associated to the Elliptic Curve defined by y^2 + y = x^3 - x^2 - 10*x - 20 over Rational Field\nsage: A=J0(11)\nsage: A.torsion_subgroup()\nTraceback (most recent call last):\n...\nTypeError: torsion_subgroup() takes exactly 2 arguments (1 given)\nsage: A.torsion_subgroup(5)\nFinite subgroup with invariants [5, 5] over QQ of Abelian variety J0(11) of dimension 1\nsage: A.rational_torsion_subgroup()\nTorsion subgroup of Abelian variety J0(11) of dimension 1\nsage: A.rational_torsion_subgroup().order()\n5\nsage: A.rational_torsion_subgroup().abelian_group()\nTraceback (most recent call last):\n...\nAttributeError: 'RationalTorsionSubgroup' object has no attribute 'abelian_group'\n\nI'm surprised that \"torsion_subgroup\" for an elliptic curve over Q refers to *rational* torsion while for an abelian variety over Q it refers to *all* torsion.  Further, it's frustrating to me that the rational torsion subgroup of an abelian variety over Q has an order but not the structure of an abelian group.  I'm sure that there are good reasons for this, but this end user is kind of amazed.  Before the sage session above, I used to think that elliptic curves and abelian varieties of dimension 1 were the same thing!  Live and learn....\n\nBest,\nKen Ribet\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8777\n\n",
     "created_at": "2010-04-27T04:42:42Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_008777.json:
     "title": "unify the definitions and semantics for elliptic curve and abelian variety torsion subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8777",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -67,7 +67,7 @@ archive/issue_comments_080364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8777#issuecomment-80364",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

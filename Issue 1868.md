@@ -3,7 +3,7 @@
 archive/issues_001868.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis spkg needs cmake-2.4.7.spkg (already in experimental), vtk-5.0.3.spkg, setuptools-0.6.spkg\nand wxPython-2.8.7.1 (already in experimental as wxPython-linux-2.8.7.1.spk).\n\n```\nThe following is working on Fedora 7/8 (and Ubuntu?):\n\n > Dependencies for Sage:\n >\n\n >   - http://www.wxpython.org wxPython-2.6.x or higher for the UI\n >   - vtk-5.0.3\n >   - setuptools-0.6b\n\n1) Install wxPython-2.8.7.1:\n    http://sage.math.washington.edu/home/jsp/SPKGS/MayaVi/wxPython-2.8.7.1.spkg\n\n2) Install vtk-5.0.3:\n\n    install cmake (also an experimental spkg):\n    http://sage.math.washington.edu/home/jsp/SPKGS/MayaVi/cmake-2.4.7.spkg\n    and\n    http://sage.math.washington.edu/home/jsp/SPKGS/MayaVi/vtk-5.0.3.spkg\n\n3) Install setuptools:\n    http://sage.math.washington.edu/home/jsp/SPKGS/MayaVi/setuptools-0.6.spkg\n\n4) Install mayavi_2.0.20080117.spkg\n    http://sage.math.washington.edu/home/jsp/SPKGS/MayaVi/mayavi_2.0.20080117.spkg\n\n```\n\n\nThis new spkg will install its dependencies automagically.\n\nEventually\n\n\n```\n./sage -i mayavi_2.0.20080117\n```\n\n\nwill do the trick.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1868\n\n",
+    "body": "Assignee: @williamstein\n\nThis spkg needs cmake-2.4.7.spkg (already in experimental), vtk-5.0.3.spkg, setuptools-0.6.spkg\nand wxPython-2.8.7.1 (already in experimental as wxPython-linux-2.8.7.1.spk).\n\n```\nThe following is working on Fedora 7/8 (and Ubuntu?):\n\n > Dependencies for Sage:\n >\n\n >   - http://www.wxpython.org wxPython-2.6.x or higher for the UI\n >   - vtk-5.0.3\n >   - setuptools-0.6b\n\n1) Install wxPython-2.8.7.1:\n    http://sage.math.washington.edu/home/jsp/SPKGS/MayaVi/wxPython-2.8.7.1.spkg\n\n2) Install vtk-5.0.3:\n\n    install cmake (also an experimental spkg):\n    http://sage.math.washington.edu/home/jsp/SPKGS/MayaVi/cmake-2.4.7.spkg\n    and\n    http://sage.math.washington.edu/home/jsp/SPKGS/MayaVi/vtk-5.0.3.spkg\n\n3) Install setuptools:\n    http://sage.math.washington.edu/home/jsp/SPKGS/MayaVi/setuptools-0.6.spkg\n\n4) Install mayavi_2.0.20080117.spkg\n    http://sage.math.washington.edu/home/jsp/SPKGS/MayaVi/mayavi_2.0.20080117.spkg\n\n```\n\n\nThis new spkg will install its dependencies automagically.\n\nEventually\n\n\n```\n./sage -i mayavi_2.0.20080117\n```\n\n\nwill do the trick.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1868\n\n",
     "created_at": "2008-01-20T17:57:55Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001868.json:
     "title": "New mayavi2 package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1868",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This spkg needs cmake-2.4.7.spkg (already in experimental), vtk-5.0.3.spkg, setuptools-0.6.spkg
 and wxPython-2.8.7.1 (already in experimental as wxPython-linux-2.8.7.1.spk).
@@ -79,7 +79,7 @@ archive/issue_comments_011829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1868#issuecomment-11829",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_011830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1868#issuecomment-11830",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_011831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1868#issuecomment-11831",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

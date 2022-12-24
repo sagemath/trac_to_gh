@@ -14,7 +14,7 @@ archive/issues_002997.json:
     "title": "[with patch; needs review] notebook -- change current directory before running notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2997",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2997
 archive/issue_comments_020610.json:
 ```json
 {
-    "body": "Attachment [sage-2997.patch](tarball://root/attachments/some-uuid/ticket2997/sage-2997.patch) by was created at 2008-04-22 16:15:49",
+    "body": "Attachment [sage-2997.patch](tarball://root/attachments/some-uuid/ticket2997/sage-2997.patch) by @williamstein created at 2008-04-22 16:15:49",
     "created_at": "2008-04-22T16:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2997#issuecomment-20610",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2997.patch](tarball://root/attachments/some-uuid/ticket2997/sage-2997.patch) by was created at 2008-04-22 16:15:49
+Attachment [sage-2997.patch](tarball://root/attachments/some-uuid/ticket2997/sage-2997.patch) by @williamstein created at 2008-04-22 16:15:49
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_020611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2997#issuecomment-20611",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_020612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2997",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2997#issuecomment-20612",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

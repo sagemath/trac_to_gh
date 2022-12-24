@@ -3,7 +3,7 @@
 archive/issues_003829.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\n\n```\nsage: f = log(tan(x/2 + pi/4)) - arcsin(tan(x))\nsage: bool(f == 0)\nFalse\n```\n\n\nThis just plain disagrees with Wester's benchmarks. The function is identically zero. I'm going to go through `wester.py` and check to see if there are any more...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3829\n\n",
+    "body": "Assignee: @garyfurnish\n\n\n```\nsage: f = log(tan(x/2 + pi/4)) - arcsin(tan(x))\nsage: bool(f == 0)\nFalse\n```\n\n\nThis just plain disagrees with Wester's benchmarks. The function is identically zero. I'm going to go through `wester.py` and check to see if there are any more...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3829\n\n",
     "created_at": "2008-08-13T00:51:01Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_003829.json:
     "title": "wester.py disagrees with Wester!!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3829",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 
 ```
@@ -45,7 +45,7 @@ archive/issue_comments_027235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3829#issuecomment-27235",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -72,16 +72,16 @@ The reason the above is unfortunately not a Sage bug is that in Maxima bool(...)
 archive/issue_comments_027236.json:
 ```json
 {
-    "body": "Attachment [trac_3829-wester.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-wester.patch) by burcin created at 2009-02-08 14:57:39",
+    "body": "Attachment [trac_3829-wester.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-wester.patch) by @burcin created at 2009-02-08 14:57:39",
     "created_at": "2009-02-08T14:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3829#issuecomment-27236",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_3829-wester.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-wester.patch) by burcin created at 2009-02-08 14:57:39
+Attachment [trac_3829-wester.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-wester.patch) by @burcin created at 2009-02-08 14:57:39
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_027237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3829#issuecomment-27237",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_027238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3829#issuecomment-27238",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -128,16 +128,16 @@ Having `(NO)` in the comment is worse, because the identity is true! What should
 archive/issue_comments_027239.json:
 ```json
 {
-    "body": "Attachment [trac_3829-wester.take2.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-wester.take2.patch) by burcin created at 2009-02-09 16:51:49",
+    "body": "Attachment [trac_3829-wester.take2.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-wester.take2.patch) by @burcin created at 2009-02-09 16:51:49",
     "created_at": "2009-02-09T16:51:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3829#issuecomment-27239",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_3829-wester.take2.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-wester.take2.patch) by burcin created at 2009-02-09 16:51:49
+Attachment [trac_3829-wester.take2.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-wester.take2.patch) by @burcin created at 2009-02-09 16:51:49
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_027240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3829#issuecomment-27240",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_027241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3829#issuecomment-27241",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_027242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3829#issuecomment-27242",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_027244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3829#issuecomment-27244",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -260,16 +260,16 @@ Apply only `trac_3829-rebased.patch`, which is rebased against 4.0.
 archive/issue_comments_027245.json:
 ```json
 {
-    "body": "Attachment [trac_3829-rebased.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-rebased.patch) by AlexGhitza created at 2009-05-31 13:46:06\n\nrebased against 4.0",
+    "body": "Attachment [trac_3829-rebased.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-rebased.patch) by @aghitza created at 2009-05-31 13:46:06\n\nrebased against 4.0",
     "created_at": "2009-05-31T13:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3829#issuecomment-27245",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_3829-rebased.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-rebased.patch) by AlexGhitza created at 2009-05-31 13:46:06
+Attachment [trac_3829-rebased.patch](tarball://root/attachments/some-uuid/ticket3829/trac_3829-rebased.patch) by @aghitza created at 2009-05-31 13:46:06
 
 rebased against 4.0
 
@@ -285,7 +285,7 @@ archive/issue_comments_027246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3829#issuecomment-27246",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

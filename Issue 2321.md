@@ -3,7 +3,7 @@
 archive/issues_002321.json:
 ```json
 {
-    "body": "Assignee: was\n\ndsage switched from using dsage_server.py to using a .tac located in .sage/dsage. When we roll out the next version of sage (2.10.3) we need to remove SAGE_ROOT/local/bin/dsage_server.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2321\n\n",
+    "body": "Assignee: @williamstein\n\ndsage switched from using dsage_server.py to using a .tac located in .sage/dsage. When we roll out the next version of sage (2.10.3) we need to remove SAGE_ROOT/local/bin/dsage_server.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2321\n\n",
     "created_at": "2008-02-26T17:47:20Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002321.json:
     "title": "remove dsage_server.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2321",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 dsage switched from using dsage_server.py to using a .tac located in .sage/dsage. When we roll out the next version of sage (2.10.3) we need to remove SAGE_ROOT/local/bin/dsage_server.py.
 
@@ -59,7 +59,7 @@ archive/issue_comments_015439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2321#issuecomment-15439",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007371.json:
     "title": "rename quotient_group() to quotient() in groups/perm_gps/permgroup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7371",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: joyner
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7371
 archive/issue_comments_061764.json:
 ```json
 {
-    "body": "Attachment [trac_7371.patch](tarball://root/attachments/some-uuid/ticket7371/trac_7371.patch) by AlexGhitza created at 2009-11-01 23:13:44",
+    "body": "Attachment [trac_7371.patch](tarball://root/attachments/some-uuid/ticket7371/trac_7371.patch) by @aghitza created at 2009-11-01 23:13:44",
     "created_at": "2009-11-01T23:13:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7371#issuecomment-61764",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_7371.patch](tarball://root/attachments/some-uuid/ticket7371/trac_7371.patch) by AlexGhitza created at 2009-11-01 23:13:44
+Attachment [trac_7371.patch](tarball://root/attachments/some-uuid/ticket7371/trac_7371.patch) by @aghitza created at 2009-11-01 23:13:44
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_061765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7371#issuecomment-61765",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_061766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7371#issuecomment-61766",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_061767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7371#issuecomment-61767",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

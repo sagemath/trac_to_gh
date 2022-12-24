@@ -14,7 +14,7 @@ archive/issues_006231.json:
     "title": "Solving a system of equations ignores multiplicities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6231",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Keywords: multiplicities system of equations

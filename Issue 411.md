@@ -3,7 +3,7 @@
 archive/issues_000411.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  dmharvey@math.harvard.edu\n\nThe attached mercurial bundle has the c_lib moved into the tree and some other enhancements as well:\n\n1)  Many modifications to .hgignore to make it ignore c_lib junk and keep it from ignore .h files and .c files only under sage/\n2)  setup.py misc improvements\n3)  setup.py checks for recursive dependencies on .pyx files.  So if you have a deep includes -- i.e. a .pxi included from a .pxi, it will now include this in the age comparisons.  Unfortunately, this approximately doubles the time on a no-op build.  I don't know what other people think about this, but I'm rather freakish about knowing that my builds are reliable so I think it is worth it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/411\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  dmharvey@math.harvard.edu\n\nThe attached mercurial bundle has the c_lib moved into the tree and some other enhancements as well:\n\n1)  Many modifications to .hgignore to make it ignore c_lib junk and keep it from ignore .h files and .c files only under sage/\n2)  setup.py misc improvements\n3)  setup.py checks for recursive dependencies on .pyx files.  So if you have a deep includes -- i.e. a .pxi included from a .pxi, it will now include this in the age comparisons.  Unfortunately, this approximately doubles the time on a no-op build.  I don't know what other people think about this, but I'm rather freakish about knowing that my builds are reliable so I think it is worth it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/411\n\n",
     "created_at": "2007-08-09T02:26:12Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_000411.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  dmharvey@math.harvard.edu
 
@@ -123,7 +123,7 @@ archive/issue_comments_002028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/411#issuecomment-2028",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_002030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/411#issuecomment-2030",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -172,16 +172,16 @@ Resolution: fixed
 archive/issue_comments_002031.json:
 ```json
 {
-    "body": "Attachment [strdup.patch](tarball://root/attachments/some-uuid/ticket411/strdup.patch) by was created at 2007-08-30 00:58:04\n\nI incorporated this in.  There were some weird issues with mpz_get_pyintlong not being defined, which I fixed\nby adding back some files to ext.  Fix this correctly in the future.",
+    "body": "Attachment [strdup.patch](tarball://root/attachments/some-uuid/ticket411/strdup.patch) by @williamstein created at 2007-08-30 00:58:04\n\nI incorporated this in.  There were some weird issues with mpz_get_pyintlong not being defined, which I fixed\nby adding back some files to ext.  Fix this correctly in the future.",
     "created_at": "2007-08-30T00:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/411#issuecomment-2031",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [strdup.patch](tarball://root/attachments/some-uuid/ticket411/strdup.patch) by was created at 2007-08-30 00:58:04
+Attachment [strdup.patch](tarball://root/attachments/some-uuid/ticket411/strdup.patch) by @williamstein created at 2007-08-30 00:58:04
 
 I incorporated this in.  There were some weird issues with mpz_get_pyintlong not being defined, which I fixed
 by adding back some files to ext.  Fix this correctly in the future.

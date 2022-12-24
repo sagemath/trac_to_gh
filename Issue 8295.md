@@ -3,7 +3,7 @@
 archive/issues_008295.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\nAdds documention for new files `kazhdan_lusztig.py` and `iwahori_hecke_algebras.py` to reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8295\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nAdds documention for new files `kazhdan_lusztig.py` and `iwahori_hecke_algebras.py` to reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8295\n\n",
     "created_at": "2010-02-17T18:24:49Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008295.json:
     "title": "Documentation for Kazhdan-Lusztig polynomials and Iwahori Hecke algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8295",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8295
 archive/issue_comments_073485.json:
 ```json
 {
-    "body": "Attachment [trac_8295_doc.patch](tarball://root/attachments/some-uuid/ticket8295/trac_8295_doc.patch) by bump created at 2010-02-17 18:26:52\n\nAdd documentation for new files to reference manual",
+    "body": "Attachment [trac_8295_doc.patch](tarball://root/attachments/some-uuid/ticket8295/trac_8295_doc.patch) by @dwbump created at 2010-02-17 18:26:52\n\nAdd documentation for new files to reference manual",
     "created_at": "2010-02-17T18:26:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73485",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_8295_doc.patch](tarball://root/attachments/some-uuid/ticket8295/trac_8295_doc.patch) by bump created at 2010-02-17 18:26:52
+Attachment [trac_8295_doc.patch](tarball://root/attachments/some-uuid/ticket8295/trac_8295_doc.patch) by @dwbump created at 2010-02-17 18:26:52
 
 Add documentation for new files to reference manual
 
@@ -59,7 +59,7 @@ archive/issue_comments_073486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73486",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_073487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73487",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_073488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73488",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing component from algebra to documentation.
 archive/issue_comments_073489.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to bump.",
+    "body": "Changing assignee from @aghitza to @dwbump.",
     "created_at": "2010-02-18T00:10:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73489",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Changing assignee from AlexGhitza to bump.
+Changing assignee from @aghitza to @dwbump.
 
 
 

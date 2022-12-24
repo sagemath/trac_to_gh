@@ -14,7 +14,7 @@ archive/issues_007439.json:
     "title": "optional spkg nauty-24b7.p1  fails to build with sage-4.2.1 and ubuntu 9.10 (gcc-4.4.1)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7439",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -82,7 +82,7 @@ archive/issue_comments_062602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62602",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_062607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62607",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_062608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62608",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_062609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62609",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_062610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62610",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_062611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62611",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_062612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62612",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_062613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62613",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002900.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jhpalmieri jason\n\nSage's current version of matplotlib has a bug, as reported by Fabio Tonti (http://groups.google.com/group/sage-support/browse_thread/thread/a41e9ab2b158c41e#):\n\n```\nsage: from pylab import *\nsage: imshow([[(0,0,0)]])\nsage: savefig('foo.png')\nTraceback (most recent call last):\n...\nNameError: global name 'npy' is not defined \n```\n\nIt looks like this bug has been fixed in 0.91.2 (although I haven't actually tried it); we should upgrade.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2900\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri @jasongrout\n\nSage's current version of matplotlib has a bug, as reported by Fabio Tonti (http://groups.google.com/group/sage-support/browse_thread/thread/a41e9ab2b158c41e#):\n\n```\nsage: from pylab import *\nsage: imshow([[(0,0,0)]])\nsage: savefig('foo.png')\nTraceback (most recent call last):\n...\nNameError: global name 'npy' is not defined \n```\n\nIt looks like this bug has been fixed in 0.91.2 (although I haven't actually tried it); we should upgrade.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2900\n\n",
     "created_at": "2008-04-12T16:22:28Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_002900.json:
 ```
 Assignee: mabshoff
 
-CC:  jhpalmieri jason
+CC:  @jhpalmieri @jasongrout
 
 Sage's current version of matplotlib has a bug, as reported by Fabio Tonti (http://groups.google.com/group/sage-support/browse_thread/thread/a41e9ab2b158c41e#):
 
@@ -148,7 +148,7 @@ archive/issue_comments_019987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2900#issuecomment-19987",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,16 +171,16 @@ foo.png is attached.
 archive/issue_comments_019988.json:
 ```json
 {
-    "body": "Attachment [foo.png](tarball://root/attachments/some-uuid/ticket2900/foo.png) by kcrisman created at 2009-09-15 17:31:10",
+    "body": "Attachment [foo.png](tarball://root/attachments/some-uuid/ticket2900/foo.png) by @kcrisman created at 2009-09-15 17:31:10",
     "created_at": "2009-09-15T17:31:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2900#issuecomment-19988",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [foo.png](tarball://root/attachments/some-uuid/ticket2900/foo.png) by kcrisman created at 2009-09-15 17:31:10
+Attachment [foo.png](tarball://root/attachments/some-uuid/ticket2900/foo.png) by @kcrisman created at 2009-09-15 17:31:10
 
 
 
@@ -194,7 +194,7 @@ archive/issue_comments_019989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2900#issuecomment-19989",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -207,16 +207,16 @@ Depends on #7059
 archive/issue_comments_019990.json:
 ```json
 {
-    "body": "Attachment [trac_2900-imshow-save.patch](tarball://root/attachments/some-uuid/ticket2900/trac_2900-imshow-save.patch) by kcrisman created at 2009-09-29 14:41:48\n\nThe patch verifies this is fixed, and uses the new (better) syntax from #7059.",
+    "body": "Attachment [trac_2900-imshow-save.patch](tarball://root/attachments/some-uuid/ticket2900/trac_2900-imshow-save.patch) by @kcrisman created at 2009-09-29 14:41:48\n\nThe patch verifies this is fixed, and uses the new (better) syntax from #7059.",
     "created_at": "2009-09-29T14:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2900#issuecomment-19990",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_2900-imshow-save.patch](tarball://root/attachments/some-uuid/ticket2900/trac_2900-imshow-save.patch) by kcrisman created at 2009-09-29 14:41:48
+Attachment [trac_2900-imshow-save.patch](tarball://root/attachments/some-uuid/ticket2900/trac_2900-imshow-save.patch) by @kcrisman created at 2009-09-29 14:41:48
 
 The patch verifies this is fixed, and uses the new (better) syntax from #7059.
 
@@ -232,7 +232,7 @@ archive/issue_comments_019991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2900#issuecomment-19991",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_019992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2900",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2900#issuecomment-19992",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

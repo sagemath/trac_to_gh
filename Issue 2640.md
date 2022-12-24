@@ -14,7 +14,7 @@ archive/issues_002640.json:
     "title": "add sage-edu to list of mailing lists",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2640",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -68,7 +68,7 @@ archive/issue_comments_018145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2640#issuecomment-18145",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

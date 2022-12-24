@@ -3,7 +3,7 @@
 archive/issues_007613.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was robertwb georgsweber kevin.stueve ohanar victor leif\n\nKeywords: twin primes counting, sieving\n\nTwin primes are pairs of primes that differ by 2.  Currently the twin prime counting function, which counts the number of twin primes less than a given x, is not implemented in Sage, Mathematica, or other computer algebra systems.  Where it is calculated, the method used is mere sieving.\n\nUse the approach of #7013 and #7539 to make a competitive (if not the only available as general purpose software) implementation of the twin prime counting function.  It should be at least 1000-10000 times faster than mere sieving.\n\n(possible names are twin_prime_pi and prime_pi2).\n\nImplement next_twin_prime, is_twin_prime, is_chen_prime, is_semi_prime functions\n\nOther types of primes such as cousin primes, prime triplets, and sexy primes could also be considered.\n\nMaybe could also try to compute partial sums of Brun's constant or prime harmonics sums.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7613\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @robertwb georgsweber kevin.stueve @ohanar victor @nexttime\n\nKeywords: twin primes counting, sieving\n\nTwin primes are pairs of primes that differ by 2.  Currently the twin prime counting function, which counts the number of twin primes less than a given x, is not implemented in Sage, Mathematica, or other computer algebra systems.  Where it is calculated, the method used is mere sieving.\n\nUse the approach of #7013 and #7539 to make a competitive (if not the only available as general purpose software) implementation of the twin prime counting function.  It should be at least 1000-10000 times faster than mere sieving.\n\n(possible names are twin_prime_pi and prime_pi2).\n\nImplement next_twin_prime, is_twin_prime, is_chen_prime, is_semi_prime functions\n\nOther types of primes such as cousin primes, prime triplets, and sexy primes could also be considered.\n\nMaybe could also try to compute partial sums of Brun's constant or prime harmonics sums.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7613\n\n",
     "created_at": "2009-12-06T12:11:06Z",
     "labels": [
         "number theory",
@@ -17,9 +17,9 @@ archive/issues_007613.json:
     "user": "kevin.stueve"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was robertwb georgsweber kevin.stueve ohanar victor leif
+CC:  @williamstein @robertwb georgsweber kevin.stueve @ohanar victor @nexttime
 
 Keywords: twin primes counting, sieving
 
@@ -139,7 +139,7 @@ archive/issue_comments_065014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7613#issuecomment-65014",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

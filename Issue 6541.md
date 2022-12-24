@@ -14,7 +14,7 @@ archive/issues_006541.json:
     "title": "[with patch, needs review] functions numerator and denominator for univariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6541",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 Assignee: tbd
@@ -206,7 +206,7 @@ archive/issue_comments_053324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6541#issuecomment-53324",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -219,16 +219,16 @@ The attached patch is identical to that posted above by the author, except rebas
 archive/issue_comments_053325.json:
 ```json
 {
-    "body": "Attachment [trac_6541-num-den.patch](tarball://root/attachments/some-uuid/ticket6541/trac_6541-num-den.patch) by kcrisman created at 2009-10-27 14:26:24",
+    "body": "Attachment [trac_6541-num-den.patch](tarball://root/attachments/some-uuid/ticket6541/trac_6541-num-den.patch) by @kcrisman created at 2009-10-27 14:26:24",
     "created_at": "2009-10-27T14:26:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6541#issuecomment-53325",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6541-num-den.patch](tarball://root/attachments/some-uuid/ticket6541/trac_6541-num-den.patch) by kcrisman created at 2009-10-27 14:26:24
+Attachment [trac_6541-num-den.patch](tarball://root/attachments/some-uuid/ticket6541/trac_6541-num-den.patch) by @kcrisman created at 2009-10-27 14:26:24
 
 
 
@@ -260,7 +260,7 @@ archive/issue_comments_053327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6541#issuecomment-53327",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

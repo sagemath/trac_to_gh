@@ -14,7 +14,7 @@ archive/issues_005559.json:
     "title": "roots issue on fedora core 32-bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5559",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

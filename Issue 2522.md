@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2522
 archive/issue_comments_017202.json:
 ```json
 {
-    "body": "Attachment [trac_2522.patch](tarball://root/attachments/some-uuid/ticket2522/trac_2522.patch) by was created at 2009-02-16 04:31:30\n\nOne just has to set\n\n```\nCOPYFILE_DISABLE=true\n```\n\non OS X.",
+    "body": "Attachment [trac_2522.patch](tarball://root/attachments/some-uuid/ticket2522/trac_2522.patch) by @williamstein created at 2009-02-16 04:31:30\n\nOne just has to set\n\n```\nCOPYFILE_DISABLE=true\n```\n\non OS X.",
     "created_at": "2009-02-16T04:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2522#issuecomment-17202",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_2522.patch](tarball://root/attachments/some-uuid/ticket2522/trac_2522.patch) by was created at 2009-02-16 04:31:30
+Attachment [trac_2522.patch](tarball://root/attachments/some-uuid/ticket2522/trac_2522.patch) by @williamstein created at 2009-02-16 04:31:30
 
 One just has to set
 

@@ -14,7 +14,7 @@ archive/issues_004216.json:
     "title": "[with patch, needs review] use sage-native-execute to run 'convert' in animate.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4216",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4216
 archive/issue_comments_030634.json:
 ```json
 {
-    "body": "Attachment [4216.patch](tarball://root/attachments/some-uuid/ticket4216/4216.patch) by jhpalmieri created at 2008-09-29 18:16:58",
+    "body": "Attachment [4216.patch](tarball://root/attachments/some-uuid/ticket4216/4216.patch) by @jhpalmieri created at 2008-09-29 18:16:58",
     "created_at": "2008-09-29T18:16:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4216#issuecomment-30634",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [4216.patch](tarball://root/attachments/some-uuid/ticket4216/4216.patch) by jhpalmieri created at 2008-09-29 18:16:58
+Attachment [4216.patch](tarball://root/attachments/some-uuid/ticket4216/4216.patch) by @jhpalmieri created at 2008-09-29 18:16:58
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_030638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4216#issuecomment-30638",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

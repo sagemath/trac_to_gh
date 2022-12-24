@@ -13,7 +13,7 @@ archive/issues_000062.json:
     "title": "(sparse) boolean matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/62",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -36,7 +36,7 @@ archive/issue_comments_000328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/62",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/62#issuecomment-328",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -54,7 +54,7 @@ archive/issue_comments_000329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/62",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/62#issuecomment-329",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

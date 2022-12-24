@@ -3,7 +3,7 @@
 archive/issues_002472.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  ncalexan\n\nKeywords: floor truncate ceil ceiling parent integer\n\nI think `floor` and `ceil` and `truncate` should return integers.\n\n\n```\nsage: floor(2).parent()\nInteger Ring\nsage: floor(2.0).parent()\nInteger Ring\nsage: floor(RIF(2.0)).parent()\nReal Interval Field with 53 bits of precision\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2472\n\n",
+    "body": "Assignee: somebody\n\nCC:  @ncalexan\n\nKeywords: floor truncate ceil ceiling parent integer\n\nI think `floor` and `ceil` and `truncate` should return integers.\n\n\n```\nsage: floor(2).parent()\nInteger Ring\nsage: floor(2.0).parent()\nInteger Ring\nsage: floor(RIF(2.0)).parent()\nReal Interval Field with 53 bits of precision\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2472\n\n",
     "created_at": "2008-03-11T20:58:33Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_002472.json:
     "title": "what parent should floor return?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2472",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: somebody
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: floor truncate ceil ceiling parent integer
 
@@ -52,7 +52,7 @@ archive/issue_comments_016738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16738",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_016741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16741",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_016742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16742",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_016743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16743",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_016744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16744",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

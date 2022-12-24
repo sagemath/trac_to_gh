@@ -3,7 +3,7 @@
 archive/issues_008355.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\n\n```\nsage: hue(.5,.5,.5)\nTraceback (click to the left of this block for traceback)\n...\nTypeError: can't multiply sequence by non-int of type 'float'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8355\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\n\n```\nsage: hue(.5,.5,.5)\nTraceback (click to the left of this block for traceback)\n...\nTypeError: can't multiply sequence by non-int of type 'float'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8355\n\n",
     "created_at": "2010-02-25T00:25:00Z",
     "labels": [
         "graphics",
@@ -17,9 +17,9 @@ archive/issues_008355.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 
 ```
@@ -118,7 +118,7 @@ archive/issue_comments_074627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74627",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_074628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74628",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_074629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74629",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_074632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74632",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_074633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74633",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_074634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74634",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -264,16 +264,16 @@ hue doctest which applies to sage-4.6.1.rc1
 archive/issue_comments_074635.json:
 ```json
 {
-    "body": "Attachment [8355-hue.2.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.2.patch) by wjp created at 2011-01-09 23:15:11\n\nLooks good to me.",
+    "body": "Attachment [8355-hue.2.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.2.patch) by @wjp created at 2011-01-09 23:15:11\n\nLooks good to me.",
     "created_at": "2011-01-09T23:15:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74635",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [8355-hue.2.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.2.patch) by wjp created at 2011-01-09 23:15:11
+Attachment [8355-hue.2.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.2.patch) by @wjp created at 2011-01-09 23:15:11
 
 Looks good to me.
 
@@ -289,7 +289,7 @@ archive/issue_comments_074636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74636",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_074637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74637",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_074638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74638",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_074639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74639",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_074640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74640",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_074641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74641",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -392,16 +392,16 @@ Use only this patch
 archive/issue_comments_074642.json:
 ```json
 {
-    "body": "Attachment [8355-hue.2.2.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.2.2.patch) by kcrisman created at 2011-01-17 21:01:16\n\nThis should fix this.  Apply only 8355-hue.2.2.patch",
+    "body": "Attachment [8355-hue.2.2.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.2.2.patch) by @kcrisman created at 2011-01-17 21:01:16\n\nThis should fix this.  Apply only 8355-hue.2.2.patch",
     "created_at": "2011-01-17T21:01:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74642",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [8355-hue.2.2.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.2.2.patch) by kcrisman created at 2011-01-17 21:01:16
+Attachment [8355-hue.2.2.patch](tarball://root/attachments/some-uuid/ticket8355/8355-hue.2.2.patch) by @kcrisman created at 2011-01-17 21:01:16
 
 This should fix this.  Apply only 8355-hue.2.2.patch
 
@@ -417,7 +417,7 @@ archive/issue_comments_074643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74643",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_074644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74644",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_074646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8355#issuecomment-74646",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

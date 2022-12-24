@@ -3,7 +3,7 @@
 archive/issues_006149.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  cremona\n\nBuilding the documentation currently raises something like 50 errors because of incorrect ReST formatting in docstrings (mostly \"unexpected indent\" or similar). We should probably have a policy of not merging patches that cause documentation building errors, just as we don't merge patches that cause doctest failures.\n\nI have found and fixed most of the errors in 4.0.rc1 (some with great difficulty, because the ReST parser is very unreliable at telling you where the error is arising in a given file).\n\nI know this is a bit last-minute, but the patch below doesn't actually change any code at all, so it might not be too late to include it in the final 4.0 release.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6149\n\n",
+    "body": "Assignee: tba\n\nCC:  @JohnCremona\n\nBuilding the documentation currently raises something like 50 errors because of incorrect ReST formatting in docstrings (mostly \"unexpected indent\" or similar). We should probably have a policy of not merging patches that cause documentation building errors, just as we don't merge patches that cause doctest failures.\n\nI have found and fixed most of the errors in 4.0.rc1 (some with great difficulty, because the ReST parser is very unreliable at telling you where the error is arising in a given file).\n\nI know this is a bit last-minute, but the patch below doesn't actually change any code at all, so it might not be too late to include it in the final 4.0 release.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6149\n\n",
     "created_at": "2009-05-28T13:05:02Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_006149.json:
     "title": "Fix ReST glitches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6149",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 Assignee: tba
 
-CC:  cremona
+CC:  @JohnCremona
 
 Building the documentation currently raises something like 50 errors because of incorrect ReST formatting in docstrings (mostly "unexpected indent" or similar). We should probably have a policy of not merging patches that cause documentation building errors, just as we don't merge patches that cause doctest failures.
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6149
 archive/issue_comments_049079.json:
 ```json
 {
-    "body": "Attachment [trac_6149.patch](tarball://root/attachments/some-uuid/ticket6149/trac_6149.patch) by davidloeffler created at 2009-05-28 13:15:25\n\npatch against 4.0.rc1",
+    "body": "Attachment [trac_6149.patch](tarball://root/attachments/some-uuid/ticket6149/trac_6149.patch) by @loefflerd created at 2009-05-28 13:15:25\n\npatch against 4.0.rc1",
     "created_at": "2009-05-28T13:15:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6149#issuecomment-49079",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6149.patch](tarball://root/attachments/some-uuid/ticket6149/trac_6149.patch) by davidloeffler created at 2009-05-28 13:15:25
+Attachment [trac_6149.patch](tarball://root/attachments/some-uuid/ticket6149/trac_6149.patch) by @loefflerd created at 2009-05-28 13:15:25
 
 patch against 4.0.rc1
 
@@ -63,7 +63,7 @@ archive/issue_comments_049080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6149#issuecomment-49080",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -78,16 +78,16 @@ John: I've cced you here, since you say you have suffered from this too :-) Any 
 archive/issue_comments_049081.json:
 ```json
 {
-    "body": "Attachment [trac_6149-2.patch](tarball://root/attachments/some-uuid/ticket6149/trac_6149-2.patch) by mhansen created at 2009-05-28 16:31:29",
+    "body": "Attachment [trac_6149-2.patch](tarball://root/attachments/some-uuid/ticket6149/trac_6149-2.patch) by @mwhansen created at 2009-05-28 16:31:29",
     "created_at": "2009-05-28T16:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6149#issuecomment-49081",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6149-2.patch](tarball://root/attachments/some-uuid/ticket6149/trac_6149-2.patch) by mhansen created at 2009-05-28 16:31:29
+Attachment [trac_6149-2.patch](tarball://root/attachments/some-uuid/ticket6149/trac_6149-2.patch) by @mwhansen created at 2009-05-28 16:31:29
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_049082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6149#issuecomment-49082",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_049083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6149#issuecomment-49083",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -134,16 +134,16 @@ Changing status from new to assigned.
 archive/issue_comments_049084.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-05-28T16:32:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6149#issuecomment-49084",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -157,7 +157,7 @@ archive/issue_comments_049085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6149#issuecomment-49085",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_049086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6149#issuecomment-49086",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_049087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6149#issuecomment-49087",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_049088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6149#issuecomment-49088",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

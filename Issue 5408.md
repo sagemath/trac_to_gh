@@ -3,7 +3,7 @@
 archive/issues_005408.json:
 ```json
 {
-    "body": "Assignee: rbeezer\n\nKeywords: kernel, PARI\n\nUsing the PARI kernel algorithm returns a PARI object which is unpacked as a list with the rows given as tuples.  When this is passed to hermite_form() the object is not of the right type.\n\n\n```\nsage: a = matrix(ZZ, [[1,2],[2,4]])\nsage: a.kernel(algorithm='pari')\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/rob/.sage/temp/wave/8545/_home_rob__sage_init_sage_0.py in <module>()\n\n/opt/sage-3.3/local/lib/python2.5/site-packages/sage/matrix/matrix_integer_dense.so in sage.matrix.matrix_integer_dense.Matrix_integer_dense.kernel (sage/matrix/matrix_integer_dense.c:16256)()\n\nAttributeError: 'list' object has no attribute 'hermite_form'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5408\n\n",
+    "body": "Assignee: @rbeezer\n\nKeywords: kernel, PARI\n\nUsing the PARI kernel algorithm returns a PARI object which is unpacked as a list with the rows given as tuples.  When this is passed to hermite_form() the object is not of the right type.\n\n\n```\nsage: a = matrix(ZZ, [[1,2],[2,4]])\nsage: a.kernel(algorithm='pari')\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/rob/.sage/temp/wave/8545/_home_rob__sage_init_sage_0.py in <module>()\n\n/opt/sage-3.3/local/lib/python2.5/site-packages/sage/matrix/matrix_integer_dense.so in sage.matrix.matrix_integer_dense.Matrix_integer_dense.kernel (sage/matrix/matrix_integer_dense.c:16256)()\n\nAttributeError: 'list' object has no attribute 'hermite_form'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5408\n\n",
     "created_at": "2009-03-01T06:26:56Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005408.json:
     "title": "Matrix kernel with PARI algorithm passes wrong type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5408",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: rbeezer
+Assignee: @rbeezer
 
 Keywords: kernel, PARI
 
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5408
 archive/issue_comments_041800.json:
 ```json
 {
-    "body": "Attachment [trac_5408_pari_kernel_matrix.patch](tarball://root/attachments/some-uuid/ticket5408/trac_5408_pari_kernel_matrix.patch) by rbeezer created at 2009-03-01 23:50:38",
+    "body": "Attachment [trac_5408_pari_kernel_matrix.patch](tarball://root/attachments/some-uuid/ticket5408/trac_5408_pari_kernel_matrix.patch) by @rbeezer created at 2009-03-01 23:50:38",
     "created_at": "2009-03-01T23:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5408#issuecomment-41800",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_5408_pari_kernel_matrix.patch](tarball://root/attachments/some-uuid/ticket5408/trac_5408_pari_kernel_matrix.patch) by rbeezer created at 2009-03-01 23:50:38
+Attachment [trac_5408_pari_kernel_matrix.patch](tarball://root/attachments/some-uuid/ticket5408/trac_5408_pari_kernel_matrix.patch) by @rbeezer created at 2009-03-01 23:50:38
 
 
 
@@ -72,7 +72,7 @@ archive/issue_comments_041801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5408#issuecomment-41801",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_041802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5408#issuecomment-41802",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003783.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  ncalexan simonking\n\nThe cached_method decorator from #3781 could use some improvements:\n\n\n```\n<mhansen> Does anyone feel up for reviewing #3781 for me?\n<ncalexan> I'll look at it, one moment.  I've wanted this for a while.\n<mhansen> Awesome.  It doesn't work on C extension types though since they don't have a __dict__.  This could be done by storing the cache in the decorator object with a weakref though.\n<ncalexan> The problem is much more complicated than this.\n<ncalexan> Okay, there are other problems too, like un-hashable arguments will break it.\n<mhansen> Yep\n<ncalexan> And there is no way to clear the cache...\n<ncalexan> And the tests don't actually demonstrate that the cache is workin.\n<ncalexan> (One could touch the cache with an incorrect answer, then verify it is \"correctly\" returning that value)\n<ncalexan> For what it is, though, it's fine.  It will hurt nothing -- shall I review positive?\n<mhansen> If you could, that'd be great.  I do know it's limitations, but there are some big patches going in that depend on it.  I'll make a ticket with your comments for improvement.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3783\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @ncalexan simonking\n\nThe cached_method decorator from #3781 could use some improvements:\n\n\n```\n<mhansen> Does anyone feel up for reviewing #3781 for me?\n<ncalexan> I'll look at it, one moment.  I've wanted this for a while.\n<mhansen> Awesome.  It doesn't work on C extension types though since they don't have a __dict__.  This could be done by storing the cache in the decorator object with a weakref though.\n<ncalexan> The problem is much more complicated than this.\n<ncalexan> Okay, there are other problems too, like un-hashable arguments will break it.\n<mhansen> Yep\n<ncalexan> And there is no way to clear the cache...\n<ncalexan> And the tests don't actually demonstrate that the cache is workin.\n<ncalexan> (One could touch the cache with an incorrect answer, then verify it is \"correctly\" returning that value)\n<ncalexan> For what it is, though, it's fine.  It will hurt nothing -- shall I review positive?\n<mhansen> If you could, that'd be great.  I do know it's limitations, but there are some big patches going in that depend on it.  I'll make a ticket with your comments for improvement.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3783\n\n",
     "created_at": "2008-08-06T23:31:20Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_003783.json:
     "title": "cached_method could use some improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3783",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  ncalexan simonking
+CC:  @ncalexan simonking
 
 The cached_method decorator from #3781 could use some improvements:
 
@@ -55,7 +55,7 @@ archive/issue_comments_026891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3783#issuecomment-26891",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_026892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3783#issuecomment-26892",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_026893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3783#issuecomment-26893",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_026894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3783#issuecomment-26894",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_026895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3783#issuecomment-26895",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_026896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3783#issuecomment-26896",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

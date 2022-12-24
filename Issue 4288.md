@@ -3,7 +3,7 @@
 archive/issues_004288.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was\n\na test is failing, with _magma_init_(), and I wasn't able to fix it, it seems the _magma_().name() implementation is buggy:\n\n```\nFile \"/usr/local/sage-3.1.2/sage/tmp/ell_point.py\", line 1289:\n    sage: P._magma_init_()\nExpected:\n    'EllipticCurve([GF(17)!1,GF(17)!16])![13,4]'\nGot:\n    '_sage_[2]![_sage_[3],_sage_[4]]'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4288\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\na test is failing, with _magma_init_(), and I wasn't able to fix it, it seems the _magma_().name() implementation is buggy:\n\n```\nFile \"/usr/local/sage-3.1.2/sage/tmp/ell_point.py\", line 1289:\n    sage: P._magma_init_()\nExpected:\n    'EllipticCurve([GF(17)!1,GF(17)!16])![13,4]'\nGot:\n    '_sage_[2]![_sage_[3],_sage_[4]]'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4288\n\n",
     "created_at": "2008-10-14T21:11:19Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_004288.json:
     "title": "_magma_init_ bug elliptic curve points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4288",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was
+CC:  @williamstein
 
 a test is failing, with _magma_init_(), and I wasn't able to fix it, it seems the _magma_().name() implementation is buggy:
 
@@ -49,7 +49,7 @@ archive/issue_comments_031387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31387",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -62,16 +62,16 @@ This is related to #4277.
 archive/issue_comments_031388.json:
 ```json
 {
-    "body": "Attachment [sage-trac4288.patch](tarball://root/attachments/some-uuid/ticket4288/sage-trac4288.patch) by cremona created at 2008-10-19 19:50:37\n\nThe attached patch seems to do the trick.  It's wrong to use \"magma_name\" since that just gives somethin like \"sage[0]\", while \"_magma_init_()\" return a string which can be passed to a fresh magma session to create the equivalent object.\n\n#4277 is ok now too.",
+    "body": "Attachment [sage-trac4288.patch](tarball://root/attachments/some-uuid/ticket4288/sage-trac4288.patch) by @JohnCremona created at 2008-10-19 19:50:37\n\nThe attached patch seems to do the trick.  It's wrong to use \"magma_name\" since that just gives somethin like \"sage[0]\", while \"_magma_init_()\" return a string which can be passed to a fresh magma session to create the equivalent object.\n\n#4277 is ok now too.",
     "created_at": "2008-10-19T19:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31388",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac4288.patch](tarball://root/attachments/some-uuid/ticket4288/sage-trac4288.patch) by cremona created at 2008-10-19 19:50:37
+Attachment [sage-trac4288.patch](tarball://root/attachments/some-uuid/ticket4288/sage-trac4288.patch) by @JohnCremona created at 2008-10-19 19:50:37
 
 The attached patch seems to do the trick.  It's wrong to use "magma_name" since that just gives somethin like "sage[0]", while "_magma_init_()" return a string which can be passed to a fresh magma session to create the equivalent object.
 
@@ -89,7 +89,7 @@ archive/issue_comments_031389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31389",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

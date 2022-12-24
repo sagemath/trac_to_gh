@@ -114,16 +114,16 @@ Michael
 archive/issue_comments_013889.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to mhansen.",
+    "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2008-09-04T00:50:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13889",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from cwitty to mhansen.
+Changing assignee from cwitty to @mwhansen.
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_013890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13890",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_013891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13891",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_013892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13892",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -262,16 +262,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_013896.json:
 ```json
 {
-    "body": "Attachment [trac_2119.patch](tarball://root/attachments/some-uuid/ticket2119/trac_2119.patch) by mhansen created at 2010-07-11 00:44:28",
+    "body": "Attachment [trac_2119.patch](tarball://root/attachments/some-uuid/ticket2119/trac_2119.patch) by @mwhansen created at 2010-07-11 00:44:28",
     "created_at": "2010-07-11T00:44:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13896",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2119.patch](tarball://root/attachments/some-uuid/ticket2119/trac_2119.patch) by mhansen created at 2010-07-11 00:44:28
+Attachment [trac_2119.patch](tarball://root/attachments/some-uuid/ticket2119/trac_2119.patch) by @mwhansen created at 2010-07-11 00:44:28
 
 
 
@@ -285,7 +285,7 @@ archive/issue_comments_013897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13897",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_013898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13898",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_013901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13901",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_013902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13902",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

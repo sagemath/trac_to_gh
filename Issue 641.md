@@ -14,7 +14,7 @@ archive/issues_000641.json:
     "title": "from sage.all import * for spyx files/cython notebook cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/641",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: boothby
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/641
 archive/issue_comments_003309.json:
 ```json
 {
-    "body": "Changing assignee from boothby to robertwb.",
+    "body": "Changing assignee from boothby to @robertwb.",
     "created_at": "2007-09-12T04:51:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/641#issuecomment-3309",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from boothby to robertwb.
+Changing assignee from boothby to @robertwb.
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_003310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/641#issuecomment-3310",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -71,16 +71,16 @@ Changing status from new to assigned.
 archive/issue_comments_003311.json:
 ```json
 {
-    "body": "Attachment [cython-sage-all.patch](tarball://root/attachments/some-uuid/ticket641/cython-sage-all.patch) by robertwb created at 2007-09-12 04:51:10",
+    "body": "Attachment [cython-sage-all.patch](tarball://root/attachments/some-uuid/ticket641/cython-sage-all.patch) by @robertwb created at 2007-09-12 04:51:10",
     "created_at": "2007-09-12T04:51:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/641#issuecomment-3311",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [cython-sage-all.patch](tarball://root/attachments/some-uuid/ticket641/cython-sage-all.patch) by robertwb created at 2007-09-12 04:51:10
+Attachment [cython-sage-all.patch](tarball://root/attachments/some-uuid/ticket641/cython-sage-all.patch) by @robertwb created at 2007-09-12 04:51:10
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_003312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/641#issuecomment-3312",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_003313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/641#issuecomment-3313",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

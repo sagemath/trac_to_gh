@@ -3,7 +3,7 @@
 archive/issues_004065.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\n\n```\nsage: var('y')\nsage: plot3d(x^2*y,(-1,1),(-1,1))\n```\n\n\nThis takes for ever, even when run as the first command after restarting a notebook.  On the other hand, it takes about 1 second to do\n\n\n```\nsage: var('y')\nsage: plot3d(sin(sin(x) + y^2),(-1,1),(-1,1))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4065\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n\n```\nsage: var('y')\nsage: plot3d(x^2*y,(-1,1),(-1,1))\n```\n\n\nThis takes for ever, even when run as the first command after restarting a notebook.  On the other hand, it takes about 1 second to do\n\n\n```\nsage: var('y')\nsage: plot3d(sin(sin(x) + y^2),(-1,1),(-1,1))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4065\n\n",
     "created_at": "2008-09-05T01:20:27Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_004065.json:
     "title": "plot3d takes \"forever\" to plot x^2*y",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4065",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 
 ```
@@ -53,7 +53,7 @@ archive/issue_comments_029331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29331",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_029332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29332",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_029334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29334",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_029335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29335",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_029338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29338",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_029339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29339",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_029340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29340",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -300,16 +300,16 @@ Changing status from closed to reopened.
 archive/issue_comments_029341.json:
 ```json
 {
-    "body": "Changing assignee from was to jwmerrill.",
+    "body": "Changing assignee from @williamstein to @jicama.",
     "created_at": "2008-09-09T20:58:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29341",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Changing assignee from was to jwmerrill.
+Changing assignee from @williamstein to @jicama.
 
 
 
@@ -323,7 +323,7 @@ archive/issue_comments_029342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29342",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 

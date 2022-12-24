@@ -3,7 +3,7 @@
 archive/issues_007964.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe vertical axis labels look weird here.  What is \"1e\"?\n\n\n```\nsage: plot(abs(exp(i*x)), (x,1,2))\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7964\n\n",
+    "body": "Assignee: @williamstein\n\nThe vertical axis labels look weird here.  What is \"1e\"?\n\n\n```\nsage: plot(abs(exp(i*x)), (x,1,2))\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7964\n\n",
     "created_at": "2010-01-17T10:31:15Z",
     "labels": [
         "graphics",
@@ -13,10 +13,10 @@ archive/issues_007964.json:
     "title": "axis labels in weird scientific notation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7964",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The vertical axis labels look weird here.  What is "1e"?
 
@@ -43,7 +43,7 @@ archive/issue_comments_069490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7964#issuecomment-69490",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_069491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7964#issuecomment-69491",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

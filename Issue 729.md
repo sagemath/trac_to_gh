@@ -3,7 +3,7 @@
 archive/issues_000729.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\nThe rich comparison operators __eq__ and __neq__ are preferred in Python.  See [http://docs.python.org/ref/customization.html](http://docs.python.org/ref/customization.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/729\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThe rich comparison operators __eq__ and __neq__ are preferred in Python.  See [http://docs.python.org/ref/customization.html](http://docs.python.org/ref/customization.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/729\n\n",
     "created_at": "2007-09-21T17:56:12Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000729.json:
     "title": "graphs: Implement __eq__ and __neq__ rather than __cmp__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/729",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -39,7 +39,7 @@ archive/issue_comments_004278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/729#issuecomment-4278",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_004279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/729#issuecomment-4279",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_004283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/729#issuecomment-4283",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_004284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/729#issuecomment-4284",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_004285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/729#issuecomment-4285",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

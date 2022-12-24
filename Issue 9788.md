@@ -3,7 +3,7 @@
 archive/issues_009788.json:
 ```json
 {
-    "body": "Assignee: malb\n\nSee http://ask.sagemath.org/question/55/implementing-different-groebner_basis-algorithms\n\nIssue created by migration from https://trac.sagemath.org/ticket/9789\n\n",
+    "body": "Assignee: @malb\n\nSee http://ask.sagemath.org/question/55/implementing-different-groebner_basis-algorithms\n\nIssue created by migration from https://trac.sagemath.org/ticket/9789\n\n",
     "created_at": "2010-08-23T19:57:10Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_009788.json:
     "title": "Add support for degree bounds of Groebner bases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9788",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 See http://ask.sagemath.org/question/55/implementing-different-groebner_basis-algorithms
 
@@ -37,7 +37,7 @@ archive/issue_comments_096109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9788#issuecomment-96109",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_096110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9788#issuecomment-96110",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

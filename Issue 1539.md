@@ -14,7 +14,7 @@ archive/issues_001539.json:
     "title": "bdist of sage should include devel/doc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1539",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -45,7 +45,7 @@ archive/issue_comments_009827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1539#issuecomment-9827",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_009828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1539#issuecomment-9828",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,16 +132,16 @@ Changing priority from major to blocker.
 archive/issue_comments_009829.json:
 ```json
 {
-    "body": "Attachment [scripts-1539.patch](tarball://root/attachments/some-uuid/ticket1539/scripts-1539.patch) by was created at 2008-08-26 09:16:19",
+    "body": "Attachment [scripts-1539.patch](tarball://root/attachments/some-uuid/ticket1539/scripts-1539.patch) by @williamstein created at 2008-08-26 09:16:19",
     "created_at": "2008-08-26T09:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1539#issuecomment-9829",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-1539.patch](tarball://root/attachments/some-uuid/ticket1539/scripts-1539.patch) by was created at 2008-08-26 09:16:19
+Attachment [scripts-1539.patch](tarball://root/attachments/some-uuid/ticket1539/scripts-1539.patch) by @williamstein created at 2008-08-26 09:16:19
 
 
 

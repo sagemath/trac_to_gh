@@ -3,7 +3,7 @@
 archive/issues_008457.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri mvngu\n\nMostly of this sort:\n\n```\ncategories/examples/finite_semigroups.rst:6: (WARNING/2) error while formatting signature for sage.categories.examples.finite_semigroups.LeftRegularBand.Element.wrapped_class.center: arg is not a module, class, method, function, traceback, frame, or code object\n```\n\nThis may happen because `wrapped_class = str` is [an alias of] a builtin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8457\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri mvngu\n\nMostly of this sort:\n\n```\ncategories/examples/finite_semigroups.rst:6: (WARNING/2) error while formatting signature for sage.categories.examples.finite_semigroups.LeftRegularBand.Element.wrapped_class.center: arg is not a module, class, method, function, traceback, frame, or code object\n```\n\nThis may happen because `wrapped_class = str` is [an alias of] a builtin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8457\n\n",
     "created_at": "2010-03-06T10:10:37Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008457.json:
     "title": "Yet more annoying warnings when building the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8457",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri mvngu
+CC:  @jhpalmieri mvngu
 
 Mostly of this sort:
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8457
 archive/issue_comments_076122.json:
 ```json
 {
-    "body": "Attachment [trac_8457-doc_skip_builtins.patch](tarball://root/attachments/some-uuid/ticket8457/trac_8457-doc_skip_builtins.patch) by mpatel created at 2010-03-06 14:35:15\n\nSkip builtins.  Depends on #7448.",
+    "body": "Attachment [trac_8457-doc_skip_builtins.patch](tarball://root/attachments/some-uuid/ticket8457/trac_8457-doc_skip_builtins.patch) by @qed777 created at 2010-03-06 14:35:15\n\nSkip builtins.  Depends on #7448.",
     "created_at": "2010-03-06T14:35:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8457#issuecomment-76122",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8457-doc_skip_builtins.patch](tarball://root/attachments/some-uuid/ticket8457/trac_8457-doc_skip_builtins.patch) by mpatel created at 2010-03-06 14:35:15
+Attachment [trac_8457-doc_skip_builtins.patch](tarball://root/attachments/some-uuid/ticket8457/trac_8457-doc_skip_builtins.patch) by @qed777 created at 2010-03-06 14:35:15
 
 Skip builtins.  Depends on #7448.
 
@@ -65,7 +65,7 @@ archive/issue_comments_076123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8457#issuecomment-76123",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -80,16 +80,16 @@ Note: It clashes with the first at #8452.
 archive/issue_comments_076124.json:
 ```json
 {
-    "body": "Attachment [trac_8457-doc_skip_builtins.2.patch](tarball://root/attachments/some-uuid/ticket8457/trac_8457-doc_skip_builtins.2.patch) by mpatel created at 2010-03-09 04:53:39\n\nRebased vs. #8452.",
+    "body": "Attachment [trac_8457-doc_skip_builtins.2.patch](tarball://root/attachments/some-uuid/ticket8457/trac_8457-doc_skip_builtins.2.patch) by @qed777 created at 2010-03-09 04:53:39\n\nRebased vs. #8452.",
     "created_at": "2010-03-09T04:53:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8457#issuecomment-76124",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8457-doc_skip_builtins.2.patch](tarball://root/attachments/some-uuid/ticket8457/trac_8457-doc_skip_builtins.2.patch) by mpatel created at 2010-03-09 04:53:39
+Attachment [trac_8457-doc_skip_builtins.2.patch](tarball://root/attachments/some-uuid/ticket8457/trac_8457-doc_skip_builtins.2.patch) by @qed777 created at 2010-03-09 04:53:39
 
 Rebased vs. #8452.
 
@@ -105,7 +105,7 @@ archive/issue_comments_076125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8457#issuecomment-76125",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_076126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8457#issuecomment-76126",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_076127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8457#issuecomment-76127",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

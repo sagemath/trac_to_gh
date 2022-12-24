@@ -3,7 +3,7 @@
 archive/issues_009316.json:
 ```json
 {
-    "body": "Assignee: wjp\n\nCC:  leif\n\nMany people have reported a \"File not found\" error that is reported at the end of \"make test\" when *in fact* a timeout occurred. \n\nThis is caused by some weird code introduced in #7993 (see sage-test):\n\n```\n...\n    s = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd) + ' \"%s\"' % F\n    err = os.system(s)\n    # On unix systems, the return value of os.system has the process return\n    # value in the second byte.\n    err = err // 256\n\n    # Check the process exit code that sage-doctest returns\n\n    if err == 1: # process exit code 1: File not found\n        failed.append(sage_test_command(F)+\" # File not found\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9316\n\n",
+    "body": "Assignee: @wjp\n\nCC:  @nexttime\n\nMany people have reported a \"File not found\" error that is reported at the end of \"make test\" when *in fact* a timeout occurred. \n\nThis is caused by some weird code introduced in #7993 (see sage-test):\n\n```\n...\n    s = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd) + ' \"%s\"' % F\n    err = os.system(s)\n    # On unix systems, the return value of os.system has the process return\n    # value in the second byte.\n    err = err // 256\n\n    # Check the process exit code that sage-doctest returns\n\n    if err == 1: # process exit code 1: File not found\n        failed.append(sage_test_command(F)+\" # File not found\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9316\n\n",
     "created_at": "2010-06-23T04:19:18Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009316.json:
     "title": "Spurious (?) \"# File not found\" error at end of doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9316",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: wjp
+Assignee: @wjp
 
-CC:  leif
+CC:  @nexttime
 
 Many people have reported a "File not found" error that is reported at the end of "make test" when *in fact* a timeout occurred. 
 
@@ -56,7 +56,7 @@ archive/issue_comments_087783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87783",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_087785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87785",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_087786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87786",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_087787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87787",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_087789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87789",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_087790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87790",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -267,16 +267,16 @@ I submitted a new patch that uses exit code 6 instead of 5, since it turns out 5
 archive/issue_comments_087791.json:
 ```json
 {
-    "body": "Attachment [scripts9316_timeout_rebased.patch](tarball://root/attachments/some-uuid/ticket9316/scripts9316_timeout_rebased.patch) by wjp created at 2010-07-06 20:59:47\n\nrebased after #8641 and #9243",
+    "body": "Attachment [scripts9316_timeout_rebased.patch](tarball://root/attachments/some-uuid/ticket9316/scripts9316_timeout_rebased.patch) by @wjp created at 2010-07-06 20:59:47\n\nrebased after #8641 and #9243",
     "created_at": "2010-07-06T20:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87791",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [scripts9316_timeout_rebased.patch](tarball://root/attachments/some-uuid/ticket9316/scripts9316_timeout_rebased.patch) by wjp created at 2010-07-06 20:59:47
+Attachment [scripts9316_timeout_rebased.patch](tarball://root/attachments/some-uuid/ticket9316/scripts9316_timeout_rebased.patch) by @wjp created at 2010-07-06 20:59:47
 
 rebased after #8641 and #9243
 
@@ -287,16 +287,16 @@ rebased after #8641 and #9243
 archive/issue_comments_087792.json:
 ```json
 {
-    "body": "Attachment [scripts9316_timeout.patch](tarball://root/attachments/some-uuid/ticket9316/scripts9316_timeout.patch) by wjp created at 2010-07-06 21:03:09",
+    "body": "Attachment [scripts9316_timeout.patch](tarball://root/attachments/some-uuid/ticket9316/scripts9316_timeout.patch) by @wjp created at 2010-07-06 21:03:09",
     "created_at": "2010-07-06T21:03:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87792",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [scripts9316_timeout.patch](tarball://root/attachments/some-uuid/ticket9316/scripts9316_timeout.patch) by wjp created at 2010-07-06 21:03:09
+Attachment [scripts9316_timeout.patch](tarball://root/attachments/some-uuid/ticket9316/scripts9316_timeout.patch) by @wjp created at 2010-07-06 21:03:09
 
 
 
@@ -310,7 +310,7 @@ archive/issue_comments_087793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87793",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_087794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87794",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_087795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87795",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_087796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87796",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_087798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87798",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_087799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87799",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

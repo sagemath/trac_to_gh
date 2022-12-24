@@ -14,7 +14,7 @@ archive/issues_002034.json:
     "title": "{{{__floordiv__}}} should be part of coercion modell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2034",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2034
 archive/issue_comments_013159.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2009-07-11T13:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2034#issuecomment-13159",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_013160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2034#issuecomment-13160",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_013161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2034#issuecomment-13161",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_013162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2034#issuecomment-13162",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_013165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2034#issuecomment-13165",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_013166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2034#issuecomment-13166",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_013167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2034#issuecomment-13167",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_013168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2034#issuecomment-13168",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_013169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2034",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2034#issuecomment-13169",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

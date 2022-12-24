@@ -14,7 +14,7 @@ archive/issues_006490.json:
     "title": "upgrade lisp ecl to version 9.6.2 which has been released",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6490",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -41,7 +41,7 @@ archive/issue_comments_052474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6490#issuecomment-52474",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

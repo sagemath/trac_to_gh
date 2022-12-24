@@ -3,7 +3,7 @@
 archive/issues_002344.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  robertwb\n\nCurrently Sage ships with Python 2.5.1, but Python 2.5.2 was released on Feb 22, 2008, so we should try it out. \n\nhttp://python.org/download/\n\nIssue created by migration from https://trac.sagemath.org/ticket/2344\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nCurrently Sage ships with Python 2.5.1, but Python 2.5.2 was released on Feb 22, 2008, so we should try it out. \n\nhttp://python.org/download/\n\nIssue created by migration from https://trac.sagemath.org/ticket/2344\n\n",
     "created_at": "2008-02-28T06:04:33Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_002344.json:
     "title": "python -- upgrade to version 2.5.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2344",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  robertwb
+CC:  @robertwb
 
 Currently Sage ships with Python 2.5.1, but Python 2.5.2 was released on Feb 22, 2008, so we should try it out. 
 
@@ -374,7 +374,7 @@ archive/issue_comments_015700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2344#issuecomment-15700",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

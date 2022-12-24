@@ -3,7 +3,7 @@
 archive/issues_008048.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  saliola jasonbhill\n\nFrom [sage-release](http://groups.google.com/group/sage-release/msg/cf028395e198f4cf):\n\n```\n>> I'm not saying that this wiki page is not a useful resource, but I don't\n>> have the time or patience to go through this at each release.\n\n> I'm too am frustrated by the wiki at times. Sometimes it won't allow\n> me to save edits containing some strings, because it deemed those\n> strings to be a sign of spam content or something. I would then spend\n> minutes figuring out how to get the wiki to accept the edits or\n> rewrite my edits.\n\n> Anyway, if you want, you could send information according to the\n> template below to sage-release and I'd update the wiki with the\n> information you supply.\n\n> OS version:\n> Machine name:\n> Architecture:\n> 32/64 bit:\n> RAM:\n> Compiler:\n> Build:\n> Doctest:\n\nMaybe you should add a command to sage, e.g.,\n\n  sage: _build_report()\n\nor\n\n  sage -buildreport\n\nthat runs a script, gathers relevant information, then submits it\nsomewhere.  The resulting submission could then be summarized on a web\npage.   This is a perfect example of where it would be far, far better\nto spend time writing some code than doing something manually.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8048\n\n",
+    "body": "Assignee: tbd\n\nCC:  @saliola jasonbhill\n\nFrom [sage-release](http://groups.google.com/group/sage-release/msg/cf028395e198f4cf):\n\n```\n>> I'm not saying that this wiki page is not a useful resource, but I don't\n>> have the time or patience to go through this at each release.\n\n> I'm too am frustrated by the wiki at times. Sometimes it won't allow\n> me to save edits containing some strings, because it deemed those\n> strings to be a sign of spam content or something. I would then spend\n> minutes figuring out how to get the wiki to accept the edits or\n> rewrite my edits.\n\n> Anyway, if you want, you could send information according to the\n> template below to sage-release and I'd update the wiki with the\n> information you supply.\n\n> OS version:\n> Machine name:\n> Architecture:\n> 32/64 bit:\n> RAM:\n> Compiler:\n> Build:\n> Doctest:\n\nMaybe you should add a command to sage, e.g.,\n\n  sage: _build_report()\n\nor\n\n  sage -buildreport\n\nthat runs a script, gathers relevant information, then submits it\nsomewhere.  The resulting submission could then be summarized on a web\npage.   This is a perfect example of where it would be far, far better\nto spend time writing some code than doing something manually.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8048\n\n",
     "created_at": "2010-01-24T02:16:43Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_008048.json:
 ```
 Assignee: tbd
 
-CC:  saliola jasonbhill
+CC:  @saliola jasonbhill
 
 From [sage-release](http://groups.google.com/group/sage-release/msg/cf028395e198f4cf):
 
@@ -353,7 +353,7 @@ archive/issue_comments_070349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70349",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_070351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70351",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_070353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70353",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_070356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70356",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -715,7 +715,7 @@ archive/issue_comments_070361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70361",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

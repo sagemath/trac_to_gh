@@ -14,7 +14,7 @@ archive/issues_007097.json:
     "title": "bug in polynomial factorization over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7097",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
@@ -83,7 +83,7 @@ archive/issue_comments_058723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58723",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_058724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58724",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_058725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58725",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_058726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58726",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_058727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58727",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_058728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58728",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_058729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58729",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -392,16 +392,16 @@ Cheers,
 archive/issue_comments_058730.json:
 ```json
 {
-    "body": "Attachment [trac_7097-nffactor.patch](tarball://root/attachments/some-uuid/ticket7097/trac_7097-nffactor.patch) by cremona created at 2009-12-13 17:52:54\n\nApplies to 4.3.rc0",
+    "body": "Attachment [trac_7097-nffactor.patch](tarball://root/attachments/some-uuid/ticket7097/trac_7097-nffactor.patch) by @JohnCremona created at 2009-12-13 17:52:54\n\nApplies to 4.3.rc0",
     "created_at": "2009-12-13T17:52:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58730",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7097-nffactor.patch](tarball://root/attachments/some-uuid/ticket7097/trac_7097-nffactor.patch) by cremona created at 2009-12-13 17:52:54
+Attachment [trac_7097-nffactor.patch](tarball://root/attachments/some-uuid/ticket7097/trac_7097-nffactor.patch) by @JohnCremona created at 2009-12-13 17:52:54
 
 Applies to 4.3.rc0
 
@@ -417,7 +417,7 @@ archive/issue_comments_058731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58731",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_058732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58732",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_058733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58733",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_058734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58734",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_058735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58735",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_058736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58736",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_058737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7097#issuecomment-58737",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

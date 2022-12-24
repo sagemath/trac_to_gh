@@ -14,7 +14,7 @@ archive/issues_002118.json:
     "title": "\"Delete all output\" function on notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2118",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby
@@ -50,7 +50,7 @@ archive/issue_comments_013886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2118#issuecomment-13886",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_013887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2118#issuecomment-13887",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

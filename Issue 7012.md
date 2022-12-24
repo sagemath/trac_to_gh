@@ -3,7 +3,7 @@
 archive/issues_007012.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  ncohen mhansen\n\nAs the subject says. This is a follow up to #6869 to address mhansen's suggestions:\n\n```\n\n\nAfter going through this patch, I think it would be best to revert it before 4.1.2 is released. There is still a lot of things that need to be done to get it cleaned up. Some of the things,\n\n1. Almost all of the docstrings are incorrectly formatted.\n\n1. This module should _definitely_ not be a Cython module as it does not gain any benefit from Cython. It just makes Sage slower to compile and things harder to debug.\n\n1. Some of the naming conventions do not match Sage's conventions. (isbinary vs. is_binary). Also, names like the more explicit MixedIntegerProgram? are preferred over the shortened MIP.\n\n1. The optional spkgs should not install modules into the sage.* namespace (sage.numerical.mipGlpk). This is not the right way to do things and will eventually break. I think it also makes sense to use (and contribute to) something like ctypes-glpk to allow greater functionality and not reinvent the wheel.\n\nI have some code that addresses some of these things that I'll put up shortly.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7012\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @nathanncohen @mwhansen\n\nAs the subject says. This is a follow up to #6869 to address mhansen's suggestions:\n\n```\n\n\nAfter going through this patch, I think it would be best to revert it before 4.1.2 is released. There is still a lot of things that need to be done to get it cleaned up. Some of the things,\n\n1. Almost all of the docstrings are incorrectly formatted.\n\n1. This module should _definitely_ not be a Cython module as it does not gain any benefit from Cython. It just makes Sage slower to compile and things harder to debug.\n\n1. Some of the naming conventions do not match Sage's conventions. (isbinary vs. is_binary). Also, names like the more explicit MixedIntegerProgram? are preferred over the shortened MIP.\n\n1. The optional spkgs should not install modules into the sage.* namespace (sage.numerical.mipGlpk). This is not the right way to do things and will eventually break. I think it also makes sense to use (and contribute to) something like ctypes-glpk to allow greater functionality and not reinvent the wheel.\n\nI have some code that addresses some of these things that I'll put up shortly.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7012\n\n",
     "created_at": "2009-09-25T08:04:10Z",
     "labels": [
         "numerical",
@@ -19,7 +19,7 @@ archive/issues_007012.json:
 ```
 Assignee: jkantor
 
-CC:  ncohen mhansen
+CC:  @nathanncohen @mwhansen
 
 As the subject says. This is a follow up to #6869 to address mhansen's suggestions:
 
@@ -56,7 +56,7 @@ archive/issue_comments_057976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57976",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_057978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57978",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_057980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57980",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_057981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57981",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -264,16 +264,16 @@ What this patch does :
 archive/issue_comments_057982.json:
 ```json
 {
-    "body": "Attachment [trac_7012.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012.patch) by ncohen created at 2009-09-28 09:35:25",
+    "body": "Attachment [trac_7012.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012.patch) by @nathanncohen created at 2009-09-28 09:35:25",
     "created_at": "2009-09-28T09:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57982",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7012.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012.patch) by ncohen created at 2009-09-28 09:35:25
+Attachment [trac_7012.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012.patch) by @nathanncohen created at 2009-09-28 09:35:25
 
 
 
@@ -287,7 +287,7 @@ archive/issue_comments_057983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57983",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_057984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57984",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_057989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57989",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_057990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57990",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -514,16 +514,16 @@ flattened patch; include rebased patch and reviewer patch
 archive/issue_comments_057992.json:
 ```json
 {
-    "body": "Attachment [trac_7012-details.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-details.patch) by ncohen created at 2009-10-04 15:23:55",
+    "body": "Attachment [trac_7012-details.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-details.patch) by @nathanncohen created at 2009-10-04 15:23:55",
     "created_at": "2009-10-04T15:23:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57992",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7012-details.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-details.patch) by ncohen created at 2009-10-04 15:23:55
+Attachment [trac_7012-details.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-details.patch) by @nathanncohen created at 2009-10-04 15:23:55
 
 
 
@@ -537,7 +537,7 @@ archive/issue_comments_057993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57993",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_057996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57996",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

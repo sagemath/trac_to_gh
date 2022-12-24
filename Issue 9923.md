@@ -3,7 +3,7 @@
 archive/issues_009923.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  alexghitza novoselt vbraun\n\nI get this doctest error with a trial 4.6.alpha1 on sage.math and many other Sage cluster and Skynet machines:\n\n```python\nsage -t -long  devel/sage/sage/geometry/polyhedra.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/geometry/polyhedra.py\", line 1270:\n    sage: p1.projection().show() + p2.projection().show() + p3.projection().show()\nExpected nothing\nGot:\n    doctest:4555: DeprecationWarning: (Since Sage 4.6) use the option 'width' instead of 'thickness'\n    <BLANKLINE>\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9924\n\n",
+    "body": "Assignee: mvngu\n\nCC:  alexghitza @novoselt @vbraun\n\nI get this doctest error with a trial 4.6.alpha1 on sage.math and many other Sage cluster and Skynet machines:\n\n```python\nsage -t -long  devel/sage/sage/geometry/polyhedra.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/geometry/polyhedra.py\", line 1270:\n    sage: p1.projection().show() + p2.projection().show() + p3.projection().show()\nExpected nothing\nGot:\n    doctest:4555: DeprecationWarning: (Since Sage 4.6) use the option 'width' instead of 'thickness'\n    <BLANKLINE>\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9924\n\n",
     "created_at": "2010-09-16T23:41:58Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009923.json:
     "title": "Doctest error in sage/geometry/polyhedra.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9923",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  alexghitza novoselt vbraun
+CC:  alexghitza @novoselt @vbraun
 
 I get this doctest error with a trial 4.6.alpha1 on sage.math and many other Sage cluster and Skynet machines:
 
@@ -52,7 +52,7 @@ archive/issue_comments_098787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9923#issuecomment-98787",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_098788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9923#issuecomment-98788",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_098789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9923#issuecomment-98789",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_098790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9923#issuecomment-98790",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -121,16 +121,16 @@ By the way, the unofficial, trial 4.6.alpha1 is in `/home/release/sage-4.6.alpha
 archive/issue_comments_098791.json:
 ```json
 {
-    "body": "Attachment [trac_9924.patch](tarball://root/attachments/some-uuid/ticket9924/trac_9924.patch) by AlexGhitza created at 2010-09-17 01:39:58",
+    "body": "Attachment [trac_9924.patch](tarball://root/attachments/some-uuid/ticket9924/trac_9924.patch) by @aghitza created at 2010-09-17 01:39:58",
     "created_at": "2010-09-17T01:39:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9923#issuecomment-98791",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_9924.patch](tarball://root/attachments/some-uuid/ticket9924/trac_9924.patch) by AlexGhitza created at 2010-09-17 01:39:58
+Attachment [trac_9924.patch](tarball://root/attachments/some-uuid/ticket9924/trac_9924.patch) by @aghitza created at 2010-09-17 01:39:58
 
 
 
@@ -144,7 +144,7 @@ archive/issue_comments_098792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9923#issuecomment-98792",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_098793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9923#issuecomment-98793",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_098794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9923#issuecomment-98794",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_098795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9923#issuecomment-98795",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_098796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9923#issuecomment-98796",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_098797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9923#issuecomment-98797",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

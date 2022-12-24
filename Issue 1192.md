@@ -14,7 +14,7 @@ archive/issues_001192.json:
     "title": "[with patch] typo in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1192",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1192
 archive/issue_comments_007403.json:
 ```json
 {
-    "body": "Attachment [7337.patch](tarball://root/attachments/some-uuid/ticket1192/7337.patch) by zimmerma created at 2007-11-17 16:09:25",
+    "body": "Attachment [7337.patch](tarball://root/attachments/some-uuid/ticket1192/7337.patch) by @zimmermann6 created at 2007-11-17 16:09:25",
     "created_at": "2007-11-17T16:09:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1192#issuecomment-7403",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [7337.patch](tarball://root/attachments/some-uuid/ticket1192/7337.patch) by zimmerma created at 2007-11-17 16:09:25
+Attachment [7337.patch](tarball://root/attachments/some-uuid/ticket1192/7337.patch) by @zimmermann6 created at 2007-11-17 16:09:25
 
 
 

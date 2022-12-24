@@ -49,7 +49,7 @@ archive/issue_comments_009012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1399#issuecomment-9012",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -62,16 +62,16 @@ Apply this patch after #1398 .
 archive/issue_comments_009013.json:
 ```json
 {
-    "body": "Changing assignee from somebody to mhansen.",
+    "body": "Changing assignee from somebody to @mwhansen.",
     "created_at": "2007-12-06T04:46:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1399#issuecomment-9013",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from somebody to mhansen.
+Changing assignee from somebody to @mwhansen.
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_009014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1399#issuecomment-9014",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -98,16 +98,16 @@ Changing status from new to assigned.
 archive/issue_comments_009015.json:
 ```json
 {
-    "body": "Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1399/1399.patch) by mhansen created at 2007-12-06 04:47:17",
+    "body": "Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1399/1399.patch) by @mwhansen created at 2007-12-06 04:47:17",
     "created_at": "2007-12-06T04:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1399#issuecomment-9015",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1399/1399.patch) by mhansen created at 2007-12-06 04:47:17
+Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1399/1399.patch) by @mwhansen created at 2007-12-06 04:47:17
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_009016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1399#issuecomment-9016",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_009017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1399#issuecomment-9017",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_009018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1399#issuecomment-9018",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -206,16 +206,16 @@ If the change to integer.pyx isn't accepted, then the change to ideal.py needs t
 archive/issue_comments_009019.json:
 ```json
 {
-    "body": "Attachment [1399new.patch](tarball://root/attachments/some-uuid/ticket1399/1399new.patch) by cremona created at 2008-02-16 18:33:04\n\nRevised patch by John Cremona",
+    "body": "Attachment [1399new.patch](tarball://root/attachments/some-uuid/ticket1399/1399new.patch) by @JohnCremona created at 2008-02-16 18:33:04\n\nRevised patch by John Cremona",
     "created_at": "2008-02-16T18:33:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1399#issuecomment-9019",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [1399new.patch](tarball://root/attachments/some-uuid/ticket1399/1399new.patch) by cremona created at 2008-02-16 18:33:04
+Attachment [1399new.patch](tarball://root/attachments/some-uuid/ticket1399/1399new.patch) by @JohnCremona created at 2008-02-16 18:33:04
 
 Revised patch by John Cremona
 
@@ -231,7 +231,7 @@ archive/issue_comments_009020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1399#issuecomment-9020",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_009021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1399#issuecomment-9021",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -268,16 +268,16 @@ to be applied after 1399new.patch
 archive/issue_comments_009022.json:
 ```json
 {
-    "body": "Attachment [1399newextra.patch](tarball://root/attachments/some-uuid/ticket1399/1399newextra.patch) by cremona created at 2008-02-16 18:54:20\n\nSmall addendum to previous:  I forgot to return True for the zero ideal (which is prime in a PID!)\nBoth patches 1399new.patch and 1399newextra.patch shold be applied.",
+    "body": "Attachment [1399newextra.patch](tarball://root/attachments/some-uuid/ticket1399/1399newextra.patch) by @JohnCremona created at 2008-02-16 18:54:20\n\nSmall addendum to previous:  I forgot to return True for the zero ideal (which is prime in a PID!)\nBoth patches 1399new.patch and 1399newextra.patch shold be applied.",
     "created_at": "2008-02-16T18:54:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1399#issuecomment-9022",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [1399newextra.patch](tarball://root/attachments/some-uuid/ticket1399/1399newextra.patch) by cremona created at 2008-02-16 18:54:20
+Attachment [1399newextra.patch](tarball://root/attachments/some-uuid/ticket1399/1399newextra.patch) by @JohnCremona created at 2008-02-16 18:54:20
 
 Small addendum to previous:  I forgot to return True for the zero ideal (which is prime in a PID!)
 Both patches 1399new.patch and 1399newextra.patch shold be applied.
@@ -307,16 +307,16 @@ Very nice. Code looks good to me, all doctests pass after applying 1399new.patch
 archive/issue_comments_009024.json:
 ```json
 {
-    "body": "Attachment [sage-1399-3_of_3.patch](tarball://root/attachments/some-uuid/ticket1399/sage-1399-3_of_3.patch) by was created at 2008-02-24 21:07:52",
+    "body": "Attachment [sage-1399-3_of_3.patch](tarball://root/attachments/some-uuid/ticket1399/sage-1399-3_of_3.patch) by @williamstein created at 2008-02-24 21:07:52",
     "created_at": "2008-02-24T21:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1399#issuecomment-9024",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-1399-3_of_3.patch](tarball://root/attachments/some-uuid/ticket1399/sage-1399-3_of_3.patch) by was created at 2008-02-24 21:07:52
+Attachment [sage-1399-3_of_3.patch](tarball://root/attachments/some-uuid/ticket1399/sage-1399-3_of_3.patch) by @williamstein created at 2008-02-24 21:07:52
 
 
 
@@ -330,7 +330,7 @@ archive/issue_comments_009025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1399#issuecomment-9025",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -13,7 +13,7 @@ archive/issues_000243.json:
     "title": "two permutation group bugs: __contains__ hangs.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/243",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -47,7 +47,7 @@ archive/issue_comments_001078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/243#issuecomment-1078",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_001079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/243#issuecomment-1079",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

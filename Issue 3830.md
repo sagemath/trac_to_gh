@@ -3,7 +3,7 @@
 archive/issues_003830.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nplot(sin(1/x), (x,-1,3), foo=10)\n///\n          \t\n\nverbose 0 (1537: plot.py, options) WARNING: Ignoring option\n'plot_division'=0\nverbose 0 (1537: plot.py, options) \nThe allowed options for Line defined by 94005 points are:\n    alpha          How transparent the line is.                         \n\n    hue            The color given as a hue.                            \n\n    linestyle      The style of the line, which is one of '--' (dashed),\n'-.' (dash dot), '-' (solid), 'steps', ':' (dotted).\n    marker         '0' (tickleft), '1' (tickright), '2' (tickup), '3'\n(tickdown), '' (nothing), ' ' (nothing), '+' (plus), ',' (pixel), '.'\n(point), '1' (tri_down), '3' (tri_left), '2' (tri_up), '4' (tri_right),\n'<' (triangle_left), '>' (triangle_right), 'None' (nothing), 'D'\n(diamond), 'H' (hexagon2), '_' (hline), '^' (triangle_up), 'd'\n(thin_diamond), 'h' (hexagon1), 'o' (circle), 'p' (pentagon), 's'\n(square), 'v' (triangle_down), 'x' (x), '|' (vline)\n    markeredgecolorthe markerfacecolor can be any color arg             \n\n    markeredgewidththe size of the markter edge in points               \n\n    markersize     the size of the marker in points                     \n\n    rgbcolor       The color as an rgb tuple.                           \n\n    thickness      How thick the line is.                               \n\n\nTraceback (click to the left for traceback)\n...\nAttributeError: Unknown property foo\n```\n\n\nThe error that comes from line could just be very lightly wrapped in an error from plot that says plot error using the line command.  This could thus be almost trivially fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3830\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nplot(sin(1/x), (x,-1,3), foo=10)\n///\n          \t\n\nverbose 0 (1537: plot.py, options) WARNING: Ignoring option\n'plot_division'=0\nverbose 0 (1537: plot.py, options) \nThe allowed options for Line defined by 94005 points are:\n    alpha          How transparent the line is.                         \n\n    hue            The color given as a hue.                            \n\n    linestyle      The style of the line, which is one of '--' (dashed),\n'-.' (dash dot), '-' (solid), 'steps', ':' (dotted).\n    marker         '0' (tickleft), '1' (tickright), '2' (tickup), '3'\n(tickdown), '' (nothing), ' ' (nothing), '+' (plus), ',' (pixel), '.'\n(point), '1' (tri_down), '3' (tri_left), '2' (tri_up), '4' (tri_right),\n'<' (triangle_left), '>' (triangle_right), 'None' (nothing), 'D'\n(diamond), 'H' (hexagon2), '_' (hline), '^' (triangle_up), 'd'\n(thin_diamond), 'h' (hexagon1), 'o' (circle), 'p' (pentagon), 's'\n(square), 'v' (triangle_down), 'x' (x), '|' (vline)\n    markeredgecolorthe markerfacecolor can be any color arg             \n\n    markeredgewidththe size of the markter edge in points               \n\n    markersize     the size of the marker in points                     \n\n    rgbcolor       The color as an rgb tuple.                           \n\n    thickness      How thick the line is.                               \n\n\nTraceback (click to the left for traceback)\n...\nAttributeError: Unknown property foo\n```\n\n\nThe error that comes from line could just be very lightly wrapped in an error from plot that says plot error using the line command.  This could thus be almost trivially fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3830\n\n",
     "created_at": "2008-08-13T03:02:53Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003830.json:
     "title": "plot(sin(1/x), (x,-1,3), foo=10) yields an error message about line, but should yield one about plot.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3830",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -77,7 +77,7 @@ archive/issue_comments_027247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3830#issuecomment-27247",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -96,16 +96,16 @@ and when I see that error message, it looks like it's trying to tell me there's 
 archive/issue_comments_027248.json:
 ```json
 {
-    "body": "Attachment [trac-3830.patch](tarball://root/attachments/some-uuid/ticket3830/trac-3830.patch) by rlm created at 2009-01-23 02:36:58",
+    "body": "Attachment [trac-3830.patch](tarball://root/attachments/some-uuid/ticket3830/trac-3830.patch) by @rlmill created at 2009-01-23 02:36:58",
     "created_at": "2009-01-23T02:36:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3830#issuecomment-27248",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-3830.patch](tarball://root/attachments/some-uuid/ticket3830/trac-3830.patch) by rlm created at 2009-01-23 02:36:58
+Attachment [trac-3830.patch](tarball://root/attachments/some-uuid/ticket3830/trac-3830.patch) by @rlmill created at 2009-01-23 02:36:58
 
 
 
@@ -119,7 +119,7 @@ archive/issue_comments_027249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3830#issuecomment-27249",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_027250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3830#issuecomment-27250",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

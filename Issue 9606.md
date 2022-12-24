@@ -3,7 +3,7 @@
 archive/issues_009606.json:
 ```json
 {
-    "body": "Assignee: pjeremy\n\nCC:  stephen\n\n\"sage -sh\" is intended to start a subshell of the user's preference (as per $SHELL) with the local Sage environment configured in it.\n\nIn order to prevent the environment being altered by the user's shell RC scripts, local/bin/sage-sage passes an argument to $SHELL which is intended to disable RC processing.  Unfortunately, it assumes that 'sh' is 'bash' and passes '--norc' - which is not legal for POSIX shells.\n\nWhilst this appears to be ignored by Solaris /bin/sh and /usr/xpg4/bin/sh (which is at variance to the man page), it is rejected by FreeBSD /bin/sh - which reports \"Illegal option --\".\n\nThe fix is not clear because Cygwin, Linux and OpenSolaris (at least) all install bash as /bin/sh - though experiments show that at least bash-4.1.7 will not run any RC script when invoked as sh.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9606\n\n",
+    "body": "Assignee: @peterjeremy\n\nCC:  stephen\n\n\"sage -sh\" is intended to start a subshell of the user's preference (as per $SHELL) with the local Sage environment configured in it.\n\nIn order to prevent the environment being altered by the user's shell RC scripts, local/bin/sage-sage passes an argument to $SHELL which is intended to disable RC processing.  Unfortunately, it assumes that 'sh' is 'bash' and passes '--norc' - which is not legal for POSIX shells.\n\nWhilst this appears to be ignored by Solaris /bin/sh and /usr/xpg4/bin/sh (which is at variance to the man page), it is rejected by FreeBSD /bin/sh - which reports \"Illegal option --\".\n\nThe fix is not clear because Cygwin, Linux and OpenSolaris (at least) all install bash as /bin/sh - though experiments show that at least bash-4.1.7 will not run any RC script when invoked as sh.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9606\n\n",
     "created_at": "2010-07-26T23:42:53Z",
     "labels": [
         "porting: BSD",
@@ -14,10 +14,10 @@ archive/issues_009606.json:
     "title": "local/bin/sage-sage assumes 'sh' is bash",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9606",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: pjeremy
+Assignee: @peterjeremy
 
 CC:  stephen
 
@@ -45,7 +45,7 @@ archive/issue_comments_093051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9606#issuecomment-93051",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_093052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9606#issuecomment-93052",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_093053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9606#issuecomment-93053",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_093054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9606#issuecomment-93054",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_093055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9606#issuecomment-93055",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_093057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9606#issuecomment-93057",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_093058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9606#issuecomment-93058",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_093059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9606#issuecomment-93059",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

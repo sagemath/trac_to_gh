@@ -3,7 +3,7 @@
 archive/issues_007396.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: Disjoint union, enumerated sets\n\nThe patch implement the disjoint union of a family of enumerated sets. It allows in particular to deal with infinite unions such as in \n\n```\nsage: DisjointUnionEnumeratedSets(\n...       Family(NonNegativeIntegers(), Permutations))\nDisjoint union of Lazy family (Permutations(i))_{i in Non negative integers}\n```\n\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7396\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Disjoint union, enumerated sets\n\nThe patch implement the disjoint union of a family of enumerated sets. It allows in particular to deal with infinite unions such as in \n\n```\nsage: DisjointUnionEnumeratedSets(\n...       Family(NonNegativeIntegers(), Permutations))\nDisjoint union of Lazy family (Permutations(i))_{i in Non negative integers}\n```\n\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7396\n\n",
     "created_at": "2009-11-05T15:46:33Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_007396.json:
     "title": "Disjoint unions of enumerated sets.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7396",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7396
 archive/issue_comments_062190.json:
 ```json
 {
-    "body": "Attachment [trac_7396_enumset_unions-fh.patch](tarball://root/attachments/some-uuid/ticket7396/trac_7396_enumset_unions-fh.patch) by hivert created at 2009-11-05 16:02:21",
+    "body": "Attachment [trac_7396_enumset_unions-fh.patch](tarball://root/attachments/some-uuid/ticket7396/trac_7396_enumset_unions-fh.patch) by @hivert created at 2009-11-05 16:02:21",
     "created_at": "2009-11-05T16:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7396#issuecomment-62190",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7396_enumset_unions-fh.patch](tarball://root/attachments/some-uuid/ticket7396/trac_7396_enumset_unions-fh.patch) by hivert created at 2009-11-05 16:02:21
+Attachment [trac_7396_enumset_unions-fh.patch](tarball://root/attachments/some-uuid/ticket7396/trac_7396_enumset_unions-fh.patch) by @hivert created at 2009-11-05 16:02:21
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_062191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7396#issuecomment-62191",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_062192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7396#issuecomment-62192",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_062193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7396#issuecomment-62193",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_062194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7396#issuecomment-62194",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

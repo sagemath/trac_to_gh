@@ -14,7 +14,7 @@ archive/issues_006365.json:
     "title": "bug in constructing extensions of finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6365",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -47,7 +47,7 @@ archive/issue_comments_050922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6365#issuecomment-50922",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_050923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6365#issuecomment-50923",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_050924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6365#issuecomment-50924",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_050925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6365#issuecomment-50925",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_050926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6365#issuecomment-50926",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

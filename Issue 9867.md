@@ -3,7 +3,7 @@
 archive/issues_009867.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jason\n\nThe highest-level ResT files for 3d plotting are ... not so informative.  See for instance [this](http://www.sagemath.org/doc/reference/sage/plot/plot3d/examples.html) page.\n\nThis ticket would make the top-level 3d plotting page look as nice as [this](http://www.sagemath.org/doc/reference/sage/plot/plot.html) one, with lots of discussion about options - and in particular putting text on a 3D plot, since [this](http://groups.google.com/group/sage-support/browse_thread/thread/46b1fef4c02dc650/c25cdb155dcccc56?show_docid=c25cdb155dcccc56&pli=1) thread mentioned it.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9868\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout\n\nThe highest-level ResT files for 3d plotting are ... not so informative.  See for instance [this](http://www.sagemath.org/doc/reference/sage/plot/plot3d/examples.html) page.\n\nThis ticket would make the top-level 3d plotting page look as nice as [this](http://www.sagemath.org/doc/reference/sage/plot/plot.html) one, with lots of discussion about options - and in particular putting text on a 3D plot, since [this](http://groups.google.com/group/sage-support/browse_thread/thread/46b1fef4c02dc650/c25cdb155dcccc56?show_docid=c25cdb155dcccc56&pli=1) thread mentioned it.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9868\n\n",
     "created_at": "2010-09-07T16:13:55Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009867.json:
     "title": "Improve plot3d documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9867",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: jason, was
 
-CC:  jason
+CC:  @jasongrout
 
 The highest-level ResT files for 3d plotting are ... not so informative.  See for instance [this](http://www.sagemath.org/doc/reference/sage/plot/plot3d/examples.html) page.
 
@@ -42,7 +42,7 @@ archive/issue_comments_097487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9867#issuecomment-97487",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_097488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9867#issuecomment-97488",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_097489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9867#issuecomment-97489",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

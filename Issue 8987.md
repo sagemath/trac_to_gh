@@ -3,7 +3,7 @@
 archive/issues_008987.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  vbraun davidloeffler\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8987\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun @loefflerd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8987\n\n",
     "created_at": "2010-05-18T09:07:13Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_008987.json:
     "title": "Add support for rational polyhedral fans",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8987",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
 
-CC:  vbraun davidloeffler
+CC:  @vbraun @loefflerd
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_082954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82954",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_082955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82955",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_082956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82956",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_082957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82957",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -107,16 +107,16 @@ Switch to toric lattices.
 archive/issue_comments_082958.json:
 ```json
 {
-    "body": "Attachment [trac_8987_add_support_for_rational_polyhedral_fans.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_add_support_for_rational_polyhedral_fans.patch) by novoselt created at 2010-05-28 22:29:53\n\nNew version of the patch using toric lattices from #9062. Switch of caching technique to allow efficient extension of class hierarchy is still pending.",
+    "body": "Attachment [trac_8987_add_support_for_rational_polyhedral_fans.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_add_support_for_rational_polyhedral_fans.patch) by @novoselt created at 2010-05-28 22:29:53\n\nNew version of the patch using toric lattices from #9062. Switch of caching technique to allow efficient extension of class hierarchy is still pending.",
     "created_at": "2010-05-28T22:29:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82958",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8987_add_support_for_rational_polyhedral_fans.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_add_support_for_rational_polyhedral_fans.patch) by novoselt created at 2010-05-28 22:29:53
+Attachment [trac_8987_add_support_for_rational_polyhedral_fans.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_add_support_for_rational_polyhedral_fans.patch) by @novoselt created at 2010-05-28 22:29:53
 
 New version of the patch using toric lattices from #9062. Switch of caching technique to allow efficient extension of class hierarchy is still pending.
 
@@ -132,7 +132,7 @@ archive/issue_comments_082959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82959",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_082960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82960",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_082961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82961",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_082962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82962",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -206,16 +206,16 @@ The second patch adds classes that will support cones and fans for domain and co
 archive/issue_comments_082963.json:
 ```json
 {
-    "body": "Attachment [trac_8987_add_enhanced_cones_and_fans.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_add_enhanced_cones_and_fans.patch) by novoselt created at 2010-06-06 06:07:11\n\nApply after the big patch.",
+    "body": "Attachment [trac_8987_add_enhanced_cones_and_fans.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_add_enhanced_cones_and_fans.patch) by @novoselt created at 2010-06-06 06:07:11\n\nApply after the big patch.",
     "created_at": "2010-06-06T06:07:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82963",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8987_add_enhanced_cones_and_fans.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_add_enhanced_cones_and_fans.patch) by novoselt created at 2010-06-06 06:07:11
+Attachment [trac_8987_add_enhanced_cones_and_fans.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_add_enhanced_cones_and_fans.patch) by @novoselt created at 2010-06-06 06:07:11
 
 Apply after the big patch.
 
@@ -231,7 +231,7 @@ archive/issue_comments_082964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82964",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_082965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82965",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_082966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82966",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_082967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82967",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -401,7 +401,7 @@ archive/issue_comments_082968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82968",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_082969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82969",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -571,7 +571,7 @@ archive/issue_comments_082970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82970",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_082971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82971",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -637,7 +637,7 @@ archive/issue_comments_082972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82972",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -675,7 +675,7 @@ archive/issue_comments_082973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82973",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_082974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82974",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -717,7 +717,7 @@ archive/issue_comments_082975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82975",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -735,7 +735,7 @@ archive/issue_comments_082976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82976",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -753,7 +753,7 @@ archive/issue_comments_082977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82977",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -779,7 +779,7 @@ archive/issue_comments_082978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82978",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -816,7 +816,7 @@ archive/issue_comments_082979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82979",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -838,7 +838,7 @@ archive/issue_comments_082980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82980",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -858,7 +858,7 @@ archive/issue_comments_082981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82981",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -880,7 +880,7 @@ archive/issue_comments_082982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82982",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -913,7 +913,7 @@ archive/issue_comments_082983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82983",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -931,7 +931,7 @@ archive/issue_comments_082984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82984",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -952,7 +952,7 @@ archive/issue_comments_082985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82985",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -970,7 +970,7 @@ archive/issue_comments_082986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82986",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -990,7 +990,7 @@ archive/issue_comments_082987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82987",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1008,7 +1008,7 @@ archive/issue_comments_082988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82988",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1071,7 +1071,7 @@ archive/issue_comments_082989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82989",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1099,7 +1099,7 @@ archive/issue_comments_082990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82990",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1117,7 +1117,7 @@ archive/issue_comments_082991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82991",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1172,7 +1172,7 @@ archive/issue_comments_082992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82992",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1194,7 +1194,7 @@ archive/issue_comments_082993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82993",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1234,7 +1234,7 @@ archive/issue_comments_082994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82994",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1252,7 +1252,7 @@ archive/issue_comments_082995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82995",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1270,7 +1270,7 @@ archive/issue_comments_082996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82996",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1292,7 +1292,7 @@ archive/issue_comments_082997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82997",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1357,7 +1357,7 @@ archive/issue_comments_082998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82998",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1392,7 +1392,7 @@ archive/issue_comments_082999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-82999",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1418,7 +1418,7 @@ archive/issue_comments_083000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83000",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1447,7 +1447,7 @@ archive/issue_comments_083001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83001",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1460,16 +1460,16 @@ Apply last.
 archive/issue_comments_083002.json:
 ```json
 {
-    "body": "Attachment [trac_8987_review_changes.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_review_changes.patch) by novoselt created at 2010-06-17 06:42:08\n\nWell, it seems to me that it is done except for `_repr_` changes which I plan to do tomorrow. Changes will be trivial, but involve a lot of doctest adjustment.\n\nI have renamed `ambient_dim` to `lattice_dim`. That seemed to be very natural, in fact, I didn't even have to change the docstring \"Return the dimension of the ambient lattice.\" The original proposal actually was not working because lattices don't have `dim`, they have `dimension`, and `cone.lattice().dimension()` is a bit long, plus it does not show in <TAB>-completion. I prefer `dim` to `dimension` since it is clear enough, however it seems that many things in Sage stick with the long version. In particular, this is the case for ambient spaces (in the sense of schemes classes), so `ToricVariety` inherits it. I think that actually both versions should exist, but the correct way to do it is to change ambient space class and that better be done in a separate ticket from adding a new module.\n\nI have not switched equality of cones checked by `==` to ignore the order, although containment of cones in fans does not care about it. I agree that \"mathematical equality\" (which is currently available via `is_equivalent`) may be better, although it would be inconsistent with fans, but I am afraid of performance penalty. I do not have currently any benchmarks to support my case and I may very well be wrong. So I propose to leave it as is for the moment and once it is actually possible to do things with toric varieties and we can check it on several \"real projects\" with big fans we can decide on the final behaviour. As I understand, switching from \"computer\" to \"mathematical\" equivalence should not break any well-written code, it may only allow to rewrite it in a more convenient way. On the contrary, if we switch now and later decide to go back it may lead to bugs in unexpected places.",
+    "body": "Attachment [trac_8987_review_changes.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_review_changes.patch) by @novoselt created at 2010-06-17 06:42:08\n\nWell, it seems to me that it is done except for `_repr_` changes which I plan to do tomorrow. Changes will be trivial, but involve a lot of doctest adjustment.\n\nI have renamed `ambient_dim` to `lattice_dim`. That seemed to be very natural, in fact, I didn't even have to change the docstring \"Return the dimension of the ambient lattice.\" The original proposal actually was not working because lattices don't have `dim`, they have `dimension`, and `cone.lattice().dimension()` is a bit long, plus it does not show in <TAB>-completion. I prefer `dim` to `dimension` since it is clear enough, however it seems that many things in Sage stick with the long version. In particular, this is the case for ambient spaces (in the sense of schemes classes), so `ToricVariety` inherits it. I think that actually both versions should exist, but the correct way to do it is to change ambient space class and that better be done in a separate ticket from adding a new module.\n\nI have not switched equality of cones checked by `==` to ignore the order, although containment of cones in fans does not care about it. I agree that \"mathematical equality\" (which is currently available via `is_equivalent`) may be better, although it would be inconsistent with fans, but I am afraid of performance penalty. I do not have currently any benchmarks to support my case and I may very well be wrong. So I propose to leave it as is for the moment and once it is actually possible to do things with toric varieties and we can check it on several \"real projects\" with big fans we can decide on the final behaviour. As I understand, switching from \"computer\" to \"mathematical\" equivalence should not break any well-written code, it may only allow to rewrite it in a more convenient way. On the contrary, if we switch now and later decide to go back it may lead to bugs in unexpected places.",
     "created_at": "2010-06-17T06:42:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83002",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8987_review_changes.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_review_changes.patch) by novoselt created at 2010-06-17 06:42:08
+Attachment [trac_8987_review_changes.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_review_changes.patch) by @novoselt created at 2010-06-17 06:42:08
 
 Well, it seems to me that it is done except for `_repr_` changes which I plan to do tomorrow. Changes will be trivial, but involve a lot of doctest adjustment.
 
@@ -1484,16 +1484,16 @@ I have not switched equality of cones checked by `==` to ignore the order, altho
 archive/issue_comments_083003.json:
 ```json
 {
-    "body": "Attachment [trac_8987_repr_changes.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_repr_changes.patch) by novoselt created at 2010-06-17 19:00:11\n\nApply in the very end...",
+    "body": "Attachment [trac_8987_repr_changes.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_repr_changes.patch) by @novoselt created at 2010-06-17 19:00:11\n\nApply in the very end...",
     "created_at": "2010-06-17T19:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83003",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8987_repr_changes.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_repr_changes.patch) by novoselt created at 2010-06-17 19:00:11
+Attachment [trac_8987_repr_changes.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_repr_changes.patch) by @novoselt created at 2010-06-17 19:00:11
 
 Apply in the very end...
 
@@ -1509,7 +1509,7 @@ archive/issue_comments_083004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83004",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1529,7 +1529,7 @@ archive/issue_comments_083005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83005",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1547,7 +1547,7 @@ archive/issue_comments_083006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83006",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1565,7 +1565,7 @@ archive/issue_comments_083007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83007",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1583,7 +1583,7 @@ archive/issue_comments_083008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83008",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1598,16 +1598,16 @@ For the release manager: apply all patches in the order listed in the ticket.
 archive/issue_comments_083009.json:
 ```json
 {
-    "body": "Attachment [trac_8987_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_cmp_fix.patch) by novoselt created at 2010-07-01 16:26:16",
+    "body": "Attachment [trac_8987_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_cmp_fix.patch) by @novoselt created at 2010-07-01 16:26:16",
     "created_at": "2010-07-01T16:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83009",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8987_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_cmp_fix.patch) by novoselt created at 2010-07-01 16:26:16
+Attachment [trac_8987_cmp_fix.patch](tarball://root/attachments/some-uuid/ticket8987/trac_8987_cmp_fix.patch) by @novoselt created at 2010-07-01 16:26:16
 
 
 
@@ -1621,7 +1621,7 @@ archive/issue_comments_083010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83010",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1639,7 +1639,7 @@ archive/issue_comments_083011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83011",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1657,7 +1657,7 @@ archive/issue_comments_083012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83012",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -1675,7 +1675,7 @@ archive/issue_comments_083013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83013",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1693,7 +1693,7 @@ archive/issue_comments_083014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83014",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1711,7 +1711,7 @@ archive/issue_comments_083015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83015",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1729,7 +1729,7 @@ archive/issue_comments_083016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83016",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1747,7 +1747,7 @@ archive/issue_comments_083017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83017",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1765,7 +1765,7 @@ archive/issue_comments_083018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83018",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -1783,7 +1783,7 @@ archive/issue_comments_083019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83019",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1801,7 +1801,7 @@ archive/issue_comments_083020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8987#issuecomment-83020",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

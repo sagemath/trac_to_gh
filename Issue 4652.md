@@ -3,7 +3,7 @@
 archive/issues_004652.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCurrently, we've got excellent code to run Cython in parallel as part of the Sage build process. However, once we ask distutils to begin compiling that code, everything is done in serial, because distutils works solely in serial. \n\n## The Code\n\nThe attached file changes that. This (somewhat brutally) hacks distutils to dispatch the calls to build C/C++ extensions in parallel, using pyprocessing. (I totally jacked William's code from #3765 for this.) Here's how to put this code in place:\n\n* download the attached file (`build_ext.py`)\n* replace `$SAGE_ROOT/local/lib/python2.5/distutils/command/build_ext.py` with the new version.\n  \nNow, if you want to test the new code, do the following:\n\n* set the environment variable `SAGE_PARALLEL_DIST` to something. (The code just checks to see if the variable is defined at all.)\n* set the environment variable `MAKE` to `MAKE -j2`, where `2` is replaced by the number of simultaneous build processes you want. \n* build.\n\n## Notes\n\nIf you want to test this, don't go around touching the `.pyx` files in the Sage library, since Cython is much slower than `gcc`. Instead, simply go around touching the `.c` and `.cpp` files in `$SAGE_ROOT/devel/sage/sage`. One of the cool features we added with the new build system is that these files get recompiled when they change.\n\nThere is now a line that prints as part of the build process that looks like:\n\n```\nTotal time spent compiling C/C++ extensions:  5.2876701355 seconds.\n```\n\nSo try touching a bunch of files in the Sage library, and seeing what kind of speedups you get.\n\nThere are two caveats I want to offer with this code: \n\n* Michael points out that numpy does a lot with distutils. I could very well have broken their use of distutils.\n* I don't do anything involving dependency tracking between extensions. In particular, if there are extensions that have to be built in a certain order, this code could break it. (This code still compiles all source files **within** an extension in the usual way.) Neither Michael nor I could think of a situation where this would break anything in Sage, but who knows ...\n\n## The Plan\n\nSo while this code is cool, and will definitely save a ton of CPU time on `sage.math` (**cough** mabshoff **cough**), the plan is **not** to maintain it as a part of the Sage Python spkg indefinitely. Instead, if it seems to work well, then we should try to clean this code up a bit more and upstream it, since pyprocessing is standard in Python 2.6.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4652\n\n",
+    "body": "Assignee: @craigcitro\n\nCurrently, we've got excellent code to run Cython in parallel as part of the Sage build process. However, once we ask distutils to begin compiling that code, everything is done in serial, because distutils works solely in serial. \n\n## The Code\n\nThe attached file changes that. This (somewhat brutally) hacks distutils to dispatch the calls to build C/C++ extensions in parallel, using pyprocessing. (I totally jacked William's code from #3765 for this.) Here's how to put this code in place:\n\n* download the attached file (`build_ext.py`)\n* replace `$SAGE_ROOT/local/lib/python2.5/distutils/command/build_ext.py` with the new version.\n  \nNow, if you want to test the new code, do the following:\n\n* set the environment variable `SAGE_PARALLEL_DIST` to something. (The code just checks to see if the variable is defined at all.)\n* set the environment variable `MAKE` to `MAKE -j2`, where `2` is replaced by the number of simultaneous build processes you want. \n* build.\n\n## Notes\n\nIf you want to test this, don't go around touching the `.pyx` files in the Sage library, since Cython is much slower than `gcc`. Instead, simply go around touching the `.c` and `.cpp` files in `$SAGE_ROOT/devel/sage/sage`. One of the cool features we added with the new build system is that these files get recompiled when they change.\n\nThere is now a line that prints as part of the build process that looks like:\n\n```\nTotal time spent compiling C/C++ extensions:  5.2876701355 seconds.\n```\n\nSo try touching a bunch of files in the Sage library, and seeing what kind of speedups you get.\n\nThere are two caveats I want to offer with this code: \n\n* Michael points out that numpy does a lot with distutils. I could very well have broken their use of distutils.\n* I don't do anything involving dependency tracking between extensions. In particular, if there are extensions that have to be built in a certain order, this code could break it. (This code still compiles all source files **within** an extension in the usual way.) Neither Michael nor I could think of a situation where this would break anything in Sage, but who knows ...\n\n## The Plan\n\nSo while this code is cool, and will definitely save a ton of CPU time on `sage.math` (**cough** mabshoff **cough**), the plan is **not** to maintain it as a part of the Sage Python spkg indefinitely. Instead, if it seems to work well, then we should try to clean this code up a bit more and upstream it, since pyprocessing is standard in Python 2.6.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4652\n\n",
     "created_at": "2008-11-29T11:37:40Z",
     "labels": [
         "build",
@@ -14,10 +14,10 @@ archive/issues_004652.json:
     "title": "[with code, needs testing] make distutils compile Cython extensions in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4652",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Currently, we've got excellent code to run Cython in parallel as part of the Sage build process. However, once we ask distutils to begin compiling that code, everything is done in serial, because distutils works solely in serial. 
 
@@ -66,16 +66,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4652
 archive/issue_comments_035008.json:
 ```json
 {
-    "body": "Attachment [build_ext.py](tarball://root/attachments/some-uuid/ticket4652/build_ext.py) by was created at 2008-11-29 18:37:59\n\nJust out of curiosity, did you try to get this to work without modifying build_ext.py at all, but by simply changing stuff in that module at runtime, like I illustrate in #3765?\n\nHere's the diff of what you did:\n\n```\n--- build_ext.py.orig\t2008-11-29 10:32:57.000000000 -0800\n+++ build_ext.py\t2008-11-29 03:38:35.000000000 -0800\n@@ -409,13 +409,57 @@\n     # get_outputs ()\n \n     def build_extensions(self):\n+\n         # First, sanity-check the 'extensions' list\n         self.check_extensions_list(self.extensions)\n \n-        for ext in self.extensions:\n-            self.build_extension(ext)\n+        if not os.environ.has_key('MAKE'):\n+            ncpus = 1\n+        else:\n+            MAKE = os.environ['MAKE']\n+            z = [w[2:] for w in MAKE.split() if w.startswith('-j')]\n+            if len(z) == 0:  # no command line option\n+                ncpus = 1\n+            else:\n+                # Determine number of cpus from command line argument.\n+                # Also, use the OS to cap the number of cpus, in case\n+                # user annoyingly makes a typo and asks to use 10000\n+                # cpus at once.\n+                try:\n+                    ncpus = int(z[0])\n+                    n = 2*number_of_cpus()\n+                    if n:  # prevent dumb typos.\n+                        ncpus = min(ncpus, n)\n+                except ValueError:\n+                    ncpus = 1\n+\n+        import time\n+        t = time.time()\n+        \n+        # See if we're trying out the experimental parallel build\n+        # code.\n+        if ncpus > 1 and os.environ.has_key('SAGE_PARALLEL_DIST'):\n+            extensions_to_compile = []\n+            for ext in self.extensions:\n+                need_to_compile, p = self.prepare_extension(ext)\n+                if need_to_compile:\n+                    extensions_to_compile.append(p)\n+\n+            if extensions_to_compile:\n+               from processing import Pool\n+               p = Pool(min(ncpus, len(extensions_to_compile)))\n+               for r in p.imap(self.build_extension, extensions_to_compile):\n+                   pass\n+            \n+        else:\n+            for ext in self.extensions:\n+                need_to_compile, p = self.prepare_extension(ext)\n+                if need_to_compile:\n+                    self.build_extension(p)\n+\n+        print \"Total time spent compiling C/C++ extensions: \", time.time() - t, \"seconds.\"\n \n-    def build_extension(self, ext):\n+    def prepare_extension(self, ext):\n         sources = ext.sources\n         if sources is None or type(sources) not in (ListType, TupleType):\n             raise DistutilsSetupError, \\\n@@ -443,9 +487,16 @@\n         depends = sources + ext.depends\n         if not (self.force or newer_group(depends, ext_filename, 'newer')):\n             log.debug(\"skipping '%s' extension (up-to-date)\", ext.name)\n-            return\n+            need_to_compile = False\n         else:\n             log.info(\"building '%s' extension\", ext.name)\n+            need_to_compile = True\n+\n+        return need_to_compile, (sources, ext, ext_filename)\n+\n+    def build_extension(self, p):\n+\n+        sources, ext, ext_filename = p\n \n         # First, scan the sources for SWIG definition files (.i), run\n         # SWIG on 'em to create .c files, and modify the sources list\n@@ -715,3 +766,23 @@\n                 return ext.libraries\n \n # class build_ext\n+\n+\n+\n+def number_of_cpus():\n+    \"\"\"\n+    Try to determine the number of cpu's on this system.\n+    If successful return that number.  Otherwise return 0\n+    to indicate failure.\n+\n+    OUTPUT:\n+        int\n+    \"\"\"\n+    if hasattr(os, \"sysconf\") and os.sysconf_names.has_key(\"SC_NPROCESSORS_ONLN\"): # Linux and Unix\n+        n = os.sysconf(\"SC_NPROCESSORS_ONLN\")\n+        if isinstance(n, int) and n > 0:\n+            return n\n+    try:\n+        return int(os.popen2(\"sysctl -n hw.ncpu\")[1].read().strip())\n+    except:\n+        return 0\n```\n",
+    "body": "Attachment [build_ext.py](tarball://root/attachments/some-uuid/ticket4652/build_ext.py) by @williamstein created at 2008-11-29 18:37:59\n\nJust out of curiosity, did you try to get this to work without modifying build_ext.py at all, but by simply changing stuff in that module at runtime, like I illustrate in #3765?\n\nHere's the diff of what you did:\n\n```\n--- build_ext.py.orig\t2008-11-29 10:32:57.000000000 -0800\n+++ build_ext.py\t2008-11-29 03:38:35.000000000 -0800\n@@ -409,13 +409,57 @@\n     # get_outputs ()\n \n     def build_extensions(self):\n+\n         # First, sanity-check the 'extensions' list\n         self.check_extensions_list(self.extensions)\n \n-        for ext in self.extensions:\n-            self.build_extension(ext)\n+        if not os.environ.has_key('MAKE'):\n+            ncpus = 1\n+        else:\n+            MAKE = os.environ['MAKE']\n+            z = [w[2:] for w in MAKE.split() if w.startswith('-j')]\n+            if len(z) == 0:  # no command line option\n+                ncpus = 1\n+            else:\n+                # Determine number of cpus from command line argument.\n+                # Also, use the OS to cap the number of cpus, in case\n+                # user annoyingly makes a typo and asks to use 10000\n+                # cpus at once.\n+                try:\n+                    ncpus = int(z[0])\n+                    n = 2*number_of_cpus()\n+                    if n:  # prevent dumb typos.\n+                        ncpus = min(ncpus, n)\n+                except ValueError:\n+                    ncpus = 1\n+\n+        import time\n+        t = time.time()\n+        \n+        # See if we're trying out the experimental parallel build\n+        # code.\n+        if ncpus > 1 and os.environ.has_key('SAGE_PARALLEL_DIST'):\n+            extensions_to_compile = []\n+            for ext in self.extensions:\n+                need_to_compile, p = self.prepare_extension(ext)\n+                if need_to_compile:\n+                    extensions_to_compile.append(p)\n+\n+            if extensions_to_compile:\n+               from processing import Pool\n+               p = Pool(min(ncpus, len(extensions_to_compile)))\n+               for r in p.imap(self.build_extension, extensions_to_compile):\n+                   pass\n+            \n+        else:\n+            for ext in self.extensions:\n+                need_to_compile, p = self.prepare_extension(ext)\n+                if need_to_compile:\n+                    self.build_extension(p)\n+\n+        print \"Total time spent compiling C/C++ extensions: \", time.time() - t, \"seconds.\"\n \n-    def build_extension(self, ext):\n+    def prepare_extension(self, ext):\n         sources = ext.sources\n         if sources is None or type(sources) not in (ListType, TupleType):\n             raise DistutilsSetupError, \\\n@@ -443,9 +487,16 @@\n         depends = sources + ext.depends\n         if not (self.force or newer_group(depends, ext_filename, 'newer')):\n             log.debug(\"skipping '%s' extension (up-to-date)\", ext.name)\n-            return\n+            need_to_compile = False\n         else:\n             log.info(\"building '%s' extension\", ext.name)\n+            need_to_compile = True\n+\n+        return need_to_compile, (sources, ext, ext_filename)\n+\n+    def build_extension(self, p):\n+\n+        sources, ext, ext_filename = p\n \n         # First, scan the sources for SWIG definition files (.i), run\n         # SWIG on 'em to create .c files, and modify the sources list\n@@ -715,3 +766,23 @@\n                 return ext.libraries\n \n # class build_ext\n+\n+\n+\n+def number_of_cpus():\n+    \"\"\"\n+    Try to determine the number of cpu's on this system.\n+    If successful return that number.  Otherwise return 0\n+    to indicate failure.\n+\n+    OUTPUT:\n+        int\n+    \"\"\"\n+    if hasattr(os, \"sysconf\") and os.sysconf_names.has_key(\"SC_NPROCESSORS_ONLN\"): # Linux and Unix\n+        n = os.sysconf(\"SC_NPROCESSORS_ONLN\")\n+        if isinstance(n, int) and n > 0:\n+            return n\n+    try:\n+        return int(os.popen2(\"sysctl -n hw.ncpu\")[1].read().strip())\n+    except:\n+        return 0\n```\n",
     "created_at": "2008-11-29T18:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4652#issuecomment-35008",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [build_ext.py](tarball://root/attachments/some-uuid/ticket4652/build_ext.py) by was created at 2008-11-29 18:37:59
+Attachment [build_ext.py](tarball://root/attachments/some-uuid/ticket4652/build_ext.py) by @williamstein created at 2008-11-29 18:37:59
 
 Just out of curiosity, did you try to get this to work without modifying build_ext.py at all, but by simply changing stuff in that module at runtime, like I illustrate in #3765?
 
@@ -202,7 +202,7 @@ archive/issue_comments_035009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4652#issuecomment-35009",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_035010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4652#issuecomment-35010",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -415,16 +415,16 @@ Michael
 archive/issue_comments_035019.json:
 ```json
 {
-    "body": "Attachment [trac-4652-testing.patch](tarball://root/attachments/some-uuid/ticket4652/trac-4652-testing.patch) by craigcitro created at 2009-06-05 08:00:56",
+    "body": "Attachment [trac-4652-testing.patch](tarball://root/attachments/some-uuid/ticket4652/trac-4652-testing.patch) by @craigcitro created at 2009-06-05 08:00:56",
     "created_at": "2009-06-05T08:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4652#issuecomment-35019",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4652-testing.patch](tarball://root/attachments/some-uuid/ticket4652/trac-4652-testing.patch) by craigcitro created at 2009-06-05 08:00:56
+Attachment [trac-4652-testing.patch](tarball://root/attachments/some-uuid/ticket4652/trac-4652-testing.patch) by @craigcitro created at 2009-06-05 08:00:56
 
 
 
@@ -438,7 +438,7 @@ archive/issue_comments_035020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4652#issuecomment-35020",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_035021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4652#issuecomment-35021",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -485,7 +485,7 @@ archive/issue_comments_035022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4652#issuecomment-35022",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_035023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4652#issuecomment-35023",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_035024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4652#issuecomment-35024",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

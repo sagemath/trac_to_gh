@@ -72,16 +72,16 @@ Changing status from new to assigned.
 archive/issue_comments_007617.json:
 ```json
 {
-    "body": "Attachment [trac1223.patch](tarball://root/attachments/some-uuid/ticket1223/trac1223.patch) by was created at 2007-11-21 13:18:36\n\nthis optimizes the plot doctests some",
+    "body": "Attachment [trac1223.patch](tarball://root/attachments/some-uuid/ticket1223/trac1223.patch) by @williamstein created at 2007-11-21 13:18:36\n\nthis optimizes the plot doctests some",
     "created_at": "2007-11-21T13:18:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1223#issuecomment-7617",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac1223.patch](tarball://root/attachments/some-uuid/ticket1223/trac1223.patch) by was created at 2007-11-21 13:18:36
+Attachment [trac1223.patch](tarball://root/attachments/some-uuid/ticket1223/trac1223.patch) by @williamstein created at 2007-11-21 13:18:36
 
 this optimizes the plot doctests some
 
@@ -114,16 +114,16 @@ Michael
 archive/issue_comments_007619.json:
 ```json
 {
-    "body": "Attachment [trac1223b.patch](tarball://root/attachments/some-uuid/ticket1223/trac1223b.patch) by was created at 2007-11-21 13:33:17\n\nspeed ups for graph generators and database doctests",
+    "body": "Attachment [trac1223b.patch](tarball://root/attachments/some-uuid/ticket1223/trac1223b.patch) by @williamstein created at 2007-11-21 13:33:17\n\nspeed ups for graph generators and database doctests",
     "created_at": "2007-11-21T13:33:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1223#issuecomment-7619",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac1223b.patch](tarball://root/attachments/some-uuid/ticket1223/trac1223b.patch) by was created at 2007-11-21 13:33:17
+Attachment [trac1223b.patch](tarball://root/attachments/some-uuid/ticket1223/trac1223b.patch) by @williamstein created at 2007-11-21 13:33:17
 
 speed ups for graph generators and database doctests
 

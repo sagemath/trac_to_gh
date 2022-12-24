@@ -73,7 +73,7 @@ archive/issue_comments_050332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6307#issuecomment-50332",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_050343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6307#issuecomment-50343",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_050344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6307#issuecomment-50344",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -315,16 +315,16 @@ Rather, I have a fix, but the sdist command is taking a long time. Once that is 
 archive/issue_comments_050345.json:
 ```json
 {
-    "body": "Attachment [trac_6307-manifest.in.patch](tarball://root/attachments/some-uuid/ticket6307/trac_6307-manifest.in.patch) by rlm created at 2009-07-22 18:08:58\n\nIt works!\n\n\n```\n[rlm-book templates]$ pwd\n/Users/rlmill/sage-4.1.1.alpha0.6307/dist/sage-4.1.1.alpha0.fix.test/spkg/standard/sage-4.1.1.alpha0.fix.test/sage/server/notebook/templates\n[rlm-book templates]$ ls\ntotal 208K\n-rw-r--r-- 1 rlmill  786 2009-07-22 10:23 account_recovery.html\n-rw-r--r-- 1 rlmill 1.5K 2009-07-22 10:23 account_settings.html\n-rw-r--r-- 1 rlmill  729 2009-07-22 10:23 async_lib.js\n-rw-r--r-- 1 rlmill  448 2009-07-22 10:23 banner.html\n-rw-r--r-- 1 rlmill  467 2009-07-22 10:23 base.html\n-rw-r--r-- 1 rlmill  440 2009-07-22 10:23 base_authenticated.html\n-rw-r--r-- 1 rlmill 2.8K 2009-07-22 10:23 docs.html\n-rw-r--r-- 1 rlmill  324 2009-07-22 10:23 error_message.html\n-rw-r--r-- 1 rlmill  534 2009-07-22 10:23 history.html\n-rw-r--r-- 1 rlmill 1.2K 2009-07-22 10:23 jmol_lib.js\n-rw-r--r-- 1 rlmill  385 2009-07-22 10:23 list_top.html\n-rw-r--r-- 1 rlmill 2.8K 2009-07-22 10:23 login.html\n-rw-r--r-- 1 rlmill 117K 2009-07-22 10:23 notebook_lib.js\n-rw-r--r-- 1 rlmill 2.3K 2009-07-22 10:23 registration.html\n-rw-r--r-- 1 rlmill  284 2009-07-22 10:23 search.html\n-rw-r--r-- 1 rlmill  780 2009-07-22 10:23 source_code.html\n-rw-r--r-- 1 rlmill  220 2009-07-22 10:23 template_error.html\n-rw-r--r-- 1 rlmill 1.3K 2009-07-22 10:23 top_bar.html\n-rw-r--r-- 1 rlmill 1.2K 2009-07-22 10:23 upload.html\n-rw-r--r-- 1 rlmill  324 2009-07-22 10:23 user_management.html\n-rw-r--r-- 1 rlmill 6.7K 2009-07-22 10:23 worksheet_listing.html\n-rw-r--r-- 1 rlmill  280 2009-07-22 10:23 yes_no.html\n```\n",
+    "body": "Attachment [trac_6307-manifest.in.patch](tarball://root/attachments/some-uuid/ticket6307/trac_6307-manifest.in.patch) by @rlmill created at 2009-07-22 18:08:58\n\nIt works!\n\n\n```\n[rlm-book templates]$ pwd\n/Users/rlmill/sage-4.1.1.alpha0.6307/dist/sage-4.1.1.alpha0.fix.test/spkg/standard/sage-4.1.1.alpha0.fix.test/sage/server/notebook/templates\n[rlm-book templates]$ ls\ntotal 208K\n-rw-r--r-- 1 rlmill  786 2009-07-22 10:23 account_recovery.html\n-rw-r--r-- 1 rlmill 1.5K 2009-07-22 10:23 account_settings.html\n-rw-r--r-- 1 rlmill  729 2009-07-22 10:23 async_lib.js\n-rw-r--r-- 1 rlmill  448 2009-07-22 10:23 banner.html\n-rw-r--r-- 1 rlmill  467 2009-07-22 10:23 base.html\n-rw-r--r-- 1 rlmill  440 2009-07-22 10:23 base_authenticated.html\n-rw-r--r-- 1 rlmill 2.8K 2009-07-22 10:23 docs.html\n-rw-r--r-- 1 rlmill  324 2009-07-22 10:23 error_message.html\n-rw-r--r-- 1 rlmill  534 2009-07-22 10:23 history.html\n-rw-r--r-- 1 rlmill 1.2K 2009-07-22 10:23 jmol_lib.js\n-rw-r--r-- 1 rlmill  385 2009-07-22 10:23 list_top.html\n-rw-r--r-- 1 rlmill 2.8K 2009-07-22 10:23 login.html\n-rw-r--r-- 1 rlmill 117K 2009-07-22 10:23 notebook_lib.js\n-rw-r--r-- 1 rlmill 2.3K 2009-07-22 10:23 registration.html\n-rw-r--r-- 1 rlmill  284 2009-07-22 10:23 search.html\n-rw-r--r-- 1 rlmill  780 2009-07-22 10:23 source_code.html\n-rw-r--r-- 1 rlmill  220 2009-07-22 10:23 template_error.html\n-rw-r--r-- 1 rlmill 1.3K 2009-07-22 10:23 top_bar.html\n-rw-r--r-- 1 rlmill 1.2K 2009-07-22 10:23 upload.html\n-rw-r--r-- 1 rlmill  324 2009-07-22 10:23 user_management.html\n-rw-r--r-- 1 rlmill 6.7K 2009-07-22 10:23 worksheet_listing.html\n-rw-r--r-- 1 rlmill  280 2009-07-22 10:23 yes_no.html\n```\n",
     "created_at": "2009-07-22T18:08:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6307#issuecomment-50345",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6307-manifest.in.patch](tarball://root/attachments/some-uuid/ticket6307/trac_6307-manifest.in.patch) by rlm created at 2009-07-22 18:08:58
+Attachment [trac_6307-manifest.in.patch](tarball://root/attachments/some-uuid/ticket6307/trac_6307-manifest.in.patch) by @rlmill created at 2009-07-22 18:08:58
 
 It works!
 
@@ -371,7 +371,7 @@ archive/issue_comments_050346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6307#issuecomment-50346",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

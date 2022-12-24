@@ -3,7 +3,7 @@
 archive/issues_004002.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nIn progress...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4002\n\n",
+    "body": "Assignee: @rlmill\n\nIn progress...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4002\n\n",
     "created_at": "2008-08-30T17:43:32Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_004002.json:
     "title": "raise coverage of sage.graphs to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4002",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 In progress...
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4002
 archive/issue_comments_028903.json:
 ```json
 {
-    "body": "Attachment [trac_4002.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002.patch) by rlm created at 2008-08-30 18:59:47\n\nmhansen will finish `linearextensions.py`, I am now working on the few missing doctests in `graph_generators.py`",
+    "body": "Attachment [trac_4002.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002.patch) by @rlmill created at 2008-08-30 18:59:47\n\nmhansen will finish `linearextensions.py`, I am now working on the few missing doctests in `graph_generators.py`",
     "created_at": "2008-08-30T18:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4002#issuecomment-28903",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_4002.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002.patch) by rlm created at 2008-08-30 18:59:47
+Attachment [trac_4002.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002.patch) by @rlmill created at 2008-08-30 18:59:47
 
 mhansen will finish `linearextensions.py`, I am now working on the few missing doctests in `graph_generators.py`
 
@@ -52,16 +52,16 @@ mhansen will finish `linearextensions.py`, I am now working on the few missing d
 archive/issue_comments_028904.json:
 ```json
 {
-    "body": "Attachment [trac_4002-ggen.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002-ggen.patch) by rlm created at 2008-08-30 19:08:01",
+    "body": "Attachment [trac_4002-ggen.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002-ggen.patch) by @rlmill created at 2008-08-30 19:08:01",
     "created_at": "2008-08-30T19:08:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4002#issuecomment-28904",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_4002-ggen.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002-ggen.patch) by rlm created at 2008-08-30 19:08:01
+Attachment [trac_4002-ggen.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002-ggen.patch) by @rlmill created at 2008-08-30 19:08:01
 
 
 
@@ -70,16 +70,16 @@ Attachment [trac_4002-ggen.patch](tarball://root/attachments/some-uuid/ticket400
 archive/issue_comments_028905.json:
 ```json
 {
-    "body": "Attachment [trac_4002-3.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002-3.patch) by mhansen created at 2008-08-31 03:30:59",
+    "body": "Attachment [trac_4002-3.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002-3.patch) by @mwhansen created at 2008-08-31 03:30:59",
     "created_at": "2008-08-31T03:30:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4002#issuecomment-28905",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4002-3.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002-3.patch) by mhansen created at 2008-08-31 03:30:59
+Attachment [trac_4002-3.patch](tarball://root/attachments/some-uuid/ticket4002/trac_4002-3.patch) by @mwhansen created at 2008-08-31 03:30:59
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_028906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4002#issuecomment-28906",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_028907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4002#issuecomment-28907",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

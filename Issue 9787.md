@@ -3,7 +3,7 @@
 archive/issues_009787.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  gagern\n\nWhen computing the variety over an extension field L of a zero-dimensional ideal of some polynomial ring K[vars], each point of the variety is returned as a dictionary whose keys are generators of L[vars]. It would be more practical to have the keys be either generators of K[vars] or plain strings.\n\n\n```\nsage: R.<x,y> = QQ[]\nsage: J = (x+y, x^2+y^2-1)*R\nsage: V = J.variety(QQbar); V\n[{y: -0.7071067811865475?, x: 0.7071067811865475?}, {y: 0.7071067811865475?, x: -0.7071067811865475?}]\nsage: V[0][x]\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/data/sage-4.5.1/<ipython console> in <module>()\n\nKeyError: x\nsage: V[0]['x']\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/data/sage-4.5.1/<ipython console> in <module>()\n\nKeyError: 'x'\nsage: V[0][QQbar['x,y'].0]\n0.7071067811865475?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9788\n\n",
+    "body": "Assignee: @malb\n\nCC:  @gagern\n\nWhen computing the variety over an extension field L of a zero-dimensional ideal of some polynomial ring K[vars], each point of the variety is returned as a dictionary whose keys are generators of L[vars]. It would be more practical to have the keys be either generators of K[vars] or plain strings.\n\n\n```\nsage: R.<x,y> = QQ[]\nsage: J = (x+y, x^2+y^2-1)*R\nsage: V = J.variety(QQbar); V\n[{y: -0.7071067811865475?, x: 0.7071067811865475?}, {y: 0.7071067811865475?, x: -0.7071067811865475?}]\nsage: V[0][x]\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/data/sage-4.5.1/<ipython console> in <module>()\n\nKeyError: x\nsage: V[0]['x']\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/data/sage-4.5.1/<ipython console> in <module>()\n\nKeyError: 'x'\nsage: V[0][QQbar['x,y'].0]\n0.7071067811865475?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9788\n\n",
     "created_at": "2010-08-23T13:28:40Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_009787.json:
     "title": "The coordinates appearing in the output of variety(L) should be easier to access",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9787",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  gagern
+CC:  @gagern
 
 When computing the variety over an extension field L of a zero-dimensional ideal of some polynomial ring K[vars], each point of the variety is returned as a dictionary whose keys are generators of L[vars]. It would be more practical to have the keys be either generators of K[vars] or plain strings.
 
@@ -64,7 +64,7 @@ archive/issue_comments_096077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96077",
-    "user": "gagern"
+    "user": "@gagern"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_096078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96078",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_096079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96079",
-    "user": "gagern"
+    "user": "@gagern"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_096080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96080",
-    "user": "gagern"
+    "user": "@gagern"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_096082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96082",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_096084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96084",
-    "user": "gagern"
+    "user": "@gagern"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_096085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96085",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_096086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96086",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_096087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96087",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_096089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96089",
-    "user": "gagern"
+    "user": "@gagern"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_096090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96090",
-    "user": "gagern"
+    "user": "@gagern"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_096091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96091",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_096094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96094",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_096095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96095",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_096097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96097",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_096098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96098",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_096099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96099",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -588,7 +588,7 @@ archive/issue_comments_096100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96100",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -624,7 +624,7 @@ archive/issue_comments_096102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96102",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -642,7 +642,7 @@ archive/issue_comments_096103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96103",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -683,7 +683,7 @@ archive/issue_comments_096105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96105",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -701,7 +701,7 @@ archive/issue_comments_096106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96106",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -719,7 +719,7 @@ archive/issue_comments_096107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96107",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -737,7 +737,7 @@ archive/issue_comments_096108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96108",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

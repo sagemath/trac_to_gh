@@ -3,7 +3,7 @@
 archive/issues_001707.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1707\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1707\n\n",
     "created_at": "2008-01-07T07:51:28Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001707.json:
     "title": "add Carlo Hamalainen latin square stuff to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1707",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_010811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1707#issuecomment-10811",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_010812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1707#issuecomment-10812",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to assigned.
 archive/issue_comments_010813.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-01-07T07:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1707#issuecomment-10813",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_010814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1707#issuecomment-10814",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_010815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1707#issuecomment-10815",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_010816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1707#issuecomment-10816",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_010817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1707#issuecomment-10817",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_010823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1707#issuecomment-10823",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_010826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1707#issuecomment-10826",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_010827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1707#issuecomment-10827",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -379,16 +379,16 @@ I'll post a more in-depth review in awhile, but one thing that needs to be done 
 archive/issue_comments_010828.json:
 ```json
 {
-    "body": "Attachment [1707-referee.patch](tarball://root/attachments/some-uuid/ticket1707/1707-referee.patch) by mhansen created at 2008-03-25 14:07:19\n\nApply the last two patches: trac1707-combinat-matrices.patch and 1707-referee.patch",
+    "body": "Attachment [1707-referee.patch](tarball://root/attachments/some-uuid/ticket1707/1707-referee.patch) by @mwhansen created at 2008-03-25 14:07:19\n\nApply the last two patches: trac1707-combinat-matrices.patch and 1707-referee.patch",
     "created_at": "2008-03-25T14:07:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1707#issuecomment-10828",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1707-referee.patch](tarball://root/attachments/some-uuid/ticket1707/1707-referee.patch) by mhansen created at 2008-03-25 14:07:19
+Attachment [1707-referee.patch](tarball://root/attachments/some-uuid/ticket1707/1707-referee.patch) by @mwhansen created at 2008-03-25 14:07:19
 
 Apply the last two patches: trac1707-combinat-matrices.patch and 1707-referee.patch
 
@@ -440,7 +440,7 @@ archive/issue_comments_010831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1707#issuecomment-10831",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

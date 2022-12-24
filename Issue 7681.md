@@ -3,7 +3,7 @@
 archive/issues_007681.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  schilly\n\nKeywords: pexpect, interface, R\n\nFor instance:\n\n```\nsage: r.length([1,2,3,4])\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 4\nsage: r.length([1,2,3,4])\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 2\nsage: r.vector('c(1,2,3,4,3)')\n[1] 1 2 3 4 3\nsage: r.vector('c(1,2,3,4,3)')\n[1] 1 2 3 4 3\nsage: r.vector('c(1,2,3,4,3)')\nError: object 'sage49' not found\n```\n\nSomehow the R interface is keeping stuff from previous calls and returning it, and then at some point choking.   Incidentally, in the above session, after trying many other R commands this way and always getting similar errors, all of a sudden \n\n```\n[1] 1 2 3 4 3\n```\n\nshowed up - as the answer to something else!  Where it had been hiding, I can only guess.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7681\n\n",
+    "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nKeywords: pexpect, interface, R\n\nFor instance:\n\n```\nsage: r.length([1,2,3,4])\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 4\nsage: r.length([1,2,3,4])\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 4\nsage: r.vector('c(1,2,3,4,3)')\n[1] 2\nsage: r.vector('c(1,2,3,4,3)')\n[1] 1 2 3 4 3\nsage: r.vector('c(1,2,3,4,3)')\n[1] 1 2 3 4 3\nsage: r.vector('c(1,2,3,4,3)')\nError: object 'sage49' not found\n```\n\nSomehow the R interface is keeping stuff from previous calls and returning it, and then at some point choking.   Incidentally, in the above session, after trying many other R commands this way and always getting similar errors, all of a sudden \n\n```\n[1] 1 2 3 4 3\n```\n\nshowed up - as the answer to something else!  Where it had been hiding, I can only guess.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7681\n\n",
     "created_at": "2009-12-14T19:43:23Z",
     "labels": [
         "packages",
@@ -14,12 +14,12 @@ archive/issues_007681.json:
     "title": "R pexpect interface seems to keep data around",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7681",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tbd
 
-CC:  schilly
+CC:  @haraldschilly
 
 Keywords: pexpect, interface, R
 
@@ -68,7 +68,7 @@ archive/issue_comments_065881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7681#issuecomment-65881",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_065882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7681#issuecomment-65882",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_065883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7681#issuecomment-65883",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_065884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7681#issuecomment-65884",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_065885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7681#issuecomment-65885",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_065886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7681#issuecomment-65886",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_065887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7681#issuecomment-65887",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -243,16 +243,16 @@ Changing component from packages to interfaces.
 archive/issue_comments_065888.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2010-04-30T16:03:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7681#issuecomment-65888",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -266,7 +266,7 @@ archive/issue_comments_065889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7681#issuecomment-65889",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

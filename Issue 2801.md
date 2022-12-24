@@ -14,7 +14,7 @@ archive/issues_002801.json:
     "title": "add a get_page function which supports https via GNUTLS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2801",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -73,7 +73,7 @@ archive/issue_comments_019229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2801#issuecomment-19229",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_019230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2801#issuecomment-19230",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_019231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2801#issuecomment-19231",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_019232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2801#issuecomment-19232",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

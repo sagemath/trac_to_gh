@@ -3,7 +3,7 @@
 archive/issues_003064.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: a = matrix([])\n\nsage: a.density()\n---------------------------------------------------------------------------\n\n\n<type 'exceptions.ZeroDivisionError'>: Rational division by zero\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3064\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: a = matrix([])\n\nsage: a.density()\n---------------------------------------------------------------------------\n\n\n<type 'exceptions.ZeroDivisionError'>: Rational division by zero\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3064\n\n",
     "created_at": "2008-04-30T15:12:48Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003064.json:
     "title": "empty matrices: density() function throws a ZeroDivisionError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3064",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3064
 archive/issue_comments_021152.json:
 ```json
 {
-    "body": "Attachment [3064.patch](tarball://root/attachments/some-uuid/ticket3064/3064.patch) by dfdeshom created at 2008-04-30 18:17:09\n\nPatch attached.",
+    "body": "Attachment [3064.patch](tarball://root/attachments/some-uuid/ticket3064/3064.patch) by @dfdeshom created at 2008-04-30 18:17:09\n\nPatch attached.",
     "created_at": "2008-04-30T18:17:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3064#issuecomment-21152",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [3064.patch](tarball://root/attachments/some-uuid/ticket3064/3064.patch) by dfdeshom created at 2008-04-30 18:17:09
+Attachment [3064.patch](tarball://root/attachments/some-uuid/ticket3064/3064.patch) by @dfdeshom created at 2008-04-30 18:17:09
 
 Patch attached.
 

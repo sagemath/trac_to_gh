@@ -3,7 +3,7 @@
 archive/issues_006249.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ekirkman rlm kcrisman\n\nKeywords: graph plot z order overlay\n\nLet G1 and G2 be arbitrary graphs.  G1.plot() + G2.plot() and G2.plot() + G1.plot() (notice the ordering) look the same for me, ie I cannot make one graph appear above the other.  What seems to happen is that the vertices are brought forward in the zorder, but it appears that this is done globally, not locally for the individual plot.  I claim this is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6249\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  ekirkman @rlmill @kcrisman\n\nKeywords: graph plot z order overlay\n\nLet G1 and G2 be arbitrary graphs.  G1.plot() + G2.plot() and G2.plot() + G1.plot() (notice the ordering) look the same for me, ie I cannot make one graph appear above the other.  What seems to happen is that the vertices are brought forward in the zorder, but it appears that this is done globally, not locally for the individual plot.  I claim this is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6249\n\n",
     "created_at": "2009-06-08T16:25:31Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_006249.json:
     "title": "graph1.plot() + graph2.plot() doesn't zorder correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6249",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  ekirkman rlm kcrisman
+CC:  ekirkman @rlmill @kcrisman
 
 Keywords: graph plot z order overlay
 
@@ -59,7 +59,7 @@ archive/issue_comments_049907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6249#issuecomment-49907",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_049908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6249#issuecomment-49908",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_049909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6249#issuecomment-49909",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_049910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6249#issuecomment-49910",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

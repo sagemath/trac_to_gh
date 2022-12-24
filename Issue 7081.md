@@ -14,7 +14,7 @@ archive/issues_007081.json:
     "title": "sage -c \"...\" runs from the local/bin/ directory.  ugh",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7081",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7081
 archive/issue_comments_058542.json:
 ```json
 {
-    "body": "Attachment [trac_7081-chdir-fix.patch](tarball://root/attachments/some-uuid/ticket7081/trac_7081-chdir-fix.patch) by timdumol created at 2009-09-30 09:16:43\n\nApply to scripts repo.",
+    "body": "Attachment [trac_7081-chdir-fix.patch](tarball://root/attachments/some-uuid/ticket7081/trac_7081-chdir-fix.patch) by @TimDumol created at 2009-09-30 09:16:43\n\nApply to scripts repo.",
     "created_at": "2009-09-30T09:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7081#issuecomment-58542",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7081-chdir-fix.patch](tarball://root/attachments/some-uuid/ticket7081/trac_7081-chdir-fix.patch) by timdumol created at 2009-09-30 09:16:43
+Attachment [trac_7081-chdir-fix.patch](tarball://root/attachments/some-uuid/ticket7081/trac_7081-chdir-fix.patch) by @TimDumol created at 2009-09-30 09:16:43
 
 Apply to scripts repo.
 
@@ -68,7 +68,7 @@ archive/issue_comments_058543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7081#issuecomment-58543",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_058544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7081#issuecomment-58544",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

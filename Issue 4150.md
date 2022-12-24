@@ -3,7 +3,7 @@
 archive/issues_004150.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  jason\n\nThis moves the automorphism group and isomorphism functions for graphs over to the new framework. It should be tested on a few different architectures before getting merged.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4150\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nThis moves the automorphism group and isomorphism functions for graphs over to the new framework. It should be tested on a few different architectures before getting merged.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4150\n\n",
     "created_at": "2008-09-19T07:42:32Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_004150.json:
     "title": "[with patch, needs review and testing] migrate graphs to new refinement code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4150",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  jason
+CC:  @jasongrout
 
 This moves the automorphism group and isomorphism functions for graphs over to the new framework. It should be tested on a few different architectures before getting merged.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4150
 archive/issue_comments_030130.json:
 ```json
 {
-    "body": "Attachment [trac_4150-switchover-graphs.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-switchover-graphs.patch) by rlm created at 2008-09-19 07:43:20",
+    "body": "Attachment [trac_4150-switchover-graphs.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-switchover-graphs.patch) by @rlmill created at 2008-09-19 07:43:20",
     "created_at": "2008-09-19T07:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30130",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_4150-switchover-graphs.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-switchover-graphs.patch) by rlm created at 2008-09-19 07:43:20
+Attachment [trac_4150-switchover-graphs.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-switchover-graphs.patch) by @rlmill created at 2008-09-19 07:43:20
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_030131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30131",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_030132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30132",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_030133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30133",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_030134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30134",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -146,16 +146,16 @@ Michael
 archive/issue_comments_030136.json:
 ```json
 {
-    "body": "Attachment [trac_4150-fixes.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-fixes.patch) by rlm created at 2008-09-19 14:54:01\n\nPatch fixed.",
+    "body": "Attachment [trac_4150-fixes.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-fixes.patch) by @rlmill created at 2008-09-19 14:54:01\n\nPatch fixed.",
     "created_at": "2008-09-19T14:54:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30136",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_4150-fixes.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-fixes.patch) by rlm created at 2008-09-19 14:54:01
+Attachment [trac_4150-fixes.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-fixes.patch) by @rlmill created at 2008-09-19 14:54:01
 
 Patch fixed.
 

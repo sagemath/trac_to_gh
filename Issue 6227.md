@@ -14,7 +14,7 @@ archive/issues_006227.json:
     "title": "Remove python_* files in ext directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6227",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -46,7 +46,7 @@ archive/issue_comments_049704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6227#issuecomment-49704",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_049705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6227#issuecomment-49705",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

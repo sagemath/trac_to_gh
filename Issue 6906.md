@@ -3,7 +3,7 @@
 archive/issues_006906.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nAs the summary says.  The spkg is here: [http://sage.math.washington.edu/home/palmieri/SPKG/mercurial-1.3.1.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/mercurial-1.3.1.p0.spkg).  Please test thoroughly.\n\nThis fixes the problem at #6440, by the way.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6906\n\n",
+    "body": "Assignee: @jhpalmieri\n\nAs the summary says.  The spkg is here: [http://sage.math.washington.edu/home/palmieri/SPKG/mercurial-1.3.1.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/mercurial-1.3.1.p0.spkg).  Please test thoroughly.\n\nThis fixes the problem at #6440, by the way.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6906\n\n",
     "created_at": "2009-09-08T23:23:33Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_006906.json:
     "title": "[with spkg, needs review] update Mercurial to version 1.3.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6906",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 As the summary says.  The spkg is here: [http://sage.math.washington.edu/home/palmieri/SPKG/mercurial-1.3.1.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/mercurial-1.3.1.p0.spkg).  Please test thoroughly.
 
@@ -40,7 +40,7 @@ archive/issue_comments_057055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6906#issuecomment-57055",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_057056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6906#issuecomment-57056",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_057057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6906#issuecomment-57057",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_057058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6906#issuecomment-57058",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

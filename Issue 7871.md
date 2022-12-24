@@ -3,7 +3,7 @@
 archive/issues_007871.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman timdumol\n\nIE 7/8 use a bluish background color for `interact` tables, instead of white.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/d3feb880dcecfcb6#).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7871\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @TimDumol\n\nIE 7/8 use a bluish background color for `interact` tables, instead of white.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/d3feb880dcecfcb6#).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7871\n\n",
     "created_at": "2010-01-08T09:28:36Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007871.json:
     "title": "Mis-specified background color for interacts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7871",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman timdumol
+CC:  @kcrisman @TimDumol
 
 IE 7/8 use a bluish background color for `interact` tables, instead of white.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7871
 archive/issue_comments_068328.json:
 ```json
 {
-    "body": "Attachment [trac_7871-interact_bgcolor.patch](tarball://root/attachments/some-uuid/ticket7871/trac_7871-interact_bgcolor.patch) by mpatel created at 2010-01-08 09:31:15\n\nFix CSS color.  sagenb repo.",
+    "body": "Attachment [trac_7871-interact_bgcolor.patch](tarball://root/attachments/some-uuid/ticket7871/trac_7871-interact_bgcolor.patch) by @qed777 created at 2010-01-08 09:31:15\n\nFix CSS color.  sagenb repo.",
     "created_at": "2010-01-08T09:31:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7871#issuecomment-68328",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7871-interact_bgcolor.patch](tarball://root/attachments/some-uuid/ticket7871/trac_7871-interact_bgcolor.patch) by mpatel created at 2010-01-08 09:31:15
+Attachment [trac_7871-interact_bgcolor.patch](tarball://root/attachments/some-uuid/ticket7871/trac_7871-interact_bgcolor.patch) by @qed777 created at 2010-01-08 09:31:15
 
 Fix CSS color.  sagenb repo.
 
@@ -61,7 +61,7 @@ archive/issue_comments_068329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7871#issuecomment-68329",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_068330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7871#issuecomment-68330",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_068331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7871#issuecomment-68331",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_068332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7871#issuecomment-68332",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_068333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7871#issuecomment-68333",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_068334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7871#issuecomment-68334",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_068335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7871#issuecomment-68335",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_068336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7871#issuecomment-68336",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_068337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7871#issuecomment-68337",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

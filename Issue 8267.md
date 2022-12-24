@@ -14,7 +14,7 @@ archive/issues_008267.json:
     "title": "cygwin: ratpoints is broken again",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8267",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -49,7 +49,7 @@ archive/issue_comments_073178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8267#issuecomment-73178",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_073179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8267#issuecomment-73179",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

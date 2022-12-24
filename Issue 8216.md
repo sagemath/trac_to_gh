@@ -3,7 +3,7 @@
 archive/issues_008216.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  dperkinson wdj jdemeyer\n\nKeywords: sandpile\n\nRecently the sandpile-1.51 spkg was included in the experimental components.  This ticket updates the source to version 2.0.\n\nIn addition to updating the source, the installation script has been simplified and the SPKG.txt has been improved in an effort to get this package to optional status.  \n\nThis package does depend on the 4ti2.p0 spkg, which is currently experimental.  As a separate but dependent ticket 4ti2 will be upgraded to an optional package as well to harmonize this dependency.\n\nNew package is at:\n[http://sage.math.washington.edu/home/mhampton/sandpile-2.0.spkg](http://sage.math.washington.edu/home/mhampton/sandpile-2.0.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8216\n\n",
+    "body": "Assignee: tbd\n\nCC:  dperkinson @wdjoyner @jdemeyer\n\nKeywords: sandpile\n\nRecently the sandpile-1.51 spkg was included in the experimental components.  This ticket updates the source to version 2.0.\n\nIn addition to updating the source, the installation script has been simplified and the SPKG.txt has been improved in an effort to get this package to optional status.  \n\nThis package does depend on the 4ti2.p0 spkg, which is currently experimental.  As a separate but dependent ticket 4ti2 will be upgraded to an optional package as well to harmonize this dependency.\n\nNew package is at:\n[http://sage.math.washington.edu/home/mhampton/sandpile-2.0.spkg](http://sage.math.washington.edu/home/mhampton/sandpile-2.0.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8216\n\n",
     "created_at": "2010-02-08T20:20:14Z",
     "labels": [
         "packages: optional",
@@ -19,7 +19,7 @@ archive/issues_008216.json:
 ```
 Assignee: tbd
 
-CC:  dperkinson wdj jdemeyer
+CC:  dperkinson @wdjoyner @jdemeyer
 
 Keywords: sandpile
 
@@ -66,7 +66,7 @@ archive/issue_comments_072451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8216#issuecomment-72451",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_072453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8216#issuecomment-72453",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_072460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8216#issuecomment-72460",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_072462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8216#issuecomment-72462",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_072463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8216#issuecomment-72463",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -587,7 +587,7 @@ archive/issue_comments_072466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8216#issuecomment-72466",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -612,7 +612,7 @@ archive/issue_comments_072467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8216#issuecomment-72467",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

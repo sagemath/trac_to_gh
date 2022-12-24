@@ -3,7 +3,7 @@
 archive/issues_009877.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: pynac\n\nAfter exposing the symbolic zeta function at the top level in #8864, we get:\n\n\n```\nsage: zeta(1)\nzeta(1)\n```\n\n\nWe should return unsigned infinity in this case.\n\nSee also #5739.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9878\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nAfter exposing the symbolic zeta function at the top level in #8864, we get:\n\n\n```\nsage: zeta(1)\nzeta(1)\n```\n\n\nWe should return unsigned infinity in this case.\n\nSee also #5739.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9878\n\n",
     "created_at": "2010-09-09T08:19:55Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_009877.json:
     "title": "symbolic zeta(1) should return unsigned infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9877",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: pynac
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9878
 archive/issue_comments_097790.json:
 ```json
 {
-    "body": "Attachment [trac_9878-zeta_infinity.patch](tarball://root/attachments/some-uuid/ticket9878/trac_9878-zeta_infinity.patch) by burcin created at 2010-09-12 12:15:07\n\nWith the new pynac package at #9201, we have:\n\n\n```\nsage: zeta(1)\nInfinity\n```\n\n\nattachment:trac_9878-zeta_infinity.patch adds doctests for this change.\n\nThe pynac package includes patches for #9394, #9834, #9879, #9881, #9900 as well as this ticket. See the ticket description of #9901 for the list (and order) of patches associated to the new version.",
+    "body": "Attachment [trac_9878-zeta_infinity.patch](tarball://root/attachments/some-uuid/ticket9878/trac_9878-zeta_infinity.patch) by @burcin created at 2010-09-12 12:15:07\n\nWith the new pynac package at #9201, we have:\n\n\n```\nsage: zeta(1)\nInfinity\n```\n\n\nattachment:trac_9878-zeta_infinity.patch adds doctests for this change.\n\nThe pynac package includes patches for #9394, #9834, #9879, #9881, #9900 as well as this ticket. See the ticket description of #9901 for the list (and order) of patches associated to the new version.",
     "created_at": "2010-09-12T12:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9877#issuecomment-97790",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9878-zeta_infinity.patch](tarball://root/attachments/some-uuid/ticket9878/trac_9878-zeta_infinity.patch) by burcin created at 2010-09-12 12:15:07
+Attachment [trac_9878-zeta_infinity.patch](tarball://root/attachments/some-uuid/ticket9878/trac_9878-zeta_infinity.patch) by @burcin created at 2010-09-12 12:15:07
 
 With the new pynac package at #9201, we have:
 
@@ -81,7 +81,7 @@ archive/issue_comments_097791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9877#issuecomment-97791",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_097792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9877#issuecomment-97792",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_097793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9877#issuecomment-97793",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_097794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9877#issuecomment-97794",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_097795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9877#issuecomment-97795",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

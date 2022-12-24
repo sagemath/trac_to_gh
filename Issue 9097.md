@@ -3,7 +3,7 @@
 archive/issues_009097.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp f.r.bissey@massey.ac.nz\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## The problem\n\n\n```\n#error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -I/export/home/drkirkby/sage-4.4.2/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -I/export/home/drkirkby/sage-4.4.2/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\nERROR: There was an error building c_lib.\n\nERROR installing SAGE\n\nreal\t0m4.020s\nuser\t0m1.014s\nsys\t0m2.138s\nsage: An error occurred while installing sage-4.4.2\n```\n\n\n## Likely cause\nIt looks as though the -m64 option is not getting through to the library. Since that uses SCons to build, and I don't understand SCons (and very few people seem to), this could be a pig to fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9097\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies f.r.bissey@massey.ac.nz\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## The problem\n\n\n```\n#error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -I/export/home/drkirkby/sage-4.4.2/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -I/export/home/drkirkby/sage-4.4.2/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\nERROR: There was an error building c_lib.\n\nERROR installing SAGE\n\nreal\t0m4.020s\nuser\t0m1.014s\nsys\t0m2.138s\nsage: An error occurred while installing sage-4.4.2\n```\n\n\n## Likely cause\nIt looks as though the -m64 option is not getting through to the library. Since that uses SCons to build, and I don't understand SCons (and very few people seem to), this could be a pig to fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9097\n\n",
     "created_at": "2010-05-31T00:49:01Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009097.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp f.r.bissey@massey.ac.nz
+CC:  @jaapspies f.r.bissey@massey.ac.nz
 
 ## Build environment
 * Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM
@@ -213,7 +213,7 @@ archive/issue_comments_084524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84524",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -260,16 +260,16 @@ I think this simplify the logic. The building of extension afterwards is separat
 archive/issue_comments_084525.json:
 ```json
 {
-    "body": "Changing assignee from drkirkby to fbissey.",
+    "body": "Changing assignee from drkirkby to @kiwifb.",
     "created_at": "2010-07-01T01:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84525",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Changing assignee from drkirkby to fbissey.
+Changing assignee from drkirkby to @kiwifb.
 
 
 
@@ -283,7 +283,7 @@ archive/issue_comments_084526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84526",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -296,16 +296,16 @@ Cleaner and proper patch with the same ideas previously shown
 archive/issue_comments_084527.json:
 ```json
 {
-    "body": "Attachment [sage_clib64.patch](tarball://root/attachments/some-uuid/ticket9097/sage_clib64.patch) by fbissey created at 2010-07-01 09:41:01\n\nNote that the space in\n\n```\nLINKFLAGS=\" -single_module -flat_namespace -undefined dynamic_lookup\"\n```\n\nis on purpose as scons concatenate strings. We don't want to end\nup with \"-m64-single_module\".",
+    "body": "Attachment [sage_clib64.patch](tarball://root/attachments/some-uuid/ticket9097/sage_clib64.patch) by @kiwifb created at 2010-07-01 09:41:01\n\nNote that the space in\n\n```\nLINKFLAGS=\" -single_module -flat_namespace -undefined dynamic_lookup\"\n```\n\nis on purpose as scons concatenate strings. We don't want to end\nup with \"-m64-single_module\".",
     "created_at": "2010-07-01T09:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84527",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [sage_clib64.patch](tarball://root/attachments/some-uuid/ticket9097/sage_clib64.patch) by fbissey created at 2010-07-01 09:41:01
+Attachment [sage_clib64.patch](tarball://root/attachments/some-uuid/ticket9097/sage_clib64.patch) by @kiwifb created at 2010-07-01 09:41:01
 
 Note that the space in
 
@@ -392,7 +392,7 @@ archive/issue_comments_084531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84531",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -460,7 +460,7 @@ archive/issue_comments_084533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84533",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

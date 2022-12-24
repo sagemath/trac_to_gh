@@ -14,7 +14,7 @@ archive/issues_006202.json:
     "title": "bitset \"noise\" on solaris sparc (mark)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6202",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -108,7 +108,7 @@ archive/issue_comments_049545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49545",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_049546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49546",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_049547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49547",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_049548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49548",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_049549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49549",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_049550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49550",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -225,16 +225,16 @@ It looks like it wasn't added that long ago, but I'm actually surprised it has b
 archive/issue_comments_049551.json:
 ```json
 {
-    "body": "Attachment [6202-bitset-testcase.patch](tarball://root/attachments/some-uuid/ticket6202/6202-bitset-testcase.patch) by robertwb created at 2009-06-07 00:08:04",
+    "body": "Attachment [6202-bitset-testcase.patch](tarball://root/attachments/some-uuid/ticket6202/6202-bitset-testcase.patch) by @robertwb created at 2009-06-07 00:08:04",
     "created_at": "2009-06-07T00:08:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49551",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6202-bitset-testcase.patch](tarball://root/attachments/some-uuid/ticket6202/6202-bitset-testcase.patch) by robertwb created at 2009-06-07 00:08:04
+Attachment [6202-bitset-testcase.patch](tarball://root/attachments/some-uuid/ticket6202/6202-bitset-testcase.patch) by @robertwb created at 2009-06-07 00:08:04
 
 
 
@@ -248,7 +248,7 @@ archive/issue_comments_049552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49552",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_049553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49553",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_049554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49554",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_049555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49555",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_049556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49556",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -461,7 +461,7 @@ archive/issue_comments_049557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49557",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_049558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49558",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -494,16 +494,16 @@ apply only this patch
 archive/issue_comments_049559.json:
 ```json
 {
-    "body": "Attachment [6202-bitset-testcase-new.patch](tarball://root/attachments/some-uuid/ticket6202/6202-bitset-testcase-new.patch) by robertwb created at 2009-06-10 08:39:59",
+    "body": "Attachment [6202-bitset-testcase-new.patch](tarball://root/attachments/some-uuid/ticket6202/6202-bitset-testcase-new.patch) by @robertwb created at 2009-06-10 08:39:59",
     "created_at": "2009-06-10T08:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49559",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6202-bitset-testcase-new.patch](tarball://root/attachments/some-uuid/ticket6202/6202-bitset-testcase-new.patch) by robertwb created at 2009-06-10 08:39:59
+Attachment [6202-bitset-testcase-new.patch](tarball://root/attachments/some-uuid/ticket6202/6202-bitset-testcase-new.patch) by @robertwb created at 2009-06-10 08:39:59
 
 
 
@@ -517,7 +517,7 @@ archive/issue_comments_049560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49560",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_049561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49561",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

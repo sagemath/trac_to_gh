@@ -14,7 +14,7 @@ archive/issues_008020.json:
     "title": "python-2.6.4.p4 spkg *totally breaks* itanium support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8020",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -55,7 +55,7 @@ archive/issue_comments_070079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8020#issuecomment-70079",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_070080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8020#issuecomment-70080",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_070081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8020#issuecomment-70081",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_070082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8020#issuecomment-70082",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_070083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8020#issuecomment-70083",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

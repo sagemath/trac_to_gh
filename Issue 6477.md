@@ -14,7 +14,7 @@ archive/issues_006477.json:
     "title": "notebook -- improve UNICODE handling of truncated_name function in worksheet.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6477",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -88,7 +88,7 @@ archive/issue_comments_052361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6477#issuecomment-52361",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_052362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6477#issuecomment-52362",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

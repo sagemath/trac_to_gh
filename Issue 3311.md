@@ -122,16 +122,16 @@ Attachment [trac_3311_scripts_hgignore.patch](tarball://root/attachments/some-uu
 archive/issue_comments_022902.json:
 ```json
 {
-    "body": "Attachment [trac_3311_scripts_remove_dsage.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_scripts_remove_dsage.patch) by was created at 2008-05-27 04:07:42",
+    "body": "Attachment [trac_3311_scripts_remove_dsage.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_scripts_remove_dsage.patch) by @williamstein created at 2008-05-27 04:07:42",
     "created_at": "2008-05-27T04:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3311#issuecomment-22902",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_3311_scripts_remove_dsage.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_scripts_remove_dsage.patch) by was created at 2008-05-27 04:07:42
+Attachment [trac_3311_scripts_remove_dsage.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_scripts_remove_dsage.patch) by @williamstein created at 2008-05-27 04:07:42
 
 
 
@@ -140,16 +140,16 @@ Attachment [trac_3311_scripts_remove_dsage.patch](tarball://root/attachments/som
 archive/issue_comments_022903.json:
 ```json
 {
-    "body": "Attachment [trac_3311_extcode.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_extcode.patch) by gfurnish created at 2008-05-27 05:20:49",
+    "body": "Attachment [trac_3311_extcode.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_extcode.patch) by @garyfurnish created at 2008-05-27 05:20:49",
     "created_at": "2008-05-27T05:20:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3311#issuecomment-22903",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3311_extcode.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_extcode.patch) by gfurnish created at 2008-05-27 05:20:49
+Attachment [trac_3311_extcode.patch](tarball://root/attachments/some-uuid/ticket3311/trac_3311_extcode.patch) by @garyfurnish created at 2008-05-27 05:20:49
 
 
 
@@ -163,7 +163,7 @@ archive/issue_comments_022904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3311#issuecomment-22904",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006331.json:
     "title": "optional doctest failure -- magma interface slight problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6331",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -95,7 +95,7 @@ archive/issue_comments_050547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6331#issuecomment-50547",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_050548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6331",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6331#issuecomment-50548",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

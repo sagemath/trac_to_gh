@@ -3,7 +3,7 @@
 archive/issues_009281.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jsp leif jpflori jakobkroeker chapoton\n\nThe purposes of this ticket are to \n* Identify what standard packages have an spkg-check file present. At the time the ticket was opened, only 19 packages had spkg-check files out of 98 packages. (Some don't need them, such as where the package just copies a database)\n* Document whether the package builds on OpenSolaris x64\n* Document whether the package passes tests when Sage is built with SAGE_CHECK=\"yes\" on OpenSolaris x64. \n\nThe following lists: \n\n* The standard packages in Sage\n* Whether the package builds on OpenSolaris x64\n* Whether the package has an spkg-check file\n* Test results when running 'make' while SAGE_CHECK=\"yes\" on OpenSolaris x64\n* Notes, with ticket number if needed for resolving test issues.\n\nThe aim of this ticket is not to give details about build issues for the packages. For that, see #9026. The aim is to show what packages have spkg-check files, and collect data on what the results from the tests are. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9281\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jaapspies @nexttime jpflori jakobkroeker @fchapoton\n\nThe purposes of this ticket are to \n* Identify what standard packages have an spkg-check file present. At the time the ticket was opened, only 19 packages had spkg-check files out of 98 packages. (Some don't need them, such as where the package just copies a database)\n* Document whether the package builds on OpenSolaris x64\n* Document whether the package passes tests when Sage is built with SAGE_CHECK=\"yes\" on OpenSolaris x64. \n\nThe following lists: \n\n* The standard packages in Sage\n* Whether the package builds on OpenSolaris x64\n* Whether the package has an spkg-check file\n* Test results when running 'make' while SAGE_CHECK=\"yes\" on OpenSolaris x64\n* Notes, with ticket number if needed for resolving test issues.\n\nThe aim of this ticket is not to give details about build issues for the packages. For that, see #9026. The aim is to show what packages have spkg-check files, and collect data on what the results from the tests are. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9281\n\n",
     "created_at": "2010-06-20T03:42:55Z",
     "labels": [
         "spkg-check",
@@ -19,7 +19,7 @@ archive/issues_009281.json:
 ```
 Assignee: tbd
 
-CC:  jsp leif jpflori jakobkroeker chapoton
+CC:  @jaapspies @nexttime jpflori jakobkroeker @fchapoton
 
 The purposes of this ticket are to 
 * Identify what standard packages have an spkg-check file present. At the time the ticket was opened, only 19 packages had spkg-check files out of 98 packages. (Some don't need them, such as where the package just copies a database)
@@ -53,7 +53,7 @@ archive/issue_comments_087424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87424",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_087426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87426",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_087428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87428",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_087429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87429",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_087432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87432",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_087434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87434",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_087436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87436",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_087437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87437",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_087438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87438",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_087439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87439",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_087440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9281",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87440",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

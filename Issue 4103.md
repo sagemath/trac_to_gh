@@ -3,7 +3,7 @@
 archive/issues_004103.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe cmap argument for vector field plots is not used.  Does anyone know why it's there?  I don't think it's even valid matplotlib code.\n\nThis patch deletes the option.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4103\n\n",
+    "body": "Assignee: @williamstein\n\nThe cmap argument for vector field plots is not used.  Does anyone know why it's there?  I don't think it's even valid matplotlib code.\n\nThis patch deletes the option.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4103\n\n",
     "created_at": "2008-09-12T04:03:03Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004103.json:
     "title": "Delete the cmap option for vector field plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4103",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The cmap argument for vector field plots is not used.  Does anyone know why it's there?  I don't think it's even valid matplotlib code.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4103
 archive/issue_comments_029713.json:
 ```json
 {
-    "body": "Attachment [plot_vector_field_cmap.patch](tarball://root/attachments/some-uuid/ticket4103/plot_vector_field_cmap.patch) by jason created at 2008-09-12 04:14:00",
+    "body": "Attachment [plot_vector_field_cmap.patch](tarball://root/attachments/some-uuid/ticket4103/plot_vector_field_cmap.patch) by @jasongrout created at 2008-09-12 04:14:00",
     "created_at": "2008-09-12T04:14:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4103#issuecomment-29713",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [plot_vector_field_cmap.patch](tarball://root/attachments/some-uuid/ticket4103/plot_vector_field_cmap.patch) by jason created at 2008-09-12 04:14:00
+Attachment [plot_vector_field_cmap.patch](tarball://root/attachments/some-uuid/ticket4103/plot_vector_field_cmap.patch) by @jasongrout created at 2008-09-12 04:14:00
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007889.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  jason\n\nKeywords: revolution,plot\n\nAs a continuation of the recent cloning of ploting methods found in mathematica. I've started a clone of Mathematica's [RevolutionPlot3D](http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html).\n\nMy version, however, can specify the axis of rotation of the curve, given as a line paralel to the z axis, located in the point of coordinates (x;y). And also, the posibility to display the revolved curve.\n\nThe code so far is:\n\n```\ndef revolution_plot(cur,trange,phirange=None,axis=(0,0),showcurve=False,**kwds):\n   def findvar(expr):\n       try:\n           vart=cur.args()[0]\n       except:\n           vart=var('t')\n       return vart\n\n   if phirange==None:#this if-else provides a phirange\n       phi=var('phi')\n       phirange=(phi,0,2*pi)\n   else:\n       phi=phirange[0]\n       phirange=(phi,phirange[1],phirange[2])\n\n   if str(type(cur)) == \"<type 'tuple'>\":#this if-else provides a vector v to be ploted\n       vart=findvar(cur[0])        \n       R=sqrt((cur[0]-axis[0])^2+axis[1]^2)\n       v=(R*cos(phi)+axis[0],R*sin(phi)+axis[1],cur[1])\n       curveplot=parametric_plot3d((cur[0],0,cur[1]),trange,thickness=2,rgbcolor=(1,0,0))\n   elif str(type(cur))== \"<type 'list'>\":\n       vart=findvar(cur[0])        \n       R=sqrt((cur[0]-axis[0])^2+axis[1]^2)\n       v=(R*cos(phi)+axis[0],R*sin(phi)+axis[1],cur[1])\n       curveplot=parametric_plot3d((cur[0],0,cur[1]),trange,thickness=2,rgbcolor=(1,0,0))\n   else:\n       vart=findvar(cur)\n       R=sqrt((vart-axis[0])^2+(axis[1])^2)\n       v=(R*cos(phi)+axis[0],R*sin(phi)+axis[1],cur)\n       curveplot=parametric_plot3d((vart,0,cur),trange,thickness=2,rgbcolor=(1,0,0))\n       \n   if showcurve:\n       return parametric_plot3d(v,trange,phirange,**kwds)+curveplot\n   return parametric_plot3d(v,trange,phirange,**kwds) \n```\n\n\nExamples of it are available in [this worksheet](http://www.sagenb.org/home/pub/1342/)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7889\n\n",
+    "body": "Assignee: olazo\n\nCC:  @jasongrout\n\nKeywords: revolution,plot\n\nAs a continuation of the recent cloning of ploting methods found in mathematica. I've started a clone of Mathematica's [RevolutionPlot3D](http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html).\n\nMy version, however, can specify the axis of rotation of the curve, given as a line paralel to the z axis, located in the point of coordinates (x;y). And also, the posibility to display the revolved curve.\n\nThe code so far is:\n\n```\ndef revolution_plot(cur,trange,phirange=None,axis=(0,0),showcurve=False,**kwds):\n   def findvar(expr):\n       try:\n           vart=cur.args()[0]\n       except:\n           vart=var('t')\n       return vart\n\n   if phirange==None:#this if-else provides a phirange\n       phi=var('phi')\n       phirange=(phi,0,2*pi)\n   else:\n       phi=phirange[0]\n       phirange=(phi,phirange[1],phirange[2])\n\n   if str(type(cur)) == \"<type 'tuple'>\":#this if-else provides a vector v to be ploted\n       vart=findvar(cur[0])        \n       R=sqrt((cur[0]-axis[0])^2+axis[1]^2)\n       v=(R*cos(phi)+axis[0],R*sin(phi)+axis[1],cur[1])\n       curveplot=parametric_plot3d((cur[0],0,cur[1]),trange,thickness=2,rgbcolor=(1,0,0))\n   elif str(type(cur))== \"<type 'list'>\":\n       vart=findvar(cur[0])        \n       R=sqrt((cur[0]-axis[0])^2+axis[1]^2)\n       v=(R*cos(phi)+axis[0],R*sin(phi)+axis[1],cur[1])\n       curveplot=parametric_plot3d((cur[0],0,cur[1]),trange,thickness=2,rgbcolor=(1,0,0))\n   else:\n       vart=findvar(cur)\n       R=sqrt((vart-axis[0])^2+(axis[1])^2)\n       v=(R*cos(phi)+axis[0],R*sin(phi)+axis[1],cur)\n       curveplot=parametric_plot3d((vart,0,cur),trange,thickness=2,rgbcolor=(1,0,0))\n       \n   if showcurve:\n       return parametric_plot3d(v,trange,phirange,**kwds)+curveplot\n   return parametric_plot3d(v,trange,phirange,**kwds) \n```\n\n\nExamples of it are available in [this worksheet](http://www.sagenb.org/home/pub/1342/)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7889\n\n",
     "created_at": "2010-01-10T03:28:36Z",
     "labels": [
         "graphics",
@@ -19,7 +19,7 @@ archive/issues_007889.json:
 ```
 Assignee: olazo
 
-CC:  jason
+CC:  @jasongrout
 
 Keywords: revolution,plot
 
@@ -247,7 +247,7 @@ archive/issue_comments_068599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68599",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_068600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68600",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -490,16 +490,16 @@ Attachment [revolution_solid.png](tarball://root/attachments/some-uuid/ticket788
 archive/issue_comments_068605.json:
 ```json
 {
-    "body": "Attachment [curvy curve.png](tarball://root/attachments/some-uuid/ticket7889/curvy curve.png) by kcrisman created at 2010-02-12 19:38:31\n\nJust a few more small things; since this will be a nice new file and functionality, we can afford to start off being very picky.\n\nThe optional parameters should be clearly marked as optional, as well as the defaults - again, other docstrings should have good examples.\n\nPlease make sure the docstring lines are only a given length.  For whatever reason, we don't let them wrap around (except with error messages or very long output, of course).  I think 80 characters?\n\nDon't need a double colon in line 38 since the examples come later.\n\nLine 33 is confusing, and perhaps contradicts the opening statements of usage (maybe I'm just confused on that, though):\n\n```\n - ``axis`` - A 2-tuple that specifies the position of the revolution axis given that it is parallel to parallel_axis. If parallel_axis is 'z' then axis the a point in which the revolution axis intersects the  `x y` plane. If parallel_axis is 'x' axis is a point in the `y z` plane. And if parallel_axis is 'y' axis is a point in the `x z` plane. \n```\n\nIn fact, one thing people often do is like\n\n```\n- ``axis`` - (default: 'z') Specifies position of...\n\n   - 'z': The axis is parallel to the `z` axis, intersecting the `x y` plane at the specified point\n\n   - etc.\n```\n\nNotice the spaces between the options for readability.  This might even be required in the Sage developer guidelines, I'm not sure.\n\nLines 65 and 69 should be capitalized?\n\nLook at the plot3d files to see what we decided the convention was for 3d - I can't remember if it's \"3D\" or \"3d\" or \"3-D\" or ...\n\nOne should of course be able to input a 2 OR 3 tuple for phirange; I didn't mean you should completely get rid of that option, since it's an option in parametric_plot3d.    But it still bothers me that we are creating random new variables called 'phi' or 'fi'...  the fix makes sense, but what if phi meant something *else* in the current Sage session?  Maybe you can avoid this using lambda functions (check timings, hopefully would be similar or better... look at the documentation for the third way to call parametric_plot3d:\n\n```\n        #. We draw a parametric surface using 3 Python functions (defined\n           using lambda):\n        \n           ::\n        \n               sage: f = (lambda u,v: cos(u), lambda u,v: sin(u)+cos(v), lambda u,v: sin(v))\n               sage: parametric_plot3d(f, (0, 2*pi), (-pi, pi))\n        \n```\n\nSo here we do not need to have a three-tuple for phirange, or indeed trange.  Of course, they now have to be Python or 'callable' functions.\n\nStylistically you could (optionally, obviously not necessary but does improve readability) \n\n```\nfrom sage.plot.plot3d.parametric_plot3d import parametric_plot3d\n...\ncurveplot = parametric_plot3d...\n```\n\n\nAnd feel free to disagree with any comments; after all, you wrote it!  I think these all make sense, though.",
+    "body": "Attachment [curvy curve.png](tarball://root/attachments/some-uuid/ticket7889/curvy curve.png) by @kcrisman created at 2010-02-12 19:38:31\n\nJust a few more small things; since this will be a nice new file and functionality, we can afford to start off being very picky.\n\nThe optional parameters should be clearly marked as optional, as well as the defaults - again, other docstrings should have good examples.\n\nPlease make sure the docstring lines are only a given length.  For whatever reason, we don't let them wrap around (except with error messages or very long output, of course).  I think 80 characters?\n\nDon't need a double colon in line 38 since the examples come later.\n\nLine 33 is confusing, and perhaps contradicts the opening statements of usage (maybe I'm just confused on that, though):\n\n```\n - ``axis`` - A 2-tuple that specifies the position of the revolution axis given that it is parallel to parallel_axis. If parallel_axis is 'z' then axis the a point in which the revolution axis intersects the  `x y` plane. If parallel_axis is 'x' axis is a point in the `y z` plane. And if parallel_axis is 'y' axis is a point in the `x z` plane. \n```\n\nIn fact, one thing people often do is like\n\n```\n- ``axis`` - (default: 'z') Specifies position of...\n\n   - 'z': The axis is parallel to the `z` axis, intersecting the `x y` plane at the specified point\n\n   - etc.\n```\n\nNotice the spaces between the options for readability.  This might even be required in the Sage developer guidelines, I'm not sure.\n\nLines 65 and 69 should be capitalized?\n\nLook at the plot3d files to see what we decided the convention was for 3d - I can't remember if it's \"3D\" or \"3d\" or \"3-D\" or ...\n\nOne should of course be able to input a 2 OR 3 tuple for phirange; I didn't mean you should completely get rid of that option, since it's an option in parametric_plot3d.    But it still bothers me that we are creating random new variables called 'phi' or 'fi'...  the fix makes sense, but what if phi meant something *else* in the current Sage session?  Maybe you can avoid this using lambda functions (check timings, hopefully would be similar or better... look at the documentation for the third way to call parametric_plot3d:\n\n```\n        #. We draw a parametric surface using 3 Python functions (defined\n           using lambda):\n        \n           ::\n        \n               sage: f = (lambda u,v: cos(u), lambda u,v: sin(u)+cos(v), lambda u,v: sin(v))\n               sage: parametric_plot3d(f, (0, 2*pi), (-pi, pi))\n        \n```\n\nSo here we do not need to have a three-tuple for phirange, or indeed trange.  Of course, they now have to be Python or 'callable' functions.\n\nStylistically you could (optionally, obviously not necessary but does improve readability) \n\n```\nfrom sage.plot.plot3d.parametric_plot3d import parametric_plot3d\n...\ncurveplot = parametric_plot3d...\n```\n\n\nAnd feel free to disagree with any comments; after all, you wrote it!  I think these all make sense, though.",
     "created_at": "2010-02-12T19:38:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68605",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [curvy curve.png](tarball://root/attachments/some-uuid/ticket7889/curvy curve.png) by kcrisman created at 2010-02-12 19:38:31
+Attachment [curvy curve.png](tarball://root/attachments/some-uuid/ticket7889/curvy curve.png) by @kcrisman created at 2010-02-12 19:38:31
 
 Just a few more small things; since this will be a nice new file and functionality, we can afford to start off being very picky.
 
@@ -569,7 +569,7 @@ archive/issue_comments_068606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68606",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -700,7 +700,7 @@ archive/issue_comments_068612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68612",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -713,16 +713,16 @@ The patch does not touch these functions; those functions were not documented be
 archive/issue_comments_068613.json:
 ```json
 {
-    "body": "Changing assignee from olazo to jason.",
+    "body": "Changing assignee from olazo to @jasongrout.",
     "created_at": "2010-02-27T19:19:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68613",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from olazo to jason.
+Changing assignee from olazo to @jasongrout.
 
 
 
@@ -731,16 +731,16 @@ Changing assignee from olazo to jason.
 archive/issue_comments_068614.json:
 ```json
 {
-    "body": "Changing assignee from jason to olazo.",
+    "body": "Changing assignee from @jasongrout to olazo.",
     "created_at": "2010-02-27T19:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68614",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from jason to olazo.
+Changing assignee from @jasongrout to olazo.
 
 
 
@@ -844,7 +844,7 @@ archive/issue_comments_068619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68619",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -925,7 +925,7 @@ archive/issue_comments_068623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68623",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -989,7 +989,7 @@ archive/issue_comments_068624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68624",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1061,7 +1061,7 @@ archive/issue_comments_068628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68628",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1079,7 +1079,7 @@ archive/issue_comments_068629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68629",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1092,16 +1092,16 @@ I'm attaching a reviewer patch which should *replace* the original one.  This in
 archive/issue_comments_068630.json:
 ```json
 {
-    "body": "Attachment [trac_7889-revolution-plot3d.v5.patch](tarball://root/attachments/some-uuid/ticket7889/trac_7889-revolution-plot3d.v5.patch) by jhpalmieri created at 2010-06-22 22:25:07\n\napply only this patch",
+    "body": "Attachment [trac_7889-revolution-plot3d.v5.patch](tarball://root/attachments/some-uuid/ticket7889/trac_7889-revolution-plot3d.v5.patch) by @jhpalmieri created at 2010-06-22 22:25:07\n\napply only this patch",
     "created_at": "2010-06-22T22:25:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68630",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7889-revolution-plot3d.v5.patch](tarball://root/attachments/some-uuid/ticket7889/trac_7889-revolution-plot3d.v5.patch) by jhpalmieri created at 2010-06-22 22:25:07
+Attachment [trac_7889-revolution-plot3d.v5.patch](tarball://root/attachments/some-uuid/ticket7889/trac_7889-revolution-plot3d.v5.patch) by @jhpalmieri created at 2010-06-22 22:25:07
 
 apply only this patch
 
@@ -1117,7 +1117,7 @@ archive/issue_comments_068631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7889#issuecomment-68631",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001871.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe wiki() command on OSX is broken.  On Linux (at least on sage.math), hitting control-c after starting the wiki just starts it again on the next port.  Very bad:\n\n```\nwas@sage:~/tmp$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10, Release Date: 2008-01-18                        |\n| Type notebook() for the GUI, and license() for information.        |\nwiki(sage: wiki()\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9000 *\n*                                                *\n**************************************************\n2008/01/20 15:09 -0700 [-] Log opened.\n2008/01/20 15:09 -0700 [-] twistd 2.5.0 (/home/was/s/local/bin/python 2.5.1) starting up\n2008/01/20 15:09 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/01/20 15:09 -0700 [-] Loading twistedconf.py...\n2008/01/20 15:09 -0700 [-] Loaded.\n2008/01/20 15:09 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9000\n2008/01/20 15:09 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2ab6a72409e0>\n2008/01/20 15:09 -0700 [-] set uid/gid 1000/1000\n2008/01/20 15:11 -0700 [-] Received SIGINT, shutting down.\n2008/01/20 15:11 -0700 [-] (Port 9000 Closed)\n2008/01/20 15:11 -0700 [-] Stopping factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2ab6a72409e0>\n2008/01/20 15:11 -0700 [-] Main loop terminated.\n2008/01/20 15:11 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9001 *\n*                                                *\n**************************************************\n2008/01/20 15:11 -0700 [-] Log opened.\n2008/01/20 15:11 -0700 [-] twistd 2.5.0 (/home/was/s/local/bin/python 2.5.1) starting up\n2008/01/20 15:11 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/01/20 15:11 -0700 [-] Loading twistedconf.py...\n2008/01/20 15:11 -0700 [-] Loaded.\n2008/01/20 15:11 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9001\n2008/01/20 15:11 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2b019cbb59e0>\n2008/01/20 15:11 -0700 [-] set uid/gid 1000/1000\n2008/01/20 15:11 -0700 [-] Received SIGINT, shutting down.\n2008/01/20 15:11 -0700 [-] (Port 9001 Closed)\n2008/01/20 15:11 -0700 [-] Stopping factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2b019cbb59e0>\n2008/01/20 15:11 -0700 [-] Main loop terminated.\n2008/01/20 15:11 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9002 *\n*                                                *\n**************************************************\n2008/01/20 15:11 -0700 [-] Log opened.\n2008/01/20 15:11 -0700 [-] twistd 2.5.0 (/home/was/s/local/bin/python 2.5.1) starting up\n2008/01/20 15:11 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/01/20 15:11 -0700 [-] Loading twistedconf.py...\n2008/01/20 15:11 -0700 [-] Loaded.\n2008/01/20 15:11 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9002\n2008/01/20 15:11 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2b578a4b49e0>\n2008/01/20 15:11 -0700 [-] set uid/gid 1000/1000\n2008/01/20 15:12 -0700 [-] Received SIGINT, shutting down.\n2008/01/20 15:12 -0700 [-] (Port 9002 Closed)\n2008/01/20 15:12 -0700 [-] Stopping factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2b578a4b49e0>\n2008/01/20 15:12 -0700 [-] Main loop terminated.\n2008/01/20 15:12 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9003 *\n*                                                *\n**************************************************\n...\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1871\n\n",
+    "body": "Assignee: @williamstein\n\nThe wiki() command on OSX is broken.  On Linux (at least on sage.math), hitting control-c after starting the wiki just starts it again on the next port.  Very bad:\n\n```\nwas@sage:~/tmp$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10, Release Date: 2008-01-18                        |\n| Type notebook() for the GUI, and license() for information.        |\nwiki(sage: wiki()\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9000 *\n*                                                *\n**************************************************\n2008/01/20 15:09 -0700 [-] Log opened.\n2008/01/20 15:09 -0700 [-] twistd 2.5.0 (/home/was/s/local/bin/python 2.5.1) starting up\n2008/01/20 15:09 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/01/20 15:09 -0700 [-] Loading twistedconf.py...\n2008/01/20 15:09 -0700 [-] Loaded.\n2008/01/20 15:09 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9000\n2008/01/20 15:09 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2ab6a72409e0>\n2008/01/20 15:09 -0700 [-] set uid/gid 1000/1000\n2008/01/20 15:11 -0700 [-] Received SIGINT, shutting down.\n2008/01/20 15:11 -0700 [-] (Port 9000 Closed)\n2008/01/20 15:11 -0700 [-] Stopping factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2ab6a72409e0>\n2008/01/20 15:11 -0700 [-] Main loop terminated.\n2008/01/20 15:11 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9001 *\n*                                                *\n**************************************************\n2008/01/20 15:11 -0700 [-] Log opened.\n2008/01/20 15:11 -0700 [-] twistd 2.5.0 (/home/was/s/local/bin/python 2.5.1) starting up\n2008/01/20 15:11 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/01/20 15:11 -0700 [-] Loading twistedconf.py...\n2008/01/20 15:11 -0700 [-] Loaded.\n2008/01/20 15:11 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9001\n2008/01/20 15:11 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2b019cbb59e0>\n2008/01/20 15:11 -0700 [-] set uid/gid 1000/1000\n2008/01/20 15:11 -0700 [-] Received SIGINT, shutting down.\n2008/01/20 15:11 -0700 [-] (Port 9001 Closed)\n2008/01/20 15:11 -0700 [-] Stopping factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2b019cbb59e0>\n2008/01/20 15:11 -0700 [-] Main loop terminated.\n2008/01/20 15:11 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9002 *\n*                                                *\n**************************************************\n2008/01/20 15:11 -0700 [-] Log opened.\n2008/01/20 15:11 -0700 [-] twistd 2.5.0 (/home/was/s/local/bin/python 2.5.1) starting up\n2008/01/20 15:11 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/01/20 15:11 -0700 [-] Loading twistedconf.py...\n2008/01/20 15:11 -0700 [-] Loaded.\n2008/01/20 15:11 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9002\n2008/01/20 15:11 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2b578a4b49e0>\n2008/01/20 15:11 -0700 [-] set uid/gid 1000/1000\n2008/01/20 15:12 -0700 [-] Received SIGINT, shutting down.\n2008/01/20 15:12 -0700 [-] (Port 9002 Closed)\n2008/01/20 15:12 -0700 [-] Stopping factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x2b578a4b49e0>\n2008/01/20 15:12 -0700 [-] Main loop terminated.\n2008/01/20 15:12 -0700 [-] Server Shut Down.\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9003 *\n*                                                *\n**************************************************\n...\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1871\n\n",
     "created_at": "2008-01-20T22:15:06Z",
     "labels": [
         "website/wiki",
@@ -14,10 +14,10 @@ archive/issues_001871.json:
     "title": "wiki -- pressing control-c just starts another copy running",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1871",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The wiki() command on OSX is broken.  On Linux (at least on sage.math), hitting control-c after starting the wiki just starts it again on the next port.  Very bad:
 
@@ -111,7 +111,7 @@ archive/issue_comments_011849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11849",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_011850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11850",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_011851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11851",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_011852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11852",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -245,16 +245,16 @@ change "needs review" -> "needs work" since it seems that the second patch shoul
 archive/issue_comments_011853.json:
 ```json
 {
-    "body": "Attachment [trac_1871-rebased-and-flat.patch](tarball://root/attachments/some-uuid/ticket1871/trac_1871-rebased-and-flat.patch) by rlm created at 2009-06-19 22:57:31\n\nApply only this patch",
+    "body": "Attachment [trac_1871-rebased-and-flat.patch](tarball://root/attachments/some-uuid/ticket1871/trac_1871-rebased-and-flat.patch) by @rlmill created at 2009-06-19 22:57:31\n\nApply only this patch",
     "created_at": "2009-06-19T22:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11853",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_1871-rebased-and-flat.patch](tarball://root/attachments/some-uuid/ticket1871/trac_1871-rebased-and-flat.patch) by rlm created at 2009-06-19 22:57:31
+Attachment [trac_1871-rebased-and-flat.patch](tarball://root/attachments/some-uuid/ticket1871/trac_1871-rebased-and-flat.patch) by @rlmill created at 2009-06-19 22:57:31
 
 Apply only this patch
 
@@ -270,7 +270,7 @@ archive/issue_comments_011854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11854",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_011855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11855",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_011856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1871#issuecomment-11856",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

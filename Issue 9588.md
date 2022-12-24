@@ -3,7 +3,7 @@
 archive/issues_009588.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: is_prime_power\n\nCurrently, is_prime_power only works on integers.  The attached simple patch will allow rational numbers as input as illustrated below.\n\n\n```\nsage: is_prime_power(1/2197)\nTrue\nsage: is_prime_power(1/100)\nFalse\nsage: is_prime_power(2/5)\nFalse\n```\n\n\nThis is also the behavior of Mathematica's PrimePowerQ function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9588\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: is_prime_power\n\nCurrently, is_prime_power only works on integers.  The attached simple patch will allow rational numbers as input as illustrated below.\n\n\n```\nsage: is_prime_power(1/2197)\nTrue\nsage: is_prime_power(1/100)\nFalse\nsage: is_prime_power(2/5)\nFalse\n```\n\n\nThis is also the behavior of Mathematica's PrimePowerQ function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9588\n\n",
     "created_at": "2010-07-23T14:55:18Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_009588.json:
     "title": "Extend is_prime_power to negative exponents",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9588",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: is_prime_power
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9588
 archive/issue_comments_092709.json:
 ```json
 {
-    "body": "Attachment [is_prime_power.patch](tarball://root/attachments/some-uuid/ticket9588/is_prime_power.patch) by arminstraub created at 2010-07-23 15:10:58",
+    "body": "Attachment [is_prime_power.patch](tarball://root/attachments/some-uuid/ticket9588/is_prime_power.patch) by @arminstraub created at 2010-07-23 15:10:58",
     "created_at": "2010-07-23T15:10:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9588#issuecomment-92709",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
-Attachment [is_prime_power.patch](tarball://root/attachments/some-uuid/ticket9588/is_prime_power.patch) by arminstraub created at 2010-07-23 15:10:58
+Attachment [is_prime_power.patch](tarball://root/attachments/some-uuid/ticket9588/is_prime_power.patch) by @arminstraub created at 2010-07-23 15:10:58
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_092710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9588#issuecomment-92710",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_092713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9588#issuecomment-92713",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_092714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9588#issuecomment-92714",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_092717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9588#issuecomment-92717",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_092718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9588#issuecomment-92718",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
@@ -238,16 +238,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_092719.json:
 ```json
 {
-    "body": "Attachment [9588_is_prime_power.patch](tarball://root/attachments/some-uuid/ticket9588/9588_is_prime_power.patch) by arminstraub created at 2010-07-24 23:48:13",
+    "body": "Attachment [9588_is_prime_power.patch](tarball://root/attachments/some-uuid/ticket9588/9588_is_prime_power.patch) by @arminstraub created at 2010-07-24 23:48:13",
     "created_at": "2010-07-24T23:48:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9588#issuecomment-92719",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
-Attachment [9588_is_prime_power.patch](tarball://root/attachments/some-uuid/ticket9588/9588_is_prime_power.patch) by arminstraub created at 2010-07-24 23:48:13
+Attachment [9588_is_prime_power.patch](tarball://root/attachments/some-uuid/ticket9588/9588_is_prime_power.patch) by @arminstraub created at 2010-07-24 23:48:13
 
 
 
@@ -261,7 +261,7 @@ archive/issue_comments_092720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9588#issuecomment-92720",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_092723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9588#issuecomment-92723",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_092724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9588",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9588#issuecomment-92724",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

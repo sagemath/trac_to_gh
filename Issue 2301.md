@@ -3,7 +3,7 @@
 archive/issues_002301.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  was\n\nKeywords: ringlist, sage_structured_str_list\n\nWhen playing around with `ringlist`, i found a bug the method `sage_structured_str_list`:\n\n\n```\nsage: R=singular.ring(0,'(x1,x12,x2)','dp')\nsage: RL=R.ringlist()\nsage: RL\n\n[1]:\n   0\n[2]:\n   [1]:\n      x1\n   [2]:\n      x12\n   [3]:\n      x2\n[3]:\n   [1]:\n      [1]:\n         dp\n      [2]:\n         1,1,1\n   [2]:\n      [1]:\n         C\n      [2]:\n         0\n[4]:\n   _[1]=0\nsage: RL.sage_structured_str_list()\n[[], [], [], [], [], [], [], [], [], [], [], [], ['0']]\nsage: RL.sage_flattened_str_list()\n['0', 'x1', 'x12', 'x2', 'dp', '1,1,1', 'C', '0', '_[1]=0']\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2301\n\n",
+    "body": "Assignee: @malb\n\nCC:  @williamstein\n\nKeywords: ringlist, sage_structured_str_list\n\nWhen playing around with `ringlist`, i found a bug the method `sage_structured_str_list`:\n\n\n```\nsage: R=singular.ring(0,'(x1,x12,x2)','dp')\nsage: RL=R.ringlist()\nsage: RL\n\n[1]:\n   0\n[2]:\n   [1]:\n      x1\n   [2]:\n      x12\n   [3]:\n      x2\n[3]:\n   [1]:\n      [1]:\n         dp\n      [2]:\n         1,1,1\n   [2]:\n      [1]:\n         C\n      [2]:\n         0\n[4]:\n   _[1]=0\nsage: RL.sage_structured_str_list()\n[[], [], [], [], [], [], [], [], [], [], [], [], ['0']]\nsage: RL.sage_flattened_str_list()\n['0', 'x1', 'x12', 'x2', 'dp', '1,1,1', 'C', '0', '_[1]=0']\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2301\n\n",
     "created_at": "2008-02-25T11:19:35Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_002301.json:
     "title": "Bug in sage_flattened_str_list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2301",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  was
+CC:  @williamstein
 
 Keywords: ringlist, sage_structured_str_list
 
@@ -77,7 +77,7 @@ archive/issue_comments_015279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15279",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -90,16 +90,16 @@ Changing component from commutative algebra to interfaces.
 archive/issue_comments_015280.json:
 ```json
 {
-    "body": "Changing assignee from malb to was.",
+    "body": "Changing assignee from @malb to @williamstein.",
     "created_at": "2008-02-25T11:25:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15280",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from malb to was.
+Changing assignee from @malb to @williamstein.
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_015281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15281",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_015282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15282",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_015283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15283",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_015284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15284",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_015285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15285",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_015286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15286",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_015287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15287",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -282,16 +282,16 @@ archive/issue_comments_015287.json:
 archive/issue_comments_015288.json:
 ```json
 {
-    "body": "Attachment [sage_structured_str_list.patch](tarball://root/attachments/some-uuid/ticket2301/sage_structured_str_list.patch) by SimonKing created at 2008-02-26 23:55:39\n\nReplying to [comment:8 malb]:\n> **Referee Report**:\n>  * Could you add doctests to `sage_structured_str_list` like the examples in the description of the ticket?\n\nDone.\n\n>  * Does `make test` still pass after the change? In particular does `sage -t schemes/plane_curves/projective_curve.py` still pass? This seems to be the only place this method is called.\n\nI'm afraid this test fails.\n\nBut i believe the function `riemann_roch_basis` only works because it expects a behaviour of `sage_structured_str_list` *that does not fit to its specification*.\n\nTo be precise: Taking the example of `riemann_roch_basis`, the function internally computes `LG = G.BrillNoether(X2)`, which is printed as\n\n```\n[1]:\n   _[1]=x\n   _[2]=y\n[2]:\n   _[1]=1\n   _[2]=1\n[3]:\n   _[1]=z\n   _[2]=y\n[4]:\n   _[1]=z^2\n   _[2]=y^2\n[5]:\n   _[1]=z\n   _[2]=x\n[6]:\n   _[1]=z^2\n   _[2]=x*y\n```\n\n\nThen, `sage_structured_str_list` is applied to this thing, and yields\n\n```\n[['x', 'y'], ['1', '1'], ['z', 'y'], ['z^2', 'y^2'], ['z', 'x'], ['z^2', 'x*y']]\n```\n\n\nI believe this output is wrong, since `LG[1]` is not a singular list, hence, must be represented as a string and not as a sage list.\n\nI see two ways to resolve it:\n\n1. Change `riemann_roch_basis`, since it relies on getting a *wrong* answer from `sage_structured_str_list`\n\n2. Change `sage_structured_str_list` so that not only singular lists are turned into a sage list, but also singular ideals and intvecs are turned into lists.\n\nI prefer the first option, since the second option clearly violates the specification of `sage_structured_str_list`.\n\nAnyway, i think we will only be able to fix the bug later.",
+    "body": "Attachment [sage_structured_str_list.patch](tarball://root/attachments/some-uuid/ticket2301/sage_structured_str_list.patch) by @simon-king-jena created at 2008-02-26 23:55:39\n\nReplying to [comment:8 malb]:\n> **Referee Report**:\n>  * Could you add doctests to `sage_structured_str_list` like the examples in the description of the ticket?\n\nDone.\n\n>  * Does `make test` still pass after the change? In particular does `sage -t schemes/plane_curves/projective_curve.py` still pass? This seems to be the only place this method is called.\n\nI'm afraid this test fails.\n\nBut i believe the function `riemann_roch_basis` only works because it expects a behaviour of `sage_structured_str_list` *that does not fit to its specification*.\n\nTo be precise: Taking the example of `riemann_roch_basis`, the function internally computes `LG = G.BrillNoether(X2)`, which is printed as\n\n```\n[1]:\n   _[1]=x\n   _[2]=y\n[2]:\n   _[1]=1\n   _[2]=1\n[3]:\n   _[1]=z\n   _[2]=y\n[4]:\n   _[1]=z^2\n   _[2]=y^2\n[5]:\n   _[1]=z\n   _[2]=x\n[6]:\n   _[1]=z^2\n   _[2]=x*y\n```\n\n\nThen, `sage_structured_str_list` is applied to this thing, and yields\n\n```\n[['x', 'y'], ['1', '1'], ['z', 'y'], ['z^2', 'y^2'], ['z', 'x'], ['z^2', 'x*y']]\n```\n\n\nI believe this output is wrong, since `LG[1]` is not a singular list, hence, must be represented as a string and not as a sage list.\n\nI see two ways to resolve it:\n\n1. Change `riemann_roch_basis`, since it relies on getting a *wrong* answer from `sage_structured_str_list`\n\n2. Change `sage_structured_str_list` so that not only singular lists are turned into a sage list, but also singular ideals and intvecs are turned into lists.\n\nI prefer the first option, since the second option clearly violates the specification of `sage_structured_str_list`.\n\nAnyway, i think we will only be able to fix the bug later.",
     "created_at": "2008-02-26T23:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15288",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [sage_structured_str_list.patch](tarball://root/attachments/some-uuid/ticket2301/sage_structured_str_list.patch) by SimonKing created at 2008-02-26 23:55:39
+Attachment [sage_structured_str_list.patch](tarball://root/attachments/some-uuid/ticket2301/sage_structured_str_list.patch) by @simon-king-jena created at 2008-02-26 23:55:39
 
 Replying to [comment:8 malb]:
 > **Referee Report**:
@@ -360,7 +360,7 @@ archive/issue_comments_015289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15289",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -383,16 +383,16 @@ Until we have figured this one out I think we shouldn't merge the patch. However
 archive/issue_comments_015290.json:
 ```json
 {
-    "body": "Attachment [sage_structured_str_list.2.patch](tarball://root/attachments/some-uuid/ticket2301/sage_structured_str_list.2.patch) by SimonKing created at 2008-02-27 08:54:20",
+    "body": "Attachment [sage_structured_str_list.2.patch](tarball://root/attachments/some-uuid/ticket2301/sage_structured_str_list.2.patch) by @simon-king-jena created at 2008-02-27 08:54:20",
     "created_at": "2008-02-27T08:54:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15290",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [sage_structured_str_list.2.patch](tarball://root/attachments/some-uuid/ticket2301/sage_structured_str_list.2.patch) by SimonKing created at 2008-02-27 08:54:20
+Attachment [sage_structured_str_list.2.patch](tarball://root/attachments/some-uuid/ticket2301/sage_structured_str_list.2.patch) by @simon-king-jena created at 2008-02-27 08:54:20
 
 
 
@@ -401,16 +401,16 @@ Attachment [sage_structured_str_list.2.patch](tarball://root/attachments/some-uu
 archive/issue_comments_015291.json:
 ```json
 {
-    "body": "Attachment [riemann_roch_basis.2.patch](tarball://root/attachments/some-uuid/ticket2301/riemann_roch_basis.2.patch) by SimonKing created at 2008-02-27 08:55:03",
+    "body": "Attachment [riemann_roch_basis.2.patch](tarball://root/attachments/some-uuid/ticket2301/riemann_roch_basis.2.patch) by @simon-king-jena created at 2008-02-27 08:55:03",
     "created_at": "2008-02-27T08:55:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15291",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [riemann_roch_basis.2.patch](tarball://root/attachments/some-uuid/ticket2301/riemann_roch_basis.2.patch) by SimonKing created at 2008-02-27 08:55:03
+Attachment [riemann_roch_basis.2.patch](tarball://root/attachments/some-uuid/ticket2301/riemann_roch_basis.2.patch) by @simon-king-jena created at 2008-02-27 08:55:03
 
 
 
@@ -424,7 +424,7 @@ archive/issue_comments_015292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15292",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_015293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15293",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -478,7 +478,7 @@ archive/issue_comments_015294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15294",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_015296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15296",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -604,7 +604,7 @@ archive/issue_comments_015297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15297",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -625,7 +625,7 @@ archive/issue_comments_015298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15298",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -650,7 +650,7 @@ archive/issue_comments_015299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15299",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -663,16 +663,16 @@ replaces all other patches attached to this ticket
 archive/issue_comments_015300.json:
 ```json
 {
-    "body": "Attachment [trac_2301_superpatch.patch](tarball://root/attachments/some-uuid/ticket2301/trac_2301_superpatch.patch) by malb created at 2008-02-27 13:02:31\n\nmabshoff, please apply `trac_2301_superpatch.patch` it contains **exactly** the same code as Simon's patches. Credits go to Simon King. `make test` passes.",
+    "body": "Attachment [trac_2301_superpatch.patch](tarball://root/attachments/some-uuid/ticket2301/trac_2301_superpatch.patch) by @malb created at 2008-02-27 13:02:31\n\nmabshoff, please apply `trac_2301_superpatch.patch` it contains **exactly** the same code as Simon's patches. Credits go to Simon King. `make test` passes.",
     "created_at": "2008-02-27T13:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15300",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_2301_superpatch.patch](tarball://root/attachments/some-uuid/ticket2301/trac_2301_superpatch.patch) by malb created at 2008-02-27 13:02:31
+Attachment [trac_2301_superpatch.patch](tarball://root/attachments/some-uuid/ticket2301/trac_2301_superpatch.patch) by @malb created at 2008-02-27 13:02:31
 
 mabshoff, please apply `trac_2301_superpatch.patch` it contains **exactly** the same code as Simon's patches. Credits go to Simon King. `make test` passes.
 
@@ -688,7 +688,7 @@ archive/issue_comments_015301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15301",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -709,7 +709,7 @@ archive/issue_comments_015302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15302",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -800,7 +800,7 @@ archive/issue_comments_015306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15306",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -828,7 +828,7 @@ archive/issue_comments_015307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15307",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -846,7 +846,7 @@ archive/issue_comments_015308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15308",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -898,7 +898,7 @@ archive/issue_comments_015310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2301#issuecomment-15310",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

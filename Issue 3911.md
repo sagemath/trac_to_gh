@@ -14,7 +14,7 @@ archive/issues_003911.json:
     "title": "come up with a good framework for citing stuff in docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3911",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -46,7 +46,7 @@ archive/issue_comments_027974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3911#issuecomment-27974",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_027975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3911#issuecomment-27975",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_027977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3911#issuecomment-27977",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

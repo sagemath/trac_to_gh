@@ -3,7 +3,7 @@
 archive/issues_008577.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mjo\n\nThis should return `True` not `False` (reported by\nMichael Bachtold)\n\n\n```python\nsage: from sage.rings.polynomial.polydict import ETuple\nsage: ETuple([0,1]).eadd_p(1, 0)==ETuple([1,1])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8577\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\nThis should return `True` not `False` (reported by\nMichael Bachtold)\n\n\n```python\nsage: from sage.rings.polynomial.polydict import ETuple\nsage: ETuple([0,1]).eadd_p(1, 0)==ETuple([1,1])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8577\n\n",
     "created_at": "2010-03-22T11:51:35Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_008577.json:
     "title": "Fix ETuple.eadd_p",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8577",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mjo
+CC:  @orlitzky
 
 This should return `True` not `False` (reported by
 Michael Bachtold)
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8577
 archive/issue_comments_077687.json:
 ```json
 {
-    "body": "Attachment [etuple_eadd_fix.patch](tarball://root/attachments/some-uuid/ticket8577/etuple_eadd_fix.patch) by mjo created at 2012-01-16 03:16:56",
+    "body": "Attachment [etuple_eadd_fix.patch](tarball://root/attachments/some-uuid/ticket8577/etuple_eadd_fix.patch) by @orlitzky created at 2012-01-16 03:16:56",
     "created_at": "2012-01-16T03:16:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8577#issuecomment-77687",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [etuple_eadd_fix.patch](tarball://root/attachments/some-uuid/ticket8577/etuple_eadd_fix.patch) by mjo created at 2012-01-16 03:16:56
+Attachment [etuple_eadd_fix.patch](tarball://root/attachments/some-uuid/ticket8577/etuple_eadd_fix.patch) by @orlitzky created at 2012-01-16 03:16:56
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_077688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8577#issuecomment-77688",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_077689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8577#issuecomment-77689",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_077690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8577#issuecomment-77690",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_077691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8577#issuecomment-77691",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

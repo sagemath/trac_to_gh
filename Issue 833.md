@@ -14,7 +14,7 @@ archive/issues_000833.json:
     "title": "new coercion model segfault (??)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/833",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -179,16 +179,16 @@ Michael
 archive/issue_comments_005149.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2007-10-06T06:08:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/833#issuecomment-5149",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -202,7 +202,7 @@ archive/issue_comments_005150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/833#issuecomment-5150",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -625,7 +625,7 @@ archive/issue_comments_005159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/833#issuecomment-5159",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -643,7 +643,7 @@ archive/issue_comments_005160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/833#issuecomment-5160",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005051.json:
     "title": "tracebacks involving cython (etc.) seriously broken in sage-3.3.alpha0 (probably caused by ipython)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5051",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -101,7 +101,7 @@ archive/issue_comments_038488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5051#issuecomment-38488",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -138,16 +138,16 @@ sage: 1/0
 archive/issue_comments_038489.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to mhansen.",
+    "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2009-01-24T08:06:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5051#issuecomment-38489",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from cwitty to mhansen.
+Changing assignee from cwitty to @mwhansen.
 
 
 
@@ -161,7 +161,7 @@ archive/issue_comments_038490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5051#issuecomment-38490",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_038491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5051#issuecomment-38491",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

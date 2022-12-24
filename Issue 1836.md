@@ -3,7 +3,7 @@
 archive/issues_001836.json:
 ```json
 {
-    "body": "Assignee: malb\n\n... to avoid ambiguousness\n\nIssue created by migration from https://trac.sagemath.org/ticket/1836\n\n",
+    "body": "Assignee: @malb\n\n... to avoid ambiguousness\n\nIssue created by migration from https://trac.sagemath.org/ticket/1836\n\n",
     "created_at": "2008-01-18T19:28:42Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001836.json:
     "title": "[with patch] return reduced Groebner bases by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1836",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 ... to avoid ambiguousness
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1836
 archive/issue_comments_011620.json:
 ```json
 {
-    "body": "Attachment [redSB-doc.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-doc.patch) by malb created at 2008-01-18 19:29:29",
+    "body": "Attachment [redSB-doc.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-doc.patch) by @malb created at 2008-01-18 19:29:29",
     "created_at": "2008-01-18T19:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11620",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [redSB-doc.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-doc.patch) by malb created at 2008-01-18 19:29:29
+Attachment [redSB-doc.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-doc.patch) by @malb created at 2008-01-18 19:29:29
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_011621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11621",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_011622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11622",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -86,16 +86,16 @@ updated patch which uses Python techniques to implement reduction of Groebner ba
 archive/issue_comments_011623.json:
 ```json
 {
-    "body": "Attachment [redSB-sage.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-sage.patch) by malb created at 2008-01-20 22:28:12\n\nReplying to [comment:1 ncalexan]:\n> There are an awful lot of places that Groebner bases are computed.  (complete_prime_decomposition, etc).  I'd really like to guarantee that *all* such bases are reduced.  Is that unreasonable?\n\nThe updated patch is supposed to implement that.",
+    "body": "Attachment [redSB-sage.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-sage.patch) by @malb created at 2008-01-20 22:28:12\n\nReplying to [comment:1 ncalexan]:\n> There are an awful lot of places that Groebner bases are computed.  (complete_prime_decomposition, etc).  I'd really like to guarantee that *all* such bases are reduced.  Is that unreasonable?\n\nThe updated patch is supposed to implement that.",
     "created_at": "2008-01-20T22:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11623",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [redSB-sage.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-sage.patch) by malb created at 2008-01-20 22:28:12
+Attachment [redSB-sage.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-sage.patch) by @malb created at 2008-01-20 22:28:12
 
 Replying to [comment:1 ncalexan]:
 > There are an awful lot of places that Groebner bases are computed.  (complete_prime_decomposition, etc).  I'd really like to guarantee that *all* such bases are reduced.  Is that unreasonable?

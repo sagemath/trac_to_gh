@@ -3,7 +3,7 @@
 archive/issues_006199.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  robertwb\n\n\n```\nsage: a = 123\nsage: b = 456\nsage: c = 456r\nsage: timeit(\"a*b\")\n625 loops, best of 3: 312 ns per loop\nsage: timeit(\"a*c\")\n625 loops, best of 3: 2.99 \u00b5s per loop\n```\n\n\nDitto for +, -. If I understand the code correctly, there always is a coercion to Integer, which could be avoided. I'm not sure how to best fix this since the ring operators are not implemented in the Integer class itself.\n\nFor division and shift, see #6083 and #6118.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6199\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb\n\n\n```\nsage: a = 123\nsage: b = 456\nsage: c = 456r\nsage: timeit(\"a*b\")\n625 loops, best of 3: 312 ns per loop\nsage: timeit(\"a*c\")\n625 loops, best of 3: 2.99 \u00b5s per loop\n```\n\n\nDitto for +, -. If I understand the code correctly, there always is a coercion to Integer, which could be avoided. I'm not sure how to best fix this since the ring operators are not implemented in the Integer class itself.\n\nFor division and shift, see #6083 and #6118.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6199\n\n",
     "created_at": "2009-06-03T18:44:59Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_006199.json:
     "title": "Integer * int is slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6199",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 Assignee: somebody
 
-CC:  robertwb
+CC:  @robertwb
 
 
 ```
@@ -53,7 +53,7 @@ archive/issue_comments_049504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49504",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_049505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49505",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_049506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49506",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_049507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49507",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_049508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49508",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_049509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49509",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_049510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49510",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_049511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49511",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_049512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49512",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_049513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49513",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_049515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49515",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_049516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49516",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -460,7 +460,7 @@ archive/issue_comments_049517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49517",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_049518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49518",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_049519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49519",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_049520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49520",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -539,16 +539,16 @@ Oh, and so I don't forget -- we also seemed to get a consensus that people wante
 archive/issue_comments_049521.json:
 ```json
 {
-    "body": "Attachment [6199-fast-int-mul.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-int-mul.patch) by robertwb created at 2010-01-24 08:26:04",
+    "body": "Attachment [6199-fast-int-mul.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-int-mul.patch) by @robertwb created at 2010-01-24 08:26:04",
     "created_at": "2010-01-24T08:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49521",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6199-fast-int-mul.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-int-mul.patch) by robertwb created at 2010-01-24 08:26:04
+Attachment [6199-fast-int-mul.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-int-mul.patch) by @robertwb created at 2010-01-24 08:26:04
 
 
 
@@ -562,7 +562,7 @@ archive/issue_comments_049522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49522",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -580,7 +580,7 @@ archive/issue_comments_049523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49523",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -598,7 +598,7 @@ archive/issue_comments_049524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49524",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_049525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49525",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -634,7 +634,7 @@ archive/issue_comments_049526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49526",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -647,16 +647,16 @@ oops, I tested with this fix but forgot to check it in
 archive/issue_comments_049527.json:
 ```json
 {
-    "body": "Attachment [6199-fast-mul-fix.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-mul-fix.patch) by fredrik.johansson created at 2010-02-01 01:37:27\n\nI applied this and got roughly a 15% speedup for mpmath's test suite, with everything seemingly working, so +1 from me.",
+    "body": "Attachment [6199-fast-mul-fix.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-mul-fix.patch) by @fredrik-johansson created at 2010-02-01 01:37:27\n\nI applied this and got roughly a 15% speedup for mpmath's test suite, with everything seemingly working, so +1 from me.",
     "created_at": "2010-02-01T01:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49527",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [6199-fast-mul-fix.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-mul-fix.patch) by fredrik.johansson created at 2010-02-01 01:37:27
+Attachment [6199-fast-mul-fix.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-mul-fix.patch) by @fredrik-johansson created at 2010-02-01 01:37:27
 
 I applied this and got roughly a 15% speedup for mpmath's test suite, with everything seemingly working, so +1 from me.
 
@@ -672,7 +672,7 @@ archive/issue_comments_049528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49528",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -685,16 +685,16 @@ apply only this patch
 archive/issue_comments_049529.json:
 ```json
 {
-    "body": "Attachment [6199-fast-int-mul-all.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-int-mul-all.patch) by robertwb created at 2010-02-01 21:14:06\n\nAttached a new patch which cleans up subtraction and note about corner case.",
+    "body": "Attachment [6199-fast-int-mul-all.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-int-mul-all.patch) by @robertwb created at 2010-02-01 21:14:06\n\nAttached a new patch which cleans up subtraction and note about corner case.",
     "created_at": "2010-02-01T21:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49529",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6199-fast-int-mul-all.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-int-mul-all.patch) by robertwb created at 2010-02-01 21:14:06
+Attachment [6199-fast-int-mul-all.patch](tarball://root/attachments/some-uuid/ticket6199/6199-fast-int-mul-all.patch) by @robertwb created at 2010-02-01 21:14:06
 
 Attached a new patch which cleans up subtraction and note about corner case.
 
@@ -710,7 +710,7 @@ archive/issue_comments_049530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49530",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -728,7 +728,7 @@ archive/issue_comments_049531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49531",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -746,7 +746,7 @@ archive/issue_comments_049532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49532",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -764,7 +764,7 @@ archive/issue_comments_049533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49533",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -782,7 +782,7 @@ archive/issue_comments_049534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6199#issuecomment-49534",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

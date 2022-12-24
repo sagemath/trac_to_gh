@@ -3,7 +3,7 @@
 archive/issues_008381.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  burcin\n\n\n```\nsage: rational_reconstruction?\n...\n            `(x,y)=(|v2|,v3*mathrm{sign}(v2))` is then the unique\n```\n\nThe `mathrm` should be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8381\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @burcin\n\n\n```\nsage: rational_reconstruction?\n...\n            `(x,y)=(|v2|,v3*mathrm{sign}(v2))` is then the unique\n```\n\nThe `mathrm` should be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8381\n\n",
     "created_at": "2010-02-26T23:00:00Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008381.json:
     "title": "typo in documentation of rational_reconstruction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8381",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: mvngu
 
-CC:  burcin
+CC:  @burcin
 
 
 ```
@@ -46,7 +46,7 @@ archive/issue_comments_074969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8381#issuecomment-74969",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_074973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8381#issuecomment-74973",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_074974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8381#issuecomment-74974",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_074975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8381#issuecomment-74975",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_074976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8381#issuecomment-74976",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_074978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8381",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8381#issuecomment-74978",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007808.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere was a thread on sage-devel where it seemed like a number of people felt plots (or axes!) were shifted by about one pixel or so.  Here's one manifestation:\n\n\n```\nregion_plot([x^2+y^2<=1, x<=y], (x,-2,2), (y,-2,2),plot_points=400).show(aspect_ratio=1)\n```\n\n\nThere are a lot of other examples in a thread on one of the sage mailing lists, but I can't find the thread.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7808\n\n",
+    "body": "Assignee: @williamstein\n\nThere was a thread on sage-devel where it seemed like a number of people felt plots (or axes!) were shifted by about one pixel or so.  Here's one manifestation:\n\n\n```\nregion_plot([x^2+y^2<=1, x<=y], (x,-2,2), (y,-2,2),plot_points=400).show(aspect_ratio=1)\n```\n\n\nThere are a lot of other examples in a thread on one of the sage mailing lists, but I can't find the thread.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7808\n\n",
     "created_at": "2010-01-01T18:39:13Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_007808.json:
     "title": "Plots seem to be shifted up and to the left by one pixel or so",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7808",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There was a thread on sage-devel where it seemed like a number of people felt plots (or axes!) were shifted by about one pixel or so.  Here's one manifestation:
 
@@ -45,7 +45,7 @@ archive/issue_comments_067542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67542",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_067543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67543",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_067544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67544",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_067545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67545",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_067546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67546",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_067547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67547",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -209,16 +209,16 @@ Changing status from new to needs_info.
 archive/issue_comments_067548.json:
 ```json
 {
-    "body": "Attachment [trac-7808-axes-through-origin.patch](tarball://root/attachments/some-uuid/ticket7808/trac-7808-axes-through-origin.patch) by jason created at 2010-06-11 18:54:37\n\nI've attached a patch which is a workaround solving the problem.  However, it causes other side effects (fuzzy lines, since now lines are not snapped to whole-pixels).  You can uncomment the antialiased line in the patch to not get fuzzy lines, but then sometimes one axis will be one pixel wider than the other, which looks bad.  I haven't tested how these options affect vector graphics output (e.g., pdf).\n\nSo we have three options:\n\n1. Leave things the way they are\n2. Turn off snapping, but deal with possible fuzzy lines\n3. Turn off snapping and turn off antialiasing, and deal with axes that sometimes don't match in width.\n\nPick your poison.",
+    "body": "Attachment [trac-7808-axes-through-origin.patch](tarball://root/attachments/some-uuid/ticket7808/trac-7808-axes-through-origin.patch) by @jasongrout created at 2010-06-11 18:54:37\n\nI've attached a patch which is a workaround solving the problem.  However, it causes other side effects (fuzzy lines, since now lines are not snapped to whole-pixels).  You can uncomment the antialiased line in the patch to not get fuzzy lines, but then sometimes one axis will be one pixel wider than the other, which looks bad.  I haven't tested how these options affect vector graphics output (e.g., pdf).\n\nSo we have three options:\n\n1. Leave things the way they are\n2. Turn off snapping, but deal with possible fuzzy lines\n3. Turn off snapping and turn off antialiasing, and deal with axes that sometimes don't match in width.\n\nPick your poison.",
     "created_at": "2010-06-11T18:54:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67548",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7808-axes-through-origin.patch](tarball://root/attachments/some-uuid/ticket7808/trac-7808-axes-through-origin.patch) by jason created at 2010-06-11 18:54:37
+Attachment [trac-7808-axes-through-origin.patch](tarball://root/attachments/some-uuid/ticket7808/trac-7808-axes-through-origin.patch) by @jasongrout created at 2010-06-11 18:54:37
 
 I've attached a patch which is a workaround solving the problem.  However, it causes other side effects (fuzzy lines, since now lines are not snapped to whole-pixels).  You can uncomment the antialiased line in the patch to not get fuzzy lines, but then sometimes one axis will be one pixel wider than the other, which looks bad.  I haven't tested how these options affect vector graphics output (e.g., pdf).
 
@@ -242,7 +242,7 @@ archive/issue_comments_067549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67549",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_067550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67550",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_067551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67551",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_067552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67552",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_067553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67553",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_067554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67554",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_067555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67555",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_067556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67556",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_067557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7808",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7808#issuecomment-67557",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

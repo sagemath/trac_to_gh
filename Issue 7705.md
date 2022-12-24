@@ -3,7 +3,7 @@
 archive/issues_007705.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ncohen\n\nThis command in sage-4.3 returns a loaded sobj:\n\n```\nsage: graphs.WorldMap()\nGraph on 251 vertices\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7705\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nThis command in sage-4.3 returns a loaded sobj:\n\n```\nsage: graphs.WorldMap()\nGraph on 251 vertices\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7705\n\n",
     "created_at": "2009-12-16T08:45:55Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007705.json:
     "title": "graphs: replace the worldmap sobj by some code (or something else that is transparent)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7705",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  ncohen
+CC:  @nathanncohen
 
 This command in sage-4.3 returns a loaded sobj:
 
@@ -45,7 +45,7 @@ archive/issue_comments_066121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7705#issuecomment-66121",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_066122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7705#issuecomment-66122",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_066123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7705#issuecomment-66123",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_066124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7705#issuecomment-66124",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_066125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7705#issuecomment-66125",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_066126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7705#issuecomment-66126",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_066127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7705#issuecomment-66127",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_066128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7705#issuecomment-66128",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -188,16 +188,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_066129.json:
 ```json
 {
-    "body": "Attachment [trac_7705.patch](tarball://root/attachments/some-uuid/ticket7705/trac_7705.patch) by rlm created at 2009-12-17 21:39:38",
+    "body": "Attachment [trac_7705.patch](tarball://root/attachments/some-uuid/ticket7705/trac_7705.patch) by @rlmill created at 2009-12-17 21:39:38",
     "created_at": "2009-12-17T21:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7705#issuecomment-66129",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7705.patch](tarball://root/attachments/some-uuid/ticket7705/trac_7705.patch) by rlm created at 2009-12-17 21:39:38
+Attachment [trac_7705.patch](tarball://root/attachments/some-uuid/ticket7705/trac_7705.patch) by @rlmill created at 2009-12-17 21:39:38
 
 
 
@@ -206,16 +206,16 @@ Attachment [trac_7705.patch](tarball://root/attachments/some-uuid/ticket7705/tra
 archive/issue_comments_066130.json:
 ```json
 {
-    "body": "Attachment [trac_7705-docs.patch](tarball://root/attachments/some-uuid/ticket7705/trac_7705-docs.patch) by rlm created at 2009-12-17 21:40:03",
+    "body": "Attachment [trac_7705-docs.patch](tarball://root/attachments/some-uuid/ticket7705/trac_7705-docs.patch) by @rlmill created at 2009-12-17 21:40:03",
     "created_at": "2009-12-17T21:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7705#issuecomment-66130",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7705-docs.patch](tarball://root/attachments/some-uuid/ticket7705/trac_7705-docs.patch) by rlm created at 2009-12-17 21:40:03
+Attachment [trac_7705-docs.patch](tarball://root/attachments/some-uuid/ticket7705/trac_7705-docs.patch) by @rlmill created at 2009-12-17 21:40:03
 
 
 
@@ -229,7 +229,7 @@ archive/issue_comments_066131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7705#issuecomment-66131",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_066132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7705#issuecomment-66132",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

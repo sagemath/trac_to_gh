@@ -3,7 +3,7 @@
 archive/issues_003726.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe spkg:\n\n  http://sage.math.washington.edu/home/was/patches/ghmm-20080725.spkg\n\nbuilds ghmm and doesn't depend on anything not in sage (I hope).  It does not\nbuild the official GHMM bindings.  I am replacing those bindings with cleaner\nCython bindings that have better documentation, but initially expose less\nfunctionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3726\n\n",
+    "body": "Assignee: @williamstein\n\nThe spkg:\n\n  http://sage.math.washington.edu/home/was/patches/ghmm-20080725.spkg\n\nbuilds ghmm and doesn't depend on anything not in sage (I hope).  It does not\nbuild the official GHMM bindings.  I am replacing those bindings with cleaner\nCython bindings that have better documentation, but initially expose less\nfunctionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3726\n\n",
     "created_at": "2008-07-25T16:21:26Z",
     "labels": [
         "finance",
@@ -14,10 +14,10 @@ archive/issues_003726.json:
     "title": "stats/finance -- add support for hidden markov models to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3726",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The spkg:
 
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3726
 archive/issue_comments_026437.json:
 ```json
 {
-    "body": "Attachment [sage-3726-part1.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part1.patch) by was created at 2008-07-25 16:22:51",
+    "body": "Attachment [sage-3726-part1.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part1.patch) by @williamstein created at 2008-07-25 16:22:51",
     "created_at": "2008-07-25T16:22:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26437",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3726-part1.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part1.patch) by was created at 2008-07-25 16:22:51
+Attachment [sage-3726-part1.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part1.patch) by @williamstein created at 2008-07-25 16:22:51
 
 
 
@@ -57,16 +57,16 @@ Attachment [sage-3726-part1.patch](tarball://root/attachments/some-uuid/ticket37
 archive/issue_comments_026438.json:
 ```json
 {
-    "body": "Attachment [sage-3726-part2.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part2.patch) by was created at 2008-07-26 09:49:49",
+    "body": "Attachment [sage-3726-part2.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part2.patch) by @williamstein created at 2008-07-26 09:49:49",
     "created_at": "2008-07-26T09:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26438",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3726-part2.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part2.patch) by was created at 2008-07-26 09:49:49
+Attachment [sage-3726-part2.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part2.patch) by @williamstein created at 2008-07-26 09:49:49
 
 
 
@@ -75,16 +75,16 @@ Attachment [sage-3726-part2.patch](tarball://root/attachments/some-uuid/ticket37
 archive/issue_comments_026439.json:
 ```json
 {
-    "body": "Attachment [sage-3726-part3.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part3.patch) by was created at 2008-07-30 01:33:06",
+    "body": "Attachment [sage-3726-part3.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part3.patch) by @williamstein created at 2008-07-30 01:33:06",
     "created_at": "2008-07-30T01:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26439",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3726-part3.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part3.patch) by was created at 2008-07-30 01:33:06
+Attachment [sage-3726-part3.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part3.patch) by @williamstein created at 2008-07-30 01:33:06
 
 
 
@@ -93,16 +93,16 @@ Attachment [sage-3726-part3.patch](tarball://root/attachments/some-uuid/ticket37
 archive/issue_comments_026440.json:
 ```json
 {
-    "body": "Attachment [sage-3726-part4.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part4.patch) by was created at 2008-08-02 07:06:10",
+    "body": "Attachment [sage-3726-part4.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part4.patch) by @williamstein created at 2008-08-02 07:06:10",
     "created_at": "2008-08-02T07:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26440",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3726-part4.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part4.patch) by was created at 2008-08-02 07:06:10
+Attachment [sage-3726-part4.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part4.patch) by @williamstein created at 2008-08-02 07:06:10
 
 
 
@@ -111,16 +111,16 @@ Attachment [sage-3726-part4.patch](tarball://root/attachments/some-uuid/ticket37
 archive/issue_comments_026441.json:
 ```json
 {
-    "body": "Attachment [sage-3726-part6.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part6.patch) by was created at 2008-08-03 04:07:39",
+    "body": "Attachment [sage-3726-part6.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part6.patch) by @williamstein created at 2008-08-03 04:07:39",
     "created_at": "2008-08-03T04:07:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26441",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3726-part6.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part6.patch) by was created at 2008-08-03 04:07:39
+Attachment [sage-3726-part6.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part6.patch) by @williamstein created at 2008-08-03 04:07:39
 
 
 
@@ -129,16 +129,16 @@ Attachment [sage-3726-part6.patch](tarball://root/attachments/some-uuid/ticket37
 archive/issue_comments_026442.json:
 ```json
 {
-    "body": "Attachment [sage-3726-part7.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part7.patch) by was created at 2008-08-04 01:38:13\n\nThe attached patches bring the coverage of this code to 100% and cleanly wrap a solid set of functionality.",
+    "body": "Attachment [sage-3726-part7.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part7.patch) by @williamstein created at 2008-08-04 01:38:13\n\nThe attached patches bring the coverage of this code to 100% and cleanly wrap a solid set of functionality.",
     "created_at": "2008-08-04T01:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26442",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3726-part7.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part7.patch) by was created at 2008-08-04 01:38:13
+Attachment [sage-3726-part7.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part7.patch) by @williamstein created at 2008-08-04 01:38:13
 
 The attached patches bring the coverage of this code to 100% and cleanly wrap a solid set of functionality.
 
@@ -149,16 +149,16 @@ The attached patches bring the coverage of this code to 100% and cleanly wrap a 
 archive/issue_comments_026443.json:
 ```json
 {
-    "body": "Attachment [sage-3726-part8.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part8.patch) by was created at 2008-08-04 12:33:02",
+    "body": "Attachment [sage-3726-part8.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part8.patch) by @williamstein created at 2008-08-04 12:33:02",
     "created_at": "2008-08-04T12:33:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26443",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3726-part8.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part8.patch) by was created at 2008-08-04 12:33:02
+Attachment [sage-3726-part8.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part8.patch) by @williamstein created at 2008-08-04 12:33:02
 
 
 
@@ -167,16 +167,16 @@ Attachment [sage-3726-part8.patch](tarball://root/attachments/some-uuid/ticket37
 archive/issue_comments_026444.json:
 ```json
 {
-    "body": "Attachment [sage-3726-part9.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part9.patch) by was created at 2008-08-04 12:34:03\n\npatches 1 - 8 in a clean bundle against 3.0.5",
+    "body": "Attachment [sage-3726-part9.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part9.patch) by @williamstein created at 2008-08-04 12:34:03\n\npatches 1 - 8 in a clean bundle against 3.0.5",
     "created_at": "2008-08-04T12:34:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26444",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3726-part9.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part9.patch) by was created at 2008-08-04 12:34:03
+Attachment [sage-3726-part9.patch](tarball://root/attachments/some-uuid/ticket3726/sage-3726-part9.patch) by @williamstein created at 2008-08-04 12:34:03
 
 patches 1 - 8 in a clean bundle against 3.0.5
 
@@ -187,16 +187,16 @@ patches 1 - 8 in a clean bundle against 3.0.5
 archive/issue_comments_026445.json:
 ```json
 {
-    "body": "Attachment [hmm-bundle-3.0.5.hg](tarball://root/attachments/some-uuid/ticket3726/hmm-bundle-3.0.5.hg) by was created at 2008-08-05 01:05:49",
+    "body": "Attachment [hmm-bundle-3.0.5.hg](tarball://root/attachments/some-uuid/ticket3726/hmm-bundle-3.0.5.hg) by @williamstein created at 2008-08-05 01:05:49",
     "created_at": "2008-08-05T01:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26445",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [hmm-bundle-3.0.5.hg](tarball://root/attachments/some-uuid/ticket3726/hmm-bundle-3.0.5.hg) by was created at 2008-08-05 01:05:49
+Attachment [hmm-bundle-3.0.5.hg](tarball://root/attachments/some-uuid/ticket3726/hmm-bundle-3.0.5.hg) by @williamstein created at 2008-08-05 01:05:49
 
 
 
@@ -247,7 +247,7 @@ archive/issue_comments_026447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26447",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

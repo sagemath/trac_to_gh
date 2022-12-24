@@ -3,7 +3,7 @@
 archive/issues_005570.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu\n\nIn Sage it is not feasable to directly compute the determinant of a 20x20 matrix over Integers(26)!\n\n\n```\nDavid Kohel:\n> A related problem I had recently was in finding a random\n> element of GL_n(ZZ/26ZZ) where n was 20-30.  It was\n> failing to terminate in the determinant computation.  My\n> guess is that a  determinant over ZZ was being computed\n> and reduced but that the resulting determinant was too big.\n> I didn't verify this, but invite someone to check.\n\nIt is trivial to compute the determinant of an nxn matrix over ZZ when n <= 30 and the entries of the matrix have 2 digits.  That would be the case in your example. Sage wasn't computing your det over ZZ; if it had, then doing that computation would have worked fine.  For example:\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = random_matrix(Integers(26), 7)\nsage: time a.det()\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.05 s\n6\nsage: a = random_matrix(Integers(26), 8)\nsage: time a.det()\nCPU times: user 0.15 s, sys: 0.00 s, total: 0.15 s\nWall time: 0.16 s\n9\nsage: a = random_matrix(Integers(26), 9)\nsage: time a.det()\nCPU times: user 1.37 s, sys: 0.01 s, total: 1.37 s\nWall time: 1.38 s\n23\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.03 s\nWall time: 0.39 s\n23\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n23\nsage: a = random_matrix(Integers(26), 9)\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n10\nsage: a = random_matrix(Integers(26), 30)\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n20\nsage: a = random_matrix(Integers(26), 200)\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.30 s, sys: 0.04 s, total: 0.33 s\nWall time: 0.34 s\n15\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n\nIt would thus be far better for now if Sage were to lift to ZZ, do the det, then reduce again.\nFor square-free modulus, a multimodular algorithm would of course be even better.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5570\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nIn Sage it is not feasable to directly compute the determinant of a 20x20 matrix over Integers(26)!\n\n\n```\nDavid Kohel:\n> A related problem I had recently was in finding a random\n> element of GL_n(ZZ/26ZZ) where n was 20-30.  It was\n> failing to terminate in the determinant computation.  My\n> guess is that a  determinant over ZZ was being computed\n> and reduced but that the resulting determinant was too big.\n> I didn't verify this, but invite someone to check.\n\nIt is trivial to compute the determinant of an nxn matrix over ZZ when n <= 30 and the entries of the matrix have 2 digits.  That would be the case in your example. Sage wasn't computing your det over ZZ; if it had, then doing that computation would have worked fine.  For example:\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = random_matrix(Integers(26), 7)\nsage: time a.det()\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.05 s\n6\nsage: a = random_matrix(Integers(26), 8)\nsage: time a.det()\nCPU times: user 0.15 s, sys: 0.00 s, total: 0.15 s\nWall time: 0.16 s\n9\nsage: a = random_matrix(Integers(26), 9)\nsage: time a.det()\nCPU times: user 1.37 s, sys: 0.01 s, total: 1.37 s\nWall time: 1.38 s\n23\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.03 s\nWall time: 0.39 s\n23\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n23\nsage: a = random_matrix(Integers(26), 9)\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n10\nsage: a = random_matrix(Integers(26), 30)\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n20\nsage: a = random_matrix(Integers(26), 200)\nsage: time Integers(26)(a.lift().det())\nCPU times: user 0.30 s, sys: 0.04 s, total: 0.33 s\nWall time: 0.34 s\n15\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\n\nIt would thus be far better for now if Sage were to lift to ZZ, do the det, then reduce again.\nFor square-free modulus, a multimodular algorithm would of course be even better.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5570\n\n",
     "created_at": "2009-03-19T23:11:08Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005570.json:
     "title": "determinants of matrices over Z/nZ with n composite are dog slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5570",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  mvngu
 
@@ -99,7 +99,7 @@ archive/issue_comments_043398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5570#issuecomment-43398",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -161,16 +161,16 @@ William
 archive/issue_comments_043399.json:
 ```json
 {
-    "body": "Attachment [5570-naive.patch](tarball://root/attachments/some-uuid/ticket5570/5570-naive.patch) by jhpalmieri created at 2009-03-21 15:39:45",
+    "body": "Attachment [5570-naive.patch](tarball://root/attachments/some-uuid/ticket5570/5570-naive.patch) by @jhpalmieri created at 2009-03-21 15:39:45",
     "created_at": "2009-03-21T15:39:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5570#issuecomment-43399",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5570-naive.patch](tarball://root/attachments/some-uuid/ticket5570/5570-naive.patch) by jhpalmieri created at 2009-03-21 15:39:45
+Attachment [5570-naive.patch](tarball://root/attachments/some-uuid/ticket5570/5570-naive.patch) by @jhpalmieri created at 2009-03-21 15:39:45
 
 
 
@@ -184,7 +184,7 @@ archive/issue_comments_043400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5570#issuecomment-43400",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -197,16 +197,16 @@ This is about as naive a fix as could be imagined, although it does speed things
 archive/issue_comments_043401.json:
 ```json
 {
-    "body": "Attachment [trac_5570-referee.patch](tarball://root/attachments/some-uuid/ticket5570/trac_5570-referee.patch) by was created at 2009-03-22 00:25:50",
+    "body": "Attachment [trac_5570-referee.patch](tarball://root/attachments/some-uuid/ticket5570/trac_5570-referee.patch) by @williamstein created at 2009-03-22 00:25:50",
     "created_at": "2009-03-22T00:25:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5570#issuecomment-43401",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5570-referee.patch](tarball://root/attachments/some-uuid/ticket5570/trac_5570-referee.patch) by was created at 2009-03-22 00:25:50
+Attachment [trac_5570-referee.patch](tarball://root/attachments/some-uuid/ticket5570/trac_5570-referee.patch) by @williamstein created at 2009-03-22 00:25:50
 
 
 
@@ -220,7 +220,7 @@ archive/issue_comments_043402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5570#issuecomment-43402",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_043403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5570#issuecomment-43403",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

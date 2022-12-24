@@ -14,7 +14,7 @@ archive/issues_002941.json:
     "title": "sympy spkg updated + a test patch for Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2941",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_020255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20255",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -50,16 +50,16 @@ Sage patch, fixing the tests
 archive/issue_comments_020256.json:
 ```json
 {
-    "body": "Attachment [sympy-0.5.13.patch](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.patch) by certik created at 2008-04-16 09:43:42\n\n**Important note**: execute this command\n\nrm -r sage/local/lib/python2.5/site-packages/sympy*\n\nbefore installing the spkg, otherwise sympy will be broken.",
+    "body": "Attachment [sympy-0.5.13.patch](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.patch) by @certik created at 2008-04-16 09:43:42\n\n**Important note**: execute this command\n\nrm -r sage/local/lib/python2.5/site-packages/sympy*\n\nbefore installing the spkg, otherwise sympy will be broken.",
     "created_at": "2008-04-16T09:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20256",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
-Attachment [sympy-0.5.13.patch](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.patch) by certik created at 2008-04-16 09:43:42
+Attachment [sympy-0.5.13.patch](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.patch) by @certik created at 2008-04-16 09:43:42
 
 **Important note**: execute this command
 
@@ -125,16 +125,16 @@ Michael
 archive/issue_comments_020259.json:
 ```json
 {
-    "body": "Attachment [sympy-0.5.13.spkg](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.spkg) by certik created at 2008-04-16 11:51:39",
+    "body": "Attachment [sympy-0.5.13.spkg](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.spkg) by @certik created at 2008-04-16 11:51:39",
     "created_at": "2008-04-16T11:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20259",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
-Attachment [sympy-0.5.13.spkg](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.spkg) by certik created at 2008-04-16 11:51:39
+Attachment [sympy-0.5.13.spkg](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.spkg) by @certik created at 2008-04-16 11:51:39
 
 
 
@@ -148,7 +148,7 @@ archive/issue_comments_020260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20260",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_020261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20261",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 

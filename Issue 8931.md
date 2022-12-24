@@ -3,7 +3,7 @@
 archive/issues_008931.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  robert.marik kcrisman\n\nKeywords: desolve\n\nI want to solve f''/f=k with k in R\n\n\n\n```\nsage:  x=var('x')\nsage: f=function('f',x)\nsage: k=var('k')\nsage: assume(k>0)\nsage:  desolve(diff(f(x),x,2)/f(x)==k,[f,x]) \n```\n\n\nand sage keeps answering :\n\n\n\n```\nTypeError                                 Traceback (most recent call last)\n\n/home/moi/<ipython console> in <module>()\n\n/home/moi/sage-4.4.1-linux-32bit-ubuntu_9.10-i686-Linux/local/lib/python2.6/site-packages/sage/calculus/desolvers.pyc in desolve(de, dvar, ics, ivar, show_method, contrib_ode)\n    338     # we produce string like this\n    339     # ode2('diff(y,x,2)+2*'diff(y,x,1)+y-cos(x),y(x),x)\n--> 340     soln = maxima(cmd)\n    341 \n    342     if str(soln).strip() == 'false':\n\n/home/moi/sage-4.4.1-linux-32bit-ubuntu_9.10-i686-Linux/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030             \n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/moi/sage-4.4.1-linux-32bit-ubuntu_9.10-i686-Linux/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453 \n\nTypeError: Computation failed since Maxima requested additional constraints (try the command 'assume(k>0)' before integral or limit evaluation, for example):\nIs  k  positive, negative, or zero?\n```\n\n\nso I tried :\n\n\n\n\n\n```\nsage:  desolve(diff(f(x),x,2)/f(x)==k^2+1,[f,x])\n```\n\n\nand I got :\n\n\n```\nk1*e^(I*sqrt(-k^2 - 1)*x) + k2*e^(-I*sqrt(-k^2 - 1)*x)\n```\n\n\n!!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8931\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik @kcrisman\n\nKeywords: desolve\n\nI want to solve f''/f=k with k in R\n\n\n\n```\nsage:  x=var('x')\nsage: f=function('f',x)\nsage: k=var('k')\nsage: assume(k>0)\nsage:  desolve(diff(f(x),x,2)/f(x)==k,[f,x]) \n```\n\n\nand sage keeps answering :\n\n\n\n```\nTypeError                                 Traceback (most recent call last)\n\n/home/moi/<ipython console> in <module>()\n\n/home/moi/sage-4.4.1-linux-32bit-ubuntu_9.10-i686-Linux/local/lib/python2.6/site-packages/sage/calculus/desolvers.pyc in desolve(de, dvar, ics, ivar, show_method, contrib_ode)\n    338     # we produce string like this\n    339     # ode2('diff(y,x,2)+2*'diff(y,x,1)+y-cos(x),y(x),x)\n--> 340     soln = maxima(cmd)\n    341 \n    342     if str(soln).strip() == 'false':\n\n/home/moi/sage-4.4.1-linux-32bit-ubuntu_9.10-i686-Linux/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030             \n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/moi/sage-4.4.1-linux-32bit-ubuntu_9.10-i686-Linux/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453 \n\nTypeError: Computation failed since Maxima requested additional constraints (try the command 'assume(k>0)' before integral or limit evaluation, for example):\nIs  k  positive, negative, or zero?\n```\n\n\nso I tried :\n\n\n\n\n\n```\nsage:  desolve(diff(f(x),x,2)/f(x)==k^2+1,[f,x])\n```\n\n\nand I got :\n\n\n```\nk1*e^(I*sqrt(-k^2 - 1)*x) + k2*e^(-I*sqrt(-k^2 - 1)*x)\n```\n\n\n!!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8931\n\n",
     "created_at": "2010-05-08T07:41:36Z",
     "labels": [
         "symbolics",
@@ -17,9 +17,9 @@ archive/issues_008931.json:
     "user": "descopau"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  robert.marik kcrisman
+CC:  @robert-marik @kcrisman
 
 Keywords: desolve
 
@@ -157,7 +157,7 @@ archive/issue_comments_082258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8931#issuecomment-82258",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_082262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8931#issuecomment-82262",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_082263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8931#issuecomment-82263",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_082264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8931#issuecomment-82264",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

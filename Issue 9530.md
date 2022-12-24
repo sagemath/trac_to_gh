@@ -3,7 +3,7 @@
 archive/issues_009530.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  leif drkirkby mpatel hivert\n\nKeywords: Arch Linux SuSE readline\n\nSage currently has workarounds against building an incompatible libreadline on openSuSE 11.1 and Arch Linux - instead of building it, the system version is copied.\n\nThe SuSE workaround should be applied to openSuSE 11.2 and 11.3, too. Furthermore, SuSE offers libreadline.so.5 in addition to .so.6, so we only copy .6.\n\nThe workaround on Arch Linux is unreliable, as it detects Arch Linux by \"-ARCH\" in the kernel version (which is the default, but might be different). Instead, the presence of /etc/arch-release should be used to determine that.\n\nI am attaching a patch that fixes those problems and changes 'cp' to 'cp -a' to not turn a symlink into a file. Without this patch, sage fails to build on my SuSE or Arch systems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9530\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime drkirkby @qed777 @hivert\n\nKeywords: Arch Linux SuSE readline\n\nSage currently has workarounds against building an incompatible libreadline on openSuSE 11.1 and Arch Linux - instead of building it, the system version is copied.\n\nThe SuSE workaround should be applied to openSuSE 11.2 and 11.3, too. Furthermore, SuSE offers libreadline.so.5 in addition to .so.6, so we only copy .6.\n\nThe workaround on Arch Linux is unreliable, as it detects Arch Linux by \"-ARCH\" in the kernel version (which is the default, but might be different). Instead, the presence of /etc/arch-release should be used to determine that.\n\nI am attaching a patch that fixes those problems and changes 'cp' to 'cp -a' to not turn a symlink into a file. Without this patch, sage fails to build on my SuSE or Arch systems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9530\n\n",
     "created_at": "2010-07-17T14:31:52Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009530.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  leif drkirkby mpatel hivert
+CC:  @nexttime drkirkby @qed777 @hivert
 
 Keywords: Arch Linux SuSE readline
 
@@ -167,7 +167,7 @@ archive/issue_comments_091702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91702",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_091703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91703",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_091705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91705",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_091707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91707",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_091708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91708",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_091712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91712",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_091715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91715",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -537,7 +537,7 @@ archive/issue_comments_091716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91716",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_091717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91717",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_091718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91718",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -591,7 +591,7 @@ archive/issue_comments_091719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91719",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -609,7 +609,7 @@ archive/issue_comments_091720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91720",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -647,7 +647,7 @@ archive/issue_comments_091722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91722",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -669,7 +669,7 @@ archive/issue_comments_091723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91723",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -778,7 +778,7 @@ archive/issue_comments_091727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91727",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -830,7 +830,7 @@ archive/issue_comments_091729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91729",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -868,7 +868,7 @@ archive/issue_comments_091730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91730",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -891,7 +891,7 @@ archive/issue_comments_091731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91731",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -912,7 +912,7 @@ archive/issue_comments_091732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91732",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -934,7 +934,7 @@ archive/issue_comments_091733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91733",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -957,7 +957,7 @@ archive/issue_comments_091734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91734",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -970,16 +970,16 @@ Use `uname -m` and `ln -snf` but leave `cp -a`.  Updated SPKG patch.  Replaces p
 archive/issue_comments_091735.json:
 ```json
 {
-    "body": "Attachment [trac_9530-spkg_update_openSUSE_Arch_workarounds.2.patch](tarball://root/attachments/some-uuid/ticket9530/trac_9530-spkg_update_openSUSE_Arch_workarounds.2.patch) by mpatel created at 2010-10-28 02:28:56\n\nI've updated the patch to use `uname -m` and `ln -snf`.  I've left `cp -a` in it, since the enclosing block is Linux-specific.\n\nThe new spkg is at the same link in the description.  Florent and Thomas, could you please tell us if it works for you?\n\nAlso, Thomas, could you add yourself to the [account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames)?",
+    "body": "Attachment [trac_9530-spkg_update_openSUSE_Arch_workarounds.2.patch](tarball://root/attachments/some-uuid/ticket9530/trac_9530-spkg_update_openSUSE_Arch_workarounds.2.patch) by @qed777 created at 2010-10-28 02:28:56\n\nI've updated the patch to use `uname -m` and `ln -snf`.  I've left `cp -a` in it, since the enclosing block is Linux-specific.\n\nThe new spkg is at the same link in the description.  Florent and Thomas, could you please tell us if it works for you?\n\nAlso, Thomas, could you add yourself to the [account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames)?",
     "created_at": "2010-10-28T02:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91735",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9530-spkg_update_openSUSE_Arch_workarounds.2.patch](tarball://root/attachments/some-uuid/ticket9530/trac_9530-spkg_update_openSUSE_Arch_workarounds.2.patch) by mpatel created at 2010-10-28 02:28:56
+Attachment [trac_9530-spkg_update_openSUSE_Arch_workarounds.2.patch](tarball://root/attachments/some-uuid/ticket9530/trac_9530-spkg_update_openSUSE_Arch_workarounds.2.patch) by @qed777 created at 2010-10-28 02:28:56
 
 I've updated the patch to use `uname -m` and `ln -snf`.  I've left `cp -a` in it, since the enclosing block is Linux-specific.
 
@@ -999,7 +999,7 @@ archive/issue_comments_091736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91736",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1022,7 +1022,7 @@ archive/issue_comments_091737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91737",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1077,7 +1077,7 @@ archive/issue_comments_091739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91739",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1095,7 +1095,7 @@ archive/issue_comments_091740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91740",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1119,7 +1119,7 @@ archive/issue_comments_091741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91741",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1406,7 +1406,7 @@ archive/issue_comments_091745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91745",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1441,7 +1441,7 @@ archive/issue_comments_091746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91746",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1501,7 +1501,7 @@ archive/issue_comments_091748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91748",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1526,7 +1526,7 @@ archive/issue_comments_091749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91749",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1656,7 +1656,7 @@ archive/issue_comments_091754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91754",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1713,7 +1713,7 @@ archive/issue_comments_091756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91756",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1731,7 +1731,7 @@ archive/issue_comments_091757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91757",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1749,7 +1749,7 @@ archive/issue_comments_091758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9530",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9530#issuecomment-91758",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

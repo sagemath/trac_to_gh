@@ -14,7 +14,7 @@ archive/issues_005123.json:
     "title": "add univariate polynomial xgcd over GF(p) to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5123",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -59,7 +59,7 @@ archive/issue_comments_039163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5123#issuecomment-39163",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_039164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5123#issuecomment-39164",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

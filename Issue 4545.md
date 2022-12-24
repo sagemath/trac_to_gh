@@ -14,7 +14,7 @@ archive/issues_004545.json:
     "title": "better fix for mixing @parallel with numerical constant preparsing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4545",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: cwitty
@@ -37,7 +37,7 @@ archive/issue_comments_034047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4545#issuecomment-34047",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_034048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4545#issuecomment-34048",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_034050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4545#issuecomment-34050",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_034051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4545#issuecomment-34051",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_034053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4545#issuecomment-34053",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

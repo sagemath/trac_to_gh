@@ -3,7 +3,7 @@
 archive/issues_003996.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3996\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3996\n\n",
     "created_at": "2008-08-29T21:57:00Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003996.json:
     "title": "[with patch, needs review] doctest the Singular interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3996",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_028710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3996#issuecomment-28710",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -55,16 +55,16 @@ If those are fixed, I'll give it a positive review.
 archive/issue_comments_028711.json:
 ```json
 {
-    "body": "Attachment [trac_3996.patch](tarball://root/attachments/some-uuid/ticket3996/trac_3996.patch) by mhansen created at 2008-08-29 22:10:14",
+    "body": "Attachment [trac_3996.patch](tarball://root/attachments/some-uuid/ticket3996/trac_3996.patch) by @mwhansen created at 2008-08-29 22:10:14",
     "created_at": "2008-08-29T22:10:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3996#issuecomment-28711",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3996.patch](tarball://root/attachments/some-uuid/ticket3996/trac_3996.patch) by mhansen created at 2008-08-29 22:10:14
+Attachment [trac_3996.patch](tarball://root/attachments/some-uuid/ticket3996/trac_3996.patch) by @mwhansen created at 2008-08-29 22:10:14
 
 
 
@@ -113,16 +113,16 @@ Michael
 archive/issue_comments_028713.json:
 ```json
 {
-    "body": "Attachment [trac_3996-rebase.patch](tarball://root/attachments/some-uuid/ticket3996/trac_3996-rebase.patch) by mhansen created at 2008-08-29 22:54:09\n\ntrac_3996-rebase.patch should apply cleanly.",
+    "body": "Attachment [trac_3996-rebase.patch](tarball://root/attachments/some-uuid/ticket3996/trac_3996-rebase.patch) by @mwhansen created at 2008-08-29 22:54:09\n\ntrac_3996-rebase.patch should apply cleanly.",
     "created_at": "2008-08-29T22:54:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3996#issuecomment-28713",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3996-rebase.patch](tarball://root/attachments/some-uuid/ticket3996/trac_3996-rebase.patch) by mhansen created at 2008-08-29 22:54:09
+Attachment [trac_3996-rebase.patch](tarball://root/attachments/some-uuid/ticket3996/trac_3996-rebase.patch) by @mwhansen created at 2008-08-29 22:54:09
 
 trac_3996-rebase.patch should apply cleanly.
 

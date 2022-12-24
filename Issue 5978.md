@@ -14,7 +14,7 @@ archive/issues_005978.json:
     "title": "Can't construct the quotient of an univariate polynomial ring by it's zero ideal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5978",
-    "user": "jmbr"
+    "user": "@jmbr"
 }
 ```
 Assignee: tbd
@@ -57,7 +57,7 @@ archive/issue_comments_047480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5978#issuecomment-47480",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_047481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5978#issuecomment-47481",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_047482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5978#issuecomment-47482",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_047483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5978#issuecomment-47483",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_047484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5978#issuecomment-47484",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_047485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5978#issuecomment-47485",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_047486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5978#issuecomment-47486",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -199,16 +199,16 @@ Travis
 archive/issue_comments_047487.json:
 ```json
 {
-    "body": "Attachment [trac_5978-quotient_zero_ideal-ts.patch](tarball://root/attachments/some-uuid/ticket5978/trac_5978-quotient_zero_ideal-ts.patch) by jdemeyer created at 2013-02-21 10:14:53\n\nRebased to sage-5.8.beta0.",
+    "body": "Attachment [trac_5978-quotient_zero_ideal-ts.patch](tarball://root/attachments/some-uuid/ticket5978/trac_5978-quotient_zero_ideal-ts.patch) by @jdemeyer created at 2013-02-21 10:14:53\n\nRebased to sage-5.8.beta0.",
     "created_at": "2013-02-21T10:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5978#issuecomment-47487",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_5978-quotient_zero_ideal-ts.patch](tarball://root/attachments/some-uuid/ticket5978/trac_5978-quotient_zero_ideal-ts.patch) by jdemeyer created at 2013-02-21 10:14:53
+Attachment [trac_5978-quotient_zero_ideal-ts.patch](tarball://root/attachments/some-uuid/ticket5978/trac_5978-quotient_zero_ideal-ts.patch) by @jdemeyer created at 2013-02-21 10:14:53
 
 Rebased to sage-5.8.beta0.
 
@@ -224,7 +224,7 @@ archive/issue_comments_047488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5978#issuecomment-47488",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

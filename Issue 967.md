@@ -14,7 +14,7 @@ archive/issues_000967.json:
     "title": "[with patch] inplace operators for GF(p),GF(p^n) and MPolynomial_libsingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/967",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/967
 archive/issue_comments_005903.json:
 ```json
 {
-    "body": "Attachment [iadd_gfp.patch](tarball://root/attachments/some-uuid/ticket967/iadd_gfp.patch) by malb created at 2007-10-21 22:38:42",
+    "body": "Attachment [iadd_gfp.patch](tarball://root/attachments/some-uuid/ticket967/iadd_gfp.patch) by @malb created at 2007-10-21 22:38:42",
     "created_at": "2007-10-21T22:38:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/967#issuecomment-5903",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [iadd_gfp.patch](tarball://root/attachments/some-uuid/ticket967/iadd_gfp.patch) by malb created at 2007-10-21 22:38:42
+Attachment [iadd_gfp.patch](tarball://root/attachments/some-uuid/ticket967/iadd_gfp.patch) by @malb created at 2007-10-21 22:38:42
 
 
 
@@ -74,16 +74,16 @@ Attachment [iadd_gfp.patch](tarball://root/attachments/some-uuid/ticket967/iadd_
 archive/issue_comments_005904.json:
 ```json
 {
-    "body": "Attachment [iadd_mpoly.patch](tarball://root/attachments/some-uuid/ticket967/iadd_mpoly.patch) by malb created at 2007-10-21 22:38:55",
+    "body": "Attachment [iadd_mpoly.patch](tarball://root/attachments/some-uuid/ticket967/iadd_mpoly.patch) by @malb created at 2007-10-21 22:38:55",
     "created_at": "2007-10-21T22:38:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/967#issuecomment-5904",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [iadd_mpoly.patch](tarball://root/attachments/some-uuid/ticket967/iadd_mpoly.patch) by malb created at 2007-10-21 22:38:55
+Attachment [iadd_mpoly.patch](tarball://root/attachments/some-uuid/ticket967/iadd_mpoly.patch) by @malb created at 2007-10-21 22:38:55
 
 
 
@@ -92,16 +92,16 @@ Attachment [iadd_mpoly.patch](tarball://root/attachments/some-uuid/ticket967/iad
 archive/issue_comments_005905.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2007-10-21T22:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/967#issuecomment-5905",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_005906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/967#issuecomment-5906",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_005907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/967#issuecomment-5907",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_005908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/967#issuecomment-5908",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

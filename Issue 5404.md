@@ -3,7 +3,7 @@
 archive/issues_005404.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason\n\nNow we have sqrt(a, prec=1000). Also, it doesn't even do what it says. \n\n\n```\nsage: numerical_sqrt(3)\nsqrt(3)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5404\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nNow we have sqrt(a, prec=1000). Also, it doesn't even do what it says. \n\n\n```\nsage: numerical_sqrt(3)\nsqrt(3)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5404\n\n",
     "created_at": "2009-02-28T21:55:42Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_005404.json:
     "title": "deprecate numerical_sqrt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5404",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason
+CC:  @jasongrout
 
 Now we have sqrt(a, prec=1000). Also, it doesn't even do what it says. 
 
@@ -46,7 +46,7 @@ archive/issue_comments_041756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41756",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -59,16 +59,16 @@ Changing priority from major to minor.
 archive/issue_comments_041757.json:
 ```json
 {
-    "body": "Attachment [5404-numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/5404-numerical_sqrt.patch) by robertwb created at 2009-02-28 22:02:51\n\nNot used anywhere in the Sage source.",
+    "body": "Attachment [5404-numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/5404-numerical_sqrt.patch) by @robertwb created at 2009-02-28 22:02:51\n\nNot used anywhere in the Sage source.",
     "created_at": "2009-02-28T22:02:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41757",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5404-numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/5404-numerical_sqrt.patch) by robertwb created at 2009-02-28 22:02:51
+Attachment [5404-numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/5404-numerical_sqrt.patch) by @robertwb created at 2009-02-28 22:02:51
 
 Not used anywhere in the Sage source.
 
@@ -84,7 +84,7 @@ archive/issue_comments_041758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41758",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_041759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41759",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_041760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41760",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_041761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41761",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -167,16 +167,16 @@ This depends on #6171, not to apply and to pass doctests, but in the sense that 
 archive/issue_comments_041762.json:
 ```json
 {
-    "body": "Attachment [numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/numerical_sqrt.patch) by jhpalmieri created at 2009-05-31 23:40:07\n\napply only this patch",
+    "body": "Attachment [numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/numerical_sqrt.patch) by @jhpalmieri created at 2009-05-31 23:40:07\n\napply only this patch",
     "created_at": "2009-05-31T23:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41762",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/numerical_sqrt.patch) by jhpalmieri created at 2009-05-31 23:40:07
+Attachment [numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/numerical_sqrt.patch) by @jhpalmieri created at 2009-05-31 23:40:07
 
 apply only this patch
 
@@ -192,7 +192,7 @@ archive/issue_comments_041763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41763",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_041764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41764",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

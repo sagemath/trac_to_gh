@@ -3,7 +3,7 @@
 archive/issues_008938.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: Multivariate polynomials latex\n\n\n```\nsage: C5.<z> = CyclotomicField(5)\nsage: P.<s, t> = C5[]\nsage: f = (z^2 + z)*s\nsage: f\n(z^2 + z)*s\nsage: latex(f)\nz^{2} + z s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8938\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: Multivariate polynomials latex\n\n\n```\nsage: C5.<z> = CyclotomicField(5)\nsage: P.<s, t> = C5[]\nsage: f = (z^2 + z)*s\nsage: f\n(z^2 + z)*s\nsage: latex(f)\nz^{2} + z s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8938\n\n",
     "created_at": "2010-05-09T20:46:29Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_008938.json:
     "user": "fwclarke"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: Multivariate polynomials latex
 
@@ -87,7 +87,7 @@ archive/issue_comments_082298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82298",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_082299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82299",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_082300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82300",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_082301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82301",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_082304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82304",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_082305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82305",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -293,16 +293,16 @@ so this bug has been fixed along the way.
 archive/issue_comments_082306.json:
 ```json
 {
-    "body": "Attachment [trac_8938_latex_test_for_cyclotomic_fields.patch](tarball://root/attachments/some-uuid/ticket8938/trac_8938_latex_test_for_cyclotomic_fields.patch) by novoselt created at 2011-07-22 16:41:33",
+    "body": "Attachment [trac_8938_latex_test_for_cyclotomic_fields.patch](tarball://root/attachments/some-uuid/ticket8938/trac_8938_latex_test_for_cyclotomic_fields.patch) by @novoselt created at 2011-07-22 16:41:33",
     "created_at": "2011-07-22T16:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82306",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8938_latex_test_for_cyclotomic_fields.patch](tarball://root/attachments/some-uuid/ticket8938/trac_8938_latex_test_for_cyclotomic_fields.patch) by novoselt created at 2011-07-22 16:41:33
+Attachment [trac_8938_latex_test_for_cyclotomic_fields.patch](tarball://root/attachments/some-uuid/ticket8938/trac_8938_latex_test_for_cyclotomic_fields.patch) by @novoselt created at 2011-07-22 16:41:33
 
 
 
@@ -316,7 +316,7 @@ archive/issue_comments_082307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82307",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_082308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82308",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_082309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82309",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_082310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82310",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_082311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82311",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

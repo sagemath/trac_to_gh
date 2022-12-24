@@ -14,7 +14,7 @@ archive/issues_003016.json:
     "title": "[with patch, needs discussion ] javascript code editor spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3016",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3016
 archive/issue_comments_020724.json:
 ```json
 {
-    "body": "Attachment [edit_area-0.7.1.spkg](tarball://root/attachments/some-uuid/ticket3016/edit_area-0.7.1.spkg) by jason created at 2008-04-24 08:52:21",
+    "body": "Attachment [edit_area-0.7.1.spkg](tarball://root/attachments/some-uuid/ticket3016/edit_area-0.7.1.spkg) by @jasongrout created at 2008-04-24 08:52:21",
     "created_at": "2008-04-24T08:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3016#issuecomment-20724",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [edit_area-0.7.1.spkg](tarball://root/attachments/some-uuid/ticket3016/edit_area-0.7.1.spkg) by jason created at 2008-04-24 08:52:21
+Attachment [edit_area-0.7.1.spkg](tarball://root/attachments/some-uuid/ticket3016/edit_area-0.7.1.spkg) by @jasongrout created at 2008-04-24 08:52:21
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_020726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3016#issuecomment-20726",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_020727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3016#issuecomment-20727",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_020728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3016#issuecomment-20728",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

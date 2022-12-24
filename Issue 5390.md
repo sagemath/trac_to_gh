@@ -14,7 +14,7 @@ archive/issues_005390.json:
     "title": "install_package, optional_package etc might pick the wrong sage installation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5390",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: mabshoff
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5390
 archive/issue_comments_041512.json:
 ```json
 {
-    "body": "Attachment [installpackage2.patch](tarball://root/attachments/some-uuid/ticket5390/installpackage2.patch) by SimonKing created at 2009-02-27 09:53:55\n\nMake sure that install_package picks the right sage version (sorry, it seems the previous attachment was corrupted)",
+    "body": "Attachment [installpackage2.patch](tarball://root/attachments/some-uuid/ticket5390/installpackage2.patch) by @simon-king-jena created at 2009-02-27 09:53:55\n\nMake sure that install_package picks the right sage version (sorry, it seems the previous attachment was corrupted)",
     "created_at": "2009-02-27T09:53:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5390#issuecomment-41512",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [installpackage2.patch](tarball://root/attachments/some-uuid/ticket5390/installpackage2.patch) by SimonKing created at 2009-02-27 09:53:55
+Attachment [installpackage2.patch](tarball://root/attachments/some-uuid/ticket5390/installpackage2.patch) by @simon-king-jena created at 2009-02-27 09:53:55
 
 Make sure that install_package picks the right sage version (sorry, it seems the previous attachment was corrupted)
 
@@ -70,7 +70,7 @@ archive/issue_comments_041513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5390#issuecomment-41513",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_041515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5390#issuecomment-41515",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

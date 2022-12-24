@@ -3,7 +3,7 @@
 archive/issues_003049.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nThe following calculation is trivial, so shouldn't overflow:\n\n```\nsage: len(Compositions(30))\n536870912\nsage: len(Compositions(40))\nTraceback (most recent call last):\n...\nOverflowError: long int too large to convert to int\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3049\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe following calculation is trivial, so shouldn't overflow:\n\n```\nsage: len(Compositions(30))\n536870912\nsage: len(Compositions(40))\nTraceback (most recent call last):\n...\nOverflowError: long int too large to convert to int\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3049\n\n",
     "created_at": "2008-04-28T15:24:02Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_003049.json:
     "title": "combinatorics -- lame overflow with Compositions(n).count() (very easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3049",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -49,7 +49,7 @@ archive/issue_comments_021002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3049#issuecomment-21002",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_021003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3049#issuecomment-21003",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_021004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3049#issuecomment-21004",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

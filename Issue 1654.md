@@ -14,7 +14,7 @@ archive/issues_001654.json:
     "title": "[easy -- no patch required] excise pysqlite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1654",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

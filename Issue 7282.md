@@ -14,7 +14,7 @@ archive/issues_007282.json:
     "title": "port jinja to install on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7282",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_060606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60606",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_060607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60607",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_060608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60608",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_060609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60609",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_060610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60610",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_060611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60611",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

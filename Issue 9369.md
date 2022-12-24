@@ -3,7 +3,7 @@
 archive/issues_009369.json:
 ```json
 {
-    "body": "Assignee: jason\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9369\n\n",
+    "body": "Assignee: @jasongrout\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9369\n\n",
     "created_at": "2010-06-28T23:43:29Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_009369.json:
     "title": "make verbose command flush its output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9369",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9369
 archive/issue_comments_089003.json:
 ```json
 {
-    "body": "Attachment [trac_9369.patch](tarball://root/attachments/some-uuid/ticket9369/trac_9369.patch) by was created at 2010-06-28 23:49:05",
+    "body": "Attachment [trac_9369.patch](tarball://root/attachments/some-uuid/ticket9369/trac_9369.patch) by @williamstein created at 2010-06-28 23:49:05",
     "created_at": "2010-06-28T23:49:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9369#issuecomment-89003",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9369.patch](tarball://root/attachments/some-uuid/ticket9369/trac_9369.patch) by was created at 2010-06-28 23:49:05
+Attachment [trac_9369.patch](tarball://root/attachments/some-uuid/ticket9369/trac_9369.patch) by @williamstein created at 2010-06-28 23:49:05
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_089004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9369#issuecomment-89004",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_089005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9369#issuecomment-89005",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_089006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9369#issuecomment-89006",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_089007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9369#issuecomment-89007",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_089008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9369#issuecomment-89008",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_089009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9369#issuecomment-89009",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_089010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9369#issuecomment-89010",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_089011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9369#issuecomment-89011",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

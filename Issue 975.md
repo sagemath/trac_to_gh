@@ -93,7 +93,7 @@ archive/issue_comments_005946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5946",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_005947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5947",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -221,16 +221,16 @@ William
 archive/issue_comments_005948.json:
 ```json
 {
-    "body": "Attachment [update-environment.patch](tarball://root/attachments/some-uuid/ticket975/update-environment.patch) by jason created at 2007-12-12 00:22:33",
+    "body": "Attachment [update-environment.patch](tarball://root/attachments/some-uuid/ticket975/update-environment.patch) by @jasongrout created at 2007-12-12 00:22:33",
     "created_at": "2007-12-12T00:22:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5948",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [update-environment.patch](tarball://root/attachments/some-uuid/ticket975/update-environment.patch) by jason created at 2007-12-12 00:22:33
+Attachment [update-environment.patch](tarball://root/attachments/some-uuid/ticket975/update-environment.patch) by @jasongrout created at 2007-12-12 00:22:33
 
 
 
@@ -244,7 +244,7 @@ archive/issue_comments_005949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5949",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_005950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5950",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -293,16 +293,16 @@ Modifies the browsers returned to use "native-execute".  Use in conjunction with
 archive/issue_comments_005951.json:
 ```json
 {
-    "body": "Attachment [native-execute.patch](tarball://root/attachments/some-uuid/ticket975/native-execute.patch) by jason created at 2008-01-10 05:24:14\n\nApply to sage-scripts.  Creates new \"native-execute\" command that resets the LD_LIBRARY_PATH variable.",
+    "body": "Attachment [native-execute.patch](tarball://root/attachments/some-uuid/ticket975/native-execute.patch) by @jasongrout created at 2008-01-10 05:24:14\n\nApply to sage-scripts.  Creates new \"native-execute\" command that resets the LD_LIBRARY_PATH variable.",
     "created_at": "2008-01-10T05:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5951",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [native-execute.patch](tarball://root/attachments/some-uuid/ticket975/native-execute.patch) by jason created at 2008-01-10 05:24:14
+Attachment [native-execute.patch](tarball://root/attachments/some-uuid/ticket975/native-execute.patch) by @jasongrout created at 2008-01-10 05:24:14
 
 Apply to sage-scripts.  Creates new "native-execute" command that resets the LD_LIBRARY_PATH variable.
 
@@ -318,7 +318,7 @@ archive/issue_comments_005952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5952",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_005953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5953",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_005955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/975#issuecomment-5955",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

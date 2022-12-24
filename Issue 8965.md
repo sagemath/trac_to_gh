@@ -3,7 +3,7 @@
 archive/issues_008965.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  was\n\nClarify documentation, add some doctests, and slightly simplify the implementation of Parallel.__call__.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8965\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @williamstein\n\nClarify documentation, add some doctests, and slightly simplify the implementation of Parallel.__call__.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8965\n\n",
     "created_at": "2010-05-14T18:01:22Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008965.json:
     "title": "decorate.py: clarify normalize_input, Parallel and parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8965",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 Assignee: mvngu
 
-CC:  was
+CC:  @williamstein
 
 Clarify documentation, add some doctests, and slightly simplify the implementation of Parallel.__call__.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8965
 archive/issue_comments_082625.json:
 ```json
 {
-    "body": "Attachment [trac_8965_decorate2.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965_decorate2.patch) by jdc created at 2010-05-14 18:09:12\n\nFound a typo in comment; apply both patches",
+    "body": "Attachment [trac_8965_decorate2.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965_decorate2.patch) by @jdchristensen created at 2010-05-14 18:09:12\n\nFound a typo in comment; apply both patches",
     "created_at": "2010-05-14T18:09:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8965#issuecomment-82625",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 
-Attachment [trac_8965_decorate2.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965_decorate2.patch) by jdc created at 2010-05-14 18:09:12
+Attachment [trac_8965_decorate2.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965_decorate2.patch) by @jdchristensen created at 2010-05-14 18:09:12
 
 Found a typo in comment; apply both patches
 
@@ -115,7 +115,7 @@ archive/issue_comments_082629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8965#issuecomment-82629",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_082630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8965#issuecomment-82630",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_082631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8965#issuecomment-82631",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 
@@ -164,16 +164,16 @@ single patch, ready for review
 archive/issue_comments_082632.json:
 ```json
 {
-    "body": "Attachment [trac_8965_decorate.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965_decorate.patch) by jdc created at 2010-05-16 00:29:13\n\nThe only patch needed now is trac_8965_decorate.patch.  (I couldn't figure out how to delete the others.)  It reverts to the original implementation of Parallel.__call__, since the simpler one didn't handle the case where the function being wrapped can be called with no arguments.  The latest patch includes doctests for this situation.\n\nThe latest patch only changes documentation or comments, besides one whitespace change to the code.",
+    "body": "Attachment [trac_8965_decorate.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965_decorate.patch) by @jdchristensen created at 2010-05-16 00:29:13\n\nThe only patch needed now is trac_8965_decorate.patch.  (I couldn't figure out how to delete the others.)  It reverts to the original implementation of Parallel.__call__, since the simpler one didn't handle the case where the function being wrapped can be called with no arguments.  The latest patch includes doctests for this situation.\n\nThe latest patch only changes documentation or comments, besides one whitespace change to the code.",
     "created_at": "2010-05-16T00:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8965#issuecomment-82632",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 
-Attachment [trac_8965_decorate.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965_decorate.patch) by jdc created at 2010-05-16 00:29:13
+Attachment [trac_8965_decorate.patch](tarball://root/attachments/some-uuid/ticket8965/trac_8965_decorate.patch) by @jdchristensen created at 2010-05-16 00:29:13
 
 The only patch needed now is trac_8965_decorate.patch.  (I couldn't figure out how to delete the others.)  It reverts to the original implementation of Parallel.__call__, since the simpler one didn't handle the case where the function being wrapped can be called with no arguments.  The latest patch includes doctests for this situation.
 
@@ -191,7 +191,7 @@ archive/issue_comments_082633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8965#issuecomment-82633",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 

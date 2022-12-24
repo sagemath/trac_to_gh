@@ -3,7 +3,7 @@
 archive/issues_002752.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nI speeded up the *all_paths()* function for graphs.\n\nThe improvement is mainly based on 'getting rid of the recursion' :-)\n\n\nOn my machine (Pentium M) it's about 5 times faster, without more memory consumption.\n\n-vgermrk-\n\nIssue created by migration from https://trac.sagemath.org/ticket/2752\n\n",
+    "body": "Assignee: @rlmill\n\nI speeded up the *all_paths()* function for graphs.\n\nThe improvement is mainly based on 'getting rid of the recursion' :-)\n\n\nOn my machine (Pentium M) it's about 5 times faster, without more memory consumption.\n\n-vgermrk-\n\nIssue created by migration from https://trac.sagemath.org/ticket/2752\n\n",
     "created_at": "2008-04-01T13:42:54Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002752.json:
     "title": "Speedup for  all_paths()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2752",
-    "user": "vgermrk"
+    "user": "@m-r-k"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 I speeded up the *all_paths()* function for graphs.
 
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2752
 archive/issue_comments_018901.json:
 ```json
 {
-    "body": "Attachment [all_paths_speedup.patch](tarball://root/attachments/some-uuid/ticket2752/all_paths_speedup.patch) by vgermrk created at 2008-04-01 13:43:12",
+    "body": "Attachment [all_paths_speedup.patch](tarball://root/attachments/some-uuid/ticket2752/all_paths_speedup.patch) by @m-r-k created at 2008-04-01 13:43:12",
     "created_at": "2008-04-01T13:43:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2752#issuecomment-18901",
-    "user": "vgermrk"
+    "user": "@m-r-k"
 }
 ```
 
-Attachment [all_paths_speedup.patch](tarball://root/attachments/some-uuid/ticket2752/all_paths_speedup.patch) by vgermrk created at 2008-04-01 13:43:12
+Attachment [all_paths_speedup.patch](tarball://root/attachments/some-uuid/ticket2752/all_paths_speedup.patch) by @m-r-k created at 2008-04-01 13:43:12
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_018903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2752#issuecomment-18903",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_018904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2752#issuecomment-18904",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_018905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2752#issuecomment-18905",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -165,16 +165,16 @@ Sorry, the comment about dense small graphs didn't get deleted before going to p
 archive/issue_comments_018906.json:
 ```json
 {
-    "body": "Attachment [test_paths.sage](tarball://root/attachments/some-uuid/ticket2752/test_paths.sage) by rlm created at 2008-04-02 00:35:24",
+    "body": "Attachment [test_paths.sage](tarball://root/attachments/some-uuid/ticket2752/test_paths.sage) by @rlmill created at 2008-04-02 00:35:24",
     "created_at": "2008-04-02T00:35:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2752#issuecomment-18906",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [test_paths.sage](tarball://root/attachments/some-uuid/ticket2752/test_paths.sage) by rlm created at 2008-04-02 00:35:24
+Attachment [test_paths.sage](tarball://root/attachments/some-uuid/ticket2752/test_paths.sage) by @rlmill created at 2008-04-02 00:35:24
 
 
 

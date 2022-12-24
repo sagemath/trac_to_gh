@@ -3,7 +3,7 @@
 archive/issues_008602.json:
 ```json
 {
-    "body": "Assignee: tornaria\n\nCC:  jonhanke\n\nKeywords: theta series\n\nImplement a counting vectors algorithm for theta series of degree 2.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8602\n\n",
+    "body": "Assignee: @tornaria\n\nCC:  @jonhanke\n\nKeywords: theta series\n\nImplement a counting vectors algorithm for theta series of degree 2.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8602\n\n",
     "created_at": "2010-03-24T19:00:07Z",
     "labels": [
         "quadratic forms",
@@ -14,12 +14,12 @@ archive/issues_008602.json:
     "title": "Implement theta series of degree 2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8602",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
-Assignee: tornaria
+Assignee: @tornaria
 
-CC:  jonhanke
+CC:  @jonhanke
 
 Keywords: theta series
 
@@ -42,7 +42,7 @@ archive/issue_comments_077903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8602#issuecomment-77903",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -55,16 +55,16 @@ Implementation of degree 2 theta series
 archive/issue_comments_077904.json:
 ```json
 {
-    "body": "Attachment [trac_8602.theta_series_degree_2.patch](tarball://root/attachments/some-uuid/ticket8602/trac_8602.theta_series_degree_2.patch) by tornaria created at 2010-03-24 19:08:26",
+    "body": "Attachment [trac_8602.theta_series_degree_2.patch](tarball://root/attachments/some-uuid/ticket8602/trac_8602.theta_series_degree_2.patch) by @tornaria created at 2010-03-24 19:08:26",
     "created_at": "2010-03-24T19:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8602#issuecomment-77904",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [trac_8602.theta_series_degree_2.patch](tarball://root/attachments/some-uuid/ticket8602/trac_8602.theta_series_degree_2.patch) by tornaria created at 2010-03-24 19:08:26
+Attachment [trac_8602.theta_series_degree_2.patch](tarball://root/attachments/some-uuid/ticket8602/trac_8602.theta_series_degree_2.patch) by @tornaria created at 2010-03-24 19:08:26
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_077905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8602#issuecomment-77905",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_077906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8602#issuecomment-77906",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_077907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8602#issuecomment-77907",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_077908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8602#issuecomment-77908",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

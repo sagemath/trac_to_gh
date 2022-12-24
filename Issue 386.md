@@ -14,7 +14,7 @@ archive/issues_000386.json:
     "title": "Enhance \"attach <file>\" in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/386",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby
@@ -72,7 +72,7 @@ archive/issue_comments_001895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/386#issuecomment-1895",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_001896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/386#issuecomment-1896",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_001898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/386#issuecomment-1898",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

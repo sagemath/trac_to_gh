@@ -3,7 +3,7 @@
 archive/issues_002179.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan\n\nHere's a pure python implementation of an algorithm to factor polynomials over ZZ using kronecker's trick (specializing a variable to a large prime reduces you to a poly of fewer variables).  Note that this also fills in an implementation of factoring over ZZ[x,y] --- we don't have any implementation at all for this currently.  It's also faster than singular (over QQ) for some cases.\n\nHere's an example with my favorite trouble-maker for singular.\n\nthis patch:\n\n```\nsage: R.<p10,g0,g1,g2,g3,g4,X1,X2>=ZZ[]\nsage: t=-p10^170*X1^10*X2^10+p10^130*X1^10*X2^5+p10^130*X1^5*X2^10-p10^90*X1^5*X2^5+p10^80*X1^5*X2^5-p10^40*X1^5-p10^40*X2^5+1\nsage: time t.factor()\nCPU times: user 0.11 s, sys: 0.00 s, total: 0.12 s\nWall time: 0.12\n(-1) * (p10^8*X2 - 1) * (p10^8*X1 - 1) * (p10^18*X1*X2 - 1) * (p10^32*X2^4 + p10^24*X2^3 + p10^16*X2^2 + p10^8*X2 + 1) * (p10^32*X1^4 + p10^24*X1^3 + p10^16*X1^2 + p10^8*X1 + 1) * (p10^72*X1^4*X2^4 + p10^54*X1^3*X2^3 + p10^36*X1^2*X2^2 + p10^18*X1*X2 + 1)\n```\n\n\nsingular:\n\n```\nsage: R.<p10,g0,g1,g2,g3,g4,X1,X2>=QQ[]\nsage: t=-p10^170*X1^10*X2^10+p10^130*X1^10*X2^5+p10^130*X1^5*X2^10-p10^90*X1^5*X2^5+p10^80*X1^5*X2^5-p10^40*X1^5-p10^40*X2^5+1\nsage: time t.factor()\nCPU times: <longer than I wanted to wait>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2179\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nHere's a pure python implementation of an algorithm to factor polynomials over ZZ using kronecker's trick (specializing a variable to a large prime reduces you to a poly of fewer variables).  Note that this also fills in an implementation of factoring over ZZ[x,y] --- we don't have any implementation at all for this currently.  It's also faster than singular (over QQ) for some cases.\n\nHere's an example with my favorite trouble-maker for singular.\n\nthis patch:\n\n```\nsage: R.<p10,g0,g1,g2,g3,g4,X1,X2>=ZZ[]\nsage: t=-p10^170*X1^10*X2^10+p10^130*X1^10*X2^5+p10^130*X1^5*X2^10-p10^90*X1^5*X2^5+p10^80*X1^5*X2^5-p10^40*X1^5-p10^40*X2^5+1\nsage: time t.factor()\nCPU times: user 0.11 s, sys: 0.00 s, total: 0.12 s\nWall time: 0.12\n(-1) * (p10^8*X2 - 1) * (p10^8*X1 - 1) * (p10^18*X1*X2 - 1) * (p10^32*X2^4 + p10^24*X2^3 + p10^16*X2^2 + p10^8*X2 + 1) * (p10^32*X1^4 + p10^24*X1^3 + p10^16*X1^2 + p10^8*X1 + 1) * (p10^72*X1^4*X2^4 + p10^54*X1^3*X2^3 + p10^36*X1^2*X2^2 + p10^18*X1*X2 + 1)\n```\n\n\nsingular:\n\n```\nsage: R.<p10,g0,g1,g2,g3,g4,X1,X2>=QQ[]\nsage: t=-p10^170*X1^10*X2^10+p10^130*X1^10*X2^5+p10^130*X1^5*X2^10-p10^90*X1^5*X2^5+p10^80*X1^5*X2^5-p10^40*X1^5-p10^40*X2^5+1\nsage: time t.factor()\nCPU times: <longer than I wanted to wait>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2179\n\n",
     "created_at": "2008-02-16T20:45:54Z",
     "labels": [
         "algebraic geometry",
@@ -17,9 +17,9 @@ archive/issues_002179.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Here's a pure python implementation of an algorithm to factor polynomials over ZZ using kronecker's trick (specializing a variable to a large prime reduces you to a poly of fewer variables).  Note that this also fills in an implementation of factoring over ZZ[x,y] --- we don't have any implementation at all for this currently.  It's also faster than singular (over QQ) for some cases.
 
@@ -77,7 +77,7 @@ Attachment [mpoly-factor.patch](tarball://root/attachments/some-uuid/ticket2179/
 archive/issue_comments_014302.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2008-02-16T20:57:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2179",
     "type": "issue_comment",
@@ -86,7 +86,7 @@ archive/issue_comments_014302.json:
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -118,7 +118,7 @@ archive/issue_comments_014304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2179#issuecomment-14304",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_014305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2179#issuecomment-14305",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -194,16 +194,16 @@ I'm retracting this for the moment.  As expected, once I started looking at this
 archive/issue_comments_014308.json:
 ```json
 {
-    "body": "Changing assignee from malb to jbmohler.",
+    "body": "Changing assignee from @malb to jbmohler.",
     "created_at": "2008-03-28T11:44:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2179#issuecomment-14308",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from malb to jbmohler.
+Changing assignee from @malb to jbmohler.
 
 
 
@@ -217,7 +217,7 @@ archive/issue_comments_014309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2179#issuecomment-14309",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_014310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2179#issuecomment-14310",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_014311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2179#issuecomment-14311",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_014312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2179#issuecomment-14312",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_014313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2179#issuecomment-14313",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_014314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2179#issuecomment-14314",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_014315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2179#issuecomment-14315",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

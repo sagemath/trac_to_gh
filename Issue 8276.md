@@ -3,7 +3,7 @@
 archive/issues_008276.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  mraum\n\nKeywords: One mutable.\n\n\n```\nsage: A = MatrixSpace(ZZ, 3)\nsage: A.one()\n[1 0 0]\n[0 1 0]\n[0 0 1]\nsage: A.one()[1,2] = 1\nsage: A.one()\n[1 0 0]\n[0 1 1]\n[0 0 1]\n```\n\nIndeed it is mutable an cached !\n\nIssue created by migration from https://trac.sagemath.org/ticket/8276\n\n",
+    "body": "Assignee: @hivert\n\nCC:  mraum\n\nKeywords: One mutable.\n\n\n```\nsage: A = MatrixSpace(ZZ, 3)\nsage: A.one()\n[1 0 0]\n[0 1 0]\n[0 0 1]\nsage: A.one()[1,2] = 1\nsage: A.one()\n[1 0 0]\n[0 1 1]\n[0 0 1]\n```\n\nIndeed it is mutable an cached !\n\nIssue created by migration from https://trac.sagemath.org/ticket/8276\n\n",
     "created_at": "2010-02-15T20:49:35Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008276.json:
     "title": "The one of MatrixSpace can be changed !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8276",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  mraum
 
@@ -55,7 +55,7 @@ archive/issue_comments_073267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73267",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_073268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73268",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -104,16 +104,16 @@ Thanks for any suggestion.
 archive/issue_comments_073269.json:
 ```json
 {
-    "body": "Attachment [trac_8276-fix_sagelib-fh.2.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_sagelib-fh.2.patch) by hivert created at 2010-02-16 23:54:45",
+    "body": "Attachment [trac_8276-fix_sagelib-fh.2.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_sagelib-fh.2.patch) by @hivert created at 2010-02-16 23:54:45",
     "created_at": "2010-02-16T23:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73269",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8276-fix_sagelib-fh.2.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_sagelib-fh.2.patch) by hivert created at 2010-02-16 23:54:45
+Attachment [trac_8276-fix_sagelib-fh.2.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_sagelib-fh.2.patch) by @hivert created at 2010-02-16 23:54:45
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_073270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73270",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_073271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73271",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_073272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73272",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_073273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73273",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_073274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73274",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_073275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73275",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -240,16 +240,16 @@ The last improvement patch breaks something...
 archive/issue_comments_073276.json:
 ```json
 {
-    "body": "Attachment [trac_8276-fix_sagelib-fh.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_sagelib-fh.patch) by hivert created at 2010-02-17 17:54:54",
+    "body": "Attachment [trac_8276-fix_sagelib-fh.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_sagelib-fh.patch) by @hivert created at 2010-02-17 17:54:54",
     "created_at": "2010-02-17T17:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73276",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8276-fix_sagelib-fh.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_sagelib-fh.patch) by hivert created at 2010-02-17 17:54:54
+Attachment [trac_8276-fix_sagelib-fh.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_sagelib-fh.patch) by @hivert created at 2010-02-17 17:54:54
 
 
 
@@ -263,7 +263,7 @@ archive/issue_comments_073277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73277",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_073278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73278",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -304,16 +304,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_073279.json:
 ```json
 {
-    "body": "Attachment [trac_8276-fix_zero_matrix_creation-fh.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_zero_matrix_creation-fh.patch) by hivert created at 2010-02-20 13:55:21",
+    "body": "Attachment [trac_8276-fix_zero_matrix_creation-fh.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_zero_matrix_creation-fh.patch) by @hivert created at 2010-02-20 13:55:21",
     "created_at": "2010-02-20T13:55:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73279",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8276-fix_zero_matrix_creation-fh.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_zero_matrix_creation-fh.patch) by hivert created at 2010-02-20 13:55:21
+Attachment [trac_8276-fix_zero_matrix_creation-fh.patch](tarball://root/attachments/some-uuid/ticket8276/trac_8276-fix_zero_matrix_creation-fh.patch) by @hivert created at 2010-02-20 13:55:21
 
 
 
@@ -327,7 +327,7 @@ archive/issue_comments_073280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73280",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_073281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73281",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_073284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73284",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -738,7 +738,7 @@ archive/issue_comments_073291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8276#issuecomment-73291",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

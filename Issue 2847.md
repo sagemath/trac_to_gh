@@ -14,7 +14,7 @@ archive/issues_002847.json:
     "title": "[with patch, needs review] more speedups to cyclotomic polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2847",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2847
 archive/issue_comments_019534.json:
 ```json
 {
-    "body": "Attachment [2847-cyclo-radical.patch](tarball://root/attachments/some-uuid/ticket2847/2847-cyclo-radical.patch) by robertwb created at 2008-04-07 19:33:26",
+    "body": "Attachment [2847-cyclo-radical.patch](tarball://root/attachments/some-uuid/ticket2847/2847-cyclo-radical.patch) by @robertwb created at 2008-04-07 19:33:26",
     "created_at": "2008-04-07T19:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2847#issuecomment-19534",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2847-cyclo-radical.patch](tarball://root/attachments/some-uuid/ticket2847/2847-cyclo-radical.patch) by robertwb created at 2008-04-07 19:33:26
+Attachment [2847-cyclo-radical.patch](tarball://root/attachments/some-uuid/ticket2847/2847-cyclo-radical.patch) by @robertwb created at 2008-04-07 19:33:26
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_019535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2847#issuecomment-19535",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -101,16 +101,16 @@ Michael
 archive/issue_comments_019537.json:
 ```json
 {
-    "body": "Attachment [2847-cyclo-radical-rebased.patch](tarball://root/attachments/some-uuid/ticket2847/2847-cyclo-radical-rebased.patch) by robertwb created at 2008-04-09 03:39:41",
+    "body": "Attachment [2847-cyclo-radical-rebased.patch](tarball://root/attachments/some-uuid/ticket2847/2847-cyclo-radical-rebased.patch) by @robertwb created at 2008-04-09 03:39:41",
     "created_at": "2008-04-09T03:39:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2847#issuecomment-19537",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2847-cyclo-radical-rebased.patch](tarball://root/attachments/some-uuid/ticket2847/2847-cyclo-radical-rebased.patch) by robertwb created at 2008-04-09 03:39:41
+Attachment [2847-cyclo-radical-rebased.patch](tarball://root/attachments/some-uuid/ticket2847/2847-cyclo-radical-rebased.patch) by @robertwb created at 2008-04-09 03:39:41
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_019538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2847#issuecomment-19538",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_019539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2847#issuecomment-19539",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -249,16 +249,16 @@ Michael
 archive/issue_comments_019543.json:
 ```json
 {
-    "body": "Attachment [2847-Zn_x-fix.patch](tarball://root/attachments/some-uuid/ticket2847/2847-Zn_x-fix.patch) by robertwb created at 2008-04-09 04:39:46\n\nLooks like this exposed a bug in the (Z/nZ)[x] __init__ method, which I have fixed in the attached patch.",
+    "body": "Attachment [2847-Zn_x-fix.patch](tarball://root/attachments/some-uuid/ticket2847/2847-Zn_x-fix.patch) by @robertwb created at 2008-04-09 04:39:46\n\nLooks like this exposed a bug in the (Z/nZ)[x] __init__ method, which I have fixed in the attached patch.",
     "created_at": "2008-04-09T04:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2847#issuecomment-19543",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2847-Zn_x-fix.patch](tarball://root/attachments/some-uuid/ticket2847/2847-Zn_x-fix.patch) by robertwb created at 2008-04-09 04:39:46
+Attachment [2847-Zn_x-fix.patch](tarball://root/attachments/some-uuid/ticket2847/2847-Zn_x-fix.patch) by @robertwb created at 2008-04-09 04:39:46
 
 Looks like this exposed a bug in the (Z/nZ)[x] __init__ method, which I have fixed in the attached patch.
 

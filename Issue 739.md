@@ -14,7 +14,7 @@ archive/issues_000739.json:
     "title": "hang doctesting const.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/739",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -54,7 +54,7 @@ archive/issue_comments_004327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/739#issuecomment-4327",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_004328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/739#issuecomment-4328",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

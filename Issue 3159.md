@@ -14,7 +14,7 @@ archive/issues_003159.json:
     "title": "[with patch; needs review] Patch adding soname to ntl shared library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3159",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3159
 archive/issue_comments_021912.json:
 ```json
 {
-    "body": "Attachment [ntl-dynamic-library.patch](tarball://root/attachments/some-uuid/ticket3159/ntl-dynamic-library.patch) by tabbott created at 2008-05-11 16:58:37",
+    "body": "Attachment [ntl-dynamic-library.patch](tarball://root/attachments/some-uuid/ticket3159/ntl-dynamic-library.patch) by @timabbott created at 2008-05-11 16:58:37",
     "created_at": "2008-05-11T16:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3159#issuecomment-21912",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [ntl-dynamic-library.patch](tarball://root/attachments/some-uuid/ticket3159/ntl-dynamic-library.patch) by tabbott created at 2008-05-11 16:58:37
+Attachment [ntl-dynamic-library.patch](tarball://root/attachments/some-uuid/ticket3159/ntl-dynamic-library.patch) by @timabbott created at 2008-05-11 16:58:37
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_021914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3159#issuecomment-21914",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_021919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3159#issuecomment-21919",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_021920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3159#issuecomment-21920",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -224,13 +224,13 @@ I noticed the spkg-install script now has the current NTL version number in it; 
 archive/issue_comments_021921.json:
 ```json
 {
-    "body": "Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticket3159/ntl-forget-version.patch) by tabbott created at 2008-05-20 17:26:51",
+    "body": "Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticket3159/ntl-forget-version.patch) by @timabbott created at 2008-05-20 17:26:51",
     "created_at": "2008-05-20T17:26:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3159#issuecomment-21921",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticket3159/ntl-forget-version.patch) by tabbott created at 2008-05-20 17:26:51
+Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticket3159/ntl-forget-version.patch) by @timabbott created at 2008-05-20 17:26:51

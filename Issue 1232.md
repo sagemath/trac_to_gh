@@ -3,7 +3,7 @@
 archive/issues_001232.json:
 ```json
 {
-    "body": "Assignee: was\n\nRunning\n\n\n```\nModularSymbols(1,6,0,GF(2)).simple_factors()\n```\n\n\nresults in\n\n\n```\n---------------------------------------------------------------------------\n<type 'exceptions.AssertionError'>        Traceback (most recent call last)\n\n/home/ghitza/sage/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/modsym/space.py in simple_factors(self)\n    996         ASSUMPTION: self is a module over the anemic Hecke algebra.\n    997         \"\"\"\n--> 998         return [S for S,_ in self.factorization()]\n    999 \n   1000     def star_eigenvalues(self):\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/modsym/ambient.py in factorization(self)\n   1064         D = sage.structure.all.Factorization(D, cr=True)\n   1065         assert r == s, \"bug in factorization --  self has dimension %s, but sum of dimensions of factors is %s\\n%s\"%(\n-> 1066             r, s, D)\n   1067         self._factorization = D\n   1068         return self._factorization\n\n<type 'exceptions.AssertionError'>: bug in factorization --  self has dimension 2, but sum of dimensions of factors is 3\n(Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 6 with sign 0 over Finite Field of size 2) * \n(Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 6 with sign 0 over Finite Field of size 2) * \n(Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 6 with sign 0 over Finite Field of size 2)\n```\n\n\nOutcome is similar for higher weights, e.g. for weight 100 I get \"self has dimension 33, but sum of dimensions of factors is 65\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1232\n\n",
+    "body": "Assignee: @williamstein\n\nRunning\n\n\n```\nModularSymbols(1,6,0,GF(2)).simple_factors()\n```\n\n\nresults in\n\n\n```\n---------------------------------------------------------------------------\n<type 'exceptions.AssertionError'>        Traceback (most recent call last)\n\n/home/ghitza/sage/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/modsym/space.py in simple_factors(self)\n    996         ASSUMPTION: self is a module over the anemic Hecke algebra.\n    997         \"\"\"\n--> 998         return [S for S,_ in self.factorization()]\n    999 \n   1000     def star_eigenvalues(self):\n\n/opt/sage/local/lib/python2.5/site-packages/sage/modular/modsym/ambient.py in factorization(self)\n   1064         D = sage.structure.all.Factorization(D, cr=True)\n   1065         assert r == s, \"bug in factorization --  self has dimension %s, but sum of dimensions of factors is %s\\n%s\"%(\n-> 1066             r, s, D)\n   1067         self._factorization = D\n   1068         return self._factorization\n\n<type 'exceptions.AssertionError'>: bug in factorization --  self has dimension 2, but sum of dimensions of factors is 3\n(Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 6 with sign 0 over Finite Field of size 2) * \n(Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 6 with sign 0 over Finite Field of size 2) * \n(Modular Symbols subspace of dimension 1 of Modular Symbols space of dimension 2 for Gamma_0(1) of weight 6 with sign 0 over Finite Field of size 2)\n```\n\n\nOutcome is similar for higher weights, e.g. for weight 100 I get \"self has dimension 33, but sum of dimensions of factors is 65\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1232\n\n",
     "created_at": "2007-11-21T03:49:42Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_001232.json:
     "title": "bug in modular symbols over GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1232",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Running
 
@@ -76,7 +76,7 @@ archive/issue_comments_007672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1232#issuecomment-7672",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -89,16 +89,16 @@ So the problem here is straightforward to find -- M.factorization() breaks up th
 archive/issue_comments_007673.json:
 ```json
 {
-    "body": "Attachment [trac_1232.patch](tarball://root/attachments/some-uuid/ticket1232/trac_1232.patch) by craigcitro created at 2007-12-12 04:30:33",
+    "body": "Attachment [trac_1232.patch](tarball://root/attachments/some-uuid/ticket1232/trac_1232.patch) by @craigcitro created at 2007-12-12 04:30:33",
     "created_at": "2007-12-12T04:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1232#issuecomment-7673",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_1232.patch](tarball://root/attachments/some-uuid/ticket1232/trac_1232.patch) by craigcitro created at 2007-12-12 04:30:33
+Attachment [trac_1232.patch](tarball://root/attachments/some-uuid/ticket1232/trac_1232.patch) by @craigcitro created at 2007-12-12 04:30:33
 
 
 
@@ -107,16 +107,16 @@ Attachment [trac_1232.patch](tarball://root/attachments/some-uuid/ticket1232/tra
 archive/issue_comments_007674.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2007-12-12T04:34:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1232#issuecomment-7674",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_007675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1232#issuecomment-7675",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_007676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1232#issuecomment-7676",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_007677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1232#issuecomment-7677",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

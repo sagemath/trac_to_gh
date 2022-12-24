@@ -14,7 +14,7 @@ archive/issues_008062.json:
     "title": "New givaro-3.2.13rc2.p0.spkg works with Open Solaris 64 bit, SAGE64=\"yes\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8062",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -43,7 +43,7 @@ archive/issue_comments_070662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70662",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070663.json:
 ```json
 {
-    "body": "Attachment [givaro-3.2.13rc2.p0,patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0,patch) by jsp created at 2010-01-26 20:54:56",
+    "body": "Attachment [givaro-3.2.13rc2.p0,patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0,patch) by @jaapspies created at 2010-01-26 20:54:56",
     "created_at": "2010-01-26T20:54:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70663",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [givaro-3.2.13rc2.p0,patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0,patch) by jsp created at 2010-01-26 20:54:56
+Attachment [givaro-3.2.13rc2.p0,patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0,patch) by @jaapspies created at 2010-01-26 20:54:56
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_070666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70666",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_070667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70667",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -181,16 +181,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_070668.json:
 ```json
 {
-    "body": "Attachment [givaro-3.2.13rc2.p0+.patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0+.patch) by jsp created at 2010-01-28 13:11:48\n\nUpdated SPKG.txt\n\nLeft patch level p0.\n\nLink is still\n[http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg)\n\n\nJaap",
+    "body": "Attachment [givaro-3.2.13rc2.p0+.patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0+.patch) by @jaapspies created at 2010-01-28 13:11:48\n\nUpdated SPKG.txt\n\nLeft patch level p0.\n\nLink is still\n[http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg)\n\n\nJaap",
     "created_at": "2010-01-28T13:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70668",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [givaro-3.2.13rc2.p0+.patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0+.patch) by jsp created at 2010-01-28 13:11:48
+Attachment [givaro-3.2.13rc2.p0+.patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0+.patch) by @jaapspies created at 2010-01-28 13:11:48
 
 Updated SPKG.txt
 
@@ -265,7 +265,7 @@ archive/issue_comments_070671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70671",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

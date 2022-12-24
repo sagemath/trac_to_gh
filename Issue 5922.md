@@ -14,7 +14,7 @@ archive/issues_005922.json:
     "title": "doctesting sage tree does not work when SAGE_ROOT is a symbolic link",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5922",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -69,7 +69,7 @@ archive/issue_comments_046821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5922#issuecomment-46821",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_046822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5922#issuecomment-46822",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_046823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5922#issuecomment-46823",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

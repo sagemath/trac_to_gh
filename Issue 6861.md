@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6861
 archive/issue_comments_056589.json:
 ```json
 {
-    "body": "Attachment [trac_6861-sage-test-in-dotsage.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861-sage-test-in-dotsage.patch) by jason created at 2009-09-02 21:16:42",
+    "body": "Attachment [trac_6861-sage-test-in-dotsage.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861-sage-test-in-dotsage.patch) by @jasongrout created at 2009-09-02 21:16:42",
     "created_at": "2009-09-02T21:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56589",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_6861-sage-test-in-dotsage.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861-sage-test-in-dotsage.patch) by jason created at 2009-09-02 21:16:42
+Attachment [trac_6861-sage-test-in-dotsage.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861-sage-test-in-dotsage.patch) by @jasongrout created at 2009-09-02 21:16:42
 
 
 
@@ -64,16 +64,16 @@ Attachment [trac_6861-sage-test-in-dotsage.patch](tarball://root/attachments/som
 archive/issue_comments_056590.json:
 ```json
 {
-    "body": "Attachment [trac_6861-sage-test-in-dotsage.2.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861-sage-test-in-dotsage.2.patch) by jason created at 2009-09-02 21:17:18\n\nThe two files above are identical.  One can be deleted.",
+    "body": "Attachment [trac_6861-sage-test-in-dotsage.2.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861-sage-test-in-dotsage.2.patch) by @jasongrout created at 2009-09-02 21:17:18\n\nThe two files above are identical.  One can be deleted.",
     "created_at": "2009-09-02T21:17:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56590",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_6861-sage-test-in-dotsage.2.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861-sage-test-in-dotsage.2.patch) by jason created at 2009-09-02 21:17:18
+Attachment [trac_6861-sage-test-in-dotsage.2.patch](tarball://root/attachments/some-uuid/ticket6861/trac_6861-sage-test-in-dotsage.2.patch) by @jasongrout created at 2009-09-02 21:17:18
 
 The two files above are identical.  One can be deleted.
 
@@ -109,7 +109,7 @@ archive/issue_comments_056592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56592",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_056599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56599",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004923.json:
     "title": "convert sage.plot.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4923",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4923
 archive/issue_comments_037357.json:
 ```json
 {
-    "body": "Attachment [trac_4923.patch](tarball://root/attachments/some-uuid/ticket4923/trac_4923.patch) by mhansen created at 2009-01-02 02:58:32",
+    "body": "Attachment [trac_4923.patch](tarball://root/attachments/some-uuid/ticket4923/trac_4923.patch) by @mwhansen created at 2009-01-02 02:58:32",
     "created_at": "2009-01-02T02:58:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4923#issuecomment-37357",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4923.patch](tarball://root/attachments/some-uuid/ticket4923/trac_4923.patch) by mhansen created at 2009-01-02 02:58:32
+Attachment [trac_4923.patch](tarball://root/attachments/some-uuid/ticket4923/trac_4923.patch) by @mwhansen created at 2009-01-02 02:58:32
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_037358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4923#issuecomment-37358",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -68,16 +68,16 @@ I don't have the time or energy to review this fully right now, but I noticed on
 archive/issue_comments_037359.json:
 ```json
 {
-    "body": "Attachment [sage.plot-final.patch](tarball://root/attachments/some-uuid/ticket4923/sage.plot-final.patch) by mhansen created at 2009-02-21 19:21:27",
+    "body": "Attachment [sage.plot-final.patch](tarball://root/attachments/some-uuid/ticket4923/sage.plot-final.patch) by @mwhansen created at 2009-02-21 19:21:27",
     "created_at": "2009-02-21T19:21:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4923#issuecomment-37359",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage.plot-final.patch](tarball://root/attachments/some-uuid/ticket4923/sage.plot-final.patch) by mhansen created at 2009-02-21 19:21:27
+Attachment [sage.plot-final.patch](tarball://root/attachments/some-uuid/ticket4923/sage.plot-final.patch) by @mwhansen created at 2009-02-21 19:21:27
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_037360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4923#issuecomment-37360",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_037363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4923#issuecomment-37363",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

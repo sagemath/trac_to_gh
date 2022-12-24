@@ -3,7 +3,7 @@
 archive/issues_009169.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jpflori dimpase kcrisman\n\nOn Cygwin, the following test hangs:\n\n```\n\n            sage: @cached_function\n            ... def oddprime_factors(n):\n            ...     l = [p for p,e in factor(n) if p != 2]\n            ...     return len(l)\n            sage: oddprime_factors.precompute(range(1,100), 4)\n```\n\n\nThe above is very fast on any other platform. \n\nThis results in a doctest file failure:\n\n```\nsage -t  \"devel/sage/sage/misc/cachefunc.py\"                \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [361.6 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9169\n\n",
+    "body": "Assignee: tbd\n\nCC:  jpflori @dimpase @kcrisman\n\nOn Cygwin, the following test hangs:\n\n```\n\n            sage: @cached_function\n            ... def oddprime_factors(n):\n            ...     l = [p for p,e in factor(n) if p != 2]\n            ...     return len(l)\n            sage: oddprime_factors.precompute(range(1,100), 4)\n```\n\n\nThe above is very fast on any other platform. \n\nThis results in a doctest file failure:\n\n```\nsage -t  \"devel/sage/sage/misc/cachefunc.py\"                \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [361.6 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9169\n\n",
     "created_at": "2010-06-07T04:32:34Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_009169.json:
     "title": "cygwin: a cachefunc.py doctest hangs seemingly forever",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9169",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  jpflori dimpase kcrisman
+CC:  jpflori @dimpase @kcrisman
 
 On Cygwin, the following test hangs:
 
@@ -61,7 +61,7 @@ archive/issue_comments_085733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85733",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_085734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85734",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_085736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85736",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_085737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85737",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_085738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85738",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_085739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85739",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_085743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85743",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

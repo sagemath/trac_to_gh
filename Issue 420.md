@@ -3,7 +3,7 @@
 archive/issues_000420.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe title says it all. \n\nIssue created by migration from https://trac.sagemath.org/ticket/420\n\n",
+    "body": "Assignee: @williamstein\n\nThe title says it all. \n\nIssue created by migration from https://trac.sagemath.org/ticket/420\n\n",
     "created_at": "2007-08-10T20:20:28Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000420.json:
     "title": "SAGE's optional axiom package doesn't build on os x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/420",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The title says it all. 
 
@@ -62,7 +62,7 @@ archive/issue_comments_002113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/420#issuecomment-2113",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_002114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/420#issuecomment-2114",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

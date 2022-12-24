@@ -14,7 +14,7 @@ archive/issues_008781.json:
     "title": "Overfull graph (and a bug in edge_coloring)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8781",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8781
 archive/issue_comments_080374.json:
 ```json
 {
-    "body": "Attachment [trac_8781.patch](tarball://root/attachments/some-uuid/ticket8781/trac_8781.patch) by ncohen created at 2010-04-27 12:15:49",
+    "body": "Attachment [trac_8781.patch](tarball://root/attachments/some-uuid/ticket8781/trac_8781.patch) by @nathanncohen created at 2010-04-27 12:15:49",
     "created_at": "2010-04-27T12:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8781#issuecomment-80374",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8781.patch](tarball://root/attachments/some-uuid/ticket8781/trac_8781.patch) by ncohen created at 2010-04-27 12:15:49
+Attachment [trac_8781.patch](tarball://root/attachments/some-uuid/ticket8781/trac_8781.patch) by @nathanncohen created at 2010-04-27 12:15:49
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_080375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8781#issuecomment-80375",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_080378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8781#issuecomment-80378",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_080379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8781#issuecomment-80379",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_080381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8781#issuecomment-80381",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_080384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8781#issuecomment-80384",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_080386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8781#issuecomment-80386",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_080387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8781#issuecomment-80387",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_080388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8781#issuecomment-80388",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

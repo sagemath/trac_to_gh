@@ -3,7 +3,7 @@
 archive/issues_003934.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nAt the Heilbronn Institute workshop \"Computations with Modular Forms\", Ken McMurdy requested code for handling eta products on X_0(N). Theory background and wish-list here: http://maths.pratum.net/CMF/resources/McMurdyTalk.pdf.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3934\n\n",
+    "body": "Assignee: @loefflerd\n\nAt the Heilbronn Institute workshop \"Computations with Modular Forms\", Ken McMurdy requested code for handling eta products on X_0(N). Theory background and wish-list here: http://maths.pratum.net/CMF/resources/McMurdyTalk.pdf.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3934\n\n",
     "created_at": "2008-08-23T11:46:53Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_003934.json:
     "title": "Eta product modular functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3934",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 At the Heilbronn Institute workshop "Computations with Modular Forms", Ken McMurdy requested code for handling eta products on X_0(N). Theory background and wish-list here: http://maths.pratum.net/CMF/resources/McMurdyTalk.pdf.
 
@@ -37,7 +37,7 @@ archive/issue_comments_028182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28182",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_028183.json:
 ```json
 {
-    "body": "Attachment [10292.patch](tarball://root/attachments/some-uuid/ticket3934/10292.patch) by davidloeffler created at 2008-08-24 12:09:19\n\nFirst version: patch against sage 3.1.1",
+    "body": "Attachment [10292.patch](tarball://root/attachments/some-uuid/ticket3934/10292.patch) by @loefflerd created at 2008-08-24 12:09:19\n\nFirst version: patch against sage 3.1.1",
     "created_at": "2008-08-24T12:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28183",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [10292.patch](tarball://root/attachments/some-uuid/ticket3934/10292.patch) by davidloeffler created at 2008-08-24 12:09:19
+Attachment [10292.patch](tarball://root/attachments/some-uuid/ticket3934/10292.patch) by @loefflerd created at 2008-08-24 12:09:19
 
 First version: patch against sage 3.1.1
 
@@ -75,7 +75,7 @@ archive/issue_comments_028184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28184",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_028185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28185",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -135,16 +135,16 @@ Thanks very much for the comments. Since that first version was written I have r
 archive/issue_comments_028186.json:
 ```json
 {
-    "body": "Attachment [10293.patch](tarball://root/attachments/some-uuid/ticket3934/10293.patch) by davidloeffler created at 2008-08-27 14:19:40",
+    "body": "Attachment [10293.patch](tarball://root/attachments/some-uuid/ticket3934/10293.patch) by @loefflerd created at 2008-08-27 14:19:40",
     "created_at": "2008-08-27T14:19:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28186",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [10293.patch](tarball://root/attachments/some-uuid/ticket3934/10293.patch) by davidloeffler created at 2008-08-27 14:19:40
+Attachment [10293.patch](tarball://root/attachments/some-uuid/ticket3934/10293.patch) by @loefflerd created at 2008-08-27 14:19:40
 
 
 
@@ -158,7 +158,7 @@ archive/issue_comments_028187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28187",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_028188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28188",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_028189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28189",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -210,16 +210,16 @@ Apply after the previous two patches
 archive/issue_comments_028190.json:
 ```json
 {
-    "body": "Attachment [10294.patch](tarball://root/attachments/some-uuid/ticket3934/10294.patch) by cremona created at 2008-08-27 15:37:13\n\nReview summary:  This is a great piece of work, especially after the second patch.  I have made a few changes, detailed below, which are in the 3rd patch.\n\n* I changed the type-checking of the level parameter so that it forces it to be a Sage integer.  This is a good idea since some integer methods would not work if the level was a Python integer, and it also allows you to say `EtaGroup_class(4/2)` should you ever want to.\n\n* docstring for EtaGroup_class.basis() had a spurious redundant INPUT line (N)\n\n* I added a little more type and value checking of parameters\n\n* In  eta_poly_relations there is a lot of output which cannot be turned off.   Why not include a parameter verbose, default False, and only print the output if it is True?  I put this in and changed the doctests accordingly.\n\n* I commented out the NotImplemented plot function, as it seemed pointless to have it!\n\nCoverage test gives this:\n\n```\n ./sage -coverage devel/sage-eta/sage/modular/etaproducts.py \n\ndevel/sage-eta/sage/modular/etaproducts.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage-eta/sage/modular/etaproducts.py: 74% (23 of 31)\n\nMissing documentation:\n\t * __init__(self, level)\n\t * _repr_(self)\n\t * __call__(self, dict)\n\t * __init__(self, parent, rdict)\n\t * __cmp__(self, other)\n\t * __eq__(self, other)\n\t * _short_repr(self)\n\t * _eta_relations_helper(eta1, eta2, degree, qexp_terms, labels, verbose)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _mul_(self, other)\n\t * _div_(self, other)\n\t * _repr_(self)\n\t * _repr_(self)\n```\n\nI have never been sure about the loads(dumps) message.  Apart from that all functions which are not preceded by an underscore have docstrings and doctests, which is the main thing:  it would be better if they had a little documentation, but then you'll get the complaint that they should also have doctests.\n\n\nConclusion:  I am very happy with this, but it would be even better if someone who knows a lot more about eta products (such as Ken McMurdy) could put it through its paces.",
+    "body": "Attachment [10294.patch](tarball://root/attachments/some-uuid/ticket3934/10294.patch) by @JohnCremona created at 2008-08-27 15:37:13\n\nReview summary:  This is a great piece of work, especially after the second patch.  I have made a few changes, detailed below, which are in the 3rd patch.\n\n* I changed the type-checking of the level parameter so that it forces it to be a Sage integer.  This is a good idea since some integer methods would not work if the level was a Python integer, and it also allows you to say `EtaGroup_class(4/2)` should you ever want to.\n\n* docstring for EtaGroup_class.basis() had a spurious redundant INPUT line (N)\n\n* I added a little more type and value checking of parameters\n\n* In  eta_poly_relations there is a lot of output which cannot be turned off.   Why not include a parameter verbose, default False, and only print the output if it is True?  I put this in and changed the doctests accordingly.\n\n* I commented out the NotImplemented plot function, as it seemed pointless to have it!\n\nCoverage test gives this:\n\n```\n ./sage -coverage devel/sage-eta/sage/modular/etaproducts.py \n\ndevel/sage-eta/sage/modular/etaproducts.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage-eta/sage/modular/etaproducts.py: 74% (23 of 31)\n\nMissing documentation:\n\t * __init__(self, level)\n\t * _repr_(self)\n\t * __call__(self, dict)\n\t * __init__(self, parent, rdict)\n\t * __cmp__(self, other)\n\t * __eq__(self, other)\n\t * _short_repr(self)\n\t * _eta_relations_helper(eta1, eta2, degree, qexp_terms, labels, verbose)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _mul_(self, other)\n\t * _div_(self, other)\n\t * _repr_(self)\n\t * _repr_(self)\n```\n\nI have never been sure about the loads(dumps) message.  Apart from that all functions which are not preceded by an underscore have docstrings and doctests, which is the main thing:  it would be better if they had a little documentation, but then you'll get the complaint that they should also have doctests.\n\n\nConclusion:  I am very happy with this, but it would be even better if someone who knows a lot more about eta products (such as Ken McMurdy) could put it through its paces.",
     "created_at": "2008-08-27T15:37:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28190",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [10294.patch](tarball://root/attachments/some-uuid/ticket3934/10294.patch) by cremona created at 2008-08-27 15:37:13
+Attachment [10294.patch](tarball://root/attachments/some-uuid/ticket3934/10294.patch) by @JohnCremona created at 2008-08-27 15:37:13
 
 Review summary:  This is a great piece of work, especially after the second patch.  I have made a few changes, detailed below, which are in the 3rd patch.
 
@@ -299,7 +299,7 @@ archive/issue_comments_028192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28192",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_028193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28193",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -336,16 +336,16 @@ David
 archive/issue_comments_028194.json:
 ```json
 {
-    "body": "Attachment [10295.patch](tarball://root/attachments/some-uuid/ticket3934/10295.patch) by davidloeffler created at 2008-09-23 10:35:57\n\nI've added doctests for the underscore methods, and a loads(dumps()) test; sage -coverage now returns 100%.",
+    "body": "Attachment [10295.patch](tarball://root/attachments/some-uuid/ticket3934/10295.patch) by @loefflerd created at 2008-09-23 10:35:57\n\nI've added doctests for the underscore methods, and a loads(dumps()) test; sage -coverage now returns 100%.",
     "created_at": "2008-09-23T10:35:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28194",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [10295.patch](tarball://root/attachments/some-uuid/ticket3934/10295.patch) by davidloeffler created at 2008-09-23 10:35:57
+Attachment [10295.patch](tarball://root/attachments/some-uuid/ticket3934/10295.patch) by @loefflerd created at 2008-09-23 10:35:57
 
 I've added doctests for the underscore methods, and a loads(dumps()) test; sage -coverage now returns 100%.
 
@@ -361,7 +361,7 @@ archive/issue_comments_028195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28195",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_028196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28196",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -401,7 +401,7 @@ archive/issue_comments_028197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28197",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001158.json:
 ```json
 {
-    "body": "Assignee: was\n\nSome mathematical functions automatically evaluate to floating-point, even for a symbolic input\n(integer or variable):\n\n\n```\nsage: Ei(10)\n2492.22897624\nsage: bessel_J(0,10)\n-0.245935764451348\nsage: bessel_J(0,x)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/tmp/gmp-4.2.2/tune/<ipython console> in <module>()\n\n/usr/local/sage-2.8.12/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_J(nu, z, alg, prec)\n    492         else:\n    493             K,a = _setup(prec)\n--> 494         b = K(nu.besselj(z))\n    495         pari.set_real_precision(a)\n    496         return b\n\n/tmp/gmp-4.2.2/tune/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__()\n\n/tmp/gmp-4.2.2/tune/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set()\n\n<type 'exceptions.TypeError'>: Unable to convert x (='1-1/4*x^2+1/64*x^4-1/2304*x^6+1/147456*x^8-1/14745600*x^10+1/2123366400*x^12-1/416179814400*x^14+1/106542032486400*x^16+O(x^17)') to real number.\n```\n\n\nIn my opinion, foo(10) should evaluate to foo(10), and similarly foo(x).\n\nIssue created by migration from https://trac.sagemath.org/ticket/1158\n\n",
+    "body": "Assignee: @williamstein\n\nSome mathematical functions automatically evaluate to floating-point, even for a symbolic input\n(integer or variable):\n\n\n```\nsage: Ei(10)\n2492.22897624\nsage: bessel_J(0,10)\n-0.245935764451348\nsage: bessel_J(0,x)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/tmp/gmp-4.2.2/tune/<ipython console> in <module>()\n\n/usr/local/sage-2.8.12/sage/local/lib/python2.5/site-packages/sage/functions/special.py in bessel_J(nu, z, alg, prec)\n    492         else:\n    493             K,a = _setup(prec)\n--> 494         b = K(nu.besselj(z))\n    495         pari.set_real_precision(a)\n    496         return b\n\n/tmp/gmp-4.2.2/tune/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__()\n\n/tmp/gmp-4.2.2/tune/real_mpfr.pyx in sage.rings.real_mpfr.RealNumber._set()\n\n<type 'exceptions.TypeError'>: Unable to convert x (='1-1/4*x^2+1/64*x^4-1/2304*x^6+1/147456*x^8-1/14745600*x^10+1/2123366400*x^12-1/416179814400*x^14+1/106542032486400*x^16+O(x^17)') to real number.\n```\n\n\nIn my opinion, foo(10) should evaluate to foo(10), and similarly foo(x).\n\nIssue created by migration from https://trac.sagemath.org/ticket/1158\n\n",
     "created_at": "2007-11-12T22:07:27Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001158.json:
     "title": "mathematical functions should remain symbolic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1158",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Some mathematical functions automatically evaluate to floating-point, even for a symbolic input
 (integer or variable):
@@ -67,7 +67,7 @@ archive/issue_comments_007066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7066",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -80,16 +80,16 @@ This requires going through and look at all the numerical (special) functions we
 archive/issue_comments_007067.json:
 ```json
 {
-    "body": "Changing assignee from was to gfurnish.",
+    "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-23T18:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7067",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was to gfurnish.
+Changing assignee from @williamstein to @garyfurnish.
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_007068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7068",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_007069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7069",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_007071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7071",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_007073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7073",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_007074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7074",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_007075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7075",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_007076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7076",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_007077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7077",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_007078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7078",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_007079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7079",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_007080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7080",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_007081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7081",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_007082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1158#issuecomment-7082",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

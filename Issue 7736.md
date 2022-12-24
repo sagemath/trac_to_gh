@@ -3,7 +3,7 @@
 archive/issues_007736.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  wuthrich was\n\nHere is a result that confuses me (appologies for not having a simpler example for this):\n\n```\nsage: E = EllipticCurve('1728z');\nsage: Et = E.mod5family();\nsage: f=Et.discriminant().numerator().factor()[0][0];\nsage: K.<alpha> = NumberField(f);\nsage: f.change_ring(K).factor()[1][0].is_irreducible()\nFalse\n```\n\nHere f turns out to be a degree 12 polynomial, and when you factor it over K, you get a linear factor and a degree 11 factor. However, degree 11 factor in this case is not irreducible. In fact, if you continue with\n\n```\nsage: g = f.change_ring(K).factor()[1][0];\nsage: g.factor()\n```\n\nyou get a linear factor and a degree 10 factor, where both are irreducible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7736\n\n",
+    "body": "Assignee: tbd\n\nCC:  @categorie @williamstein\n\nHere is a result that confuses me (appologies for not having a simpler example for this):\n\n```\nsage: E = EllipticCurve('1728z');\nsage: Et = E.mod5family();\nsage: f=Et.discriminant().numerator().factor()[0][0];\nsage: K.<alpha> = NumberField(f);\nsage: f.change_ring(K).factor()[1][0].is_irreducible()\nFalse\n```\n\nHere f turns out to be a degree 12 polynomial, and when you factor it over K, you get a linear factor and a degree 11 factor. However, degree 11 factor in this case is not irreducible. In fact, if you continue with\n\n```\nsage: g = f.change_ring(K).factor()[1][0];\nsage: g.factor()\n```\n\nyou get a linear factor and a degree 10 factor, where both are irreducible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7736\n\n",
     "created_at": "2009-12-18T20:22:06Z",
     "labels": [
         "factorization",
@@ -14,12 +14,12 @@ archive/issues_007736.json:
     "title": "factor returns a reducible factor,",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7736",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 Assignee: tbd
 
-CC:  wuthrich was
+CC:  @categorie @williamstein
 
 Here is a result that confuses me (appologies for not having a simpler example for this):
 
@@ -57,7 +57,7 @@ archive/issue_comments_066472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7736#issuecomment-66472",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_066473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7736#issuecomment-66473",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,16 +90,16 @@ This might be the same as #7097?
 archive/issue_comments_066474.json:
 ```json
 {
-    "body": "Changing assignee from tbd to cremona.",
+    "body": "Changing assignee from tbd to @JohnCremona.",
     "created_at": "2010-02-11T15:59:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7736#issuecomment-66474",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Changing assignee from tbd to cremona.
+Changing assignee from tbd to @JohnCremona.
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_066475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7736#issuecomment-66475",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_066476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7736#issuecomment-66476",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_066477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7736#issuecomment-66477",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_066478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7736#issuecomment-66478",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_066479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7736#issuecomment-66479",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_066480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7736#issuecomment-66480",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_066481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7736#issuecomment-66481",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_066482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7736#issuecomment-66482",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_066483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7736#issuecomment-66483",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_066484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7736#issuecomment-66484",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

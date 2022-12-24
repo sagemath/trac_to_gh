@@ -3,7 +3,7 @@
 archive/issues_008663.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nsage-4.3.5 ebuild references expect-2.0, but this version is no longer available for download (upstream gives only newer versions). Searching with google and filesearch.ru gives no results\n\nmaybe a newer version will work, too?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8663\n\n",
+    "body": "Assignee: @aghitza\n\nsage-4.3.5 ebuild references expect-2.0, but this version is no longer available for download (upstream gives only newer versions). Searching with google and filesearch.ru gives no results\n\nmaybe a newer version will work, too?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8663\n\n",
     "created_at": "2010-04-09T03:37:11Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_008663.json:
     "user": "mehrunes_dagon"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 sage-4.3.5 ebuild references expect-2.0, but this version is no longer available for download (upstream gives only newer versions). Searching with google and filesearch.ru gives no results
 
@@ -39,7 +39,7 @@ archive/issue_comments_078675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8663#issuecomment-78675",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_078676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8663#issuecomment-78676",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing component from algebra to packages.
 archive/issue_comments_078677.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to tbd.",
+    "body": "Changing assignee from @aghitza to tbd.",
     "created_at": "2010-09-02T10:54:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8663#issuecomment-78677",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from AlexGhitza to tbd.
+Changing assignee from @aghitza to tbd.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_078678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8663#issuecomment-78678",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_078679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8663#issuecomment-78679",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

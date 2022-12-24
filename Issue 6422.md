@@ -14,7 +14,7 @@ archive/issues_006422.json:
     "title": "[with patch, needs review] make sage.symbolic.expression.Expression.__init__ usable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6422",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 From sage-support:
@@ -62,7 +62,7 @@ archive/issue_comments_051561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6422#issuecomment-51561",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_051562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6422#issuecomment-51562",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -141,16 +141,16 @@ second try at fixing Expression.__init__
 archive/issue_comments_051563.json:
 ```json
 {
-    "body": "Attachment [trac_6422-expression_init.patch](tarball://root/attachments/some-uuid/ticket6422/trac_6422-expression_init.patch) by burcin created at 2009-06-27 15:24:53\n\nI attached a new patch which sets `self._parent` first, fixing the doctest problems above. I also added a new test for the problem reported by Nicolas in his initial message.",
+    "body": "Attachment [trac_6422-expression_init.patch](tarball://root/attachments/some-uuid/ticket6422/trac_6422-expression_init.patch) by @burcin created at 2009-06-27 15:24:53\n\nI attached a new patch which sets `self._parent` first, fixing the doctest problems above. I also added a new test for the problem reported by Nicolas in his initial message.",
     "created_at": "2009-06-27T15:24:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6422#issuecomment-51563",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6422-expression_init.patch](tarball://root/attachments/some-uuid/ticket6422/trac_6422-expression_init.patch) by burcin created at 2009-06-27 15:24:53
+Attachment [trac_6422-expression_init.patch](tarball://root/attachments/some-uuid/ticket6422/trac_6422-expression_init.patch) by @burcin created at 2009-06-27 15:24:53
 
 I attached a new patch which sets `self._parent` first, fixing the doctest problems above. I also added a new test for the problem reported by Nicolas in his initial message.
 
@@ -161,16 +161,16 @@ I attached a new patch which sets `self._parent` first, fixing the doctest probl
 archive/issue_comments_051564.json:
 ```json
 {
-    "body": "Set assignee to burcin.",
+    "body": "Set assignee to @burcin.",
     "created_at": "2009-06-27T15:24:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6422#issuecomment-51564",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Set assignee to burcin.
+Set assignee to @burcin.
 
 
 
@@ -184,7 +184,7 @@ archive/issue_comments_051565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6422#issuecomment-51565",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_051566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6422#issuecomment-51566",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_051567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6422#issuecomment-51567",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

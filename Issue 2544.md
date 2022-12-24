@@ -3,7 +3,7 @@
 archive/issues_002544.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2544\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2544\n\n",
     "created_at": "2008-03-16T08:51:56Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_002544.json:
     "title": "modabvar -- rewrite of modular abelian varieties rewrite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2544",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2544
 archive/issue_comments_017341.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part1.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part1.patch) by was created at 2008-03-16 08:54:40",
+    "body": "Attachment [sage-2544-part1.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part1.patch) by @williamstein created at 2008-03-16 08:54:40",
     "created_at": "2008-03-16T08:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17341",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2544-part1.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part1.patch) by was created at 2008-03-16 08:54:40
+Attachment [sage-2544-part1.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part1.patch) by @williamstein created at 2008-03-16 08:54:40
 
 
 
@@ -52,16 +52,16 @@ Attachment [sage-2544-part1.patch](tarball://root/attachments/some-uuid/ticket25
 archive/issue_comments_017342.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part2.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part2.patch) by was created at 2008-03-16 08:54:58",
+    "body": "Attachment [sage-2544-part2.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part2.patch) by @williamstein created at 2008-03-16 08:54:58",
     "created_at": "2008-03-16T08:54:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17342",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2544-part2.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part2.patch) by was created at 2008-03-16 08:54:58
+Attachment [sage-2544-part2.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part2.patch) by @williamstein created at 2008-03-16 08:54:58
 
 
 
@@ -70,16 +70,16 @@ Attachment [sage-2544-part2.patch](tarball://root/attachments/some-uuid/ticket25
 archive/issue_comments_017343.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part3.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part3.patch) by craigcitro created at 2008-03-16 09:06:16",
+    "body": "Attachment [sage-2544-part3.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part3.patch) by @craigcitro created at 2008-03-16 09:06:16",
     "created_at": "2008-03-16T09:06:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17343",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-2544-part3.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part3.patch) by craigcitro created at 2008-03-16 09:06:16
+Attachment [sage-2544-part3.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part3.patch) by @craigcitro created at 2008-03-16 09:06:16
 
 
 
@@ -88,16 +88,16 @@ Attachment [sage-2544-part3.patch](tarball://root/attachments/some-uuid/ticket25
 archive/issue_comments_017344.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part5.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part5.patch) by craigcitro created at 2008-03-16 21:25:10",
+    "body": "Attachment [sage-2544-part5.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part5.patch) by @craigcitro created at 2008-03-16 21:25:10",
     "created_at": "2008-03-16T21:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17344",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-2544-part5.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part5.patch) by craigcitro created at 2008-03-16 21:25:10
+Attachment [sage-2544-part5.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part5.patch) by @craigcitro created at 2008-03-16 21:25:10
 
 
 
@@ -106,16 +106,16 @@ Attachment [sage-2544-part5.patch](tarball://root/attachments/some-uuid/ticket25
 archive/issue_comments_017345.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part6.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part6.patch) by was created at 2008-03-16 22:05:41",
+    "body": "Attachment [sage-2544-part6.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part6.patch) by @williamstein created at 2008-03-16 22:05:41",
     "created_at": "2008-03-16T22:05:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17345",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2544-part6.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part6.patch) by was created at 2008-03-16 22:05:41
+Attachment [sage-2544-part6.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part6.patch) by @williamstein created at 2008-03-16 22:05:41
 
 
 
@@ -124,16 +124,16 @@ Attachment [sage-2544-part6.patch](tarball://root/attachments/some-uuid/ticket25
 archive/issue_comments_017346.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part7.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part7.patch) by was created at 2008-03-17 00:14:19",
+    "body": "Attachment [sage-2544-part7.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part7.patch) by @williamstein created at 2008-03-17 00:14:19",
     "created_at": "2008-03-17T00:14:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17346",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2544-part7.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part7.patch) by was created at 2008-03-17 00:14:19
+Attachment [sage-2544-part7.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part7.patch) by @williamstein created at 2008-03-17 00:14:19
 
 
 
@@ -142,16 +142,16 @@ Attachment [sage-2544-part7.patch](tarball://root/attachments/some-uuid/ticket25
 archive/issue_comments_017347.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part8.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part8.patch) by craigcitro created at 2008-03-17 10:11:37",
+    "body": "Attachment [sage-2544-part8.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part8.patch) by @craigcitro created at 2008-03-17 10:11:37",
     "created_at": "2008-03-17T10:11:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17347",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-2544-part8.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part8.patch) by craigcitro created at 2008-03-17 10:11:37
+Attachment [sage-2544-part8.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part8.patch) by @craigcitro created at 2008-03-17 10:11:37
 
 
 
@@ -160,16 +160,16 @@ Attachment [sage-2544-part8.patch](tarball://root/attachments/some-uuid/ticket25
 archive/issue_comments_017348.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part10.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part10.patch) by craigcitro created at 2008-03-17 10:38:21",
+    "body": "Attachment [sage-2544-part10.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part10.patch) by @craigcitro created at 2008-03-17 10:38:21",
     "created_at": "2008-03-17T10:38:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17348",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-2544-part10.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part10.patch) by craigcitro created at 2008-03-17 10:38:21
+Attachment [sage-2544-part10.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part10.patch) by @craigcitro created at 2008-03-17 10:38:21
 
 
 
@@ -178,16 +178,16 @@ Attachment [sage-2544-part10.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_comments_017349.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part11.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part11.patch) by was created at 2008-03-17 12:57:21",
+    "body": "Attachment [sage-2544-part11.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part11.patch) by @williamstein created at 2008-03-17 12:57:21",
     "created_at": "2008-03-17T12:57:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17349",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2544-part11.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part11.patch) by was created at 2008-03-17 12:57:21
+Attachment [sage-2544-part11.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part11.patch) by @williamstein created at 2008-03-17 12:57:21
 
 
 
@@ -196,16 +196,16 @@ Attachment [sage-2544-part11.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_comments_017350.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part12.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part12.patch) by craigcitro created at 2008-03-17 13:00:29",
+    "body": "Attachment [sage-2544-part12.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part12.patch) by @craigcitro created at 2008-03-17 13:00:29",
     "created_at": "2008-03-17T13:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17350",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-2544-part12.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part12.patch) by craigcitro created at 2008-03-17 13:00:29
+Attachment [sage-2544-part12.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part12.patch) by @craigcitro created at 2008-03-17 13:00:29
 
 
 
@@ -214,16 +214,16 @@ Attachment [sage-2544-part12.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_comments_017351.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part13.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part13.patch) by was created at 2008-03-17 13:03:55",
+    "body": "Attachment [sage-2544-part13.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part13.patch) by @williamstein created at 2008-03-17 13:03:55",
     "created_at": "2008-03-17T13:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17351",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2544-part13.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part13.patch) by was created at 2008-03-17 13:03:55
+Attachment [sage-2544-part13.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part13.patch) by @williamstein created at 2008-03-17 13:03:55
 
 
 
@@ -232,16 +232,16 @@ Attachment [sage-2544-part13.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_comments_017352.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part14.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part14.patch) by was created at 2008-03-17 13:12:06",
+    "body": "Attachment [sage-2544-part14.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part14.patch) by @williamstein created at 2008-03-17 13:12:06",
     "created_at": "2008-03-17T13:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17352",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2544-part14.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part14.patch) by was created at 2008-03-17 13:12:06
+Attachment [sage-2544-part14.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part14.patch) by @williamstein created at 2008-03-17 13:12:06
 
 
 
@@ -250,16 +250,16 @@ Attachment [sage-2544-part14.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_comments_017353.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part15.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part15.patch) by craigcitro created at 2008-03-18 07:24:58",
+    "body": "Attachment [sage-2544-part15.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part15.patch) by @craigcitro created at 2008-03-18 07:24:58",
     "created_at": "2008-03-18T07:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17353",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-2544-part15.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part15.patch) by craigcitro created at 2008-03-18 07:24:58
+Attachment [sage-2544-part15.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part15.patch) by @craigcitro created at 2008-03-18 07:24:58
 
 
 
@@ -273,7 +273,7 @@ archive/issue_comments_017354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17354",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -286,16 +286,16 @@ archive/issue_comments_017354.json:
 archive/issue_comments_017355.json:
 ```json
 {
-    "body": "Attachment [sage-2581_part2-restrict_codomain.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2581_part2-restrict_codomain.patch) by craigcitro created at 2008-03-18 07:48:00\n\n(code depends on these patches)",
+    "body": "Attachment [sage-2581_part2-restrict_codomain.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2581_part2-restrict_codomain.patch) by @craigcitro created at 2008-03-18 07:48:00\n\n(code depends on these patches)",
     "created_at": "2008-03-18T07:48:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17355",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-2581_part2-restrict_codomain.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2581_part2-restrict_codomain.patch) by craigcitro created at 2008-03-18 07:48:00
+Attachment [sage-2581_part2-restrict_codomain.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2581_part2-restrict_codomain.patch) by @craigcitro created at 2008-03-18 07:48:00
 
 (code depends on these patches)
 
@@ -306,16 +306,16 @@ Attachment [sage-2581_part2-restrict_codomain.patch](tarball://root/attachments/
 archive/issue_comments_017356.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part16.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part16.patch) by was created at 2008-03-18 16:04:45",
+    "body": "Attachment [sage-2544-part16.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part16.patch) by @williamstein created at 2008-03-18 16:04:45",
     "created_at": "2008-03-18T16:04:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17356",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2544-part16.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part16.patch) by was created at 2008-03-18 16:04:45
+Attachment [sage-2544-part16.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part16.patch) by @williamstein created at 2008-03-18 16:04:45
 
 
 
@@ -324,16 +324,16 @@ Attachment [sage-2544-part16.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_comments_017357.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part17.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part17.patch) by craigcitro created at 2008-03-18 20:18:04",
+    "body": "Attachment [sage-2544-part17.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part17.patch) by @craigcitro created at 2008-03-18 20:18:04",
     "created_at": "2008-03-18T20:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17357",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-2544-part17.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part17.patch) by craigcitro created at 2008-03-18 20:18:04
+Attachment [sage-2544-part17.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part17.patch) by @craigcitro created at 2008-03-18 20:18:04
 
 
 
@@ -342,16 +342,16 @@ Attachment [sage-2544-part17.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_comments_017358.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part17.2.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part17.2.patch) by robertwb created at 2008-03-19 00:02:42",
+    "body": "Attachment [sage-2544-part17.2.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part17.2.patch) by @robertwb created at 2008-03-19 00:02:42",
     "created_at": "2008-03-19T00:02:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17358",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [sage-2544-part17.2.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part17.2.patch) by robertwb created at 2008-03-19 00:02:42
+Attachment [sage-2544-part17.2.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part17.2.patch) by @robertwb created at 2008-03-19 00:02:42
 
 
 
@@ -360,16 +360,16 @@ Attachment [sage-2544-part17.2.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_017359.json:
 ```json
 {
-    "body": "Attachment [sage-2544-pt18.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-pt18.patch) by was created at 2008-03-19 04:27:58",
+    "body": "Attachment [sage-2544-pt18.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-pt18.patch) by @williamstein created at 2008-03-19 04:27:58",
     "created_at": "2008-03-19T04:27:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17359",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2544-pt18.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-pt18.patch) by was created at 2008-03-19 04:27:58
+Attachment [sage-2544-pt18.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-pt18.patch) by @williamstein created at 2008-03-19 04:27:58
 
 
 
@@ -378,16 +378,16 @@ Attachment [sage-2544-pt18.patch](tarball://root/attachments/some-uuid/ticket254
 archive/issue_comments_017360.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part19.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part19.patch) by robertwb created at 2008-03-19 05:38:21",
+    "body": "Attachment [sage-2544-part19.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part19.patch) by @robertwb created at 2008-03-19 05:38:21",
     "created_at": "2008-03-19T05:38:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17360",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [sage-2544-part19.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part19.patch) by robertwb created at 2008-03-19 05:38:21
+Attachment [sage-2544-part19.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part19.patch) by @robertwb created at 2008-03-19 05:38:21
 
 
 
@@ -396,16 +396,16 @@ Attachment [sage-2544-part19.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_comments_017361.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part20.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part20.patch) by was created at 2008-03-19 06:09:53",
+    "body": "Attachment [sage-2544-part20.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part20.patch) by @williamstein created at 2008-03-19 06:09:53",
     "created_at": "2008-03-19T06:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17361",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2544-part20.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part20.patch) by was created at 2008-03-19 06:09:53
+Attachment [sage-2544-part20.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part20.patch) by @williamstein created at 2008-03-19 06:09:53
 
 
 
@@ -414,16 +414,16 @@ Attachment [sage-2544-part20.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_comments_017362.json:
 ```json
 {
-    "body": "Attachment [sage-2544-part22.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part22.patch) by robertwb created at 2008-03-19 10:04:07",
+    "body": "Attachment [sage-2544-part22.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part22.patch) by @robertwb created at 2008-03-19 10:04:07",
     "created_at": "2008-03-19T10:04:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17362",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [sage-2544-part22.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part22.patch) by robertwb created at 2008-03-19 10:04:07
+Attachment [sage-2544-part22.patch](tarball://root/attachments/some-uuid/ticket2544/sage-2544-part22.patch) by @robertwb created at 2008-03-19 10:04:07
 
 
 
@@ -432,16 +432,16 @@ Attachment [sage-2544-part22.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_comments_017363.json:
 ```json
 {
-    "body": "Attachment [2544-printing-abvar.patch](tarball://root/attachments/some-uuid/ticket2544/2544-printing-abvar.patch) by was created at 2008-04-03 15:20:07\n\nThe final patch is the attached file abvar.hg",
+    "body": "Attachment [2544-printing-abvar.patch](tarball://root/attachments/some-uuid/ticket2544/2544-printing-abvar.patch) by @williamstein created at 2008-04-03 15:20:07\n\nThe final patch is the attached file abvar.hg",
     "created_at": "2008-04-03T15:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17363",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [2544-printing-abvar.patch](tarball://root/attachments/some-uuid/ticket2544/2544-printing-abvar.patch) by was created at 2008-04-03 15:20:07
+Attachment [2544-printing-abvar.patch](tarball://root/attachments/some-uuid/ticket2544/2544-printing-abvar.patch) by @williamstein created at 2008-04-03 15:20:07
 
 The final patch is the attached file abvar.hg
 
@@ -457,7 +457,7 @@ archive/issue_comments_017364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2544#issuecomment-17364",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

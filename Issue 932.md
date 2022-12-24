@@ -3,7 +3,7 @@
 archive/issues_000932.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\nHi William. Before you go ahead and make a big official table like that,\nyou should upgrade to the latest lcalc. I'll be releasing that in a few\ndays. It has a more efficient zero finding routine and also gets rid of\nannoying warning message that sometimes appears when it ought not to...\nthe message might interfere with the preparation of your table. Also,\ncurrently not all digits outputed are guaranteed. For low conductor I\ndon't think that will be an issue, but as the conductor increases\nthat will be a bit relevant.\n\nI'm currently implementing something to verify the precision and adjust the\noutput accordingly.\n\nIt also has other improvements, though not relevant for the table you\nmention.\n\nMike}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/932\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\nHi William. Before you go ahead and make a big official table like that,\nyou should upgrade to the latest lcalc. I'll be releasing that in a few\ndays. It has a more efficient zero finding routine and also gets rid of\nannoying warning message that sometimes appears when it ought not to...\nthe message might interfere with the preparation of your table. Also,\ncurrently not all digits outputed are guaranteed. For low conductor I\ndon't think that will be an issue, but as the conductor increases\nthat will be a bit relevant.\n\nI'm currently implementing something to verify the precision and adjust the\noutput accordingly.\n\nIt also has other improvements, though not relevant for the table you\nmention.\n\nMike}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/932\n\n",
     "created_at": "2007-10-19T18:58:49Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000932.json:
     "title": "upgrade lcalc in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/932",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -155,7 +155,7 @@ Changing status from new to assigned.
 archive/issue_comments_005696.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-01-27T17:28:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/932",
     "type": "issue_comment",
@@ -164,7 +164,7 @@ archive/issue_comments_005696.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 

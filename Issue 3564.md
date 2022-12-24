@@ -3,7 +3,7 @@
 archive/issues_003564.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThe attached patch works and speeds up the sage import from between 0.1 and 0.5 seconds, depending on caching. \n\nNOTE: It is necessary to fix a bug in sympy first.  \n\n\n```\n11:57 < wstein> The fix would be to change line 99 of printing/pretty/pretty_symbology.py to\n11:57 < wstein>             try:\n11:57 < wstein>                encoding = sys.stdout.encoding\n11:57 < wstein>             except AttributeError: return\n11:58 < wstein> Yep, that 100% fixes the problem.\n11:58 < ondrej> ok, I'll commit it. thanks\n11:58 < wstein> Maybe you already did that?\n11:58 < wstein> It is right, I think, since you do almost the same thing 2 lines later.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3564\n\n",
+    "body": "Assignee: @garyfurnish\n\nThe attached patch works and speeds up the sage import from between 0.1 and 0.5 seconds, depending on caching. \n\nNOTE: It is necessary to fix a bug in sympy first.  \n\n\n```\n11:57 < wstein> The fix would be to change line 99 of printing/pretty/pretty_symbology.py to\n11:57 < wstein>             try:\n11:57 < wstein>                encoding = sys.stdout.encoding\n11:57 < wstein>             except AttributeError: return\n11:58 < wstein> Yep, that 100% fixes the problem.\n11:58 < ondrej> ok, I'll commit it. thanks\n11:58 < wstein> Maybe you already did that?\n11:58 < wstein> It is right, I think, since you do almost the same thing 2 lines later.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3564\n\n",
     "created_at": "2008-07-06T19:02:13Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003564.json:
     "title": "[with patch; needs review] optimize sage startup: don't import sympy by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3564",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 The attached patch works and speeds up the sage import from between 0.1 and 0.5 seconds, depending on caching. 
 
@@ -52,7 +52,7 @@ archive/issue_comments_025182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25182",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,16 +70,16 @@ after applying the startuptime patch: #3559
 archive/issue_comments_025183.json:
 ```json
 {
-    "body": "Attachment [sage-3564.patch](tarball://root/attachments/some-uuid/ticket3564/sage-3564.patch) by was created at 2008-07-06 19:04:34\n\nThis bug is fixed in the new version of sympy:\n\n\n```\n12:01 < ondrej> now it is not\n12:01 < ondrej> we fixed that in 0.5.15\n12:01 < ondrej> bug I fixed important bug in our hg\n12:01 < ondrej> and I am releasing the whole weekend...\n12:02 < ondrej> (important sage<-> sympy bug)\n12:02 < ondrej> so when I release, I'll create a spkg\n```\n",
+    "body": "Attachment [sage-3564.patch](tarball://root/attachments/some-uuid/ticket3564/sage-3564.patch) by @williamstein created at 2008-07-06 19:04:34\n\nThis bug is fixed in the new version of sympy:\n\n\n```\n12:01 < ondrej> now it is not\n12:01 < ondrej> we fixed that in 0.5.15\n12:01 < ondrej> bug I fixed important bug in our hg\n12:01 < ondrej> and I am releasing the whole weekend...\n12:02 < ondrej> (important sage<-> sympy bug)\n12:02 < ondrej> so when I release, I'll create a spkg\n```\n",
     "created_at": "2008-07-06T19:04:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25183",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3564.patch](tarball://root/attachments/some-uuid/ticket3564/sage-3564.patch) by was created at 2008-07-06 19:04:34
+Attachment [sage-3564.patch](tarball://root/attachments/some-uuid/ticket3564/sage-3564.patch) by @williamstein created at 2008-07-06 19:04:34
 
 This bug is fixed in the new version of sympy:
 
@@ -106,7 +106,7 @@ archive/issue_comments_025184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25184",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_025185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25185",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 

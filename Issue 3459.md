@@ -3,7 +3,7 @@
 archive/issues_003459.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ccitro\n\nKeywords: number field ideal coercion\n\nSee the patch for doctests that demonstrate the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3459\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  ccitro\n\nKeywords: number field ideal coercion\n\nSee the patch for doctests that demonstrate the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3459\n\n",
     "created_at": "2008-06-18T03:36:18Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003459.json:
     "title": "[with patch, needs review] incorrect coercion in number field ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3459",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  ccitro
 

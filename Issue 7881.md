@@ -3,7 +3,7 @@
 archive/issues_007881.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  roed\n\nIn support of #7585\n\nIssue created by migration from https://trac.sagemath.org/ticket/7881\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @roed314\n\nIn support of #7585\n\nIssue created by migration from https://trac.sagemath.org/ticket/7881\n\n",
     "created_at": "2010-01-09T19:56:16Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007881.json:
     "title": "Make polynomials respect the _gcd framework so that they can use coercion in gcds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7881",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  roed
+CC:  @roed314
 
 In support of #7585
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7881
 archive/issue_comments_068499.json:
 ```json
 {
-    "body": "Attachment [7585_6_gcd.patch](tarball://root/attachments/some-uuid/ticket7881/7585_6_gcd.patch) by robertwb created at 2010-01-09 19:58:56\n\nI'm all for using the coercion model more, but I don't like the fact that this hides the important docstrings about ZZ[x] and RR[x] in the underscore methods.",
+    "body": "Attachment [7585_6_gcd.patch](tarball://root/attachments/some-uuid/ticket7881/7585_6_gcd.patch) by @robertwb created at 2010-01-09 19:58:56\n\nI'm all for using the coercion model more, but I don't like the fact that this hides the important docstrings about ZZ[x] and RR[x] in the underscore methods.",
     "created_at": "2010-01-09T19:58:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68499",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7585_6_gcd.patch](tarball://root/attachments/some-uuid/ticket7881/7585_6_gcd.patch) by robertwb created at 2010-01-09 19:58:56
+Attachment [7585_6_gcd.patch](tarball://root/attachments/some-uuid/ticket7881/7585_6_gcd.patch) by @robertwb created at 2010-01-09 19:58:56
 
 I'm all for using the coercion model more, but I don't like the fact that this hides the important docstrings about ZZ[x] and RR[x] in the underscore methods.
 
@@ -59,7 +59,7 @@ archive/issue_comments_068500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68500",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_068501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68501",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_068502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68502",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_068503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68503",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_068504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68504",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_068505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68505",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_068506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68506",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_068507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68507",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_068508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68508",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

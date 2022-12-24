@@ -3,7 +3,7 @@
 archive/issues_005087.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mhansen\n\nThere are about 20 instances of \"cannonical\" instead of \"canonical\" in various places in the Sage library (including an error message).  Trivial patch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5087\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @mwhansen\n\nThere are about 20 instances of \"cannonical\" instead of \"canonical\" in various places in the Sage library (including an error message).  Trivial patch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5087\n\n",
     "created_at": "2009-01-24T07:53:51Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_005087.json:
     "title": "purge \"cannonical\" typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5087",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mhansen
+CC:  @mwhansen
 
 There are about 20 instances of "cannonical" instead of "canonical" in various places in the Sage library (including an error message).  Trivial patch coming up.
 
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5087
 archive/issue_comments_038760.json:
 ```json
 {
-    "body": "Attachment [trac_5087.patch](tarball://root/attachments/some-uuid/ticket5087/trac_5087.patch) by AlexGhitza created at 2009-01-24 08:17:49",
+    "body": "Attachment [trac_5087.patch](tarball://root/attachments/some-uuid/ticket5087/trac_5087.patch) by @aghitza created at 2009-01-24 08:17:49",
     "created_at": "2009-01-24T08:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5087#issuecomment-38760",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5087.patch](tarball://root/attachments/some-uuid/ticket5087/trac_5087.patch) by AlexGhitza created at 2009-01-24 08:17:49
+Attachment [trac_5087.patch](tarball://root/attachments/some-uuid/ticket5087/trac_5087.patch) by @aghitza created at 2009-01-24 08:17:49
 
 
 

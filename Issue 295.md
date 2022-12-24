@@ -3,7 +3,7 @@
 archive/issues_000295.json:
 ```json
 {
-    "body": "Assignee: was\n\nA file with this content (w/o the \"===\"'s) shows the problem:\n\n\n```\ndef Foo(x)\n    x = 1\n```\n\n\nAfter load/attaching this file, typing \"??Foo\" prints only the 'def' line.\n\nIf the file looks like this (i.e., with an 'extra' blank line):\n\n\n```\ndef Foo(x)\n    x = 1\n\n```\n\n\nthen '??' works properly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/295\n\n",
+    "body": "Assignee: @williamstein\n\nA file with this content (w/o the \"===\"'s) shows the problem:\n\n\n```\ndef Foo(x)\n    x = 1\n```\n\n\nAfter load/attaching this file, typing \"??Foo\" prints only the 'def' line.\n\nIf the file looks like this (i.e., with an 'extra' blank line):\n\n\n```\ndef Foo(x)\n    x = 1\n\n```\n\n\nthen '??' works properly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/295\n\n",
     "created_at": "2007-02-25T18:49:28Z",
     "labels": [
         "algebraic geometry",
@@ -16,7 +16,7 @@ archive/issues_000295.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 A file with this content (w/o the "==="'s) shows the problem:
 
@@ -71,16 +71,16 @@ Ignore the "==="s part; forgot to remove this after fiddling with formatting.
 archive/issue_comments_001397.json:
 ```json
 {
-    "body": "Changing assignee from was to Nick Alexander.",
+    "body": "Changing assignee from @williamstein to Nick Alexander.",
     "created_at": "2007-02-25T19:15:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/295#issuecomment-1397",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from was to Nick Alexander.
+Changing assignee from @williamstein to Nick Alexander.
 
 
 
@@ -89,16 +89,16 @@ Changing assignee from was to Nick Alexander.
 archive/issue_comments_001398.json:
 ```json
 {
-    "body": "Changing assignee from Nick Alexander to ncalexan.",
+    "body": "Changing assignee from Nick Alexander to @ncalexan.",
     "created_at": "2007-02-28T20:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/295#issuecomment-1398",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Changing assignee from Nick Alexander to ncalexan.
+Changing assignee from Nick Alexander to @ncalexan.
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_001399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/295#issuecomment-1399",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_001400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/295#issuecomment-1400",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

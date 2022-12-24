@@ -3,7 +3,7 @@
 archive/issues_006583.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  cremona was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6583\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6583\n\n",
     "created_at": "2009-07-21T19:26:23Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_006583.json:
     "title": "Implement two descent over QQ natively in Sage using ratpoints",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6583",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  cremona was
+CC:  @JohnCremona @williamstein
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_053771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53771",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_053772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53772",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_053773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53773",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_053774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53774",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -126,16 +126,16 @@ Changing status from new to assigned.
 archive/issue_comments_053775.json:
 ```json
 {
-    "body": "Changing assignee from davidloeffler to rlm.",
+    "body": "Changing assignee from @loefflerd to @rlmill.",
     "created_at": "2009-09-18T01:18:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53775",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from davidloeffler to rlm.
+Changing assignee from @loefflerd to @rlmill.
 
 
 
@@ -144,16 +144,16 @@ Changing assignee from davidloeffler to rlm.
 archive/issue_comments_053776.json:
 ```json
 {
-    "body": "Attachment [trac_6583.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583.patch) by rlm created at 2009-09-18 01:18:43",
+    "body": "Attachment [trac_6583.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583.patch) by @rlmill created at 2009-09-18 01:18:43",
     "created_at": "2009-09-18T01:18:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53776",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6583.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583.patch) by rlm created at 2009-09-18 01:18:43
+Attachment [trac_6583.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583.patch) by @rlmill created at 2009-09-18 01:18:43
 
 
 
@@ -162,16 +162,16 @@ Attachment [trac_6583.patch](tarball://root/attachments/some-uuid/ticket6583/tra
 archive/issue_comments_053777.json:
 ```json
 {
-    "body": "Attachment [trac_6583_large_primes.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583_large_primes.patch) by rlm created at 2009-09-19 03:09:46",
+    "body": "Attachment [trac_6583_large_primes.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583_large_primes.patch) by @rlmill created at 2009-09-19 03:09:46",
     "created_at": "2009-09-19T03:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53777",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6583_large_primes.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583_large_primes.patch) by rlm created at 2009-09-19 03:09:46
+Attachment [trac_6583_large_primes.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583_large_primes.patch) by @rlmill created at 2009-09-19 03:09:46
 
 
 
@@ -185,7 +185,7 @@ archive/issue_comments_053778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53778",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_053779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53779",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -299,16 +299,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_053780.json:
 ```json
 {
-    "body": "Attachment [trac_6583-fix.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583-fix.patch) by rlm created at 2009-10-30 03:01:22",
+    "body": "Attachment [trac_6583-fix.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583-fix.patch) by @rlmill created at 2009-10-30 03:01:22",
     "created_at": "2009-10-30T03:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53780",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6583-fix.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583-fix.patch) by rlm created at 2009-10-30 03:01:22
+Attachment [trac_6583-fix.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583-fix.patch) by @rlmill created at 2009-10-30 03:01:22
 
 
 
@@ -322,7 +322,7 @@ archive/issue_comments_053781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53781",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_053782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53782",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_053783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53783",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_053784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53784",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_053785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53785",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_053786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53786",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_053787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53787",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_053788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53788",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_053789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53789",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -585,7 +585,7 @@ archive/issue_comments_053790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53790",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_053791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53791",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -650,16 +650,16 @@ I've applied the patches, skimmed them, and run the test suite.  Positive review
 archive/issue_comments_053792.json:
 ```json
 {
-    "body": "Attachment [trac_6583-rebase.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583-rebase.patch) by was created at 2009-12-09 00:55:51",
+    "body": "Attachment [trac_6583-rebase.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583-rebase.patch) by @williamstein created at 2009-12-09 00:55:51",
     "created_at": "2009-12-09T00:55:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53792",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6583-rebase.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583-rebase.patch) by was created at 2009-12-09 00:55:51
+Attachment [trac_6583-rebase.patch](tarball://root/attachments/some-uuid/ticket6583/trac_6583-rebase.patch) by @williamstein created at 2009-12-09 00:55:51
 
 
 
@@ -673,7 +673,7 @@ archive/issue_comments_053793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53793",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -691,7 +691,7 @@ archive/issue_comments_053794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53794",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

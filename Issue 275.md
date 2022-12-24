@@ -3,7 +3,7 @@
 archive/issues_000275.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: matrix groups\n\n\n```\nsage: G = SL(2, CC)\nsage: G.gens()\n\nTypeError: Gap produced error output\nVariable: 'Complex' must have a value\n\nSyntax error: ) expected\n$sage17:=SL(2, Complex Field with 53 bits of precision);;\n                           ^\n\n   executing $sage17:=SL(2, Complex Field with 53 bits of precision);;\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/275\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: matrix groups\n\n\n```\nsage: G = SL(2, CC)\nsage: G.gens()\n\nTypeError: Gap produced error output\nVariable: 'Complex' must have a value\n\nSyntax error: ) expected\n$sage17:=SL(2, Complex Field with 53 bits of precision);;\n                           ^\n\n   executing $sage17:=SL(2, Complex Field with 53 bits of precision);;\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/275\n\n",
     "created_at": "2007-02-21T20:34:05Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000275.json:
     "title": "Maxtrix groups over RR don't get pushed off to GAP properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/275",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: matrix groups
 
@@ -53,7 +53,7 @@ archive/issue_comments_001308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1308",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_001309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1309",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_001310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1310",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_001311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1311",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

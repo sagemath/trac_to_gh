@@ -3,7 +3,7 @@
 archive/issues_009402.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  alexjbest\n\nKeywords: Elliptic Curves, L-series,\n\nThis patch adds the attribute .dokchitser() to an elliptic_curve.lseries() over a number field (this capability is present over QQ). It also adds an attribute to .dokchitser(), namely get_coeffs(bound), which returns the first bound coefficients in the Dirichlet expansion of the associated L-series.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9402\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @alexjbest\n\nKeywords: Elliptic Curves, L-series,\n\nThis patch adds the attribute .dokchitser() to an elliptic_curve.lseries() over a number field (this capability is present over QQ). It also adds an attribute to .dokchitser(), namely get_coeffs(bound), which returns the first bound coefficients in the Dirichlet expansion of the associated L-series.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9402\n\n",
     "created_at": "2010-07-01T16:24:25Z",
     "labels": [
         "elliptic curves",
@@ -17,9 +17,9 @@ archive/issues_009402.json:
     "user": "adam"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  alexjbest
+CC:  @alexjbest
 
 Keywords: Elliptic Curves, L-series,
 
@@ -64,7 +64,7 @@ archive/issue_comments_089586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89586",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_089587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89587",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_089588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89588",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_089590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89590",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_089591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89591",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_089592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89592",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_089593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89593",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_089594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89594",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_089595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89595",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -247,16 +247,16 @@ Clearly this needs substantial work.  I'm also deleting the two patches and putt
 archive/issue_comments_089596.json:
 ```json
 {
-    "body": "Attachment [trac_9402-lseries_nf.patch](tarball://root/attachments/some-uuid/ticket9402/trac_9402-lseries_nf.patch) by was created at 2011-07-28 19:37:51\n\n**WARNING**   Extensive improvements on this code (which is really a mess right now) are appearing in psage.  See, e.g., the file lseries_nf.py here:\n\nhttp://code.google.com/p/purplesage/source/browse/#hg%2Fpsage%2Fellcurve%2Flseries\n\nHaving just written that code in psage (which involved going through the code on this ticket), I would definitely not recommend including the current code in Sage with a major rewrite.   For example, code like this in the patch:\n\n```\n    s = 'v = %s; a(k)=if(k>%s,0,v[k]);'%( coeffs, upper_limit) \n    L.init_coeffs('a(k)', pari_precode = s)    \n```\n\nis just masking confusion, since it's setting all Dirichlet coefficients above a certain bound to 0, which is nonsense.",
+    "body": "Attachment [trac_9402-lseries_nf.patch](tarball://root/attachments/some-uuid/ticket9402/trac_9402-lseries_nf.patch) by @williamstein created at 2011-07-28 19:37:51\n\n**WARNING**   Extensive improvements on this code (which is really a mess right now) are appearing in psage.  See, e.g., the file lseries_nf.py here:\n\nhttp://code.google.com/p/purplesage/source/browse/#hg%2Fpsage%2Fellcurve%2Flseries\n\nHaving just written that code in psage (which involved going through the code on this ticket), I would definitely not recommend including the current code in Sage with a major rewrite.   For example, code like this in the patch:\n\n```\n    s = 'v = %s; a(k)=if(k>%s,0,v[k]);'%( coeffs, upper_limit) \n    L.init_coeffs('a(k)', pari_precode = s)    \n```\n\nis just masking confusion, since it's setting all Dirichlet coefficients above a certain bound to 0, which is nonsense.",
     "created_at": "2011-07-28T19:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89596",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9402-lseries_nf.patch](tarball://root/attachments/some-uuid/ticket9402/trac_9402-lseries_nf.patch) by was created at 2011-07-28 19:37:51
+Attachment [trac_9402-lseries_nf.patch](tarball://root/attachments/some-uuid/ticket9402/trac_9402-lseries_nf.patch) by @williamstein created at 2011-07-28 19:37:51
 
 **WARNING**   Extensive improvements on this code (which is really a mess right now) are appearing in psage.  See, e.g., the file lseries_nf.py here:
 
@@ -283,7 +283,7 @@ archive/issue_comments_089597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89597",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_089598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89598",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_089600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89600",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_089601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89601",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

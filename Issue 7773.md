@@ -3,7 +3,7 @@
 archive/issues_007773.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  robertwb malb roed wstein\n\nOn this machine I got memory errors, some of wich are reported by glibc-2.11 as double free:\n\n*** glibc detected *** python: double free or corruption (fasttop):\n\n\n```\n       sage -t  devel/sage/sage/groups/generic.py # Segfault\n       sage -t  devel/sage/sage/matrix/matrix_space.py # Segfault\n       sage -t  devel/sage/sage/matrix/matrix_sparse.pyx # Segfault\n       sage -t  devel/sage/sage/matrix/matrix2.pyx # Segfault\n       sage -t  devel/sage/sage/schemes/elliptic_curves/ell_point.py # Segfault\n       sage -t  devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py # Segfault\n[snipped]\n```\n\n\nValgrind to the rescue! I made a new optional spkg:\n[http://trac.sagemath.org/sage_trac/ticket/7766](http://trac.sagemath.org/sage_trac/ticket/7766)\n\nRebuild sage-4.3 with SAGE_VALGRIND=\"yes\", installed valgrind-3.6.0.svn with the help of \n[http://wiki.sagemath.org/ValgrindingSage](http://wiki.sagemath.org/ValgrindingSage)\n\n./sage -t -valgrind devel/sage/sage/matrix/matrix_sparse.pyx\n\nSome results:\n\n\n```\n==8933== Invalid free() / delete / delete[]\n==8933==    at 0x4A04D72: free (vg_replace_malloc.c:325)\n==8933==    by 0xE2F6A53: __pyx_f_4sage_5rings_6memory_pymem_free (memory.c:1993)\n==8933==    by 0xE716DBC: randclear_lc (in /home/jaap/downloads/sage-4.3/local/lib/libgmp.so.3.4.6)\n==8933==    by 0x20D1B78F: gmp_randclass::~gmp_randclass() (gmpxx.h:3248)\n==8933==    by 0x3D2D635B71: exit (in /lib64/libc-2.11.so)\n==8933==    by 0x4BA729: handle_system_exit (pythonrun.c:1716)\n==8933==    by 0x4BA944: PyErr_PrintEx (pythonrun.c:1126)\n==8933==    by 0x4BB68F: PyRun_SimpleFileExFlags (pythonrun.c:935)\n==8933==    by 0x413CAE: Py_Main (main.c:599)\n==8933==    by 0x3D2D61EB1C: (below main) (in /lib64/libc-2.11.so)\n==8933==  Address 0x347fd730 is 0 bytes inside a block of size 8 free'd\n==8933==    at 0x4A04D72: free (vg_replace_malloc.c:325)\n==8933==    by 0xE2F6A53: __pyx_f_4sage_5rings_6memory_pymem_free (memory.c:1993)\n==8933==    by 0xE716DBC: randclear_lc (in /home/jaap/downloads/sage-4.3/local/lib/libgmp.so.3.4.6)\n==8933==    by 0x3D2D635B71: exit (in /lib64/libc-2.11.so)\n==8933==    by 0x4BA729: handle_system_exit (pythonrun.c:1716)\n==8933==    by 0x4BA944: PyErr_PrintEx (pythonrun.c:1126)\n==8933==    by 0x4BB68F: PyRun_SimpleFileExFlags (pythonrun.c:935)\n==8933==    by 0x413CAE: Py_Main (main.c:599)\n==8933==    by 0x3D2D61EB1C: (below main) (in /lib64/libc-2.11.so)\n\n```\n\n\nThe complete report can be found on my homepage on sage.math\n(i'll put a link here as soon sage.math is up again) valgrind_memcheck_test_matrix_sparse.bz2\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/7773\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @robertwb @malb @roed314 wstein\n\nOn this machine I got memory errors, some of wich are reported by glibc-2.11 as double free:\n\n*** glibc detected *** python: double free or corruption (fasttop):\n\n\n```\n       sage -t  devel/sage/sage/groups/generic.py # Segfault\n       sage -t  devel/sage/sage/matrix/matrix_space.py # Segfault\n       sage -t  devel/sage/sage/matrix/matrix_sparse.pyx # Segfault\n       sage -t  devel/sage/sage/matrix/matrix2.pyx # Segfault\n       sage -t  devel/sage/sage/schemes/elliptic_curves/ell_point.py # Segfault\n       sage -t  devel/sage/sage/schemes/elliptic_curves/ell_finite_field.py # Segfault\n[snipped]\n```\n\n\nValgrind to the rescue! I made a new optional spkg:\n[http://trac.sagemath.org/sage_trac/ticket/7766](http://trac.sagemath.org/sage_trac/ticket/7766)\n\nRebuild sage-4.3 with SAGE_VALGRIND=\"yes\", installed valgrind-3.6.0.svn with the help of \n[http://wiki.sagemath.org/ValgrindingSage](http://wiki.sagemath.org/ValgrindingSage)\n\n./sage -t -valgrind devel/sage/sage/matrix/matrix_sparse.pyx\n\nSome results:\n\n\n```\n==8933== Invalid free() / delete / delete[]\n==8933==    at 0x4A04D72: free (vg_replace_malloc.c:325)\n==8933==    by 0xE2F6A53: __pyx_f_4sage_5rings_6memory_pymem_free (memory.c:1993)\n==8933==    by 0xE716DBC: randclear_lc (in /home/jaap/downloads/sage-4.3/local/lib/libgmp.so.3.4.6)\n==8933==    by 0x20D1B78F: gmp_randclass::~gmp_randclass() (gmpxx.h:3248)\n==8933==    by 0x3D2D635B71: exit (in /lib64/libc-2.11.so)\n==8933==    by 0x4BA729: handle_system_exit (pythonrun.c:1716)\n==8933==    by 0x4BA944: PyErr_PrintEx (pythonrun.c:1126)\n==8933==    by 0x4BB68F: PyRun_SimpleFileExFlags (pythonrun.c:935)\n==8933==    by 0x413CAE: Py_Main (main.c:599)\n==8933==    by 0x3D2D61EB1C: (below main) (in /lib64/libc-2.11.so)\n==8933==  Address 0x347fd730 is 0 bytes inside a block of size 8 free'd\n==8933==    at 0x4A04D72: free (vg_replace_malloc.c:325)\n==8933==    by 0xE2F6A53: __pyx_f_4sage_5rings_6memory_pymem_free (memory.c:1993)\n==8933==    by 0xE716DBC: randclear_lc (in /home/jaap/downloads/sage-4.3/local/lib/libgmp.so.3.4.6)\n==8933==    by 0x3D2D635B71: exit (in /lib64/libc-2.11.so)\n==8933==    by 0x4BA729: handle_system_exit (pythonrun.c:1716)\n==8933==    by 0x4BA944: PyErr_PrintEx (pythonrun.c:1126)\n==8933==    by 0x4BB68F: PyRun_SimpleFileExFlags (pythonrun.c:935)\n==8933==    by 0x413CAE: Py_Main (main.c:599)\n==8933==    by 0x3D2D61EB1C: (below main) (in /lib64/libc-2.11.so)\n\n```\n\n\nThe complete report can be found on my homepage on sage.math\n(i'll put a link here as soon sage.math is up again) valgrind_memcheck_test_matrix_sparse.bz2\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/7773\n\n",
     "created_at": "2009-12-27T13:52:40Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_007773.json:
     "title": "Test failures with Fedora 12 on intel i7 860 processor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7773",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  robertwb malb roed wstein
+CC:  @robertwb @malb @roed314 wstein
 
 On this machine I got memory errors, some of wich are reported by glibc-2.11 as double free:
 
@@ -95,7 +95,7 @@ archive/issue_comments_067002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67002",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_067005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67005",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_067007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67007",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -429,16 +429,16 @@ the install log.
 archive/issue_comments_067008.json:
 ```json
 {
-    "body": "Changing assignee from GeorgSWeber to zimmerma.",
+    "body": "Changing assignee from GeorgSWeber to @zimmermann6.",
     "created_at": "2010-02-23T15:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67008",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Changing assignee from GeorgSWeber to zimmerma.
+Changing assignee from GeorgSWeber to @zimmermann6.
 
 
 
@@ -452,7 +452,7 @@ archive/issue_comments_067009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67009",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_067011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67011",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_067012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67012",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -582,7 +582,7 @@ archive/issue_comments_067013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67013",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -600,7 +600,7 @@ archive/issue_comments_067014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67014",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -618,7 +618,7 @@ archive/issue_comments_067015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67015",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -648,7 +648,7 @@ archive/issue_comments_067016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67016",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -668,7 +668,7 @@ archive/issue_comments_067017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67017",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -714,7 +714,7 @@ archive/issue_comments_067018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67018",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -749,16 +749,16 @@ Should I open a separate ticket for this?
 archive/issue_comments_067019.json:
 ```json
 {
-    "body": "Changing assignee from zimmerma to GeorgSWeber.",
+    "body": "Changing assignee from @zimmermann6 to GeorgSWeber.",
     "created_at": "2010-04-20T11:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67019",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Changing assignee from zimmerma to GeorgSWeber.
+Changing assignee from @zimmermann6 to GeorgSWeber.
 
 
 
@@ -772,7 +772,7 @@ archive/issue_comments_067020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67020",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_067021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67021",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -835,7 +835,7 @@ archive/issue_comments_067022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67022",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -861,7 +861,7 @@ archive/issue_comments_067023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67023",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -896,7 +896,7 @@ archive/issue_comments_067024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67024",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -920,7 +920,7 @@ archive/issue_comments_067025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67025",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -946,7 +946,7 @@ archive/issue_comments_067026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67026",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -966,7 +966,7 @@ archive/issue_comments_067027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67027",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -984,7 +984,7 @@ archive/issue_comments_067028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67028",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1002,7 +1002,7 @@ archive/issue_comments_067029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7773",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7773#issuecomment-67029",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

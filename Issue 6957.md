@@ -44,7 +44,7 @@ archive/issue_comments_057550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6957#issuecomment-57550",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_057551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6957#issuecomment-57551",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006237.json:
     "title": "repeated roots with roots(CDF, multiplicities=False)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6237",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: somebody
@@ -69,7 +69,7 @@ archive/issue_comments_049819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6237#issuecomment-49819",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_049820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6237#issuecomment-49820",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_049821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6237#issuecomment-49821",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_049822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6237#issuecomment-49822",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_049823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6237#issuecomment-49823",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_049824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6237#issuecomment-49824",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_049825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6237#issuecomment-49825",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -226,16 +226,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_049826.json:
 ```json
 {
-    "body": "Attachment [trac_6237.patch](tarball://root/attachments/some-uuid/ticket6237/trac_6237.patch) by AlexGhitza created at 2010-01-04 23:56:23\n\nOK, the revised patch is up.",
+    "body": "Attachment [trac_6237.patch](tarball://root/attachments/some-uuid/ticket6237/trac_6237.patch) by @aghitza created at 2010-01-04 23:56:23\n\nOK, the revised patch is up.",
     "created_at": "2010-01-04T23:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6237#issuecomment-49826",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6237.patch](tarball://root/attachments/some-uuid/ticket6237/trac_6237.patch) by AlexGhitza created at 2010-01-04 23:56:23
+Attachment [trac_6237.patch](tarball://root/attachments/some-uuid/ticket6237/trac_6237.patch) by @aghitza created at 2010-01-04 23:56:23
 
 OK, the revised patch is up.
 
@@ -251,7 +251,7 @@ archive/issue_comments_049827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6237#issuecomment-49827",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_049828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6237#issuecomment-49828",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_049829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6237#issuecomment-49829",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_049830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6237#issuecomment-49830",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_049831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6237#issuecomment-49831",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

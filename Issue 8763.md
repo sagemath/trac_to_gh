@@ -3,7 +3,7 @@
 archive/issues_008763.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  kcrisman chapoton\n\nAs discussed in http://groups.google.com/group/sage-edu/browse_thread/thread/aa651032bb34a285, it would be very nice if published worksheets could include licensing information, so that we could collect, modify, and redistribute excellent worksheets.\n\nSo, when publishing worksheets, there should be a mechanism to choose a license; as a start, maybe just hard-code four choices: CC by-sa-nc, by-sa, GFDL, and no licensing information at all. If a license is chosen, this would put something like this into the worksheet:\n\n```\n<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/3.0/us/\">\n<img alt=\"Creative Commons License\" style=\"border-width:0\" \nsrc=\"http://i.creativecommons.org/l/by-sa/3.0/us/80x15.png\" \n/></a><br />This worksheet is licensed under a <a rel=\"license\" \nhref=\"http://creativecommons.org/licenses/by-sa/3.0/us/\">Creative \nCommons Attribution-Share Alike 3.0 United States License</a>.\n```\n\nThe rel=\"license\" bit is a microformat that will make the licensing information computer-readable, so that eventually one could search for worksheets available with a certain license.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8763\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman @fchapoton\n\nAs discussed in http://groups.google.com/group/sage-edu/browse_thread/thread/aa651032bb34a285, it would be very nice if published worksheets could include licensing information, so that we could collect, modify, and redistribute excellent worksheets.\n\nSo, when publishing worksheets, there should be a mechanism to choose a license; as a start, maybe just hard-code four choices: CC by-sa-nc, by-sa, GFDL, and no licensing information at all. If a license is chosen, this would put something like this into the worksheet:\n\n```\n<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/3.0/us/\">\n<img alt=\"Creative Commons License\" style=\"border-width:0\" \nsrc=\"http://i.creativecommons.org/l/by-sa/3.0/us/80x15.png\" \n/></a><br />This worksheet is licensed under a <a rel=\"license\" \nhref=\"http://creativecommons.org/licenses/by-sa/3.0/us/\">Creative \nCommons Attribution-Share Alike 3.0 United States License</a>.\n```\n\nThe rel=\"license\" bit is a microformat that will make the licensing information computer-readable, so that eventually one could search for worksheets available with a certain license.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8763\n\n",
     "created_at": "2010-04-25T07:24:53Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008763.json:
     "title": "put licensing information into published worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8763",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: jason, was
 
-CC:  kcrisman chapoton
+CC:  @kcrisman @fchapoton
 
 As discussed in http://groups.google.com/group/sage-edu/browse_thread/thread/aa651032bb34a285, it would be very nice if published worksheets could include licensing information, so that we could collect, modify, and redistribute excellent worksheets.
 
@@ -52,7 +52,7 @@ archive/issue_comments_080171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8763#issuecomment-80171",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_080172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8763#issuecomment-80172",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_080173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8763#issuecomment-80173",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_080174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8763#issuecomment-80174",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_080175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8763#issuecomment-80175",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_080176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8763#issuecomment-80176",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_080177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8763#issuecomment-80177",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_080178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8763#issuecomment-80178",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_080179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8763#issuecomment-80179",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

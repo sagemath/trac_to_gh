@@ -3,7 +3,7 @@
 archive/issues_006921.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen using the MATLAB interface in Sage MATLAB crashes on startup. This is due to library conflicts with Sage.\n\nI have created a (minor) patch to use sage-native-execute when starting MATLAB. This fixes the problems on my machine (OS X 10.6) and the interface now passes all doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6921\n\n",
+    "body": "Assignee: @williamstein\n\nWhen using the MATLAB interface in Sage MATLAB crashes on startup. This is due to library conflicts with Sage.\n\nI have created a (minor) patch to use sage-native-execute when starting MATLAB. This fixes the problems on my machine (OS X 10.6) and the interface now passes all doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6921\n\n",
     "created_at": "2009-09-11T04:28:16Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_006921.json:
     "user": "jjh"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When using the MATLAB interface in Sage MATLAB crashes on startup. This is due to library conflicts with Sage.
 
@@ -57,7 +57,7 @@ archive/issue_comments_057134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6921#issuecomment-57134",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

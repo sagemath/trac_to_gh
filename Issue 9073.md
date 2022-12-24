@@ -3,7 +3,7 @@
 archive/issues_009073.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  rlm\n\n\n```\nsage: G = Graph({0:[1,1]}, multiedges=True)\nsage: G.is_planar()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/mnt/usb1/scratch/boothby/sage-4.4.2/<ipython console> in <module>()\n\n/mnt/usb1/scratch/boothby/sage-4.4.2/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in is_planar(self, on_embedding, kuratowski, set_embedding, set_pos)\n   2217             from sage.graphs.planarity import is_planar\n   2218             G = self.to_undirected()\n-> 2219             planar = is_planar(G,kuratowski=kuratowski,set_pos=set_pos,set_embedding=set_embedding)\n   2220             if kuratowski:\n   2221                 bool_result = planar[0]\n\n/mnt/usb1/scratch/boothby/sage-4.4.2/local/lib/python2.6/site-packages/sage/graphs/planarity.so in sage.graphs.planarity.is_planar (sage/graphs/planarity.c:1327)()\n\nKeyError: -1\nsage: G = Graph({0:[1,1,1,1,1,1,1,1,1,1,1,1,1]}, multiedges=True)\nsage: G.is_planar()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9073\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @rlmill\n\n\n```\nsage: G = Graph({0:[1,1]}, multiedges=True)\nsage: G.is_planar()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/mnt/usb1/scratch/boothby/sage-4.4.2/<ipython console> in <module>()\n\n/mnt/usb1/scratch/boothby/sage-4.4.2/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in is_planar(self, on_embedding, kuratowski, set_embedding, set_pos)\n   2217             from sage.graphs.planarity import is_planar\n   2218             G = self.to_undirected()\n-> 2219             planar = is_planar(G,kuratowski=kuratowski,set_pos=set_pos,set_embedding=set_embedding)\n   2220             if kuratowski:\n   2221                 bool_result = planar[0]\n\n/mnt/usb1/scratch/boothby/sage-4.4.2/local/lib/python2.6/site-packages/sage/graphs/planarity.so in sage.graphs.planarity.is_planar (sage/graphs/planarity.c:1327)()\n\nKeyError: -1\nsage: G = Graph({0:[1,1,1,1,1,1,1,1,1,1,1,1,1]}, multiedges=True)\nsage: G.is_planar()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9073\n\n",
     "created_at": "2010-05-28T03:57:01Z",
     "labels": [
         "algebra",
@@ -17,9 +17,9 @@ archive/issues_009073.json:
     "user": "boothby"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  rlm
+CC:  @rlmill
 
 
 ```
@@ -93,7 +93,7 @@ Changing component from algebra to graph theory.
 archive/issue_comments_084178.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to jason, ncohen, rlm.",
+    "body": "Changing assignee from @aghitza to jason, ncohen, rlm.",
     "created_at": "2010-05-28T04:00:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9073",
     "type": "issue_comment",
@@ -102,7 +102,7 @@ archive/issue_comments_084178.json:
 }
 ```
 
-Changing assignee from AlexGhitza to jason, ncohen, rlm.
+Changing assignee from @aghitza to jason, ncohen, rlm.
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_084179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9073",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9073#issuecomment-84179",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_084187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9073",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9073#issuecomment-84187",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002448.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan\n\nKeywords: quadratic forms doc days docstring doctest\n\nI can't improve anything with the 2-adic genera stuff, unfo.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2448\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: quadratic forms doc days docstring doctest\n\nI can't improve anything with the 2-adic genera stuff, unfo.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2448\n\n",
     "created_at": "2008-03-09T23:34:03Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_002448.json:
     "title": "[with patch, needs review] add docstrings, clean code in quadratic_forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2448",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: quadratic forms doc days docstring doctest
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2448
 archive/issue_comments_016543.json:
 ```json
 {
-    "body": "Attachment [2448-ncalexan-doc-quadratic_forms-1.patch](tarball://root/attachments/some-uuid/ticket2448/2448-ncalexan-doc-quadratic_forms-1.patch) by ncalexan created at 2008-03-09 23:35:37",
+    "body": "Attachment [2448-ncalexan-doc-quadratic_forms-1.patch](tarball://root/attachments/some-uuid/ticket2448/2448-ncalexan-doc-quadratic_forms-1.patch) by @ncalexan created at 2008-03-09 23:35:37",
     "created_at": "2008-03-09T23:35:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2448#issuecomment-16543",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2448-ncalexan-doc-quadratic_forms-1.patch](tarball://root/attachments/some-uuid/ticket2448/2448-ncalexan-doc-quadratic_forms-1.patch) by ncalexan created at 2008-03-09 23:35:37
+Attachment [2448-ncalexan-doc-quadratic_forms-1.patch](tarball://root/attachments/some-uuid/ticket2448/2448-ncalexan-doc-quadratic_forms-1.patch) by @ncalexan created at 2008-03-09 23:35:37
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_016544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2448#issuecomment-16544",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003467.json:
     "title": "[with patch, needs review] implements @parallel decorator using dsage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3467",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 Assignee: tbd
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3467
 archive/issue_comments_024443.json:
 ```json
 {
-    "body": "Changing assignee from tbd to yi.",
+    "body": "Changing assignee from tbd to @yqiang.",
     "created_at": "2008-06-19T02:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3467#issuecomment-24443",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Changing assignee from tbd to yi.
+Changing assignee from tbd to @yqiang.
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_024444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3467#issuecomment-24444",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing component from algebra to dsage.
 archive/issue_comments_024445.json:
 ```json
 {
-    "body": "Attachment [dsage_interface.2.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.2.patch) by yi created at 2008-06-19 02:41:31",
+    "body": "Attachment [dsage_interface.2.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.2.patch) by @yqiang created at 2008-06-19 02:41:31",
     "created_at": "2008-06-19T02:41:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3467#issuecomment-24445",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [dsage_interface.2.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.2.patch) by yi created at 2008-06-19 02:41:31
+Attachment [dsage_interface.2.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.2.patch) by @yqiang created at 2008-06-19 02:41:31
 
 
 
@@ -98,16 +98,16 @@ Attachment [dsage_interface.2.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_024446.json:
 ```json
 {
-    "body": "Attachment [dsage_interface.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.patch) by yi created at 2008-06-19 04:04:33\n\nnew patch with doctests.",
+    "body": "Attachment [dsage_interface.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.patch) by @yqiang created at 2008-06-19 04:04:33\n\nnew patch with doctests.",
     "created_at": "2008-06-19T04:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3467#issuecomment-24446",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [dsage_interface.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.patch) by yi created at 2008-06-19 04:04:33
+Attachment [dsage_interface.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.patch) by @yqiang created at 2008-06-19 04:04:33
 
 new patch with doctests.
 
@@ -118,16 +118,16 @@ new patch with doctests.
 archive/issue_comments_024447.json:
 ```json
 {
-    "body": "Attachment [dsage_interface.3.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.3.patch) by yi created at 2008-06-19 04:04:58\n\nOk, doctests are added.",
+    "body": "Attachment [dsage_interface.3.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.3.patch) by @yqiang created at 2008-06-19 04:04:58\n\nOk, doctests are added.",
     "created_at": "2008-06-19T04:04:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3467#issuecomment-24447",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [dsage_interface.3.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.3.patch) by yi created at 2008-06-19 04:04:58
+Attachment [dsage_interface.3.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.3.patch) by @yqiang created at 2008-06-19 04:04:58
 
 Ok, doctests are added.
 
@@ -143,7 +143,7 @@ archive/issue_comments_024448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3467#issuecomment-24448",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_024449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3467#issuecomment-24449",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -176,16 +176,16 @@ All tests pass AFTER removing nodoctest.py from sage/dsage/interface .  Also, yo
 archive/issue_comments_024450.json:
 ```json
 {
-    "body": "Attachment [dsage_interface.4.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.4.patch) by yi created at 2008-06-19 21:27:50",
+    "body": "Attachment [dsage_interface.4.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.4.patch) by @yqiang created at 2008-06-19 21:27:50",
     "created_at": "2008-06-19T21:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3467#issuecomment-24450",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [dsage_interface.4.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.4.patch) by yi created at 2008-06-19 21:27:50
+Attachment [dsage_interface.4.patch](tarball://root/attachments/some-uuid/ticket3467/dsage_interface.4.patch) by @yqiang created at 2008-06-19 21:27:50
 
 
 
@@ -199,7 +199,7 @@ archive/issue_comments_024451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3467#issuecomment-24451",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_024453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3467#issuecomment-24453",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

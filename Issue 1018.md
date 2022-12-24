@@ -14,7 +14,7 @@ archive/issues_001018.json:
     "title": "Change prod() to used balanced tree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1018",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1018
 archive/issue_comments_006242.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2007-10-28T08:16:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1018#issuecomment-6242",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_006243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1018#issuecomment-6243",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -103,16 +103,16 @@ sage: prod(L)
 archive/issue_comments_006244.json:
 ```json
 {
-    "body": "Attachment [balanced-prod-1018.patch](tarball://root/attachments/some-uuid/ticket1018/balanced-prod-1018.patch) by robertwb created at 2007-10-28 08:18:13",
+    "body": "Attachment [balanced-prod-1018.patch](tarball://root/attachments/some-uuid/ticket1018/balanced-prod-1018.patch) by @robertwb created at 2007-10-28 08:18:13",
     "created_at": "2007-10-28T08:18:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1018#issuecomment-6244",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [balanced-prod-1018.patch](tarball://root/attachments/some-uuid/ticket1018/balanced-prod-1018.patch) by robertwb created at 2007-10-28 08:18:13
+Attachment [balanced-prod-1018.patch](tarball://root/attachments/some-uuid/ticket1018/balanced-prod-1018.patch) by @robertwb created at 2007-10-28 08:18:13
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_004986.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  craigcitro leif kcrisman\n\nIt is currently way to easy to introduce circular imports in Sage, and a mess to try and hunt time down. An order in which things are imported is found in sage.all, but due to the cascade of imports in sage.misc (and elsewhere) this is not an accurate representation of what actually happens. This could stand to be cleaned up a lot. Ideally, little/none of sage.foo.* should be used before sage.foo.all is imported. \n\nThis patch prints out imports as they happen, and where they're initiated. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4986\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @craigcitro @nexttime @kcrisman\n\nIt is currently way to easy to introduce circular imports in Sage, and a mess to try and hunt time down. An order in which things are imported is found in sage.all, but due to the cascade of imports in sage.misc (and elsewhere) this is not an accurate representation of what actually happens. This could stand to be cleaned up a lot. Ideally, little/none of sage.foo.* should be used before sage.foo.all is imported. \n\nThis patch prints out imports as they happen, and where they're initiated. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4986\n\n",
     "created_at": "2009-01-16T04:04:46Z",
     "labels": [
         "performance",
@@ -14,12 +14,12 @@ archive/issues_004986.json:
     "title": "import audit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4986",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
 
-CC:  craigcitro leif kcrisman
+CC:  @craigcitro @nexttime @kcrisman
 
 It is currently way to easy to introduce circular imports in Sage, and a mess to try and hunt time down. An order in which things are imported is found in sage.all, but due to the cascade of imports in sage.misc (and elsewhere) this is not an accurate representation of what actually happens. This could stand to be cleaned up a lot. Ideally, little/none of sage.foo.* should be used before sage.foo.all is imported. 
 
@@ -41,7 +41,7 @@ archive/issue_comments_038027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4986#issuecomment-38027",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -54,16 +54,16 @@ I guess the patch isn't posted yet, but this seems like "sage -startuptime" whic
 archive/issue_comments_038028.json:
 ```json
 {
-    "body": "Attachment [import-audit.patch](tarball://root/attachments/some-uuid/ticket4986/import-audit.patch) by robertwb created at 2009-01-16 04:16:30",
+    "body": "Attachment [import-audit.patch](tarball://root/attachments/some-uuid/ticket4986/import-audit.patch) by @robertwb created at 2009-01-16 04:16:30",
     "created_at": "2009-01-16T04:16:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4986#issuecomment-38028",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [import-audit.patch](tarball://root/attachments/some-uuid/ticket4986/import-audit.patch) by robertwb created at 2009-01-16 04:16:30
+Attachment [import-audit.patch](tarball://root/attachments/some-uuid/ticket4986/import-audit.patch) by @robertwb created at 2009-01-16 04:16:30
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_038029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4986#issuecomment-38029",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_038030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4986#issuecomment-38030",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_038031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4986#issuecomment-38031",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_038032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4986#issuecomment-38032",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_038033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4986#issuecomment-38033",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_038034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4986#issuecomment-38034",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

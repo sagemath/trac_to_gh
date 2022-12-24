@@ -3,7 +3,7 @@
 archive/issues_005249.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cwitty wcauchois alexghitza\n\nThis is code from Carl Witty, which (almost) implements an implicit_plot3d command to plot isosurfaces of a 3d function.  Carl, would it be fair to say the code is inspired by Jmol's code for generating and displaying isosurfaces?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5249\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  cwitty wcauchois alexghitza\n\nThis is code from Carl Witty, which (almost) implements an implicit_plot3d command to plot isosurfaces of a 3d function.  Carl, would it be fair to say the code is inspired by Jmol's code for generating and displaying isosurfaces?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5249\n\n",
     "created_at": "2009-02-12T20:33:35Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005249.json:
     "title": "implicit_plot3d functionality (isosurfaces, 3d contour plots, etc.)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5249",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  cwitty wcauchois alexghitza
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5249
 archive/issue_comments_040228.json:
 ```json
 {
-    "body": "Attachment [implicit-surface.patch](tarball://root/attachments/some-uuid/ticket5249/implicit-surface.patch) by jason created at 2009-02-12 20:36:16",
+    "body": "Attachment [implicit-surface.patch](tarball://root/attachments/some-uuid/ticket5249/implicit-surface.patch) by @jasongrout created at 2009-02-12 20:36:16",
     "created_at": "2009-02-12T20:36:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40228",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [implicit-surface.patch](tarball://root/attachments/some-uuid/ticket5249/implicit-surface.patch) by jason created at 2009-02-12 20:36:16
+Attachment [implicit-surface.patch](tarball://root/attachments/some-uuid/ticket5249/implicit-surface.patch) by @jasongrout created at 2009-02-12 20:36:16
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_040229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40229",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_040230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40230",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_040231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40231",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_040235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40235",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_040236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40236",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_040239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40239",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -604,7 +604,7 @@ archive/issue_comments_040247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40247",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -704,7 +704,7 @@ archive/issue_comments_040251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40251",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_040252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40252",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -742,7 +742,7 @@ archive/issue_comments_040253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40253",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -760,7 +760,7 @@ archive/issue_comments_040254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40254",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -854,7 +854,7 @@ archive/issue_comments_040259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40259",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -894,7 +894,7 @@ archive/issue_comments_040261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40261",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -907,16 +907,16 @@ this applies cleanly against 3.4.2
 archive/issue_comments_040262.json:
 ```json
 {
-    "body": "Attachment [trac_5249-flat.patch](tarball://root/attachments/some-uuid/ticket5249/trac_5249-flat.patch) by was created at 2009-05-13 16:03:33",
+    "body": "Attachment [trac_5249-flat.patch](tarball://root/attachments/some-uuid/ticket5249/trac_5249-flat.patch) by @williamstein created at 2009-05-13 16:03:33",
     "created_at": "2009-05-13T16:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40262",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5249-flat.patch](tarball://root/attachments/some-uuid/ticket5249/trac_5249-flat.patch) by was created at 2009-05-13 16:03:33
+Attachment [trac_5249-flat.patch](tarball://root/attachments/some-uuid/ticket5249/trac_5249-flat.patch) by @williamstein created at 2009-05-13 16:03:33
 
 
 
@@ -1002,7 +1002,7 @@ archive/issue_comments_040266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40266",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

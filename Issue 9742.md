@@ -14,7 +14,7 @@ archive/issues_009742.json:
     "title": "Sorting edges of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9742",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -47,7 +47,7 @@ archive/issue_comments_095398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9742#issuecomment-95398",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -60,16 +60,16 @@ Changing status from new to needs_review.
 archive/issue_comments_095399.json:
 ```json
 {
-    "body": "Attachment [trac_9742-graph-edges-sort.patch](tarball://root/attachments/some-uuid/ticket9742/trac_9742-graph-edges-sort.patch) by rbeezer created at 2010-08-13 17:31:48",
+    "body": "Attachment [trac_9742-graph-edges-sort.patch](tarball://root/attachments/some-uuid/ticket9742/trac_9742-graph-edges-sort.patch) by @rbeezer created at 2010-08-13 17:31:48",
     "created_at": "2010-08-13T17:31:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9742#issuecomment-95399",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9742-graph-edges-sort.patch](tarball://root/attachments/some-uuid/ticket9742/trac_9742-graph-edges-sort.patch) by rbeezer created at 2010-08-13 17:31:48
+Attachment [trac_9742-graph-edges-sort.patch](tarball://root/attachments/some-uuid/ticket9742/trac_9742-graph-edges-sort.patch) by @rbeezer created at 2010-08-13 17:31:48
 
 
 
@@ -83,7 +83,7 @@ archive/issue_comments_095400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9742#issuecomment-95400",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_095401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9742#issuecomment-95401",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_095402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9742#issuecomment-95402",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

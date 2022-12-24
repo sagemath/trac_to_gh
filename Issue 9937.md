@@ -3,7 +3,7 @@
 archive/issues_009937.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  slabbe mrobado\n\nKeywords: gap\n\nAs pointed out in \n[this thread](http://groups.google.com/group/sage-support/browse_thread/thread/7e169e371308838/a1403ee743fd6ea6?lnk=gst&q=tremblay+gap#a1403ee743fd6ea6), on some machines one there is a problem starting GAP from within Sage:\n\n```\nsage: gap('3+2')\nA workspace appears to have been corrupted... automatically rebuilding (this is harmless).\n---------------------------------------------------------------------------\n...\nTypeError: Unable to start gap\n```\n\nThe problem is in Sage's attempt to rebuild the GAP workspace. It turns out that Sage calls GAP's `SaveWorkspace` command incorrectly in a particular case.\n\nTo explain the problem, first recall the process used by the GAP interface to evaluate a line of GAP code, say `LineOfGapCode`. It begins by checking the length `LineOfGapCode` (as a string). If this length is greater than 100 (a pre-defined cut-off value), then a file is created containing:\n\n```\nPrint(LineOfGapCode);\n```\n\nThis file is read into GAP using the expect interface and the output is parsed and returned to Sage. (There is no problem if the length is less than 100, because the interface does not use a file.)\n\nLet's apply this to the case where we need to rebuild a workspace. The workspace is just a file contained in a user's .sage directory. If the number of characters in the path to the workspace is greater than the cut-off, then Sage tries to execute the following command:\n\n```\nPrint(SaveWorkspace(\"PathToWorkspaceFile\"));\n```\n\nThis is not permitted by GAP, as explained in the [GAP Reference Manual](http://www.gap-system.org/Manuals/doc/htm/ref/CHAP003.htm#SSEC011.1):\n\n```\nSaveWorkspace can only be used at the main gap> prompt. It cannot be included in the body of a loop or function, or called from a break loop.\n```\n\nSo to fix this, we need to force the interface not to use a file to execute the `SaveWorkspace` command.\n\n(This problem has plagued all the computers in our computer lab for months since a user's home directory is located on a network drive with a long name.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9938\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @seblabbe mrobado\n\nKeywords: gap\n\nAs pointed out in \n[this thread](http://groups.google.com/group/sage-support/browse_thread/thread/7e169e371308838/a1403ee743fd6ea6?lnk=gst&q=tremblay+gap#a1403ee743fd6ea6), on some machines one there is a problem starting GAP from within Sage:\n\n```\nsage: gap('3+2')\nA workspace appears to have been corrupted... automatically rebuilding (this is harmless).\n---------------------------------------------------------------------------\n...\nTypeError: Unable to start gap\n```\n\nThe problem is in Sage's attempt to rebuild the GAP workspace. It turns out that Sage calls GAP's `SaveWorkspace` command incorrectly in a particular case.\n\nTo explain the problem, first recall the process used by the GAP interface to evaluate a line of GAP code, say `LineOfGapCode`. It begins by checking the length `LineOfGapCode` (as a string). If this length is greater than 100 (a pre-defined cut-off value), then a file is created containing:\n\n```\nPrint(LineOfGapCode);\n```\n\nThis file is read into GAP using the expect interface and the output is parsed and returned to Sage. (There is no problem if the length is less than 100, because the interface does not use a file.)\n\nLet's apply this to the case where we need to rebuild a workspace. The workspace is just a file contained in a user's .sage directory. If the number of characters in the path to the workspace is greater than the cut-off, then Sage tries to execute the following command:\n\n```\nPrint(SaveWorkspace(\"PathToWorkspaceFile\"));\n```\n\nThis is not permitted by GAP, as explained in the [GAP Reference Manual](http://www.gap-system.org/Manuals/doc/htm/ref/CHAP003.htm#SSEC011.1):\n\n```\nSaveWorkspace can only be used at the main gap> prompt. It cannot be included in the body of a loop or function, or called from a break loop.\n```\n\nSo to fix this, we need to force the interface not to use a file to execute the `SaveWorkspace` command.\n\n(This problem has plagued all the computers in our computer lab for months since a user's home directory is located on a network drive with a long name.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9938\n\n",
     "created_at": "2010-09-17T21:31:06Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_009937.json:
     "title": "GAP does not start if the path to the GAP workspace file contains more than 83 characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9937",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  slabbe mrobado
+CC:  @seblabbe mrobado
 
 Keywords: gap
 
@@ -71,16 +71,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9938
 archive/issue_comments_098931.json:
 ```json
 {
-    "body": "Changing assignee from was to saliola.",
+    "body": "Changing assignee from @williamstein to @saliola.",
     "created_at": "2010-09-17T21:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9937#issuecomment-98931",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Changing assignee from was to saliola.
+Changing assignee from @williamstein to @saliola.
 
 
 
@@ -89,16 +89,16 @@ Changing assignee from was to saliola.
 archive/issue_comments_098932.json:
 ```json
 {
-    "body": "Attachment [trac9938.2.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938.2.patch) by saliola created at 2010-09-17 22:33:38",
+    "body": "Attachment [trac9938.2.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938.2.patch) by @saliola created at 2010-09-17 22:33:38",
     "created_at": "2010-09-17T22:33:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9937#issuecomment-98932",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac9938.2.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938.2.patch) by saliola created at 2010-09-17 22:33:38
+Attachment [trac9938.2.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938.2.patch) by @saliola created at 2010-09-17 22:33:38
 
 
 
@@ -107,16 +107,16 @@ Attachment [trac9938.2.patch](tarball://root/attachments/some-uuid/ticket9938/tr
 archive/issue_comments_098933.json:
 ```json
 {
-    "body": "Attachment [trac9938.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938.patch) by saliola created at 2010-09-17 22:34:15\n\napply only this patch!",
+    "body": "Attachment [trac9938.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938.patch) by @saliola created at 2010-09-17 22:34:15\n\napply only this patch!",
     "created_at": "2010-09-17T22:34:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9937#issuecomment-98933",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac9938.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938.patch) by saliola created at 2010-09-17 22:34:15
+Attachment [trac9938.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938.patch) by @saliola created at 2010-09-17 22:34:15
 
 apply only this patch!
 
@@ -132,7 +132,7 @@ archive/issue_comments_098934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9937#issuecomment-98934",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_098935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9937#issuecomment-98935",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_098936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9937#issuecomment-98936",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -181,16 +181,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_098937.json:
 ```json
 {
-    "body": "Attachment [trac9938-review-sl.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938-review-sl.patch) by slabbe created at 2010-09-18 13:39:00\n\nApplies over the precedent patch",
+    "body": "Attachment [trac9938-review-sl.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938-review-sl.patch) by @seblabbe created at 2010-09-18 13:39:00\n\nApplies over the precedent patch",
     "created_at": "2010-09-18T13:39:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9937#issuecomment-98937",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac9938-review-sl.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938-review-sl.patch) by slabbe created at 2010-09-18 13:39:00
+Attachment [trac9938-review-sl.patch](tarball://root/attachments/some-uuid/ticket9938/trac9938-review-sl.patch) by @seblabbe created at 2010-09-18 13:39:00
 
 Applies over the precedent patch
 
@@ -206,7 +206,7 @@ archive/issue_comments_098938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9937#issuecomment-98938",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_098939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9937#issuecomment-98939",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_098940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9937#issuecomment-98940",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_098941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9937#issuecomment-98941",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_098942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9937#issuecomment-98942",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_098943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9937",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9937#issuecomment-98943",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

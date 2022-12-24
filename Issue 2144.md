@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2144
 archive/issue_comments_014061.json:
 ```json
 {
-    "body": "Attachment [2144-hex-preparse.patch](tarball://root/attachments/some-uuid/ticket2144/2144-hex-preparse.patch) by robertwb created at 2008-02-14 06:05:26",
+    "body": "Attachment [2144-hex-preparse.patch](tarball://root/attachments/some-uuid/ticket2144/2144-hex-preparse.patch) by @robertwb created at 2008-02-14 06:05:26",
     "created_at": "2008-02-14T06:05:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2144#issuecomment-14061",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2144-hex-preparse.patch](tarball://root/attachments/some-uuid/ticket2144/2144-hex-preparse.patch) by robertwb created at 2008-02-14 06:05:26
+Attachment [2144-hex-preparse.patch](tarball://root/attachments/some-uuid/ticket2144/2144-hex-preparse.patch) by @robertwb created at 2008-02-14 06:05:26
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_014062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2144#issuecomment-14062",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -119,16 +119,16 @@ Merged in Sage 2.10.2.alpha0
 archive/issue_comments_014065.json:
 ```json
 {
-    "body": "Attachment [trac-2144-doctest.patch](tarball://root/attachments/some-uuid/ticket2144/trac-2144-doctest.patch) by was created at 2008-02-15 10:13:41",
+    "body": "Attachment [trac-2144-doctest.patch](tarball://root/attachments/some-uuid/ticket2144/trac-2144-doctest.patch) by @williamstein created at 2008-02-15 10:13:41",
     "created_at": "2008-02-15T10:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2144#issuecomment-14065",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-2144-doctest.patch](tarball://root/attachments/some-uuid/ticket2144/trac-2144-doctest.patch) by was created at 2008-02-15 10:13:41
+Attachment [trac-2144-doctest.patch](tarball://root/attachments/some-uuid/ticket2144/trac-2144-doctest.patch) by @williamstein created at 2008-02-15 10:13:41
 
 
 
@@ -142,7 +142,7 @@ archive/issue_comments_014066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2144#issuecomment-14066",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_014067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2144#issuecomment-14067",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_014068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2144#issuecomment-14068",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_014069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2144#issuecomment-14069",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_014074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2144#issuecomment-14074",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

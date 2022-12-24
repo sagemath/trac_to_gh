@@ -3,7 +3,7 @@
 archive/issues_007168.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  dimpase\n\nKeywords: HP-UX Solaris AIX\n\nThe following table quickly summarises the statue of build on various less-popular platforms using both gcc and native compilers. More detailed information can be found about particular builds at \n\n* #7140 for HP-UX\n* #7056 for building Sage with Sun's compiler\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7168\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dimpase\n\nKeywords: HP-UX Solaris AIX\n\nThe following table quickly summarises the statue of build on various less-popular platforms using both gcc and native compilers. More detailed information can be found about particular builds at \n\n* #7140 for HP-UX\n* #7056 for building Sage with Sun's compiler\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7168\n\n",
     "created_at": "2009-10-10T04:57:32Z",
     "labels": [
         "porting",
@@ -19,7 +19,7 @@ archive/issues_007168.json:
 ```
 Assignee: tbd
 
-CC:  dimpase
+CC:  @dimpase
 
 Keywords: HP-UX Solaris AIX
 
@@ -45,7 +45,7 @@ archive/issue_comments_059415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7168#issuecomment-59415",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_059416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7168#issuecomment-59416",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_059417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7168#issuecomment-59417",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_059418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7168#issuecomment-59418",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_059419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7168#issuecomment-59419",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

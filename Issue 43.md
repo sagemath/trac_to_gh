@@ -13,7 +13,7 @@ archive/issues_000043.json:
     "title": "gap boolean values don't coerce back",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/43",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -59,7 +59,7 @@ archive/issue_comments_000264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/43",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/43#issuecomment-264",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_000265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/43",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/43#issuecomment-265",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_000266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/43",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/43#issuecomment-266",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

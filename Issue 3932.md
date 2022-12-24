@@ -3,7 +3,7 @@
 archive/issues_003932.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nSee http://wiki.wstein.org/2008/480a/theprojects\n\nIssue created by migration from https://trac.sagemath.org/ticket/3932\n\n",
+    "body": "Assignee: @rlmill\n\nSee http://wiki.wstein.org/2008/480a/theprojects\n\nIssue created by migration from https://trac.sagemath.org/ticket/3932\n\n",
     "created_at": "2008-08-22T18:17:46Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003932.json:
     "title": "Should we merge the \"generate size n trees in linear time\" code from  \t  Ryan Dingman",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3932",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 See http://wiki.wstein.org/2008/480a/theprojects
 
@@ -61,7 +61,7 @@ archive/issue_comments_028150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3932#issuecomment-28150",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_028151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3932#issuecomment-28151",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_028153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3932#issuecomment-28153",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_028154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3932#issuecomment-28154",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_028159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3932#issuecomment-28159",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_028161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3932#issuecomment-28161",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_028162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3932#issuecomment-28162",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -316,16 +316,16 @@ Apply this patch after trac_3932_tree_generation.patch
 archive/issue_comments_028163.json:
 ```json
 {
-    "body": "Attachment [trac_3932-tree-plugin.patch](tarball://root/attachments/some-uuid/ticket3932/trac_3932-tree-plugin.patch) by rlm created at 2009-04-29 16:25:46\n\nPositive review to Ryan's patch. All we need now is someone to check mine.",
+    "body": "Attachment [trac_3932-tree-plugin.patch](tarball://root/attachments/some-uuid/ticket3932/trac_3932-tree-plugin.patch) by @rlmill created at 2009-04-29 16:25:46\n\nPositive review to Ryan's patch. All we need now is someone to check mine.",
     "created_at": "2009-04-29T16:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3932#issuecomment-28163",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3932-tree-plugin.patch](tarball://root/attachments/some-uuid/ticket3932/trac_3932-tree-plugin.patch) by rlm created at 2009-04-29 16:25:46
+Attachment [trac_3932-tree-plugin.patch](tarball://root/attachments/some-uuid/ticket3932/trac_3932-tree-plugin.patch) by @rlmill created at 2009-04-29 16:25:46
 
 Positive review to Ryan's patch. All we need now is someone to check mine.
 
@@ -530,7 +530,7 @@ archive/issue_comments_028170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3932#issuecomment-28170",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -619,7 +619,7 @@ archive/issue_comments_028174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3932",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3932#issuecomment-28174",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

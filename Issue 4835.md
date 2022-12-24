@@ -14,7 +14,7 @@ archive/issues_004835.json:
     "title": "pari starts up without inititializing enough primes?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4835",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
@@ -56,7 +56,7 @@ archive/issue_comments_036641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4835#issuecomment-36641",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_036642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4835#issuecomment-36642",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_036643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4835#issuecomment-36643",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -158,16 +158,16 @@ Changing component from algebra to interfaces.
 archive/issue_comments_036644.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2009-07-11T11:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4835#issuecomment-36644",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -181,7 +181,7 @@ archive/issue_comments_036645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4835#issuecomment-36645",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_036646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4835#issuecomment-36646",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_036647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4835#issuecomment-36647",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

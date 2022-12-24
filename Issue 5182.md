@@ -3,7 +3,7 @@
 archive/issues_005182.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  jbandlow sage-combinat\n\nKeywords: symmetrica\n\nThis is from sagenb running sage 3.3.alpha3:\n\n\n```\nsage: dd = { Partition([1]) : 1 } ; ee = { Partition([1]) : int(1) } ; s = SFASchur(QQ)\nsage: (s._from_dict(dd), s._from_dict(ee)) # This is fine\n(s[1], s[1])\nsage: 1 * s._from_dict(dd) # This is fine\ns[1]\nsage: 1 * s._from_dict(ee) # This fails\nException exceptions.TypeError: 'cannot convert a (= 1) to OP' in\n'sage.libs.symmetrica.symmetrica._op_schur_general_dict' ignored\nfunction: mult(1) \npython: \ufffd73x\ufffd\ufffd\nConnection to localhost closed.\n```\n\n\n\nThis is a low priority for me, since the obvious workaround is not to put 'int's in this kind of dictionary, but I wanted to report it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5182\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jbandlow sage-combinat\n\nKeywords: symmetrica\n\nThis is from sagenb running sage 3.3.alpha3:\n\n\n```\nsage: dd = { Partition([1]) : 1 } ; ee = { Partition([1]) : int(1) } ; s = SFASchur(QQ)\nsage: (s._from_dict(dd), s._from_dict(ee)) # This is fine\n(s[1], s[1])\nsage: 1 * s._from_dict(dd) # This is fine\ns[1]\nsage: 1 * s._from_dict(ee) # This fails\nException exceptions.TypeError: 'cannot convert a (= 1) to OP' in\n'sage.libs.symmetrica.symmetrica._op_schur_general_dict' ignored\nfunction: mult(1) \npython: \ufffd73x\ufffd\ufffd\nConnection to localhost closed.\n```\n\n\n\nThis is a low priority for me, since the obvious workaround is not to put 'int's in this kind of dictionary, but I wanted to report it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5182\n\n",
     "created_at": "2009-02-04T22:49:42Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_005182.json:
     "title": "Strange Symmetrica segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5182",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  jbandlow sage-combinat
+CC:  @jbandlow sage-combinat
 
 Keywords: symmetrica
 
@@ -60,7 +60,7 @@ archive/issue_comments_039743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5182#issuecomment-39743",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_039744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5182#issuecomment-39744",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_039745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5182#issuecomment-39745",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_039746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5182#issuecomment-39746",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

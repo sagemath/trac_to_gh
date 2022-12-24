@@ -3,7 +3,7 @@
 archive/issues_005801.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  was mhansen\n\nWhile looking around for something else I noticed test.txt and todo.txt. Both are surprisingly related to notebook development. Both files should be looked at and dealt with since they do not belong inside the tree. \n\n* test.txt can probably be removed since we have a webtesting framework written by Mike Hansen\n* todo.txt should be looked over and the issues in there that aren't in trac yet should have tickets opened. Then the file should be removed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5801\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @williamstein @mwhansen\n\nWhile looking around for something else I noticed test.txt and todo.txt. Both are surprisingly related to notebook development. Both files should be looked at and dealt with since they do not belong inside the tree. \n\n* test.txt can probably be removed since we have a webtesting framework written by Mike Hansen\n* todo.txt should be looked over and the issues in there that aren't in trac yet should have tickets opened. Then the file should be removed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5801\n\n",
     "created_at": "2009-04-16T06:14:35Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_005801.json:
 ```
 Assignee: cwitty
 
-CC:  was mhansen
+CC:  @williamstein @mwhansen
 
 While looking around for something else I noticed test.txt and todo.txt. Both are surprisingly related to notebook development. Both files should be looked at and dealt with since they do not belong inside the tree. 
 
@@ -46,7 +46,7 @@ archive/issue_comments_045543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5801#issuecomment-45543",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_045544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5801#issuecomment-45544",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_045545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5801#issuecomment-45545",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_045546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5801#issuecomment-45546",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_045547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5801#issuecomment-45547",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

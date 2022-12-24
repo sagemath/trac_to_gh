@@ -3,7 +3,7 @@
 archive/issues_001895.json:
 ```json
 {
-    "body": "Assignee: malb\n\nRe-adding the missing hunk 2 of #1837.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1895\n\n",
+    "body": "Assignee: @malb\n\nRe-adding the missing hunk 2 of #1837.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1895\n\n",
     "created_at": "2008-01-23T17:00:33Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001895.json:
     "title": "[with patch, needs review] deal with passed through keyword arguments for Gr\u00f6bner basis computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1895",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Re-adding the missing hunk 2 of #1837.
 
@@ -37,7 +37,7 @@ archive/issue_comments_011996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1895#issuecomment-11996",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003569.json:
     "title": "optimize import of sage.dsage.interface.dsage_interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3569",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3569
 archive/issue_comments_025216.json:
 ```json
 {
-    "body": "Attachment [sage-3569.patch](tarball://root/attachments/some-uuid/ticket3569/sage-3569.patch) by was created at 2008-07-06 20:26:06\n\nAFTER\n\n```\nteragon-2:dsage was$ sage -startuptime|grep twisted\n```\n\n\n\n```\nteragon-2:dsage was$ sage -startuptime|grep dsage_interface\n        sage.dsage.interface.dsage_interface: 0.007 (dist_function)\n         sage.dsage.misc.misc: 0.005 (sage.dsage.interface.dsage_interface)\n```\n",
+    "body": "Attachment [sage-3569.patch](tarball://root/attachments/some-uuid/ticket3569/sage-3569.patch) by @williamstein created at 2008-07-06 20:26:06\n\nAFTER\n\n```\nteragon-2:dsage was$ sage -startuptime|grep twisted\n```\n\n\n\n```\nteragon-2:dsage was$ sage -startuptime|grep dsage_interface\n        sage.dsage.interface.dsage_interface: 0.007 (dist_function)\n         sage.dsage.misc.misc: 0.005 (sage.dsage.interface.dsage_interface)\n```\n",
     "created_at": "2008-07-06T20:26:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3569#issuecomment-25216",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3569.patch](tarball://root/attachments/some-uuid/ticket3569/sage-3569.patch) by was created at 2008-07-06 20:26:06
+Attachment [sage-3569.patch](tarball://root/attachments/some-uuid/ticket3569/sage-3569.patch) by @williamstein created at 2008-07-06 20:26:06
 
 AFTER
 
@@ -83,7 +83,7 @@ archive/issue_comments_025217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3569#issuecomment-25217",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

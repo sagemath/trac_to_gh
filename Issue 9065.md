@@ -3,7 +3,7 @@
 archive/issues_009065.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: facade, parent, TestSuite\n\nThe goal of this tickets is to add support for facade parents; see:\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a5ea008c24c17956/00ab8c6d2a16f57a\n\nThe main issue currently is that facade parents (Primes, NonNegativeIntegers, SymmetricFunctions, ...) are not aware that they are, which breaks some of the generic TestSuite tests.\n\nThis involves:\n- Creating a category or abstract class for facade parents\n  Such parents should declare a list of parents they are facade\n  for.\n- Adding a method P.check_element(x) (find a better name!) in Sets.ParentMethods which checks that the parent of x is P. Override this method for facade parents to check that the parent of x is one of the declared parents of P.\n- Fix P._test_one(), P._test_zero(), P._test_an_element() (and maybe others) to use P.check_element(x) instead of x in P.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9065\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: facade, parent, TestSuite\n\nThe goal of this tickets is to add support for facade parents; see:\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a5ea008c24c17956/00ab8c6d2a16f57a\n\nThe main issue currently is that facade parents (Primes, NonNegativeIntegers, SymmetricFunctions, ...) are not aware that they are, which breaks some of the generic TestSuite tests.\n\nThis involves:\n- Creating a category or abstract class for facade parents\n  Such parents should declare a list of parents they are facade\n  for.\n- Adding a method P.check_element(x) (find a better name!) in Sets.ParentMethods which checks that the parent of x is P. Override this method for facade parents to check that the parent of x is one of the declared parents of P.\n- Fix P._test_one(), P._test_zero(), P._test_an_element() (and maybe others) to use P.check_element(x) instead of x in P.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9065\n\n",
     "created_at": "2010-05-27T13:02:37Z",
     "labels": [
         "categories",
@@ -17,7 +17,7 @@ archive/issues_009065.json:
     "user": "nborie"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -51,7 +51,7 @@ archive/issue_comments_084120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9065#issuecomment-84120",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_084121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9065#issuecomment-84121",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_084122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9065#issuecomment-84122",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_084123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9065#issuecomment-84123",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_084124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9065#issuecomment-84124",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_084125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9065#issuecomment-84125",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_084126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9065#issuecomment-84126",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_084127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9065#issuecomment-84127",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -226,16 +226,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_084128.json:
 ```json
 {
-    "body": "Attachment [trac_9065-facade_parents-nt.patch](tarball://root/attachments/some-uuid/ticket9065/trac_9065-facade_parents-nt.patch) by nthiery created at 2011-04-26 04:34:27\n\nFixed another trivial failing test in a separate file. Hopefuly the last one!\n\nFlorent just checked it, and is ok to leave the positive review.",
+    "body": "Attachment [trac_9065-facade_parents-nt.patch](tarball://root/attachments/some-uuid/ticket9065/trac_9065-facade_parents-nt.patch) by @nthiery created at 2011-04-26 04:34:27\n\nFixed another trivial failing test in a separate file. Hopefuly the last one!\n\nFlorent just checked it, and is ok to leave the positive review.",
     "created_at": "2011-04-26T04:34:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9065#issuecomment-84128",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_9065-facade_parents-nt.patch](tarball://root/attachments/some-uuid/ticket9065/trac_9065-facade_parents-nt.patch) by nthiery created at 2011-04-26 04:34:27
+Attachment [trac_9065-facade_parents-nt.patch](tarball://root/attachments/some-uuid/ticket9065/trac_9065-facade_parents-nt.patch) by @nthiery created at 2011-04-26 04:34:27
 
 Fixed another trivial failing test in a separate file. Hopefuly the last one!
 
@@ -253,7 +253,7 @@ archive/issue_comments_084129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9065",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9065#issuecomment-84129",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

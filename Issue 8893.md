@@ -14,7 +14,7 @@ archive/issues_008893.json:
     "title": "disjoint rooted paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8893",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8893
 archive/issue_comments_081764.json:
 ```json
 {
-    "body": "Attachment [trac_8893.patch](tarball://root/attachments/some-uuid/ticket8893/trac_8893.patch) by ncohen created at 2010-05-08 22:24:43",
+    "body": "Attachment [trac_8893.patch](tarball://root/attachments/some-uuid/ticket8893/trac_8893.patch) by @nathanncohen created at 2010-05-08 22:24:43",
     "created_at": "2010-05-08T22:24:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8893#issuecomment-81764",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8893.patch](tarball://root/attachments/some-uuid/ticket8893/trac_8893.patch) by ncohen created at 2010-05-08 22:24:43
+Attachment [trac_8893.patch](tarball://root/attachments/some-uuid/ticket8893/trac_8893.patch) by @nathanncohen created at 2010-05-08 22:24:43
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_081765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8893#issuecomment-81765",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_081766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8893#issuecomment-81766",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_081767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8893#issuecomment-81767",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_081768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8893#issuecomment-81768",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

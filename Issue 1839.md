@@ -3,7 +3,7 @@
 archive/issues_001839.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1839\n\n",
+    "body": "Assignee: @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1839\n\n",
     "created_at": "2008-01-18T22:04:27Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001839.json:
     "title": "[with script; needs review and integration] sage-crap: incorporate this script into sage and start using it before each release.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1839",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 
@@ -32,7 +32,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1839
 archive/issue_comments_011640.json:
 ```json
 {
-    "body": "Changing assignee from malb to mabshoff.",
+    "body": "Changing assignee from @malb to mabshoff.",
     "created_at": "2008-01-18T22:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1839",
     "type": "issue_comment",
@@ -41,7 +41,7 @@ archive/issue_comments_011640.json:
 }
 ```
 
-Changing assignee from malb to mabshoff.
+Changing assignee from @malb to mabshoff.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_011642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1839#issuecomment-11642",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_011643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1839#issuecomment-11643",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_011646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1839#issuecomment-11646",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_011647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1839#issuecomment-11647",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_011648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1839#issuecomment-11648",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -251,16 +251,16 @@ cddlibman.toc: LaTeX  table of contents
 archive/issue_comments_011649.json:
 ```json
 {
-    "body": "Attachment [scripts-1839.patch](tarball://root/attachments/some-uuid/ticket1839/scripts-1839.patch) by was created at 2008-06-16 00:15:29\n\npart 2 of the patch",
+    "body": "Attachment [scripts-1839.patch](tarball://root/attachments/some-uuid/ticket1839/scripts-1839.patch) by @williamstein created at 2008-06-16 00:15:29\n\npart 2 of the patch",
     "created_at": "2008-06-16T00:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1839#issuecomment-11649",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-1839.patch](tarball://root/attachments/some-uuid/ticket1839/scripts-1839.patch) by was created at 2008-06-16 00:15:29
+Attachment [scripts-1839.patch](tarball://root/attachments/some-uuid/ticket1839/scripts-1839.patch) by @williamstein created at 2008-06-16 00:15:29
 
 part 2 of the patch
 
@@ -276,7 +276,7 @@ archive/issue_comments_011650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1839#issuecomment-11650",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_011651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1839#issuecomment-11651",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

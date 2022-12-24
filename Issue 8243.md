@@ -3,7 +3,7 @@
 archive/issues_008243.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri mvngu\n\nLet's fix or suppress these, so that it's easier to identify new problems.\n\nSee the attachment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8243\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri mvngu\n\nLet's fix or suppress these, so that it's easier to identify new problems.\n\nSee the attachment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8243\n\n",
     "created_at": "2010-02-11T21:43:21Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008243.json:
     "title": "Annoying warnings when building the HTML reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8243",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri mvngu
+CC:  @jhpalmieri mvngu
 
 Let's fix or suppress these, so that it's easier to identify new problems.
 
@@ -41,7 +41,7 @@ archive/issue_comments_072892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8243#issuecomment-72892",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

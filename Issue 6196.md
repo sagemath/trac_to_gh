@@ -14,7 +14,7 @@ archive/issues_006196.json:
     "title": "mpmath support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6196",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 Assignee: mabshoff
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6196
 archive/issue_comments_049479.json:
 ```json
 {
-    "body": "Attachment [mpmath.patch](tarball://root/attachments/some-uuid/ticket6196/mpmath.patch) by fredrik.johansson created at 2009-06-03 17:36:56",
+    "body": "Attachment [mpmath.patch](tarball://root/attachments/some-uuid/ticket6196/mpmath.patch) by @fredrik-johansson created at 2009-06-03 17:36:56",
     "created_at": "2009-06-03T17:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49479",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [mpmath.patch](tarball://root/attachments/some-uuid/ticket6196/mpmath.patch) by fredrik.johansson created at 2009-06-03 17:36:56
+Attachment [mpmath.patch](tarball://root/attachments/some-uuid/ticket6196/mpmath.patch) by @fredrik-johansson created at 2009-06-03 17:36:56
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_049480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49480",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -82,16 +82,16 @@ I am interested in using mpmath for numerical integration, but unfortunately I g
 archive/issue_comments_049481.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-19T22:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49481",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -100,16 +100,16 @@ Changing assignee from mabshoff to mhansen.
 archive/issue_comments_049482.json:
 ```json
 {
-    "body": "Attachment [trac_6196-review.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-review.patch) by mhansen created at 2009-06-19 22:20:55\n\nI put an spkg at http://sage.math.washington.edu/home/mhansen/mpmath-0.12.spkg",
+    "body": "Attachment [trac_6196-review.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-review.patch) by @mwhansen created at 2009-06-19 22:20:55\n\nI put an spkg at http://sage.math.washington.edu/home/mhansen/mpmath-0.12.spkg",
     "created_at": "2009-06-19T22:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49482",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6196-review.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-review.patch) by mhansen created at 2009-06-19 22:20:55
+Attachment [trac_6196-review.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-review.patch) by @mwhansen created at 2009-06-19 22:20:55
 
 I put an spkg at http://sage.math.washington.edu/home/mhansen/mpmath-0.12.spkg
 
@@ -125,7 +125,7 @@ archive/issue_comments_049483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49483",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_049484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49484",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_049485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49485",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -174,16 +174,16 @@ Positive review for me.  Change status after my tiny patch is refereed.
 archive/issue_comments_049486.json:
 ```json
 {
-    "body": "Attachment [trac_6196-ncalexan.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-ncalexan.patch) by ncalexan created at 2009-06-19 22:56:41",
+    "body": "Attachment [trac_6196-ncalexan.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-ncalexan.patch) by @ncalexan created at 2009-06-19 22:56:41",
     "created_at": "2009-06-19T22:56:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49486",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_6196-ncalexan.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-ncalexan.patch) by ncalexan created at 2009-06-19 22:56:41
+Attachment [trac_6196-ncalexan.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-ncalexan.patch) by @ncalexan created at 2009-06-19 22:56:41
 
 
 
@@ -197,7 +197,7 @@ archive/issue_comments_049487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49487",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_049489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49489",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_049491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49491",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

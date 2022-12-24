@@ -3,7 +3,7 @@
 archive/issues_002297.json:
 ```json
 {
-    "body": "Assignee: SimonKing\n\nKeywords: tensor product\n\nI was missing a tensor product for matrices in Sage. While this is easy to obtain using `block_matrix`, it might be nicer to customize this as a method of `Matrix`. Example:\n\n\n```\nsage: M1=Matrix(QQ,[[-1,0],[-1/2,-1]])\nsage: M2=Matrix(ZZ,[[1,-1,2],[-2,4,8]])\nsage: M1.tensor_product(M2)\n\n[  -1    1   -2|   0    0    0]\n[   2   -4   -8|   0    0    0]\n[--------------+--------------]\n[-1/2  1/2   -1|  -1    1   -2]\n[   1   -2   -4|   2   -4   -8]\nsage: M2.tensor_product(M1)\n\n[  -1    0|   1    0|  -2    0]\n[-1/2   -1| 1/2    1|  -1   -2]\n[---------+---------+---------]\n[   2    0|  -4    0|  -8    0]\n[   1    2|  -2   -4|  -4   -8]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2297\n\n",
+    "body": "Assignee: @simon-king-jena\n\nKeywords: tensor product\n\nI was missing a tensor product for matrices in Sage. While this is easy to obtain using `block_matrix`, it might be nicer to customize this as a method of `Matrix`. Example:\n\n\n```\nsage: M1=Matrix(QQ,[[-1,0],[-1/2,-1]])\nsage: M2=Matrix(ZZ,[[1,-1,2],[-2,4,8]])\nsage: M1.tensor_product(M2)\n\n[  -1    1   -2|   0    0    0]\n[   2   -4   -8|   0    0    0]\n[--------------+--------------]\n[-1/2  1/2   -1|  -1    1   -2]\n[   1   -2   -4|   2   -4   -8]\nsage: M2.tensor_product(M1)\n\n[  -1    0|   1    0|  -2    0]\n[-1/2   -1| 1/2    1|  -1   -2]\n[---------+---------+---------]\n[   2    0|  -4    0|  -8    0]\n[   1    2|  -2   -4|  -4   -8]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2297\n\n",
     "created_at": "2008-02-24T20:48:15Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_002297.json:
     "title": "Tensor product of matrices [with patch, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2297",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: SimonKing
+Assignee: @simon-king-jena
 
 Keywords: tensor product
 
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2297
 archive/issue_comments_015230.json:
 ```json
 {
-    "body": "Attachment [tensorproduct.patch](tarball://root/attachments/some-uuid/ticket2297/tensorproduct.patch) by SimonKing created at 2008-02-24 21:11:46",
+    "body": "Attachment [tensorproduct.patch](tarball://root/attachments/some-uuid/ticket2297/tensorproduct.patch) by @simon-king-jena created at 2008-02-24 21:11:46",
     "created_at": "2008-02-24T21:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2297#issuecomment-15230",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [tensorproduct.patch](tarball://root/attachments/some-uuid/ticket2297/tensorproduct.patch) by SimonKing created at 2008-02-24 21:11:46
+Attachment [tensorproduct.patch](tarball://root/attachments/some-uuid/ticket2297/tensorproduct.patch) by @simon-king-jena created at 2008-02-24 21:11:46
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_015231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2297#issuecomment-15231",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_015232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2297#issuecomment-15232",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_015233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2297#issuecomment-15233",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_015234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2297#issuecomment-15234",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

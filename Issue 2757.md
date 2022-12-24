@@ -3,7 +3,7 @@
 archive/issues_002757.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI've attached a patch that Debianizes the scipy_sandbox spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2757\n\n",
+    "body": "Assignee: @timabbott\n\nI've attached a patch that Debianizes the scipy_sandbox spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2757\n\n",
     "created_at": "2008-04-01T18:43:30Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002757.json:
     "title": "[with patch; needs review] Debianize scipy_sandbox package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2757",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I've attached a patch that Debianizes the scipy_sandbox spkg.
 

@@ -3,7 +3,7 @@
 archive/issues_007383.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt would be cool to have an option to sample the vector field a given number of times and draw curved arrows (i.e., lines approximating the vector field, like a simple euler's method run for each point in the vector field).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7383\n\n",
+    "body": "Assignee: @williamstein\n\nIt would be cool to have an option to sample the vector field a given number of times and draw curved arrows (i.e., lines approximating the vector field, like a simple euler's method run for each point in the vector field).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7383\n\n",
     "created_at": "2009-11-03T19:10:53Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_007383.json:
     "title": "make curved arrows in 3d vector field plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7383",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It would be cool to have an option to sample the vector field a given number of times and draw curved arrows (i.e., lines approximating the vector field, like a simple euler's method run for each point in the vector field).
 

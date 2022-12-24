@@ -14,7 +14,7 @@ archive/issues_001976.json:
     "title": "[with 1-line patch; needs review] disable the use of openssl on linux as a hack to generate security certificates quickly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1976",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1976
 archive/issue_comments_012812.json:
 ```json
 {
-    "body": "Attachment [trac-1976.patch](tarball://root/attachments/some-uuid/ticket1976/trac-1976.patch) by rlm created at 2008-03-12 05:15:24",
+    "body": "Attachment [trac-1976.patch](tarball://root/attachments/some-uuid/ticket1976/trac-1976.patch) by @rlmill created at 2008-03-12 05:15:24",
     "created_at": "2008-03-12T05:15:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1976#issuecomment-12812",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-1976.patch](tarball://root/attachments/some-uuid/ticket1976/trac-1976.patch) by rlm created at 2008-03-12 05:15:24
+Attachment [trac-1976.patch](tarball://root/attachments/some-uuid/ticket1976/trac-1976.patch) by @rlmill created at 2008-03-12 05:15:24
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_012813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1976#issuecomment-12813",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

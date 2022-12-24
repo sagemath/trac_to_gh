@@ -14,7 +14,7 @@ archive/issues_008915.json:
     "title": "improve documentation on combinat.dyck_words",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8915",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 Assignee: mvngu
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8915
 archive/issue_comments_082116.json:
 ```json
 {
-    "body": "Attachment [trac8915.patch](tarball://root/attachments/some-uuid/ticket8915/trac8915.patch) by zabrocki created at 2010-05-08 17:27:15\n\nDocumentation changes to combinat/dyck_word.py",
+    "body": "Attachment [trac8915.patch](tarball://root/attachments/some-uuid/ticket8915/trac8915.patch) by @zabrocki created at 2010-05-08 17:27:15\n\nDocumentation changes to combinat/dyck_word.py",
     "created_at": "2010-05-08T17:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8915#issuecomment-82116",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 
-Attachment [trac8915.patch](tarball://root/attachments/some-uuid/ticket8915/trac8915.patch) by zabrocki created at 2010-05-08 17:27:15
+Attachment [trac8915.patch](tarball://root/attachments/some-uuid/ticket8915/trac8915.patch) by @zabrocki created at 2010-05-08 17:27:15
 
 Documentation changes to combinat/dyck_word.py
 
@@ -68,16 +68,16 @@ Documentation changes to combinat/dyck_word.py
 archive/issue_comments_082117.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to zabrocki.",
+    "body": "Changing assignee from mvngu to @zabrocki.",
     "created_at": "2010-05-08T17:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8915#issuecomment-82117",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 
-Changing assignee from mvngu to zabrocki.
+Changing assignee from mvngu to @zabrocki.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_082118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8915#issuecomment-82118",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_082121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8915#issuecomment-82121",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_082122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8915",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8915#issuecomment-82122",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 

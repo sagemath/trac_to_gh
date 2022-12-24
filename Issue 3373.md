@@ -3,7 +3,7 @@
 archive/issues_003373.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nFor x a ZZ variable, 1/x claims to be an integer:\n\n```\nsage: var('x', ZZ)\nx\nsage: (1/x).sym_parent()\nInteger Ring\n```\n\n\nBut in Sage, integer division always gives a rational:\n\n```\nsage: parent(1/1)\nRational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3373\n\n",
+    "body": "Assignee: @garyfurnish\n\nFor x a ZZ variable, 1/x claims to be an integer:\n\n```\nsage: var('x', ZZ)\nx\nsage: (1/x).sym_parent()\nInteger Ring\n```\n\n\nBut in Sage, integer division always gives a rational:\n\n```\nsage: parent(1/1)\nRational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3373\n\n",
     "created_at": "2008-06-05T20:07:17Z",
     "labels": [
         "symbolics",
@@ -16,7 +16,7 @@ archive/issues_003373.json:
     "user": "cwitty"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 For x a ZZ variable, 1/x claims to be an integer:
 
@@ -52,7 +52,7 @@ archive/issue_comments_023595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3373#issuecomment-23595",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_023596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3373#issuecomment-23596",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_023597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3373",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3373#issuecomment-23597",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000120.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: abs, cyclotomic field\n\nIt seems to me that this behaviour is wrong:\n\n```\nsage: z = CyclotomicField(7).gen()\n\nsage: abs(z)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/wdj/sagefiles/sage-1.4/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: bad operand type for abs(): 'NumberFieldElement'\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/120\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: abs, cyclotomic field\n\nIt seems to me that this behaviour is wrong:\n\n```\nsage: z = CyclotomicField(7).gen()\n\nsage: abs(z)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/wdj/sagefiles/sage-1.4/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: bad operand type for abs(): 'NumberFieldElement'\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/120\n\n",
     "created_at": "2006-10-08T02:34:43Z",
     "labels": [
         "number theory",
@@ -13,10 +13,10 @@ archive/issues_000120.json:
     "title": "abs for elements of CyclotomicField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/120",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: abs, cyclotomic field
 
@@ -52,7 +52,7 @@ archive/issue_comments_000560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/120#issuecomment-560",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_000561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/120#issuecomment-561",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

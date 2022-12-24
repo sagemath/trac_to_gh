@@ -109,7 +109,7 @@ archive/issue_comments_058168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58168",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -122,16 +122,16 @@ Changing status from new to needs_review.
 archive/issue_comments_058169.json:
 ```json
 {
-    "body": "Attachment [flint-1.5.0.p11.patch](tarball://root/attachments/some-uuid/ticket7024/flint-1.5.0.p11.patch) by ohanar created at 2012-02-09 14:38:31\n\nfor review purposes",
+    "body": "Attachment [flint-1.5.0.p11.patch](tarball://root/attachments/some-uuid/ticket7024/flint-1.5.0.p11.patch) by @ohanar created at 2012-02-09 14:38:31\n\nfor review purposes",
     "created_at": "2012-02-09T14:38:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58169",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
-Attachment [flint-1.5.0.p11.patch](tarball://root/attachments/some-uuid/ticket7024/flint-1.5.0.p11.patch) by ohanar created at 2012-02-09 14:38:31
+Attachment [flint-1.5.0.p11.patch](tarball://root/attachments/some-uuid/ticket7024/flint-1.5.0.p11.patch) by @ohanar created at 2012-02-09 14:38:31
 
 for review purposes
 
@@ -147,7 +147,7 @@ archive/issue_comments_058170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58170",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_058171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58171",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_058172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58172",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_058173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58173",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

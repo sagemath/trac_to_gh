@@ -3,7 +3,7 @@
 archive/issues_002613.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe class Graph has a method \"all_paths\", but DiGraph don't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2613\n\n",
+    "body": "Assignee: @rlmill\n\nThe class Graph has a method \"all_paths\", but DiGraph don't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2613\n\n",
     "created_at": "2008-03-20T14:29:48Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002613.json:
     "title": "Moving \"all_paths()\" to \"GenericGraph\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2613",
-    "user": "vgermrk"
+    "user": "@m-r-k"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The class Graph has a method "all_paths", but DiGraph don't.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2613
 archive/issue_comments_017930.json:
 ```json
 {
-    "body": "Attachment [all_paths.patch](tarball://root/attachments/some-uuid/ticket2613/all_paths.patch) by vgermrk created at 2008-03-20 15:06:27",
+    "body": "Attachment [all_paths.patch](tarball://root/attachments/some-uuid/ticket2613/all_paths.patch) by @m-r-k created at 2008-03-20 15:06:27",
     "created_at": "2008-03-20T15:06:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2613#issuecomment-17930",
-    "user": "vgermrk"
+    "user": "@m-r-k"
 }
 ```
 
-Attachment [all_paths.patch](tarball://root/attachments/some-uuid/ticket2613/all_paths.patch) by vgermrk created at 2008-03-20 15:06:27
+Attachment [all_paths.patch](tarball://root/attachments/some-uuid/ticket2613/all_paths.patch) by @m-r-k created at 2008-03-20 15:06:27
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_017931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2613#issuecomment-17931",
-    "user": "vgermrk"
+    "user": "@m-r-k"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_017932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2613#issuecomment-17932",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -86,16 +86,16 @@ The code looks sensible, but you haven't created any new doctests to demonstrate
 archive/issue_comments_017933.json:
 ```json
 {
-    "body": "Attachment [all_paths_doctests.patch](tarball://root/attachments/some-uuid/ticket2613/all_paths_doctests.patch) by vgermrk created at 2008-03-21 12:54:10",
+    "body": "Attachment [all_paths_doctests.patch](tarball://root/attachments/some-uuid/ticket2613/all_paths_doctests.patch) by @m-r-k created at 2008-03-21 12:54:10",
     "created_at": "2008-03-21T12:54:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2613#issuecomment-17933",
-    "user": "vgermrk"
+    "user": "@m-r-k"
 }
 ```
 
-Attachment [all_paths_doctests.patch](tarball://root/attachments/some-uuid/ticket2613/all_paths_doctests.patch) by vgermrk created at 2008-03-21 12:54:10
+Attachment [all_paths_doctests.patch](tarball://root/attachments/some-uuid/ticket2613/all_paths_doctests.patch) by @m-r-k created at 2008-03-21 12:54:10
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_017934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2613#issuecomment-17934",
-    "user": "vgermrk"
+    "user": "@m-r-k"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_017935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2613#issuecomment-17935",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

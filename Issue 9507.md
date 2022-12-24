@@ -14,7 +14,7 @@ archive/issues_009507.json:
     "title": "if spkg-install is a Python script, first check that SAGE_LOCAL/bin/python exists.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9507",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -62,7 +62,7 @@ archive/issue_comments_091339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91339",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_091340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91340",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_091342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91342",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_091343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91343",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_091344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91344",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_091345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91345",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_091346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91346",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_091347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91347",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_091348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91348",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_091349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91349",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -317,16 +317,16 @@ new version with better error message, as Lief suggested.
 archive/issue_comments_091350.json:
 ```json
 {
-    "body": "Attachment [trac_9507.patch](tarball://root/attachments/some-uuid/ticket9507/trac_9507.patch) by rlm created at 2010-07-19 11:20:34",
+    "body": "Attachment [trac_9507.patch](tarball://root/attachments/some-uuid/ticket9507/trac_9507.patch) by @rlmill created at 2010-07-19 11:20:34",
     "created_at": "2010-07-19T11:20:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91350",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9507.patch](tarball://root/attachments/some-uuid/ticket9507/trac_9507.patch) by rlm created at 2010-07-19 11:20:34
+Attachment [trac_9507.patch](tarball://root/attachments/some-uuid/ticket9507/trac_9507.patch) by @rlmill created at 2010-07-19 11:20:34
 
 
 
@@ -340,7 +340,7 @@ archive/issue_comments_091351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91351",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

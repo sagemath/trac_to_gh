@@ -3,7 +3,7 @@
 archive/issues_001044.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: K.<a> = NumberField(x^2 - 5)\nsage: sigma = K.real_embeddings()\nsage: def sig(z):\n...       return (sigma[0](z), sigma[1](z))\n...\nsage: # Plot a bunch of points in the ring of integers.\nsage: B = K.maximal_order().basis(); B\n[1/2*a + 1/2, a]\nsage: # A bug!!  :-(\nsage: z = [sig(i*B[0] + j*B[1]) for i in [-3..3] for j in [-3..3]]\n```\n\n\nResults in a segmentation fault on 2.8.9 os x and 2.8.10 linux 64-bit. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1044\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: K.<a> = NumberField(x^2 - 5)\nsage: sigma = K.real_embeddings()\nsage: def sig(z):\n...       return (sigma[0](z), sigma[1](z))\n...\nsage: # Plot a bunch of points in the ring of integers.\nsage: B = K.maximal_order().basis(); B\n[1/2*a + 1/2, a]\nsage: # A bug!!  :-(\nsage: z = [sig(i*B[0] + j*B[1]) for i in [-3..3] for j in [-3..3]]\n```\n\n\nResults in a segmentation fault on 2.8.9 os x and 2.8.10 linux 64-bit. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1044\n\n",
     "created_at": "2007-10-31T21:22:55Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001044.json:
     "title": "segfault apply morphism to field element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1044",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -260,7 +260,7 @@ archive/issue_comments_006359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1044#issuecomment-6359",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

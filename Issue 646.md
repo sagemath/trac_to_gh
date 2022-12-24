@@ -3,7 +3,7 @@
 archive/issues_000646.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n---------- Forwarded message ----------\nFrom: Kate Minola <kate01123@gmail.com>\nDate: Sep 12, 2007 7:27 AM\nSubject: [sage-support] sage-2.8.4.1 build report\nTo: sage-support@googlegroups.com\n\n\n\nWilliam,\n\nsage-2.8.4.1 built and successfully passed all\ntests on the following architectures:\n\n  x86-Linux (pentium4-fc6)\n  x86_64-Linux (fc6)\n\nOn ia64-Linux, sage-2.8.4.1 only failed one test:\n      sage -t  devel/sage-main/sage/plot/plot3d/plot3d.py\n      [...]\n      File \"base.pyx\", line 274, in base.TransformGroup.get_transformation\n        self.T = Transformation(self._scale, self._rot, self._trans)\n      File \"transform.pyx\", line 37, in transform.Transformation.__init__\n        t = atan2(vy,vz) + pi/2\n    ValueError: math domain error\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/646\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n---------- Forwarded message ----------\nFrom: Kate Minola <kate01123@gmail.com>\nDate: Sep 12, 2007 7:27 AM\nSubject: [sage-support] sage-2.8.4.1 build report\nTo: sage-support@googlegroups.com\n\n\n\nWilliam,\n\nsage-2.8.4.1 built and successfully passed all\ntests on the following architectures:\n\n  x86-Linux (pentium4-fc6)\n  x86_64-Linux (fc6)\n\nOn ia64-Linux, sage-2.8.4.1 only failed one test:\n      sage -t  devel/sage-main/sage/plot/plot3d/plot3d.py\n      [...]\n      File \"base.pyx\", line 274, in base.TransformGroup.get_transformation\n        self.T = Transformation(self._scale, self._rot, self._trans)\n      File \"transform.pyx\", line 37, in transform.Transformation.__init__\n        t = atan2(vy,vz) + pi/2\n    ValueError: math domain error\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/646\n\n",
     "created_at": "2007-09-13T05:42:53Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000646.json:
     "title": "plot3d error on itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/646",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -60,16 +60,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/646
 archive/issue_comments_003352.json:
 ```json
 {
-    "body": "Attachment [itanium-atan2.patch](tarball://root/attachments/some-uuid/ticket646/itanium-atan2.patch) by robertwb created at 2007-09-13 05:43:35",
+    "body": "Attachment [itanium-atan2.patch](tarball://root/attachments/some-uuid/ticket646/itanium-atan2.patch) by @robertwb created at 2007-09-13 05:43:35",
     "created_at": "2007-09-13T05:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3352",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [itanium-atan2.patch](tarball://root/attachments/some-uuid/ticket646/itanium-atan2.patch) by robertwb created at 2007-09-13 05:43:35
+Attachment [itanium-atan2.patch](tarball://root/attachments/some-uuid/ticket646/itanium-atan2.patch) by @robertwb created at 2007-09-13 05:43:35
 
 
 
@@ -83,7 +83,7 @@ archive/issue_comments_003353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3353",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_003354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3354",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -117,16 +117,16 @@ I am going to rewrite the function to be cleaner and avoid all use of atan.
 archive/issue_comments_003355.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-09-13T05:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3355",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -140,7 +140,7 @@ archive/issue_comments_003356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3356",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_003357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3357",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_003358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3358",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_003359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3359",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -232,16 +232,16 @@ Changing status from closed to reopened.
 archive/issue_comments_003360.json:
 ```json
 {
-    "body": "Attachment [better-plot3d-rot.patch](tarball://root/attachments/some-uuid/ticket646/better-plot3d-rot.patch) by was created at 2007-09-13 18:20:18\n\nHopefully this is not fixed (it's in 2.8.4.2)",
+    "body": "Attachment [better-plot3d-rot.patch](tarball://root/attachments/some-uuid/ticket646/better-plot3d-rot.patch) by @williamstein created at 2007-09-13 18:20:18\n\nHopefully this is not fixed (it's in 2.8.4.2)",
     "created_at": "2007-09-13T18:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3360",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [better-plot3d-rot.patch](tarball://root/attachments/some-uuid/ticket646/better-plot3d-rot.patch) by was created at 2007-09-13 18:20:18
+Attachment [better-plot3d-rot.patch](tarball://root/attachments/some-uuid/ticket646/better-plot3d-rot.patch) by @williamstein created at 2007-09-13 18:20:18
 
 Hopefully this is not fixed (it's in 2.8.4.2)
 
@@ -257,7 +257,7 @@ archive/issue_comments_003361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3361",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

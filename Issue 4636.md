@@ -3,7 +3,7 @@
 archive/issues_004636.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  craigcitro\n\nKeywords: polynomial modn finite field gf\n\nsage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p is very old.\n\nThe attached patch removes (but doesn't yet delete -- could you verify it can be removed, reviewer?) Polynomial_dense_mod_p and implements polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz/ZZ using the newer techniques.\n\nIt makes basic arithmetic faster.  I was finding that arithmetic in GF(next_prime(2^50))['x'] was slower than in Zmod(next_prime(2^50)+1)['x'], but now I cannot find the comparison!  In any case, this is much faster for doing gcd/xgcd in GF(p)['x'].\n\nIssue created by migration from https://trac.sagemath.org/ticket/4636\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nKeywords: polynomial modn finite field gf\n\nsage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p is very old.\n\nThe attached patch removes (but doesn't yet delete -- could you verify it can be removed, reviewer?) Polynomial_dense_mod_p and implements polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz/ZZ using the newer techniques.\n\nIt makes basic arithmetic faster.  I was finding that arithmetic in GF(next_prime(2^50))['x'] was slower than in Zmod(next_prime(2^50)+1)['x'], but now I cannot find the comparison!  In any case, this is much faster for doing gcd/xgcd in GF(p)['x'].\n\nIssue created by migration from https://trac.sagemath.org/ticket/4636\n\n",
     "created_at": "2008-11-27T04:44:35Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_004636.json:
     "title": "improve polynomial_modn_dense_ntl.Polynomial_dense_mod_p",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4636",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  craigcitro
+CC:  @craigcitro
 
 Keywords: polynomial modn finite field gf
 
@@ -63,7 +63,7 @@ archive/issue_comments_034865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34865",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_034866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34866",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_034867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34867",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_034868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34868",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -176,16 +176,16 @@ I should reimplement this using `polynomial_template.pxi` and Nick will review i
 archive/issue_comments_034869.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2009-01-25T19:00:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34869",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -199,7 +199,7 @@ archive/issue_comments_034870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34870",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_034871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34871",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_034872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34872",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_034873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34873",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_034874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34874",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_034875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34875",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_034876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34876",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

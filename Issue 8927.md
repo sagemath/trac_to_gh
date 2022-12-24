@@ -14,7 +14,7 @@ archive/issues_008927.json:
     "title": "is_triangle_free",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8927",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -41,7 +41,7 @@ archive/issue_comments_082239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8927#issuecomment-82239",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_082240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8927#issuecomment-82240",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -72,16 +72,16 @@ Changing priority from major to minor.
 archive/issue_comments_082241.json:
 ```json
 {
-    "body": "Attachment [trac_8927.patch](tarball://root/attachments/some-uuid/ticket8927/trac_8927.patch) by ncohen created at 2010-06-08 12:49:13",
+    "body": "Attachment [trac_8927.patch](tarball://root/attachments/some-uuid/ticket8927/trac_8927.patch) by @nathanncohen created at 2010-06-08 12:49:13",
     "created_at": "2010-06-08T12:49:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8927#issuecomment-82241",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8927.patch](tarball://root/attachments/some-uuid/ticket8927/trac_8927.patch) by ncohen created at 2010-06-08 12:49:13
+Attachment [trac_8927.patch](tarball://root/attachments/some-uuid/ticket8927/trac_8927.patch) by @nathanncohen created at 2010-06-08 12:49:13
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_082242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8927#issuecomment-82242",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_082243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8927#issuecomment-82243",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_082244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8927#issuecomment-82244",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002608.json:
 ```json
 {
-    "body": "Assignee: was\n\nSequence(ZZ) should fail immediately in the first place. In the session below, I entered the command, waited some time and pressed CTRL+C many times. The computation was not only interrupted, but my sage session also crashed. Output below:\n \n\n```\nsage: Sequence(ZZ)\n(CTRL+C pressed repeatedly)\nERROR: Internal Python error in the inspect module.\nBelow is the traceback from this internal error.\n\nTraceback (most recent call last):\n  File \"/home/dfdeshom/custom/sage/local/lib/python2.5/site-packages/IPython/ultraTB.py\", line 491, in text\n    records = _fixed_getinnerframes(etb, context,self.tb_offset)\n  File \"/home/dfdeshom/custom/sage/local/lib/python2.5/site-packages/IPython/ultraTB.py\", line 124, in _fixed_\ngetinnerframes\n    records  = inspect.getinnerframes(etb, context)\n  File \"/home/dfdeshom/custom/sage/local/lib/python2.5/inspect.py\", line 877, in getinnerframes\n    framelist.append((tb.tb_frame,) + getframeinfo(tb, context))\n  File \"/home/dfdeshom/custom/sage/local/lib/python2.5/inspect.py\", line 841, in getframeinfo\n    lines, lnum = findsource(frame)\n  File \"/home/dfdeshom/custom/sage/local/lib/python2.5/inspect.py\", line 462, in findsource\n\n[...]\n\n  File \"/home/dfdeshom/custom/sage/local/lib/python2.5/site-packages/sage/interfaces/get_sigs.py\", line 9, in my_sigint\n    raise KeyboardInterrupt\nKeyboardInterrupt\n\nUnfortunately, your original traceback can not be constructed.\n\ndfdeshom@sage:~/custom/sage/devel/sage-2577$\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2608\n\n",
+    "body": "Assignee: @williamstein\n\nSequence(ZZ) should fail immediately in the first place. In the session below, I entered the command, waited some time and pressed CTRL+C many times. The computation was not only interrupted, but my sage session also crashed. Output below:\n \n\n```\nsage: Sequence(ZZ)\n(CTRL+C pressed repeatedly)\nERROR: Internal Python error in the inspect module.\nBelow is the traceback from this internal error.\n\nTraceback (most recent call last):\n  File \"/home/dfdeshom/custom/sage/local/lib/python2.5/site-packages/IPython/ultraTB.py\", line 491, in text\n    records = _fixed_getinnerframes(etb, context,self.tb_offset)\n  File \"/home/dfdeshom/custom/sage/local/lib/python2.5/site-packages/IPython/ultraTB.py\", line 124, in _fixed_\ngetinnerframes\n    records  = inspect.getinnerframes(etb, context)\n  File \"/home/dfdeshom/custom/sage/local/lib/python2.5/inspect.py\", line 877, in getinnerframes\n    framelist.append((tb.tb_frame,) + getframeinfo(tb, context))\n  File \"/home/dfdeshom/custom/sage/local/lib/python2.5/inspect.py\", line 841, in getframeinfo\n    lines, lnum = findsource(frame)\n  File \"/home/dfdeshom/custom/sage/local/lib/python2.5/inspect.py\", line 462, in findsource\n\n[...]\n\n  File \"/home/dfdeshom/custom/sage/local/lib/python2.5/site-packages/sage/interfaces/get_sigs.py\", line 9, in my_sigint\n    raise KeyboardInterrupt\nKeyboardInterrupt\n\nUnfortunately, your original traceback can not be constructed.\n\ndfdeshom@sage:~/custom/sage/devel/sage-2577$\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2608\n\n",
     "created_at": "2008-03-20T05:12:50Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_002608.json:
     "title": "Sequence(ZZ) should fail gracefully",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2608",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Sequence(ZZ) should fail immediately in the first place. In the session below, I entered the command, waited some time and pressed CTRL+C many times. The computation was not only interrupted, but my sage session also crashed. Output below:
  
@@ -69,7 +69,7 @@ archive/issue_comments_017901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2608#issuecomment-17901",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_017902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2608#issuecomment-17902",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_017903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2608#issuecomment-17903",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_017904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2608#issuecomment-17904",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_017905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2608",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2608#issuecomment-17905",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

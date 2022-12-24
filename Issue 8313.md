@@ -3,7 +3,7 @@
 archive/issues_008313.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nWhile reading the doc I found the following trivial doc mistake:\nAt the begining of the file Linear Code construction, there is a `denotetheanswerby` which is typeset by LaTeX. I've no time to create the (trivial) patch right now. I'll if no one beats me. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8313\n\n",
+    "body": "Assignee: @wdjoyner\n\nWhile reading the doc I found the following trivial doc mistake:\nAt the begining of the file Linear Code construction, there is a `denotetheanswerby` which is typeset by LaTeX. I've no time to create the (trivial) patch right now. I'll if no one beats me. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8313\n\n",
     "created_at": "2010-02-20T14:32:52Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_008313.json:
     "title": "Misplaced \"`\" in linear code construction documentation.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8313",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 While reading the doc I found the following trivial doc mistake:
 At the begining of the file Linear Code construction, there is a `denotetheanswerby` which is typeset by LaTeX. I've no time to create the (trivial) patch right now. I'll if no one beats me. 
@@ -56,7 +56,7 @@ archive/issue_comments_073725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8313#issuecomment-73725",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -73,16 +73,16 @@ http://www.sagemath.org/doc/reference/sage/coding/code_constructions.html
 archive/issue_comments_073726.json:
 ```json
 {
-    "body": "Attachment [trac_8313-typo_codeconstruction-fh.patch](tarball://root/attachments/some-uuid/ticket8313/trac_8313-typo_codeconstruction-fh.patch) by hivert created at 2010-04-10 09:17:10",
+    "body": "Attachment [trac_8313-typo_codeconstruction-fh.patch](tarball://root/attachments/some-uuid/ticket8313/trac_8313-typo_codeconstruction-fh.patch) by @hivert created at 2010-04-10 09:17:10",
     "created_at": "2010-04-10T09:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8313#issuecomment-73726",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8313-typo_codeconstruction-fh.patch](tarball://root/attachments/some-uuid/ticket8313/trac_8313-typo_codeconstruction-fh.patch) by hivert created at 2010-04-10 09:17:10
+Attachment [trac_8313-typo_codeconstruction-fh.patch](tarball://root/attachments/some-uuid/ticket8313/trac_8313-typo_codeconstruction-fh.patch) by @hivert created at 2010-04-10 09:17:10
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_073727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8313#issuecomment-73727",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_073728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8313#issuecomment-73728",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_073729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8313#issuecomment-73729",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_073731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8313#issuecomment-73731",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_073732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8313#issuecomment-73732",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

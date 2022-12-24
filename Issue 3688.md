@@ -14,7 +14,7 @@ archive/issues_003688.json:
     "title": "trivial problems in the sage spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3688",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -70,16 +70,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3688
 archive/issue_comments_026143.json:
 ```json
 {
-    "body": "Attachment [sage-shebang-fixes.patch](tarball://root/attachments/some-uuid/ticket3688/sage-shebang-fixes.patch) by tabbott created at 2008-08-03 05:43:28",
+    "body": "Attachment [sage-shebang-fixes.patch](tarball://root/attachments/some-uuid/ticket3688/sage-shebang-fixes.patch) by @timabbott created at 2008-08-03 05:43:28",
     "created_at": "2008-08-03T05:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3688#issuecomment-26143",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [sage-shebang-fixes.patch](tarball://root/attachments/some-uuid/ticket3688/sage-shebang-fixes.patch) by tabbott created at 2008-08-03 05:43:28
+Attachment [sage-shebang-fixes.patch](tarball://root/attachments/some-uuid/ticket3688/sage-shebang-fixes.patch) by @timabbott created at 2008-08-03 05:43:28
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_026144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3688#issuecomment-26144",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_026145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3688#issuecomment-26145",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_026146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3688#issuecomment-26146",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_026147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3688#issuecomment-26147",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 

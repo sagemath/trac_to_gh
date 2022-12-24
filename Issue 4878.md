@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4878
 archive/issue_comments_036934.json:
 ```json
 {
-    "body": "Attachment [trac_4878.patch](tarball://root/attachments/some-uuid/ticket4878/trac_4878.patch) by wdj created at 2008-12-26 13:21:47\n\nApplies to 3.2.2 cleanly and passes sage -t. The docstrings look fine.\n\nI tried\n\n```\nsage: density_plot(sin(x^2 + y^2)*cos(x)*sin(y), (-4, 4), (-4, 4), cmap='winter', plot_points=100)\n\nsage: contour_plot(sin(x^2 + y^2)*cos(x)*sin(y), (-4, 4), (-4, 4), cmap='winter', plot_points=100, contours=40)\n```\n\nand noticed that they look very similar (modulo scaling). However, there are some plotting artifacts contour_plot leaves at the \"corners\" where cos(x)=0 and sin(y)=0. density_plot seems to avoid these problems. Nice patch.\n\nBTW, where can one find the list of \"legal\" values of cmap? For example, _allowed_options gives this:\n\n\n```\n    cmap           The colormap, one of (autumn, bone, cool, copper,\n                       gray, hot, hsv, jet, pink, prism, spring, summer, winter)\n```\n\n\nBut this is incomplete, since Oranges, Blues, etc also work. For example, try\n\n\n```\nsage: x,y = var('x,y')\nsage: density_plot(sin(x^2 + y^2)*exp((x^2+y^2)/10), (-4, 4), (-4, 4), cmap='Greens')\n```\n\nI'm happy giving this a positive review but am wondering about this one small issue with the output of _allowed_options. Can the author please comment on this?",
+    "body": "Attachment [trac_4878.patch](tarball://root/attachments/some-uuid/ticket4878/trac_4878.patch) by @wdjoyner created at 2008-12-26 13:21:47\n\nApplies to 3.2.2 cleanly and passes sage -t. The docstrings look fine.\n\nI tried\n\n```\nsage: density_plot(sin(x^2 + y^2)*cos(x)*sin(y), (-4, 4), (-4, 4), cmap='winter', plot_points=100)\n\nsage: contour_plot(sin(x^2 + y^2)*cos(x)*sin(y), (-4, 4), (-4, 4), cmap='winter', plot_points=100, contours=40)\n```\n\nand noticed that they look very similar (modulo scaling). However, there are some plotting artifacts contour_plot leaves at the \"corners\" where cos(x)=0 and sin(y)=0. density_plot seems to avoid these problems. Nice patch.\n\nBTW, where can one find the list of \"legal\" values of cmap? For example, _allowed_options gives this:\n\n\n```\n    cmap           The colormap, one of (autumn, bone, cool, copper,\n                       gray, hot, hsv, jet, pink, prism, spring, summer, winter)\n```\n\n\nBut this is incomplete, since Oranges, Blues, etc also work. For example, try\n\n\n```\nsage: x,y = var('x,y')\nsage: density_plot(sin(x^2 + y^2)*exp((x^2+y^2)/10), (-4, 4), (-4, 4), cmap='Greens')\n```\n\nI'm happy giving this a positive review but am wondering about this one small issue with the output of _allowed_options. Can the author please comment on this?",
     "created_at": "2008-12-26T13:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4878#issuecomment-36934",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4878.patch](tarball://root/attachments/some-uuid/ticket4878/trac_4878.patch) by wdj created at 2008-12-26 13:21:47
+Attachment [trac_4878.patch](tarball://root/attachments/some-uuid/ticket4878/trac_4878.patch) by @wdjoyner created at 2008-12-26 13:21:47
 
 Applies to 3.2.2 cleanly and passes sage -t. The docstrings look fine.
 
@@ -152,7 +152,7 @@ archive/issue_comments_036938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4878#issuecomment-36938",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_036940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4878#issuecomment-36940",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

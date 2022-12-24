@@ -3,7 +3,7 @@
 archive/issues_001551.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nShould be easy to do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1551\n\n",
+    "body": "Assignee: @rlmill\n\nShould be easy to do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1551\n\n",
     "created_at": "2007-12-17T14:27:20Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_001551.json:
     "title": "Make is_subgraph function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1551",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Should be easy to do.
 
@@ -37,7 +37,7 @@ archive/issue_comments_009891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1551#issuecomment-9891",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_009892.json:
 ```json
 {
-    "body": "Attachment [is_subgraph.patch](tarball://root/attachments/some-uuid/ticket1551/is_subgraph.patch) by rlm created at 2007-12-17 20:45:03",
+    "body": "Attachment [is_subgraph.patch](tarball://root/attachments/some-uuid/ticket1551/is_subgraph.patch) by @rlmill created at 2007-12-17 20:45:03",
     "created_at": "2007-12-17T20:45:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1551#issuecomment-9892",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [is_subgraph.patch](tarball://root/attachments/some-uuid/ticket1551/is_subgraph.patch) by rlm created at 2007-12-17 20:45:03
+Attachment [is_subgraph.patch](tarball://root/attachments/some-uuid/ticket1551/is_subgraph.patch) by @rlmill created at 2007-12-17 20:45:03
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_009893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1551#issuecomment-9893",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_009894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1551#issuecomment-9894",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

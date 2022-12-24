@@ -3,7 +3,7 @@
 archive/issues_005323.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mjo\n\nThe `./` should not be here:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc3$ ./sage -t /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py \nERROR: File .//scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py is missing\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5323\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\nThe `./` should not be here:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc3$ ./sage -t /scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py \nERROR: File .//scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/plot/plotg.py is missing\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5323\n\n",
     "created_at": "2009-02-20T15:49:37Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_005323.json:
 ```
 Assignee: mabshoff
 
-CC:  mjo
+CC:  @orlitzky
 
 The `./` should not be here:
 
@@ -49,7 +49,7 @@ archive/issue_comments_040980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5323#issuecomment-40980",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_040981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5323#issuecomment-40981",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_040982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5323#issuecomment-40982",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_040983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5323#issuecomment-40983",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

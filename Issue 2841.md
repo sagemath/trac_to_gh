@@ -14,7 +14,7 @@ archive/issues_002841.json:
     "title": "maxima pukes on non-ascii filenames (terrible evil bug!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2841",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -102,7 +102,7 @@ archive/issue_comments_019494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2841#issuecomment-19494",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_019495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2841#issuecomment-19495",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_019496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2841#issuecomment-19496",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_019497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2841#issuecomment-19497",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_019498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2841#issuecomment-19498",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_019499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2841#issuecomment-19499",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_019500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2841",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2841#issuecomment-19500",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

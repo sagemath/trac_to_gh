@@ -3,7 +3,7 @@
 archive/issues_008031.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  chapoton\n\nThis is nice:\n\n\n```\ng = graphs.CompleteGraph(5)\ngraph_editor(g)\n```\n\n\nbut this would be even better:\n\n```\ng = graphs.CompleteGraph(5)\ng.edit()\n```\n\n\nIt could also fit into a framework where we have \"edit\" methods for all kinds of objects in Sage, including matrices, elliptic curves, etc.,.   These could be implemented using `@`interact in many cases. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8031\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @fchapoton\n\nThis is nice:\n\n\n```\ng = graphs.CompleteGraph(5)\ngraph_editor(g)\n```\n\n\nbut this would be even better:\n\n```\ng = graphs.CompleteGraph(5)\ng.edit()\n```\n\n\nIt could also fit into a framework where we have \"edit\" methods for all kinds of objects in Sage, including matrices, elliptic curves, etc.,.   These could be implemented using `@`interact in many cases. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8031\n\n",
     "created_at": "2010-01-21T20:05:00Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_008031.json:
     "title": "make graph_editor also available as a *method* on graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8031",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  chapoton
+CC:  @fchapoton
 
 This is nice:
 
@@ -56,7 +56,7 @@ archive/issue_comments_070156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8031#issuecomment-70156",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_070157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8031#issuecomment-70157",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_070158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8031#issuecomment-70158",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_070159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8031#issuecomment-70159",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_070160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8031#issuecomment-70160",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_070161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8031#issuecomment-70161",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

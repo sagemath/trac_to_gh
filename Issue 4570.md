@@ -3,7 +3,7 @@
 archive/issues_004570.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  robertwb\n\nThe standard numpy cython include is \"numpy/arrayobject.h\".  This changes Sage to use the standard include.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4570\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nThe standard numpy cython include is \"numpy/arrayobject.h\".  This changes Sage to use the standard include.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4570\n\n",
     "created_at": "2008-11-20T21:54:40Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_004570.json:
     "title": "change the numpy include to the standard place",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4570",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
 
-CC:  robertwb
+CC:  @robertwb
 
 The standard numpy cython include is "numpy/arrayobject.h".  This changes Sage to use the standard include.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4570
 archive/issue_comments_034236.json:
 ```json
 {
-    "body": "Attachment [numpy-proper-include.patch](tarball://root/attachments/some-uuid/ticket4570/numpy-proper-include.patch) by jason created at 2008-11-20 21:55:17",
+    "body": "Attachment [numpy-proper-include.patch](tarball://root/attachments/some-uuid/ticket4570/numpy-proper-include.patch) by @jasongrout created at 2008-11-20 21:55:17",
     "created_at": "2008-11-20T21:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4570#issuecomment-34236",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [numpy-proper-include.patch](tarball://root/attachments/some-uuid/ticket4570/numpy-proper-include.patch) by jason created at 2008-11-20 21:55:17
+Attachment [numpy-proper-include.patch](tarball://root/attachments/some-uuid/ticket4570/numpy-proper-include.patch) by @jasongrout created at 2008-11-20 21:55:17
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_034237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4570#issuecomment-34237",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

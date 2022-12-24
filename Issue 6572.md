@@ -3,7 +3,7 @@
 archive/issues_006572.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  jhpalmieri ncohen\n\nKeywords: tutorial\n\nSee this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85929d86accdf94d) thread for some background information. John Palmieri suggests that all doctests in the Sage tutorial be preceded with a double colon on its own line. That way, the doctest script would pick up all doctests in the tutorial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6572\n\n",
+    "body": "Assignee: tba\n\nCC:  @jhpalmieri @nathanncohen\n\nKeywords: tutorial\n\nSee this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85929d86accdf94d) thread for some background information. John Palmieri suggests that all doctests in the Sage tutorial be preceded with a double colon on its own line. That way, the doctest script would pick up all doctests in the tutorial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6572\n\n",
     "created_at": "2009-07-20T20:11:48Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_006572.json:
 ```
 Assignee: tba
 
-CC:  jhpalmieri ncohen
+CC:  @jhpalmieri @nathanncohen
 
 Keywords: tutorial
 
@@ -41,7 +41,7 @@ archive/issue_comments_053660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53660",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -68,16 +68,16 @@ For me, this passes all tests on Mac OS X (both 32-bit and 64-bit), and also on 
 archive/issue_comments_053661.json:
 ```json
 {
-    "body": "Attachment [trac_6572_scripts.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572_scripts.patch) by jhpalmieri created at 2009-07-27 17:14:26\n\nSee #6642 for the problem with the 'solve' doctest.",
+    "body": "Attachment [trac_6572_scripts.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572_scripts.patch) by @jhpalmieri created at 2009-07-27 17:14:26\n\nSee #6642 for the problem with the 'solve' doctest.",
     "created_at": "2009-07-27T17:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53661",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6572_scripts.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572_scripts.patch) by jhpalmieri created at 2009-07-27 17:14:26
+Attachment [trac_6572_scripts.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572_scripts.patch) by @jhpalmieri created at 2009-07-27 17:14:26
 
 See #6642 for the problem with the 'solve' doctest.
 
@@ -93,7 +93,7 @@ archive/issue_comments_053662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53662",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_053663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53663",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_053664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53664",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -147,16 +147,16 @@ In restructured text, the two should be equivalent.  It should be the same for t
 archive/issue_comments_053665.json:
 ```json
 {
-    "body": "Attachment [trac_6572-scripts-part2.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-scripts-part2.patch) by jhpalmieri created at 2009-10-05 15:06:40\n\napply on top of other scripts patch",
+    "body": "Attachment [trac_6572-scripts-part2.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-scripts-part2.patch) by @jhpalmieri created at 2009-10-05 15:06:40\n\napply on top of other scripts patch",
     "created_at": "2009-10-05T15:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53665",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6572-scripts-part2.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-scripts-part2.patch) by jhpalmieri created at 2009-10-05 15:06:40
+Attachment [trac_6572-scripts-part2.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-scripts-part2.patch) by @jhpalmieri created at 2009-10-05 15:06:40
 
 apply on top of other scripts patch
 
@@ -172,7 +172,7 @@ archive/issue_comments_053666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53666",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_053667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53667",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -223,16 +223,16 @@ I'll post a replacement for "trac_6572-double-colon.patch" soon.  That patch sho
 archive/issue_comments_053668.json:
 ```json
 {
-    "body": "Attachment [trac_6572-double-colon.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-double-colon.patch) by jhpalmieri created at 2009-10-06 00:59:39\n\ndepends on #6642",
+    "body": "Attachment [trac_6572-double-colon.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-double-colon.patch) by @jhpalmieri created at 2009-10-06 00:59:39\n\ndepends on #6642",
     "created_at": "2009-10-06T00:59:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53668",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6572-double-colon.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-double-colon.patch) by jhpalmieri created at 2009-10-06 00:59:39
+Attachment [trac_6572-double-colon.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-double-colon.patch) by @jhpalmieri created at 2009-10-06 00:59:39
 
 depends on #6642
 
@@ -248,7 +248,7 @@ archive/issue_comments_053669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53669",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_053670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53670",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_053671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53671",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_053672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53672",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_053673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53673",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -333,16 +333,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_053674.json:
 ```json
 {
-    "body": "Attachment [trac_6572-graphtheory.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-graphtheory.patch) by mhansen created at 2009-10-15 09:17:06\n\nLooks good to me.",
+    "body": "Attachment [trac_6572-graphtheory.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-graphtheory.patch) by @mwhansen created at 2009-10-15 09:17:06\n\nLooks good to me.",
     "created_at": "2009-10-15T09:17:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53674",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6572-graphtheory.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-graphtheory.patch) by mhansen created at 2009-10-15 09:17:06
+Attachment [trac_6572-graphtheory.patch](tarball://root/attachments/some-uuid/ticket6572/trac_6572-graphtheory.patch) by @mwhansen created at 2009-10-15 09:17:06
 
 Looks good to me.
 
@@ -358,7 +358,7 @@ archive/issue_comments_053675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6572",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6572#issuecomment-53675",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

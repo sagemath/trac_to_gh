@@ -3,7 +3,7 @@
 archive/issues_003859.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason kcrisman\n\nKeywords: plot3d, Line, corner_cutoff, smoothing\n\nsage.plot.plot3d.shapes2.Line defines a corner_cutoff parameter.\n\nIt functions to smooth lines passed to it if the cosine of the angle is greater than corner_cutoff (why??? - I'm filing another ticket about this).\n\nWe want to be able to turn the smoothing of lines off, which would happen if corner_cutoff = 1 worked.\n\nExample of breakage:  (line3d calles sage.plot.plot3d.shapes2.Line)\n\n```\nline3d([[-1, 3, 369.26], [-1, -10.11, 125.33], [0.21, -10.13, 99.42]], corner_cutoff = 1)\n```\n\nA doctest sage: from sage.plot.plot3d.shapes2 import Line\n\n```\n              sage: Line([(0,0,0),(1,0,0),(2,1,0),(0,1,0)], corner_cutoff=1).corners()\n              [(0, 0, 0), (1, 0, 0), (2, 1, 0)]\n```\n\nWorks, but calling line3d or Line with these parameters fails with NoneType object unsubscriptable.\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3859\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @kcrisman\n\nKeywords: plot3d, Line, corner_cutoff, smoothing\n\nsage.plot.plot3d.shapes2.Line defines a corner_cutoff parameter.\n\nIt functions to smooth lines passed to it if the cosine of the angle is greater than corner_cutoff (why??? - I'm filing another ticket about this).\n\nWe want to be able to turn the smoothing of lines off, which would happen if corner_cutoff = 1 worked.\n\nExample of breakage:  (line3d calles sage.plot.plot3d.shapes2.Line)\n\n```\nline3d([[-1, 3, 369.26], [-1, -10.11, 125.33], [0.21, -10.13, 99.42]], corner_cutoff = 1)\n```\n\nA doctest sage: from sage.plot.plot3d.shapes2 import Line\n\n```\n              sage: Line([(0,0,0),(1,0,0),(2,1,0),(0,1,0)], corner_cutoff=1).corners()\n              [(0, 0, 0), (1, 0, 0), (2, 1, 0)]\n```\n\nWorks, but calling line3d or Line with these parameters fails with NoneType object unsubscriptable.\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3859\n\n",
     "created_at": "2008-08-14T22:11:31Z",
     "labels": [
         "graphics",
@@ -17,9 +17,9 @@ archive/issues_003859.json:
     "user": "mclean"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason kcrisman
+CC:  @jasongrout @kcrisman
 
 Keywords: plot3d, Line, corner_cutoff, smoothing
 
@@ -82,7 +82,7 @@ archive/issue_comments_027487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27487",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_027488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27488",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_027489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27489",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_027490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27490",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_027491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27491",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_027492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27492",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_027493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27493",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_027495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27495",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_027496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27496",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_027497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27497",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_027498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27498",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_027499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27499",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_027501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27501",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_027502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27502",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_027503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27503",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_027504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27504",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_027505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27505",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_027506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27506",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -500,7 +500,7 @@ archive/issue_comments_027507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3859",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3859#issuecomment-27507",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005470.json:
 ```json
 {
-    "body": "Assignee: cswiercz\n\nCC:  cswiercz\n\nKeywords: documentation, cython\n\nThe current description for adding a new Cython module is outdated:\n\nhttp://www.sagemath.org/doc/prog/node29.html\n\n```\n3. Create a .pyx file in the Sage library and add a listing for it to the variable\next_modules in the file SAGE_ROOT/devel/sage/setup.py. For example, the file \nSAGE_ROOT/devel/sage/sage/graphs/chrompoly.pyx has lines\n\n    Extension('sage.graphs.chrompoly',\n              ['sage/graphs/chrompoly.pyx']\n              ), \\\n\nin setup.py. Also, the module - in this example sage.graphs.chrompoly - needs to be \nadded to the packages list in setup.py . Then type sage -b to build Sage with the new \ncode.\n```\n\n\nThis documentation needs to account for the separate `module_list.py` file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5470\n\n",
+    "body": "Assignee: @cswiercz\n\nCC:  @cswiercz\n\nKeywords: documentation, cython\n\nThe current description for adding a new Cython module is outdated:\n\nhttp://www.sagemath.org/doc/prog/node29.html\n\n```\n3. Create a .pyx file in the Sage library and add a listing for it to the variable\next_modules in the file SAGE_ROOT/devel/sage/setup.py. For example, the file \nSAGE_ROOT/devel/sage/sage/graphs/chrompoly.pyx has lines\n\n    Extension('sage.graphs.chrompoly',\n              ['sage/graphs/chrompoly.pyx']\n              ), \\\n\nin setup.py. Also, the module - in this example sage.graphs.chrompoly - needs to be \nadded to the packages list in setup.py . Then type sage -b to build Sage with the new \ncode.\n```\n\n\nThis documentation needs to account for the separate `module_list.py` file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5470\n\n",
     "created_at": "2009-03-10T19:54:07Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_005470.json:
     "title": "Update Cython entry in Developer's Guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5470",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
-Assignee: cswiercz
+Assignee: @cswiercz
 
-CC:  cswiercz
+CC:  @cswiercz
 
 Keywords: documentation, cython
 
@@ -86,16 +86,16 @@ Michael
 archive/issue_comments_042451.json:
 ```json
 {
-    "body": "Attachment [sage-5470.patch](tarball://root/attachments/some-uuid/ticket5470/sage-5470.patch) by cswiercz created at 2009-03-10 21:39:11",
+    "body": "Attachment [sage-5470.patch](tarball://root/attachments/some-uuid/ticket5470/sage-5470.patch) by @cswiercz created at 2009-03-10 21:39:11",
     "created_at": "2009-03-10T21:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5470#issuecomment-42451",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [sage-5470.patch](tarball://root/attachments/some-uuid/ticket5470/sage-5470.patch) by cswiercz created at 2009-03-10 21:39:11
+Attachment [sage-5470.patch](tarball://root/attachments/some-uuid/ticket5470/sage-5470.patch) by @cswiercz created at 2009-03-10 21:39:11
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_042452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5470#issuecomment-42452",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_042453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5470#issuecomment-42453",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -151,16 +151,16 @@ one only does this if one is making an new package (directory).
 archive/issue_comments_042454.json:
 ```json
 {
-    "body": "Attachment [sage-5470-part2.patch](tarball://root/attachments/some-uuid/ticket5470/sage-5470-part2.patch) by cswiercz created at 2009-03-30 21:29:50\n\nApply in the following order:\n\n`sage-5470.patch`\n\n`sage-5470-part2.patch`",
+    "body": "Attachment [sage-5470-part2.patch](tarball://root/attachments/some-uuid/ticket5470/sage-5470-part2.patch) by @cswiercz created at 2009-03-30 21:29:50\n\nApply in the following order:\n\n`sage-5470.patch`\n\n`sage-5470-part2.patch`",
     "created_at": "2009-03-30T21:29:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5470#issuecomment-42454",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [sage-5470-part2.patch](tarball://root/attachments/some-uuid/ticket5470/sage-5470-part2.patch) by cswiercz created at 2009-03-30 21:29:50
+Attachment [sage-5470-part2.patch](tarball://root/attachments/some-uuid/ticket5470/sage-5470-part2.patch) by @cswiercz created at 2009-03-30 21:29:50
 
 Apply in the following order:
 

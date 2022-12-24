@@ -14,7 +14,7 @@ archive/issues_000221.json:
     "title": "SageX: generic laurent series over arbitrary ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/221",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_000989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/221#issuecomment-989",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_000990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/221",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/221#issuecomment-990",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

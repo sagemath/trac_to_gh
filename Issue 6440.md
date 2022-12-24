@@ -14,7 +14,7 @@ archive/issues_006440.json:
     "title": "hg_sage.serve() is broken in 4.1.alpha1 (mainly on Mac?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6440",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: cwitty
@@ -93,16 +93,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6440
 archive/issue_comments_051694.json:
 ```json
 {
-    "body": "Attachment [serve.png](tarball://root/attachments/some-uuid/ticket6440/serve.png) by jason created at 2009-09-15 04:36:22\n\nSee #6906 for apparently the solution (upgrade mercurial)",
+    "body": "Attachment [serve.png](tarball://root/attachments/some-uuid/ticket6440/serve.png) by @jasongrout created at 2009-09-15 04:36:22\n\nSee #6906 for apparently the solution (upgrade mercurial)",
     "created_at": "2009-09-15T04:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6440#issuecomment-51694",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [serve.png](tarball://root/attachments/some-uuid/ticket6440/serve.png) by jason created at 2009-09-15 04:36:22
+Attachment [serve.png](tarball://root/attachments/some-uuid/ticket6440/serve.png) by @jasongrout created at 2009-09-15 04:36:22
 
 See #6906 for apparently the solution (upgrade mercurial)
 
@@ -118,7 +118,7 @@ archive/issue_comments_051695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6440#issuecomment-51695",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_051696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6440#issuecomment-51696",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004845.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nI think the title says it all -- sage seems to crash on start whenever the file `~/.sage/init.sage` is present, at least on my Mac. The attached patch fixes the issue.\n\nI'm listing this as a blocker, partially because the fix is so short. I think that this bug has been lurking quite a while -- I think it was the fix for #4792 that exposed it ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4845\n\n",
+    "body": "Assignee: @craigcitro\n\nI think the title says it all -- sage seems to crash on start whenever the file `~/.sage/init.sage` is present, at least on my Mac. The attached patch fixes the issue.\n\nI'm listing this as a blocker, partially because the fix is so short. I think that this bug has been lurking quite a while -- I think it was the fix for #4792 that exposed it ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4845\n\n",
     "created_at": "2008-12-21T09:15:09Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_004845.json:
     "title": "[with patch, needs review] sage 3.2.2 crashes on startup when init.sage present",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4845",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 I think the title says it all -- sage seems to crash on start whenever the file `~/.sage/init.sage` is present, at least on my Mac. The attached patch fixes the issue.
 
@@ -39,7 +39,7 @@ archive/issue_comments_036737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4845#issuecomment-36737",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_036738.json:
 ```json
 {
-    "body": "Attachment [trac-4845.patch](tarball://root/attachments/some-uuid/ticket4845/trac-4845.patch) by craigcitro created at 2008-12-21 09:16:12",
+    "body": "Attachment [trac-4845.patch](tarball://root/attachments/some-uuid/ticket4845/trac-4845.patch) by @craigcitro created at 2008-12-21 09:16:12",
     "created_at": "2008-12-21T09:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4845#issuecomment-36738",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4845.patch](tarball://root/attachments/some-uuid/ticket4845/trac-4845.patch) by craigcitro created at 2008-12-21 09:16:12
+Attachment [trac-4845.patch](tarball://root/attachments/some-uuid/ticket4845/trac-4845.patch) by @craigcitro created at 2008-12-21 09:16:12
 
 
 
@@ -155,7 +155,7 @@ archive/issue_comments_036743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4845#issuecomment-36743",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_036745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4845#issuecomment-36745",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005945.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  zimmerma\n\nFLINT can factor faster than PARI for integers smaller than 2^50 or so.  So by default, we should use FLINT for this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5945\n\n",
+    "body": "Assignee: tbd\n\nCC:  @zimmermann6\n\nFLINT can factor faster than PARI for integers smaller than 2^50 or so.  So by default, we should use FLINT for this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5945\n\n",
     "created_at": "2009-04-30T06:15:16Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_005945.json:
 ```
 Assignee: tbd
 
-CC:  zimmerma
+CC:  @zimmermann6
 
 FLINT can factor faster than PARI for integers smaller than 2^50 or so.  So by default, we should use FLINT for this.
 
@@ -120,7 +120,7 @@ archive/issue_comments_047005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47005",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_047006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47006",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_047007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47007",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -169,16 +169,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_047008.json:
 ```json
 {
-    "body": "Attachment [5945_check_improvements.sage](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.sage) by aapitzsch created at 2010-11-08 09:29:12\n\nI decided to move `flint_factor` to `fast_arith.pyx`, so it can be used for `int`, too.\nTo check the improvements use attachment:5945_check_improvements.patch, attachment:5945_check_improvements.sage and\n\n```\n(line(values_p)+line(values_f,color='red')).plot()\n(line(values_med_p)+line(values_med_f,color='red')).plot()\n```\n",
+    "body": "Attachment [5945_check_improvements.sage](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.sage) by @a-andre created at 2010-11-08 09:29:12\n\nI decided to move `flint_factor` to `fast_arith.pyx`, so it can be used for `int`, too.\nTo check the improvements use attachment:5945_check_improvements.patch, attachment:5945_check_improvements.sage and\n\n```\n(line(values_p)+line(values_f,color='red')).plot()\n(line(values_med_p)+line(values_med_f,color='red')).plot()\n```\n",
     "created_at": "2010-11-08T09:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47008",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [5945_check_improvements.sage](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.sage) by aapitzsch created at 2010-11-08 09:29:12
+Attachment [5945_check_improvements.sage](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.sage) by @a-andre created at 2010-11-08 09:29:12
 
 I decided to move `flint_factor` to `fast_arith.pyx`, so it can be used for `int`, too.
 To check the improvements use attachment:5945_check_improvements.patch, attachment:5945_check_improvements.sage and
@@ -196,16 +196,16 @@ To check the improvements use attachment:5945_check_improvements.patch, attachme
 archive/issue_comments_047009.json:
 ```json
 {
-    "body": "Attachment [trac_5945_flintfactor.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_flintfactor.patch) by aapitzsch created at 2010-11-10 10:07:42\n\napply only this patch; apply after #10211",
+    "body": "Attachment [trac_5945_flintfactor.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_flintfactor.patch) by @a-andre created at 2010-11-10 10:07:42\n\napply only this patch; apply after #10211",
     "created_at": "2010-11-10T10:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47009",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [trac_5945_flintfactor.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_flintfactor.patch) by aapitzsch created at 2010-11-10 10:07:42
+Attachment [trac_5945_flintfactor.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_flintfactor.patch) by @a-andre created at 2010-11-10 10:07:42
 
 apply only this patch; apply after #10211
 
@@ -216,16 +216,16 @@ apply only this patch; apply after #10211
 archive/issue_comments_047010.json:
 ```json
 {
-    "body": "Attachment [5945_check_improvements.patch](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.patch) by aapitzsch created at 2010-11-10 10:08:15\n\nonly to check improvements, not for release",
+    "body": "Attachment [5945_check_improvements.patch](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.patch) by @a-andre created at 2010-11-10 10:08:15\n\nonly to check improvements, not for release",
     "created_at": "2010-11-10T10:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47010",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [5945_check_improvements.patch](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.patch) by aapitzsch created at 2010-11-10 10:08:15
+Attachment [5945_check_improvements.patch](tarball://root/attachments/some-uuid/ticket5945/5945_check_improvements.patch) by @a-andre created at 2010-11-10 10:08:15
 
 only to check improvements, not for release
 
@@ -241,7 +241,7 @@ archive/issue_comments_047011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47011",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_047012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47012",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_047018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47018",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_047023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47023",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_047026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47026",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -639,7 +639,7 @@ archive/issue_comments_047027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47027",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -745,7 +745,7 @@ archive/issue_comments_047032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47032",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -758,16 +758,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_047033.json:
 ```json
 {
-    "body": "Attachment [trac_5945_reviewer.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_reviewer.patch) by aapitzsch created at 2011-01-13 11:13:46\n\nApply trac_5945_reviewer.patch after trac_5945_fix.patch\n\nVersion rc0 reviewed.\n\nAttached trac_5945_reviewer.patch handles doctest failure in *factorization.py*. I only changed the expected result but actually it should be a new test with old result.\n\n*sage/libs/flint/long_extras.pxd* contained `ctypedef struct factor_t:`... twice so I removed one.\n\nEverything else is okay.",
+    "body": "Attachment [trac_5945_reviewer.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_reviewer.patch) by @a-andre created at 2011-01-13 11:13:46\n\nApply trac_5945_reviewer.patch after trac_5945_fix.patch\n\nVersion rc0 reviewed.\n\nAttached trac_5945_reviewer.patch handles doctest failure in *factorization.py*. I only changed the expected result but actually it should be a new test with old result.\n\n*sage/libs/flint/long_extras.pxd* contained `ctypedef struct factor_t:`... twice so I removed one.\n\nEverything else is okay.",
     "created_at": "2011-01-13T11:13:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47033",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [trac_5945_reviewer.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_reviewer.patch) by aapitzsch created at 2011-01-13 11:13:46
+Attachment [trac_5945_reviewer.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_reviewer.patch) by @a-andre created at 2011-01-13 11:13:46
 
 Apply trac_5945_reviewer.patch after trac_5945_fix.patch
 
@@ -808,16 +808,16 @@ Sebastian
 archive/issue_comments_047035.json:
 ```json
 {
-    "body": "Attachment [trac_5945-462a0.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945-462a0.patch) by aapitzsch created at 2011-01-17 13:09:57",
+    "body": "Attachment [trac_5945-462a0.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945-462a0.patch) by @a-andre created at 2011-01-17 13:09:57",
     "created_at": "2011-01-17T13:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47035",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [trac_5945-462a0.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945-462a0.patch) by aapitzsch created at 2011-01-17 13:09:57
+Attachment [trac_5945-462a0.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945-462a0.patch) by @a-andre created at 2011-01-17 13:09:57
 
 
 
@@ -831,7 +831,7 @@ archive/issue_comments_047036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47036",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -849,7 +849,7 @@ archive/issue_comments_047037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47037",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -876,7 +876,7 @@ archive/issue_comments_047038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47038",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -889,16 +889,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_047039.json:
 ```json
 {
-    "body": "Attachment [trac_5945_doc_fix.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_doc_fix.patch) by aapitzsch created at 2011-01-18 09:27:49",
+    "body": "Attachment [trac_5945_doc_fix.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_doc_fix.patch) by @a-andre created at 2011-01-18 09:27:49",
     "created_at": "2011-01-18T09:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47039",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [trac_5945_doc_fix.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_doc_fix.patch) by aapitzsch created at 2011-01-18 09:27:49
+Attachment [trac_5945_doc_fix.patch](tarball://root/attachments/some-uuid/ticket5945/trac_5945_doc_fix.patch) by @a-andre created at 2011-01-18 09:27:49
 
 
 
@@ -912,7 +912,7 @@ archive/issue_comments_047040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47040",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -930,7 +930,7 @@ archive/issue_comments_047041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47041",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -948,7 +948,7 @@ archive/issue_comments_047042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47042",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -966,7 +966,7 @@ archive/issue_comments_047043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47043",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -984,7 +984,7 @@ archive/issue_comments_047044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5945#issuecomment-47044",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

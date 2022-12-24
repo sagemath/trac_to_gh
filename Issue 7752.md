@@ -3,7 +3,7 @@
 archive/issues_007752.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was acleone mpatel\n\nTotal RAM use does not decrease after deleting a worksheet. In the Trash section, it appears as (running).\n\nI suggest the page is stopped, then deleted, as usually someone deleting a worksheet does not plan on working on it further.\n\nWhen I have to correct a lot of worksheets from the students, I upload one, correct it, save it, and delete it, but RAM eventually gets collapsed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7752\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein acleone @qed777\n\nTotal RAM use does not decrease after deleting a worksheet. In the Trash section, it appears as (running).\n\nI suggest the page is stopped, then deleted, as usually someone deleting a worksheet does not plan on working on it further.\n\nWhen I have to correct a lot of worksheets from the students, I upload one, correct it, save it, and delete it, but RAM eventually gets collapsed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7752\n\n",
     "created_at": "2009-12-23T14:16:30Z",
     "labels": [
         "notebook",
@@ -17,9 +17,9 @@ archive/issues_007752.json:
     "user": "pang"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was acleone mpatel
+CC:  @williamstein acleone @qed777
 
 Total RAM use does not decrease after deleting a worksheet. In the Trash section, it appears as (running).
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7752
 archive/issue_comments_066764.json:
 ```json
 {
-    "body": "Attachment [trac_7752-delete-worksheet-quit.patch](tarball://root/attachments/some-uuid/ticket7752/trac_7752-delete-worksheet-quit.patch) by timdumol created at 2010-01-19 10:42:08\n\nQuits a worksheet only if the only user viewing the worksheet is the person trashing it.",
+    "body": "Attachment [trac_7752-delete-worksheet-quit.patch](tarball://root/attachments/some-uuid/ticket7752/trac_7752-delete-worksheet-quit.patch) by @TimDumol created at 2010-01-19 10:42:08\n\nQuits a worksheet only if the only user viewing the worksheet is the person trashing it.",
     "created_at": "2010-01-19T10:42:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7752#issuecomment-66764",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7752-delete-worksheet-quit.patch](tarball://root/attachments/some-uuid/ticket7752/trac_7752-delete-worksheet-quit.patch) by timdumol created at 2010-01-19 10:42:08
+Attachment [trac_7752-delete-worksheet-quit.patch](tarball://root/attachments/some-uuid/ticket7752/trac_7752-delete-worksheet-quit.patch) by @TimDumol created at 2010-01-19 10:42:08
 
 Quits a worksheet only if the only user viewing the worksheet is the person trashing it.
 
@@ -63,7 +63,7 @@ archive/issue_comments_066765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7752#issuecomment-66765",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_066766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7752#issuecomment-66766",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_066769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7752#issuecomment-66769",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

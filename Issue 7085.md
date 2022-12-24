@@ -14,7 +14,7 @@ archive/issues_007085.json:
     "title": "fix this laurent series coercion bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7085",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -175,7 +175,7 @@ archive/issue_comments_058564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58564",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_058565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58565",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_058566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58566",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_058567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58567",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_058568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58568",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_058569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58569",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_058570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58570",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_058571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58571",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_058572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58572",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_058573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58573",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_058574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58574",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

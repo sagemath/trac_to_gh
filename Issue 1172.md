@@ -3,7 +3,7 @@
 archive/issues_001172.json:
 ```json
 {
-    "body": "Assignee: was\n\nChange the watkins license in SAGE_ROOT/COPYING to the following, since Mark Watkins told me to do this.\n\n\n```\nThe SYMPOW COPYING file says:\n\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n * Redistribution of source code must retain the above copyright notice,\n this list of conditions and the following disclaimer.\n * Redistribution in binary form must reproduce the above copyright\n notice, this list of conditions and the following disclaimer in the\n documentation and/or other materials provided with the distribution.\n * If redistribution is done as a part of a compilation that has a more\n restrictive license (such as the GPL), then the fact that SYMPOW has\n a less restrictive license must be made clear to the recipient.\n For example, a line like (include bracketed text if SYMPOW is modified):\n \"This compilation includes [a modification of] SYMPOW whose [original]\n  code has a less-restrictive license than the entire compilation.\"\n should appear in a suitable place in the COPYING and/or LICENSE file.\n\n[followed by the BSD disclaimer]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1172\n\n",
+    "body": "Assignee: @williamstein\n\nChange the watkins license in SAGE_ROOT/COPYING to the following, since Mark Watkins told me to do this.\n\n\n```\nThe SYMPOW COPYING file says:\n\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n * Redistribution of source code must retain the above copyright notice,\n this list of conditions and the following disclaimer.\n * Redistribution in binary form must reproduce the above copyright\n notice, this list of conditions and the following disclaimer in the\n documentation and/or other materials provided with the distribution.\n * If redistribution is done as a part of a compilation that has a more\n restrictive license (such as the GPL), then the fact that SYMPOW has\n a less restrictive license must be made clear to the recipient.\n For example, a line like (include bracketed text if SYMPOW is modified):\n \"This compilation includes [a modification of] SYMPOW whose [original]\n  code has a less-restrictive license than the entire compilation.\"\n should appear in a suitable place in the COPYING and/or LICENSE file.\n\n[followed by the BSD disclaimer]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1172\n\n",
     "created_at": "2007-11-14T23:25:20Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001172.json:
     "title": "change the watkins license in SAGE_ROOT/COPYING",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1172",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Change the watkins license in SAGE_ROOT/COPYING to the following, since Mark Watkins told me to do this.
 
@@ -61,7 +61,7 @@ archive/issue_comments_007186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1172#issuecomment-7186",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_007187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1172#issuecomment-7187",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_007188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1172#issuecomment-7188",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -110,16 +110,16 @@ apply to $SAGE_ROOT
 archive/issue_comments_007189.json:
 ```json
 {
-    "body": "Attachment [trac_1172-watkins-license.patch](tarball://root/attachments/some-uuid/ticket1172/trac_1172-watkins-license.patch) by ohanar created at 2012-06-25 22:56:23\n\nLooks good to me.",
+    "body": "Attachment [trac_1172-watkins-license.patch](tarball://root/attachments/some-uuid/ticket1172/trac_1172-watkins-license.patch) by @ohanar created at 2012-06-25 22:56:23\n\nLooks good to me.",
     "created_at": "2012-06-25T22:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1172#issuecomment-7189",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
-Attachment [trac_1172-watkins-license.patch](tarball://root/attachments/some-uuid/ticket1172/trac_1172-watkins-license.patch) by ohanar created at 2012-06-25 22:56:23
+Attachment [trac_1172-watkins-license.patch](tarball://root/attachments/some-uuid/ticket1172/trac_1172-watkins-license.patch) by @ohanar created at 2012-06-25 22:56:23
 
 Looks good to me.
 
@@ -135,7 +135,7 @@ archive/issue_comments_007190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1172#issuecomment-7190",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_007191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1172#issuecomment-7191",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_007192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1172#issuecomment-7192",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_007193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1172#issuecomment-7193",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_007194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1172#issuecomment-7194",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_007195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1172#issuecomment-7195",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 

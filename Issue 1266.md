@@ -37,7 +37,7 @@ archive/issue_comments_007936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7936",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_007937.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2007-12-06T21:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7937",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -68,16 +68,16 @@ Changing assignee from tba to mhansen.
 archive/issue_comments_007938.json:
 ```json
 {
-    "body": "Attachment [1266.patch](tarball://root/attachments/some-uuid/ticket1266/1266.patch) by mhansen created at 2008-01-17 00:51:35",
+    "body": "Attachment [1266.patch](tarball://root/attachments/some-uuid/ticket1266/1266.patch) by @mwhansen created at 2008-01-17 00:51:35",
     "created_at": "2008-01-17T00:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7938",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1266.patch](tarball://root/attachments/some-uuid/ticket1266/1266.patch) by mhansen created at 2008-01-17 00:51:35
+Attachment [1266.patch](tarball://root/attachments/some-uuid/ticket1266/1266.patch) by @mwhansen created at 2008-01-17 00:51:35
 
 
 

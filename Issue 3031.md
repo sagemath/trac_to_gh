@@ -3,7 +3,7 @@
 archive/issues_003031.json:
 ```json
 {
-    "body": "Assignee: wstein\n\nCC:  kedlaya\n\nKeywords: zeta function, schemes, finite fields\n\nThe attached patch (built against 3.0) adds a zeta_function method to the class of schemes over finite fields. It is meant to be a default procedure, to be overridden by something more sensible for particular classes of schemes (e.g., elliptic and hyperelliptic curves).\n\nZeta functions are currently only enabled over prime fields, but it will be trivial to fix that once coercion between nonprime finite fields is supported.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3031\n\n",
+    "body": "Assignee: wstein\n\nCC:  @kedlaya\n\nKeywords: zeta function, schemes, finite fields\n\nThe attached patch (built against 3.0) adds a zeta_function method to the class of schemes over finite fields. It is meant to be a default procedure, to be overridden by something more sensible for particular classes of schemes (e.g., elliptic and hyperelliptic curves).\n\nZeta functions are currently only enabled over prime fields, but it will be trivial to fix that once coercion between nonprime finite fields is supported.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3031\n\n",
     "created_at": "2008-04-26T15:42:49Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_003031.json:
     "title": "[with patch] Add zeta_function method for schemes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3031",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 Assignee: wstein
 
-CC:  kedlaya
+CC:  @kedlaya
 
 Keywords: zeta function, schemes, finite fields
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3031
 archive/issue_comments_020860.json:
 ```json
 {
-    "body": "Attachment [9610.patch](tarball://root/attachments/some-uuid/ticket3031/9610.patch) by kedlaya created at 2008-04-26 15:43:28",
+    "body": "Attachment [9610.patch](tarball://root/attachments/some-uuid/ticket3031/9610.patch) by @kedlaya created at 2008-04-26 15:43:28",
     "created_at": "2008-04-26T15:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20860",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Attachment [9610.patch](tarball://root/attachments/some-uuid/ticket3031/9610.patch) by kedlaya created at 2008-04-26 15:43:28
+Attachment [9610.patch](tarball://root/attachments/some-uuid/ticket3031/9610.patch) by @kedlaya created at 2008-04-26 15:43:28
 
 
 
@@ -56,16 +56,16 @@ Attachment [9610.patch](tarball://root/attachments/some-uuid/ticket3031/9610.pat
 archive/issue_comments_020861.json:
 ```json
 {
-    "body": "Attachment [trac-3031-pt2.patch](tarball://root/attachments/some-uuid/ticket3031/trac-3031-pt2.patch) by craigcitro created at 2008-04-27 00:52:34",
+    "body": "Attachment [trac-3031-pt2.patch](tarball://root/attachments/some-uuid/ticket3031/trac-3031-pt2.patch) by @craigcitro created at 2008-04-27 00:52:34",
     "created_at": "2008-04-27T00:52:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20861",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3031-pt2.patch](tarball://root/attachments/some-uuid/ticket3031/trac-3031-pt2.patch) by craigcitro created at 2008-04-27 00:52:34
+Attachment [trac-3031-pt2.patch](tarball://root/attachments/some-uuid/ticket3031/trac-3031-pt2.patch) by @craigcitro created at 2008-04-27 00:52:34
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_020862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20862",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_020865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20865",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -215,16 +215,16 @@ Changing status from closed to reopened.
 archive/issue_comments_020869.json:
 ```json
 {
-    "body": "Attachment [trac-3031-pt3.patch](tarball://root/attachments/some-uuid/ticket3031/trac-3031-pt3.patch) by craigcitro created at 2008-04-28 03:35:17",
+    "body": "Attachment [trac-3031-pt3.patch](tarball://root/attachments/some-uuid/ticket3031/trac-3031-pt3.patch) by @craigcitro created at 2008-04-28 03:35:17",
     "created_at": "2008-04-28T03:35:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20869",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3031-pt3.patch](tarball://root/attachments/some-uuid/ticket3031/trac-3031-pt3.patch) by craigcitro created at 2008-04-28 03:35:17
+Attachment [trac-3031-pt3.patch](tarball://root/attachments/some-uuid/ticket3031/trac-3031-pt3.patch) by @craigcitro created at 2008-04-28 03:35:17
 
 
 
@@ -238,7 +238,7 @@ archive/issue_comments_020870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20870",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_020871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20871",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

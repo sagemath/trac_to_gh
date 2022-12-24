@@ -3,7 +3,7 @@
 archive/issues_008278.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  pjeremy\n\nUsing either cvxopt-0.9.p8 (in sage-4.3.3) or cvxopt-1.1.2.p2, which is at http://boxen.math.washington.edu/home/schilly/sage/spkg/, we get this huge error very quickly upon trying to build:\n\n\n```\nbuilding 'base' extension                                                            \ncreating build/temp.cygwin-1.7.1-i686-2.6                                                                                  \ncreating build/temp.cygwin-1.7.1-i686-2.6/C                                                                                \ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/home/wstein/build/sage-4.3.3.alpha0/local/include/python2.6 -c C/base.c -o build/temp.cygwin-1.7.1-i686-2.6/C/base.o                                                            \nIn file included from C/base.c:23:                                                                                         \nC/cvxopt.h:29:21: error: complex.h: No such file or directory                                                              \nIn file included from C/base.c:24:                                                                                         \nC/misc.h:29: error: expected specifier-qualifier-list before \u2018complex\u2019                                                     \nC/base.c:58: error: \u2018complex\u2019 undeclared here (not in a function)                                                          \nC/base.c: In function \u2018write_znum\u2019:                             \n```\n\n\nIDEAS:\n\n1. Look for complex.h on this page:  http://www.cygwin.com/ml/cygwin/2006-07/threads.html#00763  That has some ideas.\n\n2. I think Mike Hansen said that he recently released (then unreleased!?) numpy-1.4 had a drop-in complex.h?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8278\n\n",
+    "body": "Assignee: tbd\n\nCC:  @peterjeremy\n\nUsing either cvxopt-0.9.p8 (in sage-4.3.3) or cvxopt-1.1.2.p2, which is at http://boxen.math.washington.edu/home/schilly/sage/spkg/, we get this huge error very quickly upon trying to build:\n\n\n```\nbuilding 'base' extension                                                            \ncreating build/temp.cygwin-1.7.1-i686-2.6                                                                                  \ncreating build/temp.cygwin-1.7.1-i686-2.6/C                                                                                \ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/home/wstein/build/sage-4.3.3.alpha0/local/include/python2.6 -c C/base.c -o build/temp.cygwin-1.7.1-i686-2.6/C/base.o                                                            \nIn file included from C/base.c:23:                                                                                         \nC/cvxopt.h:29:21: error: complex.h: No such file or directory                                                              \nIn file included from C/base.c:24:                                                                                         \nC/misc.h:29: error: expected specifier-qualifier-list before \u2018complex\u2019                                                     \nC/base.c:58: error: \u2018complex\u2019 undeclared here (not in a function)                                                          \nC/base.c: In function \u2018write_znum\u2019:                             \n```\n\n\nIDEAS:\n\n1. Look for complex.h on this page:  http://www.cygwin.com/ml/cygwin/2006-07/threads.html#00763  That has some ideas.\n\n2. I think Mike Hansen said that he recently released (then unreleased!?) numpy-1.4 had a drop-in complex.h?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8278\n\n",
     "created_at": "2010-02-15T22:44:34Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_008278.json:
     "title": "cygwin: cvxopt doesn't work at all",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8278",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  pjeremy
+CC:  @peterjeremy
 
 Using either cvxopt-0.9.p8 (in sage-4.3.3) or cvxopt-1.1.2.p2, which is at http://boxen.math.washington.edu/home/schilly/sage/spkg/, we get this huge error very quickly upon trying to build:
 
@@ -60,7 +60,7 @@ archive/issue_comments_073300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73300",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_073301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73301",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,16 +120,16 @@ hacked setup.py that allowed me to build and install cvxopt (though i had to mak
 archive/issue_comments_073302.json:
 ```json
 {
-    "body": "Attachment [setup.py](tarball://root/attachments/some-uuid/ticket8278/setup.py) by was created at 2010-02-15 23:07:57",
+    "body": "Attachment [setup.py](tarball://root/attachments/some-uuid/ticket8278/setup.py) by @williamstein created at 2010-02-15 23:07:57",
     "created_at": "2010-02-15T23:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73302",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [setup.py](tarball://root/attachments/some-uuid/ticket8278/setup.py) by was created at 2010-02-15 23:07:57
+Attachment [setup.py](tarball://root/attachments/some-uuid/ticket8278/setup.py) by @williamstein created at 2010-02-15 23:07:57
 
 
 
@@ -138,16 +138,16 @@ Attachment [setup.py](tarball://root/attachments/some-uuid/ticket8278/setup.py) 
 archive/issue_comments_073303.json:
 ```json
 {
-    "body": "Attachment [complex.h](tarball://root/attachments/some-uuid/ticket8278/complex.h) by dimpase created at 2010-03-18 14:06:04\n\nI would like to merge this with cvxopt-1.1.2.p2 (well, p3) that I just finished porting to Solaris, and cleaning up. For the latter, e.g. there is no random stuff in cvxopt any more, they can hook up to GSL (and we can enable this, as GSL is a standard Sage package).\n\nCan I use winxp2.math.washington.edu ?\nI suppose I need a login, and I don't seem to have one (I tried logging in from \nboxen...)\n\nDima",
+    "body": "Attachment [complex.h](tarball://root/attachments/some-uuid/ticket8278/complex.h) by @dimpase created at 2010-03-18 14:06:04\n\nI would like to merge this with cvxopt-1.1.2.p2 (well, p3) that I just finished porting to Solaris, and cleaning up. For the latter, e.g. there is no random stuff in cvxopt any more, they can hook up to GSL (and we can enable this, as GSL is a standard Sage package).\n\nCan I use winxp2.math.washington.edu ?\nI suppose I need a login, and I don't seem to have one (I tried logging in from \nboxen...)\n\nDima",
     "created_at": "2010-03-18T14:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73303",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [complex.h](tarball://root/attachments/some-uuid/ticket8278/complex.h) by dimpase created at 2010-03-18 14:06:04
+Attachment [complex.h](tarball://root/attachments/some-uuid/ticket8278/complex.h) by @dimpase created at 2010-03-18 14:06:04
 
 I would like to merge this with cvxopt-1.1.2.p2 (well, p3) that I just finished porting to Solaris, and cleaning up. For the latter, e.g. there is no random stuff in cvxopt any more, they can hook up to GSL (and we can enable this, as GSL is a standard Sage package).
 
@@ -169,7 +169,7 @@ archive/issue_comments_073304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73304",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_073305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73305",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_073307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73307",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_073308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73308",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_073309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73309",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_073310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73310",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_073311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73311",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

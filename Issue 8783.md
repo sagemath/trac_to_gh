@@ -14,7 +14,7 @@ archive/issues_008783.json:
     "title": "frobby optional spkg doesn't build with newer GCC's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8783",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -71,7 +71,7 @@ archive/issue_comments_080395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80395",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_080396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80396",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_080397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80397",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_080399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80399",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_080401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80401",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_080404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80404",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_080405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80405",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_080406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80406",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_080409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80409",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_080410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80410",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_080411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80411",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -537,7 +537,7 @@ archive/issue_comments_080412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80412",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_080413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80413",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_080414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80414",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -664,7 +664,7 @@ archive/issue_comments_080415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80415",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -677,16 +677,16 @@ Build with `SAGE_CHECK=yes` on Ubuntu 10.04, GCC 4.3.3
 archive/issue_comments_080416.json:
 ```json
 {
-    "body": "Attachment [frobby-0.7.6.p1-redhawk-SAGE_CHECK.log](tarball://root/attachments/some-uuid/ticket8783/frobby-0.7.6.p1-redhawk-SAGE_CHECK.log) by leif created at 2011-09-12 20:12:09\n\nOoops, should read 4.**4**.3, but the version shouldn't matter much anyway... ;-)\n\n(Attached the build log.)",
+    "body": "Attachment [frobby-0.7.6.p1-redhawk-SAGE_CHECK.log](tarball://root/attachments/some-uuid/ticket8783/frobby-0.7.6.p1-redhawk-SAGE_CHECK.log) by @nexttime created at 2011-09-12 20:12:09\n\nOoops, should read 4.**4**.3, but the version shouldn't matter much anyway... ;-)\n\n(Attached the build log.)",
     "created_at": "2011-09-12T20:12:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80416",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [frobby-0.7.6.p1-redhawk-SAGE_CHECK.log](tarball://root/attachments/some-uuid/ticket8783/frobby-0.7.6.p1-redhawk-SAGE_CHECK.log) by leif created at 2011-09-12 20:12:09
+Attachment [frobby-0.7.6.p1-redhawk-SAGE_CHECK.log](tarball://root/attachments/some-uuid/ticket8783/frobby-0.7.6.p1-redhawk-SAGE_CHECK.log) by @nexttime created at 2011-09-12 20:12:09
 
 Ooops, should read 4.**4**.3, but the version shouldn't matter much anyway... ;-)
 
@@ -704,7 +704,7 @@ archive/issue_comments_080417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80417",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -719,16 +719,16 @@ I just ran the build under Sage 4.7.2.alpha1 on skynet/eno using `export SAGE_CH
 archive/issue_comments_080418.json:
 ```json
 {
-    "body": "Attachment [frobby_build_4.7.2.alpha1.eno.log](tarball://root/attachments/some-uuid/ticket8783/frobby_build_4.7.2.alpha1.eno.log) by benjaminfjones created at 2011-09-13 01:39:31\n\nfrobby build log with SAGE_CHECK=yes on skynet/eno",
+    "body": "Attachment [frobby_build_4.7.2.alpha1.eno.log](tarball://root/attachments/some-uuid/ticket8783/frobby_build_4.7.2.alpha1.eno.log) by @benjaminfjones created at 2011-09-13 01:39:31\n\nfrobby build log with SAGE_CHECK=yes on skynet/eno",
     "created_at": "2011-09-13T01:39:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80418",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [frobby_build_4.7.2.alpha1.eno.log](tarball://root/attachments/some-uuid/ticket8783/frobby_build_4.7.2.alpha1.eno.log) by benjaminfjones created at 2011-09-13 01:39:31
+Attachment [frobby_build_4.7.2.alpha1.eno.log](tarball://root/attachments/some-uuid/ticket8783/frobby_build_4.7.2.alpha1.eno.log) by @benjaminfjones created at 2011-09-13 01:39:31
 
 frobby build log with SAGE_CHECK=yes on skynet/eno
 
@@ -744,7 +744,7 @@ archive/issue_comments_080419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80419",
-    "user": "swenson"
+    "user": "@swenson"
 }
 ```
 
@@ -762,7 +762,7 @@ archive/issue_comments_080420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80420",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -780,7 +780,7 @@ archive/issue_comments_080421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8783#issuecomment-80421",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

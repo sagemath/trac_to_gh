@@ -3,7 +3,7 @@
 archive/issues_007191.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  wuthrich\n\nSee the following example:\n\n\n```\nsage: G = DirichletGroup(500, base_ring=CC)\nsage: G[0].is_primitive()\nFalse\nsage: G[1].is_primitive()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/home/bober/.sage/temp/bober/24617/_home_bober__sage_init_sage_0.py in <module>()\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_primitive(self)\n   1161             True\n   1162         \"\"\"\n-> 1163         return (self.conductor() == self.modulus())\n   1164 \n   1165     @cached_method\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    624         F = arith.factor(self.modulus())\n    625         if len(F) > 1:\n--> 626             return misc.mul([d.conductor() for d in self.decomposition()])\n    627         p = F[0][0]\n    628         # When p is odd, and x =/= 1, the conductor is the smallest p**r such that\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    620             20\n    621         \"\"\"\n--> 622         if self.modulus() == 1 or self.is_trivial():\n    623             return 1\n    624         F = arith.factor(self.modulus())\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_trivial(self)\n   1177             True\n   1178         \"\"\"\n-> 1179         return (self.element() == 0)\n   1180 \n   1181     def kernel(self):\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in element(self)\n   1531             M    = P._module\n   1532             dlog = P._zeta_dlog\n-> 1533             v = M([dlog[x] for x in self.values_on_gens()])\n   1534             self.__element = v\n   1535             return v\n\nKeyError: -1.00000000000000 - 2.63677968348475e-16*I\nsage: G[3].is_primitive()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/home/bober/.sage/temp/bober/24617/_home_bober__sage_init_sage_0.py in <module>()\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_primitive(self)\n   1161             True\n   1162         \"\"\"\n-> 1163         return (self.conductor() == self.modulus())\n   1164 \n   1165     @cached_method\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    624         F = arith.factor(self.modulus())\n    625         if len(F) > 1:\n--> 626             return misc.mul([d.conductor() for d in self.decomposition()])\n    627         p = F[0][0]\n    628         # When p is odd, and x =/= 1, the conductor is the smallest p**r such that\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    620             20\n    621         \"\"\"\n--> 622         if self.modulus() == 1 or self.is_trivial():\n    623             return 1\n    624         F = arith.factor(self.modulus())\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_trivial(self)\n   1177             True\n   1178         \"\"\"\n-> 1179         return (self.element() == 0)\n   1180 \n   1181     def kernel(self):\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in element(self)\n   1531             M    = P._module\n   1532             dlog = P._zeta_dlog\n-> 1533             v = M([dlog[x] for x in self.values_on_gens()])\n   1534             self.__element = v\n   1535             return v\n\nKeyError: -1.00000000000000 - 2.63677968348475e-16*I\nsage:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7191\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @categorie\n\nSee the following example:\n\n\n```\nsage: G = DirichletGroup(500, base_ring=CC)\nsage: G[0].is_primitive()\nFalse\nsage: G[1].is_primitive()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/home/bober/.sage/temp/bober/24617/_home_bober__sage_init_sage_0.py in <module>()\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_primitive(self)\n   1161             True\n   1162         \"\"\"\n-> 1163         return (self.conductor() == self.modulus())\n   1164 \n   1165     @cached_method\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    624         F = arith.factor(self.modulus())\n    625         if len(F) > 1:\n--> 626             return misc.mul([d.conductor() for d in self.decomposition()])\n    627         p = F[0][0]\n    628         # When p is odd, and x =/= 1, the conductor is the smallest p**r such that\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    620             20\n    621         \"\"\"\n--> 622         if self.modulus() == 1 or self.is_trivial():\n    623             return 1\n    624         F = arith.factor(self.modulus())\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_trivial(self)\n   1177             True\n   1178         \"\"\"\n-> 1179         return (self.element() == 0)\n   1180 \n   1181     def kernel(self):\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in element(self)\n   1531             M    = P._module\n   1532             dlog = P._zeta_dlog\n-> 1533             v = M([dlog[x] for x in self.values_on_gens()])\n   1534             self.__element = v\n   1535             return v\n\nKeyError: -1.00000000000000 - 2.63677968348475e-16*I\nsage: G[3].is_primitive()\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/home/bober/.sage/temp/bober/24617/_home_bober__sage_init_sage_0.py in <module>()\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_primitive(self)\n   1161             True\n   1162         \"\"\"\n-> 1163         return (self.conductor() == self.modulus())\n   1164 \n   1165     @cached_method\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    624         F = arith.factor(self.modulus())\n    625         if len(F) > 1:\n--> 626             return misc.mul([d.conductor() for d in self.decomposition()])\n    627         p = F[0][0]\n    628         # When p is odd, and x =/= 1, the conductor is the smallest p**r such that\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in conductor(self)\n    620             20\n    621         \"\"\"\n--> 622         if self.modulus() == 1 or self.is_trivial():\n    623             return 1\n    624         F = arith.factor(self.modulus())\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    240             return cache[key]\n    241         else:\n--> 242             cache[key] = self.f(self._instance, *args, **kwds)\n    243             return cache[key]\n    244 \n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in is_trivial(self)\n   1177             True\n   1178         \"\"\"\n-> 1179         return (self.element() == 0)\n   1180 \n   1181     def kernel(self):\n\n/home/bober/sage/local/lib/python2.6/site-packages/sage/modular/dirichlet.pyc in element(self)\n   1531             M    = P._module\n   1532             dlog = P._zeta_dlog\n-> 1533             v = M([dlog[x] for x in self.values_on_gens()])\n   1534             self.__element = v\n   1535             return v\n\nKeyError: -1.00000000000000 - 2.63677968348475e-16*I\nsage:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7191\n\n",
     "created_at": "2009-10-12T02:58:56Z",
     "labels": [
         "number theory",
@@ -17,9 +17,9 @@ archive/issues_007191.json:
     "user": "bober"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  wuthrich
+CC:  @categorie
 
 See the following example:
 
@@ -230,7 +230,7 @@ archive/issue_comments_059565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7191#issuecomment-59565",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_059566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7191#issuecomment-59566",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -347,7 +347,7 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_059571.json:
 ```json
 {
-    "body": "Changing assignee from was to bober.",
+    "body": "Changing assignee from @williamstein to bober.",
     "created_at": "2011-04-08T19:06:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
@@ -356,7 +356,7 @@ archive/issue_comments_059571.json:
 }
 ```
 
-Changing assignee from was to bober.
+Changing assignee from @williamstein to bober.
 
 
 
@@ -481,16 +481,16 @@ And now that I've put you back to work anyway, let's remove the C-style brackets
 archive/issue_comments_059577.json:
 ```json
 {
-    "body": "Attachment [trac_7191_v2.patch](tarball://root/attachments/some-uuid/ticket7191/trac_7191_v2.patch) by chapoton created at 2013-10-19 20:50:21",
+    "body": "Attachment [trac_7191_v2.patch](tarball://root/attachments/some-uuid/ticket7191/trac_7191_v2.patch) by @fchapoton created at 2013-10-19 20:50:21",
     "created_at": "2013-10-19T20:50:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7191#issuecomment-59577",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_7191_v2.patch](tarball://root/attachments/some-uuid/ticket7191/trac_7191_v2.patch) by chapoton created at 2013-10-19 20:50:21
+Attachment [trac_7191_v2.patch](tarball://root/attachments/some-uuid/ticket7191/trac_7191_v2.patch) by @fchapoton created at 2013-10-19 20:50:21
 
 
 
@@ -504,7 +504,7 @@ archive/issue_comments_059578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7191#issuecomment-59578",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -524,7 +524,7 @@ archive/issue_comments_059579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7191#issuecomment-59579",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_059580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7191#issuecomment-59580",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -562,7 +562,7 @@ archive/issue_comments_059581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7191#issuecomment-59581",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -598,7 +598,7 @@ archive/issue_comments_059583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7191#issuecomment-59583",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_059584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7191#issuecomment-59584",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

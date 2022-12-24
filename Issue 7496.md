@@ -3,7 +3,7 @@
 archive/issues_007496.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nWTF?\n\n\n```\nsage: var('1')\n1\nsage: var('1')+1\n1 + 1\nsage: expand((var('2')+var('2'))^2)\n4*2^2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7496\n\n",
+    "body": "Assignee: @burcin\n\nWTF?\n\n\n```\nsage: var('1')\n1\nsage: var('1')+1\n1 + 1\nsage: expand((var('2')+var('2'))^2)\n4*2^2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7496\n\n",
     "created_at": "2009-11-20T02:16:09Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_007496.json:
     "title": "symbolic variable names should be valid identifiers, or ridiculousness follows",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7496",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 WTF?
 
@@ -48,7 +48,7 @@ archive/issue_comments_063358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63358",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_063359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63359",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_063360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63360",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_063361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63361",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_063362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63362",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_063363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63363",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_063364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63364",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_063365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63365",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -251,16 +251,16 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_063366.json:
 ```json
 {
-    "body": "Attachment [trac_7496-reviewer.patch](tarball://root/attachments/some-uuid/ticket7496/trac_7496-reviewer.patch) by kcrisman created at 2011-06-24 03:08:43\n\nApply after initial patch",
+    "body": "Attachment [trac_7496-reviewer.patch](tarball://root/attachments/some-uuid/ticket7496/trac_7496-reviewer.patch) by @kcrisman created at 2011-06-24 03:08:43\n\nApply after initial patch",
     "created_at": "2011-06-24T03:08:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63366",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7496-reviewer.patch](tarball://root/attachments/some-uuid/ticket7496/trac_7496-reviewer.patch) by kcrisman created at 2011-06-24 03:08:43
+Attachment [trac_7496-reviewer.patch](tarball://root/attachments/some-uuid/ticket7496/trac_7496-reviewer.patch) by @kcrisman created at 2011-06-24 03:08:43
 
 Apply after initial patch
 
@@ -276,7 +276,7 @@ archive/issue_comments_063367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63367",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_063368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63368",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_063369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63369",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_063370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63370",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_063371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63371",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_063372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63372",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -441,7 +441,7 @@ archive/issue_comments_063373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63373",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -461,7 +461,7 @@ archive/issue_comments_063374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63374",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -479,7 +479,7 @@ archive/issue_comments_063375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63375",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_063376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63376",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_063377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63377",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -557,7 +557,7 @@ archive/issue_comments_063378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63378",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -570,16 +570,16 @@ Updated patch
 archive/issue_comments_063379.json:
 ```json
 {
-    "body": "Attachment [trac_7496-reviewer.2.patch](tarball://root/attachments/some-uuid/ticket7496/trac_7496-reviewer.2.patch) by vbraun created at 2011-06-24 15:33:16\n\nUpdated patch",
+    "body": "Attachment [trac_7496-reviewer.2.patch](tarball://root/attachments/some-uuid/ticket7496/trac_7496-reviewer.2.patch) by @vbraun created at 2011-06-24 15:33:16\n\nUpdated patch",
     "created_at": "2011-06-24T15:33:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63379",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_7496-reviewer.2.patch](tarball://root/attachments/some-uuid/ticket7496/trac_7496-reviewer.2.patch) by vbraun created at 2011-06-24 15:33:16
+Attachment [trac_7496-reviewer.2.patch](tarball://root/attachments/some-uuid/ticket7496/trac_7496-reviewer.2.patch) by @vbraun created at 2011-06-24 15:33:16
 
 Updated patch
 
@@ -595,7 +595,7 @@ archive/issue_comments_063380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63380",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_063381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63381",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_063382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63382",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -649,7 +649,7 @@ archive/issue_comments_063383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7496#issuecomment-63383",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

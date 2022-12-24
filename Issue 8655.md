@@ -87,7 +87,7 @@ archive/issue_comments_078538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78538",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -100,16 +100,16 @@ Everything applies cleanly and tests pass. I'll be willing to give this the thum
 archive/issue_comments_078539.json:
 ```json
 {
-    "body": "Changing assignee from jason, ncohen, rlm to rlm.",
+    "body": "Changing assignee from jason, ncohen, rlm to @rlmill.",
     "created_at": "2010-05-27T21:48:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78539",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from jason, ncohen, rlm to rlm.
+Changing assignee from jason, ncohen, rlm to @rlmill.
 
 
 
@@ -123,7 +123,7 @@ archive/issue_comments_078540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78540",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_078543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78543",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_078544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78544",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_078545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78545",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

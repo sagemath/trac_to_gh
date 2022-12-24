@@ -3,7 +3,7 @@
 archive/issues_006090.json:
 ```json
 {
-    "body": "Assignee: was\n\nAccording to the docs, if fill is a number c, then: \"a number c: Fill the area between the function and the horizontal line y = c.\"\n\nHowever, the above plot just fills to the x-axis.  My guess is that it is because bool(2)==True, so plot thinks we have fill=True?\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6090\n\n",
+    "body": "Assignee: @williamstein\n\nAccording to the docs, if fill is a number c, then: \"a number c: Fill the area between the function and the horizontal line y = c.\"\n\nHowever, the above plot just fills to the x-axis.  My guess is that it is because bool(2)==True, so plot thinks we have fill=True?\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6090\n\n",
     "created_at": "2009-05-20T05:27:43Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_006090.json:
     "title": "plot(x^2, (x, -2, 2), fill=2) does not match documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6090",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 According to the docs, if fill is a number c, then: "a number c: Fill the area between the function and the horizontal line y = c."
 
@@ -189,7 +189,7 @@ archive/issue_comments_048535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6090",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6090#issuecomment-48535",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

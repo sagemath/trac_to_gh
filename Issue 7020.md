@@ -14,7 +14,7 @@ archive/issues_007020.json:
     "title": "Fix 32-bit versus 64-bit boolean_function issue in crypto",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7020",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tbd
@@ -55,7 +55,7 @@ archive/issue_comments_058121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7020#issuecomment-58121",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_058124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7020#issuecomment-58124",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

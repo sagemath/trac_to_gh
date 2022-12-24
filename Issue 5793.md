@@ -3,7 +3,7 @@
 archive/issues_005793.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm\n\nAfter the discussion that has followed the following patch :\nhttp://trac.sagemath.org/sage_trac/ticket/5669\n\nI began to re-write the same functions using Cython. There is now no need of a spkg package, and I hope it will be faster this way (and prettier) ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5793\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nAfter the discussion that has followed the following patch :\nhttp://trac.sagemath.org/sage_trac/ticket/5669\n\nI began to re-write the same functions using Cython. There is now no need of a spkg package, and I hope it will be faster this way (and prettier) ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5793\n\n",
     "created_at": "2009-04-16T01:00:04Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_005793.json:
     "title": "[with patch, needs review] New algorithm for Max Clique in Graph class using Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5793",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm
+CC:  @rlmill
 
 After the discussion that has followed the following patch :
 http://trac.sagemath.org/sage_trac/ticket/5669
@@ -68,7 +68,7 @@ archive/issue_comments_045366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45366",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_045367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45367",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_045368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45368",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_045369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45369",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_045370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45370",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_045371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45371",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_045372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45372",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_045373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45373",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_045374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45374",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_045375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45375",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_045376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45376",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_045377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45377",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_045378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45378",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_045379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45379",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -344,16 +344,16 @@ New patch "cliquer.patch" containing all the modifications for cliquer since the
 archive/issue_comments_045380.json:
 ```json
 {
-    "body": "Attachment [cliquer.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer.patch) by ncohen created at 2009-07-17 19:26:48\n\nCliquer, from the beginning to the end, with the good directory's name !",
+    "body": "Attachment [cliquer.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer.patch) by @nathanncohen created at 2009-07-17 19:26:48\n\nCliquer, from the beginning to the end, with the good directory's name !",
     "created_at": "2009-07-17T19:26:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45380",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [cliquer.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer.patch) by ncohen created at 2009-07-17 19:26:48
+Attachment [cliquer.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer.patch) by @nathanncohen created at 2009-07-17 19:26:48
 
 Cliquer, from the beginning to the end, with the good directory's name !
 
@@ -369,7 +369,7 @@ archive/issue_comments_045381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45381",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_045382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45382",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_045383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45383",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -475,16 +475,16 @@ Second patch
 archive/issue_comments_045384.json:
 ```json
 {
-    "body": "Attachment [cliquer-2.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-2.patch) by ncohen created at 2009-07-20 11:24:06",
+    "body": "Attachment [cliquer-2.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-2.patch) by @nathanncohen created at 2009-07-20 11:24:06",
     "created_at": "2009-07-20T11:24:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45384",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [cliquer-2.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-2.patch) by ncohen created at 2009-07-20 11:24:06
+Attachment [cliquer-2.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-2.patch) by @nathanncohen created at 2009-07-20 11:24:06
 
 
 
@@ -498,7 +498,7 @@ archive/issue_comments_045385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45385",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -527,7 +527,7 @@ archive/issue_comments_045386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45386",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_045387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45387",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -576,7 +576,7 @@ archive/issue_comments_045388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45388",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -609,7 +609,7 @@ archive/issue_comments_045389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45389",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -630,16 +630,16 @@ in cliquer.pyx. I thought it may come from the difference between 0....n-1 and 1
 archive/issue_comments_045390.json:
 ```json
 {
-    "body": "Attachment [trac_5793_debug_only.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793_debug_only.patch) by rlm created at 2009-07-20 18:26:29\n\nDO NOT APPLY!",
+    "body": "Attachment [trac_5793_debug_only.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793_debug_only.patch) by @rlmill created at 2009-07-20 18:26:29\n\nDO NOT APPLY!",
     "created_at": "2009-07-20T18:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45390",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5793_debug_only.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793_debug_only.patch) by rlm created at 2009-07-20 18:26:29
+Attachment [trac_5793_debug_only.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793_debug_only.patch) by @rlmill created at 2009-07-20 18:26:29
 
 DO NOT APPLY!
 
@@ -655,7 +655,7 @@ archive/issue_comments_045391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45391",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -717,7 +717,7 @@ archive/issue_comments_045392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45392",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -735,7 +735,7 @@ archive/issue_comments_045393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45393",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -748,16 +748,16 @@ New patch !!
 archive/issue_comments_045394.json:
 ```json
 {
-    "body": "Attachment [cliquer-3.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-3.patch) by ncohen created at 2009-07-20 18:39:33",
+    "body": "Attachment [cliquer-3.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-3.patch) by @nathanncohen created at 2009-07-20 18:39:33",
     "created_at": "2009-07-20T18:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45394",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [cliquer-3.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-3.patch) by ncohen created at 2009-07-20 18:39:33
+Attachment [cliquer-3.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-3.patch) by @nathanncohen created at 2009-07-20 18:39:33
 
 
 
@@ -771,7 +771,7 @@ archive/issue_comments_045395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45395",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -830,7 +830,7 @@ archive/issue_comments_045396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45396",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -928,7 +928,7 @@ archive/issue_comments_045397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45397",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -945,16 +945,16 @@ Patch number 4 :
 archive/issue_comments_045398.json:
 ```json
 {
-    "body": "Attachment [cliquer-4.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-4.patch) by ncohen created at 2009-07-21 08:16:27",
+    "body": "Attachment [cliquer-4.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-4.patch) by @nathanncohen created at 2009-07-21 08:16:27",
     "created_at": "2009-07-21T08:16:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45398",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [cliquer-4.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-4.patch) by ncohen created at 2009-07-21 08:16:27
+Attachment [cliquer-4.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-4.patch) by @nathanncohen created at 2009-07-21 08:16:27
 
 
 
@@ -968,7 +968,7 @@ archive/issue_comments_045399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45399",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -988,7 +988,7 @@ archive/issue_comments_045400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45400",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -1007,16 +1007,16 @@ Thanks again !
 archive/issue_comments_045401.json:
 ```json
 {
-    "body": "Attachment [cliquer-4-rebased-sage.4.1.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-4-rebased-sage.4.1.patch) by rlm created at 2009-07-21 17:18:06",
+    "body": "Attachment [cliquer-4-rebased-sage.4.1.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-4-rebased-sage.4.1.patch) by @rlmill created at 2009-07-21 17:18:06",
     "created_at": "2009-07-21T17:18:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45401",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [cliquer-4-rebased-sage.4.1.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-4-rebased-sage.4.1.patch) by rlm created at 2009-07-21 17:18:06
+Attachment [cliquer-4-rebased-sage.4.1.patch](tarball://root/attachments/some-uuid/ticket5793/cliquer-4-rebased-sage.4.1.patch) by @rlmill created at 2009-07-21 17:18:06
 
 
 
@@ -1030,7 +1030,7 @@ archive/issue_comments_045402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45402",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1051,7 +1051,7 @@ archive/issue_comments_045403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45403",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1064,16 +1064,16 @@ Editing.
 archive/issue_comments_045404.json:
 ```json
 {
-    "body": "Attachment [trac_5793-cliquer-flattened.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793-cliquer-flattened.patch) by rlm created at 2009-07-21 18:57:50\n\nFlattened patch based on sage-4.1.",
+    "body": "Attachment [trac_5793-cliquer-flattened.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793-cliquer-flattened.patch) by @rlmill created at 2009-07-21 18:57:50\n\nFlattened patch based on sage-4.1.",
     "created_at": "2009-07-21T18:57:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45404",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5793-cliquer-flattened.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793-cliquer-flattened.patch) by rlm created at 2009-07-21 18:57:50
+Attachment [trac_5793-cliquer-flattened.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793-cliquer-flattened.patch) by @rlmill created at 2009-07-21 18:57:50
 
 Flattened patch based on sage-4.1.
 
@@ -1089,7 +1089,7 @@ archive/issue_comments_045405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45405",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1166,7 +1166,7 @@ archive/issue_comments_045407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45407",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1184,7 +1184,7 @@ archive/issue_comments_045408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45408",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -1211,7 +1211,7 @@ archive/issue_comments_045409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45409",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1224,16 +1224,16 @@ Apply on top of flattened patch
 archive/issue_comments_045410.json:
 ```json
 {
-    "body": "Attachment [trac_5793-part-6.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793-part-6.patch) by rlm created at 2009-07-23 17:37:50\n\nNathann,\n\nThanks for spotting that. The patch is updated!",
+    "body": "Attachment [trac_5793-part-6.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793-part-6.patch) by @rlmill created at 2009-07-23 17:37:50\n\nNathann,\n\nThanks for spotting that. The patch is updated!",
     "created_at": "2009-07-23T17:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45410",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5793-part-6.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793-part-6.patch) by rlm created at 2009-07-23 17:37:50
+Attachment [trac_5793-part-6.patch](tarball://root/attachments/some-uuid/ticket5793/trac_5793-part-6.patch) by @rlmill created at 2009-07-23 17:37:50
 
 Nathann,
 

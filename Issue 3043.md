@@ -3,7 +3,7 @@
 archive/issues_003043.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThe gfan SPKG.txt says:\n\n## License\n* GPL\n\nit does not say which version of the GPL it is.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3043\n\n",
+    "body": "Assignee: @malb\n\nThe gfan SPKG.txt says:\n\n## License\n* GPL\n\nit does not say which version of the GPL it is.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3043\n\n",
     "created_at": "2008-04-27T12:58:06Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_003043.json:
     "user": "broune"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 The gfan SPKG.txt says:
 
@@ -65,16 +65,16 @@ Michael
 archive/issue_comments_020955.json:
 ```json
 {
-    "body": "Remove assignee malb.",
+    "body": "Remove assignee @malb.",
     "created_at": "2008-06-03T14:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3043#issuecomment-20955",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Remove assignee malb.
+Remove assignee @malb.
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_020956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3043#issuecomment-20956",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

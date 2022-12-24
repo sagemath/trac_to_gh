@@ -3,7 +3,7 @@
 archive/issues_006995.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\nNotice that this plot is mostly white, but the white space represents two different values---one is above the top contour, the other is below the bottom contour.\n\nWe ought to make it so that stuff above/below the requested contours is shaded appropriately.\n\n\n```\nvar('x,y')\ncontour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6995\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nNotice that this plot is mostly white, but the white space represents two different values---one is above the top contour, the other is below the bottom contour.\n\nWe ought to make it so that stuff above/below the requested contours is shaded appropriately.\n\n\n```\nvar('x,y')\ncontour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6995\n\n",
     "created_at": "2009-09-22T21:32:13Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_006995.json:
     "title": "plotting specific contour lines should shade values above/below the extreme contour values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6995",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Notice that this plot is mostly white, but the white space represents two different values---one is above the top contour, the other is below the bottom contour.
 
@@ -49,7 +49,7 @@ archive/issue_comments_057856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6995#issuecomment-57856",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -62,16 +62,16 @@ I wonder if #5221 fixes this.  I don't have an up-to-date alpha to test this, th
 archive/issue_comments_057857.json:
 ```json
 {
-    "body": "Attachment [trac-6995-contour-extremes.patch](tarball://root/attachments/some-uuid/ticket6995/trac-6995-contour-extremes.patch) by jason created at 2009-11-10 17:28:26",
+    "body": "Attachment [trac-6995-contour-extremes.patch](tarball://root/attachments/some-uuid/ticket6995/trac-6995-contour-extremes.patch) by @jasongrout created at 2009-11-10 17:28:26",
     "created_at": "2009-11-10T17:28:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6995#issuecomment-57857",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6995-contour-extremes.patch](tarball://root/attachments/some-uuid/ticket6995/trac-6995-contour-extremes.patch) by jason created at 2009-11-10 17:28:26
+Attachment [trac-6995-contour-extremes.patch](tarball://root/attachments/some-uuid/ticket6995/trac-6995-contour-extremes.patch) by @jasongrout created at 2009-11-10 17:28:26
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_057858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6995#issuecomment-57858",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_057859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6995#issuecomment-57859",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_057860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6995#issuecomment-57860",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_057861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6995#issuecomment-57861",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

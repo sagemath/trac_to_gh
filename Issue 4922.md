@@ -14,7 +14,7 @@ archive/issues_004922.json:
     "title": "convert sage.monoids.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4922",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4922
 archive/issue_comments_037353.json:
 ```json
 {
-    "body": "Attachment [trac_4922.patch](tarball://root/attachments/some-uuid/ticket4922/trac_4922.patch) by mhansen created at 2009-01-02 02:20:14",
+    "body": "Attachment [trac_4922.patch](tarball://root/attachments/some-uuid/ticket4922/trac_4922.patch) by @mwhansen created at 2009-01-02 02:20:14",
     "created_at": "2009-01-02T02:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4922#issuecomment-37353",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4922.patch](tarball://root/attachments/some-uuid/ticket4922/trac_4922.patch) by mhansen created at 2009-01-02 02:20:14
+Attachment [trac_4922.patch](tarball://root/attachments/some-uuid/ticket4922/trac_4922.patch) by @mwhansen created at 2009-01-02 02:20:14
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_037354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4922",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4922#issuecomment-37354",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

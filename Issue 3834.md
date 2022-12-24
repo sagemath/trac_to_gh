@@ -14,7 +14,7 @@ archive/issues_003834.json:
     "title": "notebook -- massive bug in the notebook -- doing full text search starts a PYthon process for every single worksheet you have!!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3834",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3834
 archive/issue_comments_027262.json:
 ```json
 {
-    "body": "Attachment [sage-3834.patch](tarball://root/attachments/some-uuid/ticket3834/sage-3834.patch) by was created at 2008-08-13 07:39:29",
+    "body": "Attachment [sage-3834.patch](tarball://root/attachments/some-uuid/ticket3834/sage-3834.patch) by @williamstein created at 2008-08-13 07:39:29",
     "created_at": "2008-08-13T07:39:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3834#issuecomment-27262",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3834.patch](tarball://root/attachments/some-uuid/ticket3834/sage-3834.patch) by was created at 2008-08-13 07:39:29
+Attachment [sage-3834.patch](tarball://root/attachments/some-uuid/ticket3834/sage-3834.patch) by @williamstein created at 2008-08-13 07:39:29
 
 
 

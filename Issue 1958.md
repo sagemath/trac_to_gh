@@ -3,7 +3,7 @@
 archive/issues_001958.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThere were some annoying doctest failures in sage0.py in 2.10.1.rc1, which are due to weird issues with ANSI codes ending up in the result of eval(). This parses them to get the correct answer.\n\nI think there's possibly a deeper readline issue here, but that's mostly wild speculation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1958\n\n",
+    "body": "Assignee: @craigcitro\n\nThere were some annoying doctest failures in sage0.py in 2.10.1.rc1, which are due to weird issues with ANSI codes ending up in the result of eval(). This parses them to get the correct answer.\n\nI think there's possibly a deeper readline issue here, but that's mostly wild speculation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1958\n\n",
     "created_at": "2008-01-28T04:36:50Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001958.json:
     "title": "[with patch, needs review] fix problems with ANSI codes in sage0.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1958",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 There were some annoying doctest failures in sage0.py in 2.10.1.rc1, which are due to weird issues with ANSI codes ending up in the result of eval(). This parses them to get the correct answer.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1958
 archive/issue_comments_012640.json:
 ```json
 {
-    "body": "Attachment [1958-sage0-fix.patch](tarball://root/attachments/some-uuid/ticket1958/1958-sage0-fix.patch) by craigcitro created at 2008-01-28 04:39:53",
+    "body": "Attachment [1958-sage0-fix.patch](tarball://root/attachments/some-uuid/ticket1958/1958-sage0-fix.patch) by @craigcitro created at 2008-01-28 04:39:53",
     "created_at": "2008-01-28T04:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1958#issuecomment-12640",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [1958-sage0-fix.patch](tarball://root/attachments/some-uuid/ticket1958/1958-sage0-fix.patch) by craigcitro created at 2008-01-28 04:39:53
+Attachment [1958-sage0-fix.patch](tarball://root/attachments/some-uuid/ticket1958/1958-sage0-fix.patch) by @craigcitro created at 2008-01-28 04:39:53
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_012641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1958#issuecomment-12641",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -92,16 +92,16 @@ Michael
 archive/issue_comments_012643.json:
 ```json
 {
-    "body": "Attachment [1958-bandaid-v2.patch](tarball://root/attachments/some-uuid/ticket1958/1958-bandaid-v2.patch) by craigcitro created at 2008-01-28 06:50:16\n\nAttached a better band-aid for this, at wstein's suggestion.",
+    "body": "Attachment [1958-bandaid-v2.patch](tarball://root/attachments/some-uuid/ticket1958/1958-bandaid-v2.patch) by @craigcitro created at 2008-01-28 06:50:16\n\nAttached a better band-aid for this, at wstein's suggestion.",
     "created_at": "2008-01-28T06:50:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1958#issuecomment-12643",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [1958-bandaid-v2.patch](tarball://root/attachments/some-uuid/ticket1958/1958-bandaid-v2.patch) by craigcitro created at 2008-01-28 06:50:16
+Attachment [1958-bandaid-v2.patch](tarball://root/attachments/some-uuid/ticket1958/1958-bandaid-v2.patch) by @craigcitro created at 2008-01-28 06:50:16
 
 Attached a better band-aid for this, at wstein's suggestion.
 
@@ -117,7 +117,7 @@ archive/issue_comments_012644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1958#issuecomment-12644",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_012645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1958#issuecomment-12645",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

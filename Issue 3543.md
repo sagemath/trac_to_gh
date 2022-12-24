@@ -3,7 +3,7 @@
 archive/issues_003543.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason timdumol\n\nWe currently ship two copies of the jquery javascript library:\n\n* jQuery 1.2.6 - New Wave Javascript - $Rev: 5685 $ in devel/sage-main/sage/dsage/web/static/jquery.js\n* jQuery 1.2.3 - New Wave Javascript - $Rev: 4663 $ in data/extcode/notebook/javascript/jquery/jquery.js\n\nBut we should on ship one copy.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3543\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @TimDumol\n\nWe currently ship two copies of the jquery javascript library:\n\n* jQuery 1.2.6 - New Wave Javascript - $Rev: 5685 $ in devel/sage-main/sage/dsage/web/static/jquery.js\n* jQuery 1.2.3 - New Wave Javascript - $Rev: 4663 $ in data/extcode/notebook/javascript/jquery/jquery.js\n\nBut we should on ship one copy.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3543\n\n",
     "created_at": "2008-07-03T04:29:24Z",
     "labels": [
         "build",
@@ -17,9 +17,9 @@ archive/issues_003543.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason timdumol
+CC:  @jasongrout @TimDumol
 
 We currently ship two copies of the jquery javascript library:
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3543
 archive/issue_comments_025055.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2008-10-10T23:34:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25055",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_025056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25056",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_025057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25057",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -97,16 +97,16 @@ Changing status from assigned to new.
 archive/issue_comments_025058.json:
 ```json
 {
-    "body": "Remove assignee jason.",
+    "body": "Remove assignee @jasongrout.",
     "created_at": "2008-12-05T10:55:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25058",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Remove assignee jason.
+Remove assignee @jasongrout.
 
 
 
@@ -120,7 +120,7 @@ archive/issue_comments_025059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25059",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_025060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25060",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_025061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25061",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_025062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25062",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_025063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25063",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_025064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25064",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_025065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25065",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_025066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25066",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_025067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25067",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_025068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3543#issuecomment-25068",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

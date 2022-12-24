@@ -3,7 +3,7 @@
 archive/issues_005491.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mjo\n\nKeywords: sylow_subgoup PSL\n\nThis gives a syntax error:\n\nPSL(8,2).sylow_subgroup(7)\n\nI attach a file showing the details.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5491\n\n",
+    "body": "Assignee: tbd\n\nCC:  @orlitzky\n\nKeywords: sylow_subgoup PSL\n\nThis gives a syntax error:\n\nPSL(8,2).sylow_subgroup(7)\n\nI attach a file showing the details.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5491\n\n",
     "created_at": "2009-03-11T22:33:28Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005491.json:
     "title": "sylow_subgroup gives syntax error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5491",
-    "user": "dangrayson"
+    "user": "@DanGrayson"
 }
 ```
 Assignee: tbd
 
-CC:  mjo
+CC:  @orlitzky
 
 Keywords: sylow_subgoup PSL
 
@@ -64,7 +64,7 @@ archive/issue_comments_042646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42646",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -98,16 +98,16 @@ sage:
 archive/issue_comments_042647.json:
 ```json
 {
-    "body": "Changing assignee from tbd to AlexGhitza.",
+    "body": "Changing assignee from tbd to @aghitza.",
     "created_at": "2009-03-12T05:37:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42647",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to AlexGhitza.
+Changing assignee from tbd to @aghitza.
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_042648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42648",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_042649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42649",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_042650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42650",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_042651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42651",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_042652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42652",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -208,16 +208,16 @@ A doctest to confirm that this is fixed.
 archive/issue_comments_042653.json:
 ```json
 {
-    "body": "Attachment [sage-trac_5491.patch](tarball://root/attachments/some-uuid/ticket5491/sage-trac_5491.patch) by mjo created at 2012-01-07 03:09:13\n\nThis is already fixed. I created a doctest to test that,\n\n\n```\nPSL(10,2).sylow_subgroup(7)\n```\n\n\ndoes not crash.",
+    "body": "Attachment [sage-trac_5491.patch](tarball://root/attachments/some-uuid/ticket5491/sage-trac_5491.patch) by @orlitzky created at 2012-01-07 03:09:13\n\nThis is already fixed. I created a doctest to test that,\n\n\n```\nPSL(10,2).sylow_subgroup(7)\n```\n\n\ndoes not crash.",
     "created_at": "2012-01-07T03:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42653",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_5491.patch](tarball://root/attachments/some-uuid/ticket5491/sage-trac_5491.patch) by mjo created at 2012-01-07 03:09:13
+Attachment [sage-trac_5491.patch](tarball://root/attachments/some-uuid/ticket5491/sage-trac_5491.patch) by @orlitzky created at 2012-01-07 03:09:13
 
 This is already fixed. I created a doctest to test that,
 
@@ -241,7 +241,7 @@ archive/issue_comments_042654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42654",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_042655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42655",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_042656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42656",
-    "user": "dkrenn"
+    "user": "@dkrenn"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_042657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42657",
-    "user": "dkrenn"
+    "user": "@dkrenn"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_042658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42658",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_042659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5491#issuecomment-42659",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

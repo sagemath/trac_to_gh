@@ -3,7 +3,7 @@
 archive/issues_006801.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis gives a weird magma error:\n\n```\nmagma.eval(\"\"\"\nfunction t()\n    a:=1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7;\nend function;\n\"\"\")\n```\n\n\nThe same thing with a shorter line starting \"a:=\" does not fail. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6801\n\n",
+    "body": "Assignee: @williamstein\n\nThis gives a weird magma error:\n\n```\nmagma.eval(\"\"\"\nfunction t()\n    a:=1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7;\nend function;\n\"\"\")\n```\n\n\nThe same thing with a shorter line starting \"a:=\" does not fail. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6801\n\n",
     "created_at": "2009-08-22T10:22:58Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_006801.json:
     "title": "weird bug in magma.eval",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6801",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This gives a weird magma error:
 
@@ -48,7 +48,7 @@ archive/issue_comments_056003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56003",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_056004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56004",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_056005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56005",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_056008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56008",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_056009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56009",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_056010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56010",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

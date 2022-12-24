@@ -14,7 +14,7 @@ archive/issues_006580.json:
     "title": "ratpoints -- this must be fixed to build with gcc-3.4.x",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6580",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: rlmillster
@@ -37,7 +37,7 @@ archive/issue_comments_053717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6580#issuecomment-53717",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -50,16 +50,16 @@ If someone would like to point me to a machine with gcc-3.4.x, I'd gladly troubl
 archive/issue_comments_053718.json:
 ```json
 {
-    "body": "Changing assignee from rlmillster to rlm.",
+    "body": "Changing assignee from rlmillster to @rlmill.",
     "created_at": "2009-07-21T20:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6580#issuecomment-53718",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from rlmillster to rlm.
+Changing assignee from rlmillster to @rlmill.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_053719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6580#issuecomment-53719",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_053722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6580#issuecomment-53722",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_053723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6580#issuecomment-53723",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_053724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6580#issuecomment-53724",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_053725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6580#issuecomment-53725",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

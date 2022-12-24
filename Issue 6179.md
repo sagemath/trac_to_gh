@@ -14,7 +14,7 @@ archive/issues_006179.json:
     "title": "html -- doctest failure in sage-4.0.1.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6179",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -107,7 +107,7 @@ archive/issue_comments_049333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49333",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_049335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49335",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -182,16 +182,16 @@ Changing status from new to assigned.
 archive/issue_comments_049336.json:
 ```json
 {
-    "body": "Attachment [trac_6179.patch](tarball://root/attachments/some-uuid/ticket6179/trac_6179.patch) by mhansen created at 2009-06-05 21:21:49\n\nThis issue is that\n\n\n```\nsage: isinstance(True, int)\nTrue\nsage: isinstance(True, bool)\nTrue\nsage: isinstance(1, bool)\nFalse\n```\n\n\nso the output depended on the order in which items of the latex_table dict were iterated.  This is fixed by changing latex_table to a list so that bool comes first.",
+    "body": "Attachment [trac_6179.patch](tarball://root/attachments/some-uuid/ticket6179/trac_6179.patch) by @mwhansen created at 2009-06-05 21:21:49\n\nThis issue is that\n\n\n```\nsage: isinstance(True, int)\nTrue\nsage: isinstance(True, bool)\nTrue\nsage: isinstance(1, bool)\nFalse\n```\n\n\nso the output depended on the order in which items of the latex_table dict were iterated.  This is fixed by changing latex_table to a list so that bool comes first.",
     "created_at": "2009-06-05T21:21:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49336",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6179.patch](tarball://root/attachments/some-uuid/ticket6179/trac_6179.patch) by mhansen created at 2009-06-05 21:21:49
+Attachment [trac_6179.patch](tarball://root/attachments/some-uuid/ticket6179/trac_6179.patch) by @mwhansen created at 2009-06-05 21:21:49
 
 This issue is that
 
@@ -215,16 +215,16 @@ so the output depended on the order in which items of the latex_table dict were 
 archive/issue_comments_049337.json:
 ```json
 {
-    "body": "Changing assignee from tbd to mhansen.",
+    "body": "Changing assignee from tbd to @mwhansen.",
     "created_at": "2009-06-05T21:21:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49337",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tbd to mhansen.
+Changing assignee from tbd to @mwhansen.
 
 
 
@@ -238,7 +238,7 @@ archive/issue_comments_049338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49338",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_049339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49339",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_049340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49340",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_049341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49341",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -321,16 +321,16 @@ apply only this patch
 archive/issue_comments_049342.json:
 ```json
 {
-    "body": "Attachment [trac_6179_version2.patch](tarball://root/attachments/some-uuid/ticket6179/trac_6179_version2.patch) by mhansen created at 2009-06-05 22:23:21\n\nLooks good to me.",
+    "body": "Attachment [trac_6179_version2.patch](tarball://root/attachments/some-uuid/ticket6179/trac_6179_version2.patch) by @mwhansen created at 2009-06-05 22:23:21\n\nLooks good to me.",
     "created_at": "2009-06-05T22:23:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49342",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6179_version2.patch](tarball://root/attachments/some-uuid/ticket6179/trac_6179_version2.patch) by mhansen created at 2009-06-05 22:23:21
+Attachment [trac_6179_version2.patch](tarball://root/attachments/some-uuid/ticket6179/trac_6179_version2.patch) by @mwhansen created at 2009-06-05 22:23:21
 
 Looks good to me.
 
@@ -346,7 +346,7 @@ archive/issue_comments_049343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49343",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_049344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49344",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

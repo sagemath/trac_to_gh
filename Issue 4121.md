@@ -3,7 +3,7 @@
 archive/issues_004121.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4121\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4121\n\n",
     "created_at": "2008-09-14T23:32:27Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_004121.json:
     "title": "[with patch, needs review] correct the translation for automorphism groups of graphs with edge labels",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4121",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4121
 archive/issue_comments_029887.json:
 ```json
 {
-    "body": "Attachment [trac_4121-translation-edge-labels.patch](tarball://root/attachments/some-uuid/ticket4121/trac_4121-translation-edge-labels.patch) by mhansen created at 2008-09-15 00:00:12\n\nLooks good to me.  Good catch.",
+    "body": "Attachment [trac_4121-translation-edge-labels.patch](tarball://root/attachments/some-uuid/ticket4121/trac_4121-translation-edge-labels.patch) by @mwhansen created at 2008-09-15 00:00:12\n\nLooks good to me.  Good catch.",
     "created_at": "2008-09-15T00:00:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4121#issuecomment-29887",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4121-translation-edge-labels.patch](tarball://root/attachments/some-uuid/ticket4121/trac_4121-translation-edge-labels.patch) by mhansen created at 2008-09-15 00:00:12
+Attachment [trac_4121-translation-edge-labels.patch](tarball://root/attachments/some-uuid/ticket4121/trac_4121-translation-edge-labels.patch) by @mwhansen created at 2008-09-15 00:00:12
 
 Looks good to me.  Good catch.
 

@@ -14,7 +14,7 @@ archive/issues_005021.json:
     "title": "[with patch, needs review] add some jsMath extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5021",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: boothby
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5021
 archive/issue_comments_038247.json:
 ```json
 {
-    "body": "Attachment [5021.patch](tarball://root/attachments/some-uuid/ticket5021/5021.patch) by jason created at 2009-01-28 17:39:05\n\nLooks good.  I tested a command from each package and it seemed to work great.  Positive review.",
+    "body": "Attachment [5021.patch](tarball://root/attachments/some-uuid/ticket5021/5021.patch) by @jasongrout created at 2009-01-28 17:39:05\n\nLooks good.  I tested a command from each package and it seemed to work great.  Positive review.",
     "created_at": "2009-01-28T17:39:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5021#issuecomment-38247",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [5021.patch](tarball://root/attachments/some-uuid/ticket5021/5021.patch) by jason created at 2009-01-28 17:39:05
+Attachment [5021.patch](tarball://root/attachments/some-uuid/ticket5021/5021.patch) by @jasongrout created at 2009-01-28 17:39:05
 
 Looks good.  I tested a command from each package and it seemed to work great.  Positive review.
 

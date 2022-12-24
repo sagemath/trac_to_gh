@@ -3,7 +3,7 @@
 archive/issues_001396.json:
 ```json
 {
-    "body": "Assignee: malb\n\ne.g. Singular supports `redTail` and such. We should provide a somewhat unified interface for those (probably modelled after whatever Singular provides).\n\nIssue created by migration from https://trac.sagemath.org/ticket/1396\n\n",
+    "body": "Assignee: @malb\n\ne.g. Singular supports `redTail` and such. We should provide a somewhat unified interface for those (probably modelled after whatever Singular provides).\n\nIssue created by migration from https://trac.sagemath.org/ticket/1396\n\n",
     "created_at": "2007-12-04T15:39:11Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001396.json:
     "title": "Ideal.groebner_basis should accept keyword arguments for strategy parameters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1396",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 e.g. Singular supports `redTail` and such. We should provide a somewhat unified interface for those (probably modelled after whatever Singular provides).
 
@@ -37,7 +37,7 @@ archive/issue_comments_008973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8973",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_008974.json:
 ```json
 {
-    "body": "Changing assignee from malb to john_perry.",
+    "body": "Changing assignee from @malb to @johnperry-math.",
     "created_at": "2009-01-23T02:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8974",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from malb to john_perry.
+Changing assignee from @malb to @johnperry-math.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_008975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8975",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_008976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8976",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_008977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8977",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_008978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8978",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -162,16 +162,16 @@ archive/issue_comments_008978.json:
 archive/issue_comments_008979.json:
 ```json
 {
-    "body": "Attachment [singular_options.patch](tarball://root/attachments/some-uuid/ticket1396/singular_options.patch) by john_perry created at 2009-01-24 03:00:59",
+    "body": "Attachment [singular_options.patch](tarball://root/attachments/some-uuid/ticket1396/singular_options.patch) by @johnperry-math created at 2009-01-24 03:00:59",
     "created_at": "2009-01-24T03:00:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8979",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
-Attachment [singular_options.patch](tarball://root/attachments/some-uuid/ticket1396/singular_options.patch) by john_perry created at 2009-01-24 03:00:59
+Attachment [singular_options.patch](tarball://root/attachments/some-uuid/ticket1396/singular_options.patch) by @johnperry-math created at 2009-01-24 03:00:59
 
 
 
@@ -185,7 +185,7 @@ archive/issue_comments_008980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8980",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -198,16 +198,16 @@ Changing status from new to assigned.
 archive/issue_comments_008981.json:
 ```json
 {
-    "body": "Changing assignee from john_perry to malb.",
+    "body": "Changing assignee from @johnperry-math to @malb.",
     "created_at": "2009-01-24T03:04:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8981",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
-Changing assignee from john_perry to malb.
+Changing assignee from @johnperry-math to @malb.
 
 
 
@@ -221,7 +221,7 @@ archive/issue_comments_008982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8982",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_008983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8983",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_008984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8984",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_008985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8985",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -371,16 +371,16 @@ One remark: It turned out to be impossible to doctest `libSingular's` protocol o
 archive/issue_comments_008986.json:
 ```json
 {
-    "body": "Attachment [trac1396-singular_options.patch](tarball://root/attachments/some-uuid/ticket1396/trac1396-singular_options.patch) by malb created at 2010-07-15 21:25:24\n\nReplaces the first patch. Full support for all Singular options in both Singular and libSingular",
+    "body": "Attachment [trac1396-singular_options.patch](tarball://root/attachments/some-uuid/ticket1396/trac1396-singular_options.patch) by @malb created at 2010-07-15 21:25:24\n\nReplaces the first patch. Full support for all Singular options in both Singular and libSingular",
     "created_at": "2010-07-15T21:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8986",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac1396-singular_options.patch](tarball://root/attachments/some-uuid/ticket1396/trac1396-singular_options.patch) by malb created at 2010-07-15 21:25:24
+Attachment [trac1396-singular_options.patch](tarball://root/attachments/some-uuid/ticket1396/trac1396-singular_options.patch) by @malb created at 2010-07-15 21:25:24
 
 Replaces the first patch. Full support for all Singular options in both Singular and libSingular
 
@@ -396,7 +396,7 @@ archive/issue_comments_008987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8987",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_008988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8988",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_008989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8989",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -474,16 +474,16 @@ I'll ignore the rejects, refresh the patch, and attach the refreshed patch here.
 archive/issue_comments_008990.json:
 ```json
 {
-    "body": "Attachment [trac1396-singular_options.2.patch](tarball://root/attachments/some-uuid/ticket1396/trac1396-singular_options.2.patch) by mpatel created at 2010-07-21 01:19:31\n\nRebased for 4.5.2.alpha0 queue.  See comment 9.  Replaces all previous patches.",
+    "body": "Attachment [trac1396-singular_options.2.patch](tarball://root/attachments/some-uuid/ticket1396/trac1396-singular_options.2.patch) by @qed777 created at 2010-07-21 01:19:31\n\nRebased for 4.5.2.alpha0 queue.  See comment 9.  Replaces all previous patches.",
     "created_at": "2010-07-21T01:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8990",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac1396-singular_options.2.patch](tarball://root/attachments/some-uuid/ticket1396/trac1396-singular_options.2.patch) by mpatel created at 2010-07-21 01:19:31
+Attachment [trac1396-singular_options.2.patch](tarball://root/attachments/some-uuid/ticket1396/trac1396-singular_options.2.patch) by @qed777 created at 2010-07-21 01:19:31
 
 Rebased for 4.5.2.alpha0 queue.  See comment 9.  Replaces all previous patches.
 
@@ -499,7 +499,7 @@ archive/issue_comments_008991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8991",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_008992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8992",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_008993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8993",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_008994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8994",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -576,7 +576,7 @@ archive/issue_comments_008995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8995",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -622,7 +622,7 @@ archive/issue_comments_008997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8997",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -642,7 +642,7 @@ archive/issue_comments_008998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1396#issuecomment-8998",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

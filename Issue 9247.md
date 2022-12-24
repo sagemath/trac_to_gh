@@ -3,7 +3,7 @@
 archive/issues_009247.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  wuthrich\n\nThese are some of the things I did while working on my thesis.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9247\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @categorie\n\nThese are some of the things I did while working on my thesis.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9247\n\n",
     "created_at": "2010-06-15T20:32:55Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_009247.json:
     "title": "A collection of little improvements to elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9247",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  wuthrich
+CC:  @categorie
 
 These are some of the things I did while working on my thesis.
 
@@ -39,7 +39,7 @@ archive/issue_comments_087009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87009",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_087010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87010",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_087011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87011",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_087012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87012",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_087013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87013",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_087014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87014",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_087015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87015",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_087016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87016",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_087017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87017",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -363,16 +363,16 @@ Apply after previous
 archive/issue_comments_087018.json:
 ```json
 {
-    "body": "Attachment [trac_9247-saturation.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247-saturation.patch) by cremona created at 2010-06-25 06:17:32\n\nMy patch solves the issue with annoying output of warnings from saturation, since we now use a higher bound for saturation primes in finding the gens of an elliptic curve.  (This provides useful functionality as well as fixing this particular case).\n\nThe other issues remain, but I think that Robert could review my patch!",
+    "body": "Attachment [trac_9247-saturation.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247-saturation.patch) by @JohnCremona created at 2010-06-25 06:17:32\n\nMy patch solves the issue with annoying output of warnings from saturation, since we now use a higher bound for saturation primes in finding the gens of an elliptic curve.  (This provides useful functionality as well as fixing this particular case).\n\nThe other issues remain, but I think that Robert could review my patch!",
     "created_at": "2010-06-25T06:17:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87018",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9247-saturation.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247-saturation.patch) by cremona created at 2010-06-25 06:17:32
+Attachment [trac_9247-saturation.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247-saturation.patch) by @JohnCremona created at 2010-06-25 06:17:32
 
 My patch solves the issue with annoying output of warnings from saturation, since we now use a higher bound for saturation primes in finding the gens of an elliptic curve.  (This provides useful functionality as well as fixing this particular case).
 
@@ -390,7 +390,7 @@ archive/issue_comments_087019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87019",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_087020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87020",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_087021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87021",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_087022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87022",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_087023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87023",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_087024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87024",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -503,16 +503,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_087025.json:
 ```json
 {
-    "body": "Attachment [trac_9247.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247.patch) by rlm created at 2010-07-17 15:04:31\n\nOkay, I've changed the default for elliptic curve modular symbols back to what it originally was. Now all tests pass, and this ticket is ready for a review.",
+    "body": "Attachment [trac_9247.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247.patch) by @rlmill created at 2010-07-17 15:04:31\n\nOkay, I've changed the default for elliptic curve modular symbols back to what it originally was. Now all tests pass, and this ticket is ready for a review.",
     "created_at": "2010-07-17T15:04:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87025",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9247.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247.patch) by rlm created at 2010-07-17 15:04:31
+Attachment [trac_9247.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247.patch) by @rlmill created at 2010-07-17 15:04:31
 
 Okay, I've changed the default for elliptic curve modular symbols back to what it originally was. Now all tests pass, and this ticket is ready for a review.
 
@@ -528,7 +528,7 @@ archive/issue_comments_087026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87026",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_087027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87027",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_087028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87028",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -582,7 +582,7 @@ archive/issue_comments_087029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87029",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

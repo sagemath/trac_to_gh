@@ -3,7 +3,7 @@
 archive/issues_002656.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf you use \"sage -hg\" with arguments containing spaces, like:\n\n```\n  sage -hg commit -m \"This is my great new code.\"\n```\n\nthen the argument gets split up, so Mercurial sees something more like\n\n```\n  hg commit -m This is my great new code.\n```\n\n(and tries to check in files named is,my,great,new,code., with a commit message of \"This\").\n\nIssue created by migration from https://trac.sagemath.org/ticket/2656\n\n",
+    "body": "Assignee: @williamstein\n\nIf you use \"sage -hg\" with arguments containing spaces, like:\n\n```\n  sage -hg commit -m \"This is my great new code.\"\n```\n\nthen the argument gets split up, so Mercurial sees something more like\n\n```\n  hg commit -m This is my great new code.\n```\n\n(and tries to check in files named is,my,great,new,code., with a commit message of \"This\").\n\nIssue created by migration from https://trac.sagemath.org/ticket/2656\n\n",
     "created_at": "2008-03-23T17:40:40Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_002656.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If you use "sage -hg" with arguments containing spaces, like:
 
@@ -85,7 +85,7 @@ archive/issue_comments_018286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2656#issuecomment-18286",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_018287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2656#issuecomment-18287",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_018288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2656#issuecomment-18288",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

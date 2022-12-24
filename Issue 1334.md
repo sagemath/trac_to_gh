@@ -14,7 +14,7 @@ archive/issues_001334.json:
     "title": "Constant polynomial can't be converted to rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1334",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody

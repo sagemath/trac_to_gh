@@ -3,7 +3,7 @@
 archive/issues_008493.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  cremona\n\nKeywords: Galois groups\n\nThe attached patch contains some simple code which will return the element of the Galois group of a number field corresponding to complex conjugation (at a specified complex place, or the \"default\" complex embedding where that exists).\n\nThe code also uses embeddings into QQbar, so I've moved QQbar over to the new coercion model (a simple case of renaming the ``__call__`` method to ``_element_constructor_``).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8493\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nKeywords: Galois groups\n\nThe attached patch contains some simple code which will return the element of the Galois group of a number field corresponding to complex conjugation (at a specified complex place, or the \"default\" complex embedding where that exists).\n\nThe code also uses embeddings into QQbar, so I've moved QQbar over to the new coercion model (a simple case of renaming the ``__call__`` method to ``_element_constructor_``).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8493\n\n",
     "created_at": "2010-03-10T21:20:09Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_008493.json:
     "title": "Complex conjugation in Galois groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8493",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  cremona
+CC:  @JohnCremona
 
 Keywords: Galois groups
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8493
 archive/issue_comments_076596.json:
 ```json
 {
-    "body": "Attachment [trac_8493-complex_conjugation.patch](tarball://root/attachments/some-uuid/ticket8493/trac_8493-complex_conjugation.patch) by davidloeffler created at 2010-03-10 21:22:31",
+    "body": "Attachment [trac_8493-complex_conjugation.patch](tarball://root/attachments/some-uuid/ticket8493/trac_8493-complex_conjugation.patch) by @loefflerd created at 2010-03-10 21:22:31",
     "created_at": "2010-03-10T21:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76596",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8493-complex_conjugation.patch](tarball://root/attachments/some-uuid/ticket8493/trac_8493-complex_conjugation.patch) by davidloeffler created at 2010-03-10 21:22:31
+Attachment [trac_8493-complex_conjugation.patch](tarball://root/attachments/some-uuid/ticket8493/trac_8493-complex_conjugation.patch) by @loefflerd created at 2010-03-10 21:22:31
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_076597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76597",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_076598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76598",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_076599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76599",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_076600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76600",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_076601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76601",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -146,16 +146,16 @@ This doesn't apply cleanly; it apparently conflicts with a patch merged into Sag
 archive/issue_comments_076602.json:
 ```json
 {
-    "body": "Attachment [trac_8493-complex_conjugation.2.patch](tarball://root/attachments/some-uuid/ticket8493/trac_8493-complex_conjugation.2.patch) by davidloeffler created at 2010-04-17 09:55:07\n\nnow rebased against 4.4.alpha0",
+    "body": "Attachment [trac_8493-complex_conjugation.2.patch](tarball://root/attachments/some-uuid/ticket8493/trac_8493-complex_conjugation.2.patch) by @loefflerd created at 2010-04-17 09:55:07\n\nnow rebased against 4.4.alpha0",
     "created_at": "2010-04-17T09:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76602",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8493-complex_conjugation.2.patch](tarball://root/attachments/some-uuid/ticket8493/trac_8493-complex_conjugation.2.patch) by davidloeffler created at 2010-04-17 09:55:07
+Attachment [trac_8493-complex_conjugation.2.patch](tarball://root/attachments/some-uuid/ticket8493/trac_8493-complex_conjugation.2.patch) by @loefflerd created at 2010-04-17 09:55:07
 
 now rebased against 4.4.alpha0
 
@@ -171,7 +171,7 @@ archive/issue_comments_076603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76603",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_076604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76604",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_076605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76605",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_076606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76606",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_076607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76607",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_076608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76608",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_076609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8493#issuecomment-76609",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

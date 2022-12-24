@@ -3,7 +3,7 @@
 archive/issues_008673.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  abmasse\n\n\n```\nLe 10-02-23, Paul Zimmermann a \u00e9crit :\n\nsage: def f(n):\n   return n^2\n\nsage: w = Word(f,length=23)\n\nsage: w[24]\n576\n\nPaul\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8673\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\n\n```\nLe 10-02-23, Paul Zimmermann a \u00e9crit :\n\nsage: def f(n):\n   return n^2\n\nsage: w = Word(f,length=23)\n\nsage: w[24]\n576\n\nPaul\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8673\n\n",
     "created_at": "2010-04-11T14:00:57Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008673.json:
     "title": "No KeyErrror raised when it should for FiniteWord_callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8673",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  abmasse
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8673
 archive/issue_comments_078928.json:
 ```json
 {
-    "body": "Attachment [trac_8673_out_of_range_index-sl.patch](tarball://root/attachments/some-uuid/ticket8673/trac_8673_out_of_range_index-sl.patch) by slabbe created at 2011-02-18 19:57:43",
+    "body": "Attachment [trac_8673_out_of_range_index-sl.patch](tarball://root/attachments/some-uuid/ticket8673/trac_8673_out_of_range_index-sl.patch) by @seblabbe created at 2011-02-18 19:57:43",
     "created_at": "2011-02-18T19:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8673#issuecomment-78928",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8673_out_of_range_index-sl.patch](tarball://root/attachments/some-uuid/ticket8673/trac_8673_out_of_range_index-sl.patch) by slabbe created at 2011-02-18 19:57:43
+Attachment [trac_8673_out_of_range_index-sl.patch](tarball://root/attachments/some-uuid/ticket8673/trac_8673_out_of_range_index-sl.patch) by @seblabbe created at 2011-02-18 19:57:43
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_078929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8673#issuecomment-78929",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_078932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8673",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8673#issuecomment-78932",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

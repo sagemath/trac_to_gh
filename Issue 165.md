@@ -13,7 +13,7 @@ archive/issues_000165.json:
     "title": "pyrex weakref -- implement pyrex weakref support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/165",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -112,7 +112,7 @@ archive/issue_comments_000738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-738",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_000739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-739",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -175,16 +175,16 @@ Changing component from basic arithmetic to packages.
 archive/issue_comments_000740.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2006-11-30T19:09:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-740",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -198,7 +198,7 @@ archive/issue_comments_000741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-741",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_000742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-742",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_000743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-743",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_000744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/165#issuecomment-744",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

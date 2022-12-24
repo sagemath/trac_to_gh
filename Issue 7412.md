@@ -3,7 +3,7 @@
 archive/issues_007412.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  hivert\n\nHere is the problem:\n\n\n```\nsage: L = [0,0,0]\nsage: sage.combinat.permutation.from_lehmer_code( L )\n[1, 2, 3]\nsage: L\n[1, 1, 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7412\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @hivert\n\nHere is the problem:\n\n\n```\nsage: L = [0,0,0]\nsage: sage.combinat.permutation.from_lehmer_code( L )\n[1, 2, 3]\nsage: L\n[1, 1, 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7412\n\n",
     "created_at": "2009-11-08T16:32:34Z",
     "labels": [
         "combinatorics",
@@ -17,9 +17,9 @@ archive/issues_007412.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  hivert
+CC:  @hivert
 
 Here is the problem:
 
@@ -49,7 +49,7 @@ archive/issue_comments_062369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7412#issuecomment-62369",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_062373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7412#issuecomment-62373",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_062374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7412#issuecomment-62374",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001923.json:
 ```json
 {
-    "body": "Assignee: was\n\nWe ought to have a very obvious, easy-to-use switch to switch on or off pretty printing in the notebook.  This request is related to the updated work done in #1922 .\n\nSomething like a checkbox up by the menus would be great.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1923\n\n",
+    "body": "Assignee: @williamstein\n\nWe ought to have a very obvious, easy-to-use switch to switch on or off pretty printing in the notebook.  This request is related to the updated work done in #1922 .\n\nSomething like a checkbox up by the menus would be great.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1923\n\n",
     "created_at": "2008-01-25T08:15:33Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001923.json:
     "title": "Make an obvious checkbox or menu to switch on pretty printing in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1923",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 We ought to have a very obvious, easy-to-use switch to switch on or off pretty printing in the notebook.  This request is related to the updated work done in #1922 .
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1923
 archive/issue_comments_012192.json:
 ```json
 {
-    "body": "Changing assignee from was to boothby.",
+    "body": "Changing assignee from @williamstein to boothby.",
     "created_at": "2008-01-25T17:57:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1923#issuecomment-12192",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to boothby.
+Changing assignee from @williamstein to boothby.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_012193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1923#issuecomment-12193",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_012194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1923#issuecomment-12194",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -88,16 +88,16 @@ Apply this after the patch in #1922 (or change the executed command to "lprint()
 archive/issue_comments_012195.json:
 ```json
 {
-    "body": "Attachment [prettyprint-checkbox.patch](tarball://root/attachments/some-uuid/ticket1923/prettyprint-checkbox.patch) by jason created at 2008-01-25 19:34:38",
+    "body": "Attachment [prettyprint-checkbox.patch](tarball://root/attachments/some-uuid/ticket1923/prettyprint-checkbox.patch) by @jasongrout created at 2008-01-25 19:34:38",
     "created_at": "2008-01-25T19:34:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1923#issuecomment-12195",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [prettyprint-checkbox.patch](tarball://root/attachments/some-uuid/ticket1923/prettyprint-checkbox.patch) by jason created at 2008-01-25 19:34:38
+Attachment [prettyprint-checkbox.patch](tarball://root/attachments/some-uuid/ticket1923/prettyprint-checkbox.patch) by @jasongrout created at 2008-01-25 19:34:38
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_012196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1923#issuecomment-12196",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -133,16 +133,16 @@ William
 archive/issue_comments_012197.json:
 ```json
 {
-    "body": "Attachment [prettyprint-checkbox-updated.patch](tarball://root/attachments/some-uuid/ticket1923/prettyprint-checkbox-updated.patch) by jason created at 2008-01-28 15:22:07\n\nApply this instead of pretty-print-checkbox.patch",
+    "body": "Attachment [prettyprint-checkbox-updated.patch](tarball://root/attachments/some-uuid/ticket1923/prettyprint-checkbox-updated.patch) by @jasongrout created at 2008-01-28 15:22:07\n\nApply this instead of pretty-print-checkbox.patch",
     "created_at": "2008-01-28T15:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1923#issuecomment-12197",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [prettyprint-checkbox-updated.patch](tarball://root/attachments/some-uuid/ticket1923/prettyprint-checkbox-updated.patch) by jason created at 2008-01-28 15:22:07
+Attachment [prettyprint-checkbox-updated.patch](tarball://root/attachments/some-uuid/ticket1923/prettyprint-checkbox-updated.patch) by @jasongrout created at 2008-01-28 15:22:07
 
 Apply this instead of pretty-print-checkbox.patch
 
@@ -158,7 +158,7 @@ archive/issue_comments_012198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1923#issuecomment-12198",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_012199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1923#issuecomment-12199",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

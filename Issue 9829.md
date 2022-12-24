@@ -3,7 +3,7 @@
 archive/issues_009829.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  schymans jhpalmieri\n\nReported by Stan Schymanski on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/c814c8cf7bc7dd87):\n\n```\nWhen trying to change the code of a worksheet in a text editor (using\nthe edit button in the worksheet), I get the following error message\nwhenever I want to save changes:\n\nBad Request\nMaximum length of 102400 bytes exceeded.\n\nDoes anyone have an idea what could cause this and how this can be\ncircumvented?\n```\n\nDidier Deshommes replied:\n\n```\nMy guess is that the web server has a limit on the size of a POST\nrequest and that you have reached it. Typically this is 1024kb. The\nsolution is to increase this limit. I'm not sure how to do that for a \nwsgi application (which I assume sage is). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9830\n\n",
+    "body": "Assignee: jason, was\n\nCC:  schymans @jhpalmieri\n\nReported by Stan Schymanski on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/c814c8cf7bc7dd87):\n\n```\nWhen trying to change the code of a worksheet in a text editor (using\nthe edit button in the worksheet), I get the following error message\nwhenever I want to save changes:\n\nBad Request\nMaximum length of 102400 bytes exceeded.\n\nDoes anyone have an idea what could cause this and how this can be\ncircumvented?\n```\n\nDidier Deshommes replied:\n\n```\nMy guess is that the web server has a limit on the size of a POST\nrequest and that you have reached it. Typically this is 1024kb. The\nsolution is to increase this limit. I'm not sure how to do that for a \nwsgi application (which I assume sage is). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9830\n\n",
     "created_at": "2010-08-28T07:44:03Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009829.json:
     "title": "SageNB: Bad Request. Maximum length of 102400 bytes exceeded.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9829",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: jason, was
 
-CC:  schymans jhpalmieri
+CC:  schymans @jhpalmieri
 
 Reported by Stan Schymanski on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/c814c8cf7bc7dd87):
 
@@ -61,7 +61,7 @@ archive/issue_comments_097000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9829#issuecomment-97000",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_097002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9829#issuecomment-97002",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_097003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9829#issuecomment-97003",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_097004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9829#issuecomment-97004",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_097005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9829#issuecomment-97005",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

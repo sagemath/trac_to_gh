@@ -3,7 +3,7 @@
 archive/issues_009320.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  was cturner beankao pbruin cremona\n\nKeywords: root number\n\nRoot numbers for elliptic curves are currently only implemented via Pari (pari(E).ellrootno()) and only over the rational numbers.\n\nWe (Tim Dokchitser's group at Sage Days 22) intend to add the possibility to compute local and global root numbers for elliptic curves over number fields.  A first patch may not fully implement the case of additive reduction over primes dividing 2 or 3.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9320\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @williamstein cturner beankao @pjbruin @JohnCremona\n\nKeywords: root number\n\nRoot numbers for elliptic curves are currently only implemented via Pari (pari(E).ellrootno()) and only over the rational numbers.\n\nWe (Tim Dokchitser's group at Sage Days 22) intend to add the possibility to compute local and global root numbers for elliptic curves over number fields.  A first patch may not fully implement the case of additive reduction over primes dividing 2 or 3.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9320\n\n",
     "created_at": "2010-06-23T22:14:38Z",
     "labels": [
         "elliptic curves",
@@ -13,12 +13,12 @@ archive/issues_009320.json:
     "title": "Implement root numbers for elliptic curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9320",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  was cturner beankao pbruin cremona
+CC:  @williamstein cturner beankao @pjbruin @JohnCremona
 
 Keywords: root number
 
@@ -42,7 +42,7 @@ archive/issue_comments_087823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87823",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_087824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87824",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -73,16 +73,16 @@ I don't think it is possible to review this until the ticket it depends on (#933
 archive/issue_comments_087825.json:
 ```json
 {
-    "body": "Attachment [9320_root_numbers.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers.patch) by arminstraub created at 2010-08-13 00:32:26\n\nrequires #9334 and #9684",
+    "body": "Attachment [9320_root_numbers.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers.patch) by @arminstraub created at 2010-08-13 00:32:26\n\nrequires #9334 and #9684",
     "created_at": "2010-08-13T00:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87825",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
-Attachment [9320_root_numbers.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers.patch) by arminstraub created at 2010-08-13 00:32:26
+Attachment [9320_root_numbers.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers.patch) by @arminstraub created at 2010-08-13 00:32:26
 
 requires #9334 and #9684
 
@@ -98,7 +98,7 @@ archive/issue_comments_087826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87826",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_087827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87827",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_087828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87828",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -147,16 +147,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_087829.json:
 ```json
 {
-    "body": "Attachment [9320_root_numbers-rebase.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers-rebase.patch) by davidloeffler created at 2011-12-30 18:09:53\n\nTicket #9334 has been merged, so this is now ready for review. Sadly it fails to apply, due to a trivial conflict with #11749. I've uploaded a rebased patch, and checked that all doctests in sage/schemes/elliptic_curves pass with this applied. \n\nHowever, some (trivial but tedious) work is needed fixing the ReST formatting of the docstrings -- the indentation is all over the place, and :: should only be used to introduce example code blocks.",
+    "body": "Attachment [9320_root_numbers-rebase.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers-rebase.patch) by @loefflerd created at 2011-12-30 18:09:53\n\nTicket #9334 has been merged, so this is now ready for review. Sadly it fails to apply, due to a trivial conflict with #11749. I've uploaded a rebased patch, and checked that all doctests in sage/schemes/elliptic_curves pass with this applied. \n\nHowever, some (trivial but tedious) work is needed fixing the ReST formatting of the docstrings -- the indentation is all over the place, and :: should only be used to introduce example code blocks.",
     "created_at": "2011-12-30T18:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87829",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [9320_root_numbers-rebase.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers-rebase.patch) by davidloeffler created at 2011-12-30 18:09:53
+Attachment [9320_root_numbers-rebase.patch](tarball://root/attachments/some-uuid/ticket9320/9320_root_numbers-rebase.patch) by @loefflerd created at 2011-12-30 18:09:53
 
 Ticket #9334 has been merged, so this is now ready for review. Sadly it fails to apply, due to a trivial conflict with #11749. I've uploaded a rebased patch, and checked that all doctests in sage/schemes/elliptic_curves pass with this applied. 
 
@@ -212,7 +212,7 @@ archive/issue_comments_087832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87832",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_087833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87833",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_087834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87834",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_087835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87835",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_087836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87836",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_087838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87838",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_087839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87839",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_087840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87840",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_087841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87841",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_087842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87842",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_087845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87845",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_087846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87846",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_087847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87847",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -639,7 +639,7 @@ archive/issue_comments_087851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87851",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -657,7 +657,7 @@ archive/issue_comments_087852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87852",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -675,7 +675,7 @@ archive/issue_comments_087853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87853",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -693,7 +693,7 @@ archive/issue_comments_087854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87854",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -711,7 +711,7 @@ archive/issue_comments_087855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87855",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -729,7 +729,7 @@ archive/issue_comments_087856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87856",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -801,7 +801,7 @@ archive/issue_comments_087860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87860",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -819,7 +819,7 @@ archive/issue_comments_087861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87861",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -859,7 +859,7 @@ archive/issue_comments_087863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87863",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -932,7 +932,7 @@ archive/issue_comments_087867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87867",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -970,7 +970,7 @@ archive/issue_comments_087869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9320#issuecomment-87869",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

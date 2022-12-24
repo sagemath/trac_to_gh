@@ -14,7 +14,7 @@ archive/issues_001688.json:
     "title": "fortran -- give option to set the libgfortran.so",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1688",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jkantor
@@ -37,7 +37,7 @@ archive/issue_comments_010723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1688#issuecomment-10723",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

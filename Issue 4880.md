@@ -3,7 +3,7 @@
 archive/issues_004880.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  schilly\n\nMade vtk-5.2 more fashionable:\n\n* moved VTK and VTKData to src/\n\n* test for the installation of cmake-2.4.8 If it is not installed, we install it.\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.spkg](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.spkg)\n\nNo changes IN VTK and VTKData\n\nSomebody should look into spkg-install and make it work on OSX.\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/4880\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @haraldschilly\n\nMade vtk-5.2 more fashionable:\n\n* moved VTK and VTKData to src/\n\n* test for the installation of cmake-2.4.8 If it is not installed, we install it.\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.spkg](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/vtk-5.2.spkg)\n\nNo changes IN VTK and VTKData\n\nSomebody should look into spkg-install and make it work on OSX.\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/4880\n\n",
     "created_at": "2008-12-26T15:15:28Z",
     "labels": [
         "packages: experimental",
@@ -14,12 +14,12 @@ archive/issues_004880.json:
     "title": "[with spkg, needs review] Improved experimental spkg vtk-5.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4880",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: mabshoff
 
-CC:  schilly
+CC:  @haraldschilly
 
 Made vtk-5.2 more fashionable:
 
@@ -93,7 +93,7 @@ archive/issue_comments_036960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4880#issuecomment-36960",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_036961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4880#issuecomment-36961",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_036963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4880#issuecomment-36963",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

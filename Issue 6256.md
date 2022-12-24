@@ -3,7 +3,7 @@
 archive/issues_006256.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason\n\n\n```\nsage: var('kappa')\nkappa\nsage: x = sqrt(kappa)\nsage: F = exp(x)\nsage: F\ne^sqrt(kappa)\nsage: F/F\ne^(2*sqrt(kappa))\nsage: 1/F\ne^(-sqrt(kappa))\nsage: (1/F) * F\ne^(2*sqrt(kappa))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6256\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n\n```\nsage: var('kappa')\nkappa\nsage: x = sqrt(kappa)\nsage: F = exp(x)\nsage: F\ne^sqrt(kappa)\nsage: F/F\ne^(2*sqrt(kappa))\nsage: 1/F\ne^(-sqrt(kappa))\nsage: (1/F) * F\ne^(2*sqrt(kappa))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6256\n\n",
     "created_at": "2009-06-10T08:48:57Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_006256.json:
     "title": "bug in symbolic arithmetic with exp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6256",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason
+CC:  @jasongrout
 
 
 ```
@@ -54,7 +54,7 @@ archive/issue_comments_049970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6256#issuecomment-49970",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_049971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6256#issuecomment-49971",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -103,16 +103,16 @@ I'll post an updated spkg later together with a fix for #6244.
 archive/issue_comments_049972.json:
 ```json
 {
-    "body": "Attachment [trac_6256-pynac_mul_compare_tests.patch](tarball://root/attachments/some-uuid/ticket6256/trac_6256-pynac_mul_compare_tests.patch) by burcin created at 2009-06-14 20:51:47\n\ndoctests",
+    "body": "Attachment [trac_6256-pynac_mul_compare_tests.patch](tarball://root/attachments/some-uuid/ticket6256/trac_6256-pynac_mul_compare_tests.patch) by @burcin created at 2009-06-14 20:51:47\n\ndoctests",
     "created_at": "2009-06-14T20:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6256#issuecomment-49972",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6256-pynac_mul_compare_tests.patch](tarball://root/attachments/some-uuid/ticket6256/trac_6256-pynac_mul_compare_tests.patch) by burcin created at 2009-06-14 20:51:47
+Attachment [trac_6256-pynac_mul_compare_tests.patch](tarball://root/attachments/some-uuid/ticket6256/trac_6256-pynac_mul_compare_tests.patch) by @burcin created at 2009-06-14 20:51:47
 
 doctests
 
@@ -128,7 +128,7 @@ archive/issue_comments_049973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6256#issuecomment-49973",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_049974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6256#issuecomment-49974",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_049975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6256#issuecomment-49975",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

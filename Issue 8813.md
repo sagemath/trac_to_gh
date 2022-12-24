@@ -3,7 +3,7 @@
 archive/issues_008813.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/release/4.4.1/sage-4.4.1.alpha1/devel/sage/sage/symbolic/expression.pyx\", line 1284:\n    sage: (-t0)._is_negative()\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_40\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_expression.py\n         [34.8 s]\n\n-----------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8813\n\n",
+    "body": "Assignee: @burcin\n\n\n```\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/release/4.4.1/sage-4.4.1.alpha1/devel/sage/sage/symbolic/expression.pyx\", line 1284:\n    sage: (-t0)._is_negative()\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_40\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_expression.py\n         [34.8 s]\n\n-----------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8813\n\n",
     "created_at": "2010-04-29T00:33:47Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_008813.json:
     "title": "symbolic expression -- doctest failure in sage-4.4.1.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8813",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -55,7 +55,7 @@ archive/issue_comments_080897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8813#issuecomment-80897",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_080898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8813",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8813#issuecomment-80898",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

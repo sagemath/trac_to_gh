@@ -3,7 +3,7 @@
 archive/issues_009784.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jason\n\nUsing the Simple Server API I tried the following (after logging in of course):\n\nAt first I sent the code \"`sleep(10);5`\" to the server using the following URL:\n`http://localhost:port/simple/compute?session=theID&code=sleep(10)%3B5`\n\nThen, immediatly afterwards (this means command one was still computing) I sent the code \"`4+5`\" to the server using the URL\n`http://localhost:port/simple/compute?session=theID&code=4%2B5`\n\nThen, after 10 seconds, I looked at the results of both commands using\n`http://localhost:port/simple/status?session=theID&cell=2`\nand\n`http://localhost:port/simple/status?session=theID&cell=3`\n\nBoth cells had `5` as result, which should be only the result of the first\ncell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9785\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout\n\nUsing the Simple Server API I tried the following (after logging in of course):\n\nAt first I sent the code \"`sleep(10);5`\" to the server using the following URL:\n`http://localhost:port/simple/compute?session=theID&code=sleep(10)%3B5`\n\nThen, immediatly afterwards (this means command one was still computing) I sent the code \"`4+5`\" to the server using the URL\n`http://localhost:port/simple/compute?session=theID&code=4%2B5`\n\nThen, after 10 seconds, I looked at the results of both commands using\n`http://localhost:port/simple/status?session=theID&cell=2`\nand\n`http://localhost:port/simple/status?session=theID&cell=3`\n\nBoth cells had `5` as result, which should be only the result of the first\ncell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9785\n\n",
     "created_at": "2010-08-23T10:45:49Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_009784.json:
 ```
 Assignee: jason, was
 
-CC:  jason
+CC:  @jasongrout
 
 Using the Simple Server API I tried the following (after logging in of course):
 
@@ -73,7 +73,7 @@ archive/issue_comments_096037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9784#issuecomment-96037",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_096038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9784#issuecomment-96038",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_096039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9784#issuecomment-96039",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_096040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9784#issuecomment-96040",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_096041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9784#issuecomment-96041",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_096042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9784#issuecomment-96042",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_096043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9784#issuecomment-96043",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_096044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9784#issuecomment-96044",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_096045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9784#issuecomment-96045",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

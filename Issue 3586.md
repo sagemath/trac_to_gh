@@ -14,7 +14,7 @@ archive/issues_003586.json:
     "title": "twist.py -- doctest doesn't work on some machines due to ports not being open-able",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3586",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -175,7 +175,7 @@ archive/issue_comments_025313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3586#issuecomment-25313",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_025314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3586#issuecomment-25314",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -212,16 +212,16 @@ His suggestion about watching the server log sounds pretty painful to implement,
 archive/issue_comments_025315.json:
 ```json
 {
-    "body": "Attachment [sage-3586.patch](tarball://root/attachments/some-uuid/ticket3586/sage-3586.patch) by was created at 2008-07-07 18:54:06",
+    "body": "Attachment [sage-3586.patch](tarball://root/attachments/some-uuid/ticket3586/sage-3586.patch) by @williamstein created at 2008-07-07 18:54:06",
     "created_at": "2008-07-07T18:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3586#issuecomment-25315",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3586.patch](tarball://root/attachments/some-uuid/ticket3586/sage-3586.patch) by was created at 2008-07-07 18:54:06
+Attachment [sage-3586.patch](tarball://root/attachments/some-uuid/ticket3586/sage-3586.patch) by @williamstein created at 2008-07-07 18:54:06
 
 
 
@@ -235,7 +235,7 @@ archive/issue_comments_025316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3586#issuecomment-25316",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

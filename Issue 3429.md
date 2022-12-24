@@ -3,7 +3,7 @@
 archive/issues_003429.json:
 ```json
 {
-    "body": "Assignee: cpernet\n\nUpgrade linbox to 1.1.6 release.\nThe new release includes the sage interface, so the new spkg should shave out the old linbox_wrap.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3429\n\n",
+    "body": "Assignee: @ClementPernet\n\nUpgrade linbox to 1.1.6 release.\nThe new release includes the sage interface, so the new spkg should shave out the old linbox_wrap.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3429\n\n",
     "created_at": "2008-06-15T20:13:43Z",
     "labels": [
         "linbox",
@@ -14,10 +14,10 @@ archive/issues_003429.json:
     "title": "New linbox 1.1.6 spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3429",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
-Assignee: cpernet
+Assignee: @ClementPernet
 
 Upgrade linbox to 1.1.6 release.
 The new release includes the sage interface, so the new spkg should shave out the old linbox_wrap.
@@ -39,7 +39,7 @@ archive/issue_comments_024164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3429#issuecomment-24164",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_024165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3429#issuecomment-24165",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_024166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3429#issuecomment-24166",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -147,16 +147,16 @@ Merged in Sage 3.0.4.alpha1
 archive/issue_comments_024170.json:
 ```json
 {
-    "body": "Attachment [update_new_linbox_interface.patch](tarball://root/attachments/some-uuid/ticket3429/update_new_linbox_interface.patch) by cpernet created at 2008-06-27 21:14:54\n\nFix the new naming convention (include files and libraries) for linbox-1.1.6rc0",
+    "body": "Attachment [update_new_linbox_interface.patch](tarball://root/attachments/some-uuid/ticket3429/update_new_linbox_interface.patch) by @ClementPernet created at 2008-06-27 21:14:54\n\nFix the new naming convention (include files and libraries) for linbox-1.1.6rc0",
     "created_at": "2008-06-27T21:14:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3429#issuecomment-24170",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
-Attachment [update_new_linbox_interface.patch](tarball://root/attachments/some-uuid/ticket3429/update_new_linbox_interface.patch) by cpernet created at 2008-06-27 21:14:54
+Attachment [update_new_linbox_interface.patch](tarball://root/attachments/some-uuid/ticket3429/update_new_linbox_interface.patch) by @ClementPernet created at 2008-06-27 21:14:54
 
 Fix the new naming convention (include files and libraries) for linbox-1.1.6rc0
 
@@ -172,7 +172,7 @@ archive/issue_comments_024171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3429#issuecomment-24171",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_024172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3429#issuecomment-24172",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_024173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3429#issuecomment-24173",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_024174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3429#issuecomment-24174",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_024175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3429#issuecomment-24175",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 

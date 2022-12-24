@@ -3,7 +3,7 @@
 archive/issues_003587.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nCC:  burcin jason\n\nMaxima has good symbolic summation and it would be easy to wrap in the calculus package.\nWe are constantly getting stuff like this:\n\n```\n02:53 < nagyv> \ufeffhello! how can I represent a summation in sage? like sum_{x=1}^N x, I would like to take the limit as N goes to infinity\n03:02 < nagyv> what the heck is this? maxima.sum(1/x, x, 1, 2*N) gives 2*N/x! why?\n```\n\n\nProbably the only reason that this hasn't been done yet is the calculus rewrite by gfurnish.\nThat is *not* a good enough reason, and don't worry, the work won't be lost.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3587\n\n",
+    "body": "Assignee: @garyfurnish\n\nCC:  @burcin @jasongrout\n\nMaxima has good symbolic summation and it would be easy to wrap in the calculus package.\nWe are constantly getting stuff like this:\n\n```\n02:53 < nagyv> \ufeffhello! how can I represent a summation in sage? like sum_{x=1}^N x, I would like to take the limit as N goes to infinity\n03:02 < nagyv> what the heck is this? maxima.sum(1/x, x, 1, 2*N) gives 2*N/x! why?\n```\n\n\nProbably the only reason that this hasn't been done yet is the calculus rewrite by gfurnish.\nThat is *not* a good enough reason, and don't worry, the work won't be lost.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3587\n\n",
     "created_at": "2008-07-07T15:52:57Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_003587.json:
     "title": "calculus -- implement symbolic summation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3587",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
-CC:  burcin jason
+CC:  @burcin @jasongrout
 
 Maxima has good symbolic summation and it would be easy to wrap in the calculus package.
 We are constantly getting stuff like this:
@@ -49,7 +49,7 @@ archive/issue_comments_025318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25318",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_025319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25319",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -116,7 +116,7 @@ The attached patch adds a summation command which wraps simplify_sum from maxima
 archive/issue_comments_025322.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to whuss.",
+    "body": "Changing assignee from @garyfurnish to whuss.",
     "created_at": "2009-06-04T14:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
@@ -125,7 +125,7 @@ archive/issue_comments_025322.json:
 }
 ```
 
-Changing assignee from gfurnish to whuss.
+Changing assignee from @garyfurnish to whuss.
 
 
 
@@ -139,7 +139,7 @@ archive/issue_comments_025323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25323",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -244,16 +244,16 @@ The second patch (sum.patch) renames summation to sum. This currently overwrites
 archive/issue_comments_025326.json:
 ```json
 {
-    "body": "Attachment [sum.patch](tarball://root/attachments/some-uuid/ticket3587/sum.patch) by mhansen created at 2009-06-20 01:52:06",
+    "body": "Attachment [sum.patch](tarball://root/attachments/some-uuid/ticket3587/sum.patch) by @mwhansen created at 2009-06-20 01:52:06",
     "created_at": "2009-06-20T01:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25326",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sum.patch](tarball://root/attachments/some-uuid/ticket3587/sum.patch) by mhansen created at 2009-06-20 01:52:06
+Attachment [sum.patch](tarball://root/attachments/some-uuid/ticket3587/sum.patch) by @mwhansen created at 2009-06-20 01:52:06
 
 
 
@@ -267,7 +267,7 @@ archive/issue_comments_025327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25327",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_025328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25328",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -318,16 +318,16 @@ Indefinite sums seem to be fine. In this case, we could check the inputs, and ra
 archive/issue_comments_025329.json:
 ```json
 {
-    "body": "Attachment [trac_3587-maxima_simplify_sum.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-maxima_simplify_sum.patch) by burcin created at 2009-06-23 21:39:50",
+    "body": "Attachment [trac_3587-maxima_simplify_sum.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-maxima_simplify_sum.patch) by @burcin created at 2009-06-23 21:39:50",
     "created_at": "2009-06-23T21:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25329",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_3587-maxima_simplify_sum.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-maxima_simplify_sum.patch) by burcin created at 2009-06-23 21:39:50
+Attachment [trac_3587-maxima_simplify_sum.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-maxima_simplify_sum.patch) by @burcin created at 2009-06-23 21:39:50
 
 
 
@@ -341,7 +341,7 @@ archive/issue_comments_025330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25330",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_025332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25332",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_025333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25333",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_025334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25334",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_025335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25335",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -520,7 +520,7 @@ archive/issue_comments_025336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25336",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_025337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25337",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -607,7 +607,7 @@ archive/issue_comments_025338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25338",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -645,16 +645,16 @@ fixes the doctest errors reported by William
 archive/issue_comments_025340.json:
 ```json
 {
-    "body": "Attachment [trac_3587-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-fix_doctests.patch) by kcrisman created at 2009-09-14 14:10:38\n\nOkay, I fixed those tests; there were identical ones elsewhere I did fix but functional.py escaped me.  I also think I fixed the note issue.  \n\nSince #6197 is merged I also used the correct algorithm=maxima behavior.  I don't have Maple so I didn't feel comfortable changing the Maple behavior, but it would be easy to open a new ticket for that if the appropriate algorithm worked, which it certainly seems like it should post-#6197.\n\nI'm going to assume that the builtin sum is indeed okay - great!",
+    "body": "Attachment [trac_3587-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-fix_doctests.patch) by @kcrisman created at 2009-09-14 14:10:38\n\nOkay, I fixed those tests; there were identical ones elsewhere I did fix but functional.py escaped me.  I also think I fixed the note issue.  \n\nSince #6197 is merged I also used the correct algorithm=maxima behavior.  I don't have Maple so I didn't feel comfortable changing the Maple behavior, but it would be easy to open a new ticket for that if the appropriate algorithm worked, which it certainly seems like it should post-#6197.\n\nI'm going to assume that the builtin sum is indeed okay - great!",
     "created_at": "2009-09-14T14:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25340",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_3587-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-fix_doctests.patch) by kcrisman created at 2009-09-14 14:10:38
+Attachment [trac_3587-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-fix_doctests.patch) by @kcrisman created at 2009-09-14 14:10:38
 
 Okay, I fixed those tests; there were identical ones elsewhere I did fix but functional.py escaped me.  I also think I fixed the note issue.  
 
@@ -674,7 +674,7 @@ archive/issue_comments_025341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25341",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -733,7 +733,7 @@ archive/issue_comments_025344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25344",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -751,7 +751,7 @@ archive/issue_comments_025345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25345",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -780,7 +780,7 @@ archive/issue_comments_025346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25346",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -798,7 +798,7 @@ archive/issue_comments_025347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25347",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -816,7 +816,7 @@ archive/issue_comments_025348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25348",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -829,16 +829,16 @@ Based on 4.2.1, apply only this patch
 archive/issue_comments_025349.json:
 ```json
 {
-    "body": "Attachment [trac_3587-maxima_simplify_sum-with-maxima-5-19-1.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-maxima_simplify_sum-with-maxima-5-19-1.patch) by kcrisman created at 2009-11-17 20:13:41\n\nPlease someone (beyond myself and the author) review this!  It would be perfect for the big 4.3 release coming up!",
+    "body": "Attachment [trac_3587-maxima_simplify_sum-with-maxima-5-19-1.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-maxima_simplify_sum-with-maxima-5-19-1.patch) by @kcrisman created at 2009-11-17 20:13:41\n\nPlease someone (beyond myself and the author) review this!  It would be perfect for the big 4.3 release coming up!",
     "created_at": "2009-11-17T20:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25349",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_3587-maxima_simplify_sum-with-maxima-5-19-1.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-maxima_simplify_sum-with-maxima-5-19-1.patch) by kcrisman created at 2009-11-17 20:13:41
+Attachment [trac_3587-maxima_simplify_sum-with-maxima-5-19-1.patch](tarball://root/attachments/some-uuid/ticket3587/trac_3587-maxima_simplify_sum-with-maxima-5-19-1.patch) by @kcrisman created at 2009-11-17 20:13:41
 
 Please someone (beyond myself and the author) review this!  It would be perfect for the big 4.3 release coming up!
 
@@ -854,7 +854,7 @@ archive/issue_comments_025350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25350",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -872,7 +872,7 @@ archive/issue_comments_025351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3587#issuecomment-25351",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

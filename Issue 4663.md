@@ -3,7 +3,7 @@
 archive/issues_004663.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nAfter the cleanup from #4661 there are still various commented out Extensions in module_list. While some of those will come in potentially useful audit the files and remove potentially dead and terrible code while keeping around the good bits for resurrection. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4663\n\n",
+    "body": "Assignee: @craigcitro\n\nAfter the cleanup from #4661 there are still various commented out Extensions in module_list. While some of those will come in potentially useful audit the files and remove potentially dead and terrible code while keeping around the good bits for resurrection. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4663\n\n",
     "created_at": "2008-11-30T09:34:39Z",
     "labels": [
         "build",
@@ -17,7 +17,7 @@ archive/issues_004663.json:
     "user": "mabshoff"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 After the cleanup from #4661 there are still various commented out Extensions in module_list. While some of those will come in potentially useful audit the files and remove potentially dead and terrible code while keeping around the good bits for resurrection. 
 
@@ -41,7 +41,7 @@ archive/issue_comments_035108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4663#issuecomment-35108",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_035109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4663#issuecomment-35109",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_035110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4663#issuecomment-35110",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006830.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  robharron\n\nKeywords: ideal, hecke\n\nAdded code for ideals of a Hecke algebra.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6830\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @rharron\n\nKeywords: ideal, hecke\n\nAdded code for ideals of a Hecke algebra.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6830\n\n",
     "created_at": "2009-08-26T22:20:44Z",
     "labels": [
         "modular forms",
@@ -16,9 +16,9 @@ archive/issues_006830.json:
     "user": "wakep"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  robharron
+CC:  @rharron
 
 Keywords: ideal, hecke
 
@@ -76,7 +76,7 @@ archive/issue_comments_056331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6830#issuecomment-56331",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_056332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6830#issuecomment-56332",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_056333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6830#issuecomment-56333",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_056334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6830#issuecomment-56334",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_056335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6830#issuecomment-56335",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_056336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6830#issuecomment-56336",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

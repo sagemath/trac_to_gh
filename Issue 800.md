@@ -3,7 +3,7 @@
 archive/issues_000800.json:
 ```json
 {
-    "body": "Assignee: tornaria\n\nGonzalo brought up the following very good idea: one should rewrite the code for _sig_on and _sig_off to keep a counter of how many _sig_on calls it has seen, and run less than the full amount of code (i.e. nothing involving system calls) if we've already had a _sig_on. Then _sig_off can just decrement the counter, and only do the \"real work\" if it's being decremented to zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/800\n\n",
+    "body": "Assignee: @tornaria\n\nGonzalo brought up the following very good idea: one should rewrite the code for _sig_on and _sig_off to keep a counter of how many _sig_on calls it has seen, and run less than the full amount of code (i.e. nothing involving system calls) if we've already had a _sig_on. Then _sig_off can just decrement the counter, and only do the \"real work\" if it's being decremented to zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/800\n\n",
     "created_at": "2007-10-03T06:35:24Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000800.json:
     "title": "make _sig_on and _sig_off faster when stacked",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/800",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: tornaria
+Assignee: @tornaria
 
 Gonzalo brought up the following very good idea: one should rewrite the code for _sig_on and _sig_off to keep a counter of how many _sig_on calls it has seen, and run less than the full amount of code (i.e. nothing involving system calls) if we've already had a _sig_on. Then _sig_off can just decrement the counter, and only do the "real work" if it's being decremented to zero.
 
@@ -37,7 +37,7 @@ archive/issue_comments_004825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/800#issuecomment-4825",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_004826.json:
 ```json
 {
-    "body": "Changing assignee from tornaria to malb.",
+    "body": "Changing assignee from @tornaria to @malb.",
     "created_at": "2009-01-25T19:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/800#issuecomment-4826",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from tornaria to malb.
+Changing assignee from @tornaria to @malb.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_004827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/800#issuecomment-4827",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_004828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/800#issuecomment-4828",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_004829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/800#issuecomment-4829",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_004830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/800#issuecomment-4830",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_004833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/800#issuecomment-4833",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

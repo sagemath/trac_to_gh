@@ -14,7 +14,7 @@ archive/issues_006257.json:
     "title": "Minor plot doc issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6257",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_049976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6257#issuecomment-49976",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -50,16 +50,16 @@ Based on 4.0.rc0 but should work with 4.0.1
 archive/issue_comments_049977.json:
 ```json
 {
-    "body": "Attachment [trac_6257.patch](tarball://root/attachments/some-uuid/ticket6257/trac_6257.patch) by kcrisman created at 2009-06-10 13:38:28\n\nThis patch also addresses several very minor documentation issues in the same file.",
+    "body": "Attachment [trac_6257.patch](tarball://root/attachments/some-uuid/ticket6257/trac_6257.patch) by @kcrisman created at 2009-06-10 13:38:28\n\nThis patch also addresses several very minor documentation issues in the same file.",
     "created_at": "2009-06-10T13:38:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6257#issuecomment-49977",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6257.patch](tarball://root/attachments/some-uuid/ticket6257/trac_6257.patch) by kcrisman created at 2009-06-10 13:38:28
+Attachment [trac_6257.patch](tarball://root/attachments/some-uuid/ticket6257/trac_6257.patch) by @kcrisman created at 2009-06-10 13:38:28
 
 This patch also addresses several very minor documentation issues in the same file.
 
@@ -75,7 +75,7 @@ archive/issue_comments_049978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6257#issuecomment-49978",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_049979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6257#issuecomment-49979",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_049980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6257#issuecomment-49980",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

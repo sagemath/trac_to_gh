@@ -3,7 +3,7 @@
 archive/issues_003679.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\nAllows to select a range using a slider with two handles. Includes a jQuery patch.\n\nDepends on #3599 and #3636.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3679\n\n",
+    "body": "Assignee: @itolkov\n\nAllows to select a range using a slider with two handles. Includes a jQuery patch.\n\nDepends on #3599 and #3636.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3679\n\n",
     "created_at": "2008-07-19T06:27:37Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_003679.json:
     "title": "Range Slider Control",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3679",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
 Allows to select a range using a slider with two handles. Includes a jQuery patch.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3679
 archive/issue_comments_026050.json:
 ```json
 {
-    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3679/sage.patch) by itolkov created at 2008-07-19 06:28:08",
+    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3679/sage.patch) by @itolkov created at 2008-07-19 06:28:08",
     "created_at": "2008-07-19T06:28:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3679#issuecomment-26050",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
-Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3679/sage.patch) by itolkov created at 2008-07-19 06:28:08
+Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3679/sage.patch) by @itolkov created at 2008-07-19 06:28:08
 
 
 
@@ -52,16 +52,16 @@ Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3679/sage.pat
 archive/issue_comments_026051.json:
 ```json
 {
-    "body": "Attachment [extcode.patch](tarball://root/attachments/some-uuid/ticket3679/extcode.patch) by itolkov created at 2008-07-19 06:29:20",
+    "body": "Attachment [extcode.patch](tarball://root/attachments/some-uuid/ticket3679/extcode.patch) by @itolkov created at 2008-07-19 06:29:20",
     "created_at": "2008-07-19T06:29:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3679#issuecomment-26051",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
-Attachment [extcode.patch](tarball://root/attachments/some-uuid/ticket3679/extcode.patch) by itolkov created at 2008-07-19 06:29:20
+Attachment [extcode.patch](tarball://root/attachments/some-uuid/ticket3679/extcode.patch) by @itolkov created at 2008-07-19 06:29:20
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_026052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3679#issuecomment-26052",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_026053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3679#issuecomment-26053",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_026054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3679#issuecomment-26054",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -142,16 +142,16 @@ def _(t1=range_slider(2, 5, 1/5, (3,4), 'alpha')):
 archive/issue_comments_026055.json:
 ```json
 {
-    "body": "Attachment [sage_post1.patch](tarball://root/attachments/some-uuid/ticket3679/sage_post1.patch) by itolkov created at 2008-07-29 20:33:04\n\nAppend to sage.patch",
+    "body": "Attachment [sage_post1.patch](tarball://root/attachments/some-uuid/ticket3679/sage_post1.patch) by @itolkov created at 2008-07-29 20:33:04\n\nAppend to sage.patch",
     "created_at": "2008-07-29T20:33:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3679#issuecomment-26055",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
-Attachment [sage_post1.patch](tarball://root/attachments/some-uuid/ticket3679/sage_post1.patch) by itolkov created at 2008-07-29 20:33:04
+Attachment [sage_post1.patch](tarball://root/attachments/some-uuid/ticket3679/sage_post1.patch) by @itolkov created at 2008-07-29 20:33:04
 
 Append to sage.patch
 
@@ -167,7 +167,7 @@ archive/issue_comments_026056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3679#issuecomment-26056",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_026057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3679#issuecomment-26057",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_026061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3679#issuecomment-26061",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

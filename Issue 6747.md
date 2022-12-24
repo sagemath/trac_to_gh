@@ -3,7 +3,7 @@
 archive/issues_006747.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  sage-combinat jason myurko\n\nWhen one plots a tree with  `G.plot(layout='tree')`, the result is ugly.  For one thing, a tree plot should never have crossing lines.  I have code that makes a nice tree plot in nearly-linear time, which should be included in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6747\n\n",
+    "body": "Assignee: boothby\n\nCC:  sage-combinat @jasongrout myurko\n\nWhen one plots a tree with  `G.plot(layout='tree')`, the result is ugly.  For one thing, a tree plot should never have crossing lines.  I have code that makes a nice tree plot in nearly-linear time, which should be included in Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6747\n\n",
     "created_at": "2009-08-14T18:02:05Z",
     "labels": [
         "graph theory",
@@ -19,7 +19,7 @@ archive/issues_006747.json:
 ```
 Assignee: boothby
 
-CC:  sage-combinat jason myurko
+CC:  sage-combinat @jasongrout myurko
 
 When one plots a tree with  `G.plot(layout='tree')`, the result is ugly.  For one thing, a tree plot should never have crossing lines.  I have code that makes a nice tree plot in nearly-linear time, which should be included in Sage.
 
@@ -77,7 +77,7 @@ archive/issue_comments_055506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6747#issuecomment-55506",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_055508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6747#issuecomment-55508",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_055510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6747#issuecomment-55510",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -180,16 +180,16 @@ Nathann
 archive/issue_comments_055511.json:
 ```json
 {
-    "body": "Attachment [trac_6747-reviewer.patch](tarball://root/attachments/some-uuid/ticket6747/trac_6747-reviewer.patch) by nthiery created at 2009-10-14 10:53:50\n\nThanks much for improving the layout of trees!\n\nPlease have a look at #7004, which also started splitting the layout algorithms in different methods. So we need to decide on a naming convention. \n\nThen I guess this patch can get in, and #7400 be rebased on it.",
+    "body": "Attachment [trac_6747-reviewer.patch](tarball://root/attachments/some-uuid/ticket6747/trac_6747-reviewer.patch) by @nthiery created at 2009-10-14 10:53:50\n\nThanks much for improving the layout of trees!\n\nPlease have a look at #7004, which also started splitting the layout algorithms in different methods. So we need to decide on a naming convention. \n\nThen I guess this patch can get in, and #7400 be rebased on it.",
     "created_at": "2009-10-14T10:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6747#issuecomment-55511",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_6747-reviewer.patch](tarball://root/attachments/some-uuid/ticket6747/trac_6747-reviewer.patch) by nthiery created at 2009-10-14 10:53:50
+Attachment [trac_6747-reviewer.patch](tarball://root/attachments/some-uuid/ticket6747/trac_6747-reviewer.patch) by @nthiery created at 2009-10-14 10:53:50
 
 Thanks much for improving the layout of trees!
 
@@ -209,7 +209,7 @@ archive/issue_comments_055512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6747#issuecomment-55512",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_055515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6747#issuecomment-55515",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000598.json:
     "title": "implement substitute for monoids",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/598",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -77,7 +77,7 @@ archive/issue_comments_003087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/598#issuecomment-3087",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_003088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/598#issuecomment-3088",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing status from new to assigned.
 archive/issue_comments_003089.json:
 ```json
 {
-    "body": "Changing assignee from jbmohler to mhansen.",
+    "body": "Changing assignee from jbmohler to @mwhansen.",
     "created_at": "2009-01-22T14:24:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/598#issuecomment-3089",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from jbmohler to mhansen.
+Changing assignee from jbmohler to @mwhansen.
 
 
 
@@ -126,16 +126,16 @@ Changing assignee from jbmohler to mhansen.
 archive/issue_comments_003090.json:
 ```json
 {
-    "body": "Attachment [trac_598.patch](tarball://root/attachments/some-uuid/ticket598/trac_598.patch) by mhansen created at 2010-01-16 19:04:29",
+    "body": "Attachment [trac_598.patch](tarball://root/attachments/some-uuid/ticket598/trac_598.patch) by @mwhansen created at 2010-01-16 19:04:29",
     "created_at": "2010-01-16T19:04:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/598#issuecomment-3090",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_598.patch](tarball://root/attachments/some-uuid/ticket598/trac_598.patch) by mhansen created at 2010-01-16 19:04:29
+Attachment [trac_598.patch](tarball://root/attachments/some-uuid/ticket598/trac_598.patch) by @mwhansen created at 2010-01-16 19:04:29
 
 
 
@@ -149,7 +149,7 @@ archive/issue_comments_003091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/598#issuecomment-3091",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_003092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/598#issuecomment-3092",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_003093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/598#issuecomment-3093",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_003094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/598#issuecomment-3094",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_003095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/598#issuecomment-3095",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

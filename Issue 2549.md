@@ -102,7 +102,7 @@ archive/issue_comments_017408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2549#issuecomment-17408",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_017409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2549#issuecomment-17409",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_017410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2549#issuecomment-17410",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_017411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2549#issuecomment-17411",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_017412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2549#issuecomment-17412",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_017413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2549#issuecomment-17413",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_017414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2549",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2549#issuecomment-17414",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

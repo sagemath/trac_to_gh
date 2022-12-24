@@ -14,7 +14,7 @@ archive/issues_004913.json:
     "title": "convert sage.graphs.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4913",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_037283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4913#issuecomment-37283",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_037284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4913#issuecomment-37284",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -76,16 +76,16 @@ Oops:
 archive/issue_comments_037285.json:
 ```json
 {
-    "body": "Attachment [sage.graphs-final.patch](tarball://root/attachments/some-uuid/ticket4913/sage.graphs-final.patch) by mhansen created at 2009-02-21 19:18:27",
+    "body": "Attachment [sage.graphs-final.patch](tarball://root/attachments/some-uuid/ticket4913/sage.graphs-final.patch) by @mwhansen created at 2009-02-21 19:18:27",
     "created_at": "2009-02-21T19:18:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4913#issuecomment-37285",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage.graphs-final.patch](tarball://root/attachments/some-uuid/ticket4913/sage.graphs-final.patch) by mhansen created at 2009-02-21 19:18:27
+Attachment [sage.graphs-final.patch](tarball://root/attachments/some-uuid/ticket4913/sage.graphs-final.patch) by @mwhansen created at 2009-02-21 19:18:27
 
 
 

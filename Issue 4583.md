@@ -14,7 +14,7 @@ archive/issues_004583.json:
     "title": "implement \"sage -t --only-optional\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4583",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -58,16 +58,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4583
 archive/issue_comments_034369.json:
 ```json
 {
-    "body": "Attachment [scripts-4583.patch](tarball://root/attachments/some-uuid/ticket4583/scripts-4583.patch) by was created at 2008-11-23 01:57:25\n\napply to the local/bin/ scripts repo.",
+    "body": "Attachment [scripts-4583.patch](tarball://root/attachments/some-uuid/ticket4583/scripts-4583.patch) by @williamstein created at 2008-11-23 01:57:25\n\napply to the local/bin/ scripts repo.",
     "created_at": "2008-11-23T01:57:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4583#issuecomment-34369",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-4583.patch](tarball://root/attachments/some-uuid/ticket4583/scripts-4583.patch) by was created at 2008-11-23 01:57:25
+Attachment [scripts-4583.patch](tarball://root/attachments/some-uuid/ticket4583/scripts-4583.patch) by @williamstein created at 2008-11-23 01:57:25
 
 apply to the local/bin/ scripts repo.
 
@@ -78,16 +78,16 @@ apply to the local/bin/ scripts repo.
 archive/issue_comments_034370.json:
 ```json
 {
-    "body": "Attachment [sage-4583.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583.patch) by was created at 2008-11-23 01:58:58\n\nthis rolls out using # optional - foo for most of the magma, macaulay2 and mathematica doctests.  It changes a *LOT* of files.  Note -- the optional doctests for those components may not pass (e.g., the magma ones won't), because it is already known that many optional doctests have bitrotted.  Fixing this is the subject of another ticket.  Note, in a few cases I increased doctest coverage, since I saw functions with no doctests at all.",
+    "body": "Attachment [sage-4583.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583.patch) by @williamstein created at 2008-11-23 01:58:58\n\nthis rolls out using # optional - foo for most of the magma, macaulay2 and mathematica doctests.  It changes a *LOT* of files.  Note -- the optional doctests for those components may not pass (e.g., the magma ones won't), because it is already known that many optional doctests have bitrotted.  Fixing this is the subject of another ticket.  Note, in a few cases I increased doctest coverage, since I saw functions with no doctests at all.",
     "created_at": "2008-11-23T01:58:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4583#issuecomment-34370",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4583.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583.patch) by was created at 2008-11-23 01:58:58
+Attachment [sage-4583.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583.patch) by @williamstein created at 2008-11-23 01:58:58
 
 this rolls out using # optional - foo for most of the magma, macaulay2 and mathematica doctests.  It changes a *LOT* of files.  Note -- the optional doctests for those components may not pass (e.g., the magma ones won't), because it is already known that many optional doctests have bitrotted.  Fixing this is the subject of another ticket.  Note, in a few cases I increased doctest coverage, since I saw functions with no doctests at all.
 
@@ -98,16 +98,16 @@ this rolls out using # optional - foo for most of the magma, macaulay2 and mathe
 archive/issue_comments_034371.json:
 ```json
 {
-    "body": "Attachment [sage-4583-part2.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583-part2.patch) by was created at 2008-11-23 02:20:51",
+    "body": "Attachment [sage-4583-part2.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583-part2.patch) by @williamstein created at 2008-11-23 02:20:51",
     "created_at": "2008-11-23T02:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4583#issuecomment-34371",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4583-part2.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583-part2.patch) by was created at 2008-11-23 02:20:51
+Attachment [sage-4583-part2.patch](tarball://root/attachments/some-uuid/ticket4583/sage-4583-part2.patch) by @williamstein created at 2008-11-23 02:20:51
 
 
 
@@ -116,16 +116,16 @@ Attachment [sage-4583-part2.patch](tarball://root/attachments/some-uuid/ticket45
 archive/issue_comments_034372.json:
 ```json
 {
-    "body": "Attachment [scripts-4583-part2.patch](tarball://root/attachments/some-uuid/ticket4583/scripts-4583-part2.patch) by was created at 2008-11-23 02:31:05\n\nthis finishes the only_optional no args case",
+    "body": "Attachment [scripts-4583-part2.patch](tarball://root/attachments/some-uuid/ticket4583/scripts-4583-part2.patch) by @williamstein created at 2008-11-23 02:31:05\n\nthis finishes the only_optional no args case",
     "created_at": "2008-11-23T02:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4583#issuecomment-34372",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-4583-part2.patch](tarball://root/attachments/some-uuid/ticket4583/scripts-4583-part2.patch) by was created at 2008-11-23 02:31:05
+Attachment [scripts-4583-part2.patch](tarball://root/attachments/some-uuid/ticket4583/scripts-4583-part2.patch) by @williamstein created at 2008-11-23 02:31:05
 
 this finishes the only_optional no args case
 

@@ -3,7 +3,7 @@
 archive/issues_000384.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere are two latex formatting issues for the symbolic expressions.\n\n1)  The \\cdot's for implicit multiplication take up a lot of room and confuse my eyes.\n\n2)  I have expressions which are a product of about 5 things and \nthey are output with excessive parentheses, for example:\n(((1+a)(1+b))(1+c))(1+d)\nThe parenthesis check in the code just adds parentheses if the left \nsubexpression contains a minus or plus.  Of course, it should check if there \nis a minus or plus that isn't already bracketed or something like that (but, who am I \nto claim to know what should be done :) ).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/384\n\n",
+    "body": "Assignee: @williamstein\n\nThere are two latex formatting issues for the symbolic expressions.\n\n1)  The \\cdot's for implicit multiplication take up a lot of room and confuse my eyes.\n\n2)  I have expressions which are a product of about 5 things and \nthey are output with excessive parentheses, for example:\n(((1+a)(1+b))(1+c))(1+d)\nThe parenthesis check in the code just adds parentheses if the left \nsubexpression contains a minus or plus.  Of course, it should check if there \nis a minus or plus that isn't already bracketed or something like that (but, who am I \nto claim to know what should be done :) ).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/384\n\n",
     "created_at": "2007-06-01T15:29:03Z",
     "labels": [
         "calculus",
@@ -17,7 +17,7 @@ archive/issues_000384.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There are two latex formatting issues for the symbolic expressions.
 
@@ -75,16 +75,16 @@ Michael
 archive/issue_comments_001876.json:
 ```json
 {
-    "body": "Attachment [384-latex_symbexp.patch](tarball://root/attachments/some-uuid/ticket384/384-latex_symbexp.patch) by AlexGhitza created at 2008-01-27 02:07:51\n\nSee the patch.  A few comments:\n\n1. The parenthesis issue is, I believe, taken care of.\n2. After some thinking, I decided to do away with all the \\cdot's.  For a while, I thought they might still been needed in some situations, but since in the default behavior _latex_ first simplifies the expressions, all the weird cases I could think of (e.g. f=cos*(x-1)) are taken care of automatically.  I'd be happy to change my mind if anyone can prove me wrong.\n\nSome examples:\n\n\n```\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{{\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{2 {x}^{2} } \\cos \\left( x + 1 \\right)}\n}}}",
+    "body": "Attachment [384-latex_symbexp.patch](tarball://root/attachments/some-uuid/ticket384/384-latex_symbexp.patch) by @aghitza created at 2008-01-27 02:07:51\n\nSee the patch.  A few comments:\n\n1. The parenthesis issue is, I believe, taken care of.\n2. After some thinking, I decided to do away with all the \\cdot's.  For a while, I thought they might still been needed in some situations, but since in the default behavior _latex_ first simplifies the expressions, all the weird cases I could think of (e.g. f=cos*(x-1)) are taken care of automatically.  I'd be happy to change my mind if anyone can prove me wrong.\n\nSome examples:\n\n\n```\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{{\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{2 {x}^{2} } \\cos \\left( x + 1 \\right)}\n}}}",
     "created_at": "2008-01-27T02:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1876",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [384-latex_symbexp.patch](tarball://root/attachments/some-uuid/ticket384/384-latex_symbexp.patch) by AlexGhitza created at 2008-01-27 02:07:51
+Attachment [384-latex_symbexp.patch](tarball://root/attachments/some-uuid/ticket384/384-latex_symbexp.patch) by @aghitza created at 2008-01-27 02:07:51
 
 See the patch.  A few comments:
 
@@ -122,16 +122,16 @@ sage: latex(x^2*2*cos(x+1))
 archive/issue_comments_001877.json:
 ```json
 {
-    "body": "Attachment [384-2.patch](tarball://root/attachments/some-uuid/ticket384/384-2.patch) by mhansen created at 2008-01-27 02:23:16",
+    "body": "Attachment [384-2.patch](tarball://root/attachments/some-uuid/ticket384/384-2.patch) by @mwhansen created at 2008-01-27 02:23:16",
     "created_at": "2008-01-27T02:23:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1877",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [384-2.patch](tarball://root/attachments/some-uuid/ticket384/384-2.patch) by mhansen created at 2008-01-27 02:23:16
+Attachment [384-2.patch](tarball://root/attachments/some-uuid/ticket384/384-2.patch) by @mwhansen created at 2008-01-27 02:23:16
 
 
 
@@ -145,7 +145,7 @@ archive/issue_comments_001878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1878",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

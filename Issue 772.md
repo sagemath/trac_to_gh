@@ -3,7 +3,7 @@
 archive/issues_000772.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  burcin\n\nQEPCAD uses cylindrical algebraic decomposition to eliminate quantifiers in\nstatements.  QEPCAD takes the statement\n\n\n```\nthere exists an x such that a*x2 + b*x + c = 0 and a /= 0 (i.e., a!=0)\n```\n\n\nand eliminates the quantifier and answers that:\n\n\n```\na /= 0 and 4 a c - b^2 <= 0\n(i.e., a!=0 and 4ac-b^2<=0)\n```\n\n\nIn other words, it gives you the conditions of a solution satisfying\nyour original statement.  See more examples at [http://www.cs.usna.edu/~qepcad/B/examples/Examples.html](http://www.cs.usna.edu/~qepcad/B/examples/Examples.html)\n\nQEPCAD is not currently GPL and depends on the saclib library, which currently is not GPL.  However, both of those could change if there was interest.\n\nDavid Joyner talked with Chris Brown, and reported that:\n\n  I spoke with Chris Brown, who is essentially now the maintainer of\nqepcad. Here is his response:\n\n  \"Saclib's actual status is probably a bit up in the air.  What I might\n  call the saclib \"stakeholders\" had agreed to GPL it, but everybody\n  was, I guess, too busy to do anything about it.  Qepcad's status is\n  similar ... except that my contributions are necessarily public\n  domain.\"\n\n  In a second email, he added:\n\n  \"If you're interested, we can talk about this. Ultimately I can ask the\n  saclib/qepcad folks for permission and move forward.\"\n\n  (see [http://groups.google.com/group/sage-devel/msg/4f63c0636720ed51](http://groups.google.com/group/sage-devel/msg/4f63c0636720ed51))\n\nReferences:\n\nQEPCAD: [http://www.cs.usna.edu/~qepcad/B/QEPCAD.html](http://www.cs.usna.edu/~qepcad/B/QEPCAD.html)\n\nMathematica implementation (Resolve, Reduce, FindInstance,\nCylindricalDecomposition, etc.):\n\n[http://reference.wolfram.com/mathematica/tutorial/Quantifiers.html](http://reference.wolfram.com/mathematica/tutorial/Quantifiers.html)\n\n[http://reference.wolfram.com/mathematica/tutorial/TheRepresentationOfSolutionSets.html](http://reference.wolfram.com/mathematica/tutorial/TheRepresentationOfSolutionSets.html)\n\n[http://reference.wolfram.com/mathematica/tutorial/Inequalities-ManipulatingEquationsAndInequalities.html](http://reference.wolfram.com/mathematica/tutorial/Inequalities-ManipulatingEquationsAndInequalities.html)\n\n[http://reference.wolfram.com/mathematica/tutorial/EquationsAndInequalitiesOverDomains.html](http://reference.wolfram.com/mathematica/tutorial/EquationsAndInequalitiesOverDomains.html)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/772\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nQEPCAD uses cylindrical algebraic decomposition to eliminate quantifiers in\nstatements.  QEPCAD takes the statement\n\n\n```\nthere exists an x such that a*x2 + b*x + c = 0 and a /= 0 (i.e., a!=0)\n```\n\n\nand eliminates the quantifier and answers that:\n\n\n```\na /= 0 and 4 a c - b^2 <= 0\n(i.e., a!=0 and 4ac-b^2<=0)\n```\n\n\nIn other words, it gives you the conditions of a solution satisfying\nyour original statement.  See more examples at [http://www.cs.usna.edu/~qepcad/B/examples/Examples.html](http://www.cs.usna.edu/~qepcad/B/examples/Examples.html)\n\nQEPCAD is not currently GPL and depends on the saclib library, which currently is not GPL.  However, both of those could change if there was interest.\n\nDavid Joyner talked with Chris Brown, and reported that:\n\n  I spoke with Chris Brown, who is essentially now the maintainer of\nqepcad. Here is his response:\n\n  \"Saclib's actual status is probably a bit up in the air.  What I might\n  call the saclib \"stakeholders\" had agreed to GPL it, but everybody\n  was, I guess, too busy to do anything about it.  Qepcad's status is\n  similar ... except that my contributions are necessarily public\n  domain.\"\n\n  In a second email, he added:\n\n  \"If you're interested, we can talk about this. Ultimately I can ask the\n  saclib/qepcad folks for permission and move forward.\"\n\n  (see [http://groups.google.com/group/sage-devel/msg/4f63c0636720ed51](http://groups.google.com/group/sage-devel/msg/4f63c0636720ed51))\n\nReferences:\n\nQEPCAD: [http://www.cs.usna.edu/~qepcad/B/QEPCAD.html](http://www.cs.usna.edu/~qepcad/B/QEPCAD.html)\n\nMathematica implementation (Resolve, Reduce, FindInstance,\nCylindricalDecomposition, etc.):\n\n[http://reference.wolfram.com/mathematica/tutorial/Quantifiers.html](http://reference.wolfram.com/mathematica/tutorial/Quantifiers.html)\n\n[http://reference.wolfram.com/mathematica/tutorial/TheRepresentationOfSolutionSets.html](http://reference.wolfram.com/mathematica/tutorial/TheRepresentationOfSolutionSets.html)\n\n[http://reference.wolfram.com/mathematica/tutorial/Inequalities-ManipulatingEquationsAndInequalities.html](http://reference.wolfram.com/mathematica/tutorial/Inequalities-ManipulatingEquationsAndInequalities.html)\n\n[http://reference.wolfram.com/mathematica/tutorial/EquationsAndInequalitiesOverDomains.html](http://reference.wolfram.com/mathematica/tutorial/EquationsAndInequalitiesOverDomains.html)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/772\n\n",
     "created_at": "2007-10-01T14:24:04Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_000772.json:
     "title": "Interface to QEPCAD for quantifier elimination and solving systems of inequalities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/772",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  burcin
+CC:  @burcin
 
 QEPCAD uses cylindrical algebraic decomposition to eliminate quantifiers in
 statements.  QEPCAD takes the statement
@@ -95,7 +95,7 @@ archive/issue_comments_004582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4582",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_004583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4583",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_004584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4584",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_004585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4585",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -214,16 +214,16 @@ make: *** [opt] Error 1
 archive/issue_comments_004586.json:
 ```json
 {
-    "body": "Attachment [qepcad.spkg](tarball://root/attachments/some-uuid/ticket772/qepcad.spkg) by jason created at 2008-01-10 07:36:52",
+    "body": "Attachment [qepcad.spkg](tarball://root/attachments/some-uuid/ticket772/qepcad.spkg) by @jasongrout created at 2008-01-10 07:36:52",
     "created_at": "2008-01-10T07:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4586",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [qepcad.spkg](tarball://root/attachments/some-uuid/ticket772/qepcad.spkg) by jason created at 2008-01-10 07:36:52
+Attachment [qepcad.spkg](tarball://root/attachments/some-uuid/ticket772/qepcad.spkg) by @jasongrout created at 2008-01-10 07:36:52
 
 
 
@@ -261,7 +261,7 @@ archive/issue_comments_004588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4588",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_004590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4590",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_004591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4591",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_004594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4594",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -441,7 +441,7 @@ archive/issue_comments_004595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4595",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -514,7 +514,7 @@ archive/issue_comments_004597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4597",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -527,16 +527,16 @@ Chris Brown emailed me today and told me that he would try to send an email out 
 archive/issue_comments_004598.json:
 ```json
 {
-    "body": "Attachment [qepcad-1.48.spkg](tarball://root/attachments/some-uuid/ticket772/qepcad-1.48.spkg) by jason created at 2008-01-28 17:29:27\n\nUpdate to address the environment variable issues by creating sage-qepcad and sage-cad2d scripts that should be run instead of qepcad and cad2d",
+    "body": "Attachment [qepcad-1.48.spkg](tarball://root/attachments/some-uuid/ticket772/qepcad-1.48.spkg) by @jasongrout created at 2008-01-28 17:29:27\n\nUpdate to address the environment variable issues by creating sage-qepcad and sage-cad2d scripts that should be run instead of qepcad and cad2d",
     "created_at": "2008-01-28T17:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4598",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [qepcad-1.48.spkg](tarball://root/attachments/some-uuid/ticket772/qepcad-1.48.spkg) by jason created at 2008-01-28 17:29:27
+Attachment [qepcad-1.48.spkg](tarball://root/attachments/some-uuid/ticket772/qepcad-1.48.spkg) by @jasongrout created at 2008-01-28 17:29:27
 
 Update to address the environment variable issues by creating sage-qepcad and sage-cad2d scripts that should be run instead of qepcad and cad2d
 
@@ -588,7 +588,7 @@ archive/issue_comments_004601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4601",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -642,7 +642,7 @@ archive/issue_comments_004604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4604",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -665,7 +665,7 @@ archive/issue_comments_004605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4605",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -685,7 +685,7 @@ archive/issue_comments_004606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4606",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -829,7 +829,7 @@ archive/issue_comments_004609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4609",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -870,7 +870,7 @@ archive/issue_comments_004610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4610",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -908,7 +908,7 @@ archive/issue_comments_004612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/772#issuecomment-4612",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

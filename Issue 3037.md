@@ -3,7 +3,7 @@
 archive/issues_003037.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThis is a new cython spkg with several enhancements:\nIt has a working -w feature, it is upgraded to tip in cython-devel, has the unicode bug fix, and it has a improved circular cdef import algorithm.  \n\nDownload at http://sage.math.washington.edu/home/gfurnish/spkg/cython-0.9.6.13.tip.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3037\n\n",
+    "body": "Assignee: @garyfurnish\n\nThis is a new cython spkg with several enhancements:\nIt has a working -w feature, it is upgraded to tip in cython-devel, has the unicode bug fix, and it has a improved circular cdef import algorithm.  \n\nDownload at http://sage.math.washington.edu/home/gfurnish/spkg/cython-0.9.6.13.tip.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3037\n\n",
     "created_at": "2008-04-27T01:12:56Z",
     "labels": [
         "build",
@@ -14,10 +14,10 @@ archive/issues_003037.json:
     "title": "[with spkg, needs trivial review] cython-0.9.6.13.tip",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3037",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 This is a new cython spkg with several enhancements:
 It has a working -w feature, it is upgraded to tip in cython-devel, has the unicode bug fix, and it has a improved circular cdef import algorithm.  
@@ -84,7 +84,7 @@ archive/issue_comments_020902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3037#issuecomment-20902",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

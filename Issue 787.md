@@ -3,7 +3,7 @@
 archive/issues_000787.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf V is a subspace of W then W.quotient(V) should give the quotient space U=W/V.\n\nLeft TODO:\n- overload \"/\" constructor ?\n- provide a section map U->W ?\n- install appropriate coercions ?\n\nIssue created by migration from https://trac.sagemath.org/ticket/787\n\n",
+    "body": "Assignee: @williamstein\n\nIf V is a subspace of W then W.quotient(V) should give the quotient space U=W/V.\n\nLeft TODO:\n- overload \"/\" constructor ?\n- provide a section map U->W ?\n- install appropriate coercions ?\n\nIssue created by migration from https://trac.sagemath.org/ticket/787\n\n",
     "created_at": "2007-10-02T13:41:40Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000787.json:
     "title": "quotient spaces of vector spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/787",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If V is a subspace of W then W.quotient(V) should give the quotient space U=W/V.
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/787
 archive/issue_comments_004713.json:
 ```json
 {
-    "body": "Attachment [fix.patch](tarball://root/attachments/some-uuid/ticket787/fix.patch) by nbruin created at 2007-10-02 13:42:51\n\nimplementation",
+    "body": "Attachment [fix.patch](tarball://root/attachments/some-uuid/ticket787/fix.patch) by @nbruin created at 2007-10-02 13:42:51\n\nimplementation",
     "created_at": "2007-10-02T13:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4713",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [fix.patch](tarball://root/attachments/some-uuid/ticket787/fix.patch) by nbruin created at 2007-10-02 13:42:51
+Attachment [fix.patch](tarball://root/attachments/some-uuid/ticket787/fix.patch) by @nbruin created at 2007-10-02 13:42:51
 
 implementation
 
@@ -62,7 +62,7 @@ archive/issue_comments_004714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4714",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_004715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4715",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_004716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4716",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_004717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4717",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_004718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4718",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_004720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4720",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_004721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4721",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_004723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4723",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_004724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4724",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_004725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4725",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_004726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4726",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -333,16 +333,16 @@ But Q[1] is the quotient map so should have `V.0 + V.1` in its kernel.
 archive/issue_comments_004727.json:
 ```json
 {
-    "body": "Attachment [trac787.patch](tarball://root/attachments/some-uuid/ticket787/trac787.patch) by was created at 2007-12-02 00:47:48\n\nThis I think correctly really implements quotients of vector spaces.",
+    "body": "Attachment [trac787.patch](tarball://root/attachments/some-uuid/ticket787/trac787.patch) by @williamstein created at 2007-12-02 00:47:48\n\nThis I think correctly really implements quotients of vector spaces.",
     "created_at": "2007-12-02T00:47:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4727",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac787.patch](tarball://root/attachments/some-uuid/ticket787/trac787.patch) by was created at 2007-12-02 00:47:48
+Attachment [trac787.patch](tarball://root/attachments/some-uuid/ticket787/trac787.patch) by @williamstein created at 2007-12-02 00:47:48
 
 This I think correctly really implements quotients of vector spaces.
 
@@ -353,16 +353,16 @@ This I think correctly really implements quotients of vector spaces.
 archive/issue_comments_004728.json:
 ```json
 {
-    "body": "Attachment [trac787-part2.patch](tarball://root/attachments/some-uuid/ticket787/trac787-part2.patch) by was created at 2007-12-02 03:05:01\n\nThis is also needed (it fixes a docstring)",
+    "body": "Attachment [trac787-part2.patch](tarball://root/attachments/some-uuid/ticket787/trac787-part2.patch) by @williamstein created at 2007-12-02 03:05:01\n\nThis is also needed (it fixes a docstring)",
     "created_at": "2007-12-02T03:05:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4728",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac787-part2.patch](tarball://root/attachments/some-uuid/ticket787/trac787-part2.patch) by was created at 2007-12-02 03:05:01
+Attachment [trac787-part2.patch](tarball://root/attachments/some-uuid/ticket787/trac787-part2.patch) by @williamstein created at 2007-12-02 03:05:01
 
 This is also needed (it fixes a docstring)
 
@@ -378,7 +378,7 @@ archive/issue_comments_004729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4729",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -391,16 +391,16 @@ this is also needed.
 archive/issue_comments_004730.json:
 ```json
 {
-    "body": "Attachment [trac787-bundle.hg](tarball://root/attachments/some-uuid/ticket787/trac787-bundle.hg) by was created at 2007-12-02 03:14:44\n\ninstead of applying those three patches, this is a clean bundle.",
+    "body": "Attachment [trac787-bundle.hg](tarball://root/attachments/some-uuid/ticket787/trac787-bundle.hg) by @williamstein created at 2007-12-02 03:14:44\n\ninstead of applying those three patches, this is a clean bundle.",
     "created_at": "2007-12-02T03:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4730",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac787-bundle.hg](tarball://root/attachments/some-uuid/ticket787/trac787-bundle.hg) by was created at 2007-12-02 03:14:44
+Attachment [trac787-bundle.hg](tarball://root/attachments/some-uuid/ticket787/trac787-bundle.hg) by @williamstein created at 2007-12-02 03:14:44
 
 instead of applying those three patches, this is a clean bundle.
 
@@ -452,7 +452,7 @@ archive/issue_comments_004733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4733",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -465,15 +465,15 @@ Changes _repr_
 archive/issue_comments_004734.json:
 ```json
 {
-    "body": "Attachment [trac787-part4.patch](tarball://root/attachments/some-uuid/ticket787/trac787-part4.patch) by was created at 2007-12-02 09:45:48\n\nThis was slightly buggy -- see Trac #1368 for a fix.",
+    "body": "Attachment [trac787-part4.patch](tarball://root/attachments/some-uuid/ticket787/trac787-part4.patch) by @williamstein created at 2007-12-02 09:45:48\n\nThis was slightly buggy -- see Trac #1368 for a fix.",
     "created_at": "2007-12-02T09:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/787",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/787#issuecomment-4734",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac787-part4.patch](tarball://root/attachments/some-uuid/ticket787/trac787-part4.patch) by was created at 2007-12-02 09:45:48
+Attachment [trac787-part4.patch](tarball://root/attachments/some-uuid/ticket787/trac787-part4.patch) by @williamstein created at 2007-12-02 09:45:48
 
 This was slightly buggy -- see Trac #1368 for a fix.

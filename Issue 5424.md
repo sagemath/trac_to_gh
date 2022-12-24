@@ -3,7 +3,7 @@
 archive/issues_005424.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5424\n\n",
+    "body": "Assignee: @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5424\n\n",
     "created_at": "2009-03-03T09:23:25Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_005424.json:
     "title": "Move infinity to new coercion model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5424",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_041977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5424#issuecomment-41977",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -50,16 +50,16 @@ Plus got coverage from 9% to 100%
 archive/issue_comments_041978.json:
 ```json
 {
-    "body": "Attachment [5424-coerce-infinity.patch](tarball://root/attachments/some-uuid/ticket5424/5424-coerce-infinity.patch) by mhansen created at 2009-03-07 22:02:21",
+    "body": "Attachment [5424-coerce-infinity.patch](tarball://root/attachments/some-uuid/ticket5424/5424-coerce-infinity.patch) by @mwhansen created at 2009-03-07 22:02:21",
     "created_at": "2009-03-07T22:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5424#issuecomment-41978",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [5424-coerce-infinity.patch](tarball://root/attachments/some-uuid/ticket5424/5424-coerce-infinity.patch) by mhansen created at 2009-03-07 22:02:21
+Attachment [5424-coerce-infinity.patch](tarball://root/attachments/some-uuid/ticket5424/5424-coerce-infinity.patch) by @mwhansen created at 2009-03-07 22:02:21
 
 
 
@@ -68,16 +68,16 @@ Attachment [5424-coerce-infinity.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_041979.json:
 ```json
 {
-    "body": "Attachment [trac_5424.patch](tarball://root/attachments/some-uuid/ticket5424/trac_5424.patch) by mhansen created at 2009-03-07 22:02:57\n\nI've attached trac_5424.patch which is the original patch rebased against 3.4.rc1 (and converted  use Sphinx syntax).",
+    "body": "Attachment [trac_5424.patch](tarball://root/attachments/some-uuid/ticket5424/trac_5424.patch) by @mwhansen created at 2009-03-07 22:02:57\n\nI've attached trac_5424.patch which is the original patch rebased against 3.4.rc1 (and converted  use Sphinx syntax).",
     "created_at": "2009-03-07T22:02:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5424#issuecomment-41979",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5424.patch](tarball://root/attachments/some-uuid/ticket5424/trac_5424.patch) by mhansen created at 2009-03-07 22:02:57
+Attachment [trac_5424.patch](tarball://root/attachments/some-uuid/ticket5424/trac_5424.patch) by @mwhansen created at 2009-03-07 22:02:57
 
 I've attached trac_5424.patch which is the original patch rebased against 3.4.rc1 (and converted  use Sphinx syntax).
 
@@ -93,7 +93,7 @@ archive/issue_comments_041980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5424#issuecomment-41980",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_041981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5424#issuecomment-41981",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

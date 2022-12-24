@@ -3,7 +3,7 @@
 archive/issues_008869.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nRight now, we have the following behavior:\n\n\n```\nsage: float(CC(1.0))\n1.0\n\n\nsage: float(CDF(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:6532)()\n\nTypeError: can't convert complex to float; use abs(z)\n\n\nsage: float(complex(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\nTypeError: can't convert complex to float \n```\n\n\nAs robertwb and was voted (on http://trac.sagemath.org/sage_trac/ticket/5400#comment:12 and on sage-devel), we should make float conversion succeed if the imaginary part is zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8869\n\n",
+    "body": "Assignee: @aghitza\n\nRight now, we have the following behavior:\n\n\n```\nsage: float(CC(1.0))\n1.0\n\n\nsage: float(CDF(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:6532)()\n\nTypeError: can't convert complex to float; use abs(z)\n\n\nsage: float(complex(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\nTypeError: can't convert complex to float \n```\n\n\nAs robertwb and was voted (on http://trac.sagemath.org/sage_trac/ticket/5400#comment:12 and on sage-devel), we should make float conversion succeed if the imaginary part is zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8869\n\n",
     "created_at": "2010-05-04T15:56:30Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_008869.json:
     "title": "float(CDF(1)) should return 1.0, not throw an error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8869",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Right now, we have the following behavior:
 
@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8869
 archive/issue_comments_081525.json:
 ```json
 {
-    "body": "Attachment [complex-float.patch](tarball://root/attachments/some-uuid/ticket8869/complex-float.patch) by jason created at 2010-05-04 16:17:13",
+    "body": "Attachment [complex-float.patch](tarball://root/attachments/some-uuid/ticket8869/complex-float.patch) by @jasongrout created at 2010-05-04 16:17:13",
     "created_at": "2010-05-04T16:17:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81525",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [complex-float.patch](tarball://root/attachments/some-uuid/ticket8869/complex-float.patch) by jason created at 2010-05-04 16:17:13
+Attachment [complex-float.patch](tarball://root/attachments/some-uuid/ticket8869/complex-float.patch) by @jasongrout created at 2010-05-04 16:17:13
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_081526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81526",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_081527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81527",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_081528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81528",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_081529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81529",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_081530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81530",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -176,16 +176,16 @@ Ready for review.  Leif's comment seems reasonable, so I added one (!) extra opt
 archive/issue_comments_081531.json:
 ```json
 {
-    "body": "Attachment [trac_8869.patch](tarball://root/attachments/some-uuid/ticket8869/trac_8869.patch) by kcrisman created at 2010-05-26 19:58:59\n\nBased on 4.4.2, apply only this patch",
+    "body": "Attachment [trac_8869.patch](tarball://root/attachments/some-uuid/ticket8869/trac_8869.patch) by @kcrisman created at 2010-05-26 19:58:59\n\nBased on 4.4.2, apply only this patch",
     "created_at": "2010-05-26T19:58:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81531",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_8869.patch](tarball://root/attachments/some-uuid/ticket8869/trac_8869.patch) by kcrisman created at 2010-05-26 19:58:59
+Attachment [trac_8869.patch](tarball://root/attachments/some-uuid/ticket8869/trac_8869.patch) by @kcrisman created at 2010-05-26 19:58:59
 
 Based on 4.4.2, apply only this patch
 
@@ -201,7 +201,7 @@ archive/issue_comments_081532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81532",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_081533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81533",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_081534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81534",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_081535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81535",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_081536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81536",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_081537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81537",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_081538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81538",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

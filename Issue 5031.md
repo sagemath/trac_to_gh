@@ -3,7 +3,7 @@
 archive/issues_005031.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5031\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5031\n\n",
     "created_at": "2009-01-20T05:46:23Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005031.json:
     "title": "get doctesting of matrix/misc.pyx up to 100%; also make A.lift() 20 times faster by moving a \"gem\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5031",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_038318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5031#issuecomment-38318",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_038319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5031#issuecomment-38319",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,16 +93,16 @@ this is against sage-3.3.alpha0
 archive/issue_comments_038320.json:
 ```json
 {
-    "body": "Attachment [trac_5031.patch](tarball://root/attachments/some-uuid/ticket5031/trac_5031.patch) by ddrake created at 2009-01-20 09:11:45\n\nI get even larger speedups (factor of 21 to 23), the doctest coverage for all 5 touched files is increased, and the code is fine. Positive review.",
+    "body": "Attachment [trac_5031.patch](tarball://root/attachments/some-uuid/ticket5031/trac_5031.patch) by @dandrake created at 2009-01-20 09:11:45\n\nI get even larger speedups (factor of 21 to 23), the doctest coverage for all 5 touched files is increased, and the code is fine. Positive review.",
     "created_at": "2009-01-20T09:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5031#issuecomment-38320",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5031.patch](tarball://root/attachments/some-uuid/ticket5031/trac_5031.patch) by ddrake created at 2009-01-20 09:11:45
+Attachment [trac_5031.patch](tarball://root/attachments/some-uuid/ticket5031/trac_5031.patch) by @dandrake created at 2009-01-20 09:11:45
 
 I get even larger speedups (factor of 21 to 23), the doctest coverage for all 5 touched files is increased, and the code is fine. Positive review.
 
@@ -118,7 +118,7 @@ archive/issue_comments_038321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5031#issuecomment-38321",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

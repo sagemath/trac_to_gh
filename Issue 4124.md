@@ -14,7 +14,7 @@ archive/issues_004124.json:
     "title": "disable pbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4124",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_029901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4124#issuecomment-29901",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

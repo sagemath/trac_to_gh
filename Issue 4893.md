@@ -14,7 +14,7 @@ archive/issues_004893.json:
     "title": "srange docstring is misleading",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4893",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: cwitty
@@ -67,16 +67,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4893
 archive/issue_comments_037105.json:
 ```json
 {
-    "body": "Attachment [trac_4893.patch](tarball://root/attachments/some-uuid/ticket4893/trac_4893.patch) by cremona created at 2008-12-30 23:01:43",
+    "body": "Attachment [trac_4893.patch](tarball://root/attachments/some-uuid/ticket4893/trac_4893.patch) by @JohnCremona created at 2008-12-30 23:01:43",
     "created_at": "2008-12-30T23:01:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4893#issuecomment-37105",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4893.patch](tarball://root/attachments/some-uuid/ticket4893/trac_4893.patch) by cremona created at 2008-12-30 23:01:43
+Attachment [trac_4893.patch](tarball://root/attachments/some-uuid/ticket4893/trac_4893.patch) by @JohnCremona created at 2008-12-30 23:01:43
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_037106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4893#issuecomment-37106",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_037107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4893",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4893#issuecomment-37107",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

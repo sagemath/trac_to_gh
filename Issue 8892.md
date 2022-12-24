@@ -14,7 +14,7 @@ archive/issues_008892.json:
     "title": "Many doctests fails since the update of NetworkX !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8892",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -43,7 +43,7 @@ archive/issue_comments_081747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81747",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_081748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81748",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_081749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81749",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_081750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81750",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_081751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81751",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_081752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81752",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_081753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81753",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_081754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81754",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -209,16 +209,16 @@ Nathann
 archive/issue_comments_081755.json:
 ```json
 {
-    "body": "Attachment [trac_8892.patch](tarball://root/attachments/some-uuid/ticket8892/trac_8892.patch) by ncohen created at 2010-05-10 17:32:00",
+    "body": "Attachment [trac_8892.patch](tarball://root/attachments/some-uuid/ticket8892/trac_8892.patch) by @nathanncohen created at 2010-05-10 17:32:00",
     "created_at": "2010-05-10T17:32:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81755",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8892.patch](tarball://root/attachments/some-uuid/ticket8892/trac_8892.patch) by ncohen created at 2010-05-10 17:32:00
+Attachment [trac_8892.patch](tarball://root/attachments/some-uuid/ticket8892/trac_8892.patch) by @nathanncohen created at 2010-05-10 17:32:00
 
 
 
@@ -252,7 +252,7 @@ archive/issue_comments_081757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81757",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -265,16 +265,16 @@ I sign off on your changes.  Are you asking someone else to also sign off on the
 archive/issue_comments_081758.json:
 ```json
 {
-    "body": "Changing assignee from jason, ncohen, rlm to jason.",
+    "body": "Changing assignee from jason, ncohen, rlm to @jasongrout.",
     "created_at": "2010-05-11T07:15:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81758",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from jason, ncohen, rlm to jason.
+Changing assignee from jason, ncohen, rlm to @jasongrout.
 
 
 
@@ -283,16 +283,16 @@ Changing assignee from jason, ncohen, rlm to jason.
 archive/issue_comments_081759.json:
 ```json
 {
-    "body": "Changing assignee from jason to ncohen.",
+    "body": "Changing assignee from @jasongrout to @nathanncohen.",
     "created_at": "2010-05-11T07:15:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81759",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from jason to ncohen.
+Changing assignee from @jasongrout to @nathanncohen.
 
 
 
@@ -306,7 +306,7 @@ archive/issue_comments_081760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81760",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

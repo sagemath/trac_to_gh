@@ -3,7 +3,7 @@
 archive/issues_000217.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/217\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/217\n\n",
     "created_at": "2007-01-25T18:58:54Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000217.json:
     "title": "optimize matrix permanents",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/217",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_000965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/217#issuecomment-965",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_000966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/217#issuecomment-966",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_000967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/217#issuecomment-967",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -136,16 +136,16 @@ optimization relative to #931
 archive/issue_comments_000968.json:
 ```json
 {
-    "body": "Attachment [patch_trac217.hg](tarball://root/attachments/some-uuid/ticket217/patch_trac217.hg) by jsp created at 2007-10-27 12:44:21",
+    "body": "Attachment [patch_trac217.hg](tarball://root/attachments/some-uuid/ticket217/patch_trac217.hg) by @jaapspies created at 2007-10-27 12:44:21",
     "created_at": "2007-10-27T12:44:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/217#issuecomment-968",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [patch_trac217.hg](tarball://root/attachments/some-uuid/ticket217/patch_trac217.hg) by jsp created at 2007-10-27 12:44:21
+Attachment [patch_trac217.hg](tarball://root/attachments/some-uuid/ticket217/patch_trac217.hg) by @jaapspies created at 2007-10-27 12:44:21
 
 
 
@@ -177,7 +177,7 @@ archive/issue_comments_000970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/217#issuecomment-970",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_000971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/217#issuecomment-971",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_000972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/217#issuecomment-972",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_000973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/217#issuecomment-973",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_000974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/217#issuecomment-974",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_000975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/217#issuecomment-975",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -331,16 +331,16 @@ Canged back
 archive/issue_comments_000976.json:
 ```json
 {
-    "body": "Attachment [patch_trac217_2.hg](tarball://root/attachments/some-uuid/ticket217/patch_trac217_2.hg) by jsp created at 2007-10-29 20:06:17\n\nLesson learned! I hope.\n\nJaap",
+    "body": "Attachment [patch_trac217_2.hg](tarball://root/attachments/some-uuid/ticket217/patch_trac217_2.hg) by @jaapspies created at 2007-10-29 20:06:17\n\nLesson learned! I hope.\n\nJaap",
     "created_at": "2007-10-29T20:06:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/217#issuecomment-976",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [patch_trac217_2.hg](tarball://root/attachments/some-uuid/ticket217/patch_trac217_2.hg) by jsp created at 2007-10-29 20:06:17
+Attachment [patch_trac217_2.hg](tarball://root/attachments/some-uuid/ticket217/patch_trac217_2.hg) by @jaapspies created at 2007-10-29 20:06:17
 
 Lesson learned! I hope.
 

@@ -3,7 +3,7 @@
 archive/issues_002333.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\n\nOn Wed, Feb 27, 2008 at 8:32 AM, Simon King <king@mathematik.uni-jena.de> wrote:\n> \n>  Dear team,\n>  \n>  i started to work with Mercurial and tried to understand\n>  http://modular.math.washington.edu/sage/doc/html/prog/node72.html\n>  \n>  I changed to a new branch, i.e.\n>  > sage -clone myrep\n>  > sage -b myrep\n>  \n>  Meanwhile i also learned (more or less) how to create a patch.\n>  \n>  But what shall i do in order to apply a patch downloaded from that\n>  trac system?\n>  I tried\n>  sage:  hg_sage.import_patch('../work/SingularElementCopy.patch')\n>  \n>  However, this was aborted with the comment \"no diffs found\".\n>  \n>  What does that mean? How can one apply a patch?\n>  \n>  Suggestion: The \"Quick Mercurial tutorial for Sage\" could also say a\n>  few words about the trac system.\n\nTo apply a patch from trac, e.g., the one here:\n     http://trac.sagemath.org/sage_trac/ticket/2245\ndo this:\n\n 1. Click on the patch.\n 2. Go to the bottom of the screen and copy and paste the url for \"Original format\",\ne.g., right click and say \"copy\".\n 3. Paste the result into hg_sage.apply(...), e.g.,\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/2245/sage-2245.patch?format=raw')\n\n--\n\nIt would also be nice if hg_sage were smart enough to automatically detect the\nnon-raw url (that you click on in step 1 above) and automatically get the raw file\ninstead.  E.g., this could be made to work\n\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/2245/sage-2245.patch')\n\nThis would be easy to implement -- if ever the input to apply contains\n   http://[anything]attachment/ticket/2245/[anything]\nand doesn't end in ?format=raw, just append it.   That would make it easy to \ncompletely skip the step where you have to find the raw format link.\n\nSince this is so trivial to implement I've made it a trac ticket:\n  \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2333\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Wed, Feb 27, 2008 at 8:32 AM, Simon King <king@mathematik.uni-jena.de> wrote:\n> \n>  Dear team,\n>  \n>  i started to work with Mercurial and tried to understand\n>  http://modular.math.washington.edu/sage/doc/html/prog/node72.html\n>  \n>  I changed to a new branch, i.e.\n>  > sage -clone myrep\n>  > sage -b myrep\n>  \n>  Meanwhile i also learned (more or less) how to create a patch.\n>  \n>  But what shall i do in order to apply a patch downloaded from that\n>  trac system?\n>  I tried\n>  sage:  hg_sage.import_patch('../work/SingularElementCopy.patch')\n>  \n>  However, this was aborted with the comment \"no diffs found\".\n>  \n>  What does that mean? How can one apply a patch?\n>  \n>  Suggestion: The \"Quick Mercurial tutorial for Sage\" could also say a\n>  few words about the trac system.\n\nTo apply a patch from trac, e.g., the one here:\n     http://trac.sagemath.org/sage_trac/ticket/2245\ndo this:\n\n 1. Click on the patch.\n 2. Go to the bottom of the screen and copy and paste the url for \"Original format\",\ne.g., right click and say \"copy\".\n 3. Paste the result into hg_sage.apply(...), e.g.,\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/2245/sage-2245.patch?format=raw')\n\n--\n\nIt would also be nice if hg_sage were smart enough to automatically detect the\nnon-raw url (that you click on in step 1 above) and automatically get the raw file\ninstead.  E.g., this could be made to work\n\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/2245/sage-2245.patch')\n\nThis would be easy to implement -- if ever the input to apply contains\n   http://[anything]attachment/ticket/2245/[anything]\nand doesn't end in ?format=raw, just append it.   That would make it easy to \ncompletely skip the step where you have to find the raw format link.\n\nSince this is so trivial to implement I've made it a trac ticket:\n  \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2333\n\n",
     "created_at": "2008-02-27T17:53:10Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_002333.json:
     "title": "[easy to implement] hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/2245/sage-2245.patch') should be made to work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2333",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -124,16 +124,16 @@ Michael
 archive/issue_comments_015605.json:
 ```json
 {
-    "body": "Attachment [2333.patch](tarball://root/attachments/some-uuid/ticket2333/2333.patch) by mhansen created at 2008-02-28 01:30:16",
+    "body": "Attachment [2333.patch](tarball://root/attachments/some-uuid/ticket2333/2333.patch) by @mwhansen created at 2008-02-28 01:30:16",
     "created_at": "2008-02-28T01:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15605",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2333.patch](tarball://root/attachments/some-uuid/ticket2333/2333.patch) by mhansen created at 2008-02-28 01:30:16
+Attachment [2333.patch](tarball://root/attachments/some-uuid/ticket2333/2333.patch) by @mwhansen created at 2008-02-28 01:30:16
 
 
 
@@ -142,16 +142,16 @@ Attachment [2333.patch](tarball://root/attachments/some-uuid/ticket2333/2333.pat
 archive/issue_comments_015606.json:
 ```json
 {
-    "body": "Attachment [2333-2.patch](tarball://root/attachments/some-uuid/ticket2333/2333-2.patch) by mhansen created at 2008-02-28 08:43:25",
+    "body": "Attachment [2333-2.patch](tarball://root/attachments/some-uuid/ticket2333/2333-2.patch) by @mwhansen created at 2008-02-28 08:43:25",
     "created_at": "2008-02-28T08:43:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15606",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2333-2.patch](tarball://root/attachments/some-uuid/ticket2333/2333-2.patch) by mhansen created at 2008-02-28 08:43:25
+Attachment [2333-2.patch](tarball://root/attachments/some-uuid/ticket2333/2333-2.patch) by @mwhansen created at 2008-02-28 08:43:25
 
 
 
@@ -160,16 +160,16 @@ Attachment [2333-2.patch](tarball://root/attachments/some-uuid/ticket2333/2333-2
 archive/issue_comments_015607.json:
 ```json
 {
-    "body": "Attachment [2333-3.patch](tarball://root/attachments/some-uuid/ticket2333/2333-3.patch) by mhansen created at 2008-02-28 08:45:58\n\nAll three patches should be applied in order.",
+    "body": "Attachment [2333-3.patch](tarball://root/attachments/some-uuid/ticket2333/2333-3.patch) by @mwhansen created at 2008-02-28 08:45:58\n\nAll three patches should be applied in order.",
     "created_at": "2008-02-28T08:45:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2333",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15607",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2333-3.patch](tarball://root/attachments/some-uuid/ticket2333/2333-3.patch) by mhansen created at 2008-02-28 08:45:58
+Attachment [2333-3.patch](tarball://root/attachments/some-uuid/ticket2333/2333-3.patch) by @mwhansen created at 2008-02-28 08:45:58
 
 All three patches should be applied in order.
 

@@ -14,7 +14,7 @@ archive/issues_001909.json:
     "title": "Create a \"partition\" function like Mathematica has",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1909",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: cwitty
@@ -67,7 +67,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1909
 archive/issue_comments_012099.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to mhansen.",
+    "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2008-03-16T08:10:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1909",
     "type": "issue_comment",
@@ -76,7 +76,7 @@ archive/issue_comments_012099.json:
 }
 ```
 
-Changing assignee from cwitty to mhansen.
+Changing assignee from cwitty to @mwhansen.
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_012101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1909",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1909#issuecomment-12101",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005889.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nAdd random simplicial complexes to the class of examples of simplicial complexes, so you can do\n\n```\nsage: simplicial_complexes.RandomComplex(6, 2)\n```\n\nto get a random simplicial complex with 6 vertices, all possible edges, and the possible 2-dimensional simplices (triangles) randomly included (or not).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5889\n\n",
+    "body": "Assignee: @jhpalmieri\n\nAdd random simplicial complexes to the class of examples of simplicial complexes, so you can do\n\n```\nsage: simplicial_complexes.RandomComplex(6, 2)\n```\n\nto get a random simplicial complex with 6 vertices, all possible edges, and the possible 2-dimensional simplices (triangles) randomly included (or not).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5889\n\n",
     "created_at": "2009-04-24T17:14:45Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_005889.json:
     "title": "[with patch, needs review] random simplicial complexes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5889",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 Add random simplicial complexes to the class of examples of simplicial complexes, so you can do
 
@@ -44,7 +44,7 @@ archive/issue_comments_046561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5889#issuecomment-46561",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_046562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5889#issuecomment-46562",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -82,16 +82,16 @@ Okay, this patch is identical to the first one, but without "#random".  It passe
 archive/issue_comments_046563.json:
 ```json
 {
-    "body": "Attachment [random-complex.patch](tarball://root/attachments/some-uuid/ticket5889/random-complex.patch) by jhpalmieri created at 2009-04-30 20:52:18",
+    "body": "Attachment [random-complex.patch](tarball://root/attachments/some-uuid/ticket5889/random-complex.patch) by @jhpalmieri created at 2009-04-30 20:52:18",
     "created_at": "2009-04-30T20:52:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5889#issuecomment-46563",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [random-complex.patch](tarball://root/attachments/some-uuid/ticket5889/random-complex.patch) by jhpalmieri created at 2009-04-30 20:52:18
+Attachment [random-complex.patch](tarball://root/attachments/some-uuid/ticket5889/random-complex.patch) by @jhpalmieri created at 2009-04-30 20:52:18
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_046564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5889#issuecomment-46564",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_046567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5889#issuecomment-46567",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

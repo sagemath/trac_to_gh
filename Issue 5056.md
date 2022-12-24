@@ -3,7 +3,7 @@
 archive/issues_005056.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  john_perry\n\nIt seems like people get confused by the name and assume the function returns the reduced **Gr\u00f6bner** basis. Thus `reduced_basis()` should be deprecated and `interreduced_basis()` should take its place.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5056\n\n",
+    "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\nIt seems like people get confused by the name and assume the function returns the reduced **Gr\u00f6bner** basis. Thus `reduced_basis()` should be deprecated and `interreduced_basis()` should take its place.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5056\n\n",
     "created_at": "2009-01-22T18:34:52Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_005056.json:
     "title": "rename Ideal.reduced_basis to Ideal.interreduced_basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5056",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  john_perry
+CC:  @johnperry-math
 
 It seems like people get confused by the name and assume the function returns the reduced **Gröbner** basis. Thus `reduced_basis()` should be deprecated and `interreduced_basis()` should take its place.
 
@@ -39,7 +39,7 @@ archive/issue_comments_038519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5056#issuecomment-38519",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -52,16 +52,16 @@ archive/issue_comments_038519.json:
 archive/issue_comments_038520.json:
 ```json
 {
-    "body": "Attachment [interreduced_basis_path](tarball://root/attachments/some-uuid/ticket5056/interreduced_basis_path) by malb created at 2009-01-23 02:45:22",
+    "body": "Attachment [interreduced_basis_path](tarball://root/attachments/some-uuid/ticket5056/interreduced_basis_path) by @malb created at 2009-01-23 02:45:22",
     "created_at": "2009-01-23T02:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5056#issuecomment-38520",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [interreduced_basis_path](tarball://root/attachments/some-uuid/ticket5056/interreduced_basis_path) by malb created at 2009-01-23 02:45:22
+Attachment [interreduced_basis_path](tarball://root/attachments/some-uuid/ticket5056/interreduced_basis_path) by @malb created at 2009-01-23 02:45:22
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_038521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5056",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5056#issuecomment-38521",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

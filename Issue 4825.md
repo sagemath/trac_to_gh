@@ -3,7 +3,7 @@
 archive/issues_004825.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  ddrake\n\nThis is an ongoing discussion on sage-devel right now.\n\nBasically, we'd like to embed an sws file in a pdf and then be able to upload the pdf file to the notebook and have the notebook automatically extract the sws file and create the worksheet.\n\nWe can use pdfminer to extract the data.  Here's a sample program which extracts the first embedded file in a pdf named 'foo.pdf'.\n\n\n```\nfrom pdflib.pdfparser import PDFDocument, PDFParser\nimport sys\nstdout = sys.stdout\n\ndoc = PDFDocument()\nfp = file('foo.pdf', 'rb')\nparser = PDFParser(doc, fp)\ndoc.initialize()\n\nfor xref in doc.xrefs:\n    for objid in xref.objids():\n        try:\n            obj = doc.getobj(objid)\n        except:\n            continue\n        if isinstance(obj,dict) and 'Type' in obj and obj['Type'].name == \"Annot\":\n            if 'Subtype' in obj and obj['Subtype'].name == \"FileAttachment\":\n                # We have an attached file!\n                filespec = obj['FS']\n                # Look for embedded file; we could try to extract the\n                # filename too (and make sure it's an sws file). but that is platform dependent.  See page\n                # 182 (Section 3.10.2) of\n                # http://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf.\n                if 'EF' in filespec:\n                    fileobj = filespec['EF']['F']\n                    embeddedspec = filespec['EF']\n                    stdout.write(fileobj.resolve().get_data())\n                    # Just output the first file found.\n                    exit()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4825\n\n",
+    "body": "Assignee: boothby\n\nCC:  @dandrake\n\nThis is an ongoing discussion on sage-devel right now.\n\nBasically, we'd like to embed an sws file in a pdf and then be able to upload the pdf file to the notebook and have the notebook automatically extract the sws file and create the worksheet.\n\nWe can use pdfminer to extract the data.  Here's a sample program which extracts the first embedded file in a pdf named 'foo.pdf'.\n\n\n```\nfrom pdflib.pdfparser import PDFDocument, PDFParser\nimport sys\nstdout = sys.stdout\n\ndoc = PDFDocument()\nfp = file('foo.pdf', 'rb')\nparser = PDFParser(doc, fp)\ndoc.initialize()\n\nfor xref in doc.xrefs:\n    for objid in xref.objids():\n        try:\n            obj = doc.getobj(objid)\n        except:\n            continue\n        if isinstance(obj,dict) and 'Type' in obj and obj['Type'].name == \"Annot\":\n            if 'Subtype' in obj and obj['Subtype'].name == \"FileAttachment\":\n                # We have an attached file!\n                filespec = obj['FS']\n                # Look for embedded file; we could try to extract the\n                # filename too (and make sure it's an sws file). but that is platform dependent.  See page\n                # 182 (Section 3.10.2) of\n                # http://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf.\n                if 'EF' in filespec:\n                    fileobj = filespec['EF']['F']\n                    embeddedspec = filespec['EF']\n                    stdout.write(fileobj.resolve().get_data())\n                    # Just output the first file found.\n                    exit()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4825\n\n",
     "created_at": "2008-12-18T09:08:05Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_004825.json:
     "title": "extract worksheets embedded in pdf files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4825",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  ddrake
+CC:  @dandrake
 
 This is an ongoing discussion on sage-devel right now.
 
@@ -99,7 +99,7 @@ archive/issue_comments_036583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36583",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_036584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36584",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_036585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36585",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_036587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36587",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_036588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36588",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_036589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36589",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_036590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36590",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

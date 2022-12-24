@@ -3,7 +3,7 @@
 archive/issues_007735.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: interreduced_basis, python\n\nThere is a bug in the code of interreduced_basis in\n\nsage/rings/polynomial/multi_polynomial_ideal.py\n\n\n```\nsage: R=QQ['t'].fraction_field()['x,y']                                                                              \nsage: R.inject_variables()                                                                                       \nDefining x, y                                                                                                    \nsage: I=x*R                                                                                                      \nsage: I.interreduced_basis()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/luisfe/<ipython console> in <module>()\n\n/opt/SAGE/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in wrapper(*args, **kwds)\n    362         \"\"\"\n    363         with RedSBContext():\n--> 364             return func(*args, **kwds)\n    365\n    366     from sage.misc.sageinspect import sage_getsource\n\n/opt/SAGE/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in interreduced_basis(self)\n   1542                 for f in self._singular_().interred():\n   1543                     f = R(f)\n-> 1544                     ret.append(f.lc()^(-1)*f) # lead coeffs are not reduced by interred\n   1545                 s.option(\"set\",o)\n   1546             except TypeError:\n\n/opt/SAGE/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__xor__ (sage/structure/element.c:4469)()\n\nRuntimeError: Use ** for exponentiation, not '^', which means xor\nin Python, and has the wrong precedence.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7735\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: interreduced_basis, python\n\nThere is a bug in the code of interreduced_basis in\n\nsage/rings/polynomial/multi_polynomial_ideal.py\n\n\n```\nsage: R=QQ['t'].fraction_field()['x,y']                                                                              \nsage: R.inject_variables()                                                                                       \nDefining x, y                                                                                                    \nsage: I=x*R                                                                                                      \nsage: I.interreduced_basis()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/luisfe/<ipython console> in <module>()\n\n/opt/SAGE/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in wrapper(*args, **kwds)\n    362         \"\"\"\n    363         with RedSBContext():\n--> 364             return func(*args, **kwds)\n    365\n    366     from sage.misc.sageinspect import sage_getsource\n\n/opt/SAGE/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in interreduced_basis(self)\n   1542                 for f in self._singular_().interred():\n   1543                     f = R(f)\n-> 1544                     ret.append(f.lc()^(-1)*f) # lead coeffs are not reduced by interred\n   1545                 s.option(\"set\",o)\n   1546             except TypeError:\n\n/opt/SAGE/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__xor__ (sage/structure/element.c:4469)()\n\nRuntimeError: Use ** for exponentiation, not '^', which means xor\nin Python, and has the wrong precedence.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7735\n\n",
     "created_at": "2009-12-18T13:42:36Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007735.json:
     "title": "[with patch] incorrect sage exponentiation in interreduced_basis '^' vs '**'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7735",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: interreduced_basis, python
 
@@ -75,7 +75,7 @@ archive/issue_comments_066465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7735#issuecomment-66465",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -88,16 +88,16 @@ Patch to correct the problem and a test case
 archive/issue_comments_066466.json:
 ```json
 {
-    "body": "Attachment [interreduced.patch](tarball://root/attachments/some-uuid/ticket7735/interreduced.patch) by lftabera created at 2009-12-18 13:44:09",
+    "body": "Attachment [interreduced.patch](tarball://root/attachments/some-uuid/ticket7735/interreduced.patch) by @lftabera created at 2009-12-18 13:44:09",
     "created_at": "2009-12-18T13:44:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7735#issuecomment-66466",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [interreduced.patch](tarball://root/attachments/some-uuid/ticket7735/interreduced.patch) by lftabera created at 2009-12-18 13:44:09
+Attachment [interreduced.patch](tarball://root/attachments/some-uuid/ticket7735/interreduced.patch) by @lftabera created at 2009-12-18 13:44:09
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_066467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7735#issuecomment-66467",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_066468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7735#issuecomment-66468",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_066469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7735#issuecomment-66469",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_066470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7735#issuecomment-66470",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_066471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7735#issuecomment-66471",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

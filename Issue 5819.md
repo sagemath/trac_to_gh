@@ -14,7 +14,7 @@ archive/issues_005819.json:
     "title": "make sage -coverage require a loads/dumps test for each class defined in a file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5819",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: mabshoff
@@ -44,7 +44,7 @@ archive/issue_comments_045737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5819",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5819#issuecomment-45737",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

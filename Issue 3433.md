@@ -14,7 +14,7 @@ archive/issues_003433.json:
     "title": "notebook -- change it so worksheet text is *not* stored in the notebook/worksheet objects when pickling and unpickling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3433",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -59,7 +59,7 @@ archive/issue_comments_024199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3433#issuecomment-24199",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_024200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3433#issuecomment-24200",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

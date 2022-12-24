@@ -14,7 +14,7 @@ archive/issues_006116.json:
     "title": "error in real literal -> RIF conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6116",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -44,7 +44,7 @@ archive/issue_comments_048876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6116#issuecomment-48876",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_048877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6116#issuecomment-48877",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_048878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6116#issuecomment-48878",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_048879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6116#issuecomment-48879",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_048880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6116#issuecomment-48880",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_048881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6116#issuecomment-48881",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_048882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6116",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6116#issuecomment-48882",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

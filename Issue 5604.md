@@ -3,7 +3,7 @@
 archive/issues_005604.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu\n\nThis would make it easy to create purple, for example, as red+blue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5604\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\nThis would make it easy to create purple, for example, as red+blue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5604\n\n",
     "created_at": "2009-03-24T21:30:49Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005604.json:
     "title": "average Color objects when adding them together",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5604",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  mvngu
 
@@ -39,7 +39,7 @@ archive/issue_comments_043740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5604#issuecomment-43740",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_043743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5604",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5604#issuecomment-43743",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

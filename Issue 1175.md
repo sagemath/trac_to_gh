@@ -14,7 +14,7 @@ archive/issues_001175.json:
     "title": "circular link in sage/local/lib/python2.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1175",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: mabshoff
@@ -94,7 +94,7 @@ archive/issue_comments_007267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1175#issuecomment-7267",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_007268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1175#issuecomment-7268",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

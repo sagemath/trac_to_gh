@@ -3,7 +3,7 @@
 archive/issues_004782.json:
 ```json
 {
-    "body": "Assignee: was\n\nTry this carefully with your finger on kill -9:\n\n```\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\n```\n\n\nOn sage.math top shows pretty quickly over 6.9GB memory usage!\n\n```\n15392 was       25   0 8219m 6.9g  21m R  100 10.9   0:53.76 sage-ipython                                                    \n```\n\n\nThe discriminants aren't very big:\n\n```\nsage: R.<x> = QQ[]\nsage: disc(x^2 + 79*x-60)\n6481\nsage: disc(x^2 - 69*x + 38)\n4609\n```\n\n\nSame behavior with Proof false:\n\n\n```\nsage: proof.all(False)\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\n...hell....\n```\n\n\nGiving both polys at once (which maybe use polcompositum) works:\n\n```\nsage: NumberField([x^2 + 79*x-60, x^2 - 69*x + 38], 'a')\n\n  ***   Warning: insufficient precision for fundamental units, not given.\nNumber Field in a0 with defining polynomial x^2 + 79*x - 60 over its base field\n```\n\n\nBasically there is something very wrong with how we make relative fields... probably because of something very very wrong in the core of pari itself (and it's relative number fields). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4782\n\n",
+    "body": "Assignee: @williamstein\n\nTry this carefully with your finger on kill -9:\n\n```\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\n```\n\n\nOn sage.math top shows pretty quickly over 6.9GB memory usage!\n\n```\n15392 was       25   0 8219m 6.9g  21m R  100 10.9   0:53.76 sage-ipython                                                    \n```\n\n\nThe discriminants aren't very big:\n\n```\nsage: R.<x> = QQ[]\nsage: disc(x^2 + 79*x-60)\n6481\nsage: disc(x^2 - 69*x + 38)\n4609\n```\n\n\nSame behavior with Proof false:\n\n\n```\nsage: proof.all(False)\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\n...hell....\n```\n\n\nGiving both polys at once (which maybe use polcompositum) works:\n\n```\nsage: NumberField([x^2 + 79*x-60, x^2 - 69*x + 38], 'a')\n\n  ***   Warning: insufficient precision for fundamental units, not given.\nNumber Field in a0 with defining polynomial x^2 + 79*x - 60 over its base field\n```\n\n\nBasically there is something very wrong with how we make relative fields... probably because of something very very wrong in the core of pari itself (and it's relative number fields). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4782\n\n",
     "created_at": "2008-12-13T03:48:49Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004782.json:
     "title": "construction of some relative quadratic extensions is SERIOUSLY FRICKIN's FOO-bar'd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4782",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Try this carefully with your finger on kill -9:
 
@@ -82,7 +82,7 @@ archive/issue_comments_036247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36247",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_036248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36248",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_036249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36249",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_036250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36250",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_036251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36251",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_036252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36252",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_036253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36253",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_036254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36254",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_036255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36255",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_036261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36261",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_036262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36262",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_036263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36263",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_036264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36264",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -533,7 +533,7 @@ archive/issue_comments_036265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36265",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

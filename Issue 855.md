@@ -3,7 +3,7 @@
 archive/issues_000855.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt would be very helpful if \"sage -optional\" and \"sage -experimental\" listed one- or two-sentence descriptions of each package.  (Several of the packages I had to look up using Google.  Also, it was only by accident that I discovered that \"axiom4sage\" was the complete axiom distribution, rather than just an axiom interface.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/855\n\n",
+    "body": "Assignee: @williamstein\n\nIt would be very helpful if \"sage -optional\" and \"sage -experimental\" listed one- or two-sentence descriptions of each package.  (Several of the packages I had to look up using Google.  Also, it was only by accident that I discovered that \"axiom4sage\" was the complete axiom distribution, rather than just an axiom interface.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/855\n\n",
     "created_at": "2007-10-12T01:06:43Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_000855.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It would be very helpful if "sage -optional" and "sage -experimental" listed one- or two-sentence descriptions of each package.  (Several of the packages I had to look up using Google.  Also, it was only by accident that I discovered that "axiom4sage" was the complete axiom distribution, rather than just an axiom interface.)
 
@@ -37,7 +37,7 @@ archive/issue_comments_005298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5298",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_005299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5299",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_005300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5300",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_005301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5301",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_005302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/855",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5302",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008219.json:
     "title": "show(...) is now broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8219",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_072538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8219#issuecomment-72538",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_072540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8219#issuecomment-72540",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_072541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8219#issuecomment-72541",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_072542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8219#issuecomment-72542",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_072543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8219#issuecomment-72543",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

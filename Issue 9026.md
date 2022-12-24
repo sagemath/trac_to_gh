@@ -3,7 +3,7 @@
 archive/issues_009026.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  dimpase jsp mvngu jhpalmieri robertw was\n\nThe following is list of the issues that are currently preventing Sage build on either\n\n* OpenSolaris (aka Solaris 11) on Intel/AMD x64. (e.g. 'disk')\n* Solaris 10 on Intel/AMD (e.g. 'fulva')\n* Solaris 10 on SPARC (e.g. 't2')\n\nThe list can be added as new problems are found, making what William calls a 'metaticket' \n\nPlease put \n* \"yes\" if the trac ticket is known, or one might reasonably expect it to cause a problem on a particular platform.\n* \"no\" if one knows the problem does not exist on that platform, or one reasonably expect it will not be an issue. \n* \"unknow\" if one can not determine if it will be an issue. \n\nAlthough OpenSolaris can run on the SPARC platform, very few people run it, so there is little to be gained by tracking issues on that platform. (David Kirkby does not have OpenSolaris installed on any of his SPARC systems)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9026\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @dimpase @jaapspies mvngu @jhpalmieri robertw @williamstein\n\nThe following is list of the issues that are currently preventing Sage build on either\n\n* OpenSolaris (aka Solaris 11) on Intel/AMD x64. (e.g. 'disk')\n* Solaris 10 on Intel/AMD (e.g. 'fulva')\n* Solaris 10 on SPARC (e.g. 't2')\n\nThe list can be added as new problems are found, making what William calls a 'metaticket' \n\nPlease put \n* \"yes\" if the trac ticket is known, or one might reasonably expect it to cause a problem on a particular platform.\n* \"no\" if one knows the problem does not exist on that platform, or one reasonably expect it will not be an issue. \n* \"unknow\" if one can not determine if it will be an issue. \n\nAlthough OpenSolaris can run on the SPARC platform, very few people run it, so there is little to be gained by tracking issues on that platform. (David Kirkby does not have OpenSolaris installed on any of his SPARC systems)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9026\n\n",
     "created_at": "2010-05-24T00:14:01Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009026.json:
 ```
 Assignee: drkirkby
 
-CC:  dimpase jsp mvngu jhpalmieri robertw was
+CC:  @dimpase @jaapspies mvngu @jhpalmieri robertw @williamstein
 
 The following is list of the issues that are currently preventing Sage build on either
 
@@ -53,7 +53,7 @@ archive/issue_comments_083513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9026#issuecomment-83513",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_083516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9026#issuecomment-83516",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_083517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9026#issuecomment-83517",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_083520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9026#issuecomment-83520",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_083521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9026#issuecomment-83521",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_083522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9026#issuecomment-83522",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_083523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9026#issuecomment-83523",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_083524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9026",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9026#issuecomment-83524",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009906.json:
 ```json
 {
-    "body": "Assignee: tdb\n\nCC:  jason mhansen\n\nKeywords: generality, decorators\n\nIn plot.misc there are some generally usable decorators for various nice stuff. These should be moved to a general library so other modules can use them without illogically depending on plot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9907\n\n",
+    "body": "Assignee: tdb\n\nCC:  @jasongrout @mwhansen\n\nKeywords: generality, decorators\n\nIn plot.misc there are some generally usable decorators for various nice stuff. These should be moved to a general library so other modules can use them without illogically depending on plot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9907\n\n",
     "created_at": "2010-09-14T06:28:56Z",
     "labels": [
         "relocation",
@@ -14,12 +14,12 @@ archive/issues_009906.json:
     "title": "Move generally usable decorators from plot.misc to misc.decorators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9906",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 Assignee: tdb
 
-CC:  jason mhansen
+CC:  @jasongrout @mwhansen
 
 Keywords: generality, decorators
 
@@ -41,7 +41,7 @@ archive/issue_comments_098518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98518",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_098519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98519",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_098520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98520",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_098521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98521",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_098522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98522",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_098523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98523",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_098524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98524",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_098525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98525",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_098526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98526",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_098527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98527",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_098528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98528",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_098529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98529",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -337,16 +337,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_098530.json:
 ```json
 {
-    "body": "Changing assignee from tdb to jsrn.",
+    "body": "Changing assignee from tdb to @johanrosenkilde.",
     "created_at": "2010-09-23T12:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98530",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
-Changing assignee from tdb to jsrn.
+Changing assignee from tdb to @johanrosenkilde.
 
 
 
@@ -360,7 +360,7 @@ archive/issue_comments_098531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98531",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_098532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98532",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_098533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98533",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_098534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98534",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_098535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98535",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_098536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98536",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -464,16 +464,16 @@ apply only this patch; rebased to 4.6.alpha1+some patches
 archive/issue_comments_098537.json:
 ```json
 {
-    "body": "Attachment [trac_9907_move_decorators.patch](tarball://root/attachments/some-uuid/ticket9907/trac_9907_move_decorators.patch) by jsrn created at 2010-10-05 09:39:11\n\nReplying to [comment:17 jason]:\n> Can I delete the .2.patch file, then?\nSure; I just don't have the privileges to do that myself.",
+    "body": "Attachment [trac_9907_move_decorators.patch](tarball://root/attachments/some-uuid/ticket9907/trac_9907_move_decorators.patch) by @johanrosenkilde created at 2010-10-05 09:39:11\n\nReplying to [comment:17 jason]:\n> Can I delete the .2.patch file, then?\nSure; I just don't have the privileges to do that myself.",
     "created_at": "2010-10-05T09:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98537",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
-Attachment [trac_9907_move_decorators.patch](tarball://root/attachments/some-uuid/ticket9907/trac_9907_move_decorators.patch) by jsrn created at 2010-10-05 09:39:11
+Attachment [trac_9907_move_decorators.patch](tarball://root/attachments/some-uuid/ticket9907/trac_9907_move_decorators.patch) by @johanrosenkilde created at 2010-10-05 09:39:11
 
 Replying to [comment:17 jason]:
 > Can I delete the .2.patch file, then?
@@ -491,7 +491,7 @@ archive/issue_comments_098538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98538",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -504,16 +504,16 @@ This needs to be coordinated with #10107.
 archive/issue_comments_098539.json:
 ```json
 {
-    "body": "Attachment [trac_9907_move_decorators.2.patch](tarball://root/attachments/some-uuid/ticket9907/trac_9907_move_decorators.2.patch) by jsrn created at 2010-11-02 13:58:34\n\nRebased to 4.6. Still requires first applying patch for Trac #9919",
+    "body": "Attachment [trac_9907_move_decorators.2.patch](tarball://root/attachments/some-uuid/ticket9907/trac_9907_move_decorators.2.patch) by @johanrosenkilde created at 2010-11-02 13:58:34\n\nRebased to 4.6. Still requires first applying patch for Trac #9919",
     "created_at": "2010-11-02T13:58:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98539",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
-Attachment [trac_9907_move_decorators.2.patch](tarball://root/attachments/some-uuid/ticket9907/trac_9907_move_decorators.2.patch) by jsrn created at 2010-11-02 13:58:34
+Attachment [trac_9907_move_decorators.2.patch](tarball://root/attachments/some-uuid/ticket9907/trac_9907_move_decorators.2.patch) by @johanrosenkilde created at 2010-11-02 13:58:34
 
 Rebased to 4.6. Still requires first applying patch for Trac #9919
 
@@ -529,7 +529,7 @@ archive/issue_comments_098540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98540",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -547,7 +547,7 @@ archive/issue_comments_098541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98541",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -565,7 +565,7 @@ archive/issue_comments_098542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98542",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -583,7 +583,7 @@ archive/issue_comments_098543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9906#issuecomment-98543",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

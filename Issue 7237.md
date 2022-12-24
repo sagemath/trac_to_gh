@@ -14,7 +14,7 @@ archive/issues_007237.json:
     "title": "sagenb: when printing output shown twice",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7237",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_060035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7237#issuecomment-60035",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_060036.json:
 ```json
 {
-    "body": "Attachment [trac_7237.patch](tarball://root/attachments/some-uuid/ticket7237/trac_7237.patch) by was created at 2009-10-18 04:02:30",
+    "body": "Attachment [trac_7237.patch](tarball://root/attachments/some-uuid/ticket7237/trac_7237.patch) by @williamstein created at 2009-10-18 04:02:30",
     "created_at": "2009-10-18T04:02:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7237#issuecomment-60036",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7237.patch](tarball://root/attachments/some-uuid/ticket7237/trac_7237.patch) by was created at 2009-10-18 04:02:30
+Attachment [trac_7237.patch](tarball://root/attachments/some-uuid/ticket7237/trac_7237.patch) by @williamstein created at 2009-10-18 04:02:30
 
 
 
@@ -68,16 +68,16 @@ Attachment [trac_7237.patch](tarball://root/attachments/some-uuid/ticket7237/tra
 archive/issue_comments_060037.json:
 ```json
 {
-    "body": "Attachment [trac_7237-part2.patch](tarball://root/attachments/some-uuid/ticket7237/trac_7237-part2.patch) by timdumol created at 2009-10-18 04:15:32\n\nPatch works. Printing no longer prints wrapped an unwrapped text. Positive review.",
+    "body": "Attachment [trac_7237-part2.patch](tarball://root/attachments/some-uuid/ticket7237/trac_7237-part2.patch) by @TimDumol created at 2009-10-18 04:15:32\n\nPatch works. Printing no longer prints wrapped an unwrapped text. Positive review.",
     "created_at": "2009-10-18T04:15:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7237#issuecomment-60037",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7237-part2.patch](tarball://root/attachments/some-uuid/ticket7237/trac_7237-part2.patch) by timdumol created at 2009-10-18 04:15:32
+Attachment [trac_7237-part2.patch](tarball://root/attachments/some-uuid/ticket7237/trac_7237-part2.patch) by @TimDumol created at 2009-10-18 04:15:32
 
 Patch works. Printing no longer prints wrapped an unwrapped text. Positive review.
 
@@ -93,7 +93,7 @@ archive/issue_comments_060038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7237#issuecomment-60038",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_060039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7237#issuecomment-60039",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_060040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7237#issuecomment-60040",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005592.json:
     "title": "cell insertion bar does not come up before a text cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5592",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_043563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5592#issuecomment-43563",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_043564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5592#issuecomment-43564",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

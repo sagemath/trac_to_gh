@@ -3,7 +3,7 @@
 archive/issues_005727.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: doctests\n\nThe attached patch adds doctests for 28 previously undoctested functions in the sage/modular directory, and fixes 2 small bugs uncovered in the process: one in pickling of arithmetic subgroups defined by permutations, and one in dirichlet characters (galois_orbits() returned meaningless garbage when the base ring wasn't an integral domain). \n\nThis brings the doctest coverage to 100% for everything *except* the three big subdirectories modform/, modsym/ and hecke/. I will get to work on these next.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5727\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: doctests\n\nThe attached patch adds doctests for 28 previously undoctested functions in the sage/modular directory, and fixes 2 small bugs uncovered in the process: one in pickling of arithmetic subgroups defined by permutations, and one in dirichlet characters (galois_orbits() returned meaningless garbage when the base ring wasn't an integral domain). \n\nThis brings the doctest coverage to 100% for everything *except* the three big subdirectories modform/, modsym/ and hecke/. I will get to work on these next.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5727\n\n",
     "created_at": "2009-04-09T18:05:44Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_005727.json:
     "title": "Improve doctest coverage for sage/modular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5727",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: doctests
 
@@ -41,7 +41,7 @@ archive/issue_comments_044750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5727#issuecomment-44750",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_044752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5727#issuecomment-44752",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,16 +125,16 @@ These are trivial changes, so I've posted a tiny patch that adds them and given 
 archive/issue_comments_044753.json:
 ```json
 {
-    "body": "Attachment [trac_5727_referee.patch](tarball://root/attachments/some-uuid/ticket5727/trac_5727_referee.patch) by was created at 2009-04-10 00:51:29\n\napply this after applying the above patch",
+    "body": "Attachment [trac_5727_referee.patch](tarball://root/attachments/some-uuid/ticket5727/trac_5727_referee.patch) by @williamstein created at 2009-04-10 00:51:29\n\napply this after applying the above patch",
     "created_at": "2009-04-10T00:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5727#issuecomment-44753",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5727_referee.patch](tarball://root/attachments/some-uuid/ticket5727/trac_5727_referee.patch) by was created at 2009-04-10 00:51:29
+Attachment [trac_5727_referee.patch](tarball://root/attachments/some-uuid/ticket5727/trac_5727_referee.patch) by @williamstein created at 2009-04-10 00:51:29
 
 apply this after applying the above patch
 
@@ -190,7 +190,7 @@ archive/issue_comments_044756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5727#issuecomment-44756",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_044757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5727#issuecomment-44757",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_044758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5727#issuecomment-44758",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

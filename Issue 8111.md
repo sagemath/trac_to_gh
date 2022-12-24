@@ -3,7 +3,7 @@
 archive/issues_008111.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe GCD of rationals is still unclear (see trac 3214), and leads to definite problems with reduce(). \n\n\n```\nK.<k>= QQ[];\nprint gcd(64,256)\nprint gcd(K(64),K(256))\nprint gcd(64*k^2+128,64*k^3+256)\nfrac = (64*k^2+128)/(64*k^3+256)\nfrac.reduce()\nprint frac\n```\n\ngives\n\n```\n64\n1\n1\n(64*k^2 + 128)/(64*k^3 + 256)\n```\n\nThe last line in particular is false, according to me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8111\n\n",
+    "body": "Assignee: @aghitza\n\nThe GCD of rationals is still unclear (see trac 3214), and leads to definite problems with reduce(). \n\n\n```\nK.<k>= QQ[];\nprint gcd(64,256)\nprint gcd(K(64),K(256))\nprint gcd(64*k^2+128,64*k^3+256)\nfrac = (64*k^2+128)/(64*k^3+256)\nfrac.reduce()\nprint frac\n```\n\ngives\n\n```\n64\n1\n1\n(64*k^2 + 128)/(64*k^3 + 256)\n```\n\nThe last line in particular is false, according to me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8111\n\n",
     "created_at": "2010-01-28T15:04:16Z",
     "labels": [
         "basic arithmetic",
@@ -17,7 +17,7 @@ archive/issues_008111.json:
     "user": "pdehaye"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The GCD of rationals is still unclear (see trac 3214), and leads to definite problems with reduce(). 
 
@@ -59,7 +59,7 @@ archive/issue_comments_071199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8111#issuecomment-71199",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_071200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8111#issuecomment-71200",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_071201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8111#issuecomment-71201",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_071202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8111#issuecomment-71202",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_071203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8111#issuecomment-71203",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_071206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8111#issuecomment-71206",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_071207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8111#issuecomment-71207",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_071208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8111#issuecomment-71208",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_071209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8111#issuecomment-71209",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_071212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8111#issuecomment-71212",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_071214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8111#issuecomment-71214",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

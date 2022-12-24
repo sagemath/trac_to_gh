@@ -3,7 +3,7 @@
 archive/issues_002916.json:
 ```json
 {
-    "body": "Assignee: was\n\nAs reported by Kiran Kedlaya on sage-devel:\n\n\n```\nsage: F9.<a> = GF(9); F81.<b> = GF(81); F81(a)\n0\n```\n\n\nThis is caused by a missing 'else' in the `FiniteField_givaro` constructor. The attached patch throws a `TypeError` in this case and adds this example as a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2916\n\n",
+    "body": "Assignee: @williamstein\n\nAs reported by Kiran Kedlaya on sage-devel:\n\n\n```\nsage: F9.<a> = GF(9); F81.<b> = GF(81); F81(a)\n0\n```\n\n\nThis is caused by a missing 'else' in the `FiniteField_givaro` constructor. The attached patch throws a `TypeError` in this case and adds this example as a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2916\n\n",
     "created_at": "2008-04-14T14:57:13Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002916.json:
     "title": "[with patch; needs review] invalid coercion between non-prime finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2916",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 As reported by Kiran Kedlaya on sage-devel:
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2916
 archive/issue_comments_020085.json:
 ```json
 {
-    "body": "Attachment [finite_field_coercion.patch](tarball://root/attachments/some-uuid/ticket2916/finite_field_coercion.patch) by wjp created at 2008-04-14 14:57:38",
+    "body": "Attachment [finite_field_coercion.patch](tarball://root/attachments/some-uuid/ticket2916/finite_field_coercion.patch) by @wjp created at 2008-04-14 14:57:38",
     "created_at": "2008-04-14T14:57:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2916#issuecomment-20085",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [finite_field_coercion.patch](tarball://root/attachments/some-uuid/ticket2916/finite_field_coercion.patch) by wjp created at 2008-04-14 14:57:38
+Attachment [finite_field_coercion.patch](tarball://root/attachments/some-uuid/ticket2916/finite_field_coercion.patch) by @wjp created at 2008-04-14 14:57:38
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_020087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2916#issuecomment-20087",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -135,7 +135,7 @@ archive/issue_comments_087464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9286#issuecomment-87464",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_087465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9286#issuecomment-87465",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_087466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9286#issuecomment-87466",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_087467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9286#issuecomment-87467",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_087468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9286#issuecomment-87468",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_087469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9286#issuecomment-87469",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_087470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9286#issuecomment-87470",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_087471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9286#issuecomment-87471",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

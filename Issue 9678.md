@@ -3,7 +3,7 @@
 archive/issues_009678.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCC:  leif\n\nKeywords: interrupt, error, c, cython\n\nThere are lots of things to be improved in the interrupt handling routines in c_lib/src/interrupt.c and c_lib/include/interrupt.h, such as:\n\n* using sigaction() instead of signal()\n* having an interface for more general errors which are not signals\n* testing!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9678\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @nexttime\n\nKeywords: interrupt, error, c, cython\n\nThere are lots of things to be improved in the interrupt handling routines in c_lib/src/interrupt.c and c_lib/include/interrupt.h, such as:\n\n* using sigaction() instead of signal()\n* having an interface for more general errors which are not signals\n* testing!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9678\n\n",
     "created_at": "2010-08-03T21:33:54Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_009678.json:
     "title": "Rewrite interrupt handling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9678",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
-CC:  leif
+CC:  @nexttime
 
 Keywords: interrupt, error, c, cython
 
@@ -45,7 +45,7 @@ archive/issue_comments_094081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94081",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -58,16 +58,16 @@ Changing component from misc to c_lib.
 archive/issue_comments_094082.json:
 ```json
 {
-    "body": "Changing assignee from jason to tba.",
+    "body": "Changing assignee from @jasongrout to tba.",
     "created_at": "2010-09-16T07:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94082",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from jason to tba.
+Changing assignee from @jasongrout to tba.
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_094083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94083",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_094084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94084",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing status from new to needs_work.
 archive/issue_comments_094085.json:
 ```json
 {
-    "body": "Changing assignee from tba to jdemeyer.",
+    "body": "Changing assignee from tba to @jdemeyer.",
     "created_at": "2010-11-14T17:33:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94085",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from tba to jdemeyer.
+Changing assignee from tba to @jdemeyer.
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_094086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94086",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -148,16 +148,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_094087.json:
 ```json
 {
-    "body": "Attachment [9678.patch](tarball://root/attachments/some-uuid/ticket9678/9678.patch) by jdemeyer created at 2011-01-15 05:04:48",
+    "body": "Attachment [9678.patch](tarball://root/attachments/some-uuid/ticket9678/9678.patch) by @jdemeyer created at 2011-01-15 05:04:48",
     "created_at": "2011-01-15T05:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94087",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9678.patch](tarball://root/attachments/some-uuid/ticket9678/9678.patch) by jdemeyer created at 2011-01-15 05:04:48
+Attachment [9678.patch](tarball://root/attachments/some-uuid/ticket9678/9678.patch) by @jdemeyer created at 2011-01-15 05:04:48
 
 
 
@@ -171,7 +171,7 @@ archive/issue_comments_094088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94088",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_094089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94089",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_094090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94090",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_094091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94091",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_094092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94092",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_094093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94093",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_094094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94094",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_094095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94095",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_094096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94096",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_094097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94097",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_094098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94098",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_094099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94099",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_094100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94100",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

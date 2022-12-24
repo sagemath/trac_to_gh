@@ -14,7 +14,7 @@ archive/issues_003610.json:
     "title": "__contains__ for RealIntervalFields does not work correctly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3610",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: somebody
@@ -83,7 +83,7 @@ archive/issue_comments_025498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3610#issuecomment-25498",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

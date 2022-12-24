@@ -3,7 +3,7 @@
 archive/issues_003843.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nNotice the edgeedge.\n\nAlso a complaint - I tried for 15 minutes and couldn't figure out how to label the edges!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3843\n\n",
+    "body": "Assignee: @rlmill\n\nNotice the edgeedge.\n\nAlso a complaint - I tried for 15 minutes and couldn't figure out how to label the edges!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3843\n\n",
     "created_at": "2008-08-13T21:41:36Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003843.json:
     "title": "typo in graphs: \"edge_labels -- whether to print edgeedge labels. By default, False,                 but\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3843",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Notice the edgeedge.
 
@@ -39,7 +39,7 @@ archive/issue_comments_027329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3843#issuecomment-27329",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -60,16 +60,16 @@ I don't see how to make it easier to figure out...
 archive/issue_comments_027330.json:
 ```json
 {
-    "body": "Attachment [trac_3843-come_on.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-come_on.patch) by rlm created at 2008-08-13 22:18:56",
+    "body": "Attachment [trac_3843-come_on.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-come_on.patch) by @rlmill created at 2008-08-13 22:18:56",
     "created_at": "2008-08-13T22:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3843#issuecomment-27330",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3843-come_on.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-come_on.patch) by rlm created at 2008-08-13 22:18:56
+Attachment [trac_3843-come_on.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-come_on.patch) by @rlmill created at 2008-08-13 22:18:56
 
 
 
@@ -78,16 +78,16 @@ Attachment [trac_3843-come_on.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_027331.json:
 ```json
 {
-    "body": "Attachment [trac_3843-plot-trees.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-plot-trees.patch) by rlm created at 2008-08-13 23:32:49",
+    "body": "Attachment [trac_3843-plot-trees.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-plot-trees.patch) by @rlmill created at 2008-08-13 23:32:49",
     "created_at": "2008-08-13T23:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3843#issuecomment-27331",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3843-plot-trees.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-plot-trees.patch) by rlm created at 2008-08-13 23:32:49
+Attachment [trac_3843-plot-trees.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-plot-trees.patch) by @rlmill created at 2008-08-13 23:32:49
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_027332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3843#issuecomment-27332",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_027334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3843#issuecomment-27334",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_027335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3843#issuecomment-27335",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -174,16 +174,16 @@ diff file with my suggested changes
 archive/issue_comments_027336.json:
 ```json
 {
-    "body": "Attachment [trac_3843-reviewer-suggestions.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-reviewer-suggestions.patch) by rlm created at 2008-08-14 17:53:50\n\n+1 to saliola's patch. I haven't tested it, but I completely agree with the idea.",
+    "body": "Attachment [trac_3843-reviewer-suggestions.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-reviewer-suggestions.patch) by @rlmill created at 2008-08-14 17:53:50\n\n+1 to saliola's patch. I haven't tested it, but I completely agree with the idea.",
     "created_at": "2008-08-14T17:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3843#issuecomment-27336",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3843-reviewer-suggestions.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-reviewer-suggestions.patch) by rlm created at 2008-08-14 17:53:50
+Attachment [trac_3843-reviewer-suggestions.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-reviewer-suggestions.patch) by @rlmill created at 2008-08-14 17:53:50
 
 +1 to saliola's patch. I haven't tested it, but I completely agree with the idea.
 
@@ -199,7 +199,7 @@ archive/issue_comments_027337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3843#issuecomment-27337",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -214,16 +214,16 @@ Sorry, was. You were right. :-)
 archive/issue_comments_027338.json:
 ```json
 {
-    "body": "Attachment [trac_3843-plot-options.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-plot-options.patch) by rlm created at 2008-08-16 21:06:20",
+    "body": "Attachment [trac_3843-plot-options.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-plot-options.patch) by @rlmill created at 2008-08-16 21:06:20",
     "created_at": "2008-08-16T21:06:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3843#issuecomment-27338",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3843-plot-options.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-plot-options.patch) by rlm created at 2008-08-16 21:06:20
+Attachment [trac_3843-plot-options.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-plot-options.patch) by @rlmill created at 2008-08-16 21:06:20
 
 
 
@@ -274,7 +274,7 @@ archive/issue_comments_027340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3843#issuecomment-27340",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -295,16 +295,16 @@ Total time for all tests: 300.7 seconds
 archive/issue_comments_027341.json:
 ```json
 {
-    "body": "Attachment [trac_3843-flat-and-fixed.2.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-flat-and-fixed.2.patch) by rlm created at 2008-08-30 19:58:50",
+    "body": "Attachment [trac_3843-flat-and-fixed.2.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-flat-and-fixed.2.patch) by @rlmill created at 2008-08-30 19:58:50",
     "created_at": "2008-08-30T19:58:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3843#issuecomment-27341",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3843-flat-and-fixed.2.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-flat-and-fixed.2.patch) by rlm created at 2008-08-30 19:58:50
+Attachment [trac_3843-flat-and-fixed.2.patch](tarball://root/attachments/some-uuid/ticket3843/trac_3843-flat-and-fixed.2.patch) by @rlmill created at 2008-08-30 19:58:50
 
 
 

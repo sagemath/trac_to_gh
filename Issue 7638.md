@@ -3,7 +3,7 @@
 archive/issues_007638.json:
 ```json
 {
-    "body": "Assignee: was\n\n*64-bit only*\n\nDue to unfortunate parenthesis, it is possible to create 2^31 by 10-matrices, but not 10 by 2^31. See patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/7638\n\n",
+    "body": "Assignee: @williamstein\n\n*64-bit only*\n\nDue to unfortunate parenthesis, it is possible to create 2^31 by 10-matrices, but not 10 by 2^31. See patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/7638\n\n",
     "created_at": "2009-12-09T14:02:41Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_007638.json:
     "user": "dagss"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 *64-bit only*
 
@@ -75,7 +75,7 @@ archive/issue_comments_065281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7638#issuecomment-65281",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_065282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7638#issuecomment-65282",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,16 +108,16 @@ I had to rebase the patch for sage-4.3.alpha1; rebased patch attached.
 archive/issue_comments_065283.json:
 ```json
 {
-    "body": "Attachment [trac_7638-rebase.patch](tarball://root/attachments/some-uuid/ticket7638/trac_7638-rebase.patch) by mhansen created at 2009-12-10 14:24:23",
+    "body": "Attachment [trac_7638-rebase.patch](tarball://root/attachments/some-uuid/ticket7638/trac_7638-rebase.patch) by @mwhansen created at 2009-12-10 14:24:23",
     "created_at": "2009-12-10T14:24:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7638#issuecomment-65283",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7638-rebase.patch](tarball://root/attachments/some-uuid/ticket7638/trac_7638-rebase.patch) by mhansen created at 2009-12-10 14:24:23
+Attachment [trac_7638-rebase.patch](tarball://root/attachments/some-uuid/ticket7638/trac_7638-rebase.patch) by @mwhansen created at 2009-12-10 14:24:23
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_065284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7638#issuecomment-65284",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

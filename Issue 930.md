@@ -3,7 +3,7 @@
 archive/issues_000930.json:
 ```json
 {
-    "body": "Assignee: malb\n\nGiven a zero-dimensional ideal $I$ the attached patch implements finding the finite set of points on the variety $V(I)$.\n\nIssue created by migration from https://trac.sagemath.org/ticket/930\n\n",
+    "body": "Assignee: @malb\n\nGiven a zero-dimensional ideal $I$ the attached patch implements finding the finite set of points on the variety $V(I)$.\n\nIssue created by migration from https://trac.sagemath.org/ticket/930\n\n",
     "created_at": "2007-10-19T17:33:56Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_000930.json:
     "title": "[with patch] MPolynomialIdeal.variety",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/930",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Given a zero-dimensional ideal $I$ the attached patch implements finding the finite set of points on the variety $V(I)$.
 
@@ -37,7 +37,7 @@ archive/issue_comments_005686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/930#issuecomment-5686",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,13 +50,13 @@ Resolution: fixed
 archive/issue_comments_005687.json:
 ```json
 {
-    "body": "Attachment [variety.patch](tarball://root/attachments/some-uuid/ticket930/variety.patch) by was created at 2007-10-21 03:23:12",
+    "body": "Attachment [variety.patch](tarball://root/attachments/some-uuid/ticket930/variety.patch) by @williamstein created at 2007-10-21 03:23:12",
     "created_at": "2007-10-21T03:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/930#issuecomment-5687",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [variety.patch](tarball://root/attachments/some-uuid/ticket930/variety.patch) by was created at 2007-10-21 03:23:12
+Attachment [variety.patch](tarball://root/attachments/some-uuid/ticket930/variety.patch) by @williamstein created at 2007-10-21 03:23:12

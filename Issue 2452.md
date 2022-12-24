@@ -3,7 +3,7 @@
 archive/issues_002452.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  gmhossain\n\nSymbolic heaviside step function is needed for ease of plotting.  Right now you must \n\n\n```\nsage: def u(x):\n    if(x<0):\n        return 0\n    else:\n        return 1*cos(x)\nsage: plot(u,-5,5)\n```\n\ninstead of\n\n```\n plot(heaviside(t)*cos(t),t,-5,5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2452\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @golam-m-hossain\n\nSymbolic heaviside step function is needed for ease of plotting.  Right now you must \n\n\n```\nsage: def u(x):\n    if(x<0):\n        return 0\n    else:\n        return 1*cos(x)\nsage: plot(u,-5,5)\n```\n\ninstead of\n\n```\n plot(heaviside(t)*cos(t),t,-5,5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2452\n\n",
     "created_at": "2008-03-10T07:52:27Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_002452.json:
     "title": "heaviside step function needed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2452",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  gmhossain
+CC:  @golam-m-hossain
 
 Symbolic heaviside step function is needed for ease of plotting.  Right now you must 
 
@@ -56,7 +56,7 @@ archive/issue_comments_016575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16575",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -79,16 +79,16 @@ Of course, improvements to Piecewise would be great...
 archive/issue_comments_016576.json:
 ```json
 {
-    "body": "Changing assignee from was to gfurnish.",
+    "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-16T20:12:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16576",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was to gfurnish.
+Changing assignee from @williamstein to @garyfurnish.
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_016577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16577",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_016578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16578",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_016579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16579",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_016580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16580",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_016581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16581",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_016582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16582",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_016583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16583",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_016584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16584",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_016585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16585",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_016586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16586",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_016587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16587",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_016588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16588",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_016589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16589",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -536,7 +536,7 @@ archive/issue_comments_016590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16590",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_016591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16591",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -607,7 +607,7 @@ archive/issue_comments_016592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16592",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -641,16 +641,16 @@ Thanks.
 archive/issue_comments_016593.json:
 ```json
 {
-    "body": "Attachment [trac_2452-implements-Dirac-delta-Heaviside-and-Unit-step-functions.patch](tarball://root/attachments/some-uuid/ticket2452/trac_2452-implements-Dirac-delta-Heaviside-and-Unit-step-functions.patch) by gmhossain created at 2009-07-01 00:45:24",
+    "body": "Attachment [trac_2452-implements-Dirac-delta-Heaviside-and-Unit-step-functions.patch](tarball://root/attachments/some-uuid/ticket2452/trac_2452-implements-Dirac-delta-Heaviside-and-Unit-step-functions.patch) by @golam-m-hossain created at 2009-07-01 00:45:24",
     "created_at": "2009-07-01T00:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16593",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
-Attachment [trac_2452-implements-Dirac-delta-Heaviside-and-Unit-step-functions.patch](tarball://root/attachments/some-uuid/ticket2452/trac_2452-implements-Dirac-delta-Heaviside-and-Unit-step-functions.patch) by gmhossain created at 2009-07-01 00:45:24
+Attachment [trac_2452-implements-Dirac-delta-Heaviside-and-Unit-step-functions.patch](tarball://root/attachments/some-uuid/ticket2452/trac_2452-implements-Dirac-delta-Heaviside-and-Unit-step-functions.patch) by @golam-m-hossain created at 2009-07-01 00:45:24
 
 
 
@@ -664,7 +664,7 @@ archive/issue_comments_016594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16594",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -694,7 +694,7 @@ archive/issue_comments_016595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16595",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -723,7 +723,7 @@ archive/issue_comments_016596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16596",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -736,16 +736,16 @@ fix doctests in random_tests.py
 archive/issue_comments_016597.json:
 ```json
 {
-    "body": "Attachment [trac_2452-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket2452/trac_2452-doctest_fixes.patch) by burcin created at 2009-07-02 09:58:43\n\nThe failing doctests in sage/symbolic/random_tests.py is caused by this ticket. That function constructs a random expression, given all the symbolic functions defined in Sage. Since this patch adds new functions, the probability distribution, hence the result changes.\n\nI attached a small patch to fix these doctests.",
+    "body": "Attachment [trac_2452-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket2452/trac_2452-doctest_fixes.patch) by @burcin created at 2009-07-02 09:58:43\n\nThe failing doctests in sage/symbolic/random_tests.py is caused by this ticket. That function constructs a random expression, given all the symbolic functions defined in Sage. Since this patch adds new functions, the probability distribution, hence the result changes.\n\nI attached a small patch to fix these doctests.",
     "created_at": "2009-07-02T09:58:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16597",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_2452-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket2452/trac_2452-doctest_fixes.patch) by burcin created at 2009-07-02 09:58:43
+Attachment [trac_2452-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket2452/trac_2452-doctest_fixes.patch) by @burcin created at 2009-07-02 09:58:43
 
 The failing doctests in sage/symbolic/random_tests.py is caused by this ticket. That function constructs a random expression, given all the symbolic functions defined in Sage. Since this patch adds new functions, the probability distribution, hence the result changes.
 
@@ -763,7 +763,7 @@ archive/issue_comments_016598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16598",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -808,7 +808,7 @@ archive/issue_comments_016599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16599",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -828,7 +828,7 @@ archive/issue_comments_016600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2452#issuecomment-16600",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

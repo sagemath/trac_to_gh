@@ -3,7 +3,7 @@
 archive/issues_005413.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason\n\nAs discussed on sage-devel here: http://groups.google.com/group/sage-devel/browse_thread/thread/b1a03f8fc8ae8fcd/553773d7ba600ae7#553773d7ba600ae7\n\nI added deprecation warnings to the four affected __call__ functions (two for symbolic values, one for equations, one for matrices), and fixed almost all the warnings in all the doctests other than the doctests specifically for those __call__ methods.\n\nThere's one set of warnings that I didn't figure out how to fix (in piecewise.py), so I just added the warning to the expected output for now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5413\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nAs discussed on sage-devel here: http://groups.google.com/group/sage-devel/browse_thread/thread/b1a03f8fc8ae8fcd/553773d7ba600ae7#553773d7ba600ae7\n\nI added deprecation warnings to the four affected __call__ functions (two for symbolic values, one for equations, one for matrices), and fixed almost all the warnings in all the doctests other than the doctests specifically for those __call__ methods.\n\nThere's one set of warnings that I didn't figure out how to fix (in piecewise.py), so I just added the warning to the expected output for now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5413\n\n",
     "created_at": "2009-03-01T18:00:29Z",
     "labels": [
         "calculus",
@@ -17,9 +17,9 @@ archive/issues_005413.json:
     "user": "cwitty"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason
+CC:  @jasongrout
 
 As discussed on sage-devel here: http://groups.google.com/group/sage-devel/browse_thread/thread/b1a03f8fc8ae8fcd/553773d7ba600ae7#553773d7ba600ae7
 
@@ -91,7 +91,7 @@ archive/issue_comments_041853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5413#issuecomment-41853",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_041854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5413#issuecomment-41854",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_041855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5413#issuecomment-41855",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_041856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5413#issuecomment-41856",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_041858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5413#issuecomment-41858",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_041861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5413#issuecomment-41861",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_041862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5413#issuecomment-41862",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_041863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5413#issuecomment-41863",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_041864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5413#issuecomment-41864",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

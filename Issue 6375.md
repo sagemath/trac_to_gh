@@ -14,7 +14,7 @@ archive/issues_006375.json:
     "title": "Run sage once as part of install process to generate sage-flags.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6375",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: tbd
@@ -52,7 +52,7 @@ archive/issue_comments_051019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6375#issuecomment-51019",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_051020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6375",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6375#issuecomment-51020",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

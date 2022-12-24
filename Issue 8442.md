@@ -3,7 +3,7 @@
 archive/issues_008442.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  sage-combinat niles\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8442\n\n",
+    "body": "Assignee: mvngu\n\nCC:  sage-combinat @nilesjohnson\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8442\n\n",
     "created_at": "2010-03-05T03:08:27Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008442.json:
     "title": "Lie Methods and Related Combinatorics (tutorial)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8442",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 Assignee: mvngu
 
-CC:  sage-combinat niles
+CC:  sage-combinat @nilesjohnson
 
 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8442
 archive/issue_comments_075812.json:
 ```json
 {
-    "body": "Attachment [wcf1.png](tarball://root/attachments/some-uuid/ticket8442/wcf1.png) by bump created at 2010-03-05 03:16:00\n\nThis patch adds a tutorial about Lie Methods and Related Combinatorics to Sage.\n\nApply the patch and also copy the file wcf1.png into $SAGE_ROOT/devel/sage-queue/doc/en/lie/. Then you can build the documentation with the commands:\n\nsage -docbuild lie html\n\nsage -docbuild lie pdf\n\nThere is supposed to be a chapter on Crystals but that is not written yet.",
+    "body": "Attachment [wcf1.png](tarball://root/attachments/some-uuid/ticket8442/wcf1.png) by @dwbump created at 2010-03-05 03:16:00\n\nThis patch adds a tutorial about Lie Methods and Related Combinatorics to Sage.\n\nApply the patch and also copy the file wcf1.png into $SAGE_ROOT/devel/sage-queue/doc/en/lie/. Then you can build the documentation with the commands:\n\nsage -docbuild lie html\n\nsage -docbuild lie pdf\n\nThere is supposed to be a chapter on Crystals but that is not written yet.",
     "created_at": "2010-03-05T03:16:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75812",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [wcf1.png](tarball://root/attachments/some-uuid/ticket8442/wcf1.png) by bump created at 2010-03-05 03:16:00
+Attachment [wcf1.png](tarball://root/attachments/some-uuid/ticket8442/wcf1.png) by @dwbump created at 2010-03-05 03:16:00
 
 This patch adds a tutorial about Lie Methods and Related Combinatorics to Sage.
 
@@ -62,16 +62,16 @@ There is supposed to be a chapter on Crystals but that is not written yet.
 archive/issue_comments_075813.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to bump.",
+    "body": "Changing assignee from mvngu to @dwbump.",
     "created_at": "2010-03-05T03:16:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75813",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Changing assignee from mvngu to bump.
+Changing assignee from mvngu to @dwbump.
 
 
 
@@ -80,16 +80,16 @@ Changing assignee from mvngu to bump.
 archive/issue_comments_075814.json:
 ```json
 {
-    "body": "Attachment [a2rho.png](tarball://root/attachments/some-uuid/ticket8442/a2rho.png) by bump created at 2010-03-09 04:27:57",
+    "body": "Attachment [a2rho.png](tarball://root/attachments/some-uuid/ticket8442/a2rho.png) by @dwbump created at 2010-03-09 04:27:57",
     "created_at": "2010-03-09T04:27:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75814",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [a2rho.png](tarball://root/attachments/some-uuid/ticket8442/a2rho.png) by bump created at 2010-03-09 04:27:57
+Attachment [a2rho.png](tarball://root/attachments/some-uuid/ticket8442/a2rho.png) by @dwbump created at 2010-03-09 04:27:57
 
 
 
@@ -98,16 +98,16 @@ Attachment [a2rho.png](tarball://root/attachments/some-uuid/ticket8442/a2rho.png
 archive/issue_comments_075815.json:
 ```json
 {
-    "body": "Attachment [standard1.png](tarball://root/attachments/some-uuid/ticket8442/standard1.png) by bump created at 2010-03-09 04:28:41",
+    "body": "Attachment [standard1.png](tarball://root/attachments/some-uuid/ticket8442/standard1.png) by @dwbump created at 2010-03-09 04:28:41",
     "created_at": "2010-03-09T04:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75815",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [standard1.png](tarball://root/attachments/some-uuid/ticket8442/standard1.png) by bump created at 2010-03-09 04:28:41
+Attachment [standard1.png](tarball://root/attachments/some-uuid/ticket8442/standard1.png) by @dwbump created at 2010-03-09 04:28:41
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_075816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75816",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_075817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75817",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -152,16 +152,16 @@ Lie methods and related combinatorics tutorial
 archive/issue_comments_075818.json:
 ```json
 {
-    "body": "Attachment [trac_8442_lie_documentation.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442_lie_documentation.patch) by bump created at 2010-03-11 18:17:31\n\nRevised to take into account changes in #8414.",
+    "body": "Attachment [trac_8442_lie_documentation.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442_lie_documentation.patch) by @dwbump created at 2010-03-11 18:17:31\n\nRevised to take into account changes in #8414.",
     "created_at": "2010-03-11T18:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75818",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_8442_lie_documentation.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442_lie_documentation.patch) by bump created at 2010-03-11 18:17:31
+Attachment [trac_8442_lie_documentation.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442_lie_documentation.patch) by @dwbump created at 2010-03-11 18:17:31
 
 Revised to take into account changes in #8414.
 
@@ -296,7 +296,7 @@ archive/issue_comments_075825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75825",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -319,16 +319,16 @@ changing the patch status since I am the author of the original patch.
 archive/issue_comments_075826.json:
 ```json
 {
-    "body": "Attachment [trac_8442-weyl_groups-revision.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-weyl_groups-revision.patch) by bump created at 2010-03-24 22:15:30\n\nAdditional patch taking into account changes in #8414",
+    "body": "Attachment [trac_8442-weyl_groups-revision.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-weyl_groups-revision.patch) by @dwbump created at 2010-03-24 22:15:30\n\nAdditional patch taking into account changes in #8414",
     "created_at": "2010-03-24T22:15:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75826",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_8442-weyl_groups-revision.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-weyl_groups-revision.patch) by bump created at 2010-03-24 22:15:30
+Attachment [trac_8442-weyl_groups-revision.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-weyl_groups-revision.patch) by @dwbump created at 2010-03-24 22:15:30
 
 Additional patch taking into account changes in #8414
 
@@ -344,7 +344,7 @@ archive/issue_comments_075827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75827",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -413,16 +413,16 @@ Tested with Sage Version 4.4.2.alpha0, Release Date: 2010-05-08 and index.rst un
 archive/issue_comments_075831.json:
 ```json
 {
-    "body": "Attachment [trac_8442-lie-rebased-to-4.4.2.alpha0](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-to-4.4.2.alpha0) by bump created at 2010-05-15 03:55:16",
+    "body": "Attachment [trac_8442-lie-rebased-to-4.4.2.alpha0](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-to-4.4.2.alpha0) by @dwbump created at 2010-05-15 03:55:16",
     "created_at": "2010-05-15T03:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75831",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_8442-lie-rebased-to-4.4.2.alpha0](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-to-4.4.2.alpha0) by bump created at 2010-05-15 03:55:16
+Attachment [trac_8442-lie-rebased-to-4.4.2.alpha0](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-to-4.4.2.alpha0) by @dwbump created at 2010-05-15 03:55:16
 
 
 
@@ -436,7 +436,7 @@ archive/issue_comments_075832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75832",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_075833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75833",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_075837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75837",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -591,7 +591,7 @@ archive/issue_comments_075838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75838",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -609,7 +609,7 @@ archive/issue_comments_075839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75839",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -648,7 +648,7 @@ archive/issue_comments_075840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75840",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -661,16 +661,16 @@ If #8465 gets merged, then trac_8442-config.patch will not be needed.
 archive/issue_comments_075841.json:
 ```json
 {
-    "body": "Attachment [trac_8442-lie-rebased-4.5.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.patch) by bump created at 2010-08-22 15:53:52",
+    "body": "Attachment [trac_8442-lie-rebased-4.5.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.patch) by @dwbump created at 2010-08-22 15:53:52",
     "created_at": "2010-08-22T15:53:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75841",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_8442-lie-rebased-4.5.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.patch) by bump created at 2010-08-22 15:53:52
+Attachment [trac_8442-lie-rebased-4.5.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.patch) by @dwbump created at 2010-08-22 15:53:52
 
 
 
@@ -679,16 +679,16 @@ Attachment [trac_8442-lie-rebased-4.5.2.patch](tarball://root/attachments/some-u
 archive/issue_comments_075842.json:
 ```json
 {
-    "body": "Attachment [trac_8442-lie-rebased-4.5.2.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.2.patch) by bump created at 2010-08-22 16:04:48\n\nI have added two revised patches:\n\n\n```\ntrac_8442-lie-rebased-4.5.2.patch\ntrac_8442-png-files.patch\n```\n\n\nBy mistake I added the first patch twice.\n\nThese address most of the problems found by rbeezer and jhpalmieri.\n\n* Now passes `sage -t`\n\n* New `doc/en/thematic_tutorials/media/*png`\n\n* `doc/en/thematic_tutorials/*png` added to MANIFEST.in\n\n* `.png` files are in a patch.\n\nThe one matter I did not try to address is the problem with jsMath. Is there a jsMath way to get fraktur fonts?",
+    "body": "Attachment [trac_8442-lie-rebased-4.5.2.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.2.patch) by @dwbump created at 2010-08-22 16:04:48\n\nI have added two revised patches:\n\n\n```\ntrac_8442-lie-rebased-4.5.2.patch\ntrac_8442-png-files.patch\n```\n\n\nBy mistake I added the first patch twice.\n\nThese address most of the problems found by rbeezer and jhpalmieri.\n\n* Now passes `sage -t`\n\n* New `doc/en/thematic_tutorials/media/*png`\n\n* `doc/en/thematic_tutorials/*png` added to MANIFEST.in\n\n* `.png` files are in a patch.\n\nThe one matter I did not try to address is the problem with jsMath. Is there a jsMath way to get fraktur fonts?",
     "created_at": "2010-08-22T16:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75842",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_8442-lie-rebased-4.5.2.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.2.patch) by bump created at 2010-08-22 16:04:48
+Attachment [trac_8442-lie-rebased-4.5.2.2.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-lie-rebased-4.5.2.2.patch) by @dwbump created at 2010-08-22 16:04:48
 
 I have added two revised patches:
 
@@ -725,7 +725,7 @@ archive/issue_comments_075843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75843",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -743,7 +743,7 @@ archive/issue_comments_075844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75844",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -775,7 +775,7 @@ archive/issue_comments_075845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75845",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -793,7 +793,7 @@ archive/issue_comments_075846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75846",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -817,7 +817,7 @@ archive/issue_comments_075847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75847",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -844,7 +844,7 @@ archive/issue_comments_075848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75848",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -870,7 +870,7 @@ archive/issue_comments_075849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75849",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -888,7 +888,7 @@ archive/issue_comments_075850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75850",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -917,7 +917,7 @@ archive/issue_comments_075851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75851",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -941,7 +941,7 @@ archive/issue_comments_075852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75852",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -956,16 +956,16 @@ Wait, here's an idea: we can add a jsMath macro (as [described here](http://www.
 archive/issue_comments_075853.json:
 ```json
 {
-    "body": "Attachment [trac_8442-mathfrak.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-mathfrak.patch) by jhpalmieri created at 2010-09-09 04:41:59\n\navoid jsmath errors about mathfrak",
+    "body": "Attachment [trac_8442-mathfrak.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-mathfrak.patch) by @jhpalmieri created at 2010-09-09 04:41:59\n\navoid jsmath errors about mathfrak",
     "created_at": "2010-09-09T04:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75853",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8442-mathfrak.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-mathfrak.patch) by jhpalmieri created at 2010-09-09 04:41:59
+Attachment [trac_8442-mathfrak.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-mathfrak.patch) by @jhpalmieri created at 2010-09-09 04:41:59
 
 avoid jsmath errors about mathfrak
 
@@ -981,7 +981,7 @@ archive/issue_comments_075854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75854",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1009,7 +1009,7 @@ archive/issue_comments_075855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75855",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1035,7 +1035,7 @@ archive/issue_comments_075856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75856",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1057,7 +1057,7 @@ archive/issue_comments_075857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75857",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1070,16 +1070,16 @@ Thematic tutorial: Lie methods and related combinatorics
 archive/issue_comments_075858.json:
 ```json
 {
-    "body": "Attachment [trac_8442-rebased-4.5.3.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.5.3.patch) by bump created at 2010-09-10 23:18:17\n\nI uploaded a new version with minor polishing here and there.",
+    "body": "Attachment [trac_8442-rebased-4.5.3.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.5.3.patch) by @dwbump created at 2010-09-10 23:18:17\n\nI uploaded a new version with minor polishing here and there.",
     "created_at": "2010-09-10T23:18:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75858",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_8442-rebased-4.5.3.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.5.3.patch) by bump created at 2010-09-10 23:18:17
+Attachment [trac_8442-rebased-4.5.3.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.5.3.patch) by @dwbump created at 2010-09-10 23:18:17
 
 I uploaded a new version with minor polishing here and there.
 
@@ -1095,7 +1095,7 @@ archive/issue_comments_075859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75859",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1116,7 +1116,7 @@ archive/issue_comments_075860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75860",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1129,16 +1129,16 @@ Thematic Tutorial: Lie methods and related combinatorics
 archive/issue_comments_075861.json:
 ```json
 {
-    "body": "Attachment [trac_8442-rebased-4.6.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.6.patch) by bump created at 2010-09-26 17:52:39\n\nWith sage-4.6.alpha1 the patch needed rebasing. I did this, then made a couple of other changes which I think are improvements. I removed the material about intertwining operators, which seems too specialized for a document like this.  I will make available this elsewhere. I added a new section called Integration showing how to compute some integrals over Lie groups.\n\nI updated the links at:\n\nhttp://match.stanford.edu/bump/thematic_tutorials/lie.html  \n\nhttp://match.stanford.edu/bump/thematic_tutorials-js/lie.html",
+    "body": "Attachment [trac_8442-rebased-4.6.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.6.patch) by @dwbump created at 2010-09-26 17:52:39\n\nWith sage-4.6.alpha1 the patch needed rebasing. I did this, then made a couple of other changes which I think are improvements. I removed the material about intertwining operators, which seems too specialized for a document like this.  I will make available this elsewhere. I added a new section called Integration showing how to compute some integrals over Lie groups.\n\nI updated the links at:\n\nhttp://match.stanford.edu/bump/thematic_tutorials/lie.html  \n\nhttp://match.stanford.edu/bump/thematic_tutorials-js/lie.html",
     "created_at": "2010-09-26T17:52:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75861",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_8442-rebased-4.6.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.6.patch) by bump created at 2010-09-26 17:52:39
+Attachment [trac_8442-rebased-4.6.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.6.patch) by @dwbump created at 2010-09-26 17:52:39
 
 With sage-4.6.alpha1 the patch needed rebasing. I did this, then made a couple of other changes which I think are improvements. I removed the material about intertwining operators, which seems too specialized for a document like this.  I will make available this elsewhere. I added a new section called Integration showing how to compute some integrals over Lie groups.
 
@@ -1160,7 +1160,7 @@ archive/issue_comments_075862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75862",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1235,7 +1235,7 @@ archive/issue_comments_075863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75863",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1253,7 +1253,7 @@ archive/issue_comments_075864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75864",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1266,16 +1266,16 @@ archive/issue_comments_075864.json:
 archive/issue_comments_075865.json:
 ```json
 {
-    "body": "Attachment [trac_8442-rebased-4.6.1.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.6.1.patch) by bump created at 2010-11-03 00:00:49",
+    "body": "Attachment [trac_8442-rebased-4.6.1.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.6.1.patch) by @dwbump created at 2010-11-03 00:00:49",
     "created_at": "2010-11-03T00:00:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75865",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_8442-rebased-4.6.1.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.6.1.patch) by bump created at 2010-11-03 00:00:49
+Attachment [trac_8442-rebased-4.6.1.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-rebased-4.6.1.patch) by @dwbump created at 2010-11-03 00:00:49
 
 
 
@@ -1289,7 +1289,7 @@ archive/issue_comments_075866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75866",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1307,7 +1307,7 @@ archive/issue_comments_075867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75867",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1325,7 +1325,7 @@ archive/issue_comments_075868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75868",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1345,7 +1345,7 @@ archive/issue_comments_075869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75869",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1358,16 +1358,16 @@ apply on top of other patches
 archive/issue_comments_075870.json:
 ```json
 {
-    "body": "Attachment [trac_8442-ref-spacing.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-ref-spacing.patch) by jhpalmieri created at 2010-11-06 22:12:14",
+    "body": "Attachment [trac_8442-ref-spacing.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-ref-spacing.patch) by @jhpalmieri created at 2010-11-06 22:12:14",
     "created_at": "2010-11-06T22:12:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75870",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8442-ref-spacing.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-ref-spacing.patch) by jhpalmieri created at 2010-11-06 22:12:14
+Attachment [trac_8442-ref-spacing.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-ref-spacing.patch) by @jhpalmieri created at 2010-11-06 22:12:14
 
 
 
@@ -1381,7 +1381,7 @@ archive/issue_comments_075871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75871",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1413,7 +1413,7 @@ archive/issue_comments_075872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75872",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1435,7 +1435,7 @@ archive/issue_comments_075873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75873",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1453,7 +1453,7 @@ archive/issue_comments_075874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75874",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1479,7 +1479,7 @@ archive/issue_comments_075875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75875",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1516,7 +1516,7 @@ archive/issue_comments_075876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75876",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1548,7 +1548,7 @@ archive/issue_comments_075877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75877",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1595,7 +1595,7 @@ archive/issue_comments_075878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75878",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1613,7 +1613,7 @@ archive/issue_comments_075879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75879",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1631,7 +1631,7 @@ archive/issue_comments_075880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75880",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1653,7 +1653,7 @@ archive/issue_comments_075881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75881",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1673,7 +1673,7 @@ archive/issue_comments_075882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75882",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1698,7 +1698,7 @@ archive/issue_comments_075883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75883",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1716,7 +1716,7 @@ archive/issue_comments_075884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75884",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1736,7 +1736,7 @@ archive/issue_comments_075885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75885",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1754,7 +1754,7 @@ archive/issue_comments_075886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75886",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1772,7 +1772,7 @@ archive/issue_comments_075887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75887",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1794,7 +1794,7 @@ archive/issue_comments_075888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75888",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1820,7 +1820,7 @@ archive/issue_comments_075889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75889",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1838,7 +1838,7 @@ archive/issue_comments_075890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75890",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1851,16 +1851,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_075891.json:
 ```json
 {
-    "body": "Attachment [trac_8442-png-files.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-png-files.patch) by bump created at 2011-01-23 19:21:49\n\n8442: png files",
+    "body": "Attachment [trac_8442-png-files.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-png-files.patch) by @dwbump created at 2011-01-23 19:21:49\n\n8442: png files",
     "created_at": "2011-01-23T19:21:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75891",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_8442-png-files.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-png-files.patch) by bump created at 2011-01-23 19:21:49
+Attachment [trac_8442-png-files.patch](tarball://root/attachments/some-uuid/ticket8442/trac_8442-png-files.patch) by @dwbump created at 2011-01-23 19:21:49
 
 8442: png files
 
@@ -1876,7 +1876,7 @@ archive/issue_comments_075892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75892",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1894,7 +1894,7 @@ archive/issue_comments_075893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75893",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -1909,16 +1909,16 @@ Done.
 archive/issue_comments_075894.json:
 ```json
 {
-    "body": "Attachment [8442_manifest.patch](tarball://root/attachments/some-uuid/ticket8442/8442_manifest.patch) by jdemeyer created at 2011-01-27 13:57:45",
+    "body": "Attachment [8442_manifest.patch](tarball://root/attachments/some-uuid/ticket8442/8442_manifest.patch) by @jdemeyer created at 2011-01-27 13:57:45",
     "created_at": "2011-01-27T13:57:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75894",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [8442_manifest.patch](tarball://root/attachments/some-uuid/ticket8442/8442_manifest.patch) by jdemeyer created at 2011-01-27 13:57:45
+Attachment [8442_manifest.patch](tarball://root/attachments/some-uuid/ticket8442/8442_manifest.patch) by @jdemeyer created at 2011-01-27 13:57:45
 
 
 
@@ -1932,7 +1932,7 @@ archive/issue_comments_075895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75895",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1950,7 +1950,7 @@ archive/issue_comments_075896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75896",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1968,7 +1968,7 @@ archive/issue_comments_075897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75897",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1986,7 +1986,7 @@ archive/issue_comments_075898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75898",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -2007,7 +2007,7 @@ archive/issue_comments_075899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75899",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -2025,7 +2025,7 @@ archive/issue_comments_075900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8442#issuecomment-75900",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

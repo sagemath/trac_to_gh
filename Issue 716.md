@@ -3,7 +3,7 @@
 archive/issues_000716.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graph, graphs\n\n\nWith a directed graph g\n* g.to_directed() forgets multiedges, remembers loops\n* g.to_undirected() forgets multiedges and loops\n\nWith an undirected graph g\n* g.to_directed() forgets multiedges and loops\n* g.to_undirected() forgets multiedges, remembers loops\n\n\nIn each of these cases, both multiedges and loops should be remembered.\n\n\n```\nsage: g=DiGraph({0:[0,1,1,2],1:[0,1]},loops=True,multiedges=True)\nsage: g.to_directed().multiple_arcs()\nFalse\nsage: g.to_directed().loops()\nTrue\nsage: g.to_undirected().multiple_edges()\nFalse\nsage: g.to_undirected().loops()\nFalse\nsage: g=Graph({0:[0,1,1,2],1:[0,1]},loops=True,multiedges=True)\nsage: g.to_directed().multiple_arcs()\nFalse\nsage: g.to_directed().loops()\nFalse\nsage: g.to_undirected().multiple_edges()\nFalse\nsage: g.to_undirected().loops()\nTrue\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/716\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graph, graphs\n\n\nWith a directed graph g\n* g.to_directed() forgets multiedges, remembers loops\n* g.to_undirected() forgets multiedges and loops\n\nWith an undirected graph g\n* g.to_directed() forgets multiedges and loops\n* g.to_undirected() forgets multiedges, remembers loops\n\n\nIn each of these cases, both multiedges and loops should be remembered.\n\n\n```\nsage: g=DiGraph({0:[0,1,1,2],1:[0,1]},loops=True,multiedges=True)\nsage: g.to_directed().multiple_arcs()\nFalse\nsage: g.to_directed().loops()\nTrue\nsage: g.to_undirected().multiple_edges()\nFalse\nsage: g.to_undirected().loops()\nFalse\nsage: g=Graph({0:[0,1,1,2],1:[0,1]},loops=True,multiedges=True)\nsage: g.to_directed().multiple_arcs()\nFalse\nsage: g.to_directed().loops()\nFalse\nsage: g.to_undirected().multiple_edges()\nFalse\nsage: g.to_undirected().loops()\nTrue\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/716\n\n",
     "created_at": "2007-09-20T20:07:16Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000716.json:
     "title": "graph functions to_undirected and to_directed forget the loops and multiple edges",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/716",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graph, graphs
 
@@ -75,7 +75,7 @@ archive/issue_comments_004157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/716#issuecomment-4157",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_004158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/716#issuecomment-4158",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,16 +120,16 @@ The attached patch may break some of the doctests in graph.py, though.
 archive/issue_comments_004159.json:
 ```json
 {
-    "body": "Attachment [init_and_to_simple.hg](tarball://root/attachments/some-uuid/ticket716/init_and_to_simple.hg) by jason created at 2007-09-20 21:29:46",
+    "body": "Attachment [init_and_to_simple.hg](tarball://root/attachments/some-uuid/ticket716/init_and_to_simple.hg) by @jasongrout created at 2007-09-20 21:29:46",
     "created_at": "2007-09-20T21:29:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/716#issuecomment-4159",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [init_and_to_simple.hg](tarball://root/attachments/some-uuid/ticket716/init_and_to_simple.hg) by jason created at 2007-09-20 21:29:46
+Attachment [init_and_to_simple.hg](tarball://root/attachments/some-uuid/ticket716/init_and_to_simple.hg) by @jasongrout created at 2007-09-20 21:29:46
 
 
 
@@ -138,16 +138,16 @@ Attachment [init_and_to_simple.hg](tarball://root/attachments/some-uuid/ticket71
 archive/issue_comments_004160.json:
 ```json
 {
-    "body": "Attachment [deep_copy.hg](tarball://root/attachments/some-uuid/ticket716/deep_copy.hg) by rlm created at 2007-09-20 22:49:31\n\nFixes doctest failures and other strangeness",
+    "body": "Attachment [deep_copy.hg](tarball://root/attachments/some-uuid/ticket716/deep_copy.hg) by @rlmill created at 2007-09-20 22:49:31\n\nFixes doctest failures and other strangeness",
     "created_at": "2007-09-20T22:49:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/716#issuecomment-4160",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [deep_copy.hg](tarball://root/attachments/some-uuid/ticket716/deep_copy.hg) by rlm created at 2007-09-20 22:49:31
+Attachment [deep_copy.hg](tarball://root/attachments/some-uuid/ticket716/deep_copy.hg) by @rlmill created at 2007-09-20 22:49:31
 
 Fixes doctest failures and other strangeness
 
@@ -158,16 +158,16 @@ Fixes doctest failures and other strangeness
 archive/issue_comments_004161.json:
 ```json
 {
-    "body": "Attachment [doc_changes.hg](tarball://root/attachments/some-uuid/ticket716/doc_changes.hg) by jason created at 2007-09-20 23:54:09",
+    "body": "Attachment [doc_changes.hg](tarball://root/attachments/some-uuid/ticket716/doc_changes.hg) by @jasongrout created at 2007-09-20 23:54:09",
     "created_at": "2007-09-20T23:54:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/716#issuecomment-4161",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [doc_changes.hg](tarball://root/attachments/some-uuid/ticket716/doc_changes.hg) by jason created at 2007-09-20 23:54:09
+Attachment [doc_changes.hg](tarball://root/attachments/some-uuid/ticket716/doc_changes.hg) by @jasongrout created at 2007-09-20 23:54:09
 
 
 
@@ -176,16 +176,16 @@ Attachment [doc_changes.hg](tarball://root/attachments/some-uuid/ticket716/doc_c
 archive/issue_comments_004162.json:
 ```json
 {
-    "body": "Attachment [arc_edges.hg](tarball://root/attachments/some-uuid/ticket716/arc_edges.hg) by rlm created at 2007-09-21 00:12:56",
+    "body": "Attachment [arc_edges.hg](tarball://root/attachments/some-uuid/ticket716/arc_edges.hg) by @rlmill created at 2007-09-21 00:12:56",
     "created_at": "2007-09-21T00:12:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/716#issuecomment-4162",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [arc_edges.hg](tarball://root/attachments/some-uuid/ticket716/arc_edges.hg) by rlm created at 2007-09-21 00:12:56
+Attachment [arc_edges.hg](tarball://root/attachments/some-uuid/ticket716/arc_edges.hg) by @rlmill created at 2007-09-21 00:12:56
 
 
 
@@ -194,16 +194,16 @@ Attachment [arc_edges.hg](tarball://root/attachments/some-uuid/ticket716/arc_edg
 archive/issue_comments_004163.json:
 ```json
 {
-    "body": "Attachment [change_arc_to_edge.hg](tarball://root/attachments/some-uuid/ticket716/change_arc_to_edge.hg) by jason created at 2007-09-21 00:37:37",
+    "body": "Attachment [change_arc_to_edge.hg](tarball://root/attachments/some-uuid/ticket716/change_arc_to_edge.hg) by @jasongrout created at 2007-09-21 00:37:37",
     "created_at": "2007-09-21T00:37:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/716#issuecomment-4163",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [change_arc_to_edge.hg](tarball://root/attachments/some-uuid/ticket716/change_arc_to_edge.hg) by jason created at 2007-09-21 00:37:37
+Attachment [change_arc_to_edge.hg](tarball://root/attachments/some-uuid/ticket716/change_arc_to_edge.hg) by @jasongrout created at 2007-09-21 00:37:37
 
 
 
@@ -217,7 +217,7 @@ archive/issue_comments_004164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/716#issuecomment-4164",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -230,16 +230,16 @@ Resolution: worksforme
 archive/issue_comments_004165.json:
 ```json
 {
-    "body": "Attachment [combinat-arcs2edges.patch](tarball://root/attachments/some-uuid/ticket716/combinat-arcs2edges.patch) by rlm created at 2007-09-21 02:06:07",
+    "body": "Attachment [combinat-arcs2edges.patch](tarball://root/attachments/some-uuid/ticket716/combinat-arcs2edges.patch) by @rlmill created at 2007-09-21 02:06:07",
     "created_at": "2007-09-21T02:06:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/716#issuecomment-4165",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [combinat-arcs2edges.patch](tarball://root/attachments/some-uuid/ticket716/combinat-arcs2edges.patch) by rlm created at 2007-09-21 02:06:07
+Attachment [combinat-arcs2edges.patch](tarball://root/attachments/some-uuid/ticket716/combinat-arcs2edges.patch) by @rlmill created at 2007-09-21 02:06:07
 
 
 
@@ -253,7 +253,7 @@ archive/issue_comments_004166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/716",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/716#issuecomment-4166",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000510.json:
 ```json
 {
-    "body": "Assignee: was\n\nImporting the module sage.rings.real_mpfr in IPython causes a segfault with the backtrace included below. SAGE itself doesn't report any errors in this case.\n\n```\nIn [2]: import sage.rings.real_mpfr\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread -1210221920 (LWP 28996)]\n0xb0d29b0e in __pyx_f_9real_mpfr_9RealField___init__ (__pyx_v_self=0xb0dc625c, \n    __pyx_args=0xb0ce242c, __pyx_kwds=0x0) at sage/rings/real_mpfr.c:1128\n1128      Py_INCREF(__pyx_v_rnd);\n(gdb) bt\n#0  0xb0d29b0e in __pyx_f_9real_mpfr_9RealField___init__ (\n    __pyx_v_self=0xb0dc625c, __pyx_args=0xb0ce242c, __pyx_kwds=0x0)\n    at sage/rings/real_mpfr.c:1128\n#1  0x0809c2f3 in type_call (type=0xb0d88d40, args=0xb0ce242c, kwds=0x0)\n    at Objects/typeobject.c:436\n#2  0x0805a0a7 in PyObject_Call (func=0x0, arg=0xb0ce242c, kw=0x0)\n    at Objects/abstract.c:1860\n#3  0x080c0c50 in PyEval_EvalFrameEx (f=0x83964ec, throwflag=0)\n    at Python/ceval.c:3775\n#4  0x080c564a in PyEval_EvalFrameEx (f=0x8392a9c, throwflag=0)\n    at Python/ceval.c:3650\n#5  0x080c639b in PyEval_EvalCodeEx (co=0xb0dd0ad0, globals=0xb0d9fc64, \n    locals=0x0, args=0xb0d963f8, argcount=2, kws=0x0, kwcount=0, \n    defs=0xb0ce2478, defcount=1, closure=0x0) at Python/ceval.c:2831\n```\n\n\nYou can use the patch included in #509 to run IPython under gdb.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/510\n\n",
+    "body": "Assignee: @williamstein\n\nImporting the module sage.rings.real_mpfr in IPython causes a segfault with the backtrace included below. SAGE itself doesn't report any errors in this case.\n\n```\nIn [2]: import sage.rings.real_mpfr\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread -1210221920 (LWP 28996)]\n0xb0d29b0e in __pyx_f_9real_mpfr_9RealField___init__ (__pyx_v_self=0xb0dc625c, \n    __pyx_args=0xb0ce242c, __pyx_kwds=0x0) at sage/rings/real_mpfr.c:1128\n1128      Py_INCREF(__pyx_v_rnd);\n(gdb) bt\n#0  0xb0d29b0e in __pyx_f_9real_mpfr_9RealField___init__ (\n    __pyx_v_self=0xb0dc625c, __pyx_args=0xb0ce242c, __pyx_kwds=0x0)\n    at sage/rings/real_mpfr.c:1128\n#1  0x0809c2f3 in type_call (type=0xb0d88d40, args=0xb0ce242c, kwds=0x0)\n    at Objects/typeobject.c:436\n#2  0x0805a0a7 in PyObject_Call (func=0x0, arg=0xb0ce242c, kw=0x0)\n    at Objects/abstract.c:1860\n#3  0x080c0c50 in PyEval_EvalFrameEx (f=0x83964ec, throwflag=0)\n    at Python/ceval.c:3775\n#4  0x080c564a in PyEval_EvalFrameEx (f=0x8392a9c, throwflag=0)\n    at Python/ceval.c:3650\n#5  0x080c639b in PyEval_EvalCodeEx (co=0xb0dd0ad0, globals=0xb0d9fc64, \n    locals=0x0, args=0xb0d963f8, argcount=2, kws=0x0, kwcount=0, \n    defs=0xb0ce2478, defcount=1, closure=0x0) at Python/ceval.c:2831\n```\n\n\nYou can use the patch included in #509 to run IPython under gdb.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/510\n\n",
     "created_at": "2007-08-29T10:57:35Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000510.json:
     "title": "IPython crashes on \"import sage.rings.real_mpfr\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/510",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Importing the module sage.rings.real_mpfr in IPython causes a segfault with the backtrace included below. SAGE itself doesn't report any errors in this case.
 
@@ -66,7 +66,7 @@ archive/issue_comments_002561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/510#issuecomment-2561",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_002562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/510#issuecomment-2562",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_002563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/510#issuecomment-2563",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_002567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/510#issuecomment-2567",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_002571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/510#issuecomment-2571",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -292,16 +292,16 @@ fix some circular imports in sage.rings.real_mpfr
 archive/issue_comments_002572.json:
 ```json
 {
-    "body": "Attachment [510_real_mpfr_imports.patch](tarball://root/attachments/some-uuid/ticket510/510_real_mpfr_imports.patch) by burcin created at 2008-05-10 19:25:19\n\nattachment:510_real_mpfr_imports.patch fixes the problem reported in the original report. With this patch, \n\n```\nimport sage.rings.complex_field\n```\n\nstill fails because of similar errors. I'll write a script which imports each file in the tree individually and see if I can fix the errors.",
+    "body": "Attachment [510_real_mpfr_imports.patch](tarball://root/attachments/some-uuid/ticket510/510_real_mpfr_imports.patch) by @burcin created at 2008-05-10 19:25:19\n\nattachment:510_real_mpfr_imports.patch fixes the problem reported in the original report. With this patch, \n\n```\nimport sage.rings.complex_field\n```\n\nstill fails because of similar errors. I'll write a script which imports each file in the tree individually and see if I can fix the errors.",
     "created_at": "2008-05-10T19:25:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/510#issuecomment-2572",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [510_real_mpfr_imports.patch](tarball://root/attachments/some-uuid/ticket510/510_real_mpfr_imports.patch) by burcin created at 2008-05-10 19:25:19
+Attachment [510_real_mpfr_imports.patch](tarball://root/attachments/some-uuid/ticket510/510_real_mpfr_imports.patch) by @burcin created at 2008-05-10 19:25:19
 
 attachment:510_real_mpfr_imports.patch fixes the problem reported in the original report. With this patch, 
 
@@ -378,16 +378,16 @@ I did not try to compile, but I consider this encouraging.
 archive/issue_comments_002575.json:
 ```json
 {
-    "body": "Attachment [sage-test-import](tarball://root/attachments/some-uuid/ticket510/sage-test-import) by burcin created at 2008-10-15 16:44:30\n\nscript to test if importing a random module from the sage library returns an error",
+    "body": "Attachment [sage-test-import](tarball://root/attachments/some-uuid/ticket510/sage-test-import) by @burcin created at 2008-10-15 16:44:30\n\nscript to test if importing a random module from the sage library returns an error",
     "created_at": "2008-10-15T16:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/510#issuecomment-2575",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [sage-test-import](tarball://root/attachments/some-uuid/ticket510/sage-test-import) by burcin created at 2008-10-15 16:44:30
+Attachment [sage-test-import](tarball://root/attachments/some-uuid/ticket510/sage-test-import) by @burcin created at 2008-10-15 16:44:30
 
 script to test if importing a random module from the sage library returns an error
 
@@ -403,7 +403,7 @@ archive/issue_comments_002576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/510#issuecomment-2576",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_002577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/510#issuecomment-2577",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_002578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/510#issuecomment-2578",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003971.json:
     "title": "[with patch; needs review] hidden markov models -- implement nsteps and log_likelihood_cutoff",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3971",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3971
 archive/issue_comments_028536.json:
 ```json
 {
-    "body": "Attachment [sage-3971.patch](tarball://root/attachments/some-uuid/ticket3971/sage-3971.patch) by was created at 2008-08-27 23:40:00",
+    "body": "Attachment [sage-3971.patch](tarball://root/attachments/some-uuid/ticket3971/sage-3971.patch) by @williamstein created at 2008-08-27 23:40:00",
     "created_at": "2008-08-27T23:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3971#issuecomment-28536",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3971.patch](tarball://root/attachments/some-uuid/ticket3971/sage-3971.patch) by was created at 2008-08-27 23:40:00
+Attachment [sage-3971.patch](tarball://root/attachments/some-uuid/ticket3971/sage-3971.patch) by @williamstein created at 2008-08-27 23:40:00
 
 
 

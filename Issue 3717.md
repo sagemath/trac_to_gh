@@ -3,7 +3,7 @@
 archive/issues_003717.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\n\n```\n> sage: var('c x y t')\n> (c, x, y, t)\n> sage: x=function('x',t)\n> sage: y=function('y',t)\n> sage: f=c*x*y\n> sage: diff(f,t)\n> c*x(t)*diff(y(t), t, 1) + c*y(t)*diff(x(t), t, 1)\n>\n> In the above example, x and y are some functions of t while c is\n> independent of t. If I take the derivative of f=c*x(t)*y(t), I\n> correctly obtain diff(f(t),t)=c*x(t)*diff(y(t), t) + c*y(t)*diff(x(t),\n> t), but for the result looks a bit ugly and does not show well in\n> latex. Can diff(x(t), t) be expressed in a shorter way, such as x'(t),\n> similarly to Mathematica?\n\nTry using \"print\" for a much nicer \"ascii art\" view of symbolic expressions:\n\nsage: print diff(f,t)\n\n                           d                    d\n                   c x(t) (-- (y(t))) + c y(t) (-- (x(t)))\n                           dt                   dt\n\n(Hopefully the \"rich text formatting\" of this email works for you... or\njust try it out.)\n\n> Is there a way of getting derivatives\n> translated into latex code?\n\nYes, this would be easy for us to implement.\n\n\n> Something similar would apply to integrals.\n\nYep, same with my comments.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3717\n\n",
+    "body": "Assignee: @garyfurnish\n\n\n```\n> sage: var('c x y t')\n> (c, x, y, t)\n> sage: x=function('x',t)\n> sage: y=function('y',t)\n> sage: f=c*x*y\n> sage: diff(f,t)\n> c*x(t)*diff(y(t), t, 1) + c*y(t)*diff(x(t), t, 1)\n>\n> In the above example, x and y are some functions of t while c is\n> independent of t. If I take the derivative of f=c*x(t)*y(t), I\n> correctly obtain diff(f(t),t)=c*x(t)*diff(y(t), t) + c*y(t)*diff(x(t),\n> t), but for the result looks a bit ugly and does not show well in\n> latex. Can diff(x(t), t) be expressed in a shorter way, such as x'(t),\n> similarly to Mathematica?\n\nTry using \"print\" for a much nicer \"ascii art\" view of symbolic expressions:\n\nsage: print diff(f,t)\n\n                           d                    d\n                   c x(t) (-- (y(t))) + c y(t) (-- (x(t)))\n                           dt                   dt\n\n(Hopefully the \"rich text formatting\" of this email works for you... or\njust try it out.)\n\n> Is there a way of getting derivatives\n> translated into latex code?\n\nYes, this would be easy for us to implement.\n\n\n> Something similar would apply to integrals.\n\nYep, same with my comments.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3717\n\n",
     "created_at": "2008-07-24T10:06:46Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003717.json:
     "title": "implement _latex_ method for formal derivative function (in symbolic calculus)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3717",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 
 ```
@@ -77,7 +77,7 @@ archive/issue_comments_026375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3717#issuecomment-26375",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_026376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3717#issuecomment-26376",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_026377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3717#issuecomment-26377",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

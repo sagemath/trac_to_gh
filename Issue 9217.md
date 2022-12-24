@@ -155,16 +155,16 @@ revised patch also changes the AUTHORS block to match the format suggested in th
 archive/issue_comments_086369.json:
 ```json
 {
-    "body": "Attachment [trac_9217_Taylor_gamma_fix.patch](tarball://root/attachments/some-uuid/ticket9217/trac_9217_Taylor_gamma_fix.patch) by mhansen created at 2010-06-11 19:36:52\n\nIt looks like the patch just changes the AUTHORS block and doesn't have the actual fix for the problem in it.",
+    "body": "Attachment [trac_9217_Taylor_gamma_fix.patch](tarball://root/attachments/some-uuid/ticket9217/trac_9217_Taylor_gamma_fix.patch) by @mwhansen created at 2010-06-11 19:36:52\n\nIt looks like the patch just changes the AUTHORS block and doesn't have the actual fix for the problem in it.",
     "created_at": "2010-06-11T19:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86369",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_9217_Taylor_gamma_fix.patch](tarball://root/attachments/some-uuid/ticket9217/trac_9217_Taylor_gamma_fix.patch) by mhansen created at 2010-06-11 19:36:52
+Attachment [trac_9217_Taylor_gamma_fix.patch](tarball://root/attachments/some-uuid/ticket9217/trac_9217_Taylor_gamma_fix.patch) by @mwhansen created at 2010-06-11 19:36:52
 
 It looks like the patch just changes the AUTHORS block and doesn't have the actual fix for the problem in it.
 
@@ -263,7 +263,7 @@ archive/issue_comments_086374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86374",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_086375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86375",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

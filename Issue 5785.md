@@ -3,7 +3,7 @@
 archive/issues_005785.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: CDF vector norm\n\n\n```\nsage: v = vector(CDF, [2, 2])\nsage: v - v\n(0, 0)\nsage: (v - v).norm()\nnan\nsage: v = vector(CC, [2, 2])\nsage: (v - v).norm()\n0.000000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5785\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: CDF vector norm\n\n\n```\nsage: v = vector(CDF, [2, 2])\nsage: v - v\n(0, 0)\nsage: (v - v).norm()\nnan\nsage: v = vector(CC, [2, 2])\nsage: (v - v).norm()\n0.000000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5785\n\n",
     "created_at": "2009-04-14T15:55:27Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005785.json:
     "title": "bug in norm of vectors over CDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5785",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: CDF vector norm
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5785
 archive/issue_comments_045280.json:
 ```json
 {
-    "body": "Changing assignee from was to somebody.",
+    "body": "Changing assignee from @williamstein to somebody.",
     "created_at": "2009-04-15T05:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45280",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to somebody.
+Changing assignee from @williamstein to somebody.
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_045281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45281",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_045282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45282",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_045283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45283",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -124,16 +124,16 @@ Does #5782 fix this?
 archive/issue_comments_045284.json:
 ```json
 {
-    "body": "Attachment [5785-cdf-norm.patch](tarball://root/attachments/some-uuid/ticket5785/5785-cdf-norm.patch) by robertwb created at 2009-04-16 19:12:23\n\nAdded a doctest.",
+    "body": "Attachment [5785-cdf-norm.patch](tarball://root/attachments/some-uuid/ticket5785/5785-cdf-norm.patch) by @robertwb created at 2009-04-16 19:12:23\n\nAdded a doctest.",
     "created_at": "2009-04-16T19:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45284",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5785-cdf-norm.patch](tarball://root/attachments/some-uuid/ticket5785/5785-cdf-norm.patch) by robertwb created at 2009-04-16 19:12:23
+Attachment [5785-cdf-norm.patch](tarball://root/attachments/some-uuid/ticket5785/5785-cdf-norm.patch) by @robertwb created at 2009-04-16 19:12:23
 
 Added a doctest.
 

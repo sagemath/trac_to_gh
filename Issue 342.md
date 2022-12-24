@@ -14,7 +14,7 @@ archive/issues_000342.json:
     "title": "ComplexNumber constructor seg faults",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/342",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -50,7 +50,7 @@ archive/issue_comments_001673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/342#issuecomment-1673",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

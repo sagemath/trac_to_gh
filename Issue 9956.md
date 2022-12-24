@@ -14,7 +14,7 @@ archive/issues_009956.json:
     "title": "Parametric Surfaces don't load well",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9956",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: jason, was
@@ -50,7 +50,7 @@ archive/issue_comments_099308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9956#issuecomment-99308",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_099309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9956#issuecomment-99309",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 

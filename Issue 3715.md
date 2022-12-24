@@ -14,7 +14,7 @@ archive/issues_003715.json:
     "title": "trivial to do bug fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3715",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty

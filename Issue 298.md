@@ -3,7 +3,7 @@
 archive/issues_000298.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kini jdemeyer\n\n* get Rishi's autotesting of examples directory to work: He developed it under OS X, but it doesn't work on Linux because of differences in how they run scripts, etc.  Plus, it's a really hard challenge to create such automated testing, so it needs to be looked over again.  \n \n\nIssue created by migration from https://trac.sagemath.org/ticket/298\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kini @jdemeyer\n\n* get Rishi's autotesting of examples directory to work: He developed it under OS X, but it doesn't work on Linux because of differences in how they run scripts, etc.  Plus, it's a really hard challenge to create such automated testing, so it needs to be looked over again.  \n \n\nIssue created by migration from https://trac.sagemath.org/ticket/298\n\n",
     "created_at": "2007-02-27T02:21:54Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_000298.json:
     "title": "autotesting of examples",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/298",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kini jdemeyer
+CC:  @kini @jdemeyer
 
 * get Rishi's autotesting of examples directory to work: He developed it under OS X, but it doesn't work on Linux because of differences in how they run scripts, etc.  Plus, it's a really hard challenge to create such automated testing, so it needs to be looked over again.  
  
@@ -80,7 +80,7 @@ archive/issue_comments_001415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/298#issuecomment-1415",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_001416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/298#issuecomment-1416",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_001417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/298#issuecomment-1417",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_001418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/298#issuecomment-1418",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_001419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/298#issuecomment-1419",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_001420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/298#issuecomment-1420",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_001421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/298#issuecomment-1421",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_001422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/298",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/298#issuecomment-1422",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

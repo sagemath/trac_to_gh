@@ -14,7 +14,7 @@ archive/issues_006940.json:
     "title": "put the css into a .css file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6940",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -39,7 +39,7 @@ archive/issue_comments_057383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6940#issuecomment-57383",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

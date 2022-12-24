@@ -14,7 +14,7 @@ archive/issues_006153.json:
     "title": "[with patch; needs review] fix repo -- incorrect delete of spkg-debian-maybe",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6153",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6153
 archive/issue_comments_049108.json:
 ```json
 {
-    "body": "Attachment [trac_6153.patch](tarball://root/attachments/some-uuid/ticket6153/trac_6153.patch) by was created at 2009-05-30 03:33:58",
+    "body": "Attachment [trac_6153.patch](tarball://root/attachments/some-uuid/ticket6153/trac_6153.patch) by @williamstein created at 2009-05-30 03:33:58",
     "created_at": "2009-05-30T03:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6153#issuecomment-49108",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6153.patch](tarball://root/attachments/some-uuid/ticket6153/trac_6153.patch) by was created at 2009-05-30 03:33:58
+Attachment [trac_6153.patch](tarball://root/attachments/some-uuid/ticket6153/trac_6153.patch) by @williamstein created at 2009-05-30 03:33:58
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_049109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6153#issuecomment-49109",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_049110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6153#issuecomment-49110",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

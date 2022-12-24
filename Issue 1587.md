@@ -3,7 +3,7 @@
 archive/issues_001587.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  alexghitza jason\n\nKeywords: matrix, kernel\n\n\n```\nsage: M = matrix([[1,2,3],[1,2,4],[2,4,7]])\nsage: M.kernel()\n\nFree module of degree 3 and rank 1 over Integer Ring\nEchelon basis matrix:\n[ 1  1 -1]\nsage: v = vector([1, 1, -1])\nsage: M*v\n(0, -1, -1)\nsage: v*M\n(0, 0, 0)\n```\n\n\nThis is not what most people expect.  Either the behavior should be changed so that it gives the kernel when acting on columns from the left or some documentation should make the current behavior very clear.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1587\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  alexghitza @jasongrout\n\nKeywords: matrix, kernel\n\n\n```\nsage: M = matrix([[1,2,3],[1,2,4],[2,4,7]])\nsage: M.kernel()\n\nFree module of degree 3 and rank 1 over Integer Ring\nEchelon basis matrix:\n[ 1  1 -1]\nsage: v = vector([1, 1, -1])\nsage: M*v\n(0, -1, -1)\nsage: v*M\n(0, 0, 0)\n```\n\n\nThis is not what most people expect.  Either the behavior should be changed so that it gives the kernel when acting on columns from the left or some documentation should make the current behavior very clear.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1587\n\n",
     "created_at": "2007-12-22T13:06:38Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_001587.json:
     "title": "M.kernel() gives the kernel when M acts on row vectors from the right.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1587",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  alexghitza jason
+CC:  alexghitza @jasongrout
 
 Keywords: matrix, kernel
 
@@ -57,7 +57,7 @@ archive/issue_comments_010095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10095",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_010096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10096",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_010098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10098",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_010099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10099",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_010100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10100",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_010101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10101",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_010102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10102",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_010103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10103",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -320,16 +320,16 @@ If it's all right, wstein, I'd like to make this part of my linear algebra overh
 archive/issue_comments_010104.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2008-12-13T16:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10104",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -343,7 +343,7 @@ archive/issue_comments_010105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10105",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_010106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10106",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_010107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10107",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -392,16 +392,16 @@ Adds documentation to the kernel-function and to the kernel-method of rational d
 archive/issue_comments_010108.json:
 ```json
 {
-    "body": "Attachment [kernel_doc.patch](tarball://root/attachments/some-uuid/ticket1587/kernel_doc.patch) by SimonKing created at 2009-01-23 21:39:02\n\nI added some words and some examples (including corner cases) to the function `kernel` in `sage/misc/functional.py` and to the `kernel` method in `sage/matrix/matrix_rational_dense.py`. \n\nSince the examples of the `kernel` method for dense integer matrices and for sparse matrices are clear enough, I believe that my patch suffices to clearify the documentation of `kernel`.",
+    "body": "Attachment [kernel_doc.patch](tarball://root/attachments/some-uuid/ticket1587/kernel_doc.patch) by @simon-king-jena created at 2009-01-23 21:39:02\n\nI added some words and some examples (including corner cases) to the function `kernel` in `sage/misc/functional.py` and to the `kernel` method in `sage/matrix/matrix_rational_dense.py`. \n\nSince the examples of the `kernel` method for dense integer matrices and for sparse matrices are clear enough, I believe that my patch suffices to clearify the documentation of `kernel`.",
     "created_at": "2009-01-23T21:39:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10108",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [kernel_doc.patch](tarball://root/attachments/some-uuid/ticket1587/kernel_doc.patch) by SimonKing created at 2009-01-23 21:39:02
+Attachment [kernel_doc.patch](tarball://root/attachments/some-uuid/ticket1587/kernel_doc.patch) by @simon-king-jena created at 2009-01-23 21:39:02
 
 I added some words and some examples (including corner cases) to the function `kernel` in `sage/misc/functional.py` and to the `kernel` method in `sage/matrix/matrix_rational_dense.py`. 
 
@@ -419,7 +419,7 @@ archive/issue_comments_010109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10109",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

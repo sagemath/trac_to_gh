@@ -47,7 +47,7 @@ archive/issue_comments_089097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9377#issuecomment-89097",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_089098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9377#issuecomment-89098",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -90,16 +90,16 @@ Changing priority from major to minor.
 archive/issue_comments_089099.json:
 ```json
 {
-    "body": "Attachment [trac#9377.patch](tarball://root/attachments/some-uuid/ticket9377/trac#9377.patch) by klee created at 2010-07-10 03:28:00",
+    "body": "Attachment [trac#9377.patch](tarball://root/attachments/some-uuid/ticket9377/trac#9377.patch) by @kwankyu created at 2010-07-10 03:28:00",
     "created_at": "2010-07-10T03:28:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9377#issuecomment-89099",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Attachment [trac#9377.patch](tarball://root/attachments/some-uuid/ticket9377/trac#9377.patch) by klee created at 2010-07-10 03:28:00
+Attachment [trac#9377.patch](tarball://root/attachments/some-uuid/ticket9377/trac#9377.patch) by @kwankyu created at 2010-07-10 03:28:00
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_089100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9377#issuecomment-89100",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_089101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9377#issuecomment-89101",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -220,16 +220,16 @@ sage:
 archive/issue_comments_089104.json:
 ```json
 {
-    "body": "Attachment [trac#9377_revised.patch](tarball://root/attachments/some-uuid/ticket9377/trac#9377_revised.patch) by klee created at 2010-07-13 01:57:22\n\ncontains the previous patch and more",
+    "body": "Attachment [trac#9377_revised.patch](tarball://root/attachments/some-uuid/ticket9377/trac#9377_revised.patch) by @kwankyu created at 2010-07-13 01:57:22\n\ncontains the previous patch and more",
     "created_at": "2010-07-13T01:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9377#issuecomment-89104",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Attachment [trac#9377_revised.patch](tarball://root/attachments/some-uuid/ticket9377/trac#9377_revised.patch) by klee created at 2010-07-13 01:57:22
+Attachment [trac#9377_revised.patch](tarball://root/attachments/some-uuid/ticket9377/trac#9377_revised.patch) by @kwankyu created at 2010-07-13 01:57:22
 
 contains the previous patch and more
 
@@ -245,7 +245,7 @@ archive/issue_comments_089105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9377#issuecomment-89105",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_089106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9377#issuecomment-89106",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_089109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9377#issuecomment-89109",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_089110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9377#issuecomment-89110",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

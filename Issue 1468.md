@@ -14,7 +14,7 @@ archive/issues_001468.json:
     "title": "notebook -- create a global option so that word wrap is on or off by default always",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1468",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_009444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1468#issuecomment-9444",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_009445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1468#issuecomment-9445",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_009446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1468#issuecomment-9446",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_009447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1468#issuecomment-9447",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_009448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1468#issuecomment-9448",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

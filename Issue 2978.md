@@ -3,7 +3,7 @@
 archive/issues_002978.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jdemeyer\n\nOn most platforms R with Sage does *not* build with png support.  Fix this and revert #2974 once this is fixed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2978\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jdemeyer\n\nOn most platforms R with Sage does *not* build with png support.  Fix this and revert #2974 once this is fixed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2978\n\n",
     "created_at": "2008-04-21T02:34:11Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_002978.json:
     "title": "Rstats -- make it build with png support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2978",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 On most platforms R with Sage does *not* build with png support.  Fix this and revert #2974 once this is fixed. 
 
@@ -74,16 +74,16 @@ Changing status from new to assigned.
 archive/issue_comments_020511.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to jason.",
+    "body": "Changing assignee from mabshoff to @jasongrout.",
     "created_at": "2009-09-16T16:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2978#issuecomment-20511",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mabshoff to jason.
+Changing assignee from mabshoff to @jasongrout.
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_020512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2978#issuecomment-20512",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_020513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2978#issuecomment-20513",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_020514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2978#issuecomment-20514",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_020515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2978#issuecomment-20515",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_020516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2978#issuecomment-20516",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

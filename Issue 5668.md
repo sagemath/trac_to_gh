@@ -3,7 +3,7 @@
 archive/issues_005668.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  kcrisman jhpalmieri\n\nThe attached screenshot shows the public Sage notebook server (which has about 7000 user accounts) saving state after I pressed control-C.  It uses a huge amount of RAM, but does finish after several minutes.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5668\n\n",
+    "body": "Assignee: boothby\n\nCC:  @kcrisman @jhpalmieri\n\nThe attached screenshot shows the public Sage notebook server (which has about 7000 user accounts) saving state after I pressed control-C.  It uses a huge amount of RAM, but does finish after several minutes.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5668\n\n",
     "created_at": "2009-04-02T20:06:46Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005668.json:
     "title": "notebook optimization -- when saving state sometimes the sage public notebook server (after running for a long time) takes a *huge* amount of RAM",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5668",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  kcrisman jhpalmieri
+CC:  @kcrisman @jhpalmieri
 
 The attached screenshot shows the public Sage notebook server (which has about 7000 user accounts) saving state after I pressed control-C.  It uses a huge amount of RAM, but does finish after several minutes.
 
@@ -41,7 +41,7 @@ archive/issue_comments_044339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5668#issuecomment-44339",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -54,16 +54,16 @@ picture of top and fact that we're saving state.
 archive/issue_comments_044340.json:
 ```json
 {
-    "body": "Attachment [Picture 2.png](tarball://root/attachments/some-uuid/ticket5668/Picture 2.png) by was created at 2009-04-02 20:10:45\n\npicture of too many open files.",
+    "body": "Attachment [Picture 2.png](tarball://root/attachments/some-uuid/ticket5668/Picture 2.png) by @williamstein created at 2009-04-02 20:10:45\n\npicture of too many open files.",
     "created_at": "2009-04-02T20:10:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5668#issuecomment-44340",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [Picture 2.png](tarball://root/attachments/some-uuid/ticket5668/Picture 2.png) by was created at 2009-04-02 20:10:45
+Attachment [Picture 2.png](tarball://root/attachments/some-uuid/ticket5668/Picture 2.png) by @williamstein created at 2009-04-02 20:10:45
 
 picture of too many open files.
 
@@ -79,7 +79,7 @@ archive/issue_comments_044341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5668#issuecomment-44341",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_044342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5668#issuecomment-44342",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_044343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5668#issuecomment-44343",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_044344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5668#issuecomment-44344",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_044345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5668#issuecomment-44345",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_044346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5668#issuecomment-44346",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

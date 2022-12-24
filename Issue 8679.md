@@ -3,7 +3,7 @@
 archive/issues_008679.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ddrake mvngu\n\nSome scripts in SAGE_ROOT/local/bin expect spkg names to have the form \n\n```\nmy_package-2.3.spkg\n```\n\nbut not \n\n```\nmy-package-2.3.spkg   (first hyphen is bad)\n```\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8597ce93b420afe4) for some discussion.\n\nThe attached patches do three things:\n\n- Rewrite sage-pkg (in python instead of bash) to test whether the name has the right form.\n- Remove sage-pkg-nocompress, using sage-pkg instead (and thus unifying the two scripts sage-pkg and sage-pkg-nocompress).\n- Add some comments about this to the developer's guide (hence the cc for mvngu).\n\nI used python because in the old version of sage-pkg, we were already calling sed and perl, and we might need to call perl again (or something else?) to test whether the name has the right form.  It seems easier to maintain if it's all plain Python.\n\nHere is the standard being suggested by this patch: each Sage spkg should have a name of the following form:\n\n```\nBASENAME-VERSION.spkg\n```\n\nwhere BASENAME may lowercase letters, numbers, and underscores, but **no hyphens**.  VERSION **must be present** and **should start with a number**; it may contain numbers, letters, dots, and hyphens; it may end in a string of the form \"pNUM\", where \"NUM\" is a non-negative integer.  The new version of sage-pkg sets BASENAME to be everything up to the first hyphen, but it does not check to make sure only numbers, lowercase letters, and underscores are used.  It checks that VERSION is present, starts with a number, and contains only numbers, letters, periods, hyphens.  If not, it prints a warning and creates an spkg anyway.\n\nI've tried to implement the change at #2522, but I'm not sure how to test it.  Any suggestions?  What sort of \"OS X junk\" should I try to put in my directory, to make sure it is not put into the resulting spkg file?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8679\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dandrake mvngu\n\nSome scripts in SAGE_ROOT/local/bin expect spkg names to have the form \n\n```\nmy_package-2.3.spkg\n```\n\nbut not \n\n```\nmy-package-2.3.spkg   (first hyphen is bad)\n```\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8597ce93b420afe4) for some discussion.\n\nThe attached patches do three things:\n\n- Rewrite sage-pkg (in python instead of bash) to test whether the name has the right form.\n- Remove sage-pkg-nocompress, using sage-pkg instead (and thus unifying the two scripts sage-pkg and sage-pkg-nocompress).\n- Add some comments about this to the developer's guide (hence the cc for mvngu).\n\nI used python because in the old version of sage-pkg, we were already calling sed and perl, and we might need to call perl again (or something else?) to test whether the name has the right form.  It seems easier to maintain if it's all plain Python.\n\nHere is the standard being suggested by this patch: each Sage spkg should have a name of the following form:\n\n```\nBASENAME-VERSION.spkg\n```\n\nwhere BASENAME may lowercase letters, numbers, and underscores, but **no hyphens**.  VERSION **must be present** and **should start with a number**; it may contain numbers, letters, dots, and hyphens; it may end in a string of the form \"pNUM\", where \"NUM\" is a non-negative integer.  The new version of sage-pkg sets BASENAME to be everything up to the first hyphen, but it does not check to make sure only numbers, lowercase letters, and underscores are used.  It checks that VERSION is present, starts with a number, and contains only numbers, letters, periods, hyphens.  If not, it prints a warning and creates an spkg anyway.\n\nI've tried to implement the change at #2522, but I'm not sure how to test it.  Any suggestions?  What sort of \"OS X junk\" should I try to put in my directory, to make sure it is not put into the resulting spkg file?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8679\n\n",
     "created_at": "2010-04-12T21:21:49Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_008679.json:
     "title": "conventions for spkg names, rewriting sage-spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8679",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
 
-CC:  ddrake mvngu
+CC:  @dandrake mvngu
 
 Some scripts in SAGE_ROOT/local/bin expect spkg names to have the form 
 
@@ -69,7 +69,7 @@ archive/issue_comments_079057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79057",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -82,16 +82,16 @@ sage repo (documentation)
 archive/issue_comments_079058.json:
 ```json
 {
-    "body": "Attachment [trac_8679-sage.patch](tarball://root/attachments/some-uuid/ticket8679/trac_8679-sage.patch) by jhpalmieri created at 2010-04-12 21:59:06",
+    "body": "Attachment [trac_8679-sage.patch](tarball://root/attachments/some-uuid/ticket8679/trac_8679-sage.patch) by @jhpalmieri created at 2010-04-12 21:59:06",
     "created_at": "2010-04-12T21:59:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79058",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8679-sage.patch](tarball://root/attachments/some-uuid/ticket8679/trac_8679-sage.patch) by jhpalmieri created at 2010-04-12 21:59:06
+Attachment [trac_8679-sage.patch](tarball://root/attachments/some-uuid/ticket8679/trac_8679-sage.patch) by @jhpalmieri created at 2010-04-12 21:59:06
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_079059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79059",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_079060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79060",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_079061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79061",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_079062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79062",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_079063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79063",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_079064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79064",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -251,16 +251,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079065.json:
 ```json
 {
-    "body": "Attachment [trac_8679-scripts.patch](tarball://root/attachments/some-uuid/ticket8679/trac_8679-scripts.patch) by jhpalmieri created at 2010-04-13 18:20:20\n\nscripts repo",
+    "body": "Attachment [trac_8679-scripts.patch](tarball://root/attachments/some-uuid/ticket8679/trac_8679-scripts.patch) by @jhpalmieri created at 2010-04-13 18:20:20\n\nscripts repo",
     "created_at": "2010-04-13T18:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79065",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8679-scripts.patch](tarball://root/attachments/some-uuid/ticket8679/trac_8679-scripts.patch) by jhpalmieri created at 2010-04-13 18:20:20
+Attachment [trac_8679-scripts.patch](tarball://root/attachments/some-uuid/ticket8679/trac_8679-scripts.patch) by @jhpalmieri created at 2010-04-13 18:20:20
 
 scripts repo
 
@@ -276,7 +276,7 @@ archive/issue_comments_079066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79066",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_079067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79067",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_079068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79068",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_079069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79069",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_079070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79070",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_079071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79071",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_079072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79072",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_079073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79073",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -470,7 +470,7 @@ archive/issue_comments_079074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79074",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_079075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79075",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_079076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79076",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_079077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79077",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

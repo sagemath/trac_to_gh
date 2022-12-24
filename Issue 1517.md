@@ -3,7 +3,7 @@
 archive/issues_001517.json:
 ```json
 {
-    "body": "Assignee: was\n\nMany people have run out of disc space while building Sage. So check in `sage-spkg` if at least K MB are free on the partition we are building Sage in. K should be a couple hundred Megabytes in my opinion ;) We might also print a warning once we go below another, higher threshold. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1517\n\n",
+    "body": "Assignee: @williamstein\n\nMany people have run out of disc space while building Sage. So check in `sage-spkg` if at least K MB are free on the partition we are building Sage in. K should be a couple hundred Megabytes in my opinion ;) We might also print a warning once we go below another, higher threshold. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1517\n\n",
     "created_at": "2007-12-15T02:35:11Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001517.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Many people have run out of disc space while building Sage. So check in `sage-spkg` if at least K MB are free on the partition we are building Sage in. K should be a couple hundred Megabytes in my opinion ;) We might also print a warning once we go below another, higher threshold. 
 
@@ -41,7 +41,7 @@ archive/issue_comments_009723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1517#issuecomment-9723",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_009724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1517#issuecomment-9724",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_009725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1517#issuecomment-9725",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_009726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1517#issuecomment-9726",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

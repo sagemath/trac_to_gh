@@ -3,7 +3,7 @@
 archive/issues_009102.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  nthiery nborie mpatel was mhansen jasonbhill\n\nI put this together as a reviewer patch for a ticket that I thought needed review (#8030), but which was already reviewed.  Rather than letting it go to waste, here it is.\n\nIt will depend on #8030.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9102\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @nthiery nborie @qed777 @williamstein @mwhansen jasonbhill\n\nI put this together as a reviewer patch for a ticket that I thought needed review (#8030), but which was already reviewed.  Rather than letting it go to waste, here it is.\n\nIt will depend on #8030.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9102\n\n",
     "created_at": "2010-05-31T03:33:41Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009102.json:
     "title": "Docstring improvements for strong generating systems of permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9102",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  nthiery nborie mpatel was mhansen jasonbhill
+CC:  @nthiery nborie @qed777 @williamstein @mwhansen jasonbhill
 
 I put this together as a reviewer patch for a ticket that I thought needed review (#8030), but which was already reviewed.  Rather than letting it go to waste, here it is.
 
@@ -41,7 +41,7 @@ archive/issue_comments_084569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84569",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_review.
 archive/issue_comments_084570.json:
 ```json
 {
-    "body": "Attachment [trac_9102-docstring-strong-generating-system.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system.patch) by rbeezer created at 2010-05-31 03:37:29",
+    "body": "Attachment [trac_9102-docstring-strong-generating-system.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system.patch) by @rbeezer created at 2010-05-31 03:37:29",
     "created_at": "2010-05-31T03:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84570",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9102-docstring-strong-generating-system.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system.patch) by rbeezer created at 2010-05-31 03:37:29
+Attachment [trac_9102-docstring-strong-generating-system.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system.patch) by @rbeezer created at 2010-05-31 03:37:29
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_084571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84571",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_084572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84572",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing priority from trivial to blocker.
 archive/issue_comments_084573.json:
 ```json
 {
-    "body": "Attachment [trac_9102-docstring-strong-generating-system-v2.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system-v2.patch) by rbeezer created at 2010-06-03 15:33:59\n\nRevised patch (version 2) addresses the failure to build the PDF version of the reference manual, as described at #8030.  The only difference in the v2 patch is to replace two \"\\leqslant\" by \"\\leq\".  However, there are other documentation changes here that need review (ie, the whole v2 patch)  Both PDF and HTML now build fine and look fine.\n\nLong term, we should see why this AMS symbol is not present for the PDF, while is present for the HTML.\n\nMisha - can you review?\n\nI've marked this as a blocker as part of the 4.4.3 alpha series in hopes of having it make it into the final, since #8030 introduced the failure to build the PDF version and is merged already.\n\nRob",
+    "body": "Attachment [trac_9102-docstring-strong-generating-system-v2.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system-v2.patch) by @rbeezer created at 2010-06-03 15:33:59\n\nRevised patch (version 2) addresses the failure to build the PDF version of the reference manual, as described at #8030.  The only difference in the v2 patch is to replace two \"\\leqslant\" by \"\\leq\".  However, there are other documentation changes here that need review (ie, the whole v2 patch)  Both PDF and HTML now build fine and look fine.\n\nLong term, we should see why this AMS symbol is not present for the PDF, while is present for the HTML.\n\nMisha - can you review?\n\nI've marked this as a blocker as part of the 4.4.3 alpha series in hopes of having it make it into the final, since #8030 introduced the failure to build the PDF version and is merged already.\n\nRob",
     "created_at": "2010-06-03T15:33:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84573",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9102-docstring-strong-generating-system-v2.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system-v2.patch) by rbeezer created at 2010-06-03 15:33:59
+Attachment [trac_9102-docstring-strong-generating-system-v2.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system-v2.patch) by @rbeezer created at 2010-06-03 15:33:59
 
 Revised patch (version 2) addresses the failure to build the PDF version of the reference manual, as described at #8030.  The only difference in the v2 patch is to replace two "\leqslant" by "\leq".  However, there are other documentation changes here that need review (ie, the whole v2 patch)  Both PDF and HTML now build fine and look fine.
 
@@ -191,7 +191,7 @@ archive/issue_comments_084576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84576",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_084577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84577",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_084578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84578",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_084581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84581",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_084582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84582",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_084583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84583",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_084584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84584",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_084585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84585",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_084586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84586",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -480,16 +480,16 @@ Changing status from needs_info to needs_work.
 archive/issue_comments_084587.json:
 ```json
 {
-    "body": "Attachment [trac_9102-docstring-strong-generating-system-v3.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system-v3.patch) by rbeezer created at 2010-07-06 04:27:04",
+    "body": "Attachment [trac_9102-docstring-strong-generating-system-v3.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system-v3.patch) by @rbeezer created at 2010-07-06 04:27:04",
     "created_at": "2010-07-06T04:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84587",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9102-docstring-strong-generating-system-v3.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system-v3.patch) by rbeezer created at 2010-07-06 04:27:04
+Attachment [trac_9102-docstring-strong-generating-system-v3.patch](tarball://root/attachments/some-uuid/ticket9102/trac_9102-docstring-strong-generating-system-v3.patch) by @rbeezer created at 2010-07-06 04:27:04
 
 
 
@@ -503,7 +503,7 @@ archive/issue_comments_084588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84588",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_084589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84589",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_084590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84590",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_084591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84591",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -579,7 +579,7 @@ archive/issue_comments_084592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84592",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_084593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84593",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -615,7 +615,7 @@ archive/issue_comments_084594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9102#issuecomment-84594",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

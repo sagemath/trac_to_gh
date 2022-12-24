@@ -3,7 +3,7 @@
 archive/issues_008138.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri\n\nSphinx's LaTeX and PDF builders output two-column indexes / indices, but the badness is high.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8138\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nSphinx's LaTeX and PDF builders output two-column indexes / indices, but the badness is high.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8138\n\n",
     "created_at": "2010-01-31T09:45:31Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008138.json:
     "title": "Single-column index in PDF documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8138",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 Sphinx's LaTeX and PDF builders output two-column indexes / indices, but the badness is high.
 
@@ -39,7 +39,7 @@ archive/issue_comments_071558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8138#issuecomment-71558",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -52,16 +52,16 @@ One-column indexes for PDF ref. manual.  Depends on #8036's "utfx8" patch.
 archive/issue_comments_071559.json:
 ```json
 {
-    "body": "Attachment [trac_8138-one_column_index.patch](tarball://root/attachments/some-uuid/ticket8138/trac_8138-one_column_index.patch) by mpatel created at 2010-01-31 10:06:50",
+    "body": "Attachment [trac_8138-one_column_index.patch](tarball://root/attachments/some-uuid/ticket8138/trac_8138-one_column_index.patch) by @qed777 created at 2010-01-31 10:06:50",
     "created_at": "2010-01-31T10:06:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8138#issuecomment-71559",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8138-one_column_index.patch](tarball://root/attachments/some-uuid/ticket8138/trac_8138-one_column_index.patch) by mpatel created at 2010-01-31 10:06:50
+Attachment [trac_8138-one_column_index.patch](tarball://root/attachments/some-uuid/ticket8138/trac_8138-one_column_index.patch) by @qed777 created at 2010-01-31 10:06:50
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_071560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8138#issuecomment-71560",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_071561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8138#issuecomment-71561",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_071562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8138#issuecomment-71562",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_071563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8138#issuecomment-71563",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_071564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8138#issuecomment-71564",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -162,16 +162,16 @@ One small error: you need an "r" before the triple quotes; otherwise the latex f
 archive/issue_comments_071565.json:
 ```json
 {
-    "body": "Attachment [trac_8138-one_column_index-v2.patch](tarball://root/attachments/some-uuid/ticket8138/trac_8138-one_column_index-v2.patch) by jhpalmieri created at 2010-01-31 16:59:47\n\napply instead of other patch",
+    "body": "Attachment [trac_8138-one_column_index-v2.patch](tarball://root/attachments/some-uuid/ticket8138/trac_8138-one_column_index-v2.patch) by @jhpalmieri created at 2010-01-31 16:59:47\n\napply instead of other patch",
     "created_at": "2010-01-31T16:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8138#issuecomment-71565",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8138-one_column_index-v2.patch](tarball://root/attachments/some-uuid/ticket8138/trac_8138-one_column_index-v2.patch) by jhpalmieri created at 2010-01-31 16:59:47
+Attachment [trac_8138-one_column_index-v2.patch](tarball://root/attachments/some-uuid/ticket8138/trac_8138-one_column_index-v2.patch) by @jhpalmieri created at 2010-01-31 16:59:47
 
 apply instead of other patch
 
@@ -187,7 +187,7 @@ archive/issue_comments_071566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8138",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8138#issuecomment-71566",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003953.json:
     "title": "notebook -- make it so foo?? in the notebook shows the source code syntax highlighted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3953",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

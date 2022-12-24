@@ -3,7 +3,7 @@
 archive/issues_003887.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  cpernet\n\nHere's a crazy bug:\n\n\n```\nsage: m = diagonal_matrix(ZZ, 68, [2]*66 + [1,1])\nsage: m.det()\n-73786800370889000442\nsage: m.det(proof=False)\n73786976294838206464\n```\n\n\nAmusingly, the `proof=False` one is correct. Fix is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3887\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @ClementPernet\n\nHere's a crazy bug:\n\n\n```\nsage: m = diagonal_matrix(ZZ, 68, [2]*66 + [1,1])\nsage: m.det()\n-73786800370889000442\nsage: m.det(proof=False)\n73786976294838206464\n```\n\n\nAmusingly, the `proof=False` one is correct. Fix is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3887\n\n",
     "created_at": "2008-08-18T10:48:28Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_003887.json:
     "title": "[with patch, needs review] Bug in determinant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3887",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  cpernet
+CC:  @ClementPernet
 
 Here's a crazy bug:
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3887
 archive/issue_comments_027733.json:
 ```json
 {
-    "body": "Attachment [trac-3887.patch](tarball://root/attachments/some-uuid/ticket3887/trac-3887.patch) by craigcitro created at 2008-08-18 10:50:03\n\nOops, I forgot to mention: Nils-Peter Skoruppa was the one who reported this.",
+    "body": "Attachment [trac-3887.patch](tarball://root/attachments/some-uuid/ticket3887/trac-3887.patch) by @craigcitro created at 2008-08-18 10:50:03\n\nOops, I forgot to mention: Nils-Peter Skoruppa was the one who reported this.",
     "created_at": "2008-08-18T10:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3887#issuecomment-27733",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3887.patch](tarball://root/attachments/some-uuid/ticket3887/trac-3887.patch) by craigcitro created at 2008-08-18 10:50:03
+Attachment [trac-3887.patch](tarball://root/attachments/some-uuid/ticket3887/trac-3887.patch) by @craigcitro created at 2008-08-18 10:50:03
 
 Oops, I forgot to mention: Nils-Peter Skoruppa was the one who reported this.
 
@@ -71,7 +71,7 @@ archive/issue_comments_027734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3887#issuecomment-27734",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_027735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3887#issuecomment-27735",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_027738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3887#issuecomment-27738",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_027739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3887#issuecomment-27739",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_027740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3887#issuecomment-27740",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -220,16 +220,16 @@ Ah, so we just needed an extra factor of 2 in there (as we weren't taking into a
 archive/issue_comments_027741.json:
 ```json
 {
-    "body": "Attachment [3887-faster-fix.patch](tarball://root/attachments/some-uuid/ticket3887/3887-faster-fix.patch) by robertwb created at 2008-12-18 00:22:39",
+    "body": "Attachment [3887-faster-fix.patch](tarball://root/attachments/some-uuid/ticket3887/3887-faster-fix.patch) by @robertwb created at 2008-12-18 00:22:39",
     "created_at": "2008-12-18T00:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3887#issuecomment-27741",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3887-faster-fix.patch](tarball://root/attachments/some-uuid/ticket3887/3887-faster-fix.patch) by robertwb created at 2008-12-18 00:22:39
+Attachment [3887-faster-fix.patch](tarball://root/attachments/some-uuid/ticket3887/3887-faster-fix.patch) by @robertwb created at 2008-12-18 00:22:39
 
 
 
@@ -243,7 +243,7 @@ archive/issue_comments_027742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3887#issuecomment-27742",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_027743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3887#issuecomment-27743",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_027744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3887#issuecomment-27744",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_027745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3887#issuecomment-27745",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_027746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3887#issuecomment-27746",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009270.json:
     "title": "document the \"-only-optional\" flag for doctesting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9270",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9270
 archive/issue_comments_087316.json:
 ```json
 {
-    "body": "Attachment [trac_9270-only-optional.patch](tarball://root/attachments/some-uuid/ticket9270/trac_9270-only-optional.patch) by jhpalmieri created at 2010-06-19 02:46:11",
+    "body": "Attachment [trac_9270-only-optional.patch](tarball://root/attachments/some-uuid/ticket9270/trac_9270-only-optional.patch) by @jhpalmieri created at 2010-06-19 02:46:11",
     "created_at": "2010-06-19T02:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9270#issuecomment-87316",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9270-only-optional.patch](tarball://root/attachments/some-uuid/ticket9270/trac_9270-only-optional.patch) by jhpalmieri created at 2010-06-19 02:46:11
+Attachment [trac_9270-only-optional.patch](tarball://root/attachments/some-uuid/ticket9270/trac_9270-only-optional.patch) by @jhpalmieri created at 2010-06-19 02:46:11
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_087317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9270#issuecomment-87317",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_087318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9270#issuecomment-87318",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_087319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9270#issuecomment-87319",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_087320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9270#issuecomment-87320",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

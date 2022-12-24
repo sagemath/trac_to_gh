@@ -14,7 +14,7 @@ archive/issues_000941.json:
     "title": "creating Z_p can take massive amounts of RAM.  Why?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/941",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -225,7 +225,7 @@ archive/issue_comments_005762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/941#issuecomment-5762",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_005763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/941#issuecomment-5763",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

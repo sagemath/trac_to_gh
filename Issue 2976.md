@@ -14,7 +14,7 @@ archive/issues_002976.json:
     "title": "get rid of /home/jec/sage-3.0.rc0/tmp/test-dsage.log error at the end of tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2976",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -37,7 +37,7 @@ archive/issue_comments_020503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2976#issuecomment-20503",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_020504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2976#issuecomment-20504",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_020505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2976#issuecomment-20505",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002785.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThis is the ticket for the glitelib spkg.  It requires an extcode patch.  Obtain at http://sage.math.washington.edu/home/gfurnish/spkg/glitelib-2.15.6.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2785\n\n",
+    "body": "Assignee: @garyfurnish\n\nThis is the ticket for the glitelib spkg.  It requires an extcode patch.  Obtain at http://sage.math.washington.edu/home/gfurnish/spkg/glitelib-2.15.6.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2785\n\n",
     "created_at": "2008-04-03T01:15:56Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_002785.json:
     "title": "The glitelib ticket",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2785",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 This is the ticket for the glitelib spkg.  It requires an extcode patch.  Obtain at http://sage.math.washington.edu/home/gfurnish/spkg/glitelib-2.15.6.spkg
 
@@ -37,7 +37,7 @@ archive/issue_comments_019126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2785#issuecomment-19126",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_019127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2785#issuecomment-19127",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_019129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2785#issuecomment-19129",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_019131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2785#issuecomment-19131",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_019135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2785#issuecomment-19135",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -441,7 +441,7 @@ archive/issue_comments_019136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2785#issuecomment-19136",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_019137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2785#issuecomment-19137",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

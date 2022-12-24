@@ -3,7 +3,7 @@
 archive/issues_007927.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7927\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jbalakrishnan\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7927\n\n",
     "created_at": "2010-01-14T06:53:58Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_007927.json:
     "title": "Extend coleman integration to handle Weierstrass points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7927",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jen
+CC:  @jbalakrishnan
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_069005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69005",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -52,16 +52,16 @@ some code, probably needs to be cleaned up
 archive/issue_comments_069006.json:
 ```json
 {
-    "body": "Attachment [13535.patch](tarball://root/attachments/some-uuid/ticket7927/13535.patch) by jen created at 2010-01-15 13:59:11\n\nmore Weierstrass code",
+    "body": "Attachment [13535.patch](tarball://root/attachments/some-uuid/ticket7927/13535.patch) by @jbalakrishnan created at 2010-01-15 13:59:11\n\nmore Weierstrass code",
     "created_at": "2010-01-15T13:59:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69006",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [13535.patch](tarball://root/attachments/some-uuid/ticket7927/13535.patch) by jen created at 2010-01-15 13:59:11
+Attachment [13535.patch](tarball://root/attachments/some-uuid/ticket7927/13535.patch) by @jbalakrishnan created at 2010-01-15 13:59:11
 
 more Weierstrass code
 
@@ -77,7 +77,7 @@ archive/issue_comments_069007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69007",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -98,16 +98,16 @@ And my apologies for the messed-up line breaks in hyperelliptic_generic -- just 
 archive/issue_comments_069008.json:
 ```json
 {
-    "body": "Attachment [13536.patch](tarball://root/attachments/some-uuid/ticket7927/13536.patch) by jen created at 2010-01-16 00:33:24\n\napply after 13535 to fix line break problems",
+    "body": "Attachment [13536.patch](tarball://root/attachments/some-uuid/ticket7927/13536.patch) by @jbalakrishnan created at 2010-01-16 00:33:24\n\napply after 13535 to fix line break problems",
     "created_at": "2010-01-16T00:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69008",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [13536.patch](tarball://root/attachments/some-uuid/ticket7927/13536.patch) by jen created at 2010-01-16 00:33:24
+Attachment [13536.patch](tarball://root/attachments/some-uuid/ticket7927/13536.patch) by @jbalakrishnan created at 2010-01-16 00:33:24
 
 apply after 13535 to fix line break problems
 
@@ -123,7 +123,7 @@ archive/issue_comments_069009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69009",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_069010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69010",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_069011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69011",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_069012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69012",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -253,16 +253,16 @@ merged Robert's patch with mine, though still a work in progress
 archive/issue_comments_069013.json:
 ```json
 {
-    "body": "Attachment [13538.patch](tarball://root/attachments/some-uuid/ticket7927/13538.patch) by jen created at 2010-02-16 21:21:47\n\nfixing precision issues in the infinite disc",
+    "body": "Attachment [13538.patch](tarball://root/attachments/some-uuid/ticket7927/13538.patch) by @jbalakrishnan created at 2010-02-16 21:21:47\n\nfixing precision issues in the infinite disc",
     "created_at": "2010-02-16T21:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69013",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [13538.patch](tarball://root/attachments/some-uuid/ticket7927/13538.patch) by jen created at 2010-02-16 21:21:47
+Attachment [13538.patch](tarball://root/attachments/some-uuid/ticket7927/13538.patch) by @jbalakrishnan created at 2010-02-16 21:21:47
 
 fixing precision issues in the infinite disc
 
@@ -278,7 +278,7 @@ archive/issue_comments_069014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69014",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_069015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69015",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_069016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69016",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -470,7 +470,7 @@ archive/issue_comments_069017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69017",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -483,16 +483,16 @@ fixing things in comment #4 (doctests, etc.)
 archive/issue_comments_069018.json:
 ```json
 {
-    "body": "Attachment [13539.patch](tarball://root/attachments/some-uuid/ticket7927/13539.patch) by jen created at 2010-02-19 01:58:06\n\ndoctesting exceptions; formatting of docstrings",
+    "body": "Attachment [13539.patch](tarball://root/attachments/some-uuid/ticket7927/13539.patch) by @jbalakrishnan created at 2010-02-19 01:58:06\n\ndoctesting exceptions; formatting of docstrings",
     "created_at": "2010-02-19T01:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69018",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [13539.patch](tarball://root/attachments/some-uuid/ticket7927/13539.patch) by jen created at 2010-02-19 01:58:06
+Attachment [13539.patch](tarball://root/attachments/some-uuid/ticket7927/13539.patch) by @jbalakrishnan created at 2010-02-19 01:58:06
 
 doctesting exceptions; formatting of docstrings
 
@@ -503,16 +503,16 @@ doctesting exceptions; formatting of docstrings
 archive/issue_comments_069019.json:
 ```json
 {
-    "body": "Attachment [13540.patch](tarball://root/attachments/some-uuid/ticket7927/13540.patch) by jen created at 2010-02-19 01:58:31",
+    "body": "Attachment [13540.patch](tarball://root/attachments/some-uuid/ticket7927/13540.patch) by @jbalakrishnan created at 2010-02-19 01:58:31",
     "created_at": "2010-02-19T01:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69019",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [13540.patch](tarball://root/attachments/some-uuid/ticket7927/13540.patch) by jen created at 2010-02-19 01:58:31
+Attachment [13540.patch](tarball://root/attachments/some-uuid/ticket7927/13540.patch) by @jbalakrishnan created at 2010-02-19 01:58:31
 
 
 
@@ -526,7 +526,7 @@ archive/issue_comments_069020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69020",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_069021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69021",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -557,16 +557,16 @@ removed coleman_integrals_on_basis in ell_padic_field.py
 archive/issue_comments_069022.json:
 ```json
 {
-    "body": "Attachment [13541.patch](tarball://root/attachments/some-uuid/ticket7927/13541.patch) by kedlaya created at 2010-02-19 16:08:16\n\nAfter applying 13535.patch through 13541.patch against 4.3.3.alpha0, I get no long doctest failures anywhere in sage/schemes/. Positive review.\n\nFor other issues with Coleman integration, see tickets #8304 and #8305.",
+    "body": "Attachment [13541.patch](tarball://root/attachments/some-uuid/ticket7927/13541.patch) by @kedlaya created at 2010-02-19 16:08:16\n\nAfter applying 13535.patch through 13541.patch against 4.3.3.alpha0, I get no long doctest failures anywhere in sage/schemes/. Positive review.\n\nFor other issues with Coleman integration, see tickets #8304 and #8305.",
     "created_at": "2010-02-19T16:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69022",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Attachment [13541.patch](tarball://root/attachments/some-uuid/ticket7927/13541.patch) by kedlaya created at 2010-02-19 16:08:16
+Attachment [13541.patch](tarball://root/attachments/some-uuid/ticket7927/13541.patch) by @kedlaya created at 2010-02-19 16:08:16
 
 After applying 13535.patch through 13541.patch against 4.3.3.alpha0, I get no long doctest failures anywhere in sage/schemes/. Positive review.
 
@@ -584,7 +584,7 @@ archive/issue_comments_069023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69023",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -648,7 +648,7 @@ archive/issue_comments_069026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69026",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -673,7 +673,7 @@ archive/issue_comments_069027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69027",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

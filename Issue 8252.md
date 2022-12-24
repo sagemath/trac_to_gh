@@ -3,7 +3,7 @@
 archive/issues_008252.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nKeywords: number fields\n\nHere is a bit of annoyance:\n\n```\nsage: K.<a>=NumberField(x^2+1)\nsage: L.<b>=K.extension(x^2+5)\nsage: Labs.<tau> = L.absolute_field()\nsage: Lnice = Labs.optimized_representation(names='t')\nsage: Lnice[0]\nNumber Field in t3 with defining polynomial x^4 + 3*x^2 + 1\n```\n\n\nWhile the more reasonable output should be \n\n```\nNumber Field in t with defining polynomial x^4 + 3*x^2 + 1\n```\n\n\nI've looked at the code, and the problem is that the helper function that finds the optimized number field calculates all sorts of other fields, and needs to make sure the names don't conflict with each other, so the output makes sense in that front. However, the output is still unexpected for the user. \n\nThere is an obvious hack that can solve this problem (edit Lnice._names before returning from optimized_representation), but I'm not sure if that's the best approach (side effects scare me).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8252\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: number fields\n\nHere is a bit of annoyance:\n\n```\nsage: K.<a>=NumberField(x^2+1)\nsage: L.<b>=K.extension(x^2+5)\nsage: Labs.<tau> = L.absolute_field()\nsage: Lnice = Labs.optimized_representation(names='t')\nsage: Lnice[0]\nNumber Field in t3 with defining polynomial x^4 + 3*x^2 + 1\n```\n\n\nWhile the more reasonable output should be \n\n```\nNumber Field in t with defining polynomial x^4 + 3*x^2 + 1\n```\n\n\nI've looked at the code, and the problem is that the helper function that finds the optimized number field calculates all sorts of other fields, and needs to make sure the names don't conflict with each other, so the output makes sense in that front. However, the output is still unexpected for the user. \n\nThere is an obvious hack that can solve this problem (edit Lnice._names before returning from optimized_representation), but I'm not sure if that's the best approach (side effects scare me).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8252\n\n",
     "created_at": "2010-02-12T22:17:51Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_008252.json:
     "title": "names parameter in optimized_representation is tweaked,",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8252",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 Keywords: number fields
 
@@ -60,7 +60,7 @@ archive/issue_comments_073008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8252#issuecomment-73008",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_073009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8252#issuecomment-73009",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_073010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8252#issuecomment-73010",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_073011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8252",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8252#issuecomment-73011",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 

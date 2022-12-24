@@ -14,7 +14,7 @@ archive/issues_000078.json:
     "title": "write a SAGE <--> MATLAB interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/78",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -38,7 +38,7 @@ archive/issue_comments_000393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/78",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/78#issuecomment-393",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_000394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/78",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/78#issuecomment-394",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

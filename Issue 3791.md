@@ -3,7 +3,7 @@
 archive/issues_003791.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  fbissey jpflori\n\n\n```\nI was told that this line means that altivec was not detected.\nFor atlas on linux ppc with altivec, we should use the options\n--cflags='-mregnames' -D c -DATL_AVgcc\nfor configure ( http://math-atlas.sourceforge.net/errata.html#G4gcc ).\n\nWith these options, I had \"Vector ISA Extension configured as  AltiVec (1,2)\".\n\nBest regards,\nBin \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3791\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @kiwifb jpflori\n\n\n```\nI was told that this line means that altivec was not detected.\nFor atlas on linux ppc with altivec, we should use the options\n--cflags='-mregnames' -D c -DATL_AVgcc\nfor configure ( http://math-atlas.sourceforge.net/errata.html#G4gcc ).\n\nWith these options, I had \"Vector ISA Extension configured as  AltiVec (1,2)\".\n\nBest regards,\nBin \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3791\n\n",
     "created_at": "2008-08-08T16:15:19Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_003791.json:
 ```
 Assignee: mabshoff
 
-CC:  fbissey jpflori
+CC:  @kiwifb jpflori
 
 
 ```
@@ -69,7 +69,7 @@ archive/issue_comments_026955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3791#issuecomment-26955",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_026957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3791#issuecomment-26957",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_026958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3791#issuecomment-26958",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_026959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3791#issuecomment-26959",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_026960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3791#issuecomment-26960",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_026961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3791#issuecomment-26961",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_026962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3791#issuecomment-26962",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_026963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3791#issuecomment-26963",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

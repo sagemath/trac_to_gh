@@ -14,7 +14,7 @@ archive/issues_000568.json:
     "title": "sage -t --long coding/code_constructions.py times out after several *hours*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/568",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: wdjoyner
@@ -44,7 +44,7 @@ archive/issue_comments_002944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/568#issuecomment-2944",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_002945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/568#issuecomment-2945",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_002946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/568#issuecomment-2946",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_002947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/568#issuecomment-2947",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -161,15 +161,15 @@ Resolution: fixed
 archive/issue_comments_002948.json:
 ```json
 {
-    "body": "Attachment [coding-trac568fix-20070905.hg](tarball://root/attachments/some-uuid/ticket568/coding-trac568fix-20070905.hg) by was created at 2007-09-06 17:21:03\n\nThis works.",
+    "body": "Attachment [coding-trac568fix-20070905.hg](tarball://root/attachments/some-uuid/ticket568/coding-trac568fix-20070905.hg) by @williamstein created at 2007-09-06 17:21:03\n\nThis works.",
     "created_at": "2007-09-06T17:21:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/568#issuecomment-2948",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [coding-trac568fix-20070905.hg](tarball://root/attachments/some-uuid/ticket568/coding-trac568fix-20070905.hg) by was created at 2007-09-06 17:21:03
+Attachment [coding-trac568fix-20070905.hg](tarball://root/attachments/some-uuid/ticket568/coding-trac568fix-20070905.hg) by @williamstein created at 2007-09-06 17:21:03
 
 This works.

@@ -3,7 +3,7 @@
 archive/issues_006459.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jason\n\n\n```\nFrom Pat LeSmithe:\n\nControl-enter is bound to spliteval_cell.  To make control-shift-enter, say, insert a line break, try augmenting notebook.py's tinyMCE.init()'s setup with some code ripped from the Safari plug-in:\n\n     // Around line 1840 of sage/server/notebook/notebook.py\n     setup : function(ed) {\n         ed.onKeyDown.add(function(ed, e) {\n             // Make ctrl-shift-enter insert a line break.  Copied from\nthe Safari plug-in.\n             if (e.keyCode == 13 && e.shiftKey && e.ctrlKey) {\n                 // Workaround for missing shift+enter support,\nhttp://bugs.webkit.org/show_bug.cgi?id=16973\n                 var dom = ed.dom, s = ed.selection, r = s.getRng(), br;\n\n                 // Insert BR element\n                 r.insertNode(br = dom.create('br'));\n\n                 // Place caret after BR\n                 r.setStartAfter(br);\n                 r.setEndAfter(br);\n                 s.setRng(r);\n\n                 // Could not place caret after BR then insert an nbsp\nentity and move the caret\n                 if (s.getSel().focusNode == br.previousSibling) {\n\ns.select(dom.insertAfter(dom.doc.createTextNode('\\u00a0'), br));\n                     s.collapse(1);\n                 }\n\n                 // Scroll to new position, scrollIntoView can't be\nused due to bug: http://bugs.webkit.org/show_bug.cgi?id=16117\n                 ed.getWin().scrollTo(0,\ndom.getPos(s.getRng().startContainer).y);\n\n                 tinymce.dom.Event.cancel(e);\n             }\n         });\n         // Make shift-enter quit editing.  This is the \"old\" code.\n         ed.onKeyDown.add(function(ed, e) {\n             if (key_enter_shift(key_event(e))) {\n                 $(ed.formElement).submit();\n             }\n         })\n     }\n\nThis seems to work on Linux in Firefox, Opera, and the Qt 4.5 WebKit\ndemo browser (e.g., /usr/lib64/qt4/demos/browser/browser).\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6459\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jasongrout\n\n\n```\nFrom Pat LeSmithe:\n\nControl-enter is bound to spliteval_cell.  To make control-shift-enter, say, insert a line break, try augmenting notebook.py's tinyMCE.init()'s setup with some code ripped from the Safari plug-in:\n\n     // Around line 1840 of sage/server/notebook/notebook.py\n     setup : function(ed) {\n         ed.onKeyDown.add(function(ed, e) {\n             // Make ctrl-shift-enter insert a line break.  Copied from\nthe Safari plug-in.\n             if (e.keyCode == 13 && e.shiftKey && e.ctrlKey) {\n                 // Workaround for missing shift+enter support,\nhttp://bugs.webkit.org/show_bug.cgi?id=16973\n                 var dom = ed.dom, s = ed.selection, r = s.getRng(), br;\n\n                 // Insert BR element\n                 r.insertNode(br = dom.create('br'));\n\n                 // Place caret after BR\n                 r.setStartAfter(br);\n                 r.setEndAfter(br);\n                 s.setRng(r);\n\n                 // Could not place caret after BR then insert an nbsp\nentity and move the caret\n                 if (s.getSel().focusNode == br.previousSibling) {\n\ns.select(dom.insertAfter(dom.doc.createTextNode('\\u00a0'), br));\n                     s.collapse(1);\n                 }\n\n                 // Scroll to new position, scrollIntoView can't be\nused due to bug: http://bugs.webkit.org/show_bug.cgi?id=16117\n                 ed.getWin().scrollTo(0,\ndom.getPos(s.getRng().startContainer).y);\n\n                 tinymce.dom.Event.cancel(e);\n             }\n         });\n         // Make shift-enter quit editing.  This is the \"old\" code.\n         ed.onKeyDown.add(function(ed, e) {\n             if (key_enter_shift(key_event(e))) {\n                 $(ed.formElement).submit();\n             }\n         })\n     }\n\nThis seems to work on Linux in Firefox, Opera, and the Qt 4.5 WebKit\ndemo browser (e.g., /usr/lib64/qt4/demos/browser/browser).\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6459\n\n",
     "created_at": "2009-07-03T15:16:51Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006459.json:
     "title": "make it so control-shift-enter sends a blank line to tinymce",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6459",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  jason
+CC:  @jasongrout
 
 
 ```
@@ -86,16 +86,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6459
 archive/issue_comments_052197.json:
 ```json
 {
-    "body": "Attachment [trac_6459_tinymce_line_break.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break.patch) by mpatel created at 2009-07-11 11:33:51\n\nTested in Cr3, FF3.5, and O9 on Linux and Cr2, FF3.5, IE8, O9, and S4 on XP.",
+    "body": "Attachment [trac_6459_tinymce_line_break.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break.patch) by @qed777 created at 2009-07-11 11:33:51\n\nTested in Cr3, FF3.5, and O9 on Linux and Cr2, FF3.5, IE8, O9, and S4 on XP.",
     "created_at": "2009-07-11T11:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52197",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6459_tinymce_line_break.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break.patch) by mpatel created at 2009-07-11 11:33:51
+Attachment [trac_6459_tinymce_line_break.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break.patch) by @qed777 created at 2009-07-11 11:33:51
 
 Tested in Cr3, FF3.5, and O9 on Linux and Cr2, FF3.5, IE8, O9, and S4 on XP.
 
@@ -111,7 +111,7 @@ archive/issue_comments_052198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52198",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_052199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52199",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_052200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52200",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_052201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52201",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -185,16 +185,16 @@ Tweaked and rebased against #6568. Apply only this patch.
 archive/issue_comments_052202.json:
 ```json
 {
-    "body": "Attachment [trac_6459_tinymce_line_break_v2.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break_v2.patch) by mpatel created at 2009-08-30 17:46:40\n\nVersion 2:\n* Applies to #6568.\n* Fixes a problem with inserting a blank line when text is selected.  I noticed this problem in Safari on Windows XP.  This also fixes a related problem in Opera on Windows XP and Linux.\n* Adds a few comments and dedents/indents.\n\nI think this ticket should be reviewed again (sorry!), since I don't have access to a Mac machine.",
+    "body": "Attachment [trac_6459_tinymce_line_break_v2.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break_v2.patch) by @qed777 created at 2009-08-30 17:46:40\n\nVersion 2:\n* Applies to #6568.\n* Fixes a problem with inserting a blank line when text is selected.  I noticed this problem in Safari on Windows XP.  This also fixes a related problem in Opera on Windows XP and Linux.\n* Adds a few comments and dedents/indents.\n\nI think this ticket should be reviewed again (sorry!), since I don't have access to a Mac machine.",
     "created_at": "2009-08-30T17:46:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52202",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6459_tinymce_line_break_v2.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break_v2.patch) by mpatel created at 2009-08-30 17:46:40
+Attachment [trac_6459_tinymce_line_break_v2.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break_v2.patch) by @qed777 created at 2009-08-30 17:46:40
 
 Version 2:
 * Applies to #6568.
@@ -215,7 +215,7 @@ archive/issue_comments_052203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52203",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_052204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52204",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -246,16 +246,16 @@ Initialization code moved to tinymce.js.  Rebased for #7196.  Apply only this pa
 archive/issue_comments_052205.json:
 ```json
 {
-    "body": "Attachment [trac_6459_tinymce_line_break_v3.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break_v3.patch) by mpatel created at 2009-10-15 20:23:53\n\nRemark:  The TinyMCE developers are [emphatic](http://wiki.moxiecode.com/index.php/TinyMCE:FAQ#TinyMCE_produce_BR_elements_on_enter.2Freturn_instead_of_P_elements.3F) about using P elements instead of BR elements.  If the `control-shift-enter` feature is broken, breaks, or otherwise causes problems, we might instead follow their CSS suggestion, `p {margin:0; padding: 0;}`, inside rich text cells.",
+    "body": "Attachment [trac_6459_tinymce_line_break_v3.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break_v3.patch) by @qed777 created at 2009-10-15 20:23:53\n\nRemark:  The TinyMCE developers are [emphatic](http://wiki.moxiecode.com/index.php/TinyMCE:FAQ#TinyMCE_produce_BR_elements_on_enter.2Freturn_instead_of_P_elements.3F) about using P elements instead of BR elements.  If the `control-shift-enter` feature is broken, breaks, or otherwise causes problems, we might instead follow their CSS suggestion, `p {margin:0; padding: 0;}`, inside rich text cells.",
     "created_at": "2009-10-15T20:23:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52205",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6459_tinymce_line_break_v3.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break_v3.patch) by mpatel created at 2009-10-15 20:23:53
+Attachment [trac_6459_tinymce_line_break_v3.patch](tarball://root/attachments/some-uuid/ticket6459/trac_6459_tinymce_line_break_v3.patch) by @qed777 created at 2009-10-15 20:23:53
 
 Remark:  The TinyMCE developers are [emphatic](http://wiki.moxiecode.com/index.php/TinyMCE:FAQ#TinyMCE_produce_BR_elements_on_enter.2Freturn_instead_of_P_elements.3F) about using P elements instead of BR elements.  If the `control-shift-enter` feature is broken, breaks, or otherwise causes problems, we might instead follow their CSS suggestion, `p {margin:0; padding: 0;}`, inside rich text cells.
 
@@ -271,7 +271,7 @@ archive/issue_comments_052206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52206",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_052207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52207",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_052208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52208",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_052209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52209",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_052210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6459#issuecomment-52210",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

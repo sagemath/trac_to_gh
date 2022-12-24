@@ -3,7 +3,7 @@
 archive/issues_000303.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: m = CuspForms(64,2)\nsage: m.integral_basis()\nTraceback (most recent call last):\n...\nArithmeticError: basis vectors must be linearly independent.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/303\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: m = CuspForms(64,2)\nsage: m.integral_basis()\nTraceback (most recent call last):\n...\nArithmeticError: basis vectors must be linearly independent.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/303\n\n",
     "created_at": "2007-03-01T17:58:02Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_000303.json:
     "title": "modular forms bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/303",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -45,7 +45,7 @@ archive/issue_comments_001449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/303#issuecomment-1449",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_001450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/303#issuecomment-1450",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

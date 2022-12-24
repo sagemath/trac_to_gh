@@ -3,7 +3,7 @@
 archive/issues_001353.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1353\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1353\n\n",
     "created_at": "2007-12-01T21:04:07Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001353.json:
     "title": "[with patch] fix easy bug in graph_database.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1353",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1353
 archive/issue_comments_008664.json:
 ```json
 {
-    "body": "Attachment [graph_db.hg](tarball://root/attachments/some-uuid/ticket1353/graph_db.hg) by rlm created at 2007-12-01 21:04:33",
+    "body": "Attachment [graph_db.hg](tarball://root/attachments/some-uuid/ticket1353/graph_db.hg) by @rlmill created at 2007-12-01 21:04:33",
     "created_at": "2007-12-01T21:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1353#issuecomment-8664",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [graph_db.hg](tarball://root/attachments/some-uuid/ticket1353/graph_db.hg) by rlm created at 2007-12-01 21:04:33
+Attachment [graph_db.hg](tarball://root/attachments/some-uuid/ticket1353/graph_db.hg) by @rlmill created at 2007-12-01 21:04:33
 
 
 

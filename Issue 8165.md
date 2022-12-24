@@ -3,7 +3,7 @@
 archive/issues_008165.json:
 ```json
 {
-    "body": "Assignee: was\n\nI just tried uploading the following worksheet:\n\nhttp://sagenb.org/home/pub/1139/\n\nby pasting the URL into the middle box of the upload page on a (fairly fresh) 4.3.1 install.  When I opened up the worksheet on the local server, the title was cut off to be about 14 characters long.  This is a bug.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8165\n\n",
+    "body": "Assignee: @williamstein\n\nI just tried uploading the following worksheet:\n\nhttp://sagenb.org/home/pub/1139/\n\nby pasting the URL into the middle box of the upload page on a (fairly fresh) 4.3.1 install.  When I opened up the worksheet on the local server, the title was cut off to be about 14 characters long.  This is a bug.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8165\n\n",
     "created_at": "2010-02-03T05:39:24Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_008165.json:
     "title": "title cuts off on worksheet upload",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8165",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I just tried uploading the following worksheet:
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8165
 archive/issue_comments_071841.json:
 ```json
 {
-    "body": "Attachment [trac_8165-download_ws_name.patch](tarball://root/attachments/some-uuid/ticket8165/trac_8165-download_ws_name.patch) by mpatel created at 2010-02-03 06:17:36\n\nDon't use `rstrip` to chop `'.sws'`.  sagenb repo.",
+    "body": "Attachment [trac_8165-download_ws_name.patch](tarball://root/attachments/some-uuid/ticket8165/trac_8165-download_ws_name.patch) by @qed777 created at 2010-02-03 06:17:36\n\nDon't use `rstrip` to chop `'.sws'`.  sagenb repo.",
     "created_at": "2010-02-03T06:17:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71841",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8165-download_ws_name.patch](tarball://root/attachments/some-uuid/ticket8165/trac_8165-download_ws_name.patch) by mpatel created at 2010-02-03 06:17:36
+Attachment [trac_8165-download_ws_name.patch](tarball://root/attachments/some-uuid/ticket8165/trac_8165-download_ws_name.patch) by @qed777 created at 2010-02-03 06:17:36
 
 Don't use `rstrip` to chop `'.sws'`.  sagenb repo.
 
@@ -62,7 +62,7 @@ archive/issue_comments_071842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71842",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_071843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71843",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_071844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71844",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_071845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71845",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_071846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71846",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_071847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71847",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005689.json:
     "title": "hitting control c while computing pi results in wrong answers later",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5689",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -86,7 +86,7 @@ archive/issue_comments_044490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5689#issuecomment-44490",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_044491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5689#issuecomment-44491",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,16 +152,16 @@ Note -- there is one way to defeat the attached patch: (1) hit control c during 
 archive/issue_comments_044492.json:
 ```json
 {
-    "body": "Attachment [trac_5689.patch](tarball://root/attachments/some-uuid/ticket5689/trac_5689.patch) by was created at 2009-04-05 19:25:33",
+    "body": "Attachment [trac_5689.patch](tarball://root/attachments/some-uuid/ticket5689/trac_5689.patch) by @williamstein created at 2009-04-05 19:25:33",
     "created_at": "2009-04-05T19:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5689#issuecomment-44492",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5689.patch](tarball://root/attachments/some-uuid/ticket5689/trac_5689.patch) by was created at 2009-04-05 19:25:33
+Attachment [trac_5689.patch](tarball://root/attachments/some-uuid/ticket5689/trac_5689.patch) by @williamstein created at 2009-04-05 19:25:33
 
 
 
@@ -197,7 +197,7 @@ archive/issue_comments_044494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5689#issuecomment-44494",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -215,16 +215,16 @@ William
 archive/issue_comments_044495.json:
 ```json
 {
-    "body": "Attachment [trac_5689-part2.patch](tarball://root/attachments/some-uuid/ticket5689/trac_5689-part2.patch) by was created at 2009-04-06 16:53:55",
+    "body": "Attachment [trac_5689-part2.patch](tarball://root/attachments/some-uuid/ticket5689/trac_5689-part2.patch) by @williamstein created at 2009-04-06 16:53:55",
     "created_at": "2009-04-06T16:53:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5689#issuecomment-44495",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5689-part2.patch](tarball://root/attachments/some-uuid/ticket5689/trac_5689-part2.patch) by was created at 2009-04-06 16:53:55
+Attachment [trac_5689-part2.patch](tarball://root/attachments/some-uuid/ticket5689/trac_5689-part2.patch) by @williamstein created at 2009-04-06 16:53:55
 
 
 

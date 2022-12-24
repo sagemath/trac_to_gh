@@ -14,7 +14,7 @@ archive/issues_007497.json:
     "title": "notebook -- bug in viewing/editing attached files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7497",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -49,7 +49,7 @@ archive/issue_comments_063384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7497#issuecomment-63384",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_063385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7497#issuecomment-63385",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -80,16 +80,16 @@ Escape data file content placed in view/edit window.  sagenb repo.
 archive/issue_comments_063386.json:
 ```json
 {
-    "body": "Attachment [trac_7497-escape_view_edit_attached.patch](tarball://root/attachments/some-uuid/ticket7497/trac_7497-escape_view_edit_attached.patch) by mpatel created at 2010-01-02 01:08:54",
+    "body": "Attachment [trac_7497-escape_view_edit_attached.patch](tarball://root/attachments/some-uuid/ticket7497/trac_7497-escape_view_edit_attached.patch) by @qed777 created at 2010-01-02 01:08:54",
     "created_at": "2010-01-02T01:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7497#issuecomment-63386",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7497-escape_view_edit_attached.patch](tarball://root/attachments/some-uuid/ticket7497/trac_7497-escape_view_edit_attached.patch) by mpatel created at 2010-01-02 01:08:54
+Attachment [trac_7497-escape_view_edit_attached.patch](tarball://root/attachments/some-uuid/ticket7497/trac_7497-escape_view_edit_attached.patch) by @qed777 created at 2010-01-02 01:08:54
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_063387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7497#issuecomment-63387",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_063388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7497#issuecomment-63388",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_063389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7497#issuecomment-63389",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_063390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7497#issuecomment-63390",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

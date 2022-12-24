@@ -3,7 +3,7 @@
 archive/issues_002056.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2056\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2056\n\n",
     "created_at": "2008-02-05T15:18:56Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002056.json:
     "title": "3d graphics examples [with patch; needs easy review] include two very nice examples from Peter Jipsen in the sage docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2056",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 

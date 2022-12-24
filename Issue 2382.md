@@ -3,7 +3,7 @@
 archive/issues_002382.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThe removal of temporary files from sage-doctest causes mysterious errors to occur\n\nIssue created by migration from https://trac.sagemath.org/ticket/2382\n\n",
+    "body": "Assignee: @garyfurnish\n\nThe removal of temporary files from sage-doctest causes mysterious errors to occur\n\nIssue created by migration from https://trac.sagemath.org/ticket/2382\n\n",
     "created_at": "2008-03-04T06:25:47Z",
     "labels": [
         "build",
@@ -14,10 +14,10 @@ archive/issues_002382.json:
     "title": "sage-doctest broken by removal of temp files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2382",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 The removal of temporary files from sage-doctest causes mysterious errors to occur
 
@@ -37,7 +37,7 @@ archive/issue_comments_016069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2382#issuecomment-16069",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_016070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2382#issuecomment-16070",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from assigned to new.
 archive/issue_comments_016071.json:
 ```json
 {
-    "body": "Attachment [trac_2382.3.patch](tarball://root/attachments/some-uuid/ticket2382/trac_2382.3.patch) by gfurnish created at 2008-03-04 06:48:59\n\n3rd is correct patch",
+    "body": "Attachment [trac_2382.3.patch](tarball://root/attachments/some-uuid/ticket2382/trac_2382.3.patch) by @garyfurnish created at 2008-03-04 06:48:59\n\n3rd is correct patch",
     "created_at": "2008-03-04T06:48:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2382#issuecomment-16071",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_2382.3.patch](tarball://root/attachments/some-uuid/ticket2382/trac_2382.3.patch) by gfurnish created at 2008-03-04 06:48:59
+Attachment [trac_2382.3.patch](tarball://root/attachments/some-uuid/ticket2382/trac_2382.3.patch) by @garyfurnish created at 2008-03-04 06:48:59
 
 3rd is correct patch
 
@@ -93,7 +93,7 @@ archive/issue_comments_016072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2382#issuecomment-16072",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_016073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2382#issuecomment-16073",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

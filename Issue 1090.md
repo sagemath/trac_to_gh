@@ -3,7 +3,7 @@
 archive/issues_001090.json:
 ```json
 {
-    "body": "Assignee: was\n\nGet it here:\n   http://moinmo.in/MoinMoinDownload\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1090\n\n",
+    "body": "Assignee: @williamstein\n\nGet it here:\n   http://moinmo.in/MoinMoinDownload\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1090\n\n",
     "created_at": "2007-11-03T23:56:09Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001090.json:
     "title": "upgrade moinmoin wiki to 1.5.8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1090",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Get it here:
    http://moinmo.in/MoinMoinDownload
@@ -39,7 +39,7 @@ archive/issue_comments_006602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1090",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1090#issuecomment-6602",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

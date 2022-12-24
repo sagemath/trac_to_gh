@@ -3,7 +3,7 @@
 archive/issues_008599.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nFor 3d points, one must use the argument `size`  :\n\n\n```\nsage: point((2,3,4), size=100)\n```\n\n\nBut for 2d points, one must use the argument `pointsize`  :\n\n\n```\nsage: point((2,3), size=100)\nverbose 0 (136: primitive.py, options) WARNING: Ignoring option 'size'=100\nverbose 0 (136: primitive.py, options) \nThe allowed options for Point set defined by 1 point(s) are:\n    alpha          How transparent the line is.                                \n    faceted        If True color the edge of the point.                        \n    hue            The color given as a hue.                                   \n    pointsize      How big the point is.                                       \n    rgbcolor       The color as an RGB tuple.                                  \n    zorder         The layer level in which to draw                            \n\n\nsage: point((2,3), pointsize=100)\n```\n\n\nI think `pointsize` is kind of redundant and `size` would not be ambiguous. At least, if we keep `pointsize` for backward compatibility reasons, I would like\n\n\n```\nsage: point((2,3), size=100)\n```\n\n\nto work.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8599\n\n",
+    "body": "Assignee: @seblabbe\n\nFor 3d points, one must use the argument `size`  :\n\n\n```\nsage: point((2,3,4), size=100)\n```\n\n\nBut for 2d points, one must use the argument `pointsize`  :\n\n\n```\nsage: point((2,3), size=100)\nverbose 0 (136: primitive.py, options) WARNING: Ignoring option 'size'=100\nverbose 0 (136: primitive.py, options) \nThe allowed options for Point set defined by 1 point(s) are:\n    alpha          How transparent the line is.                                \n    faceted        If True color the edge of the point.                        \n    hue            The color given as a hue.                                   \n    pointsize      How big the point is.                                       \n    rgbcolor       The color as an RGB tuple.                                  \n    zorder         The layer level in which to draw                            \n\n\nsage: point((2,3), pointsize=100)\n```\n\n\nI think `pointsize` is kind of redundant and `size` would not be ambiguous. At least, if we keep `pointsize` for backward compatibility reasons, I would like\n\n\n```\nsage: point((2,3), size=100)\n```\n\n\nto work.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8599\n\n",
     "created_at": "2010-03-24T15:30:11Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_008599.json:
     "title": "Allow size as an argument for point2d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8599",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 For 3d points, one must use the argument `size`  :
 
@@ -74,7 +74,7 @@ archive/issue_comments_077871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8599#issuecomment-77871",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -87,16 +87,16 @@ Changing status from new to needs_review.
 archive/issue_comments_077872.json:
 ```json
 {
-    "body": "Attachment [trac_8599_pointsize-sl.patch](tarball://root/attachments/some-uuid/ticket8599/trac_8599_pointsize-sl.patch) by slabbe created at 2010-03-25 13:38:02",
+    "body": "Attachment [trac_8599_pointsize-sl.patch](tarball://root/attachments/some-uuid/ticket8599/trac_8599_pointsize-sl.patch) by @seblabbe created at 2010-03-25 13:38:02",
     "created_at": "2010-03-25T13:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8599#issuecomment-77872",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8599_pointsize-sl.patch](tarball://root/attachments/some-uuid/ticket8599/trac_8599_pointsize-sl.patch) by slabbe created at 2010-03-25 13:38:02
+Attachment [trac_8599_pointsize-sl.patch](tarball://root/attachments/some-uuid/ticket8599/trac_8599_pointsize-sl.patch) by @seblabbe created at 2010-03-25 13:38:02
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_077873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8599#issuecomment-77873",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_077874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8599#issuecomment-77874",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_077875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8599#issuecomment-77875",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -161,16 +161,16 @@ apply on top of previous patch
 archive/issue_comments_077876.json:
 ```json
 {
-    "body": "Attachment [trac-8599-fix-docs.patch](tarball://root/attachments/some-uuid/ticket8599/trac-8599-fix-docs.patch) by jason created at 2010-03-25 19:10:39\n\nOkay, I moved the deprecation code over to #8607, since William requested that we don't deprecate the pointsize option (for mma compatibility).  I've instead posted a new patch which just contains a few documentation enhancements and fixes.  Sebastien, can you review my patch?  If it's a positive review, then set this to positive review.",
+    "body": "Attachment [trac-8599-fix-docs.patch](tarball://root/attachments/some-uuid/ticket8599/trac-8599-fix-docs.patch) by @jasongrout created at 2010-03-25 19:10:39\n\nOkay, I moved the deprecation code over to #8607, since William requested that we don't deprecate the pointsize option (for mma compatibility).  I've instead posted a new patch which just contains a few documentation enhancements and fixes.  Sebastien, can you review my patch?  If it's a positive review, then set this to positive review.",
     "created_at": "2010-03-25T19:10:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8599#issuecomment-77876",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8599-fix-docs.patch](tarball://root/attachments/some-uuid/ticket8599/trac-8599-fix-docs.patch) by jason created at 2010-03-25 19:10:39
+Attachment [trac-8599-fix-docs.patch](tarball://root/attachments/some-uuid/ticket8599/trac-8599-fix-docs.patch) by @jasongrout created at 2010-03-25 19:10:39
 
 Okay, I moved the deprecation code over to #8607, since William requested that we don't deprecate the pointsize option (for mma compatibility).  I've instead posted a new patch which just contains a few documentation enhancements and fixes.  Sebastien, can you review my patch?  If it's a positive review, then set this to positive review.
 
@@ -186,7 +186,7 @@ archive/issue_comments_077877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8599#issuecomment-77877",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_077878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8599#issuecomment-77878",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_077879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8599#issuecomment-77879",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_077880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8599#issuecomment-77880",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

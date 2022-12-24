@@ -14,7 +14,7 @@ archive/issues_005409.json:
     "title": "rewrite quaternion algebras -- the current implementation isn't sufficiently good",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5409",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5409
 archive/issue_comments_041805.json:
 ```json
 {
-    "body": "Attachment [trac_5409.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409.patch) by was created at 2009-03-01 07:56:18",
+    "body": "Attachment [trac_5409.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409.patch) by @williamstein created at 2009-03-01 07:56:18",
     "created_at": "2009-03-01T07:56:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41805",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5409.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409.patch) by was created at 2009-03-01 07:56:18
+Attachment [trac_5409.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409.patch) by @williamstein created at 2009-03-01 07:56:18
 
 
 
@@ -52,16 +52,16 @@ Attachment [trac_5409.patch](tarball://root/attachments/some-uuid/ticket5409/tra
 archive/issue_comments_041806.json:
 ```json
 {
-    "body": "Attachment [trac_5409-part3.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part3.patch) by was created at 2009-03-01 22:07:08",
+    "body": "Attachment [trac_5409-part3.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part3.patch) by @williamstein created at 2009-03-01 22:07:08",
     "created_at": "2009-03-01T22:07:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41806",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5409-part3.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part3.patch) by was created at 2009-03-01 22:07:08
+Attachment [trac_5409-part3.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part3.patch) by @williamstein created at 2009-03-01 22:07:08
 
 
 
@@ -70,16 +70,16 @@ Attachment [trac_5409-part3.patch](tarball://root/attachments/some-uuid/ticket54
 archive/issue_comments_041807.json:
 ```json
 {
-    "body": "Attachment [trac_5409-part4.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part4.patch) by was created at 2009-03-02 08:35:07",
+    "body": "Attachment [trac_5409-part4.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part4.patch) by @williamstein created at 2009-03-02 08:35:07",
     "created_at": "2009-03-02T08:35:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41807",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5409-part4.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part4.patch) by was created at 2009-03-02 08:35:07
+Attachment [trac_5409-part4.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part4.patch) by @williamstein created at 2009-03-02 08:35:07
 
 
 
@@ -88,16 +88,16 @@ Attachment [trac_5409-part4.patch](tarball://root/attachments/some-uuid/ticket54
 archive/issue_comments_041808.json:
 ```json
 {
-    "body": "Attachment [trac_5409-part5.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part5.patch) by was created at 2009-03-02 09:44:15",
+    "body": "Attachment [trac_5409-part5.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part5.patch) by @williamstein created at 2009-03-02 09:44:15",
     "created_at": "2009-03-02T09:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41808",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5409-part5.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part5.patch) by was created at 2009-03-02 09:44:15
+Attachment [trac_5409-part5.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part5.patch) by @williamstein created at 2009-03-02 09:44:15
 
 
 
@@ -106,16 +106,16 @@ Attachment [trac_5409-part5.patch](tarball://root/attachments/some-uuid/ticket54
 archive/issue_comments_041809.json:
 ```json
 {
-    "body": "Attachment [trac_5409-part6.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part6.patch) by was created at 2009-03-02 09:52:38",
+    "body": "Attachment [trac_5409-part6.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part6.patch) by @williamstein created at 2009-03-02 09:52:38",
     "created_at": "2009-03-02T09:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41809",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5409-part6.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part6.patch) by was created at 2009-03-02 09:52:38
+Attachment [trac_5409-part6.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part6.patch) by @williamstein created at 2009-03-02 09:52:38
 
 
 
@@ -163,7 +163,7 @@ archive/issue_comments_041811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41811",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -212,16 +212,16 @@ diff -r 311c05f56282 sage/rings/ring.pyx
 archive/issue_comments_041812.json:
 ```json
 {
-    "body": "Attachment [trac_5409.part7-reviewer.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409.part7-reviewer.patch) by tornaria created at 2009-03-02 18:29:37\n\nreview patch -- fix doctests except for pickle jar",
+    "body": "Attachment [trac_5409.part7-reviewer.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409.part7-reviewer.patch) by @tornaria created at 2009-03-02 18:29:37\n\nreview patch -- fix doctests except for pickle jar",
     "created_at": "2009-03-02T18:29:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41812",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [trac_5409.part7-reviewer.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409.part7-reviewer.patch) by tornaria created at 2009-03-02 18:29:37
+Attachment [trac_5409.part7-reviewer.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409.part7-reviewer.patch) by @tornaria created at 2009-03-02 18:29:37
 
 review patch -- fix doctests except for pickle jar
 
@@ -237,7 +237,7 @@ archive/issue_comments_041813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41813",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -265,16 +265,16 @@ Quaternion Algebra (2, 3) with base ring Rational Field
 archive/issue_comments_041814.json:
 ```json
 {
-    "body": "Attachment [trac_5409-part7.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part7.patch) by was created at 2009-03-02 19:16:31\n\nfix caching",
+    "body": "Attachment [trac_5409-part7.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part7.patch) by @williamstein created at 2009-03-02 19:16:31\n\nfix caching",
     "created_at": "2009-03-02T19:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41814",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5409-part7.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part7.patch) by was created at 2009-03-02 19:16:31
+Attachment [trac_5409-part7.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part7.patch) by @williamstein created at 2009-03-02 19:16:31
 
 fix caching
 
@@ -290,7 +290,7 @@ archive/issue_comments_041815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41815",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -327,16 +327,16 @@ sage: v.inner_product(v)
 archive/issue_comments_041816.json:
 ```json
 {
-    "body": "Attachment [trac_5409-part8.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part8.patch) by was created at 2009-03-04 04:46:25\n\nWe didn't do quat alg from discriminants for number fields yet.   I'm going to also get rid of \"norm\" and \"trace\" and just have \"reduced_norm\" and \"reduced_trace\" since even Gonzalo clearly got confused by having both and an alias.",
+    "body": "Attachment [trac_5409-part8.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part8.patch) by @williamstein created at 2009-03-04 04:46:25\n\nWe didn't do quat alg from discriminants for number fields yet.   I'm going to also get rid of \"norm\" and \"trace\" and just have \"reduced_norm\" and \"reduced_trace\" since even Gonzalo clearly got confused by having both and an alias.",
     "created_at": "2009-03-04T04:46:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41816",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5409-part8.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part8.patch) by was created at 2009-03-04 04:46:25
+Attachment [trac_5409-part8.patch](tarball://root/attachments/some-uuid/ticket5409/trac_5409-part8.patch) by @williamstein created at 2009-03-04 04:46:25
 
 We didn't do quat alg from discriminants for number fields yet.   I'm going to also get rid of "norm" and "trace" and just have "reduced_norm" and "reduced_trace" since even Gonzalo clearly got confused by having both and an alias.
 
@@ -352,7 +352,7 @@ archive/issue_comments_041817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41817",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_041819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41819",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -401,16 +401,16 @@ Bug fixes and doctests
 archive/issue_comments_041820.json:
 ```json
 {
-    "body": "Attachment [11771.patch](tarball://root/attachments/some-uuid/ticket5409/11771.patch) by jvoight created at 2009-03-04 19:56:25\n\nI got it to patch correctly against 3.4.rc0.  I found some bugs and added a few doctests.  Partial positive review.  JV",
+    "body": "Attachment [11771.patch](tarball://root/attachments/some-uuid/ticket5409/11771.patch) by @jvoight created at 2009-03-04 19:56:25\n\nI got it to patch correctly against 3.4.rc0.  I found some bugs and added a few doctests.  Partial positive review.  JV",
     "created_at": "2009-03-04T19:56:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41820",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
-Attachment [11771.patch](tarball://root/attachments/some-uuid/ticket5409/11771.patch) by jvoight created at 2009-03-04 19:56:25
+Attachment [11771.patch](tarball://root/attachments/some-uuid/ticket5409/11771.patch) by @jvoight created at 2009-03-04 19:56:25
 
 I got it to patch correctly against 3.4.rc0.  I found some bugs and added a few doctests.  Partial positive review.  JV
 
@@ -426,7 +426,7 @@ archive/issue_comments_041821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41821",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_041822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41822",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_041827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5409",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5409#issuecomment-41827",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

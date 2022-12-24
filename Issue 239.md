@@ -13,7 +13,7 @@ archive/issues_000239.json:
     "title": "x^(3/4) rounding issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/239",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -65,7 +65,7 @@ archive/issue_comments_001068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/239#issuecomment-1068",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_001069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/239#issuecomment-1069",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_001070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/239#issuecomment-1070",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

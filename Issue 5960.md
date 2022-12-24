@@ -3,7 +3,7 @@
 archive/issues_005960.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman\n\n\n```\nFrom Thomas Savitsky (on sage-devel):\n> > I've noticed that the function find_minimum_on_interval makes no attempt to\n> > find \"the\" minimum on the interval as the documentation implies, but rather\n> > \"a local\" minimum.  I imagine this may be a source of confusion for other\n> > new users as well.  Rather than treating this as a bug, may I suggest\n> > changing the documentation for this function to reflect that it only finds a\n> > local minimum and adding an additional function which searches for a global\n> > minimum?\n>\n> +1  Can you provide a few examples for the docstring that illustrate this?\n\nDo these work?\n\nsage: h(x) =  -sin(x) - 2*sin(2*x)\nsage: h.find_minimum_on_interval(0, 2*pi)\n(-1.3271810224585345, 3.8298351449342838)\nBut there is another local minimum at h(0.8666760871050464) = -2.73581510406\n\n\nsage: find_minimum_on_interval(x*(x-1)*(x+1), -2, 2)\n(-0.38490017945975047, 0.57735026913115706)\nThe minimum on this interval is the endpoint h(-2) = 6.\n\n\nsage: find_minimum_on_interval((x-2)*(x-1)*x*(x+1) - x, -2, 2)\n(-0.43749999999999994, -0.49999999973911674)\n\nbut\nsage: find_minimum_on_interval((x-2)*(x-1)*x*(x+1) - x, 0, 2)\n(-2.6642135623730949, 1.7071067879138031)\n\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5960\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\n\n```\nFrom Thomas Savitsky (on sage-devel):\n> > I've noticed that the function find_minimum_on_interval makes no attempt to\n> > find \"the\" minimum on the interval as the documentation implies, but rather\n> > \"a local\" minimum.  I imagine this may be a source of confusion for other\n> > new users as well.  Rather than treating this as a bug, may I suggest\n> > changing the documentation for this function to reflect that it only finds a\n> > local minimum and adding an additional function which searches for a global\n> > minimum?\n>\n> +1  Can you provide a few examples for the docstring that illustrate this?\n\nDo these work?\n\nsage: h(x) =  -sin(x) - 2*sin(2*x)\nsage: h.find_minimum_on_interval(0, 2*pi)\n(-1.3271810224585345, 3.8298351449342838)\nBut there is another local minimum at h(0.8666760871050464) = -2.73581510406\n\n\nsage: find_minimum_on_interval(x*(x-1)*(x+1), -2, 2)\n(-0.38490017945975047, 0.57735026913115706)\nThe minimum on this interval is the endpoint h(-2) = 6.\n\n\nsage: find_minimum_on_interval((x-2)*(x-1)*x*(x+1) - x, -2, 2)\n(-0.43749999999999994, -0.49999999973911674)\n\nbut\nsage: find_minimum_on_interval((x-2)*(x-1)*x*(x+1) - x, 0, 2)\n(-2.6642135623730949, 1.7071067879138031)\n\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5960\n\n",
     "created_at": "2009-05-02T06:31:23Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_005960.json:
     "title": "fix bug in documentation of find_minimum_on_interval",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5960",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman
+CC:  @kcrisman
 
 
 ```
@@ -75,7 +75,7 @@ archive/issue_comments_047201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5960#issuecomment-47201",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_047202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5960#issuecomment-47202",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_047203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5960#issuecomment-47203",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_047204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5960#issuecomment-47204",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_047205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5960#issuecomment-47205",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_047206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5960#issuecomment-47206",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_047207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5960#issuecomment-47207",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_047208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5960#issuecomment-47208",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

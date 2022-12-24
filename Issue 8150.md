@@ -14,7 +14,7 @@ archive/issues_008150.json:
     "title": "various fixes in sage/groups/ and sage/interfaces needed for GAP 4.4.12",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8150",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 Assignee: joyner
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8150
 archive/issue_comments_071640.json:
 ```json
 {
-    "body": "Attachment [13804.patch](tarball://root/attachments/some-uuid/ticket8150/13804.patch) by dimpase created at 2010-02-02 09:09:22",
+    "body": "Attachment [13804.patch](tarball://root/attachments/some-uuid/ticket8150/13804.patch) by @dimpase created at 2010-02-02 09:09:22",
     "created_at": "2010-02-02T09:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71640",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [13804.patch](tarball://root/attachments/some-uuid/ticket8150/13804.patch) by dimpase created at 2010-02-02 09:09:22
+Attachment [13804.patch](tarball://root/attachments/some-uuid/ticket8150/13804.patch) by @dimpase created at 2010-02-02 09:09:22
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_071641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71641",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_071642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71642",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_071643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71643",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_071645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71645",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_071646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71646",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_071647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71647",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_071648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71648",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_071649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71649",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_071650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71650",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -403,16 +403,16 @@ Let me know when a new patch is available and if I should apply it on top of the
 archive/issue_comments_071651.json:
 ```json
 {
-    "body": "Attachment [13805.patch](tarball://root/attachments/some-uuid/ticket8150/13805.patch) by dimpase created at 2010-02-03 12:32:12\n\nupdate patch - apply after 13804",
+    "body": "Attachment [13805.patch](tarball://root/attachments/some-uuid/ticket8150/13805.patch) by @dimpase created at 2010-02-03 12:32:12\n\nupdate patch - apply after 13804",
     "created_at": "2010-02-03T12:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71651",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [13805.patch](tarball://root/attachments/some-uuid/ticket8150/13805.patch) by dimpase created at 2010-02-03 12:32:12
+Attachment [13805.patch](tarball://root/attachments/some-uuid/ticket8150/13805.patch) by @dimpase created at 2010-02-03 12:32:12
 
 update patch - apply after 13804
 
@@ -428,7 +428,7 @@ archive/issue_comments_071652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71652",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_071653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71653",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_071654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71654",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_071655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71655",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_071656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71656",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -545,7 +545,7 @@ archive/issue_comments_071657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71657",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -563,7 +563,7 @@ archive/issue_comments_071658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71658",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_071659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71659",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -594,16 +594,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_071660.json:
 ```json
 {
-    "body": "Attachment [trac-8150.patch](tarball://root/attachments/some-uuid/ticket8150/trac-8150.patch) by dimpase created at 2010-02-04 05:58:52\n\nReplying to [comment:11 robertwb]:\n> I think you misunderstood what I was going for. A test like\n[...] \n> \n> is perfectly fine to have in the EXAMPLES section, perfectly illustrating the math > and the implementation. \nI have fixed all this (only one TEST is left, in class_function.py, as I think it's\ntoo ugly to have in EXAMPLES) in just uploaded here cumulative patch named trac-8150. (so it subsumes the previous two that are to be discarded.)\nThe rest are re-done as you suggest.\nPlease take a look.",
+    "body": "Attachment [trac-8150.patch](tarball://root/attachments/some-uuid/ticket8150/trac-8150.patch) by @dimpase created at 2010-02-04 05:58:52\n\nReplying to [comment:11 robertwb]:\n> I think you misunderstood what I was going for. A test like\n[...] \n> \n> is perfectly fine to have in the EXAMPLES section, perfectly illustrating the math > and the implementation. \nI have fixed all this (only one TEST is left, in class_function.py, as I think it's\ntoo ugly to have in EXAMPLES) in just uploaded here cumulative patch named trac-8150. (so it subsumes the previous two that are to be discarded.)\nThe rest are re-done as you suggest.\nPlease take a look.",
     "created_at": "2010-02-04T05:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71660",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [trac-8150.patch](tarball://root/attachments/some-uuid/ticket8150/trac-8150.patch) by dimpase created at 2010-02-04 05:58:52
+Attachment [trac-8150.patch](tarball://root/attachments/some-uuid/ticket8150/trac-8150.patch) by @dimpase created at 2010-02-04 05:58:52
 
 Replying to [comment:11 robertwb]:
 > I think you misunderstood what I was going for. A test like
@@ -627,7 +627,7 @@ archive/issue_comments_071661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71661",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -647,7 +647,7 @@ archive/issue_comments_071662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71662",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -667,7 +667,7 @@ archive/issue_comments_071663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71663",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -685,7 +685,7 @@ archive/issue_comments_071664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8150#issuecomment-71664",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

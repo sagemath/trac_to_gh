@@ -14,7 +14,7 @@ archive/issues_000578.json:
     "title": "Fix typo in GF constructor and elem_cache",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/578",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/578
 archive/issue_comments_002996.json:
 ```json
 {
-    "body": "Attachment [6079.patch](tarball://root/attachments/some-uuid/ticket578/6079.patch) by was created at 2007-09-05 04:58:12",
+    "body": "Attachment [6079.patch](tarball://root/attachments/some-uuid/ticket578/6079.patch) by @williamstein created at 2007-09-05 04:58:12",
     "created_at": "2007-09-05T04:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/578#issuecomment-2996",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [6079.patch](tarball://root/attachments/some-uuid/ticket578/6079.patch) by was created at 2007-09-05 04:58:12
+Attachment [6079.patch](tarball://root/attachments/some-uuid/ticket578/6079.patch) by @williamstein created at 2007-09-05 04:58:12
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_002997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/578",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/578#issuecomment-2997",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

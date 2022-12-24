@@ -3,7 +3,7 @@
 archive/issues_004744.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\n\n```\n            sage: E = EllipticCurve('37a')\n            sage: E.congruence_number()\n            2\n            sage: E = EllipticCurve('54b')\n            sage: E.congruence_number()\n            6\n            sage: E.modular_degree()\n            2\n            sage: E = EllipticCurve('242a1')\n            sage: E.modular_degree()\n            16\n            sage: E.congruence_number()  # long time\n            176\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4744\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\n\n```\n            sage: E = EllipticCurve('37a')\n            sage: E.congruence_number()\n            2\n            sage: E = EllipticCurve('54b')\n            sage: E.congruence_number()\n            6\n            sage: E.modular_degree()\n            2\n            sage: E = EllipticCurve('242a1')\n            sage: E.modular_degree()\n            16\n            sage: E.congruence_number()  # long time\n            176\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4744\n\n",
     "created_at": "2008-12-08T22:44:35Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_004744.json:
     "title": "[with patch, needs review] congruence number for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4744",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 
 ```
@@ -55,7 +55,7 @@ archive/issue_comments_035883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4744#issuecomment-35883",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_035884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4744#issuecomment-35884",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -86,16 +86,16 @@ I think that the docstring should at least contain the definition of congruence_
 archive/issue_comments_035885.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2008-12-09T00:17:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4744#issuecomment-35885",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_035886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4744#issuecomment-35886",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_035887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4744#issuecomment-35887",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_035888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4744#issuecomment-35888",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_035890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4744#issuecomment-35890",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -218,16 +218,16 @@ Also, in the square-free case, since it is *theorem* that the modular degree equ
 archive/issue_comments_035891.json:
 ```json
 {
-    "body": "Attachment [4744-congruence-number.patch](tarball://root/attachments/some-uuid/ticket4744/4744-congruence-number.patch) by robertwb created at 2008-12-12 01:29:22\n\nOK, I've updated the patch again.",
+    "body": "Attachment [4744-congruence-number.patch](tarball://root/attachments/some-uuid/ticket4744/4744-congruence-number.patch) by @robertwb created at 2008-12-12 01:29:22\n\nOK, I've updated the patch again.",
     "created_at": "2008-12-12T01:29:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4744#issuecomment-35891",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4744-congruence-number.patch](tarball://root/attachments/some-uuid/ticket4744/4744-congruence-number.patch) by robertwb created at 2008-12-12 01:29:22
+Attachment [4744-congruence-number.patch](tarball://root/attachments/some-uuid/ticket4744/4744-congruence-number.patch) by @robertwb created at 2008-12-12 01:29:22
 
 OK, I've updated the patch again.
 
@@ -243,7 +243,7 @@ archive/issue_comments_035892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4744#issuecomment-35892",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_035897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4744#issuecomment-35897",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

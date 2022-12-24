@@ -14,7 +14,7 @@ archive/issues_004743.json:
     "title": "[with spkg; needs review] change genus2reduction to include GPL copyright file and email from liu making the program GPL'd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4743",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

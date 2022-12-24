@@ -3,7 +3,7 @@
 archive/issues_006079.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb craigcitro was mstreng\n\nKeywords: base inclusion morphism relative number field\n\nThe patch adds a class for the morphism embedding the base into a relative number field extension, and (much more useful) the partially defined section going back.\n\nIt also adds a verbose(level=4) stack trace whenever nfinit and rnfinit are called.  It's a huge pain trying to work around such calls without a mechanism to see them, so here it is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6079\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @craigcitro @williamstein @mstreng\n\nKeywords: base inclusion morphism relative number field\n\nThe patch adds a class for the morphism embedding the base into a relative number field extension, and (much more useful) the partially defined section going back.\n\nIt also adds a verbose(level=4) stack trace whenever nfinit and rnfinit are called.  It's a huge pain trying to work around such calls without a mechanism to see them, so here it is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6079\n\n",
     "created_at": "2009-05-19T02:18:22Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_006079.json:
     "title": "modernize base inclusion morphism of relative number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6079",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb craigcitro was mstreng
+CC:  @robertwb @craigcitro @williamstein @mstreng
 
 Keywords: base inclusion morphism relative number field
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6079
 archive/issue_comments_048382.json:
 ```json
 {
-    "body": "Attachment [trac_6079-base-inclusion-morphism.patch](tarball://root/attachments/some-uuid/ticket6079/trac_6079-base-inclusion-morphism.patch) by ncalexan created at 2009-05-19 03:02:11\n\nSecond patch relies on first; might as well be on same ticket.  Adds a subfield_containing that tries to do a bit more than naive trial and error to find the smallest subfield of a number field containing the specified elements.",
+    "body": "Attachment [trac_6079-base-inclusion-morphism.patch](tarball://root/attachments/some-uuid/ticket6079/trac_6079-base-inclusion-morphism.patch) by @ncalexan created at 2009-05-19 03:02:11\n\nSecond patch relies on first; might as well be on same ticket.  Adds a subfield_containing that tries to do a bit more than naive trial and error to find the smallest subfield of a number field containing the specified elements.",
     "created_at": "2009-05-19T03:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6079#issuecomment-48382",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_6079-base-inclusion-morphism.patch](tarball://root/attachments/some-uuid/ticket6079/trac_6079-base-inclusion-morphism.patch) by ncalexan created at 2009-05-19 03:02:11
+Attachment [trac_6079-base-inclusion-morphism.patch](tarball://root/attachments/some-uuid/ticket6079/trac_6079-base-inclusion-morphism.patch) by @ncalexan created at 2009-05-19 03:02:11
 
 Second patch relies on first; might as well be on same ticket.  Adds a subfield_containing that tries to do a bit more than naive trial and error to find the smallest subfield of a number field containing the specified elements.
 
@@ -95,7 +95,7 @@ archive/issue_comments_048384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6079#issuecomment-48384",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_048385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6079#issuecomment-48385",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_048387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6079#issuecomment-48387",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_048388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6079#issuecomment-48388",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_048391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6079#issuecomment-48391",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -738,7 +738,7 @@ archive/issue_comments_048394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6079#issuecomment-48394",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -751,13 +751,13 @@ Changing component from number theory to number fields.
 archive/issue_comments_048395.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-21T08:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6079#issuecomment-48395",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.

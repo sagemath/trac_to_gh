@@ -3,7 +3,7 @@
 archive/issues_001127.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\nThe following code raises the following exception:\n\n```\nsage: E=EllipticCurve(\"128a\")\nsage: ME=E.modular_symbol_space()\nsage: ME.complement()\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/net/mathserv/1/home/syazdani/research/programs/<ipython console> in <module>()\n\n/home/syazdani/sage/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py in complement(self, bound)\n    200         else:\n    201             # failed\n--> 202             raise RuntimeError, \"Computation of complementary space failed (cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\n    203\n    204\n\n<type 'exceptions.RuntimeError'>: Computation of complementary space failed (cut down to rank 18, but should have cut down to rank 1).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1127\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nThe following code raises the following exception:\n\n```\nsage: E=EllipticCurve(\"128a\")\nsage: ME=E.modular_symbol_space()\nsage: ME.complement()\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/net/mathserv/1/home/syazdani/research/programs/<ipython console> in <module>()\n\n/home/syazdani/sage/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py in complement(self, bound)\n    200         else:\n    201             # failed\n--> 202             raise RuntimeError, \"Computation of complementary space failed (cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\n    203\n    204\n\n<type 'exceptions.RuntimeError'>: Computation of complementary space failed (cut down to rank 18, but should have cut down to rank 1).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1127\n\n",
     "created_at": "2007-11-07T20:35:42Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_001127.json:
     "title": "modularSymbol complement fails for E=128a",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1127",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 The following code raises the following exception:
 
@@ -120,7 +120,7 @@ Michael
 archive/issue_comments_006811.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2008-06-26T06:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1127",
     "type": "issue_comment",
@@ -129,7 +129,7 @@ archive/issue_comments_006811.json:
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_006813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6813",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_006814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6814",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_006815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6815",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_006816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1127",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1127#issuecomment-6816",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003538.json:
 ```json
 {
-    "body": "Assignee: was\n\nCreate an interface between Sage and Ruby. \n\nJosh Kantor and I wrote the attached one in 5 minutes and it worked the first try. \n\nWe haven't added any doctests and haven't implemented completions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3538\n\n",
+    "body": "Assignee: @williamstein\n\nCreate an interface between Sage and Ruby. \n\nJosh Kantor and I wrote the attached one in 5 minutes and it worked the first try. \n\nWe haven't added any doctests and haven't implemented completions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3538\n\n",
     "created_at": "2008-06-30T14:20:06Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003538.json:
     "title": "[with patch; not ready for review] create a sage <--> Ruby interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3538",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Create an interface between Sage and Ruby. 
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3538
 archive/issue_comments_024998.json:
 ```json
 {
-    "body": "Attachment [sage-3538.patch](tarball://root/attachments/some-uuid/ticket3538/sage-3538.patch) by was created at 2008-06-30 14:20:40",
+    "body": "Attachment [sage-3538.patch](tarball://root/attachments/some-uuid/ticket3538/sage-3538.patch) by @williamstein created at 2008-06-30 14:20:40",
     "created_at": "2008-06-30T14:20:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3538#issuecomment-24998",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3538.patch](tarball://root/attachments/some-uuid/ticket3538/sage-3538.patch) by was created at 2008-06-30 14:20:40
+Attachment [sage-3538.patch](tarball://root/attachments/some-uuid/ticket3538/sage-3538.patch) by @williamstein created at 2008-06-30 14:20:40
 
 
 
@@ -54,16 +54,16 @@ Attachment [sage-3538.patch](tarball://root/attachments/some-uuid/ticket3538/sag
 archive/issue_comments_024999.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-07-06T18:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3538#issuecomment-24999",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_025002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3538#issuecomment-25002",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_025004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3538#issuecomment-25004",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_025005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3538#issuecomment-25005",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_025006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3538#issuecomment-25006",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_025007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3538",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3538#issuecomment-25007",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

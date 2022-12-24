@@ -3,7 +3,7 @@
 archive/issues_003471.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nAs promised at Sage Days 7.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3471\n\n",
+    "body": "Assignee: @rlmill\n\nAs promised at Sage Days 7.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3471\n\n",
     "created_at": "2008-06-19T19:23:00Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003471.json:
     "title": "[with patch, needs review] Backends for compiled graph structures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3471",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 As promised at Sage Days 7.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3471
 archive/issue_comments_024473.json:
 ```json
 {
-    "body": "Attachment [trac3471-graph_backends_flat.patch](tarball://root/attachments/some-uuid/ticket3471/trac3471-graph_backends_flat.patch) by rlm created at 2008-06-20 17:35:11\n\nReplaces the previous two patches.",
+    "body": "Attachment [trac3471-graph_backends_flat.patch](tarball://root/attachments/some-uuid/ticket3471/trac3471-graph_backends_flat.patch) by @rlmill created at 2008-06-20 17:35:11\n\nReplaces the previous two patches.",
     "created_at": "2008-06-20T17:35:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3471#issuecomment-24473",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac3471-graph_backends_flat.patch](tarball://root/attachments/some-uuid/ticket3471/trac3471-graph_backends_flat.patch) by rlm created at 2008-06-20 17:35:11
+Attachment [trac3471-graph_backends_flat.patch](tarball://root/attachments/some-uuid/ticket3471/trac3471-graph_backends_flat.patch) by @rlmill created at 2008-06-20 17:35:11
 
 Replaces the previous two patches.
 

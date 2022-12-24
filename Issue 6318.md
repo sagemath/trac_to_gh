@@ -3,7 +3,7 @@
 archive/issues_006318.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  awebb\n\n\n```\nsage -t -long --optional devel/sage/sage/interfaces/sage0.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/sage0.py\", line 252:\n    sage: sage0(axiom(x^2+1)) #optional - axiom\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[5]>\", line 1, in <module>\n        sage0(axiom(x**Integer(2)+Integer(1))) #optional - axiom###line 252:\n    sage: sage0(axiom(x^2+1)) #optional - axiom\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1026, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1050, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"sage_object.pyx\", line 310, in sage.structure.sage_object.SageObject._axiom_ (sage/structure/sage_object.c:3875)\n      File \"expression.pyx\", line 404, in sage.symbolic.expression.Expression._interface_ (sage/symbolic/expression.cpp:3275)\n      File \"sage_object.pyx\", line 248, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2716)\n      File \"sage_object.pyx\", line 315, in sage.structure.sage_object.SageObject._axiom_init_ (sage/structure/sage_object.c:3969)\n      File \"expression.pyx\", line 443, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3536)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 401, in __init__\n        self.relation_symbols = interface._relation_symbols()\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1139, in _relation_symbols\n        return dict([(operator.eq, self._equality_symbol()), (operator.ne, \"!=\"),\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1105, in _equality_symbol\n        raise NotImplementedError\n    NotImplementedError\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_6\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_sage0.py\n\t [8.0 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6318\n\n",
+    "body": "Assignee: tbd\n\nCC:  @maxthemouse\n\n\n```\nsage -t -long --optional devel/sage/sage/interfaces/sage0.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/sage0.py\", line 252:\n    sage: sage0(axiom(x^2+1)) #optional - axiom\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[5]>\", line 1, in <module>\n        sage0(axiom(x**Integer(2)+Integer(1))) #optional - axiom###line 252:\n    sage: sage0(axiom(x^2+1)) #optional - axiom\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1026, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1050, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"sage_object.pyx\", line 310, in sage.structure.sage_object.SageObject._axiom_ (sage/structure/sage_object.c:3875)\n      File \"expression.pyx\", line 404, in sage.symbolic.expression.Expression._interface_ (sage/symbolic/expression.cpp:3275)\n      File \"sage_object.pyx\", line 248, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2716)\n      File \"sage_object.pyx\", line 315, in sage.structure.sage_object.SageObject._axiom_init_ (sage/structure/sage_object.c:3969)\n      File \"expression.pyx\", line 443, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3536)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 401, in __init__\n        self.relation_symbols = interface._relation_symbols()\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1139, in _relation_symbols\n        return dict([(operator.eq, self._equality_symbol()), (operator.ne, \"!=\"),\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1105, in _equality_symbol\n        raise NotImplementedError\n    NotImplementedError\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_6\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_sage0.py\n\t [8.0 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6318\n\n",
     "created_at": "2009-06-16T14:46:39Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_006318.json:
     "title": "optional doctest failure -- axiom interface -- something doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6318",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  awebb
+CC:  @maxthemouse
 
 
 ```
@@ -79,7 +79,7 @@ archive/issue_comments_050422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50422",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_050423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50423",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_050424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50424",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_050425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50425",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -542,16 +542,16 @@ For whitespace errors, see the file /hom
 archive/issue_comments_050426.json:
 ```json
 {
-    "body": "Attachment [trac_6318_fricas_class.patch](tarball://root/attachments/some-uuid/ticket6318/trac_6318_fricas_class.patch) by awebb created at 2009-06-21 13:42:10",
+    "body": "Attachment [trac_6318_fricas_class.patch](tarball://root/attachments/some-uuid/ticket6318/trac_6318_fricas_class.patch) by @maxthemouse created at 2009-06-21 13:42:10",
     "created_at": "2009-06-21T13:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50426",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
-Attachment [trac_6318_fricas_class.patch](tarball://root/attachments/some-uuid/ticket6318/trac_6318_fricas_class.patch) by awebb created at 2009-06-21 13:42:10
+Attachment [trac_6318_fricas_class.patch](tarball://root/attachments/some-uuid/ticket6318/trac_6318_fricas_class.patch) by @maxthemouse created at 2009-06-21 13:42:10
 
 
 
@@ -565,7 +565,7 @@ archive/issue_comments_050427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50427",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -578,16 +578,16 @@ Adding an __init__ method to the FriCAS class should clear up a few issues.
 archive/issue_comments_050428.json:
 ```json
 {
-    "body": "Attachment [trac_6318_axiom_interface.patch](tarball://root/attachments/some-uuid/ticket6318/trac_6318_axiom_interface.patch) by awebb created at 2009-06-27 11:52:17",
+    "body": "Attachment [trac_6318_axiom_interface.patch](tarball://root/attachments/some-uuid/ticket6318/trac_6318_axiom_interface.patch) by @maxthemouse created at 2009-06-27 11:52:17",
     "created_at": "2009-06-27T11:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50428",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
-Attachment [trac_6318_axiom_interface.patch](tarball://root/attachments/some-uuid/ticket6318/trac_6318_axiom_interface.patch) by awebb created at 2009-06-27 11:52:17
+Attachment [trac_6318_axiom_interface.patch](tarball://root/attachments/some-uuid/ticket6318/trac_6318_axiom_interface.patch) by @maxthemouse created at 2009-06-27 11:52:17
 
 
 
@@ -601,7 +601,7 @@ archive/issue_comments_050429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50429",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -642,7 +642,7 @@ archive/issue_comments_050431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50431",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -668,7 +668,7 @@ archive/issue_comments_050432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50432",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -688,7 +688,7 @@ archive/issue_comments_050433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50433",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -708,7 +708,7 @@ archive/issue_comments_050434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50434",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -726,7 +726,7 @@ archive/issue_comments_050435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50435",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -744,7 +744,7 @@ archive/issue_comments_050436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50436",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

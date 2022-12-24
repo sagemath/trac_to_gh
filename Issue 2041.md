@@ -3,7 +3,7 @@
 archive/issues_002041.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nSee the discussion at\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/99ef95ceff366175/8e44f7219c7394d9\n\nLines longer than about 74 characters in verbatim environments are longer than the text width in the pdf files.  Worse, if they're longer than about 80 characters they just fall off the page and the rest gets cut off.\n\nThe attached doc patch does the following:\n1. Ignore the \"slightly long, but still completely visible\" lines (i.e left them the way they were).  They're not that pretty, but wrapping them only makes things nicer by a marginal amount.\n2. Manually wrapped the really long lines where stuff was lost: when these lines corresponded to sage: input commands, I broke them up in a place that looked ok to me with a backslash and continued on the next line.  I added warnings to the reader not to type in the ....: that appear on subsequent lines then.  If the lines correspond to long sage output, I just broke them after 72 characters, the exact same way that sage would behave if the terminal were 72 characters wide.  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2041\n\n",
+    "body": "Assignee: @aghitza\n\nSee the discussion at\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/99ef95ceff366175/8e44f7219c7394d9\n\nLines longer than about 74 characters in verbatim environments are longer than the text width in the pdf files.  Worse, if they're longer than about 80 characters they just fall off the page and the rest gets cut off.\n\nThe attached doc patch does the following:\n1. Ignore the \"slightly long, but still completely visible\" lines (i.e left them the way they were).  They're not that pretty, but wrapping them only makes things nicer by a marginal amount.\n2. Manually wrapped the really long lines where stuff was lost: when these lines corresponded to sage: input commands, I broke them up in a place that looked ok to me with a backslash and continued on the next line.  I added warnings to the reader not to type in the ....: that appear on subsequent lines then.  If the lines correspond to long sage output, I just broke them after 72 characters, the exact same way that sage would behave if the terminal were 72 characters wide.  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2041\n\n",
     "created_at": "2008-02-03T23:38:23Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_002041.json:
     "title": "[with doc patch, needs review] tutorial: long lines in verbatim environments get cut off in pdf file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2041",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 See the discussion at
 http://groups.google.com/group/sage-devel/browse_thread/thread/99ef95ceff366175/8e44f7219c7394d9
@@ -76,7 +76,7 @@ archive/issue_comments_013218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2041#issuecomment-13218",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_013219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2041#issuecomment-13219",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -224,16 +224,16 @@ Michael
 archive/issue_comments_013225.json:
 ```json
 {
-    "body": "Attachment [2041-tut_long_lines.patch](tarball://root/attachments/some-uuid/ticket2041/2041-tut_long_lines.patch) by AlexGhitza created at 2008-02-17 20:09:49",
+    "body": "Attachment [2041-tut_long_lines.patch](tarball://root/attachments/some-uuid/ticket2041/2041-tut_long_lines.patch) by @aghitza created at 2008-02-17 20:09:49",
     "created_at": "2008-02-17T20:09:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2041#issuecomment-13225",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [2041-tut_long_lines.patch](tarball://root/attachments/some-uuid/ticket2041/2041-tut_long_lines.patch) by AlexGhitza created at 2008-02-17 20:09:49
+Attachment [2041-tut_long_lines.patch](tarball://root/attachments/some-uuid/ticket2041/2041-tut_long_lines.patch) by @aghitza created at 2008-02-17 20:09:49
 
 
 
@@ -247,7 +247,7 @@ archive/issue_comments_013226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2041#issuecomment-13226",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_013227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2041#issuecomment-13227",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_013228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2041#issuecomment-13228",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_013230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2041#issuecomment-13230",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_013231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2041#issuecomment-13231",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

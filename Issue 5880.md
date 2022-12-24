@@ -3,7 +3,7 @@
 archive/issues_005880.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  rbeezer\n\nWith the attached patch, you get snapshots when you click the save button, and that's about it (I hope). \n\nThis patch simply deletes a bunch of calls to save_snapshot that were all over the place.   You'll still get snapshots, but not every time you blink. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5880\n\n",
+    "body": "Assignee: boothby\n\nCC:  @rbeezer\n\nWith the attached patch, you get snapshots when you click the save button, and that's about it (I hope). \n\nThis patch simply deletes a bunch of calls to save_snapshot that were all over the place.   You'll still get snapshots, but not every time you blink. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5880\n\n",
     "created_at": "2009-04-23T20:31:10Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005880.json:
     "title": "[with patch; needs review] notebook -- greatly reduce the number of actions that trigger taking a snapshot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5880",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  rbeezer
+CC:  @rbeezer
 
 With the attached patch, you get snapshots when you click the save button, and that's about it (I hope). 
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5880
 archive/issue_comments_046464.json:
 ```json
 {
-    "body": "Attachment [trac_5880.patch](tarball://root/attachments/some-uuid/ticket5880/trac_5880.patch) by tornaria created at 2009-04-25 02:32:04\n\nI promised to try this patch, but I haven't yet installed into my production server. As it turns out, there is a big improvement in 3.4.1 wrt snapshots, which makes this issue less pressing wrt disk usage... I still think the semantics of snapshots are broken, and particularly they make \"discard and quit\" unusable, and \"undo\" a bit hard.\n\nTo clean up the snapshot directories in my production server, without removing old revisions in case somebody actually cares about them, I wrote a script to clean up repeated snapshots. The script is only good until you install 3.4.1, and its behaviour is to remove any snapshot which is identical to an earlier one. In effect, this retroactively imposes the new behaviour for snapshots...\n\nTo get an idea of the magnitude of the problem. Our notebook server has been in production for a little bit over a month. It has about 20 active users (most students on my sage course, so they actually use the notebook). Running the script deleted 479269 snapshots, keeping only 5908... In fact, I ran the script again after a few hours, and it deleted another 15k new snapshots or so... I've switched the notebook to 3.4.1, and it's not producing redundant snapshots anymore.",
+    "body": "Attachment [trac_5880.patch](tarball://root/attachments/some-uuid/ticket5880/trac_5880.patch) by @tornaria created at 2009-04-25 02:32:04\n\nI promised to try this patch, but I haven't yet installed into my production server. As it turns out, there is a big improvement in 3.4.1 wrt snapshots, which makes this issue less pressing wrt disk usage... I still think the semantics of snapshots are broken, and particularly they make \"discard and quit\" unusable, and \"undo\" a bit hard.\n\nTo clean up the snapshot directories in my production server, without removing old revisions in case somebody actually cares about them, I wrote a script to clean up repeated snapshots. The script is only good until you install 3.4.1, and its behaviour is to remove any snapshot which is identical to an earlier one. In effect, this retroactively imposes the new behaviour for snapshots...\n\nTo get an idea of the magnitude of the problem. Our notebook server has been in production for a little bit over a month. It has about 20 active users (most students on my sage course, so they actually use the notebook). Running the script deleted 479269 snapshots, keeping only 5908... In fact, I ran the script again after a few hours, and it deleted another 15k new snapshots or so... I've switched the notebook to 3.4.1, and it's not producing redundant snapshots anymore.",
     "created_at": "2009-04-25T02:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5880#issuecomment-46464",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [trac_5880.patch](tarball://root/attachments/some-uuid/ticket5880/trac_5880.patch) by tornaria created at 2009-04-25 02:32:04
+Attachment [trac_5880.patch](tarball://root/attachments/some-uuid/ticket5880/trac_5880.patch) by @tornaria created at 2009-04-25 02:32:04
 
 I promised to try this patch, but I haven't yet installed into my production server. As it turns out, there is a big improvement in 3.4.1 wrt snapshots, which makes this issue less pressing wrt disk usage... I still think the semantics of snapshots are broken, and particularly they make "discard and quit" unusable, and "undo" a bit hard.
 
@@ -60,16 +60,16 @@ To get an idea of the magnitude of the problem. Our notebook server has been in 
 archive/issue_comments_046465.json:
 ```json
 {
-    "body": "Attachment [clean_snapshots](tarball://root/attachments/some-uuid/ticket5880/clean_snapshots) by tornaria created at 2009-04-25 02:36:09\n\nBash scripts to properly clean up redundant snapshots in the notebook produced by sage 3.4 and earlier.  This script removes every snapshot which is identical to a previous snapshot, giving statistics at the end. As of sage 3.4.1, redundant snapshots are no longer produced.",
+    "body": "Attachment [clean_snapshots](tarball://root/attachments/some-uuid/ticket5880/clean_snapshots) by @tornaria created at 2009-04-25 02:36:09\n\nBash scripts to properly clean up redundant snapshots in the notebook produced by sage 3.4 and earlier.  This script removes every snapshot which is identical to a previous snapshot, giving statistics at the end. As of sage 3.4.1, redundant snapshots are no longer produced.",
     "created_at": "2009-04-25T02:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5880#issuecomment-46465",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [clean_snapshots](tarball://root/attachments/some-uuid/ticket5880/clean_snapshots) by tornaria created at 2009-04-25 02:36:09
+Attachment [clean_snapshots](tarball://root/attachments/some-uuid/ticket5880/clean_snapshots) by @tornaria created at 2009-04-25 02:36:09
 
 Bash scripts to properly clean up redundant snapshots in the notebook produced by sage 3.4 and earlier.  This script removes every snapshot which is identical to a previous snapshot, giving statistics at the end. As of sage 3.4.1, redundant snapshots are no longer produced.
 
@@ -85,7 +85,7 @@ archive/issue_comments_046466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5880#issuecomment-46466",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -104,16 +104,16 @@ This is a positive review, subject to fixing doctests, either with approval of t
 archive/issue_comments_046467.json:
 ```json
 {
-    "body": "Attachment [trac_5880_reviewer.patch](tarball://root/attachments/some-uuid/ticket5880/trac_5880_reviewer.patch) by was created at 2009-04-27 12:45:59\n\n> This is a positive review, subject to fixing doctests, either with approval of the reviewer patch, \n> or by further changes to problematic docstrings. \n\nWell, I applied your patch, which I like, and ran \"make ptestlong\" and it passes.  So positive review. \n\nRegarding credit, if anybody notices this, rbeezer should also get credit for this patch.",
+    "body": "Attachment [trac_5880_reviewer.patch](tarball://root/attachments/some-uuid/ticket5880/trac_5880_reviewer.patch) by @williamstein created at 2009-04-27 12:45:59\n\n> This is a positive review, subject to fixing doctests, either with approval of the reviewer patch, \n> or by further changes to problematic docstrings. \n\nWell, I applied your patch, which I like, and ran \"make ptestlong\" and it passes.  So positive review. \n\nRegarding credit, if anybody notices this, rbeezer should also get credit for this patch.",
     "created_at": "2009-04-27T12:45:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5880#issuecomment-46467",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5880_reviewer.patch](tarball://root/attachments/some-uuid/ticket5880/trac_5880_reviewer.patch) by was created at 2009-04-27 12:45:59
+Attachment [trac_5880_reviewer.patch](tarball://root/attachments/some-uuid/ticket5880/trac_5880_reviewer.patch) by @williamstein created at 2009-04-27 12:45:59
 
 > This is a positive review, subject to fixing doctests, either with approval of the reviewer patch, 
 > or by further changes to problematic docstrings. 
@@ -134,7 +134,7 @@ archive/issue_comments_046468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5880",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5880#issuecomment-46468",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005033.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere are two problem here:\n\n```\nsage: B = matrix(QQ, 2, [1..4])\nsage: B.lift()\n...\nAttributeError: 'RationalField' object has no attribute 'cover_ring'\nsage: B.lift?\n            EXAMPLES:\n...\n```\n          \n\n1. lift should first check if there is a cover_ring attribute.  If not, I think lift should just return self.\n\n2. The lift function is undocumented.  It just has examples but no description of what it is supposed to do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5033\n\n",
+    "body": "Assignee: @williamstein\n\nThere are two problem here:\n\n```\nsage: B = matrix(QQ, 2, [1..4])\nsage: B.lift()\n...\nAttributeError: 'RationalField' object has no attribute 'cover_ring'\nsage: B.lift?\n            EXAMPLES:\n...\n```\n          \n\n1. lift should first check if there is a cover_ring attribute.  If not, I think lift should just return self.\n\n2. The lift function is undocumented.  It just has examples but no description of what it is supposed to do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5033\n\n",
     "created_at": "2009-01-20T06:03:40Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005033.json:
     "title": "matrix lift function bad in two ways",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5033",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There are two problem here:
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5033
 archive/issue_comments_038329.json:
 ```json
 {
-    "body": "Attachment [trac_5033.patch](tarball://root/attachments/some-uuid/ticket5033/trac_5033.patch) by was created at 2009-01-20 06:35:11\n\nthis is against sage-3.3.alpha0",
+    "body": "Attachment [trac_5033.patch](tarball://root/attachments/some-uuid/ticket5033/trac_5033.patch) by @williamstein created at 2009-01-20 06:35:11\n\nthis is against sage-3.3.alpha0",
     "created_at": "2009-01-20T06:35:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5033#issuecomment-38329",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5033.patch](tarball://root/attachments/some-uuid/ticket5033/trac_5033.patch) by was created at 2009-01-20 06:35:11
+Attachment [trac_5033.patch](tarball://root/attachments/some-uuid/ticket5033/trac_5033.patch) by @williamstein created at 2009-01-20 06:35:11
 
 this is against sage-3.3.alpha0
 
@@ -72,7 +72,7 @@ archive/issue_comments_038330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5033#issuecomment-38330",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

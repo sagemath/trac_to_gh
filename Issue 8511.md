@@ -3,7 +3,7 @@
 archive/issues_008511.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nAttached is a trivial fix to make the docstring for the `substitute` method for symbolic expressions look right.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8511\n\n",
+    "body": "Assignee: @burcin\n\nAttached is a trivial fix to make the docstring for the `substitute` method for symbolic expressions look right.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8511\n\n",
     "created_at": "2010-03-12T20:24:55Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_008511.json:
     "title": "docstring fix for symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8511",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Attached is a trivial fix to make the docstring for the `substitute` method for symbolic expressions look right.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8511
 archive/issue_comments_076851.json:
 ```json
 {
-    "body": "Attachment [trac_8511-subs.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-subs.patch) by jhpalmieri created at 2010-03-12 20:25:59",
+    "body": "Attachment [trac_8511-subs.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-subs.patch) by @jhpalmieri created at 2010-03-12 20:25:59",
     "created_at": "2010-03-12T20:25:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8511#issuecomment-76851",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8511-subs.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-subs.patch) by jhpalmieri created at 2010-03-12 20:25:59
+Attachment [trac_8511-subs.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-subs.patch) by @jhpalmieri created at 2010-03-12 20:25:59
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_076852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8511#issuecomment-76852",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_076853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8511#issuecomment-76853",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_076854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8511#issuecomment-76854",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -124,16 +124,16 @@ reviewer patch; apply on top of previous
 archive/issue_comments_076856.json:
 ```json
 {
-    "body": "Attachment [trac_8511-reviewer.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-reviewer.patch) by jhpalmieri created at 2010-03-13 00:22:50\n\nWith this patch, plus the ones at #8457 and #8492, the reference manual builds with no warnings.",
+    "body": "Attachment [trac_8511-reviewer.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-reviewer.patch) by @jhpalmieri created at 2010-03-13 00:22:50\n\nWith this patch, plus the ones at #8457 and #8492, the reference manual builds with no warnings.",
     "created_at": "2010-03-13T00:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8511#issuecomment-76856",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8511-reviewer.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-reviewer.patch) by jhpalmieri created at 2010-03-13 00:22:50
+Attachment [trac_8511-reviewer.patch](tarball://root/attachments/some-uuid/ticket8511/trac_8511-reviewer.patch) by @jhpalmieri created at 2010-03-13 00:22:50
 
 With this patch, plus the ones at #8457 and #8492, the reference manual builds with no warnings.
 
@@ -144,16 +144,16 @@ With this patch, plus the ones at #8457 and #8492, the reference manual builds w
 archive/issue_comments_076857.json:
 ```json
 {
-    "body": "Changing assignee from burcin to jhpalmieri.",
+    "body": "Changing assignee from @burcin to @jhpalmieri.",
     "created_at": "2010-03-13T00:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8511#issuecomment-76857",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from burcin to jhpalmieri.
+Changing assignee from @burcin to @jhpalmieri.
 
 
 
@@ -167,7 +167,7 @@ archive/issue_comments_076858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8511#issuecomment-76858",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_076860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8511#issuecomment-76860",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_076861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8511#issuecomment-76861",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

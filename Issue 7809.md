@@ -3,7 +3,7 @@
 archive/issues_007809.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe call `region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))` passes the following function to setup_for_eval_on_grid: `(y, x) |--> -2/x - 1/y + 1/(x*y)`, but passes the variables in the order (x,y).  The problem is the equify function.  This patch simplifies the code in equify to not try to put an ordering on the variables, but to just pass back an expression (not a function).\n\nIn practice, since variables would be substituted by name, I don't think this will make a difference.  But it does make the code cleaner and more correct.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7809\n\n",
+    "body": "Assignee: @williamstein\n\nThe call `region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))` passes the following function to setup_for_eval_on_grid: `(y, x) |--> -2/x - 1/y + 1/(x*y)`, but passes the variables in the order (x,y).  The problem is the equify function.  This patch simplifies the code in equify to not try to put an ordering on the variables, but to just pass back an expression (not a function).\n\nIn practice, since variables would be substituted by name, I don't think this will make a difference.  But it does make the code cleaner and more correct.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7809\n\n",
     "created_at": "2010-01-01T18:44:22Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_007809.json:
     "title": "region_plot does not respect the passed variable order",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7809",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The call `region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))` passes the following function to setup_for_eval_on_grid: `(y, x) |--> -2/x - 1/y + 1/(x*y)`, but passes the variables in the order (x,y).  The problem is the equify function.  This patch simplifies the code in equify to not try to put an ordering on the variables, but to just pass back an expression (not a function).
 
@@ -39,7 +39,7 @@ archive/issue_comments_067558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67558",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_067559.json:
 ```json
 {
-    "body": "Attachment [trac-7809-simplify-equify.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-simplify-equify.patch) by jason created at 2010-01-01 18:55:44",
+    "body": "Attachment [trac-7809-simplify-equify.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-simplify-equify.patch) by @jasongrout created at 2010-01-01 18:55:44",
     "created_at": "2010-01-01T18:55:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67559",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7809-simplify-equify.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-simplify-equify.patch) by jason created at 2010-01-01 18:55:44
+Attachment [trac-7809-simplify-equify.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-simplify-equify.patch) by @jasongrout created at 2010-01-01 18:55:44
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_067560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67560",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_067561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67561",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_067562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67562",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_067563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67563",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_067564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67564",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_067565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67565",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_067566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67566",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_067567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67567",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -263,16 +263,16 @@ Right, and in the second plot the first variable is on the horizontal axis - see
 archive/issue_comments_067568.json:
 ```json
 {
-    "body": "Attachment [plot.png](tarball://root/attachments/some-uuid/ticket7809/plot.png) by jason created at 2010-01-04 17:31:38\n\nOh, you're right.  It is correct.\n\nWell, I just rewrote the mangle_neg part anyway.  I'll attach a patch in a second.",
+    "body": "Attachment [plot.png](tarball://root/attachments/some-uuid/ticket7809/plot.png) by @jasongrout created at 2010-01-04 17:31:38\n\nOh, you're right.  It is correct.\n\nWell, I just rewrote the mangle_neg part anyway.  I'll attach a patch in a second.",
     "created_at": "2010-01-04T17:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67568",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [plot.png](tarball://root/attachments/some-uuid/ticket7809/plot.png) by jason created at 2010-01-04 17:31:38
+Attachment [plot.png](tarball://root/attachments/some-uuid/ticket7809/plot.png) by @jasongrout created at 2010-01-04 17:31:38
 
 Oh, you're right.  It is correct.
 
@@ -290,7 +290,7 @@ archive/issue_comments_067569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67569",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_067570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67570",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -345,16 +345,16 @@ apply on top of previous patch
 archive/issue_comments_067571.json:
 ```json
 {
-    "body": "Attachment [trac-7809-simplify-negative-code.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-simplify-negative-code.patch) by kcrisman created at 2010-01-04 18:52:04\n\nToo bad about mangle_neg, but it was almost more confusing that way than in the code, I think you are right.  \n\nBe sure to include some test where the order of coordinates is switched.  Incidentally, you should also remove the #long time flag from that one test; it only takes one second on my machine, which I don't think counts as a long time any more.  The file takes nearly a half minute to test for me, though!\n\nOther than that, positive review.",
+    "body": "Attachment [trac-7809-simplify-negative-code.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-simplify-negative-code.patch) by @kcrisman created at 2010-01-04 18:52:04\n\nToo bad about mangle_neg, but it was almost more confusing that way than in the code, I think you are right.  \n\nBe sure to include some test where the order of coordinates is switched.  Incidentally, you should also remove the #long time flag from that one test; it only takes one second on my machine, which I don't think counts as a long time any more.  The file takes nearly a half minute to test for me, though!\n\nOther than that, positive review.",
     "created_at": "2010-01-04T18:52:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67571",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac-7809-simplify-negative-code.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-simplify-negative-code.patch) by kcrisman created at 2010-01-04 18:52:04
+Attachment [trac-7809-simplify-negative-code.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-simplify-negative-code.patch) by @kcrisman created at 2010-01-04 18:52:04
 
 Too bad about mangle_neg, but it was almost more confusing that way than in the code, I think you are right.  
 
@@ -374,7 +374,7 @@ archive/issue_comments_067572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67572",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -393,16 +393,16 @@ Jason
 archive/issue_comments_067573.json:
 ```json
 {
-    "body": "Attachment [trac-7809-variable-order.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-variable-order.patch) by jason created at 2010-01-04 19:19:05\n\napply on top of previous patch",
+    "body": "Attachment [trac-7809-variable-order.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-variable-order.patch) by @jasongrout created at 2010-01-04 19:19:05\n\napply on top of previous patch",
     "created_at": "2010-01-04T19:19:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67573",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7809-variable-order.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-variable-order.patch) by jason created at 2010-01-04 19:19:05
+Attachment [trac-7809-variable-order.patch](tarball://root/attachments/some-uuid/ticket7809/trac-7809-variable-order.patch) by @jasongrout created at 2010-01-04 19:19:05
 
 apply on top of previous patch
 
@@ -418,7 +418,7 @@ archive/issue_comments_067574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67574",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_067575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67575",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_067576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67576",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_067577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67577",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_067578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67578",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_067579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7809",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67579",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

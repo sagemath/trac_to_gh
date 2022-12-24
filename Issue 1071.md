@@ -3,7 +3,7 @@
 archive/issues_001071.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\ncalling IntegerVectors.list after applying the attached patch is much faster now.\n\nold:\n\n```\nsage: time l1 = map(tuple, IntegerVectors(2, 60).list())\nCPU time: 5.01 s,  Wall time: 5.11 s\n```\n\n\nnew:\n\n```\nsage: time l1 = map(tuple, IntegerVectors(2, 60).list())\nCPU time: 0.20 s,  Wall time: 0.20 s\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1071\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\ncalling IntegerVectors.list after applying the attached patch is much faster now.\n\nold:\n\n```\nsage: time l1 = map(tuple, IntegerVectors(2, 60).list())\nCPU time: 5.01 s,  Wall time: 5.11 s\n```\n\n\nnew:\n\n```\nsage: time l1 = map(tuple, IntegerVectors(2, 60).list())\nCPU time: 0.20 s,  Wall time: 0.20 s\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1071\n\n",
     "created_at": "2007-11-02T22:48:35Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001071.json:
     "title": "[with patch] IntegerVectors_nk",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1071",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1071
 archive/issue_comments_006486.json:
 ```json
 {
-    "body": "Attachment [iv.patch](tarball://root/attachments/some-uuid/ticket1071/iv.patch) by malb created at 2007-11-02 22:49:03",
+    "body": "Attachment [iv.patch](tarball://root/attachments/some-uuid/ticket1071/iv.patch) by @malb created at 2007-11-02 22:49:03",
     "created_at": "2007-11-02T22:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1071#issuecomment-6486",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [iv.patch](tarball://root/attachments/some-uuid/ticket1071/iv.patch) by malb created at 2007-11-02 22:49:03
+Attachment [iv.patch](tarball://root/attachments/some-uuid/ticket1071/iv.patch) by @malb created at 2007-11-02 22:49:03
 
 
 
@@ -69,16 +69,16 @@ Attachment [iv.patch](tarball://root/attachments/some-uuid/ticket1071/iv.patch) 
 archive/issue_comments_006487.json:
 ```json
 {
-    "body": "Attachment [1071.patch](tarball://root/attachments/some-uuid/ticket1071/1071.patch) by mhansen created at 2007-11-03 18:29:48",
+    "body": "Attachment [1071.patch](tarball://root/attachments/some-uuid/ticket1071/1071.patch) by @mwhansen created at 2007-11-03 18:29:48",
     "created_at": "2007-11-03T18:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1071#issuecomment-6487",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1071.patch](tarball://root/attachments/some-uuid/ticket1071/1071.patch) by mhansen created at 2007-11-03 18:29:48
+Attachment [1071.patch](tarball://root/attachments/some-uuid/ticket1071/1071.patch) by @mwhansen created at 2007-11-03 18:29:48
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_006488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1071#issuecomment-6488",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_006489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1071#issuecomment-6489",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -185,16 +185,16 @@ Resolution: fixed
 archive/issue_comments_006492.json:
 ```json
 {
-    "body": "Attachment [1071-final.patch](tarball://root/attachments/some-uuid/ticket1071/1071-final.patch) by mhansen created at 2007-11-06 23:19:27",
+    "body": "Attachment [1071-final.patch](tarball://root/attachments/some-uuid/ticket1071/1071-final.patch) by @mwhansen created at 2007-11-06 23:19:27",
     "created_at": "2007-11-06T23:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1071#issuecomment-6492",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1071-final.patch](tarball://root/attachments/some-uuid/ticket1071/1071-final.patch) by mhansen created at 2007-11-06 23:19:27
+Attachment [1071-final.patch](tarball://root/attachments/some-uuid/ticket1071/1071-final.patch) by @mwhansen created at 2007-11-06 23:19:27
 
 
 
@@ -203,13 +203,13 @@ Attachment [1071-final.patch](tarball://root/attachments/some-uuid/ticket1071/10
 archive/issue_comments_006493.json:
 ```json
 {
-    "body": "Attachment [1071-final.2.patch](tarball://root/attachments/some-uuid/ticket1071/1071-final.2.patch) by nthiery created at 2009-04-14 02:23:24",
+    "body": "Attachment [1071-final.2.patch](tarball://root/attachments/some-uuid/ticket1071/1071-final.2.patch) by @nthiery created at 2009-04-14 02:23:24",
     "created_at": "2009-04-14T02:23:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1071#issuecomment-6493",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [1071-final.2.patch](tarball://root/attachments/some-uuid/ticket1071/1071-final.2.patch) by nthiery created at 2009-04-14 02:23:24
+Attachment [1071-final.2.patch](tarball://root/attachments/some-uuid/ticket1071/1071-final.2.patch) by @nthiery created at 2009-04-14 02:23:24

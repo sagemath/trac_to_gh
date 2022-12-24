@@ -3,7 +3,7 @@
 archive/issues_007294.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThere should be a way in Sage to find a degree-constrained subgraph. This should be done through LP ( there may be a better way to do it, but I am not aware of it )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7294\n\n",
+    "body": "Assignee: @rlmill\n\nThere should be a way in Sage to find a degree-constrained subgraph. This should be done through LP ( there may be a better way to do it, but I am not aware of it )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7294\n\n",
     "created_at": "2009-10-25T09:26:41Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007294.json:
     "title": "Degree constrained subgraph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7294",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 There should be a way in Sage to find a degree-constrained subgraph. This should be done through LP ( there may be a better way to do it, but I am not aware of it )
 
@@ -37,7 +37,7 @@ archive/issue_comments_060727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7294#issuecomment-60727",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_060728.json:
 ```json
 {
-    "body": "Attachment [trac_7294.patch](tarball://root/attachments/some-uuid/ticket7294/trac_7294.patch) by ncohen created at 2009-11-01 17:08:53",
+    "body": "Attachment [trac_7294.patch](tarball://root/attachments/some-uuid/ticket7294/trac_7294.patch) by @nathanncohen created at 2009-11-01 17:08:53",
     "created_at": "2009-11-01T17:08:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7294#issuecomment-60728",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7294.patch](tarball://root/attachments/some-uuid/ticket7294/trac_7294.patch) by ncohen created at 2009-11-01 17:08:53
+Attachment [trac_7294.patch](tarball://root/attachments/some-uuid/ticket7294/trac_7294.patch) by @nathanncohen created at 2009-11-01 17:08:53
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_060729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7294#issuecomment-60729",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_060730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7294#issuecomment-60730",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -104,16 +104,16 @@ This looks good to me. I should note that you can use `if bounds is None`, since
 archive/issue_comments_060731.json:
 ```json
 {
-    "body": "Attachment [trac_7294-fix.patch](tarball://root/attachments/some-uuid/ticket7294/trac_7294-fix.patch) by mhansen created at 2009-12-15 17:52:21",
+    "body": "Attachment [trac_7294-fix.patch](tarball://root/attachments/some-uuid/ticket7294/trac_7294-fix.patch) by @mwhansen created at 2009-12-15 17:52:21",
     "created_at": "2009-12-15T17:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7294#issuecomment-60731",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7294-fix.patch](tarball://root/attachments/some-uuid/ticket7294/trac_7294-fix.patch) by mhansen created at 2009-12-15 17:52:21
+Attachment [trac_7294-fix.patch](tarball://root/attachments/some-uuid/ticket7294/trac_7294-fix.patch) by @mwhansen created at 2009-12-15 17:52:21
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_060732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7294#issuecomment-60732",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_060733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7294#issuecomment-60733",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

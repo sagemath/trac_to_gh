@@ -3,7 +3,7 @@
 archive/issues_001667.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: polybori\n\n`BooleanPolynomialRing` supports coercion from rings where the number of variables is greater than self. This code should be in `__call__` and coercion should first check for the number of variables of the parent ring.\n\nAttached patch fixes this problem, and adds similar coercion and `__call__` semantics to `BooleanMonomialMonoid`. It also fixes minor problems where using iterators of polynomials over a ring other than the current one messes `PolyBoRi` up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1667\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: polybori\n\n`BooleanPolynomialRing` supports coercion from rings where the number of variables is greater than self. This code should be in `__call__` and coercion should first check for the number of variables of the parent ring.\n\nAttached patch fixes this problem, and adds similar coercion and `__call__` semantics to `BooleanMonomialMonoid`. It also fixes minor problems where using iterators of polynomials over a ring other than the current one messes `PolyBoRi` up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1667\n\n",
     "created_at": "2008-01-03T14:54:15Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001667.json:
     "title": "[with patch, needs review] coercion fixes for PolyBoRi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1667",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: polybori
 
@@ -41,7 +41,7 @@ archive/issue_comments_010591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1667#issuecomment-10591",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

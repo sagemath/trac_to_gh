@@ -14,7 +14,7 @@ archive/issues_002104.json:
     "title": "missing dependency: lcalc on mpfr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2104",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2104
 archive/issue_comments_013721.json:
 ```json
 {
-    "body": "Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket2104/deps.patch) by tabbott created at 2008-02-08 22:24:14",
+    "body": "Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket2104/deps.patch) by @timabbott created at 2008-02-08 22:24:14",
     "created_at": "2008-02-08T22:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2104#issuecomment-13721",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket2104/deps.patch) by tabbott created at 2008-02-08 22:24:14
+Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket2104/deps.patch) by @timabbott created at 2008-02-08 22:24:14
 
 
 

@@ -14,7 +14,7 @@ archive/issues_003982.json:
     "title": "[with patch, needs review] Pipe stdout to /dev/null to help sage_timeit with \"print\" statements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3982",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3982
 archive/issue_comments_028641.json:
 ```json
 {
-    "body": "Attachment [trac_3982.patch](tarball://root/attachments/some-uuid/ticket3982/trac_3982.patch) by mhansen created at 2008-08-28 23:37:47",
+    "body": "Attachment [trac_3982.patch](tarball://root/attachments/some-uuid/ticket3982/trac_3982.patch) by @mwhansen created at 2008-08-28 23:37:47",
     "created_at": "2008-08-28T23:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3982#issuecomment-28641",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3982.patch](tarball://root/attachments/some-uuid/ticket3982/trac_3982.patch) by mhansen created at 2008-08-28 23:37:47
+Attachment [trac_3982.patch](tarball://root/attachments/some-uuid/ticket3982/trac_3982.patch) by @mwhansen created at 2008-08-28 23:37:47
 
 
 
@@ -50,16 +50,16 @@ Attachment [trac_3982.patch](tarball://root/attachments/some-uuid/ticket3982/tra
 archive/issue_comments_028642.json:
 ```json
 {
-    "body": "Attachment [trac_3982.2.patch](tarball://root/attachments/some-uuid/ticket3982/trac_3982.2.patch) by mhansen created at 2008-08-28 23:38:23\n\nI've attached a new patch which adds a simple doctest.  Only apply trac_3982.2.patch.",
+    "body": "Attachment [trac_3982.2.patch](tarball://root/attachments/some-uuid/ticket3982/trac_3982.2.patch) by @mwhansen created at 2008-08-28 23:38:23\n\nI've attached a new patch which adds a simple doctest.  Only apply trac_3982.2.patch.",
     "created_at": "2008-08-28T23:38:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3982#issuecomment-28642",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3982.2.patch](tarball://root/attachments/some-uuid/ticket3982/trac_3982.2.patch) by mhansen created at 2008-08-28 23:38:23
+Attachment [trac_3982.2.patch](tarball://root/attachments/some-uuid/ticket3982/trac_3982.2.patch) by @mwhansen created at 2008-08-28 23:38:23
 
 I've attached a new patch which adds a simple doctest.  Only apply trac_3982.2.patch.
 

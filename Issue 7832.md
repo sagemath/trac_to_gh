@@ -3,7 +3,7 @@
 archive/issues_007832.json:
 ```json
 {
-    "body": "Assignee: pjeremy\n\nBy default, you get the following, which is corrected by the patch to singuname.sh:\n\n```\nmake[2]: Entering directory `/home/peter/sage/sage-4.3/spkg/build/singular-3-1-0-4-20090818.p2/src'\nmake[2]: *** No rule to make target `distclean'.  Stop.\nmake[2]: Leaving directory `/home/peter/sage/sage-4.3/spkg/build/singular-3-1-0-4-20090818.p2/src'\nrm: /home/peter/sage/sage-4.3/local/bin/Singular*: No such file or directory\ncreating cache ./config.cache\nchecking uname for singular... unknown\nconfigure: error: Unknown architecture: Check singuname.sh\nUnable to configure Singular.\n```\n\n\nCorrect configure script for amd64 by patching the autoconf inputs and re-running autoconf.  This corrects a problem where linking libsingular.so reports lots of undefined references to both internal `om`* functions and functions within libncurses.\n\nSeveral other trivial fixes to support dynamic linking on FreeBSD/amd64.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7832\n\n",
+    "body": "Assignee: @peterjeremy\n\nBy default, you get the following, which is corrected by the patch to singuname.sh:\n\n```\nmake[2]: Entering directory `/home/peter/sage/sage-4.3/spkg/build/singular-3-1-0-4-20090818.p2/src'\nmake[2]: *** No rule to make target `distclean'.  Stop.\nmake[2]: Leaving directory `/home/peter/sage/sage-4.3/spkg/build/singular-3-1-0-4-20090818.p2/src'\nrm: /home/peter/sage/sage-4.3/local/bin/Singular*: No such file or directory\ncreating cache ./config.cache\nchecking uname for singular... unknown\nconfigure: error: Unknown architecture: Check singuname.sh\nUnable to configure Singular.\n```\n\n\nCorrect configure script for amd64 by patching the autoconf inputs and re-running autoconf.  This corrects a problem where linking libsingular.so reports lots of undefined references to both internal `om`* functions and functions within libncurses.\n\nSeveral other trivial fixes to support dynamic linking on FreeBSD/amd64.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7832\n\n",
     "created_at": "2010-01-03T10:10:09Z",
     "labels": [
         "porting: BSD",
@@ -14,10 +14,10 @@ archive/issues_007832.json:
     "title": "singular-3-1-0-4-20090818.p2 - fix compilation on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7832",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: pjeremy
+Assignee: @peterjeremy
 
 By default, you get the following, which is corrected by the patch to singuname.sh:
 
@@ -54,7 +54,7 @@ archive/issue_comments_067842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7832#issuecomment-67842",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -67,16 +67,16 @@ Changing status from new to needs_review.
 archive/issue_comments_067843.json:
 ```json
 {
-    "body": "Attachment [7832.singular.patch](tarball://root/attachments/some-uuid/ticket7832/7832.singular.patch) by pjeremy created at 2010-01-03 10:11:18",
+    "body": "Attachment [7832.singular.patch](tarball://root/attachments/some-uuid/ticket7832/7832.singular.patch) by @peterjeremy created at 2010-01-03 10:11:18",
     "created_at": "2010-01-03T10:11:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7832#issuecomment-67843",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [7832.singular.patch](tarball://root/attachments/some-uuid/ticket7832/7832.singular.patch) by pjeremy created at 2010-01-03 10:11:18
+Attachment [7832.singular.patch](tarball://root/attachments/some-uuid/ticket7832/7832.singular.patch) by @peterjeremy created at 2010-01-03 10:11:18
 
 
 
@@ -142,7 +142,7 @@ archive/issue_comments_067846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7832#issuecomment-67846",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_067848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7832#issuecomment-67848",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_067849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7832#issuecomment-67849",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_067850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7832#issuecomment-67850",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_067852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7832#issuecomment-67852",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_067853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7832#issuecomment-67853",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_067854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7832#issuecomment-67854",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_067855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7832#issuecomment-67855",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005241.json:
     "title": "Matrix Group sometimes assumes base ring is a field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5241",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: joyner
@@ -73,7 +73,7 @@ archive/issue_comments_040167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5241#issuecomment-40167",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -86,16 +86,16 @@ to be applied to sage-3.3.alpha6
 archive/issue_comments_040168.json:
 ```json
 {
-    "body": "Attachment [trac_5241-matrix-gp-list.patch](tarball://root/attachments/some-uuid/ticket5241/trac_5241-matrix-gp-list.patch) by wdj created at 2009-02-17 02:55:24\n\nThis passes sage -t but sage -testall has lots of (unrelated I think) failures. It simply fixes the bug reported and adds the required docstring examples.",
+    "body": "Attachment [trac_5241-matrix-gp-list.patch](tarball://root/attachments/some-uuid/ticket5241/trac_5241-matrix-gp-list.patch) by @wdjoyner created at 2009-02-17 02:55:24\n\nThis passes sage -t but sage -testall has lots of (unrelated I think) failures. It simply fixes the bug reported and adds the required docstring examples.",
     "created_at": "2009-02-17T02:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5241#issuecomment-40168",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_5241-matrix-gp-list.patch](tarball://root/attachments/some-uuid/ticket5241/trac_5241-matrix-gp-list.patch) by wdj created at 2009-02-17 02:55:24
+Attachment [trac_5241-matrix-gp-list.patch](tarball://root/attachments/some-uuid/ticket5241/trac_5241-matrix-gp-list.patch) by @wdjoyner created at 2009-02-17 02:55:24
 
 This passes sage -t but sage -testall has lots of (unrelated I think) failures. It simply fixes the bug reported and adds the required docstring examples.
 
@@ -111,7 +111,7 @@ archive/issue_comments_040169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5241#issuecomment-40169",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_040170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5241#issuecomment-40170",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_040171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5241#issuecomment-40171",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -171,16 +171,16 @@ Apply only `trac_5241-rebased.patch`.
 archive/issue_comments_040172.json:
 ```json
 {
-    "body": "Attachment [trac_5241-rebased.patch](tarball://root/attachments/some-uuid/ticket5241/trac_5241-rebased.patch) by AlexGhitza created at 2009-05-31 13:20:11\n\nrebased against 4.0",
+    "body": "Attachment [trac_5241-rebased.patch](tarball://root/attachments/some-uuid/ticket5241/trac_5241-rebased.patch) by @aghitza created at 2009-05-31 13:20:11\n\nrebased against 4.0",
     "created_at": "2009-05-31T13:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5241#issuecomment-40172",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5241-rebased.patch](tarball://root/attachments/some-uuid/ticket5241/trac_5241-rebased.patch) by AlexGhitza created at 2009-05-31 13:20:11
+Attachment [trac_5241-rebased.patch](tarball://root/attachments/some-uuid/ticket5241/trac_5241-rebased.patch) by @aghitza created at 2009-05-31 13:20:11
 
 rebased against 4.0
 
@@ -196,7 +196,7 @@ archive/issue_comments_040173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5241#issuecomment-40173",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_040174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5241#issuecomment-40174",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

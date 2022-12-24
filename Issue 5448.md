@@ -3,7 +3,7 @@
 archive/issues_005448.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  wcauchois kcrisman\n\nThis removes the axes.py code from Sage and switches to Matplotlib's code.  This allows for things like log scales as well as more flexibility in controlling how the ticks are labeled formatted.  It also fixes a number of existing bugs (like 2754).  After this change, it will be trivial to add a viewer='flot' option to Graphics.\n\nThe patch still needs some work a.k.a. doctests.  There are also a few things that don't work yet (like tick color and tick fontsize), and matrix_plot needs a matplotlib Locater and Formatter.  Also, GraphicsArray needs to be updated and should get lots of doctests for it added.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5448\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  wcauchois @kcrisman\n\nThis removes the axes.py code from Sage and switches to Matplotlib's code.  This allows for things like log scales as well as more flexibility in controlling how the ticks are labeled formatted.  It also fixes a number of existing bugs (like 2754).  After this change, it will be trivial to add a viewer='flot' option to Graphics.\n\nThe patch still needs some work a.k.a. doctests.  There are also a few things that don't work yet (like tick color and tick fontsize), and matrix_plot needs a matplotlib Locater and Formatter.  Also, GraphicsArray needs to be updated and should get lots of doctests for it added.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5448\n\n",
     "created_at": "2009-03-06T03:38:48Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_005448.json:
     "title": "[with patch, not ready for review] rework save/show in plot, use Matplotlib's axes code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5448",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  wcauchois kcrisman
+CC:  wcauchois @kcrisman
 
 This removes the axes.py code from Sage and switches to Matplotlib's code.  This allows for things like log scales as well as more flexibility in controlling how the ticks are labeled formatted.  It also fixes a number of existing bugs (like 2754).  After this change, it will be trivial to add a viewer='flot' option to Graphics.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5448
 archive/issue_comments_042133.json:
 ```json
 {
-    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5448/plot.patch) by mhansen created at 2009-03-06 03:39:15",
+    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5448/plot.patch) by @mwhansen created at 2009-03-06 03:39:15",
     "created_at": "2009-03-06T03:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42133",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5448/plot.patch) by mhansen created at 2009-03-06 03:39:15
+Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5448/plot.patch) by @mwhansen created at 2009-03-06 03:39:15
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_042134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42134",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_042135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42135",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_042136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42136",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing status from new to assigned.
 archive/issue_comments_042137.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2009-03-07T19:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42137",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_042138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42138",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_042140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42140",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_042141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42141",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_042142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42142",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_042143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42143",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_042144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42144",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_042145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42145",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_042146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42146",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_042147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42147",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_042148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42148",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_042149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42149",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -575,7 +575,7 @@ archive/issue_comments_042150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42150",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -618,7 +618,7 @@ archive/issue_comments_042151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42151",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_042152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42152",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -697,7 +697,7 @@ archive/issue_comments_042154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42154",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -745,7 +745,7 @@ archive/issue_comments_042155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42155",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_042157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42157",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -860,7 +860,7 @@ archive/issue_comments_042158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42158",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -907,7 +907,7 @@ archive/issue_comments_042160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42160",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -939,7 +939,7 @@ archive/issue_comments_042161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42161",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1003,7 +1003,7 @@ archive/issue_comments_042162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42162",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1027,7 +1027,7 @@ archive/issue_comments_042163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42163",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1070,7 +1070,7 @@ archive/issue_comments_042164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42164",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1116,7 +1116,7 @@ archive/issue_comments_042165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42165",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1182,7 +1182,7 @@ archive/issue_comments_042166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42166",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1206,7 +1206,7 @@ archive/issue_comments_042167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42167",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1235,7 +1235,7 @@ archive/issue_comments_042168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42168",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1253,7 +1253,7 @@ archive/issue_comments_042169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42169",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1271,7 +1271,7 @@ archive/issue_comments_042170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42170",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1289,7 +1289,7 @@ archive/issue_comments_042171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42171",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1309,7 +1309,7 @@ archive/issue_comments_042172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42172",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1322,16 +1322,16 @@ apply instead of previous patch.
 archive/issue_comments_042173.json:
 ```json
 {
-    "body": "Attachment [trac-5448-matplotlib-axes-gridlines.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.patch) by jason created at 2009-09-01 23:41:22\n\nI posted a long post to sage-devel calling for comment and a vote on this axes placement strategy.  The post is here: http://groups.google.com/group/sage-devel/browse_thread/thread/5ad2b32d68bf8b87",
+    "body": "Attachment [trac-5448-matplotlib-axes-gridlines.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.patch) by @jasongrout created at 2009-09-01 23:41:22\n\nI posted a long post to sage-devel calling for comment and a vote on this axes placement strategy.  The post is here: http://groups.google.com/group/sage-devel/browse_thread/thread/5ad2b32d68bf8b87",
     "created_at": "2009-09-01T23:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42173",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-5448-matplotlib-axes-gridlines.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.patch) by jason created at 2009-09-01 23:41:22
+Attachment [trac-5448-matplotlib-axes-gridlines.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.patch) by @jasongrout created at 2009-09-01 23:41:22
 
 I posted a long post to sage-devel calling for comment and a vote on this axes placement strategy.  The post is here: http://groups.google.com/group/sage-devel/browse_thread/thread/5ad2b32d68bf8b87
 
@@ -1347,7 +1347,7 @@ archive/issue_comments_042174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42174",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1396,7 +1396,7 @@ archive/issue_comments_042176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42176",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1428,7 +1428,7 @@ archive/issue_comments_042177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42177",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1446,7 +1446,7 @@ archive/issue_comments_042178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42178",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1459,16 +1459,16 @@ And one more thing needs to be done: documentation! (for the new functions added
 archive/issue_comments_042179.json:
 ```json
 {
-    "body": "Attachment [trac-5448-matplotlib-axes-gridlines.2.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.2.patch) by jason created at 2009-09-05 03:54:34\n\napply instead of previous patches",
+    "body": "Attachment [trac-5448-matplotlib-axes-gridlines.2.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.2.patch) by @jasongrout created at 2009-09-05 03:54:34\n\napply instead of previous patches",
     "created_at": "2009-09-05T03:54:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42179",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-5448-matplotlib-axes-gridlines.2.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.2.patch) by jason created at 2009-09-05 03:54:34
+Attachment [trac-5448-matplotlib-axes-gridlines.2.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.2.patch) by @jasongrout created at 2009-09-05 03:54:34
 
 apply instead of previous patches
 
@@ -1479,16 +1479,16 @@ apply instead of previous patches
 archive/issue_comments_042180.json:
 ```json
 {
-    "body": "Attachment [trac-5448-matplotlib-axes-gridlines.3.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.3.patch) by jason created at 2009-09-05 04:12:35",
+    "body": "Attachment [trac-5448-matplotlib-axes-gridlines.3.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.3.patch) by @jasongrout created at 2009-09-05 04:12:35",
     "created_at": "2009-09-05T04:12:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42180",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-5448-matplotlib-axes-gridlines.3.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.3.patch) by jason created at 2009-09-05 04:12:35
+Attachment [trac-5448-matplotlib-axes-gridlines.3.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.3.patch) by @jasongrout created at 2009-09-05 04:12:35
 
 
 
@@ -1502,7 +1502,7 @@ archive/issue_comments_042181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42181",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1578,16 +1578,16 @@ def adjust_figure_to_contain_bbox(fig, bbox):
 archive/issue_comments_042182.json:
 ```json
 {
-    "body": "Attachment [trac-5448-matplotlib-axes-gridlines.4.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.4.patch) by jason created at 2009-09-05 09:01:40\n\napply instead of previous patches",
+    "body": "Attachment [trac-5448-matplotlib-axes-gridlines.4.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.4.patch) by @jasongrout created at 2009-09-05 09:01:40\n\napply instead of previous patches",
     "created_at": "2009-09-05T09:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42182",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-5448-matplotlib-axes-gridlines.4.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.4.patch) by jason created at 2009-09-05 09:01:40
+Attachment [trac-5448-matplotlib-axes-gridlines.4.patch](tarball://root/attachments/some-uuid/ticket5448/trac-5448-matplotlib-axes-gridlines.4.patch) by @jasongrout created at 2009-09-05 09:01:40
 
 apply instead of previous patches
 
@@ -1603,7 +1603,7 @@ archive/issue_comments_042183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42183",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1621,7 +1621,7 @@ archive/issue_comments_042184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42184",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1639,7 +1639,7 @@ archive/issue_comments_042185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5448#issuecomment-42185",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

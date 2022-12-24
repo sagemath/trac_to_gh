@@ -14,7 +14,7 @@ archive/issues_007775.json:
     "title": "Wrong url in numerical.mip",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7775",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: mvngu
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7775
 archive/issue_comments_067036.json:
 ```json
 {
-    "body": "Attachment [trac_7775.patch](tarball://root/attachments/some-uuid/ticket7775/trac_7775.patch) by ncohen created at 2009-12-27 19:45:49",
+    "body": "Attachment [trac_7775.patch](tarball://root/attachments/some-uuid/ticket7775/trac_7775.patch) by @nathanncohen created at 2009-12-27 19:45:49",
     "created_at": "2009-12-27T19:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7775#issuecomment-67036",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7775.patch](tarball://root/attachments/some-uuid/ticket7775/trac_7775.patch) by ncohen created at 2009-12-27 19:45:49
+Attachment [trac_7775.patch](tarball://root/attachments/some-uuid/ticket7775/trac_7775.patch) by @nathanncohen created at 2009-12-27 19:45:49
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_067038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7775#issuecomment-67038",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_067041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7775#issuecomment-67041",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

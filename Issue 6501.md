@@ -14,7 +14,7 @@ archive/issues_006501.json:
     "title": "[with SPKG, needs review] Coin-or CLP/CBC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6501",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: tbd
@@ -48,7 +48,7 @@ archive/issue_comments_052878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6501#issuecomment-52878",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_052880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6501#issuecomment-52880",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

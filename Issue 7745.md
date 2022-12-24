@@ -3,7 +3,7 @@
 archive/issues_007745.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  robert.marik burcin\n\nKeywords: maxima\n\nMaxima is now updated, and that will incorporate a number of our bugfixes as well as things we have reported, not to mention other improvements.   See [http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7](http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7) for the announcement.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7745\n\n",
+    "body": "Assignee: tbd\n\nCC:  @robert-marik @burcin\n\nKeywords: maxima\n\nMaxima is now updated, and that will incorporate a number of our bugfixes as well as things we have reported, not to mention other improvements.   See [http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7](http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7) for the announcement.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7745\n\n",
     "created_at": "2009-12-21T02:07:46Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_007745.json:
     "title": "Update Maxima to 5.20.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7745",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tbd
 
-CC:  robert.marik burcin
+CC:  @robert-marik @burcin
 
 Keywords: maxima
 
@@ -41,7 +41,7 @@ archive/issue_comments_066660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66660",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_066661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66661",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_066662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66662",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_066663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66663",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_066664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66664",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_066665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66665",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -183,16 +183,16 @@ Based on 4.3.alpha1
 archive/issue_comments_066666.json:
 ```json
 {
-    "body": "Attachment [trac_7745-upgrade-maxima.patch](tarball://root/attachments/some-uuid/ticket7745/trac_7745-upgrade-maxima.patch) by kcrisman created at 2009-12-22 21:17:14\n\nSee #6423 and #4142 for other bugs fixed by this spkg.",
+    "body": "Attachment [trac_7745-upgrade-maxima.patch](tarball://root/attachments/some-uuid/ticket7745/trac_7745-upgrade-maxima.patch) by @kcrisman created at 2009-12-22 21:17:14\n\nSee #6423 and #4142 for other bugs fixed by this spkg.",
     "created_at": "2009-12-22T21:17:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66666",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7745-upgrade-maxima.patch](tarball://root/attachments/some-uuid/ticket7745/trac_7745-upgrade-maxima.patch) by kcrisman created at 2009-12-22 21:17:14
+Attachment [trac_7745-upgrade-maxima.patch](tarball://root/attachments/some-uuid/ticket7745/trac_7745-upgrade-maxima.patch) by @kcrisman created at 2009-12-22 21:17:14
 
 See #6423 and #4142 for other bugs fixed by this spkg.
 
@@ -208,7 +208,7 @@ archive/issue_comments_066667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66667",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_066668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66668",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -259,16 +259,16 @@ If those are the only ones you get, can you put a reviewer patch of those?  I al
 archive/issue_comments_066669.json:
 ```json
 {
-    "body": "Attachment [trac_7745-reviewer.patch](tarball://root/attachments/some-uuid/ticket7745/trac_7745-reviewer.patch) by robert.marik created at 2009-12-23 08:33:11\n\napply on the top of the previous patch and #6423 and #4142",
+    "body": "Attachment [trac_7745-reviewer.patch](tarball://root/attachments/some-uuid/ticket7745/trac_7745-reviewer.patch) by @robert-marik created at 2009-12-23 08:33:11\n\napply on the top of the previous patch and #6423 and #4142",
     "created_at": "2009-12-23T08:33:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66669",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac_7745-reviewer.patch](tarball://root/attachments/some-uuid/ticket7745/trac_7745-reviewer.patch) by robert.marik created at 2009-12-23 08:33:11
+Attachment [trac_7745-reviewer.patch](tarball://root/attachments/some-uuid/ticket7745/trac_7745-reviewer.patch) by @robert-marik created at 2009-12-23 08:33:11
 
 apply on the top of the previous patch and #6423 and #4142
 
@@ -284,7 +284,7 @@ archive/issue_comments_066670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66670",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_066671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66671",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_066672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66672",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_066673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66673",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

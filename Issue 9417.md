@@ -3,7 +3,7 @@
 archive/issues_009417.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  was justin\n\nKeywords: tamagawa_number local_data\n\nIn 4.4.4 the following Tamagawa number gets evaluated as 2:\n\n\n```\nsage: K.<a> = NumberField(x^2+18*x+1)\nsage: E = EllipticCurve(K, [0, -36, 0, 320, 0])\nsage: E.tamagawa_number(K.ideal(2))\n2\n```\n\n\nAccording to Magma this should be 4.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9417\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @williamstein justin\n\nKeywords: tamagawa_number local_data\n\nIn 4.4.4 the following Tamagawa number gets evaluated as 2:\n\n\n```\nsage: K.<a> = NumberField(x^2+18*x+1)\nsage: E = EllipticCurve(K, [0, -36, 0, 320, 0])\nsage: E.tamagawa_number(K.ideal(2))\n2\n```\n\n\nAccording to Magma this should be 4.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9417\n\n",
     "created_at": "2010-07-03T03:41:37Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_009417.json:
     "title": "Tamagawa number calculated incorrectly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9417",
-    "user": "arminstraub"
+    "user": "@arminstraub"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  was justin
+CC:  @williamstein justin
 
 Keywords: tamagawa_number local_data
 
@@ -52,7 +52,7 @@ archive/issue_comments_089747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89747",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_089748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89748",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -104,16 +104,16 @@ See #11055
 archive/issue_comments_089749.json:
 ```json
 {
-    "body": "Attachment [trac_9417-tamagawa.patch](tarball://root/attachments/some-uuid/ticket9417/trac_9417-tamagawa.patch) by cremona created at 2011-03-27 19:13:32\n\nApplies to 4.7.alpha2",
+    "body": "Attachment [trac_9417-tamagawa.patch](tarball://root/attachments/some-uuid/ticket9417/trac_9417-tamagawa.patch) by @JohnCremona created at 2011-03-27 19:13:32\n\nApplies to 4.7.alpha2",
     "created_at": "2011-03-27T19:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89749",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9417-tamagawa.patch](tarball://root/attachments/some-uuid/ticket9417/trac_9417-tamagawa.patch) by cremona created at 2011-03-27 19:13:32
+Attachment [trac_9417-tamagawa.patch](tarball://root/attachments/some-uuid/ticket9417/trac_9417-tamagawa.patch) by @JohnCremona created at 2011-03-27 19:13:32
 
 Applies to 4.7.alpha2
 
@@ -129,7 +129,7 @@ archive/issue_comments_089750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89750",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_089751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89751",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_089752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89752",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_089753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89753",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_089754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89754",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

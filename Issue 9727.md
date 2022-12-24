@@ -3,7 +3,7 @@
 archive/issues_009727.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  ncohen\n\nThis patch creates a new graph constructor called RepresentationGraph. This method generalizes IntervalGraph. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9727\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen\n\nThis patch creates a new graph constructor called RepresentationGraph. This method generalizes IntervalGraph. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9727\n\n",
     "created_at": "2010-08-11T20:43:30Z",
     "labels": [
         "graph theory",
@@ -19,7 +19,7 @@ archive/issues_009727.json:
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  ncohen
+CC:  @nathanncohen
 
 This patch creates a new graph constructor called RepresentationGraph. This method generalizes IntervalGraph. 
 
@@ -57,7 +57,7 @@ archive/issue_comments_095068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9727#issuecomment-95068",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_095072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9727#issuecomment-95072",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_095073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9727#issuecomment-95073",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_095080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9727#issuecomment-95080",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_095081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9727#issuecomment-95081",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

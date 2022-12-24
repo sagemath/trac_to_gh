@@ -3,7 +3,7 @@
 archive/issues_000414.json:
 ```json
 {
-    "body": "Assignee: was\n\nApparently, the list of allowed file formats to attach got shorter recently:\n\n\n```\n<type 'exceptions.ImportError'>: Attaching of '/home/malb/foobar.pyx'\nnot implemented (load .py, .spyx, and .sage files)\n```\n\n\nbut `attach 'foobar.spyx'` works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/414\n\n",
+    "body": "Assignee: @williamstein\n\nApparently, the list of allowed file formats to attach got shorter recently:\n\n\n```\n<type 'exceptions.ImportError'>: Attaching of '/home/malb/foobar.pyx'\nnot implemented (load .py, .spyx, and .sage files)\n```\n\n\nbut `attach 'foobar.spyx'` works.\n\nIssue created by migration from https://trac.sagemath.org/ticket/414\n\n",
     "created_at": "2007-08-09T13:36:35Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000414.json:
     "title": "Attaching .pyx doesn't work anymore (only .spyx)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/414",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Apparently, the list of allowed file formats to attach got shorter recently:
 
@@ -46,7 +46,7 @@ archive/issue_comments_002041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/414#issuecomment-2041",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_002042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/414#issuecomment-2042",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_002043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/414#issuecomment-2043",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_002044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/414#issuecomment-2044",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_002045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/414#issuecomment-2045",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_002046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/414#issuecomment-2046",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -149,15 +149,15 @@ Resolution: fixed
 archive/issue_comments_002047.json:
 ```json
 {
-    "body": "Attachment [pyx.patch](tarball://root/attachments/some-uuid/ticket414/pyx.patch) by was created at 2007-09-14 22:07:40\n\nFixed for sage-2.8.4.3.  Now both .spyx and .pyx files are accepted.",
+    "body": "Attachment [pyx.patch](tarball://root/attachments/some-uuid/ticket414/pyx.patch) by @williamstein created at 2007-09-14 22:07:40\n\nFixed for sage-2.8.4.3.  Now both .spyx and .pyx files are accepted.",
     "created_at": "2007-09-14T22:07:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/414#issuecomment-2047",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [pyx.patch](tarball://root/attachments/some-uuid/ticket414/pyx.patch) by was created at 2007-09-14 22:07:40
+Attachment [pyx.patch](tarball://root/attachments/some-uuid/ticket414/pyx.patch) by @williamstein created at 2007-09-14 22:07:40
 
 Fixed for sage-2.8.4.3.  Now both .spyx and .pyx files are accepted.

@@ -14,7 +14,7 @@ archive/issues_004734.json:
     "title": "sage -notebook option now broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4734",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -79,7 +79,7 @@ archive/issue_comments_035734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4734#issuecomment-35734",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_035735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4734#issuecomment-35735",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_035736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4734#issuecomment-35736",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -153,16 +153,16 @@ should be recovered, until a better solution be found. The original code seems b
 archive/issue_comments_035737.json:
 ```json
 {
-    "body": "Attachment [trac_4734.patch](tarball://root/attachments/some-uuid/ticket4734/trac_4734.patch) by was created at 2009-01-24 15:49:38",
+    "body": "Attachment [trac_4734.patch](tarball://root/attachments/some-uuid/ticket4734/trac_4734.patch) by @williamstein created at 2009-01-24 15:49:38",
     "created_at": "2009-01-24T15:49:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4734#issuecomment-35737",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4734.patch](tarball://root/attachments/some-uuid/ticket4734/trac_4734.patch) by was created at 2009-01-24 15:49:38
+Attachment [trac_4734.patch](tarball://root/attachments/some-uuid/ticket4734/trac_4734.patch) by @williamstein created at 2009-01-24 15:49:38
 
 
 
@@ -176,7 +176,7 @@ archive/issue_comments_035738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4734#issuecomment-35738",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

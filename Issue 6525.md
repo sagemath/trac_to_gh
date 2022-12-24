@@ -3,7 +3,7 @@
 archive/issues_006525.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rbeezer\n\nKeywords: latex, graph, graphlatex\n\nNow that `latex(G)` has been enabled for combinatorial graphs,\nsome of the options in the graph latex class are still hard coded. Some of these options are now being enabled to have more control over the graph latex options.\n\nPreviously\n\n```\nsage: G.latex_options()\nLaTeX options for Graph on 7 vertices: {'tkz_style': 'Normal'}\n```\n\n\nWith the attached patch\n\n```\nsage: G.latex_options()\nLaTeX options for Graph on 7 vertices: {'tkz_style': 'Normal', 'units': 'cm', 'labels': True, \n'layout': '', 'vertex_math': True}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6525\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rbeezer\n\nKeywords: latex, graph, graphlatex\n\nNow that `latex(G)` has been enabled for combinatorial graphs,\nsome of the options in the graph latex class are still hard coded. Some of these options are now being enabled to have more control over the graph latex options.\n\nPreviously\n\n```\nsage: G.latex_options()\nLaTeX options for Graph on 7 vertices: {'tkz_style': 'Normal'}\n```\n\n\nWith the attached patch\n\n```\nsage: G.latex_options()\nLaTeX options for Graph on 7 vertices: {'tkz_style': 'Normal', 'units': 'cm', 'labels': True, \n'layout': '', 'vertex_math': True}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6525\n\n",
     "created_at": "2009-07-13T18:04:53Z",
     "labels": [
         "graph theory",
@@ -17,9 +17,9 @@ archive/issues_006525.json:
     "user": "fidelbarrera"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rbeezer
+CC:  @rbeezer
 
 Keywords: latex, graph, graphlatex
 
@@ -95,7 +95,7 @@ archive/issue_comments_053215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6525#issuecomment-53215",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_053218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6525#issuecomment-53218",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

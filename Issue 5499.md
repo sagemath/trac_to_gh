@@ -3,7 +3,7 @@
 archive/issues_005499.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis was originally reported on ticket #5076 but seems to be a separate issue.\n\n```\nsage: K = Qp(11,8)\nsage: a = 11^-2 + O(11^5)\nsage: a\n11^-2 + O(11^3)\n```\n\nBy contrast:\n\n```\nsage: K = Qp(11,8)\nsage: 11^(-2) + K(O(11^5))\n11^-2 + O(11^5)\n```\n\nNote that\n\n```\nsage: O(11^5).parent()\n11-adic Ring with capped relative precision 5\nsage: O(11^5).parent() == K\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5499\n\n",
+    "body": "Assignee: @williamstein\n\nThis was originally reported on ticket #5076 but seems to be a separate issue.\n\n```\nsage: K = Qp(11,8)\nsage: a = 11^-2 + O(11^5)\nsage: a\n11^-2 + O(11^3)\n```\n\nBy contrast:\n\n```\nsage: K = Qp(11,8)\nsage: 11^(-2) + K(O(11^5))\n11^-2 + O(11^5)\n```\n\nNote that\n\n```\nsage: O(11^5).parent()\n11-adic Ring with capped relative precision 5\nsage: O(11^5).parent() == K\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5499\n\n",
     "created_at": "2009-03-12T05:18:12Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005499.json:
     "title": "Wrong precision when creating p-adic field element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5499",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This was originally reported on ticket #5076 but seems to be a separate issue.
 
@@ -58,16 +58,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5499
 archive/issue_comments_042709.json:
 ```json
 {
-    "body": "Attachment [trac_5499.patch](tarball://root/attachments/some-uuid/ticket5499/trac_5499.patch) by roed created at 2009-03-17 05:31:22",
+    "body": "Attachment [trac_5499.patch](tarball://root/attachments/some-uuid/ticket5499/trac_5499.patch) by @roed314 created at 2009-03-17 05:31:22",
     "created_at": "2009-03-17T05:31:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5499#issuecomment-42709",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_5499.patch](tarball://root/attachments/some-uuid/ticket5499/trac_5499.patch) by roed created at 2009-03-17 05:31:22
+Attachment [trac_5499.patch](tarball://root/attachments/some-uuid/ticket5499/trac_5499.patch) by @roed314 created at 2009-03-17 05:31:22
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_042710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5499#issuecomment-42710",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_042713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5499#issuecomment-42713",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_042714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5499#issuecomment-42714",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_042715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5499#issuecomment-42715",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_042716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5499#issuecomment-42716",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_042720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5499#issuecomment-42720",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

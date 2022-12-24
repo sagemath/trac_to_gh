@@ -3,7 +3,7 @@
 archive/issues_003521.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: modular symbols, atkin-lehner\n\nThe following should produce the identity matrix:\n\n```\nsage: e = (DirichletGroup(13).0)^2\nsage: M = ModularSymbols(e, 2)\nsage: M.atkin_lehner_operator().matrix()^2\n[         1          0          0          0]\n[         0          1          0          0]\n[-zeta6 - 1          0          1  zeta6 + 1]\n[ zeta6 + 1          0          0     -zeta6]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3521\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: modular symbols, atkin-lehner\n\nThe following should produce the identity matrix:\n\n```\nsage: e = (DirichletGroup(13).0)^2\nsage: M = ModularSymbols(e, 2)\nsage: M.atkin_lehner_operator().matrix()^2\n[         1          0          0          0]\n[         0          1          0          0]\n[-zeta6 - 1          0          1  zeta6 + 1]\n[ zeta6 + 1          0          0     -zeta6]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3521\n\n",
     "created_at": "2008-06-27T14:02:05Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_003521.json:
     "title": "Atkin-Lehner operator doesn't square to 1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3521",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: modular symbols, atkin-lehner
 
@@ -49,7 +49,7 @@ archive/issue_comments_024815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3521#issuecomment-24815",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -80,16 +80,16 @@ sage: M.atkin_lehner_operator(13).matrix()^2
 archive/issue_comments_024816.json:
 ```json
 {
-    "body": "Attachment [sage-3521.patch](tarball://root/attachments/some-uuid/ticket3521/sage-3521.patch) by was created at 2008-06-27 19:31:12\n\nWARNING:\n\nThe atkin-lehner operator does *not* leave the space $M_k(N,\\chi)$ invariant unless $\\chi$ is quadratic. Really it sends $M_k(N,\\chi)$ to $M_k(N,\\chibar)$.   So Sage should give an error message when $\\chi$ is not quadratic.",
+    "body": "Attachment [sage-3521.patch](tarball://root/attachments/some-uuid/ticket3521/sage-3521.patch) by @williamstein created at 2008-06-27 19:31:12\n\nWARNING:\n\nThe atkin-lehner operator does *not* leave the space $M_k(N,\\chi)$ invariant unless $\\chi$ is quadratic. Really it sends $M_k(N,\\chi)$ to $M_k(N,\\chibar)$.   So Sage should give an error message when $\\chi$ is not quadratic.",
     "created_at": "2008-06-27T19:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3521#issuecomment-24816",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3521.patch](tarball://root/attachments/some-uuid/ticket3521/sage-3521.patch) by was created at 2008-06-27 19:31:12
+Attachment [sage-3521.patch](tarball://root/attachments/some-uuid/ticket3521/sage-3521.patch) by @williamstein created at 2008-06-27 19:31:12
 
 WARNING:
 
@@ -102,16 +102,16 @@ The atkin-lehner operator does *not* leave the space $M_k(N,\chi)$ invariant unl
 archive/issue_comments_024817.json:
 ```json
 {
-    "body": "Attachment [trac-3521-touch-ups.patch](tarball://root/attachments/some-uuid/ticket3521/trac-3521-touch-ups.patch) by craigcitro created at 2008-06-29 02:04:50",
+    "body": "Attachment [trac-3521-touch-ups.patch](tarball://root/attachments/some-uuid/ticket3521/trac-3521-touch-ups.patch) by @craigcitro created at 2008-06-29 02:04:50",
     "created_at": "2008-06-29T02:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3521#issuecomment-24817",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3521-touch-ups.patch](tarball://root/attachments/some-uuid/ticket3521/trac-3521-touch-ups.patch) by craigcitro created at 2008-06-29 02:04:50
+Attachment [trac-3521-touch-ups.patch](tarball://root/attachments/some-uuid/ticket3521/trac-3521-touch-ups.patch) by @craigcitro created at 2008-06-29 02:04:50
 
 
 
@@ -125,7 +125,7 @@ archive/issue_comments_024818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3521#issuecomment-24818",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

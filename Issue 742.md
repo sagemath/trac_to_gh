@@ -3,7 +3,7 @@
 archive/issues_000742.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/742\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/742\n\n",
     "created_at": "2007-09-23T23:08:25Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_000742.json:
     "title": "notebook timeout -- should be easy to set from command line and not timeout by *default*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/742",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/742
 archive/issue_comments_004346.json:
 ```json
 {
-    "body": "Attachment [6513.patch](tarball://root/attachments/some-uuid/ticket742/6513.patch) by was created at 2007-09-25 06:00:28\n\nNow fixed.",
+    "body": "Attachment [6513.patch](tarball://root/attachments/some-uuid/ticket742/6513.patch) by @williamstein created at 2007-09-25 06:00:28\n\nNow fixed.",
     "created_at": "2007-09-25T06:00:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/742#issuecomment-4346",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [6513.patch](tarball://root/attachments/some-uuid/ticket742/6513.patch) by was created at 2007-09-25 06:00:28
+Attachment [6513.patch](tarball://root/attachments/some-uuid/ticket742/6513.patch) by @williamstein created at 2007-09-25 06:00:28
 
 Now fixed.
 
@@ -57,7 +57,7 @@ archive/issue_comments_004347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/742#issuecomment-4347",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

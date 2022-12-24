@@ -3,7 +3,7 @@
 archive/issues_004707.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: E = EllipticCurve(GF(25,'a'), [0,0,1,4,0])\nsage: magma(E)\nboom\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4707\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: E = EllipticCurve(GF(25,'a'), [0,0,1,4,0])\nsage: magma(E)\nboom\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4707\n\n",
     "created_at": "2008-12-05T02:28:26Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004707.json:
     "title": "magma/sage interface -- another trivial easy-to-fix failure hopefully",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4707",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4707
 archive/issue_comments_035499.json:
 ```json
 {
-    "body": "Attachment [trac_4707.patch](tarball://root/attachments/some-uuid/ticket4707/trac_4707.patch) by was created at 2008-12-05 02:55:03",
+    "body": "Attachment [trac_4707.patch](tarball://root/attachments/some-uuid/ticket4707/trac_4707.patch) by @williamstein created at 2008-12-05 02:55:03",
     "created_at": "2008-12-05T02:55:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4707#issuecomment-35499",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4707.patch](tarball://root/attachments/some-uuid/ticket4707/trac_4707.patch) by was created at 2008-12-05 02:55:03
+Attachment [trac_4707.patch](tarball://root/attachments/some-uuid/ticket4707/trac_4707.patch) by @williamstein created at 2008-12-05 02:55:03
 
 
 
@@ -56,16 +56,16 @@ Attachment [trac_4707.patch](tarball://root/attachments/some-uuid/ticket4707/tra
 archive/issue_comments_035500.json:
 ```json
 {
-    "body": "Attachment [trac_4707_tiny_followup.patch](tarball://root/attachments/some-uuid/ticket4707/trac_4707_tiny_followup.patch) by ncalexan created at 2008-12-06 23:49:58\n\nWorks for me.  Apply both patches.  We will open a separate ticket for the corresponding magma -> sage conversion.",
+    "body": "Attachment [trac_4707_tiny_followup.patch](tarball://root/attachments/some-uuid/ticket4707/trac_4707_tiny_followup.patch) by @ncalexan created at 2008-12-06 23:49:58\n\nWorks for me.  Apply both patches.  We will open a separate ticket for the corresponding magma -> sage conversion.",
     "created_at": "2008-12-06T23:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4707#issuecomment-35500",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_4707_tiny_followup.patch](tarball://root/attachments/some-uuid/ticket4707/trac_4707_tiny_followup.patch) by ncalexan created at 2008-12-06 23:49:58
+Attachment [trac_4707_tiny_followup.patch](tarball://root/attachments/some-uuid/ticket4707/trac_4707_tiny_followup.patch) by @ncalexan created at 2008-12-06 23:49:58
 
 Works for me.  Apply both patches.  We will open a separate ticket for the corresponding magma -> sage conversion.
 
@@ -81,7 +81,7 @@ archive/issue_comments_035501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4707#issuecomment-35501",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

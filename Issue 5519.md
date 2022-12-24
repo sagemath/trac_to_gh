@@ -3,7 +3,7 @@
 archive/issues_005519.json:
 ```json
 {
-    "body": "Assignee: rhinton\n\nCC:  malb zimmerma\n\nThe patch calls the NTL irreducibility test directly instead of depending on a generic algorithm.  It's not blazingly fast (e.g. Magma), but it's an improvement.\n\n  R.<x> = GF(2)[]\n  timeit('R.random_element(100).is_irreducible()')\n  # before the change\n  # 25 loops, best of 3: 16.2 ms per loop\n  # after the change\n  # 25 loops, best of 3: 3.36 ms per loop\n\n  timeit('R.random_element(512).is_irreducible()')\n  # before the change\n  # 5 loops, best of 3: 323 ms per loop\n  # after the change\n  # 25 loops, best of 3: 18.7 ms per loop\n\nIssue created by migration from https://trac.sagemath.org/ticket/5519\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @malb @zimmermann6\n\nThe patch calls the NTL irreducibility test directly instead of depending on a generic algorithm.  It's not blazingly fast (e.g. Magma), but it's an improvement.\n\n  R.<x> = GF(2)[]\n  timeit('R.random_element(100).is_irreducible()')\n  # before the change\n  # 25 loops, best of 3: 16.2 ms per loop\n  # after the change\n  # 25 loops, best of 3: 3.36 ms per loop\n\n  timeit('R.random_element(512).is_irreducible()')\n  # before the change\n  # 5 loops, best of 3: 323 ms per loop\n  # after the change\n  # 25 loops, best of 3: 18.7 ms per loop\n\nIssue created by migration from https://trac.sagemath.org/ticket/5519\n\n",
     "created_at": "2009-03-14T20:43:10Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005519.json:
     "title": "Irreducibility test is slow for polynomials over GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5519",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: rhinton
+Assignee: @rhinton
 
-CC:  malb zimmerma
+CC:  @malb @zimmermann6
 
 The patch calls the NTL irreducibility test directly instead of depending on a generic algorithm.  It's not blazingly fast (e.g. Magma), but it's an improvement.
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5519
 archive/issue_comments_042895.json:
 ```json
 {
-    "body": "Attachment [trac_5519_irred_faster.patch](tarball://root/attachments/some-uuid/ticket5519/trac_5519_irred_faster.patch) by malb created at 2009-03-15 11:51:48\n\nIs making it a `cpdef` function really necessary?\n\nAlso, I'm CCing Paul Zimmermann who would know about fast implementations of this.",
+    "body": "Attachment [trac_5519_irred_faster.patch](tarball://root/attachments/some-uuid/ticket5519/trac_5519_irred_faster.patch) by @malb created at 2009-03-15 11:51:48\n\nIs making it a `cpdef` function really necessary?\n\nAlso, I'm CCing Paul Zimmermann who would know about fast implementations of this.",
     "created_at": "2009-03-15T11:51:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42895",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_5519_irred_faster.patch](tarball://root/attachments/some-uuid/ticket5519/trac_5519_irred_faster.patch) by malb created at 2009-03-15 11:51:48
+Attachment [trac_5519_irred_faster.patch](tarball://root/attachments/some-uuid/ticket5519/trac_5519_irred_faster.patch) by @malb created at 2009-03-15 11:51:48
 
 Is making it a `cpdef` function really necessary?
 
@@ -74,7 +74,7 @@ archive/issue_comments_042896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42896",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_042897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42897",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_042898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42898",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_042899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42899",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_042900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42900",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_042901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42901",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_042902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42902",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_042903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42903",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -282,16 +282,16 @@ You are absolutely right.  Apparently I've already blocked out calling the M4RI 
 archive/issue_comments_042904.json:
 ```json
 {
-    "body": "Attachment [trac_5519_irred_faster.2.patch](tarball://root/attachments/some-uuid/ticket5519/trac_5519_irred_faster.2.patch) by rhinton created at 2009-03-16 20:23:45",
+    "body": "Attachment [trac_5519_irred_faster.2.patch](tarball://root/attachments/some-uuid/ticket5519/trac_5519_irred_faster.2.patch) by @rhinton created at 2009-03-16 20:23:45",
     "created_at": "2009-03-16T20:23:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42904",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [trac_5519_irred_faster.2.patch](tarball://root/attachments/some-uuid/ticket5519/trac_5519_irred_faster.2.patch) by rhinton created at 2009-03-16 20:23:45
+Attachment [trac_5519_irred_faster.2.patch](tarball://root/attachments/some-uuid/ticket5519/trac_5519_irred_faster.2.patch) by @rhinton created at 2009-03-16 20:23:45
 
 
 
@@ -305,7 +305,7 @@ archive/issue_comments_042905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42905",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_042906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42906",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_042907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42907",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_042910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5519#issuecomment-42910",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

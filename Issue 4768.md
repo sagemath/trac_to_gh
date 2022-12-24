@@ -3,7 +3,7 @@
 archive/issues_004768.json:
 ```json
 {
-    "body": "Assignee: was\n\nBy writing a little specialized code, I can probably speed up some of these conversions by an order of magnitude, and also make them way more efficient memory-wise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4768\n\n",
+    "body": "Assignee: @williamstein\n\nBy writing a little specialized code, I can probably speed up some of these conversions by an order of magnitude, and also make them way more efficient memory-wise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4768\n\n",
     "created_at": "2008-12-12T06:59:56Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004768.json:
     "title": "magma -- speed up conversion of integer, rational and modn matrices from sage to magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4768",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 By writing a little specialized code, I can probably speed up some of these conversions by an order of magnitude, and also make them way more efficient memory-wise.
 
@@ -37,7 +37,7 @@ archive/issue_comments_036124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4768#issuecomment-36124",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,16 +89,16 @@ Wall time: 1.16 s
 archive/issue_comments_036125.json:
 ```json
 {
-    "body": "Attachment [trac_4768.patch](tarball://root/attachments/some-uuid/ticket4768/trac_4768.patch) by malb created at 2008-12-12 14:39:58\n\nPatch applies cleanly, doctests in sage/matrix pass, reads good.",
+    "body": "Attachment [trac_4768.patch](tarball://root/attachments/some-uuid/ticket4768/trac_4768.patch) by @malb created at 2008-12-12 14:39:58\n\nPatch applies cleanly, doctests in sage/matrix pass, reads good.",
     "created_at": "2008-12-12T14:39:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4768#issuecomment-36125",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_4768.patch](tarball://root/attachments/some-uuid/ticket4768/trac_4768.patch) by malb created at 2008-12-12 14:39:58
+Attachment [trac_4768.patch](tarball://root/attachments/some-uuid/ticket4768/trac_4768.patch) by @malb created at 2008-12-12 14:39:58
 
 Patch applies cleanly, doctests in sage/matrix pass, reads good.
 

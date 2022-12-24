@@ -3,7 +3,7 @@
 archive/issues_008227.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  slabbe\n\nKeywords: iterated palindromic closure\n\nThere is a faster way to compute the iterated paindromic closure of a word than using the definition. The problem with the latter is that it needs to compute the longest f-palindromic suffix of the current word at each step, while it is possible to easily deduce this length only by looking at the directive word.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8227\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @seblabbe\n\nKeywords: iterated palindromic closure\n\nThere is a faster way to compute the iterated paindromic closure of a word than using the definition. The problem with the latter is that it needs to compute the longest f-palindromic suffix of the current word at each step, while it is possible to easily deduce this length only by looking at the directive word.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8227\n\n",
     "created_at": "2010-02-10T11:20:10Z",
     "labels": [
         "algebra",
@@ -17,9 +17,9 @@ archive/issues_008227.json:
     "user": "abmasse"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  slabbe
+CC:  @seblabbe
 
 Keywords: iterated palindromic closure
 
@@ -72,7 +72,7 @@ Changing status from new to needs_review.
 archive/issue_comments_072643.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to abmasse.",
+    "body": "Changing assignee from @aghitza to abmasse.",
     "created_at": "2010-02-10T13:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8227",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_072643.json:
 }
 ```
 
-Changing assignee from AlexGhitza to abmasse.
+Changing assignee from @aghitza to abmasse.
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_072645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8227#issuecomment-72645",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_072646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8227#issuecomment-72646",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_072648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8227#issuecomment-72648",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -319,16 +319,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_072652.json:
 ```json
 {
-    "body": "Attachment [trac_8227_review-sl.patch](tarball://root/attachments/some-uuid/ticket8227/trac_8227_review-sl.patch) by slabbe created at 2010-02-23 02:43:07\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8227_review-sl.patch](tarball://root/attachments/some-uuid/ticket8227/trac_8227_review-sl.patch) by @seblabbe created at 2010-02-23 02:43:07\n\nApplies over the precedent patch",
     "created_at": "2010-02-23T02:43:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8227#issuecomment-72652",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8227_review-sl.patch](tarball://root/attachments/some-uuid/ticket8227/trac_8227_review-sl.patch) by slabbe created at 2010-02-23 02:43:07
+Attachment [trac_8227_review-sl.patch](tarball://root/attachments/some-uuid/ticket8227/trac_8227_review-sl.patch) by @seblabbe created at 2010-02-23 02:43:07
 
 Applies over the precedent patch
 
@@ -344,7 +344,7 @@ archive/issue_comments_072653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8227",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8227#issuecomment-72653",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 

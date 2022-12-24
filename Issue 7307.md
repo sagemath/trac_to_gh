@@ -3,7 +3,7 @@
 archive/issues_007307.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nKeywords: doctest typo\n\nPatch corrects an indent in doctest for the `EllipticCurveIsogeny` class.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7307\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: doctest typo\n\nPatch corrects an indent in doctest for the `EllipticCurveIsogeny` class.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7307\n\n",
     "created_at": "2009-10-26T08:31:33Z",
     "labels": [
         "elliptic curves",
@@ -17,7 +17,7 @@ archive/issues_007307.json:
     "user": "fwclarke"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 Keywords: doctest typo
 
@@ -75,7 +75,7 @@ archive/issue_comments_061024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7307#issuecomment-61024",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_061025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7307#issuecomment-61025",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_061026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7307#issuecomment-61026",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_061027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7307",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7307#issuecomment-61027",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

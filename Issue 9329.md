@@ -3,7 +3,7 @@
 archive/issues_009329.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  rossk mforets slelievre\n\n\n```\nsage: var('n')\nn\nsage: g=e^((n*pi-pi*2))\n```\n\nBut there doesn't seem to be an easy (i.e. not via `fast_callable`) way to access the underlying expression tree.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9329\n\n",
+    "body": "Assignee: @burcin\n\nCC:  rossk @mforets @slel\n\n\n```\nsage: var('n')\nn\nsage: g=e^((n*pi-pi*2))\n```\n\nBut there doesn't seem to be an easy (i.e. not via `fast_callable`) way to access the underlying expression tree.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9329\n\n",
     "created_at": "2010-06-24T13:03:40Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009329.json:
     "title": "Make it easy to access expression tree of a symbolic expression",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9329",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  rossk mforets slelievre
+CC:  rossk @mforets @slel
 
 
 ```
@@ -46,7 +46,7 @@ archive/issue_comments_087992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9329#issuecomment-87992",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_087993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9329#issuecomment-87993",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_087994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9329#issuecomment-87994",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_087995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9329#issuecomment-87995",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_087996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9329#issuecomment-87996",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_087997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9329#issuecomment-87997",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_087998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9329#issuecomment-87998",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_087999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9329#issuecomment-87999",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_088000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9329#issuecomment-88000",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_088001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9329#issuecomment-88001",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_088002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9329#issuecomment-88002",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_088003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9329#issuecomment-88003",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

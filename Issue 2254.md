@@ -3,7 +3,7 @@
 archive/issues_002254.json:
 ```json
 {
-    "body": "Assignee: was\n\nLinBox 1.1.5, is about to be released and  requires Givaro 3.2.10, itself about to be relased.\nRelease candidates can be found at \n\n[http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc0.tar.gz](http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc0.tar.gz)\n\nand\n\n[http://sage.math.washington.edu/home/pernet/givaro-3.2.10rc0.tar.gz](http://sage.math.washington.edu/home/pernet/givaro-3.2.10rc0.tar.gz)\n\nUpdate sage packages with these new releases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2254\n\n",
+    "body": "Assignee: @williamstein\n\nLinBox 1.1.5, is about to be released and  requires Givaro 3.2.10, itself about to be relased.\nRelease candidates can be found at \n\n[http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc0.tar.gz](http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc0.tar.gz)\n\nand\n\n[http://sage.math.washington.edu/home/pernet/givaro-3.2.10rc0.tar.gz](http://sage.math.washington.edu/home/pernet/givaro-3.2.10rc0.tar.gz)\n\nUpdate sage packages with these new releases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2254\n\n",
     "created_at": "2008-02-22T03:35:34Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_002254.json:
     "title": "Upgrade linbox and givaro spkg to upstream",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2254",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 LinBox 1.1.5, is about to be released and  requires Givaro 3.2.10, itself about to be relased.
 Release candidates can be found at 
@@ -46,7 +46,7 @@ archive/issue_comments_014927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14927",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_014928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14928",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -168,16 +168,16 @@ Michael
 archive/issue_comments_014930.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-02-22T18:50:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14930",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -191,7 +191,7 @@ archive/issue_comments_014931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14931",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_014932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14932",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_014933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14933",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 

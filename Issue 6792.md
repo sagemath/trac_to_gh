@@ -255,7 +255,7 @@ archive/issue_comments_055961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6792#issuecomment-55961",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_055962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6792#issuecomment-55962",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_055963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6792#issuecomment-55963",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -304,16 +304,16 @@ Same story as #6787, this time narrated in French.  See attached patch.
 archive/issue_comments_055964.json:
 ```json
 {
-    "body": "Changing assignee from tba to AlexGhitza.",
+    "body": "Changing assignee from tba to @aghitza.",
     "created_at": "2009-08-21T00:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6792#issuecomment-55964",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tba to AlexGhitza.
+Changing assignee from tba to @aghitza.
 
 
 
@@ -327,7 +327,7 @@ archive/issue_comments_055965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6792#issuecomment-55965",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002657.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI had an unnecessary and already wrong dependency on fplll for Debian.  I've attached a patch to fix this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2657\n\n",
+    "body": "Assignee: @timabbott\n\nI had an unnecessary and already wrong dependency on fplll for Debian.  I've attached a patch to fix this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2657\n\n",
     "created_at": "2008-03-24T01:26:18Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002657.json:
     "title": "[with patch; needs review] Debian package cleanups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2657",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I had an unnecessary and already wrong dependency on fplll for Debian.  I've attached a patch to fix this.
 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2657
 archive/issue_comments_018289.json:
 ```json
 {
-    "body": "Attachment [fplll.patch](tarball://root/attachments/some-uuid/ticket2657/fplll.patch) by tabbott created at 2008-03-24 01:27:03",
+    "body": "Attachment [fplll.patch](tarball://root/attachments/some-uuid/ticket2657/fplll.patch) by @timabbott created at 2008-03-24 01:27:03",
     "created_at": "2008-03-24T01:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2657#issuecomment-18289",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [fplll.patch](tarball://root/attachments/some-uuid/ticket2657/fplll.patch) by tabbott created at 2008-03-24 01:27:03
+Attachment [fplll.patch](tarball://root/attachments/some-uuid/ticket2657/fplll.patch) by @timabbott created at 2008-03-24 01:27:03
 
 
 

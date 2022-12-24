@@ -3,7 +3,7 @@
 archive/issues_000981.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nCC:  sage-combinat\n\nthere is a bug in the module permgroup.py, at line 1226,\nthe method conjugacy_classes_subgroups calls PermutationGroupElement;\nI think it should be PermutationGroup.\nreported by Biel\n\nIssue created by migration from https://trac.sagemath.org/ticket/981\n\n",
+    "body": "Assignee: @wdjoyner\n\nCC:  sage-combinat\n\nthere is a bug in the module permgroup.py, at line 1226,\nthe method conjugacy_classes_subgroups calls PermutationGroupElement;\nI think it should be PermutationGroup.\nreported by Biel\n\nIssue created by migration from https://trac.sagemath.org/ticket/981\n\n",
     "created_at": "2007-10-24T14:16:00Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000981.json:
     "title": "bug in the method conjugacy_classes_subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/981",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 CC:  sage-combinat
 
@@ -42,7 +42,7 @@ archive/issue_comments_006006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/981#issuecomment-6006",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_006007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/981#issuecomment-6007",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_006008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/981#issuecomment-6008",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

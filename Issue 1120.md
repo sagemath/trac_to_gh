@@ -3,7 +3,7 @@
 archive/issues_001120.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf possible #E is computed over the prime subfield now.\n\n\n```\nsage: EllipticCurve(GF(4,'a'),[1,2,3,4,5]).cardinality()\n8\nsage: k.<a> = GF(3^3)\nsage: l = [a^2 + 1, 2*a^2 + 2*a + 1, a^2 + a + 1, 2, 2*a]\nsage: EllipticCurve(k,l).cardinality()\nWARNING: Using very very stupid algorithm for counting\npoints over non-prime finite field. Please rewrite.\nSee the file ell_finite_field.py.\n29\n\nsage: l = [1, 1, 0, 2, 0]\nsage: EllipticCurve(k,l).cardinality()\n38\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1120\n\n",
+    "body": "Assignee: @williamstein\n\nIf possible #E is computed over the prime subfield now.\n\n\n```\nsage: EllipticCurve(GF(4,'a'),[1,2,3,4,5]).cardinality()\n8\nsage: k.<a> = GF(3^3)\nsage: l = [a^2 + 1, 2*a^2 + 2*a + 1, a^2 + a + 1, 2, 2*a]\nsage: EllipticCurve(k,l).cardinality()\nWARNING: Using very very stupid algorithm for counting\npoints over non-prime finite field. Please rewrite.\nSee the file ell_finite_field.py.\n29\n\nsage: l = [1, 1, 0, 2, 0]\nsage: EllipticCurve(k,l).cardinality()\n38\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1120\n\n",
     "created_at": "2007-11-07T15:51:26Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001120.json:
     "title": "[with patch] speed up point counting for elliptic curves over GF(p^n) if coefficients are in GF(p)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1120",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If possible #E is computed over the prime subfield now.
 
@@ -73,7 +73,7 @@ archive/issue_comments_006769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1120",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1120#issuecomment-6769",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

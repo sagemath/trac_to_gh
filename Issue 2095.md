@@ -3,7 +3,7 @@
 archive/issues_002095.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: plot(arcsin(sin(x)))\n```\n\n\nplots a straight line.\n\n\n```\nsage: x/x\n1\n```\n\n\n\n\n```\nsage: assume(x<0)\nsage: sqrt(x)^2\nx\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2095\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: plot(arcsin(sin(x)))\n```\n\n\nplots a straight line.\n\n\n```\nsage: x/x\n1\n```\n\n\n\n\n```\nsage: assume(x<0)\nsage: sqrt(x)^2\nx\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2095\n\n",
     "created_at": "2008-02-08T01:36:44Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002095.json:
     "title": "Simplification sometimes is wrong in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2095",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -60,7 +60,7 @@ archive/issue_comments_013556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2095#issuecomment-13556",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_013557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2095#issuecomment-13557",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_013558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2095#issuecomment-13558",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -142,16 +142,16 @@ Changing status from new to assigned.
 archive/issue_comments_013559.json:
 ```json
 {
-    "body": "Changing assignee from was to gfurnish.",
+    "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-16T20:10:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2095#issuecomment-13559",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was to gfurnish.
+Changing assignee from @williamstein to @garyfurnish.
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_013560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2095#issuecomment-13560",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_013561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2095#issuecomment-13561",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

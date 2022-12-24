@@ -3,7 +3,7 @@
 archive/issues_007887.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  roed\n\nWrapping zmod_poly directly should be much faster than the current implementation of Frac(GF(p)['t'])\n\nSee also #7585\n\nIssue created by migration from https://trac.sagemath.org/ticket/7887\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @roed314\n\nWrapping zmod_poly directly should be much faster than the current implementation of Frac(GF(p)['t'])\n\nSee also #7585\n\nIssue created by migration from https://trac.sagemath.org/ticket/7887\n\n",
     "created_at": "2010-01-10T00:10:13Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007887.json:
     "title": "Fast function field arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7887",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  roed
+CC:  @roed314
 
 Wrapping zmod_poly directly should be much faster than the current implementation of Frac(GF(p)['t'])
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7887
 archive/issue_comments_068578.json:
 ```json
 {
-    "body": "Attachment [7887-FpT.patch](tarball://root/attachments/some-uuid/ticket7887/7887-FpT.patch) by robertwb created at 2010-01-10 00:13:04",
+    "body": "Attachment [7887-FpT.patch](tarball://root/attachments/some-uuid/ticket7887/7887-FpT.patch) by @robertwb created at 2010-01-10 00:13:04",
     "created_at": "2010-01-10T00:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7887#issuecomment-68578",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7887-FpT.patch](tarball://root/attachments/some-uuid/ticket7887/7887-FpT.patch) by robertwb created at 2010-01-10 00:13:04
+Attachment [7887-FpT.patch](tarball://root/attachments/some-uuid/ticket7887/7887-FpT.patch) by @robertwb created at 2010-01-10 00:13:04
 
 
 
@@ -54,16 +54,16 @@ Attachment [7887-FpT.patch](tarball://root/attachments/some-uuid/ticket7887/7887
 archive/issue_comments_068579.json:
 ```json
 {
-    "body": "Attachment [7887-FpT-update.patch](tarball://root/attachments/some-uuid/ticket7887/7887-FpT-update.patch) by robertwb created at 2010-01-10 00:13:43\n\napply on top of previous",
+    "body": "Attachment [7887-FpT-update.patch](tarball://root/attachments/some-uuid/ticket7887/7887-FpT-update.patch) by @robertwb created at 2010-01-10 00:13:43\n\napply on top of previous",
     "created_at": "2010-01-10T00:13:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7887#issuecomment-68579",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7887-FpT-update.patch](tarball://root/attachments/some-uuid/ticket7887/7887-FpT-update.patch) by robertwb created at 2010-01-10 00:13:43
+Attachment [7887-FpT-update.patch](tarball://root/attachments/some-uuid/ticket7887/7887-FpT-update.patch) by @robertwb created at 2010-01-10 00:13:43
 
 apply on top of previous
 
@@ -135,7 +135,7 @@ archive/issue_comments_068583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7887#issuecomment-68583",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_068584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7887#issuecomment-68584",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_068585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7887#issuecomment-68585",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

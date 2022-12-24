@@ -3,7 +3,7 @@
 archive/issues_009774.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  rishi\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9775\n\n",
+    "body": "Assignee: tbd\n\nCC:  @rishikesha\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9775\n\n",
     "created_at": "2010-08-21T17:57:45Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_009774.json:
     "title": "lcalc should make a .dll file on Cygwin instead of .so file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9774",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  rishi
+CC:  @rishikesha
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_095920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95920",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_095921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95921",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_095922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95922",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_095923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95923",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -106,16 +106,16 @@ SPKG patch of Mike's changes.
 archive/issue_comments_095924.json:
 ```json
 {
-    "body": "Attachment [trac_9775_spkg-lcalc_cygwin_dll.patch](tarball://root/attachments/some-uuid/ticket9775/trac_9775_spkg-lcalc_cygwin_dll.patch) by jdemeyer created at 2010-08-21 20:50:01\n\nThere is a small type in SPKG.txt: on line 29, you should replace \"lcalc-1.23.p2\" by \"lcalc-1.23.p3\"",
+    "body": "Attachment [trac_9775_spkg-lcalc_cygwin_dll.patch](tarball://root/attachments/some-uuid/ticket9775/trac_9775_spkg-lcalc_cygwin_dll.patch) by @jdemeyer created at 2010-08-21 20:50:01\n\nThere is a small type in SPKG.txt: on line 29, you should replace \"lcalc-1.23.p2\" by \"lcalc-1.23.p3\"",
     "created_at": "2010-08-21T20:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95924",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_9775_spkg-lcalc_cygwin_dll.patch](tarball://root/attachments/some-uuid/ticket9775/trac_9775_spkg-lcalc_cygwin_dll.patch) by jdemeyer created at 2010-08-21 20:50:01
+Attachment [trac_9775_spkg-lcalc_cygwin_dll.patch](tarball://root/attachments/some-uuid/ticket9775/trac_9775_spkg-lcalc_cygwin_dll.patch) by @jdemeyer created at 2010-08-21 20:50:01
 
 There is a small type in SPKG.txt: on line 29, you should replace "lcalc-1.23.p2" by "lcalc-1.23.p3"
 
@@ -131,7 +131,7 @@ archive/issue_comments_095925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95925",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_095926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95926",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_095927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95927",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_095928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95928",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_095929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95929",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

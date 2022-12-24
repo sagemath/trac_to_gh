@@ -14,7 +14,7 @@ archive/issues_005245.json:
     "title": "treat truncated HTML intelligently",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5245",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: boothby
@@ -60,7 +60,7 @@ archive/issue_comments_040212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5245#issuecomment-40212",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_040213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5245#issuecomment-40213",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

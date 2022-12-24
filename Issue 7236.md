@@ -3,7 +3,7 @@
 archive/issues_007236.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: partitions cell\n\nAfter a vote on `sage-combinat-devel`, see\n\n```\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/bd6dd9b316236f91\n```\n\nit was decided that in a partition diagramm a square should be called a cell. The following patch implement this choice.\n\nI also take the occasion to fix an indentation problem which prevents some doc to be correctly typeset.\n\nCheers,\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7236\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: partitions cell\n\nAfter a vote on `sage-combinat-devel`, see\n\n```\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/bd6dd9b316236f91\n```\n\nit was decided that in a partition diagramm a square should be called a cell. The following patch implement this choice.\n\nI also take the occasion to fix an indentation problem which prevents some doc to be correctly typeset.\n\nCheers,\n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7236\n\n",
     "created_at": "2009-10-17T20:38:04Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_007236.json:
     "title": "Partitions cleanup (box => cell + indentation fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7236",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -53,7 +53,7 @@ archive/issue_comments_060023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7236#issuecomment-60023",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_060024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7236#issuecomment-60024",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_060025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7236#issuecomment-60025",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_060026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7236#issuecomment-60026",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -123,16 +123,16 @@ I just reviewed your patch. Positive review up to the following points:
 archive/issue_comments_060027.json:
 ```json
 {
-    "body": "Attachment [trac_7236-partitions_tableaux_cells_cleanup-fh.patch](tarball://root/attachments/some-uuid/ticket7236/trac_7236-partitions_tableaux_cells_cleanup-fh.patch) by hivert created at 2009-10-18 15:20:37",
+    "body": "Attachment [trac_7236-partitions_tableaux_cells_cleanup-fh.patch](tarball://root/attachments/some-uuid/ticket7236/trac_7236-partitions_tableaux_cells_cleanup-fh.patch) by @hivert created at 2009-10-18 15:20:37",
     "created_at": "2009-10-18T15:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7236#issuecomment-60027",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7236-partitions_tableaux_cells_cleanup-fh.patch](tarball://root/attachments/some-uuid/ticket7236/trac_7236-partitions_tableaux_cells_cleanup-fh.patch) by hivert created at 2009-10-18 15:20:37
+Attachment [trac_7236-partitions_tableaux_cells_cleanup-fh.patch](tarball://root/attachments/some-uuid/ticket7236/trac_7236-partitions_tableaux_cells_cleanup-fh.patch) by @hivert created at 2009-10-18 15:20:37
 
 
 
@@ -146,7 +146,7 @@ archive/issue_comments_060028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7236#issuecomment-60028",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_060029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7236#issuecomment-60029",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_060030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7236#issuecomment-60030",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_060031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7236#issuecomment-60031",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_060032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7236#issuecomment-60032",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_060033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7236#issuecomment-60033",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_060034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7236#issuecomment-60034",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008540.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  robertwb mhansen\n\n\n```\nsage: a = 3/4\nsage: b = a^(-1/2)\nsage: b^2\n12\n```\n\n\nBut it should be 4/3.  \n\nReported by Paul Nelson, a grad student at Caltech.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8540\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robertwb @mwhansen\n\n\n```\nsage: a = 3/4\nsage: b = a^(-1/2)\nsage: b^2\n12\n```\n\n\nBut it should be 4/3.  \n\nReported by Paul Nelson, a grad student at Caltech.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8540\n\n",
     "created_at": "2010-03-15T05:17:30Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_008540.json:
     "title": "** BLOCKER ** very simple basic sqrt simplification totally broken bad",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8540",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  robertwb mhansen
+CC:  @robertwb @mwhansen
 
 
 ```
@@ -50,7 +50,7 @@ archive/issue_comments_077200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8540#issuecomment-77200",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_077201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8540#issuecomment-77201",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_077202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8540#issuecomment-77202",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_077203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8540#issuecomment-77203",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_077204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8540#issuecomment-77204",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -148,16 +148,16 @@ Changing status from new to needs_review.
 archive/issue_comments_077205.json:
 ```json
 {
-    "body": "Attachment [trac_8540-rational_power.patch](tarball://root/attachments/some-uuid/ticket8540/trac_8540-rational_power.patch) by burcin created at 2010-03-16 12:14:11\n\nattachment:trac_8540-rational_power.patch fixes the problem, please review.",
+    "body": "Attachment [trac_8540-rational_power.patch](tarball://root/attachments/some-uuid/ticket8540/trac_8540-rational_power.patch) by @burcin created at 2010-03-16 12:14:11\n\nattachment:trac_8540-rational_power.patch fixes the problem, please review.",
     "created_at": "2010-03-16T12:14:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8540#issuecomment-77205",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8540-rational_power.patch](tarball://root/attachments/some-uuid/ticket8540/trac_8540-rational_power.patch) by burcin created at 2010-03-16 12:14:11
+Attachment [trac_8540-rational_power.patch](tarball://root/attachments/some-uuid/ticket8540/trac_8540-rational_power.patch) by @burcin created at 2010-03-16 12:14:11
 
 attachment:trac_8540-rational_power.patch fixes the problem, please review.
 
@@ -173,7 +173,7 @@ archive/issue_comments_077206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8540#issuecomment-77206",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_077207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8540",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8540#issuecomment-77207",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

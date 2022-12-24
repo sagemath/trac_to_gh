@@ -14,7 +14,7 @@ archive/issues_009276.json:
     "title": "sage notebook: jsmath image fonts -- optional package -- breakage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9276",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -117,7 +117,7 @@ archive/issue_comments_087375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9276#issuecomment-87375",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_087376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9276#issuecomment-87376",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_087377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9276#issuecomment-87377",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_087378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9276#issuecomment-87378",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_087379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9276#issuecomment-87379",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

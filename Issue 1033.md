@@ -3,7 +3,7 @@
 archive/issues_001033.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: biopython\n\nBiopython 1.44 has been released.  An spkg is available at:\nhttp://www.d.umn.edu/~mhampton/biopython-1.44.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1033\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: biopython\n\nBiopython 1.44 has been released.  An spkg is available at:\nhttp://www.d.umn.edu/~mhampton/biopython-1.44.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1033\n\n",
     "created_at": "2007-10-30T01:04:22Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001033.json:
     "user": "mhampton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: biopython
 
@@ -40,7 +40,7 @@ archive/issue_comments_006316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1033#issuecomment-6316",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_006317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1033",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1033#issuecomment-6317",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

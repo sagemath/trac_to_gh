@@ -3,7 +3,7 @@
 archive/issues_007210.json:
 ```json
 {
-    "body": "Assignee: was\n\nMathematica has something called RevolutionPlot3D.  Maybe we should too.\n\n[http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html](http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7210\n\n",
+    "body": "Assignee: @williamstein\n\nMathematica has something called RevolutionPlot3D.  Maybe we should too.\n\n[http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html](http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7210\n\n",
     "created_at": "2009-10-14T16:57:23Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_007210.json:
     "title": "Make revolution plot 3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7210",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Mathematica has something called RevolutionPlot3D.  Maybe we should too.
 

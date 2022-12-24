@@ -14,7 +14,7 @@ archive/issues_001981.json:
     "title": "NTL fails to build with DEB_BUILD_HARDENING=1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1981",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mabshoff
@@ -63,7 +63,7 @@ archive/issue_comments_012840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1981#issuecomment-12840",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_012841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1981#issuecomment-12841",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_012842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1981#issuecomment-12842",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_012843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1981#issuecomment-12843",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

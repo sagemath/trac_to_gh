@@ -3,7 +3,7 @@
 archive/issues_008685.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb kedlaya roed jpflori\n\nThe following should raise an error since f0 has a singularity at P  (and isn't necessarily 0 at all finite Weierstrass points):\n\n```\nsage: R.<x> = QQ['x']\nsage: H= HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(5,10)\nsage: HK = H.change_ring(K)\nsage: P = HK(1,0)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: Mfrob,forms=mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: f0 = forms[0]\nsage: f0(P[0],P[1])\n0\nsage: f0(x,K(0))\n0\n\n```\n\nIn fact, Sage seems to knows this...just not when the y-coordinate is 0 in the p-adic field. So, a coercion error?\n\n```\nsage: f0(x,0)\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\nZeroDivisionError: Rational division by zero\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8685\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @kedlaya @roed314 jpflori\n\nThe following should raise an error since f0 has a singularity at P  (and isn't necessarily 0 at all finite Weierstrass points):\n\n```\nsage: R.<x> = QQ['x']\nsage: H= HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(5,10)\nsage: HK = H.change_ring(K)\nsage: P = HK(1,0)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: Mfrob,forms=mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: f0 = forms[0]\nsage: f0(P[0],P[1])\n0\nsage: f0(x,K(0))\n0\n\n```\n\nIn fact, Sage seems to knows this...just not when the y-coordinate is 0 in the p-adic field. So, a coercion error?\n\n```\nsage: f0(x,0)\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\nZeroDivisionError: Rational division by zero\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8685\n\n",
     "created_at": "2010-04-14T06:20:29Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_008685.json:
     "title": "evaluation of Monsky-Washnitzer objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8685",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb kedlaya roed jpflori
+CC:  @robertwb @kedlaya @roed314 jpflori
 
 The following should raise an error since f0 has a singularity at P  (and isn't necessarily 0 at all finite Weierstrass points):
 
@@ -67,7 +67,7 @@ archive/issue_comments_079142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79142",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_079143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79143",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_079144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79144",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_079145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79145",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_079146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79146",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_079147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79147",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_079148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79148",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 

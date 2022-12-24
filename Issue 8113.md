@@ -3,7 +3,7 @@
 archive/issues_008113.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  drkirkby\n\nBuild will be 32 bit, even when SAGE64=\"yes\".\n\nThere is a simple patch coming up.\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8113\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  drkirkby\n\nBuild will be 32 bit, even when SAGE64=\"yes\".\n\nThere is a simple patch coming up.\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8113\n\n",
     "created_at": "2010-01-28T17:24:13Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008113.json:
     "title": "gd-2.0.35.p3 fails to build on Open Solaris x64 as 64 bit without setting CFLAGS=-64 globally",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8113",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  drkirkby
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8113
 archive/issue_comments_071230.json:
 ```json
 {
-    "body": "Attachment [gd-2.0.35.p4.patch](tarball://root/attachments/some-uuid/ticket8113/gd-2.0.35.p4.patch) by jsp created at 2010-01-28 17:36:59",
+    "body": "Attachment [gd-2.0.35.p4.patch](tarball://root/attachments/some-uuid/ticket8113/gd-2.0.35.p4.patch) by @jaapspies created at 2010-01-28 17:36:59",
     "created_at": "2010-01-28T17:36:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8113#issuecomment-71230",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [gd-2.0.35.p4.patch](tarball://root/attachments/some-uuid/ticket8113/gd-2.0.35.p4.patch) by jsp created at 2010-01-28 17:36:59
+Attachment [gd-2.0.35.p4.patch](tarball://root/attachments/some-uuid/ticket8113/gd-2.0.35.p4.patch) by @jaapspies created at 2010-01-28 17:36:59
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_071231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8113#issuecomment-71231",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_071232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8113#issuecomment-71232",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_071233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8113#issuecomment-71233",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_071236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8113",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8113#issuecomment-71236",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

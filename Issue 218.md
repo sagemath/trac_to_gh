@@ -3,7 +3,7 @@
 archive/issues_000218.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/218\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/218\n\n",
     "created_at": "2007-01-25T18:59:37Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000218.json:
     "title": "optimize/implement matrix multimodular algorithms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/218",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_000980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/218",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/218#issuecomment-980",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

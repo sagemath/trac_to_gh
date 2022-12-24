@@ -3,7 +3,7 @@
 archive/issues_007308.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  dkirkby was\n\nKeywords: cliquer\n\nThe section where SAGESOFLAGS are set assumes that the operating system is Linux, OS X, or Solaris.  The spkg-install script exists even if SAGE_PORT is set to yes.\n\n\nI'll post a patch and a new SPKG here shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7308\n\n",
+    "body": "Assignee: tbd\n\nCC:  dkirkby @williamstein\n\nKeywords: cliquer\n\nThe section where SAGESOFLAGS are set assumes that the operating system is Linux, OS X, or Solaris.  The spkg-install script exists even if SAGE_PORT is set to yes.\n\n\nI'll post a patch and a new SPKG here shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7308\n\n",
     "created_at": "2009-10-26T09:23:36Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_007308.json:
     "title": "cliquer's spkg-install does not work on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7308",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  dkirkby was
+CC:  dkirkby @williamstein
 
 Keywords: cliquer
 
@@ -44,7 +44,7 @@ archive/issue_comments_061028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61028",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,16 +57,16 @@ Changing status from new to needs_review.
 archive/issue_comments_061029.json:
 ```json
 {
-    "body": "Attachment [trac_7308.patch](tarball://root/attachments/some-uuid/ticket7308/trac_7308.patch) by mhansen created at 2009-10-27 13:49:28",
+    "body": "Attachment [trac_7308.patch](tarball://root/attachments/some-uuid/ticket7308/trac_7308.patch) by @mwhansen created at 2009-10-27 13:49:28",
     "created_at": "2009-10-27T13:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61029",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7308.patch](tarball://root/attachments/some-uuid/ticket7308/trac_7308.patch) by mhansen created at 2009-10-27 13:49:28
+Attachment [trac_7308.patch](tarball://root/attachments/some-uuid/ticket7308/trac_7308.patch) by @mwhansen created at 2009-10-27 13:49:28
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_061031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61031",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_061032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61032",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_061033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61033",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_061034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61034",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_061035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61035",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_061036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61036",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_061037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61037",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

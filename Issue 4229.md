@@ -3,7 +3,7 @@
 archive/issues_004229.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jdemeyer\n\nMPFR has fast implementations for restricted types of arguments in some special functions, e.g. Bessel J and Y with integer order and positive real argument.  We should be using these instead of Pari or Maxima or Scipy whenever that is feasible.\n\nExample:\n\n\n```\nsage: a = RR(2)\nsage: timeit(\"bessel_J(1, a)\")\n625 loops, best of 3: 370 \u00b5s per loop\nsage: timeit(\"a.j1()\")\n625 loops, best of 3: 13.9 \u00b5s per loop\n```\n\n\nThat's 26 times faster than Pari.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4229\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jdemeyer\n\nMPFR has fast implementations for restricted types of arguments in some special functions, e.g. Bessel J and Y with integer order and positive real argument.  We should be using these instead of Pari or Maxima or Scipy whenever that is feasible.\n\nExample:\n\n\n```\nsage: a = RR(2)\nsage: timeit(\"bessel_J(1, a)\")\n625 loops, best of 3: 370 \u00b5s per loop\nsage: timeit(\"a.j1()\")\n625 loops, best of 3: 13.9 \u00b5s per loop\n```\n\n\nThat's 26 times faster than Pari.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4229\n\n",
     "created_at": "2008-10-01T09:55:56Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_004229.json:
     "title": "special functions should use mpfr when available",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4229",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 MPFR has fast implementations for restricted types of arguments in some special functions, e.g. Bessel J and Y with integer order and positive real argument.  We should be using these instead of Pari or Maxima or Scipy whenever that is feasible.
 
@@ -53,7 +53,7 @@ archive/issue_comments_030734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30734",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_030735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30735",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_030736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30736",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_030737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30737",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_030738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30738",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_030739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30739",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_030740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30740",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_030741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30741",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

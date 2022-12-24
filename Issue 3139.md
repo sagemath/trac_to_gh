@@ -14,7 +14,7 @@ archive/issues_003139.json:
     "title": "typos in notebook tutorial in typesetting of sage_notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3139",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -44,7 +44,7 @@ archive/issue_comments_021795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3139#issuecomment-21795",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_021796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3139#issuecomment-21796",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

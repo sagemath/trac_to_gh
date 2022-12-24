@@ -3,7 +3,7 @@
 archive/issues_004313.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\nKeywords: eclib CremonaModularSymbols\n\nThe attached patch (based on 3.1.4) makes two changes in libs/cremona/mat*:\n1. Adds getitem methods to the matric class so i,j entries may be extracted;\n2. Changes the conversion to sage of matrices so that matrices over ZZ are constructed instead of ZZ.\n\nThese were done as part of a hands-on tutorial William gave to John in Bordeaux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4313\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nKeywords: eclib CremonaModularSymbols\n\nThe attached patch (based on 3.1.4) makes two changes in libs/cremona/mat*:\n1. Adds getitem methods to the matric class so i,j entries may be extracted;\n2. Changes the conversion to sage of matrices so that matrices over ZZ are constructed instead of ZZ.\n\nThese were done as part of a hands-on tutorial William gave to John in Bordeaux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4313\n\n",
     "created_at": "2008-10-17T17:11:47Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_004313.json:
     "title": "Add some functionality to matrices in eclib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4313",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 Keywords: eclib CremonaModularSymbols
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4313
 archive/issue_comments_031578.json:
 ```json
 {
-    "body": "Attachment [sage-cremona-matrices.patch](tarball://root/attachments/some-uuid/ticket4313/sage-cremona-matrices.patch) by cremona created at 2008-10-17 17:12:10",
+    "body": "Attachment [sage-cremona-matrices.patch](tarball://root/attachments/some-uuid/ticket4313/sage-cremona-matrices.patch) by @JohnCremona created at 2008-10-17 17:12:10",
     "created_at": "2008-10-17T17:12:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4313#issuecomment-31578",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-cremona-matrices.patch](tarball://root/attachments/some-uuid/ticket4313/sage-cremona-matrices.patch) by cremona created at 2008-10-17 17:12:10
+Attachment [sage-cremona-matrices.patch](tarball://root/attachments/some-uuid/ticket4313/sage-cremona-matrices.patch) by @JohnCremona created at 2008-10-17 17:12:10
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_031579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4313#issuecomment-31579",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -78,16 +78,16 @@ Code looks good. Only thing needed are some doctests on `__getitem__` in `mat.py
 archive/issue_comments_031580.json:
 ```json
 {
-    "body": "Attachment [sage-cremona-matrices.2.patch](tarball://root/attachments/some-uuid/ticket4313/sage-cremona-matrices.2.patch) by cremona created at 2009-05-30 15:42:07\n\nReplace previous one with this",
+    "body": "Attachment [sage-cremona-matrices.2.patch](tarball://root/attachments/some-uuid/ticket4313/sage-cremona-matrices.2.patch) by @JohnCremona created at 2009-05-30 15:42:07\n\nReplace previous one with this",
     "created_at": "2009-05-30T15:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4313#issuecomment-31580",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-cremona-matrices.2.patch](tarball://root/attachments/some-uuid/ticket4313/sage-cremona-matrices.2.patch) by cremona created at 2009-05-30 15:42:07
+Attachment [sage-cremona-matrices.2.patch](tarball://root/attachments/some-uuid/ticket4313/sage-cremona-matrices.2.patch) by @JohnCremona created at 2009-05-30 15:42:07
 
 Replace previous one with this
 
@@ -103,7 +103,7 @@ archive/issue_comments_031581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4313#issuecomment-31581",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_031582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4313#issuecomment-31582",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

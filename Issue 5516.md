@@ -14,7 +14,7 @@ archive/issues_005516.json:
     "title": "gmp-mpir-0.9: build failure inside kvm 64 bit virtual machine",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5516",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 Assignee: mabshoff
@@ -83,7 +83,7 @@ archive/issue_comments_042875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5516#issuecomment-42875",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_042876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5516#issuecomment-42876",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 

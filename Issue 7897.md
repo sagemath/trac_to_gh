@@ -3,7 +3,7 @@
 archive/issues_007897.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: Macaulay2, interface\n\nThese patches change the prompt detection/stripping and update doctests to cause no errors with Macaulay2 1.3.1.\n\nImprovements/fixes achieved:\n- examples in Macaulay2 documentation (which include input prompts) do not break the interaction with Sage;\n- empty/whitespace/comment lines can be executed;\n- multiline commands can be executed;\n- stripping output prompts will not cut error messages if they occur (e.g. the first call \"help Thing\" currently shows some errors in Macaulay2).\n\nThis is done by:\n- changing input and input continuation prompts;\n- starting with a big line number to make all output labels of the same width;\n- making sure that only output labels and spaces are stripped from the output.\n\nSide effects / Remaining issues:\n- \"restart\" command of Macaulay2 is handled separately when it is called like \"macaulay2.restart()\" since we need to repeat prompt adjustments;\n- this command cannot be used in the string code passed to Macaulay2, since it will cause a lock. Since this should not cause loss of data (if the user intentionally tried to restart Macaulay2), I think this is OK. Correct checking of all the code for \"restart\" in it would involve also checking if it is inside string constants. \n\nThese patches make tickets #7882 and #7888 unnecessary.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7897\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: Macaulay2, interface\n\nThese patches change the prompt detection/stripping and update doctests to cause no errors with Macaulay2 1.3.1.\n\nImprovements/fixes achieved:\n- examples in Macaulay2 documentation (which include input prompts) do not break the interaction with Sage;\n- empty/whitespace/comment lines can be executed;\n- multiline commands can be executed;\n- stripping output prompts will not cut error messages if they occur (e.g. the first call \"help Thing\" currently shows some errors in Macaulay2).\n\nThis is done by:\n- changing input and input continuation prompts;\n- starting with a big line number to make all output labels of the same width;\n- making sure that only output labels and spaces are stripped from the output.\n\nSide effects / Remaining issues:\n- \"restart\" command of Macaulay2 is handled separately when it is called like \"macaulay2.restart()\" since we need to repeat prompt adjustments;\n- this command cannot be used in the string code passed to Macaulay2, since it will cause a lock. Since this should not cause loss of data (if the user intentionally tried to restart Macaulay2), I think this is OK. Correct checking of all the code for \"restart\" in it would involve also checking if it is inside string constants. \n\nThese patches make tickets #7882 and #7888 unnecessary.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7897\n\n",
     "created_at": "2010-01-11T20:53:30Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_007897.json:
     "title": "Macaulay2 interface update/improvement for version 1.3.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7897",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: Macaulay2, interface
 
@@ -56,7 +56,7 @@ archive/issue_comments_068683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7897#issuecomment-68683",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_068684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7897#issuecomment-68684",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -87,16 +87,16 @@ I changed my mind about importance of "restart" command in the middle of the cod
 archive/issue_comments_068685.json:
 ```json
 {
-    "body": "Attachment [trac_7897_macaulay2_doctests_update.patch](tarball://root/attachments/some-uuid/ticket7897/trac_7897_macaulay2_doctests_update.patch) by novoselt created at 2010-02-01 04:36:00",
+    "body": "Attachment [trac_7897_macaulay2_doctests_update.patch](tarball://root/attachments/some-uuid/ticket7897/trac_7897_macaulay2_doctests_update.patch) by @novoselt created at 2010-02-01 04:36:00",
     "created_at": "2010-02-01T04:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7897#issuecomment-68685",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_7897_macaulay2_doctests_update.patch](tarball://root/attachments/some-uuid/ticket7897/trac_7897_macaulay2_doctests_update.patch) by novoselt created at 2010-02-01 04:36:00
+Attachment [trac_7897_macaulay2_doctests_update.patch](tarball://root/attachments/some-uuid/ticket7897/trac_7897_macaulay2_doctests_update.patch) by @novoselt created at 2010-02-01 04:36:00
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_068686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7897#issuecomment-68686",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_068687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7897#issuecomment-68687",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_068688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7897#issuecomment-68688",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_068689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7897#issuecomment-68689",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_068690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7897#issuecomment-68690",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

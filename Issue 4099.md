@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4099
 archive/issue_comments_029577.json:
 ```json
 {
-    "body": "Attachment [4099.patch](tarball://root/attachments/some-uuid/ticket4099/4099.patch) by jwmerrill created at 2008-09-14 02:56:21\n\nThe patch just nukes all mention of .options and .reset.  So far as I can tell, this functionality is gone without replacement.  If there is now some other way to learn what these attributes used to tell you, then this patch should probably not be accepted, and the doc should be rewritten to explain the new functionality.",
+    "body": "Attachment [4099.patch](tarball://root/attachments/some-uuid/ticket4099/4099.patch) by @jicama created at 2008-09-14 02:56:21\n\nThe patch just nukes all mention of .options and .reset.  So far as I can tell, this functionality is gone without replacement.  If there is now some other way to learn what these attributes used to tell you, then this patch should probably not be accepted, and the doc should be rewritten to explain the new functionality.",
     "created_at": "2008-09-14T02:56:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4099#issuecomment-29577",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Attachment [4099.patch](tarball://root/attachments/some-uuid/ticket4099/4099.patch) by jwmerrill created at 2008-09-14 02:56:21
+Attachment [4099.patch](tarball://root/attachments/some-uuid/ticket4099/4099.patch) by @jicama created at 2008-09-14 02:56:21
 
 The patch just nukes all mention of .options and .reset.  So far as I can tell, this functionality is gone without replacement.  If there is now some other way to learn what these attributes used to tell you, then this patch should probably not be accepted, and the doc should be rewritten to explain the new functionality.
 
@@ -56,16 +56,16 @@ The patch just nukes all mention of .options and .reset.  So far as I can tell, 
 archive/issue_comments_029578.json:
 ```json
 {
-    "body": "Changing assignee from tba to jwmerrill.",
+    "body": "Changing assignee from tba to @jicama.",
     "created_at": "2008-09-14T02:56:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4099#issuecomment-29578",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Changing assignee from tba to jwmerrill.
+Changing assignee from tba to @jicama.
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_029579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4099#issuecomment-29579",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

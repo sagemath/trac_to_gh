@@ -14,7 +14,7 @@ archive/issues_003758.json:
     "title": "crypto --   sage -t -long devel/sage/sage/crypto/mq/sr.py  fails on many machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3758",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -72,7 +72,7 @@ archive/issue_comments_026691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3758#issuecomment-26691",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_026692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3758#issuecomment-26692",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_026695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3758#issuecomment-26695",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

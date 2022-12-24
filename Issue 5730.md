@@ -14,7 +14,7 @@ archive/issues_005730.json:
     "title": "Add a line to the output of \"sage -coverage .\" which lists how many more tests are needed to get to 75% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5730",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5730
 archive/issue_comments_044770.json:
 ```json
 {
-    "body": "Attachment [trac_5730.patch](tarball://root/attachments/some-uuid/ticket5730/trac_5730.patch) by was created at 2009-04-10 01:40:37",
+    "body": "Attachment [trac_5730.patch](tarball://root/attachments/some-uuid/ticket5730/trac_5730.patch) by @williamstein created at 2009-04-10 01:40:37",
     "created_at": "2009-04-10T01:40:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5730#issuecomment-44770",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5730.patch](tarball://root/attachments/some-uuid/ticket5730/trac_5730.patch) by was created at 2009-04-10 01:40:37
+Attachment [trac_5730.patch](tarball://root/attachments/some-uuid/ticket5730/trac_5730.patch) by @williamstein created at 2009-04-10 01:40:37
 
 
 

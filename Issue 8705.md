@@ -3,7 +3,7 @@
 archive/issues_008705.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  nthiery\n\nTitle says all\n\nIssue created by migration from https://trac.sagemath.org/ticket/8705\n\n",
+    "body": "Assignee: @hivert\n\nCC:  @nthiery\n\nTitle says all\n\nIssue created by migration from https://trac.sagemath.org/ticket/8705\n\n",
     "created_at": "2010-04-17T16:14:49Z",
     "labels": [
         "categories",
@@ -14,12 +14,12 @@ archive/issues_008705.json:
     "title": "Add sage_unittest to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8705",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
-CC:  nthiery
+CC:  @nthiery
 
 Title says all
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8705
 archive/issue_comments_079404.json:
 ```json
 {
-    "body": "Attachment [trac_8705-unittest_refman-fh.patch](tarball://root/attachments/some-uuid/ticket8705/trac_8705-unittest_refman-fh.patch) by hivert created at 2010-04-17 16:56:17",
+    "body": "Attachment [trac_8705-unittest_refman-fh.patch](tarball://root/attachments/some-uuid/ticket8705/trac_8705-unittest_refman-fh.patch) by @hivert created at 2010-04-17 16:56:17",
     "created_at": "2010-04-17T16:56:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8705#issuecomment-79404",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8705-unittest_refman-fh.patch](tarball://root/attachments/some-uuid/ticket8705/trac_8705-unittest_refman-fh.patch) by hivert created at 2010-04-17 16:56:17
+Attachment [trac_8705-unittest_refman-fh.patch](tarball://root/attachments/some-uuid/ticket8705/trac_8705-unittest_refman-fh.patch) by @hivert created at 2010-04-17 16:56:17
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_079405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8705#issuecomment-79405",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_079406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8705#issuecomment-79406",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_079407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8705#issuecomment-79407",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_079408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8705#issuecomment-79408",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_079409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8705#issuecomment-79409",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_079410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8705#issuecomment-79410",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_079411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8705#issuecomment-79411",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

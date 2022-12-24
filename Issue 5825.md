@@ -3,7 +3,7 @@
 archive/issues_005825.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jhpalmieri\n\nI just ran into the following:\n\n```\n<SNIP>\n**********************************************************************\n* Unable to download clisp-2.47\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\n/Users/mabshoff/sage-3.3.rc3/spkg/build\nbunzip2: Can't open input file clisp-2.47.spkg: No such file or directory.\ntar: clisp-2.47.spkg: Cannot open: No such file or directory\ntar: Error is not recoverable: exiting now\nSecond download resulted in a corrupted package.\nvarro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ file /home/mabshoff/clisp-2.47.spkg \n/home/mabshoff/clisp-2.47.spkg: bzip2 compressed data, block size = 900k\nvarro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ cp /home/mabshoff/clisp-2.47.spkg .\ncp: ./clisp-2.47.spkg: Permission denied\n```\n\n\nNote that I do not have write permissions in the local directory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5825\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri\n\nI just ran into the following:\n\n```\n<SNIP>\n**********************************************************************\n* Unable to download clisp-2.47\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\n/Users/mabshoff/sage-3.3.rc3/spkg/build\nbunzip2: Can't open input file clisp-2.47.spkg: No such file or directory.\ntar: clisp-2.47.spkg: Cannot open: No such file or directory\ntar: Error is not recoverable: exiting now\nSecond download resulted in a corrupted package.\nvarro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ file /home/mabshoff/clisp-2.47.spkg \n/home/mabshoff/clisp-2.47.spkg: bzip2 compressed data, block size = 900k\nvarro:/Users/mabshoff/sage-3.3.rc3 mabshoff$ cp /home/mabshoff/clisp-2.47.spkg .\ncp: ./clisp-2.47.spkg: Permission denied\n```\n\n\nNote that I do not have write permissions in the local directory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5825\n\n",
     "created_at": "2009-04-20T01:07:19Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_005825.json:
 ```
 Assignee: mabshoff
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 I just ran into the following:
 
@@ -60,7 +60,7 @@ archive/issue_comments_045788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5825#issuecomment-45788",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_045789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5825#issuecomment-45789",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_045790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5825#issuecomment-45790",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -133,16 +133,16 @@ Error: no write access to build directory /Users/palmieri/Desktop/Sage_stuff/sag
 archive/issue_comments_045791.json:
 ```json
 {
-    "body": "Attachment [5825_install_perm.patch](tarball://root/attachments/some-uuid/ticket5825/5825_install_perm.patch) by jdemeyer created at 2013-05-22 08:47:36\n\nOK, fixed.",
+    "body": "Attachment [5825_install_perm.patch](tarball://root/attachments/some-uuid/ticket5825/5825_install_perm.patch) by @jdemeyer created at 2013-05-22 08:47:36\n\nOK, fixed.",
     "created_at": "2013-05-22T08:47:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5825#issuecomment-45791",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [5825_install_perm.patch](tarball://root/attachments/some-uuid/ticket5825/5825_install_perm.patch) by jdemeyer created at 2013-05-22 08:47:36
+Attachment [5825_install_perm.patch](tarball://root/attachments/some-uuid/ticket5825/5825_install_perm.patch) by @jdemeyer created at 2013-05-22 08:47:36
 
 OK, fixed.
 
@@ -158,7 +158,7 @@ archive/issue_comments_045792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5825#issuecomment-45792",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_045793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5825#issuecomment-45793",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_045794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5825#issuecomment-45794",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

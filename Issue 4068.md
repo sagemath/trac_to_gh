@@ -3,7 +3,7 @@
 archive/issues_004068.json:
 ```json
 {
-    "body": "Assignee: malb\n\nphil <fongpwf__AT__gmail.com> wrote on [sage-devel]\n> I have a matrix that is composed of multivariant polynomial\n> entries.  I want to compute its determinant.  The problem is that it\n> is very slow or runs out of memory.  For example,\n> R.<x,y> = QQ[]\n> C = random_matrix(R,10,10)\n> Cdet = C.determinant()   # this line takes a long time\n\nIf you have more variables, it will run out of memory instead (on a 32\nbit installation).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4068\n\n",
+    "body": "Assignee: @malb\n\nphil <fongpwf__AT__gmail.com> wrote on [sage-devel]\n> I have a matrix that is composed of multivariant polynomial\n> entries.  I want to compute its determinant.  The problem is that it\n> is very slow or runs out of memory.  For example,\n> R.<x,y> = QQ[]\n> C = random_matrix(R,10,10)\n> Cdet = C.determinant()   # this line takes a long time\n\nIf you have more variables, it will run out of memory instead (on a 32\nbit installation).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4068\n\n",
     "created_at": "2008-09-05T17:16:22Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004068.json:
     "title": "determinants for matrices over multivariate polynomial rings slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4068",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 phil <fongpwf__AT__gmail.com> wrote on [sage-devel]
 > I have a matrix that is composed of multivariant polynomial
@@ -46,7 +46,7 @@ archive/issue_comments_029355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4068#issuecomment-29355",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -86,16 +86,16 @@ So we need to call Singular instead of using the native code.
 archive/issue_comments_029356.json:
 ```json
 {
-    "body": "Attachment [matrix_mpoly_det.patch](tarball://root/attachments/some-uuid/ticket4068/matrix_mpoly_det.patch) by malb created at 2008-09-05 19:20:48",
+    "body": "Attachment [matrix_mpoly_det.patch](tarball://root/attachments/some-uuid/ticket4068/matrix_mpoly_det.patch) by @malb created at 2008-09-05 19:20:48",
     "created_at": "2008-09-05T19:20:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4068#issuecomment-29356",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [matrix_mpoly_det.patch](tarball://root/attachments/some-uuid/ticket4068/matrix_mpoly_det.patch) by malb created at 2008-09-05 19:20:48
+Attachment [matrix_mpoly_det.patch](tarball://root/attachments/some-uuid/ticket4068/matrix_mpoly_det.patch) by @malb created at 2008-09-05 19:20:48
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_029357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4068#issuecomment-29357",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

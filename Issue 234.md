@@ -3,7 +3,7 @@
 archive/issues_000234.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere is an amazing program called Lie for computing with compact Lie groups.\nIt's available as an optional sage package, e.g., \n\n```\n   sage -i lie-2.2\n```\n\n\n(But check to see if this is the latest version...)\n\nAnyway, for this project, research ways to make a SAGE <--> Lie interface.\nVia pexpect?  Via C library? ???\n\nIssue created by migration from https://trac.sagemath.org/ticket/234\n\n",
+    "body": "Assignee: @williamstein\n\nThere is an amazing program called Lie for computing with compact Lie groups.\nIt's available as an optional sage package, e.g., \n\n```\n   sage -i lie-2.2\n```\n\n\n(But check to see if this is the latest version...)\n\nAnyway, for this project, research ways to make a SAGE <--> Lie interface.\nVia pexpect?  Via C library? ???\n\nIssue created by migration from https://trac.sagemath.org/ticket/234\n\n",
     "created_at": "2007-01-30T19:47:12Z",
     "labels": [
         "packages: standard",
@@ -13,10 +13,10 @@ archive/issues_000234.json:
     "title": "Lie -- create a SAGE wrapper for computing with lie groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/234",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There is an amazing program called Lie for computing with compact Lie groups.
 It's available as an optional sage package, e.g., 

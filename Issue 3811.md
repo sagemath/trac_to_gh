@@ -3,7 +3,7 @@
 archive/issues_003811.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: number field comparison cmp\n\nThe doctests describe it best, but it was the case that\n\n\n```\nsage: NumberField(ZZ['x'].0^4 + 23, 'a') == NumberField(ZZ['y'].0^4 + 23, 'a')\nTrue\nsage: NumberField(ZZ['x'].0^4 + 23, 'a') == NumberField(QQ['y'].0^4 + 23, 'a')\nFalse\nsage: NumberField(QQ['x'].0^4 + 23, 'a') == NumberField(QQ['y'].0^4 + 23, 'a')\nFalse\n```\n\n\nNot good.  The variable of the defining polynomial should not matter.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3811\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: number field comparison cmp\n\nThe doctests describe it best, but it was the case that\n\n\n```\nsage: NumberField(ZZ['x'].0^4 + 23, 'a') == NumberField(ZZ['y'].0^4 + 23, 'a')\nTrue\nsage: NumberField(ZZ['x'].0^4 + 23, 'a') == NumberField(QQ['y'].0^4 + 23, 'a')\nFalse\nsage: NumberField(QQ['x'].0^4 + 23, 'a') == NumberField(QQ['y'].0^4 + 23, 'a')\nFalse\n```\n\n\nNot good.  The variable of the defining polynomial should not matter.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3811\n\n",
     "created_at": "2008-08-12T05:06:52Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003811.json:
     "title": "number fields in different polynomials compare differently",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3811",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: number field comparison cmp
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3811
 archive/issue_comments_027089.json:
 ```json
 {
-    "body": "Attachment [3811-ncalexan-number-field-comparision.patch](tarball://root/attachments/some-uuid/ticket3811/3811-ncalexan-number-field-comparision.patch) by ncalexan created at 2008-08-12 05:07:27",
+    "body": "Attachment [3811-ncalexan-number-field-comparision.patch](tarball://root/attachments/some-uuid/ticket3811/3811-ncalexan-number-field-comparision.patch) by @ncalexan created at 2008-08-12 05:07:27",
     "created_at": "2008-08-12T05:07:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3811#issuecomment-27089",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3811-ncalexan-number-field-comparision.patch](tarball://root/attachments/some-uuid/ticket3811/3811-ncalexan-number-field-comparision.patch) by ncalexan created at 2008-08-12 05:07:27
+Attachment [3811-ncalexan-number-field-comparision.patch](tarball://root/attachments/some-uuid/ticket3811/3811-ncalexan-number-field-comparision.patch) by @ncalexan created at 2008-08-12 05:07:27
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_027090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3811",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3811#issuecomment-27090",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

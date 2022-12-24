@@ -3,7 +3,7 @@
 archive/issues_007338.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\nIt fails with \n\n\n```\n  Info: resolving vtable for std::basic_ofstream<char, std::char_traits<char> > by linking to __imp___ZTVSt14basic_ofstreamIcSt11char_traitsIcEE (auto-import/usr/lib/gcc/i686-pc-cygwin/4.3.2/../../../../i686-pc-cygwin/bin/ld: warning: auto-importing has been activated without --enable-auto-import specified on the command line.\n  This should work unless it involves constant data structures referencing symbols from auto-imported DLLs.Warning: .drectve `-defaultlib:uuid.lib ' unrecognized\n  Warning: .drectve `-defaultlib:uuid.lib ' unrecognized\n  Cannot export ??_C@_00A@?$AA@: symbol not found\n  Cannot export ?pHtmlHelpA@@3P6GPAUHWND__@@PAU1@PBDIK@ZA: symbol not found\n  Cannot export ?pHtmlHelpW@@3P6GPAUHWND__@@PAU1@PBGIK@ZA: symbol not found\n  collect2: ld returned 1 exit status\n  )\n  make[3]: *** [libsingular] Error 1\n  make[3]: Leaving directory `/home/mhansen/sage-4.2/spkg/build/singular-3-1-0-4-20090818.p1/src/Singular'\n  make[2]: *** [libsingular] Error 2\n  make[2]: Leaving directory `/home/mhansen/sage-4.2/spkg/build/singular-3-1-0-4-20090818.p1/src'\n  Unable to build Singular.\n```\n\n\nOne fix is to comment out the HtmlHelpA line from sing_win.cc\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7338\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nIt fails with \n\n\n```\n  Info: resolving vtable for std::basic_ofstream<char, std::char_traits<char> > by linking to __imp___ZTVSt14basic_ofstreamIcSt11char_traitsIcEE (auto-import/usr/lib/gcc/i686-pc-cygwin/4.3.2/../../../../i686-pc-cygwin/bin/ld: warning: auto-importing has been activated without --enable-auto-import specified on the command line.\n  This should work unless it involves constant data structures referencing symbols from auto-imported DLLs.Warning: .drectve `-defaultlib:uuid.lib ' unrecognized\n  Warning: .drectve `-defaultlib:uuid.lib ' unrecognized\n  Cannot export ??_C@_00A@?$AA@: symbol not found\n  Cannot export ?pHtmlHelpA@@3P6GPAUHWND__@@PAU1@PBDIK@ZA: symbol not found\n  Cannot export ?pHtmlHelpW@@3P6GPAUHWND__@@PAU1@PBGIK@ZA: symbol not found\n  collect2: ld returned 1 exit status\n  )\n  make[3]: *** [libsingular] Error 1\n  make[3]: Leaving directory `/home/mhansen/sage-4.2/spkg/build/singular-3-1-0-4-20090818.p1/src/Singular'\n  make[2]: *** [libsingular] Error 2\n  make[2]: Leaving directory `/home/mhansen/sage-4.2/spkg/build/singular-3-1-0-4-20090818.p1/src'\n  Unable to build Singular.\n```\n\n\nOne fix is to comment out the HtmlHelpA line from sing_win.cc\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7338\n\n",
     "created_at": "2009-10-28T19:39:08Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_007338.json:
     "title": "Singular fails to build on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7338",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 It fails with 
 
@@ -60,7 +60,7 @@ archive/issue_comments_061405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7338#issuecomment-61405",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_061406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7338#issuecomment-61406",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_061407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7338#issuecomment-61407",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_061408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7338#issuecomment-61408",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_061409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7338#issuecomment-61409",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_061410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7338#issuecomment-61410",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_061411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7338#issuecomment-61411",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_061412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7338#issuecomment-61412",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_061413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7338#issuecomment-61413",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_061416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7338#issuecomment-61416",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

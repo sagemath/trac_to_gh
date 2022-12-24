@@ -3,7 +3,7 @@
 archive/issues_002103.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  alexghitza craigcitro cremona m.t.aranes@warwick.ac.uk\n\nGiven a congruence subgroup G, return a list of representatives for the G-equivalence classes of cusps.\n\nSample wished-for session:\n\n\n```\nsage: C = Cusps\nsage: G = Gamma0(5)\nsage: C(G)\n[Infinity, 0]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2103\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  alexghitza @craigcitro @JohnCremona m.t.aranes@warwick.ac.uk\n\nGiven a congruence subgroup G, return a list of representatives for the G-equivalence classes of cusps.\n\nSample wished-for session:\n\n\n```\nsage: C = Cusps\nsage: G = Gamma0(5)\nsage: C(G)\n[Infinity, 0]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2103\n\n",
     "created_at": "2008-02-08T07:46:52Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_002103.json:
     "title": "equivalence classes of cusps for congruence subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2103",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  alexghitza craigcitro cremona m.t.aranes@warwick.ac.uk
+CC:  alexghitza @craigcitro @JohnCremona m.t.aranes@warwick.ac.uk
 
 Given a congruence subgroup G, return a list of representatives for the G-equivalence classes of cusps.
 
@@ -51,7 +51,7 @@ archive/issue_comments_013702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13702",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -64,16 +64,16 @@ I'd also like this. I'll have a go at it.
 archive/issue_comments_013703.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2008-09-21T18:27:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13703",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -82,16 +82,16 @@ Changing assignee from was to davidloeffler.
 archive/issue_comments_013704.json:
 ```json
 {
-    "body": "Attachment [2103.patch](tarball://root/attachments/some-uuid/ticket2103/2103.patch) by davidloeffler created at 2008-09-22 18:25:18\n\npatch against 3.1.2",
+    "body": "Attachment [2103.patch](tarball://root/attachments/some-uuid/ticket2103/2103.patch) by @loefflerd created at 2008-09-22 18:25:18\n\npatch against 3.1.2",
     "created_at": "2008-09-22T18:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13704",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [2103.patch](tarball://root/attachments/some-uuid/ticket2103/2103.patch) by davidloeffler created at 2008-09-22 18:25:18
+Attachment [2103.patch](tarball://root/attachments/some-uuid/ticket2103/2103.patch) by @loefflerd created at 2008-09-22 18:25:18
 
 patch against 3.1.2
 
@@ -107,7 +107,7 @@ archive/issue_comments_013705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13705",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_013706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13706",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_013708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13708",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -244,16 +244,16 @@ My guess is that the code for giving a complete set of cusp representatives is n
 archive/issue_comments_013709.json:
 ```json
 {
-    "body": "Attachment [2103-rebased.patch](tarball://root/attachments/some-uuid/ticket2103/2103-rebased.patch) by davidloeffler created at 2008-10-28 11:14:51\n\nrebased to 3.1.4 (also works in 3.2.alpha1)",
+    "body": "Attachment [2103-rebased.patch](tarball://root/attachments/some-uuid/ticket2103/2103-rebased.patch) by @loefflerd created at 2008-10-28 11:14:51\n\nrebased to 3.1.4 (also works in 3.2.alpha1)",
     "created_at": "2008-10-28T11:14:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13709",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [2103-rebased.patch](tarball://root/attachments/some-uuid/ticket2103/2103-rebased.patch) by davidloeffler created at 2008-10-28 11:14:51
+Attachment [2103-rebased.patch](tarball://root/attachments/some-uuid/ticket2103/2103-rebased.patch) by @loefflerd created at 2008-10-28 11:14:51
 
 rebased to 3.1.4 (also works in 3.2.alpha1)
 
@@ -269,7 +269,7 @@ archive/issue_comments_013710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13710",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_013711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13711",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -329,16 +329,16 @@ Michael
 archive/issue_comments_013713.json:
 ```json
 {
-    "body": "Attachment [2103-new.patch](tarball://root/attachments/some-uuid/ticket2103/2103-new.patch) by davidloeffler created at 2008-10-28 18:32:02",
+    "body": "Attachment [2103-new.patch](tarball://root/attachments/some-uuid/ticket2103/2103-new.patch) by @loefflerd created at 2008-10-28 18:32:02",
     "created_at": "2008-10-28T18:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13713",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [2103-new.patch](tarball://root/attachments/some-uuid/ticket2103/2103-new.patch) by davidloeffler created at 2008-10-28 18:32:02
+Attachment [2103-new.patch](tarball://root/attachments/some-uuid/ticket2103/2103-new.patch) by @loefflerd created at 2008-10-28 18:32:02
 
 
 
@@ -352,7 +352,7 @@ archive/issue_comments_013714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13714",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_013715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13715",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -383,16 +383,16 @@ Ok, I'm in the process of reviewing this -- I'll have it done in a little bit.
 archive/issue_comments_013716.json:
 ```json
 {
-    "body": "Attachment [trac-2103-pt2.patch](tarball://root/attachments/some-uuid/ticket2103/trac-2103-pt2.patch) by craigcitro created at 2008-10-29 09:41:52\n\nThis is an excellent patch. \n\nIn addition to adding the requested functionality, this patch performs some long-needed cleanup to the class hierarchy in `congroup.py`. In particular, `Gamma0` and `Gamma1` now inherit from `GammaH`, as makes sense. I should note that it might be a good project for someone to look at the code in `congroup.py`, and see how much of the code for `Gamma0` and `Gamma1` could be moved up to/unified with code in `GammaH`. \n\nI've added a small patch to apply on top of `2103-new.patch` which cleans up a few things. Most of it is documentation touch-ups. I replaced the `__cmp__` methods for `Gamma0` and `Gamma1` which the original patch removed, and rewrote them to do comparison without ever generating the corresponding lists of elements. \n\nSomeone should look over my additional patch, but after that, this is ready to go.",
+    "body": "Attachment [trac-2103-pt2.patch](tarball://root/attachments/some-uuid/ticket2103/trac-2103-pt2.patch) by @craigcitro created at 2008-10-29 09:41:52\n\nThis is an excellent patch. \n\nIn addition to adding the requested functionality, this patch performs some long-needed cleanup to the class hierarchy in `congroup.py`. In particular, `Gamma0` and `Gamma1` now inherit from `GammaH`, as makes sense. I should note that it might be a good project for someone to look at the code in `congroup.py`, and see how much of the code for `Gamma0` and `Gamma1` could be moved up to/unified with code in `GammaH`. \n\nI've added a small patch to apply on top of `2103-new.patch` which cleans up a few things. Most of it is documentation touch-ups. I replaced the `__cmp__` methods for `Gamma0` and `Gamma1` which the original patch removed, and rewrote them to do comparison without ever generating the corresponding lists of elements. \n\nSomeone should look over my additional patch, but after that, this is ready to go.",
     "created_at": "2008-10-29T09:41:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13716",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2103-pt2.patch](tarball://root/attachments/some-uuid/ticket2103/trac-2103-pt2.patch) by craigcitro created at 2008-10-29 09:41:52
+Attachment [trac-2103-pt2.patch](tarball://root/attachments/some-uuid/ticket2103/trac-2103-pt2.patch) by @craigcitro created at 2008-10-29 09:41:52
 
 This is an excellent patch. 
 
@@ -414,7 +414,7 @@ archive/issue_comments_013717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13717",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_013718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2103#issuecomment-13718",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

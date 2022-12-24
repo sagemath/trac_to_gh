@@ -3,7 +3,7 @@
 archive/issues_009663.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  was\n\nCurrently, Stirling numbers are computed by calling GAP. The patch provides fast Cython code for Stirling numbers of the second kind, and allows using GAP or Maxima as an optional algorithm.\n\nBy having less overhead, the Cython code is about 10000 times faster than GAP or Maxima for tiny inputs, and it remains much faster than GAP for larger inputs as well. Apparently Maxima uses a fast algorithm unlike GAP, but my code is still about twice as fast as Maxima for huge n due to an algorithmic optimization.\n\n\n```\nsage: %timeit stirling_number2(10,5)\n625 loops, best of 3: 2.33 \u00b5s per loop\nsage: %timeit stirling_number2(10,5,algorithm='gap')\n25 loops, best of 3: 20 ms per loop\nsage: %timeit stirling_number2(10,5,algorithm='maxima')\n5 loops, best of 3: 40 ms per loop\n\n625 loops, best of 3: 16.2 \u00b5s per loop\nsage: %timeit stirling_number2(100,50,algorithm='gap')\n25 loops, best of 3: 20 ms per loop\nsage: %timeit stirling_number2(100,50,algorithm='maxima')\n5 loops, best of 3: 40 ms per loop\n\nsage: %timeit stirling_number2(2000,1500)\n25 loops, best of 3: 35.9 ms per loop\nsage: %timeit stirling_number2(2000,1500,algorithm='gap')\n5 loops, best of 3: 348 ms per loop\nsage: %timeit stirling_number2(2000,1500,algorithm='maxima')\n5 loops, best of 3: 210 ms per loop\n\nsage: %timeit stirling_number2(4000,3000)\n5 loops, best of 3: 249 ms per loop\nsage: %timeit stirling_number2(4000,3000,algorithm='gap')\n5 loops, best of 3: 2.96 s per loop\nsage: %timeit stirling_number2(4000,3000,algorithm='maxima')\n5 loops, best of 3: 948 ms per loop\n\nsage: %time stirling_number2(20000,15000);\nCPU times: user 20.30 s, sys: 0.23 s, total: 20.53 s\nWall time: 21.82 s\nsage: %time stirling_number2(20000,15000,algorithm='maxima');\nCPU times: user 0.00 s, sys: 0.01 s, total: 0.01 s\nWall time: 51.90 s\n```\n\n\nMathematica seems to be about as slow as GAP (warning: timed on a different system):\n\n```\nIn[1]:= Timing[StirlingS2[4000,3000];]\nOut[1]= {27.1809, Null}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9663\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @williamstein\n\nCurrently, Stirling numbers are computed by calling GAP. The patch provides fast Cython code for Stirling numbers of the second kind, and allows using GAP or Maxima as an optional algorithm.\n\nBy having less overhead, the Cython code is about 10000 times faster than GAP or Maxima for tiny inputs, and it remains much faster than GAP for larger inputs as well. Apparently Maxima uses a fast algorithm unlike GAP, but my code is still about twice as fast as Maxima for huge n due to an algorithmic optimization.\n\n\n```\nsage: %timeit stirling_number2(10,5)\n625 loops, best of 3: 2.33 \u00b5s per loop\nsage: %timeit stirling_number2(10,5,algorithm='gap')\n25 loops, best of 3: 20 ms per loop\nsage: %timeit stirling_number2(10,5,algorithm='maxima')\n5 loops, best of 3: 40 ms per loop\n\n625 loops, best of 3: 16.2 \u00b5s per loop\nsage: %timeit stirling_number2(100,50,algorithm='gap')\n25 loops, best of 3: 20 ms per loop\nsage: %timeit stirling_number2(100,50,algorithm='maxima')\n5 loops, best of 3: 40 ms per loop\n\nsage: %timeit stirling_number2(2000,1500)\n25 loops, best of 3: 35.9 ms per loop\nsage: %timeit stirling_number2(2000,1500,algorithm='gap')\n5 loops, best of 3: 348 ms per loop\nsage: %timeit stirling_number2(2000,1500,algorithm='maxima')\n5 loops, best of 3: 210 ms per loop\n\nsage: %timeit stirling_number2(4000,3000)\n5 loops, best of 3: 249 ms per loop\nsage: %timeit stirling_number2(4000,3000,algorithm='gap')\n5 loops, best of 3: 2.96 s per loop\nsage: %timeit stirling_number2(4000,3000,algorithm='maxima')\n5 loops, best of 3: 948 ms per loop\n\nsage: %time stirling_number2(20000,15000);\nCPU times: user 20.30 s, sys: 0.23 s, total: 20.53 s\nWall time: 21.82 s\nsage: %time stirling_number2(20000,15000,algorithm='maxima');\nCPU times: user 0.00 s, sys: 0.01 s, total: 0.01 s\nWall time: 51.90 s\n```\n\n\nMathematica seems to be about as slow as GAP (warning: timed on a different system):\n\n```\nIn[1]:= Timing[StirlingS2[4000,3000];]\nOut[1]= {27.1809, Null}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9663\n\n",
     "created_at": "2010-08-01T18:44:18Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_009663.json:
     "title": "Fast computation of Stirling numbers of 2nd kind",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9663",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 Assignee: sage-combinat
 
-CC:  was
+CC:  @williamstein
 
 Currently, Stirling numbers are computed by calling GAP. The patch provides fast Cython code for Stirling numbers of the second kind, and allows using GAP or Maxima as an optional algorithm.
 
@@ -87,7 +87,7 @@ archive/issue_comments_093785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93785",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_093786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93786",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_093787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93787",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_093788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93788",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -160,16 +160,16 @@ fast implementation of stirling_number2 -- updated patch
 archive/issue_comments_093789.json:
 ```json
 {
-    "body": "Attachment [stirling2.patch](tarball://root/attachments/some-uuid/ticket9663/stirling2.patch) by fredrik.johansson created at 2010-08-05 22:40:40\n\nPlease see the new version of the patch.",
+    "body": "Attachment [stirling2.patch](tarball://root/attachments/some-uuid/ticket9663/stirling2.patch) by @fredrik-johansson created at 2010-08-05 22:40:40\n\nPlease see the new version of the patch.",
     "created_at": "2010-08-05T22:40:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93789",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [stirling2.patch](tarball://root/attachments/some-uuid/ticket9663/stirling2.patch) by fredrik.johansson created at 2010-08-05 22:40:40
+Attachment [stirling2.patch](tarball://root/attachments/some-uuid/ticket9663/stirling2.patch) by @fredrik-johansson created at 2010-08-05 22:40:40
 
 Please see the new version of the patch.
 
@@ -185,7 +185,7 @@ archive/issue_comments_093790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93790",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -206,16 +206,16 @@ Nathann
 archive/issue_comments_093791.json:
 ```json
 {
-    "body": "Attachment [trac_9663 - additional test.patch](tarball://root/attachments/some-uuid/ticket9663/trac_9663 - additional test.patch) by ncohen created at 2010-09-05 15:20:23",
+    "body": "Attachment [trac_9663 - additional test.patch](tarball://root/attachments/some-uuid/ticket9663/trac_9663 - additional test.patch) by @nathanncohen created at 2010-09-05 15:20:23",
     "created_at": "2010-09-05T15:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93791",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9663 - additional test.patch](tarball://root/attachments/some-uuid/ticket9663/trac_9663 - additional test.patch) by ncohen created at 2010-09-05 15:20:23
+Attachment [trac_9663 - additional test.patch](tarball://root/attachments/some-uuid/ticket9663/trac_9663 - additional test.patch) by @nathanncohen created at 2010-09-05 15:20:23
 
 
 
@@ -229,7 +229,7 @@ archive/issue_comments_093792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93792",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_093795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93795",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_093796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93796",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_093797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93797",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_093798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93798",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_093799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93799",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_093800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93800",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_093801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93801",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_093802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93802",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_093803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93803",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_093804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93804",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_093805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93805",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -510,16 +510,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093806.json:
 ```json
 {
-    "body": "Attachment [trac_9663-additional_tests.patch](tarball://root/attachments/some-uuid/ticket9663/trac_9663-additional_tests.patch) by ncohen created at 2010-10-26 11:58:37",
+    "body": "Attachment [trac_9663-additional_tests.patch](tarball://root/attachments/some-uuid/ticket9663/trac_9663-additional_tests.patch) by @nathanncohen created at 2010-10-26 11:58:37",
     "created_at": "2010-10-26T11:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93806",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9663-additional_tests.patch](tarball://root/attachments/some-uuid/ticket9663/trac_9663-additional_tests.patch) by ncohen created at 2010-10-26 11:58:37
+Attachment [trac_9663-additional_tests.patch](tarball://root/attachments/some-uuid/ticket9663/trac_9663-additional_tests.patch) by @nathanncohen created at 2010-10-26 11:58:37
 
 
 
@@ -533,7 +533,7 @@ archive/issue_comments_093807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93807",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -551,7 +551,7 @@ archive/issue_comments_093808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93808",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

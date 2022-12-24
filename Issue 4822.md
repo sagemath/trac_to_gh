@@ -3,7 +3,7 @@
 archive/issues_004822.json:
 ```json
 {
-    "body": "Assignee: was\n\nI was using SAGE with the small version of the CremonaDatabase, and tried the following, which does not work because the conductor is too high:\n\n```\nEllipticCurve(\"10001a1\")\n```\n\n\nI think it would be useful if the error message not only said \"this curve is not in the database\" (which is indeed true) but also checked to see if one was using the small database of curves, and if so told the user how to access the larger version\nusing the incantation\n\n```\n!sage -i database_cremona_ellcurve-2005.11.03\n```\n\nor otherwise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4822\n\n",
+    "body": "Assignee: @williamstein\n\nI was using SAGE with the small version of the CremonaDatabase, and tried the following, which does not work because the conductor is too high:\n\n```\nEllipticCurve(\"10001a1\")\n```\n\n\nI think it would be useful if the error message not only said \"this curve is not in the database\" (which is indeed true) but also checked to see if one was using the small database of curves, and if so told the user how to access the larger version\nusing the incantation\n\n```\n!sage -i database_cremona_ellcurve-2005.11.03\n```\n\nor otherwise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4822\n\n",
     "created_at": "2008-12-17T23:47:58Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_004822.json:
     "user": "ljpk"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I was using SAGE with the small version of the CremonaDatabase, and tried the following, which does not work because the conductor is too high:
 
@@ -51,7 +51,7 @@ archive/issue_comments_036558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4822#issuecomment-36558",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_036559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4822#issuecomment-36559",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -82,16 +82,16 @@ Changing component from number theory to elliptic curves.
 archive/issue_comments_036560.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:49:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4822#issuecomment-36560",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -100,16 +100,16 @@ Changing assignee from was to davidloeffler.
 archive/issue_comments_036561.json:
 ```json
 {
-    "body": "Attachment [trac_4822-ecdb_error_msg.patch](tarball://root/attachments/some-uuid/ticket4822/trac_4822-ecdb_error_msg.patch) by cremona created at 2009-08-15 15:05:20\n\nApplies to 4.1.1",
+    "body": "Attachment [trac_4822-ecdb_error_msg.patch](tarball://root/attachments/some-uuid/ticket4822/trac_4822-ecdb_error_msg.patch) by @JohnCremona created at 2009-08-15 15:05:20\n\nApplies to 4.1.1",
     "created_at": "2009-08-15T15:05:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4822#issuecomment-36561",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4822-ecdb_error_msg.patch](tarball://root/attachments/some-uuid/ticket4822/trac_4822-ecdb_error_msg.patch) by cremona created at 2009-08-15 15:05:20
+Attachment [trac_4822-ecdb_error_msg.patch](tarball://root/attachments/some-uuid/ticket4822/trac_4822-ecdb_error_msg.patch) by @JohnCremona created at 2009-08-15 15:05:20
 
 Applies to 4.1.1
 
@@ -125,7 +125,7 @@ archive/issue_comments_036562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4822#issuecomment-36562",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -138,16 +138,16 @@ Apply after previous
 archive/issue_comments_036563.json:
 ```json
 {
-    "body": "Attachment [trac_4822-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4822/trac_4822-doctest-fix.patch) by cremona created at 2009-08-15 15:14:02\n\nThe patch deals with this in a more intelligent way.  I did not add doctests since it's hard to do that when the output message depends on whether or not the extra database is installed.  But I did test it before and after installing the optional database.  The message suggests installing the optional database iff the desired conductor is  betweem 10000 and 13000 and the optional db is not already installed;  I did not actually include the command-line to install it though.\n\nThe second patch fixes a doctest which otherwise fails when run after installing the optional database (but is otherwise independent of this ticket, except that I wrote it so was my fault anyway!)",
+    "body": "Attachment [trac_4822-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4822/trac_4822-doctest-fix.patch) by @JohnCremona created at 2009-08-15 15:14:02\n\nThe patch deals with this in a more intelligent way.  I did not add doctests since it's hard to do that when the output message depends on whether or not the extra database is installed.  But I did test it before and after installing the optional database.  The message suggests installing the optional database iff the desired conductor is  betweem 10000 and 13000 and the optional db is not already installed;  I did not actually include the command-line to install it though.\n\nThe second patch fixes a doctest which otherwise fails when run after installing the optional database (but is otherwise independent of this ticket, except that I wrote it so was my fault anyway!)",
     "created_at": "2009-08-15T15:14:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4822#issuecomment-36563",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4822-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4822/trac_4822-doctest-fix.patch) by cremona created at 2009-08-15 15:14:02
+Attachment [trac_4822-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4822/trac_4822-doctest-fix.patch) by @JohnCremona created at 2009-08-15 15:14:02
 
 The patch deals with this in a more intelligent way.  I did not add doctests since it's hard to do that when the output message depends on whether or not the extra database is installed.  But I did test it before and after installing the optional database.  The message suggests installing the optional database iff the desired conductor is  betweem 10000 and 13000 and the optional db is not already installed;  I did not actually include the command-line to install it though.
 
@@ -165,7 +165,7 @@ archive/issue_comments_036564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4822#issuecomment-36564",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_036565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4822#issuecomment-36565",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 

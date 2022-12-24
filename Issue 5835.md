@@ -3,7 +3,7 @@
 archive/issues_005835.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was\n\nSteps to reproduce:\n\n* Upload a file to a worksheet using the Data... menu\n* Click on the filename in the Data... menu\n* Click the link to delete the file.\n\nMy guess is that it deletes the file, but then tries to display it.  Instead, it should either go back to the worksheet view or to some list of all files in the DATA directory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5835\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein\n\nSteps to reproduce:\n\n* Upload a file to a worksheet using the Data... menu\n* Click on the filename in the Data... menu\n* Click the link to delete the file.\n\nMy guess is that it deletes the file, but then tries to display it.  Instead, it should either go back to the worksheet view or to some list of all files in the DATA directory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5835\n\n",
     "created_at": "2009-04-20T17:09:44Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005835.json:
     "title": "deleting a file from the DATA directory gives an error page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5835",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  was
+CC:  @williamstein
 
 Steps to reproduce:
 
@@ -45,7 +45,7 @@ archive/issue_comments_045857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5835#issuecomment-45857",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_045858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5835#issuecomment-45858",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_045859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5835#issuecomment-45859",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_045860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5835#issuecomment-45860",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

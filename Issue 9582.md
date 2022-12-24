@@ -3,7 +3,7 @@
 archive/issues_009582.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  cwitty ddrake jhpalmieri burcin\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/8c77081af31fc7ef#8c77081af31fc7ef):\n\n```\na 64 bit Mac OS X 10.6.4 box: one failure:\n\nsage -t -long \"devel/sage/sage/symbolic/random_tests.py\"\n**********************************************************************\nFile \"/Applications/sage_builds/sage-4.5.2.alpha0/devel/sage/sage/\nsymbolic/random_tests.py\", line 236:\n    sage: random_expr(50, nvars=3, coeff_generator=CDF.random_element)\nExpected:\n    factorial(floor((-0.314177274493 + 0.144437996366*I)/cosh(-v1^2*e/\nv3) + cos((-0.708874026302 - 0.954135400334*I)*v3) -\nzetaderiv(-0.228070288671 + 0.33842966472*I, 0.520184609653 -\n0.734276246499*I)))^(-arccoth(-abs(((-0.804514286089 -\n0.0293247734576*I)*v1 + (-0.804514286089 - 0.0293247734576*I)*v3 -\n1.0)*elliptic_ec((-0.0263902659909 +\n0.153261789843*I)*arccot(pi*catalan)))))\nGot:\n    factorial(floor((-0.314177274493 + 0.144437996366*I)/cosh(-v1^2*e/\nv3) - zetaderiv(-0.228070288671 + 0.33842966472*I, 0.520184609653 -\n0.734276246499*I) + cos((-0.708874026302 - 0.954135400334*I)*v3)))^(-\narccoth(-abs(((-0.804514286089 - 0.0293247734576*I)*v1 +\n(-0.804514286089 - 0.0293247734576*I)*v3 -\n1.0)*elliptic_ec((-0.0263902659909 +\n0.153261789843*I)*arccot(pi*catalan)))))\n**********************************************************************\n\nLooks like a discrepancy in the order terms are printed.\n```\n\n\nAcccording to Dan Drake:\n\n```\nI'm seeing that on bsd.math too. This is related to #9514, which was\nsupposed to fix this, but evidently doesn't, on OS X at least.\n```\n\n\nRelated: #9514.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9582\n\n",
+    "body": "Assignee: mvngu\n\nCC:  cwitty @dandrake @jhpalmieri @burcin\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/8c77081af31fc7ef#8c77081af31fc7ef):\n\n```\na 64 bit Mac OS X 10.6.4 box: one failure:\n\nsage -t -long \"devel/sage/sage/symbolic/random_tests.py\"\n**********************************************************************\nFile \"/Applications/sage_builds/sage-4.5.2.alpha0/devel/sage/sage/\nsymbolic/random_tests.py\", line 236:\n    sage: random_expr(50, nvars=3, coeff_generator=CDF.random_element)\nExpected:\n    factorial(floor((-0.314177274493 + 0.144437996366*I)/cosh(-v1^2*e/\nv3) + cos((-0.708874026302 - 0.954135400334*I)*v3) -\nzetaderiv(-0.228070288671 + 0.33842966472*I, 0.520184609653 -\n0.734276246499*I)))^(-arccoth(-abs(((-0.804514286089 -\n0.0293247734576*I)*v1 + (-0.804514286089 - 0.0293247734576*I)*v3 -\n1.0)*elliptic_ec((-0.0263902659909 +\n0.153261789843*I)*arccot(pi*catalan)))))\nGot:\n    factorial(floor((-0.314177274493 + 0.144437996366*I)/cosh(-v1^2*e/\nv3) - zetaderiv(-0.228070288671 + 0.33842966472*I, 0.520184609653 -\n0.734276246499*I) + cos((-0.708874026302 - 0.954135400334*I)*v3)))^(-\narccoth(-abs(((-0.804514286089 - 0.0293247734576*I)*v1 +\n(-0.804514286089 - 0.0293247734576*I)*v3 -\n1.0)*elliptic_ec((-0.0263902659909 +\n0.153261789843*I)*arccot(pi*catalan)))))\n**********************************************************************\n\nLooks like a discrepancy in the order terms are printed.\n```\n\n\nAcccording to Dan Drake:\n\n```\nI'm seeing that on bsd.math too. This is related to #9514, which was\nsupposed to fix this, but evidently doesn't, on OS X at least.\n```\n\n\nRelated: #9514.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9582\n\n",
     "created_at": "2010-07-23T07:47:16Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009582.json:
     "title": "Term order discrepancy in random test on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9582",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  cwitty ddrake jhpalmieri burcin
+CC:  cwitty @dandrake @jhpalmieri @burcin
 
 Reported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/8c77081af31fc7ef#8c77081af31fc7ef):
 
@@ -99,7 +99,7 @@ archive/issue_comments_092553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9582#issuecomment-92553",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_092554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9582#issuecomment-92554",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_092555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9582#issuecomment-92555",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_092556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9582#issuecomment-92556",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_092560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9582#issuecomment-92560",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_092561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9582#issuecomment-92561",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_092562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9582#issuecomment-92562",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_092563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9582#issuecomment-92563",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_092564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9582#issuecomment-92564",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_092565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9582#issuecomment-92565",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_092566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9582",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9582#issuecomment-92566",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

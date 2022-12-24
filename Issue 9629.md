@@ -3,7 +3,7 @@
 archive/issues_009629.json:
 ```json
 {
-    "body": "Assignee: jason\n\nI don't have pico installed, and hadn't set $EDITOR, so \"sage -merge\" bombed out; but on Debian-like systems, there's always sensible-editor, which is pretty much what you'd expect. The sage -merge script should look for that before looking for pico.\n\n(Also, uppity free software types would argue that you should look for nano, not pico...)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9629\n\n",
+    "body": "Assignee: @jasongrout\n\nI don't have pico installed, and hadn't set $EDITOR, so \"sage -merge\" bombed out; but on Debian-like systems, there's always sensible-editor, which is pretty much what you'd expect. The sage -merge script should look for that before looking for pico.\n\n(Also, uppity free software types would argue that you should look for nano, not pico...)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9629\n\n",
     "created_at": "2010-07-29T00:32:23Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_009629.json:
     "title": "sage -merge should look for sensible-editor before pico",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9629",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 I don't have pico installed, and hadn't set $EDITOR, so "sage -merge" bombed out; but on Debian-like systems, there's always sensible-editor, which is pretty much what you'd expect. The sage -merge script should look for that before looking for pico.
 
@@ -39,7 +39,7 @@ archive/issue_comments_093310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9629#issuecomment-93310",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_093311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9629#issuecomment-93311",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_093312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9629#issuecomment-93312",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_093313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9629#issuecomment-93313",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_093314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9629#issuecomment-93314",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

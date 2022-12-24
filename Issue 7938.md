@@ -3,7 +3,7 @@
 archive/issues_007938.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\nI'm including a patch, but will rebase it against 3.4.1 once it is released.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7938\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nI'm including a patch, but will rebase it against 3.4.1 once it is released.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7938\n\n",
     "created_at": "2010-01-15T18:50:38Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007938.json:
     "title": "'term' and 'monomial' are inconsistently used in some Category and combinat code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7938",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7938
 archive/issue_comments_069214.json:
 ```json
 {
-    "body": "Attachment [swap_term_and_monomial-jb.patch](tarball://root/attachments/some-uuid/ticket7938/swap_term_and_monomial-jb.patch) by jbandlow created at 2010-01-15 18:51:07",
+    "body": "Attachment [swap_term_and_monomial-jb.patch](tarball://root/attachments/some-uuid/ticket7938/swap_term_and_monomial-jb.patch) by @jbandlow created at 2010-01-15 18:51:07",
     "created_at": "2010-01-15T18:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7938#issuecomment-69214",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [swap_term_and_monomial-jb.patch](tarball://root/attachments/some-uuid/ticket7938/swap_term_and_monomial-jb.patch) by jbandlow created at 2010-01-15 18:51:07
+Attachment [swap_term_and_monomial-jb.patch](tarball://root/attachments/some-uuid/ticket7938/swap_term_and_monomial-jb.patch) by @jbandlow created at 2010-01-15 18:51:07
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_069215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7938#issuecomment-69215",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_069216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7938#issuecomment-69216",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_069217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7938#issuecomment-69217",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_069218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7938#issuecomment-69218",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -134,16 +134,16 @@ Oops, I forgot the following:
 archive/issue_comments_069219.json:
 ```json
 {
-    "body": "Attachment [trac_7938_swap_term_and_monomial-jb.patch](tarball://root/attachments/some-uuid/ticket7938/trac_7938_swap_term_and_monomial-jb.patch) by jbandlow created at 2010-01-18 14:57:04\n\nThe patch called 'trac_7938_...' is all that should be applied.  In response to Nicolas' comments:\n* Rename patch: done\n* Add description: done\n* Remove spurious change to affine.py: done, but see #7978\n* Add default value for coeff in self.term: done\n* Add optional coeff argument to monomial: Not done yet. I'll look more (but maybe not much more) at this later.",
+    "body": "Attachment [trac_7938_swap_term_and_monomial-jb.patch](tarball://root/attachments/some-uuid/ticket7938/trac_7938_swap_term_and_monomial-jb.patch) by @jbandlow created at 2010-01-18 14:57:04\n\nThe patch called 'trac_7938_...' is all that should be applied.  In response to Nicolas' comments:\n* Rename patch: done\n* Add description: done\n* Remove spurious change to affine.py: done, but see #7978\n* Add default value for coeff in self.term: done\n* Add optional coeff argument to monomial: Not done yet. I'll look more (but maybe not much more) at this later.",
     "created_at": "2010-01-18T14:57:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7938#issuecomment-69219",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [trac_7938_swap_term_and_monomial-jb.patch](tarball://root/attachments/some-uuid/ticket7938/trac_7938_swap_term_and_monomial-jb.patch) by jbandlow created at 2010-01-18 14:57:04
+Attachment [trac_7938_swap_term_and_monomial-jb.patch](tarball://root/attachments/some-uuid/ticket7938/trac_7938_swap_term_and_monomial-jb.patch) by @jbandlow created at 2010-01-18 14:57:04
 
 The patch called 'trac_7938_...' is all that should be applied.  In response to Nicolas' comments:
 * Rename patch: done
@@ -164,7 +164,7 @@ archive/issue_comments_069220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7938#issuecomment-69220",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_069221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7938#issuecomment-69221",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_069222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7938#issuecomment-69222",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_069223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7938#issuecomment-69223",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_069224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7938#issuecomment-69224",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -265,16 +265,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069225.json:
 ```json
 {
-    "body": "Attachment [trac_7938_swap_term_and_monomial-jb.2.patch](tarball://root/attachments/some-uuid/ticket7938/trac_7938_swap_term_and_monomial-jb.2.patch) by nthiery created at 2010-01-23 10:07:04\n\n> Sorry for bothering you again. Please also remove the [mq] line, and put the rest on one line (hg treats the first line specifically).\n\nDone. Patch ready for merging into Sage.",
+    "body": "Attachment [trac_7938_swap_term_and_monomial-jb.2.patch](tarball://root/attachments/some-uuid/ticket7938/trac_7938_swap_term_and_monomial-jb.2.patch) by @nthiery created at 2010-01-23 10:07:04\n\n> Sorry for bothering you again. Please also remove the [mq] line, and put the rest on one line (hg treats the first line specifically).\n\nDone. Patch ready for merging into Sage.",
     "created_at": "2010-01-23T10:07:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7938#issuecomment-69225",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7938_swap_term_and_monomial-jb.2.patch](tarball://root/attachments/some-uuid/ticket7938/trac_7938_swap_term_and_monomial-jb.2.patch) by nthiery created at 2010-01-23 10:07:04
+Attachment [trac_7938_swap_term_and_monomial-jb.2.patch](tarball://root/attachments/some-uuid/ticket7938/trac_7938_swap_term_and_monomial-jb.2.patch) by @nthiery created at 2010-01-23 10:07:04
 
 > Sorry for bothering you again. Please also remove the [mq] line, and put the rest on one line (hg treats the first line specifically).
 
@@ -292,7 +292,7 @@ archive/issue_comments_069226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7938#issuecomment-69226",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

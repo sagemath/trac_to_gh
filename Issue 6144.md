@@ -3,7 +3,7 @@
 archive/issues_006144.json:
 ```json
 {
-    "body": "CC:  was\n\n\n```\nsage: exp(x)*exp(2*x)\ne^(2*x)*e^x\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6144\n\n",
+    "body": "CC:  @williamstein\n\n\n```\nsage: exp(x)*exp(2*x)\ne^(2*x)*e^x\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6144\n\n",
     "created_at": "2009-05-28T05:27:18Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006144.json:
     "title": "Pynac doesn't simplify exp(x)*exp(2*x) to exp(3*x)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6144",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-CC:  was
+CC:  @williamstein
 
 
 ```
@@ -42,7 +42,7 @@ archive/issue_comments_049048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6144#issuecomment-49048",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -68,16 +68,16 @@ Burcin
 archive/issue_comments_049049.json:
 ```json
 {
-    "body": "Attachment [trac_6144-exp_simplify.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-exp_simplify.patch) by burcin created at 2009-06-04 09:49:49",
+    "body": "Attachment [trac_6144-exp_simplify.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-exp_simplify.patch) by @burcin created at 2009-06-04 09:49:49",
     "created_at": "2009-06-04T09:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6144#issuecomment-49049",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6144-exp_simplify.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-exp_simplify.patch) by burcin created at 2009-06-04 09:49:49
+Attachment [trac_6144-exp_simplify.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-exp_simplify.patch) by @burcin created at 2009-06-04 09:49:49
 
 
 
@@ -86,16 +86,16 @@ Attachment [trac_6144-exp_simplify.patch](tarball://root/attachments/some-uuid/t
 archive/issue_comments_049050.json:
 ```json
 {
-    "body": "Attachment [trac_6144-pynac_depends.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-pynac_depends.patch) by burcin created at 2009-06-04 10:10:03\n\nNew pynac package here fixes the exp simplification:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.spkg\n\nAttached patches fix doctests, and change module_list.py to rebuild the sage/symbolic/* modules if the package is updated.\n\nThis package also contains a fix for #6163, so these tickets should be merged together.",
+    "body": "Attachment [trac_6144-pynac_depends.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-pynac_depends.patch) by @burcin created at 2009-06-04 10:10:03\n\nNew pynac package here fixes the exp simplification:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.spkg\n\nAttached patches fix doctests, and change module_list.py to rebuild the sage/symbolic/* modules if the package is updated.\n\nThis package also contains a fix for #6163, so these tickets should be merged together.",
     "created_at": "2009-06-04T10:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6144#issuecomment-49050",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6144-pynac_depends.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-pynac_depends.patch) by burcin created at 2009-06-04 10:10:03
+Attachment [trac_6144-pynac_depends.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-pynac_depends.patch) by @burcin created at 2009-06-04 10:10:03
 
 New pynac package here fixes the exp simplification:
 
@@ -112,16 +112,16 @@ This package also contains a fix for #6163, so these tickets should be merged to
 archive/issue_comments_049051.json:
 ```json
 {
-    "body": "Attachment [trac_6144-review.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-review.patch) by mhansen created at 2009-06-05 01:52:53",
+    "body": "Attachment [trac_6144-review.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-review.patch) by @mwhansen created at 2009-06-05 01:52:53",
     "created_at": "2009-06-05T01:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6144#issuecomment-49051",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6144-review.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-review.patch) by mhansen created at 2009-06-05 01:52:53
+Attachment [trac_6144-review.patch](tarball://root/attachments/some-uuid/ticket6144/trac_6144-review.patch) by @mwhansen created at 2009-06-05 01:52:53
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_049052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6144#issuecomment-49052",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_049053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6144#issuecomment-49053",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_049054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6144#issuecomment-49054",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_049055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6144#issuecomment-49055",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

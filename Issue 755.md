@@ -3,7 +3,7 @@
 archive/issues_000755.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\nA line in adjacency_matrix() calls self.multiple_edges instead of self.multiple_edges(), causing adjacency_matrix() to never return a matrix over IntegerModRing(2), like it apparently was designed to return.  However, kirchhoff_matrix() relies on this bug, as it does a list(-M), where M is the adjacency matrix, which doesn't work when M is a binary matrix.  So kirchhoff_matrix() needs to be fixed (so it doesn't rely on the faulty behavior).\n\nIssue created by migration from https://trac.sagemath.org/ticket/755\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nA line in adjacency_matrix() calls self.multiple_edges instead of self.multiple_edges(), causing adjacency_matrix() to never return a matrix over IntegerModRing(2), like it apparently was designed to return.  However, kirchhoff_matrix() relies on this bug, as it does a list(-M), where M is the adjacency matrix, which doesn't work when M is a binary matrix.  So kirchhoff_matrix() needs to be fixed (so it doesn't rely on the faulty behavior).\n\nIssue created by migration from https://trac.sagemath.org/ticket/755\n\n",
     "created_at": "2007-09-26T15:49:08Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000755.json:
     "title": "graphs: adjacency_matrix() does not call multiple_edges correctly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/755",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -39,7 +39,7 @@ archive/issue_comments_004466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/755#issuecomment-4466",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_004467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/755#issuecomment-4467",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,16 +120,16 @@ Same patch as listed in the post.
 archive/issue_comments_004468.json:
 ```json
 {
-    "body": "Attachment [#755.patch](tarball://root/attachments/some-uuid/ticket755/#755.patch) by was created at 2007-10-04 14:55:01",
+    "body": "Attachment [#755.patch](tarball://root/attachments/some-uuid/ticket755/#755.patch) by @williamstein created at 2007-10-04 14:55:01",
     "created_at": "2007-10-04T14:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/755#issuecomment-4468",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [#755.patch](tarball://root/attachments/some-uuid/ticket755/#755.patch) by was created at 2007-10-04 14:55:01
+Attachment [#755.patch](tarball://root/attachments/some-uuid/ticket755/#755.patch) by @williamstein created at 2007-10-04 14:55:01
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_004469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/755#issuecomment-4469",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

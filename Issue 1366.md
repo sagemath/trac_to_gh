@@ -3,7 +3,7 @@
 archive/issues_001366.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf you do \"sage -br\" on a very very fast machine, it still takes nearly\n10 seconds.  This is in a sense a bug, because it should take < 0.4 seconds.\nIt takes a long time, since the entire dependency graph for all .pyx files\nis being computed every single time.  This information should somehow be cached,\nwhich would vastly speed things up. \n\nI consider this a bug since the performance is so bad as to make \"sage -br\"\nvery painful. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1366\n\n",
+    "body": "Assignee: @williamstein\n\nIf you do \"sage -br\" on a very very fast machine, it still takes nearly\n10 seconds.  This is in a sense a bug, because it should take < 0.4 seconds.\nIt takes a long time, since the entire dependency graph for all .pyx files\nis being computed every single time.  This information should somehow be cached,\nwhich would vastly speed things up. \n\nI consider this a bug since the performance is so bad as to make \"sage -br\"\nvery painful. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1366\n\n",
     "created_at": "2007-12-02T06:15:13Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_001366.json:
     "title": "speed up \"sage -br\" -- make it cache the dependency diagram instead of computing it every time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1366",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If you do "sage -br" on a very very fast machine, it still takes nearly
 10 seconds.  This is in a sense a bug, because it should take < 0.4 seconds.
@@ -44,7 +44,7 @@ archive/issue_comments_008748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1366#issuecomment-8748",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_008749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1366#issuecomment-8749",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_008750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1366#issuecomment-8750",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -93,16 +93,16 @@ the actual patch
 archive/issue_comments_008751.json:
 ```json
 {
-    "body": "Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket1366/deps.patch) by moretti created at 2007-12-03 07:05:23\n\nnote - there are lots of bugs with the current version. I will work on fixing them on 12/3, but probably not before.\n-Bobby",
+    "body": "Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket1366/deps.patch) by @bobmoretti created at 2007-12-03 07:05:23\n\nnote - there are lots of bugs with the current version. I will work on fixing them on 12/3, but probably not before.\n-Bobby",
     "created_at": "2007-12-03T07:05:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1366#issuecomment-8751",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
-Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket1366/deps.patch) by moretti created at 2007-12-03 07:05:23
+Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket1366/deps.patch) by @bobmoretti created at 2007-12-03 07:05:23
 
 note - there are lots of bugs with the current version. I will work on fixing them on 12/3, but probably not before.
 -Bobby
@@ -114,16 +114,16 @@ note - there are lots of bugs with the current version. I will work on fixing th
 archive/issue_comments_008752.json:
 ```json
 {
-    "body": "Attachment [deps.hg](tarball://root/attachments/some-uuid/ticket1366/deps.hg) by was created at 2007-12-06 14:27:36\n\nIgnore the deps* stuff that bobby posted above, and just use this patch (or later ones?)",
+    "body": "Attachment [deps.hg](tarball://root/attachments/some-uuid/ticket1366/deps.hg) by @williamstein created at 2007-12-06 14:27:36\n\nIgnore the deps* stuff that bobby posted above, and just use this patch (or later ones?)",
     "created_at": "2007-12-06T14:27:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1366#issuecomment-8752",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [deps.hg](tarball://root/attachments/some-uuid/ticket1366/deps.hg) by was created at 2007-12-06 14:27:36
+Attachment [deps.hg](tarball://root/attachments/some-uuid/ticket1366/deps.hg) by @williamstein created at 2007-12-06 14:27:36
 
 Ignore the deps* stuff that bobby posted above, and just use this patch (or later ones?)
 
@@ -134,16 +134,16 @@ Ignore the deps* stuff that bobby posted above, and just use this patch (or late
 archive/issue_comments_008753.json:
 ```json
 {
-    "body": "Attachment [trac1366.patch](tarball://root/attachments/some-uuid/ticket1366/trac1366.patch) by was created at 2007-12-06 14:40:21",
+    "body": "Attachment [trac1366.patch](tarball://root/attachments/some-uuid/ticket1366/trac1366.patch) by @williamstein created at 2007-12-06 14:40:21",
     "created_at": "2007-12-06T14:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1366#issuecomment-8753",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac1366.patch](tarball://root/attachments/some-uuid/ticket1366/trac1366.patch) by was created at 2007-12-06 14:40:21
+Attachment [trac1366.patch](tarball://root/attachments/some-uuid/ticket1366/trac1366.patch) by @williamstein created at 2007-12-06 14:40:21
 
 
 
@@ -256,7 +256,7 @@ archive/issue_comments_008759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1366#issuecomment-8759",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_008761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1366#issuecomment-8761",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_008763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1366#issuecomment-8763",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -373,16 +373,16 @@ removed debug statements :)
 archive/issue_comments_008764.json:
 ```json
 {
-    "body": "Attachment [deps2.hg](tarball://root/attachments/some-uuid/ticket1366/deps2.hg) by moretti created at 2008-02-08 05:50:38",
+    "body": "Attachment [deps2.hg](tarball://root/attachments/some-uuid/ticket1366/deps2.hg) by @bobmoretti created at 2008-02-08 05:50:38",
     "created_at": "2008-02-08T05:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1366#issuecomment-8764",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
-Attachment [deps2.hg](tarball://root/attachments/some-uuid/ticket1366/deps2.hg) by moretti created at 2008-02-08 05:50:38
+Attachment [deps2.hg](tarball://root/attachments/some-uuid/ticket1366/deps2.hg) by @bobmoretti created at 2008-02-08 05:50:38
 
 
 

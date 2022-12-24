@@ -3,7 +3,7 @@
 archive/issues_002198.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mhansen\n\nThis increases compilation time and we need to verify that those packages build everywhere, but it seems like the right thing to do.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2198\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nThis increases compilation time and we need to verify that those packages build everywhere, but it seems like the right thing to do.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2198\n\n",
     "created_at": "2008-02-17T19:33:50Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_002198.json:
 ```
 Assignee: mabshoff
 
-CC:  mhansen
+CC:  @mwhansen
 
 This increases compilation time and we need to verify that those packages build everywhere, but it seems like the right thing to do.
 
@@ -43,7 +43,7 @@ archive/issue_comments_014436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2198#issuecomment-14436",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_014437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2198#issuecomment-14437",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,16 +74,16 @@ Changing status from new to assigned.
 archive/issue_comments_014438.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to jason.",
+    "body": "Changing assignee from mabshoff to @jasongrout.",
     "created_at": "2009-09-16T16:35:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2198#issuecomment-14438",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mabshoff to jason.
+Changing assignee from mabshoff to @jasongrout.
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_014439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2198#issuecomment-14439",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_014440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2198#issuecomment-14440",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_014441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2198#issuecomment-14441",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000636.json:
     "title": "cvxopt doesn't fully work yet in SAGE under Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/636",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jkantor
@@ -115,7 +115,7 @@ archive/issue_comments_003282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/636",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/636#issuecomment-3282",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

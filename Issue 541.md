@@ -3,7 +3,7 @@
 archive/issues_000541.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  michael.abshoff@googlemail.com\n\nGet mpfr-2.3.0 into SAGE\n\nIssue created by migration from https://trac.sagemath.org/ticket/541\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  michael.abshoff@googlemail.com\n\nGet mpfr-2.3.0 into SAGE\n\nIssue created by migration from https://trac.sagemath.org/ticket/541\n\n",
     "created_at": "2007-08-31T19:30:00Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000541.json:
     "title": "mpfr-2.3.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/541",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  michael.abshoff@googlemail.com
 
@@ -93,7 +93,7 @@ archive/issue_comments_002749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/541",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/541#issuecomment-2749",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

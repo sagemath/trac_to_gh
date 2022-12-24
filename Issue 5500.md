@@ -14,7 +14,7 @@ archive/issues_005500.json:
     "title": "add remark to tutorial to make defining functions at the command line much clearer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5500",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -71,16 +71,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5500
 archive/issue_comments_042722.json:
 ```json
 {
-    "body": "Attachment [5500-tut.patch](tarball://root/attachments/some-uuid/ticket5500/5500-tut.patch) by robertwb created at 2009-03-19 05:09:56\n\nI've incorporated the suggestions at \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/5dd8364a8b069d6c/ebc01381136f476d\n\ninto a patch.",
+    "body": "Attachment [5500-tut.patch](tarball://root/attachments/some-uuid/ticket5500/5500-tut.patch) by @robertwb created at 2009-03-19 05:09:56\n\nI've incorporated the suggestions at \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/5dd8364a8b069d6c/ebc01381136f476d\n\ninto a patch.",
     "created_at": "2009-03-19T05:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42722",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5500-tut.patch](tarball://root/attachments/some-uuid/ticket5500/5500-tut.patch) by robertwb created at 2009-03-19 05:09:56
+Attachment [5500-tut.patch](tarball://root/attachments/some-uuid/ticket5500/5500-tut.patch) by @robertwb created at 2009-03-19 05:09:56
 
 I've incorporated the suggestions at 
 
@@ -193,7 +193,7 @@ archive/issue_comments_042725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42725",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_042726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42726",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

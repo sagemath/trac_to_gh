@@ -3,7 +3,7 @@
 archive/issues_004071.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 5:\n    sage: lisp.eval('(* 4 5)')\nExpected:\n    '20'\nGot:\n    '(* 4 5)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\n20'\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 22:\n    sage: lisp.eval('(+ %s %s)'%(a.name(), b.name()))\nExpected:\n    '8'\nGot:\n    '(+ sage0 sage1)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\n8'\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 27:\n    sage: lisp.eval('(defun factorial (n) (if (= n 1) 1 (* n (factorial (- n 1)))))')\nExpected:\n    'FACTORIAL'\nGot:\n    '(defun factorial (n)\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C (if (= n 1)\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C 1 (* n (factorial (- n 1)\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C)\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C)\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\nFACTORIAL'\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 112:\n    sage: lisp.eval('(+ 2 2)')\nExpected:\n    '4'\nGot:\n    '(+ 2 2)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\n4'\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 390:\n    sage: one == one\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 394:\n    sage: one < two\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 400:\n    sage: two == 2\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 420:\n    sage: lisp(0).bool()\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n4 items had failures:\n   3 of  17 in __main__.example_0\n   1 of   3 in __main__.example_2\n   3 of   9 in __main__.example_23\n   1 of   5 in __main__.example_24\n***Test Failed*** 8 failures.\nFor whitespace errors, see the file /Users/mhansen/sage-3.1.2.rc0/tmp/.doctest_lisp.py\n         [7.4 s]\nexit code: 1024\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4071\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 5:\n    sage: lisp.eval('(* 4 5)')\nExpected:\n    '20'\nGot:\n    '(* 4 5)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\n20'\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 22:\n    sage: lisp.eval('(+ %s %s)'%(a.name(), b.name()))\nExpected:\n    '8'\nGot:\n    '(+ sage0 sage1)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\n8'\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 27:\n    sage: lisp.eval('(defun factorial (n) (if (= n 1) 1 (* n (factorial (- n 1)))))')\nExpected:\n    'FACTORIAL'\nGot:\n    '(defun factorial (n)\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C (if (= n 1)\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C 1 (* n (factorial (- n 1)\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C)\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C)\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\nFACTORIAL'\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 112:\n    sage: lisp.eval('(+ 2 2)')\nExpected:\n    '4'\nGot:\n    '(+ 2 2)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\n4'\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 390:\n    sage: one == one\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 394:\n    sage: one < two\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 400:\n    sage: two == 2\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 420:\n    sage: lisp(0).bool()\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n4 items had failures:\n   3 of  17 in __main__.example_0\n   1 of   3 in __main__.example_2\n   3 of   9 in __main__.example_23\n   1 of   5 in __main__.example_24\n***Test Failed*** 8 failures.\nFor whitespace errors, see the file /Users/mhansen/sage-3.1.2.rc0/tmp/.doctest_lisp.py\n         [7.4 s]\nexit code: 1024\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4071\n\n",
     "created_at": "2008-09-07T18:09:06Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004071.json:
     "title": "Fix issues in the lisp interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4071",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -100,16 +100,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4071
 archive/issue_comments_029380.json:
 ```json
 {
-    "body": "Attachment [trac_4071.patch](tarball://root/attachments/some-uuid/ticket4071/trac_4071.patch) by mhansen created at 2008-09-07 18:10:28",
+    "body": "Attachment [trac_4071.patch](tarball://root/attachments/some-uuid/ticket4071/trac_4071.patch) by @mwhansen created at 2008-09-07 18:10:28",
     "created_at": "2008-09-07T18:10:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29380",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4071.patch](tarball://root/attachments/some-uuid/ticket4071/trac_4071.patch) by mhansen created at 2008-09-07 18:10:28
+Attachment [trac_4071.patch](tarball://root/attachments/some-uuid/ticket4071/trac_4071.patch) by @mwhansen created at 2008-09-07 18:10:28
 
 
 
@@ -123,7 +123,7 @@ archive/issue_comments_029381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29381",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -136,16 +136,16 @@ Changing status from new to assigned.
 archive/issue_comments_029382.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-09-07T18:22:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29382",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 

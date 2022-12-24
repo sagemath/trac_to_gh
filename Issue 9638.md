@@ -13,7 +13,7 @@ archive/issues_009638.json:
     "title": "Interact sliders should be able to have negative step size",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9638",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: itolkov, jason
@@ -54,7 +54,7 @@ archive/issue_comments_093423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9638#issuecomment-93423",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

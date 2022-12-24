@@ -3,7 +3,7 @@
 archive/issues_004063.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mhansen\n\nCurrently the :8102 server has several javascript popups that come up when viewing the list of published worksheets.  Apparently at least one of these worksheets includes javascript code as part of the title.  This is really annoying right now, but could be more dangerous in the future.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4063\n\n",
+    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nCurrently the :8102 server has several javascript popups that come up when viewing the list of published worksheets.  Apparently at least one of these worksheets includes javascript code as part of the title.  This is really annoying right now, but could be more dangerous in the future.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4063\n\n",
     "created_at": "2008-09-04T16:22:52Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_004063.json:
     "title": "properly escape the titles of worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4063",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  mhansen
+CC:  @mwhansen
 
 Currently the :8102 server has several javascript popups that come up when viewing the list of published worksheets.  Apparently at least one of these worksheets includes javascript code as part of the title.  This is really annoying right now, but could be more dangerous in the future.
 
@@ -93,16 +93,16 @@ Michael
 archive/issue_comments_029308.json:
 ```json
 {
-    "body": "Attachment [trac_4063.patch](tarball://root/attachments/some-uuid/ticket4063/trac_4063.patch) by mhansen created at 2008-09-16 06:30:14",
+    "body": "Attachment [trac_4063.patch](tarball://root/attachments/some-uuid/ticket4063/trac_4063.patch) by @mwhansen created at 2008-09-16 06:30:14",
     "created_at": "2008-09-16T06:30:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4063#issuecomment-29308",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4063.patch](tarball://root/attachments/some-uuid/ticket4063/trac_4063.patch) by mhansen created at 2008-09-16 06:30:14
+Attachment [trac_4063.patch](tarball://root/attachments/some-uuid/ticket4063/trac_4063.patch) by @mwhansen created at 2008-09-16 06:30:14
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_029309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4063#issuecomment-29309",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

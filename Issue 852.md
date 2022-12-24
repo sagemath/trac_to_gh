@@ -14,7 +14,7 @@ archive/issues_000852.json:
     "title": "Singular's Factorisation crashes under OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/852",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mabshoff
@@ -83,7 +83,7 @@ archive/issue_comments_005259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/852#issuecomment-5259",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_005261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/852#issuecomment-5261",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -534,7 +534,7 @@ archive/issue_comments_005267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/852#issuecomment-5267",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_005268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/852#issuecomment-5268",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

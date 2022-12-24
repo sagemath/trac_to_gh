@@ -14,7 +14,7 @@ archive/issues_006401.json:
     "title": "Typesettings of real() and imag() are broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6401",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 Typesetting of real() and imag() methods are broken due to missing parenthesis.
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6401
 archive/issue_comments_051407.json:
 ```json
 {
-    "body": "Attachment [trac_6401-real_imag_typesetting.patch](tarball://root/attachments/some-uuid/ticket6401/trac_6401-real_imag_typesetting.patch) by burcin created at 2009-07-28 12:44:48\n\ndoctest fixes for typesetting changes in pynac",
+    "body": "Attachment [trac_6401-real_imag_typesetting.patch](tarball://root/attachments/some-uuid/ticket6401/trac_6401-real_imag_typesetting.patch) by @burcin created at 2009-07-28 12:44:48\n\ndoctest fixes for typesetting changes in pynac",
     "created_at": "2009-07-28T12:44:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6401#issuecomment-51407",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6401-real_imag_typesetting.patch](tarball://root/attachments/some-uuid/ticket6401/trac_6401-real_imag_typesetting.patch) by burcin created at 2009-07-28 12:44:48
+Attachment [trac_6401-real_imag_typesetting.patch](tarball://root/attachments/some-uuid/ticket6401/trac_6401-real_imag_typesetting.patch) by @burcin created at 2009-07-28 12:44:48
 
 doctest fixes for typesetting changes in pynac
 
@@ -75,7 +75,7 @@ archive/issue_comments_051408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6401#issuecomment-51408",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to assigned.
 archive/issue_comments_051409.json:
 ```json
 {
-    "body": "Set assignee to burcin.",
+    "body": "Set assignee to @burcin.",
     "created_at": "2009-07-28T12:45:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6401#issuecomment-51409",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Set assignee to burcin.
+Set assignee to @burcin.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_051410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6401#issuecomment-51410",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_051411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6401#issuecomment-51411",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_051412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6401#issuecomment-51412",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_051413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6401#issuecomment-51413",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_051414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6401#issuecomment-51414",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 

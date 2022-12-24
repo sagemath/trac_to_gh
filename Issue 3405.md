@@ -14,7 +14,7 @@ archive/issues_003405.json:
     "title": "[with spkg, needs review] update Singular SPKG to newest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3405",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mabshoff
@@ -59,7 +59,7 @@ archive/issue_comments_023884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3405#issuecomment-23884",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

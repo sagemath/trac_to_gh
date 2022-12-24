@@ -3,7 +3,7 @@
 archive/issues_000872.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  singular number fields factorization\n\nSee also http://www.singular.uni-kl.de/forum/viewtopic.php?t=1639\n\nBut since it was reported by a Sage user it is worth tracking here:\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/sage-2.8.6/local/bin$ ./valgrind --tool=memcheck --leak-resolution=high ./Singular-3-0-3\n==25414== Memcheck, a memory error detector.\n==25414== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.\n==25414== Using LibVEX rev 1788, a library for dynamic binary translation.\n==25414== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.\n==25414== Using valgrind-3.3.0.SVN, a dynamic binary instrumentation framework.\n==25414== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.\n==25414== For more details, rerun with: -v\n==25414==\n                     SINGULAR                             /  Development\n A Computer Algebra System for Polynomial Computations   /   version 3-0-3\n                                                       0<\n     by: G.-M. Greuel, G. Pfister, H. Schoenemann        \\   May 2007\nFB Mathematik der Universitaet, D-67653 Kaiserslautern    \\\n> ring r=(0,a),(x),dp;\n> minpoly=a^2+1;\n> factorize(x^18+1);\nstart Factorize2(int_flag=0)\nend Factorize2(0)\n[1]:\n   _[1]=1\n   _[2]=x6+(-a)*x3-1\n   _[3]=x6+(a)*x3-1\n   _[4]=x2+(a)*x-1\n   _[5]=x2+(-a)*x-1\n   _[6]=x+(-a)\n   _[7]=x+(a)\n[2]:\n   1,1,1,1,1,1,1\n> factorize(x^20+1);\nstart Factorize2(int_flag=0)\n==25414== Source and destination overlap in memcpy(0x4214460, 0x4215300, 3752)\n==25414==    at 0x4A1DA2B: memcpy (mc_replace_strmem.c:402)\n==25414==    by 0x66F7A0: rEALLOc (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x669788: omReallocSizeFromSystem (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x6698A0: omReallocLarge (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x5CA5F6: reallocSize (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x4F04E30: __gmpz_realloc (in /tmp/Work-mabshoff/sage-2.8.6/local/lib/libgmp.so.3.4.1)\n==25414==    by 0x4EF76FE: __gmpz_add (in /tmp/Work-mabshoff/sage-2.8.6/local/lib/libgmp.so.3.4.1)\n==25414==    by 0x654485: InternalInteger::addsame(InternalCF*) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x628FD7: CanonicalForm::operator+=(CanonicalForm const&) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x657B95: InternalPoly::mulAddTermList(term*, term*, CanonicalForm const&, int, term*&, bool) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x657F4E: InternalPoly::mulsame(InternalCF*) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x627D44: CanonicalForm::operator*=(CanonicalForm const&) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n\nerror: no more memory\nSystem 9920k:19584k Appl 8315k/1604k Malloc 8234k/1173k Valloc 512k/431k Pages 57/71 Regions 1:1\n\nhalt 14\n==25414==\n==25414== ERROR SUMMARY: 11 errors from 1 contexts (suppressed: 13 from 2)\n==25414== malloc/free: in use at exit: 0 bytes in 0 blocks.\n==25414== malloc/free: 0 allocs, 0 frees, 0 bytes allocated.\n==25414== For counts of detected errors, rerun with: -v\n==25414== All heap blocks were freed -- no leaks are possible.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/872\n\n",
+    "body": "Assignee: @malb\n\nCC:  singular number fields factorization\n\nSee also http://www.singular.uni-kl.de/forum/viewtopic.php?t=1639\n\nBut since it was reported by a Sage user it is worth tracking here:\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/sage-2.8.6/local/bin$ ./valgrind --tool=memcheck --leak-resolution=high ./Singular-3-0-3\n==25414== Memcheck, a memory error detector.\n==25414== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.\n==25414== Using LibVEX rev 1788, a library for dynamic binary translation.\n==25414== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.\n==25414== Using valgrind-3.3.0.SVN, a dynamic binary instrumentation framework.\n==25414== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.\n==25414== For more details, rerun with: -v\n==25414==\n                     SINGULAR                             /  Development\n A Computer Algebra System for Polynomial Computations   /   version 3-0-3\n                                                       0<\n     by: G.-M. Greuel, G. Pfister, H. Schoenemann        \\   May 2007\nFB Mathematik der Universitaet, D-67653 Kaiserslautern    \\\n> ring r=(0,a),(x),dp;\n> minpoly=a^2+1;\n> factorize(x^18+1);\nstart Factorize2(int_flag=0)\nend Factorize2(0)\n[1]:\n   _[1]=1\n   _[2]=x6+(-a)*x3-1\n   _[3]=x6+(a)*x3-1\n   _[4]=x2+(a)*x-1\n   _[5]=x2+(-a)*x-1\n   _[6]=x+(-a)\n   _[7]=x+(a)\n[2]:\n   1,1,1,1,1,1,1\n> factorize(x^20+1);\nstart Factorize2(int_flag=0)\n==25414== Source and destination overlap in memcpy(0x4214460, 0x4215300, 3752)\n==25414==    at 0x4A1DA2B: memcpy (mc_replace_strmem.c:402)\n==25414==    by 0x66F7A0: rEALLOc (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x669788: omReallocSizeFromSystem (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x6698A0: omReallocLarge (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x5CA5F6: reallocSize (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x4F04E30: __gmpz_realloc (in /tmp/Work-mabshoff/sage-2.8.6/local/lib/libgmp.so.3.4.1)\n==25414==    by 0x4EF76FE: __gmpz_add (in /tmp/Work-mabshoff/sage-2.8.6/local/lib/libgmp.so.3.4.1)\n==25414==    by 0x654485: InternalInteger::addsame(InternalCF*) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x628FD7: CanonicalForm::operator+=(CanonicalForm const&) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x657B95: InternalPoly::mulAddTermList(term*, term*, CanonicalForm const&, int, term*&, bool) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x657F4E: InternalPoly::mulsame(InternalCF*) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x627D44: CanonicalForm::operator*=(CanonicalForm const&) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n\nerror: no more memory\nSystem 9920k:19584k Appl 8315k/1604k Malloc 8234k/1173k Valloc 512k/431k Pages 57/71 Regions 1:1\n\nhalt 14\n==25414==\n==25414== ERROR SUMMARY: 11 errors from 1 contexts (suppressed: 13 from 2)\n==25414== malloc/free: in use at exit: 0 bytes in 0 blocks.\n==25414== malloc/free: 0 allocs, 0 frees, 0 bytes allocated.\n==25414== For counts of detected errors, rerun with: -v\n==25414== All heap blocks were freed -- no leaks are possible.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/872\n\n",
     "created_at": "2007-10-13T03:57:03Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_000872.json:
     "user": "mabshoff"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  singular number fields factorization
 
@@ -184,7 +184,7 @@ archive/issue_comments_005375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5375",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_005376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5376",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_005377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5377",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_005378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5378",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_005379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5379",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_005380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5380",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_005381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5381",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

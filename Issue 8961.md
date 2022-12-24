@@ -3,7 +3,7 @@
 archive/issues_008961.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  mpatel leif\n\n`zope.testbrowser` is no longer needed by sagenb but is still listed as a requirement.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8961\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @qed777 @nexttime\n\n`zope.testbrowser` is no longer needed by sagenb but is still listed as a requirement.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8961\n\n",
     "created_at": "2010-05-14T11:27:14Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008961.json:
     "title": "zope.testbrowser is included in sagenb but is no longer required",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8961",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: jason, was
 
-CC:  mpatel leif
+CC:  @qed777 @nexttime
 
 `zope.testbrowser` is no longer needed by sagenb but is still listed as a requirement.
 
@@ -39,7 +39,7 @@ archive/issue_comments_082598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8961#issuecomment-82598",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_082599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8961#issuecomment-82599",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_082600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8961#issuecomment-82600",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to needs_review.
 archive/issue_comments_082601.json:
 ```json
 {
-    "body": "Attachment [trac_8961-remove-zope.testbrowser.patch](tarball://root/attachments/some-uuid/ticket8961/trac_8961-remove-zope.testbrowser.patch) by timdumol created at 2010-07-06 13:23:04\n\nNow only Twisted (and its zope.interface, which is included in the Twisted spkg) is required by SageNB.",
+    "body": "Attachment [trac_8961-remove-zope.testbrowser.patch](tarball://root/attachments/some-uuid/ticket8961/trac_8961-remove-zope.testbrowser.patch) by @TimDumol created at 2010-07-06 13:23:04\n\nNow only Twisted (and its zope.interface, which is included in the Twisted spkg) is required by SageNB.",
     "created_at": "2010-07-06T13:23:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8961#issuecomment-82601",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_8961-remove-zope.testbrowser.patch](tarball://root/attachments/some-uuid/ticket8961/trac_8961-remove-zope.testbrowser.patch) by timdumol created at 2010-07-06 13:23:04
+Attachment [trac_8961-remove-zope.testbrowser.patch](tarball://root/attachments/some-uuid/ticket8961/trac_8961-remove-zope.testbrowser.patch) by @TimDumol created at 2010-07-06 13:23:04
 
 Now only Twisted (and its zope.interface, which is included in the Twisted spkg) is required by SageNB.
 
@@ -113,7 +113,7 @@ archive/issue_comments_082602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8961#issuecomment-82602",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -126,16 +126,16 @@ Removes an extra line.
 archive/issue_comments_082603.json:
 ```json
 {
-    "body": "Attachment [trac_8961-remove-zope.testbrowser.2.patch](tarball://root/attachments/some-uuid/ticket8961/trac_8961-remove-zope.testbrowser.2.patch) by timdumol created at 2010-07-06 17:09:19\n\nThe package is at http://sage.math.washington.edu/home/timdumol/sagenb-0.8.1.spkg, and is the tentative package for #9430.",
+    "body": "Attachment [trac_8961-remove-zope.testbrowser.2.patch](tarball://root/attachments/some-uuid/ticket8961/trac_8961-remove-zope.testbrowser.2.patch) by @TimDumol created at 2010-07-06 17:09:19\n\nThe package is at http://sage.math.washington.edu/home/timdumol/sagenb-0.8.1.spkg, and is the tentative package for #9430.",
     "created_at": "2010-07-06T17:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8961#issuecomment-82603",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_8961-remove-zope.testbrowser.2.patch](tarball://root/attachments/some-uuid/ticket8961/trac_8961-remove-zope.testbrowser.2.patch) by timdumol created at 2010-07-06 17:09:19
+Attachment [trac_8961-remove-zope.testbrowser.2.patch](tarball://root/attachments/some-uuid/ticket8961/trac_8961-remove-zope.testbrowser.2.patch) by @TimDumol created at 2010-07-06 17:09:19
 
 The package is at http://sage.math.washington.edu/home/timdumol/sagenb-0.8.1.spkg, and is the tentative package for #9430.
 
@@ -151,7 +151,7 @@ archive/issue_comments_082604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8961",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8961#issuecomment-82604",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

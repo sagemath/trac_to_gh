@@ -3,7 +3,7 @@
 archive/issues_002143.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  dfdeshom\n\nhttp://sage.math.washington.edu/home/jkantor/optimize.patch\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2143\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @dfdeshom\n\nhttp://sage.math.washington.edu/home/jkantor/optimize.patch\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2143\n\n",
     "created_at": "2008-02-12T05:33:27Z",
     "labels": [
         "numerical",
@@ -19,7 +19,7 @@ archive/issues_002143.json:
 ```
 Assignee: jkantor
 
-CC:  dfdeshom
+CC:  @dfdeshom
 
 http://sage.math.washington.edu/home/jkantor/optimize.patch
 
@@ -41,7 +41,7 @@ archive/issue_comments_014050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2143#issuecomment-14050",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,16 +63,16 @@ Of course, I could fix that since I'm root on that machine... but I'm too busy a
 archive/issue_comments_014051.json:
 ```json
 {
-    "body": "Attachment [optimize.patch](tarball://root/attachments/some-uuid/ticket2143/optimize.patch) by dfdeshom created at 2008-03-03 21:05:13\n\nAttaching the patch on trac for convenience...",
+    "body": "Attachment [optimize.patch](tarball://root/attachments/some-uuid/ticket2143/optimize.patch) by @dfdeshom created at 2008-03-03 21:05:13\n\nAttaching the patch on trac for convenience...",
     "created_at": "2008-03-03T21:05:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2143#issuecomment-14051",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [optimize.patch](tarball://root/attachments/some-uuid/ticket2143/optimize.patch) by dfdeshom created at 2008-03-03 21:05:13
+Attachment [optimize.patch](tarball://root/attachments/some-uuid/ticket2143/optimize.patch) by @dfdeshom created at 2008-03-03 21:05:13
 
 Attaching the patch on trac for convenience...
 
@@ -88,7 +88,7 @@ archive/issue_comments_014052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2143#issuecomment-14052",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -103,16 +103,16 @@ Doctests were failing due to either missing imports or unsuppressed output. I'm 
 archive/issue_comments_014053.json:
 ```json
 {
-    "body": "Attachment [2143.patch](tarball://root/attachments/some-uuid/ticket2143/2143.patch) by dfdeshom created at 2008-03-05 05:58:02",
+    "body": "Attachment [2143.patch](tarball://root/attachments/some-uuid/ticket2143/2143.patch) by @dfdeshom created at 2008-03-05 05:58:02",
     "created_at": "2008-03-05T05:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2143#issuecomment-14053",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2143.patch](tarball://root/attachments/some-uuid/ticket2143/2143.patch) by dfdeshom created at 2008-03-05 05:58:02
+Attachment [2143.patch](tarball://root/attachments/some-uuid/ticket2143/2143.patch) by @dfdeshom created at 2008-03-05 05:58:02
 
 
 
@@ -121,16 +121,16 @@ Attachment [2143.patch](tarball://root/attachments/some-uuid/ticket2143/2143.pat
 archive/issue_comments_014054.json:
 ```json
 {
-    "body": "Attachment [2143-2.patch](tarball://root/attachments/some-uuid/ticket2143/2143-2.patch) by mhansen created at 2008-03-15 23:08:43",
+    "body": "Attachment [2143-2.patch](tarball://root/attachments/some-uuid/ticket2143/2143-2.patch) by @mwhansen created at 2008-03-15 23:08:43",
     "created_at": "2008-03-15T23:08:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2143#issuecomment-14054",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2143-2.patch](tarball://root/attachments/some-uuid/ticket2143/2143-2.patch) by mhansen created at 2008-03-15 23:08:43
+Attachment [2143-2.patch](tarball://root/attachments/some-uuid/ticket2143/2143-2.patch) by @mwhansen created at 2008-03-15 23:08:43
 
 
 
@@ -144,7 +144,7 @@ archive/issue_comments_014055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2143#issuecomment-14055",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_014059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2143#issuecomment-14059",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

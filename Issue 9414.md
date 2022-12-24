@@ -3,7 +3,7 @@
 archive/issues_009414.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nKeywords: number field, rationals\n\nCurrently QQ behaves different than a generic number field. This forces number theory functions to treat QQ separately, which is inconvenient.\n\n\n```\nK = QQ\nI = K.ideal(7)\n```\n\n\nThis creates ideal that does not have the functions I.denominator, I.numerator, I.prime_ideals() ... which a fractional ideal in a number field should have\n\n\n```\nK.<a> = NumberField(x^2+2)\nI = K.ideal(7)\n```\n\n\nSimilarly, QQ.places() is not implemented; it should return the one infinite place for Q. Although there seems to be QQ.embeddings().\n\n\n```\nQQ.places()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9414\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: number field, rationals\n\nCurrently QQ behaves different than a generic number field. This forces number theory functions to treat QQ separately, which is inconvenient.\n\n\n```\nK = QQ\nI = K.ideal(7)\n```\n\n\nThis creates ideal that does not have the functions I.denominator, I.numerator, I.prime_ideals() ... which a fractional ideal in a number field should have\n\n\n```\nK.<a> = NumberField(x^2+2)\nI = K.ideal(7)\n```\n\n\nSimilarly, QQ.places() is not implemented; it should return the one infinite place for Q. Although there seems to be QQ.embeddings().\n\n\n```\nQQ.places()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9414\n\n",
     "created_at": "2010-07-03T02:38:31Z",
     "labels": [
         "number fields",
@@ -17,7 +17,7 @@ archive/issues_009414.json:
     "user": "rkirov"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 Keywords: number field, rationals
 
@@ -63,7 +63,7 @@ archive/issue_comments_089738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9414#issuecomment-89738",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_089739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9414#issuecomment-89739",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_089740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9414#issuecomment-89740",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_089741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9414",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9414#issuecomment-89741",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

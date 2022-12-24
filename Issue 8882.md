@@ -14,7 +14,7 @@ archive/issues_008882.json:
     "title": "Cleanup Combinatorial Free module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8882",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: sage-combinat
@@ -45,7 +45,7 @@ archive/issue_comments_081635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81635",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_081636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81636",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_081637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81637",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -103,16 +103,16 @@ You do exactly what is said in the description. But I noticed a few things that 
 archive/issue_comments_081638.json:
 ```json
 {
-    "body": "Attachment [trac_8832-free_module_coerce-fh.patch](tarball://root/attachments/some-uuid/ticket8882/trac_8832-free_module_coerce-fh.patch) by hivert created at 2010-05-05 14:23:21",
+    "body": "Attachment [trac_8832-free_module_coerce-fh.patch](tarball://root/attachments/some-uuid/ticket8882/trac_8832-free_module_coerce-fh.patch) by @hivert created at 2010-05-05 14:23:21",
     "created_at": "2010-05-05T14:23:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81638",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8832-free_module_coerce-fh.patch](tarball://root/attachments/some-uuid/ticket8882/trac_8832-free_module_coerce-fh.patch) by hivert created at 2010-05-05 14:23:21
+Attachment [trac_8832-free_module_coerce-fh.patch](tarball://root/attachments/some-uuid/ticket8882/trac_8832-free_module_coerce-fh.patch) by @hivert created at 2010-05-05 14:23:21
 
 
 
@@ -126,7 +126,7 @@ archive/issue_comments_081639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81639",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_081640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81640",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_081641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81641",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_081642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81642",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_081643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81643",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_081644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81644",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -253,16 +253,16 @@ the comment says that `args[2]` will be converted into a tuple, but I don't actu
 archive/issue_comments_081645.json:
 ```json
 {
-    "body": "Attachment [trac_8882-freemod_interface_cleanup-fh.patch](tarball://root/attachments/some-uuid/ticket8882/trac_8882-freemod_interface_cleanup-fh.patch) by hivert created at 2010-05-05 15:22:45",
+    "body": "Attachment [trac_8882-freemod_interface_cleanup-fh.patch](tarball://root/attachments/some-uuid/ticket8882/trac_8882-freemod_interface_cleanup-fh.patch) by @hivert created at 2010-05-05 15:22:45",
     "created_at": "2010-05-05T15:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81645",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8882-freemod_interface_cleanup-fh.patch](tarball://root/attachments/some-uuid/ticket8882/trac_8882-freemod_interface_cleanup-fh.patch) by hivert created at 2010-05-05 15:22:45
+Attachment [trac_8882-freemod_interface_cleanup-fh.patch](tarball://root/attachments/some-uuid/ticket8882/trac_8882-freemod_interface_cleanup-fh.patch) by @hivert created at 2010-05-05 15:22:45
 
 
 
@@ -276,7 +276,7 @@ archive/issue_comments_081646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81646",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_081647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81647",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_081648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8882#issuecomment-81648",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

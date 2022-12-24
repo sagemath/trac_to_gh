@@ -3,7 +3,7 @@
 archive/issues_009437.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  vdelecroix\n\nKeywords: group, matrix, special linear\n\nSage is not able to work with special linear group over finite rings (for example iterate over its element). As in the following example, the constructor accept the argument Zmod(4). But the object is not able to do anything due to call to finite field in gap. Curiously, list(G) and G.list() does not raise the same error (but both of them do).\n\n\n```\nsage: G = SL(2, Zmod(4))\nsage: print G\nsage: list(G)\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: variable names have not yet been set using self._assign_names(...)\nerror coercing to finite field\nsage: G.list()\nNameError                                 Traceback (most recent call last)\nNameError: name 'ZmodnZObj' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9437\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @videlec\n\nKeywords: group, matrix, special linear\n\nSage is not able to work with special linear group over finite rings (for example iterate over its element). As in the following example, the constructor accept the argument Zmod(4). But the object is not able to do anything due to call to finite field in gap. Curiously, list(G) and G.list() does not raise the same error (but both of them do).\n\n\n```\nsage: G = SL(2, Zmod(4))\nsage: print G\nsage: list(G)\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: variable names have not yet been set using self._assign_names(...)\nerror coercing to finite field\nsage: G.list()\nNameError                                 Traceback (most recent call last)\nNameError: name 'ZmodnZObj' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9437\n\n",
     "created_at": "2010-07-06T15:24:59Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009437.json:
     "title": "special linear group over finite rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9437",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  vdelecroix
+CC:  @videlec
 
 Keywords: group, matrix, special linear
 
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9437
 archive/issue_comments_090337.json:
 ```json
 {
-    "body": "Attachment [trac_9437_matrix_group_finite_ring.patch](tarball://root/attachments/some-uuid/ticket9437/trac_9437_matrix_group_finite_ring.patch) by davidloeffler created at 2010-09-23 13:28:21\n\npatch against 4.6.alpha1",
+    "body": "Attachment [trac_9437_matrix_group_finite_ring.patch](tarball://root/attachments/some-uuid/ticket9437/trac_9437_matrix_group_finite_ring.patch) by @loefflerd created at 2010-09-23 13:28:21\n\npatch against 4.6.alpha1",
     "created_at": "2010-09-23T13:28:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90337",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9437_matrix_group_finite_ring.patch](tarball://root/attachments/some-uuid/ticket9437/trac_9437_matrix_group_finite_ring.patch) by davidloeffler created at 2010-09-23 13:28:21
+Attachment [trac_9437_matrix_group_finite_ring.patch](tarball://root/attachments/some-uuid/ticket9437/trac_9437_matrix_group_finite_ring.patch) by @loefflerd created at 2010-09-23 13:28:21
 
 patch against 4.6.alpha1
 
@@ -76,7 +76,7 @@ archive/issue_comments_090338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90338",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_090339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90339",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_090340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90340",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_090341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90341",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_090342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90342",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_090343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90343",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_090344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90344",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_090345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90345",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_090346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90346",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_090347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90347",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_090348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90348",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_090349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90349",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_090350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90350",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -337,16 +337,16 @@ rebased version
 archive/issue_comments_090351.json:
 ```json
 {
-    "body": "Attachment [trac_9437_matrix_group_finite_ring-rebase.patch](tarball://root/attachments/some-uuid/ticket9437/trac_9437_matrix_group_finite_ring-rebase.patch) by davidloeffler created at 2011-01-27 15:24:04\n\nDone. There's no change in the actual code of the patch, just variable names and diff context, so I'm reinstating the positive review.",
+    "body": "Attachment [trac_9437_matrix_group_finite_ring-rebase.patch](tarball://root/attachments/some-uuid/ticket9437/trac_9437_matrix_group_finite_ring-rebase.patch) by @loefflerd created at 2011-01-27 15:24:04\n\nDone. There's no change in the actual code of the patch, just variable names and diff context, so I'm reinstating the positive review.",
     "created_at": "2011-01-27T15:24:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90351",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9437_matrix_group_finite_ring-rebase.patch](tarball://root/attachments/some-uuid/ticket9437/trac_9437_matrix_group_finite_ring-rebase.patch) by davidloeffler created at 2011-01-27 15:24:04
+Attachment [trac_9437_matrix_group_finite_ring-rebase.patch](tarball://root/attachments/some-uuid/ticket9437/trac_9437_matrix_group_finite_ring-rebase.patch) by @loefflerd created at 2011-01-27 15:24:04
 
 Done. There's no change in the actual code of the patch, just variable names and diff context, so I'm reinstating the positive review.
 
@@ -362,7 +362,7 @@ archive/issue_comments_090352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90352",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_090353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9437#issuecomment-90353",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

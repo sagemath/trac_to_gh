@@ -3,7 +3,7 @@
 archive/issues_008907.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThis is needed by #8542 .  There is an spkg at http://sage.math.washington.edu/home/mhansen/python-2.6.4.p8.spkg but it requires lots of testing.  Also, the changes are not committed to the repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8907\n\n",
+    "body": "Assignee: @aghitza\n\nThis is needed by #8542 .  There is an spkg at http://sage.math.washington.edu/home/mhansen/python-2.6.4.p8.spkg but it requires lots of testing.  Also, the changes are not committed to the repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8907\n\n",
     "created_at": "2010-05-06T17:10:55Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008907.json:
     "title": "build Python as a shared library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8907",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 This is needed by #8542 .  There is an spkg at http://sage.math.washington.edu/home/mhansen/python-2.6.4.p8.spkg but it requires lots of testing.  Also, the changes are not committed to the repository.
 
@@ -37,7 +37,7 @@ archive/issue_comments_082030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8907#issuecomment-82030",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_082031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8907#issuecomment-82031",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_082032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8907#issuecomment-82032",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_082033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8907#issuecomment-82033",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_082034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8907",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8907#issuecomment-82034",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

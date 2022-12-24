@@ -3,7 +3,7 @@
 archive/issues_000398.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  wdj\n\nKeywords: ode, desolve, maxima\n\nJust some basic work on getting the desolvers.py code to work in the calculus package.   I hope to revamp this more thoroughly, comments are welcome. - Marshall Hampton\n\nIssue created by migration from https://trac.sagemath.org/ticket/398\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: ode, desolve, maxima\n\nJust some basic work on getting the desolvers.py code to work in the calculus package.   I hope to revamp this more thoroughly, comments are welcome. - Marshall Hampton\n\nIssue created by migration from https://trac.sagemath.org/ticket/398\n\n",
     "created_at": "2007-07-02T20:41:54Z",
     "labels": [
         "interfaces",
@@ -17,9 +17,9 @@ archive/issues_000398.json:
     "user": "mhampton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  wdj
+CC:  @wdjoyner
 
 Keywords: ode, desolve, maxima
 
@@ -83,7 +83,7 @@ archive/issue_comments_001959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/398#issuecomment-1959",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

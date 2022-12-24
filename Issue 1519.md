@@ -3,7 +3,7 @@
 archive/issues_001519.json:
 ```json
 {
-    "body": "Assignee: was\n\nDoing\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1514/trac-1514.patch?format=raw')\n```\n\n\nshould work, but doesn't, because of the ?stuff at the end.  Fix this.\n\nHow to test the patch: Try applying a patch or bundle by pasting in the URL to the raw format as in the example above. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1519\n\n",
+    "body": "Assignee: @williamstein\n\nDoing\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1514/trac-1514.patch?format=raw')\n```\n\n\nshould work, but doesn't, because of the ?stuff at the end.  Fix this.\n\nHow to test the patch: Try applying a patch or bundle by pasting in the URL to the raw format as in the example above. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1519\n\n",
     "created_at": "2007-12-15T05:52:18Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_001519.json:
     "title": "hg problem -- This should work but doesn't: sage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/1514/trac-1514.patch?format=raw')",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1519",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Doing
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1519
 archive/issue_comments_009730.json:
 ```json
 {
-    "body": "Attachment [trac-1519.patch](tarball://root/attachments/some-uuid/ticket1519/trac-1519.patch) by was created at 2007-12-15 06:19:18",
+    "body": "Attachment [trac-1519.patch](tarball://root/attachments/some-uuid/ticket1519/trac-1519.patch) by @williamstein created at 2007-12-15 06:19:18",
     "created_at": "2007-12-15T06:19:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1519#issuecomment-9730",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1519.patch](tarball://root/attachments/some-uuid/ticket1519/trac-1519.patch) by was created at 2007-12-15 06:19:18
+Attachment [trac-1519.patch](tarball://root/attachments/some-uuid/ticket1519/trac-1519.patch) by @williamstein created at 2007-12-15 06:19:18
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_009731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1519#issuecomment-9731",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

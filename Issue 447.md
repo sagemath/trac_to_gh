@@ -14,7 +14,7 @@ archive/issues_000447.json:
     "title": "documentation for mpfr round in SAGE sucks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/447",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/447
 archive/issue_comments_002234.json:
 ```json
 {
-    "body": "Changing assignee from somebody to mhansen.",
+    "body": "Changing assignee from somebody to @mwhansen.",
     "created_at": "2007-08-18T22:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/447#issuecomment-2234",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from somebody to mhansen.
+Changing assignee from somebody to @mwhansen.
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_002235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/447#issuecomment-2235",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

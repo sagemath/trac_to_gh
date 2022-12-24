@@ -3,7 +3,7 @@
 archive/issues_009235.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  niles\n\nKeywords: doctest coverage homset\n\nThe doctest coverage for sage.categories.homset was\n\n```\nSCORE devel/sage-main/sage/categories/homset.py: 52% (13 of 25)\n```\n\n\nMy patch covers all but two methods:\n\n* get_action_c\n* coerce_map_from_c\n\nThese two return (by default) None. Is there a good *indirect* doctest for these two? I am not familiar with `get_action`, and I don't know what `coerce_map_from_c` does, compared with `_coerce_map_from_`. Perhaps the reviewer can explain it to me, so that I or s/he can add the two missing tests?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9235\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  @nilesjohnson\n\nKeywords: doctest coverage homset\n\nThe doctest coverage for sage.categories.homset was\n\n```\nSCORE devel/sage-main/sage/categories/homset.py: 52% (13 of 25)\n```\n\n\nMy patch covers all but two methods:\n\n* get_action_c\n* coerce_map_from_c\n\nThese two return (by default) None. Is there a good *indirect* doctest for these two? I am not familiar with `get_action`, and I don't know what `coerce_map_from_c` does, compared with `_coerce_map_from_`. Perhaps the reviewer can explain it to me, so that I or s/he can add the two missing tests?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9235\n\n",
     "created_at": "2010-06-14T09:59:42Z",
     "labels": [
         "categories",
@@ -14,12 +14,12 @@ archive/issues_009235.json:
     "title": "Doctest coverage for sage.categories.homset",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9235",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  niles
+CC:  @nilesjohnson
 
 Keywords: doctest coverage homset
 
@@ -53,7 +53,7 @@ archive/issue_comments_086683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86683",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_086684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86684",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_086685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86685",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_086686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86686",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_086687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86687",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_086688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86688",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_086689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86689",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_086690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86690",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -200,16 +200,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_086691.json:
 ```json
 {
-    "body": "Attachment [9235-reviewer.patch](tarball://root/attachments/some-uuid/ticket9235/9235-reviewer.patch) by niles created at 2011-05-29 06:59:58\n\nYou're right -- this shouldn't have to wait so long!  I've looked through all the changes, and they look good!  All tests pass, and the documentation builds cleanly, without warnings.  \n\nI used `search_src` to look for other places in Sage where `get_action_c` and `coerce_map_from_c` are used.  The only places they appear are in `structure/parent_old`, so I think these in Homset should be deprecated and (later) removed.  I've added a reviewer patch which adds deprecation warnings and corresponding tests, raising the coverage to 100%.\n\nThe only issue I have with `9235_doctest_homset.patch` is the following block:\n\n\n```\n    if category is None:\n        if cat_X.is_subcategory(cat_Y):\n            category = cat_Y\n        elif cat_Y.is_subcategory(cat_X):\n            # NT: this \"category is None\" test is useless and could be removed\n            # SK: Indeed! For that reason, the ValueError would never be raised\n            # NT: why is there an assymmetry between X and Y?\n            # SK: I see no reason. In particular, I don't see why an error should\n            #     be raised if cat_X is not cat_Y. So, I uncomment the following\n            #     two lines.\n##             if not (category is None) and not (cat_X is cat_Y):\n##                 raise ValueError, \"No unambiguous category found for Hom from %s to %s.\"%(X,Y)\n            category = cat_X\n        else:\n            # Search for the lowest common super category\n            subcats_X = cat_X.all_super_categories(proper = True)\n            subcats_Y = set(cat_Y.all_super_categories(proper = True))\n            category = None\n            for c in subcats_X:\n                if c in subcats_Y:\n                    category = c\n                    break\n\n            if category is None:\n                raise TypeError, \"No suitable category found for Hom from %s to %s.\"%(X,Y)\n```\n\n\nIf there's no reason to include the second \"`category is None`\" test, then it and the previous comments should simply be deleted.  And there is a third \"`category is None`\" test in this block which also looks redundant.",
+    "body": "Attachment [9235-reviewer.patch](tarball://root/attachments/some-uuid/ticket9235/9235-reviewer.patch) by @nilesjohnson created at 2011-05-29 06:59:58\n\nYou're right -- this shouldn't have to wait so long!  I've looked through all the changes, and they look good!  All tests pass, and the documentation builds cleanly, without warnings.  \n\nI used `search_src` to look for other places in Sage where `get_action_c` and `coerce_map_from_c` are used.  The only places they appear are in `structure/parent_old`, so I think these in Homset should be deprecated and (later) removed.  I've added a reviewer patch which adds deprecation warnings and corresponding tests, raising the coverage to 100%.\n\nThe only issue I have with `9235_doctest_homset.patch` is the following block:\n\n\n```\n    if category is None:\n        if cat_X.is_subcategory(cat_Y):\n            category = cat_Y\n        elif cat_Y.is_subcategory(cat_X):\n            # NT: this \"category is None\" test is useless and could be removed\n            # SK: Indeed! For that reason, the ValueError would never be raised\n            # NT: why is there an assymmetry between X and Y?\n            # SK: I see no reason. In particular, I don't see why an error should\n            #     be raised if cat_X is not cat_Y. So, I uncomment the following\n            #     two lines.\n##             if not (category is None) and not (cat_X is cat_Y):\n##                 raise ValueError, \"No unambiguous category found for Hom from %s to %s.\"%(X,Y)\n            category = cat_X\n        else:\n            # Search for the lowest common super category\n            subcats_X = cat_X.all_super_categories(proper = True)\n            subcats_Y = set(cat_Y.all_super_categories(proper = True))\n            category = None\n            for c in subcats_X:\n                if c in subcats_Y:\n                    category = c\n                    break\n\n            if category is None:\n                raise TypeError, \"No suitable category found for Hom from %s to %s.\"%(X,Y)\n```\n\n\nIf there's no reason to include the second \"`category is None`\" test, then it and the previous comments should simply be deleted.  And there is a third \"`category is None`\" test in this block which also looks redundant.",
     "created_at": "2011-05-29T06:59:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86691",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [9235-reviewer.patch](tarball://root/attachments/some-uuid/ticket9235/9235-reviewer.patch) by niles created at 2011-05-29 06:59:58
+Attachment [9235-reviewer.patch](tarball://root/attachments/some-uuid/ticket9235/9235-reviewer.patch) by @nilesjohnson created at 2011-05-29 06:59:58
 
 You're right -- this shouldn't have to wait so long!  I've looked through all the changes, and they look good!  All tests pass, and the documentation builds cleanly, without warnings.  
 
@@ -261,7 +261,7 @@ archive/issue_comments_086692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86692",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_086693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86693",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_086694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86694",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_086695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86695",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_086696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86696",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -372,16 +372,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_086697.json:
 ```json
 {
-    "body": "Attachment [9235_doctest_homset.patch](tarball://root/attachments/some-uuid/ticket9235/9235_doctest_homset.patch) by SimonKing created at 2013-02-14 08:06:44\n\nThe patch is updated. I think that introducing a deprecation warning for the two survivors of the old coercion model should be the subject of a new ticket. This here should be \"doctests only\".\n\nTherefore:\n\nApply 9235_doctest_homset.patch",
+    "body": "Attachment [9235_doctest_homset.patch](tarball://root/attachments/some-uuid/ticket9235/9235_doctest_homset.patch) by @simon-king-jena created at 2013-02-14 08:06:44\n\nThe patch is updated. I think that introducing a deprecation warning for the two survivors of the old coercion model should be the subject of a new ticket. This here should be \"doctests only\".\n\nTherefore:\n\nApply 9235_doctest_homset.patch",
     "created_at": "2013-02-14T08:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86697",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [9235_doctest_homset.patch](tarball://root/attachments/some-uuid/ticket9235/9235_doctest_homset.patch) by SimonKing created at 2013-02-14 08:06:44
+Attachment [9235_doctest_homset.patch](tarball://root/attachments/some-uuid/ticket9235/9235_doctest_homset.patch) by @simon-king-jena created at 2013-02-14 08:06:44
 
 The patch is updated. I think that introducing a deprecation warning for the two survivors of the old coercion model should be the subject of a new ticket. This here should be "doctests only".
 
@@ -401,7 +401,7 @@ archive/issue_comments_086698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86698",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_086699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86699",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -443,7 +443,7 @@ archive/issue_comments_086700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86700",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -460,16 +460,16 @@ What shall we do? Shall I fix the misformattings in my patch? Or shall you fix i
 archive/issue_comments_086701.json:
 ```json
 {
-    "body": "Attachment [trac_9235-doctest_homset-review-ts.patch](tarball://root/attachments/some-uuid/ticket9235/trac_9235-doctest_homset-review-ts.patch) by tscrim created at 2013-02-16 14:24:36\n\nFixed formatting",
+    "body": "Attachment [trac_9235-doctest_homset-review-ts.patch](tarball://root/attachments/some-uuid/ticket9235/trac_9235-doctest_homset-review-ts.patch) by @tscrim created at 2013-02-16 14:24:36\n\nFixed formatting",
     "created_at": "2013-02-16T14:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86701",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_9235-doctest_homset-review-ts.patch](tarball://root/attachments/some-uuid/ticket9235/trac_9235-doctest_homset-review-ts.patch) by tscrim created at 2013-02-16 14:24:36
+Attachment [trac_9235-doctest_homset-review-ts.patch](tarball://root/attachments/some-uuid/ticket9235/trac_9235-doctest_homset-review-ts.patch) by @tscrim created at 2013-02-16 14:24:36
 
 Fixed formatting
 
@@ -485,7 +485,7 @@ archive/issue_comments_086702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86702",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_086703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86703",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_086704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86704",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_086705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9235#issuecomment-86705",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

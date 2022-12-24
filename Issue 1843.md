@@ -3,7 +3,7 @@
 archive/issues_001843.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1843\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1843\n\n",
     "created_at": "2008-01-19T01:14:11Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_001843.json:
     "title": "[with patch; needs review] cputime for gp interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1843",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  malb
+CC:  @malb
 
 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1843
 archive/issue_comments_011667.json:
 ```json
 {
-    "body": "Attachment [trac-1843.patch](tarball://root/attachments/some-uuid/ticket1843/trac-1843.patch) by was created at 2008-01-19 01:14:26",
+    "body": "Attachment [trac-1843.patch](tarball://root/attachments/some-uuid/ticket1843/trac-1843.patch) by @williamstein created at 2008-01-19 01:14:26",
     "created_at": "2008-01-19T01:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1843#issuecomment-11667",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1843.patch](tarball://root/attachments/some-uuid/ticket1843/trac-1843.patch) by was created at 2008-01-19 01:14:26
+Attachment [trac-1843.patch](tarball://root/attachments/some-uuid/ticket1843/trac-1843.patch) by @williamstein created at 2008-01-19 01:14:26
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_011668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1843#issuecomment-11668",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_011669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1843#issuecomment-11669",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,16 +90,16 @@ this adds doctests  (apply both patches)
 archive/issue_comments_011670.json:
 ```json
 {
-    "body": "Attachment [trac-1843-part2.patch](tarball://root/attachments/some-uuid/ticket1843/trac-1843-part2.patch) by mhansen created at 2008-01-21 05:52:45\n\nThey both apply and work for me.",
+    "body": "Attachment [trac-1843-part2.patch](tarball://root/attachments/some-uuid/ticket1843/trac-1843-part2.patch) by @mwhansen created at 2008-01-21 05:52:45\n\nThey both apply and work for me.",
     "created_at": "2008-01-21T05:52:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1843#issuecomment-11670",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac-1843-part2.patch](tarball://root/attachments/some-uuid/ticket1843/trac-1843-part2.patch) by mhansen created at 2008-01-21 05:52:45
+Attachment [trac-1843-part2.patch](tarball://root/attachments/some-uuid/ticket1843/trac-1843-part2.patch) by @mwhansen created at 2008-01-21 05:52:45
 
 They both apply and work for me.
 

@@ -14,7 +14,7 @@ archive/issues_004139.json:
     "title": "[with patch, needs review] Improvements to permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4139",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: joyner
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4139
 archive/issue_comments_030046.json:
 ```json
 {
-    "body": "Attachment [trac_4139.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139.patch) by mhansen created at 2008-09-17 09:04:00",
+    "body": "Attachment [trac_4139.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139.patch) by @mwhansen created at 2008-09-17 09:04:00",
     "created_at": "2008-09-17T09:04:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4139#issuecomment-30046",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4139.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139.patch) by mhansen created at 2008-09-17 09:04:00
+Attachment [trac_4139.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139.patch) by @mwhansen created at 2008-09-17 09:04:00
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_030047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4139#issuecomment-30047",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_030049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4139#issuecomment-30049",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_030050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4139#issuecomment-30050",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_030051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4139#issuecomment-30051",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -254,16 +254,16 @@ Got:
 archive/issue_comments_030052.json:
 ```json
 {
-    "body": "Attachment [trac_4139-rebase-fix.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139-rebase-fix.patch) by mhansen created at 2008-09-19 07:43:07",
+    "body": "Attachment [trac_4139-rebase-fix.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139-rebase-fix.patch) by @mwhansen created at 2008-09-19 07:43:07",
     "created_at": "2008-09-19T07:43:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4139#issuecomment-30052",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4139-rebase-fix.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139-rebase-fix.patch) by mhansen created at 2008-09-19 07:43:07
+Attachment [trac_4139-rebase-fix.patch](tarball://root/attachments/some-uuid/ticket4139/trac_4139-rebase-fix.patch) by @mwhansen created at 2008-09-19 07:43:07
 
 
 
@@ -277,7 +277,7 @@ archive/issue_comments_030053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4139#issuecomment-30053",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_030054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4139#issuecomment-30054",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_030057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4139#issuecomment-30057",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

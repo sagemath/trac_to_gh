@@ -3,7 +3,7 @@
 archive/issues_003511.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nIn my education, this matrix was always referred to as the laplacian of the graph; I think the term may be more common.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3511\n\n",
+    "body": "Assignee: @rlmill\n\nIn my education, this matrix was always referred to as the laplacian of the graph; I think the term may be more common.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3511\n\n",
     "created_at": "2008-06-25T17:32:51Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003511.json:
     "title": "make laplacian_matrix a synonym for kirchoff_matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3511",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 In my education, this matrix was always referred to as the laplacian of the graph; I think the term may be more common.
 
@@ -37,7 +37,7 @@ archive/issue_comments_024736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3511#issuecomment-24736",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -50,16 +50,16 @@ Great, do it!
 archive/issue_comments_024737.json:
 ```json
 {
-    "body": "Attachment [3511-laplacian.patch](tarball://root/attachments/some-uuid/ticket3511/3511-laplacian.patch) by jason created at 2008-06-26 11:48:34",
+    "body": "Attachment [3511-laplacian.patch](tarball://root/attachments/some-uuid/ticket3511/3511-laplacian.patch) by @jasongrout created at 2008-06-26 11:48:34",
     "created_at": "2008-06-26T11:48:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3511#issuecomment-24737",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [3511-laplacian.patch](tarball://root/attachments/some-uuid/ticket3511/3511-laplacian.patch) by jason created at 2008-06-26 11:48:34
+Attachment [3511-laplacian.patch](tarball://root/attachments/some-uuid/ticket3511/3511-laplacian.patch) by @jasongrout created at 2008-06-26 11:48:34
 
 
 

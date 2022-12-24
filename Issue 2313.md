@@ -14,7 +14,7 @@ archive/issues_002313.json:
     "title": "old spkg's -- delete to save space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2313",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

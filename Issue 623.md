@@ -3,7 +3,7 @@
 archive/issues_000623.json:
 ```json
 {
-    "body": "Assignee: was\n\nUpdate the Cython package to the latest. \n\nIssue created by migration from https://trac.sagemath.org/ticket/623\n\n",
+    "body": "Assignee: @williamstein\n\nUpdate the Cython package to the latest. \n\nIssue created by migration from https://trac.sagemath.org/ticket/623\n\n",
     "created_at": "2007-09-07T19:43:40Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000623.json:
     "title": "New Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/623",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Update the Cython package to the latest. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/623
 archive/issue_comments_003202.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-09-07T19:43:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/623#issuecomment-3202",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_003203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/623#issuecomment-3203",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_003204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/623#issuecomment-3204",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_003206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/623#issuecomment-3206",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_003207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/623#issuecomment-3207",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005174.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n[09:30] <jason-> on the other hand, I always get frustrated trying to see a 30x30 matrix in Sage\n[09:30] <wstein> print a.str()\n[09:30] <jason-> yeah, I never remember it.\n[09:30] <wstein> That will show you any matrix in sage of any size.\n[09:31] <wstein> Well then the output of a._repr_() should mention it so you can remember it.  make a ticket.\n[09:31] <jason-> good point.\n[09:31] <jason-> I think I usually end up doing a.rows()\n[09:32] <jason-> or list(a)\n[09:32] <jason-> so you're saying print a should do:\n[09:32] <jason-> 30 x 30 dense matrix over Integer Ring (to see the entries, do print a.str())\n[09:33] <wstein> Yep.\n[09:33] <jason-> 30 x 30 dense matrix over Integer Ring (to see the entries, type \"print a.str()\")\n[09:33] <wstein> Of course it's possibly confusing since \"a.str()\" is really \"yourvar.str()\"\n[09:33] <wstein> but hopefully people can understand that.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5174\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n[09:30] <jason-> on the other hand, I always get frustrated trying to see a 30x30 matrix in Sage\n[09:30] <wstein> print a.str()\n[09:30] <jason-> yeah, I never remember it.\n[09:30] <wstein> That will show you any matrix in sage of any size.\n[09:31] <wstein> Well then the output of a._repr_() should mention it so you can remember it.  make a ticket.\n[09:31] <jason-> good point.\n[09:31] <jason-> I think I usually end up doing a.rows()\n[09:32] <jason-> or list(a)\n[09:32] <jason-> so you're saying print a should do:\n[09:32] <jason-> 30 x 30 dense matrix over Integer Ring (to see the entries, do print a.str())\n[09:33] <wstein> Yep.\n[09:33] <jason-> 30 x 30 dense matrix over Integer Ring (to see the entries, type \"print a.str()\")\n[09:33] <wstein> Of course it's possibly confusing since \"a.str()\" is really \"yourvar.str()\"\n[09:33] <wstein> but hopefully people can understand that.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5174\n\n",
     "created_at": "2009-02-04T15:38:28Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005174.json:
     "title": "_repr_ for large matrices should indicate how to see the entries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5174",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -54,7 +54,7 @@ archive/issue_comments_039634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5174#issuecomment-39634",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_039635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5174#issuecomment-39635",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_039636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5174#issuecomment-39636",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -122,16 +122,16 @@ Changing status from new to needs_review.
 archive/issue_comments_039637.json:
 ```json
 {
-    "body": "Attachment [trac_5174-matrixrep.patch](tarball://root/attachments/some-uuid/ticket5174/trac_5174-matrixrep.patch) by jhpalmieri created at 2009-12-12 20:18:39\n\nHere's a patch.  The docstring to the `__repr__` method for matrices illustrates what the patch does:\n\n```\n        EXAMPLES::\n\n            sage: A = matrix([[1,2], [3,4], [5,6]])\n            sage: A.__repr__()\n            '[1 2]\\n[3 4]\\n[5 6]'\n            sage: print A\n            [1 2]\n            [3 4]\n            [5 6]\n\n        If the matrix is too big, don't print all of the elements::\n\n            sage: A = random_matrix(ZZ, 100)\n            sage: A.__repr__()\n            \"100 x 100 dense matrix over Integer Ring (type 'print A.str()' to see all of the entries)\"\n            sage: print A\n            100 x 100 dense matrix over Integer Ring (type 'print A.str()' to see all of the entries)\n\n        If there are several names for the same matrix, write it as \"obj\"::\n\n            sage: B = A; print B\n            100 x 100 dense matrix over Integer Ring (type 'print obj.str()' to see all of the entries)\n```\n\n\nI actually think that this looks a little funny in some situations; for example, in chain_complex.py, the old version did this:\n\n```\n            sage: C.differential()\n            {0: 40 x 40 dense matrix over Integer Ring, 1: []}\n```\n\nwhile the new version does this:\n\n```\n            sage: C.differential()\n            {0: 40 x 40 dense matrix over Integer Ring (type 'print obj.str()' to see all of the entries), 1: []}\n```\n\nIt would be pretty easy to change the print representation so if there were no name attached to the object (e.g., if it were produced by another method, as in this example), then the extra message about \"print ...\" would be omitted.  Opinions?",
+    "body": "Attachment [trac_5174-matrixrep.patch](tarball://root/attachments/some-uuid/ticket5174/trac_5174-matrixrep.patch) by @jhpalmieri created at 2009-12-12 20:18:39\n\nHere's a patch.  The docstring to the `__repr__` method for matrices illustrates what the patch does:\n\n```\n        EXAMPLES::\n\n            sage: A = matrix([[1,2], [3,4], [5,6]])\n            sage: A.__repr__()\n            '[1 2]\\n[3 4]\\n[5 6]'\n            sage: print A\n            [1 2]\n            [3 4]\n            [5 6]\n\n        If the matrix is too big, don't print all of the elements::\n\n            sage: A = random_matrix(ZZ, 100)\n            sage: A.__repr__()\n            \"100 x 100 dense matrix over Integer Ring (type 'print A.str()' to see all of the entries)\"\n            sage: print A\n            100 x 100 dense matrix over Integer Ring (type 'print A.str()' to see all of the entries)\n\n        If there are several names for the same matrix, write it as \"obj\"::\n\n            sage: B = A; print B\n            100 x 100 dense matrix over Integer Ring (type 'print obj.str()' to see all of the entries)\n```\n\n\nI actually think that this looks a little funny in some situations; for example, in chain_complex.py, the old version did this:\n\n```\n            sage: C.differential()\n            {0: 40 x 40 dense matrix over Integer Ring, 1: []}\n```\n\nwhile the new version does this:\n\n```\n            sage: C.differential()\n            {0: 40 x 40 dense matrix over Integer Ring (type 'print obj.str()' to see all of the entries), 1: []}\n```\n\nIt would be pretty easy to change the print representation so if there were no name attached to the object (e.g., if it were produced by another method, as in this example), then the extra message about \"print ...\" would be omitted.  Opinions?",
     "created_at": "2009-12-12T20:18:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5174#issuecomment-39637",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_5174-matrixrep.patch](tarball://root/attachments/some-uuid/ticket5174/trac_5174-matrixrep.patch) by jhpalmieri created at 2009-12-12 20:18:39
+Attachment [trac_5174-matrixrep.patch](tarball://root/attachments/some-uuid/ticket5174/trac_5174-matrixrep.patch) by @jhpalmieri created at 2009-12-12 20:18:39
 
 Here's a patch.  The docstring to the `__repr__` method for matrices illustrates what the patch does:
 
@@ -189,7 +189,7 @@ archive/issue_comments_039638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5174#issuecomment-39638",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_039639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5174#issuecomment-39639",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_039640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5174#issuecomment-39640",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -257,16 +257,16 @@ Here's a new version of the patch.  This is similar to the old one, but it behav
 archive/issue_comments_039641.json:
 ```json
 {
-    "body": "Attachment [trac_5174-matrixrep-v2.patch](tarball://root/attachments/some-uuid/ticket5174/trac_5174-matrixrep-v2.patch) by mhansen created at 2009-12-27 15:38:23\n\nThe second patch looks good to me.",
+    "body": "Attachment [trac_5174-matrixrep-v2.patch](tarball://root/attachments/some-uuid/ticket5174/trac_5174-matrixrep-v2.patch) by @mwhansen created at 2009-12-27 15:38:23\n\nThe second patch looks good to me.",
     "created_at": "2009-12-27T15:38:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5174#issuecomment-39641",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5174-matrixrep-v2.patch](tarball://root/attachments/some-uuid/ticket5174/trac_5174-matrixrep-v2.patch) by mhansen created at 2009-12-27 15:38:23
+Attachment [trac_5174-matrixrep-v2.patch](tarball://root/attachments/some-uuid/ticket5174/trac_5174-matrixrep-v2.patch) by @mwhansen created at 2009-12-27 15:38:23
 
 The second patch looks good to me.
 
@@ -282,7 +282,7 @@ archive/issue_comments_039642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5174#issuecomment-39642",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_039643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5174#issuecomment-39643",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

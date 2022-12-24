@@ -3,7 +3,7 @@
 archive/issues_008044.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat vengoroso@gmail.com\n\nKeywords: Finite groups, permutation groups\n\nThis patch:\n\n- Introduces two new categories, FiniteGroups and FinitePermutationGroups\n- Deprecates the class sage.groups.group.FiniteGroup\n  (content moved to the FiniteGroups category; this is essentially\n  the cayley_graph method)\n- Puts all permutation groups and most other finite groups in the\n  corresponding categories\n- As a result, this standardizes the interface of those groups\n  (cardinality, one, ...), and reveals lots of failures in the\n  completely undocumented PariGroup (category not set properly yet)\n- Makes a minor improvement to FiniteEnumeratedSets tests for\n  large finite enumerated sets\n\nIssue created by migration from https://trac.sagemath.org/ticket/8044\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat vengoroso@gmail.com\n\nKeywords: Finite groups, permutation groups\n\nThis patch:\n\n- Introduces two new categories, FiniteGroups and FinitePermutationGroups\n- Deprecates the class sage.groups.group.FiniteGroup\n  (content moved to the FiniteGroups category; this is essentially\n  the cayley_graph method)\n- Puts all permutation groups and most other finite groups in the\n  corresponding categories\n- As a result, this standardizes the interface of those groups\n  (cardinality, one, ...), and reveals lots of failures in the\n  completely undocumented PariGroup (category not set properly yet)\n- Makes a minor improvement to FiniteEnumeratedSets tests for\n  large finite enumerated sets\n\nIssue created by migration from https://trac.sagemath.org/ticket/8044\n\n",
     "created_at": "2010-01-23T10:29:04Z",
     "labels": [
         "group theory",
@@ -14,10 +14,10 @@ archive/issues_008044.json:
     "title": "Categories for finite (permutation) groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8044",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat vengoroso@gmail.com
 
@@ -53,7 +53,7 @@ archive/issue_comments_070297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70297",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_070298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70298",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_070299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70299",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_070300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70300",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_070301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70301",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_070302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70302",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -156,16 +156,16 @@ Applies over the precedent patch.
 archive/issue_comments_070303.json:
 ```json
 {
-    "body": "Attachment [trac_8044_cayley_graph-sl.patch](tarball://root/attachments/some-uuid/ticket8044/trac_8044_cayley_graph-sl.patch) by slabbe created at 2010-01-29 16:09:52\n\nI just added a patch which adds some examples of cayley graphs.\n\nIt also adds `FiniteGroup` to the base classes of `MatrixGroup_gap_finite_field`.",
+    "body": "Attachment [trac_8044_cayley_graph-sl.patch](tarball://root/attachments/some-uuid/ticket8044/trac_8044_cayley_graph-sl.patch) by @seblabbe created at 2010-01-29 16:09:52\n\nI just added a patch which adds some examples of cayley graphs.\n\nIt also adds `FiniteGroup` to the base classes of `MatrixGroup_gap_finite_field`.",
     "created_at": "2010-01-29T16:09:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70303",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8044_cayley_graph-sl.patch](tarball://root/attachments/some-uuid/ticket8044/trac_8044_cayley_graph-sl.patch) by slabbe created at 2010-01-29 16:09:52
+Attachment [trac_8044_cayley_graph-sl.patch](tarball://root/attachments/some-uuid/ticket8044/trac_8044_cayley_graph-sl.patch) by @seblabbe created at 2010-01-29 16:09:52
 
 I just added a patch which adds some examples of cayley graphs.
 
@@ -183,7 +183,7 @@ archive/issue_comments_070304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70304",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_070305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70305",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_070306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70306",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_070307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70307",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -337,16 +337,16 @@ For the rest, assuming that the doctest pass (it might be something with my sage
 archive/issue_comments_070309.json:
 ```json
 {
-    "body": "Attachment [trac_8044-categories_finite_groups-nt.patch](tarball://root/attachments/some-uuid/ticket8044/trac_8044-categories_finite_groups-nt.patch) by nthiery created at 2010-02-01 10:02:28\n\nApply only this one",
+    "body": "Attachment [trac_8044-categories_finite_groups-nt.patch](tarball://root/attachments/some-uuid/ticket8044/trac_8044-categories_finite_groups-nt.patch) by @nthiery created at 2010-02-01 10:02:28\n\nApply only this one",
     "created_at": "2010-02-01T10:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70309",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8044-categories_finite_groups-nt.patch](tarball://root/attachments/some-uuid/ticket8044/trac_8044-categories_finite_groups-nt.patch) by nthiery created at 2010-02-01 10:02:28
+Attachment [trac_8044-categories_finite_groups-nt.patch](tarball://root/attachments/some-uuid/ticket8044/trac_8044-categories_finite_groups-nt.patch) by @nthiery created at 2010-02-01 10:02:28
 
 Apply only this one
 
@@ -362,7 +362,7 @@ archive/issue_comments_070310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70310",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_070313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8044#issuecomment-70313",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

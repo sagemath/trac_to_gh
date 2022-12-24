@@ -14,7 +14,7 @@ archive/issues_004916.json:
     "title": "convert sage.lfunctions.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4916",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4916
 archive/issue_comments_037308.json:
 ```json
 {
-    "body": "Attachment [trac_4916.patch](tarball://root/attachments/some-uuid/ticket4916/trac_4916.patch) by mhansen created at 2009-01-02 02:32:43",
+    "body": "Attachment [trac_4916.patch](tarball://root/attachments/some-uuid/ticket4916/trac_4916.patch) by @mwhansen created at 2009-01-02 02:32:43",
     "created_at": "2009-01-02T02:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4916#issuecomment-37308",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4916.patch](tarball://root/attachments/some-uuid/ticket4916/trac_4916.patch) by mhansen created at 2009-01-02 02:32:43
+Attachment [trac_4916.patch](tarball://root/attachments/some-uuid/ticket4916/trac_4916.patch) by @mwhansen created at 2009-01-02 02:32:43
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_037309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4916#issuecomment-37309",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_037310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4916#issuecomment-37310",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_037311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4916#issuecomment-37311",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

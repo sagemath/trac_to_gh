@@ -3,7 +3,7 @@
 archive/issues_001568.json:
 ```json
 {
-    "body": "Assignee: was\n\nNew version of frobenius; renamed to hypellfrob.\n\nThis depends on `zn_poly`; see #1567.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1568\n\n",
+    "body": "Assignee: @williamstein\n\nNew version of frobenius; renamed to hypellfrob.\n\nThis depends on `zn_poly`; see #1567.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1568\n\n",
     "created_at": "2007-12-19T15:20:25Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001568.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 New version of frobenius; renamed to hypellfrob.
 
@@ -58,7 +58,7 @@ archive/issue_comments_009991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1568#issuecomment-9991",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

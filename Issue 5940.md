@@ -3,7 +3,7 @@
 archive/issues_005940.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n```\nsage: g = graphs.KrackhardtKiteGraph()\nsage: g.is_circular_planar()\nTraceback...\nIndexError: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5940\n\n",
+    "body": "Assignee: @rlmill\n\n\n```\nsage: g = graphs.KrackhardtKiteGraph()\nsage: g.is_circular_planar()\nTraceback...\nIndexError: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5940\n\n",
     "created_at": "2009-04-29T17:03:47Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_005940.json:
     "title": "graph theory -- bug in is_circular_planar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5940",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 ```
@@ -62,7 +62,7 @@ archive/issue_comments_046957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5940#issuecomment-46957",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_046958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5940#issuecomment-46958",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -93,16 +93,16 @@ Apply instead.
 archive/issue_comments_046959.json:
 ```json
 {
-    "body": "Attachment [trac_5940-ref_fix.patch](tarball://root/attachments/some-uuid/ticket5940/trac_5940-ref_fix.patch) by rlm created at 2009-05-18 20:46:18",
+    "body": "Attachment [trac_5940-ref_fix.patch](tarball://root/attachments/some-uuid/ticket5940/trac_5940-ref_fix.patch) by @rlmill created at 2009-05-18 20:46:18",
     "created_at": "2009-05-18T20:46:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5940#issuecomment-46959",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_5940-ref_fix.patch](tarball://root/attachments/some-uuid/ticket5940/trac_5940-ref_fix.patch) by rlm created at 2009-05-18 20:46:18
+Attachment [trac_5940-ref_fix.patch](tarball://root/attachments/some-uuid/ticket5940/trac_5940-ref_fix.patch) by @rlmill created at 2009-05-18 20:46:18
 
 
 

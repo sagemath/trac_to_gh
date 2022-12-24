@@ -14,7 +14,7 @@ archive/issues_006975.json:
     "title": "flint package fixed to work in cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6975",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_057693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6975#issuecomment-57693",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

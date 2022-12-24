@@ -3,7 +3,7 @@
 archive/issues_003367.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  mhansen\n\nI wrote over at #3254:\nIs CachedFunction the right name though? Shouldn't it be cached_function? I think there is a different style convention for the persistent and the cached functions which is a bummer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3367\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @mwhansen\n\nI wrote over at #3254:\nIs CachedFunction the right name though? Shouldn't it be cached_function? I think there is a different style convention for the persistent and the cached functions which is a bummer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3367\n\n",
     "created_at": "2008-06-04T21:06:05Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_003367.json:
     "title": "rename CachedFunction to cached_function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3367",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: cwitty
 
-CC:  mhansen
+CC:  @mwhansen
 
 I wrote over at #3254:
 Is CachedFunction the right name though? Shouldn't it be cached_function? I think there is a different style convention for the persistent and the cached functions which is a bummer.
@@ -40,7 +40,7 @@ archive/issue_comments_023560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3367#issuecomment-23560",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_023561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3367#issuecomment-23561",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_023563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3367#issuecomment-23563",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_023564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3367#issuecomment-23564",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_023565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3367#issuecomment-23565",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_023566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3367#issuecomment-23566",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

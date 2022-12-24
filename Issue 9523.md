@@ -3,7 +3,7 @@
 archive/issues_009523.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  timdumol\n\nUnder Arch linux, Sage fails to build, giving this error message:\n\n```\nbash: symbol lookup error: bash: undefined symbol: rl_filename_rewrite_hook\n```\n\nin the middle of the sqlite build (the next package built after readline).\n\nThis is a new symbol that was added in readline 6.1; so I'm pretty sure the problem is because our readline 6.0 is missing that symbol, so trying to run Arch's /bin/bash with our LD_LIBRARY_PATH will fail.\n\nWe should upgrade our readline spkg to 6.1; I bet that would fix the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9523\n\n",
+    "body": "Assignee: tbd\n\nCC:  @TimDumol\n\nUnder Arch linux, Sage fails to build, giving this error message:\n\n```\nbash: symbol lookup error: bash: undefined symbol: rl_filename_rewrite_hook\n```\n\nin the middle of the sqlite build (the next package built after readline).\n\nThis is a new symbol that was added in readline 6.1; so I'm pretty sure the problem is because our readline 6.0 is missing that symbol, so trying to run Arch's /bin/bash with our LD_LIBRARY_PATH will fail.\n\nWe should upgrade our readline spkg to 6.1; I bet that would fix the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9523\n\n",
     "created_at": "2010-07-17T04:43:30Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_009523.json:
 ```
 Assignee: tbd
 
-CC:  timdumol
+CC:  @TimDumol
 
 Under Arch linux, Sage fails to build, giving this error message:
 
@@ -87,7 +87,7 @@ archive/issue_comments_091540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91540",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_091541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91541",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_091542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91542",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_091543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91543",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_091544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91544",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_091545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91545",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_091554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91554",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_091555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91555",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_091556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91556",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -547,7 +547,7 @@ archive/issue_comments_091557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91557",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_091559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91559",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -643,7 +643,7 @@ archive/issue_comments_091560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91560",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -711,7 +711,7 @@ archive/issue_comments_091562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91562",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -808,7 +808,7 @@ archive/issue_comments_091566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91566",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -889,7 +889,7 @@ archive/issue_comments_091569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91569",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -909,7 +909,7 @@ archive/issue_comments_091570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91570",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -930,7 +930,7 @@ archive/issue_comments_091571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91571",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1065,7 +1065,7 @@ archive/issue_comments_091575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91575",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1078,16 +1078,16 @@ Complete spkg patch for reference
 archive/issue_comments_091576.json:
 ```json
 {
-    "body": "Attachment [readline-6.1.patch](tarball://root/attachments/some-uuid/ticket9523/readline-6.1.patch) by jdemeyer created at 2010-11-05 11:06:23\n\n\"presidence\" sould be \"precedence\"\n\nWhy is `patches/shobj-conf` under revision control?  I believe it is sufficient for the patch file to be under revision control (but putting the *patched* files also under revision control might be the usual Sage practice).\n\nI don't like `\"$CC\" -flags > /dev/null 2>&1` (`spkg-install` line 43) for various reasons:\n* I don't think $CC is supposed to be quoted because people might do things like CC=\"gcc -m64\"\n* You should redirect stdin from `/dev/null` in case $CC wants to read from stdin.\n* Instead of checking for Sun's compiler, why not check explicitly for `gcc` using\n\n```\n$CC </dev/null >/dev/null 2>/dev/null --version |grep >/dev/null gcc\n```\n",
+    "body": "Attachment [readline-6.1.patch](tarball://root/attachments/some-uuid/ticket9523/readline-6.1.patch) by @jdemeyer created at 2010-11-05 11:06:23\n\n\"presidence\" sould be \"precedence\"\n\nWhy is `patches/shobj-conf` under revision control?  I believe it is sufficient for the patch file to be under revision control (but putting the *patched* files also under revision control might be the usual Sage practice).\n\nI don't like `\"$CC\" -flags > /dev/null 2>&1` (`spkg-install` line 43) for various reasons:\n* I don't think $CC is supposed to be quoted because people might do things like CC=\"gcc -m64\"\n* You should redirect stdin from `/dev/null` in case $CC wants to read from stdin.\n* Instead of checking for Sun's compiler, why not check explicitly for `gcc` using\n\n```\n$CC </dev/null >/dev/null 2>/dev/null --version |grep >/dev/null gcc\n```\n",
     "created_at": "2010-11-05T11:06:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91576",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [readline-6.1.patch](tarball://root/attachments/some-uuid/ticket9523/readline-6.1.patch) by jdemeyer created at 2010-11-05 11:06:23
+Attachment [readline-6.1.patch](tarball://root/attachments/some-uuid/ticket9523/readline-6.1.patch) by @jdemeyer created at 2010-11-05 11:06:23
 
 "presidence" sould be "precedence"
 
@@ -1171,7 +1171,7 @@ archive/issue_comments_091578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91578",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1206,7 +1206,7 @@ archive/issue_comments_091579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91579",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1224,7 +1224,7 @@ archive/issue_comments_091580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91580",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1242,7 +1242,7 @@ archive/issue_comments_091581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91581",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1260,7 +1260,7 @@ archive/issue_comments_091582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91582",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1379,7 +1379,7 @@ archive/issue_comments_091584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91584",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1421,7 +1421,7 @@ archive/issue_comments_091585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91585",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1436,16 +1436,16 @@ I think I'll first upload a reviewer patch without the changes from there.
 archive/issue_comments_091586.json:
 ```json
 {
-    "body": "Attachment [trac_9523-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9523/trac_9523-first_reviewer.patch) by leif created at 2010-11-05 17:16:07\n\nSPKG reviewer patch. Removes quotes from `$CC`etc. Apply on top of Dave's \"further clean-up\" patch.",
+    "body": "Attachment [trac_9523-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9523/trac_9523-first_reviewer.patch) by @nexttime created at 2010-11-05 17:16:07\n\nSPKG reviewer patch. Removes quotes from `$CC`etc. Apply on top of Dave's \"further clean-up\" patch.",
     "created_at": "2010-11-05T17:16:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91586",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9523-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9523/trac_9523-first_reviewer.patch) by leif created at 2010-11-05 17:16:07
+Attachment [trac_9523-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9523/trac_9523-first_reviewer.patch) by @nexttime created at 2010-11-05 17:16:07
 
 SPKG reviewer patch. Removes quotes from `$CC`etc. Apply on top of Dave's "further clean-up" patch.
 
@@ -1461,7 +1461,7 @@ archive/issue_comments_091587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91587",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1550,7 +1550,7 @@ archive/issue_comments_091591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91591",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1568,7 +1568,7 @@ archive/issue_comments_091592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91592",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1604,7 +1604,7 @@ archive/issue_comments_091594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91594",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1628,7 +1628,7 @@ archive/issue_comments_091595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91595",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1646,7 +1646,7 @@ archive/issue_comments_091596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91596",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1664,7 +1664,7 @@ archive/issue_comments_091597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91597",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1687,7 +1687,7 @@ archive/issue_comments_091598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91598",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1718,7 +1718,7 @@ archive/issue_comments_091599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91599",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1743,7 +1743,7 @@ archive/issue_comments_091600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91600",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1761,7 +1761,7 @@ archive/issue_comments_091601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91601",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1832,7 +1832,7 @@ archive/issue_comments_091603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91603",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1869,7 +1869,7 @@ archive/issue_comments_091604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91604",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1891,7 +1891,7 @@ archive/issue_comments_091605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91605",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1963,7 +1963,7 @@ archive/issue_comments_091608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91608",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2049,7 +2049,7 @@ archive/issue_comments_091611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91611",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2087,7 +2087,7 @@ archive/issue_comments_091612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91612",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2105,7 +2105,7 @@ archive/issue_comments_091613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91613",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2160,7 +2160,7 @@ archive/issue_comments_091615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91615",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2178,7 +2178,7 @@ archive/issue_comments_091616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91616",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2199,7 +2199,7 @@ archive/issue_comments_091617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91617",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -2217,7 +2217,7 @@ archive/issue_comments_091618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91618",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -2237,7 +2237,7 @@ archive/issue_comments_091619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9523#issuecomment-91619",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

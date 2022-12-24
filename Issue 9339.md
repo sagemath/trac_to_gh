@@ -14,7 +14,7 @@ archive/issues_009339.json:
     "title": "Notebook fails to print result of last expression if there is a line break",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9339",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: jason, was
@@ -74,7 +74,7 @@ archive/issue_comments_088238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9339#issuecomment-88238",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_088239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9339#issuecomment-88239",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_088240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9339#issuecomment-88240",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_088241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9339#issuecomment-88241",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007966.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis patch creates a function shortest_path_all_vertices in c_graphs which, given a vertex v, computes a shortest path for each other vertex.\n\nWith small other modifications, it improves the speed of many functions ( which were all calling each other )\n\nBefore :\n\n```\nsage: g = graphs.RandomGNP(50,.3)\nsage: %timeit g.shortest_path_lengths(0)\n100 loops, best of 3: 3.72 ms per loop\nsage: %timeit g.average_distance()\n10 loops, best of 3: 383 ms per loop\nsage: %timeit g.wiener_index()\n10 loops, best of 3: 384 ms per loop\nsage: %timeit g.szeged_index()\n10 loops, best of 3: 325 ms per loop\nsage: %timeit g.eccentricity()\n10 loops, best of 3: 189 ms per loop\nsage: g.sparse6_string()\n':q_OW_CCBb?WcOL@@`_{CGDB@pCGIF``@[WQK_`?w_QIDoo_WSJEBWGOKIDbG?CZ?@@Owwb?@?o_SOMba@X?bA@`OpKhBB@p?kX@Caq@YAACAphWn@B@po{j?@`?o_]QIeGOWMGDCqheEDB@pXMAEBa@GscYLoo__QJEBaxcvBECAPWqYNQ`gwgTKERX}?@@@@Gg[QHdBXt@?BAa@WmYNGWo[OLFCQhqCLFCRPky]POow_SLGCRHw}ca@_w_SLHCq`_u[OGg?GEDBAP_{iUJeBiYKGCbPp_qYMFbyLIea``WoYMFcA`SkXMGS[?MIFCahgw\\\\NP`Ww]VLfSskYMHDApcs[NHSy`R?A@pOkWMGcb@oy]TjGGKOJIEBh|QjUOox?mWLEryHIh___WOaRIDr@cu[MhTauCCBa@Gk]PHdax_w]NhCq\\\\Sm'\n```\n\n\nAfter\n\n```\nsage: %timeit g.shortest_path_lengths(0)\n10 loops, best of 3: 430 \u00b5s per loop\nsage: %timeit g.average_distance()\n10 loops, best of 3: 22 ms per loop\nsage: %timeit g.wiener_index()\n10 loops, best of 3: 22.1 ms per loop\nsage: %timeit g.szeged_index()\n10 loops, best of 3: 41.5 ms per loop\nsage: %timeit g.eccentricity()\n10 loops, best of 3: 22 ms per loop\n```\n\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7966\n\n",
+    "body": "Assignee: @rlmill\n\nThis patch creates a function shortest_path_all_vertices in c_graphs which, given a vertex v, computes a shortest path for each other vertex.\n\nWith small other modifications, it improves the speed of many functions ( which were all calling each other )\n\nBefore :\n\n```\nsage: g = graphs.RandomGNP(50,.3)\nsage: %timeit g.shortest_path_lengths(0)\n100 loops, best of 3: 3.72 ms per loop\nsage: %timeit g.average_distance()\n10 loops, best of 3: 383 ms per loop\nsage: %timeit g.wiener_index()\n10 loops, best of 3: 384 ms per loop\nsage: %timeit g.szeged_index()\n10 loops, best of 3: 325 ms per loop\nsage: %timeit g.eccentricity()\n10 loops, best of 3: 189 ms per loop\nsage: g.sparse6_string()\n':q_OW_CCBb?WcOL@@`_{CGDB@pCGIF``@[WQK_`?w_QIDoo_WSJEBWGOKIDbG?CZ?@@Owwb?@?o_SOMba@X?bA@`OpKhBB@p?kX@Caq@YAACAphWn@B@po{j?@`?o_]QIeGOWMGDCqheEDB@pXMAEBa@GscYLoo__QJEBaxcvBECAPWqYNQ`gwgTKERX}?@@@@Gg[QHdBXt@?BAa@WmYNGWo[OLFCQhqCLFCRPky]POow_SLGCRHw}ca@_w_SLHCq`_u[OGg?GEDBAP_{iUJeBiYKGCbPp_qYMFbyLIea``WoYMFcA`SkXMGS[?MIFCahgw\\\\NP`Ww]VLfSskYMHDApcs[NHSy`R?A@pOkWMGcb@oy]TjGGKOJIEBh|QjUOox?mWLEryHIh___WOaRIDr@cu[MhTauCCBa@Gk]PHdax_w]NhCq\\\\Sm'\n```\n\n\nAfter\n\n```\nsage: %timeit g.shortest_path_lengths(0)\n10 loops, best of 3: 430 \u00b5s per loop\nsage: %timeit g.average_distance()\n10 loops, best of 3: 22 ms per loop\nsage: %timeit g.wiener_index()\n10 loops, best of 3: 22.1 ms per loop\nsage: %timeit g.szeged_index()\n10 loops, best of 3: 41.5 ms per loop\nsage: %timeit g.eccentricity()\n10 loops, best of 3: 22 ms per loop\n```\n\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7966\n\n",
     "created_at": "2010-01-17T14:34:20Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007966.json:
     "title": "Giving some punch to distance computations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7966",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This patch creates a function shortest_path_all_vertices in c_graphs which, given a vertex v, computes a shortest path for each other vertex.
 
@@ -76,7 +76,7 @@ archive/issue_comments_069502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7966#issuecomment-69502",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_069503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7966#issuecomment-69503",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_069504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7966#issuecomment-69504",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_069505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7966#issuecomment-69505",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_069506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7966#issuecomment-69506",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_069507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7966#issuecomment-69507",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_069508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7966#issuecomment-69508",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -248,16 +248,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069509.json:
 ```json
 {
-    "body": "Attachment [trac_7966.patch](tarball://root/attachments/some-uuid/ticket7966/trac_7966.patch) by zimmerma created at 2010-02-26 11:02:06\n\nwith the new patch `c_graph.pyx` works again:\n\n```\n[zimmerma@coing sage]$ sage -t  graphs/base/c_graph.pyx\nsage -t  \"devel/sage-7966/sage/graphs/base/c_graph.pyx\"     \n         [2.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.5 seconds\n```\n\nThus a positive review.\n\nPaul",
+    "body": "Attachment [trac_7966.patch](tarball://root/attachments/some-uuid/ticket7966/trac_7966.patch) by @zimmermann6 created at 2010-02-26 11:02:06\n\nwith the new patch `c_graph.pyx` works again:\n\n```\n[zimmerma@coing sage]$ sage -t  graphs/base/c_graph.pyx\nsage -t  \"devel/sage-7966/sage/graphs/base/c_graph.pyx\"     \n         [2.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 2.5 seconds\n```\n\nThus a positive review.\n\nPaul",
     "created_at": "2010-02-26T11:02:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7966#issuecomment-69509",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_7966.patch](tarball://root/attachments/some-uuid/ticket7966/trac_7966.patch) by zimmerma created at 2010-02-26 11:02:06
+Attachment [trac_7966.patch](tarball://root/attachments/some-uuid/ticket7966/trac_7966.patch) by @zimmermann6 created at 2010-02-26 11:02:06
 
 with the new patch `c_graph.pyx` works again:
 

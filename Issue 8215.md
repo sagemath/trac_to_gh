@@ -3,7 +3,7 @@
 archive/issues_008215.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  sage-combinat abmasse\n\nKeywords: empty word\n\nThe following three results should be True.\n\n\n```\nsage: Word().is_factor(Word())\nFalse\nsage: Word().is_factor(Word('abad'))\nFalse\nsage: Word().is_factor(Word([0,1,2]))\nFalse\nsage: Word('').is_factor(Word('abad'))\nFalse\nsage: Word([]).is_factor(Word([0,1,2]))\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8215\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat abmasse\n\nKeywords: empty word\n\nThe following three results should be True.\n\n\n```\nsage: Word().is_factor(Word())\nFalse\nsage: Word().is_factor(Word('abad'))\nFalse\nsage: Word().is_factor(Word([0,1,2]))\nFalse\nsage: Word('').is_factor(Word('abad'))\nFalse\nsage: Word([]).is_factor(Word([0,1,2]))\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8215\n\n",
     "created_at": "2010-02-08T14:16:09Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008215.json:
     "title": "The empty word is a factor of a word",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8215",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  sage-combinat abmasse
 
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8215
 archive/issue_comments_072442.json:
 ```json
 {
-    "body": "Attachment [trac_8215_empty_word-sl.patch](tarball://root/attachments/some-uuid/ticket8215/trac_8215_empty_word-sl.patch) by slabbe created at 2010-02-08 14:19:39",
+    "body": "Attachment [trac_8215_empty_word-sl.patch](tarball://root/attachments/some-uuid/ticket8215/trac_8215_empty_word-sl.patch) by @seblabbe created at 2010-02-08 14:19:39",
     "created_at": "2010-02-08T14:19:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8215#issuecomment-72442",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8215_empty_word-sl.patch](tarball://root/attachments/some-uuid/ticket8215/trac_8215_empty_word-sl.patch) by slabbe created at 2010-02-08 14:19:39
+Attachment [trac_8215_empty_word-sl.patch](tarball://root/attachments/some-uuid/ticket8215/trac_8215_empty_word-sl.patch) by @seblabbe created at 2010-02-08 14:19:39
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_072443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8215#issuecomment-72443",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -123,16 +123,16 @@ Tested on sage 4.3.1. Doc builds fine, all tests passed and it fixes the bug. No
 archive/issue_comments_072446.json:
 ```json
 {
-    "body": "Changing assignee from slabbe to mpatel.",
+    "body": "Changing assignee from @seblabbe to @qed777.",
     "created_at": "2010-02-11T14:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8215#issuecomment-72446",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Changing assignee from slabbe to mpatel.
+Changing assignee from @seblabbe to @qed777.
 
 
 
@@ -141,16 +141,16 @@ Changing assignee from slabbe to mpatel.
 archive/issue_comments_072447.json:
 ```json
 {
-    "body": "Changing assignee from mpatel to slabbe.",
+    "body": "Changing assignee from @qed777 to @seblabbe.",
     "created_at": "2010-02-11T14:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8215#issuecomment-72447",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Changing assignee from mpatel to slabbe.
+Changing assignee from @qed777 to @seblabbe.
 
 
 
@@ -164,7 +164,7 @@ archive/issue_comments_072448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8215#issuecomment-72448",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_072449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8215#issuecomment-72449",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

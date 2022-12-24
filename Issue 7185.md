@@ -14,7 +14,7 @@ archive/issues_007185.json:
     "title": "bug in FFT object in Sage -- segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7185",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -81,7 +81,7 @@ archive/issue_comments_059519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7185#issuecomment-59519",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_059520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7185#issuecomment-59520",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_059521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7185#issuecomment-59521",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_059522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7185#issuecomment-59522",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

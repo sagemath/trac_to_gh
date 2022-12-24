@@ -3,7 +3,7 @@
 archive/issues_000593.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt is an important result in commutative algebra that reduced Gr\u00f6bner bases are unique representations of ideals. Thus, one would believe that if two systems compute a Gr\u00f6bner basis for the same initial basis which is reduced afterwards these reduced Gr\u00f6bner bases are equal, however:\n\n\n```\nk.<a> = GF(2^4)\n```\n\n\n\n```\nP.<k100,k101,k102,k103,x100,x101,x102,x103,w100,w101,w102,w103,s000,s001,s002,s003,k000,k001,k002,k003> = PolynomialRing(k,20)\n```\n\n\n\n```\nF = [ w100 + k000 + (a^3 + 1), \\\nw101 + k001 + (a^3 + a^2 + 1), \\\nw102 + k002 + (a^3 + a^2 + a), \\\nw103 + k003 + (a^3 + a + 1), \\\nk000^2 + k001, \\\nk001^2 + k002, \\\nk002^2 + k003, \\\nk000 + k003^2, \\\nk100 + (a^2 + 1)*x100 + x101 + (a^3 + a^2)*x102 + (a^2 + 1)*x103 + (a^3 + a), \\\nk101 + (a)*x100 + (a)*x101 + x102 + (a^3 + a^2 + a + 1)*x103 + (a^3), \\\nk102 + (a^3 + a)*x100 + (a^2)*x101 + (a^2)*x102 + x103 + (a^3 + a^2), \\\nk103 + x100 + (a^3)*x101 + (a + 1)*x102 + (a + 1)*x103 + (a^3 + a^2 + a + 1), \\\nx100*w100 + 1, \\\nx101*w101 + 1, \\\nx102*w102 + 1, \\\nx103*w103 + 1, \\\nx100^2 + x101, \\\nx101^2 + x102, \\\nx102^2 + x103, \\\nx100 + x103^2, \\\nw100^2 + w101, \\\nw101^2 + w102, \\\nw102^2 + w103, \\\nw100 + w103^2, \\\nk100 + (a^2 + 1)*s000 + s001 + (a^3 + a^2)*s002 + (a^2 + 1)*s003 + (a^2 + a + 1), \\\nk101 + (a)*s000 + (a)*s001 + s002 + (a^3 + a^2 + a + 1)*s003 + (a^2 + a), \\\nk102 + (a^3 + a)*s000 + (a^2)*s001 + (a^2)*s002 + s003 + (a^2 + a + 1), \\\nk103 + s000 + (a^3)*s001 + (a + 1)*s002 + (a + 1)*s003 + (a^2 + a), \\\nk100^2 + k101, \\\nk101^2 + k102, \\\nk102^2 + k103, \\\nk100 + k103^2, \\\ns000^2 + s001, \\\ns001^2 + s002, \\\ns002^2 + s003, \\\ns000 + s003^2, \\\ns000*k000 + 1, \\\ns001*k001 + 1, \\\ns002*k002 + 1, \\\ns003*k003 + 1 ]\n```\n\n\n\n```\ngb1 = sorted(Ideal(Ideal(F).groebner_basis('magma:GroebnerBasis')).reduced_basis())\nprint Ideal(gb1).basis_is_groebner()\n///\nTrue\n```\n\n\n\n```\ngb2 = sorted(Ideal(Ideal(F).groebner_basis('singular:std')).reduced_basis())\nprint Ideal(gb1).basis_is_groebner()\n///\nTrue\n```\n\n\n\n```\nset(gb1) == set(gb2)\n///\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/593\n\n",
+    "body": "Assignee: @williamstein\n\nIt is an important result in commutative algebra that reduced Gr\u00f6bner bases are unique representations of ideals. Thus, one would believe that if two systems compute a Gr\u00f6bner basis for the same initial basis which is reduced afterwards these reduced Gr\u00f6bner bases are equal, however:\n\n\n```\nk.<a> = GF(2^4)\n```\n\n\n\n```\nP.<k100,k101,k102,k103,x100,x101,x102,x103,w100,w101,w102,w103,s000,s001,s002,s003,k000,k001,k002,k003> = PolynomialRing(k,20)\n```\n\n\n\n```\nF = [ w100 + k000 + (a^3 + 1), \\\nw101 + k001 + (a^3 + a^2 + 1), \\\nw102 + k002 + (a^3 + a^2 + a), \\\nw103 + k003 + (a^3 + a + 1), \\\nk000^2 + k001, \\\nk001^2 + k002, \\\nk002^2 + k003, \\\nk000 + k003^2, \\\nk100 + (a^2 + 1)*x100 + x101 + (a^3 + a^2)*x102 + (a^2 + 1)*x103 + (a^3 + a), \\\nk101 + (a)*x100 + (a)*x101 + x102 + (a^3 + a^2 + a + 1)*x103 + (a^3), \\\nk102 + (a^3 + a)*x100 + (a^2)*x101 + (a^2)*x102 + x103 + (a^3 + a^2), \\\nk103 + x100 + (a^3)*x101 + (a + 1)*x102 + (a + 1)*x103 + (a^3 + a^2 + a + 1), \\\nx100*w100 + 1, \\\nx101*w101 + 1, \\\nx102*w102 + 1, \\\nx103*w103 + 1, \\\nx100^2 + x101, \\\nx101^2 + x102, \\\nx102^2 + x103, \\\nx100 + x103^2, \\\nw100^2 + w101, \\\nw101^2 + w102, \\\nw102^2 + w103, \\\nw100 + w103^2, \\\nk100 + (a^2 + 1)*s000 + s001 + (a^3 + a^2)*s002 + (a^2 + 1)*s003 + (a^2 + a + 1), \\\nk101 + (a)*s000 + (a)*s001 + s002 + (a^3 + a^2 + a + 1)*s003 + (a^2 + a), \\\nk102 + (a^3 + a)*s000 + (a^2)*s001 + (a^2)*s002 + s003 + (a^2 + a + 1), \\\nk103 + s000 + (a^3)*s001 + (a + 1)*s002 + (a + 1)*s003 + (a^2 + a), \\\nk100^2 + k101, \\\nk101^2 + k102, \\\nk102^2 + k103, \\\nk100 + k103^2, \\\ns000^2 + s001, \\\ns001^2 + s002, \\\ns002^2 + s003, \\\ns000 + s003^2, \\\ns000*k000 + 1, \\\ns001*k001 + 1, \\\ns002*k002 + 1, \\\ns003*k003 + 1 ]\n```\n\n\n\n```\ngb1 = sorted(Ideal(Ideal(F).groebner_basis('magma:GroebnerBasis')).reduced_basis())\nprint Ideal(gb1).basis_is_groebner()\n///\nTrue\n```\n\n\n\n```\ngb2 = sorted(Ideal(Ideal(F).groebner_basis('singular:std')).reduced_basis())\nprint Ideal(gb1).basis_is_groebner()\n///\nTrue\n```\n\n\n\n```\nset(gb1) == set(gb2)\n///\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/593\n\n",
     "created_at": "2007-09-05T16:25:38Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000593.json:
     "title": "MPolynomialIdeal.reduced_basis() doesn't behave as expected",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/593",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It is an important result in commutative algebra that reduced Gröbner bases are unique representations of ideals. Thus, one would believe that if two systems compute a Gröbner basis for the same initial basis which is reduced afterwards these reduced Gröbner bases are equal, however:
 
@@ -116,16 +116,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/593
 archive/issue_comments_003056.json:
 ```json
 {
-    "body": "Attachment [593.patch](tarball://root/attachments/some-uuid/ticket593/593.patch) by malb created at 2007-10-04 03:02:11\n\nThe attached patch fixes this issue.",
+    "body": "Attachment [593.patch](tarball://root/attachments/some-uuid/ticket593/593.patch) by @malb created at 2007-10-04 03:02:11\n\nThe attached patch fixes this issue.",
     "created_at": "2007-10-04T03:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/593#issuecomment-3056",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [593.patch](tarball://root/attachments/some-uuid/ticket593/593.patch) by malb created at 2007-10-04 03:02:11
+Attachment [593.patch](tarball://root/attachments/some-uuid/ticket593/593.patch) by @malb created at 2007-10-04 03:02:11
 
 The attached patch fixes this issue.
 
@@ -136,16 +136,16 @@ The attached patch fixes this issue.
 archive/issue_comments_003057.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-10-04T03:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/593#issuecomment-3057",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -159,7 +159,7 @@ archive/issue_comments_003058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/593#issuecomment-3058",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_003059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/593#issuecomment-3059",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_003060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/593#issuecomment-3060",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

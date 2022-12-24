@@ -3,7 +3,7 @@
 archive/issues_006505.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  drkirby\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/b3e57f934ee83c79):\n\n```\nI just noticed an old thread, where a user had problems on squite, \nmaking his own version of some packages with an alpha, heta or rc \nrelease of Sage. \n\nIt would be good if alpha/beta/rc releases always showed a message that \nthey were pre-release versions for developers and not considered stable. \nIf there was some automatic way of making this happen, it would avoid \nthe risk of someone forgetting to add or delete a file. \n```\n\nThis patch should do this.  To fully test, make a source distribution of Sage using sage-sdist.  To partially test, in Sage, do\n\n```\nsage: sage.version.version\n'4.1.rc1'\nsage: print sage.misc.banner.banner_text()\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage.version.version = '4.1'\nsage: print sage.misc.banner.banner_text()\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n```\n\nI believe that when a Sage distribution is created, the string from `banner_text()` is printed into the file SAGE_ROOT/local/bin/sage-banner (see SAGE_ROOT/local/bin/sage-sdist).  So I think this patch will do what was requested.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6505\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  drkirby\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/b3e57f934ee83c79):\n\n```\nI just noticed an old thread, where a user had problems on squite, \nmaking his own version of some packages with an alpha, heta or rc \nrelease of Sage. \n\nIt would be good if alpha/beta/rc releases always showed a message that \nthey were pre-release versions for developers and not considered stable. \nIf there was some automatic way of making this happen, it would avoid \nthe risk of someone forgetting to add or delete a file. \n```\n\nThis patch should do this.  To fully test, make a source distribution of Sage using sage-sdist.  To partially test, in Sage, do\n\n```\nsage: sage.version.version\n'4.1.rc1'\nsage: print sage.misc.banner.banner_text()\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage.version.version = '4.1'\nsage: print sage.misc.banner.banner_text()\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n```\n\nI believe that when a Sage distribution is created, the string from `banner_text()` is printed into the file SAGE_ROOT/local/bin/sage-banner (see SAGE_ROOT/local/bin/sage-sdist).  So I think this patch will do what was requested.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6505\n\n",
     "created_at": "2009-07-10T02:39:31Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_006505.json:
     "title": "[with patch, needs review] Sage banner: include warning if a prerelease",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6505",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 CC:  drkirby
 
@@ -87,7 +87,7 @@ archive/issue_comments_052995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6505#issuecomment-52995",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_052996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6505#issuecomment-52996",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_052997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6505#issuecomment-52997",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_052998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6505#issuecomment-52998",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -203,16 +203,16 @@ Here is a new version of the patch which doesn't give me this error message.
 archive/issue_comments_052999.json:
 ```json
 {
-    "body": "Attachment [trac_6505_prerelease.patch](tarball://root/attachments/some-uuid/ticket6505/trac_6505_prerelease.patch) by jhpalmieri created at 2009-07-19 17:43:20",
+    "body": "Attachment [trac_6505_prerelease.patch](tarball://root/attachments/some-uuid/ticket6505/trac_6505_prerelease.patch) by @jhpalmieri created at 2009-07-19 17:43:20",
     "created_at": "2009-07-19T17:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6505#issuecomment-52999",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6505_prerelease.patch](tarball://root/attachments/some-uuid/ticket6505/trac_6505_prerelease.patch) by jhpalmieri created at 2009-07-19 17:43:20
+Attachment [trac_6505_prerelease.patch](tarball://root/attachments/some-uuid/ticket6505/trac_6505_prerelease.patch) by @jhpalmieri created at 2009-07-19 17:43:20
 
 
 
@@ -226,7 +226,7 @@ archive/issue_comments_053000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6505#issuecomment-53000",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_053001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6505#issuecomment-53001",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_053002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6505#issuecomment-53002",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

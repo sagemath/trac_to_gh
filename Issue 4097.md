@@ -3,7 +3,7 @@
 archive/issues_004097.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4097\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4097\n\n",
     "created_at": "2008-09-10T09:29:49Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_004097.json:
     "title": "[with patch, needs review] matrix automorphism groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4097",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4097
 archive/issue_comments_029561.json:
 ```json
 {
-    "body": "Attachment [trac_4097-mat-aut.patch](tarball://root/attachments/some-uuid/ticket4097/trac_4097-mat-aut.patch) by wdj created at 2008-09-10 10:55:32\n\nThis is a very important patch - thanks Robert! \n\nI've started testing it and will report back.",
+    "body": "Attachment [trac_4097-mat-aut.patch](tarball://root/attachments/some-uuid/ticket4097/trac_4097-mat-aut.patch) by @wdjoyner created at 2008-09-10 10:55:32\n\nThis is a very important patch - thanks Robert! \n\nI've started testing it and will report back.",
     "created_at": "2008-09-10T10:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4097#issuecomment-29561",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4097-mat-aut.patch](tarball://root/attachments/some-uuid/ticket4097/trac_4097-mat-aut.patch) by wdj created at 2008-09-10 10:55:32
+Attachment [trac_4097-mat-aut.patch](tarball://root/attachments/some-uuid/ticket4097/trac_4097-mat-aut.patch) by @wdjoyner created at 2008-09-10 10:55:32
 
 This is a very important patch - thanks Robert! 
 
@@ -59,7 +59,7 @@ archive/issue_comments_029562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4097#issuecomment-29562",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_029563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4097#issuecomment-29563",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_029564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4097#issuecomment-29564",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_029565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4097#issuecomment-29565",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_029566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4097#issuecomment-29566",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_029567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4097#issuecomment-29567",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_029568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4097",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4097#issuecomment-29568",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

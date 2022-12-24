@@ -14,7 +14,7 @@ archive/issues_004874.json:
     "title": "performance issue for generic polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4874",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -135,7 +135,7 @@ archive/issue_comments_036903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4874#issuecomment-36903",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

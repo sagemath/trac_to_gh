@@ -3,7 +3,7 @@
 archive/issues_008714.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  wdj dkrenn dcoudert ncohen\n\nI'm using #698 as a wish list of items to add to the graph theory module of Sage. The purpose of this ticket is to implement the [Bellman-Ford](http://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) algorithm for finding shortest paths in a weighted graph `G` that may have negative weights. If `G` doesn't have negative weights, Dijkstra's algorithm can be used. However, if `G` has negative weights, we fall back on the Bellman-Ford algorithm. The Bellman-Ford algorithm is able to handle graphs with negative weights, but not graphs that have negative-weight cycles. See also the function [BellmanFord](http://reference.wolfram.com/mathematica/Combinatorica/ref/BellmanFord.html) in Mathematica's [Combinatorica](http://reference.wolfram.com/mathematica/Combinatorica/guide/CombinatoricaPackage.html) package. See this [graph theory book](http://code.google.com/p/graph-theory-algorithms-book/) for an algorithmic presentation of the Bellman-Ford algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8714\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @wdjoyner @dkrenn @dcoudert @nathanncohen\n\nI'm using #698 as a wish list of items to add to the graph theory module of Sage. The purpose of this ticket is to implement the [Bellman-Ford](http://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) algorithm for finding shortest paths in a weighted graph `G` that may have negative weights. If `G` doesn't have negative weights, Dijkstra's algorithm can be used. However, if `G` has negative weights, we fall back on the Bellman-Ford algorithm. The Bellman-Ford algorithm is able to handle graphs with negative weights, but not graphs that have negative-weight cycles. See also the function [BellmanFord](http://reference.wolfram.com/mathematica/Combinatorica/ref/BellmanFord.html) in Mathematica's [Combinatorica](http://reference.wolfram.com/mathematica/Combinatorica/guide/CombinatoricaPackage.html) package. See this [graph theory book](http://code.google.com/p/graph-theory-algorithms-book/) for an algorithmic presentation of the Bellman-Ford algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8714\n\n",
     "created_at": "2010-04-19T06:30:38Z",
     "labels": [
         "graph theory",
@@ -19,7 +19,7 @@ archive/issues_008714.json:
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  wdj dkrenn dcoudert ncohen
+CC:  @wdjoyner @dkrenn @dcoudert @nathanncohen
 
 I'm using #698 as a wish list of items to add to the graph theory module of Sage. The purpose of this ticket is to implement the [Bellman-Ford](http://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm) algorithm for finding shortest paths in a weighted graph `G` that may have negative weights. If `G` doesn't have negative weights, Dijkstra's algorithm can be used. However, if `G` has negative weights, we fall back on the Bellman-Ford algorithm. The Bellman-Ford algorithm is able to handle graphs with negative weights, but not graphs that have negative-weight cycles. See also the function [BellmanFord](http://reference.wolfram.com/mathematica/Combinatorica/ref/BellmanFord.html) in Mathematica's [Combinatorica](http://reference.wolfram.com/mathematica/Combinatorica/guide/CombinatoricaPackage.html) package. See this [graph theory book](http://code.google.com/p/graph-theory-algorithms-book/) for an algorithmic presentation of the Bellman-Ford algorithm.
 
@@ -131,7 +131,7 @@ archive/issue_comments_079510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79510",
-    "user": "dkrenn"
+    "user": "@dkrenn"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_079511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79511",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_079512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79512",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_079513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79513",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_079514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79514",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_079516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79516",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -329,16 +329,16 @@ I don't have a lot of free time these days and it takes some time to write the d
 archive/issue_comments_079517.json:
 ```json
 {
-    "body": "Attachment [trac_8714.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714.patch) by dcoudert created at 2013-04-06 15:42:56",
+    "body": "Attachment [trac_8714.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714.patch) by @dcoudert created at 2013-04-06 15:42:56",
     "created_at": "2013-04-06T15:42:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79517",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
-Attachment [trac_8714.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714.patch) by dcoudert created at 2013-04-06 15:42:56
+Attachment [trac_8714.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714.patch) by @dcoudert created at 2013-04-06 15:42:56
 
 
 
@@ -352,7 +352,7 @@ archive/issue_comments_079518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79518",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_079519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79519",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_079520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79520",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_079521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79521",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -429,16 +429,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_079522.json:
 ```json
 {
-    "body": "Attachment [trac_8714.2.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714.2.patch) by dcoudert created at 2013-09-15 14:07:48\n\nFinally, this patch is ready to be reviewed!\n\nThe method is now transparently called when negative weights are detected. I have also added an optional parameter that could be used e.g. in patch #13380.\n\n\napply: trac_8714.2.patch",
+    "body": "Attachment [trac_8714.2.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714.2.patch) by @dcoudert created at 2013-09-15 14:07:48\n\nFinally, this patch is ready to be reviewed!\n\nThe method is now transparently called when negative weights are detected. I have also added an optional parameter that could be used e.g. in patch #13380.\n\n\napply: trac_8714.2.patch",
     "created_at": "2013-09-15T14:07:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79522",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
-Attachment [trac_8714.2.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714.2.patch) by dcoudert created at 2013-09-15 14:07:48
+Attachment [trac_8714.2.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714.2.patch) by @dcoudert created at 2013-09-15 14:07:48
 
 Finally, this patch is ready to be reviewed!
 
@@ -459,7 +459,7 @@ archive/issue_comments_079523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79523",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -472,16 +472,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079524.json:
 ```json
 {
-    "body": "Attachment [trac_8714_addon1.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714_addon1.patch) by chapoton created at 2013-10-20 12:23:40",
+    "body": "Attachment [trac_8714_addon1.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714_addon1.patch) by @fchapoton created at 2013-10-20 12:23:40",
     "created_at": "2013-10-20T12:23:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79524",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_8714_addon1.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714_addon1.patch) by chapoton created at 2013-10-20 12:23:40
+Attachment [trac_8714_addon1.patch](tarball://root/attachments/some-uuid/ticket8714/trac_8714_addon1.patch) by @fchapoton created at 2013-10-20 12:23:40
 
 
 
@@ -495,7 +495,7 @@ archive/issue_comments_079525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79525",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_079526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79526",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_079527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79527",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -591,7 +591,7 @@ archive/issue_comments_079529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79529",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -609,7 +609,7 @@ archive/issue_comments_079530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79530",
-    "user": "cheuberg"
+    "user": "@cheuberg"
 }
 ```
 
@@ -652,7 +652,7 @@ archive/issue_comments_079532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79532",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -686,7 +686,7 @@ archive/issue_comments_079533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79533",
-    "user": "cheuberg"
+    "user": "@cheuberg"
 }
 ```
 
@@ -713,7 +713,7 @@ archive/issue_comments_079534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79534",
-    "user": "cheuberg"
+    "user": "@cheuberg"
 }
 ```
 
@@ -756,7 +756,7 @@ archive/issue_comments_079536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79536",
-    "user": "cheuberg"
+    "user": "@cheuberg"
 }
 ```
 
@@ -775,7 +775,7 @@ archive/issue_comments_079537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79537",
-    "user": "cheuberg"
+    "user": "@cheuberg"
 }
 ```
 
@@ -793,7 +793,7 @@ archive/issue_comments_079538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79538",
-    "user": "cheuberg"
+    "user": "@cheuberg"
 }
 ```
 
@@ -813,7 +813,7 @@ archive/issue_comments_079539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79539",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -831,7 +831,7 @@ archive/issue_comments_079540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79540",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -852,7 +852,7 @@ archive/issue_comments_079541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8714#issuecomment-79541",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

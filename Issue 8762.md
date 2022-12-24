@@ -3,7 +3,7 @@
 archive/issues_008762.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n```\nOn Apr 24, 2010, at 5:36 PM, Michael Rybalkin wrote:\n\nHow to get monomial with large exponent in the polynomial rings?\n\nFor example I hsave polynomial ring over large finite field:\np = next_prime(10^20)\nR.<x> = PolynomialRing(GF(p), sparse=True)\n\nMonomial x^(10^7) construction takes 2 seconds:\ntime tmp = x^(10^7)\n\nMonomial x^(10^8) construction uses all 6 Gb server memory and cannot\nfinish.\nAnd without 'sparse=True' option I cannot even get x^(10^6).\n\nWhat is the limitations for monomial exponents in polynomial rings?\nWhat can be done in my case? For example GAP handles this case without\nany problem.\n\nSeems like the sparse=True flag is horribly broken for GF(p)[x]:\n\nsage: p = next_prime(10^20)\nsage: R.<x> = PolynomialRing(GF(p), sparse=True)\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_zz_pex.Polynomial_ZZ_pEX'>\n\nsage: R.<x> = PolynomialRing(QQ, sparse=True)\nsage: x^(10^8)\nx^100000000\n\n\n- Robert Bradshaw\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8762\n\n",
+    "body": "Assignee: @aghitza\n\n\n```\nOn Apr 24, 2010, at 5:36 PM, Michael Rybalkin wrote:\n\nHow to get monomial with large exponent in the polynomial rings?\n\nFor example I hsave polynomial ring over large finite field:\np = next_prime(10^20)\nR.<x> = PolynomialRing(GF(p), sparse=True)\n\nMonomial x^(10^7) construction takes 2 seconds:\ntime tmp = x^(10^7)\n\nMonomial x^(10^8) construction uses all 6 Gb server memory and cannot\nfinish.\nAnd without 'sparse=True' option I cannot even get x^(10^6).\n\nWhat is the limitations for monomial exponents in polynomial rings?\nWhat can be done in my case? For example GAP handles this case without\nany problem.\n\nSeems like the sparse=True flag is horribly broken for GF(p)[x]:\n\nsage: p = next_prime(10^20)\nsage: R.<x> = PolynomialRing(GF(p), sparse=True)\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_zz_pex.Polynomial_ZZ_pEX'>\n\nsage: R.<x> = PolynomialRing(QQ, sparse=True)\nsage: x^(10^8)\nx^100000000\n\n\n- Robert Bradshaw\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8762\n\n",
     "created_at": "2010-04-25T07:17:01Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008762.json:
     "title": "the sparse=True flag is horribly broken for GF(p)[x]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8762",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 ```
@@ -90,7 +90,7 @@ archive/issue_comments_080163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8762#issuecomment-80163",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_080165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8762#issuecomment-80165",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_080166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8762#issuecomment-80166",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -162,16 +162,16 @@ Changing status from new to needs_review.
 archive/issue_comments_080167.json:
 ```json
 {
-    "body": "Attachment [trac_8762_sparse_gfx.patch](tarball://root/attachments/some-uuid/ticket8762/trac_8762_sparse_gfx.patch) by jsrn created at 2010-09-17 07:52:33\n\nOnly use NTL with non-sparse polynomial rings over finite fields. Now with doctest.",
+    "body": "Attachment [trac_8762_sparse_gfx.patch](tarball://root/attachments/some-uuid/ticket8762/trac_8762_sparse_gfx.patch) by @johanrosenkilde created at 2010-09-17 07:52:33\n\nOnly use NTL with non-sparse polynomial rings over finite fields. Now with doctest.",
     "created_at": "2010-09-17T07:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8762#issuecomment-80167",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
-Attachment [trac_8762_sparse_gfx.patch](tarball://root/attachments/some-uuid/ticket8762/trac_8762_sparse_gfx.patch) by jsrn created at 2010-09-17 07:52:33
+Attachment [trac_8762_sparse_gfx.patch](tarball://root/attachments/some-uuid/ticket8762/trac_8762_sparse_gfx.patch) by @johanrosenkilde created at 2010-09-17 07:52:33
 
 Only use NTL with non-sparse polynomial rings over finite fields. Now with doctest.
 
@@ -223,7 +223,7 @@ archive/issue_comments_080170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8762#issuecomment-80170",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

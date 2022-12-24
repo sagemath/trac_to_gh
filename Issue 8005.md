@@ -3,7 +3,7 @@
 archive/issues_008005.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nReported by Ronald van Luijk:\n\nThe following seems inconsistent:\n\n\n```\nsage: F = GF(5)\nsage: R.<x,y>=F[]\nsage: I=Ideal(R, [x, y])\nsage: S.<x1,y1>=QuotientRing(R,I)\nsage: print x1^2\nx1^2\nsage: print x1^3\nx1^3\nsage: print (x1^2)^2\nx1^4\nsage: print x1^4\nNotImplementedError\n```\n\n\nThe traceback is:\n\n\n```\nNotImplementedError                       Traceback (most recent call last)\n\n/home/wjp/.sage/<ipython console> in <module>()\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__pow__ (sage/structure/element.c:10708)()\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.generic_power_c (sage/structure/element.c:22501)()\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__richcmp__ (sage/structure/element.c:6516)()\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element._richcmp (sage/structure/element.c:6398)()\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/rings/quotient_ring_element.pyc in __cmp__(self, other)\n    463             1\n    464         \"\"\"\n--> 465         if self.__rep == other.__rep or ((self.__rep - other.__rep) in self.parent().defining_ideal()):\n    466             return 0\n    467         return cmp(self.__rep, other.__rep)\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/rings/ideal.pyc in __contains__(self, x)\n    260     def __contains__(self, x):\n    261         try:\n--> 262             return self._contains_(self.__ring(x))\n    263         except TypeError:\n    264             return False\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/rings/ideal.pyc in _contains_(self, x)\n    266     def _contains_(self, x):\n    267         # check if x, which is assumed to be in the ambient ring, is actually in this ideal.\n--> 268         raise NotImplementedError\n    269 \n    270     def __nonzero__(self):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8005\n\n",
+    "body": "Assignee: @aghitza\n\nReported by Ronald van Luijk:\n\nThe following seems inconsistent:\n\n\n```\nsage: F = GF(5)\nsage: R.<x,y>=F[]\nsage: I=Ideal(R, [x, y])\nsage: S.<x1,y1>=QuotientRing(R,I)\nsage: print x1^2\nx1^2\nsage: print x1^3\nx1^3\nsage: print (x1^2)^2\nx1^4\nsage: print x1^4\nNotImplementedError\n```\n\n\nThe traceback is:\n\n\n```\nNotImplementedError                       Traceback (most recent call last)\n\n/home/wjp/.sage/<ipython console> in <module>()\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__pow__ (sage/structure/element.c:10708)()\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.generic_power_c (sage/structure/element.c:22501)()\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__richcmp__ (sage/structure/element.c:6516)()\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element._richcmp (sage/structure/element.c:6398)()\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/rings/quotient_ring_element.pyc in __cmp__(self, other)\n    463             1\n    464         \"\"\"\n--> 465         if self.__rep == other.__rep or ((self.__rep - other.__rep) in self.parent().defining_ideal()):\n    466             return 0\n    467         return cmp(self.__rep, other.__rep)\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/rings/ideal.pyc in __contains__(self, x)\n    260     def __contains__(self, x):\n    261         try:\n--> 262             return self._contains_(self.__ring(x))\n    263         except TypeError:\n    264             return False\n\n/data/sage/sage-4.3.1.rc1/local/lib/python2.6/site-packages/sage/rings/ideal.pyc in _contains_(self, x)\n    266     def _contains_(self, x):\n    267         # check if x, which is assumed to be in the ambient ring, is actually in this ideal.\n--> 268         raise NotImplementedError\n    269 \n    270     def __nonzero__(self):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8005\n\n",
     "created_at": "2010-01-19T23:56:52Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008005.json:
     "title": "powers of elements in a QuotientRing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8005",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Reported by Ronald van Luijk:
 
@@ -131,7 +131,7 @@ archive/issue_comments_069953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8005#issuecomment-69953",
-    "user": "cnassau"
+    "user": "@cnassau"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_069954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8005#issuecomment-69954",
-    "user": "cnassau"
+    "user": "@cnassau"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_069955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8005#issuecomment-69955",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -199,16 +199,16 @@ Resolution: worksforme
 archive/issue_comments_069956.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to mjo.",
+    "body": "Changing assignee from @aghitza to @orlitzky.",
     "created_at": "2014-10-28T13:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8005#issuecomment-69956",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Changing assignee from AlexGhitza to mjo.
+Changing assignee from @aghitza to @orlitzky.
 
 
 
@@ -222,7 +222,7 @@ archive/issue_comments_069957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8005#issuecomment-69957",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_069958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8005#issuecomment-69958",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 

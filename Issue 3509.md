@@ -3,7 +3,7 @@
 archive/issues_003509.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nSplit of from #3119:\n\nThe newly patched eclib at http://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20080310.p3.spkg contains several small fixes *including* the eclib.patch attached to this ticket already. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3509\n\n",
+    "body": "Assignee: @JohnCremona\n\nSplit of from #3119:\n\nThe newly patched eclib at http://www.warwick.ac.uk/staff/J.E.Cremona/eclib-20080310.p3.spkg contains several small fixes *including* the eclib.patch attached to this ticket already. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3509\n\n",
     "created_at": "2008-06-25T08:28:35Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_003509.json:
     "user": "mabshoff"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Split of from #3119:
 

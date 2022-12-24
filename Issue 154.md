@@ -3,7 +3,7 @@
 archive/issues_000154.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2)\nsage: i = ideal([x + y - 1])\nsage: g = i.groebner_fan()\nsage: g.tropical_basis()\nTraceback (most recent call last):\n...\nKeyError: 'Dimension of homogeneity space'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/154\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2)\nsage: i = ideal([x + y - 1])\nsage: g = i.groebner_fan()\nsage: g.tropical_basis()\nTraceback (most recent call last):\n...\nKeyError: 'Dimension of homogeneity space'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/154\n\n",
     "created_at": "2006-10-26T20:37:48Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000154.json:
     "title": "gfan -- something wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/154",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -47,7 +47,7 @@ archive/issue_comments_000700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/154#issuecomment-700",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_000701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/154#issuecomment-701",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

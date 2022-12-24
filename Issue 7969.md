@@ -3,7 +3,7 @@
 archive/issues_007969.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following input in the notebook produces the wrong output:\n\n\n```\n%python\n2+2\nprint \"\"\"\\\na\\\\\nn\nc\n\"\"\"\n```\n\n\nIt should return\n\n\n```\na\\\nn\nc\n```\n\n\nbut instead prints\n\n\n```\na\n\nc\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7969\n\n",
+    "body": "Assignee: @williamstein\n\nThe following input in the notebook produces the wrong output:\n\n\n```\n%python\n2+2\nprint \"\"\"\\\na\\\\\nn\nc\n\"\"\"\n```\n\n\nIt should return\n\n\n```\na\\\nn\nc\n```\n\n\nbut instead prints\n\n\n```\na\n\nc\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7969\n\n",
     "created_at": "2010-01-17T21:21:38Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007969.json:
     "title": "escaped backslash at end of line in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7969",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following input in the notebook produces the wrong output:
 
@@ -64,16 +64,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7969
 archive/issue_comments_069522.json:
 ```json
 {
-    "body": "Changing assignee from was to timdumol.",
+    "body": "Changing assignee from @williamstein to @TimDumol.",
     "created_at": "2010-01-17T21:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7969#issuecomment-69522",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Changing assignee from was to timdumol.
+Changing assignee from @williamstein to @TimDumol.
 
 
 
@@ -82,16 +82,16 @@ Changing assignee from was to timdumol.
 archive/issue_comments_069523.json:
 ```json
 {
-    "body": "Attachment [trac_7969-escaped-backslash.patch](tarball://root/attachments/some-uuid/ticket7969/trac_7969-escaped-backslash.patch) by timdumol created at 2010-01-17 21:23:49\n\nPrevents end-of-line backslashse from being replaced in sage and python systems.",
+    "body": "Attachment [trac_7969-escaped-backslash.patch](tarball://root/attachments/some-uuid/ticket7969/trac_7969-escaped-backslash.patch) by @TimDumol created at 2010-01-17 21:23:49\n\nPrevents end-of-line backslashse from being replaced in sage and python systems.",
     "created_at": "2010-01-17T21:23:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7969#issuecomment-69523",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7969-escaped-backslash.patch](tarball://root/attachments/some-uuid/ticket7969/trac_7969-escaped-backslash.patch) by timdumol created at 2010-01-17 21:23:49
+Attachment [trac_7969-escaped-backslash.patch](tarball://root/attachments/some-uuid/ticket7969/trac_7969-escaped-backslash.patch) by @TimDumol created at 2010-01-17 21:23:49
 
 Prevents end-of-line backslashse from being replaced in sage and python systems.
 
@@ -107,7 +107,7 @@ archive/issue_comments_069524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7969#issuecomment-69524",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_069525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7969#issuecomment-69525",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_069526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7969#issuecomment-69526",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_069527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7969#issuecomment-69527",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

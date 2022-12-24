@@ -3,7 +3,7 @@
 archive/issues_001142.json:
 ```json
 {
-    "body": "Assignee: was\n\nReported by wjp: The following is an example from the python regular expression howto. It seems that ipython's preprocessing somehow gets in the way. This works perfectly fine with regular python:\n\n```\n[wjp@issa sage-2.8.12]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.12, Release Date: 2007-11-06                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: import re\nsage: >>> p = re.compile('(a(b)c)d')\nsage: >>> m = p.match('abcd')\nsage: >>> m.group(0)\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/data/sage/sage-2.8.12/<ipython console> in <module>()\n\n<type 'exceptions.IndexError'>: no such group\nsage: type(m)\n<type '_sre.SRE_Match'>\nsage: m.groups()\n('abc', 'b')\nsage: \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1142\n\n",
+    "body": "Assignee: @williamstein\n\nReported by wjp: The following is an example from the python regular expression howto. It seems that ipython's preprocessing somehow gets in the way. This works perfectly fine with regular python:\n\n```\n[wjp@issa sage-2.8.12]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.12, Release Date: 2007-11-06                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: import re\nsage: >>> p = re.compile('(a(b)c)d')\nsage: >>> m = p.match('abcd')\nsage: >>> m.group(0)\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/data/sage/sage-2.8.12/<ipython console> in <module>()\n\n<type 'exceptions.IndexError'>: no such group\nsage: type(m)\n<type '_sre.SRE_Match'>\nsage: m.groups()\n('abc', 'b')\nsage: \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1142\n\n",
     "created_at": "2007-11-10T23:28:15Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001142.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Reported by wjp: The following is an example from the python regular expression howto. It seems that ipython's preprocessing somehow gets in the way. This works perfectly fine with regular python:
 
@@ -65,7 +65,7 @@ archive/issue_comments_006944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1142#issuecomment-6944",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

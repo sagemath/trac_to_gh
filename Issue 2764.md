@@ -14,7 +14,7 @@ archive/issues_002764.json:
     "title": "apply Minh Nguyen's patches to hg_doc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2764",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_018982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2764#issuecomment-18982",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_018983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2764#issuecomment-18983",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_018984.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2008-04-01T22:21:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2764#issuecomment-18984",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -108,16 +108,16 @@ Michael
 archive/issue_comments_018986.json:
 ```json
 {
-    "body": "Attachment [2764.patch](tarball://root/attachments/some-uuid/ticket2764/2764.patch) by mhansen created at 2008-04-02 05:36:08\n\nI'm 99.9% sure that the patch is correct as is.  If you can give me a specific instance of something that's in the wrong place and where it should go, I'll stand corrected.",
+    "body": "Attachment [2764.patch](tarball://root/attachments/some-uuid/ticket2764/2764.patch) by @mwhansen created at 2008-04-02 05:36:08\n\nI'm 99.9% sure that the patch is correct as is.  If you can give me a specific instance of something that's in the wrong place and where it should go, I'll stand corrected.",
     "created_at": "2008-04-02T05:36:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2764#issuecomment-18986",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2764.patch](tarball://root/attachments/some-uuid/ticket2764/2764.patch) by mhansen created at 2008-04-02 05:36:08
+Attachment [2764.patch](tarball://root/attachments/some-uuid/ticket2764/2764.patch) by @mwhansen created at 2008-04-02 05:36:08
 
 I'm 99.9% sure that the patch is correct as is.  If you can give me a specific instance of something that's in the wrong place and where it should go, I'll stand corrected.
 

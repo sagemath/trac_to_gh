@@ -14,7 +14,7 @@ archive/issues_003840.json:
     "title": "[with patch, needs review] conversion of 0 from MV polynomial rings broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3840",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 Assignee: somebody
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3840
 archive/issue_comments_027304.json:
 ```json
 {
-    "body": "Attachment [trac_3840.patch](tarball://root/attachments/some-uuid/ticket3840/trac_3840.patch) by was created at 2008-08-13 18:06:21\n\nREVIEW:\n\nThis should be redone by changing the == to <= like this.  This is much nicer than using an if statement like in the patch.  Redo it. \n\n```\ndiff -r 22105a8d4591 sage/rings/polynomial/multi_polynomial.pyx\n--- a/sage/rings/polynomial/multi_polynomial.pyx        Wed Aug 13 09:54:40 2008 +0100\n+++ b/sage/rings/polynomial/multi_polynomial.pyx        Wed Aug 13 11:02:59 2008 -0700\n@@ -15,7 +15,7 @@ cdef class MPolynomial(CommutativeRingEl\n     # Some standard conversions\n     ####################\n     def __int__(self):\n-        if self.degree() == 0:\n+        if self.degree() <= 0:\n             return int(self.constant_coefficient())\n         else:\n             raise TypeError\n```\n",
+    "body": "Attachment [trac_3840.patch](tarball://root/attachments/some-uuid/ticket3840/trac_3840.patch) by @williamstein created at 2008-08-13 18:06:21\n\nREVIEW:\n\nThis should be redone by changing the == to <= like this.  This is much nicer than using an if statement like in the patch.  Redo it. \n\n```\ndiff -r 22105a8d4591 sage/rings/polynomial/multi_polynomial.pyx\n--- a/sage/rings/polynomial/multi_polynomial.pyx        Wed Aug 13 09:54:40 2008 +0100\n+++ b/sage/rings/polynomial/multi_polynomial.pyx        Wed Aug 13 11:02:59 2008 -0700\n@@ -15,7 +15,7 @@ cdef class MPolynomial(CommutativeRingEl\n     # Some standard conversions\n     ####################\n     def __int__(self):\n-        if self.degree() == 0:\n+        if self.degree() <= 0:\n             return int(self.constant_coefficient())\n         else:\n             raise TypeError\n```\n",
     "created_at": "2008-08-13T18:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3840#issuecomment-27304",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_3840.patch](tarball://root/attachments/some-uuid/ticket3840/trac_3840.patch) by was created at 2008-08-13 18:06:21
+Attachment [trac_3840.patch](tarball://root/attachments/some-uuid/ticket3840/trac_3840.patch) by @williamstein created at 2008-08-13 18:06:21
 
 REVIEW:
 
@@ -84,16 +84,16 @@ diff -r 22105a8d4591 sage/rings/polynomial/multi_polynomial.pyx
 archive/issue_comments_027305.json:
 ```json
 {
-    "body": "Attachment [3840-gfurnish-multivariate-conversion-from-0.patch](tarball://root/attachments/some-uuid/ticket3840/3840-gfurnish-multivariate-conversion-from-0.patch) by ncalexan created at 2008-08-13 18:50:40",
+    "body": "Attachment [3840-gfurnish-multivariate-conversion-from-0.patch](tarball://root/attachments/some-uuid/ticket3840/3840-gfurnish-multivariate-conversion-from-0.patch) by @ncalexan created at 2008-08-13 18:50:40",
     "created_at": "2008-08-13T18:50:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3840#issuecomment-27305",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3840-gfurnish-multivariate-conversion-from-0.patch](tarball://root/attachments/some-uuid/ticket3840/3840-gfurnish-multivariate-conversion-from-0.patch) by ncalexan created at 2008-08-13 18:50:40
+Attachment [3840-gfurnish-multivariate-conversion-from-0.patch](tarball://root/attachments/some-uuid/ticket3840/3840-gfurnish-multivariate-conversion-from-0.patch) by @ncalexan created at 2008-08-13 18:50:40
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_027306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3840#issuecomment-27306",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_027307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3840#issuecomment-27307",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

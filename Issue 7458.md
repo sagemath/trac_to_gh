@@ -3,7 +3,7 @@
 archive/issues_007458.json:
 ```json
 {
-    "body": "Assignee: malb\n\nSmall patch to add Sylvester matrix calculation for univariate and multivariate polynomials.\n\nI think that my patch is a bit more general (and has doctests) compared to didier deshommes' patch here, which seems to have never been merged:\n\nhttp://sage.math.washington.edu/home/dfdeshom/custom/patches/sylveste...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7458\n\n",
+    "body": "Assignee: @malb\n\nSmall patch to add Sylvester matrix calculation for univariate and multivariate polynomials.\n\nI think that my patch is a bit more general (and has doctests) compared to didier deshommes' patch here, which seems to have never been merged:\n\nhttp://sage.math.washington.edu/home/dfdeshom/custom/patches/sylveste...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7458\n\n",
     "created_at": "2009-11-14T13:00:01Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_007458.json:
     "user": "carlohamalainen"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Small patch to add Sylvester matrix calculation for univariate and multivariate polynomials.
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7458
 archive/issue_comments_062820.json:
 ```json
 {
-    "body": "Attachment [sylvester.patch](tarball://root/attachments/some-uuid/ticket7458/sylvester.patch) by lftabera created at 2010-11-06 11:47:07",
+    "body": "Attachment [sylvester.patch](tarball://root/attachments/some-uuid/ticket7458/sylvester.patch) by @lftabera created at 2010-11-06 11:47:07",
     "created_at": "2010-11-06T11:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62820",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [sylvester.patch](tarball://root/attachments/some-uuid/ticket7458/sylvester.patch) by lftabera created at 2010-11-06 11:47:07
+Attachment [sylvester.patch](tarball://root/attachments/some-uuid/ticket7458/sylvester.patch) by @lftabera created at 2010-11-06 11:47:07
 
 
 
@@ -60,7 +60,7 @@ archive/issue_comments_062821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62821",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -73,16 +73,16 @@ Changing status from new to needs_work.
 archive/issue_comments_062822.json:
 ```json
 {
-    "body": "Attachment [trac-7458-sylvester-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-rebase-4.6.patch) by lftabera created at 2010-11-06 12:06:38\n\nThis is a very basic feature that has to be in Sage.\n\nI have rebased Carlo patch to 4.6  but have not touched the code.\n\nI have some concerns that makes me mark the patch as needs work:\n\n- The univariate case should accept the same syntax as the multivariate case. In the univariate case, the preferred call is f.sylvester_matrix(g), but I do not want Sage to throw an error if I wrote f.sylvester_matrix(g, x)\n\n- Corner cases must be well documented. \n\n\n```\nsage: K.<x>=QQ[]\nsage: K(1).sylvester_matrix(K(1))\n[]\n```\n\n\nIn particular, I am not sure how to deal with the sylvester matrix of 0 and constant or 0 and 0\nCurretly it throws an error. My opinion is that this is not defined but  should throw a more meaningful error.\n\nMaple for instance return the empty matrix. So in maple:\n\nDeterminant(Sylvester_Matrix)  != Resultant \n\nIn this corner cases.\n\nI will  try to check what other CAS do to get a wider picture.\n\n- An example explicitly relating Sylvester matrix and resultant should be added.",
+    "body": "Attachment [trac-7458-sylvester-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-rebase-4.6.patch) by @lftabera created at 2010-11-06 12:06:38\n\nThis is a very basic feature that has to be in Sage.\n\nI have rebased Carlo patch to 4.6  but have not touched the code.\n\nI have some concerns that makes me mark the patch as needs work:\n\n- The univariate case should accept the same syntax as the multivariate case. In the univariate case, the preferred call is f.sylvester_matrix(g), but I do not want Sage to throw an error if I wrote f.sylvester_matrix(g, x)\n\n- Corner cases must be well documented. \n\n\n```\nsage: K.<x>=QQ[]\nsage: K(1).sylvester_matrix(K(1))\n[]\n```\n\n\nIn particular, I am not sure how to deal with the sylvester matrix of 0 and constant or 0 and 0\nCurretly it throws an error. My opinion is that this is not defined but  should throw a more meaningful error.\n\nMaple for instance return the empty matrix. So in maple:\n\nDeterminant(Sylvester_Matrix)  != Resultant \n\nIn this corner cases.\n\nI will  try to check what other CAS do to get a wider picture.\n\n- An example explicitly relating Sylvester matrix and resultant should be added.",
     "created_at": "2010-11-06T12:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62822",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [trac-7458-sylvester-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-rebase-4.6.patch) by lftabera created at 2010-11-06 12:06:38
+Attachment [trac-7458-sylvester-rebase-4.6.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-rebase-4.6.patch) by @lftabera created at 2010-11-06 12:06:38
 
 This is a very basic feature that has to be in Sage.
 
@@ -127,7 +127,7 @@ archive/issue_comments_062823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62823",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_062824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62824",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_062825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62825",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -184,16 +184,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_062826.json:
 ```json
 {
-    "body": "Attachment [trac-7458-sylvester-improvements.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-improvements.patch) by lftabera created at 2010-11-12 13:36:54\n\nFinally, if one of the polynomials is zero, the code raises a ValueError.",
+    "body": "Attachment [trac-7458-sylvester-improvements.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-improvements.patch) by @lftabera created at 2010-11-12 13:36:54\n\nFinally, if one of the polynomials is zero, the code raises a ValueError.",
     "created_at": "2010-11-12T13:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62826",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [trac-7458-sylvester-improvements.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-improvements.patch) by lftabera created at 2010-11-12 13:36:54
+Attachment [trac-7458-sylvester-improvements.patch](tarball://root/attachments/some-uuid/ticket7458/trac-7458-sylvester-improvements.patch) by @lftabera created at 2010-11-12 13:36:54
 
 Finally, if one of the polynomials is zero, the code raises a ValueError.
 
@@ -209,7 +209,7 @@ archive/issue_comments_062827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62827",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_062828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62828",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_062829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62829",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_062830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62830",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

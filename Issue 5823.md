@@ -3,7 +3,7 @@
 archive/issues_005823.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  tornaria\n\nThis is shared credit with Gonzalo and split off from #5662. I have taken on of his patches, integrated it into an updated clisp version and changed his workaround after a clever suggestion by William. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5823\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @tornaria\n\nThis is shared credit with Gonzalo and split off from #5662. I have taken on of his patches, integrated it into an updated clisp version and changed his workaround after a clever suggestion by William. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5823\n\n",
     "created_at": "2009-04-19T07:13:51Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_005823.json:
 ```
 Assignee: mabshoff
 
-CC:  tornaria
+CC:  @tornaria
 
 This is shared credit with Gonzalo and split off from #5662. I have taken on of his patches, integrated it into an updated clisp version and changed his workaround after a clever suggestion by William. 
 
@@ -113,7 +113,7 @@ archive/issue_comments_045761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5823#issuecomment-45761",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_045762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5823#issuecomment-45762",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_045766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5823#issuecomment-45766",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_045770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5823#issuecomment-45770",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_045771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5823#issuecomment-45771",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 

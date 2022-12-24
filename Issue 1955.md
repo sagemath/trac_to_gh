@@ -14,7 +14,7 @@ archive/issues_001955.json:
     "title": "bug in vector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1955",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody

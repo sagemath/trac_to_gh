@@ -3,7 +3,7 @@
 archive/issues_005711.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  burcin jason jhpalmieri schymans\n\nKeywords: Enhance Typesetting, LaTeX, Symbolic Functions\n\nHere is a patch that enhances current typesetting capability\nof symbolic functions within sage.\n\nThis issue has been under a long discussion in the thread\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a51f269f057d8223/536b4ef2493bb20c\n\nMain enhancements are:\n\n(1) Symbolics functions with name in Greek letters (with possible\nsuffixes), are typeset nicely in LaTeX.\n\nEx:  psi(x)  =>  \\psi(x)\n\n(2) Functions such as \"diff\", \"integrate\", \"limit\", \"conjugate\",\n\"laplace\", \"inverse_lapse\" are now typeset within Sage itself.\n\nEx:  psi(x).conjugate()  =>    {\\psi}^*(x)\n\n(3) Default (fall-back) typesetting for unknown functions (as\nin Maxima).\n\nEx:  myfn(x)   =>  {\\it myfn}(x)\n\n(4) Allows users to define their own/custom LaTeX expression\nfor any symbolic functions via a new method \"set_latex()\" for\nthe class SymbolicFunctionEvaluation.\n\nEx: \n\n\n```\nvar('t');\nhubble(t) = function('hubble',t)\nhubble(t).set_latex('\\\\mathcal{H}')\n\n#To reset custom LaTeX expression\nhubble(t).set_latex()\n```\n\n\n(5)  If the arguments of a symbolic function are all symbolic\nvariables then typesetting will avoid using \\left(, \\right).\n\nEx:  Phi(x,y) => \\Phi(x, y)  (if x,y are symbolic vars)\n\n\nNote: You need to apply a small patch\n\nhttp://trac.sagemath.org/sage_trac/ticket/5678\n\nbefore you apply the attached patch. This patch is\ncreated using sage-3.4.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5711\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @burcin @jasongrout @jhpalmieri schymans\n\nKeywords: Enhance Typesetting, LaTeX, Symbolic Functions\n\nHere is a patch that enhances current typesetting capability\nof symbolic functions within sage.\n\nThis issue has been under a long discussion in the thread\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a51f269f057d8223/536b4ef2493bb20c\n\nMain enhancements are:\n\n(1) Symbolics functions with name in Greek letters (with possible\nsuffixes), are typeset nicely in LaTeX.\n\nEx:  psi(x)  =>  \\psi(x)\n\n(2) Functions such as \"diff\", \"integrate\", \"limit\", \"conjugate\",\n\"laplace\", \"inverse_lapse\" are now typeset within Sage itself.\n\nEx:  psi(x).conjugate()  =>    {\\psi}^*(x)\n\n(3) Default (fall-back) typesetting for unknown functions (as\nin Maxima).\n\nEx:  myfn(x)   =>  {\\it myfn}(x)\n\n(4) Allows users to define their own/custom LaTeX expression\nfor any symbolic functions via a new method \"set_latex()\" for\nthe class SymbolicFunctionEvaluation.\n\nEx: \n\n\n```\nvar('t');\nhubble(t) = function('hubble',t)\nhubble(t).set_latex('\\\\mathcal{H}')\n\n#To reset custom LaTeX expression\nhubble(t).set_latex()\n```\n\n\n(5)  If the arguments of a symbolic function are all symbolic\nvariables then typesetting will avoid using \\left(, \\right).\n\nEx:  Phi(x,y) => \\Phi(x, y)  (if x,y are symbolic vars)\n\n\nNote: You need to apply a small patch\n\nhttp://trac.sagemath.org/sage_trac/ticket/5678\n\nbefore you apply the attached patch. This patch is\ncreated using sage-3.4.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5711\n\n",
     "created_at": "2009-04-08T11:55:14Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_005711.json:
     "title": "[with patch, needs review] Enhanced Typesetting of Symbolic Functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5711",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 Assignee: cwitty
 
-CC:  burcin jason jhpalmieri schymans
+CC:  @burcin @jasongrout @jhpalmieri schymans
 
 Keywords: Enhance Typesetting, LaTeX, Symbolic Functions
 
@@ -88,16 +88,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5711
 archive/issue_comments_044610.json:
 ```json
 {
-    "body": "Attachment [enhanced-typesetting-of-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket5711/enhanced-typesetting-of-symbolic-functions.patch) by gmhossain created at 2009-04-08 11:55:50",
+    "body": "Attachment [enhanced-typesetting-of-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket5711/enhanced-typesetting-of-symbolic-functions.patch) by @golam-m-hossain created at 2009-04-08 11:55:50",
     "created_at": "2009-04-08T11:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44610",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
-Attachment [enhanced-typesetting-of-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket5711/enhanced-typesetting-of-symbolic-functions.patch) by gmhossain created at 2009-04-08 11:55:50
+Attachment [enhanced-typesetting-of-symbolic-functions.patch](tarball://root/attachments/some-uuid/ticket5711/enhanced-typesetting-of-symbolic-functions.patch) by @golam-m-hossain created at 2009-04-08 11:55:50
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_044611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44611",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_044612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44612",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_044613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44613",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_044614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44614",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_044615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44615",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -235,16 +235,16 @@ Should be easy enough to fix.
 archive/issue_comments_044616.json:
 ```json
 {
-    "body": "Attachment [enhanced-symbolic-typesetting-rebased_to_4.0.1.patch](tarball://root/attachments/some-uuid/ticket5711/enhanced-symbolic-typesetting-rebased_to_4.0.1.patch) by gmhossain created at 2009-06-13 00:14:49",
+    "body": "Attachment [enhanced-symbolic-typesetting-rebased_to_4.0.1.patch](tarball://root/attachments/some-uuid/ticket5711/enhanced-symbolic-typesetting-rebased_to_4.0.1.patch) by @golam-m-hossain created at 2009-06-13 00:14:49",
     "created_at": "2009-06-13T00:14:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44616",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
-Attachment [enhanced-symbolic-typesetting-rebased_to_4.0.1.patch](tarball://root/attachments/some-uuid/ticket5711/enhanced-symbolic-typesetting-rebased_to_4.0.1.patch) by gmhossain created at 2009-06-13 00:14:49
+Attachment [enhanced-symbolic-typesetting-rebased_to_4.0.1.patch](tarball://root/attachments/some-uuid/ticket5711/enhanced-symbolic-typesetting-rebased_to_4.0.1.patch) by @golam-m-hossain created at 2009-06-13 00:14:49
 
 
 
@@ -258,7 +258,7 @@ archive/issue_comments_044617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44617",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_044618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44618",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_044619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44619",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_044620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44620",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_044621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44621",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -554,16 +554,16 @@ I will remove latex_function_name() and use latex_variable_name() instead.
 archive/issue_comments_044622.json:
 ```json
 {
-    "body": "Attachment [trac_5711-enhanced-symbolic-typesetting-rebased_to_4.0.2.patch](tarball://root/attachments/some-uuid/ticket5711/trac_5711-enhanced-symbolic-typesetting-rebased_to_4.0.2.patch) by gmhossain created at 2009-06-23 11:33:05",
+    "body": "Attachment [trac_5711-enhanced-symbolic-typesetting-rebased_to_4.0.2.patch](tarball://root/attachments/some-uuid/ticket5711/trac_5711-enhanced-symbolic-typesetting-rebased_to_4.0.2.patch) by @golam-m-hossain created at 2009-06-23 11:33:05",
     "created_at": "2009-06-23T11:33:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44622",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
-Attachment [trac_5711-enhanced-symbolic-typesetting-rebased_to_4.0.2.patch](tarball://root/attachments/some-uuid/ticket5711/trac_5711-enhanced-symbolic-typesetting-rebased_to_4.0.2.patch) by gmhossain created at 2009-06-23 11:33:05
+Attachment [trac_5711-enhanced-symbolic-typesetting-rebased_to_4.0.2.patch](tarball://root/attachments/some-uuid/ticket5711/trac_5711-enhanced-symbolic-typesetting-rebased_to_4.0.2.patch) by @golam-m-hossain created at 2009-06-23 11:33:05
 
 
 
@@ -577,7 +577,7 @@ archive/issue_comments_044623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44623",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -590,16 +590,16 @@ Burcin: I have updated the patch as you suggested. List of changes is given in t
 archive/issue_comments_044624.json:
 ```json
 {
-    "body": "Attachment [trac_5711-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket5711/trac_5711-doctest_fixes.patch) by burcin created at 2009-06-23 13:28:06\n\ndoctest fixes",
+    "body": "Attachment [trac_5711-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket5711/trac_5711-doctest_fixes.patch) by @burcin created at 2009-06-23 13:28:06\n\ndoctest fixes",
     "created_at": "2009-06-23T13:28:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44624",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5711-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket5711/trac_5711-doctest_fixes.patch) by burcin created at 2009-06-23 13:28:06
+Attachment [trac_5711-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket5711/trac_5711-doctest_fixes.patch) by @burcin created at 2009-06-23 13:28:06
 
 doctest fixes
 
@@ -615,7 +615,7 @@ archive/issue_comments_044625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44625",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_044626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44626",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -680,7 +680,7 @@ archive/issue_comments_044628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5711#issuecomment-44628",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 

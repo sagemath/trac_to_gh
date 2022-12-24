@@ -3,7 +3,7 @@
 archive/issues_007739.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  cremona\n\nNative (much faster) agm for RDF and CDF, optimized and document agm for RR. \n\nInspired by, but somewhat orthogonal to, #7719.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7739\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nNative (much faster) agm for RDF and CDF, optimized and document agm for RR. \n\nInspired by, but somewhat orthogonal to, #7719.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7739\n\n",
     "created_at": "2009-12-18T23:57:01Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_007739.json:
     "title": "Improvements to AGM",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7739",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  cremona
+CC:  @JohnCremona
 
 Native (much faster) agm for RDF and CDF, optimized and document agm for RR. 
 
@@ -42,7 +42,7 @@ archive/issue_comments_066504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7739#issuecomment-66504",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_066505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7739#issuecomment-66505",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,16 +73,16 @@ Changing status from new to needs_review.
 archive/issue_comments_066506.json:
 ```json
 {
-    "body": "Attachment [7739-cdfrdf-agm.patch](tarball://root/attachments/some-uuid/ticket7739/7739-cdfrdf-agm.patch) by robertwb created at 2010-01-07 10:50:46\n\nGood idea, I added some degenerate tests and refreshed the patch.",
+    "body": "Attachment [7739-cdfrdf-agm.patch](tarball://root/attachments/some-uuid/ticket7739/7739-cdfrdf-agm.patch) by @robertwb created at 2010-01-07 10:50:46\n\nGood idea, I added some degenerate tests and refreshed the patch.",
     "created_at": "2010-01-07T10:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7739#issuecomment-66506",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7739-cdfrdf-agm.patch](tarball://root/attachments/some-uuid/ticket7739/7739-cdfrdf-agm.patch) by robertwb created at 2010-01-07 10:50:46
+Attachment [7739-cdfrdf-agm.patch](tarball://root/attachments/some-uuid/ticket7739/7739-cdfrdf-agm.patch) by @robertwb created at 2010-01-07 10:50:46
 
 Good idea, I added some degenerate tests and refreshed the patch.
 
@@ -93,16 +93,16 @@ Good idea, I added some degenerate tests and refreshed the patch.
 archive/issue_comments_066507.json:
 ```json
 {
-    "body": "Attachment [7739-cdfrdf-agm.2.patch](tarball://root/attachments/some-uuid/ticket7739/7739-cdfrdf-agm.2.patch) by cremona created at 2010-01-07 15:47:39\n\ncorrects typo in previous patch (which it replaces)",
+    "body": "Attachment [7739-cdfrdf-agm.2.patch](tarball://root/attachments/some-uuid/ticket7739/7739-cdfrdf-agm.2.patch) by @JohnCremona created at 2010-01-07 15:47:39\n\ncorrects typo in previous patch (which it replaces)",
     "created_at": "2010-01-07T15:47:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7739#issuecomment-66507",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [7739-cdfrdf-agm.2.patch](tarball://root/attachments/some-uuid/ticket7739/7739-cdfrdf-agm.2.patch) by cremona created at 2010-01-07 15:47:39
+Attachment [7739-cdfrdf-agm.2.patch](tarball://root/attachments/some-uuid/ticket7739/7739-cdfrdf-agm.2.patch) by @JohnCremona created at 2010-01-07 15:47:39
 
 corrects typo in previous patch (which it replaces)
 
@@ -118,7 +118,7 @@ archive/issue_comments_066508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7739#issuecomment-66508",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_066509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7739#issuecomment-66509",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_066510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7739#issuecomment-66510",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_066511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7739",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7739#issuecomment-66511",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

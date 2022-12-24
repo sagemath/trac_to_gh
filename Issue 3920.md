@@ -3,7 +3,7 @@
 archive/issues_003920.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\nWhile reading the Developer's guide update at #3905 it occurred to me that `vector()`/`matrix()` methods are supposed to be called `_vector_`/`_matrix_()` methods so that `matrix(foo)` works. The attached patch changes those functions for finite field elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3920\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nWhile reading the Developer's guide update at #3905 it occurred to me that `vector()`/`matrix()` methods are supposed to be called `_vector_`/`_matrix_()` methods so that `matrix(foo)` works. The attached patch changes those functions for finite field elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3920\n\n",
     "created_at": "2008-08-21T09:01:34Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_003920.json:
     "title": "[with patch, needs review] FiniteFieldElement.vector/matrix -> _vector_/_matrix_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3920",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 While reading the Developer's guide update at #3905 it occurred to me that `vector()`/`matrix()` methods are supposed to be called `_vector_`/`_matrix_()` methods so that `matrix(foo)` works. The attached patch changes those functions for finite field elements.
 
@@ -39,7 +39,7 @@ archive/issue_comments_028037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28037",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_028038.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2008-09-20T16:00:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28038",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_028039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28039",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -88,16 +88,16 @@ Just a short comment: could you put back in the matrix() and vector() functions 
 archive/issue_comments_028040.json:
 ```json
 {
-    "body": "Attachment [vector_matrix.patch](tarball://root/attachments/some-uuid/ticket3920/vector_matrix.patch) by jhpalmieri created at 2008-10-17 21:25:37\n\nSince you use \"\\code\" in the docstring for vector and matrix, the docstrings need to start with r\"\"\" instead of \"\"\".  Patch attached.",
+    "body": "Attachment [vector_matrix.patch](tarball://root/attachments/some-uuid/ticket3920/vector_matrix.patch) by @jhpalmieri created at 2008-10-17 21:25:37\n\nSince you use \"\\code\" in the docstring for vector and matrix, the docstrings need to start with r\"\"\" instead of \"\"\".  Patch attached.",
     "created_at": "2008-10-17T21:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28040",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [vector_matrix.patch](tarball://root/attachments/some-uuid/ticket3920/vector_matrix.patch) by jhpalmieri created at 2008-10-17 21:25:37
+Attachment [vector_matrix.patch](tarball://root/attachments/some-uuid/ticket3920/vector_matrix.patch) by @jhpalmieri created at 2008-10-17 21:25:37
 
 Since you use "\code" in the docstring for vector and matrix, the docstrings need to start with r""" instead of """.  Patch attached.
 
@@ -108,16 +108,16 @@ Since you use "\code" in the docstring for vector and matrix, the docstrings nee
 archive/issue_comments_028041.json:
 ```json
 {
-    "body": "Attachment [10736.patch](tarball://root/attachments/some-uuid/ticket3920/10736.patch) by jhpalmieri created at 2008-10-17 21:25:55\n\napply after malb's patch",
+    "body": "Attachment [10736.patch](tarball://root/attachments/some-uuid/ticket3920/10736.patch) by @jhpalmieri created at 2008-10-17 21:25:55\n\napply after malb's patch",
     "created_at": "2008-10-17T21:25:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28041",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [10736.patch](tarball://root/attachments/some-uuid/ticket3920/10736.patch) by jhpalmieri created at 2008-10-17 21:25:55
+Attachment [10736.patch](tarball://root/attachments/some-uuid/ticket3920/10736.patch) by @jhpalmieri created at 2008-10-17 21:25:55
 
 apply after malb's patch
 
@@ -133,7 +133,7 @@ archive/issue_comments_028042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28042",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_028043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28043",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

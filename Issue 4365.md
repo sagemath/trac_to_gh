@@ -14,7 +14,7 @@ archive/issues_004365.json:
     "title": "typo in license()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4365",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -81,7 +81,7 @@ archive/issue_comments_032068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4365#issuecomment-32068",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_032069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4365",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4365#issuecomment-32069",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

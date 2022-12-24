@@ -3,7 +3,7 @@
 archive/issues_005099.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: sparse, rank\n\nOn both sage.math (sage 3.2.3) and on my iMac (sage 3.3.alpha1), running\n\n```\nmatrix(GF(3), 0, 0, {}).rank()\n```\n\nis broken: sometimes I get 0, sometimes I get 1, sometimes I get `RuntimeError`. Same goes for \n\n```\nmatrix(GF(3), 0, 0, sparse=True).rank()\n```\n\nand \n\n```\nmatrix(GF(3), 0, 10, sparse=True).rank()\n```\n\nFor what it's worth, `matrix(GF(3), 10, 0, sparse=True).rank()` seems okay.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5099\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: sparse, rank\n\nOn both sage.math (sage 3.2.3) and on my iMac (sage 3.3.alpha1), running\n\n```\nmatrix(GF(3), 0, 0, {}).rank()\n```\n\nis broken: sometimes I get 0, sometimes I get 1, sometimes I get `RuntimeError`. Same goes for \n\n```\nmatrix(GF(3), 0, 0, sparse=True).rank()\n```\n\nand \n\n```\nmatrix(GF(3), 0, 10, sparse=True).rank()\n```\n\nFor what it's worth, `matrix(GF(3), 10, 0, sparse=True).rank()` seems okay.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5099\n\n",
     "created_at": "2009-01-25T16:46:23Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005099.json:
     "title": "rank for mod n sparse matrices is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5099",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: sparse, rank
 
@@ -59,7 +59,7 @@ archive/issue_comments_038920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38920",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -78,16 +78,16 @@ Florent
 archive/issue_comments_038921.json:
 ```json
 {
-    "body": "Changing assignee from was to hivert.",
+    "body": "Changing assignee from @williamstein to @hivert.",
     "created_at": "2009-02-26T21:33:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38921",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from was to hivert.
+Changing assignee from @williamstein to @hivert.
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_038922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38922",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -114,16 +114,16 @@ Changing status from new to assigned.
 archive/issue_comments_038923.json:
 ```json
 {
-    "body": "Attachment [matrix_fix_again-fh.patch](tarball://root/attachments/some-uuid/ticket5099/matrix_fix_again-fh.patch) by hivert created at 2009-03-01 22:09:20\n\nPatch proposal",
+    "body": "Attachment [matrix_fix_again-fh.patch](tarball://root/attachments/some-uuid/ticket5099/matrix_fix_again-fh.patch) by @hivert created at 2009-03-01 22:09:20\n\nPatch proposal",
     "created_at": "2009-03-01T22:09:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38923",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [matrix_fix_again-fh.patch](tarball://root/attachments/some-uuid/ticket5099/matrix_fix_again-fh.patch) by hivert created at 2009-03-01 22:09:20
+Attachment [matrix_fix_again-fh.patch](tarball://root/attachments/some-uuid/ticket5099/matrix_fix_again-fh.patch) by @hivert created at 2009-03-01 22:09:20
 
 Patch proposal
 
@@ -139,7 +139,7 @@ archive/issue_comments_038924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38924",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_038925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38925",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

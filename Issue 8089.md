@@ -304,7 +304,7 @@ archive/issue_comments_070898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8089#issuecomment-70898",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

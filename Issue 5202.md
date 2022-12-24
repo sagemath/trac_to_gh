@@ -3,7 +3,7 @@
 archive/issues_005202.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  zimmerma\n\nThe spkg at\n\n http://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/alpha6/mpfr-2.4.0.spkg\n\nupdates the mpfr.spkg to latest upstream. For now the test suite is invoked automatically. It passes on\n\nSkyNet:\n\n* eno (x86_64, FC9)\n* mark (Sparc, Solaris)\n* fulvia (x86, Solaris)\n* cicero (x86, FC9)\n* menas (x86_64, OpenSUSE 10.3)\n* iras (Itanium, SLES 10)\n* cleo (Itanium, RHEL 5.2)\n* varro (PPC, OSX 10.4)\n\nMisc machines:\n\n* bsd (x86, OSX 10.5)\n* sage.math (x86_64, Ubuntu LTS 8.04)\n* sprocketer (x86-64, OSX 10.5)\n\nwith MPIR-0.9.rc3, which will be updated via a separate ticket.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5202\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @zimmermann6\n\nThe spkg at\n\n http://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/alpha6/mpfr-2.4.0.spkg\n\nupdates the mpfr.spkg to latest upstream. For now the test suite is invoked automatically. It passes on\n\nSkyNet:\n\n* eno (x86_64, FC9)\n* mark (Sparc, Solaris)\n* fulvia (x86, Solaris)\n* cicero (x86, FC9)\n* menas (x86_64, OpenSUSE 10.3)\n* iras (Itanium, SLES 10)\n* cleo (Itanium, RHEL 5.2)\n* varro (PPC, OSX 10.4)\n\nMisc machines:\n\n* bsd (x86, OSX 10.5)\n* sage.math (x86_64, Ubuntu LTS 8.04)\n* sprocketer (x86-64, OSX 10.5)\n\nwith MPIR-0.9.rc3, which will be updated via a separate ticket.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5202\n\n",
     "created_at": "2009-02-08T01:08:28Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_005202.json:
 ```
 Assignee: mabshoff
 
-CC:  zimmerma
+CC:  @zimmermann6
 
 The spkg at
 
@@ -108,7 +108,7 @@ archive/issue_comments_039864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5202#issuecomment-39864",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_039867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5202",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5202#issuecomment-39867",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

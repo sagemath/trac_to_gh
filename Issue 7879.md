@@ -3,7 +3,7 @@
 archive/issues_007879.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n`_sig_on` and {{{_sig_off}} are more expensive than computing the result itself.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7879\n\n",
+    "body": "Assignee: @aghitza\n\n`_sig_on` and {{{_sig_off}} are more expensive than computing the result itself.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7879\n\n",
     "created_at": "2010-01-09T19:31:01Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007879.json:
     "title": "Remove unnecessary signal handling for low prec mpfr operations.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7879",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 `_sig_on` and {{{_sig_off}} are more expensive than computing the result itself.
 
@@ -37,7 +37,7 @@ archive/issue_comments_068456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68456",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_068457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68457",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -68,16 +68,16 @@ Signal handling is omitted for functions/precisions that were clearly and unifor
 archive/issue_comments_068458.json:
 ```json
 {
-    "body": "Attachment [7879-RR-signal.patch](tarball://root/attachments/some-uuid/ticket7879/7879-RR-signal.patch) by robertwb created at 2010-01-09 19:42:17",
+    "body": "Attachment [7879-RR-signal.patch](tarball://root/attachments/some-uuid/ticket7879/7879-RR-signal.patch) by @robertwb created at 2010-01-09 19:42:17",
     "created_at": "2010-01-09T19:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68458",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7879-RR-signal.patch](tarball://root/attachments/some-uuid/ticket7879/7879-RR-signal.patch) by robertwb created at 2010-01-09 19:42:17
+Attachment [7879-RR-signal.patch](tarball://root/attachments/some-uuid/ticket7879/7879-RR-signal.patch) by @robertwb created at 2010-01-09 19:42:17
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_068459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68459",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_068460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68460",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_068461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68461",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_068462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68462",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_068465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68465",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_068466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68466",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_068468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68468",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_068469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68469",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_068470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68470",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_068471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68471",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -375,16 +375,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068472.json:
 ```json
 {
-    "body": "Attachment [7879-RR-signal.2.patch](tarball://root/attachments/some-uuid/ticket7879/7879-RR-signal.2.patch) by robertwb created at 2011-05-31 08:01:57\n\nRebased on 4.7",
+    "body": "Attachment [7879-RR-signal.2.patch](tarball://root/attachments/some-uuid/ticket7879/7879-RR-signal.2.patch) by @robertwb created at 2011-05-31 08:01:57\n\nRebased on 4.7",
     "created_at": "2011-05-31T08:01:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68472",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7879-RR-signal.2.patch](tarball://root/attachments/some-uuid/ticket7879/7879-RR-signal.2.patch) by robertwb created at 2011-05-31 08:01:57
+Attachment [7879-RR-signal.2.patch](tarball://root/attachments/some-uuid/ticket7879/7879-RR-signal.2.patch) by @robertwb created at 2011-05-31 08:01:57
 
 Rebased on 4.7
 
@@ -494,7 +494,7 @@ archive/issue_comments_068475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68475",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -524,7 +524,7 @@ archive/issue_comments_068476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68476",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -542,7 +542,7 @@ archive/issue_comments_068477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68477",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_068478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68478",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -578,7 +578,7 @@ archive/issue_comments_068479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68479",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -591,16 +591,16 @@ Sage library patch. Robert's patch rebased to Sage 4.7.2.alpha2, because of fuzz
 archive/issue_comments_068480.json:
 ```json
 {
-    "body": "Attachment [trac_7879-harmless_fuzz_2.diff](tarball://root/attachments/some-uuid/ticket7879/trac_7879-harmless_fuzz_2.diff) by leif created at 2011-09-12 15:52:24\n\nDo not apply. Fuzz against Sage 4.7.2.alpha2. For reference only.",
+    "body": "Attachment [trac_7879-harmless_fuzz_2.diff](tarball://root/attachments/some-uuid/ticket7879/trac_7879-harmless_fuzz_2.diff) by @nexttime created at 2011-09-12 15:52:24\n\nDo not apply. Fuzz against Sage 4.7.2.alpha2. For reference only.",
     "created_at": "2011-09-12T15:52:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68480",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_7879-harmless_fuzz_2.diff](tarball://root/attachments/some-uuid/ticket7879/trac_7879-harmless_fuzz_2.diff) by leif created at 2011-09-12 15:52:24
+Attachment [trac_7879-harmless_fuzz_2.diff](tarball://root/attachments/some-uuid/ticket7879/trac_7879-harmless_fuzz_2.diff) by @nexttime created at 2011-09-12 15:52:24
 
 Do not apply. Fuzz against Sage 4.7.2.alpha2. For reference only.
 
@@ -616,7 +616,7 @@ archive/issue_comments_068481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68481",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -634,7 +634,7 @@ archive/issue_comments_068482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7879#issuecomment-68482",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

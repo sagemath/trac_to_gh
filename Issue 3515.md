@@ -3,7 +3,7 @@
 archive/issues_003515.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nFinance needs to be set up or pbuild configured to properly compile.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3515\n\n",
+    "body": "Assignee: @garyfurnish\n\nFinance needs to be set up or pbuild configured to properly compile.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3515\n\n",
     "created_at": "2008-06-26T15:48:43Z",
     "labels": [
         "pbuild",
@@ -17,7 +17,7 @@ archive/issues_003515.json:
     "user": "ghtdak"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 Finance needs to be set up or pbuild configured to properly compile.
 
@@ -81,7 +81,7 @@ archive/issue_comments_024776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3515",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3515#issuecomment-24776",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

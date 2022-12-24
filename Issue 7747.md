@@ -14,7 +14,7 @@ archive/issues_007747.json:
     "title": "miscellaneous documentation fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7747",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7747
 archive/issue_comments_066687.json:
 ```json
 {
-    "body": "Attachment [trac_7747-doc.patch](tarball://root/attachments/some-uuid/ticket7747/trac_7747-doc.patch) by jhpalmieri created at 2009-12-21 22:41:29",
+    "body": "Attachment [trac_7747-doc.patch](tarball://root/attachments/some-uuid/ticket7747/trac_7747-doc.patch) by @jhpalmieri created at 2009-12-21 22:41:29",
     "created_at": "2009-12-21T22:41:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7747#issuecomment-66687",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7747-doc.patch](tarball://root/attachments/some-uuid/ticket7747/trac_7747-doc.patch) by jhpalmieri created at 2009-12-21 22:41:29
+Attachment [trac_7747-doc.patch](tarball://root/attachments/some-uuid/ticket7747/trac_7747-doc.patch) by @jhpalmieri created at 2009-12-21 22:41:29
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_066688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7747#issuecomment-66688",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_066691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7747#issuecomment-66691",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_066692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7747#issuecomment-66692",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_066693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7747#issuecomment-66693",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_066694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7747#issuecomment-66694",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_066695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7747#issuecomment-66695",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

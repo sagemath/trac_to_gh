@@ -3,7 +3,7 @@
 archive/issues_003376.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  malb\n\nMultiplication of large matrices over GF(2) seems to use a cubic algorithm in Sage, whereas Magma\nimplements Strassen's algorithm:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.2, Release Date: 2008-05-24                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: A=Matrix(GF(2),2048);A.randomize()\nsage: B=Matrix(GF(2),2048);B.randomize()\nsage: time C=A*B\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n\nsage: A=Matrix(GF(2),4096);A.randomize()\nsage: B=Matrix(GF(2),4096);B.randomize()\nsage: time C=A*B\nCPU times: user 0.26 s, sys: 0.00 s, total: 0.26 s\nWall time: 0.26 s\n\nsage: A=Matrix(GF(2),8192);A.randomize()\nsage: B=Matrix(GF(2),8192);B.randomize()\nsage: time C=A*B\nCPU times: user 4.31 s, sys: 0.01 s, total: 4.31 s\nWall time: 4.31 s\n```\n\nAnd in Magma:\n\n```\nMagma V2.14-8     Fri Jun  6 2008 08:25:49 on pasta    [Seed = 1195890521]\nType ? for help.  Type <Ctrl>-D to quit.\n\nLoading startup file \"/users/cacao/zimmerma/.magmarc\"\n\n> n:=2048;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.030\n\n> n:=4096;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.200\n\n> n:=8192;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 1.370\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3376\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @malb\n\nMultiplication of large matrices over GF(2) seems to use a cubic algorithm in Sage, whereas Magma\nimplements Strassen's algorithm:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.2, Release Date: 2008-05-24                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: A=Matrix(GF(2),2048);A.randomize()\nsage: B=Matrix(GF(2),2048);B.randomize()\nsage: time C=A*B\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n\nsage: A=Matrix(GF(2),4096);A.randomize()\nsage: B=Matrix(GF(2),4096);B.randomize()\nsage: time C=A*B\nCPU times: user 0.26 s, sys: 0.00 s, total: 0.26 s\nWall time: 0.26 s\n\nsage: A=Matrix(GF(2),8192);A.randomize()\nsage: B=Matrix(GF(2),8192);B.randomize()\nsage: time C=A*B\nCPU times: user 4.31 s, sys: 0.01 s, total: 4.31 s\nWall time: 4.31 s\n```\n\nAnd in Magma:\n\n```\nMagma V2.14-8     Fri Jun  6 2008 08:25:49 on pasta    [Seed = 1195890521]\nType ? for help.  Type <Ctrl>-D to quit.\n\nLoading startup file \"/users/cacao/zimmerma/.magmarc\"\n\n> n:=2048;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.030\n\n> n:=4096;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.200\n\n> n:=8192;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 1.370\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3376\n\n",
     "created_at": "2008-06-06T06:54:44Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_003376.json:
     "title": "matrix multiplication should use Strassen's algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3376",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  malb
+CC:  @malb
 
 Multiplication of large matrices over GF(2) seems to use a cubic algorithm in Sage, whereas Magma
 implements Strassen's algorithm:
@@ -132,7 +132,7 @@ archive/issue_comments_023611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23611",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -186,16 +186,16 @@ as you can see: It isn't really much faster than M4RM yet, since the tricky part
 archive/issue_comments_023612.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2008-06-06T12:52:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23612",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -209,7 +209,7 @@ archive/issue_comments_023613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23613",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_023614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23614",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_023615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23615",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -273,16 +273,16 @@ since I don't know the answer. Though, quite likely Sage doesn't implement it. T
 archive/issue_comments_023616.json:
 ```json
 {
-    "body": "Attachment [m4ri_strassen_standard.patch](tarball://root/attachments/some-uuid/ticket3376/m4ri_strassen_standard.patch) by malb created at 2008-08-06 16:31:42\n\nThe patch requires\n\n   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080601.spkg",
+    "body": "Attachment [m4ri_strassen_standard.patch](tarball://root/attachments/some-uuid/ticket3376/m4ri_strassen_standard.patch) by @malb created at 2008-08-06 16:31:42\n\nThe patch requires\n\n   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080601.spkg",
     "created_at": "2008-08-06T16:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23616",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [m4ri_strassen_standard.patch](tarball://root/attachments/some-uuid/ticket3376/m4ri_strassen_standard.patch) by malb created at 2008-08-06 16:31:42
+Attachment [m4ri_strassen_standard.patch](tarball://root/attachments/some-uuid/ticket3376/m4ri_strassen_standard.patch) by @malb created at 2008-08-06 16:31:42
 
 The patch requires
 
@@ -295,16 +295,16 @@ The patch requires
 archive/issue_comments_023617.json:
 ```json
 {
-    "body": "Attachment [m4ri_20080620.patch](tarball://root/attachments/some-uuid/ticket3376/m4ri_20080620.patch) by malb created at 2008-08-06 16:38:52",
+    "body": "Attachment [m4ri_20080620.patch](tarball://root/attachments/some-uuid/ticket3376/m4ri_20080620.patch) by @malb created at 2008-08-06 16:38:52",
     "created_at": "2008-08-06T16:38:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23617",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [m4ri_20080620.patch](tarball://root/attachments/some-uuid/ticket3376/m4ri_20080620.patch) by malb created at 2008-08-06 16:38:52
+Attachment [m4ri_20080620.patch](tarball://root/attachments/some-uuid/ticket3376/m4ri_20080620.patch) by @malb created at 2008-08-06 16:38:52
 
 
 
@@ -318,7 +318,7 @@ archive/issue_comments_023618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23618",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_023620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23620",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_023621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23621",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

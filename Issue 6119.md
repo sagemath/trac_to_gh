@@ -3,7 +3,7 @@
 archive/issues_006119.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman rws\n\nGinac has series about zero, it should be easy to shift to get the series about any point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6119\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @rwst\n\nGinac has series about zero, it should be easy to shift to get the series about any point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6119\n\n",
     "created_at": "2009-05-22T02:38:25Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_006119.json:
     "title": "implement taylor series without maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6119",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman rws
+CC:  @kcrisman @rwst
 
 Ginac has series about zero, it should be easy to shift to get the series about any point.
 
@@ -39,7 +39,7 @@ archive/issue_comments_048900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48900",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_048901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48901",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_048902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48902",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_048903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48903",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_048904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48904",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_048905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48905",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_048906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48906",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_048907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48907",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_048908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48908",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 

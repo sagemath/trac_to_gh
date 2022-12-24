@@ -14,7 +14,7 @@ archive/issues_000374.json:
     "title": "Bug in factorization of polynomial over number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/374",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -79,7 +79,7 @@ archive/issue_comments_001784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/374#issuecomment-1784",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_001785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/374#issuecomment-1785",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_001786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/374",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/374#issuecomment-1786",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

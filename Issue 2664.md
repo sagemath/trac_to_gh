@@ -3,7 +3,7 @@
 archive/issues_002664.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan\n\nKeywords: symplectic basis form integer matrix\n\nImplement a `symplectic_form` for computing symplectic bases for alternating, anti-symmetric matrices.  This is essential for computing with polarized Abelian varieties.\n\nThe attached patch computes symplectic forms over fields and the integers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2664\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: symplectic basis form integer matrix\n\nImplement a `symplectic_form` for computing symplectic bases for alternating, anti-symmetric matrices.  This is essential for computing with polarized Abelian varieties.\n\nThe attached patch computes symplectic forms over fields and the integers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2664\n\n",
     "created_at": "2008-03-25T19:26:39Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_002664.json:
     "title": "[with patch, needs review] implement a symplectic form for finding symplectic bases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2664",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: symplectic basis form integer matrix
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2664
 archive/issue_comments_018331.json:
 ```json
 {
-    "body": "Attachment [2664-ncalexan-symplectic-form-1.patch](tarball://root/attachments/some-uuid/ticket2664/2664-ncalexan-symplectic-form-1.patch) by ncalexan created at 2008-03-25 19:29:49",
+    "body": "Attachment [2664-ncalexan-symplectic-form-1.patch](tarball://root/attachments/some-uuid/ticket2664/2664-ncalexan-symplectic-form-1.patch) by @ncalexan created at 2008-03-25 19:29:49",
     "created_at": "2008-03-25T19:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2664#issuecomment-18331",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2664-ncalexan-symplectic-form-1.patch](tarball://root/attachments/some-uuid/ticket2664/2664-ncalexan-symplectic-form-1.patch) by ncalexan created at 2008-03-25 19:29:49
+Attachment [2664-ncalexan-symplectic-form-1.patch](tarball://root/attachments/some-uuid/ticket2664/2664-ncalexan-symplectic-form-1.patch) by @ncalexan created at 2008-03-25 19:29:49
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_018332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2664#issuecomment-18332",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -80,16 +80,16 @@ Patch looks **great**! There are one or two tiny things I'd like to see fixed:
 archive/issue_comments_018333.json:
 ```json
 {
-    "body": "Attachment [2664-ncalexan-symplectic-form-2.patch](tarball://root/attachments/some-uuid/ticket2664/2664-ncalexan-symplectic-form-2.patch) by ncalexan created at 2008-03-28 21:33:56",
+    "body": "Attachment [2664-ncalexan-symplectic-form-2.patch](tarball://root/attachments/some-uuid/ticket2664/2664-ncalexan-symplectic-form-2.patch) by @ncalexan created at 2008-03-28 21:33:56",
     "created_at": "2008-03-28T21:33:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2664#issuecomment-18333",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2664-ncalexan-symplectic-form-2.patch](tarball://root/attachments/some-uuid/ticket2664/2664-ncalexan-symplectic-form-2.patch) by ncalexan created at 2008-03-28 21:33:56
+Attachment [2664-ncalexan-symplectic-form-2.patch](tarball://root/attachments/some-uuid/ticket2664/2664-ncalexan-symplectic-form-2.patch) by @ncalexan created at 2008-03-28 21:33:56
 
 
 

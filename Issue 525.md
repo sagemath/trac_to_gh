@@ -14,7 +14,7 @@ archive/issues_000525.json:
     "title": "Get Pete Chvany's build notes into the SAGE docs.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/525",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/525
 archive/issue_comments_002664.json:
 ```json
 {
-    "body": "Attachment [SAGEbuild.rtf](tarball://root/attachments/some-uuid/ticket525/SAGEbuild.rtf) by was created at 2007-08-30 03:06:58\n\nSAGe build notes",
+    "body": "Attachment [SAGEbuild.rtf](tarball://root/attachments/some-uuid/ticket525/SAGEbuild.rtf) by @williamstein created at 2007-08-30 03:06:58\n\nSAGe build notes",
     "created_at": "2007-08-30T03:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/525#issuecomment-2664",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [SAGEbuild.rtf](tarball://root/attachments/some-uuid/ticket525/SAGEbuild.rtf) by was created at 2007-08-30 03:06:58
+Attachment [SAGEbuild.rtf](tarball://root/attachments/some-uuid/ticket525/SAGEbuild.rtf) by @williamstein created at 2007-08-30 03:06:58
 
 SAGe build notes
 
@@ -121,7 +121,7 @@ archive/issue_comments_002668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/525#issuecomment-2668",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

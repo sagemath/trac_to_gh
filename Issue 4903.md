@@ -14,7 +14,7 @@ archive/issues_004903.json:
     "title": "convert sage.calculus.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4903",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4903
 archive/issue_comments_037195.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-01-02T03:02:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37195",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_037196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37196",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_037197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37197",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_037198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37198",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -126,16 +126,16 @@ not offset as blue. (Eg, the next link at the bottom of the page does not appear
 archive/issue_comments_037199.json:
 ```json
 {
-    "body": "Attachment [trac_4903-2.patch](tarball://root/attachments/some-uuid/ticket4903/trac_4903-2.patch) by mhansen created at 2009-01-02 20:32:51\n\nI attached a patch which fixes the problem with the nested quotes.\n\nI'm not seeing the problem that you are in Firefox 3.0.",
+    "body": "Attachment [trac_4903-2.patch](tarball://root/attachments/some-uuid/ticket4903/trac_4903-2.patch) by @mwhansen created at 2009-01-02 20:32:51\n\nI attached a patch which fixes the problem with the nested quotes.\n\nI'm not seeing the problem that you are in Firefox 3.0.",
     "created_at": "2009-01-02T20:32:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37199",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4903-2.patch](tarball://root/attachments/some-uuid/ticket4903/trac_4903-2.patch) by mhansen created at 2009-01-02 20:32:51
+Attachment [trac_4903-2.patch](tarball://root/attachments/some-uuid/ticket4903/trac_4903-2.patch) by @mwhansen created at 2009-01-02 20:32:51
 
 I attached a patch which fixes the problem with the nested quotes.
 
@@ -191,7 +191,7 @@ archive/issue_comments_037202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37202",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

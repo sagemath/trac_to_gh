@@ -3,7 +3,7 @@
 archive/issues_008259.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  jbandlow sage-combinat\n\nKeywords: symmetric functions\n\nCurrently a function that converts a symmetric polynomial into the monomial basis is missing in sage. Jason Bandlow wrote a first version which should be integrated into sage:\n\ndef toSF(f):\n    \"\"\" Input is a symmetric polynomial in a polynomial ring in finitely\n    many variables.  Output is a symmetric function in the monomial\n    basis of the ring of symmetric functions over the same base ring.\n    \"\"\"\n    X = f.parent().gens()\n    n = f.parent().ngens()\n    SF = SymmetricFunctions(f.base_ring())\n    m = SF.monomial()\n    out = m(0)\n    while f != 0:\n        lt = f.lt()\n        c = lt.monomial_coefficient(lt)\n        p = Partition(lt.exponents()[0])\n        f += -c*m(p).expand(n,X)\n        out += c*m(p)\n    return out\n\nIssue created by migration from https://trac.sagemath.org/ticket/8259\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @jbandlow sage-combinat\n\nKeywords: symmetric functions\n\nCurrently a function that converts a symmetric polynomial into the monomial basis is missing in sage. Jason Bandlow wrote a first version which should be integrated into sage:\n\ndef toSF(f):\n    \"\"\" Input is a symmetric polynomial in a polynomial ring in finitely\n    many variables.  Output is a symmetric function in the monomial\n    basis of the ring of symmetric functions over the same base ring.\n    \"\"\"\n    X = f.parent().gens()\n    n = f.parent().ngens()\n    SF = SymmetricFunctions(f.base_ring())\n    m = SF.monomial()\n    out = m(0)\n    while f != 0:\n        lt = f.lt()\n        c = lt.monomial_coefficient(lt)\n        p = Partition(lt.exponents()[0])\n        f += -c*m(p).expand(n,X)\n        out += c*m(p)\n    return out\n\nIssue created by migration from https://trac.sagemath.org/ticket/8259\n\n",
     "created_at": "2010-02-14T00:22:35Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_008259.json:
     "title": "Conversion from symmetric polynomials to basis of monomial symmetric functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8259",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 Assignee: sage-combinat
 
-CC:  jbandlow sage-combinat
+CC:  @jbandlow sage-combinat
 
 Keywords: symmetric functions
 
@@ -59,7 +59,7 @@ archive/issue_comments_073090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8259#issuecomment-73090",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_073092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8259#issuecomment-73092",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_073093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8259#issuecomment-73093",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_073094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8259#issuecomment-73094",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_073095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8259#issuecomment-73095",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -224,16 +224,16 @@ Anne
 archive/issue_comments_073096.json:
 ```json
 {
-    "body": "Attachment [trac_8259-from_poly_to_sym-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-as.patch) by aschilling created at 2010-02-23 18:49:25",
+    "body": "Attachment [trac_8259-from_poly_to_sym-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-as.patch) by @anneschilling created at 2010-02-23 18:49:25",
     "created_at": "2010-02-23T18:49:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8259#issuecomment-73096",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [trac_8259-from_poly_to_sym-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-as.patch) by aschilling created at 2010-02-23 18:49:25
+Attachment [trac_8259-from_poly_to_sym-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-as.patch) by @anneschilling created at 2010-02-23 18:49:25
 
 
 
@@ -247,7 +247,7 @@ archive/issue_comments_073097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8259#issuecomment-73097",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_073098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8259#issuecomment-73098",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_073099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8259#issuecomment-73099",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_073100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8259#issuecomment-73100",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -335,16 +335,16 @@ Thanks!
 archive/issue_comments_073101.json:
 ```json
 {
-    "body": "Attachment [trac_8259-from_poly_to_sym-review-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-review-as.patch) by aschilling created at 2010-02-25 18:00:10\n\nReplying to [comment:11 nthiery]:\n> Just two tiny remarks:\n> \n>  - One can write `assert a==b` instead of `assert(a==b)`\n>  - One could be a bit more specific:  `assert a==b, \"not a symmetric polynomial\"\n>  - Assertion are not *always* checked (see http://docs.python.org/reference/simple_stmts.html).\n>    So I am not sure it is the appropriate idiom here.\n> \n> That's minor, so I let you see if you want to add a quick review patch, or just leave things as is.\n> \n> Thanks!\n\nDone! Please review the review of the review of the review ... oops! Infinite loop!",
+    "body": "Attachment [trac_8259-from_poly_to_sym-review-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-review-as.patch) by @anneschilling created at 2010-02-25 18:00:10\n\nReplying to [comment:11 nthiery]:\n> Just two tiny remarks:\n> \n>  - One can write `assert a==b` instead of `assert(a==b)`\n>  - One could be a bit more specific:  `assert a==b, \"not a symmetric polynomial\"\n>  - Assertion are not *always* checked (see http://docs.python.org/reference/simple_stmts.html).\n>    So I am not sure it is the appropriate idiom here.\n> \n> That's minor, so I let you see if you want to add a quick review patch, or just leave things as is.\n> \n> Thanks!\n\nDone! Please review the review of the review of the review ... oops! Infinite loop!",
     "created_at": "2010-02-25T18:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8259#issuecomment-73101",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [trac_8259-from_poly_to_sym-review-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-review-as.patch) by aschilling created at 2010-02-25 18:00:10
+Attachment [trac_8259-from_poly_to_sym-review-as.patch](tarball://root/attachments/some-uuid/ticket8259/trac_8259-from_poly_to_sym-review-as.patch) by @anneschilling created at 2010-02-25 18:00:10
 
 Replying to [comment:11 nthiery]:
 > Just two tiny remarks:
@@ -372,7 +372,7 @@ archive/issue_comments_073102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8259",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8259#issuecomment-73102",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

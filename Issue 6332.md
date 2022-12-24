@@ -14,7 +14,7 @@ archive/issues_006332.json:
     "title": "optional doctest failure -- jones number field database tests fail",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6332",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -108,16 +108,16 @@ Attachment [trac_6332.patch](tarball://root/attachments/some-uuid/ticket6332/tra
 archive/issue_comments_050551.json:
 ```json
 {
-    "body": "Attachment [trac_6332-ref.patch](tarball://root/attachments/some-uuid/ticket6332/trac_6332-ref.patch) by AlexGhitza created at 2009-07-17 11:09:30\n\napply after the first patch",
+    "body": "Attachment [trac_6332-ref.patch](tarball://root/attachments/some-uuid/ticket6332/trac_6332-ref.patch) by @aghitza created at 2009-07-17 11:09:30\n\napply after the first patch",
     "created_at": "2009-07-17T11:09:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50551",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6332-ref.patch](tarball://root/attachments/some-uuid/ticket6332/trac_6332-ref.patch) by AlexGhitza created at 2009-07-17 11:09:30
+Attachment [trac_6332-ref.patch](tarball://root/attachments/some-uuid/ticket6332/trac_6332-ref.patch) by @aghitza created at 2009-07-17 11:09:30
 
 apply after the first patch
 
@@ -133,7 +133,7 @@ archive/issue_comments_050552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50552",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

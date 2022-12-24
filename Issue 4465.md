@@ -3,7 +3,7 @@
 archive/issues_004465.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is an error to a custom patch that we have to the matplotlib code so that we can have arrows that are shortened by a certain number of points.\n\n\n```\nThis week, I was drawing plot vector field using two ways : (1) plot_vector_field and (2) by simply suming up plenty of arrows as I wished. Since their was a fixed point somewhere, I came up with the problem of drawing a zero length arrow. Using sage 3.1.4, I get a zero division error. Where is this division from? The example below show that it is not from the slope as it can draw a vertical arrow.\n\nsage: arrow((1, 1), (2, 1))\nsage: arrow((1, 1), (1, 2))\nsage: arrow((1, 1), (1, 1))\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last) :\n...\n/home/slabbe/sage/local/lib/python2.5/site-packages/matplotlib/arrow_line.pyc in draw(self, renderer)\n    100         pixel_vector = (orig_t.transform_point(points[1]) - orig_t.transform_point(points[0]))\n    101         pixel_length=math.sqrt(sum(pixel_vector**2))\n--> 102         clip_fraction = renderer.points_to_pixels(self._arrowshorten)/pixel_length\n    103         head_clip_fraction = renderer.points_to_pixels(self._arrowshorten+self._arrowheadlength*0.8)/pixel_length\n    104\n\nZeroDivisionError: float division\n\nIn my problem, I would have been happy if arrow(x,x) would draw simply a point. I know I can define my own arrow but maybe sage's arrow could behave like myarrow ?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4465\n\n",
+    "body": "Assignee: @williamstein\n\nThis is an error to a custom patch that we have to the matplotlib code so that we can have arrows that are shortened by a certain number of points.\n\n\n```\nThis week, I was drawing plot vector field using two ways : (1) plot_vector_field and (2) by simply suming up plenty of arrows as I wished. Since their was a fixed point somewhere, I came up with the problem of drawing a zero length arrow. Using sage 3.1.4, I get a zero division error. Where is this division from? The example below show that it is not from the slope as it can draw a vertical arrow.\n\nsage: arrow((1, 1), (2, 1))\nsage: arrow((1, 1), (1, 2))\nsage: arrow((1, 1), (1, 1))\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last) :\n...\n/home/slabbe/sage/local/lib/python2.5/site-packages/matplotlib/arrow_line.pyc in draw(self, renderer)\n    100         pixel_vector = (orig_t.transform_point(points[1]) - orig_t.transform_point(points[0]))\n    101         pixel_length=math.sqrt(sum(pixel_vector**2))\n--> 102         clip_fraction = renderer.points_to_pixels(self._arrowshorten)/pixel_length\n    103         head_clip_fraction = renderer.points_to_pixels(self._arrowshorten+self._arrowheadlength*0.8)/pixel_length\n    104\n\nZeroDivisionError: float division\n\nIn my problem, I would have been happy if arrow(x,x) would draw simply a point. I know I can define my own arrow but maybe sage's arrow could behave like myarrow ?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4465\n\n",
     "created_at": "2008-11-08T03:03:22Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004465.json:
     "title": "zero-length errors give division error instead of just drawing a point.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4465",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is an error to a custom patch that we have to the matplotlib code so that we can have arrows that are shortened by a certain number of points.
 
@@ -60,7 +60,7 @@ archive/issue_comments_032972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4465",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4465#issuecomment-32972",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -73,16 +73,16 @@ Changing status from new to assigned.
 archive/issue_comments_032973.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2008-11-08T03:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4465",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4465#issuecomment-32973",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_032974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4465",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4465#issuecomment-32974",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_032975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4465",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4465#issuecomment-32975",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_032976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4465",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4465#issuecomment-32976",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_032977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4465",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4465#issuecomment-32977",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

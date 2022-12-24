@@ -14,7 +14,7 @@ archive/issues_008204.json:
     "title": "when upgrading sage, cddlib spkg goes interactive due to some errors in it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8204",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -108,7 +108,7 @@ archive/issue_comments_072362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72362",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_072363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8204",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72363",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008289.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  abmasse\n\n`WordMorphism.__call__` is doing a conversion of the input into the domain which is not necessary. Basicly, all what is needed is that the input be iterable. Here are some timing improvements :\n\nBEFORE:\n\n\n```\nsage: m = WordMorphism('a->aab,b->ba')\nsage: %timeit w = m('a'*100)\n1000 loops, best of 3: 343 \u00b5s per loop\n```\n\n\nAFTER:\n\n\n```\nsage: m = WordMorphism('a->aab,b->ba')\nsage: %timeit w = m('a'*100)\n1000 loops, best of 3: 242 \u00b5s per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8289\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\n`WordMorphism.__call__` is doing a conversion of the input into the domain which is not necessary. Basicly, all what is needed is that the input be iterable. Here are some timing improvements :\n\nBEFORE:\n\n\n```\nsage: m = WordMorphism('a->aab,b->ba')\nsage: %timeit w = m('a'*100)\n1000 loops, best of 3: 343 \u00b5s per loop\n```\n\n\nAFTER:\n\n\n```\nsage: m = WordMorphism('a->aab,b->ba')\nsage: %timeit w = m('a'*100)\n1000 loops, best of 3: 242 \u00b5s per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8289\n\n",
     "created_at": "2010-02-16T22:17:45Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008289.json:
     "title": "Clean up WordMorphism.__call__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8289",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  abmasse
 
@@ -59,7 +59,7 @@ archive/issue_comments_073417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8289#issuecomment-73417",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -264,16 +264,16 @@ Total time for all tests: 53.1 seconds
 archive/issue_comments_073420.json:
 ```json
 {
-    "body": "Attachment [trac_8289_wordmorphism_call-sl.patch](tarball://root/attachments/some-uuid/ticket8289/trac_8289_wordmorphism_call-sl.patch) by slabbe created at 2010-02-26 23:57:38",
+    "body": "Attachment [trac_8289_wordmorphism_call-sl.patch](tarball://root/attachments/some-uuid/ticket8289/trac_8289_wordmorphism_call-sl.patch) by @seblabbe created at 2010-02-26 23:57:38",
     "created_at": "2010-02-26T23:57:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8289#issuecomment-73420",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8289_wordmorphism_call-sl.patch](tarball://root/attachments/some-uuid/ticket8289/trac_8289_wordmorphism_call-sl.patch) by slabbe created at 2010-02-26 23:57:38
+Attachment [trac_8289_wordmorphism_call-sl.patch](tarball://root/attachments/some-uuid/ticket8289/trac_8289_wordmorphism_call-sl.patch) by @seblabbe created at 2010-02-26 23:57:38
 
 
 
@@ -287,7 +287,7 @@ archive/issue_comments_073421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8289#issuecomment-73421",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_073424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8289#issuecomment-73424",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_073427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8289#issuecomment-73427",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_073428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8289#issuecomment-73428",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 

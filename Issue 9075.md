@@ -3,7 +3,7 @@
 archive/issues_009075.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9075\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9075\n\n",
     "created_at": "2010-05-28T17:38:25Z",
     "labels": [
         "pickling",
@@ -14,10 +14,10 @@ archive/issues_009075.json:
     "title": "sage.structure.sage_object.unpickle_all improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9075",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_084225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9075#issuecomment-84225",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_084226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9075#issuecomment-84226",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_084227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9075#issuecomment-84227",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_084228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9075#issuecomment-84228",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_084229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9075#issuecomment-84229",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_084230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9075#issuecomment-84230",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_084231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9075#issuecomment-84231",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_084232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9075#issuecomment-84232",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -189,16 +189,16 @@ Changing status from closed to needs_work.
 archive/issue_comments_084233.json:
 ```json
 {
-    "body": "Attachment [trac_9075_unpickle_all_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket9075/trac_9075_unpickle_all_testsuite-nt.patch) by nthiery created at 2010-10-13 20:08:32",
+    "body": "Attachment [trac_9075_unpickle_all_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket9075/trac_9075_unpickle_all_testsuite-nt.patch) by @nthiery created at 2010-10-13 20:08:32",
     "created_at": "2010-10-13T20:08:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9075#issuecomment-84233",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_9075_unpickle_all_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket9075/trac_9075_unpickle_all_testsuite-nt.patch) by nthiery created at 2010-10-13 20:08:32
+Attachment [trac_9075_unpickle_all_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket9075/trac_9075_unpickle_all_testsuite-nt.patch) by @nthiery created at 2010-10-13 20:08:32
 
 
 
@@ -212,7 +212,7 @@ archive/issue_comments_084234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9075#issuecomment-84234",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_084235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9075#issuecomment-84235",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

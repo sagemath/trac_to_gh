@@ -13,7 +13,7 @@ archive/issues_000288.json:
     "title": "new version of sagex with Robert B's many many enhancements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/288",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: Robert Bradshaw
@@ -39,7 +39,7 @@ archive/issue_comments_001360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/288#issuecomment-1360",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_001361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/288",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/288#issuecomment-1361",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

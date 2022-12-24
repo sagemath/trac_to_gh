@@ -63,7 +63,7 @@ archive/issue_comments_033027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4471#issuecomment-33027",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -102,16 +102,16 @@ Just found the following in notebook.Notebook.html
 archive/issue_comments_033029.json:
 ```json
 {
-    "body": "Attachment [trac_4471.patch](tarball://root/attachments/some-uuid/ticket4471/trac_4471.patch) by was created at 2008-12-06 21:09:49",
+    "body": "Attachment [trac_4471.patch](tarball://root/attachments/some-uuid/ticket4471/trac_4471.patch) by @williamstein created at 2008-12-06 21:09:49",
     "created_at": "2008-12-06T21:09:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4471#issuecomment-33029",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4471.patch](tarball://root/attachments/some-uuid/ticket4471/trac_4471.patch) by was created at 2008-12-06 21:09:49
+Attachment [trac_4471.patch](tarball://root/attachments/some-uuid/ticket4471/trac_4471.patch) by @williamstein created at 2008-12-06 21:09:49
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_033031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4471#issuecomment-33031",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_033032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4471#issuecomment-33032",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_033033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4471#issuecomment-33033",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

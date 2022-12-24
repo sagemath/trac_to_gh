@@ -3,7 +3,7 @@
 archive/issues_001947.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  mmezzarobba slelievre jipilab\n\nIt's surprising that this isn't already done -- it should be easy, since the morphisms don't have to do too much, and one already has the more complicated ring homomorphism code to use as a guide. I'll do this at SD7, if no one beats me to it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1947\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @mezzarobba @slel @jplab\n\nIt's surprising that this isn't already done -- it should be easy, since the morphisms don't have to do too much, and one already has the more complicated ring homomorphism code to use as a guide. I'll do this at SD7, if no one beats me to it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1947\n\n",
     "created_at": "2008-01-27T10:46:59Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_001947.json:
     "title": "Implement homomorphisms between vector spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1947",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  mmezzarobba slelievre jipilab
+CC:  @mezzarobba @slel @jplab
 
 It's surprising that this isn't already done -- it should be easy, since the morphisms don't have to do too much, and one already has the more complicated ring homomorphism code to use as a guide. I'll do this at SD7, if no one beats me to it.
 
@@ -39,7 +39,7 @@ archive/issue_comments_012371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1947#issuecomment-12371",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_012372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1947#issuecomment-12372",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_012373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1947#issuecomment-12373",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_012374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1947#issuecomment-12374",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_012375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1947#issuecomment-12375",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_012376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1947#issuecomment-12376",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_012381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1947#issuecomment-12381",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_012382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1947#issuecomment-12382",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_012383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1947#issuecomment-12383",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_012384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1947#issuecomment-12384",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_012385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1947#issuecomment-12385",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_012386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1947#issuecomment-12386",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_012387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1947#issuecomment-12387",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

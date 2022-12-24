@@ -3,7 +3,7 @@
 archive/issues_004323.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  zimmerma\n\nUnfortunately, there is often no way to doctest such functions directly, and for some re-writing them as lambda functions is impossible or reduces readability. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4323\n\n",
+    "body": "Assignee: tbd\n\nCC:  @zimmermann6\n\nUnfortunately, there is often no way to doctest such functions directly, and for some re-writing them as lambda functions is impossible or reduces readability. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4323\n\n",
     "created_at": "2008-10-19T05:41:59Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_004323.json:
     "title": "sage-coverage expects doctests for closures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4323",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
 
-CC:  zimmerma
+CC:  @zimmermann6
 
 Unfortunately, there is often no way to doctest such functions directly, and for some re-writing them as lambda functions is impossible or reduces readability. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_031673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4323#issuecomment-31673",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_031674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4323#issuecomment-31674",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_031675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4323#issuecomment-31675",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_031677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4323#issuecomment-31677",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

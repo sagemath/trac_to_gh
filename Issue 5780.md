@@ -3,7 +3,7 @@
 archive/issues_005780.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5780\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5780\n\n",
     "created_at": "2009-04-13T20:13:41Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005780.json:
     "title": "[with patch; needs review] plotting -- deal with NaN's in plot range",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5780",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 

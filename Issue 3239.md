@@ -14,7 +14,7 @@ archive/issues_003239.json:
     "title": "[with patch; needs review] cygwin polybori -- add Cygwin build support for polybori",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3239",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

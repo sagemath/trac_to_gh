@@ -3,7 +3,7 @@
 archive/issues_002523.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: ModularSymbols(GammaH(33,[1,2]),2).cuspidal_subspace()\nTraceback (most recent call last):\n...\nKeyError: 11\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2523\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: ModularSymbols(GammaH(33,[1,2]),2).cuspidal_subspace()\nTraceback (most recent call last):\n...\nKeyError: 11\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2523\n\n",
     "created_at": "2008-03-15T00:01:36Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002523.json:
     "title": "bug in modular symbols for GammaH subgroup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2523",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -44,7 +44,7 @@ archive/issue_comments_017206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17206",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -57,16 +57,16 @@ Changing component from number theory to modular forms.
 archive/issue_comments_017207.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2008-04-23T02:35:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17207",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_017208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17208",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_017209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17209",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_017210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17210",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -151,16 +151,16 @@ Changing status from new to assigned.
 archive/issue_comments_017211.json:
 ```json
 {
-    "body": "Attachment [trac-2523.patch](tarball://root/attachments/some-uuid/ticket2523/trac-2523.patch) by ncalexan created at 2008-04-26 17:20:23\n\nThere are some typos, namely `specfically` in at least two places.\n\nI'm worried about the lack of `t==-1` doctest as well, but this looks good to me anyway.",
+    "body": "Attachment [trac-2523.patch](tarball://root/attachments/some-uuid/ticket2523/trac-2523.patch) by @ncalexan created at 2008-04-26 17:20:23\n\nThere are some typos, namely `specfically` in at least two places.\n\nI'm worried about the lack of `t==-1` doctest as well, but this looks good to me anyway.",
     "created_at": "2008-04-26T17:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17211",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac-2523.patch](tarball://root/attachments/some-uuid/ticket2523/trac-2523.patch) by ncalexan created at 2008-04-26 17:20:23
+Attachment [trac-2523.patch](tarball://root/attachments/some-uuid/ticket2523/trac-2523.patch) by @ncalexan created at 2008-04-26 17:20:23
 
 There are some typos, namely `specfically` in at least two places.
 
@@ -178,7 +178,7 @@ archive/issue_comments_017212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17212",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -197,16 +197,16 @@ Having said this, I think we should be grateful for point (1) and merge, and fig
 archive/issue_comments_017213.json:
 ```json
 {
-    "body": "Attachment [trac-2523-pt2.patch](tarball://root/attachments/some-uuid/ticket2523/trac-2523-pt2.patch) by craigcitro created at 2008-04-26 18:26:50\n\nAdded a small patch fixing the typos ncalexan pointed out. Also, I'm closing #2938 as fixed.",
+    "body": "Attachment [trac-2523-pt2.patch](tarball://root/attachments/some-uuid/ticket2523/trac-2523-pt2.patch) by @craigcitro created at 2008-04-26 18:26:50\n\nAdded a small patch fixing the typos ncalexan pointed out. Also, I'm closing #2938 as fixed.",
     "created_at": "2008-04-26T18:26:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17213",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2523-pt2.patch](tarball://root/attachments/some-uuid/ticket2523/trac-2523-pt2.patch) by craigcitro created at 2008-04-26 18:26:50
+Attachment [trac-2523-pt2.patch](tarball://root/attachments/some-uuid/ticket2523/trac-2523-pt2.patch) by @craigcitro created at 2008-04-26 18:26:50
 
 Added a small patch fixing the typos ncalexan pointed out. Also, I'm closing #2938 as fixed.
 

@@ -3,7 +3,7 @@
 archive/issues_005179.json:
 ```json
 {
-    "body": "Assignee: was\n\n`__getslice__` has been deprecated for a long time in Python.  This patch adds equivalent functionality to `__getitem__`, which is where the functionality should be.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5179\n\n",
+    "body": "Assignee: @williamstein\n\n`__getslice__` has been deprecated for a long time in Python.  This patch adds equivalent functionality to `__getitem__`, which is where the functionality should be.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5179\n\n",
     "created_at": "2009-02-04T18:31:44Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005179.json:
     "title": "Delete __getslice__ from matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5179",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 `__getslice__` has been deprecated for a long time in Python.  This patch adds equivalent functionality to `__getitem__`, which is where the functionality should be.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5179
 archive/issue_comments_039711.json:
 ```json
 {
-    "body": "Attachment [delete-getslice.patch](tarball://root/attachments/some-uuid/ticket5179/delete-getslice.patch) by jason created at 2009-02-04 18:32:33",
+    "body": "Attachment [delete-getslice.patch](tarball://root/attachments/some-uuid/ticket5179/delete-getslice.patch) by @jasongrout created at 2009-02-04 18:32:33",
     "created_at": "2009-02-04T18:32:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5179#issuecomment-39711",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [delete-getslice.patch](tarball://root/attachments/some-uuid/ticket5179/delete-getslice.patch) by jason created at 2009-02-04 18:32:33
+Attachment [delete-getslice.patch](tarball://root/attachments/some-uuid/ticket5179/delete-getslice.patch) by @jasongrout created at 2009-02-04 18:32:33
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_039712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5179#issuecomment-39712",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

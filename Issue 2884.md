@@ -14,7 +14,7 @@ archive/issues_002884.json:
     "title": "notebook -- bug; @interact cell eval doesn't clear out the old html output (easy to fix?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2884",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2884
 archive/issue_comments_019837.json:
 ```json
 {
-    "body": "Attachment [sage-2884.patch](tarball://root/attachments/some-uuid/ticket2884/sage-2884.patch) by was created at 2008-05-11 08:21:50",
+    "body": "Attachment [sage-2884.patch](tarball://root/attachments/some-uuid/ticket2884/sage-2884.patch) by @williamstein created at 2008-05-11 08:21:50",
     "created_at": "2008-05-11T08:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2884#issuecomment-19837",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2884.patch](tarball://root/attachments/some-uuid/ticket2884/sage-2884.patch) by was created at 2008-05-11 08:21:50
+Attachment [sage-2884.patch](tarball://root/attachments/some-uuid/ticket2884/sage-2884.patch) by @williamstein created at 2008-05-11 08:21:50
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_019839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2884#issuecomment-19839",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

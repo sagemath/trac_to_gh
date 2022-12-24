@@ -14,7 +14,7 @@ archive/issues_006081.json:
     "title": "[with patch, needs review] make abelian categories abelian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6081",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6081
 archive/issue_comments_048400.json:
 ```json
 {
-    "body": "Attachment [abelian.patch](tarball://root/attachments/some-uuid/ticket6081/abelian.patch) by jhpalmieri created at 2009-05-19 03:53:54",
+    "body": "Attachment [abelian.patch](tarball://root/attachments/some-uuid/ticket6081/abelian.patch) by @jhpalmieri created at 2009-05-19 03:53:54",
     "created_at": "2009-05-19T03:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6081#issuecomment-48400",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [abelian.patch](tarball://root/attachments/some-uuid/ticket6081/abelian.patch) by jhpalmieri created at 2009-05-19 03:53:54
+Attachment [abelian.patch](tarball://root/attachments/some-uuid/ticket6081/abelian.patch) by @jhpalmieri created at 2009-05-19 03:53:54
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_048401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6081#issuecomment-48401",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_048402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6081#issuecomment-48402",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_048403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6081#issuecomment-48403",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_048404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6081#issuecomment-48404",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_048405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6081#issuecomment-48405",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_048406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6081#issuecomment-48406",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

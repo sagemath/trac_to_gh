@@ -3,7 +3,7 @@
 archive/issues_006389.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mkoeppe jdemeyer vbraun chapoton was dimpase nthiery fhivert embray\n\nKeywords: documentation, sphinx\n\nIt would be neat to be able to do:\n\n`sage -docbuild foo.py`\n\nfor a single file not in the library\n\nIssue created by migration from https://trac.sagemath.org/ticket/6389\n\n",
+    "body": "Assignee: tba\n\nCC:  @mkoeppe @jdemeyer @vbraun @fchapoton @williamstein @dimpase @nthiery fhivert @embray\n\nKeywords: documentation, sphinx\n\nIt would be neat to be able to do:\n\n`sage -docbuild foo.py`\n\nfor a single file not in the library\n\nIssue created by migration from https://trac.sagemath.org/ticket/6389\n\n",
     "created_at": "2009-06-23T14:34:27Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_006389.json:
     "title": "expose building documentation for user modules not in the Sage library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6389",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
 
-CC:  mkoeppe jdemeyer vbraun chapoton was dimpase nthiery fhivert embray
+CC:  @mkoeppe @jdemeyer @vbraun @fchapoton @williamstein @dimpase @nthiery fhivert @embray
 
 Keywords: documentation, sphinx
 
@@ -45,7 +45,7 @@ archive/issue_comments_051158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51158",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_051159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51159",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_051160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51160",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_051161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51161",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_051162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51162",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_051163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51163",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_051164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51164",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000280.json:
     "title": "Extensions should coerce defining polynomials into base fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/280",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: somebody
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/280
 archive/issue_comments_001331.json:
 ```json
 {
-    "body": "Changing assignee from somebody to ncalexan.",
+    "body": "Changing assignee from somebody to @ncalexan.",
     "created_at": "2007-02-24T03:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/280#issuecomment-1331",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from somebody to ncalexan.
+Changing assignee from somebody to @ncalexan.
 
 
 

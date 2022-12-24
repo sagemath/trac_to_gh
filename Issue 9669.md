@@ -3,7 +3,7 @@
 archive/issues_009669.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  kcrisman\n\nThere is an excelent 2d contour_plot. We should also have 3d one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9669\n\n",
+    "body": "Assignee: olazo\n\nCC:  @kcrisman\n\nThere is an excelent 2d contour_plot. We should also have 3d one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9669\n\n",
     "created_at": "2010-08-02T16:09:00Z",
     "labels": [
         "graphics",
@@ -18,7 +18,7 @@ archive/issues_009669.json:
 ```
 Assignee: olazo
 
-CC:  kcrisman
+CC:  @kcrisman
 
 There is an excelent 2d contour_plot. We should also have 3d one.
 
@@ -38,7 +38,7 @@ archive/issue_comments_093923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9669#issuecomment-93923",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_093924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9669#issuecomment-93924",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

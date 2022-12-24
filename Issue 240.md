@@ -14,7 +14,7 @@ archive/issues_000240.json:
     "title": "in notebook when refresh browser or first get page cell update list isn't sent out with running cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/240",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -39,7 +39,7 @@ archive/issue_comments_001071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/240#issuecomment-1071",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_001072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/240#issuecomment-1072",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_001073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/240#issuecomment-1073",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

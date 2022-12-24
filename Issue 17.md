@@ -13,7 +13,7 @@ archive/issues_000017.json:
     "title": "Inconsistent files generated when loading .sage files.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/17",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_000073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/17",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/17#issuecomment-73",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_000074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/17",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/17#issuecomment-74",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

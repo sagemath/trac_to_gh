@@ -14,7 +14,7 @@ archive/issues_006280.json:
     "title": "the R r-2.6.1.p22.spkg spkg is full of OS X crap ._ files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6280",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -99,7 +99,7 @@ archive/issue_comments_050152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6280#issuecomment-50152",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_050153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6280#issuecomment-50153",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -130,16 +130,16 @@ Changing status from new to assigned.
 archive/issue_comments_050154.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to jason.",
+    "body": "Changing assignee from mabshoff to @jasongrout.",
     "created_at": "2009-09-16T16:35:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6280#issuecomment-50154",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mabshoff to jason.
+Changing assignee from mabshoff to @jasongrout.
 
 
 

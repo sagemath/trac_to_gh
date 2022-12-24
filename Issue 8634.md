@@ -3,7 +3,7 @@
 archive/issues_008634.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman burcin\n\nh1, h2, h9 (and perhaps some others) are converted into binomial coefficients. This disallows to solve an equation involving variable h1.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: h1=var('h1'); h1._maxima_()\nbinomial(n,k)*x^k\nsage: h2=var('h2'); h2._maxima_()\nbinomial(a,k)*binomial(b,n-k)\nsage: h=var('h'); h._maxima_()\nh\nsage: h_1=var('h_1'); h_1._maxima_()\nh_1\nsage: h23=var('h23'); h23._maxima_()\nh23\nsage: ch1=var('ch1'); ch1._maxima_()\nch1\nsage: h9=var('h9'); h9._maxima_()\nn!/(k!*(m+k)!*(n-m-2*k)!)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8634\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @burcin\n\nh1, h2, h9 (and perhaps some others) are converted into binomial coefficients. This disallows to solve an equation involving variable h1.\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: h1=var('h1'); h1._maxima_()\nbinomial(n,k)*x^k\nsage: h2=var('h2'); h2._maxima_()\nbinomial(a,k)*binomial(b,n-k)\nsage: h=var('h'); h._maxima_()\nh\nsage: h_1=var('h_1'); h_1._maxima_()\nh_1\nsage: h23=var('h23'); h23._maxima_()\nh23\nsage: ch1=var('ch1'); ch1._maxima_()\nch1\nsage: h9=var('h9'); h9._maxima_()\nn!/(k!*(m+k)!*(n-m-2*k)!)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8634\n\n",
     "created_at": "2010-03-31T09:23:12Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_008634.json:
     "title": "Broken conversion of sage variable h1 to Maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8634",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman burcin
+CC:  @kcrisman @burcin
 
 h1, h2, h9 (and perhaps some others) are converted into binomial coefficients. This disallows to solve an equation involving variable h1.
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8634
 archive/issue_comments_078306.json:
 ```json
 {
-    "body": "Changing assignee from burcin to robert.marik.",
+    "body": "Changing assignee from @burcin to @robert-marik.",
     "created_at": "2010-03-31T11:02:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8634#issuecomment-78306",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Changing assignee from burcin to robert.marik.
+Changing assignee from @burcin to @robert-marik.
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_078307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8634#issuecomment-78307",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_078308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8634#issuecomment-78308",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_078309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8634#issuecomment-78309",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_078310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8634#issuecomment-78310",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 

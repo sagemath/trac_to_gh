@@ -3,7 +3,7 @@
 archive/issues_006208.json:
 ```json
 {
-    "body": "Assignee: SimonKing\n\nKeywords: gap interface expect regular expression\n\nAt http://groups.google.com/group/sage-support/browse_thread/thread/657ef562de60fc6a\nJerome pointed out that the built in comparison of permutation groups sometimes is rather sluggish compared with comparison of their lists of elements.\n\nWhile trying to find a reason, I found that the method ``_execute_line`` of the gap interface makes a non-optimal use of regular expressions: One and the same pattern is compiled over and over again.\n\nI did not succeed to solve the poster's original concern. But at least I could speed up the gap interface.\n\nWithout the patch, I had\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: G=SymmetricGroup(7)\nsage: time L=[X for X in G if X.order()==2]\nCPU times: user 10.19 s, sys: 2.12 s, total: 12.31 s\nWall time: 15.48 s\n```\n\n| Sage Version 4.0, Release Date: 2009-05-29                         |\n| Type notebook() for the GUI, and license() for information.        |\nWith the patch, I have\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: expect-devel\nsage: G=SymmetricGroup(7)\nsage: time L=[X for X in G if X.order()==2]\nCPU times: user 4.02 s, sys: 0.17 s, total: 4.19 s\nWall time: 6.13 s\n```\n\n| Sage Version 4.0, Release Date: 2009-05-29                         |\n| Type notebook() for the GUI, and license() for information.        |\n__How does the patch work?__\n\nThe method ``_execute_line`` contains a ``while`` loop. In the loop, the expect interface is called, searching for one long and one short pattern.\n\nWithout my patch, ``expect`` would compile the two patterns over and over again. With my patch, the patterns will be compiled *once* (I think the ``_start`` method is an appropriate place), stored as attributes, and then ``expect_list`` is called without the need to re-compile the patterns.\n\nHere is another evidence that it works. Without the patch:\n\n```\nsage: gap._start()\nsage: prun gap._execute_line('b:=1;')\n\n         3258 function calls (3243 primitive calls) in 0.015 CPU seconds\n\n   Ordered by: internal time\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n       26    0.001    0.000    0.010    0.000 sre_compile.py:501(compile)\n       26    0.001    0.000    0.002    0.000 sre_compile.py:367(_compile_info)\n       26    0.001    0.000    0.003    0.000 sre_parse.py:385(_parse)\n        7    0.001    0.000    0.001    0.000 sre_compile.py:213(_optimize_charset)\n       15    0.001    0.000    0.001    0.000 {select.select}\n        1    0.001    0.001    0.001    0.001 {method 'clear' of 'dict' objects}\n        8    0.001    0.000    0.003    0.000 pexpect.py:914(expect_list)\n      186    0.001    0.000    0.001    0.000 sre_parse.py:188(__next)\n       83    0.001    0.000    0.011    0.000 re.py:227(_compile)\n    36/31    0.001    0.000    0.001    0.000 sre_parse.py:146(getwidth)\n    31/26    0.000    0.000    0.002    0.000 sre_compile.py:38(_compile)\n      657    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}\n        8    0.000    0.000    0.012    0.001 pexpect.py:815(compile_pattern_list)\n       26    0.000    0.000    0.004    0.000 sre_parse.py:669(parse)\n      156    0.000    0.000    0.001    0.000 sre_parse.py:207(get)\n  656/651    0.000    0.000    0.000    0.000 {len}\n...\n```\n\n\nWith the patch:\n\n```\nsage: gap._start()\nsage: prun gap._execute_line('b:=1;')\n         478 function calls in 0.006 CPU seconds\n\n   Ordered by: internal time\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n       15    0.004    0.000    0.004    0.000 {select.select}\n        8    0.001    0.000    0.005    0.001 pexpect.py:914(expect_list)\n       15    0.000    0.000    0.004    0.000 pexpect.py:498(read_nonblocking)\n      188    0.000    0.000    0.000    0.000 {built-in method search}\n       15    0.000    0.000    0.000    0.000 {posix.read}\n        1    0.000    0.000    0.006    0.006 gap.py:573(_execute_line)\n       15    0.000    0.000    0.000    0.000 pexpect.py:739(isalive)\n       30    0.000    0.000    0.000    0.000 {posix.waitpid}\n        1    0.000    0.000    0.000    0.000 sre_compile.py:367(_compile_info)\n        1    0.000    0.000    0.000    0.000 sre_compile.py:501(compile)\n        2    0.000    0.000    0.000    0.000 {posix.write}\n        2    0.000    0.000    0.000    0.000 re.py:227(_compile)\n        2    0.000    0.000    0.000    0.000 pexpect.py:656(send)\n        1    0.000    0.000    0.000    0.000 sre_parse.py:385(_parse)\n       32    0.000    0.000    0.000    0.000 {built-in method start}\n        1    0.000    0.000    0.006    0.006 <string>:1(<module>)\n       25    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}\n        2    0.000    0.000    0.000    0.000 pexpect.py:815(compile_pattern_list)\n        1    0.000    0.000    0.000    0.000 sre_parse.py:146(getwidth)\n       15    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}\n        2    0.000    0.000    0.004    0.002 pexpect.py:855(expect)\n        8    0.000    0.000    0.000    0.000 {method 'index' of 'list' objects}\n        5    0.000    0.000    0.000    0.000 sre_parse.py:188(__next)\n       15    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}\n        1    0.000    0.000    0.000    0.000 sre_parse.py:669(parse)\n        2    0.000    0.000    0.000    0.000 {time.sleep}\n        1    0.000    0.000    0.000    0.000 sre_compile.py:486(_code)\n       20    0.000    0.000    0.000    0.000 {len}\n...\n```\n\n\nNow I am curious what ``select.select`` refers to. But I think the improvement is clear.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6208\n\n",
+    "body": "Assignee: @simon-king-jena\n\nKeywords: gap interface expect regular expression\n\nAt http://groups.google.com/group/sage-support/browse_thread/thread/657ef562de60fc6a\nJerome pointed out that the built in comparison of permutation groups sometimes is rather sluggish compared with comparison of their lists of elements.\n\nWhile trying to find a reason, I found that the method ``_execute_line`` of the gap interface makes a non-optimal use of regular expressions: One and the same pattern is compiled over and over again.\n\nI did not succeed to solve the poster's original concern. But at least I could speed up the gap interface.\n\nWithout the patch, I had\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: G=SymmetricGroup(7)\nsage: time L=[X for X in G if X.order()==2]\nCPU times: user 10.19 s, sys: 2.12 s, total: 12.31 s\nWall time: 15.48 s\n```\n\n| Sage Version 4.0, Release Date: 2009-05-29                         |\n| Type notebook() for the GUI, and license() for information.        |\nWith the patch, I have\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: expect-devel\nsage: G=SymmetricGroup(7)\nsage: time L=[X for X in G if X.order()==2]\nCPU times: user 4.02 s, sys: 0.17 s, total: 4.19 s\nWall time: 6.13 s\n```\n\n| Sage Version 4.0, Release Date: 2009-05-29                         |\n| Type notebook() for the GUI, and license() for information.        |\n__How does the patch work?__\n\nThe method ``_execute_line`` contains a ``while`` loop. In the loop, the expect interface is called, searching for one long and one short pattern.\n\nWithout my patch, ``expect`` would compile the two patterns over and over again. With my patch, the patterns will be compiled *once* (I think the ``_start`` method is an appropriate place), stored as attributes, and then ``expect_list`` is called without the need to re-compile the patterns.\n\nHere is another evidence that it works. Without the patch:\n\n```\nsage: gap._start()\nsage: prun gap._execute_line('b:=1;')\n\n         3258 function calls (3243 primitive calls) in 0.015 CPU seconds\n\n   Ordered by: internal time\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n       26    0.001    0.000    0.010    0.000 sre_compile.py:501(compile)\n       26    0.001    0.000    0.002    0.000 sre_compile.py:367(_compile_info)\n       26    0.001    0.000    0.003    0.000 sre_parse.py:385(_parse)\n        7    0.001    0.000    0.001    0.000 sre_compile.py:213(_optimize_charset)\n       15    0.001    0.000    0.001    0.000 {select.select}\n        1    0.001    0.001    0.001    0.001 {method 'clear' of 'dict' objects}\n        8    0.001    0.000    0.003    0.000 pexpect.py:914(expect_list)\n      186    0.001    0.000    0.001    0.000 sre_parse.py:188(__next)\n       83    0.001    0.000    0.011    0.000 re.py:227(_compile)\n    36/31    0.001    0.000    0.001    0.000 sre_parse.py:146(getwidth)\n    31/26    0.000    0.000    0.002    0.000 sre_compile.py:38(_compile)\n      657    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}\n        8    0.000    0.000    0.012    0.001 pexpect.py:815(compile_pattern_list)\n       26    0.000    0.000    0.004    0.000 sre_parse.py:669(parse)\n      156    0.000    0.000    0.001    0.000 sre_parse.py:207(get)\n  656/651    0.000    0.000    0.000    0.000 {len}\n...\n```\n\n\nWith the patch:\n\n```\nsage: gap._start()\nsage: prun gap._execute_line('b:=1;')\n         478 function calls in 0.006 CPU seconds\n\n   Ordered by: internal time\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n       15    0.004    0.000    0.004    0.000 {select.select}\n        8    0.001    0.000    0.005    0.001 pexpect.py:914(expect_list)\n       15    0.000    0.000    0.004    0.000 pexpect.py:498(read_nonblocking)\n      188    0.000    0.000    0.000    0.000 {built-in method search}\n       15    0.000    0.000    0.000    0.000 {posix.read}\n        1    0.000    0.000    0.006    0.006 gap.py:573(_execute_line)\n       15    0.000    0.000    0.000    0.000 pexpect.py:739(isalive)\n       30    0.000    0.000    0.000    0.000 {posix.waitpid}\n        1    0.000    0.000    0.000    0.000 sre_compile.py:367(_compile_info)\n        1    0.000    0.000    0.000    0.000 sre_compile.py:501(compile)\n        2    0.000    0.000    0.000    0.000 {posix.write}\n        2    0.000    0.000    0.000    0.000 re.py:227(_compile)\n        2    0.000    0.000    0.000    0.000 pexpect.py:656(send)\n        1    0.000    0.000    0.000    0.000 sre_parse.py:385(_parse)\n       32    0.000    0.000    0.000    0.000 {built-in method start}\n        1    0.000    0.000    0.006    0.006 <string>:1(<module>)\n       25    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}\n        2    0.000    0.000    0.000    0.000 pexpect.py:815(compile_pattern_list)\n        1    0.000    0.000    0.000    0.000 sre_parse.py:146(getwidth)\n       15    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}\n        2    0.000    0.000    0.004    0.002 pexpect.py:855(expect)\n        8    0.000    0.000    0.000    0.000 {method 'index' of 'list' objects}\n        5    0.000    0.000    0.000    0.000 sre_parse.py:188(__next)\n       15    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}\n        1    0.000    0.000    0.000    0.000 sre_parse.py:669(parse)\n        2    0.000    0.000    0.000    0.000 {time.sleep}\n        1    0.000    0.000    0.000    0.000 sre_compile.py:486(_code)\n       20    0.000    0.000    0.000    0.000 {len}\n...\n```\n\n\nNow I am curious what ``select.select`` refers to. But I think the improvement is clear.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6208\n\n",
     "created_at": "2009-06-04T11:54:06Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_006208.json:
     "title": "[with patch, needs review] Improving gap interface by pre-compiling certain regular expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6208",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: SimonKing
+Assignee: @simon-king-jena
 
 Keywords: gap interface expect regular expression
 
@@ -147,16 +147,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6208
 archive/issue_comments_049599.json:
 ```json
 {
-    "body": "Attachment [gap_interface_reg_expr.patch](tarball://root/attachments/some-uuid/ticket6208/gap_interface_reg_expr.patch) by SimonKing created at 2009-06-04 11:54:50\n\nImproved performance of the gap interface by pre-compiling regular expressions",
+    "body": "Attachment [gap_interface_reg_expr.patch](tarball://root/attachments/some-uuid/ticket6208/gap_interface_reg_expr.patch) by @simon-king-jena created at 2009-06-04 11:54:50\n\nImproved performance of the gap interface by pre-compiling regular expressions",
     "created_at": "2009-06-04T11:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6208#issuecomment-49599",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [gap_interface_reg_expr.patch](tarball://root/attachments/some-uuid/ticket6208/gap_interface_reg_expr.patch) by SimonKing created at 2009-06-04 11:54:50
+Attachment [gap_interface_reg_expr.patch](tarball://root/attachments/some-uuid/ticket6208/gap_interface_reg_expr.patch) by @simon-king-jena created at 2009-06-04 11:54:50
 
 Improved performance of the gap interface by pre-compiling regular expressions
 
@@ -172,7 +172,7 @@ archive/issue_comments_049600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6208#issuecomment-49600",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_049601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6208#issuecomment-49601",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_049602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6208#issuecomment-49602",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_049603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6208#issuecomment-49603",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_049605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6208#issuecomment-49605",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

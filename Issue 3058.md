@@ -3,7 +3,7 @@
 archive/issues_003058.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nThe title is what I think is the real issue here:\n\n\n```\nsage: a=(QQ3).subspace([[1,0,1]])\nsage: b=a.basis()[0]\nsage: b/b.norm()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/element.pyx in sage.structure.element.Vector.__div__ \n(sage/structure/element.c:10962)()\n\n/home/grout/element.pyx in sage.structure.element.Vector.__mul__ \n(sage/structure/element.c:10413)()\n\n/home/grout/coerce.pyx in \nsage.structure.coerce.CoercionModel_cache_maps.bin_op_c \n(sage/structure/coerce.c:5292)()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': \n'Vector space of degree 3 and dimension 1 over Rational Field\nBasis matrix:\n[1 0 1]' and 'Symbolic Ring'\n```\n\n\n\nNote that the following does work:\n\n\n```\nsage: b=vector(QQ,[1,0,1])\nsage: b/b.norm()\n(1/sqrt(2), 0, 1/sqrt(2))\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3058\n\n",
+    "body": "Assignee: @robertwb\n\nThe title is what I think is the real issue here:\n\n\n```\nsage: a=(QQ3).subspace([[1,0,1]])\nsage: b=a.basis()[0]\nsage: b/b.norm()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/element.pyx in sage.structure.element.Vector.__div__ \n(sage/structure/element.c:10962)()\n\n/home/grout/element.pyx in sage.structure.element.Vector.__mul__ \n(sage/structure/element.c:10413)()\n\n/home/grout/coerce.pyx in \nsage.structure.coerce.CoercionModel_cache_maps.bin_op_c \n(sage/structure/coerce.c:5292)()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': \n'Vector space of degree 3 and dimension 1 over Rational Field\nBasis matrix:\n[1 0 1]' and 'Symbolic Ring'\n```\n\n\n\nNote that the following does work:\n\n\n```\nsage: b=vector(QQ,[1,0,1])\nsage: b/b.norm()\n(1/sqrt(2), 0, 1/sqrt(2))\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3058\n\n",
     "created_at": "2008-04-29T23:37:30Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_003058.json:
     "title": "coercing a vector to symbolic entries doesn't work when the vector's parent has a user-defined basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3058",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 The title is what I think is the real issue here:
 
@@ -76,7 +76,7 @@ archive/issue_comments_021115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3058#issuecomment-21115",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_021116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3058#issuecomment-21116",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_021117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3058#issuecomment-21117",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_021118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3058#issuecomment-21118",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001404.json:
     "title": "[with patch] bug in %latex feature in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1404",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -101,16 +101,16 @@ Michael
 archive/issue_comments_009065.json:
 ```json
 {
-    "body": "Attachment [trac-1404.patch](tarball://root/attachments/some-uuid/ticket1404/trac-1404.patch) by was created at 2007-12-15 13:09:08",
+    "body": "Attachment [trac-1404.patch](tarball://root/attachments/some-uuid/ticket1404/trac-1404.patch) by @williamstein created at 2007-12-15 13:09:08",
     "created_at": "2007-12-15T13:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1404#issuecomment-9065",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1404.patch](tarball://root/attachments/some-uuid/ticket1404/trac-1404.patch) by was created at 2007-12-15 13:09:08
+Attachment [trac-1404.patch](tarball://root/attachments/some-uuid/ticket1404/trac-1404.patch) by @williamstein created at 2007-12-15 13:09:08
 
 
 

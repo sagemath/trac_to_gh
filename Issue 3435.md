@@ -3,7 +3,7 @@
 archive/issues_003435.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  slelievre\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3435\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @slel\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3435\n\n",
     "created_at": "2008-06-16T00:34:34Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_003435.json:
     "title": "physically delete GSL BLAS so that nothing can link against it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3435",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
 
-CC:  slelievre
+CC:  @slel
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_024204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3435#issuecomment-24204",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_024205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3435#issuecomment-24205",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_024206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3435#issuecomment-24206",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_024207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3435#issuecomment-24207",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_024208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3435#issuecomment-24208",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_024209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3435#issuecomment-24209",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_024210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3435#issuecomment-24210",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_024211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3435#issuecomment-24211",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_024212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3435#issuecomment-24212",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_024213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3435#issuecomment-24213",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

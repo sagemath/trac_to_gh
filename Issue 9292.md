@@ -14,7 +14,7 @@ archive/issues_009292.json:
     "title": "Parabolic and reflection subgroups of Coxeter groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9292",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: sage-combinat
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9292
 archive/issue_comments_087516.json:
 ```json
 {
-    "body": "Attachment [reflection_subgroups.py](tarball://root/attachments/some-uuid/ticket9292/reflection_subgroups.py) by nthiery created at 2010-06-21 08:32:13",
+    "body": "Attachment [reflection_subgroups.py](tarball://root/attachments/some-uuid/ticket9292/reflection_subgroups.py) by @nthiery created at 2010-06-21 08:32:13",
     "created_at": "2010-06-21T08:32:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9292#issuecomment-87516",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [reflection_subgroups.py](tarball://root/attachments/some-uuid/ticket9292/reflection_subgroups.py) by nthiery created at 2010-06-21 08:32:13
+Attachment [reflection_subgroups.py](tarball://root/attachments/some-uuid/ticket9292/reflection_subgroups.py) by @nthiery created at 2010-06-21 08:32:13
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_087517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9292#issuecomment-87517",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004754.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  mvngu\n\nBased on the discussion at http://groups.google.com/group/sage-support/browse_thread/thread/3ec4cc026e9c65bd, it would be great to merge the code found at http://arxiv.org/abs/0812.1616 into the Sage library.  Several functions should probably go into the main graph library (e.g., the edge clique cover function), while others probably ought to go into a minimum_rank.sage file.\n\nI am one of the developers and hereby give my permission to incorporate the code into Sage.  I will ask the other developers as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4754\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  mvngu\n\nBased on the discussion at http://groups.google.com/group/sage-support/browse_thread/thread/3ec4cc026e9c65bd, it would be great to merge the code found at http://arxiv.org/abs/0812.1616 into the Sage library.  Several functions should probably go into the main graph library (e.g., the edge clique cover function), while others probably ought to go into a minimum_rank.sage file.\n\nI am one of the developers and hereby give my permission to incorporate the code into Sage.  I will ask the other developers as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4754\n\n",
     "created_at": "2008-12-11T04:15:52Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_004754.json:
     "title": "Merge minimum rank code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4754",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 CC:  mvngu
 
@@ -41,7 +41,7 @@ archive/issue_comments_035997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4754#issuecomment-35997",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to assigned.
 archive/issue_comments_035998.json:
 ```json
 {
-    "body": "Changing assignee from rlm to jason.",
+    "body": "Changing assignee from @rlmill to @jasongrout.",
     "created_at": "2008-12-11T04:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4754#issuecomment-35998",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from rlm to jason.
+Changing assignee from @rlmill to @jasongrout.
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_035999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4754#issuecomment-35999",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_036000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4754#issuecomment-36000",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_036001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4754#issuecomment-36001",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_036002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4754#issuecomment-36002",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_036003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4754#issuecomment-36003",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_036005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4754#issuecomment-36005",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -232,16 +232,16 @@ Jason Smith also verbally gave me permission to license the code GPLv2 or later.
 archive/issue_comments_036006.json:
 ```json
 {
-    "body": "Attachment [trac-4754-minrank.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-minrank.patch) by jason created at 2010-02-02 10:09:25\n\napply on top of previous patch",
+    "body": "Attachment [trac-4754-minrank.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-minrank.patch) by @jasongrout created at 2010-02-02 10:09:25\n\napply on top of previous patch",
     "created_at": "2010-02-02T10:09:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4754#issuecomment-36006",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-4754-minrank.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-minrank.patch) by jason created at 2010-02-02 10:09:25
+Attachment [trac-4754-minrank.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-minrank.patch) by @jasongrout created at 2010-02-02 10:09:25
 
 apply on top of previous patch
 
@@ -252,16 +252,16 @@ apply on top of previous patch
 archive/issue_comments_036007.json:
 ```json
 {
-    "body": "Attachment [trac-4754-minrank2.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-minrank2.patch) by jason created at 2010-02-02 10:20:06\n\napply on top of previous patches",
+    "body": "Attachment [trac-4754-minrank2.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-minrank2.patch) by @jasongrout created at 2010-02-02 10:20:06\n\napply on top of previous patches",
     "created_at": "2010-02-02T10:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4754#issuecomment-36007",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-4754-minrank2.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-minrank2.patch) by jason created at 2010-02-02 10:20:06
+Attachment [trac-4754-minrank2.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-minrank2.patch) by @jasongrout created at 2010-02-02 10:20:06
 
 apply on top of previous patches
 
@@ -272,16 +272,16 @@ apply on top of previous patches
 archive/issue_comments_036008.json:
 ```json
 {
-    "body": "Attachment [trac-4754-cython-zeroforcing.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-cython-zeroforcing.patch) by jason created at 2010-02-02 10:21:18\n\nAdded rough versions of patches.",
+    "body": "Attachment [trac-4754-cython-zeroforcing.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-cython-zeroforcing.patch) by @jasongrout created at 2010-02-02 10:21:18\n\nAdded rough versions of patches.",
     "created_at": "2010-02-02T10:21:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4754#issuecomment-36008",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-4754-cython-zeroforcing.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-cython-zeroforcing.patch) by jason created at 2010-02-02 10:21:18
+Attachment [trac-4754-cython-zeroforcing.patch](tarball://root/attachments/some-uuid/ticket4754/trac-4754-cython-zeroforcing.patch) by @jasongrout created at 2010-02-02 10:21:18
 
 Added rough versions of patches.
 
@@ -297,7 +297,7 @@ archive/issue_comments_036009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4754#issuecomment-36009",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_036010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4754#issuecomment-36010",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 

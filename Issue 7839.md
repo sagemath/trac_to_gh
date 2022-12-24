@@ -3,7 +3,7 @@
 archive/issues_007839.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\nConsider:\n\n\n```\nsage: P.<q> = LaurentPolynomialRing(QQ)\nsage: q in P\nTrue\nsage: P(q)\nq\nsage: q^(-1) in P\nTrue\nsage: P(q^(-1))\n```\n\n\nThe last statement raises an exception.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7839\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nConsider:\n\n\n```\nsage: P.<q> = LaurentPolynomialRing(QQ)\nsage: q in P\nTrue\nsage: P(q)\nq\nsage: q^(-1) in P\nTrue\nsage: P(q^(-1))\n```\n\n\nThe last statement raises an exception.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7839\n\n",
     "created_at": "2010-01-04T04:47:29Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007839.json:
     "title": "Failure to coerce q^(-1) into its own LaurentPolynomialRing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7839",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -54,7 +54,7 @@ archive/issue_comments_067907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7839#issuecomment-67907",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_067908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7839#issuecomment-67908",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

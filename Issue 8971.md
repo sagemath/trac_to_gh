@@ -3,7 +3,7 @@
 archive/issues_008971.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  ncohen\n\nThis error happens when trying to link Sage's CBC spkg to CPLEX on OSX 10.6:\n\nhttp://www.ibm.com/developerworks/forums/thread.jspa?messageID=14458988&tstart=0\n\nThe website notes a work-around.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8971\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @nathanncohen\n\nThis error happens when trying to link Sage's CBC spkg to CPLEX on OSX 10.6:\n\nhttp://www.ibm.com/developerworks/forums/thread.jspa?messageID=14458988&tstart=0\n\nThe website notes a work-around.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8971\n\n",
     "created_at": "2010-05-14T22:54:37Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_008971.json:
     "title": "problem installing CBC with CPLEX support on osx 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8971",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, jkantor
 
-CC:  ncohen
+CC:  @nathanncohen
 
 This error happens when trying to link Sage's CBC spkg to CPLEX on OSX 10.6:
 
@@ -43,7 +43,7 @@ archive/issue_comments_082671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8971#issuecomment-82671",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_082672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8971#issuecomment-82672",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_082673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8971#issuecomment-82673",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_082674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8971#issuecomment-82674",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_082675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8971#issuecomment-82675",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_082676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8971#issuecomment-82676",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

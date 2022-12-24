@@ -3,7 +3,7 @@
 archive/issues_003886.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nKeywords: digraphs, graphs, graphics\n\nSee the attached images for the results of these commands (images produced by sagenb.org).\n\n\n```\nDiGraph({0:[1]}).show()\n```\n\n\n\n```\nDiGraph({0:[1], 1:[2]}).show()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3886\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: digraphs, graphs, graphics\n\nSee the attached images for the results of these commands (images produced by sagenb.org).\n\n\n```\nDiGraph({0:[1]}).show()\n```\n\n\n\n```\nDiGraph({0:[1], 1:[2]}).show()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3886\n\n",
     "created_at": "2008-08-18T03:53:19Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003886.json:
     "title": "Plotting of digraphs is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3886",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Keywords: digraphs, graphs, graphics
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3886
 archive/issue_comments_027726.json:
 ```json
 {
-    "body": "Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket3886/sage0.png) by saliola created at 2008-08-18 03:53:45\n\nFirst example.",
+    "body": "Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket3886/sage0.png) by @saliola created at 2008-08-18 03:53:45\n\nFirst example.",
     "created_at": "2008-08-18T03:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3886#issuecomment-27726",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket3886/sage0.png) by saliola created at 2008-08-18 03:53:45
+Attachment [sage0.png](tarball://root/attachments/some-uuid/ticket3886/sage0.png) by @saliola created at 2008-08-18 03:53:45
 
 First example.
 
@@ -71,7 +71,7 @@ archive/issue_comments_027727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3886#issuecomment-27727",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -84,16 +84,16 @@ Second example
 archive/issue_comments_027728.json:
 ```json
 {
-    "body": "Attachment [sage1.png](tarball://root/attachments/some-uuid/ticket3886/sage1.png) by rlm created at 2008-08-18 14:39:24\n\nFranco,\n\nThis is caused by/related to #3877 and #3880.",
+    "body": "Attachment [sage1.png](tarball://root/attachments/some-uuid/ticket3886/sage1.png) by @rlmill created at 2008-08-18 14:39:24\n\nFranco,\n\nThis is caused by/related to #3877 and #3880.",
     "created_at": "2008-08-18T14:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3886#issuecomment-27728",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [sage1.png](tarball://root/attachments/some-uuid/ticket3886/sage1.png) by rlm created at 2008-08-18 14:39:24
+Attachment [sage1.png](tarball://root/attachments/some-uuid/ticket3886/sage1.png) by @rlmill created at 2008-08-18 14:39:24
 
 Franco,
 
@@ -111,7 +111,7 @@ archive/issue_comments_027729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3886#issuecomment-27729",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_027730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3886#issuecomment-27730",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

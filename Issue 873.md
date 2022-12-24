@@ -3,7 +3,7 @@
 archive/issues_000873.json:
 ```json
 {
-    "body": "Assignee: was\n\nDoing \"sage -clone foo\" rebuild all the pyx files, which is terrible. \n\nIssue created by migration from https://trac.sagemath.org/ticket/873\n\n",
+    "body": "Assignee: @williamstein\n\nDoing \"sage -clone foo\" rebuild all the pyx files, which is terrible. \n\nIssue created by migration from https://trac.sagemath.org/ticket/873\n\n",
     "created_at": "2007-10-13T05:49:12Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000873.json:
     "title": "sage -clone is rebuilding everything !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/873",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Doing "sage -clone foo" rebuild all the pyx files, which is terrible. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_005382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/873#issuecomment-5382",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_005383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/873#issuecomment-5383",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_005386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/873#issuecomment-5386",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

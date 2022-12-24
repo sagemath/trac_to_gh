@@ -14,7 +14,7 @@ archive/issues_009061.json:
     "title": "Fix broken inequalities in add_constraint method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9061",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, jkantor
@@ -41,7 +41,7 @@ archive/issue_comments_084061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9061#issuecomment-84061",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_084062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9061#issuecomment-84062",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_084063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9061#issuecomment-84063",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_084064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9061#issuecomment-84064",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_084065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9061#issuecomment-84065",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_084066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9061#issuecomment-84066",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_084068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9061#issuecomment-84068",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_084069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9061#issuecomment-84069",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

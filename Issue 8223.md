@@ -3,7 +3,7 @@
 archive/issues_008223.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  novoselt\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8223\n\n",
+    "body": "Assignee: tbd\n\nCC:  @novoselt\n\n\n```\n\nIssue created by migration from https://trac.sagemath.org/ticket/8223\n\n",
     "created_at": "2010-02-09T20:34:02Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_008223.json:
     "title": "tab completion broken for many parent objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8223",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  novoselt
+CC:  @novoselt
 
 
 ```
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8223
 archive/issue_comments_072613.json:
 ```json
 {
-    "body": "Changing assignee from tbd to nthiery.",
+    "body": "Changing assignee from tbd to @nthiery.",
     "created_at": "2010-02-09T20:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8223#issuecomment-72613",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Changing assignee from tbd to nthiery.
+Changing assignee from tbd to @nthiery.
 
 
 
@@ -53,16 +53,16 @@ Changing assignee from tbd to nthiery.
 archive/issue_comments_072614.json:
 ```json
 {
-    "body": "Attachment [trac_8223-fix_dir-nt.patch](tarball://root/attachments/some-uuid/ticket8223/trac_8223-fix_dir-nt.patch) by nthiery created at 2010-02-09 20:56:40\n\nThe attached patch should fix the issue. That being said, I would love to see a more robust implementation of ``sage.structure.parent.dir_with_other_class``.",
+    "body": "Attachment [trac_8223-fix_dir-nt.patch](tarball://root/attachments/some-uuid/ticket8223/trac_8223-fix_dir-nt.patch) by @nthiery created at 2010-02-09 20:56:40\n\nThe attached patch should fix the issue. That being said, I would love to see a more robust implementation of ``sage.structure.parent.dir_with_other_class``.",
     "created_at": "2010-02-09T20:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8223#issuecomment-72614",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8223-fix_dir-nt.patch](tarball://root/attachments/some-uuid/ticket8223/trac_8223-fix_dir-nt.patch) by nthiery created at 2010-02-09 20:56:40
+Attachment [trac_8223-fix_dir-nt.patch](tarball://root/attachments/some-uuid/ticket8223/trac_8223-fix_dir-nt.patch) by @nthiery created at 2010-02-09 20:56:40
 
 The attached patch should fix the issue. That being said, I would love to see a more robust implementation of ``sage.structure.parent.dir_with_other_class``.
 
@@ -78,7 +78,7 @@ archive/issue_comments_072615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8223#issuecomment-72615",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_072616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8223#issuecomment-72616",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_072617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8223#issuecomment-72617",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_072618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8223#issuecomment-72618",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 

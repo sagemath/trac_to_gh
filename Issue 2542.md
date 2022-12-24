@@ -3,7 +3,7 @@
 archive/issues_002542.json:
 ```json
 {
-    "body": "Assignee: was\n\nI implemented right_kernel() and right_nullity() for matrices in the simplest possible way (calling the left_ functions on the transpose of self).  This is a tiny little step in the direction of #1607.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2542\n\n",
+    "body": "Assignee: @williamstein\n\nI implemented right_kernel() and right_nullity() for matrices in the simplest possible way (calling the left_ functions on the transpose of self).  This is a tiny little step in the direction of #1607.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2542\n\n",
     "created_at": "2008-03-16T03:49:14Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002542.json:
     "title": "[with patch, needs review] implement right_kernel() and right_nullity() for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2542",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I implemented right_kernel() and right_nullity() for matrices in the simplest possible way (calling the left_ functions on the transpose of self).  This is a tiny little step in the direction of #1607.
 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2542
 archive/issue_comments_017332.json:
 ```json
 {
-    "body": "Attachment [2542-2.patch](tarball://root/attachments/some-uuid/ticket2542/2542-2.patch) by mhansen created at 2008-03-16 04:12:31",
+    "body": "Attachment [2542-2.patch](tarball://root/attachments/some-uuid/ticket2542/2542-2.patch) by @mwhansen created at 2008-03-16 04:12:31",
     "created_at": "2008-03-16T04:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2542#issuecomment-17332",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2542-2.patch](tarball://root/attachments/some-uuid/ticket2542/2542-2.patch) by mhansen created at 2008-03-16 04:12:31
+Attachment [2542-2.patch](tarball://root/attachments/some-uuid/ticket2542/2542-2.patch) by @mwhansen created at 2008-03-16 04:12:31
 
 
 
@@ -56,7 +56,7 @@ archive/issue_comments_017333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2542#issuecomment-17333",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003314.json:
     "title": "dsage.setup() add_default_client broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3314",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3314
 archive/issue_comments_022952.json:
 ```json
 {
-    "body": "Attachment [3314_default_users.patch](tarball://root/attachments/some-uuid/ticket3314/3314_default_users.patch) by yi created at 2008-05-27 06:04:49",
+    "body": "Attachment [3314_default_users.patch](tarball://root/attachments/some-uuid/ticket3314/3314_default_users.patch) by @yqiang created at 2008-05-27 06:04:49",
     "created_at": "2008-05-27T06:04:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22952",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [3314_default_users.patch](tarball://root/attachments/some-uuid/ticket3314/3314_default_users.patch) by yi created at 2008-05-27 06:04:49
+Attachment [3314_default_users.patch](tarball://root/attachments/some-uuid/ticket3314/3314_default_users.patch) by @yqiang created at 2008-05-27 06:04:49
 
 
 
@@ -68,7 +68,7 @@ Changing component from Cygwin to dsage.
 archive/issue_comments_022954.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to yi.",
+    "body": "Changing assignee from mabshoff to @yqiang.",
     "created_at": "2008-05-28T12:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
@@ -77,7 +77,7 @@ archive/issue_comments_022954.json:
 }
 ```
 
-Changing assignee from mabshoff to yi.
+Changing assignee from mabshoff to @yqiang.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_022955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22955",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_022956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22956",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_022958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22958",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_022960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22960",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_022961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22961",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_022962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22962",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

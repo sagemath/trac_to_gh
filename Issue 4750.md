@@ -3,7 +3,7 @@
 archive/issues_004750.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  ddrake abergeron\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4750\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @dandrake abergeron\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4750\n\n",
     "created_at": "2008-12-10T12:34:53Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_004750.json:
     "title": "make it so sage -t foo.sage pulls in the preparsed version of all the code in foo.sage before doctesting foo.py; make it so \"sage -t foo.py\" has an option to pull in all code from foo.py before doctesting it.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4750",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  ddrake abergeron
+CC:  @dandrake abergeron
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_035948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4750#issuecomment-35948",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_035949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4750#issuecomment-35949",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_035950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4750#issuecomment-35950",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_035951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4750#issuecomment-35951",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_035952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4750#issuecomment-35952",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

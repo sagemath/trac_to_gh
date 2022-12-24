@@ -13,7 +13,7 @@ archive/issues_000020.json:
     "title": "coercion issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/20",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -65,7 +65,7 @@ archive/issue_comments_000078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/20",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/20#issuecomment-78",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_000079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/20",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/20#issuecomment-79",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

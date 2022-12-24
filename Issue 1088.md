@@ -3,7 +3,7 @@
 archive/issues_001088.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\nHere's an implementation of a minimum spanning tree function.  Well, actually 3 implementations, defaulting to Kruskal's algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1088\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nHere's an implementation of a minimum spanning tree function.  Well, actually 3 implementations, defaulting to Kruskal's algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1088\n\n",
     "created_at": "2007-11-03T20:45:05Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001088.json:
     "title": "[with patch] graphs: minimum spanning tree function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1088",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1088
 archive/issue_comments_006584.json:
 ```json
 {
-    "body": "Attachment [minspantree.patch](tarball://root/attachments/some-uuid/ticket1088/minspantree.patch) by jason created at 2007-11-03 20:45:18",
+    "body": "Attachment [minspantree.patch](tarball://root/attachments/some-uuid/ticket1088/minspantree.patch) by @jasongrout created at 2007-11-03 20:45:18",
     "created_at": "2007-11-03T20:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6584",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [minspantree.patch](tarball://root/attachments/some-uuid/ticket1088/minspantree.patch) by jason created at 2007-11-03 20:45:18
+Attachment [minspantree.patch](tarball://root/attachments/some-uuid/ticket1088/minspantree.patch) by @jasongrout created at 2007-11-03 20:45:18
 
 
 
@@ -52,16 +52,16 @@ Attachment [minspantree.patch](tarball://root/attachments/some-uuid/ticket1088/m
 archive/issue_comments_006585.json:
 ```json
 {
-    "body": "Attachment [doc_1088.patch](tarball://root/attachments/some-uuid/ticket1088/doc_1088.patch) by rlm created at 2007-11-03 23:20:23",
+    "body": "Attachment [doc_1088.patch](tarball://root/attachments/some-uuid/ticket1088/doc_1088.patch) by @rlmill created at 2007-11-03 23:20:23",
     "created_at": "2007-11-03T23:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6585",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [doc_1088.patch](tarball://root/attachments/some-uuid/ticket1088/doc_1088.patch) by rlm created at 2007-11-03 23:20:23
+Attachment [doc_1088.patch](tarball://root/attachments/some-uuid/ticket1088/doc_1088.patch) by @rlmill created at 2007-11-03 23:20:23
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_006586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6586",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_006587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6587",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_006588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6588",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_006589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6589",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -144,16 +144,16 @@ The third doctest should be applied after the first two doctests.
 archive/issue_comments_006590.json:
 ```json
 {
-    "body": "Attachment [1088-correct-bugs-improve-doctests.patch](tarball://root/attachments/some-uuid/ticket1088/1088-correct-bugs-improve-doctests.patch) by jason created at 2007-11-06 22:37:16",
+    "body": "Attachment [1088-correct-bugs-improve-doctests.patch](tarball://root/attachments/some-uuid/ticket1088/1088-correct-bugs-improve-doctests.patch) by @jasongrout created at 2007-11-06 22:37:16",
     "created_at": "2007-11-06T22:37:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6590",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [1088-correct-bugs-improve-doctests.patch](tarball://root/attachments/some-uuid/ticket1088/1088-correct-bugs-improve-doctests.patch) by jason created at 2007-11-06 22:37:16
+Attachment [1088-correct-bugs-improve-doctests.patch](tarball://root/attachments/some-uuid/ticket1088/1088-correct-bugs-improve-doctests.patch) by @jasongrout created at 2007-11-06 22:37:16
 
 
 
@@ -167,7 +167,7 @@ archive/issue_comments_006591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6591",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

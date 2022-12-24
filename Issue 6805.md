@@ -14,7 +14,7 @@ archive/issues_006805.json:
     "title": "[with patch, needs review] Integrality check in LatticePolytope",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6805",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
@@ -98,7 +98,7 @@ archive/issue_comments_056033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6805#issuecomment-56033",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_056034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6805#issuecomment-56034",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_056035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6805#issuecomment-56035",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

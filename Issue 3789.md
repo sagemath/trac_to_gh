@@ -3,7 +3,7 @@
 archive/issues_003789.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  boothby\n\nNeeds to have documentation on orderly generation...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3789\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  boothby\n\nNeeds to have documentation on orderly generation...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3789\n\n",
     "created_at": "2008-08-07T18:29:48Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003789.json:
     "title": "[with patch, needs review] graphs(<tab>",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3789",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 CC:  boothby
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3789
 archive/issue_comments_026946.json:
 ```json
 {
-    "body": "Attachment [trac3789.patch](tarball://root/attachments/some-uuid/ticket3789/trac3789.patch) by rlm created at 2008-08-07 18:30:04",
+    "body": "Attachment [trac3789.patch](tarball://root/attachments/some-uuid/ticket3789/trac3789.patch) by @rlmill created at 2008-08-07 18:30:04",
     "created_at": "2008-08-07T18:30:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3789#issuecomment-26946",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac3789.patch](tarball://root/attachments/some-uuid/ticket3789/trac3789.patch) by rlm created at 2008-08-07 18:30:04
+Attachment [trac3789.patch](tarball://root/attachments/some-uuid/ticket3789/trac3789.patch) by @rlmill created at 2008-08-07 18:30:04
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_026947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3789",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3789#issuecomment-26947",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

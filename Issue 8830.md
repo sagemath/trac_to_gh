@@ -14,7 +14,7 @@ archive/issues_008830.json:
     "title": "polybori-0.6.4.spkg causes crashes on exit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8830",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: tbd
@@ -43,7 +43,7 @@ archive/issue_comments_081210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8830#issuecomment-81210",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_081211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8830#issuecomment-81211",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_081212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8830#issuecomment-81212",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_081213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8830",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8830#issuecomment-81213",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 

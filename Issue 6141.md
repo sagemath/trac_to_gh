@@ -3,7 +3,7 @@
 archive/issues_006141.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nSee [this thread](http://groups.google.com/group/sage-devel/browse_frm/thread/b5f9b4e58cce0c6b) from sage-devel.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6141\n\n",
+    "body": "Assignee: @jhpalmieri\n\nSee [this thread](http://groups.google.com/group/sage-devel/browse_frm/thread/b5f9b4e58cce0c6b) from sage-devel.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6141\n\n",
     "created_at": "2009-05-27T22:00:42Z",
     "labels": [
         "algebraic topology",
@@ -14,10 +14,10 @@ archive/issues_006141.json:
     "title": "[with patch, needs review] simplicial complexes: change 'facets' from an attribute to a method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6141",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 See [this thread](http://groups.google.com/group/sage-devel/browse_frm/thread/b5f9b4e58cce0c6b) from sage-devel.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6141
 archive/issue_comments_049036.json:
 ```json
 {
-    "body": "Attachment [facets.patch](tarball://root/attachments/some-uuid/ticket6141/facets.patch) by jhpalmieri created at 2009-05-27 22:00:57",
+    "body": "Attachment [facets.patch](tarball://root/attachments/some-uuid/ticket6141/facets.patch) by @jhpalmieri created at 2009-05-27 22:00:57",
     "created_at": "2009-05-27T22:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6141#issuecomment-49036",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [facets.patch](tarball://root/attachments/some-uuid/ticket6141/facets.patch) by jhpalmieri created at 2009-05-27 22:00:57
+Attachment [facets.patch](tarball://root/attachments/some-uuid/ticket6141/facets.patch) by @jhpalmieri created at 2009-05-27 22:00:57
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_049038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6141#issuecomment-49038",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_049039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6141#issuecomment-49039",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003854.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\nToo many controls results in output truncated errors, but it's the length of the generated html that's tripping the warning... this should be trivial, just add \"<!--notruncate-->\" to the generated html.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3854\n\n",
+    "body": "Assignee: @itolkov\n\nToo many controls results in output truncated errors, but it's the length of the generated html that's tripping the warning... this should be trivial, just add \"<!--notruncate-->\" to the generated html.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3854\n\n",
     "created_at": "2008-08-14T18:32:40Z",
     "labels": [
         "interact",
@@ -14,10 +14,10 @@ archive/issues_003854.json:
     "title": "interact needs to use \"notruncate\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3854",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
 Too many controls results in output truncated errors, but it's the length of the generated html that's tripping the warning... this should be trivial, just add "<!--notruncate-->" to the generated html.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3854
 archive/issue_comments_027447.json:
 ```json
 {
-    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3854/sage.patch) by itolkov created at 2008-08-14 19:24:35",
+    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3854/sage.patch) by @itolkov created at 2008-08-14 19:24:35",
     "created_at": "2008-08-14T19:24:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3854#issuecomment-27447",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
-Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3854/sage.patch) by itolkov created at 2008-08-14 19:24:35
+Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3854/sage.patch) by @itolkov created at 2008-08-14 19:24:35
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_027448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3854#issuecomment-27448",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_027449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3854#issuecomment-27449",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_027450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3854#issuecomment-27450",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -135,16 +135,16 @@ Michael
 archive/issue_comments_027452.json:
 ```json
 {
-    "body": "Attachment [trac_3854.patch](tarball://root/attachments/some-uuid/ticket3854/trac_3854.patch) by mhansen created at 2008-08-27 00:38:20",
+    "body": "Attachment [trac_3854.patch](tarball://root/attachments/some-uuid/ticket3854/trac_3854.patch) by @mwhansen created at 2008-08-27 00:38:20",
     "created_at": "2008-08-27T00:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3854#issuecomment-27452",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3854.patch](tarball://root/attachments/some-uuid/ticket3854/trac_3854.patch) by mhansen created at 2008-08-27 00:38:20
+Attachment [trac_3854.patch](tarball://root/attachments/some-uuid/ticket3854/trac_3854.patch) by @mwhansen created at 2008-08-27 00:38:20
 
 
 
@@ -158,7 +158,7 @@ archive/issue_comments_027453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3854#issuecomment-27453",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_027458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3854#issuecomment-27458",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

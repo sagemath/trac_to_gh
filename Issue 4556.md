@@ -14,7 +14,7 @@ archive/issues_004556.json:
     "title": "[with patch, needs review] nth_root for finite fields: document the fact that 'extend' is not implemented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4556",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -71,16 +71,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4556
 archive/issue_comments_034141.json:
 ```json
 {
-    "body": "Attachment [nth_root.patch](tarball://root/attachments/some-uuid/ticket4556/nth_root.patch) by jhpalmieri created at 2008-11-19 22:21:18",
+    "body": "Attachment [nth_root.patch](tarball://root/attachments/some-uuid/ticket4556/nth_root.patch) by @jhpalmieri created at 2008-11-19 22:21:18",
     "created_at": "2008-11-19T22:21:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4556#issuecomment-34141",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [nth_root.patch](tarball://root/attachments/some-uuid/ticket4556/nth_root.patch) by jhpalmieri created at 2008-11-19 22:21:18
+Attachment [nth_root.patch](tarball://root/attachments/some-uuid/ticket4556/nth_root.patch) by @jhpalmieri created at 2008-11-19 22:21:18
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_034142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4556#issuecomment-34142",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_034143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4556#issuecomment-34143",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

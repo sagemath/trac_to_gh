@@ -3,7 +3,7 @@
 archive/issues_007930.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  cremona was robertwb\n\nThe following code\n\n\n```\nE = EllipticCurve('99d1')\n\nR.<X> = QQ[]\nK.<t> = NumberField(X^3 + X^2 - 2*X - 1)\nL.<s> = NumberField(X^3 + X^2 - 36*X - 4)\n\nEK = E.base_extend(K)\ntoK = EK.torsion_order()\nda = EK.local_data()\n\nEL = E.base_extend(L)\nda = EL.local_data()\n```\n\n\nproduces a `TypeError`. Having played around with this for hours, I believe that all lines in the above code are necessary to produce the bug. Especially both the torsion and local data computations over another field. I have no idea whatsoever of where to look for the error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7930\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona @williamstein @robertwb\n\nThe following code\n\n\n```\nE = EllipticCurve('99d1')\n\nR.<X> = QQ[]\nK.<t> = NumberField(X^3 + X^2 - 2*X - 1)\nL.<s> = NumberField(X^3 + X^2 - 36*X - 4)\n\nEK = E.base_extend(K)\ntoK = EK.torsion_order()\nda = EK.local_data()\n\nEL = E.base_extend(L)\nda = EL.local_data()\n```\n\n\nproduces a `TypeError`. Having played around with this for hours, I believe that all lines in the above code are necessary to produce the bug. Especially both the torsion and local data computations over another field. I have no idea whatsoever of where to look for the error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7930\n\n",
     "created_at": "2010-01-14T15:00:57Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_007930.json:
     "title": "strange bug for elliptic curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7930",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  cremona was robertwb
+CC:  @JohnCremona @williamstein @robertwb
 
 The following code
 
@@ -59,7 +59,7 @@ archive/issue_comments_069036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69036",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_069037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69037",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_069038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69038",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_069039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69039",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_069040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69040",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_069041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69041",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_069042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69042",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_069043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69043",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_069044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69044",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_069045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69045",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -280,16 +280,16 @@ exported against 4.4.4.alpha0
 archive/issue_comments_069046.json:
 ```json
 {
-    "body": "Attachment [trac_7930.patch](tarball://root/attachments/some-uuid/ticket7930/trac_7930.patch) by cremona created at 2010-06-24 20:37:21\n\nLooks good & tests fine on 4.4.4.alpha0.",
+    "body": "Attachment [trac_7930.patch](tarball://root/attachments/some-uuid/ticket7930/trac_7930.patch) by @JohnCremona created at 2010-06-24 20:37:21\n\nLooks good & tests fine on 4.4.4.alpha0.",
     "created_at": "2010-06-24T20:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69046",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7930.patch](tarball://root/attachments/some-uuid/ticket7930/trac_7930.patch) by cremona created at 2010-06-24 20:37:21
+Attachment [trac_7930.patch](tarball://root/attachments/some-uuid/ticket7930/trac_7930.patch) by @JohnCremona created at 2010-06-24 20:37:21
 
 Looks good & tests fine on 4.4.4.alpha0.
 
@@ -305,7 +305,7 @@ archive/issue_comments_069047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69047",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_069048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69048",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

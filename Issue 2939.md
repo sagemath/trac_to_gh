@@ -3,7 +3,7 @@
 archive/issues_002939.json:
 ```json
 {
-    "body": "Assignee: was\n\nJim Morrow reported by private email some nonsense in the docstrings of several piecewise.py functions. These are now fixed. Also, I added 2 lines to the laplace function which allows it to compute with functions which are defined over an infinite interval. These 2 lines were the only code changes in this patch, the rest of the changes are docstring fixes and additions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2939\n\n",
+    "body": "Assignee: @williamstein\n\nJim Morrow reported by private email some nonsense in the docstrings of several piecewise.py functions. These are now fixed. Also, I added 2 lines to the laplace function which allows it to compute with functions which are defined over an infinite interval. These 2 lines were the only code changes in this patch, the rest of the changes are docstring fixes and additions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2939\n\n",
     "created_at": "2008-04-16T02:24:18Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002939.json:
     "title": "piecewise.py improvements (docstring and laplace fixes)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2939",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Jim Morrow reported by private email some nonsense in the docstrings of several piecewise.py functions. These are now fixed. Also, I added 2 lines to the laplace function which allows it to compute with functions which are defined over an infinite interval. These 2 lines were the only code changes in this patch, the rest of the changes are docstring fixes and additions.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2939
 archive/issue_comments_020248.json:
 ```json
 {
-    "body": "Attachment [9545.patch](tarball://root/attachments/some-uuid/ticket2939/9545.patch) by wdj created at 2008-04-16 02:25:04",
+    "body": "Attachment [9545.patch](tarball://root/attachments/some-uuid/ticket2939/9545.patch) by @wdjoyner created at 2008-04-16 02:25:04",
     "created_at": "2008-04-16T02:25:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2939#issuecomment-20248",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [9545.patch](tarball://root/attachments/some-uuid/ticket2939/9545.patch) by wdj created at 2008-04-16 02:25:04
+Attachment [9545.patch](tarball://root/attachments/some-uuid/ticket2939/9545.patch) by @wdjoyner created at 2008-04-16 02:25:04
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_020249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2939#issuecomment-20249",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

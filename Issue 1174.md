@@ -3,7 +3,7 @@
 archive/issues_001174.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1174\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1174\n\n",
     "created_at": "2007-11-15T07:46:36Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001174.json:
     "title": "very minor bug in calculs _complex_ coercion.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1174",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1174
 archive/issue_comments_007256.json:
 ```json
 {
-    "body": "Attachment [7349.patch](tarball://root/attachments/some-uuid/ticket1174/7349.patch) by was created at 2007-11-15 07:47:21\n\nI noticed this very slight mistake recently...",
+    "body": "Attachment [7349.patch](tarball://root/attachments/some-uuid/ticket1174/7349.patch) by @williamstein created at 2007-11-15 07:47:21\n\nI noticed this very slight mistake recently...",
     "created_at": "2007-11-15T07:47:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1174#issuecomment-7256",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [7349.patch](tarball://root/attachments/some-uuid/ticket1174/7349.patch) by was created at 2007-11-15 07:47:21
+Attachment [7349.patch](tarball://root/attachments/some-uuid/ticket1174/7349.patch) by @williamstein created at 2007-11-15 07:47:21
 
 I noticed this very slight mistake recently...
 
@@ -57,7 +57,7 @@ archive/issue_comments_007257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1174#issuecomment-7257",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_007258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1174#issuecomment-7258",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_007259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1174#issuecomment-7259",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_007260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1174#issuecomment-7260",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -124,16 +124,16 @@ apply this after applying the other patch
 archive/issue_comments_007261.json:
 ```json
 {
-    "body": "Attachment [trac-1174-part2.patch](tarball://root/attachments/some-uuid/ticket1174/trac-1174-part2.patch) by was created at 2007-12-02 20:25:48",
+    "body": "Attachment [trac-1174-part2.patch](tarball://root/attachments/some-uuid/ticket1174/trac-1174-part2.patch) by @williamstein created at 2007-12-02 20:25:48",
     "created_at": "2007-12-02T20:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1174#issuecomment-7261",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1174-part2.patch](tarball://root/attachments/some-uuid/ticket1174/trac-1174-part2.patch) by was created at 2007-12-02 20:25:48
+Attachment [trac-1174-part2.patch](tarball://root/attachments/some-uuid/ticket1174/trac-1174-part2.patch) by @williamstein created at 2007-12-02 20:25:48
 
 
 

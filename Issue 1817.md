@@ -14,7 +14,7 @@ archive/issues_001817.json:
     "title": "[with patch] crypto.mq.sr doctest coverage at 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1817",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1817
 archive/issue_comments_011480.json:
 ```json
 {
-    "body": "Attachment [sr-doctest.patch](tarball://root/attachments/some-uuid/ticket1817/sr-doctest.patch) by malb created at 2008-01-18 00:11:44",
+    "body": "Attachment [sr-doctest.patch](tarball://root/attachments/some-uuid/ticket1817/sr-doctest.patch) by @malb created at 2008-01-18 00:11:44",
     "created_at": "2008-01-18T00:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1817#issuecomment-11480",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sr-doctest.patch](tarball://root/attachments/some-uuid/ticket1817/sr-doctest.patch) by malb created at 2008-01-18 00:11:44
+Attachment [sr-doctest.patch](tarball://root/attachments/some-uuid/ticket1817/sr-doctest.patch) by @malb created at 2008-01-18 00:11:44
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_006243.json:
 ```json
 {
-    "body": "CC:  mhansen\n\nFrom Alex Raichev on sage-support:\n\n\n```\nHi all:\n\nUpon upgrading to Sage 4.0, i can no longer make a dictionary with\nderivatives as keys (see below).  Can someone please fix this?\n\nAlex\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: X= var('x,y')\nsage: f= function('f',*X); f\nf(x, y)\nsage: for x in X:\n....:     diff(f,x)\n....:\nD[0](f)(x, y)\nD[1](f)(x, y)\nsage: d= {}\nsage: for x in X:\n....:     d[diff(f,x)] = 1\n....:\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call\nlast)\n| Sage Version 4.0, Release Date: 2009-05-29                         |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/raichev/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression.so in sage.symbolic.expression.Expression.__nonzero__ (sage/\nsymbolic/expression.cpp:7814)()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression.so in sage.symbolic.expression.Expression.test_relation\n(sage/symbolic/expression.cpp:9187)()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/rings/\ncomplex_interval_field.pyc in __call__(self, x, im)\n    286\n    287             try:\n--> 288                 return x._complex_mpfi_( self )  \n    289             except AttributeError:\n    290                 pass\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression.so in sage.symbolic.expression.Expression._complex_mpfi_\n(sage/symbolic/expression.cpp:5484)()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression_conversions.pyc in __call__(self, ex)\n    212                 div = self.get_fake_div(ex)\n    213                 return self.arithmetic(div, div.operator())\n--> 214             return self.arithmetic(ex, operator)  \n    215         elif operator in relation_operators:\n    216             return self.relation(ex, operator)\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression_conversions.pyc in arithmetic(self, ex, operator)\n   1424             return base ** expt\n   1425         else:\n-> 1426             return reduce(operator, map(self, operands))  \n   1427\n   1428     def composition(self, ex, operator):\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression_conversions.pyc in __call__(self, ex)\n    216             return self.relation(ex, operator)\n    217         elif isinstance(operator, FDerivativeOperator):\n--> 218             return self.derivative(ex, operator)  \n    219         else:\n    220             return self.composition(ex, operator)\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression_conversions.pyc in derivative(self, ex, operator)\n    344             NotImplementedError: derivative\n    345         \"\"\"\n--> 346         raise NotImplementedError, \"derivative\"  \n    347\n    348     def arithmetic(self, ex, operator):\n\nNotImplementedError: derivative\n```\n\n\nI suppose an immediate fix is to implement the derivative method in `sage.symbolic.expression_conversions.Converter`. I believe the right fix is to change pynac to pass on the parent for numerical approximation instead of just the precision. I'll work on making the necessary changes in pynac.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6243\n\n",
+    "body": "CC:  @mwhansen\n\nFrom Alex Raichev on sage-support:\n\n\n```\nHi all:\n\nUpon upgrading to Sage 4.0, i can no longer make a dictionary with\nderivatives as keys (see below).  Can someone please fix this?\n\nAlex\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: X= var('x,y')\nsage: f= function('f',*X); f\nf(x, y)\nsage: for x in X:\n....:     diff(f,x)\n....:\nD[0](f)(x, y)\nD[1](f)(x, y)\nsage: d= {}\nsage: for x in X:\n....:     d[diff(f,x)] = 1\n....:\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call\nlast)\n| Sage Version 4.0, Release Date: 2009-05-29                         |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/raichev/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression.so in sage.symbolic.expression.Expression.__nonzero__ (sage/\nsymbolic/expression.cpp:7814)()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression.so in sage.symbolic.expression.Expression.test_relation\n(sage/symbolic/expression.cpp:9187)()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/rings/\ncomplex_interval_field.pyc in __call__(self, x, im)\n    286\n    287             try:\n--> 288                 return x._complex_mpfi_( self )  \n    289             except AttributeError:\n    290                 pass\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression.so in sage.symbolic.expression.Expression._complex_mpfi_\n(sage/symbolic/expression.cpp:5484)()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression_conversions.pyc in __call__(self, ex)\n    212                 div = self.get_fake_div(ex)\n    213                 return self.arithmetic(div, div.operator())\n--> 214             return self.arithmetic(ex, operator)  \n    215         elif operator in relation_operators:\n    216             return self.relation(ex, operator)\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression_conversions.pyc in arithmetic(self, ex, operator)\n   1424             return base ** expt\n   1425         else:\n-> 1426             return reduce(operator, map(self, operands))  \n   1427\n   1428     def composition(self, ex, operator):\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression_conversions.pyc in __call__(self, ex)\n    216             return self.relation(ex, operator)\n    217         elif isinstance(operator, FDerivativeOperator):\n--> 218             return self.derivative(ex, operator)  \n    219         else:\n    220             return self.composition(ex, operator)\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/symbolic/\nexpression_conversions.pyc in derivative(self, ex, operator)\n    344             NotImplementedError: derivative\n    345         \"\"\"\n--> 346         raise NotImplementedError, \"derivative\"  \n    347\n    348     def arithmetic(self, ex, operator):\n\nNotImplementedError: derivative\n```\n\n\nI suppose an immediate fix is to implement the derivative method in `sage.symbolic.expression_conversions.Converter`. I believe the right fix is to change pynac to pass on the parent for numerical approximation instead of just the precision. I'll work on making the necessary changes in pynac.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6243\n\n",
     "created_at": "2009-06-07T19:07:43Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006243.json:
     "title": "add support for arbitrary parents in pynac's evalf",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6243",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-CC:  mhansen
+CC:  @mwhansen
 
 From Alex Raichev on sage-support:
 
@@ -126,7 +126,7 @@ archive/issue_comments_049855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6243#issuecomment-49855",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -139,16 +139,16 @@ doctests for the fix
 archive/issue_comments_049856.json:
 ```json
 {
-    "body": "Attachment [trac_6243-fderivative_hash.patch](tarball://root/attachments/some-uuid/ticket6243/trac_6243-fderivative_hash.patch) by burcin created at 2009-07-31 21:25:17\n\nI have a fix for this in my local pynac tree. I took a shortcut and changed the fderivative hashes to include the parameters.\n\nI'll make a new pynac package with fixes for some other bugs available soon.",
+    "body": "Attachment [trac_6243-fderivative_hash.patch](tarball://root/attachments/some-uuid/ticket6243/trac_6243-fderivative_hash.patch) by @burcin created at 2009-07-31 21:25:17\n\nI have a fix for this in my local pynac tree. I took a shortcut and changed the fderivative hashes to include the parameters.\n\nI'll make a new pynac package with fixes for some other bugs available soon.",
     "created_at": "2009-07-31T21:25:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6243#issuecomment-49856",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6243-fderivative_hash.patch](tarball://root/attachments/some-uuid/ticket6243/trac_6243-fderivative_hash.patch) by burcin created at 2009-07-31 21:25:17
+Attachment [trac_6243-fderivative_hash.patch](tarball://root/attachments/some-uuid/ticket6243/trac_6243-fderivative_hash.patch) by @burcin created at 2009-07-31 21:25:17
 
 I have a fix for this in my local pynac tree. I took a shortcut and changed the fderivative hashes to include the parameters.
 
@@ -166,7 +166,7 @@ archive/issue_comments_049857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6243#issuecomment-49857",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_049858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6243#issuecomment-49858",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -199,16 +199,16 @@ Please follow the instructions on that ticket to apply & test.
 archive/issue_comments_049859.json:
 ```json
 {
-    "body": "Set assignee to burcin.",
+    "body": "Set assignee to @burcin.",
     "created_at": "2009-08-01T02:31:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6243#issuecomment-49859",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Set assignee to burcin.
+Set assignee to @burcin.
 
 
 
@@ -222,7 +222,7 @@ archive/issue_comments_049860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6243#issuecomment-49860",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_049861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6243#issuecomment-49861",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 

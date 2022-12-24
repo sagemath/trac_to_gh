@@ -3,7 +3,7 @@
 archive/issues_008464.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri\n\nAdd the [FAQ](http://wiki.sagemath.org/faq) on the Sage wiki to the Sage [standard documentation](http://www.sagemath.org/doc/). The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8464\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nAdd the [FAQ](http://wiki.sagemath.org/faq) on the Sage wiki to the Sage [standard documentation](http://www.sagemath.org/doc/). The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8464\n\n",
     "created_at": "2010-03-07T01:52:58Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008464.json:
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 Add the [FAQ](http://wiki.sagemath.org/faq) on the Sage wiki to the Sage [standard documentation](http://www.sagemath.org/doc/). The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).
 
@@ -57,7 +57,7 @@ archive/issue_comments_076184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8464#issuecomment-76184",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_076192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8464#issuecomment-76192",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_076205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8464#issuecomment-76205",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

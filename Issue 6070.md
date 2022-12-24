@@ -3,7 +3,7 @@
 archive/issues_006070.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  cremona\n\nKeywords: documentation, modular symbols\n\nThis is a follow-up of #6042. That patch increased doctest coverage in the modular subdirectory from 91.8% to 96.4%. I have finished off the job by doctesting the last few files in sage/modular/modsym, and will upload a patch soon (once I have got a ticket number to put in the patch header, and run full tests on 4.0.alpha0).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6070\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @JohnCremona\n\nKeywords: documentation, modular symbols\n\nThis is a follow-up of #6042. That patch increased doctest coverage in the modular subdirectory from 91.8% to 96.4%. I have finished off the job by doctesting the last few files in sage/modular/modsym, and will upload a patch soon (once I have got a ticket number to put in the patch header, and run full tests on 4.0.alpha0).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6070\n\n",
     "created_at": "2009-05-18T14:05:40Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_006070.json:
     "title": "Get doctest coverage in sage/modular to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6070",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  cremona
+CC:  @JohnCremona
 
 Keywords: documentation, modular symbols
 
@@ -41,7 +41,7 @@ archive/issue_comments_048307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6070#issuecomment-48307",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_048308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6070#issuecomment-48308",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_048309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6070#issuecomment-48309",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_048310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6070#issuecomment-48310",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -169,16 +169,16 @@ Michael
 archive/issue_comments_048312.json:
 ```json
 {
-    "body": "Attachment [trac_6070_new.patch](tarball://root/attachments/some-uuid/ticket6070/trac_6070_new.patch) by davidloeffler created at 2009-05-19 09:16:45\n\nreplaces both previous patches",
+    "body": "Attachment [trac_6070_new.patch](tarball://root/attachments/some-uuid/ticket6070/trac_6070_new.patch) by @loefflerd created at 2009-05-19 09:16:45\n\nreplaces both previous patches",
     "created_at": "2009-05-19T09:16:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6070#issuecomment-48312",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6070_new.patch](tarball://root/attachments/some-uuid/ticket6070/trac_6070_new.patch) by davidloeffler created at 2009-05-19 09:16:45
+Attachment [trac_6070_new.patch](tarball://root/attachments/some-uuid/ticket6070/trac_6070_new.patch) by @loefflerd created at 2009-05-19 09:16:45
 
 replaces both previous patches
 
@@ -194,7 +194,7 @@ archive/issue_comments_048313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6070#issuecomment-48313",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_048314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6070#issuecomment-48314",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_048316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6070#issuecomment-48316",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -270,16 +270,16 @@ apply over previous patch
 archive/issue_comments_048317.json:
 ```json
 {
-    "body": "Attachment [trac_6070_workaround.patch](tarball://root/attachments/some-uuid/ticket6070/trac_6070_workaround.patch) by davidloeffler created at 2009-05-20 08:49:10\n\nRight, well, here's a temporary solution. The reason for the doctest failures in `modsym/space.py` without #5080 was because #5080 changed the behaviour of `dual_free_module` slightly when the ambient space had sign 0 but the given subspace had fixed sign. The new doctests I added to {{{space.py}} relied on this changed behaviour. The new patch I've just uploaded makes a trivial change to these doctests so that they pass without having #5080 applied. So we can get this merged now, without it having to wait for me (or anyone else) to get around to fixing the speed regression at #5080.\n\nHow does that sound?\n\nDavid",
+    "body": "Attachment [trac_6070_workaround.patch](tarball://root/attachments/some-uuid/ticket6070/trac_6070_workaround.patch) by @loefflerd created at 2009-05-20 08:49:10\n\nRight, well, here's a temporary solution. The reason for the doctest failures in `modsym/space.py` without #5080 was because #5080 changed the behaviour of `dual_free_module` slightly when the ambient space had sign 0 but the given subspace had fixed sign. The new doctests I added to {{{space.py}} relied on this changed behaviour. The new patch I've just uploaded makes a trivial change to these doctests so that they pass without having #5080 applied. So we can get this merged now, without it having to wait for me (or anyone else) to get around to fixing the speed regression at #5080.\n\nHow does that sound?\n\nDavid",
     "created_at": "2009-05-20T08:49:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6070#issuecomment-48317",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6070_workaround.patch](tarball://root/attachments/some-uuid/ticket6070/trac_6070_workaround.patch) by davidloeffler created at 2009-05-20 08:49:10
+Attachment [trac_6070_workaround.patch](tarball://root/attachments/some-uuid/ticket6070/trac_6070_workaround.patch) by @loefflerd created at 2009-05-20 08:49:10
 
 Right, well, here's a temporary solution. The reason for the doctest failures in `modsym/space.py` without #5080 was because #5080 changed the behaviour of `dual_free_module` slightly when the ambient space had sign 0 but the given subspace had fixed sign. The new doctests I added to {{{space.py}} relied on this changed behaviour. The new patch I've just uploaded makes a trivial change to these doctests so that they pass without having #5080 applied. So we can get this merged now, without it having to wait for me (or anyone else) to get around to fixing the speed regression at #5080.
 
@@ -299,7 +299,7 @@ archive/issue_comments_048318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6070#issuecomment-48318",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_048319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6070#issuecomment-48319",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

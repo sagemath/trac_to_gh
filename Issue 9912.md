@@ -3,7 +3,7 @@
 archive/issues_009912.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  cwitty\n\nfrom sage-support:\nhttp://groups.google.com/group/sage-support/browse_thread/thread/b36c90f1490eac19#\n\n```\nsage: a=(sqrt(4*(sqrt(3) - 5)*(sqrt(3) + 5) + 48) + 4*sqrt(3))/ (sqrt(3) + 5) \nsage: a.imag().n()\n0.939469338708203*sin(0.500000000000000*pi)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9913\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  cwitty\n\nfrom sage-support:\nhttp://groups.google.com/group/sage-support/browse_thread/thread/b36c90f1490eac19#\n\n```\nsage: a=(sqrt(4*(sqrt(3) - 5)*(sqrt(3) + 5) + 48) + 4*sqrt(3))/ (sqrt(3) + 5) \nsage: a.imag().n()\n0.939469338708203*sin(0.500000000000000*pi)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9913\n\n",
     "created_at": "2010-09-16T01:57:27Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_009912.json:
     "title": "n() returns symbolic expression",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9912",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  cwitty
 
@@ -47,7 +47,7 @@ archive/issue_comments_098599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98599",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_098600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98600",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_098601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98601",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_098602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98602",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -160,16 +160,16 @@ We should open a new ticket for this and report it on the GiNaC list. I'm not su
 archive/issue_comments_098603.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to burcin.",
+    "body": "Changing assignee from @aghitza to @burcin.",
     "created_at": "2010-09-18T21:44:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98603",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from AlexGhitza to burcin.
+Changing assignee from @aghitza to @burcin.
 
 
 
@@ -183,7 +183,7 @@ archive/issue_comments_098604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98604",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_098605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98605",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_098606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98606",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -255,16 +255,16 @@ sage: print b.imag().n()
 archive/issue_comments_098607.json:
 ```json
 {
-    "body": "Attachment [trac_9913-arctan2_evalf.patch](tarball://root/attachments/some-uuid/ticket9913/trac_9913-arctan2_evalf.patch) by burcin created at 2010-10-10 19:53:51",
+    "body": "Attachment [trac_9913-arctan2_evalf.patch](tarball://root/attachments/some-uuid/ticket9913/trac_9913-arctan2_evalf.patch) by @burcin created at 2010-10-10 19:53:51",
     "created_at": "2010-10-10T19:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98607",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9913-arctan2_evalf.patch](tarball://root/attachments/some-uuid/ticket9913/trac_9913-arctan2_evalf.patch) by burcin created at 2010-10-10 19:53:51
+Attachment [trac_9913-arctan2_evalf.patch](tarball://root/attachments/some-uuid/ticket9913/trac_9913-arctan2_evalf.patch) by @burcin created at 2010-10-10 19:53:51
 
 
 
@@ -278,7 +278,7 @@ archive/issue_comments_098608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98608",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_098609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98609",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_098610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98610",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_098611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98611",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_098612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98612",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_098613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9912#issuecomment-98613",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

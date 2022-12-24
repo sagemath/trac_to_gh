@@ -14,7 +14,7 @@ archive/issues_009002.json:
     "title": "Noise on PPC Mac in parametric_surface.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9002",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tbd
@@ -51,7 +51,7 @@ archive/issue_comments_083236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9002#issuecomment-83236",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_083237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9002#issuecomment-83237",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_083239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9002#issuecomment-83239",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_083242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9002#issuecomment-83242",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_083246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9002#issuecomment-83246",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_083247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9002#issuecomment-83247",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_083250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9002#issuecomment-83250",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -445,16 +445,16 @@ Sorry, I didn't think of that.  I created this patch on a PPC Mac, and it's one 
 archive/issue_comments_083251.json:
 ```json
 {
-    "body": "Attachment [trac_9002-ppc-noise.patch](tarball://root/attachments/some-uuid/ticket9002/trac_9002-ppc-noise.patch) by kcrisman created at 2010-07-22 12:36:18\n\nBased on 4.5.1",
+    "body": "Attachment [trac_9002-ppc-noise.patch](tarball://root/attachments/some-uuid/ticket9002/trac_9002-ppc-noise.patch) by @kcrisman created at 2010-07-22 12:36:18\n\nBased on 4.5.1",
     "created_at": "2010-07-22T12:36:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9002#issuecomment-83251",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9002-ppc-noise.patch](tarball://root/attachments/some-uuid/ticket9002/trac_9002-ppc-noise.patch) by kcrisman created at 2010-07-22 12:36:18
+Attachment [trac_9002-ppc-noise.patch](tarball://root/attachments/some-uuid/ticket9002/trac_9002-ppc-noise.patch) by @kcrisman created at 2010-07-22 12:36:18
 
 Based on 4.5.1
 
@@ -470,7 +470,7 @@ archive/issue_comments_083252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9002#issuecomment-83252",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_083253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9002#issuecomment-83253",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -506,7 +506,7 @@ archive/issue_comments_083254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9002",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9002#issuecomment-83254",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

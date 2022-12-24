@@ -14,7 +14,7 @@ archive/issues_004294.json:
     "title": "sage -t under %pdb",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4294",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_031419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4294#issuecomment-31419",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_031420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4294#issuecomment-31420",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

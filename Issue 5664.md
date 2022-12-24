@@ -14,7 +14,7 @@ archive/issues_005664.json:
     "title": "Bugs in PermutationGroup_subgroup.__cmp__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5664",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: tbd
@@ -92,16 +92,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5664
 archive/issue_comments_044293.json:
 ```json
 {
-    "body": "Changing assignee from tbd to SimonKing.",
+    "body": "Changing assignee from tbd to @simon-king-jena.",
     "created_at": "2009-04-02T06:47:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44293",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Changing assignee from tbd to SimonKing.
+Changing assignee from tbd to @simon-king-jena.
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_044294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44294",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_044295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44295",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_044296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44296",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_044297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44297",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_044298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44298",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_044299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44299",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_044300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44300",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_044301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44301",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_044302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44302",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_044303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44303",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_044304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44304",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_044305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44305",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -533,7 +533,7 @@ archive/issue_comments_044306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44306",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -568,7 +568,7 @@ archive/issue_comments_044307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44307",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -593,7 +593,7 @@ archive/issue_comments_044308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44308",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -634,7 +634,7 @@ archive/issue_comments_044309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44309",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -668,7 +668,7 @@ archive/issue_comments_044310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44310",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -692,16 +692,16 @@ So, I agree that IsSubgroup is the way to go.
 archive/issue_comments_044311.json:
 ```json
 {
-    "body": "Attachment [PermutationGroup__cmp__.patch](tarball://root/attachments/some-uuid/ticket5664/PermutationGroup__cmp__.patch) by SimonKing created at 2009-04-21 07:44:14\n\nBug fixes and doc tests for `PermutationGroup_generic.__cmp__` and `PermutationGroup_subgroup.__cmp__`",
+    "body": "Attachment [PermutationGroup__cmp__.patch](tarball://root/attachments/some-uuid/ticket5664/PermutationGroup__cmp__.patch) by @simon-king-jena created at 2009-04-21 07:44:14\n\nBug fixes and doc tests for `PermutationGroup_generic.__cmp__` and `PermutationGroup_subgroup.__cmp__`",
     "created_at": "2009-04-21T07:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44311",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [PermutationGroup__cmp__.patch](tarball://root/attachments/some-uuid/ticket5664/PermutationGroup__cmp__.patch) by SimonKing created at 2009-04-21 07:44:14
+Attachment [PermutationGroup__cmp__.patch](tarball://root/attachments/some-uuid/ticket5664/PermutationGroup__cmp__.patch) by @simon-king-jena created at 2009-04-21 07:44:14
 
 Bug fixes and doc tests for `PermutationGroup_generic.__cmp__` and `PermutationGroup_subgroup.__cmp__`
 
@@ -717,7 +717,7 @@ archive/issue_comments_044312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44312",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -770,7 +770,7 @@ archive/issue_comments_044313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44313",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -797,7 +797,7 @@ archive/issue_comments_044314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44314",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_044315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44315",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -838,7 +838,7 @@ archive/issue_comments_044316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5664#issuecomment-44316",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

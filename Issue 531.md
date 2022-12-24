@@ -3,7 +3,7 @@
 archive/issues_000531.json:
 ```json
 {
-    "body": "Assignee: malb\n\nFrom Sage 2.8.3rc3:\n\n```\n==24738== Source and destination overlap in strcpy(0x7FEFEA7A0, 0x7FEFEA7A0)\n==24738==    at 0x4A06E47: strcpy (mc_replace_strmem.c:106)\n==24738==    by 0x1BFD8EAF: feCleanUpPath(char*) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libsingular.so)\n==24738==    by 0x1BFD98CB: feInitResource(feResourceConfig_s*, int) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libsingular.so)\n==24738==    by 0x1BFDA021: feInitResources(char*) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libsingular.so)\n==24738==    by 0x1BF4D768: siInit(char*) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libsingular.so)\n==24738==    by 0x1BC4AA0A: initmulti_polynomial_libsingular (multi_polynomial_libsingular.cpp:1159)\n==24738==    by 0x49F762: _PyImport_LoadDynamicModule (importdl.c:53)\n==24738==    by 0x49D63E: import_submodule (import.c:2394)\n==24738==    by 0x49DB11: load_next (import.c:2214)\n==24738==    by 0x49DD33: import_module_level (import.c:1995)\n==24738==    by 0x49E1A4: PyImport_ImportModuleLevel (import.c:2066)\n==24738==    by 0x47D5D8: builtin___import__ (bltinmodule.c:47)\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/531\n\n",
+    "body": "Assignee: @malb\n\nFrom Sage 2.8.3rc3:\n\n```\n==24738== Source and destination overlap in strcpy(0x7FEFEA7A0, 0x7FEFEA7A0)\n==24738==    at 0x4A06E47: strcpy (mc_replace_strmem.c:106)\n==24738==    by 0x1BFD8EAF: feCleanUpPath(char*) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libsingular.so)\n==24738==    by 0x1BFD98CB: feInitResource(feResourceConfig_s*, int) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libsingular.so)\n==24738==    by 0x1BFDA021: feInitResources(char*) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libsingular.so)\n==24738==    by 0x1BF4D768: siInit(char*) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libsingular.so)\n==24738==    by 0x1BC4AA0A: initmulti_polynomial_libsingular (multi_polynomial_libsingular.cpp:1159)\n==24738==    by 0x49F762: _PyImport_LoadDynamicModule (importdl.c:53)\n==24738==    by 0x49D63E: import_submodule (import.c:2394)\n==24738==    by 0x49DB11: load_next (import.c:2214)\n==24738==    by 0x49DD33: import_module_level (import.c:1995)\n==24738==    by 0x49E1A4: PyImport_ImportModuleLevel (import.c:2066)\n==24738==    by 0x47D5D8: builtin___import__ (bltinmodule.c:47)\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/531\n\n",
     "created_at": "2007-08-30T18:49:17Z",
     "labels": [
         "memleak",
@@ -17,7 +17,7 @@ archive/issues_000531.json:
     "user": "mabshoff"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 From Sage 2.8.3rc3:
 
@@ -57,7 +57,7 @@ archive/issue_comments_002714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/531#issuecomment-2714",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_002715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/531#issuecomment-2715",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

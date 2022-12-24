@@ -3,7 +3,7 @@
 archive/issues_003133.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman jason\n\n\n```\n\n\nOn Thu, May 8, 2008 at 1:32 AM, Dan Drake <drake@mathsci.kaist.ac.kr> wrote:\n> I'm teaching ODEs right now and I'd like to plot the usual sort of\n>  solution to a 2-by-2 linear DE system, but the following doesn't work:\n>  \n>   sage: evec = vector([1,2])\n>   sage: var('t')\n>   sage: parametric_plot( exp(-t) * evec, 0, 2)\n>  \n>  The traceback's complaint is \"<type 'exceptions.TypeError'>: function\n>  takes at most 1 positional arguments (2 given)\".\n>  \n>  I know I could manually do (exp(-t), 2*exp(-t)), but the above form\n>  seems so natural. Is there a way to get that to work?\n\nYou could type\n\nsage: parametric_plot( list(exp(-t) * evec), 0, 2)\n\nI think it would be reasonable for us to improve parametric_plot so that it takes a vector \nas input instead of just a list or tuple. \n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3133\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @jasongrout\n\n\n```\n\n\nOn Thu, May 8, 2008 at 1:32 AM, Dan Drake <drake@mathsci.kaist.ac.kr> wrote:\n> I'm teaching ODEs right now and I'd like to plot the usual sort of\n>  solution to a 2-by-2 linear DE system, but the following doesn't work:\n>  \n>   sage: evec = vector([1,2])\n>   sage: var('t')\n>   sage: parametric_plot( exp(-t) * evec, 0, 2)\n>  \n>  The traceback's complaint is \"<type 'exceptions.TypeError'>: function\n>  takes at most 1 positional arguments (2 given)\".\n>  \n>  I know I could manually do (exp(-t), 2*exp(-t)), but the above form\n>  seems so natural. Is there a way to get that to work?\n\nYou could type\n\nsage: parametric_plot( list(exp(-t) * evec), 0, 2)\n\nI think it would be reasonable for us to improve parametric_plot so that it takes a vector \nas input instead of just a list or tuple. \n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3133\n\n",
     "created_at": "2008-05-08T13:58:14Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_003133.json:
     "title": "allow parametric_plot and parametric_plot3d to take a vector as input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3133",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman jason
+CC:  @kcrisman @jasongrout
 
 
 ```
@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3133
 archive/issue_comments_021759.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2009-03-06T21:25:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3133#issuecomment-21759",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_021760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3133#issuecomment-21760",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_021761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3133#issuecomment-21761",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_021762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3133#issuecomment-21762",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_021763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3133#issuecomment-21763",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -191,16 +191,16 @@ See #3315 for another input format that parametric_plot should take (functions r
 archive/issue_comments_021764.json:
 ```json
 {
-    "body": "Attachment [trac-3133-parametric_plot-vector.patch](tarball://root/attachments/some-uuid/ticket3133/trac-3133-parametric_plot-vector.patch) by jason created at 2009-09-17 21:44:17",
+    "body": "Attachment [trac-3133-parametric_plot-vector.patch](tarball://root/attachments/some-uuid/ticket3133/trac-3133-parametric_plot-vector.patch) by @jasongrout created at 2009-09-17 21:44:17",
     "created_at": "2009-09-17T21:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3133#issuecomment-21764",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-3133-parametric_plot-vector.patch](tarball://root/attachments/some-uuid/ticket3133/trac-3133-parametric_plot-vector.patch) by jason created at 2009-09-17 21:44:17
+Attachment [trac-3133-parametric_plot-vector.patch](tarball://root/attachments/some-uuid/ticket3133/trac-3133-parametric_plot-vector.patch) by @jasongrout created at 2009-09-17 21:44:17
 
 
 
@@ -214,7 +214,7 @@ archive/issue_comments_021765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3133#issuecomment-21765",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_021766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3133#issuecomment-21766",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_021767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3133#issuecomment-21767",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

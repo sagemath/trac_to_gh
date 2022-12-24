@@ -3,7 +3,7 @@
 archive/issues_007061.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThe functions `search_src`, `search_doc`, and `search_def` are important to know about for developers.  This patch adds a paragraph about them to the developer's guide.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7061\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThe functions `search_src`, `search_doc`, and `search_def` are important to know about for developers.  This patch adds a paragraph about them to the developer's guide.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7061\n\n",
     "created_at": "2009-09-29T03:16:54Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_007061.json:
     "title": "[with patch, needs review] add search_src to the developer's guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7061",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 The functions `search_src`, `search_doc`, and `search_def` are important to know about for developers.  This patch adds a paragraph about them to the developer's guide.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7061
 archive/issue_comments_058420.json:
 ```json
 {
-    "body": "Attachment [trac_7061-search.patch](tarball://root/attachments/some-uuid/ticket7061/trac_7061-search.patch) by jhpalmieri created at 2009-09-29 03:17:31",
+    "body": "Attachment [trac_7061-search.patch](tarball://root/attachments/some-uuid/ticket7061/trac_7061-search.patch) by @jhpalmieri created at 2009-09-29 03:17:31",
     "created_at": "2009-09-29T03:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7061#issuecomment-58420",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7061-search.patch](tarball://root/attachments/some-uuid/ticket7061/trac_7061-search.patch) by jhpalmieri created at 2009-09-29 03:17:31
+Attachment [trac_7061-search.patch](tarball://root/attachments/some-uuid/ticket7061/trac_7061-search.patch) by @jhpalmieri created at 2009-09-29 03:17:31
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_058421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7061#issuecomment-58421",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_058422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7061#issuecomment-58422",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

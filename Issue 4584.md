@@ -14,7 +14,7 @@ archive/issues_004584.json:
     "title": "[with patch; needs review] remove doctest cruft -- delete sage-doctest_old_ver",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4584",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

@@ -3,7 +3,7 @@
 archive/issues_008481.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: V = QQ**2\nsage: W = QQ**2\nsage: f = V.hom([W.1, W.1])\nsage: f.lift(W.1)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/palmieri/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/modules/free_module_morphism.pyc in lift(self, x)\n    337         x = self.codomain()(x)\n    338         A = self.matrix()\n--> 339         H, U = A.hermite_form(transformation=True,include_zero_rows=False)\n    340         Y = H.solve_left(vector(self.codomain().coordinates(x)))\n    341         C = Y*U\n\n...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8481\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: V = QQ**2\nsage: W = QQ**2\nsage: f = V.hom([W.1, W.1])\nsage: f.lift(W.1)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/palmieri/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/modules/free_module_morphism.pyc in lift(self, x)\n    337         x = self.codomain()(x)\n    338         A = self.matrix()\n--> 339         H, U = A.hermite_form(transformation=True,include_zero_rows=False)\n    340         Y = H.solve_left(vector(self.codomain().coordinates(x)))\n    341         C = Y*U\n\n...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8481\n\n",
     "created_at": "2010-03-07T22:49:07Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_008481.json:
     "title": "lift doesn't work for vector space homomorphisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8481",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -57,7 +57,7 @@ archive/issue_comments_076435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76435",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_076436.json:
 ```json
 {
-    "body": "Attachment [trac_8481-lift.patch](tarball://root/attachments/some-uuid/ticket8481/trac_8481-lift.patch) by jhpalmieri created at 2010-03-08 23:55:07",
+    "body": "Attachment [trac_8481-lift.patch](tarball://root/attachments/some-uuid/ticket8481/trac_8481-lift.patch) by @jhpalmieri created at 2010-03-08 23:55:07",
     "created_at": "2010-03-08T23:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76436",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8481-lift.patch](tarball://root/attachments/some-uuid/ticket8481/trac_8481-lift.patch) by jhpalmieri created at 2010-03-08 23:55:07
+Attachment [trac_8481-lift.patch](tarball://root/attachments/some-uuid/ticket8481/trac_8481-lift.patch) by @jhpalmieri created at 2010-03-08 23:55:07
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_076437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76437",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_076438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76438",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_076439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76439",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,16 +153,16 @@ All doctests pass fine.
 archive/issue_comments_076440.json:
 ```json
 {
-    "body": "Attachment [trac_8481-lift.v2.patch](tarball://root/attachments/some-uuid/ticket8481/trac_8481-lift.v2.patch) by jhpalmieri created at 2010-04-06 00:00:00\n\nHere's a new patch.  I hope the speed hit isn't too bad with this one.",
+    "body": "Attachment [trac_8481-lift.v2.patch](tarball://root/attachments/some-uuid/ticket8481/trac_8481-lift.v2.patch) by @jhpalmieri created at 2010-04-06 00:00:00\n\nHere's a new patch.  I hope the speed hit isn't too bad with this one.",
     "created_at": "2010-04-06T00:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76440",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8481-lift.v2.patch](tarball://root/attachments/some-uuid/ticket8481/trac_8481-lift.v2.patch) by jhpalmieri created at 2010-04-06 00:00:00
+Attachment [trac_8481-lift.v2.patch](tarball://root/attachments/some-uuid/ticket8481/trac_8481-lift.v2.patch) by @jhpalmieri created at 2010-04-06 00:00:00
 
 Here's a new patch.  I hope the speed hit isn't too bad with this one.
 
@@ -178,7 +178,7 @@ archive/issue_comments_076441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76441",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_076442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76442",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_076443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76443",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_076444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76444",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_076445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76445",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

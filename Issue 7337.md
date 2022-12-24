@@ -3,7 +3,7 @@
 archive/issues_007337.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\nIt fails with \n\n\n```\n  /home/mhansen/sage-4.2/spkg/build/gd-2.0.35.p2/src/gd_png.c:70: undefined reference to `_png_get_error_ptr'\n  /home/mhansen/sage-4.2/local/lib/libgd.a(gd_png.o): In function `gdPngReadData':\n  /home/mhansen/sage-4.2/spkg/build/gd-2.0.35.p2/src/gd_png.c:85: undefined reference to `_png_get_io_ptr'\n  /home/mhansen/sage-4.2/spkg/build/gd-2.0.35.p2/src/gd_png.c:87: undefined reference to `_png_error'\n  /home/mhansen/sage-4.2/local/lib/libgd.a(gd_png.o): In function `gdPngWriteData':\n  /home/mhansen/sage-4.2/spkg/build/gd-2.0.35.p2/src/gd_png.c:94: undefined reference to `_png_get_io_ptr'\n  /home/mhansen/sage-4.2/local/lib/libgd.a(gd_png.o): In function `gdImageCreateFromPngCtx':\n  /home/mhansen/sage-4.2/spkg/build/gd-2.0.35.p2/src/gd_png.c:152: undefined reference to `_png_check_sig'\n```\n\n\nThis can be fixed by adding png12 and z to the list of libraries needed when gd is present.\n\nI'll post an spkg shortly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7337\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nIt fails with \n\n\n```\n  /home/mhansen/sage-4.2/spkg/build/gd-2.0.35.p2/src/gd_png.c:70: undefined reference to `_png_get_error_ptr'\n  /home/mhansen/sage-4.2/local/lib/libgd.a(gd_png.o): In function `gdPngReadData':\n  /home/mhansen/sage-4.2/spkg/build/gd-2.0.35.p2/src/gd_png.c:85: undefined reference to `_png_get_io_ptr'\n  /home/mhansen/sage-4.2/spkg/build/gd-2.0.35.p2/src/gd_png.c:87: undefined reference to `_png_error'\n  /home/mhansen/sage-4.2/local/lib/libgd.a(gd_png.o): In function `gdPngWriteData':\n  /home/mhansen/sage-4.2/spkg/build/gd-2.0.35.p2/src/gd_png.c:94: undefined reference to `_png_get_io_ptr'\n  /home/mhansen/sage-4.2/local/lib/libgd.a(gd_png.o): In function `gdImageCreateFromPngCtx':\n  /home/mhansen/sage-4.2/spkg/build/gd-2.0.35.p2/src/gd_png.c:152: undefined reference to `_png_check_sig'\n```\n\n\nThis can be fixed by adding png12 and z to the list of libraries needed when gd is present.\n\nI'll post an spkg shortly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7337\n\n",
     "created_at": "2009-10-28T19:37:45Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_007337.json:
     "title": "PolyBoRi fails to build on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7337",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 It fails with 
 
@@ -57,7 +57,7 @@ archive/issue_comments_061396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7337#issuecomment-61396",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_061397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7337#issuecomment-61397",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_061398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7337#issuecomment-61398",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_061399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7337#issuecomment-61399",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_061400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7337#issuecomment-61400",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_061401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7337#issuecomment-61401",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_061402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7337#issuecomment-61402",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_061403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7337#issuecomment-61403",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_061404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7337",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7337#issuecomment-61404",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

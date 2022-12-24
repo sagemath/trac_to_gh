@@ -3,7 +3,7 @@
 archive/issues_002355.json:
 ```json
 {
-    "body": "Assignee: dfdeshom\n\n The current implementation of the submatrix command could be easier to use given that matrix_from_rows_and_columns is nicely suited for this task; ie, this should just work\n\n```\nA.submatrix([1..2],[0..1])\n```\n\n\nif A is (at least) a 3x2 matrix\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/2355\n\n",
+    "body": "Assignee: @dfdeshom\n\n The current implementation of the submatrix command could be easier to use given that matrix_from_rows_and_columns is nicely suited for this task; ie, this should just work\n\n```\nA.submatrix([1..2],[0..1])\n```\n\n\nif A is (at least) a 3x2 matrix\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/2355\n\n",
     "created_at": "2008-02-29T20:30:57Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002355.json:
     "title": "Write a clearer submatrix implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2355",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: dfdeshom
+Assignee: @dfdeshom
 
  The current implementation of the submatrix command could be easier to use given that matrix_from_rows_and_columns is nicely suited for this task; ie, this should just work
 
@@ -45,7 +45,7 @@ archive/issue_comments_015835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15835",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_015836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15836",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_015837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15837",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_015838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15838",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_015839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15839",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_015840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15840",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_015841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15841",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_015842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15842",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_015843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15843",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_015844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15844",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_015845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15845",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_015846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15846",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -441,7 +441,7 @@ archive/issue_comments_015847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15847",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_015848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15848",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_015849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15849",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -532,16 +532,16 @@ Total time for all tests: 121.8 seconds
 archive/issue_comments_015850.json:
 ```json
 {
-    "body": "Attachment [2355.hg](tarball://root/attachments/some-uuid/ticket2355/2355.hg) by dfdeshom created at 2008-03-14 13:20:11",
+    "body": "Attachment [2355.hg](tarball://root/attachments/some-uuid/ticket2355/2355.hg) by @dfdeshom created at 2008-03-14 13:20:11",
     "created_at": "2008-03-14T13:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15850",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2355.hg](tarball://root/attachments/some-uuid/ticket2355/2355.hg) by dfdeshom created at 2008-03-14 13:20:11
+Attachment [2355.hg](tarball://root/attachments/some-uuid/ticket2355/2355.hg) by @dfdeshom created at 2008-03-14 13:20:11
 
 
 
@@ -555,7 +555,7 @@ archive/issue_comments_015851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15851",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_015852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15852",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -654,7 +654,7 @@ archive/issue_comments_015854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15854",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -675,7 +675,7 @@ archive/issue_comments_015855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15855",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -693,7 +693,7 @@ archive/issue_comments_015856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15856",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -734,16 +734,16 @@ Michael
 archive/issue_comments_015858.json:
 ```json
 {
-    "body": "Attachment [2355.patch](tarball://root/attachments/some-uuid/ticket2355/2355.patch) by dfdeshom created at 2008-03-22 01:21:30\n\nReplying to [comment:24 mabshoff]:\n> Hi, \n> \n> while the patch passes doctests for me with 2.10.4 [modulo some known problems] I am still reluctant to apply this until the performance concern that was raised has been addressed.\n> \n> Cheers,\n> \n> Michael\n\nI've lost some speed while working on this. I've optimized the code a bit. Overall, my version is still slower because I'm doing more type-checking and handling more functionality (I think that's the reason):\n\n\n```\n# M is the same as above\n\n# element-by-element: slower by about 0.1 micro-seconds ~ 1.2x slower\n\n#2355\nsage: %timeit M[2,3]\n1000000 loops, best of 3: 395 ns per loop\n\n#main\nsage: %timeit M[2,3]\n1000000 loops, best of 3: 304 ns per loop\n\n# single slices: slower by < 1 micro-seconds ~ 1.01x slower\n\n#2355\nsage: %timeit M[:4]\n10000 loops, best of 3: 48 \u00c2\u00b5s per loop\n\n#main\nsage: %timeit M[:4]\n10000 loops, best of 3: 48.5 \u00c2\u00b5s per loop\n\n# Getting a whole row: faster by < 1 micro-seconds \n#2355 \nsage: %timeit M[3]\n10000 loops, best of 3: 72.2 \u00b5s per loop\n\n#main\nsage: %timeit M[3]\n10000 loops, best of 3: 72.9 \u00b5s per loop\n```\n \n\nI'm not posting speed comparisons using the other cases (ie, `M[:3,2:]`) since sage doesn't handle them right now.\n\nIf people think this speed loss is unacceptable, I could try to fold the extra functionality into the `submatrix` method instead which would leave `__getitem__` idem. \n\n\n2355.patch is updated. Warning: I've added a new file: `ext/python_slice.pxi` to have fast access to slice objects so the patch is a bit heavy and rebuilds everything ( nearly everything depends on python.pxi). Passes all tests in `matrix/`.",
+    "body": "Attachment [2355.patch](tarball://root/attachments/some-uuid/ticket2355/2355.patch) by @dfdeshom created at 2008-03-22 01:21:30\n\nReplying to [comment:24 mabshoff]:\n> Hi, \n> \n> while the patch passes doctests for me with 2.10.4 [modulo some known problems] I am still reluctant to apply this until the performance concern that was raised has been addressed.\n> \n> Cheers,\n> \n> Michael\n\nI've lost some speed while working on this. I've optimized the code a bit. Overall, my version is still slower because I'm doing more type-checking and handling more functionality (I think that's the reason):\n\n\n```\n# M is the same as above\n\n# element-by-element: slower by about 0.1 micro-seconds ~ 1.2x slower\n\n#2355\nsage: %timeit M[2,3]\n1000000 loops, best of 3: 395 ns per loop\n\n#main\nsage: %timeit M[2,3]\n1000000 loops, best of 3: 304 ns per loop\n\n# single slices: slower by < 1 micro-seconds ~ 1.01x slower\n\n#2355\nsage: %timeit M[:4]\n10000 loops, best of 3: 48 \u00c2\u00b5s per loop\n\n#main\nsage: %timeit M[:4]\n10000 loops, best of 3: 48.5 \u00c2\u00b5s per loop\n\n# Getting a whole row: faster by < 1 micro-seconds \n#2355 \nsage: %timeit M[3]\n10000 loops, best of 3: 72.2 \u00b5s per loop\n\n#main\nsage: %timeit M[3]\n10000 loops, best of 3: 72.9 \u00b5s per loop\n```\n \n\nI'm not posting speed comparisons using the other cases (ie, `M[:3,2:]`) since sage doesn't handle them right now.\n\nIf people think this speed loss is unacceptable, I could try to fold the extra functionality into the `submatrix` method instead which would leave `__getitem__` idem. \n\n\n2355.patch is updated. Warning: I've added a new file: `ext/python_slice.pxi` to have fast access to slice objects so the patch is a bit heavy and rebuilds everything ( nearly everything depends on python.pxi). Passes all tests in `matrix/`.",
     "created_at": "2008-03-22T01:21:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15858",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2355.patch](tarball://root/attachments/some-uuid/ticket2355/2355.patch) by dfdeshom created at 2008-03-22 01:21:30
+Attachment [2355.patch](tarball://root/attachments/some-uuid/ticket2355/2355.patch) by @dfdeshom created at 2008-03-22 01:21:30
 
 Replying to [comment:24 mabshoff]:
 > Hi, 
@@ -810,7 +810,7 @@ archive/issue_comments_015859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15859",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -857,16 +857,16 @@ I note these were the best times.  In my tests for (1) the new source averaged f
 archive/issue_comments_015860.json:
 ```json
 {
-    "body": "Attachment [trac_2355_fast.patch](tarball://root/attachments/some-uuid/ticket2355/trac_2355_fast.patch) by gfurnish created at 2008-03-25 23:35:13\n\nApply on top of 2355.patch",
+    "body": "Attachment [trac_2355_fast.patch](tarball://root/attachments/some-uuid/ticket2355/trac_2355_fast.patch) by @garyfurnish created at 2008-03-25 23:35:13\n\nApply on top of 2355.patch",
     "created_at": "2008-03-25T23:35:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15860",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_2355_fast.patch](tarball://root/attachments/some-uuid/ticket2355/trac_2355_fast.patch) by gfurnish created at 2008-03-25 23:35:13
+Attachment [trac_2355_fast.patch](tarball://root/attachments/some-uuid/ticket2355/trac_2355_fast.patch) by @garyfurnish created at 2008-03-25 23:35:13
 
 Apply on top of 2355.patch
 
@@ -882,7 +882,7 @@ archive/issue_comments_015861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2355#issuecomment-15861",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

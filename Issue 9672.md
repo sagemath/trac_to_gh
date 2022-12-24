@@ -3,7 +3,7 @@
 archive/issues_009672.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  rlm\n\nTwo easy improvements can be made to `Graph.genus`:\n\n* When computing local orbit structure of face map, don't compute the entire orbits.\n* Compute blocks and cut vertices, embed the individual blocks, and reconstruct them if the user wants the embedding.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9672\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill\n\nTwo easy improvements can be made to `Graph.genus`:\n\n* When computing local orbit structure of face map, don't compute the entire orbits.\n* Compute blocks and cut vertices, embed the individual blocks, and reconstruct them if the user wants the embedding.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9672\n\n",
     "created_at": "2010-08-03T01:30:08Z",
     "labels": [
         "graph theory",
@@ -19,7 +19,7 @@ archive/issues_009672.json:
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  rlm
+CC:  @rlmill
 
 Two easy improvements can be made to `Graph.genus`:
 
@@ -78,7 +78,7 @@ archive/issue_comments_093987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9672#issuecomment-93987",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_093989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9672#issuecomment-93989",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_093990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9672#issuecomment-93990",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_093991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9672#issuecomment-93991",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_093992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9672#issuecomment-93992",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_093993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9672#issuecomment-93993",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_093994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9672",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9672#issuecomment-93994",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

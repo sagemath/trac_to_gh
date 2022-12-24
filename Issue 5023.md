@@ -14,7 +14,7 @@ archive/issues_005023.json:
     "title": "typo in calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5023",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tba
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5023
 archive/issue_comments_038255.json:
 ```json
 {
-    "body": "Attachment [trac-5023.patch](tarball://root/attachments/some-uuid/ticket5023/trac-5023.patch) by zimmerma created at 2009-01-19 20:54:19",
+    "body": "Attachment [trac-5023.patch](tarball://root/attachments/some-uuid/ticket5023/trac-5023.patch) by @zimmermann6 created at 2009-01-19 20:54:19",
     "created_at": "2009-01-19T20:54:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5023#issuecomment-38255",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac-5023.patch](tarball://root/attachments/some-uuid/ticket5023/trac-5023.patch) by zimmerma created at 2009-01-19 20:54:19
+Attachment [trac-5023.patch](tarball://root/attachments/some-uuid/ticket5023/trac-5023.patch) by @zimmermann6 created at 2009-01-19 20:54:19
 
 
 
@@ -56,7 +56,7 @@ archive/issue_comments_038256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5023#issuecomment-38256",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_038257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5023#issuecomment-38257",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

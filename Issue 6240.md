@@ -3,7 +3,7 @@
 archive/issues_006240.json:
 ```json
 {
-    "body": "Assignee: was\n\nI see the following test failure every time on *iras* (SUSE Itanium on skynet).  I do not see it Redhat Itanium.\n\n```\n\nwstein@iras:~/build/iras/sage-4.0.1> ./sage -t  \"devel/sage/doc/en/constructions/polynomials.rst\"\nsage -t  \"devel/sage/doc/en/constructions/polynomials.rst\"  \n**********************************************************************\nFile \"/home/wstein/build/iras/sage-4.0.1/devel/sage/doc/en/constructions/polynomials.rst\", line 322:\n    sage: print \"ignore this\";  J.minimal_associated_primes ()     # slightly random output\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/build/iras/sage-4.0.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/build/iras/sage-4.0.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/build/iras/sage-4.0.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_14[7]>\", line 1, in <module>\n        print \"ignore this\";  J.minimal_associated_primes ()     # slightly random output###line 322:\n    sage: print \"ignore this\";  J.minimal_associated_primes ()     # slightly random output\n      File \"/home/wstein/build/iras/sage-4.0.1/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 365, in wrapper\n        return func(*args, **kwds)\n      File \"/home/wstein/build/iras/sage-4.0.1/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 341, in __exit__\n        self.singular.option(\"set\",self.o)\n      File \"/home/wstein/build/iras/sage-4.0.1/local/lib/python2.5/site-packages/sage/interfaces/singular.py\", line 1074, in option\n        self.eval(\"option(set,%s)\"%val.name())\n      File \"/home/wstein/build/iras/sage-4.0.1/local/lib/python2.5/site-packages/sage/interfaces/singular.py\", line 543, in eval\n        raise RuntimeError, 'Singular error:\\n%s'%s\n    RuntimeError: Singular error:\n       ? unknown option `set`\n       ? unknown option `sage44`\n       ? error occurred in STDIN line 3: `option(set,sage44);`\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_14\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/build/iras/sage-4.0.1/tmp/.doctest_polynomials.py\n         [5.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/doc/en/constructions/polynomials.rst\"\nTotal time for all tests: 5.3 seconds\nwstein@iras:~/build/iras/sage-4.0.1> cat /etc/issue\n\nWelcome to SUSE Linux Enterprise Server 10 SP1 (ia64) - Kernel \\r (\\l).\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6240\n\n",
+    "body": "Assignee: @williamstein\n\nI see the following test failure every time on *iras* (SUSE Itanium on skynet).  I do not see it Redhat Itanium.\n\n```\n\nwstein@iras:~/build/iras/sage-4.0.1> ./sage -t  \"devel/sage/doc/en/constructions/polynomials.rst\"\nsage -t  \"devel/sage/doc/en/constructions/polynomials.rst\"  \n**********************************************************************\nFile \"/home/wstein/build/iras/sage-4.0.1/devel/sage/doc/en/constructions/polynomials.rst\", line 322:\n    sage: print \"ignore this\";  J.minimal_associated_primes ()     # slightly random output\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/build/iras/sage-4.0.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/build/iras/sage-4.0.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/build/iras/sage-4.0.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_14[7]>\", line 1, in <module>\n        print \"ignore this\";  J.minimal_associated_primes ()     # slightly random output###line 322:\n    sage: print \"ignore this\";  J.minimal_associated_primes ()     # slightly random output\n      File \"/home/wstein/build/iras/sage-4.0.1/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 365, in wrapper\n        return func(*args, **kwds)\n      File \"/home/wstein/build/iras/sage-4.0.1/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 341, in __exit__\n        self.singular.option(\"set\",self.o)\n      File \"/home/wstein/build/iras/sage-4.0.1/local/lib/python2.5/site-packages/sage/interfaces/singular.py\", line 1074, in option\n        self.eval(\"option(set,%s)\"%val.name())\n      File \"/home/wstein/build/iras/sage-4.0.1/local/lib/python2.5/site-packages/sage/interfaces/singular.py\", line 543, in eval\n        raise RuntimeError, 'Singular error:\\n%s'%s\n    RuntimeError: Singular error:\n       ? unknown option `set`\n       ? unknown option `sage44`\n       ? error occurred in STDIN line 3: `option(set,sage44);`\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_14\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/build/iras/sage-4.0.1/tmp/.doctest_polynomials.py\n         [5.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/doc/en/constructions/polynomials.rst\"\nTotal time for all tests: 5.3 seconds\nwstein@iras:~/build/iras/sage-4.0.1> cat /etc/issue\n\nWelcome to SUSE Linux Enterprise Server 10 SP1 (ia64) - Kernel \\r (\\l).\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6240\n\n",
     "created_at": "2009-06-07T13:32:18Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_006240.json:
     "title": "singular interface failure on itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6240",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I see the following test failure every time on *iras* (SUSE Itanium on skynet).  I do not see it Redhat Itanium.
 
@@ -88,7 +88,7 @@ archive/issue_comments_049839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6240#issuecomment-49839",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_049840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6240#issuecomment-49840",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_049841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6240#issuecomment-49841",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_049842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6240#issuecomment-49842",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_049843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6240#issuecomment-49843",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_049844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6240#issuecomment-49844",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_049845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6240#issuecomment-49845",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

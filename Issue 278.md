@@ -3,7 +3,7 @@
 archive/issues_000278.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: clone\n\nI often say sage -clone sage-main sage-ncalexan instead of sage -b main ; sage -clone ncalexan.  It would be nice if this was parsed automagically, and if I was alerted that sage-blah is almost certainly not correct.\n\nIssue created by migration from https://trac.sagemath.org/ticket/278\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: clone\n\nI often say sage -clone sage-main sage-ncalexan instead of sage -b main ; sage -clone ncalexan.  It would be nice if this was parsed automagically, and if I was alerted that sage-blah is almost certainly not correct.\n\nIssue created by migration from https://trac.sagemath.org/ticket/278\n\n",
     "created_at": "2007-02-22T23:55:05Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000278.json:
     "title": "Make sage -clone more like hg clone",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/278",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: clone
 
@@ -39,7 +39,7 @@ archive/issue_comments_001326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/278#issuecomment-1326",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_001327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/278",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/278#issuecomment-1327",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

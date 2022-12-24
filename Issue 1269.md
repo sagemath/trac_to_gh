@@ -3,7 +3,7 @@
 archive/issues_001269.json:
 ```json
 {
-    "body": "Assignee: was\n\nAfter this patch, sage -t --omega should work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1269\n\n",
+    "body": "Assignee: @williamstein\n\nAfter this patch, sage -t --omega should work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1269\n\n",
     "created_at": "2007-11-25T15:44:13Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_001269.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 After this patch, sage -t --omega should work.
 

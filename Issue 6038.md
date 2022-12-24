@@ -14,7 +14,7 @@ archive/issues_006038.json:
     "title": "add implicit_plot3d to the reference manual (and maybe an example in the tutorial)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6038",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -61,7 +61,7 @@ archive/issue_comments_048084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6038#issuecomment-48084",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_048085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6038#issuecomment-48085",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

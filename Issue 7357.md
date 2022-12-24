@@ -3,7 +3,7 @@
 archive/issues_007357.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  myurko benjaminfjones\n\nAdd the logarithmic integral, Li, with integration starting at 0 rather than 2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7357\n\n",
+    "body": "Assignee: @burcin\n\nCC:  myurko @benjaminfjones\n\nAdd the logarithmic integral, Li, with integration starting at 0 rather than 2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7357\n\n",
     "created_at": "2009-10-30T16:49:49Z",
     "labels": [
         "calculus",
@@ -17,9 +17,9 @@ archive/issues_007357.json:
     "user": "myurko"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  myurko benjaminfjones
+CC:  myurko @benjaminfjones
 
 Add the logarithmic integral, Li, with integration starting at 0 rather than 2.
 
@@ -75,7 +75,7 @@ archive/issue_comments_061650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61650",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_061651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61651",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -106,16 +106,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_061652.json:
 ```json
 {
-    "body": "Attachment [non-offset-log-int.patch](tarball://root/attachments/some-uuid/ticket7357/non-offset-log-int.patch) by kcrisman created at 2010-01-18 17:11:39\n\nThis patch adds these tests.  It still depends on the (newest) patch at #3401, and in fact gets rid of one final thing which was only needed by the previous implementation of Li.",
+    "body": "Attachment [non-offset-log-int.patch](tarball://root/attachments/some-uuid/ticket7357/non-offset-log-int.patch) by @kcrisman created at 2010-01-18 17:11:39\n\nThis patch adds these tests.  It still depends on the (newest) patch at #3401, and in fact gets rid of one final thing which was only needed by the previous implementation of Li.",
     "created_at": "2010-01-18T17:11:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61652",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [non-offset-log-int.patch](tarball://root/attachments/some-uuid/ticket7357/non-offset-log-int.patch) by kcrisman created at 2010-01-18 17:11:39
+Attachment [non-offset-log-int.patch](tarball://root/attachments/some-uuid/ticket7357/non-offset-log-int.patch) by @kcrisman created at 2010-01-18 17:11:39
 
 This patch adds these tests.  It still depends on the (newest) patch at #3401, and in fact gets rid of one final thing which was only needed by the previous implementation of Li.
 
@@ -131,7 +131,7 @@ archive/issue_comments_061653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61653",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_061654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61654",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_061655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61655",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_061656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61656",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_061657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61657",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_061658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61658",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_061659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61659",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_061660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61660",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_061661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61661",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_061662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61662",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_061663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7357#issuecomment-61663",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

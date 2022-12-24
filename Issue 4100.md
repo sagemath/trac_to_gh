@@ -14,7 +14,7 @@ archive/issues_004100.json:
     "title": "comparison with None extraordinarily slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4100",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_029582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4100#issuecomment-29582",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -77,16 +77,16 @@ but people who don't know about the `is` operator shouldn't be hit that bad...
 archive/issue_comments_029583.json:
 ```json
 {
-    "body": "Attachment [4100-eq-None.patch](tarball://root/attachments/some-uuid/ticket4100/4100-eq-None.patch) by robertwb created at 2008-09-11 06:08:54",
+    "body": "Attachment [4100-eq-None.patch](tarball://root/attachments/some-uuid/ticket4100/4100-eq-None.patch) by @robertwb created at 2008-09-11 06:08:54",
     "created_at": "2008-09-11T06:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4100#issuecomment-29583",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4100-eq-None.patch](tarball://root/attachments/some-uuid/ticket4100/4100-eq-None.patch) by robertwb created at 2008-09-11 06:08:54
+Attachment [4100-eq-None.patch](tarball://root/attachments/some-uuid/ticket4100/4100-eq-None.patch) by @robertwb created at 2008-09-11 06:08:54
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_029584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4100#issuecomment-29584",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_029586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4100#issuecomment-29586",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_029587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4100#issuecomment-29587",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

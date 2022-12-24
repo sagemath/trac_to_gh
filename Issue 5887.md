@@ -3,7 +3,7 @@
 archive/issues_005887.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe image method on homomorphisms of R-modules is completely wrong.  Here is a simple example that illustrates this serious bug.  I start with V, which is a submodule of index 2 in `ZZ^2`, and define the identity map from V to V.  The image is `ZZ^2`, which is totally wrong.  I think the problem is that the image is being computed over the fraction field. \n\n```\nsage: V = (ZZ^2).span([[1,2],[3,4]])\nsage: phi = V.Hom(V)(identity_matrix(ZZ,2))\nsage: phi(V.0) == V.0\nTrue\nsage: phi(V.1) == V.1\nTrue\nsage: phi.image()\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 0]\n[0 1]\nsage: phi.image() == V\nFalse\n```\n\n\nIn fact, the image isn't even contained in the codomain!\n\n```\nsage: phi.image() == phi.codomain()\nFalse\nsage: phi.image().is_submodule( phi.codomain() )\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5887\n\n",
+    "body": "Assignee: @williamstein\n\nThe image method on homomorphisms of R-modules is completely wrong.  Here is a simple example that illustrates this serious bug.  I start with V, which is a submodule of index 2 in `ZZ^2`, and define the identity map from V to V.  The image is `ZZ^2`, which is totally wrong.  I think the problem is that the image is being computed over the fraction field. \n\n```\nsage: V = (ZZ^2).span([[1,2],[3,4]])\nsage: phi = V.Hom(V)(identity_matrix(ZZ,2))\nsage: phi(V.0) == V.0\nTrue\nsage: phi(V.1) == V.1\nTrue\nsage: phi.image()\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 0]\n[0 1]\nsage: phi.image() == V\nFalse\n```\n\n\nIn fact, the image isn't even contained in the codomain!\n\n```\nsage: phi.image() == phi.codomain()\nFalse\nsage: phi.image().is_submodule( phi.codomain() )\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5887\n\n",
     "created_at": "2009-04-24T05:01:35Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005887.json:
     "title": "major bug in images of homorphisms of R-modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5887",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The image method on homomorphisms of R-modules is completely wrong.  Here is a simple example that illustrates this serious bug.  I start with V, which is a submodule of index 2 in `ZZ^2`, and define the identity map from V to V.  The image is `ZZ^2`, which is totally wrong.  I think the problem is that the image is being computed over the fraction field. 
 
@@ -64,7 +64,7 @@ archive/issue_comments_046545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5887#issuecomment-46545",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,16 +132,16 @@ Total time for all tests: 3.4 seconds
 archive/issue_comments_046546.json:
 ```json
 {
-    "body": "Attachment [trac_5887.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887.patch) by was created at 2009-04-24 07:03:49\n\nOK, I fixed the patch.",
+    "body": "Attachment [trac_5887.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887.patch) by @williamstein created at 2009-04-24 07:03:49\n\nOK, I fixed the patch.",
     "created_at": "2009-04-24T07:03:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5887#issuecomment-46546",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5887.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887.patch) by was created at 2009-04-24 07:03:49
+Attachment [trac_5887.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887.patch) by @williamstein created at 2009-04-24 07:03:49
 
 OK, I fixed the patch.
 
@@ -157,7 +157,7 @@ archive/issue_comments_046547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5887#issuecomment-46547",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_046549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5887#issuecomment-46549",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -227,16 +227,16 @@ this is rebased against 3.4.2.rc0
 archive/issue_comments_046550.json:
 ```json
 {
-    "body": "Attachment [trac_5887-rebased_3.4.2.rc0.2.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887-rebased_3.4.2.rc0.2.patch) by was created at 2009-05-02 08:43:57\n\nThis isn't being folded into #5882, and I do not view the \"current situation\" as at all messed up. There are three tickets: \n    #5886, #5887, and #5882.  \n\n#5886 is first, then #5887, then finally #5882.   \n\nI just applied #5886 and this rebased #5887 to my 3.4.2.rc0 tree on sage.math, and \"sage -t devel/sage/sage\" passes all tests.",
+    "body": "Attachment [trac_5887-rebased_3.4.2.rc0.2.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887-rebased_3.4.2.rc0.2.patch) by @williamstein created at 2009-05-02 08:43:57\n\nThis isn't being folded into #5882, and I do not view the \"current situation\" as at all messed up. There are three tickets: \n    #5886, #5887, and #5882.  \n\n#5886 is first, then #5887, then finally #5882.   \n\nI just applied #5886 and this rebased #5887 to my 3.4.2.rc0 tree on sage.math, and \"sage -t devel/sage/sage\" passes all tests.",
     "created_at": "2009-05-02T08:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5887#issuecomment-46550",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5887-rebased_3.4.2.rc0.2.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887-rebased_3.4.2.rc0.2.patch) by was created at 2009-05-02 08:43:57
+Attachment [trac_5887-rebased_3.4.2.rc0.2.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887-rebased_3.4.2.rc0.2.patch) by @williamstein created at 2009-05-02 08:43:57
 
 This isn't being folded into #5882, and I do not view the "current situation" as at all messed up. There are three tickets: 
     #5886, #5887, and #5882.  
@@ -257,7 +257,7 @@ archive/issue_comments_046551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5887#issuecomment-46551",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -276,16 +276,16 @@ Looks good!  I have only a few minor issues, in `matrix_morphism.py`:
 archive/issue_comments_046552.json:
 ```json
 {
-    "body": "Attachment [trac_5887-part2-referee_comments.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887-part2-referee_comments.patch) by was created at 2009-05-02 22:56:20",
+    "body": "Attachment [trac_5887-part2-referee_comments.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887-part2-referee_comments.patch) by @williamstein created at 2009-05-02 22:56:20",
     "created_at": "2009-05-02T22:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5887#issuecomment-46552",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5887-part2-referee_comments.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887-part2-referee_comments.patch) by was created at 2009-05-02 22:56:20
+Attachment [trac_5887-part2-referee_comments.patch](tarball://root/attachments/some-uuid/ticket5887/trac_5887-part2-referee_comments.patch) by @williamstein created at 2009-05-02 22:56:20
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008316.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  alexghitza cwitty mhansen robertwb timdumol\n\nWith #7249 merged, it now seems that no Sage component depends on the \"slightly outdated version\" of [Jinja](http://jinja.pocoo.org/).  If this is indeed true, we can remove `jinja-*.spkg` from the Sage distribution.\n\nOf course, we'll keep the \"awesome version\", `jinja2-*.spkg`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8316\n\n",
+    "body": "Assignee: tbd\n\nCC:  alexghitza cwitty @mwhansen @robertwb @TimDumol\n\nWith #7249 merged, it now seems that no Sage component depends on the \"slightly outdated version\" of [Jinja](http://jinja.pocoo.org/).  If this is indeed true, we can remove `jinja-*.spkg` from the Sage distribution.\n\nOf course, we'll keep the \"awesome version\", `jinja2-*.spkg`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8316\n\n",
     "created_at": "2010-02-20T21:25:03Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_008316.json:
     "title": "Remove the Jinja (not Jinja2) package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8316",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
 
-CC:  alexghitza cwitty mhansen robertwb timdumol
+CC:  alexghitza cwitty @mwhansen @robertwb @TimDumol
 
 With #7249 merged, it now seems that no Sage component depends on the "slightly outdated version" of [Jinja](http://jinja.pocoo.org/).  If this is indeed true, we can remove `jinja-*.spkg` from the Sage distribution.
 
@@ -41,7 +41,7 @@ archive/issue_comments_073756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73756",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_073757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73757",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -81,16 +81,16 @@ Use Jinja2 instead of Jinja.  sage repo.
 archive/issue_comments_073758.json:
 ```json
 {
-    "body": "Attachment [trac_8316-remove_jinja.2.patch](tarball://root/attachments/some-uuid/ticket8316/trac_8316-remove_jinja.2.patch) by mpatel created at 2010-03-05 02:33:06\n\nUse `myself` instead of `self`.  Replaces previous.",
+    "body": "Attachment [trac_8316-remove_jinja.2.patch](tarball://root/attachments/some-uuid/ticket8316/trac_8316-remove_jinja.2.patch) by @qed777 created at 2010-03-05 02:33:06\n\nUse `myself` instead of `self`.  Replaces previous.",
     "created_at": "2010-03-05T02:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73758",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8316-remove_jinja.2.patch](tarball://root/attachments/some-uuid/ticket8316/trac_8316-remove_jinja.2.patch) by mpatel created at 2010-03-05 02:33:06
+Attachment [trac_8316-remove_jinja.2.patch](tarball://root/attachments/some-uuid/ticket8316/trac_8316-remove_jinja.2.patch) by @qed777 created at 2010-03-05 02:33:06
 
 Use `myself` instead of `self`.  Replaces previous.
 
@@ -106,7 +106,7 @@ archive/issue_comments_073759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73759",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -119,16 +119,16 @@ To do: Update `spkg/install` and `spkg/standard/deps`.  I'll wait for #8306.
 archive/issue_comments_073760.json:
 ```json
 {
-    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket8316/deps) by mpatel created at 2010-06-14 06:48:28\n\nUpdated `spkg/standard/deps`.  Based on #8306.",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket8316/deps) by @qed777 created at 2010-06-14 06:48:28\n\nUpdated `spkg/standard/deps`.  Based on #8306.",
     "created_at": "2010-06-14T06:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73760",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [deps](tarball://root/attachments/some-uuid/ticket8316/deps) by mpatel created at 2010-06-14 06:48:28
+Attachment [deps](tarball://root/attachments/some-uuid/ticket8316/deps) by @qed777 created at 2010-06-14 06:48:28
 
 Updated `spkg/standard/deps`.  Based on #8306.
 
@@ -139,16 +139,16 @@ Updated `spkg/standard/deps`.  Based on #8306.
 archive/issue_comments_073761.json:
 ```json
 {
-    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8316/deps.diff) by mpatel created at 2010-06-14 06:48:58\n\nDiff of `spkg/standard/deps` vs. #8306.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8316/deps.diff) by @qed777 created at 2010-06-14 06:48:58\n\nDiff of `spkg/standard/deps` vs. #8306.",
     "created_at": "2010-06-14T06:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73761",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8316/deps.diff) by mpatel created at 2010-06-14 06:48:58
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8316/deps.diff) by @qed777 created at 2010-06-14 06:48:58
 
 Diff of `spkg/standard/deps` vs. #8306.
 
@@ -159,16 +159,16 @@ Diff of `spkg/standard/deps` vs. #8306.
 archive/issue_comments_073762.json:
 ```json
 {
-    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket8316/install) by mpatel created at 2010-06-14 06:49:38\n\nUpdated `spkg/install`.  Based on #8306.",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket8316/install) by @qed777 created at 2010-06-14 06:49:38\n\nUpdated `spkg/install`.  Based on #8306.",
     "created_at": "2010-06-14T06:49:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73762",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [install](tarball://root/attachments/some-uuid/ticket8316/install) by mpatel created at 2010-06-14 06:49:38
+Attachment [install](tarball://root/attachments/some-uuid/ticket8316/install) by @qed777 created at 2010-06-14 06:49:38
 
 Updated `spkg/install`.  Based on #8306.
 
@@ -184,7 +184,7 @@ archive/issue_comments_073763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73763",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -197,16 +197,16 @@ Diff of `spkg/install` vs. #8306.
 archive/issue_comments_073764.json:
 ```json
 {
-    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8316/install.diff) by mpatel created at 2010-06-14 08:58:58\n\nWith V1 of the patch, `sage -b` gives\n\n\n```python\n[...]\nBuilding interpreters for fast_callable\nTraceback (most recent call last):\n  File \"setup.py\", line 109, in <module>\n    sage.ext.gen_interpreters.rebuild(SAGE_DEVEL + 'sage/sage/ext/interpreters')\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3823, in rebuild\n    build_interp(interp, dir)\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3788, in build_interp\n    interp = ig.get_interpreter()\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3318, in get_interpreter\n    self.write_interpreter(buff.write)\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 2974, in write_interpreter\n    \"\"\", s=s, self=self, i=indent_lines))\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 177, in je\n    return tmpl.render(kwargs)\n  File \"<template>\", line 4, in top-level template code\n  File \"/home/mpatel/apps/sage/local/lib/python2.6/site-packages/Jinja2-2.1.1-py2.6-linux-x86_64.egg/jinja2/runtime.py\", line 132, in call\n    return __obj(*args, **kwargs)\n  File \"/home/mpatel/apps/sage/local/lib/python2.6/site-packages/Jinja2-2.1.1-py2.6-linux-x86_64.egg/jinja2/runtime.py\", line 403, in _fail_with_undefined_error\n    raise self._undefined_exception(hint)\njinja2.exceptions.UndefinedError: 'TemplateReference' object has no attribute 'func_header'\nsage: There was an error installing modified sage library code.\n```\n\nThe docstring for `jinja2.runtime.TemplateReference` is \"The `self` in templates.\"  But I'm not sure why this happens.  Does Jinja2 not allow `self=self`?\n\nV2 of the patch appears to be OK: `sage -b` works, Sage builds from scratch with `SAGE_CHECK`, the long tests pass.  Did I miss any `self` --> `myself` conversions?  Should I run some other tests?\n\nI'm not familiar with `ext/`, so I've included some names from `hg log gen_interpreters.py` in the Cc: list.",
+    "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8316/install.diff) by @qed777 created at 2010-06-14 08:58:58\n\nWith V1 of the patch, `sage -b` gives\n\n\n```python\n[...]\nBuilding interpreters for fast_callable\nTraceback (most recent call last):\n  File \"setup.py\", line 109, in <module>\n    sage.ext.gen_interpreters.rebuild(SAGE_DEVEL + 'sage/sage/ext/interpreters')\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3823, in rebuild\n    build_interp(interp, dir)\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3788, in build_interp\n    interp = ig.get_interpreter()\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3318, in get_interpreter\n    self.write_interpreter(buff.write)\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 2974, in write_interpreter\n    \"\"\", s=s, self=self, i=indent_lines))\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 177, in je\n    return tmpl.render(kwargs)\n  File \"<template>\", line 4, in top-level template code\n  File \"/home/mpatel/apps/sage/local/lib/python2.6/site-packages/Jinja2-2.1.1-py2.6-linux-x86_64.egg/jinja2/runtime.py\", line 132, in call\n    return __obj(*args, **kwargs)\n  File \"/home/mpatel/apps/sage/local/lib/python2.6/site-packages/Jinja2-2.1.1-py2.6-linux-x86_64.egg/jinja2/runtime.py\", line 403, in _fail_with_undefined_error\n    raise self._undefined_exception(hint)\njinja2.exceptions.UndefinedError: 'TemplateReference' object has no attribute 'func_header'\nsage: There was an error installing modified sage library code.\n```\n\nThe docstring for `jinja2.runtime.TemplateReference` is \"The `self` in templates.\"  But I'm not sure why this happens.  Does Jinja2 not allow `self=self`?\n\nV2 of the patch appears to be OK: `sage -b` works, Sage builds from scratch with `SAGE_CHECK`, the long tests pass.  Did I miss any `self` --> `myself` conversions?  Should I run some other tests?\n\nI'm not familiar with `ext/`, so I've included some names from `hg log gen_interpreters.py` in the Cc: list.",
     "created_at": "2010-06-14T08:58:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73764",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8316/install.diff) by mpatel created at 2010-06-14 08:58:58
+Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8316/install.diff) by @qed777 created at 2010-06-14 08:58:58
 
 With V1 of the patch, `sage -b` gives
 
@@ -254,7 +254,7 @@ archive/issue_comments_073765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73765",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_073766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73766",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_073767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73767",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_073771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73771",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_073772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73772",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

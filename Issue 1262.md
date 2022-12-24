@@ -3,7 +3,7 @@
 archive/issues_001262.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf you run \"make check\" on a sage installation that hasn't been compiled all the doctests fail one by one. Make check depend on all to fix this.\n\nCheers,\n\nMichaek\n\nIssue created by migration from https://trac.sagemath.org/ticket/1262\n\n",
+    "body": "Assignee: @williamstein\n\nIf you run \"make check\" on a sage installation that hasn't been compiled all the doctests fail one by one. Make check depend on all to fix this.\n\nCheers,\n\nMichaek\n\nIssue created by migration from https://trac.sagemath.org/ticket/1262\n\n",
     "created_at": "2007-11-25T05:44:16Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001262.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If you run "make check" on a sage installation that hasn't been compiled all the doctests fail one by one. Make check depend on all to fix this.
 
@@ -41,7 +41,7 @@ archive/issue_comments_007920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1262#issuecomment-7920",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_007921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1262#issuecomment-7921",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

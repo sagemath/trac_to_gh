@@ -3,7 +3,7 @@
 archive/issues_004526.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  jbandlow sage-combinat\n\nKeywords: symmetric functions\n\nThe following, which should just return 0 in SFASchur(QQ), is really nasty:\n\nsage: s = SFASchur(QQ)\nsage: 0 * s([1])\nsage.bin: : Unknown error 155689240\n\nand sage quits.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4526\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @jbandlow sage-combinat\n\nKeywords: symmetric functions\n\nThe following, which should just return 0 in SFASchur(QQ), is really nasty:\n\nsage: s = SFASchur(QQ)\nsage: 0 * s([1])\nsage.bin: : Unknown error 155689240\n\nand sage quits.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4526\n\n",
     "created_at": "2008-11-14T20:00:43Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_004526.json:
     "title": "Can't multiply symmetric functions by 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4526",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  jbandlow sage-combinat
+CC:  @jbandlow sage-combinat
 
 Keywords: symmetric functions
 
@@ -47,7 +47,7 @@ archive/issue_comments_033606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4526#issuecomment-33606",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_033608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4526#issuecomment-33608",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -135,16 +135,16 @@ Changing status from new to assigned.
 archive/issue_comments_033609.json:
 ```json
 {
-    "body": "Attachment [trac_4526.patch](tarball://root/attachments/some-uuid/ticket4526/trac_4526.patch) by mhansen created at 2008-11-15 02:15:27",
+    "body": "Attachment [trac_4526.patch](tarball://root/attachments/some-uuid/ticket4526/trac_4526.patch) by @mwhansen created at 2008-11-15 02:15:27",
     "created_at": "2008-11-15T02:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4526#issuecomment-33609",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4526.patch](tarball://root/attachments/some-uuid/ticket4526/trac_4526.patch) by mhansen created at 2008-11-15 02:15:27
+Attachment [trac_4526.patch](tarball://root/attachments/some-uuid/ticket4526/trac_4526.patch) by @mwhansen created at 2008-11-15 02:15:27
 
 
 
@@ -158,7 +158,7 @@ archive/issue_comments_033610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4526#issuecomment-33610",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 

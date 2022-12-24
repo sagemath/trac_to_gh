@@ -3,7 +3,7 @@
 archive/issues_005534.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nI came across this function in Sage-Combinat,\n\nsage.combinat.subword.smallest_positions(word, subword, pos=0)\n\nRunning this function not only returns the positions in \"word\" where\n\"subword\" occurs, but it modifies \"subword\" to be this sequence of\npositions.  Is there a reason for this?  It seems to me that it should\nleave \"subword\" unchanged, but maybe I'm not thinking of something.\n\nsage: w = [\"a\", \"b\", \"c\", \"d\"]\nsage: ww = [\"b\", \"d\"]\nsage: sage.combinat.subword.smallest_positions?\nsage: sage.combinat.subword.smallest_positions(w, ww)\n[1, 3]\nsage: w\n['a', 'b', 'c', 'd']\nsage: ww\n[1, 3]\n\nThanks,\nSteve\n\nIssue created by migration from https://trac.sagemath.org/ticket/5534\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nI came across this function in Sage-Combinat,\n\nsage.combinat.subword.smallest_positions(word, subword, pos=0)\n\nRunning this function not only returns the positions in \"word\" where\n\"subword\" occurs, but it modifies \"subword\" to be this sequence of\npositions.  Is there a reason for this?  It seems to me that it should\nleave \"subword\" unchanged, but maybe I'm not thinking of something.\n\nsage: w = [\"a\", \"b\", \"c\", \"d\"]\nsage: ww = [\"b\", \"d\"]\nsage: sage.combinat.subword.smallest_positions?\nsage: sage.combinat.subword.smallest_positions(w, ww)\n[1, 3]\nsage: w\n['a', 'b', 'c', 'd']\nsage: ww\n[1, 3]\n\nThanks,\nSteve\n\nIssue created by migration from https://trac.sagemath.org/ticket/5534\n\n",
     "created_at": "2009-03-16T20:46:13Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005534.json:
     "title": "sage.combinat.subword.smallest_positions modifying its input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5534",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -59,7 +59,7 @@ archive/issue_comments_043023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5534#issuecomment-43023",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -90,16 +90,16 @@ Author : Florent Hivert
 archive/issue_comments_043024.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to hivert.",
+    "body": "Changing assignee from @mwhansen to @hivert.",
     "created_at": "2009-03-17T09:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5534#issuecomment-43024",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from mhansen to hivert.
+Changing assignee from @mwhansen to @hivert.
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_043025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5534#issuecomment-43025",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -184,16 +184,16 @@ Michael
 archive/issue_comments_043027.json:
 ```json
 {
-    "body": "Attachment [subwords_fix-5534-submitted.patch](tarball://root/attachments/some-uuid/ticket5534/subwords_fix-5534-submitted.patch) by hivert created at 2009-03-28 18:42:54",
+    "body": "Attachment [subwords_fix-5534-submitted.patch](tarball://root/attachments/some-uuid/ticket5534/subwords_fix-5534-submitted.patch) by @hivert created at 2009-03-28 18:42:54",
     "created_at": "2009-03-28T18:42:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5534#issuecomment-43027",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [subwords_fix-5534-submitted.patch](tarball://root/attachments/some-uuid/ticket5534/subwords_fix-5534-submitted.patch) by hivert created at 2009-03-28 18:42:54
+Attachment [subwords_fix-5534-submitted.patch](tarball://root/attachments/some-uuid/ticket5534/subwords_fix-5534-submitted.patch) by @hivert created at 2009-03-28 18:42:54
 
 
 
@@ -207,7 +207,7 @@ archive/issue_comments_043028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5534",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5534#issuecomment-43028",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

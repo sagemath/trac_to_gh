@@ -3,7 +3,7 @@
 archive/issues_003149.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThe code in real_roots.pyx for handling polynomials with AA coefficients had an off-by-one error in the case of integral coefficients.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3149\n\n",
+    "body": "Assignee: @malb\n\nThe code in real_roots.pyx for handling polynomials with AA coefficients had an off-by-one error in the case of integral coefficients.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3149\n\n",
     "created_at": "2008-05-10T17:36:20Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_003149.json:
     "user": "cwitty"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 The code in real_roots.pyx for handling polynomials with AA coefficients had an off-by-one error in the case of integral coefficients.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3149
 archive/issue_comments_021842.json:
 ```json
 {
-    "body": "Attachment [real-roots-offbyone.patch](tarball://root/attachments/some-uuid/ticket3149/real-roots-offbyone.patch) by malb created at 2008-06-03 16:29:16",
+    "body": "Attachment [real-roots-offbyone.patch](tarball://root/attachments/some-uuid/ticket3149/real-roots-offbyone.patch) by @malb created at 2008-06-03 16:29:16",
     "created_at": "2008-06-03T16:29:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3149#issuecomment-21842",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [real-roots-offbyone.patch](tarball://root/attachments/some-uuid/ticket3149/real-roots-offbyone.patch) by malb created at 2008-06-03 16:29:16
+Attachment [real-roots-offbyone.patch](tarball://root/attachments/some-uuid/ticket3149/real-roots-offbyone.patch) by @malb created at 2008-06-03 16:29:16
 
 
 
@@ -50,16 +50,16 @@ Attachment [real-roots-offbyone.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_021843.json:
 ```json
 {
-    "body": "Remove assignee malb.",
+    "body": "Remove assignee @malb.",
     "created_at": "2008-06-03T16:29:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3149#issuecomment-21843",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Remove assignee malb.
+Remove assignee @malb.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_021844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3149#issuecomment-21844",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_021845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3149",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3149#issuecomment-21845",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009092.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  chapoton\n\nKeywords: editor\n\nWell, I'm surprised I couldn't find any ticket about this. Perhaps I just didn't search enough but I'd like to work on this. Sage would enormously benefit from something like this:\n\nhttp://www.math.union.edu/~dpvc/talks/2006-12-08.IMA/editor.html\n\nI think that editor is in javascript, which is probably the best for a web aplication like the one i've got in mind: Something to compete and surpass Mathematica's natural representation capabilities.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9092\n\n",
+    "body": "Assignee: olazo\n\nCC:  @fchapoton\n\nKeywords: editor\n\nWell, I'm surprised I couldn't find any ticket about this. Perhaps I just didn't search enough but I'd like to work on this. Sage would enormously benefit from something like this:\n\nhttp://www.math.union.edu/~dpvc/talks/2006-12-08.IMA/editor.html\n\nI think that editor is in javascript, which is probably the best for a web aplication like the one i've got in mind: Something to compete and surpass Mathematica's natural representation capabilities.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9092\n\n",
     "created_at": "2010-05-30T04:43:59Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_009092.json:
 ```
 Assignee: olazo
 
-CC:  chapoton
+CC:  @fchapoton
 
 Keywords: editor
 
@@ -45,7 +45,7 @@ archive/issue_comments_084449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9092#issuecomment-84449",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_084450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9092#issuecomment-84450",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_084451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9092#issuecomment-84451",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_084452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9092#issuecomment-84452",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_084453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9092#issuecomment-84453",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

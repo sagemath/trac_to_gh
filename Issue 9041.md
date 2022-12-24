@@ -3,7 +3,7 @@
 archive/issues_009041.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp robertwb\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## How the Sage build was attempted\n* 64-bit build. SAGE64 was set to \"yes\"\n* #9008 update zlib to latest upstream release to allow a 64-bit library to be built. \n* #9009 update mercurial spkg to build 64-bit.\n* #7982 update sage_fortran so it can build 64-bit binaries.\n* Run 'make -k' to skip over errors, to allow one to find the errors quickly. \n\n\n## The problem\nThis a problem with python rather than pygments and is **very** similar to #9022. Since python is not building _socket, so some other parts of Sage fail to build if they need _socket. \n\n\n```\nygments-0.11.1.p0/.hg/undo.branch\npygments-0.11.1.p0/.hg/00changelog.i\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC)\n****************************************************\nTraceback (most recent call last):\n  File \"setup.py\", line 4, in <module>\n    ez_setup.use_setuptools()\n  File \"/export/home/drkirkby/sage-4.4.2/spkg/build/pygments-0.11.1.p0/src/ez_setup.py\", line 78, in use_setuptools\n    egg = download_setuptools(version, download_base, to_dir, download_delay)\n  File \"/export/home/drkirkby/sage-4.4.2/spkg/build/pygments-0.11.1.p0/src/ez_setup.py\", line 105, in download_setuptools\n    import urllib2, shutil\n  File \"/export/home/drkirkby/sage-4.4.2/local/lib/python/urllib2.py\", line 92, in <module>\n    import httplib\n  File \"/export/home/drkirkby/sage-4.4.2/local/lib/python/httplib.py\", line 70, in <module>\n    import socket\n  File \"/export/home/drkirkby/sage-4.4.2/local/lib/python/socket.py\", line 46, in <module>\n    import _socket\nImportError: No module named _socket\nError installing Pygments.\n\nreal    0m0.028s\nuser    0m0.013s\nsys     0m0.014s\nsage: An error occurred while installing pygments-0.11.1.p0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9041\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @robertwb\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## How the Sage build was attempted\n* 64-bit build. SAGE64 was set to \"yes\"\n* #9008 update zlib to latest upstream release to allow a 64-bit library to be built. \n* #9009 update mercurial spkg to build 64-bit.\n* #7982 update sage_fortran so it can build 64-bit binaries.\n* Run 'make -k' to skip over errors, to allow one to find the errors quickly. \n\n\n## The problem\nThis a problem with python rather than pygments and is **very** similar to #9022. Since python is not building _socket, so some other parts of Sage fail to build if they need _socket. \n\n\n```\nygments-0.11.1.p0/.hg/undo.branch\npygments-0.11.1.p0/.hg/00changelog.i\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC)\n****************************************************\nTraceback (most recent call last):\n  File \"setup.py\", line 4, in <module>\n    ez_setup.use_setuptools()\n  File \"/export/home/drkirkby/sage-4.4.2/spkg/build/pygments-0.11.1.p0/src/ez_setup.py\", line 78, in use_setuptools\n    egg = download_setuptools(version, download_base, to_dir, download_delay)\n  File \"/export/home/drkirkby/sage-4.4.2/spkg/build/pygments-0.11.1.p0/src/ez_setup.py\", line 105, in download_setuptools\n    import urllib2, shutil\n  File \"/export/home/drkirkby/sage-4.4.2/local/lib/python/urllib2.py\", line 92, in <module>\n    import httplib\n  File \"/export/home/drkirkby/sage-4.4.2/local/lib/python/httplib.py\", line 70, in <module>\n    import socket\n  File \"/export/home/drkirkby/sage-4.4.2/local/lib/python/socket.py\", line 46, in <module>\n    import _socket\nImportError: No module named _socket\nError installing Pygments.\n\nreal    0m0.028s\nuser    0m0.013s\nsys     0m0.014s\nsage: An error occurred while installing pygments-0.11.1.p0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9041\n\n",
     "created_at": "2010-05-25T01:01:29Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009041.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp robertwb
+CC:  @jaapspies @robertwb
 
 ## Build environment
 * Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM
@@ -328,16 +328,16 @@ Mercurial patch to get _socket to build on OpenSolaris
 archive/issue_comments_083704.json:
 ```json
 {
-    "body": "Attachment [permit_underscore_socket_to_build.patch](tarball://root/attachments/some-uuid/ticket9041/permit_underscore_socket_to_build.patch) by jsp created at 2010-06-12 12:16:52\n\nTested on OpenSolaris x86 and Fedora 12. With all other tests given, this is ok.\n\nPositive review.\n\nJaap",
+    "body": "Attachment [permit_underscore_socket_to_build.patch](tarball://root/attachments/some-uuid/ticket9041/permit_underscore_socket_to_build.patch) by @jaapspies created at 2010-06-12 12:16:52\n\nTested on OpenSolaris x86 and Fedora 12. With all other tests given, this is ok.\n\nPositive review.\n\nJaap",
     "created_at": "2010-06-12T12:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9041#issuecomment-83704",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [permit_underscore_socket_to_build.patch](tarball://root/attachments/some-uuid/ticket9041/permit_underscore_socket_to_build.patch) by jsp created at 2010-06-12 12:16:52
+Attachment [permit_underscore_socket_to_build.patch](tarball://root/attachments/some-uuid/ticket9041/permit_underscore_socket_to_build.patch) by @jaapspies created at 2010-06-12 12:16:52
 
 Tested on OpenSolaris x86 and Fedora 12. With all other tests given, this is ok.
 
@@ -357,7 +357,7 @@ archive/issue_comments_083705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9041#issuecomment-83705",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_083707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9041#issuecomment-83707",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_083708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9041#issuecomment-83708",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

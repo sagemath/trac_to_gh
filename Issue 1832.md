@@ -14,7 +14,7 @@ archive/issues_001832.json:
     "title": "change how real(...) is defined in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1832",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -106,16 +106,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1832
 archive/issue_comments_011595.json:
 ```json
 {
-    "body": "Attachment [1832.patch](tarball://root/attachments/some-uuid/ticket1832/1832.patch) by mhansen created at 2008-01-18 23:05:16",
+    "body": "Attachment [1832.patch](tarball://root/attachments/some-uuid/ticket1832/1832.patch) by @mwhansen created at 2008-01-18 23:05:16",
     "created_at": "2008-01-18T23:05:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1832#issuecomment-11595",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1832.patch](tarball://root/attachments/some-uuid/ticket1832/1832.patch) by mhansen created at 2008-01-18 23:05:16
+Attachment [1832.patch](tarball://root/attachments/some-uuid/ticket1832/1832.patch) by @mwhansen created at 2008-01-18 23:05:16
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_011596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1832#issuecomment-11596",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -142,16 +142,16 @@ Changing status from new to assigned.
 archive/issue_comments_011597.json:
 ```json
 {
-    "body": "Changing assignee from somebody to mhansen.",
+    "body": "Changing assignee from somebody to @mwhansen.",
     "created_at": "2008-01-18T23:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1832#issuecomment-11597",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from somebody to mhansen.
+Changing assignee from somebody to @mwhansen.
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_011598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1832",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1832#issuecomment-11598",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

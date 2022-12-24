@@ -14,7 +14,7 @@ archive/issues_003466.json:
     "title": "make optional package for pyprocessing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3466",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_024440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3466#issuecomment-24440",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_024441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3466#issuecomment-24441",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_024442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3466#issuecomment-24442",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

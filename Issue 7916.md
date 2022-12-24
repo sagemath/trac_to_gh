@@ -3,7 +3,7 @@
 archive/issues_007916.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  rossk\n\n\n```\nOn Tue, Jan 12, 2010 at 8:36 PM, jtyard <> wrote:\n> Hi,\n>\n> I don't know if this counts as a bug, so sorry if I'm posting this to\n> the wrong list.  Say I define a cyclotomic field in Sage as follows:\n>\n> sage: Q3 = CyclotomicField(3)\n> sage: z3 = Q3.0\n>\n> Then Sage can compute the complex conjugate independent of an\n> embedding into the complexes:\n>\n> sage: z3.conjugate()\n> -zeta3 - 1\n>\n> But I get a different answer by typing:\n>\n> sage: conjugate(z3)\n> conjugate(e^(2/3*I*pi))\n>\n> Wouldn't it make sense for these to do the same thing?  Another\n> difference comes up as follows:\n>\n> sage: Q2.<s> = QuadraticField(-2)\n> sage: s.conjugate()\n> -s\n> sage: conjugate(s)\n> -I*sqrt(2)\n>\n> Yet, the problem doesn't exist with this slightly different\n> definition:\n>\n> sage: QQ2.<ss> = QQ[sqrt(-2)]\n> sage: ss.conjugate()\n> -a\n> sage: conjugate(ss)\n> -a\n\nYes, I agree that this is a bug.  \nWhat is happening is that the *symbolic* conjugate function is coercing its input X to the symbolic ring SR before applying itself.  It would be much better to test if X has a .conjugate method, and if so return that; if not, then return SR(X).conjugate().\n\nHere's the beginning of the course code for conjugate(X):\n\nsage: conjugate.__call__??\n        # we want to convert the result to the original parent if the input\n        # is not exact, so we store the parent here\n        org_parent = parent(args[0])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7916\n\n",
+    "body": "Assignee: @burcin\n\nCC:  rossk\n\n\n```\nOn Tue, Jan 12, 2010 at 8:36 PM, jtyard <> wrote:\n> Hi,\n>\n> I don't know if this counts as a bug, so sorry if I'm posting this to\n> the wrong list.  Say I define a cyclotomic field in Sage as follows:\n>\n> sage: Q3 = CyclotomicField(3)\n> sage: z3 = Q3.0\n>\n> Then Sage can compute the complex conjugate independent of an\n> embedding into the complexes:\n>\n> sage: z3.conjugate()\n> -zeta3 - 1\n>\n> But I get a different answer by typing:\n>\n> sage: conjugate(z3)\n> conjugate(e^(2/3*I*pi))\n>\n> Wouldn't it make sense for these to do the same thing?  Another\n> difference comes up as follows:\n>\n> sage: Q2.<s> = QuadraticField(-2)\n> sage: s.conjugate()\n> -s\n> sage: conjugate(s)\n> -I*sqrt(2)\n>\n> Yet, the problem doesn't exist with this slightly different\n> definition:\n>\n> sage: QQ2.<ss> = QQ[sqrt(-2)]\n> sage: ss.conjugate()\n> -a\n> sage: conjugate(ss)\n> -a\n\nYes, I agree that this is a bug.  \nWhat is happening is that the *symbolic* conjugate function is coercing its input X to the symbolic ring SR before applying itself.  It would be much better to test if X has a .conjugate method, and if so return that; if not, then return SR(X).conjugate().\n\nHere's the beginning of the course code for conjugate(X):\n\nsage: conjugate.__call__??\n        # we want to convert the result to the original parent if the input\n        # is not exact, so we store the parent here\n        org_parent = parent(args[0])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7916\n\n",
     "created_at": "2010-01-13T05:00:37Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_007916.json:
     "title": "change conjugate(X) to try X.conjugate()  [[this is easy!!]]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7916",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 CC:  rossk
 
@@ -84,16 +84,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7916
 archive/issue_comments_068882.json:
 ```json
 {
-    "body": "Attachment [trac_7916-same_name_method.patch](tarball://root/attachments/some-uuid/ticket7916/trac_7916-same_name_method.patch) by burcin created at 2010-01-17 11:39:25",
+    "body": "Attachment [trac_7916-same_name_method.patch](tarball://root/attachments/some-uuid/ticket7916/trac_7916-same_name_method.patch) by @burcin created at 2010-01-17 11:39:25",
     "created_at": "2010-01-17T11:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7916#issuecomment-68882",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7916-same_name_method.patch](tarball://root/attachments/some-uuid/ticket7916/trac_7916-same_name_method.patch) by burcin created at 2010-01-17 11:39:25
+Attachment [trac_7916-same_name_method.patch](tarball://root/attachments/some-uuid/ticket7916/trac_7916-same_name_method.patch) by @burcin created at 2010-01-17 11:39:25
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_068883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7916#issuecomment-68883",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_068885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7916#issuecomment-68885",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_068886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7916#issuecomment-68886",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -227,16 +227,16 @@ slightly faster - apply only this patch
 archive/issue_comments_068887.json:
 ```json
 {
-    "body": "Attachment [trac_7916-same_name_method.take2.patch](tarball://root/attachments/some-uuid/ticket7916/trac_7916-same_name_method.take2.patch) by burcin created at 2010-01-19 13:13:00\n\nattachment:trac_7916-same_name_method.take2.patch is slightly faster than the previous one.",
+    "body": "Attachment [trac_7916-same_name_method.take2.patch](tarball://root/attachments/some-uuid/ticket7916/trac_7916-same_name_method.take2.patch) by @burcin created at 2010-01-19 13:13:00\n\nattachment:trac_7916-same_name_method.take2.patch is slightly faster than the previous one.",
     "created_at": "2010-01-19T13:13:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7916#issuecomment-68887",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7916-same_name_method.take2.patch](tarball://root/attachments/some-uuid/ticket7916/trac_7916-same_name_method.take2.patch) by burcin created at 2010-01-19 13:13:00
+Attachment [trac_7916-same_name_method.take2.patch](tarball://root/attachments/some-uuid/ticket7916/trac_7916-same_name_method.take2.patch) by @burcin created at 2010-01-19 13:13:00
 
 attachment:trac_7916-same_name_method.take2.patch is slightly faster than the previous one.
 
@@ -252,7 +252,7 @@ archive/issue_comments_068888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7916#issuecomment-68888",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_068889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7916#issuecomment-68889",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

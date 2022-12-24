@@ -3,7 +3,7 @@
 archive/issues_005985.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat cwitty saliola burcin craigcitro\n\nKeywords: cPickle, pickling classes\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5985\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat cwitty @saliola @burcin @craigcitro\n\nKeywords: cPickle, pickling classes\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5985\n\n",
     "created_at": "2009-05-05T05:54:04Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_005985.json:
     "title": "cPickle: adds support for class pickling customizing  and for nested classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5985",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat cwitty saliola burcin craigcitro
+CC:  sage-combinat cwitty @saliola @burcin @craigcitro
 
 Keywords: cPickle, pickling classes
 
@@ -41,7 +41,7 @@ archive/issue_comments_047549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47549",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_047550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47550",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_047551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47551",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_047552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47552",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_047554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47554",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -150,16 +150,16 @@ Followup at #5986
 archive/issue_comments_047555.json:
 ```json
 {
-    "body": "Attachment [cPickle-5985-import-submitted.patch](tarball://root/attachments/some-uuid/ticket5985/cPickle-5985-import-submitted.patch) by nthiery created at 2009-05-23 07:42:38",
+    "body": "Attachment [cPickle-5985-import-submitted.patch](tarball://root/attachments/some-uuid/ticket5985/cPickle-5985-import-submitted.patch) by @nthiery created at 2009-05-23 07:42:38",
     "created_at": "2009-05-23T07:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47555",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [cPickle-5985-import-submitted.patch](tarball://root/attachments/some-uuid/ticket5985/cPickle-5985-import-submitted.patch) by nthiery created at 2009-05-23 07:42:38
+Attachment [cPickle-5985-import-submitted.patch](tarball://root/attachments/some-uuid/ticket5985/cPickle-5985-import-submitted.patch) by @nthiery created at 2009-05-23 07:42:38
 
 
 
@@ -173,7 +173,7 @@ archive/issue_comments_047556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47556",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_047557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47557",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_047558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47558",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -246,16 +246,16 @@ The patch cPickle-5985-copy_reg_classes-submitted.patch includes a fairly comple
 archive/issue_comments_047559.json:
 ```json
 {
-    "body": "Attachment [cPickle-5985-copy_reg_classes-submitted.patch](tarball://root/attachments/some-uuid/ticket5985/cPickle-5985-copy_reg_classes-submitted.patch) by nthiery created at 2009-07-11 22:48:25\n\nReplying to [comment:14 nthiery]:\n> Replying to [comment:13 craigcitro]:\n> > I've rolled an spkg with the patch by Nicolas incorporated -- it's here:\n> > \n> >   http://sage.math.washington.edu/home/craigcitro/four-one/python-2.6.2.p2.spkg\n> > \n> > It's not ready to be merged (I need to commit the changes in hg), but I'd like Nicolas to confirm that it still works before I play with it too much. Or, if there's an easy testcase, post that and I'll play with it. \n> > \n> > I should have more time to look at this tonight (and give it a review, assuming it works).\n> \n> Thanks for working on this!\n> \n> The patch cPickle-5985-copy_reg_classes-submitted.patch includes a fairly complete testsuite (see the addition to sage/misc/test_cpickle_sage.py)\n\nOops, this testsuite used type.__new__(...) which apparently does not work anymore with Python 2.6. I just rewrote the testsuite so that it does not use this feature anymore. See attached patch.\n\nLuckily enough, the real applications of this patch readily did not use this feature anymore!",
+    "body": "Attachment [cPickle-5985-copy_reg_classes-submitted.patch](tarball://root/attachments/some-uuid/ticket5985/cPickle-5985-copy_reg_classes-submitted.patch) by @nthiery created at 2009-07-11 22:48:25\n\nReplying to [comment:14 nthiery]:\n> Replying to [comment:13 craigcitro]:\n> > I've rolled an spkg with the patch by Nicolas incorporated -- it's here:\n> > \n> >   http://sage.math.washington.edu/home/craigcitro/four-one/python-2.6.2.p2.spkg\n> > \n> > It's not ready to be merged (I need to commit the changes in hg), but I'd like Nicolas to confirm that it still works before I play with it too much. Or, if there's an easy testcase, post that and I'll play with it. \n> > \n> > I should have more time to look at this tonight (and give it a review, assuming it works).\n> \n> Thanks for working on this!\n> \n> The patch cPickle-5985-copy_reg_classes-submitted.patch includes a fairly complete testsuite (see the addition to sage/misc/test_cpickle_sage.py)\n\nOops, this testsuite used type.__new__(...) which apparently does not work anymore with Python 2.6. I just rewrote the testsuite so that it does not use this feature anymore. See attached patch.\n\nLuckily enough, the real applications of this patch readily did not use this feature anymore!",
     "created_at": "2009-07-11T22:48:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47559",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [cPickle-5985-copy_reg_classes-submitted.patch](tarball://root/attachments/some-uuid/ticket5985/cPickle-5985-copy_reg_classes-submitted.patch) by nthiery created at 2009-07-11 22:48:25
+Attachment [cPickle-5985-copy_reg_classes-submitted.patch](tarball://root/attachments/some-uuid/ticket5985/cPickle-5985-copy_reg_classes-submitted.patch) by @nthiery created at 2009-07-11 22:48:25
 
 Replying to [comment:14 nthiery]:
 > Replying to [comment:13 craigcitro]:
@@ -287,7 +287,7 @@ archive/issue_comments_047560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47560",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_047561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47561",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_047562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47562",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_047563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47563",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_047564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47564",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_047565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47565",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -438,16 +438,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_047566.json:
 ```json
 {
-    "body": "Attachment [trac_5985_test_class_pickling.patch](tarball://root/attachments/some-uuid/ticket5985/trac_5985_test_class_pickling.patch) by mhansen created at 2009-10-15 06:55:09\n\nApply only this patch, after updating the python spkg linked to below",
+    "body": "Attachment [trac_5985_test_class_pickling.patch](tarball://root/attachments/some-uuid/ticket5985/trac_5985_test_class_pickling.patch) by @mwhansen created at 2009-10-15 06:55:09\n\nApply only this patch, after updating the python spkg linked to below",
     "created_at": "2009-10-15T06:55:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47566",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5985_test_class_pickling.patch](tarball://root/attachments/some-uuid/ticket5985/trac_5985_test_class_pickling.patch) by mhansen created at 2009-10-15 06:55:09
+Attachment [trac_5985_test_class_pickling.patch](tarball://root/attachments/some-uuid/ticket5985/trac_5985_test_class_pickling.patch) by @mwhansen created at 2009-10-15 06:55:09
 
 Apply only this patch, after updating the python spkg linked to below
 
@@ -463,7 +463,7 @@ archive/issue_comments_047567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47567",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_047568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5985#issuecomment-47568",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

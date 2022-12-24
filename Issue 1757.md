@@ -14,7 +14,7 @@ archive/issues_001757.json:
     "title": "implement Coppersmith's method for finding small roots of univariate polynomials modulo an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1757",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_011086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1757#issuecomment-11086",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_011087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1757#issuecomment-11087",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_011088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1757#issuecomment-11088",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_011089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1757#issuecomment-11089",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

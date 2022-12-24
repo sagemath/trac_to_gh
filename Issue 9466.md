@@ -3,7 +3,7 @@
 archive/issues_009466.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mderickx ruckers\n\n\n```\nsage: FiniteField(3)(2).sqrt(all = True)\n[]\n\nsage: 2.sqrt(extend = False, all = True)\nValueError: square root of 2 not an integer\n\nsage: FiniteField(next_prime(2^100))(2).sqrt(extend = False, all = True)\nValueError: self must be a square\n\nsage: _.<a>=FiniteField(9)\nsage: a.sqrt(extend = False, all = True)\nValueError: must be a perfect square.\n```\n\n\nAt sage days 23 we agreed that square root with all=True should not raise an error. If no square roots exist, then it should return an empty list.\n\nRight now, it returns an empty list for elements of small prime finite fields, but raises an error for integers, elements of large prime finite fields, and elements of non-prime finite fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9466\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @koffie ruckers\n\n\n```\nsage: FiniteField(3)(2).sqrt(all = True)\n[]\n\nsage: 2.sqrt(extend = False, all = True)\nValueError: square root of 2 not an integer\n\nsage: FiniteField(next_prime(2^100))(2).sqrt(extend = False, all = True)\nValueError: self must be a square\n\nsage: _.<a>=FiniteField(9)\nsage: a.sqrt(extend = False, all = True)\nValueError: must be a perfect square.\n```\n\n\nAt sage days 23 we agreed that square root with all=True should not raise an error. If no square roots exist, then it should return an empty list.\n\nRight now, it returns an empty list for elements of small prime finite fields, but raises an error for integers, elements of large prime finite fields, and elements of non-prime finite fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9466\n\n",
     "created_at": "2010-07-09T13:18:25Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009466.json:
     "title": "square root with all=True should not return ValueError but empty list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9466",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mderickx ruckers
+CC:  @koffie ruckers
 
 
 ```
@@ -120,7 +120,7 @@ archive/issue_comments_090798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9466#issuecomment-90798",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -152,16 +152,16 @@ If you have any questions, let me know!
 archive/issue_comments_090799.json:
 ```json
 {
-    "body": "Attachment [9466.2.patch](tarball://root/attachments/some-uuid/ticket9466/9466.2.patch) by mstreng created at 2013-07-25 18:20:22",
+    "body": "Attachment [9466.2.patch](tarball://root/attachments/some-uuid/ticket9466/9466.2.patch) by @mstreng created at 2013-07-25 18:20:22",
     "created_at": "2013-07-25T18:20:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9466#issuecomment-90799",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [9466.2.patch](tarball://root/attachments/some-uuid/ticket9466/9466.2.patch) by mstreng created at 2013-07-25 18:20:22
+Attachment [9466.2.patch](tarball://root/attachments/some-uuid/ticket9466/9466.2.patch) by @mstreng created at 2013-07-25 18:20:22
 
 
 
@@ -170,16 +170,16 @@ Attachment [9466.2.patch](tarball://root/attachments/some-uuid/ticket9466/9466.2
 archive/issue_comments_090800.json:
 ```json
 {
-    "body": "Attachment [9466.3.patch](tarball://root/attachments/some-uuid/ticket9466/9466.3.patch) by mstreng created at 2013-07-25 18:21:59",
+    "body": "Attachment [9466.3.patch](tarball://root/attachments/some-uuid/ticket9466/9466.3.patch) by @mstreng created at 2013-07-25 18:21:59",
     "created_at": "2013-07-25T18:21:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9466#issuecomment-90800",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [9466.3.patch](tarball://root/attachments/some-uuid/ticket9466/9466.3.patch) by mstreng created at 2013-07-25 18:21:59
+Attachment [9466.3.patch](tarball://root/attachments/some-uuid/ticket9466/9466.3.patch) by @mstreng created at 2013-07-25 18:21:59
 
 
 
@@ -193,7 +193,7 @@ archive/issue_comments_090801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9466#issuecomment-90801",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -206,16 +206,16 @@ Changing keywords from "" to "sd23 sd51 sqrt all".
 archive/issue_comments_090802.json:
 ```json
 {
-    "body": "Attachment [9466.patch](tarball://root/attachments/some-uuid/ticket9466/9466.patch) by mstreng created at 2013-07-25 18:31:32\n\nDoes anyone know who user \"ruckers\" is? (s)he should be added to the list of authors\n\napply 9466.patch",
+    "body": "Attachment [9466.patch](tarball://root/attachments/some-uuid/ticket9466/9466.patch) by @mstreng created at 2013-07-25 18:31:32\n\nDoes anyone know who user \"ruckers\" is? (s)he should be added to the list of authors\n\napply 9466.patch",
     "created_at": "2013-07-25T18:31:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9466#issuecomment-90802",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [9466.patch](tarball://root/attachments/some-uuid/ticket9466/9466.patch) by mstreng created at 2013-07-25 18:31:32
+Attachment [9466.patch](tarball://root/attachments/some-uuid/ticket9466/9466.patch) by @mstreng created at 2013-07-25 18:31:32
 
 Does anyone know who user "ruckers" is? (s)he should be added to the list of authors
 
@@ -233,7 +233,7 @@ archive/issue_comments_090803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9466#issuecomment-90803",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_090804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9466#issuecomment-90804",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_090807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9466#issuecomment-90807",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

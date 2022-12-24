@@ -14,7 +14,7 @@ archive/issues_004936.json:
     "title": "massive bloat: make something delete everything in ~/.sage/gap > 1 week old and untouched",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4936",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -51,7 +51,7 @@ archive/issue_comments_037471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4936#issuecomment-37471",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_037472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4936#issuecomment-37472",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_037473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4936#issuecomment-37473",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,16 +121,16 @@ and note that when you start sage the files you created in $DOT_SAGE/gap are del
 archive/issue_comments_037474.json:
 ```json
 {
-    "body": "Attachment [trac_4936.patch](tarball://root/attachments/some-uuid/ticket4936/trac_4936.patch) by mhansen created at 2009-01-24 06:31:20\n\nThis works perfectly for me.",
+    "body": "Attachment [trac_4936.patch](tarball://root/attachments/some-uuid/ticket4936/trac_4936.patch) by @mwhansen created at 2009-01-24 06:31:20\n\nThis works perfectly for me.",
     "created_at": "2009-01-24T06:31:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4936",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4936#issuecomment-37474",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4936.patch](tarball://root/attachments/some-uuid/ticket4936/trac_4936.patch) by mhansen created at 2009-01-24 06:31:20
+Attachment [trac_4936.patch](tarball://root/attachments/some-uuid/ticket4936/trac_4936.patch) by @mwhansen created at 2009-01-24 06:31:20
 
 This works perfectly for me.
 

@@ -3,7 +3,7 @@
 archive/issues_002050.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexander@gmail.com\n\nInstead of lying the following code should just raise a NotImplementedError.  Basically use the `is_exact()` method on rings to determine if the ring is not exact, and if so, raise an error on eigenspaces computation.  Some generic algorithms suck for inexact rings.   One thing, the error message for RR and CC could suggest using RDF or CDF... and maybe when prec <= 53, the code could use RDF or CDF (?). \n\n\n```\nsage: R=RealField(30)\nsage: M=matrix(R,2,[2,1,1,1])\nsage: M.eigenspaces()\n\n[\n(2.6180340, [\n\n]),\n(0.38196601, [\n\n])\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2050\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nInstead of lying the following code should just raise a NotImplementedError.  Basically use the `is_exact()` method on rings to determine if the ring is not exact, and if so, raise an error on eigenspaces computation.  Some generic algorithms suck for inexact rings.   One thing, the error message for RR and CC could suggest using RDF or CDF... and maybe when prec <= 53, the code could use RDF or CDF (?). \n\n\n```\nsage: R=RealField(30)\nsage: M=matrix(R,2,[2,1,1,1])\nsage: M.eigenspaces()\n\n[\n(2.6180340, [\n\n]),\n(0.38196601, [\n\n])\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2050\n\n",
     "created_at": "2008-02-05T05:00:28Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002050.json:
     "title": "disallow *generic* matrix eigenspaces for inexact fields (very easy to implement)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2050",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  ncalexander@gmail.com
 
@@ -56,7 +56,7 @@ archive/issue_comments_013275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2050#issuecomment-13275",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -69,16 +69,16 @@ See #1706 for a related ticket.
 archive/issue_comments_013276.json:
 ```json
 {
-    "body": "Attachment [2050-ncalexan-eigenspaces-1.patch](tarball://root/attachments/some-uuid/ticket2050/2050-ncalexan-eigenspaces-1.patch) by ncalexan created at 2008-02-17 00:45:53",
+    "body": "Attachment [2050-ncalexan-eigenspaces-1.patch](tarball://root/attachments/some-uuid/ticket2050/2050-ncalexan-eigenspaces-1.patch) by @ncalexan created at 2008-02-17 00:45:53",
     "created_at": "2008-02-17T00:45:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2050#issuecomment-13276",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2050-ncalexan-eigenspaces-1.patch](tarball://root/attachments/some-uuid/ticket2050/2050-ncalexan-eigenspaces-1.patch) by ncalexan created at 2008-02-17 00:45:53
+Attachment [2050-ncalexan-eigenspaces-1.patch](tarball://root/attachments/some-uuid/ticket2050/2050-ncalexan-eigenspaces-1.patch) by @ncalexan created at 2008-02-17 00:45:53
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_013277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2050#issuecomment-13277",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -120,16 +120,16 @@ abort: patch failed to apply
 archive/issue_comments_013278.json:
 ```json
 {
-    "body": "Attachment [2050.patch](tarball://root/attachments/some-uuid/ticket2050/2050.patch) by mhansen created at 2008-02-27 22:57:55",
+    "body": "Attachment [2050.patch](tarball://root/attachments/some-uuid/ticket2050/2050.patch) by @mwhansen created at 2008-02-27 22:57:55",
     "created_at": "2008-02-27T22:57:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2050#issuecomment-13278",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2050.patch](tarball://root/attachments/some-uuid/ticket2050/2050.patch) by mhansen created at 2008-02-27 22:57:55
+Attachment [2050.patch](tarball://root/attachments/some-uuid/ticket2050/2050.patch) by @mwhansen created at 2008-02-27 22:57:55
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_013279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2050#issuecomment-13279",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

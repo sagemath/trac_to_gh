@@ -3,7 +3,7 @@
 archive/issues_008490.json:
 ```json
 {
-    "body": "Assignee: vdelecroix\n\nCC:  sage-combinat\n\nKeywords: word\n\nThe method is_square_free of sage.combinat.words.word.Word returns the wrong value in special case (including squares !)\n\n\n```\nsage: Word(\"aa\").is_square_free()  # the most funny\nTrue\nsage: Word(\"baa\").is_square_free()\nTrue\nsage: Word(\"cbaa\").is_square_free()\nTrue\nsage: Word(\"dcbaa\").is_square_free()\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8490\n\n",
+    "body": "Assignee: @videlec\n\nCC:  sage-combinat\n\nKeywords: word\n\nThe method is_square_free of sage.combinat.words.word.Word returns the wrong value in special case (including squares !)\n\n\n```\nsage: Word(\"aa\").is_square_free()  # the most funny\nTrue\nsage: Word(\"baa\").is_square_free()\nTrue\nsage: Word(\"cbaa\").is_square_free()\nTrue\nsage: Word(\"dcbaa\").is_square_free()\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8490\n\n",
     "created_at": "2010-03-10T16:38:46Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008490.json:
     "title": "Bad behavior of is_square_free for Words",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8490",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
-Assignee: vdelecroix
+Assignee: @videlec
 
 CC:  sage-combinat
 
@@ -54,7 +54,7 @@ archive/issue_comments_076562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76562",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_076563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76563",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_076564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76564",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_076565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76565",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_076566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76566",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_076567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76567",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -159,16 +159,16 @@ another one-line correction that applies after #8429
 archive/issue_comments_076568.json:
 ```json
 {
-    "body": "Attachment [trac_8490-square_free-vd.2.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.2.patch) by vdelecroix created at 2010-03-10 17:40:39\n\nanother one-line correction that applies after #8429",
+    "body": "Attachment [trac_8490-square_free-vd.2.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.2.patch) by @videlec created at 2010-03-10 17:40:39\n\nanother one-line correction that applies after #8429",
     "created_at": "2010-03-10T17:40:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76568",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_8490-square_free-vd.2.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.2.patch) by vdelecroix created at 2010-03-10 17:40:39
+Attachment [trac_8490-square_free-vd.2.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.2.patch) by @videlec created at 2010-03-10 17:40:39
 
 another one-line correction that applies after #8429
 
@@ -179,16 +179,16 @@ another one-line correction that applies after #8429
 archive/issue_comments_076569.json:
 ```json
 {
-    "body": "Attachment [trac_8490-square_free-vd.3.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.3.patch) by vdelecroix created at 2010-03-10 22:50:51\n\nApply only this",
+    "body": "Attachment [trac_8490-square_free-vd.3.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.3.patch) by @videlec created at 2010-03-10 22:50:51\n\nApply only this",
     "created_at": "2010-03-10T22:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76569",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_8490-square_free-vd.3.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.3.patch) by vdelecroix created at 2010-03-10 22:50:51
+Attachment [trac_8490-square_free-vd.3.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.3.patch) by @videlec created at 2010-03-10 22:50:51
 
 Apply only this
 
@@ -199,16 +199,16 @@ Apply only this
 archive/issue_comments_076570.json:
 ```json
 {
-    "body": "Attachment [trac_8490-square_free-vd.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.patch) by slabbe created at 2010-04-28 10:12:41\n\nThe same bug was occuring with `is_cube_free` :\n\n\n```\nsage: Word('111').is_cube_free()\nTrue\nsage: Word('2111').is_cube_free()\nTrue\nsage: Word('32111').is_cube_free()\nTrue\n```\n\n\nI just applied a patch which fixes this problem. I changed some doctests of both `is_square_free` and `is_cube_free`. I also removed a useless slice in the code of both functions and this gives good improvements in timings :\n\nBEFORE:\n\n\n```\nsage: t = words.ThueMorseWord()\nsage: %timeit t[:100].is_cube_free()\n5 loops, best of 3: 3.13 s per loop\n```\n\n\nAFTER:\n\n\n```\nsage: t = words.ThueMorseWord()\nsage: %timeit t[:100].is_cube_free()\n5 loops, best of 3: 1.18 s per loop\n```\n",
+    "body": "Attachment [trac_8490-square_free-vd.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.patch) by @seblabbe created at 2010-04-28 10:12:41\n\nThe same bug was occuring with `is_cube_free` :\n\n\n```\nsage: Word('111').is_cube_free()\nTrue\nsage: Word('2111').is_cube_free()\nTrue\nsage: Word('32111').is_cube_free()\nTrue\n```\n\n\nI just applied a patch which fixes this problem. I changed some doctests of both `is_square_free` and `is_cube_free`. I also removed a useless slice in the code of both functions and this gives good improvements in timings :\n\nBEFORE:\n\n\n```\nsage: t = words.ThueMorseWord()\nsage: %timeit t[:100].is_cube_free()\n5 loops, best of 3: 3.13 s per loop\n```\n\n\nAFTER:\n\n\n```\nsage: t = words.ThueMorseWord()\nsage: %timeit t[:100].is_cube_free()\n5 loops, best of 3: 1.18 s per loop\n```\n",
     "created_at": "2010-04-28T10:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76570",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8490-square_free-vd.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.patch) by slabbe created at 2010-04-28 10:12:41
+Attachment [trac_8490-square_free-vd.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490-square_free-vd.patch) by @seblabbe created at 2010-04-28 10:12:41
 
 The same bug was occuring with `is_cube_free` :
 
@@ -257,7 +257,7 @@ archive/issue_comments_076571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76571",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -270,16 +270,16 @@ Applies over the precedent patch
 archive/issue_comments_076572.json:
 ```json
 {
-    "body": "Attachment [trac_8490_review-sl.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490_review-sl.patch) by slabbe created at 2010-04-28 10:21:34",
+    "body": "Attachment [trac_8490_review-sl.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490_review-sl.patch) by @seblabbe created at 2010-04-28 10:21:34",
     "created_at": "2010-04-28T10:21:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76572",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8490_review-sl.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490_review-sl.patch) by slabbe created at 2010-04-28 10:21:34
+Attachment [trac_8490_review-sl.patch](tarball://root/attachments/some-uuid/ticket8490/trac_8490_review-sl.patch) by @seblabbe created at 2010-04-28 10:21:34
 
 
 
@@ -293,7 +293,7 @@ archive/issue_comments_076573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76573",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_076574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76574",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -349,7 +349,7 @@ archive/issue_comments_076575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76575",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_076576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76576",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_076577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76577",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_076578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76578",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_076579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76579",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_076580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76580",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_076581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8490#issuecomment-76581",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

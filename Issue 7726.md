@@ -3,7 +3,7 @@
 archive/issues_007726.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  awebb\n\nKeywords: biopython\n\nBiopython was released December 15th, 2009.  No major changes were made, so the new package just updates the source and SPKG.txt.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7726\n\n",
+    "body": "Assignee: tbd\n\nCC:  @maxthemouse\n\nKeywords: biopython\n\nBiopython was released December 15th, 2009.  No major changes were made, so the new package just updates the source and SPKG.txt.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7726\n\n",
     "created_at": "2009-12-17T19:10:15Z",
     "labels": [
         "packages: optional",
@@ -19,7 +19,7 @@ archive/issues_007726.json:
 ```
 Assignee: tbd
 
-CC:  awebb
+CC:  @maxthemouse
 
 Keywords: biopython
 
@@ -78,7 +78,7 @@ archive/issue_comments_066384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7726#issuecomment-66384",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_066385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7726#issuecomment-66385",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_066387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7726#issuecomment-66387",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_066388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7726#issuecomment-66388",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

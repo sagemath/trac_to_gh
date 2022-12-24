@@ -14,7 +14,7 @@ archive/issues_002209.json:
     "title": "gap on itanium - incorporate steve linton's new fixes so gap builds fine with optimizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2209",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_014587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2209#issuecomment-14587",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_014589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2209#issuecomment-14589",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_014590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2209#issuecomment-14590",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -138,16 +138,16 @@ Michael
 archive/issue_comments_014592.json:
 ```json
 {
-    "body": "Attachment [itanium.s](tarball://root/attachments/some-uuid/ticket2209/itanium.s) by was created at 2008-08-27 19:51:23",
+    "body": "Attachment [itanium.s](tarball://root/attachments/some-uuid/ticket2209/itanium.s) by @williamstein created at 2008-08-27 19:51:23",
     "created_at": "2008-08-27T19:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2209#issuecomment-14592",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [itanium.s](tarball://root/attachments/some-uuid/ticket2209/itanium.s) by was created at 2008-08-27 19:51:23
+Attachment [itanium.s](tarball://root/attachments/some-uuid/ticket2209/itanium.s) by @williamstein created at 2008-08-27 19:51:23
 
 
 
@@ -161,7 +161,7 @@ archive/issue_comments_014593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2209#issuecomment-14593",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

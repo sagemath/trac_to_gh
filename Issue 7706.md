@@ -14,7 +14,7 @@ archive/issues_007706.json:
     "title": "palp (lattice polytopes): replace the pickle-based database of lattice polytopes by a non-pickle database format",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7706",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mhampton
@@ -44,7 +44,7 @@ archive/issue_comments_066133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66133",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,16 +57,16 @@ See also #7705.
 archive/issue_comments_066134.json:
 ```json
 {
-    "body": "Changing assignee from mhampton to novoselt.",
+    "body": "Changing assignee from mhampton to @novoselt.",
     "created_at": "2009-12-16T15:52:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66134",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Changing assignee from mhampton to novoselt.
+Changing assignee from mhampton to @novoselt.
 
 
 
@@ -75,16 +75,16 @@ Changing assignee from mhampton to novoselt.
 archive/issue_comments_066135.json:
 ```json
 {
-    "body": "Attachment [trac_7706_change_format_of_reflexive_polytope_databases.patch](tarball://root/attachments/some-uuid/ticket7706/trac_7706_change_format_of_reflexive_polytope_databases.patch) by novoselt created at 2009-12-17 06:38:57\n\nBased on 4.3.rc0",
+    "body": "Attachment [trac_7706_change_format_of_reflexive_polytope_databases.patch](tarball://root/attachments/some-uuid/ticket7706/trac_7706_change_format_of_reflexive_polytope_databases.patch) by @novoselt created at 2009-12-17 06:38:57\n\nBased on 4.3.rc0",
     "created_at": "2009-12-17T06:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66135",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_7706_change_format_of_reflexive_polytope_databases.patch](tarball://root/attachments/some-uuid/ticket7706/trac_7706_change_format_of_reflexive_polytope_databases.patch) by novoselt created at 2009-12-17 06:38:57
+Attachment [trac_7706_change_format_of_reflexive_polytope_databases.patch](tarball://root/attachments/some-uuid/ticket7706/trac_7706_change_format_of_reflexive_polytope_databases.patch) by @novoselt created at 2009-12-17 06:38:57
 
 Based on 4.3.rc0
 
@@ -100,7 +100,7 @@ archive/issue_comments_066136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66136",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -113,16 +113,16 @@ Must be placed in DB_HOME/reflexive_polytopes
 archive/issue_comments_066137.json:
 ```json
 {
-    "body": "Attachment [reflexive_polytopes_3d](tarball://root/attachments/some-uuid/ticket7706/reflexive_polytopes_3d) by novoselt created at 2009-12-17 06:42:26\n\nMust be placed in DB_HOME/reflexive_polytopes",
+    "body": "Attachment [reflexive_polytopes_3d](tarball://root/attachments/some-uuid/ticket7706/reflexive_polytopes_3d) by @novoselt created at 2009-12-17 06:42:26\n\nMust be placed in DB_HOME/reflexive_polytopes",
     "created_at": "2009-12-17T06:42:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66137",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [reflexive_polytopes_3d](tarball://root/attachments/some-uuid/ticket7706/reflexive_polytopes_3d) by novoselt created at 2009-12-17 06:42:26
+Attachment [reflexive_polytopes_3d](tarball://root/attachments/some-uuid/ticket7706/reflexive_polytopes_3d) by @novoselt created at 2009-12-17 06:42:26
 
 Must be placed in DB_HOME/reflexive_polytopes
 
@@ -138,7 +138,7 @@ archive/issue_comments_066138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66138",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_066139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66139",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_066140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66140",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_066141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66141",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_066142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66142",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_066143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66143",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_066144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66144",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -294,16 +294,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_066145.json:
 ```json
 {
-    "body": "Attachment [polytopes_db-20100210.spkg](tarball://root/attachments/some-uuid/ticket7706/polytopes_db-20100210.spkg) by novoselt created at 2010-02-11 04:19:45",
+    "body": "Attachment [polytopes_db-20100210.spkg](tarball://root/attachments/some-uuid/ticket7706/polytopes_db-20100210.spkg) by @novoselt created at 2010-02-11 04:19:45",
     "created_at": "2010-02-11T04:19:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66145",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [polytopes_db-20100210.spkg](tarball://root/attachments/some-uuid/ticket7706/polytopes_db-20100210.spkg) by novoselt created at 2010-02-11 04:19:45
+Attachment [polytopes_db-20100210.spkg](tarball://root/attachments/some-uuid/ticket7706/polytopes_db-20100210.spkg) by @novoselt created at 2010-02-11 04:19:45
 
 
 
@@ -317,7 +317,7 @@ archive/issue_comments_066146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66146",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_066147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66147",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_066148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7706#issuecomment-66148",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006228.json:
     "title": "Wrong multiplicities when solving a univariate polynomial equation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6228",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Keywords: multiplicities solve
@@ -51,7 +51,7 @@ archive/issue_comments_049706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6228#issuecomment-49706",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_049707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6228#issuecomment-49707",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -92,16 +92,16 @@ This is now fixed, presumably in the Maxima upgrade.
 archive/issue_comments_049708.json:
 ```json
 {
-    "body": "Attachment [trac_6228-multiplicity-maxima.patch](tarball://root/attachments/some-uuid/ticket6228/trac_6228-multiplicity-maxima.patch) by kcrisman created at 2009-09-29 14:49:36\n\nBased on 4.1.2.alpha4",
+    "body": "Attachment [trac_6228-multiplicity-maxima.patch](tarball://root/attachments/some-uuid/ticket6228/trac_6228-multiplicity-maxima.patch) by @kcrisman created at 2009-09-29 14:49:36\n\nBased on 4.1.2.alpha4",
     "created_at": "2009-09-29T14:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6228#issuecomment-49708",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6228-multiplicity-maxima.patch](tarball://root/attachments/some-uuid/ticket6228/trac_6228-multiplicity-maxima.patch) by kcrisman created at 2009-09-29 14:49:36
+Attachment [trac_6228-multiplicity-maxima.patch](tarball://root/attachments/some-uuid/ticket6228/trac_6228-multiplicity-maxima.patch) by @kcrisman created at 2009-09-29 14:49:36
 
 Based on 4.1.2.alpha4
 
@@ -117,7 +117,7 @@ archive/issue_comments_049709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6228#issuecomment-49709",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_049710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6228",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6228#issuecomment-49710",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

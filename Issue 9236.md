@@ -3,7 +3,7 @@
 archive/issues_009236.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  sage-combinat\n\nfrom 33% (1/3)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9236\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\nfrom 33% (1/3)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9236\n\n",
     "created_at": "2010-06-14T10:58:17Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_009236.json:
     "title": "Bring doc coverage of misc/sage_timeit.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9236",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_086706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9236#issuecomment-86706",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_086707.json:
 ```json
 {
-    "body": "Attachment [trac_9236_doc_sage_timeit-sl.patch](tarball://root/attachments/some-uuid/ticket9236/trac_9236_doc_sage_timeit-sl.patch) by slabbe created at 2010-06-14 11:10:10",
+    "body": "Attachment [trac_9236_doc_sage_timeit-sl.patch](tarball://root/attachments/some-uuid/ticket9236/trac_9236_doc_sage_timeit-sl.patch) by @seblabbe created at 2010-06-14 11:10:10",
     "created_at": "2010-06-14T11:10:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9236#issuecomment-86707",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_9236_doc_sage_timeit-sl.patch](tarball://root/attachments/some-uuid/ticket9236/trac_9236_doc_sage_timeit-sl.patch) by slabbe created at 2010-06-14 11:10:10
+Attachment [trac_9236_doc_sage_timeit-sl.patch](tarball://root/attachments/some-uuid/ticket9236/trac_9236_doc_sage_timeit-sl.patch) by @seblabbe created at 2010-06-14 11:10:10
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_086710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9236#issuecomment-86710",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_086711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9236#issuecomment-86711",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_086712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9236#issuecomment-86712",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

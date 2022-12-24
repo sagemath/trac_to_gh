@@ -50,16 +50,16 @@ Attachment [matrix_plot.patch](tarball://root/attachments/some-uuid/ticket4717/m
 archive/issue_comments_035580.json:
 ```json
 {
-    "body": "Attachment [trac_4717.patch](tarball://root/attachments/some-uuid/ticket4717/trac_4717.patch) by mhansen created at 2008-12-08 01:46:29",
+    "body": "Attachment [trac_4717.patch](tarball://root/attachments/some-uuid/ticket4717/trac_4717.patch) by @mwhansen created at 2008-12-08 01:46:29",
     "created_at": "2008-12-08T01:46:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4717#issuecomment-35580",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4717.patch](tarball://root/attachments/some-uuid/ticket4717/trac_4717.patch) by mhansen created at 2008-12-08 01:46:29
+Attachment [trac_4717.patch](tarball://root/attachments/some-uuid/ticket4717/trac_4717.patch) by @mwhansen created at 2008-12-08 01:46:29
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_035581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4717#issuecomment-35581",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_035583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4717#issuecomment-35583",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

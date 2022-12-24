@@ -115,7 +115,7 @@ archive/issue_comments_063796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7526#issuecomment-63796",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -187,16 +187,16 @@ I think you attached the patch for #7531.
 archive/issue_comments_063798.json:
 ```json
 {
-    "body": "Attachment [trac_7256-polynomial_template_coercion_faster.patch](tarball://root/attachments/some-uuid/ticket7526/trac_7256-polynomial_template_coercion_faster.patch) by malb created at 2009-11-25 22:47:20\n\nWoops, fixed.",
+    "body": "Attachment [trac_7256-polynomial_template_coercion_faster.patch](tarball://root/attachments/some-uuid/ticket7526/trac_7256-polynomial_template_coercion_faster.patch) by @malb created at 2009-11-25 22:47:20\n\nWoops, fixed.",
     "created_at": "2009-11-25T22:47:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7526#issuecomment-63798",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_7256-polynomial_template_coercion_faster.patch](tarball://root/attachments/some-uuid/ticket7526/trac_7256-polynomial_template_coercion_faster.patch) by malb created at 2009-11-25 22:47:20
+Attachment [trac_7256-polynomial_template_coercion_faster.patch](tarball://root/attachments/some-uuid/ticket7526/trac_7256-polynomial_template_coercion_faster.patch) by @malb created at 2009-11-25 22:47:20
 
 Woops, fixed.
 
@@ -249,7 +249,7 @@ archive/issue_comments_063801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7526#issuecomment-63801",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

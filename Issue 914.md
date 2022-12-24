@@ -14,7 +14,7 @@ archive/issues_000914.json:
     "title": "NTL wrapper build fails on Ubuntu 7.10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/914",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -84,7 +84,7 @@ archive/issue_comments_005608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/914#issuecomment-5608",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_005609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/914#issuecomment-5609",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_005610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/914#issuecomment-5610",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_005611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/914#issuecomment-5611",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_005612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/914#issuecomment-5612",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_005613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/914#issuecomment-5613",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_005614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/914#issuecomment-5614",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_005615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/914#issuecomment-5615",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_005616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/914#issuecomment-5616",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

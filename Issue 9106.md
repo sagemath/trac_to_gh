@@ -3,7 +3,7 @@
 archive/issues_009106.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nThere are some missing \"::\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/9106\n\n",
+    "body": "Assignee: @hivert\n\nThere are some missing \"::\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/9106\n\n",
     "created_at": "2010-05-31T19:06:21Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_009106.json:
     "title": "Wrong sphinx markup in UniqueRepresentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9106",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 There are some missing "::"
 
@@ -37,7 +37,7 @@ archive/issue_comments_084611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84611",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_084612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84612",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_084613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84613",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -93,16 +93,16 @@ Review patch merged an positively reviewed.
 archive/issue_comments_084614.json:
 ```json
 {
-    "body": "Attachment [14129](tarball://root/attachments/some-uuid/ticket9106/14129) by hivert created at 2010-06-02 09:17:40",
+    "body": "Attachment [14129](tarball://root/attachments/some-uuid/ticket9106/14129) by @hivert created at 2010-06-02 09:17:40",
     "created_at": "2010-06-02T09:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84614",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [14129](tarball://root/attachments/some-uuid/ticket9106/14129) by hivert created at 2010-06-02 09:17:40
+Attachment [14129](tarball://root/attachments/some-uuid/ticket9106/14129) by @hivert created at 2010-06-02 09:17:40
 
 
 
@@ -111,16 +111,16 @@ Attachment [14129](tarball://root/attachments/some-uuid/ticket9106/14129) by hiv
 archive/issue_comments_084615.json:
 ```json
 {
-    "body": "Attachment [trac_9106-UniqueRep_sphinx_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9106/trac_9106-UniqueRep_sphinx_fix-fh.patch) by hivert created at 2010-06-02 09:21:22\n\nSorry for uploading the wrong patch, I clic too fast...",
+    "body": "Attachment [trac_9106-UniqueRep_sphinx_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9106/trac_9106-UniqueRep_sphinx_fix-fh.patch) by @hivert created at 2010-06-02 09:21:22\n\nSorry for uploading the wrong patch, I clic too fast...",
     "created_at": "2010-06-02T09:21:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84615",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_9106-UniqueRep_sphinx_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9106/trac_9106-UniqueRep_sphinx_fix-fh.patch) by hivert created at 2010-06-02 09:21:22
+Attachment [trac_9106-UniqueRep_sphinx_fix-fh.patch](tarball://root/attachments/some-uuid/ticket9106/trac_9106-UniqueRep_sphinx_fix-fh.patch) by @hivert created at 2010-06-02 09:21:22
 
 Sorry for uploading the wrong patch, I clic too fast...
 
@@ -136,7 +136,7 @@ archive/issue_comments_084616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84616",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_084617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84617",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

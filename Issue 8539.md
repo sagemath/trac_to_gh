@@ -3,7 +3,7 @@
 archive/issues_008539.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  robertwb was\n\nWhen reproducing this, make sure to wait about 10 seconds before trying to interrupt, as it takes time earlier in the function elsewhere, which handles the interruption properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8539\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @williamstein\n\nWhen reproducing this, make sure to wait about 10 seconds before trying to interrupt, as it takes time earlier in the function elsewhere, which handles the interruption properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8539\n\n",
     "created_at": "2010-03-15T04:01:18Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_008539.json:
     "title": "EllipticCurve('6006j1').sha().p_primary_bound(3) ignores CTRL-C",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8539",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  robertwb was
+CC:  @robertwb @williamstein
 
 When reproducing this, make sure to wait about 10 seconds before trying to interrupt, as it takes time earlier in the function elsewhere, which handles the interruption properly.
 
@@ -39,7 +39,7 @@ archive/issue_comments_077189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8539#issuecomment-77189",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing component from elliptic curves to linear algebra.
 archive/issue_comments_077190.json:
 ```json
 {
-    "body": "Changing assignee from cremona to was.",
+    "body": "Changing assignee from @JohnCremona to @williamstein.",
     "created_at": "2010-03-15T23:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8539#issuecomment-77190",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from cremona to was.
+Changing assignee from @JohnCremona to @williamstein.
 
 
 
@@ -70,16 +70,16 @@ Changing assignee from cremona to was.
 archive/issue_comments_077191.json:
 ```json
 {
-    "body": "Attachment [trac_8539.patch](tarball://root/attachments/some-uuid/ticket8539/trac_8539.patch) by rlm created at 2010-03-15 23:42:25",
+    "body": "Attachment [trac_8539.patch](tarball://root/attachments/some-uuid/ticket8539/trac_8539.patch) by @rlmill created at 2010-03-15 23:42:25",
     "created_at": "2010-03-15T23:42:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8539#issuecomment-77191",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8539.patch](tarball://root/attachments/some-uuid/ticket8539/trac_8539.patch) by rlm created at 2010-03-15 23:42:25
+Attachment [trac_8539.patch](tarball://root/attachments/some-uuid/ticket8539/trac_8539.patch) by @rlmill created at 2010-03-15 23:42:25
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_077192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8539#issuecomment-77192",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_077193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8539#issuecomment-77193",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_077194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8539#issuecomment-77194",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_077195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8539#issuecomment-77195",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_077196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8539#issuecomment-77196",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_077197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8539#issuecomment-77197",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -200,16 +200,16 @@ this is a referee patch that fixes a doctest (which was wrong).
 archive/issue_comments_077198.json:
 ```json
 {
-    "body": "Attachment [trac_8539-part2.patch](tarball://root/attachments/some-uuid/ticket8539/trac_8539-part2.patch) by was created at 2010-03-29 22:08:01\n\nMerged into sage-4.3.5",
+    "body": "Attachment [trac_8539-part2.patch](tarball://root/attachments/some-uuid/ticket8539/trac_8539-part2.patch) by @williamstein created at 2010-03-29 22:08:01\n\nMerged into sage-4.3.5",
     "created_at": "2010-03-29T22:08:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8539#issuecomment-77198",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8539-part2.patch](tarball://root/attachments/some-uuid/ticket8539/trac_8539-part2.patch) by was created at 2010-03-29 22:08:01
+Attachment [trac_8539-part2.patch](tarball://root/attachments/some-uuid/ticket8539/trac_8539-part2.patch) by @williamstein created at 2010-03-29 22:08:01
 
 Merged into sage-4.3.5
 
@@ -225,7 +225,7 @@ archive/issue_comments_077199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8539",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8539#issuecomment-77199",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

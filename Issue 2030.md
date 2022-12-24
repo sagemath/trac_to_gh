@@ -47,7 +47,7 @@ archive/issue_comments_013136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2030#issuecomment-13136",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_013137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2030#issuecomment-13137",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -94,16 +94,16 @@ Changing status from new to assigned.
 archive/issue_comments_013138.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2008-09-19T07:31:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2030#issuecomment-13138",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -112,16 +112,16 @@ Changing assignee from tba to mhansen.
 archive/issue_comments_013139.json:
 ```json
 {
-    "body": "Attachment [trac_2030.patch](tarball://root/attachments/some-uuid/ticket2030/trac_2030.patch) by mhansen created at 2008-12-02 07:58:33",
+    "body": "Attachment [trac_2030.patch](tarball://root/attachments/some-uuid/ticket2030/trac_2030.patch) by @mwhansen created at 2008-12-02 07:58:33",
     "created_at": "2008-12-02T07:58:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2030#issuecomment-13139",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2030.patch](tarball://root/attachments/some-uuid/ticket2030/trac_2030.patch) by mhansen created at 2008-12-02 07:58:33
+Attachment [trac_2030.patch](tarball://root/attachments/some-uuid/ticket2030/trac_2030.patch) by @mwhansen created at 2008-12-02 07:58:33
 
 
 
@@ -159,7 +159,7 @@ archive/issue_comments_013141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2030#issuecomment-13141",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

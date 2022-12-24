@@ -3,7 +3,7 @@
 archive/issues_007399.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was\n\nThis improves the quality of all tachyon plots. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7399\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nThis improves the quality of all tachyon plots. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7399\n\n",
     "created_at": "2009-11-06T03:13:17Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_007399.json:
     "title": "fix ugliness for default graph plot3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7399",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was
+CC:  @williamstein
 
 This improves the quality of all tachyon plots. 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7399
 archive/issue_comments_062214.json:
 ```json
 {
-    "body": "Attachment [7399-graph-plot3d.patch](tarball://root/attachments/some-uuid/ticket7399/7399-graph-plot3d.patch) by robertwb created at 2009-11-06 03:14:36",
+    "body": "Attachment [7399-graph-plot3d.patch](tarball://root/attachments/some-uuid/ticket7399/7399-graph-plot3d.patch) by @robertwb created at 2009-11-06 03:14:36",
     "created_at": "2009-11-06T03:14:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7399#issuecomment-62214",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7399-graph-plot3d.patch](tarball://root/attachments/some-uuid/ticket7399/7399-graph-plot3d.patch) by robertwb created at 2009-11-06 03:14:36
+Attachment [7399-graph-plot3d.patch](tarball://root/attachments/some-uuid/ticket7399/7399-graph-plot3d.patch) by @robertwb created at 2009-11-06 03:14:36
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_062215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7399#issuecomment-62215",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_062216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7399#issuecomment-62216",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_062217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7399#issuecomment-62217",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_062218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7399",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7399#issuecomment-62218",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

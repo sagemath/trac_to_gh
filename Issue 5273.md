@@ -3,7 +3,7 @@
 archive/issues_005273.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  cwitty\n\nKeywords: 32-bit, 64-bit, matrix\n\nOn a 32-bit machine:\n\n```\nsage: matrix(ZZ, 100, 2^85)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: number of rows and columns must be less than 2^32 (on a 32-bit computer -- use a 64-bit computer for bigger matrices)\n```\n\nThe attached patch makes this change: if the number of rows or columns is `2^64` or more, it just says the size is too big, it doesn't say anything about a 64-bit computer.  If the number of rows is between `2^32` and `2^64-1` and if the computer is 32-bit, then it gives the above error message.  (The message is also reworded a little bit.)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5273\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  cwitty\n\nKeywords: 32-bit, 64-bit, matrix\n\nOn a 32-bit machine:\n\n```\nsage: matrix(ZZ, 100, 2^85)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: number of rows and columns must be less than 2^32 (on a 32-bit computer -- use a 64-bit computer for bigger matrices)\n```\n\nThe attached patch makes this change: if the number of rows or columns is `2^64` or more, it just says the size is too big, it doesn't say anything about a 64-bit computer.  If the number of rows is between `2^32` and `2^64-1` and if the computer is 32-bit, then it gives the above error message.  (The message is also reworded a little bit.)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5273\n\n",
     "created_at": "2009-02-14T16:55:41Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005273.json:
     "title": "[with patch, needs review] change error message for integer matrices which are too large",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5273",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 CC:  cwitty
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5273
 archive/issue_comments_040476.json:
 ```json
 {
-    "body": "Attachment [5273.patch](tarball://root/attachments/some-uuid/ticket5273/5273.patch) by mhansen created at 2009-02-15 02:24:38\n\nLooks good to me.",
+    "body": "Attachment [5273.patch](tarball://root/attachments/some-uuid/ticket5273/5273.patch) by @mwhansen created at 2009-02-15 02:24:38\n\nLooks good to me.",
     "created_at": "2009-02-15T02:24:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5273#issuecomment-40476",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [5273.patch](tarball://root/attachments/some-uuid/ticket5273/5273.patch) by mhansen created at 2009-02-15 02:24:38
+Attachment [5273.patch](tarball://root/attachments/some-uuid/ticket5273/5273.patch) by @mwhansen created at 2009-02-15 02:24:38
 
 Looks good to me.
 
@@ -166,7 +166,7 @@ archive/issue_comments_040479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5273#issuecomment-40479",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

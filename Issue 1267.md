@@ -65,7 +65,7 @@ archive/issue_comments_007943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1267#issuecomment-7943",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_007944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1267#issuecomment-7944",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -106,16 +106,16 @@ Changing status from new to assigned.
 archive/issue_comments_007945.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2007-12-06T00:22:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1267#issuecomment-7945",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_007946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1267#issuecomment-7946",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -156,16 +156,16 @@ The result of piecewise? was correct since PiecewisePolynomial didn't have a cla
 archive/issue_comments_007947.json:
 ```json
 {
-    "body": "Attachment [1267.patch](tarball://root/attachments/some-uuid/ticket1267/1267.patch) by mhansen created at 2007-12-06 00:28:42",
+    "body": "Attachment [1267.patch](tarball://root/attachments/some-uuid/ticket1267/1267.patch) by @mwhansen created at 2007-12-06 00:28:42",
     "created_at": "2007-12-06T00:28:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1267",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1267#issuecomment-7947",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1267.patch](tarball://root/attachments/some-uuid/ticket1267/1267.patch) by mhansen created at 2007-12-06 00:28:42
+Attachment [1267.patch](tarball://root/attachments/some-uuid/ticket1267/1267.patch) by @mwhansen created at 2007-12-06 00:28:42
 
 
 

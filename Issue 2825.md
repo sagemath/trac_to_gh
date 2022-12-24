@@ -14,7 +14,7 @@ archive/issues_002825.json:
     "title": "notebook -- document js.py some more",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2825",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_019399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2825#issuecomment-19399",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ NOTE: In this patch, I fixed a weird design choice.  Namely, in the list of comp
 archive/issue_comments_019400.json:
 ```json
 {
-    "body": "Attachment [sage-2825.patch](tarball://root/attachments/some-uuid/ticket2825/sage-2825.patch) by was created at 2008-04-06 09:48:08",
+    "body": "Attachment [sage-2825.patch](tarball://root/attachments/some-uuid/ticket2825/sage-2825.patch) by @williamstein created at 2008-04-06 09:48:08",
     "created_at": "2008-04-06T09:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2825#issuecomment-19400",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2825.patch](tarball://root/attachments/some-uuid/ticket2825/sage-2825.patch) by was created at 2008-04-06 09:48:08
+Attachment [sage-2825.patch](tarball://root/attachments/some-uuid/ticket2825/sage-2825.patch) by @williamstein created at 2008-04-06 09:48:08
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_007570.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason ryan\n\nKeywords: list_plot\n\nlist_plot does not accept **empty** lists:\n\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([],rgbcolor=(0,0,1))\n\nIndexError: list index out of range\n```\n\n\ndoes not work, whereas\n\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([2],rgbcolor=(0,0,1))\n```\n\n\ndoes work. It would be nicer if list_plot of empty lists gives an empty graphics object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7570\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout ryan\n\nKeywords: list_plot\n\nlist_plot does not accept **empty** lists:\n\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([],rgbcolor=(0,0,1))\n\nIndexError: list index out of range\n```\n\n\ndoes not work, whereas\n\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([2],rgbcolor=(0,0,1))\n```\n\n\ndoes work. It would be nicer if list_plot of empty lists gives an empty graphics object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7570\n\n",
     "created_at": "2009-12-01T14:16:10Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_007570.json:
     "title": "default : list_plot of empty lists",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7570",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason ryan
+CC:  @jasongrout ryan
 
 Keywords: list_plot
 
@@ -59,7 +59,7 @@ archive/issue_comments_064407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64407",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_064408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64408",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_064415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64415",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -447,16 +447,16 @@ added documentation
 archive/issue_comments_064422.json:
 ```json
 {
-    "body": "Attachment [trac_7570_empty_graphics.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.patch) by aly.deines created at 2011-01-09 20:19:59\n\nThe only test that didn't pass was ./sage -t devel/sage/sage/plot/arrow.py and I think it's only because you have line 412 in:\n\n```\nsage: arrow2d(headpoint=None, tailpoint) \n```\n\n\n\nIf you delete that line, the tests pass and everything looks good.",
+    "body": "Attachment [trac_7570_empty_graphics.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.patch) by @adeines created at 2011-01-09 20:19:59\n\nThe only test that didn't pass was ./sage -t devel/sage/sage/plot/arrow.py and I think it's only because you have line 412 in:\n\n```\nsage: arrow2d(headpoint=None, tailpoint) \n```\n\n\n\nIf you delete that line, the tests pass and everything looks good.",
     "created_at": "2011-01-09T20:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64422",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
-Attachment [trac_7570_empty_graphics.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.patch) by aly.deines created at 2011-01-09 20:19:59
+Attachment [trac_7570_empty_graphics.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.patch) by @adeines created at 2011-01-09 20:19:59
 
 The only test that didn't pass was ./sage -t devel/sage/sage/plot/arrow.py and I think it's only because you have line 412 in:
 
@@ -480,7 +480,7 @@ archive/issue_comments_064423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64423",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -534,7 +534,7 @@ archive/issue_comments_064426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64426",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_064427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64427",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_064428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64428",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -588,7 +588,7 @@ archive/issue_comments_064429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64429",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -606,7 +606,7 @@ archive/issue_comments_064430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64430",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -624,7 +624,7 @@ archive/issue_comments_064431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64431",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -642,7 +642,7 @@ archive/issue_comments_064432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64432",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -660,7 +660,7 @@ archive/issue_comments_064433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64433",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -683,7 +683,7 @@ archive/issue_comments_064434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64434",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -696,16 +696,16 @@ Can somebody please fix the trivial issues with this ticket?
 archive/issue_comments_064435.json:
 ```json
 {
-    "body": "Attachment [trac_7570_empty_graphics.2.2.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.2.2.patch) by kcrisman created at 2011-02-07 15:53:22\n\nUse this patch only",
+    "body": "Attachment [trac_7570_empty_graphics.2.2.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.2.2.patch) by @kcrisman created at 2011-02-07 15:53:22\n\nUse this patch only",
     "created_at": "2011-02-07T15:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64435",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7570_empty_graphics.2.2.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.2.2.patch) by kcrisman created at 2011-02-07 15:53:22
+Attachment [trac_7570_empty_graphics.2.2.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.2.2.patch) by @kcrisman created at 2011-02-07 15:53:22
 
 Use this patch only
 
@@ -721,7 +721,7 @@ archive/issue_comments_064436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64436",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -739,7 +739,7 @@ archive/issue_comments_064437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64437",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -757,7 +757,7 @@ archive/issue_comments_064438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64438",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -775,7 +775,7 @@ archive/issue_comments_064439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64439",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -793,7 +793,7 @@ archive/issue_comments_064440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64440",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

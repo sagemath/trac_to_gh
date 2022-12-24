@@ -3,7 +3,7 @@
 archive/issues_007536.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7536\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7536\n\n",
     "created_at": "2009-11-26T10:52:58Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007536.json:
     "title": "Toroidal Grid in graph_generators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7536",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_063917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7536#issuecomment-63917",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_063918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7536#issuecomment-63918",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_063919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7536#issuecomment-63919",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -86,16 +86,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_063920.json:
 ```json
 {
-    "body": "Attachment [trac_7536.patch](tarball://root/attachments/some-uuid/ticket7536/trac_7536.patch) by rlm created at 2009-12-15 17:06:33",
+    "body": "Attachment [trac_7536.patch](tarball://root/attachments/some-uuid/ticket7536/trac_7536.patch) by @rlmill created at 2009-12-15 17:06:33",
     "created_at": "2009-12-15T17:06:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7536#issuecomment-63920",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7536.patch](tarball://root/attachments/some-uuid/ticket7536/trac_7536.patch) by rlm created at 2009-12-15 17:06:33
+Attachment [trac_7536.patch](tarball://root/attachments/some-uuid/ticket7536/trac_7536.patch) by @rlmill created at 2009-12-15 17:06:33
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_063921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7536#issuecomment-63921",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

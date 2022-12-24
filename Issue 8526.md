@@ -3,7 +3,7 @@
 archive/issues_008526.json:
 ```json
 {
-    "body": "Assignee: schilly\n\nCC:  hivert\n\nIn a number of emails I get from trac, I see lines like this:\n\n\n```\nChanges (by newvalueoldvalue): \n```\n\n\nThe `newvalueoldvalue` should instead be an actual username. I'm not sure if this is an actual trac bug or if it's something about our configuration. For this ticket, someone should figure that out, and either file a new bug, fix the trac configuration, or file a bug with trac itself (if that's where the issue is).\n\nThis came up on the following sage-devel thread: \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/060f5430428fd945#\n\nIssue created by migration from https://trac.sagemath.org/ticket/8526\n\n",
+    "body": "Assignee: @haraldschilly\n\nCC:  @hivert\n\nIn a number of emails I get from trac, I see lines like this:\n\n\n```\nChanges (by newvalueoldvalue): \n```\n\n\nThe `newvalueoldvalue` should instead be an actual username. I'm not sure if this is an actual trac bug or if it's something about our configuration. For this ticket, someone should figure that out, and either file a new bug, fix the trac configuration, or file a bug with trac itself (if that's where the issue is).\n\nThis came up on the following sage-devel thread: \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/060f5430428fd945#\n\nIssue created by migration from https://trac.sagemath.org/ticket/8526\n\n",
     "created_at": "2010-03-13T18:10:45Z",
     "labels": [
         "website/wiki",
@@ -14,12 +14,12 @@ archive/issues_008526.json:
     "title": "Missing usernames in trac emails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8526",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: schilly
+Assignee: @haraldschilly
 
-CC:  hivert
+CC:  @hivert
 
 In a number of emails I get from trac, I see lines like this:
 
@@ -51,7 +51,7 @@ archive/issue_comments_077052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77052",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_077053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77053",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_077054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77054",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_077055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77055",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_077056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77056",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_077057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77057",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_077058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77058",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_077059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77059",
-    "user": "paulmasson"
+    "user": "@paulmasson"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_077060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77060",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

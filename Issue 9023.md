@@ -3,7 +3,7 @@
 archive/issues_009023.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp\n\nThe spkg-install has the usual dumb code for building 64-bit on OS X. \n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"-O2 -g -fPIC -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\n\nThis should be easy to fix, by removing the OS X requirement. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9023\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nThe spkg-install has the usual dumb code for building 64-bit on OS X. \n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"-O2 -g -fPIC -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\n\nThis should be easy to fix, by removing the OS X requirement. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9023\n\n",
     "created_at": "2010-05-23T20:59:54Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009023.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp
+CC:  @jaapspies
 
 The spkg-install has the usual dumb code for building 64-bit on OS X. 
 
@@ -207,7 +207,7 @@ archive/issue_comments_083490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83490",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_083491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83491",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

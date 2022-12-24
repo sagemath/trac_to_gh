@@ -3,7 +3,7 @@
 archive/issues_000193.json:
 ```json
 {
-    "body": "Assignee: was\n\nElliptic curves have `a_invariants()` and `b_invariants()` methods. They also have `a1()`, `a3()` etc. Would be convenient if they also had `b2()` through `b8()`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/193\n\n",
+    "body": "Assignee: @williamstein\n\nElliptic curves have `a_invariants()` and `b_invariants()` methods. They also have `a1()`, `a3()` etc. Would be convenient if they also had `b2()` through `b8()`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/193\n\n",
     "created_at": "2007-01-15T16:42:33Z",
     "labels": [
         "algebraic geometry",
@@ -16,7 +16,7 @@ archive/issues_000193.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Elliptic curves have `a_invariants()` and `b_invariants()` methods. They also have `a1()`, `a3()` etc. Would be convenient if they also had `b2()` through `b8()`.
 
@@ -37,7 +37,7 @@ archive/issue_comments_000885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/193#issuecomment-885",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_000886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/193#issuecomment-886",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

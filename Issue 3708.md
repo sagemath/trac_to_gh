@@ -14,7 +14,7 @@ archive/issues_003708.json:
     "title": "something screwy in the reference manual -- coding theory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3708",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: wdjoyner
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3708
 archive/issue_comments_026323.json:
 ```json
 {
-    "body": "Attachment [10104.patch](tarball://root/attachments/some-uuid/ticket3708/10104.patch) by wdj created at 2008-07-22 15:25:43\n\npatch based on 3.0.6.rc0",
+    "body": "Attachment [10104.patch](tarball://root/attachments/some-uuid/ticket3708/10104.patch) by @wdjoyner created at 2008-07-22 15:25:43\n\npatch based on 3.0.6.rc0",
     "created_at": "2008-07-22T15:25:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3708#issuecomment-26323",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [10104.patch](tarball://root/attachments/some-uuid/ticket3708/10104.patch) by wdj created at 2008-07-22 15:25:43
+Attachment [10104.patch](tarball://root/attachments/some-uuid/ticket3708/10104.patch) by @wdjoyner created at 2008-07-22 15:25:43
 
 patch based on 3.0.6.rc0
 
@@ -64,7 +64,7 @@ archive/issue_comments_026324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3708#issuecomment-26324",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_026325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3708#issuecomment-26325",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

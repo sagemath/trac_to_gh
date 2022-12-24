@@ -14,7 +14,7 @@ archive/issues_006303.json:
     "title": "sage-4.0.2.rc0 test failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6303",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -54,7 +54,7 @@ archive/issue_comments_050285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50285",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_050286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50286",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -87,16 +87,16 @@ Applies to 4.0.2.rc0
 archive/issue_comments_050287.json:
 ```json
 {
-    "body": "Attachment [trac_6303.patch](tarball://root/attachments/some-uuid/ticket6303/trac_6303.patch) by cremona created at 2009-06-15 19:04:09\n\nAs I said on sage-devel, this patch does two things: (1) fix the doctest so it does not depend on the ordering of primes_above() output; (2) fix primes_above to it (partially) orders its output as its docstring describes.",
+    "body": "Attachment [trac_6303.patch](tarball://root/attachments/some-uuid/ticket6303/trac_6303.patch) by @JohnCremona created at 2009-06-15 19:04:09\n\nAs I said on sage-devel, this patch does two things: (1) fix the doctest so it does not depend on the ordering of primes_above() output; (2) fix primes_above to it (partially) orders its output as its docstring describes.",
     "created_at": "2009-06-15T19:04:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50287",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6303.patch](tarball://root/attachments/some-uuid/ticket6303/trac_6303.patch) by cremona created at 2009-06-15 19:04:09
+Attachment [trac_6303.patch](tarball://root/attachments/some-uuid/ticket6303/trac_6303.patch) by @JohnCremona created at 2009-06-15 19:04:09
 
 As I said on sage-devel, this patch does two things: (1) fix the doctest so it does not depend on the ordering of primes_above() output; (2) fix primes_above to it (partially) orders its output as its docstring describes.
 
@@ -112,7 +112,7 @@ archive/issue_comments_050288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50288",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_050289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50289",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_050290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50290",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_050291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50291",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_050292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50292",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_050293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50293",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_050294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50294",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_050295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50295",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_050296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50296",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_050297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50297",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_050298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50298",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_050299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50299",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -341,16 +341,16 @@ Apologies sine it was my "trivial" patch which caused the problems.  The whole p
 archive/issue_comments_050300.json:
 ```json
 {
-    "body": "Attachment [trac_6303_pt2.patch](tarball://root/attachments/some-uuid/ticket6303/trac_6303_pt2.patch) by craigcitro created at 2009-06-16 08:50:07\n\nActually, I just tried this again on two different machines (32 bit OSX and sage.math), and it seems to work fine with the second patch. (Nick tried this on 32 bit OSX and had trouble, but I can't reproduce that.) If someone gets this to fail, let me know what arch/OS.",
+    "body": "Attachment [trac_6303_pt2.patch](tarball://root/attachments/some-uuid/ticket6303/trac_6303_pt2.patch) by @craigcitro created at 2009-06-16 08:50:07\n\nActually, I just tried this again on two different machines (32 bit OSX and sage.math), and it seems to work fine with the second patch. (Nick tried this on 32 bit OSX and had trouble, but I can't reproduce that.) If someone gets this to fail, let me know what arch/OS.",
     "created_at": "2009-06-16T08:50:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50300",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_6303_pt2.patch](tarball://root/attachments/some-uuid/ticket6303/trac_6303_pt2.patch) by craigcitro created at 2009-06-16 08:50:07
+Attachment [trac_6303_pt2.patch](tarball://root/attachments/some-uuid/ticket6303/trac_6303_pt2.patch) by @craigcitro created at 2009-06-16 08:50:07
 
 Actually, I just tried this again on two different machines (32 bit OSX and sage.math), and it seems to work fine with the second patch. (Nick tried this on 32 bit OSX and had trouble, but I can't reproduce that.) If someone gets this to fail, let me know what arch/OS.
 
@@ -366,7 +366,7 @@ archive/issue_comments_050301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50301",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_050302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6303#issuecomment-50302",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

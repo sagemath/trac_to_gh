@@ -3,7 +3,7 @@
 archive/issues_006344.json:
 ```json
 {
-    "body": "CC:  jason mvngu robertwb eviatarbach schymans pbruin nbruin\n\nNew symbolics uses \"D\" format for derivatives instead of old \"diff\" format. \n\nSee the threads below for discussion on various related issues\n\n**[1]**  http://groups.google.com/group/sage-devel/browse_thread/thread/7479c3eeb96348a2\n\n**[2]**  http://groups.google.com/group/sage-devel/browse_thread/thread/2c8068f27c1fb642\n\nThe purpose of this patch to decide the strategy: how to tackle the various issues while typesetting D derivative.\n\nSome part of the code from the patch #5711 should be taken out.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6344\n\n",
+    "body": "CC:  @jasongrout mvngu @robertwb @eviatarbach schymans @pjbruin @nbruin\n\nNew symbolics uses \"D\" format for derivatives instead of old \"diff\" format. \n\nSee the threads below for discussion on various related issues\n\n**[1]**  http://groups.google.com/group/sage-devel/browse_thread/thread/7479c3eeb96348a2\n\n**[2]**  http://groups.google.com/group/sage-devel/browse_thread/thread/2c8068f27c1fb642\n\nThe purpose of this patch to decide the strategy: how to tackle the various issues while typesetting D derivative.\n\nSome part of the code from the patch #5711 should be taken out.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6344\n\n",
     "created_at": "2009-06-16T23:47:36Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006344.json:
     "title": "Typesetting partial derivatives in new Symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6344",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
-CC:  jason mvngu robertwb eviatarbach schymans pbruin nbruin
+CC:  @jasongrout mvngu @robertwb @eviatarbach schymans @pjbruin @nbruin
 
 New symbolics uses "D" format for derivatives instead of old "diff" format. 
 
@@ -47,7 +47,7 @@ archive/issue_comments_050702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50702",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -60,16 +60,16 @@ an attempt at implementing the MMA style, for testing only
 archive/issue_comments_050703.json:
 ```json
 {
-    "body": "Attachment [trac_6344-mma_style_attempt.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-mma_style_attempt.patch) by burcin created at 2009-06-24 21:49:13\n\nattachment:trac_6344-mma_style_attempt.patch implements an approximation to MMA style. It is just for testing, needs much more work for inclusion.\n\nIt doesn't look good in text only mode:\n\n\n```\nsage: f = function('f')\nsage: f(x).derivative(x,3)\nf^{(3)}(x)\n```\n",
+    "body": "Attachment [trac_6344-mma_style_attempt.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-mma_style_attempt.patch) by @burcin created at 2009-06-24 21:49:13\n\nattachment:trac_6344-mma_style_attempt.patch implements an approximation to MMA style. It is just for testing, needs much more work for inclusion.\n\nIt doesn't look good in text only mode:\n\n\n```\nsage: f = function('f')\nsage: f(x).derivative(x,3)\nf^{(3)}(x)\n```\n",
     "created_at": "2009-06-24T21:49:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50703",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6344-mma_style_attempt.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-mma_style_attempt.patch) by burcin created at 2009-06-24 21:49:13
+Attachment [trac_6344-mma_style_attempt.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-mma_style_attempt.patch) by @burcin created at 2009-06-24 21:49:13
 
 attachment:trac_6344-mma_style_attempt.patch implements an approximation to MMA style. It is just for testing, needs much more work for inclusion.
 
@@ -95,7 +95,7 @@ archive/issue_comments_050704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50704",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_050705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50705",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -178,16 +178,16 @@ Changing status from new to assigned.
 archive/issue_comments_050706.json:
 ```json
 {
-    "body": "Set assignee to burcin.",
+    "body": "Set assignee to @burcin.",
     "created_at": "2009-07-14T21:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50706",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Set assignee to burcin.
+Set assignee to @burcin.
 
 
 
@@ -196,16 +196,16 @@ Set assignee to burcin.
 archive/issue_comments_050707.json:
 ```json
 {
-    "body": "Attachment [trac_6344-symbolic_derivative_print.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-symbolic_derivative_print.patch) by burcin created at 2009-07-14 21:39:39\n\nchange printing of symbolic derivatives",
+    "body": "Attachment [trac_6344-symbolic_derivative_print.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-symbolic_derivative_print.patch) by @burcin created at 2009-07-14 21:39:39\n\nchange printing of symbolic derivatives",
     "created_at": "2009-07-14T21:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50707",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6344-symbolic_derivative_print.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-symbolic_derivative_print.patch) by burcin created at 2009-07-14 21:39:39
+Attachment [trac_6344-symbolic_derivative_print.patch](tarball://root/attachments/some-uuid/ticket6344/trac_6344-symbolic_derivative_print.patch) by @burcin created at 2009-07-14 21:39:39
 
 change printing of symbolic derivatives
 
@@ -221,7 +221,7 @@ archive/issue_comments_050708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50708",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_050709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50709",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_050710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50710",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_050712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50712",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_050714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50714",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_050716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50716",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_050718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50718",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_050720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50720",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_050721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50721",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_050722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50722",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -612,7 +612,7 @@ archive/issue_comments_050723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50723",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -632,7 +632,7 @@ archive/issue_comments_050724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50724",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -650,7 +650,7 @@ archive/issue_comments_050725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50725",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -668,7 +668,7 @@ archive/issue_comments_050726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50726",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -686,7 +686,7 @@ archive/issue_comments_050727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50727",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -704,7 +704,7 @@ archive/issue_comments_050728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6344",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6344#issuecomment-50728",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

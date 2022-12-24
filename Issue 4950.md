@@ -14,7 +14,7 @@ archive/issues_004950.json:
     "title": "Sage-3.2.3 won't build on mandriva 32-bit due to an issue with numpy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4950",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -211,7 +211,7 @@ archive/issue_comments_037658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37658",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_037659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37659",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

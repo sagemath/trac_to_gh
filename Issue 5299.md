@@ -3,7 +3,7 @@
 archive/issues_005299.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5299\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5299\n\n",
     "created_at": "2009-02-17T23:44:26Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_005299.json:
     "title": "add functions for Mercurial queues to the hg_sage interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5299",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_040770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5299#issuecomment-40770",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_040771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5299#issuecomment-40771",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

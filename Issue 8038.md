@@ -3,7 +3,7 @@
 archive/issues_008038.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  acleone timdumol\n\nWhen a user is signing up for a notebook account, the email address field does not accept + in the address, even though such addresses are valid -- Gmail, for example, does this. If your account is foo`@`gmail.com, then foo+whatever`@`gmail.com automatically gets delivered to you.\n\nTesting with Gmail, things like \"foo++\", \"foo+bar+\" and so on all are accepted. We need to update the regular expression in sagenb/notebook/twist.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8038\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  acleone @TimDumol\n\nWhen a user is signing up for a notebook account, the email address field does not accept + in the address, even though such addresses are valid -- Gmail, for example, does this. If your account is foo`@`gmail.com, then foo+whatever`@`gmail.com automatically gets delivered to you.\n\nTesting with Gmail, things like \"foo++\", \"foo+bar+\" and so on all are accepted. We need to update the regular expression in sagenb/notebook/twist.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8038\n\n",
     "created_at": "2010-01-22T07:07:08Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008038.json:
     "title": "email address validator does not accept + in addresses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8038",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  acleone timdumol
+CC:  acleone @TimDumol
 
 When a user is signing up for a notebook account, the email address field does not accept + in the address, even though such addresses are valid -- Gmail, for example, does this. If your account is foo`@`gmail.com, then foo+whatever`@`gmail.com automatically gets delivered to you.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8038
 archive/issue_comments_070217.json:
 ```json
 {
-    "body": "Attachment [trac_8038.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038.patch) by ddrake created at 2010-01-22 07:32:03\n\nPatch up, please review. I tested this in a separate script, as I don't know how to run doctests for the notebook. But it's just running a regexp test on a string, so It Should Work.\n\nOne issue is that we are still rejecting a lot of valid email addresses: http://tools.ietf.org/html/rfc3696#section-3. But we are accepting some invalid addresses, since we're not checking for maximum length, or two consective periods, or beginning with a period, or...\n\nPersonally, coming up a regexp that exactly captures the RFC's requirements is a rabbit hole I don't want to go down, but if anyone else wants to try, feel free to upload a patch!",
+    "body": "Attachment [trac_8038.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038.patch) by @dandrake created at 2010-01-22 07:32:03\n\nPatch up, please review. I tested this in a separate script, as I don't know how to run doctests for the notebook. But it's just running a regexp test on a string, so It Should Work.\n\nOne issue is that we are still rejecting a lot of valid email addresses: http://tools.ietf.org/html/rfc3696#section-3. But we are accepting some invalid addresses, since we're not checking for maximum length, or two consective periods, or beginning with a period, or...\n\nPersonally, coming up a regexp that exactly captures the RFC's requirements is a rabbit hole I don't want to go down, but if anyone else wants to try, feel free to upload a patch!",
     "created_at": "2010-01-22T07:32:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70217",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_8038.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038.patch) by ddrake created at 2010-01-22 07:32:03
+Attachment [trac_8038.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038.patch) by @dandrake created at 2010-01-22 07:32:03
 
 Patch up, please review. I tested this in a separate script, as I don't know how to run doctests for the notebook. But it's just running a regexp test on a string, so It Should Work.
 
@@ -65,7 +65,7 @@ archive/issue_comments_070218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70218",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_070219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70219",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_070220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70220",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_070221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70221",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -146,16 +146,16 @@ It seems the main remaining sources of false negatives in `is_valid_email` are
 archive/issue_comments_070222.json:
 ```json
 {
-    "body": "Attachment [trac_8038-email_plus_addressing.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing.patch) by mpatel created at 2010-01-23 19:47:46\n\nUnquoted local-parts, no `..`, short domains.  Replaces previous.",
+    "body": "Attachment [trac_8038-email_plus_addressing.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing.patch) by @qed777 created at 2010-01-23 19:47:46\n\nUnquoted local-parts, no `..`, short domains.  Replaces previous.",
     "created_at": "2010-01-23T19:47:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70222",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8038-email_plus_addressing.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing.patch) by mpatel created at 2010-01-23 19:47:46
+Attachment [trac_8038-email_plus_addressing.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing.patch) by @qed777 created at 2010-01-23 19:47:46
 
 Unquoted local-parts, no `..`, short domains.  Replaces previous.
 
@@ -171,7 +171,7 @@ archive/issue_comments_070223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70223",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_070224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70224",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_070225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70225",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_070226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70226",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -287,16 +287,16 @@ More tests.  Replaces previous.
 archive/issue_comments_070227.json:
 ```json
 {
-    "body": "Attachment [trac_8038-email_plus_addressing_v2.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing_v2.patch) by ddrake created at 2010-01-24 05:41:44\n\nThanks for the explanation about the period (\"`\\.`\"). I see that you are preventing two periods in a row.\n\nYour changes look good. I applied the most recent patch and it passes doctests. Somehow I feel like a reviewer now, although I filed this ticket, so I think we need someone else to review it!",
+    "body": "Attachment [trac_8038-email_plus_addressing_v2.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing_v2.patch) by @dandrake created at 2010-01-24 05:41:44\n\nThanks for the explanation about the period (\"`\\.`\"). I see that you are preventing two periods in a row.\n\nYour changes look good. I applied the most recent patch and it passes doctests. Somehow I feel like a reviewer now, although I filed this ticket, so I think we need someone else to review it!",
     "created_at": "2010-01-24T05:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70227",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_8038-email_plus_addressing_v2.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing_v2.patch) by ddrake created at 2010-01-24 05:41:44
+Attachment [trac_8038-email_plus_addressing_v2.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing_v2.patch) by @dandrake created at 2010-01-24 05:41:44
 
 Thanks for the explanation about the period ("`\.`"). I see that you are preventing two periods in a row.
 
@@ -314,7 +314,7 @@ archive/issue_comments_070228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70228",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_070229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70229",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_070230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70230",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -370,16 +370,16 @@ For reference, this feature request is #7629.
 archive/issue_comments_070231.json:
 ```json
 {
-    "body": "Changing assignee from was to ddrake.",
+    "body": "Changing assignee from @williamstein to @dandrake.",
     "created_at": "2010-01-27T03:23:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70231",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from was to ddrake.
+Changing assignee from @williamstein to @dandrake.
 
 
 
@@ -388,16 +388,16 @@ Changing assignee from was to ddrake.
 archive/issue_comments_070232.json:
 ```json
 {
-    "body": "Attachment [trac_8038-email_plus_addressing_v3.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing_v3.patch) by mpatel created at 2010-01-27 12:13:17\n\nAdd custom test from notebook settings.  Replaces previous.",
+    "body": "Attachment [trac_8038-email_plus_addressing_v3.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing_v3.patch) by @qed777 created at 2010-01-27 12:13:17\n\nAdd custom test from notebook settings.  Replaces previous.",
     "created_at": "2010-01-27T12:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70232",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8038-email_plus_addressing_v3.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing_v3.patch) by mpatel created at 2010-01-27 12:13:17
+Attachment [trac_8038-email_plus_addressing_v3.patch](tarball://root/attachments/some-uuid/ticket8038/trac_8038-email_plus_addressing_v3.patch) by @qed777 created at 2010-01-27 12:13:17
 
 Add custom test from notebook settings.  Replaces previous.
 
@@ -413,7 +413,7 @@ archive/issue_comments_070233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70233",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_070234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70234",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_070235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70235",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -470,7 +470,7 @@ archive/issue_comments_070236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70236",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_070237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70237",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_070238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70238",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_070239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70239",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_070240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70240",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -576,7 +576,7 @@ archive/issue_comments_070241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8038",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8038#issuecomment-70241",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

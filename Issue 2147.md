@@ -3,7 +3,7 @@
 archive/issues_002147.json:
 ```json
 {
-    "body": "Assignee: ncalexan\n\nCC:  ncalexander@gmail.com\n\nKeywords: cyclotomic polynomial default ZZ QQ\n\n`cyclotomic_polynomial` should return an integer polynomial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2147\n\n",
+    "body": "Assignee: @ncalexan\n\nCC:  ncalexander@gmail.com\n\nKeywords: cyclotomic polynomial default ZZ QQ\n\n`cyclotomic_polynomial` should return an integer polynomial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2147\n\n",
     "created_at": "2008-02-13T03:57:53Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_002147.json:
     "title": "Make default cyclotomic polynomial be defined over ZZ.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2147",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: ncalexan
+Assignee: @ncalexan
 
 CC:  ncalexander@gmail.com
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2147
 archive/issue_comments_014088.json:
 ```json
 {
-    "body": "Attachment [2147-ncalexan-cyclotomic-polynomial-1.patch](tarball://root/attachments/some-uuid/ticket2147/2147-ncalexan-cyclotomic-polynomial-1.patch) by ncalexan created at 2008-02-13 04:11:49",
+    "body": "Attachment [2147-ncalexan-cyclotomic-polynomial-1.patch](tarball://root/attachments/some-uuid/ticket2147/2147-ncalexan-cyclotomic-polynomial-1.patch) by @ncalexan created at 2008-02-13 04:11:49",
     "created_at": "2008-02-13T04:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2147#issuecomment-14088",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2147-ncalexan-cyclotomic-polynomial-1.patch](tarball://root/attachments/some-uuid/ticket2147/2147-ncalexan-cyclotomic-polynomial-1.patch) by ncalexan created at 2008-02-13 04:11:49
+Attachment [2147-ncalexan-cyclotomic-polynomial-1.patch](tarball://root/attachments/some-uuid/ticket2147/2147-ncalexan-cyclotomic-polynomial-1.patch) by @ncalexan created at 2008-02-13 04:11:49
 
 
 

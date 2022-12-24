@@ -3,7 +3,7 @@
 archive/issues_002758.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nDebian switched from g77 to gfortran while I wasn't looking; these patches should update the Debian packages for iml and linbox to deal with the transition.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2758\n\n",
+    "body": "Assignee: @timabbott\n\nDebian switched from g77 to gfortran while I wasn't looking; these patches should update the Debian packages for iml and linbox to deal with the transition.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2758\n\n",
     "created_at": "2008-04-01T18:52:01Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002758.json:
     "title": "[with patch, needs review] iml and linbox updates for Debian gfortran transition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2758",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 Debian switched from g77 to gfortran while I wasn't looking; these patches should update the Debian packages for iml and linbox to deal with the transition.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2758
 archive/issue_comments_018960.json:
 ```json
 {
-    "body": "Attachment [iml-gfortran.patch](tarball://root/attachments/some-uuid/ticket2758/iml-gfortran.patch) by tabbott created at 2008-04-01 18:52:17",
+    "body": "Attachment [iml-gfortran.patch](tarball://root/attachments/some-uuid/ticket2758/iml-gfortran.patch) by @timabbott created at 2008-04-01 18:52:17",
     "created_at": "2008-04-01T18:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2758#issuecomment-18960",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [iml-gfortran.patch](tarball://root/attachments/some-uuid/ticket2758/iml-gfortran.patch) by tabbott created at 2008-04-01 18:52:17
+Attachment [iml-gfortran.patch](tarball://root/attachments/some-uuid/ticket2758/iml-gfortran.patch) by @timabbott created at 2008-04-01 18:52:17
 
 
 

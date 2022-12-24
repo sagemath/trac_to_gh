@@ -13,7 +13,7 @@ archive/issues_000134.json:
     "title": "GMP patches: AMD Opteron 64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/134",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -36,7 +36,7 @@ archive/issue_comments_000639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/134#issuecomment-639",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -54,7 +54,7 @@ archive/issue_comments_000640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/134#issuecomment-640",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

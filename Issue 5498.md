@@ -3,7 +3,7 @@
 archive/issues_005498.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5498\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5498\n\n",
     "created_at": "2009-03-12T04:21:47Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_005498.json:
     "title": "[with patch; needs review] fix weird weird bug in maxima.py and garbage collection (technical 3.4.rc2 issues)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5498",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 

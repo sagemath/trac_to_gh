@@ -3,7 +3,7 @@
 archive/issues_002513.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  robertwb cwitty\n\nSo I've noticed for a little while now that I have the following strange problem: \n\n\n```\nsage/rings/number_field/totallyreal_data.c: In function \u00e2:\nsage/rings/number_field/totallyreal_data.c:1920: error: \u00e2 undeclared (first use in this function)\n```\n\n\nBut then, if you comment out the fix for trac ticket #276 (which sets the environment variable `LANG`), that same error becomes:\n\n\n```\nsage/rings/number_field/totallyreal_data.c: In function '__pyx_f_4sage_5rings_12number_field_16totallyreal_data_lagrange_degree_3_c':\nsage/rings/number_field/totallyreal_data.c:1920: error: 'intp' undeclared (first use in this function)\n```\n\n\nObviously we'd prefer the second. What I think we should do is move setting the `LANG` environment variable somewhere closer in the build & run process to where Maxima gets initialized. I haven't had time to sit down and look at this at all -- I'm assigning it to myself, but if someone else wants to jump in and fix it before me, I definitely won't mind.\n\nI'm also adding robertwb to the cc, because I think I recall him saying he ran into this, too, and he's (1) probably happy to have a workaround, and (2) likely to come up with a fix himself, saving me work. :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2513\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @robertwb cwitty\n\nSo I've noticed for a little while now that I have the following strange problem: \n\n\n```\nsage/rings/number_field/totallyreal_data.c: In function \u00e2:\nsage/rings/number_field/totallyreal_data.c:1920: error: \u00e2 undeclared (first use in this function)\n```\n\n\nBut then, if you comment out the fix for trac ticket #276 (which sets the environment variable `LANG`), that same error becomes:\n\n\n```\nsage/rings/number_field/totallyreal_data.c: In function '__pyx_f_4sage_5rings_12number_field_16totallyreal_data_lagrange_degree_3_c':\nsage/rings/number_field/totallyreal_data.c:1920: error: 'intp' undeclared (first use in this function)\n```\n\n\nObviously we'd prefer the second. What I think we should do is move setting the `LANG` environment variable somewhere closer in the build & run process to where Maxima gets initialized. I haven't had time to sit down and look at this at all -- I'm assigning it to myself, but if someone else wants to jump in and fix it before me, I definitely won't mind.\n\nI'm also adding robertwb to the cc, because I think I recall him saying he ran into this, too, and he's (1) probably happy to have a workaround, and (2) likely to come up with a fix himself, saving me work. :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2513\n\n",
     "created_at": "2008-03-13T23:22:50Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_002513.json:
     "title": "Weird printing issues with cython, caused by LANG environment variable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2513",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  robertwb cwitty
+CC:  @robertwb cwitty
 
 So I've noticed for a little while now that I have the following strange problem: 
 
@@ -59,7 +59,7 @@ archive/issue_comments_017042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2513#issuecomment-17042",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_017043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2513#issuecomment-17043",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -90,16 +90,16 @@ So I just happened to glance back at this ticket tonight because I hit this same
 archive/issue_comments_017044.json:
 ```json
 {
-    "body": "Attachment [trac-2513.patch](tarball://root/attachments/some-uuid/ticket2513/trac-2513.patch) by craigcitro created at 2009-06-14 09:02:59",
+    "body": "Attachment [trac-2513.patch](tarball://root/attachments/some-uuid/ticket2513/trac-2513.patch) by @craigcitro created at 2009-06-14 09:02:59",
     "created_at": "2009-06-14T09:02:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2513#issuecomment-17044",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2513.patch](tarball://root/attachments/some-uuid/ticket2513/trac-2513.patch) by craigcitro created at 2009-06-14 09:02:59
+Attachment [trac-2513.patch](tarball://root/attachments/some-uuid/ticket2513/trac-2513.patch) by @craigcitro created at 2009-06-14 09:02:59
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_017045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2513#issuecomment-17045",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005596.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  nthiery georgsweber\n\nSee discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/d2145cd313f92bb8/c3049a540f91bab3?hl=en&lnk=gst&q=coercion#c3049a540f91bab3\n\nIssue created by migration from https://trac.sagemath.org/ticket/5596\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @nthiery georgsweber\n\nSee discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/d2145cd313f92bb8/c3049a540f91bab3?hl=en&lnk=gst&q=coercion#c3049a540f91bab3\n\nIssue created by migration from https://trac.sagemath.org/ticket/5596\n\n",
     "created_at": "2009-03-24T05:06:32Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_005596.json:
     "title": "[with patch, needs review] refactor coercion to catch fewer exceptions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5596",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  nthiery georgsweber
+CC:  @nthiery georgsweber
 
 See discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/d2145cd313f92bb8/c3049a540f91bab3?hl=en&lnk=gst&q=coercion#c3049a540f91bab3
 
@@ -99,7 +99,7 @@ archive/issue_comments_043580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43580",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -112,16 +112,16 @@ OK, I'll try and rebase these for 3.4.2
 archive/issue_comments_043581.json:
 ```json
 {
-    "body": "Attachment [5596-coerce-exceptions-new.patch](tarball://root/attachments/some-uuid/ticket5596/5596-coerce-exceptions-new.patch) by robertwb created at 2009-09-24 04:25:51\n\nRebased against 4.1.1",
+    "body": "Attachment [5596-coerce-exceptions-new.patch](tarball://root/attachments/some-uuid/ticket5596/5596-coerce-exceptions-new.patch) by @robertwb created at 2009-09-24 04:25:51\n\nRebased against 4.1.1",
     "created_at": "2009-09-24T04:25:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43581",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5596-coerce-exceptions-new.patch](tarball://root/attachments/some-uuid/ticket5596/5596-coerce-exceptions-new.patch) by robertwb created at 2009-09-24 04:25:51
+Attachment [5596-coerce-exceptions-new.patch](tarball://root/attachments/some-uuid/ticket5596/5596-coerce-exceptions-new.patch) by @robertwb created at 2009-09-24 04:25:51
 
 Rebased against 4.1.1
 
@@ -137,7 +137,7 @@ archive/issue_comments_043582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43582",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_043583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43583",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_043585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43585",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_043586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43586",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_043587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43587",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_043588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43588",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_043589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43589",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_043590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43590",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_043591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43591",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_043592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43592",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -534,7 +534,7 @@ archive/issue_comments_043593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43593",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_043594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43594",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -570,7 +570,7 @@ archive/issue_comments_043595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43595",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -583,16 +583,16 @@ apply on top of previous
 archive/issue_comments_043596.json:
 ```json
 {
-    "body": "Attachment [5596-exposure-fixes.patch](tarball://root/attachments/some-uuid/ticket5596/5596-exposure-fixes.patch) by robertwb created at 2009-10-20 05:31:11\n\nOK, this was one of those weird bugs that was only reproducible in doctests, and an all around pain to track down. Apparently the coercion changes caused some parents to not get garbage collected as eagerly, which exposed a bug when fgp modules are cached and reused. I am still unsure what exactly the bug is (I have a hunch it has to do with parents that are defined in doctests getting reused in other doctests after their environment has been recycled or something) but I have disabled caching for now to get it to work. \n\nI refreshed the exposure-fixes patch, should work fine now.",
+    "body": "Attachment [5596-exposure-fixes.patch](tarball://root/attachments/some-uuid/ticket5596/5596-exposure-fixes.patch) by @robertwb created at 2009-10-20 05:31:11\n\nOK, this was one of those weird bugs that was only reproducible in doctests, and an all around pain to track down. Apparently the coercion changes caused some parents to not get garbage collected as eagerly, which exposed a bug when fgp modules are cached and reused. I am still unsure what exactly the bug is (I have a hunch it has to do with parents that are defined in doctests getting reused in other doctests after their environment has been recycled or something) but I have disabled caching for now to get it to work. \n\nI refreshed the exposure-fixes patch, should work fine now.",
     "created_at": "2009-10-20T05:31:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43596",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5596-exposure-fixes.patch](tarball://root/attachments/some-uuid/ticket5596/5596-exposure-fixes.patch) by robertwb created at 2009-10-20 05:31:11
+Attachment [5596-exposure-fixes.patch](tarball://root/attachments/some-uuid/ticket5596/5596-exposure-fixes.patch) by @robertwb created at 2009-10-20 05:31:11
 
 OK, this was one of those weird bugs that was only reproducible in doctests, and an all around pain to track down. Apparently the coercion changes caused some parents to not get garbage collected as eagerly, which exposed a bug when fgp modules are cached and reused. I am still unsure what exactly the bug is (I have a hunch it has to do with parents that are defined in doctests getting reused in other doctests after their environment has been recycled or something) but I have disabled caching for now to get it to work. 
 
@@ -610,7 +610,7 @@ archive/issue_comments_043597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43597",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -623,16 +623,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_043598.json:
 ```json
 {
-    "body": "Attachment [trac_5596-minor_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket5596/trac_5596-minor_doctest_fixes.patch) by mhansen created at 2009-10-21 05:19:43",
+    "body": "Attachment [trac_5596-minor_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket5596/trac_5596-minor_doctest_fixes.patch) by @mwhansen created at 2009-10-21 05:19:43",
     "created_at": "2009-10-21T05:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43598",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5596-minor_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket5596/trac_5596-minor_doctest_fixes.patch) by mhansen created at 2009-10-21 05:19:43
+Attachment [trac_5596-minor_doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket5596/trac_5596-minor_doctest_fixes.patch) by @mwhansen created at 2009-10-21 05:19:43
 
 
 
@@ -646,7 +646,7 @@ archive/issue_comments_043599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43599",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -666,7 +666,7 @@ archive/issue_comments_043600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43600",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -684,7 +684,7 @@ archive/issue_comments_043601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43601",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

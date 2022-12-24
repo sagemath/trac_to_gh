@@ -14,7 +14,7 @@ archive/issues_004485.json:
     "title": "notebook -- implicit multiplication is broken in the notebook but works on the command line (sage-3.1.4)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4485",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -56,7 +56,7 @@ archive/issue_comments_033125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33125",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_033126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33126",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_033127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33127",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -154,16 +154,16 @@ With patch?
 archive/issue_comments_033128.json:
 ```json
 {
-    "body": "Attachment [4485-implicit-mul.patch](tarball://root/attachments/some-uuid/ticket4485/4485-implicit-mul.patch) by robertwb created at 2008-11-13 22:47:32",
+    "body": "Attachment [4485-implicit-mul.patch](tarball://root/attachments/some-uuid/ticket4485/4485-implicit-mul.patch) by @robertwb created at 2008-11-13 22:47:32",
     "created_at": "2008-11-13T22:47:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33128",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4485-implicit-mul.patch](tarball://root/attachments/some-uuid/ticket4485/4485-implicit-mul.patch) by robertwb created at 2008-11-13 22:47:32
+Attachment [4485-implicit-mul.patch](tarball://root/attachments/some-uuid/ticket4485/4485-implicit-mul.patch) by @robertwb created at 2008-11-13 22:47:32
 
 
 

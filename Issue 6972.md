@@ -14,7 +14,7 @@ archive/issues_006972.json:
     "title": "update the r spkg in sage to 2.9.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6972",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_057665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6972#issuecomment-57665",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing priority from major to blocker.
 archive/issue_comments_057666.json:
 ```json
 {
-    "body": "Attachment [trac_6972-referee.patch](tarball://root/attachments/some-uuid/ticket6972/trac_6972-referee.patch) by was created at 2009-09-21 04:35:13",
+    "body": "Attachment [trac_6972-referee.patch](tarball://root/attachments/some-uuid/ticket6972/trac_6972-referee.patch) by @williamstein created at 2009-09-21 04:35:13",
     "created_at": "2009-09-21T04:35:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6972#issuecomment-57666",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6972-referee.patch](tarball://root/attachments/some-uuid/ticket6972/trac_6972-referee.patch) by was created at 2009-09-21 04:35:13
+Attachment [trac_6972-referee.patch](tarball://root/attachments/some-uuid/ticket6972/trac_6972-referee.patch) by @williamstein created at 2009-09-21 04:35:13
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_057667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6972#issuecomment-57667",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

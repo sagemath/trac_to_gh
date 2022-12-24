@@ -3,7 +3,7 @@
 archive/issues_005756.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5756\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5756\n\n",
     "created_at": "2009-04-11T17:24:57Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_005756.json:
     "title": "improve coverage of rings/morphism.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5756",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  robertwb
+CC:  @robertwb
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_044989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5756#issuecomment-44989",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_044990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5756#issuecomment-44990",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,16 +114,16 @@ sage: f(x)
 archive/issue_comments_044991.json:
 ```json
 {
-    "body": "Attachment [trac_5756.patch](tarball://root/attachments/some-uuid/ticket5756/trac_5756.patch) by was created at 2009-04-11 23:29:09",
+    "body": "Attachment [trac_5756.patch](tarball://root/attachments/some-uuid/ticket5756/trac_5756.patch) by @williamstein created at 2009-04-11 23:29:09",
     "created_at": "2009-04-11T23:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5756#issuecomment-44991",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5756.patch](tarball://root/attachments/some-uuid/ticket5756/trac_5756.patch) by was created at 2009-04-11 23:29:09
+Attachment [trac_5756.patch](tarball://root/attachments/some-uuid/ticket5756/trac_5756.patch) by @williamstein created at 2009-04-11 23:29:09
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_044992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5756#issuecomment-44992",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_044994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5756#issuecomment-44994",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_044998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5756#issuecomment-44998",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

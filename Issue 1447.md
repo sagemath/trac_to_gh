@@ -3,7 +3,7 @@
 archive/issues_001447.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/gbrefs.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/memusage.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/nf.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/ll.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/randompoly.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/PyPolyBoRi.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/heuristics.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/coding.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/statistics.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/blocks.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/__init__.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/dynamic/__init__.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/gbcore.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/specialsets.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/aes.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/check_claims.pyc'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1447\n\n",
+    "body": "Assignee: @burcin\n\n\n```\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/gbrefs.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/memusage.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/nf.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/ll.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/randompoly.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/PyPolyBoRi.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/heuristics.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/coding.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/statistics.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/blocks.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/__init__.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/dynamic/__init__.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/gbcore.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/specialsets.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/aes.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/check_claims.pyc'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1447\n\n",
     "created_at": "2007-12-10T10:18:19Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001447.json:
     "title": "Polybori permissions issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1447",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -56,7 +56,7 @@ archive/issue_comments_009324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1447#issuecomment-9324",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_009325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1447#issuecomment-9325",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_009326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1447#issuecomment-9326",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000756.json:
     "title": "modify how foo.derivative(...) works",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/756",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -69,7 +69,7 @@ archive/issue_comments_004470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/756#issuecomment-4470",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -117,16 +117,16 @@ The phrase "if the latter is absent" is a bit confusing; the first time I read i
 archive/issue_comments_004472.json:
 ```json
 {
-    "body": "Attachment [756-derivative-wrt.patch](tarball://root/attachments/some-uuid/ticket756/756-derivative-wrt.patch) by AlexGhitza created at 2008-02-18 02:06:03",
+    "body": "Attachment [756-derivative-wrt.patch](tarball://root/attachments/some-uuid/ticket756/756-derivative-wrt.patch) by @aghitza created at 2008-02-18 02:06:03",
     "created_at": "2008-02-18T02:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/756#issuecomment-4472",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [756-derivative-wrt.patch](tarball://root/attachments/some-uuid/ticket756/756-derivative-wrt.patch) by AlexGhitza created at 2008-02-18 02:06:03
+Attachment [756-derivative-wrt.patch](tarball://root/attachments/some-uuid/ticket756/756-derivative-wrt.patch) by @aghitza created at 2008-02-18 02:06:03
 
 
 
@@ -140,7 +140,7 @@ archive/issue_comments_004473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/756#issuecomment-4473",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -189,16 +189,16 @@ I've attached a patch (should be applied on top of alex's patch) which adds some
 archive/issue_comments_004476.json:
 ```json
 {
-    "body": "Attachment [756-derivative-wrt-new.patch](tarball://root/attachments/some-uuid/ticket756/756-derivative-wrt-new.patch) by AlexGhitza created at 2008-02-18 13:40:26",
+    "body": "Attachment [756-derivative-wrt-new.patch](tarball://root/attachments/some-uuid/ticket756/756-derivative-wrt-new.patch) by @aghitza created at 2008-02-18 13:40:26",
     "created_at": "2008-02-18T13:40:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/756#issuecomment-4476",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [756-derivative-wrt-new.patch](tarball://root/attachments/some-uuid/ticket756/756-derivative-wrt-new.patch) by AlexGhitza created at 2008-02-18 13:40:26
+Attachment [756-derivative-wrt-new.patch](tarball://root/attachments/some-uuid/ticket756/756-derivative-wrt-new.patch) by @aghitza created at 2008-02-18 13:40:26
 
 
 
@@ -212,7 +212,7 @@ archive/issue_comments_004477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/756#issuecomment-4477",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_004480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/756",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/756#issuecomment-4480",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

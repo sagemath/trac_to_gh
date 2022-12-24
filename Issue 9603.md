@@ -3,7 +3,7 @@
 archive/issues_009603.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  pjeremy mvngu mpatel\n\nCurrently iconv builds only on Solaris and Cygwin, as it caused problems on some linux distributions. \n\nIt would be good if this would build on HP-UX too, as then some other packages could be checked on HP-UX to aid testing on different platforms. This ticket makes 3 changes. \n\n* Changes `#!/bin/bash` to `#!/usr/bin/env bash` in spkg-check. This in in conformance with the [Sage Developers Guide](http://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg) and is necessary on HP-UX as 'bash' is not installed in /bin.\n\n\n```\n-#!/bin/bash\n+#!/usr/bin/env bash\n```\n\n\n* Force install on HP-UX, instead of just Cygwin and Solaris. The relevant bit of the patch is:\n\n```\n-# Only build iconv on Solaris and Cygwin\n-if [ \"x$UNAME\" != xSunOS ] && [ \"x$UNAME\" != xCYGWIN ] ; then  \n+# Only build iconv on Solaris, HP-UX and Cygwin\n+if [ \"x$UNAME\" != xSunOS ] && [ \"x$UNAME\" != xHP-UX ] && [ \"x$UNAME\" != xCYGWIN ] ; then\n```\n\n* Force iconv to be checked only HP-UX, in addition to Solaris and Cygwin on which it was previously checked. \n\n```\n-if [ \"x$UNAME\" != xSunOS ] && [ \"x$UNAME\" != xCYGWIN ] ; then  \n+if [ \"x$UNAME\" != xSunOS ] && [ \"x$UNAME\" != xHP-UX ] && [ \"x$UNAME\" != xCYGWIN ] ; then\n```\n\n\n* Print all tests have pass if they have done. The relevant bit of the patch is \n\n\n```\n+echo \"All the tests for iconv passed\"\n+exit 0 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9603\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @peterjeremy mvngu @qed777\n\nCurrently iconv builds only on Solaris and Cygwin, as it caused problems on some linux distributions. \n\nIt would be good if this would build on HP-UX too, as then some other packages could be checked on HP-UX to aid testing on different platforms. This ticket makes 3 changes. \n\n* Changes `#!/bin/bash` to `#!/usr/bin/env bash` in spkg-check. This in in conformance with the [Sage Developers Guide](http://www.sagemath.org/doc/developer/producing_spkgs.html#creating-a-new-spkg) and is necessary on HP-UX as 'bash' is not installed in /bin.\n\n\n```\n-#!/bin/bash\n+#!/usr/bin/env bash\n```\n\n\n* Force install on HP-UX, instead of just Cygwin and Solaris. The relevant bit of the patch is:\n\n```\n-# Only build iconv on Solaris and Cygwin\n-if [ \"x$UNAME\" != xSunOS ] && [ \"x$UNAME\" != xCYGWIN ] ; then  \n+# Only build iconv on Solaris, HP-UX and Cygwin\n+if [ \"x$UNAME\" != xSunOS ] && [ \"x$UNAME\" != xHP-UX ] && [ \"x$UNAME\" != xCYGWIN ] ; then\n```\n\n* Force iconv to be checked only HP-UX, in addition to Solaris and Cygwin on which it was previously checked. \n\n```\n-if [ \"x$UNAME\" != xSunOS ] && [ \"x$UNAME\" != xCYGWIN ] ; then  \n+if [ \"x$UNAME\" != xSunOS ] && [ \"x$UNAME\" != xHP-UX ] && [ \"x$UNAME\" != xCYGWIN ] ; then\n```\n\n\n* Print all tests have pass if they have done. The relevant bit of the patch is \n\n\n```\n+echo \"All the tests for iconv passed\"\n+exit 0 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9603\n\n",
     "created_at": "2010-07-26T13:33:05Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009603.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  pjeremy mvngu mpatel
+CC:  @peterjeremy mvngu @qed777
 
 Currently iconv builds only on Solaris and Cygwin, as it caused problems on some linux distributions. 
 
@@ -192,7 +192,7 @@ archive/issue_comments_092956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92956",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_092962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92962",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_092963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92963",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_092966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92966",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -528,7 +528,7 @@ archive/issue_comments_092967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92967",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_092968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92968",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -593,7 +593,7 @@ archive/issue_comments_092969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92969",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -659,7 +659,7 @@ archive/issue_comments_092972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92972",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -722,7 +722,7 @@ archive/issue_comments_092974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92974",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -781,7 +781,7 @@ archive/issue_comments_092976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92976",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -818,7 +818,7 @@ archive/issue_comments_092977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92977",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -942,7 +942,7 @@ archive/issue_comments_092981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92981",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1093,7 +1093,7 @@ archive/issue_comments_092986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92986",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1121,7 +1121,7 @@ archive/issue_comments_092987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92987",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1186,7 +1186,7 @@ archive/issue_comments_092989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92989",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1243,7 +1243,7 @@ archive/issue_comments_092990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-92990",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1515,7 +1515,7 @@ archive/issue_comments_093001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93001",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1537,16 +1537,16 @@ I'll commit your latest changes in your name...
 archive/issue_comments_093002.json:
 ```json
 {
-    "body": "Attachment [trac_9603-iconv_spkg-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-first_reviewer.patch) by leif created at 2010-09-08 16:05:23\n\nSPKG patch. Apply on top of other patches. (Consistently use `\"$UNAME\"`; clean-up.)",
+    "body": "Attachment [trac_9603-iconv_spkg-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-first_reviewer.patch) by @nexttime created at 2010-09-08 16:05:23\n\nSPKG patch. Apply on top of other patches. (Consistently use `\"$UNAME\"`; clean-up.)",
     "created_at": "2010-09-08T16:05:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93002",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9603-iconv_spkg-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-first_reviewer.patch) by leif created at 2010-09-08 16:05:23
+Attachment [trac_9603-iconv_spkg-first_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-first_reviewer.patch) by @nexttime created at 2010-09-08 16:05:23
 
 SPKG patch. Apply on top of other patches. (Consistently use `"$UNAME"`; clean-up.)
 
@@ -1592,7 +1592,7 @@ archive/issue_comments_093004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93004",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1665,7 +1665,7 @@ archive/issue_comments_093006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93006",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1705,7 +1705,7 @@ archive/issue_comments_093008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93008",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1718,16 +1718,16 @@ Optional SPKG patch. Apply on top of first reviewer patch. (Stylistic change.))
 archive/issue_comments_093009.json:
 ```json
 {
-    "body": "Attachment [trac_9603-iconv_spkg-optional_second_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-optional_second_reviewer.patch) by leif created at 2010-09-08 18:11:52\n\nReplying to [comment:42 drkirkby]:\n> I think doing this in practice will be fraught with difficulty. The actual files installed might even depend on platform. (For example, shared libraries on HP-UX are .sl not .so). In general the files might depend on the value of environment variables. I think it's just best to not try to do that.\n\nWell, we have `rm -f` and (not only) filename globbing. In case we later run into problems (e.g. when upstream gets updated), *you* 're to blame (and you'll have to solve it)... So I won't mind omitting it now. ;-)\n\n> I think it was a bad idea of mine, and one not worth revisiting.\n\nMost spkgs do that.\n\n----\n\nI've attached my second reviewer patch which I would really like to see merged, too. :-)\n\n----\n\nI'll set this to \"positive review\" if you (and Peter) are ok with my changes (either both or just my first reviewer patch).",
+    "body": "Attachment [trac_9603-iconv_spkg-optional_second_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-optional_second_reviewer.patch) by @nexttime created at 2010-09-08 18:11:52\n\nReplying to [comment:42 drkirkby]:\n> I think doing this in practice will be fraught with difficulty. The actual files installed might even depend on platform. (For example, shared libraries on HP-UX are .sl not .so). In general the files might depend on the value of environment variables. I think it's just best to not try to do that.\n\nWell, we have `rm -f` and (not only) filename globbing. In case we later run into problems (e.g. when upstream gets updated), *you* 're to blame (and you'll have to solve it)... So I won't mind omitting it now. ;-)\n\n> I think it was a bad idea of mine, and one not worth revisiting.\n\nMost spkgs do that.\n\n----\n\nI've attached my second reviewer patch which I would really like to see merged, too. :-)\n\n----\n\nI'll set this to \"positive review\" if you (and Peter) are ok with my changes (either both or just my first reviewer patch).",
     "created_at": "2010-09-08T18:11:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93009",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9603-iconv_spkg-optional_second_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-optional_second_reviewer.patch) by leif created at 2010-09-08 18:11:52
+Attachment [trac_9603-iconv_spkg-optional_second_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-optional_second_reviewer.patch) by @nexttime created at 2010-09-08 18:11:52
 
 Replying to [comment:42 drkirkby]:
 > I think doing this in practice will be fraught with difficulty. The actual files installed might even depend on platform. (For example, shared libraries on HP-UX are .sl not .so). In general the files might depend on the value of environment variables. I think it's just best to not try to do that.
@@ -1786,7 +1786,7 @@ archive/issue_comments_093011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93011",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1827,7 +1827,7 @@ archive/issue_comments_093012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93012",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2038,7 +2038,7 @@ archive/issue_comments_093017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93017",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2056,16 +2056,16 @@ Ok, I'll upload a patch fixing that.
 archive/issue_comments_093018.json:
 ```json
 {
-    "body": "Attachment [trac_9603-iconv_spkg-fix_old_bash_problem-third_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-fix_old_bash_problem-third_reviewer.patch) by leif created at 2010-09-08 23:11:12\n\nSPKG patch. Apply on top of second reviewer patch. (Fixes use of `;&`, which old `bash`es don't understand.)",
+    "body": "Attachment [trac_9603-iconv_spkg-fix_old_bash_problem-third_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-fix_old_bash_problem-third_reviewer.patch) by @nexttime created at 2010-09-08 23:11:12\n\nSPKG patch. Apply on top of second reviewer patch. (Fixes use of `;&`, which old `bash`es don't understand.)",
     "created_at": "2010-09-08T23:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93018",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9603-iconv_spkg-fix_old_bash_problem-third_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-fix_old_bash_problem-third_reviewer.patch) by leif created at 2010-09-08 23:11:12
+Attachment [trac_9603-iconv_spkg-fix_old_bash_problem-third_reviewer.patch](tarball://root/attachments/some-uuid/ticket9603/trac_9603-iconv_spkg-fix_old_bash_problem-third_reviewer.patch) by @nexttime created at 2010-09-08 23:11:12
 
 SPKG patch. Apply on top of second reviewer patch. (Fixes use of `;&`, which old `bash`es don't understand.)
 
@@ -2081,7 +2081,7 @@ archive/issue_comments_093019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93019",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2099,7 +2099,7 @@ archive/issue_comments_093020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93020",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2120,7 +2120,7 @@ archive/issue_comments_093021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93021",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2162,7 +2162,7 @@ archive/issue_comments_093023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93023",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2217,7 +2217,7 @@ archive/issue_comments_093025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93025",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2235,7 +2235,7 @@ archive/issue_comments_093026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93026",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2280,7 +2280,7 @@ archive/issue_comments_093028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9603#issuecomment-93028",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005877.json:
 ```json
 {
-    "body": "Assignee: saliola\n\nCC:  wdj\n\n\n```\nsage: G = SymmetricGroup(3)\nsage: h = G((2,3))\nsage: triv = G.trivial_character()\nsage: triv(h)\nTraceback ...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5877\n\n",
+    "body": "Assignee: @saliola\n\nCC:  @wdjoyner\n\n\n```\nsage: G = SymmetricGroup(3)\nsage: h = G((2,3))\nsage: triv = G.trivial_character()\nsage: triv(h)\nTraceback ...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5877\n\n",
     "created_at": "2009-04-23T16:38:58Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005877.json:
     "title": "calling a group character is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5877",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: saliola
+Assignee: @saliola
 
-CC:  wdj
+CC:  @wdjoyner
 
 
 ```
@@ -47,7 +47,7 @@ archive/issue_comments_046428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5877#issuecomment-46428",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_046431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5877#issuecomment-46431",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_046433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5877#issuecomment-46433",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

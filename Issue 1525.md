@@ -3,7 +3,7 @@
 archive/issues_001525.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere is a bug in the NetworkX function is_bipartite, which sometimes gives False positives. Due to this, a few examples in graph_generators.py give possibly bad output. I have labeled them with # random, and the following URL:\n\nhttps://networkx.lanl.gov/ticket/132\n\nOnce this bug is fixed, and NX updated in Sage, someone needs to go fix those docstrings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1525\n\n",
+    "body": "Assignee: @williamstein\n\nThere is a bug in the NetworkX function is_bipartite, which sometimes gives False positives. Due to this, a few examples in graph_generators.py give possibly bad output. I have labeled them with # random, and the following URL:\n\nhttps://networkx.lanl.gov/ticket/132\n\nOnce this bug is fixed, and NX updated in Sage, someone needs to go fix those docstrings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1525\n\n",
     "created_at": "2007-12-15T20:28:49Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001525.json:
     "title": "Bipartite graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1525",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There is a bug in the NetworkX function is_bipartite, which sometimes gives False positives. Due to this, a few examples in graph_generators.py give possibly bad output. I have labeled them with # random, and the following URL:
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1525
 archive/issue_comments_009754.json:
 ```json
 {
-    "body": "Changing assignee from was to rlm.",
+    "body": "Changing assignee from @williamstein to @rlmill.",
     "created_at": "2007-12-15T20:29:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1525#issuecomment-9754",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from was to rlm.
+Changing assignee from @williamstein to @rlmill.
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_009755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1525#issuecomment-9755",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_009756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1525#issuecomment-9756",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_009757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1525#issuecomment-9757",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_009758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1525#issuecomment-9758",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -127,16 +127,16 @@ http://sage.math.washington.edu/home/rlmill/networkx-0.36.spkg
 archive/issue_comments_009759.json:
 ```json
 {
-    "body": "Attachment [bipartite.patch](tarball://root/attachments/some-uuid/ticket1525/bipartite.patch) by rlm created at 2008-01-14 00:27:36\n\nNote that now these numbers are backed up by Sloane!",
+    "body": "Attachment [bipartite.patch](tarball://root/attachments/some-uuid/ticket1525/bipartite.patch) by @rlmill created at 2008-01-14 00:27:36\n\nNote that now these numbers are backed up by Sloane!",
     "created_at": "2008-01-14T00:27:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1525#issuecomment-9759",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [bipartite.patch](tarball://root/attachments/some-uuid/ticket1525/bipartite.patch) by rlm created at 2008-01-14 00:27:36
+Attachment [bipartite.patch](tarball://root/attachments/some-uuid/ticket1525/bipartite.patch) by @rlmill created at 2008-01-14 00:27:36
 
 Note that now these numbers are backed up by Sloane!
 
@@ -152,7 +152,7 @@ archive/issue_comments_009760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1525#issuecomment-9760",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001779.json:
     "title": "setup.py computes the cache of some irrelevent files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1779",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 Assignee: cwitty
@@ -57,7 +57,7 @@ archive/issue_comments_011265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1779#issuecomment-11265",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -70,16 +70,16 @@ The attached patch should fix the build issues
 archive/issue_comments_011266.json:
 ```json
 {
-    "body": "Attachment [hash_fix.patch](tarball://root/attachments/some-uuid/ticket1779/hash_fix.patch) by moretti created at 2008-01-14 23:31:29",
+    "body": "Attachment [hash_fix.patch](tarball://root/attachments/some-uuid/ticket1779/hash_fix.patch) by @bobmoretti created at 2008-01-14 23:31:29",
     "created_at": "2008-01-14T23:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1779#issuecomment-11266",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
-Attachment [hash_fix.patch](tarball://root/attachments/some-uuid/ticket1779/hash_fix.patch) by moretti created at 2008-01-14 23:31:29
+Attachment [hash_fix.patch](tarball://root/attachments/some-uuid/ticket1779/hash_fix.patch) by @bobmoretti created at 2008-01-14 23:31:29
 
 
 

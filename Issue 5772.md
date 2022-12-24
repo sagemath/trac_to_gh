@@ -14,7 +14,7 @@ archive/issues_005772.json:
     "title": "notebook -- typo in twist.py causes Internal Server Error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5772",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5772
 archive/issue_comments_045147.json:
 ```json
 {
-    "body": "Attachment [trac_5772.patch](tarball://root/attachments/some-uuid/ticket5772/trac_5772.patch) by was created at 2009-04-13 04:15:15",
+    "body": "Attachment [trac_5772.patch](tarball://root/attachments/some-uuid/ticket5772/trac_5772.patch) by @williamstein created at 2009-04-13 04:15:15",
     "created_at": "2009-04-13T04:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5772#issuecomment-45147",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5772.patch](tarball://root/attachments/some-uuid/ticket5772/trac_5772.patch) by was created at 2009-04-13 04:15:15
+Attachment [trac_5772.patch](tarball://root/attachments/some-uuid/ticket5772/trac_5772.patch) by @williamstein created at 2009-04-13 04:15:15
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_045148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5772#issuecomment-45148",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

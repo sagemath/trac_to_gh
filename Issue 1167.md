@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1167
 archive/issue_comments_007155.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2007-12-06T02:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1167#issuecomment-7155",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_007156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1167#issuecomment-7156",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

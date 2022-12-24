@@ -14,7 +14,7 @@ archive/issues_007242.json:
     "title": "Convert sage to use the new standard libary multiprocessing module rather than processing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7242",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -45,7 +45,7 @@ archive/issue_comments_060132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7242#issuecomment-60132",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_060133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7242#issuecomment-60133",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

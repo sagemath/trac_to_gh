@@ -3,7 +3,7 @@
 archive/issues_007976.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: ClassCall inheritance\n\nThis patch extends `ClasscallMetaclass` so that one can control the call of a class trough two different static methods:\n\n- `__classcall__` which behave as usual and is inherited\n- `__classcall__no_inherits` which is not called by derived classes\n\nIf both exists the latter is used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7976\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: ClassCall inheritance\n\nThis patch extends `ClasscallMetaclass` so that one can control the call of a class trough two different static methods:\n\n- `__classcall__` which behave as usual and is inherited\n- `__classcall__no_inherits` which is not called by derived classes\n\nIf both exists the latter is used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7976\n\n",
     "created_at": "2010-01-18T13:03:46Z",
     "labels": [
         "categories",
@@ -14,10 +14,10 @@ archive/issues_007976.json:
     "title": "Extends __classcall__ to control inheritance",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7976",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -46,7 +46,7 @@ archive/issue_comments_069580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69580",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_069581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69581",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_069582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69582",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_069583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69583",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_069584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69584",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_069585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69585",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -174,16 +174,16 @@ I just uploaded a new patch which addresses all these remarks... Please re-revie
 archive/issue_comments_069586.json:
 ```json
 {
-    "body": "Attachment [trac_7976-classcall_no_inherits-review-nt.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-review-nt.patch) by nthiery created at 2010-01-19 09:05:06",
+    "body": "Attachment [trac_7976-classcall_no_inherits-review-nt.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-review-nt.patch) by @nthiery created at 2010-01-19 09:05:06",
     "created_at": "2010-01-19T09:05:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69586",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7976-classcall_no_inherits-review-nt.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-review-nt.patch) by nthiery created at 2010-01-19 09:05:06
+Attachment [trac_7976-classcall_no_inherits-review-nt.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-review-nt.patch) by @nthiery created at 2010-01-19 09:05:06
 
 
 
@@ -197,7 +197,7 @@ archive/issue_comments_069587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69587",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_069588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69588",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -228,16 +228,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_069589.json:
 ```json
 {
-    "body": "Attachment [trac_7976-classcall_no_inherits-fh.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-fh.patch) by hivert created at 2010-01-19 11:50:38\n\nReplying to [comment:4 nthiery]:\n> Please double check the quick review patch, and add '#7976:' in front of the patch description, and it's good to go!\n\nI added '#7976:' and re-uploaded the patch. Thanks for the improvement of the doc. Your review patch is ok => positive review.",
+    "body": "Attachment [trac_7976-classcall_no_inherits-fh.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-fh.patch) by @hivert created at 2010-01-19 11:50:38\n\nReplying to [comment:4 nthiery]:\n> Please double check the quick review patch, and add '#7976:' in front of the patch description, and it's good to go!\n\nI added '#7976:' and re-uploaded the patch. Thanks for the improvement of the doc. Your review patch is ok => positive review.",
     "created_at": "2010-01-19T11:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69589",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7976-classcall_no_inherits-fh.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-fh.patch) by hivert created at 2010-01-19 11:50:38
+Attachment [trac_7976-classcall_no_inherits-fh.patch](tarball://root/attachments/some-uuid/ticket7976/trac_7976-classcall_no_inherits-fh.patch) by @hivert created at 2010-01-19 11:50:38
 
 Replying to [comment:4 nthiery]:
 > Please double check the quick review patch, and add '#7976:' in front of the patch description, and it's good to go!

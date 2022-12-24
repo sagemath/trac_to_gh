@@ -3,7 +3,7 @@
 archive/issues_008807.json:
 ```json
 {
-    "body": "Assignee: Simon King\n\nCC:  kohel was wdj robertwb\n\nKeywords: morphisms functors categories\n\nWorking on the doc tests for sage.category at #8800, I found that support for morphisms is missing in the category framework. I think this is important, and therefore I am opening this ticket.\n\nSome thoughts on implementing support.\n\nLet f be a morphism in a category C, and let F be a functor, F.domain()==C. Then F(f) should by default try F(f.domain()).hom(f,F(f.codomain())). This relies on the call method of F(f.domain()).Hom(F.codomain()), which in turn uses _coerce_impl. I think it is there where the support should be implemented.\n\nExample:\n\nIn sage.rings.homset.RingHomset_generic_with_category._coerce_impl, one has\n\n```\n        ...\n        if x.parent() == self:\n            if isinstance(x, morphism.RingHomomorphism_im_gens):\n                return morphism.RingHomomorphism_im_gens(self, x.im_gens())\n            elif isinstance(x, morphism.RingHomomorphism_cover):\n                return morphism.RingHomomorphism_cover(self)\n        raise TypeError\n```\n\nWhy not instead\n\n```\n        try:\n            if isinstance(x, morphism.RingHomomorphism_im_gens):\n                return morphism.RingHomomorphism_im_gens(self, x.im_gens())\n            elif isinstance(x, morphism.RingHomomorphism_cover):\n                return morphism.RingHomomorphism_cover(self)\n        except:\n            raise TypeError\n```\n\n\nIf I do so, the following works:\n\n```\nsage: R.<x> = QQ[]\nsage: f = R.hom([2*x],R)\nsage: C = Fields()\nsage: f2 = C(R).hom(f,C(R))\nsage: f2\nRing endomorphism of Fraction Field of Univariate Polynomial Ring in x over Rational Field\n  Defn: x |--> 2*x\nsage: f2(1/x)\n1/(2*x)\n```\n\n\nIt should be straight forward to change the call method of ``C`` so that ``C(f)`` reproduces the above construction. Similarly, if ``F`` is a functor then ``F(f)`` should call ``F(f.domain()).hom(f,F(f.codomain()))``.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8807\n\n",
+    "body": "Assignee: Simon King\n\nCC:  kohel @williamstein @wdjoyner @robertwb\n\nKeywords: morphisms functors categories\n\nWorking on the doc tests for sage.category at #8800, I found that support for morphisms is missing in the category framework. I think this is important, and therefore I am opening this ticket.\n\nSome thoughts on implementing support.\n\nLet f be a morphism in a category C, and let F be a functor, F.domain()==C. Then F(f) should by default try F(f.domain()).hom(f,F(f.codomain())). This relies on the call method of F(f.domain()).Hom(F.codomain()), which in turn uses _coerce_impl. I think it is there where the support should be implemented.\n\nExample:\n\nIn sage.rings.homset.RingHomset_generic_with_category._coerce_impl, one has\n\n```\n        ...\n        if x.parent() == self:\n            if isinstance(x, morphism.RingHomomorphism_im_gens):\n                return morphism.RingHomomorphism_im_gens(self, x.im_gens())\n            elif isinstance(x, morphism.RingHomomorphism_cover):\n                return morphism.RingHomomorphism_cover(self)\n        raise TypeError\n```\n\nWhy not instead\n\n```\n        try:\n            if isinstance(x, morphism.RingHomomorphism_im_gens):\n                return morphism.RingHomomorphism_im_gens(self, x.im_gens())\n            elif isinstance(x, morphism.RingHomomorphism_cover):\n                return morphism.RingHomomorphism_cover(self)\n        except:\n            raise TypeError\n```\n\n\nIf I do so, the following works:\n\n```\nsage: R.<x> = QQ[]\nsage: f = R.hom([2*x],R)\nsage: C = Fields()\nsage: f2 = C(R).hom(f,C(R))\nsage: f2\nRing endomorphism of Fraction Field of Univariate Polynomial Ring in x over Rational Field\n  Defn: x |--> 2*x\nsage: f2(1/x)\n1/(2*x)\n```\n\n\nIt should be straight forward to change the call method of ``C`` so that ``C(f)`` reproduces the above construction. Similarly, if ``F`` is a functor then ``F(f)`` should call ``F(f.domain()).hom(f,F(f.codomain()))``.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8807\n\n",
     "created_at": "2010-04-28T18:17:42Z",
     "labels": [
         "categories",
@@ -14,12 +14,12 @@ archive/issues_008807.json:
     "title": "Adding support for morphisms to the category framework",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8807",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: Simon King
 
-CC:  kohel was wdj robertwb
+CC:  kohel @williamstein @wdjoyner @robertwb
 
 Keywords: morphisms functors categories
 
@@ -89,7 +89,7 @@ archive/issue_comments_080804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80804",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -102,16 +102,16 @@ Implementing induced homomorphisms; Functors on morphisms; some doc tests
 archive/issue_comments_080805.json:
 ```json
 {
-    "body": "Attachment [8807functors_and_induced_morphisms.patch](tarball://root/attachments/some-uuid/ticket8807/8807functors_and_induced_morphisms.patch) by SimonKing created at 2010-04-30 14:21:05\n\nFixing a buglet in the construction functor of Laurent Polynomial Rings. To be applied after the first patch",
+    "body": "Attachment [8807functors_and_induced_morphisms.patch](tarball://root/attachments/some-uuid/ticket8807/8807functors_and_induced_morphisms.patch) by @simon-king-jena created at 2010-04-30 14:21:05\n\nFixing a buglet in the construction functor of Laurent Polynomial Rings. To be applied after the first patch",
     "created_at": "2010-04-30T14:21:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80805",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [8807functors_and_induced_morphisms.patch](tarball://root/attachments/some-uuid/ticket8807/8807functors_and_induced_morphisms.patch) by SimonKing created at 2010-04-30 14:21:05
+Attachment [8807functors_and_induced_morphisms.patch](tarball://root/attachments/some-uuid/ticket8807/8807functors_and_induced_morphisms.patch) by @simon-king-jena created at 2010-04-30 14:21:05
 
 Fixing a buglet in the construction functor of Laurent Polynomial Rings. To be applied after the first patch
 
@@ -122,16 +122,16 @@ Fixing a buglet in the construction functor of Laurent Polynomial Rings. To be a
 archive/issue_comments_080806.json:
 ```json
 {
-    "body": "Attachment [8807functors_and_induced_morphisms.p1.patch](tarball://root/attachments/some-uuid/ticket8807/8807functors_and_induced_morphisms.p1.patch) by SimonKing created at 2010-04-30 14:26:01\n\nCc to the original authors.\n\nI solved the problem. Please apply both patches in order.\n\n**__New Code__**\n\nI cleaned the framework for functors. There is a generic call method that (in contrast to the old generic call method) has a return value. It relies on three methods _coerce_into_domain, _apply_functor and _apply_functor_to_morphism. The default methods are already enough for forgetful functor and most construction functors.\n\nI implemented a new class for Ring Homomorphisms that are induced by a homomorphism of the base ring. This enables the application of the construction functors for matrix and polynomial rings.\n\n**__Tests__**\n\nAll new code is tested, and I added also some doc tests for old code. This is related with #8800. However, #8800 should not be closed, because the old code is still not completely covered by tests yet.\n\nSuggestion: The further work on #8800 will build upon this ticket.\n\n**__Showcases__**\n\nWe start with a homomorphism of polynomial rings.\n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<z> = QQ[]\nsage: f = R.hom([2*z,3*z],S)\n```\n\n\nNow we construct polynomial rings based on ``R`` and ``S``, and let ``f`` act on the coefficients:\n\n```\nsage: PR.<t> = R[]\nsage: PS = S['t']\nsage: Pf = PR.hom(f,PS)\nsage: Pf\nRing morphism:\n  From: Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n  To:   Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n  Defn: Induced from base ring by\n        Ring morphism:\n          From: Multivariate Polynomial Ring in x, y over Rational Field\n          To:   Univariate Polynomial Ring in z over Rational Field\n          Defn: x |--> 2*z\n                y |--> 3*z\nsage: p = (x - 4*y + 1/13)*t^2 + (1/2*x^2 - 1/3*y^2)*t + 2*y^2 + x\nsage: Pf(p)\n(-10*z + 1/13)*t^2 - z^2*t + 18*z^2 + 2*z\n```\n\n\nThe construction of induced homomorphisms is recursive, and so we have:\n\n```\nsage: MPR = MatrixSpace(PR, 2)\nsage: MPS = MatrixSpace(PS, 2)\nsage: M = MPR([(- x + y)*t^2 + 58*t - 3*x^2 + x*y, (- 1/7*x*y - 1/40*x)*t^2 + (5*x^2 + y^2)*t + 2*y, (- 1/3*y + 1)*t^2 + 1/3*x*y + y^2 + 5/2*y + 1/4, (x + 6*y + 1)*t^2])\nsage: MPf = MPR.hom(f,MPS); MPf\nRing morphism:\n  From: Full MatrixSpace of 2 by 2 dense matrices over Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n  To:   Full MatrixSpace of 2 by 2 dense matrices over Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n  Defn: Induced from base ring by\n        Ring morphism:\n          From: Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n          To:   Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n          Defn: Induced from base ring by\n                Ring morphism:\n                  From: Multivariate Polynomial Ring in x, y over Rational Field\n                  To:   Univariate Polynomial Ring in z over Rational Field\n                  Defn: x |--> 2*z\n                        y |--> 3*z\nsage: MPf(M)\n[                    z*t^2 + 58*t - 6*z^2 (-6/7*z^2 - 1/20*z)*t^2 + 29*z^2*t + 6*z]\n[    (-z + 1)*t^2 + 11*z^2 + 15/2*z + 1/4                           (20*z + 1)*t^2]\n```\n\n\nAnd this can also be achieved using construction functors:\n\n```\nsage: from sage.categories.pushout import CompositConstructionFunctor\nsage: F = CompositConstructionFunctor(QQ.construction()[0],ZZ['x'].construction()[0], QQ.construction()[0],ZZ['y'].construction()[0])\nsage: R.<a,b> = QQ[]\nsage: f = R.hom([a+b, a-b])\nsage: F(f) # indirect doctest\nRing endomorphism of Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n  Defn: Induced from base ring by\n        Ring endomorphism of Fraction Field of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n          Defn: Induced from base ring by\n                Ring endomorphism of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n                  Defn: Induced from base ring by\n                        Ring endomorphism of Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n                          Defn: a |--> a + b\n                                b |--> a - b\n```\n\n\nWith the second patch, Laurent polynomial rings work as well:\n\n```\nsage: P = LaurentPolynomialRing(QQ,'t')\nsage: F = P.construction()[0]\nsage: X.<t> = LaurentPolynomialRing(R)\nsage: p = (a+b)*t^-1 + (a^2)*t + b\nsage: F(f)(p)\n(a^2 + 2*a*b + b^2)*t + a - b + 2*a*t^-1\n```\n",
+    "body": "Attachment [8807functors_and_induced_morphisms.p1.patch](tarball://root/attachments/some-uuid/ticket8807/8807functors_and_induced_morphisms.p1.patch) by @simon-king-jena created at 2010-04-30 14:26:01\n\nCc to the original authors.\n\nI solved the problem. Please apply both patches in order.\n\n**__New Code__**\n\nI cleaned the framework for functors. There is a generic call method that (in contrast to the old generic call method) has a return value. It relies on three methods _coerce_into_domain, _apply_functor and _apply_functor_to_morphism. The default methods are already enough for forgetful functor and most construction functors.\n\nI implemented a new class for Ring Homomorphisms that are induced by a homomorphism of the base ring. This enables the application of the construction functors for matrix and polynomial rings.\n\n**__Tests__**\n\nAll new code is tested, and I added also some doc tests for old code. This is related with #8800. However, #8800 should not be closed, because the old code is still not completely covered by tests yet.\n\nSuggestion: The further work on #8800 will build upon this ticket.\n\n**__Showcases__**\n\nWe start with a homomorphism of polynomial rings.\n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<z> = QQ[]\nsage: f = R.hom([2*z,3*z],S)\n```\n\n\nNow we construct polynomial rings based on ``R`` and ``S``, and let ``f`` act on the coefficients:\n\n```\nsage: PR.<t> = R[]\nsage: PS = S['t']\nsage: Pf = PR.hom(f,PS)\nsage: Pf\nRing morphism:\n  From: Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n  To:   Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n  Defn: Induced from base ring by\n        Ring morphism:\n          From: Multivariate Polynomial Ring in x, y over Rational Field\n          To:   Univariate Polynomial Ring in z over Rational Field\n          Defn: x |--> 2*z\n                y |--> 3*z\nsage: p = (x - 4*y + 1/13)*t^2 + (1/2*x^2 - 1/3*y^2)*t + 2*y^2 + x\nsage: Pf(p)\n(-10*z + 1/13)*t^2 - z^2*t + 18*z^2 + 2*z\n```\n\n\nThe construction of induced homomorphisms is recursive, and so we have:\n\n```\nsage: MPR = MatrixSpace(PR, 2)\nsage: MPS = MatrixSpace(PS, 2)\nsage: M = MPR([(- x + y)*t^2 + 58*t - 3*x^2 + x*y, (- 1/7*x*y - 1/40*x)*t^2 + (5*x^2 + y^2)*t + 2*y, (- 1/3*y + 1)*t^2 + 1/3*x*y + y^2 + 5/2*y + 1/4, (x + 6*y + 1)*t^2])\nsage: MPf = MPR.hom(f,MPS); MPf\nRing morphism:\n  From: Full MatrixSpace of 2 by 2 dense matrices over Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n  To:   Full MatrixSpace of 2 by 2 dense matrices over Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n  Defn: Induced from base ring by\n        Ring morphism:\n          From: Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n          To:   Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n          Defn: Induced from base ring by\n                Ring morphism:\n                  From: Multivariate Polynomial Ring in x, y over Rational Field\n                  To:   Univariate Polynomial Ring in z over Rational Field\n                  Defn: x |--> 2*z\n                        y |--> 3*z\nsage: MPf(M)\n[                    z*t^2 + 58*t - 6*z^2 (-6/7*z^2 - 1/20*z)*t^2 + 29*z^2*t + 6*z]\n[    (-z + 1)*t^2 + 11*z^2 + 15/2*z + 1/4                           (20*z + 1)*t^2]\n```\n\n\nAnd this can also be achieved using construction functors:\n\n```\nsage: from sage.categories.pushout import CompositConstructionFunctor\nsage: F = CompositConstructionFunctor(QQ.construction()[0],ZZ['x'].construction()[0], QQ.construction()[0],ZZ['y'].construction()[0])\nsage: R.<a,b> = QQ[]\nsage: f = R.hom([a+b, a-b])\nsage: F(f) # indirect doctest\nRing endomorphism of Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n  Defn: Induced from base ring by\n        Ring endomorphism of Fraction Field of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n          Defn: Induced from base ring by\n                Ring endomorphism of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n                  Defn: Induced from base ring by\n                        Ring endomorphism of Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n                          Defn: a |--> a + b\n                                b |--> a - b\n```\n\n\nWith the second patch, Laurent polynomial rings work as well:\n\n```\nsage: P = LaurentPolynomialRing(QQ,'t')\nsage: F = P.construction()[0]\nsage: X.<t> = LaurentPolynomialRing(R)\nsage: p = (a+b)*t^-1 + (a^2)*t + b\nsage: F(f)(p)\n(a^2 + 2*a*b + b^2)*t + a - b + 2*a*t^-1\n```\n",
     "created_at": "2010-04-30T14:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80806",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [8807functors_and_induced_morphisms.p1.patch](tarball://root/attachments/some-uuid/ticket8807/8807functors_and_induced_morphisms.p1.patch) by SimonKing created at 2010-04-30 14:26:01
+Attachment [8807functors_and_induced_morphisms.p1.patch](tarball://root/attachments/some-uuid/ticket8807/8807functors_and_induced_morphisms.p1.patch) by @simon-king-jena created at 2010-04-30 14:26:01
 
 Cc to the original authors.
 
@@ -252,7 +252,7 @@ archive/issue_comments_080807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80807",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_080808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80808",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_080809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80809",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_080810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80810",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_080811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80811",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_080812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80812",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_080813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80813",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -441,7 +441,7 @@ archive/issue_comments_080814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80814",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_080815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80815",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_080816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80816",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -518,7 +518,7 @@ archive/issue_comments_080817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80817",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_080818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80818",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -566,7 +566,7 @@ archive/issue_comments_080819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80819",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -617,7 +617,7 @@ archive/issue_comments_080820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80820",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -658,7 +658,7 @@ archive/issue_comments_080821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80821",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_080822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80822",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -691,16 +691,16 @@ Please only apply `trac-8807_induced_morphisms.patch`.
 archive/issue_comments_080823.json:
 ```json
 {
-    "body": "Attachment [trac-8807_induced_morphisms.patch](tarball://root/attachments/some-uuid/ticket8807/trac-8807_induced_morphisms.patch) by SimonKing created at 2010-11-24 08:11:56\n\nThis patch applies to sage-4.6; it is the only patch to be applied",
+    "body": "Attachment [trac-8807_induced_morphisms.patch](tarball://root/attachments/some-uuid/ticket8807/trac-8807_induced_morphisms.patch) by @simon-king-jena created at 2010-11-24 08:11:56\n\nThis patch applies to sage-4.6; it is the only patch to be applied",
     "created_at": "2010-11-24T08:11:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80823",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac-8807_induced_morphisms.patch](tarball://root/attachments/some-uuid/ticket8807/trac-8807_induced_morphisms.patch) by SimonKing created at 2010-11-24 08:11:56
+Attachment [trac-8807_induced_morphisms.patch](tarball://root/attachments/some-uuid/ticket8807/trac-8807_induced_morphisms.patch) by @simon-king-jena created at 2010-11-24 08:11:56
 
 This patch applies to sage-4.6; it is the only patch to be applied
 
@@ -716,7 +716,7 @@ archive/issue_comments_080824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80824",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -734,7 +734,7 @@ archive/issue_comments_080825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80825",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -752,7 +752,7 @@ archive/issue_comments_080826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80826",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -770,7 +770,7 @@ archive/issue_comments_080827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80827",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -788,7 +788,7 @@ archive/issue_comments_080828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80828",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -806,7 +806,7 @@ archive/issue_comments_080829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80829",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -826,7 +826,7 @@ archive/issue_comments_080830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80830",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -844,7 +844,7 @@ archive/issue_comments_080831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80831",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -862,7 +862,7 @@ archive/issue_comments_080832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80832",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -880,7 +880,7 @@ archive/issue_comments_080833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80833",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -898,7 +898,7 @@ archive/issue_comments_080834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80834",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -918,7 +918,7 @@ archive/issue_comments_080835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80835",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

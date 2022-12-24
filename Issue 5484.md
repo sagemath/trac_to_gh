@@ -3,7 +3,7 @@
 archive/issues_005484.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jpflori\n\nRoi Docampo and I noticed the following at Sage Days 14.\n\nThis works:\n\n```\nsage: R.<x,y> = ZZ[]\nsage: R.quo(R.ideal(2))\nQuotient of Multivariate Polynomial Ring in x, y over Integer Ring by the ideal (2)\n```\n\n\nBut this doesn't:\n\n```\nsage: R.<x> = ZZ[]\nsage: R.quo(R.ideal(2))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/aghitza/.sage/temp/cartan/12118/_home_aghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ring.so in sage.rings.ring.CommutativeRing.quo (sage/rings/ring.c:5717)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ring.so in sage.rings.ring.CommutativeRing.quotient (sage/rings/ring.c:5624)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/quotient_ring.pyc in QuotientRing(R, I, names)\n    120     try:\n    121         if I.is_principal():\n--> 122             return R.quotient_by_principal_ideal(I.gen(), names)\n    123     except (AttributeError, NotImplementedError):\n    124         pass\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.pyc in quotient_by_principal_ideal(self, f, names)\n   1004         \"\"\"\n   1005         import sage.rings.polynomial.polynomial_quotient_ring\n-> 1006         return sage.rings.polynomial.polynomial_quotient_ring.PolynomialQuotientRing(self, f, names)\n   1007     \n   1008 \n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_quotient_ring.pyc in PolynomialQuotientRing(ring, polynomial, names)\n    133     c = polynomial.leading_coefficient()\n    134     if not c.is_unit():\n--> 135         raise TypeError, \"polynomial must have unit leading coefficient\"\n    136     R = ring.base_ring()\n    137     if isinstance(R, sage.rings.integral_domain.IntegralDomain):\n\nTypeError: polynomial must have unit leading coefficient\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5484\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  jpflori\n\nRoi Docampo and I noticed the following at Sage Days 14.\n\nThis works:\n\n```\nsage: R.<x,y> = ZZ[]\nsage: R.quo(R.ideal(2))\nQuotient of Multivariate Polynomial Ring in x, y over Integer Ring by the ideal (2)\n```\n\n\nBut this doesn't:\n\n```\nsage: R.<x> = ZZ[]\nsage: R.quo(R.ideal(2))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/aghitza/.sage/temp/cartan/12118/_home_aghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ring.so in sage.rings.ring.CommutativeRing.quo (sage/rings/ring.c:5717)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ring.so in sage.rings.ring.CommutativeRing.quotient (sage/rings/ring.c:5624)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/quotient_ring.pyc in QuotientRing(R, I, names)\n    120     try:\n    121         if I.is_principal():\n--> 122             return R.quotient_by_principal_ideal(I.gen(), names)\n    123     except (AttributeError, NotImplementedError):\n    124         pass\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.pyc in quotient_by_principal_ideal(self, f, names)\n   1004         \"\"\"\n   1005         import sage.rings.polynomial.polynomial_quotient_ring\n-> 1006         return sage.rings.polynomial.polynomial_quotient_ring.PolynomialQuotientRing(self, f, names)\n   1007     \n   1008 \n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_quotient_ring.pyc in PolynomialQuotientRing(ring, polynomial, names)\n    133     c = polynomial.leading_coefficient()\n    134     if not c.is_unit():\n--> 135         raise TypeError, \"polynomial must have unit leading coefficient\"\n    136     R = ring.base_ring()\n    137     if isinstance(R, sage.rings.integral_domain.IntegralDomain):\n\nTypeError: polynomial must have unit leading coefficient\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5484\n\n",
     "created_at": "2009-03-11T08:16:23Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_005484.json:
     "title": "improve quotients of univariate polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5484",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  jpflori
 
@@ -88,7 +88,7 @@ archive/issue_comments_042556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42556",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -101,16 +101,16 @@ Changing component from algebraic geometry to commutative algebra.
 archive/issue_comments_042557.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2009-03-11T08:26:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42557",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_042558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42558",
-    "user": "bruno"
+    "user": "@bgrenet"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_042559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42559",
-    "user": "bruno"
+    "user": "@bgrenet"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_042560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42560",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_042561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42561",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_042563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42563",
-    "user": "bruno"
+    "user": "@bgrenet"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_042564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42564",
-    "user": "bruno"
+    "user": "@bgrenet"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_042565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42565",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_042566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42566",
-    "user": "bruno"
+    "user": "@bgrenet"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_042567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42567",
-    "user": "darij"
+    "user": "@darijgr"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_042568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42568",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_042569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42569",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 

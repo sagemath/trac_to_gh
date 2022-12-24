@@ -3,7 +3,7 @@
 archive/issues_008011.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman chapoton\n\nIt has a nice guide that can be updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8011\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @fchapoton\n\nIt has a nice guide that can be updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8011\n\n",
     "created_at": "2010-01-20T08:33:48Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008011.json:
     "title": "Add sagenb.notebook.tutorial into the ReST documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8011",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman chapoton
+CC:  @kcrisman @fchapoton
 
 It has a nice guide that can be updated.
 
@@ -39,7 +39,7 @@ archive/issue_comments_070031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8011#issuecomment-70031",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_070032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8011#issuecomment-70032",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_070033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8011#issuecomment-70033",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_070034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8011#issuecomment-70034",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_070035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8011#issuecomment-70035",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007321.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\nThe solution is to add 'sage_fortran' to the beginning of the list of fortran compilers on the cygwin line in src/numpy/distutils/fcompiler/__init__.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/7321\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nThe solution is to add 'sage_fortran' to the beginning of the list of fortran compilers on the cygwin line in src/numpy/distutils/fcompiler/__init__.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/7321\n\n",
     "created_at": "2009-10-27T05:17:15Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_007321.json:
     "title": "numpy fails to build on cygwin due to not using the correct fortran compiler",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7321",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 The solution is to add 'sage_fortran' to the beginning of the list of fortran compilers on the cygwin line in src/numpy/distutils/fcompiler/__init__.py
 
@@ -39,7 +39,7 @@ archive/issue_comments_061174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7321#issuecomment-61174",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_061175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7321#issuecomment-61175",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -70,16 +70,16 @@ The spkg can be found a http://sage.math.washington.edu/home/mhansen/numpy-1.3.0
 archive/issue_comments_061176.json:
 ```json
 {
-    "body": "Attachment [trac_7321-1.patch](tarball://root/attachments/some-uuid/ticket7321/trac_7321-1.patch) by mhansen created at 2010-01-03 16:40:16",
+    "body": "Attachment [trac_7321-1.patch](tarball://root/attachments/some-uuid/ticket7321/trac_7321-1.patch) by @mwhansen created at 2010-01-03 16:40:16",
     "created_at": "2010-01-03T16:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7321#issuecomment-61176",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7321-1.patch](tarball://root/attachments/some-uuid/ticket7321/trac_7321-1.patch) by mhansen created at 2010-01-03 16:40:16
+Attachment [trac_7321-1.patch](tarball://root/attachments/some-uuid/ticket7321/trac_7321-1.patch) by @mwhansen created at 2010-01-03 16:40:16
 
 
 
@@ -88,16 +88,16 @@ Attachment [trac_7321-1.patch](tarball://root/attachments/some-uuid/ticket7321/t
 archive/issue_comments_061177.json:
 ```json
 {
-    "body": "Attachment [trac_7321-2.patch](tarball://root/attachments/some-uuid/ticket7321/trac_7321-2.patch) by mhansen created at 2010-01-03 16:40:27",
+    "body": "Attachment [trac_7321-2.patch](tarball://root/attachments/some-uuid/ticket7321/trac_7321-2.patch) by @mwhansen created at 2010-01-03 16:40:27",
     "created_at": "2010-01-03T16:40:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7321#issuecomment-61177",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7321-2.patch](tarball://root/attachments/some-uuid/ticket7321/trac_7321-2.patch) by mhansen created at 2010-01-03 16:40:27
+Attachment [trac_7321-2.patch](tarball://root/attachments/some-uuid/ticket7321/trac_7321-2.patch) by @mwhansen created at 2010-01-03 16:40:27
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_061178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7321#issuecomment-61178",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_061179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7321#issuecomment-61179",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_061180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7321#issuecomment-61180",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_061181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7321#issuecomment-61181",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_061182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7321#issuecomment-61182",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_061183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7321#issuecomment-61183",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

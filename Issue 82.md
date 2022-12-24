@@ -3,7 +3,7 @@
 archive/issues_000082.json:
 ```json
 {
-    "body": "Assignee: was\n\nsage: M = MatrixSpace(RationalField(),2,2)\n\nsage: A = M([1,-4,1, -1])\n\nsage: p = A.charpoly()\n\nsage: K = NumberField(p,'alpha')\n\nsage: M = MatrixSpace(K,2,2)\n\nsage: A = M([1,-4,1, -1])\n\nsage: A.eigenvectors()\n\nfails at the last step. However, \n\nsage: M = MatrixSpace(RationalField(),2,2)\n\nsage: A = M([1,-4,1, -1])\n\nsage: A.eigenvectors()\n\n [(1, a - 1)]\n\nworks, though \"a\" is undefined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/82\n\n",
+    "body": "Assignee: @williamstein\n\nsage: M = MatrixSpace(RationalField(),2,2)\n\nsage: A = M([1,-4,1, -1])\n\nsage: p = A.charpoly()\n\nsage: K = NumberField(p,'alpha')\n\nsage: M = MatrixSpace(K,2,2)\n\nsage: A = M([1,-4,1, -1])\n\nsage: A.eigenvectors()\n\nfails at the last step. However, \n\nsage: M = MatrixSpace(RationalField(),2,2)\n\nsage: A = M([1,-4,1, -1])\n\nsage: A.eigenvectors()\n\n [(1, a - 1)]\n\nworks, though \"a\" is undefined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/82\n\n",
     "created_at": "2006-09-24T19:43:16Z",
     "labels": [
         "linear algebra",
@@ -13,10 +13,10 @@ archive/issues_000082.json:
     "title": "bug in eigenvalues over a number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/82",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 sage: M = MatrixSpace(RationalField(),2,2)
 
@@ -60,7 +60,7 @@ archive/issue_comments_000416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/82",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/82#issuecomment-416",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_000417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/82",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/82#issuecomment-417",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_000418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/82",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/82#issuecomment-418",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

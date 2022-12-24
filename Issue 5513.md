@@ -3,7 +3,7 @@
 archive/issues_005513.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  davidloeffler\n\nKeywords: number field unit group\n\nThe attached patch (based on 3.4) implements a new class UnitGroup for the unit group of a number field.  As before, the units are computed using the pari library, but now it is easier (for example) to obtain all generators of the unit group.  Also, I have added a wrapping for the pari function bnfisunit() which implements a discrete log function to express any unit in terms of the generators.\n\nAs well as all the documented code and examples in unit_group.py there are added functions in number_field.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5513\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @loefflerd\n\nKeywords: number field unit group\n\nThe attached patch (based on 3.4) implements a new class UnitGroup for the unit group of a number field.  As before, the units are computed using the pari library, but now it is easier (for example) to obtain all generators of the unit group.  Also, I have added a wrapping for the pari function bnfisunit() which implements a discrete log function to express any unit in terms of the generators.\n\nAs well as all the documented code and examples in unit_group.py there are added functions in number_field.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5513\n\n",
     "created_at": "2009-03-13T22:02:06Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_005513.json:
     "title": "Enhanced support for number field unit groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5513",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  davidloeffler
+CC:  @loefflerd
 
 Keywords: number field unit group
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5513
 archive/issue_comments_042821.json:
 ```json
 {
-    "body": "Attachment [units.patch](tarball://root/attachments/some-uuid/ticket5513/units.patch) by cremona created at 2009-03-14 20:36:22",
+    "body": "Attachment [units.patch](tarball://root/attachments/some-uuid/ticket5513/units.patch) by @JohnCremona created at 2009-03-14 20:36:22",
     "created_at": "2009-03-14T20:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42821",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [units.patch](tarball://root/attachments/some-uuid/ticket5513/units.patch) by cremona created at 2009-03-14 20:36:22
+Attachment [units.patch](tarball://root/attachments/some-uuid/ticket5513/units.patch) by @JohnCremona created at 2009-03-14 20:36:22
 
 
 
@@ -164,7 +164,7 @@ archive/issue_comments_042823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42823",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_042824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42824",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -195,16 +195,16 @@ REPLACES the earlier patch
 archive/issue_comments_042825.json:
 ```json
 {
-    "body": "Attachment [trac_5513.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513.patch) by cremona created at 2009-03-16 15:36:08\n\nApply after the earlier patch",
+    "body": "Attachment [trac_5513.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513.patch) by @JohnCremona created at 2009-03-16 15:36:08\n\nApply after the earlier patch",
     "created_at": "2009-03-16T15:36:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42825",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5513.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513.patch) by cremona created at 2009-03-16 15:36:08
+Attachment [trac_5513.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513.patch) by @JohnCremona created at 2009-03-16 15:36:08
 
 Apply after the earlier patch
 
@@ -215,16 +215,16 @@ Apply after the earlier patch
 archive/issue_comments_042826.json:
 ```json
 {
-    "body": "Attachment [trac_5513.2.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513.2.patch) by cremona created at 2009-03-16 15:38:29\n\nI have fixed all the issues raised in the review in the new patch trac_5513.patch.  I added a doctest in unit_group.py to show that the relative example now works.  I tested all in sage/rings/number_field.\n\nApologies for the confusion:  I thought that my new patch (called trac_5513.patch) replaced the origianl one because I was using mercurial queues, but (as usual) I was wrong.  You need to apply the original units.patch and then the new one (trac_5513.patch) which appear twice on trac, once with the worng message and once with the right one.  I hope that is clear.",
+    "body": "Attachment [trac_5513.2.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513.2.patch) by @JohnCremona created at 2009-03-16 15:38:29\n\nI have fixed all the issues raised in the review in the new patch trac_5513.patch.  I added a doctest in unit_group.py to show that the relative example now works.  I tested all in sage/rings/number_field.\n\nApologies for the confusion:  I thought that my new patch (called trac_5513.patch) replaced the origianl one because I was using mercurial queues, but (as usual) I was wrong.  You need to apply the original units.patch and then the new one (trac_5513.patch) which appear twice on trac, once with the worng message and once with the right one.  I hope that is clear.",
     "created_at": "2009-03-16T15:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42826",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5513.2.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513.2.patch) by cremona created at 2009-03-16 15:38:29
+Attachment [trac_5513.2.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513.2.patch) by @JohnCremona created at 2009-03-16 15:38:29
 
 I have fixed all the issues raised in the review in the new patch trac_5513.patch.  I added a doctest in unit_group.py to show that the relative example now works.  I tested all in sage/rings/number_field.
 
@@ -278,16 +278,16 @@ apply after the other two
 archive/issue_comments_042829.json:
 ```json
 {
-    "body": "Attachment [trac_5513_third.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513_third.patch) by cremona created at 2009-03-16 20:36:08\n\nReplying to [comment:5 fwclarke]:\n> A couple more things: \n>    * two more replacements of `defining_polynomial` by `absolute_polynomial` are needed.\n> \n>    * units can have norm -1.\n> \n> With the third patch everything works.\n\nThanks a lot -- for what it's worth, I am (more than) happy with the third patch, also a little red-faced about the norms!",
+    "body": "Attachment [trac_5513_third.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513_third.patch) by @JohnCremona created at 2009-03-16 20:36:08\n\nReplying to [comment:5 fwclarke]:\n> A couple more things: \n>    * two more replacements of `defining_polynomial` by `absolute_polynomial` are needed.\n> \n>    * units can have norm -1.\n> \n> With the third patch everything works.\n\nThanks a lot -- for what it's worth, I am (more than) happy with the third patch, also a little red-faced about the norms!",
     "created_at": "2009-03-16T20:36:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42829",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5513_third.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513_third.patch) by cremona created at 2009-03-16 20:36:08
+Attachment [trac_5513_third.patch](tarball://root/attachments/some-uuid/ticket5513/trac_5513_third.patch) by @JohnCremona created at 2009-03-16 20:36:08
 
 Replying to [comment:5 fwclarke]:
 > A couple more things: 
@@ -311,7 +311,7 @@ archive/issue_comments_042830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42830",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_042833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42833",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -399,16 +399,16 @@ Replaces all above, reabsed to 3.4 + sage-5508.3.patch
 archive/issue_comments_042834.json:
 ```json
 {
-    "body": "Attachment [units_rebase.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebase.patch) by cremona created at 2009-03-28 16:33:29\n\nI have attached a single patch which replaces all previous ones and is rebased on 3.4 + sage-5508.3.patch, as requested.",
+    "body": "Attachment [units_rebase.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebase.patch) by @JohnCremona created at 2009-03-28 16:33:29\n\nI have attached a single patch which replaces all previous ones and is rebased on 3.4 + sage-5508.3.patch, as requested.",
     "created_at": "2009-03-28T16:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42834",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [units_rebase.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebase.patch) by cremona created at 2009-03-28 16:33:29
+Attachment [units_rebase.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebase.patch) by @JohnCremona created at 2009-03-28 16:33:29
 
 I have attached a single patch which replaces all previous ones and is rebased on 3.4 + sage-5508.3.patch, as requested.
 
@@ -442,7 +442,7 @@ archive/issue_comments_042836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42836",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -455,16 +455,16 @@ Alternaitve, rebased to 3.4 + #550 + #5159
 archive/issue_comments_042837.json:
 ```json
 {
-    "body": "Attachment [units_rebased2.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebased2.patch) by cremona created at 2009-03-30 09:05:43\n\nThanks, Francis.   For ease of merging I have also provided another rebased patch which applies to 3.4 + sage-5508.3.patch + the patches at #5159 since I hope/expect that one to be merged shortly and now the whole lot are compatible.",
+    "body": "Attachment [units_rebased2.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebased2.patch) by @JohnCremona created at 2009-03-30 09:05:43\n\nThanks, Francis.   For ease of merging I have also provided another rebased patch which applies to 3.4 + sage-5508.3.patch + the patches at #5159 since I hope/expect that one to be merged shortly and now the whole lot are compatible.",
     "created_at": "2009-03-30T09:05:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42837",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [units_rebased2.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebased2.patch) by cremona created at 2009-03-30 09:05:43
+Attachment [units_rebased2.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebased2.patch) by @JohnCremona created at 2009-03-30 09:05:43
 
 Thanks, Francis.   For ease of merging I have also provided another rebased patch which applies to 3.4 + sage-5508.3.patch + the patches at #5159 since I hope/expect that one to be merged shortly and now the whole lot are compatible.
 
@@ -526,7 +526,7 @@ archive/issue_comments_042840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42840",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_042841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42841",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -586,7 +586,7 @@ archive/issue_comments_042842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42842",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -657,7 +657,7 @@ archive/issue_comments_042845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42845",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -760,7 +760,7 @@ archive/issue_comments_042847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42847",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -773,16 +773,16 @@ replace previous
 archive/issue_comments_042848.json:
 ```json
 {
-    "body": "Attachment [units_rebased3.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebased3.patch) by cremona created at 2009-03-31 10:04:26\n\nok -- see newest patch (units_rebased3.patch, to replace units_rebased2.patch).\n\nI took the lazy way out and added #random to all the outputs which return actual units.  It may be a 32/64 issue, but not just that since when testing this patch on one machine I kept on getting different generating units out of pari.  I seem to remember that there is a way to \"reset\" pari in doctests  to avoid this random-ness.\n\nMathematically this is not so unreasonable since any f.g. abelian group will lots (infinitely many) sets of generators and there is no way to pick one canonically.  (William and I thought about this for elliptic curve generators and came up against an unsolved problem which prevents this being possible even in principle!).",
+    "body": "Attachment [units_rebased3.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebased3.patch) by @JohnCremona created at 2009-03-31 10:04:26\n\nok -- see newest patch (units_rebased3.patch, to replace units_rebased2.patch).\n\nI took the lazy way out and added #random to all the outputs which return actual units.  It may be a 32/64 issue, but not just that since when testing this patch on one machine I kept on getting different generating units out of pari.  I seem to remember that there is a way to \"reset\" pari in doctests  to avoid this random-ness.\n\nMathematically this is not so unreasonable since any f.g. abelian group will lots (infinitely many) sets of generators and there is no way to pick one canonically.  (William and I thought about this for elliptic curve generators and came up against an unsolved problem which prevents this being possible even in principle!).",
     "created_at": "2009-03-31T10:04:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42848",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [units_rebased3.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebased3.patch) by cremona created at 2009-03-31 10:04:26
+Attachment [units_rebased3.patch](tarball://root/attachments/some-uuid/ticket5513/units_rebased3.patch) by @JohnCremona created at 2009-03-31 10:04:26
 
 ok -- see newest patch (units_rebased3.patch, to replace units_rebased2.patch).
 
@@ -802,7 +802,7 @@ archive/issue_comments_042849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42849",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

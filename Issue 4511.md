@@ -3,7 +3,7 @@
 archive/issues_004511.json:
 ```json
 {
-    "body": "Assignee: saliola\n\nCC:  sage-combinat\n\nKeywords: sage-combinat script\n\nChange the version number in $SAGE_ROOT/local/bin/sage-banner to 3.2 and then watch 'sage -combinat config' fail.\n\nI'll fix this right away.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4511\n\n",
+    "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\nKeywords: sage-combinat script\n\nChange the version number in $SAGE_ROOT/local/bin/sage-banner to 3.2 and then watch 'sage -combinat config' fail.\n\nI'll fix this right away.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4511\n\n",
     "created_at": "2008-11-13T10:45:09Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_004511.json:
     "title": "sage-combinat script won't work with two digit version numbers (for example: 3.2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4511",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: saliola
+Assignee: @saliola
 
 CC:  sage-combinat
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4511
 archive/issue_comments_033455.json:
 ```json
 {
-    "body": "Attachment [sage-combinat-script-4511.patch](tarball://root/attachments/some-uuid/ticket4511/sage-combinat-script-4511.patch) by saliola created at 2008-11-13 10:53:24\n\npatch against version 3.2.rc0",
+    "body": "Attachment [sage-combinat-script-4511.patch](tarball://root/attachments/some-uuid/ticket4511/sage-combinat-script-4511.patch) by @saliola created at 2008-11-13 10:53:24\n\npatch against version 3.2.rc0",
     "created_at": "2008-11-13T10:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33455",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [sage-combinat-script-4511.patch](tarball://root/attachments/some-uuid/ticket4511/sage-combinat-script-4511.patch) by saliola created at 2008-11-13 10:53:24
+Attachment [sage-combinat-script-4511.patch](tarball://root/attachments/some-uuid/ticket4511/sage-combinat-script-4511.patch) by @saliola created at 2008-11-13 10:53:24
 
 patch against version 3.2.rc0
 
@@ -63,7 +63,7 @@ archive/issue_comments_033456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33456",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_033457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33457",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_033458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33458",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -158,16 +158,16 @@ Updating guards
 archive/issue_comments_033459.json:
 ```json
 {
-    "body": "Attachment [sage-combinat-script-4511-patch2.patch](tarball://root/attachments/some-uuid/ticket4511/sage-combinat-script-4511-patch2.patch) by saliola created at 2008-11-14 19:29:13\n\napply only this patch",
+    "body": "Attachment [sage-combinat-script-4511-patch2.patch](tarball://root/attachments/some-uuid/ticket4511/sage-combinat-script-4511-patch2.patch) by @saliola created at 2008-11-14 19:29:13\n\napply only this patch",
     "created_at": "2008-11-14T19:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33459",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [sage-combinat-script-4511-patch2.patch](tarball://root/attachments/some-uuid/ticket4511/sage-combinat-script-4511-patch2.patch) by saliola created at 2008-11-14 19:29:13
+Attachment [sage-combinat-script-4511-patch2.patch](tarball://root/attachments/some-uuid/ticket4511/sage-combinat-script-4511-patch2.patch) by @saliola created at 2008-11-14 19:29:13
 
 apply only this patch
 
@@ -183,7 +183,7 @@ archive/issue_comments_033460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33460",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007255.json:
     "title": "sagenb notebook: reset() causes the worksheet to stop working.  fix this.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7255",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_060274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7255#issuecomment-60274",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ patch to sagenb repo to fix this problem
 archive/issue_comments_060275.json:
 ```json
 {
-    "body": "Attachment [trac_sagenb_7255.patch](tarball://root/attachments/some-uuid/ticket7255/trac_sagenb_7255.patch) by was created at 2009-10-20 22:11:26\n\nReset doesn't touch _ names, so the fix is easy -- just use `import sagenb.notebook.interact as _interact_` then everywhere in code refer to `_interact_` instead of `sagenb.notebook.interact`.  This is better on many levels.",
+    "body": "Attachment [trac_sagenb_7255.patch](tarball://root/attachments/some-uuid/ticket7255/trac_sagenb_7255.patch) by @williamstein created at 2009-10-20 22:11:26\n\nReset doesn't touch _ names, so the fix is easy -- just use `import sagenb.notebook.interact as _interact_` then everywhere in code refer to `_interact_` instead of `sagenb.notebook.interact`.  This is better on many levels.",
     "created_at": "2009-10-20T22:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7255#issuecomment-60275",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_sagenb_7255.patch](tarball://root/attachments/some-uuid/ticket7255/trac_sagenb_7255.patch) by was created at 2009-10-20 22:11:26
+Attachment [trac_sagenb_7255.patch](tarball://root/attachments/some-uuid/ticket7255/trac_sagenb_7255.patch) by @williamstein created at 2009-10-20 22:11:26
 
 Reset doesn't touch _ names, so the fix is easy -- just use `import sagenb.notebook.interact as _interact_` then everywhere in code refer to `_interact_` instead of `sagenb.notebook.interact`.  This is better on many levels.
 
@@ -75,7 +75,7 @@ archive/issue_comments_060276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7255#issuecomment-60276",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_060279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7255#issuecomment-60279",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

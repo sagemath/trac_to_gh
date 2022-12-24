@@ -3,7 +3,7 @@
 archive/issues_000639.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt would be very cool if `sage -t` could run tests in parallel on a multicore machine. There would need to be some clever output redirection so all the test output didn't get mishmashed together.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/639\n\n",
+    "body": "Assignee: @williamstein\n\nIt would be very cool if `sage -t` could run tests in parallel on a multicore machine. There would need to be some clever output redirection so all the test output didn't get mishmashed together.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/639\n\n",
     "created_at": "2007-09-11T12:42:41Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_000639.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It would be very cool if `sage -t` could run tests in parallel on a multicore machine. There would need to be some clever output redirection so all the test output didn't get mishmashed together.
 
@@ -75,16 +75,16 @@ See also #838.
 archive/issue_comments_003303.json:
 ```json
 {
-    "body": "Changing assignee from was to gfurnish.",
+    "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-07T05:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/639#issuecomment-3303",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was to gfurnish.
+Changing assignee from @williamstein to @garyfurnish.
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_003304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/639#issuecomment-3304",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

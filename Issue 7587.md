@@ -3,7 +3,7 @@
 archive/issues_007587.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  simonking\n\nThe returned result is a list of ETuples, but for people interested in maximum speed it would be useful to provide an option to return plain tuples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7587\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  simonking\n\nThe returned result is a list of ETuples, but for people interested in maximum speed it would be useful to provide an option to return plain tuples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7587\n\n",
     "created_at": "2009-12-02T22:11:10Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_007587.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  simonking
 
@@ -106,7 +106,7 @@ archive/issue_comments_064688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7587#issuecomment-64688",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_064689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7587#issuecomment-64689",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_064691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7587#issuecomment-64691",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_064692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7587#issuecomment-64692",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_064693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7587",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7587#issuecomment-64693",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

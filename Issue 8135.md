@@ -3,7 +3,7 @@
 archive/issues_008135.json:
 ```json
 {
-    "body": "Assignee: Kevin Stueve\n\nCC:  leif\n\nKeywords: prime counting function Riemann zeta zeros\n\nGet an analytic approximation to prime_pi, the prime counting function that uses the nontrivial zeros of the Riemann zeta function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8135\n\n",
+    "body": "Assignee: Kevin Stueve\n\nCC:  @nexttime\n\nKeywords: prime counting function Riemann zeta zeros\n\nGet an analytic approximation to prime_pi, the prime counting function that uses the nontrivial zeros of the Riemann zeta function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8135\n\n",
     "created_at": "2010-01-31T06:20:29Z",
     "labels": [
         "number theory",
@@ -18,7 +18,7 @@ archive/issues_008135.json:
 ```
 Assignee: Kevin Stueve
 
-CC:  leif
+CC:  @nexttime
 
 Keywords: prime counting function Riemann zeta zeros
 

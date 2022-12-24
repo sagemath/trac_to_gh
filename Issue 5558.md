@@ -14,7 +14,7 @@ archive/issues_005558.json:
     "title": "jsmath-image-fonts spkg not updated in optional spkg listing on sagemath.org",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5558",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -42,7 +42,7 @@ archive/issue_comments_043263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5558#issuecomment-43263",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_043264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5558#issuecomment-43264",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

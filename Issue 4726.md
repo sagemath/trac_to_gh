@@ -3,7 +3,7 @@
 archive/issues_004726.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  lftabera\n\nThe following _should_ create the correct homomorphism (complex conjugation, see #4724):\n\n```\nsage: K.<j,b> = QQ[sqrt(-1), sqrt(2)]\nsage: conj = K.hom([-j, b])\nboom!\n```\n\n\nHowever it doesn't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4726\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @lftabera\n\nThe following _should_ create the correct homomorphism (complex conjugation, see #4724):\n\n```\nsage: K.<j,b> = QQ[sqrt(-1), sqrt(2)]\nsage: conj = K.hom([-j, b])\nboom!\n```\n\n\nHowever it doesn't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4726\n\n",
     "created_at": "2008-12-06T18:41:24Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_004726.json:
     "title": "Creating homomorphisms of relative number fields seems totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4726",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  lftabera
+CC:  @lftabera
 
 The following _should_ create the correct homomorphism (complex conjugation, see #4724):
 
@@ -48,7 +48,7 @@ archive/issue_comments_035676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4726#issuecomment-35676",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -61,16 +61,16 @@ Changing component from number theory to number fields.
 archive/issue_comments_035677.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T20:23:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4726#issuecomment-35677",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_035678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4726#issuecomment-35678",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_035679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4726#issuecomment-35679",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_035682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4726#issuecomment-35682",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -238,16 +238,16 @@ Nice catch. I've written a fix for _from_im and have mostly done writing up code
 archive/issue_comments_035683.json:
 ```json
 {
-    "body": "Attachment [trac_4726_enhance_relative_number_morphism_constructor.patch](tarball://root/attachments/some-uuid/ticket4726/trac_4726_enhance_relative_number_morphism_constructor.patch) by robharron created at 2013-04-18 18:55:50",
+    "body": "Attachment [trac_4726_enhance_relative_number_morphism_constructor.patch](tarball://root/attachments/some-uuid/ticket4726/trac_4726_enhance_relative_number_morphism_constructor.patch) by @rharron created at 2013-04-18 18:55:50",
     "created_at": "2013-04-18T18:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4726#issuecomment-35683",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
-Attachment [trac_4726_enhance_relative_number_morphism_constructor.patch](tarball://root/attachments/some-uuid/ticket4726/trac_4726_enhance_relative_number_morphism_constructor.patch) by robharron created at 2013-04-18 18:55:50
+Attachment [trac_4726_enhance_relative_number_morphism_constructor.patch](tarball://root/attachments/some-uuid/ticket4726/trac_4726_enhance_relative_number_morphism_constructor.patch) by @rharron created at 2013-04-18 18:55:50
 
 
 
@@ -261,7 +261,7 @@ archive/issue_comments_035684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4726#issuecomment-35684",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_035685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4726#issuecomment-35685",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 

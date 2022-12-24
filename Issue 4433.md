@@ -3,7 +3,7 @@
 archive/issues_004433.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThis patch depends on #4432. It replaces the factorial in sage.rings.arith with the symbolic\nversion of #4432 in sage.calculus.calculus.\n\nFor now sage.rings.arith.factorial is just renamed to factorial_numeric, otherwise I got\ncircular imports at Sage startup.\n\nThe patch is against sage-3.2alpha1.\n\nAfter applying this patch plus the patches at #4432 all doctests passed.\n\nA sample session:\n\n\n```\nsage: gamma(x/2)(x=5)\n3*sqrt(pi)/4\n\nsage: f = factorial(x + factorial(y))\nsage: maxima(f).sage()\nfactorial(factorial(y) + x)\n\nsage: f(y=x)(x=3)\n362880\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4433\n\n",
+    "body": "Assignee: @burcin\n\nThis patch depends on #4432. It replaces the factorial in sage.rings.arith with the symbolic\nversion of #4432 in sage.calculus.calculus.\n\nFor now sage.rings.arith.factorial is just renamed to factorial_numeric, otherwise I got\ncircular imports at Sage startup.\n\nThe patch is against sage-3.2alpha1.\n\nAfter applying this patch plus the patches at #4432 all doctests passed.\n\nA sample session:\n\n\n```\nsage: gamma(x/2)(x=5)\n3*sqrt(pi)/4\n\nsage: f = factorial(x + factorial(y))\nsage: maxima(f).sage()\nfactorial(factorial(y) + x)\n\nsage: f(y=x)(x=3)\n362880\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4433\n\n",
     "created_at": "2008-11-03T20:07:01Z",
     "labels": [
         "calculus",
@@ -17,7 +17,7 @@ archive/issues_004433.json:
     "user": "whuss"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 This patch depends on #4432. It replaces the factorial in sage.rings.arith with the symbolic
 version of #4432 in sage.calculus.calculus.
@@ -76,7 +76,7 @@ Attachment [factorial.patch](tarball://root/attachments/some-uuid/ticket4433/fac
 archive/issue_comments_032581.json:
 ```json
 {
-    "body": "Changing assignee from burcin to whuss.",
+    "body": "Changing assignee from @burcin to whuss.",
     "created_at": "2008-11-03T20:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4433",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_032581.json:
 }
 ```
 
-Changing assignee from burcin to whuss.
+Changing assignee from @burcin to whuss.
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_032583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4433#issuecomment-32583",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_032588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4433",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4433#issuecomment-32588",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

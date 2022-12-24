@@ -3,7 +3,7 @@
 archive/issues_003472.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nRunning sage from a directory that doesn't exist thinks it's working, but really just fails. I'm attaching a new `$SAGE_ROOT/sage` replacement that checks this on startup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3472\n\n",
+    "body": "Assignee: @craigcitro\n\nRunning sage from a directory that doesn't exist thinks it's working, but really just fails. I'm attaching a new `$SAGE_ROOT/sage` replacement that checks this on startup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3472\n\n",
     "created_at": "2008-06-19T21:13:49Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_003472.json:
     "title": "Running sage from a non-existent directory pretends to work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3472",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Running sage from a directory that doesn't exist thinks it's working, but really just fails. I'm attaching a new `$SAGE_ROOT/sage` replacement that checks this on startup.
 

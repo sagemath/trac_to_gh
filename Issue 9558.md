@@ -3,7 +3,7 @@
 archive/issues_009558.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\nThis is a little vague - should it also be for SR, not just polynomial rings?  But it seems like a reasonable request on sage-support:\n\n```\nHi, \nI would like to know if there are any function that says if a \npolynomial is or not symmetric (like: 'is_symmetric'), so Mathematica \nhave this kind of function. \nhttp://en.wikipedia.org/wiki/Symmetric_polynomial \nThanks! \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9558\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nThis is a little vague - should it also be for SR, not just polynomial rings?  But it seems like a reasonable request on sage-support:\n\n```\nHi, \nI would like to know if there are any function that says if a \npolynomial is or not symmetric (like: 'is_symmetric'), so Mathematica \nhave this kind of function. \nhttp://en.wikipedia.org/wiki/Symmetric_polynomial \nThanks! \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9558\n\n",
     "created_at": "2010-07-21T01:22:52Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009558.json:
     "title": "Make `is_symmetric` method for polynomials or where else useful",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9558",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9558
 archive/issue_comments_092142.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to sage-combinat.",
+    "body": "Changing assignee from @aghitza to sage-combinat.",
     "created_at": "2010-07-30T15:31:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9558#issuecomment-92142",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Changing assignee from AlexGhitza to sage-combinat.
+Changing assignee from @aghitza to sage-combinat.
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_092143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9558#issuecomment-92143",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_092144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9558#issuecomment-92144",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 

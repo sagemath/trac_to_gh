@@ -50,16 +50,16 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_055112.json:
 ```json
 {
-    "body": "Attachment [trac_6714-spell-check-libs.patch](tarball://root/attachments/some-uuid/ticket6714/trac_6714-spell-check-libs.patch) by schilly created at 2009-08-14 10:18:57\n\nlooks good, only comments and doc-lines touched, no code or doctests.",
+    "body": "Attachment [trac_6714-spell-check-libs.patch](tarball://root/attachments/some-uuid/ticket6714/trac_6714-spell-check-libs.patch) by @haraldschilly created at 2009-08-14 10:18:57\n\nlooks good, only comments and doc-lines touched, no code or doctests.",
     "created_at": "2009-08-14T10:18:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6714#issuecomment-55112",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [trac_6714-spell-check-libs.patch](tarball://root/attachments/some-uuid/ticket6714/trac_6714-spell-check-libs.patch) by schilly created at 2009-08-14 10:18:57
+Attachment [trac_6714-spell-check-libs.patch](tarball://root/attachments/some-uuid/ticket6714/trac_6714-spell-check-libs.patch) by @haraldschilly created at 2009-08-14 10:18:57
 
 looks good, only comments and doc-lines touched, no code or doctests.
 

@@ -3,7 +3,7 @@
 archive/issues_008768.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jhpalmieri jsp\n\n\n```\ngcc -std=gnu99 -g -O2 -D_REENTRANT -D_THREAD_SAFE -I/home/wstein/screen/fulvia/sage-4.4/local/include -g -O2 -D_REENTRANT -D_THREAD_SAFE -Wno-pointer-sign -o .libs/gnutls-serv serv-gaa.o serv.o common.o select.o  -L/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/lib/.libs ../lib/.libs/libgnutls.so -L/home/wstein/screen/fulvia/sage-4.4/local/lib ../libextra/.libs/libgnutls-extra.so /home/wstein/screen/fulvia/sage-4.4/local/lib/libopencdk.so /home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/lib/.libs/libgnutls.so -lz ../gl/.libs/libgnu.a /home/wstein/screen/fulvia/sage-4.4/local/lib/libgcrypt.so /home/wstein/screen/fulvia/sage-4.4/local/lib/libgpg-error.so -lsocket  -R/home/wstein/screen/fulvia/sage-4.4/local/lib\nserv.o: In function `peer_print_info':\n/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src/serv.c:489: undefined reference to `gnutls_x509_crt_print'\ncommon.o: In function `print_x509_info':\n/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src/common.c:151: undefined reference to `gnutls_x509_crt_check_hostname'\n../libextra/.libs/libgnutls-extra.so: undefined reference to `_gnutls_hostname_compare'\ncollect2: ld returned 1 exit status\nmake[5]: *** [gnutls-serv] Error 1\nmake[5]: Leaving directory `/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src'\nmake[4]: *** [all-recursive] Error 1\nmake[4]: Leaving directory `/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src'\n```\n\n\nMore machine details:\n\n```\n-bash-3.00$ uname -a\nSunOS mark 5.10 Generic_127111-01 sun4u sparc SUNW,Sun-Blade-2500\n-bash-3.00$ gcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/sparc-SunOS-ultrasparc3/libexec/gcc/sparc-sun-solaris2.10/4.5.0/lto-wrapper\nTarget: sparc-sun-solaris2.10\nConfigured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-as=/usr/local/binutils-2.20.1/sparc-SunOS-ultrasparc3-gcc-4.4.3/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/sparc-SunOS-ultrasparc3-gcc-4.4.3/bin/ld --with-gmp=/usr/local/mpir-1.2.2/sparc-SunOS-ultrasparc3-gcc-4.4.2-abi32 --with-mpfr=/usr/local/mpfr-2.4.2/sparc-SunOS-ultrasparc3-mpir-1.2.2-gcc-4.4.2-abi32 --with-mpc=/usr/local/mpc-0.8.1/sparc-SunOS-ultrasparc3-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-abi32 --prefix=/usr/local/gcc-4.5.0/sparc-SunOS-ultrasparc3\nThread model: posix\ngcc version 4.5.0 (GCC)\n```\n\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/8768\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jhpalmieri @jaapspies\n\n\n```\ngcc -std=gnu99 -g -O2 -D_REENTRANT -D_THREAD_SAFE -I/home/wstein/screen/fulvia/sage-4.4/local/include -g -O2 -D_REENTRANT -D_THREAD_SAFE -Wno-pointer-sign -o .libs/gnutls-serv serv-gaa.o serv.o common.o select.o  -L/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/lib/.libs ../lib/.libs/libgnutls.so -L/home/wstein/screen/fulvia/sage-4.4/local/lib ../libextra/.libs/libgnutls-extra.so /home/wstein/screen/fulvia/sage-4.4/local/lib/libopencdk.so /home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/lib/.libs/libgnutls.so -lz ../gl/.libs/libgnu.a /home/wstein/screen/fulvia/sage-4.4/local/lib/libgcrypt.so /home/wstein/screen/fulvia/sage-4.4/local/lib/libgpg-error.so -lsocket  -R/home/wstein/screen/fulvia/sage-4.4/local/lib\nserv.o: In function `peer_print_info':\n/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src/serv.c:489: undefined reference to `gnutls_x509_crt_print'\ncommon.o: In function `print_x509_info':\n/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src/common.c:151: undefined reference to `gnutls_x509_crt_check_hostname'\n../libextra/.libs/libgnutls-extra.so: undefined reference to `_gnutls_hostname_compare'\ncollect2: ld returned 1 exit status\nmake[5]: *** [gnutls-serv] Error 1\nmake[5]: Leaving directory `/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src'\nmake[4]: *** [all-recursive] Error 1\nmake[4]: Leaving directory `/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src'\n```\n\n\nMore machine details:\n\n```\n-bash-3.00$ uname -a\nSunOS mark 5.10 Generic_127111-01 sun4u sparc SUNW,Sun-Blade-2500\n-bash-3.00$ gcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/sparc-SunOS-ultrasparc3/libexec/gcc/sparc-sun-solaris2.10/4.5.0/lto-wrapper\nTarget: sparc-sun-solaris2.10\nConfigured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-as=/usr/local/binutils-2.20.1/sparc-SunOS-ultrasparc3-gcc-4.4.3/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/sparc-SunOS-ultrasparc3-gcc-4.4.3/bin/ld --with-gmp=/usr/local/mpir-1.2.2/sparc-SunOS-ultrasparc3-gcc-4.4.2-abi32 --with-mpfr=/usr/local/mpfr-2.4.2/sparc-SunOS-ultrasparc3-mpir-1.2.2-gcc-4.4.2-abi32 --with-mpc=/usr/local/mpc-0.8.1/sparc-SunOS-ultrasparc3-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-abi32 --prefix=/usr/local/gcc-4.5.0/sparc-SunOS-ultrasparc3\nThread model: posix\ngcc version 4.5.0 (GCC)\n```\n\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/8768\n\n",
     "created_at": "2010-04-26T18:09:29Z",
     "labels": [
         "porting: Solaris",
@@ -14,12 +14,12 @@ archive/issues_008768.json:
     "title": "gnutls-2.2.1.p5 doesn't build on Solaris 10 x86 (fulvia) with GCC-4.5.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8768",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: drkirkby
 
-CC:  jhpalmieri jsp
+CC:  @jhpalmieri @jaapspies
 
 
 ```
@@ -73,7 +73,7 @@ archive/issue_comments_080236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80236",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_080237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80237",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_080238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80238",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_080244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80244",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_080248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80248",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_080249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80249",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -528,7 +528,7 @@ archive/issue_comments_080250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80250",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_080251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80251",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000675.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: Solaris 10\n\n\n```\nFile \"tut.py\", line 1373:\n    : A = M.random_element(density = 0.05)\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_53[1]>\", line 1, in <module>\n        _= A = M.random_element(density = RealNumber('0.05'))###line 1373:\n    : A = M.random_element(density = 0.05)\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/site-packages/sage/matrix/matrix_space.py\", line 753, in random_element\n        Z.randomize(density, *args, **kwds)\n      File \"matrix2.pyx\", line 2595, in matrix2.Matrix.randomize\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/site-packages/sage/rings/rational_field.py\", line 342, in random_element\n        ZZ.random_element(distribution=distribution)))\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/site-packages/sage/rings/rational_field.py\", line 182, in __call__\n        return sage.rings.rational.Rational(x, base)\n      File \"rational.pyx\", line 160, in rational.Rational.__init__\n      File \"rational.pyx\", line 248, in rational.Rational.__set_value\n    ValueError: denominator must not be 0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/675\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: Solaris 10\n\n\n```\nFile \"tut.py\", line 1373:\n    : A = M.random_element(density = 0.05)\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_53[1]>\", line 1, in <module>\n        _= A = M.random_element(density = RealNumber('0.05'))###line 1373:\n    : A = M.random_element(density = 0.05)\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/site-packages/sage/matrix/matrix_space.py\", line 753, in random_element\n        Z.randomize(density, *args, **kwds)\n      File \"matrix2.pyx\", line 2595, in matrix2.Matrix.randomize\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/site-packages/sage/rings/rational_field.py\", line 342, in random_element\n        ZZ.random_element(distribution=distribution)))\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/site-packages/sage/rings/rational_field.py\", line 182, in __call__\n        return sage.rings.rational.Rational(x, base)\n      File \"rational.pyx\", line 160, in rational.Rational.__init__\n      File \"rational.pyx\", line 248, in rational.Rational.__set_value\n    ValueError: denominator must not be 0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/675\n\n",
     "created_at": "2007-09-17T00:38:46Z",
     "labels": [
         "packages",
@@ -17,7 +17,7 @@ archive/issues_000675.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: Solaris 10
 
@@ -74,7 +74,7 @@ Changing component from packages to doctest.
 archive/issue_comments_003502.json:
 ```json
 {
-    "body": "Changing assignee from was to failure.",
+    "body": "Changing assignee from @williamstein to failure.",
     "created_at": "2007-09-17T01:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/675",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_003502.json:
 }
 ```
 
-Changing assignee from was to failure.
+Changing assignee from @williamstein to failure.
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008300.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was\n\nUsing the properties of LLL and a height bound, we can prove (given sufficient precision) that an integer relation of bounded height either doesn't exist or is unique. This is needed, e.g.,  for provable computations of Heegner points though could be useful elsewhere as well. It is also faster.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/8300\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nUsing the properties of LLL and a height bound, we can prove (given sufficient precision) that an integer relation of bounded height either doesn't exist or is unique. This is needed, e.g.,  for provable computations of Heegner points though could be useful elsewhere as well. It is also faster.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/8300\n\n",
     "created_at": "2010-02-19T01:41:38Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_008300.json:
     "title": "native algdep with proof option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8300",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was
+CC:  @williamstein
 
 Using the properties of LLL and a height bound, we can prove (given sufficient precision) that an integer relation of bounded height either doesn't exist or is unique. This is needed, e.g.,  for provable computations of Heegner points though could be useful elsewhere as well. It is also faster.  
 
@@ -39,7 +39,7 @@ archive/issue_comments_073521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8300#issuecomment-73521",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_073522.json:
 ```json
 {
-    "body": "Attachment [8300-algdep-proof.patch](tarball://root/attachments/some-uuid/ticket8300/8300-algdep-proof.patch) by robertwb created at 2010-02-20 01:05:04",
+    "body": "Attachment [8300-algdep-proof.patch](tarball://root/attachments/some-uuid/ticket8300/8300-algdep-proof.patch) by @robertwb created at 2010-02-20 01:05:04",
     "created_at": "2010-02-20T01:05:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8300#issuecomment-73522",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8300-algdep-proof.patch](tarball://root/attachments/some-uuid/ticket8300/8300-algdep-proof.patch) by robertwb created at 2010-02-20 01:05:04
+Attachment [8300-algdep-proof.patch](tarball://root/attachments/some-uuid/ticket8300/8300-algdep-proof.patch) by @robertwb created at 2010-02-20 01:05:04
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_073523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8300#issuecomment-73523",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_073524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8300#issuecomment-73524",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_073525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8300#issuecomment-73525",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_073526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8300#issuecomment-73526",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

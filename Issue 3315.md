@@ -3,7 +3,7 @@
 archive/issues_003315.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: parametric_plot\n\nSubject says it all.  I (Marshall Hampton) will work on this if I have time; should be pretty easy.  Currently parametric_plot wants a tuple of functions; I think it should do that OR accept a function that returns a tuple.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3315\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: parametric_plot\n\nSubject says it all.  I (Marshall Hampton) will work on this if I have time; should be pretty easy.  Currently parametric_plot wants a tuple of functions; I think it should do that OR accept a function that returns a tuple.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3315\n\n",
     "created_at": "2008-05-27T19:06:22Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_003315.json:
     "user": "mhampton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: parametric_plot
 
@@ -39,7 +39,7 @@ archive/issue_comments_022964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3315#issuecomment-22964",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_022965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3315#issuecomment-22965",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_022966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3315#issuecomment-22966",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

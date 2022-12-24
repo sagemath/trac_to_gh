@@ -3,7 +3,7 @@
 archive/issues_004524.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\nKeywords: input_box\n\nUsing interact in sage 3.1.4, the default string doesn't print completly in the input box. It looks like it prints up to the first character ' found.\nThe folowing example works well \n\n\n```\n@interact\ndef _(a=input_box(default='interact is \"cool\"',type=str,label='Name:')):\n    print a\n```\n\n\nand it puts *interact is \"cool\"* in the input box. But in the next one, \n\n\n```\n@interact\ndef _(a=input_box(default=\"interact is 'cool'\",type=str,label='Name:')):\n    print a\n```\n\n\nthe default string in the input box is incomplete, it puts only *interact is *. So, we don't know if interact is cool or not !\n\nIssue created by migration from https://trac.sagemath.org/ticket/4524\n\n",
+    "body": "Assignee: @itolkov\n\nKeywords: input_box\n\nUsing interact in sage 3.1.4, the default string doesn't print completly in the input box. It looks like it prints up to the first character ' found.\nThe folowing example works well \n\n\n```\n@interact\ndef _(a=input_box(default='interact is \"cool\"',type=str,label='Name:')):\n    print a\n```\n\n\nand it puts *interact is \"cool\"* in the input box. But in the next one, \n\n\n```\n@interact\ndef _(a=input_box(default=\"interact is 'cool'\",type=str,label='Name:')):\n    print a\n```\n\n\nthe default string in the input box is incomplete, it puts only *interact is *. So, we don't know if interact is cool or not !\n\nIssue created by migration from https://trac.sagemath.org/ticket/4524\n\n",
     "created_at": "2008-11-14T17:04:23Z",
     "labels": [
         "interact",
@@ -14,10 +14,10 @@ archive/issues_004524.json:
     "title": "interact : incomplete default string in the input box",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4524",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
 Keywords: input_box
 
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4524
 archive/issue_comments_033574.json:
 ```json
 {
-    "body": "Attachment [trac_4524.patch](tarball://root/attachments/some-uuid/ticket4524/trac_4524.patch) by mhansen created at 2009-01-23 08:10:46",
+    "body": "Attachment [trac_4524.patch](tarball://root/attachments/some-uuid/ticket4524/trac_4524.patch) by @mwhansen created at 2009-01-23 08:10:46",
     "created_at": "2009-01-23T08:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4524#issuecomment-33574",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4524.patch](tarball://root/attachments/some-uuid/ticket4524/trac_4524.patch) by mhansen created at 2009-01-23 08:10:46
+Attachment [trac_4524.patch](tarball://root/attachments/some-uuid/ticket4524/trac_4524.patch) by @mwhansen created at 2009-01-23 08:10:46
 
 
 
@@ -73,16 +73,16 @@ Attachment [trac_4524.patch](tarball://root/attachments/some-uuid/ticket4524/tra
 archive/issue_comments_033575.json:
 ```json
 {
-    "body": "Changing assignee from itolkov to mhansen.",
+    "body": "Changing assignee from @itolkov to @mwhansen.",
     "created_at": "2009-01-23T08:11:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4524#issuecomment-33575",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from itolkov to mhansen.
+Changing assignee from @itolkov to @mwhansen.
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_033576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4524#issuecomment-33576",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_033577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4524#issuecomment-33577",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_033578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4524#issuecomment-33578",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -176,16 +176,16 @@ You could have posted a patch and then asked me to review your portion of the pa
 archive/issue_comments_033579.json:
 ```json
 {
-    "body": "Attachment [trac_4524-2.patch](tarball://root/attachments/some-uuid/ticket4524/trac_4524-2.patch) by slabbe created at 2009-01-24 16:58:35\n\nPositive review.",
+    "body": "Attachment [trac_4524-2.patch](tarball://root/attachments/some-uuid/ticket4524/trac_4524-2.patch) by @seblabbe created at 2009-01-24 16:58:35\n\nPositive review.",
     "created_at": "2009-01-24T16:58:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4524#issuecomment-33579",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_4524-2.patch](tarball://root/attachments/some-uuid/ticket4524/trac_4524-2.patch) by slabbe created at 2009-01-24 16:58:35
+Attachment [trac_4524-2.patch](tarball://root/attachments/some-uuid/ticket4524/trac_4524-2.patch) by @seblabbe created at 2009-01-24 16:58:35
 
 Positive review.
 
@@ -201,7 +201,7 @@ archive/issue_comments_033580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4524#issuecomment-33580",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 

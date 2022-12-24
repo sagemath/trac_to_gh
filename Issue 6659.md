@@ -3,7 +3,7 @@
 archive/issues_006659.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm rbeezer hartke\n\nHere is a patch, based on the networkx code, which implements some of the optimizations noted in the paper referenced in the networkx documentation.  This leads to what I think are asymptotic speedups.\n\nAs for the bug, before, the doctest added would fail from an error in the networkx code.  Now it does not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6659\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill @rbeezer hartke\n\nHere is a patch, based on the networkx code, which implements some of the optimizations noted in the paper referenced in the networkx documentation.  This leads to what I think are asymptotic speedups.\n\nAs for the bug, before, the doctest added would fail from an error in the networkx code.  Now it does not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6659\n\n",
     "created_at": "2009-07-30T08:38:51Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_006659.json:
     "title": "cores() is broken for some digraphs, and is *way* too slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6659",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm rbeezer hartke
+CC:  @rlmill @rbeezer hartke
 
 Here is a patch, based on the networkx code, which implements some of the optimizations noted in the paper referenced in the networkx documentation.  This leads to what I think are asymptotic speedups.
 
@@ -41,7 +41,7 @@ archive/issue_comments_054663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54663",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_054664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54664",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -100,16 +100,16 @@ True
 archive/issue_comments_054665.json:
 ```json
 {
-    "body": "Attachment [trac_6659-graph-cores.patch](tarball://root/attachments/some-uuid/ticket6659/trac_6659-graph-cores.patch) by jason created at 2009-07-31 07:28:59\n\nI added a couple of comments to help the reader see what is happening in the source code.",
+    "body": "Attachment [trac_6659-graph-cores.patch](tarball://root/attachments/some-uuid/ticket6659/trac_6659-graph-cores.patch) by @jasongrout created at 2009-07-31 07:28:59\n\nI added a couple of comments to help the reader see what is happening in the source code.",
     "created_at": "2009-07-31T07:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54665",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_6659-graph-cores.patch](tarball://root/attachments/some-uuid/ticket6659/trac_6659-graph-cores.patch) by jason created at 2009-07-31 07:28:59
+Attachment [trac_6659-graph-cores.patch](tarball://root/attachments/some-uuid/ticket6659/trac_6659-graph-cores.patch) by @jasongrout created at 2009-07-31 07:28:59
 
 I added a couple of comments to help the reader see what is happening in the source code.
 

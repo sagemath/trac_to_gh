@@ -3,7 +3,7 @@
 archive/issues_000232.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: python assert\n\nDifferent behavior in sage shell than in regular python shell:\n\nsage: x = 5\nsage: y = 3\nsage: assert x==y\nsage:\n\nin python:\n>>> x = 5\n>>> y = 3\n>>> assert x==y\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nAssertionError\n>>>\n\nIssue created by migration from https://trac.sagemath.org/ticket/232\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: python assert\n\nDifferent behavior in sage shell than in regular python shell:\n\nsage: x = 5\nsage: y = 3\nsage: assert x==y\nsage:\n\nin python:\n>>> x = 5\n>>> y = 3\n>>> assert x==y\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nAssertionError\n>>>\n\nIssue created by migration from https://trac.sagemath.org/ticket/232\n\n",
     "created_at": "2007-01-29T20:07:29Z",
     "labels": [
         "interfaces",
@@ -13,10 +13,10 @@ archive/issues_000232.json:
     "title": "assert statement does not work in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/232",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: python assert
 
@@ -52,7 +52,7 @@ archive/issue_comments_001028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/232#issuecomment-1028",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_001029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/232#issuecomment-1029",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_001030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/232#issuecomment-1030",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

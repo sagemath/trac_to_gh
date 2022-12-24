@@ -3,7 +3,7 @@
 archive/issues_005003.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nSee:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/d01dd8082da28d52?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/5003\n\n",
+    "body": "Assignee: @rlmill\n\nSee:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/d01dd8082da28d52?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/5003\n\n",
     "created_at": "2009-01-17T19:53:07Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_005003.json:
     "title": "[with patch, needs review] equality testing in graphs should check \"weighted\" property",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5003",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 See:
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5003
 archive/issue_comments_038162.json:
 ```json
 {
-    "body": "Attachment [trac-5003_weighted_eq_graphs.patch](tarball://root/attachments/some-uuid/ticket5003/trac-5003_weighted_eq_graphs.patch) by rlm created at 2009-01-17 19:53:35",
+    "body": "Attachment [trac-5003_weighted_eq_graphs.patch](tarball://root/attachments/some-uuid/ticket5003/trac-5003_weighted_eq_graphs.patch) by @rlmill created at 2009-01-17 19:53:35",
     "created_at": "2009-01-17T19:53:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5003#issuecomment-38162",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-5003_weighted_eq_graphs.patch](tarball://root/attachments/some-uuid/ticket5003/trac-5003_weighted_eq_graphs.patch) by rlm created at 2009-01-17 19:53:35
+Attachment [trac-5003_weighted_eq_graphs.patch](tarball://root/attachments/some-uuid/ticket5003/trac-5003_weighted_eq_graphs.patch) by @rlmill created at 2009-01-17 19:53:35
 
 
 
@@ -123,7 +123,7 @@ archive/issue_comments_038164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5003#issuecomment-38164",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_038165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5003#issuecomment-38165",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -167,16 +167,16 @@ Apply this patch second.
 archive/issue_comments_038166.json:
 ```json
 {
-    "body": "Attachment [trac-5003-followup.patch](tarball://root/attachments/some-uuid/ticket5003/trac-5003-followup.patch) by mhansen created at 2009-01-24 15:25:26\n\nLooks good to me.",
+    "body": "Attachment [trac-5003-followup.patch](tarball://root/attachments/some-uuid/ticket5003/trac-5003-followup.patch) by @mwhansen created at 2009-01-24 15:25:26\n\nLooks good to me.",
     "created_at": "2009-01-24T15:25:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5003",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5003#issuecomment-38166",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac-5003-followup.patch](tarball://root/attachments/some-uuid/ticket5003/trac-5003-followup.patch) by mhansen created at 2009-01-24 15:25:26
+Attachment [trac-5003-followup.patch](tarball://root/attachments/some-uuid/ticket5003/trac-5003-followup.patch) by @mwhansen created at 2009-01-24 15:25:26
 
 Looks good to me.
 

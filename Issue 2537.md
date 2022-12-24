@@ -3,7 +3,7 @@
 archive/issues_002537.json:
 ```json
 {
-    "body": "Assignee: rishi\n\nfrac(-2.9) should be .1\n\nIssue created by migration from https://trac.sagemath.org/ticket/2537\n\n",
+    "body": "Assignee: @rishikesha\n\nfrac(-2.9) should be .1\n\nIssue created by migration from https://trac.sagemath.org/ticket/2537\n\n",
     "created_at": "2008-03-16T01:09:45Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_002537.json:
     "title": "a.frac() should return x-x.floor()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2537",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
-Assignee: rishi
+Assignee: @rishikesha
 
 frac(-2.9) should be .1
 

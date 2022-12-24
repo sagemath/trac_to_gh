@@ -14,7 +14,7 @@ archive/issues_000699.json:
     "title": "implement computation of twisted winding elements (a technical thing involving modular symbols)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/699",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: craig citro
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/699
 archive/issue_comments_003662.json:
 ```json
 {
-    "body": "Attachment [winding_elem.hg](tarball://root/attachments/some-uuid/ticket699/winding_elem.hg) by was created at 2007-09-20 00:00:04",
+    "body": "Attachment [winding_elem.hg](tarball://root/attachments/some-uuid/ticket699/winding_elem.hg) by @williamstein created at 2007-09-20 00:00:04",
     "created_at": "2007-09-20T00:00:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/699#issuecomment-3662",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [winding_elem.hg](tarball://root/attachments/some-uuid/ticket699/winding_elem.hg) by was created at 2007-09-20 00:00:04
+Attachment [winding_elem.hg](tarball://root/attachments/some-uuid/ticket699/winding_elem.hg) by @williamstein created at 2007-09-20 00:00:04
 
 
 
@@ -50,16 +50,16 @@ Attachment [winding_elem.hg](tarball://root/attachments/some-uuid/ticket699/wind
 archive/issue_comments_003663.json:
 ```json
 {
-    "body": "Changing assignee from craig citro to craigcitro.",
+    "body": "Changing assignee from craig citro to @craigcitro.",
     "created_at": "2007-10-02T00:34:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/699#issuecomment-3663",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from craig citro to craigcitro.
+Changing assignee from craig citro to @craigcitro.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_003664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/699#issuecomment-3664",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_003665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/699#issuecomment-3665",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_003666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/699#issuecomment-3666",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

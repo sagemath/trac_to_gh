@@ -14,7 +14,7 @@ archive/issues_003338.json:
     "title": "gfan tarball is not clean upstream",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3338",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff

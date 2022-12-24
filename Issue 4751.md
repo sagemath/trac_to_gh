@@ -14,7 +14,7 @@ archive/issues_004751.json:
     "title": "if spkg/standard contains an extracted directory then \"sage -upgrade\" fails in multiple ways",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4751",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4751
 archive/issue_comments_035953.json:
 ```json
 {
-    "body": "Attachment [trac_4751.patch](tarball://root/attachments/some-uuid/ticket4751/trac_4751.patch) by was created at 2008-12-10 13:40:29",
+    "body": "Attachment [trac_4751.patch](tarball://root/attachments/some-uuid/ticket4751/trac_4751.patch) by @williamstein created at 2008-12-10 13:40:29",
     "created_at": "2008-12-10T13:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4751#issuecomment-35953",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4751.patch](tarball://root/attachments/some-uuid/ticket4751/trac_4751.patch) by was created at 2008-12-10 13:40:29
+Attachment [trac_4751.patch](tarball://root/attachments/some-uuid/ticket4751/trac_4751.patch) by @williamstein created at 2008-12-10 13:40:29
 
 
 

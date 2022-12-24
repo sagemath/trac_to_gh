@@ -13,7 +13,7 @@ archive/issues_000155.json:
     "title": "bug in factor over RR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/155",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: somebody
@@ -57,7 +57,7 @@ archive/issue_comments_000702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/155#issuecomment-702",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_000703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/155#issuecomment-703",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

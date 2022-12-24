@@ -3,7 +3,7 @@
 archive/issues_009590.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  cremona davidloeffler leif novoselt vbraun\n\n[Seen by John Cremona and Leif Leonhardy on 32-bit SUSE and 32-bit Ubuntu, respectively](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/6b8cef45c9f5e56c#6b8cef45c9f5e56c):\n\n```\nsage -t -long \"devel/sage/sage/geometry/toric_lattice_element.pyx\"\n**********************************************************************\nFile \"/local/jec/sage-4.5.2.alpha0/devel/sage/sage/geometry/toric_lattice_element.pyx\",\nline 235:\n    sage: n.set_immutable()\nExpected:\n    2528502973977326415\nGot nothing\n\nsage -t -long \"devel/sage/sage/geometry/cone.py\"\n**********************************************************************\nFile \"/local/jec/sage-4.5.2.alpha0/devel/sage/sage/geometry/cone.py\", line 559:\n    sage: c = Cone([(1,0), (0,1)])\nExpected:\n    4372618627376133801\nGot nothing\n```\n\nThese may stem from one or more of #8986, #8987, and #9062.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9590\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @JohnCremona @loefflerd @nexttime @novoselt @vbraun\n\n[Seen by John Cremona and Leif Leonhardy on 32-bit SUSE and 32-bit Ubuntu, respectively](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/6b8cef45c9f5e56c#6b8cef45c9f5e56c):\n\n```\nsage -t -long \"devel/sage/sage/geometry/toric_lattice_element.pyx\"\n**********************************************************************\nFile \"/local/jec/sage-4.5.2.alpha0/devel/sage/sage/geometry/toric_lattice_element.pyx\",\nline 235:\n    sage: n.set_immutable()\nExpected:\n    2528502973977326415\nGot nothing\n\nsage -t -long \"devel/sage/sage/geometry/cone.py\"\n**********************************************************************\nFile \"/local/jec/sage-4.5.2.alpha0/devel/sage/sage/geometry/cone.py\", line 559:\n    sage: c = Cone([(1,0), (0,1)])\nExpected:\n    4372618627376133801\nGot nothing\n```\n\nThese may stem from one or more of #8986, #8987, and #9062.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9590\n\n",
     "created_at": "2010-07-24T02:56:51Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_009590.json:
     "title": "Doctest failures in cone.py and toric_lattice_element.pyx on 32-bit Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9590",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mhampton
 
-CC:  cremona davidloeffler leif novoselt vbraun
+CC:  @JohnCremona @loefflerd @nexttime @novoselt @vbraun
 
 [Seen by John Cremona and Leif Leonhardy on 32-bit SUSE and 32-bit Ubuntu, respectively](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/6b8cef45c9f5e56c#6b8cef45c9f5e56c):
 
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9590
 archive/issue_comments_092734.json:
 ```json
 {
-    "body": "Attachment [trac_9590_doctest_failures_in_toric_modules.patch](tarball://root/attachments/some-uuid/ticket9590/trac_9590_doctest_failures_in_toric_modules.patch) by novoselt created at 2010-07-24 05:19:48",
+    "body": "Attachment [trac_9590_doctest_failures_in_toric_modules.patch](tarball://root/attachments/some-uuid/ticket9590/trac_9590_doctest_failures_in_toric_modules.patch) by @novoselt created at 2010-07-24 05:19:48",
     "created_at": "2010-07-24T05:19:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92734",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9590_doctest_failures_in_toric_modules.patch](tarball://root/attachments/some-uuid/ticket9590/trac_9590_doctest_failures_in_toric_modules.patch) by novoselt created at 2010-07-24 05:19:48
+Attachment [trac_9590_doctest_failures_in_toric_modules.patch](tarball://root/attachments/some-uuid/ticket9590/trac_9590_doctest_failures_in_toric_modules.patch) by @novoselt created at 2010-07-24 05:19:48
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_092735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92735",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_092736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92736",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_092737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92737",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_092738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92738",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_092739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92739",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_092740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92740",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_092741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92741",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_092742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92742",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_092743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92743",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_092744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92744",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_092745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92745",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_092746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92746",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

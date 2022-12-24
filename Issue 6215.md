@@ -3,7 +3,7 @@
 archive/issues_006215.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: jucys_murphy\n\nThis mini patch adds some more doctests for #6126, taken from\nanother patch by Valentin Ferray  on sage-combinat for the same problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6215\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: jucys_murphy\n\nThis mini patch adds some more doctests for #6126, taken from\nanother patch by Valentin Ferray  on sage-combinat for the same problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6215\n\n",
     "created_at": "2009-06-04T23:28:06Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_006215.json:
     "title": "Followup ot #6126: Symmetric group algebra jucys_murphy elements incorrect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6215",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6215
 archive/issue_comments_049654.json:
 ```json
 {
-    "body": "Attachment [symmetricgroupalgebra_jucysmurphy_fix_6215-final.patch](tarball://root/attachments/some-uuid/ticket6215/symmetricgroupalgebra_jucysmurphy_fix_6215-final.patch) by nthiery created at 2009-06-04 23:43:11",
+    "body": "Attachment [symmetricgroupalgebra_jucysmurphy_fix_6215-final.patch](tarball://root/attachments/some-uuid/ticket6215/symmetricgroupalgebra_jucysmurphy_fix_6215-final.patch) by @nthiery created at 2009-06-04 23:43:11",
     "created_at": "2009-06-04T23:43:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6215#issuecomment-49654",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [symmetricgroupalgebra_jucysmurphy_fix_6215-final.patch](tarball://root/attachments/some-uuid/ticket6215/symmetricgroupalgebra_jucysmurphy_fix_6215-final.patch) by nthiery created at 2009-06-04 23:43:11
+Attachment [symmetricgroupalgebra_jucysmurphy_fix_6215-final.patch](tarball://root/attachments/some-uuid/ticket6215/symmetricgroupalgebra_jucysmurphy_fix_6215-final.patch) by @nthiery created at 2009-06-04 23:43:11
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_049658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6215#issuecomment-49658",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_049659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6215#issuecomment-49659",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_049660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6215#issuecomment-49660",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_049661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6215#issuecomment-49661",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009542.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9542\n\n",
+    "body": "Assignee: @aghitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9542\n\n",
     "created_at": "2010-07-18T19:18:03Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_009542.json:
     "title": "optimize znpoly arithmetic -- it's way, way too slow because of the polynomial template thingy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9542",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9542
 archive/issue_comments_091949.json:
 ```json
 {
-    "body": "Attachment [trac_9542-znpoly_timing.patch](tarball://root/attachments/some-uuid/ticket9542/trac_9542-znpoly_timing.patch) by was created at 2010-07-18 19:20:10\n\nspeeds up multiplication by a factor of *20* for many benchmarks... but causes a segfault when doctesting rings/arith.py",
+    "body": "Attachment [trac_9542-znpoly_timing.patch](tarball://root/attachments/some-uuid/ticket9542/trac_9542-znpoly_timing.patch) by @williamstein created at 2010-07-18 19:20:10\n\nspeeds up multiplication by a factor of *20* for many benchmarks... but causes a segfault when doctesting rings/arith.py",
     "created_at": "2010-07-18T19:20:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9542#issuecomment-91949",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9542-znpoly_timing.patch](tarball://root/attachments/some-uuid/ticket9542/trac_9542-znpoly_timing.patch) by was created at 2010-07-18 19:20:10
+Attachment [trac_9542-znpoly_timing.patch](tarball://root/attachments/some-uuid/ticket9542/trac_9542-znpoly_timing.patch) by @williamstein created at 2010-07-18 19:20:10
 
 speeds up multiplication by a factor of *20* for many benchmarks... but causes a segfault when doctesting rings/arith.py
 
@@ -150,7 +150,7 @@ archive/issue_comments_091954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9542",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9542#issuecomment-91954",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

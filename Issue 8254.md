@@ -14,7 +14,7 @@ archive/issues_008254.json:
     "title": "sage takes way too long to startup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8254",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_073020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73020",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_073021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73021",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_073022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73022",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_073028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73028",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_073029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73029",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -234,16 +234,16 @@ Changing status from new to needs_review.
 archive/issue_comments_073030.json:
 ```json
 {
-    "body": "Attachment [8254-lazy-schemes-import.patch](tarball://root/attachments/some-uuid/ticket8254/8254-lazy-schemes-import.patch) by was created at 2010-11-03 04:38:43\n\nI talked to Robert today and he told me thought he had marked this \"needs review\", but he hadn't.  So I am.",
+    "body": "Attachment [8254-lazy-schemes-import.patch](tarball://root/attachments/some-uuid/ticket8254/8254-lazy-schemes-import.patch) by @williamstein created at 2010-11-03 04:38:43\n\nI talked to Robert today and he told me thought he had marked this \"needs review\", but he hadn't.  So I am.",
     "created_at": "2010-11-03T04:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73030",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [8254-lazy-schemes-import.patch](tarball://root/attachments/some-uuid/ticket8254/8254-lazy-schemes-import.patch) by was created at 2010-11-03 04:38:43
+Attachment [8254-lazy-schemes-import.patch](tarball://root/attachments/some-uuid/ticket8254/8254-lazy-schemes-import.patch) by @williamstein created at 2010-11-03 04:38:43
 
 I talked to Robert today and he told me thought he had marked this "needs review", but he hadn't.  So I am.
 
@@ -259,7 +259,7 @@ archive/issue_comments_073031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73031",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_073032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73032",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_073033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73033",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_073034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73034",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_073035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73035",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_073036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73036",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_073037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73037",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_073038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73038",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_073039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73039",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_073040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73040",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -515,7 +515,7 @@ archive/issue_comments_073041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73041",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_073042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73042",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_073043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73043",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -571,7 +571,7 @@ archive/issue_comments_073044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8254#issuecomment-73044",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 

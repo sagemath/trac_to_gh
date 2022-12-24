@@ -3,7 +3,7 @@
 archive/issues_001315.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1315\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1315\n\n",
     "created_at": "2007-11-28T20:03:08Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001315.json:
     "title": "[graphs] find edge colorings of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1315",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -39,7 +39,7 @@ archive/issue_comments_008363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1315#issuecomment-8363",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing component from combinatorics to graph theory.
 archive/issue_comments_008364.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-17T15:19:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1315#issuecomment-8364",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_008365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1315#issuecomment-8365",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_008366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1315#issuecomment-8366",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_008367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1315#issuecomment-8367",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_008368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1315#issuecomment-8368",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

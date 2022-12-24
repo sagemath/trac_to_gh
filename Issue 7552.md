@@ -3,7 +3,7 @@
 archive/issues_007552.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mhansen jsp\n\n[Twisted http://twistedmatrix.com] has just recently released a new version, 9.0. This update includes several major changes, the most significant to Sage development being support for WSGI in the Twisted.web framework (rather than the Twisted.web2 framework).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7552\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen @jaapspies\n\n[Twisted http://twistedmatrix.com] has just recently released a new version, 9.0. This update includes several major changes, the most significant to Sage development being support for WSGI in the Twisted.web framework (rather than the Twisted.web2 framework).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7552\n\n",
     "created_at": "2009-11-29T08:12:32Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_007552.json:
     "title": "Update the Twisted package to 9.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7552",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: tbd
 
-CC:  mhansen jsp
+CC:  @mwhansen @jaapspies
 
 [Twisted http://twistedmatrix.com] has just recently released a new version, 9.0. This update includes several major changes, the most significant to Sage development being support for WSGI in the Twisted.web framework (rather than the Twisted.web2 framework).
 
@@ -39,7 +39,7 @@ archive/issue_comments_064174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64174",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_064175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64175",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_064176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64176",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_064177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64177",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_064178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64178",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_064179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64179",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_064180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64180",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_064181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64181",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_064182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64182",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_064183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64183",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_064184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64184",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_064185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64185",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_064186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64186",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_064188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64188",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_064191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64191",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

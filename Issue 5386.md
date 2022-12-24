@@ -3,7 +3,7 @@
 archive/issues_005386.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThe attached patch implements simplicial complexes, chain complexes, and their homology. Some examples:\n\n```\nsage: S = SimplicialComplex(1, [[0], [1]])  # a two-point space\nsage: S2 = S*S*S          # its three-fold join with itself; i.e., a 2-sphere\nsage: S2\nSimplicial complex with 6 vertices and 8 facets\nsage: S2.homology()       # the reduced homology of S2\n{0: 0, 1: 0, 2: Z}\nsage: from sage.homology.examples import matching_complex\nsage: M = matching_complex(8)\nsage: sum(M.f_vector())   # total number of simplices in M\n764\nsage: M.homology(2)\nZ^132\nsage: from sage.homology.examples import torus, klein_bottle\nsage: torus()\nSimplicial complex with vertex set (0, 1, 2, 3, 4, 5, 6) and 14 facets\nsage: klein_bottle()\nSimplicial complex with 9 vertices and 18 facets\nsage: klein_bottle().cohomology()\n{0: 0, 1: Z, 2: C2}\nsage: torus().product(klein_bottle())\nSimplicial complex with 63 vertices and 1512 facets  \n```\n\n\nThe code could be made much faster, I think (for example, by writing some of it in Cython); if anyone wants to undertake this, that would be great.  Otherwise, it might happen during Sage Days 15.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5386\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThe attached patch implements simplicial complexes, chain complexes, and their homology. Some examples:\n\n```\nsage: S = SimplicialComplex(1, [[0], [1]])  # a two-point space\nsage: S2 = S*S*S          # its three-fold join with itself; i.e., a 2-sphere\nsage: S2\nSimplicial complex with 6 vertices and 8 facets\nsage: S2.homology()       # the reduced homology of S2\n{0: 0, 1: 0, 2: Z}\nsage: from sage.homology.examples import matching_complex\nsage: M = matching_complex(8)\nsage: sum(M.f_vector())   # total number of simplices in M\n764\nsage: M.homology(2)\nZ^132\nsage: from sage.homology.examples import torus, klein_bottle\nsage: torus()\nSimplicial complex with vertex set (0, 1, 2, 3, 4, 5, 6) and 14 facets\nsage: klein_bottle()\nSimplicial complex with 9 vertices and 18 facets\nsage: klein_bottle().cohomology()\n{0: 0, 1: Z, 2: C2}\nsage: torus().product(klein_bottle())\nSimplicial complex with 63 vertices and 1512 facets  \n```\n\n\nThe code could be made much faster, I think (for example, by writing some of it in Cython); if anyone wants to undertake this, that would be great.  Otherwise, it might happen during Sage Days 15.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5386\n\n",
     "created_at": "2009-02-26T16:23:40Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_005386.json:
     "title": "[with patch, needs review] simplicial complexes and their homology",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5386",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 The attached patch implements simplicial complexes, chain complexes, and their homology. Some examples:
 
@@ -65,7 +65,7 @@ archive/issue_comments_041480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5386#issuecomment-41480",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_041481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5386#issuecomment-41481",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_041482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5386#issuecomment-41482",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -306,16 +306,16 @@ Florent, thanks for the comment, and even more, thanks for the helpful error mes
 archive/issue_comments_041483.json:
 ```json
 {
-    "body": "Attachment [homology.patch](tarball://root/attachments/some-uuid/ticket5386/homology.patch) by jhpalmieri created at 2009-04-13 23:55:44",
+    "body": "Attachment [homology.patch](tarball://root/attachments/some-uuid/ticket5386/homology.patch) by @jhpalmieri created at 2009-04-13 23:55:44",
     "created_at": "2009-04-13T23:55:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5386#issuecomment-41483",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [homology.patch](tarball://root/attachments/some-uuid/ticket5386/homology.patch) by jhpalmieri created at 2009-04-13 23:55:44
+Attachment [homology.patch](tarball://root/attachments/some-uuid/ticket5386/homology.patch) by @jhpalmieri created at 2009-04-13 23:55:44
 
 
 

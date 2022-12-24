@@ -14,7 +14,7 @@ archive/issues_008045.json:
     "title": "add elliptic integrals to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8045",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8045
 archive/issue_comments_070314.json:
 ```json
 {
-    "body": "Attachment [trac_8045-elliptic.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic.patch) by jhpalmieri created at 2010-01-23 17:19:43",
+    "body": "Attachment [trac_8045-elliptic.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic.patch) by @jhpalmieri created at 2010-01-23 17:19:43",
     "created_at": "2010-01-23T17:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8045#issuecomment-70314",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8045-elliptic.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic.patch) by jhpalmieri created at 2010-01-23 17:19:43
+Attachment [trac_8045-elliptic.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic.patch) by @jhpalmieri created at 2010-01-23 17:19:43
 
 
 
@@ -56,7 +56,7 @@ archive/issue_comments_070315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8045#issuecomment-70315",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_070316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8045#issuecomment-70316",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -87,16 +87,16 @@ Some cleanups.  Replaces previous.
 archive/issue_comments_070317.json:
 ```json
 {
-    "body": "Attachment [trac_8045-elliptic.2.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic.2.patch) by mpatel created at 2010-01-31 01:26:27\n\nV2 makes the docstrings more consistent and fixes a mistake (I think) in `elliptic_pi`'s docstring.  For comparison, see [Maxima's documentation](http://maxima.sourceforge.net/docs/manual/en/maxima_17.html#SEC68) and [MathWorld](http://mathworld.wolfram.com/EllipticIntegraloftheThirdKind.html).\n\nPositive review, if my changes are OK.",
+    "body": "Attachment [trac_8045-elliptic.2.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic.2.patch) by @qed777 created at 2010-01-31 01:26:27\n\nV2 makes the docstrings more consistent and fixes a mistake (I think) in `elliptic_pi`'s docstring.  For comparison, see [Maxima's documentation](http://maxima.sourceforge.net/docs/manual/en/maxima_17.html#SEC68) and [MathWorld](http://mathworld.wolfram.com/EllipticIntegraloftheThirdKind.html).\n\nPositive review, if my changes are OK.",
     "created_at": "2010-01-31T01:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8045#issuecomment-70317",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8045-elliptic.2.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic.2.patch) by mpatel created at 2010-01-31 01:26:27
+Attachment [trac_8045-elliptic.2.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic.2.patch) by @qed777 created at 2010-01-31 01:26:27
 
 V2 makes the docstrings more consistent and fixes a mistake (I think) in `elliptic_pi`'s docstring.  For comparison, see [Maxima's documentation](http://maxima.sourceforge.net/docs/manual/en/maxima_17.html#SEC68) and [MathWorld](http://mathworld.wolfram.com/EllipticIntegraloftheThirdKind.html).
 
@@ -114,7 +114,7 @@ archive/issue_comments_070318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8045#issuecomment-70318",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_070319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8045#issuecomment-70319",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -145,16 +145,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_070320.json:
 ```json
 {
-    "body": "Attachment [trac_8045-elliptic-v3.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic-v3.patch) by jhpalmieri created at 2010-01-31 03:09:35\n\nreplaces all previous patches",
+    "body": "Attachment [trac_8045-elliptic-v3.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic-v3.patch) by @jhpalmieri created at 2010-01-31 03:09:35\n\nreplaces all previous patches",
     "created_at": "2010-01-31T03:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8045#issuecomment-70320",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8045-elliptic-v3.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic-v3.patch) by jhpalmieri created at 2010-01-31 03:09:35
+Attachment [trac_8045-elliptic-v3.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-elliptic-v3.patch) by @jhpalmieri created at 2010-01-31 03:09:35
 
 replaces all previous patches
 
@@ -165,16 +165,16 @@ replaces all previous patches
 archive/issue_comments_070321.json:
 ```json
 {
-    "body": "Attachment [trac_8045-delta.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-delta.patch) by jhpalmieri created at 2010-01-31 03:13:59\n\ndifference between versions 2 and 3, for reference purposes only. don't merge.",
+    "body": "Attachment [trac_8045-delta.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-delta.patch) by @jhpalmieri created at 2010-01-31 03:13:59\n\ndifference between versions 2 and 3, for reference purposes only. don't merge.",
     "created_at": "2010-01-31T03:13:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8045#issuecomment-70321",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8045-delta.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-delta.patch) by jhpalmieri created at 2010-01-31 03:13:59
+Attachment [trac_8045-delta.patch](tarball://root/attachments/some-uuid/ticket8045/trac_8045-delta.patch) by @jhpalmieri created at 2010-01-31 03:13:59
 
 difference between versions 2 and 3, for reference purposes only. don't merge.
 
@@ -190,7 +190,7 @@ archive/issue_comments_070322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8045#issuecomment-70322",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

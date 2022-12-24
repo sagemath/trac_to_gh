@@ -3,7 +3,7 @@
 archive/issues_009751.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nWhen addition_table() was added to `AdditiveMagmas` there were scant examples of additive structures with finite closed subsets.  So there was (temporarily) very little documentation.\n\nWith the addition of integers mod n to the category framework, we can document and test some additive structures.  This patch is all documentation - no code, and modeled after the documentation for multiplication_table() for `Magmas`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9751\n\n",
+    "body": "Assignee: @nthiery\n\nWhen addition_table() was added to `AdditiveMagmas` there were scant examples of additive structures with finite closed subsets.  So there was (temporarily) very little documentation.\n\nWith the addition of integers mod n to the category framework, we can document and test some additive structures.  This patch is all documentation - no code, and modeled after the documentation for multiplication_table() for `Magmas`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9751\n\n",
     "created_at": "2010-08-15T05:37:05Z",
     "labels": [
         "categories",
@@ -14,10 +14,10 @@ archive/issues_009751.json:
     "title": "Documentation for AdditiveMagmas' addition_table",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9751",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 When addition_table() was added to `AdditiveMagmas` there were scant examples of additive structures with finite closed subsets.  So there was (temporarily) very little documentation.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9751
 archive/issue_comments_095492.json:
 ```json
 {
-    "body": "Attachment [trac_9751-document-addition-table.patch](tarball://root/attachments/some-uuid/ticket9751/trac_9751-document-addition-table.patch) by rbeezer created at 2010-08-15 05:41:16",
+    "body": "Attachment [trac_9751-document-addition-table.patch](tarball://root/attachments/some-uuid/ticket9751/trac_9751-document-addition-table.patch) by @rbeezer created at 2010-08-15 05:41:16",
     "created_at": "2010-08-15T05:41:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95492",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9751-document-addition-table.patch](tarball://root/attachments/some-uuid/ticket9751/trac_9751-document-addition-table.patch) by rbeezer created at 2010-08-15 05:41:16
+Attachment [trac_9751-document-addition-table.patch](tarball://root/attachments/some-uuid/ticket9751/trac_9751-document-addition-table.patch) by @rbeezer created at 2010-08-15 05:41:16
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_095493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95493",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_095494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95494",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_095495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95495",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_095496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95496",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_095497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95497",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_095498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95498",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

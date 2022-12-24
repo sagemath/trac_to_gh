@@ -14,7 +14,7 @@ archive/issues_004748.json:
     "title": "pass to quotient ring for exp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4748",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -146,7 +146,7 @@ archive/issue_comments_035936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4748#issuecomment-35936",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

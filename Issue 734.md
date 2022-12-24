@@ -3,7 +3,7 @@
 archive/issues_000734.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  sage-combinat\n\n\n```\n> >\n> > NOTE: Since this is such a major release, there will likely be problems\n> > and a 2.8.5.1 release shortly to fix them.  Please report!\n> >\n> \n> Builds on Fedora 7,\n> \n> ----------------------------------------------------------------------\n> The following tests failed:\n> \n> \n>          sage -t  devel/sage-main/sage/combinat/skew_tableau.py\n>          sage -t  devel/sage-main/sage/combinat/ribbon.py\n> Total time for all tests: 1838.3 seconds\n> [jaap@paix sage-2.8.5]$\n\nThis is from mike Hansen's new combinatorics code, I think.\nI *am* able to replicate this on my Fedora Core machine,\nand on none of my other 10 or so machines.  Mike, any\ncomments -- I can give you an account on the machine if\nnecessary.\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/734\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\n\n```\n> >\n> > NOTE: Since this is such a major release, there will likely be problems\n> > and a 2.8.5.1 release shortly to fix them.  Please report!\n> >\n> \n> Builds on Fedora 7,\n> \n> ----------------------------------------------------------------------\n> The following tests failed:\n> \n> \n>          sage -t  devel/sage-main/sage/combinat/skew_tableau.py\n>          sage -t  devel/sage-main/sage/combinat/ribbon.py\n> Total time for all tests: 1838.3 seconds\n> [jaap@paix sage-2.8.5]$\n\nThis is from mike Hansen's new combinatorics code, I think.\nI *am* able to replicate this on my Fedora Core machine,\nand on none of my other 10 or so machines.  Mike, any\ncomments -- I can give you an account on the machine if\nnecessary.\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/734\n\n",
     "created_at": "2007-09-21T21:09:48Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000734.json:
     "title": "combinatorics problems on fedora core 7 with sage-2.8.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/734",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  sage-combinat
 
@@ -60,16 +60,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/734
 archive/issue_comments_004303.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-09-21T21:36:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/734#issuecomment-4303",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -78,16 +78,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_004304.json:
 ```json
 {
-    "body": "Attachment [734.patch](tarball://root/attachments/some-uuid/ticket734/734.patch) by mhansen created at 2007-09-23 18:38:06",
+    "body": "Attachment [734.patch](tarball://root/attachments/some-uuid/ticket734/734.patch) by @mwhansen created at 2007-09-23 18:38:06",
     "created_at": "2007-09-23T18:38:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/734#issuecomment-4304",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [734.patch](tarball://root/attachments/some-uuid/ticket734/734.patch) by mhansen created at 2007-09-23 18:38:06
+Attachment [734.patch](tarball://root/attachments/some-uuid/ticket734/734.patch) by @mwhansen created at 2007-09-23 18:38:06
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_004305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/734#issuecomment-4305",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_004306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/734#issuecomment-4306",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_004307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/734",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/734#issuecomment-4307",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

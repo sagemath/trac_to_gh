@@ -3,7 +3,7 @@
 archive/issues_003300.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI've attached the patch to make the ntl Debian package use the soname library patch we made earlier (with a few other improvements).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3300\n\n",
+    "body": "Assignee: @timabbott\n\nI've attached the patch to make the ntl Debian package use the soname library patch we made earlier (with a few other improvements).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3300\n\n",
     "created_at": "2008-05-25T18:57:23Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_003300.json:
     "title": "[with patch; needs review] ntl soname for Debian package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3300",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I've attached the patch to make the ntl Debian package use the soname library patch we made earlier (with a few other improvements).
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3300
 archive/issue_comments_022833.json:
 ```json
 {
-    "body": "Attachment [ntl-debian-release.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-debian-release.patch) by tabbott created at 2008-05-25 18:57:38",
+    "body": "Attachment [ntl-debian-release.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-debian-release.patch) by @timabbott created at 2008-05-25 18:57:38",
     "created_at": "2008-05-25T18:57:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22833",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [ntl-debian-release.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-debian-release.patch) by tabbott created at 2008-05-25 18:57:38
+Attachment [ntl-debian-release.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-debian-release.patch) by @timabbott created at 2008-05-25 18:57:38
 
 
 
@@ -50,16 +50,16 @@ Attachment [ntl-debian-release.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_022834.json:
 ```json
 {
-    "body": "Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-forget-version.patch) by tabbott created at 2008-05-25 22:29:01",
+    "body": "Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-forget-version.patch) by @timabbott created at 2008-05-25 22:29:01",
     "created_at": "2008-05-25T22:29:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22834",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-forget-version.patch) by tabbott created at 2008-05-25 22:29:01
+Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-forget-version.patch) by @timabbott created at 2008-05-25 22:29:01
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_022835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22835",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_022836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22836",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -104,16 +104,16 @@ I've also attached a patch that changes the ntl priority to optional and makes t
 archive/issue_comments_022837.json:
 ```json
 {
-    "body": "Attachment [ntl-priority.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-priority.patch) by tabbott created at 2008-05-26 04:36:40",
+    "body": "Attachment [ntl-priority.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-priority.patch) by @timabbott created at 2008-05-26 04:36:40",
     "created_at": "2008-05-26T04:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22837",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [ntl-priority.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-priority.patch) by tabbott created at 2008-05-26 04:36:40
+Attachment [ntl-priority.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-priority.patch) by @timabbott created at 2008-05-26 04:36:40
 
 
 

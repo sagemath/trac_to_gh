@@ -3,7 +3,7 @@
 archive/issues_002061.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nblah blah\n\nIssue created by migration from https://trac.sagemath.org/ticket/2061\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nblah blah\n\nIssue created by migration from https://trac.sagemath.org/ticket/2061\n\n",
     "created_at": "2008-02-05T18:55:25Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002061.json:
     "title": "[with patch] add support for binary vectors (sd7 test ticket)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2061",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

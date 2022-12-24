@@ -3,7 +3,7 @@
 archive/issues_008366.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman wcauchois robert.marik\n\nWe have an artificial limitation in that contour labels and linestyles don't work when fill=True.  This patch lets these options work with filling.  Furthermore, it draws the contour lines on top of filled plots by default, which (at least I think) makes the plot look a little nicer anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8366\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman wcauchois @robert-marik\n\nWe have an artificial limitation in that contour labels and linestyles don't work when fill=True.  This patch lets these options work with filling.  Furthermore, it draws the contour lines on top of filled plots by default, which (at least I think) makes the plot look a little nicer anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8366\n\n",
     "created_at": "2010-02-25T17:24:26Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_008366.json:
     "title": "make contour plot labels and linestyles work when fill=True",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8366",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman wcauchois robert.marik
+CC:  @kcrisman wcauchois @robert-marik
 
 We have an artificial limitation in that contour labels and linestyles don't work when fill=True.  This patch lets these options work with filling.  Furthermore, it draws the contour lines on top of filled plots by default, which (at least I think) makes the plot look a little nicer anyway.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8366
 archive/issue_comments_074777.json:
 ```json
 {
-    "body": "Attachment [trac-8366-label-filled-contours.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-label-filled-contours.patch) by jason created at 2010-02-25 17:25:45",
+    "body": "Attachment [trac-8366-label-filled-contours.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-label-filled-contours.patch) by @jasongrout created at 2010-02-25 17:25:45",
     "created_at": "2010-02-25T17:25:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74777",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8366-label-filled-contours.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-label-filled-contours.patch) by jason created at 2010-02-25 17:25:45
+Attachment [trac-8366-label-filled-contours.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-label-filled-contours.patch) by @jasongrout created at 2010-02-25 17:25:45
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_074778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74778",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_074779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74779",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_074780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74780",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -106,16 +106,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074781.json:
 ```json
 {
-    "body": "Attachment [trac-8366-fixed-docstrings.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fixed-docstrings.patch) by robert.marik created at 2010-03-04 16:33:22\n\nWorks as advertaised, but region_plot gives error after installing this patch.\n\n```\nsage: x,y=var('x y')\nsage: region_plot(cos(x^2+y^2) <= 0, (x, -3, 3), (y, -3, 3))\n\nTraceback (click to the left of this block for traceback)\n...\nKeyError: 'linewidths'\n```\n\n\ndid you try this?\n\n```\n./sage -t devel/sage/sage/plot/contour_plot.py\n```\n\n\nMy patch fixes long lines (which make help for contour_plot too wide for typical screen) and split contour_plot exmaples into groups (this allows to try commands immediatelly when reading live reference manual).\n\nOne suggestion: could we set label_colors to something resonable (gray? red? blue?) when both fill and labels are True, but label_color is not specified?",
+    "body": "Attachment [trac-8366-fixed-docstrings.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fixed-docstrings.patch) by @robert-marik created at 2010-03-04 16:33:22\n\nWorks as advertaised, but region_plot gives error after installing this patch.\n\n```\nsage: x,y=var('x y')\nsage: region_plot(cos(x^2+y^2) <= 0, (x, -3, 3), (y, -3, 3))\n\nTraceback (click to the left of this block for traceback)\n...\nKeyError: 'linewidths'\n```\n\n\ndid you try this?\n\n```\n./sage -t devel/sage/sage/plot/contour_plot.py\n```\n\n\nMy patch fixes long lines (which make help for contour_plot too wide for typical screen) and split contour_plot exmaples into groups (this allows to try commands immediatelly when reading live reference manual).\n\nOne suggestion: could we set label_colors to something resonable (gray? red? blue?) when both fill and labels are True, but label_color is not specified?",
     "created_at": "2010-03-04T16:33:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74781",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac-8366-fixed-docstrings.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fixed-docstrings.patch) by robert.marik created at 2010-03-04 16:33:22
+Attachment [trac-8366-fixed-docstrings.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fixed-docstrings.patch) by @robert-marik created at 2010-03-04 16:33:22
 
 Works as advertaised, but region_plot gives error after installing this patch.
 
@@ -152,7 +152,7 @@ archive/issue_comments_074782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74782",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_074783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74783",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -186,16 +186,16 @@ I'm afraid I would get in trouble with our (wonderfully!) picky release manager 
 archive/issue_comments_074784.json:
 ```json
 {
-    "body": "Attachment [trac-8366-fix-code.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fix-code.patch) by jason created at 2010-04-15 03:26:51\n\napply on top of previous patches",
+    "body": "Attachment [trac-8366-fix-code.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fix-code.patch) by @jasongrout created at 2010-04-15 03:26:51\n\napply on top of previous patches",
     "created_at": "2010-04-15T03:26:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74784",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8366-fix-code.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fix-code.patch) by jason created at 2010-04-15 03:26:51
+Attachment [trac-8366-fix-code.patch](tarball://root/attachments/some-uuid/ticket8366/trac-8366-fix-code.patch) by @jasongrout created at 2010-04-15 03:26:51
 
 apply on top of previous patches
 
@@ -211,7 +211,7 @@ archive/issue_comments_074785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74785",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_074786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74786",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_074787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74787",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_074788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74788",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_074789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74789",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_074790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74790",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_074791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8366#issuecomment-74791",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

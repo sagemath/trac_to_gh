@@ -3,7 +3,7 @@
 archive/issues_005518.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: number field multiplicative order\n\nThe attached patch vastly improves the efficiency of the multiplicative_order() function for number field elements.  Before, this example:\n\n```\n sage: x = polygen(QQ)\n            sage: K.<a>=NumberField(x^40 - x^20 + 4)\n            sage: u = 1/4*a^30 + 1/4*a^10 + 1/2\n            sage: u.multiplicative_order()\n            6\n            sage: a.multiplicative_order()\n            +Infinity\n```\n\nwould have required raising a to the power 2**40 (I'm serious).  Now it just works (fast).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5518\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: number field multiplicative order\n\nThe attached patch vastly improves the efficiency of the multiplicative_order() function for number field elements.  Before, this example:\n\n```\n sage: x = polygen(QQ)\n            sage: K.<a>=NumberField(x^40 - x^20 + 4)\n            sage: u = 1/4*a^30 + 1/4*a^10 + 1/2\n            sage: u.multiplicative_order()\n            6\n            sage: a.multiplicative_order()\n            +Infinity\n```\n\nwould have required raising a to the power 2**40 (I'm serious).  Now it just works (fast).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5518\n\n",
     "created_at": "2009-03-14T18:53:55Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005518.json:
     "title": "Improve efficiency of multiplcative_order() for number field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5518",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: number field multiplicative order
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5518
 archive/issue_comments_042888.json:
 ```json
 {
-    "body": "Attachment [multiplicative_order.patch](tarball://root/attachments/some-uuid/ticket5518/multiplicative_order.patch) by cremona created at 2009-03-14 20:35:19",
+    "body": "Attachment [multiplicative_order.patch](tarball://root/attachments/some-uuid/ticket5518/multiplicative_order.patch) by @JohnCremona created at 2009-03-14 20:35:19",
     "created_at": "2009-03-14T20:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5518#issuecomment-42888",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [multiplicative_order.patch](tarball://root/attachments/some-uuid/ticket5518/multiplicative_order.patch) by cremona created at 2009-03-14 20:35:19
+Attachment [multiplicative_order.patch](tarball://root/attachments/some-uuid/ticket5518/multiplicative_order.patch) by @JohnCremona created at 2009-03-14 20:35:19
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_042889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5518#issuecomment-42889",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -129,16 +129,16 @@ Changing priority from minor to major.
 archive/issue_comments_042892.json:
 ```json
 {
-    "body": "Attachment [trac_5518.patch](tarball://root/attachments/some-uuid/ticket5518/trac_5518.patch) by cremona created at 2009-03-17 22:10:29\n\nI added a small patch with the additional doctest as suggested.",
+    "body": "Attachment [trac_5518.patch](tarball://root/attachments/some-uuid/ticket5518/trac_5518.patch) by @JohnCremona created at 2009-03-17 22:10:29\n\nI added a small patch with the additional doctest as suggested.",
     "created_at": "2009-03-17T22:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5518#issuecomment-42892",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5518.patch](tarball://root/attachments/some-uuid/ticket5518/trac_5518.patch) by cremona created at 2009-03-17 22:10:29
+Attachment [trac_5518.patch](tarball://root/attachments/some-uuid/ticket5518/trac_5518.patch) by @JohnCremona created at 2009-03-17 22:10:29
 
 I added a small patch with the additional doctest as suggested.
 

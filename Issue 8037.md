@@ -3,7 +3,7 @@
 archive/issues_008037.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  ddrake\n\nMake changes in the French tutorial corresponding to those in #7617 in the English version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8037\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @dandrake\n\nMake changes in the French tutorial corresponding to those in #7617 in the English version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8037\n\n",
     "created_at": "2010-01-22T06:18:10Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008037.json:
     "title": "add sagetex to the french tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8037",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
 
-CC:  ddrake
+CC:  @dandrake
 
 Make changes in the French tutorial corresponding to those in #7617 in the English version.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8037
 archive/issue_comments_070208.json:
 ```json
 {
-    "body": "Attachment [trac_8037_sagetex_french_tutorial.patch](tarball://root/attachments/some-uuid/ticket8037/trac_8037_sagetex_french_tutorial.patch) by mmezzarobba created at 2010-02-25 22:53:42",
+    "body": "Attachment [trac_8037_sagetex_french_tutorial.patch](tarball://root/attachments/some-uuid/ticket8037/trac_8037_sagetex_french_tutorial.patch) by @mezzarobba created at 2010-02-25 22:53:42",
     "created_at": "2010-02-25T22:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70208",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
-Attachment [trac_8037_sagetex_french_tutorial.patch](tarball://root/attachments/some-uuid/ticket8037/trac_8037_sagetex_french_tutorial.patch) by mmezzarobba created at 2010-02-25 22:53:42
+Attachment [trac_8037_sagetex_french_tutorial.patch](tarball://root/attachments/some-uuid/ticket8037/trac_8037_sagetex_french_tutorial.patch) by @mezzarobba created at 2010-02-25 22:53:42
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_070209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70209",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070210.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to mmezzarobba.",
+    "body": "Changing assignee from mvngu to @mezzarobba.",
     "created_at": "2010-02-25T22:54:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70210",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
-Changing assignee from mvngu to mmezzarobba.
+Changing assignee from mvngu to @mezzarobba.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_070211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70211",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_070212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70212",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -124,16 +124,16 @@ fix a small reject in introduction.rst
 archive/issue_comments_070213.json:
 ```json
 {
-    "body": "Attachment [trac_8037_sagetex_french_tutorial.2.patch](tarball://root/attachments/some-uuid/ticket8037/trac_8037_sagetex_french_tutorial.2.patch) by ddrake created at 2010-02-26 02:21:25\n\nBy the way, the documentation builds fine and appears as it should. (I'm using 4.3.3.) I think this can be a positive review, although I would prefer to have a French speaker (or at least someone who knows more than I do!) look over the patch.",
+    "body": "Attachment [trac_8037_sagetex_french_tutorial.2.patch](tarball://root/attachments/some-uuid/ticket8037/trac_8037_sagetex_french_tutorial.2.patch) by @dandrake created at 2010-02-26 02:21:25\n\nBy the way, the documentation builds fine and appears as it should. (I'm using 4.3.3.) I think this can be a positive review, although I would prefer to have a French speaker (or at least someone who knows more than I do!) look over the patch.",
     "created_at": "2010-02-26T02:21:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70213",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_8037_sagetex_french_tutorial.2.patch](tarball://root/attachments/some-uuid/ticket8037/trac_8037_sagetex_french_tutorial.2.patch) by ddrake created at 2010-02-26 02:21:25
+Attachment [trac_8037_sagetex_french_tutorial.2.patch](tarball://root/attachments/some-uuid/ticket8037/trac_8037_sagetex_french_tutorial.2.patch) by @dandrake created at 2010-02-26 02:21:25
 
 By the way, the documentation builds fine and appears as it should. (I'm using 4.3.3.) I think this can be a positive review, although I would prefer to have a French speaker (or at least someone who knows more than I do!) look over the patch.
 
@@ -149,7 +149,7 @@ archive/issue_comments_070214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70214",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

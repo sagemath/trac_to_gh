@@ -3,7 +3,7 @@
 archive/issues_009537.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nSee my talk:\n*  http://wiki.sagemath.org/days24/schedule?action=AttachFile&do=view&target=stein-cython.pdf\n* http://sagenb.org/home/pub/2256/\n\nBasically, this sucks:\n\n```\nsage: n = 20110000038209\nsage: timeit('trial_division(n)')\n125 loops, best of 3: 2.75 ms per loop\n```\n\n\nEven in pure python one can easily implement this so it runs in about 650microseconds.  In C, it takes only 6 microseconds!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9537\n\n",
+    "body": "Assignee: @aghitza\n\nSee my talk:\n*  http://wiki.sagemath.org/days24/schedule?action=AttachFile&do=view&target=stein-cython.pdf\n* http://sagenb.org/home/pub/2256/\n\nBasically, this sucks:\n\n```\nsage: n = 20110000038209\nsage: timeit('trial_division(n)')\n125 loops, best of 3: 2.75 ms per loop\n```\n\n\nEven in pure python one can easily implement this so it runs in about 650microseconds.  In C, it takes only 6 microseconds!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9537\n\n",
     "created_at": "2010-07-18T14:31:40Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_009537.json:
     "title": "trial_division in Sage is really slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9537",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 See my talk:
 *  http://wiki.sagemath.org/days24/schedule?action=AttachFile&do=view&target=stein-cython.pdf
@@ -50,7 +50,7 @@ archive/issue_comments_091893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9537#issuecomment-91893",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_091894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9537#issuecomment-91894",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_091897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9537#issuecomment-91897",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

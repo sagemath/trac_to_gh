@@ -3,7 +3,7 @@
 archive/issues_001911.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1911\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1911\n\n",
     "created_at": "2008-01-24T15:18:51Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001911.json:
     "title": "[with patch; needs review] elliptic curves -- make heegner_index command return index instead of square of index; clarify why sometimes results is not an integer (it's not a bug, it's part of the algorithm)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1911",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1911
 archive/issue_comments_012105.json:
 ```json
 {
-    "body": "Attachment [trac-1911-heegner_index.patch](tarball://root/attachments/some-uuid/ticket1911/trac-1911-heegner_index.patch) by AlexGhitza created at 2008-01-26 03:28:26\n\nLooks good to me, except for a very minor point: you changed the description of the output from \"an interval that contains the index\" to \"an Integer\", but the function is indeed returning an interval, not an integer.",
+    "body": "Attachment [trac-1911-heegner_index.patch](tarball://root/attachments/some-uuid/ticket1911/trac-1911-heegner_index.patch) by @aghitza created at 2008-01-26 03:28:26\n\nLooks good to me, except for a very minor point: you changed the description of the output from \"an interval that contains the index\" to \"an Integer\", but the function is indeed returning an interval, not an integer.",
     "created_at": "2008-01-26T03:28:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1911#issuecomment-12105",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac-1911-heegner_index.patch](tarball://root/attachments/some-uuid/ticket1911/trac-1911-heegner_index.patch) by AlexGhitza created at 2008-01-26 03:28:26
+Attachment [trac-1911-heegner_index.patch](tarball://root/attachments/some-uuid/ticket1911/trac-1911-heegner_index.patch) by @aghitza created at 2008-01-26 03:28:26
 
 Looks good to me, except for a very minor point: you changed the description of the output from "an interval that contains the index" to "an Integer", but the function is indeed returning an interval, not an integer.
 
@@ -57,7 +57,7 @@ archive/issue_comments_012106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1911#issuecomment-12106",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

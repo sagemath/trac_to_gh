@@ -3,7 +3,7 @@
 archive/issues_009933.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  novoselt\n\nAn integral divisor class should lift to an integral divisor. But:\n\n```\nsage: rays = [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, 0, 1), (2, -1, -1)]\nsage: cones = [(0, 2, 3), (0, 2, 4), (0, 3, 4), (1, 2, 3), (1, 2, 4), (1, 3, 4)]\nsage: X = ToricVariety(Fan(cones=cones, rays=rays))\nsage: X.rational_class_group().gen(1).lift()\n-1/2*V(z0) + 1/2*V(z1)\n```\n\nThe attached patch fixes this and any doctest fallout.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9934\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nAn integral divisor class should lift to an integral divisor. But:\n\n```\nsage: rays = [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, 0, 1), (2, -1, -1)]\nsage: cones = [(0, 2, 3), (0, 2, 4), (0, 3, 4), (1, 2, 3), (1, 2, 4), (1, 3, 4)]\nsage: X = ToricVariety(Fan(cones=cones, rays=rays))\nsage: X.rational_class_group().gen(1).lift()\n-1/2*V(z0) + 1/2*V(z1)\n```\n\nThe attached patch fixes this and any doctest fallout.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9934\n\n",
     "created_at": "2010-09-17T14:00:03Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_009933.json:
     "title": "Toric divisor class -> divisor lift should be integral",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9933",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  novoselt
+CC:  @novoselt
 
 An integral divisor class should lift to an integral divisor. But:
 
@@ -49,7 +49,7 @@ archive/issue_comments_098906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9933#issuecomment-98906",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_098907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9933#issuecomment-98907",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing status from new to needs_review.
 archive/issue_comments_098908.json:
 ```json
 {
-    "body": "Attachment [trac_9934_class_group_fixes.patch](tarball://root/attachments/some-uuid/ticket9934/trac_9934_class_group_fixes.patch) by vbraun created at 2010-09-17 14:03:39",
+    "body": "Attachment [trac_9934_class_group_fixes.patch](tarball://root/attachments/some-uuid/ticket9934/trac_9934_class_group_fixes.patch) by @vbraun created at 2010-09-17 14:03:39",
     "created_at": "2010-09-17T14:03:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9933#issuecomment-98908",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9934_class_group_fixes.patch](tarball://root/attachments/some-uuid/ticket9934/trac_9934_class_group_fixes.patch) by vbraun created at 2010-09-17 14:03:39
+Attachment [trac_9934_class_group_fixes.patch](tarball://root/attachments/some-uuid/ticket9934/trac_9934_class_group_fixes.patch) by @vbraun created at 2010-09-17 14:03:39
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_098909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9933#issuecomment-98909",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_098910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9933#issuecomment-98910",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_098911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9933#issuecomment-98911",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_098912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9933",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9933#issuecomment-98912",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

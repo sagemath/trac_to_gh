@@ -3,7 +3,7 @@
 archive/issues_001683.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen running sage -t cubegroup.py & (to run it in the background), the process is stopped.\n\nThis is caused by pexpect.sendeof() (called from rubik.py) calling termios.tcsetattr() on stdin which causes the process to be stopped with a SIGTTOU (=write to tty from a background process).\n\nThe pexpect.sendeof() function has been entirely changed in the current version of pexpect, and using that new sendeof() fixes this problem. So, updating to a newer pexpect (ticket #502) should fix this as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1683\n\n",
+    "body": "Assignee: @williamstein\n\nWhen running sage -t cubegroup.py & (to run it in the background), the process is stopped.\n\nThis is caused by pexpect.sendeof() (called from rubik.py) calling termios.tcsetattr() on stdin which causes the process to be stopped with a SIGTTOU (=write to tty from a background process).\n\nThe pexpect.sendeof() function has been entirely changed in the current version of pexpect, and using that new sendeof() fixes this problem. So, updating to a newer pexpect (ticket #502) should fix this as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1683\n\n",
     "created_at": "2008-01-04T22:38:30Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001683.json:
     "title": "sage -t cubegroup.py & stops instead of running in background",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1683",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When running sage -t cubegroup.py & (to run it in the background), the process is stopped.
 
@@ -41,7 +41,7 @@ archive/issue_comments_010690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1683#issuecomment-10690",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_010693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1683#issuecomment-10693",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_010694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1683#issuecomment-10694",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

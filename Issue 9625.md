@@ -3,7 +3,7 @@
 archive/issues_009625.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason kcrisman malb was\n\nThe following command hangs with Sage 4.4.4:\n\n```\nvar = [s,t,w,z]\nsys = [-83065036657810695629*s^2 + 83065036657810695629*t*w - 68998003149632685\\\n30106646060491053792528*s - 395748941050538664245556665401237631434*w + 6899800\\\n710712292645598903080085537498136631434, 124597554986716043444*s^2 - 1245975549\\\n86716043444*t*w + 10349700472444902795201501609065485036608*s - 268851627794621\\\n336185309600880111037777*w - 10349700203593399598010554584812612113052962223, -\\\n282961047374832134660970*s^2 - 8410334961603332923585*s*z + 8410334961603332923\\\n585*t^2 + 282961047374832134660970*t*w - 23504169772922374247873205131210852239\\\n883040*s - 30616067929472784598571512251700309424241225*t - 7028115267891297114\\\n2272480500812537457*w - 349302390945015468969034253953644989640360*z - 94573827\\\n6702217921211141587964108207667243789392, -5322973679105824997312280*s^2 + 9157\\\n920291523629102472*s*z - 9157920291523629102472*t^2 + 5322973679105824997312280\\\n*t*w - 442153003783476173947515315017330812575960960*s + 3127353268883216472554\\\n94866020283168151616125*t - 167582752514587776396443776337970730676*w + 3803514\\\n92362350173958234007398030593401152*z - 176904945185291980573382635775655917064\\\n32113716525]\nsolve(sys,var)\n```\n\nIn comparison, Maple 13 answers in 38 milliseconds...\n\nIssue created by migration from https://trac.sagemath.org/ticket/9625\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout @kcrisman @malb @williamstein\n\nThe following command hangs with Sage 4.4.4:\n\n```\nvar = [s,t,w,z]\nsys = [-83065036657810695629*s^2 + 83065036657810695629*t*w - 68998003149632685\\\n30106646060491053792528*s - 395748941050538664245556665401237631434*w + 6899800\\\n710712292645598903080085537498136631434, 124597554986716043444*s^2 - 1245975549\\\n86716043444*t*w + 10349700472444902795201501609065485036608*s - 268851627794621\\\n336185309600880111037777*w - 10349700203593399598010554584812612113052962223, -\\\n282961047374832134660970*s^2 - 8410334961603332923585*s*z + 8410334961603332923\\\n585*t^2 + 282961047374832134660970*t*w - 23504169772922374247873205131210852239\\\n883040*s - 30616067929472784598571512251700309424241225*t - 7028115267891297114\\\n2272480500812537457*w - 349302390945015468969034253953644989640360*z - 94573827\\\n6702217921211141587964108207667243789392, -5322973679105824997312280*s^2 + 9157\\\n920291523629102472*s*z - 9157920291523629102472*t^2 + 5322973679105824997312280\\\n*t*w - 442153003783476173947515315017330812575960960*s + 3127353268883216472554\\\n94866020283168151616125*t - 167582752514587776396443776337970730676*w + 3803514\\\n92362350173958234007398030593401152*z - 176904945185291980573382635775655917064\\\n32113716525]\nsolve(sys,var)\n```\n\nIn comparison, Maple 13 answers in 38 milliseconds...\n\nIssue created by migration from https://trac.sagemath.org/ticket/9625\n\n",
     "created_at": "2010-07-28T14:33:24Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_009625.json:
     "title": "solve hangs on a small algebraic system with 4 equations in 4 unknowns",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9625",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason kcrisman malb was
+CC:  @jasongrout @kcrisman @malb @williamstein
 
 The following command hangs with Sage 4.4.4:
 
@@ -61,7 +61,7 @@ archive/issue_comments_093282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9625#issuecomment-93282",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_093283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9625#issuecomment-93283",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_093284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9625#issuecomment-93284",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_093285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9625#issuecomment-93285",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_093286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9625#issuecomment-93286",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_093287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9625#issuecomment-93287",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_093288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9625#issuecomment-93288",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_093289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9625",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9625#issuecomment-93289",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

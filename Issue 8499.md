@@ -3,7 +3,7 @@
 archive/issues_008499.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nHow can one compute a partial fraction decomposition over the\ncomplex numbers? Consider the following:\n\n```\nsage: x = PolynomialRing(RationalField(), 'x').gen()\nsage: r = 1 /(x^4 + 1)\nsage: r.partial_fraction_decomposition()\n(0, [1/(x^4 + 1)])\n```\n\nThis is ok since we explicitely work over QQ. Now compare with:\n\n```\nsage: P.<y> = PolynomialRing(RationalField())\nsage: Qbar.<y> = QuotientRing(P, y^2+1)\nsage: x = PolynomialRing(Qbar, 'x').gen()\nsage: r = 1 /(x^4 + 1)\nsage: r.partial_fraction_decomposition()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8499\n\n",
+    "body": "Assignee: @burcin\n\nHow can one compute a partial fraction decomposition over the\ncomplex numbers? Consider the following:\n\n```\nsage: x = PolynomialRing(RationalField(), 'x').gen()\nsage: r = 1 /(x^4 + 1)\nsage: r.partial_fraction_decomposition()\n(0, [1/(x^4 + 1)])\n```\n\nThis is ok since we explicitely work over QQ. Now compare with:\n\n```\nsage: P.<y> = PolynomialRing(RationalField())\nsage: Qbar.<y> = QuotientRing(P, y^2+1)\nsage: x = PolynomialRing(Qbar, 'x').gen()\nsage: r = 1 /(x^4 + 1)\nsage: r.partial_fraction_decomposition()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8499\n\n",
     "created_at": "2010-03-11T16:55:05Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_008499.json:
     "title": "partial_fraction_decomposition does not work over algebraic extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8499",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 How can one compute a partial fraction decomposition over the
 complex numbers? Consider the following:
@@ -58,7 +58,7 @@ archive/issue_comments_076723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76723",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -107,16 +107,16 @@ Paul
 archive/issue_comments_076724.json:
 ```json
 {
-    "body": "Attachment [trac_8499.patch](tarball://root/attachments/some-uuid/ticket8499/trac_8499.patch) by zimmerma created at 2013-08-24 11:55:32",
+    "body": "Attachment [trac_8499.patch](tarball://root/attachments/some-uuid/ticket8499/trac_8499.patch) by @zimmermann6 created at 2013-08-24 11:55:32",
     "created_at": "2013-08-24T11:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76724",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_8499.patch](tarball://root/attachments/some-uuid/ticket8499/trac_8499.patch) by zimmerma created at 2013-08-24 11:55:32
+Attachment [trac_8499.patch](tarball://root/attachments/some-uuid/ticket8499/trac_8499.patch) by @zimmermann6 created at 2013-08-24 11:55:32
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_076725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76725",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_076726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76726",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_076727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76727",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_076728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76728",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_076729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76729",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_076730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76730",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_076731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76731",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_076732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76732",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_076733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76733",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_076734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76734",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_076735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76735",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_076736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76736",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_076737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8499",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8499#issuecomment-76737",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001717.json:
     "title": "[with bundle] trivial fixes in the programming guide (mostly typos)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1717",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1717
 archive/issue_comments_010883.json:
 ```json
 {
-    "body": "Attachment [prog20080107.patch](tarball://root/attachments/some-uuid/ticket1717/prog20080107.patch) by AlexGhitza created at 2008-01-07 22:25:47",
+    "body": "Attachment [prog20080107.patch](tarball://root/attachments/some-uuid/ticket1717/prog20080107.patch) by @aghitza created at 2008-01-07 22:25:47",
     "created_at": "2008-01-07T22:25:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1717#issuecomment-10883",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [prog20080107.patch](tarball://root/attachments/some-uuid/ticket1717/prog20080107.patch) by AlexGhitza created at 2008-01-07 22:25:47
+Attachment [prog20080107.patch](tarball://root/attachments/some-uuid/ticket1717/prog20080107.patch) by @aghitza created at 2008-01-07 22:25:47
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_010884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1717#issuecomment-10884",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

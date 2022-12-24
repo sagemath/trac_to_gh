@@ -3,7 +3,7 @@
 archive/issues_005199.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  burcin\n\nConsider the following, in 3.3.alpha5:\n\n```\nsage: from sage.symbolic.ring import NSR\nsage: NSR(10.0).gamma()\n362880\n```\n\nWe have produced an exact integral result of .gamma() on a floating-point number.\n\nAfter #2898, this behavior makes doctests fail; but the above happens even before #2898.\n\nI don't know if this is the \"right\" patch, but it does make all doctests pass after #2898.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5199\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @burcin\n\nConsider the following, in 3.3.alpha5:\n\n```\nsage: from sage.symbolic.ring import NSR\nsage: NSR(10.0).gamma()\n362880\n```\n\nWe have produced an exact integral result of .gamma() on a floating-point number.\n\nAfter #2898, this behavior makes doctests fail; but the above happens even before #2898.\n\nI don't know if this is the \"right\" patch, but it does make all doctests pass after #2898.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5199\n\n",
     "created_at": "2009-02-07T05:15:40Z",
     "labels": [
         "calculus",
@@ -17,9 +17,9 @@ archive/issues_005199.json:
     "user": "cwitty"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  burcin
+CC:  @burcin
 
 Consider the following, in 3.3.alpha5:
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5199
 archive/issue_comments_039840.json:
 ```json
 {
-    "body": "Attachment [pynac_is_integer.patch](tarball://root/attachments/some-uuid/ticket5199/pynac_is_integer.patch) by burcin created at 2009-02-08 13:24:32\n\nThe patch looks good. \n\nWe might think about optimizing this function for speed later. Specialcasing Integer and Rational, and using the _parent attribute should help here.",
+    "body": "Attachment [pynac_is_integer.patch](tarball://root/attachments/some-uuid/ticket5199/pynac_is_integer.patch) by @burcin created at 2009-02-08 13:24:32\n\nThe patch looks good. \n\nWe might think about optimizing this function for speed later. Specialcasing Integer and Rational, and using the _parent attribute should help here.",
     "created_at": "2009-02-08T13:24:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5199#issuecomment-39840",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [pynac_is_integer.patch](tarball://root/attachments/some-uuid/ticket5199/pynac_is_integer.patch) by burcin created at 2009-02-08 13:24:32
+Attachment [pynac_is_integer.patch](tarball://root/attachments/some-uuid/ticket5199/pynac_is_integer.patch) by @burcin created at 2009-02-08 13:24:32
 
 The patch looks good. 
 

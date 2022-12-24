@@ -3,7 +3,7 @@
 archive/issues_002558.json:
 ```json
 {
-    "body": "Assignee: yi\n\nunit tests appear to be failing on linux 32/64bit. This seems to be a twisted trial issue and I'm working on a fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2558\n\n",
+    "body": "Assignee: @yqiang\n\nunit tests appear to be failing on linux 32/64bit. This seems to be a twisted trial issue and I'm working on a fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2558\n\n",
     "created_at": "2008-03-16T21:48:00Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002558.json:
     "title": "dsage unit tests fail",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2558",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 unit tests appear to be failing on linux 32/64bit. This seems to be a twisted trial issue and I'm working on a fix. 
 

@@ -14,7 +14,7 @@ archive/issues_007295.json:
     "title": "typo in ecm spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7295",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 Assignee: tbd
@@ -50,7 +50,7 @@ archive/issue_comments_060734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60734",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -63,16 +63,16 @@ patch to spkg-install
 archive/issue_comments_060735.json:
 ```json
 {
-    "body": "Attachment [ecm-6.2.1_p0-spkg-install.patch](tarball://root/attachments/some-uuid/ticket7295/ecm-6.2.1_p0-spkg-install.patch) by fbissey created at 2009-10-26 01:02:32",
+    "body": "Attachment [ecm-6.2.1_p0-spkg-install.patch](tarball://root/attachments/some-uuid/ticket7295/ecm-6.2.1_p0-spkg-install.patch) by @kiwifb created at 2009-10-26 01:02:32",
     "created_at": "2009-10-26T01:02:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60735",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [ecm-6.2.1_p0-spkg-install.patch](tarball://root/attachments/some-uuid/ticket7295/ecm-6.2.1_p0-spkg-install.patch) by fbissey created at 2009-10-26 01:02:32
+Attachment [ecm-6.2.1_p0-spkg-install.patch](tarball://root/attachments/some-uuid/ticket7295/ecm-6.2.1_p0-spkg-install.patch) by @kiwifb created at 2009-10-26 01:02:32
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_060736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60736",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_060739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60739",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

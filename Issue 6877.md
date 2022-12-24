@@ -3,7 +3,7 @@
 archive/issues_006877.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  malb\n\nNot even in sage, but already a bug fix...\n\nThe bug comes from the different ordering for enumerating finite fields depending on the implementation (givaro or ntl in this case).\n\nThe improvements are:\n\n- an option to output the truth table in hexadecimal\n- the computation of the algebraic normal form\n\nIssue created by migration from https://trac.sagemath.org/ticket/6877\n\n",
+    "body": "Assignee: somebody\n\nCC:  @malb\n\nNot even in sage, but already a bug fix...\n\nThe bug comes from the different ordering for enumerating finite fields depending on the implementation (givaro or ntl in this case).\n\nThe improvements are:\n\n- an option to output the truth table in hexadecimal\n- the computation of the algebraic normal form\n\nIssue created by migration from https://trac.sagemath.org/ticket/6877\n\n",
     "created_at": "2009-09-03T12:21:59Z",
     "labels": [
         "cryptography",
@@ -19,7 +19,7 @@ archive/issues_006877.json:
 ```
 Assignee: somebody
 
-CC:  malb
+CC:  @malb
 
 Not even in sage, but already a bug fix...
 
@@ -82,7 +82,7 @@ archive/issue_comments_056772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6877#issuecomment-56772",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

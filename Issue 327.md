@@ -3,7 +3,7 @@
 archive/issues_000327.json:
 ```json
 {
-    "body": "Assignee: was\n\nIn sage base check of prerequisites should also check for perl 5.8.  According to Kevin \nBuzzard, building maxima using perl 5.6 fails with this error, but upgrading to perl 5.8\nresolves the problem:\n\n```\n\"Unknown open() mode '<:crlf' at ./build_index.pl line 25\".\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/327\n\n",
+    "body": "Assignee: @williamstein\n\nIn sage base check of prerequisites should also check for perl 5.8.  According to Kevin \nBuzzard, building maxima using perl 5.6 fails with this error, but upgrading to perl 5.8\nresolves the problem:\n\n```\n\"Unknown open() mode '<:crlf' at ./build_index.pl line 25\".\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/327\n\n",
     "created_at": "2007-03-21T22:38:11Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000327.json:
     "title": "add perl 5.8 dependency for sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/327",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 In sage base check of prerequisites should also check for perl 5.8.  According to Kevin 
 Buzzard, building maxima using perl 5.6 fails with this error, but upgrading to perl 5.8
@@ -62,7 +62,7 @@ archive/issue_comments_001548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/327",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/327#issuecomment-1548",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007277.json:
     "title": "Add permutahedron symmetry groups as standard",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7277",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: joyner
@@ -37,7 +37,7 @@ archive/issue_comments_060569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7277#issuecomment-60569",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_060570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7277#issuecomment-60570",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_060571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7277#issuecomment-60571",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_060572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7277#issuecomment-60572",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_060573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7277#issuecomment-60573",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004126.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4126\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4126\n\n",
     "created_at": "2008-09-15T03:56:49Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004126.json:
     "title": "[with patch; not ready for review] improve sage <--> magma interface for number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4126",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4126
 archive/issue_comments_029915.json:
 ```json
 {
-    "body": "Attachment [sage-4126-part1.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part1.patch) by was created at 2008-09-15 03:59:04\n\nadd sage number field --> magma number field conversion",
+    "body": "Attachment [sage-4126-part1.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part1.patch) by @williamstein created at 2008-09-15 03:59:04\n\nadd sage number field --> magma number field conversion",
     "created_at": "2008-09-15T03:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4126#issuecomment-29915",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4126-part1.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part1.patch) by was created at 2008-09-15 03:59:04
+Attachment [sage-4126-part1.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part1.patch) by @williamstein created at 2008-09-15 03:59:04
 
 add sage number field --> magma number field conversion
 
@@ -52,16 +52,16 @@ add sage number field --> magma number field conversion
 archive/issue_comments_029916.json:
 ```json
 {
-    "body": "Attachment [sage-4126-part2-quo_sub_ideal.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part2-quo_sub_ideal.patch) by was created at 2008-09-19 04:40:34\n\nThe part 3 patch that I applied does some re-architect-ing of the sage --> magma conversion system so now one can define either _magma_init_ in the very simple case when a pure string is enough or _magma_coerce_ when one wants to do arbitrarily complicated stuff but doesn't want to have to worry about caching. \n\n Caching turns out to be extremely important, e.g., coercing the same number field twice into magma without caching would result in two separate copies of that number field in Magma with no coercion maps, which would cause lots of problems for other things.  This re-architecting will surely be needed all over the place as the Magma / Sage interface gets steadily improved.\n\nIt's possible that the choices of names is not optimal.  Using _magma_coerce_ was better than anything else I could think of (e.g., _magma_not_cached_, _magma_impl_, etc.).",
+    "body": "Attachment [sage-4126-part2-quo_sub_ideal.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part2-quo_sub_ideal.patch) by @williamstein created at 2008-09-19 04:40:34\n\nThe part 3 patch that I applied does some re-architect-ing of the sage --> magma conversion system so now one can define either _magma_init_ in the very simple case when a pure string is enough or _magma_coerce_ when one wants to do arbitrarily complicated stuff but doesn't want to have to worry about caching. \n\n Caching turns out to be extremely important, e.g., coercing the same number field twice into magma without caching would result in two separate copies of that number field in Magma with no coercion maps, which would cause lots of problems for other things.  This re-architecting will surely be needed all over the place as the Magma / Sage interface gets steadily improved.\n\nIt's possible that the choices of names is not optimal.  Using _magma_coerce_ was better than anything else I could think of (e.g., _magma_not_cached_, _magma_impl_, etc.).",
     "created_at": "2008-09-19T04:40:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4126#issuecomment-29916",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4126-part2-quo_sub_ideal.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part2-quo_sub_ideal.patch) by was created at 2008-09-19 04:40:34
+Attachment [sage-4126-part2-quo_sub_ideal.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part2-quo_sub_ideal.patch) by @williamstein created at 2008-09-19 04:40:34
 
 The part 3 patch that I applied does some re-architect-ing of the sage --> magma conversion system so now one can define either _magma_init_ in the very simple case when a pure string is enough or _magma_coerce_ when one wants to do arbitrarily complicated stuff but doesn't want to have to worry about caching. 
 
@@ -76,16 +76,16 @@ It's possible that the choices of names is not optimal.  Using _magma_coerce_ wa
 archive/issue_comments_029917.json:
 ```json
 {
-    "body": "Attachment [sage-4126-part3.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part3.patch) by was created at 2008-09-19 04:55:01",
+    "body": "Attachment [sage-4126-part3.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part3.patch) by @williamstein created at 2008-09-19 04:55:01",
     "created_at": "2008-09-19T04:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4126#issuecomment-29917",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4126-part3.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part3.patch) by was created at 2008-09-19 04:55:01
+Attachment [sage-4126-part3.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part3.patch) by @williamstein created at 2008-09-19 04:55:01
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_029918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4126#issuecomment-29918",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_029920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4126#issuecomment-29920",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -159,16 +159,16 @@ The comment that magma -> sage is not implemented rather than unintentionally br
 archive/issue_comments_029921.json:
 ```json
 {
-    "body": "Attachment [sage-4126-part4.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part4.patch) by was created at 2008-09-25 18:15:31\n\nrespond to referee remark",
+    "body": "Attachment [sage-4126-part4.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part4.patch) by @williamstein created at 2008-09-25 18:15:31\n\nrespond to referee remark",
     "created_at": "2008-09-25T18:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4126#issuecomment-29921",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4126-part4.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part4.patch) by was created at 2008-09-25 18:15:31
+Attachment [sage-4126-part4.patch](tarball://root/attachments/some-uuid/ticket4126/sage-4126-part4.patch) by @williamstein created at 2008-09-25 18:15:31
 
 respond to referee remark
 
@@ -184,7 +184,7 @@ archive/issue_comments_029922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4126#issuecomment-29922",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_029923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4126#issuecomment-29923",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004338.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCraig Citro is working on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4338\n\n",
+    "body": "Assignee: @craigcitro\n\nCraig Citro is working on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4338\n\n",
     "created_at": "2008-10-22T17:47:26Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_004338.json:
     "title": "optimize computation of victor_miller basis and use this for level 1 modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4338",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Craig Citro is working on this.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4338
 archive/issue_comments_031821.json:
 ```json
 {
-    "body": "Changing assignee from craigcitro to citro.",
+    "body": "Changing assignee from @craigcitro to citro.",
     "created_at": "2008-10-22T17:47:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4338#issuecomment-31821",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from craigcitro to citro.
+Changing assignee from @craigcitro to citro.
 
 
 

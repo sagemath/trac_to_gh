@@ -175,7 +175,7 @@ archive/issue_comments_001395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/294#issuecomment-1395",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005591.json:
     "title": "alt-enter makes new input cell *after* the following text cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5591",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -46,7 +46,7 @@ archive/issue_comments_043560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5591#issuecomment-43560",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

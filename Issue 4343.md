@@ -3,7 +3,7 @@
 archive/issues_004343.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\nThe reference manual shows the following example for the gradient()  \nfunction:\n\nsage: x,y = var('x y')\nsage: f = x2+y2\nsage: f.gradient()\n(2*x, 2*y)\n\nHowever, if instead I enter:\n\nsage: x,y,n = var('x y n')\nsage: f = x^n+y^n\nsage: f.gradient()\n(y^n*log(y) + x^n*log(x), n*x^(n - 1), n*y^(n - 1))\n\n(not what I wanted, but I can understand what happened.)\nSo I tried:\n\nsage: f(x,y) = x^n+y^n\nsage: f.gradient()\n((x, y) |--> y^n*log(y) + x^n*log(x), (x, y) |--> n*x^(n - 1), (x, y)  \n|--> n*y^(n - 1))\nSo even if I specify that f is a function of x and y,\ngradient() still insists on also differentiating w.r.t. n\n\nHow do I tell gradient() that n is a constant?\n\nThanks in advance for insights.\nJim Clark\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4343\n\n",
+    "body": "Assignee: @burcin\n\n\n```\nThe reference manual shows the following example for the gradient()  \nfunction:\n\nsage: x,y = var('x y')\nsage: f = x2+y2\nsage: f.gradient()\n(2*x, 2*y)\n\nHowever, if instead I enter:\n\nsage: x,y,n = var('x y n')\nsage: f = x^n+y^n\nsage: f.gradient()\n(y^n*log(y) + x^n*log(x), n*x^(n - 1), n*y^(n - 1))\n\n(not what I wanted, but I can understand what happened.)\nSo I tried:\n\nsage: f(x,y) = x^n+y^n\nsage: f.gradient()\n((x, y) |--> y^n*log(y) + x^n*log(x), (x, y) |--> n*x^(n - 1), (x, y)  \n|--> n*y^(n - 1))\nSo even if I specify that f is a function of x and y,\ngradient() still insists on also differentiating w.r.t. n\n\nHow do I tell gradient() that n is a constant?\n\nThanks in advance for insights.\nJim Clark\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4343\n\n",
     "created_at": "2008-10-23T00:28:09Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004343.json:
     "title": "gradient needs to be more careful about the variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4343",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -64,16 +64,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4343
 archive/issue_comments_031914.json:
 ```json
 {
-    "body": "Attachment [gradient.patch](tarball://root/attachments/some-uuid/ticket4343/gradient.patch) by jason created at 2008-10-23 00:32:44\n\nDoctests in calculus.py pass.",
+    "body": "Attachment [gradient.patch](tarball://root/attachments/some-uuid/ticket4343/gradient.patch) by @jasongrout created at 2008-10-23 00:32:44\n\nDoctests in calculus.py pass.",
     "created_at": "2008-10-23T00:32:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4343#issuecomment-31914",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [gradient.patch](tarball://root/attachments/some-uuid/ticket4343/gradient.patch) by jason created at 2008-10-23 00:32:44
+Attachment [gradient.patch](tarball://root/attachments/some-uuid/ticket4343/gradient.patch) by @jasongrout created at 2008-10-23 00:32:44
 
 Doctests in calculus.py pass.
 
@@ -89,7 +89,7 @@ archive/issue_comments_031915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4343#issuecomment-31915",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

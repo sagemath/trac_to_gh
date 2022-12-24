@@ -3,7 +3,7 @@
 archive/issues_000876.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/876\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/876\n\n",
     "created_at": "2007-10-13T09:03:20Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000876.json:
     "title": "Implement or wrap Braid Groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/876",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/876
 archive/issue_comments_005416.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-10-13T09:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5416",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_005418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5418",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_005419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5419",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_005420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5420",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_005421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5421",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_005422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5422",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_005423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5423",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_005424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/876#issuecomment-5424",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

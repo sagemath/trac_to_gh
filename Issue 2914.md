@@ -14,7 +14,7 @@ archive/issues_002914.json:
     "title": "integers are immutable but set_str breaks that -- having this function is a *major* bug.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2914",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -90,16 +90,16 @@ Changing assignee from mabshoff to somebody.
 archive/issue_comments_020070.json:
 ```json
 {
-    "body": "Attachment [sage-2914.patch](tarball://root/attachments/some-uuid/ticket2914/sage-2914.patch) by was created at 2008-04-14 04:42:04",
+    "body": "Attachment [sage-2914.patch](tarball://root/attachments/some-uuid/ticket2914/sage-2914.patch) by @williamstein created at 2008-04-14 04:42:04",
     "created_at": "2008-04-14T04:42:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2914#issuecomment-20070",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2914.patch](tarball://root/attachments/some-uuid/ticket2914/sage-2914.patch) by was created at 2008-04-14 04:42:04
+Attachment [sage-2914.patch](tarball://root/attachments/some-uuid/ticket2914/sage-2914.patch) by @williamstein created at 2008-04-14 04:42:04
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_020071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2914#issuecomment-20071",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_020072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2914#issuecomment-20072",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_020073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2914#issuecomment-20073",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_020074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2914#issuecomment-20074",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,16 +187,16 @@ apply this instead of previous version
 archive/issue_comments_020075.json:
 ```json
 {
-    "body": "Attachment [sage-2914_nuke_em.patch](tarball://root/attachments/some-uuid/ticket2914/sage-2914_nuke_em.patch) by was created at 2008-04-14 14:49:07",
+    "body": "Attachment [sage-2914_nuke_em.patch](tarball://root/attachments/some-uuid/ticket2914/sage-2914_nuke_em.patch) by @williamstein created at 2008-04-14 14:49:07",
     "created_at": "2008-04-14T14:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2914#issuecomment-20075",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2914_nuke_em.patch](tarball://root/attachments/some-uuid/ticket2914/sage-2914_nuke_em.patch) by was created at 2008-04-14 14:49:07
+Attachment [sage-2914_nuke_em.patch](tarball://root/attachments/some-uuid/ticket2914/sage-2914_nuke_em.patch) by @williamstein created at 2008-04-14 14:49:07
 
 
 
@@ -210,7 +210,7 @@ archive/issue_comments_020076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2914#issuecomment-20076",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

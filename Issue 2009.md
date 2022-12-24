@@ -14,7 +14,7 @@ archive/issues_002009.json:
     "title": "crap -- networkx spkg in sage-2.10.1.rc3 contains a bunch of .svn directories",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2009",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

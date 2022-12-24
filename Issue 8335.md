@@ -3,7 +3,7 @@
 archive/issues_008335.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  defeo rbeezer hds simonking zimmerma caruso pbruin mraum fstromberg jcooley davidloeffler dfesti\n\nImplements coercion within lattices of finite fields lying above the same prime.\n\n\n```\nsage: k = GF(9)\nsage: l = GF(27)\nsage: x = k.gen() + l.gen(); x\nz6^5 + 2*z6^4 + 2*z6^3 + z6^2 + 2*z6 + 1\nsage: x.parent()\nFinite Field in z6 of size 3^6\n```\n\n\nThis feature is implemented for fields outside the range of the Conway polynomial database by the implementation of a function for finding pseudo-Conway polynomials: polynomials that satisfy all of the algebraic constraints on Conway polynomials without the lexicographic constraint that imposes uniqueness.\n\nFinite fields no longer require an explicit variable name (though they still accept one).  If a variable name is given, then outside the range of the Conway polynomial database a random or sparse polynomial is used for speed reasons; if no variable name is given then either a Conway polynomial or pseudo-Conway polynomial is used.\n\nAlso adds methods `any_root` and `squarefree_decomposition` to polynomials over finite fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8335\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @defeo @rbeezer hds simonking @zimmermann6 @xcaruso @pjbruin mraum @fredstro jcooley @loefflerd dfesti\n\nImplements coercion within lattices of finite fields lying above the same prime.\n\n\n```\nsage: k = GF(9)\nsage: l = GF(27)\nsage: x = k.gen() + l.gen(); x\nz6^5 + 2*z6^4 + 2*z6^3 + z6^2 + 2*z6 + 1\nsage: x.parent()\nFinite Field in z6 of size 3^6\n```\n\n\nThis feature is implemented for fields outside the range of the Conway polynomial database by the implementation of a function for finding pseudo-Conway polynomials: polynomials that satisfy all of the algebraic constraints on Conway polynomials without the lexicographic constraint that imposes uniqueness.\n\nFinite fields no longer require an explicit variable name (though they still accept one).  If a variable name is given, then outside the range of the Conway polynomial database a random or sparse polynomial is used for speed reasons; if no variable name is given then either a Conway polynomial or pseudo-Conway polynomial is used.\n\nAlso adds methods `any_root` and `squarefree_decomposition` to polynomials over finite fields.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8335\n\n",
     "created_at": "2010-02-23T17:26:08Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008335.json:
     "title": "Finite Field lattices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8335",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  defeo rbeezer hds simonking zimmerma caruso pbruin mraum fstromberg jcooley davidloeffler dfesti
+CC:  @defeo @rbeezer hds simonking @zimmermann6 @xcaruso @pjbruin mraum @fredstro jcooley @loefflerd dfesti
 
 Implements coercion within lattices of finite fields lying above the same prime.
 
@@ -56,7 +56,7 @@ archive/issue_comments_074279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74279",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_074280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74280",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_074281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74281",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_074282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74282",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -129,16 +129,16 @@ Includes everything in 8218, 8332, 7880, 7883, 8333, 8334 and 8335 except the 82
 archive/issue_comments_074283.json:
 ```json
 {
-    "body": "Attachment [finite_field_coerce_ALL.patch](tarball://root/attachments/some-uuid/ticket8335/finite_field_coerce_ALL.patch) by roed created at 2010-02-23 17:51:54\n\nFor convenience, I added a giant patch which includes all the changes except the bundle at 8218 (which we want to leave as a bundle in order to preserve file history).",
+    "body": "Attachment [finite_field_coerce_ALL.patch](tarball://root/attachments/some-uuid/ticket8335/finite_field_coerce_ALL.patch) by @roed314 created at 2010-02-23 17:51:54\n\nFor convenience, I added a giant patch which includes all the changes except the bundle at 8218 (which we want to leave as a bundle in order to preserve file history).",
     "created_at": "2010-02-23T17:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74283",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [finite_field_coerce_ALL.patch](tarball://root/attachments/some-uuid/ticket8335/finite_field_coerce_ALL.patch) by roed created at 2010-02-23 17:51:54
+Attachment [finite_field_coerce_ALL.patch](tarball://root/attachments/some-uuid/ticket8335/finite_field_coerce_ALL.patch) by @roed314 created at 2010-02-23 17:51:54
 
 For convenience, I added a giant patch which includes all the changes except the bundle at 8218 (which we want to leave as a bundle in order to preserve file history).
 
@@ -154,7 +154,7 @@ archive/issue_comments_074284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74284",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_074285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74285",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -199,16 +199,16 @@ trac_8722.patch
 archive/issue_comments_074286.json:
 ```json
 {
-    "body": "Attachment [8335_pseudo_conway.patch](tarball://root/attachments/some-uuid/ticket8335/8335_pseudo_conway.patch) by roed created at 2011-06-21 13:51:50\n\nApply first",
+    "body": "Attachment [8335_pseudo_conway.patch](tarball://root/attachments/some-uuid/ticket8335/8335_pseudo_conway.patch) by @roed314 created at 2011-06-21 13:51:50\n\nApply first",
     "created_at": "2011-06-21T13:51:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74286",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [8335_pseudo_conway.patch](tarball://root/attachments/some-uuid/ticket8335/8335_pseudo_conway.patch) by roed created at 2011-06-21 13:51:50
+Attachment [8335_pseudo_conway.patch](tarball://root/attachments/some-uuid/ticket8335/8335_pseudo_conway.patch) by @roed314 created at 2011-06-21 13:51:50
 
 Apply first
 
@@ -224,7 +224,7 @@ archive/issue_comments_074287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74287",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_074288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74288",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_074289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74289",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -273,16 +273,16 @@ Apply second
 archive/issue_comments_074290.json:
 ```json
 {
-    "body": "Attachment [8335_finite_field_coerce.patch](tarball://root/attachments/some-uuid/ticket8335/8335_finite_field_coerce.patch) by roed created at 2011-06-22 08:53:42\n\nAgainst 4.7 for patchbot",
+    "body": "Attachment [8335_finite_field_coerce.patch](tarball://root/attachments/some-uuid/ticket8335/8335_finite_field_coerce.patch) by @roed314 created at 2011-06-22 08:53:42\n\nAgainst 4.7 for patchbot",
     "created_at": "2011-06-22T08:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74290",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [8335_finite_field_coerce.patch](tarball://root/attachments/some-uuid/ticket8335/8335_finite_field_coerce.patch) by roed created at 2011-06-22 08:53:42
+Attachment [8335_finite_field_coerce.patch](tarball://root/attachments/some-uuid/ticket8335/8335_finite_field_coerce.patch) by @roed314 created at 2011-06-22 08:53:42
 
 Against 4.7 for patchbot
 
@@ -293,16 +293,16 @@ Against 4.7 for patchbot
 archive/issue_comments_074291.json:
 ```json
 {
-    "body": "Attachment [8335_finite_field_coerce_vs_47.patch](tarball://root/attachments/some-uuid/ticket8335/8335_finite_field_coerce_vs_47.patch) by roed created at 2011-06-22 08:54:14\n\nTo work against 4.7, apply 8335_pseudo_conway.patch then 8335_finite_field_coerce_vs_47.patch.",
+    "body": "Attachment [8335_finite_field_coerce_vs_47.patch](tarball://root/attachments/some-uuid/ticket8335/8335_finite_field_coerce_vs_47.patch) by @roed314 created at 2011-06-22 08:54:14\n\nTo work against 4.7, apply 8335_pseudo_conway.patch then 8335_finite_field_coerce_vs_47.patch.",
     "created_at": "2011-06-22T08:54:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74291",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [8335_finite_field_coerce_vs_47.patch](tarball://root/attachments/some-uuid/ticket8335/8335_finite_field_coerce_vs_47.patch) by roed created at 2011-06-22 08:54:14
+Attachment [8335_finite_field_coerce_vs_47.patch](tarball://root/attachments/some-uuid/ticket8335/8335_finite_field_coerce_vs_47.patch) by @roed314 created at 2011-06-22 08:54:14
 
 To work against 4.7, apply 8335_pseudo_conway.patch then 8335_finite_field_coerce_vs_47.patch.
 
@@ -318,7 +318,7 @@ archive/issue_comments_074292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74292",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_074293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74293",
-    "user": "defeo"
+    "user": "@defeo"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_074294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74294",
-    "user": "defeo"
+    "user": "@defeo"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_074295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74295",
-    "user": "defeo"
+    "user": "@defeo"
 }
 ```
 
@@ -602,7 +602,7 @@ archive/issue_comments_074306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74306",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -964,7 +964,7 @@ archive/issue_comments_074325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74325",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1022,7 +1022,7 @@ archive/issue_comments_074328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74328",
-    "user": "defeo"
+    "user": "@defeo"
 }
 ```
 
@@ -1052,7 +1052,7 @@ archive/issue_comments_074329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74329",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -1093,7 +1093,7 @@ archive/issue_comments_074331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74331",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -1130,16 +1130,16 @@ Not sure what the patchbot complains about, missing docstrings?
 archive/issue_comments_074333.json:
 ```json
 {
-    "body": "Attachment [trac_8335-pseudo_conway-5.10.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-5.10.b3.patch) by saraedum created at 2013-05-16 13:13:47\n\nApply trac_8335-pseudo_conway-5.8.b0.patch trac_8335-finite_field_coerce-5.8.b0.patch trac_8335-fixes-5.10.b3.patch",
+    "body": "Attachment [trac_8335-pseudo_conway-5.10.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-5.10.b3.patch) by @saraedum created at 2013-05-16 13:13:47\n\nApply trac_8335-pseudo_conway-5.8.b0.patch trac_8335-finite_field_coerce-5.8.b0.patch trac_8335-fixes-5.10.b3.patch",
     "created_at": "2013-05-16T13:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74333",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [trac_8335-pseudo_conway-5.10.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-5.10.b3.patch) by saraedum created at 2013-05-16 13:13:47
+Attachment [trac_8335-pseudo_conway-5.10.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-pseudo_conway-5.10.b3.patch) by @saraedum created at 2013-05-16 13:13:47
 
 Apply trac_8335-pseudo_conway-5.8.b0.patch trac_8335-finite_field_coerce-5.8.b0.patch trac_8335-fixes-5.10.b3.patch
 
@@ -1155,7 +1155,7 @@ archive/issue_comments_074334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74334",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -1192,7 +1192,7 @@ archive/issue_comments_074336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74336",
-    "user": "defeo"
+    "user": "@defeo"
 }
 ```
 
@@ -1210,7 +1210,7 @@ archive/issue_comments_074337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74337",
-    "user": "defeo"
+    "user": "@defeo"
 }
 ```
 
@@ -1228,7 +1228,7 @@ archive/issue_comments_074338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74338",
-    "user": "defeo"
+    "user": "@defeo"
 }
 ```
 
@@ -1921,16 +1921,16 @@ So I just removed the hack forcing the use of pseudo-Conway polynomials.
 archive/issue_comments_074364.json:
 ```json
 {
-    "body": "Attachment [trac_8335-fixes-5.11.b1.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.11.b1.patch) by caruso created at 2013-06-26 08:24:43",
+    "body": "Attachment [trac_8335-fixes-5.11.b1.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.11.b1.patch) by @xcaruso created at 2013-06-26 08:24:43",
     "created_at": "2013-06-26T08:24:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74364",
-    "user": "caruso"
+    "user": "@xcaruso"
 }
 ```
 
-Attachment [trac_8335-fixes-5.11.b1.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.11.b1.patch) by caruso created at 2013-06-26 08:24:43
+Attachment [trac_8335-fixes-5.11.b1.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-fixes-5.11.b1.patch) by @xcaruso created at 2013-06-26 08:24:43
 
 
 
@@ -1944,7 +1944,7 @@ archive/issue_comments_074365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74365",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2000,7 +2000,7 @@ archive/issue_comments_074367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74367",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2119,7 +2119,7 @@ archive/issue_comments_074369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74369",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2159,7 +2159,7 @@ archive/issue_comments_074371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74371",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2264,7 +2264,7 @@ archive/issue_comments_074375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74375",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2347,7 +2347,7 @@ archive/issue_comments_074377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74377",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2397,7 +2397,7 @@ archive/issue_comments_074378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74378",
-    "user": "defeo"
+    "user": "@defeo"
 }
 ```
 
@@ -2423,7 +2423,7 @@ archive/issue_comments_074379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74379",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2490,7 +2490,7 @@ archive/issue_comments_074382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74382",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2508,7 +2508,7 @@ archive/issue_comments_074383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74383",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2568,7 +2568,7 @@ archive/issue_comments_074386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74386",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -2655,7 +2655,7 @@ archive/issue_comments_074390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74390",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2673,7 +2673,7 @@ archive/issue_comments_074391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74391",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2691,7 +2691,7 @@ archive/issue_comments_074392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74392",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2714,7 +2714,7 @@ archive/issue_comments_074393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74393",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2732,7 +2732,7 @@ archive/issue_comments_074394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74394",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2755,7 +2755,7 @@ archive/issue_comments_074395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74395",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -2768,16 +2768,16 @@ to work on during Sage Days 51
 archive/issue_comments_074396.json:
 ```json
 {
-    "body": "Attachment [trac_8335_sd51.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335_sd51.patch) by pbruin created at 2013-07-29 11:48:52\n\nunified, rebased and cleaned up",
+    "body": "Attachment [trac_8335_sd51.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335_sd51.patch) by @pjbruin created at 2013-07-29 11:48:52\n\nunified, rebased and cleaned up",
     "created_at": "2013-07-29T11:48:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74396",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
-Attachment [trac_8335_sd51.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335_sd51.patch) by pbruin created at 2013-07-29 11:48:52
+Attachment [trac_8335_sd51.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335_sd51.patch) by @pjbruin created at 2013-07-29 11:48:52
 
 unified, rebased and cleaned up
 
@@ -2788,16 +2788,16 @@ unified, rebased and cleaned up
 archive/issue_comments_074397.json:
 ```json
 {
-    "body": "Attachment [trac_8335-finite_field_coerce-5.11.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.11.b3.patch) by pbruin created at 2013-07-29 12:08:49\n\nBesides everything else, the latest patch moves `_coerce_map_from_()` from the various finite field implementations to the `FiniteField` base class; it is now implementation-independent.  For this reason, this ticket now depends on #12142.  Various other changes have been made.\n\nThe syntax for constructing finite fields using Conway polynomials that admit automatic coercion is now\n\n```\nsage: F.<a> = FiniteField(5^3, conway=True, prefix='z')\n```\n\nThis is not too pretty, but it is meant as a temporary solution until we have algebraic closures of finite fields.\n\nOlder patches on this ticket contained various changes that were in older attachments and that do not seem immediately relevant to this ticket.  I deleted those changes that seemed superfluous and kept those that I thought could be necessary after all.\n\nThis ticket should be reviewed once #14958 is done.\n\nFor patchbot:\n\n```\napply trac_8335-finite_field_coerce-5.11.b3.patch\n```\n",
+    "body": "Attachment [trac_8335-finite_field_coerce-5.11.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.11.b3.patch) by @pjbruin created at 2013-07-29 12:08:49\n\nBesides everything else, the latest patch moves `_coerce_map_from_()` from the various finite field implementations to the `FiniteField` base class; it is now implementation-independent.  For this reason, this ticket now depends on #12142.  Various other changes have been made.\n\nThe syntax for constructing finite fields using Conway polynomials that admit automatic coercion is now\n\n```\nsage: F.<a> = FiniteField(5^3, conway=True, prefix='z')\n```\n\nThis is not too pretty, but it is meant as a temporary solution until we have algebraic closures of finite fields.\n\nOlder patches on this ticket contained various changes that were in older attachments and that do not seem immediately relevant to this ticket.  I deleted those changes that seemed superfluous and kept those that I thought could be necessary after all.\n\nThis ticket should be reviewed once #14958 is done.\n\nFor patchbot:\n\n```\napply trac_8335-finite_field_coerce-5.11.b3.patch\n```\n",
     "created_at": "2013-07-29T12:08:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74397",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
-Attachment [trac_8335-finite_field_coerce-5.11.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.11.b3.patch) by pbruin created at 2013-07-29 12:08:49
+Attachment [trac_8335-finite_field_coerce-5.11.b3.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-finite_field_coerce-5.11.b3.patch) by @pjbruin created at 2013-07-29 12:08:49
 
 Besides everything else, the latest patch moves `_coerce_map_from_()` from the various finite field implementations to the `FiniteField` base class; it is now implementation-independent.  For this reason, this ticket now depends on #12142.  Various other changes have been made.
 
@@ -2832,7 +2832,7 @@ archive/issue_comments_074398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74398",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -3003,7 +3003,7 @@ archive/issue_comments_074407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74407",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -3024,7 +3024,7 @@ archive/issue_comments_074408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74408",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -3076,7 +3076,7 @@ archive/issue_comments_074410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74410",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -3124,7 +3124,7 @@ archive/issue_comments_074412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74412",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -3137,16 +3137,16 @@ use only (non-pseudo-)Conway polynomials
 archive/issue_comments_074413.json:
 ```json
 {
-    "body": "Attachment [trac_8335-no_pseudo.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-no_pseudo.patch) by pbruin created at 2013-08-02 11:06:44",
+    "body": "Attachment [trac_8335-no_pseudo.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-no_pseudo.patch) by @pjbruin created at 2013-08-02 11:06:44",
     "created_at": "2013-08-02T11:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74413",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
-Attachment [trac_8335-no_pseudo.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-no_pseudo.patch) by pbruin created at 2013-08-02 11:06:44
+Attachment [trac_8335-no_pseudo.patch](tarball://root/attachments/some-uuid/ticket8335/trac_8335-no_pseudo.patch) by @pjbruin created at 2013-08-02 11:06:44
 
 
 
@@ -3160,7 +3160,7 @@ archive/issue_comments_074414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74414",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -3178,7 +3178,7 @@ archive/issue_comments_074415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74415",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -3239,7 +3239,7 @@ archive/issue_comments_074418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8335#issuecomment-74418",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

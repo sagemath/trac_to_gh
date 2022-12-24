@@ -14,7 +14,7 @@ archive/issues_005053.json:
     "title": "If the hostname of the computer has a \"-\" in it, then no tempfiles will ever be deleted from $DOT_SAGE/temp!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5053",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5053
 archive/issue_comments_038499.json:
 ```json
 {
-    "body": "Attachment [cleaner.patch](tarball://root/attachments/some-uuid/ticket5053/cleaner.patch) by SimonKing created at 2009-01-24 21:02:45\n\nFor being consistent, replace '-' with '_'. This yields a proper cleaning of temp-files",
+    "body": "Attachment [cleaner.patch](tarball://root/attachments/some-uuid/ticket5053/cleaner.patch) by @simon-king-jena created at 2009-01-24 21:02:45\n\nFor being consistent, replace '-' with '_'. This yields a proper cleaning of temp-files",
     "created_at": "2009-01-24T21:02:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5053#issuecomment-38499",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [cleaner.patch](tarball://root/attachments/some-uuid/ticket5053/cleaner.patch) by SimonKing created at 2009-01-24 21:02:45
+Attachment [cleaner.patch](tarball://root/attachments/some-uuid/ticket5053/cleaner.patch) by @simon-king-jena created at 2009-01-24 21:02:45
 
 For being consistent, replace '-' with '_'. This yields a proper cleaning of temp-files
 
@@ -57,7 +57,7 @@ archive/issue_comments_038500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5053#issuecomment-38500",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_038501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5053#issuecomment-38501",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -98,16 +98,16 @@ To be applied after the first patch: Allow hostnames containing '/' and '\'
 archive/issue_comments_038502.json:
 ```json
 {
-    "body": "Attachment [hostnameSCRIPTS.patch](tarball://root/attachments/some-uuid/ticket5053/hostnameSCRIPTS.patch) by SimonKing created at 2009-01-25 08:00:14\n\nTo be applied after the first patch. Allows hostnames that contain '/' or '\\'",
+    "body": "Attachment [hostnameSCRIPTS.patch](tarball://root/attachments/some-uuid/ticket5053/hostnameSCRIPTS.patch) by @simon-king-jena created at 2009-01-25 08:00:14\n\nTo be applied after the first patch. Allows hostnames that contain '/' or '\\'",
     "created_at": "2009-01-25T08:00:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5053#issuecomment-38502",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [hostnameSCRIPTS.patch](tarball://root/attachments/some-uuid/ticket5053/hostnameSCRIPTS.patch) by SimonKing created at 2009-01-25 08:00:14
+Attachment [hostnameSCRIPTS.patch](tarball://root/attachments/some-uuid/ticket5053/hostnameSCRIPTS.patch) by @simon-king-jena created at 2009-01-25 08:00:14
 
 To be applied after the first patch. Allows hostnames that contain '/' or '\'
 
@@ -123,7 +123,7 @@ archive/issue_comments_038503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5053#issuecomment-38503",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

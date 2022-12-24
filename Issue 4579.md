@@ -14,7 +14,7 @@ archive/issues_004579.json:
     "title": "[with patch, needs review] put mpz_longlong functions in c_lib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4579",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4579
 archive/issue_comments_034336.json:
 ```json
 {
-    "body": "Attachment [4579-move-mpz-longlong.patch](tarball://root/attachments/some-uuid/ticket4579/4579-move-mpz-longlong.patch) by robertwb created at 2008-11-22 00:42:44",
+    "body": "Attachment [4579-move-mpz-longlong.patch](tarball://root/attachments/some-uuid/ticket4579/4579-move-mpz-longlong.patch) by @robertwb created at 2008-11-22 00:42:44",
     "created_at": "2008-11-22T00:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34336",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4579-move-mpz-longlong.patch](tarball://root/attachments/some-uuid/ticket4579/4579-move-mpz-longlong.patch) by robertwb created at 2008-11-22 00:42:44
+Attachment [4579-move-mpz-longlong.patch](tarball://root/attachments/some-uuid/ticket4579/4579-move-mpz-longlong.patch) by @robertwb created at 2008-11-22 00:42:44
 
 
 

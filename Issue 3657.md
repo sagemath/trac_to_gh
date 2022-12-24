@@ -3,7 +3,7 @@
 archive/issues_003657.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nFixed some LaTeX problems so that the docs from latin.py would compile properly, also fixed some minor things.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3657\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nFixed some LaTeX problems so that the docs from latin.py would compile properly, also fixed some minor things.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3657\n\n",
     "created_at": "2008-07-15T11:59:28Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_003657.json:
     "user": "carlohamalainen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -85,7 +85,7 @@ archive/issue_comments_025852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3657#issuecomment-25852",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_025853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3657#issuecomment-25853",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002390.json:
     "title": "numerical noise in devel/sage-main/sage/structure/factorization.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2390",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: cwitty
@@ -63,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2390
 archive/issue_comments_016127.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to was.",
+    "body": "Changing assignee from cwitty to @williamstein.",
     "created_at": "2008-03-05T00:30:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2390",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_016127.json:
 }
 ```
 
-Changing assignee from cwitty to was.
+Changing assignee from cwitty to @williamstein.
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_009361.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  georgsweber kcrisman\n\nThis has been reported on more than one Mac running OSX 10.4 Tiger.\n\n```\n> \n> ----------------------------------------------------------------------\n> The following tests failed:\n> \n> \u00a0 \u00a0 \u00a0 \u00a0 sage -t \u00a0-long\n> \"rro/sage-4.4.4.alpha1/devel/sage/sage/interfaces/maxima.py\" #\n> Killed/crashed\n```\n\nThis is due to the commands in this file which create the tab completion list for use with Sage's Maxima; for some reason even when done 'by hand' they often time out, and since they happen a few different times in this file it will nearly always time out (even with huge `SAGE_TIMEOUT` set)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9361\n\n",
+    "body": "Assignee: tbd\n\nCC:  georgsweber @kcrisman\n\nThis has been reported on more than one Mac running OSX 10.4 Tiger.\n\n```\n> \n> ----------------------------------------------------------------------\n> The following tests failed:\n> \n> \u00a0 \u00a0 \u00a0 \u00a0 sage -t \u00a0-long\n> \"rro/sage-4.4.4.alpha1/devel/sage/sage/interfaces/maxima.py\" #\n> Killed/crashed\n```\n\nThis is due to the commands in this file which create the tab completion list for use with Sage's Maxima; for some reason even when done 'by hand' they often time out, and since they happen a few different times in this file it will nearly always time out (even with huge `SAGE_TIMEOUT` set)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9361\n\n",
     "created_at": "2010-06-28T18:24:34Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009361.json:
     "title": "Maxima timeout when creating tab completion list on Mac PPC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9361",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tbd
 
-CC:  georgsweber kcrisman
+CC:  georgsweber @kcrisman
 
 This has been reported on more than one Mac running OSX 10.4 Tiger.
 
@@ -51,7 +51,7 @@ archive/issue_comments_088896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88896",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_088897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88897",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_088898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88898",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_088899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88899",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -133,16 +133,16 @@ Changing priority from minor to critical.
 archive/issue_comments_088900.json:
 ```json
 {
-    "body": "Attachment [9361_maxima_timeout.patch](tarball://root/attachments/some-uuid/ticket9361/9361_maxima_timeout.patch) by jdemeyer created at 2012-01-13 16:29:33",
+    "body": "Attachment [9361_maxima_timeout.patch](tarball://root/attachments/some-uuid/ticket9361/9361_maxima_timeout.patch) by @jdemeyer created at 2012-01-13 16:29:33",
     "created_at": "2012-01-13T16:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88900",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9361_maxima_timeout.patch](tarball://root/attachments/some-uuid/ticket9361/9361_maxima_timeout.patch) by jdemeyer created at 2012-01-13 16:29:33
+Attachment [9361_maxima_timeout.patch](tarball://root/attachments/some-uuid/ticket9361/9361_maxima_timeout.patch) by @jdemeyer created at 2012-01-13 16:29:33
 
 
 
@@ -156,7 +156,7 @@ archive/issue_comments_088901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88901",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_088902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88902",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_088903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88903",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_088904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88904",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_088905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88905",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_088906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88906",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_088907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88907",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_088908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88908",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_088909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88909",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_088910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9361#issuecomment-88910",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009156.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThis is useful for consistently handling elements of ZZ, QQ, RR, and CC. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9156\n\n",
+    "body": "Assignee: @aghitza\n\nThis is useful for consistently handling elements of ZZ, QQ, RR, and CC. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9156\n\n",
     "created_at": "2010-06-06T08:17:05Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_009156.json:
     "title": "Add real() and imag() methods to Integer and Rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9156",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 This is useful for consistently handling elements of ZZ, QQ, RR, and CC. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9156
 archive/issue_comments_085484.json:
 ```json
 {
-    "body": "Attachment [9156-QQ-ZZ-real-imag.patch](tarball://root/attachments/some-uuid/ticket9156/9156-QQ-ZZ-real-imag.patch) by robertwb created at 2010-06-06 08:20:07",
+    "body": "Attachment [9156-QQ-ZZ-real-imag.patch](tarball://root/attachments/some-uuid/ticket9156/9156-QQ-ZZ-real-imag.patch) by @robertwb created at 2010-06-06 08:20:07",
     "created_at": "2010-06-06T08:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9156#issuecomment-85484",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9156-QQ-ZZ-real-imag.patch](tarball://root/attachments/some-uuid/ticket9156/9156-QQ-ZZ-real-imag.patch) by robertwb created at 2010-06-06 08:20:07
+Attachment [9156-QQ-ZZ-real-imag.patch](tarball://root/attachments/some-uuid/ticket9156/9156-QQ-ZZ-real-imag.patch) by @robertwb created at 2010-06-06 08:20:07
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_085485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9156#issuecomment-85485",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_085486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9156#issuecomment-85486",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_085487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9156#issuecomment-85487",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_085488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9156#issuecomment-85488",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

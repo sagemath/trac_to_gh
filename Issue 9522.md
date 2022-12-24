@@ -14,7 +14,7 @@ archive/issues_009522.json:
     "title": "MPIR: Don't check SAGE_CHECK in spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9522",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
@@ -55,7 +55,7 @@ archive/issue_comments_091534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9522#issuecomment-91534",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_091535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9522#issuecomment-91535",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_091537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9522#issuecomment-91537",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

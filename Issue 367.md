@@ -13,7 +13,7 @@ archive/issues_000367.json:
     "title": "Text output from the notebook should indent after ... more.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/367",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -41,7 +41,7 @@ archive/issue_comments_001771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/367#issuecomment-1771",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

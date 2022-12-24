@@ -13,7 +13,7 @@ archive/issues_000013.json:
     "title": "p-adic integers class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/13",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -39,7 +39,7 @@ archive/issue_comments_000062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/13",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/13#issuecomment-62",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_000063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/13",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/13#issuecomment-63",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_000064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/13",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/13#issuecomment-64",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

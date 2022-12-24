@@ -14,7 +14,7 @@ archive/issues_009135.json:
     "title": "sage-4.4.3.alpha3: os x ppc 10.4 -- error building pynac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9135",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -100,7 +100,7 @@ archive/issue_comments_085134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85134",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_085135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85135",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_085136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85136",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_085137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85137",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_085138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85138",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_085139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85139",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_085143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85143",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

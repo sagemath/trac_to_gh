@@ -3,7 +3,7 @@
 archive/issues_005979.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: coercion, parents, element_constructor\n\nIn Parent, there is an implicit invariant, namely that\n\n\tself._element_init_pass_parent == guess_pass_parent(between ._element_constructor)\n\nThis invariant was broken when self._element_constructor was set from\nself._element_constructor_ by __call__. This made the parent not to be\npassed properly to _element_constructor.\n\nThe category patch #5891 depends heavily on this one, as this way of\nsetting _element_constructor becomes the default one for simple\nparents.\n\nBy the way, this patch makes a related trivial fix to a line that is\napparently never used in coerce_maps, and adds a comment about it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5979\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: coercion, parents, element_constructor\n\nIn Parent, there is an implicit invariant, namely that\n\n\tself._element_init_pass_parent == guess_pass_parent(between ._element_constructor)\n\nThis invariant was broken when self._element_constructor was set from\nself._element_constructor_ by __call__. This made the parent not to be\npassed properly to _element_constructor.\n\nThe category patch #5891 depends heavily on this one, as this way of\nsetting _element_constructor becomes the default one for simple\nparents.\n\nBy the way, this patch makes a related trivial fix to a line that is\napparently never used in coerce_maps, and adds a comment about it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5979\n\n",
     "created_at": "2009-05-04T16:40:54Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_005979.json:
     "title": "Parent: fixes broken (implicit) invariant between ._element_constructor and self._element_init_pass_parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5979",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5979
 archive/issue_comments_047489.json:
 ```json
 {
-    "body": "Attachment [parent-element_constructor-fix-5979-submitted.patch](tarball://root/attachments/some-uuid/ticket5979/parent-element_constructor-fix-5979-submitted.patch) by nthiery created at 2009-05-04 16:52:18",
+    "body": "Attachment [parent-element_constructor-fix-5979-submitted.patch](tarball://root/attachments/some-uuid/ticket5979/parent-element_constructor-fix-5979-submitted.patch) by @nthiery created at 2009-05-04 16:52:18",
     "created_at": "2009-05-04T16:52:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5979#issuecomment-47489",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [parent-element_constructor-fix-5979-submitted.patch](tarball://root/attachments/some-uuid/ticket5979/parent-element_constructor-fix-5979-submitted.patch) by nthiery created at 2009-05-04 16:52:18
+Attachment [parent-element_constructor-fix-5979-submitted.patch](tarball://root/attachments/some-uuid/ticket5979/parent-element_constructor-fix-5979-submitted.patch) by @nthiery created at 2009-05-04 16:52:18
 
 
 
@@ -72,7 +72,7 @@ archive/issue_comments_047490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5979#issuecomment-47490",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_047491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5979#issuecomment-47491",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_047492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5979#issuecomment-47492",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_047493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5979#issuecomment-47493",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

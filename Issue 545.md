@@ -14,7 +14,7 @@ archive/issues_000545.json:
     "title": "polish the new symbolic logic code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/545",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: chrisgorecki
@@ -37,7 +37,7 @@ archive/issue_comments_002758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2758",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_002759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2759",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_002760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2760",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_002761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2761",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_002762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2762",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_002763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2763",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_002764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2764",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_002765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2765",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -298,16 +298,16 @@ Pablo
 archive/issue_comments_002766.json:
 ```json
 {
-    "body": "Attachment [logic.hg](tarball://root/attachments/some-uuid/ticket545/logic.hg) by was created at 2008-04-09 19:44:13\n\nthis is from chris gorecki",
+    "body": "Attachment [logic.hg](tarball://root/attachments/some-uuid/ticket545/logic.hg) by @williamstein created at 2008-04-09 19:44:13\n\nthis is from chris gorecki",
     "created_at": "2008-04-09T19:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2766",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [logic.hg](tarball://root/attachments/some-uuid/ticket545/logic.hg) by was created at 2008-04-09 19:44:13
+Attachment [logic.hg](tarball://root/attachments/some-uuid/ticket545/logic.hg) by @williamstein created at 2008-04-09 19:44:13
 
 this is from chris gorecki
 
@@ -323,7 +323,7 @@ archive/issue_comments_002767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2767",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_002768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2768",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -410,7 +410,7 @@ archive/issue_comments_002769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2769",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -423,16 +423,16 @@ Changing keywords from "" to "editor_wstein".
 archive/issue_comments_002770.json:
 ```json
 {
-    "body": "Attachment [sekine.pdf](tarball://root/attachments/some-uuid/ticket545/sekine.pdf) by was created at 2008-06-15 22:06:59\n\nThis is the referee report",
+    "body": "Attachment [sekine.pdf](tarball://root/attachments/some-uuid/ticket545/sekine.pdf) by @williamstein created at 2008-06-15 22:06:59\n\nThis is the referee report",
     "created_at": "2008-06-15T22:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2770",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sekine.pdf](tarball://root/attachments/some-uuid/ticket545/sekine.pdf) by was created at 2008-06-15 22:06:59
+Attachment [sekine.pdf](tarball://root/attachments/some-uuid/ticket545/sekine.pdf) by @williamstein created at 2008-06-15 22:06:59
 
 This is the referee report
 
@@ -448,7 +448,7 @@ archive/issue_comments_002771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2771",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_002772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2772",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1317,7 +1317,7 @@ archive/issue_comments_002785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2785",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1678,7 +1678,7 @@ archive/issue_comments_002800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/545#issuecomment-2800",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

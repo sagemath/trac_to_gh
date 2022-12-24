@@ -3,7 +3,7 @@
 archive/issues_008966.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  malb polybori\n\n\n```\neno% ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R=BooleanPolynomialRing(20,'x','lex')\nsage: a=R.random_element()\nsage: a.reduce([None,None])\n| Sage Version 4.4.1, Release Date: 2010-05-02                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\neno%\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8966\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @malb polybori\n\n\n```\neno% ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R=BooleanPolynomialRing(20,'x','lex')\nsage: a=R.random_element()\nsage: a.reduce([None,None])\n| Sage Version 4.4.1, Release Date: 2010-05-02                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\neno%\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8966\n\n",
     "created_at": "2010-05-14T18:18:46Z",
     "labels": [
         "algebra",
@@ -17,9 +17,9 @@ archive/issues_008966.json:
     "user": "mariah"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  malb polybori
+CC:  @malb polybori
 
 
 ```
@@ -61,7 +61,7 @@ archive/issue_comments_082636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8966#issuecomment-82636",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_082637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8966#issuecomment-82637",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_082638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8966#issuecomment-82638",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_082639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8966#issuecomment-82639",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_082640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8966#issuecomment-82640",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -146,16 +146,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082641.json:
 ```json
 {
-    "body": "Attachment [trac_8966-pbori_reduce.patch](tarball://root/attachments/some-uuid/ticket8966/trac_8966-pbori_reduce.patch) by was created at 2010-06-04 14:59:04",
+    "body": "Attachment [trac_8966-pbori_reduce.patch](tarball://root/attachments/some-uuid/ticket8966/trac_8966-pbori_reduce.patch) by @williamstein created at 2010-06-04 14:59:04",
     "created_at": "2010-06-04T14:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8966#issuecomment-82641",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8966-pbori_reduce.patch](tarball://root/attachments/some-uuid/ticket8966/trac_8966-pbori_reduce.patch) by was created at 2010-06-04 14:59:04
+Attachment [trac_8966-pbori_reduce.patch](tarball://root/attachments/some-uuid/ticket8966/trac_8966-pbori_reduce.patch) by @williamstein created at 2010-06-04 14:59:04
 
 
 
@@ -169,7 +169,7 @@ archive/issue_comments_082642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8966#issuecomment-82642",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_082643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8966",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8966#issuecomment-82643",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

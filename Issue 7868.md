@@ -3,7 +3,7 @@
 archive/issues_007868.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  cremona\n\nKeywords: fraction field, factorization\n\nThe following is a quote from John Cremona, \n\n    http://groups.google.com/group/sage-devel/browse_thread/thread/3638a91c0438f439\n\nI define a rational function in two variables over a finite field:\n\n\n```\nsage: R.<x,y> = GF(2)[]\nsage: f = x*y/(x+y)\nsage: f.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Finite\nField of size 2\n\n```\n\n\nI try to factor it, and get this error:\n\n\n```\nsage: f.factor()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/17587/_home_masgaj__sage_init_sage_0.py\nin <module>()\n\n/local/jec/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/rings/fraction_field_element.so\nin sage.rings.fraction_field_element.FractionFieldElement.factor\n(sage/rings/fraction_field_element.c:2972)()\n\n/local/jec/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so\nin sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.factor\n(sage/rings/polynomial/multi_polynomial_libsingular.cpp:22701)()\n\nNotImplementedError: proof = True factorization not implemented.  Call\nfactor with proof=False.\n\n```\n\n\nSo I do what I am told, but:\n\n\n```\nsage: f.factor(proof=False)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/17587/_home_masgaj__sage_init_sage_0.py\nin <module>()\n\nTypeError: factor() takes no keyword arguments\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7868\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nKeywords: fraction field, factorization\n\nThe following is a quote from John Cremona, \n\n    http://groups.google.com/group/sage-devel/browse_thread/thread/3638a91c0438f439\n\nI define a rational function in two variables over a finite field:\n\n\n```\nsage: R.<x,y> = GF(2)[]\nsage: f = x*y/(x+y)\nsage: f.parent()\nFraction Field of Multivariate Polynomial Ring in x, y over Finite\nField of size 2\n\n```\n\n\nI try to factor it, and get this error:\n\n\n```\nsage: f.factor()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/17587/_home_masgaj__sage_init_sage_0.py\nin <module>()\n\n/local/jec/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/rings/fraction_field_element.so\nin sage.rings.fraction_field_element.FractionFieldElement.factor\n(sage/rings/fraction_field_element.c:2972)()\n\n/local/jec/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so\nin sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.factor\n(sage/rings/polynomial/multi_polynomial_libsingular.cpp:22701)()\n\nNotImplementedError: proof = True factorization not implemented.  Call\nfactor with proof=False.\n\n```\n\n\nSo I do what I am told, but:\n\n\n```\nsage: f.factor(proof=False)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/17587/_home_masgaj__sage_init_sage_0.py\nin <module>()\n\nTypeError: factor() takes no keyword arguments\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7868\n\n",
     "created_at": "2010-01-07T17:07:43Z",
     "labels": [
         "algebra",
@@ -17,9 +17,9 @@ archive/issues_007868.json:
     "user": "spancratz"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  cremona
+CC:  @JohnCremona
 
 Keywords: fraction field, factorization
 
@@ -151,7 +151,7 @@ Sebastian
 archive/issue_comments_068241.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to spancratz.",
+    "body": "Changing assignee from @aghitza to spancratz.",
     "created_at": "2010-01-07T18:36:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
@@ -160,7 +160,7 @@ archive/issue_comments_068241.json:
 }
 ```
 
-Changing assignee from AlexGhitza to spancratz.
+Changing assignee from @aghitza to spancratz.
 
 
 
@@ -174,7 +174,7 @@ archive/issue_comments_068242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68242",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_068243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68243",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_068244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68244",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_068245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68245",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_068246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68246",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_068247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68247",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_068248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68248",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_068249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68249",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_068250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68250",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -331,16 +331,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_068251.json:
 ```json
 {
-    "body": "Attachment [7868-fix.patch](tarball://root/attachments/some-uuid/ticket7868/7868-fix.patch) by robertwb created at 2010-01-07 21:38:27\n\nreplaces previous",
+    "body": "Attachment [7868-fix.patch](tarball://root/attachments/some-uuid/ticket7868/7868-fix.patch) by @robertwb created at 2010-01-07 21:38:27\n\nreplaces previous",
     "created_at": "2010-01-07T21:38:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68251",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7868-fix.patch](tarball://root/attachments/some-uuid/ticket7868/7868-fix.patch) by robertwb created at 2010-01-07 21:38:27
+Attachment [7868-fix.patch](tarball://root/attachments/some-uuid/ticket7868/7868-fix.patch) by @robertwb created at 2010-01-07 21:38:27
 
 replaces previous
 
@@ -356,7 +356,7 @@ archive/issue_comments_068252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68252",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_068253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68253",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -387,16 +387,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068254.json:
 ```json
 {
-    "body": "Attachment [7868-fix.2.patch](tarball://root/attachments/some-uuid/ticket7868/7868-fix.2.patch) by cremona created at 2010-01-07 22:00:52\n\nreplaces previous",
+    "body": "Attachment [7868-fix.2.patch](tarball://root/attachments/some-uuid/ticket7868/7868-fix.2.patch) by @JohnCremona created at 2010-01-07 22:00:52\n\nreplaces previous",
     "created_at": "2010-01-07T22:00:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68254",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [7868-fix.2.patch](tarball://root/attachments/some-uuid/ticket7868/7868-fix.2.patch) by cremona created at 2010-01-07 22:00:52
+Attachment [7868-fix.2.patch](tarball://root/attachments/some-uuid/ticket7868/7868-fix.2.patch) by @JohnCremona created at 2010-01-07 22:00:52
 
 replaces previous
 
@@ -412,7 +412,7 @@ archive/issue_comments_068255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68255",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_068256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68256",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_068258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68258",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_068259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68259",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_068261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68261",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -548,16 +548,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_068262.json:
 ```json
 {
-    "body": "Attachment [trac7868_rb.patch](tarball://root/attachments/some-uuid/ticket7868/trac7868_rb.patch) by rlm created at 2010-01-19 20:04:27",
+    "body": "Attachment [trac7868_rb.patch](tarball://root/attachments/some-uuid/ticket7868/trac7868_rb.patch) by @rlmill created at 2010-01-19 20:04:27",
     "created_at": "2010-01-19T20:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68262",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac7868_rb.patch](tarball://root/attachments/some-uuid/ticket7868/trac7868_rb.patch) by rlm created at 2010-01-19 20:04:27
+Attachment [trac7868_rb.patch](tarball://root/attachments/some-uuid/ticket7868/trac7868_rb.patch) by @rlmill created at 2010-01-19 20:04:27
 
 
 
@@ -571,7 +571,7 @@ archive/issue_comments_068263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68263",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -589,7 +589,7 @@ archive/issue_comments_068264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7868#issuecomment-68264",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

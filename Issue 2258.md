@@ -3,7 +3,7 @@
 archive/issues_002258.json:
 ```json
 {
-    "body": "Assignee: yi\n\nCC:  timothyclemans\n\nKeywords: dsage\n\nCurrently the dsage documentation lies inside it's own module. It would be much better if it were included in the sage-doc package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2258\n\n",
+    "body": "Assignee: @yqiang\n\nCC:  timothyclemans\n\nKeywords: dsage\n\nCurrently the dsage documentation lies inside it's own module. It would be much better if it were included in the sage-doc package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2258\n\n",
     "created_at": "2008-02-22T16:49:28Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_002258.json:
     "title": "put dsage documentation into the main sage documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2258",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 CC:  timothyclemans
 
@@ -41,7 +41,7 @@ archive/issue_comments_014947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2258#issuecomment-14947",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_014948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2258#issuecomment-14948",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_014949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2258#issuecomment-14949",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_014953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2258#issuecomment-14953",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

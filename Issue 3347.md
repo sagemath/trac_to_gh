@@ -3,7 +3,7 @@
 archive/issues_003347.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nKeywords: tutorial\n\nI've been working on rewriting the tutorial, moving sections around, deleting things, adding things, etc.  I'm done with a first draft of the \"guided tour\" (chapter 2).  I'll try to get to the rest eventually.\n\nPlease let me know if I've deleted your very favorite section or something like that...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3347\n\n",
+    "body": "Assignee: @jhpalmieri\n\nKeywords: tutorial\n\nI've been working on rewriting the tutorial, moving sections around, deleting things, adding things, etc.  I'm done with a first draft of the \"guided tour\" (chapter 2).  I'll try to get to the rest eventually.\n\nPlease let me know if I've deleted your very favorite section or something like that...\n\nIssue created by migration from https://trac.sagemath.org/ticket/3347\n\n",
     "created_at": "2008-06-01T05:46:17Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_003347.json:
     "title": "[with patches, needs review] lots of changes to the tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3347",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 Keywords: tutorial
 
@@ -41,7 +41,7 @@ archive/issue_comments_023254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23254",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -54,16 +54,16 @@ new file macros-new.tex (this is a new version of macros.tex)
 archive/issue_comments_023255.json:
 ```json
 {
-    "body": "Attachment [3347-1.patch](tarball://root/attachments/some-uuid/ticket3347/3347-1.patch) by jhpalmieri created at 2008-06-01 05:55:07\n\nTwo additional comments: first, the file macros-new.tex is very similar to macros.tex, but I didn't want to break anything in the other parts of the documentation, so tut.tex now calls macros-new.tex while macros.tex is still intact.  The main difference here is that macros-new.tex contains the line \\usepackage{html}, which allows for the use of commands which are parsed one way when the file is run through latex (or pdflatex), and another way when run through latex2html.  It also defines a few commands which rely on this.\n\nSecond, when I was editing the tutorial and running 'make tut' and 'make paper-letter/tut.pdf', for some reason the .aux file wasn't being regenerated, so it kept building with the old .aux file.  This screwed up all of the cross-references.  I don't know if this has to do with my set-up, but if not, be warned that you might get errors unless you do something like (1) manually set TEXINPUTS to be the right thing, and then (2) going to doc/tut/ and running 'pdflatex tut' a few times to update the .aux file.  (You might also want to run 'makeindex tut' while you're there, just for kicks.)",
+    "body": "Attachment [3347-1.patch](tarball://root/attachments/some-uuid/ticket3347/3347-1.patch) by @jhpalmieri created at 2008-06-01 05:55:07\n\nTwo additional comments: first, the file macros-new.tex is very similar to macros.tex, but I didn't want to break anything in the other parts of the documentation, so tut.tex now calls macros-new.tex while macros.tex is still intact.  The main difference here is that macros-new.tex contains the line \\usepackage{html}, which allows for the use of commands which are parsed one way when the file is run through latex (or pdflatex), and another way when run through latex2html.  It also defines a few commands which rely on this.\n\nSecond, when I was editing the tutorial and running 'make tut' and 'make paper-letter/tut.pdf', for some reason the .aux file wasn't being regenerated, so it kept building with the old .aux file.  This screwed up all of the cross-references.  I don't know if this has to do with my set-up, but if not, be warned that you might get errors unless you do something like (1) manually set TEXINPUTS to be the right thing, and then (2) going to doc/tut/ and running 'pdflatex tut' a few times to update the .aux file.  (You might also want to run 'makeindex tut' while you're there, just for kicks.)",
     "created_at": "2008-06-01T05:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23255",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [3347-1.patch](tarball://root/attachments/some-uuid/ticket3347/3347-1.patch) by jhpalmieri created at 2008-06-01 05:55:07
+Attachment [3347-1.patch](tarball://root/attachments/some-uuid/ticket3347/3347-1.patch) by @jhpalmieri created at 2008-06-01 05:55:07
 
 Two additional comments: first, the file macros-new.tex is very similar to macros.tex, but I didn't want to break anything in the other parts of the documentation, so tut.tex now calls macros-new.tex while macros.tex is still intact.  The main difference here is that macros-new.tex contains the line \usepackage{html}, which allows for the use of commands which are parsed one way when the file is run through latex (or pdflatex), and another way when run through latex2html.  It also defines a few commands which rely on this.
 
@@ -142,7 +142,7 @@ archive/issue_comments_023258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23258",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -175,16 +175,16 @@ If you think it's okay with these parts missing, and if you think that this mate
 archive/issue_comments_023259.json:
 ```json
 {
-    "body": "Attachment [3347-2.patch](tarball://root/attachments/some-uuid/ticket3347/3347-2.patch) by jhpalmieri created at 2008-06-02 19:09:20\n\nchanges to tutorial (large!)",
+    "body": "Attachment [3347-2.patch](tarball://root/attachments/some-uuid/ticket3347/3347-2.patch) by @jhpalmieri created at 2008-06-02 19:09:20\n\nchanges to tutorial (large!)",
     "created_at": "2008-06-02T19:09:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23259",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [3347-2.patch](tarball://root/attachments/some-uuid/ticket3347/3347-2.patch) by jhpalmieri created at 2008-06-02 19:09:20
+Attachment [3347-2.patch](tarball://root/attachments/some-uuid/ticket3347/3347-2.patch) by @jhpalmieri created at 2008-06-02 19:09:20
 
 changes to tutorial (large!)
 
@@ -218,7 +218,7 @@ archive/issue_comments_023261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23261",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_023262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23262",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_023263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23263",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_023264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23264",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_023265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23265",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_023266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23266",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -360,16 +360,16 @@ margin overruns, Sage banner, etc.  Use this patch in addition to the earlier on
 archive/issue_comments_023267.json:
 ```json
 {
-    "body": "Attachment [3347-3.patch](tarball://root/attachments/some-uuid/ticket3347/3347-3.patch) by jhpalmieri created at 2008-06-11 20:17:10\n\nThe latest version of the file '3347-2-with-dsage.patch' just fixes a few typos that I'd made in earlier versions.",
+    "body": "Attachment [3347-3.patch](tarball://root/attachments/some-uuid/ticket3347/3347-3.patch) by @jhpalmieri created at 2008-06-11 20:17:10\n\nThe latest version of the file '3347-2-with-dsage.patch' just fixes a few typos that I'd made in earlier versions.",
     "created_at": "2008-06-11T20:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23267",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [3347-3.patch](tarball://root/attachments/some-uuid/ticket3347/3347-3.patch) by jhpalmieri created at 2008-06-11 20:17:10
+Attachment [3347-3.patch](tarball://root/attachments/some-uuid/ticket3347/3347-3.patch) by @jhpalmieri created at 2008-06-11 20:17:10
 
 The latest version of the file '3347-2-with-dsage.patch' just fixes a few typos that I'd made in earlier versions.
 
@@ -385,7 +385,7 @@ archive/issue_comments_023268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23268",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -398,16 +398,16 @@ changes to tutorial (large!) -- this includes the DSAGE section, and replaces th
 archive/issue_comments_023269.json:
 ```json
 {
-    "body": "Attachment [3347-2-with-dsage.patch](tarball://root/attachments/some-uuid/ticket3347/3347-2-with-dsage.patch) by craigcitro created at 2008-06-15 21:50:34",
+    "body": "Attachment [3347-2-with-dsage.patch](tarball://root/attachments/some-uuid/ticket3347/3347-2-with-dsage.patch) by @craigcitro created at 2008-06-15 21:50:34",
     "created_at": "2008-06-15T21:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23269",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [3347-2-with-dsage.patch](tarball://root/attachments/some-uuid/ticket3347/3347-2-with-dsage.patch) by craigcitro created at 2008-06-15 21:50:34
+Attachment [3347-2-with-dsage.patch](tarball://root/attachments/some-uuid/ticket3347/3347-2-with-dsage.patch) by @craigcitro created at 2008-06-15 21:50:34
 
 
 
@@ -421,7 +421,7 @@ archive/issue_comments_023270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23270",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_023271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23271",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_023272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23272",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -472,16 +472,16 @@ Sorry.  Apply *3347-1.patch* and *3347-2-with-dsage.patch* first (these two are 
 archive/issue_comments_023273.json:
 ```json
 {
-    "body": "Attachment [3347-new.patch](tarball://root/attachments/some-uuid/ticket3347/3347-new.patch) by jhpalmieri created at 2008-06-19 20:52:43\n\nuse 3347-1.patch and this patch (against tutorial from sage 3.0.3)",
+    "body": "Attachment [3347-new.patch](tarball://root/attachments/some-uuid/ticket3347/3347-new.patch) by @jhpalmieri created at 2008-06-19 20:52:43\n\nuse 3347-1.patch and this patch (against tutorial from sage 3.0.3)",
     "created_at": "2008-06-19T20:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23273",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [3347-new.patch](tarball://root/attachments/some-uuid/ticket3347/3347-new.patch) by jhpalmieri created at 2008-06-19 20:52:43
+Attachment [3347-new.patch](tarball://root/attachments/some-uuid/ticket3347/3347-new.patch) by @jhpalmieri created at 2008-06-19 20:52:43
 
 use 3347-1.patch and this patch (against tutorial from sage 3.0.3)
 
@@ -497,7 +497,7 @@ archive/issue_comments_023274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23274",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -512,16 +512,16 @@ I think the issue before was that my patch was built against the tutorial in sag
 archive/issue_comments_023275.json:
 ```json
 {
-    "body": "Attachment [3347.patch](tarball://root/attachments/some-uuid/ticket3347/3347.patch) by mhansen created at 2008-06-19 20:59:23",
+    "body": "Attachment [3347.patch](tarball://root/attachments/some-uuid/ticket3347/3347.patch) by @mwhansen created at 2008-06-19 20:59:23",
     "created_at": "2008-06-19T20:59:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23275",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [3347.patch](tarball://root/attachments/some-uuid/ticket3347/3347.patch) by mhansen created at 2008-06-19 20:59:23
+Attachment [3347.patch](tarball://root/attachments/some-uuid/ticket3347/3347.patch) by @mwhansen created at 2008-06-19 20:59:23
 
 
 
@@ -535,7 +535,7 @@ archive/issue_comments_023276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3347#issuecomment-23276",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

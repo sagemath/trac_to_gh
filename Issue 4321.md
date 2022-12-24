@@ -14,7 +14,7 @@ archive/issues_004321.json:
     "title": "wrong Unix permissions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4321",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: mabshoff
@@ -237,7 +237,7 @@ archive/issue_comments_031658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4321#issuecomment-31658",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_031661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4321#issuecomment-31661",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

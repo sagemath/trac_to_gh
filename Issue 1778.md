@@ -3,7 +3,7 @@
 archive/issues_001778.json:
 ```json
 {
-    "body": "Assignee: moretti\n\nKeywords: plotting, plot3d, plot\n\nsage: plot3d(x^2 + y^2, (x,-2,2), (y,-2,2))\n\nis valid, however, to do a 2d plot, you use the syntax\n\nsage: plot(x^2, x, -2, 2).\n\nI spoke with William about this, he wants to deprecate the plot(x^2, -2, 2) syntax for 2d plotting and introduce a new preferred syntax:\n\nsage: plot(x^2, (x, -2, 2))\n\nIssue created by migration from https://trac.sagemath.org/ticket/1778\n\n",
+    "body": "Assignee: @bobmoretti\n\nKeywords: plotting, plot3d, plot\n\nsage: plot3d(x^2 + y^2, (x,-2,2), (y,-2,2))\n\nis valid, however, to do a 2d plot, you use the syntax\n\nsage: plot(x^2, x, -2, 2).\n\nI spoke with William about this, he wants to deprecate the plot(x^2, -2, 2) syntax for 2d plotting and introduce a new preferred syntax:\n\nsage: plot(x^2, (x, -2, 2))\n\nIssue created by migration from https://trac.sagemath.org/ticket/1778\n\n",
     "created_at": "2008-01-14T22:58:12Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001778.json:
     "title": "plot() does not follow the same interval range conventions as plot3d()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1778",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
-Assignee: moretti
+Assignee: @bobmoretti
 
 Keywords: plotting, plot3d, plot
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1778
 archive/issue_comments_011254.json:
 ```json
 {
-    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket1778/plot.patch) by moretti created at 2008-01-15 00:24:10\n\nIgnore the previous patch, it does not have all the required changes.",
+    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket1778/plot.patch) by @bobmoretti created at 2008-01-15 00:24:10\n\nIgnore the previous patch, it does not have all the required changes.",
     "created_at": "2008-01-15T00:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11254",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
-Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket1778/plot.patch) by moretti created at 2008-01-15 00:24:10
+Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket1778/plot.patch) by @bobmoretti created at 2008-01-15 00:24:10
 
 Ignore the previous patch, it does not have all the required changes.
 
@@ -62,16 +62,16 @@ Ignore the previous patch, it does not have all the required changes.
 archive/issue_comments_011255.json:
 ```json
 {
-    "body": "Attachment [plot.hg](tarball://root/attachments/some-uuid/ticket1778/plot.hg) by moretti created at 2008-01-15 00:24:36",
+    "body": "Attachment [plot.hg](tarball://root/attachments/some-uuid/ticket1778/plot.hg) by @bobmoretti created at 2008-01-15 00:24:36",
     "created_at": "2008-01-15T00:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11255",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
-Attachment [plot.hg](tarball://root/attachments/some-uuid/ticket1778/plot.hg) by moretti created at 2008-01-15 00:24:36
+Attachment [plot.hg](tarball://root/attachments/some-uuid/ticket1778/plot.hg) by @bobmoretti created at 2008-01-15 00:24:36
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_011256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11256",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_011257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11257",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_011258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11258",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_011259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11259",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -168,16 +168,16 @@ It turns out the `plot(sin(2), (x,0,10*pi))` problem above was a really genuine 
 archive/issue_comments_011260.json:
 ```json
 {
-    "body": "Attachment [trac-1778-referee.patch](tarball://root/attachments/some-uuid/ticket1778/trac-1778-referee.patch) by was created at 2008-01-15 06:20:29\n\napply the hg bundle that bobby posted, then apply this plain text patch which fixes one serious bug.",
+    "body": "Attachment [trac-1778-referee.patch](tarball://root/attachments/some-uuid/ticket1778/trac-1778-referee.patch) by @williamstein created at 2008-01-15 06:20:29\n\napply the hg bundle that bobby posted, then apply this plain text patch which fixes one serious bug.",
     "created_at": "2008-01-15T06:20:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11260",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1778-referee.patch](tarball://root/attachments/some-uuid/ticket1778/trac-1778-referee.patch) by was created at 2008-01-15 06:20:29
+Attachment [trac-1778-referee.patch](tarball://root/attachments/some-uuid/ticket1778/trac-1778-referee.patch) by @williamstein created at 2008-01-15 06:20:29
 
 apply the hg bundle that bobby posted, then apply this plain text patch which fixes one serious bug.
 
@@ -193,7 +193,7 @@ archive/issue_comments_011261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1778#issuecomment-11261",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

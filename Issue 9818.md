@@ -3,7 +3,7 @@
 archive/issues_009818.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: lcm, gcd, fields\n\nFor the case of field elements gcd and lcm methods are not of great interest. However, they can be addecuated for some reasons.\n\n- Some algorithms may accept as input either polynomials or rational functions. In these algorithms we may reduce a list of polynomials and rational functions to a common denominator. If all the inputs are polynomials, the denominators are the one element of the base field. In this case, lcm would fail.\n\nSee #9063 for a case of this problem.\n\n- Rational numbers already have custom gcd and lcm methods.\n\n-It would erase the following problem. Currently, if we are dealing with elements in a finite field, the gcd of the elements can be computed sometimes coercing to the integers and doing computations. This lead to inconsistencies.\n\n\n```\nsage: a=F(2)\nsage: gcd(a,a)\n2\nsage: gcd(a,p)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/luisfe/Varios/Comprobantes-gastos/<ipython console> in <module>()\n\n/opt/SAGE/sage-4.5.2/local/lib/python2.6/site-packages/sage/rings/arith.pyc in gcd(a, b, **kwargs)\n   1423                 return ZZ(a).gcd(ZZ(b))\n   1424             except TypeError:\n-> 1425                 raise TypeError, \"unable to find gcd of %s and %s\"%(a,b)\n   1426     \n   1427     from sage.structure.sequence import Sequence\n\nTypeError: unable to find gcd of 2 and p\n```\n\n\nI propose the following:\n\n- For gcd, follow the convention of the rational cesa. If both elements are 0, return 0 (on the appropriate field). Otherwise return 1\n\n- For lcm, if one of the elements is zero, return zero. Otherwise return 1.\n\n#9063 depends on this bug to be merged.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9819\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: lcm, gcd, fields\n\nFor the case of field elements gcd and lcm methods are not of great interest. However, they can be addecuated for some reasons.\n\n- Some algorithms may accept as input either polynomials or rational functions. In these algorithms we may reduce a list of polynomials and rational functions to a common denominator. If all the inputs are polynomials, the denominators are the one element of the base field. In this case, lcm would fail.\n\nSee #9063 for a case of this problem.\n\n- Rational numbers already have custom gcd and lcm methods.\n\n-It would erase the following problem. Currently, if we are dealing with elements in a finite field, the gcd of the elements can be computed sometimes coercing to the integers and doing computations. This lead to inconsistencies.\n\n\n```\nsage: a=F(2)\nsage: gcd(a,a)\n2\nsage: gcd(a,p)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/luisfe/Varios/Comprobantes-gastos/<ipython console> in <module>()\n\n/opt/SAGE/sage-4.5.2/local/lib/python2.6/site-packages/sage/rings/arith.pyc in gcd(a, b, **kwargs)\n   1423                 return ZZ(a).gcd(ZZ(b))\n   1424             except TypeError:\n-> 1425                 raise TypeError, \"unable to find gcd of %s and %s\"%(a,b)\n   1426     \n   1427     from sage.structure.sequence import Sequence\n\nTypeError: unable to find gcd of 2 and p\n```\n\n\nI propose the following:\n\n- For gcd, follow the convention of the rational cesa. If both elements are 0, return 0 (on the appropriate field). Otherwise return 1\n\n- For lcm, if one of the elements is zero, return zero. Otherwise return 1.\n\n#9063 depends on this bug to be merged.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9819\n\n",
     "created_at": "2010-08-27T10:55:25Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009818.json:
     "title": "Add a default gcd and lcm methods for fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9818",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: lcm, gcd, fields
 
@@ -77,7 +77,7 @@ archive/issue_comments_096816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9818#issuecomment-96816",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_096817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9818#issuecomment-96817",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_096818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9818#issuecomment-96818",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_096819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9818#issuecomment-96819",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_096820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9818#issuecomment-96820",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_096821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9818#issuecomment-96821",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_096822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9818#issuecomment-96822",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_096823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9818#issuecomment-96823",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_096824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9818#issuecomment-96824",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

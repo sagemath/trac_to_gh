@@ -3,7 +3,7 @@
 archive/issues_008137.json:
 ```json
 {
-    "body": "Assignee: Kevin Stueve\n\nCC:  leif\n\nGet Thomas R. Nicely's code for approximating the counts of twin primes and other primes into Sage.\n\nThe code can be found at http://www.trnicely.net/.\n\nSage already has a Li implementation, so all that needs to be added to Sage is code for the twin primes, prime triplets, and prime quadruplets.  However, Sage's default Li implementation uses direct numerical integration.  Maybe this should be switched out for an equivalent (and faster) series implementation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8137\n\n",
+    "body": "Assignee: Kevin Stueve\n\nCC:  @nexttime\n\nGet Thomas R. Nicely's code for approximating the counts of twin primes and other primes into Sage.\n\nThe code can be found at http://www.trnicely.net/.\n\nSage already has a Li implementation, so all that needs to be added to Sage is code for the twin primes, prime triplets, and prime quadruplets.  However, Sage's default Li implementation uses direct numerical integration.  Maybe this should be switched out for an equivalent (and faster) series implementation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8137\n\n",
     "created_at": "2010-01-31T07:42:26Z",
     "labels": [
         "number theory",
@@ -18,7 +18,7 @@ archive/issues_008137.json:
 ```
 Assignee: Kevin Stueve
 
-CC:  leif
+CC:  @nexttime
 
 Get Thomas R. Nicely's code for approximating the counts of twin primes and other primes into Sage.
 
@@ -66,7 +66,7 @@ archive/issue_comments_071557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8137",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8137#issuecomment-71557",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

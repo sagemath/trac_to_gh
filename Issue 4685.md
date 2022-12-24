@@ -3,7 +3,7 @@
 archive/issues_004685.json:
 ```json
 {
-    "body": "Assignee: schilly\n\nAt http://sagemath.org/development-map.html we have the \"US (East, West, UW)\" and \"Europe\", but we are missing \"South America\", \"Asia\" and \"Australia\". Sine we are in the processing of adding quite a number of people to Australia as well as another person to Korea it would be good to add those links. \n\nAdding the people itself is #4682. \n\nI am opening these tickets so Harald gets proper credit for his work on the website :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4685\n\n",
+    "body": "Assignee: @haraldschilly\n\nAt http://sagemath.org/development-map.html we have the \"US (East, West, UW)\" and \"Europe\", but we are missing \"South America\", \"Asia\" and \"Australia\". Sine we are in the processing of adding quite a number of people to Australia as well as another person to Korea it would be good to add those links. \n\nAdding the people itself is #4682. \n\nI am opening these tickets so Harald gets proper credit for his work on the website :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4685\n\n",
     "created_at": "2008-12-03T06:39:01Z",
     "labels": [
         "website/wiki",
@@ -17,7 +17,7 @@ archive/issues_004685.json:
     "user": "mabshoff"
 }
 ```
-Assignee: schilly
+Assignee: @haraldschilly
 
 At http://sagemath.org/development-map.html we have the "US (East, West, UW)" and "Europe", but we are missing "South America", "Asia" and "Australia". Sine we are in the processing of adding quite a number of people to Australia as well as another person to Korea it would be good to add those links. 
 
@@ -45,7 +45,7 @@ archive/issue_comments_035314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4685#issuecomment-35314",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_035315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4685#issuecomment-35315",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_035316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4685#issuecomment-35316",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_035321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4685#issuecomment-35321",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

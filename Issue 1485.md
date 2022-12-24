@@ -3,7 +3,7 @@
 archive/issues_001485.json:
 ```json
 {
-    "body": "Assignee: malb\n\nWraps Singular's invariant_algebra_reynolds and invariant_ring in finvar.lib, with help from Simon King and Martin Albrecht. Computes generators for the polynomial ring F[x1,...,xn]^G, where G in GL(n,F) is a finite matrix group.\n\nIn the \"good characteristic\" case the polynomials returned form a minimal generating set for the algebra of G-invariant polynomials. In the \"bad\" case, the polynomials returned are primary and secondary invariants, forming a not necessarily minimal generating set for the algebra of G-invariant polynomials.\n\nPatch is at\nhttp://sage.math.washington.edu/home/wdj/patches/matrix_group20071213.hg\nand file is at\nhttp://sage.math.washington.edu/home/wdj/patches/matrix_group.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/1485\n\n",
+    "body": "Assignee: @malb\n\nWraps Singular's invariant_algebra_reynolds and invariant_ring in finvar.lib, with help from Simon King and Martin Albrecht. Computes generators for the polynomial ring F[x1,...,xn]^G, where G in GL(n,F) is a finite matrix group.\n\nIn the \"good characteristic\" case the polynomials returned form a minimal generating set for the algebra of G-invariant polynomials. In the \"bad\" case, the polynomials returned are primary and secondary invariants, forming a not necessarily minimal generating set for the algebra of G-invariant polynomials.\n\nPatch is at\nhttp://sage.math.washington.edu/home/wdj/patches/matrix_group20071213.hg\nand file is at\nhttp://sage.math.washington.edu/home/wdj/patches/matrix_group.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/1485\n\n",
     "created_at": "2007-12-13T12:30:16Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001485.json:
     "title": "wrapper for invariant_ring and invariant_algebra_reynolds in Singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1485",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Wraps Singular's invariant_algebra_reynolds and invariant_ring in finvar.lib, with help from Simon King and Martin Albrecht. Computes generators for the polynomial ring F[x1,...,xn]^G, where G in GL(n,F) is a finite matrix group.
 
@@ -44,7 +44,7 @@ archive/issue_comments_009562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1485#issuecomment-9562",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -58,16 +58,16 @@ but does not resolve that issue.
 archive/issue_comments_009563.json:
 ```json
 {
-    "body": "Attachment [matrix_group20071213.hg](tarball://root/attachments/some-uuid/ticket1485/matrix_group20071213.hg) by malb created at 2008-01-16 16:34:19\n\nThe patch applies cleanly and the doctests pass. I cannot check the results due to lack of knowledge, though. Good to go in, if you ask me.",
+    "body": "Attachment [matrix_group20071213.hg](tarball://root/attachments/some-uuid/ticket1485/matrix_group20071213.hg) by @malb created at 2008-01-16 16:34:19\n\nThe patch applies cleanly and the doctests pass. I cannot check the results due to lack of knowledge, though. Good to go in, if you ask me.",
     "created_at": "2008-01-16T16:34:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1485#issuecomment-9563",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [matrix_group20071213.hg](tarball://root/attachments/some-uuid/ticket1485/matrix_group20071213.hg) by malb created at 2008-01-16 16:34:19
+Attachment [matrix_group20071213.hg](tarball://root/attachments/some-uuid/ticket1485/matrix_group20071213.hg) by @malb created at 2008-01-16 16:34:19
 
 The patch applies cleanly and the doctests pass. I cannot check the results due to lack of knowledge, though. Good to go in, if you ask me.
 
@@ -199,7 +199,7 @@ archive/issue_comments_009570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1485#issuecomment-9570",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -212,16 +212,16 @@ Changing status from reopened to new.
 archive/issue_comments_009571.json:
 ```json
 {
-    "body": "Changing assignee from malb to wdj.",
+    "body": "Changing assignee from @malb to @wdjoyner.",
     "created_at": "2008-01-18T16:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1485#issuecomment-9571",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from malb to wdj.
+Changing assignee from @malb to @wdjoyner.
 
 
 

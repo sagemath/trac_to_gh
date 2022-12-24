@@ -14,7 +14,7 @@ archive/issues_007049.json:
     "title": "[with SPKG, needs review] GLPK, just minor changes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7049",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: tbd
@@ -43,7 +43,7 @@ archive/issue_comments_058354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7049#issuecomment-58354",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_058357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7049#issuecomment-58357",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

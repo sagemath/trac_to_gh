@@ -3,7 +3,7 @@
 archive/issues_002315.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe union function of graphs doesn't do what its docstring says.\n\nDocstring:\n\n\"union(self, other)\n\nReturns the union of self and other.\nIf there are common vertices to both, they will be renamed.\"\n\nExecuting the example from the docstring shows that the description is wrong. Here are the graphs:\n\n```\nsage: D = graphs.DodecahedralGraph();D\nDodecahedron: Graph on 20 vertices\nsage: P = graphs.PetersenGraph();P\nPetersen graph: Graph on 10 vertices\n```\n\nBut the union returns a graph on 20 vertices\n\n```\nsage: D.union(P)\nGraph on 20 vertices\n```\n\nbut i expect it should return a graph on 30 vertices.\n\nSo either the function or the dostring is wrong.\n\nThere are two possible ways to deal with this problem:\n\n1.) Keep this one but rename it to \"nondisjoint_union\" (and correct the docstring of course),\nand code the right \"union\" function.\n\n2.) Correct the docstring of this one, and code a \"disjoint_union\".\n\nIn #sage-devel mhansen and i agreed that this union function is supposed to do a disjoint union, so 1.) should be the way. But that's maybe up to discussion.\n\n-vgermrk-\n\nIssue created by migration from https://trac.sagemath.org/ticket/2315\n\n",
+    "body": "Assignee: @rlmill\n\nThe union function of graphs doesn't do what its docstring says.\n\nDocstring:\n\n\"union(self, other)\n\nReturns the union of self and other.\nIf there are common vertices to both, they will be renamed.\"\n\nExecuting the example from the docstring shows that the description is wrong. Here are the graphs:\n\n```\nsage: D = graphs.DodecahedralGraph();D\nDodecahedron: Graph on 20 vertices\nsage: P = graphs.PetersenGraph();P\nPetersen graph: Graph on 10 vertices\n```\n\nBut the union returns a graph on 20 vertices\n\n```\nsage: D.union(P)\nGraph on 20 vertices\n```\n\nbut i expect it should return a graph on 30 vertices.\n\nSo either the function or the dostring is wrong.\n\nThere are two possible ways to deal with this problem:\n\n1.) Keep this one but rename it to \"nondisjoint_union\" (and correct the docstring of course),\nand code the right \"union\" function.\n\n2.) Correct the docstring of this one, and code a \"disjoint_union\".\n\nIn #sage-devel mhansen and i agreed that this union function is supposed to do a disjoint union, so 1.) should be the way. But that's maybe up to discussion.\n\n-vgermrk-\n\nIssue created by migration from https://trac.sagemath.org/ticket/2315\n\n",
     "created_at": "2008-02-26T12:34:23Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002315.json:
     "title": "Union of Graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2315",
-    "user": "vgermrk"
+    "user": "@m-r-k"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The union function of graphs doesn't do what its docstring says.
 
@@ -75,7 +75,7 @@ archive/issue_comments_015405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2315#issuecomment-15405",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -88,16 +88,16 @@ Whenever I hear "union", I think "disjoint union" (at least as far as graphs go)
 archive/issue_comments_015406.json:
 ```json
 {
-    "body": "Attachment [graph_union.patch](tarball://root/attachments/some-uuid/ticket2315/graph_union.patch) by jason created at 2008-02-26 22:51:59",
+    "body": "Attachment [graph_union.patch](tarball://root/attachments/some-uuid/ticket2315/graph_union.patch) by @jasongrout created at 2008-02-26 22:51:59",
     "created_at": "2008-02-26T22:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2315#issuecomment-15406",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [graph_union.patch](tarball://root/attachments/some-uuid/ticket2315/graph_union.patch) by jason created at 2008-02-26 22:51:59
+Attachment [graph_union.patch](tarball://root/attachments/some-uuid/ticket2315/graph_union.patch) by @jasongrout created at 2008-02-26 22:51:59
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_015407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2315#issuecomment-15407",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_015408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2315#issuecomment-15408",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_015409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2315#issuecomment-15409",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_015410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2315#issuecomment-15410",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -210,16 +210,16 @@ apply on top of the first patch
 archive/issue_comments_015411.json:
 ```json
 {
-    "body": "Attachment [graph-union2.patch](tarball://root/attachments/some-uuid/ticket2315/graph-union2.patch) by jason created at 2008-02-27 20:55:42\n\nThe graph-union2.patch takes care of the recommendations.  This now depends on the patch at #2283 to work correctly (otherwise 3*G will still return an error because 3 == Integer(3) at the Sage command line).",
+    "body": "Attachment [graph-union2.patch](tarball://root/attachments/some-uuid/ticket2315/graph-union2.patch) by @jasongrout created at 2008-02-27 20:55:42\n\nThe graph-union2.patch takes care of the recommendations.  This now depends on the patch at #2283 to work correctly (otherwise 3*G will still return an error because 3 == Integer(3) at the Sage command line).",
     "created_at": "2008-02-27T20:55:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2315#issuecomment-15411",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [graph-union2.patch](tarball://root/attachments/some-uuid/ticket2315/graph-union2.patch) by jason created at 2008-02-27 20:55:42
+Attachment [graph-union2.patch](tarball://root/attachments/some-uuid/ticket2315/graph-union2.patch) by @jasongrout created at 2008-02-27 20:55:42
 
 The graph-union2.patch takes care of the recommendations.  This now depends on the patch at #2283 to work correctly (otherwise 3*G will still return an error because 3 == Integer(3) at the Sage command line).
 

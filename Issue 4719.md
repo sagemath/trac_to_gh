@@ -3,7 +3,7 @@
 archive/issues_004719.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  gfurnish\n\nKeywords: doctests\n\nThe doctest module in 3.2.2.alpha0 seems to report *all* failed doctests as \"A mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\" This occurs even when the failure is a very simple one:\n\n\n```\ndef bad_docstring():\n        r\"\"\" A function with a bogus docstring.\n\n        EXAMPLES:\n                sage: 2\n                1\n        \"\"\"\n        pass\n```\n\n\nRunning \"sage -t\" on a file containing only the above code returns a \"mysterious error\", both on 32-bit SuSE (upgraded from 3.2.1) and on the sage.math binary. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4719\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @garyfurnish\n\nKeywords: doctests\n\nThe doctest module in 3.2.2.alpha0 seems to report *all* failed doctests as \"A mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\" This occurs even when the failure is a very simple one:\n\n\n```\ndef bad_docstring():\n        r\"\"\" A function with a bogus docstring.\n\n        EXAMPLES:\n                sage: 2\n                1\n        \"\"\"\n        pass\n```\n\n\nRunning \"sage -t\" on a file containing only the above code returns a \"mysterious error\", both on 32-bit SuSE (upgraded from 3.2.1) and on the sage.math binary. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4719\n\n",
     "created_at": "2008-12-05T21:00:20Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_004719.json:
     "title": "Doctests report mysterious errors instead of ordinary failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4719",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 Assignee: mabshoff
 
-CC:  gfurnish
+CC:  @garyfurnish
 
 Keywords: doctests
 
@@ -73,16 +73,16 @@ Michael
 archive/issue_comments_035596.json:
 ```json
 {
-    "body": "Attachment [trac_4719_bin.patch](tarball://root/attachments/some-uuid/ticket4719/trac_4719_bin.patch) by gfurnish created at 2008-12-06 03:23:09\n\nFailing doctests should now fail correctly.",
+    "body": "Attachment [trac_4719_bin.patch](tarball://root/attachments/some-uuid/ticket4719/trac_4719_bin.patch) by @garyfurnish created at 2008-12-06 03:23:09\n\nFailing doctests should now fail correctly.",
     "created_at": "2008-12-06T03:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4719#issuecomment-35596",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_4719_bin.patch](tarball://root/attachments/some-uuid/ticket4719/trac_4719_bin.patch) by gfurnish created at 2008-12-06 03:23:09
+Attachment [trac_4719_bin.patch](tarball://root/attachments/some-uuid/ticket4719/trac_4719_bin.patch) by @garyfurnish created at 2008-12-06 03:23:09
 
 Failing doctests should now fail correctly.
 
@@ -98,7 +98,7 @@ archive/issue_comments_035597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4719#issuecomment-35597",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -111,16 +111,16 @@ Changing status from new to assigned.
 archive/issue_comments_035598.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to gfurnish.",
+    "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-12-06T03:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4719#issuecomment-35598",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from mabshoff to gfurnish.
+Changing assignee from mabshoff to @garyfurnish.
 
 
 

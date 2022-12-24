@@ -3,7 +3,7 @@
 archive/issues_008362.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  nborie nthiery\n\nThere is a typo in the doc of `cardinality` function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8362\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  nborie @nthiery\n\nThere is a typo in the doc of `cardinality` function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8362\n\n",
     "created_at": "2010-02-25T13:31:02Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008362.json:
     "title": "Fix typo in documentation of Disjoint Union of Enumerated Sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8362",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
-CC:  nborie nthiery
+CC:  nborie @nthiery
 
 There is a typo in the doc of `cardinality` function.
 
@@ -57,7 +57,7 @@ archive/issue_comments_074718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74718",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_074719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74719",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_074720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74720",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -135,16 +135,16 @@ The commit message is nonsensical:
 archive/issue_comments_074722.json:
 ```json
 {
-    "body": "Attachment [trac_8362_doc_fix-sl.patch](tarball://root/attachments/some-uuid/ticket8362/trac_8362_doc_fix-sl.patch) by slabbe created at 2010-02-26 15:50:44",
+    "body": "Attachment [trac_8362_doc_fix-sl.patch](tarball://root/attachments/some-uuid/ticket8362/trac_8362_doc_fix-sl.patch) by @seblabbe created at 2010-02-26 15:50:44",
     "created_at": "2010-02-26T15:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74722",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8362_doc_fix-sl.patch](tarball://root/attachments/some-uuid/ticket8362/trac_8362_doc_fix-sl.patch) by slabbe created at 2010-02-26 15:50:44
+Attachment [trac_8362_doc_fix-sl.patch](tarball://root/attachments/some-uuid/ticket8362/trac_8362_doc_fix-sl.patch) by @seblabbe created at 2010-02-26 15:50:44
 
 
 
@@ -158,7 +158,7 @@ archive/issue_comments_074723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74723",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 

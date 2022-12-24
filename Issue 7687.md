@@ -14,7 +14,7 @@ archive/issues_007687.json:
     "title": "Remove leonconv binary from gap spkg (guava pkg).",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7687",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -52,7 +52,7 @@ archive/issue_comments_065964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7687#issuecomment-65964",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_065965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7687#issuecomment-65965",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_065966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7687#issuecomment-65966",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_065967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7687#issuecomment-65967",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

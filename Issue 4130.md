@@ -14,7 +14,7 @@ archive/issues_004130.json:
     "title": "#4125 does not work on OS X 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4130",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: mabshoff

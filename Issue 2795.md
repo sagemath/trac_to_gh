@@ -3,7 +3,7 @@
 archive/issues_002795.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: magma\n\n\n```\nsage: P.<x,y> = PolynomialRing(GF(2))\nsage: Q = P.quotient(sage.rings.ideal.FieldIdeal(P))\nsage: xbar, ybar = Q.gens()\nsage: xbar._magma_() # optional requires magma\nx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2795\n\n",
+    "body": "Assignee: @malb\n\nKeywords: magma\n\n\n```\nsage: P.<x,y> = PolynomialRing(GF(2))\nsage: Q = P.quotient(sage.rings.ideal.FieldIdeal(P))\nsage: xbar, ybar = Q.gens()\nsage: xbar._magma_() # optional requires magma\nx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2795\n\n",
     "created_at": "2008-04-04T11:21:03Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002795.json:
     "title": "[with patch,needs review] QuotientRing -> Magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2795",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: magma
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2795
 archive/issue_comments_019189.json:
 ```json
 {
-    "body": "Attachment [qring_2_magma.patch](tarball://root/attachments/some-uuid/ticket2795/qring_2_magma.patch) by mhansen created at 2008-04-04 19:53:01\n\nLooks good to me.",
+    "body": "Attachment [qring_2_magma.patch](tarball://root/attachments/some-uuid/ticket2795/qring_2_magma.patch) by @mwhansen created at 2008-04-04 19:53:01\n\nLooks good to me.",
     "created_at": "2008-04-04T19:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19189",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [qring_2_magma.patch](tarball://root/attachments/some-uuid/ticket2795/qring_2_magma.patch) by mhansen created at 2008-04-04 19:53:01
+Attachment [qring_2_magma.patch](tarball://root/attachments/some-uuid/ticket2795/qring_2_magma.patch) by @mwhansen created at 2008-04-04 19:53:01
 
 Looks good to me.
 
@@ -103,7 +103,7 @@ archive/issue_comments_019192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19192",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_019193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19193",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_019194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19194",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_019195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19195",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_019196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2795",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19196",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

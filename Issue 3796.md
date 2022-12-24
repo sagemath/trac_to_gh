@@ -14,7 +14,7 @@ archive/issues_003796.json:
     "title": "Do something about empty directories for pexpect interfaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3796",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -62,7 +62,7 @@ archive/issue_comments_026995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3796#issuecomment-26995",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_026996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3796#issuecomment-26996",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_026997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3796#issuecomment-26997",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_026998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3796#issuecomment-26998",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

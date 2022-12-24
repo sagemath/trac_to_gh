@@ -3,7 +3,7 @@
 archive/issues_005308.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: __len__, count, combinatorial class\n\nAfter some discussion on sage-combinat-devel, it was decided that __len__ should no be used to get the size of a combinatorial class because. Indeed the specifications of __len__ says that it has to return a plain python int, whereas we want to deal with huge and even infinite sets. Unfortunately due to __len__ being called by list / filter / map and maybe some other functions, it is not possible to issue a warning. So it was decided to simply remove it and issue an error, telling to call .count() instead. \n\nSome part of combinat has to be fixed accordingly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5308\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: __len__, count, combinatorial class\n\nAfter some discussion on sage-combinat-devel, it was decided that __len__ should no be used to get the size of a combinatorial class because. Indeed the specifications of __len__ says that it has to return a plain python int, whereas we want to deal with huge and even infinite sets. Unfortunately due to __len__ being called by list / filter / map and maybe some other functions, it is not possible to issue a warning. So it was decided to simply remove it and issue an error, telling to call .count() instead. \n\nSome part of combinat has to be fixed accordingly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5308\n\n",
     "created_at": "2009-02-18T19:04:08Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005308.json:
     "title": "Removing __len__ for combinatorial classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5308",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -43,7 +43,7 @@ archive/issue_comments_040835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40835",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_040836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40836",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -76,16 +76,16 @@ Author: Florent Hivert
 archive/issue_comments_040837.json:
 ```json
 {
-    "body": "Attachment [combinatorialclass_iter_len_count_cleanup.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup.patch) by hivert created at 2009-03-01 18:14:44\n\nGood version of the file",
+    "body": "Attachment [combinatorialclass_iter_len_count_cleanup.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup.patch) by @hivert created at 2009-03-01 18:14:44\n\nGood version of the file",
     "created_at": "2009-03-01T18:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40837",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [combinatorialclass_iter_len_count_cleanup.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup.patch) by hivert created at 2009-03-01 18:14:44
+Attachment [combinatorialclass_iter_len_count_cleanup.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup.patch) by @hivert created at 2009-03-01 18:14:44
 
 Good version of the file
 
@@ -101,7 +101,7 @@ archive/issue_comments_040838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40838",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_040839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40839",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_040840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40840",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_040841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40841",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -222,16 +222,16 @@ Addressed Nicolas reqests.
 archive/issue_comments_040842.json:
 ```json
 {
-    "body": "Attachment [combinatorialclass_iter_len_count_cleanup-5308-submitted.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup-5308-submitted.patch) by hivert created at 2009-04-02 08:56:48\n\nDear Nicolas,\n\nI sumbmitted a new patch which should addres all the issues except this last one:   \n\n> In the examples (like in SemistandardTableaux), do we want to use: `[t for t in iterable]` or `list(iterable)`\n\nI think both kind of example should by advertised. IMHO, they both are very python idiomatic, the first one allows for extra condition, the second one is shorter. The only clear argument is that the first one is slightly faster:\n\n```\nsage: timeit(\"it = iter(Permutations(6)); list(it)\")\n125 loops, best of 3: 4.57 ms per loop\nsage: timeit(\"it = iter(Permutations(6)); list(it)\")\n125 loops, best of 3: 4.45 ms per loop\nsage: timeit(\"it = iter(Permutations(6)); [i for i in it]\")\n125 loops, best of 3: 4.64 ms per loop\nsage: timeit(\"it = iter(Permutations(6)); [i for i in it]\")\n125 loops, best of 3: 4.61 ms per loop\n```\n\nDo we really what to standardize all the doc on it ? \n\nCheers,\n\nFlorent",
+    "body": "Attachment [combinatorialclass_iter_len_count_cleanup-5308-submitted.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup-5308-submitted.patch) by @hivert created at 2009-04-02 08:56:48\n\nDear Nicolas,\n\nI sumbmitted a new patch which should addres all the issues except this last one:   \n\n> In the examples (like in SemistandardTableaux), do we want to use: `[t for t in iterable]` or `list(iterable)`\n\nI think both kind of example should by advertised. IMHO, they both are very python idiomatic, the first one allows for extra condition, the second one is shorter. The only clear argument is that the first one is slightly faster:\n\n```\nsage: timeit(\"it = iter(Permutations(6)); list(it)\")\n125 loops, best of 3: 4.57 ms per loop\nsage: timeit(\"it = iter(Permutations(6)); list(it)\")\n125 loops, best of 3: 4.45 ms per loop\nsage: timeit(\"it = iter(Permutations(6)); [i for i in it]\")\n125 loops, best of 3: 4.64 ms per loop\nsage: timeit(\"it = iter(Permutations(6)); [i for i in it]\")\n125 loops, best of 3: 4.61 ms per loop\n```\n\nDo we really what to standardize all the doc on it ? \n\nCheers,\n\nFlorent",
     "created_at": "2009-04-02T08:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40842",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [combinatorialclass_iter_len_count_cleanup-5308-submitted.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup-5308-submitted.patch) by hivert created at 2009-04-02 08:56:48
+Attachment [combinatorialclass_iter_len_count_cleanup-5308-submitted.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup-5308-submitted.patch) by @hivert created at 2009-04-02 08:56:48
 
 Dear Nicolas,
 
@@ -270,7 +270,7 @@ archive/issue_comments_040843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40843",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_040844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40844",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_040845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40845",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_040847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40847",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_040848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40848",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_040849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40849",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -538,16 +538,16 @@ Michael
 archive/issue_comments_040852.json:
 ```json
 {
-    "body": "Attachment [combinatorialclass_iter_len_count_cleanup-5308-rebased.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup-5308-rebased.patch) by hivert created at 2009-04-05 07:46:20\n\nHopefully final version",
+    "body": "Attachment [combinatorialclass_iter_len_count_cleanup-5308-rebased.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup-5308-rebased.patch) by @hivert created at 2009-04-05 07:46:20\n\nHopefully final version",
     "created_at": "2009-04-05T07:46:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40852",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [combinatorialclass_iter_len_count_cleanup-5308-rebased.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup-5308-rebased.patch) by hivert created at 2009-04-05 07:46:20
+Attachment [combinatorialclass_iter_len_count_cleanup-5308-rebased.patch](tarball://root/attachments/some-uuid/ticket5308/combinatorialclass_iter_len_count_cleanup-5308-rebased.patch) by @hivert created at 2009-04-05 07:46:20
 
 Hopefully final version
 
@@ -563,7 +563,7 @@ archive/issue_comments_040853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5308#issuecomment-40853",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

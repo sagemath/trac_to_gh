@@ -3,7 +3,7 @@
 archive/issues_006462.json:
 ```json
 {
-    "body": "Assignee: was\n\nUnpickling elements of number field orders doesn't work:\n\n\n```\nsage: L = QuadraticField(-11,'a'); OL = L.maximal_order(); w = OL.0\nsage: loads(dumps(w))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/david/.sage/temp/groke/24319/_home_david__sage_init_sage_0.py in <module>()\n\n/home/david/sage-4.1/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8076)()\n\n/home/david/sage-4.1/local/lib/python2.6/site-packages/sage/rings/number_field/number_field_element_quadratic.so in sage.rings.number_field.number_field_element_quadratic.__make_NumberFieldElement_quadratic0 (sage/rings/number_field/number_field_element_quadratic.cpp:2792)()\n\n/home/david/sage-4.1/local/lib/python2.6/site-packages/sage/rings/number_field/number_field_element_quadratic.so in sage.rings.number_field.number_field_element_quadratic.NumberFieldElement_quadratic.__init__ (sage/rings/number_field/number_field_element_quadratic.cpp:2897)()\n\n<type 'str'>: (<type 'exceptions.AttributeError'>, AttributeError(\"'AbsoluteOrder' object has no attribute '_is_maximal'\",))\n```\n\n\nWith orders in higher-degree fields, I get a different error message:\n\n\nsage: L = NumberField(x^3 - x - 1,'a'); OL = L.maximal_order(); w = OL.0\nsage: loads(dumps(w))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/david/.sage/temp/groke/24319/_home_david__sage_init_sage_0.py in <module>()\n\n/home/david/sage-4.1/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8076)()\n\n/home/david/sage-4.1/local/lib/python2.6/site-packages/sage/rings/number_field/number_field_element.so in sage.rings.number_field.number_field_element.__create__NumberFieldElement_version1 (sage/rings/number_field/number_field_element.cpp:3696)()\n\n/home/david/sage-4.1/local/lib/python2.6/site-packages/sage/rings/number_field/number_field_element.so in sage.rings.number_field.number_field_element.OrderElement_absolute.__init__ (sage/rings/number_field/number_field_element.cpp:20595)()\n\nAttributeError: (\"'NumberField_absolute' object has no attribute 'number_field'\", <built-in function __create__NumberFieldElement_version1>, (Number Field in a with defining polynomial x^3 - x - 1, <type 'sage.rings.number_field.number_field_element.OrderElement_absolute'>, 1))\n}}}\n(and the analogous thing for relative fields as well.)\n\nThis is a real problem because I am working on a computation where I need to be able to save results to disc, and this result is preventing me from loading what I've saved. (Elements of the fields rather than the orders unpickle OK, but it's next to impossible to prevent elements of the orders creeping in somehow when I pickle stuff.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6462\n\n",
+    "body": "Assignee: @williamstein\n\nUnpickling elements of number field orders doesn't work:\n\n\n```\nsage: L = QuadraticField(-11,'a'); OL = L.maximal_order(); w = OL.0\nsage: loads(dumps(w))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/david/.sage/temp/groke/24319/_home_david__sage_init_sage_0.py in <module>()\n\n/home/david/sage-4.1/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8076)()\n\n/home/david/sage-4.1/local/lib/python2.6/site-packages/sage/rings/number_field/number_field_element_quadratic.so in sage.rings.number_field.number_field_element_quadratic.__make_NumberFieldElement_quadratic0 (sage/rings/number_field/number_field_element_quadratic.cpp:2792)()\n\n/home/david/sage-4.1/local/lib/python2.6/site-packages/sage/rings/number_field/number_field_element_quadratic.so in sage.rings.number_field.number_field_element_quadratic.NumberFieldElement_quadratic.__init__ (sage/rings/number_field/number_field_element_quadratic.cpp:2897)()\n\n<type 'str'>: (<type 'exceptions.AttributeError'>, AttributeError(\"'AbsoluteOrder' object has no attribute '_is_maximal'\",))\n```\n\n\nWith orders in higher-degree fields, I get a different error message:\n\n\nsage: L = NumberField(x^3 - x - 1,'a'); OL = L.maximal_order(); w = OL.0\nsage: loads(dumps(w))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/david/.sage/temp/groke/24319/_home_david__sage_init_sage_0.py in <module>()\n\n/home/david/sage-4.1/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8076)()\n\n/home/david/sage-4.1/local/lib/python2.6/site-packages/sage/rings/number_field/number_field_element.so in sage.rings.number_field.number_field_element.__create__NumberFieldElement_version1 (sage/rings/number_field/number_field_element.cpp:3696)()\n\n/home/david/sage-4.1/local/lib/python2.6/site-packages/sage/rings/number_field/number_field_element.so in sage.rings.number_field.number_field_element.OrderElement_absolute.__init__ (sage/rings/number_field/number_field_element.cpp:20595)()\n\nAttributeError: (\"'NumberField_absolute' object has no attribute 'number_field'\", <built-in function __create__NumberFieldElement_version1>, (Number Field in a with defining polynomial x^3 - x - 1, <type 'sage.rings.number_field.number_field_element.OrderElement_absolute'>, 1))\n}}}\n(and the analogous thing for relative fields as well.)\n\nThis is a real problem because I am working on a computation where I need to be able to save results to disc, and this result is preventing me from loading what I've saved. (Elements of the fields rather than the orders unpickle OK, but it's next to impossible to prevent elements of the orders creeping in somehow when I pickle stuff.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6462\n\n",
     "created_at": "2009-07-04T10:56:44Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006462.json:
     "title": "Unpickling problem for orders in a number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6462",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Unpickling elements of number field orders doesn't work:
 
@@ -78,7 +78,7 @@ archive/issue_comments_052224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6462#issuecomment-52224",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -91,16 +91,16 @@ patch against 4.1.alpha2
 archive/issue_comments_052225.json:
 ```json
 {
-    "body": "Attachment [trac_6462-order_elt_pickle_bug.patch](tarball://root/attachments/some-uuid/ticket6462/trac_6462-order_elt_pickle_bug.patch) by davidloeffler created at 2009-07-04 15:40:08",
+    "body": "Attachment [trac_6462-order_elt_pickle_bug.patch](tarball://root/attachments/some-uuid/ticket6462/trac_6462-order_elt_pickle_bug.patch) by @loefflerd created at 2009-07-04 15:40:08",
     "created_at": "2009-07-04T15:40:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6462#issuecomment-52225",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6462-order_elt_pickle_bug.patch](tarball://root/attachments/some-uuid/ticket6462/trac_6462-order_elt_pickle_bug.patch) by davidloeffler created at 2009-07-04 15:40:08
+Attachment [trac_6462-order_elt_pickle_bug.patch](tarball://root/attachments/some-uuid/ticket6462/trac_6462-order_elt_pickle_bug.patch) by @loefflerd created at 2009-07-04 15:40:08
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_052226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6462#issuecomment-52226",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

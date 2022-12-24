@@ -3,7 +3,7 @@
 archive/issues_006823.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nKneser graphs for graph_generators ( http://en.wikipedia.org/wiki/Kneser_graph )\n\nI just define the new function graphs.KneserGraph()\n\nIssue created by migration from https://trac.sagemath.org/ticket/6823\n\n",
+    "body": "Assignee: @rlmill\n\nKneser graphs for graph_generators ( http://en.wikipedia.org/wiki/Kneser_graph )\n\nI just define the new function graphs.KneserGraph()\n\nIssue created by migration from https://trac.sagemath.org/ticket/6823\n\n",
     "created_at": "2009-08-25T08:20:10Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_006823.json:
     "title": "[with patch, needs review] Kneser Graph in graph_generators",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6823",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Kneser graphs for graph_generators ( http://en.wikipedia.org/wiki/Kneser_graph )
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6823
 archive/issue_comments_056270.json:
 ```json
 {
-    "body": "Attachment [knesergraph.patch](tarball://root/attachments/some-uuid/ticket6823/knesergraph.patch) by ncohen created at 2009-08-25 08:20:18",
+    "body": "Attachment [knesergraph.patch](tarball://root/attachments/some-uuid/ticket6823/knesergraph.patch) by @nathanncohen created at 2009-08-25 08:20:18",
     "created_at": "2009-08-25T08:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6823#issuecomment-56270",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [knesergraph.patch](tarball://root/attachments/some-uuid/ticket6823/knesergraph.patch) by ncohen created at 2009-08-25 08:20:18
+Attachment [knesergraph.patch](tarball://root/attachments/some-uuid/ticket6823/knesergraph.patch) by @nathanncohen created at 2009-08-25 08:20:18
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_056271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6823#issuecomment-56271",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_056272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6823#issuecomment-56272",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_056273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6823#issuecomment-56273",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -124,16 +124,16 @@ Nathann
 archive/issue_comments_056274.json:
 ```json
 {
-    "body": "Attachment [trac_6823.patch](tarball://root/attachments/some-uuid/ticket6823/trac_6823.patch) by ncohen created at 2009-09-29 11:07:12",
+    "body": "Attachment [trac_6823.patch](tarball://root/attachments/some-uuid/ticket6823/trac_6823.patch) by @nathanncohen created at 2009-09-29 11:07:12",
     "created_at": "2009-09-29T11:07:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6823#issuecomment-56274",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_6823.patch](tarball://root/attachments/some-uuid/ticket6823/trac_6823.patch) by ncohen created at 2009-09-29 11:07:12
+Attachment [trac_6823.patch](tarball://root/attachments/some-uuid/ticket6823/trac_6823.patch) by @nathanncohen created at 2009-09-29 11:07:12
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_056275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6823#issuecomment-56275",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -160,16 +160,16 @@ New patch taking into account the comments from #6828
 archive/issue_comments_056276.json:
 ```json
 {
-    "body": "Attachment [trac_6823_reviewer.patch](tarball://root/attachments/some-uuid/ticket6823/trac_6823_reviewer.patch) by rbeezer created at 2009-09-30 05:34:21\n\nReviewer patch to set odd graph name",
+    "body": "Attachment [trac_6823_reviewer.patch](tarball://root/attachments/some-uuid/ticket6823/trac_6823_reviewer.patch) by @rbeezer created at 2009-09-30 05:34:21\n\nReviewer patch to set odd graph name",
     "created_at": "2009-09-30T05:34:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6823#issuecomment-56276",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_6823_reviewer.patch](tarball://root/attachments/some-uuid/ticket6823/trac_6823_reviewer.patch) by rbeezer created at 2009-09-30 05:34:21
+Attachment [trac_6823_reviewer.patch](tarball://root/attachments/some-uuid/ticket6823/trac_6823_reviewer.patch) by @rbeezer created at 2009-09-30 05:34:21
 
 Reviewer patch to set odd graph name
 
@@ -185,7 +185,7 @@ archive/issue_comments_056277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6823#issuecomment-56277",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_056278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6823#issuecomment-56278",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_056279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6823#issuecomment-56279",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

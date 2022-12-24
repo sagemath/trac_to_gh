@@ -3,7 +3,7 @@
 archive/issues_008173.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  polybori\n\nKeywords: singular\n\nOn 4.3.2.alpha2:\n\n\n```\nsage: R.<x,y,a,b,u>=PolynomialRing(ZZ, 5)\nsage: r = (x^4*y^2+x^2*y-y).resultant(x*y-y*a-x*b+a*b+u,x)\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 0xb7d8b8c0 (LWP 28007)]\n0xb72844c5 in __gmpn_copyi ()\n   from /scratch/berocal/sage/i686/sage-4.3.rc0/local/lib/libgmp.so.3\nCurrent language:  auto; currently asm\n(gdb) bt\n#0  0xb72844c5 in __gmpn_copyi ()\n   from /scratch/berocal/sage/i686/sage-4.3.rc0/local/lib/libgmp.so.3\n#1  0xb72647f2 in __gmpz_init_set ()\n   from /scratch/berocal/sage/i686/sage-4.3.rc0/local/lib/libgmp.so.3\n#2  0x00000005 in ?? ()\n#3  0xbfe225b8 in ?? ()\n#4  0xbfe225f8 in ?? ()\n#5  0xb3d7fcb5 in conv_SingPFactoryP (p=0xb3efa4a0, r=0xb3db7980)\n    at clapconv.cc:143\nBacktrace stopped: previous frame inner to this frame (corrupt stack?)\n```\n\n\nSage calls `singclap_resultant()`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8173\n\n",
+    "body": "Assignee: @malb\n\nCC:  polybori\n\nKeywords: singular\n\nOn 4.3.2.alpha2:\n\n\n```\nsage: R.<x,y,a,b,u>=PolynomialRing(ZZ, 5)\nsage: r = (x^4*y^2+x^2*y-y).resultant(x*y-y*a-x*b+a*b+u,x)\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 0xb7d8b8c0 (LWP 28007)]\n0xb72844c5 in __gmpn_copyi ()\n   from /scratch/berocal/sage/i686/sage-4.3.rc0/local/lib/libgmp.so.3\nCurrent language:  auto; currently asm\n(gdb) bt\n#0  0xb72844c5 in __gmpn_copyi ()\n   from /scratch/berocal/sage/i686/sage-4.3.rc0/local/lib/libgmp.so.3\n#1  0xb72647f2 in __gmpz_init_set ()\n   from /scratch/berocal/sage/i686/sage-4.3.rc0/local/lib/libgmp.so.3\n#2  0x00000005 in ?? ()\n#3  0xbfe225b8 in ?? ()\n#4  0xbfe225f8 in ?? ()\n#5  0xb3d7fcb5 in conv_SingPFactoryP (p=0xb3efa4a0, r=0xb3db7980)\n    at clapconv.cc:143\nBacktrace stopped: previous frame inner to this frame (corrupt stack?)\n```\n\n\nSage calls `singclap_resultant()`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8173\n\n",
     "created_at": "2010-02-03T13:40:53Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_008173.json:
     "title": "segfault in singular resultant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8173",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  polybori
 
@@ -67,7 +67,7 @@ archive/issue_comments_071993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-71993",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_071994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-71994",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_071996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-71996",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_071997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-71997",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_071998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-71998",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_071999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-71999",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_072000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72000",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_072001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72001",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_072002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72002",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_072003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72003",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_072004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72004",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_072005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72005",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_072006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72006",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_072007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72007",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -439,16 +439,16 @@ x^2 + x
 archive/issue_comments_072008.json:
 ```json
 {
-    "body": "Attachment [trac_8173.patch](tarball://root/attachments/some-uuid/ticket8173/trac_8173.patch) by malb created at 2010-07-14 21:20:45\n\nfixed the issue reported bu Paul",
+    "body": "Attachment [trac_8173.patch](tarball://root/attachments/some-uuid/ticket8173/trac_8173.patch) by @malb created at 2010-07-14 21:20:45\n\nfixed the issue reported bu Paul",
     "created_at": "2010-07-14T21:20:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72008",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_8173.patch](tarball://root/attachments/some-uuid/ticket8173/trac_8173.patch) by malb created at 2010-07-14 21:20:45
+Attachment [trac_8173.patch](tarball://root/attachments/some-uuid/ticket8173/trac_8173.patch) by @malb created at 2010-07-14 21:20:45
 
 fixed the issue reported bu Paul
 
@@ -464,7 +464,7 @@ archive/issue_comments_072009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72009",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_072010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72010",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -500,7 +500,7 @@ archive/issue_comments_072011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72011",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_072012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72012",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_072013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72013",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_072014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72014",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -579,7 +579,7 @@ archive/issue_comments_072015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72015",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -599,7 +599,7 @@ archive/issue_comments_072016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72016",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -617,7 +617,7 @@ archive/issue_comments_072017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8173",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8173#issuecomment-72017",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

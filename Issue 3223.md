@@ -14,7 +14,7 @@ archive/issues_003223.json:
     "title": "notebook -- it is now broken on the iphone",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3223",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3223
 archive/issue_comments_022307.json:
 ```json
 {
-    "body": "Attachment [sage-3223.patch](tarball://root/attachments/some-uuid/ticket3223/sage-3223.patch) by was created at 2008-11-17 15:46:10",
+    "body": "Attachment [sage-3223.patch](tarball://root/attachments/some-uuid/ticket3223/sage-3223.patch) by @williamstein created at 2008-11-17 15:46:10",
     "created_at": "2008-11-17T15:46:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22307",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3223.patch](tarball://root/attachments/some-uuid/ticket3223/sage-3223.patch) by was created at 2008-11-17 15:46:10
+Attachment [sage-3223.patch](tarball://root/attachments/some-uuid/ticket3223/sage-3223.patch) by @williamstein created at 2008-11-17 15:46:10
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_022308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22308",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_022309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22309",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_022311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3223",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22311",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

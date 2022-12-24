@@ -3,7 +3,7 @@
 archive/issues_009950.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCC:  ylchapuy zimmerma\n\nRunning `sage -b` with 4.6.alpha1 gives:\n\n```\n[...]\nrunning build_py\npackage init file 'sage/tests/french_book/__init__.py' not found (or not a regular file)\npackage init file 'sage/tests/french_book/__init__.py' not found (or not a regular file)\nrunning build_ext\n[...]\n```\n\nThe solution is to add an \"empty\" `__init__.py` file.  Mercurial may complain if the file is truly empty.  We can use \n\n # This comment is here so the file is non-empty (so Mercurial will check it in).\n\nsay, instead.\n\nThis is a follow-up to #9395.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9951\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  ylchapuy @zimmermann6\n\nRunning `sage -b` with 4.6.alpha1 gives:\n\n```\n[...]\nrunning build_py\npackage init file 'sage/tests/french_book/__init__.py' not found (or not a regular file)\npackage init file 'sage/tests/french_book/__init__.py' not found (or not a regular file)\nrunning build_ext\n[...]\n```\n\nThe solution is to add an \"empty\" `__init__.py` file.  Mercurial may complain if the file is truly empty.  We can use \n\n # This comment is here so the file is non-empty (so Mercurial will check it in).\n\nsay, instead.\n\nThis is a follow-up to #9395.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9951\n\n",
     "created_at": "2010-09-19T21:36:49Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_009950.json:
     "title": "Missing package init file 'sage/tests/french_book/__init__.py'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9950",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
-CC:  ylchapuy zimmerma
+CC:  ylchapuy @zimmermann6
 
 Running `sage -b` with 4.6.alpha1 gives:
 
@@ -74,7 +74,7 @@ archive/issue_comments_099241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9950#issuecomment-99241",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_099242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9950#issuecomment-99242",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -132,16 +132,16 @@ Apply to Sage library
 archive/issue_comments_099243.json:
 ```json
 {
-    "body": "Attachment [trac_9951-add_non-empty_fake_init_file_to_tests_french_book.patch](tarball://root/attachments/some-uuid/ticket9951/trac_9951-add_non-empty_fake_init_file_to_tests_french_book.patch) by leif created at 2010-09-20 03:44:02\n\n*Non-empty* patch is up.",
+    "body": "Attachment [trac_9951-add_non-empty_fake_init_file_to_tests_french_book.patch](tarball://root/attachments/some-uuid/ticket9951/trac_9951-add_non-empty_fake_init_file_to_tests_french_book.patch) by @nexttime created at 2010-09-20 03:44:02\n\n*Non-empty* patch is up.",
     "created_at": "2010-09-20T03:44:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9950#issuecomment-99243",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9951-add_non-empty_fake_init_file_to_tests_french_book.patch](tarball://root/attachments/some-uuid/ticket9951/trac_9951-add_non-empty_fake_init_file_to_tests_french_book.patch) by leif created at 2010-09-20 03:44:02
+Attachment [trac_9951-add_non-empty_fake_init_file_to_tests_french_book.patch](tarball://root/attachments/some-uuid/ticket9951/trac_9951-add_non-empty_fake_init_file_to_tests_french_book.patch) by @nexttime created at 2010-09-20 03:44:02
 
 *Non-empty* patch is up.
 
@@ -157,7 +157,7 @@ archive/issue_comments_099244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9950#issuecomment-99244",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_099245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9950#issuecomment-99245",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_099246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9950#issuecomment-99246",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_099247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9950#issuecomment-99247",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_099248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9950#issuecomment-99248",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_099249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9950#issuecomment-99249",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

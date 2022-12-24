@@ -3,7 +3,7 @@
 archive/issues_006170.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  ncalexan\n\nAutomate the process of \n\n1. take a subset of patch from a ticket\n\n2. merge\n\n3. Run \"sage -br\"\n\n4. Run \"make ptest\"\n\nand much more.  \n\n\nThis could look like the following, though the first patch to this ticket should be much less ambitious and just do *something* useful.\n\n```\nsage: hg_devel.test(6738)\n\n[[applying patches on trac ticket 6738 to the correct repos...]]\n\n[[starting new sage process in os.system and doing \"sage -br\"]]\n\n[[report any failures]]\n\n[[run make ptestlong and report results]]\n\n[[revert state of sage to exactly what it was before stuff applied]]\n\nsage: hg_devel.apply(6738)\n\n[[apply everything from ticket 6738 to all relevant repos -- basically hg_devel.test without running tests, and without undoing at the end;  would also place all relevant downloaded patches in a directory -- this is what Michael always did manually with the patches/ directory]]\n\nsage: hg_devel.needs_review()\n\n[[would query trac and make a list of all tickets that are [with patch; needs review], and would return a list of the ticket numbers.]]\n\nsage: hg_devel.positive_review()\n\n[[would query trac and make a list of all tickets that are [with patch; positive review], and would return a list of the ticket numbers.]]\n\nsage: hg_devel.test_positive_review()\n\n[[would try hg_devel.test(...) on every ticket with positive review and make a nice html (and/or text) based report summarizing what happened]]\n\n\nsage: hg_devel.test_needs_review()\n\n[[would try hg_devel.test(...) on every ticket that needs review and make a nice html (and/or text) based report summarizing what happened.   This could probably quickly indicate that half the tickets \"needs review\" are broken or need a rebase -- it could easily take several hours to run.  This would be incredibly valuable, imho.]]\n\n\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6170\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @ncalexan\n\nAutomate the process of \n\n1. take a subset of patch from a ticket\n\n2. merge\n\n3. Run \"sage -br\"\n\n4. Run \"make ptest\"\n\nand much more.  \n\n\nThis could look like the following, though the first patch to this ticket should be much less ambitious and just do *something* useful.\n\n```\nsage: hg_devel.test(6738)\n\n[[applying patches on trac ticket 6738 to the correct repos...]]\n\n[[starting new sage process in os.system and doing \"sage -br\"]]\n\n[[report any failures]]\n\n[[run make ptestlong and report results]]\n\n[[revert state of sage to exactly what it was before stuff applied]]\n\nsage: hg_devel.apply(6738)\n\n[[apply everything from ticket 6738 to all relevant repos -- basically hg_devel.test without running tests, and without undoing at the end;  would also place all relevant downloaded patches in a directory -- this is what Michael always did manually with the patches/ directory]]\n\nsage: hg_devel.needs_review()\n\n[[would query trac and make a list of all tickets that are [with patch; needs review], and would return a list of the ticket numbers.]]\n\nsage: hg_devel.positive_review()\n\n[[would query trac and make a list of all tickets that are [with patch; positive review], and would return a list of the ticket numbers.]]\n\nsage: hg_devel.test_positive_review()\n\n[[would try hg_devel.test(...) on every ticket with positive review and make a nice html (and/or text) based report summarizing what happened]]\n\n\nsage: hg_devel.test_needs_review()\n\n[[would try hg_devel.test(...) on every ticket that needs review and make a nice html (and/or text) based report summarizing what happened.   This could probably quickly indicate that half the tickets \"needs review\" are broken or need a rebase -- it could easily take several hours to run.  This would be incredibly valuable, imho.]]\n\n\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6170\n\n",
     "created_at": "2009-05-31T08:12:37Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_006170.json:
     "title": "automate applying patches from a ticket and testing them",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6170",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Automate the process of 
 
@@ -87,16 +87,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6170
 archive/issue_comments_049217.json:
 ```json
 {
-    "body": "Attachment [trac-6170-bin.patch](tarball://root/attachments/some-uuid/ticket6170/trac-6170-bin.patch) by craigcitro created at 2009-06-18 08:46:05\n\napply to $SAGE_LOCAL/bin",
+    "body": "Attachment [trac-6170-bin.patch](tarball://root/attachments/some-uuid/ticket6170/trac-6170-bin.patch) by @craigcitro created at 2009-06-18 08:46:05\n\napply to $SAGE_LOCAL/bin",
     "created_at": "2009-06-18T08:46:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6170#issuecomment-49217",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-6170-bin.patch](tarball://root/attachments/some-uuid/ticket6170/trac-6170-bin.patch) by craigcitro created at 2009-06-18 08:46:05
+Attachment [trac-6170-bin.patch](tarball://root/attachments/some-uuid/ticket6170/trac-6170-bin.patch) by @craigcitro created at 2009-06-18 08:46:05
 
 apply to $SAGE_LOCAL/bin
 
@@ -107,16 +107,16 @@ apply to $SAGE_LOCAL/bin
 archive/issue_comments_049218.json:
 ```json
 {
-    "body": "Attachment [trac-6170-bin-pt2.patch](tarball://root/attachments/some-uuid/ticket6170/trac-6170-bin-pt2.patch) by craigcitro created at 2009-06-18 23:54:48",
+    "body": "Attachment [trac-6170-bin-pt2.patch](tarball://root/attachments/some-uuid/ticket6170/trac-6170-bin-pt2.patch) by @craigcitro created at 2009-06-18 23:54:48",
     "created_at": "2009-06-18T23:54:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6170#issuecomment-49218",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-6170-bin-pt2.patch](tarball://root/attachments/some-uuid/ticket6170/trac-6170-bin-pt2.patch) by craigcitro created at 2009-06-18 23:54:48
+Attachment [trac-6170-bin-pt2.patch](tarball://root/attachments/some-uuid/ticket6170/trac-6170-bin-pt2.patch) by @craigcitro created at 2009-06-18 23:54:48
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_049219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6170#issuecomment-49219",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_049220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6170#issuecomment-49220",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_049221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6170#issuecomment-49221",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_049222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6170#issuecomment-49222",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

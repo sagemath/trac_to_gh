@@ -14,7 +14,7 @@ archive/issues_005170.json:
     "title": "Get rid of the tooltip for Tinymce saying to doubleclick---it's annoying after a while.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5170",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5170
 archive/issue_comments_039604.json:
 ```json
 {
-    "body": "Attachment [delete-tinymce-tooltip.patch](tarball://root/attachments/some-uuid/ticket5170/delete-tinymce-tooltip.patch) by jason created at 2009-02-04 02:14:41",
+    "body": "Attachment [delete-tinymce-tooltip.patch](tarball://root/attachments/some-uuid/ticket5170/delete-tinymce-tooltip.patch) by @jasongrout created at 2009-02-04 02:14:41",
     "created_at": "2009-02-04T02:14:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5170#issuecomment-39604",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [delete-tinymce-tooltip.patch](tarball://root/attachments/some-uuid/ticket5170/delete-tinymce-tooltip.patch) by jason created at 2009-02-04 02:14:41
+Attachment [delete-tinymce-tooltip.patch](tarball://root/attachments/some-uuid/ticket5170/delete-tinymce-tooltip.patch) by @jasongrout created at 2009-02-04 02:14:41
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_039605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5170#issuecomment-39605",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

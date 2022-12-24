@@ -3,7 +3,7 @@
 archive/issues_007086.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  hemmecke\n\nKeywords: hg\n\nVanilla hg accepts something like\n\n  hg commit -m 'some comment'\n\nHowever, if hg is a script that calls \"sage -hg\" (like /usr/local/bin/hg on sage.math.washington.edu), then the above command does not work.\n\nThe following was issued on the above server:\nmkdir a\ncd a\nhg init\necho \"abc def\" > abc\nhg add abc\nhg commit -m 'some comment'\ncomment: No such file or directory\nabort: file comment not found!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7086\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @hemmecke\n\nKeywords: hg\n\nVanilla hg accepts something like\n\n  hg commit -m 'some comment'\n\nHowever, if hg is a script that calls \"sage -hg\" (like /usr/local/bin/hg on sage.math.washington.edu), then the above command does not work.\n\nThe following was issued on the above server:\nmkdir a\ncd a\nhg init\necho \"abc def\" > abc\nhg add abc\nhg commit -m 'some comment'\ncomment: No such file or directory\nabort: file comment not found!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7086\n\n",
     "created_at": "2009-09-30T23:20:20Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_007086.json:
     "title": "vanilla hg vs. \"sage -hg\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7086",
-    "user": "hemmecke"
+    "user": "@hemmecke"
 }
 ```
 Assignee: cwitty
 
-CC:  hemmecke
+CC:  @hemmecke
 
 Keywords: hg
 
@@ -55,7 +55,7 @@ archive/issue_comments_058575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7086#issuecomment-58575",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_058576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7086#issuecomment-58576",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_058577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7086#issuecomment-58577",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

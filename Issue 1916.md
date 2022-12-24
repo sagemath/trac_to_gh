@@ -14,7 +14,7 @@ archive/issues_001916.json:
     "title": "notebook -- implement a way to turn off word wrap globally in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1916",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_012136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1916#issuecomment-12136",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_012137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1916#issuecomment-12137",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_012138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1916#issuecomment-12138",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

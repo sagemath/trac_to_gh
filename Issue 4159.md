@@ -14,7 +14,7 @@ archive/issues_004159.json:
     "title": "sage -bdist fails on osx 10.5 ppc with libpng errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4159",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -64,7 +64,7 @@ archive/issue_comments_030189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30189",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_030190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30190",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -157,16 +157,16 @@ Michael
 archive/issue_comments_030194.json:
 ```json
 {
-    "body": "Attachment [trac_4159.patch](tarball://root/attachments/some-uuid/ticket4159/trac_4159.patch) by mhansen created at 2008-10-12 23:30:27",
+    "body": "Attachment [trac_4159.patch](tarball://root/attachments/some-uuid/ticket4159/trac_4159.patch) by @mwhansen created at 2008-10-12 23:30:27",
     "created_at": "2008-10-12T23:30:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30194",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4159.patch](tarball://root/attachments/some-uuid/ticket4159/trac_4159.patch) by mhansen created at 2008-10-12 23:30:27
+Attachment [trac_4159.patch](tarball://root/attachments/some-uuid/ticket4159/trac_4159.patch) by @mwhansen created at 2008-10-12 23:30:27
 
 
 
@@ -180,7 +180,7 @@ archive/issue_comments_030195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30195",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008867.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  evanandel kcrisman\n\nThis patch speeds up the riemann mapping functionality by automatically trying to call fast_callable on the functions passed in.  This depends on #5572 (patch \"improve_fast_callable.patch\")\n\nIssue created by migration from https://trac.sagemath.org/ticket/8867\n\n",
+    "body": "Assignee: @burcin\n\nCC:  evanandel @kcrisman\n\nThis patch speeds up the riemann mapping functionality by automatically trying to call fast_callable on the functions passed in.  This depends on #5572 (patch \"improve_fast_callable.patch\")\n\nIssue created by migration from https://trac.sagemath.org/ticket/8867\n\n",
     "created_at": "2010-05-04T04:55:56Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_008867.json:
     "title": "speed up the riemann mapping functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8867",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  evanandel kcrisman
+CC:  evanandel @kcrisman
 
 This patch speeds up the riemann mapping functionality by automatically trying to call fast_callable on the functions passed in.  This depends on #5572 (patch "improve_fast_callable.patch")
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8867
 archive/issue_comments_081487.json:
 ```json
 {
-    "body": "Attachment [trac-8867-riemann-fastcallable.patch](tarball://root/attachments/some-uuid/ticket8867/trac-8867-riemann-fastcallable.patch) by jason created at 2010-05-04 05:24:06",
+    "body": "Attachment [trac-8867-riemann-fastcallable.patch](tarball://root/attachments/some-uuid/ticket8867/trac-8867-riemann-fastcallable.patch) by @jasongrout created at 2010-05-04 05:24:06",
     "created_at": "2010-05-04T05:24:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8867#issuecomment-81487",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8867-riemann-fastcallable.patch](tarball://root/attachments/some-uuid/ticket8867/trac-8867-riemann-fastcallable.patch) by jason created at 2010-05-04 05:24:06
+Attachment [trac-8867-riemann-fastcallable.patch](tarball://root/attachments/some-uuid/ticket8867/trac-8867-riemann-fastcallable.patch) by @jasongrout created at 2010-05-04 05:24:06
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_081488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8867#issuecomment-81488",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_081489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8867#issuecomment-81489",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_081490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8867#issuecomment-81490",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_081494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8867#issuecomment-81494",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_081495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8867#issuecomment-81495",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_081496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8867#issuecomment-81496",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_081498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8867#issuecomment-81498",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_081499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8867#issuecomment-81499",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -388,7 +388,7 @@ But maybe that sort of problem should be in a seperate ticket.
 archive/issue_comments_081504.json:
 ```json
 {
-    "body": "Remove assignee burcin.",
+    "body": "Remove assignee @burcin.",
     "created_at": "2011-04-27T22:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
@@ -397,7 +397,7 @@ archive/issue_comments_081504.json:
 }
 ```
 
-Remove assignee burcin.
+Remove assignee @burcin.
 
 
 
@@ -411,7 +411,7 @@ archive/issue_comments_081505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8867#issuecomment-81505",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_081511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8867",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8867#issuecomment-81511",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

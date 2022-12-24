@@ -3,7 +3,7 @@
 archive/issues_001194.json:
 ```json
 {
-    "body": "Assignee: was\n\nConsider this:\n\n```\nsage: (-1)^(1/4)\n-1^(1/4)\n```\n\n\nThis should be printed `(-1)^(1/4)`, instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1194\n\n",
+    "body": "Assignee: @williamstein\n\nConsider this:\n\n```\nsage: (-1)^(1/4)\n-1^(1/4)\n```\n\n\nThis should be printed `(-1)^(1/4)`, instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1194\n\n",
     "created_at": "2007-11-17T19:50:47Z",
     "labels": [
         "calculus",
@@ -17,7 +17,7 @@ archive/issues_001194.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Consider this:
 
@@ -45,7 +45,7 @@ archive/issue_comments_007410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1194#issuecomment-7410",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -58,16 +58,16 @@ Changing status from new to assigned.
 archive/issue_comments_007411.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-11-17T20:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1194#issuecomment-7411",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -76,16 +76,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_007412.json:
 ```json
 {
-    "body": "Attachment [1194.patch](tarball://root/attachments/some-uuid/ticket1194/1194.patch) by mhansen created at 2007-11-17 20:45:09",
+    "body": "Attachment [1194.patch](tarball://root/attachments/some-uuid/ticket1194/1194.patch) by @mwhansen created at 2007-11-17 20:45:09",
     "created_at": "2007-11-17T20:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1194#issuecomment-7412",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1194.patch](tarball://root/attachments/some-uuid/ticket1194/1194.patch) by mhansen created at 2007-11-17 20:45:09
+Attachment [1194.patch](tarball://root/attachments/some-uuid/ticket1194/1194.patch) by @mwhansen created at 2007-11-17 20:45:09
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_007413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1194",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1194#issuecomment-7413",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

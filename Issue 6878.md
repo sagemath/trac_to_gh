@@ -3,7 +3,7 @@
 archive/issues_006878.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: plot\n\nThe attached patch adds a new option 'exclude' to the plot command\nwhich allows to exclude points from the plot.\n\nThis is useful if there are discontinuities in the function you are plotting.\n\n\n```\nsage: plot(floor(x), (x, 1, 10), exclude = [1..10])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6878\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: plot\n\nThe attached patch adds a new option 'exclude' to the plot command\nwhich allows to exclude points from the plot.\n\nThis is useful if there are discontinuities in the function you are plotting.\n\n\n```\nsage: plot(floor(x), (x, 1, 10), exclude = [1..10])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6878\n\n",
     "created_at": "2009-09-03T13:27:41Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_006878.json:
     "user": "whuss"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: plot
 
@@ -48,7 +48,7 @@ archive/issue_comments_056774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6878#issuecomment-56774",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_056776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6878#issuecomment-56776",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -181,7 +181,7 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_056779.json:
 ```json
 {
-    "body": "Changing assignee from was to whuss.",
+    "body": "Changing assignee from @williamstein to whuss.",
     "created_at": "2009-12-20T10:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6878",
     "type": "issue_comment",
@@ -190,7 +190,7 @@ archive/issue_comments_056779.json:
 }
 ```
 
-Changing assignee from was to whuss.
+Changing assignee from @williamstein to whuss.
 
 
 
@@ -256,7 +256,7 @@ archive/issue_comments_056782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6878#issuecomment-56782",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_056783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6878#issuecomment-56783",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_056784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6878#issuecomment-56784",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

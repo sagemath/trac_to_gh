@@ -3,7 +3,7 @@
 archive/issues_001874.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  roed\n\nThis is just an implementation of the barebones minimum. The patch also includes some documentation cleanup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1874\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @roed314\n\nThis is just an implementation of the barebones minimum. The patch also includes some documentation cleanup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1874\n\n",
     "created_at": "2008-01-21T00:16:16Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_001874.json:
     "title": "[with patch, needs review] implement bipartite graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1874",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  roed
+CC:  @roed314
 
 This is just an implementation of the barebones minimum. The patch also includes some documentation cleanup.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1874
 archive/issue_comments_011866.json:
 ```json
 {
-    "body": "Attachment [bipartite.patch](tarball://root/attachments/some-uuid/ticket1874/bipartite.patch) by rlm created at 2008-01-21 00:18:35",
+    "body": "Attachment [bipartite.patch](tarball://root/attachments/some-uuid/ticket1874/bipartite.patch) by @rlmill created at 2008-01-21 00:18:35",
     "created_at": "2008-01-21T00:18:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1874#issuecomment-11866",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [bipartite.patch](tarball://root/attachments/some-uuid/ticket1874/bipartite.patch) by rlm created at 2008-01-21 00:18:35
+Attachment [bipartite.patch](tarball://root/attachments/some-uuid/ticket1874/bipartite.patch) by @rlmill created at 2008-01-21 00:18:35
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_011867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1874#issuecomment-11867",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

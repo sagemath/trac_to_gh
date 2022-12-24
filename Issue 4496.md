@@ -3,7 +3,7 @@
 archive/issues_004496.json:
 ```json
 {
-    "body": "Assignee: was\n\nAll of the following work fine in 3.2.alpha0:\n\n```\nsage: plot(lambda x: x,(x,-1,1))\nsage: plot(lambda x: x,-1,1)\nsage: plot(x,x,-1,1)\nsage: plot(x,-1,1)\n```\n\nBut this doesn't:\n\n```\nsage: plot(lambda x: x,x,-1,1)\nverbose 0 (3400: plot.py, plot) there were 3 extra arguments (besides <function <lambda> at 0x11a22f70>)\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n<snip>\n.../sage-3.2.alpha0/local/lib/python2.5/site-packages/sage/plot/plot.pyc in plot(funcs, *args, **kwds)\n   3601     if do_show:\n   3602         G.show()\n-> 3603     return G\n   3604 \n   3605 def _plot(funcs, xrange, parametric=False,\n\nUnboundLocalError: local variable 'G' referenced before assignment\n```\n\nUpon further examination, it seems that the culprit is that SymbolicVariable has a plot method, but lambda functions do not.  This is easy to fix, by changing plot() in plot.py to handle this, for the n==3 args case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4496\n\n",
+    "body": "Assignee: @williamstein\n\nAll of the following work fine in 3.2.alpha0:\n\n```\nsage: plot(lambda x: x,(x,-1,1))\nsage: plot(lambda x: x,-1,1)\nsage: plot(x,x,-1,1)\nsage: plot(x,-1,1)\n```\n\nBut this doesn't:\n\n```\nsage: plot(lambda x: x,x,-1,1)\nverbose 0 (3400: plot.py, plot) there were 3 extra arguments (besides <function <lambda> at 0x11a22f70>)\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n<snip>\n.../sage-3.2.alpha0/local/lib/python2.5/site-packages/sage/plot/plot.pyc in plot(funcs, *args, **kwds)\n   3601     if do_show:\n   3602         G.show()\n-> 3603     return G\n   3604 \n   3605 def _plot(funcs, xrange, parametric=False,\n\nUnboundLocalError: local variable 'G' referenced before assignment\n```\n\nUpon further examination, it seems that the culprit is that SymbolicVariable has a plot method, but lambda functions do not.  This is easy to fix, by changing plot() in plot.py to handle this, for the n==3 args case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4496\n\n",
     "created_at": "2008-11-11T22:38:43Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004496.json:
     "title": "Plot doesn't allow variable outside tuple after lambda",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4496",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 All of the following work fine in 3.2.alpha0:
 
@@ -59,16 +59,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4496
 archive/issue_comments_033251.json:
 ```json
 {
-    "body": "Attachment [trac_4496.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496.patch) by kcrisman created at 2008-11-11 22:59:42\n\nBased on 3.2.alpha0",
+    "body": "Attachment [trac_4496.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496.patch) by @kcrisman created at 2008-11-11 22:59:42\n\nBased on 3.2.alpha0",
     "created_at": "2008-11-11T22:59:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4496#issuecomment-33251",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4496.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496.patch) by kcrisman created at 2008-11-11 22:59:42
+Attachment [trac_4496.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496.patch) by @kcrisman created at 2008-11-11 22:59:42
 
 Based on 3.2.alpha0
 
@@ -79,16 +79,16 @@ Based on 3.2.alpha0
 archive/issue_comments_033252.json:
 ```json
 {
-    "body": "Changing assignee from was to kcrisman.",
+    "body": "Changing assignee from @williamstein to @kcrisman.",
     "created_at": "2008-11-11T23:01:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4496#issuecomment-33252",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from was to kcrisman.
+Changing assignee from @williamstein to @kcrisman.
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_033253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4496#issuecomment-33253",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_033254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4496#issuecomment-33254",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_033255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4496#issuecomment-33255",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -151,16 +151,16 @@ Based on 3.2
 archive/issue_comments_033256.json:
 ```json
 {
-    "body": "Attachment [trac_4496_with_doctests.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496_with_doctests.patch) by kcrisman created at 2008-12-02 17:45:26\n\nThanks for waiting - doctests are here.  A separate ticket will be opened for the fact that \n\n```\nsage: p = plot(lambda x: f,x,-1,1)\n```\n\nwon't work, which is because \"evaluating\" the lambda function in this case returns a SymbolicCallableExpression which itself needs to be called again.",
+    "body": "Attachment [trac_4496_with_doctests.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496_with_doctests.patch) by @kcrisman created at 2008-12-02 17:45:26\n\nThanks for waiting - doctests are here.  A separate ticket will be opened for the fact that \n\n```\nsage: p = plot(lambda x: f,x,-1,1)\n```\n\nwon't work, which is because \"evaluating\" the lambda function in this case returns a SymbolicCallableExpression which itself needs to be called again.",
     "created_at": "2008-12-02T17:45:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4496#issuecomment-33256",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4496_with_doctests.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496_with_doctests.patch) by kcrisman created at 2008-12-02 17:45:26
+Attachment [trac_4496_with_doctests.patch](tarball://root/attachments/some-uuid/ticket4496/trac_4496_with_doctests.patch) by @kcrisman created at 2008-12-02 17:45:26
 
 Thanks for waiting - doctests are here.  A separate ticket will be opened for the fact that 
 
@@ -182,7 +182,7 @@ archive/issue_comments_033257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4496#issuecomment-33257",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

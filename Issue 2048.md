@@ -3,7 +3,7 @@
 archive/issues_002048.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2048\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2048\n\n",
     "created_at": "2008-02-05T02:46:16Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_002048.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2048
 archive/issue_comments_013258.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-02-05T09:44:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2048#issuecomment-13258",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_013259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2048#issuecomment-13259",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_013262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2048#issuecomment-13262",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_013264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2048#issuecomment-13264",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_013265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2048#issuecomment-13265",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_013267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2048#issuecomment-13267",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_013268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2048",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2048#issuecomment-13268",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

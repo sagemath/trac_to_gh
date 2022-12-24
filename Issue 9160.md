@@ -3,7 +3,7 @@
 archive/issues_009160.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  wjp leif mpatel alexanderdreyer polybori malb\n\n## The problems\n\nThere were three things wrong with the Singular package, the last of which can cause build failures. \n\n* The ability to build 64-bit was restricted to the OS X operating system, as the -m64 flag was only added if both SAGE64 was set to \"yes\" and the operating system was OS X with the following line of code.\n* The package version was unconventional, with people sometimes updating a date, rather than incrementing the patch level as is standard Sage practice - see the developers guide at http://www.sagemath.org/doc/developer/patching_spkgs.html#overview-of-patching-spkg-s \n* The time stamp of the file `src/Singular/libparse.cc` was one second older than the file it was supposed to be created from ( `src/Singular/libparse.l`), so the build process was trying to use 'flex' to update `src/Singular/libparse.cc`, which fails if flex is not available. \n\n```\nmake install in Singular\nmake[4]: Entering directory `/export/home/drkirkby/32/sage-4.4.3/spkg/build/singular-3-1-0-4-20100214/src/Singular'\nsh flexer.sh -I -Pyylp -t libparse.l >libparse.cc.lmp\nflexer.sh: flex: not found\nflexer.sh: test: argument expected\nmake[4]: *** [libparse.cc] Error 1 \n```\n\n See http://groups.google.co.uk/group/sage-devel/browse_thread/thread/fbf5b7f781c3f523?hl=en for a discussion of this. \n\n == The solutions ==\nThree very minor changes are made. \n* The following\n\n\n```\n   if [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n```\n\n\n was changed to \n\n\n```\n   if [ \"x$SAGE64\" = xyes ]; then\n```\n\n\n to enable 64-bit builds on any platform when SAGE64 is set to \"yes\".\n\n* The time stamp of the file `src/Singular/libparse.cc` made the current time with:\n\n```\ntouch src/Singular/libparse.cc\n```\n \n\n* The package name was set in according with the Sage Developers Guide. Had this been done properly, it would be patch level 6, so the package was named singular-3.1.0.4.p6. \n\n == Why a blocker ? ==\nThe incorrect time stamp has caused build failures on Solaris and could cause them on other platforms too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9160\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @wjp @nexttime @qed777 alexanderdreyer polybori @malb\n\n## The problems\n\nThere were three things wrong with the Singular package, the last of which can cause build failures. \n\n* The ability to build 64-bit was restricted to the OS X operating system, as the -m64 flag was only added if both SAGE64 was set to \"yes\" and the operating system was OS X with the following line of code.\n* The package version was unconventional, with people sometimes updating a date, rather than incrementing the patch level as is standard Sage practice - see the developers guide at http://www.sagemath.org/doc/developer/patching_spkgs.html#overview-of-patching-spkg-s \n* The time stamp of the file `src/Singular/libparse.cc` was one second older than the file it was supposed to be created from ( `src/Singular/libparse.l`), so the build process was trying to use 'flex' to update `src/Singular/libparse.cc`, which fails if flex is not available. \n\n```\nmake install in Singular\nmake[4]: Entering directory `/export/home/drkirkby/32/sage-4.4.3/spkg/build/singular-3-1-0-4-20100214/src/Singular'\nsh flexer.sh -I -Pyylp -t libparse.l >libparse.cc.lmp\nflexer.sh: flex: not found\nflexer.sh: test: argument expected\nmake[4]: *** [libparse.cc] Error 1 \n```\n\n See http://groups.google.co.uk/group/sage-devel/browse_thread/thread/fbf5b7f781c3f523?hl=en for a discussion of this. \n\n == The solutions ==\nThree very minor changes are made. \n* The following\n\n\n```\n   if [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n```\n\n\n was changed to \n\n\n```\n   if [ \"x$SAGE64\" = xyes ]; then\n```\n\n\n to enable 64-bit builds on any platform when SAGE64 is set to \"yes\".\n\n* The time stamp of the file `src/Singular/libparse.cc` made the current time with:\n\n```\ntouch src/Singular/libparse.cc\n```\n \n\n* The package name was set in according with the Sage Developers Guide. Had this been done properly, it would be patch level 6, so the package was named singular-3.1.0.4.p6. \n\n == Why a blocker ? ==\nThe incorrect time stamp has caused build failures on Solaris and could cause them on other platforms too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9160\n\n",
     "created_at": "2010-06-06T13:13:55Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009160.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  wjp leif mpatel alexanderdreyer polybori malb
+CC:  @wjp @nexttime @qed777 alexanderdreyer polybori @malb
 
 ## The problems
 
@@ -148,7 +148,7 @@ archive/issue_comments_085495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85495",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_085496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85496",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_085498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85498",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_085499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85499",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_085501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85501",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_085502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85502",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_085503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85503",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -577,7 +577,7 @@ archive/issue_comments_085505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85505",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_085506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85506",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -827,7 +827,7 @@ archive/issue_comments_085513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85513",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -856,7 +856,7 @@ archive/issue_comments_085514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85514",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -923,7 +923,7 @@ archive/issue_comments_085516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85516",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1003,7 +1003,7 @@ archive/issue_comments_085517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85517",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1021,7 +1021,7 @@ archive/issue_comments_085518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85518",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1050,7 +1050,7 @@ archive/issue_comments_085519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85519",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1068,7 +1068,7 @@ archive/issue_comments_085520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85520",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1081,16 +1081,16 @@ Resolution: fixed
 archive/issue_comments_085521.json:
 ```json
 {
-    "body": "Attachment [singular-simplified.patch](tarball://root/attachments/some-uuid/ticket9160/singular-simplified.patch) by fbissey created at 2010-06-12 09:40:35\n\nRemove the rebuilding of factory and libfac from spkg-install",
+    "body": "Attachment [singular-simplified.patch](tarball://root/attachments/some-uuid/ticket9160/singular-simplified.patch) by @kiwifb created at 2010-06-12 09:40:35\n\nRemove the rebuilding of factory and libfac from spkg-install",
     "created_at": "2010-06-12T09:40:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85521",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [singular-simplified.patch](tarball://root/attachments/some-uuid/ticket9160/singular-simplified.patch) by fbissey created at 2010-06-12 09:40:35
+Attachment [singular-simplified.patch](tarball://root/attachments/some-uuid/ticket9160/singular-simplified.patch) by @kiwifb created at 2010-06-12 09:40:35
 
 Remove the rebuilding of factory and libfac from spkg-install
 
@@ -1106,7 +1106,7 @@ archive/issue_comments_085522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85522",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1125,7 +1125,7 @@ archive/issue_comments_085523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85523",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1143,7 +1143,7 @@ archive/issue_comments_085524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85524",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -1161,7 +1161,7 @@ archive/issue_comments_085525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85525",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 

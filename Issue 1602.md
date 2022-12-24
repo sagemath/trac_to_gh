@@ -14,7 +14,7 @@ archive/issues_001602.json:
     "title": "latex2html or other problem with html version of Section 2.10.3 \"Euler's Method\" of tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1602",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: wdjoyner
@@ -69,7 +69,7 @@ archive/issue_comments_010184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1602#issuecomment-10184",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

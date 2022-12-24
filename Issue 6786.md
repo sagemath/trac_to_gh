@@ -84,16 +84,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6786
 archive/issue_comments_055927.json:
 ```json
 {
-    "body": "Changing assignee from tbd to AlexGhitza.",
+    "body": "Changing assignee from tbd to @aghitza.",
     "created_at": "2009-08-20T23:49:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6786#issuecomment-55927",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to AlexGhitza.
+Changing assignee from tbd to @aghitza.
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_055928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6786#issuecomment-55928",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_055929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6786#issuecomment-55929",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_055930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6786#issuecomment-55930",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

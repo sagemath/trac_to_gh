@@ -3,7 +3,7 @@
 archive/issues_007637.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  malb\n\nMartin Albrecht requested this functionality for his code, and it would also simplify mine. For short linear programs, of when some global variables do not require the creation of a new dictionary of variables ( from which only one field would be used ), this trick is good enough !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7637\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @malb\n\nMartin Albrecht requested this functionality for his code, and it would also simplify mine. For short linear programs, of when some global variables do not require the creation of a new dictionary of variables ( from which only one field would be used ), this trick is good enough !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7637\n\n",
     "created_at": "2009-12-09T12:27:25Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_007637.json:
     "title": "Default dictionary in MixedIntegerLinearProgram",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7637",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
 
-CC:  malb
+CC:  @malb
 
 Martin Albrecht requested this functionality for his code, and it would also simplify mine. For short linear programs, of when some global variables do not require the creation of a new dictionary of variables ( from which only one field would be used ), this trick is good enough !
 
@@ -41,7 +41,7 @@ archive/issue_comments_065273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7637#issuecomment-65273",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_065274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7637#issuecomment-65274",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_065275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7637#issuecomment-65275",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -91,16 +91,16 @@ Changing status from new to needs_review.
 archive/issue_comments_065276.json:
 ```json
 {
-    "body": "Attachment [trac_7637.patch](tarball://root/attachments/some-uuid/ticket7637/trac_7637.patch) by malb created at 2009-12-09 20:55:55",
+    "body": "Attachment [trac_7637.patch](tarball://root/attachments/some-uuid/ticket7637/trac_7637.patch) by @malb created at 2009-12-09 20:55:55",
     "created_at": "2009-12-09T20:55:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7637#issuecomment-65276",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_7637.patch](tarball://root/attachments/some-uuid/ticket7637/trac_7637.patch) by malb created at 2009-12-09 20:55:55
+Attachment [trac_7637.patch](tarball://root/attachments/some-uuid/ticket7637/trac_7637.patch) by @malb created at 2009-12-09 20:55:55
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_065277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7637#issuecomment-65277",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_065278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7637#issuecomment-65278",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

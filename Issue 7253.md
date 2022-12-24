@@ -14,7 +14,7 @@ archive/issues_007253.json:
     "title": "inefficient polynomial powering for positive characteristic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7253",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_060249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7253#issuecomment-60249",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_060250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7253#issuecomment-60250",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_060251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7253#issuecomment-60251",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_060252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7253#issuecomment-60252",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_060253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7253#issuecomment-60253",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

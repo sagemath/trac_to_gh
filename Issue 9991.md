@@ -3,7 +3,7 @@
 archive/issues_009991.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jhpalmieri\n\nAs discussed [here](http://groups.google.com/group/sage-devel/browse_thread/thread/9788a6ad6fe03ab9), the Python script `$SAGE_ROOT/spkg/base/sage-make_relative` is run before Python is built in Sage. On a system that do not have Python installed (like a fresh install of IBM's AIX operating system),  this generates an error message message as this script is run. \n\n\n```\nMaking Sage/Python scripts relocatable...\npython: No such file or directory \n```\n\n\nThis could be quite worrying, to find that an important program like Python is missing.\n\nThe bottom of the file `$SAGE_ROOT/spkg/base/sage-spkg` has this:\n\n\n```\necho \"Making Sage/Python scripts relocatable...\"\n\ncd \"$SAGE_LOCAL\"/bin\n./sage-make_relative\n\necho \"Finished installing $PKG_NAME.spkg\" \n\n# It's OK if the above fails -- in fact it will until Python\n# itself gets installed. That's fine. \nexit 0   \n```\n\n\nwhich indicates a failure of {{{sage-make_relative\n}}} is unimportant. But still it is annoying and led me to believe there was a more serious bug. \n\nIt does not seem appropriate to let {{{sage-make_relative\n}}} fail, but it would be much better if {{{sage-make_relative\n}}} can be removed, and its functionality moved to the script that calls it, which is `$SAGE_ROOT/spkg/base/sage-spkg`\n\nI've attached a copy of `$SAGE_ROOT/spkg/base/sage-make_relative`, which I believe could be written much better. I'm attaching it, since I will want to create an external link to this file. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9992\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jhpalmieri\n\nAs discussed [here](http://groups.google.com/group/sage-devel/browse_thread/thread/9788a6ad6fe03ab9), the Python script `$SAGE_ROOT/spkg/base/sage-make_relative` is run before Python is built in Sage. On a system that do not have Python installed (like a fresh install of IBM's AIX operating system),  this generates an error message message as this script is run. \n\n\n```\nMaking Sage/Python scripts relocatable...\npython: No such file or directory \n```\n\n\nThis could be quite worrying, to find that an important program like Python is missing.\n\nThe bottom of the file `$SAGE_ROOT/spkg/base/sage-spkg` has this:\n\n\n```\necho \"Making Sage/Python scripts relocatable...\"\n\ncd \"$SAGE_LOCAL\"/bin\n./sage-make_relative\n\necho \"Finished installing $PKG_NAME.spkg\" \n\n# It's OK if the above fails -- in fact it will until Python\n# itself gets installed. That's fine. \nexit 0   \n```\n\n\nwhich indicates a failure of {{{sage-make_relative\n}}} is unimportant. But still it is annoying and led me to believe there was a more serious bug. \n\nIt does not seem appropriate to let {{{sage-make_relative\n}}} fail, but it would be much better if {{{sage-make_relative\n}}} can be removed, and its functionality moved to the script that calls it, which is `$SAGE_ROOT/spkg/base/sage-spkg`\n\nI've attached a copy of `$SAGE_ROOT/spkg/base/sage-make_relative`, which I believe could be written much better. I'm attaching it, since I will want to create an external link to this file. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9992\n\n",
     "created_at": "2010-09-23T23:24:10Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009991.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 As discussed [here](http://groups.google.com/group/sage-devel/browse_thread/thread/9788a6ad6fe03ab9), the Python script `$SAGE_ROOT/spkg/base/sage-make_relative` is run before Python is built in Sage. On a system that do not have Python installed (like a fresh install of IBM's AIX operating system),  this generates an error message message as this script is run. 
 
@@ -96,7 +96,7 @@ archive/issue_comments_100405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9991#issuecomment-100405",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_100407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9991#issuecomment-100407",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -249,16 +249,16 @@ Dave
 archive/issue_comments_100409.json:
 ```json
 {
-    "body": "Attachment [trac_9992-run_sage-make_relative_conditionally.scripts.patch](tarball://root/attachments/some-uuid/ticket9992/trac_9992-run_sage-make_relative_conditionally.scripts.patch) by leif created at 2011-10-13 12:04:14\n\nSCRIPTS repo. Changes `sage-spkg` to only run `sage-make_relative` if Sage's Python is already installed. Based on Sage 4.7.2.alpha4.",
+    "body": "Attachment [trac_9992-run_sage-make_relative_conditionally.scripts.patch](tarball://root/attachments/some-uuid/ticket9992/trac_9992-run_sage-make_relative_conditionally.scripts.patch) by @nexttime created at 2011-10-13 12:04:14\n\nSCRIPTS repo. Changes `sage-spkg` to only run `sage-make_relative` if Sage's Python is already installed. Based on Sage 4.7.2.alpha4.",
     "created_at": "2011-10-13T12:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9991#issuecomment-100409",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9992-run_sage-make_relative_conditionally.scripts.patch](tarball://root/attachments/some-uuid/ticket9992/trac_9992-run_sage-make_relative_conditionally.scripts.patch) by leif created at 2011-10-13 12:04:14
+Attachment [trac_9992-run_sage-make_relative_conditionally.scripts.patch](tarball://root/attachments/some-uuid/ticket9992/trac_9992-run_sage-make_relative_conditionally.scripts.patch) by @nexttime created at 2011-10-13 12:04:14
 
 SCRIPTS repo. Changes `sage-spkg` to only run `sage-make_relative` if Sage's Python is already installed. Based on Sage 4.7.2.alpha4.
 
@@ -274,7 +274,7 @@ archive/issue_comments_100410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9991#issuecomment-100410",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_100411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9991#issuecomment-100411",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_100412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9991#issuecomment-100412",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_100413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9991#issuecomment-100413",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_100414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9991#issuecomment-100414",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_100415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9991#issuecomment-100415",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_100416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9991#issuecomment-100416",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

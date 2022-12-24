@@ -3,7 +3,7 @@
 archive/issues_005093.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  robertwb jason bober\n\nI've mentioned several times over the past months that I'm rewriting fast_float.  Here's a preliminary patch, that shows the direction I'm taking (automatically generate interpreters for each type, by having Python code write C code).\n\nThis version replaces fast_float with the new code, and also adds a new entry point, fast_callable.\n\nfast_callable(EXPR, domain=R)\n\n(where EXPR is a symbolic expression or a polynomial) is essentially equivalent to evaluating EXPR with calls to R() at every node.  There's special fast support for domain=RDF or domain=RealField(n), and there's slowish generic code that should work for arbitrary R.\n\nThe code is not ready for submission... there are very few doctests, and a lot of the documentation is simply wrong.  But if anybody has any comments, I'd be happy to hear them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5093\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @robertwb @jasongrout bober\n\nI've mentioned several times over the past months that I'm rewriting fast_float.  Here's a preliminary patch, that shows the direction I'm taking (automatically generate interpreters for each type, by having Python code write C code).\n\nThis version replaces fast_float with the new code, and also adds a new entry point, fast_callable.\n\nfast_callable(EXPR, domain=R)\n\n(where EXPR is a symbolic expression or a polynomial) is essentially equivalent to evaluating EXPR with calls to R() at every node.  There's special fast support for domain=RDF or domain=RealField(n), and there's slowish generic code that should work for arbitrary R.\n\nThe code is not ready for submission... there are very few doctests, and a lot of the documentation is simply wrong.  But if anybody has any comments, I'd be happy to hear them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5093\n\n",
     "created_at": "2009-01-25T03:33:37Z",
     "labels": [
         "basic arithmetic",
@@ -19,7 +19,7 @@ archive/issues_005093.json:
 ```
 Assignee: cwitty
 
-CC:  robertwb jason bober
+CC:  @robertwb @jasongrout bober
 
 I've mentioned several times over the past months that I'm rewriting fast_float.  Here's a preliminary patch, that shows the direction I'm taking (automatically generate interpreters for each type, by having Python code write C code).
 
@@ -47,7 +47,7 @@ archive/issue_comments_038814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38814",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_038819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38819",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_038820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38820",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_038821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38821",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_038822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38822",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_038823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38823",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_038824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38824",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_038825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38825",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_038826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38826",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_038828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38828",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -468,7 +468,7 @@ archive/issue_comments_038829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38829",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_038831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38831",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -680,7 +680,7 @@ archive/issue_comments_038836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38836",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -741,7 +741,7 @@ archive/issue_comments_038837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38837",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -797,7 +797,7 @@ archive/issue_comments_038840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38840",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -825,7 +825,7 @@ archive/issue_comments_038841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38841",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -843,7 +843,7 @@ archive/issue_comments_038842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38842",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -863,7 +863,7 @@ archive/issue_comments_038843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38843",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -881,7 +881,7 @@ archive/issue_comments_038844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5093#issuecomment-38844",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

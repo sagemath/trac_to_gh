@@ -14,7 +14,7 @@ archive/issues_000803.json:
     "title": "Tests for what kind of an element something is should test the parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/803",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 Assignee: somebody
@@ -52,7 +52,7 @@ archive/issue_comments_004839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/803#issuecomment-4839",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_004840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/803#issuecomment-4840",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_004841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/803#issuecomment-4841",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_004842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/803#issuecomment-4842",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

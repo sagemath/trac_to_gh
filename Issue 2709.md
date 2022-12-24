@@ -3,7 +3,7 @@
 archive/issues_002709.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan craigcitro\n\nKeywords: number field prime above\n\nMy research requires reducing curves over number fields modulo prime ideals, so I need to find suitable prime ideals all the time.  The attached function does exactly that, albeit naively.  I imagine this is useful to more people than me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2709\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan @craigcitro\n\nKeywords: number field prime above\n\nMy research requires reducing curves over number fields modulo prime ideals, so I need to find suitable prime ideals all the time.  The attached function does exactly that, albeit naively.  I imagine this is useful to more people than me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2709\n\n",
     "created_at": "2008-03-28T21:24:02Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_002709.json:
     "title": "add a prime_above() function to NumberField_generic for finding prime ideals above other ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2709",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan craigcitro
+CC:  @ncalexan @craigcitro
 
 Keywords: number field prime above
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2709
 archive/issue_comments_018682.json:
 ```json
 {
-    "body": "Attachment [2709-ncalexan-nf-prime-above-1.patch](tarball://root/attachments/some-uuid/ticket2709/2709-ncalexan-nf-prime-above-1.patch) by ncalexan created at 2008-03-28 21:27:00",
+    "body": "Attachment [2709-ncalexan-nf-prime-above-1.patch](tarball://root/attachments/some-uuid/ticket2709/2709-ncalexan-nf-prime-above-1.patch) by @ncalexan created at 2008-03-28 21:27:00",
     "created_at": "2008-03-28T21:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2709#issuecomment-18682",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2709-ncalexan-nf-prime-above-1.patch](tarball://root/attachments/some-uuid/ticket2709/2709-ncalexan-nf-prime-above-1.patch) by ncalexan created at 2008-03-28 21:27:00
+Attachment [2709-ncalexan-nf-prime-above-1.patch](tarball://root/attachments/some-uuid/ticket2709/2709-ncalexan-nf-prime-above-1.patch) by @ncalexan created at 2008-03-28 21:27:00
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_018683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2709#issuecomment-18683",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_018684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2709#issuecomment-18684",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -93,16 +93,16 @@ This was posted to the wrong ticket.
 archive/issue_comments_018685.json:
 ```json
 {
-    "body": "Attachment [2709-ncalexan-nf-prime-above-2.patch](tarball://root/attachments/some-uuid/ticket2709/2709-ncalexan-nf-prime-above-2.patch) by ncalexan created at 2008-03-28 22:15:26\n\nAfter discussion on IRC, generalized to lists and made to raise an error on individual failure.  Apply both patches -- sorry for the inconvenience, I couldn't figure out how to cut one patch encompassing both changesets.",
+    "body": "Attachment [2709-ncalexan-nf-prime-above-2.patch](tarball://root/attachments/some-uuid/ticket2709/2709-ncalexan-nf-prime-above-2.patch) by @ncalexan created at 2008-03-28 22:15:26\n\nAfter discussion on IRC, generalized to lists and made to raise an error on individual failure.  Apply both patches -- sorry for the inconvenience, I couldn't figure out how to cut one patch encompassing both changesets.",
     "created_at": "2008-03-28T22:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2709#issuecomment-18685",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [2709-ncalexan-nf-prime-above-2.patch](tarball://root/attachments/some-uuid/ticket2709/2709-ncalexan-nf-prime-above-2.patch) by ncalexan created at 2008-03-28 22:15:26
+Attachment [2709-ncalexan-nf-prime-above-2.patch](tarball://root/attachments/some-uuid/ticket2709/2709-ncalexan-nf-prime-above-2.patch) by @ncalexan created at 2008-03-28 22:15:26
 
 After discussion on IRC, generalized to lists and made to raise an error on individual failure.  Apply both patches -- sorry for the inconvenience, I couldn't figure out how to cut one patch encompassing both changesets.
 
@@ -118,7 +118,7 @@ archive/issue_comments_018686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2709#issuecomment-18686",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_018687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2709#issuecomment-18687",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

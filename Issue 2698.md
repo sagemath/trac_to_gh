@@ -14,7 +14,7 @@ archive/issues_002698.json:
     "title": "[with patch, needs review] Small improvements to integer lcm, gcd on lists and a new xlcm function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2698",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: somebody
@@ -60,16 +60,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2698
 archive/issue_comments_018594.json:
 ```json
 {
-    "body": "Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2698/9029.patch) by cremona created at 2008-03-28 12:21:31",
+    "body": "Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2698/9029.patch) by @JohnCremona created at 2008-03-28 12:21:31",
     "created_at": "2008-03-28T12:21:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18594",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2698/9029.patch) by cremona created at 2008-03-28 12:21:31
+Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2698/9029.patch) by @JohnCremona created at 2008-03-28 12:21:31
 
 
 
@@ -83,7 +83,7 @@ archive/issue_comments_018595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18595",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_018597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18597",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -178,16 +178,16 @@ Michael
 archive/issue_comments_018599.json:
 ```json
 {
-    "body": "Attachment [9029-2.patch](tarball://root/attachments/some-uuid/ticket2698/9029-2.patch) by AlexGhitza created at 2008-03-28 15:59:17\n\napply after 9029.patch",
+    "body": "Attachment [9029-2.patch](tarball://root/attachments/some-uuid/ticket2698/9029-2.patch) by @aghitza created at 2008-03-28 15:59:17\n\napply after 9029.patch",
     "created_at": "2008-03-28T15:59:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18599",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [9029-2.patch](tarball://root/attachments/some-uuid/ticket2698/9029-2.patch) by AlexGhitza created at 2008-03-28 15:59:17
+Attachment [9029-2.patch](tarball://root/attachments/some-uuid/ticket2698/9029-2.patch) by @aghitza created at 2008-03-28 15:59:17
 
 apply after 9029.patch
 
@@ -203,7 +203,7 @@ archive/issue_comments_018600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18600",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_018601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18601",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -285,16 +285,16 @@ Note also that (1) the value returned for an empty list is ZZ(0) and not ZZ(1) a
 archive/issue_comments_018602.json:
 ```json
 {
-    "body": "Attachment [8964.patch](tarball://root/attachments/some-uuid/ticket2698/8964.patch) by cremona created at 2008-03-28 17:03:48\n\napply after 9029.patch, instead of 9029-2.patch",
+    "body": "Attachment [8964.patch](tarball://root/attachments/some-uuid/ticket2698/8964.patch) by @JohnCremona created at 2008-03-28 17:03:48\n\napply after 9029.patch, instead of 9029-2.patch",
     "created_at": "2008-03-28T17:03:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18602",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8964.patch](tarball://root/attachments/some-uuid/ticket2698/8964.patch) by cremona created at 2008-03-28 17:03:48
+Attachment [8964.patch](tarball://root/attachments/some-uuid/ticket2698/8964.patch) by @JohnCremona created at 2008-03-28 17:03:48
 
 apply after 9029.patch, instead of 9029-2.patch
 
@@ -310,7 +310,7 @@ archive/issue_comments_018603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18603",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -323,16 +323,16 @@ The patch 8964.patch should be added after 9029.patch and *instead* of 9029-2.pa
 archive/issue_comments_018604.json:
 ```json
 {
-    "body": "Attachment [8965.patch](tarball://root/attachments/some-uuid/ticket2698/8965.patch) by cremona created at 2008-03-28 17:42:48\n\nApply after previous patch",
+    "body": "Attachment [8965.patch](tarball://root/attachments/some-uuid/ticket2698/8965.patch) by @JohnCremona created at 2008-03-28 17:42:48\n\nApply after previous patch",
     "created_at": "2008-03-28T17:42:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18604",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8965.patch](tarball://root/attachments/some-uuid/ticket2698/8965.patch) by cremona created at 2008-03-28 17:42:48
+Attachment [8965.patch](tarball://root/attachments/some-uuid/ticket2698/8965.patch) by @JohnCremona created at 2008-03-28 17:42:48
 
 Apply after previous patch
 
@@ -348,7 +348,7 @@ archive/issue_comments_018605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18605",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_018606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18606",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_018607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18607",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_018608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18608",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -449,16 +449,16 @@ Apply INSTEAD of all previous patches!
 archive/issue_comments_018609.json:
 ```json
 {
-    "body": "Attachment [9114.patch](tarball://root/attachments/some-uuid/ticket2698/9114.patch) by cremona created at 2008-03-30 17:48:43\n\nThe new patch 9114.patch should be applied INSTEAD of all the earlier ones since it includes the earlier changes plus a couple of tweaks so that it passes all tests with 2.11.rc0.  [NB this patch is based on 2.11.rc0.]\n\nHere's how I fixed the two problems:\n* in free_module_element.py I added a test so that if any of the elements has additive_order +Infinity then it returns +Infinity right away without calling lcm() at all.  This is also more efficient!\n* to get around the code_constructions.py problem I just changed the order of the lcm in arith.py.  This makes current tests pass but reveals another bug (*not* caused by this patch!):\n`lcm(p,q)` fails if p and q are polynomials and p is constant.  I have reported this in another ticket.",
+    "body": "Attachment [9114.patch](tarball://root/attachments/some-uuid/ticket2698/9114.patch) by @JohnCremona created at 2008-03-30 17:48:43\n\nThe new patch 9114.patch should be applied INSTEAD of all the earlier ones since it includes the earlier changes plus a couple of tweaks so that it passes all tests with 2.11.rc0.  [NB this patch is based on 2.11.rc0.]\n\nHere's how I fixed the two problems:\n* in free_module_element.py I added a test so that if any of the elements has additive_order +Infinity then it returns +Infinity right away without calling lcm() at all.  This is also more efficient!\n* to get around the code_constructions.py problem I just changed the order of the lcm in arith.py.  This makes current tests pass but reveals another bug (*not* caused by this patch!):\n`lcm(p,q)` fails if p and q are polynomials and p is constant.  I have reported this in another ticket.",
     "created_at": "2008-03-30T17:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18609",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [9114.patch](tarball://root/attachments/some-uuid/ticket2698/9114.patch) by cremona created at 2008-03-30 17:48:43
+Attachment [9114.patch](tarball://root/attachments/some-uuid/ticket2698/9114.patch) by @JohnCremona created at 2008-03-30 17:48:43
 
 The new patch 9114.patch should be applied INSTEAD of all the earlier ones since it includes the earlier changes plus a couple of tweaks so that it passes all tests with 2.11.rc0.  [NB this patch is based on 2.11.rc0.]
 
@@ -474,16 +474,16 @@ Here's how I fixed the two problems:
 archive/issue_comments_018610.json:
 ```json
 {
-    "body": "Attachment [9114-typos.patch](tarball://root/attachments/some-uuid/ticket2698/9114-typos.patch) by AlexGhitza created at 2008-04-01 02:37:16\n\ntrivial fixes, apply after 9114.patch",
+    "body": "Attachment [9114-typos.patch](tarball://root/attachments/some-uuid/ticket2698/9114-typos.patch) by @aghitza created at 2008-04-01 02:37:16\n\ntrivial fixes, apply after 9114.patch",
     "created_at": "2008-04-01T02:37:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18610",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [9114-typos.patch](tarball://root/attachments/some-uuid/ticket2698/9114-typos.patch) by AlexGhitza created at 2008-04-01 02:37:16
+Attachment [9114-typos.patch](tarball://root/attachments/some-uuid/ticket2698/9114-typos.patch) by @aghitza created at 2008-04-01 02:37:16
 
 trivial fixes, apply after 9114.patch
 
@@ -499,7 +499,7 @@ archive/issue_comments_018611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18611",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_018612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2698#issuecomment-18612",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

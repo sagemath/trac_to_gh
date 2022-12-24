@@ -3,7 +3,7 @@
 archive/issues_009794.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jason\n\n\n```\npts = [(1,2),(2,3),(3,2),(4,3),(5,2),(6,3)] \nR.<x>=QQ[] \nf = R.lagrange_polynomial(pts) \nSR(f) \n2. If one has a non-symbolic polynomial currently, it won't plot with \nthe new plotting syntax. \nplot(f,0,5) # works, old-school Sage \nplot(f,(x,0,5)) # doesn't work, new-school Sage \nplot(f,x,0,5) # doesn't work, though sort of makes sense it shouldn't \nsince x isn't a symbolic variable now... ? \n```\n\nObviously any polynomial f is what is at issue, not just this particular one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9795\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout\n\n\n```\npts = [(1,2),(2,3),(3,2),(4,3),(5,2),(6,3)] \nR.<x>=QQ[] \nf = R.lagrange_polynomial(pts) \nSR(f) \n2. If one has a non-symbolic polynomial currently, it won't plot with \nthe new plotting syntax. \nplot(f,0,5) # works, old-school Sage \nplot(f,(x,0,5)) # doesn't work, new-school Sage \nplot(f,x,0,5) # doesn't work, though sort of makes sense it shouldn't \nsince x isn't a symbolic variable now... ? \n```\n\nObviously any polynomial f is what is at issue, not just this particular one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9795\n\n",
     "created_at": "2010-08-24T15:19:24Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009794.json:
     "title": "Make sure new plot syntax works with Sage polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9794",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: jason, was
 
-CC:  jason
+CC:  @jasongrout
 
 
 ```
@@ -53,7 +53,7 @@ archive/issue_comments_096166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9794",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9794#issuecomment-96166",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

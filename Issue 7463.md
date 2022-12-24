@@ -3,7 +3,7 @@
 archive/issues_007463.json:
 ```json
 {
-    "body": "Assignee: was\n\nAdd documentation to magma.py explaining memory management for this interface. \n\nThe attached patch will -- if tested using \n\n```\ncd devel/sage/sage/interfaces/\nsage -t --only_optional=magma magma.py\n```\n\nhave doctest failures.  This isn't because of this patch.  See #7462. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7463\n\n",
+    "body": "Assignee: @williamstein\n\nAdd documentation to magma.py explaining memory management for this interface. \n\nThe attached patch will -- if tested using \n\n```\ncd devel/sage/sage/interfaces/\nsage -t --only_optional=magma magma.py\n```\n\nhave doctest failures.  This isn't because of this patch.  See #7462. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7463\n\n",
     "created_at": "2009-11-14T18:55:29Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_007463.json:
     "title": "document memory management for the magma interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7463",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Add documentation to magma.py explaining memory management for this interface. 
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7463
 archive/issue_comments_062860.json:
 ```json
 {
-    "body": "Attachment [trac_7463.patch](tarball://root/attachments/some-uuid/ticket7463/trac_7463.patch) by was created at 2009-11-14 18:56:09",
+    "body": "Attachment [trac_7463.patch](tarball://root/attachments/some-uuid/ticket7463/trac_7463.patch) by @williamstein created at 2009-11-14 18:56:09",
     "created_at": "2009-11-14T18:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7463#issuecomment-62860",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7463.patch](tarball://root/attachments/some-uuid/ticket7463/trac_7463.patch) by was created at 2009-11-14 18:56:09
+Attachment [trac_7463.patch](tarball://root/attachments/some-uuid/ticket7463/trac_7463.patch) by @williamstein created at 2009-11-14 18:56:09
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_062861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7463#issuecomment-62861",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_062864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7463#issuecomment-62864",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

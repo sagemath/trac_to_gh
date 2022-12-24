@@ -3,7 +3,7 @@
 archive/issues_005362.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: transpose\n\nA copy is missing:\n\n```\nsage: m=matrix(RDF,2,2,range(4))\nsage: m2=m.transpose()\nsage: m2\n\n[0.0 2.0]\n[1.0 3.0]\nsage: m[0,0]=1\nsage: m2\n\n[1.0 2.0]\n[1.0 3.0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5362\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: transpose\n\nA copy is missing:\n\n```\nsage: m=matrix(RDF,2,2,range(4))\nsage: m2=m.transpose()\nsage: m2\n\n[0.0 2.0]\n[1.0 3.0]\nsage: m[0,0]=1\nsage: m2\n\n[1.0 2.0]\n[1.0 3.0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5362\n\n",
     "created_at": "2009-02-24T22:27:41Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_005362.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: transpose
 
@@ -54,7 +54,7 @@ archive/issue_comments_041315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5362#issuecomment-41315",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -67,16 +67,16 @@ I updated the formatting of the docstring to be compatible with the new document
 archive/issue_comments_041316.json:
 ```json
 {
-    "body": "Attachment [trac-5362-transpose-matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket5362/trac-5362-transpose-matrix_double_dense.patch) by mhansen created at 2009-02-25 18:23:11",
+    "body": "Attachment [trac-5362-transpose-matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket5362/trac-5362-transpose-matrix_double_dense.patch) by @mwhansen created at 2009-02-25 18:23:11",
     "created_at": "2009-02-25T18:23:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5362#issuecomment-41316",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac-5362-transpose-matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket5362/trac-5362-transpose-matrix_double_dense.patch) by mhansen created at 2009-02-25 18:23:11
+Attachment [trac-5362-transpose-matrix_double_dense.patch](tarball://root/attachments/some-uuid/ticket5362/trac-5362-transpose-matrix_double_dense.patch) by @mwhansen created at 2009-02-25 18:23:11
 
 
 

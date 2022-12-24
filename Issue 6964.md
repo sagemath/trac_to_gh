@@ -14,7 +14,7 @@ archive/issues_006964.json:
     "title": "implement computation of Dirichlet character of irreducible cuspidal modular symbols space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6964",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6964
 archive/issue_comments_057616.json:
 ```json
 {
-    "body": "Attachment [trac_6964-part2.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part2.patch) by was created at 2009-09-20 04:59:07",
+    "body": "Attachment [trac_6964-part2.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part2.patch) by @williamstein created at 2009-09-20 04:59:07",
     "created_at": "2009-09-20T04:59:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57616",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6964-part2.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part2.patch) by was created at 2009-09-20 04:59:07
+Attachment [trac_6964-part2.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part2.patch) by @williamstein created at 2009-09-20 04:59:07
 
 
 
@@ -63,16 +63,16 @@ Attachment [trac_6964-part2.patch](tarball://root/attachments/some-uuid/ticket69
 archive/issue_comments_057617.json:
 ```json
 {
-    "body": "Attachment [trac_6964-part3.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part3.patch) by was created at 2009-09-20 05:21:19",
+    "body": "Attachment [trac_6964-part3.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part3.patch) by @williamstein created at 2009-09-20 05:21:19",
     "created_at": "2009-09-20T05:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57617",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6964-part3.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part3.patch) by was created at 2009-09-20 05:21:19
+Attachment [trac_6964-part3.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part3.patch) by @williamstein created at 2009-09-20 05:21:19
 
 
 
@@ -81,16 +81,16 @@ Attachment [trac_6964-part3.patch](tarball://root/attachments/some-uuid/ticket69
 archive/issue_comments_057618.json:
 ```json
 {
-    "body": "Attachment [trac_6964-part4.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part4.patch) by syazdani created at 2009-09-20 05:44:47",
+    "body": "Attachment [trac_6964-part4.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part4.patch) by @syazdani77 created at 2009-09-20 05:44:47",
     "created_at": "2009-09-20T05:44:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57618",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
-Attachment [trac_6964-part4.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part4.patch) by syazdani created at 2009-09-20 05:44:47
+Attachment [trac_6964-part4.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part4.patch) by @syazdani77 created at 2009-09-20 05:44:47
 
 
 

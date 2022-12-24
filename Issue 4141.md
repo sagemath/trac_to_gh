@@ -3,7 +3,7 @@
 archive/issues_004141.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  georgsweber was\n\nWhen building sage 3.1.2 without hiding fink,\n\n```\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4141\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  georgsweber @williamstein\n\nWhen building sage 3.1.2 without hiding fink,\n\n```\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4141\n\n",
     "created_at": "2008-09-18T00:39:25Z",
     "labels": [
         "distribution",
@@ -19,7 +19,7 @@ archive/issues_004141.json:
 ```
 Assignee: mabshoff
 
-CC:  georgsweber was
+CC:  georgsweber @williamstein
 
 When building sage 3.1.2 without hiding fink,
 
@@ -45,7 +45,7 @@ archive/issue_comments_030067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4141#issuecomment-30067",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_030068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4141#issuecomment-30068",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_030069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4141#issuecomment-30069",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_030070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4141#issuecomment-30070",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_030071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4141#issuecomment-30071",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_030072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4141#issuecomment-30072",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

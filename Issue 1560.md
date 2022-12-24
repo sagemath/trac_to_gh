@@ -14,7 +14,7 @@ archive/issues_001560.json:
     "title": "Bug in introspection: line3d?? results in lame output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1560",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -45,7 +45,7 @@ archive/issue_comments_009940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1560#issuecomment-9940",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

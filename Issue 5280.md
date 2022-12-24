@@ -14,7 +14,7 @@ archive/issues_005280.json:
     "title": "problem with a subposet coming from an order_filter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5280",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5280
 archive/issue_comments_040523.json:
 ```json
 {
-    "body": "Attachment [trac_5280.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280.patch) by saliola created at 2009-04-30 09:19:23\n\nI implemented `__cmp__` for poset elements, which deals with these problems.\n\nThe patch depends on #5918.",
+    "body": "Attachment [trac_5280.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280.patch) by @saliola created at 2009-04-30 09:19:23\n\nI implemented `__cmp__` for poset elements, which deals with these problems.\n\nThe patch depends on #5918.",
     "created_at": "2009-04-30T09:19:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40523",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_5280.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280.patch) by saliola created at 2009-04-30 09:19:23
+Attachment [trac_5280.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280.patch) by @saliola created at 2009-04-30 09:19:23
 
 I implemented `__cmp__` for poset elements, which deals with these problems.
 
@@ -81,7 +81,7 @@ archive/issue_comments_040524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40524",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_040525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40525",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -112,16 +112,16 @@ I'd also give this a positive review, but I have to ask: why is `__cmp__` return
 archive/issue_comments_040526.json:
 ```json
 {
-    "body": "Attachment [trac_5280-review.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-review.patch) by mhansen created at 2009-06-20 01:16:54\n\nI've added a patch which fixes some doc formatting.",
+    "body": "Attachment [trac_5280-review.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-review.patch) by @mwhansen created at 2009-06-20 01:16:54\n\nI've added a patch which fixes some doc formatting.",
     "created_at": "2009-06-20T01:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40526",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5280-review.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-review.patch) by mhansen created at 2009-06-20 01:16:54
+Attachment [trac_5280-review.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-review.patch) by @mwhansen created at 2009-06-20 01:16:54
 
 I've added a patch which fixes some doc formatting.
 
@@ -137,7 +137,7 @@ archive/issue_comments_040527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40527",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_040528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40528",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_040529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40529",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_040530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40530",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -333,16 +333,16 @@ Python `__ne__` does not default to `!__eq__`.)
 archive/issue_comments_040531.json:
 ```json
 {
-    "body": "Attachment [trac_5280-ne-docfixes.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-ne-docfixes.patch) by saliola created at 2009-06-21 18:43:54\n\nApply on top of the previous two.",
+    "body": "Attachment [trac_5280-ne-docfixes.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-ne-docfixes.patch) by @saliola created at 2009-06-21 18:43:54\n\nApply on top of the previous two.",
     "created_at": "2009-06-21T18:43:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40531",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_5280-ne-docfixes.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-ne-docfixes.patch) by saliola created at 2009-06-21 18:43:54
+Attachment [trac_5280-ne-docfixes.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-ne-docfixes.patch) by @saliola created at 2009-06-21 18:43:54
 
 Apply on top of the previous two.
 
@@ -358,7 +358,7 @@ archive/issue_comments_040532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40532",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_040533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40533",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_040534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40534",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -425,16 +425,16 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/44dbe252426c3831
 archive/issue_comments_040535.json:
 ```json
 {
-    "body": "Attachment [trac_5280-switch-to-zero.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-switch-to-zero.patch) by saliola created at 2009-06-22 10:37:28\n\nApply on top of the previous three",
+    "body": "Attachment [trac_5280-switch-to-zero.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-switch-to-zero.patch) by @saliola created at 2009-06-22 10:37:28\n\nApply on top of the previous three",
     "created_at": "2009-06-22T10:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40535",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_5280-switch-to-zero.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-switch-to-zero.patch) by saliola created at 2009-06-22 10:37:28
+Attachment [trac_5280-switch-to-zero.patch](tarball://root/attachments/some-uuid/ticket5280/trac_5280-switch-to-zero.patch) by @saliola created at 2009-06-22 10:37:28
 
 Apply on top of the previous three
 
@@ -450,7 +450,7 @@ archive/issue_comments_040536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40536",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -468,7 +468,7 @@ archive/issue_comments_040537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40537",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_040538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40538",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

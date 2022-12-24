@@ -14,7 +14,7 @@ archive/issues_003437.json:
     "title": "split sage.libs.ntl.decl.pxi into several files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3437",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: cwitty
@@ -37,7 +37,7 @@ archive/issue_comments_024257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3437#issuecomment-24257",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_024258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3437#issuecomment-24258",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

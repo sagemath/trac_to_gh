@@ -3,7 +3,7 @@
 archive/issues_002053.json:
 ```json
 {
-    "body": "Assignee: was\n\nOn the fastest modern hardware we have:\n\n\n```\nsage: time m = matrix(SR, 20, [1..20^2])\nCPU times: user 0.34 s, sys: 0.12 s, total: 0.45 s\nWall time: 1.05\n```\n\nwhich is frickin' slow.  And the time isn't just in coercion, since\n\n```\nsage: time v = [SR(a) for a in [1..20^2]]\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2053\n\n",
+    "body": "Assignee: @williamstein\n\nOn the fastest modern hardware we have:\n\n\n```\nsage: time m = matrix(SR, 20, [1..20^2])\nCPU times: user 0.34 s, sys: 0.12 s, total: 0.45 s\nWall time: 1.05\n```\n\nwhich is frickin' slow.  And the time isn't just in coercion, since\n\n```\nsage: time v = [SR(a) for a in [1..20^2]]\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2053\n\n",
     "created_at": "2008-02-05T14:28:48Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002053.json:
     "title": "creating symbolic matrices is insanely slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2053",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 On the fastest modern hardware we have:
 
@@ -53,7 +53,7 @@ archive/issue_comments_013289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2053#issuecomment-13289",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,16 +90,16 @@ Wall time: 13.32
 archive/issue_comments_013290.json:
 ```json
 {
-    "body": "Attachment [trac-2053-symbolic_matrices_slow.patch](tarball://root/attachments/some-uuid/ticket2053/trac-2053-symbolic_matrices_slow.patch) by was created at 2008-02-05 14:48:33",
+    "body": "Attachment [trac-2053-symbolic_matrices_slow.patch](tarball://root/attachments/some-uuid/ticket2053/trac-2053-symbolic_matrices_slow.patch) by @williamstein created at 2008-02-05 14:48:33",
     "created_at": "2008-02-05T14:48:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2053#issuecomment-13290",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-2053-symbolic_matrices_slow.patch](tarball://root/attachments/some-uuid/ticket2053/trac-2053-symbolic_matrices_slow.patch) by was created at 2008-02-05 14:48:33
+Attachment [trac-2053-symbolic_matrices_slow.patch](tarball://root/attachments/some-uuid/ticket2053/trac-2053-symbolic_matrices_slow.patch) by @williamstein created at 2008-02-05 14:48:33
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_013291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2053#issuecomment-13291",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -126,16 +126,16 @@ I cannot apply this due to a failed hunk with the docstring in set_from_list.
 archive/issue_comments_013292.json:
 ```json
 {
-    "body": "Attachment [trac-2053-fix_symbolic.patch](tarball://root/attachments/some-uuid/ticket2053/trac-2053-fix_symbolic.patch) by was created at 2008-02-06 19:12:45\n\napply this *INSTEAD*!",
+    "body": "Attachment [trac-2053-fix_symbolic.patch](tarball://root/attachments/some-uuid/ticket2053/trac-2053-fix_symbolic.patch) by @williamstein created at 2008-02-06 19:12:45\n\napply this *INSTEAD*!",
     "created_at": "2008-02-06T19:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2053#issuecomment-13292",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-2053-fix_symbolic.patch](tarball://root/attachments/some-uuid/ticket2053/trac-2053-fix_symbolic.patch) by was created at 2008-02-06 19:12:45
+Attachment [trac-2053-fix_symbolic.patch](tarball://root/attachments/some-uuid/ticket2053/trac-2053-fix_symbolic.patch) by @williamstein created at 2008-02-06 19:12:45
 
 apply this *INSTEAD*!
 
@@ -151,7 +151,7 @@ archive/issue_comments_013293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2053",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2053#issuecomment-13293",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

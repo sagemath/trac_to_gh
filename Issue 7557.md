@@ -3,7 +3,7 @@
 archive/issues_007557.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman\n\nReported on sage-support:\n\n\n```\nvar('y', domain='real')\nassume(y, 'real')\n\nabs(exp(y*I)).simplify()\n    1\n\nabs(exp(1.1*y*I)).simplify()\n    e^(1.1*I*y)\n\nThe last result is incorrect. It seems simplify() doesn't like\nfloating point?\n```\n\n\nIn this thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/c6d4c757cef8cc4a\n\n\nMore evidence:\n\n\n```\nsage: t = abs(exp(y*I)); t\nabs(e^(I*y))\nsage: t._maxima_init_()\n'abs(exp((y)*(0+%i*1)))'\n\nsage: u = abs(exp(1.1*y*I)); u\nabs(e^(1.10000000000000*I*y))\nsage: u._maxima_init_()\n'abs(exp((y)*(1.1000000000000001*I)))'\n```\n\n\nThis might be the reason:\n\n\n```\nsage: t.operands()[0].operands()[0].operands()[1].pyobject()\nI\nsage: type(t.operands()[0].operands()[0].operands()[1].pyobject())\n<type 'sage.rings.number_field.number_field_element_quadratic.NumberFieldElement_quadratic'>\n\nsage: u.operands()[0].operands()[0].operands()[1].pyobject()\n1.10000000000000*I\nsage: type(u.operands()[0].operands()[0].operands()[1].pyobject())\n<type 'sage.rings.complex_number.ComplexNumber'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7557\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nReported on sage-support:\n\n\n```\nvar('y', domain='real')\nassume(y, 'real')\n\nabs(exp(y*I)).simplify()\n    1\n\nabs(exp(1.1*y*I)).simplify()\n    e^(1.1*I*y)\n\nThe last result is incorrect. It seems simplify() doesn't like\nfloating point?\n```\n\n\nIn this thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/c6d4c757cef8cc4a\n\n\nMore evidence:\n\n\n```\nsage: t = abs(exp(y*I)); t\nabs(e^(I*y))\nsage: t._maxima_init_()\n'abs(exp((y)*(0+%i*1)))'\n\nsage: u = abs(exp(1.1*y*I)); u\nabs(e^(1.10000000000000*I*y))\nsage: u._maxima_init_()\n'abs(exp((y)*(1.1000000000000001*I)))'\n```\n\n\nThis might be the reason:\n\n\n```\nsage: t.operands()[0].operands()[0].operands()[1].pyobject()\nI\nsage: type(t.operands()[0].operands()[0].operands()[1].pyobject())\n<type 'sage.rings.number_field.number_field_element_quadratic.NumberFieldElement_quadratic'>\n\nsage: u.operands()[0].operands()[0].operands()[1].pyobject()\n1.10000000000000*I\nsage: type(u.operands()[0].operands()[0].operands()[1].pyobject())\n<type 'sage.rings.complex_number.ComplexNumber'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7557\n\n",
     "created_at": "2009-11-30T09:58:16Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_007557.json:
     "title": "conversion of complex numbers in symbolic expressions to maxima broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7557",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Reported on sage-support:
 
@@ -92,7 +92,7 @@ archive/issue_comments_064267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64267",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_064268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64268",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_064269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64269",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_064270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64270",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_064271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64271",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_064272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64272",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_064273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64273",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_064274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64274",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_064275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64275",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_064276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64276",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_064277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64277",
-    "user": "pipedream"
+    "user": "@pipedream"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_064278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64278",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_064279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64279",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_064280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64280",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_064281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64281",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -424,16 +424,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_064282.json:
 ```json
 {
-    "body": "Attachment [trac_7557-maxima_complex_number_conversion.2.patch](tarball://root/attachments/some-uuid/ticket7557/trac_7557-maxima_complex_number_conversion.2.patch) by kcrisman created at 2012-12-18 15:02:37\n\nUse this patch",
+    "body": "Attachment [trac_7557-maxima_complex_number_conversion.2.patch](tarball://root/attachments/some-uuid/ticket7557/trac_7557-maxima_complex_number_conversion.2.patch) by @kcrisman created at 2012-12-18 15:02:37\n\nUse this patch",
     "created_at": "2012-12-18T15:02:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64282",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7557-maxima_complex_number_conversion.2.patch](tarball://root/attachments/some-uuid/ticket7557/trac_7557-maxima_complex_number_conversion.2.patch) by kcrisman created at 2012-12-18 15:02:37
+Attachment [trac_7557-maxima_complex_number_conversion.2.patch](tarball://root/attachments/some-uuid/ticket7557/trac_7557-maxima_complex_number_conversion.2.patch) by @kcrisman created at 2012-12-18 15:02:37
 
 Use this patch
 
@@ -449,7 +449,7 @@ archive/issue_comments_064283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64283",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_064284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64284",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_064285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64285",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_064286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64286",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_064287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64287",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -563,7 +563,7 @@ archive/issue_comments_064288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64288",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_064289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64289",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -599,7 +599,7 @@ archive/issue_comments_064290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64290",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -636,7 +636,7 @@ archive/issue_comments_064291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64291",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -672,16 +672,16 @@ So this might be something that only works with a working abs tol, which I may n
 archive/issue_comments_064292.json:
 ```json
 {
-    "body": "Attachment [trac_7557-fix_doctest_precision.patch](tarball://root/attachments/some-uuid/ticket7557/trac_7557-fix_doctest_precision.patch) by burcin created at 2013-01-11 13:17:31",
+    "body": "Attachment [trac_7557-fix_doctest_precision.patch](tarball://root/attachments/some-uuid/ticket7557/trac_7557-fix_doctest_precision.patch) by @burcin created at 2013-01-11 13:17:31",
     "created_at": "2013-01-11T13:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64292",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7557-fix_doctest_precision.patch](tarball://root/attachments/some-uuid/ticket7557/trac_7557-fix_doctest_precision.patch) by burcin created at 2013-01-11 13:17:31
+Attachment [trac_7557-fix_doctest_precision.patch](tarball://root/attachments/some-uuid/ticket7557/trac_7557-fix_doctest_precision.patch) by @burcin created at 2013-01-11 13:17:31
 
 
 
@@ -695,7 +695,7 @@ archive/issue_comments_064293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64293",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -726,7 +726,7 @@ archive/issue_comments_064294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64294",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -744,7 +744,7 @@ archive/issue_comments_064295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64295",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -764,7 +764,7 @@ archive/issue_comments_064296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7557#issuecomment-64296",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

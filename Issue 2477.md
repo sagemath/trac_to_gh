@@ -3,7 +3,7 @@
 archive/issues_002477.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n```\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d()\n[a crappy looking plot]\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d(aspect_ratio=[1,1,1])\n[a much better looking plot]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2477\n\n",
+    "body": "Assignee: @rlmill\n\n\n```\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d()\n[a crappy looking plot]\nsage: g = graphs.PetersenGraph()\nsage: g.plot3d(aspect_ratio=[1,1,1])\n[a much better looking plot]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2477\n\n",
     "created_at": "2008-03-11T23:13:24Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002477.json:
     "title": "3d plotting of graphs -- need to force aspect_ratio=[1,1,1] by default (trivial to fix this!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2477",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 ```
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2477
 archive/issue_comments_016773.json:
 ```json
 {
-    "body": "Attachment [2477.patch](tarball://root/attachments/some-uuid/ticket2477/2477.patch) by rlm created at 2008-03-14 14:53:02",
+    "body": "Attachment [2477.patch](tarball://root/attachments/some-uuid/ticket2477/2477.patch) by @rlmill created at 2008-03-14 14:53:02",
     "created_at": "2008-03-14T14:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16773",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [2477.patch](tarball://root/attachments/some-uuid/ticket2477/2477.patch) by rlm created at 2008-03-14 14:53:02
+Attachment [2477.patch](tarball://root/attachments/some-uuid/ticket2477/2477.patch) by @rlmill created at 2008-03-14 14:53:02
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_016774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16774",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_016775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16775",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_016776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16776",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_016777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16777",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_016778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16778",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_016779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16779",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_016780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16780",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_016781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16781",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_016782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16782",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_016783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16783",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_016784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16784",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -302,16 +302,16 @@ apply instead of the previous patch.
 archive/issue_comments_016785.json:
 ```json
 {
-    "body": "Attachment [trac-2477-aspect-ratio.patch](tarball://root/attachments/some-uuid/ticket2477/trac-2477-aspect-ratio.patch) by jason created at 2008-03-30 00:44:27\n\nThe patch at 2729 fixes the vertices so they don't look like tinker toys.  The second patch above should be reviewed (it's a simplifications of the first patch).  Apply second patch only (and give rlm credit for the initial version of the patch).",
+    "body": "Attachment [trac-2477-aspect-ratio.patch](tarball://root/attachments/some-uuid/ticket2477/trac-2477-aspect-ratio.patch) by @jasongrout created at 2008-03-30 00:44:27\n\nThe patch at 2729 fixes the vertices so they don't look like tinker toys.  The second patch above should be reviewed (it's a simplifications of the first patch).  Apply second patch only (and give rlm credit for the initial version of the patch).",
     "created_at": "2008-03-30T00:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16785",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-2477-aspect-ratio.patch](tarball://root/attachments/some-uuid/ticket2477/trac-2477-aspect-ratio.patch) by jason created at 2008-03-30 00:44:27
+Attachment [trac-2477-aspect-ratio.patch](tarball://root/attachments/some-uuid/ticket2477/trac-2477-aspect-ratio.patch) by @jasongrout created at 2008-03-30 00:44:27
 
 The patch at 2729 fixes the vertices so they don't look like tinker toys.  The second patch above should be reviewed (it's a simplifications of the first patch).  Apply second patch only (and give rlm credit for the initial version of the patch).
 
@@ -327,7 +327,7 @@ archive/issue_comments_016786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16786",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_016787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16787",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_016788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2477",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2477#issuecomment-16788",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

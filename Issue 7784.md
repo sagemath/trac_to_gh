@@ -3,7 +3,7 @@
 archive/issues_007784.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu robert.marik\n\nObserve in sagenb-0.4.8:\n\n```\nflat:src wstein$ hg status\nM setup.py\n? release_notes.txt\n? setup.cfg\nflat:src wstein$ more setup.cfg\n[egg_info]\ntag_build =\ntag_date = 0\ntag_svn_revision = 0\n```\n\n\n\nThis makes me think it is human written?  http://www.python.org/doc/2.1.3/dist/setup-config.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/7784\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu @robert-marik\n\nObserve in sagenb-0.4.8:\n\n```\nflat:src wstein$ hg status\nM setup.py\n? release_notes.txt\n? setup.cfg\nflat:src wstein$ more setup.cfg\n[egg_info]\ntag_build =\ntag_date = 0\ntag_svn_revision = 0\n```\n\n\n\nThis makes me think it is human written?  http://www.python.org/doc/2.1.3/dist/setup-config.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/7784\n\n",
     "created_at": "2009-12-29T08:26:16Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007784.json:
     "title": "sagenb -- either include setup.cfg if it is human-written or put it in the .hgignore file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7784",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mvngu robert.marik
+CC:  mvngu @robert-marik
 
 Observe in sagenb-0.4.8:
 
@@ -55,7 +55,7 @@ archive/issue_comments_067122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67122",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_067123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67123",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_067124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67124",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -104,16 +104,16 @@ Changing status from new to needs_review.
 archive/issue_comments_067125.json:
 ```json
 {
-    "body": "Attachment [trac_7784-hgignore_update.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-hgignore_update.patch) by mpatel created at 2010-01-25 03:43:14\n\nIn the patch, I've added `setup.cfg` and `release_notes.txt` and attempted to remove unnecessary entries.  Please feel free to go further.",
+    "body": "Attachment [trac_7784-hgignore_update.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-hgignore_update.patch) by @qed777 created at 2010-01-25 03:43:14\n\nIn the patch, I've added `setup.cfg` and `release_notes.txt` and attempted to remove unnecessary entries.  Please feel free to go further.",
     "created_at": "2010-01-25T03:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67125",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7784-hgignore_update.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-hgignore_update.patch) by mpatel created at 2010-01-25 03:43:14
+Attachment [trac_7784-hgignore_update.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-hgignore_update.patch) by @qed777 created at 2010-01-25 03:43:14
 
 In the patch, I've added `setup.cfg` and `release_notes.txt` and attempted to remove unnecessary entries.  Please feel free to go further.
 
@@ -129,7 +129,7 @@ archive/issue_comments_067126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67126",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -142,16 +142,16 @@ I think I should restore `push` and `pull`.
 archive/issue_comments_067127.json:
 ```json
 {
-    "body": "Attachment [trac_7784-hgignore_update.2.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-hgignore_update.2.patch) by mpatel created at 2010-01-25 04:29:29\n\nInclude `pull` and `push`.  Replaces previous.",
+    "body": "Attachment [trac_7784-hgignore_update.2.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-hgignore_update.2.patch) by @qed777 created at 2010-01-25 04:29:29\n\nInclude `pull` and `push`.  Replaces previous.",
     "created_at": "2010-01-25T04:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67127",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7784-hgignore_update.2.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-hgignore_update.2.patch) by mpatel created at 2010-01-25 04:29:29
+Attachment [trac_7784-hgignore_update.2.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-hgignore_update.2.patch) by @qed777 created at 2010-01-25 04:29:29
 
 Include `pull` and `push`.  Replaces previous.
 
@@ -167,7 +167,7 @@ archive/issue_comments_067128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67128",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_067129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67129",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_067130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67130",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -218,16 +218,16 @@ Changing priority from minor to critical.
 archive/issue_comments_067131.json:
 ```json
 {
-    "body": "Attachment [trac_7784-sagenb_spkg_files.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-sagenb_spkg_files.patch) by mpatel created at 2010-02-01 03:39:31\n\nAdd Makefile; update .hgignore and spkg-related files.  Apply only this patch.",
+    "body": "Attachment [trac_7784-sagenb_spkg_files.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-sagenb_spkg_files.patch) by @qed777 created at 2010-02-01 03:39:31\n\nAdd Makefile; update .hgignore and spkg-related files.  Apply only this patch.",
     "created_at": "2010-02-01T03:39:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67131",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7784-sagenb_spkg_files.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-sagenb_spkg_files.patch) by mpatel created at 2010-02-01 03:39:31
+Attachment [trac_7784-sagenb_spkg_files.patch](tarball://root/attachments/some-uuid/ticket7784/trac_7784-sagenb_spkg_files.patch) by @qed777 created at 2010-02-01 03:39:31
 
 Add Makefile; update .hgignore and spkg-related files.  Apply only this patch.
 
@@ -243,7 +243,7 @@ archive/issue_comments_067132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67132",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_067133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67133",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -317,16 +317,16 @@ This would generate a release note for sagenb x.y.z.
 archive/issue_comments_067135.json:
 ```json
 {
-    "body": "Changing assignee from was to mpatel.",
+    "body": "Changing assignee from @williamstein to @qed777.",
     "created_at": "2010-02-01T06:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67135",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Changing assignee from was to mpatel.
+Changing assignee from @williamstein to @qed777.
 
 
 
@@ -340,7 +340,7 @@ archive/issue_comments_067136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67136",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -353,16 +353,16 @@ Thanks!  I'll definitely take a closer look (though not immediately).  I assume 
 archive/issue_comments_067137.json:
 ```json
 {
-    "body": "Changing assignee from mpatel to was.",
+    "body": "Changing assignee from @qed777 to @williamstein.",
     "created_at": "2010-02-01T07:47:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67137",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Changing assignee from mpatel to was.
+Changing assignee from @qed777 to @williamstein.
 
 
 
@@ -412,7 +412,7 @@ archive/issue_comments_067140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7784#issuecomment-67140",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

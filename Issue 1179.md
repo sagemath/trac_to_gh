@@ -70,16 +70,16 @@ Changing status from new to assigned.
 archive/issue_comments_007281.json:
 ```json
 {
-    "body": "Attachment [bash.patch](tarball://root/attachments/some-uuid/ticket1179/bash.patch) by was created at 2007-12-02 02:56:34\n\nLooks good to me.",
+    "body": "Attachment [bash.patch](tarball://root/attachments/some-uuid/ticket1179/bash.patch) by @williamstein created at 2007-12-02 02:56:34\n\nLooks good to me.",
     "created_at": "2007-12-02T02:56:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1179#issuecomment-7281",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [bash.patch](tarball://root/attachments/some-uuid/ticket1179/bash.patch) by was created at 2007-12-02 02:56:34
+Attachment [bash.patch](tarball://root/attachments/some-uuid/ticket1179/bash.patch) by @williamstein created at 2007-12-02 02:56:34
 
 Looks good to me.
 
@@ -95,7 +95,7 @@ archive/issue_comments_007282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1179",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1179#issuecomment-7282",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

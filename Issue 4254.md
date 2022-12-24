@@ -3,7 +3,7 @@
 archive/issues_004254.json:
 ```json
 {
-    "body": "Assignee: malb\n\n`correct_only` is only valid for GF(2). Make sure it is passed on correctly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4254\n\n",
+    "body": "Assignee: @malb\n\n`correct_only` is only valid for GF(2). Make sure it is passed on correctly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4254\n\n",
     "created_at": "2008-10-08T14:18:45Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_004254.json:
     "title": "[with patch, needs review] better parameter parsing for mq.SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4254",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 `correct_only` is only valid for GF(2). Make sure it is passed on correctly.
 
@@ -55,7 +55,7 @@ archive/issue_comments_030942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4254#issuecomment-30942",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -68,16 +68,16 @@ apply before other patch
 archive/issue_comments_030943.json:
 ```json
 {
-    "body": "Attachment [sr_convenience.patch](tarball://root/attachments/some-uuid/ticket4254/sr_convenience.patch) by malb created at 2008-11-23 22:25:56\n\nadded doctests",
+    "body": "Attachment [sr_convenience.patch](tarball://root/attachments/some-uuid/ticket4254/sr_convenience.patch) by @malb created at 2008-11-23 22:25:56\n\nadded doctests",
     "created_at": "2008-11-23T22:25:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4254#issuecomment-30943",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sr_convenience.patch](tarball://root/attachments/some-uuid/ticket4254/sr_convenience.patch) by malb created at 2008-11-23 22:25:56
+Attachment [sr_convenience.patch](tarball://root/attachments/some-uuid/ticket4254/sr_convenience.patch) by @malb created at 2008-11-23 22:25:56
 
 added doctests
 
@@ -88,16 +88,16 @@ added doctests
 archive/issue_comments_030944.json:
 ```json
 {
-    "body": "Attachment [sr_parameters.2.patch](tarball://root/attachments/some-uuid/ticket4254/sr_parameters.2.patch) by malb created at 2008-11-23 22:26:58\n\nI added doctests and the patch this patch depends on which I forgot to submit last time.",
+    "body": "Attachment [sr_parameters.2.patch](tarball://root/attachments/some-uuid/ticket4254/sr_parameters.2.patch) by @malb created at 2008-11-23 22:26:58\n\nI added doctests and the patch this patch depends on which I forgot to submit last time.",
     "created_at": "2008-11-23T22:26:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4254#issuecomment-30944",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sr_parameters.2.patch](tarball://root/attachments/some-uuid/ticket4254/sr_parameters.2.patch) by malb created at 2008-11-23 22:26:58
+Attachment [sr_parameters.2.patch](tarball://root/attachments/some-uuid/ticket4254/sr_parameters.2.patch) by @malb created at 2008-11-23 22:26:58
 
 I added doctests and the patch this patch depends on which I forgot to submit last time.
 
@@ -113,7 +113,7 @@ archive/issue_comments_030945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4254#issuecomment-30945",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_030946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4254#issuecomment-30946",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_030947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4254#issuecomment-30947",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

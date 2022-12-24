@@ -3,7 +3,7 @@
 archive/issues_003695.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nSee the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3695\n\n",
+    "body": "Assignee: @garyfurnish\n\nSee the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3695\n\n",
     "created_at": "2008-07-21T18:37:49Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_003695.json:
     "title": "factor?? improved",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3695",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 See the patch.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3695
 archive/issue_comments_026216.json:
 ```json
 {
-    "body": "Attachment [factor_docstring.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring.patch) by was created at 2008-07-21 18:55:38\n\nREFEREE:\n\nLooks good. It is also safe to apply to sage-3.0.6 even since it contains no new doctests and no new source code.",
+    "body": "Attachment [factor_docstring.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring.patch) by @williamstein created at 2008-07-21 18:55:38\n\nREFEREE:\n\nLooks good. It is also safe to apply to sage-3.0.6 even since it contains no new doctests and no new source code.",
     "created_at": "2008-07-21T18:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26216",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [factor_docstring.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring.patch) by was created at 2008-07-21 18:55:38
+Attachment [factor_docstring.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring.patch) by @williamstein created at 2008-07-21 18:55:38
 
 REFEREE:
 
@@ -95,7 +95,7 @@ archive/issue_comments_026219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26219",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_026220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26220",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_026221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26221",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_026222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26222",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -231,16 +231,16 @@ Michael
 archive/issue_comments_026224.json:
 ```json
 {
-    "body": "Attachment [factor_docstring_extra.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring_extra.patch) by cremona created at 2008-07-21 20:32:23\n\nReplying to [comment:7 mabshoff]:\n> There is a slight typo in John's patch:\n> {{{\n> A Factorization contains bothe the \n> }}}\n> \n> Cheers,\n> \n> Michael\n\n\nI fixed that by text-editing the patch file and re-uploading it in place of the original (of mine).  I hope that works....",
+    "body": "Attachment [factor_docstring_extra.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring_extra.patch) by @JohnCremona created at 2008-07-21 20:32:23\n\nReplying to [comment:7 mabshoff]:\n> There is a slight typo in John's patch:\n> {{{\n> A Factorization contains bothe the \n> }}}\n> \n> Cheers,\n> \n> Michael\n\n\nI fixed that by text-editing the patch file and re-uploading it in place of the original (of mine).  I hope that works....",
     "created_at": "2008-07-21T20:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26224",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [factor_docstring_extra.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring_extra.patch) by cremona created at 2008-07-21 20:32:23
+Attachment [factor_docstring_extra.patch](tarball://root/attachments/some-uuid/ticket3695/factor_docstring_extra.patch) by @JohnCremona created at 2008-07-21 20:32:23
 
 Replying to [comment:7 mabshoff]:
 > There is a slight typo in John's patch:
@@ -267,7 +267,7 @@ archive/issue_comments_026225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26225",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

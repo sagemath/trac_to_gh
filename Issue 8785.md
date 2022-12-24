@@ -3,7 +3,7 @@
 archive/issues_008785.json:
 ```json
 {
-    "body": "Assignee: jason\n\nIt turns out that on some platforms, importing multiprocessing, then twisted, leads to an \"int object is not callable\" TypeError.  This breaks devel/sage/sage/all.py's quit_sage function, causing a big traceback at exit.   This could also cause great confusion for people writing a program that uses `@`parallel('multiprocessing') followed by anything involving twisted. \n\nA simple fix is to import the relevant part of twisted before using multiprocessing in `@`parallel.   The attached patch does this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8785\n\n",
+    "body": "Assignee: @jasongrout\n\nIt turns out that on some platforms, importing multiprocessing, then twisted, leads to an \"int object is not callable\" TypeError.  This breaks devel/sage/sage/all.py's quit_sage function, causing a big traceback at exit.   This could also cause great confusion for people writing a program that uses `@`parallel('multiprocessing') followed by anything involving twisted. \n\nA simple fix is to import the relevant part of twisted before using multiprocessing in `@`parallel.   The attached patch does this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8785\n\n",
     "created_at": "2010-04-27T20:54:37Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_008785.json:
     "title": "avoid subtle interaction between importing multiprocessing and twisted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8785",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 It turns out that on some platforms, importing multiprocessing, then twisted, leads to an "int object is not callable" TypeError.  This breaks devel/sage/sage/all.py's quit_sage function, causing a big traceback at exit.   This could also cause great confusion for people writing a program that uses `@`parallel('multiprocessing') followed by anything involving twisted. 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8785
 archive/issue_comments_080438.json:
 ```json
 {
-    "body": "Attachment [trac_8785.patch](tarball://root/attachments/some-uuid/ticket8785/trac_8785.patch) by was created at 2010-04-27 20:58:45",
+    "body": "Attachment [trac_8785.patch](tarball://root/attachments/some-uuid/ticket8785/trac_8785.patch) by @williamstein created at 2010-04-27 20:58:45",
     "created_at": "2010-04-27T20:58:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8785#issuecomment-80438",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8785.patch](tarball://root/attachments/some-uuid/ticket8785/trac_8785.patch) by was created at 2010-04-27 20:58:45
+Attachment [trac_8785.patch](tarball://root/attachments/some-uuid/ticket8785/trac_8785.patch) by @williamstein created at 2010-04-27 20:58:45
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_080439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8785#issuecomment-80439",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_080442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8785#issuecomment-80442",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_080443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8785",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8785#issuecomment-80443",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

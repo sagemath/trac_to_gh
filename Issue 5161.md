@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5161
 archive/issue_comments_039560.json:
 ```json
 {
-    "body": "Attachment [trac_5161.patch](tarball://root/attachments/some-uuid/ticket5161/trac_5161.patch) by mhansen created at 2009-02-03 01:00:39\n\nLooks good to me.",
+    "body": "Attachment [trac_5161.patch](tarball://root/attachments/some-uuid/ticket5161/trac_5161.patch) by @mwhansen created at 2009-02-03 01:00:39\n\nLooks good to me.",
     "created_at": "2009-02-03T01:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5161",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5161#issuecomment-39560",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5161.patch](tarball://root/attachments/some-uuid/ticket5161/trac_5161.patch) by mhansen created at 2009-02-03 01:00:39
+Attachment [trac_5161.patch](tarball://root/attachments/some-uuid/ticket5161/trac_5161.patch) by @mwhansen created at 2009-02-03 01:00:39
 
 Looks good to me.
 

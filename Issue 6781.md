@@ -3,7 +3,7 @@
 archive/issues_006781.json:
 ```json
 {
-    "body": "CC:  burcin\n\necl can be run \"embedded\" and has a fairly clean C interface, which should be tightly wrappable in cython.\nThere are good macros provided for accessing ecl objects, and many of the atomic values should be fairly easily mappable to/from sage or python native datatypes. Hence, data communication on binary level with the ecl library should be doable, and would be a stepping stone towards a binary interface with maxima.\n\nISSUES:\n\n1. I quote from Section 5.2 of the ECL reference manual:\n\nThe collector will not scan the data sectors. If you embed ECL in another program, or link libraries with ECL, you will have to notify ECL which variables point to lisp objects.\n\nSo, cython wrapper objects that keep track of an object under ECL memory management will have to do something, but the manual doesn't say what.\n\n2. Maxima currently gets built as a stand-alone executable. Somewhere in the build process, there must exist a lisp-environment that has Maxima built but not running. In order to communicate with maxima as a library (via ECL's API), one would have to get such an image. It does look like Maxima just store its state in LISP's global state, so just calling maxima routines from LISP should work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6781\n\n",
+    "body": "CC:  @burcin\n\necl can be run \"embedded\" and has a fairly clean C interface, which should be tightly wrappable in cython.\nThere are good macros provided for accessing ecl objects, and many of the atomic values should be fairly easily mappable to/from sage or python native datatypes. Hence, data communication on binary level with the ecl library should be doable, and would be a stepping stone towards a binary interface with maxima.\n\nISSUES:\n\n1. I quote from Section 5.2 of the ECL reference manual:\n\nThe collector will not scan the data sectors. If you embed ECL in another program, or link libraries with ECL, you will have to notify ECL which variables point to lisp objects.\n\nSo, cython wrapper objects that keep track of an object under ECL memory management will have to do something, but the manual doesn't say what.\n\n2. Maxima currently gets built as a stand-alone executable. Somewhere in the build process, there must exist a lisp-environment that has Maxima built but not running. In order to communicate with maxima as a library (via ECL's API), one would have to get such an image. It does look like Maxima just store its state in LISP's global state, so just calling maxima routines from LISP should work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6781\n\n",
     "created_at": "2009-08-20T20:00:57Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006781.json:
     "title": "Library access to ecl",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6781",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-CC:  burcin
+CC:  @burcin
 
 ecl can be run "embedded" and has a fairly clean C interface, which should be tightly wrappable in cython.
 There are good macros provided for accessing ecl objects, and many of the atomic values should be fairly easily mappable to/from sage or python native datatypes. Hence, data communication on binary level with the ecl library should be doable, and would be a stepping stone towards a binary interface with maxima.
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6781
 archive/issue_comments_055842.json:
 ```json
 {
-    "body": "Attachment [ecllib.2.patch](tarball://root/attachments/some-uuid/ticket6781/ecllib.2.patch) by nbruin created at 2009-08-22 00:04:53\n\nPatch to allow library access to ecl",
+    "body": "Attachment [ecllib.2.patch](tarball://root/attachments/some-uuid/ticket6781/ecllib.2.patch) by @nbruin created at 2009-08-22 00:04:53\n\nPatch to allow library access to ecl",
     "created_at": "2009-08-22T00:04:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55842",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [ecllib.2.patch](tarball://root/attachments/some-uuid/ticket6781/ecllib.2.patch) by nbruin created at 2009-08-22 00:04:53
+Attachment [ecllib.2.patch](tarball://root/attachments/some-uuid/ticket6781/ecllib.2.patch) by @nbruin created at 2009-08-22 00:04:53
 
 Patch to allow library access to ecl
 
@@ -68,7 +68,7 @@ archive/issue_comments_055843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55843",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_055844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55844",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_055845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55845",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -191,16 +191,16 @@ ecl -eval "(princ (SI:GET-LIBRARY-PATHNAME))" -eval "(quit)"
 archive/issue_comments_055846.json:
 ```json
 {
-    "body": "Set assignee to nbruin.",
+    "body": "Set assignee to @nbruin.",
     "created_at": "2009-10-26T04:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55846",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Set assignee to nbruin.
+Set assignee to @nbruin.
 
 
 
@@ -214,7 +214,7 @@ archive/issue_comments_055847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55847",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_055848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55848",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_055849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55849",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_055850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55850",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_055851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55851",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_055852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55852",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_055853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55853",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_055854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55854",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_055855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55855",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_055856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55856",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_055857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55857",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -521,7 +521,7 @@ archive/issue_comments_055858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55858",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -534,16 +534,16 @@ Does this still work with the newest Maxima?  We don't have an spkg yet, but hop
 archive/issue_comments_055859.json:
 ```json
 {
-    "body": "Attachment [ecllib.patch](tarball://root/attachments/some-uuid/ticket6781/ecllib.patch) by nbruin created at 2010-01-16 09:01:14\n\nRebased against 4.3, with str -> bytes changes",
+    "body": "Attachment [ecllib.patch](tarball://root/attachments/some-uuid/ticket6781/ecllib.patch) by @nbruin created at 2010-01-16 09:01:14\n\nRebased against 4.3, with str -> bytes changes",
     "created_at": "2010-01-16T09:01:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55859",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
-Attachment [ecllib.patch](tarball://root/attachments/some-uuid/ticket6781/ecllib.patch) by nbruin created at 2010-01-16 09:01:14
+Attachment [ecllib.patch](tarball://root/attachments/some-uuid/ticket6781/ecllib.patch) by @nbruin created at 2010-01-16 09:01:14
 
 Rebased against 4.3, with str -> bytes changes
 
@@ -559,7 +559,7 @@ archive/issue_comments_055860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55860",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -577,7 +577,7 @@ archive/issue_comments_055861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55861",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_055862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55862",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -731,7 +731,7 @@ archive/issue_comments_055865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55865",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -818,7 +818,7 @@ archive/issue_comments_055866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55866",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -907,7 +907,7 @@ archive/issue_comments_055869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55869",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -986,7 +986,7 @@ archive/issue_comments_055871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55871",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1004,7 +1004,7 @@ archive/issue_comments_055872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55872",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1022,7 +1022,7 @@ archive/issue_comments_055873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55873",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1040,7 +1040,7 @@ archive/issue_comments_055874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55874",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1053,16 +1053,16 @@ Changing component from packages to interfaces.
 archive/issue_comments_055875.json:
 ```json
 {
-    "body": "Attachment [trac_6781-review.patch](tarball://root/attachments/some-uuid/ticket6781/trac_6781-review.patch) by burcin created at 2010-04-02 23:38:17\n\nattachment:trac_6781-review.patch contains some minor changes also mentioned in comment:22. I give a positive review to attachment:ecllib.patch, if someone can review my changes this will be good to go.\n\nThe patches to be applied are:\n* attachment:ecllib.patch\n* attachment:trac_6781-review.patch",
+    "body": "Attachment [trac_6781-review.patch](tarball://root/attachments/some-uuid/ticket6781/trac_6781-review.patch) by @burcin created at 2010-04-02 23:38:17\n\nattachment:trac_6781-review.patch contains some minor changes also mentioned in comment:22. I give a positive review to attachment:ecllib.patch, if someone can review my changes this will be good to go.\n\nThe patches to be applied are:\n* attachment:ecllib.patch\n* attachment:trac_6781-review.patch",
     "created_at": "2010-04-02T23:38:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55875",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6781-review.patch](tarball://root/attachments/some-uuid/ticket6781/trac_6781-review.patch) by burcin created at 2010-04-02 23:38:17
+Attachment [trac_6781-review.patch](tarball://root/attachments/some-uuid/ticket6781/trac_6781-review.patch) by @burcin created at 2010-04-02 23:38:17
 
 attachment:trac_6781-review.patch contains some minor changes also mentioned in comment:22. I give a positive review to attachment:ecllib.patch, if someone can review my changes this will be good to go.
 
@@ -1082,7 +1082,7 @@ archive/issue_comments_055876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55876",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -1109,16 +1109,16 @@ Thanks for trying to unstall the inclusion of this patch!
 archive/issue_comments_055877.json:
 ```json
 {
-    "body": "Attachment [trac_6781-review.take2.patch](tarball://root/attachments/some-uuid/ticket6781/trac_6781-review.take2.patch) by burcin created at 2010-04-12 08:55:12\n\nReplying to [comment:28 nbruin]:\n> That all looks great. However, I think the PY_NEW call should really be\n {{{\n cdef EclObject obj = EclObject.__new__(EclObject)\n }}}\n> According to\n> http://wiki.cython.org/FAQ#CanCythoncreateobjectsorapplyoperatorstolocallycreatedobjectsaspureCcode.3F\n> it seems that PY_NEW was a hack that was only required prior to Cython 0.12\n\nThanks for pointing this out. I didn't know the new convention.\n\n> A lot of the includes are not necessary either for the code to seemingly work properly. Wouldn't it be better to leave them out?\n\nThe includes weren't necessary at all after getting rid of the `PY_NEW` call. \n\nI uploaded a new patch attachment:trac_6781-review.take2.patch addressing these comments. The new patch replaces attachment:trac_6781-review.patch.\n\n> I am probably not allowed to give the patch a positive review, but I can confirm that the original reviewer requested those changes to be made and they look fine to me (the author of the original enhancement).\n\nYou can change the ticket to positive review. I reviewed your patch and gave a positive review, if you're ok with my additional changes and think that they deserve a positive review, then the whole ticket is good to go. \n\n> Thanks for trying to unstall the inclusion of this patch!\n\nI want to get the rest of the interface (#7377) merged ASAP as well. Unfortunately we had a setback with #8645. I hope the latter gets resolved soon so we can proceed.\n\n\nBased on Nils' comments above, I am changing this to a positive review.\n\nThe patches to be applied are:\n* attachment:ecllib.patch\n* attachment:trac_6781-review.take2.patch",
+    "body": "Attachment [trac_6781-review.take2.patch](tarball://root/attachments/some-uuid/ticket6781/trac_6781-review.take2.patch) by @burcin created at 2010-04-12 08:55:12\n\nReplying to [comment:28 nbruin]:\n> That all looks great. However, I think the PY_NEW call should really be\n {{{\n cdef EclObject obj = EclObject.__new__(EclObject)\n }}}\n> According to\n> http://wiki.cython.org/FAQ#CanCythoncreateobjectsorapplyoperatorstolocallycreatedobjectsaspureCcode.3F\n> it seems that PY_NEW was a hack that was only required prior to Cython 0.12\n\nThanks for pointing this out. I didn't know the new convention.\n\n> A lot of the includes are not necessary either for the code to seemingly work properly. Wouldn't it be better to leave them out?\n\nThe includes weren't necessary at all after getting rid of the `PY_NEW` call. \n\nI uploaded a new patch attachment:trac_6781-review.take2.patch addressing these comments. The new patch replaces attachment:trac_6781-review.patch.\n\n> I am probably not allowed to give the patch a positive review, but I can confirm that the original reviewer requested those changes to be made and they look fine to me (the author of the original enhancement).\n\nYou can change the ticket to positive review. I reviewed your patch and gave a positive review, if you're ok with my additional changes and think that they deserve a positive review, then the whole ticket is good to go. \n\n> Thanks for trying to unstall the inclusion of this patch!\n\nI want to get the rest of the interface (#7377) merged ASAP as well. Unfortunately we had a setback with #8645. I hope the latter gets resolved soon so we can proceed.\n\n\nBased on Nils' comments above, I am changing this to a positive review.\n\nThe patches to be applied are:\n* attachment:ecllib.patch\n* attachment:trac_6781-review.take2.patch",
     "created_at": "2010-04-12T08:55:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55877",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6781-review.take2.patch](tarball://root/attachments/some-uuid/ticket6781/trac_6781-review.take2.patch) by burcin created at 2010-04-12 08:55:12
+Attachment [trac_6781-review.take2.patch](tarball://root/attachments/some-uuid/ticket6781/trac_6781-review.take2.patch) by @burcin created at 2010-04-12 08:55:12
 
 Replying to [comment:28 nbruin]:
 > That all looks great. However, I think the PY_NEW call should really be
@@ -1164,7 +1164,7 @@ archive/issue_comments_055878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55878",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1182,7 +1182,7 @@ archive/issue_comments_055879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55879",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1200,7 +1200,7 @@ archive/issue_comments_055880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55880",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1218,7 +1218,7 @@ archive/issue_comments_055881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55881",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1236,7 +1236,7 @@ archive/issue_comments_055882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55882",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1257,7 +1257,7 @@ archive/issue_comments_055883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55883",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1275,7 +1275,7 @@ archive/issue_comments_055884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55884",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1293,7 +1293,7 @@ archive/issue_comments_055885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55885",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1306,16 +1306,16 @@ new version of SAGE_ROOT/spkg/standard/deps
 archive/issue_comments_055886.json:
 ```json
 {
-    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket6781/deps.diff) by jhpalmieri created at 2010-04-16 02:49:50\n\ndiff for the file \"deps\"",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket6781/deps.diff) by @jhpalmieri created at 2010-04-16 02:49:50\n\ndiff for the file \"deps\"",
     "created_at": "2010-04-16T02:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55886",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket6781/deps.diff) by jhpalmieri created at 2010-04-16 02:49:50
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket6781/deps.diff) by @jhpalmieri created at 2010-04-16 02:49:50
 
 diff for the file "deps"
 
@@ -1331,7 +1331,7 @@ archive/issue_comments_055887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55887",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1349,7 +1349,7 @@ archive/issue_comments_055888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55888",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1367,7 +1367,7 @@ archive/issue_comments_055889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55889",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1385,7 +1385,7 @@ archive/issue_comments_055890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55890",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1403,7 +1403,7 @@ archive/issue_comments_055891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55891",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1421,7 +1421,7 @@ archive/issue_comments_055892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55892",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1439,7 +1439,7 @@ archive/issue_comments_055893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55893",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1459,7 +1459,7 @@ archive/issue_comments_055894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55894",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1477,7 +1477,7 @@ archive/issue_comments_055895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55895",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006690.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  wdj\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6690\n\n",
+    "body": "Assignee: tba\n\nCC:  @wdjoyner\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6690\n\n",
     "created_at": "2009-08-08T17:35:54Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_006690.json:
 ```
 Assignee: tba
 
-CC:  wdj
+CC:  @wdjoyner
 
 As the subject says.
 
@@ -52,16 +52,16 @@ based on Sage 4.1.1.rc2
 archive/issue_comments_054996.json:
 ```json
 {
-    "body": "Attachment [trac_6690-spell-check-coding.patch](tarball://root/attachments/some-uuid/ticket6690/trac_6690-spell-check-coding.patch) by was created at 2009-08-11 18:09:32",
+    "body": "Attachment [trac_6690-spell-check-coding.patch](tarball://root/attachments/some-uuid/ticket6690/trac_6690-spell-check-coding.patch) by @williamstein created at 2009-08-11 18:09:32",
     "created_at": "2009-08-11T18:09:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6690#issuecomment-54996",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6690-spell-check-coding.patch](tarball://root/attachments/some-uuid/ticket6690/trac_6690-spell-check-coding.patch) by was created at 2009-08-11 18:09:32
+Attachment [trac_6690-spell-check-coding.patch](tarball://root/attachments/some-uuid/ticket6690/trac_6690-spell-check-coding.patch) by @williamstein created at 2009-08-11 18:09:32
 
 
 

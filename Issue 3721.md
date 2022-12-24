@@ -3,7 +3,7 @@
 archive/issues_003721.json:
 ```json
 {
-    "body": "Assignee: yi\n\ndsage tests currently ignore the SAGE_TESTDIR environment variable, resulting in permission denied errors for users who don't have write access to their Sage install.\n\nI've attached a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3721\n\n",
+    "body": "Assignee: @yqiang\n\ndsage tests currently ignore the SAGE_TESTDIR environment variable, resulting in permission denied errors for users who don't have write access to their Sage install.\n\nI've attached a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3721\n\n",
     "created_at": "2008-07-25T05:31:34Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_003721.json:
     "title": "[with patch; needs review] Use SAGE_TESTDIR for dsage unit tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3721",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 dsage tests currently ignore the SAGE_TESTDIR environment variable, resulting in permission denied errors for users who don't have write access to their Sage install.
 

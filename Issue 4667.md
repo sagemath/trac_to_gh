@@ -3,7 +3,7 @@
 archive/issues_004667.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cremona was\n\nKeywords: padic l-functions, quadratic twists\n\nThis ticket is aimed at implementing p-adic L-function of quadratic twists of elliptic curves.\n\nOf course one could compute the modular symbols for the twist and then the p-adic L-function, but it is much faster to use the simple formula for the twisted modular symbols as a sum of \nmodular symbols. See section 8 in Mazur-Tate-Teitelbaum = [MTT].\n\nHere is a list of things implemented and changed by this patch. Maybe this is too long and it\nwould be preferable to split it up into smaller patches. I will add more documentation and more compatibility checks in the docstring.\n\n## ell_modular_symbol.py\n\nI changed completely the normalization. Until now, the normalization was done in such a way as to guarantee that [0]+, the modular_symbol(0) for sign=+1, is equal to L(E_0,1)/Omega_E_0, where E_0 is the optimal X_0(N) curve in the isogeny class of E and Omega_* is the least positive real period of E. Up to sign, which was arbitrary, and up to a factor 2, which comes from the fact that we do not know that the Manin-constant is 1 as it should be. (I hope I got this right).\n\nNow instead I normalize it in such a way as to make sure that [0]+ is equal to L(E,1)/Omega_E. So the result will depend on the curve E and not only on the isogeny class. Let {0}+ be the non-normalized modular symbol. If the above algebraic L-value is non-zero, then so is {0}+ and they are rational multiples of each other with small numerator and denominator. So we just compute a real approximation to this fraction and we scale {0}+ to get [0]+. If the L-value is zero, then we try to use a quadratic twist of E by a small positive (or later negative) fundamental discriminant, hoping that we will hit one that is not zero. If we fail to find one, we have to go back to the previous way of normalizing, but multiplying with Omega_E_0/Omega_E as to make sure that the missed factor +-1/2 is the same for all curves in the isogeny class. And we issue a warning to the user.\n\nRight now, I substituted the normalization by mine, it would be easy to change the optional argument in such a way as to allow the user to choose between the two normalizations.\n\nI have tested the correctness of this for hundreds of curves, using twists by -31 and 37 that do\nnot appear in the code. Of course, there will be curves for which the new normalization fails. For negative modular symbols we only use negative twists (in order to avoid an obvious infinite loop). But we are safe to assume that negative modular symbols are not very often used without the positive ones.\n\nI have not rewritten the normalization of modular symbols coming from ec_lib in padic_lseries.py. This should be done, but I have no idea if the negative symbols can be computed with that library.\n\nAdded more docstrings.\n\n## padic_lseries.py\n\nI got rid of _quotient_of_period which is no longer needed because of the above normalization.\nI added a try around the cremona-label look-up. Caused a bug before. modular_symbol has now an optional argument to twist by a fundamental discriminant D. Similar for measure and series.\nNew we need a function to compute the quotient of Omega_E by Omega_(ED)*sqrt(D), if D>0, or Omega-_E by  Omega_(ED)*sqrt(-D), if D<0. According to [MTT] this should be 1 or 2. This\nis done in _quotient_of_periods_to_twist.\n\nFurthermore, I have changed the sign of the Dp-values height, just like I had to change the sign in the canonical p-adic height in the ordinary case.\n \nSo far I have tested this on good ordinary primes for curves of rank 0 and rank 1 and some rank 2 curves. I have also checked a few supersingular cases.\n\n## padics.py\n\nI changed the sign of the padic height. It is now clear that there must be a -1 in front to make sure that the p-adic BSD conjecture holds as stated in [MTT].\nI also removed the statement that the equation must be globally minimal to compute the height as the gens() no longer fails for non-minimal curves.\n\n\n## ell_rational_field.py\n\nadjusted the documentation according to the change in ell_modular_symbol.\nadded a function minimal_quadratic_twist that find a twist of E with minimal conductor. This is used in sha_tate.py but could be of use later in rank as well.\n\ntodo : normalization if using ec_lib (?)\n\ntodo : add in rank() the possibility to use modular-symbols for a twisted curve with low conductor\n\n## sha_tate.py\n\nan_padic has now an optional argument to control whether the modular symbols computations can be done on a minimal quadratic twist instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4667\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona @williamstein\n\nKeywords: padic l-functions, quadratic twists\n\nThis ticket is aimed at implementing p-adic L-function of quadratic twists of elliptic curves.\n\nOf course one could compute the modular symbols for the twist and then the p-adic L-function, but it is much faster to use the simple formula for the twisted modular symbols as a sum of \nmodular symbols. See section 8 in Mazur-Tate-Teitelbaum = [MTT].\n\nHere is a list of things implemented and changed by this patch. Maybe this is too long and it\nwould be preferable to split it up into smaller patches. I will add more documentation and more compatibility checks in the docstring.\n\n## ell_modular_symbol.py\n\nI changed completely the normalization. Until now, the normalization was done in such a way as to guarantee that [0]+, the modular_symbol(0) for sign=+1, is equal to L(E_0,1)/Omega_E_0, where E_0 is the optimal X_0(N) curve in the isogeny class of E and Omega_* is the least positive real period of E. Up to sign, which was arbitrary, and up to a factor 2, which comes from the fact that we do not know that the Manin-constant is 1 as it should be. (I hope I got this right).\n\nNow instead I normalize it in such a way as to make sure that [0]+ is equal to L(E,1)/Omega_E. So the result will depend on the curve E and not only on the isogeny class. Let {0}+ be the non-normalized modular symbol. If the above algebraic L-value is non-zero, then so is {0}+ and they are rational multiples of each other with small numerator and denominator. So we just compute a real approximation to this fraction and we scale {0}+ to get [0]+. If the L-value is zero, then we try to use a quadratic twist of E by a small positive (or later negative) fundamental discriminant, hoping that we will hit one that is not zero. If we fail to find one, we have to go back to the previous way of normalizing, but multiplying with Omega_E_0/Omega_E as to make sure that the missed factor +-1/2 is the same for all curves in the isogeny class. And we issue a warning to the user.\n\nRight now, I substituted the normalization by mine, it would be easy to change the optional argument in such a way as to allow the user to choose between the two normalizations.\n\nI have tested the correctness of this for hundreds of curves, using twists by -31 and 37 that do\nnot appear in the code. Of course, there will be curves for which the new normalization fails. For negative modular symbols we only use negative twists (in order to avoid an obvious infinite loop). But we are safe to assume that negative modular symbols are not very often used without the positive ones.\n\nI have not rewritten the normalization of modular symbols coming from ec_lib in padic_lseries.py. This should be done, but I have no idea if the negative symbols can be computed with that library.\n\nAdded more docstrings.\n\n## padic_lseries.py\n\nI got rid of _quotient_of_period which is no longer needed because of the above normalization.\nI added a try around the cremona-label look-up. Caused a bug before. modular_symbol has now an optional argument to twist by a fundamental discriminant D. Similar for measure and series.\nNew we need a function to compute the quotient of Omega_E by Omega_(ED)*sqrt(D), if D>0, or Omega-_E by  Omega_(ED)*sqrt(-D), if D<0. According to [MTT] this should be 1 or 2. This\nis done in _quotient_of_periods_to_twist.\n\nFurthermore, I have changed the sign of the Dp-values height, just like I had to change the sign in the canonical p-adic height in the ordinary case.\n \nSo far I have tested this on good ordinary primes for curves of rank 0 and rank 1 and some rank 2 curves. I have also checked a few supersingular cases.\n\n## padics.py\n\nI changed the sign of the padic height. It is now clear that there must be a -1 in front to make sure that the p-adic BSD conjecture holds as stated in [MTT].\nI also removed the statement that the equation must be globally minimal to compute the height as the gens() no longer fails for non-minimal curves.\n\n\n## ell_rational_field.py\n\nadjusted the documentation according to the change in ell_modular_symbol.\nadded a function minimal_quadratic_twist that find a twist of E with minimal conductor. This is used in sha_tate.py but could be of use later in rank as well.\n\ntodo : normalization if using ec_lib (?)\n\ntodo : add in rank() the possibility to use modular-symbols for a twisted curve with low conductor\n\n## sha_tate.py\n\nan_padic has now an optional argument to control whether the modular symbols computations can be done on a minimal quadratic twist instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4667\n\n",
     "created_at": "2008-12-01T00:07:59Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_004667.json:
     "title": "[with first patch, not ready for review] quadratic twists for p-adic L-functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4667",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cremona was
+CC:  @JohnCremona @williamstein
 
 Keywords: padic l-functions, quadratic twists
 
@@ -92,7 +92,7 @@ archive/issue_comments_035136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4667#issuecomment-35136",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -105,16 +105,16 @@ the first part.
 archive/issue_comments_035137.json:
 ```json
 {
-    "body": "Attachment [twisted_padic_l_functions.1.patch](tarball://root/attachments/some-uuid/ticket4667/twisted_padic_l_functions.1.patch) by wuthrich created at 2008-12-10 12:48:16\n\nWith respect to the above description, this new version of the patch does everything as said before, but the modular_symbols are handled differently.\n\nIn ell_modular_symbol there are now two option, either to use or not to use eclib (for the + part at least). I implemented an optional argument that controls what method is used to normalize the modular symbols, for both eclib and sage's own modular symbols.",
+    "body": "Attachment [twisted_padic_l_functions.1.patch](tarball://root/attachments/some-uuid/ticket4667/twisted_padic_l_functions.1.patch) by @categorie created at 2008-12-10 12:48:16\n\nWith respect to the above description, this new version of the patch does everything as said before, but the modular_symbols are handled differently.\n\nIn ell_modular_symbol there are now two option, either to use or not to use eclib (for the + part at least). I implemented an optional argument that controls what method is used to normalize the modular symbols, for both eclib and sage's own modular symbols.",
     "created_at": "2008-12-10T12:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4667#issuecomment-35137",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [twisted_padic_l_functions.1.patch](tarball://root/attachments/some-uuid/ticket4667/twisted_padic_l_functions.1.patch) by wuthrich created at 2008-12-10 12:48:16
+Attachment [twisted_padic_l_functions.1.patch](tarball://root/attachments/some-uuid/ticket4667/twisted_padic_l_functions.1.patch) by @categorie created at 2008-12-10 12:48:16
 
 With respect to the above description, this new version of the patch does everything as said before, but the modular_symbols are handled differently.
 
@@ -132,7 +132,7 @@ archive/issue_comments_035138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4667#issuecomment-35138",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_035142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4667#issuecomment-35142",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_035143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4667#issuecomment-35143",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_035147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4667#issuecomment-35147",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -401,16 +401,16 @@ I added the 'positive review' back, but maybe soneone else should check the test
 archive/issue_comments_035148.json:
 ```json
 {
-    "body": "Attachment [trac_4667_z.patch](tarball://root/attachments/some-uuid/ticket4667/trac_4667_z.patch) by wuthrich created at 2009-03-25 19:23:27\n\nReplaces all previous patches.",
+    "body": "Attachment [trac_4667_z.patch](tarball://root/attachments/some-uuid/ticket4667/trac_4667_z.patch) by @categorie created at 2009-03-25 19:23:27\n\nReplaces all previous patches.",
     "created_at": "2009-03-25T19:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4667#issuecomment-35148",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_4667_z.patch](tarball://root/attachments/some-uuid/ticket4667/trac_4667_z.patch) by wuthrich created at 2009-03-25 19:23:27
+Attachment [trac_4667_z.patch](tarball://root/attachments/some-uuid/ticket4667/trac_4667_z.patch) by @categorie created at 2009-03-25 19:23:27
 
 Replaces all previous patches.
 
@@ -545,7 +545,7 @@ archive/issue_comments_035153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4667#issuecomment-35153",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -576,16 +576,16 @@ but this is due to having installed the optional package. I still don't know if 
 archive/issue_comments_035154.json:
 ```json
 {
-    "body": "Attachment [trac_4667_z2.patch](tarball://root/attachments/some-uuid/ticket4667/trac_4667_z2.patch) by wuthrich created at 2009-03-26 15:04:10\n\napply after the previous patch",
+    "body": "Attachment [trac_4667_z2.patch](tarball://root/attachments/some-uuid/ticket4667/trac_4667_z2.patch) by @categorie created at 2009-03-26 15:04:10\n\napply after the previous patch",
     "created_at": "2009-03-26T15:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4667#issuecomment-35154",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_4667_z2.patch](tarball://root/attachments/some-uuid/ticket4667/trac_4667_z2.patch) by wuthrich created at 2009-03-26 15:04:10
+Attachment [trac_4667_z2.patch](tarball://root/attachments/some-uuid/ticket4667/trac_4667_z2.patch) by @categorie created at 2009-03-26 15:04:10
 
 apply after the previous patch
 
@@ -601,7 +601,7 @@ archive/issue_comments_035155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4667#issuecomment-35155",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 

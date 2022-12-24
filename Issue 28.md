@@ -13,7 +13,7 @@ archive/issues_000028.json:
     "title": "weird power series behavior",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/28",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -63,7 +63,7 @@ archive/issue_comments_000200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/28",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/28#issuecomment-200",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_000201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/28",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/28#issuecomment-201",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

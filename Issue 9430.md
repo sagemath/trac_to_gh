@@ -3,7 +3,7 @@
 archive/issues_009430.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  acleone was mpatel leif\n\nDownload at: http://sage.math.washington.edu/home/timdumol/sagenb-0.8.1.spkg\n\nVersion 0.8.1 solves the following tickets:\n\n#9294, #8760, #8758, #8686, #7633, #7418, #7379\n\nPlease merge the Sage main library patch at #7379 when including this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9430\n\n",
+    "body": "Assignee: jason, was\n\nCC:  acleone @williamstein @qed777 @nexttime\n\nDownload at: http://sage.math.washington.edu/home/timdumol/sagenb-0.8.1.spkg\n\nVersion 0.8.1 solves the following tickets:\n\n#9294, #8760, #8758, #8686, #7633, #7418, #7379\n\nPlease merge the Sage main library patch at #7379 when including this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9430\n\n",
     "created_at": "2010-07-05T11:30:03Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009430.json:
     "title": "Update SageNB to version 0.8.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9430",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: jason, was
 
-CC:  acleone was mpatel leif
+CC:  acleone @williamstein @qed777 @nexttime
 
 Download at: http://sage.math.washington.edu/home/timdumol/sagenb-0.8.1.spkg
 
@@ -45,7 +45,7 @@ archive/issue_comments_090024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9430#issuecomment-90024",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_090025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9430#issuecomment-90025",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_090026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9430#issuecomment-90026",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_090027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9430#issuecomment-90027",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_090028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9430#issuecomment-90028",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_090029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9430#issuecomment-90029",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_090030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9430#issuecomment-90030",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_090031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9430#issuecomment-90031",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_090032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9430#issuecomment-90032",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_090033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9430#issuecomment-90033",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_090034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9430#issuecomment-90034",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_090035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9430#issuecomment-90035",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_090036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9430",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9430#issuecomment-90036",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009740.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  rbeezer kcrisman\n\nThis patch:\n* flips the matrix so that it is right side up, and flips the y-axis to correctly label the rows, unless origin='lower' is specified.\n* Adds matplotlib's vmin and vmax parameters, which control the scaling\n* Adds matplotlib's norm parameter, which also controls the scaling\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9740\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @rbeezer @kcrisman\n\nThis patch:\n* flips the matrix so that it is right side up, and flips the y-axis to correctly label the rows, unless origin='lower' is specified.\n* Adds matplotlib's vmin and vmax parameters, which control the scaling\n* Adds matplotlib's norm parameter, which also controls the scaling\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9740\n\n",
     "created_at": "2010-08-13T08:14:04Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009740.json:
     "title": "matrix plot is upside down and should wrap more matplotlib options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9740",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  rbeezer kcrisman
+CC:  @rbeezer @kcrisman
 
 This patch:
 * flips the matrix so that it is right side up, and flips the y-axis to correctly label the rows, unless origin='lower' is specified.
@@ -44,7 +44,7 @@ archive/issue_comments_095336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95336",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_095337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95337",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_095338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95338",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_095339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95339",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_095340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95340",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_095341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95341",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_095342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95342",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_095343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95343",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -217,16 +217,16 @@ The matrix in an interact for p=7
 archive/issue_comments_095344.json:
 ```json
 {
-    "body": "Attachment [Screen shot 2010-08-13 at 11.52.45 AM.png](tarball://root/attachments/some-uuid/ticket9740/Screen shot 2010-08-13 at 11.52.45 AM.png) by jason created at 2010-08-13 16:06:24\n\nCould you try the following two plots?\n\nmatrix_plot(identity_matrix(100))\n\nmatrix_plot(identity_matrix(100, sparse=True))",
+    "body": "Attachment [Screen shot 2010-08-13 at 11.52.45 AM.png](tarball://root/attachments/some-uuid/ticket9740/Screen shot 2010-08-13 at 11.52.45 AM.png) by @jasongrout created at 2010-08-13 16:06:24\n\nCould you try the following two plots?\n\nmatrix_plot(identity_matrix(100))\n\nmatrix_plot(identity_matrix(100, sparse=True))",
     "created_at": "2010-08-13T16:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95344",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [Screen shot 2010-08-13 at 11.52.45 AM.png](tarball://root/attachments/some-uuid/ticket9740/Screen shot 2010-08-13 at 11.52.45 AM.png) by jason created at 2010-08-13 16:06:24
+Attachment [Screen shot 2010-08-13 at 11.52.45 AM.png](tarball://root/attachments/some-uuid/ticket9740/Screen shot 2010-08-13 at 11.52.45 AM.png) by @jasongrout created at 2010-08-13 16:06:24
 
 Could you try the following two plots?
 
@@ -246,7 +246,7 @@ archive/issue_comments_095345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95345",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_095346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95346",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_095347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95347",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_095348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95348",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_095349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95349",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_095350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95350",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_095351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95351",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_095352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95352",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_095353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95353",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_095354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95354",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -447,16 +447,16 @@ I've rebased to 4.6.alpha1 and combined the two patches.  kcrisman: can you revi
 archive/issue_comments_095355.json:
 ```json
 {
-    "body": "Attachment [trac-9740-matrixplot.patch](tarball://root/attachments/some-uuid/ticket9740/trac-9740-matrixplot.patch) by jason created at 2010-09-28 17:22:52\n\napply only this patch; rebased to 4.6.alpha1",
+    "body": "Attachment [trac-9740-matrixplot.patch](tarball://root/attachments/some-uuid/ticket9740/trac-9740-matrixplot.patch) by @jasongrout created at 2010-09-28 17:22:52\n\napply only this patch; rebased to 4.6.alpha1",
     "created_at": "2010-09-28T17:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95355",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9740-matrixplot.patch](tarball://root/attachments/some-uuid/ticket9740/trac-9740-matrixplot.patch) by jason created at 2010-09-28 17:22:52
+Attachment [trac-9740-matrixplot.patch](tarball://root/attachments/some-uuid/ticket9740/trac-9740-matrixplot.patch) by @jasongrout created at 2010-09-28 17:22:52
 
 apply only this patch; rebased to 4.6.alpha1
 
@@ -472,7 +472,7 @@ archive/issue_comments_095356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95356",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_095357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95357",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_095358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95358",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -583,7 +583,7 @@ archive/issue_comments_095359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95359",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_095360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95360",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_095361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95361",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -679,7 +679,7 @@ archive/issue_comments_095362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95362",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -697,7 +697,7 @@ archive/issue_comments_095363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95363",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -719,7 +719,7 @@ archive/issue_comments_095364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95364",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -753,7 +753,7 @@ archive/issue_comments_095365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95365",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -771,7 +771,7 @@ archive/issue_comments_095366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95366",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -797,7 +797,7 @@ archive/issue_comments_095367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95367",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_095368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95368",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -828,16 +828,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_095369.json:
 ```json
 {
-    "body": "Attachment [9740-review-fixes.patch](tarball://root/attachments/some-uuid/ticket9740/9740-review-fixes.patch) by jason created at 2010-09-29 04:22:44\n\nI updated the review-fixes patch to take care of the issues you brought up.  I also polished two more references in the docs.",
+    "body": "Attachment [9740-review-fixes.patch](tarball://root/attachments/some-uuid/ticket9740/9740-review-fixes.patch) by @jasongrout created at 2010-09-29 04:22:44\n\nI updated the review-fixes patch to take care of the issues you brought up.  I also polished two more references in the docs.",
     "created_at": "2010-09-29T04:22:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95369",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [9740-review-fixes.patch](tarball://root/attachments/some-uuid/ticket9740/9740-review-fixes.patch) by jason created at 2010-09-29 04:22:44
+Attachment [9740-review-fixes.patch](tarball://root/attachments/some-uuid/ticket9740/9740-review-fixes.patch) by @jasongrout created at 2010-09-29 04:22:44
 
 I updated the review-fixes patch to take care of the issues you brought up.  I also polished two more references in the docs.
 
@@ -853,7 +853,7 @@ archive/issue_comments_095370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95370",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -871,7 +871,7 @@ archive/issue_comments_095371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95371",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -891,7 +891,7 @@ archive/issue_comments_095372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95372",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

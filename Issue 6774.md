@@ -14,7 +14,7 @@ archive/issues_006774.json:
     "title": "[with patch, needs review] tour Graph Theory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6774",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: tba
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6774
 archive/issue_comments_055772.json:
 ```json
 {
-    "body": "Attachment [graph_tour.patch](tarball://root/attachments/some-uuid/ticket6774/graph_tour.patch) by ncohen created at 2009-08-18 17:09:01",
+    "body": "Attachment [graph_tour.patch](tarball://root/attachments/some-uuid/ticket6774/graph_tour.patch) by @nathanncohen created at 2009-08-18 17:09:01",
     "created_at": "2009-08-18T17:09:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55772",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [graph_tour.patch](tarball://root/attachments/some-uuid/ticket6774/graph_tour.patch) by ncohen created at 2009-08-18 17:09:01
+Attachment [graph_tour.patch](tarball://root/attachments/some-uuid/ticket6774/graph_tour.patch) by @nathanncohen created at 2009-08-18 17:09:01
 
 
 
@@ -56,16 +56,16 @@ Attachment [graph_tour.patch](tarball://root/attachments/some-uuid/ticket6774/gr
 archive/issue_comments_055773.json:
 ```json
 {
-    "body": "Attachment [trac-6774-graph-tour-review.patch](tarball://root/attachments/some-uuid/ticket6774/trac-6774-graph-tour-review.patch) by jason created at 2009-09-17 09:31:37\n\napply on top of previous patch",
+    "body": "Attachment [trac-6774-graph-tour-review.patch](tarball://root/attachments/some-uuid/ticket6774/trac-6774-graph-tour-review.patch) by @jasongrout created at 2009-09-17 09:31:37\n\napply on top of previous patch",
     "created_at": "2009-09-17T09:31:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55773",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6774-graph-tour-review.patch](tarball://root/attachments/some-uuid/ticket6774/trac-6774-graph-tour-review.patch) by jason created at 2009-09-17 09:31:37
+Attachment [trac-6774-graph-tour-review.patch](tarball://root/attachments/some-uuid/ticket6774/trac-6774-graph-tour-review.patch) by @jasongrout created at 2009-09-17 09:31:37
 
 apply on top of previous patch
 
@@ -81,7 +81,7 @@ archive/issue_comments_055774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55774",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_055775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55775",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_055778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55778",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_055780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55780",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_055781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55781",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_055782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55782",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_055783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55783",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_055784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55784",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_055785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55785",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_055786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55786",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_055788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55788",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_055789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55789",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -401,7 +401,7 @@ archive/issue_comments_055790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55790",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_055791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55791",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

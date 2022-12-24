@@ -14,7 +14,7 @@ archive/issues_004020.json:
     "title": "fraction field doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4020",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4020
 archive/issue_comments_028992.json:
 ```json
 {
-    "body": "Attachment [4020-fracfield-doctests.patch](tarball://root/attachments/some-uuid/ticket4020/4020-fracfield-doctests.patch) by robertwb created at 2008-08-31 10:30:40",
+    "body": "Attachment [4020-fracfield-doctests.patch](tarball://root/attachments/some-uuid/ticket4020/4020-fracfield-doctests.patch) by @robertwb created at 2008-08-31 10:30:40",
     "created_at": "2008-08-31T10:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28992",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4020-fracfield-doctests.patch](tarball://root/attachments/some-uuid/ticket4020/4020-fracfield-doctests.patch) by robertwb created at 2008-08-31 10:30:40
+Attachment [4020-fracfield-doctests.patch](tarball://root/attachments/some-uuid/ticket4020/4020-fracfield-doctests.patch) by @robertwb created at 2008-08-31 10:30:40
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_028993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28993",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -68,16 +68,16 @@ Depends on #4019.
 archive/issue_comments_028994.json:
 ```json
 {
-    "body": "Attachment [trac_4020.patch](tarball://root/attachments/some-uuid/ticket4020/trac_4020.patch) by mhansen created at 2008-08-31 22:12:55",
+    "body": "Attachment [trac_4020.patch](tarball://root/attachments/some-uuid/ticket4020/trac_4020.patch) by @mwhansen created at 2008-08-31 22:12:55",
     "created_at": "2008-08-31T22:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28994",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4020.patch](tarball://root/attachments/some-uuid/ticket4020/trac_4020.patch) by mhansen created at 2008-08-31 22:12:55
+Attachment [trac_4020.patch](tarball://root/attachments/some-uuid/ticket4020/trac_4020.patch) by @mwhansen created at 2008-08-31 22:12:55
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_028995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4020",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28995",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001758.json:
 ```json
 {
-    "body": "Assignee: was\n\nAgain from the MAGMA 2.14 changelog: \"Simon's variant of LLL reduction for indefinite forms has been efficiently implemented in Magma as part of a new package of Damien Stehl\u00e9, and works readily in dimensions greater than 100.\" ( http://magma.maths.usyd.edu.au/magma/htmlhelp/rel/node2.htm )\n\nIssue created by migration from https://trac.sagemath.org/ticket/1758\n\n",
+    "body": "Assignee: @williamstein\n\nAgain from the MAGMA 2.14 changelog: \"Simon's variant of LLL reduction for indefinite forms has been efficiently implemented in Magma as part of a new package of Damien Stehl\u00e9, and works readily in dimensions greater than 100.\" ( http://magma.maths.usyd.edu.au/magma/htmlhelp/rel/node2.htm )\n\nIssue created by migration from https://trac.sagemath.org/ticket/1758\n\n",
     "created_at": "2008-01-11T18:37:58Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001758.json:
     "title": "Simon's variant of LLL reduction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1758",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Again from the MAGMA 2.14 changelog: "Simon's variant of LLL reduction for indefinite forms has been efficiently implemented in Magma as part of a new package of Damien Stehlé, and works readily in dimensions greater than 100." ( http://magma.maths.usyd.edu.au/magma/htmlhelp/rel/node2.htm )
 
@@ -37,7 +37,7 @@ archive/issue_comments_011090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1758#issuecomment-11090",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_011092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1758#issuecomment-11092",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_011093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1758#issuecomment-11093",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_011094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1758#issuecomment-11094",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_011095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1758#issuecomment-11095",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

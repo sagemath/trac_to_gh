@@ -3,7 +3,7 @@
 archive/issues_003836.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  timdumol mpatel jason\n\n\n```\n\nI really like the @interact functionality! I'm trying to do something\nlike this:\n\n@interact\ndef _(p=5,q=range(p)):\n   ...\n\nSo I'd like the range of q to depend on the current value of p. This\ndoesn't seem to be possible. Is there any way to make it work?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3836\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol @qed777 @jasongrout\n\n\n```\n\nI really like the @interact functionality! I'm trying to do something\nlike this:\n\n@interact\ndef _(p=5,q=range(p)):\n   ...\n\nSo I'd like the range of q to depend on the current value of p. This\ndoesn't seem to be possible. Is there any way to make it work?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3836\n\n",
     "created_at": "2008-08-13T16:12:38Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_003836.json:
     "title": "notebook interact -- make it so one control can depend on others",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3836",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  timdumol mpatel jason
+CC:  @TimDumol @qed777 @jasongrout
 
 
 ```
@@ -65,7 +65,7 @@ Changing component from notebook to interact.
 archive/issue_comments_027273.json:
 ```json
 {
-    "body": "Changing assignee from boothby to itolkov.",
+    "body": "Changing assignee from boothby to @itolkov.",
     "created_at": "2008-09-09T19:23:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3836",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_027273.json:
 }
 ```
 
-Changing assignee from boothby to itolkov.
+Changing assignee from boothby to @itolkov.
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_027274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3836#issuecomment-27274",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_027275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3836#issuecomment-27275",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_027276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3836#issuecomment-27276",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

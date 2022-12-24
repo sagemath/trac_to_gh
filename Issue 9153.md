@@ -14,7 +14,7 @@ archive/issues_009153.json:
     "title": "set z-limits for 3d plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9153",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was

@@ -14,7 +14,7 @@ archive/issues_001302.json:
     "title": "bug in laurent_series integration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1302",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -117,16 +117,16 @@ Certainly Bug Day material.
 archive/issue_comments_008185.json:
 ```json
 {
-    "body": "Changing assignee from somebody to rishi.",
+    "body": "Changing assignee from somebody to @rishikesha.",
     "created_at": "2008-01-02T22:38:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8185",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Changing assignee from somebody to rishi.
+Changing assignee from somebody to @rishikesha.
 
 
 
@@ -140,7 +140,7 @@ archive/issue_comments_008186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8186",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_008187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8187",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -171,16 +171,16 @@ IndexError occurs when the highest power in the Laurent series is less than -2. 
 archive/issue_comments_008188.json:
 ```json
 {
-    "body": "Attachment [ticket_1302.patch](tarball://root/attachments/some-uuid/ticket1302/ticket_1302.patch) by rishi created at 2008-01-04 08:36:00",
+    "body": "Attachment [ticket_1302.patch](tarball://root/attachments/some-uuid/ticket1302/ticket_1302.patch) by @rishikesha created at 2008-01-04 08:36:00",
     "created_at": "2008-01-04T08:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8188",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [ticket_1302.patch](tarball://root/attachments/some-uuid/ticket1302/ticket_1302.patch) by rishi created at 2008-01-04 08:36:00
+Attachment [ticket_1302.patch](tarball://root/attachments/some-uuid/ticket1302/ticket_1302.patch) by @rishikesha created at 2008-01-04 08:36:00
 
 
 
@@ -194,7 +194,7 @@ archive/issue_comments_008189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8189",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_008190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8190",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -247,16 +247,16 @@ Michael
 archive/issue_comments_008192.json:
 ```json
 {
-    "body": "Attachment [trac-1302-example.patch](tarball://root/attachments/some-uuid/ticket1302/trac-1302-example.patch) by was created at 2008-01-05 02:19:26",
+    "body": "Attachment [trac-1302-example.patch](tarball://root/attachments/some-uuid/ticket1302/trac-1302-example.patch) by @williamstein created at 2008-01-05 02:19:26",
     "created_at": "2008-01-05T02:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1302#issuecomment-8192",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1302-example.patch](tarball://root/attachments/some-uuid/ticket1302/trac-1302-example.patch) by was created at 2008-01-05 02:19:26
+Attachment [trac-1302-example.patch](tarball://root/attachments/some-uuid/ticket1302/trac-1302-example.patch) by @williamstein created at 2008-01-05 02:19:26
 
 
 

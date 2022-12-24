@@ -3,7 +3,7 @@
 archive/issues_001082.json:
 ```json
 {
-    "body": "Assignee: was\n\nCurrently, \"sage -upgrade\" automatically checks in code in sage-main (asking you for a commit message, etc.) without explaining what's happening, and what exactly is being checked in.\n\nInstead, \"sage -upgrade\" should either explain what's going on before it checks in the code, or explain what's going on and then exit without doing anything, so the user can use hg_sage.ci().\n\nIssue created by migration from https://trac.sagemath.org/ticket/1082\n\n",
+    "body": "Assignee: @williamstein\n\nCurrently, \"sage -upgrade\" automatically checks in code in sage-main (asking you for a commit message, etc.) without explaining what's happening, and what exactly is being checked in.\n\nInstead, \"sage -upgrade\" should either explain what's going on before it checks in the code, or explain what's going on and then exit without doing anything, so the user can use hg_sage.ci().\n\nIssue created by migration from https://trac.sagemath.org/ticket/1082\n\n",
     "created_at": "2007-11-03T18:08:01Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_001082.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Currently, "sage -upgrade" automatically checks in code in sage-main (asking you for a commit message, etc.) without explaining what's happening, and what exactly is being checked in.
 
@@ -39,7 +39,7 @@ archive/issue_comments_006539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1082#issuecomment-6539",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_006540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1082#issuecomment-6540",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_006541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1082#issuecomment-6541",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_006542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1082#issuecomment-6542",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_006543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1082#issuecomment-6543",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

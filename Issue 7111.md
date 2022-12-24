@@ -14,7 +14,7 @@ archive/issues_007111.json:
     "title": "timeout when doctesting partition refinement code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7111",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -50,7 +50,7 @@ archive/issue_comments_058936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58936",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_058937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58937",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -134,16 +134,16 @@ Changing status from new to needs_review.
 archive/issue_comments_058938.json:
 ```json
 {
-    "body": "Attachment [trac_7111.patch](tarball://root/attachments/some-uuid/ticket7111/trac_7111.patch) by rlm created at 2009-10-30 05:06:22\n\nThis was due to a bad assumption I made while I was writing `refinement_matrices`. This fixes that assumption, and the fact that this fixes at least the example above is shown here:\n\n\n```\nsage: M = matrix([[0, 18, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4],\n   ....:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 15, 0, 0, 13, 0],\n   ....:  [0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0],\n   ....:  [0, 0, 14, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 13, 0, 0, 0, 21, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 18, 0, 3, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 12, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 2, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21],\n   ....:  [0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 11, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 0],\n   ....:  [19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 17, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 1, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 11, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 12, 0, 0, 10, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 0, 0],\n   ....:  [0, 0, 2, 11, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0, 0, 0]])\nsage: perm = [15, 5, 17, 20, 10, 3, 21, 7, 11, 8, 4, 16, 19, 2, 9, 12, 6, 22, 14, 0, 13, 18, 1]\nsage: from sage.groups.perm_gps.partn_ref.refinement_matrices import MatrixStruct\nsage: MS = MatrixStruct(M)\nsage: MS.run()\nsage: N = Matrix(M.base_ring(), M.nrows(), M.ncols())\nsage: for j in range(M.ncols()):\n   ....:     N.set_column(perm[j], M.column(j))\n   ....: \nsage: NS = MatrixStruct(N)\nsage: NS.run()\nsage: M_relab = MS.canonical_relabeling()\nsage: N_relab = NS.canonical_relabeling()\nsage: M_C = matrix(M.base_ring(), M.nrows(), M.ncols())\nsage: N_C = matrix(M.base_ring(), M.nrows(), M.ncols())\nsage: for j in range(M.ncols()):\n   ....:     M_C.set_column(M_relab[j], M.column(j))\n   ....:     N_C.set_column(N_relab[j], N.column(j))\n   ....: \nsage: M_C = matrix(M.base_ring(), sorted(M_C.rows()))\nsage: N_C = matrix(M.base_ring(), sorted(N_C.rows()))\nsage: M_C==N_C\nTrue\n```\n",
+    "body": "Attachment [trac_7111.patch](tarball://root/attachments/some-uuid/ticket7111/trac_7111.patch) by @rlmill created at 2009-10-30 05:06:22\n\nThis was due to a bad assumption I made while I was writing `refinement_matrices`. This fixes that assumption, and the fact that this fixes at least the example above is shown here:\n\n\n```\nsage: M = matrix([[0, 18, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4],\n   ....:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 15, 0, 0, 13, 0],\n   ....:  [0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0],\n   ....:  [0, 0, 14, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 13, 0, 0, 0, 21, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 18, 0, 3, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 12, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 2, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21],\n   ....:  [0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 11, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 0],\n   ....:  [19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 17, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 1, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 11, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 12, 0, 0, 10, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 0, 0],\n   ....:  [0, 0, 2, 11, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0, 0, 0]])\nsage: perm = [15, 5, 17, 20, 10, 3, 21, 7, 11, 8, 4, 16, 19, 2, 9, 12, 6, 22, 14, 0, 13, 18, 1]\nsage: from sage.groups.perm_gps.partn_ref.refinement_matrices import MatrixStruct\nsage: MS = MatrixStruct(M)\nsage: MS.run()\nsage: N = Matrix(M.base_ring(), M.nrows(), M.ncols())\nsage: for j in range(M.ncols()):\n   ....:     N.set_column(perm[j], M.column(j))\n   ....: \nsage: NS = MatrixStruct(N)\nsage: NS.run()\nsage: M_relab = MS.canonical_relabeling()\nsage: N_relab = NS.canonical_relabeling()\nsage: M_C = matrix(M.base_ring(), M.nrows(), M.ncols())\nsage: N_C = matrix(M.base_ring(), M.nrows(), M.ncols())\nsage: for j in range(M.ncols()):\n   ....:     M_C.set_column(M_relab[j], M.column(j))\n   ....:     N_C.set_column(N_relab[j], N.column(j))\n   ....: \nsage: M_C = matrix(M.base_ring(), sorted(M_C.rows()))\nsage: N_C = matrix(M.base_ring(), sorted(N_C.rows()))\nsage: M_C==N_C\nTrue\n```\n",
     "created_at": "2009-10-30T05:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58938",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7111.patch](tarball://root/attachments/some-uuid/ticket7111/trac_7111.patch) by rlm created at 2009-10-30 05:06:22
+Attachment [trac_7111.patch](tarball://root/attachments/some-uuid/ticket7111/trac_7111.patch) by @rlmill created at 2009-10-30 05:06:22
 
 This was due to a bad assumption I made while I was writing `refinement_matrices`. This fixes that assumption, and the fact that this fixes at least the example above is shown here:
 
@@ -206,7 +206,7 @@ archive/issue_comments_058939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58939",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_058940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58940",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_058941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58941",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

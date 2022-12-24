@@ -3,7 +3,7 @@
 archive/issues_007798.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: plot, label\n\nThe purpose of the ticket is to locate where the function text should be applied to the function plot to be able to have lables for plots like: var('x'); f = x**2; p = plot(f,x); p.text(\"hello\") for one function.\n\n------ not sure about this -------------\nTwo functions: g = x; p2 = plot(g,x); (g + f).text(\"eggs fro g\", g) where the string prints the label for g, while \"g\" prints label only for f.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7798\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: plot, label\n\nThe purpose of the ticket is to locate where the function text should be applied to the function plot to be able to have lables for plots like: var('x'); f = x**2; p = plot(f,x); p.text(\"hello\") for one function.\n\n------ not sure about this -------------\nTwo functions: g = x; p2 = plot(g,x); (g + f).text(\"eggs fro g\", g) where the string prints the label for g, while \"g\" prints label only for f.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7798\n\n",
     "created_at": "2009-12-31T00:56:07Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_007798.json:
     "user": "slosoi"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: plot, label
 
@@ -154,7 +154,7 @@ archive/issue_comments_067480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7798",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7798#issuecomment-67480",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

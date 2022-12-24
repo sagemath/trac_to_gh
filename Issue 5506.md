@@ -3,7 +3,7 @@
 archive/issues_005506.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  eviatarbach\n\nWe really should make symbolic vectors a subclass of the generic free modules.  That way we can have a .args() function, a variables function, and a few other functions that make sense for symbolic vectors, but maybe not for arbitrary vectors.\n\nWe can also make them callable, so vector-valued functions work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5506\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @eviatarbach\n\nWe really should make symbolic vectors a subclass of the generic free modules.  That way we can have a .args() function, a variables function, and a few other functions that make sense for symbolic vectors, but maybe not for arbitrary vectors.\n\nWe can also make them callable, so vector-valued functions work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5506\n\n",
     "created_at": "2009-03-12T23:07:38Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005506.json:
     "title": "symbolic vectors class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5506",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  eviatarbach
+CC:  @eviatarbach
 
 We really should make symbolic vectors a subclass of the generic free modules.  That way we can have a .args() function, a variables function, and a few other functions that make sense for symbolic vectors, but maybe not for arbitrary vectors.
 
@@ -41,7 +41,7 @@ archive/issue_comments_042761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5506#issuecomment-42761",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_042762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5506#issuecomment-42762",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_042763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5506",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5506#issuecomment-42763",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

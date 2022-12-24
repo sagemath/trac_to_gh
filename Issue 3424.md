@@ -3,7 +3,7 @@
 archive/issues_003424.json:
 ```json
 {
-    "body": "Assignee: was\n\nmat.jordan_form(CDF) gives the wrong Jordan form for some matrices because mat.charpoly().roots() sometimes gives separate roots when it should give a single root. Attached is a patch that adds a new parameter to jordan_form so that users can specify a number of digits of rounding to the roots of the characteristic polynomial.\n\n\n```\nsage: m                            \n\n[1 1]\n[0 1]\nsage: m.jordan_form()              \n\n[1 1]\n[0 1]\nsage: m.jordan_form(CDF)\n\n[1.0|  0]\n[---+---]\n[  0|1.0]\nsage: m.jordan_form(CDF, digits=2)\n\n[1.0 1.0]\n[  0 1.0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3424\n\n",
+    "body": "Assignee: @williamstein\n\nmat.jordan_form(CDF) gives the wrong Jordan form for some matrices because mat.charpoly().roots() sometimes gives separate roots when it should give a single root. Attached is a patch that adds a new parameter to jordan_form so that users can specify a number of digits of rounding to the roots of the characteristic polynomial.\n\n\n```\nsage: m                            \n\n[1 1]\n[0 1]\nsage: m.jordan_form()              \n\n[1 1]\n[0 1]\nsage: m.jordan_form(CDF)\n\n[1.0|  0]\n[---+---]\n[  0|1.0]\nsage: m.jordan_form(CDF, digits=2)\n\n[1.0 1.0]\n[  0 1.0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3424\n\n",
     "created_at": "2008-06-14T20:17:47Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_003424.json:
     "user": "johnwilmes"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 mat.jordan_form(CDF) gives the wrong Jordan form for some matrices because mat.charpoly().roots() sometimes gives separate roots when it should give a single root. Attached is a patch that adds a new parameter to jordan_form so that users can specify a number of digits of rounding to the roots of the characteristic polynomial.
 
@@ -185,7 +185,7 @@ archive/issue_comments_024098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3424#issuecomment-24098",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_024099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3424#issuecomment-24099",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_024102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3424#issuecomment-24102",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_024103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3424#issuecomment-24103",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 

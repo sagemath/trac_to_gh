@@ -3,7 +3,7 @@
 archive/issues_001659.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\n\n```\nrishi_: I use scipy very often. To use complex number I have to use the following statement:  sage: a=numpy.complex128(complex(2+3*I)). Is it not possible to avoid 2 conversions?\n[12:29pm] mabshoff: hungry? *ducks*\n[12:29pm] ondrej: mabshoff - like a small dog?\n[12:29pm] mabshoff: yes. a young dog.\n[12:29pm] wstein-1658: We could add a method (2+3*I).complex128().\n[12:29pm] wstein-1658: Want that?\n[12:29pm] wstein-1658: Is I symbolic, by the way?\n[12:29pm] rishi_: yes\n[12:30pm] wstein-1658: Do you want to avoid two conversions because of speed or code cleaness?\n[12:30pm] wstein-1658: Probably clean-ness.\n[12:30pm] rishi_: cleaness\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1659\n\n",
+    "body": "Assignee: @robertwb\n\n\n```\nrishi_: I use scipy very often. To use complex number I have to use the following statement:  sage: a=numpy.complex128(complex(2+3*I)). Is it not possible to avoid 2 conversions?\n[12:29pm] mabshoff: hungry? *ducks*\n[12:29pm] ondrej: mabshoff - like a small dog?\n[12:29pm] mabshoff: yes. a young dog.\n[12:29pm] wstein-1658: We could add a method (2+3*I).complex128().\n[12:29pm] wstein-1658: Want that?\n[12:29pm] wstein-1658: Is I symbolic, by the way?\n[12:29pm] rishi_: yes\n[12:30pm] wstein-1658: Do you want to avoid two conversions because of speed or code cleaness?\n[12:30pm] wstein-1658: Probably clean-ness.\n[12:30pm] rishi_: cleaness\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1659\n\n",
     "created_at": "2008-01-02T19:33:21Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_001659.json:
     "title": "Add a complex128 method for conversion of symbolic (and other?) expressions to numpy's 128-bit complex type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1659",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 
 ```
@@ -51,7 +51,7 @@ archive/issue_comments_010554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1659#issuecomment-10554",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_010555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1659#issuecomment-10555",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_010556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1659#issuecomment-10556",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

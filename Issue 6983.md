@@ -3,7 +3,7 @@
 archive/issues_006983.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mpatel\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6983\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6983\n\n",
     "created_at": "2009-09-22T05:38:58Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006983.json:
     "title": "completely separate the sage notebook from the core sage library as a new spkg called \"sagenb-4.1.2.spkg\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6983",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  mpatel
+CC:  @qed777
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_057755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6983#issuecomment-57755",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_057756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6983#issuecomment-57756",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_057757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6983",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6983#issuecomment-57757",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

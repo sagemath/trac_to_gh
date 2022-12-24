@@ -14,7 +14,7 @@ archive/issues_005341.json:
     "title": "jsmath broken on wiki",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5341",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: boothby
@@ -77,7 +77,7 @@ archive/issue_comments_041147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5341#issuecomment-41147",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_041148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5341#issuecomment-41148",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_041149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5341#issuecomment-41149",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_041150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5341#issuecomment-41150",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_041151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5341#issuecomment-41151",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_041152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5341#issuecomment-41152",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_041153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5341#issuecomment-41153",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

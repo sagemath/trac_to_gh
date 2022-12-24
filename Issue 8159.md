@@ -3,7 +3,7 @@
 archive/issues_008159.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  burcin\n\nKeywords: mpmath\n\nThis update of sage.libs.mpmath, along with recent changes to mpmath itself and the patch in !#6199, results in a 3x overall speedup of mpmath (as measured by `mpmath.runtests()` performance). Elementary functions, hypergeometric series, and other \"low-level\" transcendental functions are not affected much, but functions that do a lot of arithmetic with mpf/mpc instances (examples: lambertw, polylog, bernpoly and many others; numerical summation, numerical integration, etc) can be 3x-10x faster. A similar speedup should be attainable in the future for the \"low-level\" functions by implementing those in Cython as well.\n\nThis extension works if site-packages/mpmath is replaced with an svn trunk checkout. There are essentially no tests in the Cython modules themselves; testing can be done with\n\n`import mpmath; mpmath.runtests(); mpmath.doctests()`\n\n(There is a very small number of doctests that fail due to numerical noise; this is nothing to worry about.)\n\nThis is not the final version of the code to be committed (it will synchronized with the next release of mpmath), but I'm uploading it to have a safe copy and for potential early review. I have not tested this on a 32-bit system. There could be some subtle overflow or memory leak issues that aren't caught by the tests.\n\nIt's not thread-safe due to the use of global state (which is used mostly because I was lazy, but it possibly also helps performance). I don't consider this a serious bug since vanilla-Python mpmath isn't fully thread-safe either. But it should be fixed some time in the future.\n\nI think a number of optimizations are possible, including optimizing MPF_normalize and caching MPF and mpf/mpc instances. I have also not updated the mpmath <-> Sage conversion code, which could be improved not to go via tuple values.\n\nSorry that it's not in the form of a patch (my current hg copy of Sage being dirty).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8159\n\n",
+    "body": "Assignee: tbd\n\nCC:  @burcin\n\nKeywords: mpmath\n\nThis update of sage.libs.mpmath, along with recent changes to mpmath itself and the patch in !#6199, results in a 3x overall speedup of mpmath (as measured by `mpmath.runtests()` performance). Elementary functions, hypergeometric series, and other \"low-level\" transcendental functions are not affected much, but functions that do a lot of arithmetic with mpf/mpc instances (examples: lambertw, polylog, bernpoly and many others; numerical summation, numerical integration, etc) can be 3x-10x faster. A similar speedup should be attainable in the future for the \"low-level\" functions by implementing those in Cython as well.\n\nThis extension works if site-packages/mpmath is replaced with an svn trunk checkout. There are essentially no tests in the Cython modules themselves; testing can be done with\n\n`import mpmath; mpmath.runtests(); mpmath.doctests()`\n\n(There is a very small number of doctests that fail due to numerical noise; this is nothing to worry about.)\n\nThis is not the final version of the code to be committed (it will synchronized with the next release of mpmath), but I'm uploading it to have a safe copy and for potential early review. I have not tested this on a 32-bit system. There could be some subtle overflow or memory leak issues that aren't caught by the tests.\n\nIt's not thread-safe due to the use of global state (which is used mostly because I was lazy, but it possibly also helps performance). I don't consider this a serious bug since vanilla-Python mpmath isn't fully thread-safe either. But it should be fixed some time in the future.\n\nI think a number of optimizations are possible, including optimizing MPF_normalize and caching MPF and mpf/mpc instances. I have also not updated the mpmath <-> Sage conversion code, which could be improved not to go via tuple values.\n\nSorry that it's not in the form of a patch (my current hg copy of Sage being dirty).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8159\n\n",
     "created_at": "2010-02-03T01:37:53Z",
     "labels": [
         "performance",
@@ -14,12 +14,12 @@ archive/issues_008159.json:
     "title": "Updated Cython backend for mpmath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8159",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 Assignee: tbd
 
-CC:  burcin
+CC:  @burcin
 
 Keywords: mpmath
 
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8159
 archive/issue_comments_071754.json:
 ```json
 {
-    "body": "Attachment [mpmath_cython.tar.gz](tarball://root/attachments/some-uuid/ticket8159/mpmath_cython.tar.gz) by fredrik.johansson created at 2010-02-04 04:24:30\n\ncontains edited sage.libs.mpmath (update: old files removed)",
+    "body": "Attachment [mpmath_cython.tar.gz](tarball://root/attachments/some-uuid/ticket8159/mpmath_cython.tar.gz) by @fredrik-johansson created at 2010-02-04 04:24:30\n\ncontains edited sage.libs.mpmath (update: old files removed)",
     "created_at": "2010-02-04T04:24:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71754",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [mpmath_cython.tar.gz](tarball://root/attachments/some-uuid/ticket8159/mpmath_cython.tar.gz) by fredrik.johansson created at 2010-02-04 04:24:30
+Attachment [mpmath_cython.tar.gz](tarball://root/attachments/some-uuid/ticket8159/mpmath_cython.tar.gz) by @fredrik-johansson created at 2010-02-04 04:24:30
 
 contains edited sage.libs.mpmath (update: old files removed)
 
@@ -75,7 +75,7 @@ archive/issue_comments_071755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71755",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -88,16 +88,16 @@ Here is an [0.14 spkg](http://boxen.math.washington.edu/home/schilly/sage/spkg/
 archive/issue_comments_071756.json:
 ```json
 {
-    "body": "Attachment [mpmath_cython.patch](tarball://root/attachments/some-uuid/ticket8159/mpmath_cython.patch) by fredrik.johansson created at 2010-02-04 18:01:46",
+    "body": "Attachment [mpmath_cython.patch](tarball://root/attachments/some-uuid/ticket8159/mpmath_cython.patch) by @fredrik-johansson created at 2010-02-04 18:01:46",
     "created_at": "2010-02-04T18:01:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71756",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [mpmath_cython.patch](tarball://root/attachments/some-uuid/ticket8159/mpmath_cython.patch) by fredrik.johansson created at 2010-02-04 18:01:46
+Attachment [mpmath_cython.patch](tarball://root/attachments/some-uuid/ticket8159/mpmath_cython.patch) by @fredrik-johansson created at 2010-02-04 18:01:46
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_071757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71757",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_071758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71758",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_071759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71759",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -174,16 +174,16 @@ This exception pops up about 20 times ...
 archive/issue_comments_071760.json:
 ```json
 {
-    "body": "Attachment [importfix.patch](tarball://root/attachments/some-uuid/ticket8159/importfix.patch) by fredrik.johansson created at 2010-02-04 20:01:58\n\nAttached a fix for the ImportError.",
+    "body": "Attachment [importfix.patch](tarball://root/attachments/some-uuid/ticket8159/importfix.patch) by @fredrik-johansson created at 2010-02-04 20:01:58\n\nAttached a fix for the ImportError.",
     "created_at": "2010-02-04T20:01:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71760",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [importfix.patch](tarball://root/attachments/some-uuid/ticket8159/importfix.patch) by fredrik.johansson created at 2010-02-04 20:01:58
+Attachment [importfix.patch](tarball://root/attachments/some-uuid/ticket8159/importfix.patch) by @fredrik-johansson created at 2010-02-04 20:01:58
 
 Attached a fix for the ImportError.
 
@@ -199,7 +199,7 @@ archive/issue_comments_071761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71761",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_071762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71762",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_071763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71763",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_071764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71764",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_071765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71765",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_071766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71766",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_071767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71767",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_071768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71768",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_071772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8159",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8159#issuecomment-71772",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 

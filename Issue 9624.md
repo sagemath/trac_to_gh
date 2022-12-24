@@ -3,7 +3,7 @@
 archive/issues_009624.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  ddrake mpatel\n\nThe doctest failure reported by Harald Schilly\n\n\nhttp://groups.google.com/group/sage-release/msg/8807ed7073c6793f\n\nIssue created by migration from https://trac.sagemath.org/ticket/9624\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @dandrake @qed777\n\nThe doctest failure reported by Harald Schilly\n\n\nhttp://groups.google.com/group/sage-release/msg/8807ed7073c6793f\n\nIssue created by migration from https://trac.sagemath.org/ticket/9624\n\n",
     "created_at": "2010-07-28T11:51:22Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009624.json:
     "title": "Numerical noise in lcalc_Lfunction.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9624",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 Assignee: mvngu
 
-CC:  ddrake mpatel
+CC:  @dandrake @qed777
 
 The doctest failure reported by Harald Schilly
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9624
 archive/issue_comments_093279.json:
 ```json
 {
-    "body": "Attachment [9624.patch](tarball://root/attachments/some-uuid/ticket9624/9624.patch) by rishi created at 2010-07-28 11:52:00",
+    "body": "Attachment [9624.patch](tarball://root/attachments/some-uuid/ticket9624/9624.patch) by @rishikesha created at 2010-07-28 11:52:00",
     "created_at": "2010-07-28T11:52:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9624#issuecomment-93279",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [9624.patch](tarball://root/attachments/some-uuid/ticket9624/9624.patch) by rishi created at 2010-07-28 11:52:00
+Attachment [9624.patch](tarball://root/attachments/some-uuid/ticket9624/9624.patch) by @rishikesha created at 2010-07-28 11:52:00
 
 
 
@@ -60,7 +60,7 @@ archive/issue_comments_093280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9624#issuecomment-93280",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_093281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9624#issuecomment-93281",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

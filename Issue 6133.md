@@ -3,7 +3,7 @@
 archive/issues_006133.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  mhansen\n\nThree pbuild files still live in `devel/sage`, but are clearly out of date and need to be removed. The patch just removes all three.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6133\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @mwhansen\n\nThree pbuild files still live in `devel/sage`, but are clearly out of date and need to be removed. The patch just removes all three.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6133\n\n",
     "created_at": "2009-05-26T18:31:22Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_006133.json:
     "title": "[with patch, needs review] remove pbuild files in devel/sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6133",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  mhansen
+CC:  @mwhansen
 
 Three pbuild files still live in `devel/sage`, but are clearly out of date and need to be removed. The patch just removes all three.
 
@@ -39,7 +39,7 @@ archive/issue_comments_048987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6133#issuecomment-48987",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_048988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6133#issuecomment-48988",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_048989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6133#issuecomment-48989",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -104,16 +104,16 @@ Errors during apply, please fix and refresh trac-6133.patch
 archive/issue_comments_048990.json:
 ```json
 {
-    "body": "Attachment [trac-6133.patch](tarball://root/attachments/some-uuid/ticket6133/trac-6133.patch) by craigcitro created at 2009-05-28 08:26:32",
+    "body": "Attachment [trac-6133.patch](tarball://root/attachments/some-uuid/ticket6133/trac-6133.patch) by @craigcitro created at 2009-05-28 08:26:32",
     "created_at": "2009-05-28T08:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6133#issuecomment-48990",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-6133.patch](tarball://root/attachments/some-uuid/ticket6133/trac-6133.patch) by craigcitro created at 2009-05-28 08:26:32
+Attachment [trac-6133.patch](tarball://root/attachments/some-uuid/ticket6133/trac-6133.patch) by @craigcitro created at 2009-05-28 08:26:32
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_048991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6133#issuecomment-48991",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_048992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6133#issuecomment-48992",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_048993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6133#issuecomment-48993",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

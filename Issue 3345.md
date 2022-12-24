@@ -99,16 +99,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3345
 archive/issue_comments_023228.json:
 ```json
 {
-    "body": "Attachment [3345.patch](tarball://root/attachments/some-uuid/ticket3345/3345.patch) by mhansen created at 2008-06-10 04:06:56",
+    "body": "Attachment [3345.patch](tarball://root/attachments/some-uuid/ticket3345/3345.patch) by @mwhansen created at 2008-06-10 04:06:56",
     "created_at": "2008-06-10T04:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23228",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [3345.patch](tarball://root/attachments/some-uuid/ticket3345/3345.patch) by mhansen created at 2008-06-10 04:06:56
+Attachment [3345.patch](tarball://root/attachments/some-uuid/ticket3345/3345.patch) by @mwhansen created at 2008-06-10 04:06:56
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_023229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23229",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_023230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23230",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -153,16 +153,16 @@ Changing status from new to assigned.
 archive/issue_comments_023231.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to mhansen.",
+    "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2008-06-10T04:07:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23231",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from cwitty to mhansen.
+Changing assignee from cwitty to @mwhansen.
 
 
 
@@ -253,7 +253,7 @@ archive/issue_comments_023233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23233",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_023234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23234",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -284,16 +284,16 @@ Changing keywords from "trace" to "trace, editor_mhansen".
 archive/issue_comments_023235.json:
 ```json
 {
-    "body": "Attachment [trac_3345.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345.patch) by mhansen created at 2008-07-15 21:26:10",
+    "body": "Attachment [trac_3345.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345.patch) by @mwhansen created at 2008-07-15 21:26:10",
     "created_at": "2008-07-15T21:26:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23235",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3345.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345.patch) by mhansen created at 2008-07-15 21:26:10
+Attachment [trac_3345.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345.patch) by @mwhansen created at 2008-07-15 21:26:10
 
 
 
@@ -307,7 +307,7 @@ archive/issue_comments_023236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23236",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -320,16 +320,16 @@ I don't know what's going on recalling the last value produced by trace, but tha
 archive/issue_comments_023237.json:
 ```json
 {
-    "body": "Attachment [trac_3345-part2.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part2.patch) by was created at 2008-07-21 18:19:39\n\ndone while refereeing.",
+    "body": "Attachment [trac_3345-part2.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part2.patch) by @williamstein created at 2008-07-21 18:19:39\n\ndone while refereeing.",
     "created_at": "2008-07-21T18:19:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23237",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_3345-part2.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part2.patch) by was created at 2008-07-21 18:19:39
+Attachment [trac_3345-part2.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part2.patch) by @williamstein created at 2008-07-21 18:19:39
 
 done while refereeing.
 
@@ -345,7 +345,7 @@ archive/issue_comments_023238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23238",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_023239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23239",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -426,16 +426,16 @@ Michael
 archive/issue_comments_023241.json:
 ```json
 {
-    "body": "Attachment [trac_3345-part3.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part3.patch) by was created at 2008-07-21 21:00:13",
+    "body": "Attachment [trac_3345-part3.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part3.patch) by @williamstein created at 2008-07-21 21:00:13",
     "created_at": "2008-07-21T21:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23241",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_3345-part3.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part3.patch) by was created at 2008-07-21 21:00:13
+Attachment [trac_3345-part3.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part3.patch) by @williamstein created at 2008-07-21 21:00:13
 
 
 
@@ -444,16 +444,16 @@ Attachment [trac_3345-part3.patch](tarball://root/attachments/some-uuid/ticket33
 archive/issue_comments_023242.json:
 ```json
 {
-    "body": "Attachment [trac_3345-part4.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part4.patch) by mhansen created at 2008-07-21 22:52:30",
+    "body": "Attachment [trac_3345-part4.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part4.patch) by @mwhansen created at 2008-07-21 22:52:30",
     "created_at": "2008-07-21T22:52:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23242",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3345-part4.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part4.patch) by mhansen created at 2008-07-21 22:52:30
+Attachment [trac_3345-part4.patch](tarball://root/attachments/some-uuid/ticket3345/trac_3345-part4.patch) by @mwhansen created at 2008-07-21 22:52:30
 
 
 
@@ -467,7 +467,7 @@ archive/issue_comments_023243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3345#issuecomment-23243",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

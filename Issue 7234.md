@@ -3,7 +3,7 @@
 archive/issues_007234.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  rbeezer cremona kcrisman slelievre\n\nKeywords: unit group finite field ring\n\nThe attached patch implements unit groups for finite fields.  It is \nmodelled on John Cremona's code for the unit groups of number fields.  One \ndifference is that if F is a finite field,  while F.unit_group() yields \nthe group of units (just as for a number field), F.unit_group(n) gives the \ngroup of n-th roots of unity.\n\nI have designated it as \"needs work\" for two reasons:\n\n1.  Both pieces of code deserve generalising to more general rings.  In\nparticular, Rob Beezer has\n[expressed](http://groups.google.com/group/sage-devel/browse_thread/thread/4f903f830aed653d) \na need to have the group of units of the integers modulo n.\n\n2.  There are certain aspects of the notation/terminology/implementation\nthat I am not totally happy with.  Maybe `F.unit_group(n)` is not such a\ngood idea.  Also it seems\nodd that one has\n\n```\nsage: F.<g> = FiniteField(16)\nsage: UF = F.unit_group()\nsage: UF.gen()\ng\nsage: g in UF\nTrue\n```\n\nbut\n\n```\nsage: UF(g)\nu\nsage: UF(1 + g + g^3)\nu^7\n```\n\nIt's similar for number fields:\n\n```\nsage: K.<a> = NumberField(x^3 - 39*x - 91)\nsage: UK = K.unit_group()\nsage: UK.gens()\n[-1, a^2 - 4*a - 22, a + 3]\nsage: UK(a + 3)\nu2\n```\n\nNote also that `UF(UF(g))` and `UK(UK(a + 3))` both lead to errors.\n\nDeciding how to be more consistent probably needs to be done at a more\ngeneral level and will most likely best be done by introducing a class\n`UnitGroupElement` based (for commutative rings anyway) on\n`AbelianGroupElement`, something that has been avoided in the finite field\nand number field cases.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7234\n\n",
+    "body": "Assignee: tbd\n\nCC:  @rbeezer @JohnCremona @kcrisman @slel\n\nKeywords: unit group finite field ring\n\nThe attached patch implements unit groups for finite fields.  It is \nmodelled on John Cremona's code for the unit groups of number fields.  One \ndifference is that if F is a finite field,  while F.unit_group() yields \nthe group of units (just as for a number field), F.unit_group(n) gives the \ngroup of n-th roots of unity.\n\nI have designated it as \"needs work\" for two reasons:\n\n1.  Both pieces of code deserve generalising to more general rings.  In\nparticular, Rob Beezer has\n[expressed](http://groups.google.com/group/sage-devel/browse_thread/thread/4f903f830aed653d) \na need to have the group of units of the integers modulo n.\n\n2.  There are certain aspects of the notation/terminology/implementation\nthat I am not totally happy with.  Maybe `F.unit_group(n)` is not such a\ngood idea.  Also it seems\nodd that one has\n\n```\nsage: F.<g> = FiniteField(16)\nsage: UF = F.unit_group()\nsage: UF.gen()\ng\nsage: g in UF\nTrue\n```\n\nbut\n\n```\nsage: UF(g)\nu\nsage: UF(1 + g + g^3)\nu^7\n```\n\nIt's similar for number fields:\n\n```\nsage: K.<a> = NumberField(x^3 - 39*x - 91)\nsage: UK = K.unit_group()\nsage: UK.gens()\n[-1, a^2 - 4*a - 22, a + 3]\nsage: UK(a + 3)\nu2\n```\n\nNote also that `UF(UF(g))` and `UK(UK(a + 3))` both lead to errors.\n\nDeciding how to be more consistent probably needs to be done at a more\ngeneral level and will most likely best be done by introducing a class\n`UnitGroupElement` based (for commutative rings anyway) on\n`AbelianGroupElement`, something that has been avoided in the finite field\nand number field cases.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7234\n\n",
     "created_at": "2009-10-16T14:30:18Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_007234.json:
 ```
 Assignee: tbd
 
-CC:  rbeezer cremona kcrisman slelievre
+CC:  @rbeezer @JohnCremona @kcrisman @slel
 
 Keywords: unit group finite field ring
 
@@ -95,7 +95,7 @@ archive/issue_comments_060004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60004",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing status from new to needs_work.
 archive/issue_comments_060005.json:
 ```json
 {
-    "body": "Attachment [trac_7234.patch](tarball://root/attachments/some-uuid/ticket7234/trac_7234.patch) by AlexGhitza created at 2009-11-15 13:21:41",
+    "body": "Attachment [trac_7234.patch](tarball://root/attachments/some-uuid/ticket7234/trac_7234.patch) by @aghitza created at 2009-11-15 13:21:41",
     "created_at": "2009-11-15T13:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60005",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_7234.patch](tarball://root/attachments/some-uuid/ticket7234/trac_7234.patch) by AlexGhitza created at 2009-11-15 13:21:41
+Attachment [trac_7234.patch](tarball://root/attachments/some-uuid/ticket7234/trac_7234.patch) by @aghitza created at 2009-11-15 13:21:41
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_060006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60006",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_060007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60007",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_060008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60008",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_060009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60009",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_060011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60011",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_060012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60012",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_060013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60013",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

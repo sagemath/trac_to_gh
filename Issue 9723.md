@@ -3,7 +3,7 @@
 archive/issues_009723.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp jhpalmieri malb mpatel ddrake jdemeyer\n\n## Hardware/Software\n* [Sun T5240](http://www.oracle.com/us/products/servers-storage/servers/sparc-enterprise/t-series/031584.htm)\n* [T2 PLUS](http://www.oracle.com/us/products/servers-storage/microelectronics/031459.htm) processors running at 1167 MHz. (16 cores and 128 hardware threads in total).\n* 32 GB RAM\n* No swap space\n* gcc 4.4.1 configured to use the Sun linker and assembler.\n* Sage 4.5.3.alpha0, with the following 4 new .spkg files, which are necessary to allow Sage to build on 64-bit on Solaris/OpenSolaris on both SPARC and x64.\n  * ECL - #9643. This was not necessary for 64-bit SPARC, but it would have been for 64-bit Solaris or OpenSolaris x86 builds, and was included in this build.\n  * ATLAS #9508\n  * Singular #9397 (Despite the ticket's says OpenSolaris, there is a critical 64-bit fix for Solaris 10 on SPARC too. Many of the problems first observed on a 64-bit OpenSolaris port also affect the 64-bit Solaris 10 SPARC port). \n  * zn_poly #9358 (Again, despite what the ticket's title is, this is also another fix which is essential for Sage to build 64-bit on Solaris 10 SPARC)\n\n == Background ==\nAlthough a fully stable copy of Sage on 64-bit Solaris 10 SPARC has never been built, Sage has at least built and able to do computations. See for example [factoring 323232323923321 on 64-bit Solaris SPARC](http://groups.google.co.uk/group/sage-devel/msg/63dd0f2d01bcfe4e). \n\nAs shown above, Sage 4.5.0 could be made to work, though I believe more recent versions have worked too. \n\nI've previously built Sage 64-bit on SPARC on both `t2.math.washington.edu` and on one of my own Solaris 10 SPARC systems - either my Sun Blade 1000 or my Sun Blade 2000 - I can not recall which). \n\n == The problem ==\n\n4.5.3.alpha0, with the four .spkg files mentioned above, builds on Solaris 10 SPARC. The file install.log shows:\n\n\n```\nTo install gap, gp, singular, etc., scripts\nin a standard bin directory, start sage and\ntype something like\n   sage: install_scripts('/usr/local/bin')\nat the Sage command prompt.\n\nTo build the documentation, run\n   make doc\n\nSage build/upgrade complete!\n```\n\n\nHowever, the build fails to start at all on `t2.math.washington.edu`, whereas a previous Sage was just about usable, though it was unstable. Instead 4.5.3.alpha0 fails with:\n\n\n```\nkirkby@t2:64 ~/t2/64/sage-4.5.3.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n| Sage Version 4.5.3.alpha0, Release Date: 2010-08-09                |\n| Type notebook() for the GUI, and license() for information.        |\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/IPython/ipmaker.pyc in force_import(modname)\n     64         reload(sys.modules[modname])\n     65     else:\n---> 66         __import__(modname)\n     67 \n     68 \n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/bin/ipy_profile_sage.py in <module>()\n      5     preparser(True)\n      6 \n----> 7     import sage.all_cmdline\n      8     sage.all_cmdline._init_cmdline(globals())\n      9 \n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/all_cmdline.py in <module>()\n     12 try:\n     13 \n---> 14     from sage.all import *\n     15     from sage.calculus.predefined import x\n     16     preparser(on=True)\n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/all.py in <module>()\n     71 \n     72 from sage.rings.all      import *\n---> 73 from sage.matrix.all     import *\n     74 \n     75 # This must come before Calculus -- it initializes the Pynac library.\n\n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/matrix/all.py in <module>()\n----> 1 \n      2 \n      3 from matrix_space import MatrixSpace, is_MatrixSpace\n      4 from constructor import matrix, Matrix, random_matrix, diagonal_matrix, identity_matrix, block_matrix, block_diagonal_matrix, jordan_block, zero_matrix\n      5 from matrix import is_Matrix\n      6 from berlekamp_massey import berlekamp_massey\n      7 \n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in <module>()\n     35 import matrix_generic_sparse\n     36 \n---> 37 import matrix_modn_dense\n     38 import matrix_modn_sparse\n     39 \n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/bin/matrix_integer_dense.pxd in init sage.matrix.matrix_modn_dense (sage/matrix/matrix_modn_dense.c:14829)()\n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/bin/matrix_mod2_dense.pxd in init sage.matrix.matrix_integer_dense (sage/matrix/matrix_integer_dense.c:39010)()\n\nImportError: ld.so.1: python: fatal: relocation error: file /rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/matrix/matrix_mod2_dense.so: symbol mzd_lqup: referenced symbol not found\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```\n\n == Likely cause ==\nmzd_lqup issues reported have been part of M4RI problems, but M4RI has not been updated recently to my knowledge.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9723\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @jhpalmieri @malb @qed777 @dandrake @jdemeyer\n\n## Hardware/Software\n* [Sun T5240](http://www.oracle.com/us/products/servers-storage/servers/sparc-enterprise/t-series/031584.htm)\n* [T2 PLUS](http://www.oracle.com/us/products/servers-storage/microelectronics/031459.htm) processors running at 1167 MHz. (16 cores and 128 hardware threads in total).\n* 32 GB RAM\n* No swap space\n* gcc 4.4.1 configured to use the Sun linker and assembler.\n* Sage 4.5.3.alpha0, with the following 4 new .spkg files, which are necessary to allow Sage to build on 64-bit on Solaris/OpenSolaris on both SPARC and x64.\n  * ECL - #9643. This was not necessary for 64-bit SPARC, but it would have been for 64-bit Solaris or OpenSolaris x86 builds, and was included in this build.\n  * ATLAS #9508\n  * Singular #9397 (Despite the ticket's says OpenSolaris, there is a critical 64-bit fix for Solaris 10 on SPARC too. Many of the problems first observed on a 64-bit OpenSolaris port also affect the 64-bit Solaris 10 SPARC port). \n  * zn_poly #9358 (Again, despite what the ticket's title is, this is also another fix which is essential for Sage to build 64-bit on Solaris 10 SPARC)\n\n == Background ==\nAlthough a fully stable copy of Sage on 64-bit Solaris 10 SPARC has never been built, Sage has at least built and able to do computations. See for example [factoring 323232323923321 on 64-bit Solaris SPARC](http://groups.google.co.uk/group/sage-devel/msg/63dd0f2d01bcfe4e). \n\nAs shown above, Sage 4.5.0 could be made to work, though I believe more recent versions have worked too. \n\nI've previously built Sage 64-bit on SPARC on both `t2.math.washington.edu` and on one of my own Solaris 10 SPARC systems - either my Sun Blade 1000 or my Sun Blade 2000 - I can not recall which). \n\n == The problem ==\n\n4.5.3.alpha0, with the four .spkg files mentioned above, builds on Solaris 10 SPARC. The file install.log shows:\n\n\n```\nTo install gap, gp, singular, etc., scripts\nin a standard bin directory, start sage and\ntype something like\n   sage: install_scripts('/usr/local/bin')\nat the Sage command prompt.\n\nTo build the documentation, run\n   make doc\n\nSage build/upgrade complete!\n```\n\n\nHowever, the build fails to start at all on `t2.math.washington.edu`, whereas a previous Sage was just about usable, though it was unstable. Instead 4.5.3.alpha0 fails with:\n\n\n```\nkirkby@t2:64 ~/t2/64/sage-4.5.3.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n| Sage Version 4.5.3.alpha0, Release Date: 2010-08-09                |\n| Type notebook() for the GUI, and license() for information.        |\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/IPython/ipmaker.pyc in force_import(modname)\n     64         reload(sys.modules[modname])\n     65     else:\n---> 66         __import__(modname)\n     67 \n     68 \n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/bin/ipy_profile_sage.py in <module>()\n      5     preparser(True)\n      6 \n----> 7     import sage.all_cmdline\n      8     sage.all_cmdline._init_cmdline(globals())\n      9 \n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/all_cmdline.py in <module>()\n     12 try:\n     13 \n---> 14     from sage.all import *\n     15     from sage.calculus.predefined import x\n     16     preparser(on=True)\n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/all.py in <module>()\n     71 \n     72 from sage.rings.all      import *\n---> 73 from sage.matrix.all     import *\n     74 \n     75 # This must come before Calculus -- it initializes the Pynac library.\n\n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/matrix/all.py in <module>()\n----> 1 \n      2 \n      3 from matrix_space import MatrixSpace, is_MatrixSpace\n      4 from constructor import matrix, Matrix, random_matrix, diagonal_matrix, identity_matrix, block_matrix, block_diagonal_matrix, jordan_block, zero_matrix\n      5 from matrix import is_Matrix\n      6 from berlekamp_massey import berlekamp_massey\n      7 \n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in <module>()\n     35 import matrix_generic_sparse\n     36 \n---> 37 import matrix_modn_dense\n     38 import matrix_modn_sparse\n     39 \n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/bin/matrix_integer_dense.pxd in init sage.matrix.matrix_modn_dense (sage/matrix/matrix_modn_dense.c:14829)()\n\n/rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/bin/matrix_mod2_dense.pxd in init sage.matrix.matrix_integer_dense (sage/matrix/matrix_integer_dense.c:39010)()\n\nImportError: ld.so.1: python: fatal: relocation error: file /rootpool2/local/kirkby/t2/64/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/matrix/matrix_mod2_dense.so: symbol mzd_lqup: referenced symbol not found\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```\n\n == Likely cause ==\nmzd_lqup issues reported have been part of M4RI problems, but M4RI has not been updated recently to my knowledge.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9723\n\n",
     "created_at": "2010-08-11T06:05:12Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009723.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp jhpalmieri malb mpatel ddrake jdemeyer
+CC:  @jaapspies @jhpalmieri @malb @qed777 @dandrake @jdemeyer
 
 ## Hardware/Software
 * [Sun T5240](http://www.oracle.com/us/products/servers-storage/servers/sparc-enterprise/t-series/031584.htm)
@@ -148,7 +148,7 @@ archive/issue_comments_094980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9723#issuecomment-94980",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_094983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9723#issuecomment-94983",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_094984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9723#issuecomment-94984",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_094987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9723#issuecomment-94987",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_094990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9723#issuecomment-94990",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_094991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9723#issuecomment-94991",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_094992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9723#issuecomment-94992",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_094993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9723",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9723#issuecomment-94993",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006929.json:
     "title": "Docs in functional and a few ring methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6929",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tba
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6929
 archive/issue_comments_057270.json:
 ```json
 {
-    "body": "Attachment [trac_6929-functional-doctests.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-functional-doctests.patch) by kcrisman created at 2009-09-14 19:56:21",
+    "body": "Attachment [trac_6929-functional-doctests.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-functional-doctests.patch) by @kcrisman created at 2009-09-14 19:56:21",
     "created_at": "2009-09-14T19:56:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6929#issuecomment-57270",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6929-functional-doctests.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-functional-doctests.patch) by kcrisman created at 2009-09-14 19:56:21
+Attachment [trac_6929-functional-doctests.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-functional-doctests.patch) by @kcrisman created at 2009-09-14 19:56:21
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_057271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6929#issuecomment-57271",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -70,16 +70,16 @@ rebased against 4.1.2.alpha2. apply only this patch
 archive/issue_comments_057272.json:
 ```json
 {
-    "body": "Attachment [trac_6929-rebased.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-rebased.patch) by jhpalmieri created at 2009-09-23 04:25:53\n\nThe patch needed to be rebased (only the changes in rings/ring.pyx).  I also added one fix (referee's prerogative: changing ``n`th` to ``n^{th}`` in misc/functional.py) to avoid a warning when building the reference manual.\n\nLooks good, all tests pass, positive review.",
+    "body": "Attachment [trac_6929-rebased.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-rebased.patch) by @jhpalmieri created at 2009-09-23 04:25:53\n\nThe patch needed to be rebased (only the changes in rings/ring.pyx).  I also added one fix (referee's prerogative: changing ``n`th` to ``n^{th}`` in misc/functional.py) to avoid a warning when building the reference manual.\n\nLooks good, all tests pass, positive review.",
     "created_at": "2009-09-23T04:25:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6929#issuecomment-57272",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6929-rebased.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-rebased.patch) by jhpalmieri created at 2009-09-23 04:25:53
+Attachment [trac_6929-rebased.patch](tarball://root/attachments/some-uuid/ticket6929/trac_6929-rebased.patch) by @jhpalmieri created at 2009-09-23 04:25:53
 
 The patch needed to be rebased (only the changes in rings/ring.pyx).  I also added one fix (referee's prerogative: changing ``n`th` to ``n^{th}`` in misc/functional.py) to avoid a warning when building the reference manual.
 
@@ -135,7 +135,7 @@ archive/issue_comments_057275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6929#issuecomment-57275",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_057277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6929",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6929#issuecomment-57277",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

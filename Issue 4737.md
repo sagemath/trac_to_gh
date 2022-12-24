@@ -14,7 +14,7 @@ archive/issues_004737.json:
     "title": "[with spkg, needs review] upgrade to Sphinx 0.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4737",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff

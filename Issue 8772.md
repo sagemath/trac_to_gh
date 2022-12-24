@@ -3,7 +3,7 @@
 archive/issues_008772.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  leif mpatel dimpase pbruin @spaghettisalat\n\nKeywords: Maxima\n\nSufficiently many calls to Maxima eventually causes that interface to throw an exception, some samples of which are given below.    A minimal piece of code exhibiting this problem is\n\n\n```\ndef prob(): \n    for i in xrange(1000000): \n        a = var('a') \n        eqn = (a - 1)/(a) \n        eqn.numerator() \n```\n\nThis error has been observed in Sage 4.3.* on OS X.5.* (8-core Xeon Mac Pro and 2-core Intel Core 2 Mac Book), and Ubuntu Linux 9.10 (quad-core Intel Core 2).  See the sage-devel thread [http://groups.google.com/group/sage-devel/browse_thread/thread/3b43147e44324c25](http://groups.google.com/group/sage-devel/browse_thread/thread/3b43147e44324c25) for some discussion.  In particular, it may be related to #5662 where the synchronization with Maxima was getting lost on  certain multi-core CPUs because of something related to switching between cores.   It takes some time, e.g. 5-15 minutes for the problem to manifest itself.  \n\nTypical errors:\n\n\n```\nTypeError: unable to make sense of Maxima expression \n'\"__SAGE_SYNCHRO_MARKER_202188656\"' in Sage \n\nTypeError: Error executing code in Maxima \nCODE: \n        _tmp_ : -(a0-1)*a1^2*a3$ \nMaxima ERROR: \n_tmp_ : -(a0-1)*a1^2*a3$ \nstdin:57338284:Incorrect syntax: Illegal use of delimiter ) \n(%i832002) \nstdin:57338357:Incorrect syntax: Premature termination of input at ;. \n(%i832003) \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8772\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nexttime @qed777 @dimpase @pjbruin @spaghettisalat\n\nKeywords: Maxima\n\nSufficiently many calls to Maxima eventually causes that interface to throw an exception, some samples of which are given below.    A minimal piece of code exhibiting this problem is\n\n\n```\ndef prob(): \n    for i in xrange(1000000): \n        a = var('a') \n        eqn = (a - 1)/(a) \n        eqn.numerator() \n```\n\nThis error has been observed in Sage 4.3.* on OS X.5.* (8-core Xeon Mac Pro and 2-core Intel Core 2 Mac Book), and Ubuntu Linux 9.10 (quad-core Intel Core 2).  See the sage-devel thread [http://groups.google.com/group/sage-devel/browse_thread/thread/3b43147e44324c25](http://groups.google.com/group/sage-devel/browse_thread/thread/3b43147e44324c25) for some discussion.  In particular, it may be related to #5662 where the synchronization with Maxima was getting lost on  certain multi-core CPUs because of something related to switching between cores.   It takes some time, e.g. 5-15 minutes for the problem to manifest itself.  \n\nTypical errors:\n\n\n```\nTypeError: unable to make sense of Maxima expression \n'\"__SAGE_SYNCHRO_MARKER_202188656\"' in Sage \n\nTypeError: Error executing code in Maxima \nCODE: \n        _tmp_ : -(a0-1)*a1^2*a3$ \nMaxima ERROR: \n_tmp_ : -(a0-1)*a1^2*a3$ \nstdin:57338284:Incorrect syntax: Illegal use of delimiter ) \n(%i832002) \nstdin:57338357:Incorrect syntax: Premature termination of input at ;. \n(%i832003) \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8772\n\n",
     "created_at": "2010-04-26T21:00:59Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_008772.json:
     "title": "Maxima interface chokes randomly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8772",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  leif mpatel dimpase pbruin @spaghettisalat
+CC:  @nexttime @qed777 @dimpase @pjbruin @spaghettisalat
 
 Keywords: Maxima
 
@@ -168,7 +168,7 @@ archive/issue_comments_080282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80282",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_080289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80289",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_080290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80290",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -612,7 +612,7 @@ archive/issue_comments_080291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80291",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -630,7 +630,7 @@ archive/issue_comments_080292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80292",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -648,7 +648,7 @@ archive/issue_comments_080293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80293",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -666,7 +666,7 @@ archive/issue_comments_080294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80294",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -684,7 +684,7 @@ archive/issue_comments_080295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80295",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005493.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: sphinx, crypto\n\nThe attached patch makes the Sphinx output for `mq.SR` look much nicer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5493\n\n",
+    "body": "Assignee: @malb\n\nKeywords: sphinx, crypto\n\nThe attached patch makes the Sphinx output for `mq.SR` look much nicer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5493\n\n",
     "created_at": "2009-03-11T23:03:38Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_005493.json:
     "title": "[with patch, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5493",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: sphinx, crypto
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5493
 archive/issue_comments_042666.json:
 ```json
 {
-    "body": "Attachment [sr_sphinx.patch](tarball://root/attachments/some-uuid/ticket5493/sr_sphinx.patch) by malb created at 2009-03-11 23:03:54\n\nyay, my first sphinx patch",
+    "body": "Attachment [sr_sphinx.patch](tarball://root/attachments/some-uuid/ticket5493/sr_sphinx.patch) by @malb created at 2009-03-11 23:03:54\n\nyay, my first sphinx patch",
     "created_at": "2009-03-11T23:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5493#issuecomment-42666",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sr_sphinx.patch](tarball://root/attachments/some-uuid/ticket5493/sr_sphinx.patch) by malb created at 2009-03-11 23:03:54
+Attachment [sr_sphinx.patch](tarball://root/attachments/some-uuid/ticket5493/sr_sphinx.patch) by @malb created at 2009-03-11 23:03:54
 
 yay, my first sphinx patch
 

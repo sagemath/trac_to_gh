@@ -3,7 +3,7 @@
 archive/issues_009277.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jsp\n\nJust when I thought I'd got rid of all the junk like this from spkg-install files:\n\nIssue created by migration from https://trac.sagemath.org/ticket/9277\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jaapspies\n\nJust when I thought I'd got rid of all the junk like this from spkg-install files:\n\nIssue created by migration from https://trac.sagemath.org/ticket/9277\n\n",
     "created_at": "2010-06-19T21:38:52Z",
     "labels": [
         "algebra",
@@ -17,9 +17,9 @@ archive/issues_009277.json:
     "user": "drkirkby"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jsp
+CC:  @jaapspies
 
 Just when I thought I'd got rid of all the junk like this from spkg-install files:
 
@@ -52,7 +52,7 @@ Changing component from algebra to build.
 archive/issue_comments_087381.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to GeorgSWeber.",
+    "body": "Changing assignee from @aghitza to GeorgSWeber.",
     "created_at": "2010-06-19T21:44:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9277",
     "type": "issue_comment",
@@ -61,7 +61,7 @@ archive/issue_comments_087381.json:
 }
 ```
 
-Changing assignee from AlexGhitza to GeorgSWeber.
+Changing assignee from @aghitza to GeorgSWeber.
 
 
 
@@ -172,7 +172,7 @@ archive/issue_comments_087385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9277#issuecomment-87385",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_087386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9277#issuecomment-87386",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_087387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9277",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9277#issuecomment-87387",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

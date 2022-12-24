@@ -3,7 +3,7 @@
 archive/issues_000571.json:
 ```json
 {
-    "body": "Assignee: was\n\nI removed the # long after this doctest:\n\n```\n             sage: E = EllipticCurve([0, 0, 1, -23737, 960366])    \n             sage: r, s, G = E.simon_two_descent(); r,s       # long\n             (8, 8)\n```\n\nthen ran the doctests and it fails.  This is strange because from the console it works fine.\nThe failure (see below) suggests too low of precision in bnfsunit/get_arch (in PARI).  Very weird. \nJohn Cremona is working on many improvements to this very code, so maybe it will all be fixed\nby that. \n\n\n```\nwas@ubuntu:~/d/sage/sage/schemes/elliptic_curves$ sage -t ell_rational_field.py\nsage -t  ell_rational_field.py                               **********************************************************************\nFile \"ell_rational_field.py\", line 905:\n    sage: r, s, G = E.simon_two_descent(); r,s\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/s.dev/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_22[19]>\", line 1, in <module>\n        r, s, G = E.simon_two_descent(); r,s###line 905:\n    sage: r, s, G = E.simon_two_descent(); r,s\n      File \"/home/was/s.dev/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 913, in simon_two_descent\n        maxprob=maxprob, limbigprime=limbigprime)\n      File \"/home/was/s.dev/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/gp_simon.py\", line 93, in simon_two_descent\n        raise RuntimeError, \"%s\\nAn error occured while running Simon's 2-descent program\"%s\n    RuntimeError:   *** bnfsunit: precision too low in get_arch.\n    An error occured while running Simon's 2-descent program\n**********************************************************************\n1 items had failures:\n   1 of  20 in __main__.example_22\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_ell_rational_field.py\n         [51.1 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/571\n\n",
+    "body": "Assignee: @williamstein\n\nI removed the # long after this doctest:\n\n```\n             sage: E = EllipticCurve([0, 0, 1, -23737, 960366])    \n             sage: r, s, G = E.simon_two_descent(); r,s       # long\n             (8, 8)\n```\n\nthen ran the doctests and it fails.  This is strange because from the console it works fine.\nThe failure (see below) suggests too low of precision in bnfsunit/get_arch (in PARI).  Very weird. \nJohn Cremona is working on many improvements to this very code, so maybe it will all be fixed\nby that. \n\n\n```\nwas@ubuntu:~/d/sage/sage/schemes/elliptic_curves$ sage -t ell_rational_field.py\nsage -t  ell_rational_field.py                               **********************************************************************\nFile \"ell_rational_field.py\", line 905:\n    sage: r, s, G = E.simon_two_descent(); r,s\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/s.dev/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_22[19]>\", line 1, in <module>\n        r, s, G = E.simon_two_descent(); r,s###line 905:\n    sage: r, s, G = E.simon_two_descent(); r,s\n      File \"/home/was/s.dev/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 913, in simon_two_descent\n        maxprob=maxprob, limbigprime=limbigprime)\n      File \"/home/was/s.dev/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/gp_simon.py\", line 93, in simon_two_descent\n        raise RuntimeError, \"%s\\nAn error occured while running Simon's 2-descent program\"%s\n    RuntimeError:   *** bnfsunit: precision too low in get_arch.\n    An error occured while running Simon's 2-descent program\n**********************************************************************\n1 items had failures:\n   1 of  20 in __main__.example_22\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_ell_rational_field.py\n         [51.1 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/571\n\n",
     "created_at": "2007-09-02T18:16:12Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000571.json:
     "title": "weird simon_two_descent doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/571",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I removed the # long after this doctest:
 
@@ -76,7 +76,7 @@ archive/issue_comments_002962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/571#issuecomment-2962",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_002963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/571#issuecomment-2963",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_002965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/571#issuecomment-2965",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_002966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/571#issuecomment-2966",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_002967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/571#issuecomment-2967",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -201,16 +201,16 @@ The attached patch removes the #long.
 archive/issue_comments_002968.json:
 ```json
 {
-    "body": "Attachment [trac-571-simon-2-descent.patch](tarball://root/attachments/some-uuid/ticket571/trac-571-simon-2-descent.patch) by was created at 2008-01-27 12:54:33",
+    "body": "Attachment [trac-571-simon-2-descent.patch](tarball://root/attachments/some-uuid/ticket571/trac-571-simon-2-descent.patch) by @williamstein created at 2008-01-27 12:54:33",
     "created_at": "2008-01-27T12:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/571#issuecomment-2968",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-571-simon-2-descent.patch](tarball://root/attachments/some-uuid/ticket571/trac-571-simon-2-descent.patch) by was created at 2008-01-27 12:54:33
+Attachment [trac-571-simon-2-descent.patch](tarball://root/attachments/some-uuid/ticket571/trac-571-simon-2-descent.patch) by @williamstein created at 2008-01-27 12:54:33
 
 
 
@@ -278,7 +278,7 @@ archive/issue_comments_002972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/571#issuecomment-2972",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_002973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/571#issuecomment-2973",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

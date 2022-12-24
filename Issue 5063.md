@@ -3,7 +3,7 @@
 archive/issues_005063.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is to allow one to take more advantages of matplotlib functionality.\n\nI'm posting a patch so that I can look at the diff.  It's definitely not ready.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5063\n\n",
+    "body": "Assignee: @williamstein\n\nThis is to allow one to take more advantages of matplotlib functionality.\n\nI'm posting a patch so that I can look at the diff.  It's definitely not ready.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5063\n\n",
     "created_at": "2009-01-23T01:32:50Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005063.json:
     "title": "major reworking of plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5063",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is to allow one to take more advantages of matplotlib functionality.
 
@@ -39,7 +39,7 @@ archive/issue_comments_038571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5063#issuecomment-38571",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -52,15 +52,15 @@ Resolution: invalid
 archive/issue_comments_038572.json:
 ```json
 {
-    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5063/plot.patch) by mhansen created at 2010-01-18 22:39:52\n\nI'm going to mark this as invalid.",
+    "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5063/plot.patch) by @mwhansen created at 2010-01-18 22:39:52\n\nI'm going to mark this as invalid.",
     "created_at": "2010-01-18T22:39:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5063#issuecomment-38572",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5063/plot.patch) by mhansen created at 2010-01-18 22:39:52
+Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5063/plot.patch) by @mwhansen created at 2010-01-18 22:39:52
 
 I'm going to mark this as invalid.

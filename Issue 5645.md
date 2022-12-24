@@ -3,7 +3,7 @@
 archive/issues_005645.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu\n\n\n```\nsage: plot(e^(x^-2), (x, -1, 1))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/IPython/Prompts.py\", line 551, in __call__\n    manipulated_val = self.display(arg)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/IPython/Prompts.py\", line 577, in _display\n    return self.shell.hooks.result_display(arg)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/IPython/hooks.py\", line 141, in __call__\n    ret = cmd(*args, **kw)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/IPython/hooks.py\", line 171, in result_display\n    out = pformat(arg)\n  File \"/Users/robert/sage/current/local/lib/python2.5/pprint.py\", line 111, in pformat\n    self._format(object, sio, 0, 0, {}, 0)\n  File \"/Users/robert/sage/current/local/lib/python2.5/pprint.py\", line 129, in _format\n    rep = self._repr(object, context, level - 1)\n  File \"/Users/robert/sage/current/local/lib/python2.5/pprint.py\", line 195, in _repr\n    self._depth, level)\n  File \"/Users/robert/sage/current/local/lib/python2.5/pprint.py\", line 207, in format\n    return _safe_repr(object, context, maxlevels, level)\n  File \"/Users/robert/sage/current/local/lib/python2.5/pprint.py\", line 292, in _safe_repr\n    rep = repr(object)\n  File \"sage_object.pyx\", line 98, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1085)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 861, in _repr_\n    self.show()\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1297, in show\n    hgridlinesstyle=hgridlinesstyle)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1543, in save\n    xmin, xmax, ymin, ymax = sage_axes.add_xy_axes(subplot, xmin, xmax, ymin, ymax)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/plot/axes.py\", line 325, in add_xy_axes\n    x_axis_ypos, ystep, ytslminor, ytslmajor = self._find_axes(ymin, ymax)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/plot/axes.py\", line 241, in _find_axes\n    tslmajor, oppaxis, step = self._tasteful_ticks(minval, maxval)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/plot/axes.py\", line 125, in _tasteful_ticks\n    sl = [s for s in str(int(absmax))]\nOverflowError: cannot convert float infinity to long\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5645\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu\n\n\n```\nsage: plot(e^(x^-2), (x, -1, 1))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/IPython/Prompts.py\", line 551, in __call__\n    manipulated_val = self.display(arg)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/IPython/Prompts.py\", line 577, in _display\n    return self.shell.hooks.result_display(arg)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/IPython/hooks.py\", line 141, in __call__\n    ret = cmd(*args, **kw)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/IPython/hooks.py\", line 171, in result_display\n    out = pformat(arg)\n  File \"/Users/robert/sage/current/local/lib/python2.5/pprint.py\", line 111, in pformat\n    self._format(object, sio, 0, 0, {}, 0)\n  File \"/Users/robert/sage/current/local/lib/python2.5/pprint.py\", line 129, in _format\n    rep = self._repr(object, context, level - 1)\n  File \"/Users/robert/sage/current/local/lib/python2.5/pprint.py\", line 195, in _repr\n    self._depth, level)\n  File \"/Users/robert/sage/current/local/lib/python2.5/pprint.py\", line 207, in format\n    return _safe_repr(object, context, maxlevels, level)\n  File \"/Users/robert/sage/current/local/lib/python2.5/pprint.py\", line 292, in _safe_repr\n    rep = repr(object)\n  File \"sage_object.pyx\", line 98, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1085)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 861, in _repr_\n    self.show()\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1297, in show\n    hgridlinesstyle=hgridlinesstyle)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1543, in save\n    xmin, xmax, ymin, ymax = sage_axes.add_xy_axes(subplot, xmin, xmax, ymin, ymax)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/plot/axes.py\", line 325, in add_xy_axes\n    x_axis_ypos, ystep, ytslminor, ytslmajor = self._find_axes(ymin, ymax)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/plot/axes.py\", line 241, in _find_axes\n    tslmajor, oppaxis, step = self._tasteful_ticks(minval, maxval)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/plot/axes.py\", line 125, in _tasteful_ticks\n    sl = [s for s in str(int(absmax))]\nOverflowError: cannot convert float infinity to long\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5645\n\n",
     "created_at": "2009-03-30T21:46:13Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005645.json:
     "title": "error in axis plotting with large values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5645",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  mvngu
 
@@ -79,7 +79,7 @@ archive/issue_comments_044086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5645#issuecomment-44086",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_044087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5645",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5645#issuecomment-44087",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

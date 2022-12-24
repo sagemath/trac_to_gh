@@ -3,7 +3,7 @@
 archive/issues_001784.json:
 ```json
 {
-    "body": "Assignee: was\n\nA doctest failure in sage-2.9.3\n\n./sage -t ./devel/sage-main/sage/rings/number_field/number_field.py\nsage -t  devel/sage-main/sage/rings/number_field/number_field.py**********************************************************************\nFile \"number_field.py\", line 2042:\n    sage: Z(-1)\nExpected:\n    0.0333333333333333\nGot:\n    0\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_58\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_number_field.py\n         [90.3 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage-main/sage/rings/number_field/number_field.py\nTotal time for all tests: 90.3 seconds\n\nThe failed test is the following:\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1784\n\n",
+    "body": "Assignee: @williamstein\n\nA doctest failure in sage-2.9.3\n\n./sage -t ./devel/sage-main/sage/rings/number_field/number_field.py\nsage -t  devel/sage-main/sage/rings/number_field/number_field.py**********************************************************************\nFile \"number_field.py\", line 2042:\n    sage: Z(-1)\nExpected:\n    0.0333333333333333\nGot:\n    0\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_58\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_number_field.py\n         [90.3 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage-main/sage/rings/number_field/number_field.py\nTotal time for all tests: 90.3 seconds\n\nThe failed test is the following:\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1784\n\n",
     "created_at": "2008-01-15T19:10:16Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001784.json:
     "title": "number field doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1784",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 A doctest failure in sage-2.9.3
 
@@ -64,7 +64,7 @@ archive/issue_comments_011293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1784#issuecomment-11293",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_011295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1784#issuecomment-11295",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_011297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1784#issuecomment-11297",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_011298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1784#issuecomment-11298",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 

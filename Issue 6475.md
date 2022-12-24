@@ -3,7 +3,7 @@
 archive/issues_006475.json:
 ```json
 {
-    "body": "Assignee: wstein\n\nCC:  was acleone mpatel\n\nKeywords: notebook delete file error\n\nIf I delete a data file using the notebook (Data... pop up menu -> file name -> delete file name link), the file is deleted, but the browser then goes to a blank page titled \"Error | Sage Notebook\". The browser is Safari 4 on OS X 10.5, in case that makes a difference.\n\nWilliam Stein reported on Sage-Support:\n\nI've seen this.  This definitely didn't used to happen.  Somebody introduced this bug a few months ago.  Please report it to trac.  I'll fix it in September/October when I work on the notebook, if nobody beats me to it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6475\n\n",
+    "body": "Assignee: wstein\n\nCC:  @williamstein acleone @qed777\n\nKeywords: notebook delete file error\n\nIf I delete a data file using the notebook (Data... pop up menu -> file name -> delete file name link), the file is deleted, but the browser then goes to a blank page titled \"Error | Sage Notebook\". The browser is Safari 4 on OS X 10.5, in case that makes a difference.\n\nWilliam Stein reported on Sage-Support:\n\nI've seen this.  This definitely didn't used to happen.  Somebody introduced this bug a few months ago.  Please report it to trac.  I'll fix it in September/October when I work on the notebook, if nobody beats me to it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6475\n\n",
     "created_at": "2009-07-07T18:22:15Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_006475.json:
 ```
 Assignee: wstein
 
-CC:  was acleone mpatel
+CC:  @williamstein acleone @qed777
 
 Keywords: notebook delete file error
 
@@ -47,7 +47,7 @@ archive/issue_comments_052337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6475#issuecomment-52337",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_052338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6475#issuecomment-52338",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -78,16 +78,16 @@ Changes the title of the successful delete page
 archive/issue_comments_052339.json:
 ```json
 {
-    "body": "Attachment [trac_6475-error-delete-data-file.patch](tarball://root/attachments/some-uuid/ticket6475/trac_6475-error-delete-data-file.patch) by timdumol created at 2010-01-19 10:54:49",
+    "body": "Attachment [trac_6475-error-delete-data-file.patch](tarball://root/attachments/some-uuid/ticket6475/trac_6475-error-delete-data-file.patch) by @TimDumol created at 2010-01-19 10:54:49",
     "created_at": "2010-01-19T10:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6475#issuecomment-52339",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_6475-error-delete-data-file.patch](tarball://root/attachments/some-uuid/ticket6475/trac_6475-error-delete-data-file.patch) by timdumol created at 2010-01-19 10:54:49
+Attachment [trac_6475-error-delete-data-file.patch](tarball://root/attachments/some-uuid/ticket6475/trac_6475-error-delete-data-file.patch) by @TimDumol created at 2010-01-19 10:54:49
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_052340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6475#issuecomment-52340",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_052343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6475#issuecomment-52343",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

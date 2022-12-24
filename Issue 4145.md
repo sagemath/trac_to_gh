@@ -14,7 +14,7 @@ archive/issues_004145.json:
     "title": "[with patch, needs review] linear codes list function is slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4145",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tbd
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4145
 archive/issue_comments_030092.json:
 ```json
 {
-    "body": "Attachment [trac_4145-lin-codes-slow.patch](tarball://root/attachments/some-uuid/ticket4145/trac_4145-lin-codes-slow.patch) by rlm created at 2008-09-18 15:47:33\n\nThis may actually be a bugfix, see:\nhttp://trac.sagemath.org/sage_trac/ticket/4115#comment:13",
+    "body": "Attachment [trac_4145-lin-codes-slow.patch](tarball://root/attachments/some-uuid/ticket4145/trac_4145-lin-codes-slow.patch) by @rlmill created at 2008-09-18 15:47:33\n\nThis may actually be a bugfix, see:\nhttp://trac.sagemath.org/sage_trac/ticket/4115#comment:13",
     "created_at": "2008-09-18T15:47:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4145#issuecomment-30092",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_4145-lin-codes-slow.patch](tarball://root/attachments/some-uuid/ticket4145/trac_4145-lin-codes-slow.patch) by rlm created at 2008-09-18 15:47:33
+Attachment [trac_4145-lin-codes-slow.patch](tarball://root/attachments/some-uuid/ticket4145/trac_4145-lin-codes-slow.patch) by @rlmill created at 2008-09-18 15:47:33
 
 This may actually be a bugfix, see:
 http://trac.sagemath.org/sage_trac/ticket/4115#comment:13
@@ -76,7 +76,7 @@ archive/issue_comments_030093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4145#issuecomment-30093",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

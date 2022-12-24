@@ -3,7 +3,7 @@
 archive/issues_006519.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  slabbe\n\nKeywords: words\n\nThe current words library in Sage needs to be improved (mainly for speed, better code organization, etc.).\n\nWe essentially got a patch ready to do this. I'll post it soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6519\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @seblabbe\n\nKeywords: words\n\nThe current words library in Sage needs to be improved (mainly for speed, better code organization, etc.).\n\nWe essentially got a patch ready to do this. I'll post it soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6519\n\n",
     "created_at": "2009-07-12T14:33:51Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_006519.json:
     "title": "improve the words library code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6519",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  slabbe
+CC:  @seblabbe
 
 Keywords: words
 
@@ -43,7 +43,7 @@ archive/issue_comments_053134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53134",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_053135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53135",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_053136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53136",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_053137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53137",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_053138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53138",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_053139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53139",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_053140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53140",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_053141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53141",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_053142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53142",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_053144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53144",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_053145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53145",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_053146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53146",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_053147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53147",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_053148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53148",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -478,16 +478,16 @@ archive/issue_comments_053148.json:
 archive/issue_comments_053149.json:
 ```json
 {
-    "body": "Attachment [trac_6519-words_ng.patch](tarball://root/attachments/some-uuid/ticket6519/trac_6519-words_ng.patch) by saliola created at 2009-07-17 21:55:09\n\nDO NOT APPLY!",
+    "body": "Attachment [trac_6519-words_ng.patch](tarball://root/attachments/some-uuid/ticket6519/trac_6519-words_ng.patch) by @saliola created at 2009-07-17 21:55:09\n\nDO NOT APPLY!",
     "created_at": "2009-07-17T21:55:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53149",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_6519-words_ng.patch](tarball://root/attachments/some-uuid/ticket6519/trac_6519-words_ng.patch) by saliola created at 2009-07-17 21:55:09
+Attachment [trac_6519-words_ng.patch](tarball://root/attachments/some-uuid/ticket6519/trac_6519-words_ng.patch) by @saliola created at 2009-07-17 21:55:09
 
 DO NOT APPLY!
 
@@ -498,16 +498,16 @@ DO NOT APPLY!
 archive/issue_comments_053150.json:
 ```json
 {
-    "body": "Attachment [old_pickle_support.patch](tarball://root/attachments/some-uuid/ticket6519/old_pickle_support.patch) by saliola created at 2009-07-17 22:02:14\n\nTo make reviewing my fix easier: I've attached the file\n`old_pickle_support.patch`, which contains only the changes that I made\nto address the pickle issue. This patch has already been folded into o\n`trac_6519-words_ng.patch`, so do not apply it.\n\nBesides restoring the files `word_content.py` and `utils.py` (and\nadding warnings), I needed to touch `word.py`, so this is where the\nreviewer needs to concentrate their attention.",
+    "body": "Attachment [old_pickle_support.patch](tarball://root/attachments/some-uuid/ticket6519/old_pickle_support.patch) by @saliola created at 2009-07-17 22:02:14\n\nTo make reviewing my fix easier: I've attached the file\n`old_pickle_support.patch`, which contains only the changes that I made\nto address the pickle issue. This patch has already been folded into o\n`trac_6519-words_ng.patch`, so do not apply it.\n\nBesides restoring the files `word_content.py` and `utils.py` (and\nadding warnings), I needed to touch `word.py`, so this is where the\nreviewer needs to concentrate their attention.",
     "created_at": "2009-07-17T22:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53150",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [old_pickle_support.patch](tarball://root/attachments/some-uuid/ticket6519/old_pickle_support.patch) by saliola created at 2009-07-17 22:02:14
+Attachment [old_pickle_support.patch](tarball://root/attachments/some-uuid/ticket6519/old_pickle_support.patch) by @saliola created at 2009-07-17 22:02:14
 
 To make reviewing my fix easier: I've attached the file
 `old_pickle_support.patch`, which contains only the changes that I made
@@ -530,7 +530,7 @@ archive/issue_comments_053151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6519",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6519#issuecomment-53151",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 

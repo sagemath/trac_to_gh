@@ -3,7 +3,7 @@
 archive/issues_003815.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis was reported by Adrian:\n\nI tried the following, and it did not work\n\n\n```\nx,y=var('x y')\ndef myarctan(x,y):\n    if x>=0 and y>=0:\n        return arctan(abs(y/x))\n    if x<0 and y>=0:\n        return pi-arctan(abs(y/x))\n    if x<0 and y<0:\n        return pi+arctan(abs(y/x))\n    if x>=0 and y<0:\n        return 2*pi-arctan(abs(y/x))\nplot3d(myarctan(x,y),(x,-3,3),(y,-3,3))\n```\n\n\nHowever, the following does work:\n\n\n```\nplot3d(myarctan,(-3,3),(-3,3))\n```\n\n\nI guess both should work, so I guess this is a bug.\n\n+++++++++++++++++++++++++++++++++++++++++++++++++\n\nReply by wdj:\n\nDidn't work for me. I got a segfault:\n\n\n\n```\nsage: plot3d(myarctan(x,y),(-3,3),(-3,3))\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nThis is not a division by zero problem either:\n\n\n```\nsage: plot3d(myarctan(x,y),(0.1,0.3),(0.1,0.3))\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nStrange. If you use\n\n\n```\nx,y=var('x, y')\ndef myarctan(u,v):\n  if u>=0.0 and v>=0.0:\n      return RR(arctan(abs(v/u)))\n  if u<0.0 and v>=0.0:\n      return RR(pi-arctan(abs(v/u)))\n  if u<0.0 and v<0.0:\n      return RR(pi+arctan(abs(v/u)))\n  if u>=0.0 and v<0.0:\n      return RR(2*pi-arctan(abs(v/u)))\n  #return 0.0\n```\n\nyou get a segfault (I'm using the command line, amd64 hardy heron machine).\nHowever, if you uncomment the last line you don't get a segfault but\nthe 0 function is plotted.\n\nI'm marking it as a blocker since it is a segfault. Hope that is not the wrong thing to do.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3815\n\n",
+    "body": "Assignee: @williamstein\n\nThis was reported by Adrian:\n\nI tried the following, and it did not work\n\n\n```\nx,y=var('x y')\ndef myarctan(x,y):\n    if x>=0 and y>=0:\n        return arctan(abs(y/x))\n    if x<0 and y>=0:\n        return pi-arctan(abs(y/x))\n    if x<0 and y<0:\n        return pi+arctan(abs(y/x))\n    if x>=0 and y<0:\n        return 2*pi-arctan(abs(y/x))\nplot3d(myarctan(x,y),(x,-3,3),(y,-3,3))\n```\n\n\nHowever, the following does work:\n\n\n```\nplot3d(myarctan,(-3,3),(-3,3))\n```\n\n\nI guess both should work, so I guess this is a bug.\n\n+++++++++++++++++++++++++++++++++++++++++++++++++\n\nReply by wdj:\n\nDidn't work for me. I got a segfault:\n\n\n\n```\nsage: plot3d(myarctan(x,y),(-3,3),(-3,3))\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nThis is not a division by zero problem either:\n\n\n```\nsage: plot3d(myarctan(x,y),(0.1,0.3),(0.1,0.3))\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nStrange. If you use\n\n\n```\nx,y=var('x, y')\ndef myarctan(u,v):\n  if u>=0.0 and v>=0.0:\n      return RR(arctan(abs(v/u)))\n  if u<0.0 and v>=0.0:\n      return RR(pi-arctan(abs(v/u)))\n  if u<0.0 and v<0.0:\n      return RR(pi+arctan(abs(v/u)))\n  if u>=0.0 and v<0.0:\n      return RR(2*pi-arctan(abs(v/u)))\n  #return 0.0\n```\n\nyou get a segfault (I'm using the command line, amd64 hardy heron machine).\nHowever, if you uncomment the last line you don't get a segfault but\nthe 0 function is plotted.\n\nI'm marking it as a blocker since it is a segfault. Hope that is not the wrong thing to do.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3815\n\n",
     "created_at": "2008-08-12T12:38:45Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003815.json:
     "title": "plot3d segfaults",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3815",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This was reported by Adrian:
 
@@ -132,7 +132,7 @@ archive/issue_comments_027141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3815#issuecomment-27141",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -217,16 +217,16 @@ because of it."
 archive/issue_comments_027143.json:
 ```json
 {
-    "body": "Attachment [sage-3815.patch](tarball://root/attachments/some-uuid/ticket3815/sage-3815.patch) by was created at 2008-08-13 03:45:08",
+    "body": "Attachment [sage-3815.patch](tarball://root/attachments/some-uuid/ticket3815/sage-3815.patch) by @williamstein created at 2008-08-13 03:45:08",
     "created_at": "2008-08-13T03:45:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3815#issuecomment-27143",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3815.patch](tarball://root/attachments/some-uuid/ticket3815/sage-3815.patch) by was created at 2008-08-13 03:45:08
+Attachment [sage-3815.patch](tarball://root/attachments/some-uuid/ticket3815/sage-3815.patch) by @williamstein created at 2008-08-13 03:45:08
 
 
 
@@ -240,7 +240,7 @@ archive/issue_comments_027144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3815",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3815#issuecomment-27144",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

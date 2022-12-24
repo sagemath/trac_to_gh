@@ -3,7 +3,7 @@
 archive/issues_009234.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  sage-combinat\n\nfrom 30% (3/10)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9234\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\nfrom 30% (3/10)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9234\n\n",
     "created_at": "2010-06-14T09:50:06Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_009234.json:
     "title": "Bring doc coverage of plot/plot3d/texture.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9234",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9234
 archive/issue_comments_086676.json:
 ```json
 {
-    "body": "Attachment [trac_9234_doc_texture-sl.patch](tarball://root/attachments/some-uuid/ticket9234/trac_9234_doc_texture-sl.patch) by slabbe created at 2010-06-14 09:52:18",
+    "body": "Attachment [trac_9234_doc_texture-sl.patch](tarball://root/attachments/some-uuid/ticket9234/trac_9234_doc_texture-sl.patch) by @seblabbe created at 2010-06-14 09:52:18",
     "created_at": "2010-06-14T09:52:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9234#issuecomment-86676",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_9234_doc_texture-sl.patch](tarball://root/attachments/some-uuid/ticket9234/trac_9234_doc_texture-sl.patch) by slabbe created at 2010-06-14 09:52:18
+Attachment [trac_9234_doc_texture-sl.patch](tarball://root/attachments/some-uuid/ticket9234/trac_9234_doc_texture-sl.patch) by @seblabbe created at 2010-06-14 09:52:18
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_086677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9234#issuecomment-86677",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_086678.json:
 ```json
 {
-    "body": "Attachment [trac_9234-reviewer.patch](tarball://root/attachments/some-uuid/ticket9234/trac_9234-reviewer.patch) by kcrisman created at 2010-06-18 19:30:57\n\nApply after initial patch",
+    "body": "Attachment [trac_9234-reviewer.patch](tarball://root/attachments/some-uuid/ticket9234/trac_9234-reviewer.patch) by @kcrisman created at 2010-06-18 19:30:57\n\nApply after initial patch",
     "created_at": "2010-06-18T19:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9234#issuecomment-86678",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9234-reviewer.patch](tarball://root/attachments/some-uuid/ticket9234/trac_9234-reviewer.patch) by kcrisman created at 2010-06-18 19:30:57
+Attachment [trac_9234-reviewer.patch](tarball://root/attachments/some-uuid/ticket9234/trac_9234-reviewer.patch) by @kcrisman created at 2010-06-18 19:30:57
 
 Apply after initial patch
 
@@ -95,7 +95,7 @@ archive/issue_comments_086679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9234#issuecomment-86679",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_086680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9234#issuecomment-86680",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_086681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9234#issuecomment-86681",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_086682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9234",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9234#issuecomment-86682",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

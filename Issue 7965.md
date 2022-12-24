@@ -3,7 +3,7 @@
 archive/issues_007965.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mjo\n\n\n```\nsage: 5.quo_rem(2/3)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/virtual/scratch/wstein/build/sage-4.3.1.rc0/<ipython console> in <module>()\n\n/virtual/scratch/wstein/build/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.quo_rem (sage/rings/integer.c:16710)()\n\n/virtual/scratch/wstein/build/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.FieldElement.quo_rem (sage/structure/element.c:15715)()\n\nAttributeError: 'sage.rings.rational.Rational' object has no attribute '_parent'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7965\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\n\n```\nsage: 5.quo_rem(2/3)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/virtual/scratch/wstein/build/sage-4.3.1.rc0/<ipython console> in <module>()\n\n/virtual/scratch/wstein/build/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.quo_rem (sage/rings/integer.c:16710)()\n\n/virtual/scratch/wstein/build/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.FieldElement.quo_rem (sage/structure/element.c:15715)()\n\nAttributeError: 'sage.rings.rational.Rational' object has no attribute '_parent'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7965\n\n",
     "created_at": "2010-01-17T10:37:46Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_007965.json:
     "title": "quo_rem attribute error (probably easy to fix?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7965",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mjo
+CC:  @orlitzky
 
 
 ```
@@ -53,7 +53,7 @@ archive/issue_comments_069492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7965#issuecomment-69492",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_069493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7965#issuecomment-69493",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_069494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7965#issuecomment-69494",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_069495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7965#issuecomment-69495",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_069496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7965#issuecomment-69496",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -138,16 +138,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_069497.json:
 ```json
 {
-    "body": "Attachment [sage-trac_7965.patch](tarball://root/attachments/some-uuid/ticket7965/sage-trac_7965.patch) by jdemeyer created at 2012-01-17 16:01:02\n\nAdd a doctest with the example from the description.",
+    "body": "Attachment [sage-trac_7965.patch](tarball://root/attachments/some-uuid/ticket7965/sage-trac_7965.patch) by @jdemeyer created at 2012-01-17 16:01:02\n\nAdd a doctest with the example from the description.",
     "created_at": "2012-01-17T16:01:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7965#issuecomment-69497",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [sage-trac_7965.patch](tarball://root/attachments/some-uuid/ticket7965/sage-trac_7965.patch) by jdemeyer created at 2012-01-17 16:01:02
+Attachment [sage-trac_7965.patch](tarball://root/attachments/some-uuid/ticket7965/sage-trac_7965.patch) by @jdemeyer created at 2012-01-17 16:01:02
 
 Add a doctest with the example from the description.
 
@@ -163,7 +163,7 @@ archive/issue_comments_069498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7965#issuecomment-69498",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_069499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7965#issuecomment-69499",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_069500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7965#issuecomment-69500",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_069501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7965#issuecomment-69501",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

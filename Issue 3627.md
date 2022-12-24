@@ -3,7 +3,7 @@
 archive/issues_003627.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nOn a P4 3.4Ghz machine with RHEL4 I get upon doing a source build of rc0:\n\n\n```\nsage -t  devel/sage/sage/modular/modsym/subspace.py         sh: line 1: 26365 Illegal instruction     /u/was/sage-3.0.4.rc1/local/bin/python /u/was/sage-3.0.4.rc1/tmp/.doctest_subspace.py >/tmp/tmpdmHxDr 2>/tmp/tmpx-xlyH\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [32.1 s]\n```\n\n\n\nMore details\n\n```\ntimpani%  gcc -v\nReading specs from /usr/lib/gcc/x86_64-redhat-linux/3.4.5/specs\nConfigured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --disable-checking --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-java-awt=gtk --host=x86_64-redhat-linux\nThread model: posix\ngcc version 3.4.5 20051201 (Red Hat 3.4.5-2)\n\n\n% uname -a\nLinux 2.6.9-34.ELsmp #1 SMP Fri Feb 24 16:56:28 EST 2006 x86_64 x86_64 x86_64 GNU/Linux\ntimpani% cat /etc/issue\nRed Hat Enterprise Linux WS release 4 (Nahant Update 3)\nKernel \\r on an \\m\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3627\n\n",
+    "body": "Assignee: @craigcitro\n\nOn a P4 3.4Ghz machine with RHEL4 I get upon doing a source build of rc0:\n\n\n```\nsage -t  devel/sage/sage/modular/modsym/subspace.py         sh: line 1: 26365 Illegal instruction     /u/was/sage-3.0.4.rc1/local/bin/python /u/was/sage-3.0.4.rc1/tmp/.doctest_subspace.py >/tmp/tmpdmHxDr 2>/tmp/tmpx-xlyH\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [32.1 s]\n```\n\n\n\nMore details\n\n```\ntimpani%  gcc -v\nReading specs from /usr/lib/gcc/x86_64-redhat-linux/3.4.5/specs\nConfigured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --disable-checking --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-java-awt=gtk --host=x86_64-redhat-linux\nThread model: posix\ngcc version 3.4.5 20051201 (Red Hat 3.4.5-2)\n\n\n% uname -a\nLinux 2.6.9-34.ELsmp #1 SMP Fri Feb 24 16:56:28 EST 2006 x86_64 x86_64 x86_64 GNU/Linux\ntimpani% cat /etc/issue\nRed Hat Enterprise Linux WS release 4 (Nahant Update 3)\nKernel \\r on an \\m\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3627\n\n",
     "created_at": "2008-07-09T18:50:02Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_003627.json:
     "title": "illegal instruction on modular/modsym/subspace.py on P4 3.4Ghz",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3627",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 On a P4 3.4Ghz machine with RHEL4 I get upon doing a source build of rc0:
 
@@ -65,7 +65,7 @@ archive/issue_comments_025665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3627#issuecomment-25665",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_025666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3627#issuecomment-25666",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_025667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3627#issuecomment-25667",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_025668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3627#issuecomment-25668",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_025669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3627#issuecomment-25669",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_025670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3627#issuecomment-25670",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004891.json:
     "title": "make a command that installs all optional spkg's and reports the ones that don't work.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4891",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4891
 archive/issue_comments_037085.json:
 ```json
 {
-    "body": "Attachment [trac_4891.patch](tarball://root/attachments/some-uuid/ticket4891/trac_4891.patch) by was created at 2008-12-30 07:54:50\n\nFor the record, when I run this on sage.math it takes a total of a half hour (pretty fast!) and finishes with the following:\n\n```\n...\nSuccessfully installed valgrind_3.3.1\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing valgrind_3.3.1.spkg\nCPU times: user 0.03 s, sys: 1.54 s, total: 1.57 s\nWall time: 1925.36 s\n['boehm_gc-7.1.p0', 'mpi4py-0.3.1']\n```\n\n\nSo boehm and mpi4py failed to install.  But everything else in optional succeeded.  Note that there is  an inconsistency, since according to the output of optional_packages() in fact mpi4py and fricas failed but everything else succeeded:\n\n```\n ['fricas-1.0.3.p0', 'mpi4py-0.3.1'])\n```\n\nThis I think points to bugs in the package install system, not in this patch.",
+    "body": "Attachment [trac_4891.patch](tarball://root/attachments/some-uuid/ticket4891/trac_4891.patch) by @williamstein created at 2008-12-30 07:54:50\n\nFor the record, when I run this on sage.math it takes a total of a half hour (pretty fast!) and finishes with the following:\n\n```\n...\nSuccessfully installed valgrind_3.3.1\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing valgrind_3.3.1.spkg\nCPU times: user 0.03 s, sys: 1.54 s, total: 1.57 s\nWall time: 1925.36 s\n['boehm_gc-7.1.p0', 'mpi4py-0.3.1']\n```\n\n\nSo boehm and mpi4py failed to install.  But everything else in optional succeeded.  Note that there is  an inconsistency, since according to the output of optional_packages() in fact mpi4py and fricas failed but everything else succeeded:\n\n```\n ['fricas-1.0.3.p0', 'mpi4py-0.3.1'])\n```\n\nThis I think points to bugs in the package install system, not in this patch.",
     "created_at": "2008-12-30T07:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4891#issuecomment-37085",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4891.patch](tarball://root/attachments/some-uuid/ticket4891/trac_4891.patch) by was created at 2008-12-30 07:54:50
+Attachment [trac_4891.patch](tarball://root/attachments/some-uuid/ticket4891/trac_4891.patch) by @williamstein created at 2008-12-30 07:54:50
 
 For the record, when I run this on sage.math it takes a total of a half hour (pretty fast!) and finishes with the following:
 
@@ -102,7 +102,7 @@ archive/issue_comments_037087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4891#issuecomment-37087",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_037088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4891#issuecomment-37088",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_037091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4891#issuecomment-37091",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_037092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4891#issuecomment-37092",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

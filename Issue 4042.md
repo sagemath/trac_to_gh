@@ -3,7 +3,7 @@
 archive/issues_004042.json:
 ```json
 {
-    "body": "Assignee: malb\n\nOne example session:\n\n```\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 4 \nchecking the number of available CPUs... 4 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n./configure: line 21425: test: !=: unary operator expected\nchecking for x86 cpuid 0x80000006 output... unknown\n./configure: line 21618: 16#unknown: value too great for base (error token is \"16#unknown\")\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4042\n\n",
+    "body": "Assignee: @malb\n\nOne example session:\n\n```\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 4 \nchecking the number of available CPUs... 4 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n./configure: line 21425: test: !=: unary operator expected\nchecking for x86 cpuid 0x80000006 output... unknown\n./configure: line 21618: 16#unknown: value too great for base (error token is \"16#unknown\")\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4042\n\n",
     "created_at": "2008-09-02T21:00:38Z",
     "labels": [
         "build",
@@ -17,7 +17,7 @@ archive/issues_004042.json:
     "user": "mabshoff"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 One example session:
 
@@ -53,7 +53,7 @@ archive/issue_comments_029152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4042#issuecomment-29152",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_029154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4042#issuecomment-29154",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

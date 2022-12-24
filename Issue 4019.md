@@ -14,7 +14,7 @@ archive/issues_004019.json:
     "title": "[with patch, needs review] numerator and denominator for QQ[x]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4019",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4019
 archive/issue_comments_028985.json:
 ```json
 {
-    "body": "Attachment [4019-QQx-numer.patch](tarball://root/attachments/some-uuid/ticket4019/4019-QQx-numer.patch) by robertwb created at 2008-08-31 09:06:25",
+    "body": "Attachment [4019-QQx-numer.patch](tarball://root/attachments/some-uuid/ticket4019/4019-QQx-numer.patch) by @robertwb created at 2008-08-31 09:06:25",
     "created_at": "2008-08-31T09:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4019#issuecomment-28985",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4019-QQx-numer.patch](tarball://root/attachments/some-uuid/ticket4019/4019-QQx-numer.patch) by robertwb created at 2008-08-31 09:06:25
+Attachment [4019-QQx-numer.patch](tarball://root/attachments/some-uuid/ticket4019/4019-QQx-numer.patch) by @robertwb created at 2008-08-31 09:06:25
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_028986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4019#issuecomment-28986",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_028988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4019#issuecomment-28988",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

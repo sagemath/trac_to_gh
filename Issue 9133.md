@@ -14,7 +14,7 @@ archive/issues_009133.json:
     "title": "sage-4.4.3.alpha2: pynac build failure on an itanium box (easy autoconf issue)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9133",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -61,7 +61,7 @@ archive/issue_comments_085125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9133#issuecomment-85125",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_085126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9133#issuecomment-85126",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_085127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9133#issuecomment-85127",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_085128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9133#issuecomment-85128",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_085129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9133#issuecomment-85129",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_085130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9133",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9133#issuecomment-85130",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

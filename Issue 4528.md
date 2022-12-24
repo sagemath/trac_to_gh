@@ -3,7 +3,7 @@
 archive/issues_004528.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: number fields, orders\n\nThis is a triviality, but I noticed it while doing something else. All order in number fields have Krull dimension 1, but this was not implemented -- not even for the maximal order.  Now it is.\n\nPatch based on 3.2.rc1, touches rings/ring.pyx and rings/number_field/order.py\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4528\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: number fields, orders\n\nThis is a triviality, but I noticed it while doing something else. All order in number fields have Krull dimension 1, but this was not implemented -- not even for the maximal order.  Now it is.\n\nPatch based on 3.2.rc1, touches rings/ring.pyx and rings/number_field/order.py\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4528\n\n",
     "created_at": "2008-11-15T16:56:35Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004528.json:
     "title": "[with patch, needs review] Implement Krull dimension for orders in number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4528",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: number fields, orders
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4528
 archive/issue_comments_033624.json:
 ```json
 {
-    "body": "Attachment [krull.patch](tarball://root/attachments/some-uuid/ticket4528/krull.patch) by cremona created at 2008-11-15 16:56:56",
+    "body": "Attachment [krull.patch](tarball://root/attachments/some-uuid/ticket4528/krull.patch) by @JohnCremona created at 2008-11-15 16:56:56",
     "created_at": "2008-11-15T16:56:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4528#issuecomment-33624",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [krull.patch](tarball://root/attachments/some-uuid/ticket4528/krull.patch) by cremona created at 2008-11-15 16:56:56
+Attachment [krull.patch](tarball://root/attachments/some-uuid/ticket4528/krull.patch) by @JohnCremona created at 2008-11-15 16:56:56
 
 
 
@@ -60,7 +60,7 @@ archive/issue_comments_033625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4528#issuecomment-33625",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008911.json:
     "title": "Categorification of Crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8911",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 Assignee: sage-combinat
@@ -39,7 +39,7 @@ archive/issue_comments_082089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8911#issuecomment-82089",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_082090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8911#issuecomment-82090",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_082091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8911#issuecomment-82091",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_082092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8911#issuecomment-82092",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -108,16 +108,16 @@ This is the pickle jar from sage-4.4.2 (and most likely sage-4.4.3), with the cr
 archive/issue_comments_082093.json:
 ```json
 {
-    "body": "Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket8911/pickle_jar.tar.bz2) by nthiery created at 2010-06-07 16:00:26",
+    "body": "Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket8911/pickle_jar.tar.bz2) by @nthiery created at 2010-06-07 16:00:26",
     "created_at": "2010-06-07T16:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8911#issuecomment-82093",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket8911/pickle_jar.tar.bz2) by nthiery created at 2010-06-07 16:00:26
+Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket8911/pickle_jar.tar.bz2) by @nthiery created at 2010-06-07 16:00:26
 
 
 
@@ -126,16 +126,16 @@ Attachment [pickle_jar.tar.bz2](tarball://root/attachments/some-uuid/ticket8911/
 archive/issue_comments_082094.json:
 ```json
 {
-    "body": "Attachment [trac_8911_categorification_crystals-as.patch](tarball://root/attachments/some-uuid/ticket8911/trac_8911_categorification_crystals-as.patch) by aschilling created at 2010-06-07 23:22:36",
+    "body": "Attachment [trac_8911_categorification_crystals-as.patch](tarball://root/attachments/some-uuid/ticket8911/trac_8911_categorification_crystals-as.patch) by @anneschilling created at 2010-06-07 23:22:36",
     "created_at": "2010-06-07T23:22:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8911#issuecomment-82094",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
-Attachment [trac_8911_categorification_crystals-as.patch](tarball://root/attachments/some-uuid/ticket8911/trac_8911_categorification_crystals-as.patch) by aschilling created at 2010-06-07 23:22:36
+Attachment [trac_8911_categorification_crystals-as.patch](tarball://root/attachments/some-uuid/ticket8911/trac_8911_categorification_crystals-as.patch) by @anneschilling created at 2010-06-07 23:22:36
 
 
 
@@ -149,7 +149,7 @@ archive/issue_comments_082095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8911#issuecomment-82095",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_082096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8911#issuecomment-82096",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_082097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8911#issuecomment-82097",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

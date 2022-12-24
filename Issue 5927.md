@@ -14,7 +14,7 @@ archive/issues_005927.json:
     "title": "[with patch; needs review] singular prompt problem on solaris sparc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5927",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_046857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5927#issuecomment-46857",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -103,16 +103,16 @@ Michael
 archive/issue_comments_046860.json:
 ```json
 {
-    "body": "Attachment [trac_5927.patch](tarball://root/attachments/some-uuid/ticket5927/trac_5927.patch) by mhansen created at 2009-05-21 17:54:09",
+    "body": "Attachment [trac_5927.patch](tarball://root/attachments/some-uuid/ticket5927/trac_5927.patch) by @mwhansen created at 2009-05-21 17:54:09",
     "created_at": "2009-05-21T17:54:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5927#issuecomment-46860",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5927.patch](tarball://root/attachments/some-uuid/ticket5927/trac_5927.patch) by mhansen created at 2009-05-21 17:54:09
+Attachment [trac_5927.patch](tarball://root/attachments/some-uuid/ticket5927/trac_5927.patch) by @mwhansen created at 2009-05-21 17:54:09
 
 
 
@@ -126,7 +126,7 @@ archive/issue_comments_046861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5927#issuecomment-46861",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_046862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5927#issuecomment-46862",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -157,16 +157,16 @@ All of the failures are harmless.  I've attached a new patch which fixes the doc
 archive/issue_comments_046863.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-05-21T17:56:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5927#issuecomment-46863",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 

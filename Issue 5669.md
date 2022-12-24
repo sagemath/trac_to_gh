@@ -3,7 +3,7 @@
 archive/issues_005669.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm\n\nKeywords: independant set stable clique\n\nI recently had to compute a maximum stable set in a graph with 100 vertices and ended up waiting a whole day ( to no good end ) for Sage to compute it. The current algorithm uses the library NetworkX whose algorithm is not nearly as efficient as Cliquer :\n\nhttp://www.tkk.fi/~pat/cliquer.html\n\nIt is based on an algorithm published in 2002, and it gave me a result in less than a millisecond ;-)\n\nHere are the modification I made :\n- I created a spkg file containing the sources of this software for it to be available in SAGE\n- I wrote the interface to use it\n- I modified the Graph class to use this software instead.\n- Added to the function to compute the maximum clique, I added the function Maximum independant set ( which is a similar notion for the complement of a graph, a bit more customary ). As the algorithm provided a function to compute all the maximum cliques, I also added this function\n\nIssue created by migration from https://trac.sagemath.org/ticket/5669\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nKeywords: independant set stable clique\n\nI recently had to compute a maximum stable set in a graph with 100 vertices and ended up waiting a whole day ( to no good end ) for Sage to compute it. The current algorithm uses the library NetworkX whose algorithm is not nearly as efficient as Cliquer :\n\nhttp://www.tkk.fi/~pat/cliquer.html\n\nIt is based on an algorithm published in 2002, and it gave me a result in less than a millisecond ;-)\n\nHere are the modification I made :\n- I created a spkg file containing the sources of this software for it to be available in SAGE\n- I wrote the interface to use it\n- I modified the Graph class to use this software instead.\n- Added to the function to compute the maximum clique, I added the function Maximum independant set ( which is a similar notion for the complement of a graph, a bit more customary ). As the algorithm provided a function to compute all the maximum cliques, I also added this function\n\nIssue created by migration from https://trac.sagemath.org/ticket/5669\n\n",
     "created_at": "2009-04-02T20:16:24Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_005669.json:
     "title": "[with patch, needs review] New algorithm for Max Clique in Graph class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5669",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm
+CC:  @rlmill
 
 Keywords: independant set stable clique
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5669
 archive/issue_comments_044347.json:
 ```json
 {
-    "body": "Attachment [11803.patch](tarball://root/attachments/some-uuid/ticket5669/11803.patch) by ncohen created at 2009-04-02 20:19:07",
+    "body": "Attachment [11803.patch](tarball://root/attachments/some-uuid/ticket5669/11803.patch) by @nathanncohen created at 2009-04-02 20:19:07",
     "created_at": "2009-04-02T20:19:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5669#issuecomment-44347",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [11803.patch](tarball://root/attachments/some-uuid/ticket5669/11803.patch) by ncohen created at 2009-04-02 20:19:07
+Attachment [11803.patch](tarball://root/attachments/some-uuid/ticket5669/11803.patch) by @nathanncohen created at 2009-04-02 20:19:07
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_044349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5669#issuecomment-44349",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_044350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5669#issuecomment-44350",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_044351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5669#issuecomment-44351",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_044352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5669#issuecomment-44352",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_044353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5669#issuecomment-44353",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_044354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5669",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5669#issuecomment-44354",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

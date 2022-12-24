@@ -3,7 +3,7 @@
 archive/issues_004264.json:
 ```json
 {
-    "body": "Assignee: was\n\nFor consistency with b_invariants, etc., and to emphasize immutability, it would be\ngood for E.a_invariants() to return a tuple.  Changing this could change lots of doctests, etc., so this isn't trivial.\n\nSee trac #4262 for a related ticket\n\nIssue created by migration from https://trac.sagemath.org/ticket/4264\n\n",
+    "body": "Assignee: @williamstein\n\nFor consistency with b_invariants, etc., and to emphasize immutability, it would be\ngood for E.a_invariants() to return a tuple.  Changing this could change lots of doctests, etc., so this isn't trivial.\n\nSee trac #4262 for a related ticket\n\nIssue created by migration from https://trac.sagemath.org/ticket/4264\n\n",
     "created_at": "2008-10-11T09:46:11Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004264.json:
     "title": "change E.a_invariants() for an elliptic curve to return a tuple",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4264",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 For consistency with b_invariants, etc., and to emphasize immutability, it would be
 good for E.a_invariants() to return a tuple.  Changing this could change lots of doctests, etc., so this isn't trivial.
@@ -40,7 +40,7 @@ archive/issue_comments_031094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31094",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_031095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31095",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_031096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31096",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing priority from major to minor.
 archive/issue_comments_031097.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31097",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_031098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31098",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_031099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31099",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -162,16 +162,16 @@ Doesn't 9 months go quickly?  I thought this had been fixed long ago.  No time n
 archive/issue_comments_031100.json:
 ```json
 {
-    "body": "Remove assignee davidloeffler.",
+    "body": "Remove assignee @loefflerd.",
     "created_at": "2009-10-09T09:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31100",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Remove assignee davidloeffler.
+Remove assignee @loefflerd.
 
 
 
@@ -185,7 +185,7 @@ archive/issue_comments_031101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31101",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_031102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31102",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_031103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31103",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_031104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31104",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -263,16 +263,16 @@ exported against 4.2.
 archive/issue_comments_031105.json:
 ```json
 {
-    "body": "Attachment [trac_4264.patch](tarball://root/attachments/some-uuid/ticket4264/trac_4264.patch) by wuthrich created at 2009-11-02 13:12:24\n\nI hope I did not miss any a_invs or a_invariants.",
+    "body": "Attachment [trac_4264.patch](tarball://root/attachments/some-uuid/ticket4264/trac_4264.patch) by @categorie created at 2009-11-02 13:12:24\n\nI hope I did not miss any a_invs or a_invariants.",
     "created_at": "2009-11-02T13:12:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31105",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_4264.patch](tarball://root/attachments/some-uuid/ticket4264/trac_4264.patch) by wuthrich created at 2009-11-02 13:12:24
+Attachment [trac_4264.patch](tarball://root/attachments/some-uuid/ticket4264/trac_4264.patch) by @categorie created at 2009-11-02 13:12:24
 
 I hope I did not miss any a_invs or a_invariants.
 
@@ -288,7 +288,7 @@ archive/issue_comments_031106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31106",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_031107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31107",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_031108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31108",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_031109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4264#issuecomment-31109",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

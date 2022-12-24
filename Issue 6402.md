@@ -3,7 +3,7 @@
 archive/issues_006402.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  was\n\nThis patch fixes lots of bugs + adds a substantial amount of documentation and examples, based on my talk at Sage Days 16.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6402\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nThis patch fixes lots of bugs + adds a substantial amount of documentation and examples, based on my talk at Sage Days 16.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6402\n\n",
     "created_at": "2009-06-25T12:11:59Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_006402.json:
     "title": "Fix bugs + improve documentation for overconvergent modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6402",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  was
+CC:  @williamstein
 
 This patch fixes lots of bugs + adds a substantial amount of documentation and examples, based on my talk at Sage Days 16.
 
@@ -39,7 +39,7 @@ archive/issue_comments_051417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51417",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -52,16 +52,16 @@ patch against 4.0.2
 archive/issue_comments_051418.json:
 ```json
 {
-    "body": "Attachment [trac_6402-overconvergent_fixes.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-overconvergent_fixes.patch) by davidloeffler created at 2009-06-25 12:15:35\n\nHere's a patch.",
+    "body": "Attachment [trac_6402-overconvergent_fixes.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-overconvergent_fixes.patch) by @loefflerd created at 2009-06-25 12:15:35\n\nHere's a patch.",
     "created_at": "2009-06-25T12:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51418",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6402-overconvergent_fixes.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-overconvergent_fixes.patch) by davidloeffler created at 2009-06-25 12:15:35
+Attachment [trac_6402-overconvergent_fixes.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-overconvergent_fixes.patch) by @loefflerd created at 2009-06-25 12:15:35
 
 Here's a patch.
 
@@ -77,7 +77,7 @@ archive/issue_comments_051419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51419",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_051420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51420",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -112,16 +112,16 @@ apply after the previous patch
 archive/issue_comments_051421.json:
 ```json
 {
-    "body": "Attachment [trac_6402-referee.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-referee.patch) by davidloeffler created at 2009-08-19 09:52:05\n\nFine by me.",
+    "body": "Attachment [trac_6402-referee.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-referee.patch) by @loefflerd created at 2009-08-19 09:52:05\n\nFine by me.",
     "created_at": "2009-08-19T09:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51421",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6402-referee.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-referee.patch) by davidloeffler created at 2009-08-19 09:52:05
+Attachment [trac_6402-referee.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-referee.patch) by @loefflerd created at 2009-08-19 09:52:05
 
 Fine by me.
 
@@ -175,7 +175,7 @@ archive/issue_comments_051424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51424",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

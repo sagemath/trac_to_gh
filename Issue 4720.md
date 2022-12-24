@@ -14,7 +14,7 @@ archive/issues_004720.json:
     "title": "Numerical noise in test sage/rings/number_field/number_field_morphisms.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4720",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: tbd
@@ -62,7 +62,7 @@ archive/issue_comments_035602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4720#issuecomment-35602",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_035603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4720#issuecomment-35603",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_035604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4720#issuecomment-35604",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -113,16 +113,16 @@ Changing keywords from "" to "numerical noise, number_field_morphism".
 archive/issue_comments_035605.json:
 ```json
 {
-    "body": "Attachment [4720.patch](tarball://root/attachments/some-uuid/ticket4720/4720.patch) by ncalexan created at 2008-12-09 19:07:21\n\nFine by me.",
+    "body": "Attachment [4720.patch](tarball://root/attachments/some-uuid/ticket4720/4720.patch) by @ncalexan created at 2008-12-09 19:07:21\n\nFine by me.",
     "created_at": "2008-12-09T19:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4720",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4720#issuecomment-35605",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [4720.patch](tarball://root/attachments/some-uuid/ticket4720/4720.patch) by ncalexan created at 2008-12-09 19:07:21
+Attachment [4720.patch](tarball://root/attachments/some-uuid/ticket4720/4720.patch) by @ncalexan created at 2008-12-09 19:07:21
 
 Fine by me.
 

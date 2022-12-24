@@ -3,7 +3,7 @@
 archive/issues_009152.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  burcin\n\nI plan to release mpmath 0.15 very soon. This will require some simple modifications to the extension code in Sage.\n\nSome testing would be appreciated: apply the patch, replace the Sage mpmath install with an svn trunk checkout of mpmath, and check\n\n\n```\nsage: import mpmath\nsage: mpmath.runtests()\nsage: mpmath.doctests()\n```\n\n\nThe patch doesn't support mpmath 0.14, so it can't be applied until the spkg is upgraded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9152\n\n",
+    "body": "Assignee: tbd\n\nCC:  @burcin\n\nI plan to release mpmath 0.15 very soon. This will require some simple modifications to the extension code in Sage.\n\nSome testing would be appreciated: apply the patch, replace the Sage mpmath install with an svn trunk checkout of mpmath, and check\n\n\n```\nsage: import mpmath\nsage: mpmath.runtests()\nsage: mpmath.doctests()\n```\n\n\nThe patch doesn't support mpmath 0.14, so it can't be applied until the spkg is upgraded.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9152\n\n",
     "created_at": "2010-06-05T17:39:17Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009152.json:
     "title": "Update extension code for mpmath-0.15",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9152",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 Assignee: tbd
 
-CC:  burcin
+CC:  @burcin
 
 I plan to release mpmath 0.15 very soon. This will require some simple modifications to the extension code in Sage.
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9152
 archive/issue_comments_085440.json:
 ```json
 {
-    "body": "Attachment [mpmath15fix.patch](tarball://root/attachments/some-uuid/ticket9152/mpmath15fix.patch) by fredrik.johansson created at 2010-06-05 17:45:13",
+    "body": "Attachment [mpmath15fix.patch](tarball://root/attachments/some-uuid/ticket9152/mpmath15fix.patch) by @fredrik-johansson created at 2010-06-05 17:45:13",
     "created_at": "2010-06-05T17:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85440",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [mpmath15fix.patch](tarball://root/attachments/some-uuid/ticket9152/mpmath15fix.patch) by fredrik.johansson created at 2010-06-05 17:45:13
+Attachment [mpmath15fix.patch](tarball://root/attachments/some-uuid/ticket9152/mpmath15fix.patch) by @fredrik-johansson created at 2010-06-05 17:45:13
 
 
 
@@ -64,16 +64,16 @@ Attachment [mpmath15fix.patch](tarball://root/attachments/some-uuid/ticket9152/m
 archive/issue_comments_085441.json:
 ```json
 {
-    "body": "Attachment [mpmath-0.15.spkg](tarball://root/attachments/some-uuid/ticket9152/mpmath-0.15.spkg) by fredrik.johansson created at 2010-06-06 19:59:08\n\nI've released mpmath-0.15; providing spkg as attachment.",
+    "body": "Attachment [mpmath-0.15.spkg](tarball://root/attachments/some-uuid/ticket9152/mpmath-0.15.spkg) by @fredrik-johansson created at 2010-06-06 19:59:08\n\nI've released mpmath-0.15; providing spkg as attachment.",
     "created_at": "2010-06-06T19:59:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85441",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [mpmath-0.15.spkg](tarball://root/attachments/some-uuid/ticket9152/mpmath-0.15.spkg) by fredrik.johansson created at 2010-06-06 19:59:08
+Attachment [mpmath-0.15.spkg](tarball://root/attachments/some-uuid/ticket9152/mpmath-0.15.spkg) by @fredrik-johansson created at 2010-06-06 19:59:08
 
 I've released mpmath-0.15; providing spkg as attachment.
 
@@ -89,7 +89,7 @@ archive/issue_comments_085442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85442",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -136,16 +136,16 @@ Also, I think it's considered best to not post spkgs as ticket attachments -- us
 archive/issue_comments_085443.json:
 ```json
 {
-    "body": "Attachment [mpmath15fixfix.patch](tarball://root/attachments/some-uuid/ticket9152/mpmath15fixfix.patch) by fredrik.johansson created at 2010-06-10 00:45:06\n\nsmall fix on top of mpmath15fix.patch",
+    "body": "Attachment [mpmath15fixfix.patch](tarball://root/attachments/some-uuid/ticket9152/mpmath15fixfix.patch) by @fredrik-johansson created at 2010-06-10 00:45:06\n\nsmall fix on top of mpmath15fix.patch",
     "created_at": "2010-06-10T00:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85443",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [mpmath15fixfix.patch](tarball://root/attachments/some-uuid/ticket9152/mpmath15fixfix.patch) by fredrik.johansson created at 2010-06-10 00:45:06
+Attachment [mpmath15fixfix.patch](tarball://root/attachments/some-uuid/ticket9152/mpmath15fixfix.patch) by @fredrik-johansson created at 2010-06-10 00:45:06
 
 small fix on top of mpmath15fix.patch
 
@@ -161,7 +161,7 @@ archive/issue_comments_085444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85444",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_085445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85445",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -194,16 +194,16 @@ With your "fixfix" patch, the doctests pass. (This is on 64-bit Ubuntu.) The spk
 archive/issue_comments_085446.json:
 ```json
 {
-    "body": "Changing assignee from tbd to ddrake.",
+    "body": "Changing assignee from tbd to @dandrake.",
     "created_at": "2010-06-10T03:53:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85446",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from tbd to ddrake.
+Changing assignee from tbd to @dandrake.
 
 
 
@@ -217,7 +217,7 @@ archive/issue_comments_085447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85447",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_085448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85448",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_085449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85449",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_085450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85450",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_085451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85451",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_085452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85452",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_085453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85453",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_085454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85454",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_085455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9152",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9152#issuecomment-85455",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

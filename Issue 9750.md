@@ -3,7 +3,7 @@
 archive/issues_009750.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  cremona\n\nEarlier versions of PARI assumed something stronger than GRH (in Sage, this is referred to as GRH++).  As of PARI 2.4.0, \"only\" the GRH is assumed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9750\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @JohnCremona\n\nEarlier versions of PARI assumed something stronger than GRH (in Sage, this is referred to as GRH++).  As of PARI 2.4.0, \"only\" the GRH is assumed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9750\n\n",
     "created_at": "2010-08-14T19:15:17Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009750.json:
     "title": "Document that PARI no longer assumes more than GRH",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9750",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 Assignee: mvngu
 
-CC:  cremona
+CC:  @JohnCremona
 
 Earlier versions of PARI assumed something stronger than GRH (in Sage, this is referred to as GRH++).  As of PARI 2.4.0, "only" the GRH is assumed.
 
@@ -39,7 +39,7 @@ archive/issue_comments_095481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95481",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_095482.json:
 ```json
 {
-    "body": "Attachment [9750.patch](tarball://root/attachments/some-uuid/ticket9750/9750.patch) by cremona created at 2010-08-15 17:17:39\n\nLooks good (apart from one Sphinx warning which my reviewer patch fixes).\n\nIs there a good reference, say in the PARI reference manual, for the GRH assumptions?",
+    "body": "Attachment [9750.patch](tarball://root/attachments/some-uuid/ticket9750/9750.patch) by @JohnCremona created at 2010-08-15 17:17:39\n\nLooks good (apart from one Sphinx warning which my reviewer patch fixes).\n\nIs there a good reference, say in the PARI reference manual, for the GRH assumptions?",
     "created_at": "2010-08-15T17:17:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95482",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [9750.patch](tarball://root/attachments/some-uuid/ticket9750/9750.patch) by cremona created at 2010-08-15 17:17:39
+Attachment [9750.patch](tarball://root/attachments/some-uuid/ticket9750/9750.patch) by @JohnCremona created at 2010-08-15 17:17:39
 
 Looks good (apart from one Sphinx warning which my reviewer patch fixes).
 
@@ -74,16 +74,16 @@ Is there a good reference, say in the PARI reference manual, for the GRH assumpt
 archive/issue_comments_095483.json:
 ```json
 {
-    "body": "Attachment [trac_9750-review.patch](tarball://root/attachments/some-uuid/ticket9750/trac_9750-review.patch) by cremona created at 2010-08-15 17:18:22\n\nApply after previous (and both depend on #9343)",
+    "body": "Attachment [trac_9750-review.patch](tarball://root/attachments/some-uuid/ticket9750/trac_9750-review.patch) by @JohnCremona created at 2010-08-15 17:18:22\n\nApply after previous (and both depend on #9343)",
     "created_at": "2010-08-15T17:18:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95483",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9750-review.patch](tarball://root/attachments/some-uuid/ticket9750/trac_9750-review.patch) by cremona created at 2010-08-15 17:18:22
+Attachment [trac_9750-review.patch](tarball://root/attachments/some-uuid/ticket9750/trac_9750-review.patch) by @JohnCremona created at 2010-08-15 17:18:22
 
 Apply after previous (and both depend on #9343)
 
@@ -99,7 +99,7 @@ archive/issue_comments_095484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95484",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_095485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95485",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_095486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95486",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_095487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95487",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_095488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95488",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_095489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95489",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_095490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95490",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -223,13 +223,13 @@ Resolution: fixed
 archive/issue_comments_095491.json:
 ```json
 {
-    "body": "Attachment [9750_v2.patch](tarball://root/attachments/some-uuid/ticket9750/9750_v2.patch) by mpatel created at 2010-09-10 10:44:27",
+    "body": "Attachment [9750_v2.patch](tarball://root/attachments/some-uuid/ticket9750/9750_v2.patch) by @qed777 created at 2010-09-10 10:44:27",
     "created_at": "2010-09-10T10:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95491",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [9750_v2.patch](tarball://root/attachments/some-uuid/ticket9750/9750_v2.patch) by mpatel created at 2010-09-10 10:44:27
+Attachment [9750_v2.patch](tarball://root/attachments/some-uuid/ticket9750/9750_v2.patch) by @qed777 created at 2010-09-10 10:44:27

@@ -3,7 +3,7 @@
 archive/issues_001102.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1102\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1102\n\n",
     "created_at": "2007-11-04T23:24:09Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001102.json:
     "title": "[with patch] Bounded norm ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1102",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_006666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1102#issuecomment-6666",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_006667.json:
 ```json
 {
-    "body": "Attachment [bdd_ideals.patch](tarball://root/attachments/some-uuid/ticket1102/bdd_ideals.patch) by rlm created at 2007-11-04 23:28:28",
+    "body": "Attachment [bdd_ideals.patch](tarball://root/attachments/some-uuid/ticket1102/bdd_ideals.patch) by @rlmill created at 2007-11-04 23:28:28",
     "created_at": "2007-11-04T23:28:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1102#issuecomment-6667",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [bdd_ideals.patch](tarball://root/attachments/some-uuid/ticket1102/bdd_ideals.patch) by rlm created at 2007-11-04 23:28:28
+Attachment [bdd_ideals.patch](tarball://root/attachments/some-uuid/ticket1102/bdd_ideals.patch) by @rlmill created at 2007-11-04 23:28:28
 
 
 
@@ -68,16 +68,16 @@ Attachment [bdd_ideals.patch](tarball://root/attachments/some-uuid/ticket1102/bd
 archive/issue_comments_006668.json:
 ```json
 {
-    "body": "Attachment [typo.patch](tarball://root/attachments/some-uuid/ticket1102/typo.patch) by rlm created at 2007-11-04 23:47:19\n\n(oops)",
+    "body": "Attachment [typo.patch](tarball://root/attachments/some-uuid/ticket1102/typo.patch) by @rlmill created at 2007-11-04 23:47:19\n\n(oops)",
     "created_at": "2007-11-04T23:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1102#issuecomment-6668",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [typo.patch](tarball://root/attachments/some-uuid/ticket1102/typo.patch) by rlm created at 2007-11-04 23:47:19
+Attachment [typo.patch](tarball://root/attachments/some-uuid/ticket1102/typo.patch) by @rlmill created at 2007-11-04 23:47:19
 
 (oops)
 
@@ -93,7 +93,7 @@ archive/issue_comments_006669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1102#issuecomment-6669",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

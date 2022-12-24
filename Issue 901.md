@@ -3,7 +3,7 @@
 archive/issues_000901.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nTo view a hg patch bundle as a text file, you can use the\nhg_sage.inspect('patchname.hg') command. This was added to \n\nhttp://www.sagemath.org/doc/html/prog/node72.html\n\nThe patch is at\nhttp://sage.math.washington.edu/home/wdj/patches/prog.tex.hg\n\nThough \"inspect\" seems to work on \"source code\" patches, it does not \nseem to work on doc patches.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/901\n\n",
+    "body": "Assignee: @wdjoyner\n\nTo view a hg patch bundle as a text file, you can use the\nhg_sage.inspect('patchname.hg') command. This was added to \n\nhttp://www.sagemath.org/doc/html/prog/node72.html\n\nThe patch is at\nhttp://sage.math.washington.edu/home/wdj/patches/prog.tex.hg\n\nThough \"inspect\" seems to work on \"source code\" patches, it does not \nseem to work on doc patches.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/901\n\n",
     "created_at": "2007-10-15T01:06:27Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_000901.json:
     "title": "minor addition to prog.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/901",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 To view a hg patch bundle as a text file, you can use the
 hg_sage.inspect('patchname.hg') command. This was added to 
@@ -67,7 +67,7 @@ archive/issue_comments_005536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5536",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_005537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5537",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_005538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5538",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_005539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/901",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5539",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

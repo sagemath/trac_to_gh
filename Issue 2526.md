@@ -3,7 +3,7 @@
 archive/issues_002526.json:
 ```json
 {
-    "body": "Assignee: was\n\nDue to problems with LinBox's charpoly mod p we switched the default implementation to use in 2.10.3 to the native Sage version. Since Linbox is about three times as fast switch back the default.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2526\n\n",
+    "body": "Assignee: @williamstein\n\nDue to problems with LinBox's charpoly mod p we switched the default implementation to use in 2.10.3 to the native Sage version. Since Linbox is about three times as fast switch back the default.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2526\n\n",
     "created_at": "2008-03-15T02:08:59Z",
     "labels": [
         "basic arithmetic",
@@ -17,7 +17,7 @@ archive/issues_002526.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Due to problems with LinBox's charpoly mod p we switched the default implementation to use in 2.10.3 to the native Sage version. Since Linbox is about three times as fast switch back the default.
 
@@ -99,7 +99,7 @@ archive/issue_comments_017231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2526#issuecomment-17231",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -112,7 +112,7 @@ As I don't know what the problems were with the linbox function originally, or w
 archive/issue_comments_017232.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-03-27T17:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2526",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_017232.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -180,7 +180,7 @@ archive/issue_comments_017235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2526#issuecomment-17235",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009170.json:
     "title": "cygwin: get_memory_usage isn't implemented, e.g., because there's no top",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9170",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -94,7 +94,7 @@ archive/issue_comments_085744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85744",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_085751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85751",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_085753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85753",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_085757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85757",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_085763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85763",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -554,16 +554,16 @@ I do have top on my Cygwin install and its output is very much Linux-like. So I 
 archive/issue_comments_085764.json:
 ```json
 {
-    "body": "Attachment [trac_9170.patch](tarball://root/attachments/some-uuid/ticket9170/trac_9170.patch) by dimpase created at 2013-01-27 09:10:42\n\nenabling it on Cygwin",
+    "body": "Attachment [trac_9170.patch](tarball://root/attachments/some-uuid/ticket9170/trac_9170.patch) by @dimpase created at 2013-01-27 09:10:42\n\nenabling it on Cygwin",
     "created_at": "2013-01-27T09:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85764",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [trac_9170.patch](tarball://root/attachments/some-uuid/ticket9170/trac_9170.patch) by dimpase created at 2013-01-27 09:10:42
+Attachment [trac_9170.patch](tarball://root/attachments/some-uuid/ticket9170/trac_9170.patch) by @dimpase created at 2013-01-27 09:10:42
 
 enabling it on Cygwin
 
@@ -579,7 +579,7 @@ archive/issue_comments_085765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85765",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_085766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85766",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_085768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85768",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

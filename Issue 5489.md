@@ -3,7 +3,7 @@
 archive/issues_005489.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5489\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5489\n\n",
     "created_at": "2009-03-11T18:05:10Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_005489.json:
     "title": "add a non library level interface to 4ti2 to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5489",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5489
 archive/issue_comments_042616.json:
 ```json
 {
-    "body": "Attachment [4ti2.sage](tarball://root/attachments/some-uuid/ticket5489/4ti2.sage) by mhansen created at 2009-03-11 18:05:25",
+    "body": "Attachment [4ti2.sage](tarball://root/attachments/some-uuid/ticket5489/4ti2.sage) by @mwhansen created at 2009-03-11 18:05:25",
     "created_at": "2009-03-11T18:05:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5489#issuecomment-42616",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [4ti2.sage](tarball://root/attachments/some-uuid/ticket5489/4ti2.sage) by mhansen created at 2009-03-11 18:05:25
+Attachment [4ti2.sage](tarball://root/attachments/some-uuid/ticket5489/4ti2.sage) by @mwhansen created at 2009-03-11 18:05:25
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_042619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5489#issuecomment-42619",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_042621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5489#issuecomment-42621",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_042625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5489#issuecomment-42625",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_042626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5489#issuecomment-42626",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_042627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5489#issuecomment-42627",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -312,16 +312,16 @@ Please fill in your real name as Author.
 archive/issue_comments_042628.json:
 ```json
 {
-    "body": "Attachment [trac_5489_4ti2_interface-reviewer.patch](tarball://root/attachments/some-uuid/ticket5489/trac_5489_4ti2_interface-reviewer.patch) by chapoton created at 2012-08-26 19:23:34",
+    "body": "Attachment [trac_5489_4ti2_interface-reviewer.patch](tarball://root/attachments/some-uuid/ticket5489/trac_5489_4ti2_interface-reviewer.patch) by @fchapoton created at 2012-08-26 19:23:34",
     "created_at": "2012-08-26T19:23:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5489#issuecomment-42628",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_5489_4ti2_interface-reviewer.patch](tarball://root/attachments/some-uuid/ticket5489/trac_5489_4ti2_interface-reviewer.patch) by chapoton created at 2012-08-26 19:23:34
+Attachment [trac_5489_4ti2_interface-reviewer.patch](tarball://root/attachments/some-uuid/ticket5489/trac_5489_4ti2_interface-reviewer.patch) by @fchapoton created at 2012-08-26 19:23:34
 
 
 
@@ -335,7 +335,7 @@ archive/issue_comments_042629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5489#issuecomment-42629",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_042630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5489#issuecomment-42630",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_042631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5489#issuecomment-42631",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_042632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5489",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5489#issuecomment-42632",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009574.json:
 ```json
 {
-    "body": "Assignee: jason\n\nIn the forthcoming 4.5.2.alpha0, I get\n\n```sh\n$ cd sage-4.5.2.alpha0/local/bin\n$ hg stat\n? zope-testrunner\n```\n\nin the scripts repository.\n\nShould we add `zope-testrunner` to `.hgignore`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9574\n\n",
+    "body": "Assignee: @jasongrout\n\nIn the forthcoming 4.5.2.alpha0, I get\n\n```sh\n$ cd sage-4.5.2.alpha0/local/bin\n$ hg stat\n? zope-testrunner\n```\n\nin the scripts repository.\n\nShould we add `zope-testrunner` to `.hgignore`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9574\n\n",
     "created_at": "2010-07-22T05:10:00Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_009574.json:
     "title": "Ignore zope-testrunner in the scripts repository",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9574",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 In the forthcoming 4.5.2.alpha0, I get
 
@@ -47,7 +47,7 @@ archive/issue_comments_092466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9574#issuecomment-92466",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_092467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9574#issuecomment-92467",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_092468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9574#issuecomment-92468",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -109,16 +109,16 @@ Changing status from new to needs_review.
 archive/issue_comments_092469.json:
 ```json
 {
-    "body": "Attachment [trac_9574_add_files_to_scripts_hgignore.patch](tarball://root/attachments/some-uuid/ticket9574/trac_9574_add_files_to_scripts_hgignore.patch) by ddrake created at 2010-07-23 03:13:55\n\nI've attached a patch that adds all the above files to the .hgignore file.",
+    "body": "Attachment [trac_9574_add_files_to_scripts_hgignore.patch](tarball://root/attachments/some-uuid/ticket9574/trac_9574_add_files_to_scripts_hgignore.patch) by @dandrake created at 2010-07-23 03:13:55\n\nI've attached a patch that adds all the above files to the .hgignore file.",
     "created_at": "2010-07-23T03:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9574#issuecomment-92469",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_9574_add_files_to_scripts_hgignore.patch](tarball://root/attachments/some-uuid/ticket9574/trac_9574_add_files_to_scripts_hgignore.patch) by ddrake created at 2010-07-23 03:13:55
+Attachment [trac_9574_add_files_to_scripts_hgignore.patch](tarball://root/attachments/some-uuid/ticket9574/trac_9574_add_files_to_scripts_hgignore.patch) by @dandrake created at 2010-07-23 03:13:55
 
 I've attached a patch that adds all the above files to the .hgignore file.
 
@@ -134,7 +134,7 @@ archive/issue_comments_092470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9574#issuecomment-92470",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_092471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9574#issuecomment-92471",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_092472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9574#issuecomment-92472",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

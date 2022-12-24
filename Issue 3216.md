@@ -56,7 +56,7 @@ archive/issue_comments_022269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22269",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_022271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22271",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_022272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22272",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -218,16 +218,16 @@ apply all three patches including this one, which makes things professional inst
 archive/issue_comments_022273.json:
 ```json
 {
-    "body": "Attachment [sage-3216-prof.patch](tarball://root/attachments/some-uuid/ticket3216/sage-3216-prof.patch) by was created at 2008-06-16 04:45:44",
+    "body": "Attachment [sage-3216-prof.patch](tarball://root/attachments/some-uuid/ticket3216/sage-3216-prof.patch) by @williamstein created at 2008-06-16 04:45:44",
     "created_at": "2008-06-16T04:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22273",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3216-prof.patch](tarball://root/attachments/some-uuid/ticket3216/sage-3216-prof.patch) by was created at 2008-06-16 04:45:44
+Attachment [sage-3216-prof.patch](tarball://root/attachments/some-uuid/ticket3216/sage-3216-prof.patch) by @williamstein created at 2008-06-16 04:45:44
 
 
 

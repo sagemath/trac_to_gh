@@ -3,7 +3,7 @@
 archive/issues_009650.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhampton jason jdemeyer mpatel novoselt niles\n\nKeywords: forms, functions, symbolics\n\nImplements support for differential forms to Sage.  After applying the patch, three new classes are added to sage:\n\n1. `CoordinatePatch` -- an open subset of Rn on which differential forms can be defined\n2. `DifferentialForms` -- a differential forms parent\n3. `DifferentialForm` -- a differential forms class.\n\nPlease see the documentation in the `DifferentialForm` class for more information about syntax, available methods, etc.\n\nThis is a very basic implementation, providing support for exterior differentiation and wedge products of forms, but not much more.  The emphasis is on making sure that the framework is implemented correctly.\n\nSee discussion at\n\n1. http://wiki.sagemath.org/tensorcalc\n2. http://groups.google.be/group/sage-devel/browse_thread/thread/2feef1f0be557585/c2b7095747ebe34d\n\nIssue created by migration from https://trac.sagemath.org/ticket/9650\n\n",
+    "body": "Assignee: @burcin\n\nCC:  mhampton @jasongrout @jdemeyer @qed777 @novoselt @nilesjohnson\n\nKeywords: forms, functions, symbolics\n\nImplements support for differential forms to Sage.  After applying the patch, three new classes are added to sage:\n\n1. `CoordinatePatch` -- an open subset of Rn on which differential forms can be defined\n2. `DifferentialForms` -- a differential forms parent\n3. `DifferentialForm` -- a differential forms class.\n\nPlease see the documentation in the `DifferentialForm` class for more information about syntax, available methods, etc.\n\nThis is a very basic implementation, providing support for exterior differentiation and wedge products of forms, but not much more.  The emphasis is on making sure that the framework is implemented correctly.\n\nSee discussion at\n\n1. http://wiki.sagemath.org/tensorcalc\n2. http://groups.google.be/group/sage-devel/browse_thread/thread/2feef1f0be557585/c2b7095747ebe34d\n\nIssue created by migration from https://trac.sagemath.org/ticket/9650\n\n",
     "created_at": "2010-07-31T11:48:00Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009650.json:
     "title": "Adding support for differential forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9650",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mhampton jason jdemeyer mpatel novoselt niles
+CC:  mhampton @jasongrout @jdemeyer @qed777 @novoselt @nilesjohnson
 
 Keywords: forms, functions, symbolics
 
@@ -54,7 +54,7 @@ archive/issue_comments_093576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93576",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_093577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93577",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_093578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93578",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_093579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93579",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_093580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93580",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_093581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93581",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_093582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93582",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_093583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93583",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_093584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93584",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_093585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93585",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_093586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93586",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_093587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93587",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_093588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93588",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_093589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93589",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_093590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93590",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_093591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93591",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_093592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93592",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -528,7 +528,7 @@ archive/issue_comments_093593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93593",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_093594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93594",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_093595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93595",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -586,7 +586,7 @@ archive/issue_comments_093596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93596",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -612,7 +612,7 @@ archive/issue_comments_093597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93597",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -630,7 +630,7 @@ archive/issue_comments_093598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93598",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -648,7 +648,7 @@ archive/issue_comments_093599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93599",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -702,7 +702,7 @@ archive/issue_comments_093601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93601",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -720,7 +720,7 @@ archive/issue_comments_093602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93602",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -764,7 +764,7 @@ archive/issue_comments_093603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93603",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -807,7 +807,7 @@ archive/issue_comments_093604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93604",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -835,7 +835,7 @@ archive/issue_comments_093605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93605",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -853,7 +853,7 @@ archive/issue_comments_093606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93606",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -882,7 +882,7 @@ archive/issue_comments_093607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93607",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -900,7 +900,7 @@ archive/issue_comments_093608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93608",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -925,7 +925,7 @@ archive/issue_comments_093609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93609",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -991,7 +991,7 @@ archive/issue_comments_093612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93612",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1009,7 +1009,7 @@ archive/issue_comments_093613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93613",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1022,16 +1022,16 @@ Could someone please update [attachment:trac9650_differential_forms_v2.patch] wi
 archive/issue_comments_093614.json:
 ```json
 {
-    "body": "Attachment [trac9650_differential_forms_v2.patch](tarball://root/attachments/some-uuid/ticket9650/trac9650_differential_forms_v2.patch) by jvkersch created at 2010-09-05 07:53:00\n\nReplying to [comment:37 mpatel]:\n> Could someone please update [attachment:trac9650_differential_forms_v2.patch] with a more descriptive commit string that includes the ticket number?  For example: `#9650: Add support for differential forms`.\n\nDone -- thanks for pointing that out.",
+    "body": "Attachment [trac9650_differential_forms_v2.patch](tarball://root/attachments/some-uuid/ticket9650/trac9650_differential_forms_v2.patch) by @jvkersch created at 2010-09-05 07:53:00\n\nReplying to [comment:37 mpatel]:\n> Could someone please update [attachment:trac9650_differential_forms_v2.patch] with a more descriptive commit string that includes the ticket number?  For example: `#9650: Add support for differential forms`.\n\nDone -- thanks for pointing that out.",
     "created_at": "2010-09-05T07:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93614",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
-Attachment [trac9650_differential_forms_v2.patch](tarball://root/attachments/some-uuid/ticket9650/trac9650_differential_forms_v2.patch) by jvkersch created at 2010-09-05 07:53:00
+Attachment [trac9650_differential_forms_v2.patch](tarball://root/attachments/some-uuid/ticket9650/trac9650_differential_forms_v2.patch) by @jvkersch created at 2010-09-05 07:53:00
 
 Replying to [comment:37 mpatel]:
 > Could someone please update [attachment:trac9650_differential_forms_v2.patch] with a more descriptive commit string that includes the ticket number?  For example: `#9650: Add support for differential forms`.
@@ -1050,7 +1050,7 @@ archive/issue_comments_093615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93615",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -1073,7 +1073,7 @@ archive/issue_comments_093616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93616",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -1091,7 +1091,7 @@ archive/issue_comments_093617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93617",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1109,7 +1109,7 @@ archive/issue_comments_093618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93618",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1122,16 +1122,16 @@ corrected formatting for NotImplemented methods
 archive/issue_comments_093619.json:
 ```json
 {
-    "body": "Attachment [trac9650_differential_forms_v2-reviewer.patch](tarball://root/attachments/some-uuid/ticket9650/trac9650_differential_forms_v2-reviewer.patch) by niles created at 2010-09-05 17:26:05\n\nReplying to [comment:33 jvkersch]:\n\n> OK, I've updated the patch so that the methods which are not applicable raise `NotImplementedError`.  I don't know if I've done this properly though, since including all the doctests this amounts to quite a bit of additional code.\n\nThis looks great, and I agree with others on getting it included into sage soon.  There were some formatting errors in the new docstrings (need newline between `EXAMPLES::` and indented code block), and since someone else gave the positive review I just uploaded a corrected version (apply only [attachment:trac9650_differential_forms_v2-reviewer.patch]).",
+    "body": "Attachment [trac9650_differential_forms_v2-reviewer.patch](tarball://root/attachments/some-uuid/ticket9650/trac9650_differential_forms_v2-reviewer.patch) by @nilesjohnson created at 2010-09-05 17:26:05\n\nReplying to [comment:33 jvkersch]:\n\n> OK, I've updated the patch so that the methods which are not applicable raise `NotImplementedError`.  I don't know if I've done this properly though, since including all the doctests this amounts to quite a bit of additional code.\n\nThis looks great, and I agree with others on getting it included into sage soon.  There were some formatting errors in the new docstrings (need newline between `EXAMPLES::` and indented code block), and since someone else gave the positive review I just uploaded a corrected version (apply only [attachment:trac9650_differential_forms_v2-reviewer.patch]).",
     "created_at": "2010-09-05T17:26:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93619",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac9650_differential_forms_v2-reviewer.patch](tarball://root/attachments/some-uuid/ticket9650/trac9650_differential_forms_v2-reviewer.patch) by niles created at 2010-09-05 17:26:05
+Attachment [trac9650_differential_forms_v2-reviewer.patch](tarball://root/attachments/some-uuid/ticket9650/trac9650_differential_forms_v2-reviewer.patch) by @nilesjohnson created at 2010-09-05 17:26:05
 
 Replying to [comment:33 jvkersch]:
 
@@ -1151,7 +1151,7 @@ archive/issue_comments_093620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93620",
-    "user": "jvkersch"
+    "user": "@jvkersch"
 }
 ```
 
@@ -1171,7 +1171,7 @@ archive/issue_comments_093621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9650#issuecomment-93621",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

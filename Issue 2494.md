@@ -14,7 +14,7 @@ archive/issues_002494.json:
     "title": "bugs in evaluation of spherical bessel function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2494",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jkantor
@@ -94,16 +94,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2494
 archive/issue_comments_016897.json:
 ```json
 {
-    "body": "Changing assignee from jkantor to mhansen.",
+    "body": "Changing assignee from jkantor to @mwhansen.",
     "created_at": "2009-06-04T21:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16897",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from jkantor to mhansen.
+Changing assignee from jkantor to @mwhansen.
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_016898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16898",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_016899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16899",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -157,16 +157,16 @@ BUG 2 is still there.
 archive/issue_comments_016900.json:
 ```json
 {
-    "body": "Attachment [trac_2494.patch](tarball://root/attachments/some-uuid/ticket2494/trac_2494.patch) by mhansen created at 2010-01-17 06:08:48",
+    "body": "Attachment [trac_2494.patch](tarball://root/attachments/some-uuid/ticket2494/trac_2494.patch) by @mwhansen created at 2010-01-17 06:08:48",
     "created_at": "2010-01-17T06:08:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16900",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2494.patch](tarball://root/attachments/some-uuid/ticket2494/trac_2494.patch) by mhansen created at 2010-01-17 06:08:48
+Attachment [trac_2494.patch](tarball://root/attachments/some-uuid/ticket2494/trac_2494.patch) by @mwhansen created at 2010-01-17 06:08:48
 
 
 
@@ -180,7 +180,7 @@ archive/issue_comments_016901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16901",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_016902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16902",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_016903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16903",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003441.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nIncreases length of codes that can be handled to 64 (on most machines).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3441\n\n",
+    "body": "Assignee: @rlmill\n\nIncreases length of codes that can be handled to 64 (on most machines).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3441\n\n",
     "created_at": "2008-06-16T21:28:11Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_003441.json:
     "title": "[with patch, needs review] Make binary code words longer.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3441",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Increases length of codes that can be handled to 64 (on most machines).
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3441
 archive/issue_comments_024279.json:
 ```json
 {
-    "body": "Attachment [binary_code_long.patch](tarball://root/attachments/some-uuid/ticket3441/binary_code_long.patch) by rlm created at 2008-06-16 21:42:43",
+    "body": "Attachment [binary_code_long.patch](tarball://root/attachments/some-uuid/ticket3441/binary_code_long.patch) by @rlmill created at 2008-06-16 21:42:43",
     "created_at": "2008-06-16T21:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3441#issuecomment-24279",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [binary_code_long.patch](tarball://root/attachments/some-uuid/ticket3441/binary_code_long.patch) by rlm created at 2008-06-16 21:42:43
+Attachment [binary_code_long.patch](tarball://root/attachments/some-uuid/ticket3441/binary_code_long.patch) by @rlmill created at 2008-06-16 21:42:43
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_024280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3441#issuecomment-24280",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_024281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3441#issuecomment-24281",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

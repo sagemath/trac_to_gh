@@ -14,7 +14,7 @@ archive/issues_004671.json:
     "title": "[with patch; needs review] sage-3.2.1 startup time: it sucks again",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4671",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4671
 archive/issue_comments_035184.json:
 ```json
 {
-    "body": "Attachment [trac_4671.patch](tarball://root/attachments/some-uuid/ticket4671/trac_4671.patch) by was created at 2008-12-02 05:24:55",
+    "body": "Attachment [trac_4671.patch](tarball://root/attachments/some-uuid/ticket4671/trac_4671.patch) by @williamstein created at 2008-12-02 05:24:55",
     "created_at": "2008-12-02T05:24:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4671#issuecomment-35184",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4671.patch](tarball://root/attachments/some-uuid/ticket4671/trac_4671.patch) by was created at 2008-12-02 05:24:55
+Attachment [trac_4671.patch](tarball://root/attachments/some-uuid/ticket4671/trac_4671.patch) by @williamstein created at 2008-12-02 05:24:55
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_035185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4671#issuecomment-35185",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_035187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4671#issuecomment-35187",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -163,16 +163,16 @@ Mike -- can you think of anything that combinat code uses that might somehow hav
 archive/issue_comments_035188.json:
 ```json
 {
-    "body": "Attachment [trac_4671-2.patch](tarball://root/attachments/some-uuid/ticket4671/trac_4671-2.patch) by mhansen created at 2008-12-16 17:15:57",
+    "body": "Attachment [trac_4671-2.patch](tarball://root/attachments/some-uuid/ticket4671/trac_4671-2.patch) by @mwhansen created at 2008-12-16 17:15:57",
     "created_at": "2008-12-16T17:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4671#issuecomment-35188",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4671-2.patch](tarball://root/attachments/some-uuid/ticket4671/trac_4671-2.patch) by mhansen created at 2008-12-16 17:15:57
+Attachment [trac_4671-2.patch](tarball://root/attachments/some-uuid/ticket4671/trac_4671-2.patch) by @mwhansen created at 2008-12-16 17:15:57
 
 
 
@@ -186,7 +186,7 @@ archive/issue_comments_035189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4671#issuecomment-35189",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

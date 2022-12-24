@@ -3,7 +3,7 @@
 archive/issues_004392.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  m.t.aranes@warwick.ac.uk\n\nKeywords: number field ideal\n\nFor number field ideals and fractional ideals, the smallest_integer() function is broken in 2 ways:\n\n```\nsage: K.<a>=QuadraticField(-5)\nsage: I=K.ideal(7)\nsage: I.smallest_integer()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (237, 0))\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/masgaj/PLMS/<ipython console> in <module>()\n\n/local/jec/sage-3.2.alpha1/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.pyc in smallest_integer(self)\n    731                         bound /= p\n    732                 self.smallest_integer = ZZ(bound)\n--> 733                 return self.__smallest_integer\n    734             I,d = self.integral_split() ## self = I/d\n    735             n = I.smallest_integer()    ## n/d in self\n\nAttributeError: 'NumberFieldFractionalIdeal' object has no attribute '_NumberFieldIdeal__smallest_integer'\nsage: I.smallest_integer\n1\nsage: I.smallest_integer()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masgaj/PLMS/<ipython console> in <module>()\n\nTypeError: 'sage.rings.integer.Integer' object is not callable\n```\n\nFirst: in line 732 of number_field_ideal.py it has `self.smallest_integer` instead of `self.__smallest_integer`, so instead of caching the computed value we overwrite the function itself!\n\nSecond:  the answer is wrong (as the example shows).\n\nI will try to fix this and post a ptach today (Bug Day 2008-10-30).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4392\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  m.t.aranes@warwick.ac.uk\n\nKeywords: number field ideal\n\nFor number field ideals and fractional ideals, the smallest_integer() function is broken in 2 ways:\n\n```\nsage: K.<a>=QuadraticField(-5)\nsage: I=K.ideal(7)\nsage: I.smallest_integer()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (237, 0))\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/masgaj/PLMS/<ipython console> in <module>()\n\n/local/jec/sage-3.2.alpha1/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.pyc in smallest_integer(self)\n    731                         bound /= p\n    732                 self.smallest_integer = ZZ(bound)\n--> 733                 return self.__smallest_integer\n    734             I,d = self.integral_split() ## self = I/d\n    735             n = I.smallest_integer()    ## n/d in self\n\nAttributeError: 'NumberFieldFractionalIdeal' object has no attribute '_NumberFieldIdeal__smallest_integer'\nsage: I.smallest_integer\n1\nsage: I.smallest_integer()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masgaj/PLMS/<ipython console> in <module>()\n\nTypeError: 'sage.rings.integer.Integer' object is not callable\n```\n\nFirst: in line 732 of number_field_ideal.py it has `self.smallest_integer` instead of `self.__smallest_integer`, so instead of caching the computed value we overwrite the function itself!\n\nSecond:  the answer is wrong (as the example shows).\n\nI will try to fix this and post a ptach today (Bug Day 2008-10-30).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4392\n\n",
     "created_at": "2008-10-30T13:10:27Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004392.json:
     "title": "smallest_integer() is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4392",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 CC:  m.t.aranes@warwick.ac.uk
 
@@ -74,16 +74,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4392
 archive/issue_comments_032321.json:
 ```json
 {
-    "body": "Attachment [sage-trac4392.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392.patch) by cremona created at 2008-10-30 16:52:56",
+    "body": "Attachment [sage-trac4392.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392.patch) by @JohnCremona created at 2008-10-30 16:52:56",
     "created_at": "2008-10-30T16:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32321",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac4392.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392.patch) by cremona created at 2008-10-30 16:52:56
+Attachment [sage-trac4392.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392.patch) by @JohnCremona created at 2008-10-30 16:52:56
 
 
 
@@ -92,16 +92,16 @@ Attachment [sage-trac4392.patch](tarball://root/attachments/some-uuid/ticket4392
 archive/issue_comments_032322.json:
 ```json
 {
-    "body": "Attachment [sage-trac4392-2.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-2.patch) by cremona created at 2008-10-30 16:54:13\n\nThe patch sage-trac4392.patch (based on 3.2.alpha1) fixes this by completely reimplementing the function in a simpler way, using linear algebra instead of factorization.  Several new doctests have been added.  All tests in sage.rings.number_field pass.\n\nThe second patch applies after the first and handles the zero ideal properly (with another doctest to prove it!)",
+    "body": "Attachment [sage-trac4392-2.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-2.patch) by @JohnCremona created at 2008-10-30 16:54:13\n\nThe patch sage-trac4392.patch (based on 3.2.alpha1) fixes this by completely reimplementing the function in a simpler way, using linear algebra instead of factorization.  Several new doctests have been added.  All tests in sage.rings.number_field pass.\n\nThe second patch applies after the first and handles the zero ideal properly (with another doctest to prove it!)",
     "created_at": "2008-10-30T16:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32322",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac4392-2.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-2.patch) by cremona created at 2008-10-30 16:54:13
+Attachment [sage-trac4392-2.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-2.patch) by @JohnCremona created at 2008-10-30 16:54:13
 
 The patch sage-trac4392.patch (based on 3.2.alpha1) fixes this by completely reimplementing the function in a simpler way, using linear algebra instead of factorization.  Several new doctests have been added.  All tests in sage.rings.number_field pass.
 
@@ -114,16 +114,16 @@ The second patch applies after the first and handles the zero ideal properly (wi
 archive/issue_comments_032323.json:
 ```json
 {
-    "body": "Attachment [sage-trac4392-3.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-3.patch) by cremona created at 2008-10-31 11:35:32",
+    "body": "Attachment [sage-trac4392-3.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-3.patch) by @JohnCremona created at 2008-10-31 11:35:32",
     "created_at": "2008-10-31T11:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32323",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac4392-3.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-3.patch) by cremona created at 2008-10-31 11:35:32
+Attachment [sage-trac4392-3.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-3.patch) by @JohnCremona created at 2008-10-31 11:35:32
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_032324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32324",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_032325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32325",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -170,16 +170,16 @@ Replaces the three earlier patches
 archive/issue_comments_032326.json:
 ```json
 {
-    "body": "Attachment [sage-trac4392-new.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-new.patch) by cremona created at 2008-11-12 21:25:39\n\nFor ease of reviewing, the patch sage-trac4392-new.patch merges and replaces the three previous ones.  It applies to 3.2.alpha3.",
+    "body": "Attachment [sage-trac4392-new.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-new.patch) by @JohnCremona created at 2008-11-12 21:25:39\n\nFor ease of reviewing, the patch sage-trac4392-new.patch merges and replaces the three previous ones.  It applies to 3.2.alpha3.",
     "created_at": "2008-11-12T21:25:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32326",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac4392-new.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-new.patch) by cremona created at 2008-11-12 21:25:39
+Attachment [sage-trac4392-new.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-new.patch) by @JohnCremona created at 2008-11-12 21:25:39
 
 For ease of reviewing, the patch sage-trac4392-new.patch merges and replaces the three previous ones.  It applies to 3.2.alpha3.
 
@@ -195,7 +195,7 @@ archive/issue_comments_032327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32327",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_032328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32328",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_032329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32329",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_032333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32333",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

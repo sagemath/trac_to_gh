@@ -3,7 +3,7 @@
 archive/issues_006497.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nWe want\n\n\n```\nsage: import numpy\nsage: sin(numpy.arange(5))\narray([ 0.        ,  0.84147098,  0.90929743,  0.14112001, -0.7568025 ])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6497\n\n",
+    "body": "Assignee: @burcin\n\nWe want\n\n\n```\nsage: import numpy\nsage: sin(numpy.arange(5))\narray([ 0.        ,  0.84147098,  0.90929743,  0.14112001, -0.7568025 ])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6497\n\n",
     "created_at": "2009-07-09T10:14:40Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_006497.json:
     "title": "[with patch, needs review] symbolic functions should understand numpy arrays",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6497",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 We want
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6497
 archive/issue_comments_052854.json:
 ```json
 {
-    "body": "Attachment [6497-numpy-sin.patch](tarball://root/attachments/some-uuid/ticket6497/6497-numpy-sin.patch) by burcin created at 2009-07-12 10:33:03\n\nThis depends on #5081.",
+    "body": "Attachment [6497-numpy-sin.patch](tarball://root/attachments/some-uuid/ticket6497/6497-numpy-sin.patch) by @burcin created at 2009-07-12 10:33:03\n\nThis depends on #5081.",
     "created_at": "2009-07-12T10:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6497#issuecomment-52854",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [6497-numpy-sin.patch](tarball://root/attachments/some-uuid/ticket6497/6497-numpy-sin.patch) by burcin created at 2009-07-12 10:33:03
+Attachment [6497-numpy-sin.patch](tarball://root/attachments/some-uuid/ticket6497/6497-numpy-sin.patch) by @burcin created at 2009-07-12 10:33:03
 
 This depends on #5081.
 
@@ -102,7 +102,7 @@ archive/issue_comments_052856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6497#issuecomment-52856",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

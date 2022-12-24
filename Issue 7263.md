@@ -3,7 +3,7 @@
 archive/issues_007263.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\nI replicated the following with a fresh build under Linux and OS X too.  Basically *all* plotting of 3d jmol plots at the command line is broken!  The notebook works fine.  This is serious.\n\n```\nI'm having trouble with jmol from the command line in 4.1.2 and\n4.2.alpha0.  E.g.,\nsage: var('A,B,C')\n(A, B, C)\nsage: implicit_plot3d(sin(A)*cos(B)+sin(B)*cos(C)+sin(C)*cos(A),\n(A,-2*pi,2*pi),(B,-2*pi,2*pi),(C,-2*pi,2*pi))\ndoes nothing.  Adding .show() also fails, and quicker.  On\nalpha.sagenb.org I don't have the same problems (though sometimes I\nget the featureless black box), so I think it may be a command-line\nissue.  Any ideas? I do NOT get this in 4.1.1.  I am on a MacIntel\nrunning OSX 10.5.\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7263\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nI replicated the following with a fresh build under Linux and OS X too.  Basically *all* plotting of 3d jmol plots at the command line is broken!  The notebook works fine.  This is serious.\n\n```\nI'm having trouble with jmol from the command line in 4.1.2 and\n4.2.alpha0.  E.g.,\nsage: var('A,B,C')\n(A, B, C)\nsage: implicit_plot3d(sin(A)*cos(B)+sin(B)*cos(C)+sin(C)*cos(A),\n(A,-2*pi,2*pi),(B,-2*pi,2*pi),(C,-2*pi,2*pi))\ndoes nothing.  Adding .show() also fails, and quicker.  On\nalpha.sagenb.org I don't have the same problems (though sometimes I\nget the featureless black box), so I think it may be a command-line\nissue.  Any ideas? I do NOT get this in 4.1.1.  I am on a MacIntel\nrunning OSX 10.5.\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7263\n\n",
     "created_at": "2009-10-21T23:21:15Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_007263.json:
     "title": "sage-4.2: jmol plotting on the command line is completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7263",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 I replicated the following with a fresh build under Linux and OS X too.  Basically *all* plotting of 3d jmol plots at the command line is broken!  The notebook works fine.  This is serious.
 
@@ -56,7 +56,7 @@ archive/issue_comments_060332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60332",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_060333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60333",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_060334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60334",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_060335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60335",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -196,16 +196,16 @@ Fix paths for command-line 3d viewers.  Apply to sage repository.
 archive/issue_comments_060336.json:
 ```json
 {
-    "body": "Attachment [trac_7263-sage_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sage_cli_3d_viewers.patch) by mpatel created at 2009-10-22 05:28:45\n\nUpdate command-line 3d viewer scripts.  Apply to sagenb repository.",
+    "body": "Attachment [trac_7263-sage_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sage_cli_3d_viewers.patch) by @qed777 created at 2009-10-22 05:28:45\n\nUpdate command-line 3d viewer scripts.  Apply to sagenb repository.",
     "created_at": "2009-10-22T05:28:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60336",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7263-sage_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sage_cli_3d_viewers.patch) by mpatel created at 2009-10-22 05:28:45
+Attachment [trac_7263-sage_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sage_cli_3d_viewers.patch) by @qed777 created at 2009-10-22 05:28:45
 
 Update command-line 3d viewer scripts.  Apply to sagenb repository.
 
@@ -216,16 +216,16 @@ Update command-line 3d viewer scripts.  Apply to sagenb repository.
 archive/issue_comments_060337.json:
 ```json
 {
-    "body": "Attachment [trac_7263-sagenb_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sagenb_cli_3d_viewers.patch) by mpatel created at 2009-10-22 20:38:54\n\nThe patches depend on #7196.",
+    "body": "Attachment [trac_7263-sagenb_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sagenb_cli_3d_viewers.patch) by @qed777 created at 2009-10-22 20:38:54\n\nThe patches depend on #7196.",
     "created_at": "2009-10-22T20:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60337",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7263-sagenb_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sagenb_cli_3d_viewers.patch) by mpatel created at 2009-10-22 20:38:54
+Attachment [trac_7263-sagenb_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sagenb_cli_3d_viewers.patch) by @qed777 created at 2009-10-22 20:38:54
 
 The patches depend on #7196.
 
@@ -241,7 +241,7 @@ archive/issue_comments_060338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60338",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_060339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60339",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_060340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60340",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_060341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60341",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

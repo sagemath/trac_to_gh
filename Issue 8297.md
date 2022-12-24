@@ -3,7 +3,7 @@
 archive/issues_008297.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: pynac\n\nFrom sage-devel:\n\n\n```\nOn Wed, 17 Feb 2010 23:16:13 -0800 (PST)\nH\u00e5kan Granath <hakan.granath@googlemail.com> wrote:\n\n> A minor inconvenience is the extra set of parentheses that appear\n> when typesetting QQ elements as arguments of functions, e.g.\n> \n> ----------------------------------------------------------------------\n> | Sage Version 4.3.2, Release Date: 2010-02-06                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: latex(gamma(1/4))\n> \\Gamma\\left(\\left(\\frac{1}{4}\\right)\\right)\n> \n> \n> Unfortunately I can not create a patch myself to fix this since\n> I could not figure out where the problem comes from.\n> \n> /H\u00e5kan\n```\n\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-devel/t/d068d2fd544eadde\n\nIssue created by migration from https://trac.sagemath.org/ticket/8297\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: pynac\n\nFrom sage-devel:\n\n\n```\nOn Wed, 17 Feb 2010 23:16:13 -0800 (PST)\nH\u00e5kan Granath <hakan.granath@googlemail.com> wrote:\n\n> A minor inconvenience is the extra set of parentheses that appear\n> when typesetting QQ elements as arguments of functions, e.g.\n> \n> ----------------------------------------------------------------------\n> | Sage Version 4.3.2, Release Date: 2010-02-06                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: latex(gamma(1/4))\n> \\Gamma\\left(\\left(\\frac{1}{4}\\right)\\right)\n> \n> \n> Unfortunately I can not create a patch myself to fix this since\n> I could not figure out where the problem comes from.\n> \n> /H\u00e5kan\n```\n\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-devel/t/d068d2fd544eadde\n\nIssue created by migration from https://trac.sagemath.org/ticket/8297\n\n",
     "created_at": "2010-02-18T09:30:19Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_008297.json:
     "title": "extra parenthesis when typesetting QQ arguments to symbolic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8297",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: pynac
 
@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8297
 archive/issue_comments_073500.json:
 ```json
 {
-    "body": "Attachment [trac_8297-sfunction_extra_paranthesis.patch](tarball://root/attachments/some-uuid/ticket8297/trac_8297-sfunction_extra_paranthesis.patch) by burcin created at 2010-04-02 16:10:11",
+    "body": "Attachment [trac_8297-sfunction_extra_paranthesis.patch](tarball://root/attachments/some-uuid/ticket8297/trac_8297-sfunction_extra_paranthesis.patch) by @burcin created at 2010-04-02 16:10:11",
     "created_at": "2010-04-02T16:10:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8297#issuecomment-73500",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8297-sfunction_extra_paranthesis.patch](tarball://root/attachments/some-uuid/ticket8297/trac_8297-sfunction_extra_paranthesis.patch) by burcin created at 2010-04-02 16:10:11
+Attachment [trac_8297-sfunction_extra_paranthesis.patch](tarball://root/attachments/some-uuid/ticket8297/trac_8297-sfunction_extra_paranthesis.patch) by @burcin created at 2010-04-02 16:10:11
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_073501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8297#issuecomment-73501",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_073502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8297#issuecomment-73502",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_073503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8297#issuecomment-73503",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -162,16 +162,16 @@ me without this patch, though.
 archive/issue_comments_073505.json:
 ```json
 {
-    "body": "Attachment [trac_8297-sfunction_extra_paranthesis.take2.patch](tarball://root/attachments/some-uuid/ticket8297/trac_8297-sfunction_extra_paranthesis.take2.patch) by burcin created at 2010-04-11 12:38:50\n\napply only this patch",
+    "body": "Attachment [trac_8297-sfunction_extra_paranthesis.take2.patch](tarball://root/attachments/some-uuid/ticket8297/trac_8297-sfunction_extra_paranthesis.take2.patch) by @burcin created at 2010-04-11 12:38:50\n\napply only this patch",
     "created_at": "2010-04-11T12:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8297#issuecomment-73505",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8297-sfunction_extra_paranthesis.take2.patch](tarball://root/attachments/some-uuid/ticket8297/trac_8297-sfunction_extra_paranthesis.take2.patch) by burcin created at 2010-04-11 12:38:50
+Attachment [trac_8297-sfunction_extra_paranthesis.take2.patch](tarball://root/attachments/some-uuid/ticket8297/trac_8297-sfunction_extra_paranthesis.take2.patch) by @burcin created at 2010-04-11 12:38:50
 
 apply only this patch
 
@@ -187,7 +187,7 @@ archive/issue_comments_073506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8297#issuecomment-73506",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_073509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8297#issuecomment-73509",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_073510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8297#issuecomment-73510",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

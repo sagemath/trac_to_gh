@@ -3,7 +3,7 @@
 archive/issues_008424.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb robert.marik drkirkby\n\nRobert Marik pointed out that there is a bug in the bounding box calculation of the following plot:\n\n\n```\nvar('y')\nplot3d(sqrt(sin(x)*sin(y)), (x,0,2*pi),(y,0,2*pi))\n```\n\n\nThe problem is that there are lots of NaNs generated in the evaluation of the plot, and these are not handled well by the bounding box calculation.\n\nThe attached patch fixes the issues in two of the three places the bounding box is calculated.  A third place is not touched in plot3d/transform.pyx, where I don't have time to make sure the fix is the right one and supply the necessary doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8424\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb @robert-marik drkirkby\n\nRobert Marik pointed out that there is a bug in the bounding box calculation of the following plot:\n\n\n```\nvar('y')\nplot3d(sqrt(sin(x)*sin(y)), (x,0,2*pi),(y,0,2*pi))\n```\n\n\nThe problem is that there are lots of NaNs generated in the evaluation of the plot, and these are not handled well by the bounding box calculation.\n\nThe attached patch fixes the issues in two of the three places the bounding box is calculated.  A third place is not touched in plot3d/transform.pyx, where I don't have time to make sure the fix is the right one and supply the necessary doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8424\n\n",
     "created_at": "2010-03-02T19:14:58Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_008424.json:
     "title": "bounding box calculation doesn't handle NaN or infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8424",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb robert.marik drkirkby
+CC:  @robertwb @robert-marik drkirkby
 
 Robert Marik pointed out that there is a bug in the bounding box calculation of the following plot:
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8424
 archive/issue_comments_075519.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2010-03-02T19:21:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8424#issuecomment-75519",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_075520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8424#issuecomment-75520",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -81,16 +81,16 @@ Changing status from new to needs_review.
 archive/issue_comments_075521.json:
 ```json
 {
-    "body": "Attachment [trac-8424-bounding-boxes.patch](tarball://root/attachments/some-uuid/ticket8424/trac-8424-bounding-boxes.patch) by jason created at 2010-03-04 02:25:39\n\nNew patch fixes one doctest.  Robert (either one! :), feel free to review this.\n\ndrkirkby: I use the INFINITY constant and the isfinite macro from math.h.  Does this pose a problem on Solaris?",
+    "body": "Attachment [trac-8424-bounding-boxes.patch](tarball://root/attachments/some-uuid/ticket8424/trac-8424-bounding-boxes.patch) by @jasongrout created at 2010-03-04 02:25:39\n\nNew patch fixes one doctest.  Robert (either one! :), feel free to review this.\n\ndrkirkby: I use the INFINITY constant and the isfinite macro from math.h.  Does this pose a problem on Solaris?",
     "created_at": "2010-03-04T02:25:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8424#issuecomment-75521",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8424-bounding-boxes.patch](tarball://root/attachments/some-uuid/ticket8424/trac-8424-bounding-boxes.patch) by jason created at 2010-03-04 02:25:39
+Attachment [trac-8424-bounding-boxes.patch](tarball://root/attachments/some-uuid/ticket8424/trac-8424-bounding-boxes.patch) by @jasongrout created at 2010-03-04 02:25:39
 
 New patch fixes one doctest.  Robert (either one! :), feel free to review this.
 
@@ -108,7 +108,7 @@ archive/issue_comments_075522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8424#issuecomment-75522",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_075523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8424#issuecomment-75523",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_075525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8424#issuecomment-75525",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_075526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8424#issuecomment-75526",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

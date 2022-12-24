@@ -3,7 +3,7 @@
 archive/issues_003724.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  simonking\n\nKeywords: m4ri, hash, matrix\n\nSimon King requested faster hashing for matrices over GF(2). This patch implements it, but depends on #3324 and an updated M4RI.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3724\n\n",
+    "body": "Assignee: @malb\n\nCC:  simonking\n\nKeywords: m4ri, hash, matrix\n\nSimon King requested faster hashing for matrices over GF(2). This patch implements it, but depends on #3324 and an updated M4RI.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3724\n\n",
     "created_at": "2008-07-25T12:08:04Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003724.json:
     "title": "[with patch, depends on other ticket] faster hashs for Matrix_mod2_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3724",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  simonking
 
@@ -41,7 +41,7 @@ archive/issue_comments_026412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26412",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -54,16 +54,16 @@ implements faster hashing
 archive/issue_comments_026413.json:
 ```json
 {
-    "body": "Attachment [m4ri_hash.patch](tarball://root/attachments/some-uuid/ticket3724/m4ri_hash.patch) by malb created at 2008-08-06 16:32:32\n\nit seems, the patch is independent of the PNG fix.",
+    "body": "Attachment [m4ri_hash.patch](tarball://root/attachments/some-uuid/ticket3724/m4ri_hash.patch) by @malb created at 2008-08-06 16:32:32\n\nit seems, the patch is independent of the PNG fix.",
     "created_at": "2008-08-06T16:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26413",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [m4ri_hash.patch](tarball://root/attachments/some-uuid/ticket3724/m4ri_hash.patch) by malb created at 2008-08-06 16:32:32
+Attachment [m4ri_hash.patch](tarball://root/attachments/some-uuid/ticket3724/m4ri_hash.patch) by @malb created at 2008-08-06 16:32:32
 
 it seems, the patch is independent of the PNG fix.
 
@@ -79,7 +79,7 @@ archive/issue_comments_026414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26414",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_026415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26415",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_026419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26419",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_026420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26420",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_026421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26421",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_026422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26422",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_026423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26423",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -351,16 +351,16 @@ address review
 archive/issue_comments_026424.json:
 ```json
 {
-    "body": "Attachment [m4ri_hash2.patch](tarball://root/attachments/some-uuid/ticket3724/m4ri_hash2.patch) by malb created at 2008-08-26 13:25:29\n\nYou're right, good catch. The attached patch addresses that issue.",
+    "body": "Attachment [m4ri_hash2.patch](tarball://root/attachments/some-uuid/ticket3724/m4ri_hash2.patch) by @malb created at 2008-08-26 13:25:29\n\nYou're right, good catch. The attached patch addresses that issue.",
     "created_at": "2008-08-26T13:25:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26424",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [m4ri_hash2.patch](tarball://root/attachments/some-uuid/ticket3724/m4ri_hash2.patch) by malb created at 2008-08-26 13:25:29
+Attachment [m4ri_hash2.patch](tarball://root/attachments/some-uuid/ticket3724/m4ri_hash2.patch) by @malb created at 2008-08-26 13:25:29
 
 You're right, good catch. The attached patch addresses that issue.
 
@@ -430,7 +430,7 @@ archive/issue_comments_026428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26428",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_026429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26429",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_026430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26430",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_026432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26432",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_026433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3724#issuecomment-26433",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

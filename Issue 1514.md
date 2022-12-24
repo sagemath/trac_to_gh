@@ -14,7 +14,7 @@ archive/issues_001514.json:
     "title": "fix breakage and lameness in foo? and foo?? especially in the notebook.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1514",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1514
 archive/issue_comments_009704.json:
 ```json
 {
-    "body": "Attachment [trac-1514.patch](tarball://root/attachments/some-uuid/ticket1514/trac-1514.patch) by was created at 2007-12-15 01:45:04",
+    "body": "Attachment [trac-1514.patch](tarball://root/attachments/some-uuid/ticket1514/trac-1514.patch) by @williamstein created at 2007-12-15 01:45:04",
     "created_at": "2007-12-15T01:45:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1514#issuecomment-9704",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1514.patch](tarball://root/attachments/some-uuid/ticket1514/trac-1514.patch) by was created at 2007-12-15 01:45:04
+Attachment [trac-1514.patch](tarball://root/attachments/some-uuid/ticket1514/trac-1514.patch) by @williamstein created at 2007-12-15 01:45:04
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_009705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1514#issuecomment-9705",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_009706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1514#issuecomment-9706",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

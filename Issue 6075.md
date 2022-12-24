@@ -3,7 +3,7 @@
 archive/issues_006075.json:
 ```json
 {
-    "body": "Assignee: yi\n\nCC:  craigcitro\n\nKeywords: dsage optional spkg\n\nFor 4.0, dsage was made an optional spkg.  However, if I rm -rf build/ and sage -ba, the newly built tree has no dsage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6075\n\n",
+    "body": "Assignee: @yqiang\n\nCC:  @craigcitro\n\nKeywords: dsage optional spkg\n\nFor 4.0, dsage was made an optional spkg.  However, if I rm -rf build/ and sage -ba, the newly built tree has no dsage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6075\n\n",
     "created_at": "2009-05-18T21:02:20Z",
     "labels": [
         "dsage",
@@ -14,12 +14,12 @@ archive/issues_006075.json:
     "title": "dsage is not yet entirely optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6075",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
-CC:  craigcitro
+CC:  @craigcitro
 
 Keywords: dsage optional spkg
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6075
 archive/issue_comments_048356.json:
 ```json
 {
-    "body": "Changing assignee from yi to mhansen.",
+    "body": "Changing assignee from @yqiang to @mwhansen.",
     "created_at": "2009-05-26T20:49:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48356",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from yi to mhansen.
+Changing assignee from @yqiang to @mwhansen.
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_048357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48357",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_048358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48358",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -90,16 +90,16 @@ I've added a patch that makes things continue to work if dsage is not there.  Ho
 archive/issue_comments_048359.json:
 ```json
 {
-    "body": "Attachment [trac_6075.patch](tarball://root/attachments/some-uuid/ticket6075/trac_6075.patch) by mhansen created at 2009-05-28 02:44:46",
+    "body": "Attachment [trac_6075.patch](tarball://root/attachments/some-uuid/ticket6075/trac_6075.patch) by @mwhansen created at 2009-05-28 02:44:46",
     "created_at": "2009-05-28T02:44:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48359",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6075.patch](tarball://root/attachments/some-uuid/ticket6075/trac_6075.patch) by mhansen created at 2009-05-28 02:44:46
+Attachment [trac_6075.patch](tarball://root/attachments/some-uuid/ticket6075/trac_6075.patch) by @mwhansen created at 2009-05-28 02:44:46
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_048360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48360",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_048361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48361",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_048362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48362",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_048363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48363",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

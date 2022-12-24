@@ -3,7 +3,7 @@
 archive/issues_001317.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  mvngu\n\nKeywords: graphs\n\n\n```\n>> * cut-sets (more generally, min/max flow algorithms)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1317\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  mvngu\n\nKeywords: graphs\n\n\n```\n>> * cut-sets (more generally, min/max flow algorithms)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1317\n\n",
     "created_at": "2007-11-28T20:04:22Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001317.json:
     "title": "[graphs] calculate edge and vertex cut-sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1317",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  mvngu
 
@@ -45,7 +45,7 @@ archive/issue_comments_008374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1317#issuecomment-8374",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -58,16 +58,16 @@ calculate vertex and edge connectivity is a byproduct of this.
 archive/issue_comments_008375.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-17T15:20:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1317#issuecomment-8375",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_008376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1317#issuecomment-8376",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_008377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1317#issuecomment-8377",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_008378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1317#issuecomment-8378",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_008380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1317#issuecomment-8380",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_008381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1317#issuecomment-8381",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_008382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1317#issuecomment-8382",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_008383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1317#issuecomment-8383",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_008384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1317#issuecomment-8384",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

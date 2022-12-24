@@ -3,7 +3,7 @@
 archive/issues_000905.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/905\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/905\n\n",
     "created_at": "2007-10-16T01:39:38Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000905.json:
     "title": "update the version of ipython included in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/905",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  mabshoff
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/905
 archive/issue_comments_005572.json:
 ```json
 {
-    "body": "Changing assignee from was to burcin.",
+    "body": "Changing assignee from @williamstein to @burcin.",
     "created_at": "2008-05-11T16:25:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/905#issuecomment-5572",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from was to burcin.
+Changing assignee from @williamstein to @burcin.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_005573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/905#issuecomment-5573",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_005574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/905#issuecomment-5574",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

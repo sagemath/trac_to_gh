@@ -3,7 +3,7 @@
 archive/issues_008512.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was\n\nThe optional package  \"database_stein_watkins_mini\" fails to install on Solaris 10, as 'cp' uses an illegal option -v, which is not defined by POSIX. \n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/cp.html\n\nSince the GNU version of 'cp' only uses the -v option to show what is being done - from the 'cp' man page on Linux:\n\n\n```\n       -v, --verbose\n              explain what is being done\n```\n\n\nThe -v option can simply be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8512\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein\n\nThe optional package  \"database_stein_watkins_mini\" fails to install on Solaris 10, as 'cp' uses an illegal option -v, which is not defined by POSIX. \n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/cp.html\n\nSince the GNU version of 'cp' only uses the -v option to show what is being done - from the 'cp' man page on Linux:\n\n\n```\n       -v, --verbose\n              explain what is being done\n```\n\n\nThe -v option can simply be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8512\n\n",
     "created_at": "2010-03-12T23:48:03Z",
     "labels": [
         "packages: optional",
@@ -19,7 +19,7 @@ archive/issues_008512.json:
 ```
 Assignee: tbd
 
-CC:  was
+CC:  @williamstein
 
 The optional package  "database_stein_watkins_mini" fails to install on Solaris 10, as 'cp' uses an illegal option -v, which is not defined by POSIX. 
 
@@ -172,7 +172,7 @@ archive/issue_comments_076870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8512#issuecomment-76870",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_076871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8512#issuecomment-76871",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

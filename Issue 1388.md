@@ -3,7 +3,7 @@
 archive/issues_001388.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\nsage -t  devel/sage-main/sage/calculus/wester.py            **********************************************************************\nFile \"wester.py\", line 399:\n    : print d.factor()\nExpected:\n    (-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nGot:\n    (-1) * (-a + b) * (a - c) * (b - c) * (a - d) * (b - d) * (c - d)\n**********************************************************************\n1 items had failures:\n   1 of 188 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_wester.py\n         [9.5 s]\nexit code: 256\n \n\n```\n\n\n\nThis seems to be a 32 bits issue!?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1388\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\nsage -t  devel/sage-main/sage/calculus/wester.py            **********************************************************************\nFile \"wester.py\", line 399:\n    : print d.factor()\nExpected:\n    (-1) * (a - d) * (-a + b) * (b - d) * (a - c) * (b - c) * (c - d)\nGot:\n    (-1) * (-a + b) * (a - c) * (b - c) * (a - d) * (b - d) * (c - d)\n**********************************************************************\n1 items had failures:\n   1 of 188 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_wester.py\n         [9.5 s]\nexit code: 256\n \n\n```\n\n\n\nThis seems to be a 32 bits issue!?\n\nIssue created by migration from https://trac.sagemath.org/ticket/1388\n\n",
     "created_at": "2007-12-03T21:13:08Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001388.json:
     "title": "failure in calculus/wester.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1388",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1388
 archive/issue_comments_008900.json:
 ```json
 {
-    "body": "Changing assignee from was to failure.",
+    "body": "Changing assignee from @williamstein to failure.",
     "created_at": "2007-12-03T21:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1388",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_008900.json:
 }
 ```
 
-Changing assignee from was to failure.
+Changing assignee from @williamstein to failure.
 
 
 

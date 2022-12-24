@@ -14,7 +14,7 @@ archive/issues_005826.json:
     "title": "add nodoctest to sagedoc.py and sageinspect.py to work around #5806",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5826",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_045795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5826#issuecomment-45795",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_045796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5826#issuecomment-45796",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing component from algebra to misc.
 archive/issue_comments_045797.json:
 ```json
 {
-    "body": "Attachment [trac_5826.patch](tarball://root/attachments/some-uuid/ticket5826/trac_5826.patch) by ddrake created at 2009-04-20 03:07:28",
+    "body": "Attachment [trac_5826.patch](tarball://root/attachments/some-uuid/ticket5826/trac_5826.patch) by @dandrake created at 2009-04-20 03:07:28",
     "created_at": "2009-04-20T03:07:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5826#issuecomment-45797",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5826.patch](tarball://root/attachments/some-uuid/ticket5826/trac_5826.patch) by ddrake created at 2009-04-20 03:07:28
+Attachment [trac_5826.patch](tarball://root/attachments/some-uuid/ticket5826/trac_5826.patch) by @dandrake created at 2009-04-20 03:07:28
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_045798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5826#issuecomment-45798",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -104,16 +104,16 @@ Changing status from new to assigned.
 archive/issue_comments_045799.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to ddrake.",
+    "body": "Changing assignee from cwitty to @dandrake.",
     "created_at": "2009-04-20T03:15:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5826#issuecomment-45799",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from cwitty to ddrake.
+Changing assignee from cwitty to @dandrake.
 
 
 

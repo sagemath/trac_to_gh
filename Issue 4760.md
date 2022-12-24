@@ -3,7 +3,7 @@
 archive/issues_004760.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThe doctests in dsage_interface are disabled and do not work properly when enabled.  This patch fixes these issues.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4760\n\n",
+    "body": "Assignee: @garyfurnish\n\nThe doctests in dsage_interface are disabled and do not work properly when enabled.  This patch fixes these issues.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4760\n\n",
     "created_at": "2008-12-11T14:51:54Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_004760.json:
     "title": "[with patch, needs review] dsage_interface doctests broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4760",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 The doctests in dsage_interface are disabled and do not work properly when enabled.  This patch fixes these issues.  
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4760
 archive/issue_comments_036074.json:
 ```json
 {
-    "body": "Attachment [trac_4760.patch](tarball://root/attachments/some-uuid/ticket4760/trac_4760.patch) by gfurnish created at 2008-12-11 14:53:26",
+    "body": "Attachment [trac_4760.patch](tarball://root/attachments/some-uuid/ticket4760/trac_4760.patch) by @garyfurnish created at 2008-12-11 14:53:26",
     "created_at": "2008-12-11T14:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4760#issuecomment-36074",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_4760.patch](tarball://root/attachments/some-uuid/ticket4760/trac_4760.patch) by gfurnish created at 2008-12-11 14:53:26
+Attachment [trac_4760.patch](tarball://root/attachments/some-uuid/ticket4760/trac_4760.patch) by @garyfurnish created at 2008-12-11 14:53:26
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_036075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4760#issuecomment-36075",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_036076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4760#issuecomment-36076",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

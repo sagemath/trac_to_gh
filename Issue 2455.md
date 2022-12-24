@@ -3,7 +3,7 @@
 archive/issues_002455.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  ncalexan\n\nAfter the patch was applied:\n\n\n```\nSCORE devel/sage-docday2/sage/rings/polynomial/multi_polynomial_ideal.py: 88% (40 of 45)\n\nMissing doctests:\n         * redSB(func)\n         * wrapper(*args, **kwds)\n         * _variety(T, V, v=None)\n         * _macaulay2_(self, macaulay2=None)\n         * groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)\n```\n\n\nI cannot write Macaulay2 doctests right now because the optional SPKG fails to install. Groebner fan also has issues.\n\nOld:\n\n```\n----------------------------------------------------------------------\ndevel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\nSCORE devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py: 68% (32 of 47)\n\nMissing documentation:\n         * is_MPolynomialIdeal(x)\n         * __enter__(self)\n         * __exit__(self, type, value, tb)\n         * wrapper(*args, **kwds)\n         * f(x,y)\n         * _singular_groebner_basis(self)\n         * _variety(T, V, v=None)\n\n\nMissing doctests:\n         * __init__(self, singular=singular_default)\n         * redSB(func)\n         * dimension(self)\n         * genus(self)\n         * syzygy_module(self)\n         * reduced_basis(self)\n         * _macaulay2_(self, macaulay2=None)\n         * groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * _magma_groebner_basis(self)\n         * _contains_(self, f)\n         * _macaulay2_groebner_basis(self)\n\n----------------------------------------------------------------------\n```\n\n\nThis patch does not increase the number of doctests very much but focuses on the quality of the doctests and documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2455\n\n",
+    "body": "Assignee: tba\n\nCC:  @ncalexan\n\nAfter the patch was applied:\n\n\n```\nSCORE devel/sage-docday2/sage/rings/polynomial/multi_polynomial_ideal.py: 88% (40 of 45)\n\nMissing doctests:\n         * redSB(func)\n         * wrapper(*args, **kwds)\n         * _variety(T, V, v=None)\n         * _macaulay2_(self, macaulay2=None)\n         * groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)\n```\n\n\nI cannot write Macaulay2 doctests right now because the optional SPKG fails to install. Groebner fan also has issues.\n\nOld:\n\n```\n----------------------------------------------------------------------\ndevel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\nSCORE devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py: 68% (32 of 47)\n\nMissing documentation:\n         * is_MPolynomialIdeal(x)\n         * __enter__(self)\n         * __exit__(self, type, value, tb)\n         * wrapper(*args, **kwds)\n         * f(x,y)\n         * _singular_groebner_basis(self)\n         * _variety(T, V, v=None)\n\n\nMissing doctests:\n         * __init__(self, singular=singular_default)\n         * redSB(func)\n         * dimension(self)\n         * genus(self)\n         * syzygy_module(self)\n         * reduced_basis(self)\n         * _macaulay2_(self, macaulay2=None)\n         * groebner_fan(self, is_groebner_basis=False, symmetry=None, verbose=False)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n         * _magma_groebner_basis(self)\n         * _contains_(self, f)\n         * _macaulay2_groebner_basis(self)\n\n----------------------------------------------------------------------\n```\n\n\nThis patch does not increase the number of doctests very much but focuses on the quality of the doctests and documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2455\n\n",
     "created_at": "2008-03-10T12:07:54Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_002455.json:
     "title": "[with patch, needs review] improve documentation for multivariate polynomial ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2455",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
 
-CC:  ncalexan
+CC:  @ncalexan
 
 After the patch was applied:
 
@@ -89,16 +89,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2455
 archive/issue_comments_016618.json:
 ```json
 {
-    "body": "Attachment [mpoly-ideal-docday.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-docday.patch) by malb created at 2008-03-10 12:08:11\n\napply against code repository",
+    "body": "Attachment [mpoly-ideal-docday.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-docday.patch) by @malb created at 2008-03-10 12:08:11\n\napply against code repository",
     "created_at": "2008-03-10T12:08:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2455#issuecomment-16618",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpoly-ideal-docday.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-docday.patch) by malb created at 2008-03-10 12:08:11
+Attachment [mpoly-ideal-docday.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-docday.patch) by @malb created at 2008-03-10 12:08:11
 
 apply against code repository
 
@@ -114,7 +114,7 @@ archive/issue_comments_016619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2455#issuecomment-16619",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -127,16 +127,16 @@ this patch adds a doctest for the groebner_fan method
 archive/issue_comments_016620.json:
 ```json
 {
-    "body": "Changing assignee from tba to malb.",
+    "body": "Changing assignee from tba to @malb.",
     "created_at": "2008-03-12T16:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2455#issuecomment-16620",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from tba to malb.
+Changing assignee from tba to @malb.
 
 
 
@@ -150,7 +150,7 @@ archive/issue_comments_016621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2455#issuecomment-16621",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -163,16 +163,16 @@ Changing status from new to assigned.
 archive/issue_comments_016622.json:
 ```json
 {
-    "body": "Attachment [mpoly-ideal-gfan.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-gfan.patch) by malb created at 2008-03-12 16:53:03",
+    "body": "Attachment [mpoly-ideal-gfan.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-gfan.patch) by @malb created at 2008-03-12 16:53:03",
     "created_at": "2008-03-12T16:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2455#issuecomment-16622",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpoly-ideal-gfan.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-gfan.patch) by malb created at 2008-03-12 16:53:03
+Attachment [mpoly-ideal-gfan.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-gfan.patch) by @malb created at 2008-03-12 16:53:03
 
 
 
@@ -186,7 +186,7 @@ archive/issue_comments_016623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2455#issuecomment-16623",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_016624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2455#issuecomment-16624",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_016625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2455#issuecomment-16625",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_016626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2455#issuecomment-16626",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -258,16 +258,16 @@ this is the UTF-8 free version of the earlier patch
 archive/issue_comments_016627.json:
 ```json
 {
-    "body": "Attachment [mpoly-ideal-docday-wo-utf8.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-docday-wo-utf8.patch) by malb created at 2008-03-12 18:42:36\n\nI've uploaded an UTF-8 free version of the patch. Unfortunately, the time doesn't seem right for Umlauts in Python yet. \"Umlauts \u00fcber alles\" postponed, I reckon.",
+    "body": "Attachment [mpoly-ideal-docday-wo-utf8.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-docday-wo-utf8.patch) by @malb created at 2008-03-12 18:42:36\n\nI've uploaded an UTF-8 free version of the patch. Unfortunately, the time doesn't seem right for Umlauts in Python yet. \"Umlauts \u00fcber alles\" postponed, I reckon.",
     "created_at": "2008-03-12T18:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2455#issuecomment-16627",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpoly-ideal-docday-wo-utf8.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-docday-wo-utf8.patch) by malb created at 2008-03-12 18:42:36
+Attachment [mpoly-ideal-docday-wo-utf8.patch](tarball://root/attachments/some-uuid/ticket2455/mpoly-ideal-docday-wo-utf8.patch) by @malb created at 2008-03-12 18:42:36
 
 I've uploaded an UTF-8 free version of the patch. Unfortunately, the time doesn't seem right for Umlauts in Python yet. "Umlauts über alles" postponed, I reckon.
 
@@ -283,7 +283,7 @@ archive/issue_comments_016628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2455",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2455#issuecomment-16628",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005025.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mhansen\n\nThis was posted to the mailing list about #4705:\n\n\n```\nI have been using TinyMCE for about three weeks now. My ultimate goal\nwould be to to do something along the lines that David Joyner mentions\nin a previous message (have students create worksheets that have\ncomments/interpretation between the cells).\n\nTinyMCE works very well as far as editing goes, and I didn't test all\nbuttons available in the tool bar. I think it would be a nice edition\nto Sage. It does not seem to affect how responsively the code is\nexecuted, but what I am doing is not very demanding.\n\nHowever, I noticed the following: (I'm using it in Firefox 3.0.5 in\nUbuntu 10.2. The Sage version is 3.2.2.)\n\n(1)\nIf I click the menu Action-Evaluate All, exceptions are thrown in\ncertain situations. The following is the sequence that will trigger\nit:\n     - Execute the code in some cells\n     - Create text using TinyMCE and save it.\n     - Do Action-Evaluate All\nThe problem does not appear to happen with worksheets that had been\nsaved in a previous Sage session, and then are opened in a new\nsession. Quitting the worksheet and reopening it also seems to fix the\nproblem, as long as there were no previous exceptions thrown. I'm not\nincluding a worksheet reproducing the problem because it seems to be\n\"dynamic\", it only occurs as one is working on the worksheet. I am\nattaching a text file with the output of the sage session.\n\n(2)\nIf one creates a link in TinyMCE (highlight text, use the link\nbutton), save the changes in the TinyMCE editor and then follow the\nlink, when returning to the page with the worksheet (using the\nbrowser's back button), the text that has just been typed disappears.\nIt reappears if the reload button in the browser is used. (So, it\nseems to be a problem of refreshing the cached page). The same happens\nif the HTML is directly edited to create the link. In my opinion, the\ndefault behavior on clicking a link in a worksheet should be to open\nit in another tab/window in the browser. The idea is that the links\nmight have reference to documentation, math references, etc, and users\nwill want to continue to do their math in Sage.\n\n(3)\nThis is more in the \"weirdness\" department. I noticed that, sometimes,\neach time I reopen a worksheet, a new empty cell is created at the\nbottom. I was not able to reproduce it consistently.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5025\n\n",
+    "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nThis was posted to the mailing list about #4705:\n\n\n```\nI have been using TinyMCE for about three weeks now. My ultimate goal\nwould be to to do something along the lines that David Joyner mentions\nin a previous message (have students create worksheets that have\ncomments/interpretation between the cells).\n\nTinyMCE works very well as far as editing goes, and I didn't test all\nbuttons available in the tool bar. I think it would be a nice edition\nto Sage. It does not seem to affect how responsively the code is\nexecuted, but what I am doing is not very demanding.\n\nHowever, I noticed the following: (I'm using it in Firefox 3.0.5 in\nUbuntu 10.2. The Sage version is 3.2.2.)\n\n(1)\nIf I click the menu Action-Evaluate All, exceptions are thrown in\ncertain situations. The following is the sequence that will trigger\nit:\n     - Execute the code in some cells\n     - Create text using TinyMCE and save it.\n     - Do Action-Evaluate All\nThe problem does not appear to happen with worksheets that had been\nsaved in a previous Sage session, and then are opened in a new\nsession. Quitting the worksheet and reopening it also seems to fix the\nproblem, as long as there were no previous exceptions thrown. I'm not\nincluding a worksheet reproducing the problem because it seems to be\n\"dynamic\", it only occurs as one is working on the worksheet. I am\nattaching a text file with the output of the sage session.\n\n(2)\nIf one creates a link in TinyMCE (highlight text, use the link\nbutton), save the changes in the TinyMCE editor and then follow the\nlink, when returning to the page with the worksheet (using the\nbrowser's back button), the text that has just been typed disappears.\nIt reappears if the reload button in the browser is used. (So, it\nseems to be a problem of refreshing the cached page). The same happens\nif the HTML is directly edited to create the link. In my opinion, the\ndefault behavior on clicking a link in a worksheet should be to open\nit in another tab/window in the browser. The idea is that the links\nmight have reference to documentation, math references, etc, and users\nwill want to continue to do their math in Sage.\n\n(3)\nThis is more in the \"weirdness\" department. I noticed that, sometimes,\neach time I reopen a worksheet, a new empty cell is created at the\nbottom. I was not able to reproduce it consistently.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5025\n\n",
     "created_at": "2009-01-19T13:55:59Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005025.json:
     "title": "tinymce issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5025",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  mhansen
+CC:  @mwhansen
 
 This was posted to the mailing list about #4705:
 
@@ -112,7 +112,7 @@ archive/issue_comments_038266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38266",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_038267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38267",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_038268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38268",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_038270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38270",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_038271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38271",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_038272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38272",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_038273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38273",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_038274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38274",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_038275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38275",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_038276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38276",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_038277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38277",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -381,16 +381,16 @@ I found one problem in the above patch.  I'm posting an updated patch soon.
 archive/issue_comments_038278.json:
 ```json
 {
-    "body": "Attachment [trac_5025-tinymce_bugfix.patch](tarball://root/attachments/some-uuid/ticket5025/trac_5025-tinymce_bugfix.patch) by jason created at 2009-01-28 17:09:57\n\nOkay, the bug should be fixed.  The only change is on line 3354 or so, where when inserting a text cell after all other cells, the previous patch called insert_new_cell_after, but should have called insert_new_text_cell_after.  The refreshed patch corrects this.",
+    "body": "Attachment [trac_5025-tinymce_bugfix.patch](tarball://root/attachments/some-uuid/ticket5025/trac_5025-tinymce_bugfix.patch) by @jasongrout created at 2009-01-28 17:09:57\n\nOkay, the bug should be fixed.  The only change is on line 3354 or so, where when inserting a text cell after all other cells, the previous patch called insert_new_cell_after, but should have called insert_new_text_cell_after.  The refreshed patch corrects this.",
     "created_at": "2009-01-28T17:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38278",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5025-tinymce_bugfix.patch](tarball://root/attachments/some-uuid/ticket5025/trac_5025-tinymce_bugfix.patch) by jason created at 2009-01-28 17:09:57
+Attachment [trac_5025-tinymce_bugfix.patch](tarball://root/attachments/some-uuid/ticket5025/trac_5025-tinymce_bugfix.patch) by @jasongrout created at 2009-01-28 17:09:57
 
 Okay, the bug should be fixed.  The only change is on line 3354 or so, where when inserting a text cell after all other cells, the previous patch called insert_new_cell_after, but should have called insert_new_text_cell_after.  The refreshed patch corrects this.
 
@@ -406,7 +406,7 @@ archive/issue_comments_038279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38279",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_038280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38280",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_038281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38281",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_038282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38282",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_038283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38283",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -499,16 +499,16 @@ I have no idea what is going on with kcrisman's system.  I'll dedicate some time
 archive/issue_comments_038284.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-29T06:39:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38284",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -562,7 +562,7 @@ archive/issue_comments_038287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5025#issuecomment-38287",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

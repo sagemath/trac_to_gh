@@ -3,7 +3,7 @@
 archive/issues_009287.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  wstein\n\nKeywords: doctest coverage\n\nThe bad files are\n\n* BSD.py 85% (6 of 7)\n* ell_egros.py 85% (6 of 7)\n* ell_modular_symbols.py 86% (13 of 15)\n* gp_cremona.py 85% (6 of 7)\n* gp_simon.py 50% (1 of 2)\n* mod5family.py 0% (0 of 1)\n* monsky_washnitzer.py 26% (28 of 107)\n* padic_height.py 0% (0 of 6) #deprecated\n* padic_lseries.py 59% (19 of 32)\n* padics.py 83% (10 of 12)\n* sea.py 0% (0 of 1)\n* sha_tate.py 80% (8 of 10)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9287\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  wstein\n\nKeywords: doctest coverage\n\nThe bad files are\n\n* BSD.py 85% (6 of 7)\n* ell_egros.py 85% (6 of 7)\n* ell_modular_symbols.py 86% (13 of 15)\n* gp_cremona.py 85% (6 of 7)\n* gp_simon.py 50% (1 of 2)\n* mod5family.py 0% (0 of 1)\n* monsky_washnitzer.py 26% (28 of 107)\n* padic_height.py 0% (0 of 6) #deprecated\n* padic_lseries.py 59% (19 of 32)\n* padics.py 83% (10 of 12)\n* sea.py 0% (0 of 1)\n* sha_tate.py 80% (8 of 10)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9287\n\n",
     "created_at": "2010-06-20T23:40:48Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_009287.json:
     "title": "improving doctest coverage for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9287",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 CC:  wstein
 
@@ -54,7 +54,7 @@ archive/issue_comments_087472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87472",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -73,16 +73,16 @@ So far I have dealt with
 archive/issue_comments_087473.json:
 ```json
 {
-    "body": "Attachment [trac_9287.coverage_for_elliptic_curves_part1.patch](tarball://root/attachments/some-uuid/ticket9287/trac_9287.coverage_for_elliptic_curves_part1.patch) by wuthrich created at 2010-06-20 23:45:24\n\nexported against 4.4.4.alpha0",
+    "body": "Attachment [trac_9287.coverage_for_elliptic_curves_part1.patch](tarball://root/attachments/some-uuid/ticket9287/trac_9287.coverage_for_elliptic_curves_part1.patch) by @categorie created at 2010-06-20 23:45:24\n\nexported against 4.4.4.alpha0",
     "created_at": "2010-06-20T23:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87473",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_9287.coverage_for_elliptic_curves_part1.patch](tarball://root/attachments/some-uuid/ticket9287/trac_9287.coverage_for_elliptic_curves_part1.patch) by wuthrich created at 2010-06-20 23:45:24
+Attachment [trac_9287.coverage_for_elliptic_curves_part1.patch](tarball://root/attachments/some-uuid/ticket9287/trac_9287.coverage_for_elliptic_curves_part1.patch) by @categorie created at 2010-06-20 23:45:24
 
 exported against 4.4.4.alpha0
 
@@ -98,7 +98,7 @@ archive/issue_comments_087474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87474",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_087475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87475",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -129,16 +129,16 @@ Changing status from new to needs_review.
 archive/issue_comments_087476.json:
 ```json
 {
-    "body": "Attachment [trac_9287.coverage_for_elliptic_curves_part2.patch](tarball://root/attachments/some-uuid/ticket9287/trac_9287.coverage_for_elliptic_curves_part2.patch) by wuthrich created at 2010-06-22 17:52:15\n\nThe second patch (indep of the first) takes care of\n\n* ell_modular_symbol\n* sha_tate\n* ell_torsion\n\nSee trac ticket #9313 of how to take care of padic_height.py\n\nThat is how far I will do improve the documentation so far. If someone else would like to improve it further either put it back to needs_work and continue the work here or (prefered by me) open a new ticket.",
+    "body": "Attachment [trac_9287.coverage_for_elliptic_curves_part2.patch](tarball://root/attachments/some-uuid/ticket9287/trac_9287.coverage_for_elliptic_curves_part2.patch) by @categorie created at 2010-06-22 17:52:15\n\nThe second patch (indep of the first) takes care of\n\n* ell_modular_symbol\n* sha_tate\n* ell_torsion\n\nSee trac ticket #9313 of how to take care of padic_height.py\n\nThat is how far I will do improve the documentation so far. If someone else would like to improve it further either put it back to needs_work and continue the work here or (prefered by me) open a new ticket.",
     "created_at": "2010-06-22T17:52:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87476",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_9287.coverage_for_elliptic_curves_part2.patch](tarball://root/attachments/some-uuid/ticket9287/trac_9287.coverage_for_elliptic_curves_part2.patch) by wuthrich created at 2010-06-22 17:52:15
+Attachment [trac_9287.coverage_for_elliptic_curves_part2.patch](tarball://root/attachments/some-uuid/ticket9287/trac_9287.coverage_for_elliptic_curves_part2.patch) by @categorie created at 2010-06-22 17:52:15
 
 The second patch (indep of the first) takes care of
 
@@ -162,7 +162,7 @@ archive/issue_comments_087477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87477",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_087478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87478",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_087479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87479",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

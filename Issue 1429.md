@@ -14,7 +14,7 @@ archive/issues_001429.json:
     "title": "spelling error in tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1429",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba

@@ -3,7 +3,7 @@
 archive/issues_009074.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  nthiery jhpalmieri jason\n\nExamples of recent progress at:\n\nhttp://wiki.sagemath.org/daysff/tkz-graphs\n\nIssue created by migration from https://trac.sagemath.org/ticket/9074\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nthiery @jhpalmieri @jasongrout\n\nExamples of recent progress at:\n\nhttp://wiki.sagemath.org/daysff/tkz-graphs\n\nIssue created by migration from https://trac.sagemath.org/ticket/9074\n\n",
     "created_at": "2010-05-28T05:33:11Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009074.json:
     "title": "Expand latex support for combinatorial graphs via tkz-graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9074",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  nthiery jhpalmieri jason
+CC:  @nthiery @jhpalmieri @jasongrout
 
 Examples of recent progress at:
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9074
 archive/issue_comments_084188.json:
 ```json
 {
-    "body": "Attachment [trac_9074-tkz-graph-latex-v1.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v1.patch) by rbeezer created at 2010-05-28 05:39:39\n\nWorking version, but needs doctest, some error trapping",
+    "body": "Attachment [trac_9074-tkz-graph-latex-v1.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v1.patch) by @rbeezer created at 2010-05-28 05:39:39\n\nWorking version, but needs doctest, some error trapping",
     "created_at": "2010-05-28T05:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84188",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9074-tkz-graph-latex-v1.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v1.patch) by rbeezer created at 2010-05-28 05:39:39
+Attachment [trac_9074-tkz-graph-latex-v1.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v1.patch) by @rbeezer created at 2010-05-28 05:39:39
 
 Working version, but needs doctest, some error trapping
 
@@ -61,7 +61,7 @@ archive/issue_comments_084189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84189",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -74,16 +74,16 @@ Functional, just needs doctests of final format
 archive/issue_comments_084190.json:
 ```json
 {
-    "body": "Attachment [tkz-cayley-c7.png](tarball://root/attachments/some-uuid/ticket9074/tkz-cayley-c7.png) by rbeezer created at 2010-05-30 06:28:09\n\nExample graphic of a Cayley graph",
+    "body": "Attachment [tkz-cayley-c7.png](tarball://root/attachments/some-uuid/ticket9074/tkz-cayley-c7.png) by @rbeezer created at 2010-05-30 06:28:09\n\nExample graphic of a Cayley graph",
     "created_at": "2010-05-30T06:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84190",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [tkz-cayley-c7.png](tarball://root/attachments/some-uuid/ticket9074/tkz-cayley-c7.png) by rbeezer created at 2010-05-30 06:28:09
+Attachment [tkz-cayley-c7.png](tarball://root/attachments/some-uuid/ticket9074/tkz-cayley-c7.png) by @rbeezer created at 2010-05-30 06:28:09
 
 Example graphic of a Cayley graph
 
@@ -99,7 +99,7 @@ archive/issue_comments_084191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84191",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -122,16 +122,16 @@ view(C)
 archive/issue_comments_084192.json:
 ```json
 {
-    "body": "Attachment [heawood-graph-latex.png](tarball://root/attachments/some-uuid/ticket9074/heawood-graph-latex.png) by rbeezer created at 2010-05-31 21:05:41\n\nImage file needed for documentation",
+    "body": "Attachment [heawood-graph-latex.png](tarball://root/attachments/some-uuid/ticket9074/heawood-graph-latex.png) by @rbeezer created at 2010-05-31 21:05:41\n\nImage file needed for documentation",
     "created_at": "2010-05-31T21:05:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84192",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [heawood-graph-latex.png](tarball://root/attachments/some-uuid/ticket9074/heawood-graph-latex.png) by rbeezer created at 2010-05-31 21:05:41
+Attachment [heawood-graph-latex.png](tarball://root/attachments/some-uuid/ticket9074/heawood-graph-latex.png) by @rbeezer created at 2010-05-31 21:05:41
 
 Image file needed for documentation
 
@@ -142,16 +142,16 @@ Image file needed for documentation
 archive/issue_comments_084193.json:
 ```json
 {
-    "body": "Attachment [trac_9074-tkz-graph-latex-v3.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v3.patch) by rbeezer created at 2010-05-31 21:06:05",
+    "body": "Attachment [trac_9074-tkz-graph-latex-v3.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v3.patch) by @rbeezer created at 2010-05-31 21:06:05",
     "created_at": "2010-05-31T21:06:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84193",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9074-tkz-graph-latex-v3.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v3.patch) by rbeezer created at 2010-05-31 21:06:05
+Attachment [trac_9074-tkz-graph-latex-v3.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v3.patch) by @rbeezer created at 2010-05-31 21:06:05
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_084194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84194",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_084195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84195",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_084196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84196",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_084197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84197",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_084198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84198",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_084199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84199",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -299,16 +299,16 @@ Sel-contained, including Heawood graph as binary file
 archive/issue_comments_084200.json:
 ```json
 {
-    "body": "Attachment [trac_9074-tkz-graph-latex-v4.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v4.patch) by rbeezer created at 2010-06-14 05:08:28\n\nNew version 4 patch is almost identical to v3.\n\nHeawood graph image file is now in the patch as a binary file, and will land in the media subdirectory, as suggested above.  The only other change is to have the link in the documentation point to the new home of the graphic file, and this has been tested through rebuilding the affected HTML documentation.\n\nThanks again for the help, John.\n\nRob",
+    "body": "Attachment [trac_9074-tkz-graph-latex-v4.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v4.patch) by @rbeezer created at 2010-06-14 05:08:28\n\nNew version 4 patch is almost identical to v3.\n\nHeawood graph image file is now in the patch as a binary file, and will land in the media subdirectory, as suggested above.  The only other change is to have the link in the documentation point to the new home of the graphic file, and this has been tested through rebuilding the affected HTML documentation.\n\nThanks again for the help, John.\n\nRob",
     "created_at": "2010-06-14T05:08:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84200",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9074-tkz-graph-latex-v4.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v4.patch) by rbeezer created at 2010-06-14 05:08:28
+Attachment [trac_9074-tkz-graph-latex-v4.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v4.patch) by @rbeezer created at 2010-06-14 05:08:28
 
 New version 4 patch is almost identical to v3.
 
@@ -330,7 +330,7 @@ archive/issue_comments_084201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84201",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_084202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84202",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_084203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84203",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -441,16 +441,16 @@ Apply on top of v4 patch
 archive/issue_comments_084204.json:
 ```json
 {
-    "body": "Attachment [trac_9074-tkz-graph-latex-v4-plus.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v4-plus.patch) by rbeezer created at 2010-07-24 06:57:34\n\nHi John,\n\nNice catch with the random order doctesting - see below.\n\n(1) \\LaTeX -> LaTeX and the two suggested edits have been made.\n\n(2) Big doctest failed with a random order because I was\nnot using a sorted version of the vertex list, so a change has\nbeen made to the code to always use a single sorted list.\n\nOnly the list really isn't sorted since graphs allow\nnearly arbitrary objects to be vertices.  So I removed\nthe relabeling of vertex 1 as a symbolic expression.  I'll\npursue this on sage-devel.  Doctest should now work\nconsistently, even under random ordering.\n\n(3)  Discovered a typo in the error checking for\n\"edge_label_placements\" since a doctest was raising\nan error (when it shouldn't have). That code has been fixed.\n\n(4)  I made the suggested change with the cached function.\nThen other doctests began to fail.  And that function\nitself began to fail doctests with a random order, and\nstill does despite restoring the original state.  So\nI'm afraid I don't get it on this one, and I'm not\nthe original author.  Can we move the two problems:\n(a) not in the docs, and (b) failing random tests;\nto another ticket (I'll do it)?\n\nI've run tests in the graph directory, built html\nand jsmath documentation.  I've attached a \"v4-plus\"\npatch so you can see the changes, it needs to go on\ntop of the v4 patch.\n\nThanks for all your careful work on this!\n\nRob",
+    "body": "Attachment [trac_9074-tkz-graph-latex-v4-plus.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v4-plus.patch) by @rbeezer created at 2010-07-24 06:57:34\n\nHi John,\n\nNice catch with the random order doctesting - see below.\n\n(1) \\LaTeX -> LaTeX and the two suggested edits have been made.\n\n(2) Big doctest failed with a random order because I was\nnot using a sorted version of the vertex list, so a change has\nbeen made to the code to always use a single sorted list.\n\nOnly the list really isn't sorted since graphs allow\nnearly arbitrary objects to be vertices.  So I removed\nthe relabeling of vertex 1 as a symbolic expression.  I'll\npursue this on sage-devel.  Doctest should now work\nconsistently, even under random ordering.\n\n(3)  Discovered a typo in the error checking for\n\"edge_label_placements\" since a doctest was raising\nan error (when it shouldn't have). That code has been fixed.\n\n(4)  I made the suggested change with the cached function.\nThen other doctests began to fail.  And that function\nitself began to fail doctests with a random order, and\nstill does despite restoring the original state.  So\nI'm afraid I don't get it on this one, and I'm not\nthe original author.  Can we move the two problems:\n(a) not in the docs, and (b) failing random tests;\nto another ticket (I'll do it)?\n\nI've run tests in the graph directory, built html\nand jsmath documentation.  I've attached a \"v4-plus\"\npatch so you can see the changes, it needs to go on\ntop of the v4 patch.\n\nThanks for all your careful work on this!\n\nRob",
     "created_at": "2010-07-24T06:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84204",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9074-tkz-graph-latex-v4-plus.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v4-plus.patch) by rbeezer created at 2010-07-24 06:57:34
+Attachment [trac_9074-tkz-graph-latex-v4-plus.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v4-plus.patch) by @rbeezer created at 2010-07-24 06:57:34
 
 Hi John,
 
@@ -502,7 +502,7 @@ archive/issue_comments_084205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84205",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -520,7 +520,7 @@ archive/issue_comments_084206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84206",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_084207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84207",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_084208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84208",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -569,16 +569,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_084209.json:
 ```json
 {
-    "body": "Attachment [trac_9074-tkz-graph-latex-v4-missing.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v4-missing.patch) by rbeezer created at 2010-07-27 19:06:19",
+    "body": "Attachment [trac_9074-tkz-graph-latex-v4-missing.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v4-missing.patch) by @rbeezer created at 2010-07-27 19:06:19",
     "created_at": "2010-07-27T19:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84209",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9074-tkz-graph-latex-v4-missing.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v4-missing.patch) by rbeezer created at 2010-07-27 19:06:19
+Attachment [trac_9074-tkz-graph-latex-v4-missing.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v4-missing.patch) by @rbeezer created at 2010-07-27 19:06:19
 
 
 
@@ -592,7 +592,7 @@ archive/issue_comments_084210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84210",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_084211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84211",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -634,7 +634,7 @@ archive/issue_comments_084212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84212",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -652,7 +652,7 @@ archive/issue_comments_084213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84213",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -685,7 +685,7 @@ archive/issue_comments_084214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84214",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -703,7 +703,7 @@ archive/issue_comments_084215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84215",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -725,7 +725,7 @@ archive/issue_comments_084216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84216",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -743,7 +743,7 @@ archive/issue_comments_084217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84217",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -756,16 +756,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_084218.json:
 ```json
 {
-    "body": "Attachment [trac_9074-tkz-graph-latex-v5.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v5.patch) by rbeezer created at 2010-10-18 18:56:05\n\nOK, should be ready to go, all wrapped up in the v5 patch.  Figured the changes are so small that I would just consolidate the 3 patches into one, hope that's not a problem.  The mis-spelled `copmpass` was part of a doctest, and so I had to change the source as well.  Also found another default argument of `black` without quotes.  Otherwise all the changes are exactly as suggested.  Passes all tests in `sage/graphs`.\n\nThanks for the very careful review.\n\nRob",
+    "body": "Attachment [trac_9074-tkz-graph-latex-v5.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v5.patch) by @rbeezer created at 2010-10-18 18:56:05\n\nOK, should be ready to go, all wrapped up in the v5 patch.  Figured the changes are so small that I would just consolidate the 3 patches into one, hope that's not a problem.  The mis-spelled `copmpass` was part of a doctest, and so I had to change the source as well.  Also found another default argument of `black` without quotes.  Otherwise all the changes are exactly as suggested.  Passes all tests in `sage/graphs`.\n\nThanks for the very careful review.\n\nRob",
     "created_at": "2010-10-18T18:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84218",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9074-tkz-graph-latex-v5.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v5.patch) by rbeezer created at 2010-10-18 18:56:05
+Attachment [trac_9074-tkz-graph-latex-v5.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v5.patch) by @rbeezer created at 2010-10-18 18:56:05
 
 OK, should be ready to go, all wrapped up in the v5 patch.  Figured the changes are so small that I would just consolidate the 3 patches into one, hope that's not a problem.  The mis-spelled `copmpass` was part of a doctest, and so I had to change the source as well.  Also found another default argument of `black` without quotes.  Otherwise all the changes are exactly as suggested.  Passes all tests in `sage/graphs`.
 
@@ -785,7 +785,7 @@ archive/issue_comments_084219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84219",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -803,7 +803,7 @@ archive/issue_comments_084220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84220",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -821,7 +821,7 @@ archive/issue_comments_084221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84221",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -836,16 +836,16 @@ Apply: trac_9074-tkz-graph-latex-v6.patch
 archive/issue_comments_084222.json:
 ```json
 {
-    "body": "Attachment [trac_9074-tkz-graph-latex-v6.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v6.patch) by jhpalmieri created at 2010-12-04 19:21:56\n\nStandalone patch, apply only this one",
+    "body": "Attachment [trac_9074-tkz-graph-latex-v6.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v6.patch) by @jhpalmieri created at 2010-12-04 19:21:56\n\nStandalone patch, apply only this one",
     "created_at": "2010-12-04T19:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84222",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9074-tkz-graph-latex-v6.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v6.patch) by jhpalmieri created at 2010-12-04 19:21:56
+Attachment [trac_9074-tkz-graph-latex-v6.patch](tarball://root/attachments/some-uuid/ticket9074/trac_9074-tkz-graph-latex-v6.patch) by @jhpalmieri created at 2010-12-04 19:21:56
 
 Standalone patch, apply only this one
 
@@ -861,7 +861,7 @@ archive/issue_comments_084223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84223",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -885,7 +885,7 @@ archive/issue_comments_084224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9074#issuecomment-84224",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002826.json:
     "title": "notebook -- in safari, pressing enter after showing the list of completions doesn't work.  You have to click.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2826",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2826
 archive/issue_comments_019404.json:
 ```json
 {
-    "body": "Attachment [sage-2826.patch](tarball://root/attachments/some-uuid/ticket2826/sage-2826.patch) by robertwb created at 2008-04-07 18:06:59\n\nWorks great for me.",
+    "body": "Attachment [sage-2826.patch](tarball://root/attachments/some-uuid/ticket2826/sage-2826.patch) by @robertwb created at 2008-04-07 18:06:59\n\nWorks great for me.",
     "created_at": "2008-04-07T18:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2826#issuecomment-19404",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [sage-2826.patch](tarball://root/attachments/some-uuid/ticket2826/sage-2826.patch) by robertwb created at 2008-04-07 18:06:59
+Attachment [sage-2826.patch](tarball://root/attachments/some-uuid/ticket2826/sage-2826.patch) by @robertwb created at 2008-04-07 18:06:59
 
 Works great for me.
 

@@ -14,7 +14,7 @@ archive/issues_005300.json:
     "title": "do #5291 -- don't save too many snapshots -- more efficiently",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5300",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_040772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5300#issuecomment-40772",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_040773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5300#issuecomment-40773",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_040774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5300#issuecomment-40774",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_040775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5300#issuecomment-40775",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_040776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5300",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5300#issuecomment-40776",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007078.json:
     "title": "SageNB -- Introspection does not format output properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7078",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
@@ -40,7 +40,7 @@ archive/issue_comments_058526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7078#issuecomment-58526",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -53,16 +53,16 @@ Fixes the formatting problems.
 archive/issue_comments_058527.json:
 ```json
 {
-    "body": "Attachment [trac_7078-introspection-formatting](tarball://root/attachments/some-uuid/ticket7078/trac_7078-introspection-formatting) by timdumol created at 2009-09-30 06:11:35\n\ntiny change to previous patch's EMBEDDED_MODE setting. William Stein.",
+    "body": "Attachment [trac_7078-introspection-formatting](tarball://root/attachments/some-uuid/ticket7078/trac_7078-introspection-formatting) by @TimDumol created at 2009-09-30 06:11:35\n\ntiny change to previous patch's EMBEDDED_MODE setting. William Stein.",
     "created_at": "2009-09-30T06:11:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7078#issuecomment-58527",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7078-introspection-formatting](tarball://root/attachments/some-uuid/ticket7078/trac_7078-introspection-formatting) by timdumol created at 2009-09-30 06:11:35
+Attachment [trac_7078-introspection-formatting](tarball://root/attachments/some-uuid/ticket7078/trac_7078-introspection-formatting) by @TimDumol created at 2009-09-30 06:11:35
 
 tiny change to previous patch's EMBEDDED_MODE setting. William Stein.
 
@@ -73,16 +73,16 @@ tiny change to previous patch's EMBEDDED_MODE setting. William Stein.
 archive/issue_comments_058528.json:
 ```json
 {
-    "body": "Attachment [trac_7078-EMBEDDED_MODE_setting_fix.patch](tarball://root/attachments/some-uuid/ticket7078/trac_7078-EMBEDDED_MODE_setting_fix.patch) by timdumol created at 2009-09-30 06:11:55\n\n#7078 Eliminated circular dependency in `sage.misc.misc`.",
+    "body": "Attachment [trac_7078-EMBEDDED_MODE_setting_fix.patch](tarball://root/attachments/some-uuid/ticket7078/trac_7078-EMBEDDED_MODE_setting_fix.patch) by @TimDumol created at 2009-09-30 06:11:55\n\n#7078 Eliminated circular dependency in `sage.misc.misc`.",
     "created_at": "2009-09-30T06:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7078#issuecomment-58528",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7078-EMBEDDED_MODE_setting_fix.patch](tarball://root/attachments/some-uuid/ticket7078/trac_7078-EMBEDDED_MODE_setting_fix.patch) by timdumol created at 2009-09-30 06:11:55
+Attachment [trac_7078-EMBEDDED_MODE_setting_fix.patch](tarball://root/attachments/some-uuid/ticket7078/trac_7078-EMBEDDED_MODE_setting_fix.patch) by @TimDumol created at 2009-09-30 06:11:55
 
 #7078 Eliminated circular dependency in `sage.misc.misc`.
 
@@ -93,16 +93,16 @@ Attachment [trac_7078-EMBEDDED_MODE_setting_fix.patch](tarball://root/attachment
 archive/issue_comments_058529.json:
 ```json
 {
-    "body": "Attachment [trac_7078-minor-fix.patch](tarball://root/attachments/some-uuid/ticket7078/trac_7078-minor-fix.patch) by was created at 2009-09-30 06:50:13",
+    "body": "Attachment [trac_7078-minor-fix.patch](tarball://root/attachments/some-uuid/ticket7078/trac_7078-minor-fix.patch) by @williamstein created at 2009-09-30 06:50:13",
     "created_at": "2009-09-30T06:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7078#issuecomment-58529",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7078-minor-fix.patch](tarball://root/attachments/some-uuid/ticket7078/trac_7078-minor-fix.patch) by was created at 2009-09-30 06:50:13
+Attachment [trac_7078-minor-fix.patch](tarball://root/attachments/some-uuid/ticket7078/trac_7078-minor-fix.patch) by @williamstein created at 2009-09-30 06:50:13
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_058530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7078#issuecomment-58530",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

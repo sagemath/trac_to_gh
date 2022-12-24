@@ -14,7 +14,7 @@ archive/issues_007652.json:
     "title": "Adds Linear Programming to the Constructions document",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7652",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: mvngu
@@ -41,7 +41,7 @@ archive/issue_comments_065447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7652#issuecomment-65447",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_065452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7652#issuecomment-65452",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_065453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7652#issuecomment-65453",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_065454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7652#issuecomment-65454",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

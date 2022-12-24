@@ -3,7 +3,7 @@
 archive/issues_008301.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  malb boothby\n\nType in\n\n```\nsage: b = random_matrix(GF(2),4,200); b[3] = b[0]; b.rank()\n```\n\nand get an absolutely stupendous segfault!\n\nFor the first time ever I finally get to use GF(2) matrix algebra for some actually interesting number theory research.  So I wrote a program that creates some fairly simple GF(2) matrices (using modular symbols), and tried the first somewhat nontrivial thing (computing the rank of a 4xn matrix) and got segfaults.  This is on 64-bit Ubuntu Linux.  Yikes.   So:\n\n1. These need to get fixed, obviously.\n\n2. Is there an easy way to completely turn off m4ri?  Seeing how easily it fell over, I don't trust it, and though it is fast I definitely want to rerun all my calculations m4ri free once I have everything setup.  These are calculations for a published paper that will play a key role in a \"proof by computer\" of a potentially important result in number theory.  \n\nRegarding 2, here is a way that I seem to be able to get a matrix mod n dense, and I can then compute the rank, which in this case uses linbox, and is probably fast enough for my application:\n\n```\nsage: c = sage.matrix.matrix_modn_dense.Matrix_modn_dense(b.parent(),b.list(),False,True)\nsage: c.rank()\n3\nsage: timeit('c.rank()')\n625 loops, best of 3: 534 ns per loop\nsage: timeit('c._clear_cache(); c.rank()')\n625 loops, best of 3: 161 \u00b5s per loop\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8301\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @malb boothby\n\nType in\n\n```\nsage: b = random_matrix(GF(2),4,200); b[3] = b[0]; b.rank()\n```\n\nand get an absolutely stupendous segfault!\n\nFor the first time ever I finally get to use GF(2) matrix algebra for some actually interesting number theory research.  So I wrote a program that creates some fairly simple GF(2) matrices (using modular symbols), and tried the first somewhat nontrivial thing (computing the rank of a 4xn matrix) and got segfaults.  This is on 64-bit Ubuntu Linux.  Yikes.   So:\n\n1. These need to get fixed, obviously.\n\n2. Is there an easy way to completely turn off m4ri?  Seeing how easily it fell over, I don't trust it, and though it is fast I definitely want to rerun all my calculations m4ri free once I have everything setup.  These are calculations for a published paper that will play a key role in a \"proof by computer\" of a potentially important result in number theory.  \n\nRegarding 2, here is a way that I seem to be able to get a matrix mod n dense, and I can then compute the rank, which in this case uses linbox, and is probably fast enough for my application:\n\n```\nsage: c = sage.matrix.matrix_modn_dense.Matrix_modn_dense(b.parent(),b.list(),False,True)\nsage: c.rank()\n3\nsage: timeit('c.rank()')\n625 loops, best of 3: 534 ns per loop\nsage: timeit('c._clear_cache(); c.rank()')\n625 loops, best of 3: 161 \u00b5s per loop\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8301\n\n",
     "created_at": "2010-02-19T02:21:08Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_008301.json:
     "title": "segfault in m4ri",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8301",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  malb boothby
+CC:  @malb boothby
 
 Type in
 
@@ -65,7 +65,7 @@ archive/issue_comments_073527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73527",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_073528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73528",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_073529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73529",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_073530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73530",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_073531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73531",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_073532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73532",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_073533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73533",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_073534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73534",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_073537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73537",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_073538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73538",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_073539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73539",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_073540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73540",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_073541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73541",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_073542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8301#issuecomment-73542",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

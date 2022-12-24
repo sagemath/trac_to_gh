@@ -14,7 +14,7 @@ archive/issues_008805.json:
     "title": "Bring doctest for sage/functions folder to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8805",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: mvngu
@@ -46,7 +46,7 @@ archive/issue_comments_080792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8805#issuecomment-80792",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_080793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8805#issuecomment-80793",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -77,16 +77,16 @@ Changing status from new to needs_review.
 archive/issue_comments_080794.json:
 ```json
 {
-    "body": "Attachment [trac_8805-functions-dir-doctest.patch](tarball://root/attachments/some-uuid/ticket8805/trac_8805-functions-dir-doctest.patch) by kcrisman created at 2010-04-30 11:24:17\n\nThis only adds doctests, and does not address any TODOs in the files.",
+    "body": "Attachment [trac_8805-functions-dir-doctest.patch](tarball://root/attachments/some-uuid/ticket8805/trac_8805-functions-dir-doctest.patch) by @kcrisman created at 2010-04-30 11:24:17\n\nThis only adds doctests, and does not address any TODOs in the files.",
     "created_at": "2010-04-30T11:24:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8805#issuecomment-80794",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_8805-functions-dir-doctest.patch](tarball://root/attachments/some-uuid/ticket8805/trac_8805-functions-dir-doctest.patch) by kcrisman created at 2010-04-30 11:24:17
+Attachment [trac_8805-functions-dir-doctest.patch](tarball://root/attachments/some-uuid/ticket8805/trac_8805-functions-dir-doctest.patch) by @kcrisman created at 2010-04-30 11:24:17
 
 This only adds doctests, and does not address any TODOs in the files.
 
@@ -187,7 +187,7 @@ archive/issue_comments_080796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8805#issuecomment-80796",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_080797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8805#issuecomment-80797",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

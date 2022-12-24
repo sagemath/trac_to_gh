@@ -14,7 +14,7 @@ archive/issues_003254.json:
     "title": "[with patch, needs review] improvements and doctests for CachedFunction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3254",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3254
 archive/issue_comments_022514.json:
 ```json
 {
-    "body": "Attachment [3254.patch](tarball://root/attachments/some-uuid/ticket3254/3254.patch) by malb created at 2008-06-03 14:33:35\n\nVery cool, I want this. Is `CachedFunction` the right name though? Shouldn't it be `cached_function`? I think there is a different style convention for the persistent and the cached functions which is a bummer. This is not a blocker for merging this code though, since it wasn't introduced by this patch.",
+    "body": "Attachment [3254.patch](tarball://root/attachments/some-uuid/ticket3254/3254.patch) by @malb created at 2008-06-03 14:33:35\n\nVery cool, I want this. Is `CachedFunction` the right name though? Shouldn't it be `cached_function`? I think there is a different style convention for the persistent and the cached functions which is a bummer. This is not a blocker for merging this code though, since it wasn't introduced by this patch.",
     "created_at": "2008-06-03T14:33:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3254",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3254#issuecomment-22514",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [3254.patch](tarball://root/attachments/some-uuid/ticket3254/3254.patch) by malb created at 2008-06-03 14:33:35
+Attachment [3254.patch](tarball://root/attachments/some-uuid/ticket3254/3254.patch) by @malb created at 2008-06-03 14:33:35
 
 Very cool, I want this. Is `CachedFunction` the right name though? Shouldn't it be `cached_function`? I think there is a different style convention for the persistent and the cached functions which is a bummer. This is not a blocker for merging this code though, since it wasn't introduced by this patch.
 

@@ -3,7 +3,7 @@
 archive/issues_005606.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt's really a shame Sage can't produce graphics like http://commons.wikimedia.org/wiki/User:Jan_Homann/Mathematics yet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5606\n\n",
+    "body": "Assignee: @williamstein\n\nIt's really a shame Sage can't produce graphics like http://commons.wikimedia.org/wiki/User:Jan_Homann/Mathematics yet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5606\n\n",
     "created_at": "2009-03-25T03:50:59Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005606.json:
     "title": "complex color plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5606",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It's really a shame Sage can't produce graphics like http://commons.wikimedia.org/wiki/User:Jan_Homann/Mathematics yet. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5606
 archive/issue_comments_043750.json:
 ```json
 {
-    "body": "Attachment [zeta.png](tarball://root/attachments/some-uuid/ticket5606/zeta.png) by robertwb created at 2009-03-25 03:59:52",
+    "body": "Attachment [zeta.png](tarball://root/attachments/some-uuid/ticket5606/zeta.png) by @robertwb created at 2009-03-25 03:59:52",
     "created_at": "2009-03-25T03:59:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5606#issuecomment-43750",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [zeta.png](tarball://root/attachments/some-uuid/ticket5606/zeta.png) by robertwb created at 2009-03-25 03:59:52
+Attachment [zeta.png](tarball://root/attachments/some-uuid/ticket5606/zeta.png) by @robertwb created at 2009-03-25 03:59:52
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_043751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5606#issuecomment-43751",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_043752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5606#issuecomment-43752",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_043753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5606#issuecomment-43753",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -212,16 +212,16 @@ Michael
 archive/issue_comments_043756.json:
 ```json
 {
-    "body": "Attachment [5606-complex-plot.patch](tarball://root/attachments/some-uuid/ticket5606/5606-complex-plot.patch) by robertwb created at 2009-04-10 06:41:42",
+    "body": "Attachment [5606-complex-plot.patch](tarball://root/attachments/some-uuid/ticket5606/5606-complex-plot.patch) by @robertwb created at 2009-04-10 06:41:42",
     "created_at": "2009-04-10T06:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5606#issuecomment-43756",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5606-complex-plot.patch](tarball://root/attachments/some-uuid/ticket5606/5606-complex-plot.patch) by robertwb created at 2009-04-10 06:41:42
+Attachment [5606-complex-plot.patch](tarball://root/attachments/some-uuid/ticket5606/5606-complex-plot.patch) by @robertwb created at 2009-04-10 06:41:42
 
 
 
@@ -235,7 +235,7 @@ archive/issue_comments_043757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5606#issuecomment-43757",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_043758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5606#issuecomment-43758",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_043760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5606#issuecomment-43760",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

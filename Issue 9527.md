@@ -3,7 +3,7 @@
 archive/issues_009527.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCC:  malb\n\nWhen doing `sage -sh`, the result is very, very confusing, since it has the SAGE_ROOT path displayed unlabeled, which causes confusion, and does not show the current path, which also causes confusion.  This patch adds a label and the current path, to help reduce confusion some.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9527\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @malb\n\nWhen doing `sage -sh`, the result is very, very confusing, since it has the SAGE_ROOT path displayed unlabeled, which causes confusion, and does not show the current path, which also causes confusion.  This patch adds a label and the current path, to help reduce confusion some.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9527\n\n",
     "created_at": "2010-07-17T11:55:26Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_009527.json:
     "title": "improve \"sage -sh\" prompt so it doesn't confuse everybody",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9527",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
-CC:  malb
+CC:  @malb
 
 When doing `sage -sh`, the result is very, very confusing, since it has the SAGE_ROOT path displayed unlabeled, which causes confusion, and does not show the current path, which also causes confusion.  This patch adds a label and the current path, to help reduce confusion some.
 
@@ -39,7 +39,7 @@ archive/issue_comments_091649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91649",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_091650.json:
 ```json
 {
-    "body": "Attachment [trac_9527.patch](tarball://root/attachments/some-uuid/ticket9527/trac_9527.patch) by was created at 2010-07-17 13:03:03\n\nfix SAGE_ROOT (a separate bug, I guess)",
+    "body": "Attachment [trac_9527.patch](tarball://root/attachments/some-uuid/ticket9527/trac_9527.patch) by @williamstein created at 2010-07-17 13:03:03\n\nfix SAGE_ROOT (a separate bug, I guess)",
     "created_at": "2010-07-17T13:03:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91650",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9527.patch](tarball://root/attachments/some-uuid/ticket9527/trac_9527.patch) by was created at 2010-07-17 13:03:03
+Attachment [trac_9527.patch](tarball://root/attachments/some-uuid/ticket9527/trac_9527.patch) by @williamstein created at 2010-07-17 13:03:03
 
 fix SAGE_ROOT (a separate bug, I guess)
 
@@ -77,7 +77,7 @@ archive/issue_comments_091651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91651",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_091652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91652",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_091653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91653",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_091654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91654",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

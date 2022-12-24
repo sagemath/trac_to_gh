@@ -3,7 +3,7 @@
 archive/issues_005852.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif kini\n\nCurrently, `$SAGE_ROOT/sage` uses (first among other alternate methods) `readlink -n` to detect the directory where the script lives (that's $SAGE_ROOT), but it should use `readlink -nf` to expand symlinks recursively.\n\nOtherwise, the symlink expansion may not be completely done, and `$SAGE_ROOT` could end up with a non-canonical dirname, which leads to issues with testing.\n\nHere's a way to reproduce an issue with the current script. For the example, my sage-3.4 installation lives in `/home/sage/sage-3.4`, and here's what happened to me:\n\n```\n/home/sage$ md5sum sage-3.4/sage\n4153919efe1edcd34ad7fa193122d679  sage-3.4/sage\n/home/sage$ ln -s sage-3.4 sage-3.4-symlink\n/home/sage$ ln -sf /home/sage/sage-3.4-symlink/sage /home/tornaria/bin/sage\n/home/sage$ type sage\nsage is hashed (/home/tornaria/bin/sage)\n/home/sage$ readlink `type -p sage`\n/home/sage/sage-3.4-symlink/sage\n/home/sage$ readlink -f `type -p sage`\n/home/sage/sage-3.4/sage\n```\n\n\nAs you can see, `readlink -n` expands once but doesn't cannonicalize the path to the `sage` script. And here's the symptom:\n\n```\n/home/sage$ sage -t sage-3.4/devel/sage-main/sage/all.py\nsage -t  \"sage-3.4/devel/sage-main/sage/all.py\"             \n  File \"./all.py\", line 18\n    from sage-3.4/devel/sage-main/sage/all import *\n             ^\nSyntaxError: invalid syntax\n\n\t [0.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"sage-3.4/devel/sage-main/sage/all.py\"\nTotal time for all tests: 0.3 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5852\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @kini\n\nCurrently, `$SAGE_ROOT/sage` uses (first among other alternate methods) `readlink -n` to detect the directory where the script lives (that's $SAGE_ROOT), but it should use `readlink -nf` to expand symlinks recursively.\n\nOtherwise, the symlink expansion may not be completely done, and `$SAGE_ROOT` could end up with a non-canonical dirname, which leads to issues with testing.\n\nHere's a way to reproduce an issue with the current script. For the example, my sage-3.4 installation lives in `/home/sage/sage-3.4`, and here's what happened to me:\n\n```\n/home/sage$ md5sum sage-3.4/sage\n4153919efe1edcd34ad7fa193122d679  sage-3.4/sage\n/home/sage$ ln -s sage-3.4 sage-3.4-symlink\n/home/sage$ ln -sf /home/sage/sage-3.4-symlink/sage /home/tornaria/bin/sage\n/home/sage$ type sage\nsage is hashed (/home/tornaria/bin/sage)\n/home/sage$ readlink `type -p sage`\n/home/sage/sage-3.4-symlink/sage\n/home/sage$ readlink -f `type -p sage`\n/home/sage/sage-3.4/sage\n```\n\n\nAs you can see, `readlink -n` expands once but doesn't cannonicalize the path to the `sage` script. And here's the symptom:\n\n```\n/home/sage$ sage -t sage-3.4/devel/sage-main/sage/all.py\nsage -t  \"sage-3.4/devel/sage-main/sage/all.py\"             \n  File \"./all.py\", line 18\n    from sage-3.4/devel/sage-main/sage/all import *\n             ^\nSyntaxError: invalid syntax\n\n\t [0.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"sage-3.4/devel/sage-main/sage/all.py\"\nTotal time for all tests: 0.3 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5852\n\n",
     "created_at": "2009-04-22T12:39:58Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005852.json:
     "title": "[with patch, needs review] the detection of SAGE_ROOT in $SAGE_ROOT/sage script should expand symlinks recursively",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5852",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 Assignee: tbd
 
-CC:  leif kini
+CC:  @nexttime @kini
 
 Currently, `$SAGE_ROOT/sage` uses (first among other alternate methods) `readlink -n` to detect the directory where the script lives (that's $SAGE_ROOT), but it should use `readlink -nf` to expand symlinks recursively.
 
@@ -74,16 +74,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5852
 archive/issue_comments_046176.json:
 ```json
 {
-    "body": "Changing assignee from tbd to tornaria.",
+    "body": "Changing assignee from tbd to @tornaria.",
     "created_at": "2009-04-22T12:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46176",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Changing assignee from tbd to tornaria.
+Changing assignee from tbd to @tornaria.
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_046177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46177",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_046178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46178",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_046179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46179",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -163,16 +163,16 @@ On systems where "readlink -f" is supported, use that so the path for $SAGE_ROOT
 archive/issue_comments_046180.json:
 ```json
 {
-    "body": "Attachment [trac_5852.patch](tarball://root/attachments/some-uuid/ticket5852/trac_5852.patch) by nthiery created at 2009-04-28 00:18:36\n\nReplying to [comment:1 tornaria]:\n> Patching `$SAGE_ROOT/sage` with this:\n> {{{\n> --- sage-3.4/sage.orig\t2009-04-22 01:45:48.000000000 -0300\n> +++ sage-3.4/sage\t2009-04-22 09:37:27.000000000 -0300\n> `@``@` -14,6 +14,7 `@``@`\n>  fi\n>  \n>  if [ \"$SAGE_ROOT\" = \".....\" ];  then\n> +    SAGE_ROOT=`readlink -nf \"$0\" 2> /dev/null` || \\\n>      SAGE_ROOT=`readlink -n \"$0\" 2> /dev/null` || \\\n>      SAGE_ROOT=`realpath    \"$0\" 2> /dev/null` || \\\n>      SAGE_ROOT=\"$0\"\n> }}}\n> fixes the issue, since now `$SAGE_ROOT` is correct.\n> \n> According to mabshoff, `readlink -f` doesn't work on some BSD; that's why I left the `readlink -n` test in the second line, but this should of course be tested on those BSD to make sure it doesn't cause a regression.\n\nI can confirm that it does not work on MacOS X.10.4.11 (e.g. Anne Schilling's machine)\n\nA fix would be most welcome, as this makes sage -t make false reports of broken test files.",
+    "body": "Attachment [trac_5852.patch](tarball://root/attachments/some-uuid/ticket5852/trac_5852.patch) by @nthiery created at 2009-04-28 00:18:36\n\nReplying to [comment:1 tornaria]:\n> Patching `$SAGE_ROOT/sage` with this:\n> {{{\n> --- sage-3.4/sage.orig\t2009-04-22 01:45:48.000000000 -0300\n> +++ sage-3.4/sage\t2009-04-22 09:37:27.000000000 -0300\n> `@``@` -14,6 +14,7 `@``@`\n>  fi\n>  \n>  if [ \"$SAGE_ROOT\" = \".....\" ];  then\n> +    SAGE_ROOT=`readlink -nf \"$0\" 2> /dev/null` || \\\n>      SAGE_ROOT=`readlink -n \"$0\" 2> /dev/null` || \\\n>      SAGE_ROOT=`realpath    \"$0\" 2> /dev/null` || \\\n>      SAGE_ROOT=\"$0\"\n> }}}\n> fixes the issue, since now `$SAGE_ROOT` is correct.\n> \n> According to mabshoff, `readlink -f` doesn't work on some BSD; that's why I left the `readlink -n` test in the second line, but this should of course be tested on those BSD to make sure it doesn't cause a regression.\n\nI can confirm that it does not work on MacOS X.10.4.11 (e.g. Anne Schilling's machine)\n\nA fix would be most welcome, as this makes sage -t make false reports of broken test files.",
     "created_at": "2009-04-28T00:18:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46180",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_5852.patch](tarball://root/attachments/some-uuid/ticket5852/trac_5852.patch) by nthiery created at 2009-04-28 00:18:36
+Attachment [trac_5852.patch](tarball://root/attachments/some-uuid/ticket5852/trac_5852.patch) by @nthiery created at 2009-04-28 00:18:36
 
 Replying to [comment:1 tornaria]:
 > Patching `$SAGE_ROOT/sage` with this:
@@ -208,7 +208,7 @@ archive/issue_comments_046181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46181",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_046182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46182",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_046183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46183",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_046184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46184",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_046185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46185",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_046186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46186",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_046187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46187",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_046188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46188",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_046189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46189",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_046190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46190",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -566,7 +566,7 @@ archive/issue_comments_046191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46191",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -604,7 +604,7 @@ archive/issue_comments_046192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46192",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -622,7 +622,7 @@ archive/issue_comments_046193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46193",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -640,7 +640,7 @@ archive/issue_comments_046194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46194",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -658,7 +658,7 @@ archive/issue_comments_046195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46195",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_046196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46196",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -700,16 +700,16 @@ Since `os.path.realpath` is used twice, shouldn't this be okay?  If not, another
 archive/issue_comments_046197.json:
 ```json
 {
-    "body": "Attachment [realpath_bash.sh](tarball://root/attachments/some-uuid/ticket5852/realpath_bash.sh) by jdemeyer created at 2011-08-19 17:31:34\n\nShell script replacement for \"readlink -f\"",
+    "body": "Attachment [realpath_bash.sh](tarball://root/attachments/some-uuid/ticket5852/realpath_bash.sh) by @jdemeyer created at 2011-08-19 17:31:34\n\nShell script replacement for \"readlink -f\"",
     "created_at": "2011-08-19T17:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46197",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [realpath_bash.sh](tarball://root/attachments/some-uuid/ticket5852/realpath_bash.sh) by jdemeyer created at 2011-08-19 17:31:34
+Attachment [realpath_bash.sh](tarball://root/attachments/some-uuid/ticket5852/realpath_bash.sh) by @jdemeyer created at 2011-08-19 17:31:34
 
 Shell script replacement for "readlink -f"
 
@@ -720,16 +720,16 @@ Shell script replacement for "readlink -f"
 archive/issue_comments_046198.json:
 ```json
 {
-    "body": "Changing assignee from tornaria to jdemeyer.",
+    "body": "Changing assignee from @tornaria to @jdemeyer.",
     "created_at": "2011-08-23T09:14:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46198",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from tornaria to jdemeyer.
+Changing assignee from @tornaria to @jdemeyer.
 
 
 
@@ -743,7 +743,7 @@ archive/issue_comments_046199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46199",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -761,7 +761,7 @@ archive/issue_comments_046200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46200",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -780,16 +780,16 @@ I also noticed that `data/extcode/sage/ext/mac-app/start-sage.sh` has its own `S
 archive/issue_comments_046201.json:
 ```json
 {
-    "body": "Attachment [resolvelinks.sh](tarball://root/attachments/some-uuid/ticket5852/resolvelinks.sh) by jdemeyer created at 2011-08-23 12:01:55\n\nShell script replacement for \"readlink -f\"",
+    "body": "Attachment [resolvelinks.sh](tarball://root/attachments/some-uuid/ticket5852/resolvelinks.sh) by @jdemeyer created at 2011-08-23 12:01:55\n\nShell script replacement for \"readlink -f\"",
     "created_at": "2011-08-23T12:01:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46201",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [resolvelinks.sh](tarball://root/attachments/some-uuid/ticket5852/resolvelinks.sh) by jdemeyer created at 2011-08-23 12:01:55
+Attachment [resolvelinks.sh](tarball://root/attachments/some-uuid/ticket5852/resolvelinks.sh) by @jdemeyer created at 2011-08-23 12:01:55
 
 Shell script replacement for "readlink -f"
 
@@ -805,7 +805,7 @@ archive/issue_comments_046202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46202",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -823,7 +823,7 @@ archive/issue_comments_046203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46203",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -848,7 +848,7 @@ archive/issue_comments_046204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46204",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -874,7 +874,7 @@ archive/issue_comments_046205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46205",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -892,7 +892,7 @@ archive/issue_comments_046206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46206",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -920,7 +920,7 @@ archive/issue_comments_046207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46207",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -940,16 +940,16 @@ Because `resolvelinks` resolves symbolic links in the `sage` executable name, wh
 archive/issue_comments_046208.json:
 ```json
 {
-    "body": "Attachment [5852_sage_root.patch](tarball://root/attachments/some-uuid/ticket5852/5852_sage_root.patch) by jdemeyer created at 2011-10-30 13:08:20\n\nPatch for $SAGE_ROOT/sage, SAGE_ROOT repository",
+    "body": "Attachment [5852_sage_root.patch](tarball://root/attachments/some-uuid/ticket5852/5852_sage_root.patch) by @jdemeyer created at 2011-10-30 13:08:20\n\nPatch for $SAGE_ROOT/sage, SAGE_ROOT repository",
     "created_at": "2011-10-30T13:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46208",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [5852_sage_root.patch](tarball://root/attachments/some-uuid/ticket5852/5852_sage_root.patch) by jdemeyer created at 2011-10-30 13:08:20
+Attachment [5852_sage_root.patch](tarball://root/attachments/some-uuid/ticket5852/5852_sage_root.patch) by @jdemeyer created at 2011-10-30 13:08:20
 
 Patch for $SAGE_ROOT/sage, SAGE_ROOT repository
 
@@ -960,16 +960,16 @@ Patch for $SAGE_ROOT/sage, SAGE_ROOT repository
 archive/issue_comments_046209.json:
 ```json
 {
-    "body": "Attachment [5852_scripts.patch](tarball://root/attachments/some-uuid/ticket5852/5852_scripts.patch) by jdemeyer created at 2011-10-30 13:08:29\n\nPatch for local/bin/sage-env, SCRIPTS repository",
+    "body": "Attachment [5852_scripts.patch](tarball://root/attachments/some-uuid/ticket5852/5852_scripts.patch) by @jdemeyer created at 2011-10-30 13:08:29\n\nPatch for local/bin/sage-env, SCRIPTS repository",
     "created_at": "2011-10-30T13:08:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46209",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [5852_scripts.patch](tarball://root/attachments/some-uuid/ticket5852/5852_scripts.patch) by jdemeyer created at 2011-10-30 13:08:29
+Attachment [5852_scripts.patch](tarball://root/attachments/some-uuid/ticket5852/5852_scripts.patch) by @jdemeyer created at 2011-10-30 13:08:29
 
 Patch for local/bin/sage-env, SCRIPTS repository
 
@@ -985,7 +985,7 @@ archive/issue_comments_046210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46210",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1017,7 +1017,7 @@ archive/issue_comments_046211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46211",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1042,7 +1042,7 @@ archive/issue_comments_046212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46212",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1060,7 +1060,7 @@ archive/issue_comments_046213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46213",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1086,7 +1086,7 @@ archive/issue_comments_046214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46214",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1104,7 +1104,7 @@ archive/issue_comments_046215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46215",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1122,7 +1122,7 @@ archive/issue_comments_046216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46216",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1140,7 +1140,7 @@ archive/issue_comments_046217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46217",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1166,16 +1166,16 @@ But it seems `bash` always supports `pwd -P` as shell builtin, so we are safe.
 archive/issue_comments_046218.json:
 ```json
 {
-    "body": "Attachment [5852_doc.patch](tarball://root/attachments/some-uuid/ticket5852/5852_doc.patch) by jdemeyer created at 2011-11-18 09:09:12",
+    "body": "Attachment [5852_doc.patch](tarball://root/attachments/some-uuid/ticket5852/5852_doc.patch) by @jdemeyer created at 2011-11-18 09:09:12",
     "created_at": "2011-11-18T09:09:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46218",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [5852_doc.patch](tarball://root/attachments/some-uuid/ticket5852/5852_doc.patch) by jdemeyer created at 2011-11-18 09:09:12
+Attachment [5852_doc.patch](tarball://root/attachments/some-uuid/ticket5852/5852_doc.patch) by @jdemeyer created at 2011-11-18 09:09:12
 
 
 
@@ -1189,7 +1189,7 @@ archive/issue_comments_046219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46219",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1207,7 +1207,7 @@ archive/issue_comments_046220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46220",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1220,16 +1220,16 @@ This looks good to me.  I'm attaching a referee patch for the documentation part
 archive/issue_comments_046221.json:
 ```json
 {
-    "body": "Attachment [trac_5852-doc-referee.patch](tarball://root/attachments/some-uuid/ticket5852/trac_5852-doc-referee.patch) by jhpalmieri created at 2011-11-23 17:50:14\n\nmain sage repo",
+    "body": "Attachment [trac_5852-doc-referee.patch](tarball://root/attachments/some-uuid/ticket5852/trac_5852-doc-referee.patch) by @jhpalmieri created at 2011-11-23 17:50:14\n\nmain sage repo",
     "created_at": "2011-11-23T17:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46221",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_5852-doc-referee.patch](tarball://root/attachments/some-uuid/ticket5852/trac_5852-doc-referee.patch) by jhpalmieri created at 2011-11-23 17:50:14
+Attachment [trac_5852-doc-referee.patch](tarball://root/attachments/some-uuid/ticket5852/trac_5852-doc-referee.patch) by @jhpalmieri created at 2011-11-23 17:50:14
 
 main sage repo
 
@@ -1245,7 +1245,7 @@ archive/issue_comments_046222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46222",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1263,7 +1263,7 @@ archive/issue_comments_046223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5852#issuecomment-46223",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

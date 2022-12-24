@@ -14,7 +14,7 @@ archive/issues_006512.json:
     "title": "[with patch, needs review] Link to jsMath's easy/load.js only if the documentation is built with --jsmath",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6512",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tba
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6512
 archive/issue_comments_053053.json:
 ```json
 {
-    "body": "Attachment [trac_6512_jsmath_fix.patch](tarball://root/attachments/some-uuid/ticket6512/trac_6512_jsmath_fix.patch) by mpatel created at 2009-07-11 16:23:58",
+    "body": "Attachment [trac_6512_jsmath_fix.patch](tarball://root/attachments/some-uuid/ticket6512/trac_6512_jsmath_fix.patch) by @qed777 created at 2009-07-11 16:23:58",
     "created_at": "2009-07-11T16:23:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6512#issuecomment-53053",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6512_jsmath_fix.patch](tarball://root/attachments/some-uuid/ticket6512/trac_6512_jsmath_fix.patch) by mpatel created at 2009-07-11 16:23:58
+Attachment [trac_6512_jsmath_fix.patch](tarball://root/attachments/some-uuid/ticket6512/trac_6512_jsmath_fix.patch) by @qed777 created at 2009-07-11 16:23:58
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_053054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6512#issuecomment-53054",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_053055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6512#issuecomment-53055",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_053056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6512#issuecomment-53056",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_053059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6512",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6512#issuecomment-53059",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

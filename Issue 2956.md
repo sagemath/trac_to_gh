@@ -3,7 +3,7 @@
 archive/issues_002956.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  mjo\n\nLong exponents are silently truncated to word-size exponents:\n\n```\nsage: K.<x,y> = AA[]\nsage: x^(2^64 + 12345)\nx^12345\n```\n\n\nIn one test, I also saw a crash, but I can't reproduce it.\n\n```\nsage: K.<x,y> = ZZ[]\nsage: (x^12345)^54321\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\n...\n```\n\n(The crash was on 32-bit x86 Debian testing.  The first test fails with the same answer on both 32-bit and 64-bit x86.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2956\n\n",
+    "body": "Assignee: somebody\n\nCC:  @orlitzky\n\nLong exponents are silently truncated to word-size exponents:\n\n```\nsage: K.<x,y> = AA[]\nsage: x^(2^64 + 12345)\nx^12345\n```\n\n\nIn one test, I also saw a crash, but I can't reproduce it.\n\n```\nsage: K.<x,y> = ZZ[]\nsage: (x^12345)^54321\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\n...\n```\n\n(The crash was on 32-bit x86 Debian testing.  The first test fails with the same answer on both 32-bit and 64-bit x86.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2956\n\n",
     "created_at": "2008-04-19T15:26:41Z",
     "labels": [
         "basic arithmetic",
@@ -19,7 +19,7 @@ archive/issues_002956.json:
 ```
 Assignee: somebody
 
-CC:  mjo
+CC:  @orlitzky
 
 Long exponents are silently truncated to word-size exponents:
 
@@ -60,7 +60,7 @@ archive/issue_comments_020381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20381",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_020382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20382",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -105,16 +105,16 @@ I realize this was already noticed by Carl in #2957.
 archive/issue_comments_020383.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2009-01-25T19:00:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20383",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_020384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20384",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_020385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20385",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_020386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20386",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_020387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20387",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_020388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20388",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_020389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20389",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_020390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20390",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -261,16 +261,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_020391.json:
 ```json
 {
-    "body": "Attachment [sage-trac_2956.patch](tarball://root/attachments/some-uuid/ticket2956/sage-trac_2956.patch) by mjo created at 2012-01-09 01:54:18\n\nUpdated patch, should also work on x32.",
+    "body": "Attachment [sage-trac_2956.patch](tarball://root/attachments/some-uuid/ticket2956/sage-trac_2956.patch) by @orlitzky created at 2012-01-09 01:54:18\n\nUpdated patch, should also work on x32.",
     "created_at": "2012-01-09T01:54:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20391",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_2956.patch](tarball://root/attachments/some-uuid/ticket2956/sage-trac_2956.patch) by mjo created at 2012-01-09 01:54:18
+Attachment [sage-trac_2956.patch](tarball://root/attachments/some-uuid/ticket2956/sage-trac_2956.patch) by @orlitzky created at 2012-01-09 01:54:18
 
 Updated patch, should also work on x32.
 
@@ -286,7 +286,7 @@ archive/issue_comments_020392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20392",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_020393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20393",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_020394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20394",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_020395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20395",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_020396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20396",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_020397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20397",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_020398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2956#issuecomment-20398",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

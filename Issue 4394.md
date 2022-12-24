@@ -3,7 +3,7 @@
 archive/issues_004394.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nmabshoff@iras:~/build-3.2.a1/sage-3.2.alpha1-iras> ./sage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\nsage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/polynomial_element.py\", line 2833:\n    sage: g = magma(f); g              # optional -- requires Magma\nExpected:\n    y^3 - 17*y + 5\nGot:\n    $.1^3 - 17*$.1 + 5\n**********************************************************************\n1 items had failures:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4394\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nmabshoff@iras:~/build-3.2.a1/sage-3.2.alpha1-iras> ./sage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\nsage -t -long -optional devel/sage/sage/rings/polynomial/polynomial_element.pyx\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/polynomial_element.py\", line 2833:\n    sage: g = magma(f); g              # optional -- requires Magma\nExpected:\n    y^3 - 17*y + 5\nGot:\n    $.1^3 - 17*$.1 + 5\n**********************************************************************\n1 items had failures:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4394\n\n",
     "created_at": "2008-10-30T16:51:51Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_004394.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4394
 archive/issue_comments_032340.json:
 ```json
 {
-    "body": "Attachment [sage-4394.patch](tarball://root/attachments/some-uuid/ticket4394/sage-4394.patch) by was created at 2008-10-30 20:17:23",
+    "body": "Attachment [sage-4394.patch](tarball://root/attachments/some-uuid/ticket4394/sage-4394.patch) by @williamstein created at 2008-10-30 20:17:23",
     "created_at": "2008-10-30T20:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4394",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4394#issuecomment-32340",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4394.patch](tarball://root/attachments/some-uuid/ticket4394/sage-4394.patch) by was created at 2008-10-30 20:17:23
+Attachment [sage-4394.patch](tarball://root/attachments/some-uuid/ticket4394/sage-4394.patch) by @williamstein created at 2008-10-30 20:17:23
 
 
 

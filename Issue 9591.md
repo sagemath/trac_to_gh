@@ -14,7 +14,7 @@ archive/issues_009591.json:
     "title": "Upgrade genus2reduction to pari 2.4.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9591",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_092747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92747",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_092748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92748",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_092749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92749",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_092750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92750",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_092751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92751",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_092752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92752",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_092753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92753",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_092754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92754",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_092757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92757",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_092760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92760",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_092761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92761",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_092762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92762",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -494,16 +494,16 @@ Changing priority from major to blocker.
 archive/issue_comments_092763.json:
 ```json
 {
-    "body": "Attachment [genus2reduction-spkg.patch](tarball://root/attachments/some-uuid/ticket9591/genus2reduction-spkg.patch) by jdemeyer created at 2010-08-21 12:44:14\n\nComplete spkg patch (for reference)",
+    "body": "Attachment [genus2reduction-spkg.patch](tarball://root/attachments/some-uuid/ticket9591/genus2reduction-spkg.patch) by @jdemeyer created at 2010-08-21 12:44:14\n\nComplete spkg patch (for reference)",
     "created_at": "2010-08-21T12:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92763",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [genus2reduction-spkg.patch](tarball://root/attachments/some-uuid/ticket9591/genus2reduction-spkg.patch) by jdemeyer created at 2010-08-21 12:44:14
+Attachment [genus2reduction-spkg.patch](tarball://root/attachments/some-uuid/ticket9591/genus2reduction-spkg.patch) by @jdemeyer created at 2010-08-21 12:44:14
 
 Complete spkg patch (for reference)
 
@@ -519,7 +519,7 @@ archive/issue_comments_092764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92764",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_092765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92765",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_092766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92766",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -578,7 +578,7 @@ archive/issue_comments_092767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92767",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -596,7 +596,7 @@ archive/issue_comments_092768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92768",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_092769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92769",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -629,16 +629,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_092770.json:
 ```json
 {
-    "body": "Attachment [trac_9591-g2red_remove_dist.patch](tarball://root/attachments/some-uuid/ticket9591/trac_9591-g2red_remove_dist.patch) by mpatel created at 2010-09-04 07:22:44\n\nRemove `dist/`.  spkg patch.  Apply on top of \"complete\" patch.",
+    "body": "Attachment [trac_9591-g2red_remove_dist.patch](tarball://root/attachments/some-uuid/ticket9591/trac_9591-g2red_remove_dist.patch) by @qed777 created at 2010-09-04 07:22:44\n\nRemove `dist/`.  spkg patch.  Apply on top of \"complete\" patch.",
     "created_at": "2010-09-04T07:22:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92770",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9591-g2red_remove_dist.patch](tarball://root/attachments/some-uuid/ticket9591/trac_9591-g2red_remove_dist.patch) by mpatel created at 2010-09-04 07:22:44
+Attachment [trac_9591-g2red_remove_dist.patch](tarball://root/attachments/some-uuid/ticket9591/trac_9591-g2red_remove_dist.patch) by @qed777 created at 2010-09-04 07:22:44
 
 Remove `dist/`.  spkg patch.  Apply on top of "complete" patch.
 
@@ -654,7 +654,7 @@ archive/issue_comments_092771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92771",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -674,7 +674,7 @@ archive/issue_comments_092772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92772",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -692,7 +692,7 @@ archive/issue_comments_092773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92773",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -716,7 +716,7 @@ archive/issue_comments_092774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92774",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -734,7 +734,7 @@ archive/issue_comments_092775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92775",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -750,16 +750,16 @@ Done.
 archive/issue_comments_092776.json:
 ```json
 {
-    "body": "Attachment [genus2reduction-spkg.2.patch](tarball://root/attachments/some-uuid/ticket9591/genus2reduction-spkg.2.patch) by jdemeyer created at 2010-09-05 13:36:53\n\nNew complete patch including trac_9591-g2red_remove_dist.patch",
+    "body": "Attachment [genus2reduction-spkg.2.patch](tarball://root/attachments/some-uuid/ticket9591/genus2reduction-spkg.2.patch) by @jdemeyer created at 2010-09-05 13:36:53\n\nNew complete patch including trac_9591-g2red_remove_dist.patch",
     "created_at": "2010-09-05T13:36:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92776",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [genus2reduction-spkg.2.patch](tarball://root/attachments/some-uuid/ticket9591/genus2reduction-spkg.2.patch) by jdemeyer created at 2010-09-05 13:36:53
+Attachment [genus2reduction-spkg.2.patch](tarball://root/attachments/some-uuid/ticket9591/genus2reduction-spkg.2.patch) by @jdemeyer created at 2010-09-05 13:36:53
 
 New complete patch including trac_9591-g2red_remove_dist.patch
 
@@ -775,7 +775,7 @@ archive/issue_comments_092777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92777",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000075.json:
     "title": "specify charpoly polynomial ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/75",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -72,7 +72,7 @@ archive/issue_comments_000384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/75",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/75#issuecomment-384",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_000385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/75",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/75#issuecomment-385",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_000386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/75",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/75#issuecomment-386",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

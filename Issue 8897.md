@@ -3,7 +3,7 @@
 archive/issues_008897.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\nsage: a = 170*units.mass.pound\nsage: a.convert(units.mass.drachma)\n```\n\ngives\n\n```\nTypeError: unable to convert x (=kilogram) to an integer\n```\n\ndespite 1 drachma is 0.00429234 kilograms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8897\n\n",
+    "body": "Assignee: @burcin\n\n\n```\nsage: a = 170*units.mass.pound\nsage: a.convert(units.mass.drachma)\n```\n\ngives\n\n```\nTypeError: unable to convert x (=kilogram) to an integer\n```\n\ndespite 1 drachma is 0.00429234 kilograms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8897\n\n",
     "created_at": "2010-05-05T21:27:48Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_008897.json:
     "title": "units.mass.pound to units.mass.drachma broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8897",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```

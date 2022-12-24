@@ -14,7 +14,7 @@ archive/issues_007393.json:
     "title": "Update ECL to the latest version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7393",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -41,7 +41,7 @@ archive/issue_comments_062176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7393#issuecomment-62176",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_062177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7393#issuecomment-62177",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_062178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7393#issuecomment-62178",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_062179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7393#issuecomment-62179",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

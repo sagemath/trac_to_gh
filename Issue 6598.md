@@ -3,7 +3,7 @@
 archive/issues_006598.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  dimpase jhpalmieri\n\n\n```\n> Nonetheless, we should be checking the error code after every line\n> executes, one way or another.  Is there a way to automatically do this\n> in bash?\n\n\"set -e\" should do it.\n\nGoogle brings up this page, besides lots of others:\n\nhttp://www.davidpashley.com/articles/writing-robust-shell-scripts.html\n\n\nCheers,\nBurcin\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6598\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dimpase @jhpalmieri\n\n\n```\n> Nonetheless, we should be checking the error code after every line\n> executes, one way or another.  Is there a way to automatically do this\n> in bash?\n\n\"set -e\" should do it.\n\nGoogle brings up this page, besides lots of others:\n\nhttp://www.davidpashley.com/articles/writing-robust-shell-scripts.html\n\n\nCheers,\nBurcin\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6598\n\n",
     "created_at": "2009-07-23T09:46:34Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_006598.json:
     "title": "Change the sage build system to use \"set -e\" so that if any error occurs in spkg-install then the build immediately terminates with an error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6598",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  dimpase jhpalmieri
+CC:  @dimpase @jhpalmieri
 
 
 ```
@@ -55,7 +55,7 @@ archive/issue_comments_054015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6598#issuecomment-54015",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_054016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6598#issuecomment-54016",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_054017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6598#issuecomment-54017",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_054018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6598#issuecomment-54018",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_054019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6598#issuecomment-54019",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

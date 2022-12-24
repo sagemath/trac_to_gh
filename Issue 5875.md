@@ -14,7 +14,7 @@ archive/issues_005875.json:
     "title": "[with patch, needs review] Support tachyon on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5875",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 Assignee: mabshoff
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5875
 archive/issue_comments_046408.json:
 ```json
 {
-    "body": "Attachment [tachyon-0.98beta.p8.patch](tarball://root/attachments/some-uuid/ticket5875/tachyon-0.98beta.p8.patch) by pjeremy created at 2009-04-23 08:50:32",
+    "body": "Attachment [tachyon-0.98beta.p8.patch](tarball://root/attachments/some-uuid/ticket5875/tachyon-0.98beta.p8.patch) by @peterjeremy created at 2009-04-23 08:50:32",
     "created_at": "2009-04-23T08:50:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5875#issuecomment-46408",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [tachyon-0.98beta.p8.patch](tarball://root/attachments/some-uuid/ticket5875/tachyon-0.98beta.p8.patch) by pjeremy created at 2009-04-23 08:50:32
+Attachment [tachyon-0.98beta.p8.patch](tarball://root/attachments/some-uuid/ticket5875/tachyon-0.98beta.p8.patch) by @peterjeremy created at 2009-04-23 08:50:32
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_046409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5875#issuecomment-46409",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_046410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5875#issuecomment-46410",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -90,16 +90,16 @@ Changing status from new to assigned.
 archive/issue_comments_046411.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-20T02:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5875#issuecomment-46411",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_046412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5875#issuecomment-46412",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

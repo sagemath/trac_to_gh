@@ -3,7 +3,7 @@
 archive/issues_002968.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI've attached the Debianized version of the SAGE patches against ntl-5.4.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2968\n\n",
+    "body": "Assignee: @timabbott\n\nI've attached the Debianized version of the SAGE patches against ntl-5.4.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2968\n\n",
     "created_at": "2008-04-20T04:19:46Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002968.json:
     "title": "[with patch; needs review] Debian package ntl fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2968",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I've attached the Debianized version of the SAGE patches against ntl-5.4.2.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2968
 archive/issue_comments_020458.json:
 ```json
 {
-    "body": "Attachment [ntl-5.4.2.patch](tarball://root/attachments/some-uuid/ticket2968/ntl-5.4.2.patch) by tabbott created at 2008-04-20 04:19:50",
+    "body": "Attachment [ntl-5.4.2.patch](tarball://root/attachments/some-uuid/ticket2968/ntl-5.4.2.patch) by @timabbott created at 2008-04-20 04:19:50",
     "created_at": "2008-04-20T04:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2968#issuecomment-20458",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [ntl-5.4.2.patch](tarball://root/attachments/some-uuid/ticket2968/ntl-5.4.2.patch) by tabbott created at 2008-04-20 04:19:50
+Attachment [ntl-5.4.2.patch](tarball://root/attachments/some-uuid/ticket2968/ntl-5.4.2.patch) by @timabbott created at 2008-04-20 04:19:50
 
 
 

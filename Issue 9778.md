@@ -37,7 +37,7 @@ archive/issue_comments_095959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95959",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_095960.json:
 ```json
 {
-    "body": "Attachment [trac_9779 - minor edits.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779 - minor edits.patch) by ncohen created at 2010-09-03 20:18:47\n\nHello !!!\n\nNice patch ! Nothing to complain about, and they bring nice additions to Sage `:-)`\n\nI uploaded a (very short) patch with very small modifications. As usual, I give a positive review to your patch, and you can change the status of this ticket if you like mine `:-)`\n\n(btw, don't forget to set your tickets as \"needing review\" when you have uploaded your patch !)\n\nNathann",
+    "body": "Attachment [trac_9779 - minor edits.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779 - minor edits.patch) by @nathanncohen created at 2010-09-03 20:18:47\n\nHello !!!\n\nNice patch ! Nothing to complain about, and they bring nice additions to Sage `:-)`\n\nI uploaded a (very short) patch with very small modifications. As usual, I give a positive review to your patch, and you can change the status of this ticket if you like mine `:-)`\n\n(btw, don't forget to set your tickets as \"needing review\" when you have uploaded your patch !)\n\nNathann",
     "created_at": "2010-09-03T20:18:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95960",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9779 - minor edits.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779 - minor edits.patch) by ncohen created at 2010-09-03 20:18:47
+Attachment [trac_9779 - minor edits.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779 - minor edits.patch) by @nathanncohen created at 2010-09-03 20:18:47
 
 Hello !!!
 
@@ -119,7 +119,7 @@ archive/issue_comments_095963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95963",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_095964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95964",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_095965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95965",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_095970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95970",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_095971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95971",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -333,16 +333,16 @@ I rebased the patch (I hope I did this correctly!).  -Ed
 archive/issue_comments_095975.json:
 ```json
 {
-    "body": "Attachment [trac_9779_rebase.2.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779_rebase.2.patch) by mpatel created at 2010-09-29 09:27:03\n\nRebased for a working 4.6.alpha2.  Apply only this patch.",
+    "body": "Attachment [trac_9779_rebase.2.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779_rebase.2.patch) by @qed777 created at 2010-09-29 09:27:03\n\nRebased for a working 4.6.alpha2.  Apply only this patch.",
     "created_at": "2010-09-29T09:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95975",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9779_rebase.2.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779_rebase.2.patch) by mpatel created at 2010-09-29 09:27:03
+Attachment [trac_9779_rebase.2.patch](tarball://root/attachments/some-uuid/ticket9779/trac_9779_rebase.2.patch) by @qed777 created at 2010-09-29 09:27:03
 
 Rebased for a working 4.6.alpha2.  Apply only this patch.
 
@@ -358,7 +358,7 @@ archive/issue_comments_095976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95976",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_095977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95977",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_095978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95978",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

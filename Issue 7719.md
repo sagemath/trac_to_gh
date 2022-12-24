@@ -3,7 +3,7 @@
 archive/issues_007719.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  robertwb\n\nKeywords: complex agm\n\nThis is related to #6021 but also of independent interest.\n\nAs of 4.3 we use pari to compute the complex agm (i.e. a.agm(b) where a, b are complex).  Now the complex agm is multi-valued, and for the application to periods of elliptic curves it does matter which value is used (see upcoming paper by John Cremona and Thotsaphon Thongjunthug).  The pari-computed value is not this \"optimal\" value.  So I have implemented a native Sage version, replacing the existing code in sage/rings/complex_number.pyx.\n\nMuch to my surprise, the new code is in some cases 50 times faster than calling the pari library -- despite the fact that I have not yet cython-optimised the code!\n\n```\nsage: CC = ComplexField(200)\nsage: a = CC(-0.95,-0.65)                \nsage: b = CC(0.683,0.747)                \nsage: %timeit t = a.agm(b, algorithm=\"pari\")\n100 loops, best of 3: 7.04 ms per loop\nsage:  %timeit t = a.agm(b, algorithm=\"principal\")\n10000 loops, best of 3: 136 mus per loop\nsage:  %timeit t = a.agm(b, algorithm=\"optimal\")  \n10000 loops, best of 3: 146 mus per loop\n```\n\nHere \"mus\" means microseconds (this was run on a computer for which displaying greek \"mu\" causes an error).  \"pari\" is the old way calling the pari library function;  \"principal\" is a native implementation of essentially the same; \"optimal\" is the native implementation returning the so-called optimal value.\n\nSome details:  AGM(a,b) is the common limit of two sequences `a_n,b_n` under the iteration `(a,b) -> ((a+b)/2, sqrt(a*b))` and the issue is which square root to take.  The complete story is a wonderful but quite long one (which started with Gauss).  Essentially, the \"principal\" algorithm always takes the principal branch of the square root (with positive real part);  pari does the same after an initial step where AGM(a,b) is replaced by a*AGM(1/b/a);  the optimal sequence (which gives the largest limit) is the one for which the sign is always chosen so that sqrt(a*b) is closest to (a+b)/2.  Note that the optimal sequence is preserved under scaling, so gives AGM(z*a,z*b)=z*AGM(a,b), but this is not true of the principal sequence.\n\nI have a patch, but before posting it I'll ask for some help optimising it cythonically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7719\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb\n\nKeywords: complex agm\n\nThis is related to #6021 but also of independent interest.\n\nAs of 4.3 we use pari to compute the complex agm (i.e. a.agm(b) where a, b are complex).  Now the complex agm is multi-valued, and for the application to periods of elliptic curves it does matter which value is used (see upcoming paper by John Cremona and Thotsaphon Thongjunthug).  The pari-computed value is not this \"optimal\" value.  So I have implemented a native Sage version, replacing the existing code in sage/rings/complex_number.pyx.\n\nMuch to my surprise, the new code is in some cases 50 times faster than calling the pari library -- despite the fact that I have not yet cython-optimised the code!\n\n```\nsage: CC = ComplexField(200)\nsage: a = CC(-0.95,-0.65)                \nsage: b = CC(0.683,0.747)                \nsage: %timeit t = a.agm(b, algorithm=\"pari\")\n100 loops, best of 3: 7.04 ms per loop\nsage:  %timeit t = a.agm(b, algorithm=\"principal\")\n10000 loops, best of 3: 136 mus per loop\nsage:  %timeit t = a.agm(b, algorithm=\"optimal\")  \n10000 loops, best of 3: 146 mus per loop\n```\n\nHere \"mus\" means microseconds (this was run on a computer for which displaying greek \"mu\" causes an error).  \"pari\" is the old way calling the pari library function;  \"principal\" is a native implementation of essentially the same; \"optimal\" is the native implementation returning the so-called optimal value.\n\nSome details:  AGM(a,b) is the common limit of two sequences `a_n,b_n` under the iteration `(a,b) -> ((a+b)/2, sqrt(a*b))` and the issue is which square root to take.  The complete story is a wonderful but quite long one (which started with Gauss).  Essentially, the \"principal\" algorithm always takes the principal branch of the square root (with positive real part);  pari does the same after an initial step where AGM(a,b) is replaced by a*AGM(1/b/a);  the optimal sequence (which gives the largest limit) is the one for which the sign is always chosen so that sqrt(a*b) is closest to (a+b)/2.  Note that the optimal sequence is preserved under scaling, so gives AGM(z*a,z*b)=z*AGM(a,b), but this is not true of the principal sequence.\n\nI have a patch, but before posting it I'll ask for some help optimising it cythonically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7719\n\n",
     "created_at": "2009-12-17T10:29:09Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_007719.json:
     "title": "Improvements to complex AGM",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7719",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: complex agm
 
@@ -58,16 +58,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7719
 archive/issue_comments_066291.json:
 ```json
 {
-    "body": "Attachment [trac_7719-agm.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-agm.patch) by cremona created at 2009-12-17 11:51:00\n\nApplies to 4.3.rc0.  Preliminary version",
+    "body": "Attachment [trac_7719-agm.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-agm.patch) by @JohnCremona created at 2009-12-17 11:51:00\n\nApplies to 4.3.rc0.  Preliminary version",
     "created_at": "2009-12-17T11:51:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66291",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7719-agm.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-agm.patch) by cremona created at 2009-12-17 11:51:00
+Attachment [trac_7719-agm.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-agm.patch) by @JohnCremona created at 2009-12-17 11:51:00
 
 Applies to 4.3.rc0.  Preliminary version
 
@@ -83,7 +83,7 @@ archive/issue_comments_066292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66292",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_066293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66293",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_066294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66294",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_066295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66295",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_066296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66296",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_066297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66297",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -291,16 +291,16 @@ On another note, see #7739
 archive/issue_comments_066298.json:
 ```json
 {
-    "body": "Attachment [7719-agm-optimize.patch](tarball://root/attachments/some-uuid/ticket7719/7719-agm-optimize.patch) by robertwb created at 2009-12-19 09:15:15",
+    "body": "Attachment [7719-agm-optimize.patch](tarball://root/attachments/some-uuid/ticket7719/7719-agm-optimize.patch) by @robertwb created at 2009-12-19 09:15:15",
     "created_at": "2009-12-19T09:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66298",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7719-agm-optimize.patch](tarball://root/attachments/some-uuid/ticket7719/7719-agm-optimize.patch) by robertwb created at 2009-12-19 09:15:15
+Attachment [7719-agm-optimize.patch](tarball://root/attachments/some-uuid/ticket7719/7719-agm-optimize.patch) by @robertwb created at 2009-12-19 09:15:15
 
 
 
@@ -314,7 +314,7 @@ archive/issue_comments_066299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66299",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_066300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66300",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_066301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66301",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_066302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66302",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_066304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66304",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -496,16 +496,16 @@ Sounds like ylchapuy will be needed for a final review of this one -- thanks.
 archive/issue_comments_066305.json:
 ```json
 {
-    "body": "Attachment [trac_7719-bugfix.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-bugfix.patch) by cremona created at 2009-12-19 18:20:18\n\nReplaces previous patch",
+    "body": "Attachment [trac_7719-bugfix.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-bugfix.patch) by @JohnCremona created at 2009-12-19 18:20:18\n\nReplaces previous patch",
     "created_at": "2009-12-19T18:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66305",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7719-bugfix.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-bugfix.patch) by cremona created at 2009-12-19 18:20:18
+Attachment [trac_7719-bugfix.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-bugfix.patch) by @JohnCremona created at 2009-12-19 18:20:18
 
 Replaces previous patch
 
@@ -521,7 +521,7 @@ archive/issue_comments_066306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66306",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_066307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66307",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -563,7 +563,7 @@ archive/issue_comments_066308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66308",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_066309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66309",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -602,7 +602,7 @@ archive/issue_comments_066310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66310",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -622,7 +622,7 @@ archive/issue_comments_066311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66311",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -635,16 +635,16 @@ apply first and this only
 archive/issue_comments_066312.json:
 ```json
 {
-    "body": "Attachment [7719-bugfix2.patch](tarball://root/attachments/some-uuid/ticket7719/7719-bugfix2.patch) by robertwb created at 2009-12-19 22:45:57\n\nAfter I coded up the previous suggestion, I felt the best way was to simply run the whole thing with a bit of extra precision. This way the last couple bits in the final iteration will actually be correct for that step, not just as correct as they could be due to rounding limitations. I also fixed a bug with a.agm(-a) and added some more tests. \n\nI folded it into the above patch, so apply trac_7719-agm.patch and 7719-bugfix2.patch. I'm positively reviewing cremona's changes--he needs to look at mine.",
+    "body": "Attachment [7719-bugfix2.patch](tarball://root/attachments/some-uuid/ticket7719/7719-bugfix2.patch) by @robertwb created at 2009-12-19 22:45:57\n\nAfter I coded up the previous suggestion, I felt the best way was to simply run the whole thing with a bit of extra precision. This way the last couple bits in the final iteration will actually be correct for that step, not just as correct as they could be due to rounding limitations. I also fixed a bug with a.agm(-a) and added some more tests. \n\nI folded it into the above patch, so apply trac_7719-agm.patch and 7719-bugfix2.patch. I'm positively reviewing cremona's changes--he needs to look at mine.",
     "created_at": "2009-12-19T22:45:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66312",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7719-bugfix2.patch](tarball://root/attachments/some-uuid/ticket7719/7719-bugfix2.patch) by robertwb created at 2009-12-19 22:45:57
+Attachment [7719-bugfix2.patch](tarball://root/attachments/some-uuid/ticket7719/7719-bugfix2.patch) by @robertwb created at 2009-12-19 22:45:57
 
 After I coded up the previous suggestion, I felt the best way was to simply run the whole thing with a bit of extra precision. This way the last couple bits in the final iteration will actually be correct for that step, not just as correct as they could be due to rounding limitations. I also fixed a bug with a.agm(-a) and added some more tests. 
 
@@ -662,7 +662,7 @@ archive/issue_comments_066313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66313",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -684,7 +684,7 @@ archive/issue_comments_066314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66314",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -697,16 +697,16 @@ apply first and this only
 archive/issue_comments_066315.json:
 ```json
 {
-    "body": "Attachment [7719-bugfix3.patch](tarball://root/attachments/some-uuid/ticket7719/7719-bugfix3.patch) by robertwb created at 2009-12-20 10:05:19\n\nI think returning zero is the right thing to do for these degenerate cases--after all the AGM as a limit of the arithmetic and geometric means does exist. I've updated the patch.",
+    "body": "Attachment [7719-bugfix3.patch](tarball://root/attachments/some-uuid/ticket7719/7719-bugfix3.patch) by @robertwb created at 2009-12-20 10:05:19\n\nI think returning zero is the right thing to do for these degenerate cases--after all the AGM as a limit of the arithmetic and geometric means does exist. I've updated the patch.",
     "created_at": "2009-12-20T10:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66315",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7719-bugfix3.patch](tarball://root/attachments/some-uuid/ticket7719/7719-bugfix3.patch) by robertwb created at 2009-12-20 10:05:19
+Attachment [7719-bugfix3.patch](tarball://root/attachments/some-uuid/ticket7719/7719-bugfix3.patch) by @robertwb created at 2009-12-20 10:05:19
 
 I think returning zero is the right thing to do for these degenerate cases--after all the AGM as a limit of the arithmetic and geometric means does exist. I've updated the patch.
 
@@ -763,7 +763,7 @@ archive/issue_comments_066318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66318",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -782,16 +782,16 @@ I'll merge all our patches into a single one for the final review.
 archive/issue_comments_066319.json:
 ```json
 {
-    "body": "Attachment [trac_7719-cagm.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-cagm.patch) by cremona created at 2009-12-20 12:42:55\n\nReplaces all previous",
+    "body": "Attachment [trac_7719-cagm.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-cagm.patch) by @JohnCremona created at 2009-12-20 12:42:55\n\nReplaces all previous",
     "created_at": "2009-12-20T12:42:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66319",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7719-cagm.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-cagm.patch) by cremona created at 2009-12-20 12:42:55
+Attachment [trac_7719-cagm.patch](tarball://root/attachments/some-uuid/ticket7719/trac_7719-cagm.patch) by @JohnCremona created at 2009-12-20 12:42:55
 
 Replaces all previous
 
@@ -807,7 +807,7 @@ archive/issue_comments_066320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66320",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -827,7 +827,7 @@ archive/issue_comments_066321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66321",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -845,7 +845,7 @@ archive/issue_comments_066322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66322",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -865,7 +865,7 @@ archive/issue_comments_066323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66323",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -883,7 +883,7 @@ archive/issue_comments_066324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66324",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -903,7 +903,7 @@ archive/issue_comments_066325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66325",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -921,7 +921,7 @@ archive/issue_comments_066326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7719",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66326",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004547.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jason\n\nThis causes Apache rewriting for example to just display plain text instead of HTML.  This hasn't been an issue because browsers are relatively smart about dealing with unspecified Content-Types.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4547\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jasongrout\n\nThis causes Apache rewriting for example to just display plain text instead of HTML.  This hasn't been an issue because browsers are relatively smart about dealing with unspecified Content-Types.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4547\n\n",
     "created_at": "2008-11-19T15:01:12Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_004547.json:
     "title": "The Sage Notebook doesn't specify the Content-Type header in its responses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4547",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: boothby
 
-CC:  jason
+CC:  @jasongrout
 
 This causes Apache rewriting for example to just display plain text instead of HTML.  This hasn't been an issue because browsers are relatively smart about dealing with unspecified Content-Types.
 
@@ -39,7 +39,7 @@ archive/issue_comments_034058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34058",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_034059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34059",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_034060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34060",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_034063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34063",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_034066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34066",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_034067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34067",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_034068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34068",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -264,16 +264,16 @@ We should open new tickets for CSS / Javascript / etc.
 archive/issue_comments_034069.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-03-19T12:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34069",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 

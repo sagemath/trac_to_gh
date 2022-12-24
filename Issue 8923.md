@@ -14,7 +14,7 @@ archive/issues_008923.json:
     "title": "CompleteMultipartiteGraph generator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8923",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -39,7 +39,7 @@ archive/issue_comments_082206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8923#issuecomment-82206",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_082207.json:
 ```json
 {
-    "body": "Attachment [trac_8923.patch](tarball://root/attachments/some-uuid/ticket8923/trac_8923.patch) by ncohen created at 2010-05-07 19:14:13",
+    "body": "Attachment [trac_8923.patch](tarball://root/attachments/some-uuid/ticket8923/trac_8923.patch) by @nathanncohen created at 2010-05-07 19:14:13",
     "created_at": "2010-05-07T19:14:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8923#issuecomment-82207",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8923.patch](tarball://root/attachments/some-uuid/ticket8923/trac_8923.patch) by ncohen created at 2010-05-07 19:14:13
+Attachment [trac_8923.patch](tarball://root/attachments/some-uuid/ticket8923/trac_8923.patch) by @nathanncohen created at 2010-05-07 19:14:13
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_082208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8923#issuecomment-82208",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_082209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8923#issuecomment-82209",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_082210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8923",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8923#issuecomment-82210",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

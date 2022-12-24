@@ -3,7 +3,7 @@
 archive/issues_001905.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere is no good reason to have both.  That would be like having KroneckerSymbol and kronecker_symbol. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1905\n\n",
+    "body": "Assignee: @williamstein\n\nThere is no good reason to have both.  That would be like having KroneckerSymbol and kronecker_symbol. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1905\n\n",
     "created_at": "2008-01-24T03:09:02Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001905.json:
     "title": "elliptic curves -- both E.Lseries and E.L_series are defined.  Just define one of them, say E.Lseries. (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1905",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There is no good reason to have both.  That would be like having KroneckerSymbol and kronecker_symbol. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1905
 archive/issue_comments_012067.json:
 ```json
 {
-    "body": "Attachment [1905-kill-L_series.patch](tarball://root/attachments/some-uuid/ticket1905/1905-kill-L_series.patch) by AlexGhitza created at 2008-01-24 09:23:14",
+    "body": "Attachment [1905-kill-L_series.patch](tarball://root/attachments/some-uuid/ticket1905/1905-kill-L_series.patch) by @aghitza created at 2008-01-24 09:23:14",
     "created_at": "2008-01-24T09:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1905#issuecomment-12067",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [1905-kill-L_series.patch](tarball://root/attachments/some-uuid/ticket1905/1905-kill-L_series.patch) by AlexGhitza created at 2008-01-24 09:23:14
+Attachment [1905-kill-L_series.patch](tarball://root/attachments/some-uuid/ticket1905/1905-kill-L_series.patch) by @aghitza created at 2008-01-24 09:23:14
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_012068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1905#issuecomment-12068",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_012069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1905",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1905#issuecomment-12069",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

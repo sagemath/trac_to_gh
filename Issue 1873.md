@@ -3,7 +3,7 @@
 archive/issues_001873.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nI'm using Sage 2.10 now. Expansion for elements in SFAElementary works\ngreat now, but there is another problem: the expansion lies in the\nwrong ring.\n\n```\nsage: e=SFAElementary(QQ)\nsage: f=e([2]).expand(2)\nsage: f\nx0*x1\nsage: f.parent()\nMultivariate Polynomial Ring in x0, x1, x2 over Rational Field\n```\n\n\nThe same code but for SFASchur results in:\n\n```\nsage: s=SFASchur(QQ)\nsage: f=s([2]).expand(2)\nsage: f\nx0^2 + x0*x1 + x1^2\nsage: f.parent()\nMultivariate Polynomial Ring in x0, x1 over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1873\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nI'm using Sage 2.10 now. Expansion for elements in SFAElementary works\ngreat now, but there is another problem: the expansion lies in the\nwrong ring.\n\n```\nsage: e=SFAElementary(QQ)\nsage: f=e([2]).expand(2)\nsage: f\nx0*x1\nsage: f.parent()\nMultivariate Polynomial Ring in x0, x1, x2 over Rational Field\n```\n\n\nThe same code but for SFASchur results in:\n\n```\nsage: s=SFASchur(QQ)\nsage: f=s([2]).expand(2)\nsage: f\nx0^2 + x0*x1 + x1^2\nsage: f.parent()\nMultivariate Polynomial Ring in x0, x1 over Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1873\n\n",
     "created_at": "2008-01-20T22:22:55Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001873.json:
     "title": "[with patch] elementary function expansion returns result in the wrong ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1873",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -58,16 +58,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1873
 archive/issue_comments_011861.json:
 ```json
 {
-    "body": "Attachment [1873.patch](tarball://root/attachments/some-uuid/ticket1873/1873.patch) by mhansen created at 2008-01-20 22:27:07",
+    "body": "Attachment [1873.patch](tarball://root/attachments/some-uuid/ticket1873/1873.patch) by @mwhansen created at 2008-01-20 22:27:07",
     "created_at": "2008-01-20T22:27:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1873#issuecomment-11861",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1873.patch](tarball://root/attachments/some-uuid/ticket1873/1873.patch) by mhansen created at 2008-01-20 22:27:07
+Attachment [1873.patch](tarball://root/attachments/some-uuid/ticket1873/1873.patch) by @mwhansen created at 2008-01-20 22:27:07
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_011862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1873#issuecomment-11862",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_011863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1873",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1873#issuecomment-11863",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

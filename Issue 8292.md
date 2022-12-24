@@ -3,7 +3,7 @@
 archive/issues_008292.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThe attached patch makes the following changes to `eisenstein_series_qexp`:\n\n* removes the workaround at the end of the method, since it is no longer needed\n* a few small modifications that speed things up a bit:\n\nBEFORE THE PATCH:\n\n```\nsage: timeit(\"eisenstein_series_qexp(4, 100)\")\n125 loops, best of 3: 6.19 ms per loop\nsage: timeit(\"eisenstein_series_qexp(4, 1000)\")\n5 loops, best of 3: 56.4 ms per loop\nsage: timeit(\"eisenstein_series_qexp(4, 10000)\")\n5 loops, best of 3: 568 ms per loop\nsage: timeit(\"eisenstein_series_qexp(4, 100000)\")\n5 loops, best of 3: 5.84 s per loop\nsage: timeit(\"eisenstein_series_qexp(6, 100)\")\n125 loops, best of 3: 6.26 ms per loop\nsage: timeit(\"eisenstein_series_qexp(6, 1000)\")\n5 loops, best of 3: 57 ms per loop\nsage: timeit(\"eisenstein_series_qexp(6, 10000)\")\n5 loops, best of 3: 575 ms per loop\nsage: timeit(\"eisenstein_series_qexp(6, 100000)\")\n5 loops, best of 3: 5.97 s per loop\nsage: timeit(\"eisenstein_series_qexp(100, 1000)\")\n5 loops, best of 3: 100 ms per loop\nsage: timeit(\"eisenstein_series_qexp(100, 10000)\")\n5 loops, best of 3: 1.21 s per loop\nsage: timeit(\"eisenstein_series_qexp(1000, 10000)\")\n5 loops, best of 3: 12.9 s per loop\n```\n\n\nAFTER THE PATCH:\n\n```\nsage: timeit(\"eisenstein_series_qexp(4, 100)\")\n125 loops, best of 3: 2.21 ms per loop\nsage: timeit(\"eisenstein_series_qexp(4, 1000)\")\n25 loops, best of 3: 20.5 ms per loop\nsage: timeit(\"eisenstein_series_qexp(4, 10000)\")\n5 loops, best of 3: 220 ms per loop\nsage: timeit(\"eisenstein_series_qexp(4, 100000)\")\n5 loops, best of 3: 2.41 s per loop\nsage: timeit(\"eisenstein_series_qexp(6, 100)\")\n125 loops, best of 3: 2.24 ms per loop\nsage: timeit(\"eisenstein_series_qexp(6, 1000)\")\n25 loops, best of 3: 21 ms per loop\nsage: timeit(\"eisenstein_series_qexp(6, 10000)\")\n5 loops, best of 3: 223 ms per loop\nsage: timeit(\"eisenstein_series_qexp(6, 100000)\")\n5 loops, best of 3: 2.54 s per loop\nsage: timeit(\"eisenstein_series_qexp(100, 1000)\")\n5 loops, best of 3: 50.6 ms per loop\nsage: timeit(\"eisenstein_series_qexp(100, 10000)\")\n5 loops, best of 3: 641 ms per loop\nsage: timeit(\"eisenstein_series_qexp(1000, 10000)\")\n5 loops, best of 3: 8.62 s per loop\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8292\n\n",
+    "body": "Assignee: @craigcitro\n\nThe attached patch makes the following changes to `eisenstein_series_qexp`:\n\n* removes the workaround at the end of the method, since it is no longer needed\n* a few small modifications that speed things up a bit:\n\nBEFORE THE PATCH:\n\n```\nsage: timeit(\"eisenstein_series_qexp(4, 100)\")\n125 loops, best of 3: 6.19 ms per loop\nsage: timeit(\"eisenstein_series_qexp(4, 1000)\")\n5 loops, best of 3: 56.4 ms per loop\nsage: timeit(\"eisenstein_series_qexp(4, 10000)\")\n5 loops, best of 3: 568 ms per loop\nsage: timeit(\"eisenstein_series_qexp(4, 100000)\")\n5 loops, best of 3: 5.84 s per loop\nsage: timeit(\"eisenstein_series_qexp(6, 100)\")\n125 loops, best of 3: 6.26 ms per loop\nsage: timeit(\"eisenstein_series_qexp(6, 1000)\")\n5 loops, best of 3: 57 ms per loop\nsage: timeit(\"eisenstein_series_qexp(6, 10000)\")\n5 loops, best of 3: 575 ms per loop\nsage: timeit(\"eisenstein_series_qexp(6, 100000)\")\n5 loops, best of 3: 5.97 s per loop\nsage: timeit(\"eisenstein_series_qexp(100, 1000)\")\n5 loops, best of 3: 100 ms per loop\nsage: timeit(\"eisenstein_series_qexp(100, 10000)\")\n5 loops, best of 3: 1.21 s per loop\nsage: timeit(\"eisenstein_series_qexp(1000, 10000)\")\n5 loops, best of 3: 12.9 s per loop\n```\n\n\nAFTER THE PATCH:\n\n```\nsage: timeit(\"eisenstein_series_qexp(4, 100)\")\n125 loops, best of 3: 2.21 ms per loop\nsage: timeit(\"eisenstein_series_qexp(4, 1000)\")\n25 loops, best of 3: 20.5 ms per loop\nsage: timeit(\"eisenstein_series_qexp(4, 10000)\")\n5 loops, best of 3: 220 ms per loop\nsage: timeit(\"eisenstein_series_qexp(4, 100000)\")\n5 loops, best of 3: 2.41 s per loop\nsage: timeit(\"eisenstein_series_qexp(6, 100)\")\n125 loops, best of 3: 2.24 ms per loop\nsage: timeit(\"eisenstein_series_qexp(6, 1000)\")\n25 loops, best of 3: 21 ms per loop\nsage: timeit(\"eisenstein_series_qexp(6, 10000)\")\n5 loops, best of 3: 223 ms per loop\nsage: timeit(\"eisenstein_series_qexp(6, 100000)\")\n5 loops, best of 3: 2.54 s per loop\nsage: timeit(\"eisenstein_series_qexp(100, 1000)\")\n5 loops, best of 3: 50.6 ms per loop\nsage: timeit(\"eisenstein_series_qexp(100, 10000)\")\n5 loops, best of 3: 641 ms per loop\nsage: timeit(\"eisenstein_series_qexp(1000, 10000)\")\n5 loops, best of 3: 8.62 s per loop\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8292\n\n",
     "created_at": "2010-02-17T11:56:01Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_008292.json:
     "title": "improvements to eisenstein_series_qexp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8292",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 The attached patch makes the following changes to `eisenstein_series_qexp`:
 
@@ -92,16 +92,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8292
 archive/issue_comments_073466.json:
 ```json
 {
-    "body": "Attachment [trac_8292.patch](tarball://root/attachments/some-uuid/ticket8292/trac_8292.patch) by AlexGhitza created at 2010-02-17 12:02:15",
+    "body": "Attachment [trac_8292.patch](tarball://root/attachments/some-uuid/ticket8292/trac_8292.patch) by @aghitza created at 2010-02-17 12:02:15",
     "created_at": "2010-02-17T12:02:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8292#issuecomment-73466",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_8292.patch](tarball://root/attachments/some-uuid/ticket8292/trac_8292.patch) by AlexGhitza created at 2010-02-17 12:02:15
+Attachment [trac_8292.patch](tarball://root/attachments/some-uuid/ticket8292/trac_8292.patch) by @aghitza created at 2010-02-17 12:02:15
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_073469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8292#issuecomment-73469",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_073470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8292#issuecomment-73470",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_073471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8292#issuecomment-73471",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_073472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8292#issuecomment-73472",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

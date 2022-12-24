@@ -3,7 +3,7 @@
 archive/issues_003423.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  craigcitro\n\nConsider this sage session:\n\n\n```\nsage: pari('1.q')\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-cc/sage/rings/number_field/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-cc/sage/rings/number_field/gen.pyx in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:32332)()\n\n<class 'sage.libs.pari.gen.PariError'>:  (7)\n```\n\n\nas opposed to this gp session:\n\n\n```\n? 1.q\n  ***   unknown member function: 1.q\n                                   ^-\n```\n\n\nIt'd be nice if the error messages we generate are a bit more informative. This may be an arbitrarily large amount of work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3423\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nConsider this sage session:\n\n\n```\nsage: pari('1.q')\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-cc/sage/rings/number_field/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-cc/sage/rings/number_field/gen.pyx in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:32332)()\n\n<class 'sage.libs.pari.gen.PariError'>:  (7)\n```\n\n\nas opposed to this gp session:\n\n\n```\n? 1.q\n  ***   unknown member function: 1.q\n                                   ^-\n```\n\n\nIt'd be nice if the error messages we generate are a bit more informative. This may be an arbitrarily large amount of work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3423\n\n",
     "created_at": "2008-06-14T01:12:31Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_003423.json:
     "title": "Make Pari error messages more informative",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3423",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  craigcitro
+CC:  @craigcitro
 
 Consider this sage session:
 
@@ -65,7 +65,7 @@ archive/issue_comments_024090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3423#issuecomment-24090",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_024091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3423#issuecomment-24091",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_024092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3423",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3423#issuecomment-24092",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

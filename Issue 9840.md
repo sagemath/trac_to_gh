@@ -3,7 +3,7 @@
 archive/issues_009840.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  novoselt vbraun mvngu schilly mhansen jdemeyer\n\nKeywords: polyhedra, qhull, convex, Delaunay, Voronoi\n\nFrom the README.txt of Qhull:\n\nQhull computes convex hulls, Delaunay triangulations, Voronoi diagrams,\nfurthest-site Voronoi diagrams, and halfspace intersections about a point.\nIt runs in 2-d, 3-d, 4-d, or higher.  It implements the Quickhull algorithm\nfor computing convex hulls.   Qhull handles round-off errors from floating\npoint arithmetic.  It can approximate a convex hull.\n\nThe program includes options for hull volume, facet area, partial hulls,\ninput transformations, randomization, tracing, multiple output formats, and\nexecution statistics.\n\nFirst attempt at a spkg is at:\n\n[http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg](http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9841\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @novoselt @vbraun mvngu @haraldschilly @mwhansen @jdemeyer\n\nKeywords: polyhedra, qhull, convex, Delaunay, Voronoi\n\nFrom the README.txt of Qhull:\n\nQhull computes convex hulls, Delaunay triangulations, Voronoi diagrams,\nfurthest-site Voronoi diagrams, and halfspace intersections about a point.\nIt runs in 2-d, 3-d, 4-d, or higher.  It implements the Quickhull algorithm\nfor computing convex hulls.   Qhull handles round-off errors from floating\npoint arithmetic.  It can approximate a convex hull.\n\nThe program includes options for hull volume, facet area, partial hulls,\ninput transformations, randomization, tracing, multiple output formats, and\nexecution statistics.\n\nFirst attempt at a spkg is at:\n\n[http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg](http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9841\n\n",
     "created_at": "2010-08-30T16:52:38Z",
     "labels": [
         "geometry",
@@ -19,7 +19,7 @@ archive/issues_009840.json:
 ```
 Assignee: mhampton
 
-CC:  novoselt vbraun mvngu schilly mhansen jdemeyer
+CC:  @novoselt @vbraun mvngu @haraldschilly @mwhansen @jdemeyer
 
 Keywords: polyhedra, qhull, convex, Delaunay, Voronoi
 
@@ -92,7 +92,7 @@ archive/issue_comments_097125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97125",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_097126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97126",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_097127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97127",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_097129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97129",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

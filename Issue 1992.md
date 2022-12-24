@@ -3,7 +3,7 @@
 archive/issues_001992.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen\n\n```\n sage: load filename.spyx\n```\n\nis done repeatedly on a specific single file filename.spyx, after about 3-4\ntries Sage tries to delete some files.  On some NFS mounted filesystems, there\nare lock files, and these can't be deleted for permissions reasons.  Instead of \nsage gracefully continuing on it fails at this point, and bombs out.  This makes\nloading cython files fail henceforth, making spyx files completely useless.\n\nThe fix is probably just to put a try/except block around any code that deletes files that is related to attaching and loading [s]pyx files.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1992\n\n",
+    "body": "Assignee: @williamstein\n\nWhen\n\n```\n sage: load filename.spyx\n```\n\nis done repeatedly on a specific single file filename.spyx, after about 3-4\ntries Sage tries to delete some files.  On some NFS mounted filesystems, there\nare lock files, and these can't be deleted for permissions reasons.  Instead of \nsage gracefully continuing on it fails at this point, and bombs out.  This makes\nloading cython files fail henceforth, making spyx files completely useless.\n\nThe fix is probably just to put a try/except block around any code that deletes files that is related to attaching and loading [s]pyx files.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1992\n\n",
     "created_at": "2008-01-31T04:28:15Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_001992.json:
     "title": "Loading and attaching spyx/pyx files -- automatic compilation and nsf locking",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1992",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When
 
@@ -74,7 +74,7 @@ archive/issue_comments_012894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1992#issuecomment-12894",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_012895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1992#issuecomment-12895",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

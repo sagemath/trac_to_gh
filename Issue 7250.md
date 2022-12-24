@@ -3,7 +3,7 @@
 archive/issues_007250.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  craigcitro boothby rlm\n\nKeywords: cached function\n\nThis used to work before #6937:\n\n```\n    sage: f = cached_function(sage.structure.element.is_RingElement)\n    sage: f(1)\n    True\n```\n\n\nThat's used at one spot in the category code (but we can disable it temporarily)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7250\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @craigcitro boothby @rlmill\n\nKeywords: cached function\n\nThis used to work before #6937:\n\n```\n    sage: f = cached_function(sage.structure.element.is_RingElement)\n    sage: f(1)\n    True\n```\n\n\nThat's used at one spot in the category code (but we can disable it temporarily)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7250\n\n",
     "created_at": "2009-10-19T21:43:40Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_007250.json:
     "title": "cached_function broken for builtin functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7250",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: cwitty
 
-CC:  craigcitro boothby rlm
+CC:  @craigcitro boothby @rlmill
 
 Keywords: cached function
 
@@ -50,7 +50,7 @@ archive/issue_comments_060228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7250#issuecomment-60228",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_060229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7250#issuecomment-60229",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_060230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7250",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7250#issuecomment-60230",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

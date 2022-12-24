@@ -14,7 +14,7 @@ archive/issues_005242.json:
     "title": "[with patch, needs review] generic_power can now handle semi-groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5242",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: tbd
@@ -51,7 +51,7 @@ archive/issue_comments_040175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5242#issuecomment-40175",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -82,16 +82,16 @@ Attachment [generic_power_fix_semigroup-5242-submitted.patch](tarball://root/att
 archive/issue_comments_040177.json:
 ```json
 {
-    "body": "Changing assignee from tbd to hivert.",
+    "body": "Changing assignee from tbd to @hivert.",
     "created_at": "2009-02-13T18:52:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5242#issuecomment-40177",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from tbd to hivert.
+Changing assignee from tbd to @hivert.
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_040178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5242#issuecomment-40178",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_040179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5242#issuecomment-40179",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_040180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5242#issuecomment-40180",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_040181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5242#issuecomment-40181",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_040183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5242#issuecomment-40183",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

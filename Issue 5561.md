@@ -3,7 +3,7 @@
 archive/issues_005561.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  cremona cwitty\n\n(I'm not a mathematician.  Please correct any mistakes!)\n\nThe current `Polynomial` class (`sage/rings/polynomial/polynomial_element.pyx`) includes an `is_primitive` method.  However, field theory and ring theory have different definitions of a \"primitive polynomial.\"  Consequently, this base class for all polynomials is not an appropriate place for this method.  \n\nC.Witty suggested on IRC that one way to resolve the issue is to split up the polynomial classes into \"polynomials over fields\" and \"polynomials over rings.\"  Then these new base classes (and/or their derived classes) can implement `is_primitive` as appropriate.  In other words, create `PolynomialOverField` class and `PolynomialOverRing` classes that derive from `Polynomial`.  The other (univariate) polynomial classes in sage/rings/polynomial/ should then derive from either `PolynomialOverField` or `PolynomialOverRing` to pick up the correct `is_primitive` definition.\n\nThere may be other and possibly better ways to resolve the issue.\n\nJohn Cremona added this comment:\n\n  What Ryan suggest for is_primitive might be a good way to go;  as far\n  as I know the meaning which is relevant here, namely \"irreducible and\n  the root generates the multiplicative group of the extension\" is only\n  relevant over finite fields (and no other fields).  The other meaning\n  (coprime coefficients) is certainly not very useful over fields as it\n  is the same as \"non-zero\", so we are left with the question \"what, if\n  anything, should we take is_primitive() to mean for polynomials in\n  F[x] where F is an infinite field?\"\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5561\n\n",
+    "body": "Assignee: tbd\n\nCC:  @JohnCremona cwitty\n\n(I'm not a mathematician.  Please correct any mistakes!)\n\nThe current `Polynomial` class (`sage/rings/polynomial/polynomial_element.pyx`) includes an `is_primitive` method.  However, field theory and ring theory have different definitions of a \"primitive polynomial.\"  Consequently, this base class for all polynomials is not an appropriate place for this method.  \n\nC.Witty suggested on IRC that one way to resolve the issue is to split up the polynomial classes into \"polynomials over fields\" and \"polynomials over rings.\"  Then these new base classes (and/or their derived classes) can implement `is_primitive` as appropriate.  In other words, create `PolynomialOverField` class and `PolynomialOverRing` classes that derive from `Polynomial`.  The other (univariate) polynomial classes in sage/rings/polynomial/ should then derive from either `PolynomialOverField` or `PolynomialOverRing` to pick up the correct `is_primitive` definition.\n\nThere may be other and possibly better ways to resolve the issue.\n\nJohn Cremona added this comment:\n\n  What Ryan suggest for is_primitive might be a good way to go;  as far\n  as I know the meaning which is relevant here, namely \"irreducible and\n  the root generates the multiplicative group of the extension\" is only\n  relevant over finite fields (and no other fields).  The other meaning\n  (coprime coefficients) is certainly not very useful over fields as it\n  is the same as \"non-zero\", so we are left with the question \"what, if\n  anything, should we take is_primitive() to mean for polynomials in\n  F[x] where F is an infinite field?\"\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5561\n\n",
     "created_at": "2009-03-18T17:21:16Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005561.json:
     "title": "is_primitive does not belong in Polynomial because its definition varies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5561",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 Assignee: tbd
 
-CC:  cremona cwitty
+CC:  @JohnCremona cwitty
 
 (I'm not a mathematician.  Please correct any mistakes!)
 
@@ -58,7 +58,7 @@ archive/issue_comments_043276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5561#issuecomment-43276",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_043277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5561#issuecomment-43277",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_043278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5561#issuecomment-43278",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_043279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5561#issuecomment-43279",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -165,16 +165,16 @@ This patch needs some examples of the ring functionality.  Can you provide any g
 archive/issue_comments_043280.json:
 ```json
 {
-    "body": "Changing assignee from tbd to rhinton.",
+    "body": "Changing assignee from tbd to @rhinton.",
     "created_at": "2009-04-01T16:16:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5561#issuecomment-43280",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Changing assignee from tbd to rhinton.
+Changing assignee from tbd to @rhinton.
 
 
 
@@ -183,16 +183,16 @@ Changing assignee from tbd to rhinton.
 archive/issue_comments_043281.json:
 ```json
 {
-    "body": "Attachment [trac_5561_is_primitive_ring_field.patch](tarball://root/attachments/some-uuid/ticket5561/trac_5561_is_primitive_ring_field.patch) by rhinton created at 2009-04-01 20:02:02\n\nThe new patch compiles and passes the doctests, but it has no tests for the new ring functionality.  John, can you provide any good examples (that will work)?  Do you want to report the integer mod ring ideal problem, or shall I?",
+    "body": "Attachment [trac_5561_is_primitive_ring_field.patch](tarball://root/attachments/some-uuid/ticket5561/trac_5561_is_primitive_ring_field.patch) by @rhinton created at 2009-04-01 20:02:02\n\nThe new patch compiles and passes the doctests, but it has no tests for the new ring functionality.  John, can you provide any good examples (that will work)?  Do you want to report the integer mod ring ideal problem, or shall I?",
     "created_at": "2009-04-01T20:02:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5561#issuecomment-43281",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [trac_5561_is_primitive_ring_field.patch](tarball://root/attachments/some-uuid/ticket5561/trac_5561_is_primitive_ring_field.patch) by rhinton created at 2009-04-01 20:02:02
+Attachment [trac_5561_is_primitive_ring_field.patch](tarball://root/attachments/some-uuid/ticket5561/trac_5561_is_primitive_ring_field.patch) by @rhinton created at 2009-04-01 20:02:02
 
 The new patch compiles and passes the doctests, but it has no tests for the new ring functionality.  John, can you provide any good examples (that will work)?  Do you want to report the integer mod ring ideal problem, or shall I?
 
@@ -203,16 +203,16 @@ The new patch compiles and passes the doctests, but it has no tests for the new 
 archive/issue_comments_043282.json:
 ```json
 {
-    "body": "Attachment [trac_5561.patch](tarball://root/attachments/some-uuid/ticket5561/trac_5561.patch) by cremona created at 2009-04-02 08:05:21\n\nreplaces previous",
+    "body": "Attachment [trac_5561.patch](tarball://root/attachments/some-uuid/ticket5561/trac_5561.patch) by @JohnCremona created at 2009-04-02 08:05:21\n\nreplaces previous",
     "created_at": "2009-04-02T08:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5561#issuecomment-43282",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5561.patch](tarball://root/attachments/some-uuid/ticket5561/trac_5561.patch) by cremona created at 2009-04-02 08:05:21
+Attachment [trac_5561.patch](tarball://root/attachments/some-uuid/ticket5561/trac_5561.patch) by @JohnCremona created at 2009-04-02 08:05:21
 
 replaces previous
 
@@ -228,7 +228,7 @@ archive/issue_comments_043283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5561",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5561#issuecomment-43283",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

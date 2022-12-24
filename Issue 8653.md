@@ -14,7 +14,7 @@ archive/issues_008653.json:
     "title": "Command-line \"advanced\" help has wrong option name for randomized tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8653",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: mvngu
@@ -41,7 +41,7 @@ archive/issue_comments_078510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8653#issuecomment-78510",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_review.
 archive/issue_comments_078511.json:
 ```json
 {
-    "body": "Attachment [trac_8653-random-order-doctest-doc.patch](tarball://root/attachments/some-uuid/ticket8653/trac_8653-random-order-doctest-doc.patch) by rbeezer created at 2010-04-06 06:02:03",
+    "body": "Attachment [trac_8653-random-order-doctest-doc.patch](tarball://root/attachments/some-uuid/ticket8653/trac_8653-random-order-doctest-doc.patch) by @rbeezer created at 2010-04-06 06:02:03",
     "created_at": "2010-04-06T06:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8653#issuecomment-78511",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8653-random-order-doctest-doc.patch](tarball://root/attachments/some-uuid/ticket8653/trac_8653-random-order-doctest-doc.patch) by rbeezer created at 2010-04-06 06:02:03
+Attachment [trac_8653-random-order-doctest-doc.patch](tarball://root/attachments/some-uuid/ticket8653/trac_8653-random-order-doctest-doc.patch) by @rbeezer created at 2010-04-06 06:02:03
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_078512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8653#issuecomment-78512",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_078513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8653#issuecomment-78513",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_078514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8653#issuecomment-78514",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_078515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8653#issuecomment-78515",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

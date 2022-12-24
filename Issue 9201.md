@@ -3,7 +3,7 @@
 archive/issues_009201.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirkby ggrafendorfer dimpase\n\nSome R modules aren't built/installed on t2.  This makes builds fail when `SAGE_CHECK` is set.  From [comment:ticket:8306:67 this comment] at #8306:\n\nRunning R's `make check` on t2 gives\n\n```\n Collecting examples for package `stats'\n   Extracting from parsed Rd's ..............................\n Running examples in package `stats'\n Error: testing 'stats' failed\n Execution halted\n make[5]: *** [test-Examples-Base] Error 1\n```\n\nHere's some detail from `src/tests/Examples/stats-Ex.Rout.fail`:\n\n```\n > contrasts(ffs) <- contr.sum(5, sparse=TRUE)[,1:2]; contrasts(ffs)\n Error in .Diag(levels, sparse = sparse) :\n   contr*(.., sparse=TRUE) needs package \"Matrix\" correctly installed\n Calls: contr.sum -> .Diag\n Execution halted\n```\n\n[This log](http://sage.math.washington.edu/home/mpatel/trac/8306/r-2.10.1.p2.log) also shows that R's Matrix package isn't built/installed successfully:\n\n```\n Loading required package: Matrix\n Error in dyn.load(file, DLLpath = DLLpath, ...) :\n   unable to load shared library '/scratch/mpatel/sage-4.4.4.alpha0-j64-par-chk/spkg/build/r-2.10.1.p2/src/library/Matrix/libs/Matrix.so':\n   ld.so.1: R: fatal: libgcc_s.so.1: open failed: No such file or directory\n Error : require(Matrix, save = FALSE) is not TRUE\n```\n\nMoreover, comparing the output of `ls SAGE_LOCAL/lib/R/library` on sage.math and t2 builds indicates that we're also missing the class, mgcv, nnet, rpart, spatial, and survival packages on t2.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9201\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirkby ggrafendorfer @dimpase\n\nSome R modules aren't built/installed on t2.  This makes builds fail when `SAGE_CHECK` is set.  From [comment:ticket:8306:67 this comment] at #8306:\n\nRunning R's `make check` on t2 gives\n\n```\n Collecting examples for package `stats'\n   Extracting from parsed Rd's ..............................\n Running examples in package `stats'\n Error: testing 'stats' failed\n Execution halted\n make[5]: *** [test-Examples-Base] Error 1\n```\n\nHere's some detail from `src/tests/Examples/stats-Ex.Rout.fail`:\n\n```\n > contrasts(ffs) <- contr.sum(5, sparse=TRUE)[,1:2]; contrasts(ffs)\n Error in .Diag(levels, sparse = sparse) :\n   contr*(.., sparse=TRUE) needs package \"Matrix\" correctly installed\n Calls: contr.sum -> .Diag\n Execution halted\n```\n\n[This log](http://sage.math.washington.edu/home/mpatel/trac/8306/r-2.10.1.p2.log) also shows that R's Matrix package isn't built/installed successfully:\n\n```\n Loading required package: Matrix\n Error in dyn.load(file, DLLpath = DLLpath, ...) :\n   unable to load shared library '/scratch/mpatel/sage-4.4.4.alpha0-j64-par-chk/spkg/build/r-2.10.1.p2/src/library/Matrix/libs/Matrix.so':\n   ld.so.1: R: fatal: libgcc_s.so.1: open failed: No such file or directory\n Error : require(Matrix, save = FALSE) is not TRUE\n```\n\nMoreover, comparing the output of `ls SAGE_LOCAL/lib/R/library` on sage.math and t2 builds indicates that we're also missing the class, mgcv, nnet, rpart, spatial, and survival packages on t2.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9201\n\n",
     "created_at": "2010-06-10T07:48:05Z",
     "labels": [
         "porting: Solaris",
@@ -14,12 +14,12 @@ archive/issues_009201.json:
     "title": "Add missing R modules and make `spkg-check` pass on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9201",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: drkirkby
 
-CC:  drkirkby ggrafendorfer dimpase
+CC:  drkirkby ggrafendorfer @dimpase
 
 Some R modules aren't built/installed on t2.  This makes builds fail when `SAGE_CHECK` is set.  From [comment:ticket:8306:67 this comment] at #8306:
 
@@ -106,7 +106,7 @@ archive/issue_comments_086084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9201#issuecomment-86084",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_086086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9201#issuecomment-86086",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_086091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9201#issuecomment-86091",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_086092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9201#issuecomment-86092",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_086093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9201#issuecomment-86093",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_086094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9201#issuecomment-86094",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -478,7 +478,7 @@ archive/issue_comments_086095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9201#issuecomment-86095",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_086096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9201#issuecomment-86096",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -514,7 +514,7 @@ archive/issue_comments_086097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9201#issuecomment-86097",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_086098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9201#issuecomment-86098",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -566,7 +566,7 @@ archive/issue_comments_086099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9201#issuecomment-86099",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -584,7 +584,7 @@ archive/issue_comments_086100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9201#issuecomment-86100",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -602,7 +602,7 @@ archive/issue_comments_086101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9201#issuecomment-86101",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

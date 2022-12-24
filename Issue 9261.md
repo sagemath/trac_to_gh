@@ -3,7 +3,7 @@
 archive/issues_009261.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  was cwitty mhansen\n\nCurrently, the option style='bracket' (to display intervals as\n[1.1 ... 1.2]) is only available in the `str` method, so that\none has to provide it each time one calls str.\n\nIt would be nice to have an option style=... in the *creation* of the\nfield, to override the default style. For example one would have:\n\n```\nsage: R = RealIntervalField(42, style='brackets')\nsage: R(pi)\n[3.1415926535892 .. 3.1415926535902]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9261\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein cwitty @mwhansen\n\nCurrently, the option style='bracket' (to display intervals as\n[1.1 ... 1.2]) is only available in the `str` method, so that\none has to provide it each time one calls str.\n\nIt would be nice to have an option style=... in the *creation* of the\nfield, to override the default style. For example one would have:\n\n```\nsage: R = RealIntervalField(42, style='brackets')\nsage: R(pi)\n[3.1415926535892 .. 3.1415926535902]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9261\n\n",
     "created_at": "2010-06-18T10:01:29Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_009261.json:
     "title": "RealIntervalField: enable option style='bracket'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9261",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  was cwitty mhansen
+CC:  @williamstein cwitty @mwhansen
 
 Currently, the option style='bracket' (to display intervals as
 [1.1 ... 1.2]) is only available in the `str` method, so that
@@ -51,7 +51,7 @@ archive/issue_comments_087151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9261#issuecomment-87151",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_087153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9261#issuecomment-87153",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_087154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9261#issuecomment-87154",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_087155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9261#issuecomment-87155",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

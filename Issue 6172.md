@@ -14,7 +14,7 @@ archive/issues_006172.json:
     "title": "add support for building FAT binaries to mpir",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6172",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_049228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6172#issuecomment-49228",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_049229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6172#issuecomment-49229",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_049230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6172#issuecomment-49230",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_049231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6172",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6172#issuecomment-49231",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

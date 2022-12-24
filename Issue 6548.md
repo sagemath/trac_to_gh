@@ -14,7 +14,7 @@ archive/issues_006548.json:
     "title": "Improve tasteful ticks documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6548",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tba
@@ -39,7 +39,7 @@ archive/issue_comments_053394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6548#issuecomment-53394",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_053395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6548#issuecomment-53395",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

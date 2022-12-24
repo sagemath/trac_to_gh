@@ -3,7 +3,7 @@
 archive/issues_001276.json:
 ```json
 {
-    "body": "Assignee: failure\n\nCC:  wjp\n\n\n```\n> Send me your doctest timing code :-)  I'm looking forward to playing with it.\n\nHere you go. It's a patch to local/bin/sage-doctest and a file timing.py\nthat I had put in sage/misc .\n\nIt adds a --time option to sage-doctest that makes it append the timings\nit generates as a dict indexed by hash to the (cpickled) file\n.doctest/timings.sobj .  There's no infrastructure yet to automatically\ndelete that file when appropriate, though.\n\nI also attached two very basic scripts that show or compare the contents\nof timings.sobj files.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1276\n\n",
+    "body": "Assignee: failure\n\nCC:  @wjp\n\n\n```\n> Send me your doctest timing code :-)  I'm looking forward to playing with it.\n\nHere you go. It's a patch to local/bin/sage-doctest and a file timing.py\nthat I had put in sage/misc .\n\nIt adds a --time option to sage-doctest that makes it append the timings\nit generates as a dict indexed by hash to the (cpickled) file\n.doctest/timings.sobj .  There's no infrastructure yet to automatically\ndelete that file when appropriate, though.\n\nI also attached two very basic scripts that show or compare the contents\nof timings.sobj files.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1276\n\n",
     "created_at": "2007-11-26T04:18:09Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_001276.json:
     "title": "incorporate willem's doctest timing code into sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1276",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
 
-CC:  wjp
+CC:  @wjp
 
 
 ```
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1276
 archive/issue_comments_007994.json:
 ```json
 {
-    "body": "Attachment [recodefordoctesttiming.zip](tarball://root/attachments/some-uuid/ticket1276/recodefordoctesttiming.zip) by was created at 2007-11-26 04:19:12",
+    "body": "Attachment [recodefordoctesttiming.zip](tarball://root/attachments/some-uuid/ticket1276/recodefordoctesttiming.zip) by @williamstein created at 2007-11-26 04:19:12",
     "created_at": "2007-11-26T04:19:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1276#issuecomment-7994",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [recodefordoctesttiming.zip](tarball://root/attachments/some-uuid/ticket1276/recodefordoctesttiming.zip) by was created at 2007-11-26 04:19:12
+Attachment [recodefordoctesttiming.zip](tarball://root/attachments/some-uuid/ticket1276/recodefordoctesttiming.zip) by @williamstein created at 2007-11-26 04:19:12
 
 
 
@@ -67,16 +67,16 @@ Attachment [recodefordoctesttiming.zip](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_007995.json:
 ```json
 {
-    "body": "Changing assignee from failure to was.",
+    "body": "Changing assignee from failure to @williamstein.",
     "created_at": "2007-11-26T04:19:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1276#issuecomment-7995",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from failure to was.
+Changing assignee from failure to @williamstein.
 
 
 
@@ -107,16 +107,16 @@ Michael
 archive/issue_comments_007997.json:
 ```json
 {
-    "body": "Changing assignee from was to ncalexan.",
+    "body": "Changing assignee from @williamstein to @ncalexan.",
     "created_at": "2008-01-20T03:38:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1276#issuecomment-7997",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Changing assignee from was to ncalexan.
+Changing assignee from @williamstein to @ncalexan.
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_007998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1276#issuecomment-7998",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -161,16 +161,16 @@ Changing priority from major to blocker.
 archive/issue_comments_008000.json:
 ```json
 {
-    "body": "Attachment [trac_1276.patch](tarball://root/attachments/some-uuid/ticket1276/trac_1276.patch) by gfurnish created at 2008-05-24 22:42:44\n\nrebased & fixed devel repo patch for this.",
+    "body": "Attachment [trac_1276.patch](tarball://root/attachments/some-uuid/ticket1276/trac_1276.patch) by @garyfurnish created at 2008-05-24 22:42:44\n\nrebased & fixed devel repo patch for this.",
     "created_at": "2008-05-24T22:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1276#issuecomment-8000",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_1276.patch](tarball://root/attachments/some-uuid/ticket1276/trac_1276.patch) by gfurnish created at 2008-05-24 22:42:44
+Attachment [trac_1276.patch](tarball://root/attachments/some-uuid/ticket1276/trac_1276.patch) by @garyfurnish created at 2008-05-24 22:42:44
 
 rebased & fixed devel repo patch for this.
 
@@ -186,7 +186,7 @@ archive/issue_comments_008001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1276#issuecomment-8001",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -199,16 +199,16 @@ rebased & fixed scripts repo patch for this.
 archive/issue_comments_008002.json:
 ```json
 {
-    "body": "Attachment [trac_1276_scripts.patch](tarball://root/attachments/some-uuid/ticket1276/trac_1276_scripts.patch) by gfurnish created at 2008-05-24 22:45:05",
+    "body": "Attachment [trac_1276_scripts.patch](tarball://root/attachments/some-uuid/ticket1276/trac_1276_scripts.patch) by @garyfurnish created at 2008-05-24 22:45:05",
     "created_at": "2008-05-24T22:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1276#issuecomment-8002",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_1276_scripts.patch](tarball://root/attachments/some-uuid/ticket1276/trac_1276_scripts.patch) by gfurnish created at 2008-05-24 22:45:05
+Attachment [trac_1276_scripts.patch](tarball://root/attachments/some-uuid/ticket1276/trac_1276_scripts.patch) by @garyfurnish created at 2008-05-24 22:45:05
 
 
 
@@ -222,7 +222,7 @@ archive/issue_comments_008003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1276#issuecomment-8003",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -235,16 +235,16 @@ Changing status from new to assigned.
 archive/issue_comments_008004.json:
 ```json
 {
-    "body": "Changing assignee from ncalexan to gfurnish.",
+    "body": "Changing assignee from @ncalexan to @garyfurnish.",
     "created_at": "2008-05-24T22:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1276#issuecomment-8004",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from ncalexan to gfurnish.
+Changing assignee from @ncalexan to @garyfurnish.
 
 
 
@@ -258,7 +258,7 @@ archive/issue_comments_008005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1276#issuecomment-8005",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_008006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1276",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1276#issuecomment-8006",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

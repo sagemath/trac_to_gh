@@ -39,7 +39,7 @@ archive/issue_comments_006220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1014#issuecomment-6220",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_006223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1014#issuecomment-6223",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -154,16 +154,16 @@ sage: RR(10^1000 - 10^900).abs().log(10).floor() + 1
 archive/issue_comments_006225.json:
 ```json
 {
-    "body": "Attachment [1014-ndigits.patch](tarball://root/attachments/some-uuid/ticket1014/1014-ndigits.patch) by AlexGhitza created at 2008-01-27 23:31:54\n\nrevised patch",
+    "body": "Attachment [1014-ndigits.patch](tarball://root/attachments/some-uuid/ticket1014/1014-ndigits.patch) by @aghitza created at 2008-01-27 23:31:54\n\nrevised patch",
     "created_at": "2008-01-27T23:31:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1014#issuecomment-6225",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [1014-ndigits.patch](tarball://root/attachments/some-uuid/ticket1014/1014-ndigits.patch) by AlexGhitza created at 2008-01-27 23:31:54
+Attachment [1014-ndigits.patch](tarball://root/attachments/some-uuid/ticket1014/1014-ndigits.patch) by @aghitza created at 2008-01-27 23:31:54
 
 revised patch
 
@@ -179,7 +179,7 @@ archive/issue_comments_006226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1014#issuecomment-6226",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -258,16 +258,16 @@ The point is, for uniform random input, the top couple of digits will almost alw
 archive/issue_comments_006228.json:
 ```json
 {
-    "body": "Attachment [1014-ndigits-and-exact_log.patch](tarball://root/attachments/some-uuid/ticket1014/1014-ndigits-and-exact_log.patch) by AlexGhitza created at 2008-01-29 04:24:34",
+    "body": "Attachment [1014-ndigits-and-exact_log.patch](tarball://root/attachments/some-uuid/ticket1014/1014-ndigits-and-exact_log.patch) by @aghitza created at 2008-01-29 04:24:34",
     "created_at": "2008-01-29T04:24:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1014#issuecomment-6228",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [1014-ndigits-and-exact_log.patch](tarball://root/attachments/some-uuid/ticket1014/1014-ndigits-and-exact_log.patch) by AlexGhitza created at 2008-01-29 04:24:34
+Attachment [1014-ndigits-and-exact_log.patch](tarball://root/attachments/some-uuid/ticket1014/1014-ndigits-and-exact_log.patch) by @aghitza created at 2008-01-29 04:24:34
 
 
 
@@ -281,7 +281,7 @@ archive/issue_comments_006229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1014#issuecomment-6229",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_006230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1014#issuecomment-6230",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

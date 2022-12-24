@@ -14,7 +14,7 @@ archive/issues_001230.json:
     "title": "Quit worksheet behaviour",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1230",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1230
 archive/issue_comments_007650.json:
 ```json
 {
-    "body": "Attachment [sage-1230.patch](tarball://root/attachments/some-uuid/ticket1230/sage-1230.patch) by was created at 2008-05-10 21:04:01",
+    "body": "Attachment [sage-1230.patch](tarball://root/attachments/some-uuid/ticket1230/sage-1230.patch) by @williamstein created at 2008-05-10 21:04:01",
     "created_at": "2008-05-10T21:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1230#issuecomment-7650",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-1230.patch](tarball://root/attachments/some-uuid/ticket1230/sage-1230.patch) by was created at 2008-05-10 21:04:01
+Attachment [sage-1230.patch](tarball://root/attachments/some-uuid/ticket1230/sage-1230.patch) by @williamstein created at 2008-05-10 21:04:01
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_007651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1230#issuecomment-7651",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_007652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1230#issuecomment-7652",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -111,16 +111,16 @@ Ticket #3147 should probably be closed if this gets accepted, since it solves th
 archive/issue_comments_007653.json:
 ```json
 {
-    "body": "Attachment [sage-1230-part3.patch](tarball://root/attachments/some-uuid/ticket1230/sage-1230-part3.patch) by was created at 2008-05-11 01:01:54\n\nQuit --> Stop as recommended by referee",
+    "body": "Attachment [sage-1230-part3.patch](tarball://root/attachments/some-uuid/ticket1230/sage-1230-part3.patch) by @williamstein created at 2008-05-11 01:01:54\n\nQuit --> Stop as recommended by referee",
     "created_at": "2008-05-11T01:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1230#issuecomment-7653",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-1230-part3.patch](tarball://root/attachments/some-uuid/ticket1230/sage-1230-part3.patch) by was created at 2008-05-11 01:01:54
+Attachment [sage-1230-part3.patch](tarball://root/attachments/some-uuid/ticket1230/sage-1230-part3.patch) by @williamstein created at 2008-05-11 01:01:54
 
 Quit --> Stop as recommended by referee
 
@@ -136,7 +136,7 @@ archive/issue_comments_007654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1230#issuecomment-7654",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 

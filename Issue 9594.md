@@ -3,7 +3,7 @@
 archive/issues_009594.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  ddrake mpatel rbeezer schilly cremona\n\nOn 32-bit systems, we get the following doctest error in Sage 4.5.2.alpha0:\n\n```sh\n$ ./sage -t devel/sage/sage/graphs/generic_graph.py\n...\n    sage: G.get_pos()\nExpected:\n    {0: [1.17..., -0.855...],\n     1: [1.81..., -0.0990...],\n     2: [1.35..., 0.184...],\n     3: [1.51..., 0.644...],\n     4: [2.00..., -0.507...],\n     5: [0.597..., -0.236...],\n     6: [2.04..., 0.687...],\n     7: [1.46..., -0.473...],\n     8: [0.902..., 0.773...],\n     9: [2.48..., -0.119...]}\nGot:\n    {0: [1.1644236010005358, -0.83686858657215979], 1: [1.7943839700815074, -0.066920666682206337], 2: [1.2689961125613971,\n0.14359096356381118], 3: [1.511860539628787, 0.59162048325984706], 4:\n[1.9941403734258905, -0.53845815492480542], 5: [0.59110867097474395,\n-0.2204272806589378], 6: [2.0144421480067041, 0.70158250822163282], 7:\n[1.4603696336476519, -0.46717593533332896], 8: [0.90427280509063312,\n0.79073173670301911], 9: [2.4603584159299983, -0.097675067576871527]}\n...\n```\n\n\n(See #9593 for making spring layout reproducible.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9594\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @dandrake @qed777 @rbeezer @haraldschilly @JohnCremona\n\nOn 32-bit systems, we get the following doctest error in Sage 4.5.2.alpha0:\n\n```sh\n$ ./sage -t devel/sage/sage/graphs/generic_graph.py\n...\n    sage: G.get_pos()\nExpected:\n    {0: [1.17..., -0.855...],\n     1: [1.81..., -0.0990...],\n     2: [1.35..., 0.184...],\n     3: [1.51..., 0.644...],\n     4: [2.00..., -0.507...],\n     5: [0.597..., -0.236...],\n     6: [2.04..., 0.687...],\n     7: [1.46..., -0.473...],\n     8: [0.902..., 0.773...],\n     9: [2.48..., -0.119...]}\nGot:\n    {0: [1.1644236010005358, -0.83686858657215979], 1: [1.7943839700815074, -0.066920666682206337], 2: [1.2689961125613971,\n0.14359096356381118], 3: [1.511860539628787, 0.59162048325984706], 4:\n[1.9941403734258905, -0.53845815492480542], 5: [0.59110867097474395,\n-0.2204272806589378], 6: [2.0144421480067041, 0.70158250822163282], 7:\n[1.4603696336476519, -0.46717593533332896], 8: [0.90427280509063312,\n0.79073173670301911], 9: [2.4603584159299983, -0.097675067576871527]}\n...\n```\n\n\n(See #9593 for making spring layout reproducible.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9594\n\n",
     "created_at": "2010-07-24T23:12:42Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009594.json:
     "title": "Spring layout for graphs is currently random across platforms: mark the doctest accordingly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9594",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  ddrake mpatel rbeezer schilly cremona
+CC:  @dandrake @qed777 @rbeezer @haraldschilly @JohnCremona
 
 On 32-bit systems, we get the following doctest error in Sage 4.5.2.alpha0:
 
@@ -67,7 +67,7 @@ archive/issue_comments_092823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9594#issuecomment-92823",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_092824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9594#issuecomment-92824",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -98,16 +98,16 @@ Just adds a random tag to the failing doctest.
 archive/issue_comments_092825.json:
 ```json
 {
-    "body": "Attachment [trac_9594-mark_spring_layout_doctest_random.patch](tarball://root/attachments/some-uuid/ticket9594/trac_9594-mark_spring_layout_doctest_random.patch) by leif created at 2010-07-25 08:39:12\n\nI cannot *really* test this myself, because `generic_graph.py` does still not terminate on my 32-bit system, and on 64-bit it wasn't an issue...\n\n(At least the patch doesn't introduce new failures. ;-) )\n\nPlease review s.t. this can be merged into 4.5.2.alpha1.",
+    "body": "Attachment [trac_9594-mark_spring_layout_doctest_random.patch](tarball://root/attachments/some-uuid/ticket9594/trac_9594-mark_spring_layout_doctest_random.patch) by @nexttime created at 2010-07-25 08:39:12\n\nI cannot *really* test this myself, because `generic_graph.py` does still not terminate on my 32-bit system, and on 64-bit it wasn't an issue...\n\n(At least the patch doesn't introduce new failures. ;-) )\n\nPlease review s.t. this can be merged into 4.5.2.alpha1.",
     "created_at": "2010-07-25T08:39:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9594#issuecomment-92825",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9594-mark_spring_layout_doctest_random.patch](tarball://root/attachments/some-uuid/ticket9594/trac_9594-mark_spring_layout_doctest_random.patch) by leif created at 2010-07-25 08:39:12
+Attachment [trac_9594-mark_spring_layout_doctest_random.patch](tarball://root/attachments/some-uuid/ticket9594/trac_9594-mark_spring_layout_doctest_random.patch) by @nexttime created at 2010-07-25 08:39:12
 
 I cannot *really* test this myself, because `generic_graph.py` does still not terminate on my 32-bit system, and on 64-bit it wasn't an issue...
 
@@ -127,7 +127,7 @@ archive/issue_comments_092826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9594#issuecomment-92826",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_092827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9594#issuecomment-92827",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_092828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9594#issuecomment-92828",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_092829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9594#issuecomment-92829",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_092830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9594#issuecomment-92830",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_092831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9594#issuecomment-92831",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_092832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9594#issuecomment-92832",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_092833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9594#issuecomment-92833",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

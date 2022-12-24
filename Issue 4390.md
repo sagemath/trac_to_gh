@@ -3,7 +3,7 @@
 archive/issues_004390.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: EllipticCurve('675b').heegner_index(-11)\nTraceback (most recent call last):\n...\nTypeError: regulator() got an unexpected keyword argument 'verbose'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4390\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: EllipticCurve('675b').heegner_index(-11)\nTraceback (most recent call last):\n...\nTypeError: regulator() got an unexpected keyword argument 'verbose'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4390\n\n",
     "created_at": "2008-10-30T05:35:53Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004390.json:
     "title": "elliptic curves: heegner_index command broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4390",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4390
 archive/issue_comments_032311.json:
 ```json
 {
-    "body": "Attachment [sage-4390.patch](tarball://root/attachments/some-uuid/ticket4390/sage-4390.patch) by was created at 2008-10-30 05:40:48",
+    "body": "Attachment [sage-4390.patch](tarball://root/attachments/some-uuid/ticket4390/sage-4390.patch) by @williamstein created at 2008-10-30 05:40:48",
     "created_at": "2008-10-30T05:40:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4390#issuecomment-32311",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4390.patch](tarball://root/attachments/some-uuid/ticket4390/sage-4390.patch) by was created at 2008-10-30 05:40:48
+Attachment [sage-4390.patch](tarball://root/attachments/some-uuid/ticket4390/sage-4390.patch) by @williamstein created at 2008-10-30 05:40:48
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_032312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4390#issuecomment-32312",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006125.json:
     "title": "disable testing in flint, mpir, etc. packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6125",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6125
 archive/issue_comments_048940.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-05-29T04:26:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6125#issuecomment-48940",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_048941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6125#issuecomment-48941",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_048942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6125#issuecomment-48942",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_048943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6125#issuecomment-48943",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_048944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6125#issuecomment-48944",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_048945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6125",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6125#issuecomment-48945",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

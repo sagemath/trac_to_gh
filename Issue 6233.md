@@ -14,7 +14,7 @@ archive/issues_006233.json:
     "title": "remove the explain_picklejar function, since it is self contained and its test fails on all platforms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6233",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6233
 archive/issue_comments_049731.json:
 ```json
 {
-    "body": "Attachment [trac_6233.patch](tarball://root/attachments/some-uuid/ticket6233/trac_6233.patch) by was created at 2009-06-06 16:21:05",
+    "body": "Attachment [trac_6233.patch](tarball://root/attachments/some-uuid/ticket6233/trac_6233.patch) by @williamstein created at 2009-06-06 16:21:05",
     "created_at": "2009-06-06T16:21:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6233#issuecomment-49731",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6233.patch](tarball://root/attachments/some-uuid/ticket6233/trac_6233.patch) by was created at 2009-06-06 16:21:05
+Attachment [trac_6233.patch](tarball://root/attachments/some-uuid/ticket6233/trac_6233.patch) by @williamstein created at 2009-06-06 16:21:05
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_049732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6233#issuecomment-49732",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_049733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6233#issuecomment-49733",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_049734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6233#issuecomment-49734",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

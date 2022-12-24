@@ -3,7 +3,7 @@
 archive/issues_009037.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp\n\nThe spkg-install of 'pynac' has:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel\"\n    CXXFLAGS=\"-m64 -O2 -g\"; export CXXFLAGS\n    LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\n\nso obviously does not attempt to build 64-bit when SAGE64=\"yes\", unless the operating systems is OS X. \n\nThe build actually fails on a 64-bit OpenSolaris system, as pynac tries to link to 64-bit objects, which obviously fails. \n\n\n```\nsage: An error occurred while installing pynac-0.1.12\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9037\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nThe spkg-install of 'pynac' has:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel\"\n    CXXFLAGS=\"-m64 -O2 -g\"; export CXXFLAGS\n    LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\n\nso obviously does not attempt to build 64-bit when SAGE64=\"yes\", unless the operating systems is OS X. \n\nThe build actually fails on a 64-bit OpenSolaris system, as pynac tries to link to 64-bit objects, which obviously fails. \n\n\n```\nsage: An error occurred while installing pynac-0.1.12\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9037\n\n",
     "created_at": "2010-05-24T17:04:56Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009037.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp
+CC:  @jaapspies
 
 The spkg-install of 'pynac' has:
 
@@ -77,7 +77,7 @@ archive/issue_comments_083661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83661",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_083662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83662",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_083665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83665",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_083666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83666",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_083667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83667",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_083668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83668",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

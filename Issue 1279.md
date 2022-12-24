@@ -3,7 +3,7 @@
 archive/issues_001279.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf you create an n x m matrix over ZZ in sage with n > m, then \nrun the LLL algorithm on it (fplll), Sage completely terminates.\n\n\n```\nsage: A = random_matrix(ZZ, 15, 10)\nsage: A.LLL()\nIll-formed matrix  : d>n\nbsd:~ was$ \n```\n\n\nPossible Solutions:\n1. trap bad conditions somewhere and raise an exception.\n\n2. Just immediately give an error in the A.LLL function if A is nonsquare (instead of letting fplll do this\n \n3. Put an error in the fplll wrapper code in libs/fplll\n\nIssue created by migration from https://trac.sagemath.org/ticket/1279\n\n",
+    "body": "Assignee: @williamstein\n\nIf you create an n x m matrix over ZZ in sage with n > m, then \nrun the LLL algorithm on it (fplll), Sage completely terminates.\n\n\n```\nsage: A = random_matrix(ZZ, 15, 10)\nsage: A.LLL()\nIll-formed matrix  : d>n\nbsd:~ was$ \n```\n\n\nPossible Solutions:\n1. trap bad conditions somewhere and raise an exception.\n\n2. Just immediately give an error in the A.LLL function if A is nonsquare (instead of letting fplll do this\n \n3. Put an error in the fplll wrapper code in libs/fplll\n\nIssue created by migration from https://trac.sagemath.org/ticket/1279\n\n",
     "created_at": "2007-11-26T08:38:20Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001279.json:
     "title": "LLL on \"tall\" matrices immediately crashes sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1279",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If you create an n x m matrix over ZZ in sage with n > m, then 
 run the LLL algorithm on it (fplll), Sage completely terminates.
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1279
 archive/issue_comments_008015.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-11-26T09:59:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8015",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -72,7 +72,7 @@ archive/issue_comments_008016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8016",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_008017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8017",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -107,16 +107,16 @@ Still, we should check for nr>nc ourselves to present a more userfriendly except
 archive/issue_comments_008018.json:
 ```json
 {
-    "body": "Attachment [trac_1279.patch](tarball://root/attachments/some-uuid/ticket1279/trac_1279.patch) by malb created at 2007-11-27 22:00:33",
+    "body": "Attachment [trac_1279.patch](tarball://root/attachments/some-uuid/ticket1279/trac_1279.patch) by @malb created at 2007-11-27 22:00:33",
     "created_at": "2007-11-27T22:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8018",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1279.patch](tarball://root/attachments/some-uuid/ticket1279/trac_1279.patch) by malb created at 2007-11-27 22:00:33
+Attachment [trac_1279.patch](tarball://root/attachments/some-uuid/ticket1279/trac_1279.patch) by @malb created at 2007-11-27 22:00:33
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_008019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8019",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_008020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8020",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_008021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8021",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_008022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1279#issuecomment-8022",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

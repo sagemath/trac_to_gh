@@ -3,7 +3,7 @@
 archive/issues_006985.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\nTiming differences:\n\n\n```\n{{{\nsage: f(x) = x^2                   \nsage: %time P = complex_plot(f, (-10, 10), (-10, 10))\nCPU times: user 1.99 s, sys: 0.00 s, total: 2.00 s\nWall time: 2.02 s\nsage: g = fast_callable(f, domain=CC, vars='x')\nsage: %time Q = complex_plot(g, (-10, 10), (-10, 10))\nCPU times: user 0.54 s, sys: 0.01 s, total: 0.55 s\nWall time: 0.57 s\nsage: h = fast_callable(f, domain=CDF, vars='x')\nsage: %time R = complex_plot(h, (-10, 10), (-10, 10))\nCPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s\nWall time: 0.21 s\n}}}\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6985\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nTiming differences:\n\n\n```\n{{{\nsage: f(x) = x^2                   \nsage: %time P = complex_plot(f, (-10, 10), (-10, 10))\nCPU times: user 1.99 s, sys: 0.00 s, total: 2.00 s\nWall time: 2.02 s\nsage: g = fast_callable(f, domain=CC, vars='x')\nsage: %time Q = complex_plot(g, (-10, 10), (-10, 10))\nCPU times: user 0.54 s, sys: 0.01 s, total: 0.55 s\nWall time: 0.57 s\nsage: h = fast_callable(f, domain=CDF, vars='x')\nsage: %time R = complex_plot(h, (-10, 10), (-10, 10))\nCPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s\nWall time: 0.21 s\n}}}\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6985\n\n",
     "created_at": "2009-09-22T14:32:34Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_006985.json:
     "title": "complex_plot needs to use fast_callable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6985",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Timing differences:
 
@@ -57,7 +57,7 @@ archive/issue_comments_057765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57765",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -70,16 +70,16 @@ Do this and/or #6947 address the issues with complex_plot not plotting some func
 archive/issue_comments_057766.json:
 ```json
 {
-    "body": "Attachment [trac_6985.patch](tarball://root/attachments/some-uuid/ticket6985/trac_6985.patch) by mhansen created at 2009-09-24 06:41:19",
+    "body": "Attachment [trac_6985.patch](tarball://root/attachments/some-uuid/ticket6985/trac_6985.patch) by @mwhansen created at 2009-09-24 06:41:19",
     "created_at": "2009-09-24T06:41:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57766",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6985.patch](tarball://root/attachments/some-uuid/ticket6985/trac_6985.patch) by mhansen created at 2009-09-24 06:41:19
+Attachment [trac_6985.patch](tarball://root/attachments/some-uuid/ticket6985/trac_6985.patch) by @mwhansen created at 2009-09-24 06:41:19
 
 
 
@@ -88,16 +88,16 @@ Attachment [trac_6985.patch](tarball://root/attachments/some-uuid/ticket6985/tra
 archive/issue_comments_057767.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2009-09-24T06:44:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57767",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_057768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57768",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_057769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57769",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_057770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57770",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_057771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57771",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_057772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57772",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_057773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57773",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_057774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57774",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_057775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57775",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_057776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57776",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_057777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57777",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_057778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57778",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_057779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57779",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_057780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57780",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_057781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57781",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_057782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57782",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -455,16 +455,16 @@ Nope, this patch is ready to go in (maybe after you add a patch with the doctest
 archive/issue_comments_057783.json:
 ```json
 {
-    "body": "Attachment [trac-6985-CDF-domain.patch](tarball://root/attachments/some-uuid/ticket6985/trac-6985-CDF-domain.patch) by jason created at 2009-09-25 06:06:28\n\napply on top of previous patch",
+    "body": "Attachment [trac-6985-CDF-domain.patch](tarball://root/attachments/some-uuid/ticket6985/trac-6985-CDF-domain.patch) by @jasongrout created at 2009-09-25 06:06:28\n\napply on top of previous patch",
     "created_at": "2009-09-25T06:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57783",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6985-CDF-domain.patch](tarball://root/attachments/some-uuid/ticket6985/trac-6985-CDF-domain.patch) by jason created at 2009-09-25 06:06:28
+Attachment [trac-6985-CDF-domain.patch](tarball://root/attachments/some-uuid/ticket6985/trac-6985-CDF-domain.patch) by @jasongrout created at 2009-09-25 06:06:28
 
 apply on top of previous patch
 
@@ -480,7 +480,7 @@ archive/issue_comments_057784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57784",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_057785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57785",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -511,16 +511,16 @@ Apply on top of first patch, instead of other CDF patch
 archive/issue_comments_057786.json:
 ```json
 {
-    "body": "Attachment [trac_6985-CDF_and_reviewer.patch](tarball://root/attachments/some-uuid/ticket6985/trac_6985-CDF_and_reviewer.patch) by kcrisman created at 2009-09-25 13:32:32\n\nOkay, positive review.  I put the example I wanted under tests instead, because it's really noticeably slower.",
+    "body": "Attachment [trac_6985-CDF_and_reviewer.patch](tarball://root/attachments/some-uuid/ticket6985/trac_6985-CDF_and_reviewer.patch) by @kcrisman created at 2009-09-25 13:32:32\n\nOkay, positive review.  I put the example I wanted under tests instead, because it's really noticeably slower.",
     "created_at": "2009-09-25T13:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57786",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6985-CDF_and_reviewer.patch](tarball://root/attachments/some-uuid/ticket6985/trac_6985-CDF_and_reviewer.patch) by kcrisman created at 2009-09-25 13:32:32
+Attachment [trac_6985-CDF_and_reviewer.patch](tarball://root/attachments/some-uuid/ticket6985/trac_6985-CDF_and_reviewer.patch) by @kcrisman created at 2009-09-25 13:32:32
 
 Okay, positive review.  I put the example I wanted under tests instead, because it's really noticeably slower.
 
@@ -536,7 +536,7 @@ archive/issue_comments_057787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6985#issuecomment-57787",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

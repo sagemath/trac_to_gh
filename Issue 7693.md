@@ -14,7 +14,7 @@ archive/issues_007693.json:
     "title": "the lrs SPKG.txt is not very useful.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7693",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -89,7 +89,7 @@ archive/issue_comments_066010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7693#issuecomment-66010",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_066011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7693#issuecomment-66011",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

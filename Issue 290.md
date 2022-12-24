@@ -14,7 +14,7 @@ archive/issues_000290.json:
     "title": "Converting Pari multivariate polynomials  to MPolynomials doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/290",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -44,7 +44,7 @@ archive/issue_comments_001365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/290#issuecomment-1365",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -57,16 +57,16 @@ Changing status from new to assigned.
 archive/issue_comments_001366.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2007-02-24T05:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/290#issuecomment-1366",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_001368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/290#issuecomment-1368",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_001369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/290",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/290#issuecomment-1369",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

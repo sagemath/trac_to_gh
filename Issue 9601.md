@@ -3,7 +3,7 @@
 archive/issues_009601.json:
 ```json
 {
-    "body": "Assignee: pjeremy\n\ncvxopt requires C99 math functions that are not part of the base FreeBSD libraries.  #9543 uses cephes to provide these missing functions but referencing them requires that cvxopt search $SAGE_LOCAL/include.  The attached patch modified spkg-install to\ninclude this.\n\nThis patch is local to Sage and does not need to be reported upstream.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9601\n\n",
+    "body": "Assignee: @peterjeremy\n\ncvxopt requires C99 math functions that are not part of the base FreeBSD libraries.  #9543 uses cephes to provide these missing functions but referencing them requires that cvxopt search $SAGE_LOCAL/include.  The attached patch modified spkg-install to\ninclude this.\n\nThis patch is local to Sage and does not need to be reported upstream.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9601\n\n",
     "created_at": "2010-07-26T11:12:31Z",
     "labels": [
         "porting: BSD",
@@ -14,10 +14,10 @@ archive/issues_009601.json:
     "title": "Fix cvxopt on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9601",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: pjeremy
+Assignee: @peterjeremy
 
 cvxopt requires C99 math functions that are not part of the base FreeBSD libraries.  #9543 uses cephes to provide these missing functions but referencing them requires that cvxopt search $SAGE_LOCAL/include.  The attached patch modified spkg-install to
 include this.
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9601
 archive/issue_comments_092921.json:
 ```json
 {
-    "body": "Attachment [cvxopt-0.9.p8.patch](tarball://root/attachments/some-uuid/ticket9601/cvxopt-0.9.p8.patch) by schilly created at 2010-07-27 13:53:48\n\nhi, i think this should be coordinated with #6456",
+    "body": "Attachment [cvxopt-0.9.p8.patch](tarball://root/attachments/some-uuid/ticket9601/cvxopt-0.9.p8.patch) by @haraldschilly created at 2010-07-27 13:53:48\n\nhi, i think this should be coordinated with #6456",
     "created_at": "2010-07-27T13:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9601#issuecomment-92921",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [cvxopt-0.9.p8.patch](tarball://root/attachments/some-uuid/ticket9601/cvxopt-0.9.p8.patch) by schilly created at 2010-07-27 13:53:48
+Attachment [cvxopt-0.9.p8.patch](tarball://root/attachments/some-uuid/ticket9601/cvxopt-0.9.p8.patch) by @haraldschilly created at 2010-07-27 13:53:48
 
 hi, i think this should be coordinated with #6456
 
@@ -60,7 +60,7 @@ archive/issue_comments_092922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9601#issuecomment-92922",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_092926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9601#issuecomment-92926",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_092927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9601#issuecomment-92927",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_092928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9601#issuecomment-92928",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_092929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9601#issuecomment-92929",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_092930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9601#issuecomment-92930",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_092933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9601#issuecomment-92933",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_092934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9601#issuecomment-92934",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_092935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9601#issuecomment-92935",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_092936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9601#issuecomment-92936",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_092937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9601",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9601#issuecomment-92937",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005874.json:
     "title": "[with patch, needs review] Fix readline build on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5874",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 Assignee: mabshoff
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5874
 archive/issue_comments_046403.json:
 ```json
 {
-    "body": "Attachment [readline-5.2.p6.patch](tarball://root/attachments/some-uuid/ticket5874/readline-5.2.p6.patch) by pjeremy created at 2009-04-23 08:48:23",
+    "body": "Attachment [readline-5.2.p6.patch](tarball://root/attachments/some-uuid/ticket5874/readline-5.2.p6.patch) by @peterjeremy created at 2009-04-23 08:48:23",
     "created_at": "2009-04-23T08:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5874#issuecomment-46403",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [readline-5.2.p6.patch](tarball://root/attachments/some-uuid/ticket5874/readline-5.2.p6.patch) by pjeremy created at 2009-04-23 08:48:23
+Attachment [readline-5.2.p6.patch](tarball://root/attachments/some-uuid/ticket5874/readline-5.2.p6.patch) by @peterjeremy created at 2009-04-23 08:48:23
 
 
 
@@ -52,16 +52,16 @@ Attachment [readline-5.2.p6.patch](tarball://root/attachments/some-uuid/ticket58
 archive/issue_comments_046404.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-20T02:26:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5874#issuecomment-46404",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_046405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5874#issuecomment-46405",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_046406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5874#issuecomment-46406",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_046407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5874#issuecomment-46407",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

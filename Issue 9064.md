@@ -14,7 +14,7 @@ archive/issues_009064.json:
     "title": "remove p-adic matrix directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9064",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -39,7 +39,7 @@ archive/issue_comments_084114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9064#issuecomment-84114",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_084115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9064#issuecomment-84115",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_084116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9064#issuecomment-84116",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_084117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9064#issuecomment-84117",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -139,16 +139,16 @@ Remove matrix/padics.
 archive/issue_comments_084118.json:
 ```json
 {
-    "body": "Attachment [trac_9064-remove_padic_matrix.patch](tarball://root/attachments/some-uuid/ticket9064/trac_9064-remove_padic_matrix.patch) by mpatel created at 2010-08-31 02:06:01\n\nReplying to [comment:1 was]:\n> So there is no patch to post, and I take David Roe's statement (above) as a positive review.\n\nI've attached a patch made with the Mercurial queues extension.",
+    "body": "Attachment [trac_9064-remove_padic_matrix.patch](tarball://root/attachments/some-uuid/ticket9064/trac_9064-remove_padic_matrix.patch) by @qed777 created at 2010-08-31 02:06:01\n\nReplying to [comment:1 was]:\n> So there is no patch to post, and I take David Roe's statement (above) as a positive review.\n\nI've attached a patch made with the Mercurial queues extension.",
     "created_at": "2010-08-31T02:06:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9064#issuecomment-84118",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9064-remove_padic_matrix.patch](tarball://root/attachments/some-uuid/ticket9064/trac_9064-remove_padic_matrix.patch) by mpatel created at 2010-08-31 02:06:01
+Attachment [trac_9064-remove_padic_matrix.patch](tarball://root/attachments/some-uuid/ticket9064/trac_9064-remove_padic_matrix.patch) by @qed777 created at 2010-08-31 02:06:01
 
 Replying to [comment:1 was]:
 > So there is no patch to post, and I take David Roe's statement (above) as a positive review.
@@ -167,7 +167,7 @@ archive/issue_comments_084119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9064#issuecomment-84119",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

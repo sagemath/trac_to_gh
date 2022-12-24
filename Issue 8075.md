@@ -3,7 +3,7 @@
 archive/issues_008075.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cremona\n\nThe sage/eclib interface is rather old and could be simplified and made more efficient, probably after a major change to eclib to remove the NTL/LiDIA duality which has never been used by Sage and is essentially dead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8075\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nThe sage/eclib interface is rather old and could be simplified and made more efficient, probably after a major change to eclib to remove the NTL/LiDIA duality which has never been used by Sage and is essentially dead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8075\n\n",
     "created_at": "2010-01-26T09:26:57Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_008075.json:
     "title": "Enhance sage/eclib interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8075",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cremona
+CC:  @JohnCremona
 
 The sage/eclib interface is rather old and could be simplified and made more efficient, probably after a major change to eclib to remove the NTL/LiDIA duality which has never been used by Sage and is essentially dead.
 
@@ -39,7 +39,7 @@ archive/issue_comments_070751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8075#issuecomment-70751",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_070752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8075#issuecomment-70752",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_070753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8075#issuecomment-70753",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_070754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8075#issuecomment-70754",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_070755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8075#issuecomment-70755",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_070756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8075#issuecomment-70756",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_070757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8075#issuecomment-70757",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_070758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8075#issuecomment-70758",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

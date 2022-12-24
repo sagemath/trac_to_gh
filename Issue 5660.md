@@ -3,7 +3,7 @@
 archive/issues_005660.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jcooley\n\nThere is one special case of count_points that could be massively faster.  This should definitely be optimized!\n\n\n```\nsage: E = EllipticCurve(GF(97),[1,2])\nsage: time E.count_points(1)\n[104]\nTime: CPU 1.91 s, Wall: 1.93 s\nsage: time E.cardinality()\n104\nTime: CPU 0.00 s, Wall: 0.18 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5660\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  jcooley\n\nThere is one special case of count_points that could be massively faster.  This should definitely be optimized!\n\n\n```\nsage: E = EllipticCurve(GF(97),[1,2])\nsage: time E.count_points(1)\n[104]\nTime: CPU 1.91 s, Wall: 1.93 s\nsage: time E.cardinality()\n104\nTime: CPU 0.00 s, Wall: 0.18 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5660\n\n",
     "created_at": "2009-04-01T17:27:14Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005660.json:
     "title": "count_points(1) for elliptic curves over finite fields is stupid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5660",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  jcooley
 
@@ -51,7 +51,7 @@ archive/issue_comments_044246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5660#issuecomment-44246",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -64,16 +64,16 @@ I think that count_points is some general scheme thing.  All that needs doing is
 archive/issue_comments_044247.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-21T08:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5660#issuecomment-44247",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_044248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5660#issuecomment-44248",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_044249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5660#issuecomment-44249",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_044250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5660#issuecomment-44250",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -136,16 +136,16 @@ Applies to 4.1.1
 archive/issue_comments_044251.json:
 ```json
 {
-    "body": "Attachment [trac_5660-count_points.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660-count_points.patch) by cremona created at 2009-08-18 10:39:05\n\nThe patch follows the above suggestion, and also overwrites the rational_points() function for elliptic curves over finite fields to be synonymous to points().",
+    "body": "Attachment [trac_5660-count_points.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660-count_points.patch) by @JohnCremona created at 2009-08-18 10:39:05\n\nThe patch follows the above suggestion, and also overwrites the rational_points() function for elliptic curves over finite fields to be synonymous to points().",
     "created_at": "2009-08-18T10:39:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5660#issuecomment-44251",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5660-count_points.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660-count_points.patch) by cremona created at 2009-08-18 10:39:05
+Attachment [trac_5660-count_points.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660-count_points.patch) by @JohnCremona created at 2009-08-18 10:39:05
 
 The patch follows the above suggestion, and also overwrites the rational_points() function for elliptic curves over finite fields to be synonymous to points().
 
@@ -161,7 +161,7 @@ archive/issue_comments_044252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5660#issuecomment-44252",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -174,16 +174,16 @@ Apply after previous
 archive/issue_comments_044253.json:
 ```json
 {
-    "body": "Attachment [trac_5660-doc_fixes.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660-doc_fixes.patch) by AlexGhitza created at 2009-08-19 10:11:54\n\nLooks good and passes tests.",
+    "body": "Attachment [trac_5660-doc_fixes.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660-doc_fixes.patch) by @aghitza created at 2009-08-19 10:11:54\n\nLooks good and passes tests.",
     "created_at": "2009-08-19T10:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5660#issuecomment-44253",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5660-doc_fixes.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660-doc_fixes.patch) by AlexGhitza created at 2009-08-19 10:11:54
+Attachment [trac_5660-doc_fixes.patch](tarball://root/attachments/some-uuid/ticket5660/trac_5660-doc_fixes.patch) by @aghitza created at 2009-08-19 10:11:54
 
 Looks good and passes tests.
 
@@ -235,7 +235,7 @@ archive/issue_comments_044255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5660#issuecomment-44255",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_044256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5660#issuecomment-44256",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_044259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5660#issuecomment-44259",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005589.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: combinat, binomial coefficients\n\nbinomial() returns zero when its \"numerator\" is a negative integer, but gets it right for floating point numbers:\n\n```\nsage: binomial(-1, 5)\n0\nsage: binomial(-2, 5)\n0\nsage: binomial(-2.0, 5)\n-6.00000000000000\nsage: binomial(-1.0, 5)\n-1.00000000000000\nsage: binomial(-7, 5)  \n0\nsage: binomial(-7.0, 5)\n-462.000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5589\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: combinat, binomial coefficients\n\nbinomial() returns zero when its \"numerator\" is a negative integer, but gets it right for floating point numbers:\n\n```\nsage: binomial(-1, 5)\n0\nsage: binomial(-2, 5)\n0\nsage: binomial(-2.0, 5)\n-6.00000000000000\nsage: binomial(-1.0, 5)\n-1.00000000000000\nsage: binomial(-7, 5)  \n0\nsage: binomial(-7.0, 5)\n-462.000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5589\n\n",
     "created_at": "2009-03-23T09:35:20Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005589.json:
     "title": "binomial() doesn't work with negative integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5589",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5589
 archive/issue_comments_043556.json:
 ```json
 {
-    "body": "Attachment [trac_5589.patch](tarball://root/attachments/some-uuid/ticket5589/trac_5589.patch) by ddrake created at 2009-03-24 01:29:48",
+    "body": "Attachment [trac_5589.patch](tarball://root/attachments/some-uuid/ticket5589/trac_5589.patch) by @dandrake created at 2009-03-24 01:29:48",
     "created_at": "2009-03-24T01:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5589",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5589#issuecomment-43556",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5589.patch](tarball://root/attachments/some-uuid/ticket5589/trac_5589.patch) by ddrake created at 2009-03-24 01:29:48
+Attachment [trac_5589.patch](tarball://root/attachments/some-uuid/ticket5589/trac_5589.patch) by @dandrake created at 2009-03-24 01:29:48
 
 
 

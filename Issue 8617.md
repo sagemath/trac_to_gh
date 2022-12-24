@@ -3,7 +3,7 @@
 archive/issues_008617.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8617\n\n",
+    "body": "Assignee: @loefflerd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8617\n\n",
     "created_at": "2010-03-27T23:25:24Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_008617.json:
     "title": "Add galrep by Drew Sutherland to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8617",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8617
 archive/issue_comments_078085.json:
 ```json
 {
-    "body": "Attachment [trac_8617.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617.patch) by was created at 2010-03-27 23:25:55",
+    "body": "Attachment [trac_8617.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617.patch) by @williamstein created at 2010-03-27 23:25:55",
     "created_at": "2010-03-27T23:25:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78085",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8617.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617.patch) by was created at 2010-03-27 23:25:55
+Attachment [trac_8617.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617.patch) by @williamstein created at 2010-03-27 23:25:55
 
 
 
@@ -50,16 +50,16 @@ Attachment [trac_8617.patch](tarball://root/attachments/some-uuid/ticket8617/tra
 archive/issue_comments_078086.json:
 ```json
 {
-    "body": "Attachment [galrep_gl2data.dat](tarball://root/attachments/some-uuid/ticket8617/galrep_gl2data.dat) by was created at 2010-03-27 23:26:31",
+    "body": "Attachment [galrep_gl2data.dat](tarball://root/attachments/some-uuid/ticket8617/galrep_gl2data.dat) by @williamstein created at 2010-03-27 23:26:31",
     "created_at": "2010-03-27T23:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78086",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [galrep_gl2data.dat](tarball://root/attachments/some-uuid/ticket8617/galrep_gl2data.dat) by was created at 2010-03-27 23:26:31
+Attachment [galrep_gl2data.dat](tarball://root/attachments/some-uuid/ticket8617/galrep_gl2data.dat) by @williamstein created at 2010-03-27 23:26:31
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_078087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78087",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_078088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78088",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_078089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78089",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -122,16 +122,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_078090.json:
 ```json
 {
-    "body": "Attachment [trac_8617-part2.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617-part2.patch) by rlm created at 2010-05-27 23:12:50\n\nI will review this ticket, as long as someone else makes the necessary changes to the extcode spkg to include the `galrep_*.dat` files in the appropriate manner.",
+    "body": "Attachment [trac_8617-part2.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617-part2.patch) by @rlmill created at 2010-05-27 23:12:50\n\nI will review this ticket, as long as someone else makes the necessary changes to the extcode spkg to include the `galrep_*.dat` files in the appropriate manner.",
     "created_at": "2010-05-27T23:12:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78090",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8617-part2.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617-part2.patch) by rlm created at 2010-05-27 23:12:50
+Attachment [trac_8617-part2.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617-part2.patch) by @rlmill created at 2010-05-27 23:12:50
 
 I will review this ticket, as long as someone else makes the necessary changes to the extcode spkg to include the `galrep_*.dat` files in the appropriate manner.
 
@@ -147,7 +147,7 @@ archive/issue_comments_078091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78091",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -160,16 +160,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_078092.json:
 ```json
 {
-    "body": "Attachment [trac_8617-part3.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617-part3.patch) by rlm created at 2010-06-17 17:04:06\n\nPS - I don't think this is quite the right way to update extcode... I didn't realize I had done 'alpha0' --> 'alpha1'. I suppose the release manager would just add the \"galrep\" directory to the data/extcode directory, which would then be included in the new extcode spkg automatically by the dist script (Is this correct?)",
+    "body": "Attachment [trac_8617-part3.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617-part3.patch) by @rlmill created at 2010-06-17 17:04:06\n\nPS - I don't think this is quite the right way to update extcode... I didn't realize I had done 'alpha0' --> 'alpha1'. I suppose the release manager would just add the \"galrep\" directory to the data/extcode directory, which would then be included in the new extcode spkg automatically by the dist script (Is this correct?)",
     "created_at": "2010-06-17T17:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78092",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8617-part3.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617-part3.patch) by rlm created at 2010-06-17 17:04:06
+Attachment [trac_8617-part3.patch](tarball://root/attachments/some-uuid/ticket8617/trac_8617-part3.patch) by @rlmill created at 2010-06-17 17:04:06
 
 PS - I don't think this is quite the right way to update extcode... I didn't realize I had done 'alpha0' --> 'alpha1'. I suppose the release manager would just add the "galrep" directory to the data/extcode directory, which would then be included in the new extcode spkg automatically by the dist script (Is this correct?)
 
@@ -185,7 +185,7 @@ archive/issue_comments_078093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78093",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_078094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78094",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_078095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78095",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_078096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78096",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_078097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78097",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_078098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78098",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_078099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78099",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_078100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78100",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_078101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8617#issuecomment-78101",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

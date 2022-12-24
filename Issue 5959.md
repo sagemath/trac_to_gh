@@ -14,7 +14,7 @@ archive/issues_005959.json:
     "title": "Better doctest for __cmp__ in primes.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5959",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: mabshoff
@@ -60,7 +60,7 @@ archive/issue_comments_047198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5959#issuecomment-47198",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

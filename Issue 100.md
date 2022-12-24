@@ -3,7 +3,7 @@
 archive/issues_000100.json:
 ```json
 {
-    "body": "Assignee: was\n\nExample:\n\n```\nFile \"element.py\", line 507:\n    sage: f.mod( (x - y, y - z) )\nException raised:\n    Traceback (most recent call last):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/100\n\n",
+    "body": "Assignee: @williamstein\n\nExample:\n\n```\nFile \"element.py\", line 507:\n    sage: f.mod( (x - y, y - z) )\nException raised:\n    Traceback (most recent call last):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/100\n\n",
     "created_at": "2006-09-30T21:47:46Z",
     "labels": [
         "user interface",
@@ -13,10 +13,10 @@ archive/issues_000100.json:
     "title": "sage doctest system -- when it tests a pyrex file it still describes it as a .py file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/100",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Example:
 
@@ -44,7 +44,7 @@ archive/issue_comments_000474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/100#issuecomment-474",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_000475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/100",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/100#issuecomment-475",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

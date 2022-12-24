@@ -14,7 +14,7 @@ archive/issues_001864.json:
     "title": "simple notebook bug -- typing ? in a comment yields introspection but shouldn't (easy to fix in worksheet.py, probably)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1864",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -62,7 +62,7 @@ archive/issue_comments_011804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1864#issuecomment-11804",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -78,16 +78,16 @@ http://sage.math.washington.edu/home/was/tmp/screenshot-comment.png
 archive/issue_comments_011805.json:
 ```json
 {
-    "body": "Attachment [sage-1864.patch](tarball://root/attachments/some-uuid/ticket1864/sage-1864.patch) by was created at 2008-05-11 06:06:32",
+    "body": "Attachment [sage-1864.patch](tarball://root/attachments/some-uuid/ticket1864/sage-1864.patch) by @williamstein created at 2008-05-11 06:06:32",
     "created_at": "2008-05-11T06:06:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1864#issuecomment-11805",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-1864.patch](tarball://root/attachments/some-uuid/ticket1864/sage-1864.patch) by was created at 2008-05-11 06:06:32
+Attachment [sage-1864.patch](tarball://root/attachments/some-uuid/ticket1864/sage-1864.patch) by @williamstein created at 2008-05-11 06:06:32
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_011807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1864#issuecomment-11807",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

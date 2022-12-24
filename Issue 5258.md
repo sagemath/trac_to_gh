@@ -14,7 +14,7 @@ archive/issues_005258.json:
     "title": "escape html strings with cgi.escape instead of custom (and lacking) regexp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5258",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5258
 archive/issue_comments_040354.json:
 ```json
 {
-    "body": "Attachment [trac_5258-escape-with-cgi.patch](tarball://root/attachments/some-uuid/ticket5258/trac_5258-escape-with-cgi.patch) by jason created at 2009-02-13 19:11:03",
+    "body": "Attachment [trac_5258-escape-with-cgi.patch](tarball://root/attachments/some-uuid/ticket5258/trac_5258-escape-with-cgi.patch) by @jasongrout created at 2009-02-13 19:11:03",
     "created_at": "2009-02-13T19:11:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5258#issuecomment-40354",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5258-escape-with-cgi.patch](tarball://root/attachments/some-uuid/ticket5258/trac_5258-escape-with-cgi.patch) by jason created at 2009-02-13 19:11:03
+Attachment [trac_5258-escape-with-cgi.patch](tarball://root/attachments/some-uuid/ticket5258/trac_5258-escape-with-cgi.patch) by @jasongrout created at 2009-02-13 19:11:03
 
 
 
@@ -56,7 +56,7 @@ archive/issue_comments_040355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5258#issuecomment-40355",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -69,16 +69,16 @@ archive/issue_comments_040355.json:
 archive/issue_comments_040356.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2009-02-13T23:08:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5258#issuecomment-40356",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_040357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5258#issuecomment-40357",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_040360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5258#issuecomment-40360",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_040361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5258#issuecomment-40361",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

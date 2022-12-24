@@ -14,7 +14,7 @@ archive/issues_005176.json:
     "title": "notebook chokes horribly on Umlautes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5176",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: boothby
@@ -68,16 +68,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5176
 archive/issue_comments_039648.json:
 ```json
 {
-    "body": "Attachment [trac_5176.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.patch) by malb created at 2009-02-05 17:46:33",
+    "body": "Attachment [trac_5176.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.patch) by @malb created at 2009-02-05 17:46:33",
     "created_at": "2009-02-05T17:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39648",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_5176.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.patch) by malb created at 2009-02-05 17:46:33
+Attachment [trac_5176.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.patch) by @malb created at 2009-02-05 17:46:33
 
 
 
@@ -86,16 +86,16 @@ Attachment [trac_5176.patch](tarball://root/attachments/some-uuid/ticket5176/tra
 archive/issue_comments_039649.json:
 ```json
 {
-    "body": "Attachment [trac_5176.2.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.2.patch) by jason created at 2009-02-05 19:17:40\n\npatch looks good, fixes the crashing for me, and is doctested.  Positive review.",
+    "body": "Attachment [trac_5176.2.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.2.patch) by @jasongrout created at 2009-02-05 19:17:40\n\npatch looks good, fixes the crashing for me, and is doctested.  Positive review.",
     "created_at": "2009-02-05T19:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39649",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5176.2.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.2.patch) by jason created at 2009-02-05 19:17:40
+Attachment [trac_5176.2.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.2.patch) by @jasongrout created at 2009-02-05 19:17:40
 
 patch looks good, fixes the crashing for me, and is doctested.  Positive review.
 
@@ -111,7 +111,7 @@ archive/issue_comments_039650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39650",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_039654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39654",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

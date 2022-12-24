@@ -3,7 +3,7 @@
 archive/issues_009015.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  vbraun\n\nI was looking over the shoulder of a new user as he started Sage for the first time and typed `?` on the command line. This shows the IPython help text which doesn't mention Sage at all.\n\nWe should change this to show the text displayed with `help()`.\n\nPrinting some more information when someone types `help` without the parenthesis would also be nice.\n\n\n```\nsage: help\n<function help at 0x1d6fc80>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9015\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @vbraun\n\nI was looking over the shoulder of a new user as he started Sage for the first time and typed `?` on the command line. This shows the IPython help text which doesn't mention Sage at all.\n\nWe should change this to show the text displayed with `help()`.\n\nPrinting some more information when someone types `help` without the parenthesis would also be nice.\n\n\n```\nsage: help\n<function help at 0x1d6fc80>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9015\n\n",
     "created_at": "2010-05-22T11:39:16Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009015.json:
     "title": "typing `?` on the command line brings up IPython help",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9015",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: mvngu
 
-CC:  vbraun
+CC:  @vbraun
 
 I was looking over the shoulder of a new user as he started Sage for the first time and typed `?` on the command line. This shows the IPython help text which doesn't mention Sage at all.
 
@@ -50,7 +50,7 @@ archive/issue_comments_083383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9015#issuecomment-83383",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_083384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9015#issuecomment-83384",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_083385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9015#issuecomment-83385",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_083386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9015#issuecomment-83386",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_083387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9015#issuecomment-83387",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_083388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9015#issuecomment-83388",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_083390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9015#issuecomment-83390",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_083391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9015#issuecomment-83391",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_083392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9015#issuecomment-83392",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_083393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9015#issuecomment-83393",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_083394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9015",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9015#issuecomment-83394",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

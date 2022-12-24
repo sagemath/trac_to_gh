@@ -3,7 +3,7 @@
 archive/issues_009088.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  kcrisman mhampton\n\nRight now, this fails:\n\n\n```\nline3d(( (0,0,0), (1,2,3) ))\n```\n\n\nsince the copy of the input data is not converted to a list.  This is an easy fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9088\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman mhampton\n\nRight now, this fails:\n\n\n```\nline3d(( (0,0,0), (1,2,3) ))\n```\n\n\nsince the copy of the input data is not converted to a list.  This is an easy fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9088\n\n",
     "created_at": "2010-05-29T19:47:00Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009088.json:
     "title": "line3d does not take a tuple of points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9088",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  kcrisman mhampton
+CC:  @kcrisman mhampton
 
 Right now, this fails:
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9088
 archive/issue_comments_084397.json:
 ```json
 {
-    "body": "Attachment [trac-9088-line3d-list-copy.2.patch](tarball://root/attachments/some-uuid/ticket9088/trac-9088-line3d-list-copy.2.patch) by jason created at 2010-05-29 19:52:11",
+    "body": "Attachment [trac-9088-line3d-list-copy.2.patch](tarball://root/attachments/some-uuid/ticket9088/trac-9088-line3d-list-copy.2.patch) by @jasongrout created at 2010-05-29 19:52:11",
     "created_at": "2010-05-29T19:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84397",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9088-line3d-list-copy.2.patch](tarball://root/attachments/some-uuid/ticket9088/trac-9088-line3d-list-copy.2.patch) by jason created at 2010-05-29 19:52:11
+Attachment [trac-9088-line3d-list-copy.2.patch](tarball://root/attachments/some-uuid/ticket9088/trac-9088-line3d-list-copy.2.patch) by @jasongrout created at 2010-05-29 19:52:11
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_084398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84398",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_084399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84399",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_084400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84400",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_084401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84401",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_084402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84402",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_084403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84403",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_084404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84404",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

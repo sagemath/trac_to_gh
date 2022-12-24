@@ -14,7 +14,7 @@ archive/issues_001000.json:
     "title": "Sage does not have 10000 users yet.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1000",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1000
 archive/issue_comments_006088.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2007-10-25T16:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6088",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_006089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6089",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_006090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6090",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_006091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6091",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_006092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6092",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_006093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6093",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_006094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1000",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1000#issuecomment-6094",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

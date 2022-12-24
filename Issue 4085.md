@@ -14,7 +14,7 @@ archive/issues_004085.json:
     "title": "[with patch, needs review] high precision real literals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4085",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: jkantor
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4085
 archive/issue_comments_029473.json:
 ```json
 {
-    "body": "Attachment [4085-real-literals.patch](tarball://root/attachments/some-uuid/ticket4085/4085-real-literals.patch) by robertwb created at 2008-09-09 08:12:01",
+    "body": "Attachment [4085-real-literals.patch](tarball://root/attachments/some-uuid/ticket4085/4085-real-literals.patch) by @robertwb created at 2008-09-09 08:12:01",
     "created_at": "2008-09-09T08:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29473",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4085-real-literals.patch](tarball://root/attachments/some-uuid/ticket4085/4085-real-literals.patch) by robertwb created at 2008-09-09 08:12:01
+Attachment [4085-real-literals.patch](tarball://root/attachments/some-uuid/ticket4085/4085-real-literals.patch) by @robertwb created at 2008-09-09 08:12:01
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_029474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29474",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -270,16 +270,16 @@ exit code: 1024
 archive/issue_comments_029476.json:
 ```json
 {
-    "body": "Attachment [trac_4805-fixes.patch](tarball://root/attachments/some-uuid/ticket4085/trac_4805-fixes.patch) by mhansen created at 2008-09-13 00:51:39",
+    "body": "Attachment [trac_4805-fixes.patch](tarball://root/attachments/some-uuid/ticket4085/trac_4805-fixes.patch) by @mwhansen created at 2008-09-13 00:51:39",
     "created_at": "2008-09-13T00:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29476",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4805-fixes.patch](tarball://root/attachments/some-uuid/ticket4085/trac_4805-fixes.patch) by mhansen created at 2008-09-13 00:51:39
+Attachment [trac_4805-fixes.patch](tarball://root/attachments/some-uuid/ticket4085/trac_4805-fixes.patch) by @mwhansen created at 2008-09-13 00:51:39
 
 
 

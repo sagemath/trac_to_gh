@@ -14,7 +14,7 @@ archive/issues_007677.json:
     "title": "sage-4.3.rc0: powerpc g5 doctest blockers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7677",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7677
 archive/issue_comments_065850.json:
 ```json
 {
-    "body": "Attachment [trac_7677.patch](tarball://root/attachments/some-uuid/ticket7677/trac_7677.patch) by mhansen created at 2009-12-14 17:13:47",
+    "body": "Attachment [trac_7677.patch](tarball://root/attachments/some-uuid/ticket7677/trac_7677.patch) by @mwhansen created at 2009-12-14 17:13:47",
     "created_at": "2009-12-14T17:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7677#issuecomment-65850",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7677.patch](tarball://root/attachments/some-uuid/ticket7677/trac_7677.patch) by mhansen created at 2009-12-14 17:13:47
+Attachment [trac_7677.patch](tarball://root/attachments/some-uuid/ticket7677/trac_7677.patch) by @mwhansen created at 2009-12-14 17:13:47
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_065851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7677#issuecomment-65851",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_065852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7677#issuecomment-65852",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_065853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7677",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7677#issuecomment-65853",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

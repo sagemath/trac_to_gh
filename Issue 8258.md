@@ -3,7 +3,7 @@
 archive/issues_008258.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri\n\nAs of Sage-4.3.2 (and since quite some versions before now), if you newly install Sage from a binary distribution, and type \"make\" in the SAGE_ROOT directory, then the build process will re-create all of the documentation, although this had been part of the bdist already, and the contents didn't change and will be the same.\n\nTo be crystal clear: this ticket is not about detaching the creation of the docs from the make/build process (that is the topic of trac ticket #7943).\n\nThis ticket here is about the annoying fact that Sphinx (?) obviously uses mechanisms to detect whether to rebuild the ReST docs or not, that are insufficient in important use cases for Sage!\n\nAnother use case is simple relocation (hence the name of the ticket). I just tested it, having completed one (superfluous) make run as described above, then move this entire Sage install to some other directory, type make (the focus *is* on the documentation part here) again --- and it's Groundhog Day again ... (re-building all of this documentation takes on my 2 GHz, 2GB machine more than one and a half hours!)\n\nI guess cloning is \"only\" just another instance suffering from the same basic problem, i.e. correctly deciding whether the contents of documentation files are outdated and have to be rebuilt --- or not.\n\nProbably one can use some functionalities provided by SCons, e.g. like using MD5 hashes instead of timestamps, or like using a decent database to store the metadata (instead of pickling), to resolve the issue.\n\n(I do think that we need to rewrite ourselves some of the respective parts of Sphinx here. I don't think that would be many lines of code, though, and possibly upstream considers to incorporate these changes.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8258\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nAs of Sage-4.3.2 (and since quite some versions before now), if you newly install Sage from a binary distribution, and type \"make\" in the SAGE_ROOT directory, then the build process will re-create all of the documentation, although this had been part of the bdist already, and the contents didn't change and will be the same.\n\nTo be crystal clear: this ticket is not about detaching the creation of the docs from the make/build process (that is the topic of trac ticket #7943).\n\nThis ticket here is about the annoying fact that Sphinx (?) obviously uses mechanisms to detect whether to rebuild the ReST docs or not, that are insufficient in important use cases for Sage!\n\nAnother use case is simple relocation (hence the name of the ticket). I just tested it, having completed one (superfluous) make run as described above, then move this entire Sage install to some other directory, type make (the focus *is* on the documentation part here) again --- and it's Groundhog Day again ... (re-building all of this documentation takes on my 2 GHz, 2GB machine more than one and a half hours!)\n\nI guess cloning is \"only\" just another instance suffering from the same basic problem, i.e. correctly deciding whether the contents of documentation files are outdated and have to be rebuilt --- or not.\n\nProbably one can use some functionalities provided by SCons, e.g. like using MD5 hashes instead of timestamps, or like using a decent database to store the metadata (instead of pickling), to resolve the issue.\n\n(I do think that we need to rewrite ourselves some of the respective parts of Sphinx here. I don't think that would be many lines of code, though, and possibly upstream considers to incorporate these changes.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8258\n\n",
     "created_at": "2010-02-13T21:47:26Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008258.json:
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 As of Sage-4.3.2 (and since quite some versions before now), if you newly install Sage from a binary distribution, and type "make" in the SAGE_ROOT directory, then the build process will re-create all of the documentation, although this had been part of the bdist already, and the contents didn't change and will be the same.
 
@@ -51,7 +51,7 @@ archive/issue_comments_073078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8258#issuecomment-73078",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -114,16 +114,16 @@ Cheers, Georg
 archive/issue_comments_073080.json:
 ```json
 {
-    "body": "Attachment [environment.py](tarball://root/attachments/some-uuid/ticket8258/environment.py) by mpatel created at 2010-02-19 07:43:33\n\nUse hashes instead of mtimes to get outdated docs.  Not a patch.",
+    "body": "Attachment [environment.py](tarball://root/attachments/some-uuid/ticket8258/environment.py) by @qed777 created at 2010-02-19 07:43:33\n\nUse hashes instead of mtimes to get outdated docs.  Not a patch.",
     "created_at": "2010-02-19T07:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8258#issuecomment-73080",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [environment.py](tarball://root/attachments/some-uuid/ticket8258/environment.py) by mpatel created at 2010-02-19 07:43:33
+Attachment [environment.py](tarball://root/attachments/some-uuid/ticket8258/environment.py) by @qed777 created at 2010-02-19 07:43:33
 
 Use hashes instead of mtimes to get outdated docs.  Not a patch.
 
@@ -139,7 +139,7 @@ archive/issue_comments_073081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8258#issuecomment-73081",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_073082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8258#issuecomment-73082",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_073083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8258#issuecomment-73083",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_073084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8258#issuecomment-73084",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_073085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8258#issuecomment-73085",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_073086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8258#issuecomment-73086",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_073087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8258#issuecomment-73087",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_073088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8258#issuecomment-73088",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_073089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8258#issuecomment-73089",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003236.json:
     "title": "[with patch; needs review] cygwin -- quaddouble -- get it to work with cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3236",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

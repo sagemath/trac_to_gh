@@ -14,7 +14,7 @@ archive/issues_003762.json:
     "title": "remove quaddouble from sage -- not used, source of pain, mpfr is better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3762",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -41,7 +41,7 @@ archive/issue_comments_026746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3762#issuecomment-26746",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -69,16 +69,16 @@ Carl
 archive/issue_comments_026747.json:
 ```json
 {
-    "body": "Attachment [3762-partitions-tests.patch](tarball://root/attachments/some-uuid/ticket3762/3762-partitions-tests.patch) by robertwb created at 2009-01-22 09:47:11\n\nadds a test code wrapper for sage",
+    "body": "Attachment [3762-partitions-tests.patch](tarball://root/attachments/some-uuid/ticket3762/3762-partitions-tests.patch) by @robertwb created at 2009-01-22 09:47:11\n\nadds a test code wrapper for sage",
     "created_at": "2009-01-22T09:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3762#issuecomment-26747",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3762-partitions-tests.patch](tarball://root/attachments/some-uuid/ticket3762/3762-partitions-tests.patch) by robertwb created at 2009-01-22 09:47:11
+Attachment [3762-partitions-tests.patch](tarball://root/attachments/some-uuid/ticket3762/3762-partitions-tests.patch) by @robertwb created at 2009-01-22 09:47:11
 
 adds a test code wrapper for sage
 
@@ -89,16 +89,16 @@ adds a test code wrapper for sage
 archive/issue_comments_026748.json:
 ```json
 {
-    "body": "Attachment [3762-partitions-qd.patch](tarball://root/attachments/some-uuid/ticket3762/3762-partitions-qd.patch) by robertwb created at 2009-01-22 09:47:50\n\nmakes qd dependance of partitions optional",
+    "body": "Attachment [3762-partitions-qd.patch](tarball://root/attachments/some-uuid/ticket3762/3762-partitions-qd.patch) by @robertwb created at 2009-01-22 09:47:50\n\nmakes qd dependance of partitions optional",
     "created_at": "2009-01-22T09:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3762#issuecomment-26748",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3762-partitions-qd.patch](tarball://root/attachments/some-uuid/ticket3762/3762-partitions-qd.patch) by robertwb created at 2009-01-22 09:47:50
+Attachment [3762-partitions-qd.patch](tarball://root/attachments/some-uuid/ticket3762/3762-partitions-qd.patch) by @robertwb created at 2009-01-22 09:47:50
 
 makes qd dependance of partitions optional
 
@@ -114,7 +114,7 @@ archive/issue_comments_026749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3762#issuecomment-26749",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -127,16 +127,16 @@ I removed the quad-double dependancy from the partitions counting code, but ther
 archive/issue_comments_026750.json:
 ```json
 {
-    "body": "Attachment [3762-remove-qd.patch](tarball://root/attachments/some-uuid/ticket3762/3762-remove-qd.patch) by robertwb created at 2009-01-23 02:37:58",
+    "body": "Attachment [3762-remove-qd.patch](tarball://root/attachments/some-uuid/ticket3762/3762-remove-qd.patch) by @robertwb created at 2009-01-23 02:37:58",
     "created_at": "2009-01-23T02:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3762#issuecomment-26750",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3762-remove-qd.patch](tarball://root/attachments/some-uuid/ticket3762/3762-remove-qd.patch) by robertwb created at 2009-01-23 02:37:58
+Attachment [3762-remove-qd.patch](tarball://root/attachments/some-uuid/ticket3762/3762-remove-qd.patch) by @robertwb created at 2009-01-23 02:37:58
 
 
 
@@ -145,16 +145,16 @@ Attachment [3762-remove-qd.patch](tarball://root/attachments/some-uuid/ticket376
 archive/issue_comments_026751.json:
 ```json
 {
-    "body": "Attachment [3762-qd-real-roots.patch](tarball://root/attachments/some-uuid/ticket3762/3762-qd-real-roots.patch) by robertwb created at 2009-01-23 03:44:43\n\nThis removes all sage dependancies on quaddouble, but leaves it in to be deprecated for a while. \n\nSome issues that need to be dealt with are (1) the speed regression in partitions and (2) whether the fix for real_roots would better be extracting fpu_fix from the qd autoconf script. Perhaps if qd is present, we could detect it and compile the above with the qd routines.",
+    "body": "Attachment [3762-qd-real-roots.patch](tarball://root/attachments/some-uuid/ticket3762/3762-qd-real-roots.patch) by @robertwb created at 2009-01-23 03:44:43\n\nThis removes all sage dependancies on quaddouble, but leaves it in to be deprecated for a while. \n\nSome issues that need to be dealt with are (1) the speed regression in partitions and (2) whether the fix for real_roots would better be extracting fpu_fix from the qd autoconf script. Perhaps if qd is present, we could detect it and compile the above with the qd routines.",
     "created_at": "2009-01-23T03:44:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3762#issuecomment-26751",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3762-qd-real-roots.patch](tarball://root/attachments/some-uuid/ticket3762/3762-qd-real-roots.patch) by robertwb created at 2009-01-23 03:44:43
+Attachment [3762-qd-real-roots.patch](tarball://root/attachments/some-uuid/ticket3762/3762-qd-real-roots.patch) by @robertwb created at 2009-01-23 03:44:43
 
 This removes all sage dependancies on quaddouble, but leaves it in to be deprecated for a while. 
 
@@ -172,7 +172,7 @@ archive/issue_comments_026752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3762#issuecomment-26752",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -270,16 +270,16 @@ NOTE: you should not delete the quaddouble package, since this code still links 
 archive/issue_comments_026753.json:
 ```json
 {
-    "body": "Attachment [3762-qd-fixes.patch](tarball://root/attachments/some-uuid/ticket3762/3762-qd-fixes.patch) by robertwb created at 2009-01-24 03:06:54",
+    "body": "Attachment [3762-qd-fixes.patch](tarball://root/attachments/some-uuid/ticket3762/3762-qd-fixes.patch) by @robertwb created at 2009-01-24 03:06:54",
     "created_at": "2009-01-24T03:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3762#issuecomment-26753",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3762-qd-fixes.patch](tarball://root/attachments/some-uuid/ticket3762/3762-qd-fixes.patch) by robertwb created at 2009-01-24 03:06:54
+Attachment [3762-qd-fixes.patch](tarball://root/attachments/some-uuid/ticket3762/3762-qd-fixes.patch) by @robertwb created at 2009-01-24 03:06:54
 
 
 
@@ -293,7 +293,7 @@ archive/issue_comments_026754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3762#issuecomment-26754",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

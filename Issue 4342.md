@@ -3,7 +3,7 @@
 archive/issues_004342.json:
 ```json
 {
-    "body": "Assignee: anakha\n\nCC:  kcrisman slosoi novoselt abergeron jhpalmieri mvngu\n\nAdd support for placing legends on plots using the matplotlib facility for doing so.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4342\n\n",
+    "body": "Assignee: anakha\n\nCC:  @kcrisman slosoi @novoselt abergeron @jhpalmieri mvngu\n\nAdd support for placing legends on plots using the matplotlib facility for doing so.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4342\n\n",
     "created_at": "2008-10-22T22:48:14Z",
     "labels": [
         "graphics",
@@ -19,7 +19,7 @@ archive/issues_004342.json:
 ```
 Assignee: anakha
 
-CC:  kcrisman slosoi novoselt abergeron jhpalmieri mvngu
+CC:  @kcrisman slosoi @novoselt abergeron @jhpalmieri mvngu
 
 Add support for placing legends on plots using the matplotlib facility for doing so.
 
@@ -259,16 +259,16 @@ Mvngu, in the future please upload patches with your doc fixes. Thanks :)
 archive/issue_comments_031860.json:
 ```json
 {
-    "body": "Attachment [trac_4342.2.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342.2.patch) by mhansen created at 2008-11-28 07:10:53\n\nI've folded all the patches together and rebased them against plot.py refactoring.  These are in trac_4342.2.patch .\n\nI'll try to give this a proper review sometime this weekend.",
+    "body": "Attachment [trac_4342.2.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342.2.patch) by @mwhansen created at 2008-11-28 07:10:53\n\nI've folded all the patches together and rebased them against plot.py refactoring.  These are in trac_4342.2.patch .\n\nI'll try to give this a proper review sometime this weekend.",
     "created_at": "2008-11-28T07:10:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31860",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4342.2.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342.2.patch) by mhansen created at 2008-11-28 07:10:53
+Attachment [trac_4342.2.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342.2.patch) by @mwhansen created at 2008-11-28 07:10:53
 
 I've folded all the patches together and rebased them against plot.py refactoring.  These are in trac_4342.2.patch .
 
@@ -286,7 +286,7 @@ archive/issue_comments_031861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31861",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_031862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31862",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_031866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31866",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -460,7 +460,7 @@ archive/issue_comments_031868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31868",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -703,7 +703,7 @@ archive/issue_comments_031875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31875",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -721,7 +721,7 @@ archive/issue_comments_031876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31876",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -739,7 +739,7 @@ archive/issue_comments_031877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31877",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -757,7 +757,7 @@ archive/issue_comments_031878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31878",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -853,7 +853,7 @@ archive/issue_comments_031879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31879",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -930,7 +930,7 @@ archive/issue_comments_031881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31881",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -956,7 +956,7 @@ archive/issue_comments_031882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31882",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -979,7 +979,7 @@ archive/issue_comments_031883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31883",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1000,16 +1000,16 @@ Agreed.  Here is a preliminary and very naive rebase - it still needs some work 
 archive/issue_comments_031884.json:
 ```json
 {
-    "body": "Attachment [trac_4342-prelim.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-prelim.patch) by kcrisman created at 2010-01-04 02:59:03\n\nBased on 4.3",
+    "body": "Attachment [trac_4342-prelim.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-prelim.patch) by @kcrisman created at 2010-01-04 02:59:03\n\nBased on 4.3",
     "created_at": "2010-01-04T02:59:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31884",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4342-prelim.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-prelim.patch) by kcrisman created at 2010-01-04 02:59:03
+Attachment [trac_4342-prelim.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-prelim.patch) by @kcrisman created at 2010-01-04 02:59:03
 
 Based on 4.3
 
@@ -1025,7 +1025,7 @@ archive/issue_comments_031885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31885",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1043,7 +1043,7 @@ archive/issue_comments_031886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31886",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1061,7 +1061,7 @@ archive/issue_comments_031887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31887",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1093,7 +1093,7 @@ archive/issue_comments_031888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31888",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1111,7 +1111,7 @@ archive/issue_comments_031889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31889",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1236,7 +1236,7 @@ archive/issue_comments_031890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31890",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1272,7 +1272,7 @@ archive/issue_comments_031892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31892",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1290,7 +1290,7 @@ archive/issue_comments_031893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31893",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1303,16 +1303,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_031894.json:
 ```json
 {
-    "body": "Attachment [trac_4342-new.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-new.patch) by kcrisman created at 2010-05-26 14:11:19\n\nReady for review.  I made legend -> show_legend and that seems to clear up the problems with the `@`suboptions dictionary.  I expect it to be \"needs work\", by the way, but I want extensive testing of this.  Things to watch out for include:\n\n* Whether there are any missing/needed plot3d method removals\n\n* What the defaults should really be for all the legend_options; I don't think they are that good.\n\n* Whether there are any other places where a KeyError might arise.\n\nIncidentally, the rebase wasn't quite as bad as it seemed - the earlier patch for some reason was a \"double patch\" that sometimes occurs, as will be obvious if read the above (which I didn't).",
+    "body": "Attachment [trac_4342-new.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-new.patch) by @kcrisman created at 2010-05-26 14:11:19\n\nReady for review.  I made legend -> show_legend and that seems to clear up the problems with the `@`suboptions dictionary.  I expect it to be \"needs work\", by the way, but I want extensive testing of this.  Things to watch out for include:\n\n* Whether there are any missing/needed plot3d method removals\n\n* What the defaults should really be for all the legend_options; I don't think they are that good.\n\n* Whether there are any other places where a KeyError might arise.\n\nIncidentally, the rebase wasn't quite as bad as it seemed - the earlier patch for some reason was a \"double patch\" that sometimes occurs, as will be obvious if read the above (which I didn't).",
     "created_at": "2010-05-26T14:11:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31894",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4342-new.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-new.patch) by kcrisman created at 2010-05-26 14:11:19
+Attachment [trac_4342-new.patch](tarball://root/attachments/some-uuid/ticket4342/trac_4342-new.patch) by @kcrisman created at 2010-05-26 14:11:19
 
 Ready for review.  I made legend -> show_legend and that seems to clear up the problems with the `@`suboptions dictionary.  I expect it to be "needs work", by the way, but I want extensive testing of this.  Things to watch out for include:
 
@@ -1360,7 +1360,7 @@ archive/issue_comments_031896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31896",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1378,7 +1378,7 @@ archive/issue_comments_031897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31897",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1398,7 +1398,7 @@ archive/issue_comments_031898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31898",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1424,7 +1424,7 @@ archive/issue_comments_031899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31899",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1444,7 +1444,7 @@ archive/issue_comments_031900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31900",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1462,7 +1462,7 @@ archive/issue_comments_031901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31901",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1482,7 +1482,7 @@ archive/issue_comments_031902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31902",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1510,7 +1510,7 @@ archive/issue_comments_031903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31903",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1534,7 +1534,7 @@ archive/issue_comments_031904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31904",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1552,7 +1552,7 @@ archive/issue_comments_031905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31905",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1570,7 +1570,7 @@ archive/issue_comments_031906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31906",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1587,16 +1587,16 @@ Positive review.  Good job, everyone!  Sorry this took so long to review!
 archive/issue_comments_031907.json:
 ```json
 {
-    "body": "Attachment [trac-4342-rebase-4.6.alpha1.patch](tarball://root/attachments/some-uuid/ticket4342/trac-4342-rebase-4.6.alpha1.patch) by jason created at 2010-09-28 20:07:56\n\napply only this patch; rebased to 4.6.alpha1",
+    "body": "Attachment [trac-4342-rebase-4.6.alpha1.patch](tarball://root/attachments/some-uuid/ticket4342/trac-4342-rebase-4.6.alpha1.patch) by @jasongrout created at 2010-09-28 20:07:56\n\napply only this patch; rebased to 4.6.alpha1",
     "created_at": "2010-09-28T20:07:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31907",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-4342-rebase-4.6.alpha1.patch](tarball://root/attachments/some-uuid/ticket4342/trac-4342-rebase-4.6.alpha1.patch) by jason created at 2010-09-28 20:07:56
+Attachment [trac-4342-rebase-4.6.alpha1.patch](tarball://root/attachments/some-uuid/ticket4342/trac-4342-rebase-4.6.alpha1.patch) by @jasongrout created at 2010-09-28 20:07:56
 
 apply only this patch; rebased to 4.6.alpha1
 
@@ -1607,16 +1607,16 @@ apply only this patch; rebased to 4.6.alpha1
 archive/issue_comments_031908.json:
 ```json
 {
-    "body": "Attachment [4342-fix-docs.patch](tarball://root/attachments/some-uuid/ticket4342/4342-fix-docs.patch) by jason created at 2010-09-28 20:08:07\n\napply on top of previous patches",
+    "body": "Attachment [4342-fix-docs.patch](tarball://root/attachments/some-uuid/ticket4342/4342-fix-docs.patch) by @jasongrout created at 2010-09-28 20:08:07\n\napply on top of previous patches",
     "created_at": "2010-09-28T20:08:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31908",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [4342-fix-docs.patch](tarball://root/attachments/some-uuid/ticket4342/4342-fix-docs.patch) by jason created at 2010-09-28 20:08:07
+Attachment [4342-fix-docs.patch](tarball://root/attachments/some-uuid/ticket4342/4342-fix-docs.patch) by @jasongrout created at 2010-09-28 20:08:07
 
 apply on top of previous patches
 
@@ -1632,7 +1632,7 @@ archive/issue_comments_031909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31909",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1650,7 +1650,7 @@ archive/issue_comments_031910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31910",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1670,7 +1670,7 @@ archive/issue_comments_031911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31911",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1688,7 +1688,7 @@ archive/issue_comments_031912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31912",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1710,7 +1710,7 @@ archive/issue_comments_031913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4342#issuecomment-31913",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006398.json:
     "title": "shorten long doctests in sage/schemes/elliptic_curves/sha_tate.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6398",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tbd
@@ -46,7 +46,7 @@ archive/issue_comments_051397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6398#issuecomment-51397",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_051398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6398",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6398#issuecomment-51398",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001523.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis illustrates the unnecessary confusion:\n\n\n```\n> are working fine.  I'll try \"math\"....I have a currently executing (long\n> running) mathemataica simulation going, and it's fine.\n>\n> Bill\n>\n> \"math\" is not found on OSX terminal! neither is mathematica; sage brings up\n> a new SAGE notebook, and all of it \"runs\" except the calls to Maple (which I\n> don't have installed on this MAC) and Mathematica 6.0,which I do....so some\n> like we were getting (via airport????) is now missing....or something else.\n\nI probably didn't put the math script that I made somewhere in your PATH.\nI can't remember where I put it now, but that would be the problem.\nI really need to make Sage automatically do this (with no user intervention).\nCan you type\n\n locate math\n\nand send me the output, which will contain a script named \"math\"?\nThen you just have to move that script to /usr/bin/ so it is in you PATH.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1523\n\n",
+    "body": "Assignee: @williamstein\n\nThis illustrates the unnecessary confusion:\n\n\n```\n> are working fine.  I'll try \"math\"....I have a currently executing (long\n> running) mathemataica simulation going, and it's fine.\n>\n> Bill\n>\n> \"math\" is not found on OSX terminal! neither is mathematica; sage brings up\n> a new SAGE notebook, and all of it \"runs\" except the calls to Maple (which I\n> don't have installed on this MAC) and Mathematica 6.0,which I do....so some\n> like we were getting (via airport????) is now missing....or something else.\n\nI probably didn't put the math script that I made somewhere in your PATH.\nI can't remember where I put it now, but that would be the problem.\nI really need to make Sage automatically do this (with no user intervention).\nCan you type\n\n locate math\n\nand send me the output, which will contain a script named \"math\"?\nThen you just have to move that script to /usr/bin/ so it is in you PATH.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1523\n\n",
     "created_at": "2007-12-15T07:28:23Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001523.json:
     "title": "rewrite the mathematica/maple <---> sage interfaces for osx to be much easier to use for the \"lay person\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1523",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This illustrates the unnecessary confusion:
 
@@ -61,7 +61,7 @@ archive/issue_comments_009748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1523#issuecomment-9748",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_009749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1523#issuecomment-9749",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_009750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1523#issuecomment-9750",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

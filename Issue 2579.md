@@ -14,7 +14,7 @@ archive/issues_002579.json:
     "title": "Inconsistency in integer quotient",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2579",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 Assignee: somebody
@@ -50,7 +50,7 @@ archive/issue_comments_017640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2579#issuecomment-17640",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_017642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2579#issuecomment-17642",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -128,16 +128,16 @@ else:
 archive/issue_comments_017643.json:
 ```json
 {
-    "body": "Attachment [integerdiv.patch](tarball://root/attachments/some-uuid/ticket2579/integerdiv.patch) by rishi created at 2008-03-19 17:01:18",
+    "body": "Attachment [integerdiv.patch](tarball://root/attachments/some-uuid/ticket2579/integerdiv.patch) by @rishikesha created at 2008-03-19 17:01:18",
     "created_at": "2008-03-19T17:01:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2579#issuecomment-17643",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [integerdiv.patch](tarball://root/attachments/some-uuid/ticket2579/integerdiv.patch) by rishi created at 2008-03-19 17:01:18
+Attachment [integerdiv.patch](tarball://root/attachments/some-uuid/ticket2579/integerdiv.patch) by @rishikesha created at 2008-03-19 17:01:18
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_017644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2579#issuecomment-17644",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_017645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2579#issuecomment-17645",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

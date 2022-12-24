@@ -3,7 +3,7 @@
 archive/issues_002659.json:
 ```json
 {
-    "body": "Assignee: was\n\nSome of the code for computing the cardinality of an elliptic curve over a non-prime finite field manages to cache a value of type Rational  instead of Integer.  [This is caused by norms from orders being of type Rational -- see #2653.]\n\nAs a consequence the code for computing orders of points can fail to make use of the cached group order which sloes it down a lot (it has to use bsgs).\n\nExample:  before patching (2.11.alpha1)\n\n```\nsage: E=EllipticCurve(GF(next_prime(2**30)**2,'a'),[1,1])\nsage: P=E.random_point()\nsage: E.cardinality()\n1152921512387208375\nsage: P.order() #long time\n...\nsage: E.abelian_group() # long time\n...\n```\n\n\nAfter patching:\n\n```\nsage: E=EllipticCurve(GF(next_prime(2**30)**2,'a'),[1,1])\nsage: E.cardinality()\n1152921512387208375\nsage: P=E.random_point()\nsage: P.order()\n1152921512387208375\nsage: E.abelian_group()\n\n(Multiplicative Abelian Group isomorphic to C1152921512387208375,\n ((181097701*a + 46508078 : 638908311*a + 187734235 : 1),))\n```\n\n -- all very fast.\n\nAttached patch should apply to 2.11.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2659\n\n",
+    "body": "Assignee: @williamstein\n\nSome of the code for computing the cardinality of an elliptic curve over a non-prime finite field manages to cache a value of type Rational  instead of Integer.  [This is caused by norms from orders being of type Rational -- see #2653.]\n\nAs a consequence the code for computing orders of points can fail to make use of the cached group order which sloes it down a lot (it has to use bsgs).\n\nExample:  before patching (2.11.alpha1)\n\n```\nsage: E=EllipticCurve(GF(next_prime(2**30)**2,'a'),[1,1])\nsage: P=E.random_point()\nsage: E.cardinality()\n1152921512387208375\nsage: P.order() #long time\n...\nsage: E.abelian_group() # long time\n...\n```\n\n\nAfter patching:\n\n```\nsage: E=EllipticCurve(GF(next_prime(2**30)**2,'a'),[1,1])\nsage: E.cardinality()\n1152921512387208375\nsage: P=E.random_point()\nsage: P.order()\n1152921512387208375\nsage: E.abelian_group()\n\n(Multiplicative Abelian Group isomorphic to C1152921512387208375,\n ((181097701*a + 46508078 : 638908311*a + 187734235 : 1),))\n```\n\n -- all very fast.\n\nAttached patch should apply to 2.11.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2659\n\n",
     "created_at": "2008-03-24T12:01:44Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_002659.json:
     "title": "Elliptic curve cardinality sometimes Rational with bad consequences for efficiency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2659",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Some of the code for computing the cardinality of an elliptic curve over a non-prime finite field manages to cache a value of type Rational  instead of Integer.  [This is caused by norms from orders being of type Rational -- see #2653.]
 
@@ -67,16 +67,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2659
 archive/issue_comments_018304.json:
 ```json
 {
-    "body": "Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2659/9029.patch) by cremona created at 2008-03-24 12:02:05",
+    "body": "Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2659/9029.patch) by @JohnCremona created at 2008-03-24 12:02:05",
     "created_at": "2008-03-24T12:02:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2659#issuecomment-18304",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2659/9029.patch) by cremona created at 2008-03-24 12:02:05
+Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2659/9029.patch) by @JohnCremona created at 2008-03-24 12:02:05
 
 
 
@@ -85,16 +85,16 @@ Attachment [9029.patch](tarball://root/attachments/some-uuid/ticket2659/9029.pat
 archive/issue_comments_018305.json:
 ```json
 {
-    "body": "Attachment [2659-ec-cardinality.patch](tarball://root/attachments/some-uuid/ticket2659/2659-ec-cardinality.patch) by robertwb created at 2008-03-26 11:37:59",
+    "body": "Attachment [2659-ec-cardinality.patch](tarball://root/attachments/some-uuid/ticket2659/2659-ec-cardinality.patch) by @robertwb created at 2008-03-26 11:37:59",
     "created_at": "2008-03-26T11:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2659#issuecomment-18305",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2659-ec-cardinality.patch](tarball://root/attachments/some-uuid/ticket2659/2659-ec-cardinality.patch) by robertwb created at 2008-03-26 11:37:59
+Attachment [2659-ec-cardinality.patch](tarball://root/attachments/some-uuid/ticket2659/2659-ec-cardinality.patch) by @robertwb created at 2008-03-26 11:37:59
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_018306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2659#issuecomment-18306",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_018307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2659#issuecomment-18307",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -145,16 +145,16 @@ I also have waiting: a patch for abelian_group() which sppeds up the place where
 archive/issue_comments_018308.json:
 ```json
 {
-    "body": "Attachment [9122.patch](tarball://root/attachments/some-uuid/ticket2659/9122.patch) by cremona created at 2008-04-03 21:56:47",
+    "body": "Attachment [9122.patch](tarball://root/attachments/some-uuid/ticket2659/9122.patch) by @JohnCremona created at 2008-04-03 21:56:47",
     "created_at": "2008-04-03T21:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2659#issuecomment-18308",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [9122.patch](tarball://root/attachments/some-uuid/ticket2659/9122.patch) by cremona created at 2008-04-03 21:56:47
+Attachment [9122.patch](tarball://root/attachments/some-uuid/ticket2659/9122.patch) by @JohnCremona created at 2008-04-03 21:56:47
 
 
 
@@ -163,16 +163,16 @@ Attachment [9122.patch](tarball://root/attachments/some-uuid/ticket2659/9122.pat
 archive/issue_comments_018309.json:
 ```json
 {
-    "body": "Attachment [9123.patch](tarball://root/attachments/some-uuid/ticket2659/9123.patch) by cremona created at 2008-04-03 21:58:39\n\nDespite the patch at #2653 making sure that the trace of Frobenius is always Integer and not Rational, the trace (and hence the cardinality) still sometimes ended up as Rational.\n\n9122.patch followed by 9123.patch sorts this out, and also tidies up the handling of the exceptional cases where Frobenius is actually an Integer and the Frobenius Order is Z.  With added doctests.\nThe first two patches on this ticket can now be ignored; the latter two are based on 2.11.\n\nNB The handling of cardinality in case j=0 and j=1728 is still incomplete but will be patched separately.",
+    "body": "Attachment [9123.patch](tarball://root/attachments/some-uuid/ticket2659/9123.patch) by @JohnCremona created at 2008-04-03 21:58:39\n\nDespite the patch at #2653 making sure that the trace of Frobenius is always Integer and not Rational, the trace (and hence the cardinality) still sometimes ended up as Rational.\n\n9122.patch followed by 9123.patch sorts this out, and also tidies up the handling of the exceptional cases where Frobenius is actually an Integer and the Frobenius Order is Z.  With added doctests.\nThe first two patches on this ticket can now be ignored; the latter two are based on 2.11.\n\nNB The handling of cardinality in case j=0 and j=1728 is still incomplete but will be patched separately.",
     "created_at": "2008-04-03T21:58:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2659#issuecomment-18309",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [9123.patch](tarball://root/attachments/some-uuid/ticket2659/9123.patch) by cremona created at 2008-04-03 21:58:39
+Attachment [9123.patch](tarball://root/attachments/some-uuid/ticket2659/9123.patch) by @JohnCremona created at 2008-04-03 21:58:39
 
 Despite the patch at #2653 making sure that the trace of Frobenius is always Integer and not Rational, the trace (and hence the cardinality) still sometimes ended up as Rational.
 
@@ -193,7 +193,7 @@ archive/issue_comments_018310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2659#issuecomment-18310",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_018311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2659#issuecomment-18311",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

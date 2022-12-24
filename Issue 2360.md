@@ -3,7 +3,7 @@
 archive/issues_002360.json:
 ```json
 {
-    "body": "Assignee: was\n\nI made a stupid error plugging a list into a polynomial, but it uncovered this very strange bug:\n\n\n```\nsage: R.<x,y,z,u,v,w>=ZZ[]\nsage: P.<a>=ZZ[]\nsage: e=[x^2,y^3]\nsage: f=6*a^4\nsage: f(x)\n6*x^4\nsage: f(e)\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\nsage: f(x)\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\n```\n\n\nNotice that the plugging in the list seemed to ruin the polynomial good and proper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2360\n\n",
+    "body": "Assignee: @williamstein\n\nI made a stupid error plugging a list into a polynomial, but it uncovered this very strange bug:\n\n\n```\nsage: R.<x,y,z,u,v,w>=ZZ[]\nsage: P.<a>=ZZ[]\nsage: e=[x^2,y^3]\nsage: f=6*a^4\nsage: f(x)\n6*x^4\nsage: f(e)\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\nsage: f(x)\nException exceptions.TypeError: \"can't multiply sequence by non-int of type 'list'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand type(s) for *: 'NoneType' and 'NoneType'\" in 'sage.rings.polynomial.polynomial_compiled.sqr_pd.eval' ignored\nException exceptions.TypeError: \"unsupported operand parent(s) for '*': 'Integer Ring' and '<type 'NoneType'>'\" in 'sage.rings.polynomial.polynomial_compiled.mul_pd.eval' ignored\n```\n\n\nNotice that the plugging in the list seemed to ruin the polynomial good and proper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2360\n\n",
     "created_at": "2008-03-01T16:52:49Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_002360.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I made a stupid error plugging a list into a polynomial, but it uncovered this very strange bug:
 
@@ -53,7 +53,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2360
 archive/issue_comments_015910.json:
 ```json
 {
-    "body": "Changing assignee from was to somebody.",
+    "body": "Changing assignee from @williamstein to somebody.",
     "created_at": "2008-03-01T16:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2360",
     "type": "issue_comment",
@@ -62,7 +62,7 @@ archive/issue_comments_015910.json:
 }
 ```
 
-Changing assignee from was to somebody.
+Changing assignee from @williamstein to somebody.
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_015913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2360#issuecomment-15913",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_015914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2360#issuecomment-15914",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -160,16 +160,16 @@ The patch fixes the issue, but I'd rather have the original error about multiply
 archive/issue_comments_015915.json:
 ```json
 {
-    "body": "Attachment [trac_2360_fix.patch](tarball://root/attachments/some-uuid/ticket2360/trac_2360_fix.patch) by malb created at 2009-01-24 12:42:22",
+    "body": "Attachment [trac_2360_fix.patch](tarball://root/attachments/some-uuid/ticket2360/trac_2360_fix.patch) by @malb created at 2009-01-24 12:42:22",
     "created_at": "2009-01-24T12:42:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2360#issuecomment-15915",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_2360_fix.patch](tarball://root/attachments/some-uuid/ticket2360/trac_2360_fix.patch) by malb created at 2009-01-24 12:42:22
+Attachment [trac_2360_fix.patch](tarball://root/attachments/some-uuid/ticket2360/trac_2360_fix.patch) by @malb created at 2009-01-24 12:42:22
 
 
 
@@ -183,7 +183,7 @@ archive/issue_comments_015916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2360#issuecomment-15916",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_015917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2360#issuecomment-15917",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

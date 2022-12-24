@@ -3,7 +3,7 @@
 archive/issues_002485.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  ncalexan\n\nKeywords: elliptic curves\n\nFollowing Doc Days 2 on 2008-03-09 I am working on making the docstrings and tests for schemes/elliptic_curves as complete as I can.  A patch based on 2.10.3 will be posted here in time for 2.10.4, I hope.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2485\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @ncalexan\n\nKeywords: elliptic curves\n\nFollowing Doc Days 2 on 2008-03-09 I am working on making the docstrings and tests for schemes/elliptic_curves as complete as I can.  A patch based on 2.10.3 will be posted here in time for 2.10.4, I hope.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2485\n\n",
     "created_at": "2008-03-12T09:25:54Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_002485.json:
     "title": "Complete docstrings and doctests for schemes/elliptic_curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2485",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: elliptic curves
 
@@ -42,7 +42,7 @@ archive/issue_comments_016834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2485#issuecomment-16834",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_016835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2485#issuecomment-16835",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -77,16 +77,16 @@ Thanks Nick, that will be very helpful.  It's unlikely that we will conflict.  T
 archive/issue_comments_016836.json:
 ```json
 {
-    "body": "Attachment [8866.patch](tarball://root/attachments/some-uuid/ticket2485/8866.patch) by cremona created at 2008-03-14 17:56:02",
+    "body": "Attachment [8866.patch](tarball://root/attachments/some-uuid/ticket2485/8866.patch) by @JohnCremona created at 2008-03-14 17:56:02",
     "created_at": "2008-03-14T17:56:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2485#issuecomment-16836",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8866.patch](tarball://root/attachments/some-uuid/ticket2485/8866.patch) by cremona created at 2008-03-14 17:56:02
+Attachment [8866.patch](tarball://root/attachments/some-uuid/ticket2485/8866.patch) by @JohnCremona created at 2008-03-14 17:56:02
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_016837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2485#issuecomment-16837",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_016838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2485#issuecomment-16838",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_016839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2485#issuecomment-16839",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -234,16 +234,16 @@ and change the code to raise ValueError; it seems more appropriate than KeyError
 archive/issue_comments_016840.json:
 ```json
 {
-    "body": "Attachment [8867.patch](tarball://root/attachments/some-uuid/ticket2485/8867.patch) by cremona created at 2008-03-14 19:52:28\n\nApply after 8866.patch",
+    "body": "Attachment [8867.patch](tarball://root/attachments/some-uuid/ticket2485/8867.patch) by @JohnCremona created at 2008-03-14 19:52:28\n\nApply after 8866.patch",
     "created_at": "2008-03-14T19:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2485#issuecomment-16840",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8867.patch](tarball://root/attachments/some-uuid/ticket2485/8867.patch) by cremona created at 2008-03-14 19:52:28
+Attachment [8867.patch](tarball://root/attachments/some-uuid/ticket2485/8867.patch) by @JohnCremona created at 2008-03-14 19:52:28
 
 Apply after 8866.patch
 
@@ -259,7 +259,7 @@ archive/issue_comments_016841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2485#issuecomment-16841",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_016842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2485#issuecomment-16842",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

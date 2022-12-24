@@ -3,7 +3,7 @@
 archive/issues_004823.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cpernet\n\nThe fix at #3887 computes way to many primes, making det and hnf very slow. The attached patch resolves this issue and still gives correct output. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4823\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ClementPernet\n\nThe fix at #3887 computes way to many primes, making det and hnf very slow. The attached patch resolves this issue and still gives correct output. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4823\n\n",
     "created_at": "2008-12-18T00:26:15Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_004823.json:
     "title": "[with patch, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4823",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cpernet
+CC:  @ClementPernet
 
 The fix at #3887 computes way to many primes, making det and hnf very slow. The attached patch resolves this issue and still gives correct output. 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4823
 archive/issue_comments_036568.json:
 ```json
 {
-    "body": "Attachment [4823-faster-fix.patch](tarball://root/attachments/some-uuid/ticket4823/4823-faster-fix.patch) by robertwb created at 2008-12-18 00:27:01",
+    "body": "Attachment [4823-faster-fix.patch](tarball://root/attachments/some-uuid/ticket4823/4823-faster-fix.patch) by @robertwb created at 2008-12-18 00:27:01",
     "created_at": "2008-12-18T00:27:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4823#issuecomment-36568",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4823-faster-fix.patch](tarball://root/attachments/some-uuid/ticket4823/4823-faster-fix.patch) by robertwb created at 2008-12-18 00:27:01
+Attachment [4823-faster-fix.patch](tarball://root/attachments/some-uuid/ticket4823/4823-faster-fix.patch) by @robertwb created at 2008-12-18 00:27:01
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_036569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4823#issuecomment-36569",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_036570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4823#issuecomment-36570",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_036571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4823#issuecomment-36571",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_036572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4823#issuecomment-36572",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_036573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4823#issuecomment-36573",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_036574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4823#issuecomment-36574",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

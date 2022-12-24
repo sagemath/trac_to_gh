@@ -3,7 +3,7 @@
 archive/issues_009351.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  ddrake drkirkby mpatel\n\nThe prerequisites (given in spkg/standard/deps)  for building the sagetex package are just python, but if you build Sage with SAGE_CHECK=\"yes\", then it tries to run the test suite for sagetex, which requires that all of Sage be installed.  This will fail unless you get lucky and sagetex is installed after Sage. With the new parallel spkg building (#8306), I frequently see sagetex built before Sage.\n\nTo fix this, let's make gap a prerequisite for sagetex.  Since sage is a prerequisite for gap, this should work.  (I don't know if anything in the sagetex test suite uses gap, but it might.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9351\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @dandrake drkirkby @qed777\n\nThe prerequisites (given in spkg/standard/deps)  for building the sagetex package are just python, but if you build Sage with SAGE_CHECK=\"yes\", then it tries to run the test suite for sagetex, which requires that all of Sage be installed.  This will fail unless you get lucky and sagetex is installed after Sage. With the new parallel spkg building (#8306), I frequently see sagetex built before Sage.\n\nTo fix this, let's make gap a prerequisite for sagetex.  Since sage is a prerequisite for gap, this should work.  (I don't know if anything in the sagetex test suite uses gap, but it might.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9351\n\n",
     "created_at": "2010-06-27T16:37:43Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009351.json:
     "title": "deps for sagetex with SAGE_CHECK='yes'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9351",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  ddrake drkirkby mpatel
+CC:  @dandrake drkirkby @qed777
 
 The prerequisites (given in spkg/standard/deps)  for building the sagetex package are just python, but if you build Sage with SAGE_CHECK="yes", then it tries to run the test suite for sagetex, which requires that all of Sage be installed.  This will fail unless you get lucky and sagetex is installed after Sage. With the new parallel spkg building (#8306), I frequently see sagetex built before Sage.
 
@@ -55,7 +55,7 @@ Changing component from algebra to spkg-check.
 archive/issue_comments_088761.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to tbd.",
+    "body": "Changing assignee from @aghitza to tbd.",
     "created_at": "2010-06-27T16:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_088761.json:
 }
 ```
 
-Changing assignee from AlexGhitza to tbd.
+Changing assignee from @aghitza to tbd.
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_088763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9351#issuecomment-88763",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_088764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9351#issuecomment-88764",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -193,16 +193,16 @@ Dave
 archive/issue_comments_088766.json:
 ```json
 {
-    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9351/deps) by jhpalmieri created at 2010-07-03 17:39:43\n\nthe file SAGE_ROOT/spkg/standard/deps",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9351/deps) by @jhpalmieri created at 2010-07-03 17:39:43\n\nthe file SAGE_ROOT/spkg/standard/deps",
     "created_at": "2010-07-03T17:39:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9351#issuecomment-88766",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [deps](tarball://root/attachments/some-uuid/ticket9351/deps) by jhpalmieri created at 2010-07-03 17:39:43
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9351/deps) by @jhpalmieri created at 2010-07-03 17:39:43
 
 the file SAGE_ROOT/spkg/standard/deps
 
@@ -218,7 +218,7 @@ archive/issue_comments_088767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9351#issuecomment-88767",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -231,16 +231,16 @@ diff between original deps and new one
 archive/issue_comments_088768.json:
 ```json
 {
-    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9351/deps.diff) by jhpalmieri created at 2010-07-03 17:40:46\n\nI'll say again:  various calls in Sage end up calling gap in the background -- not explicitly, but in the background.  I haven't looked at the tests in sagetex to know if they use any group theory, for example, but if they do, they could very well try to use gap.  I think other components of Sage use gap as well.\n\n```\n## Dependencies\n\nTo install, nothing more than a standard Sage install.\n```\n\nAnd a standard Sage install includes gap.  That is, there are plenty of doctests in Sage which would fail if gap were not installed.  I don't know what would happen for the tests in sagetex if gap were not installed.\n\nWe could list both Sage and gap as dependencies for sagetex, and also put in a comment about it if you think that's necessary.  What I would really like to guarantee is that all of the other Sage spkgs have been installed before sagetex is, in order to guarantee a \"standard Sage install\", but I don't know how to do that.\n\nI'm attaching new versions.",
+    "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9351/deps.diff) by @jhpalmieri created at 2010-07-03 17:40:46\n\nI'll say again:  various calls in Sage end up calling gap in the background -- not explicitly, but in the background.  I haven't looked at the tests in sagetex to know if they use any group theory, for example, but if they do, they could very well try to use gap.  I think other components of Sage use gap as well.\n\n```\n## Dependencies\n\nTo install, nothing more than a standard Sage install.\n```\n\nAnd a standard Sage install includes gap.  That is, there are plenty of doctests in Sage which would fail if gap were not installed.  I don't know what would happen for the tests in sagetex if gap were not installed.\n\nWe could list both Sage and gap as dependencies for sagetex, and also put in a comment about it if you think that's necessary.  What I would really like to guarantee is that all of the other Sage spkgs have been installed before sagetex is, in order to guarantee a \"standard Sage install\", but I don't know how to do that.\n\nI'm attaching new versions.",
     "created_at": "2010-07-03T17:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9351#issuecomment-88768",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9351/deps.diff) by jhpalmieri created at 2010-07-03 17:40:46
+Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9351/deps.diff) by @jhpalmieri created at 2010-07-03 17:40:46
 
 I'll say again:  various calls in Sage end up calling gap in the background -- not explicitly, but in the background.  I haven't looked at the tests in sagetex to know if they use any group theory, for example, but if they do, they could very well try to use gap.  I think other components of Sage use gap as well.
 
@@ -310,7 +310,7 @@ archive/issue_comments_088771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9351#issuecomment-88771",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_088772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9351#issuecomment-88772",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_088773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9351#issuecomment-88773",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_088774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9351#issuecomment-88774",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_088775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9351#issuecomment-88775",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_088778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9351#issuecomment-88778",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_088779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9351#issuecomment-88779",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000647.json:
     "title": "create a quaternion algebra element class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/647",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/647
 archive/issue_comments_003362.json:
 ```json
 {
-    "body": "Attachment [quatalgelm.hg](tarball://root/attachments/some-uuid/ticket647/quatalgelm.hg) by was created at 2007-09-13 14:07:24",
+    "body": "Attachment [quatalgelm.hg](tarball://root/attachments/some-uuid/ticket647/quatalgelm.hg) by @williamstein created at 2007-09-13 14:07:24",
     "created_at": "2007-09-13T14:07:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/647#issuecomment-3362",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [quatalgelm.hg](tarball://root/attachments/some-uuid/ticket647/quatalgelm.hg) by was created at 2007-09-13 14:07:24
+Attachment [quatalgelm.hg](tarball://root/attachments/some-uuid/ticket647/quatalgelm.hg) by @williamstein created at 2007-09-13 14:07:24
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_003363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/647#issuecomment-3363",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_003364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/647#issuecomment-3364",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,16 +98,16 @@ OK, I just looked at it, and it *has* no doctests at all for the new functions i
 archive/issue_comments_003365.json:
 ```json
 {
-    "body": "Attachment [newquatalgelm.hg](tarball://root/attachments/some-uuid/ticket647/newquatalgelm.hg) by AlexGhitza created at 2007-09-20 15:39:17\n\nI inserted doctests and attached the new version newquatalgelm.hg.",
+    "body": "Attachment [newquatalgelm.hg](tarball://root/attachments/some-uuid/ticket647/newquatalgelm.hg) by @aghitza created at 2007-09-20 15:39:17\n\nI inserted doctests and attached the new version newquatalgelm.hg.",
     "created_at": "2007-09-20T15:39:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/647#issuecomment-3365",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [newquatalgelm.hg](tarball://root/attachments/some-uuid/ticket647/newquatalgelm.hg) by AlexGhitza created at 2007-09-20 15:39:17
+Attachment [newquatalgelm.hg](tarball://root/attachments/some-uuid/ticket647/newquatalgelm.hg) by @aghitza created at 2007-09-20 15:39:17
 
 I inserted doctests and attached the new version newquatalgelm.hg.
 
@@ -123,7 +123,7 @@ archive/issue_comments_003366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/647#issuecomment-3366",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

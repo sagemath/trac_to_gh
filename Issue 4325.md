@@ -3,7 +3,7 @@
 archive/issues_004325.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: mathematica\n\nUsing 3.1.2 on sage.math:\n\n```\nsage: mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]')\n         -0.105203133241753451256 + 0.017589014615189905553 I\n```\n\nNow say I want to get a CC element out of that:\n\n```\nsage: CC(mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]'))\n------------------------------------------------------------\n   File \"<string>\", line 1\n     -RealNumber('0.105203133241753451256')+RealNumber('0.017589014615189905553')I\n                                                                                 ^\nSyntaxError: unexpected EOF while parsing\n\n```\n\nIt's confused because Mathematica uses a space between the number and I; a workaround is to put in an asterisk:\n\n```\nsage: CC(mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]').replace(' I', '*I'))\n-0.105203133241753 + 0.0175890146151899*I\n```\n\nI understand that this kind of parsing can get difficult and complicated, but it seems like something we should aim for.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4325\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: mathematica\n\nUsing 3.1.2 on sage.math:\n\n```\nsage: mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]')\n         -0.105203133241753451256 + 0.017589014615189905553 I\n```\n\nNow say I want to get a CC element out of that:\n\n```\nsage: CC(mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]'))\n------------------------------------------------------------\n   File \"<string>\", line 1\n     -RealNumber('0.105203133241753451256')+RealNumber('0.017589014615189905553')I\n                                                                                 ^\nSyntaxError: unexpected EOF while parsing\n\n```\n\nIt's confused because Mathematica uses a space between the number and I; a workaround is to put in an asterisk:\n\n```\nsage: CC(mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]').replace(' I', '*I'))\n-0.105203133241753 + 0.0175890146151899*I\n```\n\nI understand that this kind of parsing can get difficult and complicated, but it seems like something we should aim for.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4325\n\n",
     "created_at": "2008-10-20T02:17:29Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004325.json:
     "title": "CC() fails on Mathematica output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4325",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: mathematica
 
@@ -65,7 +65,7 @@ archive/issue_comments_031684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31684",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_031685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31685",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_031686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31686",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_031687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31687",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_031688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31688",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_031689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31689",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008061.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  drkirby was\n\nMade spkg-install work with Open Solaris with SAGE64=\"yes\".\n\nThe spkg can be found here:\n[http://boxen.math.washington.edu/home/jsp/ports/genus2reduction-0.3.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/genus2reduction-0.3.p6.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8061\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nMade spkg-install work with Open Solaris with SAGE64=\"yes\".\n\nThe spkg can be found here:\n[http://boxen.math.washington.edu/home/jsp/ports/genus2reduction-0.3.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/genus2reduction-0.3.p6.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8061\n\n",
     "created_at": "2010-01-25T20:28:01Z",
     "labels": [
         "porting",
@@ -14,12 +14,12 @@ archive/issues_008061.json:
     "title": "New genus2reduction spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8061",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
 
-CC:  drkirby was
+CC:  drkirby @williamstein
 
 Made spkg-install work with Open Solaris with SAGE64="yes".
 
@@ -46,7 +46,7 @@ archive/issue_comments_070658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8061#issuecomment-70658",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -59,16 +59,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070659.json:
 ```json
 {
-    "body": "Attachment [genus2reduction-0.3.p6.patch](tarball://root/attachments/some-uuid/ticket8061/genus2reduction-0.3.p6.patch) by jsp created at 2010-01-26 17:50:03",
+    "body": "Attachment [genus2reduction-0.3.p6.patch](tarball://root/attachments/some-uuid/ticket8061/genus2reduction-0.3.p6.patch) by @jaapspies created at 2010-01-26 17:50:03",
     "created_at": "2010-01-26T17:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8061#issuecomment-70659",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [genus2reduction-0.3.p6.patch](tarball://root/attachments/some-uuid/ticket8061/genus2reduction-0.3.p6.patch) by jsp created at 2010-01-26 17:50:03
+Attachment [genus2reduction-0.3.p6.patch](tarball://root/attachments/some-uuid/ticket8061/genus2reduction-0.3.p6.patch) by @jaapspies created at 2010-01-26 17:50:03
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_070661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8061#issuecomment-70661",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

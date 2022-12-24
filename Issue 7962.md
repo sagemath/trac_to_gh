@@ -3,7 +3,7 @@
 archive/issues_007962.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jason was\n\nThis is already present in the codebase introduced by Robert Bradshaw and revised by William Stein, but there is no link to the url for the file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7962\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jasongrout @williamstein\n\nThis is already present in the codebase introduced by Robert Bradshaw and revised by William Stein, but there is no link to the url for the file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7962\n\n",
     "created_at": "2010-01-17T08:40:55Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007962.json:
     "title": "Add link to download all worksheets as a zip file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7962",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jason was
+CC:  @jasongrout @williamstein
 
 This is already present in the codebase introduced by Robert Bradshaw and revised by William Stein, but there is no link to the url for the file.
 
@@ -39,7 +39,7 @@ archive/issue_comments_069475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7962#issuecomment-69475",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_069476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7962#issuecomment-69476",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_069477.json:
 ```json
 {
-    "body": "Attachment [trac_7962-link-worksheets-zip-file.patch](tarball://root/attachments/some-uuid/ticket7962/trac_7962-link-worksheets-zip-file.patch) by timdumol created at 2010-01-17 08:46:48",
+    "body": "Attachment [trac_7962-link-worksheets-zip-file.patch](tarball://root/attachments/some-uuid/ticket7962/trac_7962-link-worksheets-zip-file.patch) by @TimDumol created at 2010-01-17 08:46:48",
     "created_at": "2010-01-17T08:46:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7962#issuecomment-69477",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7962-link-worksheets-zip-file.patch](tarball://root/attachments/some-uuid/ticket7962/trac_7962-link-worksheets-zip-file.patch) by timdumol created at 2010-01-17 08:46:48
+Attachment [trac_7962-link-worksheets-zip-file.patch](tarball://root/attachments/some-uuid/ticket7962/trac_7962-link-worksheets-zip-file.patch) by @TimDumol created at 2010-01-17 08:46:48
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_069478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7962#issuecomment-69478",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_069479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7962#issuecomment-69479",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_069480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7962#issuecomment-69480",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_069481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7962",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7962#issuecomment-69481",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

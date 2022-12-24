@@ -3,7 +3,7 @@
 archive/issues_008749.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  robertwb rlm\n\nWith Sage 4.4.alpha2, I see the following:\n\n```\nFile \"/home/palmieri/t2/sage-4.4.alpha2/devel/sage-main/sage/schemes/elliptic_curves/BSD.py\", line\\\n 304:\n    sage: EllipticCurve('11a').prove_BSD(verbosity=2)\nExpected:\n    p = 2: True by 2-descent\n    True for p not in {2, 5} by Kolyvagin.\n    True for p=5 by Mazur\n    []\nGot:\n    p = 2: True by 2-descent\n    Timeout stopped Heegner index computation...\n    Proceeding to use heegner_index_bound instead.\n    True for p not in {2, 5} by Kolyvagin.\n    True for p=5 by Mazur\n    []\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.4.alpha2/devel/sage-main/sage/schemes/elliptic_curves/BSD.py\", line\\\n 377:\n    sage: E.prove_BSD(verbosity=2)               # long time\nException raised:\n    Traceback (most recent call last):\n      File \"/home/palmieri/t2/sage-4.4.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/palmieri/t2/sage-4.4.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_examp\\\nle\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/palmieri/t2/sage-4.4.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_exam\\\nple\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[22]>\", line 1, in <module>\n        E.prove_BSD(verbosity=Integer(2))               # long time###line 377:\n    sage: E.prove_BSD(verbosity=2)               # long time\n      File \"/home/palmieri/t2/sage-4.4.alpha2/local/lib/python/site-packages/sage/schemes/elliptic\\\n_curves/BSD.py\", line 761, in prove_BSD\n        raise RuntimeError(\"p = %d: ord_p_bound == %d, but sha_an.ord(p) == %d. This appears to be\\\n a counterexample to BSD, but is more likely a bug.\"%(p,ord_p_bound,BSD.sha_an.ord(p)))\n    RuntimeError: p = 3: ord_p_bound == 1, but sha_an.ord(p) == 2. This appears to be a counterexa\\\nmple to BSD, but is more likely a bug.\n**********************************************************************\n1 items had failures:\n   2 of  35 in __main__.example_6\n***Test Failed*** 2 failures.\n```\n\nThe first is a timeout issue of some sort, and perhaps could be fixed by putting in some dots `...` in case the timeout message appears.  (I've also seen more failures of this type from the same file, so ellipses in several places might be needed.  Test on t2 several times to see.)\n\nI have no idea about the second issue.  Presumably it's not a counterexample to BSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8749\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @rlmill\n\nWith Sage 4.4.alpha2, I see the following:\n\n```\nFile \"/home/palmieri/t2/sage-4.4.alpha2/devel/sage-main/sage/schemes/elliptic_curves/BSD.py\", line\\\n 304:\n    sage: EllipticCurve('11a').prove_BSD(verbosity=2)\nExpected:\n    p = 2: True by 2-descent\n    True for p not in {2, 5} by Kolyvagin.\n    True for p=5 by Mazur\n    []\nGot:\n    p = 2: True by 2-descent\n    Timeout stopped Heegner index computation...\n    Proceeding to use heegner_index_bound instead.\n    True for p not in {2, 5} by Kolyvagin.\n    True for p=5 by Mazur\n    []\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.4.alpha2/devel/sage-main/sage/schemes/elliptic_curves/BSD.py\", line\\\n 377:\n    sage: E.prove_BSD(verbosity=2)               # long time\nException raised:\n    Traceback (most recent call last):\n      File \"/home/palmieri/t2/sage-4.4.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/palmieri/t2/sage-4.4.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_examp\\\nle\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/palmieri/t2/sage-4.4.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_exam\\\nple\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[22]>\", line 1, in <module>\n        E.prove_BSD(verbosity=Integer(2))               # long time###line 377:\n    sage: E.prove_BSD(verbosity=2)               # long time\n      File \"/home/palmieri/t2/sage-4.4.alpha2/local/lib/python/site-packages/sage/schemes/elliptic\\\n_curves/BSD.py\", line 761, in prove_BSD\n        raise RuntimeError(\"p = %d: ord_p_bound == %d, but sha_an.ord(p) == %d. This appears to be\\\n a counterexample to BSD, but is more likely a bug.\"%(p,ord_p_bound,BSD.sha_an.ord(p)))\n    RuntimeError: p = 3: ord_p_bound == 1, but sha_an.ord(p) == 2. This appears to be a counterexa\\\nmple to BSD, but is more likely a bug.\n**********************************************************************\n1 items had failures:\n   2 of  35 in __main__.example_6\n***Test Failed*** 2 failures.\n```\n\nThe first is a timeout issue of some sort, and perhaps could be fixed by putting in some dots `...` in case the timeout message appears.  (I've also seen more failures of this type from the same file, so ellipses in several places might be needed.  Test on t2 several times to see.)\n\nI have no idea about the second issue.  Presumably it's not a counterexample to BSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8749\n\n",
     "created_at": "2010-04-23T05:15:26Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_008749.json:
     "title": "BSD: doctest failures on solaris (t2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8749",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  robertwb rlm
+CC:  @robertwb @rlmill
 
 With Sage 4.4.alpha2, I see the following:
 
@@ -88,7 +88,7 @@ archive/issue_comments_080043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8749#issuecomment-80043",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -104,16 +104,16 @@ More specifically, I just saw this on lines 304, 310, 336, and 418.
 archive/issue_comments_080044.json:
 ```json
 {
-    "body": "Attachment [trac_8749.patch](tarball://root/attachments/some-uuid/ticket8749/trac_8749.patch) by rlm created at 2010-04-30 01:44:55",
+    "body": "Attachment [trac_8749.patch](tarball://root/attachments/some-uuid/ticket8749/trac_8749.patch) by @rlmill created at 2010-04-30 01:44:55",
     "created_at": "2010-04-30T01:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8749#issuecomment-80044",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8749.patch](tarball://root/attachments/some-uuid/ticket8749/trac_8749.patch) by rlm created at 2010-04-30 01:44:55
+Attachment [trac_8749.patch](tarball://root/attachments/some-uuid/ticket8749/trac_8749.patch) by @rlmill created at 2010-04-30 01:44:55
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_080045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8749#issuecomment-80045",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_080046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8749#issuecomment-80046",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_080047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8749#issuecomment-80047",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_080048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8749#issuecomment-80048",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -195,16 +195,16 @@ The attached patch fixes this by removing a newline in each ...'d test.
 archive/issue_comments_080049.json:
 ```json
 {
-    "body": "Attachment [trac_8749-part2.patch](tarball://root/attachments/some-uuid/ticket8749/trac_8749-part2.patch) by rlm created at 2010-05-01 20:30:35\n\nSecond patch looks good: positive review.",
+    "body": "Attachment [trac_8749-part2.patch](tarball://root/attachments/some-uuid/ticket8749/trac_8749-part2.patch) by @rlmill created at 2010-05-01 20:30:35\n\nSecond patch looks good: positive review.",
     "created_at": "2010-05-01T20:30:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8749#issuecomment-80049",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8749-part2.patch](tarball://root/attachments/some-uuid/ticket8749/trac_8749-part2.patch) by rlm created at 2010-05-01 20:30:35
+Attachment [trac_8749-part2.patch](tarball://root/attachments/some-uuid/ticket8749/trac_8749-part2.patch) by @rlmill created at 2010-05-01 20:30:35
 
 Second patch looks good: positive review.
 

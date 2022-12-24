@@ -14,7 +14,7 @@ archive/issues_006742.json:
     "title": "Stylesheets are not always loaded in Chrome",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6742",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6742
 archive/issue_comments_055245.json:
 ```json
 {
-    "body": "Attachment [trac_6742-chrome_css.patch](tarball://root/attachments/some-uuid/ticket6742/trac_6742-chrome_css.patch) by mpatel created at 2009-08-14 06:40:21\n\nServe main.css with MIME type text/css.",
+    "body": "Attachment [trac_6742-chrome_css.patch](tarball://root/attachments/some-uuid/ticket6742/trac_6742-chrome_css.patch) by @qed777 created at 2009-08-14 06:40:21\n\nServe main.css with MIME type text/css.",
     "created_at": "2009-08-14T06:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6742#issuecomment-55245",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6742-chrome_css.patch](tarball://root/attachments/some-uuid/ticket6742/trac_6742-chrome_css.patch) by mpatel created at 2009-08-14 06:40:21
+Attachment [trac_6742-chrome_css.patch](tarball://root/attachments/some-uuid/ticket6742/trac_6742-chrome_css.patch) by @qed777 created at 2009-08-14 06:40:21
 
 Serve main.css with MIME type text/css.
 
@@ -65,7 +65,7 @@ archive/issue_comments_055246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6742#issuecomment-55246",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_055247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6742",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6742#issuecomment-55247",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

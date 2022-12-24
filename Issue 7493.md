@@ -14,7 +14,7 @@ archive/issues_007493.json:
     "title": "Implement sage -t --time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7493",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: tbd
@@ -75,7 +75,7 @@ archive/issue_comments_063297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7493#issuecomment-63297",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_063298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7493#issuecomment-63298",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -121,16 +121,16 @@ Nicolas, can you actually attach your toy patch to this ticket?  I've now been i
 archive/issue_comments_063299.json:
 ```json
 {
-    "body": "Attachment [trac_7493-check-long-time.patch](tarball://root/attachments/some-uuid/ticket7493/trac_7493-check-long-time.patch) by nthiery created at 2010-01-23 22:59:26",
+    "body": "Attachment [trac_7493-check-long-time.patch](tarball://root/attachments/some-uuid/ticket7493/trac_7493-check-long-time.patch) by @nthiery created at 2010-01-23 22:59:26",
     "created_at": "2010-01-23T22:59:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7493#issuecomment-63299",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7493-check-long-time.patch](tarball://root/attachments/some-uuid/ticket7493/trac_7493-check-long-time.patch) by nthiery created at 2010-01-23 22:59:26
+Attachment [trac_7493-check-long-time.patch](tarball://root/attachments/some-uuid/ticket7493/trac_7493-check-long-time.patch) by @nthiery created at 2010-01-23 22:59:26
 
 
 
@@ -144,7 +144,7 @@ archive/issue_comments_063300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7493#issuecomment-63300",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_063301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7493#issuecomment-63301",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_063302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7493",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7493#issuecomment-63302",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

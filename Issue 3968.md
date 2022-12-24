@@ -3,7 +3,7 @@
 archive/issues_003968.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis fails:\n\n```\n%magma\nQt<t> := RationalFunctionField(Rationals());\nR<w,x,y,z> := PolynomialRing(Qt, 4);\nP0 := w^3 + x^3 + y^3 + z^3;\nP := P0 + (w+x)*(w+2*y)*(w+3*z) + x*y*z;\nPt := P0 + t*P;\nPt_gradient := [Derivative(Pt, w), Derivative(Pt, x), Derivative(Pt, y), Derivative(Pt, z)];\nPt_jac := IdealWithFixedBasis(Pt_gradient);\nPt_gradient_long := Append(Pt_gradient, (1+t)*w*x*y*z);\nPt_jac_long := IdealWithFixedBasis(Pt_gradient_long);\nb := (1+t)*w*x*y*z;\ndiffbasis := [2*w*P, 2*x*P, 2*y*P, 2*z*P, 3*b*P];\ntemp := Coordinates(Pt_jac, diffbasis[5]);\ndiffbasis[5] := (Derivative(temp[1],w) + Derivative(temp[2],x) + \\\n    Derivative(temp[3],y) + Derivative(temp[4],z)) / (-3);\n```\n\nwith the error: \n\n```\n   File \"<ipython console>\", line 1\n     logstr(r\"\"\"Loading \"/home/r1/kedlaya/.sage//temp/DWORK.MIT.EDU/22570//interface//tmp\"\"\"\")\n                                                                                             ^\nSyntaxError: EOL while scanning single-quoted string\n```\n\nbut if you replace the last two lines by\n\n```\ndiffbasis[5] := (Derivative(temp[1],w) + Derivative(temp[2],x) + Derivative(temp[3],y))/(-3);\n```\n\nthen nothing breaks.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3968\n\n",
+    "body": "Assignee: @williamstein\n\nThis fails:\n\n```\n%magma\nQt<t> := RationalFunctionField(Rationals());\nR<w,x,y,z> := PolynomialRing(Qt, 4);\nP0 := w^3 + x^3 + y^3 + z^3;\nP := P0 + (w+x)*(w+2*y)*(w+3*z) + x*y*z;\nPt := P0 + t*P;\nPt_gradient := [Derivative(Pt, w), Derivative(Pt, x), Derivative(Pt, y), Derivative(Pt, z)];\nPt_jac := IdealWithFixedBasis(Pt_gradient);\nPt_gradient_long := Append(Pt_gradient, (1+t)*w*x*y*z);\nPt_jac_long := IdealWithFixedBasis(Pt_gradient_long);\nb := (1+t)*w*x*y*z;\ndiffbasis := [2*w*P, 2*x*P, 2*y*P, 2*z*P, 3*b*P];\ntemp := Coordinates(Pt_jac, diffbasis[5]);\ndiffbasis[5] := (Derivative(temp[1],w) + Derivative(temp[2],x) + \\\n    Derivative(temp[3],y) + Derivative(temp[4],z)) / (-3);\n```\n\nwith the error: \n\n```\n   File \"<ipython console>\", line 1\n     logstr(r\"\"\"Loading \"/home/r1/kedlaya/.sage//temp/DWORK.MIT.EDU/22570//interface//tmp\"\"\"\")\n                                                                                             ^\nSyntaxError: EOL while scanning single-quoted string\n```\n\nbut if you replace the last two lines by\n\n```\ndiffbasis[5] := (Derivative(temp[1],w) + Derivative(temp[2],x) + Derivative(temp[3],y))/(-3);\n```\n\nthen nothing breaks.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3968\n\n",
     "created_at": "2008-08-27T17:27:14Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003968.json:
     "title": "Magma interface sometimes fails on long inputs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3968",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This fails:
 
@@ -73,7 +73,7 @@ archive/issue_comments_028511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3968#issuecomment-28511",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_028512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3968#issuecomment-28512",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -129,16 +129,16 @@ Updated patch to escape strings rather than hoping they don't contain triple quo
 archive/issue_comments_028513.json:
 ```json
 {
-    "body": "Attachment [parser.patch](tarball://root/attachments/some-uuid/ticket3968/parser.patch) by jason created at 2008-08-27 19:27:32",
+    "body": "Attachment [parser.patch](tarball://root/attachments/some-uuid/ticket3968/parser.patch) by @jasongrout created at 2008-08-27 19:27:32",
     "created_at": "2008-08-27T19:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3968#issuecomment-28513",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [parser.patch](tarball://root/attachments/some-uuid/ticket3968/parser.patch) by jason created at 2008-08-27 19:27:32
+Attachment [parser.patch](tarball://root/attachments/some-uuid/ticket3968/parser.patch) by @jasongrout created at 2008-08-27 19:27:32
 
 
 
@@ -152,7 +152,7 @@ archive/issue_comments_028514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3968#issuecomment-28514",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_028517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3968",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3968#issuecomment-28517",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 

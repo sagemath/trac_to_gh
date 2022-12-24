@@ -3,7 +3,7 @@
 archive/issues_003981.json:
 ```json
 {
-    "body": "Assignee: cswiercz\n\nCC:  cswiercz\n\nKeywords: finance\n\nA candlestick plot is a nice way of visualizing open, high, low, and close stock information over intervals in a time series. The attached patch adds the method TimeSeries.plot_candlestick(bins) to do exactly that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3981\n\n",
+    "body": "Assignee: @cswiercz\n\nCC:  @cswiercz\n\nKeywords: finance\n\nA candlestick plot is a nice way of visualizing open, high, low, and close stock information over intervals in a time series. The attached patch adds the method TimeSeries.plot_candlestick(bins) to do exactly that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3981\n\n",
     "created_at": "2008-08-28T23:12:46Z",
     "labels": [
         "finance",
@@ -14,12 +14,12 @@ archive/issues_003981.json:
     "title": "finance.TimeSeries - Add candlestick plot method.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3981",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
-Assignee: cswiercz
+Assignee: @cswiercz
 
-CC:  cswiercz
+CC:  @cswiercz
 
 Keywords: finance
 
@@ -41,7 +41,7 @@ archive/issue_comments_028635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28635",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to assigned.
 archive/issue_comments_028636.json:
 ```json
 {
-    "body": "Attachment [sage-3981.patch](tarball://root/attachments/some-uuid/ticket3981/sage-3981.patch) by cswiercz created at 2008-08-29 17:14:41",
+    "body": "Attachment [sage-3981.patch](tarball://root/attachments/some-uuid/ticket3981/sage-3981.patch) by @cswiercz created at 2008-08-29 17:14:41",
     "created_at": "2008-08-29T17:14:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28636",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [sage-3981.patch](tarball://root/attachments/some-uuid/ticket3981/sage-3981.patch) by cswiercz created at 2008-08-29 17:14:41
+Attachment [sage-3981.patch](tarball://root/attachments/some-uuid/ticket3981/sage-3981.patch) by @cswiercz created at 2008-08-29 17:14:41
 
 
 
@@ -72,16 +72,16 @@ Attachment [sage-3981.patch](tarball://root/attachments/some-uuid/ticket3981/sag
 archive/issue_comments_028637.json:
 ```json
 {
-    "body": "Attachment [trac_3981-2.patch](tarball://root/attachments/some-uuid/ticket3981/trac_3981-2.patch) by mhansen created at 2008-09-18 23:56:57",
+    "body": "Attachment [trac_3981-2.patch](tarball://root/attachments/some-uuid/ticket3981/trac_3981-2.patch) by @mwhansen created at 2008-09-18 23:56:57",
     "created_at": "2008-09-18T23:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28637",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3981-2.patch](tarball://root/attachments/some-uuid/ticket3981/trac_3981-2.patch) by mhansen created at 2008-09-18 23:56:57
+Attachment [trac_3981-2.patch](tarball://root/attachments/some-uuid/ticket3981/trac_3981-2.patch) by @mwhansen created at 2008-09-18 23:56:57
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_028638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3981",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28638",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

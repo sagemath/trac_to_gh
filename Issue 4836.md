@@ -3,7 +3,7 @@
 archive/issues_004836.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jdemeyer\n\nthe pari interface relies on the function getattr(), e.g. as in\n\n```\nzk_basis = K.pari_nf().getattr('zk')\n```\n\nbut I *really* don't like this function!  Each of these dot-attributes\nin pari is a short-cut, in this case to `K.pari_nf()[6]`, as these are\neasier when running gp than remembering which field is which in the\nnf/bnf structures.  There are not very many of these (I started making\na list).  But what I do not like is the implementation of getattr() in\nSage:\n\n```\n   def getattr(self, attr):\n       t0GEN(str(self) + '.' + str(attr))\n       _sig_on\n       return self.new_gen(t0)\n```\n\nSo it converts the nf into a string (in my examples, that's a string\nof length 59604), adds \".zk\" to it, and reparses the input (using the\ngp parser).\n\nWe could instead implement the getattr function with a dictionary like\nthis for an nf:\n\n```\n{('pol',1), ('sign',2), ('r1',(2,1)), ('r2',(2,2)),\n```\n\netc   (where the numbers are indices into the array so should actually have 1 subtracted\nfrom them).\n\nThe only disadvantage I can see for this is that new versions of pari\nmight change the indices -- though I doubt that happens often, as you\ncan see from the existence of unused fields which are just there to\npad arrays to the expected length.  And in any case doctests would\nfind these.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4836\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jdemeyer\n\nthe pari interface relies on the function getattr(), e.g. as in\n\n```\nzk_basis = K.pari_nf().getattr('zk')\n```\n\nbut I *really* don't like this function!  Each of these dot-attributes\nin pari is a short-cut, in this case to `K.pari_nf()[6]`, as these are\neasier when running gp than remembering which field is which in the\nnf/bnf structures.  There are not very many of these (I started making\na list).  But what I do not like is the implementation of getattr() in\nSage:\n\n```\n   def getattr(self, attr):\n       t0GEN(str(self) + '.' + str(attr))\n       _sig_on\n       return self.new_gen(t0)\n```\n\nSo it converts the nf into a string (in my examples, that's a string\nof length 59604), adds \".zk\" to it, and reparses the input (using the\ngp parser).\n\nWe could instead implement the getattr function with a dictionary like\nthis for an nf:\n\n```\n{('pol',1), ('sign',2), ('r1',(2,1)), ('r2',(2,2)),\n```\n\netc   (where the numbers are indices into the array so should actually have 1 subtracted\nfrom them).\n\nThe only disadvantage I can see for this is that new versions of pari\nmight change the indices -- though I doubt that happens often, as you\ncan see from the existence of unused fields which are just there to\npad arrays to the expected length.  And in any case doctests would\nfind these.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4836\n\n",
     "created_at": "2008-12-20T12:08:49Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_004836.json:
     "title": "pari types getattr() function ugly and inefficient",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4836",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 the pari interface relies on the function getattr(), e.g. as in
 
@@ -72,16 +72,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4836
 archive/issue_comments_036648.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2009-07-11T11:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36648",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_036649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36649",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_036650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36650",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_036651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36651",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_036652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36652",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_036653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36653",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_036654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36654",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_036655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36655",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_036656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36656",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_036657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36657",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_036658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36658",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_036659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36659",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_036660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36660",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_036661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36661",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_036662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36662",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_036663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36663",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -430,16 +430,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_036664.json:
 ```json
 {
-    "body": "Attachment [4836_pari_getattr.patch](tarball://root/attachments/some-uuid/ticket4836/4836_pari_getattr.patch) by jdemeyer created at 2010-09-28 10:56:15",
+    "body": "Attachment [4836_pari_getattr.patch](tarball://root/attachments/some-uuid/ticket4836/4836_pari_getattr.patch) by @jdemeyer created at 2010-09-28 10:56:15",
     "created_at": "2010-09-28T10:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36664",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [4836_pari_getattr.patch](tarball://root/attachments/some-uuid/ticket4836/4836_pari_getattr.patch) by jdemeyer created at 2010-09-28 10:56:15
+Attachment [4836_pari_getattr.patch](tarball://root/attachments/some-uuid/ticket4836/4836_pari_getattr.patch) by @jdemeyer created at 2010-09-28 10:56:15
 
 
 
@@ -453,7 +453,7 @@ archive/issue_comments_036665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36665",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_036666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36666",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_036667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4836#issuecomment-36667",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

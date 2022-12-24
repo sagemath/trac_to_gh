@@ -3,7 +3,7 @@
 archive/issues_002275.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2275\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2275\n\n",
     "created_at": "2008-02-23T04:44:31Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002275.json:
     "title": "[with patch, needs review] get sloane_functions.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2275",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2275
 archive/issue_comments_015092.json:
 ```json
 {
-    "body": "Attachment [2275.patch.gz](tarball://root/attachments/some-uuid/ticket2275/2275.patch.gz) by mhansen created at 2008-02-23 05:21:43\n\nHere is a link:  http://sage.math.washington.edu/home/mhansen/2275.patch",
+    "body": "Attachment [2275.patch.gz](tarball://root/attachments/some-uuid/ticket2275/2275.patch.gz) by @mwhansen created at 2008-02-23 05:21:43\n\nHere is a link:  http://sage.math.washington.edu/home/mhansen/2275.patch",
     "created_at": "2008-02-23T05:21:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2275#issuecomment-15092",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2275.patch.gz](tarball://root/attachments/some-uuid/ticket2275/2275.patch.gz) by mhansen created at 2008-02-23 05:21:43
+Attachment [2275.patch.gz](tarball://root/attachments/some-uuid/ticket2275/2275.patch.gz) by @mwhansen created at 2008-02-23 05:21:43
 
 Here is a link:  http://sage.math.washington.edu/home/mhansen/2275.patch
 
@@ -59,7 +59,7 @@ archive/issue_comments_015093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2275#issuecomment-15093",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_015094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2275#issuecomment-15094",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_015095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2275#issuecomment-15095",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_015096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2275#issuecomment-15096",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_015097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2275#issuecomment-15097",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

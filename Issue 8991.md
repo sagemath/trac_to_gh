@@ -14,7 +14,7 @@ archive/issues_008991.json:
     "title": "Adjust developer walkthrough for two changes to mercurial queues syntax",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8991",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: mvngu
@@ -100,7 +100,7 @@ archive/issue_comments_083120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8991#issuecomment-83120",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_083123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8991",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8991#issuecomment-83123",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000160.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n \n \nOn Oct 28, 2006, at 12:28 , David Joyner wrote:\n \n>  \n> Hi:\n>  \n> Here's an odd bug:\n>  \n> sage: n = 15\n> sage: time  P = partitions_set(range(n),3)\n> /home/wdj/sagefiles/sage-1.4.1/local/bin/sage-sage: line 163: 22761\n> Killed                  sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" $*\n> wdj@wooster:~/sagefiles/sage-1.4.1>\n \nLooks like a Gap or Python runaway problem.  On Mac OS X, SAGE  \ndoesn't die, but I get this:\n=========================================\nsage.bin(25351) malloc: *** vm_allocate(size=1069056) failed (error  \ncode=3)\nsage.bin(25351) malloc: *** error: can't allocate region\nsage.bin(25351) malloc: *** set a breakpoint in szone_error to debug\n------------------------------------------------------------------------ \n---\n<type 'exceptions.MemoryError'>           Traceback (most recent call  \nlast)\n \n/SandBox/Justin/sb/Sage/<ipython console> in <module>()\n \n/SandBox/Justin/sb/sage-1.4/local/lib/python2.5/site-packages/IPython/ \niplib.py in ipmagic(self, arg_s)\n     899         else:\n     900             magic_args = self.var_expand(magic_args)\n--> 901             return fn(magic_args)\n     902\n     903     def ipalias(self,arg_s):\n \n/SandBox/Justin/sb/sage-1.4/local/lib/python2.5/site-packages/IPython/ \nMagic.py in magic_time(self, parameter_s)\n    1761         else:\n    1762             st = clk()\n-> 1763             exec code in glob\n    1764             end = clk()\n    1765             out = None\n \n/SandBox/Justin/sb/Sage/<timed exec> in <module>()\n \n/SandBox/Justin/sb/sage-1.4/local/lib/python2.5/site-packages/sage/ \ncombinat/combinat.py in partitions_set(S, k)\n     908     else:\n     909         ans=gap.eval(\"PartitionsSet(%s,%s)\"%(S,k))\n--> 910     return eval(ans)\n     911\n     912 def number_of_partitions_set(S,k):\n \n<type 'exceptions.MemoryError'>:\n=========================================\n \nwhere the three malloc error messages are repeated an infinite number  \nof times (i.e., it blew out the scroll-back buffer for this window  \n(10,000 lines).  PID 25351 is 'python' (from sage.bin).\n \nJustin\n \n--\nJustin C. Walker, Curmudgeon at Large\n\n \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/160\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n \n \nOn Oct 28, 2006, at 12:28 , David Joyner wrote:\n \n>  \n> Hi:\n>  \n> Here's an odd bug:\n>  \n> sage: n = 15\n> sage: time  P = partitions_set(range(n),3)\n> /home/wdj/sagefiles/sage-1.4.1/local/bin/sage-sage: line 163: 22761\n> Killed                  sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" $*\n> wdj@wooster:~/sagefiles/sage-1.4.1>\n \nLooks like a Gap or Python runaway problem.  On Mac OS X, SAGE  \ndoesn't die, but I get this:\n=========================================\nsage.bin(25351) malloc: *** vm_allocate(size=1069056) failed (error  \ncode=3)\nsage.bin(25351) malloc: *** error: can't allocate region\nsage.bin(25351) malloc: *** set a breakpoint in szone_error to debug\n------------------------------------------------------------------------ \n---\n<type 'exceptions.MemoryError'>           Traceback (most recent call  \nlast)\n \n/SandBox/Justin/sb/Sage/<ipython console> in <module>()\n \n/SandBox/Justin/sb/sage-1.4/local/lib/python2.5/site-packages/IPython/ \niplib.py in ipmagic(self, arg_s)\n     899         else:\n     900             magic_args = self.var_expand(magic_args)\n--> 901             return fn(magic_args)\n     902\n     903     def ipalias(self,arg_s):\n \n/SandBox/Justin/sb/sage-1.4/local/lib/python2.5/site-packages/IPython/ \nMagic.py in magic_time(self, parameter_s)\n    1761         else:\n    1762             st = clk()\n-> 1763             exec code in glob\n    1764             end = clk()\n    1765             out = None\n \n/SandBox/Justin/sb/Sage/<timed exec> in <module>()\n \n/SandBox/Justin/sb/sage-1.4/local/lib/python2.5/site-packages/sage/ \ncombinat/combinat.py in partitions_set(S, k)\n     908     else:\n     909         ans=gap.eval(\"PartitionsSet(%s,%s)\"%(S,k))\n--> 910     return eval(ans)\n     911\n     912 def number_of_partitions_set(S,k):\n \n<type 'exceptions.MemoryError'>:\n=========================================\n \nwhere the three malloc error messages are repeated an infinite number  \nof times (i.e., it blew out the scroll-back buffer for this window  \n(10,000 lines).  PID 25351 is 'python' (from sage.bin).\n \nJustin\n \n--\nJustin C. Walker, Curmudgeon at Large\n\n \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/160\n\n",
     "created_at": "2006-10-29T02:00:44Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000160.json:
     "title": "partitions -- sage dies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/160",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -108,7 +108,7 @@ archive/issue_comments_000714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/160#issuecomment-714",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_000715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/160#issuecomment-715",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_000716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/160#issuecomment-716",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_000717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/160#issuecomment-717",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -182,13 +182,13 @@ Fixed by using files to move data.
 archive/issue_comments_000718.json:
 ```json
 {
-    "body": "Attachment [5805.patch](tarball://root/attachments/some-uuid/ticket160/5805.patch) by was created at 2007-08-21 14:44:04",
+    "body": "Attachment [5805.patch](tarball://root/attachments/some-uuid/ticket160/5805.patch) by @williamstein created at 2007-08-21 14:44:04",
     "created_at": "2007-08-21T14:44:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/160#issuecomment-718",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [5805.patch](tarball://root/attachments/some-uuid/ticket160/5805.patch) by was created at 2007-08-21 14:44:04
+Attachment [5805.patch](tarball://root/attachments/some-uuid/ticket160/5805.patch) by @williamstein created at 2007-08-21 14:44:04

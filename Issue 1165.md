@@ -14,7 +14,7 @@ archive/issues_001165.json:
     "title": "[with patch] fixed typo in wester.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1165",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1165
 archive/issue_comments_007146.json:
 ```json
 {
-    "body": "Attachment [7334.patch](tarball://root/attachments/some-uuid/ticket1165/7334.patch) by zimmerma created at 2007-11-13 22:29:21",
+    "body": "Attachment [7334.patch](tarball://root/attachments/some-uuid/ticket1165/7334.patch) by @zimmermann6 created at 2007-11-13 22:29:21",
     "created_at": "2007-11-13T22:29:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1165#issuecomment-7146",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [7334.patch](tarball://root/attachments/some-uuid/ticket1165/7334.patch) by zimmerma created at 2007-11-13 22:29:21
+Attachment [7334.patch](tarball://root/attachments/some-uuid/ticket1165/7334.patch) by @zimmermann6 created at 2007-11-13 22:29:21
 
 
 

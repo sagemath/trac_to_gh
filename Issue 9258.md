@@ -14,7 +14,7 @@ archive/issues_009258.json:
     "title": "problem with converting FriCAS domains to Sage objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9258",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 Assignee: tbd
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9258
 archive/issue_comments_087119.json:
 ```json
 {
-    "body": "Attachment [trac_9258.patch](tarball://root/attachments/some-uuid/ticket9258/trac_9258.patch) by mhansen created at 2010-06-27 20:13:41",
+    "body": "Attachment [trac_9258.patch](tarball://root/attachments/some-uuid/ticket9258/trac_9258.patch) by @mwhansen created at 2010-06-27 20:13:41",
     "created_at": "2010-06-27T20:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-87119",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_9258.patch](tarball://root/attachments/some-uuid/ticket9258/trac_9258.patch) by mhansen created at 2010-06-27 20:13:41
+Attachment [trac_9258.patch](tarball://root/attachments/some-uuid/ticket9258/trac_9258.patch) by @mwhansen created at 2010-06-27 20:13:41
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_087120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-87120",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_087121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-87121",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_087122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-87122",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_087123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-87123",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

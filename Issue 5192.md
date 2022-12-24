@@ -14,7 +14,7 @@ archive/issues_005192.json:
     "title": "Improve factor documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5192",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: tbd
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5192
 archive/issue_comments_039804.json:
 ```json
 {
-    "body": "Attachment [trac_5192.patch](tarball://root/attachments/some-uuid/ticket5192/trac_5192.patch) by kcrisman created at 2009-02-06 17:28:38\n\nBased on 3.3.alpha5",
+    "body": "Attachment [trac_5192.patch](tarball://root/attachments/some-uuid/ticket5192/trac_5192.patch) by @kcrisman created at 2009-02-06 17:28:38\n\nBased on 3.3.alpha5",
     "created_at": "2009-02-06T17:28:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5192#issuecomment-39804",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_5192.patch](tarball://root/attachments/some-uuid/ticket5192/trac_5192.patch) by kcrisman created at 2009-02-06 17:28:38
+Attachment [trac_5192.patch](tarball://root/attachments/some-uuid/ticket5192/trac_5192.patch) by @kcrisman created at 2009-02-06 17:28:38
 
 Based on 3.3.alpha5
 

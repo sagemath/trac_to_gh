@@ -3,7 +3,7 @@
 archive/issues_008360.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat jean-eric.pin@liafa.jussieu.fr abmasse tscrim\n\nKeywords: Semigroupes\n\nAdd an interface to Jean-Eric Pin's Semigroupe package\n\nhttp://www.liafa.jussieu.fr/~jep/semigroupes.html\n\nPatch and spkg under development on the Sage-Combinat server.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8360\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat jean-eric.pin@liafa.jussieu.fr abmasse @tscrim\n\nKeywords: Semigroupes\n\nAdd an interface to Jean-Eric Pin's Semigroupe package\n\nhttp://www.liafa.jussieu.fr/~jep/semigroupes.html\n\nPatch and spkg under development on the Sage-Combinat server.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8360\n\n",
     "created_at": "2010-02-25T09:00:20Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008360.json:
     "title": "Add an interface to Jean-Eric Pin's Semigroupe package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8360",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat jean-eric.pin@liafa.jussieu.fr abmasse tscrim
+CC:  sage-combinat jean-eric.pin@liafa.jussieu.fr abmasse @tscrim
 
 Keywords: Semigroupes
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8360
 archive/issue_comments_074698.json:
 ```json
 {
-    "body": "Attachment [Semigroupe-2.0.spkg](tarball://root/attachments/some-uuid/ticket8360/Semigroupe-2.0.spkg) by nthiery created at 2010-03-16 13:04:44",
+    "body": "Attachment [Semigroupe-2.0.spkg](tarball://root/attachments/some-uuid/ticket8360/Semigroupe-2.0.spkg) by @nthiery created at 2010-03-16 13:04:44",
     "created_at": "2010-03-16T13:04:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74698",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [Semigroupe-2.0.spkg](tarball://root/attachments/some-uuid/ticket8360/Semigroupe-2.0.spkg) by nthiery created at 2010-03-16 13:04:44
+Attachment [Semigroupe-2.0.spkg](tarball://root/attachments/some-uuid/ticket8360/Semigroupe-2.0.spkg) by @nthiery created at 2010-03-16 13:04:44
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_074699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74699",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_074700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74700",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -94,16 +94,16 @@ Superceedes the previous spkg
 archive/issue_comments_074701.json:
 ```json
 {
-    "body": "Attachment [semigroupe-2.0.spkg](tarball://root/attachments/some-uuid/ticket8360/semigroupe-2.0.spkg) by nthiery created at 2010-03-17 20:26:28",
+    "body": "Attachment [semigroupe-2.0.spkg](tarball://root/attachments/some-uuid/ticket8360/semigroupe-2.0.spkg) by @nthiery created at 2010-03-17 20:26:28",
     "created_at": "2010-03-17T20:26:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74701",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [semigroupe-2.0.spkg](tarball://root/attachments/some-uuid/ticket8360/semigroupe-2.0.spkg) by nthiery created at 2010-03-17 20:26:28
+Attachment [semigroupe-2.0.spkg](tarball://root/attachments/some-uuid/ticket8360/semigroupe-2.0.spkg) by @nthiery created at 2010-03-17 20:26:28
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_074702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74702",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_074703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74703",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_074704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74704",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_074705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74705",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -267,16 +267,16 @@ Those are little self contained test programs we had written with Florent to und
 archive/issue_comments_074706.json:
 ```json
 {
-    "body": "Attachment [semigroupe-2.0-2.spkg](tarball://root/attachments/some-uuid/ticket8360/semigroupe-2.0-2.spkg) by nthiery created at 2011-03-02 11:53:17\n\nSame as previous one, working on both 32bits and 64bits, but managing the patches on the semigroupe sources in a mercurial queue",
+    "body": "Attachment [semigroupe-2.0-2.spkg](tarball://root/attachments/some-uuid/ticket8360/semigroupe-2.0-2.spkg) by @nthiery created at 2011-03-02 11:53:17\n\nSame as previous one, working on both 32bits and 64bits, but managing the patches on the semigroupe sources in a mercurial queue",
     "created_at": "2011-03-02T11:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74706",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [semigroupe-2.0-2.spkg](tarball://root/attachments/some-uuid/ticket8360/semigroupe-2.0-2.spkg) by nthiery created at 2011-03-02 11:53:17
+Attachment [semigroupe-2.0-2.spkg](tarball://root/attachments/some-uuid/ticket8360/semigroupe-2.0-2.spkg) by @nthiery created at 2011-03-02 11:53:17
 
 Same as previous one, working on both 32bits and 64bits, but managing the patches on the semigroupe sources in a mercurial queue
 
@@ -292,7 +292,7 @@ archive/issue_comments_074707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74707",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_074708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74708",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_074709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74709",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_074710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74710",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -431,13 +431,13 @@ Cheers,
 archive/issue_comments_074711.json:
 ```json
 {
-    "body": "Attachment [trac_8360_semigroupe-interface-nt.patch](tarball://root/attachments/some-uuid/ticket8360/trac_8360_semigroupe-interface-nt.patch) by nthiery created at 2016-12-05 20:46:03",
+    "body": "Attachment [trac_8360_semigroupe-interface-nt.patch](tarball://root/attachments/some-uuid/ticket8360/trac_8360_semigroupe-interface-nt.patch) by @nthiery created at 2016-12-05 20:46:03",
     "created_at": "2016-12-05T20:46:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8360#issuecomment-74711",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8360_semigroupe-interface-nt.patch](tarball://root/attachments/some-uuid/ticket8360/trac_8360_semigroupe-interface-nt.patch) by nthiery created at 2016-12-05 20:46:03
+Attachment [trac_8360_semigroupe-interface-nt.patch](tarball://root/attachments/some-uuid/ticket8360/trac_8360_semigroupe-interface-nt.patch) by @nthiery created at 2016-12-05 20:46:03

@@ -3,7 +3,7 @@
 archive/issues_002367.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  wdj\n\nKeywords: invariant ring, matrix group\n\nThis ticket is strongly related with ticket #2348. I fix here a doc test failure that is introduced by the patch from #2348, and the new functionality that i introduce here relies on the patch from #2348.\n\nProblem: Let G be a finite matrix group. So far, G.invariant_generators() worked only if G was defined over the rationals or over GF(prime). \nSolution: Singular also provides simple algebraic extensions over these fields, so, it just requires a more careful definition of a singular ring inside the function.\n\nAfter first applying the patch from #2348 and then applying the new patch, the doc tests of matrix_group.py should pass, and the following should work:\n\n```\nsage: F=CyclotomicField(8)\nsage: z=F.gen()\nsage: a=z+1/z\nsage: b=z^2\nsage: MS=MatrixSpace(F,2,2)\nsage: g1=MS([[1/a,1/a],[1/a,-1/a]])\nsage: g2=MS([[1,0],[0,b]])\nsage: g3=MS([[b,0],[0,1]])\nsage: G=MatrixGroup([g1,g2,g3])\nsage: G.invariant_generators()\n[x1^8 + 14*x1^4*x2^4 + x2^8,\n x1^24 + 10626/1025*x1^20*x2^4 + 735471/1025*x1^16*x2^8 + 2704156/1025*x1^12*x2^12 + 735471/1025*x1^8*x2^16 + 10626/1025*x1^4*x2^20 + x2^24]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2367\n\n",
+    "body": "Assignee: joyner\n\nCC:  @wdjoyner\n\nKeywords: invariant ring, matrix group\n\nThis ticket is strongly related with ticket #2348. I fix here a doc test failure that is introduced by the patch from #2348, and the new functionality that i introduce here relies on the patch from #2348.\n\nProblem: Let G be a finite matrix group. So far, G.invariant_generators() worked only if G was defined over the rationals or over GF(prime). \nSolution: Singular also provides simple algebraic extensions over these fields, so, it just requires a more careful definition of a singular ring inside the function.\n\nAfter first applying the patch from #2348 and then applying the new patch, the doc tests of matrix_group.py should pass, and the following should work:\n\n```\nsage: F=CyclotomicField(8)\nsage: z=F.gen()\nsage: a=z+1/z\nsage: b=z^2\nsage: MS=MatrixSpace(F,2,2)\nsage: g1=MS([[1/a,1/a],[1/a,-1/a]])\nsage: g2=MS([[1,0],[0,b]])\nsage: g3=MS([[b,0],[0,1]])\nsage: G=MatrixGroup([g1,g2,g3])\nsage: G.invariant_generators()\n[x1^8 + 14*x1^4*x2^4 + x2^8,\n x1^24 + 10626/1025*x1^20*x2^4 + 735471/1025*x1^16*x2^8 + 2704156/1025*x1^12*x2^12 + 735471/1025*x1^8*x2^16 + 10626/1025*x1^4*x2^20 + x2^24]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2367\n\n",
     "created_at": "2008-03-02T14:06:04Z",
     "labels": [
         "group theory",
@@ -14,12 +14,12 @@ archive/issues_002367.json:
     "title": "[with patch, needs review] Extend invariant_generators to the case of Matrix Groups over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2367",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: joyner
 
-CC:  wdj
+CC:  @wdjoyner
 
 Keywords: invariant ring, matrix group
 
@@ -63,7 +63,7 @@ archive/issue_comments_015967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2367#issuecomment-15967",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_015968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2367#issuecomment-15968",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_015969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2367#issuecomment-15969",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_015970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2367#issuecomment-15970",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -209,16 +209,16 @@ First apply the patches from #2348, then apply this patch. It extends the method
 archive/issue_comments_015971.json:
 ```json
 {
-    "body": "Attachment [invariant_generators.patch](tarball://root/attachments/some-uuid/ticket2367/invariant_generators.patch) by SimonKing created at 2008-03-02 22:58:02\n\nReplying to [comment:2 wdj]:\n> The patches (first 2348 then this one) applied cleanly and the above code ran. \n\nNow i changed the patches of #2348 and of this ticket. So, a re-check is needed.\n\n> However, sage -testall failed. Here is one failure:\n>  ...\n> ----------------------------------------------------------------------\n> The following tests failed:\n> ...\n>         sage -t  devel/sage-matgp3/sage/rings/polynomial/groebner_fan.py\n>         sage -t  devel/sage-matgp3/sage/rings/number_field/totallyreal.py\n>         sage -t  devel/sage-matgp3/sage/plot/plot.py\n\nThese three tests fail on my system as well - with and without the patches. So, it doesn't seem to be related.\n\nBut with the patches (that partially add further doc tests), the following clearly related tests pass:\n* matrix_group.py\n* matrix_group_element.py\n* number_field.py\n* number_field_element.pyx\n* matrix1.pyx",
+    "body": "Attachment [invariant_generators.patch](tarball://root/attachments/some-uuid/ticket2367/invariant_generators.patch) by @simon-king-jena created at 2008-03-02 22:58:02\n\nReplying to [comment:2 wdj]:\n> The patches (first 2348 then this one) applied cleanly and the above code ran. \n\nNow i changed the patches of #2348 and of this ticket. So, a re-check is needed.\n\n> However, sage -testall failed. Here is one failure:\n>  ...\n> ----------------------------------------------------------------------\n> The following tests failed:\n> ...\n>         sage -t  devel/sage-matgp3/sage/rings/polynomial/groebner_fan.py\n>         sage -t  devel/sage-matgp3/sage/rings/number_field/totallyreal.py\n>         sage -t  devel/sage-matgp3/sage/plot/plot.py\n\nThese three tests fail on my system as well - with and without the patches. So, it doesn't seem to be related.\n\nBut with the patches (that partially add further doc tests), the following clearly related tests pass:\n* matrix_group.py\n* matrix_group_element.py\n* number_field.py\n* number_field_element.pyx\n* matrix1.pyx",
     "created_at": "2008-03-02T22:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2367#issuecomment-15971",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [invariant_generators.patch](tarball://root/attachments/some-uuid/ticket2367/invariant_generators.patch) by SimonKing created at 2008-03-02 22:58:02
+Attachment [invariant_generators.patch](tarball://root/attachments/some-uuid/ticket2367/invariant_generators.patch) by @simon-king-jena created at 2008-03-02 22:58:02
 
 Replying to [comment:2 wdj]:
 > The patches (first 2348 then this one) applied cleanly and the above code ran. 
@@ -255,7 +255,7 @@ archive/issue_comments_015972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2367#issuecomment-15972",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_015973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2367#issuecomment-15973",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_015974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2367",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2367#issuecomment-15974",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

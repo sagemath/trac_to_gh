@@ -36,13 +36,13 @@ Issue created by migration from https://trac.sagemath.org/ticket/5614
 archive/issue_comments_043851.json:
 ```json
 {
-    "body": "Attachment [preliminary-tos-cache.patch](tarball://root/attachments/some-uuid/ticket5614/preliminary-tos-cache.patch) by saraedum created at 2013-07-23 15:53:30",
+    "body": "Attachment [preliminary-tos-cache.patch](tarball://root/attachments/some-uuid/ticket5614/preliminary-tos-cache.patch) by @saraedum created at 2013-07-23 15:53:30",
     "created_at": "2013-07-23T15:53:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5614#issuecomment-43851",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
-Attachment [preliminary-tos-cache.patch](tarball://root/attachments/some-uuid/ticket5614/preliminary-tos-cache.patch) by saraedum created at 2013-07-23 15:53:30
+Attachment [preliminary-tos-cache.patch](tarball://root/attachments/some-uuid/ticket5614/preliminary-tos-cache.patch) by @saraedum created at 2013-07-23 15:53:30

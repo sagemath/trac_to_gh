@@ -3,7 +3,7 @@
 archive/issues_001745.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\n\n\nOn Jan 10, 2008 12:21 AM, benjamin antieau <> wrote:\n> \n> Below is a transcript from a SAGE session. I was playing around\n> checking to make sure that a modification of the rational_points code\n> gave the right answers when I noticed that there were repeats in the\n> lists returned by rational_points(). Below I iterate through the list\n> of rational points and count how many times each appears. For P^3\n> there is a point that is returned eight times.\n> \n> Is this the behavior people want? I would rather assume that the\n> output has no repetition, so as to aid point-counting.\n\nThis is definitely not the behavior that we want.  This is a bug, which I've now reported to trac:\n\n\n\n> \n> I would be happy to fix this.\n> \n> Ben\n> \n> =====\n> \n> sage: X=ProjectiveSpace(QQ,1)\n> sage: x=X.rational_points(bound=1)\n> sage: for i in x:\n> ...       (i,x.count(i))\n> ((0 : 1), 2)\n> ((-1 : 1), 1)\n> ((0 : 1), 2)\n> ((1 : 1), 1)\n> ((1 : 0), 1)\n> \n> sage: X=ProjectiveSpace(QQ,1)\n> sage: x=X.rational_points(bound=3)\n> sage: for i in x:\n> ...       (i,x.count(i))\n> ((0 : 1), 2)\n> ((-3 : 1), 1)\n> ((-3/2 : 1), 1)\n> ((-2 : 1), 1)\n> ((-2/3 : 1), 1)\n> ((-1 : 1), 1)\n> ((-1/2 : 1), 1)\n> ((-1/3 : 1), 1)\n> ((0 : 1), 2)\n> ((1 : 1), 1)\n> ((1/2 : 1), 1)\n> ((1/3 : 1), 1)\n> ((2 : 1), 1)\n> ((2/3 : 1), 1)\n> ((3 : 1), 1)\n> ((3/2 : 1), 1)\n> ((1 : 0), 1)\n> \n> sage: Y=ProjectiveSpace(QQ,2)\n> sage: y=Y.rational_points(1)\n> sage: for i in y:\n> ...       (i,y.count(i))\n> ((0 : 0 : 1), 4)\n> ((-1 : 0 : 1), 1)\n> ((0 : 0 : 1), 4)\n> ((1 : 0 : 1), 2)\n> ((0 : -1 : 1), 2)\n> ((0 : -1 : 1), 2)\n> ((1 : -1 : 1), 1)\n> ((0 : 0 : 1), 4)\n> ((0 : 0 : 1), 4)\n> ((1 : 0 : 1), 2)\n> ((0 : 1 : 1), 2)\n> ((0 : 1 : 1), 2)\n> ((1 : 1 : 1), 1)\n> ((0 : 1 : 0), 2)\n> ((-1 : 1 : 0), 1)\n> ((0 : 1 : 0), 2)\n> ((1 : 1 : 0), 1)\n> ((1 : 0 : 0), 1)\n> \n> sage: Z=ProjectiveSpace(QQ,3)\n> sage: z=Z.rational_points(1)\n> sage: for i in z:\n> ...       (i,z.count(i))\n> ((0 : 0 : 0 : 1), 8)\n> ((-1 : 0 : 0 : 1), 1)\n> ((0 : 0 : 0 : 1), 8)\n> ((1 : 0 : 0 : 1), 4)\n> ((0 : -1 : 0 : 1), 2)\n> ((0 : -1 : 0 : 1), 2)\n> ((1 : -1 : 0 : 1), 1)\n> ((0 : 0 : 0 : 1), 8)\n> ((0 : 0 : 0 : 1), 8)\n> ((1 : 0 : 0 : 1), 4)\n> ((0 : 1 : 0 : 1), 4)\n> ((0 : 1 : 0 : 1), 4)\n> ((1 : 1 : 0 : 1), 2)\n> ((0 : 0 : -1 : 1), 4)\n> ((0 : 0 : -1 : 1), 4)\n> ((1 : 0 : -1 : 1), 2)\n> ((0 : 0 : -1 : 1), 4)\n> ((0 : 0 : -1 : 1), 4)\n> ((1 : 0 : -1 : 1), 2)\n> ((0 : 1 : -1 : 1), 2)\n> ((0 : 1 : -1 : 1), 2)\n> ((1 : 1 : -1 : 1), 1)\n> ((0 : 0 : 0 : 1), 8)\n> ((0 : 0 : 0 : 1), 8)\n> ((1 : 0 : 0 : 1), 4)\n> ((0 : 0 : 0 : 1), 8)\n> ((0 : 0 : 0 : 1), 8)\n> ((1 : 0 : 0 : 1), 4)\n> ((0 : 1 : 0 : 1), 4)\n> ((0 : 1 : 0 : 1), 4)\n> ((1 : 1 : 0 : 1), 2)\n> ((0 : 0 : 1 : 1), 4)\n> ((0 : 0 : 1 : 1), 4)\n> ((1 : 0 : 1 : 1), 2)\n> ((0 : 0 : 1 : 1), 4)\n> ((0 : 0 : 1 : 1), 4)\n> ((1 : 0 : 1 : 1), 2)\n> ((0 : 1 : 1 : 1), 2)\n> ((0 : 1 : 1 : 1), 2)\n> ((1 : 1 : 1 : 1), 1)\n> ((0 : 0 : 1 : 0), 4)\n> ((-1 : 0 : 1 : 0), 1)\n> ((0 : 0 : 1 : 0), 4)\n> ((1 : 0 : 1 : 0), 2)\n> ((0 : -1 : 1 : 0), 2)\n> ((0 : -1 : 1 : 0), 2)\n> ((1 : -1 : 1 : 0), 1)\n> ((0 : 0 : 1 : 0), 4)\n> ((0 : 0 : 1 : 0), 4)\n> ((1 : 0 : 1 : 0), 2)\n> ((0 : 1 : 1 : 0), 2)\n> ((0 : 1 : 1 : 0), 2)\n> ((1 : 1 : 1 : 0), 1)\n> ((0 : 1 : 0 : 0), 2)\n> ((-1 : 1 : 0 : 0), 1)\n> ((0 : 1 : 0 : 0), 2)\n> ((1 : 1 : 0 : 0), 1)\n> ((1 : 0 : 0 : 0), 1)\n> \n> --~--~---------~--~----~------------~-------~--~----~\n> To post to this group, send email to sage-devel@googlegroups.com\n> To unsubscribe from this group, send email to sage-devel-unsubscribe@googlegroups.com\n> For more options, visit this group at http://groups.google.com/group/sage-devel\n> URLs: http://sage.scipy.org/sage/ and http://modular.math.washington.edu/sage/\n> -~----------~----~----~----~------~----~------~--~---\n> \n> \n\n\n\n-- \nWilliam Stein\nAssociate Professor of Mathematics\nUniversity of Washington\nhttp://wstein.org\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1745\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\n\n\nOn Jan 10, 2008 12:21 AM, benjamin antieau <> wrote:\n> \n> Below is a transcript from a SAGE session. I was playing around\n> checking to make sure that a modification of the rational_points code\n> gave the right answers when I noticed that there were repeats in the\n> lists returned by rational_points(). Below I iterate through the list\n> of rational points and count how many times each appears. For P^3\n> there is a point that is returned eight times.\n> \n> Is this the behavior people want? I would rather assume that the\n> output has no repetition, so as to aid point-counting.\n\nThis is definitely not the behavior that we want.  This is a bug, which I've now reported to trac:\n\n\n\n> \n> I would be happy to fix this.\n> \n> Ben\n> \n> =====\n> \n> sage: X=ProjectiveSpace(QQ,1)\n> sage: x=X.rational_points(bound=1)\n> sage: for i in x:\n> ...       (i,x.count(i))\n> ((0 : 1), 2)\n> ((-1 : 1), 1)\n> ((0 : 1), 2)\n> ((1 : 1), 1)\n> ((1 : 0), 1)\n> \n> sage: X=ProjectiveSpace(QQ,1)\n> sage: x=X.rational_points(bound=3)\n> sage: for i in x:\n> ...       (i,x.count(i))\n> ((0 : 1), 2)\n> ((-3 : 1), 1)\n> ((-3/2 : 1), 1)\n> ((-2 : 1), 1)\n> ((-2/3 : 1), 1)\n> ((-1 : 1), 1)\n> ((-1/2 : 1), 1)\n> ((-1/3 : 1), 1)\n> ((0 : 1), 2)\n> ((1 : 1), 1)\n> ((1/2 : 1), 1)\n> ((1/3 : 1), 1)\n> ((2 : 1), 1)\n> ((2/3 : 1), 1)\n> ((3 : 1), 1)\n> ((3/2 : 1), 1)\n> ((1 : 0), 1)\n> \n> sage: Y=ProjectiveSpace(QQ,2)\n> sage: y=Y.rational_points(1)\n> sage: for i in y:\n> ...       (i,y.count(i))\n> ((0 : 0 : 1), 4)\n> ((-1 : 0 : 1), 1)\n> ((0 : 0 : 1), 4)\n> ((1 : 0 : 1), 2)\n> ((0 : -1 : 1), 2)\n> ((0 : -1 : 1), 2)\n> ((1 : -1 : 1), 1)\n> ((0 : 0 : 1), 4)\n> ((0 : 0 : 1), 4)\n> ((1 : 0 : 1), 2)\n> ((0 : 1 : 1), 2)\n> ((0 : 1 : 1), 2)\n> ((1 : 1 : 1), 1)\n> ((0 : 1 : 0), 2)\n> ((-1 : 1 : 0), 1)\n> ((0 : 1 : 0), 2)\n> ((1 : 1 : 0), 1)\n> ((1 : 0 : 0), 1)\n> \n> sage: Z=ProjectiveSpace(QQ,3)\n> sage: z=Z.rational_points(1)\n> sage: for i in z:\n> ...       (i,z.count(i))\n> ((0 : 0 : 0 : 1), 8)\n> ((-1 : 0 : 0 : 1), 1)\n> ((0 : 0 : 0 : 1), 8)\n> ((1 : 0 : 0 : 1), 4)\n> ((0 : -1 : 0 : 1), 2)\n> ((0 : -1 : 0 : 1), 2)\n> ((1 : -1 : 0 : 1), 1)\n> ((0 : 0 : 0 : 1), 8)\n> ((0 : 0 : 0 : 1), 8)\n> ((1 : 0 : 0 : 1), 4)\n> ((0 : 1 : 0 : 1), 4)\n> ((0 : 1 : 0 : 1), 4)\n> ((1 : 1 : 0 : 1), 2)\n> ((0 : 0 : -1 : 1), 4)\n> ((0 : 0 : -1 : 1), 4)\n> ((1 : 0 : -1 : 1), 2)\n> ((0 : 0 : -1 : 1), 4)\n> ((0 : 0 : -1 : 1), 4)\n> ((1 : 0 : -1 : 1), 2)\n> ((0 : 1 : -1 : 1), 2)\n> ((0 : 1 : -1 : 1), 2)\n> ((1 : 1 : -1 : 1), 1)\n> ((0 : 0 : 0 : 1), 8)\n> ((0 : 0 : 0 : 1), 8)\n> ((1 : 0 : 0 : 1), 4)\n> ((0 : 0 : 0 : 1), 8)\n> ((0 : 0 : 0 : 1), 8)\n> ((1 : 0 : 0 : 1), 4)\n> ((0 : 1 : 0 : 1), 4)\n> ((0 : 1 : 0 : 1), 4)\n> ((1 : 1 : 0 : 1), 2)\n> ((0 : 0 : 1 : 1), 4)\n> ((0 : 0 : 1 : 1), 4)\n> ((1 : 0 : 1 : 1), 2)\n> ((0 : 0 : 1 : 1), 4)\n> ((0 : 0 : 1 : 1), 4)\n> ((1 : 0 : 1 : 1), 2)\n> ((0 : 1 : 1 : 1), 2)\n> ((0 : 1 : 1 : 1), 2)\n> ((1 : 1 : 1 : 1), 1)\n> ((0 : 0 : 1 : 0), 4)\n> ((-1 : 0 : 1 : 0), 1)\n> ((0 : 0 : 1 : 0), 4)\n> ((1 : 0 : 1 : 0), 2)\n> ((0 : -1 : 1 : 0), 2)\n> ((0 : -1 : 1 : 0), 2)\n> ((1 : -1 : 1 : 0), 1)\n> ((0 : 0 : 1 : 0), 4)\n> ((0 : 0 : 1 : 0), 4)\n> ((1 : 0 : 1 : 0), 2)\n> ((0 : 1 : 1 : 0), 2)\n> ((0 : 1 : 1 : 0), 2)\n> ((1 : 1 : 1 : 0), 1)\n> ((0 : 1 : 0 : 0), 2)\n> ((-1 : 1 : 0 : 0), 1)\n> ((0 : 1 : 0 : 0), 2)\n> ((1 : 1 : 0 : 0), 1)\n> ((1 : 0 : 0 : 0), 1)\n> \n> --~--~---------~--~----~------------~-------~--~----~\n> To post to this group, send email to sage-devel@googlegroups.com\n> To unsubscribe from this group, send email to sage-devel-unsubscribe@googlegroups.com\n> For more options, visit this group at http://groups.google.com/group/sage-devel\n> URLs: http://sage.scipy.org/sage/ and http://modular.math.washington.edu/sage/\n> -~----------~----~----~----~------~----~------~--~---\n> \n> \n\n\n\n-- \nWilliam Stein\nAssociate Professor of Mathematics\nUniversity of Washington\nhttp://wstein.org\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1745\n\n",
     "created_at": "2008-01-10T10:38:56Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001745.json:
     "title": "bug in point enumeration mod p.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1745",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -201,7 +201,7 @@ archive/issue_comments_011019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1745#issuecomment-11019",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -354,16 +354,16 @@ old P^3,B=10
 archive/issue_comments_011020.json:
 ```json
 {
-    "body": "Attachment [rationalpoints01.hg](tarball://root/attachments/some-uuid/ticket1745/rationalpoints01.hg) by was created at 2008-01-13 01:08:26",
+    "body": "Attachment [rationalpoints01.hg](tarball://root/attachments/some-uuid/ticket1745/rationalpoints01.hg) by @williamstein created at 2008-01-13 01:08:26",
     "created_at": "2008-01-13T01:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1745#issuecomment-11020",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [rationalpoints01.hg](tarball://root/attachments/some-uuid/ticket1745/rationalpoints01.hg) by was created at 2008-01-13 01:08:26
+Attachment [rationalpoints01.hg](tarball://root/attachments/some-uuid/ticket1745/rationalpoints01.hg) by @williamstein created at 2008-01-13 01:08:26
 
 
 
@@ -377,7 +377,7 @@ archive/issue_comments_011021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1745#issuecomment-11021",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

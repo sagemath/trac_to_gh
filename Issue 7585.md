@@ -3,7 +3,7 @@
 archive/issues_007585.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  roed\n\nWrapping flint directly should be much faster than the current implementation of `Frac(GF(p)['t'])`\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7585\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @roed314\n\nWrapping flint directly should be much faster than the current implementation of `Frac(GF(p)['t'])`\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7585\n\n",
     "created_at": "2009-12-02T19:00:33Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007585.json:
     "title": "Fast function field arithmatic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7585",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  roed
+CC:  @roed314
 
 Wrapping flint directly should be much faster than the current implementation of `Frac(GF(p)['t'])`
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7585
 archive/issue_comments_064650.json:
 ```json
 {
-    "body": "Attachment [7585_FpT.patch](tarball://root/attachments/some-uuid/ticket7585/7585_FpT.patch) by robertwb created at 2009-12-02 19:03:36",
+    "body": "Attachment [7585_FpT.patch](tarball://root/attachments/some-uuid/ticket7585/7585_FpT.patch) by @robertwb created at 2009-12-02 19:03:36",
     "created_at": "2009-12-02T19:03:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64650",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7585_FpT.patch](tarball://root/attachments/some-uuid/ticket7585/7585_FpT.patch) by robertwb created at 2009-12-02 19:03:36
+Attachment [7585_FpT.patch](tarball://root/attachments/some-uuid/ticket7585/7585_FpT.patch) by @robertwb created at 2009-12-02 19:03:36
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_064651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64651",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_064652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64652",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_064653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64653",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -108,16 +108,16 @@ Still has a lot of work (better integration, doctests, testing...)
 archive/issue_comments_064654.json:
 ```json
 {
-    "body": "Attachment [7585_FpT.2.patch](tarball://root/attachments/some-uuid/ticket7585/7585_FpT.2.patch) by robertwb created at 2009-12-05 17:54:49",
+    "body": "Attachment [7585_FpT.2.patch](tarball://root/attachments/some-uuid/ticket7585/7585_FpT.2.patch) by @robertwb created at 2009-12-05 17:54:49",
     "created_at": "2009-12-05T17:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64654",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7585_FpT.2.patch](tarball://root/attachments/some-uuid/ticket7585/7585_FpT.2.patch) by robertwb created at 2009-12-05 17:54:49
+Attachment [7585_FpT.2.patch](tarball://root/attachments/some-uuid/ticket7585/7585_FpT.2.patch) by @robertwb created at 2009-12-05 17:54:49
 
 
 
@@ -126,16 +126,16 @@ Attachment [7585_FpT.2.patch](tarball://root/attachments/some-uuid/ticket7585/75
 archive/issue_comments_064655.json:
 ```json
 {
-    "body": "Attachment [7585_FpT-more.patch](tarball://root/attachments/some-uuid/ticket7585/7585_FpT-more.patch) by robertwb created at 2009-12-08 08:09:44\n\napply on top of previous",
+    "body": "Attachment [7585_FpT-more.patch](tarball://root/attachments/some-uuid/ticket7585/7585_FpT-more.patch) by @robertwb created at 2009-12-08 08:09:44\n\napply on top of previous",
     "created_at": "2009-12-08T08:09:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64655",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7585_FpT-more.patch](tarball://root/attachments/some-uuid/ticket7585/7585_FpT-more.patch) by robertwb created at 2009-12-08 08:09:44
+Attachment [7585_FpT-more.patch](tarball://root/attachments/some-uuid/ticket7585/7585_FpT-more.patch) by @robertwb created at 2009-12-08 08:09:44
 
 apply on top of previous
 
@@ -151,7 +151,7 @@ archive/issue_comments_064656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64656",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -164,16 +164,16 @@ I've added some doctests.  I'll try to split the work on FpT off from the rest o
 archive/issue_comments_064657.json:
 ```json
 {
-    "body": "Attachment [7585_1_FpT-orig.patch](tarball://root/attachments/some-uuid/ticket7585/7585_1_FpT-orig.patch) by roed created at 2009-12-15 16:51:40\n\nRebased against 4.3.rc0",
+    "body": "Attachment [7585_1_FpT-orig.patch](tarball://root/attachments/some-uuid/ticket7585/7585_1_FpT-orig.patch) by @roed314 created at 2009-12-15 16:51:40\n\nRebased against 4.3.rc0",
     "created_at": "2009-12-15T16:51:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64657",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_1_FpT-orig.patch](tarball://root/attachments/some-uuid/ticket7585/7585_1_FpT-orig.patch) by roed created at 2009-12-15 16:51:40
+Attachment [7585_1_FpT-orig.patch](tarball://root/attachments/some-uuid/ticket7585/7585_1_FpT-orig.patch) by @roed314 created at 2009-12-15 16:51:40
 
 Rebased against 4.3.rc0
 
@@ -184,16 +184,16 @@ Rebased against 4.3.rc0
 archive/issue_comments_064658.json:
 ```json
 {
-    "body": "Attachment [7585_2_FpT-more.patch](tarball://root/attachments/some-uuid/ticket7585/7585_2_FpT-more.patch) by roed created at 2009-12-15 16:51:58\n\nRebased against 4.3.rc0",
+    "body": "Attachment [7585_2_FpT-more.patch](tarball://root/attachments/some-uuid/ticket7585/7585_2_FpT-more.patch) by @roed314 created at 2009-12-15 16:51:58\n\nRebased against 4.3.rc0",
     "created_at": "2009-12-15T16:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64658",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_2_FpT-more.patch](tarball://root/attachments/some-uuid/ticket7585/7585_2_FpT-more.patch) by roed created at 2009-12-15 16:51:58
+Attachment [7585_2_FpT-more.patch](tarball://root/attachments/some-uuid/ticket7585/7585_2_FpT-more.patch) by @roed314 created at 2009-12-15 16:51:58
 
 Rebased against 4.3.rc0
 
@@ -204,16 +204,16 @@ Rebased against 4.3.rc0
 archive/issue_comments_064659.json:
 ```json
 {
-    "body": "Attachment [7585_3_FpT-update.patch](tarball://root/attachments/some-uuid/ticket7585/7585_3_FpT-update.patch) by roed created at 2009-12-15 16:52:13",
+    "body": "Attachment [7585_3_FpT-update.patch](tarball://root/attachments/some-uuid/ticket7585/7585_3_FpT-update.patch) by @roed314 created at 2009-12-15 16:52:13",
     "created_at": "2009-12-15T16:52:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64659",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_3_FpT-update.patch](tarball://root/attachments/some-uuid/ticket7585/7585_3_FpT-update.patch) by roed created at 2009-12-15 16:52:13
+Attachment [7585_3_FpT-update.patch](tarball://root/attachments/some-uuid/ticket7585/7585_3_FpT-update.patch) by @roed314 created at 2009-12-15 16:52:13
 
 
 
@@ -222,16 +222,16 @@ Attachment [7585_3_FpT-update.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_064660.json:
 ```json
 {
-    "body": "Attachment [7585_4_sets_with_partial_maps.patch](tarball://root/attachments/some-uuid/ticket7585/7585_4_sets_with_partial_maps.patch) by roed created at 2009-12-15 16:52:20",
+    "body": "Attachment [7585_4_sets_with_partial_maps.patch](tarball://root/attachments/some-uuid/ticket7585/7585_4_sets_with_partial_maps.patch) by @roed314 created at 2009-12-15 16:52:20",
     "created_at": "2009-12-15T16:52:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64660",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_4_sets_with_partial_maps.patch](tarball://root/attachments/some-uuid/ticket7585/7585_4_sets_with_partial_maps.patch) by roed created at 2009-12-15 16:52:20
+Attachment [7585_4_sets_with_partial_maps.patch](tarball://root/attachments/some-uuid/ticket7585/7585_4_sets_with_partial_maps.patch) by @roed314 created at 2009-12-15 16:52:20
 
 
 
@@ -240,16 +240,16 @@ Attachment [7585_4_sets_with_partial_maps.patch](tarball://root/attachments/some
 archive/issue_comments_064661.json:
 ```json
 {
-    "body": "Attachment [7585_5_finite_fields_to_new_coercion.patch](tarball://root/attachments/some-uuid/ticket7585/7585_5_finite_fields_to_new_coercion.patch) by roed created at 2009-12-15 16:52:38",
+    "body": "Attachment [7585_5_finite_fields_to_new_coercion.patch](tarball://root/attachments/some-uuid/ticket7585/7585_5_finite_fields_to_new_coercion.patch) by @roed314 created at 2009-12-15 16:52:38",
     "created_at": "2009-12-15T16:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64661",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_5_finite_fields_to_new_coercion.patch](tarball://root/attachments/some-uuid/ticket7585/7585_5_finite_fields_to_new_coercion.patch) by roed created at 2009-12-15 16:52:38
+Attachment [7585_5_finite_fields_to_new_coercion.patch](tarball://root/attachments/some-uuid/ticket7585/7585_5_finite_fields_to_new_coercion.patch) by @roed314 created at 2009-12-15 16:52:38
 
 
 
@@ -258,16 +258,16 @@ Attachment [7585_5_finite_fields_to_new_coercion.patch](tarball://root/attachmen
 archive/issue_comments_064662.json:
 ```json
 {
-    "body": "Attachment [7585_7_ideal.patch](tarball://root/attachments/some-uuid/ticket7585/7585_7_ideal.patch) by roed created at 2009-12-15 16:52:46",
+    "body": "Attachment [7585_7_ideal.patch](tarball://root/attachments/some-uuid/ticket7585/7585_7_ideal.patch) by @roed314 created at 2009-12-15 16:52:46",
     "created_at": "2009-12-15T16:52:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64662",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_7_ideal.patch](tarball://root/attachments/some-uuid/ticket7585/7585_7_ideal.patch) by roed created at 2009-12-15 16:52:46
+Attachment [7585_7_ideal.patch](tarball://root/attachments/some-uuid/ticket7585/7585_7_ideal.patch) by @roed314 created at 2009-12-15 16:52:46
 
 
 
@@ -276,16 +276,16 @@ Attachment [7585_7_ideal.patch](tarball://root/attachments/some-uuid/ticket7585/
 archive/issue_comments_064663.json:
 ```json
 {
-    "body": "Attachment [7585_8_parent_init.patch](tarball://root/attachments/some-uuid/ticket7585/7585_8_parent_init.patch) by roed created at 2009-12-15 16:52:58",
+    "body": "Attachment [7585_8_parent_init.patch](tarball://root/attachments/some-uuid/ticket7585/7585_8_parent_init.patch) by @roed314 created at 2009-12-15 16:52:58",
     "created_at": "2009-12-15T16:52:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64663",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_8_parent_init.patch](tarball://root/attachments/some-uuid/ticket7585/7585_8_parent_init.patch) by roed created at 2009-12-15 16:52:58
+Attachment [7585_8_parent_init.patch](tarball://root/attachments/some-uuid/ticket7585/7585_8_parent_init.patch) by @roed314 created at 2009-12-15 16:52:58
 
 
 
@@ -294,16 +294,16 @@ Attachment [7585_8_parent_init.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_064664.json:
 ```json
 {
-    "body": "Attachment [7585_9_frac_and_coerce_updates.patch](tarball://root/attachments/some-uuid/ticket7585/7585_9_frac_and_coerce_updates.patch) by roed created at 2009-12-15 16:53:24",
+    "body": "Attachment [7585_9_frac_and_coerce_updates.patch](tarball://root/attachments/some-uuid/ticket7585/7585_9_frac_and_coerce_updates.patch) by @roed314 created at 2009-12-15 16:53:24",
     "created_at": "2009-12-15T16:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64664",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_9_frac_and_coerce_updates.patch](tarball://root/attachments/some-uuid/ticket7585/7585_9_frac_and_coerce_updates.patch) by roed created at 2009-12-15 16:53:24
+Attachment [7585_9_frac_and_coerce_updates.patch](tarball://root/attachments/some-uuid/ticket7585/7585_9_frac_and_coerce_updates.patch) by @roed314 created at 2009-12-15 16:53:24
 
 
 
@@ -312,16 +312,16 @@ Attachment [7585_9_frac_and_coerce_updates.patch](tarball://root/attachments/som
 archive/issue_comments_064665.json:
 ```json
 {
-    "body": "Attachment [7585_10_residue_field.patch](tarball://root/attachments/some-uuid/ticket7585/7585_10_residue_field.patch) by roed created at 2009-12-15 16:53:36",
+    "body": "Attachment [7585_10_residue_field.patch](tarball://root/attachments/some-uuid/ticket7585/7585_10_residue_field.patch) by @roed314 created at 2009-12-15 16:53:36",
     "created_at": "2009-12-15T16:53:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64665",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_10_residue_field.patch](tarball://root/attachments/some-uuid/ticket7585/7585_10_residue_field.patch) by roed created at 2009-12-15 16:53:36
+Attachment [7585_10_residue_field.patch](tarball://root/attachments/some-uuid/ticket7585/7585_10_residue_field.patch) by @roed314 created at 2009-12-15 16:53:36
 
 
 
@@ -330,16 +330,16 @@ Attachment [7585_10_residue_field.patch](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_064666.json:
 ```json
 {
-    "body": "Attachment [7585_12_fixes.patch](tarball://root/attachments/some-uuid/ticket7585/7585_12_fixes.patch) by roed created at 2009-12-15 16:53:45",
+    "body": "Attachment [7585_12_fixes.patch](tarball://root/attachments/some-uuid/ticket7585/7585_12_fixes.patch) by @roed314 created at 2009-12-15 16:53:45",
     "created_at": "2009-12-15T16:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64666",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_12_fixes.patch](tarball://root/attachments/some-uuid/ticket7585/7585_12_fixes.patch) by roed created at 2009-12-15 16:53:45
+Attachment [7585_12_fixes.patch](tarball://root/attachments/some-uuid/ticket7585/7585_12_fixes.patch) by @roed314 created at 2009-12-15 16:53:45
 
 
 
@@ -348,16 +348,16 @@ Attachment [7585_12_fixes.patch](tarball://root/attachments/some-uuid/ticket7585
 archive/issue_comments_064667.json:
 ```json
 {
-    "body": "Attachment [7585_ALL.patch](tarball://root/attachments/some-uuid/ticket7585/7585_ALL.patch) by roed created at 2009-12-15 16:54:23\n\nThis combines all of the above into one patch, for easy application.  Based against 4.3.rc0",
+    "body": "Attachment [7585_ALL.patch](tarball://root/attachments/some-uuid/ticket7585/7585_ALL.patch) by @roed314 created at 2009-12-15 16:54:23\n\nThis combines all of the above into one patch, for easy application.  Based against 4.3.rc0",
     "created_at": "2009-12-15T16:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64667",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_ALL.patch](tarball://root/attachments/some-uuid/ticket7585/7585_ALL.patch) by roed created at 2009-12-15 16:54:23
+Attachment [7585_ALL.patch](tarball://root/attachments/some-uuid/ticket7585/7585_ALL.patch) by @roed314 created at 2009-12-15 16:54:23
 
 This combines all of the above into one patch, for easy application.  Based against 4.3.rc0
 
@@ -373,7 +373,7 @@ archive/issue_comments_064668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64668",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_064669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64669",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_064670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64670",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_064671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64671",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_064672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64672",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_064673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64673",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_064674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64674",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -524,7 +524,7 @@ archive/issue_comments_064675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64675",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -542,7 +542,7 @@ archive/issue_comments_064676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64676",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_064677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64677",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -578,7 +578,7 @@ archive/issue_comments_064678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64678",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -596,7 +596,7 @@ archive/issue_comments_064679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64679",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -614,7 +614,7 @@ archive/issue_comments_064680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64680",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -632,7 +632,7 @@ archive/issue_comments_064681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7585#issuecomment-64681",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

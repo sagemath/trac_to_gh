@@ -3,7 +3,7 @@
 archive/issues_007110.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  timdumol was jason mhampton kcrisman mvngu\n\nKeywords: sagenb notebook\n\nPrimary authors and reviewers are at listed at\n\n* #4046\n* #6459\n* #6694\n* #6865\n* #6939\n\nSee #6983 for instructions on getting sagenb.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7110\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol @williamstein @jasongrout mhampton @kcrisman mvngu\n\nKeywords: sagenb notebook\n\nPrimary authors and reviewers are at listed at\n\n* #4046\n* #6459\n* #6694\n* #6865\n* #6939\n\nSee #6983 for instructions on getting sagenb.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7110\n\n",
     "created_at": "2009-10-04T13:52:04Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007110.json:
     "title": "[with patch, needs review] SageNB -- Port #4046, #6459, #6694, #6865, #6939",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7110",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
 
-CC:  timdumol was jason mhampton kcrisman mvngu
+CC:  @TimDumol @williamstein @jasongrout mhampton @kcrisman mvngu
 
 Keywords: sagenb notebook
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7110
 archive/issue_comments_058926.json:
 ```json
 {
-    "body": "Attachment [trac_7110-sagenb_ports.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports.patch) by mpatel created at 2009-10-04 14:52:11\n\nPort/merge/base #4046, #6459, #6694, #6865, #6939 for sagenb.",
+    "body": "Attachment [trac_7110-sagenb_ports.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports.patch) by @qed777 created at 2009-10-04 14:52:11\n\nPort/merge/base #4046, #6459, #6694, #6865, #6939 for sagenb.",
     "created_at": "2009-10-04T14:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7110#issuecomment-58926",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7110-sagenb_ports.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports.patch) by mpatel created at 2009-10-04 14:52:11
+Attachment [trac_7110-sagenb_ports.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports.patch) by @qed777 created at 2009-10-04 14:52:11
 
 Port/merge/base #4046, #6459, #6694, #6865, #6939 for sagenb.
 
@@ -69,7 +69,7 @@ archive/issue_comments_058927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7110#issuecomment-58927",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -98,16 +98,16 @@ However:
 archive/issue_comments_058928.json:
 ```json
 {
-    "body": "Attachment [trac_7110-sagenb_ports_v2.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports_v2.patch) by mpatel created at 2009-10-04 17:28:00\n\nv2: converted missed \"main.js\" in notebook.py.  Apply only this patch.",
+    "body": "Attachment [trac_7110-sagenb_ports_v2.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports_v2.patch) by @qed777 created at 2009-10-04 17:28:00\n\nv2: converted missed \"main.js\" in notebook.py.  Apply only this patch.",
     "created_at": "2009-10-04T17:28:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7110#issuecomment-58928",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7110-sagenb_ports_v2.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports_v2.patch) by mpatel created at 2009-10-04 17:28:00
+Attachment [trac_7110-sagenb_ports_v2.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports_v2.patch) by @qed777 created at 2009-10-04 17:28:00
 
 v2: converted missed "main.js" in notebook.py.  Apply only this patch.
 
@@ -123,7 +123,7 @@ archive/issue_comments_058929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7110#issuecomment-58929",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_058930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7110#issuecomment-58930",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -160,16 +160,16 @@ Please apply all three patches in lexicographical order ***after*** the [attachm
 archive/issue_comments_058931.json:
 ```json
 {
-    "body": "Attachment [trac_7110-sagenb_ports_minimal.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports_minimal.patch) by mpatel created at 2009-10-11 13:38:22\n\nMinimal rebase of #4046, #6694, #6865, #6939 for SageNB.  Apply only this patch.",
+    "body": "Attachment [trac_7110-sagenb_ports_minimal.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports_minimal.patch) by @qed777 created at 2009-10-11 13:38:22\n\nMinimal rebase of #4046, #6694, #6865, #6939 for SageNB.  Apply only this patch.",
     "created_at": "2009-10-11T13:38:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7110#issuecomment-58931",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7110-sagenb_ports_minimal.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports_minimal.patch) by mpatel created at 2009-10-11 13:38:22
+Attachment [trac_7110-sagenb_ports_minimal.patch](tarball://root/attachments/some-uuid/ticket7110/trac_7110-sagenb_ports_minimal.patch) by @qed777 created at 2009-10-11 13:38:22
 
 Minimal rebase of #4046, #6694, #6865, #6939 for SageNB.  Apply only this patch.
 
@@ -185,7 +185,7 @@ archive/issue_comments_058932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7110#issuecomment-58932",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_058933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7110#issuecomment-58933",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_058934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7110#issuecomment-58934",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_058935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7110",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7110#issuecomment-58935",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000695.json:
     "title": "SAGE's multivariate gcd sucks over QQ and/or ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/695",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -60,7 +60,7 @@ archive/issue_comments_003641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/695#issuecomment-3641",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_003642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/695#issuecomment-3642",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009763.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  was\n\nThis ticket is a fork from #9400.\n\n* implement hashing for number field ideals that isn't a stupid string repr, hence vastly faster \n\n* make number field ideals *not* print in reduced form; this will look uglier, but is massively faster and more sensible for any real applications, as people learned constantly at sage days 22.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9764\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein\n\nThis ticket is a fork from #9400.\n\n* implement hashing for number field ideals that isn't a stupid string repr, hence vastly faster \n\n* make number field ideals *not* print in reduced form; this will look uglier, but is massively faster and more sensible for any real applications, as people learned constantly at sage days 22.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9764\n\n",
     "created_at": "2010-08-18T21:57:52Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_009763.json:
     "title": "Change hashing and printing for NumberFieldIdeals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9763",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  was
+CC:  @williamstein
 
 This ticket is a fork from #9400.
 
@@ -43,7 +43,7 @@ archive/issue_comments_095652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9763#issuecomment-95652",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_095653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9763#issuecomment-95653",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_095654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9763#issuecomment-95654",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -92,16 +92,16 @@ Patch against sage-4.5.3.alpha0
 archive/issue_comments_095655.json:
 ```json
 {
-    "body": "Attachment [9764_ideal_repr.patch](tarball://root/attachments/some-uuid/ticket9764/9764_ideal_repr.patch) by jdemeyer created at 2010-09-16 09:14:28",
+    "body": "Attachment [9764_ideal_repr.patch](tarball://root/attachments/some-uuid/ticket9764/9764_ideal_repr.patch) by @jdemeyer created at 2010-09-16 09:14:28",
     "created_at": "2010-09-16T09:14:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9763#issuecomment-95655",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9764_ideal_repr.patch](tarball://root/attachments/some-uuid/ticket9764/9764_ideal_repr.patch) by jdemeyer created at 2010-09-16 09:14:28
+Attachment [9764_ideal_repr.patch](tarball://root/attachments/some-uuid/ticket9764/9764_ideal_repr.patch) by @jdemeyer created at 2010-09-16 09:14:28
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_095656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9763#issuecomment-95656",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_095657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9763#issuecomment-95657",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_095658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9763#issuecomment-95658",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_095659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9763#issuecomment-95659",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -182,16 +182,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_095660.json:
 ```json
 {
-    "body": "Attachment [9764_ideal_repr_new.patch](tarball://root/attachments/some-uuid/ticket9764/9764_ideal_repr_new.patch) by davidloeffler created at 2010-09-23 11:18:15\n\nI applied this to sage-4.6.alpha1 with #9898 and #9753 installed. Changes look sensible, patch applies fine, and all doctests pass. Positive review.",
+    "body": "Attachment [9764_ideal_repr_new.patch](tarball://root/attachments/some-uuid/ticket9764/9764_ideal_repr_new.patch) by @loefflerd created at 2010-09-23 11:18:15\n\nI applied this to sage-4.6.alpha1 with #9898 and #9753 installed. Changes look sensible, patch applies fine, and all doctests pass. Positive review.",
     "created_at": "2010-09-23T11:18:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9763#issuecomment-95660",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [9764_ideal_repr_new.patch](tarball://root/attachments/some-uuid/ticket9764/9764_ideal_repr_new.patch) by davidloeffler created at 2010-09-23 11:18:15
+Attachment [9764_ideal_repr_new.patch](tarball://root/attachments/some-uuid/ticket9764/9764_ideal_repr_new.patch) by @loefflerd created at 2010-09-23 11:18:15
 
 I applied this to sage-4.6.alpha1 with #9898 and #9753 installed. Changes look sensible, patch applies fine, and all doctests pass. Positive review.
 
@@ -207,7 +207,7 @@ archive/issue_comments_095661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9763#issuecomment-95661",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

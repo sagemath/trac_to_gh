@@ -3,7 +3,7 @@
 archive/issues_002577.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan\n\nKeywords: diagonal_matrix vector iterable\n\nI don't like either of these behaviours -- why can't any old iterable thing go into diagonal_matrix?\n\n\n```\nsage: x = ZZ['x'].gen()\nsage: temp = NumberField(x^4 + x^3 + x^2 + x + 1, 'a')\nsage: diagonal_matrix(vector(1, 2))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/free_module_element.pyx in sage.modules.free_module_element.vector()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/free_module_element.pyx in sage.modules.free_module_element.prepare()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/structure/sequence.py in __init__(self, x, universe, check, immutable, cr, cr_str)\n    201                  immutable=False, cr=False, cr_str=None):\n    202         if not isinstance(x, (list, tuple)):\n--> 203             x = list(x)\n    204             #raise TypeError, \"x must be a list or tuple\"\n    205         self.__hash = None\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not iterable\nsage: diagonal_matrix(vector(temp(1), temp(2)))\n---------------------------------------------------------------------------\n<type 'exceptions.UnboundLocalError'>     Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/matrix/constructor.py in diagonal_matrix(arg0, arg1, arg2, sparse)\n    565             v = arg2\n    566             \n--> 567     if isinstance(v, list):\n    568         w = {}\n    569         for i in range(len(v)):\n\n<type 'exceptions.UnboundLocalError'>: local variable 'v' referenced before assignment\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2577\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: diagonal_matrix vector iterable\n\nI don't like either of these behaviours -- why can't any old iterable thing go into diagonal_matrix?\n\n\n```\nsage: x = ZZ['x'].gen()\nsage: temp = NumberField(x^4 + x^3 + x^2 + x + 1, 'a')\nsage: diagonal_matrix(vector(1, 2))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/free_module_element.pyx in sage.modules.free_module_element.vector()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/free_module_element.pyx in sage.modules.free_module_element.prepare()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/structure/sequence.py in __init__(self, x, universe, check, immutable, cr, cr_str)\n    201                  immutable=False, cr=False, cr_str=None):\n    202         if not isinstance(x, (list, tuple)):\n--> 203             x = list(x)\n    204             #raise TypeError, \"x must be a list or tuple\"\n    205         self.__hash = None\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not iterable\nsage: diagonal_matrix(vector(temp(1), temp(2)))\n---------------------------------------------------------------------------\n<type 'exceptions.UnboundLocalError'>     Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/matrix/constructor.py in diagonal_matrix(arg0, arg1, arg2, sparse)\n    565             v = arg2\n    566             \n--> 567     if isinstance(v, list):\n    568         w = {}\n    569         for i in range(len(v)):\n\n<type 'exceptions.UnboundLocalError'>: local variable 'v' referenced before assignment\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2577\n\n",
     "created_at": "2008-03-17T23:16:47Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_002577.json:
     "title": "improving diagonal_matrix and vector (iterable) input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2577",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: diagonal_matrix vector iterable
 
@@ -80,7 +80,7 @@ archive/issue_comments_017613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17613",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_017614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17614",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_017615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17615",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_017616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17616",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -169,16 +169,16 @@ I'm treating 1) and 2) as 2 separate issues, so apply each patch one at a time. 
 archive/issue_comments_017617.json:
 ```json
 {
-    "body": "Changing assignee from was to dfdeshom.",
+    "body": "Changing assignee from @williamstein to @dfdeshom.",
     "created_at": "2008-03-20T17:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17617",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Changing assignee from was to dfdeshom.
+Changing assignee from @williamstein to @dfdeshom.
 
 
 
@@ -192,7 +192,7 @@ archive/issue_comments_017618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17618",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_017619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17619",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -234,16 +234,16 @@ BTW, +1 to the functionality enhancement proposed.  I keep getting annoyed that 
 archive/issue_comments_017620.json:
 ```json
 {
-    "body": "Attachment [2577-1.patch](tarball://root/attachments/some-uuid/ticket2577/2577-1.patch) by dfdeshom created at 2008-04-10 15:27:15",
+    "body": "Attachment [2577-1.patch](tarball://root/attachments/some-uuid/ticket2577/2577-1.patch) by @dfdeshom created at 2008-04-10 15:27:15",
     "created_at": "2008-04-10T15:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17620",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2577-1.patch](tarball://root/attachments/some-uuid/ticket2577/2577-1.patch) by dfdeshom created at 2008-04-10 15:27:15
+Attachment [2577-1.patch](tarball://root/attachments/some-uuid/ticket2577/2577-1.patch) by @dfdeshom created at 2008-04-10 15:27:15
 
 
 
@@ -257,7 +257,7 @@ archive/issue_comments_017621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17621",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_017622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17622",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_017623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17623",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_017624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17624",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_017625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17625",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_017626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17626",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_017627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17627",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_017628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17628",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

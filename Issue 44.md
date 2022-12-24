@@ -14,7 +14,7 @@ archive/issues_000044.json:
     "title": "customize preparsing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/44",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -70,7 +70,7 @@ archive/issue_comments_000267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/44",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/44#issuecomment-267",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_000268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/44",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/44#issuecomment-268",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

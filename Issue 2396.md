@@ -3,7 +3,7 @@
 archive/issues_002396.json:
 ```json
 {
-    "body": "Assignee: was\n\nDan Christensen:\n\n```\n>  \n>  Another nice feature of numpy is *assigning* using numpy-style indexing.\n>  For example, to add a multiple of column j to column i, you can do\n>  \n>   A[:,i] += m*A[:,j]\n>  \n>  And you can zero out a region with\n>  \n>   A[2:4, 3:8] = 0    (broadcasting used here)\n```\n\n\nThis is currently not implemented in sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2396\n\n",
+    "body": "Assignee: @williamstein\n\nDan Christensen:\n\n```\n>  \n>  Another nice feature of numpy is *assigning* using numpy-style indexing.\n>  For example, to add a multiple of column j to column i, you can do\n>  \n>   A[:,i] += m*A[:,j]\n>  \n>  And you can zero out a region with\n>  \n>   A[2:4, 3:8] = 0    (broadcasting used here)\n```\n\n\nThis is currently not implemented in sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2396\n\n",
     "created_at": "2008-03-05T16:35:19Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002396.json:
     "title": "add support for matrix numpy-style indexing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2396",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Dan Christensen:
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2396
 archive/issue_comments_016162.json:
 ```json
 {
-    "body": "Changing assignee from was to dfdeshom.",
+    "body": "Changing assignee from @williamstein to @dfdeshom.",
     "created_at": "2008-03-20T17:56:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2396#issuecomment-16162",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Changing assignee from was to dfdeshom.
+Changing assignee from @williamstein to @dfdeshom.
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_016163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2396",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2396#issuecomment-16163",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

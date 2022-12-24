@@ -3,7 +3,7 @@
 archive/issues_003593.json:
 ```json
 {
-    "body": "Assignee: yi\n\nI got this when running the test on a heavily loaded system.   It's probably an issue with reading a file that hasn't been completely written yet.  !\n\n```\nsage -t  devel/sage/sage/dsage/database/sql_functions.py (skipping) -- nodoctest.py file in directory\nsage -t  devel/sage/sage/dsage/interface/sage_interface.py **********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/dsage_interface.py\", line 466:\n    sage: j = d.block_on_jobs(d.map(f, [25,12,25,32,12]))\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[10]>\", line 1, in <module>\n        j = d.block_on_jobs(d.map(f, [Integer(25),Integer(12),Integer(25),Integer(32),Integer(12)]))###line 466:\n    sage: j = d.block_on_jobs(d.map(f, [25,12,25,32,12]))\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/site-packages/sage/dsage/interface/dsage_interface.py\", line 476, in block_on_jobs\n        j.get_job()\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/site-packages/sage/dsage/interface/dsage_interface.py\", line 1009, in get_job\n        self._update_job(jdict)\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/site-packages/sage/dsage/interface/dsage_interface.py\", line 820, in _update_job\n        job = expand_job(jdict)\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/site-packages/sage/dsage/database/job.py\", line 177, in expand_job\n        jdict['result'] = zlib.decompress(jdict['result'])\n    error: Error -5 while decompressing data\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/dsage_interface.py\", line 467:\n    sage: print \"ignore this\";  j # random\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[11]>\", line 1, in <module>\n        print \"ignore this\";  j # random###line 467:\n    sage: print \"ignore this\";  j # random\n    NameError: name 'j' is not defined\n**********************************************************************\n1 items had failures:\n   2 of  12 in __main__.example_13\n***Test Failed*** 2 failures.\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\nFor whitespace errors, see the file /home/was/build/sage-3.0.4.alpha2/tmp/.doctest_dsage_interface.pyUnhandled exception in thread started by <bound method Thread.__bootstrap of <Thread(PoolThread-twisted.internet.reactor-1, stopped)>>\nTraceback (most recent call last):\n  File \"/home/was/build/sage-3.0.4.alpha\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3593\n\n",
+    "body": "Assignee: @yqiang\n\nI got this when running the test on a heavily loaded system.   It's probably an issue with reading a file that hasn't been completely written yet.  !\n\n```\nsage -t  devel/sage/sage/dsage/database/sql_functions.py (skipping) -- nodoctest.py file in directory\nsage -t  devel/sage/sage/dsage/interface/sage_interface.py **********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/dsage_interface.py\", line 466:\n    sage: j = d.block_on_jobs(d.map(f, [25,12,25,32,12]))\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[10]>\", line 1, in <module>\n        j = d.block_on_jobs(d.map(f, [Integer(25),Integer(12),Integer(25),Integer(32),Integer(12)]))###line 466:\n    sage: j = d.block_on_jobs(d.map(f, [25,12,25,32,12]))\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/site-packages/sage/dsage/interface/dsage_interface.py\", line 476, in block_on_jobs\n        j.get_job()\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/site-packages/sage/dsage/interface/dsage_interface.py\", line 1009, in get_job\n        self._update_job(jdict)\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/site-packages/sage/dsage/interface/dsage_interface.py\", line 820, in _update_job\n        job = expand_job(jdict)\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/site-packages/sage/dsage/database/job.py\", line 177, in expand_job\n        jdict['result'] = zlib.decompress(jdict['result'])\n    error: Error -5 while decompressing data\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/dsage_interface.py\", line 467:\n    sage: print \"ignore this\";  j # random\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[11]>\", line 1, in <module>\n        print \"ignore this\";  j # random###line 467:\n    sage: print \"ignore this\";  j # random\n    NameError: name 'j' is not defined\n**********************************************************************\n1 items had failures:\n   2 of  12 in __main__.example_13\n***Test Failed*** 2 failures.\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\n[DSage] Closed connection to localhost\nFor whitespace errors, see the file /home/was/build/sage-3.0.4.alpha2/tmp/.doctest_dsage_interface.pyUnhandled exception in thread started by <bound method Thread.__bootstrap of <Thread(PoolThread-twisted.internet.reactor-1, stopped)>>\nTraceback (most recent call last):\n  File \"/home/was/build/sage-3.0.4.alpha\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3593\n\n",
     "created_at": "2008-07-07T22:13:28Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_003593.json:
     "title": "dsage-interfaces -- error decompressing data",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3593",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 I got this when running the test on a heavily loaded system.   It's probably an issue with reading a file that hasn't been completely written yet.  !
 
@@ -83,7 +83,7 @@ archive/issue_comments_025390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3593#issuecomment-25390",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_025391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3593#issuecomment-25391",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_025392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3593#issuecomment-25392",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -200,16 +200,16 @@ etc.
 archive/issue_comments_025393.json:
 ```json
 {
-    "body": "Attachment [sage-3593.patch](tarball://root/attachments/some-uuid/ticket3593/sage-3593.patch) by was created at 2008-07-08 06:31:39",
+    "body": "Attachment [sage-3593.patch](tarball://root/attachments/some-uuid/ticket3593/sage-3593.patch) by @williamstein created at 2008-07-08 06:31:39",
     "created_at": "2008-07-08T06:31:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3593#issuecomment-25393",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3593.patch](tarball://root/attachments/some-uuid/ticket3593/sage-3593.patch) by was created at 2008-07-08 06:31:39
+Attachment [sage-3593.patch](tarball://root/attachments/some-uuid/ticket3593/sage-3593.patch) by @williamstein created at 2008-07-08 06:31:39
 
 
 
@@ -223,7 +223,7 @@ archive/issue_comments_025394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3593#issuecomment-25394",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -236,16 +236,16 @@ I was able to reproduce the problem on sage.math by running 4 doctests simultane
 archive/issue_comments_025395.json:
 ```json
 {
-    "body": "Attachment [tmpdir.patch](tarball://root/attachments/some-uuid/ticket3593/tmpdir.patch) by yi created at 2008-07-08 07:52:37",
+    "body": "Attachment [tmpdir.patch](tarball://root/attachments/some-uuid/ticket3593/tmpdir.patch) by @yqiang created at 2008-07-08 07:52:37",
     "created_at": "2008-07-08T07:52:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3593#issuecomment-25395",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [tmpdir.patch](tarball://root/attachments/some-uuid/ticket3593/tmpdir.patch) by yi created at 2008-07-08 07:52:37
+Attachment [tmpdir.patch](tarball://root/attachments/some-uuid/ticket3593/tmpdir.patch) by @yqiang created at 2008-07-08 07:52:37
 
 
 
@@ -254,16 +254,16 @@ Attachment [tmpdir.patch](tarball://root/attachments/some-uuid/ticket3593/tmpdir
 archive/issue_comments_025396.json:
 ```json
 {
-    "body": "Attachment [find_ports.patch](tarball://root/attachments/some-uuid/ticket3593/find_ports.patch) by yi created at 2008-07-08 17:19:38\n\nThis will bind to port 0 and the OS will return a valid port to listen on",
+    "body": "Attachment [find_ports.patch](tarball://root/attachments/some-uuid/ticket3593/find_ports.patch) by @yqiang created at 2008-07-08 17:19:38\n\nThis will bind to port 0 and the OS will return a valid port to listen on",
     "created_at": "2008-07-08T17:19:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3593#issuecomment-25396",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [find_ports.patch](tarball://root/attachments/some-uuid/ticket3593/find_ports.patch) by yi created at 2008-07-08 17:19:38
+Attachment [find_ports.patch](tarball://root/attachments/some-uuid/ticket3593/find_ports.patch) by @yqiang created at 2008-07-08 17:19:38
 
 This will bind to port 0 and the OS will return a valid port to listen on
 
@@ -315,7 +315,7 @@ archive/issue_comments_025399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3593#issuecomment-25399",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

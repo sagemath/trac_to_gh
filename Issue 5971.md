@@ -14,7 +14,7 @@ archive/issues_005971.json:
     "title": "fix dumb error message when modding out by 0: Mod(10,0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5971",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -80,7 +80,7 @@ archive/issue_comments_047362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5971#issuecomment-47362",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

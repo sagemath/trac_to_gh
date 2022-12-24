@@ -3,7 +3,7 @@
 archive/issues_004320.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis is a patch which incorporates several changes in linear_codes.py which should speed up (and in some cases do:-) some coding theory computations considerably. It adds interfaces to Cython and C functions of Robert Miller, CJ Tjhal, and Jeffery Leon. \nSpeed up of minimum_distance (for codes over GF(2) and GF(3)), the spectrum (=weight_distribution), and permutation_automorphism_group are expected and in most cases achieved. (Also a new function is_permutation_equivalent was added, which interfaces with Robert Miller's double coset partition refinement code.) \n\nA few points that the referee might want to look at in particular. \n(1) At least one of the functions (code2leon) opens, reads and writes, and closes files. I think I did it correctly, but I read keeping files open is a bad thing, so I hope it was done correctly.\n(2) There is a ridiculously slow line which lists the codewords of a given weight. For some reason, GAP (and Guava) is much much faster. It occurs in the permutation_automorphism_group and is commented so you can find it easily. Maybe I am creating the list wrong?\n\nIn any case, it passes sage -testall and optional methods were added to the problematical methods, so one always has the option of using the fastest method.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4320\n\n",
+    "body": "Assignee: @rlmill\n\nThis is a patch which incorporates several changes in linear_codes.py which should speed up (and in some cases do:-) some coding theory computations considerably. It adds interfaces to Cython and C functions of Robert Miller, CJ Tjhal, and Jeffery Leon. \nSpeed up of minimum_distance (for codes over GF(2) and GF(3)), the spectrum (=weight_distribution), and permutation_automorphism_group are expected and in most cases achieved. (Also a new function is_permutation_equivalent was added, which interfaces with Robert Miller's double coset partition refinement code.) \n\nA few points that the referee might want to look at in particular. \n(1) At least one of the functions (code2leon) opens, reads and writes, and closes files. I think I did it correctly, but I read keeping files open is a bad thing, so I hope it was done correctly.\n(2) There is a ridiculously slow line which lists the codewords of a given weight. For some reason, GAP (and Guava) is much much faster. It occurs in the permutation_automorphism_group and is commented so you can find it easily. Maybe I am creating the list wrong?\n\nIn any case, it passes sage -testall and optional methods were added to the problematical methods, so one always has the option of using the fastest method.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4320\n\n",
     "created_at": "2008-10-18T20:31:09Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_004320.json:
     "title": "linear codes improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4320",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This is a patch which incorporates several changes in linear_codes.py which should speed up (and in some cases do:-) some coding theory computations considerably. It adds interfaces to Cython and C functions of Robert Miller, CJ Tjhal, and Jeffery Leon. 
 Speed up of minimum_distance (for codes over GF(2) and GF(3)), the spectrum (=weight_distribution), and permutation_automorphism_group are expected and in most cases achieved. (Also a new function is_permutation_equivalent was added, which interfaces with Robert Miller's double coset partition refinement code.) 
@@ -45,7 +45,7 @@ archive/issue_comments_031618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31618",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -58,16 +58,16 @@ based on 3.1.4
 archive/issue_comments_031619.json:
 ```json
 {
-    "body": "Attachment [trac_4320-linear-codes.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes.patch) by wdj created at 2008-10-18 22:56:04",
+    "body": "Attachment [trac_4320-linear-codes.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes.patch) by @wdjoyner created at 2008-10-18 22:56:04",
     "created_at": "2008-10-18T22:56:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31619",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4320-linear-codes.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes.patch) by wdj created at 2008-10-18 22:56:04
+Attachment [trac_4320-linear-codes.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes.patch) by @wdjoyner created at 2008-10-18 22:56:04
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_031620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31620",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_031622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31622",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_031623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31623",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_031624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31624",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -216,16 +216,16 @@ based on 3.2.alpha0 and is a stand-alone patch.
 archive/issue_comments_031625.json:
 ```json
 {
-    "body": "Attachment [trac_4320-linear-codes2.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes2.patch) by wdj created at 2008-10-23 11:02:36\n\nI wonder if this is somehow because of the fact that if you run the Leon code command wtdist on the command line directly you get \"smash stack\" and (memory errors resulting in?) traceback messages? This is a known issue (discovered by Robert Miller and Tom Boothby) and I have added a warning line to the docstring.\nI don't understand when this does not arise for sage -t and does for sage -testall though, so easily could be completely wrong.",
+    "body": "Attachment [trac_4320-linear-codes2.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes2.patch) by @wdjoyner created at 2008-10-23 11:02:36\n\nI wonder if this is somehow because of the fact that if you run the Leon code command wtdist on the command line directly you get \"smash stack\" and (memory errors resulting in?) traceback messages? This is a known issue (discovered by Robert Miller and Tom Boothby) and I have added a warning line to the docstring.\nI don't understand when this does not arise for sage -t and does for sage -testall though, so easily could be completely wrong.",
     "created_at": "2008-10-23T11:02:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31625",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4320-linear-codes2.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes2.patch) by wdj created at 2008-10-23 11:02:36
+Attachment [trac_4320-linear-codes2.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes2.patch) by @wdjoyner created at 2008-10-23 11:02:36
 
 I wonder if this is somehow because of the fact that if you run the Leon code command wtdist on the command line directly you get "smash stack" and (memory errors resulting in?) traceback messages? This is a known issue (discovered by Robert Miller and Tom Boothby) and I have added a warning line to the docstring.
 I don't understand when this does not arise for sage -t and does for sage -testall though, so easily could be completely wrong.
@@ -242,7 +242,7 @@ archive/issue_comments_031626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31626",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_031627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31627",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_031628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31628",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -319,16 +319,16 @@ In any case, the attached patch (which is to be applied *after* the patch number
 archive/issue_comments_031629.json:
 ```json
 {
-    "body": "Attachment [trac_4320-linear-codes3.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes3.patch) by wdj created at 2008-10-26 14:30:40\n\nalso based on 3.2.alpha0. To be applied after trac_4320-linear-codes2.patch",
+    "body": "Attachment [trac_4320-linear-codes3.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes3.patch) by @wdjoyner created at 2008-10-26 14:30:40\n\nalso based on 3.2.alpha0. To be applied after trac_4320-linear-codes2.patch",
     "created_at": "2008-10-26T14:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31629",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4320-linear-codes3.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes3.patch) by wdj created at 2008-10-26 14:30:40
+Attachment [trac_4320-linear-codes3.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes3.patch) by @wdjoyner created at 2008-10-26 14:30:40
 
 also based on 3.2.alpha0. To be applied after trac_4320-linear-codes2.patch
 
@@ -369,7 +369,7 @@ archive/issue_comments_031631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31631",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_031633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31633",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_031634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31634",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -477,16 +477,16 @@ Michael
 archive/issue_comments_031636.json:
 ```json
 {
-    "body": "Attachment [trac_4320-linear-codes4.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes4.patch) by wdj created at 2008-11-22 13:12:41\n\nbased on 3.1.4 but applies to 3.2 as well. Goes on top of patches 2 and 3",
+    "body": "Attachment [trac_4320-linear-codes4.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes4.patch) by @wdjoyner created at 2008-11-22 13:12:41\n\nbased on 3.1.4 but applies to 3.2 as well. Goes on top of patches 2 and 3",
     "created_at": "2008-11-22T13:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31636",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4320-linear-codes4.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes4.patch) by wdj created at 2008-11-22 13:12:41
+Attachment [trac_4320-linear-codes4.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes4.patch) by @wdjoyner created at 2008-11-22 13:12:41
 
 based on 3.1.4 but applies to 3.2 as well. Goes on top of patches 2 and 3
 
@@ -502,7 +502,7 @@ archive/issue_comments_031637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31637",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -575,7 +575,7 @@ archive/issue_comments_031640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31640",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -619,7 +619,7 @@ archive/issue_comments_031642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31642",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -656,16 +656,16 @@ Michael
 archive/issue_comments_031644.json:
 ```json
 {
-    "body": "Attachment [trac_4320-linear-codes5.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes5.patch) by wdj created at 2008-11-26 01:51:30\n\nto be applied on top of patches 2, 3, and 4",
+    "body": "Attachment [trac_4320-linear-codes5.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes5.patch) by @wdjoyner created at 2008-11-26 01:51:30\n\nto be applied on top of patches 2, 3, and 4",
     "created_at": "2008-11-26T01:51:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31644",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_4320-linear-codes5.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes5.patch) by wdj created at 2008-11-26 01:51:30
+Attachment [trac_4320-linear-codes5.patch](tarball://root/attachments/some-uuid/ticket4320/trac_4320-linear-codes5.patch) by @wdjoyner created at 2008-11-26 01:51:30
 
 to be applied on top of patches 2, 3, and 4
 
@@ -681,7 +681,7 @@ archive/issue_comments_031645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4320#issuecomment-31645",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

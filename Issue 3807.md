@@ -54,16 +54,16 @@ Changing status from new to assigned.
 archive/issue_comments_027056.json:
 ```json
 {
-    "body": "Attachment [trac_3807.patch](tarball://root/attachments/some-uuid/ticket3807/trac_3807.patch) by was created at 2008-08-12 01:55:53\n\nWorks fine on osx with gcc 4.0.1.\n\nI say positive review unless something funny comes up in alpha2 testing.",
+    "body": "Attachment [trac_3807.patch](tarball://root/attachments/some-uuid/ticket3807/trac_3807.patch) by @williamstein created at 2008-08-12 01:55:53\n\nWorks fine on osx with gcc 4.0.1.\n\nI say positive review unless something funny comes up in alpha2 testing.",
     "created_at": "2008-08-12T01:55:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3807#issuecomment-27056",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_3807.patch](tarball://root/attachments/some-uuid/ticket3807/trac_3807.patch) by was created at 2008-08-12 01:55:53
+Attachment [trac_3807.patch](tarball://root/attachments/some-uuid/ticket3807/trac_3807.patch) by @williamstein created at 2008-08-12 01:55:53
 
 Works fine on osx with gcc 4.0.1.
 

@@ -14,7 +14,7 @@ archive/issues_005868.json:
     "title": "Fix libgcrypt shared library name on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5868",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 Assignee: mabshoff
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5868
 archive/issue_comments_046351.json:
 ```json
 {
-    "body": "Attachment [libgcrypt-1.4.3.p0.patch](tarball://root/attachments/some-uuid/ticket5868/libgcrypt-1.4.3.p0.patch) by pjeremy created at 2009-04-23 07:01:01",
+    "body": "Attachment [libgcrypt-1.4.3.p0.patch](tarball://root/attachments/some-uuid/ticket5868/libgcrypt-1.4.3.p0.patch) by @peterjeremy created at 2009-04-23 07:01:01",
     "created_at": "2009-04-23T07:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5868#issuecomment-46351",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [libgcrypt-1.4.3.p0.patch](tarball://root/attachments/some-uuid/ticket5868/libgcrypt-1.4.3.p0.patch) by pjeremy created at 2009-04-23 07:01:01
+Attachment [libgcrypt-1.4.3.p0.patch](tarball://root/attachments/some-uuid/ticket5868/libgcrypt-1.4.3.p0.patch) by @peterjeremy created at 2009-04-23 07:01:01
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_046353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5868#issuecomment-46353",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -94,16 +94,16 @@ The spkg with this change can be found at http://sage.math.washington.edu/home/m
 archive/issue_comments_046354.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-20T02:12:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5868#issuecomment-46354",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_046355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5868#issuecomment-46355",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_046356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5868",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5868#issuecomment-46356",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

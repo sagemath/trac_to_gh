@@ -14,7 +14,7 @@ archive/issues_002692.json:
     "title": "[with patch; needs review] bug displaying list of published worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2692",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

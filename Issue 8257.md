@@ -14,7 +14,7 @@ archive/issues_008257.json:
     "title": "cygwin: gd-2.0.35.p4 fails to build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8257",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_073070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73070",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_073071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73071",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_073072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73072",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -101,16 +101,16 @@ I believe the failure is caused by a bad version of expr.  I'm attaching a  wrap
 archive/issue_comments_073073.json:
 ```json
 {
-    "body": "Attachment [expr](tarball://root/attachments/some-uuid/ticket8257/expr) by mhansen created at 2010-04-06 17:40:31",
+    "body": "Attachment [expr](tarball://root/attachments/some-uuid/ticket8257/expr) by @mwhansen created at 2010-04-06 17:40:31",
     "created_at": "2010-04-06T17:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73073",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [expr](tarball://root/attachments/some-uuid/ticket8257/expr) by mhansen created at 2010-04-06 17:40:31
+Attachment [expr](tarball://root/attachments/some-uuid/ticket8257/expr) by @mwhansen created at 2010-04-06 17:40:31
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_073074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73074",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_073075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73075",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_073076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73076",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_073077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73077",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

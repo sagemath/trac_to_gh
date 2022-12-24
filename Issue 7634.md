@@ -3,7 +3,7 @@
 archive/issues_007634.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ncohen mvngu was robertwb jason\n\nThis is currently under discussion here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5/c584929f270b2de3\n\nI realized that it's probably actually time to switch over, since there are a few other developers working on Sage graphs besides just me now. That way if anything slows down, we are likely to find it out pretty quickly, and get it fixed. And, with the new defaults, things already feel more speedy:\n\nBEFORE:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n\t [113.1 s]\n```\n\nAFTER:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n\t [78.5 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7634\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen mvngu @williamstein @robertwb @jasongrout\n\nThis is currently under discussion here:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5/c584929f270b2de3\n\nI realized that it's probably actually time to switch over, since there are a few other developers working on Sage graphs besides just me now. That way if anything slows down, we are likely to find it out pretty quickly, and get it fixed. And, with the new defaults, things already feel more speedy:\n\nBEFORE:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n\t [113.1 s]\n```\n\nAFTER:\n\n```\nsage -t  \"devel/sage-main/sage/graphs/graph.py\"             \n\t [78.5 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7634\n\n",
     "created_at": "2009-12-09T02:07:02Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007634.json:
     "title": "switch default Sage graphs over to c_graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7634",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  ncohen mvngu was robertwb jason
+CC:  @nathanncohen mvngu @williamstein @robertwb @jasongrout
 
 This is currently under discussion here:
 
@@ -58,7 +58,7 @@ archive/issue_comments_065226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65226",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_065227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65227",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_065228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65228",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_065229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65229",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_065230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65230",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_065231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65231",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_065232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65232",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_065233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65233",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_065234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65234",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_065235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65235",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_065236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65236",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_065237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65237",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_065238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65238",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -356,16 +356,16 @@ The current patch does not split up graph.py, but the final version will...
 archive/issue_comments_065239.json:
 ```json
 {
-    "body": "Attachment [trac_7634-switchover.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-switchover.patch) by rlm created at 2010-01-06 07:25:14\n\ndepends on 4.3.1.alpha1",
+    "body": "Attachment [trac_7634-switchover.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-switchover.patch) by @rlmill created at 2010-01-06 07:25:14\n\ndepends on 4.3.1.alpha1",
     "created_at": "2010-01-06T07:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65239",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7634-switchover.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-switchover.patch) by rlm created at 2010-01-06 07:25:14
+Attachment [trac_7634-switchover.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-switchover.patch) by @rlmill created at 2010-01-06 07:25:14
 
 depends on 4.3.1.alpha1
 
@@ -381,7 +381,7 @@ archive/issue_comments_065240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65240",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_065241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65241",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -412,16 +412,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_065242.json:
 ```json
 {
-    "body": "Attachment [trac_7634-refactor.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-refactor.patch) by rlm created at 2010-01-06 07:26:31",
+    "body": "Attachment [trac_7634-refactor.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-refactor.patch) by @rlmill created at 2010-01-06 07:26:31",
     "created_at": "2010-01-06T07:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65242",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7634-refactor.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-refactor.patch) by rlm created at 2010-01-06 07:26:31
+Attachment [trac_7634-refactor.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-refactor.patch) by @rlmill created at 2010-01-06 07:26:31
 
 
 
@@ -435,7 +435,7 @@ archive/issue_comments_065243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65243",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_065244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65244",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_065245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65245",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_065246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65246",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_065247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65247",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -524,13 +524,13 @@ Resolution: fixed
 archive/issue_comments_065248.json:
 ```json
 {
-    "body": "Attachment [trac_7634-fix-pickle.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-fix-pickle.patch) by rlm created at 2010-01-13 04:35:52",
+    "body": "Attachment [trac_7634-fix-pickle.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-fix-pickle.patch) by @rlmill created at 2010-01-13 04:35:52",
     "created_at": "2010-01-13T04:35:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7634#issuecomment-65248",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7634-fix-pickle.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-fix-pickle.patch) by rlm created at 2010-01-13 04:35:52
+Attachment [trac_7634-fix-pickle.patch](tarball://root/attachments/some-uuid/ticket7634/trac_7634-fix-pickle.patch) by @rlmill created at 2010-01-13 04:35:52

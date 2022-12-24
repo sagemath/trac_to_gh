@@ -3,7 +3,7 @@
 archive/issues_000931.json:
 ```json
 {
-    "body": "Assignee: was\n\nI think SAGE is still the only mathematical\nsoftware with an implementation of the permanent function for\nnon-square matrices over an arbitrary field!\n\nBut it is frickin' slow, as William could have said.\nCalculating the permanent of a 13 x 17 matrix with a 'band' of 4 1's\nover the main diagonal.\n\n\nOver ZZ:\n> sage: time f(13,4)\n> CPU times: user 3.98 s, sys: 0.07 s, total: 4.05 s\n> Wall time: 4.08\n>  1596800\n\n\nOver QQ\n> sage: time f(13,4)\n> CPU times: user 8.39 s, sys: 0.09 s, total: 8.48 s\n> Wall time: 8.56\n>  1596800\n\nMy all C-program with ints based on gmp:\n> [jaap`@`paix perm_gmp]$ time ./ds 13 4\n> 1596800\n> real    0m0.328s\n> user    0m0.326s\n> sys     0m0.003s\n> [jaap`@`paix perm_gmp]$ \n\nIn the reference manual it still says that the code is optimized\nonly for matrices over QQ :-)!\n\nWhat we need is optimization for integer matrices (followed by more\noptimization for (0,1) matrices, eventually for (-1,0,1) matrices.\nThat are the matrices that 'count' in applications.).\n\nA speed boost can be achieved replacing 'my' pure Python function\n_combinations, to be found in sage.structure.sequence, with a real fast\nimplementation in C/Cython.\n\nJaap\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/931\n\n",
+    "body": "Assignee: @williamstein\n\nI think SAGE is still the only mathematical\nsoftware with an implementation of the permanent function for\nnon-square matrices over an arbitrary field!\n\nBut it is frickin' slow, as William could have said.\nCalculating the permanent of a 13 x 17 matrix with a 'band' of 4 1's\nover the main diagonal.\n\n\nOver ZZ:\n> sage: time f(13,4)\n> CPU times: user 3.98 s, sys: 0.07 s, total: 4.05 s\n> Wall time: 4.08\n>  1596800\n\n\nOver QQ\n> sage: time f(13,4)\n> CPU times: user 8.39 s, sys: 0.09 s, total: 8.48 s\n> Wall time: 8.56\n>  1596800\n\nMy all C-program with ints based on gmp:\n> [jaap`@`paix perm_gmp]$ time ./ds 13 4\n> 1596800\n> real    0m0.328s\n> user    0m0.326s\n> sys     0m0.003s\n> [jaap`@`paix perm_gmp]$ \n\nIn the reference manual it still says that the code is optimized\nonly for matrices over QQ :-)!\n\nWhat we need is optimization for integer matrices (followed by more\noptimization for (0,1) matrices, eventually for (-1,0,1) matrices.\nThat are the matrices that 'count' in applications.).\n\nA speed boost can be achieved replacing 'my' pure Python function\n_combinations, to be found in sage.structure.sequence, with a real fast\nimplementation in C/Cython.\n\nJaap\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/931\n\n",
     "created_at": "2007-10-19T18:44:51Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000931.json:
     "title": "Optimize permanent code for matrices over ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/931",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I think SAGE is still the only mathematical
 software with an implementation of the permanent function for
@@ -74,16 +74,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/931
 archive/issue_comments_005688.json:
 ```json
 {
-    "body": "Attachment [patch_trac931.hg](tarball://root/attachments/some-uuid/ticket931/patch_trac931.hg) by jsp created at 2007-10-25 20:57:22",
+    "body": "Attachment [patch_trac931.hg](tarball://root/attachments/some-uuid/ticket931/patch_trac931.hg) by @jaapspies created at 2007-10-25 20:57:22",
     "created_at": "2007-10-25T20:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/931#issuecomment-5688",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [patch_trac931.hg](tarball://root/attachments/some-uuid/ticket931/patch_trac931.hg) by jsp created at 2007-10-25 20:57:22
+Attachment [patch_trac931.hg](tarball://root/attachments/some-uuid/ticket931/patch_trac931.hg) by @jaapspies created at 2007-10-25 20:57:22
 
 
 
@@ -92,16 +92,16 @@ Attachment [patch_trac931.hg](tarball://root/attachments/some-uuid/ticket931/pat
 archive/issue_comments_005689.json:
 ```json
 {
-    "body": "Attachment [patch_trac931.2.hg](tarball://root/attachments/some-uuid/ticket931/patch_trac931.2.hg) by jsp created at 2007-10-25 21:00:24",
+    "body": "Attachment [patch_trac931.2.hg](tarball://root/attachments/some-uuid/ticket931/patch_trac931.2.hg) by @jaapspies created at 2007-10-25 21:00:24",
     "created_at": "2007-10-25T21:00:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/931#issuecomment-5689",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [patch_trac931.2.hg](tarball://root/attachments/some-uuid/ticket931/patch_trac931.2.hg) by jsp created at 2007-10-25 21:00:24
+Attachment [patch_trac931.2.hg](tarball://root/attachments/some-uuid/ticket931/patch_trac931.2.hg) by @jaapspies created at 2007-10-25 21:00:24
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_005690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/931",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/931#issuecomment-5690",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

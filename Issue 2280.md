@@ -3,7 +3,7 @@
 archive/issues_002280.json:
 ```json
 {
-    "body": "Assignee: yi\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2280\n\n",
+    "body": "Assignee: @yqiang\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2280\n\n",
     "created_at": "2008-02-23T20:45:41Z",
     "labels": [
         "dsage",
@@ -17,7 +17,7 @@ archive/issues_002280.json:
     "user": "TimothyClemans"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_015128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2280#issuecomment-15128",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -50,16 +50,16 @@ Resolution: fixed
 archive/issue_comments_015129.json:
 ```json
 {
-    "body": "Attachment [2280A.patch](tarball://root/attachments/some-uuid/ticket2280/2280A.patch) by yi created at 2008-02-24 00:57:31\n\nApplied the patch, thanks!",
+    "body": "Attachment [2280A.patch](tarball://root/attachments/some-uuid/ticket2280/2280A.patch) by @yqiang created at 2008-02-24 00:57:31\n\nApplied the patch, thanks!",
     "created_at": "2008-02-24T00:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2280",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2280#issuecomment-15129",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [2280A.patch](tarball://root/attachments/some-uuid/ticket2280/2280A.patch) by yi created at 2008-02-24 00:57:31
+Attachment [2280A.patch](tarball://root/attachments/some-uuid/ticket2280/2280A.patch) by @yqiang created at 2008-02-24 00:57:31
 
 Applied the patch, thanks!
 

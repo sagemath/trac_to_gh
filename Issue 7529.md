@@ -3,7 +3,7 @@
 archive/issues_007529.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe maximum average degree of a graph is the maximum, over all subgraphs H of a graph G, of average_degree(H).\n\nThis can be computed in polynomial time ( though I do not know of any practical way to do it ) and could be used, for example, as a certificate for negative answers in #7528.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7529\n\n",
+    "body": "Assignee: @rlmill\n\nThe maximum average degree of a graph is the maximum, over all subgraphs H of a graph G, of average_degree(H).\n\nThis can be computed in polynomial time ( though I do not know of any practical way to do it ) and could be used, for example, as a certificate for negative answers in #7528.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7529\n\n",
     "created_at": "2009-11-25T09:57:52Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007529.json:
     "title": "Maximum Average Degree of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7529",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The maximum average degree of a graph is the maximum, over all subgraphs H of a graph G, of average_degree(H).
 
@@ -41,7 +41,7 @@ archive/issue_comments_063818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7529#issuecomment-63818",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_063819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7529#issuecomment-63819",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing status from new to needs_review.
 archive/issue_comments_063820.json:
 ```json
 {
-    "body": "Attachment [trac_7529.patch](tarball://root/attachments/some-uuid/ticket7529/trac_7529.patch) by ncohen created at 2010-01-28 11:10:10",
+    "body": "Attachment [trac_7529.patch](tarball://root/attachments/some-uuid/ticket7529/trac_7529.patch) by @nathanncohen created at 2010-01-28 11:10:10",
     "created_at": "2010-01-28T11:10:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7529#issuecomment-63820",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7529.patch](tarball://root/attachments/some-uuid/ticket7529/trac_7529.patch) by ncohen created at 2010-01-28 11:10:10
+Attachment [trac_7529.patch](tarball://root/attachments/some-uuid/ticket7529/trac_7529.patch) by @nathanncohen created at 2010-01-28 11:10:10
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_063821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7529#issuecomment-63821",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_063822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7529#issuecomment-63822",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_063823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7529#issuecomment-63823",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_063824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7529#issuecomment-63824",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_063826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7529#issuecomment-63826",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_063827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7529#issuecomment-63827",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

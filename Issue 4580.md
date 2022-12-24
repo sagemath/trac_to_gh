@@ -14,7 +14,7 @@ archive/issues_004580.json:
     "title": "[with patch, needs review] move mpfr declarations to a pxd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4580",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4580
 archive/issue_comments_034342.json:
 ```json
 {
-    "body": "Attachment [4580-mpfr-pxd.patch](tarball://root/attachments/some-uuid/ticket4580/4580-mpfr-pxd.patch) by robertwb created at 2008-11-22 01:39:35",
+    "body": "Attachment [4580-mpfr-pxd.patch](tarball://root/attachments/some-uuid/ticket4580/4580-mpfr-pxd.patch) by @robertwb created at 2008-11-22 01:39:35",
     "created_at": "2008-11-22T01:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4580#issuecomment-34342",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4580-mpfr-pxd.patch](tarball://root/attachments/some-uuid/ticket4580/4580-mpfr-pxd.patch) by robertwb created at 2008-11-22 01:39:35
+Attachment [4580-mpfr-pxd.patch](tarball://root/attachments/some-uuid/ticket4580/4580-mpfr-pxd.patch) by @robertwb created at 2008-11-22 01:39:35
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_034343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4580#issuecomment-34343",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

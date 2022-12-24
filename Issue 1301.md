@@ -3,7 +3,7 @@
 archive/issues_001301.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\nIt would be handy to have an interface to nauty like the ones to other software not included with Sage.  We have much of the functionality built-in, but an interface to nauty would let us double-check answers and also may provide speed benefits to those who have nauty installed already.\n\nNauty: http://cs.anu.edu.au/~bdm/nauty/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1301\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nIt would be handy to have an interface to nauty like the ones to other software not included with Sage.  We have much of the functionality built-in, but an interface to nauty would let us double-check answers and also may provide speed benefits to those who have nauty installed already.\n\nNauty: http://cs.anu.edu.au/~bdm/nauty/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1301\n\n",
     "created_at": "2007-11-28T17:36:17Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001301.json:
     "title": "nauty interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1301",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -42,7 +42,7 @@ archive/issue_comments_008176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1301#issuecomment-8176",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -66,16 +66,16 @@ From Robert Miller:
 archive/issue_comments_008177.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-02T04:48:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1301#issuecomment-8177",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -89,7 +89,7 @@ archive/issue_comments_008178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1301#issuecomment-8178",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_008179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1301#issuecomment-8179",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_008180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1301#issuecomment-8180",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_008183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1301",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1301#issuecomment-8183",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

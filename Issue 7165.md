@@ -3,7 +3,7 @@
 archive/issues_007165.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\nI use sage 4.1.2alpha4. This plot is right with this version :\n\n`parametric_plot([real(exp(i*m)),imaginary(exp(i*m))],m,0,7)`\n\nI apply the patch 7122 by copy/paste in emacs and run sage -br.\nNow this plot is also right, it draw a half-circle :\n\n`parametric_plot([real(m+sqrt(m<sup>2-1)),imaginary(m+sqrt(m</sup>2-1))],m,-5,5)` \n\nI also get it by this function :\n\n```\ndef solve2pplot (eq) : return [real(eq.rhs()),imaginary(eq.rhs())]\nres = solve(z^2+2*m*z+1,z)\nparametric_plot (solve2pplot (res[0]), m, -5,5)\n```\n\n\nNow I solve this 4 degree equation. The solve is right with sqrt at 2 levels.\n\nBut I get an error in the parametric_plot :\n\n\n```\nres = solve(z^4+2*m*z^2+1,z)\nparametric_plot (solve2pplot (res[0]), m, -5,5)\n```\n\n\nThe local `solve2pplot(res[0])` generates a long formula.\n\nreal axe and imaginary axe are right. \n\nBut sage doesn't plot the quarter-circle between axes at position 1=(1,0) and i=(0,1) and claims `failed to evaluate function at 40 points`. So the plot is a line between the 2 axes.\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7165\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nI use sage 4.1.2alpha4. This plot is right with this version :\n\n`parametric_plot([real(exp(i*m)),imaginary(exp(i*m))],m,0,7)`\n\nI apply the patch 7122 by copy/paste in emacs and run sage -br.\nNow this plot is also right, it draw a half-circle :\n\n`parametric_plot([real(m+sqrt(m<sup>2-1)),imaginary(m+sqrt(m</sup>2-1))],m,-5,5)` \n\nI also get it by this function :\n\n```\ndef solve2pplot (eq) : return [real(eq.rhs()),imaginary(eq.rhs())]\nres = solve(z^2+2*m*z+1,z)\nparametric_plot (solve2pplot (res[0]), m, -5,5)\n```\n\n\nNow I solve this 4 degree equation. The solve is right with sqrt at 2 levels.\n\nBut I get an error in the parametric_plot :\n\n\n```\nres = solve(z^4+2*m*z^2+1,z)\nparametric_plot (solve2pplot (res[0]), m, -5,5)\n```\n\n\nThe local `solve2pplot(res[0])` generates a long formula.\n\nreal axe and imaginary axe are right. \n\nBut sage doesn't plot the quarter-circle between axes at position 1=(1,0) and i=(0,1) and claims `failed to evaluate function at 40 points`. So the plot is a line between the 2 axes.\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7165\n\n",
     "created_at": "2009-10-09T17:33:18Z",
     "labels": [
         "graphics",
@@ -17,9 +17,9 @@ archive/issues_007165.json:
     "user": "fmaltey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 I use sage 4.1.2alpha4. This plot is right with this version :
 
@@ -118,7 +118,7 @@ archive/issue_comments_059395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7165#issuecomment-59395",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_059396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7165#issuecomment-59396",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_059397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7165#issuecomment-59397",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_059398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7165#issuecomment-59398",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_059399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7165#issuecomment-59399",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_059400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7165#issuecomment-59400",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_059401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7165#issuecomment-59401",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_059402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7165#issuecomment-59402",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

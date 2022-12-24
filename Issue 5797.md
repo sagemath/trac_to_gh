@@ -3,7 +3,7 @@
 archive/issues_005797.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jason\n\nIn 3.4.1.rc2, matrix1.pyx is missing doctests and documentation. I'll attach a patch that covers all but two functions:\n\n`new_matrix` is just a wrapper around `matrix_space` and `MatrixSpace`. The documentation for `MatrixSpace` isn't complete enough for me to say exactly what all the parameters of `new_matrix` do. Can someone who knows more about this make a suggestion?\n\nThe function `_singular_` has no doctests (and the current docstring is deeply confusing) and -- surprise, surprise -- is broken. I'll open a separate ticket for that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5797\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout\n\nIn 3.4.1.rc2, matrix1.pyx is missing doctests and documentation. I'll attach a patch that covers all but two functions:\n\n`new_matrix` is just a wrapper around `matrix_space` and `MatrixSpace`. The documentation for `MatrixSpace` isn't complete enough for me to say exactly what all the parameters of `new_matrix` do. Can someone who knows more about this make a suggestion?\n\nThe function `_singular_` has no doctests (and the current docstring is deeply confusing) and -- surprise, surprise -- is broken. I'll open a separate ticket for that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5797\n\n",
     "created_at": "2009-04-16T03:22:05Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_005797.json:
     "title": "raise coverage in matrix1.pyx to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5797",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: mabshoff
 
-CC:  jason
+CC:  @jasongrout
 
 In 3.4.1.rc2, matrix1.pyx is missing doctests and documentation. I'll attach a patch that covers all but two functions:
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5797
 archive/issue_comments_045480.json:
 ```json
 {
-    "body": "Attachment [trac_5797.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797.patch) by ddrake created at 2009-04-16 04:10:02",
+    "body": "Attachment [trac_5797.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797.patch) by @dandrake created at 2009-04-16 04:10:02",
     "created_at": "2009-04-16T04:10:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5797#issuecomment-45480",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5797.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797.patch) by ddrake created at 2009-04-16 04:10:02
+Attachment [trac_5797.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797.patch) by @dandrake created at 2009-04-16 04:10:02
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_045481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5797#issuecomment-45481",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_045482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5797#issuecomment-45482",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -94,16 +94,16 @@ The `_singular_` ticket is #5798.
 archive/issue_comments_045483.json:
 ```json
 {
-    "body": "Attachment [trac_5797-review.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797-review.patch) by cremona created at 2009-04-18 15:01:51\n\nreplaces previous",
+    "body": "Attachment [trac_5797-review.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797-review.patch) by @JohnCremona created at 2009-04-18 15:01:51\n\nreplaces previous",
     "created_at": "2009-04-18T15:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5797#issuecomment-45483",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5797-review.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797-review.patch) by cremona created at 2009-04-18 15:01:51
+Attachment [trac_5797-review.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797-review.patch) by @JohnCremona created at 2009-04-18 15:01:51
 
 replaces previous
 
@@ -119,7 +119,7 @@ archive/issue_comments_045484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5797#issuecomment-45484",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_045486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5797#issuecomment-45486",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -236,16 +236,16 @@ Michael
 archive/issue_comments_045488.json:
 ```json
 {
-    "body": "Attachment [trac_5797-review-fixed.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797-review-fixed.patch) by ddrake created at 2009-04-22 07:59:36\n\nI moved John's misplaced TESTS block inside the file's header docstring. Coverage is now 97%, with only the missing Singular doctest.",
+    "body": "Attachment [trac_5797-review-fixed.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797-review-fixed.patch) by @dandrake created at 2009-04-22 07:59:36\n\nI moved John's misplaced TESTS block inside the file's header docstring. Coverage is now 97%, with only the missing Singular doctest.",
     "created_at": "2009-04-22T07:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5797#issuecomment-45488",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5797-review-fixed.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797-review-fixed.patch) by ddrake created at 2009-04-22 07:59:36
+Attachment [trac_5797-review-fixed.patch](tarball://root/attachments/some-uuid/ticket5797/trac_5797-review-fixed.patch) by @dandrake created at 2009-04-22 07:59:36
 
 I moved John's misplaced TESTS block inside the file's header docstring. Coverage is now 97%, with only the missing Singular doctest.
 
@@ -261,7 +261,7 @@ archive/issue_comments_045489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5797",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5797#issuecomment-45489",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

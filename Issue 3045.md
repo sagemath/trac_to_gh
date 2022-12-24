@@ -3,7 +3,7 @@
 archive/issues_003045.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: galois field\n\n\n```\nsage: k = GF(7)\nsage: k.gen()\n1\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3045\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: galois field\n\n\n```\nsage: k = GF(7)\nsage: k.gen()\n1\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3045\n\n",
     "created_at": "2008-04-27T15:06:13Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_003045.json:
     "user": "jxxcarlson"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: galois field
 
@@ -47,7 +47,7 @@ archive/issue_comments_020967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3045#issuecomment-20967",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_020968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3045#issuecomment-20968",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -78,16 +78,16 @@ This otherwise deserves a positive review, except that I couldn't verify the cla
 archive/issue_comments_020969.json:
 ```json
 {
-    "body": "Attachment [trac_3045.patch](tarball://root/attachments/some-uuid/ticket3045/trac_3045.patch) by AlexGhitza created at 2009-01-24 00:47:25\n\nKiran, I tried to find some examples and couldn't.  I think the point of the warning in the docstring is that we are not guaranteeing that the finite fields code wouldn't change in the future in such a way that other generators would be returned; or, for that matter, that the same version of Sage running on wildly different architectures won't return different generators.  I modified the docstrings a bit to (hopefully) make that more clear.\n\nNote that multiplicative_generator() calls pari's znprimroot(), so whatever fuzziness there is in pari's finding a generator gets automatically inherited by Sage.",
+    "body": "Attachment [trac_3045.patch](tarball://root/attachments/some-uuid/ticket3045/trac_3045.patch) by @aghitza created at 2009-01-24 00:47:25\n\nKiran, I tried to find some examples and couldn't.  I think the point of the warning in the docstring is that we are not guaranteeing that the finite fields code wouldn't change in the future in such a way that other generators would be returned; or, for that matter, that the same version of Sage running on wildly different architectures won't return different generators.  I modified the docstrings a bit to (hopefully) make that more clear.\n\nNote that multiplicative_generator() calls pari's znprimroot(), so whatever fuzziness there is in pari's finding a generator gets automatically inherited by Sage.",
     "created_at": "2009-01-24T00:47:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3045#issuecomment-20969",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_3045.patch](tarball://root/attachments/some-uuid/ticket3045/trac_3045.patch) by AlexGhitza created at 2009-01-24 00:47:25
+Attachment [trac_3045.patch](tarball://root/attachments/some-uuid/ticket3045/trac_3045.patch) by @aghitza created at 2009-01-24 00:47:25
 
 Kiran, I tried to find some examples and couldn't.  I think the point of the warning in the docstring is that we are not guaranteeing that the finite fields code wouldn't change in the future in such a way that other generators would be returned; or, for that matter, that the same version of Sage running on wildly different architectures won't return different generators.  I modified the docstrings a bit to (hopefully) make that more clear.
 
@@ -105,7 +105,7 @@ archive/issue_comments_020970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3045#issuecomment-20970",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

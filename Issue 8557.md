@@ -3,7 +3,7 @@
 archive/issues_008557.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  cremona\n\nIt would be useful to have a way of checking whether a projective curve has any singular points. \nA patch to do this is on its way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8557\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona\n\nIt would be useful to have a way of checking whether a projective curve has any singular points. \nA patch to do this is on its way.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8557\n\n",
     "created_at": "2010-03-18T15:09:13Z",
     "labels": [
         "algebraic geometry",
@@ -17,9 +17,9 @@ archive/issues_008557.json:
     "user": "cturner"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  cremona
+CC:  @JohnCremona
 
 It would be useful to have a way of checking whether a projective curve has any singular points. 
 A patch to do this is on its way.
@@ -76,7 +76,7 @@ archive/issue_comments_077413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8557#issuecomment-77413",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_077414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8557#issuecomment-77414",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_077415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8557#issuecomment-77415",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_077416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8557#issuecomment-77416",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_077417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8557#issuecomment-77417",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_077418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8557#issuecomment-77418",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_077419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8557#issuecomment-77419",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -199,16 +199,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_077420.json:
 ```json
 {
-    "body": "Attachment [trac_8557_rebased.patch](tarball://root/attachments/some-uuid/ticket8557/trac_8557_rebased.patch) by jhpalmieri created at 2010-04-18 05:31:00",
+    "body": "Attachment [trac_8557_rebased.patch](tarball://root/attachments/some-uuid/ticket8557/trac_8557_rebased.patch) by @jhpalmieri created at 2010-04-18 05:31:00",
     "created_at": "2010-04-18T05:31:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8557#issuecomment-77420",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8557_rebased.patch](tarball://root/attachments/some-uuid/ticket8557/trac_8557_rebased.patch) by jhpalmieri created at 2010-04-18 05:31:00
+Attachment [trac_8557_rebased.patch](tarball://root/attachments/some-uuid/ticket8557/trac_8557_rebased.patch) by @jhpalmieri created at 2010-04-18 05:31:00
 
 
 
@@ -222,7 +222,7 @@ archive/issue_comments_077421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8557#issuecomment-77421",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_077422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8557#issuecomment-77422",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

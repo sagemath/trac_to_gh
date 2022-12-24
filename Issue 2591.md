@@ -14,7 +14,7 @@ archive/issues_002591.json:
     "title": "too much printing on sage -br",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2591",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: mabshoff

@@ -3,7 +3,7 @@
 archive/issues_005136.json:
 ```json
 {
-    "body": "Assignee: was\n\nDavid Loeffler reported this on sage-devel:\n\n\n```\nsage: K.<a> = QuadraticField(-23)\nsage: L.<b> = K.extension(x^3 - x - 1)\nsage: OL = L.ring_of_integers()   # infinite loop?\n```\n\n\nNote also that CTRL-C seems to have no effect.  I see the same problem on my 32-bit Archlinux machine.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5136\n\n",
+    "body": "Assignee: @williamstein\n\nDavid Loeffler reported this on sage-devel:\n\n\n```\nsage: K.<a> = QuadraticField(-23)\nsage: L.<b> = K.extension(x^3 - x - 1)\nsage: OL = L.ring_of_integers()   # infinite loop?\n```\n\n\nNote also that CTRL-C seems to have no effect.  I see the same problem on my 32-bit Archlinux machine.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5136\n\n",
     "created_at": "2009-01-30T09:40:00Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005136.json:
     "title": "sage-3.3.alpha3 gets stuck computing the ring of integers of a relative number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5136",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 David Loeffler reported this on sage-devel:
 
@@ -48,7 +48,7 @@ archive/issue_comments_039269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5136#issuecomment-39269",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_039270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5136#issuecomment-39270",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_039271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5136#issuecomment-39271",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_039272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5136#issuecomment-39272",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_039273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5136#issuecomment-39273",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_039274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5136#issuecomment-39274",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -262,16 +262,16 @@ Changing component from number theory to number fields.
 archive/issue_comments_039275.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-21T08:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5136#issuecomment-39275",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -309,7 +309,7 @@ archive/issue_comments_039277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5136#issuecomment-39277",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_039278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5136#issuecomment-39278",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_039279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5136#issuecomment-39279",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_039280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5136#issuecomment-39280",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_039281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5136#issuecomment-39281",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_039282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5136",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5136#issuecomment-39282",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

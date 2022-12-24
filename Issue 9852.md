@@ -3,7 +3,7 @@
 archive/issues_009852.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  nthiery\n\nThis tickets implements a new (and direct) interface to CPLEX, using its C library. We are now able to iterate over integer solutions of a MILP, which is a *very* good news (after quite a lot of work debugging Cython code) `:-D`\n\nI also updated the method MixedIntegerLinearProgram.solve to show two different ways to use CPLEX. #8880 is not needed either anymore once this patch is merged.\n\nTips for the reviewer :\n\n* Do not read the parts of the .patch file related to the changes in files mip_cplex and mip_osi cplex. Here is what happened : the former file named mip_cplex has been renamed to mip_osi_cplex (as it uses CPLEX through the OSI library), and the mip_cplex file is brand new, and contains the new interface. Of course, I changed in the docstrings of mip_osi_cplex lines such as \n  {{{\n  from sage.numerical.mip_cplex import [something]\n  }}}\n  to\n  {{{\n  from sage.numerical.mip_osi_cplex import [something]\n  }}}\n  So there is no need to deal with all these - and + lines.\n*  Please, pick an enumeration problem that you like, and check CPLEX is indeed returning ALL the solutions. It first \"forgot\" some of them, and I had to change a very badly documented parameter to get all the answers I wanted for my problems. Please check on some other examples `:-)`\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9853\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @nthiery\n\nThis tickets implements a new (and direct) interface to CPLEX, using its C library. We are now able to iterate over integer solutions of a MILP, which is a *very* good news (after quite a lot of work debugging Cython code) `:-D`\n\nI also updated the method MixedIntegerLinearProgram.solve to show two different ways to use CPLEX. #8880 is not needed either anymore once this patch is merged.\n\nTips for the reviewer :\n\n* Do not read the parts of the .patch file related to the changes in files mip_cplex and mip_osi cplex. Here is what happened : the former file named mip_cplex has been renamed to mip_osi_cplex (as it uses CPLEX through the OSI library), and the mip_cplex file is brand new, and contains the new interface. Of course, I changed in the docstrings of mip_osi_cplex lines such as \n  {{{\n  from sage.numerical.mip_cplex import [something]\n  }}}\n  to\n  {{{\n  from sage.numerical.mip_osi_cplex import [something]\n  }}}\n  So there is no need to deal with all these - and + lines.\n*  Please, pick an enumeration problem that you like, and check CPLEX is indeed returning ALL the solutions. It first \"forgot\" some of them, and I had to change a very badly documented parameter to get all the answers I wanted for my problems. Please check on some other examples `:-)`\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9853\n\n",
     "created_at": "2010-09-03T18:39:05Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_009852.json:
     "title": "Enumerate Integer solution of a LP through new CPLEX interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9852",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, jkantor
 
-CC:  nthiery
+CC:  @nthiery
 
 This tickets implements a new (and direct) interface to CPLEX, using its C library. We are now able to iterate over integer solutions of a MILP, which is a *very* good news (after quite a lot of work debugging Cython code) `:-D`
 
@@ -56,7 +56,7 @@ archive/issue_comments_097239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97239",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_097240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97240",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -87,16 +87,16 @@ Changing component from numerical to linear programming.
 archive/issue_comments_097241.json:
 ```json
 {
-    "body": "Attachment [trac_9853.patch](tarball://root/attachments/some-uuid/ticket9853/trac_9853.patch) by ncohen created at 2010-09-19 10:52:28",
+    "body": "Attachment [trac_9853.patch](tarball://root/attachments/some-uuid/ticket9853/trac_9853.patch) by @nathanncohen created at 2010-09-19 10:52:28",
     "created_at": "2010-09-19T10:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97241",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9853.patch](tarball://root/attachments/some-uuid/ticket9853/trac_9853.patch) by ncohen created at 2010-09-19 10:52:28
+Attachment [trac_9853.patch](tarball://root/attachments/some-uuid/ticket9853/trac_9853.patch) by @nathanncohen created at 2010-09-19 10:52:28
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_097242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97242",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_097243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97243",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_097244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97244",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_097245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97245",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_097246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97246",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_097247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97247",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_097248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97248",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000960.json:
     "title": "reconsider how floating point values are printed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/960",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -88,7 +88,7 @@ archive/issue_comments_005851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/960#issuecomment-5851",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -101,16 +101,16 @@ Changing assignee from somebody to cwitty.
 archive/issue_comments_005852.json:
 ```json
 {
-    "body": "Attachment [mpfr.patch](tarball://root/attachments/some-uuid/ticket960/mpfr.patch) by mhansen created at 2007-10-24 00:31:09\n\nI've attached a patch that makes sure that all real numbers include a \".\" so that they don't get confused with integers.\n\nHere is the behavior after the patch\n\n```\nsage:  2.0^47\n140737488355328.\nsage:  2.0^46\n70368744177664.0\nsage:  2.0^99\n633825300114115000000000000000.\nsage:  2.0^100\n1.26765060022823e30\nsage: 140737488355328.\n140737488355328.\nsage: a = 2.0^47\nsage: a\n140737488355328.\nsage: a.prec()\n53\nsage: b = 140737488355328.\nsage: b.prec()\n53\n```\n",
+    "body": "Attachment [mpfr.patch](tarball://root/attachments/some-uuid/ticket960/mpfr.patch) by @mwhansen created at 2007-10-24 00:31:09\n\nI've attached a patch that makes sure that all real numbers include a \".\" so that they don't get confused with integers.\n\nHere is the behavior after the patch\n\n```\nsage:  2.0^47\n140737488355328.\nsage:  2.0^46\n70368744177664.0\nsage:  2.0^99\n633825300114115000000000000000.\nsage:  2.0^100\n1.26765060022823e30\nsage: 140737488355328.\n140737488355328.\nsage: a = 2.0^47\nsage: a\n140737488355328.\nsage: a.prec()\n53\nsage: b = 140737488355328.\nsage: b.prec()\n53\n```\n",
     "created_at": "2007-10-24T00:31:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/960#issuecomment-5852",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [mpfr.patch](tarball://root/attachments/some-uuid/ticket960/mpfr.patch) by mhansen created at 2007-10-24 00:31:09
+Attachment [mpfr.patch](tarball://root/attachments/some-uuid/ticket960/mpfr.patch) by @mwhansen created at 2007-10-24 00:31:09
 
 I've attached a patch that makes sure that all real numbers include a "." so that they don't get confused with integers.
 
@@ -145,7 +145,7 @@ sage: b.prec()
 archive/issue_comments_005853.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to mhansen.",
+    "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2007-10-25T06:32:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/960",
     "type": "issue_comment",
@@ -154,7 +154,7 @@ archive/issue_comments_005853.json:
 }
 ```
 
-Changing assignee from cwitty to mhansen.
+Changing assignee from cwitty to @mwhansen.
 
 
 

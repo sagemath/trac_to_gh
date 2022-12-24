@@ -3,7 +3,7 @@
 archive/issues_006571.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  sage-combinat saliola\n\nKeywords: words morphisms\n\nRight now, we can iterate over word morphisms with specific image lengths :\n\n\n```\n    Iterator over morphisms with specific image lengths::\n\n\tsage: map(str, W.iter_morphisms([2, 1]))\n\t['WordMorphism: a->aa, b->a',\n\t 'WordMorphism: a->aa, b->b',\n\t 'WordMorphism: a->ab, b->a',\n\t 'WordMorphism: a->ab, b->b',\n\t 'WordMorphism: a->ba, b->a',\n\t 'WordMorphism: a->ba, b->b',\n\t 'WordMorphism: a->bb, b->a',\n\t 'WordMorphism: a->bb, b->b']\n\tsage: map(str, W.iter_morphisms([2, 2]))\n\t['WordMorphism: a->aa, b->aa',\n\t 'WordMorphism: a->aa, b->ab',\n\t 'WordMorphism: a->aa, b->ba',\n\t 'WordMorphism: a->aa, b->bb',\n\t 'WordMorphism: a->ab, b->aa',\n\t 'WordMorphism: a->ab, b->ab',\n\t 'WordMorphism: a->ab, b->ba',\n\t 'WordMorphism: a->ab, b->bb',\n\t 'WordMorphism: a->ba, b->aa',\n\t 'WordMorphism: a->ba, b->ab',\n\t 'WordMorphism: a->ba, b->ba',\n\t 'WordMorphism: a->ba, b->bb',\n\t 'WordMorphism: a->bb, b->aa',\n\t 'WordMorphism: a->bb, b->ab',\n\t 'WordMorphism: a->bb, b->ba',\n\t 'WordMorphism: a->bb, b->bb']\n\tsage: map(str, W.iter_morphisms([0, 0]))\n\t['WordMorphism: a->, b->']\n\tsage: map(str, W.iter_morphisms([0, 1]))\n\t['WordMorphism: a->, b->a', 'WordMorphism: a->, b->b']\n```\n\n\nI want to iterate over all (non erasing) morphisms! In particuliar, I want the following to work :\n\n\n```\n    sage: W = Words('ab')                 \n    sage: it = W.iter_morphisms()\n    sage: for _ in range(10): print it.next()\n    WordMorphism: a->a, b->a\n    WordMorphism: a->a, b->b\n    WordMorphism: a->b, b->a\n    WordMorphism: a->b, b->b\n    WordMorphism: a->aa, b->a\n    WordMorphism: a->aa, b->b\n    WordMorphism: a->ab, b->a\n    WordMorphism: a->ab, b->b\n    WordMorphism: a->ba, b->a\n    WordMorphism: a->ba, b->b\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6571\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat @saliola\n\nKeywords: words morphisms\n\nRight now, we can iterate over word morphisms with specific image lengths :\n\n\n```\n    Iterator over morphisms with specific image lengths::\n\n\tsage: map(str, W.iter_morphisms([2, 1]))\n\t['WordMorphism: a->aa, b->a',\n\t 'WordMorphism: a->aa, b->b',\n\t 'WordMorphism: a->ab, b->a',\n\t 'WordMorphism: a->ab, b->b',\n\t 'WordMorphism: a->ba, b->a',\n\t 'WordMorphism: a->ba, b->b',\n\t 'WordMorphism: a->bb, b->a',\n\t 'WordMorphism: a->bb, b->b']\n\tsage: map(str, W.iter_morphisms([2, 2]))\n\t['WordMorphism: a->aa, b->aa',\n\t 'WordMorphism: a->aa, b->ab',\n\t 'WordMorphism: a->aa, b->ba',\n\t 'WordMorphism: a->aa, b->bb',\n\t 'WordMorphism: a->ab, b->aa',\n\t 'WordMorphism: a->ab, b->ab',\n\t 'WordMorphism: a->ab, b->ba',\n\t 'WordMorphism: a->ab, b->bb',\n\t 'WordMorphism: a->ba, b->aa',\n\t 'WordMorphism: a->ba, b->ab',\n\t 'WordMorphism: a->ba, b->ba',\n\t 'WordMorphism: a->ba, b->bb',\n\t 'WordMorphism: a->bb, b->aa',\n\t 'WordMorphism: a->bb, b->ab',\n\t 'WordMorphism: a->bb, b->ba',\n\t 'WordMorphism: a->bb, b->bb']\n\tsage: map(str, W.iter_morphisms([0, 0]))\n\t['WordMorphism: a->, b->']\n\tsage: map(str, W.iter_morphisms([0, 1]))\n\t['WordMorphism: a->, b->a', 'WordMorphism: a->, b->b']\n```\n\n\nI want to iterate over all (non erasing) morphisms! In particuliar, I want the following to work :\n\n\n```\n    sage: W = Words('ab')                 \n    sage: it = W.iter_morphisms()\n    sage: for _ in range(10): print it.next()\n    WordMorphism: a->a, b->a\n    WordMorphism: a->a, b->b\n    WordMorphism: a->b, b->a\n    WordMorphism: a->b, b->b\n    WordMorphism: a->aa, b->a\n    WordMorphism: a->aa, b->b\n    WordMorphism: a->ab, b->a\n    WordMorphism: a->ab, b->b\n    WordMorphism: a->ba, b->a\n    WordMorphism: a->ba, b->b\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6571\n\n",
     "created_at": "2009-07-20T19:27:05Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_006571.json:
     "title": "Improve iterator of word morphisms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6571",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
-CC:  sage-combinat saliola
+CC:  sage-combinat @saliola
 
 Keywords: words morphisms
 
@@ -98,7 +98,7 @@ archive/issue_comments_053645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53645",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_053646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53646",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_053647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53647",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_053648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53648",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -165,16 +165,16 @@ Changing component from algebra to combinatorics.
 archive/issue_comments_053649.json:
 ```json
 {
-    "body": "Attachment [word_iter_morphism_6571-sl.patch](tarball://root/attachments/some-uuid/ticket6571/word_iter_morphism_6571-sl.patch) by slabbe created at 2009-08-19 17:53:42\n\nThis file depends on #6519 as well as on #5600",
+    "body": "Attachment [word_iter_morphism_6571-sl.patch](tarball://root/attachments/some-uuid/ticket6571/word_iter_morphism_6571-sl.patch) by @seblabbe created at 2009-08-19 17:53:42\n\nThis file depends on #6519 as well as on #5600",
     "created_at": "2009-08-19T17:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53649",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [word_iter_morphism_6571-sl.patch](tarball://root/attachments/some-uuid/ticket6571/word_iter_morphism_6571-sl.patch) by slabbe created at 2009-08-19 17:53:42
+Attachment [word_iter_morphism_6571-sl.patch](tarball://root/attachments/some-uuid/ticket6571/word_iter_morphism_6571-sl.patch) by @seblabbe created at 2009-08-19 17:53:42
 
 This file depends on #6519 as well as on #5600
 
@@ -190,7 +190,7 @@ archive/issue_comments_053650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53650",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_053651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53651",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_053652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53652",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -245,16 +245,16 @@ Apply on top of word_iter_morphism_6571-sl.patch
 archive/issue_comments_053653.json:
 ```json
 {
-    "body": "Attachment [trac_6571-reviewer.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-reviewer.patch) by saliola created at 2009-08-24 20:49:43\n\nIn case it matters: I applied the patches from #5600 before word_iter_morphism_6571-sl.patch.",
+    "body": "Attachment [trac_6571-reviewer.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-reviewer.patch) by @saliola created at 2009-08-24 20:49:43\n\nIn case it matters: I applied the patches from #5600 before word_iter_morphism_6571-sl.patch.",
     "created_at": "2009-08-24T20:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53653",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_6571-reviewer.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-reviewer.patch) by saliola created at 2009-08-24 20:49:43
+Attachment [trac_6571-reviewer.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-reviewer.patch) by @saliola created at 2009-08-24 20:49:43
 
 In case it matters: I applied the patches from #5600 before word_iter_morphism_6571-sl.patch.
 
@@ -270,7 +270,7 @@ archive/issue_comments_053654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53654",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -283,16 +283,16 @@ This patch applies over the precedent two.
 archive/issue_comments_053655.json:
 ```json
 {
-    "body": "Attachment [trac_6571-seb-review.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-seb-review.patch) by slabbe created at 2009-08-25 18:53:13\n\nThanks Franco for your good review. I didn't know about `IntegerListsLex`. Allowing erasing morphism is great as well. I just added a small patch to correct a word in a one-line comment. I am currently building the documentation...",
+    "body": "Attachment [trac_6571-seb-review.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-seb-review.patch) by @seblabbe created at 2009-08-25 18:53:13\n\nThanks Franco for your good review. I didn't know about `IntegerListsLex`. Allowing erasing morphism is great as well. I just added a small patch to correct a word in a one-line comment. I am currently building the documentation...",
     "created_at": "2009-08-25T18:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53655",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_6571-seb-review.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-seb-review.patch) by slabbe created at 2009-08-25 18:53:13
+Attachment [trac_6571-seb-review.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-seb-review.patch) by @seblabbe created at 2009-08-25 18:53:13
 
 Thanks Franco for your good review. I didn't know about `IntegerListsLex`. Allowing erasing morphism is great as well. I just added a small patch to correct a word in a one-line comment. I am currently building the documentation...
 
@@ -303,16 +303,16 @@ Thanks Franco for your good review. I didn't know about `IntegerListsLex`. Allow
 archive/issue_comments_053656.json:
 ```json
 {
-    "body": "Attachment [trac_6571-ReST-bug.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-ReST-bug.patch) by slabbe created at 2009-08-25 19:44:25\n\nApplies over the precedent three patches.",
+    "body": "Attachment [trac_6571-ReST-bug.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-ReST-bug.patch) by @seblabbe created at 2009-08-25 19:44:25\n\nApplies over the precedent three patches.",
     "created_at": "2009-08-25T19:44:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53656",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_6571-ReST-bug.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-ReST-bug.patch) by slabbe created at 2009-08-25 19:44:25
+Attachment [trac_6571-ReST-bug.patch](tarball://root/attachments/some-uuid/ticket6571/trac_6571-ReST-bug.patch) by @seblabbe created at 2009-08-25 19:44:25
 
 Applies over the precedent three patches.
 
@@ -328,7 +328,7 @@ archive/issue_comments_053657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53657",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_053658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6571#issuecomment-53658",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009432.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  ncohen leif\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9432\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @nathanncohen @nexttime\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9432\n\n",
     "created_at": "2010-07-05T23:19:19Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_009432.json:
     "title": "remove remaining # optional - GLPK tags on doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9432",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: jason, jkantor
 
-CC:  ncohen leif
+CC:  @nathanncohen @nexttime
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_090043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9432#issuecomment-90043",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_090044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9432#issuecomment-90044",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -85,16 +85,16 @@ Changing status from new to needs_review.
 archive/issue_comments_090045.json:
 ```json
 {
-    "body": "Attachment [trac_9432.patch](tarball://root/attachments/some-uuid/ticket9432/trac_9432.patch) by ncohen created at 2010-07-06 09:58:59\n\nUpdated ! There should not be any other trace of the optional GLPK package in Sage :-)\n\nNathann",
+    "body": "Attachment [trac_9432.patch](tarball://root/attachments/some-uuid/ticket9432/trac_9432.patch) by @nathanncohen created at 2010-07-06 09:58:59\n\nUpdated ! There should not be any other trace of the optional GLPK package in Sage :-)\n\nNathann",
     "created_at": "2010-07-06T09:58:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9432#issuecomment-90045",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9432.patch](tarball://root/attachments/some-uuid/ticket9432/trac_9432.patch) by ncohen created at 2010-07-06 09:58:59
+Attachment [trac_9432.patch](tarball://root/attachments/some-uuid/ticket9432/trac_9432.patch) by @nathanncohen created at 2010-07-06 09:58:59
 
 Updated ! There should not be any other trace of the optional GLPK package in Sage :-)
 
@@ -112,7 +112,7 @@ archive/issue_comments_090046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9432#issuecomment-90046",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_090047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9432",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9432#issuecomment-90047",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

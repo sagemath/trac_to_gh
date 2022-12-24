@@ -14,7 +14,7 @@ archive/issues_003079.json:
     "title": "quaddouble configuration and spkg-install cleaning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3079",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 Assignee: mabshoff
@@ -64,7 +64,7 @@ archive/issue_comments_021238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3079#issuecomment-21238",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

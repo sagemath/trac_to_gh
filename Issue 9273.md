@@ -3,7 +3,7 @@
 archive/issues_009273.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  robertwb rlm was jhpalmieri\n\n#9127 was supposed to fix this, but it seems the fix is not complete. \n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.4.4.alpha1\n\n\n == The error ==\n\n```\nsage -t  -long devel/sage/sage/calculus/riemann.pyx\n         [712.7 s]\n\n-------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py # File not found\n-------------------------------------------------------------\nTotal time for all tests: 33947.4 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9273\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @rlmill @williamstein @jhpalmieri\n\n#9127 was supposed to fix this, but it seems the fix is not complete. \n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.4.4.alpha1\n\n\n == The error ==\n\n```\nsage -t  -long devel/sage/sage/calculus/riemann.pyx\n         [712.7 s]\n\n-------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py # File not found\n-------------------------------------------------------------\nTotal time for all tests: 33947.4 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9273\n\n",
     "created_at": "2010-06-19T16:01:10Z",
     "labels": [
         "elliptic curves",
@@ -17,9 +17,9 @@ archive/issues_009273.json:
     "user": "drkirkby"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  robertwb rlm was jhpalmieri
+CC:  @robertwb @rlmill @williamstein @jhpalmieri
 
 #9127 was supposed to fix this, but it seems the fix is not complete. 
 
@@ -67,7 +67,7 @@ archive/issue_comments_087332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9273#issuecomment-87332",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_087336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9273#issuecomment-87336",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_087338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9273#issuecomment-87338",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_087339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9273#issuecomment-87339",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_087340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9273#issuecomment-87340",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_087341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9273#issuecomment-87341",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_087342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9273#issuecomment-87342",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_087343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9273#issuecomment-87343",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_087344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9273",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9273#issuecomment-87344",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

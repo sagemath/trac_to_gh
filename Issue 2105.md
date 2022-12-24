@@ -14,7 +14,7 @@ archive/issues_002105.json:
     "title": "Constructor for ntl.GF2X polynomials does not take Polynomials over  GF(2) as advertised by docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2105",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2105
 archive/issue_comments_013725.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2008-02-18T15:25:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2105#issuecomment-13725",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_013726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2105#issuecomment-13726",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_013727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2105#issuecomment-13727",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -105,16 +105,16 @@ fix
 archive/issue_comments_013728.json:
 ```json
 {
-    "body": "Attachment [trac_2105.patch](tarball://root/attachments/some-uuid/ticket2105/trac_2105.patch) by malb created at 2008-02-18 15:34:20",
+    "body": "Attachment [trac_2105.patch](tarball://root/attachments/some-uuid/ticket2105/trac_2105.patch) by @malb created at 2008-02-18 15:34:20",
     "created_at": "2008-02-18T15:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2105#issuecomment-13728",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_2105.patch](tarball://root/attachments/some-uuid/ticket2105/trac_2105.patch) by malb created at 2008-02-18 15:34:20
+Attachment [trac_2105.patch](tarball://root/attachments/some-uuid/ticket2105/trac_2105.patch) by @malb created at 2008-02-18 15:34:20
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_013729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2105#issuecomment-13729",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_013730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2105#issuecomment-13730",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

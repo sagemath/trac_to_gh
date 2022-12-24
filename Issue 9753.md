@@ -3,7 +3,7 @@
 archive/issues_009753.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nThe function NumberFieldIdeal.gens_reduced() can be simplified quite a bit without essentially changing its functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9753\n\n",
+    "body": "Assignee: @loefflerd\n\nThe function NumberFieldIdeal.gens_reduced() can be simplified quite a bit without essentially changing its functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9753\n\n",
     "created_at": "2010-08-15T19:56:54Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_009753.json:
     "title": "Simplify NumberFieldIdeal.gens_reduced()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9753",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 The function NumberFieldIdeal.gens_reduced() can be simplified quite a bit without essentially changing its functionality.
 
@@ -37,7 +37,7 @@ archive/issue_comments_095502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95502",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_095503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95503",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_095504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95504",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -86,16 +86,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_095505.json:
 ```json
 {
-    "body": "Attachment [9753.patch](tarball://root/attachments/some-uuid/ticket9753/9753.patch) by jdemeyer created at 2010-09-16 00:43:33\n\nAdds function gens_two(), rewrites gens_reduced() and fixes doctests",
+    "body": "Attachment [9753.patch](tarball://root/attachments/some-uuid/ticket9753/9753.patch) by @jdemeyer created at 2010-09-16 00:43:33\n\nAdds function gens_two(), rewrites gens_reduced() and fixes doctests",
     "created_at": "2010-09-16T00:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95505",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9753.patch](tarball://root/attachments/some-uuid/ticket9753/9753.patch) by jdemeyer created at 2010-09-16 00:43:33
+Attachment [9753.patch](tarball://root/attachments/some-uuid/ticket9753/9753.patch) by @jdemeyer created at 2010-09-16 00:43:33
 
 Adds function gens_two(), rewrites gens_reduced() and fixes doctests
 
@@ -111,7 +111,7 @@ archive/issue_comments_095506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95506",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_095507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95507",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_095508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95508",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_095509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95509",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_095510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95510",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_095511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95511",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -214,16 +214,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_095512.json:
 ```json
 {
-    "body": "Attachment [9753-better_commit_string.patch](tarball://root/attachments/some-uuid/ticket9753/9753-better_commit_string.patch) by davidloeffler created at 2010-09-28 09:41:42\n\nNew version with better commit string",
+    "body": "Attachment [9753-better_commit_string.patch](tarball://root/attachments/some-uuid/ticket9753/9753-better_commit_string.patch) by @loefflerd created at 2010-09-28 09:41:42\n\nNew version with better commit string",
     "created_at": "2010-09-28T09:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95512",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [9753-better_commit_string.patch](tarball://root/attachments/some-uuid/ticket9753/9753-better_commit_string.patch) by davidloeffler created at 2010-09-28 09:41:42
+Attachment [9753-better_commit_string.patch](tarball://root/attachments/some-uuid/ticket9753/9753-better_commit_string.patch) by @loefflerd created at 2010-09-28 09:41:42
 
 New version with better commit string
 
@@ -239,7 +239,7 @@ archive/issue_comments_095513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95513",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_095514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95514",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_095515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95515",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

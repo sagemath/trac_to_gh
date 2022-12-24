@@ -3,7 +3,7 @@
 archive/issues_006357.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  kini novoselt\n\nKeywords: sage test worksheet doctest\n\nThis came up on the mailing list: it would be nice if sage -t worksheet.sws worked.\n\nSeparate, but also nice, would be \"worksheet-ify\" command that took a series of doctests and made a nice worksheet out of it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6357\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kini @novoselt\n\nKeywords: sage test worksheet doctest\n\nThis came up on the mailing list: it would be nice if sage -t worksheet.sws worked.\n\nSeparate, but also nice, would be \"worksheet-ify\" command that took a series of doctests and made a nice worksheet out of it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6357\n\n",
     "created_at": "2009-06-18T17:05:01Z",
     "labels": [
         "doctest",
@@ -14,12 +14,12 @@ archive/issues_006357.json:
     "title": "make sage -t worksheet.sws work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6357",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: tbd
 
-CC:  kini novoselt
+CC:  @kini @novoselt
 
 Keywords: sage test worksheet doctest
 
@@ -43,7 +43,7 @@ archive/issue_comments_050834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50834",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_050835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50835",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_050836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50836",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_050837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50837",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_050838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50838",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_050839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50839",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_050840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50840",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_050841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50841",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_050842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50842",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_050843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50843",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

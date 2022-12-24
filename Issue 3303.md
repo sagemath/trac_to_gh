@@ -3,7 +3,7 @@
 archive/issues_003303.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nCC:  f.r.bissey@massey.ac.nz\n\nI've attached a patch that adds a shared library to tachyon.\n\nMy patch includes the necessary changes to the Debian package.\n\nLooking at spkg-install, it looks like SAGE doesn't actually use the tachyon library, only the binary, so I'm not including any changes to the spkg-install system.\n\nOnce this gets merged, I'll email John Stone with the patch to tachyon upstream.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3303\n\n",
+    "body": "Assignee: @timabbott\n\nCC:  f.r.bissey@massey.ac.nz\n\nI've attached a patch that adds a shared library to tachyon.\n\nMy patch includes the necessary changes to the Debian package.\n\nLooking at spkg-install, it looks like SAGE doesn't actually use the tachyon library, only the binary, so I'm not including any changes to the spkg-install system.\n\nOnce this gets merged, I'll email John Stone with the patch to tachyon upstream.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3303\n\n",
     "created_at": "2008-05-25T22:17:00Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_003303.json:
     "title": "[with patch; needs review] Add shared library to tachyon Debian package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3303",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 CC:  f.r.bissey@massey.ac.nz
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3303
 archive/issue_comments_022845.json:
 ```json
 {
-    "body": "Attachment [tachyon-debian-shared-library.patch](tarball://root/attachments/some-uuid/ticket3303/tachyon-debian-shared-library.patch) by tabbott created at 2008-05-25 22:17:23",
+    "body": "Attachment [tachyon-debian-shared-library.patch](tarball://root/attachments/some-uuid/ticket3303/tachyon-debian-shared-library.patch) by @timabbott created at 2008-05-25 22:17:23",
     "created_at": "2008-05-25T22:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3303#issuecomment-22845",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [tachyon-debian-shared-library.patch](tarball://root/attachments/some-uuid/ticket3303/tachyon-debian-shared-library.patch) by tabbott created at 2008-05-25 22:17:23
+Attachment [tachyon-debian-shared-library.patch](tarball://root/attachments/some-uuid/ticket3303/tachyon-debian-shared-library.patch) by @timabbott created at 2008-05-25 22:17:23
 
 
 

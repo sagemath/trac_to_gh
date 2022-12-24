@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2154
 archive/issue_comments_014146.json:
 ```json
 {
-    "body": "Changing assignee from joyner to robertwb.",
+    "body": "Changing assignee from joyner to @robertwb.",
     "created_at": "2008-02-14T01:12:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2154",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_014146.json:
 }
 ```
 
-Changing assignee from joyner to robertwb.
+Changing assignee from joyner to @robertwb.
 
 
 
@@ -79,16 +79,16 @@ Michael
 archive/issue_comments_014148.json:
 ```json
 {
-    "body": "Attachment [2154-invalid-perm.patch](tarball://root/attachments/some-uuid/ticket2154/2154-invalid-perm.patch) by robertwb created at 2008-02-21 22:06:24\n\nIt looks like the problem here was actually infinite loops, but it now checks to make sure it always gets a valid permutation (even if check=False is set).",
+    "body": "Attachment [2154-invalid-perm.patch](tarball://root/attachments/some-uuid/ticket2154/2154-invalid-perm.patch) by @robertwb created at 2008-02-21 22:06:24\n\nIt looks like the problem here was actually infinite loops, but it now checks to make sure it always gets a valid permutation (even if check=False is set).",
     "created_at": "2008-02-21T22:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2154",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2154#issuecomment-14148",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2154-invalid-perm.patch](tarball://root/attachments/some-uuid/ticket2154/2154-invalid-perm.patch) by robertwb created at 2008-02-21 22:06:24
+Attachment [2154-invalid-perm.patch](tarball://root/attachments/some-uuid/ticket2154/2154-invalid-perm.patch) by @robertwb created at 2008-02-21 22:06:24
 
 It looks like the problem here was actually infinite loops, but it now checks to make sure it always gets a valid permutation (even if check=False is set).
 

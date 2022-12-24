@@ -3,7 +3,7 @@
 archive/issues_004163.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  cremona\n\n\n```\nThat's a good point.\n\n2008/9/20 pong <wypong00>:\n>\n> This is not a bug report. But I'm not sure where to post a suggestion.\n>\n> In the SAGE tutorial, http://www.sagemath.org/doc/tut/node27.html\n>\n> there is an example:\n>\n> sage: c = factorial(25); c\n> 15511210043330985984000000\n> sage: [valuation(c,p) for p in prime_range(2,23)]\n> [22, 10, 6, 3, 2, 1, 1, 1]\n>\n> Since prime_range(2,23) does not include 23 itself, maybe it's better\n> to change it to prime_range(2,25). In that case, the product of primes\n> to the corresponding powers will actually give the factorial of 25.\n\nI would also include\nsage: c.factor()\n2^22 * 3^10 * 5^6 * 7^3 * 11^2 * 13 * 17 * 19 * 23\n(which would be helpful to people who might know know this meaning of\n\"valuation\", standard in number theory), and even perhaps\nsage: list(c.factor())\n[(2, 22), (3, 10), (5, 6), (7, 3), (11, 2), (13, 1), (17, 1), (19, 1), (23, 1)]\n\nJohn Cremona\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4163\n\n",
+    "body": "Assignee: tba\n\nCC:  @JohnCremona\n\n\n```\nThat's a good point.\n\n2008/9/20 pong <wypong00>:\n>\n> This is not a bug report. But I'm not sure where to post a suggestion.\n>\n> In the SAGE tutorial, http://www.sagemath.org/doc/tut/node27.html\n>\n> there is an example:\n>\n> sage: c = factorial(25); c\n> 15511210043330985984000000\n> sage: [valuation(c,p) for p in prime_range(2,23)]\n> [22, 10, 6, 3, 2, 1, 1, 1]\n>\n> Since prime_range(2,23) does not include 23 itself, maybe it's better\n> to change it to prime_range(2,25). In that case, the product of primes\n> to the corresponding powers will actually give the factorial of 25.\n\nI would also include\nsage: c.factor()\n2^22 * 3^10 * 5^6 * 7^3 * 11^2 * 13 * 17 * 19 * 23\n(which would be helpful to people who might know know this meaning of\n\"valuation\", standard in number theory), and even perhaps\nsage: list(c.factor())\n[(2, 22), (3, 10), (5, 6), (7, 3), (11, 2), (13, 1), (17, 1), (19, 1), (23, 1)]\n\nJohn Cremona\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4163\n\n",
     "created_at": "2008-09-21T14:00:40Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_004163.json:
     "title": "tut -- improve factorial / valuation example",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4163",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
 
-CC:  cremona
+CC:  @JohnCremona
 
 
 ```
@@ -65,16 +65,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4163
 archive/issue_comments_030211.json:
 ```json
 {
-    "body": "Attachment [4163-tut_factorial.patch](tarball://root/attachments/some-uuid/ticket4163/4163-tut_factorial.patch) by AlexGhitza created at 2008-09-23 08:06:35\n\ndoc patch",
+    "body": "Attachment [4163-tut_factorial.patch](tarball://root/attachments/some-uuid/ticket4163/4163-tut_factorial.patch) by @aghitza created at 2008-09-23 08:06:35\n\ndoc patch",
     "created_at": "2008-09-23T08:06:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4163#issuecomment-30211",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [4163-tut_factorial.patch](tarball://root/attachments/some-uuid/ticket4163/4163-tut_factorial.patch) by AlexGhitza created at 2008-09-23 08:06:35
+Attachment [4163-tut_factorial.patch](tarball://root/attachments/some-uuid/ticket4163/4163-tut_factorial.patch) by @aghitza created at 2008-09-23 08:06:35
 
 doc patch
 
@@ -90,7 +90,7 @@ archive/issue_comments_030212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4163#issuecomment-30212",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_030214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4163#issuecomment-30214",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_030215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4163#issuecomment-30215",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

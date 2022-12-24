@@ -3,7 +3,7 @@
 archive/issues_003977.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3977\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3977\n\n",
     "created_at": "2008-08-28T19:41:27Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003977.json:
     "title": "[with patch, needs review] get interfaces/octave.py up to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3977",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3977
 archive/issue_comments_028571.json:
 ```json
 {
-    "body": "Attachment [trac_3977.patch](tarball://root/attachments/some-uuid/ticket3977/trac_3977.patch) by mhansen created at 2008-08-28 19:42:05\n\nThis depends on #3976",
+    "body": "Attachment [trac_3977.patch](tarball://root/attachments/some-uuid/ticket3977/trac_3977.patch) by @mwhansen created at 2008-08-28 19:42:05\n\nThis depends on #3976",
     "created_at": "2008-08-28T19:42:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3977#issuecomment-28571",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3977.patch](tarball://root/attachments/some-uuid/ticket3977/trac_3977.patch) by mhansen created at 2008-08-28 19:42:05
+Attachment [trac_3977.patch](tarball://root/attachments/some-uuid/ticket3977/trac_3977.patch) by @mwhansen created at 2008-08-28 19:42:05
 
 This depends on #3976
 
@@ -52,16 +52,16 @@ This depends on #3976
 archive/issue_comments_028572.json:
 ```json
 {
-    "body": "Attachment [trac_3977-2.patch](tarball://root/attachments/some-uuid/ticket3977/trac_3977-2.patch) by rlm created at 2008-08-28 23:01:31\n\nApply.",
+    "body": "Attachment [trac_3977-2.patch](tarball://root/attachments/some-uuid/ticket3977/trac_3977-2.patch) by @rlmill created at 2008-08-28 23:01:31\n\nApply.",
     "created_at": "2008-08-28T23:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3977#issuecomment-28572",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_3977-2.patch](tarball://root/attachments/some-uuid/ticket3977/trac_3977-2.patch) by rlm created at 2008-08-28 23:01:31
+Attachment [trac_3977-2.patch](tarball://root/attachments/some-uuid/ticket3977/trac_3977-2.patch) by @rlmill created at 2008-08-28 23:01:31
 
 Apply.
 

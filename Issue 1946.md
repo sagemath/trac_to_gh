@@ -3,7 +3,7 @@
 archive/issues_001946.json:
 ```json
 {
-    "body": "Assignee: was\n\nI'm sure -- after a bit of a glance, for example, at scale_curve,\nthat lots of this code is broken as a result of having no doctests!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1946\n\n",
+    "body": "Assignee: @williamstein\n\nI'm sure -- after a bit of a glance, for example, at scale_curve,\nthat lots of this code is broken as a result of having no doctests!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1946\n\n",
     "created_at": "2008-01-27T02:36:59Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001946.json:
     "title": "Tate's algorithm has NO DOCTESTS!  See sage/schemes/elliptic_curves/ell_number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1946",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I'm sure -- after a bit of a glance, for example, at scale_curve,
 that lots of this code is broken as a result of having no doctests!
@@ -38,7 +38,7 @@ archive/issue_comments_012353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12353",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_012354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12354",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -69,16 +69,16 @@ patch for elliptic_curve and number_field stuff
 archive/issue_comments_012355.json:
 ```json
 {
-    "body": "Attachment [8089.patch](tarball://root/attachments/some-uuid/ticket1946/8089.patch) by cremona created at 2008-01-28 06:32:09\n\nLots of doctests for elliptic curves with many bug fixes for bugs revealed by them.\n\nSeveral new functions for changing models:  thought still needed on how to return the isomorphism as well as the new model;  if not Magma style then by storing the map as an attribute of the new curve as is done for number fields?\n\nJoint work by John Cremona and William Stein.",
+    "body": "Attachment [8089.patch](tarball://root/attachments/some-uuid/ticket1946/8089.patch) by @JohnCremona created at 2008-01-28 06:32:09\n\nLots of doctests for elliptic curves with many bug fixes for bugs revealed by them.\n\nSeveral new functions for changing models:  thought still needed on how to return the isomorphism as well as the new model;  if not Magma style then by storing the map as an attribute of the new curve as is done for number fields?\n\nJoint work by John Cremona and William Stein.",
     "created_at": "2008-01-28T06:32:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12355",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8089.patch](tarball://root/attachments/some-uuid/ticket1946/8089.patch) by cremona created at 2008-01-28 06:32:09
+Attachment [8089.patch](tarball://root/attachments/some-uuid/ticket1946/8089.patch) by @JohnCremona created at 2008-01-28 06:32:09
 
 Lots of doctests for elliptic curves with many bug fixes for bugs revealed by them.
 
@@ -98,7 +98,7 @@ archive/issue_comments_012356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12356",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_012357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12357",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_012358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12358",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -178,16 +178,16 @@ Michael
 archive/issue_comments_012360.json:
 ```json
 {
-    "body": "Attachment [8090.patch](tarball://root/attachments/some-uuid/ticket1946/8090.patch) by was created at 2008-02-19 16:25:46\n\nThis replaces Cremona's previous version; but has a comment and applies cleanly.",
+    "body": "Attachment [8090.patch](tarball://root/attachments/some-uuid/ticket1946/8090.patch) by @williamstein created at 2008-02-19 16:25:46\n\nThis replaces Cremona's previous version; but has a comment and applies cleanly.",
     "created_at": "2008-02-19T16:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12360",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [8090.patch](tarball://root/attachments/some-uuid/ticket1946/8090.patch) by was created at 2008-02-19 16:25:46
+Attachment [8090.patch](tarball://root/attachments/some-uuid/ticket1946/8090.patch) by @williamstein created at 2008-02-19 16:25:46
 
 This replaces Cremona's previous version; but has a comment and applies cleanly.
 
@@ -198,16 +198,16 @@ This replaces Cremona's previous version; but has a comment and applies cleanly.
 archive/issue_comments_012361.json:
 ```json
 {
-    "body": "Changing assignee from was to cremona.",
+    "body": "Changing assignee from @williamstein to @JohnCremona.",
     "created_at": "2008-02-19T17:22:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12361",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from was to cremona.
+Changing assignee from @williamstein to @JohnCremona.
 
 
 
@@ -221,7 +221,7 @@ archive/issue_comments_012362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12362",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_012363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12363",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -262,16 +262,16 @@ any problems.
 archive/issue_comments_012364.json:
 ```json
 {
-    "body": "Attachment [sage-1946-minor_formating.patch](tarball://root/attachments/some-uuid/ticket1946/sage-1946-minor_formating.patch) by was created at 2008-02-19 17:22:45\n\napply all three patches, including this one",
+    "body": "Attachment [sage-1946-minor_formating.patch](tarball://root/attachments/some-uuid/ticket1946/sage-1946-minor_formating.patch) by @williamstein created at 2008-02-19 17:22:45\n\napply all three patches, including this one",
     "created_at": "2008-02-19T17:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12364",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-1946-minor_formating.patch](tarball://root/attachments/some-uuid/ticket1946/sage-1946-minor_formating.patch) by was created at 2008-02-19 17:22:45
+Attachment [sage-1946-minor_formating.patch](tarball://root/attachments/some-uuid/ticket1946/sage-1946-minor_formating.patch) by @williamstein created at 2008-02-19 17:22:45
 
 apply all three patches, including this one
 
@@ -358,7 +358,7 @@ archive/issue_comments_012366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12366",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_012368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1946",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12368",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

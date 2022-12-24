@@ -3,7 +3,7 @@
 archive/issues_005551.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  sage-combinat\n\nKeywords: robinson schensted\n\n1. In sage 3.4, the Robinson Schensted algorithm is coded for a permutation :\n\n\n```\nsage: p = Permutation([3, 6, 5, 2, 7, 4, 1])\nsage: p.robinson_schensted()\n[[[1, 4, 7], [2, 5], [3], [6]], [[1, 2, 5], [3, 6], [4], [7]]]\n```\n\n\nSince this algorithm is invertible, it would be nice to allow to construct a permutation from a pair of standard tableaux of the same shape.\n\n2. The Robinson-Schensted is broken on the empty permutation. It should simply return a pair of empty tableaux :\n\n\n```\nsage: p=Permutation([])\nsage: p.robinson_schensted()\nTraceback (most recent call last):\n...\nValueError: invalid tableau\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5551\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\nKeywords: robinson schensted\n\n1. In sage 3.4, the Robinson Schensted algorithm is coded for a permutation :\n\n\n```\nsage: p = Permutation([3, 6, 5, 2, 7, 4, 1])\nsage: p.robinson_schensted()\n[[[1, 4, 7], [2, 5], [3], [6]], [[1, 2, 5], [3, 6], [4], [7]]]\n```\n\n\nSince this algorithm is invertible, it would be nice to allow to construct a permutation from a pair of standard tableaux of the same shape.\n\n2. The Robinson-Schensted is broken on the empty permutation. It should simply return a pair of empty tableaux :\n\n\n```\nsage: p=Permutation([])\nsage: p.robinson_schensted()\nTraceback (most recent call last):\n...\nValueError: invalid tableau\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5551\n\n",
     "created_at": "2009-03-17T20:29:32Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005551.json:
     "title": "Permutation from a pair of standard tableaux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5551",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  sage-combinat
 
@@ -63,7 +63,7 @@ archive/issue_comments_043172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43172",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_043173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43173",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_043174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43174",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_043175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43175",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_043176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43176",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -300,16 +300,16 @@ Florent
 archive/issue_comments_043177.json:
 ```json
 {
-    "body": "Attachment [permutation_from_tableaux-5551-submitted-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-submitted-sl.patch) by slabbe created at 2009-03-20 15:06:22\n\nAgainst sage 3.4. This patch is part of sage-combinat tree.",
+    "body": "Attachment [permutation_from_tableaux-5551-submitted-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-submitted-sl.patch) by @seblabbe created at 2009-03-20 15:06:22\n\nAgainst sage 3.4. This patch is part of sage-combinat tree.",
     "created_at": "2009-03-20T15:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43177",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [permutation_from_tableaux-5551-submitted-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-submitted-sl.patch) by slabbe created at 2009-03-20 15:06:22
+Attachment [permutation_from_tableaux-5551-submitted-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-submitted-sl.patch) by @seblabbe created at 2009-03-20 15:06:22
 
 Against sage 3.4. This patch is part of sage-combinat tree.
 
@@ -325,7 +325,7 @@ archive/issue_comments_043178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43178",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -340,16 +340,16 @@ slabbe
 archive/issue_comments_043179.json:
 ```json
 {
-    "body": "Attachment [permutation_from_tableaux-5551-review-fh.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-review-fh.patch) by hivert created at 2009-03-20 18:06:44",
+    "body": "Attachment [permutation_from_tableaux-5551-review-fh.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-review-fh.patch) by @hivert created at 2009-03-20 18:06:44",
     "created_at": "2009-03-20T18:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43179",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [permutation_from_tableaux-5551-review-fh.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-review-fh.patch) by hivert created at 2009-03-20 18:06:44
+Attachment [permutation_from_tableaux-5551-review-fh.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-review-fh.patch) by @hivert created at 2009-03-20 18:06:44
 
 
 
@@ -363,7 +363,7 @@ archive/issue_comments_043180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43180",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_043181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43181",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_043182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43182",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -460,7 +460,7 @@ archive/issue_comments_043183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43183",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -473,16 +473,16 @@ This patch applies over the precedent two.
 archive/issue_comments_043184.json:
 ```json
 {
-    "body": "Attachment [permutation_from_tableaux-5551-feature-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-feature-sl.patch) by slabbe created at 2009-04-01 17:00:26\n\nI addressed saliola comments in the patch I just uploaded. Needs review...",
+    "body": "Attachment [permutation_from_tableaux-5551-feature-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-feature-sl.patch) by @seblabbe created at 2009-04-01 17:00:26\n\nI addressed saliola comments in the patch I just uploaded. Needs review...",
     "created_at": "2009-04-01T17:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43184",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [permutation_from_tableaux-5551-feature-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-feature-sl.patch) by slabbe created at 2009-04-01 17:00:26
+Attachment [permutation_from_tableaux-5551-feature-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-feature-sl.patch) by @seblabbe created at 2009-04-01 17:00:26
 
 I addressed saliola comments in the patch I just uploaded. Needs review...
 
@@ -498,7 +498,7 @@ archive/issue_comments_043185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43185",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

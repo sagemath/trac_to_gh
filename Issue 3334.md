@@ -3,7 +3,7 @@
 archive/issues_003334.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3334\n\n",
+    "body": "Assignee: @williamstein\n\nSee patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3334\n\n",
     "created_at": "2008-05-29T22:44:27Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003334.json:
     "title": "[with patch, needs review] Matrix_mod2_dense may crash due to missing _sig_on/_sig_off",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3334",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See patch.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3334
 archive/issue_comments_023114.json:
 ```json
 {
-    "body": "Attachment [m4ri_mul_sigsegv.patch](tarball://root/attachments/some-uuid/ticket3334/m4ri_mul_sigsegv.patch) by malb created at 2008-05-29 22:44:52",
+    "body": "Attachment [m4ri_mul_sigsegv.patch](tarball://root/attachments/some-uuid/ticket3334/m4ri_mul_sigsegv.patch) by @malb created at 2008-05-29 22:44:52",
     "created_at": "2008-05-29T22:44:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3334#issuecomment-23114",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [m4ri_mul_sigsegv.patch](tarball://root/attachments/some-uuid/ticket3334/m4ri_mul_sigsegv.patch) by malb created at 2008-05-29 22:44:52
+Attachment [m4ri_mul_sigsegv.patch](tarball://root/attachments/some-uuid/ticket3334/m4ri_mul_sigsegv.patch) by @malb created at 2008-05-29 22:44:52
 
 
 

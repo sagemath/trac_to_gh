@@ -3,7 +3,7 @@
 archive/issues_001682.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is the second patch from #1576 which turns on implicit multiplication per default. We will wait to merge this past 2.9.2.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1682\n\n",
+    "body": "Assignee: @williamstein\n\nThis is the second patch from #1576 which turns on implicit multiplication per default. We will wait to merge this past 2.9.2.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1682\n\n",
     "created_at": "2008-01-04T18:13:41Z",
     "labels": [
         "basic arithmetic",
@@ -17,7 +17,7 @@ archive/issues_001682.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is the second patch from #1576 which turns on implicit multiplication per default. We will wait to merge this past 2.9.2.
 
@@ -61,7 +61,7 @@ archive/issue_comments_010671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10671",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_010672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10672",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -97,16 +97,16 @@ I think the default level is the right one (hence the default). I would be happy
 archive/issue_comments_010673.json:
 ```json
 {
-    "body": "Attachment [1682-implicit-mul-doc.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-doc.patch) by robertwb created at 2008-01-09 07:28:47",
+    "body": "Attachment [1682-implicit-mul-doc.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-doc.patch) by @robertwb created at 2008-01-09 07:28:47",
     "created_at": "2008-01-09T07:28:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10673",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1682-implicit-mul-doc.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-doc.patch) by robertwb created at 2008-01-09 07:28:47
+Attachment [1682-implicit-mul-doc.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-doc.patch) by @robertwb created at 2008-01-09 07:28:47
 
 
 
@@ -120,7 +120,7 @@ archive/issue_comments_010674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10674",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_010675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10675",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_010676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10676",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_010679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10679",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_010680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10680",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_010681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10681",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_010682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10682",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -470,16 +470,16 @@ or
 archive/issue_comments_010683.json:
 ```json
 {
-    "body": "Attachment [1682-implicit-mul-time.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-time.patch) by robertwb created at 2008-01-10 08:52:02\n\nfix \"time ...\" bug",
+    "body": "Attachment [1682-implicit-mul-time.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-time.patch) by @robertwb created at 2008-01-10 08:52:02\n\nfix \"time ...\" bug",
     "created_at": "2008-01-10T08:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10683",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1682-implicit-mul-time.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-time.patch) by robertwb created at 2008-01-10 08:52:02
+Attachment [1682-implicit-mul-time.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-time.patch) by @robertwb created at 2008-01-10 08:52:02
 
 fix "time ..." bug
 
@@ -542,7 +542,7 @@ archive/issue_comments_010685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10685",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -715,7 +715,7 @@ archive/issue_comments_010686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10686",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -739,16 +739,16 @@ The reasons:
 archive/issue_comments_010687.json:
 ```json
 {
-    "body": "Attachment [1682-implicit-mul-no-default.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-no-default.patch) by robertwb created at 2008-01-15 05:55:39\n\nThe above patch makes this optional via an `implicit_multiplication(...)` function. All patches should be applied.",
+    "body": "Attachment [1682-implicit-mul-no-default.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-no-default.patch) by @robertwb created at 2008-01-15 05:55:39\n\nThe above patch makes this optional via an `implicit_multiplication(...)` function. All patches should be applied.",
     "created_at": "2008-01-15T05:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1682#issuecomment-10687",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1682-implicit-mul-no-default.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-no-default.patch) by robertwb created at 2008-01-15 05:55:39
+Attachment [1682-implicit-mul-no-default.patch](tarball://root/attachments/some-uuid/ticket1682/1682-implicit-mul-no-default.patch) by @robertwb created at 2008-01-15 05:55:39
 
 The above patch makes this optional via an `implicit_multiplication(...)` function. All patches should be applied.
 

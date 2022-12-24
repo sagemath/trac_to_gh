@@ -3,7 +3,7 @@
 archive/issues_009513.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nOn my System (SuSE 11.1 x86_64). The build fails and complains about mixing --prefix and --home when doing `python install` on various packages: \nnetworkx, mercurial (perhaps more to come))\nIn addition in the spkg of scons --prefix is missing completely.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9513\n\n",
+    "body": "Assignee: @aghitza\n\nOn my System (SuSE 11.1 x86_64). The build fails and complains about mixing --prefix and --home when doing `python install` on various packages: \nnetworkx, mercurial (perhaps more to come))\nIn addition in the spkg of scons --prefix is missing completely.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9513\n\n",
     "created_at": "2010-07-15T21:06:03Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_009513.json:
     "user": "PolyBoRi"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 On my System (SuSE 11.1 x86_64). The build fails and complains about mixing --prefix and --home when doing `python install` on various packages: 
 networkx, mercurial (perhaps more to come))
@@ -39,7 +39,7 @@ archive/issue_comments_091469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9513#issuecomment-91469",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_091470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9513#issuecomment-91470",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -70,16 +70,16 @@ This has very little to do with algebra -- please use appropriate values for "co
 archive/issue_comments_091471.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to GeorgSWeber.",
+    "body": "Changing assignee from @aghitza to GeorgSWeber.",
     "created_at": "2010-07-29T13:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9513#issuecomment-91471",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from AlexGhitza to GeorgSWeber.
+Changing assignee from @aghitza to GeorgSWeber.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_091472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9513#issuecomment-91472",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_091473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9513#issuecomment-91473",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_091474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9513#issuecomment-91474",
-    "user": "AlexanderDreyer"
+    "user": "@alexanderdreyer"
 }
 ```
 

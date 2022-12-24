@@ -3,7 +3,7 @@
 archive/issues_001564.json:
 ```json
 {
-    "body": "Assignee: was\n\nI will post patches here, mainly for Robert Bradshaw. These shouldn't be applied\nyet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1564\n\n",
+    "body": "Assignee: @williamstein\n\nI will post patches here, mainly for Robert Bradshaw. These shouldn't be applied\nyet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1564\n\n",
     "created_at": "2007-12-19T06:33:38Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001564.json:
     "title": "3d graphics -- misc improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1564",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I will post patches here, mainly for Robert Bradshaw. These shouldn't be applied
 yet. 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1564
 archive/issue_comments_009954.json:
 ```json
 {
-    "body": "Attachment [3d-1.patch](tarball://root/attachments/some-uuid/ticket1564/3d-1.patch) by was created at 2007-12-19 06:34:02",
+    "body": "Attachment [3d-1.patch](tarball://root/attachments/some-uuid/ticket1564/3d-1.patch) by @williamstein created at 2007-12-19 06:34:02",
     "created_at": "2007-12-19T06:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1564#issuecomment-9954",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [3d-1.patch](tarball://root/attachments/some-uuid/ticket1564/3d-1.patch) by was created at 2007-12-19 06:34:02
+Attachment [3d-1.patch](tarball://root/attachments/some-uuid/ticket1564/3d-1.patch) by @williamstein created at 2007-12-19 06:34:02
 
 
 
@@ -51,16 +51,16 @@ Attachment [3d-1.patch](tarball://root/attachments/some-uuid/ticket1564/3d-1.pat
 archive/issue_comments_009955.json:
 ```json
 {
-    "body": "Attachment [3d-dec18.hg](tarball://root/attachments/some-uuid/ticket1564/3d-dec18.hg) by robertwb created at 2007-12-19 08:49:01",
+    "body": "Attachment [3d-dec18.hg](tarball://root/attachments/some-uuid/ticket1564/3d-dec18.hg) by @robertwb created at 2007-12-19 08:49:01",
     "created_at": "2007-12-19T08:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1564#issuecomment-9955",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3d-dec18.hg](tarball://root/attachments/some-uuid/ticket1564/3d-dec18.hg) by robertwb created at 2007-12-19 08:49:01
+Attachment [3d-dec18.hg](tarball://root/attachments/some-uuid/ticket1564/3d-dec18.hg) by @robertwb created at 2007-12-19 08:49:01
 
 
 
@@ -69,16 +69,16 @@ Attachment [3d-dec18.hg](tarball://root/attachments/some-uuid/ticket1564/3d-dec1
 archive/issue_comments_009956.json:
 ```json
 {
-    "body": "Attachment [3d-dec22.hg](tarball://root/attachments/some-uuid/ticket1564/3d-dec22.hg) by was created at 2007-12-22 22:10:59",
+    "body": "Attachment [3d-dec22.hg](tarball://root/attachments/some-uuid/ticket1564/3d-dec22.hg) by @williamstein created at 2007-12-22 22:10:59",
     "created_at": "2007-12-22T22:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1564#issuecomment-9956",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [3d-dec22.hg](tarball://root/attachments/some-uuid/ticket1564/3d-dec22.hg) by was created at 2007-12-22 22:10:59
+Attachment [3d-dec22.hg](tarball://root/attachments/some-uuid/ticket1564/3d-dec22.hg) by @williamstein created at 2007-12-22 22:10:59
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_009957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1564#issuecomment-9957",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_009958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1564#issuecomment-9958",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

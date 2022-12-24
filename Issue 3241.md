@@ -14,7 +14,7 @@ archive/issues_003241.json:
     "title": "[with patch; needs review] cygwin -- new rubiks spkg that builds on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3241",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

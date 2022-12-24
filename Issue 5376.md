@@ -3,7 +3,7 @@
 archive/issues_005376.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThis fixes the last few issues from #4923.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5376\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThis fixes the last few issues from #4923.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5376\n\n",
     "created_at": "2009-02-26T00:32:42Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_005376.json:
     "title": "[with patch, needs review] minor problems with ReST in plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5376",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 This fixes the last few issues from #4923.
 

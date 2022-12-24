@@ -14,7 +14,7 @@ archive/issues_009242.json:
     "title": "Add docstrings and tests for sage/rings/ideal_monoid.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9242",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 Assignee: mvngu
@@ -56,7 +56,7 @@ archive/issue_comments_086914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9242#issuecomment-86914",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_086915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9242#issuecomment-86915",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_086916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9242#issuecomment-86916",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_086917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9242#issuecomment-86917",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_086918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9242#issuecomment-86918",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_086919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9242#issuecomment-86919",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -174,16 +174,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_086920.json:
 ```json
 {
-    "body": "Attachment [trac_9242-ideal_monoid_docs.patch](tarball://root/attachments/some-uuid/ticket9242/trac_9242-ideal_monoid_docs.patch) by davidloeffler created at 2010-06-15 10:44:10\n\nIt's harmess (if you look, the exception stack is actually identical, just with slightly different string representation for some of the classes). I've uploaded a new patch.",
+    "body": "Attachment [trac_9242-ideal_monoid_docs.patch](tarball://root/attachments/some-uuid/ticket9242/trac_9242-ideal_monoid_docs.patch) by @loefflerd created at 2010-06-15 10:44:10\n\nIt's harmess (if you look, the exception stack is actually identical, just with slightly different string representation for some of the classes). I've uploaded a new patch.",
     "created_at": "2010-06-15T10:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9242#issuecomment-86920",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9242-ideal_monoid_docs.patch](tarball://root/attachments/some-uuid/ticket9242/trac_9242-ideal_monoid_docs.patch) by davidloeffler created at 2010-06-15 10:44:10
+Attachment [trac_9242-ideal_monoid_docs.patch](tarball://root/attachments/some-uuid/ticket9242/trac_9242-ideal_monoid_docs.patch) by @loefflerd created at 2010-06-15 10:44:10
 
 It's harmess (if you look, the exception stack is actually identical, just with slightly different string representation for some of the classes). I've uploaded a new patch.
 
@@ -199,7 +199,7 @@ archive/issue_comments_086921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9242#issuecomment-86921",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_086922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9242#issuecomment-86922",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_086923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9242#issuecomment-86923",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_086924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9242#issuecomment-86924",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

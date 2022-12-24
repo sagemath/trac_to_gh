@@ -3,7 +3,7 @@
 archive/issues_001772.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is from Hector:\n\n\n```\nI also hit this bug while doing this (taken from the \"piecewise\"\ndocumentation):\n\nsage: f1 = lambda x:-1\nsage: f2 = lambda x:2\nsage: f = Piecewise([[(0,pi/2),f1],[(pi/2,pi),f2]])\nsage: P = f.plot_fourier_series_partial_sum(15,pi,-5,5)   # long time\nboom\n...\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in <lambda>(i)\n   3607             # We need to do this maximum to correctly handle the case where\n   3608             # self is something like (sin+1)\n-> 3609             n = max( max(map(lambda i: i.number_of_arguments(), self._operands)+[0]), len(variables) )\n   3610         self.__number_of_args = n\n   3611         return n\n\n<type 'exceptions.AttributeError'>: 'Pi' object has no attribute 'number_of_arguments'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1772\n\n",
+    "body": "Assignee: @williamstein\n\nThis is from Hector:\n\n\n```\nI also hit this bug while doing this (taken from the \"piecewise\"\ndocumentation):\n\nsage: f1 = lambda x:-1\nsage: f2 = lambda x:2\nsage: f = Piecewise([[(0,pi/2),f1],[(pi/2,pi),f2]])\nsage: P = f.plot_fourier_series_partial_sum(15,pi,-5,5)   # long time\nboom\n...\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in <lambda>(i)\n   3607             # We need to do this maximum to correctly handle the case where\n   3608             # self is something like (sin+1)\n-> 3609             n = max( max(map(lambda i: i.number_of_arguments(), self._operands)+[0]), len(variables) )\n   3610         self.__number_of_args = n\n   3611         return n\n\n<type 'exceptions.AttributeError'>: 'Pi' object has no attribute 'number_of_arguments'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1772\n\n",
     "created_at": "2008-01-14T05:58:16Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001772.json:
     "title": "bug somewhere in the symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1772",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is from Hector:
 
@@ -62,7 +62,7 @@ archive/issue_comments_011203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11203",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,16 +75,16 @@ Changing status from new to assigned.
 archive/issue_comments_011204.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-01-15T01:46:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11204",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -93,16 +93,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_011205.json:
 ```json
 {
-    "body": "Attachment [1772.patch](tarball://root/attachments/some-uuid/ticket1772/1772.patch) by mhansen created at 2008-01-18 21:02:31",
+    "body": "Attachment [1772.patch](tarball://root/attachments/some-uuid/ticket1772/1772.patch) by @mwhansen created at 2008-01-18 21:02:31",
     "created_at": "2008-01-18T21:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11205",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1772.patch](tarball://root/attachments/some-uuid/ticket1772/1772.patch) by mhansen created at 2008-01-18 21:02:31
+Attachment [1772.patch](tarball://root/attachments/some-uuid/ticket1772/1772.patch) by @mwhansen created at 2008-01-18 21:02:31
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_011206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11206",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,16 +131,16 @@ I have not fully reviewed the patch yet, though I've looked it over by eye and i
 archive/issue_comments_011207.json:
 ```json
 {
-    "body": "Attachment [1772-bug.patch](tarball://root/attachments/some-uuid/ticket1772/1772-bug.patch) by rlm created at 2008-01-20 00:37:31\n\nFixes the one doctest failure in constant.py",
+    "body": "Attachment [1772-bug.patch](tarball://root/attachments/some-uuid/ticket1772/1772-bug.patch) by @rlmill created at 2008-01-20 00:37:31\n\nFixes the one doctest failure in constant.py",
     "created_at": "2008-01-20T00:37:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11207",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [1772-bug.patch](tarball://root/attachments/some-uuid/ticket1772/1772-bug.patch) by rlm created at 2008-01-20 00:37:31
+Attachment [1772-bug.patch](tarball://root/attachments/some-uuid/ticket1772/1772-bug.patch) by @rlmill created at 2008-01-20 00:37:31
 
 Fixes the one doctest failure in constant.py
 

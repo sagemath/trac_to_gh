@@ -3,7 +3,7 @@
 archive/issues_008123.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mkoeppe\n\nIt seems that the notebook is close to serving \"SVG\" files in a way usable for SVG capable browser, but is not quite there:\nIf I try\n\n```\nsage: p = plot(x^2, -2, 2)\nsage: p.save('xsquared.svg')\n```\n\nin the notebook, Firefox 3.5.2 gives me a \"plugin needed\" message and where the picture is supposed to be, I only get a placeholder.\nIf I save `xsquared.svg` and point my browser directly to it, firefox displays the picture, so Firefox 3.5.2 can understand the SVG produced. HTML code that succeeds in displaying the picture:\n\n```\n<html>\n<body>\n<object data=\"xsquared.svg\">\n</body>\n</html>\n```\n\nSo, it may be that the notebook simply needs to generate different HTML for including SVG files it finds. Alternatively, it may be a matter of serving the SVG file with the appropriate MIME type.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8123\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mkoeppe\n\nIt seems that the notebook is close to serving \"SVG\" files in a way usable for SVG capable browser, but is not quite there:\nIf I try\n\n```\nsage: p = plot(x^2, -2, 2)\nsage: p.save('xsquared.svg')\n```\n\nin the notebook, Firefox 3.5.2 gives me a \"plugin needed\" message and where the picture is supposed to be, I only get a placeholder.\nIf I save `xsquared.svg` and point my browser directly to it, firefox displays the picture, so Firefox 3.5.2 can understand the SVG produced. HTML code that succeeds in displaying the picture:\n\n```\n<html>\n<body>\n<object data=\"xsquared.svg\">\n</body>\n</html>\n```\n\nSo, it may be that the notebook simply needs to generate different HTML for including SVG files it finds. Alternatively, it may be a matter of serving the SVG file with the appropriate MIME type.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8123\n\n",
     "created_at": "2010-01-29T19:24:04Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008123.json:
     "title": "Notebook inclusion of SVG files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8123",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mkoeppe
+CC:  @mkoeppe
 
 It seems that the notebook is close to serving "SVG" files in a way usable for SVG capable browser, but is not quite there:
 If I try
@@ -58,7 +58,7 @@ archive/issue_comments_071408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8123#issuecomment-71408",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_071409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8123#issuecomment-71409",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -95,16 +95,16 @@ That should be `/etc/mime.types.`
 archive/issue_comments_071410.json:
 ```json
 {
-    "body": "Changing assignee from was to mpatel.",
+    "body": "Changing assignee from @williamstein to @qed777.",
     "created_at": "2010-02-04T14:47:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8123#issuecomment-71410",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Changing assignee from was to mpatel.
+Changing assignee from @williamstein to @qed777.
 
 
 
@@ -118,7 +118,7 @@ archive/issue_comments_071411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8123#issuecomment-71411",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -131,16 +131,16 @@ We may need to add `height` and `width` attributes for Opera and WebKit browsers
 archive/issue_comments_071412.json:
 ```json
 {
-    "body": "Changing assignee from mpatel to was.",
+    "body": "Changing assignee from @qed777 to @williamstein.",
     "created_at": "2010-02-04T14:47:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8123#issuecomment-71412",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Changing assignee from mpatel to was.
+Changing assignee from @qed777 to @williamstein.
 
 
 
@@ -154,7 +154,7 @@ archive/issue_comments_071413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8123#issuecomment-71413",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_071414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8123#issuecomment-71414",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_071415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8123#issuecomment-71415",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_071416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8123#issuecomment-71416",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_071417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8123#issuecomment-71417",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_071418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8123",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8123#issuecomment-71418",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

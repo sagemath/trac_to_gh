@@ -3,7 +3,7 @@
 archive/issues_003275.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThis patch changes `SL2Z` to be a distinct object, as opposed to a class. The following error was brought up on `sage-support`:\n\n\n```\nsage: S = SL2Z()([0,-1,1,0])\nsage: T = SL2Z()([1,1,0,1])\nsage: S*T\n...\n<type 'exceptions.RuntimeError'>: There is a bug in the coercion code in SAGE.\n```\n\n\nThe issue (as the poster pointed out) is that the parents of S and T are distinct copies of `SL2Z`, when they don't need to be. Indeed, I don't see any difference between this and other distinct rings in Sage (such as `ZZ`, `QQ`, etc), so I've made it distinct.\n\nNow the above becomes:\n\n```\nsage: S = SL2Z.([0,-1,1,0])\nsage: T = SL2Z.([1,1,0,1])\nsage: S*T\n[ 0 -1]\n[ 1  1]\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3275\n\n",
+    "body": "Assignee: @craigcitro\n\nThis patch changes `SL2Z` to be a distinct object, as opposed to a class. The following error was brought up on `sage-support`:\n\n\n```\nsage: S = SL2Z()([0,-1,1,0])\nsage: T = SL2Z()([1,1,0,1])\nsage: S*T\n...\n<type 'exceptions.RuntimeError'>: There is a bug in the coercion code in SAGE.\n```\n\n\nThe issue (as the poster pointed out) is that the parents of S and T are distinct copies of `SL2Z`, when they don't need to be. Indeed, I don't see any difference between this and other distinct rings in Sage (such as `ZZ`, `QQ`, etc), so I've made it distinct.\n\nNow the above becomes:\n\n```\nsage: S = SL2Z.([0,-1,1,0])\nsage: T = SL2Z.([1,1,0,1])\nsage: S*T\n[ 0 -1]\n[ 1  1]\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3275\n\n",
     "created_at": "2008-05-23T07:58:31Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_003275.json:
     "title": "[with patch, needs review] Make SL2Z distinct",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3275",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 This patch changes `SL2Z` to be a distinct object, as opposed to a class. The following error was brought up on `sage-support`:
 
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3275
 archive/issue_comments_022654.json:
 ```json
 {
-    "body": "Attachment [trac-3275.patch](tarball://root/attachments/some-uuid/ticket3275/trac-3275.patch) by craigcitro created at 2008-05-23 07:59:02",
+    "body": "Attachment [trac-3275.patch](tarball://root/attachments/some-uuid/ticket3275/trac-3275.patch) by @craigcitro created at 2008-05-23 07:59:02",
     "created_at": "2008-05-23T07:59:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3275#issuecomment-22654",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3275.patch](tarball://root/attachments/some-uuid/ticket3275/trac-3275.patch) by craigcitro created at 2008-05-23 07:59:02
+Attachment [trac-3275.patch](tarball://root/attachments/some-uuid/ticket3275/trac-3275.patch) by @craigcitro created at 2008-05-23 07:59:02
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_022655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3275#issuecomment-22655",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

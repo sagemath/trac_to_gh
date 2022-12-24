@@ -3,7 +3,7 @@
 archive/issues_008019.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphics_array, scale\n\nThe following code should illustrate this, see picture below, everything gets scaled for no reason.\n\ngraph = circle((0,0),20)\ngraph.set_aspect_ratio(1)\ngraph2 = graphics_array([[graph]*4]*4)\ngraph2.show()\n\nIssue created by migration from https://trac.sagemath.org/ticket/8019\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphics_array, scale\n\nThe following code should illustrate this, see picture below, everything gets scaled for no reason.\n\ngraph = circle((0,0),20)\ngraph.set_aspect_ratio(1)\ngraph2 = graphics_array([[graph]*4]*4)\ngraph2.show()\n\nIssue created by migration from https://trac.sagemath.org/ticket/8019\n\n",
     "created_at": "2010-01-21T00:31:30Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_008019.json:
     "user": "pdehaye"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphics_array, scale
 
@@ -98,7 +98,7 @@ archive/issue_comments_070076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8019#issuecomment-70076",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_070077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8019#issuecomment-70077",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_070078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8019",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8019#issuecomment-70078",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

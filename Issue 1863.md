@@ -3,7 +3,7 @@
 archive/issues_001863.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThis works:\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^3 + 3/5\nsage: f.change_ring(GF(7))\nx^3 + 2\n```\n\nThis should work:\n\n```\nsage: R.<x,y> = QQ[]\nsage: f = x^3 + 3/5*y + 1\nsage: f.change_ring(GF(7))\nTraceback (most recent call last):\n...\nAttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute 'change_ring'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1863\n\n",
+    "body": "Assignee: @malb\n\nThis works:\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^3 + 3/5\nsage: f.change_ring(GF(7))\nx^3 + 2\n```\n\nThis should work:\n\n```\nsage: R.<x,y> = QQ[]\nsage: f = x^3 + 3/5*y + 1\nsage: f.change_ring(GF(7))\nTraceback (most recent call last):\n...\nAttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute 'change_ring'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1863\n\n",
     "created_at": "2008-01-20T16:36:56Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001863.json:
     "title": "implement f.change_ring(R) for f a multivariate polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1863",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 This works:
 
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1863
 archive/issue_comments_011797.json:
 ```json
 {
-    "body": "Attachment [trac_1863_change_ring.patch](tarball://root/attachments/some-uuid/ticket1863/trac_1863_change_ring.patch) by malb created at 2008-03-28 12:11:21",
+    "body": "Attachment [trac_1863_change_ring.patch](tarball://root/attachments/some-uuid/ticket1863/trac_1863_change_ring.patch) by @malb created at 2008-03-28 12:11:21",
     "created_at": "2008-03-28T12:11:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1863#issuecomment-11797",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1863_change_ring.patch](tarball://root/attachments/some-uuid/ticket1863/trac_1863_change_ring.patch) by malb created at 2008-03-28 12:11:21
+Attachment [trac_1863_change_ring.patch](tarball://root/attachments/some-uuid/ticket1863/trac_1863_change_ring.patch) by @malb created at 2008-03-28 12:11:21
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_011798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1863#issuecomment-11798",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -87,16 +87,16 @@ The attached patch implements `change_ring`.
 archive/issue_comments_011799.json:
 ```json
 {
-    "body": "Attachment [1863.patch](tarball://root/attachments/some-uuid/ticket1863/1863.patch) by mhansen created at 2008-03-31 14:46:26",
+    "body": "Attachment [1863.patch](tarball://root/attachments/some-uuid/ticket1863/1863.patch) by @mwhansen created at 2008-03-31 14:46:26",
     "created_at": "2008-03-31T14:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1863#issuecomment-11799",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1863.patch](tarball://root/attachments/some-uuid/ticket1863/1863.patch) by mhansen created at 2008-03-31 14:46:26
+Attachment [1863.patch](tarball://root/attachments/some-uuid/ticket1863/1863.patch) by @mwhansen created at 2008-03-31 14:46:26
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_011800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1863#issuecomment-11800",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

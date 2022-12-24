@@ -3,7 +3,7 @@
 archive/issues_001209.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nOn Nov 19, 2007 8:29 AM, Jason Grout <jason-sage@creativetrax.com> wrote:\n> \n> William Stein wrote:\n> \n> >  3. Dumb question -- Where is the actual source code of anything in Maple?\n> >      I'm skimming through my Maple install to see some actual source code and\n> >      I can't find anything.  The lib/ directory has lots of .mla\n> > files, but these are all\n> >      pre-compiled binary files -- no source code.  Is there some tool\n> > included with\n> >      Maple to decompile them?     (I'm not being rhetorical, I simply don't know\n> >      how to actually view source code of Maple functions, even if I wanted to.)\n> \n> Some links dealing with this:\n> \n> http://www.mapleprimes.com/blog/jacquesc/old-timer-techniques\n> \n> http://www.mapleprimes.com/forum/algorithms-used-in-maple\n> \n> http://thproxy.jinr.ru/Documents/MapleV/qa/section3_4.html\n> \n> I've used the printlevel and I think the showstat techniques before.\n> Unfortunately, I can't test them because I no longer have access to\n> Maple (at least on my home machine).  I guess that's they whole point\n> again---even if there is some way for someone to get the output of the\n> procedure, it doesn't do me any good because I don't have Maple and\n> can't check it anyway.\n\nThis *does* work in Maple 11:\n\nsage: maple_console()\n    |\\^/|     Maple 11 (APPLE UNIVERSAL OSX)\n._|\\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple Inc. 2007\n \\  MAPLE  /  All rights reserved. Maple is a trademark of\n <____ ____>  Waterloo Maple Inc.\n      |       Type ? for help.\n> print(gcd);\n                                  proc(aa, bb, cofa::name, cofb::name)  ...  end proc\n\n> interface(verboseproc=2);\n                                                           1\n\n> print(gcd);              \nproc(aa, bb, cofa::name, cofb::name)\nlocal Z, GCD, a, b;\noption `Copyright (c) 1992 by the University of Waterloo. All rights reserved.`;\n    if 2 < nargs and member(cofa, indets(aa) union indets(bb)) then error \"The optional 3rd argument given to `\\\n...\n\nI wonder what proportion of the 1300 or so top-level functions in Maple (according\nto a sage's maple.[tab]) actually have source code.    \n\nInterestingly, I bet I can make it so \n\n  sage: maple.gcd??\n\nwill show the source code using one you suggest above.  Trac ticket:\n   \n\n> Whether or not using printlevel or showstat is legal (in light of Josh's\n> response from Maple) is an interesting question.  They are built-in\n> capabilities meant for introspection.  They were also encouraged by the\n> Maple people in the above posts.\n\n<tinfoil hat> Maybe it is a trap.  :-)  </tinfoil hat>\n\n - William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1209\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nOn Nov 19, 2007 8:29 AM, Jason Grout <jason-sage@creativetrax.com> wrote:\n> \n> William Stein wrote:\n> \n> >  3. Dumb question -- Where is the actual source code of anything in Maple?\n> >      I'm skimming through my Maple install to see some actual source code and\n> >      I can't find anything.  The lib/ directory has lots of .mla\n> > files, but these are all\n> >      pre-compiled binary files -- no source code.  Is there some tool\n> > included with\n> >      Maple to decompile them?     (I'm not being rhetorical, I simply don't know\n> >      how to actually view source code of Maple functions, even if I wanted to.)\n> \n> Some links dealing with this:\n> \n> http://www.mapleprimes.com/blog/jacquesc/old-timer-techniques\n> \n> http://www.mapleprimes.com/forum/algorithms-used-in-maple\n> \n> http://thproxy.jinr.ru/Documents/MapleV/qa/section3_4.html\n> \n> I've used the printlevel and I think the showstat techniques before.\n> Unfortunately, I can't test them because I no longer have access to\n> Maple (at least on my home machine).  I guess that's they whole point\n> again---even if there is some way for someone to get the output of the\n> procedure, it doesn't do me any good because I don't have Maple and\n> can't check it anyway.\n\nThis *does* work in Maple 11:\n\nsage: maple_console()\n    |\\^/|     Maple 11 (APPLE UNIVERSAL OSX)\n._|\\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple Inc. 2007\n \\  MAPLE  /  All rights reserved. Maple is a trademark of\n <____ ____>  Waterloo Maple Inc.\n      |       Type ? for help.\n> print(gcd);\n                                  proc(aa, bb, cofa::name, cofb::name)  ...  end proc\n\n> interface(verboseproc=2);\n                                                           1\n\n> print(gcd);              \nproc(aa, bb, cofa::name, cofb::name)\nlocal Z, GCD, a, b;\noption `Copyright (c) 1992 by the University of Waterloo. All rights reserved.`;\n    if 2 < nargs and member(cofa, indets(aa) union indets(bb)) then error \"The optional 3rd argument given to `\\\n...\n\nI wonder what proportion of the 1300 or so top-level functions in Maple (according\nto a sage's maple.[tab]) actually have source code.    \n\nInterestingly, I bet I can make it so \n\n  sage: maple.gcd??\n\nwill show the source code using one you suggest above.  Trac ticket:\n   \n\n> Whether or not using printlevel or showstat is legal (in light of Josh's\n> response from Maple) is an interesting question.  They are built-in\n> capabilities meant for introspection.  They were also encouraged by the\n> Maple people in the above posts.\n\n<tinfoil hat> Maybe it is a trap.  :-)  </tinfoil hat>\n\n - William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1209\n\n",
     "created_at": "2007-11-19T16:58:02Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001209.json:
     "title": "make it so maple.gcd?? shows source code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1209",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -107,7 +107,7 @@ archive/issue_comments_007485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7485",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,16 +120,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_007486.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-01-27T07:18:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7486",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_007487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7487",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_007488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7488",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_007489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7489",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_007492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7492",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_007493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7493",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_007494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7494",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -288,16 +288,16 @@ Resolution changed from fixed to
 archive/issue_comments_007495.json:
 ```json
 {
-    "body": "Attachment [1209.patch](tarball://root/attachments/some-uuid/ticket1209/1209.patch) by mhansen created at 2008-02-27 19:51:16",
+    "body": "Attachment [1209.patch](tarball://root/attachments/some-uuid/ticket1209/1209.patch) by @mwhansen created at 2008-02-27 19:51:16",
     "created_at": "2008-02-27T19:51:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7495",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1209.patch](tarball://root/attachments/some-uuid/ticket1209/1209.patch) by mhansen created at 2008-02-27 19:51:16
+Attachment [1209.patch](tarball://root/attachments/some-uuid/ticket1209/1209.patch) by @mwhansen created at 2008-02-27 19:51:16
 
 
 
@@ -311,7 +311,7 @@ archive/issue_comments_007496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7496",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -361,16 +361,16 @@ Michael
 archive/issue_comments_007498.json:
 ```json
 {
-    "body": "Attachment [1209.2.patch](tarball://root/attachments/some-uuid/ticket1209/1209.2.patch) by mhansen created at 2008-02-28 00:37:16",
+    "body": "Attachment [1209.2.patch](tarball://root/attachments/some-uuid/ticket1209/1209.2.patch) by @mwhansen created at 2008-02-28 00:37:16",
     "created_at": "2008-02-28T00:37:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7498",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1209.2.patch](tarball://root/attachments/some-uuid/ticket1209/1209.2.patch) by mhansen created at 2008-02-28 00:37:16
+Attachment [1209.2.patch](tarball://root/attachments/some-uuid/ticket1209/1209.2.patch) by @mwhansen created at 2008-02-28 00:37:16
 
 
 
@@ -384,7 +384,7 @@ archive/issue_comments_007499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7499",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -428,16 +428,16 @@ Michael
 archive/issue_comments_007501.json:
 ```json
 {
-    "body": "Attachment [1209.3.patch](tarball://root/attachments/some-uuid/ticket1209/1209.3.patch) by mhansen created at 2008-02-28 01:15:18",
+    "body": "Attachment [1209.3.patch](tarball://root/attachments/some-uuid/ticket1209/1209.3.patch) by @mwhansen created at 2008-02-28 01:15:18",
     "created_at": "2008-02-28T01:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7501",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1209.3.patch](tarball://root/attachments/some-uuid/ticket1209/1209.3.patch) by mhansen created at 2008-02-28 01:15:18
+Attachment [1209.3.patch](tarball://root/attachments/some-uuid/ticket1209/1209.3.patch) by @mwhansen created at 2008-02-28 01:15:18
 
 
 
@@ -451,7 +451,7 @@ archive/issue_comments_007502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1209#issuecomment-7502",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

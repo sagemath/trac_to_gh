@@ -3,7 +3,7 @@
 archive/issues_009439.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  kcrisman pbruin\n\nKeywords: hyperbolic geometry, Poincare disc, upper half plane\n\nImplementation of three conformal models for hyperbolic geometry (half plane, disc, hyperboloid) with actions of their isometry groups.\n\nThe actual file is almost complete for working with the hyperbolic plane as the following will plot a hyperbolic triangle\n\n```\nsage: HH.polygon(CC(0), CC(1), CC(2,2)).plot(face_color='red')\n```\n\nThere are more examples in the file.\n\n\nDepandancy:\n\n* #9076: plot arc of circles\n\nIssue created by migration from https://trac.sagemath.org/ticket/9439\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @kcrisman @pjbruin\n\nKeywords: hyperbolic geometry, Poincare disc, upper half plane\n\nImplementation of three conformal models for hyperbolic geometry (half plane, disc, hyperboloid) with actions of their isometry groups.\n\nThe actual file is almost complete for working with the hyperbolic plane as the following will plot a hyperbolic triangle\n\n```\nsage: HH.polygon(CC(0), CC(1), CC(2,2)).plot(face_color='red')\n```\n\nThere are more examples in the file.\n\n\nDepandancy:\n\n* #9076: plot arc of circles\n\nIssue created by migration from https://trac.sagemath.org/ticket/9439\n\n",
     "created_at": "2010-07-06T16:13:33Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_009439.json:
     "title": "hyperbolic geometry",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9439",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 Assignee: mhampton
 
-CC:  kcrisman pbruin
+CC:  @kcrisman @pjbruin
 
 Keywords: hyperbolic geometry, Poincare disc, upper half plane
 
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9439
 archive/issue_comments_090362.json:
 ```json
 {
-    "body": "Attachment [trac_9439-hyperbolic geometry.py](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic geometry.py) by vdelecroix created at 2010-07-06 16:16:12\n\ndraft of hyperbolic geometry space",
+    "body": "Attachment [trac_9439-hyperbolic geometry.py](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic geometry.py) by @videlec created at 2010-07-06 16:16:12\n\ndraft of hyperbolic geometry space",
     "created_at": "2010-07-06T16:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90362",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_9439-hyperbolic geometry.py](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic geometry.py) by vdelecroix created at 2010-07-06 16:16:12
+Attachment [trac_9439-hyperbolic geometry.py](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic geometry.py) by @videlec created at 2010-07-06 16:16:12
 
 draft of hyperbolic geometry space
 
@@ -69,16 +69,16 @@ draft of hyperbolic geometry space
 archive/issue_comments_090363.json:
 ```json
 {
-    "body": "Changing assignee from mhampton to vdelecroix.",
+    "body": "Changing assignee from mhampton to @videlec.",
     "created_at": "2010-07-06T16:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90363",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Changing assignee from mhampton to vdelecroix.
+Changing assignee from mhampton to @videlec.
 
 
 
@@ -87,16 +87,16 @@ Changing assignee from mhampton to vdelecroix.
 archive/issue_comments_090364.json:
 ```json
 {
-    "body": "Attachment [trac_9439-hyperbolic_geometry.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_geometry.patch) by vdelecroix created at 2010-07-20 17:58:01\n\nthis patch contains the previous one",
+    "body": "Attachment [trac_9439-hyperbolic_geometry.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_geometry.patch) by @videlec created at 2010-07-20 17:58:01\n\nthis patch contains the previous one",
     "created_at": "2010-07-20T17:58:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90364",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_9439-hyperbolic_geometry.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_geometry.patch) by vdelecroix created at 2010-07-20 17:58:01
+Attachment [trac_9439-hyperbolic_geometry.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_geometry.patch) by @videlec created at 2010-07-20 17:58:01
 
 this patch contains the previous one
 
@@ -136,7 +136,7 @@ archive/issue_comments_090366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90366",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_090378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90378",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_090379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90379",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_090380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90380",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_090381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90381",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_090382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90382",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_090383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90383",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_090384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90384",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -551,7 +551,7 @@ archive/issue_comments_090385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90385",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -569,7 +569,7 @@ archive/issue_comments_090386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90386",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -582,16 +582,16 @@ archive/issue_comments_090386.json:
 archive/issue_comments_090387.json:
 ```json
 {
-    "body": "Attachment [trac_9439-hyperbolic_geometry_review_fc.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_geometry_review_fc.patch) by chapoton created at 2013-06-10 19:38:46\n\n77% coverage",
+    "body": "Attachment [trac_9439-hyperbolic_geometry_review_fc.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_geometry_review_fc.patch) by @fchapoton created at 2013-06-10 19:38:46\n\n77% coverage",
     "created_at": "2013-06-10T19:38:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90387",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_9439-hyperbolic_geometry_review_fc.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_geometry_review_fc.patch) by chapoton created at 2013-06-10 19:38:46
+Attachment [trac_9439-hyperbolic_geometry_review_fc.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439-hyperbolic_geometry_review_fc.patch) by @fchapoton created at 2013-06-10 19:38:46
 
 77% coverage
 
@@ -602,16 +602,16 @@ Attachment [trac_9439-hyperbolic_geometry_review_fc.patch](tarball://root/attach
 archive/issue_comments_090388.json:
 ```json
 {
-    "body": "Attachment [hyperbolic_space.patch](tarball://root/attachments/some-uuid/ticket9439/hyperbolic_space.patch) by glaun created at 2013-06-26 06:42:53\n\nalternative implementation of hyperbolic space",
+    "body": "Attachment [hyperbolic_space.patch](tarball://root/attachments/some-uuid/ticket9439/hyperbolic_space.patch) by @greglaun created at 2013-06-26 06:42:53\n\nalternative implementation of hyperbolic space",
     "created_at": "2013-06-26T06:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90388",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
-Attachment [hyperbolic_space.patch](tarball://root/attachments/some-uuid/ticket9439/hyperbolic_space.patch) by glaun created at 2013-06-26 06:42:53
+Attachment [hyperbolic_space.patch](tarball://root/attachments/some-uuid/ticket9439/hyperbolic_space.patch) by @greglaun created at 2013-06-26 06:42:53
 
 alternative implementation of hyperbolic space
 
@@ -627,7 +627,7 @@ archive/issue_comments_090389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90389",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -640,16 +640,16 @@ demonstration of the hyperbolic geometry functionality
 archive/issue_comments_090390.json:
 ```json
 {
-    "body": "Attachment [hyp_demo.sage](tarball://root/attachments/some-uuid/ticket9439/hyp_demo.sage) by glaun created at 2013-06-26 06:53:56\n\nI atteched the long-overdue patch that I mentioned 9 months ago.  Sorry for the delay.  The patch has the following positive properties:\n* Hyperbolic point, geodesic, and isometry objects are implemented for each model.\n* Upper half plane, Poincare disk, Klein disk, and hyperboloid model all implemented.\n* Round-trip conversion among models works.  E.g. converting from the upper half plane to the hyperboloid and then back to the half plane gives the same point (up to numerical precision).  This was harder than might first be apparent since there are so many isomorphisms to choose from and they all have to play well together.\n* 100% test coverage, all tests pass\nAlso note the following negative things:\n* Points are not yet implemented as (point, isometry) pairs as suggested in Comment 3.\n* My handling of numerical computations could probably be significantly improved, as can the overall organization.  There may be features that are unnecessary or are vestigial from earlier versions.\n* Symbolic computations can take an incredibly long time.  I'm not sure if this is my fault (e.g. I should write functions to deal with this) or simply a drawback of allowing symbolic computations.\nI intend to comb through the previously attached patches and merge what I can.  I have also attached a filecalled hyp_demo.sage that demos the functionality of the implementation.",
+    "body": "Attachment [hyp_demo.sage](tarball://root/attachments/some-uuid/ticket9439/hyp_demo.sage) by @greglaun created at 2013-06-26 06:53:56\n\nI atteched the long-overdue patch that I mentioned 9 months ago.  Sorry for the delay.  The patch has the following positive properties:\n* Hyperbolic point, geodesic, and isometry objects are implemented for each model.\n* Upper half plane, Poincare disk, Klein disk, and hyperboloid model all implemented.\n* Round-trip conversion among models works.  E.g. converting from the upper half plane to the hyperboloid and then back to the half plane gives the same point (up to numerical precision).  This was harder than might first be apparent since there are so many isomorphisms to choose from and they all have to play well together.\n* 100% test coverage, all tests pass\nAlso note the following negative things:\n* Points are not yet implemented as (point, isometry) pairs as suggested in Comment 3.\n* My handling of numerical computations could probably be significantly improved, as can the overall organization.  There may be features that are unnecessary or are vestigial from earlier versions.\n* Symbolic computations can take an incredibly long time.  I'm not sure if this is my fault (e.g. I should write functions to deal with this) or simply a drawback of allowing symbolic computations.\nI intend to comb through the previously attached patches and merge what I can.  I have also attached a filecalled hyp_demo.sage that demos the functionality of the implementation.",
     "created_at": "2013-06-26T06:53:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90390",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
-Attachment [hyp_demo.sage](tarball://root/attachments/some-uuid/ticket9439/hyp_demo.sage) by glaun created at 2013-06-26 06:53:56
+Attachment [hyp_demo.sage](tarball://root/attachments/some-uuid/ticket9439/hyp_demo.sage) by @greglaun created at 2013-06-26 06:53:56
 
 I atteched the long-overdue patch that I mentioned 9 months ago.  Sorry for the delay.  The patch has the following positive properties:
 * Hyperbolic point, geodesic, and isometry objects are implemented for each model.
@@ -674,7 +674,7 @@ archive/issue_comments_090391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90391",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -718,7 +718,7 @@ archive/issue_comments_090392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90392",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -741,7 +741,7 @@ archive/issue_comments_090393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90393",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -810,7 +810,7 @@ archive/issue_comments_090394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90394",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -869,7 +869,7 @@ archive/issue_comments_090395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90395",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -895,7 +895,7 @@ archive/issue_comments_090396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90396",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -953,7 +953,7 @@ archive/issue_comments_090397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90397",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -971,7 +971,7 @@ archive/issue_comments_090398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90398",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -984,16 +984,16 @@ Updated hyperbolic space implementation.
 archive/issue_comments_090399.json:
 ```json
 {
-    "body": "Attachment [trac_9439_hyperbolic_space.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_hyperbolic_space.patch) by glaun created at 2013-09-10 03:13:27\n\nI just attached a new version.  This one allows things like UHP.point(0) or KM.point((1/2, 1/2)), and similarly UHP.geodesic([start, finish]), and UHP.isometry(some_matrix).  \n\nThe class structure is somewhat complicated, but it's designed to make it easy to implement new models of 2D and 3D geometry.  Here's how it works:\n* The hyperbolic_model module contains data about each individual model, such as its name, the name of its isometry group, and dictionaries of maps to convert points and isometries to other models and so on.\n* the hyperbolic_point, hyperbolic_bdry_point, hyperbolic_geodesic, and hyperbolic_isometry modules all do what they sound like.  The methods in these modules are meant to be as general and abstract as possible.  Ideally they should barely have to be touched to implement new models of hyperbolic space.\n* hyperbolic_methods implements any methods that involve doing computations with actual numbers.  These methods have their own module because they are more likely to change if it turns out some computation is not efficient.  Also any model of hyperbolic geometry can choose to do computations in another model and convert the results.  In the current patch, every model does its computations in the upper half plane and then converts back to the desired model.  \n* hyperbolic_factory and model_factory are just factory patterns that make the whole abstract structure work.\n* finally, hyperbolic_interface is the module that contains the objects UHP, HM, KM, and PD that allow operations like UHP.point(1 + I).  These are just more pleasant user interfaces to methods in other classes.\n\nTo implement another 2D model, one mainly has to put the model information in hyperbolic_model and write down maps to all of the other models.  To implement a 3D model, one also has to implement hyperbolic_methods for at least one model (say the upper half space model).  In both cases there is a tiny amount of book keeping that must also be done in updating the factory and other modules with one or two lines of code.",
+    "body": "Attachment [trac_9439_hyperbolic_space.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_hyperbolic_space.patch) by @greglaun created at 2013-09-10 03:13:27\n\nI just attached a new version.  This one allows things like UHP.point(0) or KM.point((1/2, 1/2)), and similarly UHP.geodesic([start, finish]), and UHP.isometry(some_matrix).  \n\nThe class structure is somewhat complicated, but it's designed to make it easy to implement new models of 2D and 3D geometry.  Here's how it works:\n* The hyperbolic_model module contains data about each individual model, such as its name, the name of its isometry group, and dictionaries of maps to convert points and isometries to other models and so on.\n* the hyperbolic_point, hyperbolic_bdry_point, hyperbolic_geodesic, and hyperbolic_isometry modules all do what they sound like.  The methods in these modules are meant to be as general and abstract as possible.  Ideally they should barely have to be touched to implement new models of hyperbolic space.\n* hyperbolic_methods implements any methods that involve doing computations with actual numbers.  These methods have their own module because they are more likely to change if it turns out some computation is not efficient.  Also any model of hyperbolic geometry can choose to do computations in another model and convert the results.  In the current patch, every model does its computations in the upper half plane and then converts back to the desired model.  \n* hyperbolic_factory and model_factory are just factory patterns that make the whole abstract structure work.\n* finally, hyperbolic_interface is the module that contains the objects UHP, HM, KM, and PD that allow operations like UHP.point(1 + I).  These are just more pleasant user interfaces to methods in other classes.\n\nTo implement another 2D model, one mainly has to put the model information in hyperbolic_model and write down maps to all of the other models.  To implement a 3D model, one also has to implement hyperbolic_methods for at least one model (say the upper half space model).  In both cases there is a tiny amount of book keeping that must also be done in updating the factory and other modules with one or two lines of code.",
     "created_at": "2013-09-10T03:13:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90399",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
-Attachment [trac_9439_hyperbolic_space.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_hyperbolic_space.patch) by glaun created at 2013-09-10 03:13:27
+Attachment [trac_9439_hyperbolic_space.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_hyperbolic_space.patch) by @greglaun created at 2013-09-10 03:13:27
 
 I just attached a new version.  This one allows things like UHP.point(0) or KM.point((1/2, 1/2)), and similarly UHP.geodesic([start, finish]), and UHP.isometry(some_matrix).  
 
@@ -1018,7 +1018,7 @@ archive/issue_comments_090400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90400",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -1031,16 +1031,16 @@ Updated demo of hyperbolic space.
 archive/issue_comments_090401.json:
 ```json
 {
-    "body": "Attachment [hyp_demo.2.sage](tarball://root/attachments/some-uuid/ticket9439/hyp_demo.2.sage) by glaun created at 2013-09-19 13:23:07\n\nI had occasion yesterday to use my most recent patch for actual computations that involve a lot of model changing, and I realized it's shamefully buggy/nonfunctioning.  I fixed a few of the obvious bugs but I'll add more tests before I repost to make sure that I haven't introduced other bugs.",
+    "body": "Attachment [hyp_demo.2.sage](tarball://root/attachments/some-uuid/ticket9439/hyp_demo.2.sage) by @greglaun created at 2013-09-19 13:23:07\n\nI had occasion yesterday to use my most recent patch for actual computations that involve a lot of model changing, and I realized it's shamefully buggy/nonfunctioning.  I fixed a few of the obvious bugs but I'll add more tests before I repost to make sure that I haven't introduced other bugs.",
     "created_at": "2013-09-19T13:23:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90401",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
-Attachment [hyp_demo.2.sage](tarball://root/attachments/some-uuid/ticket9439/hyp_demo.2.sage) by glaun created at 2013-09-19 13:23:07
+Attachment [hyp_demo.2.sage](tarball://root/attachments/some-uuid/ticket9439/hyp_demo.2.sage) by @greglaun created at 2013-09-19 13:23:07
 
 I had occasion yesterday to use my most recent patch for actual computations that involve a lot of model changing, and I realized it's shamefully buggy/nonfunctioning.  I fixed a few of the obvious bugs but I'll add more tests before I repost to make sure that I haven't introduced other bugs.
 
@@ -1056,7 +1056,7 @@ archive/issue_comments_090402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90402",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -1069,16 +1069,16 @@ Bug fixes and some new features.
 archive/issue_comments_090403.json:
 ```json
 {
-    "body": "Attachment [trac_9439_10_03_2013.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_10_03_2013.patch) by glaun created at 2013-11-21 00:50:34",
+    "body": "Attachment [trac_9439_10_03_2013.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_10_03_2013.patch) by @greglaun created at 2013-11-21 00:50:34",
     "created_at": "2013-11-21T00:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90403",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
-Attachment [trac_9439_10_03_2013.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_10_03_2013.patch) by glaun created at 2013-11-21 00:50:34
+Attachment [trac_9439_10_03_2013.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_10_03_2013.patch) by @greglaun created at 2013-11-21 00:50:34
 
 
 
@@ -1092,7 +1092,7 @@ archive/issue_comments_090404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90404",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -1110,7 +1110,7 @@ archive/issue_comments_090405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90405",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -1123,16 +1123,16 @@ This patch contains the previous ones as well as some changes to docstrings.
 archive/issue_comments_090406.json:
 ```json
 {
-    "body": "Attachment [trac_9439_11_20_2013.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_11_20_2013.patch) by glaun created at 2013-11-21 01:17:42",
+    "body": "Attachment [trac_9439_11_20_2013.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_11_20_2013.patch) by @greglaun created at 2013-11-21 01:17:42",
     "created_at": "2013-11-21T01:17:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90406",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
-Attachment [trac_9439_11_20_2013.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_11_20_2013.patch) by glaun created at 2013-11-21 01:17:42
+Attachment [trac_9439_11_20_2013.patch](tarball://root/attachments/some-uuid/ticket9439/trac_9439_11_20_2013.patch) by @greglaun created at 2013-11-21 01:17:42
 
 
 
@@ -1146,7 +1146,7 @@ archive/issue_comments_090407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90407",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -1164,7 +1164,7 @@ archive/issue_comments_090408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90408",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -1190,7 +1190,7 @@ archive/issue_comments_090409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90409",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -1262,7 +1262,7 @@ archive/issue_comments_090413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90413",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -1280,7 +1280,7 @@ archive/issue_comments_090414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90414",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -1334,7 +1334,7 @@ archive/issue_comments_090415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90415",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1354,7 +1354,7 @@ archive/issue_comments_090416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90416",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1390,7 +1390,7 @@ archive/issue_comments_090418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90418",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1414,7 +1414,7 @@ archive/issue_comments_090419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90419",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -1507,7 +1507,7 @@ archive/issue_comments_090423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90423",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1554,7 +1554,7 @@ archive/issue_comments_090424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90424",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1572,7 +1572,7 @@ archive/issue_comments_090425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90425",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -1594,7 +1594,7 @@ archive/issue_comments_090426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90426",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1634,7 +1634,7 @@ archive/issue_comments_090427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90427",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -1658,7 +1658,7 @@ archive/issue_comments_090428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90428",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1696,7 +1696,7 @@ archive/issue_comments_090430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90430",
-    "user": "glaun"
+    "user": "@greglaun"
 }
 ```
 
@@ -1720,7 +1720,7 @@ archive/issue_comments_090431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90431",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1738,7 +1738,7 @@ archive/issue_comments_090432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90432",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1760,7 +1760,7 @@ archive/issue_comments_090433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90433",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -1816,7 +1816,7 @@ archive/issue_comments_090436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90436",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1870,7 +1870,7 @@ archive/issue_comments_090439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90439",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1894,7 +1894,7 @@ archive/issue_comments_090440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90440",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1914,7 +1914,7 @@ archive/issue_comments_090441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90441",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1932,7 +1932,7 @@ archive/issue_comments_090442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90442",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1950,7 +1950,7 @@ archive/issue_comments_090443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90443",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -1968,7 +1968,7 @@ archive/issue_comments_090444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90444",
-    "user": "jj"
+    "user": "@jjermann"
 }
 ```
 
@@ -1988,7 +1988,7 @@ archive/issue_comments_090445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90445",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -2006,7 +2006,7 @@ archive/issue_comments_090446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90446",
-    "user": "jj"
+    "user": "@jjermann"
 }
 ```
 
@@ -2038,7 +2038,7 @@ archive/issue_comments_090447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9439#issuecomment-90447",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 

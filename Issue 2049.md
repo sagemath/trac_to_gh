@@ -3,7 +3,7 @@
 archive/issues_002049.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\n> On a related issue: is there a command corresponding to Mathematica's\n> MatrixExp? For example,\n> \n> sage: var('t')\n> sage: M=matrix(SR,2,[0,t,-t,0])\n> sage: M.matrix_exp()\n> \n> [cos(t), sin(t)]\n> [-sin(t), cos(t)]\n> \n\nThere is no such command in Sage, really.  Maxima\ndoes have such a command, so it would be\npossible to implement something easily:\n\nsage: t = var('t')\nsage: M = matrix(SR,2,[0,t,-t,0])\nsage: mm = maxima(M)\nsage: mm.matrixexp()\nmatrix([%e^-(%i*t)*(%e^(2*%i*t)+1)/2,-%e^-(%i*t)*(%i*%e^(2*%i*t)-%i)/2],[%e^-(%i*t)*(%i*%e^(2*%i*t)-%i)/2,%e^-(%i*t)*(%e^(2*%i*t)+1)/2])\n\nSo there will be an M.exp() function in some future version\nof Sage. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2049\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\n> On a related issue: is there a command corresponding to Mathematica's\n> MatrixExp? For example,\n> \n> sage: var('t')\n> sage: M=matrix(SR,2,[0,t,-t,0])\n> sage: M.matrix_exp()\n> \n> [cos(t), sin(t)]\n> [-sin(t), cos(t)]\n> \n\nThere is no such command in Sage, really.  Maxima\ndoes have such a command, so it would be\npossible to implement something easily:\n\nsage: t = var('t')\nsage: M = matrix(SR,2,[0,t,-t,0])\nsage: mm = maxima(M)\nsage: mm.matrixexp()\nmatrix([%e^-(%i*t)*(%e^(2*%i*t)+1)/2,-%e^-(%i*t)*(%i*%e^(2*%i*t)-%i)/2],[%e^-(%i*t)*(%i*%e^(2*%i*t)-%i)/2,%e^-(%i*t)*(%e^(2*%i*t)+1)/2])\n\nSo there will be an M.exp() function in some future version\nof Sage. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2049\n\n",
     "created_at": "2008-02-05T04:55:07Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002049.json:
     "title": "symbolic matrix exp (easy to implement)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2049",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -64,7 +64,7 @@ archive/issue_comments_013270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2049#issuecomment-13270",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,16 +77,16 @@ Changing status from new to assigned.
 archive/issue_comments_013271.json:
 ```json
 {
-    "body": "Attachment [trac-2049-matrix_symbolic_dense_exp.patch](tarball://root/attachments/some-uuid/ticket2049/trac-2049-matrix_symbolic_dense_exp.patch) by AlexGhitza created at 2008-02-23 01:23:26\n\nThis patch has already been merged (checked in 2.10.2.rc0).",
+    "body": "Attachment [trac-2049-matrix_symbolic_dense_exp.patch](tarball://root/attachments/some-uuid/ticket2049/trac-2049-matrix_symbolic_dense_exp.patch) by @aghitza created at 2008-02-23 01:23:26\n\nThis patch has already been merged (checked in 2.10.2.rc0).",
     "created_at": "2008-02-23T01:23:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2049#issuecomment-13271",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac-2049-matrix_symbolic_dense_exp.patch](tarball://root/attachments/some-uuid/ticket2049/trac-2049-matrix_symbolic_dense_exp.patch) by AlexGhitza created at 2008-02-23 01:23:26
+Attachment [trac-2049-matrix_symbolic_dense_exp.patch](tarball://root/attachments/some-uuid/ticket2049/trac-2049-matrix_symbolic_dense_exp.patch) by @aghitza created at 2008-02-23 01:23:26
 
 This patch has already been merged (checked in 2.10.2.rc0).
 
@@ -102,7 +102,7 @@ archive/issue_comments_013272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2049#issuecomment-13272",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_013274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2049#issuecomment-13274",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

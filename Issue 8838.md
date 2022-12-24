@@ -3,7 +3,7 @@
 archive/issues_008838.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  kcrisman ryan\n\nA convention we have is that graphics commands do the right thing depending on if 2d or 3d input is passed.  We should make arrow() take 3-tuples to produce a 3d plot (by calling arrow3d).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8838\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman ryan\n\nA convention we have is that graphics commands do the right thing depending on if 2d or 3d input is passed.  We should make arrow() take 3-tuples to produce a 3d plot (by calling arrow3d).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8838\n\n",
     "created_at": "2010-05-01T19:25:58Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_008838.json:
     "title": "make \"arrow()\" take 3d vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8838",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  kcrisman ryan
+CC:  @kcrisman ryan
 
 A convention we have is that graphics commands do the right thing depending on if 2d or 3d input is passed.  We should make arrow() take 3-tuples to produce a 3d plot (by calling arrow3d).
 
@@ -39,7 +39,7 @@ archive/issue_comments_081255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8838#issuecomment-81255",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_081256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8838#issuecomment-81256",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_081260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8838#issuecomment-81260",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_081261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8838#issuecomment-81261",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_081265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8838#issuecomment-81265",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_081266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8838#issuecomment-81266",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_081267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8838#issuecomment-81267",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_081268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8838#issuecomment-81268",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

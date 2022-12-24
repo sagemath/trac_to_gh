@@ -3,7 +3,7 @@
 archive/issues_006362.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  malb\n\nsingular is last package that don't compile with latest GCC 4.4 for me, it's because of use of strchr function, see GCC 4.4 [porting guide](http://gcc.gnu.org/gcc-4.4/porting_to.html) part \"Strict null-terminated sequence utilities\" - there is used\n\nchar* strchr(const char*, int)\n\nthat silently cast-away const, simple explicit cast to char* removes the error during compilation for me so it's trivial to fix. The strchr function in this form is used twice. \n\nI made spkg that's fixed, wasn't creating patches/spkg for Sage for some time so I ask for strict review even if it's trivial fix :) I tried to remember about everything with spkg creation but something could still slip. There is spkg: [http://giniu.ravenlord.ws/singular-3-1-0-2-20090620.spkg](http://giniu.ravenlord.ws/singular-3-1-0-2-20090620.spkg).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6362\n\n",
+    "body": "Assignee: tbd\n\nCC:  @malb\n\nsingular is last package that don't compile with latest GCC 4.4 for me, it's because of use of strchr function, see GCC 4.4 [porting guide](http://gcc.gnu.org/gcc-4.4/porting_to.html) part \"Strict null-terminated sequence utilities\" - there is used\n\nchar* strchr(const char*, int)\n\nthat silently cast-away const, simple explicit cast to char* removes the error during compilation for me so it's trivial to fix. The strchr function in this form is used twice. \n\nI made spkg that's fixed, wasn't creating patches/spkg for Sage for some time so I ask for strict review even if it's trivial fix :) I tried to remember about everything with spkg creation but something could still slip. There is spkg: [http://giniu.ravenlord.ws/singular-3-1-0-2-20090620.spkg](http://giniu.ravenlord.ws/singular-3-1-0-2-20090620.spkg).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6362\n\n",
     "created_at": "2009-06-20T08:22:16Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_006362.json:
 ```
 Assignee: tbd
 
-CC:  malb
+CC:  @malb
 
 singular is last package that don't compile with latest GCC 4.4 for me, it's because of use of strchr function, see GCC 4.4 [porting guide](http://gcc.gnu.org/gcc-4.4/porting_to.html) part "Strict null-terminated sequence utilities" - there is used
 
@@ -45,7 +45,7 @@ archive/issue_comments_050877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50877",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_050878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50878",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_050879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50879",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_050881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50881",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_050883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50883",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_050886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50886",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_050888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50888",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_050891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50891",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_050892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50892",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_050895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50895",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_050897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50897",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -545,7 +545,7 @@ archive/issue_comments_050901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50901",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_050903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50903",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_050904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6362#issuecomment-50904",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

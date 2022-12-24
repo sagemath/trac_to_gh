@@ -3,7 +3,7 @@
 archive/issues_008118.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  cremona was robertwb roed\n\nKeywords: elliptic curve, galois representation, modular parametrization\n\nThe file ell_rational_field.py is huge and should be split up further. This is especially important for the documentation, currently it is not very user-friendy to find a function in the reference.\n\nI propose a first change.\n\n* The modular paratrization class goes into a separate file. (maybe the modular_degree should mover there too ?)\n\n* The functions concerning the Galois representation are moved to a separate field. I changed the functions like `is_surjective` and `is_irreducible` to deprecated. I believe for instance the latter clashes with the irreducibility of the scheme E.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8118\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @williamstein @robertwb @roed314\n\nKeywords: elliptic curve, galois representation, modular parametrization\n\nThe file ell_rational_field.py is huge and should be split up further. This is especially important for the documentation, currently it is not very user-friendy to find a function in the reference.\n\nI propose a first change.\n\n* The modular paratrization class goes into a separate file. (maybe the modular_degree should mover there too ?)\n\n* The functions concerning the Galois representation are moved to a separate field. I changed the functions like `is_surjective` and `is_irreducible` to deprecated. I believe for instance the latter clashes with the irreducibility of the scheme E.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8118\n\n",
     "created_at": "2010-01-29T15:05:17Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008118.json:
     "title": "split off Galois representations and modular parametrization from ell_rational_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8118",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  cremona was robertwb roed
+CC:  @JohnCremona @williamstein @robertwb @roed314
 
 Keywords: elliptic curve, galois representation, modular parametrization
 
@@ -47,7 +47,7 @@ archive/issue_comments_071305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71305",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -70,16 +70,16 @@ I have first to test it myself, before I set it to "needs review".
 archive/issue_comments_071306.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to cremona.",
+    "body": "Changing assignee from @aghitza to @JohnCremona.",
     "created_at": "2010-01-29T15:11:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71306",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Changing assignee from AlexGhitza to cremona.
+Changing assignee from @aghitza to @JohnCremona.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_071307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71307",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_071308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71308",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_071309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71309",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_071310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71310",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_071311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71311",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -189,16 +189,16 @@ updated.
 archive/issue_comments_071312.json:
 ```json
 {
-    "body": "Attachment [trac_8118.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118.patch) by cremona created at 2010-02-02 09:54:27\n\nI applied the patch to 4.3.2.alpha1:  OK with some fuzz on hunk #7.\n\nTests in sage/schemes/elliptic_curves:  all tests (includng long) pass.\n\nsage -docbuild reference html worked fine for me (it warned about \n\n```\n/home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/geometry/polytope.rst:: WARNING: document isn't included in any toctree\n/home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/misc/attach.rst:: WARNING: document isn't included in any toctree\n```\n\nbut that's not from this patch!)\n\nI have not actually looked at the html docs for the new files yet, but will do so.  Meanwhile: positive review.",
+    "body": "Attachment [trac_8118.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118.patch) by @JohnCremona created at 2010-02-02 09:54:27\n\nI applied the patch to 4.3.2.alpha1:  OK with some fuzz on hunk #7.\n\nTests in sage/schemes/elliptic_curves:  all tests (includng long) pass.\n\nsage -docbuild reference html worked fine for me (it warned about \n\n```\n/home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/geometry/polytope.rst:: WARNING: document isn't included in any toctree\n/home/jec/sage-4.3.2.alpha1/devel/sage/doc/en/reference/sage/misc/attach.rst:: WARNING: document isn't included in any toctree\n```\n\nbut that's not from this patch!)\n\nI have not actually looked at the html docs for the new files yet, but will do so.  Meanwhile: positive review.",
     "created_at": "2010-02-02T09:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71312",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8118.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118.patch) by cremona created at 2010-02-02 09:54:27
+Attachment [trac_8118.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118.patch) by @JohnCremona created at 2010-02-02 09:54:27
 
 I applied the patch to 4.3.2.alpha1:  OK with some fuzz on hunk #7.
 
@@ -227,7 +227,7 @@ archive/issue_comments_071313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71313",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_071314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71314",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -343,16 +343,16 @@ Perhaps the attachment needs a rebase.
 archive/issue_comments_071317.json:
 ```json
 {
-    "body": "Attachment [trac_8118_rebased.2.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118_rebased.2.patch) by wuthrich created at 2010-02-13 18:57:31\n\nexported against 4.3.3.alpha0",
+    "body": "Attachment [trac_8118_rebased.2.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118_rebased.2.patch) by @categorie created at 2010-02-13 18:57:31\n\nexported against 4.3.3.alpha0",
     "created_at": "2010-02-13T18:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71317",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_8118_rebased.2.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118_rebased.2.patch) by wuthrich created at 2010-02-13 18:57:31
+Attachment [trac_8118_rebased.2.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118_rebased.2.patch) by @categorie created at 2010-02-13 18:57:31
 
 exported against 4.3.3.alpha0
 
@@ -368,7 +368,7 @@ archive/issue_comments_071318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71318",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_071319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71319",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_071320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71320",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_071321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71321",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_071322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71322",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -453,16 +453,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_071323.json:
 ```json
 {
-    "body": "Attachment [trac_8118_rebased.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118_rebased.patch) by wuthrich created at 2010-02-14 17:45:52\n\nexported against 4.3.3.alpha0",
+    "body": "Attachment [trac_8118_rebased.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118_rebased.patch) by @categorie created at 2010-02-14 17:45:52\n\nexported against 4.3.3.alpha0",
     "created_at": "2010-02-14T17:45:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71323",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_8118_rebased.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118_rebased.patch) by wuthrich created at 2010-02-14 17:45:52
+Attachment [trac_8118_rebased.patch](tarball://root/attachments/some-uuid/ticket8118/trac_8118_rebased.patch) by @categorie created at 2010-02-14 17:45:52
 
 exported against 4.3.3.alpha0
 
@@ -478,7 +478,7 @@ archive/issue_comments_071324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71324",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_071325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8118",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8118#issuecomment-71325",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006828.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nI needed to create one of those, and thought it may be useful in sage... Several lines for a new Graph generator ;-)\n\nI used the position dictionary from CompleteBipartiteGraph, so we should be out of trouble on this point ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6828\n\n",
+    "body": "Assignee: @rlmill\n\nI needed to create one of those, and thought it may be useful in sage... Several lines for a new Graph generator ;-)\n\nI used the position dictionary from CompleteBipartiteGraph, so we should be out of trouble on this point ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6828\n\n",
     "created_at": "2009-08-26T13:36:17Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_006828.json:
     "title": "[with patch, needs review] Random Bipartite Graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6828",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 I needed to create one of those, and thought it may be useful in sage... Several lines for a new Graph generator ;-)
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6828
 archive/issue_comments_056315.json:
 ```json
 {
-    "body": "Attachment [random_bipartite.patch](tarball://root/attachments/some-uuid/ticket6828/random_bipartite.patch) by ncohen created at 2009-08-26 13:36:29",
+    "body": "Attachment [random_bipartite.patch](tarball://root/attachments/some-uuid/ticket6828/random_bipartite.patch) by @nathanncohen created at 2009-08-26 13:36:29",
     "created_at": "2009-08-26T13:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56315",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [random_bipartite.patch](tarball://root/attachments/some-uuid/ticket6828/random_bipartite.patch) by ncohen created at 2009-08-26 13:36:29
+Attachment [random_bipartite.patch](tarball://root/attachments/some-uuid/ticket6828/random_bipartite.patch) by @nathanncohen created at 2009-08-26 13:36:29
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_056316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56316",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_056317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56317",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_056318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56318",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_056319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56319",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -169,16 +169,16 @@ Nathann
 archive/issue_comments_056320.json:
 ```json
 {
-    "body": "Attachment [trac_6828.patch](tarball://root/attachments/some-uuid/ticket6828/trac_6828.patch) by ncohen created at 2009-09-29 09:51:26",
+    "body": "Attachment [trac_6828.patch](tarball://root/attachments/some-uuid/ticket6828/trac_6828.patch) by @nathanncohen created at 2009-09-29 09:51:26",
     "created_at": "2009-09-29T09:51:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56320",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_6828.patch](tarball://root/attachments/some-uuid/ticket6828/trac_6828.patch) by ncohen created at 2009-09-29 09:51:26
+Attachment [trac_6828.patch](tarball://root/attachments/some-uuid/ticket6828/trac_6828.patch) by @nathanncohen created at 2009-09-29 09:51:26
 
 
 
@@ -192,7 +192,7 @@ archive/issue_comments_056321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56321",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_056322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56322",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_056323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56323",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

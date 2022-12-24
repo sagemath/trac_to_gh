@@ -3,7 +3,7 @@
 archive/issues_008451.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  was robertwb rlm\n\nKeywords: elliptic curves, galois representation, is_surjective\n\nIn #8118, I have moved Galois representation for elliptic curves into a new file and I have modified the output of `is_surjective`. The function does no longer give a reason.\n\nI wish now to reintroduce this as a new function `image_type()` which will give back a string describing the image as a subgroup in GL_2(F_p).\n\nIn the middle of doing this, I noted the severe bug in `is_surjective`. The code does not check for exceptional images A_4, S_4, and A_5 in PGL_2(F_p). Typically currently, sage claims that the mod-5 representation of 324b1 is surjective.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8451\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @williamstein @robertwb @rlmill\n\nKeywords: elliptic curves, galois representation, is_surjective\n\nIn #8118, I have moved Galois representation for elliptic curves into a new file and I have modified the output of `is_surjective`. The function does no longer give a reason.\n\nI wish now to reintroduce this as a new function `image_type()` which will give back a string describing the image as a subgroup in GL_2(F_p).\n\nIn the middle of doing this, I noted the severe bug in `is_surjective`. The code does not check for exceptional images A_4, S_4, and A_5 in PGL_2(F_p). Typically currently, sage claims that the mod-5 representation of 324b1 is surjective.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8451\n\n",
     "created_at": "2010-03-05T23:57:00Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_008451.json:
     "title": "improve galois representation for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8451",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  was robertwb rlm
+CC:  @williamstein @robertwb @rlmill
 
 Keywords: elliptic curves, galois representation, is_surjective
 
@@ -45,7 +45,7 @@ archive/issue_comments_076024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76024",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_076025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76025",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_076026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76026",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -94,16 +94,16 @@ Changing status from new to needs_review.
 archive/issue_comments_076027.json:
 ```json
 {
-    "body": "Attachment [trac_8451.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451.patch) by wuthrich created at 2010-03-11 19:00:13\n\nThe patch should fix the bug and add plenty of trivial functionality to galois representations attached to elliptic curves. It should also give a new function `image_type` that tries to determine the image. Currently this gives back a string rather than a group. Also, it does not determine it completely in some cases, like when there is an isogeny is only says that the image is contained in the Borel, but does not try to determine if it is the full Borel or not. If someone wants this, we can try to add it later.",
+    "body": "Attachment [trac_8451.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451.patch) by @categorie created at 2010-03-11 19:00:13\n\nThe patch should fix the bug and add plenty of trivial functionality to galois representations attached to elliptic curves. It should also give a new function `image_type` that tries to determine the image. Currently this gives back a string rather than a group. Also, it does not determine it completely in some cases, like when there is an isogeny is only says that the image is contained in the Borel, but does not try to determine if it is the full Borel or not. If someone wants this, we can try to add it later.",
     "created_at": "2010-03-11T19:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76027",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_8451.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451.patch) by wuthrich created at 2010-03-11 19:00:13
+Attachment [trac_8451.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451.patch) by @categorie created at 2010-03-11 19:00:13
 
 The patch should fix the bug and add plenty of trivial functionality to galois representations attached to elliptic curves. It should also give a new function `image_type` that tries to determine the image. Currently this gives back a string rather than a group. Also, it does not determine it completely in some cases, like when there is an isogeny is only says that the image is contained in the Borel, but does not try to determine if it is the full Borel or not. If someone wants this, we can try to add it later.
 
@@ -119,7 +119,7 @@ archive/issue_comments_076028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76028",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_076029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76029",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_076030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76030",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_076031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76031",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_076032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76032",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -282,16 +282,16 @@ My response, is that yes, I'm sure we can set you up with everything you want ab
 archive/issue_comments_076033.json:
 ```json
 {
-    "body": "Attachment [trac_8451_2.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_2.patch) by wuthrich created at 2010-04-13 14:37:50\n\nscond patch to be applied after the first",
+    "body": "Attachment [trac_8451_2.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_2.patch) by @categorie created at 2010-04-13 14:37:50\n\nscond patch to be applied after the first",
     "created_at": "2010-04-13T14:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76033",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_8451_2.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_2.patch) by wuthrich created at 2010-04-13 14:37:50
+Attachment [trac_8451_2.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_2.patch) by @categorie created at 2010-04-13 14:37:50
 
 scond patch to be applied after the first
 
@@ -307,7 +307,7 @@ archive/issue_comments_076034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76034",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -370,16 +370,16 @@ and then everything seems fine.  This is trac_8541_3.patch.
 archive/issue_comments_076035.json:
 ```json
 {
-    "body": "Attachment [trac_8451_3.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_3.patch) by was created at 2010-04-20 22:05:58",
+    "body": "Attachment [trac_8451_3.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_3.patch) by @williamstein created at 2010-04-20 22:05:58",
     "created_at": "2010-04-20T22:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76035",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8451_3.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_3.patch) by was created at 2010-04-20 22:05:58
+Attachment [trac_8451_3.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_3.patch) by @williamstein created at 2010-04-20 22:05:58
 
 
 
@@ -393,7 +393,7 @@ archive/issue_comments_076036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76036",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -460,7 +460,7 @@ archive/issue_comments_076037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76037",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_076038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76038",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_076039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76039",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -546,16 +546,16 @@ I juts came back from holidays and I have many other things to do, but I will so
 archive/issue_comments_076040.json:
 ```json
 {
-    "body": "Attachment [trac_8451_new.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_new.patch) by wuthrich created at 2010-09-02 19:36:03\n\nexported against 4.5.2; replaces all previous patches",
+    "body": "Attachment [trac_8451_new.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_new.patch) by @categorie created at 2010-09-02 19:36:03\n\nexported against 4.5.2; replaces all previous patches",
     "created_at": "2010-09-02T19:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76040",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_8451_new.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_new.patch) by wuthrich created at 2010-09-02 19:36:03
+Attachment [trac_8451_new.patch](tarball://root/attachments/some-uuid/ticket8451/trac_8451_new.patch) by @categorie created at 2010-09-02 19:36:03
 
 exported against 4.5.2; replaces all previous patches
 
@@ -571,7 +571,7 @@ archive/issue_comments_076041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76041",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -589,7 +589,7 @@ archive/issue_comments_076042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76042",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -614,7 +614,7 @@ archive/issue_comments_076043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76043",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -632,7 +632,7 @@ archive/issue_comments_076044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76044",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -656,7 +656,7 @@ archive/issue_comments_076045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8451#issuecomment-76045",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

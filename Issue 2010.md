@@ -14,7 +14,7 @@ archive/issues_002010.json:
     "title": "crap -- libpng contains lots and lots of weird (OS X?) temp or meta files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2010",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

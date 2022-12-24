@@ -14,7 +14,7 @@ archive/issues_003156.json:
     "title": "notebook -- implement way to delete a published worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3156",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_021899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3156#issuecomment-21899",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_021901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3156#issuecomment-21901",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_021902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3156",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3156#issuecomment-21902",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

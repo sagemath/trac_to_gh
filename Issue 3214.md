@@ -3,7 +3,7 @@
 archive/issues_003214.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  robertwb craigcitro cremona burcin\n\nI got very confused by the first line since I used to use gcd for clearing denominators:\n\n\n```\nsage: gcd((1, 2/3, 1/6, 1/6))\n1\nsage: gcd((2/3, 1/6, 1/6))\n1/6\nsage: gcd((2/3, 1, 1/6, 1/6))\nTraceback (most recent call last):\n...\nTypeError: Argument 'other' has incorrect type (expected sage.rings.rational.Rational, got sage.rings.integer.Integer)\nsage: gcd((2/3, 2/2, 1/6, 1/6))\n1/6\n```\n\n\nI'd expect all calls above to return 1/6.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3214\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb @craigcitro @JohnCremona @burcin\n\nI got very confused by the first line since I used to use gcd for clearing denominators:\n\n\n```\nsage: gcd((1, 2/3, 1/6, 1/6))\n1\nsage: gcd((2/3, 1/6, 1/6))\n1/6\nsage: gcd((2/3, 1, 1/6, 1/6))\nTraceback (most recent call last):\n...\nTypeError: Argument 'other' has incorrect type (expected sage.rings.rational.Rational, got sage.rings.integer.Integer)\nsage: gcd((2/3, 2/2, 1/6, 1/6))\n1/6\n```\n\n\nI'd expect all calls above to return 1/6.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3214\n\n",
     "created_at": "2008-05-16T02:25:48Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_003214.json:
     "title": "gcd needs improved coersion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3214",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: somebody
 
-CC:  robertwb craigcitro cremona burcin
+CC:  @robertwb @craigcitro @JohnCremona @burcin
 
 I got very confused by the first line since I used to use gcd for clearing denominators:
 
@@ -204,7 +204,7 @@ archive/issue_comments_022249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22249",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_022252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22252",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_022253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22253",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_022254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22254",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_022255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22255",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -339,16 +339,16 @@ Please post to sage-devel, hopefully it will shed some light on what should happ
 archive/issue_comments_022256.json:
 ```json
 {
-    "body": "Attachment [trac_3214.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214.patch) by AlexGhitza created at 2009-01-04 18:28:23\n\nOK, following the discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/35abc577b5ba78e7/170c0da22b9a36b9#170c0da22b9a36b9 I am implementing a trivial gcd() method for rational numbers and renaming the current rational gcd() to content().\nThe (newly) attached patch also touches a few other files in the sage library that are affected by this.\n\nThere is one doctest failure that I don't know how to deal with, in the symbolic gcd of ginac; sage -t symbolic/expression.pyx exposes this.",
+    "body": "Attachment [trac_3214.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214.patch) by @aghitza created at 2009-01-04 18:28:23\n\nOK, following the discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/35abc577b5ba78e7/170c0da22b9a36b9#170c0da22b9a36b9 I am implementing a trivial gcd() method for rational numbers and renaming the current rational gcd() to content().\nThe (newly) attached patch also touches a few other files in the sage library that are affected by this.\n\nThere is one doctest failure that I don't know how to deal with, in the symbolic gcd of ginac; sage -t symbolic/expression.pyx exposes this.",
     "created_at": "2009-01-04T18:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22256",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_3214.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214.patch) by AlexGhitza created at 2009-01-04 18:28:23
+Attachment [trac_3214.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214.patch) by @aghitza created at 2009-01-04 18:28:23
 
 OK, following the discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/35abc577b5ba78e7/170c0da22b9a36b9#170c0da22b9a36b9 I am implementing a trivial gcd() method for rational numbers and renaming the current rational gcd() to content().
 The (newly) attached patch also touches a few other files in the sage library that are affected by this.
@@ -367,7 +367,7 @@ archive/issue_comments_022257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22257",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_022259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22259",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -443,16 +443,16 @@ The right time to work on fixing the pynac issue would have been SD12 since both
 archive/issue_comments_022260.json:
 ```json
 {
-    "body": "Attachment [trac_3214-py_gcd.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214-py_gcd.patch) by burcin created at 2009-02-08 18:30:23\n\nI finally found time to look at this.\n\nattachment:trac_3214-py_gcd.patch fixes the doctest problem. It is not a very clean solution, but since we are going to switch to using Sage/Singular for gcd's it's not worth investing more time in this.\n\nIf someone can look over my 2 line patch, and change the subject to \"positive review\", maybe this can still make it to 3.3.",
+    "body": "Attachment [trac_3214-py_gcd.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214-py_gcd.patch) by @burcin created at 2009-02-08 18:30:23\n\nI finally found time to look at this.\n\nattachment:trac_3214-py_gcd.patch fixes the doctest problem. It is not a very clean solution, but since we are going to switch to using Sage/Singular for gcd's it's not worth investing more time in this.\n\nIf someone can look over my 2 line patch, and change the subject to \"positive review\", maybe this can still make it to 3.3.",
     "created_at": "2009-02-08T18:30:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22260",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_3214-py_gcd.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214-py_gcd.patch) by burcin created at 2009-02-08 18:30:23
+Attachment [trac_3214-py_gcd.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214-py_gcd.patch) by @burcin created at 2009-02-08 18:30:23
 
 I finally found time to look at this.
 
@@ -472,7 +472,7 @@ archive/issue_comments_022261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22261",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

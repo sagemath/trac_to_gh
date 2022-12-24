@@ -3,7 +3,7 @@
 archive/issues_007695.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nKeywords: cyclotomic fields, subfields\n\n\n```\nsage: F = CyclotomicField(7)\nsage: K = F.subfields(3)[0][0]\nsage: K\nNumber Field in zeta70 with defining polynomial x^3 + x^2 - 2*x - 1\n```\n\n\nI think this convention of adding a 0 to the variable name, as nice and practicle as it is in general, is not good in this case. The resulting algebraic element is not a 70th root of unity as the name would suggest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7695\n\n",
+    "body": "Assignee: @loefflerd\n\nKeywords: cyclotomic fields, subfields\n\n\n```\nsage: F = CyclotomicField(7)\nsage: K = F.subfields(3)[0][0]\nsage: K\nNumber Field in zeta70 with defining polynomial x^3 + x^2 - 2*x - 1\n```\n\n\nI think this convention of adding a 0 to the variable name, as nice and practicle as it is in general, is not good in this case. The resulting algebraic element is not a 70th root of unity as the name would suggest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7695\n\n",
     "created_at": "2009-12-16T00:33:08Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_007695.json:
     "title": "naming of the variable in subfields of cyclotomic fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7695",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 Keywords: cyclotomic fields, subfields
 
@@ -48,7 +48,7 @@ archive/issue_comments_066016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66016",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_066017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66017",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -79,16 +79,16 @@ Changing status from new to needs_review.
 archive/issue_comments_066018.json:
 ```json
 {
-    "body": "Attachment [trac_7695.patch](tarball://root/attachments/some-uuid/ticket7695/trac_7695.patch) by wuthrich created at 2010-07-30 17:24:15\n\nThis is ready for review but depends on #9407.\n\nOf course, this is not the only solution, but it eliminates the cases that bother me.",
+    "body": "Attachment [trac_7695.patch](tarball://root/attachments/some-uuid/ticket7695/trac_7695.patch) by @categorie created at 2010-07-30 17:24:15\n\nThis is ready for review but depends on #9407.\n\nOf course, this is not the only solution, but it eliminates the cases that bother me.",
     "created_at": "2010-07-30T17:24:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66018",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_7695.patch](tarball://root/attachments/some-uuid/ticket7695/trac_7695.patch) by wuthrich created at 2010-07-30 17:24:15
+Attachment [trac_7695.patch](tarball://root/attachments/some-uuid/ticket7695/trac_7695.patch) by @categorie created at 2010-07-30 17:24:15
 
 This is ready for review but depends on #9407.
 
@@ -106,7 +106,7 @@ archive/issue_comments_066019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66019",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_066020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66020",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_066021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66021",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_066022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66022",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_066023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66023",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_066025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66025",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_066026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66026",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_066027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66027",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_066028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66028",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_066029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66029",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_066030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7695#issuecomment-66030",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

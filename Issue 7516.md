@@ -3,7 +3,7 @@
 archive/issues_007516.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is from the \"report a problem\" link in the notebook:\n\nIf you have a vector space, that is a quotient of a subspace of\nanother vector space, then after coercing elements into it, something\ngoes wrong in (un)pickling it.\n\n\n```\nsage: V = VectorSpace(QQ, 2)\nsage: W = V.subspace([V([1,1])])\nsage: Z = W.subspace([])\nsage: WmodZ = W / Z\nsage: WmodZ(W(0))\n(0)\nsage: loads(dumps(WmodZ))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/bosman/sage/<ipython console> in <module>()\n\n/home/bosman/sage-4.2-linux-Ubuntu_9.04-i686-Linux/local/lib/python2.6/site-packages/sage/structure/sage_object.so\nin sage.structure.sage_object.loads\n(sage/structure/sage_object.c:8769)()\n\n/home/bosman/sage-4.2-linux-Ubuntu_9.04-i686-Linux/local/lib/python2.6/site-packages/sage/modules/free_module.pyc\nin __hash__(self)\n  4576             True\n  4577         \"\"\"\n-> 4578         return hash(self.__basis)\n  4579\n  4580     def construction(self):\n\nAttributeError: 'FreeModule_submodule_field' object has no attribute\n'_FreeModule_submodule_with_basis_pid__basis'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7516\n\n",
+    "body": "Assignee: @williamstein\n\nThis is from the \"report a problem\" link in the notebook:\n\nIf you have a vector space, that is a quotient of a subspace of\nanother vector space, then after coercing elements into it, something\ngoes wrong in (un)pickling it.\n\n\n```\nsage: V = VectorSpace(QQ, 2)\nsage: W = V.subspace([V([1,1])])\nsage: Z = W.subspace([])\nsage: WmodZ = W / Z\nsage: WmodZ(W(0))\n(0)\nsage: loads(dumps(WmodZ))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/bosman/sage/<ipython console> in <module>()\n\n/home/bosman/sage-4.2-linux-Ubuntu_9.04-i686-Linux/local/lib/python2.6/site-packages/sage/structure/sage_object.so\nin sage.structure.sage_object.loads\n(sage/structure/sage_object.c:8769)()\n\n/home/bosman/sage-4.2-linux-Ubuntu_9.04-i686-Linux/local/lib/python2.6/site-packages/sage/modules/free_module.pyc\nin __hash__(self)\n  4576             True\n  4577         \"\"\"\n-> 4578         return hash(self.__basis)\n  4579\n  4580     def construction(self):\n\nAttributeError: 'FreeModule_submodule_field' object has no attribute\n'_FreeModule_submodule_with_basis_pid__basis'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7516\n\n",
     "created_at": "2009-11-23T04:56:05Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_007516.json:
     "title": "bug in pickling quotient module over pid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7516",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is from the "report a problem" link in the notebook:
 
@@ -74,7 +74,7 @@ archive/issue_comments_063665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7516#issuecomment-63665",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,16 +101,16 @@ Finitely generated module V/W over Integer Ring with invariants (0)
 archive/issue_comments_063666.json:
 ```json
 {
-    "body": "Attachment [trac_7516.patch](tarball://root/attachments/some-uuid/ticket7516/trac_7516.patch) by was created at 2010-01-19 13:03:06",
+    "body": "Attachment [trac_7516.patch](tarball://root/attachments/some-uuid/ticket7516/trac_7516.patch) by @williamstein created at 2010-01-19 13:03:06",
     "created_at": "2010-01-19T13:03:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7516#issuecomment-63666",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7516.patch](tarball://root/attachments/some-uuid/ticket7516/trac_7516.patch) by was created at 2010-01-19 13:03:06
+Attachment [trac_7516.patch](tarball://root/attachments/some-uuid/ticket7516/trac_7516.patch) by @williamstein created at 2010-01-19 13:03:06
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_063667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7516#issuecomment-63667",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_063668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7516#issuecomment-63668",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_063669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7516#issuecomment-63669",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_063670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7516#issuecomment-63670",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_063671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7516#issuecomment-63671",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_063672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7516#issuecomment-63672",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_063673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7516#issuecomment-63673",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_063674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7516#issuecomment-63674",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_063675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7516#issuecomment-63675",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_063676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7516#issuecomment-63676",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

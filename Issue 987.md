@@ -3,7 +3,7 @@
 archive/issues_000987.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nintegrate(1/sqrt(9+x^2))\nx/3\n\nI tried this at home and numerous times on sagenb.org.  Every other\nplausible syntax of this integral I tried (-1 power, more parentheses,\nswitch the summands, etc.) yields the same result\n\nHere's the reason\n\n```\n(%i1) integrate(1/sqrt(9+x^2),x)\n;\n                                         x\n(%o1)                              asinh(-)\n                                         3\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/987\n\n",
+    "body": "Assignee: @mwhansen\n\nintegrate(1/sqrt(9+x^2))\nx/3\n\nI tried this at home and numerous times on sagenb.org.  Every other\nplausible syntax of this integral I tried (-1 power, more parentheses,\nswitch the summands, etc.) yields the same result\n\nHere's the reason\n\n```\n(%i1) integrate(1/sqrt(9+x^2),x)\n;\n                                         x\n(%o1)                              asinh(-)\n                                         3\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/987\n\n",
     "created_at": "2007-10-25T01:03:00Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_000987.json:
     "title": "integrate(1/sqrt(9+x^2)) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/987",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 integrate(1/sqrt(9+x^2))
 x/3
@@ -55,7 +55,7 @@ archive/issue_comments_006029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/987#issuecomment-6029",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_006030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/987#issuecomment-6030",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,16 +86,16 @@ fixes this problem.
 archive/issue_comments_006031.json:
 ```json
 {
-    "body": "Attachment [987.patch](tarball://root/attachments/some-uuid/ticket987/987.patch) by was created at 2007-10-25 01:49:34",
+    "body": "Attachment [987.patch](tarball://root/attachments/some-uuid/ticket987/987.patch) by @williamstein created at 2007-10-25 01:49:34",
     "created_at": "2007-10-25T01:49:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/987#issuecomment-6031",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [987.patch](tarball://root/attachments/some-uuid/ticket987/987.patch) by was created at 2007-10-25 01:49:34
+Attachment [987.patch](tarball://root/attachments/some-uuid/ticket987/987.patch) by @williamstein created at 2007-10-25 01:49:34
 
 
 
@@ -104,16 +104,16 @@ Attachment [987.patch](tarball://root/attachments/some-uuid/ticket987/987.patch)
 archive/issue_comments_006032.json:
 ```json
 {
-    "body": "Attachment [987b.patch](tarball://root/attachments/some-uuid/ticket987/987b.patch) by was created at 2007-10-25 02:34:53",
+    "body": "Attachment [987b.patch](tarball://root/attachments/some-uuid/ticket987/987b.patch) by @williamstein created at 2007-10-25 02:34:53",
     "created_at": "2007-10-25T02:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/987#issuecomment-6032",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [987b.patch](tarball://root/attachments/some-uuid/ticket987/987b.patch) by was created at 2007-10-25 02:34:53
+Attachment [987b.patch](tarball://root/attachments/some-uuid/ticket987/987b.patch) by @williamstein created at 2007-10-25 02:34:53
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_006033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/987#issuecomment-6033",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

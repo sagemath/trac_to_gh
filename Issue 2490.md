@@ -3,7 +3,7 @@
 archive/issues_002490.json:
 ```json
 {
-    "body": "Assignee: was\n\nmatrix_from_rows_and_columns could be made faster by using PY_TYPE_CHECK and pyrex-style for loops.\n\nSee also trac ticket #2397\n\nIssue created by migration from https://trac.sagemath.org/ticket/2490\n\n",
+    "body": "Assignee: @williamstein\n\nmatrix_from_rows_and_columns could be made faster by using PY_TYPE_CHECK and pyrex-style for loops.\n\nSee also trac ticket #2397\n\nIssue created by migration from https://trac.sagemath.org/ticket/2490\n\n",
     "created_at": "2008-03-12T11:58:03Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002490.json:
     "title": "Faster matrix_from_rows_and_columns",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2490",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 matrix_from_rows_and_columns could be made faster by using PY_TYPE_CHECK and pyrex-style for loops.
 
@@ -39,7 +39,7 @@ archive/issue_comments_016877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2490#issuecomment-16877",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_016878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2490#issuecomment-16878",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 

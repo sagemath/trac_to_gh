@@ -3,7 +3,7 @@
 archive/issues_001759.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following files mention/are under GPL V2 implying V2 only:\n\n* c_lib/src/mpn_pylong.c: License: GPL v2\n* c_lib/src/mpz_pylong.c: License: GPL v2\n* sage/misc/banner.py\n\nThis ought to be fixed before 2.10 since we will merge GPL V3 or later packages. IIRC all the copyright holders agreed to GPL V2 or later, but we should be careful with this and double check.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1759\n\n",
+    "body": "Assignee: @williamstein\n\nThe following files mention/are under GPL V2 implying V2 only:\n\n* c_lib/src/mpn_pylong.c: License: GPL v2\n* c_lib/src/mpz_pylong.c: License: GPL v2\n* sage/misc/banner.py\n\nThis ought to be fixed before 2.10 since we will merge GPL V3 or later packages. IIRC all the copyright holders agreed to GPL V2 or later, but we should be careful with this and double check.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1759\n\n",
     "created_at": "2008-01-11T19:54:35Z",
     "labels": [
         "distribution",
@@ -17,7 +17,7 @@ archive/issues_001759.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following files mention/are under GPL V2 implying V2 only:
 
@@ -47,7 +47,7 @@ archive/issue_comments_011096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1759#issuecomment-11096",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_011101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1759#issuecomment-11101",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001144.json:
     "title": "mpfr to RQDF coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1144",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: somebody
@@ -112,7 +112,7 @@ archive/issue_comments_006955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1144#issuecomment-6955",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_006956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1144#issuecomment-6956",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_006957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1144#issuecomment-6957",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_006958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1144#issuecomment-6958",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

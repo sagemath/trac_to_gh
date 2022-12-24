@@ -14,7 +14,7 @@ archive/issues_009741.json:
     "title": "Sorting vertices of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9741",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9741
 archive/issue_comments_095373.json:
 ```json
 {
-    "body": "Attachment [trac_9741-graph-vertices-sort.patch](tarball://root/attachments/some-uuid/ticket9741/trac_9741-graph-vertices-sort.patch) by rbeezer created at 2010-08-13 17:26:38",
+    "body": "Attachment [trac_9741-graph-vertices-sort.patch](tarball://root/attachments/some-uuid/ticket9741/trac_9741-graph-vertices-sort.patch) by @rbeezer created at 2010-08-13 17:26:38",
     "created_at": "2010-08-13T17:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95373",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9741-graph-vertices-sort.patch](tarball://root/attachments/some-uuid/ticket9741/trac_9741-graph-vertices-sort.patch) by rbeezer created at 2010-08-13 17:26:38
+Attachment [trac_9741-graph-vertices-sort.patch](tarball://root/attachments/some-uuid/ticket9741/trac_9741-graph-vertices-sort.patch) by @rbeezer created at 2010-08-13 17:26:38
 
 
 
@@ -60,7 +60,7 @@ archive/issue_comments_095374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95374",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_095375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95375",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_095376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95376",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_095377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95377",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -142,16 +142,16 @@ Nathann
 archive/issue_comments_095378.json:
 ```json
 {
-    "body": "Attachment [trac_9741-graph-vertices-sort-v2.patch](tarball://root/attachments/some-uuid/ticket9741/trac_9741-graph-vertices-sort-v2.patch) by rbeezer created at 2010-09-07 19:11:20\n\nStandalone patch, apply only this",
+    "body": "Attachment [trac_9741-graph-vertices-sort-v2.patch](tarball://root/attachments/some-uuid/ticket9741/trac_9741-graph-vertices-sort-v2.patch) by @rbeezer created at 2010-09-07 19:11:20\n\nStandalone patch, apply only this",
     "created_at": "2010-09-07T19:11:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95378",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9741-graph-vertices-sort-v2.patch](tarball://root/attachments/some-uuid/ticket9741/trac_9741-graph-vertices-sort-v2.patch) by rbeezer created at 2010-09-07 19:11:20
+Attachment [trac_9741-graph-vertices-sort-v2.patch](tarball://root/attachments/some-uuid/ticket9741/trac_9741-graph-vertices-sort-v2.patch) by @rbeezer created at 2010-09-07 19:11:20
 
 Standalone patch, apply only this
 
@@ -167,7 +167,7 @@ archive/issue_comments_095379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95379",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_095380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95380",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_095381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95381",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_095382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95382",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_095383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95383",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_095384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95384",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_095385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95385",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_095386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95386",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_095387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95387",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_095388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95388",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_095389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95389",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_095390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95390",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_095391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95391",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_095392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95392",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_095393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95393",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_095394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95394",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -516,7 +516,7 @@ archive/issue_comments_095395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95395",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -536,7 +536,7 @@ archive/issue_comments_095396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95396",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -563,7 +563,7 @@ archive/issue_comments_095397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9741",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9741#issuecomment-95397",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004481.json:
     "title": "Fix cached_function to accept functions without func_doc or func_name (with patch)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4481",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: cwitty
@@ -65,7 +65,7 @@ archive/issue_comments_033111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4481#issuecomment-33111",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -78,16 +78,16 @@ Changing status from new to assigned.
 archive/issue_comments_033112.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to nthiery.",
+    "body": "Changing assignee from cwitty to @nthiery.",
     "created_at": "2008-11-09T21:01:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4481#issuecomment-33112",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Changing assignee from cwitty to nthiery.
+Changing assignee from cwitty to @nthiery.
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_033113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4481#issuecomment-33113",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_033114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4481#issuecomment-33114",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

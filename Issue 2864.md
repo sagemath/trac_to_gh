@@ -3,7 +3,7 @@
 archive/issues_002864.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nThe original Weyl group patch was described here:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/80515528dc9648fd?hl=en\n\nNo trac ticket was made, and the patch no longer applies without modification so I\nrevised it and am uploading it as this ticket.\n\nMike Hansen told me he wants to revise the patch in connection with a reorganization\nin which case this ticket might be superfluous. However I added one thing, which is\ninstructions for obtaining the character tables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2864\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe original Weyl group patch was described here:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/80515528dc9648fd?hl=en\n\nNo trac ticket was made, and the patch no longer applies without modification so I\nrevised it and am uploading it as this ticket.\n\nMike Hansen told me he wants to revise the patch in connection with a reorganization\nin which case this ticket might be superfluous. However I added one thing, which is\ninstructions for obtaining the character tables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2864\n\n",
     "created_at": "2008-04-09T16:51:12Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002864.json:
     "title": "Weyl groups are implemented in rootsystem.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2864",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -66,7 +66,7 @@ archive/issue_comments_019644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19644",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_019645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19645",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_019646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19646",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_019648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19648",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_019649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19649",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -265,16 +265,16 @@ Changing status from new to assigned.
 archive/issue_comments_019650.json:
 ```json
 {
-    "body": "Attachment [2864.patch](tarball://root/attachments/some-uuid/ticket2864/2864.patch) by mhansen created at 2008-04-10 03:11:37\n\nI've done some work on the the patch (for example, caching the Weyl group, adding doctests to all the functions, etc.)  I've also put all the root_system code in  combinat/root_system/ which will be necessary as it grows.  This patch is made against 3.0.alpha3.",
+    "body": "Attachment [2864.patch](tarball://root/attachments/some-uuid/ticket2864/2864.patch) by @mwhansen created at 2008-04-10 03:11:37\n\nI've done some work on the the patch (for example, caching the Weyl group, adding doctests to all the functions, etc.)  I've also put all the root_system code in  combinat/root_system/ which will be necessary as it grows.  This patch is made against 3.0.alpha3.",
     "created_at": "2008-04-10T03:11:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19650",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2864.patch](tarball://root/attachments/some-uuid/ticket2864/2864.patch) by mhansen created at 2008-04-10 03:11:37
+Attachment [2864.patch](tarball://root/attachments/some-uuid/ticket2864/2864.patch) by @mwhansen created at 2008-04-10 03:11:37
 
 I've done some work on the the patch (for example, caching the Weyl group, adding doctests to all the functions, etc.)  I've also put all the root_system code in  combinat/root_system/ which will be necessary as it grows.  This patch is made against 3.0.alpha3.
 
@@ -290,7 +290,7 @@ archive/issue_comments_019651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19651",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -305,16 +305,16 @@ Maybe Justin Walker should be added to the copyright in one file since he did a 
 archive/issue_comments_019652.json:
 ```json
 {
-    "body": "Attachment [2864a.patch](tarball://root/attachments/some-uuid/ticket2864/2864a.patch) by bump created at 2008-04-10 17:07:51\n\nAlthough the patch appears large, it is mostly reorganization. Apart from moving files around, a hash method is added to CartanType_simple and Weyl Groups are cached in improvement over the original patch. \n\nTwo minor problems:\n\n(1) the G2 patch (track #2808) was accidentally reverted.\n(2) Some words about how to get the character table were lost.\n\nThese are addressed by 2864a.patch which goes on top of 2864.patch.\n\nMy recommendation would be to merge 2864.patch + 2864a.patch.\n\nDan",
+    "body": "Attachment [2864a.patch](tarball://root/attachments/some-uuid/ticket2864/2864a.patch) by @dwbump created at 2008-04-10 17:07:51\n\nAlthough the patch appears large, it is mostly reorganization. Apart from moving files around, a hash method is added to CartanType_simple and Weyl Groups are cached in improvement over the original patch. \n\nTwo minor problems:\n\n(1) the G2 patch (track #2808) was accidentally reverted.\n(2) Some words about how to get the character table were lost.\n\nThese are addressed by 2864a.patch which goes on top of 2864.patch.\n\nMy recommendation would be to merge 2864.patch + 2864a.patch.\n\nDan",
     "created_at": "2008-04-10T17:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19652",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [2864a.patch](tarball://root/attachments/some-uuid/ticket2864/2864a.patch) by bump created at 2008-04-10 17:07:51
+Attachment [2864a.patch](tarball://root/attachments/some-uuid/ticket2864/2864a.patch) by @dwbump created at 2008-04-10 17:07:51
 
 Although the patch appears large, it is mostly reorganization. Apart from moving files around, a hash method is added to CartanType_simple and Weyl Groups are cached in improvement over the original patch. 
 
@@ -336,16 +336,16 @@ Dan
 archive/issue_comments_019653.json:
 ```json
 {
-    "body": "Attachment [2864.2.patch](tarball://root/attachments/some-uuid/ticket2864/2864.2.patch) by mhansen created at 2008-04-10 20:30:10",
+    "body": "Attachment [2864.2.patch](tarball://root/attachments/some-uuid/ticket2864/2864.2.patch) by @mwhansen created at 2008-04-10 20:30:10",
     "created_at": "2008-04-10T20:30:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19653",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2864.2.patch](tarball://root/attachments/some-uuid/ticket2864/2864.2.patch) by mhansen created at 2008-04-10 20:30:10
+Attachment [2864.2.patch](tarball://root/attachments/some-uuid/ticket2864/2864.2.patch) by @mwhansen created at 2008-04-10 20:30:10
 
 
 

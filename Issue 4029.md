@@ -3,7 +3,7 @@
 archive/issues_004029.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  iandrus\n\nKeywords: sage-env source\n\nSourcing sage-env from any directory other than SAGE_ROOT or SAGE_LOCAL/bin kills the shell.  This is considerably disconcerting behaviour.  An explanatory message would be nice (if not a proper fix).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4029\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @gvol\n\nKeywords: sage-env source\n\nSourcing sage-env from any directory other than SAGE_ROOT or SAGE_LOCAL/bin kills the shell.  This is considerably disconcerting behaviour.  An explanatory message would be nice (if not a proper fix).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4029\n\n",
     "created_at": "2008-09-01T04:03:55Z",
     "labels": [
         "distribution",
@@ -19,7 +19,7 @@ archive/issues_004029.json:
 ```
 Assignee: mabshoff
 
-CC:  iandrus
+CC:  @gvol
 
 Keywords: sage-env source
 
@@ -120,16 +120,16 @@ Michael
 archive/issue_comments_029056.json:
 ```json
 {
-    "body": "Attachment [trac_4029.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.patch) by mhansen created at 2009-10-05 07:18:06",
+    "body": "Attachment [trac_4029.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.patch) by @mwhansen created at 2009-10-05 07:18:06",
     "created_at": "2009-10-05T07:18:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29056",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4029.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.patch) by mhansen created at 2009-10-05 07:18:06
+Attachment [trac_4029.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.patch) by @mwhansen created at 2009-10-05 07:18:06
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_029057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29057",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_029058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29058",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_029059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29059",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -261,16 +261,16 @@ oh, now I remember doing that.
 archive/issue_comments_029060.json:
 ```json
 {
-    "body": "Attachment [trac_4029.2.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.2.patch) by iandrus created at 2010-12-29 20:31:59\n\nI used the very hacky (but effective)\n\n```\nreturn 1 2>/dev/null || exit 1\n```\n\ninstead of `return` or `exit`.",
+    "body": "Attachment [trac_4029.2.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.2.patch) by @gvol created at 2010-12-29 20:31:59\n\nI used the very hacky (but effective)\n\n```\nreturn 1 2>/dev/null || exit 1\n```\n\ninstead of `return` or `exit`.",
     "created_at": "2010-12-29T20:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29060",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
-Attachment [trac_4029.2.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.2.patch) by iandrus created at 2010-12-29 20:31:59
+Attachment [trac_4029.2.patch](tarball://root/attachments/some-uuid/ticket4029/trac_4029.2.patch) by @gvol created at 2010-12-29 20:31:59
 
 I used the very hacky (but effective)
 
@@ -292,7 +292,7 @@ archive/issue_comments_029061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29061",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_029062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29062",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_029063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29063",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_029064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29064",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_029065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29065",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_029066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29066",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_029067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29067",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_029068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29068",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -468,7 +468,7 @@ archive/issue_comments_029069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29069",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_029070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29070",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_029071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4029",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4029#issuecomment-29071",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

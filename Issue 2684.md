@@ -3,7 +3,7 @@
 archive/issues_002684.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nA student has brought up that having vertices default to red makes the number labels very difficult to read, especially for visually-impaired people.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2684\n\n",
+    "body": "Assignee: @rlmill\n\nA student has brought up that having vertices default to red makes the number labels very difficult to read, especially for visually-impaired people.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2684\n\n",
     "created_at": "2008-03-27T14:25:42Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002684.json:
     "title": "vertices should not default to  red",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2684",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 A student has brought up that having vertices default to red makes the number labels very difficult to read, especially for visually-impaired people.
 
@@ -37,7 +37,7 @@ archive/issue_comments_018452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2684#issuecomment-18452",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_018453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2684#issuecomment-18453",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -68,16 +68,16 @@ See the extensive discussion at http://groups.google.com/group/sage-devel/browse
 archive/issue_comments_018454.json:
 ```json
 {
-    "body": "Attachment [trac-2684-vertex-colors.patch](tarball://root/attachments/some-uuid/ticket2684/trac-2684-vertex-colors.patch) by jason created at 2008-05-10 15:41:27",
+    "body": "Attachment [trac-2684-vertex-colors.patch](tarball://root/attachments/some-uuid/ticket2684/trac-2684-vertex-colors.patch) by @jasongrout created at 2008-05-10 15:41:27",
     "created_at": "2008-05-10T15:41:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2684#issuecomment-18454",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-2684-vertex-colors.patch](tarball://root/attachments/some-uuid/ticket2684/trac-2684-vertex-colors.patch) by jason created at 2008-05-10 15:41:27
+Attachment [trac-2684-vertex-colors.patch](tarball://root/attachments/some-uuid/ticket2684/trac-2684-vertex-colors.patch) by @jasongrout created at 2008-05-10 15:41:27
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_018455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2684#issuecomment-18455",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_018456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2684#issuecomment-18456",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

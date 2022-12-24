@@ -3,7 +3,7 @@
 archive/issues_003108.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: E = EllipticCurve(GF(5),[1..5])\nsage: P = E.lift_x(0)\nsage: P\n(0 : 2 : 1)\nsage: P.additive_order()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/papers/submitted/kolyconj/<ipython console> in <module>()\n\n/Users/was/papers/submitted/kolyconj/element.pyx in sage.structure.element.ModuleElement.additive_order()\n\n<type 'exceptions.NotImplementedError'>: \nsage: P.order()\n3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3108\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: E = EllipticCurve(GF(5),[1..5])\nsage: P = E.lift_x(0)\nsage: P\n(0 : 2 : 1)\nsage: P.additive_order()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/papers/submitted/kolyconj/<ipython console> in <module>()\n\n/Users/was/papers/submitted/kolyconj/element.pyx in sage.structure.element.ModuleElement.additive_order()\n\n<type 'exceptions.NotImplementedError'>: \nsage: P.order()\n3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3108\n\n",
     "created_at": "2008-05-06T01:53:51Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003108.json:
     "title": "implement additive_order for elliptic curve points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3108",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -55,7 +55,7 @@ archive/issue_comments_021476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3108#issuecomment-21476",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_021477.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3108#issuecomment-21477",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_021478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3108#issuecomment-21478",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -104,16 +104,16 @@ Changing component from number theory to elliptic curves.
 archive/issue_comments_021479.json:
 ```json
 {
-    "body": "Attachment [trac_3108-additive_order.patch](tarball://root/attachments/some-uuid/ticket3108/trac_3108-additive_order.patch) by cremona created at 2009-07-24 22:21:25",
+    "body": "Attachment [trac_3108-additive_order.patch](tarball://root/attachments/some-uuid/ticket3108/trac_3108-additive_order.patch) by @JohnCremona created at 2009-07-24 22:21:25",
     "created_at": "2009-07-24T22:21:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3108#issuecomment-21479",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_3108-additive_order.patch](tarball://root/attachments/some-uuid/ticket3108/trac_3108-additive_order.patch) by cremona created at 2009-07-24 22:21:25
+Attachment [trac_3108-additive_order.patch](tarball://root/attachments/some-uuid/ticket3108/trac_3108-additive_order.patch) by @JohnCremona created at 2009-07-24 22:21:25
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_021480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3108#issuecomment-21480",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_021481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3108#issuecomment-21481",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 

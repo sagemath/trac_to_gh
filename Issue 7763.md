@@ -3,7 +3,7 @@
 archive/issues_007763.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman jason mhampton\n\nWe just need to add them to sage/devel/sage/misc/functional.py.  Modifying the versions of integrate/integral in that file would probably be easiest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7763\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @jasongrout mhampton\n\nWe just need to add them to sage/devel/sage/misc/functional.py.  Modifying the versions of integrate/integral in that file would probably be easiest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7763\n\n",
     "created_at": "2009-12-24T18:19:08Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_007763.json:
     "title": "make nintegrate/nintegral top-level functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7763",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman jason mhampton
+CC:  @kcrisman @jasongrout mhampton
 
 We just need to add them to sage/devel/sage/misc/functional.py.  Modifying the versions of integrate/integral in that file would probably be easiest.
 
@@ -39,7 +39,7 @@ archive/issue_comments_066866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66866",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_066868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66868",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_066870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66870",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_066871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66871",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_066872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66872",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_066876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66876",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_066879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66879",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_066884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66884",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_066886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66886",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_066887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66887",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_066888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66888",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -642,16 +642,16 @@ This is still open, but if one uses integral instead of numerical_integral it wo
 archive/issue_comments_066890.json:
 ```json
 {
-    "body": "Attachment [trac_7763.8.patch](tarball://root/attachments/some-uuid/ticket7763/trac_7763.8.patch) by kcrisman created at 2011-01-19 22:08:16\n\nThanks for clearing up some of my misunderstandings.  I don't have time to look at this today, but hopefully within a week?  Just a couple clarifications:\n>  and hopefully links to the functions put in - see the plotting functions, especially plot.py, for examples of how to do that in Sphinx.\n> > \n> Did you want links each function listed in the file? Like a table of contents.\n\nI mean like `:func:`~sage.plot.plot.plot`` referring to the function `plot`; one can do the same here, I think.\n> > > I would caution that for annoying reasons we like to have the lines in the documentation be fairly short; see some of the other calculus or plotting files for examples of about how many characters (80? 84?) are appropriate.  (Otherwise it looks really bad in command line.)  So any updates should fix that.\n> > \n> > This comment still applies.\n> > \n> I tried to make the lines shorter, but the html file looked wierd. Html file formats each line and wraps it around. If I make them them shorter the documentation doesn't come out right. \n\nHmm, that's odd.  I'll have to check it out; in most files we do this.  Maybe we've just been living with weird HTML :)",
+    "body": "Attachment [trac_7763.8.patch](tarball://root/attachments/some-uuid/ticket7763/trac_7763.8.patch) by @kcrisman created at 2011-01-19 22:08:16\n\nThanks for clearing up some of my misunderstandings.  I don't have time to look at this today, but hopefully within a week?  Just a couple clarifications:\n>  and hopefully links to the functions put in - see the plotting functions, especially plot.py, for examples of how to do that in Sphinx.\n> > \n> Did you want links each function listed in the file? Like a table of contents.\n\nI mean like `:func:`~sage.plot.plot.plot`` referring to the function `plot`; one can do the same here, I think.\n> > > I would caution that for annoying reasons we like to have the lines in the documentation be fairly short; see some of the other calculus or plotting files for examples of about how many characters (80? 84?) are appropriate.  (Otherwise it looks really bad in command line.)  So any updates should fix that.\n> > \n> > This comment still applies.\n> > \n> I tried to make the lines shorter, but the html file looked wierd. Html file formats each line and wraps it around. If I make them them shorter the documentation doesn't come out right. \n\nHmm, that's odd.  I'll have to check it out; in most files we do this.  Maybe we've just been living with weird HTML :)",
     "created_at": "2011-01-19T22:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66890",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7763.8.patch](tarball://root/attachments/some-uuid/ticket7763/trac_7763.8.patch) by kcrisman created at 2011-01-19 22:08:16
+Attachment [trac_7763.8.patch](tarball://root/attachments/some-uuid/ticket7763/trac_7763.8.patch) by @kcrisman created at 2011-01-19 22:08:16
 
 Thanks for clearing up some of my misunderstandings.  I don't have time to look at this today, but hopefully within a week?  Just a couple clarifications:
 >  and hopefully links to the functions put in - see the plotting functions, especially plot.py, for examples of how to do that in Sphinx.
@@ -679,7 +679,7 @@ archive/issue_comments_066891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66891",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -697,7 +697,7 @@ archive/issue_comments_066892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7763",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66892",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

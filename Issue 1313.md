@@ -3,7 +3,7 @@
 archive/issues_001313.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1313\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1313\n\n",
     "created_at": "2007-11-28T20:02:14Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001313.json:
     "title": "[graphs] calculate chromatic polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1313",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -39,7 +39,7 @@ archive/issue_comments_008270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1313#issuecomment-8270",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_008271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1313#issuecomment-8271",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing component from combinatorics to graph theory.
 archive/issue_comments_008272.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-17T15:15:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1313#issuecomment-8272",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 

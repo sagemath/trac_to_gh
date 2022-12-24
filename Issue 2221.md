@@ -14,7 +14,7 @@ archive/issues_002221.json:
     "title": "Silent failure of sage-env",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2221",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 Assignee: mabshoff

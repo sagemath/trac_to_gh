@@ -14,7 +14,7 @@ archive/issues_008501.json:
     "title": "find_root evaluates by plugging an equation into the function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8501",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jkantor

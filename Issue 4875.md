@@ -3,7 +3,7 @@
 archive/issues_004875.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  wcauchois abergeron mhampton\n\nThis is what I get:\n\n\n```\nsage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).show(fill=True)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n[snip IPython layers ...]\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:1976)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:8919)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.export_jmol (sage/plot/plot3d/base.c:4230)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3dGroup.jmol_repr (sage/plot/plot3d/base.c:10166)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/index_face_set.so in sage.plot.plot3d.index_face_set.IndexFaceSet.jmol_repr (sage/plot/plot3d/index_face_set.c:6298)()\n\nRuntimeError: \n\n```\n\n\nI will investigate after Christmas, unless someone fixes this by then.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4875\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  wcauchois abergeron mhampton\n\nThis is what I get:\n\n\n```\nsage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).show(fill=True)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n[snip IPython layers ...]\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:1976)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:8919)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.export_jmol (sage/plot/plot3d/base.c:4230)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3dGroup.jmol_repr (sage/plot/plot3d/base.c:10166)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/index_face_set.so in sage.plot.plot3d.index_face_set.IndexFaceSet.jmol_repr (sage/plot/plot3d/index_face_set.c:6298)()\n\nRuntimeError: \n\n```\n\n\nI will investigate after Christmas, unless someone fixes this by then.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4875\n\n",
     "created_at": "2008-12-24T18:51:50Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_004875.json:
     "user": "abergeron"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  wcauchois abergeron mhampton
 
@@ -273,7 +273,7 @@ Attached patch should fix the problem.  This issue is simpler than it first appe
 archive/issue_comments_036912.json:
 ```json
 {
-    "body": "Changing assignee from was to mhampton.",
+    "body": "Changing assignee from @williamstein to mhampton.",
     "created_at": "2009-03-21T17:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
@@ -282,7 +282,7 @@ archive/issue_comments_036912.json:
 }
 ```
 
-Changing assignee from was to mhampton.
+Changing assignee from @williamstein to mhampton.
 
 
 

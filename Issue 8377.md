@@ -3,7 +3,7 @@
 archive/issues_008377.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: MPFR\n\nThere is no example of using rounding modes with RealField.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8377\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: MPFR\n\nThere is no example of using rounding modes with RealField.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8377\n\n",
     "created_at": "2010-02-26T09:31:52Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_008377.json:
     "title": "improve documentation for RealField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8377",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: MPFR
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8377
 archive/issue_comments_074901.json:
 ```json
 {
-    "body": "Attachment [trac_8376.patch](tarball://root/attachments/some-uuid/ticket8377/trac_8376.patch) by zimmerma created at 2010-02-26 09:32:21",
+    "body": "Attachment [trac_8376.patch](tarball://root/attachments/some-uuid/ticket8377/trac_8376.patch) by @zimmermann6 created at 2010-02-26 09:32:21",
     "created_at": "2010-02-26T09:32:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8377#issuecomment-74901",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_8376.patch](tarball://root/attachments/some-uuid/ticket8377/trac_8376.patch) by zimmerma created at 2010-02-26 09:32:21
+Attachment [trac_8376.patch](tarball://root/attachments/some-uuid/ticket8377/trac_8376.patch) by @zimmermann6 created at 2010-02-26 09:32:21
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_074902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8377#issuecomment-74902",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_074903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8377#issuecomment-74903",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

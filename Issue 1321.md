@@ -3,7 +3,7 @@
 archive/issues_001321.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  boothby rlm rbeezer\n\nKeywords: graphs\n\nThis is most likely a big project.\n\nFrom Chris Godsil's wishlist (replies by Jason Grout and Robert Miller, in that order).\n\n\n```\n>>> A graph editor. This would allow graphs to be constructed and edited by\n>>> pointing and clicking. It should be able to output ps/pdf files. We\n>>> want to\n>>> be able to save the current state in machine readable form, and to be able\n>>> to input graphs in this form. This means we will have drawings as explicit\n>>> objects. (Thus it would be easy to write programs to generate drawings.)\n>>> If we have a graph displayed in the editor, we should be able to access it\n>>> from sage/python, and compute parameters there. So I would like to be able\n>>> to adjust the graph with the mouse, or from sage.\n>>> Some people will want to be able to use arbitrarily complicated curves\n>>> for the edges, and to place all sorts of text around the drawing. This\n>>> will\n>>> lead to something like xfig rewritten in sage.\n>> Indeed, this does sound like a very ambitious project. We might look at\n>> incorporating other graph editors. There are a few written in Java that\n>> might be useful. As it is, though, do we have any GUI things we can work\n>> with other than Java (like the recent interactive 3d plots) or some sort\n>> of AJAX trickery? We may be able to do something with javascript\n>> draggable objects here, using jquery or some other javascript GUI\n>> library. It seems like at one point someone mentioned another javascript\n>> library for drawing on a web page.\n> Sean Howe wrote a javascript editor, and that is lurking in my email\n> somewhere. I think it was decided against for reasons of notebook\n> security, and in favor of the new Java3d stuff. The problem is that\n> interactive GUIs is a difficult problem for anything in Sage. Also,\n> nothing has been written for the Java3d stuff yet. The problem with a\n> lot of graph visualizers and editors already written is that most of\n> them aren't very high quality, and there are so many low quality\n> ones...\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1321\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  boothby @rlmill @rbeezer\n\nKeywords: graphs\n\nThis is most likely a big project.\n\nFrom Chris Godsil's wishlist (replies by Jason Grout and Robert Miller, in that order).\n\n\n```\n>>> A graph editor. This would allow graphs to be constructed and edited by\n>>> pointing and clicking. It should be able to output ps/pdf files. We\n>>> want to\n>>> be able to save the current state in machine readable form, and to be able\n>>> to input graphs in this form. This means we will have drawings as explicit\n>>> objects. (Thus it would be easy to write programs to generate drawings.)\n>>> If we have a graph displayed in the editor, we should be able to access it\n>>> from sage/python, and compute parameters there. So I would like to be able\n>>> to adjust the graph with the mouse, or from sage.\n>>> Some people will want to be able to use arbitrarily complicated curves\n>>> for the edges, and to place all sorts of text around the drawing. This\n>>> will\n>>> lead to something like xfig rewritten in sage.\n>> Indeed, this does sound like a very ambitious project. We might look at\n>> incorporating other graph editors. There are a few written in Java that\n>> might be useful. As it is, though, do we have any GUI things we can work\n>> with other than Java (like the recent interactive 3d plots) or some sort\n>> of AJAX trickery? We may be able to do something with javascript\n>> draggable objects here, using jquery or some other javascript GUI\n>> library. It seems like at one point someone mentioned another javascript\n>> library for drawing on a web page.\n> Sean Howe wrote a javascript editor, and that is lurking in my email\n> somewhere. I think it was decided against for reasons of notebook\n> security, and in favor of the new Java3d stuff. The problem is that\n> interactive GUIs is a difficult problem for anything in Sage. Also,\n> nothing has been written for the Java3d stuff yet. The problem with a\n> lot of graph visualizers and editors already written is that most of\n> them aren't very high quality, and there are so many low quality\n> ones...\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1321\n\n",
     "created_at": "2007-11-28T20:09:51Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_001321.json:
     "title": "[graphs] an interactive graph editor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1321",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  boothby rlm rbeezer
+CC:  boothby @rlmill @rbeezer
 
 Keywords: graphs
 
@@ -78,7 +78,7 @@ archive/issue_comments_008405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8405",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_008406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8406",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -113,16 +113,16 @@ Changing keywords from "graphs" to "".
 archive/issue_comments_008407.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-17T15:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8407",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_008408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8408",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_008410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8410",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_008412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8412",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_008415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8415",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_008416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8416",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_008417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8417",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_008418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8418",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_008419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8419",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_008420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8420",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_008421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8421",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_008422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8422",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -547,7 +547,7 @@ archive/issue_comments_008423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8423",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -585,16 +585,16 @@ Rado
 archive/issue_comments_008425.json:
 ```json
 {
-    "body": "Attachment [trac_1321-sagenb_graphed.patch](tarball://root/attachments/some-uuid/ticket1321/trac_1321-sagenb_graphed.patch) by mpatel created at 2009-11-24 03:45:01\n\nRado's graph editor.  Apply this patch to the **sagenb** repo.  Apply this patch only.",
+    "body": "Attachment [trac_1321-sagenb_graphed.patch](tarball://root/attachments/some-uuid/ticket1321/trac_1321-sagenb_graphed.patch) by @qed777 created at 2009-11-24 03:45:01\n\nRado's graph editor.  Apply this patch to the **sagenb** repo.  Apply this patch only.",
     "created_at": "2009-11-24T03:45:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8425",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_1321-sagenb_graphed.patch](tarball://root/attachments/some-uuid/ticket1321/trac_1321-sagenb_graphed.patch) by mpatel created at 2009-11-24 03:45:01
+Attachment [trac_1321-sagenb_graphed.patch](tarball://root/attachments/some-uuid/ticket1321/trac_1321-sagenb_graphed.patch) by @qed777 created at 2009-11-24 03:45:01
 
 Rado's graph editor.  Apply this patch to the **sagenb** repo.  Apply this patch only.
 
@@ -610,7 +610,7 @@ archive/issue_comments_008426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8426",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -645,7 +645,7 @@ archive/issue_comments_008427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8427",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -663,7 +663,7 @@ archive/issue_comments_008428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8428",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -681,7 +681,7 @@ archive/issue_comments_008429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8429",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -706,7 +706,7 @@ archive/issue_comments_008430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8430",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -724,7 +724,7 @@ archive/issue_comments_008431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8431",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -737,16 +737,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_008432.json:
 ```json
 {
-    "body": "Attachment [trac_1321-sage_graphed_v3.patch](tarball://root/attachments/some-uuid/ticket1321/trac_1321-sage_graphed_v3.patch) by mpatel created at 2009-11-24 07:28:14\n\nVersion 3, somewhat experimental:\n\n* Adds a keyword option `graph_name` (the default is `None`).  By default, the function attempts to guess the name of the graph.  But it can be useful to be explicit.\n\n* Adds a keyword option `replace_input` (the default is `True`).  If this is `False`, clicking \"Save\" quietly evaluates the current cell with the updated `Graph`, but it preserves the cell's input (as of when \"Save\" was clicked).  Currently, we do this by temporarily replacing the input, evaluating the cell, restoring the input, resaving the input, and resizing the cell.  We definitely need a more direct way to do this (even more direct than calling `async_request(worksheet_command('eval'),...)`).\n\nAn example:\n\n```\ng5 = graphs.TetrahedralGraph()\ngraph_editor(g5, replace_input=False, graph_name='g5_mod')\n```\n\nAfter clicking \"Save\", we can evaluate, e.g.,\n\n```\nshow(g5_mod)\n```\n\nin another cell.",
+    "body": "Attachment [trac_1321-sage_graphed_v3.patch](tarball://root/attachments/some-uuid/ticket1321/trac_1321-sage_graphed_v3.patch) by @qed777 created at 2009-11-24 07:28:14\n\nVersion 3, somewhat experimental:\n\n* Adds a keyword option `graph_name` (the default is `None`).  By default, the function attempts to guess the name of the graph.  But it can be useful to be explicit.\n\n* Adds a keyword option `replace_input` (the default is `True`).  If this is `False`, clicking \"Save\" quietly evaluates the current cell with the updated `Graph`, but it preserves the cell's input (as of when \"Save\" was clicked).  Currently, we do this by temporarily replacing the input, evaluating the cell, restoring the input, resaving the input, and resizing the cell.  We definitely need a more direct way to do this (even more direct than calling `async_request(worksheet_command('eval'),...)`).\n\nAn example:\n\n```\ng5 = graphs.TetrahedralGraph()\ngraph_editor(g5, replace_input=False, graph_name='g5_mod')\n```\n\nAfter clicking \"Save\", we can evaluate, e.g.,\n\n```\nshow(g5_mod)\n```\n\nin another cell.",
     "created_at": "2009-11-24T07:28:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8432",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_1321-sage_graphed_v3.patch](tarball://root/attachments/some-uuid/ticket1321/trac_1321-sage_graphed_v3.patch) by mpatel created at 2009-11-24 07:28:14
+Attachment [trac_1321-sage_graphed_v3.patch](tarball://root/attachments/some-uuid/ticket1321/trac_1321-sage_graphed_v3.patch) by @qed777 created at 2009-11-24 07:28:14
 
 Version 3, somewhat experimental:
 
@@ -781,7 +781,7 @@ archive/issue_comments_008433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8433",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -801,7 +801,7 @@ archive/issue_comments_008434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8434",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -830,7 +830,7 @@ archive/issue_comments_008435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8435",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -881,7 +881,7 @@ archive/issue_comments_008437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8437",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -901,7 +901,7 @@ archive/issue_comments_008438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8438",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -919,7 +919,7 @@ archive/issue_comments_008439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8439",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -937,7 +937,7 @@ archive/issue_comments_008440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8440",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -955,7 +955,7 @@ archive/issue_comments_008441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8441",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -975,7 +975,7 @@ archive/issue_comments_008442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1321#issuecomment-8442",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

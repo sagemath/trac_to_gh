@@ -3,7 +3,7 @@
 archive/issues_008934.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  vbraun\n\nCurrently computing faces of a non-full-dimensional lattice polytopes causes and exception, because when I was implementing support for such polytopes I missed a parameter in one place. The attached little patch fixes it and adds a doctest for the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8934\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nCurrently computing faces of a non-full-dimensional lattice polytopes causes and exception, because when I was implementing support for such polytopes I missed a parameter in one place. The attached little patch fixes it and adds a doctest for the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8934\n\n",
     "created_at": "2010-05-08T22:11:05Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_008934.json:
     "title": "Trivial bug in computing faces of non-full-dimensional lattice polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8934",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton
 
-CC:  vbraun
+CC:  @vbraun
 
 Currently computing faces of a non-full-dimensional lattice polytopes causes and exception, because when I was implementing support for such polytopes I missed a parameter in one place. The attached little patch fixes it and adds a doctest for the future.
 
@@ -39,7 +39,7 @@ archive/issue_comments_082269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82269",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_082270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82270",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_082271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82271",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -124,16 +124,16 @@ Also, `p.points()` fails for the same reason. It would be great if you could fix
 archive/issue_comments_082272.json:
 ```json
 {
-    "body": "Attachment [trac_8934_faces_of_nonspanning_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8934/trac_8934_faces_of_nonspanning_lattice_polytopes.patch) by novoselt created at 2010-05-10 19:15:46",
+    "body": "Attachment [trac_8934_faces_of_nonspanning_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8934/trac_8934_faces_of_nonspanning_lattice_polytopes.patch) by @novoselt created at 2010-05-10 19:15:46",
     "created_at": "2010-05-10T19:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82272",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8934_faces_of_nonspanning_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8934/trac_8934_faces_of_nonspanning_lattice_polytopes.patch) by novoselt created at 2010-05-10 19:15:46
+Attachment [trac_8934_faces_of_nonspanning_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8934/trac_8934_faces_of_nonspanning_lattice_polytopes.patch) by @novoselt created at 2010-05-10 19:15:46
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_082273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82273",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_082274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82274",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_082275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82275",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_082276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82276",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_082277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82277",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

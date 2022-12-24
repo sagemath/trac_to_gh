@@ -3,7 +3,7 @@
 archive/issues_002768.json:
 ```json
 {
-    "body": "Assignee: was\n\nmake it so that comparisons work too: return 0.0 if false, 1.0 if true.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2768\n\n",
+    "body": "Assignee: @williamstein\n\nmake it so that comparisons work too: return 0.0 if false, 1.0 if true.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2768\n\n",
     "created_at": "2008-04-02T05:47:22Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002768.json:
     "title": "add comparison operators to the fast_float mechanism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2768",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 make it so that comparisons work too: return 0.0 if false, 1.0 if true.
 
@@ -37,7 +37,7 @@ archive/issue_comments_019013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2768#issuecomment-19013",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_019014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2768#issuecomment-19014",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_019015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2768#issuecomment-19015",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -150,16 +150,16 @@ sage: sage: %timeit f(xin,yin)
 archive/issue_comments_019016.json:
 ```json
 {
-    "body": "Attachment [trac-2768-fast-float-cmp.patch](tarball://root/attachments/some-uuid/ticket2768/trac-2768-fast-float-cmp.patch) by jason created at 2008-04-02 06:53:15",
+    "body": "Attachment [trac-2768-fast-float-cmp.patch](tarball://root/attachments/some-uuid/ticket2768/trac-2768-fast-float-cmp.patch) by @jasongrout created at 2008-04-02 06:53:15",
     "created_at": "2008-04-02T06:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2768#issuecomment-19016",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-2768-fast-float-cmp.patch](tarball://root/attachments/some-uuid/ticket2768/trac-2768-fast-float-cmp.patch) by jason created at 2008-04-02 06:53:15
+Attachment [trac-2768-fast-float-cmp.patch](tarball://root/attachments/some-uuid/ticket2768/trac-2768-fast-float-cmp.patch) by @jasongrout created at 2008-04-02 06:53:15
 
 
 
@@ -173,7 +173,7 @@ archive/issue_comments_019017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2768#issuecomment-19017",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_019018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2768#issuecomment-19018",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_019020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2768#issuecomment-19020",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_019021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2768#issuecomment-19021",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_019022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2768#issuecomment-19022",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -296,16 +296,16 @@ Apply instead of the previous patch
 archive/issue_comments_019023.json:
 ```json
 {
-    "body": "Attachment [trac-2768-fast-float-cmp-2.patch](tarball://root/attachments/some-uuid/ticket2768/trac-2768-fast-float-cmp-2.patch) by jason created at 2008-05-06 23:45:37\n\nI updated the patch to remove the code in equations.py, per Robert's request.  Eventually it would be nice to have a SymbolicProposition class or something like that that would allow for easy characteristic functions (using this code to efficiently test for set membership up to certain numerical precision).",
+    "body": "Attachment [trac-2768-fast-float-cmp-2.patch](tarball://root/attachments/some-uuid/ticket2768/trac-2768-fast-float-cmp-2.patch) by @jasongrout created at 2008-05-06 23:45:37\n\nI updated the patch to remove the code in equations.py, per Robert's request.  Eventually it would be nice to have a SymbolicProposition class or something like that that would allow for easy characteristic functions (using this code to efficiently test for set membership up to certain numerical precision).",
     "created_at": "2008-05-06T23:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2768#issuecomment-19023",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-2768-fast-float-cmp-2.patch](tarball://root/attachments/some-uuid/ticket2768/trac-2768-fast-float-cmp-2.patch) by jason created at 2008-05-06 23:45:37
+Attachment [trac-2768-fast-float-cmp-2.patch](tarball://root/attachments/some-uuid/ticket2768/trac-2768-fast-float-cmp-2.patch) by @jasongrout created at 2008-05-06 23:45:37
 
 I updated the patch to remove the code in equations.py, per Robert's request.  Eventually it would be nice to have a SymbolicProposition class or something like that that would allow for easy characteristic functions (using this code to efficiently test for set membership up to certain numerical precision).
 
@@ -321,7 +321,7 @@ archive/issue_comments_019024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2768#issuecomment-19024",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

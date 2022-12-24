@@ -3,7 +3,7 @@
 archive/issues_006989.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis issue could well arise in other plotting code, I haven't checked yet.  But at least for line3d:\n\n\n```\nsage: mypoints = [vector([1,2,3]), vector([4,5,6])]\nsage: type(mypoints[0])\n<type 'sage.modules.vector_integer_dense.Vector_integer_dense'>\n```\n\nbut then:\n\n```\nsage: L = line3d(mypoints)\nsage: type(mypoints[0])\n<type 'tuple'>\n```\n\n\nso vectors are changed to tuples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6989\n\n",
+    "body": "Assignee: @williamstein\n\nThis issue could well arise in other plotting code, I haven't checked yet.  But at least for line3d:\n\n\n```\nsage: mypoints = [vector([1,2,3]), vector([4,5,6])]\nsage: type(mypoints[0])\n<type 'sage.modules.vector_integer_dense.Vector_integer_dense'>\n```\n\nbut then:\n\n```\nsage: L = line3d(mypoints)\nsage: type(mypoints[0])\n<type 'tuple'>\n```\n\n\nso vectors are changed to tuples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6989\n\n",
     "created_at": "2009-09-22T17:49:16Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_006989.json:
     "user": "mhampton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This issue could well arise in other plotting code, I haven't checked yet.  But at least for line3d:
 
@@ -55,7 +55,7 @@ archive/issue_comments_057806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57806",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to needs_review.
 archive/issue_comments_057807.json:
 ```json
 {
-    "body": "Attachment [trac-6989-copy-list.patch](tarball://root/attachments/some-uuid/ticket6989/trac-6989-copy-list.patch) by jason created at 2010-01-20 10:37:34",
+    "body": "Attachment [trac-6989-copy-list.patch](tarball://root/attachments/some-uuid/ticket6989/trac-6989-copy-list.patch) by @jasongrout created at 2010-01-20 10:37:34",
     "created_at": "2010-01-20T10:37:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57807",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6989-copy-list.patch](tarball://root/attachments/some-uuid/ticket6989/trac-6989-copy-list.patch) by jason created at 2010-01-20 10:37:34
+Attachment [trac-6989-copy-list.patch](tarball://root/attachments/some-uuid/ticket6989/trac-6989-copy-list.patch) by @jasongrout created at 2010-01-20 10:37:34
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_057808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57808",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_057809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57809",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_057810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57810",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_057812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57812",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

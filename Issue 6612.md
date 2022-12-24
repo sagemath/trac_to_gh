@@ -14,7 +14,7 @@ archive/issues_006612.json:
     "title": "sage-update selects a suiteable mirror",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6612",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: tbd
@@ -42,7 +42,7 @@ archive/issue_comments_054117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6612#issuecomment-54117",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_054119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6612#issuecomment-54119",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_054121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6612#issuecomment-54121",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_054122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6612#issuecomment-54122",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -778,7 +778,7 @@ archive/issue_comments_054125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6612#issuecomment-54125",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -847,7 +847,7 @@ archive/issue_comments_054127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6612#issuecomment-54127",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -873,16 +873,16 @@ That's a good point for your situation. I can enhance it by a litte menu, where 
 archive/issue_comments_054128.json:
 ```json
 {
-    "body": "Attachment [6612-sage-update-mirror-network-r1.patch](tarball://root/attachments/some-uuid/ticket6612/6612-sage-update-mirror-network-r1.patch) by schilly created at 2009-08-24 22:41:13\n\nenables sage -update to select a suiteable mirror from the sage mirror network,updated patch",
+    "body": "Attachment [6612-sage-update-mirror-network-r1.patch](tarball://root/attachments/some-uuid/ticket6612/6612-sage-update-mirror-network-r1.patch) by @haraldschilly created at 2009-08-24 22:41:13\n\nenables sage -update to select a suiteable mirror from the sage mirror network,updated patch",
     "created_at": "2009-08-24T22:41:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6612#issuecomment-54128",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [6612-sage-update-mirror-network-r1.patch](tarball://root/attachments/some-uuid/ticket6612/6612-sage-update-mirror-network-r1.patch) by schilly created at 2009-08-24 22:41:13
+Attachment [6612-sage-update-mirror-network-r1.patch](tarball://root/attachments/some-uuid/ticket6612/6612-sage-update-mirror-network-r1.patch) by @haraldschilly created at 2009-08-24 22:41:13
 
 enables sage -update to select a suiteable mirror from the sage mirror network,updated patch
 
@@ -898,7 +898,7 @@ archive/issue_comments_054129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6612#issuecomment-54129",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -916,7 +916,7 @@ archive/issue_comments_054130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6612#issuecomment-54130",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -929,16 +929,16 @@ complete patch
 archive/issue_comments_054131.json:
 ```json
 {
-    "body": "Attachment [6612-sage-update-mirror-network-r2.patch](tarball://root/attachments/some-uuid/ticket6612/6612-sage-update-mirror-network-r2.patch) by schilly created at 2009-09-07 10:18:45\n\npatches besides \"-r2\" can be deleted. now, it selects the \"best\" mirror automatically, uses the given one if there is any and asks the user which one to use if given url is \"ask\". additionally, this is documented in \"sage-sage\".\n\nand i know, line indentations are wrong, but the file has \"5\" by default but sage policy is 4.",
+    "body": "Attachment [6612-sage-update-mirror-network-r2.patch](tarball://root/attachments/some-uuid/ticket6612/6612-sage-update-mirror-network-r2.patch) by @haraldschilly created at 2009-09-07 10:18:45\n\npatches besides \"-r2\" can be deleted. now, it selects the \"best\" mirror automatically, uses the given one if there is any and asks the user which one to use if given url is \"ask\". additionally, this is documented in \"sage-sage\".\n\nand i know, line indentations are wrong, but the file has \"5\" by default but sage policy is 4.",
     "created_at": "2009-09-07T10:18:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6612#issuecomment-54131",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [6612-sage-update-mirror-network-r2.patch](tarball://root/attachments/some-uuid/ticket6612/6612-sage-update-mirror-network-r2.patch) by schilly created at 2009-09-07 10:18:45
+Attachment [6612-sage-update-mirror-network-r2.patch](tarball://root/attachments/some-uuid/ticket6612/6612-sage-update-mirror-network-r2.patch) by @haraldschilly created at 2009-09-07 10:18:45
 
 patches besides "-r2" can be deleted. now, it selects the "best" mirror automatically, uses the given one if there is any and asks the user which one to use if given url is "ask". additionally, this is documented in "sage-sage".
 
@@ -1004,7 +1004,7 @@ archive/issue_comments_054134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6612#issuecomment-54134",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

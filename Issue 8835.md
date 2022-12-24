@@ -14,7 +14,7 @@ archive/issues_008835.json:
     "title": "mark some latex doctests optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8835",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -74,16 +74,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8835
 archive/issue_comments_081242.json:
 ```json
 {
-    "body": "Attachment [trac_8835.patch](tarball://root/attachments/some-uuid/ticket8835/trac_8835.patch) by was created at 2010-05-01 06:22:41",
+    "body": "Attachment [trac_8835.patch](tarball://root/attachments/some-uuid/ticket8835/trac_8835.patch) by @williamstein created at 2010-05-01 06:22:41",
     "created_at": "2010-05-01T06:22:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8835#issuecomment-81242",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8835.patch](tarball://root/attachments/some-uuid/ticket8835/trac_8835.patch) by was created at 2010-05-01 06:22:41
+Attachment [trac_8835.patch](tarball://root/attachments/some-uuid/ticket8835/trac_8835.patch) by @williamstein created at 2010-05-01 06:22:41
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_081243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8835",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8835#issuecomment-81243",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

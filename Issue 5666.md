@@ -14,7 +14,7 @@ archive/issues_005666.json:
     "title": "forming ideals in IntegerModRing_generic does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5666",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
@@ -69,16 +69,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5666
 archive/issue_comments_044334.json:
 ```json
 {
-    "body": "Attachment [trac_5666.patch](tarball://root/attachments/some-uuid/ticket5666/trac_5666.patch) by was created at 2010-01-17 06:36:24",
+    "body": "Attachment [trac_5666.patch](tarball://root/attachments/some-uuid/ticket5666/trac_5666.patch) by @williamstein created at 2010-01-17 06:36:24",
     "created_at": "2010-01-17T06:36:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5666#issuecomment-44334",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5666.patch](tarball://root/attachments/some-uuid/ticket5666/trac_5666.patch) by was created at 2010-01-17 06:36:24
+Attachment [trac_5666.patch](tarball://root/attachments/some-uuid/ticket5666/trac_5666.patch) by @williamstein created at 2010-01-17 06:36:24
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_044335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5666#issuecomment-44335",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_044336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5666#issuecomment-44336",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_044337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5666#issuecomment-44337",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_044338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5666#issuecomment-44338",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

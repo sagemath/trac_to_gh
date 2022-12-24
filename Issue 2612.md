@@ -14,7 +14,7 @@ archive/issues_002612.json:
     "title": "String to Integer Conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2612",
-    "user": "vgermrk"
+    "user": "@m-r-k"
 }
 ```
 Assignee: somebody
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2612
 archive/issue_comments_017926.json:
 ```json
 {
-    "body": "Attachment [2612-integer_plus.patch](tarball://root/attachments/some-uuid/ticket2612/2612-integer_plus.patch) by robertwb created at 2008-03-26 06:16:58",
+    "body": "Attachment [2612-integer_plus.patch](tarball://root/attachments/some-uuid/ticket2612/2612-integer_plus.patch) by @robertwb created at 2008-03-26 06:16:58",
     "created_at": "2008-03-26T06:16:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2612#issuecomment-17926",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2612-integer_plus.patch](tarball://root/attachments/some-uuid/ticket2612/2612-integer_plus.patch) by robertwb created at 2008-03-26 06:16:58
+Attachment [2612-integer_plus.patch](tarball://root/attachments/some-uuid/ticket2612/2612-integer_plus.patch) by @robertwb created at 2008-03-26 06:16:58
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_017927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2612#issuecomment-17927",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

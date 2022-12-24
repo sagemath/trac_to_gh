@@ -13,7 +13,7 @@ archive/issues_000216.json:
     "title": "optional_packages misparses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/216",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby
@@ -44,7 +44,7 @@ archive/issue_comments_000962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/216#issuecomment-962",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_000963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/216#issuecomment-963",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001217.json:
 ```json
 {
-    "body": "Assignee: malb\n\nOn IRC:\n\n```\n[11:46] <wjp> malb: I slightly updated your fplll patch replacing ret < 0 by ret != 0 since fpLLL returns positive values on error\n[11:46] <malb> I disagree\n[11:46] <malb> are you sure it has to be an error if !=0 ?\n[11:47] <malb> it just returns kappa, doesn't it?\n[11:47] <wjp> only in error case, as far as I can tell\n[11:47] <malb> the example will not work if you test for ret != 0\n[11:47] <malb> i.e. the doctest I just added\n[11:48] <wjp> that's strange; I'll look through the fplll sources again then\n[11:48] <malb> also heuristic may return kappa != 0 because it is not guaranteed to be LLL reduced anyway\n[11:48] <malb> I only superficially scanned the source though\n[11:48] <wjp> hm, so it might not be usable as an error code\n[11:49] <malb> yes, but I am not sure, we could ask Damien?\n```\n\nFor a patch see fplll2.patch from #1188.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1217\n\n",
+    "body": "Assignee: @malb\n\nOn IRC:\n\n```\n[11:46] <wjp> malb: I slightly updated your fplll patch replacing ret < 0 by ret != 0 since fpLLL returns positive values on error\n[11:46] <malb> I disagree\n[11:46] <malb> are you sure it has to be an error if !=0 ?\n[11:47] <malb> it just returns kappa, doesn't it?\n[11:47] <wjp> only in error case, as far as I can tell\n[11:47] <malb> the example will not work if you test for ret != 0\n[11:47] <malb> i.e. the doctest I just added\n[11:48] <wjp> that's strange; I'll look through the fplll sources again then\n[11:48] <malb> also heuristic may return kappa != 0 because it is not guaranteed to be LLL reduced anyway\n[11:48] <malb> I only superficially scanned the source though\n[11:48] <wjp> hm, so it might not be usable as an error code\n[11:49] <malb> yes, but I am not sure, we could ask Damien?\n```\n\nFor a patch see fplll2.patch from #1188.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1217\n\n",
     "created_at": "2007-11-20T15:54:11Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001217.json:
     "user": "mabshoff"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 On IRC:
 
@@ -58,7 +58,7 @@ archive/issue_comments_007554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7554",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_007555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7555",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_007556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7556",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_007557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7557",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_007558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7558",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_007559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7559",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -181,16 +181,16 @@ That makes sense. The attached patch implements it.
 archive/issue_comments_007560.json:
 ```json
 {
-    "body": "Attachment [8015.patch](tarball://root/attachments/some-uuid/ticket1217/8015.patch) by wjp created at 2008-01-18 16:57:42",
+    "body": "Attachment [8015.patch](tarball://root/attachments/some-uuid/ticket1217/8015.patch) by @wjp created at 2008-01-18 16:57:42",
     "created_at": "2008-01-18T16:57:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7560",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [8015.patch](tarball://root/attachments/some-uuid/ticket1217/8015.patch) by wjp created at 2008-01-18 16:57:42
+Attachment [8015.patch](tarball://root/attachments/some-uuid/ticket1217/8015.patch) by @wjp created at 2008-01-18 16:57:42
 
 
 
@@ -204,7 +204,7 @@ archive/issue_comments_007561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7561",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -238,16 +238,16 @@ PS: Trying something bold and reassigning this ticket to wjp, feel free to bounc
 archive/issue_comments_007562.json:
 ```json
 {
-    "body": "Changing assignee from malb to wjp.",
+    "body": "Changing assignee from @malb to @wjp.",
     "created_at": "2008-01-18T17:21:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7562",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from malb to wjp.
+Changing assignee from @malb to @wjp.
 
 
 
@@ -261,7 +261,7 @@ archive/issue_comments_007563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7563",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_007564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1217#issuecomment-7564",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

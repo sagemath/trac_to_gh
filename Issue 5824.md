@@ -3,7 +3,7 @@
 archive/issues_005824.json:
 ```json
 {
-    "body": "Assignee: yi\n\nDSage isn't actively maintained and not working too well. Since its coverage is basically zero (0.7%) move it to its own spkg and provide hooks that make current code work. These hooks should be deprecated instantly. \n\nNote the effect on coverage for 3.4.1.rc4:\n\nBefore:\n\n```\nOverall weighted coverage score:  68.2%\nTotal number of functions:  22947\nWe need  401 more function to get to 70% coverage.\nWe need 1549 more function to get to 75% coverage.\nWe need 2696 more function to get to 80% coverage.\n```\n\nAfter:\n\n```\nOverall weighted coverage score:  69.8%\nTotal number of functions:  22432\nWe need   45 more function to get to 70% coverage.\nWe need 1166 more function to get to 75% coverage.\nWe need 2288 more function to get to 80% coverage.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5824\n\n",
+    "body": "Assignee: @yqiang\n\nDSage isn't actively maintained and not working too well. Since its coverage is basically zero (0.7%) move it to its own spkg and provide hooks that make current code work. These hooks should be deprecated instantly. \n\nNote the effect on coverage for 3.4.1.rc4:\n\nBefore:\n\n```\nOverall weighted coverage score:  68.2%\nTotal number of functions:  22947\nWe need  401 more function to get to 70% coverage.\nWe need 1549 more function to get to 75% coverage.\nWe need 2696 more function to get to 80% coverage.\n```\n\nAfter:\n\n```\nOverall weighted coverage score:  69.8%\nTotal number of functions:  22432\nWe need   45 more function to get to 70% coverage.\nWe need 1166 more function to get to 75% coverage.\nWe need 2288 more function to get to 80% coverage.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5824\n\n",
     "created_at": "2009-04-19T07:46:30Z",
     "labels": [
         "dsage",
@@ -17,7 +17,7 @@ archive/issues_005824.json:
     "user": "mabshoff"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 DSage isn't actively maintained and not working too well. Since its coverage is basically zero (0.7%) move it to its own spkg and provide hooks that make current code work. These hooks should be deprecated instantly. 
 
@@ -64,7 +64,7 @@ archive/issue_comments_045774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5824#issuecomment-45774",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_045775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5824#issuecomment-45775",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,16 +105,16 @@ patch to apply to main sage library (hg_sage.apply(...)); this deletes all of ds
 archive/issue_comments_045776.json:
 ```json
 {
-    "body": "Attachment [dsage-1.0.spkg](tarball://root/attachments/some-uuid/ticket5824/dsage-1.0.spkg) by was created at 2009-04-19 20:00:29\n\nthis is dsage as a complete self-contained spkg",
+    "body": "Attachment [dsage-1.0.spkg](tarball://root/attachments/some-uuid/ticket5824/dsage-1.0.spkg) by @williamstein created at 2009-04-19 20:00:29\n\nthis is dsage as a complete self-contained spkg",
     "created_at": "2009-04-19T20:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5824#issuecomment-45776",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [dsage-1.0.spkg](tarball://root/attachments/some-uuid/ticket5824/dsage-1.0.spkg) by was created at 2009-04-19 20:00:29
+Attachment [dsage-1.0.spkg](tarball://root/attachments/some-uuid/ticket5824/dsage-1.0.spkg) by @williamstein created at 2009-04-19 20:00:29
 
 this is dsage as a complete self-contained spkg
 
@@ -125,16 +125,16 @@ this is dsage as a complete self-contained spkg
 archive/issue_comments_045777.json:
 ```json
 {
-    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket5824/install) by was created at 2009-04-19 20:01:58\n\nreplace SAGE_ROOT/spkg/install by the attached file",
+    "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket5824/install) by @williamstein created at 2009-04-19 20:01:58\n\nreplace SAGE_ROOT/spkg/install by the attached file",
     "created_at": "2009-04-19T20:01:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5824#issuecomment-45777",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [install](tarball://root/attachments/some-uuid/ticket5824/install) by was created at 2009-04-19 20:01:58
+Attachment [install](tarball://root/attachments/some-uuid/ticket5824/install) by @williamstein created at 2009-04-19 20:01:58
 
 replace SAGE_ROOT/spkg/install by the attached file
 
@@ -145,16 +145,16 @@ replace SAGE_ROOT/spkg/install by the attached file
 archive/issue_comments_045778.json:
 ```json
 {
-    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket5824/deps) by was created at 2009-04-19 20:03:21\n\nreplace SAGE_ROOT/spkg/standard/deps by the attached file",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket5824/deps) by @williamstein created at 2009-04-19 20:03:21\n\nreplace SAGE_ROOT/spkg/standard/deps by the attached file",
     "created_at": "2009-04-19T20:03:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5824#issuecomment-45778",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [deps](tarball://root/attachments/some-uuid/ticket5824/deps) by was created at 2009-04-19 20:03:21
+Attachment [deps](tarball://root/attachments/some-uuid/ticket5824/deps) by @williamstein created at 2009-04-19 20:03:21
 
 replace SAGE_ROOT/spkg/standard/deps by the attached file
 
@@ -170,7 +170,7 @@ archive/issue_comments_045779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5824#issuecomment-45779",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_045781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5824#issuecomment-45781",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_045782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5824#issuecomment-45782",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -302,16 +302,16 @@ Michael
 archive/issue_comments_045784.json:
 ```json
 {
-    "body": "Attachment [trac_5824-part2.patch](tarball://root/attachments/some-uuid/ticket5824/trac_5824-part2.patch) by was created at 2009-04-20 02:05:21\n\napply this to the hg_sage repo right after trac_5824.patch; it updates setup.py",
+    "body": "Attachment [trac_5824-part2.patch](tarball://root/attachments/some-uuid/ticket5824/trac_5824-part2.patch) by @williamstein created at 2009-04-20 02:05:21\n\napply this to the hg_sage repo right after trac_5824.patch; it updates setup.py",
     "created_at": "2009-04-20T02:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5824#issuecomment-45784",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5824-part2.patch](tarball://root/attachments/some-uuid/ticket5824/trac_5824-part2.patch) by was created at 2009-04-20 02:05:21
+Attachment [trac_5824-part2.patch](tarball://root/attachments/some-uuid/ticket5824/trac_5824-part2.patch) by @williamstein created at 2009-04-20 02:05:21
 
 apply this to the hg_sage repo right after trac_5824.patch; it updates setup.py
 

@@ -3,7 +3,7 @@
 archive/issues_005796.json:
 ```json
 {
-    "body": "Assignee: rlm, robertwb\n\nCC:  rlm robertwb\n\nThe attached patch adds a lot of documentation to the bitsets in misc/bitset.*.  It also fixes a bug or two dealing with entries that are past the size of the set, but still within the last limb.\n\nThe other major contribution of the patch is to make the bitset interface consistent with the python set interface.  This is to make it very easy to transition from code that is written using python sets to changing it to use this bitset class.  Another advantage to changing the interface is that the language is more set-theoretic instead of demanding the user to understand the implementation details.\n\nThat said, the only big incompatible change in the interface is to make `bitset_clear` empty the set, rather than deallocate the set.  This is because the python set clear() function just empties a set.  To deallocate a bitset, use the `bitset_free` function after this patch.\n\nI grepped through the sage library and changed the uses of bitset to use the more pythonic interface.\n\nAfter this patch, doctests in misc/misc_c.pyx, groups/perm_gps/partn_ref/*.pyx, and coding/binary_code.pyx all pass (those were the places I found using bitsets).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5796\n\n",
+    "body": "Assignee: rlm, robertwb\n\nCC:  @rlmill @robertwb\n\nThe attached patch adds a lot of documentation to the bitsets in misc/bitset.*.  It also fixes a bug or two dealing with entries that are past the size of the set, but still within the last limb.\n\nThe other major contribution of the patch is to make the bitset interface consistent with the python set interface.  This is to make it very easy to transition from code that is written using python sets to changing it to use this bitset class.  Another advantage to changing the interface is that the language is more set-theoretic instead of demanding the user to understand the implementation details.\n\nThat said, the only big incompatible change in the interface is to make `bitset_clear` empty the set, rather than deallocate the set.  This is because the python set clear() function just empties a set.  To deallocate a bitset, use the `bitset_free` function after this patch.\n\nI grepped through the sage library and changed the uses of bitset to use the more pythonic interface.\n\nAfter this patch, doctests in misc/misc_c.pyx, groups/perm_gps/partn_ref/*.pyx, and coding/binary_code.pyx all pass (those were the places I found using bitsets).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5796\n\n",
     "created_at": "2009-04-16T03:12:06Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_005796.json:
     "title": "document bitsets and make interface consistent with python sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5796",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: rlm, robertwb
 
-CC:  rlm robertwb
+CC:  @rlmill @robertwb
 
 The attached patch adds a lot of documentation to the bitsets in misc/bitset.*.  It also fixes a bug or two dealing with entries that are past the size of the set, but still within the last limb.
 
@@ -47,7 +47,7 @@ archive/issue_comments_045450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45450",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_045451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45451",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -78,16 +78,16 @@ Please delete the .2.patch file.
 archive/issue_comments_045452.json:
 ```json
 {
-    "body": "Changing assignee from rlm, robertwb to jason.",
+    "body": "Changing assignee from rlm, robertwb to @jasongrout.",
     "created_at": "2009-04-16T03:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45452",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from rlm, robertwb to jason.
+Changing assignee from rlm, robertwb to @jasongrout.
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_045453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45453",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_045454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45454",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_045455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45455",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_045457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45457",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_045458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45458",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_045460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45460",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_045461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45461",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_045462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45462",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_045463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45463",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_045464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45464",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_045465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45465",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_045466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45466",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -402,16 +402,16 @@ I'm happy with less changes in partn_ref. Thanks for offering to do that.
 archive/issue_comments_045467.json:
 ```json
 {
-    "body": "Attachment [trac-5796-bitset-docs-api-cleanup.3.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-docs-api-cleanup.3.patch) by jason created at 2009-04-16 18:55:38\n\nOkay, either Robert, I think the .3.patch file is a good final version.  Can you look at it one more time?  I drastically cut down on the number of changes to existing code, just doing the necessary bitset_clear to bitset_free transition talked about above.\n\nAll tests pass in groups/perm_gps/partn_ref/*.pyx, coding/binary_code.pyx, and misc/*.pyx\n\nYou can delete all patches prior to the .3.patch.\n\nFurthermore, after the patch:\n\n\n```\nsage: search_src('bitset_clear')\nmisc/misc_c.pyx:    bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/bitset.pxi:cdef inline void bitset_clear(bitset_t bits):\nmisc/bitset.pxi:    This function is the same as bitset_clear(bits).\nmisc/bitset.pxi:    bitset_clear(bits)\nmisc/bitset.pxi:        bitset_clear(r)\nmisc/bitset.pxi:        bitset_clear(r)\n```\n\n\nSo I took care of all bitset_clear functions in existing code (the ones above in the misc/ directory use the new bitset_clear).\n\nBecause this was such a massive revision of the original patch, I'm calling for review again.",
+    "body": "Attachment [trac-5796-bitset-docs-api-cleanup.3.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-docs-api-cleanup.3.patch) by @jasongrout created at 2009-04-16 18:55:38\n\nOkay, either Robert, I think the .3.patch file is a good final version.  Can you look at it one more time?  I drastically cut down on the number of changes to existing code, just doing the necessary bitset_clear to bitset_free transition talked about above.\n\nAll tests pass in groups/perm_gps/partn_ref/*.pyx, coding/binary_code.pyx, and misc/*.pyx\n\nYou can delete all patches prior to the .3.patch.\n\nFurthermore, after the patch:\n\n\n```\nsage: search_src('bitset_clear')\nmisc/misc_c.pyx:    bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/misc_c.pyx:        bitset_clear(r)\nmisc/bitset.pxi:cdef inline void bitset_clear(bitset_t bits):\nmisc/bitset.pxi:    This function is the same as bitset_clear(bits).\nmisc/bitset.pxi:    bitset_clear(bits)\nmisc/bitset.pxi:        bitset_clear(r)\nmisc/bitset.pxi:        bitset_clear(r)\n```\n\n\nSo I took care of all bitset_clear functions in existing code (the ones above in the misc/ directory use the new bitset_clear).\n\nBecause this was such a massive revision of the original patch, I'm calling for review again.",
     "created_at": "2009-04-16T18:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45467",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-5796-bitset-docs-api-cleanup.3.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-docs-api-cleanup.3.patch) by jason created at 2009-04-16 18:55:38
+Attachment [trac-5796-bitset-docs-api-cleanup.3.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-docs-api-cleanup.3.patch) by @jasongrout created at 2009-04-16 18:55:38
 
 Okay, either Robert, I think the .3.patch file is a good final version.  Can you look at it one more time?  I drastically cut down on the number of changes to existing code, just doing the necessary bitset_clear to bitset_free transition talked about above.
 
@@ -453,7 +453,7 @@ archive/issue_comments_045468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45468",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_045469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45469",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_045470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45470",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -513,16 +513,16 @@ Could you glance at the trac-5796-bitset-bugfix-len-function.patch and, if you l
 archive/issue_comments_045471.json:
 ```json
 {
-    "body": "Attachment [trac-5796-bitset-bugfix-len-function.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-bugfix-len-function.patch) by jason created at 2009-04-20 17:54:49\n\napply on top of first patch.",
+    "body": "Attachment [trac-5796-bitset-bugfix-len-function.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-bugfix-len-function.patch) by @jasongrout created at 2009-04-20 17:54:49\n\napply on top of first patch.",
     "created_at": "2009-04-20T17:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45471",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-5796-bitset-bugfix-len-function.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-bugfix-len-function.patch) by jason created at 2009-04-20 17:54:49
+Attachment [trac-5796-bitset-bugfix-len-function.patch](tarball://root/attachments/some-uuid/ticket5796/trac-5796-bitset-bugfix-len-function.patch) by @jasongrout created at 2009-04-20 17:54:49
 
 apply on top of first patch.
 
@@ -538,7 +538,7 @@ archive/issue_comments_045472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45472",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_045473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45473",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -605,7 +605,7 @@ archive/issue_comments_045475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45475",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -618,16 +618,16 @@ apply on top of previous patches
 archive/issue_comments_045476.json:
 ```json
 {
-    "body": "Attachment [64-bit-doctest.patch](tarball://root/attachments/some-uuid/ticket5796/64-bit-doctest.patch) by jason created at 2009-05-06 04:12:44\n\nThe 64-bit-doctest.patch addresses the doctest failure on 64-bit machines.",
+    "body": "Attachment [64-bit-doctest.patch](tarball://root/attachments/some-uuid/ticket5796/64-bit-doctest.patch) by @jasongrout created at 2009-05-06 04:12:44\n\nThe 64-bit-doctest.patch addresses the doctest failure on 64-bit machines.",
     "created_at": "2009-05-06T04:12:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5796",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5796#issuecomment-45476",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [64-bit-doctest.patch](tarball://root/attachments/some-uuid/ticket5796/64-bit-doctest.patch) by jason created at 2009-05-06 04:12:44
+Attachment [64-bit-doctest.patch](tarball://root/attachments/some-uuid/ticket5796/64-bit-doctest.patch) by @jasongrout created at 2009-05-06 04:12:44
 
 The 64-bit-doctest.patch addresses the doctest failure on 64-bit machines.
 

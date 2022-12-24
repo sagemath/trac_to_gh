@@ -14,7 +14,7 @@ archive/issues_001293.json:
     "title": "sage is too big!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1293",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: mabshoff
@@ -85,7 +85,7 @@ archive/issue_comments_008116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8116",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_008117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8117",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_008118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8118",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_008119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8119",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_008120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8120",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_008121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8121",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_008122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8122",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_008125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1293",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1293#issuecomment-8125",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

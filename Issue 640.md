@@ -3,7 +3,7 @@
 archive/issues_000640.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nwas@ubuntu:~/s/local/lib/python$ ls -l|grep python\nlrwxrwxrwx  1 was was      6 2007-09-03 20:06 python -> python\nlrwxrwxrwx  1 was was      9 2007-09-03 20:06 python2.5 -> python2.5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/640\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nwas@ubuntu:~/s/local/lib/python$ ls -l|grep python\nlrwxrwxrwx  1 was was      6 2007-09-03 20:06 python -> python\nlrwxrwxrwx  1 was was      9 2007-09-03 20:06 python2.5 -> python2.5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/640\n\n",
     "created_at": "2007-09-11T20:25:30Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000640.json:
     "title": "get rid of the circular link that is created when installing the python spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/640",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -67,7 +67,7 @@ archive/issue_comments_003308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/640",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/640#issuecomment-3308",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

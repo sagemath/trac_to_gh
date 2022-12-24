@@ -14,7 +14,7 @@ archive/issues_004892.json:
     "title": "Changing precision of a Complex can convert it to a real",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4892",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: somebody
@@ -59,16 +59,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4892
 archive/issue_comments_037095.json:
 ```json
 {
-    "body": "Attachment [trac_4892-complex_approx.patch](tarball://root/attachments/some-uuid/ticket4892/trac_4892-complex_approx.patch) by rlm created at 2009-01-22 06:50:33",
+    "body": "Attachment [trac_4892-complex_approx.patch](tarball://root/attachments/some-uuid/ticket4892/trac_4892-complex_approx.patch) by @rlmill created at 2009-01-22 06:50:33",
     "created_at": "2009-01-22T06:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4892#issuecomment-37095",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_4892-complex_approx.patch](tarball://root/attachments/some-uuid/ticket4892/trac_4892-complex_approx.patch) by rlm created at 2009-01-22 06:50:33
+Attachment [trac_4892-complex_approx.patch](tarball://root/attachments/some-uuid/ticket4892/trac_4892-complex_approx.patch) by @rlmill created at 2009-01-22 06:50:33
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_037096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4892#issuecomment-37096",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -95,16 +95,16 @@ Changing status from new to assigned.
 archive/issue_comments_037097.json:
 ```json
 {
-    "body": "Changing assignee from somebody to rlm.",
+    "body": "Changing assignee from somebody to @rlmill.",
     "created_at": "2009-01-22T06:50:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4892#issuecomment-37097",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from somebody to rlm.
+Changing assignee from somebody to @rlmill.
 
 
 
@@ -118,7 +118,7 @@ archive/issue_comments_037098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4892#issuecomment-37098",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_037100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4892#issuecomment-37100",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -196,16 +196,16 @@ But the doctests were indeed wrong to start with, the vector spaces *should* be 
 archive/issue_comments_037101.json:
 ```json
 {
-    "body": "Attachment [trac_4892_1.patch](tarball://root/attachments/some-uuid/ticket4892/trac_4892_1.patch) by AlexGhitza created at 2009-01-25 02:31:04\n\napply after the other patch",
+    "body": "Attachment [trac_4892_1.patch](tarball://root/attachments/some-uuid/ticket4892/trac_4892_1.patch) by @aghitza created at 2009-01-25 02:31:04\n\napply after the other patch",
     "created_at": "2009-01-25T02:31:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4892#issuecomment-37101",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_4892_1.patch](tarball://root/attachments/some-uuid/ticket4892/trac_4892_1.patch) by AlexGhitza created at 2009-01-25 02:31:04
+Attachment [trac_4892_1.patch](tarball://root/attachments/some-uuid/ticket4892/trac_4892_1.patch) by @aghitza created at 2009-01-25 02:31:04
 
 apply after the other patch
 
@@ -221,7 +221,7 @@ archive/issue_comments_037102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4892#issuecomment-37102",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

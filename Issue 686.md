@@ -14,7 +14,7 @@ archive/issues_000686.json:
     "title": "write MPolynomial_libsingular over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/686",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_003561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/686#issuecomment-3561",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_003562.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2007-10-21T22:51:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/686#issuecomment-3562",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_003563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/686#issuecomment-3563",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_003564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/686#issuecomment-3564",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_003567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/686#issuecomment-3567",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -348,16 +348,16 @@ Michael
 archive/issue_comments_003569.json:
 ```json
 {
-    "body": "Attachment [mpolynomial_libsingular_qqa.patch](tarball://root/attachments/some-uuid/ticket686/mpolynomial_libsingular_qqa.patch) by malb created at 2008-08-31 16:10:31",
+    "body": "Attachment [mpolynomial_libsingular_qqa.patch](tarball://root/attachments/some-uuid/ticket686/mpolynomial_libsingular_qqa.patch) by @malb created at 2008-08-31 16:10:31",
     "created_at": "2008-08-31T16:10:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/686#issuecomment-3569",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpolynomial_libsingular_qqa.patch](tarball://root/attachments/some-uuid/ticket686/mpolynomial_libsingular_qqa.patch) by malb created at 2008-08-31 16:10:31
+Attachment [mpolynomial_libsingular_qqa.patch](tarball://root/attachments/some-uuid/ticket686/mpolynomial_libsingular_qqa.patch) by @malb created at 2008-08-31 16:10:31
 
 
 
@@ -371,7 +371,7 @@ archive/issue_comments_003570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/686#issuecomment-3570",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_003571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/686#issuecomment-3571",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_003573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/686",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/686#issuecomment-3573",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008921.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jason rbeezer\n\nThe cross product is defined for 7D, this patch allows for that functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8921\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout @rbeezer\n\nThe cross product is defined for 7D, this patch allows for that functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8921\n\n",
     "created_at": "2010-05-07T18:39:09Z",
     "labels": [
         "linear algebra",
@@ -19,7 +19,7 @@ archive/issues_008921.json:
 ```
 Assignee: jason, was
 
-CC:  jason rbeezer
+CC:  @jasongrout @rbeezer
 
 The cross product is defined for 7D, this patch allows for that functionality.
 
@@ -57,7 +57,7 @@ archive/issue_comments_082182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8921#issuecomment-82182",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_082183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8921#issuecomment-82183",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_082184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8921#issuecomment-82184",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_082185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8921#issuecomment-82185",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_082186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8921#issuecomment-82186",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_082187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8921#issuecomment-82187",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

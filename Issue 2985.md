@@ -14,7 +14,7 @@ archive/issues_002985.json:
     "title": "ITANIUM (RHEL 5) -- bug in rubik.py's OptimalSolver()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2985",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -166,7 +166,7 @@ archive/issue_comments_020556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2985",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2985#issuecomment-20556",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

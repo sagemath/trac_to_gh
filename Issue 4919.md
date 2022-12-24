@@ -14,7 +14,7 @@ archive/issues_004919.json:
     "title": "convert sage.misc.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4919",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4919
 archive/issue_comments_037324.json:
 ```json
 {
-    "body": "Attachment [trac_4919.patch](tarball://root/attachments/some-uuid/ticket4919/trac_4919.patch) by mhansen created at 2009-01-02 02:23:05",
+    "body": "Attachment [trac_4919.patch](tarball://root/attachments/some-uuid/ticket4919/trac_4919.patch) by @mwhansen created at 2009-01-02 02:23:05",
     "created_at": "2009-01-02T02:23:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4919#issuecomment-37324",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4919.patch](tarball://root/attachments/some-uuid/ticket4919/trac_4919.patch) by mhansen created at 2009-01-02 02:23:05
+Attachment [trac_4919.patch](tarball://root/attachments/some-uuid/ticket4919/trac_4919.patch) by @mwhansen created at 2009-01-02 02:23:05
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_037325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4919#issuecomment-37325",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -118,16 +118,16 @@ trace.py: not part of the reference manual.  looks good anyway.
 archive/issue_comments_037326.json:
 ```json
 {
-    "body": "Attachment [trac_4919-2.patch](tarball://root/attachments/some-uuid/ticket4919/trac_4919-2.patch) by mhansen created at 2009-01-11 03:45:12",
+    "body": "Attachment [trac_4919-2.patch](tarball://root/attachments/some-uuid/ticket4919/trac_4919-2.patch) by @mwhansen created at 2009-01-11 03:45:12",
     "created_at": "2009-01-11T03:45:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4919#issuecomment-37326",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4919-2.patch](tarball://root/attachments/some-uuid/ticket4919/trac_4919-2.patch) by mhansen created at 2009-01-11 03:45:12
+Attachment [trac_4919-2.patch](tarball://root/attachments/some-uuid/ticket4919/trac_4919-2.patch) by @mwhansen created at 2009-01-11 03:45:12
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_037327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4919#issuecomment-37327",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_037328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4919#issuecomment-37328",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -176,16 +176,16 @@ archive/issue_comments_037328.json:
 archive/issue_comments_037329.json:
 ```json
 {
-    "body": "Attachment [sage.misc-final.patch](tarball://root/attachments/some-uuid/ticket4919/sage.misc-final.patch) by jhpalmieri created at 2009-02-21 23:04:09\n\nI still see the problem with lines 415-419 in hg.py: should be an itemized list, not a paragraph.",
+    "body": "Attachment [sage.misc-final.patch](tarball://root/attachments/some-uuid/ticket4919/sage.misc-final.patch) by @jhpalmieri created at 2009-02-21 23:04:09\n\nI still see the problem with lines 415-419 in hg.py: should be an itemized list, not a paragraph.",
     "created_at": "2009-02-21T23:04:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4919#issuecomment-37329",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [sage.misc-final.patch](tarball://root/attachments/some-uuid/ticket4919/sage.misc-final.patch) by jhpalmieri created at 2009-02-21 23:04:09
+Attachment [sage.misc-final.patch](tarball://root/attachments/some-uuid/ticket4919/sage.misc-final.patch) by @jhpalmieri created at 2009-02-21 23:04:09
 
 I still see the problem with lines 415-419 in hg.py: should be an itemized list, not a paragraph.
 
@@ -263,7 +263,7 @@ archive/issue_comments_037333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4919",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4919#issuecomment-37333",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

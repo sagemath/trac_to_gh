@@ -3,7 +3,7 @@
 archive/issues_005184.json:
 ```json
 {
-    "body": "Assignee: was\n\nHere is an illustration:\n\n```\nsage: v = vector({1: 1, 3: -1})\nsage: w = vector({1: -1, 3: 0})\nsage: v\n(0, 1, 0, -1)\nsage: w\n(0, -1, 0, 0)\nsage: v+w\n(0, 0, 0, -1)\nsage: (v+w).nonzero_positions()\n[1, 3]\n```\n\n(I don't think this is related to #4648.  nonzero_positions for sums of sparse matrices seems to behave well in the one example I tried.)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5184\n\n",
+    "body": "Assignee: @williamstein\n\nHere is an illustration:\n\n```\nsage: v = vector({1: 1, 3: -1})\nsage: w = vector({1: -1, 3: 0})\nsage: v\n(0, 1, 0, -1)\nsage: w\n(0, -1, 0, 0)\nsage: v+w\n(0, 0, 0, -1)\nsage: (v+w).nonzero_positions()\n[1, 3]\n```\n\n(I don't think this is related to #4648.  nonzero_positions for sums of sparse matrices seems to behave well in the one example I tried.)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5184\n\n",
     "created_at": "2009-02-05T03:07:15Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005184.json:
     "title": "nonzero_positions is broken for sparse vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5184",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Here is an illustration:
 
@@ -54,7 +54,7 @@ archive/issue_comments_039749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5184#issuecomment-39749",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_039750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5184#issuecomment-39750",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_039751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5184#issuecomment-39751",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_039752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5184#issuecomment-39752",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -131,16 +131,16 @@ Changing status from new to assigned.
 archive/issue_comments_039753.json:
 ```json
 {
-    "body": "Changing assignee from was to jhpalmieri.",
+    "body": "Changing assignee from @williamstein to @jhpalmieri.",
     "created_at": "2009-02-17T21:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5184#issuecomment-39753",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from was to jhpalmieri.
+Changing assignee from @williamstein to @jhpalmieri.
 
 
 
@@ -154,7 +154,7 @@ archive/issue_comments_039754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5184#issuecomment-39754",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_039756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5184#issuecomment-39756",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -221,16 +221,16 @@ only apply this one
 archive/issue_comments_039757.json:
 ```json
 {
-    "body": "Attachment [5184-new.patch](tarball://root/attachments/some-uuid/ticket5184/5184-new.patch) by jhpalmieri created at 2009-02-21 17:26:21\n\nI changed the tests from `a != 0` to `a`, and I put in a comment about sparse vs. dense -- actually, I put it in twice.  I had to rebase the patch, also (and it will probably have to be rebased after the ReST changes, too...).",
+    "body": "Attachment [5184-new.patch](tarball://root/attachments/some-uuid/ticket5184/5184-new.patch) by @jhpalmieri created at 2009-02-21 17:26:21\n\nI changed the tests from `a != 0` to `a`, and I put in a comment about sparse vs. dense -- actually, I put it in twice.  I had to rebase the patch, also (and it will probably have to be rebased after the ReST changes, too...).",
     "created_at": "2009-02-21T17:26:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5184#issuecomment-39757",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5184-new.patch](tarball://root/attachments/some-uuid/ticket5184/5184-new.patch) by jhpalmieri created at 2009-02-21 17:26:21
+Attachment [5184-new.patch](tarball://root/attachments/some-uuid/ticket5184/5184-new.patch) by @jhpalmieri created at 2009-02-21 17:26:21
 
 I changed the tests from `a != 0` to `a`, and I put in a comment about sparse vs. dense -- actually, I put it in twice.  I had to rebase the patch, also (and it will probably have to be rebased after the ReST changes, too...).
 
@@ -246,7 +246,7 @@ archive/issue_comments_039758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5184#issuecomment-39758",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -259,16 +259,16 @@ rebased against 3.4.alpha0; apply only this patch
 archive/issue_comments_039759.json:
 ```json
 {
-    "body": "Attachment [5184-rebased.patch](tarball://root/attachments/some-uuid/ticket5184/5184-rebased.patch) by jhpalmieri created at 2009-02-25 23:58:29\n\nHere's a new patch, rebased against 3.4.alpha0.",
+    "body": "Attachment [5184-rebased.patch](tarball://root/attachments/some-uuid/ticket5184/5184-rebased.patch) by @jhpalmieri created at 2009-02-25 23:58:29\n\nHere's a new patch, rebased against 3.4.alpha0.",
     "created_at": "2009-02-25T23:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5184#issuecomment-39759",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5184-rebased.patch](tarball://root/attachments/some-uuid/ticket5184/5184-rebased.patch) by jhpalmieri created at 2009-02-25 23:58:29
+Attachment [5184-rebased.patch](tarball://root/attachments/some-uuid/ticket5184/5184-rebased.patch) by @jhpalmieri created at 2009-02-25 23:58:29
 
 Here's a new patch, rebased against 3.4.alpha0.
 

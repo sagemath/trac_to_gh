@@ -3,7 +3,7 @@
 archive/issues_008405.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis patch implements LP formulations of Linear Arboricity and Acyclic edge coloring\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8405\n\n",
+    "body": "Assignee: @rlmill\n\nThis patch implements LP formulations of Linear Arboricity and Acyclic edge coloring\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8405\n\n",
     "created_at": "2010-02-28T23:46:35Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_008405.json:
     "title": "Linear Arboricity, Acyclic edge coloring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8405",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This patch implements LP formulations of Linear Arboricity and Acyclic edge coloring
 
@@ -39,7 +39,7 @@ archive/issue_comments_075305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8405#issuecomment-75305",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_075306.json:
 ```json
 {
-    "body": "Attachment [trac_8405.patch](tarball://root/attachments/some-uuid/ticket8405/trac_8405.patch) by ncohen created at 2010-03-01 00:11:12",
+    "body": "Attachment [trac_8405.patch](tarball://root/attachments/some-uuid/ticket8405/trac_8405.patch) by @nathanncohen created at 2010-03-01 00:11:12",
     "created_at": "2010-03-01T00:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8405#issuecomment-75306",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8405.patch](tarball://root/attachments/some-uuid/ticket8405/trac_8405.patch) by ncohen created at 2010-03-01 00:11:12
+Attachment [trac_8405.patch](tarball://root/attachments/some-uuid/ticket8405/trac_8405.patch) by @nathanncohen created at 2010-03-01 00:11:12
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_075307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8405#issuecomment-75307",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

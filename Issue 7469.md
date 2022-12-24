@@ -3,7 +3,7 @@
 archive/issues_007469.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mpatel\n\nMore tests is always good, and will be useful in the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7469\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777\n\nMore tests is always good, and will be useful in the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7469\n\n",
     "created_at": "2009-11-15T07:32:36Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007469.json:
     "title": "SageNB - Add new tests regarding publishing and editing published worksheets.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7469",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
 
-CC:  mpatel
+CC:  @qed777
 
 More tests is always good, and will be useful in the future.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7469
 archive/issue_comments_062913.json:
 ```json
 {
-    "body": "Attachment [trac_7469-new-publishing-tests.patch](tarball://root/attachments/some-uuid/ticket7469/trac_7469-new-publishing-tests.patch) by timdumol created at 2009-11-15 07:33:38\n\nThis adds an additional test. Depends on #7468.",
+    "body": "Attachment [trac_7469-new-publishing-tests.patch](tarball://root/attachments/some-uuid/ticket7469/trac_7469-new-publishing-tests.patch) by @TimDumol created at 2009-11-15 07:33:38\n\nThis adds an additional test. Depends on #7468.",
     "created_at": "2009-11-15T07:33:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7469#issuecomment-62913",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7469-new-publishing-tests.patch](tarball://root/attachments/some-uuid/ticket7469/trac_7469-new-publishing-tests.patch) by timdumol created at 2009-11-15 07:33:38
+Attachment [trac_7469-new-publishing-tests.patch](tarball://root/attachments/some-uuid/ticket7469/trac_7469-new-publishing-tests.patch) by @TimDumol created at 2009-11-15 07:33:38
 
 This adds an additional test. Depends on #7468.
 
@@ -59,7 +59,7 @@ archive/issue_comments_062914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7469#issuecomment-62914",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_062917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7469#issuecomment-62917",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_062918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7469#issuecomment-62918",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_062919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7469#issuecomment-62919",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_062920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7469#issuecomment-62920",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_062921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7469#issuecomment-62921",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_062922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7469#issuecomment-62922",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

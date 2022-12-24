@@ -3,7 +3,7 @@
 archive/issues_002952.json:
 ```json
 {
-    "body": "Assignee: roed\n\nCurrently\n\n```\nsage: R.<q>=QQ[]\nsage: L.<x,y,z> = LaurentPolynomialRing(R)\nsage: f=(x+y+z^-1)^2\nsage: f.substitute(z=1)\n```\n\ngives an error because it PolynomialRing isn't imported categories/pushout.py for the Laurent functor.\n\nOnce, that it is fixed, the above commands give a coercion error between the fraction field of QQ['q'] and the Laurent polynomial ring over QQ['q']\n\nIssue created by migration from https://trac.sagemath.org/ticket/2952\n\n",
+    "body": "Assignee: @roed314\n\nCurrently\n\n```\nsage: R.<q>=QQ[]\nsage: L.<x,y,z> = LaurentPolynomialRing(R)\nsage: f=(x+y+z^-1)^2\nsage: f.substitute(z=1)\n```\n\ngives an error because it PolynomialRing isn't imported categories/pushout.py for the Laurent functor.\n\nOnce, that it is fixed, the above commands give a coercion error between the fraction field of QQ['q'] and the Laurent polynomial ring over QQ['q']\n\nIssue created by migration from https://trac.sagemath.org/ticket/2952\n\n",
     "created_at": "2008-04-18T21:04:57Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_002952.json:
     "title": "LaurentPolynomialRing coercion error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2952",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 Currently
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2952
 archive/issue_comments_020352.json:
 ```json
 {
-    "body": "Attachment [2952.2.patch](tarball://root/attachments/some-uuid/ticket2952/2952.2.patch) by roed created at 2008-04-21 10:27:10",
+    "body": "Attachment [2952.2.patch](tarball://root/attachments/some-uuid/ticket2952/2952.2.patch) by @roed314 created at 2008-04-21 10:27:10",
     "created_at": "2008-04-21T10:27:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20352",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [2952.2.patch](tarball://root/attachments/some-uuid/ticket2952/2952.2.patch) by roed created at 2008-04-21 10:27:10
+Attachment [2952.2.patch](tarball://root/attachments/some-uuid/ticket2952/2952.2.patch) by @roed314 created at 2008-04-21 10:27:10
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_020353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20353",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_020355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20355",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_020356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20356",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_020357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20357",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_020358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20358",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_020359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20359",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_020360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20360",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_020361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20361",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_020362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20362",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_020363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20363",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

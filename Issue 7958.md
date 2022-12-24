@@ -3,7 +3,7 @@
 archive/issues_007958.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n```\nsage: F = Frac(PolynomialRing(ZZ, 't'))\nsage: F(1/2)\n...\nTypeError: no conversion of this rational to integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7958\n\n",
+    "body": "Assignee: @aghitza\n\n\n```\nsage: F = Frac(PolynomialRing(ZZ, 't'))\nsage: F(1/2)\n...\nTypeError: no conversion of this rational to integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7958\n\n",
     "created_at": "2010-01-16T19:28:41Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_007958.json:
     "user": "spancratz"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 ```
@@ -39,7 +39,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/7958
 archive/issue_comments_069439.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to robertwb.",
+    "body": "Changing assignee from @aghitza to @robertwb.",
     "created_at": "2010-01-16T19:29:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7958",
     "type": "issue_comment",
@@ -48,7 +48,7 @@ archive/issue_comments_069439.json:
 }
 ```
 
-Changing assignee from AlexGhitza to robertwb.
+Changing assignee from @aghitza to @robertwb.
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_069443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7958#issuecomment-69443",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_069444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7958#issuecomment-69444",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -252,16 +252,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_069449.json:
 ```json
 {
-    "body": "Attachment [trac7958_d.patch](tarball://root/attachments/some-uuid/ticket7958/trac7958_d.patch) by mhansen created at 2010-01-20 04:16:42\n\n\n```\n\nsage: _.<x> = ZZ[]\nsage: K.<a> = NumberField(x^5-3*x^4+2424*x^3+2*x-232)\nsage: R.<b> = K.ring_of_integers()\nsage: S.<y> = R[]\nsage: F = Frac(S)\nsage: F(1/a)\na^4 - 3*a^3 + 2424*a^2 + 2/232\nsage: F(1/a).numerator()\na^4 - 3*a^3 + 2424*a^2 + 2\nsage: F(1/a).denominator()\n232\n\n```\n",
+    "body": "Attachment [trac7958_d.patch](tarball://root/attachments/some-uuid/ticket7958/trac7958_d.patch) by @mwhansen created at 2010-01-20 04:16:42\n\n\n```\n\nsage: _.<x> = ZZ[]\nsage: K.<a> = NumberField(x^5-3*x^4+2424*x^3+2*x-232)\nsage: R.<b> = K.ring_of_integers()\nsage: S.<y> = R[]\nsage: F = Frac(S)\nsage: F(1/a)\na^4 - 3*a^3 + 2424*a^2 + 2/232\nsage: F(1/a).numerator()\na^4 - 3*a^3 + 2424*a^2 + 2\nsage: F(1/a).denominator()\n232\n\n```\n",
     "created_at": "2010-01-20T04:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7958#issuecomment-69449",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac7958_d.patch](tarball://root/attachments/some-uuid/ticket7958/trac7958_d.patch) by mhansen created at 2010-01-20 04:16:42
+Attachment [trac7958_d.patch](tarball://root/attachments/some-uuid/ticket7958/trac7958_d.patch) by @mwhansen created at 2010-01-20 04:16:42
 
 
 ```
@@ -293,7 +293,7 @@ archive/issue_comments_069450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7958#issuecomment-69450",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -306,16 +306,16 @@ Combined version of the above patches.
 archive/issue_comments_069451.json:
 ```json
 {
-    "body": "Attachment [trac_7958-atomic.patch](tarball://root/attachments/some-uuid/ticket7958/trac_7958-atomic.patch) by mhansen created at 2010-01-20 05:50:41",
+    "body": "Attachment [trac_7958-atomic.patch](tarball://root/attachments/some-uuid/ticket7958/trac_7958-atomic.patch) by @mwhansen created at 2010-01-20 05:50:41",
     "created_at": "2010-01-20T05:50:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7958",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7958#issuecomment-69451",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7958-atomic.patch](tarball://root/attachments/some-uuid/ticket7958/trac_7958-atomic.patch) by mhansen created at 2010-01-20 05:50:41
+Attachment [trac_7958-atomic.patch](tarball://root/attachments/some-uuid/ticket7958/trac_7958-atomic.patch) by @mwhansen created at 2010-01-20 05:50:41
 
 
 

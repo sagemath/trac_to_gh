@@ -3,7 +3,7 @@
 archive/issues_009837.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\nThis addresses a bug that was reported here:\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/252fd7fa0e297214\n\nThe `__call__` method of a Weyl Character ring, when `style=\"coroots\"` is specified, tries to interpret the arguments as the coroots of a weight; that weight\nis then the actual argument. However this is not appropriate if the argument is\nnot a tuple. Therefore this should be tested.\n\nThe patch implements the test.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9838\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nThis addresses a bug that was reported here:\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/252fd7fa0e297214\n\nThe `__call__` method of a Weyl Character ring, when `style=\"coroots\"` is specified, tries to interpret the arguments as the coroots of a weight; that weight\nis then the actual argument. However this is not appropriate if the argument is\nnot a tuple. Therefore this should be tested.\n\nThe patch implements the test.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9838\n\n",
     "created_at": "2010-08-29T19:03:03Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009837.json:
     "title": "Bugfix in WeylCharacterRing __call__ method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9837",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9838
 archive/issue_comments_097081.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to bump.",
+    "body": "Changing assignee from @aghitza to @dwbump.",
     "created_at": "2010-08-29T19:08:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97081",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Changing assignee from AlexGhitza to bump.
+Changing assignee from @aghitza to @dwbump.
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_097082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97082",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_097083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97083",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_097084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97084",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_097085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97085",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_097086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97086",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_097087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97087",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_097088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97088",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_097089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97089",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_097090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97090",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_097091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97091",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -247,16 +247,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_097092.json:
 ```json
 {
-    "body": "Attachment [trac_9838.patch](tarball://root/attachments/some-uuid/ticket9838/trac_9838.patch) by bump created at 2010-10-27 16:25:02\n\n#9838: bugfix in WeylCharac terRing call method",
+    "body": "Attachment [trac_9838.patch](tarball://root/attachments/some-uuid/ticket9838/trac_9838.patch) by @dwbump created at 2010-10-27 16:25:02\n\n#9838: bugfix in WeylCharac terRing call method",
     "created_at": "2010-10-27T16:25:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97092",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_9838.patch](tarball://root/attachments/some-uuid/ticket9838/trac_9838.patch) by bump created at 2010-10-27 16:25:02
+Attachment [trac_9838.patch](tarball://root/attachments/some-uuid/ticket9838/trac_9838.patch) by @dwbump created at 2010-10-27 16:25:02
 
 #9838: bugfix in WeylCharac terRing call method
 
@@ -272,7 +272,7 @@ archive/issue_comments_097093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97093",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_097094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97094",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_097095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97095",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_097096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97096",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_097097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97097",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_097098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97098",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_097099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97099",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_097105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97105",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006934.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason rbeezer\n\nKeywords: symbolics, matrices, polynomials\n\nFrom sage-devel [http://groups.google.com/group/sage-devel/browse_thread/thread/4f39037d7fd17133](http://groups.google.com/group/sage-devel/browse_thread/thread/4f39037d7fd17133) we have the following:\n\n```\nsage: A=matrix(SR,[[1,2,3],[4,5,6],[7,8,9]]) \nsage: A.eigenvectors_right() \nTraceback (most recent call last): \n... \nTypeError: degree() takes exactly one argument (0 given)\n```\n\nAs it turns out, there are a HOST of things you can't do with A because of the new symbolics, which no one has yet implemented.  Another example:\n\n```\nsage: A = matrix(SR, [[1,2,3],[4,5,6],[7,8,9]])\nsage: A.charpoly()\n(x - 1)*((x - 9)*(x - 5) - 48) - 29*x - 3\nsage: type(_)\n<type 'sage.symbolic.expression.Expression'>\nsage: B = matrix(QQ, [[1,2,3],[4,5,6],[7,8,9]])\nsage: B.charpoly()\nx^3 - 15*x^2 - 18*x\nsage: type(_)\n<class 'sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense'>\n```\n\nwhich means minpoly does not work (because it requires a polynomial, not an expression) and so on. \n\nThese were not caught before because these things were not tested, since they weren't actually implemented in the dense symbolic matrix file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6934\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @rbeezer\n\nKeywords: symbolics, matrices, polynomials\n\nFrom sage-devel [http://groups.google.com/group/sage-devel/browse_thread/thread/4f39037d7fd17133](http://groups.google.com/group/sage-devel/browse_thread/thread/4f39037d7fd17133) we have the following:\n\n```\nsage: A=matrix(SR,[[1,2,3],[4,5,6],[7,8,9]]) \nsage: A.eigenvectors_right() \nTraceback (most recent call last): \n... \nTypeError: degree() takes exactly one argument (0 given)\n```\n\nAs it turns out, there are a HOST of things you can't do with A because of the new symbolics, which no one has yet implemented.  Another example:\n\n```\nsage: A = matrix(SR, [[1,2,3],[4,5,6],[7,8,9]])\nsage: A.charpoly()\n(x - 1)*((x - 9)*(x - 5) - 48) - 29*x - 3\nsage: type(_)\n<type 'sage.symbolic.expression.Expression'>\nsage: B = matrix(QQ, [[1,2,3],[4,5,6],[7,8,9]])\nsage: B.charpoly()\nx^3 - 15*x^2 - 18*x\nsage: type(_)\n<class 'sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense'>\n```\n\nwhich means minpoly does not work (because it requires a polynomial, not an expression) and so on. \n\nThese were not caught before because these things were not tested, since they weren't actually implemented in the dense symbolic matrix file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6934\n\n",
     "created_at": "2009-09-15T13:46:05Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_006934.json:
     "title": "Fix eigenvectors (and a lot of other stuff) for symbolic matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6934",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason rbeezer
+CC:  @jasongrout @rbeezer
 
 Keywords: symbolics, matrices, polynomials
 
@@ -68,7 +68,7 @@ archive/issue_comments_057293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57293",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_057294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57294",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_057295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57295",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_057296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57296",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_057297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57297",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_057299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57299",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_057300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57300",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -213,16 +213,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_057301.json:
 ```json
 {
-    "body": "Attachment [trac-6934-SR-eigenvectors.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-SR-eigenvectors.patch) by jason created at 2010-05-25 17:02:55\n\nOkay, I fixed everything and this should be ready for review now.  Doctests pass on 4.4.1 in matrix/*.py[x]",
+    "body": "Attachment [trac-6934-SR-eigenvectors.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-SR-eigenvectors.patch) by @jasongrout created at 2010-05-25 17:02:55\n\nOkay, I fixed everything and this should be ready for review now.  Doctests pass on 4.4.1 in matrix/*.py[x]",
     "created_at": "2010-05-25T17:02:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57301",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6934-SR-eigenvectors.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-SR-eigenvectors.patch) by jason created at 2010-05-25 17:02:55
+Attachment [trac-6934-SR-eigenvectors.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-SR-eigenvectors.patch) by @jasongrout created at 2010-05-25 17:02:55
 
 Okay, I fixed everything and this should be ready for review now.  Doctests pass on 4.4.1 in matrix/*.py[x]
 
@@ -238,7 +238,7 @@ archive/issue_comments_057302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57302",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_057303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57303",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_057304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57304",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -301,16 +301,16 @@ It's too bad that we don't have a generic RootOf construct (I don't believe maxi
 archive/issue_comments_057305.json:
 ```json
 {
-    "body": "Attachment [trac_6934-reviewer-doctests.patch](tarball://root/attachments/some-uuid/ticket6934/trac_6934-reviewer-doctests.patch) by rbeezer created at 2010-05-29 06:03:53\n\nOK, I see.  For example, this does a nice job with eigenvalues of graphs.  I've attached some doctests along these lines - if you want to include them, then go ahead and provide the review for the reviewer patch.  I'm clear for a positive review on the rest.",
+    "body": "Attachment [trac_6934-reviewer-doctests.patch](tarball://root/attachments/some-uuid/ticket6934/trac_6934-reviewer-doctests.patch) by @rbeezer created at 2010-05-29 06:03:53\n\nOK, I see.  For example, this does a nice job with eigenvalues of graphs.  I've attached some doctests along these lines - if you want to include them, then go ahead and provide the review for the reviewer patch.  I'm clear for a positive review on the rest.",
     "created_at": "2010-05-29T06:03:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57305",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_6934-reviewer-doctests.patch](tarball://root/attachments/some-uuid/ticket6934/trac_6934-reviewer-doctests.patch) by rbeezer created at 2010-05-29 06:03:53
+Attachment [trac_6934-reviewer-doctests.patch](tarball://root/attachments/some-uuid/ticket6934/trac_6934-reviewer-doctests.patch) by @rbeezer created at 2010-05-29 06:03:53
 
 OK, I see.  For example, this does a nice job with eigenvalues of graphs.  I've attached some doctests along these lines - if you want to include them, then go ahead and provide the review for the reviewer patch.  I'm clear for a positive review on the rest.
 
@@ -321,16 +321,16 @@ OK, I see.  For example, this does a nice job with eigenvalues of graphs.  I've 
 archive/issue_comments_057306.json:
 ```json
 {
-    "body": "Attachment [trac-6934-more-doctest-issues.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-more-doctest-issues.patch) by jason created at 2010-09-03 21:53:07\n\napply on top of previous patches",
+    "body": "Attachment [trac-6934-more-doctest-issues.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-more-doctest-issues.patch) by @jasongrout created at 2010-09-03 21:53:07\n\napply on top of previous patches",
     "created_at": "2010-09-03T21:53:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57306",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6934-more-doctest-issues.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-more-doctest-issues.patch) by jason created at 2010-09-03 21:53:07
+Attachment [trac-6934-more-doctest-issues.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-more-doctest-issues.patch) by @jasongrout created at 2010-09-03 21:53:07
 
 apply on top of previous patches
 
@@ -346,7 +346,7 @@ archive/issue_comments_057307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57307",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_057308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57308",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_057309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57309",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_057310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57310",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_057311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57311",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -433,16 +433,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_057312.json:
 ```json
 {
-    "body": "Attachment [trac-6934-more-doctests-issues.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-more-doctests-issues.patch) by rbeezer created at 2010-09-05 06:31:29",
+    "body": "Attachment [trac-6934-more-doctests-issues.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-more-doctests-issues.patch) by @rbeezer created at 2010-09-05 06:31:29",
     "created_at": "2010-09-05T06:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57312",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac-6934-more-doctests-issues.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-more-doctests-issues.patch) by rbeezer created at 2010-09-05 06:31:29
+Attachment [trac-6934-more-doctests-issues.patch](tarball://root/attachments/some-uuid/ticket6934/trac-6934-more-doctests-issues.patch) by @rbeezer created at 2010-09-05 06:31:29
 
 
 
@@ -456,7 +456,7 @@ archive/issue_comments_057313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57313",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_057314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57314",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_057315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57315",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_057316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6934",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6934#issuecomment-57316",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

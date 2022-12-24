@@ -3,7 +3,7 @@
 archive/issues_003109.json:
 ```json
 {
-    "body": "Assignee: was\n\nImplement P.divide(n) for P a point on an elliptic curve and n an integer.  This will:\n\n1. try to find an explicit point Q defined over the same field as P such that n*Q == P.\n2. If no such Q exists, raise a ValueError.\n\nAlso, implement P.is_divisible_by(n) trivially in terms of the above, and document\nthe connection between the two functions.  Also, have both implemented in terms of\na third function that just finds the polynomial whose root is x(Q), so we\ncan implement is_divisible_by more efficiently. \n\nAn algorithm to do this is described at the end of section 3 of \n    http://wstein.org/papers/kolyconj/\n\nIf you see this ticket and think of doing this, please immediately contact me (wstein`@`gmail.com) before, since I'm planning on doing this very soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3109\n\n",
+    "body": "Assignee: @williamstein\n\nImplement P.divide(n) for P a point on an elliptic curve and n an integer.  This will:\n\n1. try to find an explicit point Q defined over the same field as P such that n*Q == P.\n2. If no such Q exists, raise a ValueError.\n\nAlso, implement P.is_divisible_by(n) trivially in terms of the above, and document\nthe connection between the two functions.  Also, have both implemented in terms of\na third function that just finds the polynomial whose root is x(Q), so we\ncan implement is_divisible_by more efficiently. \n\nAn algorithm to do this is described at the end of section 3 of \n    http://wstein.org/papers/kolyconj/\n\nIf you see this ticket and think of doing this, please immediately contact me (wstein`@`gmail.com) before, since I'm planning on doing this very soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3109\n\n",
     "created_at": "2008-05-06T02:19:46Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003109.json:
     "title": "elliptic curves -- implement P.divide(n) for P a point on an elliptic curve and n an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3109",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Implement P.divide(n) for P a point on an elliptic curve and n an integer.  This will:
 
@@ -50,7 +50,7 @@ archive/issue_comments_021483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21483",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,16 +63,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_021484.json:
 ```json
 {
-    "body": "Attachment [sage-3109-part1.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part1.patch) by was created at 2008-05-06 17:24:59\n\n\n```\n{\nCremona:\n>  For ages Magma would only do Inverse(MultiplicationBymMap(m))(P) which\n>  would throw a run-time error if there were no solutions and give one\n>  solution only if there were any.  So I wronte my own, until they got\n>  around to DivisionPoints(P,m) which returns a list, possibly empty.\n\nSomething like that is next on my list.  Maybe instead of P.divide(m),\nwhich is what I planned, for consistency \nI should do P.division_points(m), which can return a possibly empty list.    \n```\n",
+    "body": "Attachment [sage-3109-part1.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part1.patch) by @williamstein created at 2008-05-06 17:24:59\n\n\n```\n{\nCremona:\n>  For ages Magma would only do Inverse(MultiplicationBymMap(m))(P) which\n>  would throw a run-time error if there were no solutions and give one\n>  solution only if there were any.  So I wronte my own, until they got\n>  around to DivisionPoints(P,m) which returns a list, possibly empty.\n\nSomething like that is next on my list.  Maybe instead of P.divide(m),\nwhich is what I planned, for consistency \nI should do P.division_points(m), which can return a possibly empty list.    \n```\n",
     "created_at": "2008-05-06T17:24:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21484",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3109-part1.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part1.patch) by was created at 2008-05-06 17:24:59
+Attachment [sage-3109-part1.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part1.patch) by @williamstein created at 2008-05-06 17:24:59
 
 
 ```
@@ -101,7 +101,7 @@ archive/issue_comments_021485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21485",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,16 +114,16 @@ this adds lots of docs and fixes bugs.  finishes implementing full_division_poly
 archive/issue_comments_021486.json:
 ```json
 {
-    "body": "Attachment [sage-3109-part2.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part2.patch) by was created at 2008-05-07 07:10:24",
+    "body": "Attachment [sage-3109-part2.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part2.patch) by @williamstein created at 2008-05-07 07:10:24",
     "created_at": "2008-05-07T07:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21486",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3109-part2.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part2.patch) by was created at 2008-05-07 07:10:24
+Attachment [sage-3109-part2.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part2.patch) by @williamstein created at 2008-05-07 07:10:24
 
 
 
@@ -132,16 +132,16 @@ Attachment [sage-3109-part2.patch](tarball://root/attachments/some-uuid/ticket31
 archive/issue_comments_021487.json:
 ```json
 {
-    "body": "Attachment [sage-3109-part3.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part3.patch) by was created at 2008-05-07 07:10:41",
+    "body": "Attachment [sage-3109-part3.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part3.patch) by @williamstein created at 2008-05-07 07:10:41",
     "created_at": "2008-05-07T07:10:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21487",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3109-part3.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part3.patch) by was created at 2008-05-07 07:10:41
+Attachment [sage-3109-part3.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part3.patch) by @williamstein created at 2008-05-07 07:10:41
 
 
 
@@ -155,7 +155,7 @@ archive/issue_comments_021488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21488",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_021489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21489",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_021490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21490",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -218,16 +218,16 @@ Regarding the referee's report:
 archive/issue_comments_021491.json:
 ```json
 {
-    "body": "Attachment [sage-3019-part4.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3019-part4.patch) by was created at 2008-05-07 15:39:16\n\nsome slight refactoring in ell_point.py",
+    "body": "Attachment [sage-3019-part4.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3019-part4.patch) by @williamstein created at 2008-05-07 15:39:16\n\nsome slight refactoring in ell_point.py",
     "created_at": "2008-05-07T15:39:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21491",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3019-part4.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3019-part4.patch) by was created at 2008-05-07 15:39:16
+Attachment [sage-3019-part4.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3019-part4.patch) by @williamstein created at 2008-05-07 15:39:16
 
 some slight refactoring in ell_point.py
 
@@ -243,7 +243,7 @@ archive/issue_comments_021492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21492",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_021493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21493",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

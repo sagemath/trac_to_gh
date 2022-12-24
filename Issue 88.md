@@ -51,16 +51,16 @@ Changing type from defect to task.
 archive/issue_comments_000434.json:
 ```json
 {
-    "body": "Attachment [pyrex_guide.tex](tarball://root/attachments/some-uuid/ticket88/pyrex_guide.tex) by was created at 2006-09-27 17:34:26\n\nHere's a work in progress that is relevant...",
+    "body": "Attachment [pyrex_guide.tex](tarball://root/attachments/some-uuid/ticket88/pyrex_guide.tex) by @williamstein created at 2006-09-27 17:34:26\n\nHere's a work in progress that is relevant...",
     "created_at": "2006-09-27T17:34:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/88",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/88#issuecomment-434",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [pyrex_guide.tex](tarball://root/attachments/some-uuid/ticket88/pyrex_guide.tex) by was created at 2006-09-27 17:34:26
+Attachment [pyrex_guide.tex](tarball://root/attachments/some-uuid/ticket88/pyrex_guide.tex) by @williamstein created at 2006-09-27 17:34:26
 
 Here's a work in progress that is relevant...
 
@@ -76,7 +76,7 @@ archive/issue_comments_000435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/88",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/88#issuecomment-435",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_000437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/88",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/88#issuecomment-437",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_000439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/88",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/88#issuecomment-439",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_000440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/88",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/88#issuecomment-440",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

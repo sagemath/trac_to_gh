@@ -3,7 +3,7 @@
 archive/issues_009018.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nBy default, things could print as a+b\\sqrt{D}\n\nIssue created by migration from https://trac.sagemath.org/ticket/9018\n\n",
+    "body": "Assignee: @loefflerd\n\nBy default, things could print as a+b\\sqrt{D}\n\nIssue created by migration from https://trac.sagemath.org/ticket/9018\n\n",
     "created_at": "2010-05-22T16:31:28Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_009018.json:
     "title": "Better latex for quadratic fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9018",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 By default, things could print as a+b\sqrt{D}
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9018
 archive/issue_comments_083448.json:
 ```json
 {
-    "body": "Attachment [9018-quadratic-latex.patch](tarball://root/attachments/some-uuid/ticket9018/9018-quadratic-latex.patch) by robertwb created at 2010-05-22 16:31:55",
+    "body": "Attachment [9018-quadratic-latex.patch](tarball://root/attachments/some-uuid/ticket9018/9018-quadratic-latex.patch) by @robertwb created at 2010-05-22 16:31:55",
     "created_at": "2010-05-22T16:31:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9018#issuecomment-83448",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9018-quadratic-latex.patch](tarball://root/attachments/some-uuid/ticket9018/9018-quadratic-latex.patch) by robertwb created at 2010-05-22 16:31:55
+Attachment [9018-quadratic-latex.patch](tarball://root/attachments/some-uuid/ticket9018/9018-quadratic-latex.patch) by @robertwb created at 2010-05-22 16:31:55
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_083449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9018#issuecomment-83449",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_083450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9018#issuecomment-83450",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_083454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9018#issuecomment-83454",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_083455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9018",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9018#issuecomment-83455",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

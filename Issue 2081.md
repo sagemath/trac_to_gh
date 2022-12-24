@@ -14,7 +14,7 @@ archive/issues_002081.json:
     "title": "Add .coefficients() and .exponents() to univariate polynomials and power series",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2081",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 Assignee: somebody
@@ -48,7 +48,7 @@ archive/issue_comments_013472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2081#issuecomment-13472",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -61,16 +61,16 @@ Changing status from new to assigned.
 archive/issue_comments_013473.json:
 ```json
 {
-    "body": "Changing assignee from somebody to mhansen.",
+    "body": "Changing assignee from somebody to @mwhansen.",
     "created_at": "2008-02-07T07:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2081#issuecomment-13473",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from somebody to mhansen.
+Changing assignee from somebody to @mwhansen.
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_013474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2081#issuecomment-13474",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -97,16 +97,16 @@ The patch looks good, one thing though: every parent is supposed to provide a `z
 archive/issue_comments_013475.json:
 ```json
 {
-    "body": "Attachment [2081.patch](tarball://root/attachments/some-uuid/ticket2081/2081.patch) by mhansen created at 2008-02-14 23:56:03\n\nUpdated patch to use .zero_element()",
+    "body": "Attachment [2081.patch](tarball://root/attachments/some-uuid/ticket2081/2081.patch) by @mwhansen created at 2008-02-14 23:56:03\n\nUpdated patch to use .zero_element()",
     "created_at": "2008-02-14T23:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2081#issuecomment-13475",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2081.patch](tarball://root/attachments/some-uuid/ticket2081/2081.patch) by mhansen created at 2008-02-14 23:56:03
+Attachment [2081.patch](tarball://root/attachments/some-uuid/ticket2081/2081.patch) by @mwhansen created at 2008-02-14 23:56:03
 
 Updated patch to use .zero_element()
 
@@ -122,7 +122,7 @@ archive/issue_comments_013476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2081",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2081#issuecomment-13476",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

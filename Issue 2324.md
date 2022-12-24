@@ -106,7 +106,7 @@ archive/issue_comments_015463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2324#issuecomment-15463",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

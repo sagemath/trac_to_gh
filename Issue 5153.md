@@ -3,7 +3,7 @@
 archive/issues_005153.json:
 ```json
 {
-    "body": "Assignee: was\n\nWe have\n\n```\nsage: E = EllipticCurve('65a1')\nsage: G = E.change_ring(QuadraticField(-56,'a'))\nsage: G.simon_two_descent()\n(3, 4, [(-9/4 : -3/8*a + 9/8 : 1), (-8/7 : -1/49*a + 4/7 : 1), (1 : 0 : 1), \n  (-6/25*a - 47/25 : 36/125*a - 368/125 : 1), (1/4 : 1/16*a - 1/8 : 1)])\n```\n\n\nThe documentation for simon_two_descent says that the output of Simon 2-descent is\n\n```\n        OUTPUT:\n            integer -- \"probably\" the rank of self\n            integer -- the 2-rank of the Selmer group\n            list    -- list of independent points on the curve.\n```\n\n\nOur curve does have rank 3, but the output list above contains *five* points, so they can't be independent!   \n\nOur curve has torsion of order 2, so E(K)/2 E(K) has rank four, so the 3 and four output by Simon descent are right.  The only problem is the list, which has too many points in it. \n\nMaybe this is simply a documentation issue, and the docs for simon_two_descent should be changed to say that list is a list of points that *generate* a subgroup of the MW group of rank r, where r is the first number output by simon_two_descent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5153\n\n",
+    "body": "Assignee: @williamstein\n\nWe have\n\n```\nsage: E = EllipticCurve('65a1')\nsage: G = E.change_ring(QuadraticField(-56,'a'))\nsage: G.simon_two_descent()\n(3, 4, [(-9/4 : -3/8*a + 9/8 : 1), (-8/7 : -1/49*a + 4/7 : 1), (1 : 0 : 1), \n  (-6/25*a - 47/25 : 36/125*a - 368/125 : 1), (1/4 : 1/16*a - 1/8 : 1)])\n```\n\n\nThe documentation for simon_two_descent says that the output of Simon 2-descent is\n\n```\n        OUTPUT:\n            integer -- \"probably\" the rank of self\n            integer -- the 2-rank of the Selmer group\n            list    -- list of independent points on the curve.\n```\n\n\nOur curve does have rank 3, but the output list above contains *five* points, so they can't be independent!   \n\nOur curve has torsion of order 2, so E(K)/2 E(K) has rank four, so the 3 and four output by Simon descent are right.  The only problem is the list, which has too many points in it. \n\nMaybe this is simply a documentation issue, and the docs for simon_two_descent should be changed to say that list is a list of points that *generate* a subgroup of the MW group of rank r, where r is the first number output by simon_two_descent.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5153\n\n",
     "created_at": "2009-02-01T22:24:47Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005153.json:
     "title": "bug in simon_two_descent  for elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5153",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 We have
 
@@ -62,7 +62,7 @@ archive/issue_comments_039424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39424",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_039425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39425",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -97,16 +97,16 @@ This will be possible to fix once I (or someone) have eventually implemented hei
 archive/issue_comments_039426.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:59:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39426",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -120,7 +120,7 @@ archive/issue_comments_039427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39427",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -133,16 +133,16 @@ Changing component from number theory to elliptic curves.
 archive/issue_comments_039428.json:
 ```json
 {
-    "body": "Remove assignee davidloeffler.",
+    "body": "Remove assignee @loefflerd.",
     "created_at": "2009-10-09T09:09:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39428",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Remove assignee davidloeffler.
+Remove assignee @loefflerd.
 
 
 
@@ -156,7 +156,7 @@ archive/issue_comments_039429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39429",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_039430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39430",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_039431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39431",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_039432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39432",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_039433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39433",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_039435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39435",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_039436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39436",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_039437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39437",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_039438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39438",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_039439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39439",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_039440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39440",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_039441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39441",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_039443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39443",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_039444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39444",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -496,7 +496,7 @@ archive/issue_comments_039445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39445",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_039447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39447",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -550,7 +550,7 @@ archive/issue_comments_039448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39448",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -568,7 +568,7 @@ archive/issue_comments_039449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5153",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5153#issuecomment-39449",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

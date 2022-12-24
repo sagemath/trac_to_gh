@@ -3,7 +3,7 @@
 archive/issues_007941.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nline 364 of `$SAGE_LOCAL/bin/sage-ptest` is where to start looking:\n\n```\n    if len(failed) == 0:\n        if interrupt == False:\n            print \"All tests passed!\"\n        else:\n            print \"Keyboard Interrupt: All tests that ran passed.\"\n        #Only update timings if we are doing something standard\n        if opts==\"-long\" or len(opts)==0:\n            with open(time_file_name,\"w\") as time_file:\n                pickle.dump(time_dict, time_file)\n                print \"Timings have been updated.\"\n    else:\n        if interrupt:\n            print \"Keyboard Interrupt, not all tests ran\"\n        print \"\\nThe following tests failed:\\n\"\n        for i in range(len(failed)):\n               print \"\\t\", failed[i]\n        print \"-\"*int(70)\n```\n\n\nThe reason I want this is that if you're making lots of changes and testing frequently, and you never get a completely clean run, all the good files still run in a random order, which is inefficient.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7941\n\n",
+    "body": "Assignee: @aghitza\n\nline 364 of `$SAGE_LOCAL/bin/sage-ptest` is where to start looking:\n\n```\n    if len(failed) == 0:\n        if interrupt == False:\n            print \"All tests passed!\"\n        else:\n            print \"Keyboard Interrupt: All tests that ran passed.\"\n        #Only update timings if we are doing something standard\n        if opts==\"-long\" or len(opts)==0:\n            with open(time_file_name,\"w\") as time_file:\n                pickle.dump(time_dict, time_file)\n                print \"Timings have been updated.\"\n    else:\n        if interrupt:\n            print \"Keyboard Interrupt, not all tests ran\"\n        print \"\\nThe following tests failed:\\n\"\n        for i in range(len(failed)):\n               print \"\\t\", failed[i]\n        print \"-\"*int(70)\n```\n\n\nThe reason I want this is that if you're making lots of changes and testing frequently, and you never get a completely clean run, all the good files still run in a random order, which is inefficient.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7941\n\n",
     "created_at": "2010-01-16T03:21:55Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007941.json:
     "title": "sage -tp N should store times when some files fail",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7941",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 line 364 of `$SAGE_LOCAL/bin/sage-ptest` is where to start looking:
 
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7941
 archive/issue_comments_069274.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to tbd.",
+    "body": "Changing assignee from @aghitza to tbd.",
     "created_at": "2010-01-17T22:23:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7941#issuecomment-69274",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from AlexGhitza to tbd.
+Changing assignee from @aghitza to tbd.
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_069275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7941#issuecomment-69275",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_069276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7941#issuecomment-69276",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -109,16 +109,16 @@ Changing status from new to needs_review.
 archive/issue_comments_069277.json:
 ```json
 {
-    "body": "Attachment [trac_7941.patch](tarball://root/attachments/some-uuid/ticket7941/trac_7941.patch) by rlm created at 2010-01-19 03:40:40\n\napply to scripts repo",
+    "body": "Attachment [trac_7941.patch](tarball://root/attachments/some-uuid/ticket7941/trac_7941.patch) by @rlmill created at 2010-01-19 03:40:40\n\napply to scripts repo",
     "created_at": "2010-01-19T03:40:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7941#issuecomment-69277",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7941.patch](tarball://root/attachments/some-uuid/ticket7941/trac_7941.patch) by rlm created at 2010-01-19 03:40:40
+Attachment [trac_7941.patch](tarball://root/attachments/some-uuid/ticket7941/trac_7941.patch) by @rlmill created at 2010-01-19 03:40:40
 
 apply to scripts repo
 
@@ -134,7 +134,7 @@ archive/issue_comments_069278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7941#issuecomment-69278",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_069279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7941#issuecomment-69279",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_069280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7941#issuecomment-69280",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

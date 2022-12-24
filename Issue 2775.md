@@ -97,7 +97,7 @@ archive/issue_comments_019064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2775#issuecomment-19064",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_019067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2775#issuecomment-19067",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -217,16 +217,16 @@ Ummm.... do we have any other way to provide the factorisation? For example, Gen
 archive/issue_comments_019069.json:
 ```json
 {
-    "body": "Attachment [trac_2775.patch](tarball://root/attachments/some-uuid/ticket2775/trac_2775.patch) by malb created at 2008-04-05 21:35:03",
+    "body": "Attachment [trac_2775.patch](tarball://root/attachments/some-uuid/ticket2775/trac_2775.patch) by @malb created at 2008-04-05 21:35:03",
     "created_at": "2008-04-05T21:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2775#issuecomment-19069",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_2775.patch](tarball://root/attachments/some-uuid/ticket2775/trac_2775.patch) by malb created at 2008-04-05 21:35:03
+Attachment [trac_2775.patch](tarball://root/attachments/some-uuid/ticket2775/trac_2775.patch) by @malb created at 2008-04-05 21:35:03
 
 
 
@@ -240,7 +240,7 @@ archive/issue_comments_019070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2775#issuecomment-19070",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006061.json:
     "title": "[with patch; needs review] refresh the pickle jar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6061",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

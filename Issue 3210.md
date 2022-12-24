@@ -3,7 +3,7 @@
 archive/issues_003210.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee:\n\nAlbert A. Cuoco, Visualizing the p-adic Integers, The American Mathematical Monthly, Vol. 98, No. 4 (Apr., 1991), pp. 355-364\n\nhttp://www.jstor.org/stable/2323809?&Search=yes&term=numbers&term=p-adic&list=hide&searchUri=%2Faction%2FdoBasicSearch%3FQuery%3Dp-adic%2Bnumbers%26jc%3Dj100069&item=2&ttl=190&returnArticleService=showArticle\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3210\n\n",
+    "body": "Assignee: @williamstein\n\nSee:\n\nAlbert A. Cuoco, Visualizing the p-adic Integers, The American Mathematical Monthly, Vol. 98, No. 4 (Apr., 1991), pp. 355-364\n\nhttp://www.jstor.org/stable/2323809?&Search=yes&term=numbers&term=p-adic&list=hide&searchUri=%2Faction%2FdoBasicSearch%3FQuery%3Dp-adic%2Bnumbers%26jc%3Dj100069&item=2&ttl=190&returnArticleService=showArticle\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3210\n\n",
     "created_at": "2008-05-15T06:45:24Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003210.json:
     "title": "[with patch, needs review] plotting Z_p as a fractal image",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3210",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See:
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3210
 archive/issue_comments_022187.json:
 ```json
 {
-    "body": "Attachment [3210-plot-Zp.patch](tarball://root/attachments/some-uuid/ticket3210/3210-plot-Zp.patch) by robertwb created at 2008-05-15 06:47:19",
+    "body": "Attachment [3210-plot-Zp.patch](tarball://root/attachments/some-uuid/ticket3210/3210-plot-Zp.patch) by @robertwb created at 2008-05-15 06:47:19",
     "created_at": "2008-05-15T06:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3210#issuecomment-22187",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3210-plot-Zp.patch](tarball://root/attachments/some-uuid/ticket3210/3210-plot-Zp.patch) by robertwb created at 2008-05-15 06:47:19
+Attachment [3210-plot-Zp.patch](tarball://root/attachments/some-uuid/ticket3210/3210-plot-Zp.patch) by @robertwb created at 2008-05-15 06:47:19
 
 
 
@@ -55,16 +55,16 @@ Attachment [3210-plot-Zp.patch](tarball://root/attachments/some-uuid/ticket3210/
 archive/issue_comments_022188.json:
 ```json
 {
-    "body": "Attachment [Z5.png](tarball://root/attachments/some-uuid/ticket3210/Z5.png) by malb created at 2008-05-15 08:47:42\n\ncool, quick comment, there is a typo in the docstring: \"algebraic an topological\"",
+    "body": "Attachment [Z5.png](tarball://root/attachments/some-uuid/ticket3210/Z5.png) by @malb created at 2008-05-15 08:47:42\n\ncool, quick comment, there is a typo in the docstring: \"algebraic an topological\"",
     "created_at": "2008-05-15T08:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3210#issuecomment-22188",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [Z5.png](tarball://root/attachments/some-uuid/ticket3210/Z5.png) by malb created at 2008-05-15 08:47:42
+Attachment [Z5.png](tarball://root/attachments/some-uuid/ticket3210/Z5.png) by @malb created at 2008-05-15 08:47:42
 
 cool, quick comment, there is a typo in the docstring: "algebraic an topological"
 
@@ -75,16 +75,16 @@ cool, quick comment, there is a typo in the docstring: "algebraic an topological
 archive/issue_comments_022189.json:
 ```json
 {
-    "body": "Attachment [3210-plot-Zp-typo-fix.patch](tarball://root/attachments/some-uuid/ticket3210/3210-plot-Zp-typo-fix.patch) by robertwb created at 2008-05-15 08:52:28",
+    "body": "Attachment [3210-plot-Zp-typo-fix.patch](tarball://root/attachments/some-uuid/ticket3210/3210-plot-Zp-typo-fix.patch) by @robertwb created at 2008-05-15 08:52:28",
     "created_at": "2008-05-15T08:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3210#issuecomment-22189",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3210-plot-Zp-typo-fix.patch](tarball://root/attachments/some-uuid/ticket3210/3210-plot-Zp-typo-fix.patch) by robertwb created at 2008-05-15 08:52:28
+Attachment [3210-plot-Zp-typo-fix.patch](tarball://root/attachments/some-uuid/ticket3210/3210-plot-Zp-typo-fix.patch) by @robertwb created at 2008-05-15 08:52:28
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_022190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3210#issuecomment-22190",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_022191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3210#issuecomment-22191",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_022192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3210#issuecomment-22192",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_022193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3210#issuecomment-22193",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_022194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3210#issuecomment-22194",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_022195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3210#issuecomment-22195",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_022196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3210#issuecomment-22196",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -278,16 +278,16 @@ Apply 3210-plot-Zp-typo-fix.patch followed by trac-3210-add-r.patch.
 archive/issue_comments_022197.json:
 ```json
 {
-    "body": "Attachment [trac-3210-add-r.patch](tarball://root/attachments/some-uuid/ticket3210/trac-3210-add-r.patch) by craigcitro created at 2008-06-19 21:45:25\n\nThe new ticket is #3474.",
+    "body": "Attachment [trac-3210-add-r.patch](tarball://root/attachments/some-uuid/ticket3210/trac-3210-add-r.patch) by @craigcitro created at 2008-06-19 21:45:25\n\nThe new ticket is #3474.",
     "created_at": "2008-06-19T21:45:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3210#issuecomment-22197",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3210-add-r.patch](tarball://root/attachments/some-uuid/ticket3210/trac-3210-add-r.patch) by craigcitro created at 2008-06-19 21:45:25
+Attachment [trac-3210-add-r.patch](tarball://root/attachments/some-uuid/ticket3210/trac-3210-add-r.patch) by @craigcitro created at 2008-06-19 21:45:25
 
 The new ticket is #3474.
 

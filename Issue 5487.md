@@ -3,7 +3,7 @@
 archive/issues_005487.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: tableaux content\n\nSimple patch adding a content function for tableaux to tableau.py.\n\n[Mostly just a test to see if I can push a patch to the combinat server.]\n\n---------\n\n```\ndiff -r c6382e76a5e5 sage/combinat/tableau.py\n--- a/sage/combinat/tableau.py  Thu Mar 12 01:07:21 2009 +1100\n+++ b/sage/combinat/tableau.py  Thu Mar 12 01:07:52 2009 +1100\n@@ -480,6 +480,21 @@\n             s += [ (i,j) for j in range(len(self[i])) ]\n         return s\n \n+    def content(self, k):\n+        \"\"\"\n+        Returns the content of <k> in <self>. That is, if <k> appears in\n+        row r and column c of the tableau <self> then we return c-r.\n+\n+        EXAMPLES:\n+            sage: Tableau([[1,2],[3,4]]).content(3)\n+            -1\n+\n+        \"\"\"\n+        for r in range(len(self)):\n+          for c in range(len(self[r])):\n+            if self[r][c]==k: return c-r\n+        return False\n+\n     def k_weight(self, k):\n         \"\"\"\n         Returns the k-weight of self.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5487\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: tableaux content\n\nSimple patch adding a content function for tableaux to tableau.py.\n\n[Mostly just a test to see if I can push a patch to the combinat server.]\n\n---------\n\n```\ndiff -r c6382e76a5e5 sage/combinat/tableau.py\n--- a/sage/combinat/tableau.py  Thu Mar 12 01:07:21 2009 +1100\n+++ b/sage/combinat/tableau.py  Thu Mar 12 01:07:52 2009 +1100\n@@ -480,6 +480,21 @@\n             s += [ (i,j) for j in range(len(self[i])) ]\n         return s\n \n+    def content(self, k):\n+        \"\"\"\n+        Returns the content of <k> in <self>. That is, if <k> appears in\n+        row r and column c of the tableau <self> then we return c-r.\n+\n+        EXAMPLES:\n+            sage: Tableau([[1,2],[3,4]]).content(3)\n+            -1\n+\n+        \"\"\"\n+        for r in range(len(self)):\n+          for c in range(len(self[r])):\n+            if self[r][c]==k: return c-r\n+        return False\n+\n     def k_weight(self, k):\n         \"\"\"\n         Returns the k-weight of self.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5487\n\n",
     "created_at": "2009-03-11T14:12:29Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005487.json:
     "title": "Content function for tableaux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5487",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -74,7 +74,7 @@ archive/issue_comments_042585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5487#issuecomment-42585",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_042586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5487#issuecomment-42586",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_042587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5487#issuecomment-42587",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -180,16 +180,16 @@ Andrew
 archive/issue_comments_042588.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to andrew.mathas.",
+    "body": "Changing assignee from @mwhansen to @AndrewAtLarge.",
     "created_at": "2009-03-13T06:58:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5487#issuecomment-42588",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
-Changing assignee from mhansen to andrew.mathas.
+Changing assignee from @mwhansen to @AndrewAtLarge.
 
 
 
@@ -203,7 +203,7 @@ archive/issue_comments_042589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5487#issuecomment-42589",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_042590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5487#issuecomment-42590",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_042591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5487#issuecomment-42591",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -280,16 +280,16 @@ Florent
 archive/issue_comments_042592.json:
 ```json
 {
-    "body": "Attachment [tableau-content-5487-AM.patch](tarball://root/attachments/some-uuid/ticket5487/tableau-content-5487-AM.patch) by andrew.mathas created at 2009-04-13 15:30:42\n\nDear Florent,\n\nI have changed the function to use index() and added an exception. More importantly, I have also created a StandardTableau_class class and a StandardTableau() function for holding and creating standard tableau...previously I was confused and thought that the StandardTableaux class  did this. I discovered my error when I tested the new version (which I confess I had previously just moved into StandardTableaux and not tested...I promise to test properly in future!).\n\nHopefully the new patch also removes my unintended change to kschur.py.\n\nRegards,\nAndrew",
+    "body": "Attachment [tableau-content-5487-AM.patch](tarball://root/attachments/some-uuid/ticket5487/tableau-content-5487-AM.patch) by @AndrewAtLarge created at 2009-04-13 15:30:42\n\nDear Florent,\n\nI have changed the function to use index() and added an exception. More importantly, I have also created a StandardTableau_class class and a StandardTableau() function for holding and creating standard tableau...previously I was confused and thought that the StandardTableaux class  did this. I discovered my error when I tested the new version (which I confess I had previously just moved into StandardTableaux and not tested...I promise to test properly in future!).\n\nHopefully the new patch also removes my unintended change to kschur.py.\n\nRegards,\nAndrew",
     "created_at": "2009-04-13T15:30:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5487#issuecomment-42592",
-    "user": "andrew.mathas"
+    "user": "@AndrewAtLarge"
 }
 ```
 
-Attachment [tableau-content-5487-AM.patch](tarball://root/attachments/some-uuid/ticket5487/tableau-content-5487-AM.patch) by andrew.mathas created at 2009-04-13 15:30:42
+Attachment [tableau-content-5487-AM.patch](tarball://root/attachments/some-uuid/ticket5487/tableau-content-5487-AM.patch) by @AndrewAtLarge created at 2009-04-13 15:30:42
 
 Dear Florent,
 
@@ -312,7 +312,7 @@ archive/issue_comments_042593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5487#issuecomment-42593",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -325,16 +325,16 @@ Review patch
 archive/issue_comments_042594.json:
 ```json
 {
-    "body": "Attachment [tableau-content-5487-review-fh.patch](tarball://root/attachments/some-uuid/ticket5487/tableau-content-5487-review-fh.patch) by hivert created at 2009-04-13 21:53:51\n\nI Added a review patch which:\n\n- add some more doctests\n\n- correct the ReST syntax for doctests\n\n- Specifies which exception is caught.\n\nI'm giving the positive review though someone should probably reread my trivial review patch... \n\nMichael: please tell me if I should not give the review and ask for a formal review of my patch.   \n\nCheers,\n\nFlorent",
+    "body": "Attachment [tableau-content-5487-review-fh.patch](tarball://root/attachments/some-uuid/ticket5487/tableau-content-5487-review-fh.patch) by @hivert created at 2009-04-13 21:53:51\n\nI Added a review patch which:\n\n- add some more doctests\n\n- correct the ReST syntax for doctests\n\n- Specifies which exception is caught.\n\nI'm giving the positive review though someone should probably reread my trivial review patch... \n\nMichael: please tell me if I should not give the review and ask for a formal review of my patch.   \n\nCheers,\n\nFlorent",
     "created_at": "2009-04-13T21:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5487#issuecomment-42594",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [tableau-content-5487-review-fh.patch](tarball://root/attachments/some-uuid/ticket5487/tableau-content-5487-review-fh.patch) by hivert created at 2009-04-13 21:53:51
+Attachment [tableau-content-5487-review-fh.patch](tarball://root/attachments/some-uuid/ticket5487/tableau-content-5487-review-fh.patch) by @hivert created at 2009-04-13 21:53:51
 
 I Added a review patch which:
 
@@ -402,7 +402,7 @@ archive/issue_comments_042596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5487#issuecomment-42596",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

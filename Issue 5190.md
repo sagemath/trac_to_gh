@@ -14,7 +14,7 @@ archive/issues_005190.json:
     "title": "the sage documentation at sagemath.org is horribly out of date",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5190",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

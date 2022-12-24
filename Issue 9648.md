@@ -156,7 +156,7 @@ archive/issue_comments_093558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9648#issuecomment-93558",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -169,16 +169,16 @@ I did the review with Christian here at FPSAC. Patch ready to go up to a final p
 archive/issue_comments_093559.json:
 ```json
 {
-    "body": "Attachment [trac_9648_modulemorphism_codomain_extension.2.patch](tarball://root/attachments/some-uuid/ticket9648/trac_9648_modulemorphism_codomain_extension.2.patch) by nthiery created at 2010-08-06 00:04:52\n\nAdded a test after request by Florent. Apply only this one.",
+    "body": "Attachment [trac_9648_modulemorphism_codomain_extension.2.patch](tarball://root/attachments/some-uuid/ticket9648/trac_9648_modulemorphism_codomain_extension.2.patch) by @nthiery created at 2010-08-06 00:04:52\n\nAdded a test after request by Florent. Apply only this one.",
     "created_at": "2010-08-06T00:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9648#issuecomment-93559",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_9648_modulemorphism_codomain_extension.2.patch](tarball://root/attachments/some-uuid/ticket9648/trac_9648_modulemorphism_codomain_extension.2.patch) by nthiery created at 2010-08-06 00:04:52
+Attachment [trac_9648_modulemorphism_codomain_extension.2.patch](tarball://root/attachments/some-uuid/ticket9648/trac_9648_modulemorphism_codomain_extension.2.patch) by @nthiery created at 2010-08-06 00:04:52
 
 Added a test after request by Florent. Apply only this one.
 
@@ -194,7 +194,7 @@ archive/issue_comments_093560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9648#issuecomment-93560",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_093561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9648#issuecomment-93561",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_093562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9648#issuecomment-93562",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_093563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9648#issuecomment-93563",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_093564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9648#issuecomment-93564",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_093568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9648#issuecomment-93568",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_093569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9648#issuecomment-93569",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -404,13 +404,13 @@ Resolution: fixed
 archive/issue_comments_093570.json:
 ```json
 {
-    "body": "Attachment [9648_doc_fixes.patch](tarball://root/attachments/some-uuid/ticket9648/9648_doc_fixes.patch) by jdemeyer created at 2010-11-01 21:43:38",
+    "body": "Attachment [9648_doc_fixes.patch](tarball://root/attachments/some-uuid/ticket9648/9648_doc_fixes.patch) by @jdemeyer created at 2010-11-01 21:43:38",
     "created_at": "2010-11-01T21:43:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9648#issuecomment-93570",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9648_doc_fixes.patch](tarball://root/attachments/some-uuid/ticket9648/9648_doc_fixes.patch) by jdemeyer created at 2010-11-01 21:43:38
+Attachment [9648_doc_fixes.patch](tarball://root/attachments/some-uuid/ticket9648/9648_doc_fixes.patch) by @jdemeyer created at 2010-11-01 21:43:38

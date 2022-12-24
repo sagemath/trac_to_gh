@@ -14,7 +14,7 @@ archive/issues_007261.json:
     "title": "sagenb notebook: make worksheets saved with new sagneb backwards compatible with old notebook servers.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7261",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_060303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60303",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_060304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60304",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to needs_review.
 archive/issue_comments_060305.json:
 ```json
 {
-    "body": "Attachment [sagenb-7261.patch](tarball://root/attachments/some-uuid/ticket7261/sagenb-7261.patch) by mpatel created at 2009-10-21 09:30:32",
+    "body": "Attachment [sagenb-7261.patch](tarball://root/attachments/some-uuid/ticket7261/sagenb-7261.patch) by @qed777 created at 2009-10-21 09:30:32",
     "created_at": "2009-10-21T09:30:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60305",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [sagenb-7261.patch](tarball://root/attachments/some-uuid/ticket7261/sagenb-7261.patch) by mpatel created at 2009-10-21 09:30:32
+Attachment [sagenb-7261.patch](tarball://root/attachments/some-uuid/ticket7261/sagenb-7261.patch) by @qed777 created at 2009-10-21 09:30:32
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_060306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60306",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_060307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60307",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_060308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60308",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

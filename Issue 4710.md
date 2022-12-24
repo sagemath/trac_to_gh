@@ -14,7 +14,7 @@ archive/issues_004710.json:
     "title": "fix docstring for divisors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4710",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tba
@@ -65,7 +65,7 @@ archive/issue_comments_035515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4710#issuecomment-35515",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -78,16 +78,16 @@ Here's a trivial patch.  Is this good enough?
 archive/issue_comments_035516.json:
 ```json
 {
-    "body": "Attachment [4710.patch](tarball://root/attachments/some-uuid/ticket4710/4710.patch) by jhpalmieri created at 2009-02-26 17:08:29",
+    "body": "Attachment [4710.patch](tarball://root/attachments/some-uuid/ticket4710/4710.patch) by @jhpalmieri created at 2009-02-26 17:08:29",
     "created_at": "2009-02-26T17:08:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4710#issuecomment-35516",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [4710.patch](tarball://root/attachments/some-uuid/ticket4710/4710.patch) by jhpalmieri created at 2009-02-26 17:08:29
+Attachment [4710.patch](tarball://root/attachments/some-uuid/ticket4710/4710.patch) by @jhpalmieri created at 2009-02-26 17:08:29
 
 
 
@@ -101,7 +101,7 @@ archive/issue_comments_035517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4710#issuecomment-35517",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

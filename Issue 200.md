@@ -3,7 +3,7 @@
 archive/issues_000200.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: E = EllipticCurve(\"37a\")\n\nsage: E.formal_group()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n[...]\n/home/was/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/formal_group.py in __repr__(self)\n     24 \n     25     def __repr__(self):\n---> 26         return \"The formal group associated to the \" + self.__E\n     27 \n     28     def curve(self):\n\n<type 'exceptions.TypeError'>: cannot concatenate 'str' and 'EllipticCurve_rational_field' objects\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/200\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: E = EllipticCurve(\"37a\")\n\nsage: E.formal_group()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n[...]\n/home/was/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/formal_group.py in __repr__(self)\n     24 \n     25     def __repr__(self):\n---> 26         return \"The formal group associated to the \" + self.__E\n     27 \n     28     def curve(self):\n\n<type 'exceptions.TypeError'>: cannot concatenate 'str' and 'EllipticCurve_rational_field' objects\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/200\n\n",
     "created_at": "2007-01-19T13:50:59Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_000200.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -54,7 +54,7 @@ archive/issue_comments_000904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/200#issuecomment-904",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

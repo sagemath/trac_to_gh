@@ -14,7 +14,7 @@ archive/issues_004708.json:
     "title": "sage -tp doesn't test absolute file names nor does it ignore non-existent files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4708",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: mabshoff
@@ -80,16 +80,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4708
 archive/issue_comments_035504.json:
 ```json
 {
-    "body": "Attachment [trac_4708_bin.patch](tarball://root/attachments/some-uuid/ticket4708/trac_4708_bin.patch) by gfurnish created at 2008-12-05 04:55:48",
+    "body": "Attachment [trac_4708_bin.patch](tarball://root/attachments/some-uuid/ticket4708/trac_4708_bin.patch) by @garyfurnish created at 2008-12-05 04:55:48",
     "created_at": "2008-12-05T04:55:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4708#issuecomment-35504",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_4708_bin.patch](tarball://root/attachments/some-uuid/ticket4708/trac_4708_bin.patch) by gfurnish created at 2008-12-05 04:55:48
+Attachment [trac_4708_bin.patch](tarball://root/attachments/some-uuid/ticket4708/trac_4708_bin.patch) by @garyfurnish created at 2008-12-05 04:55:48
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_035505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4708#issuecomment-35505",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -116,16 +116,16 @@ Trivial fix attached.
 archive/issue_comments_035506.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to gfurnish.",
+    "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-12-05T04:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4708#issuecomment-35506",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from mabshoff to gfurnish.
+Changing assignee from mabshoff to @garyfurnish.
 
 
 
@@ -139,7 +139,7 @@ archive/issue_comments_035507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4708#issuecomment-35507",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -152,16 +152,16 @@ Changing status from new to assigned.
 archive/issue_comments_035508.json:
 ```json
 {
-    "body": "Attachment [4708_bin-2.patch](tarball://root/attachments/some-uuid/ticket4708/4708_bin-2.patch) by ncalexan created at 2008-12-05 05:44:12\n\nApply only 4708_bin-2.patch, all credit to gfurnish.",
+    "body": "Attachment [4708_bin-2.patch](tarball://root/attachments/some-uuid/ticket4708/4708_bin-2.patch) by @ncalexan created at 2008-12-05 05:44:12\n\nApply only 4708_bin-2.patch, all credit to gfurnish.",
     "created_at": "2008-12-05T05:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4708#issuecomment-35508",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [4708_bin-2.patch](tarball://root/attachments/some-uuid/ticket4708/4708_bin-2.patch) by ncalexan created at 2008-12-05 05:44:12
+Attachment [4708_bin-2.patch](tarball://root/attachments/some-uuid/ticket4708/4708_bin-2.patch) by @ncalexan created at 2008-12-05 05:44:12
 
 Apply only 4708_bin-2.patch, all credit to gfurnish.
 

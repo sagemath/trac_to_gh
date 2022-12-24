@@ -14,7 +14,7 @@ archive/issues_001176.json:
     "title": "[with patch] \\em -> \\emph in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1176",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1176
 archive/issue_comments_007269.json:
 ```json
 {
-    "body": "Attachment [7330.patch](tarball://root/attachments/some-uuid/ticket1176/7330.patch) by zimmerma created at 2007-11-15 10:07:24",
+    "body": "Attachment [7330.patch](tarball://root/attachments/some-uuid/ticket1176/7330.patch) by @zimmermann6 created at 2007-11-15 10:07:24",
     "created_at": "2007-11-15T10:07:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1176#issuecomment-7269",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [7330.patch](tarball://root/attachments/some-uuid/ticket1176/7330.patch) by zimmerma created at 2007-11-15 10:07:24
+Attachment [7330.patch](tarball://root/attachments/some-uuid/ticket1176/7330.patch) by @zimmermann6 created at 2007-11-15 10:07:24
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_000370.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n> One suggestion I have arising from my problems is that the\n> documentation for the show command be improved.  It is a very\n> important function for most users.\n\nAgreed -- the documentation for show now is terrible.  It doesn't\neven mention that it can be used to show the typeset version of\nan object!\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/370\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n> One suggestion I have arising from my problems is that the\n> documentation for the show command be improved.  It is a very\n> important function for most users.\n\nAgreed -- the documentation for show now is terrible.  It doesn't\neven mention that it can be used to show the typeset version of\nan object!\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/370\n\n",
     "created_at": "2007-05-19T04:56:48Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000370.json:
     "title": "improve the documentation of show",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/370",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -49,7 +49,7 @@ archive/issue_comments_001776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/370#issuecomment-1776",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_001777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/370#issuecomment-1777",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_001778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/370#issuecomment-1778",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

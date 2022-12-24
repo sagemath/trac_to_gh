@@ -3,7 +3,7 @@
 archive/issues_009017.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9017\n\n",
+    "body": "Assignee: @burcin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9017\n\n",
     "created_at": "2010-05-22T15:46:55Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_009017.json:
     "title": "Use lowercase i for latex symbolic sqrt(-1)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9017",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9017
 archive/issue_comments_083436.json:
 ```json
 {
-    "body": "Attachment [9017-latex-sqrt-neg1.patch](tarball://root/attachments/some-uuid/ticket9017/9017-latex-sqrt-neg1.patch) by robertwb created at 2010-05-22 15:47:50",
+    "body": "Attachment [9017-latex-sqrt-neg1.patch](tarball://root/attachments/some-uuid/ticket9017/9017-latex-sqrt-neg1.patch) by @robertwb created at 2010-05-22 15:47:50",
     "created_at": "2010-05-22T15:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9017#issuecomment-83436",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9017-latex-sqrt-neg1.patch](tarball://root/attachments/some-uuid/ticket9017/9017-latex-sqrt-neg1.patch) by robertwb created at 2010-05-22 15:47:50
+Attachment [9017-latex-sqrt-neg1.patch](tarball://root/attachments/some-uuid/ticket9017/9017-latex-sqrt-neg1.patch) by @robertwb created at 2010-05-22 15:47:50
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_083437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9017#issuecomment-83437",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_083438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9017#issuecomment-83438",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_083439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9017#issuecomment-83439",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_083440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9017#issuecomment-83440",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -124,16 +124,16 @@ Here's one fix.
 archive/issue_comments_083441.json:
 ```json
 {
-    "body": "Attachment [9017-fixes.patch](tarball://root/attachments/some-uuid/ticket9017/9017-fixes.patch) by robertwb created at 2010-05-22 16:34:42\n\nSee also #9018.",
+    "body": "Attachment [9017-fixes.patch](tarball://root/attachments/some-uuid/ticket9017/9017-fixes.patch) by @robertwb created at 2010-05-22 16:34:42\n\nSee also #9018.",
     "created_at": "2010-05-22T16:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9017#issuecomment-83441",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [9017-fixes.patch](tarball://root/attachments/some-uuid/ticket9017/9017-fixes.patch) by robertwb created at 2010-05-22 16:34:42
+Attachment [9017-fixes.patch](tarball://root/attachments/some-uuid/ticket9017/9017-fixes.patch) by @robertwb created at 2010-05-22 16:34:42
 
 See also #9018.
 
@@ -149,7 +149,7 @@ archive/issue_comments_083442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9017#issuecomment-83442",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -162,16 +162,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_083443.json:
 ```json
 {
-    "body": "Attachment [trac_9017-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket9017/trac_9017-doctest_fixes.patch) by burcin created at 2010-05-22 17:53:26",
+    "body": "Attachment [trac_9017-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket9017/trac_9017-doctest_fixes.patch) by @burcin created at 2010-05-22 17:53:26",
     "created_at": "2010-05-22T17:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9017#issuecomment-83443",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9017-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket9017/trac_9017-doctest_fixes.patch) by burcin created at 2010-05-22 17:53:26
+Attachment [trac_9017-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket9017/trac_9017-doctest_fixes.patch) by @burcin created at 2010-05-22 17:53:26
 
 
 
@@ -185,7 +185,7 @@ archive/issue_comments_083444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9017#issuecomment-83444",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_083445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9017#issuecomment-83445",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_083446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9017#issuecomment-83446",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_083447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9017",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9017#issuecomment-83447",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

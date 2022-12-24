@@ -3,7 +3,7 @@
 archive/issues_001425.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following simplification is wrong in my opinion:\n\n```\nsage: pow(pow(z,2),1/3)\nz^(2/3)\n```\n\nFor example for z = -1, pow(pow(-1,2),1/3) gives 1, but pow(-1,2/3) should give -1/2+sqrt(3)/2*I\n(it gives currently 1 in sage, which is another bug in my opinion):\n\n```\nsage: pow(-1,2/3)\n1\n```\n\n\nIndeed pow(z,a/b) for a and b integers is defined to be pow(pow(z,1/b),a), where pow(z,1/b) is the\nprincipal b-th root of z, i.e., in the argument domain (-pi/b, pi/b]. Thus the other simplification\npow(pow(z,1/b),a) -> pow(z, a/b) is valid, but pow(pow(z,a),1/b) -> pow(z,a/b) is not.\nIt suffices to consider the case a=b to understand this:\n\n```\nsage: pow(pow(z,2),1/2)\nabs(z)\nsage: pow(pow(z,3),1/3)\nz\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1425\n\n",
+    "body": "Assignee: @williamstein\n\nThe following simplification is wrong in my opinion:\n\n```\nsage: pow(pow(z,2),1/3)\nz^(2/3)\n```\n\nFor example for z = -1, pow(pow(-1,2),1/3) gives 1, but pow(-1,2/3) should give -1/2+sqrt(3)/2*I\n(it gives currently 1 in sage, which is another bug in my opinion):\n\n```\nsage: pow(-1,2/3)\n1\n```\n\n\nIndeed pow(z,a/b) for a and b integers is defined to be pow(pow(z,1/b),a), where pow(z,1/b) is the\nprincipal b-th root of z, i.e., in the argument domain (-pi/b, pi/b]. Thus the other simplification\npow(pow(z,1/b),a) -> pow(z, a/b) is valid, but pow(pow(z,a),1/b) -> pow(z,a/b) is not.\nIt suffices to consider the case a=b to understand this:\n\n```\nsage: pow(pow(z,2),1/2)\nabs(z)\nsage: pow(pow(z,3),1/3)\nz\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1425\n\n",
     "created_at": "2007-12-08T10:07:59Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001425.json:
     "title": "wrong automatic simplification of pow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1425",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following simplification is wrong in my opinion:
 
@@ -64,7 +64,7 @@ archive/issue_comments_009180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1425#issuecomment-9180",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_009181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1425#issuecomment-9181",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_009182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1425#issuecomment-9182",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -122,16 +122,16 @@ I sent an email to the maxima mailing list.
 archive/issue_comments_009183.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-12-11T02:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1425#issuecomment-9183",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -145,7 +145,7 @@ archive/issue_comments_009184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1425#issuecomment-9184",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_009185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1425#issuecomment-9185",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_009186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1425#issuecomment-9186",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -229,16 +229,16 @@ True
 archive/issue_comments_009187.json:
 ```json
 {
-    "body": "Attachment [1425.patch](tarball://root/attachments/some-uuid/ticket1425/1425.patch) by mhansen created at 2007-12-14 06:45:36",
+    "body": "Attachment [1425.patch](tarball://root/attachments/some-uuid/ticket1425/1425.patch) by @mwhansen created at 2007-12-14 06:45:36",
     "created_at": "2007-12-14T06:45:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1425#issuecomment-9187",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1425.patch](tarball://root/attachments/some-uuid/ticket1425/1425.patch) by mhansen created at 2007-12-14 06:45:36
+Attachment [1425.patch](tarball://root/attachments/some-uuid/ticket1425/1425.patch) by @mwhansen created at 2007-12-14 06:45:36
 
 
 
@@ -270,7 +270,7 @@ archive/issue_comments_009189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1425#issuecomment-9189",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -283,16 +283,16 @@ Oops, I forgot to commit sage/interfaces/r.py .  I've posted a patch with that c
 archive/issue_comments_009190.json:
 ```json
 {
-    "body": "Attachment [1425-2.patch](tarball://root/attachments/some-uuid/ticket1425/1425-2.patch) by was created at 2007-12-15 10:48:55\n\nI do *not* like 1425-2.patch.  We should *not* set complex domain for *all* maxima interfaces -- only for the one used by the calculus package.",
+    "body": "Attachment [1425-2.patch](tarball://root/attachments/some-uuid/ticket1425/1425-2.patch) by @williamstein created at 2007-12-15 10:48:55\n\nI do *not* like 1425-2.patch.  We should *not* set complex domain for *all* maxima interfaces -- only for the one used by the calculus package.",
     "created_at": "2007-12-15T10:48:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1425#issuecomment-9190",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [1425-2.patch](tarball://root/attachments/some-uuid/ticket1425/1425-2.patch) by was created at 2007-12-15 10:48:55
+Attachment [1425-2.patch](tarball://root/attachments/some-uuid/ticket1425/1425-2.patch) by @williamstein created at 2007-12-15 10:48:55
 
 I do *not* like 1425-2.patch.  We should *not* set complex domain for *all* maxima interfaces -- only for the one used by the calculus package.
 
@@ -303,16 +303,16 @@ I do *not* like 1425-2.patch.  We should *not* set complex domain for *all* maxi
 archive/issue_comments_009191.json:
 ```json
 {
-    "body": "Attachment [trac-1425-referee.patch](tarball://root/attachments/some-uuid/ticket1425/trac-1425-referee.patch) by was created at 2007-12-15 13:41:16",
+    "body": "Attachment [trac-1425-referee.patch](tarball://root/attachments/some-uuid/ticket1425/trac-1425-referee.patch) by @williamstein created at 2007-12-15 13:41:16",
     "created_at": "2007-12-15T13:41:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1425#issuecomment-9191",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1425-referee.patch](tarball://root/attachments/some-uuid/ticket1425/trac-1425-referee.patch) by was created at 2007-12-15 13:41:16
+Attachment [trac-1425-referee.patch](tarball://root/attachments/some-uuid/ticket1425/trac-1425-referee.patch) by @williamstein created at 2007-12-15 13:41:16
 
 
 
@@ -326,7 +326,7 @@ archive/issue_comments_009192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1425#issuecomment-9192",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

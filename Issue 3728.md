@@ -14,7 +14,7 @@ archive/issues_003728.json:
     "title": "tutorial: add documentation for solving matrix equations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3728",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tba
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3728
 archive/issue_comments_026458.json:
 ```json
 {
-    "body": "Attachment [3728.patch](tarball://root/attachments/some-uuid/ticket3728/3728.patch) by jhpalmieri created at 2008-07-26 16:27:43\n\ndocumentation for solving matrix equations",
+    "body": "Attachment [3728.patch](tarball://root/attachments/some-uuid/ticket3728/3728.patch) by @jhpalmieri created at 2008-07-26 16:27:43\n\ndocumentation for solving matrix equations",
     "created_at": "2008-07-26T16:27:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26458",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [3728.patch](tarball://root/attachments/some-uuid/ticket3728/3728.patch) by jhpalmieri created at 2008-07-26 16:27:43
+Attachment [3728.patch](tarball://root/attachments/some-uuid/ticket3728/3728.patch) by @jhpalmieri created at 2008-07-26 16:27:43
 
 documentation for solving matrix equations
 
@@ -61,7 +61,7 @@ archive/issue_comments_026459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26459",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_026460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26460",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_026461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26461",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_026462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26462",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -163,16 +163,16 @@ new version of patch; this replaces the old one
 archive/issue_comments_026463.json:
 ```json
 {
-    "body": "Attachment [3728-new.patch](tarball://root/attachments/some-uuid/ticket3728/3728-new.patch) by cremona created at 2008-07-29 11:40:23\n\nThanks for the tip about hg_doc.  I applied the patch ok, but I don't know how to view the patched tutorial!",
+    "body": "Attachment [3728-new.patch](tarball://root/attachments/some-uuid/ticket3728/3728-new.patch) by @JohnCremona created at 2008-07-29 11:40:23\n\nThanks for the tip about hg_doc.  I applied the patch ok, but I don't know how to view the patched tutorial!",
     "created_at": "2008-07-29T11:40:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26463",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [3728-new.patch](tarball://root/attachments/some-uuid/ticket3728/3728-new.patch) by cremona created at 2008-07-29 11:40:23
+Attachment [3728-new.patch](tarball://root/attachments/some-uuid/ticket3728/3728-new.patch) by @JohnCremona created at 2008-07-29 11:40:23
 
 Thanks for the tip about hg_doc.  I applied the patch ok, but I don't know how to view the patched tutorial!
 
@@ -188,7 +188,7 @@ archive/issue_comments_026464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26464",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_026465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26465",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_026466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26466",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_026467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26467",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_026468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26468",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_026469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26469",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_026470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26470",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_026471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26471",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_026472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26472",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_026473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3728",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3728#issuecomment-26473",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

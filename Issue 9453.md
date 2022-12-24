@@ -14,7 +14,7 @@ archive/issues_009453.json:
     "title": "Implement Aurifeuillian factorization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9453",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 Assignee: tbd
@@ -38,7 +38,7 @@ archive/issue_comments_090583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9453#issuecomment-90583",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_090584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9453#issuecomment-90584",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_090585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9453#issuecomment-90585",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_090586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9453#issuecomment-90586",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -107,16 +107,16 @@ Here is a more general version.
 archive/issue_comments_090587.json:
 ```json
 {
-    "body": "Attachment [trac_9453_aurifeuillian_factorization.patch](tarball://root/attachments/some-uuid/ticket9453/trac_9453_aurifeuillian_factorization.patch) by aapitzsch created at 2011-01-17 13:41:43\n\nDepends on #5945 and #10623",
+    "body": "Attachment [trac_9453_aurifeuillian_factorization.patch](tarball://root/attachments/some-uuid/ticket9453/trac_9453_aurifeuillian_factorization.patch) by @a-andre created at 2011-01-17 13:41:43\n\nDepends on #5945 and #10623",
     "created_at": "2011-01-17T13:41:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9453#issuecomment-90587",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [trac_9453_aurifeuillian_factorization.patch](tarball://root/attachments/some-uuid/ticket9453/trac_9453_aurifeuillian_factorization.patch) by aapitzsch created at 2011-01-17 13:41:43
+Attachment [trac_9453_aurifeuillian_factorization.patch](tarball://root/attachments/some-uuid/ticket9453/trac_9453_aurifeuillian_factorization.patch) by @a-andre created at 2011-01-17 13:41:43
 
 Depends on #5945 and #10623
 
@@ -168,7 +168,7 @@ archive/issue_comments_090590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9453#issuecomment-90590",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

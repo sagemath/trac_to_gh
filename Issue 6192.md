@@ -14,7 +14,7 @@ archive/issues_006192.json:
     "title": "numerical noise on x86 fedora core 8 (cicero on skynet)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6192",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -70,7 +70,7 @@ archive/issue_comments_049456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6192#issuecomment-49456",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,16 +83,16 @@ The second issue is because the roots of x^2+1 are "sorted" as complex numbers, 
 archive/issue_comments_049457.json:
 ```json
 {
-    "body": "Attachment [trac_6192.patch](tarball://root/attachments/some-uuid/ticket6192/trac_6192.patch) by was created at 2009-06-02 22:04:42",
+    "body": "Attachment [trac_6192.patch](tarball://root/attachments/some-uuid/ticket6192/trac_6192.patch) by @williamstein created at 2009-06-02 22:04:42",
     "created_at": "2009-06-02T22:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6192#issuecomment-49457",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6192.patch](tarball://root/attachments/some-uuid/ticket6192/trac_6192.patch) by was created at 2009-06-02 22:04:42
+Attachment [trac_6192.patch](tarball://root/attachments/some-uuid/ticket6192/trac_6192.patch) by @williamstein created at 2009-06-02 22:04:42
 
 
 
@@ -106,7 +106,7 @@ archive/issue_comments_049458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6192#issuecomment-49458",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_049459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6192#issuecomment-49459",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001496.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  embray\n\n\n```\n\n\nOn Dec 13, 2007 12:31 PM, greg2k4 <greg2k4@mail.ru> wrote:\n> \n> Hi,\n> \n> I'd like to create an interactive book like SAGE tutorial from my\n> notebook worksheets.\n> But how can I link them together?\n> \n> In tutorial, links look like \"http://192.168.1.1/doc/live/tut/\n> nodeNN.html\" .\n> But actual worksheets have .sws extension.\n> \n> BTW, was this tutorial built using some tool? I've heard of JavaDoc\n> and others, but never used them...\n\nIt was built using latex2html plus an html --> worksheet parser\nthat Dorian Raymer wrote. \n\nI did start writing something to turn *tex* documents into sage notebooks, but\nit's really not ready for prime time, and that's not what you want anyways. \n\nYou can link worksheets together though, e.g., this will make a link to worksheet 15:\n\n<a href=\"/home/admin/15\">worksheet 15</a>\n\nThis is obviously sucky, since the worksheet numbers change if you download/upload\nthe worksheets.  Doing something better, i.e., somehow linking by the title of the worksheet,\netc., is not yet implemented.  \n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1496\n\n",
+    "body": "Assignee: boothby\n\nCC:  @embray\n\n\n```\n\n\nOn Dec 13, 2007 12:31 PM, greg2k4 <greg2k4@mail.ru> wrote:\n> \n> Hi,\n> \n> I'd like to create an interactive book like SAGE tutorial from my\n> notebook worksheets.\n> But how can I link them together?\n> \n> In tutorial, links look like \"http://192.168.1.1/doc/live/tut/\n> nodeNN.html\" .\n> But actual worksheets have .sws extension.\n> \n> BTW, was this tutorial built using some tool? I've heard of JavaDoc\n> and others, but never used them...\n\nIt was built using latex2html plus an html --> worksheet parser\nthat Dorian Raymer wrote. \n\nI did start writing something to turn *tex* documents into sage notebooks, but\nit's really not ready for prime time, and that's not what you want anyways. \n\nYou can link worksheets together though, e.g., this will make a link to worksheet 15:\n\n<a href=\"/home/admin/15\">worksheet 15</a>\n\nThis is obviously sucky, since the worksheet numbers change if you download/upload\nthe worksheets.  Doing something better, i.e., somehow linking by the title of the worksheet,\netc., is not yet implemented.  \n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1496\n\n",
     "created_at": "2007-12-13T23:20:45Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_001496.json:
     "title": "notebook -- make it easy to link different worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1496",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  embray
+CC:  @embray
 
 
 ```
@@ -74,7 +74,7 @@ archive/issue_comments_009609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1496#issuecomment-9609",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_009610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1496#issuecomment-9610",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_009611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1496",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1496#issuecomment-9611",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

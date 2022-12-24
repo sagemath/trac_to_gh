@@ -3,7 +3,7 @@
 archive/issues_009954.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThis is inconsistent\n\n\n```\nsage: Rational(3)%Rational(-1)\nZeroDivisionError: Inverse does not exist.\n```\n\n\nbut\n\n\n```\nsage: 3%(-1)\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9955\n\n",
+    "body": "Assignee: @aghitza\n\nThis is inconsistent\n\n\n```\nsage: Rational(3)%Rational(-1)\nZeroDivisionError: Inverse does not exist.\n```\n\n\nbut\n\n\n```\nsage: 3%(-1)\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9955\n\n",
     "created_at": "2010-09-20T18:20:29Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_009954.json:
     "title": "Rational(3)%Rational(-1) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9954",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 This is inconsistent
 
@@ -53,7 +53,7 @@ archive/issue_comments_099296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9954#issuecomment-99296",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_099297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9954#issuecomment-99297",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_099298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9954#issuecomment-99298",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_099299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9954#issuecomment-99299",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -138,16 +138,16 @@ Then I'll look at it again.
 archive/issue_comments_099300.json:
 ```json
 {
-    "body": "Attachment [trac_9955.patch](tarball://root/attachments/some-uuid/ticket9955/trac_9955.patch) by aapitzsch created at 2011-01-28 08:42:14",
+    "body": "Attachment [trac_9955.patch](tarball://root/attachments/some-uuid/ticket9955/trac_9955.patch) by @a-andre created at 2011-01-28 08:42:14",
     "created_at": "2011-01-28T08:42:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9954#issuecomment-99300",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [trac_9955.patch](tarball://root/attachments/some-uuid/ticket9955/trac_9955.patch) by aapitzsch created at 2011-01-28 08:42:14
+Attachment [trac_9955.patch](tarball://root/attachments/some-uuid/ticket9955/trac_9955.patch) by @a-andre created at 2011-01-28 08:42:14
 
 
 
@@ -161,7 +161,7 @@ archive/issue_comments_099301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9954#issuecomment-99301",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_099302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9954#issuecomment-99302",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_099303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9954#issuecomment-99303",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_099304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9954#issuecomment-99304",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_099305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9954#issuecomment-99305",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

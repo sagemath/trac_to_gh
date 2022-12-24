@@ -3,7 +3,7 @@
 archive/issues_004935.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nI discovered this while playing with #4612.\n\nThis is with the old gmp, i.e. not the new eMPIRe, but that also shows roughly the same numbers:\n\n```\nsage: get_memory_usage()\n790.43359375\nsage: time len([a for a in srange(10**5) if not (-a^3).is_perfect_power()])\nCPU times: user 0.27 s, sys: 0.03 s, total: 0.30 s\nWall time: 0.31 s\n24128\nsage: get_memory_usage()\n798.4765625\nsage: time len([a for a in srange(10**6) if not (-a^3).is_perfect_power()])\nCPU times: user 2.84 s, sys: 0.27 s, total: 3.12 s\nWall time: 3.12 s\n241224\nsage: get_memory_usage()\n868.921875\n```\n\n\nValgrinding this didn't turn up anything useful. Thoughts?\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4935\n\n",
+    "body": "Assignee: @robertwb\n\nI discovered this while playing with #4612.\n\nThis is with the old gmp, i.e. not the new eMPIRe, but that also shows roughly the same numbers:\n\n```\nsage: get_memory_usage()\n790.43359375\nsage: time len([a for a in srange(10**5) if not (-a^3).is_perfect_power()])\nCPU times: user 0.27 s, sys: 0.03 s, total: 0.30 s\nWall time: 0.31 s\n24128\nsage: get_memory_usage()\n798.4765625\nsage: time len([a for a in srange(10**6) if not (-a^3).is_perfect_power()])\nCPU times: user 2.84 s, sys: 0.27 s, total: 3.12 s\nWall time: 3.12 s\n241224\nsage: get_memory_usage()\n868.921875\n```\n\n\nValgrinding this didn't turn up anything useful. Thoughts?\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4935\n\n",
     "created_at": "2009-01-04T02:33:12Z",
     "labels": [
         "memleak",
@@ -17,7 +17,7 @@ archive/issues_004935.json:
     "user": "mabshoff"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 I discovered this while playing with #4612.
 
@@ -63,7 +63,7 @@ archive/issue_comments_037462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4935#issuecomment-37462",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_037464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4935#issuecomment-37464",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_037466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4935#issuecomment-37466",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_037468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4935#issuecomment-37468",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

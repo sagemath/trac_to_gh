@@ -3,7 +3,7 @@
 archive/issues_004846.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  craigcitro\n\nOften when we do fix IPython related problems things break when init.sage is present. So make doctesting create an empty init.sage so that this is potentially caught.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4846\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @craigcitro\n\nOften when we do fix IPython related problems things break when init.sage is present. So make doctesting create an empty init.sage so that this is potentially caught.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4846\n\n",
     "created_at": "2008-12-21T09:25:01Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_004846.json:
 ```
 Assignee: mabshoff
 
-CC:  craigcitro
+CC:  @craigcitro
 
 Often when we do fix IPython related problems things break when init.sage is present. So make doctesting create an empty init.sage so that this is potentially caught.
 
@@ -101,7 +101,7 @@ archive/issue_comments_036749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4846#issuecomment-36749",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

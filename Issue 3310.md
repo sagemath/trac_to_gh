@@ -14,7 +14,7 @@ archive/issues_003310.json:
     "title": "sage -b fails after touching sage/libs/mwrank/{mwrank.pyx,wrap.cc}",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3310",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: mabshoff
@@ -84,7 +84,7 @@ Changing priority from minor to blocker.
 archive/issue_comments_022893.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2008-05-26T20:28:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3310",
     "type": "issue_comment",
@@ -93,7 +93,7 @@ archive/issue_comments_022893.json:
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 

@@ -14,7 +14,7 @@ archive/issues_000726.json:
     "title": "notebook worksheet area has horizontal scrollbar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/726",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: boothby

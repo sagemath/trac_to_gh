@@ -14,7 +14,7 @@ archive/issues_001240.json:
     "title": "wrong unix rights of some files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1240",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: mabshoff
@@ -122,7 +122,7 @@ archive/issue_comments_007759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7759",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_007761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7761",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_007762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7762",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_007763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7763",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_007764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7764",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_007765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7765",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_007766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7766",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_007767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7767",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_007771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1240",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1240#issuecomment-7771",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

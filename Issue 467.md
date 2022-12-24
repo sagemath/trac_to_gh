@@ -86,7 +86,7 @@ archive/issue_comments_002320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/467#issuecomment-2320",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,16 +99,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_002321.json:
 ```json
 {
-    "body": "Changing assignee from somebody to craigcitro.",
+    "body": "Changing assignee from somebody to @craigcitro.",
     "created_at": "2007-10-10T23:56:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/467#issuecomment-2321",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from somebody to craigcitro.
+Changing assignee from somebody to @craigcitro.
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_002322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/467#issuecomment-2322",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_002323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/467#issuecomment-2323",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -198,16 +198,16 @@ The other ticket (with the pari <--> python long issue) is #864.
 archive/issue_comments_002324.json:
 ```json
 {
-    "body": "Attachment [convert.hg](tarball://root/attachments/some-uuid/ticket467/convert.hg) by craigcitro created at 2007-10-12 19:49:47",
+    "body": "Attachment [convert.hg](tarball://root/attachments/some-uuid/ticket467/convert.hg) by @craigcitro created at 2007-10-12 19:49:47",
     "created_at": "2007-10-12T19:49:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/467#issuecomment-2324",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [convert.hg](tarball://root/attachments/some-uuid/ticket467/convert.hg) by craigcitro created at 2007-10-12 19:49:47
+Attachment [convert.hg](tarball://root/attachments/some-uuid/ticket467/convert.hg) by @craigcitro created at 2007-10-12 19:49:47
 
 
 
@@ -221,7 +221,7 @@ archive/issue_comments_002325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/467#issuecomment-2325",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_002326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/467",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/467#issuecomment-2326",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006651.json:
     "title": "Cannot create cell before text cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6651",
-    "user": "hemmecke"
+    "user": "@hemmecke"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_054595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6651#issuecomment-54595",
-    "user": "hemmecke"
+    "user": "@hemmecke"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_054596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6651#issuecomment-54596",
-    "user": "hemmecke"
+    "user": "@hemmecke"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing priority from major to minor.
 archive/issue_comments_054597.json:
 ```json
 {
-    "body": "Attachment [CreateCellBeforeTextImpossible.sws](tarball://root/attachments/some-uuid/ticket6651/CreateCellBeforeTextImpossible.sws) by hemmecke created at 2009-07-28 21:30:16",
+    "body": "Attachment [CreateCellBeforeTextImpossible.sws](tarball://root/attachments/some-uuid/ticket6651/CreateCellBeforeTextImpossible.sws) by @hemmecke created at 2009-07-28 21:30:16",
     "created_at": "2009-07-28T21:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6651#issuecomment-54597",
-    "user": "hemmecke"
+    "user": "@hemmecke"
 }
 ```
 
-Attachment [CreateCellBeforeTextImpossible.sws](tarball://root/attachments/some-uuid/ticket6651/CreateCellBeforeTextImpossible.sws) by hemmecke created at 2009-07-28 21:30:16
+Attachment [CreateCellBeforeTextImpossible.sws](tarball://root/attachments/some-uuid/ticket6651/CreateCellBeforeTextImpossible.sws) by @hemmecke created at 2009-07-28 21:30:16
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_054598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6651#issuecomment-54598",
-    "user": "hemmecke"
+    "user": "@hemmecke"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_054599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6651#issuecomment-54599",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_054600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6651#issuecomment-54600",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_054601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6651#issuecomment-54601",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005439.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nProgressively fix all quirks and weirdness in sage.combinat listed on http://wiki.sagemath.org/combinat/Weirdness.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5439\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nProgressively fix all quirks and weirdness in sage.combinat listed on http://wiki.sagemath.org/combinat/Weirdness.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5439\n\n",
     "created_at": "2009-03-04T21:21:19Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005439.json:
     "title": "Cleanup quirks and weirdnesses in sage.combinat",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5439",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_042080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5439",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5439#issuecomment-42080",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 

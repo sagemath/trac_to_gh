@@ -3,7 +3,7 @@
 archive/issues_005895.json:
 ```json
 {
-    "body": "Assignee: rbeezer\n\nCC:  tornaria\n\nThis is an attempt to reduce the unlimited growth of snapshots of worksheets when using the notebook.  See related #5880 as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5895\n\n",
+    "body": "Assignee: @rbeezer\n\nCC:  @tornaria\n\nThis is an attempt to reduce the unlimited growth of snapshots of worksheets when using the notebook.  See related #5880 as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5895\n\n",
     "created_at": "2009-04-25T17:31:46Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005895.json:
     "title": "Limit number of worksheet snapshots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5895",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: rbeezer
+Assignee: @rbeezer
 
-CC:  tornaria
+CC:  @tornaria
 
 This is an attempt to reduce the unlimited growth of snapshots of worksheets when using the notebook.  See related #5880 as well.
 
@@ -39,7 +39,7 @@ archive/issue_comments_046608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5895#issuecomment-46608",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -60,16 +60,16 @@ Obviously, setting `max_snaps = 30` should be user-configurable.  Is it easy to 
 archive/issue_comments_046609.json:
 ```json
 {
-    "body": "Attachment [trac_5895_limit_snapshots.2.patch](tarball://root/attachments/some-uuid/ticket5895/trac_5895_limit_snapshots.2.patch) by was created at 2009-04-26 01:48:42\n\nYou *MUST* change this code:\n\n```\n \t1945\t        path = self.snapshot_directory() \n \t1946\t        snapshots = os.listdir(path) \n \t1947\t        snapshots.sort() \n \t1948\t        if len(snapshots) == (max_snaps + 1): \n \t1949\t            os.remove(os.path.join(path, snapshots[0]))\n```\n\n\nChange the line \"if len(snapshots) == (max_snaps + 1):\" to \n\n```\nwhile len(snapshots) > max_snaps:\n```\n\nIt reads better, will work, *and* will avoid subtle race conditions.  The way you have stuff setup in this patch, if there is ever a situation where two snapshots are made, but this function isn't called (e.g., due to some weird race conditions), then one goes back to having potentially thousands of snapshots.\n\nAlso, I see no reason to not delete snapshots from old worksheets too.  In fact, I very much hope that when I apply this patch, then directories with tons of snapshots on sagenb.org and my laptop will have their excessive snapshots deleted, at least if the corresponding worksheets are used.\n\n\nWilliam",
+    "body": "Attachment [trac_5895_limit_snapshots.2.patch](tarball://root/attachments/some-uuid/ticket5895/trac_5895_limit_snapshots.2.patch) by @williamstein created at 2009-04-26 01:48:42\n\nYou *MUST* change this code:\n\n```\n \t1945\t        path = self.snapshot_directory() \n \t1946\t        snapshots = os.listdir(path) \n \t1947\t        snapshots.sort() \n \t1948\t        if len(snapshots) == (max_snaps + 1): \n \t1949\t            os.remove(os.path.join(path, snapshots[0]))\n```\n\n\nChange the line \"if len(snapshots) == (max_snaps + 1):\" to \n\n```\nwhile len(snapshots) > max_snaps:\n```\n\nIt reads better, will work, *and* will avoid subtle race conditions.  The way you have stuff setup in this patch, if there is ever a situation where two snapshots are made, but this function isn't called (e.g., due to some weird race conditions), then one goes back to having potentially thousands of snapshots.\n\nAlso, I see no reason to not delete snapshots from old worksheets too.  In fact, I very much hope that when I apply this patch, then directories with tons of snapshots on sagenb.org and my laptop will have their excessive snapshots deleted, at least if the corresponding worksheets are used.\n\n\nWilliam",
     "created_at": "2009-04-26T01:48:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5895#issuecomment-46609",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5895_limit_snapshots.2.patch](tarball://root/attachments/some-uuid/ticket5895/trac_5895_limit_snapshots.2.patch) by was created at 2009-04-26 01:48:42
+Attachment [trac_5895_limit_snapshots.2.patch](tarball://root/attachments/some-uuid/ticket5895/trac_5895_limit_snapshots.2.patch) by @williamstein created at 2009-04-26 01:48:42
 
 You *MUST* change this code:
 
@@ -107,7 +107,7 @@ archive/issue_comments_046610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5895#issuecomment-46610",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_046611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5895#issuecomment-46611",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_046612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5895#issuecomment-46612",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_046613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5895#issuecomment-46613",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -211,16 +211,16 @@ William
 archive/issue_comments_046614.json:
 ```json
 {
-    "body": "Attachment [trac_5895_limit_snapshots_2.patch](tarball://root/attachments/some-uuid/ticket5895/trac_5895_limit_snapshots_2.patch) by rbeezer created at 2009-04-27 13:32:02",
+    "body": "Attachment [trac_5895_limit_snapshots_2.patch](tarball://root/attachments/some-uuid/ticket5895/trac_5895_limit_snapshots_2.patch) by @rbeezer created at 2009-04-27 13:32:02",
     "created_at": "2009-04-27T13:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5895#issuecomment-46614",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_5895_limit_snapshots_2.patch](tarball://root/attachments/some-uuid/ticket5895/trac_5895_limit_snapshots_2.patch) by rbeezer created at 2009-04-27 13:32:02
+Attachment [trac_5895_limit_snapshots_2.patch](tarball://root/attachments/some-uuid/ticket5895/trac_5895_limit_snapshots_2.patch) by @rbeezer created at 2009-04-27 13:32:02
 
 
 
@@ -234,7 +234,7 @@ archive/issue_comments_046615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5895#issuecomment-46615",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_046616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5895#issuecomment-46616",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_046617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5895#issuecomment-46617",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_046618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5895#issuecomment-46618",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_046619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5895",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5895#issuecomment-46619",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

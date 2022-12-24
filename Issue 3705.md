@@ -14,7 +14,7 @@ archive/issues_003705.json:
     "title": "upgrade Mercurial to 1.01",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3705",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff

@@ -3,7 +3,7 @@
 archive/issues_005157.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis has been driving me nuts for a while.  If you do \n\n```\nsage: EllipticCurve(997).gens(use_database=False)\n[[press control-c]]\nsage: EllipticCurve([1,3]).gens(use_database=False)\nTraceback (most recent call last):\n...\nRuntimeError: [Errno 9] Bad file descriptor\nError evaluating [0, 0, 0, 1, 3] in Mwrank\n```\n\n\nThis is from the notebook.  The same sequence works correctly from the command line (no bad file descriptor). \n\nI think the problem is that the notebook sends multiple control-c's and ends up killing sage properly restarting mwrank.  On the command line one has:\n\n\n```\nsage: EllipticCurve(997).gens(use_database=False)\n...\nKeyboardInterrupt: Restarting Mwrank (WARNING: all variables defined in previous session are now invalid)\nsage: EllipticCurve([1,3]).gens(use_database=False)\n[(-1 : 1 : 1)]\n```\n\n\nBUT, if you hit control-c twice in rapid succession, then mwrank gets broken even on the command line (I just verified this).\n\nThe fix is to make it so the mwrank interface recovers automatically if it gets left in this state. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5157\n\n",
+    "body": "Assignee: @williamstein\n\nThis has been driving me nuts for a while.  If you do \n\n```\nsage: EllipticCurve(997).gens(use_database=False)\n[[press control-c]]\nsage: EllipticCurve([1,3]).gens(use_database=False)\nTraceback (most recent call last):\n...\nRuntimeError: [Errno 9] Bad file descriptor\nError evaluating [0, 0, 0, 1, 3] in Mwrank\n```\n\n\nThis is from the notebook.  The same sequence works correctly from the command line (no bad file descriptor). \n\nI think the problem is that the notebook sends multiple control-c's and ends up killing sage properly restarting mwrank.  On the command line one has:\n\n\n```\nsage: EllipticCurve(997).gens(use_database=False)\n...\nKeyboardInterrupt: Restarting Mwrank (WARNING: all variables defined in previous session are now invalid)\nsage: EllipticCurve([1,3]).gens(use_database=False)\n[(-1 : 1 : 1)]\n```\n\n\nBUT, if you hit control-c twice in rapid succession, then mwrank gets broken even on the command line (I just verified this).\n\nThe fix is to make it so the mwrank interface recovers automatically if it gets left in this state. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5157\n\n",
     "created_at": "2009-02-02T06:09:32Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_005157.json:
     "title": "if the mwrank interface is interrupted from the notebook (!) it stays broken for the rest of the sage session",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5157",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This has been driving me nuts for a while.  If you do 
 
@@ -67,7 +67,7 @@ archive/issue_comments_039507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5157#issuecomment-39507",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -80,16 +80,16 @@ It seems to be okay, but do we really want the "print '*'*1000" in there?
 archive/issue_comments_039508.json:
 ```json
 {
-    "body": "Attachment [trac_5157.patch](tarball://root/attachments/some-uuid/ticket5157/trac_5157.patch) by was created at 2009-02-02 07:31:03",
+    "body": "Attachment [trac_5157.patch](tarball://root/attachments/some-uuid/ticket5157/trac_5157.patch) by @williamstein created at 2009-02-02 07:31:03",
     "created_at": "2009-02-02T07:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5157#issuecomment-39508",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5157.patch](tarball://root/attachments/some-uuid/ticket5157/trac_5157.patch) by was created at 2009-02-02 07:31:03
+Attachment [trac_5157.patch](tarball://root/attachments/some-uuid/ticket5157/trac_5157.patch) by @williamstein created at 2009-02-02 07:31:03
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_039509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5157#issuecomment-39509",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_039510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5157#issuecomment-39510",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

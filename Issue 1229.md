@@ -3,7 +3,7 @@
 archive/issues_001229.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nFile \"calculus.py\", line 209:\n     sage: expand((x+y)^3)\nExpected:\n     y^3 + 3*x*y^2 + 3*x^2*y + x^3\nGot:\n     x^6 + 3*x^5 + 3*x^4 + x^3\n```\n\nThis is likely fallout from #1215.\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1229\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nFile \"calculus.py\", line 209:\n     sage: expand((x+y)^3)\nExpected:\n     y^3 + 3*x*y^2 + 3*x^2*y + x^3\nGot:\n     x^6 + 3*x^5 + 3*x^4 + x^3\n```\n\nThis is likely fallout from #1215.\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1229\n\n",
     "created_at": "2007-11-20T23:06:20Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_001229.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1229
 archive/issue_comments_007644.json:
 ```json
 {
-    "body": "Attachment [trac1229.patch](tarball://root/attachments/some-uuid/ticket1229/trac1229.patch) by was created at 2007-11-21 12:49:59",
+    "body": "Attachment [trac1229.patch](tarball://root/attachments/some-uuid/ticket1229/trac1229.patch) by @williamstein created at 2007-11-21 12:49:59",
     "created_at": "2007-11-21T12:49:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1229",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1229#issuecomment-7644",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac1229.patch](tarball://root/attachments/some-uuid/ticket1229/trac1229.patch) by was created at 2007-11-21 12:49:59
+Attachment [trac1229.patch](tarball://root/attachments/some-uuid/ticket1229/trac1229.patch) by @williamstein created at 2007-11-21 12:49:59
 
 
 
@@ -101,7 +101,7 @@ Merged in 2.8.13.rc2.
 archive/issue_comments_007647.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-11-21T13:00:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1229",
     "type": "issue_comment",
@@ -110,7 +110,7 @@ archive/issue_comments_007647.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 

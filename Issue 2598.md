@@ -14,7 +14,7 @@ archive/issues_002598.json:
     "title": "[with patch, needs review] allow ZZ element to be constructed from GF(2) list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2598",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody

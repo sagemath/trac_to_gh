@@ -3,7 +3,7 @@
 archive/issues_003857.json:
 ```json
 {
-    "body": "Assignee: was\n\nFor example \n\n```\nsage: BinaryQF_reduced_representatives(-63)\n\n[2*x^2 - x*y + 8*y^2,\n 4*x^2 - x*y + 4*y^2,\n x^2 + x*y + 16*y^2,\n 2*x^2 + x*y + 8*y^2,\n 4*x^2 + x*y + 4*y^2,\n 3*x^2 + 3*x*y + 6*y^2]\n```\n\n\nHowever, clearly:\n\n\n```\n4*x^2 - x*y + 4*y^2\n```\n\n\nisn't a reduced form.\nBinaryQF_reduced_representatives is incorrectly classifying some forms.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3857\n\n",
+    "body": "Assignee: @williamstein\n\nFor example \n\n```\nsage: BinaryQF_reduced_representatives(-63)\n\n[2*x^2 - x*y + 8*y^2,\n 4*x^2 - x*y + 4*y^2,\n x^2 + x*y + 16*y^2,\n 2*x^2 + x*y + 8*y^2,\n 4*x^2 + x*y + 4*y^2,\n 3*x^2 + 3*x*y + 6*y^2]\n```\n\n\nHowever, clearly:\n\n\n```\n4*x^2 - x*y + 4*y^2\n```\n\n\nisn't a reduced form.\nBinaryQF_reduced_representatives is incorrectly classifying some forms.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3857\n\n",
     "created_at": "2008-08-14T21:07:07Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_003857.json:
     "user": "choldsworth"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 For example 
 
@@ -79,7 +79,7 @@ archive/issue_comments_027470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3857#issuecomment-27470",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_027473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3857#issuecomment-27473",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -178,16 +178,16 @@ Apply after the previous patch (ignore the first one)
 archive/issue_comments_027474.json:
 ```json
 {
-    "body": "Attachment [sage-trac3857.patch](tarball://root/attachments/some-uuid/ticket3857/sage-trac3857.patch) by cremona created at 2008-08-25 10:34:23\n\nThat is some speedup!  When I tested the same myself I noticed that during the (long) test of the old code the machine was running lisp, meaning that something was happening using maxima, which it should not.  But that is now in the past.\n\nI have simplified the code a bit more, using xsrange() for the a and b loops, and letting b only loop from 0 (or 1) to a, adding in the form with -b if needed.  This gives another speedup factor of about 2.\n\nThis should now have a new independent review -- as far as I am concerned it is ok!  \n\nI'll now review the other patches you made in response to my first two points.",
+    "body": "Attachment [sage-trac3857.patch](tarball://root/attachments/some-uuid/ticket3857/sage-trac3857.patch) by @JohnCremona created at 2008-08-25 10:34:23\n\nThat is some speedup!  When I tested the same myself I noticed that during the (long) test of the old code the machine was running lisp, meaning that something was happening using maxima, which it should not.  But that is now in the past.\n\nI have simplified the code a bit more, using xsrange() for the a and b loops, and letting b only loop from 0 (or 1) to a, adding in the form with -b if needed.  This gives another speedup factor of about 2.\n\nThis should now have a new independent review -- as far as I am concerned it is ok!  \n\nI'll now review the other patches you made in response to my first two points.",
     "created_at": "2008-08-25T10:34:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3857#issuecomment-27474",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac3857.patch](tarball://root/attachments/some-uuid/ticket3857/sage-trac3857.patch) by cremona created at 2008-08-25 10:34:23
+Attachment [sage-trac3857.patch](tarball://root/attachments/some-uuid/ticket3857/sage-trac3857.patch) by @JohnCremona created at 2008-08-25 10:34:23
 
 That is some speedup!  When I tested the same myself I noticed that during the (long) test of the old code the machine was running lisp, meaning that something was happening using maxima, which it should not.  But that is now in the past.
 
@@ -224,7 +224,7 @@ Apply after the previous two patches (ignore the first one)
 archive/issue_comments_027476.json:
 ```json
 {
-    "body": "Changing assignee from was to NilsSkoruppa.",
+    "body": "Changing assignee from @williamstein to NilsSkoruppa.",
     "created_at": "2008-09-06T15:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3857",
     "type": "issue_comment",
@@ -233,7 +233,7 @@ archive/issue_comments_027476.json:
 }
 ```
 
-Changing assignee from was to NilsSkoruppa.
+Changing assignee from @williamstein to NilsSkoruppa.
 
 
 
@@ -283,7 +283,7 @@ archive/issue_comments_027478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3857",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3857#issuecomment-27478",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

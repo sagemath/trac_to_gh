@@ -3,7 +3,7 @@
 archive/issues_008913.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat rbeezer\n\nThis patch reinstates appropriate labeling of the edges for two sided cayley graphs::\n\n```\n   sage: S = FiniteSemigroups().example(alphabet=('a','b'))\n   sage: g = S.cayley_graph(side=\"twosided\")\n   sage: g.edges()\n   [('a', 'a', (0, 'left')), ('a', 'a', (0, 'right')), ('a', 'ab', (1, 'right')), ('a', 'ba', (1, 'left')), ('ab', 'ab', (0, 'left')), ('ab', 'ab', (0, 'right')), ('ab', 'ab', (1, 'right')), ('ab', 'ba', (1, 'left')), ('b', 'ab', (0, 'left')), ('b', 'b', (1, 'left')), ('b', 'b', (1, 'right')), ('b', 'ba', (0, 'right')), ('ba', 'ab', (0, 'left')), ('ba', 'ba', (0, 'right')), ('ba', 'ba', (1, 'left')), ('ba', 'ba', (1, 'right'))]\n```\n\n\nThis was inadvertently broken by #8044 which discarded the `left` / `right` info.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8913\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @rbeezer\n\nThis patch reinstates appropriate labeling of the edges for two sided cayley graphs::\n\n```\n   sage: S = FiniteSemigroups().example(alphabet=('a','b'))\n   sage: g = S.cayley_graph(side=\"twosided\")\n   sage: g.edges()\n   [('a', 'a', (0, 'left')), ('a', 'a', (0, 'right')), ('a', 'ab', (1, 'right')), ('a', 'ba', (1, 'left')), ('ab', 'ab', (0, 'left')), ('ab', 'ab', (0, 'right')), ('ab', 'ab', (1, 'right')), ('ab', 'ba', (1, 'left')), ('b', 'ab', (0, 'left')), ('b', 'b', (1, 'left')), ('b', 'b', (1, 'right')), ('b', 'ba', (0, 'right')), ('ba', 'ab', (0, 'left')), ('ba', 'ba', (0, 'right')), ('ba', 'ba', (1, 'left')), ('ba', 'ba', (1, 'right'))]\n```\n\n\nThis was inadvertently broken by #8044 which discarded the `left` / `right` info.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8913\n\n",
     "created_at": "2010-05-07T15:10:43Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008913.json:
     "title": "S.cayley_graph(side = \"twosided\") returns broken labels",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8913",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat rbeezer
+CC:  sage-combinat @rbeezer
 
 This patch reinstates appropriate labeling of the edges for two sided cayley graphs::
 
@@ -49,7 +49,7 @@ archive/issue_comments_082103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8913#issuecomment-82103",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_082104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8913#issuecomment-82104",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing keywords from "" to "cayley graph".
 archive/issue_comments_082105.json:
 ```json
 {
-    "body": "Attachment [trac_8913-cayley_graph_twosided_labels-nt.patch](tarball://root/attachments/some-uuid/ticket8913/trac_8913-cayley_graph_twosided_labels-nt.patch) by nthiery created at 2010-05-18 21:18:56",
+    "body": "Attachment [trac_8913-cayley_graph_twosided_labels-nt.patch](tarball://root/attachments/some-uuid/ticket8913/trac_8913-cayley_graph_twosided_labels-nt.patch) by @nthiery created at 2010-05-18 21:18:56",
     "created_at": "2010-05-18T21:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8913#issuecomment-82105",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8913-cayley_graph_twosided_labels-nt.patch](tarball://root/attachments/some-uuid/ticket8913/trac_8913-cayley_graph_twosided_labels-nt.patch) by nthiery created at 2010-05-18 21:18:56
+Attachment [trac_8913-cayley_graph_twosided_labels-nt.patch](tarball://root/attachments/some-uuid/ticket8913/trac_8913-cayley_graph_twosided_labels-nt.patch) by @nthiery created at 2010-05-18 21:18:56
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_082106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8913#issuecomment-82106",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_082107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8913#issuecomment-82107",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_082108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8913#issuecomment-82108",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_082109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8913#issuecomment-82109",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_082110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8913#issuecomment-82110",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

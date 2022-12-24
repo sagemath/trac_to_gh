@@ -3,7 +3,7 @@
 archive/issues_003998.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3998\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3998\n\n",
     "created_at": "2008-08-29T21:59:57Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003998.json:
     "title": "[with patch, needs review] doctest the sage0 interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3998",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3998
 archive/issue_comments_028720.json:
 ```json
 {
-    "body": "Attachment [trac_3998.patch](tarball://root/attachments/some-uuid/ticket3998/trac_3998.patch) by mhansen created at 2008-08-29 22:00:03",
+    "body": "Attachment [trac_3998.patch](tarball://root/attachments/some-uuid/ticket3998/trac_3998.patch) by @mwhansen created at 2008-08-29 22:00:03",
     "created_at": "2008-08-29T22:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3998#issuecomment-28720",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3998.patch](tarball://root/attachments/some-uuid/ticket3998/trac_3998.patch) by mhansen created at 2008-08-29 22:00:03
+Attachment [trac_3998.patch](tarball://root/attachments/some-uuid/ticket3998/trac_3998.patch) by @mwhansen created at 2008-08-29 22:00:03
 
 
 

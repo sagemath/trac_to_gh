@@ -3,7 +3,7 @@
 archive/issues_006312.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  davidloeffler\n\n\n```\nsage -t -long --optional devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/rings/number_field/number_field.py\", line 3107:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(pari_group=False)    # optional - database_gap\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_69[15]>\", line 1, in <module>\n        NumberField(x**Integer(3) + Integer(2)*x + Integer(1), 'a').galois_group(pari_group=False)    # optional - database_gap###line 3107:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(pari_group=False)    # optional - database_gap\n    TypeError: galois_group() got an unexpected keyword argument 'pari_group'\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/rings/number_field/number_field.py\", line 3109:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(algorithm='magma')   # optional - magma, , database_gap\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_69[16]>\", line 1, in <module>\n        NumberField(x**Integer(3) + Integer(2)*x + Integer(1), 'a').galois_group(algorithm='magma')   # optional - magma, , database_gap###line 3109:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(algorithm='magma')   # optional - magma, , database_gap\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 3133, in galois_group\n        return self._galois_group_cached(type, algorithm, names)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/misc/cachefunc.py\", line 242, in __call__\n        cache[key] = self.f(self._instance, *args, **kwds)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 3147, in _galois_group_cached\n        return GaloisGroup_v2(self, names)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/galois_group.py\", line 183, in __init__\n        self._galois_closure, self._gc_map = number_field.galois_closure(names=names, map=True)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 5103, in galois_closure\n        L, self_into_L = self._galois_closure_and_embedding(names)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 5042, in _galois_closure_and_embedding\n        L = K.change_names(names)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 4679, in change_names\n        return self.absolute_field(names)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 1292, in absolute_field\n        K = NumberField(self.defining_polynomial(), names, cache=False)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 380, in NumberField\n        raise TypeError, \"You must specify the name of the generator.\"\n    TypeError: You must specify the name of the generator.\n\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n**********************************************************************\n1 items had failures:\n   2 of  22 in __main__.example_69\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_number_field.py\n\t [20.7 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6312\n\n",
+    "body": "Assignee: tbd\n\nCC:  @loefflerd\n\n\n```\nsage -t -long --optional devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/rings/number_field/number_field.py\", line 3107:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(pari_group=False)    # optional - database_gap\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_69[15]>\", line 1, in <module>\n        NumberField(x**Integer(3) + Integer(2)*x + Integer(1), 'a').galois_group(pari_group=False)    # optional - database_gap###line 3107:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(pari_group=False)    # optional - database_gap\n    TypeError: galois_group() got an unexpected keyword argument 'pari_group'\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/rings/number_field/number_field.py\", line 3109:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(algorithm='magma')   # optional - magma, , database_gap\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_69[16]>\", line 1, in <module>\n        NumberField(x**Integer(3) + Integer(2)*x + Integer(1), 'a').galois_group(algorithm='magma')   # optional - magma, , database_gap###line 3109:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(algorithm='magma')   # optional - magma, , database_gap\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 3133, in galois_group\n        return self._galois_group_cached(type, algorithm, names)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/misc/cachefunc.py\", line 242, in __call__\n        cache[key] = self.f(self._instance, *args, **kwds)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 3147, in _galois_group_cached\n        return GaloisGroup_v2(self, names)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/galois_group.py\", line 183, in __init__\n        self._galois_closure, self._gc_map = number_field.galois_closure(names=names, map=True)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 5103, in galois_closure\n        L, self_into_L = self._galois_closure_and_embedding(names)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 5042, in _galois_closure_and_embedding\n        L = K.change_names(names)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 4679, in change_names\n        return self.absolute_field(names)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 1292, in absolute_field\n        K = NumberField(self.defining_polynomial(), names, cache=False)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 380, in NumberField\n        raise TypeError, \"You must specify the name of the generator.\"\n    TypeError: You must specify the name of the generator.\n\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n**********************************************************************\n1 items had failures:\n   2 of  22 in __main__.example_69\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_number_field.py\n\t [20.7 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6312\n\n",
     "created_at": "2009-06-16T14:41:04Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_006312.json:
     "title": "optional doctest failure -- galois_group",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6312",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  davidloeffler
+CC:  @loefflerd
 
 
 ```
@@ -182,7 +182,7 @@ archive/issue_comments_050386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6312#issuecomment-50386",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_050387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6312#issuecomment-50387",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_050388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6312#issuecomment-50388",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_050390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6312#issuecomment-50390",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_050391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6312#issuecomment-50391",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_050392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6312#issuecomment-50392",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_050393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6312#issuecomment-50393",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_050394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6312#issuecomment-50394",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

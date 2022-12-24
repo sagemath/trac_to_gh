@@ -14,7 +14,7 @@ archive/issues_004175.json:
     "title": "[with patch, needs review] cpdef arithmatic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4175",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4175
 archive/issue_comments_030287.json:
 ```json
 {
-    "body": "Attachment [4175-no-impl.patch](tarball://root/attachments/some-uuid/ticket4175/4175-no-impl.patch) by robertwb created at 2008-09-23 07:24:11\n\nThis gets rid of a lot of cruft and hundreds of lines of unneeded code now that we have cpdef functions (as well as hundreds of lines of ever .c function that cimports Element). \n\nAll tests pass with sage -testall.",
+    "body": "Attachment [4175-no-impl.patch](tarball://root/attachments/some-uuid/ticket4175/4175-no-impl.patch) by @robertwb created at 2008-09-23 07:24:11\n\nThis gets rid of a lot of cruft and hundreds of lines of unneeded code now that we have cpdef functions (as well as hundreds of lines of ever .c function that cimports Element). \n\nAll tests pass with sage -testall.",
     "created_at": "2008-09-23T07:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4175#issuecomment-30287",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4175-no-impl.patch](tarball://root/attachments/some-uuid/ticket4175/4175-no-impl.patch) by robertwb created at 2008-09-23 07:24:11
+Attachment [4175-no-impl.patch](tarball://root/attachments/some-uuid/ticket4175/4175-no-impl.patch) by @robertwb created at 2008-09-23 07:24:11
 
 This gets rid of a lot of cruft and hundreds of lines of unneeded code now that we have cpdef functions (as well as hundreds of lines of ever .c function that cimports Element). 
 
@@ -59,7 +59,7 @@ archive/issue_comments_030288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4175#issuecomment-30288",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_030290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4175#issuecomment-30290",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -143,16 +143,16 @@ Michael
 archive/issue_comments_030292.json:
 ```json
 {
-    "body": "Attachment [4175-no-impl-RRx.patch](tarball://root/attachments/some-uuid/ticket4175/4175-no-impl-RRx.patch) by robertwb created at 2008-09-23 23:08:15",
+    "body": "Attachment [4175-no-impl-RRx.patch](tarball://root/attachments/some-uuid/ticket4175/4175-no-impl-RRx.patch) by @robertwb created at 2008-09-23 23:08:15",
     "created_at": "2008-09-23T23:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4175#issuecomment-30292",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4175-no-impl-RRx.patch](tarball://root/attachments/some-uuid/ticket4175/4175-no-impl-RRx.patch) by robertwb created at 2008-09-23 23:08:15
+Attachment [4175-no-impl-RRx.patch](tarball://root/attachments/some-uuid/ticket4175/4175-no-impl-RRx.patch) by @robertwb created at 2008-09-23 23:08:15
 
 
 
@@ -166,7 +166,7 @@ archive/issue_comments_030293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4175",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4175#issuecomment-30293",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

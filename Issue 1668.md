@@ -3,7 +3,7 @@
 archive/issues_001668.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nVariable names like `_[A-Z]` cause trouble on Cygwin and Solaris. The polybori wrapper uses a couple of those. The renamed variables could be in some other for, but `_PP` also won't work. I have a patch, but since there are a bunch of other patches that touch the code and would need to be fixed wait for those to be merged before redoing this. burcin has volunteered to do this.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1668\n\n",
+    "body": "Assignee: @burcin\n\nVariable names like `_[A-Z]` cause trouble on Cygwin and Solaris. The polybori wrapper uses a couple of those. The renamed variables could be in some other for, but `_PP` also won't work. I have a patch, but since there are a bunch of other patches that touch the code and would need to be fixed wait for those to be merged before redoing this. burcin has volunteered to do this.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1668\n\n",
     "created_at": "2008-01-03T15:35:10Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_001668.json:
     "user": "mabshoff"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Variable names like `_[A-Z]` cause trouble on Cygwin and Solaris. The polybori wrapper uses a couple of those. The renamed variables could be in some other for, but `_PP` also won't work. I have a patch, but since there are a bunch of other patches that touch the code and would need to be fixed wait for those to be merged before redoing this. burcin has volunteered to do this.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1668
 archive/issue_comments_010594.json:
 ```json
 {
-    "body": "Attachment [trac_1668.patch](tarball://root/attachments/some-uuid/ticket1668/trac_1668.patch) by burcin created at 2008-01-08 14:17:14\n\nrename polybori variables",
+    "body": "Attachment [trac_1668.patch](tarball://root/attachments/some-uuid/ticket1668/trac_1668.patch) by @burcin created at 2008-01-08 14:17:14\n\nrename polybori variables",
     "created_at": "2008-01-08T14:17:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1668#issuecomment-10594",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_1668.patch](tarball://root/attachments/some-uuid/ticket1668/trac_1668.patch) by burcin created at 2008-01-08 14:17:14
+Attachment [trac_1668.patch](tarball://root/attachments/some-uuid/ticket1668/trac_1668.patch) by @burcin created at 2008-01-08 14:17:14
 
 rename polybori variables
 
@@ -61,7 +61,7 @@ archive/issue_comments_010595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1668#issuecomment-10595",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_010596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1668#issuecomment-10596",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

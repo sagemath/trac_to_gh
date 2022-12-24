@@ -3,7 +3,7 @@
 archive/issues_003157.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThis patch adds a GCC executable extension for pbuild\n\nIssue created by migration from https://trac.sagemath.org/ticket/3157\n\n",
+    "body": "Assignee: @garyfurnish\n\nThis patch adds a GCC executable extension for pbuild\n\nIssue created by migration from https://trac.sagemath.org/ticket/3157\n\n",
     "created_at": "2008-05-11T10:01:12Z",
     "labels": [
         "pbuild",
@@ -14,10 +14,10 @@ archive/issues_003157.json:
     "title": "[with patch, needs trivial review] Executable target for pbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3157",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 This patch adds a GCC executable extension for pbuild
 

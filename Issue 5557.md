@@ -3,7 +3,7 @@
 archive/issues_005557.json:
 ```json
 {
-    "body": "Assignee: was\n\n#5520 calls M.det() for M a 4x4 matrix a huge number of times.  So, let's optimize the heck out of it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5557\n\n",
+    "body": "Assignee: @williamstein\n\n#5520 calls M.det() for M a 4x4 matrix a huge number of times.  So, let's optimize the heck out of it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5557\n\n",
     "created_at": "2009-03-18T11:48:08Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_005557.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 #5520 calls M.det() for M a 4x4 matrix a huge number of times.  So, let's optimize the heck out of it!
 
@@ -145,7 +145,7 @@ archive/issue_comments_043244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43244",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_043245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43245",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_043246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43246",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_043249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43249",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_043252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43252",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_043255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43255",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_043256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43256",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_043259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43259",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -518,16 +518,16 @@ There are no doctests for the new code, so I have added fairly trivial indirect 
 archive/issue_comments_043260.json:
 ```json
 {
-    "body": "Attachment [trac_5557_review.patch](tarball://root/attachments/some-uuid/ticket5557/trac_5557_review.patch) by AlexGhitza created at 2009-04-30 11:56:38\n\napply after the first patch",
+    "body": "Attachment [trac_5557_review.patch](tarball://root/attachments/some-uuid/ticket5557/trac_5557_review.patch) by @aghitza created at 2009-04-30 11:56:38\n\napply after the first patch",
     "created_at": "2009-04-30T11:56:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5557",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43260",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5557_review.patch](tarball://root/attachments/some-uuid/ticket5557/trac_5557_review.patch) by AlexGhitza created at 2009-04-30 11:56:38
+Attachment [trac_5557_review.patch](tarball://root/attachments/some-uuid/ticket5557/trac_5557_review.patch) by @aghitza created at 2009-04-30 11:56:38
 
 apply after the first patch
 

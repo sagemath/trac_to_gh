@@ -14,7 +14,7 @@ archive/issues_001657.json:
     "title": "make a build-from-source version of jmol spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1657",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -111,7 +111,7 @@ archive/issue_comments_010544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1657#issuecomment-10544",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_010546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1657#issuecomment-10546",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_010547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1657#issuecomment-10547",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_010548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1657#issuecomment-10548",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

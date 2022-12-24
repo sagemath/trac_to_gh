@@ -3,7 +3,7 @@
 archive/issues_001224.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\nmichael-abshoffs-ibook-g4:~/Desktop/sage-2.8.13.rc0 mabshoff$ ./sage -\nt  devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx\nsage -t  devel/sage-main/sage/rings/\nfinite_field_ntl_gf2e.pyx**********************************************************************\nFile \"finite_field_ntl_gf2e.pyx\", line 978:\n    sage: int(a)\nExpected:\n    2\nGot:\n    33554432\n**********************************************************************\nFile \"finite_field_ntl_gf2e.pyx\", line 980:\n    sage: int(a^2 + 1)\nExpected:\n    5\nGot:\n    83886080\n**********************************************************************\n1 items had failures:\n   2 of   3 in __main__.example_41\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_finite_field_ntl_gf2e.pyx\n         [11.1 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx\nTotal time for all tests: 11.1 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1224\n\n",
+    "body": "Assignee: @malb\n\n\n```\nmichael-abshoffs-ibook-g4:~/Desktop/sage-2.8.13.rc0 mabshoff$ ./sage -\nt  devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx\nsage -t  devel/sage-main/sage/rings/\nfinite_field_ntl_gf2e.pyx**********************************************************************\nFile \"finite_field_ntl_gf2e.pyx\", line 978:\n    sage: int(a)\nExpected:\n    2\nGot:\n    33554432\n**********************************************************************\nFile \"finite_field_ntl_gf2e.pyx\", line 980:\n    sage: int(a^2 + 1)\nExpected:\n    5\nGot:\n    83886080\n**********************************************************************\n1 items had failures:\n   2 of   3 in __main__.example_41\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_finite_field_ntl_gf2e.pyx\n         [11.1 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage-main/sage/rings/finite_field_ntl_gf2e.pyx\nTotal time for all tests: 11.1 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1224\n\n",
     "created_at": "2007-11-20T22:54:21Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_001224.json:
     "user": "mabshoff"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -89,7 +89,7 @@ archive/issue_comments_007623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1224#issuecomment-7623",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

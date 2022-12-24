@@ -14,7 +14,7 @@ archive/issues_003106.json:
     "title": "Add an \"image\" link for a screenshot of the JMOL applet in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3106",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -76,7 +76,7 @@ archive/issue_comments_021463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21463",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_021464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21464",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -107,16 +107,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_021465.json:
 ```json
 {
-    "body": "Attachment [jmol-save-image.patch](tarball://root/attachments/some-uuid/ticket3106/jmol-save-image.patch) by jason created at 2009-02-14 09:48:46",
+    "body": "Attachment [jmol-save-image.patch](tarball://root/attachments/some-uuid/ticket3106/jmol-save-image.patch) by @jasongrout created at 2009-02-14 09:48:46",
     "created_at": "2009-02-14T09:48:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21465",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [jmol-save-image.patch](tarball://root/attachments/some-uuid/ticket3106/jmol-save-image.patch) by jason created at 2009-02-14 09:48:46
+Attachment [jmol-save-image.patch](tarball://root/attachments/some-uuid/ticket3106/jmol-save-image.patch) by @jasongrout created at 2009-02-14 09:48:46
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_021466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21466",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -143,16 +143,16 @@ Both patches are identical;  you can delete one.
 archive/issue_comments_021467.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2009-02-14T10:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21467",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 
@@ -166,7 +166,7 @@ archive/issue_comments_021468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21468",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

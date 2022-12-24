@@ -14,7 +14,7 @@ archive/issues_002702.json:
     "title": "[with patch, needs review] multi_polynomial_libsingular coverage almost 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2702",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: failure
@@ -87,7 +87,7 @@ archive/issue_comments_018634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2702#issuecomment-18634",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_018636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2702#issuecomment-18636",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_018637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2702#issuecomment-18637",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_018638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2702#issuecomment-18638",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_018639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2702#issuecomment-18639",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -241,16 +241,16 @@ I'm fine with the last two patches being applied.
 archive/issue_comments_018640.json:
 ```json
 {
-    "body": "Attachment [2702.patch](tarball://root/attachments/some-uuid/ticket2702/2702.patch) by mhansen created at 2008-03-29 20:28:13",
+    "body": "Attachment [2702.patch](tarball://root/attachments/some-uuid/ticket2702/2702.patch) by @mwhansen created at 2008-03-29 20:28:13",
     "created_at": "2008-03-29T20:28:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2702#issuecomment-18640",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2702.patch](tarball://root/attachments/some-uuid/ticket2702/2702.patch) by mhansen created at 2008-03-29 20:28:13
+Attachment [2702.patch](tarball://root/attachments/some-uuid/ticket2702/2702.patch) by @mwhansen created at 2008-03-29 20:28:13
 
 
 

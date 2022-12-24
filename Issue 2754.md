@@ -3,7 +3,7 @@
 archive/issues_002754.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason mvngu\n\n\n```\n\nOn Tue, Apr 1, 2008 at 7:29 AM, Axel <axelgrau@gmail.com> wrote:\n> \n>  How can I specify the range of y coordinates in a 2d plot? I tried\n>  \n>  show(plot(sin(x),-10,10),ymin=-0.5, ymax=0.5,frame=true)\n>  \n>  but the actual plot goes between -0.6, and 0.6, and the curve goes out\n>  of the frame.\n\nI think that's an honest-to-goodness *bug*.  For now you can try\nto workaround it sort of with:\n    show(plot(sin(x),-10,10),ymin=-0.41, ymax=0.41,frame=true)\nbut still the curve goes outside the frame.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2754\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout mvngu\n\n\n```\n\nOn Tue, Apr 1, 2008 at 7:29 AM, Axel <axelgrau@gmail.com> wrote:\n> \n>  How can I specify the range of y coordinates in a 2d plot? I tried\n>  \n>  show(plot(sin(x),-10,10),ymin=-0.5, ymax=0.5,frame=true)\n>  \n>  but the actual plot goes between -0.6, and 0.6, and the curve goes out\n>  of the frame.\n\nI think that's an honest-to-goodness *bug*.  For now you can try\nto workaround it sort of with:\n    show(plot(sin(x),-10,10),ymin=-0.41, ymax=0.41,frame=true)\nbut still the curve goes outside the frame.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2754\n\n",
     "created_at": "2008-04-01T15:59:45Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_002754.json:
     "title": "plotting with frame=True and ymin/ymax sometimes is buggy as a Florida swamp in summer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2754",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason mvngu
+CC:  @jasongrout mvngu
 
 
 ```
@@ -56,7 +56,7 @@ archive/issue_comments_018915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2754#issuecomment-18915",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -69,16 +69,16 @@ Changing status from new to assigned.
 archive/issue_comments_018916.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-09-03T00:54:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2754#issuecomment-18916",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_018917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2754#issuecomment-18917",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_018918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2754#issuecomment-18918",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_018919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2754#issuecomment-18919",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_018920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2754#issuecomment-18920",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_018921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2754#issuecomment-18921",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_018922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2754#issuecomment-18922",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

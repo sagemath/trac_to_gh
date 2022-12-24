@@ -14,7 +14,7 @@ archive/issues_003858.json:
     "title": "[with patch, needs review] 3.1alpha: fix issues with the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3858",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tba

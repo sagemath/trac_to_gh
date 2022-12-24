@@ -3,7 +3,7 @@
 archive/issues_005177.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  ddrake\n\nIf you delete a cell, it doesn't delete the directory for the cell, at least not very soon (it does seem that they eventually get deleted).  Should it maybe when you log off the worksheet?  Or maybe immediately.  This is particularly bad when there are large computations or graphics involved, and may contribute to making .sws files rather large even if there are few cells.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5177\n\n",
+    "body": "Assignee: boothby\n\nCC:  @dandrake\n\nIf you delete a cell, it doesn't delete the directory for the cell, at least not very soon (it does seem that they eventually get deleted).  Should it maybe when you log off the worksheet?  Or maybe immediately.  This is particularly bad when there are large computations or graphics involved, and may contribute to making .sws files rather large even if there are few cells.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5177\n\n",
     "created_at": "2009-02-04T18:05:26Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_005177.json:
     "title": "Notebook keeps directories for deleted cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5177",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: boothby
 
-CC:  ddrake
+CC:  @dandrake
 
 If you delete a cell, it doesn't delete the directory for the cell, at least not very soon (it does seem that they eventually get deleted).  Should it maybe when you log off the worksheet?  Or maybe immediately.  This is particularly bad when there are large computations or graphics involved, and may contribute to making .sws files rather large even if there are few cells.
 
@@ -56,16 +56,16 @@ Michael
 archive/issue_comments_039656.json:
 ```json
 {
-    "body": "Attachment [trac_5177-delete-cell-dirs.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.patch) by timdumol created at 2010-01-17 09:48:43\n\nUses twisted.internet.threads.deferToThread to delete cell directory on cell delete. Should apply cleanly on sagenb-0.5.0.",
+    "body": "Attachment [trac_5177-delete-cell-dirs.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.patch) by @TimDumol created at 2010-01-17 09:48:43\n\nUses twisted.internet.threads.deferToThread to delete cell directory on cell delete. Should apply cleanly on sagenb-0.5.0.",
     "created_at": "2010-01-17T09:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39656",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_5177-delete-cell-dirs.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.patch) by timdumol created at 2010-01-17 09:48:43
+Attachment [trac_5177-delete-cell-dirs.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.patch) by @TimDumol created at 2010-01-17 09:48:43
 
 Uses twisted.internet.threads.deferToThread to delete cell directory on cell delete. Should apply cleanly on sagenb-0.5.0.
 
@@ -81,7 +81,7 @@ archive/issue_comments_039657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39657",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_039658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39658",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing status from new to needs_review.
 archive/issue_comments_039659.json:
 ```json
 {
-    "body": "Attachment [trac_5177-delete-cell-dirs.2.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.2.patch) by timdumol created at 2010-01-17 22:05:28\n\nTrivial rebase on new patch queue. (Deletion of one empty line)",
+    "body": "Attachment [trac_5177-delete-cell-dirs.2.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.2.patch) by @TimDumol created at 2010-01-17 22:05:28\n\nTrivial rebase on new patch queue. (Deletion of one empty line)",
     "created_at": "2010-01-17T22:05:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39659",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_5177-delete-cell-dirs.2.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.2.patch) by timdumol created at 2010-01-17 22:05:28
+Attachment [trac_5177-delete-cell-dirs.2.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.2.patch) by @TimDumol created at 2010-01-17 22:05:28
 
 Trivial rebase on new patch queue. (Deletion of one empty line)
 
@@ -137,7 +137,7 @@ archive/issue_comments_039660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39660",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_039661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39661",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_039662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39662",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_039663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39663",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -248,16 +248,16 @@ I'm adding `schilly` to the Cc: list, since he's almost certainly better qualifi
 archive/issue_comments_039664.json:
 ```json
 {
-    "body": "Attachment [trac_5177-delete-cell-dirs.3.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.3.patch) by mpatel created at 2010-01-25 06:58:32\n\nAlso delete files when deleting all output.  Synchronous only.  Replaces previous.",
+    "body": "Attachment [trac_5177-delete-cell-dirs.3.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.3.patch) by @qed777 created at 2010-01-25 06:58:32\n\nAlso delete files when deleting all output.  Synchronous only.  Replaces previous.",
     "created_at": "2010-01-25T06:58:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39664",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5177-delete-cell-dirs.3.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.3.patch) by mpatel created at 2010-01-25 06:58:32
+Attachment [trac_5177-delete-cell-dirs.3.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.3.patch) by @qed777 created at 2010-01-25 06:58:32
 
 Also delete files when deleting all output.  Synchronous only.  Replaces previous.
 
@@ -273,7 +273,7 @@ archive/issue_comments_039665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39665",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_039666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39666",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_039667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39667",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_039668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39668",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -342,16 +342,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_039669.json:
 ```json
 {
-    "body": "Attachment [trac_5177-delete-cell-dirs.4.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.4.patch) by mpatel created at 2010-03-09 10:21:33\n\nAdd doctects to V3.  Apply only this patch.  sagenb repo.",
+    "body": "Attachment [trac_5177-delete-cell-dirs.4.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.4.patch) by @qed777 created at 2010-03-09 10:21:33\n\nAdd doctects to V3.  Apply only this patch.  sagenb repo.",
     "created_at": "2010-03-09T10:21:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39669",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5177-delete-cell-dirs.4.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.4.patch) by mpatel created at 2010-03-09 10:21:33
+Attachment [trac_5177-delete-cell-dirs.4.patch](tarball://root/attachments/some-uuid/ticket5177/trac_5177-delete-cell-dirs.4.patch) by @qed777 created at 2010-03-09 10:21:33
 
 Add doctects to V3.  Apply only this patch.  sagenb repo.
 
@@ -367,7 +367,7 @@ archive/issue_comments_039670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39670",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_039671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39671",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_039672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39672",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_039673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39673",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_039674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39674",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_039675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39675",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_039676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39676",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_039677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39677",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_039678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39678",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_039679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39679",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_039680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39680",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_039681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39681",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -585,7 +585,7 @@ archive/issue_comments_039682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39682",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_039683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39683",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -628,7 +628,7 @@ archive/issue_comments_039684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39684",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -646,7 +646,7 @@ archive/issue_comments_039685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39685",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -664,7 +664,7 @@ archive/issue_comments_039686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39686",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -684,7 +684,7 @@ archive/issue_comments_039687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5177#issuecomment-39687",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

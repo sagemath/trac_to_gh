@@ -3,7 +3,7 @@
 archive/issues_009040.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  jsp jhpalmieri kcrisman dimpase\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## How the Sage build was attempted\n* 64-bit build. SAGE64 was set to \"yes\"\n* #9008 update zlib to latest upstream release to allow a 64-bit library to be built. \n* #9009 update mercurial spkg to build 64-bit.\n* #7982 update sage_fortran so it can build 64-bit binaries.\n* Run 'make -k' so make did not stop on errors, so errors can be listed. \n\n## The problem\n\n```\nmake[7]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/lapack'\nmake[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/lapack'\nmake[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/lapack'\nmake[5]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmaking g_alab_her.d from g_alab_her.c\nmaking g_cntrlify.d from g_cntrlify.c\nmaking g_fontdb.d from g_fontdb.c\nmaking g_her_glyph.d from g_her_glyph.c\nmake[6]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[6]: `Makedeps' is up to date.\nmake[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[6]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\ngcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_alab_her.c -o g_alab_her.o\ngcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_cntrlify.c -o g_cntrlify.o\ngcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_fontdb.c -o g_fontdb.o\ngcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_her_glyph.c -o g_her_glyph.o\ngcc -std=gnu99 -G -L/export/home/drkirkby/sage-4.4.2/local/lib/ -m64  -o vfonts.so g_alab_her.o g_cntrlify.o g_fontdb.o g_her_glyph.o -L../../../lib -lR -lm\nmake[7]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[7]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[4]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules'\nmake[4]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library'\nmkdir ../../library\nmake[5]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/profile'\nbuilding system startup profile\nmkdir ../../../library/base\nmkdir ../../../library/base/R\nmake[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/profile'\nmake[5]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'\nbuilding package 'base'\nmake[6]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'\nmkdir ../../../library/base/demo\nmkdir ../../../library/base/po\nmake[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'\nld.so.1: R: fatal: relocation error: R_AMD64_PC32: file /export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/lib/libR.so: symbol _init: value 0x228000984acd does not fit\n/bin/sh: line 1: 3520: Killed\nmake[5]: *** [all] Killed\nmake[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'\nmake[4]: *** [R] Error 1\nmake[4]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library'\nmake[3]: *** [R] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src'\nmake[2]: *** [R] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src'\nError building R.\n\nreal    2m34.249s\nuser    2m6.818s\nsys     0m23.514s\nsage: An error occurred while installing r-2.10.1.p1\n```\n\n\nI will try to build R outside of Sage next. \n\nOther OpenSolaris issues are shown at #9026\n\nIssue created by migration from https://trac.sagemath.org/ticket/9040\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @jaapspies @jhpalmieri @kcrisman @dimpase\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## How the Sage build was attempted\n* 64-bit build. SAGE64 was set to \"yes\"\n* #9008 update zlib to latest upstream release to allow a 64-bit library to be built. \n* #9009 update mercurial spkg to build 64-bit.\n* #7982 update sage_fortran so it can build 64-bit binaries.\n* Run 'make -k' so make did not stop on errors, so errors can be listed. \n\n## The problem\n\n```\nmake[7]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/lapack'\nmake[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/lapack'\nmake[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/lapack'\nmake[5]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmaking g_alab_her.d from g_alab_her.c\nmaking g_cntrlify.d from g_cntrlify.c\nmaking g_fontdb.d from g_fontdb.c\nmaking g_her_glyph.d from g_her_glyph.c\nmake[6]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[6]: `Makedeps' is up to date.\nmake[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[6]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\ngcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_alab_her.c -o g_alab_her.o\ngcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_cntrlify.c -o g_cntrlify.o\ngcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_fontdb.c -o g_fontdb.o\ngcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_her_glyph.c -o g_her_glyph.o\ngcc -std=gnu99 -G -L/export/home/drkirkby/sage-4.4.2/local/lib/ -m64  -o vfonts.so g_alab_her.o g_cntrlify.o g_fontdb.o g_her_glyph.o -L../../../lib -lR -lm\nmake[7]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[7]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[4]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules'\nmake[4]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library'\nmkdir ../../library\nmake[5]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/profile'\nbuilding system startup profile\nmkdir ../../../library/base\nmkdir ../../../library/base/R\nmake[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/profile'\nmake[5]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'\nbuilding package 'base'\nmake[6]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'\nmkdir ../../../library/base/demo\nmkdir ../../../library/base/po\nmake[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'\nld.so.1: R: fatal: relocation error: R_AMD64_PC32: file /export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/lib/libR.so: symbol _init: value 0x228000984acd does not fit\n/bin/sh: line 1: 3520: Killed\nmake[5]: *** [all] Killed\nmake[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'\nmake[4]: *** [R] Error 1\nmake[4]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library'\nmake[3]: *** [R] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src'\nmake[2]: *** [R] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src'\nError building R.\n\nreal    2m34.249s\nuser    2m6.818s\nsys     0m23.514s\nsage: An error occurred while installing r-2.10.1.p1\n```\n\n\nI will try to build R outside of Sage next. \n\nOther OpenSolaris issues are shown at #9026\n\nIssue created by migration from https://trac.sagemath.org/ticket/9040\n\n",
     "created_at": "2010-05-25T00:52:46Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009040.json:
 ```
 Assignee: drkirkby
 
-CC:  jsp jhpalmieri kcrisman dimpase
+CC:  @jaapspies @jhpalmieri @kcrisman @dimpase
 
 ## Build environment
 * Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM
@@ -163,7 +163,7 @@ archive/issue_comments_083686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83686",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_083689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83689",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -339,16 +339,16 @@ Failed build of R in sage-4.6.2.rc1 when compiling with gcc.
 archive/issue_comments_083692.json:
 ```json
 {
-    "body": "Attachment [r-2.10.1.p4-Failed-on-Sage-4.6.2.rc1_OpenSolaris-64-bit.log.bz2](tarball://root/attachments/some-uuid/ticket9040/r-2.10.1.p4-Failed-on-Sage-4.6.2.rc1_OpenSolaris-64-bit.log.bz2) by fbissey created at 2011-03-06 01:34:56\n\nOh dear, I stumbled on something quite similar while compiling my own fortran code on amd64 for the first time last month. The key point that sends my bells ringing is this\n\n```\nrelocation error: R_AMD64_PC32\n```\n\nI think you should totally try the -mcmodel option in C{XX}FLAGS:\n\n```\n`-mcmodel=small'\n     Generate code for the small code model: the program and its\n     symbols must be linked in the lower 2 GB of the address space.\n     Pointers are 64 bits.  Programs can be statically or dynamically\n     linked.  This is the default code model.\n\n`-mcmodel=kernel'\n     Generate code for the kernel code model.  The kernel runs in the\n     negative 2 GB of the address space.  This model has to be used for\n     Linux kernel code.\n\n`-mcmodel=medium'\n     Generate code for the medium model: The program is linked in the\n     lower 2 GB of the address space.  Small symbols are also placed\n     there.  Symbols with sizes larger than `-mlarge-data-threshold'\n     are put into large data or bss sections and can be located above\n     2GB.  Programs can be statically or dynamically linked.\n\n`-mcmodel=large'\n     Generate code for the large model: This model makes no assumptions\n     about addresses and sizes of sections.\n```\n\nmedium would probably work, if it doesn't try large.",
+    "body": "Attachment [r-2.10.1.p4-Failed-on-Sage-4.6.2.rc1_OpenSolaris-64-bit.log.bz2](tarball://root/attachments/some-uuid/ticket9040/r-2.10.1.p4-Failed-on-Sage-4.6.2.rc1_OpenSolaris-64-bit.log.bz2) by @kiwifb created at 2011-03-06 01:34:56\n\nOh dear, I stumbled on something quite similar while compiling my own fortran code on amd64 for the first time last month. The key point that sends my bells ringing is this\n\n```\nrelocation error: R_AMD64_PC32\n```\n\nI think you should totally try the -mcmodel option in C{XX}FLAGS:\n\n```\n`-mcmodel=small'\n     Generate code for the small code model: the program and its\n     symbols must be linked in the lower 2 GB of the address space.\n     Pointers are 64 bits.  Programs can be statically or dynamically\n     linked.  This is the default code model.\n\n`-mcmodel=kernel'\n     Generate code for the kernel code model.  The kernel runs in the\n     negative 2 GB of the address space.  This model has to be used for\n     Linux kernel code.\n\n`-mcmodel=medium'\n     Generate code for the medium model: The program is linked in the\n     lower 2 GB of the address space.  Small symbols are also placed\n     there.  Symbols with sizes larger than `-mlarge-data-threshold'\n     are put into large data or bss sections and can be located above\n     2GB.  Programs can be statically or dynamically linked.\n\n`-mcmodel=large'\n     Generate code for the large model: This model makes no assumptions\n     about addresses and sizes of sections.\n```\n\nmedium would probably work, if it doesn't try large.",
     "created_at": "2011-03-06T01:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83692",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [r-2.10.1.p4-Failed-on-Sage-4.6.2.rc1_OpenSolaris-64-bit.log.bz2](tarball://root/attachments/some-uuid/ticket9040/r-2.10.1.p4-Failed-on-Sage-4.6.2.rc1_OpenSolaris-64-bit.log.bz2) by fbissey created at 2011-03-06 01:34:56
+Attachment [r-2.10.1.p4-Failed-on-Sage-4.6.2.rc1_OpenSolaris-64-bit.log.bz2](tarball://root/attachments/some-uuid/ticket9040/r-2.10.1.p4-Failed-on-Sage-4.6.2.rc1_OpenSolaris-64-bit.log.bz2) by @kiwifb created at 2011-03-06 01:34:56
 
 Oh dear, I stumbled on something quite similar while compiling my own fortran code on amd64 for the first time last month. The key point that sends my bells ringing is this
 
@@ -455,7 +455,7 @@ archive/issue_comments_083694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83694",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_083695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83695",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_083696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83696",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -509,7 +509,7 @@ archive/issue_comments_083697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83697",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

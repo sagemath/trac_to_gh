@@ -3,7 +3,7 @@
 archive/issues_003507.json:
 ```json
 {
-    "body": "Assignee: was\n\na * b for a, b sparse matrices over QQ was VASTLY too slow because of a stupid bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3507\n\n",
+    "body": "Assignee: @williamstein\n\na * b for a, b sparse matrices over QQ was VASTLY too slow because of a stupid bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3507\n\n",
     "created_at": "2008-06-25T01:46:19Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003507.json:
     "title": "fix major efficiency/performance bug in sparse linear algebra matrix multiply",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3507",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 a * b for a, b sparse matrices over QQ was VASTLY too slow because of a stupid bug.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3507
 archive/issue_comments_024721.json:
 ```json
 {
-    "body": "Attachment [sage-3507.patch](tarball://root/attachments/some-uuid/ticket3507/sage-3507.patch) by was created at 2008-06-25 01:46:41",
+    "body": "Attachment [sage-3507.patch](tarball://root/attachments/some-uuid/ticket3507/sage-3507.patch) by @williamstein created at 2008-06-25 01:46:41",
     "created_at": "2008-06-25T01:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3507#issuecomment-24721",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3507.patch](tarball://root/attachments/some-uuid/ticket3507/sage-3507.patch) by was created at 2008-06-25 01:46:41
+Attachment [sage-3507.patch](tarball://root/attachments/some-uuid/ticket3507/sage-3507.patch) by @williamstein created at 2008-06-25 01:46:41
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_024722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3507#issuecomment-24722",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006858.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nReported by Chris Godsil.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6858\n\n",
+    "body": "Assignee: @rlmill\n\nReported by Chris Godsil.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6858\n\n",
     "created_at": "2009-09-02T01:11:38Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_006858.json:
     "title": "[with patch, needs review] Cayley graph connecting set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6858",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Reported by Chris Godsil.
 
@@ -37,7 +37,7 @@ archive/issue_comments_056555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6858#issuecomment-56555",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -74,16 +74,16 @@ Even though it's apparent I know very few about groups in Sage as I had to build
 archive/issue_comments_056556.json:
 ```json
 {
-    "body": "Attachment [trac_6858.patch](tarball://root/attachments/some-uuid/ticket6858/trac_6858.patch) by rlm created at 2009-09-09 03:30:17\n\nOK, this new patch should do the trick.",
+    "body": "Attachment [trac_6858.patch](tarball://root/attachments/some-uuid/ticket6858/trac_6858.patch) by @rlmill created at 2009-09-09 03:30:17\n\nOK, this new patch should do the trick.",
     "created_at": "2009-09-09T03:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6858#issuecomment-56556",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6858.patch](tarball://root/attachments/some-uuid/ticket6858/trac_6858.patch) by rlm created at 2009-09-09 03:30:17
+Attachment [trac_6858.patch](tarball://root/attachments/some-uuid/ticket6858/trac_6858.patch) by @rlmill created at 2009-09-09 03:30:17
 
 OK, this new patch should do the trick.
 
@@ -99,7 +99,7 @@ archive/issue_comments_056557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6858",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6858#issuecomment-56557",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002836.json:
 ```json
 {
-    "body": "Assignee: yi\n\nPatch attached which uses the new twisted.conch.ssh.keys.Key object instead of the old helper functions. If we don't apply this patch we'll get a bunch of annoying deprecated API warnings :-) \n\nIssue created by migration from https://trac.sagemath.org/ticket/2836\n\n",
+    "body": "Assignee: @yqiang\n\nPatch attached which uses the new twisted.conch.ssh.keys.Key object instead of the old helper functions. If we don't apply this patch we'll get a bunch of annoying deprecated API warnings :-) \n\nIssue created by migration from https://trac.sagemath.org/ticket/2836\n\n",
     "created_at": "2008-04-07T00:11:07Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002836.json:
     "title": "[with patch, needs review] twisted.conch.ssh deprecated functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2836",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 Patch attached which uses the new twisted.conch.ssh.keys.Key object instead of the old helper functions. If we don't apply this patch we'll get a bunch of annoying deprecated API warnings :-) 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2836
 archive/issue_comments_019460.json:
 ```json
 {
-    "body": "Attachment [conch_deprecated_warnings.patch](tarball://root/attachments/some-uuid/ticket2836/conch_deprecated_warnings.patch) by yi created at 2008-04-07 00:11:40",
+    "body": "Attachment [conch_deprecated_warnings.patch](tarball://root/attachments/some-uuid/ticket2836/conch_deprecated_warnings.patch) by @yqiang created at 2008-04-07 00:11:40",
     "created_at": "2008-04-07T00:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2836#issuecomment-19460",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [conch_deprecated_warnings.patch](tarball://root/attachments/some-uuid/ticket2836/conch_deprecated_warnings.patch) by yi created at 2008-04-07 00:11:40
+Attachment [conch_deprecated_warnings.patch](tarball://root/attachments/some-uuid/ticket2836/conch_deprecated_warnings.patch) by @yqiang created at 2008-04-07 00:11:40
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_019461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2836#issuecomment-19461",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

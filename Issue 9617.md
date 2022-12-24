@@ -3,7 +3,7 @@
 archive/issues_009617.json:
 ```json
 {
-    "body": "Assignee: jason, jkantor\n\nCC:  leif jhpalmieri\n\nThis error has been noticed throuugh #9584\n\nAfter taking a look at the corresponding part of the code, *OF COURSE* something needed to be changedm but to be honest I have no inkling why Sage did not report this as an error : I was adding str(k) in a string while k.... was not defined ? O_o\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9617\n\n",
+    "body": "Assignee: jason, jkantor\n\nCC:  @nexttime @jhpalmieri\n\nThis error has been noticed throuugh #9584\n\nAfter taking a look at the corresponding part of the code, *OF COURSE* something needed to be changedm but to be honest I have no inkling why Sage did not report this as an error : I was adding str(k) in a string while k.... was not defined ? O_o\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9617\n\n",
     "created_at": "2010-07-28T03:08:01Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_009617.json:
     "title": "Broken export of LP files....",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9617",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, jkantor
 
-CC:  leif jhpalmieri
+CC:  @nexttime @jhpalmieri
 
 This error has been noticed throuugh #9584
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9617
 archive/issue_comments_093150.json:
 ```json
 {
-    "body": "Attachment [trac_9617.patch](tarball://root/attachments/some-uuid/ticket9617/trac_9617.patch) by ncohen created at 2010-07-28 03:09:26",
+    "body": "Attachment [trac_9617.patch](tarball://root/attachments/some-uuid/ticket9617/trac_9617.patch) by @nathanncohen created at 2010-07-28 03:09:26",
     "created_at": "2010-07-28T03:09:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93150",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9617.patch](tarball://root/attachments/some-uuid/ticket9617/trac_9617.patch) by ncohen created at 2010-07-28 03:09:26
+Attachment [trac_9617.patch](tarball://root/attachments/some-uuid/ticket9617/trac_9617.patch) by @nathanncohen created at 2010-07-28 03:09:26
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_093151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93151",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_093152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93152",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_093153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93153",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_093154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93154",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_093155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93155",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_093156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93156",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_093157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93157",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_093158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93158",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_093159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93159",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -437,7 +437,7 @@ archive/issue_comments_093160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93160",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_093161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93161",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_093162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93162",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_093163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9617",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9617#issuecomment-93163",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

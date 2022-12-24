@@ -3,7 +3,7 @@
 archive/issues_005064.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jhpalmieri\n\n\n```\nsage: A = SteenrodAlgebra(17)\nsage: A(0).parent() is A\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5064\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jhpalmieri\n\n\n```\nsage: A = SteenrodAlgebra(17)\nsage: A(0).parent() is A\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5064\n\n",
     "created_at": "2009-01-23T02:16:15Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_005064.json:
 ```
 Assignee: tbd
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 
 ```
@@ -76,7 +76,7 @@ Changing component from algebra to commutative algebra.
 archive/issue_comments_038575.json:
 ```json
 {
-    "body": "Changing assignee from tbd to malb.",
+    "body": "Changing assignee from tbd to @malb.",
     "created_at": "2009-01-23T02:16:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5064",
     "type": "issue_comment",
@@ -85,7 +85,7 @@ archive/issue_comments_038575.json:
 }
 ```
 
-Changing assignee from tbd to malb.
+Changing assignee from tbd to @malb.
 
 
 
@@ -112,7 +112,7 @@ Changing component from commutative algebra to algebra.
 archive/issue_comments_038577.json:
 ```json
 {
-    "body": "Changing assignee from malb to tbd.",
+    "body": "Changing assignee from @malb to tbd.",
     "created_at": "2009-01-23T02:17:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5064",
     "type": "issue_comment",
@@ -121,7 +121,7 @@ archive/issue_comments_038577.json:
 }
 ```
 
-Changing assignee from malb to tbd.
+Changing assignee from @malb to tbd.
 
 
 

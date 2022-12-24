@@ -3,7 +3,7 @@
 archive/issues_000391.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: apropos ipython search\n\nThis bundle adds an apropos command to SAGE -- try `conductor**?' for an example.\n\nThe implementation is in sage.misc.apropos.  Some code that needs to be fast is in sage.misc.apropos_internals, a Pyrex module.\n\nThis bundle addresses some annoyances with IPython's introspection module.\n\nSee the hg log for details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/391\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: apropos ipython search\n\nThis bundle adds an apropos command to SAGE -- try `conductor**?' for an example.\n\nThe implementation is in sage.misc.apropos.  Some code that needs to be fast is in sage.misc.apropos_internals, a Pyrex module.\n\nThis bundle addresses some annoyances with IPython's introspection module.\n\nSee the hg log for details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/391\n\n",
     "created_at": "2007-06-27T05:31:26Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000391.json:
     "title": "Bundle adding apropos to SAGE -- try `conductor**?' for an example.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/391",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: apropos ipython search
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/391
 archive/issue_comments_001915.json:
 ```json
 {
-    "body": "Attachment [ncalexan-apropos.hg](tarball://root/attachments/some-uuid/ticket391/ncalexan-apropos.hg) by ncalexan created at 2007-06-27 05:42:07\n\nSummary of bundle, in a nutshell:\n\nsage: conductor**?\nsage.all.mwrank_EllipticCurve.conductor Command: Return the conductor of this curve, computed using Cremona's implementation of Tate's algorithm.\nsage.databases.cremona.LargeCremonaDatabase.conductor_range Command: Return the range of conductors that are covered by the database.\nsage.databases.cremona.LargeCremonaDatabase.largest_conductor Command: The largest conductor for which the database is complete. OUTPUT: int -- largest conductor\nsage.databases.cremona.LargeCremonaDatabase.smallest_conductor Command: The smallest conductor for which the database is complete. (Always 1.)\nsage.databases.cremona.MiniCremonaDatabase.conductor_range Command: Return the range of conductors that are covered by the database.\nsage.databases.cremona.MiniCremonaDatabase.largest_conductor Command: The largest conductor for which the database is complete. OUTPUT: int -- largest conductor\nsage.databases.cremona.MiniCremonaDatabase.smallest_conductor Command: The smallest conductor for which the database is complete. (Always 1.)\nsage.modular.dirichlet.DirichletCharacter.conductor Command: Computes and returns the conductor of this character.\nsage.schemes.elliptic_curves.ell_rational_field.EllipticCurve_rational_field.conductor Command: Returns the conductor of the elliptic curve.\n\nLists all callable things (classes, functions, etc) that have\nconductor in the last part of their dotted name.\n\nThe bundle also contains several enhancements to IPython's\nintrospection.  For example:\n\nsage: ?y\nParent:\t\tSymbolic Ring :: <class 'sage.calculus.calculus.SymbolicExpressionRing_class'>\nType:\t\tSymbolicVariable\nBase Class:\t<class 'sage.calculus.calculus.SymbolicVariable'>\nString Form:\ty\nNamespace:\tInteractive\nDocstring:\n    <no docstring>\n\nDisplays y's parent, which is very helpful.\n\nsage: ?2\nParent:\t\tInteger Ring :: <type 'sage.rings.integer_ring.IntegerRing_class'>\nType:\t\tInteger\nBase Class:\t<type 'sage.rings.integer.Integer'>\nString Form:\t2\nDocstring:\n    <no docstring>\n\nInterrogating literals works, more or less.\n\nsage: ?factor(6)\nType:\t\tFactorization\nBase Class:\t<class 'sage.structure.factorization.Factorization'>\nString Form:\t2 * 3\nLength:\t\t2\nDocstring:\n    <no docstring>\n\nDoes what you'd expect, even if it will mangle iterators in strange\ncorner cases.",
+    "body": "Attachment [ncalexan-apropos.hg](tarball://root/attachments/some-uuid/ticket391/ncalexan-apropos.hg) by @ncalexan created at 2007-06-27 05:42:07\n\nSummary of bundle, in a nutshell:\n\nsage: conductor**?\nsage.all.mwrank_EllipticCurve.conductor Command: Return the conductor of this curve, computed using Cremona's implementation of Tate's algorithm.\nsage.databases.cremona.LargeCremonaDatabase.conductor_range Command: Return the range of conductors that are covered by the database.\nsage.databases.cremona.LargeCremonaDatabase.largest_conductor Command: The largest conductor for which the database is complete. OUTPUT: int -- largest conductor\nsage.databases.cremona.LargeCremonaDatabase.smallest_conductor Command: The smallest conductor for which the database is complete. (Always 1.)\nsage.databases.cremona.MiniCremonaDatabase.conductor_range Command: Return the range of conductors that are covered by the database.\nsage.databases.cremona.MiniCremonaDatabase.largest_conductor Command: The largest conductor for which the database is complete. OUTPUT: int -- largest conductor\nsage.databases.cremona.MiniCremonaDatabase.smallest_conductor Command: The smallest conductor for which the database is complete. (Always 1.)\nsage.modular.dirichlet.DirichletCharacter.conductor Command: Computes and returns the conductor of this character.\nsage.schemes.elliptic_curves.ell_rational_field.EllipticCurve_rational_field.conductor Command: Returns the conductor of the elliptic curve.\n\nLists all callable things (classes, functions, etc) that have\nconductor in the last part of their dotted name.\n\nThe bundle also contains several enhancements to IPython's\nintrospection.  For example:\n\nsage: ?y\nParent:\t\tSymbolic Ring :: <class 'sage.calculus.calculus.SymbolicExpressionRing_class'>\nType:\t\tSymbolicVariable\nBase Class:\t<class 'sage.calculus.calculus.SymbolicVariable'>\nString Form:\ty\nNamespace:\tInteractive\nDocstring:\n    <no docstring>\n\nDisplays y's parent, which is very helpful.\n\nsage: ?2\nParent:\t\tInteger Ring :: <type 'sage.rings.integer_ring.IntegerRing_class'>\nType:\t\tInteger\nBase Class:\t<type 'sage.rings.integer.Integer'>\nString Form:\t2\nDocstring:\n    <no docstring>\n\nInterrogating literals works, more or less.\n\nsage: ?factor(6)\nType:\t\tFactorization\nBase Class:\t<class 'sage.structure.factorization.Factorization'>\nString Form:\t2 * 3\nLength:\t\t2\nDocstring:\n    <no docstring>\n\nDoes what you'd expect, even if it will mangle iterators in strange\ncorner cases.",
     "created_at": "2007-06-27T05:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1915",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [ncalexan-apropos.hg](tarball://root/attachments/some-uuid/ticket391/ncalexan-apropos.hg) by ncalexan created at 2007-06-27 05:42:07
+Attachment [ncalexan-apropos.hg](tarball://root/attachments/some-uuid/ticket391/ncalexan-apropos.hg) by @ncalexan created at 2007-06-27 05:42:07
 
 Summary of bundle, in a nutshell:
 
@@ -114,7 +114,7 @@ archive/issue_comments_001916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1916",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_001917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1917",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_001919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1919",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -247,7 +247,7 @@ Nick
 archive/issue_comments_001920.json:
 ```json
 {
-    "body": "Changing assignee from was to ncalexan.",
+    "body": "Changing assignee from @williamstein to @ncalexan.",
     "created_at": "2007-11-27T04:54:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/391",
     "type": "issue_comment",
@@ -256,7 +256,7 @@ archive/issue_comments_001920.json:
 }
 ```
 
-Changing assignee from was to ncalexan.
+Changing assignee from @williamstein to @ncalexan.
 
 
 
@@ -270,7 +270,7 @@ archive/issue_comments_001921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1921",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_001922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1922",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_001923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1923",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_001924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1924",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_001925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/391#issuecomment-1925",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

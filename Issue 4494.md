@@ -14,7 +14,7 @@ archive/issues_004494.json:
     "title": "conjugate method returns error on ZZ matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4494",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
@@ -55,7 +55,7 @@ archive/issue_comments_033229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4494#issuecomment-33229",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing component from algebra to linear algebra.
 archive/issue_comments_033230.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2008-11-11T18:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4494#issuecomment-33230",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_033231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4494#issuecomment-33231",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_033232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4494#issuecomment-33232",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_033233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4494#issuecomment-33233",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -144,16 +144,16 @@ Gee, apparently *I* was the one to change it to linear algebra.  Oops!
 archive/issue_comments_033234.json:
 ```json
 {
-    "body": "Changing assignee from was to tbd.",
+    "body": "Changing assignee from @williamstein to tbd.",
     "created_at": "2008-11-14T05:32:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4494#issuecomment-33234",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to tbd.
+Changing assignee from @williamstein to tbd.
 
 
 
@@ -167,7 +167,7 @@ archive/issue_comments_033235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4494#issuecomment-33235",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -180,16 +180,16 @@ I'm attaching a patch that implements trivial conjugate() methods for ZZ, QQ, an
 archive/issue_comments_033236.json:
 ```json
 {
-    "body": "Attachment [trac_4494.patch](tarball://root/attachments/some-uuid/ticket4494/trac_4494.patch) by AlexGhitza created at 2008-12-20 15:51:34",
+    "body": "Attachment [trac_4494.patch](tarball://root/attachments/some-uuid/ticket4494/trac_4494.patch) by @aghitza created at 2008-12-20 15:51:34",
     "created_at": "2008-12-20T15:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4494#issuecomment-33236",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_4494.patch](tarball://root/attachments/some-uuid/ticket4494/trac_4494.patch) by AlexGhitza created at 2008-12-20 15:51:34
+Attachment [trac_4494.patch](tarball://root/attachments/some-uuid/ticket4494/trac_4494.patch) by @aghitza created at 2008-12-20 15:51:34
 
 
 
@@ -203,7 +203,7 @@ archive/issue_comments_033237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4494#issuecomment-33237",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_033238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4494#issuecomment-33238",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

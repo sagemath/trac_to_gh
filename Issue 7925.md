@@ -3,7 +3,7 @@
 archive/issues_007925.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  rlm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7925\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7925\n\n",
     "created_at": "2010-01-14T06:13:14Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_007925.json:
     "title": "solveGLPK and solve_coin need doctests !!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7925",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
 
-CC:  rlm
+CC:  @rlmill
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_068976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7925#issuecomment-68976",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_068977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7925#issuecomment-68977",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_068978.json:
 ```json
 {
-    "body": "Attachment [trac_7925.patch](tarball://root/attachments/some-uuid/ticket7925/trac_7925.patch) by ncohen created at 2010-01-14 08:47:53",
+    "body": "Attachment [trac_7925.patch](tarball://root/attachments/some-uuid/ticket7925/trac_7925.patch) by @nathanncohen created at 2010-01-14 08:47:53",
     "created_at": "2010-01-14T08:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7925#issuecomment-68978",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7925.patch](tarball://root/attachments/some-uuid/ticket7925/trac_7925.patch) by ncohen created at 2010-01-14 08:47:53
+Attachment [trac_7925.patch](tarball://root/attachments/some-uuid/ticket7925/trac_7925.patch) by @nathanncohen created at 2010-01-14 08:47:53
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_068979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7925#issuecomment-68979",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_068980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7925#issuecomment-68980",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

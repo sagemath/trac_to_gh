@@ -3,7 +3,7 @@
 archive/issues_008124.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nI forgot to include this function in my big S-units and S-class groups patch.\n\nI've tested on my laptop and on sage.math, so I think this passes on 32 and 64 bit systems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8124\n\n",
+    "body": "Assignee: @loefflerd\n\nI forgot to include this function in my big S-units and S-class groups patch.\n\nI've tested on my laptop and on sage.math, so I think this passes on 32 and 64 bit systems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8124\n\n",
     "created_at": "2010-01-29T21:04:44Z",
     "labels": [
         "number fields",
@@ -14,10 +14,10 @@ archive/issues_008124.json:
     "title": "Selmer groups for number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8124",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 I forgot to include this function in my big S-units and S-class groups patch.
 
@@ -39,7 +39,7 @@ archive/issue_comments_071419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8124#issuecomment-71419",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_071420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8124#issuecomment-71420",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_071421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8124#issuecomment-71421",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_071422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8124#issuecomment-71422",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_071423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8124#issuecomment-71423",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_071424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8124#issuecomment-71424",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_071425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8124#issuecomment-71425",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_071426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8124#issuecomment-71426",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -189,16 +189,16 @@ Replaces previous (fixes latex glitch)
 archive/issue_comments_071427.json:
 ```json
 {
-    "body": "Attachment [trac_8124-selmer-nf.review.patch](tarball://root/attachments/some-uuid/ticket8124/trac_8124-selmer-nf.review.patch) by cremona created at 2010-02-04 20:00:41\n\nPatch  trac_8124-selmer-nf.review.patch applies fine to 4.3.2.alpha1 and tests pass and doc build ok!\n\nThe tag was already at review, and I'm happy to leave it there.",
+    "body": "Attachment [trac_8124-selmer-nf.review.patch](tarball://root/attachments/some-uuid/ticket8124/trac_8124-selmer-nf.review.patch) by @JohnCremona created at 2010-02-04 20:00:41\n\nPatch  trac_8124-selmer-nf.review.patch applies fine to 4.3.2.alpha1 and tests pass and doc build ok!\n\nThe tag was already at review, and I'm happy to leave it there.",
     "created_at": "2010-02-04T20:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8124#issuecomment-71427",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8124-selmer-nf.review.patch](tarball://root/attachments/some-uuid/ticket8124/trac_8124-selmer-nf.review.patch) by cremona created at 2010-02-04 20:00:41
+Attachment [trac_8124-selmer-nf.review.patch](tarball://root/attachments/some-uuid/ticket8124/trac_8124-selmer-nf.review.patch) by @JohnCremona created at 2010-02-04 20:00:41
 
 Patch  trac_8124-selmer-nf.review.patch applies fine to 4.3.2.alpha1 and tests pass and doc build ok!
 
@@ -216,7 +216,7 @@ archive/issue_comments_071428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8124#issuecomment-71428",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_071429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8124#issuecomment-71429",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

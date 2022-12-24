@@ -14,7 +14,7 @@ archive/issues_001494.json:
     "title": "bug coercing from maximal order of cyclotomic field into cyclotomic field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1494",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1494
 archive/issue_comments_009598.json:
 ```json
 {
-    "body": "Attachment [trac-1494.patch](tarball://root/attachments/some-uuid/ticket1494/trac-1494.patch) by was created at 2007-12-13 22:15:50",
+    "body": "Attachment [trac-1494.patch](tarball://root/attachments/some-uuid/ticket1494/trac-1494.patch) by @williamstein created at 2007-12-13 22:15:50",
     "created_at": "2007-12-13T22:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1494#issuecomment-9598",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1494.patch](tarball://root/attachments/some-uuid/ticket1494/trac-1494.patch) by was created at 2007-12-13 22:15:50
+Attachment [trac-1494.patch](tarball://root/attachments/some-uuid/ticket1494/trac-1494.patch) by @williamstein created at 2007-12-13 22:15:50
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_009599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1494#issuecomment-9599",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_009602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1494#issuecomment-9602",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

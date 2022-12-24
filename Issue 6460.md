@@ -14,7 +14,7 @@ archive/issues_006460.json:
     "title": "contentEditable cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6460",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6460
 archive/issue_comments_052211.json:
 ```json
 {
-    "body": "Attachment [contedit_v2.tbz2](tarball://root/attachments/some-uuid/ticket6460/contedit_v2.tbz2) by mpatel created at 2009-07-04 03:59:18\n\nThe new version should work in FF 3/3.5.  Nearly all of the changes are cosmetic.  See the code for details.  I didn't address the problems with iframes, since it's likely we'll go with another approach.",
+    "body": "Attachment [contedit_v2.tbz2](tarball://root/attachments/some-uuid/ticket6460/contedit_v2.tbz2) by @qed777 created at 2009-07-04 03:59:18\n\nThe new version should work in FF 3/3.5.  Nearly all of the changes are cosmetic.  See the code for details.  I didn't address the problems with iframes, since it's likely we'll go with another approach.",
     "created_at": "2009-07-04T03:59:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6460#issuecomment-52211",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [contedit_v2.tbz2](tarball://root/attachments/some-uuid/ticket6460/contedit_v2.tbz2) by mpatel created at 2009-07-04 03:59:18
+Attachment [contedit_v2.tbz2](tarball://root/attachments/some-uuid/ticket6460/contedit_v2.tbz2) by @qed777 created at 2009-07-04 03:59:18
 
 The new version should work in FF 3/3.5.  Nearly all of the changes are cosmetic.  See the code for details.  I didn't address the problems with iframes, since it's likely we'll go with another approach.
 
@@ -62,7 +62,7 @@ archive/issue_comments_052212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6460#issuecomment-52212",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -75,16 +75,16 @@ External window
 archive/issue_comments_052213.json:
 ```json
 {
-    "body": "Attachment [graphed_ext.tbz2](tarball://root/attachments/some-uuid/ticket6460/graphed_ext.tbz2) by mpatel created at 2009-07-04 16:16:55\n\nFor what it's worth, I've attached an [attachment:graphed_ext.tbz2 example] that launches Rado's graph editor in a new, potentially reusable window, from a notebook cell.  Suggested directions:\n\n* Put `graphed_ext.html` and `processing.editor.min.js` in `$SAGE_ROOT/local/notebook/javascript/`.  I haven't edited the enclosed [Processing](http://processingjs.org/reference) library, but it may be different from Rado's latest.\n* Load `graphed.txt` as a worksheet.  The serialization code is from Rado's recent post about his elegant inline editor for the notebook.\n* Try, e.g., `g = graphs.CubeGraph(4)`, followed by `graph_editor(g, 'g_mod')`, say.  A pop-up blocker may complain.  I just allowed pop-ups from `localhost`.\n* See, e.g., [this link](http://www.w3schools.com/HTMLDOM/met_win_open.asp) for various window options.  To open the editor in a tab, check the browser settings for overrides and use `var win = window.open(url, name);` with the appropriate `url` and some `name`.  Different names will yield separate windows (or tabs).  The browser's security policy may prevent some actions, e.g., re-establishing client-side connections to reloaded parent worksheets.\n\nIt may be better to make some server-side changes.  Again, this is just an example.\n\nA possible extension is the ability to keep a list of graphs in the new window and edit and export them in a random-access fashion --- a graph browser, perhaps.  Another is sharing an editor among multiple open worksheets.  The work on tearing out docstrings is somewhat related (cf. #6001).\n\nFeel free to ask questions and make suggestions, though I'm a bit JavaScripted out just now...",
+    "body": "Attachment [graphed_ext.tbz2](tarball://root/attachments/some-uuid/ticket6460/graphed_ext.tbz2) by @qed777 created at 2009-07-04 16:16:55\n\nFor what it's worth, I've attached an [attachment:graphed_ext.tbz2 example] that launches Rado's graph editor in a new, potentially reusable window, from a notebook cell.  Suggested directions:\n\n* Put `graphed_ext.html` and `processing.editor.min.js` in `$SAGE_ROOT/local/notebook/javascript/`.  I haven't edited the enclosed [Processing](http://processingjs.org/reference) library, but it may be different from Rado's latest.\n* Load `graphed.txt` as a worksheet.  The serialization code is from Rado's recent post about his elegant inline editor for the notebook.\n* Try, e.g., `g = graphs.CubeGraph(4)`, followed by `graph_editor(g, 'g_mod')`, say.  A pop-up blocker may complain.  I just allowed pop-ups from `localhost`.\n* See, e.g., [this link](http://www.w3schools.com/HTMLDOM/met_win_open.asp) for various window options.  To open the editor in a tab, check the browser settings for overrides and use `var win = window.open(url, name);` with the appropriate `url` and some `name`.  Different names will yield separate windows (or tabs).  The browser's security policy may prevent some actions, e.g., re-establishing client-side connections to reloaded parent worksheets.\n\nIt may be better to make some server-side changes.  Again, this is just an example.\n\nA possible extension is the ability to keep a list of graphs in the new window and edit and export them in a random-access fashion --- a graph browser, perhaps.  Another is sharing an editor among multiple open worksheets.  The work on tearing out docstrings is somewhat related (cf. #6001).\n\nFeel free to ask questions and make suggestions, though I'm a bit JavaScripted out just now...",
     "created_at": "2009-07-04T16:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6460#issuecomment-52213",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [graphed_ext.tbz2](tarball://root/attachments/some-uuid/ticket6460/graphed_ext.tbz2) by mpatel created at 2009-07-04 16:16:55
+Attachment [graphed_ext.tbz2](tarball://root/attachments/some-uuid/ticket6460/graphed_ext.tbz2) by @qed777 created at 2009-07-04 16:16:55
 
 For what it's worth, I've attached an [attachment:graphed_ext.tbz2 example] that launches Rado's graph editor in a new, potentially reusable window, from a notebook cell.  Suggested directions:
 
@@ -111,7 +111,7 @@ archive/issue_comments_052214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6460#issuecomment-52214",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_052215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6460#issuecomment-52215",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_052216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6460#issuecomment-52216",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000694.json:
     "title": "SAGE's multivariate gcd sucks over QQ and/or ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/694",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/694
 archive/issue_comments_003632.json:
 ```json
 {
-    "body": "Attachment [gcd_slow.singular](tarball://root/attachments/some-uuid/ticket694/gcd_slow.singular) by was created at 2007-09-19 20:24:23\n\nthis file has the singular input of a multivariate polynomial gcd that takes *minutes* in SAGE over QQ, but mod p the same takes 0.08 seconds.",
+    "body": "Attachment [gcd_slow.singular](tarball://root/attachments/some-uuid/ticket694/gcd_slow.singular) by @williamstein created at 2007-09-19 20:24:23\n\nthis file has the singular input of a multivariate polynomial gcd that takes *minutes* in SAGE over QQ, but mod p the same takes 0.08 seconds.",
     "created_at": "2007-09-19T20:24:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/694#issuecomment-3632",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [gcd_slow.singular](tarball://root/attachments/some-uuid/ticket694/gcd_slow.singular) by was created at 2007-09-19 20:24:23
+Attachment [gcd_slow.singular](tarball://root/attachments/some-uuid/ticket694/gcd_slow.singular) by @williamstein created at 2007-09-19 20:24:23
 
 this file has the singular input of a multivariate polynomial gcd that takes *minutes* in SAGE over QQ, but mod p the same takes 0.08 seconds.
 
@@ -80,7 +80,7 @@ archive/issue_comments_003633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/694#issuecomment-3633",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_003634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/694#issuecomment-3634",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_003635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/694#issuecomment-3635",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -183,16 +183,16 @@ in Singular 2.0.4, which it did not support.
 archive/issue_comments_003636.json:
 ```json
 {
-    "body": "Attachment [6546.patch](tarball://root/attachments/some-uuid/ticket694/6546.patch) by malb created at 2007-10-01 23:18:30",
+    "body": "Attachment [6546.patch](tarball://root/attachments/some-uuid/ticket694/6546.patch) by @malb created at 2007-10-01 23:18:30",
     "created_at": "2007-10-01T23:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/694#issuecomment-3636",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [6546.patch](tarball://root/attachments/some-uuid/ticket694/6546.patch) by malb created at 2007-10-01 23:18:30
+Attachment [6546.patch](tarball://root/attachments/some-uuid/ticket694/6546.patch) by @malb created at 2007-10-01 23:18:30
 
 
 
@@ -206,7 +206,7 @@ archive/issue_comments_003637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/694#issuecomment-3637",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -223,16 +223,16 @@ which provides a multimodular GCD.
 archive/issue_comments_003638.json:
 ```json
 {
-    "body": "Changing assignee from jbmohler to malb.",
+    "body": "Changing assignee from jbmohler to @malb.",
     "created_at": "2007-10-01T23:22:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/694#issuecomment-3638",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from jbmohler to malb.
+Changing assignee from jbmohler to @malb.
 
 
 
@@ -246,7 +246,7 @@ archive/issue_comments_003639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/694#issuecomment-3639",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_003640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/694#issuecomment-3640",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

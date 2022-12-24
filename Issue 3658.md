@@ -3,7 +3,7 @@
 archive/issues_003658.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: [prime_pi(n) for n in [500508..500510]]\n[41580, 45056, 41581]\nsage: [prime_pi(n) for n in [500508..500510]]\n[41580, 41581, 41581]\n```\n\n\nThe problem lies with pari/gp:\n\n```\nsage: %gp\n\n  --> Switching to GP/PARI interpreter <-- \n\n''\ngp: for(n=500508, 500510, print(primepi(n)))\n\n41580\n45056\n  *** primepi: not enough precomputed primes, need primelimit ~ 500510.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3658\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: [prime_pi(n) for n in [500508..500510]]\n[41580, 45056, 41581]\nsage: [prime_pi(n) for n in [500508..500510]]\n[41580, 41581, 41581]\n```\n\n\nThe problem lies with pari/gp:\n\n```\nsage: %gp\n\n  --> Switching to GP/PARI interpreter <-- \n\n''\ngp: for(n=500508, 500510, print(primepi(n)))\n\n41580\n45056\n  *** primepi: not enough precomputed primes, need primelimit ~ 500510.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3658\n\n",
     "created_at": "2008-07-15T20:50:50Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_003658.json:
     "user": "fwclarke"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -59,16 +59,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3658
 archive/issue_comments_025856.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2009-01-23T14:21:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3658#issuecomment-25856",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_025857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3658#issuecomment-25857",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_025858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3658#issuecomment-25858",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -166,16 +166,16 @@ Michael
 archive/issue_comments_025861.json:
 ```json
 {
-    "body": "Attachment [trac-3658.patch](tarball://root/attachments/some-uuid/ticket3658/trac-3658.patch) by craigcitro created at 2009-01-24 19:57:19",
+    "body": "Attachment [trac-3658.patch](tarball://root/attachments/some-uuid/ticket3658/trac-3658.patch) by @craigcitro created at 2009-01-24 19:57:19",
     "created_at": "2009-01-24T19:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3658#issuecomment-25861",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3658.patch](tarball://root/attachments/some-uuid/ticket3658/trac-3658.patch) by craigcitro created at 2009-01-24 19:57:19
+Attachment [trac-3658.patch](tarball://root/attachments/some-uuid/ticket3658/trac-3658.patch) by @craigcitro created at 2009-01-24 19:57:19
 
 
 

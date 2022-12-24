@@ -14,7 +14,7 @@ archive/issues_001865.json:
     "title": "notebook -- after restart output of first evaluation is not displayed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1865",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -61,7 +61,7 @@ archive/issue_comments_011812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1865#issuecomment-11812",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_011814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1865#issuecomment-11814",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_011815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1865#issuecomment-11815",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

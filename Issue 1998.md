@@ -3,7 +3,7 @@
 archive/issues_001998.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nwas@sage:~/build/sage-2.10.1.rc3$ ./sage -t -optional devel/sage-main/sage/plot/animate.py\nsage -t -optional devel/sage-main/sage/plot/animate.py      **********************************************************************\nFile \"animate.py\", line 47:\n    sage: a.show()          # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[3]>\", line 1, in <module>\n        a.show()          # optional###line 47:\n    sage: a.show()          # optional\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 283, in show\n        self.gif(delay = delay, iterations = iterations)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 271, in gif\n        d = self.png()\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 212, in png\n        xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax, **self.__kwds)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1388, in save\n        g._render_on_subplot(subplot)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1915, in _render_on_subplot\n        p = patches.lines.Line2D(self.xdata, self.ydata, **options)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/lines.py\", line 279, in __init__\n        self.update(kwargs)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/artist.py\", line 394, in update\n        raise AttributeError('Unknown property %s'%k)\n    AttributeError: Unknown property xmin\n**********************************************************************\nFile \"animate.py\", line 48:\n    sage: a[:5].show()      # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[4]>\", line 1, in <module>\n        a[:Integer(5)].show()      # optional###line 48:\n    sage: a[:5].show()      # optional\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 283, in show\n        self.gif(delay = delay, iterations = iterations)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 271, in gif\n        d = self.png()\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 212, in png\n        xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax, **self.__kwds)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1388, in save\n        g._render_on_subplot(subplot)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1915, in _render_on_subplot\n        p = patches.lines.Line2D(self.xdata, self.ydata, **options)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/lines.py\", line 279, in __init__\n        self.update(kwargs)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/artist.py\", line 394, in update\n        raise AttributeError('Unknown property %s'%k)\n    AttributeError: Unknown property xmin\n**********************************************************************\n\netc.\n```\n\n\nWe missed this because it is \"optional\", because of the reliance on the convert command. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1998\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nwas@sage:~/build/sage-2.10.1.rc3$ ./sage -t -optional devel/sage-main/sage/plot/animate.py\nsage -t -optional devel/sage-main/sage/plot/animate.py      **********************************************************************\nFile \"animate.py\", line 47:\n    sage: a.show()          # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[3]>\", line 1, in <module>\n        a.show()          # optional###line 47:\n    sage: a.show()          # optional\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 283, in show\n        self.gif(delay = delay, iterations = iterations)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 271, in gif\n        d = self.png()\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 212, in png\n        xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax, **self.__kwds)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1388, in save\n        g._render_on_subplot(subplot)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1915, in _render_on_subplot\n        p = patches.lines.Line2D(self.xdata, self.ydata, **options)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/lines.py\", line 279, in __init__\n        self.update(kwargs)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/artist.py\", line 394, in update\n        raise AttributeError('Unknown property %s'%k)\n    AttributeError: Unknown property xmin\n**********************************************************************\nFile \"animate.py\", line 48:\n    sage: a[:5].show()      # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[4]>\", line 1, in <module>\n        a[:Integer(5)].show()      # optional###line 48:\n    sage: a[:5].show()      # optional\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 283, in show\n        self.gif(delay = delay, iterations = iterations)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 271, in gif\n        d = self.png()\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/animate.py\", line 212, in png\n        xmin=xmin, xmax=xmax, ymin=ymin, ymax=ymax, **self.__kwds)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1388, in save\n        g._render_on_subplot(subplot)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1915, in _render_on_subplot\n        p = patches.lines.Line2D(self.xdata, self.ydata, **options)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/lines.py\", line 279, in __init__\n        self.update(kwargs)\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/site-packages/matplotlib/artist.py\", line 394, in update\n        raise AttributeError('Unknown property %s'%k)\n    AttributeError: Unknown property xmin\n**********************************************************************\n\netc.\n```\n\n\nWe missed this because it is \"optional\", because of the reliance on the convert command. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1998\n\n",
     "created_at": "2008-01-31T05:07:18Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001998.json:
     "title": "animate -- completley broken in sage-2.10.*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1998",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -96,7 +96,7 @@ archive/issue_comments_012919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1998#issuecomment-12919",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_012920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1998#issuecomment-12920",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
@@ -127,16 +127,16 @@ There were two problems here. One was that plot() no longer took xmin and xmax k
 archive/issue_comments_012921.json:
 ```json
 {
-    "body": "Attachment [animate.hg](tarball://root/attachments/some-uuid/ticket1998/animate.hg) by moretti created at 2008-02-08 23:32:23\n\nSee changesets 8313 - 8317 of the attached bundle.",
+    "body": "Attachment [animate.hg](tarball://root/attachments/some-uuid/ticket1998/animate.hg) by @bobmoretti created at 2008-02-08 23:32:23\n\nSee changesets 8313 - 8317 of the attached bundle.",
     "created_at": "2008-02-08T23:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1998#issuecomment-12921",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
 
-Attachment [animate.hg](tarball://root/attachments/some-uuid/ticket1998/animate.hg) by moretti created at 2008-02-08 23:32:23
+Attachment [animate.hg](tarball://root/attachments/some-uuid/ticket1998/animate.hg) by @bobmoretti created at 2008-02-08 23:32:23
 
 See changesets 8313 - 8317 of the attached bundle.
 
@@ -196,7 +196,7 @@ archive/issue_comments_012924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1998#issuecomment-12924",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

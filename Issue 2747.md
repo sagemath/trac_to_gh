@@ -14,7 +14,7 @@ archive/issues_002747.json:
     "title": "[with patch; needs review] SAGE doctest import errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2747",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: failure
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2747
 archive/issue_comments_018876.json:
 ```json
 {
-    "body": "Attachment [doctest.patch](tarball://root/attachments/some-uuid/ticket2747/doctest.patch) by tabbott created at 2008-04-01 01:26:11",
+    "body": "Attachment [doctest.patch](tarball://root/attachments/some-uuid/ticket2747/doctest.patch) by @timabbott created at 2008-04-01 01:26:11",
     "created_at": "2008-04-01T01:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2747#issuecomment-18876",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [doctest.patch](tarball://root/attachments/some-uuid/ticket2747/doctest.patch) by tabbott created at 2008-04-01 01:26:11
+Attachment [doctest.patch](tarball://root/attachments/some-uuid/ticket2747/doctest.patch) by @timabbott created at 2008-04-01 01:26:11
 
 
 

@@ -14,7 +14,7 @@ archive/issues_004882.json:
     "title": "./sage -t sage/sage/rings/polynomial/multi_polynomial_ideal.py M2 failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4882",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: tbd
@@ -139,7 +139,7 @@ archive/issue_comments_037000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4882#issuecomment-37000",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_037004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4882",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4882#issuecomment-37004",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

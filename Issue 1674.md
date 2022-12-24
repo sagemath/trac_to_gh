@@ -14,7 +14,7 @@ archive/issues_001674.json:
     "title": "memleak in pAdicCappedRelativeElement.__pow__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1674",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1674
 archive/issue_comments_010624.json:
 ```json
 {
-    "body": "Attachment [7915.patch](tarball://root/attachments/some-uuid/ticket1674/7915.patch) by wjp created at 2008-01-03 21:08:09",
+    "body": "Attachment [7915.patch](tarball://root/attachments/some-uuid/ticket1674/7915.patch) by @wjp created at 2008-01-03 21:08:09",
     "created_at": "2008-01-03T21:08:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1674#issuecomment-10624",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [7915.patch](tarball://root/attachments/some-uuid/ticket1674/7915.patch) by wjp created at 2008-01-03 21:08:09
+Attachment [7915.patch](tarball://root/attachments/some-uuid/ticket1674/7915.patch) by @wjp created at 2008-01-03 21:08:09
 
 
 

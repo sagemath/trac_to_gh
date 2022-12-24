@@ -3,7 +3,7 @@
 archive/issues_009620.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jdemeyer\n\nFor multi-valued complex functions, the choice of principal values and where complex branch cuts are continuous is a matter of convention but there is a clear predominant convention which has been advocated by Kahan, can be found in Guy Steele's CLTL2 (chapter 12.5.3) and is implemented in most Lisp dialects, in the C99 standard, the upcoming C++0x standard, the CLN library, Mathematica, Maple, Sage's CDF, MPMath, and many others.\n\nHowever, some libraries disagree with the predominant convention for branch cuts of inverse trigonometric and hyperbolic functions.\n\nUnfortunately for Sage, Pari is one of the systems that disagree. This leads to surprising results that are difficult to explain to new users, like this fine example:\n\n```\n  sage: acosh(-1.0-0.00001*I) - acosh(CDF(-1,-0.0000001))\n  -0.00347850806404590 + 6.27970680439127*I\n```\n\n\nIt turns out that all of Pari's branch cuts of inverse trigonometric and hyperbolic functions are somehow affected.\n\nLuckily we don't disagree about roots and the logarithm any more. :-)\n\n* asin: The asin() function is not continuous as the cut is approached coming around the finite endpoint of the cuts in a counter clockwise direction.\n\n* acos: Pari picks an unconventional principal branch in the left complex plain.\n\n* atan: The atan() function is not continous as the cut is appraoched coming around the finite endpoint of the cut along the negative imaginary axis in a counter clockwise direction.\n\n* asinh: The asinh() function is not continuous as the cut is approached coming around the finite endpoint of the cuts in a counter clockwise direction.\n\n* acosh: Pari picks an unconventional principal branch in the lower complex plain.\n\n* atanh: The atan() function is not continous as the cut is appraoched coming around the finite endpoint of the cut along the positive real axis in a counter clockwise direction.\n\nApplying the attached patch to Pari 2.3.5 in Sage 4.5.1 makes the implementations in sage.libs.mpmath, sage.libs.pari, and sage.rings.complex_double return the same values within numerical accuracy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9620\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jdemeyer\n\nFor multi-valued complex functions, the choice of principal values and where complex branch cuts are continuous is a matter of convention but there is a clear predominant convention which has been advocated by Kahan, can be found in Guy Steele's CLTL2 (chapter 12.5.3) and is implemented in most Lisp dialects, in the C99 standard, the upcoming C++0x standard, the CLN library, Mathematica, Maple, Sage's CDF, MPMath, and many others.\n\nHowever, some libraries disagree with the predominant convention for branch cuts of inverse trigonometric and hyperbolic functions.\n\nUnfortunately for Sage, Pari is one of the systems that disagree. This leads to surprising results that are difficult to explain to new users, like this fine example:\n\n```\n  sage: acosh(-1.0-0.00001*I) - acosh(CDF(-1,-0.0000001))\n  -0.00347850806404590 + 6.27970680439127*I\n```\n\n\nIt turns out that all of Pari's branch cuts of inverse trigonometric and hyperbolic functions are somehow affected.\n\nLuckily we don't disagree about roots and the logarithm any more. :-)\n\n* asin: The asin() function is not continuous as the cut is approached coming around the finite endpoint of the cuts in a counter clockwise direction.\n\n* acos: Pari picks an unconventional principal branch in the left complex plain.\n\n* atan: The atan() function is not continous as the cut is appraoched coming around the finite endpoint of the cut along the negative imaginary axis in a counter clockwise direction.\n\n* asinh: The asinh() function is not continuous as the cut is approached coming around the finite endpoint of the cuts in a counter clockwise direction.\n\n* acosh: Pari picks an unconventional principal branch in the lower complex plain.\n\n* atanh: The atan() function is not continous as the cut is appraoched coming around the finite endpoint of the cut along the positive real axis in a counter clockwise direction.\n\nApplying the attached patch to Pari 2.3.5 in Sage 4.5.1 makes the implementations in sage.libs.mpmath, sage.libs.pari, and sage.rings.complex_double return the same values within numerical accuracy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9620\n\n",
     "created_at": "2010-07-28T07:55:46Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009620.json:
     "title": "conflicting branch cut conventions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9620",
-    "user": "rbk"
+    "user": "@RBKreckel"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 For multi-valued complex functions, the choice of principal values and where complex branch cuts are continuous is a matter of convention but there is a clear predominant convention which has been advocated by Kahan, can be found in Guy Steele's CLTL2 (chapter 12.5.3) and is implemented in most Lisp dialects, in the C99 standard, the upcoming C++0x standard, the CLN library, Mathematica, Maple, Sage's CDF, MPMath, and many others.
 
@@ -62,16 +62,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9620
 archive/issue_comments_093185.json:
 ```json
 {
-    "body": "Attachment [pari-2.3.5.patch](tarball://root/attachments/some-uuid/ticket9620/pari-2.3.5.patch) by rbk created at 2010-07-28 07:56:36",
+    "body": "Attachment [pari-2.3.5.patch](tarball://root/attachments/some-uuid/ticket9620/pari-2.3.5.patch) by @RBKreckel created at 2010-07-28 07:56:36",
     "created_at": "2010-07-28T07:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9620#issuecomment-93185",
-    "user": "rbk"
+    "user": "@RBKreckel"
 }
 ```
 
-Attachment [pari-2.3.5.patch](tarball://root/attachments/some-uuid/ticket9620/pari-2.3.5.patch) by rbk created at 2010-07-28 07:56:36
+Attachment [pari-2.3.5.patch](tarball://root/attachments/some-uuid/ticket9620/pari-2.3.5.patch) by @RBKreckel created at 2010-07-28 07:56:36
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_093186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9620#issuecomment-93186",
-    "user": "rbk"
+    "user": "@RBKreckel"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_093187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9620#issuecomment-93187",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_093188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9620#issuecomment-93188",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_093189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9620#issuecomment-93189",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_093190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9620#issuecomment-93190",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_093191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9620",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9620#issuecomment-93191",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

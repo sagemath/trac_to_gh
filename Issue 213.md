@@ -3,7 +3,7 @@
 archive/issues_000213.json:
 ```json
 {
-    "body": "Assignee: was\n\nSAGE includes twisted by default.\nSAGE also includes moin moin wiki.\nBut the moin moin wiki configuration doesn't use twisted.  Fix this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/213\n\n",
+    "body": "Assignee: @williamstein\n\nSAGE includes twisted by default.\nSAGE also includes moin moin wiki.\nBut the moin moin wiki configuration doesn't use twisted.  Fix this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/213\n\n",
     "created_at": "2007-01-24T19:04:26Z",
     "labels": [
         "packages: standard",
@@ -13,10 +13,10 @@ archive/issues_000213.json:
     "title": "moin moin wiki -- twisted-ify",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/213",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 SAGE includes twisted by default.
 SAGE also includes moin moin wiki.

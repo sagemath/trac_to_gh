@@ -3,7 +3,7 @@
 archive/issues_007952.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jpflori mjo\n\nKeywords: maxima\n\nFrom the following sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/c7a742292f424b04\n\n\n```\nOn Jan 10, 6:15\u00a0pm, Harald Schilly <harald.schi...@gmail.com> wrote:\n> Hi, I got this from the report a problem link:\n>\n> Typing (in the inotebook)\n>\n> var('t,k,i')\n> sum(binomial(i+t,t),i,0,k)\n>\n> results in\n>\n> binomial(k + t + 1, t + 1) - 1\n>\n> which is false, the well-known answer is binomial(k + t + 1, t + 1)  \n\nThere is a fix for this bug in maxima cvs. If you don't want to wait\nfor the next release I can provide a patch.\n\nAndrej\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7952\n\n",
+    "body": "Assignee: @burcin\n\nCC:  jpflori @orlitzky\n\nKeywords: maxima\n\nFrom the following sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/c7a742292f424b04\n\n\n```\nOn Jan 10, 6:15\u00a0pm, Harald Schilly <harald.schi...@gmail.com> wrote:\n> Hi, I got this from the report a problem link:\n>\n> Typing (in the inotebook)\n>\n> var('t,k,i')\n> sum(binomial(i+t,t),i,0,k)\n>\n> results in\n>\n> binomial(k + t + 1, t + 1) - 1\n>\n> which is false, the well-known answer is binomial(k + t + 1, t + 1)  \n\nThere is a fix for this bug in maxima cvs. If you don't want to wait\nfor the next release I can provide a patch.\n\nAndrej\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7952\n\n",
     "created_at": "2010-01-16T18:08:01Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_007952.json:
     "title": "broken binomial sum (fixed in maxima)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7952",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jpflori mjo
+CC:  jpflori @orlitzky
 
 Keywords: maxima
 
@@ -66,7 +66,7 @@ archive/issue_comments_069386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7952#issuecomment-69386",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_069387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7952#issuecomment-69387",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -99,16 +99,16 @@ jpflori reports this is fixed in #10187's package.  Maybe s/he will contribute a
 archive/issue_comments_069388.json:
 ```json
 {
-    "body": "Attachment [sage-trac_7952.patch](tarball://root/attachments/some-uuid/ticket7952/sage-trac_7952.patch) by mjo created at 2011-12-14 00:29:37\n\nAdd a doctest for the correct behavior.",
+    "body": "Attachment [sage-trac_7952.patch](tarball://root/attachments/some-uuid/ticket7952/sage-trac_7952.patch) by @orlitzky created at 2011-12-14 00:29:37\n\nAdd a doctest for the correct behavior.",
     "created_at": "2011-12-14T00:29:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7952#issuecomment-69388",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_7952.patch](tarball://root/attachments/some-uuid/ticket7952/sage-trac_7952.patch) by mjo created at 2011-12-14 00:29:37
+Attachment [sage-trac_7952.patch](tarball://root/attachments/some-uuid/ticket7952/sage-trac_7952.patch) by @orlitzky created at 2011-12-14 00:29:37
 
 Add a doctest for the correct behavior.
 
@@ -124,7 +124,7 @@ archive/issue_comments_069389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7952#issuecomment-69389",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_069390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7952#issuecomment-69390",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_069391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7952#issuecomment-69391",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_069392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7952#issuecomment-69392",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_069393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7952",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7952#issuecomment-69393",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

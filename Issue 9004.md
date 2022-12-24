@@ -3,7 +3,7 @@
 archive/issues_009004.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nAccording to the comments in the code:\n-----\n        Compare self and right.\n\n        If right is not a Set compare types.  If right is also a Set,\n        returns comparison on the underlying objects.\n----\nBut that is not what is currently done. In the case where \nright is not a Set (more accurately a \"Set_object\" that's\npossibly another issue) the following is evaluated:\n\n\n```\ncmp(type(right), type(Set_object))\n```\n\n\nThe correct thing would be to compare type(right) with\nthe type \"Set_object\" [which is type(self)] not the type\n**of** Set_object.\n\nPatch to follow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9004\n\n",
+    "body": "Assignee: @aghitza\n\nAccording to the comments in the code:\n-----\n        Compare self and right.\n\n        If right is not a Set compare types.  If right is also a Set,\n        returns comparison on the underlying objects.\n----\nBut that is not what is currently done. In the case where \nright is not a Set (more accurately a \"Set_object\" that's\npossibly another issue) the following is evaluated:\n\n\n```\ncmp(type(right), type(Set_object))\n```\n\n\nThe correct thing would be to compare type(right) with\nthe type \"Set_object\" [which is type(self)] not the type\n**of** Set_object.\n\nPatch to follow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9004\n\n",
     "created_at": "2010-05-21T04:11:24Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009004.json:
     "title": "__cmp__ in sage/sets/set.py doesn't do what it's supposed to do.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9004",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 According to the comments in the code:
 -----
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9004
 archive/issue_comments_083294.json:
 ```json
 {
-    "body": "Attachment [trac9004.patch](tarball://root/attachments/some-uuid/ticket9004/trac9004.patch) by fbissey created at 2010-05-21 04:15:58",
+    "body": "Attachment [trac9004.patch](tarball://root/attachments/some-uuid/ticket9004/trac9004.patch) by @kiwifb created at 2010-05-21 04:15:58",
     "created_at": "2010-05-21T04:15:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83294",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac9004.patch](tarball://root/attachments/some-uuid/ticket9004/trac9004.patch) by fbissey created at 2010-05-21 04:15:58
+Attachment [trac9004.patch](tarball://root/attachments/some-uuid/ticket9004/trac9004.patch) by @kiwifb created at 2010-05-21 04:15:58
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_083298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83298",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_083299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83299",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

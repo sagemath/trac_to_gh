@@ -3,7 +3,7 @@
 archive/issues_003146.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\na=matrix(QQ,3,3,range(9))\nv=matrix(QQ,3,1,range(3))\n(latex(a\\v), a)\n```\n\n\ngives an error.\n\nI think it has to do with the parsing of latex(a\\v); it seems to try doing \"(latex(a._backslash_(v), a)\" (note the missing parenthesis in the call to latex.\n\nYou see this parsing in the error from:\n\n\n```\n@interact\ndef _(a=matrix(QQ,3,3,range(9)), v=matrix(QQ,3,1,range(3))):\n    html('$$%s %s = %s$$'%(latex(a), latex(a\\v), latex(v)))\n```\n\n\nwith the patch from #3121\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3146\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\na=matrix(QQ,3,3,range(9))\nv=matrix(QQ,3,1,range(3))\n(latex(a\\v), a)\n```\n\n\ngives an error.\n\nI think it has to do with the parsing of latex(a\\v); it seems to try doing \"(latex(a._backslash_(v), a)\" (note the missing parenthesis in the call to latex.\n\nYou see this parsing in the error from:\n\n\n```\n@interact\ndef _(a=matrix(QQ,3,3,range(9)), v=matrix(QQ,3,1,range(3))):\n    html('$$%s %s = %s$$'%(latex(a), latex(a\\v), latex(v)))\n```\n\n\nwith the patch from #3121\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3146\n\n",
     "created_at": "2008-05-09T20:13:03Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003146.json:
     "title": "(latex(a\\v), a) gives an error about calling something with too many arguments.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3146",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -61,7 +61,7 @@ archive/issue_comments_021832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3146#issuecomment-21832",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_021833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3146#issuecomment-21833",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

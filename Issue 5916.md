@@ -3,7 +3,7 @@
 archive/issues_005916.json:
 ```json
 {
-    "body": "Assignee: whuss\n\nCC:  jason\n\nShow mathematica expressions in the notebook using jsmath.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5916\n\n",
+    "body": "Assignee: whuss\n\nCC:  @jasongrout\n\nShow mathematica expressions in the notebook using jsmath.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5916\n\n",
     "created_at": "2009-04-28T08:35:25Z",
     "labels": [
         "interfaces",
@@ -19,7 +19,7 @@ archive/issues_005916.json:
 ```
 Assignee: whuss
 
-CC:  jason
+CC:  @jasongrout
 
 Show mathematica expressions in the notebook using jsmath.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5916
 archive/issue_comments_046753.json:
 ```json
 {
-    "body": "Attachment [mathematica_jsmath.patch](tarball://root/attachments/some-uuid/ticket5916/mathematica_jsmath.patch) by jason created at 2009-05-06 03:28:51",
+    "body": "Attachment [mathematica_jsmath.patch](tarball://root/attachments/some-uuid/ticket5916/mathematica_jsmath.patch) by @jasongrout created at 2009-05-06 03:28:51",
     "created_at": "2009-05-06T03:28:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5916#issuecomment-46753",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [mathematica_jsmath.patch](tarball://root/attachments/some-uuid/ticket5916/mathematica_jsmath.patch) by jason created at 2009-05-06 03:28:51
+Attachment [mathematica_jsmath.patch](tarball://root/attachments/some-uuid/ticket5916/mathematica_jsmath.patch) by @jasongrout created at 2009-05-06 03:28:51
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_046754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5916#issuecomment-46754",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_046755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5916#issuecomment-46755",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_046756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5916",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5916#issuecomment-46756",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

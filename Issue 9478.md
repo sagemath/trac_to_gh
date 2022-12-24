@@ -3,7 +3,7 @@
 archive/issues_009478.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: latex\n\nI have just discovered the following:\n\n```\nsage: R1.<xi, x> = QQ[]\nsage: print latex(xi*x)\n\\xi x\nsage: R2.<a> = QQ[]\nsage: R3.<xi, x> = R2[]\nsage: print latex(xi*x)\n\\xix\n```\n\nNotice no space between variables on the last line. Of course, this gives an error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9478\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: latex\n\nI have just discovered the following:\n\n```\nsage: R1.<xi, x> = QQ[]\nsage: print latex(xi*x)\n\\xi x\nsage: R2.<a> = QQ[]\nsage: R3.<xi, x> = R2[]\nsage: print latex(xi*x)\n\\xix\n```\n\nNotice no space between variables on the last line. Of course, this gives an error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9478\n\n",
     "created_at": "2010-07-12T01:45:07Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_009478.json:
     "title": "LaTeX error for iterated polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9478",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: latex
 
@@ -69,7 +69,7 @@ archive/issue_comments_090991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9478#issuecomment-90991",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -82,16 +82,16 @@ Changing component from symbolics to basic arithmetic.
 archive/issue_comments_090992.json:
 ```json
 {
-    "body": "Changing assignee from burcin to AlexGhitza.",
+    "body": "Changing assignee from @burcin to @aghitza.",
     "created_at": "2010-08-28T11:43:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9478#issuecomment-90992",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from burcin to AlexGhitza.
+Changing assignee from @burcin to @aghitza.
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_090993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9478#issuecomment-90993",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_090994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9478#issuecomment-90994",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -136,16 +136,16 @@ This issue is still present in Sage-4.6.
 archive/issue_comments_090995.json:
 ```json
 {
-    "body": "Attachment [trac_9478_bug_in_LaTeXing_of_iterated_polynomials.patch](tarball://root/attachments/some-uuid/ticket9478/trac_9478_bug_in_LaTeXing_of_iterated_polynomials.patch) by novoselt created at 2011-06-17 22:46:26",
+    "body": "Attachment [trac_9478_bug_in_LaTeXing_of_iterated_polynomials.patch](tarball://root/attachments/some-uuid/ticket9478/trac_9478_bug_in_LaTeXing_of_iterated_polynomials.patch) by @novoselt created at 2011-06-17 22:46:26",
     "created_at": "2011-06-17T22:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9478#issuecomment-90995",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9478_bug_in_LaTeXing_of_iterated_polynomials.patch](tarball://root/attachments/some-uuid/ticket9478/trac_9478_bug_in_LaTeXing_of_iterated_polynomials.patch) by novoselt created at 2011-06-17 22:46:26
+Attachment [trac_9478_bug_in_LaTeXing_of_iterated_polynomials.patch](tarball://root/attachments/some-uuid/ticket9478/trac_9478_bug_in_LaTeXing_of_iterated_polynomials.patch) by @novoselt created at 2011-06-17 22:46:26
 
 
 
@@ -159,7 +159,7 @@ archive/issue_comments_090996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9478#issuecomment-90996",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_090997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9478#issuecomment-90997",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_090998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9478#issuecomment-90998",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_090999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9478#issuecomment-90999",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_091000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9478#issuecomment-91000",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_091001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9478#issuecomment-91001",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003072.json:
     "title": "sage -i numeric-24.2 (and all other experimental packages) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3072",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -52,16 +52,16 @@ Changing priority from major to blocker.
 archive/issue_comments_021206.json:
 ```json
 {
-    "body": "Attachment [3072_urllib_error_handler.patch](tarball://root/attachments/some-uuid/ticket3072/3072_urllib_error_handler.patch) by wjp created at 2008-05-01 15:14:03",
+    "body": "Attachment [3072_urllib_error_handler.patch](tarball://root/attachments/some-uuid/ticket3072/3072_urllib_error_handler.patch) by @wjp created at 2008-05-01 15:14:03",
     "created_at": "2008-05-01T15:14:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3072#issuecomment-21206",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [3072_urllib_error_handler.patch](tarball://root/attachments/some-uuid/ticket3072/3072_urllib_error_handler.patch) by wjp created at 2008-05-01 15:14:03
+Attachment [3072_urllib_error_handler.patch](tarball://root/attachments/some-uuid/ticket3072/3072_urllib_error_handler.patch) by @wjp created at 2008-05-01 15:14:03
 
 
 

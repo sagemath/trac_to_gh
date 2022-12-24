@@ -14,7 +14,7 @@ archive/issues_001139.json:
     "title": "nintegral fails for large precision (version 2.8.12)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1139",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: jkantor
@@ -54,7 +54,7 @@ archive/issue_comments_006924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1139#issuecomment-6924",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -76,16 +76,16 @@ The exception should be caught, and a more helpful error should be raised.
 archive/issue_comments_006925.json:
 ```json
 {
-    "body": "Changing assignee from jkantor to mhansen.",
+    "body": "Changing assignee from jkantor to @mwhansen.",
     "created_at": "2007-12-06T21:00:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1139#issuecomment-6925",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from jkantor to mhansen.
+Changing assignee from jkantor to @mwhansen.
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_006926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1139#issuecomment-6926",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing status from new to assigned.
 archive/issue_comments_006927.json:
 ```json
 {
-    "body": "Attachment [1139.patch](tarball://root/attachments/some-uuid/ticket1139/1139.patch) by mhansen created at 2007-12-06 22:00:14",
+    "body": "Attachment [1139.patch](tarball://root/attachments/some-uuid/ticket1139/1139.patch) by @mwhansen created at 2007-12-06 22:00:14",
     "created_at": "2007-12-06T22:00:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1139#issuecomment-6927",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1139.patch](tarball://root/attachments/some-uuid/ticket1139/1139.patch) by mhansen created at 2007-12-06 22:00:14
+Attachment [1139.patch](tarball://root/attachments/some-uuid/ticket1139/1139.patch) by @mwhansen created at 2007-12-06 22:00:14
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_006928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1139#issuecomment-6928",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_006929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1139#issuecomment-6929",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_006930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1139#issuecomment-6930",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_006931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1139#issuecomment-6931",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

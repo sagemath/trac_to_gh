@@ -68,16 +68,16 @@ Changing status from new to needs_review.
 archive/issue_comments_081566.json:
 ```json
 {
-    "body": "Attachment [trac_8875_Set_from_iterator_mr.2.patch](tarball://root/attachments/some-uuid/ticket8875/trac_8875_Set_from_iterator_mr.2.patch) by mhansen created at 2010-05-04 21:51:50",
+    "body": "Attachment [trac_8875_Set_from_iterator_mr.2.patch](tarball://root/attachments/some-uuid/ticket8875/trac_8875_Set_from_iterator_mr.2.patch) by @mwhansen created at 2010-05-04 21:51:50",
     "created_at": "2010-05-04T21:51:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8875#issuecomment-81566",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8875_Set_from_iterator_mr.2.patch](tarball://root/attachments/some-uuid/ticket8875/trac_8875_Set_from_iterator_mr.2.patch) by mhansen created at 2010-05-04 21:51:50
+Attachment [trac_8875_Set_from_iterator_mr.2.patch](tarball://root/attachments/some-uuid/ticket8875/trac_8875_Set_from_iterator_mr.2.patch) by @mwhansen created at 2010-05-04 21:51:50
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_081567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8875#issuecomment-81567",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

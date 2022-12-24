@@ -3,7 +3,7 @@
 archive/issues_001249.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1249\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1249\n\n",
     "created_at": "2007-11-23T18:56:47Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001249.json:
     "title": "[with patch] fixes bug in graph plotting with partitions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1249",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 

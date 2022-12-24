@@ -3,7 +3,7 @@
 archive/issues_001692.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1692\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1692\n\n",
     "created_at": "2008-01-05T14:16:25Z",
     "labels": [
         "documentation",
@@ -17,7 +17,7 @@ archive/issues_001692.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 

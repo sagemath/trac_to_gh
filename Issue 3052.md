@@ -14,7 +14,7 @@ archive/issues_003052.json:
     "title": "mercurial --> plain text --> mercurial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3052",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -65,7 +65,7 @@ archive/issue_comments_021063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21063",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_021064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21064",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_021065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21065",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_021066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21066",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -132,16 +132,16 @@ apply to $SAGE_ROOT
 archive/issue_comments_021067.json:
 ```json
 {
-    "body": "Attachment [trac_3052-textify.patch](tarball://root/attachments/some-uuid/ticket3052/trac_3052-textify.patch) by kini created at 2011-08-11 05:11:41\n\napply to $SAGE_ROOT/spkg/base",
+    "body": "Attachment [trac_3052-textify.patch](tarball://root/attachments/some-uuid/ticket3052/trac_3052-textify.patch) by @kini created at 2011-08-11 05:11:41\n\napply to $SAGE_ROOT/spkg/base",
     "created_at": "2011-08-11T05:11:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21067",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
-Attachment [trac_3052-textify.patch](tarball://root/attachments/some-uuid/ticket3052/trac_3052-textify.patch) by kini created at 2011-08-11 05:11:41
+Attachment [trac_3052-textify.patch](tarball://root/attachments/some-uuid/ticket3052/trac_3052-textify.patch) by @kini created at 2011-08-11 05:11:41
 
 apply to $SAGE_ROOT/spkg/base
 
@@ -157,7 +157,7 @@ archive/issue_comments_021068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21068",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_021069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21069",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_021070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21070",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_021071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21071",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_021072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21072",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_021073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21073",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_021074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21074",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -282,16 +282,16 @@ Resolution: fixed
 archive/issue_comments_021075.json:
 ```json
 {
-    "body": "Attachment [trac_3052-makefile-rebased.patch](tarball://root/attachments/some-uuid/ticket3052/trac_3052-makefile-rebased.patch) by jdemeyer created at 2011-10-06 11:38:40",
+    "body": "Attachment [trac_3052-makefile-rebased.patch](tarball://root/attachments/some-uuid/ticket3052/trac_3052-makefile-rebased.patch) by @jdemeyer created at 2011-10-06 11:38:40",
     "created_at": "2011-10-06T11:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21075",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_3052-makefile-rebased.patch](tarball://root/attachments/some-uuid/ticket3052/trac_3052-makefile-rebased.patch) by jdemeyer created at 2011-10-06 11:38:40
+Attachment [trac_3052-makefile-rebased.patch](tarball://root/attachments/some-uuid/ticket3052/trac_3052-makefile-rebased.patch) by @jdemeyer created at 2011-10-06 11:38:40
 
 
 
@@ -305,7 +305,7 @@ archive/issue_comments_021076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21076",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_021077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21077",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -351,7 +351,7 @@ archive/issue_comments_021078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21078",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_021079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3052",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3052#issuecomment-21079",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

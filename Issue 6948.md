@@ -3,7 +3,7 @@
 archive/issues_006948.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nFrancois Maltey wrote on sage-support:\n\n\n```\nvar(\"a,b,c\")\nexp(a)^2 # returns exp(2a) is right\nexp(a)^(1/2) # returns exp (a/2) is wrong, with a=2*i*pi we get -1=1\nexp(a)^b # returns exp(a*b) is wrong\n```\n\n\nThe thread is here:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/330a015bf640a4f3/0ddfdd5a4e021579\n\nIssue created by migration from https://trac.sagemath.org/ticket/6948\n\n",
+    "body": "Assignee: @burcin\n\nFrancois Maltey wrote on sage-support:\n\n\n```\nvar(\"a,b,c\")\nexp(a)^2 # returns exp(2a) is right\nexp(a)^(1/2) # returns exp (a/2) is wrong, with a=2*i*pi we get -1=1\nexp(a)^b # returns exp(a*b) is wrong\n```\n\n\nThe thread is here:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/330a015bf640a4f3/0ddfdd5a4e021579\n\nIssue created by migration from https://trac.sagemath.org/ticket/6948\n\n",
     "created_at": "2009-09-17T13:48:17Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006948.json:
     "title": "powers of exp are over simplified",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6948",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Francois Maltey wrote on sage-support:
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6948
 archive/issue_comments_057445.json:
 ```json
 {
-    "body": "Attachment [trac_6948-exp_power.patch](tarball://root/attachments/some-uuid/ticket6948/trac_6948-exp_power.patch) by burcin created at 2009-09-19 15:05:32",
+    "body": "Attachment [trac_6948-exp_power.patch](tarball://root/attachments/some-uuid/ticket6948/trac_6948-exp_power.patch) by @burcin created at 2009-09-19 15:05:32",
     "created_at": "2009-09-19T15:05:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6948#issuecomment-57445",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6948-exp_power.patch](tarball://root/attachments/some-uuid/ticket6948/trac_6948-exp_power.patch) by burcin created at 2009-09-19 15:05:32
+Attachment [trac_6948-exp_power.patch](tarball://root/attachments/some-uuid/ticket6948/trac_6948-exp_power.patch) by @burcin created at 2009-09-19 15:05:32
 
 
 
@@ -68,7 +68,7 @@ archive/issue_comments_057446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6948#issuecomment-57446",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_057447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6948#issuecomment-57447",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_057448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6948#issuecomment-57448",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_057449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6948#issuecomment-57449",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_057450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6948#issuecomment-57450",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -175,16 +175,16 @@ I'll attach a patch with some more doctests now.
 archive/issue_comments_057451.json:
 ```json
 {
-    "body": "Attachment [trac_6948-exp_power_print.patch](tarball://root/attachments/some-uuid/ticket6948/trac_6948-exp_power_print.patch) by kcrisman created at 2009-09-24 13:32:06\n\nPositive review!",
+    "body": "Attachment [trac_6948-exp_power_print.patch](tarball://root/attachments/some-uuid/ticket6948/trac_6948-exp_power_print.patch) by @kcrisman created at 2009-09-24 13:32:06\n\nPositive review!",
     "created_at": "2009-09-24T13:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6948#issuecomment-57451",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6948-exp_power_print.patch](tarball://root/attachments/some-uuid/ticket6948/trac_6948-exp_power_print.patch) by kcrisman created at 2009-09-24 13:32:06
+Attachment [trac_6948-exp_power_print.patch](tarball://root/attachments/some-uuid/ticket6948/trac_6948-exp_power_print.patch) by @kcrisman created at 2009-09-24 13:32:06
 
 Positive review!
 

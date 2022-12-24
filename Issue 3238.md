@@ -14,7 +14,7 @@ archive/issues_003238.json:
     "title": "[with patch; needs review] libfpll spkg -- update to work with cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3238",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

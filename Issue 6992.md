@@ -3,7 +3,7 @@
 archive/issues_006992.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThe Sage convention is to use `log` for the natural logarithm. See #6902 for more discussion.\n\nAttached patch renames the `lngamma` functions in the library, and adds deprecation notices where appropriate.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6992\n\n",
+    "body": "Assignee: @burcin\n\nThe Sage convention is to use `log` for the natural logarithm. See #6902 for more discussion.\n\nAttached patch renames the `lngamma` functions in the library, and adds deprecation notices where appropriate.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6992\n\n",
     "created_at": "2009-09-22T19:10:47Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_006992.json:
     "title": "rename lngamma to log gamma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6992",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 The Sage convention is to use `log` for the natural logarithm. See #6902 for more discussion.
 
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6992
 archive/issue_comments_057830.json:
 ```json
 {
-    "body": "Attachment [trac_6992-rename_lgamma.patch](tarball://root/attachments/some-uuid/ticket6992/trac_6992-rename_lgamma.patch) by burcin created at 2009-09-22 19:13:45",
+    "body": "Attachment [trac_6992-rename_lgamma.patch](tarball://root/attachments/some-uuid/ticket6992/trac_6992-rename_lgamma.patch) by @burcin created at 2009-09-22 19:13:45",
     "created_at": "2009-09-22T19:13:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6992#issuecomment-57830",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6992-rename_lgamma.patch](tarball://root/attachments/some-uuid/ticket6992/trac_6992-rename_lgamma.patch) by burcin created at 2009-09-22 19:13:45
+Attachment [trac_6992-rename_lgamma.patch](tarball://root/attachments/some-uuid/ticket6992/trac_6992-rename_lgamma.patch) by @burcin created at 2009-09-22 19:13:45
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_057831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6992#issuecomment-57831",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_057832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6992#issuecomment-57832",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_057833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6992#issuecomment-57833",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_057834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6992#issuecomment-57834",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_057837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6992#issuecomment-57837",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 

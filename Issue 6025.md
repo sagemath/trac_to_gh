@@ -72,16 +72,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6025
 archive/issue_comments_047983.json:
 ```json
 {
-    "body": "Attachment [trac-6025.patch](tarball://root/attachments/some-uuid/ticket6025/trac-6025.patch) by craigcitro created at 2009-05-13 00:22:30\n\nAs William pointed out on the mailing list, this code isn't used anywhere -- so we're just killing the function. The problem is that on 64 bit OSX, a value getting returned loses its top 4 bytes. This is clearly weird, but since this pari function is known to be buggy, we'll just not use it for now and cross our fingers.",
+    "body": "Attachment [trac-6025.patch](tarball://root/attachments/some-uuid/ticket6025/trac-6025.patch) by @craigcitro created at 2009-05-13 00:22:30\n\nAs William pointed out on the mailing list, this code isn't used anywhere -- so we're just killing the function. The problem is that on 64 bit OSX, a value getting returned loses its top 4 bytes. This is clearly weird, but since this pari function is known to be buggy, we'll just not use it for now and cross our fingers.",
     "created_at": "2009-05-13T00:22:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6025#issuecomment-47983",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-6025.patch](tarball://root/attachments/some-uuid/ticket6025/trac-6025.patch) by craigcitro created at 2009-05-13 00:22:30
+Attachment [trac-6025.patch](tarball://root/attachments/some-uuid/ticket6025/trac-6025.patch) by @craigcitro created at 2009-05-13 00:22:30
 
 As William pointed out on the mailing list, this code isn't used anywhere -- so we're just killing the function. The problem is that on 64 bit OSX, a value getting returned loses its top 4 bytes. This is clearly weird, but since this pari function is known to be buggy, we'll just not use it for now and cross our fingers.
 

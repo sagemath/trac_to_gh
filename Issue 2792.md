@@ -3,7 +3,7 @@
 archive/issues_002792.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  robertwb\n\nSee https://bugs.launchpad.net/bugs/151575 for details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2792\n\n",
+    "body": "Assignee: @malb\n\nCC:  @robertwb\n\nSee https://bugs.launchpad.net/bugs/151575 for details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2792\n\n",
     "created_at": "2008-04-03T10:23:16Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_002792.json:
     "title": "[with patch, needs review] remove workaround for non-existing Cython bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2792",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  robertwb
+CC:  @robertwb
 
 See https://bugs.launchpad.net/bugs/151575 for details.
 

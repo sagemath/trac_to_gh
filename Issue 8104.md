@@ -14,7 +14,7 @@ archive/issues_008104.json:
     "title": "developer's guide for making spkgs should specify that patches need to be version controlled",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8104",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: mvngu

@@ -3,7 +3,7 @@
 archive/issues_000476.json:
 ```json
 {
-    "body": "Assignee: was\n\nNeed to re-organize the chapter in the SAGE reference manual on the notebook, which is a complete mess right now. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/476\n\n",
+    "body": "Assignee: @williamstein\n\nNeed to re-organize the chapter in the SAGE reference manual on the notebook, which is a complete mess right now. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/476\n\n",
     "created_at": "2007-08-21T21:44:51Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000476.json:
     "title": "sage reference manual --- notebook chapter is a mess",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/476",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Need to re-organize the chapter in the SAGE reference manual on the notebook, which is a complete mess right now. 
 
@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/476
 archive/issue_comments_002375.json:
 ```json
 {
-    "body": "Changing assignee from was to tba.",
+    "body": "Changing assignee from @williamstein to tba.",
     "created_at": "2007-08-22T21:32:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/476",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_002375.json:
 }
 ```
 
-Changing assignee from was to tba.
+Changing assignee from @williamstein to tba.
 
 
 

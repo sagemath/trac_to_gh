@@ -167,7 +167,7 @@ archive/issue_comments_014412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14412",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_014413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14413",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -317,7 +317,7 @@ Changing component from basic arithmetic to givaro.
 archive/issue_comments_014417.json:
 ```json
 {
-    "body": "Changing assignee from somebody to cpernet.",
+    "body": "Changing assignee from somebody to @ClementPernet.",
     "created_at": "2008-03-16T01:47:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2195",
     "type": "issue_comment",
@@ -326,7 +326,7 @@ archive/issue_comments_014417.json:
 }
 ```
 
-Changing assignee from somebody to cpernet.
+Changing assignee from somebody to @ClementPernet.
 
 
 
@@ -362,7 +362,7 @@ archive/issue_comments_014419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14419",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_014422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14422",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_014423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14423",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

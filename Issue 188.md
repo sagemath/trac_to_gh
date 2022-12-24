@@ -13,7 +13,7 @@ archive/issues_000188.json:
     "title": "Python's builtin round function is funny since it always coerces to float",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/188",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -71,7 +71,7 @@ archive/issue_comments_000853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/188#issuecomment-853",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_000854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/188#issuecomment-854",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_000855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/188",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/188#issuecomment-855",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

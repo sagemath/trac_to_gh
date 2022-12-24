@@ -3,7 +3,7 @@
 archive/issues_007369.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe file graph.py should be split into several files in next release. I am thinking about creating 3 files :\n* generic_graph.py\n* graph.py\n* digraph.py\nBut it is likely many of you will have better ideas. Regardless of what is chosen, this is getting urgent as the best moment to do it is just before releasing a new version, just after all the patches for graph.py have been merged.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7369\n\n",
+    "body": "Assignee: @rlmill\n\nThe file graph.py should be split into several files in next release. I am thinking about creating 3 files :\n* generic_graph.py\n* graph.py\n* digraph.py\nBut it is likely many of you will have better ideas. Regardless of what is chosen, this is getting urgent as the best moment to do it is just before releasing a new version, just after all the patches for graph.py have been merged.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7369\n\n",
     "created_at": "2009-11-01T15:34:19Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007369.json:
     "title": "Split graph.py into several files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7369",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The file graph.py should be split into several files in next release. I am thinking about creating 3 files :
 * generic_graph.py
@@ -41,7 +41,7 @@ archive/issue_comments_061750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61750",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_061751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61751",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_061752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61752",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_061753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61753",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_061754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61754",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_061755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61755",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_061756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61756",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

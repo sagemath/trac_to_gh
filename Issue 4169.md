@@ -3,7 +3,7 @@
 archive/issues_004169.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  tabbott\n\nUpdate to `zn_poly` version 0.9.\n\nAlso included is a minor patch for hypellfrob (this is necessary since hypellfrob was using `zn_poly` internals in a naughty way --- bad design on my part, and now fixed).\n\nYou need to install the spkg first, then apply the hypellfrob patch and force a rebuild (touch {{{devel/sage/sage/schemes/hyperelliptic_curves/hypellfrob.pyx if necessary).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4169\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @timabbott\n\nUpdate to `zn_poly` version 0.9.\n\nAlso included is a minor patch for hypellfrob (this is necessary since hypellfrob was using `zn_poly` internals in a naughty way --- bad design on my part, and now fixed).\n\nYou need to install the spkg first, then apply the hypellfrob patch and force a rebuild (touch {{{devel/sage/sage/schemes/hyperelliptic_curves/hypellfrob.pyx if necessary).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4169\n\n",
     "created_at": "2008-09-22T19:02:41Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_004169.json:
 ```
 Assignee: mabshoff
 
-CC:  tabbott
+CC:  @timabbott
 
 Update to `zn_poly` version 0.9.
 
@@ -61,7 +61,7 @@ archive/issue_comments_030259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4169#issuecomment-30259",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_030263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4169",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4169#issuecomment-30263",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

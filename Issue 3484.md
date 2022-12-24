@@ -3,7 +3,7 @@
 archive/issues_003484.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  ncalexan wstein\n\nThis patch creates some new functionality in sage_eval: the preparser can be disabled; a sequence of commands can be specified, which will be run before the string is evaluated; and there are new calling conventions that take a tuple instead of a string.\n\nThese new calling conventions are useful for the proposed sage_input function (so that `sage_eval(sage_input(...))` works); but the other new functionality is generally useful, so I think it's reasonable to review and apply this patch even though sage_input is not ready for submission.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3484\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @ncalexan wstein\n\nThis patch creates some new functionality in sage_eval: the preparser can be disabled; a sequence of commands can be specified, which will be run before the string is evaluated; and there are new calling conventions that take a tuple instead of a string.\n\nThese new calling conventions are useful for the proposed sage_input function (so that `sage_eval(sage_input(...))` works); but the other new functionality is generally useful, so I think it's reasonable to review and apply this patch even though sage_input is not ready for submission.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3484\n\n",
     "created_at": "2008-06-20T08:01:48Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_003484.json:
 ```
 Assignee: cwitty
 
-CC:  ncalexan wstein
+CC:  @ncalexan wstein
 
 This patch creates some new functionality in sage_eval: the preparser can be disabled; a sequence of commands can be specified, which will be run before the string is evaluated; and there are new calling conventions that take a tuple instead of a string.
 
@@ -99,7 +99,7 @@ archive/issue_comments_024557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3484#issuecomment-24557",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,16 +169,16 @@ a doctest illustrating a syntax error.
 archive/issue_comments_024558.json:
 ```json
 {
-    "body": "Attachment [trac3484-sage_eval-review-response.patch](tarball://root/attachments/some-uuid/ticket3484/trac3484-sage_eval-review-response.patch) by was created at 2008-08-10 06:28:37\n\nAWESOME.",
+    "body": "Attachment [trac3484-sage_eval-review-response.patch](tarball://root/attachments/some-uuid/ticket3484/trac3484-sage_eval-review-response.patch) by @williamstein created at 2008-08-10 06:28:37\n\nAWESOME.",
     "created_at": "2008-08-10T06:28:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3484#issuecomment-24558",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac3484-sage_eval-review-response.patch](tarball://root/attachments/some-uuid/ticket3484/trac3484-sage_eval-review-response.patch) by was created at 2008-08-10 06:28:37
+Attachment [trac3484-sage_eval-review-response.patch](tarball://root/attachments/some-uuid/ticket3484/trac3484-sage_eval-review-response.patch) by @williamstein created at 2008-08-10 06:28:37
 
 AWESOME.
 

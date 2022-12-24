@@ -14,7 +14,7 @@ archive/issues_008312.json:
     "title": "speed up random_matrix creation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8312",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: jkantor

@@ -14,7 +14,7 @@ archive/issues_003205.json:
     "title": "when the notebook scrolls to a new cell that is created, the jsmath box obscures the bottom cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3205",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3205
 archive/issue_comments_022155.json:
 ```json
 {
-    "body": "Attachment [sage-3205-jsmath-button.patch](tarball://root/attachments/some-uuid/ticket3205/sage-3205-jsmath-button.patch) by jason created at 2008-05-14 22:21:28",
+    "body": "Attachment [sage-3205-jsmath-button.patch](tarball://root/attachments/some-uuid/ticket3205/sage-3205-jsmath-button.patch) by @jasongrout created at 2008-05-14 22:21:28",
     "created_at": "2008-05-14T22:21:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3205#issuecomment-22155",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [sage-3205-jsmath-button.patch](tarball://root/attachments/some-uuid/ticket3205/sage-3205-jsmath-button.patch) by jason created at 2008-05-14 22:21:28
+Attachment [sage-3205-jsmath-button.patch](tarball://root/attachments/some-uuid/ticket3205/sage-3205-jsmath-button.patch) by @jasongrout created at 2008-05-14 22:21:28
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_022157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3205#issuecomment-22157",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_022158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3205#issuecomment-22158",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

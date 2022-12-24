@@ -3,7 +3,7 @@
 archive/issues_004395.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage -t -long -optional devel/sage/sage/rings/quotient_ring.py\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/quotient_ring.py\", line 647:\n    sage: Q._magma_() # optional requires Magma\nExpected:\n    Affine Algebra of rank 2 over GF(2)\n    Graded Reverse Lexicographical Order\n    Variables: x, y\n    Quotient relations:\n    [\n    x^2 + x,\n    y^2 + y\n    ]\nGot:\n    Affine Algebra of rank 2 over GF(2)\n    Graded Reverse Lexicographical Order\n    Variables: x, y\n    Quotient relations:\n    [\n    0,\n    0\n    ]\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/.doctest_quotient_ring.py\n\t [5.4 s]\nexit code: 1024\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4395\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage -t -long -optional devel/sage/sage/rings/quotient_ring.py\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/quotient_ring.py\", line 647:\n    sage: Q._magma_() # optional requires Magma\nExpected:\n    Affine Algebra of rank 2 over GF(2)\n    Graded Reverse Lexicographical Order\n    Variables: x, y\n    Quotient relations:\n    [\n    x^2 + x,\n    y^2 + y\n    ]\nGot:\n    Affine Algebra of rank 2 over GF(2)\n    Graded Reverse Lexicographical Order\n    Variables: x, y\n    Quotient relations:\n    [\n    0,\n    0\n    ]\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/.doctest_quotient_ring.py\n\t [5.4 s]\nexit code: 1024\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4395\n\n",
     "created_at": "2008-10-30T16:56:35Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_004395.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -69,7 +69,7 @@ archive/issue_comments_032344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4395#issuecomment-32344",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

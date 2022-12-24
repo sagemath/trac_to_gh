@@ -3,7 +3,7 @@
 archive/issues_008245.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  kcrisman\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/437ae27f84e3a05):\n\n```\nIn the section, \"A Guided Tour\"->\"Basic Algebra and Calculus\"-\n>\"Euler\u2019s Method for Systems of Differential Equations\", I found that\n\nthe answer of the example is z(1)\u22480.75, which seems to be wrong.\n\nThe calculation is\n------------------------------------------------------------------------\nsage: t,x,y = PolynomialRing(RealField(10),3,\"txy\").gens()\nsage: f = y; g = -x - y * t\nsage: eulers_method_2x2(f,g, 0, 1, 0, 1/4, 1)\n      t                x            h*f(t,x,y)                y\nh*g(t,x,y)\n      0                1                  0.00\n0           -0.25\n    1/4              1.0                -0.062\n-0.25           -0.23\n    1/2             0.94                 -0.12\n-0.48           -0.17\n    3/4             0.82                 -0.16\n-0.66          -0.081\n      1             0.65                 -0.18\n-0.74           0.02\n------------------------------------------------------------------------\n\nSo I think the right answer should be z(1)\u22480.65 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8245\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/437ae27f84e3a05):\n\n```\nIn the section, \"A Guided Tour\"->\"Basic Algebra and Calculus\"-\n>\"Euler\u2019s Method for Systems of Differential Equations\", I found that\n\nthe answer of the example is z(1)\u22480.75, which seems to be wrong.\n\nThe calculation is\n------------------------------------------------------------------------\nsage: t,x,y = PolynomialRing(RealField(10),3,\"txy\").gens()\nsage: f = y; g = -x - y * t\nsage: eulers_method_2x2(f,g, 0, 1, 0, 1/4, 1)\n      t                x            h*f(t,x,y)                y\nh*g(t,x,y)\n      0                1                  0.00\n0           -0.25\n    1/4              1.0                -0.062\n-0.25           -0.23\n    1/2             0.94                 -0.12\n-0.48           -0.17\n    3/4             0.82                 -0.16\n-0.66          -0.081\n      1             0.65                 -0.18\n-0.74           0.02\n------------------------------------------------------------------------\n\nSo I think the right answer should be z(1)\u22480.65 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8245\n\n",
     "created_at": "2010-02-12T03:51:50Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008245.json:
 ```
 Assignee: mvngu
 
-CC:  kcrisman
+CC:  @kcrisman
 
 From [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/437ae27f84e3a05):
 
@@ -68,7 +68,7 @@ archive/issue_comments_072921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72921",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_072925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72925",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_072926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72926",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_072927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72927",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_072928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72928",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_072929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8245",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72929",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

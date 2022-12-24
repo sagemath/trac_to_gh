@@ -14,7 +14,7 @@ archive/issues_006326.json:
     "title": "optional doctest failure -- all quadratic forms tests that involve \" # optional -- souvigner\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6326",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -155,7 +155,7 @@ archive/issue_comments_050483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50483",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -168,16 +168,16 @@ Souvigner auto/isomorphism code tarball
 archive/issue_comments_050484.json:
 ```json
 {
-    "body": "Attachment [export.V3.tar](tarball://root/attachments/some-uuid/ticket6326/export.V3.tar) by jonhanke created at 2011-01-09 08:01:07\n\nI have attached the Souvigner tarball sent to me by Gabi Nebe in March 2008.  I'm not sure how to arrange Sage to build it, but the two files ISOM64 and AUTO64 that the makeflie produces need to renamed as Souvigner_ISOM and Souvigner_AUTO and moved to sage-4.x/local/bin.",
+    "body": "Attachment [export.V3.tar](tarball://root/attachments/some-uuid/ticket6326/export.V3.tar) by @jonhanke created at 2011-01-09 08:01:07\n\nI have attached the Souvigner tarball sent to me by Gabi Nebe in March 2008.  I'm not sure how to arrange Sage to build it, but the two files ISOM64 and AUTO64 that the makeflie produces need to renamed as Souvigner_ISOM and Souvigner_AUTO and moved to sage-4.x/local/bin.",
     "created_at": "2011-01-09T08:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50484",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
-Attachment [export.V3.tar](tarball://root/attachments/some-uuid/ticket6326/export.V3.tar) by jonhanke created at 2011-01-09 08:01:07
+Attachment [export.V3.tar](tarball://root/attachments/some-uuid/ticket6326/export.V3.tar) by @jonhanke created at 2011-01-09 08:01:07
 
 I have attached the Souvigner tarball sent to me by Gabi Nebe in March 2008.  I'm not sure how to arrange Sage to build it, but the two files ISOM64 and AUTO64 that the makeflie produces need to renamed as Souvigner_ISOM and Souvigner_AUTO and moved to sage-4.x/local/bin.
 
@@ -193,7 +193,7 @@ archive/issue_comments_050485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50485",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_050486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50486",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_050487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50487",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_050488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50488",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_050489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50489",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -294,16 +294,16 @@ Changing status from new to needs_review.
 archive/issue_comments_050490.json:
 ```json
 {
-    "body": "Attachment [ticket_6326_bug_fix.patch](tarball://root/attachments/some-uuid/ticket6326/ticket_6326_bug_fix.patch) by jonhanke created at 2011-01-12 04:45:58",
+    "body": "Attachment [ticket_6326_bug_fix.patch](tarball://root/attachments/some-uuid/ticket6326/ticket_6326_bug_fix.patch) by @jonhanke created at 2011-01-12 04:45:58",
     "created_at": "2011-01-12T04:45:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50490",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
-Attachment [ticket_6326_bug_fix.patch](tarball://root/attachments/some-uuid/ticket6326/ticket_6326_bug_fix.patch) by jonhanke created at 2011-01-12 04:45:58
+Attachment [ticket_6326_bug_fix.patch](tarball://root/attachments/some-uuid/ticket6326/ticket_6326_bug_fix.patch) by @jonhanke created at 2011-01-12 04:45:58
 
 
 
@@ -317,7 +317,7 @@ archive/issue_comments_050491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50491",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_050492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50492",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -348,16 +348,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_050493.json:
 ```json
 {
-    "body": "Attachment [souvigner-2012-03-10.spkg](tarball://root/attachments/some-uuid/ticket6326/souvigner-2012-03-10.spkg) by jdemeyer created at 2013-08-13 15:35:53",
+    "body": "Attachment [souvigner-2012-03-10.spkg](tarball://root/attachments/some-uuid/ticket6326/souvigner-2012-03-10.spkg) by @jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50493",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [souvigner-2012-03-10.spkg](tarball://root/attachments/some-uuid/ticket6326/souvigner-2012-03-10.spkg) by jdemeyer created at 2013-08-13 15:35:53
+Attachment [souvigner-2012-03-10.spkg](tarball://root/attachments/some-uuid/ticket6326/souvigner-2012-03-10.spkg) by @jdemeyer created at 2013-08-13 15:35:53
 
 
 
@@ -371,7 +371,7 @@ archive/issue_comments_050494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50494",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_050495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50495",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_050497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50497",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -461,7 +461,7 @@ archive/issue_comments_050499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50499",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -479,7 +479,7 @@ archive/issue_comments_050500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50500",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_050501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50501",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -515,7 +515,7 @@ archive/issue_comments_050502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6326#issuecomment-50502",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

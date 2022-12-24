@@ -14,7 +14,7 @@ archive/issues_002671.json:
     "title": "implement matrix/vector function similar to numpy's where or matlab's find",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2671",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -50,7 +50,7 @@ Changing component from Cygwin to linear algebra.
 archive/issue_comments_018385.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to was.",
+    "body": "Changing assignee from mabshoff to @williamstein.",
     "created_at": "2008-03-27T09:42:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2671",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_018385.json:
 }
 ```
 
-Changing assignee from mabshoff to was.
+Changing assignee from mabshoff to @williamstein.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_018386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2671#issuecomment-18386",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_018387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2671#issuecomment-18387",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_018388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2671#issuecomment-18388",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

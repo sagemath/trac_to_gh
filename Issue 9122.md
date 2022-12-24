@@ -3,7 +3,7 @@
 archive/issues_009122.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  mhampton\n\nThis patch implements conversions between simplicial and cubical complexes.  It also implements the following: if you call\n\n```\nsage: SimplicialComplex(X)\n```\n\nit tests to see if X has a `_simplicial_` method, and if it does, it calls that and returns the answer.  So if anyone wants to convert their favorite Sage object to a simplicial complex, they just have to write a `_simplicial_` method for it; then `SimplicialComplex(blah)` will work.  Same for a `_cubical_` method and cubical complexes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9122\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  mhampton\n\nThis patch implements conversions between simplicial and cubical complexes.  It also implements the following: if you call\n\n```\nsage: SimplicialComplex(X)\n```\n\nit tests to see if X has a `_simplicial_` method, and if it does, it calls that and returns the answer.  So if anyone wants to convert their favorite Sage object to a simplicial complex, they just have to write a `_simplicial_` method for it; then `SimplicialComplex(blah)` will work.  Same for a `_cubical_` method and cubical complexes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9122\n\n",
     "created_at": "2010-06-03T04:08:25Z",
     "labels": [
         "algebraic topology",
@@ -14,10 +14,10 @@ archive/issues_009122.json:
     "title": "conversions between simplicial and cubical complexes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9122",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 CC:  mhampton
 
@@ -46,7 +46,7 @@ archive/issue_comments_084841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9122#issuecomment-84841",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_084844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9122#issuecomment-84844",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_084845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9122#issuecomment-84845",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -133,16 +133,16 @@ Oh, I think it's partly the fault of the patch: the docstrings should start with
 archive/issue_comments_084846.json:
 ```json
 {
-    "body": "Attachment [trac_9122-cubical-simplicial.patch](tarball://root/attachments/some-uuid/ticket9122/trac_9122-cubical-simplicial.patch) by jhpalmieri created at 2011-03-29 03:56:45",
+    "body": "Attachment [trac_9122-cubical-simplicial.patch](tarball://root/attachments/some-uuid/ticket9122/trac_9122-cubical-simplicial.patch) by @jhpalmieri created at 2011-03-29 03:56:45",
     "created_at": "2011-03-29T03:56:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9122#issuecomment-84846",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9122-cubical-simplicial.patch](tarball://root/attachments/some-uuid/ticket9122/trac_9122-cubical-simplicial.patch) by jhpalmieri created at 2011-03-29 03:56:45
+Attachment [trac_9122-cubical-simplicial.patch](tarball://root/attachments/some-uuid/ticket9122/trac_9122-cubical-simplicial.patch) by @jhpalmieri created at 2011-03-29 03:56:45
 
 
 
@@ -192,7 +192,7 @@ archive/issue_comments_084849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9122#issuecomment-84849",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

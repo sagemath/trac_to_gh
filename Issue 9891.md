@@ -14,7 +14,7 @@ archive/issues_009891.json:
     "title": "Eliminate (or minimize) #include <pari/paripriv.h>",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9891",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_098041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9891#issuecomment-98041",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing component from packages to interfaces.
 archive/issue_comments_098042.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2010-09-14T07:50:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9891#issuecomment-98042",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -68,16 +68,16 @@ Changing assignee from tbd to was.
 archive/issue_comments_098043.json:
 ```json
 {
-    "body": "Changing assignee from was to jdemeyer.",
+    "body": "Changing assignee from @williamstein to @jdemeyer.",
     "created_at": "2015-09-23T10:01:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9891#issuecomment-98043",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from was to jdemeyer.
+Changing assignee from @williamstein to @jdemeyer.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_098044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9891#issuecomment-98044",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_098045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9891#issuecomment-98045",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_098046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9891#issuecomment-98046",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_098047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9891#issuecomment-98047",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_098048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9891#issuecomment-98048",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_098049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9891",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9891#issuecomment-98049",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007087.json:
     "title": "doctest failure in databases/sloane.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7087",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tbd
@@ -51,7 +51,7 @@ archive/issue_comments_058578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7087#issuecomment-58578",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_058579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7087#issuecomment-58579",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -82,16 +82,16 @@ Changing status from new to assigned.
 archive/issue_comments_058580.json:
 ```json
 {
-    "body": "Changing assignee from tbd to ddrake.",
+    "body": "Changing assignee from tbd to @dandrake.",
     "created_at": "2009-10-01T02:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7087#issuecomment-58580",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from tbd to ddrake.
+Changing assignee from tbd to @dandrake.
 
 
 
@@ -100,16 +100,16 @@ Changing assignee from tbd to ddrake.
 archive/issue_comments_058581.json:
 ```json
 {
-    "body": "Attachment [trac_7087.patch](tarball://root/attachments/some-uuid/ticket7087/trac_7087.patch) by ddrake created at 2009-10-01 02:49:22\n\nThe text around the offending doctest is talking about the number of results returned, so I changed the doctest to just test the number of results. I also added a new doctest that tests a sequence that should only ever return one result -- [the first bits of A137443](http://www.research.att.com/~njas/sequences/A137443) are quite unlikely to show up in another sequence.",
+    "body": "Attachment [trac_7087.patch](tarball://root/attachments/some-uuid/ticket7087/trac_7087.patch) by @dandrake created at 2009-10-01 02:49:22\n\nThe text around the offending doctest is talking about the number of results returned, so I changed the doctest to just test the number of results. I also added a new doctest that tests a sequence that should only ever return one result -- [the first bits of A137443](http://www.research.att.com/~njas/sequences/A137443) are quite unlikely to show up in another sequence.",
     "created_at": "2009-10-01T02:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7087#issuecomment-58581",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_7087.patch](tarball://root/attachments/some-uuid/ticket7087/trac_7087.patch) by ddrake created at 2009-10-01 02:49:22
+Attachment [trac_7087.patch](tarball://root/attachments/some-uuid/ticket7087/trac_7087.patch) by @dandrake created at 2009-10-01 02:49:22
 
 The text around the offending doctest is talking about the number of results returned, so I changed the doctest to just test the number of results. I also added a new doctest that tests a sequence that should only ever return one result -- [the first bits of A137443](http://www.research.att.com/~njas/sequences/A137443) are quite unlikely to show up in another sequence.
 
@@ -125,7 +125,7 @@ archive/issue_comments_058582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7087#issuecomment-58582",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_058583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7087#issuecomment-58583",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

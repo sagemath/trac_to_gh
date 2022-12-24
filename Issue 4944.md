@@ -3,7 +3,7 @@
 archive/issues_004944.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb was\n\nKeywords: roots number field embedding\n\n\n```\nsage: x = ZZ['x'].0; (x^2 + 1).roots(NumberField(x^2 - 106*x + 2789, 'a', embedding=CC.0))\n```\n\n\nDoesn't terminate in reasonable time on sage.math or my Mac OS X box.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4944\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  robertwb was\n\nKeywords: roots number field embedding\n\n\n```\nsage: x = ZZ['x'].0; (x^2 + 1).roots(NumberField(x^2 - 106*x + 2789, 'a', embedding=CC.0))\n```\n\n\nDoesn't terminate in reasonable time on sage.math or my Mac OS X box.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4944\n\n",
     "created_at": "2009-01-06T00:48:32Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004944.json:
     "title": "speed regression in finding roots over number fields when an embedding is specified",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4944",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  robertwb was
 
@@ -106,7 +106,7 @@ archive/issue_comments_037532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4944#issuecomment-37532",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

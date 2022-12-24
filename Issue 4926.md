@@ -14,7 +14,7 @@ archive/issues_004926.json:
     "title": "convert sage.schemes.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4926",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_037375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4926#issuecomment-37375",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_037376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4926#issuecomment-37376",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_037377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4926#issuecomment-37377",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -112,16 +112,16 @@ I forgot to say:  patch applies ok to 3.2.3.final.  I have not tried editing the
 archive/issue_comments_037378.json:
 ```json
 {
-    "body": "Attachment [trac_4926-2.patch](tarball://root/attachments/some-uuid/ticket4926/trac_4926-2.patch) by mhansen created at 2009-01-11 04:43:49",
+    "body": "Attachment [trac_4926-2.patch](tarball://root/attachments/some-uuid/ticket4926/trac_4926-2.patch) by @mwhansen created at 2009-01-11 04:43:49",
     "created_at": "2009-01-11T04:43:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4926#issuecomment-37378",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4926-2.patch](tarball://root/attachments/some-uuid/ticket4926/trac_4926-2.patch) by mhansen created at 2009-01-11 04:43:49
+Attachment [trac_4926-2.patch](tarball://root/attachments/some-uuid/ticket4926/trac_4926-2.patch) by @mwhansen created at 2009-01-11 04:43:49
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_037379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4926#issuecomment-37379",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_037380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4926#issuecomment-37380",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -166,16 +166,16 @@ Looks good now.  Pass!
 archive/issue_comments_037381.json:
 ```json
 {
-    "body": "Attachment [sage.schemes-final.patch](tarball://root/attachments/some-uuid/ticket4926/sage.schemes-final.patch) by mhansen created at 2009-02-21 19:22:08",
+    "body": "Attachment [sage.schemes-final.patch](tarball://root/attachments/some-uuid/ticket4926/sage.schemes-final.patch) by @mwhansen created at 2009-02-21 19:22:08",
     "created_at": "2009-02-21T19:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4926#issuecomment-37381",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage.schemes-final.patch](tarball://root/attachments/some-uuid/ticket4926/sage.schemes-final.patch) by mhansen created at 2009-02-21 19:22:08
+Attachment [sage.schemes-final.patch](tarball://root/attachments/some-uuid/ticket4926/sage.schemes-final.patch) by @mwhansen created at 2009-02-21 19:22:08
 
 
 

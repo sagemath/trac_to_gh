@@ -3,7 +3,7 @@
 archive/issues_003292.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: magma\n\nAttached patch adds support for converting `FractionFieldElement`s to Magma.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3292\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: magma\n\nAttached patch adds support for converting `FractionFieldElement`s to Magma.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3292\n\n",
     "created_at": "2008-05-24T16:43:18Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003292.json:
     "title": "[with patch, needs review] conversion of FractionFieldElements to magma",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3292",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: magma
 
@@ -39,7 +39,7 @@ archive/issue_comments_022774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3292#issuecomment-22774",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -52,16 +52,16 @@ convert FractionFieldElements to magma
 archive/issue_comments_022775.json:
 ```json
 {
-    "body": "Attachment [fraction_field_element_magma.patch](tarball://root/attachments/some-uuid/ticket3292/fraction_field_element_magma.patch) by mhansen created at 2008-05-24 17:23:12\n\nLooks good to me.",
+    "body": "Attachment [fraction_field_element_magma.patch](tarball://root/attachments/some-uuid/ticket3292/fraction_field_element_magma.patch) by @mwhansen created at 2008-05-24 17:23:12\n\nLooks good to me.",
     "created_at": "2008-05-24T17:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3292#issuecomment-22775",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [fraction_field_element_magma.patch](tarball://root/attachments/some-uuid/ticket3292/fraction_field_element_magma.patch) by mhansen created at 2008-05-24 17:23:12
+Attachment [fraction_field_element_magma.patch](tarball://root/attachments/some-uuid/ticket3292/fraction_field_element_magma.patch) by @mwhansen created at 2008-05-24 17:23:12
 
 Looks good to me.
 

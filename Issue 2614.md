@@ -3,7 +3,7 @@
 archive/issues_002614.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: multivariate coefficient\n\nThis ticket is a continuation and final aim of #2385.  I was hoping to generate a bit of discussion with that patch, but it got merged before the discussion was generated.\n\nThe end result is this (illustrated with ZZ, but applying equally to QQ):\n\n```\nsage: R.<x,y,z> = ZZ[]\nsage: f=(-x^2-x+3)*(y-1)\nsage: f\n-1*x^2*y + x^2 - x*y + x + 3*y - 3\nsage: f.coefficient(x^1)\n-1*y + 1\nsage: f.coefficient(x^0)\n-1*x^2*y + x^2 - x*y + x + 3*y - 3\nsage: f.coefficient({x:0})\n3*y - 3\nsage: f.coefficient([0,None,None])\n3*y - 3\n```\n\n\nNote that the \"f.coefficient(x^0)\" is possibly mis-leading and this motivated both #2385 and this ticket.  Note that for ZZ \"f.coefficient(x^0)\" actually returned the constant coefficient as a special case -- I think that was dead wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2614\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: multivariate coefficient\n\nThis ticket is a continuation and final aim of #2385.  I was hoping to generate a bit of discussion with that patch, but it got merged before the discussion was generated.\n\nThe end result is this (illustrated with ZZ, but applying equally to QQ):\n\n```\nsage: R.<x,y,z> = ZZ[]\nsage: f=(-x^2-x+3)*(y-1)\nsage: f\n-1*x^2*y + x^2 - x*y + x + 3*y - 3\nsage: f.coefficient(x^1)\n-1*y + 1\nsage: f.coefficient(x^0)\n-1*x^2*y + x^2 - x*y + x + 3*y - 3\nsage: f.coefficient({x:0})\n3*y - 3\nsage: f.coefficient([0,None,None])\n3*y - 3\n```\n\n\nNote that the \"f.coefficient(x^0)\" is possibly mis-leading and this motivated both #2385 and this ticket.  Note that for ZZ \"f.coefficient(x^0)\" actually returned the constant coefficient as a special case -- I think that was dead wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2614\n\n",
     "created_at": "2008-03-20T14:46:25Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_002614.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: multivariate coefficient
 
@@ -72,7 +72,7 @@ Changing component from algebraic geometry to commutative algebra.
 archive/issue_comments_017939.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2008-03-20T14:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2614",
     "type": "issue_comment",
@@ -81,7 +81,7 @@ archive/issue_comments_017939.json:
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_017940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2614#issuecomment-17940",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_017942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2614#issuecomment-17942",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_017943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2614#issuecomment-17943",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

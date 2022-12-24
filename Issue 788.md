@@ -14,7 +14,7 @@ archive/issues_000788.json:
     "title": "a doctest change: random low order bits",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/788",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -177,16 +177,16 @@ Please report on what architecture you did the test.
 archive/issue_comments_004741.json:
 ```json
 {
-    "body": "Attachment [trac_788-part2.patch](tarball://root/attachments/some-uuid/ticket788/trac_788-part2.patch) by ddrake created at 2008-10-24 05:57:02\n\nThe patches apply, and everything works except for one doctest:\n\n```\nsage -t  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx**********************************************************************\nFile \"/opt/sage-3.2.alpha0/tmp/polynomial_element.py\", line 1940:\n    sage: f.factor()\nExpected:\n    (1.0*x - 1.00000... + 1.0000...*I) * (1.0*x - 1.00000... + 0.999989...*I) * (1.0*x - 0.9999... + 1.00000...*I) * (1.0*x + 0.99999... - 1.00000...*I) * (1.0*x + 0.999996... - 0.99998...*I) * (1.0*x + 1.00001... - 1.00000...*I)\nGot:\n    (1.0*x - 1.00000621124 + 1.00000779481*I) * (1.0*x - 1.00000364483 + 0.999990723518*I) * (1.0*x - 0.99999014393 + 1.00000148167*I) * (1.0*x + 0.99999217079 - 1.00000864146*I) * (1.0*x + 0.999996430878 - 0.999988898998*I) * (1.0*x + 1.00001139833 - 1.00000245954*I)\n**********************************************************************\n1 items had failures:\n   1 of  74 in __main__.example_46\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /opt/sage-3.2.alpha0/tmp/.doctest_polynomial_element.py\n\t [6.7 s]\n```\n\nThis is on Ubuntu Intrepid amd64, on a Core 2 Quad processor. The doctest fails every time, and no other test does. It looks like the `0.999989` in the second factor should be `0.0.99999`.",
+    "body": "Attachment [trac_788-part2.patch](tarball://root/attachments/some-uuid/ticket788/trac_788-part2.patch) by @dandrake created at 2008-10-24 05:57:02\n\nThe patches apply, and everything works except for one doctest:\n\n```\nsage -t  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx**********************************************************************\nFile \"/opt/sage-3.2.alpha0/tmp/polynomial_element.py\", line 1940:\n    sage: f.factor()\nExpected:\n    (1.0*x - 1.00000... + 1.0000...*I) * (1.0*x - 1.00000... + 0.999989...*I) * (1.0*x - 0.9999... + 1.00000...*I) * (1.0*x + 0.99999... - 1.00000...*I) * (1.0*x + 0.999996... - 0.99998...*I) * (1.0*x + 1.00001... - 1.00000...*I)\nGot:\n    (1.0*x - 1.00000621124 + 1.00000779481*I) * (1.0*x - 1.00000364483 + 0.999990723518*I) * (1.0*x - 0.99999014393 + 1.00000148167*I) * (1.0*x + 0.99999217079 - 1.00000864146*I) * (1.0*x + 0.999996430878 - 0.999988898998*I) * (1.0*x + 1.00001139833 - 1.00000245954*I)\n**********************************************************************\n1 items had failures:\n   1 of  74 in __main__.example_46\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /opt/sage-3.2.alpha0/tmp/.doctest_polynomial_element.py\n\t [6.7 s]\n```\n\nThis is on Ubuntu Intrepid amd64, on a Core 2 Quad processor. The doctest fails every time, and no other test does. It looks like the `0.999989` in the second factor should be `0.0.99999`.",
     "created_at": "2008-10-24T05:57:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/788#issuecomment-4741",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_788-part2.patch](tarball://root/attachments/some-uuid/ticket788/trac_788-part2.patch) by ddrake created at 2008-10-24 05:57:02
+Attachment [trac_788-part2.patch](tarball://root/attachments/some-uuid/ticket788/trac_788-part2.patch) by @dandrake created at 2008-10-24 05:57:02
 
 The patches apply, and everything works except for one doctest:
 
@@ -220,7 +220,7 @@ archive/issue_comments_004742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/788#issuecomment-4742",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

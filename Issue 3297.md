@@ -14,7 +14,7 @@ archive/issues_003297.json:
     "title": "Make ccdlib produce a shared library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3297",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 Assignee: mabshoff
@@ -44,7 +44,7 @@ archive/issue_comments_022803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3297#issuecomment-22803",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -57,16 +57,16 @@ new patch folder
 archive/issue_comments_022804.json:
 ```json
 {
-    "body": "Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3297/spkg-install.patch) by fbissey created at 2008-05-25 09:21:53\n\npatch to spkg-install",
+    "body": "Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3297/spkg-install.patch) by @kiwifb created at 2008-05-25 09:21:53\n\npatch to spkg-install",
     "created_at": "2008-05-25T09:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3297#issuecomment-22804",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3297/spkg-install.patch) by fbissey created at 2008-05-25 09:21:53
+Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3297/spkg-install.patch) by @kiwifb created at 2008-05-25 09:21:53
 
 patch to spkg-install
 
@@ -128,7 +128,7 @@ archive/issue_comments_022807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3297#issuecomment-22807",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_022808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3297#issuecomment-22808",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_022809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3297#issuecomment-22809",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_022811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3297#issuecomment-22811",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_022812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3297#issuecomment-22812",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_022814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3297#issuecomment-22814",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_022819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3297#issuecomment-22819",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_022820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3297#issuecomment-22820",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_022821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3297#issuecomment-22821",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_022822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3297#issuecomment-22822",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -468,7 +468,7 @@ archive/issue_comments_022823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3297",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3297#issuecomment-22823",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

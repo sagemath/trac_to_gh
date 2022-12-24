@@ -3,7 +3,7 @@
 archive/issues_000839.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  mhansen schilly\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/839\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @mwhansen @haraldschilly\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/839\n\n",
     "created_at": "2007-10-07T18:55:13Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_000839.json:
     "title": "write pexpect interface to R",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/839",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  mhansen schilly
+CC:  @mwhansen @haraldschilly
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_005180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5180",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_005183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5183",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -110,16 +110,16 @@ This is *definitely* still very relevant.  It would, e.g., make it possible to h
 archive/issue_comments_005184.json:
 ```json
 {
-    "body": "Attachment [839-r-notebook.patch](tarball://root/attachments/some-uuid/ticket839/839-r-notebook.patch) by mhansen created at 2008-02-27 16:03:05\n\nAdd notebook support for R",
+    "body": "Attachment [839-r-notebook.patch](tarball://root/attachments/some-uuid/ticket839/839-r-notebook.patch) by @mwhansen created at 2008-02-27 16:03:05\n\nAdd notebook support for R",
     "created_at": "2008-02-27T16:03:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5184",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [839-r-notebook.patch](tarball://root/attachments/some-uuid/ticket839/839-r-notebook.patch) by mhansen created at 2008-02-27 16:03:05
+Attachment [839-r-notebook.patch](tarball://root/attachments/some-uuid/ticket839/839-r-notebook.patch) by @mwhansen created at 2008-02-27 16:03:05
 
 Add notebook support for R
 
@@ -135,7 +135,7 @@ archive/issue_comments_005185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5185",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_005186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5186",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_005187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5187",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -191,16 +191,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_005188.json:
 ```json
 {
-    "body": "Attachment [839-r-pexpect-schilly-1.hg](tarball://root/attachments/some-uuid/ticket839/839-r-pexpect-schilly-1.hg) by schilly created at 2008-03-25 01:26:26\n\nbased on previous patches, somewhat working version. see comment no. 9",
+    "body": "Attachment [839-r-pexpect-schilly-1.hg](tarball://root/attachments/some-uuid/ticket839/839-r-pexpect-schilly-1.hg) by @haraldschilly created at 2008-03-25 01:26:26\n\nbased on previous patches, somewhat working version. see comment no. 9",
     "created_at": "2008-03-25T01:26:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5188",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [839-r-pexpect-schilly-1.hg](tarball://root/attachments/some-uuid/ticket839/839-r-pexpect-schilly-1.hg) by schilly created at 2008-03-25 01:26:26
+Attachment [839-r-pexpect-schilly-1.hg](tarball://root/attachments/some-uuid/ticket839/839-r-pexpect-schilly-1.hg) by @haraldschilly created at 2008-03-25 01:26:26
 
 based on previous patches, somewhat working version. see comment no. 9
 
@@ -216,7 +216,7 @@ archive/issue_comments_005189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5189",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_005190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5190",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_005191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5191",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_005192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5192",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -327,16 +327,16 @@ archive/issue_comments_005192.json:
 archive/issue_comments_005193.json:
 ```json
 {
-    "body": "Attachment [839-r-pexpect-schilly-2.hg](tarball://root/attachments/some-uuid/ticket839/839-r-pexpect-schilly-2.hg) by schilly created at 2008-04-11 19:42:15\n\nthis replaces all patches from above - better working, but still not stable, repaired",
+    "body": "Attachment [839-r-pexpect-schilly-2.hg](tarball://root/attachments/some-uuid/ticket839/839-r-pexpect-schilly-2.hg) by @haraldschilly created at 2008-04-11 19:42:15\n\nthis replaces all patches from above - better working, but still not stable, repaired",
     "created_at": "2008-04-11T19:42:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5193",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [839-r-pexpect-schilly-2.hg](tarball://root/attachments/some-uuid/ticket839/839-r-pexpect-schilly-2.hg) by schilly created at 2008-04-11 19:42:15
+Attachment [839-r-pexpect-schilly-2.hg](tarball://root/attachments/some-uuid/ticket839/839-r-pexpect-schilly-2.hg) by @haraldschilly created at 2008-04-11 19:42:15
 
 this replaces all patches from above - better working, but still not stable, repaired
 
@@ -352,7 +352,7 @@ archive/issue_comments_005194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5194",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -368,16 +368,16 @@ i've repaired it. i think this should work now. (concerning the patch ;)
 archive/issue_comments_005195.json:
 ```json
 {
-    "body": "Attachment [839.hg](tarball://root/attachments/some-uuid/ticket839/839.hg) by mhansen created at 2008-04-19 23:56:52",
+    "body": "Attachment [839.hg](tarball://root/attachments/some-uuid/ticket839/839.hg) by @mwhansen created at 2008-04-19 23:56:52",
     "created_at": "2008-04-19T23:56:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5195",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [839.hg](tarball://root/attachments/some-uuid/ticket839/839.hg) by mhansen created at 2008-04-19 23:56:52
+Attachment [839.hg](tarball://root/attachments/some-uuid/ticket839/839.hg) by @mwhansen created at 2008-04-19 23:56:52
 
 
 
@@ -386,16 +386,16 @@ Attachment [839.hg](tarball://root/attachments/some-uuid/ticket839/839.hg) by mh
 archive/issue_comments_005196.json:
 ```json
 {
-    "body": "Attachment [sage-839-referee1.patch](tarball://root/attachments/some-uuid/ticket839/sage-839-referee1.patch) by was created at 2008-04-20 05:19:22",
+    "body": "Attachment [sage-839-referee1.patch](tarball://root/attachments/some-uuid/ticket839/sage-839-referee1.patch) by @williamstein created at 2008-04-20 05:19:22",
     "created_at": "2008-04-20T05:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5196",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-839-referee1.patch](tarball://root/attachments/some-uuid/ticket839/sage-839-referee1.patch) by was created at 2008-04-20 05:19:22
+Attachment [sage-839-referee1.patch](tarball://root/attachments/some-uuid/ticket839/sage-839-referee1.patch) by @williamstein created at 2008-04-20 05:19:22
 
 
 
@@ -409,7 +409,7 @@ archive/issue_comments_005197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5197",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -436,16 +436,16 @@ That should give a proper error message.  Also, after doing the above, for some 
 archive/issue_comments_005198.json:
 ```json
 {
-    "body": "Attachment [839.2.hg](tarball://root/attachments/some-uuid/ticket839/839.2.hg) by mhansen created at 2008-04-20 05:35:03",
+    "body": "Attachment [839.2.hg](tarball://root/attachments/some-uuid/ticket839/839.2.hg) by @mwhansen created at 2008-04-20 05:35:03",
     "created_at": "2008-04-20T05:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5198",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [839.2.hg](tarball://root/attachments/some-uuid/ticket839/839.2.hg) by mhansen created at 2008-04-20 05:35:03
+Attachment [839.2.hg](tarball://root/attachments/some-uuid/ticket839/839.2.hg) by @mwhansen created at 2008-04-20 05:35:03
 
 
 
@@ -459,7 +459,7 @@ archive/issue_comments_005199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/839#issuecomment-5199",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

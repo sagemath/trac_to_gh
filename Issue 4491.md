@@ -81,7 +81,7 @@ archive/issue_comments_033170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33170",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_033171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33171",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_033172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33172",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -132,16 +132,16 @@ Changing status from new to assigned.
 archive/issue_comments_033173.json:
 ```json
 {
-    "body": "Changing assignee from ghtdak to jason.",
+    "body": "Changing assignee from ghtdak to @jasongrout.",
     "created_at": "2008-11-22T17:52:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33173",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from ghtdak to jason.
+Changing assignee from ghtdak to @jasongrout.
 
 
 
@@ -155,7 +155,7 @@ archive/issue_comments_033174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33174",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_033175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33175",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_033176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33176",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

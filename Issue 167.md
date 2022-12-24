@@ -3,7 +3,7 @@
 archive/issues_000167.json:
 ```json
 {
-    "body": "Assignee: was\n\n(1) put the date of each SAGE release in the source download list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/167\n\n",
+    "body": "Assignee: @williamstein\n\n(1) put the date of each SAGE release in the source download list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/167\n\n",
     "created_at": "2006-11-07T09:51:07Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000167.json:
     "title": "sage web site fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/167",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 (1) put the date of each SAGE release in the source download list.
 
@@ -37,7 +37,7 @@ archive/issue_comments_000748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/167#issuecomment-748",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_000749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/167#issuecomment-749",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

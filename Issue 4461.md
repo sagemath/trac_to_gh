@@ -220,7 +220,7 @@ archive/issue_comments_032937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4461#issuecomment-32937",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_032938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4461#issuecomment-32938",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -258,16 +258,16 @@ Changing status from new to assigned.
 archive/issue_comments_032939.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-02-19T20:38:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4461#issuecomment-32939",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -281,7 +281,7 @@ archive/issue_comments_032940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4461#issuecomment-32940",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

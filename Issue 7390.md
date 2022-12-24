@@ -3,7 +3,7 @@
 archive/issues_007390.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was timdumol\n\nIt would be useful to have a HTML report summarizing the results of Sage Notebook tests, including the output and traceback, if any, of each test.\n\nWe can begin with the notebook's functional test suites (cf. #7343), but we could add doctests, eventually.  And with a backend server, we might select, run, and monitor tests remotely.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7390\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @TimDumol\n\nIt would be useful to have a HTML report summarizing the results of Sage Notebook tests, including the output and traceback, if any, of each test.\n\nWe can begin with the notebook's functional test suites (cf. #7343), but we could add doctests, eventually.  And with a backend server, we might select, run, and monitor tests remotely.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7390\n\n",
     "created_at": "2009-11-04T20:31:29Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007390.json:
     "title": "Generate a HTML report for SageNB tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7390",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
 
-CC:  was timdumol
+CC:  @williamstein @TimDumol
 
 It would be useful to have a HTML report summarizing the results of Sage Notebook tests, including the output and traceback, if any, of each test.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7390
 archive/issue_comments_062149.json:
 ```json
 {
-    "body": "Attachment [trac_7390-sagenb_test_report_A.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_A.patch) by mpatel created at 2009-11-06 14:32:18\n\nHTML test report.  Part A.  Apply to sagenb repo.",
+    "body": "Attachment [trac_7390-sagenb_test_report_A.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_A.patch) by @qed777 created at 2009-11-06 14:32:18\n\nHTML test report.  Part A.  Apply to sagenb repo.",
     "created_at": "2009-11-06T14:32:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62149",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7390-sagenb_test_report_A.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_A.patch) by mpatel created at 2009-11-06 14:32:18
+Attachment [trac_7390-sagenb_test_report_A.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_A.patch) by @qed777 created at 2009-11-06 14:32:18
 
 HTML test report.  Part A.  Apply to sagenb repo.
 
@@ -56,16 +56,16 @@ HTML test report.  Part A.  Apply to sagenb repo.
 archive/issue_comments_062150.json:
 ```json
 {
-    "body": "Attachment [trac_7390-sagenb_test_report_B.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_B.patch) by mpatel created at 2009-11-06 14:36:48\n\nHTML test report.  Part B.  Apply to sagenb repo after part A.",
+    "body": "Attachment [trac_7390-sagenb_test_report_B.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_B.patch) by @qed777 created at 2009-11-06 14:36:48\n\nHTML test report.  Part B.  Apply to sagenb repo after part A.",
     "created_at": "2009-11-06T14:36:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62150",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7390-sagenb_test_report_B.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_B.patch) by mpatel created at 2009-11-06 14:36:48
+Attachment [trac_7390-sagenb_test_report_B.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_B.patch) by @qed777 created at 2009-11-06 14:36:48
 
 HTML test report.  Part B.  Apply to sagenb repo after part A.
 
@@ -81,7 +81,7 @@ archive/issue_comments_062151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62151",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_062152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62152",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_062153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62153",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_062154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62154",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_062155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62155",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -195,16 +195,16 @@ HTML test report. Part B **Version 2**. Apply to sagenb repo after part A.
 archive/issue_comments_062156.json:
 ```json
 {
-    "body": "Attachment [trac_7390-sagenb_test_report_B_v2.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_B_v2.patch) by mpatel created at 2009-11-10 07:01:41\n\nVersion 2 (of part B):\n\n* Solves the table width problem for Cr3, FF3.5, IE8, O10, S4 on Windows XP and Cr4, FF3.5, O10 on Linux.\n* Works around a jQuery / IE8 toggle bug.\n* Fixes `run_and_report`'s docstring.",
+    "body": "Attachment [trac_7390-sagenb_test_report_B_v2.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_B_v2.patch) by @qed777 created at 2009-11-10 07:01:41\n\nVersion 2 (of part B):\n\n* Solves the table width problem for Cr3, FF3.5, IE8, O10, S4 on Windows XP and Cr4, FF3.5, O10 on Linux.\n* Works around a jQuery / IE8 toggle bug.\n* Fixes `run_and_report`'s docstring.",
     "created_at": "2009-11-10T07:01:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62156",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7390-sagenb_test_report_B_v2.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_B_v2.patch) by mpatel created at 2009-11-10 07:01:41
+Attachment [trac_7390-sagenb_test_report_B_v2.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_B_v2.patch) by @qed777 created at 2009-11-10 07:01:41
 
 Version 2 (of part B):
 
@@ -224,7 +224,7 @@ archive/issue_comments_062157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62157",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_062158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62158",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_062159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62159",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_062160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62160",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -298,16 +298,16 @@ Feel free.
 archive/issue_comments_062161.json:
 ```json
 {
-    "body": "Attachment [trac_7390-sagenb_test_report_referee.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_referee.patch) by timdumol created at 2009-11-15 08:50:08\n\nRemoves unicode characters from the documentation. Restyles color scheme to a lighter layout.",
+    "body": "Attachment [trac_7390-sagenb_test_report_referee.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_referee.patch) by @TimDumol created at 2009-11-15 08:50:08\n\nRemoves unicode characters from the documentation. Restyles color scheme to a lighter layout.",
     "created_at": "2009-11-15T08:50:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62161",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7390-sagenb_test_report_referee.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_referee.patch) by timdumol created at 2009-11-15 08:50:08
+Attachment [trac_7390-sagenb_test_report_referee.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_referee.patch) by @TimDumol created at 2009-11-15 08:50:08
 
 Removes unicode characters from the documentation. Restyles color scheme to a lighter layout.
 
@@ -323,7 +323,7 @@ archive/issue_comments_062162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62162",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -338,16 +338,16 @@ Things look great. The only thing I might want added are timings for each indivi
 archive/issue_comments_062163.json:
 ```json
 {
-    "body": "Attachment [trac_7390-sagenb_test_report_referee_v2.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_referee_v2.patch) by mpatel created at 2009-11-15 09:11:28\n\nUpdate TODO list.  **Version 2** of referee patch.",
+    "body": "Attachment [trac_7390-sagenb_test_report_referee_v2.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_referee_v2.patch) by @qed777 created at 2009-11-15 09:11:28\n\nUpdate TODO list.  **Version 2** of referee patch.",
     "created_at": "2009-11-15T09:11:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62163",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7390-sagenb_test_report_referee_v2.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_referee_v2.patch) by mpatel created at 2009-11-15 09:11:28
+Attachment [trac_7390-sagenb_test_report_referee_v2.patch](tarball://root/attachments/some-uuid/ticket7390/trac_7390-sagenb_test_report_referee_v2.patch) by @qed777 created at 2009-11-15 09:11:28
 
 Update TODO list.  **Version 2** of referee patch.
 
@@ -363,7 +363,7 @@ archive/issue_comments_062164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62164",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_062165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62165",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_062166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62166",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_062167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7390",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7390#issuecomment-62167",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002208.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: R = CyclotomicField(4).ring_of_integers()\nsage: R.is_field()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.IntegralDomain.is_field()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.Ring.is_finite()\n\n<type 'exceptions.NotImplementedError'>: \n```\n\n\nAlso\n\n```\nsage: R = NumberField(x^3 + 2, 'a').ring_of_integers()\nsage: R.is_field()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.IntegralDomain.is_field()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.Ring.is_finite()\n\n<type 'exceptions.NotImplementedError'>:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2208\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: R = CyclotomicField(4).ring_of_integers()\nsage: R.is_field()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.IntegralDomain.is_field()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.Ring.is_finite()\n\n<type 'exceptions.NotImplementedError'>: \n```\n\n\nAlso\n\n```\nsage: R = NumberField(x^3 + 2, 'a').ring_of_integers()\nsage: R.is_field()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.IntegralDomain.is_field()\n\n/Users/was/build/sage-2.10.2.alpha0/devel/sage-review/sage/modular/ring.pyx in sage.rings.ring.Ring.is_finite()\n\n<type 'exceptions.NotImplementedError'>:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2208\n\n",
     "created_at": "2008-02-19T02:29:00Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002208.json:
     "title": "implement is_field for rings of integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2208",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -70,7 +70,7 @@ archive/issue_comments_014579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2208#issuecomment-14579",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_014580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2208#issuecomment-14580",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -101,16 +101,16 @@ Changing status from new to assigned.
 archive/issue_comments_014581.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2008-02-19T03:30:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2208#issuecomment-14581",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_014582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2208#issuecomment-14582",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -137,16 +137,16 @@ I would delete "This exists for compatibility purposes." from the docstring.   I
 archive/issue_comments_014583.json:
 ```json
 {
-    "body": "Attachment [trac-2208.patch](tarball://root/attachments/some-uuid/ticket2208/trac-2208.patch) by craigcitro created at 2008-02-19 04:30:18\n\nNew patch posted, removes the questionable verbiage. Adds another doctest.",
+    "body": "Attachment [trac-2208.patch](tarball://root/attachments/some-uuid/ticket2208/trac-2208.patch) by @craigcitro created at 2008-02-19 04:30:18\n\nNew patch posted, removes the questionable verbiage. Adds another doctest.",
     "created_at": "2008-02-19T04:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2208#issuecomment-14583",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2208.patch](tarball://root/attachments/some-uuid/ticket2208/trac-2208.patch) by craigcitro created at 2008-02-19 04:30:18
+Attachment [trac-2208.patch](tarball://root/attachments/some-uuid/ticket2208/trac-2208.patch) by @craigcitro created at 2008-02-19 04:30:18
 
 New patch posted, removes the questionable verbiage. Adds another doctest.
 
@@ -162,7 +162,7 @@ archive/issue_comments_014584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2208#issuecomment-14584",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

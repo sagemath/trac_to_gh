@@ -3,7 +3,7 @@
 archive/issues_008665.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  chapoton\n\n\n```\nOn Apr 8, 2010, at 2:48 PM, msafiri wrote:\n\nHi all,\nticket #7207 is closed. However, using python mode,\n\nfrom __future__ import division\n1/2\n\nyields 0. (This is using Sage 4.3.4 on the sagenb.org server.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8665\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\n\n```\nOn Apr 8, 2010, at 2:48 PM, msafiri wrote:\n\nHi all,\nticket #7207 is closed. However, using python mode,\n\nfrom __future__ import division\n1/2\n\nyields 0. (This is using Sage 4.3.4 on the sagenb.org server.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8665\n\n",
     "created_at": "2010-04-09T09:02:07Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008665.json:
     "title": "__future__ imports not respected in notebook %python mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8665",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: jason, was
 
-CC:  chapoton
+CC:  @fchapoton
 
 
 ```
@@ -51,7 +51,7 @@ archive/issue_comments_078831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8665#issuecomment-78831",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_078832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8665#issuecomment-78832",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_078833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8665#issuecomment-78833",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_078834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8665",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8665#issuecomment-78834",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

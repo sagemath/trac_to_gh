@@ -3,7 +3,7 @@
 archive/issues_009689.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri\n\nWhilst there is no complete 64-bit build of Sage on Solaris x86, a sufficiently large part of Sage does build (with a few changes) on Solaris 10 x86. When built on 'fulvia', a Dell Optiplex with Xeon processors, there was a numerical noise issue - see #9099\n\n\n```\nsage -t  -long devel/sage/sage/symbolic/expression.pyx\n**********************************************************************\nFile \"/home/palmieri/fulvia/sage-4.5.2.rc0/devel/sage-main/sage/symbolic/expression.pyx\", line 498\\\n3:\n    sage: maxima('sinh(1.0)')\nExpected:\n    1.175201193643801\nGot:\n    1.175201193643802\n```\n\n\nA computation with Mathematica, using 60 digits of precision gives \n\n\n```\nIn[2]:= N[Sinh[1],60]\n\nOut[2]= 1.17520119364380145688238185059560081515571798133409587022957\n```\n\n\nThe absolute error on Solaris x86 is slighly higher than seen on some other systems, but this is still a perfectly acceptable result.\n\nThis should be fairly easy to fix. I'll make a patch later today\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9689\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nWhilst there is no complete 64-bit build of Sage on Solaris x86, a sufficiently large part of Sage does build (with a few changes) on Solaris 10 x86. When built on 'fulvia', a Dell Optiplex with Xeon processors, there was a numerical noise issue - see #9099\n\n\n```\nsage -t  -long devel/sage/sage/symbolic/expression.pyx\n**********************************************************************\nFile \"/home/palmieri/fulvia/sage-4.5.2.rc0/devel/sage-main/sage/symbolic/expression.pyx\", line 498\\\n3:\n    sage: maxima('sinh(1.0)')\nExpected:\n    1.175201193643801\nGot:\n    1.175201193643802\n```\n\n\nA computation with Mathematica, using 60 digits of precision gives \n\n\n```\nIn[2]:= N[Sinh[1],60]\n\nOut[2]= 1.17520119364380145688238185059560081515571798133409587022957\n```\n\n\nThe absolute error on Solaris x86 is slighly higher than seen on some other systems, but this is still a perfectly acceptable result.\n\nThis should be fairly easy to fix. I'll make a patch later today\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9689\n\n",
     "created_at": "2010-08-05T08:27:45Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_009689.json:
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 Whilst there is no complete 64-bit build of Sage on Solaris x86, a sufficiently large part of Sage does build (with a few changes) on Solaris 10 x86. When built on 'fulvia', a Dell Optiplex with Xeon processors, there was a numerical noise issue - see #9099
 
@@ -138,7 +138,7 @@ archive/issue_comments_094179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9689#issuecomment-94179",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_094180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9689#issuecomment-94180",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_094183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9689#issuecomment-94183",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_094184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9689#issuecomment-94184",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_094186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9689#issuecomment-94186",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_094187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9689#issuecomment-94187",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

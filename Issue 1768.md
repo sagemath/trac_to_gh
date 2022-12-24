@@ -3,7 +3,7 @@
 archive/issues_001768.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cc kcrisman embray slelievre\n\nFor example, I don't own a certain component, but I am still passionate enough about it to want to know whenever anything happens in it. Right now, \"Settings\" is only name and e-mail...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1768\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  cc @kcrisman @embray @slel\n\nFor example, I don't own a certain component, but I am still passionate enough about it to want to know whenever anything happens in it. Right now, \"Settings\" is only name and e-mail...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1768\n\n",
     "created_at": "2008-01-14T00:44:56Z",
     "labels": [
         "website/wiki",
@@ -14,12 +14,12 @@ archive/issues_001768.json:
     "title": "get emails from any trac change on a certain component",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1768",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cc kcrisman embray slelievre
+CC:  cc @kcrisman @embray @slel
 
 For example, I don't own a certain component, but I am still passionate enough about it to want to know whenever anything happens in it. Right now, "Settings" is only name and e-mail...
 
@@ -39,7 +39,7 @@ archive/issue_comments_011187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1768#issuecomment-11187",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_011188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1768#issuecomment-11188",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_011189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1768#issuecomment-11189",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_011190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1768#issuecomment-11190",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

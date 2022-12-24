@@ -14,7 +14,7 @@ archive/issues_002323.json:
     "title": "updated tutorial to include dsage section",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2323",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2323
 archive/issue_comments_015454.json:
 ```json
 {
-    "body": "Attachment [dsage-tut.hg](tarball://root/attachments/some-uuid/ticket2323/dsage-tut.hg) by yi created at 2008-02-26 18:16:02",
+    "body": "Attachment [dsage-tut.hg](tarball://root/attachments/some-uuid/ticket2323/dsage-tut.hg) by @yqiang created at 2008-02-26 18:16:02",
     "created_at": "2008-02-26T18:16:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2323#issuecomment-15454",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [dsage-tut.hg](tarball://root/attachments/some-uuid/ticket2323/dsage-tut.hg) by yi created at 2008-02-26 18:16:02
+Attachment [dsage-tut.hg](tarball://root/attachments/some-uuid/ticket2323/dsage-tut.hg) by @yqiang created at 2008-02-26 18:16:02
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_015455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2323#issuecomment-15455",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -100,16 +100,16 @@ Michael
 archive/issue_comments_015457.json:
 ```json
 {
-    "body": "Attachment [2323.patch](tarball://root/attachments/some-uuid/ticket2323/2323.patch) by mhansen created at 2008-02-27 23:59:41",
+    "body": "Attachment [2323.patch](tarball://root/attachments/some-uuid/ticket2323/2323.patch) by @mwhansen created at 2008-02-27 23:59:41",
     "created_at": "2008-02-27T23:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2323",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2323#issuecomment-15457",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2323.patch](tarball://root/attachments/some-uuid/ticket2323/2323.patch) by mhansen created at 2008-02-27 23:59:41
+Attachment [2323.patch](tarball://root/attachments/some-uuid/ticket2323/2323.patch) by @mwhansen created at 2008-02-27 23:59:41
 
 
 

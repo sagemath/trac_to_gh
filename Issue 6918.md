@@ -14,7 +14,7 @@ archive/issues_006918.json:
     "title": "notebook -- try harder to create worksheet process??",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6918",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -71,7 +71,7 @@ archive/issue_comments_057118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6918#issuecomment-57118",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

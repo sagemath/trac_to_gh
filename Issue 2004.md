@@ -3,7 +3,7 @@
 archive/issues_002004.json:
 ```json
 {
-    "body": "Assignee: was\n\nPatches implement new algorithm for computing (good ordinary) p-adic heights, with improved asymptotics for the high precision case:\n\n\n```\nsage: E = EllipticCurve(\"37a\")\nsage: P = E.gens()[0]\n\nsage: time E2 = E.padic_E2(5, 500)\nCPU times: user 7.00 s, sys: 0.74 s, total: 7.74 s\nWall time: 7.76\n\nsage: time h1 = E.padic_height(5, 500)(P)\nCPU times: user 9.34 s, sys: 0.86 s, total: 10.19 s\nWall time: 10.22\nsage: 10.22 - 7.76\n2.46000000000000\n\nsage: time h2 = E.padic_height_via_multiply(5, 500)(P)\nCPU times: user 7.36 s, sys: 0.74 s, total: 8.10 s\nWall time: 8.12\nsage: 8.12 - 7.76\n0.359999999999999\n\nsage: h1 == h2\nTrue\n```\n\n\nSo it's pretty much dominated by the computation of E2 now.\n\nIt's still fast for low precision too:\n\n\n```\nsage: time h1 = E.padic_height(5, 10)(P)\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08\n\nsage: time h2 = E.padic_height_via_multiply(5, 10)(P)\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08\n\nsage: h1 == h2\nTrue\n```\n\n\nI wrote the code a few weeks ago, but the patches are still okay against 2.10.1.rc1.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2004\n\n",
+    "body": "Assignee: @williamstein\n\nPatches implement new algorithm for computing (good ordinary) p-adic heights, with improved asymptotics for the high precision case:\n\n\n```\nsage: E = EllipticCurve(\"37a\")\nsage: P = E.gens()[0]\n\nsage: time E2 = E.padic_E2(5, 500)\nCPU times: user 7.00 s, sys: 0.74 s, total: 7.74 s\nWall time: 7.76\n\nsage: time h1 = E.padic_height(5, 500)(P)\nCPU times: user 9.34 s, sys: 0.86 s, total: 10.19 s\nWall time: 10.22\nsage: 10.22 - 7.76\n2.46000000000000\n\nsage: time h2 = E.padic_height_via_multiply(5, 500)(P)\nCPU times: user 7.36 s, sys: 0.74 s, total: 8.10 s\nWall time: 8.12\nsage: 8.12 - 7.76\n0.359999999999999\n\nsage: h1 == h2\nTrue\n```\n\n\nSo it's pretty much dominated by the computation of E2 now.\n\nIt's still fast for low precision too:\n\n\n```\nsage: time h1 = E.padic_height(5, 10)(P)\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08\n\nsage: time h2 = E.padic_height_via_multiply(5, 10)(P)\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08\n\nsage: h1 == h2\nTrue\n```\n\n\nI wrote the code a few weeks ago, but the patches are still okay against 2.10.1.rc1.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2004\n\n",
     "created_at": "2008-01-31T20:35:36Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_002004.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Patches implement new algorithm for computing (good ordinary) p-adic heights, with improved asymptotics for the high precision case:
 
@@ -123,7 +123,7 @@ archive/issue_comments_012969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2004",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2004#issuecomment-12969",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

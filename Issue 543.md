@@ -14,7 +14,7 @@ archive/issues_000543.json:
     "title": "include Chris Gorecki's very basic symbolic logic functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/543",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_002753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/543#issuecomment-2753",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,13 +50,13 @@ Resolution: fixed
 archive/issue_comments_002754.json:
 ```json
 {
-    "body": "Attachment [logic.patch](tarball://root/attachments/some-uuid/ticket543/logic.patch) by was created at 2007-08-31 21:03:26",
+    "body": "Attachment [logic.patch](tarball://root/attachments/some-uuid/ticket543/logic.patch) by @williamstein created at 2007-08-31 21:03:26",
     "created_at": "2007-08-31T21:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/543#issuecomment-2754",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [logic.patch](tarball://root/attachments/some-uuid/ticket543/logic.patch) by was created at 2007-08-31 21:03:26
+Attachment [logic.patch](tarball://root/attachments/some-uuid/ticket543/logic.patch) by @williamstein created at 2007-08-31 21:03:26

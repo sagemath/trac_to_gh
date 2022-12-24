@@ -3,7 +3,7 @@
 archive/issues_009565.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nOne can use a different call to GMP to find out whether an mpz_t fits into a long.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9565\n\n",
+    "body": "Assignee: @aghitza\n\nOne can use a different call to GMP to find out whether an mpz_t fits into a long.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9565\n\n",
     "created_at": "2010-07-21T14:02:35Z",
     "labels": [
         "basic arithmetic",
@@ -17,7 +17,7 @@ archive/issues_009565.json:
     "user": "spancratz"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 One can use a different call to GMP to find out whether an mpz_t fits into a long.
 
@@ -91,7 +91,7 @@ archive/issue_comments_092342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9565#issuecomment-92342",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_092345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9565",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9565#issuecomment-92345",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

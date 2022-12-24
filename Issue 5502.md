@@ -3,7 +3,7 @@
 archive/issues_005502.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: dynkin diagram ascii art lie\n\nDan Bump requested this in his Sage Days 14 talk: have ascii art output a la LiE for Dynkin diagrams (see interfaces/lie.py for some examples of usage).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5502\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: dynkin diagram ascii art lie\n\nDan Bump requested this in his Sage Days 14 talk: have ascii art output a la LiE for Dynkin diagrams (see interfaces/lie.py for some examples of usage).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5502\n\n",
     "created_at": "2009-03-12T19:26:49Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005502.json:
     "title": "implement ascii art output for Dynkin diagrams",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5502",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -42,7 +42,7 @@ archive/issue_comments_042737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5502#issuecomment-42737",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_042738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5502#issuecomment-42738",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_042739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5502#issuecomment-42739",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_042740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5502#issuecomment-42740",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_042741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5502#issuecomment-42741",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -193,16 +193,16 @@ Anne Schilling requests twisted affine types, but this is not done.
 archive/issue_comments_042742.json:
 ```json
 {
-    "body": "Attachment [trac_5502-revised.patch](tarball://root/attachments/some-uuid/ticket5502/trac_5502-revised.patch) by bump created at 2009-04-30 14:48:45\n\nThe patch `trac_5502-revised.patch` corrects some problems and supercedes\nthe previous patches.",
+    "body": "Attachment [trac_5502-revised.patch](tarball://root/attachments/some-uuid/ticket5502/trac_5502-revised.patch) by @dwbump created at 2009-04-30 14:48:45\n\nThe patch `trac_5502-revised.patch` corrects some problems and supercedes\nthe previous patches.",
     "created_at": "2009-04-30T14:48:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5502#issuecomment-42742",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_5502-revised.patch](tarball://root/attachments/some-uuid/ticket5502/trac_5502-revised.patch) by bump created at 2009-04-30 14:48:45
+Attachment [trac_5502-revised.patch](tarball://root/attachments/some-uuid/ticket5502/trac_5502-revised.patch) by @dwbump created at 2009-04-30 14:48:45
 
 The patch `trac_5502-revised.patch` corrects some problems and supercedes
 the previous patches.
@@ -219,7 +219,7 @@ archive/issue_comments_042743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5502#issuecomment-42743",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_042744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5502#issuecomment-42744",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -280,16 +280,16 @@ Michael
 archive/issue_comments_042746.json:
 ```json
 {
-    "body": "Attachment [trac_5502-doc.patch](tarball://root/attachments/some-uuid/ticket5502/trac_5502-doc.patch) by bump created at 2009-05-12 04:09:56\n\nThe patch trac_5502-doc.patch goes on top of trac_5502-revised.patch.\n\nIt adds doctests to the two ascii art functions.",
+    "body": "Attachment [trac_5502-doc.patch](tarball://root/attachments/some-uuid/ticket5502/trac_5502-doc.patch) by @dwbump created at 2009-05-12 04:09:56\n\nThe patch trac_5502-doc.patch goes on top of trac_5502-revised.patch.\n\nIt adds doctests to the two ascii art functions.",
     "created_at": "2009-05-12T04:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5502#issuecomment-42746",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_5502-doc.patch](tarball://root/attachments/some-uuid/ticket5502/trac_5502-doc.patch) by bump created at 2009-05-12 04:09:56
+Attachment [trac_5502-doc.patch](tarball://root/attachments/some-uuid/ticket5502/trac_5502-doc.patch) by @dwbump created at 2009-05-12 04:09:56
 
 The patch trac_5502-doc.patch goes on top of trac_5502-revised.patch.
 

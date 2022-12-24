@@ -3,7 +3,7 @@
 archive/issues_009634.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  kcrisman jpflori rws\n\n\n```\nsage: var('k')\nk \nsage: binomial(x,3)\n1/6*(x - 2)*(x - 1)*x\nsage: binomial(3,k)\n---------------------------------------------------------------------------\nTypeError: Either m or x-m must be an integer \n```\n\n\nFrom kcrisman:\nIs this a bug?  I would say yes, because\n\n```\nsage: binomial(x,k)\nbinomial(x, k)\n```\n\nworks, but maybe we want to have it be a specific integer if the top\nnumber is given?  Any input?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9634\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kcrisman jpflori @rwst\n\n\n```\nsage: var('k')\nk \nsage: binomial(x,3)\n1/6*(x - 2)*(x - 1)*x\nsage: binomial(3,k)\n---------------------------------------------------------------------------\nTypeError: Either m or x-m must be an integer \n```\n\n\nFrom kcrisman:\nIs this a bug?  I would say yes, because\n\n```\nsage: binomial(x,k)\nbinomial(x, k)\n```\n\nworks, but maybe we want to have it be a specific integer if the top\nnumber is given?  Any input?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9634\n\n",
     "created_at": "2010-07-29T07:29:28Z",
     "labels": [
         "basic arithmetic",
@@ -17,9 +17,9 @@ archive/issues_009634.json:
     "user": "Henryk.Trappmann"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  kcrisman jpflori rws
+CC:  @kcrisman jpflori @rwst
 
 
 ```
@@ -60,7 +60,7 @@ archive/issue_comments_093367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93367",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -73,16 +73,16 @@ Changing component from basic arithmetic to symbolics.
 archive/issue_comments_093368.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to burcin.",
+    "body": "Changing assignee from @aghitza to @burcin.",
     "created_at": "2010-07-29T13:05:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93368",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from AlexGhitza to burcin.
+Changing assignee from @aghitza to @burcin.
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_093369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93369",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_093370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93370",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -127,16 +127,16 @@ Changing status from new to needs_work.
 archive/issue_comments_093371.json:
 ```json
 {
-    "body": "Attachment [trac_9634-symbolic_binomial.patch](tarball://root/attachments/some-uuid/ticket9634/trac_9634-symbolic_binomial.patch) by burcin created at 2010-10-11 15:20:12\n\nattachment:trac_9634-symbolic_binomial.patch replaces the top level `binomial()` function with the one defined in `sage.functions.other`. This version can handle symbolic input, as opposed to the previous one from `sage.rings.arith`.\n\nThis still needs work, since the files `sage/functions/other.py` and `sage/rings/arith.py` don't pass doctests yet. We need to improve the speed of numerical approximation using the `gamma` trick from `sage.rings.arith.binomial` and change `sage.symbolic.pynac.py_binomial()` to handle large integers.",
+    "body": "Attachment [trac_9634-symbolic_binomial.patch](tarball://root/attachments/some-uuid/ticket9634/trac_9634-symbolic_binomial.patch) by @burcin created at 2010-10-11 15:20:12\n\nattachment:trac_9634-symbolic_binomial.patch replaces the top level `binomial()` function with the one defined in `sage.functions.other`. This version can handle symbolic input, as opposed to the previous one from `sage.rings.arith`.\n\nThis still needs work, since the files `sage/functions/other.py` and `sage/rings/arith.py` don't pass doctests yet. We need to improve the speed of numerical approximation using the `gamma` trick from `sage.rings.arith.binomial` and change `sage.symbolic.pynac.py_binomial()` to handle large integers.",
     "created_at": "2010-10-11T15:20:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93371",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9634-symbolic_binomial.patch](tarball://root/attachments/some-uuid/ticket9634/trac_9634-symbolic_binomial.patch) by burcin created at 2010-10-11 15:20:12
+Attachment [trac_9634-symbolic_binomial.patch](tarball://root/attachments/some-uuid/ticket9634/trac_9634-symbolic_binomial.patch) by @burcin created at 2010-10-11 15:20:12
 
 attachment:trac_9634-symbolic_binomial.patch replaces the top level `binomial()` function with the one defined in `sage.functions.other`. This version can handle symbolic input, as opposed to the previous one from `sage.rings.arith`.
 
@@ -154,7 +154,7 @@ archive/issue_comments_093372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93372",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_093373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93373",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -194,16 +194,16 @@ This very bug trips up many potential users.  Ping.   Let's fix it!!
 archive/issue_comments_093374.json:
 ```json
 {
-    "body": "Attachment [trac_9634-symbolic_binomial.take2.patch](tarball://root/attachments/some-uuid/ticket9634/trac_9634-symbolic_binomial.take2.patch) by burcin created at 2013-07-01 06:23:27\n\nI uploaded a new patch that fixes doctests as well. This meant reimplementing the `_eval_()` and `_evalf_()` methods to override those defined in pynac.\n\nPatchbot, apply only trac_9634-symbolic_binomial.take2.patch.",
+    "body": "Attachment [trac_9634-symbolic_binomial.take2.patch](tarball://root/attachments/some-uuid/ticket9634/trac_9634-symbolic_binomial.take2.patch) by @burcin created at 2013-07-01 06:23:27\n\nI uploaded a new patch that fixes doctests as well. This meant reimplementing the `_eval_()` and `_evalf_()` methods to override those defined in pynac.\n\nPatchbot, apply only trac_9634-symbolic_binomial.take2.patch.",
     "created_at": "2013-07-01T06:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93374",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9634-symbolic_binomial.take2.patch](tarball://root/attachments/some-uuid/ticket9634/trac_9634-symbolic_binomial.take2.patch) by burcin created at 2013-07-01 06:23:27
+Attachment [trac_9634-symbolic_binomial.take2.patch](tarball://root/attachments/some-uuid/ticket9634/trac_9634-symbolic_binomial.take2.patch) by @burcin created at 2013-07-01 06:23:27
 
 I uploaded a new patch that fixes doctests as well. This meant reimplementing the `_eval_()` and `_evalf_()` methods to override those defined in pynac.
 
@@ -221,7 +221,7 @@ archive/issue_comments_093375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93375",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_093376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93376",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_093377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93377",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_093378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93378",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_093379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93379",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_093380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93380",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_093381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93381",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_093384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93384",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_093385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93385",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_093386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93386",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_093387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93387",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_093388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93388",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_093389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93389",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -527,7 +527,7 @@ archive/issue_comments_093390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93390",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -545,7 +545,7 @@ archive/issue_comments_093391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93391",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -563,7 +563,7 @@ archive/issue_comments_093392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93392",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_093393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93393",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -599,7 +599,7 @@ archive/issue_comments_093394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9634",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9634#issuecomment-93394",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 

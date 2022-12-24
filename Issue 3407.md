@@ -3,7 +3,7 @@
 archive/issues_003407.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  cremona wstein mhansen\n\n* bail out of toy_buchberger if the term ordering is unknown\n* bail out of Singular conversion if number field is relative. Singular supports this, but our conversion not just yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3407\n\n",
+    "body": "Assignee: @malb\n\nCC:  @JohnCremona wstein @mwhansen\n\n* bail out of toy_buchberger if the term ordering is unknown\n* bail out of Singular conversion if number field is relative. Singular supports this, but our conversion not just yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3407\n\n",
     "created_at": "2008-06-12T22:42:15Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_003407.json:
     "title": "[with patch, needs review] better error handling for GB calculations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3407",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  cremona wstein mhansen
+CC:  @JohnCremona wstein @mwhansen
 
 * bail out of toy_buchberger if the term ordering is unknown
 * bail out of Singular conversion if number field is relative. Singular supports this, but our conversion not just yet.
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3407
 archive/issue_comments_023896.json:
 ```json
 {
-    "body": "Attachment [gb_errors.patch](tarball://root/attachments/some-uuid/ticket3407/gb_errors.patch) by craigcitro created at 2008-06-15 21:54:18",
+    "body": "Attachment [gb_errors.patch](tarball://root/attachments/some-uuid/ticket3407/gb_errors.patch) by @craigcitro created at 2008-06-15 21:54:18",
     "created_at": "2008-06-15T21:54:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3407#issuecomment-23896",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [gb_errors.patch](tarball://root/attachments/some-uuid/ticket3407/gb_errors.patch) by craigcitro created at 2008-06-15 21:54:18
+Attachment [gb_errors.patch](tarball://root/attachments/some-uuid/ticket3407/gb_errors.patch) by @craigcitro created at 2008-06-15 21:54:18
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_023897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3407#issuecomment-23897",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_023898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3407#issuecomment-23898",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_023899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3407#issuecomment-23899",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_023901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3407#issuecomment-23901",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

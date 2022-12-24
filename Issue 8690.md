@@ -14,7 +14,7 @@ archive/issues_008690.json:
     "title": "sage -pkg should add checksums as in #329",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8690",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_079170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8690#issuecomment-79170",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_079171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8690#issuecomment-79171",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_079172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8690#issuecomment-79172",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_079173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8690#issuecomment-79173",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

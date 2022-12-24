@@ -3,7 +3,7 @@
 archive/issues_004470.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  justin cremona tornaria\n\nJon Hanke wrote some substantial amount of code that is still based on Sage 2.8.14. Get the code ready for review and merge it \n\n#4120 is relevant here since Justin works on binary quadratic forms.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4470\n\n",
+    "body": "Assignee: tbd\n\nCC:  justin @JohnCremona @tornaria\n\nJon Hanke wrote some substantial amount of code that is still based on Sage 2.8.14. Get the code ready for review and merge it \n\n#4120 is relevant here since Justin works on binary quadratic forms.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4470\n\n",
     "created_at": "2008-11-08T21:29:34Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_004470.json:
 ```
 Assignee: tbd
 
-CC:  justin cremona tornaria
+CC:  justin @JohnCremona @tornaria
 
 Jon Hanke wrote some substantial amount of code that is still based on Sage 2.8.14. Get the code ready for review and merge it 
 
@@ -184,16 +184,16 @@ Michael
 archive/issue_comments_033010.json:
 ```json
 {
-    "body": "Attachment [2.8.14-non-quadratic-forms-U20.patch](tarball://root/attachments/some-uuid/ticket4470/2.8.14-non-quadratic-forms-U20.patch) by tornaria created at 2008-11-09 03:44:47\n\nChanges to existing files in Jon's 2.8.14 quadratic forms patch",
+    "body": "Attachment [2.8.14-non-quadratic-forms-U20.patch](tarball://root/attachments/some-uuid/ticket4470/2.8.14-non-quadratic-forms-U20.patch) by @tornaria created at 2008-11-09 03:44:47\n\nChanges to existing files in Jon's 2.8.14 quadratic forms patch",
     "created_at": "2008-11-09T03:44:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33010",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [2.8.14-non-quadratic-forms-U20.patch](tarball://root/attachments/some-uuid/ticket4470/2.8.14-non-quadratic-forms-U20.patch) by tornaria created at 2008-11-09 03:44:47
+Attachment [2.8.14-non-quadratic-forms-U20.patch](tarball://root/attachments/some-uuid/ticket4470/2.8.14-non-quadratic-forms-U20.patch) by @tornaria created at 2008-11-09 03:44:47
 
 Changes to existing files in Jon's 2.8.14 quadratic forms patch
 
@@ -209,7 +209,7 @@ archive/issue_comments_033011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33011",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -350,16 +350,16 @@ Michael
 archive/issue_comments_033014.json:
 ```json
 {
-    "body": "Changing assignee from justin to tornaria.",
+    "body": "Changing assignee from justin to @tornaria.",
     "created_at": "2009-02-23T03:35:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33014",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Changing assignee from justin to tornaria.
+Changing assignee from justin to @tornaria.
 
 
 
@@ -373,7 +373,7 @@ archive/issue_comments_033015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33015",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_033016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33016",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -404,16 +404,16 @@ Initial commit of Jon Hanke's quadratic forms code
 archive/issue_comments_033017.json:
 ```json
 {
-    "body": "Attachment [patch.4470.01-inital_hanke_code](tarball://root/attachments/some-uuid/ticket4470/patch.4470.01-inital_hanke_code) by tornaria created at 2009-02-23 03:36:54\n\nmany fixes and doctests for quadratic forms code",
+    "body": "Attachment [patch.4470.01-inital_hanke_code](tarball://root/attachments/some-uuid/ticket4470/patch.4470.01-inital_hanke_code) by @tornaria created at 2009-02-23 03:36:54\n\nmany fixes and doctests for quadratic forms code",
     "created_at": "2009-02-23T03:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33017",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [patch.4470.01-inital_hanke_code](tarball://root/attachments/some-uuid/ticket4470/patch.4470.01-inital_hanke_code) by tornaria created at 2009-02-23 03:36:54
+Attachment [patch.4470.01-inital_hanke_code](tarball://root/attachments/some-uuid/ticket4470/patch.4470.01-inital_hanke_code) by @tornaria created at 2009-02-23 03:36:54
 
 many fixes and doctests for quadratic forms code
 
@@ -424,16 +424,16 @@ many fixes and doctests for quadratic forms code
 archive/issue_comments_033018.json:
 ```json
 {
-    "body": "Attachment [patch.4470.02-fixes_and_doctest](tarball://root/attachments/some-uuid/ticket4470/patch.4470.02-fixes_and_doctest) by tornaria created at 2009-02-23 03:45:35\n\nAttached patches:\n\n- attachment:patch.4470.01-inital_hanke_code: applies Jon Hanke's quadratic forms code into sage. The merge is based in mabshoff work during SD Austin, with some minor updates.\n- attachment:patch.4470.02-fixes_and_doctest: fixes and lots of doctests and documentation to be applied on top of the initial patch. This patch raises the doctest coverage from 33% to over 60%.\n\nThe patches apply cleanly on a 3.3 tree, all tests pass in sage.math and my core2 debian/64 laptop.",
+    "body": "Attachment [patch.4470.02-fixes_and_doctest](tarball://root/attachments/some-uuid/ticket4470/patch.4470.02-fixes_and_doctest) by @tornaria created at 2009-02-23 03:45:35\n\nAttached patches:\n\n- attachment:patch.4470.01-inital_hanke_code: applies Jon Hanke's quadratic forms code into sage. The merge is based in mabshoff work during SD Austin, with some minor updates.\n- attachment:patch.4470.02-fixes_and_doctest: fixes and lots of doctests and documentation to be applied on top of the initial patch. This patch raises the doctest coverage from 33% to over 60%.\n\nThe patches apply cleanly on a 3.3 tree, all tests pass in sage.math and my core2 debian/64 laptop.",
     "created_at": "2009-02-23T03:45:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33018",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [patch.4470.02-fixes_and_doctest](tarball://root/attachments/some-uuid/ticket4470/patch.4470.02-fixes_and_doctest) by tornaria created at 2009-02-23 03:45:35
+Attachment [patch.4470.02-fixes_and_doctest](tarball://root/attachments/some-uuid/ticket4470/patch.4470.02-fixes_and_doctest) by @tornaria created at 2009-02-23 03:45:35
 
 Attached patches:
 
@@ -478,7 +478,7 @@ archive/issue_comments_033020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33020",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 

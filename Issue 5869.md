@@ -14,7 +14,7 @@ archive/issues_005869.json:
     "title": "Fix libgpg-error shared library name on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5869",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 Assignee: tbd
@@ -62,7 +62,7 @@ archive/issue_comments_046358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5869#issuecomment-46358",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_046359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5869#issuecomment-46359",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -93,16 +93,16 @@ Changing component from algebra to freebsd.
 archive/issue_comments_046360.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-20T07:02:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5869#issuecomment-46360",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_046361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5869#issuecomment-46361",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_046362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5869#issuecomment-46362",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_046363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5869#issuecomment-46363",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

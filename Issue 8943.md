@@ -3,7 +3,7 @@
 archive/issues_008943.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nKeywords: series, taylor\n\nThe function *series* can not give the power series expansion of f(x)=(1+arctan(x))**(1/x) , while *taylor* succeeds. Note that the function f can be continuously extended at 0.\n\n\n```\nsage: taylor((1+arctan(x))**(1/x), x, 0, 3)\n1/16*x^3*e + 1/8*x^2*e - 1/2*x*e + e\nsage: ((1+arctan(x))**(1/x)).series(x==0, 3)\nRuntimeError: power::eval(): division by zero\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8943\n\n",
+    "body": "Assignee: @burcin\n\nKeywords: series, taylor\n\nThe function *series* can not give the power series expansion of f(x)=(1+arctan(x))**(1/x) , while *taylor* succeeds. Note that the function f can be continuously extended at 0.\n\n\n```\nsage: taylor((1+arctan(x))**(1/x), x, 0, 3)\n1/16*x^3*e + 1/8*x^2*e - 1/2*x*e + e\nsage: ((1+arctan(x))**(1/x)).series(x==0, 3)\nRuntimeError: power::eval(): division by zero\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8943\n\n",
     "created_at": "2010-05-10T09:42:29Z",
     "labels": [
         "calculus",
@@ -17,7 +17,7 @@ archive/issues_008943.json:
     "user": "casamayou"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 Keywords: series, taylor
 
@@ -48,7 +48,7 @@ archive/issue_comments_082344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8943#issuecomment-82344",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_082345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8943#issuecomment-82345",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -79,16 +79,16 @@ Looks like this is in Ginac/Pynac.  But maybe it makes sense *not* to have an an
 archive/issue_comments_082346.json:
 ```json
 {
-    "body": "Attachment [trac_8943-series.patch](tarball://root/attachments/some-uuid/ticket8943/trac_8943-series.patch) by burcin created at 2011-05-08 19:51:29\n\nThis was fixed upstream in ginac. The changes will be in the next pynac release. Patch with doctest is attached.",
+    "body": "Attachment [trac_8943-series.patch](tarball://root/attachments/some-uuid/ticket8943/trac_8943-series.patch) by @burcin created at 2011-05-08 19:51:29\n\nThis was fixed upstream in ginac. The changes will be in the next pynac release. Patch with doctest is attached.",
     "created_at": "2011-05-08T19:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8943#issuecomment-82346",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8943-series.patch](tarball://root/attachments/some-uuid/ticket8943/trac_8943-series.patch) by burcin created at 2011-05-08 19:51:29
+Attachment [trac_8943-series.patch](tarball://root/attachments/some-uuid/ticket8943/trac_8943-series.patch) by @burcin created at 2011-05-08 19:51:29
 
 This was fixed upstream in ginac. The changes will be in the next pynac release. Patch with doctest is attached.
 
@@ -104,7 +104,7 @@ archive/issue_comments_082347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8943#issuecomment-82347",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_082348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8943#issuecomment-82348",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_082349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8943#issuecomment-82349",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_082350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8943#issuecomment-82350",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_082351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8943",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8943#issuecomment-82351",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006093.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nAdds documentation and doctests to the pydesign module ext_rep for reading combinatorial designs from http://designtheory.org/database/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6093\n\n",
+    "body": "Assignee: @wdjoyner\n\nAdds documentation and doctests to the pydesign module ext_rep for reading combinatorial designs from http://designtheory.org/database/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6093\n\n",
     "created_at": "2009-05-20T08:16:47Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_006093.json:
     "user": "carlohamalainen"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 Adds documentation and doctests to the pydesign module ext_rep for reading combinatorial designs from http://designtheory.org/database/
 
@@ -38,7 +38,7 @@ archive/issue_comments_048546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6093#issuecomment-48546",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_048549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6093#issuecomment-48549",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_048551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6093#issuecomment-48551",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_048552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6093#issuecomment-48552",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_048553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6093#issuecomment-48553",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

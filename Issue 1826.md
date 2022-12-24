@@ -14,7 +14,7 @@ archive/issues_001826.json:
     "title": "cdefs.pxi and stdsage.pxi were missing some function declarations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1826",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1826
 archive/issue_comments_011563.json:
 ```json
 {
-    "body": "Attachment [update-stdsage-cdefs.diff](tarball://root/attachments/some-uuid/ticket1826/update-stdsage-cdefs.diff) by robertwb created at 2008-01-18 05:26:09",
+    "body": "Attachment [update-stdsage-cdefs.diff](tarball://root/attachments/some-uuid/ticket1826/update-stdsage-cdefs.diff) by @robertwb created at 2008-01-18 05:26:09",
     "created_at": "2008-01-18T05:26:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1826#issuecomment-11563",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [update-stdsage-cdefs.diff](tarball://root/attachments/some-uuid/ticket1826/update-stdsage-cdefs.diff) by robertwb created at 2008-01-18 05:26:09
+Attachment [update-stdsage-cdefs.diff](tarball://root/attachments/some-uuid/ticket1826/update-stdsage-cdefs.diff) by @robertwb created at 2008-01-18 05:26:09
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_011564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1826#issuecomment-11564",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -68,16 +68,16 @@ While we're at it...
 archive/issue_comments_011565.json:
 ```json
 {
-    "body": "Attachment [more_cdefs.patch](tarball://root/attachments/some-uuid/ticket1826/more_cdefs.patch) by rlm created at 2008-01-19 23:43:13\n\nPS - testall passes with these two patches",
+    "body": "Attachment [more_cdefs.patch](tarball://root/attachments/some-uuid/ticket1826/more_cdefs.patch) by @rlmill created at 2008-01-19 23:43:13\n\nPS - testall passes with these two patches",
     "created_at": "2008-01-19T23:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1826",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1826#issuecomment-11565",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [more_cdefs.patch](tarball://root/attachments/some-uuid/ticket1826/more_cdefs.patch) by rlm created at 2008-01-19 23:43:13
+Attachment [more_cdefs.patch](tarball://root/attachments/some-uuid/ticket1826/more_cdefs.patch) by @rlmill created at 2008-01-19 23:43:13
 
 PS - testall passes with these two patches
 

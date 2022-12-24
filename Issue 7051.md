@@ -3,7 +3,7 @@
 archive/issues_007051.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nHere are several LaTeX issues:\n\n- because of how Python works (I think), if you set `T = type(identity_matrix(3))`, then T has all of the methods of an identity matrix.  In particular, if you run `latex(T)`, the code calls `hasattr(T, '_latex_')`, and this returns True because `hasattr(identity_matrix(3), '_latex_')` is True.  But then `T._latex_()` produces a `TypeError`.  This is the cause of the error reported [here](http://groups.google.com/group/sage-support/browse_frm/thread/498eb1dae179fc3f).\n\nSolution: catch `TypeError`s when calling `T._latex_()` in this sort of situation.\n\n- In the notebook, try \n\n``` \n%latex \n$\\sage{type(35)}$ \n```\n \nIn this case, Sage typesets the string `<type 'sage.rings.integer.Integer'>`, but the < and > signs get converted into an upside-down exclamation point and question mark. \n\nSolution: typeset strings differently, using `\\textttt` instead of `\\text`.\n\n- Click the \"Typeset\" button and try \n\n``` \ntype(35) \n```\n \nIn this case, jsMath kicks in and tries to typeset `\\text{<type 'sage.rings.integer.Integer'>`}, but the symbols < and > confuse jsMath -- it thinks they're part of an html command.  As a result, there is *no* output at all. \n\nSolution: for typesetting strings in jsMath, replace `\\texttt` with `\\hbox`.\n\n- This comes from a Sage doctest: \n\n``` \nsage: R.<x,y>=QQbar[] \nsage: latex(-x^2-y+1) \n-x^{2} - y + \\text{1} \n```\n \nThe `\\text{1`} should not be there.\n\nSolution: The `\\text{1`}  appears because the element 1 in R has no `_latex_` method, so it gets converted to a string, when then gets typeset by enclosing it in `\\text`.  So test strings: if they consist only of digits, just return the string.  If it contains anything else, enclose in `\\textttt`, as mentioned above.\n\nA patch will follow soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7051\n\n",
+    "body": "Assignee: @jhpalmieri\n\nHere are several LaTeX issues:\n\n- because of how Python works (I think), if you set `T = type(identity_matrix(3))`, then T has all of the methods of an identity matrix.  In particular, if you run `latex(T)`, the code calls `hasattr(T, '_latex_')`, and this returns True because `hasattr(identity_matrix(3), '_latex_')` is True.  But then `T._latex_()` produces a `TypeError`.  This is the cause of the error reported [here](http://groups.google.com/group/sage-support/browse_frm/thread/498eb1dae179fc3f).\n\nSolution: catch `TypeError`s when calling `T._latex_()` in this sort of situation.\n\n- In the notebook, try \n\n``` \n%latex \n$\\sage{type(35)}$ \n```\n \nIn this case, Sage typesets the string `<type 'sage.rings.integer.Integer'>`, but the < and > signs get converted into an upside-down exclamation point and question mark. \n\nSolution: typeset strings differently, using `\\textttt` instead of `\\text`.\n\n- Click the \"Typeset\" button and try \n\n``` \ntype(35) \n```\n \nIn this case, jsMath kicks in and tries to typeset `\\text{<type 'sage.rings.integer.Integer'>`}, but the symbols < and > confuse jsMath -- it thinks they're part of an html command.  As a result, there is *no* output at all. \n\nSolution: for typesetting strings in jsMath, replace `\\texttt` with `\\hbox`.\n\n- This comes from a Sage doctest: \n\n``` \nsage: R.<x,y>=QQbar[] \nsage: latex(-x^2-y+1) \n-x^{2} - y + \\text{1} \n```\n \nThe `\\text{1`} should not be there.\n\nSolution: The `\\text{1`}  appears because the element 1 in R has no `_latex_` method, so it gets converted to a string, when then gets typeset by enclosing it in `\\text`.  So test strings: if they consist only of digits, just return the string.  If it contains anything else, enclose in `\\textttt`, as mentioned above.\n\nA patch will follow soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7051\n\n",
     "created_at": "2009-09-28T15:27:39Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_007051.json:
     "title": "latex issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7051",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 Here are several LaTeX issues:
 
@@ -76,7 +76,7 @@ archive/issue_comments_058360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7051#issuecomment-58360",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -93,16 +93,16 @@ If necessary, we can split this into several tickets, because the first issue (`
 archive/issue_comments_058361.json:
 ```json
 {
-    "body": "Attachment [trac_7051-latex.patch](tarball://root/attachments/some-uuid/ticket7051/trac_7051-latex.patch) by timdumol created at 2009-10-01 13:36:12\n\nApplies well. Things look good here. Positive review.",
+    "body": "Attachment [trac_7051-latex.patch](tarball://root/attachments/some-uuid/ticket7051/trac_7051-latex.patch) by @TimDumol created at 2009-10-01 13:36:12\n\nApplies well. Things look good here. Positive review.",
     "created_at": "2009-10-01T13:36:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7051#issuecomment-58361",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7051-latex.patch](tarball://root/attachments/some-uuid/ticket7051/trac_7051-latex.patch) by timdumol created at 2009-10-01 13:36:12
+Attachment [trac_7051-latex.patch](tarball://root/attachments/some-uuid/ticket7051/trac_7051-latex.patch) by @TimDumol created at 2009-10-01 13:36:12
 
 Applies well. Things look good here. Positive review.
 
@@ -113,16 +113,16 @@ Applies well. Things look good here. Positive review.
 archive/issue_comments_058362.json:
 ```json
 {
-    "body": "Attachment [trac_7051-latex.2.patch](tarball://root/attachments/some-uuid/ticket7051/trac_7051-latex.2.patch) by mhansen created at 2009-10-15 09:30:25",
+    "body": "Attachment [trac_7051-latex.2.patch](tarball://root/attachments/some-uuid/ticket7051/trac_7051-latex.2.patch) by @mwhansen created at 2009-10-15 09:30:25",
     "created_at": "2009-10-15T09:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7051#issuecomment-58362",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7051-latex.2.patch](tarball://root/attachments/some-uuid/ticket7051/trac_7051-latex.2.patch) by mhansen created at 2009-10-15 09:30:25
+Attachment [trac_7051-latex.2.patch](tarball://root/attachments/some-uuid/ticket7051/trac_7051-latex.2.patch) by @mwhansen created at 2009-10-15 09:30:25
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_058363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7051#issuecomment-58363",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_058364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7051#issuecomment-58364",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_058365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7051#issuecomment-58365",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_058366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7051#issuecomment-58366",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_058367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7051#issuecomment-58367",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_058368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7051#issuecomment-58368",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_058369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7051#issuecomment-58369",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_058370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7051",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7051#issuecomment-58370",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

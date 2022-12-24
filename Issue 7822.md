@@ -3,7 +3,7 @@
 archive/issues_007822.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason\n\nAfter changes in #7490 to sage.symbolic.pynac.py_log, symbolic log function cannot handle float arguments <= 0:\n\n\n```\nsage: from sage.functions.log import function_log\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/16530/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.GinacFunction.__call__ (sage/symbolic/function.cpp:5305)()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:3560)()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/pynac.so in sage.symbolic.pynac.py_log (sage/symbolic/pynac.cpp:10778)()\n\nValueError: math domain error\n```\n\n\nAttached patch fixes the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7822\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nAfter changes in #7490 to sage.symbolic.pynac.py_log, symbolic log function cannot handle float arguments <= 0:\n\n\n```\nsage: from sage.functions.log import function_log\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/burcin/.sage/temp/karr/16530/_home_burcin__sage_init_sage_0.py in <module>()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.GinacFunction.__call__ (sage/symbolic/function.cpp:5305)()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:3560)()\n\n/home/burcin/sage/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/pynac.so in sage.symbolic.pynac.py_log (sage/symbolic/pynac.cpp:10778)()\n\nValueError: math domain error\n```\n\n\nAttached patch fixes the problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7822\n\n",
     "created_at": "2010-01-03T01:10:54Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_007822.json:
     "title": "pynac log function cannot handle float arguments <= 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7822",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason
+CC:  @jasongrout
 
 After changes in #7490 to sage.symbolic.pynac.py_log, symbolic log function cannot handle float arguments <= 0:
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7822
 archive/issue_comments_067707.json:
 ```json
 {
-    "body": "Attachment [trac_7822-py_log.patch](tarball://root/attachments/some-uuid/ticket7822/trac_7822-py_log.patch) by burcin created at 2010-01-03 01:30:15\n\nmake py_log handle float arguments",
+    "body": "Attachment [trac_7822-py_log.patch](tarball://root/attachments/some-uuid/ticket7822/trac_7822-py_log.patch) by @burcin created at 2010-01-03 01:30:15\n\nmake py_log handle float arguments",
     "created_at": "2010-01-03T01:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7822#issuecomment-67707",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7822-py_log.patch](tarball://root/attachments/some-uuid/ticket7822/trac_7822-py_log.patch) by burcin created at 2010-01-03 01:30:15
+Attachment [trac_7822-py_log.patch](tarball://root/attachments/some-uuid/ticket7822/trac_7822-py_log.patch) by @burcin created at 2010-01-03 01:30:15
 
 make py_log handle float arguments
 
@@ -79,7 +79,7 @@ archive/issue_comments_067708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7822#issuecomment-67708",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_067709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7822#issuecomment-67709",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_067710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7822#issuecomment-67710",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_067711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7822#issuecomment-67711",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -168,16 +168,16 @@ Also, there are an awful lot of "ln"s when I thought we were trying to get away 
 archive/issue_comments_067712.json:
 ```json
 {
-    "body": "Attachment [trac_7822-py_log.take2.patch](tarball://root/attachments/some-uuid/ticket7822/trac_7822-py_log.take2.patch) by burcin created at 2010-01-17 01:12:05\n\nsecond try, faster this time",
+    "body": "Attachment [trac_7822-py_log.take2.patch](tarball://root/attachments/some-uuid/ticket7822/trac_7822-py_log.take2.patch) by @burcin created at 2010-01-17 01:12:05\n\nsecond try, faster this time",
     "created_at": "2010-01-17T01:12:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7822#issuecomment-67712",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7822-py_log.take2.patch](tarball://root/attachments/some-uuid/ticket7822/trac_7822-py_log.take2.patch) by burcin created at 2010-01-17 01:12:05
+Attachment [trac_7822-py_log.take2.patch](tarball://root/attachments/some-uuid/ticket7822/trac_7822-py_log.take2.patch) by @burcin created at 2010-01-17 01:12:05
 
 second try, faster this time
 
@@ -193,7 +193,7 @@ archive/issue_comments_067713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7822#issuecomment-67713",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_067714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7822#issuecomment-67714",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_067715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7822#issuecomment-67715",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_067716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7822#issuecomment-67716",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_067717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7822",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7822#issuecomment-67717",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

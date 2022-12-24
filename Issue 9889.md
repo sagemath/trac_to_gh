@@ -3,7 +3,7 @@
 archive/issues_009889.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  nthiery fhivert\n\nAt the moment, the method `random_element()` from PerfectMatchings computes a random matching by picking a random integer between 0 and the number of matchings on n elements, then (I presume) enumerating all the matchings according to some ordering until the `k`th has been computed. This is impressively useless.\n\n\n```\nsage: %timeit PerfectMatchings(12).random_element()\n5 loops, best of 3: 1.5 s per loop\n```\n\n\nBy the way, I was not able to write a method to obtain the list of pairs describing the matching from an PerfectMatching object.. I don't understand how this class is written, and I have no idea why it needs to be so complicated (but it would be nice to add it to this ticket during the review, if someone gets how it works).\n\nThe method random_element (and also an_element) both raise an exception when the set of elements is EMPTY. I also fixed the doctests.\n\n(I don't even get why you can build a PerfectMatchings class on an odd number of elements in the first place)\n\nI expect this ticket could be heavily modified during review, but there is a problem with these classes at the moment.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9890\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @nthiery fhivert\n\nAt the moment, the method `random_element()` from PerfectMatchings computes a random matching by picking a random integer between 0 and the number of matchings on n elements, then (I presume) enumerating all the matchings according to some ordering until the `k`th has been computed. This is impressively useless.\n\n\n```\nsage: %timeit PerfectMatchings(12).random_element()\n5 loops, best of 3: 1.5 s per loop\n```\n\n\nBy the way, I was not able to write a method to obtain the list of pairs describing the matching from an PerfectMatching object.. I don't understand how this class is written, and I have no idea why it needs to be so complicated (but it would be nice to add it to this ticket during the review, if someone gets how it works).\n\nThe method random_element (and also an_element) both raise an exception when the set of elements is EMPTY. I also fixed the doctests.\n\n(I don't even get why you can build a PerfectMatchings class on an odd number of elements in the first place)\n\nI expect this ticket could be heavily modified during review, but there is a problem with these classes at the moment.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9890\n\n",
     "created_at": "2010-09-10T15:44:15Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_009889.json:
     "title": "A proper random_element() method for PerfectMatchings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9889",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: sage-combinat
 
-CC:  nthiery fhivert
+CC:  @nthiery fhivert
 
 At the moment, the method `random_element()` from PerfectMatchings computes a random matching by picking a random integer between 0 and the number of matchings on n elements, then (I presume) enumerating all the matchings according to some ordering until the `k`th has been computed. This is impressively useless.
 
@@ -56,7 +56,7 @@ archive/issue_comments_098020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9889#issuecomment-98020",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_098021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9889#issuecomment-98021",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_098022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9889#issuecomment-98022",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -116,16 +116,16 @@ Nathann
 archive/issue_comments_098023.json:
 ```json
 {
-    "body": "Attachment [trac_9890.patch](tarball://root/attachments/some-uuid/ticket9890/trac_9890.patch) by ncohen created at 2013-03-23 11:34:13",
+    "body": "Attachment [trac_9890.patch](tarball://root/attachments/some-uuid/ticket9890/trac_9890.patch) by @nathanncohen created at 2013-03-23 11:34:13",
     "created_at": "2013-03-23T11:34:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9889#issuecomment-98023",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9890.patch](tarball://root/attachments/some-uuid/ticket9890/trac_9890.patch) by ncohen created at 2013-03-23 11:34:13
+Attachment [trac_9890.patch](tarball://root/attachments/some-uuid/ticket9890/trac_9890.patch) by @nathanncohen created at 2013-03-23 11:34:13
 
 
 
@@ -139,7 +139,7 @@ archive/issue_comments_098024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9889#issuecomment-98024",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_098025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9889#issuecomment-98025",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -176,16 +176,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_098026.json:
 ```json
 {
-    "body": "Attachment [trac_9890_review.patch](tarball://root/attachments/some-uuid/ticket9890/trac_9890_review.patch) by ncohen created at 2013-05-18 10:14:47\n\n> I have taken the opportunity to make a complete cosmetic clean-up of the file (using pep8 and pyflakes)\n> \n> if my review patch is ok for you, you can set a positive review\n\nOkayyyyyyy ! Good to go, then `:-)`\n\nBy the way, how do you use pep8 and pyflakes ? Do you run them externally on files or do you have a way to use them ?\n\nNathann",
+    "body": "Attachment [trac_9890_review.patch](tarball://root/attachments/some-uuid/ticket9890/trac_9890_review.patch) by @nathanncohen created at 2013-05-18 10:14:47\n\n> I have taken the opportunity to make a complete cosmetic clean-up of the file (using pep8 and pyflakes)\n> \n> if my review patch is ok for you, you can set a positive review\n\nOkayyyyyyy ! Good to go, then `:-)`\n\nBy the way, how do you use pep8 and pyflakes ? Do you run them externally on files or do you have a way to use them ?\n\nNathann",
     "created_at": "2013-05-18T10:14:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9889#issuecomment-98026",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9890_review.patch](tarball://root/attachments/some-uuid/ticket9890/trac_9890_review.patch) by ncohen created at 2013-05-18 10:14:47
+Attachment [trac_9890_review.patch](tarball://root/attachments/some-uuid/ticket9890/trac_9890_review.patch) by @nathanncohen created at 2013-05-18 10:14:47
 
 > I have taken the opportunity to make a complete cosmetic clean-up of the file (using pep8 and pyflakes)
 > 
@@ -209,7 +209,7 @@ archive/issue_comments_098027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9889#issuecomment-98027",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_098028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9889",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9889#issuecomment-98028",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

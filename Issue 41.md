@@ -14,7 +14,7 @@ archive/issues_000041.json:
     "title": "doc generation script typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/41",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -61,7 +61,7 @@ archive/issue_comments_000254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/41",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-254",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,16 +89,16 @@ in <SAGE_ROOT>/devel/sage/sage/ref that I showed you.   We have to fix this.
 archive/issue_comments_000255.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2007-01-05T06:01:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/41",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-255",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_000256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/41",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-256",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_000257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/41",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-257",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_000258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/41",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-258",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_000259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/41",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-259",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_000260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/41",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/41#issuecomment-260",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

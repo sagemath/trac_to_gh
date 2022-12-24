@@ -3,7 +3,7 @@
 archive/issues_006232.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  zimmerma leif wbhart jpflori lorenz\n\nKeywords: linear algebra, factoring, number theory\n\nCADO-NFS is an implementation of the number field sieve:\n\n\n```\nCADO is sponsored by the French Research Agency (ANR).\nIt started in 2008 for 3 years. It involves 3 teams: CACAO (INRIA Nancy), TANC (INRIA Saclay), and Gerald Tenenbaum\u2019s team (IECN Nancy). \n\nObjectives:\n * better understand how the Number Field Sieve works\n * publish a state-of-the art implementation, not to break new\n   records, but to routinely factor numbers of 155 digits\n * use that code base to try new ideas and/or new algorithms\n```\n\n\nhttp://webloria.loria.fr/~zimmerma/talks/cado.pdf\n\nThe Block-Wiedemann in CADO-NSF might be of independent interest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6232\n\n",
+    "body": "Assignee: @malb\n\nCC:  @zimmermann6 @nexttime wbhart jpflori @yyyyx4\n\nKeywords: linear algebra, factoring, number theory\n\nCADO-NFS is an implementation of the number field sieve:\n\n\n```\nCADO is sponsored by the French Research Agency (ANR).\nIt started in 2008 for 3 years. It involves 3 teams: CACAO (INRIA Nancy), TANC (INRIA Saclay), and Gerald Tenenbaum\u2019s team (IECN Nancy). \n\nObjectives:\n * better understand how the Number Field Sieve works\n * publish a state-of-the art implementation, not to break new\n   records, but to routinely factor numbers of 155 digits\n * use that code base to try new ideas and/or new algorithms\n```\n\n\nhttp://webloria.loria.fr/~zimmerma/talks/cado.pdf\n\nThe Block-Wiedemann in CADO-NSF might be of independent interest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6232\n\n",
     "created_at": "2009-06-06T12:48:45Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_006232.json:
     "title": "Consider CADO-NFS for inclusion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6232",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  zimmerma leif wbhart jpflori lorenz
+CC:  @zimmermann6 @nexttime wbhart jpflori @yyyyx4
 
 Keywords: linear algebra, factoring, number theory
 
@@ -58,7 +58,7 @@ archive/issue_comments_049719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6232#issuecomment-49719",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_049720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6232#issuecomment-49720",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_049721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6232#issuecomment-49721",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_049722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6232#issuecomment-49722",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_049723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6232#issuecomment-49723",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_049724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6232#issuecomment-49724",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_049725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6232#issuecomment-49725",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_049726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6232#issuecomment-49726",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_049727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6232#issuecomment-49727",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_049729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6232#issuecomment-49729",
-    "user": "thome"
+    "user": "@emmanuelthome"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_049730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6232#issuecomment-49730",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

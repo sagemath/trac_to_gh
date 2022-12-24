@@ -153,7 +153,7 @@ archive/issue_comments_034985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4647#issuecomment-34985",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -188,16 +188,16 @@ Michael
 archive/issue_comments_034987.json:
 ```json
 {
-    "body": "Attachment [trac-4647-pt2.patch](tarball://root/attachments/some-uuid/ticket4647/trac-4647-pt2.patch) by craigcitro created at 2008-11-29 07:41:15",
+    "body": "Attachment [trac-4647-pt2.patch](tarball://root/attachments/some-uuid/ticket4647/trac-4647-pt2.patch) by @craigcitro created at 2008-11-29 07:41:15",
     "created_at": "2008-11-29T07:41:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4647#issuecomment-34987",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4647-pt2.patch](tarball://root/attachments/some-uuid/ticket4647/trac-4647-pt2.patch) by craigcitro created at 2008-11-29 07:41:15
+Attachment [trac-4647-pt2.patch](tarball://root/attachments/some-uuid/ticket4647/trac-4647-pt2.patch) by @craigcitro created at 2008-11-29 07:41:15
 
 
 
@@ -211,7 +211,7 @@ archive/issue_comments_034988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4647",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4647#issuecomment-34988",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

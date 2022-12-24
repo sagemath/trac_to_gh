@@ -3,7 +3,7 @@
 archive/issues_003786.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis is *not* a full replacement of `binary_code`, only the half of it that computes automorphism groups and canonical labels. The other half will be refactored later in the summer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3786\n\n",
+    "body": "Assignee: @rlmill\n\nThis is *not* a full replacement of `binary_code`, only the half of it that computes automorphism groups and canonical labels. The other half will be refactored later in the summer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3786\n\n",
     "created_at": "2008-08-07T01:13:10Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_003786.json:
     "title": "[with patch, needs review] Refactor binary code isom code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3786",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This is *not* a full replacement of `binary_code`, only the half of it that computes automorphism groups and canonical labels. The other half will be refactored later in the summer.
 
@@ -37,7 +37,7 @@ archive/issue_comments_026918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3786#issuecomment-26918",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_026919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3786#issuecomment-26919",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_026920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3786#issuecomment-26920",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_026921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3786#issuecomment-26921",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_026922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3786#issuecomment-26922",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_026923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3786#issuecomment-26923",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_026924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3786#issuecomment-26924",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

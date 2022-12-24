@@ -14,7 +14,7 @@ archive/issues_008073.json:
     "title": "deprecation version number should say \"After version ...\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8073",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_070739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8073",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8073#issuecomment-70739",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_070740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8073",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8073#issuecomment-70740",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_070741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8073",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8073#issuecomment-70741",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_070742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8073",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8073#issuecomment-70742",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

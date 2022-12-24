@@ -3,7 +3,7 @@
 archive/issues_002318.json:
 ```json
 {
-    "body": "Assignee: yi\n\nSince dsage is being developed fairly actively, the database schema tends to change more often than not. We need to come up with a good way to migrate existing db's to newer versions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2318\n\n",
+    "body": "Assignee: @yqiang\n\nSince dsage is being developed fairly actively, the database schema tends to change more often than not. We need to come up with a good way to migrate existing db's to newer versions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2318\n\n",
     "created_at": "2008-02-26T17:43:32Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002318.json:
     "title": "dsage needs to provide database versioning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2318",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 Since dsage is being developed fairly actively, the database schema tends to change more often than not. We need to come up with a good way to migrate existing db's to newer versions.
 
@@ -73,7 +73,7 @@ archive/issue_comments_015423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2318#issuecomment-15423",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_015424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2318#issuecomment-15424",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

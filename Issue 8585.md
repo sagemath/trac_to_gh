@@ -3,7 +3,7 @@
 archive/issues_008585.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat nborie\n\nKeywords: Empty Set, PermutationGroup\n\nSage can't properly work with SymmetricGroup(0) or PermutationsGroup on the\nempty set.\n\n```\nsage: SymmetricGroup(0)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n[...]\nValueError: min() arg is an empty sequence\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8585\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat nborie\n\nKeywords: Empty Set, PermutationGroup\n\nSage can't properly work with SymmetricGroup(0) or PermutationsGroup on the\nempty set.\n\n```\nsage: SymmetricGroup(0)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n[...]\nValueError: min() arg is an empty sequence\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8585\n\n",
     "created_at": "2010-03-23T09:01:45Z",
     "labels": [
         "group theory",
@@ -14,10 +14,10 @@ archive/issues_008585.json:
     "title": "PermutationGroup and SymmetricGroup on the empty set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8585",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat nborie
 
@@ -52,7 +52,7 @@ archive/issue_comments_077751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8585#issuecomment-77751",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_077752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8585#issuecomment-77752",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_077753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8585#issuecomment-77753",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_077755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8585#issuecomment-77755",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -161,16 +161,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_077756.json:
 ```json
 {
-    "body": "Attachment [trac_8585-permutation_group_on_empty_set-fh.patch](tarball://root/attachments/some-uuid/ticket8585/trac_8585-permutation_group_on_empty_set-fh.patch) by hivert created at 2010-04-16 10:20:09\n\nReplying to [comment:4 nborie]:\nOups ! I forgot to reupload the patch after sending my e-mail... Sorry.",
+    "body": "Attachment [trac_8585-permutation_group_on_empty_set-fh.patch](tarball://root/attachments/some-uuid/ticket8585/trac_8585-permutation_group_on_empty_set-fh.patch) by @hivert created at 2010-04-16 10:20:09\n\nReplying to [comment:4 nborie]:\nOups ! I forgot to reupload the patch after sending my e-mail... Sorry.",
     "created_at": "2010-04-16T10:20:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8585#issuecomment-77756",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8585-permutation_group_on_empty_set-fh.patch](tarball://root/attachments/some-uuid/ticket8585/trac_8585-permutation_group_on_empty_set-fh.patch) by hivert created at 2010-04-16 10:20:09
+Attachment [trac_8585-permutation_group_on_empty_set-fh.patch](tarball://root/attachments/some-uuid/ticket8585/trac_8585-permutation_group_on_empty_set-fh.patch) by @hivert created at 2010-04-16 10:20:09
 
 Replying to [comment:4 nborie]:
 Oups ! I forgot to reupload the patch after sending my e-mail... Sorry.
@@ -225,7 +225,7 @@ archive/issue_comments_077759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8585#issuecomment-77759",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_077760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8585#issuecomment-77760",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

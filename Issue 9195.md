@@ -14,7 +14,7 @@ archive/issues_009195.json:
     "title": "Recognition of split graphs (5 lines)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9195",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9195
 archive/issue_comments_086026.json:
 ```json
 {
-    "body": "Attachment [trac_9195.patch](tarball://root/attachments/some-uuid/ticket9195/trac_9195.patch) by ncohen created at 2010-06-09 12:12:50",
+    "body": "Attachment [trac_9195.patch](tarball://root/attachments/some-uuid/ticket9195/trac_9195.patch) by @nathanncohen created at 2010-06-09 12:12:50",
     "created_at": "2010-06-09T12:12:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9195#issuecomment-86026",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9195.patch](tarball://root/attachments/some-uuid/ticket9195/trac_9195.patch) by ncohen created at 2010-06-09 12:12:50
+Attachment [trac_9195.patch](tarball://root/attachments/some-uuid/ticket9195/trac_9195.patch) by @nathanncohen created at 2010-06-09 12:12:50
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_086027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9195#issuecomment-86027",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_086028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9195#issuecomment-86028",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_086029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9195#issuecomment-86029",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_086030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9195",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9195#issuecomment-86030",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

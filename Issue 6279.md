@@ -3,7 +3,7 @@
 archive/issues_006279.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  kcrisman\n\nI build sage-4.0.2.alpha3 on sage.math with \n\n```\nexport SAGE_CHECK=\"yes\"\n```\n\nand it failed as follows:\n\n\n```\n...\nSuccessfully installed r-2.6.1.p22\nRunning the test suite.\nmake[2]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src'\nmake[3]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests'\nmake[4]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests'\nmake[5]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests/Examples'\nmake[6]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests/Examples'\nmake[6]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests/Examples'\nmake[6]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests/Examples'\ncollecting examples for package 'base' ...\nmake[7]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/src/library'\n >>> Building/Updating help pages for package 'base'\n     Formats: text html latex example\nmake[7]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/src/library'\nmake[6]: *** No rule to make target `0', needed by `base-Ex.Rout'.  Stop.\nmake[6]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests/Examples'\nmake[5]: *** [test-Examples-Base] Error 2\nmake[5]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests/Examples'\nmake[4]: *** [test-Examples] Error 2\nmake[4]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests'\nmake[3]: *** [test-all-basics] Error 1\nmake[3]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests'\nmake[2]: *** [check] Error 2\nmake[2]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src'\nError while running the R testsuite ... exiting\n*************************************Error testing package ** r-2.6.1.p22 **\n*************************************\nsage: An error occurred while testing r-2.6.1.p22\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6279\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kcrisman\n\nI build sage-4.0.2.alpha3 on sage.math with \n\n```\nexport SAGE_CHECK=\"yes\"\n```\n\nand it failed as follows:\n\n\n```\n...\nSuccessfully installed r-2.6.1.p22\nRunning the test suite.\nmake[2]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src'\nmake[3]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests'\nmake[4]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests'\nmake[5]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests/Examples'\nmake[6]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests/Examples'\nmake[6]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests/Examples'\nmake[6]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests/Examples'\ncollecting examples for package 'base' ...\nmake[7]: Entering directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/src/library'\n >>> Building/Updating help pages for package 'base'\n     Formats: text html latex example\nmake[7]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/src/library'\nmake[6]: *** No rule to make target `0', needed by `base-Ex.Rout'.  Stop.\nmake[6]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests/Examples'\nmake[5]: *** [test-Examples-Base] Error 2\nmake[5]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests/Examples'\nmake[4]: *** [test-Examples] Error 2\nmake[4]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests'\nmake[3]: *** [test-all-basics] Error 1\nmake[3]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src/tests'\nmake[2]: *** [check] Error 2\nmake[2]: Leaving directory `/scratch/wstein/build/sage-4.0.2.alpha3/spkg/build/r-2.6.1.p22/src'\nError while running the R testsuite ... exiting\n*************************************Error testing package ** r-2.6.1.p22 **\n*************************************\nsage: An error occurred while testing r-2.6.1.p22\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6279\n\n",
     "created_at": "2009-06-14T09:21:13Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_006279.json:
     "title": "spkg-check fails for the R spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6279",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  kcrisman
+CC:  @kcrisman
 
 I build sage-4.0.2.alpha3 on sage.math with 
 
@@ -81,7 +81,7 @@ archive/issue_comments_050143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6279#issuecomment-50143",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_050144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6279#issuecomment-50144",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_050145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6279#issuecomment-50145",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_050146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6279#issuecomment-50146",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_050147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6279#issuecomment-50147",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_050148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6279#issuecomment-50148",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_050149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6279",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6279#issuecomment-50149",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

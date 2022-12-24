@@ -3,7 +3,7 @@
 archive/issues_004347.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere is a simple algorithm to massively optimize computation of generalized bernoulli numbers.  This needs to be in Sage and replace the current stupid algorithm.\n\n\n```\nAlready in sage for any character chi you can do\n\n        chi.bernoulli(k)\n\nAmusingly since the B_k (no character) are so fast, and\nthere is a relation between them and the B_{k,chi}, there\nis a 5-line algorithm (see below) for computing B_{k,chi}\nthat with the worst implementation is still way faster than\nSage's built-in chi.bernoulli(k).\n\nFrom page 656 of Cohen:\n\ndef S(n,chi):\n return sum(chi(r)*r^n for r in [0..chi.modulus()-1])\n\ndef bern(k,chi):\n m = chi.modulus()\n return sum([binomial(k,j) * bernoulli(j)*m^(j-1)*S(k-j,chi) for j\nin [0..k]])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4347\n\n",
+    "body": "Assignee: @williamstein\n\nThere is a simple algorithm to massively optimize computation of generalized bernoulli numbers.  This needs to be in Sage and replace the current stupid algorithm.\n\n\n```\nAlready in sage for any character chi you can do\n\n        chi.bernoulli(k)\n\nAmusingly since the B_k (no character) are so fast, and\nthere is a relation between them and the B_{k,chi}, there\nis a 5-line algorithm (see below) for computing B_{k,chi}\nthat with the worst implementation is still way faster than\nSage's built-in chi.bernoulli(k).\n\nFrom page 656 of Cohen:\n\ndef S(n,chi):\n return sum(chi(r)*r^n for r in [0..chi.modulus()-1])\n\ndef bern(k,chi):\n m = chi.modulus()\n return sum([binomial(k,j) * bernoulli(j)*m^(j-1)*S(k-j,chi) for j\nin [0..k]])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4347\n\n",
     "created_at": "2008-10-23T16:25:31Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004347.json:
     "title": "generalized bernoulli numbers -- massively optimize",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4347",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There is a simple algorithm to massively optimize computation of generalized bernoulli numbers.  This needs to be in Sage and replace the current stupid algorithm.
 
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4347
 archive/issue_comments_031932.json:
 ```json
 {
-    "body": "Attachment [sage-4347.patch](tarball://root/attachments/some-uuid/ticket4347/sage-4347.patch) by was created at 2008-10-24 01:44:19",
+    "body": "Attachment [sage-4347.patch](tarball://root/attachments/some-uuid/ticket4347/sage-4347.patch) by @williamstein created at 2008-10-24 01:44:19",
     "created_at": "2008-10-24T01:44:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31932",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4347.patch](tarball://root/attachments/some-uuid/ticket4347/sage-4347.patch) by was created at 2008-10-24 01:44:19
+Attachment [sage-4347.patch](tarball://root/attachments/some-uuid/ticket4347/sage-4347.patch) by @williamstein created at 2008-10-24 01:44:19
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_031933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31933",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_031934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31934",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_031935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31935",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -248,16 +248,16 @@ There was a bug in the modulus 1 case, which those doctests fortunately caught. 
 archive/issue_comments_031936.json:
 ```json
 {
-    "body": "Attachment [sage-4347-part2.patch](tarball://root/attachments/some-uuid/ticket4347/sage-4347-part2.patch) by was created at 2008-10-26 23:17:45",
+    "body": "Attachment [sage-4347-part2.patch](tarball://root/attachments/some-uuid/ticket4347/sage-4347-part2.patch) by @williamstein created at 2008-10-26 23:17:45",
     "created_at": "2008-10-26T23:17:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31936",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4347-part2.patch](tarball://root/attachments/some-uuid/ticket4347/sage-4347-part2.patch) by was created at 2008-10-26 23:17:45
+Attachment [sage-4347-part2.patch](tarball://root/attachments/some-uuid/ticket4347/sage-4347-part2.patch) by @williamstein created at 2008-10-26 23:17:45
 
 
 
@@ -271,7 +271,7 @@ archive/issue_comments_031937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31937",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009700.json:
 ```json
 {
-    "body": "Assignee: rhinton\n\nCC:  rlm ncohen\n\nKeywords: graphs, Cython, sparse\n\nThe current `sparse_graph.pxd` does not export `check_edge_label`, which is necessary to translate Python object edge labels to the internal integer indices.  Exporting this function call enables writing Cython code based on the fast sparse graph implementation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9700\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @rlmill @nathanncohen\n\nKeywords: graphs, Cython, sparse\n\nThe current `sparse_graph.pxd` does not export `check_edge_label`, which is necessary to translate Python object edge labels to the internal integer indices.  Exporting this function call enables writing Cython code based on the fast sparse graph implementation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9700\n\n",
     "created_at": "2010-08-06T19:38:52Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009700.json:
     "title": "Export check_edge_label from sparse_graph.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9700",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: rhinton
+Assignee: @rhinton
 
-CC:  rlm ncohen
+CC:  @rlmill @nathanncohen
 
 Keywords: graphs, Cython, sparse
 
@@ -42,7 +42,7 @@ archive/issue_comments_094328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9700#issuecomment-94328",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_094329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9700#issuecomment-94329",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_094330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9700#issuecomment-94330",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_094331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9700#issuecomment-94331",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_094332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9700#issuecomment-94332",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_094333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9700#issuecomment-94333",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_094334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9700#issuecomment-94334",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -165,16 +165,16 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_094335.json:
 ```json
 {
-    "body": "Attachment [trac-9700-sparse_graph-export-check_edge_label.patch](tarball://root/attachments/some-uuid/ticket9700/trac-9700-sparse_graph-export-check_edge_label.patch) by mhansen created at 2010-08-07 06:35:27\n\nDone.",
+    "body": "Attachment [trac-9700-sparse_graph-export-check_edge_label.patch](tarball://root/attachments/some-uuid/ticket9700/trac-9700-sparse_graph-export-check_edge_label.patch) by @mwhansen created at 2010-08-07 06:35:27\n\nDone.",
     "created_at": "2010-08-07T06:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9700#issuecomment-94335",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac-9700-sparse_graph-export-check_edge_label.patch](tarball://root/attachments/some-uuid/ticket9700/trac-9700-sparse_graph-export-check_edge_label.patch) by mhansen created at 2010-08-07 06:35:27
+Attachment [trac-9700-sparse_graph-export-check_edge_label.patch](tarball://root/attachments/some-uuid/ticket9700/trac-9700-sparse_graph-export-check_edge_label.patch) by @mwhansen created at 2010-08-07 06:35:27
 
 Done.
 
@@ -190,7 +190,7 @@ archive/issue_comments_094336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9700",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9700#issuecomment-94336",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006341.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan mstreng jpflori lassina fstromberg\n\nKeywords: mestre algorithm genus 2 hyperelliptic curves\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6341\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan @mstreng jpflori lassina @fredstro\n\nKeywords: mestre algorithm genus 2 hyperelliptic curves\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6341\n\n",
     "created_at": "2009-06-16T19:48:36Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_006341.json:
     "title": "implement Mestre's algorithm for constructing genus 2 hyperelliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6341",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan mstreng jpflori lassina fstromberg
+CC:  @ncalexan @mstreng jpflori lassina @fredstro
 
 Keywords: mestre algorithm genus 2 hyperelliptic curves
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6341
 archive/issue_comments_050623.json:
 ```json
 {
-    "body": "Attachment [trac_6341-mestre-extcode.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-extcode.patch) by ncalexan created at 2009-06-16 19:53:15",
+    "body": "Attachment [trac_6341-mestre-extcode.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-extcode.patch) by @ncalexan created at 2009-06-16 19:53:15",
     "created_at": "2009-06-16T19:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50623",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_6341-mestre-extcode.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-extcode.patch) by ncalexan created at 2009-06-16 19:53:15
+Attachment [trac_6341-mestre-extcode.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-extcode.patch) by @ncalexan created at 2009-06-16 19:53:15
 
 
 
@@ -54,16 +54,16 @@ Attachment [trac_6341-mestre-extcode.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_050624.json:
 ```json
 {
-    "body": "Attachment [trac_6341-mestre.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre.patch) by ncalexan created at 2009-06-16 19:55:08\n\nHere's a work in progress version.  The extcode patch\n\n* updates Denis Simon's pari qfsolve program;\n* and incorporates Paul van Wamelen's pari genus 2 package.\n\nThe main devel patch integrates everything, or at least starts to.",
+    "body": "Attachment [trac_6341-mestre.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre.patch) by @ncalexan created at 2009-06-16 19:55:08\n\nHere's a work in progress version.  The extcode patch\n\n* updates Denis Simon's pari qfsolve program;\n* and incorporates Paul van Wamelen's pari genus 2 package.\n\nThe main devel patch integrates everything, or at least starts to.",
     "created_at": "2009-06-16T19:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50624",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_6341-mestre.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre.patch) by ncalexan created at 2009-06-16 19:55:08
+Attachment [trac_6341-mestre.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre.patch) by @ncalexan created at 2009-06-16 19:55:08
 
 Here's a work in progress version.  The extcode patch
 
@@ -79,16 +79,16 @@ The main devel patch integrates everything, or at least starts to.
 archive/issue_comments_050625.json:
 ```json
 {
-    "body": "Attachment [trac_6341-mestre-without-conic.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-without-conic.patch) by mstreng created at 2009-06-18 18:31:26",
+    "body": "Attachment [trac_6341-mestre-without-conic.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-without-conic.patch) by @mstreng created at 2009-06-18 18:31:26",
     "created_at": "2009-06-18T18:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50625",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_6341-mestre-without-conic.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-without-conic.patch) by mstreng created at 2009-06-18 18:31:26
+Attachment [trac_6341-mestre-without-conic.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-without-conic.patch) by @mstreng created at 2009-06-18 18:31:26
 
 
 
@@ -97,16 +97,16 @@ Attachment [trac_6341-mestre-without-conic.patch](tarball://root/attachments/som
 archive/issue_comments_050626.json:
 ```json
 {
-    "body": "Attachment [trac_6341-mestre-extcode-without-qfsolve.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-extcode-without-qfsolve.patch) by mstreng created at 2009-06-18 18:36:09\n\nThe files \"-without...\" are the same as ncalexan's files, but with the Conic class removed and put in a separate patch at ticket 727. They still need the Conic class, but it may be better to view this as a separate enhancement.",
+    "body": "Attachment [trac_6341-mestre-extcode-without-qfsolve.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-extcode-without-qfsolve.patch) by @mstreng created at 2009-06-18 18:36:09\n\nThe files \"-without...\" are the same as ncalexan's files, but with the Conic class removed and put in a separate patch at ticket 727. They still need the Conic class, but it may be better to view this as a separate enhancement.",
     "created_at": "2009-06-18T18:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50626",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_6341-mestre-extcode-without-qfsolve.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-extcode-without-qfsolve.patch) by mstreng created at 2009-06-18 18:36:09
+Attachment [trac_6341-mestre-extcode-without-qfsolve.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-extcode-without-qfsolve.patch) by @mstreng created at 2009-06-18 18:36:09
 
 The files "-without..." are the same as ncalexan's files, but with the Conic class removed and put in a separate patch at ticket 727. They still need the Conic class, but it may be better to view this as a separate enhancement.
 
@@ -122,7 +122,7 @@ archive/issue_comments_050627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50627",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_050628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50628",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_050629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50629",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_050632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50632",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_050633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50633",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_050637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50637",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_050638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50638",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -339,16 +339,16 @@ I'm reviewing and writing a reviewer's patch. Looks very good, but some small ch
 archive/issue_comments_050639.json:
 ```json
 {
-    "body": "Attachment [6341_combined.patch](tarball://root/attachments/some-uuid/ticket6341/6341_combined.patch) by mstreng created at 2011-12-27 10:16:36",
+    "body": "Attachment [6341_combined.patch](tarball://root/attachments/some-uuid/ticket6341/6341_combined.patch) by @mstreng created at 2011-12-27 10:16:36",
     "created_at": "2011-12-27T10:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50639",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [6341_combined.patch](tarball://root/attachments/some-uuid/ticket6341/6341_combined.patch) by mstreng created at 2011-12-27 10:16:36
+Attachment [6341_combined.patch](tarball://root/attachments/some-uuid/ticket6341/6341_combined.patch) by @mstreng created at 2011-12-27 10:16:36
 
 
 
@@ -362,7 +362,7 @@ archive/issue_comments_050640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50640",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_050641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50641",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_050642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50642",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -421,16 +421,16 @@ With a view towards the future (number fields), it may be a good idea to move th
 archive/issue_comments_050643.json:
 ```json
 {
-    "body": "Attachment [mestre.patch](tarball://root/attachments/some-uuid/ticket6341/mestre.patch) by mstreng created at 2012-03-12 10:26:09\n\nversion under construction, apply on top of previous patch, supposed to work for number fields, requires #11455",
+    "body": "Attachment [mestre.patch](tarball://root/attachments/some-uuid/ticket6341/mestre.patch) by @mstreng created at 2012-03-12 10:26:09\n\nversion under construction, apply on top of previous patch, supposed to work for number fields, requires #11455",
     "created_at": "2012-03-12T10:26:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50643",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [mestre.patch](tarball://root/attachments/some-uuid/ticket6341/mestre.patch) by mstreng created at 2012-03-12 10:26:09
+Attachment [mestre.patch](tarball://root/attachments/some-uuid/ticket6341/mestre.patch) by @mstreng created at 2012-03-12 10:26:09
 
 version under construction, apply on top of previous patch, supposed to work for number fields, requires #11455
 
@@ -441,16 +441,16 @@ version under construction, apply on top of previous patch, supposed to work for
 archive/issue_comments_050644.json:
 ```json
 {
-    "body": "Attachment [6341-transformations.patch](tarball://root/attachments/some-uuid/ticket6341/6341-transformations.patch) by mstreng created at 2012-04-07 14:28:59\n\non top of previous",
+    "body": "Attachment [6341-transformations.patch](tarball://root/attachments/some-uuid/ticket6341/6341-transformations.patch) by @mstreng created at 2012-04-07 14:28:59\n\non top of previous",
     "created_at": "2012-04-07T14:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50644",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [6341-transformations.patch](tarball://root/attachments/some-uuid/ticket6341/6341-transformations.patch) by mstreng created at 2012-04-07 14:28:59
+Attachment [6341-transformations.patch](tarball://root/attachments/some-uuid/ticket6341/6341-transformations.patch) by @mstreng created at 2012-04-07 14:28:59
 
 on top of previous
 
@@ -461,16 +461,16 @@ on top of previous
 archive/issue_comments_050645.json:
 ```json
 {
-    "body": "Attachment [6341-lifts.patch](tarball://root/attachments/some-uuid/ticket6341/6341-lifts.patch) by mstreng created at 2013-03-20 22:41:16",
+    "body": "Attachment [6341-lifts.patch](tarball://root/attachments/some-uuid/ticket6341/6341-lifts.patch) by @mstreng created at 2013-03-20 22:41:16",
     "created_at": "2013-03-20T22:41:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50645",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [6341-lifts.patch](tarball://root/attachments/some-uuid/ticket6341/6341-lifts.patch) by mstreng created at 2013-03-20 22:41:16
+Attachment [6341-lifts.patch](tarball://root/attachments/some-uuid/ticket6341/6341-lifts.patch) by @mstreng created at 2013-03-20 22:41:16
 
 
 
@@ -479,16 +479,16 @@ Attachment [6341-lifts.patch](tarball://root/attachments/some-uuid/ticket6341/63
 archive/issue_comments_050646.json:
 ```json
 {
-    "body": "Attachment [6341-some_fixes.patch](tarball://root/attachments/some-uuid/ticket6341/6341-some_fixes.patch) by mstreng created at 2013-03-20 23:19:23",
+    "body": "Attachment [6341-some_fixes.patch](tarball://root/attachments/some-uuid/ticket6341/6341-some_fixes.patch) by @mstreng created at 2013-03-20 23:19:23",
     "created_at": "2013-03-20T23:19:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50646",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [6341-some_fixes.patch](tarball://root/attachments/some-uuid/ticket6341/6341-some_fixes.patch) by mstreng created at 2013-03-20 23:19:23
+Attachment [6341-some_fixes.patch](tarball://root/attachments/some-uuid/ticket6341/6341-some_fixes.patch) by @mstreng created at 2013-03-20 23:19:23
 
 
 
@@ -497,16 +497,16 @@ Attachment [6341-some_fixes.patch](tarball://root/attachments/some-uuid/ticket63
 archive/issue_comments_050647.json:
 ```json
 {
-    "body": "Attachment [6341-mestre-only.patch](tarball://root/attachments/some-uuid/ticket6341/6341-mestre-only.patch) by mstreng created at 2013-06-17 13:06:23\n\nonly Mestre's algorithm",
+    "body": "Attachment [6341-mestre-only.patch](tarball://root/attachments/some-uuid/ticket6341/6341-mestre-only.patch) by @mstreng created at 2013-06-17 13:06:23\n\nonly Mestre's algorithm",
     "created_at": "2013-06-17T13:06:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50647",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [6341-mestre-only.patch](tarball://root/attachments/some-uuid/ticket6341/6341-mestre-only.patch) by mstreng created at 2013-06-17 13:06:23
+Attachment [6341-mestre-only.patch](tarball://root/attachments/some-uuid/ticket6341/6341-mestre-only.patch) by @mstreng created at 2013-06-17 13:06:23
 
 only Mestre's algorithm
 
@@ -522,7 +522,7 @@ archive/issue_comments_050648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50648",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_050649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50649",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_050650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50650",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -575,16 +575,16 @@ apply 6341-mestre-only.patch trac_6341-mestre-only_cleanup.patch
 archive/issue_comments_050651.json:
 ```json
 {
-    "body": "Attachment [trac_6341-mestre-only_cleanup.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-only_cleanup.patch) by chapoton created at 2013-07-17 19:55:55",
+    "body": "Attachment [trac_6341-mestre-only_cleanup.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-only_cleanup.patch) by @fchapoton created at 2013-07-17 19:55:55",
     "created_at": "2013-07-17T19:55:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50651",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_6341-mestre-only_cleanup.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-only_cleanup.patch) by chapoton created at 2013-07-17 19:55:55
+Attachment [trac_6341-mestre-only_cleanup.patch](tarball://root/attachments/some-uuid/ticket6341/trac_6341-mestre-only_cleanup.patch) by @fchapoton created at 2013-07-17 19:55:55
 
 
 
@@ -598,7 +598,7 @@ archive/issue_comments_050652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50652",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -652,7 +652,7 @@ archive/issue_comments_050655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50655",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -670,7 +670,7 @@ archive/issue_comments_050656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50656",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -688,7 +688,7 @@ archive/issue_comments_050657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50657",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -701,16 +701,16 @@ apply after the other three
 archive/issue_comments_050658.json:
 ```json
 {
-    "body": "Attachment [6341-more-corrections.2.patch](tarball://root/attachments/some-uuid/ticket6341/6341-more-corrections.2.patch) by mstreng created at 2013-07-24 20:16:34",
+    "body": "Attachment [6341-more-corrections.2.patch](tarball://root/attachments/some-uuid/ticket6341/6341-more-corrections.2.patch) by @mstreng created at 2013-07-24 20:16:34",
     "created_at": "2013-07-24T20:16:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50658",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [6341-more-corrections.2.patch](tarball://root/attachments/some-uuid/ticket6341/6341-more-corrections.2.patch) by mstreng created at 2013-07-24 20:16:34
+Attachment [6341-more-corrections.2.patch](tarball://root/attachments/some-uuid/ticket6341/6341-more-corrections.2.patch) by @mstreng created at 2013-07-24 20:16:34
 
 
 
@@ -724,7 +724,7 @@ archive/issue_comments_050659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50659",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -737,16 +737,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_050660.json:
 ```json
 {
-    "body": "Attachment [6341-more-corrections.3.patch](tarball://root/attachments/some-uuid/ticket6341/6341-more-corrections.3.patch) by mstreng created at 2013-07-25 06:44:24\n\n(testing now)",
+    "body": "Attachment [6341-more-corrections.3.patch](tarball://root/attachments/some-uuid/ticket6341/6341-more-corrections.3.patch) by @mstreng created at 2013-07-25 06:44:24\n\n(testing now)",
     "created_at": "2013-07-25T06:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50660",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [6341-more-corrections.3.patch](tarball://root/attachments/some-uuid/ticket6341/6341-more-corrections.3.patch) by mstreng created at 2013-07-25 06:44:24
+Attachment [6341-more-corrections.3.patch](tarball://root/attachments/some-uuid/ticket6341/6341-more-corrections.3.patch) by @mstreng created at 2013-07-25 06:44:24
 
 (testing now)
 
@@ -762,7 +762,7 @@ archive/issue_comments_050661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50661",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -781,7 +781,7 @@ archive/issue_comments_050662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50662",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -799,7 +799,7 @@ archive/issue_comments_050663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50663",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -817,7 +817,7 @@ archive/issue_comments_050664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50664",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -835,7 +835,7 @@ archive/issue_comments_050665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50665",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -848,16 +848,16 @@ ascii version of what was uploaded earlier this week
 archive/issue_comments_050666.json:
 ```json
 {
-    "body": "Attachment [6341.patch](tarball://root/attachments/some-uuid/ticket6341/6341.patch) by chapoton created at 2013-09-15 19:52:55\n\napply only 6341.patch",
+    "body": "Attachment [6341.patch](tarball://root/attachments/some-uuid/ticket6341/6341.patch) by @fchapoton created at 2013-09-15 19:52:55\n\napply only 6341.patch",
     "created_at": "2013-09-15T19:52:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50666",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [6341.patch](tarball://root/attachments/some-uuid/ticket6341/6341.patch) by chapoton created at 2013-09-15 19:52:55
+Attachment [6341.patch](tarball://root/attachments/some-uuid/ticket6341/6341.patch) by @fchapoton created at 2013-09-15 19:52:55
 
 apply only 6341.patch
 
@@ -873,7 +873,7 @@ archive/issue_comments_050667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50667",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -891,7 +891,7 @@ archive/issue_comments_050668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50668",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -909,7 +909,7 @@ archive/issue_comments_050669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6341#issuecomment-50669",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

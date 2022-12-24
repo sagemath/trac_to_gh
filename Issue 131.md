@@ -3,7 +3,7 @@
 archive/issues_000131.json:
 ```json
 {
-    "body": "Assignee: was\n\nI will not be happy until every single method has a doctest!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/131\n\n",
+    "body": "Assignee: @williamstein\n\nI will not be happy until every single method has a doctest!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/131\n\n",
     "created_at": "2006-10-15T06:00:10Z",
     "labels": [
         "user interface",
@@ -13,10 +13,10 @@ archive/issues_000131.json:
     "title": "doctests -- EVERY function/method in the SAGE library *must* have a doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/131",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I will not be happy until every single method has a doctest!
 
@@ -37,7 +37,7 @@ archive/issue_comments_000613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/131#issuecomment-613",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_000614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/131#issuecomment-614",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_000615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/131",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/131#issuecomment-615",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

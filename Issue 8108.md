@@ -3,7 +3,7 @@
 archive/issues_008108.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  mvngu leif\n\nNewcomers to Sage development could use more comprehensive guidance on getting started.\n\nA rough draft of possible new content is attached to this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8108\n\n",
+    "body": "Assignee: mvngu\n\nCC:  mvngu @nexttime\n\nNewcomers to Sage development could use more comprehensive guidance on getting started.\n\nA rough draft of possible new content is attached to this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8108\n\n",
     "created_at": "2010-01-28T05:46:50Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008108.json:
     "title": "Expand the Sage Developer Guide for newcomers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8108",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: mvngu
 
-CC:  mvngu leif
+CC:  mvngu @nexttime
 
 Newcomers to Sage development could use more comprehensive guidance on getting started.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8108
 archive/issue_comments_071159.json:
 ```json
 {
-    "body": "Attachment [how-to-develop.txt](tarball://root/attachments/some-uuid/ticket8108/how-to-develop.txt) by rbeezer created at 2010-01-28 05:47:10",
+    "body": "Attachment [how-to-develop.txt](tarball://root/attachments/some-uuid/ticket8108/how-to-develop.txt) by @rbeezer created at 2010-01-28 05:47:10",
     "created_at": "2010-01-28T05:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8108#issuecomment-71159",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [how-to-develop.txt](tarball://root/attachments/some-uuid/ticket8108/how-to-develop.txt) by rbeezer created at 2010-01-28 05:47:10
+Attachment [how-to-develop.txt](tarball://root/attachments/some-uuid/ticket8108/how-to-develop.txt) by @rbeezer created at 2010-01-28 05:47:10
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_071163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8108#issuecomment-71163",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_071166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8108#issuecomment-71166",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_071167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8108#issuecomment-71167",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -200,16 +200,16 @@ apply on top of other patch
 archive/issue_comments_071168.json:
 ```json
 {
-    "body": "Attachment [trac_8108-typos.patch](tarball://root/attachments/some-uuid/ticket8108/trac_8108-typos.patch) by rbeezer created at 2010-02-01 18:51:13\n\nJohn - thanks for the fixes (and the once-over).\n\nJohn's fixes look good to me.  Minh handled the formatting (and lots more), so hopefully this will pass for a review of John's changes.  ;-)\n\nRob",
+    "body": "Attachment [trac_8108-typos.patch](tarball://root/attachments/some-uuid/ticket8108/trac_8108-typos.patch) by @rbeezer created at 2010-02-01 18:51:13\n\nJohn - thanks for the fixes (and the once-over).\n\nJohn's fixes look good to me.  Minh handled the formatting (and lots more), so hopefully this will pass for a review of John's changes.  ;-)\n\nRob",
     "created_at": "2010-02-01T18:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8108#issuecomment-71168",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8108-typos.patch](tarball://root/attachments/some-uuid/ticket8108/trac_8108-typos.patch) by rbeezer created at 2010-02-01 18:51:13
+Attachment [trac_8108-typos.patch](tarball://root/attachments/some-uuid/ticket8108/trac_8108-typos.patch) by @rbeezer created at 2010-02-01 18:51:13
 
 John - thanks for the fixes (and the once-over).
 
@@ -229,7 +229,7 @@ archive/issue_comments_071169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8108#issuecomment-71169",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_071174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8108#issuecomment-71174",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

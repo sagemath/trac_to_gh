@@ -14,7 +14,7 @@ archive/issues_004660.json:
     "title": "mark  inline fortran and inline cython examples optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4660",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4660
 archive/issue_comments_035096.json:
 ```json
 {
-    "body": "Attachment [trac_4660_sage.patch](tarball://root/attachments/some-uuid/ticket4660/trac_4660_sage.patch) by was created at 2008-11-30 08:01:34",
+    "body": "Attachment [trac_4660_sage.patch](tarball://root/attachments/some-uuid/ticket4660/trac_4660_sage.patch) by @williamstein created at 2008-11-30 08:01:34",
     "created_at": "2008-11-30T08:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4660#issuecomment-35096",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4660_sage.patch](tarball://root/attachments/some-uuid/ticket4660/trac_4660_sage.patch) by was created at 2008-11-30 08:01:34
+Attachment [trac_4660_sage.patch](tarball://root/attachments/some-uuid/ticket4660/trac_4660_sage.patch) by @williamstein created at 2008-11-30 08:01:34
 
 
 

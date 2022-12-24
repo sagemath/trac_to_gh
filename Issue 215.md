@@ -3,7 +3,7 @@
 archive/issues_000215.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: pari, comparison\n\nI'm not sure what the correct outcome of this should be:\n\n```\npari(2.5) > None\n```\n\nbut it shouldn't crash SAGE, which is what it does now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/215\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: pari, comparison\n\nI'm not sure what the correct outcome of this should be:\n\n```\npari(2.5) > None\n```\n\nbut it shouldn't crash SAGE, which is what it does now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/215\n\n",
     "created_at": "2007-01-24T23:49:19Z",
     "labels": [
         "interfaces",
@@ -13,10 +13,10 @@ archive/issues_000215.json:
     "title": "Pari comparison with None crashes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/215",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: pari, comparison
 
@@ -44,7 +44,7 @@ archive/issue_comments_000960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/215#issuecomment-960",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_000961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/215",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/215#issuecomment-961",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003615.json:
     "title": "update constructions document for solving linear equations.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3615",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -55,7 +55,7 @@ archive/issue_comments_025519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3615#issuecomment-25519",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

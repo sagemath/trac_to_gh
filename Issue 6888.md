@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6888
 archive/issue_comments_056928.json:
 ```json
 {
-    "body": "Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket6888/sage-env.patch) by mhansen created at 2009-09-07 23:03:49",
+    "body": "Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket6888/sage-env.patch) by @mwhansen created at 2009-09-07 23:03:49",
     "created_at": "2009-09-07T23:03:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6888#issuecomment-56928",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket6888/sage-env.patch) by mhansen created at 2009-09-07 23:03:49
+Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket6888/sage-env.patch) by @mwhansen created at 2009-09-07 23:03:49
 
 
 
@@ -72,7 +72,7 @@ archive/issue_comments_056929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6888#issuecomment-56929",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_056930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6888#issuecomment-56930",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_056931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6888#issuecomment-56931",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

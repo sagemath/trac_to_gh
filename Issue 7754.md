@@ -3,7 +3,7 @@
 archive/issues_007754.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  bump\n\nKeywords: Weyl groups\n\n- faster hash method calling the hash of the underlying matrix\n   (which is set as immutable for that purpose)\n  - new __eq__ method\n  - action on the weight lattice realization:\n   optimization of the matrix multiplication\n\nIssue created by migration from https://trac.sagemath.org/ticket/7754\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  @dwbump\n\nKeywords: Weyl groups\n\n- faster hash method calling the hash of the underlying matrix\n   (which is set as immutable for that purpose)\n  - new __eq__ method\n  - action on the weight lattice realization:\n   optimization of the matrix multiplication\n\nIssue created by migration from https://trac.sagemath.org/ticket/7754\n\n",
     "created_at": "2009-12-23T23:13:29Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_007754.json:
     "title": "Weyl group optimizations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7754",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  bump
+CC:  @dwbump
 
 Keywords: Weyl groups
 
@@ -45,7 +45,7 @@ archive/issue_comments_066779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7754#issuecomment-66779",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -58,16 +58,16 @@ Changing status from new to needs_review.
 archive/issue_comments_066780.json:
 ```json
 {
-    "body": "Attachment [trac_7754_weyl_group_optimizations-nt.patch](tarball://root/attachments/some-uuid/ticket7754/trac_7754_weyl_group_optimizations-nt.patch) by nthiery created at 2009-12-23 23:15:15",
+    "body": "Attachment [trac_7754_weyl_group_optimizations-nt.patch](tarball://root/attachments/some-uuid/ticket7754/trac_7754_weyl_group_optimizations-nt.patch) by @nthiery created at 2009-12-23 23:15:15",
     "created_at": "2009-12-23T23:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7754#issuecomment-66780",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7754_weyl_group_optimizations-nt.patch](tarball://root/attachments/some-uuid/ticket7754/trac_7754_weyl_group_optimizations-nt.patch) by nthiery created at 2009-12-23 23:15:15
+Attachment [trac_7754_weyl_group_optimizations-nt.patch](tarball://root/attachments/some-uuid/ticket7754/trac_7754_weyl_group_optimizations-nt.patch) by @nthiery created at 2009-12-23 23:15:15
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_066781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7754#issuecomment-66781",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_066782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7754#issuecomment-66782",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_066783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7754#issuecomment-66783",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_066784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7754#issuecomment-66784",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_066786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7754#issuecomment-66786",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

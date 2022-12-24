@@ -3,7 +3,7 @@
 archive/issues_005453.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  simonking\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5453\n\n",
+    "body": "Assignee: @malb\n\nCC:  simonking\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5453\n\n",
     "created_at": "2009-03-07T19:12:56Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_005453.json:
     "title": "[with patch, needs review] Create a ring for working with polynomials in countably infinitely many variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5453",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  simonking
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5453
 archive/issue_comments_042224.json:
 ```json
 {
-    "body": "Attachment [trac_5453.patch](tarball://root/attachments/some-uuid/ticket5453/trac_5453.patch) by mhansen created at 2009-03-07 19:14:08",
+    "body": "Attachment [trac_5453.patch](tarball://root/attachments/some-uuid/ticket5453/trac_5453.patch) by @mwhansen created at 2009-03-07 19:14:08",
     "created_at": "2009-03-07T19:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42224",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5453.patch](tarball://root/attachments/some-uuid/ticket5453/trac_5453.patch) by mhansen created at 2009-03-07 19:14:08
+Attachment [trac_5453.patch](tarball://root/attachments/some-uuid/ticket5453/trac_5453.patch) by @mwhansen created at 2009-03-07 19:14:08
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_042225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42225",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_042226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42226",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -136,16 +136,16 @@ It should be `p = x[1]`, to that in the loop `p` becomes `x[2]`, `x[4]`, `x[8]`,
 archive/issue_comments_042227.json:
 ```json
 {
-    "body": "Changing assignee from malb to mhansen.",
+    "body": "Changing assignee from @malb to @mwhansen.",
     "created_at": "2009-03-07T21:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42227",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from malb to mhansen.
+Changing assignee from @malb to @mwhansen.
 
 
 
@@ -159,7 +159,7 @@ archive/issue_comments_042228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42228",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_042229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42229",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_042230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42230",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_042231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42231",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_042232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42232",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_042233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42233",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_042234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42234",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_042235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42235",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_042236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42236",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_042237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42237",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_042238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42238",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_042239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42239",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -635,7 +635,7 @@ archive/issue_comments_042240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42240",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -688,7 +688,7 @@ archive/issue_comments_042241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42241",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -701,16 +701,16 @@ This patch removes some print commands that I forgot to remove after debugging. 
 archive/issue_comments_042242.json:
 ```json
 {
-    "body": "Attachment [symmetric_polynomial_update.patch](tarball://root/attachments/some-uuid/ticket5453/symmetric_polynomial_update.patch) by SimonKing created at 2009-03-13 10:44:55\n\nI forgot one change w.r.t. your implementation: Division is not implemented except for scalar divisors.\n\nContinuing the example from above:\n\n```\nsage: p/X(3)\n1/3*y2^3*x10 + 2/3*y3*x1\nsage: p/p\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: Fraction Fields of Symmetric Polynomial Rings are not implemented\n```\n\n\nCheers,\n    Simon",
+    "body": "Attachment [symmetric_polynomial_update.patch](tarball://root/attachments/some-uuid/ticket5453/symmetric_polynomial_update.patch) by @simon-king-jena created at 2009-03-13 10:44:55\n\nI forgot one change w.r.t. your implementation: Division is not implemented except for scalar divisors.\n\nContinuing the example from above:\n\n```\nsage: p/X(3)\n1/3*y2^3*x10 + 2/3*y3*x1\nsage: p/p\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: Fraction Fields of Symmetric Polynomial Rings are not implemented\n```\n\n\nCheers,\n    Simon",
     "created_at": "2009-03-13T10:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42242",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [symmetric_polynomial_update.patch](tarball://root/attachments/some-uuid/ticket5453/symmetric_polynomial_update.patch) by SimonKing created at 2009-03-13 10:44:55
+Attachment [symmetric_polynomial_update.patch](tarball://root/attachments/some-uuid/ticket5453/symmetric_polynomial_update.patch) by @simon-king-jena created at 2009-03-13 10:44:55
 
 I forgot one change w.r.t. your implementation: Division is not implemented except for scalar divisors.
 
@@ -741,7 +741,7 @@ archive/issue_comments_042243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42243",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -759,16 +759,16 @@ Cheers,
 archive/issue_comments_042244.json:
 ```json
 {
-    "body": "Attachment [symmetric_polynomial.patch](tarball://root/attachments/some-uuid/ticket5453/symmetric_polynomial.patch) by SimonKing created at 2009-03-13 20:09:45\n\nTo be applied after mhansen's patch. Replaces the other 'symmetric polynomial' patches",
+    "body": "Attachment [symmetric_polynomial.patch](tarball://root/attachments/some-uuid/ticket5453/symmetric_polynomial.patch) by @simon-king-jena created at 2009-03-13 20:09:45\n\nTo be applied after mhansen's patch. Replaces the other 'symmetric polynomial' patches",
     "created_at": "2009-03-13T20:09:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42244",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [symmetric_polynomial.patch](tarball://root/attachments/some-uuid/ticket5453/symmetric_polynomial.patch) by SimonKing created at 2009-03-13 20:09:45
+Attachment [symmetric_polynomial.patch](tarball://root/attachments/some-uuid/ticket5453/symmetric_polynomial.patch) by @simon-king-jena created at 2009-03-13 20:09:45
 
 To be applied after mhansen's patch. Replaces the other 'symmetric polynomial' patches
 
@@ -784,7 +784,7 @@ archive/issue_comments_042245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42245",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -828,7 +828,7 @@ archive/issue_comments_042246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42246",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -877,7 +877,7 @@ archive/issue_comments_042247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42247",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -895,7 +895,7 @@ archive/issue_comments_042248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42248",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -918,7 +918,7 @@ archive/issue_comments_042249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42249",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -945,7 +945,7 @@ archive/issue_comments_042250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42250",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -980,7 +980,7 @@ archive/issue_comments_042251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42251",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1003,7 +1003,7 @@ archive/issue_comments_042252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42252",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1024,7 +1024,7 @@ archive/issue_comments_042253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42253",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1050,7 +1050,7 @@ archive/issue_comments_042254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42254",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -1076,7 +1076,7 @@ archive/issue_comments_042255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42255",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1109,7 +1109,7 @@ archive/issue_comments_042256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42256",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1141,7 +1141,7 @@ archive/issue_comments_042257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42257",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1179,7 +1179,7 @@ archive/issue_comments_042258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42258",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -1203,7 +1203,7 @@ archive/issue_comments_042259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42259",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1221,7 +1221,7 @@ archive/issue_comments_042260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5453#issuecomment-42260",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

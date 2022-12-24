@@ -3,7 +3,7 @@
 archive/issues_008206.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  mvngu roed\n\nThe command  hg qnew -f would be good to include in the discussion on Mercurial queues (and replace some uncertainty).\n\nAs well as a mention of the record extensions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8206\n\n",
+    "body": "Assignee: mvngu\n\nCC:  mvngu @roed314\n\nThe command  hg qnew -f would be good to include in the discussion on Mercurial queues (and replace some uncertainty).\n\nAs well as a mention of the record extensions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8206\n\n",
     "created_at": "2010-02-07T06:25:18Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008206.json:
     "title": "Add information on hg qnew to Developer Walk-through",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8206",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: mvngu
 
-CC:  mvngu roed
+CC:  mvngu @roed314
 
 The command  hg qnew -f would be good to include in the discussion on Mercurial queues (and replace some uncertainty).
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8206
 archive/issue_comments_072372.json:
 ```json
 {
-    "body": "Attachment [trac_8206_developer-doc.patch](tarball://root/attachments/some-uuid/ticket8206/trac_8206_developer-doc.patch) by rbeezer created at 2010-02-07 06:35:47",
+    "body": "Attachment [trac_8206_developer-doc.patch](tarball://root/attachments/some-uuid/ticket8206/trac_8206_developer-doc.patch) by @rbeezer created at 2010-02-07 06:35:47",
     "created_at": "2010-02-07T06:35:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72372",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8206_developer-doc.patch](tarball://root/attachments/some-uuid/ticket8206/trac_8206_developer-doc.patch) by rbeezer created at 2010-02-07 06:35:47
+Attachment [trac_8206_developer-doc.patch](tarball://root/attachments/some-uuid/ticket8206/trac_8206_developer-doc.patch) by @rbeezer created at 2010-02-07 06:35:47
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_072373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72373",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_072377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72377",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

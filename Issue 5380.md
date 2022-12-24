@@ -3,7 +3,7 @@
 archive/issues_005380.json:
 ```json
 {
-    "body": "Assignee: schilly\n\nCC:  schilly\n\nKeywords: devmap\n\nThe development map (devmap) at\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\n\ncurrently supports search of a developer's contributions by her/his real name. For most developers, their real names diff from their trac usernames. The devmap should support search of contributions by trac usernames as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5380\n\n",
+    "body": "Assignee: @haraldschilly\n\nCC:  @haraldschilly\n\nKeywords: devmap\n\nThe development map (devmap) at\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\n\ncurrently supports search of a developer's contributions by her/his real name. For most developers, their real names diff from their trac usernames. The devmap should support search of contributions by trac usernames as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5380\n\n",
     "created_at": "2009-02-26T03:15:52Z",
     "labels": [
         "website/wiki",
@@ -17,9 +17,9 @@ archive/issues_005380.json:
     "user": "mvngu"
 }
 ```
-Assignee: schilly
+Assignee: @haraldschilly
 
-CC:  schilly
+CC:  @haraldschilly
 
 Keywords: devmap
 
@@ -167,7 +167,7 @@ archive/issue_comments_041432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41432",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_041435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41435",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_041440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5380",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41440",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 

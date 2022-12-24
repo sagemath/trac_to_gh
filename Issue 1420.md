@@ -14,7 +14,7 @@ archive/issues_001420.json:
     "title": "[trivial to fix!] documentation typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1420",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -52,7 +52,7 @@ archive/issue_comments_009160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1420#issuecomment-9160",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -65,16 +65,16 @@ Changing status from new to assigned.
 archive/issue_comments_009161.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2007-12-07T21:51:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1420#issuecomment-9161",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_009162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1420#issuecomment-9162",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

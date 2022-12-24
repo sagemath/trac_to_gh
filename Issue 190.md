@@ -3,7 +3,7 @@
 archive/issues_000190.json:
 ```json
 {
-    "body": "Assignee: was\n\nBug reported by Andrey Novoseltsev\n\nThis is disturbing.\n\n\n```\na=matrix(2,2,[1,2,3,4]); a\n///\n[1 2]\n[3 4]\n```\n\n\n\n```\na.row(1.5)\n///\n(3, 4)\n```\n\n\n\n```\na[1.5]\n///\n(3, 4)\n```\n\n\n\n```\na[1]\n///\n(3, 4)\n```\n\n\n\n```\na[1.4, 0.8]\n///\n3\n```\n\n\n\n```\na[1,0]\n///\n3\n```\n\n\nThe unfortunate thing is that SageX converts things to Py_ssize_t without\nany type checking.  Maybe this is way faster ...  Anyway, it should be possible\nto instead call whatever C library function __getitem__ uses, which would then\nhave the right behavior. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/190\n\n",
+    "body": "Assignee: @williamstein\n\nBug reported by Andrey Novoseltsev\n\nThis is disturbing.\n\n\n```\na=matrix(2,2,[1,2,3,4]); a\n///\n[1 2]\n[3 4]\n```\n\n\n\n```\na.row(1.5)\n///\n(3, 4)\n```\n\n\n\n```\na[1.5]\n///\n(3, 4)\n```\n\n\n\n```\na[1]\n///\n(3, 4)\n```\n\n\n\n```\na[1.4, 0.8]\n///\n3\n```\n\n\n\n```\na[1,0]\n///\n3\n```\n\n\nThe unfortunate thing is that SageX converts things to Py_ssize_t without\nany type checking.  Maybe this is way faster ...  Anyway, it should be possible\nto instead call whatever C library function __getitem__ uses, which would then\nhave the right behavior. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/190\n\n",
     "created_at": "2007-01-13T09:05:16Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000190.json:
     "title": "fractional matrix indices are allowed ?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/190",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Bug reported by Andrey Novoseltsev
 
@@ -95,7 +95,7 @@ archive/issue_comments_000858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-858",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_000859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-859",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_000863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-863",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_000864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-864",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_000865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-865",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

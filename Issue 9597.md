@@ -3,7 +3,7 @@
 archive/issues_009597.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mhansen\n\nFrom `#sage-devel`:\n\n```\n<peter-}> Has anyone looked at the top line of pari-2.3.5.p1/spkg-install lately?\n```\n\n\n```sh\nleif@portland:~/Sage/spkgs/pari-2.3.5.p1$ hg diff -r18 -r20 spkg-install | head\ndiff -r d622871cde08 -r eb10b79a288a spkg-install\n--- a/spkg-install\tFri Mar 05 22:12:34 2010 -0800\n+++ b/spkg-install\tTue Apr 27 09:04:49 2010 -0700\n@@ -1,4 +1,4 @@\n-#!/bin/sh\n+B1;2000;0c#!/bin/sh\n ###########################################\n ## PARI\n ###########################################\n@@ -163,7 +163,11 @@\nleif@portland:~/Sage/spkgs/pari-2.3.5.p1$ hg blame spkg-install | head -n 1  \n20: B1;2000;0c#!/bin/sh\n```\n\n(This has been introduced with #8782, which was merged into Sage 4.4.3.alpha0.)\n \nThe first line should be\n\n```sh\n#!/usr/bin/env bash\n```\n\nanyway. Other clean-ups should perhaps be on another ticket, s.t. this gets fixed immediately before someone runs into problems. \n\nThe behavior is somewhat unpredictable and depends on the user's system configuration, the following is **just luck**:\n\n```\n...\n****************************************************\n./spkg-install: line 1: B1: command not found\n./spkg-install: line 1: 2000: command not found\n./spkg-install: line 1: 0c#!/bin/sh: No such file or directory\nConfiguring pari-2.3.5 (STABLE)\n...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9597\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nFrom `#sage-devel`:\n\n```\n<peter-}> Has anyone looked at the top line of pari-2.3.5.p1/spkg-install lately?\n```\n\n\n```sh\nleif@portland:~/Sage/spkgs/pari-2.3.5.p1$ hg diff -r18 -r20 spkg-install | head\ndiff -r d622871cde08 -r eb10b79a288a spkg-install\n--- a/spkg-install\tFri Mar 05 22:12:34 2010 -0800\n+++ b/spkg-install\tTue Apr 27 09:04:49 2010 -0700\n@@ -1,4 +1,4 @@\n-#!/bin/sh\n+B1;2000;0c#!/bin/sh\n ###########################################\n ## PARI\n ###########################################\n@@ -163,7 +163,11 @@\nleif@portland:~/Sage/spkgs/pari-2.3.5.p1$ hg blame spkg-install | head -n 1  \n20: B1;2000;0c#!/bin/sh\n```\n\n(This has been introduced with #8782, which was merged into Sage 4.4.3.alpha0.)\n \nThe first line should be\n\n```sh\n#!/usr/bin/env bash\n```\n\nanyway. Other clean-ups should perhaps be on another ticket, s.t. this gets fixed immediately before someone runs into problems. \n\nThe behavior is somewhat unpredictable and depends on the user's system configuration, the following is **just luck**:\n\n```\n...\n****************************************************\n./spkg-install: line 1: B1: command not found\n./spkg-install: line 1: 2000: command not found\n./spkg-install: line 1: 0c#!/bin/sh: No such file or directory\nConfiguring pari-2.3.5 (STABLE)\n...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9597\n\n",
     "created_at": "2010-07-25T20:55:00Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009597.json:
     "title": "Crap in pari-2.3.5.p1's spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9597",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 Assignee: tbd
 
-CC:  mhansen
+CC:  @mwhansen
 
 From `#sage-devel`:
 
@@ -83,7 +83,7 @@ archive/issue_comments_092845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9597#issuecomment-92845",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_092846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9597#issuecomment-92846",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_092847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9597#issuecomment-92847",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -134,16 +134,16 @@ Fix first line of `spkg-install`.  Also, use `/usr/bin/env bash`.
 archive/issue_comments_092848.json:
 ```json
 {
-    "body": "Attachment [trac_9597-pari_hash_bang.patch](tarball://root/attachments/some-uuid/ticket9597/trac_9597-pari_hash_bang.patch) by mpatel created at 2010-07-26 07:33:47",
+    "body": "Attachment [trac_9597-pari_hash_bang.patch](tarball://root/attachments/some-uuid/ticket9597/trac_9597-pari_hash_bang.patch) by @qed777 created at 2010-07-26 07:33:47",
     "created_at": "2010-07-26T07:33:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9597#issuecomment-92848",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9597-pari_hash_bang.patch](tarball://root/attachments/some-uuid/ticket9597/trac_9597-pari_hash_bang.patch) by mpatel created at 2010-07-26 07:33:47
+Attachment [trac_9597-pari_hash_bang.patch](tarball://root/attachments/some-uuid/ticket9597/trac_9597-pari_hash_bang.patch) by @qed777 created at 2010-07-26 07:33:47
 
 
 
@@ -157,7 +157,7 @@ archive/issue_comments_092849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9597#issuecomment-92849",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_092850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9597#issuecomment-92850",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_092851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9597#issuecomment-92851",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_092852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9597#issuecomment-92852",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_092854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9597#issuecomment-92854",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_092855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9597#issuecomment-92855",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_092856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9597#issuecomment-92856",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_092857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9597#issuecomment-92857",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

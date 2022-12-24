@@ -3,7 +3,7 @@
 archive/issues_006040.json:
 ```json
 {
-    "body": "Assignee: justin\n\nCC:  mabshoff wstein tornaria\n\nKeywords: quadraticform\n\nAdding Doctests to bring coverage up to 100% (coming soon).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6040\n\n",
+    "body": "Assignee: justin\n\nCC:  mabshoff wstein @tornaria\n\nKeywords: quadraticform\n\nAdding Doctests to bring coverage up to 100% (coming soon).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6040\n\n",
     "created_at": "2009-05-15T03:40:59Z",
     "labels": [
         "quadratic forms",
@@ -14,12 +14,12 @@ archive/issues_006040.json:
     "title": "Added Doctests for QuadraticForms methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6040",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 Assignee: justin
 
-CC:  mabshoff wstein tornaria
+CC:  mabshoff wstein @tornaria
 
 Keywords: quadraticform
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6040
 archive/issue_comments_048090.json:
 ```json
 {
-    "body": "Attachment [patch-3__QF_misc_doctests__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6040/patch-3__QF_misc_doctests__3.4.1.patch) by jonhanke created at 2009-05-15 03:43:18\n\nNote:  There are currently two broken doctests in this patch (using the older routine IsPadic Square()), which should resolve themselves once Cremona's patch (Ticket #5834) is applied.",
+    "body": "Attachment [patch-3__QF_misc_doctests__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6040/patch-3__QF_misc_doctests__3.4.1.patch) by @jonhanke created at 2009-05-15 03:43:18\n\nNote:  There are currently two broken doctests in this patch (using the older routine IsPadic Square()), which should resolve themselves once Cremona's patch (Ticket #5834) is applied.",
     "created_at": "2009-05-15T03:43:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48090",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
-Attachment [patch-3__QF_misc_doctests__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6040/patch-3__QF_misc_doctests__3.4.1.patch) by jonhanke created at 2009-05-15 03:43:18
+Attachment [patch-3__QF_misc_doctests__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6040/patch-3__QF_misc_doctests__3.4.1.patch) by @jonhanke created at 2009-05-15 03:43:18
 
 Note:  There are currently two broken doctests in this patch (using the older routine IsPadic Square()), which should resolve themselves once Cremona's patch (Ticket #5834) is applied.
 
@@ -61,7 +61,7 @@ archive/issue_comments_048091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48091",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -77,16 +77,16 @@ Known Issues:
 archive/issue_comments_048092.json:
 ```json
 {
-    "body": "Attachment [patch-4__QF_more_doctests__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6040/patch-4__QF_more_doctests__3.4.1.patch) by jonhanke created at 2009-05-15 11:16:06",
+    "body": "Attachment [patch-4__QF_more_doctests__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6040/patch-4__QF_more_doctests__3.4.1.patch) by @jonhanke created at 2009-05-15 11:16:06",
     "created_at": "2009-05-15T11:16:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48092",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
-Attachment [patch-4__QF_more_doctests__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6040/patch-4__QF_more_doctests__3.4.1.patch) by jonhanke created at 2009-05-15 11:16:06
+Attachment [patch-4__QF_more_doctests__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6040/patch-4__QF_more_doctests__3.4.1.patch) by @jonhanke created at 2009-05-15 11:16:06
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_048094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48094",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_048095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48095",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -156,16 +156,16 @@ If that order is followed, the patch sequence applies cleanly to 3.4.1 as well a
 archive/issue_comments_048096.json:
 ```json
 {
-    "body": "Attachment [patch-5__QF_reviewer__4.0.alpha0.patch](tarball://root/attachments/some-uuid/ticket6040/patch-5__QF_reviewer__4.0.alpha0.patch) by tornaria created at 2009-05-18 05:46:41\n\nfix doctests for 4.0.alpha0",
+    "body": "Attachment [patch-5__QF_reviewer__4.0.alpha0.patch](tarball://root/attachments/some-uuid/ticket6040/patch-5__QF_reviewer__4.0.alpha0.patch) by @tornaria created at 2009-05-18 05:46:41\n\nfix doctests for 4.0.alpha0",
     "created_at": "2009-05-18T05:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48096",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [patch-5__QF_reviewer__4.0.alpha0.patch](tarball://root/attachments/some-uuid/ticket6040/patch-5__QF_reviewer__4.0.alpha0.patch) by tornaria created at 2009-05-18 05:46:41
+Attachment [patch-5__QF_reviewer__4.0.alpha0.patch](tarball://root/attachments/some-uuid/ticket6040/patch-5__QF_reviewer__4.0.alpha0.patch) by @tornaria created at 2009-05-18 05:46:41
 
 fix doctests for 4.0.alpha0
 
@@ -181,7 +181,7 @@ archive/issue_comments_048097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48097",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_048098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48098",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_048100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48100",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 

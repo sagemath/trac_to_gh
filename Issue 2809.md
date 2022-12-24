@@ -3,7 +3,7 @@
 archive/issues_002809.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nIn combinat/root_system.py, the fundamental weights for the various root systems are entered by hand. For G2, the fundamental weights were the negatives of what they should be.\n\n```\n\ndiff -r 80b506b8e07c sage/combinat/root_system.py\n--- a/sage/combinat/root_system.py\tTue Apr 01 19:18:55 2008 -0700\n+++ b/sage/combinat/root_system.py\tSat Apr 05 08:40:46 2008 -0700\n@@ -788,11 +788,11 @@ class AmbientLattice_g(AmbientLattice_ge\n         \"\"\"\n         EXAMPLES:\n             sage: CartanType(['G',2]).root_system().ambient_lattice().fundamental_weights()\n-            [(-1, 0, 1), (-2, 1, 1)]\n+            [(1, 0, -1), (2, -1, -1)]\n         \"\"\"\n         return [ c0*self._term(0)+c1*self._term(1)+c2*self._term(2) \\\n                  for [c0,c1,c2] in\n-                 [[-1,0,1],[-2,1,1]]]\n+                 [[1,0,-1],[2,-1,-1]]]\n \n \n def WeylDim(type, coeffs):\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2809\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nIn combinat/root_system.py, the fundamental weights for the various root systems are entered by hand. For G2, the fundamental weights were the negatives of what they should be.\n\n```\n\ndiff -r 80b506b8e07c sage/combinat/root_system.py\n--- a/sage/combinat/root_system.py\tTue Apr 01 19:18:55 2008 -0700\n+++ b/sage/combinat/root_system.py\tSat Apr 05 08:40:46 2008 -0700\n@@ -788,11 +788,11 @@ class AmbientLattice_g(AmbientLattice_ge\n         \"\"\"\n         EXAMPLES:\n             sage: CartanType(['G',2]).root_system().ambient_lattice().fundamental_weights()\n-            [(-1, 0, 1), (-2, 1, 1)]\n+            [(1, 0, -1), (2, -1, -1)]\n         \"\"\"\n         return [ c0*self._term(0)+c1*self._term(1)+c2*self._term(2) \\\n                  for [c0,c1,c2] in\n-                 [[-1,0,1],[-2,1,1]]]\n+                 [[1,0,-1],[2,-1,-1]]]\n \n \n def WeylDim(type, coeffs):\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2809\n\n",
     "created_at": "2008-04-05T16:23:26Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002809.json:
     "title": "G2 fundamental weights were the negative of what they should be.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2809",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

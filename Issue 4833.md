@@ -14,7 +14,7 @@ archive/issues_004833.json:
     "title": "sage -upgrade should complain when queues are used and patches are applied",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4833",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -40,7 +40,7 @@ archive/issue_comments_036629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4833#issuecomment-36629",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_036630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4833#issuecomment-36630",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_036631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4833#issuecomment-36631",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_036632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4833#issuecomment-36632",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_036633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4833#issuecomment-36633",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

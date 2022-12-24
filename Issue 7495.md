@@ -14,7 +14,7 @@ archive/issues_007495.json:
     "title": "notebook: get rid of all possible \"internal server errors\" when doing \"Data --> Upload or attach file\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7495",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -52,7 +52,7 @@ archive/issue_comments_063343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63343",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_063344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63344",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_063345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63345",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_063346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63346",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,16 +130,16 @@ Changing status from new to needs_review.
 archive/issue_comments_063347.json:
 ```json
 {
-    "body": "Attachment [sagenb-7495.patch](tarball://root/attachments/some-uuid/ticket7495/sagenb-7495.patch) by was created at 2009-11-20 02:18:42",
+    "body": "Attachment [sagenb-7495.patch](tarball://root/attachments/some-uuid/ticket7495/sagenb-7495.patch) by @williamstein created at 2009-11-20 02:18:42",
     "created_at": "2009-11-20T02:18:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63347",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb-7495.patch](tarball://root/attachments/some-uuid/ticket7495/sagenb-7495.patch) by was created at 2009-11-20 02:18:42
+Attachment [sagenb-7495.patch](tarball://root/attachments/some-uuid/ticket7495/sagenb-7495.patch) by @williamstein created at 2009-11-20 02:18:42
 
 
 
@@ -153,7 +153,7 @@ archive/issue_comments_063348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63348",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_063349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63349",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -192,16 +192,16 @@ Actually, clicking to delete this file raises the error:
 archive/issue_comments_063350.json:
 ```json
 {
-    "body": "Attachment [sagenb-7495.2.patch](tarball://root/attachments/some-uuid/ticket7495/sagenb-7495.2.patch) by mpatel created at 2009-11-20 05:56:10\n\nVersion 2.  Minor simplifications.  Apply only this patch to sagenb repo.",
+    "body": "Attachment [sagenb-7495.2.patch](tarball://root/attachments/some-uuid/ticket7495/sagenb-7495.2.patch) by @qed777 created at 2009-11-20 05:56:10\n\nVersion 2.  Minor simplifications.  Apply only this patch to sagenb repo.",
     "created_at": "2009-11-20T05:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63350",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [sagenb-7495.2.patch](tarball://root/attachments/some-uuid/ticket7495/sagenb-7495.2.patch) by mpatel created at 2009-11-20 05:56:10
+Attachment [sagenb-7495.2.patch](tarball://root/attachments/some-uuid/ticket7495/sagenb-7495.2.patch) by @qed777 created at 2009-11-20 05:56:10
 
 Version 2.  Minor simplifications.  Apply only this patch to sagenb repo.
 
@@ -217,7 +217,7 @@ archive/issue_comments_063351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63351",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_063352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63352",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_063353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63353",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_063354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63354",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_063355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63355",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_063356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63356",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_063357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7495#issuecomment-63357",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

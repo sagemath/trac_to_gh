@@ -3,7 +3,7 @@
 archive/issues_009342.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  jeremywest\n\nHere is a method to compute the rank of elliptic curves over number fields using Simon 2-descent.\n\n```\ndef rank(self,verbose=0, lim1=5, lim3=50, limtriv=10, maxprob=20, limbigprime=30):\n  r\"\"\"\n\n  This computes the rank of elliptic curves over number fields using Simon's algorithm for two-descent. If the upper and lower bounds given are the same, then we return the rank, otherwise we return the upper and lower bounds.\n\n  INPUT: \n\n  The parameters are those used by simon_two_descent, and are documented there.\n\n  OUTPUT:\n\n  If the upper and lower bounds given by Simon two-descent are the same, then the rank has been uniquely identified and we return this. Otherwise, we return the upper and lower bounds with a warning that these are not the same.\n\n  Note: For non-quadratic number fields, this code does return, but it takes a long time.\n\n  EXAMPLES:\n\n  sage: K.<a> = NumberField(x^2 + 23, 'a')\n\n  sage: E = EllipticCurve(K, '37')\n\n  sage: E == loads(dumps(E))\n\n  True\n\n  sage: E.rank()\n\n  2\n\n  Here is a curve with two-torsion, so here the algorithm gives bounds on the rank:\n\n  sage: Qrt5.<rt5>=NumberField(x^2-5)\n  \n  sage: E=EllipticCurve([0,5-rt5,0,rt5,0])\n  \n  sage: E.rank()\n  \n  Lower and upper bounds differ!\n  \n  Lower bound being returned\n\n  1\n\n  IMPLEMENTATION:\n\n  Uses Denis Simon's GP/PARI scripts from  \\url{http://www.math.unicaen.fr/~simon/}.\n\n  \"\"\"\n\n  simon_output=self.simon_two_descent(verbose=verbose,lim1=lim1,lim3=lim3,limtriv=limtriv,maxprob=maxprob,limbigprime=limbigprime)\n  if simon_output[0]==simon_output[1]:\n    return simon_output[0]\n  print \"Lower and upper bounds differ!\"\n  print \"Lower bound being returned\"\n  return simon_output[0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9342\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  jeremywest\n\nHere is a method to compute the rank of elliptic curves over number fields using Simon 2-descent.\n\n```\ndef rank(self,verbose=0, lim1=5, lim3=50, limtriv=10, maxprob=20, limbigprime=30):\n  r\"\"\"\n\n  This computes the rank of elliptic curves over number fields using Simon's algorithm for two-descent. If the upper and lower bounds given are the same, then we return the rank, otherwise we return the upper and lower bounds.\n\n  INPUT: \n\n  The parameters are those used by simon_two_descent, and are documented there.\n\n  OUTPUT:\n\n  If the upper and lower bounds given by Simon two-descent are the same, then the rank has been uniquely identified and we return this. Otherwise, we return the upper and lower bounds with a warning that these are not the same.\n\n  Note: For non-quadratic number fields, this code does return, but it takes a long time.\n\n  EXAMPLES:\n\n  sage: K.<a> = NumberField(x^2 + 23, 'a')\n\n  sage: E = EllipticCurve(K, '37')\n\n  sage: E == loads(dumps(E))\n\n  True\n\n  sage: E.rank()\n\n  2\n\n  Here is a curve with two-torsion, so here the algorithm gives bounds on the rank:\n\n  sage: Qrt5.<rt5>=NumberField(x^2-5)\n  \n  sage: E=EllipticCurve([0,5-rt5,0,rt5,0])\n  \n  sage: E.rank()\n  \n  Lower and upper bounds differ!\n  \n  Lower bound being returned\n\n  1\n\n  IMPLEMENTATION:\n\n  Uses Denis Simon's GP/PARI scripts from  \\url{http://www.math.unicaen.fr/~simon/}.\n\n  \"\"\"\n\n  simon_output=self.simon_two_descent(verbose=verbose,lim1=lim1,lim3=lim3,limtriv=limtriv,maxprob=maxprob,limbigprime=limbigprime)\n  if simon_output[0]==simon_output[1]:\n    return simon_output[0]\n  print \"Lower and upper bounds differ!\"\n  print \"Lower bound being returned\"\n  return simon_output[0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9342\n\n",
     "created_at": "2010-06-26T00:03:20Z",
     "labels": [
         "elliptic curves",
@@ -17,7 +17,7 @@ archive/issues_009342.json:
     "user": "ljpk"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 CC:  jeremywest
 
@@ -98,7 +98,7 @@ archive/issue_comments_088258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9342#issuecomment-88258",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -111,16 +111,16 @@ Applies to 4.4.4
 archive/issue_comments_088259.json:
 ```json
 {
-    "body": "Attachment [trac_9342-rank.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342-rank.patch) by cremona created at 2010-06-26 00:41:11\n\nI converted Lloyd's code into a patch.\n\nThe ticket description can now be abbreviated!",
+    "body": "Attachment [trac_9342-rank.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342-rank.patch) by @JohnCremona created at 2010-06-26 00:41:11\n\nI converted Lloyd's code into a patch.\n\nThe ticket description can now be abbreviated!",
     "created_at": "2010-06-26T00:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9342#issuecomment-88259",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_9342-rank.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342-rank.patch) by cremona created at 2010-06-26 00:41:11
+Attachment [trac_9342-rank.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342-rank.patch) by @JohnCremona created at 2010-06-26 00:41:11
 
 I converted Lloyd's code into a patch.
 
@@ -138,7 +138,7 @@ archive/issue_comments_088260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9342#issuecomment-88260",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -151,16 +151,16 @@ replaces the previous patch
 archive/issue_comments_088261.json:
 ```json
 {
-    "body": "Attachment [trac_9342-rank.2.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342-rank.2.patch) by aly.deines created at 2010-06-29 05:44:49\n\nThis contains rank, rank_bounds, and gens all from simon_two_descent.  We also implemented caching in simon_two_descent.",
+    "body": "Attachment [trac_9342-rank.2.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342-rank.2.patch) by @adeines created at 2010-06-29 05:44:49\n\nThis contains rank, rank_bounds, and gens all from simon_two_descent.  We also implemented caching in simon_two_descent.",
     "created_at": "2010-06-29T05:44:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9342#issuecomment-88261",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
-Attachment [trac_9342-rank.2.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342-rank.2.patch) by aly.deines created at 2010-06-29 05:44:49
+Attachment [trac_9342-rank.2.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342-rank.2.patch) by @adeines created at 2010-06-29 05:44:49
 
 This contains rank, rank_bounds, and gens all from simon_two_descent.  We also implemented caching in simon_two_descent.
 
@@ -176,7 +176,7 @@ archive/issue_comments_088262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9342#issuecomment-88262",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_088263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9342#issuecomment-88263",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_088264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9342#issuecomment-88264",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_088265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9342#issuecomment-88265",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_088266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9342#issuecomment-88266",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -303,16 +303,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_088267.json:
 ```json
 {
-    "body": "Attachment [trac_9342_review.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342_review.patch) by davidloeffler created at 2010-06-29 14:08:52\n\nPerhaps I was being a bit harsh: most of the ReST formatting errors were already present in the docstring of `simon_two_descent`, so they're not your fault. I've done a small patch which fixes these, and also slightly changes the behaviour of `rank` when 2-descent doesn't precisely nail the rank down (in the original version, it didn't report the upper and lower bounds in the error message, although the docstring claimed it did). \n\nIf you're happy with my changes, then feel free to set this to \"positive review\".",
+    "body": "Attachment [trac_9342_review.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342_review.patch) by @loefflerd created at 2010-06-29 14:08:52\n\nPerhaps I was being a bit harsh: most of the ReST formatting errors were already present in the docstring of `simon_two_descent`, so they're not your fault. I've done a small patch which fixes these, and also slightly changes the behaviour of `rank` when 2-descent doesn't precisely nail the rank down (in the original version, it didn't report the upper and lower bounds in the error message, although the docstring claimed it did). \n\nIf you're happy with my changes, then feel free to set this to \"positive review\".",
     "created_at": "2010-06-29T14:08:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9342#issuecomment-88267",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9342_review.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342_review.patch) by davidloeffler created at 2010-06-29 14:08:52
+Attachment [trac_9342_review.patch](tarball://root/attachments/some-uuid/ticket9342/trac_9342_review.patch) by @loefflerd created at 2010-06-29 14:08:52
 
 Perhaps I was being a bit harsh: most of the ReST formatting errors were already present in the docstring of `simon_two_descent`, so they're not your fault. I've done a small patch which fixes these, and also slightly changes the behaviour of `rank` when 2-descent doesn't precisely nail the rank down (in the original version, it didn't report the upper and lower bounds in the error message, although the docstring claimed it did). 
 
@@ -330,7 +330,7 @@ archive/issue_comments_088268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9342#issuecomment-88268",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_088269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9342#issuecomment-88269",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

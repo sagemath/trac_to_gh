@@ -3,7 +3,7 @@
 archive/issues_005896.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThe documentation for `lcalc.twist_values` and `lcalc.twist_zeros` is wrong. It claims that the function computes all twists for `(d/.)` with `dmin <= d <= dmax`, but in fact, it computes it for all `(d/.)` such that the **conductor** lies between `dmin` and `dmax`. \n\nTrivial patch to fix this is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5896\n\n",
+    "body": "Assignee: @craigcitro\n\nThe documentation for `lcalc.twist_values` and `lcalc.twist_zeros` is wrong. It claims that the function computes all twists for `(d/.)` with `dmin <= d <= dmax`, but in fact, it computes it for all `(d/.)` such that the **conductor** lies between `dmin` and `dmax`. \n\nTrivial patch to fix this is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5896\n\n",
     "created_at": "2009-04-26T00:43:03Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_005896.json:
     "title": "[with patch, needs trivial review] Documentation fix for lcalc interface.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5896",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 The documentation for `lcalc.twist_values` and `lcalc.twist_zeros` is wrong. It claims that the function computes all twists for `(d/.)` with `dmin <= d <= dmax`, but in fact, it computes it for all `(d/.)` such that the **conductor** lies between `dmin` and `dmax`. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_046620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5896#issuecomment-46620",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_046621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5896#issuecomment-46621",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_046622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5896#issuecomment-46622",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -92,16 +92,16 @@ I'm suspicious of the patch I just attached. New one coming right up.
 archive/issue_comments_046623.json:
 ```json
 {
-    "body": "Attachment [lcalc-doc.patch](tarball://root/attachments/some-uuid/ticket5896/lcalc-doc.patch) by craigcitro created at 2009-04-27 09:38:44\n\nOk, it's ready to go.",
+    "body": "Attachment [lcalc-doc.patch](tarball://root/attachments/some-uuid/ticket5896/lcalc-doc.patch) by @craigcitro created at 2009-04-27 09:38:44\n\nOk, it's ready to go.",
     "created_at": "2009-04-27T09:38:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5896#issuecomment-46623",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [lcalc-doc.patch](tarball://root/attachments/some-uuid/ticket5896/lcalc-doc.patch) by craigcitro created at 2009-04-27 09:38:44
+Attachment [lcalc-doc.patch](tarball://root/attachments/some-uuid/ticket5896/lcalc-doc.patch) by @craigcitro created at 2009-04-27 09:38:44
 
 Ok, it's ready to go.
 
@@ -117,7 +117,7 @@ archive/issue_comments_046624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5896#issuecomment-46624",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_046625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5896#issuecomment-46625",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

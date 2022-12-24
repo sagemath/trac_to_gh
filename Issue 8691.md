@@ -3,7 +3,7 @@
 archive/issues_008691.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  rlm\n\nThe implementation is already done, I just need a ticket number.\n\nMy fix for #8655 will depend on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8691\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @rlmill\n\nThe implementation is already done, I just need a ticket number.\n\nMy fix for #8655 will depend on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8691\n\n",
     "created_at": "2010-04-15T06:19:19Z",
     "labels": [
         "combinatorics",
@@ -19,7 +19,7 @@ archive/issues_008691.json:
 ```
 Assignee: sage-combinat
 
-CC:  rlm
+CC:  @rlmill
 
 The implementation is already done, I just need a ticket number.
 
@@ -77,7 +77,7 @@ archive/issue_comments_079176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79176",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_079177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79177",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_079185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79185",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_079190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79190",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_079191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79191",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_079192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79192",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

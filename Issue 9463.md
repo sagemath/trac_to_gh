@@ -3,7 +3,7 @@
 archive/issues_009463.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jdemeyer\n\nfactor() is extremely slow at factoring large perfect powers (with a nontrivial base).\n\n```\nsage: %time factor(next_prime(10^20)^150)\nCPU times: user 0.75 s, sys: 0.00 s, total: 0.75 s\nWall time: 0.75 s\n100000000000000000039^150\nsage: %time factor(next_prime(10^20)^250)\nCPU times: user 2.68 s, sys: 0.00 s, total: 2.68 s\nWall time: 2.69 s\n100000000000000000039^250\nsage: %time factor(next_prime(10^20)^500)\nCPU times: user 13.19 s, sys: 0.00 s, total: 13.19 s\nWall time: 13.20 s\n100000000000000000039^500\n```\n\nFor comparison, SymPy handles such numbers in an instant:\n\n```\nsage: from sympy import factorint\nsage: %time factorint(next_prime(10^20)^150)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n{100000000000000000039L: 150}\nsage: %time factorint(next_prime(10^20)^250)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n{100000000000000000039L: 250}\nsage: %time factorint(next_prime(10^20)^500)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n{100000000000000000039L: 500}\n```\n\nPerfect power testing is very cheap, so it should be attempted early on for large numbers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9463\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jdemeyer\n\nfactor() is extremely slow at factoring large perfect powers (with a nontrivial base).\n\n```\nsage: %time factor(next_prime(10^20)^150)\nCPU times: user 0.75 s, sys: 0.00 s, total: 0.75 s\nWall time: 0.75 s\n100000000000000000039^150\nsage: %time factor(next_prime(10^20)^250)\nCPU times: user 2.68 s, sys: 0.00 s, total: 2.68 s\nWall time: 2.69 s\n100000000000000000039^250\nsage: %time factor(next_prime(10^20)^500)\nCPU times: user 13.19 s, sys: 0.00 s, total: 13.19 s\nWall time: 13.20 s\n100000000000000000039^500\n```\n\nFor comparison, SymPy handles such numbers in an instant:\n\n```\nsage: from sympy import factorint\nsage: %time factorint(next_prime(10^20)^150)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n{100000000000000000039L: 150}\nsage: %time factorint(next_prime(10^20)^250)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n{100000000000000000039L: 250}\nsage: %time factorint(next_prime(10^20)^500)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n{100000000000000000039L: 500}\n```\n\nPerfect power testing is very cheap, so it should be attempted early on for large numbers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9463\n\n",
     "created_at": "2010-07-09T09:03:28Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_009463.json:
     "title": "Integer factorization should handle perfect powers efficiently",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9463",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 factor() is extremely slow at factoring large perfect powers (with a nontrivial base).
 
@@ -69,16 +69,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9463
 archive/issue_comments_090748.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to tbd.",
+    "body": "Changing assignee from @aghitza to tbd.",
     "created_at": "2010-07-11T08:03:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9463#issuecomment-90748",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from AlexGhitza to tbd.
+Changing assignee from @aghitza to tbd.
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_090749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9463#issuecomment-90749",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_090750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9463#issuecomment-90750",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_090751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9463#issuecomment-90751",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_090752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9463#issuecomment-90752",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_090753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9463#issuecomment-90753",
-    "user": "bruno"
+    "user": "@bgrenet"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_090754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9463#issuecomment-90754",
-    "user": "bruno"
+    "user": "@bgrenet"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_090755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9463#issuecomment-90755",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_090756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9463",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9463#issuecomment-90756",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

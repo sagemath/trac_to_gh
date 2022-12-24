@@ -14,7 +14,7 @@ archive/issues_007235.json:
     "title": "os x readme file is misleading",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7235",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -56,7 +56,7 @@ archive/issue_comments_060014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60014",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -118,16 +118,16 @@ One might put more information there, too.
 archive/issue_comments_060017.json:
 ```json
 {
-    "body": "Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket7235/sage-README-osx.txt) by was created at 2009-11-11 19:11:58\n\nI changed the line as suggested by Georg Weber.  I agree with his suggestion.",
+    "body": "Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket7235/sage-README-osx.txt) by @williamstein created at 2009-11-11 19:11:58\n\nI changed the line as suggested by Georg Weber.  I agree with his suggestion.",
     "created_at": "2009-11-11T19:11:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60017",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket7235/sage-README-osx.txt) by was created at 2009-11-11 19:11:58
+Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket7235/sage-README-osx.txt) by @williamstein created at 2009-11-11 19:11:58
 
 I changed the line as suggested by Georg Weber.  I agree with his suggestion.
 
@@ -143,7 +143,7 @@ archive/issue_comments_060018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60018",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_060019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60019",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_060020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60020",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_060022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60022",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

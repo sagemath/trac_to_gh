@@ -14,7 +14,7 @@ archive/issues_005082.json:
     "title": "remove power_mod method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5082",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: somebody

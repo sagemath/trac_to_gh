@@ -3,7 +3,7 @@
 archive/issues_006679.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nHello everybody !!!\n\nHere are two new functions for the Graph class in Sage : vertex_coloring and edge_coloring.\n\nThose new functions both use Linear programming, so to use them you will have to install the patches MIP-1 to MIP-5 in #6502 along with the package GLPK :\n\nhttp://trac.sagemath.org/sage_trac/ticket/6502\n\nIf you want them to be ever more efficient, you can also install COIN-OR/CBC ( from #6603 ) with this line :\n\nsage -f http://www-sop.inria.fr/members/Nathann.Cohen/cbc-2.3.spkg\n\nI hope I learned what I had to with my previous patch, as I hope you will find those functions sufficiently and correctly documented. These functions should be ---way--- more efficient than the previous ones, regardless of the Linear Solver you chose to use.\n\n( I have to add that I will be absent next week, but even though I will be able to answer any of your questions and to post fixes until tomorrow evening. I chosed to post these two functions now hoping they could be integrated with the patch for LP into the next release of Sage )\n\nIssue created by migration from https://trac.sagemath.org/ticket/6679\n\n",
+    "body": "Assignee: @rlmill\n\nHello everybody !!!\n\nHere are two new functions for the Graph class in Sage : vertex_coloring and edge_coloring.\n\nThose new functions both use Linear programming, so to use them you will have to install the patches MIP-1 to MIP-5 in #6502 along with the package GLPK :\n\nhttp://trac.sagemath.org/sage_trac/ticket/6502\n\nIf you want them to be ever more efficient, you can also install COIN-OR/CBC ( from #6603 ) with this line :\n\nsage -f http://www-sop.inria.fr/members/Nathann.Cohen/cbc-2.3.spkg\n\nI hope I learned what I had to with my previous patch, as I hope you will find those functions sufficiently and correctly documented. These functions should be ---way--- more efficient than the previous ones, regardless of the Linear Solver you chose to use.\n\n( I have to add that I will be absent next week, but even though I will be able to answer any of your questions and to post fixes until tomorrow evening. I chosed to post these two functions now hoping they could be integrated with the patch for LP into the next release of Sage )\n\nIssue created by migration from https://trac.sagemath.org/ticket/6679\n\n",
     "created_at": "2009-08-06T15:10:42Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_006679.json:
     "title": "[with patch, needs review] Vertex Coloring, Edge Coloring (uses Linear Programming)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6679",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Hello everybody !!!
 
@@ -51,7 +51,7 @@ archive/issue_comments_054889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54889",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -64,16 +64,16 @@ First patch !
 archive/issue_comments_054890.json:
 ```json
 {
-    "body": "Attachment [coloring-1.2.patch](tarball://root/attachments/some-uuid/ticket6679/coloring-1.2.patch) by ncohen created at 2009-08-06 15:11:44\n\nFirst patch !",
+    "body": "Attachment [coloring-1.2.patch](tarball://root/attachments/some-uuid/ticket6679/coloring-1.2.patch) by @nathanncohen created at 2009-08-06 15:11:44\n\nFirst patch !",
     "created_at": "2009-08-06T15:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54890",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [coloring-1.2.patch](tarball://root/attachments/some-uuid/ticket6679/coloring-1.2.patch) by ncohen created at 2009-08-06 15:11:44
+Attachment [coloring-1.2.patch](tarball://root/attachments/some-uuid/ticket6679/coloring-1.2.patch) by @nathanncohen created at 2009-08-06 15:11:44
 
 First patch !
 
@@ -89,7 +89,7 @@ archive/issue_comments_054891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54891",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_054892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54892",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_054893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54893",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -142,16 +142,16 @@ Even shorter, even better, even more efficient... Here is the new version of the
 archive/issue_comments_054894.json:
 ```json
 {
-    "body": "Attachment [coloring-symbolic.patch](tarball://root/attachments/some-uuid/ticket6679/coloring-symbolic.patch) by ncohen created at 2009-09-03 17:06:17",
+    "body": "Attachment [coloring-symbolic.patch](tarball://root/attachments/some-uuid/ticket6679/coloring-symbolic.patch) by @nathanncohen created at 2009-09-03 17:06:17",
     "created_at": "2009-09-03T17:06:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54894",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [coloring-symbolic.patch](tarball://root/attachments/some-uuid/ticket6679/coloring-symbolic.patch) by ncohen created at 2009-09-03 17:06:17
+Attachment [coloring-symbolic.patch](tarball://root/attachments/some-uuid/ticket6679/coloring-symbolic.patch) by @nathanncohen created at 2009-09-03 17:06:17
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_054895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54895",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_054896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54896",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_054897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54897",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_054898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54898",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_054899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54899",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_054902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54902",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_054907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54907",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_054908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54908",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -485,7 +485,7 @@ archive/issue_comments_054909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6679",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6679#issuecomment-54909",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

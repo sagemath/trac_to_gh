@@ -3,7 +3,7 @@
 archive/issues_003087.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nMy new copyright file for palp doesn't quite have the right format.  Attached is a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3087\n\n",
+    "body": "Assignee: @timabbott\n\nMy new copyright file for palp doesn't quite have the right format.  Attached is a patch to fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3087\n\n",
     "created_at": "2008-05-03T04:41:21Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_003087.json:
     "title": "[with patch; needs review] Stupid mistakes in Debian palp copyright files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3087",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 My new copyright file for palp doesn't quite have the right format.  Attached is a patch to fix this.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3087
 archive/issue_comments_021318.json:
 ```json
 {
-    "body": "Attachment [palp-copyright-fix.patch](tarball://root/attachments/some-uuid/ticket3087/palp-copyright-fix.patch) by tabbott created at 2008-05-03 04:41:31",
+    "body": "Attachment [palp-copyright-fix.patch](tarball://root/attachments/some-uuid/ticket3087/palp-copyright-fix.patch) by @timabbott created at 2008-05-03 04:41:31",
     "created_at": "2008-05-03T04:41:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3087",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3087#issuecomment-21318",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [palp-copyright-fix.patch](tarball://root/attachments/some-uuid/ticket3087/palp-copyright-fix.patch) by tabbott created at 2008-05-03 04:41:31
+Attachment [palp-copyright-fix.patch](tarball://root/attachments/some-uuid/ticket3087/palp-copyright-fix.patch) by @timabbott created at 2008-05-03 04:41:31
 
 
 

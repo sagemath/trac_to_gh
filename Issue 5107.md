@@ -14,7 +14,7 @@ archive/issues_005107.json:
     "title": "incorrect trailing digits for continued fraction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5107",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -73,7 +73,7 @@ archive/issue_comments_039017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39017",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -101,16 +101,16 @@ sage: timeit("CFF(continued_fraction_list(x))")
 archive/issue_comments_039018.json:
 ```json
 {
-    "body": "Attachment [trac_5107.patch](tarball://root/attachments/some-uuid/ticket5107/trac_5107.patch) by was created at 2010-01-18 09:20:59",
+    "body": "Attachment [trac_5107.patch](tarball://root/attachments/some-uuid/ticket5107/trac_5107.patch) by @williamstein created at 2010-01-18 09:20:59",
     "created_at": "2010-01-18T09:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39018",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5107.patch](tarball://root/attachments/some-uuid/ticket5107/trac_5107.patch) by was created at 2010-01-18 09:20:59
+Attachment [trac_5107.patch](tarball://root/attachments/some-uuid/ticket5107/trac_5107.patch) by @williamstein created at 2010-01-18 09:20:59
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_039019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39019",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_039020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39020",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_039021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39021",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -190,16 +190,16 @@ Positive review, except for two minor typos which I'm adding a separate patch fo
 archive/issue_comments_039022.json:
 ```json
 {
-    "body": "Attachment [5107_contfrac_typo.patch](tarball://root/attachments/some-uuid/ticket5107/5107_contfrac_typo.patch) by robertwb created at 2010-01-18 19:08:45\n\nI find it surprising that `continued_fraction(x)`, where x is symbolic, or even an exact rational, would only give me the continued fraction of a numerical approximation to some number of bits. I guess what would be ideal would be an ideal, lazy continued fraction class. What I would find more useful than bits would be an nterms parameter that specified the (minimum?) number of terms to give, and it would work with sufficient precision to deduce all nterms coefficients correctly (e.g. using interval arithmetic). \n\nThe fact that it's not documented is a huge step forward, so +1 to that.",
+    "body": "Attachment [5107_contfrac_typo.patch](tarball://root/attachments/some-uuid/ticket5107/5107_contfrac_typo.patch) by @robertwb created at 2010-01-18 19:08:45\n\nI find it surprising that `continued_fraction(x)`, where x is symbolic, or even an exact rational, would only give me the continued fraction of a numerical approximation to some number of bits. I guess what would be ideal would be an ideal, lazy continued fraction class. What I would find more useful than bits would be an nterms parameter that specified the (minimum?) number of terms to give, and it would work with sufficient precision to deduce all nterms coefficients correctly (e.g. using interval arithmetic). \n\nThe fact that it's not documented is a huge step forward, so +1 to that.",
     "created_at": "2010-01-18T19:08:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39022",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5107_contfrac_typo.patch](tarball://root/attachments/some-uuid/ticket5107/5107_contfrac_typo.patch) by robertwb created at 2010-01-18 19:08:45
+Attachment [5107_contfrac_typo.patch](tarball://root/attachments/some-uuid/ticket5107/5107_contfrac_typo.patch) by @robertwb created at 2010-01-18 19:08:45
 
 I find it surprising that `continued_fraction(x)`, where x is symbolic, or even an exact rational, would only give me the continued fraction of a numerical approximation to some number of bits. I guess what would be ideal would be an ideal, lazy continued fraction class. What I would find more useful than bits would be an nterms parameter that specified the (minimum?) number of terms to give, and it would work with sufficient precision to deduce all nterms coefficients correctly (e.g. using interval arithmetic). 
 
@@ -217,7 +217,7 @@ archive/issue_comments_039023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39023",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_039024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39024",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_039025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39025",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_039026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39026",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6353
 archive/issue_comments_050790.json:
 ```json
 {
-    "body": "Attachment [trac_6353-cookies-diff-ports.patch](tarball://root/attachments/some-uuid/ticket6353/trac_6353-cookies-diff-ports.patch) by timdumol created at 2010-01-19 11:06:55\n\nAppends port number to the cookie names.",
+    "body": "Attachment [trac_6353-cookies-diff-ports.patch](tarball://root/attachments/some-uuid/ticket6353/trac_6353-cookies-diff-ports.patch) by @TimDumol created at 2010-01-19 11:06:55\n\nAppends port number to the cookie names.",
     "created_at": "2010-01-19T11:06:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6353#issuecomment-50790",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_6353-cookies-diff-ports.patch](tarball://root/attachments/some-uuid/ticket6353/trac_6353-cookies-diff-ports.patch) by timdumol created at 2010-01-19 11:06:55
+Attachment [trac_6353-cookies-diff-ports.patch](tarball://root/attachments/some-uuid/ticket6353/trac_6353-cookies-diff-ports.patch) by @TimDumol created at 2010-01-19 11:06:55
 
 Appends port number to the cookie names.
 
@@ -67,7 +67,7 @@ archive/issue_comments_050791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6353#issuecomment-50791",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_050792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6353#issuecomment-50792",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_050793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6353#issuecomment-50793",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_050794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6353#issuecomment-50794",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_050795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6353#issuecomment-50795",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

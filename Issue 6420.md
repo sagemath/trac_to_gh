@@ -3,7 +3,7 @@
 archive/issues_006420.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: maxima integral\n\n\n```\nsage: integrate(1/x^3,x,1,infinity)\nValueError: Integral is divergent.\n```\n\n\nBut it's NOT!\n\nThe problem comes from Maxima. I could check four versions:\n\n\n```\nMaxima 5.13.0: it's ok\nMaxima 5.16.3: it gives wrong result, Sage 4.0.2 uses this\nMaxima 5.17.1: it gives wrong result\nMaxima 5.18.1: it's ok\n```\n\n\nAn example for wrong result:\n\n```\npetya@desktop:~/download/sage/sage-4.0.2-linux-Ubuntu_9.04-i686-Linux/local/bin$ ./maxima\nMaxima 5.16.3 http://maxima.sourceforge.net\nUsing Lisp ECL 9.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) integrate(1/x^3,x,1,inf);\n\nIntegral is divergent\n -- an error.  To debug this try debugmode(true);\n```\n\n\nWe would like to teach undergradute students with Sage, and this bug is quite annoying. It would be helpful, if someone could update Maxima in Sage.\n\n\n Thanks,\n  Peter\n\nIssue created by migration from https://trac.sagemath.org/ticket/6420\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: maxima integral\n\n\n```\nsage: integrate(1/x^3,x,1,infinity)\nValueError: Integral is divergent.\n```\n\n\nBut it's NOT!\n\nThe problem comes from Maxima. I could check four versions:\n\n\n```\nMaxima 5.13.0: it's ok\nMaxima 5.16.3: it gives wrong result, Sage 4.0.2 uses this\nMaxima 5.17.1: it gives wrong result\nMaxima 5.18.1: it's ok\n```\n\n\nAn example for wrong result:\n\n```\npetya@desktop:~/download/sage/sage-4.0.2-linux-Ubuntu_9.04-i686-Linux/local/bin$ ./maxima\nMaxima 5.16.3 http://maxima.sourceforge.net\nUsing Lisp ECL 9.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) integrate(1/x^3,x,1,inf);\n\nIntegral is divergent\n -- an error.  To debug this try debugmode(true);\n```\n\n\nWe would like to teach undergradute students with Sage, and this bug is quite annoying. It would be helpful, if someone could update Maxima in Sage.\n\n\n Thanks,\n  Peter\n\nIssue created by migration from https://trac.sagemath.org/ticket/6420\n\n",
     "created_at": "2009-06-26T07:33:08Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_006420.json:
     "user": "mora"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: maxima integral
 
@@ -74,16 +74,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6420
 archive/issue_comments_051546.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to AlexGhitza.",
+    "body": "Changing assignee from @mwhansen to @aghitza.",
     "created_at": "2009-08-24T09:31:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51546",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from mhansen to AlexGhitza.
+Changing assignee from @mwhansen to @aghitza.
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_051547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51547",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_051548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51548",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_051549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51549",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -154,16 +154,16 @@ Patch is now up.
 archive/issue_comments_051550.json:
 ```json
 {
-    "body": "Attachment [trac_6420-integrate-one-over-cube.patch](tarball://root/attachments/some-uuid/ticket6420/trac_6420-integrate-one-over-cube.patch) by mhansen created at 2009-10-05 04:57:06\n\nI updated the patch to remove some excess blank lines and to remove the \".. note::\" which didn't make sense.  Otherwise, your change is good by me.\n\nkcrisman, could you okay these changes and mark it as a positive review?",
+    "body": "Attachment [trac_6420-integrate-one-over-cube.patch](tarball://root/attachments/some-uuid/ticket6420/trac_6420-integrate-one-over-cube.patch) by @mwhansen created at 2009-10-05 04:57:06\n\nI updated the patch to remove some excess blank lines and to remove the \".. note::\" which didn't make sense.  Otherwise, your change is good by me.\n\nkcrisman, could you okay these changes and mark it as a positive review?",
     "created_at": "2009-10-05T04:57:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51550",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6420-integrate-one-over-cube.patch](tarball://root/attachments/some-uuid/ticket6420/trac_6420-integrate-one-over-cube.patch) by mhansen created at 2009-10-05 04:57:06
+Attachment [trac_6420-integrate-one-over-cube.patch](tarball://root/attachments/some-uuid/ticket6420/trac_6420-integrate-one-over-cube.patch) by @mwhansen created at 2009-10-05 04:57:06
 
 I updated the patch to remove some excess blank lines and to remove the ".. note::" which didn't make sense.  Otherwise, your change is good by me.
 
@@ -181,7 +181,7 @@ archive/issue_comments_051551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51551",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_051552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51552",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

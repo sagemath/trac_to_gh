@@ -14,7 +14,7 @@ archive/issues_006370.json:
     "title": "notebook -- REST search of docs in live mode is completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6370",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -61,7 +61,7 @@ archive/issue_comments_050946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6370#issuecomment-50946",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_050947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6370#issuecomment-50947",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

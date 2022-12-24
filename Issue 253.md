@@ -13,7 +13,7 @@ archive/issues_000253.json:
     "title": "Add Integral closure for ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/253",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -64,7 +64,7 @@ archive/issue_comments_001142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/253#issuecomment-1142",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_001143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/253#issuecomment-1143",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_001144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/253#issuecomment-1144",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

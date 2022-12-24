@@ -14,7 +14,7 @@ archive/issues_008058.json:
     "title": "New ecm-6.2.1.p2.spkg now wokrs with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8058",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -47,7 +47,7 @@ archive/issue_comments_070500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8058#issuecomment-70500",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -60,16 +60,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070501.json:
 ```json
 {
-    "body": "Attachment [ecm-6.2.1.p2.patch](tarball://root/attachments/some-uuid/ticket8058/ecm-6.2.1.p2.patch) by jsp created at 2010-01-26 17:29:34",
+    "body": "Attachment [ecm-6.2.1.p2.patch](tarball://root/attachments/some-uuid/ticket8058/ecm-6.2.1.p2.patch) by @jaapspies created at 2010-01-26 17:29:34",
     "created_at": "2010-01-26T17:29:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8058#issuecomment-70501",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [ecm-6.2.1.p2.patch](tarball://root/attachments/some-uuid/ticket8058/ecm-6.2.1.p2.patch) by jsp created at 2010-01-26 17:29:34
+Attachment [ecm-6.2.1.p2.patch](tarball://root/attachments/some-uuid/ticket8058/ecm-6.2.1.p2.patch) by @jaapspies created at 2010-01-26 17:29:34
 
 
 
@@ -119,7 +119,7 @@ archive/issue_comments_070504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8058#issuecomment-70504",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008614.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  alexghitza\n\n* The attached patch speeds up a creating ModularSymbols spaces a bunch by removing a bottleneck -- quotienting by 2-term relations -- by moving it to Cython. \n\n* Also the coverage for the modsym directory is improved to 100% by adding one trivial missing doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8614\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  alexghitza\n\n* The attached patch speeds up a creating ModularSymbols spaces a bunch by removing a bottleneck -- quotienting by 2-term relations -- by moving it to Cython. \n\n* Also the coverage for the modsym directory is improved to 100% by adding one trivial missing doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8614\n\n",
     "created_at": "2010-03-27T03:29:42Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_008614.json:
     "title": "Optimize creation of modular symbols spaces by speeding up quotienting out by 2-term relations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8614",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 CC:  alexghitza
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8614
 archive/issue_comments_078053.json:
 ```json
 {
-    "body": "Attachment [trac_8614.patch](tarball://root/attachments/some-uuid/ticket8614/trac_8614.patch) by was created at 2010-03-27 03:44:06",
+    "body": "Attachment [trac_8614.patch](tarball://root/attachments/some-uuid/ticket8614/trac_8614.patch) by @williamstein created at 2010-03-27 03:44:06",
     "created_at": "2010-03-27T03:44:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8614#issuecomment-78053",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8614.patch](tarball://root/attachments/some-uuid/ticket8614/trac_8614.patch) by was created at 2010-03-27 03:44:06
+Attachment [trac_8614.patch](tarball://root/attachments/some-uuid/ticket8614/trac_8614.patch) by @williamstein created at 2010-03-27 03:44:06
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_078054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8614#issuecomment-78054",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_078055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8614#issuecomment-78055",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_078056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8614#issuecomment-78056",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_078057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8614#issuecomment-78057",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_078058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8614#issuecomment-78058",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_078059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8614#issuecomment-78059",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_078060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8614#issuecomment-78060",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_078061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8614#issuecomment-78061",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_078064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8614#issuecomment-78064",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_078065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8614#issuecomment-78065",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_078066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8614#issuecomment-78066",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_078067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8614#issuecomment-78067",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004876.json:
     "title": "replace the two kash3 optional spkg's by a single optional spkg that works on both Linux and OS X, and gives a graceful message on other systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4876",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_036917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4876#issuecomment-36917",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_036918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4876#issuecomment-36918",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_036919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4876#issuecomment-36919",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_036920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4876#issuecomment-36920",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_036921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4876#issuecomment-36921",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_036922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4876",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4876#issuecomment-36922",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

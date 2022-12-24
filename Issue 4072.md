@@ -3,7 +3,7 @@
 archive/issues_004072.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 164:\n    sage: t = sage0.trait_names()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[2]>\", line 1, in <module>\n        t = sage0.trait_names()###line 164:\n    sage: t = sage0.trait_names()\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/site-packages/sage/interfaces/sage0.py\", line 171, in trait_names\n        return eval(self.eval('globals().keys()'))\n      File \"<string>\", line 408\n         'cosh',\n^              \n     SyntaxError: invalid syntax\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 165:\n    sage: len(t) > 100\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[3]>\", line 1, in <module>\n        len(t) > Integer(100)###line 165:\n    sage: len(t) > 100\n    NameError: name 't' is not defined\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 167:\n    sage: 'gcd' in t\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[4]>\", line 1, in <module>\n        'gcd' in t###line 167:\n    sage: 'gcd' in t\n    NameError: name 't' is not defined\n**********************************************************************\n1 items had failures:\n   3 of   5 in __main__.example_4\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/mhansen/sage-3.1.2.rc0/tmp/.doctest_sage0.py\n         [81.0 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4072\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 164:\n    sage: t = sage0.trait_names()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[2]>\", line 1, in <module>\n        t = sage0.trait_names()###line 164:\n    sage: t = sage0.trait_names()\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/site-packages/sage/interfaces/sage0.py\", line 171, in trait_names\n        return eval(self.eval('globals().keys()'))\n      File \"<string>\", line 408\n         'cosh',\n^              \n     SyntaxError: invalid syntax\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 165:\n    sage: len(t) > 100\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[3]>\", line 1, in <module>\n        len(t) > Integer(100)###line 165:\n    sage: len(t) > 100\n    NameError: name 't' is not defined\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/sage0.py\", line 167:\n    sage: 'gcd' in t\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mhansen/sage-3.1.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[4]>\", line 1, in <module>\n        'gcd' in t###line 167:\n    sage: 'gcd' in t\n    NameError: name 't' is not defined\n**********************************************************************\n1 items had failures:\n   3 of   5 in __main__.example_4\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/mhansen/sage-3.1.2.rc0/tmp/.doctest_sage0.py\n         [81.0 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4072\n\n",
     "created_at": "2008-09-07T18:23:43Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004072.json:
     "title": "Fix issue in trait_names in the sage0 interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4072",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -83,16 +83,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4072
 archive/issue_comments_029386.json:
 ```json
 {
-    "body": "Attachment [trac_4072.patch](tarball://root/attachments/some-uuid/ticket4072/trac_4072.patch) by mhansen created at 2008-09-07 18:30:34",
+    "body": "Attachment [trac_4072.patch](tarball://root/attachments/some-uuid/ticket4072/trac_4072.patch) by @mwhansen created at 2008-09-07 18:30:34",
     "created_at": "2008-09-07T18:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4072#issuecomment-29386",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4072.patch](tarball://root/attachments/some-uuid/ticket4072/trac_4072.patch) by mhansen created at 2008-09-07 18:30:34
+Attachment [trac_4072.patch](tarball://root/attachments/some-uuid/ticket4072/trac_4072.patch) by @mwhansen created at 2008-09-07 18:30:34
 
 
 
@@ -101,16 +101,16 @@ Attachment [trac_4072.patch](tarball://root/attachments/some-uuid/ticket4072/tra
 archive/issue_comments_029387.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-09-07T18:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4072#issuecomment-29387",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_029388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4072#issuecomment-29388",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_029389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4072#issuecomment-29389",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_029390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4072",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4072#issuecomment-29390",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

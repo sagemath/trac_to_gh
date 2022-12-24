@@ -14,7 +14,7 @@ archive/issues_003322.json:
     "title": "[with spkg needs review] new python spkg with -j enabled",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3322",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 Assignee: mabshoff

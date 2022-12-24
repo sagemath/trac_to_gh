@@ -3,7 +3,7 @@
 archive/issues_008231.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jhpalmieri was robert.marik\n\nSince the upgrade to sage 4.3.2, when one creates a new input cell in the notebook, the cursor is not automatically placed in the new input cell. It is fair to assume that a user that creates a new input cell wants to type in it straight away, so time would be saved if the cursor was put there automatically, as was the case in previous versions of the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8231\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri @williamstein @robert-marik\n\nSince the upgrade to sage 4.3.2, when one creates a new input cell in the notebook, the cursor is not automatically placed in the new input cell. It is fair to assume that a user that creates a new input cell wants to type in it straight away, so time would be saved if the cursor was put there automatically, as was the case in previous versions of the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8231\n\n",
     "created_at": "2010-02-10T15:27:31Z",
     "labels": [
         "notebook",
@@ -17,9 +17,9 @@ archive/issues_008231.json:
     "user": "schymans"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jhpalmieri was robert.marik
+CC:  @jhpalmieri @williamstein @robert-marik
 
 Since the upgrade to sage 4.3.2, when one creates a new input cell in the notebook, the cursor is not automatically placed in the new input cell. It is fair to assume that a user that creates a new input cell wants to type in it straight away, so time would be saved if the cursor was put there automatically, as was the case in previous versions of the notebook.
 
@@ -39,7 +39,7 @@ archive/issue_comments_072708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8231#issuecomment-72708",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_072709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8231#issuecomment-72709",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_072710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8231#issuecomment-72710",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_072711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8231#issuecomment-72711",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -106,16 +106,16 @@ Changing status from new to needs_review.
 archive/issue_comments_072712.json:
 ```json
 {
-    "body": "Attachment [trac_8231-cursor_AWOL.patch](tarball://root/attachments/some-uuid/ticket8231/trac_8231-cursor_AWOL.patch) by mpatel created at 2010-02-14 02:01:48\n\nThe patch should restore the earlier behavior and fix the cursor-wraps-around-the-last-compute-cell problem.  If not, let me know.",
+    "body": "Attachment [trac_8231-cursor_AWOL.patch](tarball://root/attachments/some-uuid/ticket8231/trac_8231-cursor_AWOL.patch) by @qed777 created at 2010-02-14 02:01:48\n\nThe patch should restore the earlier behavior and fix the cursor-wraps-around-the-last-compute-cell problem.  If not, let me know.",
     "created_at": "2010-02-14T02:01:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8231#issuecomment-72712",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8231-cursor_AWOL.patch](tarball://root/attachments/some-uuid/ticket8231/trac_8231-cursor_AWOL.patch) by mpatel created at 2010-02-14 02:01:48
+Attachment [trac_8231-cursor_AWOL.patch](tarball://root/attachments/some-uuid/ticket8231/trac_8231-cursor_AWOL.patch) by @qed777 created at 2010-02-14 02:01:48
 
 The patch should restore the earlier behavior and fix the cursor-wraps-around-the-last-compute-cell problem.  If not, let me know.
 
@@ -131,7 +131,7 @@ archive/issue_comments_072713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8231#issuecomment-72713",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_072714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8231#issuecomment-72714",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_072715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8231#issuecomment-72715",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

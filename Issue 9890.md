@@ -3,7 +3,7 @@
 archive/issues_009890.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  rbk\n\nKeywords: pynac\n\nReported by Kees on sage-support:\n\nhttp://groups.google.com/group/sage-support/t/bfa34b077dd31b73\n\n\n```\nRunning the following few lines:\n\neq=5-e^x\nprint \"1:\",eq.substitute(x=3*x)\nprint \"2:\",eq.substitute(x=log(x))\n\nyields the output (Sage 4.5.2 with Ubuntu):\n\n1: -e^(3*x) + 5\n2: -log(x) + 5\n```\n\n\nThis is also present in GiNaC:\n\n\n```\nginsh - GiNaC Interactive Shell (ginac V1.5.7)\n  __,  _______  Copyright (C) 1999-2010 Johannes Gutenberg University Mainz,\n (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY.\n  ._) i N a C | You are welcome to redistribute it under certain conditions.\n<-------------' For details type `warranty;'.\n\nType ?? for a list of help topics.\n> subs(5-exp(x),x==log(x));\n5-log(x)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9891\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @RBKreckel\n\nKeywords: pynac\n\nReported by Kees on sage-support:\n\nhttp://groups.google.com/group/sage-support/t/bfa34b077dd31b73\n\n\n```\nRunning the following few lines:\n\neq=5-e^x\nprint \"1:\",eq.substitute(x=3*x)\nprint \"2:\",eq.substitute(x=log(x))\n\nyields the output (Sage 4.5.2 with Ubuntu):\n\n1: -e^(3*x) + 5\n2: -log(x) + 5\n```\n\n\nThis is also present in GiNaC:\n\n\n```\nginsh - GiNaC Interactive Shell (ginac V1.5.7)\n  __,  _______  Copyright (C) 1999-2010 Johannes Gutenberg University Mainz,\n (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY.\n  ._) i N a C | You are welcome to redistribute it under certain conditions.\n<-------------' For details type `warranty;'.\n\nType ?? for a list of help topics.\n> subs(5-exp(x),x==log(x));\n5-log(x)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9891\n\n",
     "created_at": "2010-09-10T19:53:23Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009890.json:
     "title": "substitute goes too far: (5-e^x).substitute(x=log(x)) -> 5-log(x)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9890",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  rbk
+CC:  @RBKreckel
 
 Keywords: pynac
 
@@ -75,7 +75,7 @@ archive/issue_comments_098029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9890#issuecomment-98029",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_098030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9890#issuecomment-98030",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -110,16 +110,16 @@ I merged his changes to pynac, so it will be available in the next release.
 archive/issue_comments_098031.json:
 ```json
 {
-    "body": "Attachment [trac_9891-substitute.patch](tarball://root/attachments/some-uuid/ticket9891/trac_9891-substitute.patch) by burcin created at 2010-09-19 23:07:06\n\nadd doctest",
+    "body": "Attachment [trac_9891-substitute.patch](tarball://root/attachments/some-uuid/ticket9891/trac_9891-substitute.patch) by @burcin created at 2010-09-19 23:07:06\n\nadd doctest",
     "created_at": "2010-09-19T23:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9890#issuecomment-98031",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9891-substitute.patch](tarball://root/attachments/some-uuid/ticket9891/trac_9891-substitute.patch) by burcin created at 2010-09-19 23:07:06
+Attachment [trac_9891-substitute.patch](tarball://root/attachments/some-uuid/ticket9891/trac_9891-substitute.patch) by @burcin created at 2010-09-19 23:07:06
 
 add doctest
 
@@ -135,7 +135,7 @@ archive/issue_comments_098032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9890#issuecomment-98032",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_098033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9890#issuecomment-98033",
-    "user": "rbk"
+    "user": "@RBKreckel"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_098034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9890#issuecomment-98034",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_098035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9890#issuecomment-98035",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_098036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9890#issuecomment-98036",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_098037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9890#issuecomment-98037",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_098038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9890#issuecomment-98038",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_098039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9890#issuecomment-98039",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_098040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9890#issuecomment-98040",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

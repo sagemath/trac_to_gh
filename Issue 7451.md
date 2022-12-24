@@ -14,7 +14,7 @@ archive/issues_007451.json:
     "title": "Setting SAGE_FAT_BINARY causes internal compiler error building pari",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7451",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -67,7 +67,7 @@ archive/issue_comments_062758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7451#issuecomment-62758",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_062759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7451",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7451#issuecomment-62759",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

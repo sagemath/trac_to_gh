@@ -14,7 +14,7 @@ archive/issues_009938.json:
     "title": "Remove unnecessary .hgtags.orig, SConstruct.orig, and hgrc files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9938",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: GeorgSWeber
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9939
 archive/issue_comments_098944.json:
 ```json
 {
-    "body": "Changing assignee from GeorgSWeber to jason.",
+    "body": "Changing assignee from GeorgSWeber to @jasongrout.",
     "created_at": "2010-09-18T00:11:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9938#issuecomment-98944",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Changing assignee from GeorgSWeber to jason.
+Changing assignee from GeorgSWeber to @jasongrout.
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_098945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9938#issuecomment-98945",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_098946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9938#issuecomment-98946",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_098947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9938#issuecomment-98947",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_098948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9938#issuecomment-98948",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_098949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9938#issuecomment-98949",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_098950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9938",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9938#issuecomment-98950",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

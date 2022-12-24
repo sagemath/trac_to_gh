@@ -3,7 +3,7 @@
 archive/issues_009263.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  eviatarbach\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: n(airy_ai(1),digits=100)\n0.1352924163128813861423083153567858971655368804931640625000000000000000000000000000000000000000000000\n```\n\nClearly the last digits are wrong. It looks like Sage only knows how\nto compute Ai(x) in double precision, and then extended the double\nprecision result to 100 digits.\n| Sage Version 4.4.2, Release Date: 2010-05-19                       |\n| Type notebook() for the GUI, and license() for information.        |\nThis is a *defect*: an error should be raised if the target precision cannot be attained (or Sage should be able to compute\nAi(x) to arbitrary precision).\n\nI guess this problem concerns other functions than Ai.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9263\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @eviatarbach\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: n(airy_ai(1),digits=100)\n0.1352924163128813861423083153567858971655368804931640625000000000000000000000000000000000000000000000\n```\n\nClearly the last digits are wrong. It looks like Sage only knows how\nto compute Ai(x) in double precision, and then extended the double\nprecision result to 100 digits.\n| Sage Version 4.4.2, Release Date: 2010-05-19                       |\n| Type notebook() for the GUI, and license() for information.        |\nThis is a *defect*: an error should be raised if the target precision cannot be attained (or Sage should be able to compute\nAi(x) to arbitrary precision).\n\nI guess this problem concerns other functions than Ai.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9263\n\n",
     "created_at": "2010-06-18T11:33:59Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_009263.json:
     "title": "airy_ai yields wrong results in arbitrary precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9263",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  eviatarbach
+CC:  @eviatarbach
 
 
 ```
@@ -81,7 +81,7 @@ archive/issue_comments_087157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87157",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_087158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87158",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_087159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87159",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_087160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87160",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -187,16 +187,16 @@ Changing component from basic arithmetic to numerical.
 archive/issue_comments_087161.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to jason, jkantor.",
+    "body": "Changing assignee from @aghitza to jason, jkantor.",
     "created_at": "2013-06-14T18:32:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87161",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
-Changing assignee from AlexGhitza to jason, jkantor.
+Changing assignee from @aghitza to jason, jkantor.
 
 
 
@@ -210,7 +210,7 @@ archive/issue_comments_087162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87162",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_087163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87163",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_087164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87164",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_087165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87165",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_087166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87166",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_087167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87167",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_087168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87168",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_087169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87169",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_087170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87170",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_087171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87171",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_087172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87172",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_087173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87173",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_087174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87174",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_087175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87175",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -542,7 +542,7 @@ archive/issue_comments_087176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87176",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_087177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9263#issuecomment-87177",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

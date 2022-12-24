@@ -14,7 +14,7 @@ archive/issues_001292.json:
     "title": "bug in polynomial root finding mod n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1292",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -84,7 +84,7 @@ archive/issue_comments_008108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1292#issuecomment-8108",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_008110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1292#issuecomment-8110",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_008112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1292",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1292#issuecomment-8112",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

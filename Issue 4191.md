@@ -14,7 +14,7 @@ archive/issues_004191.json:
     "title": "Update eclib to eclib-20080310.p6.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4191",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: mabshoff
@@ -71,7 +71,7 @@ archive/issue_comments_030418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4191#issuecomment-30418",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

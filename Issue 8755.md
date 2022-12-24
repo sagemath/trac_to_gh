@@ -14,7 +14,7 @@ archive/issues_008755.json:
     "title": "modify sagenb-*/src/sagenb/spkg-dist to produce valid spkg's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8755",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -43,7 +43,7 @@ archive/issue_comments_080092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8755#issuecomment-80092",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_080093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8755#issuecomment-80093",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_080094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8755#issuecomment-80094",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_080095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8755#issuecomment-80095",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

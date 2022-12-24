@@ -14,7 +14,7 @@ archive/issues_007434.json:
     "title": "notebook: new modal jquery dialog boxes are covered by jmol 3d graphics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7434",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_062545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7434#issuecomment-62545",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_062549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7434#issuecomment-62549",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_062550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7434#issuecomment-62550",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_062551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7434#issuecomment-62551",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -160,16 +160,16 @@ Rebased for SageNB 0.6 + queue in comment.  Replaces earlier version.
 archive/issue_comments_062552.json:
 ```json
 {
-    "body": "Attachment [trac_7434-jmol_modal_dialogs.2.patch](tarball://root/attachments/some-uuid/ticket7434/trac_7434-jmol_modal_dialogs.2.patch) by mpatel created at 2010-01-25 02:53:08\n\nPlease ignore V2.  I've just noticed that the patch doesn't work in Cr4, IE8, and S4 on Windows XP.  It seems the WebKit browsers use `applet`s instead of `object`s.  IE8 uses `object`s, but the `type` attribute is empty.\n\nV3 fixes this with [jmolSetAppletCssClass](http://jmol.sourceforge.net/jslibrary/#jmolSetAppletCssClass) and `$('.jmol_applet')`.",
+    "body": "Attachment [trac_7434-jmol_modal_dialogs.2.patch](tarball://root/attachments/some-uuid/ticket7434/trac_7434-jmol_modal_dialogs.2.patch) by @qed777 created at 2010-01-25 02:53:08\n\nPlease ignore V2.  I've just noticed that the patch doesn't work in Cr4, IE8, and S4 on Windows XP.  It seems the WebKit browsers use `applet`s instead of `object`s.  IE8 uses `object`s, but the `type` attribute is empty.\n\nV3 fixes this with [jmolSetAppletCssClass](http://jmol.sourceforge.net/jslibrary/#jmolSetAppletCssClass) and `$('.jmol_applet')`.",
     "created_at": "2010-01-25T02:53:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7434#issuecomment-62552",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7434-jmol_modal_dialogs.2.patch](tarball://root/attachments/some-uuid/ticket7434/trac_7434-jmol_modal_dialogs.2.patch) by mpatel created at 2010-01-25 02:53:08
+Attachment [trac_7434-jmol_modal_dialogs.2.patch](tarball://root/attachments/some-uuid/ticket7434/trac_7434-jmol_modal_dialogs.2.patch) by @qed777 created at 2010-01-25 02:53:08
 
 Please ignore V2.  I've just noticed that the patch doesn't work in Cr4, IE8, and S4 on Windows XP.  It seems the WebKit browsers use `applet`s instead of `object`s.  IE8 uses `object`s, but the `type` attribute is empty.
 
@@ -187,7 +187,7 @@ archive/issue_comments_062553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7434#issuecomment-62553",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_062554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7434#issuecomment-62554",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -246,16 +246,16 @@ trac_7434-jmol_modal_dialogs.patch
 archive/issue_comments_062555.json:
 ```json
 {
-    "body": "Attachment [trac_7434-jmol_modal_dialogs.3.patch](tarball://root/attachments/some-uuid/ticket7434/trac_7434-jmol_modal_dialogs.3.patch) by mpatel created at 2010-01-25 02:56:05\n\nFix WebKit, IE8 hiding. Rebase vs. queue in comment.  Replaces previous.",
+    "body": "Attachment [trac_7434-jmol_modal_dialogs.3.patch](tarball://root/attachments/some-uuid/ticket7434/trac_7434-jmol_modal_dialogs.3.patch) by @qed777 created at 2010-01-25 02:56:05\n\nFix WebKit, IE8 hiding. Rebase vs. queue in comment.  Replaces previous.",
     "created_at": "2010-01-25T02:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7434#issuecomment-62555",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7434-jmol_modal_dialogs.3.patch](tarball://root/attachments/some-uuid/ticket7434/trac_7434-jmol_modal_dialogs.3.patch) by mpatel created at 2010-01-25 02:56:05
+Attachment [trac_7434-jmol_modal_dialogs.3.patch](tarball://root/attachments/some-uuid/ticket7434/trac_7434-jmol_modal_dialogs.3.patch) by @qed777 created at 2010-01-25 02:56:05
 
 Fix WebKit, IE8 hiding. Rebase vs. queue in comment.  Replaces previous.
 
@@ -271,7 +271,7 @@ archive/issue_comments_062556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7434#issuecomment-62556",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_062559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7434#issuecomment-62559",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

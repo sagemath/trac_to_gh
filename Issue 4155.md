@@ -3,7 +3,7 @@
 archive/issues_004155.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  alexghitza\n\nThe attached patch provides a significant speedup of John Voight's totally real field enumeration code. The patch moves `enumerate_totallyreal_fields_prim` into Cython (and thus `totallyreal.py` becomes `totallyreal.pyx`). Most of the speedup comes from explicitly declaring and being careful about types. A few small improvements to the Pari interface are thrown in, since they were written in the process of speeding up this code.\n\nWhile I haven't performed any sort of systematic test, it seems that this code offers a factor of at least 2X speedup for enumerating fields of degree 5 or 6. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4155\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  alexghitza\n\nThe attached patch provides a significant speedup of John Voight's totally real field enumeration code. The patch moves `enumerate_totallyreal_fields_prim` into Cython (and thus `totallyreal.py` becomes `totallyreal.pyx`). Most of the speedup comes from explicitly declaring and being careful about types. A few small improvements to the Pari interface are thrown in, since they were written in the process of speeding up this code.\n\nWhile I haven't performed any sort of systematic test, it seems that this code offers a factor of at least 2X speedup for enumerating fields of degree 5 or 6. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4155\n\n",
     "created_at": "2008-09-20T08:18:45Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004155.json:
     "title": "[with patch, needs review] Speed up totally real field enumeration code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4155",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 CC:  alexghitza
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4155
 archive/issue_comments_030168.json:
 ```json
 {
-    "body": "Attachment [trac-4155.patch](tarball://root/attachments/some-uuid/ticket4155/trac-4155.patch) by craigcitro created at 2008-09-20 08:19:04",
+    "body": "Attachment [trac-4155.patch](tarball://root/attachments/some-uuid/ticket4155/trac-4155.patch) by @craigcitro created at 2008-09-20 08:19:04",
     "created_at": "2008-09-20T08:19:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4155#issuecomment-30168",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4155.patch](tarball://root/attachments/some-uuid/ticket4155/trac-4155.patch) by craigcitro created at 2008-09-20 08:19:04
+Attachment [trac-4155.patch](tarball://root/attachments/some-uuid/ticket4155/trac-4155.patch) by @craigcitro created at 2008-09-20 08:19:04
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_030169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4155#issuecomment-30169",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_030170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4155#issuecomment-30170",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_030171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4155#issuecomment-30171",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_030173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4155#issuecomment-30173",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_030175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4155#issuecomment-30175",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

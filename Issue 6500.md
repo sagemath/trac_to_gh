@@ -3,7 +3,7 @@
 archive/issues_006500.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  jhpalmieri mvngu\n\nAs of 4.1.rc1 very few of the polynomial ring classes are in the reference manual; even the basic constructor function is missing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6500\n\n",
+    "body": "Assignee: tba\n\nCC:  @jhpalmieri mvngu\n\nAs of 4.1.rc1 very few of the polynomial ring classes are in the reference manual; even the basic constructor function is missing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6500\n\n",
     "created_at": "2009-07-09T14:39:15Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_006500.json:
     "title": "Improve reference manual coverage for polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6500",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 Assignee: tba
 
-CC:  jhpalmieri mvngu
+CC:  @jhpalmieri mvngu
 
 As of 4.1.rc1 very few of the polynomial ring classes are in the reference manual; even the basic constructor function is missing. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_052868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6500#issuecomment-52868",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -76,16 +76,16 @@ trac #n: <put commit message here>
 archive/issue_comments_052870.json:
 ```json
 {
-    "body": "Attachment [trac_6500-polynomial_docstrings.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500-polynomial_docstrings.patch) by davidloeffler created at 2009-07-09 15:22:57\n\nWell spotted -- I have uploaded another patch (overwriting the previous one) that has my username and a commit message on it. Thanks for the quick response.",
+    "body": "Attachment [trac_6500-polynomial_docstrings.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500-polynomial_docstrings.patch) by @loefflerd created at 2009-07-09 15:22:57\n\nWell spotted -- I have uploaded another patch (overwriting the previous one) that has my username and a commit message on it. Thanks for the quick response.",
     "created_at": "2009-07-09T15:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6500#issuecomment-52870",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6500-polynomial_docstrings.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500-polynomial_docstrings.patch) by davidloeffler created at 2009-07-09 15:22:57
+Attachment [trac_6500-polynomial_docstrings.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500-polynomial_docstrings.patch) by @loefflerd created at 2009-07-09 15:22:57
 
 Well spotted -- I have uploaded another patch (overwriting the previous one) that has my username and a commit message on it. Thanks for the quick response.
 
@@ -101,7 +101,7 @@ archive/issue_comments_052871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6500#issuecomment-52871",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -114,16 +114,16 @@ apply over previous patch
 archive/issue_comments_052872.json:
 ```json
 {
-    "body": "Attachment [trac_6500-polynomial_docstrings_2.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500-polynomial_docstrings_2.patch) by davidloeffler created at 2009-07-10 14:32:18\n\nHere's another patch in the same vein, covering multivariate polynomial rings.",
+    "body": "Attachment [trac_6500-polynomial_docstrings_2.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500-polynomial_docstrings_2.patch) by @loefflerd created at 2009-07-10 14:32:18\n\nHere's another patch in the same vein, covering multivariate polynomial rings.",
     "created_at": "2009-07-10T14:32:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6500#issuecomment-52872",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6500-polynomial_docstrings_2.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500-polynomial_docstrings_2.patch) by davidloeffler created at 2009-07-10 14:32:18
+Attachment [trac_6500-polynomial_docstrings_2.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500-polynomial_docstrings_2.patch) by @loefflerd created at 2009-07-10 14:32:18
 
 Here's another patch in the same vein, covering multivariate polynomial rings.
 
@@ -139,7 +139,7 @@ archive/issue_comments_052873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6500#issuecomment-52873",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -154,16 +154,16 @@ I don't think my patch needs much review, but I'll keep this marked as "needs re
 archive/issue_comments_052874.json:
 ```json
 {
-    "body": "Attachment [trac_6500_ref.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500_ref.patch) by jhpalmieri created at 2009-07-20 02:33:37\n\napply over previous patches",
+    "body": "Attachment [trac_6500_ref.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500_ref.patch) by @jhpalmieri created at 2009-07-20 02:33:37\n\napply over previous patches",
     "created_at": "2009-07-20T02:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6500#issuecomment-52874",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6500_ref.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500_ref.patch) by jhpalmieri created at 2009-07-20 02:33:37
+Attachment [trac_6500_ref.patch](tarball://root/attachments/some-uuid/ticket6500/trac_6500_ref.patch) by @jhpalmieri created at 2009-07-20 02:33:37
 
 apply over previous patches
 
@@ -179,7 +179,7 @@ archive/issue_comments_052875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6500#issuecomment-52875",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_052876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6500",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6500#issuecomment-52876",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

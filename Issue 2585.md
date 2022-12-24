@@ -3,7 +3,7 @@
 archive/issues_002585.json:
 ```json
 {
-    "body": "Assignee: roed\n\nFixes bug in Qp, Zp, etc that causes segmentation faults in the constructor.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2585\n\n",
+    "body": "Assignee: @roed314\n\nFixes bug in Qp, Zp, etc that causes segmentation faults in the constructor.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2585\n\n",
     "created_at": "2008-03-18T12:06:34Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_002585.json:
     "title": "[with-patch] padic bugfix - check=False in constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2585",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 Fixes bug in Qp, Zp, etc that causes segmentation faults in the constructor.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2585
 archive/issue_comments_017695.json:
 ```json
 {
-    "body": "Attachment [2585.patch](tarball://root/attachments/some-uuid/ticket2585/2585.patch) by mhansen created at 2008-03-19 01:15:14",
+    "body": "Attachment [2585.patch](tarball://root/attachments/some-uuid/ticket2585/2585.patch) by @mwhansen created at 2008-03-19 01:15:14",
     "created_at": "2008-03-19T01:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2585#issuecomment-17695",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2585.patch](tarball://root/attachments/some-uuid/ticket2585/2585.patch) by mhansen created at 2008-03-19 01:15:14
+Attachment [2585.patch](tarball://root/attachments/some-uuid/ticket2585/2585.patch) by @mwhansen created at 2008-03-19 01:15:14
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_017696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2585#issuecomment-17696",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

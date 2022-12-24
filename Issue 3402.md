@@ -14,7 +14,7 @@ archive/issues_003402.json:
     "title": "Digraph.incoming_edges forgets labels",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3402",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 Assignee: tbd
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3402
 archive/issue_comments_023868.json:
 ```json
 {
-    "body": "Changing assignee from tbd to rlm.",
+    "body": "Changing assignee from tbd to @rlmill.",
     "created_at": "2008-06-12T05:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3402#issuecomment-23868",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tbd to rlm.
+Changing assignee from tbd to @rlmill.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_023869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3402#issuecomment-23869",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -86,16 +86,16 @@ Changing component from algebra to graph theory.
 archive/issue_comments_023870.json:
 ```json
 {
-    "body": "Attachment [trac3402-set_edge_label.patch](tarball://root/attachments/some-uuid/ticket3402/trac3402-set_edge_label.patch) by rlm created at 2008-06-12 19:19:09",
+    "body": "Attachment [trac3402-set_edge_label.patch](tarball://root/attachments/some-uuid/ticket3402/trac3402-set_edge_label.patch) by @rlmill created at 2008-06-12 19:19:09",
     "created_at": "2008-06-12T19:19:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3402#issuecomment-23870",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac3402-set_edge_label.patch](tarball://root/attachments/some-uuid/ticket3402/trac3402-set_edge_label.patch) by rlm created at 2008-06-12 19:19:09
+Attachment [trac3402-set_edge_label.patch](tarball://root/attachments/some-uuid/ticket3402/trac3402-set_edge_label.patch) by @rlmill created at 2008-06-12 19:19:09
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_023871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3402#issuecomment-23871",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 

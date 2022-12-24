@@ -14,7 +14,7 @@ archive/issues_002425.json:
     "title": "[with patch; needs review] In multipolynomials, the function jacob() should be called gradient()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2425",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 Assignee: jbandlow@gmail.com
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2425
 archive/issue_comments_016416.json:
 ```json
 {
-    "body": "Attachment [gradient.patch](tarball://root/attachments/some-uuid/ticket2425/gradient.patch) by jbandlow created at 2008-03-07 23:09:09",
+    "body": "Attachment [gradient.patch](tarball://root/attachments/some-uuid/ticket2425/gradient.patch) by @jbandlow created at 2008-03-07 23:09:09",
     "created_at": "2008-03-07T23:09:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16416",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [gradient.patch](tarball://root/attachments/some-uuid/ticket2425/gradient.patch) by jbandlow created at 2008-03-07 23:09:09
+Attachment [gradient.patch](tarball://root/attachments/some-uuid/ticket2425/gradient.patch) by @jbandlow created at 2008-03-07 23:09:09
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_016418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16418",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_016419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16419",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_016420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16420",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_016421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16421",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_016422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2425",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16422",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

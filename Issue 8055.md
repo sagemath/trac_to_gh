@@ -3,7 +3,7 @@
 archive/issues_008055.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  schilly mvngu timdumol chapoton\n\nLet's showcase the many cool features of Sage on the Notebook login page!\n\nFor this we can use a carousel plug-in for jQuery.  Some searches and several experiments indicate that [jCarousel](http://sorgalla.com/projects/jcarousel/) is both featureful and relatively easy-to-use.\n\nNote: We can use the carousel in other ways, too, e.g., for slideshows.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8055\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @haraldschilly mvngu @TimDumol @fchapoton\n\nLet's showcase the many cool features of Sage on the Notebook login page!\n\nFor this we can use a carousel plug-in for jQuery.  Some searches and several experiments indicate that [jCarousel](http://sorgalla.com/projects/jcarousel/) is both featureful and relatively easy-to-use.\n\nNote: We can use the carousel in other ways, too, e.g., for slideshows.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8055\n\n",
     "created_at": "2010-01-25T13:51:51Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008055.json:
     "title": "Add the jCarousel plug-in and set up a Sage showcase for the login page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8055",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  schilly mvngu timdumol chapoton
+CC:  @haraldschilly mvngu @TimDumol @fchapoton
 
 Let's showcase the many cool features of Sage on the Notebook login page!
 
@@ -43,7 +43,7 @@ archive/issue_comments_070477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8055#issuecomment-70477",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_070478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8055#issuecomment-70478",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -74,16 +74,16 @@ Changing status from new to needs_review.
 archive/issue_comments_070479.json:
 ```json
 {
-    "body": "Attachment [trac_8055-carousel_showcase.patch](tarball://root/attachments/some-uuid/ticket8055/trac_8055-carousel_showcase.patch) by mpatel created at 2010-01-25 14:21:44\n\nNote: This depends on the SageNB 0.7 spkg at #8051.\n\nThe patch puts an auto-scrolling image carousel on the login page.  I've used several images from sagemath.org as an example.  [Here's a mockup.](http://boxen.math.washington.edu/home/mpatel/trac/8055/login_showcase.html)  But we could\n\n* Add screenshots.\n* Include links to more documentation, published worksheets, etc.\n* Make it customizable.\n* Get the server to generate images, etc.\n* Insert any HTML that fits in the space.",
+    "body": "Attachment [trac_8055-carousel_showcase.patch](tarball://root/attachments/some-uuid/ticket8055/trac_8055-carousel_showcase.patch) by @qed777 created at 2010-01-25 14:21:44\n\nNote: This depends on the SageNB 0.7 spkg at #8051.\n\nThe patch puts an auto-scrolling image carousel on the login page.  I've used several images from sagemath.org as an example.  [Here's a mockup.](http://boxen.math.washington.edu/home/mpatel/trac/8055/login_showcase.html)  But we could\n\n* Add screenshots.\n* Include links to more documentation, published worksheets, etc.\n* Make it customizable.\n* Get the server to generate images, etc.\n* Insert any HTML that fits in the space.",
     "created_at": "2010-01-25T14:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8055#issuecomment-70479",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8055-carousel_showcase.patch](tarball://root/attachments/some-uuid/ticket8055/trac_8055-carousel_showcase.patch) by mpatel created at 2010-01-25 14:21:44
+Attachment [trac_8055-carousel_showcase.patch](tarball://root/attachments/some-uuid/ticket8055/trac_8055-carousel_showcase.patch) by @qed777 created at 2010-01-25 14:21:44
 
 Note: This depends on the SageNB 0.7 spkg at #8051.
 
@@ -107,7 +107,7 @@ archive/issue_comments_070480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8055#issuecomment-70480",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_070481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8055#issuecomment-70481",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_070482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8055#issuecomment-70482",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_070483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8055#issuecomment-70483",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_070484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8055#issuecomment-70484",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_070485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8055#issuecomment-70485",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

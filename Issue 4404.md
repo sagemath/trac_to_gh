@@ -3,7 +3,7 @@
 archive/issues_004404.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  burcin kcrisman was mhansen\n\nAs requested by Stan Flavia on sage-support, replace the single \"Download to a file\" menu option in the notebook by two options:\n* Download to a file\n* Download to a file w/ history\n\nThe first would download a version of the file without the revision history.  The second would do what the current \"Download to a file\" command does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4404\n\n",
+    "body": "Assignee: boothby\n\nCC:  @burcin @kcrisman @williamstein @mwhansen\n\nAs requested by Stan Flavia on sage-support, replace the single \"Download to a file\" menu option in the notebook by two options:\n* Download to a file\n* Download to a file w/ history\n\nThe first would download a version of the file without the revision history.  The second would do what the current \"Download to a file\" command does.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4404\n\n",
     "created_at": "2008-10-30T18:36:03Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_004404.json:
     "title": "notebook -- split \"Download to a file\" into two menu options, one without revision history",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4404",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
 
-CC:  burcin kcrisman was mhansen
+CC:  @burcin @kcrisman @williamstein @mwhansen
 
 As requested by Stan Flavia on sage-support, replace the single "Download to a file" menu option in the notebook by two options:
 * Download to a file
@@ -43,7 +43,7 @@ archive/issue_comments_032383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4404#issuecomment-32383",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_032384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4404#issuecomment-32384",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_032385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4404#issuecomment-32385",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_032386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4404",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4404#issuecomment-32386",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

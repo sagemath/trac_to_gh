@@ -14,7 +14,7 @@ archive/issues_004334.json:
     "title": "[with spkg, needs review] Updated experimental Mayavi2 spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4334",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: mabshoff
@@ -46,7 +46,7 @@ archive/issue_comments_031778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31778",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_031779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31779",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_031780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31780",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_031781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31781",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_031782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31782",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_031785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31785",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

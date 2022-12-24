@@ -14,7 +14,7 @@ archive/issues_000660.json:
     "title": "allow reverse order if converting GF(p^n) element to GF(p)^n element [with patch]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/660",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/660
 archive/issue_comments_003432.json:
 ```json
 {
-    "body": "Attachment [gfqvectorreverse.patch](tarball://root/attachments/some-uuid/ticket660/gfqvectorreverse.patch) by malb created at 2007-09-15 13:10:21",
+    "body": "Attachment [gfqvectorreverse.patch](tarball://root/attachments/some-uuid/ticket660/gfqvectorreverse.patch) by @malb created at 2007-09-15 13:10:21",
     "created_at": "2007-09-15T13:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/660#issuecomment-3432",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [gfqvectorreverse.patch](tarball://root/attachments/some-uuid/ticket660/gfqvectorreverse.patch) by malb created at 2007-09-15 13:10:21
+Attachment [gfqvectorreverse.patch](tarball://root/attachments/some-uuid/ticket660/gfqvectorreverse.patch) by @malb created at 2007-09-15 13:10:21
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_003433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/660#issuecomment-3433",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_003434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/660#issuecomment-3434",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_003435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/660#issuecomment-3435",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

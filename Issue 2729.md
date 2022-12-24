@@ -3,7 +3,7 @@
 archive/issues_002729.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\nFor example, try \n\n\n```\nsum([sphere((1+r,2,3), r/10, color='red') for r in [1..10]]).show(aspect_ratio=[1,1,1])\n```\n\n\nSee http://www.mail-archive.com/jmol-users`@`lists.sourceforge.net/msg07676.html (thanks to jason for this tip)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2729\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nFor example, try \n\n\n```\nsum([sphere((1+r,2,3), r/10, color='red') for r in [1..10]]).show(aspect_ratio=[1,1,1])\n```\n\n\nSee http://www.mail-archive.com/jmol-users`@`lists.sourceforge.net/msg07676.html (thanks to jason for this tip)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2729\n\n",
     "created_at": "2008-03-30T00:01:21Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_002729.json:
     "title": "[with patch] tiny jmol spheres have holes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2729",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 For example, try 
 
@@ -47,7 +47,7 @@ archive/issue_comments_018791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18791",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -60,16 +60,16 @@ positive review pending the deletion of the print statement.
 archive/issue_comments_018792.json:
 ```json
 {
-    "body": "Attachment [2729-jmol-holes.patch](tarball://root/attachments/some-uuid/ticket2729/2729-jmol-holes.patch) by robertwb created at 2008-03-30 00:38:35\n\nOK, print statement is gone.",
+    "body": "Attachment [2729-jmol-holes.patch](tarball://root/attachments/some-uuid/ticket2729/2729-jmol-holes.patch) by @robertwb created at 2008-03-30 00:38:35\n\nOK, print statement is gone.",
     "created_at": "2008-03-30T00:38:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18792",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2729-jmol-holes.patch](tarball://root/attachments/some-uuid/ticket2729/2729-jmol-holes.patch) by robertwb created at 2008-03-30 00:38:35
+Attachment [2729-jmol-holes.patch](tarball://root/attachments/some-uuid/ticket2729/2729-jmol-holes.patch) by @robertwb created at 2008-03-30 00:38:35
 
 OK, print statement is gone.
 
@@ -85,7 +85,7 @@ archive/issue_comments_018793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2729",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18793",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

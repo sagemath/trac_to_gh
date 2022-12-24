@@ -3,7 +3,7 @@
 archive/issues_007989.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman rbeezer mhansen hedtke tscrim\n\nRight now, not all matrices can compute minpolys.  This patch exposes these matrices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7989\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @rbeezer @mwhansen @hedtke @tscrim\n\nRight now, not all matrices can compute minpolys.  This patch exposes these matrices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7989\n\n",
     "created_at": "2010-01-19T02:42:47Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_007989.json:
     "title": "Minpoly doesn't work for all matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7989",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman rbeezer mhansen hedtke tscrim
+CC:  @kcrisman @rbeezer @mwhansen @hedtke @tscrim
 
 Right now, not all matrices can compute minpolys.  This patch exposes these matrices.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7989
 archive/issue_comments_069774.json:
 ```json
 {
-    "body": "Attachment [trac-7989-minpoly-test.patch](tarball://root/attachments/some-uuid/ticket7989/trac-7989-minpoly-test.patch) by jason created at 2010-01-19 02:50:48\n\nHere are the bugs (doctests that fail) this patch exposes:\n\n\n```\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix1.pyx\"\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix_dense.pyx\"\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix_generic_dense.pyx\"\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix_integer_2x2.pyx\"\n```\n",
+    "body": "Attachment [trac-7989-minpoly-test.patch](tarball://root/attachments/some-uuid/ticket7989/trac-7989-minpoly-test.patch) by @jasongrout created at 2010-01-19 02:50:48\n\nHere are the bugs (doctests that fail) this patch exposes:\n\n\n```\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix1.pyx\"\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix_dense.pyx\"\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix_generic_dense.pyx\"\n\tsage -t  \"4.3.1.rc0/devel/sage-main/sage/matrix/matrix_integer_2x2.pyx\"\n```\n",
     "created_at": "2010-01-19T02:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7989#issuecomment-69774",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7989-minpoly-test.patch](tarball://root/attachments/some-uuid/ticket7989/trac-7989-minpoly-test.patch) by jason created at 2010-01-19 02:50:48
+Attachment [trac-7989-minpoly-test.patch](tarball://root/attachments/some-uuid/ticket7989/trac-7989-minpoly-test.patch) by @jasongrout created at 2010-01-19 02:50:48
 
 Here are the bugs (doctests that fail) this patch exposes:
 
@@ -68,7 +68,7 @@ archive/issue_comments_069775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7989#issuecomment-69775",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_069776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7989#issuecomment-69776",
-    "user": "hedtke"
+    "user": "@hedtke"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_069777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7989#issuecomment-69777",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_069778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7989#issuecomment-69778",
-    "user": "hedtke"
+    "user": "@hedtke"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_069779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7989#issuecomment-69779",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_069780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7989#issuecomment-69780",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_069781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7989#issuecomment-69781",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_069786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7989#issuecomment-69786",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_069787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7989#issuecomment-69787",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_069788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7989#issuecomment-69788",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_069789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7989#issuecomment-69789",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_069790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7989",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7989#issuecomment-69790",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

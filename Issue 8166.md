@@ -3,7 +3,7 @@
 archive/issues_008166.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ylchapuy jason mvngu\n\nSince the new version of NetworkX is being merged into Sage, we could use their max matching algorithm. We already have one, though it uses Linear Programming and is optional :\n\nThe efficiency of these two algorithms have to be compared !\n\nBased upon this, the default behaviour could be :\n* To always use NetworkX\n* Only use it if there is no LP available\n* Not to use it if not asked explicitely\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8166\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  ylchapuy @jasongrout mvngu\n\nSince the new version of NetworkX is being merged into Sage, we could use their max matching algorithm. We already have one, though it uses Linear Programming and is optional :\n\nThe efficiency of these two algorithms have to be compared !\n\nBased upon this, the default behaviour could be :\n* To always use NetworkX\n* Only use it if there is no LP available\n* Not to use it if not asked explicitely\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8166\n\n",
     "created_at": "2010-02-03T08:45:32Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_008166.json:
     "title": "Expose max_weight_matching from NetworkX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8166",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  ylchapuy jason mvngu
+CC:  ylchapuy @jasongrout mvngu
 
 Since the new version of NetworkX is being merged into Sage, we could use their max matching algorithm. We already have one, though it uses Linear Programming and is optional :
 
@@ -48,7 +48,7 @@ archive/issue_comments_071848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8166#issuecomment-71848",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_071849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8166#issuecomment-71849",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_071850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8166#issuecomment-71850",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_071852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8166#issuecomment-71852",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_071856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8166#issuecomment-71856",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_071857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8166#issuecomment-71857",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_071858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8166",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8166#issuecomment-71858",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

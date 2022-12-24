@@ -3,7 +3,7 @@
 archive/issues_008951.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  was mvngu juanjose.garciaripoll@googlemail.com kcrisman nbruin\n\nAs reported here\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/54544d8649bd027a\n\nthere is a problem when temp files created during the build of ECL. A correct fix requires changes made to ECL source code, but as a temporary fix, it may be sufficient to remove /tmp/ECL* after building ecl. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8951\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @williamstein mvngu juanjose.garciaripoll@googlemail.com @kcrisman @nbruin\n\nAs reported here\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/54544d8649bd027a\n\nthere is a problem when temp files created during the build of ECL. A correct fix requires changes made to ECL source code, but as a temporary fix, it may be sufficient to remove /tmp/ECL* after building ecl. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8951\n\n",
     "created_at": "2010-05-11T20:38:47Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_008951.json:
 ```
 Assignee: drkirkby
 
-CC:  was mvngu juanjose.garciaripoll@googlemail.com kcrisman nbruin
+CC:  @williamstein mvngu juanjose.garciaripoll@googlemail.com @kcrisman @nbruin
 
 As reported here
 
@@ -93,7 +93,7 @@ archive/issue_comments_082442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8951#issuecomment-82442",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_082449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8951#issuecomment-82449",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_082450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8951#issuecomment-82450",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_082451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8951#issuecomment-82451",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_082452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8951#issuecomment-82452",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_082454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8951#issuecomment-82454",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_082455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8951#issuecomment-82455",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_082456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8951#issuecomment-82456",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -534,7 +534,7 @@ archive/issue_comments_082461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8951#issuecomment-82461",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_082462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8951",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8951#issuecomment-82462",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 

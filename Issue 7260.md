@@ -3,7 +3,7 @@
 archive/issues_007260.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  mtaranes cremona\n\nKeywords: inverse_mod\n\nAt present the function `inverse_mod` (which computes the inverse of \nelements of number fields modulo integral ideals) suffers from several \ndefects.\n\n1.  It does not work for elements of relative number fields, though it \ndoes for an element of the rings of integers of such a number field.\n\n2.  The behaviour is different depending whether the element's parent is \nthe number field or the maximal order.  Thus with 4.1.2:\n\n```\nsage: k.<a> = NumberField(x^3 + 11)\nsage: R = k.ring_of_integers()\nsage: (a + 13).inverse_mod(k.ideal(a^2))\n-3*a - 5\nsage: R(a + 13).inverse_mod(k.ideal(a^2))\n-123*a^2 + 8*a - 104\n```\n\nThis is because the field version of the function applies `small_residue` \nto the results of the computation, while the order versions do not.\nMoreover\n\n```\nsage: R(a + 13).inverse_mod(k.ideal(a^2)).parent() == k\nTrue\n```\n\nwhen it would make more sense if the inverse of an element of R was an \nelement of R.\n\n3.  Error messages are inconsistent.\n\nThe attached patch deals with these defects and also makes the code run a \nbit faster in some cases.  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7260\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  mtaranes @JohnCremona\n\nKeywords: inverse_mod\n\nAt present the function `inverse_mod` (which computes the inverse of \nelements of number fields modulo integral ideals) suffers from several \ndefects.\n\n1.  It does not work for elements of relative number fields, though it \ndoes for an element of the rings of integers of such a number field.\n\n2.  The behaviour is different depending whether the element's parent is \nthe number field or the maximal order.  Thus with 4.1.2:\n\n```\nsage: k.<a> = NumberField(x^3 + 11)\nsage: R = k.ring_of_integers()\nsage: (a + 13).inverse_mod(k.ideal(a^2))\n-3*a - 5\nsage: R(a + 13).inverse_mod(k.ideal(a^2))\n-123*a^2 + 8*a - 104\n```\n\nThis is because the field version of the function applies `small_residue` \nto the results of the computation, while the order versions do not.\nMoreover\n\n```\nsage: R(a + 13).inverse_mod(k.ideal(a^2)).parent() == k\nTrue\n```\n\nwhen it would make more sense if the inverse of an element of R was an \nelement of R.\n\n3.  Error messages are inconsistent.\n\nThe attached patch deals with these defects and also makes the code run a \nbit faster in some cases.  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7260\n\n",
     "created_at": "2009-10-21T08:54:00Z",
     "labels": [
         "number fields",
@@ -17,9 +17,9 @@ archive/issues_007260.json:
     "user": "fwclarke"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  mtaranes cremona
+CC:  mtaranes @JohnCremona
 
 Keywords: inverse_mod
 
@@ -113,7 +113,7 @@ archive/issue_comments_060300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7260#issuecomment-60300",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_060301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7260#issuecomment-60301",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_060302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7260#issuecomment-60302",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

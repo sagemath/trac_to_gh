@@ -14,7 +14,7 @@ archive/issues_004248.json:
     "title": "aspect_ratio is buggy in plot3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4248",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4248
 archive/issue_comments_030883.json:
 ```json
 {
-    "body": "Attachment [4248.patch](tarball://root/attachments/some-uuid/ticket4248/4248.patch) by jhpalmieri created at 2008-10-20 19:15:01",
+    "body": "Attachment [4248.patch](tarball://root/attachments/some-uuid/ticket4248/4248.patch) by @jhpalmieri created at 2008-10-20 19:15:01",
     "created_at": "2008-10-20T19:15:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4248#issuecomment-30883",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [4248.patch](tarball://root/attachments/some-uuid/ticket4248/4248.patch) by jhpalmieri created at 2008-10-20 19:15:01
+Attachment [4248.patch](tarball://root/attachments/some-uuid/ticket4248/4248.patch) by @jhpalmieri created at 2008-10-20 19:15:01
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_030884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4248#issuecomment-30884",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

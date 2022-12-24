@@ -3,7 +3,7 @@
 archive/issues_008114.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  aghitza\n\nI forgot to test my fix from #8042 on 32-bit platforms, and the fix causes doctest failures anywhere that `long` is smaller than 64 bits. I'm attaching a simple patch to fix this -- we just don't perform that test on 32-bit platforms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8114\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  aghitza\n\nI forgot to test my fix from #8042 on 32-bit platforms, and the fix causes doctest failures anywhere that `long` is smaller than 64 bits. I'm attaching a simple patch to fix this -- we just don't perform that test on 32-bit platforms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8114\n\n",
     "created_at": "2010-01-28T22:28:32Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_008114.json:
     "title": "doctest failure in `sage/libs/cremona/newforms.pyx` on 32-bit machines from #8042",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8114",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  aghitza
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8114
 archive/issue_comments_071237.json:
 ```json
 {
-    "body": "Attachment [trac_8114.patch](tarball://root/attachments/some-uuid/ticket8114/trac_8114.patch) by craigcitro created at 2010-01-28 22:32:21",
+    "body": "Attachment [trac_8114.patch](tarball://root/attachments/some-uuid/ticket8114/trac_8114.patch) by @craigcitro created at 2010-01-28 22:32:21",
     "created_at": "2010-01-28T22:32:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8114#issuecomment-71237",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_8114.patch](tarball://root/attachments/some-uuid/ticket8114/trac_8114.patch) by craigcitro created at 2010-01-28 22:32:21
+Attachment [trac_8114.patch](tarball://root/attachments/some-uuid/ticket8114/trac_8114.patch) by @craigcitro created at 2010-01-28 22:32:21
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_071238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8114#issuecomment-71238",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_071239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8114#issuecomment-71239",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_071240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8114#issuecomment-71240",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,16 +119,16 @@ Changing priority from major to blocker.
 archive/issue_comments_071241.json:
 ```json
 {
-    "body": "Attachment [trac_8114-part2.patch](tarball://root/attachments/some-uuid/ticket8114/trac_8114-part2.patch) by was created at 2010-01-28 23:08:54",
+    "body": "Attachment [trac_8114-part2.patch](tarball://root/attachments/some-uuid/ticket8114/trac_8114-part2.patch) by @williamstein created at 2010-01-28 23:08:54",
     "created_at": "2010-01-28T23:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8114#issuecomment-71241",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8114-part2.patch](tarball://root/attachments/some-uuid/ticket8114/trac_8114-part2.patch) by was created at 2010-01-28 23:08:54
+Attachment [trac_8114-part2.patch](tarball://root/attachments/some-uuid/ticket8114/trac_8114-part2.patch) by @williamstein created at 2010-01-28 23:08:54
 
 
 
@@ -142,7 +142,7 @@ archive/issue_comments_071242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8114#issuecomment-71242",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_071243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8114#issuecomment-71243",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

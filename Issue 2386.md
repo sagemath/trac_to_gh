@@ -14,7 +14,7 @@ archive/issues_002386.json:
     "title": "copy and pasting matrices doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2386",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_016107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2386#issuecomment-16107",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_016108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2386#issuecomment-16108",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_016109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2386",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2386#issuecomment-16109",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007016.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  wstein mabshoff roed\n\nKeywords: padic, mod, %\n\nThe operation x % n for p-adic numbers x and integers n currently depends on the creation method of the p-adic number (not just it's equality).  It also does not seem to return meaningful results!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7016\n\n",
+    "body": "Assignee: tbd\n\nCC:  wstein mabshoff @roed314\n\nKeywords: padic, mod, %\n\nThe operation x % n for p-adic numbers x and integers n currently depends on the creation method of the p-adic number (not just it's equality).  It also does not seem to return meaningful results!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7016\n\n",
     "created_at": "2009-09-26T01:54:51Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_007016.json:
     "title": "Bizarre results when taking the mod of a p-adic number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7016",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 Assignee: tbd
 
-CC:  wstein mabshoff roed
+CC:  wstein mabshoff @roed314
 
 Keywords: padic, mod, %
 
@@ -41,7 +41,7 @@ archive/issue_comments_058064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7016#issuecomment-58064",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_058065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7016#issuecomment-58065",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_058066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7016#issuecomment-58066",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_058067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7016#issuecomment-58067",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_058068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7016#issuecomment-58068",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_058071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7016#issuecomment-58071",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_058072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7016#issuecomment-58072",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_058073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7016#issuecomment-58073",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_058076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7016#issuecomment-58076",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_058079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7016#issuecomment-58079",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_058080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7016#issuecomment-58080",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_058081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7016",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7016#issuecomment-58081",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

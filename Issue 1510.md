@@ -3,7 +3,7 @@
 archive/issues_001510.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\nI am using JSON objects (http://json.org) as a language neutral way to allow SAGE to communicate with clients.  I have installed SimpleJSON (http://cheeseshop.python.org/pypi/simplejson) on a SAGE server and have it sending 2D plot data to an applet in the notebook.  I would now like to request that SimpleJSON be added to SAGE.\n\nIn order to test SAGE->Applet communications using JSON, perform the following steps:\n\n1) Install SimpleJSON in SAGE.  The user must be able to import SimpleJSON by entering \"import simplejson\" in a cell.\n\n2) Paste the following code into CELL 0 of a new worksheet and execute it in order to launch the applet:\n\n\n```\nhtml('<applet id=\"mathrider\" code=\"org.mathrider.MathRider.class\" width=\"800\" height=\"650\" codebase=\"http://sage.math.washington.edu/home/tkosan/mathrider/\" archive=\"mathrider.jar\" MAYSCRIPT></applet>')\n```\n\n\n3) After the applet launches, select the \"Cell\" tab, paste the following code into the \"Send Cell\" text area, and execute it with <shift><tab>.\n\n\n```\na = MathRider()\na.show(plot(2*x,0,1))\n```\n\n\n4) The code will be sent to SAGE for evaluation and a JSON object which contains the plot data will be returned to the applet.\n\n5) The plot will then be displayed in the \"2DPlot\" tab.\n\nIf you would like to see the data that is returned by the above code, just execute it in a blank cell in the notebook.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1510\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nI am using JSON objects (http://json.org) as a language neutral way to allow SAGE to communicate with clients.  I have installed SimpleJSON (http://cheeseshop.python.org/pypi/simplejson) on a SAGE server and have it sending 2D plot data to an applet in the notebook.  I would now like to request that SimpleJSON be added to SAGE.\n\nIn order to test SAGE->Applet communications using JSON, perform the following steps:\n\n1) Install SimpleJSON in SAGE.  The user must be able to import SimpleJSON by entering \"import simplejson\" in a cell.\n\n2) Paste the following code into CELL 0 of a new worksheet and execute it in order to launch the applet:\n\n\n```\nhtml('<applet id=\"mathrider\" code=\"org.mathrider.MathRider.class\" width=\"800\" height=\"650\" codebase=\"http://sage.math.washington.edu/home/tkosan/mathrider/\" archive=\"mathrider.jar\" MAYSCRIPT></applet>')\n```\n\n\n3) After the applet launches, select the \"Cell\" tab, paste the following code into the \"Send Cell\" text area, and execute it with <shift><tab>.\n\n\n```\na = MathRider()\na.show(plot(2*x,0,1))\n```\n\n\n4) The code will be sent to SAGE for evaluation and a JSON object which contains the plot data will be returned to the applet.\n\n5) The plot will then be displayed in the \"2DPlot\" tab.\n\nIf you would like to see the data that is returned by the above code, just execute it in a blank cell in the notebook.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1510\n\n",
     "created_at": "2007-12-14T18:15:26Z",
     "labels": [
         "packages: standard",
@@ -17,9 +17,9 @@ archive/issues_001510.json:
     "user": "tkosan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 I am using JSON objects (http://json.org) as a language neutral way to allow SAGE to communicate with clients.  I have installed SimpleJSON (http://cheeseshop.python.org/pypi/simplejson) on a SAGE server and have it sending 2D plot data to an applet in the notebook.  I would now like to request that SimpleJSON be added to SAGE.
 
@@ -63,7 +63,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/1510
 archive/issue_comments_009670.json:
 ```json
 {
-    "body": "Changing assignee from was to tkosan.",
+    "body": "Changing assignee from @williamstein to tkosan.",
     "created_at": "2008-01-20T10:41:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_comment",
@@ -72,7 +72,7 @@ archive/issue_comments_009670.json:
 }
 ```
 
-Changing assignee from was to tkosan.
+Changing assignee from @williamstein to tkosan.
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_009673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1510#issuecomment-9673",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_009674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1510#issuecomment-9674",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_009675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1510#issuecomment-9675",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_009676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1510#issuecomment-9676",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_009678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1510#issuecomment-9678",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_009679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1510#issuecomment-9679",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -286,7 +286,7 @@ I don't know about pickling and so on, except that as it stands, if you do somet
 archive/issue_comments_009680.json:
 ```json
 {
-    "body": "Changing assignee from tkosan to was.",
+    "body": "Changing assignee from tkosan to @williamstein.",
     "created_at": "2009-06-02T05:48:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_comment",
@@ -295,7 +295,7 @@ archive/issue_comments_009680.json:
 }
 ```
 
-Changing assignee from tkosan to was.
+Changing assignee from tkosan to @williamstein.
 
 
 
@@ -327,7 +327,7 @@ archive/issue_comments_009682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1510#issuecomment-9682",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_009683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1510#issuecomment-9683",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_009684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1510#issuecomment-9684",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

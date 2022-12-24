@@ -3,7 +3,7 @@
 archive/issues_009089.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  robertwb mhampton kcrisman slabbe ppurka\n\nIn an attempt to optimize, in some cases the __add__ method of Graphics3dGroup modifies its arguments instead of returning a new Graphics3dGroup object.  This breaks the user expectation, as illustrated below:\n\n\n```\na=point3d([1,0,0])+point3d([0,1,0])\nb=point3d([0,0,1])\na # shows 2 points\na+b # shows all 3 points\na # Now this shows 3 points!!!\n```\n\n\nThe attached patch deletes the offending optimization.  If fast summing is needed, then the user can either create a Graphics3dGroup object themselves, or use something like `sage.misc.misc.balanced_sum`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9089\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb mhampton @kcrisman @seblabbe @ppurka\n\nIn an attempt to optimize, in some cases the __add__ method of Graphics3dGroup modifies its arguments instead of returning a new Graphics3dGroup object.  This breaks the user expectation, as illustrated below:\n\n\n```\na=point3d([1,0,0])+point3d([0,1,0])\nb=point3d([0,0,1])\na # shows 2 points\na+b # shows all 3 points\na # Now this shows 3 points!!!\n```\n\n\nThe attached patch deletes the offending optimization.  If fast summing is needed, then the user can either create a Graphics3dGroup object themselves, or use something like `sage.misc.misc.balanced_sum`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9089\n\n",
     "created_at": "2010-05-29T20:21:42Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009089.json:
     "title": "Graphics3dGroup __add__ modifies its arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9089",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  robertwb mhampton kcrisman slabbe ppurka
+CC:  @robertwb mhampton @kcrisman @seblabbe @ppurka
 
 In an attempt to optimize, in some cases the __add__ method of Graphics3dGroup modifies its arguments instead of returning a new Graphics3dGroup object.  This breaks the user expectation, as illustrated below:
 
@@ -51,7 +51,7 @@ archive/issue_comments_084405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84405",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -64,16 +64,16 @@ Changing component from algebra to graphics.
 archive/issue_comments_084406.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to jason, was.",
+    "body": "Changing assignee from @aghitza to jason, was.",
     "created_at": "2010-05-29T20:21:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84406",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from AlexGhitza to jason, was.
+Changing assignee from @aghitza to jason, was.
 
 
 
@@ -82,16 +82,16 @@ Changing assignee from AlexGhitza to jason, was.
 archive/issue_comments_084407.json:
 ```json
 {
-    "body": "Attachment [trac-9089-graphics3d.patch](tarball://root/attachments/some-uuid/ticket9089/trac-9089-graphics3d.patch) by jason created at 2010-05-29 20:42:55\n\nCredit goes to Ben Woodruff for reporting this issue.",
+    "body": "Attachment [trac-9089-graphics3d.patch](tarball://root/attachments/some-uuid/ticket9089/trac-9089-graphics3d.patch) by @jasongrout created at 2010-05-29 20:42:55\n\nCredit goes to Ben Woodruff for reporting this issue.",
     "created_at": "2010-05-29T20:42:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84407",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9089-graphics3d.patch](tarball://root/attachments/some-uuid/ticket9089/trac-9089-graphics3d.patch) by jason created at 2010-05-29 20:42:55
+Attachment [trac-9089-graphics3d.patch](tarball://root/attachments/some-uuid/ticket9089/trac-9089-graphics3d.patch) by @jasongrout created at 2010-05-29 20:42:55
 
 Credit goes to Ben Woodruff for reporting this issue.
 
@@ -107,7 +107,7 @@ archive/issue_comments_084408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84408",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_084409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84409",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_084410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84410",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_084411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84411",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_084412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84412",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_084413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84413",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_084414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84414",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_084415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84415",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_084416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84416",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_084417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84417",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_084418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84418",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_084419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84419",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -414,16 +414,16 @@ sage -t  -long devel/sage/sage/plot/plot3d/shapes2.py # 5 doctests failed
 archive/issue_comments_084420.json:
 ```json
 {
-    "body": "Attachment [trac-9089-graphics3d-2.patch](tarball://root/attachments/some-uuid/ticket9089/trac-9089-graphics3d-2.patch) by jason created at 2010-09-07 17:53:12\n\napply on top of previous patches",
+    "body": "Attachment [trac-9089-graphics3d-2.patch](tarball://root/attachments/some-uuid/ticket9089/trac-9089-graphics3d-2.patch) by @jasongrout created at 2010-09-07 17:53:12\n\napply on top of previous patches",
     "created_at": "2010-09-07T17:53:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84420",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9089-graphics3d-2.patch](tarball://root/attachments/some-uuid/ticket9089/trac-9089-graphics3d-2.patch) by jason created at 2010-09-07 17:53:12
+Attachment [trac-9089-graphics3d-2.patch](tarball://root/attachments/some-uuid/ticket9089/trac-9089-graphics3d-2.patch) by @jasongrout created at 2010-09-07 17:53:12
 
 apply on top of previous patches
 
@@ -439,7 +439,7 @@ archive/issue_comments_084421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84421",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_084422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84422",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_084423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84423",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_084424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84424",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -511,7 +511,7 @@ archive/issue_comments_084425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84425",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_084426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84426",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -547,7 +547,7 @@ archive/issue_comments_084427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84427",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_084428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84428",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_084429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84429",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -666,7 +666,7 @@ archive/issue_comments_084430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84430",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -684,7 +684,7 @@ archive/issue_comments_084431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84431",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -702,7 +702,7 @@ archive/issue_comments_084432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84432",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -720,7 +720,7 @@ archive/issue_comments_084433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9089",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9089#issuecomment-84433",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

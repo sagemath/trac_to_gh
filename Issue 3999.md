@@ -14,7 +14,7 @@ archive/issues_003999.json:
     "title": "[with patch, needs review] Wrapper class to treat additive groups as multiplicative goups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3999",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -67,7 +67,7 @@ archive/issue_comments_028723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3999#issuecomment-28723",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_028724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3999#issuecomment-28724",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_028725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3999#issuecomment-28725",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_028726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3999#issuecomment-28726",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_028727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3999#issuecomment-28727",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_028728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3999#issuecomment-28728",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -278,16 +278,16 @@ Most of my patch is not about coercion, but anyone doesn't understand how coerci
 archive/issue_comments_028729.json:
 ```json
 {
-    "body": "Attachment [3999-multwrap.patch](tarball://root/attachments/some-uuid/ticket3999/3999-multwrap.patch) by robertwb created at 2008-12-07 10:44:07",
+    "body": "Attachment [3999-multwrap.patch](tarball://root/attachments/some-uuid/ticket3999/3999-multwrap.patch) by @robertwb created at 2008-12-07 10:44:07",
     "created_at": "2008-12-07T10:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3999#issuecomment-28729",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3999-multwrap.patch](tarball://root/attachments/some-uuid/ticket3999/3999-multwrap.patch) by robertwb created at 2008-12-07 10:44:07
+Attachment [3999-multwrap.patch](tarball://root/attachments/some-uuid/ticket3999/3999-multwrap.patch) by @robertwb created at 2008-12-07 10:44:07
 
 
 
@@ -301,7 +301,7 @@ archive/issue_comments_028730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3999#issuecomment-28730",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_028733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3999#issuecomment-28733",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_028734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3999#issuecomment-28734",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_028737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3999",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3999#issuecomment-28737",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

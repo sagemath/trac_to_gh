@@ -3,7 +3,7 @@
 archive/issues_003005.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is an example of computing an endomorphism ring of a J1 modular abelian variety -- it fails because of some mysterious issue in sage-3.0. \n\n\n```\nage: J = J1(17)\nsage: D = J.decomposition(); D\n[\nSimple abelian subvariety 17aG1(1,17) of dimension 1 of J1(17),\nSimple abelian subvariety 17bG1(1,17) of dimension 4 of J1(17)\n]\nsage: Phi, _ = D[0].intersection(D[1]); Phi\nFinite subgroup with invariants [2, 2] over QQ of Simple abelian subvariety 17aG1(1,17) of dimension 1 of J1(17)\nsage: E = D[1].endomorphism_ring(); E\nEndomorphism ring of Simple abelian subvariety 17bG1(1,17) of dimension 4 of J1(17)\nsage: E.gens()\nTraceback (most recent call last):\n...\nTypeError: Cannot coerce element into this number field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3005\n\n",
+    "body": "Assignee: @williamstein\n\nThis is an example of computing an endomorphism ring of a J1 modular abelian variety -- it fails because of some mysterious issue in sage-3.0. \n\n\n```\nage: J = J1(17)\nsage: D = J.decomposition(); D\n[\nSimple abelian subvariety 17aG1(1,17) of dimension 1 of J1(17),\nSimple abelian subvariety 17bG1(1,17) of dimension 4 of J1(17)\n]\nsage: Phi, _ = D[0].intersection(D[1]); Phi\nFinite subgroup with invariants [2, 2] over QQ of Simple abelian subvariety 17aG1(1,17) of dimension 1 of J1(17)\nsage: E = D[1].endomorphism_ring(); E\nEndomorphism ring of Simple abelian subvariety 17bG1(1,17) of dimension 4 of J1(17)\nsage: E.gens()\nTraceback (most recent call last):\n...\nTypeError: Cannot coerce element into this number field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3005\n\n",
     "created_at": "2008-04-23T13:08:04Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003005.json:
     "title": "mobabar -- failure to compute endomorphism ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3005",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is an example of computing an endomorphism ring of a J1 modular abelian variety -- it fails because of some mysterious issue in sage-3.0. 
 
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3005
 archive/issue_comments_020667.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2008-04-24T07:06:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3005#issuecomment-20667",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_020668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3005#issuecomment-20668",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_020669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3005#issuecomment-20669",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -107,16 +107,16 @@ Changing status from new to assigned.
 archive/issue_comments_020670.json:
 ```json
 {
-    "body": "Attachment [trac-3005.patch](tarball://root/attachments/some-uuid/ticket3005/trac-3005.patch) by was created at 2008-04-24 12:30:55\n\nThis is obviously right.",
+    "body": "Attachment [trac-3005.patch](tarball://root/attachments/some-uuid/ticket3005/trac-3005.patch) by @williamstein created at 2008-04-24 12:30:55\n\nThis is obviously right.",
     "created_at": "2008-04-24T12:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3005#issuecomment-20670",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-3005.patch](tarball://root/attachments/some-uuid/ticket3005/trac-3005.patch) by was created at 2008-04-24 12:30:55
+Attachment [trac-3005.patch](tarball://root/attachments/some-uuid/ticket3005/trac-3005.patch) by @williamstein created at 2008-04-24 12:30:55
 
 This is obviously right.
 

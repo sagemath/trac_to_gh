@@ -3,7 +3,7 @@
 archive/issues_003410.json:
 ```json
 {
-    "body": "Assignee: was\n\nAttached patch fixes conversion of matrices over polynomial rings to magma.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3410\n\n",
+    "body": "Assignee: @williamstein\n\nAttached patch fixes conversion of matrices over polynomial rings to magma.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3410\n\n",
     "created_at": "2008-06-13T05:29:44Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003410.json:
     "title": "[with patch, needs review] conversion of matrices over polynomial rings to magma is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3410",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Attached patch fixes conversion of matrices over polynomial rings to magma.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3410
 archive/issue_comments_023916.json:
 ```json
 {
-    "body": "Attachment [matrix_polyring_magma.patch](tarball://root/attachments/some-uuid/ticket3410/matrix_polyring_magma.patch) by burcin created at 2008-06-13 05:30:44\n\nfix matrix conversion over polynomial ring to magma",
+    "body": "Attachment [matrix_polyring_magma.patch](tarball://root/attachments/some-uuid/ticket3410/matrix_polyring_magma.patch) by @burcin created at 2008-06-13 05:30:44\n\nfix matrix conversion over polynomial ring to magma",
     "created_at": "2008-06-13T05:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3410#issuecomment-23916",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [matrix_polyring_magma.patch](tarball://root/attachments/some-uuid/ticket3410/matrix_polyring_magma.patch) by burcin created at 2008-06-13 05:30:44
+Attachment [matrix_polyring_magma.patch](tarball://root/attachments/some-uuid/ticket3410/matrix_polyring_magma.patch) by @burcin created at 2008-06-13 05:30:44
 
 fix matrix conversion over polynomial ring to magma
 
@@ -57,7 +57,7 @@ archive/issue_comments_023917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3410#issuecomment-23917",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,16 +76,16 @@ For reason 2 this patch is not acceptable.
 archive/issue_comments_023918.json:
 ```json
 {
-    "body": "Attachment [trac3410-matrix_polyring_magma-2.patch](tarball://root/attachments/some-uuid/ticket3410/trac3410-matrix_polyring_magma-2.patch) by burcin created at 2008-06-14 00:09:15\n\nfix conversion of matrices over polynomial rings to magma 2nd try",
+    "body": "Attachment [trac3410-matrix_polyring_magma-2.patch](tarball://root/attachments/some-uuid/ticket3410/trac3410-matrix_polyring_magma-2.patch) by @burcin created at 2008-06-14 00:09:15\n\nfix conversion of matrices over polynomial rings to magma 2nd try",
     "created_at": "2008-06-14T00:09:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3410#issuecomment-23918",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac3410-matrix_polyring_magma-2.patch](tarball://root/attachments/some-uuid/ticket3410/trac3410-matrix_polyring_magma-2.patch) by burcin created at 2008-06-14 00:09:15
+Attachment [trac3410-matrix_polyring_magma-2.patch](tarball://root/attachments/some-uuid/ticket3410/trac3410-matrix_polyring_magma-2.patch) by @burcin created at 2008-06-14 00:09:15
 
 fix conversion of matrices over polynomial rings to magma 2nd try
 
@@ -101,7 +101,7 @@ archive/issue_comments_023919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3410#issuecomment-23919",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_023920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3410#issuecomment-23920",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_023921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3410#issuecomment-23921",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -161,16 +161,16 @@ Pending this big +1.
 archive/issue_comments_023922.json:
 ```json
 {
-    "body": "Attachment [trac3410-matrix_polyring_magma-3.patch](tarball://root/attachments/some-uuid/ticket3410/trac3410-matrix_polyring_magma-3.patch) by burcin created at 2008-06-26 15:31:51\n\nconversion of matrices over polynomial rings to magma 3rd version",
+    "body": "Attachment [trac3410-matrix_polyring_magma-3.patch](tarball://root/attachments/some-uuid/ticket3410/trac3410-matrix_polyring_magma-3.patch) by @burcin created at 2008-06-26 15:31:51\n\nconversion of matrices over polynomial rings to magma 3rd version",
     "created_at": "2008-06-26T15:31:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3410#issuecomment-23922",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac3410-matrix_polyring_magma-3.patch](tarball://root/attachments/some-uuid/ticket3410/trac3410-matrix_polyring_magma-3.patch) by burcin created at 2008-06-26 15:31:51
+Attachment [trac3410-matrix_polyring_magma-3.patch](tarball://root/attachments/some-uuid/ticket3410/trac3410-matrix_polyring_magma-3.patch) by @burcin created at 2008-06-26 15:31:51
 
 conversion of matrices over polynomial rings to magma 3rd version
 
@@ -186,7 +186,7 @@ archive/issue_comments_023923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3410#issuecomment-23923",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_023924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3410#issuecomment-23924",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

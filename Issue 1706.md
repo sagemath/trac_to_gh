@@ -3,7 +3,7 @@
 archive/issues_001706.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexander@gmail.com\n\nShouldn't the sum of the dimensions be 2?\n\n\n```\nsage: M = Matrix(CC, [[1,0],[0,1]])\nsage: M\n\n[1.00000000000000                0]\n[               0 1.00000000000000]\nsage: M.eigenspaces()\n\n[\n(1.00000000000000, [\n(1.00000000000000, 0),\n(0, 1.00000000000000)\n]),\n(1.00000000000000, [\n(1.00000000000000, 0),\n(0, 1.00000000000000)\n])\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1706\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nShouldn't the sum of the dimensions be 2?\n\n\n```\nsage: M = Matrix(CC, [[1,0],[0,1]])\nsage: M\n\n[1.00000000000000                0]\n[               0 1.00000000000000]\nsage: M.eigenspaces()\n\n[\n(1.00000000000000, [\n(1.00000000000000, 0),\n(0, 1.00000000000000)\n]),\n(1.00000000000000, [\n(1.00000000000000, 0),\n(0, 1.00000000000000)\n])\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1706\n\n",
     "created_at": "2008-01-07T05:11:17Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001706.json:
     "title": "Eigenspaces bug?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1706",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  ncalexander@gmail.com
 
@@ -61,7 +61,7 @@ archive/issue_comments_010804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1706#issuecomment-10804",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_010805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1706#issuecomment-10805",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_010806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1706#issuecomment-10806",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_010807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1706#issuecomment-10807",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_010808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1706#issuecomment-10808",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_010809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1706#issuecomment-10809",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_010810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1706#issuecomment-10810",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

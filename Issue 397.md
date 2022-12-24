@@ -13,7 +13,7 @@ archive/issues_000397.json:
     "title": "ZZ.digits(base) and inverse",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/397",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -50,7 +50,7 @@ archive/issue_comments_001953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/397#issuecomment-1953",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -63,16 +63,16 @@ main patch
 archive/issue_comments_001954.json:
 ```json
 {
-    "body": "Attachment [4867.patch](tarball://root/attachments/some-uuid/ticket397/4867.patch) by malb created at 2007-06-30 20:08:33\n\nfollow-up patch for faster ZZ.digits()",
+    "body": "Attachment [4867.patch](tarball://root/attachments/some-uuid/ticket397/4867.patch) by @malb created at 2007-06-30 20:08:33\n\nfollow-up patch for faster ZZ.digits()",
     "created_at": "2007-06-30T20:08:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/397#issuecomment-1954",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [4867.patch](tarball://root/attachments/some-uuid/ticket397/4867.patch) by malb created at 2007-06-30 20:08:33
+Attachment [4867.patch](tarball://root/attachments/some-uuid/ticket397/4867.patch) by @malb created at 2007-06-30 20:08:33
 
 follow-up patch for faster ZZ.digits()
 
@@ -83,16 +83,16 @@ follow-up patch for faster ZZ.digits()
 archive/issue_comments_001955.json:
 ```json
 {
-    "body": "Attachment [4868.patch](tarball://root/attachments/some-uuid/ticket397/4868.patch) by malb created at 2007-06-30 20:11:14\n\nAdded follow-up patch based on William's input.",
+    "body": "Attachment [4868.patch](tarball://root/attachments/some-uuid/ticket397/4868.patch) by @malb created at 2007-06-30 20:11:14\n\nAdded follow-up patch based on William's input.",
     "created_at": "2007-06-30T20:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/397#issuecomment-1955",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [4868.patch](tarball://root/attachments/some-uuid/ticket397/4868.patch) by malb created at 2007-06-30 20:11:14
+Attachment [4868.patch](tarball://root/attachments/some-uuid/ticket397/4868.patch) by @malb created at 2007-06-30 20:11:14
 
 Added follow-up patch based on William's input.
 
@@ -108,7 +108,7 @@ archive/issue_comments_001956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/397#issuecomment-1956",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

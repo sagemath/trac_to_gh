@@ -3,7 +3,7 @@
 archive/issues_006963.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  jason kcrisman\n\nThis is a follow up to #3133 to fix some ReST formatting issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6963\n\n",
+    "body": "Assignee: tba\n\nCC:  @jasongrout @kcrisman\n\nThis is a follow up to #3133 to fix some ReST formatting issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6963\n\n",
     "created_at": "2009-09-19T20:01:53Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_006963.json:
 ```
 Assignee: tba
 
-CC:  jason kcrisman
+CC:  @jasongrout @kcrisman
 
 This is a follow up to #3133 to fix some ReST formatting issues.
 
@@ -75,7 +75,7 @@ archive/issue_comments_057612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6963#issuecomment-57612",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

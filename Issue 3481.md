@@ -3,7 +3,7 @@
 archive/issues_003481.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3481\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3481\n\n",
     "created_at": "2008-06-20T05:44:21Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003481.json:
     "title": "remove sage/plot/plot3dsoya.py from sage!!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3481",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3481
 archive/issue_comments_024529.json:
 ```json
 {
-    "body": "Attachment [trac_3481.patch](tarball://root/attachments/some-uuid/ticket3481/trac_3481.patch) by mhansen created at 2008-08-31 03:51:05",
+    "body": "Attachment [trac_3481.patch](tarball://root/attachments/some-uuid/ticket3481/trac_3481.patch) by @mwhansen created at 2008-08-31 03:51:05",
     "created_at": "2008-08-31T03:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3481#issuecomment-24529",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3481.patch](tarball://root/attachments/some-uuid/ticket3481/trac_3481.patch) by mhansen created at 2008-08-31 03:51:05
+Attachment [trac_3481.patch](tarball://root/attachments/some-uuid/ticket3481/trac_3481.patch) by @mwhansen created at 2008-08-31 03:51:05
 
 
 

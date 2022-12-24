@@ -3,7 +3,7 @@
 archive/issues_009667.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe latest version of PARI has a function `hash_GEN` which hashes a PARI `GEN`.  Since this is very likely faster than hashing the string representation of a `GEN`, we should use this for the `gen` class in sage/libs/pari/gen.pyx\n\nIssue created by migration from https://trac.sagemath.org/ticket/9667\n\n",
+    "body": "Assignee: @williamstein\n\nThe latest version of PARI has a function `hash_GEN` which hashes a PARI `GEN`.  Since this is very likely faster than hashing the string representation of a `GEN`, we should use this for the `gen` class in sage/libs/pari/gen.pyx\n\nIssue created by migration from https://trac.sagemath.org/ticket/9667\n\n",
     "created_at": "2010-08-02T09:47:20Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_009667.json:
     "title": "Use PARI's hash_GEN() for gen.__hash__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9667",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The latest version of PARI has a function `hash_GEN` which hashes a PARI `GEN`.  Since this is very likely faster than hashing the string representation of a `GEN`, we should use this for the `gen` class in sage/libs/pari/gen.pyx
 
@@ -37,7 +37,7 @@ archive/issue_comments_093854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93854",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_093855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93855",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to needs_review.
 archive/issue_comments_093856.json:
 ```json
 {
-    "body": "Attachment [9667.patch](tarball://root/attachments/some-uuid/ticket9667/9667.patch) by jdemeyer created at 2010-09-15 17:12:33",
+    "body": "Attachment [9667.patch](tarball://root/attachments/some-uuid/ticket9667/9667.patch) by @jdemeyer created at 2010-09-15 17:12:33",
     "created_at": "2010-09-15T17:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93856",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9667.patch](tarball://root/attachments/some-uuid/ticket9667/9667.patch) by jdemeyer created at 2010-09-15 17:12:33
+Attachment [9667.patch](tarball://root/attachments/some-uuid/ticket9667/9667.patch) by @jdemeyer created at 2010-09-15 17:12:33
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_093857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93857",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_093858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93858",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_093859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93859",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_093860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93860",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_093861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93861",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_093862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9667",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93862",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

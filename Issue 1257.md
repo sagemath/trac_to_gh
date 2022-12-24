@@ -3,7 +3,7 @@
 archive/issues_001257.json:
 ```json
 {
-    "body": "Assignee: was\n\n`MPolynomialRing_libsingular.__dealloc__` changes the global Singular \"current ring\" to its wrapped ring, and then deletes the ring.  Since `__dealloc__` can get called at essentially random times (it can be called by the Python garbage collector, which can be called on any Python memory allocation), this means that at any time the Singular \"current ring\" may be changed to an invalid, deleted ring.\n\nMy patch changes the \"current ring\" back to its old value, after deleting the wrapped ring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1257\n\n",
+    "body": "Assignee: @williamstein\n\n`MPolynomialRing_libsingular.__dealloc__` changes the global Singular \"current ring\" to its wrapped ring, and then deletes the ring.  Since `__dealloc__` can get called at essentially random times (it can be called by the Python garbage collector, which can be called on any Python memory allocation), this means that at any time the Singular \"current ring\" may be changed to an invalid, deleted ring.\n\nMy patch changes the \"current ring\" back to its old value, after deleting the wrapped ring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1257\n\n",
     "created_at": "2007-11-25T03:46:59Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001257.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 `MPolynomialRing_libsingular.__dealloc__` changes the global Singular "current ring" to its wrapped ring, and then deletes the ring.  Since `__dealloc__` can get called at essentially random times (it can be called by the Python garbage collector, which can be called on any Python memory allocation), this means that at any time the Singular "current ring" may be changed to an invalid, deleted ring.
 
@@ -57,7 +57,7 @@ archive/issue_comments_007862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1257#issuecomment-7862",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_007863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1257",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1257#issuecomment-7863",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

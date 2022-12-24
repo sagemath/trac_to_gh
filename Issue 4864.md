@@ -14,7 +14,7 @@ archive/issues_004864.json:
     "title": "graphviz optional spkg is broken on our main devel machine (sage.math)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4864",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -79,7 +79,7 @@ archive/issue_comments_036864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4864#issuecomment-36864",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_036865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4864#issuecomment-36865",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005987.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  embray\n\nTo make up for my past mistakes, here's a simple patch that modifies or removes a few bad comparison doctests (not all of which were introduced by me).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5987\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @embray\n\nTo make up for my past mistakes, here's a simple patch that modifies or removes a few bad comparison doctests (not all of which were introduced by me).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5987\n\n",
     "created_at": "2009-05-05T07:35:47Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_005987.json:
     "title": "fix a few more bad comparison doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5987",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  embray
+CC:  @embray
 
 To make up for my past mistakes, here's a simple patch that modifies or removes a few bad comparison doctests (not all of which were introduced by me).
 
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5987
 archive/issue_comments_047579.json:
 ```json
 {
-    "body": "Attachment [trac_5987.patch](tarball://root/attachments/some-uuid/ticket5987/trac_5987.patch) by AlexGhitza created at 2009-05-05 07:37:08",
+    "body": "Attachment [trac_5987.patch](tarball://root/attachments/some-uuid/ticket5987/trac_5987.patch) by @aghitza created at 2009-05-05 07:37:08",
     "created_at": "2009-05-05T07:37:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5987#issuecomment-47579",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5987.patch](tarball://root/attachments/some-uuid/ticket5987/trac_5987.patch) by AlexGhitza created at 2009-05-05 07:37:08
+Attachment [trac_5987.patch](tarball://root/attachments/some-uuid/ticket5987/trac_5987.patch) by @aghitza created at 2009-05-05 07:37:08
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_047582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5987#issuecomment-47582",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_047583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5987#issuecomment-47583",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_047584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5987#issuecomment-47584",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_047585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5987#issuecomment-47585",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_047586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5987#issuecomment-47586",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

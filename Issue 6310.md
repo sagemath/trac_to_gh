@@ -14,7 +14,7 @@ archive/issues_006310.json:
     "title": "optional doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6310",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -67,7 +67,7 @@ archive/issue_comments_050365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6310#issuecomment-50365",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_050366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6310#issuecomment-50366",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -100,16 +100,16 @@ applies to 4.0.2.rc2
 archive/issue_comments_050367.json:
 ```json
 {
-    "body": "Attachment [trac_6310.patch](tarball://root/attachments/some-uuid/ticket6310/trac_6310.patch) by cremona created at 2009-06-16 16:44:00\n\nI have fixed it by running that example with \"proof=False\" and explaining in the accompanying text that this is only needed to avoid warnings when the optional database is not installed.\n\nTested both with and without the database installed!",
+    "body": "Attachment [trac_6310.patch](tarball://root/attachments/some-uuid/ticket6310/trac_6310.patch) by @JohnCremona created at 2009-06-16 16:44:00\n\nI have fixed it by running that example with \"proof=False\" and explaining in the accompanying text that this is only needed to avoid warnings when the optional database is not installed.\n\nTested both with and without the database installed!",
     "created_at": "2009-06-16T16:44:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6310",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6310#issuecomment-50367",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6310.patch](tarball://root/attachments/some-uuid/ticket6310/trac_6310.patch) by cremona created at 2009-06-16 16:44:00
+Attachment [trac_6310.patch](tarball://root/attachments/some-uuid/ticket6310/trac_6310.patch) by @JohnCremona created at 2009-06-16 16:44:00
 
 I have fixed it by running that example with "proof=False" and explaining in the accompanying text that this is only needed to avoid warnings when the optional database is not installed.
 

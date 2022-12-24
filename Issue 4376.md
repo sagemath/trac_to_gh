@@ -3,7 +3,7 @@
 archive/issues_004376.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  salmanhb@gmail.com davidloeffler niles jdemeyer\n\nKeywords: power series pari\n\nsalmanhb`@`gmail.com would like to be able to do linear algebra over `GF(p)[This is the Trac macro *X* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#X-macro)` using pari, but currently conversion of power series in `R[This is the Trac macro *X* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#X-macro)` to pari is only implemented when R=QQ or R=ZZ (via strings).\n\nWe should improve the _pari_() function for power series rings to allow R to be any ring in which pari conversion is already defined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4376\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  salmanhb@gmail.com @loefflerd @nilesjohnson @jdemeyer\n\nKeywords: power series pari\n\nsalmanhb`@`gmail.com would like to be able to do linear algebra over `GF(p)[This is the Trac macro *X* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#X-macro)` using pari, but currently conversion of power series in `R[This is the Trac macro *X* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#X-macro)` to pari is only implemented when R=QQ or R=ZZ (via strings).\n\nWe should improve the _pari_() function for power series rings to allow R to be any ring in which pari conversion is already defined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4376\n\n",
     "created_at": "2008-10-28T09:44:11Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_004376.json:
     "title": "Implement conversion of power series over more rings (e.g. GF(p)) to pari",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4376",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  salmanhb@gmail.com davidloeffler niles jdemeyer
+CC:  salmanhb@gmail.com @loefflerd @nilesjohnson @jdemeyer
 
 Keywords: power series pari
 
@@ -99,7 +99,7 @@ archive/issue_comments_032181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32181",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_032182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32182",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_032183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32183",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_032184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32184",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_032185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32185",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_032186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32186",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_032187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32187",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_032188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32188",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_032189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32189",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_032190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32190",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_032191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32191",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -351,16 +351,16 @@ Apply on top of previous patch
 archive/issue_comments_032192.json:
 ```json
 {
-    "body": "Attachment [4376_no_strings.patch](tarball://root/attachments/some-uuid/ticket4376/4376_no_strings.patch) by jdemeyer created at 2011-01-27 14:58:07\n\nThe attached patch removes the conversion PARI -> string -> PARI.  It does not address the doctest failures.",
+    "body": "Attachment [4376_no_strings.patch](tarball://root/attachments/some-uuid/ticket4376/4376_no_strings.patch) by @jdemeyer created at 2011-01-27 14:58:07\n\nThe attached patch removes the conversion PARI -> string -> PARI.  It does not address the doctest failures.",
     "created_at": "2011-01-27T14:58:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32192",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [4376_no_strings.patch](tarball://root/attachments/some-uuid/ticket4376/4376_no_strings.patch) by jdemeyer created at 2011-01-27 14:58:07
+Attachment [4376_no_strings.patch](tarball://root/attachments/some-uuid/ticket4376/4376_no_strings.patch) by @jdemeyer created at 2011-01-27 14:58:07
 
 The attached patch removes the conversion PARI -> string -> PARI.  It does not address the doctest failures.
 
@@ -457,7 +457,7 @@ archive/issue_comments_032196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32196",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_032197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32197",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_032198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32198",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -590,7 +590,7 @@ archive/issue_comments_032202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32202",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -608,7 +608,7 @@ archive/issue_comments_032203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32203",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -628,7 +628,7 @@ archive/issue_comments_032204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32204",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -646,7 +646,7 @@ archive/issue_comments_032205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4376",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4376#issuecomment-32205",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

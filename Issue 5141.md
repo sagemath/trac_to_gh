@@ -14,7 +14,7 @@ archive/issues_005141.json:
     "title": "tinymce should be disabled on published worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5141",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -196,16 +196,16 @@ Michel
 archive/issue_comments_039322.json:
 ```json
 {
-    "body": "Attachment [trac_5141-tinymce-published.patch](tarball://root/attachments/some-uuid/ticket5141/trac_5141-tinymce-published.patch) by jason created at 2009-02-02 20:19:36",
+    "body": "Attachment [trac_5141-tinymce-published.patch](tarball://root/attachments/some-uuid/ticket5141/trac_5141-tinymce-published.patch) by @jasongrout created at 2009-02-02 20:19:36",
     "created_at": "2009-02-02T20:19:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5141#issuecomment-39322",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5141-tinymce-published.patch](tarball://root/attachments/some-uuid/ticket5141/trac_5141-tinymce-published.patch) by jason created at 2009-02-02 20:19:36
+Attachment [trac_5141-tinymce-published.patch](tarball://root/attachments/some-uuid/ticket5141/trac_5141-tinymce-published.patch) by @jasongrout created at 2009-02-02 20:19:36
 
 
 
@@ -219,7 +219,7 @@ archive/issue_comments_039323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5141#issuecomment-39323",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_039324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5141#issuecomment-39324",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_039325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5141#issuecomment-39325",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -268,16 +268,16 @@ Changing status from reopened to new.
 archive/issue_comments_039326.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2009-02-03T09:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5141#issuecomment-39326",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 

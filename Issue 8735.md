@@ -3,7 +3,7 @@
 archive/issues_008735.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: posets cardinality\n\nThe cardinality of a set was standardized as cardinality. Posets where forgotten when standardization occured.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8735\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: posets cardinality\n\nThe cardinality of a set was standardized as cardinality. Posets where forgotten when standardization occured.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8735\n\n",
     "created_at": "2010-04-21T08:13:02Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008735.json:
     "title": "Renamed size to cardinality in poset",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8735",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8735
 archive/issue_comments_079892.json:
 ```json
 {
-    "body": "Attachment [trac_8735-poset_size_cardinality-fh.patch](tarball://root/attachments/some-uuid/ticket8735/trac_8735-poset_size_cardinality-fh.patch) by hivert created at 2010-04-21 20:50:49",
+    "body": "Attachment [trac_8735-poset_size_cardinality-fh.patch](tarball://root/attachments/some-uuid/ticket8735/trac_8735-poset_size_cardinality-fh.patch) by @hivert created at 2010-04-21 20:50:49",
     "created_at": "2010-04-21T20:50:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8735#issuecomment-79892",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8735-poset_size_cardinality-fh.patch](tarball://root/attachments/some-uuid/ticket8735/trac_8735-poset_size_cardinality-fh.patch) by hivert created at 2010-04-21 20:50:49
+Attachment [trac_8735-poset_size_cardinality-fh.patch](tarball://root/attachments/some-uuid/ticket8735/trac_8735-poset_size_cardinality-fh.patch) by @hivert created at 2010-04-21 20:50:49
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_079893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8735#issuecomment-79893",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_079894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8735#issuecomment-79894",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_079895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8735#issuecomment-79895",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_079896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8735#issuecomment-79896",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_079897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8735#issuecomment-79897",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_079898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8735#issuecomment-79898",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

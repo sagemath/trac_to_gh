@@ -3,7 +3,7 @@
 archive/issues_007564.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe degree sequence of a graph is a basic property that is studied in an introductory course on graph theory. There should be examples explaining how to compute the degree sequence of a given graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7564\n\n",
+    "body": "Assignee: @rlmill\n\nThe degree sequence of a graph is a basic property that is studied in an introductory course on graph theory. There should be examples explaining how to compute the degree sequence of a given graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7564\n\n",
     "created_at": "2009-11-30T20:07:28Z",
     "labels": [
         "graph theory",
@@ -17,7 +17,7 @@ archive/issues_007564.json:
     "user": "mvngu"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The degree sequence of a graph is a basic property that is studied in an introductory course on graph theory. There should be examples explaining how to compute the degree sequence of a given graph.
 
@@ -73,7 +73,7 @@ archive/issue_comments_064363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7564#issuecomment-64363",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_064364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7564#issuecomment-64364",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_064366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7564#issuecomment-64366",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_064369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7564#issuecomment-64369",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_064372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7564#issuecomment-64372",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_064373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7564#issuecomment-64373",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_064374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7564#issuecomment-64374",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_064375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7564",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7564#issuecomment-64375",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

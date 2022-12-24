@@ -14,7 +14,7 @@ archive/issues_005685.json:
     "title": "enhanced nth_root in ZZ and QQ and related utilities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5685",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: somebody
@@ -72,7 +72,7 @@ archive/issue_comments_044451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44451",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -85,16 +85,16 @@ Applies to 3.4.1.alpha0
 archive/issue_comments_044452.json:
 ```json
 {
-    "body": "Attachment [nth_root.patch](tarball://root/attachments/some-uuid/ticket5685/nth_root.patch) by cremona created at 2009-04-04 20:56:52",
+    "body": "Attachment [nth_root.patch](tarball://root/attachments/some-uuid/ticket5685/nth_root.patch) by @JohnCremona created at 2009-04-04 20:56:52",
     "created_at": "2009-04-04T20:56:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44452",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [nth_root.patch](tarball://root/attachments/some-uuid/ticket5685/nth_root.patch) by cremona created at 2009-04-04 20:56:52
+Attachment [nth_root.patch](tarball://root/attachments/some-uuid/ticket5685/nth_root.patch) by @JohnCremona created at 2009-04-04 20:56:52
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_044453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44453",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_044454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44454",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -160,16 +160,16 @@ Thanks for the review (and implied joke!).  I will add tests, and change int to 
 archive/issue_comments_044455.json:
 ```json
 {
-    "body": "Attachment [trac_5685.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685.patch) by cremona created at 2009-04-10 15:28:18\n\nI have added a new patch which replaces the previous one and adds a docstring as requested, and changes the int type to bint.  I wanted to add a doctest which tests the nth_root() function on an Infinite value, but totally failed to construct such a value in the correct class.  This could be revisited when the person who wrote this class documents some more basic things like that.",
+    "body": "Attachment [trac_5685.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685.patch) by @JohnCremona created at 2009-04-10 15:28:18\n\nI have added a new patch which replaces the previous one and adds a docstring as requested, and changes the int type to bint.  I wanted to add a doctest which tests the nth_root() function on an Infinite value, but totally failed to construct such a value in the correct class.  This could be revisited when the person who wrote this class documents some more basic things like that.",
     "created_at": "2009-04-10T15:28:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44455",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5685.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685.patch) by cremona created at 2009-04-10 15:28:18
+Attachment [trac_5685.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685.patch) by @JohnCremona created at 2009-04-10 15:28:18
 
 I have added a new patch which replaces the previous one and adds a docstring as requested, and changes the int type to bint.  I wanted to add a doctest which tests the nth_root() function on an Infinite value, but totally failed to construct such a value in the correct class.  This could be revisited when the person who wrote this class documents some more basic things like that.
 
@@ -185,7 +185,7 @@ archive/issue_comments_044456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44456",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_044457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44457",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -225,16 +225,16 @@ Apply all three patches
 archive/issue_comments_044458.json:
 ```json
 {
-    "body": "Attachment [trac_5685_extra.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685_extra.patch) by cremona created at 2009-04-12 10:38:05\n\nThe extra patch does the suggested polishing, by adding a method to the integer class, ordinal_str(), which adds the correct suffix ('st', 'nd', 'th'), and then uses that.  I knew of one other place where similar messages were output in rings/number_fields/order.py and changed that too.  I hope I got it right!  Suitable doctests have been added.\n\nI made the 3rd patch based on 3.4.1.rc2 + the first patch, forgetting the second, so I hope it applies ok.",
+    "body": "Attachment [trac_5685_extra.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685_extra.patch) by @JohnCremona created at 2009-04-12 10:38:05\n\nThe extra patch does the suggested polishing, by adding a method to the integer class, ordinal_str(), which adds the correct suffix ('st', 'nd', 'th'), and then uses that.  I knew of one other place where similar messages were output in rings/number_fields/order.py and changed that too.  I hope I got it right!  Suitable doctests have been added.\n\nI made the 3rd patch based on 3.4.1.rc2 + the first patch, forgetting the second, so I hope it applies ok.",
     "created_at": "2009-04-12T10:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44458",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5685_extra.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685_extra.patch) by cremona created at 2009-04-12 10:38:05
+Attachment [trac_5685_extra.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685_extra.patch) by @JohnCremona created at 2009-04-12 10:38:05
 
 The extra patch does the suggested polishing, by adding a method to the integer class, ordinal_str(), which adds the correct suffix ('st', 'nd', 'th'), and then uses that.  I knew of one other place where similar messages were output in rings/number_fields/order.py and changed that too.  I hope I got it right!  Suitable doctests have been added.
 
@@ -274,7 +274,7 @@ archive/issue_comments_044460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44460",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_044462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44462",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -341,16 +341,16 @@ replace ALL the above, apply after #5735 patches
 archive/issue_comments_044463.json:
 ```json
 {
-    "body": "Attachment [trac_5685_new.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685_new.patch) by cremona created at 2009-04-13 13:37:14\n\nI have uploaded a new rebased patch replacing all three (in fact the first was already subsumed into the second), based on 3.4.1.rc2 + patches at #5735 (deleteding extended_integer, extended_rational).  Hope this works ok.",
+    "body": "Attachment [trac_5685_new.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685_new.patch) by @JohnCremona created at 2009-04-13 13:37:14\n\nI have uploaded a new rebased patch replacing all three (in fact the first was already subsumed into the second), based on 3.4.1.rc2 + patches at #5735 (deleteding extended_integer, extended_rational).  Hope this works ok.",
     "created_at": "2009-04-13T13:37:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44463",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5685_new.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685_new.patch) by cremona created at 2009-04-13 13:37:14
+Attachment [trac_5685_new.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685_new.patch) by @JohnCremona created at 2009-04-13 13:37:14
 
 I have uploaded a new rebased patch replacing all three (in fact the first was already subsumed into the second), based on 3.4.1.rc2 + patches at #5735 (deleteding extended_integer, extended_rational).  Hope this works ok.
 
@@ -408,7 +408,7 @@ archive/issue_comments_044465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44465",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -515,7 +515,7 @@ archive/issue_comments_044469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44469",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

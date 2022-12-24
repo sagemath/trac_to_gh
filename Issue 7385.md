@@ -14,7 +14,7 @@ archive/issues_007385.json:
     "title": "renaming \"Untitled\" published pages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7385",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -43,7 +43,7 @@ archive/issue_comments_062110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7385#issuecomment-62110",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_062111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7385#issuecomment-62111",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -74,16 +74,16 @@ Changing status from new to needs_review.
 archive/issue_comments_062112.json:
 ```json
 {
-    "body": "Attachment [trac_7385-renaming-published-worksheets.patch](tarball://root/attachments/some-uuid/ticket7385/trac_7385-renaming-published-worksheets.patch) by timdumol created at 2009-11-04 11:22:17\n\nThis patch should fix your problem. This depends on #7309 and #7310.",
+    "body": "Attachment [trac_7385-renaming-published-worksheets.patch](tarball://root/attachments/some-uuid/ticket7385/trac_7385-renaming-published-worksheets.patch) by @TimDumol created at 2009-11-04 11:22:17\n\nThis patch should fix your problem. This depends on #7309 and #7310.",
     "created_at": "2009-11-04T11:22:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7385#issuecomment-62112",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7385-renaming-published-worksheets.patch](tarball://root/attachments/some-uuid/ticket7385/trac_7385-renaming-published-worksheets.patch) by timdumol created at 2009-11-04 11:22:17
+Attachment [trac_7385-renaming-published-worksheets.patch](tarball://root/attachments/some-uuid/ticket7385/trac_7385-renaming-published-worksheets.patch) by @TimDumol created at 2009-11-04 11:22:17
 
 This patch should fix your problem. This depends on #7309 and #7310.
 
@@ -99,7 +99,7 @@ archive/issue_comments_062113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7385#issuecomment-62113",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_062114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7385#issuecomment-62114",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_062115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7385#issuecomment-62115",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_062116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7385#issuecomment-62116",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

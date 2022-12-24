@@ -14,7 +14,7 @@ archive/issues_003203.json:
     "title": "show() smashes multiplied numbers together so the product looks like a number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3203",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby

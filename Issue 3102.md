@@ -84,16 +84,16 @@ Changing component from Cygwin to basic arithmetic.
 archive/issue_comments_021423.json:
 ```json
 {
-    "body": "Attachment [trac_3102.patch](tarball://root/attachments/some-uuid/ticket3102/trac_3102.patch) by gfurnish created at 2008-09-07 22:04:16",
+    "body": "Attachment [trac_3102.patch](tarball://root/attachments/some-uuid/ticket3102/trac_3102.patch) by @garyfurnish created at 2008-09-07 22:04:16",
     "created_at": "2008-09-07T22:04:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3102#issuecomment-21423",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3102.patch](tarball://root/attachments/some-uuid/ticket3102/trac_3102.patch) by gfurnish created at 2008-09-07 22:04:16
+Attachment [trac_3102.patch](tarball://root/attachments/some-uuid/ticket3102/trac_3102.patch) by @garyfurnish created at 2008-09-07 22:04:16
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_021424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3102#issuecomment-21424",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_021425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3102#issuecomment-21425",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_021426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3102#issuecomment-21426",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_021427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3102#issuecomment-21427",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -210,16 +210,16 @@ John Cremona is definitely right here.
 archive/issue_comments_021428.json:
 ```json
 {
-    "body": "Attachment [sage-3102.patch](tarball://root/attachments/some-uuid/ticket3102/sage-3102.patch) by was created at 2008-11-27 07:01:34\n\nfollowup -- apply the above patch *and* this one.",
+    "body": "Attachment [sage-3102.patch](tarball://root/attachments/some-uuid/ticket3102/sage-3102.patch) by @williamstein created at 2008-11-27 07:01:34\n\nfollowup -- apply the above patch *and* this one.",
     "created_at": "2008-11-27T07:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3102#issuecomment-21428",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3102.patch](tarball://root/attachments/some-uuid/ticket3102/sage-3102.patch) by was created at 2008-11-27 07:01:34
+Attachment [sage-3102.patch](tarball://root/attachments/some-uuid/ticket3102/sage-3102.patch) by @williamstein created at 2008-11-27 07:01:34
 
 followup -- apply the above patch *and* this one.
 
@@ -235,7 +235,7 @@ archive/issue_comments_021429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3102#issuecomment-21429",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_021430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3102",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3102#issuecomment-21430",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

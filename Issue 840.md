@@ -3,7 +3,7 @@
 archive/issues_000840.json:
 ```json
 {
-    "body": "Assignee: was\n\nI'm submitting my real root isolation algorithm for SAGE (this was the subject of my talk at SD4).\n\nIssue created by migration from https://trac.sagemath.org/ticket/840\n\n",
+    "body": "Assignee: @williamstein\n\nI'm submitting my real root isolation algorithm for SAGE (this was the subject of my talk at SD4).\n\nIssue created by migration from https://trac.sagemath.org/ticket/840\n\n",
     "created_at": "2007-10-07T19:43:26Z",
     "labels": [
         "numerical",
@@ -17,7 +17,7 @@ archive/issues_000840.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I'm submitting my real root isolation algorithm for SAGE (this was the subject of my talk at SD4).
 
@@ -93,7 +93,7 @@ archive/issue_comments_005205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/840#issuecomment-5205",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

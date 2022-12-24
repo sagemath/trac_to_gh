@@ -3,7 +3,7 @@
 archive/issues_009216.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9216\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9216\n\n",
     "created_at": "2010-06-11T11:47:38Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_009216.json:
     "title": "Bring doc coverage of groups/group.pyx to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9216",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9216
 archive/issue_comments_086357.json:
 ```json
 {
-    "body": "Attachment [trac_9216_doc_group_pyx-sl.patch](tarball://root/attachments/some-uuid/ticket9216/trac_9216_doc_group_pyx-sl.patch) by slabbe created at 2010-06-11 11:50:55",
+    "body": "Attachment [trac_9216_doc_group_pyx-sl.patch](tarball://root/attachments/some-uuid/ticket9216/trac_9216_doc_group_pyx-sl.patch) by @seblabbe created at 2010-06-11 11:50:55",
     "created_at": "2010-06-11T11:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86357",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_9216_doc_group_pyx-sl.patch](tarball://root/attachments/some-uuid/ticket9216/trac_9216_doc_group_pyx-sl.patch) by slabbe created at 2010-06-11 11:50:55
+Attachment [trac_9216_doc_group_pyx-sl.patch](tarball://root/attachments/some-uuid/ticket9216/trac_9216_doc_group_pyx-sl.patch) by @seblabbe created at 2010-06-11 11:50:55
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_086358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86358",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_086359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86359",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_086360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86360",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_086361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86361",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_086362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86362",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_086363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86363",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_086364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86364",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_086365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86365",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

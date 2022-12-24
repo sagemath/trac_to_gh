@@ -3,7 +3,7 @@
 archive/issues_000488.json:
 ```json
 {
-    "body": "Assignee: was\n\nPython2.5.1 is broken on itanium.  The fix in SAGE is also broken in sage-2.8.2.  Fix this for sage-2.8.3. \n \n1. look at old hack from sage-1.5.*\n2. get rid of #else and #ifdef stuff from around line 33\n3. keep the casting stuff around line 670??\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/488\n\n",
+    "body": "Assignee: @williamstein\n\nPython2.5.1 is broken on itanium.  The fix in SAGE is also broken in sage-2.8.2.  Fix this for sage-2.8.3. \n \n1. look at old hack from sage-1.5.*\n2. get rid of #else and #ifdef stuff from around line 33\n3. keep the casting stuff around line 670??\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/488\n\n",
     "created_at": "2007-08-24T07:46:07Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000488.json:
     "title": "python on itanium -- fix readline",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/488",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Python2.5.1 is broken on itanium.  The fix in SAGE is also broken in sage-2.8.2.  Fix this for sage-2.8.3. 
  
@@ -60,7 +60,7 @@ archive/issue_comments_002434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/488#issuecomment-2434",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_002435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/488#issuecomment-2435",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

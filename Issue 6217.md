@@ -14,7 +14,7 @@ archive/issues_006217.json:
     "title": "[with patch, needs review] fix issues with sorting in formal_sum",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6217",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: somebody
@@ -100,16 +100,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6217
 archive/issue_comments_049663.json:
 ```json
 {
-    "body": "Attachment [trac_6217.patch](tarball://root/attachments/some-uuid/ticket6217/trac_6217.patch) by mhansen created at 2009-06-05 00:53:15\n\nI've made it so that the examples don't use the string 'a' as a bases since that was causing problems for the sorting.",
+    "body": "Attachment [trac_6217.patch](tarball://root/attachments/some-uuid/ticket6217/trac_6217.patch) by @mwhansen created at 2009-06-05 00:53:15\n\nI've made it so that the examples don't use the string 'a' as a bases since that was causing problems for the sorting.",
     "created_at": "2009-06-05T00:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6217#issuecomment-49663",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6217.patch](tarball://root/attachments/some-uuid/ticket6217/trac_6217.patch) by mhansen created at 2009-06-05 00:53:15
+Attachment [trac_6217.patch](tarball://root/attachments/some-uuid/ticket6217/trac_6217.patch) by @mwhansen created at 2009-06-05 00:53:15
 
 I've made it so that the examples don't use the string 'a' as a bases since that was causing problems for the sorting.
 
@@ -125,7 +125,7 @@ archive/issue_comments_049664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6217#issuecomment-49664",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_049665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6217#issuecomment-49665",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

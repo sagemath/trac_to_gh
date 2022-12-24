@@ -3,7 +3,7 @@
 archive/issues_001606.json:
 ```json
 {
-    "body": "Assignee: was\n\n> \n> I've been looking for a plot.option that ensures a 1:1 aspect ratio\n> for 2D plots (e.g. something like AspectRatio->Automatic in Mma). Does\n> this exist in Sage? I'm trying to set things up so that\n> \n> circle((0,0),2).show()\n> \n> shows a circle rather than an ellipse, regardless of the plot window\n> dimensions. Apologies if this has already been covered somewhere.\n\nWe should just add\n    P.show(aspect_ratio=\"automatic\")\netc., exactly as in Mathematica.  The goal with 2d graphics in Sage\nis that they at least support all options that Mathematica has. \n\nAnyway, here is a function show11 that works exactly like show(...), but\nit will always show with a 1:1 aspect ratio:\n\n\n```\ndef show11(g, figsize=[5,4], **kwds):\n    for k in ['xmin', 'xmax', 'ymin', 'ymax']:\n        if kwds.has_key(k): g.__getattribute__(k)(kwds[k])\n    scale = (g.xmax() - g.xmin())/(g.ymax() - g.ymin())\n    g.show(figsize=[figsize[0], figsize[0]/scale], **kwds)\n```\n\n\n\n```\nshow11(plot(sin, 0, 5))\n```\n\n\n\n```\nshow11(circle((0,0), 2), xmin=-3, xmax=4)\n```\n\n\n -- William\n\nIssue created by migration from https://trac.sagemath.org/ticket/1606\n\n",
+    "body": "Assignee: @williamstein\n\n> \n> I've been looking for a plot.option that ensures a 1:1 aspect ratio\n> for 2D plots (e.g. something like AspectRatio->Automatic in Mma). Does\n> this exist in Sage? I'm trying to set things up so that\n> \n> circle((0,0),2).show()\n> \n> shows a circle rather than an ellipse, regardless of the plot window\n> dimensions. Apologies if this has already been covered somewhere.\n\nWe should just add\n    P.show(aspect_ratio=\"automatic\")\netc., exactly as in Mathematica.  The goal with 2d graphics in Sage\nis that they at least support all options that Mathematica has. \n\nAnyway, here is a function show11 that works exactly like show(...), but\nit will always show with a 1:1 aspect ratio:\n\n\n```\ndef show11(g, figsize=[5,4], **kwds):\n    for k in ['xmin', 'xmax', 'ymin', 'ymax']:\n        if kwds.has_key(k): g.__getattribute__(k)(kwds[k])\n    scale = (g.xmax() - g.xmin())/(g.ymax() - g.ymin())\n    g.show(figsize=[figsize[0], figsize[0]/scale], **kwds)\n```\n\n\n\n```\nshow11(plot(sin, 0, 5))\n```\n\n\n\n```\nshow11(circle((0,0), 2), xmin=-3, xmax=4)\n```\n\n\n -- William\n\nIssue created by migration from https://trac.sagemath.org/ticket/1606\n\n",
     "created_at": "2007-12-27T03:19:48Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001606.json:
     "title": "plotting -- add aspect_ratio option to show command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1606",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 > 
 > I've been looking for a plot.option that ensures a 1:1 aspect ratio
@@ -77,7 +77,7 @@ archive/issue_comments_010204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1606#issuecomment-10204",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,16 +90,16 @@ Changing status from new to assigned.
 archive/issue_comments_010205.json:
 ```json
 {
-    "body": "Attachment [trac-1606.patch](tarball://root/attachments/some-uuid/ticket1606/trac-1606.patch) by was created at 2008-01-19 22:16:52",
+    "body": "Attachment [trac-1606.patch](tarball://root/attachments/some-uuid/ticket1606/trac-1606.patch) by @williamstein created at 2008-01-19 22:16:52",
     "created_at": "2008-01-19T22:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1606#issuecomment-10205",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1606.patch](tarball://root/attachments/some-uuid/ticket1606/trac-1606.patch) by was created at 2008-01-19 22:16:52
+Attachment [trac-1606.patch](tarball://root/attachments/some-uuid/ticket1606/trac-1606.patch) by @williamstein created at 2008-01-19 22:16:52
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_010206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1606#issuecomment-10206",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_010207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1606#issuecomment-10207",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

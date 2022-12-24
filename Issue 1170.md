@@ -3,7 +3,7 @@
 archive/issues_001170.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen one tries to use the order function on group elements of infinite order, one gets an error:\n\ngl=GL(2,ZZ)\ng=gl.gens()[2]\ng.order()\n\nIn MAGMA, one (often) gets the answer 0 if one calls the Order function on elements of infinite order.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1170\n\n",
+    "body": "Assignee: @williamstein\n\nWhen one tries to use the order function on group elements of infinite order, one gets an error:\n\ngl=GL(2,ZZ)\ng=gl.gens()[2]\ng.order()\n\nIn MAGMA, one (often) gets the answer 0 if one calls the Order function on elements of infinite order.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1170\n\n",
     "created_at": "2007-11-14T15:02:07Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_001170.json:
     "user": "ljpk"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When one tries to use the order function on group elements of infinite order, one gets an error:
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1170
 archive/issue_comments_007171.json:
 ```json
 {
-    "body": "Attachment [1170-matrix-group-order.patch](tarball://root/attachments/some-uuid/ticket1170/1170-matrix-group-order.patch) by cremona created at 2008-09-04 15:43:19",
+    "body": "Attachment [1170-matrix-group-order.patch](tarball://root/attachments/some-uuid/ticket1170/1170-matrix-group-order.patch) by @JohnCremona created at 2008-09-04 15:43:19",
     "created_at": "2008-09-04T15:43:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1170#issuecomment-7171",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [1170-matrix-group-order.patch](tarball://root/attachments/some-uuid/ticket1170/1170-matrix-group-order.patch) by cremona created at 2008-09-04 15:43:19
+Attachment [1170-matrix-group-order.patch](tarball://root/attachments/some-uuid/ticket1170/1170-matrix-group-order.patch) by @JohnCremona created at 2008-09-04 15:43:19
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_007172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1170",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1170#issuecomment-7172",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

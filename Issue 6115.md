@@ -3,7 +3,7 @@
 archive/issues_006115.json:
 ```json
 {
-    "body": "Assignee: was\n\nCurrently, it looks like the symbolic matrix code in `matrix/matrix_symbolic_dense.pyx` goes to maxima for everything.  This makes things **slow** and, at least in 3.4.2, it was easy to crash Maxima by calculating a 6x6 determinant, for example.\n\nHere is an example of how the current general algorithms in Sage can speed things up (even before making the matrix be stored in Sage instead of Maxima).\n\n\n```\nsage: var('x00,x01,x10,x11')\nsage: a=matrix(2,[[x00,x01],[x10,x11]])\nsage: %timeit a.det()\n10 loops, best of 3: 218 ms per loop\n```\n\n\nI went into matrix/matrix_symbolic_dense.pyx and just commented out the determinant routine.  This way, it uses the generic determinant routine for matrices.  Note that we still have to get values from maxima for this, but the multiplication and things are done in pynac.\n\nGeneric determinant algorithm:\n\n\n```\nsage: var('x00,x01,x10,x11')\n(x00, x01, x10, x11)\nsage: a=matrix(2,[[x00,x01],[x10,x11]])\nsage: %timeit a.det()\n100000 loops, best of 3: 5.85 \u00b5s per loop\nsage: %timeit a.det()\n100000 loops, best of 3: 6.15 \u00b5s per loop\n```\n\n\nSo, the generic Sage code with pynac took about 3% of the time it took to call maxima and ask it for the determinant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6115\n\n",
+    "body": "Assignee: @williamstein\n\nCurrently, it looks like the symbolic matrix code in `matrix/matrix_symbolic_dense.pyx` goes to maxima for everything.  This makes things **slow** and, at least in 3.4.2, it was easy to crash Maxima by calculating a 6x6 determinant, for example.\n\nHere is an example of how the current general algorithms in Sage can speed things up (even before making the matrix be stored in Sage instead of Maxima).\n\n\n```\nsage: var('x00,x01,x10,x11')\nsage: a=matrix(2,[[x00,x01],[x10,x11]])\nsage: %timeit a.det()\n10 loops, best of 3: 218 ms per loop\n```\n\n\nI went into matrix/matrix_symbolic_dense.pyx and just commented out the determinant routine.  This way, it uses the generic determinant routine for matrices.  Note that we still have to get values from maxima for this, but the multiplication and things are done in pynac.\n\nGeneric determinant algorithm:\n\n\n```\nsage: var('x00,x01,x10,x11')\n(x00, x01, x10, x11)\nsage: a=matrix(2,[[x00,x01],[x10,x11]])\nsage: %timeit a.det()\n100000 loops, best of 3: 5.85 \u00b5s per loop\nsage: %timeit a.det()\n100000 loops, best of 3: 6.15 \u00b5s per loop\n```\n\n\nSo, the generic Sage code with pynac took about 3% of the time it took to call maxima and ask it for the determinant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6115\n\n",
     "created_at": "2009-05-21T18:39:36Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_006115.json:
     "title": "make symbolic matrices use pynac symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6115",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Currently, it looks like the symbolic matrix code in `matrix/matrix_symbolic_dense.pyx` goes to maxima for everything.  This makes things **slow** and, at least in 3.4.2, it was easy to crash Maxima by calculating a 6x6 determinant, for example.
 
@@ -66,7 +66,7 @@ archive/issue_comments_048863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48863",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_048864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48864",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_048865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48865",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_048866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48866",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_048867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48867",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -211,16 +211,16 @@ apply on top of previous patches
 archive/issue_comments_048868.json:
 ```json
 {
-    "body": "Attachment [trac-6115-symbolic-eigenvalues.patch](tarball://root/attachments/some-uuid/ticket6115/trac-6115-symbolic-eigenvalues.patch) by jason created at 2009-05-26 21:04:51\n\nthe trac-6115-symbolic-eigenvalues.patch  patch needs to be reviewed as well.",
+    "body": "Attachment [trac-6115-symbolic-eigenvalues.patch](tarball://root/attachments/some-uuid/ticket6115/trac-6115-symbolic-eigenvalues.patch) by @jasongrout created at 2009-05-26 21:04:51\n\nthe trac-6115-symbolic-eigenvalues.patch  patch needs to be reviewed as well.",
     "created_at": "2009-05-26T21:04:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48868",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6115-symbolic-eigenvalues.patch](tarball://root/attachments/some-uuid/ticket6115/trac-6115-symbolic-eigenvalues.patch) by jason created at 2009-05-26 21:04:51
+Attachment [trac-6115-symbolic-eigenvalues.patch](tarball://root/attachments/some-uuid/ticket6115/trac-6115-symbolic-eigenvalues.patch) by @jasongrout created at 2009-05-26 21:04:51
 
 the trac-6115-symbolic-eigenvalues.patch  patch needs to be reviewed as well.
 
@@ -236,7 +236,7 @@ archive/issue_comments_048869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48869",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_048870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48870",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_048871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48871",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_048872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48872",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -305,16 +305,16 @@ Yep, and Mike's change looks good to me and makes tests.py pass doctests, so pos
 archive/issue_comments_048873.json:
 ```json
 {
-    "body": "Attachment [trac_6115.patch](tarball://root/attachments/some-uuid/ticket6115/trac_6115.patch) by mhansen created at 2009-05-28 05:30:18",
+    "body": "Attachment [trac_6115.patch](tarball://root/attachments/some-uuid/ticket6115/trac_6115.patch) by @mwhansen created at 2009-05-28 05:30:18",
     "created_at": "2009-05-28T05:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48873",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6115.patch](tarball://root/attachments/some-uuid/ticket6115/trac_6115.patch) by mhansen created at 2009-05-28 05:30:18
+Attachment [trac_6115.patch](tarball://root/attachments/some-uuid/ticket6115/trac_6115.patch) by @mwhansen created at 2009-05-28 05:30:18
 
 
 
@@ -328,7 +328,7 @@ archive/issue_comments_048874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48874",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_048875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48875",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

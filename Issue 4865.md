@@ -3,7 +3,7 @@
 archive/issues_004865.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  dimpase\n\n\n```\nsage: install_package('dvipng-1.8')\n...\ngcc -I/usr/local/sage/local/include/freetype2 -I/usr/local/sage/local/include -I/usr/local/sage/local/include -Wall -I.  -c -o vf.o vf.c\ngcc -I/usr/local/sage/local/include/freetype2 -I/usr/local/sage/local/include -I/usr/local/sage/local/include -Wall -I.  -c -o ft.o ft.c\ngcc -I/usr/local/sage/local/include/freetype2 -I/usr/local/sage/local/include -I/usr/local/sage/local/include -Wall -I.  -c -o enc.o enc.c\ngcc -I/usr/local/sage/local/include/freetype2 -I/usr/local/sage/local/include -I/usr/local/sage/local/include -Wall -I.  -c -o fontmap.o fontmap.c\ngcc -I/usr/local/sage/local/include/freetype2 -I/usr/local/sage/local/include -I/usr/local/sage/local/include -Wall -I.  -c -o tfm.o tfm.c\ngcc -L/usr/local/sage/local/lib dvipng.o color.o draw.o dvi.o font.o misc.o pk.o set.o special.o papersiz.o ppagelist.o vf.o  ft.o enc.o fontmap.o tfm.o -o dvipng -L/usr/local/sage/local/lib -Wl,--rpath -Wl,/usr/local/sage/local/lib -lfreetype -lkpathsea -lgd -lpng -lz -lm  \nspecial.o: In function `SetSpecial':\nspecial.c:(.text+0x13ac): undefined reference to `gdImageCreateFromJpeg'\ncollect2: ld returned 1 exit status\nmake: *** [dvipng] Error 1\nError building dvipng.\n\nreal\t0m5.119s\nuser\t0m2.720s\nsys\t0m2.300s\nsage: An error occurred while installing dvipng-1.8\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /usr/local/sage/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/usr/local/sage/spkg/build/dvipng-1.8 and type 'make'.\nInstead type \"/usr/local/sage/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/usr/local/sage/spkg/build/dvipng-1.8\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```\n\n\nI installed  libkpathsea-dev in order to get as far as the above:\n\n```\nroot@sage:/usr/local/sage# apt-get install libkpathsea-dev\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4865\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @dimpase\n\n\n```\nsage: install_package('dvipng-1.8')\n...\ngcc -I/usr/local/sage/local/include/freetype2 -I/usr/local/sage/local/include -I/usr/local/sage/local/include -Wall -I.  -c -o vf.o vf.c\ngcc -I/usr/local/sage/local/include/freetype2 -I/usr/local/sage/local/include -I/usr/local/sage/local/include -Wall -I.  -c -o ft.o ft.c\ngcc -I/usr/local/sage/local/include/freetype2 -I/usr/local/sage/local/include -I/usr/local/sage/local/include -Wall -I.  -c -o enc.o enc.c\ngcc -I/usr/local/sage/local/include/freetype2 -I/usr/local/sage/local/include -I/usr/local/sage/local/include -Wall -I.  -c -o fontmap.o fontmap.c\ngcc -I/usr/local/sage/local/include/freetype2 -I/usr/local/sage/local/include -I/usr/local/sage/local/include -Wall -I.  -c -o tfm.o tfm.c\ngcc -L/usr/local/sage/local/lib dvipng.o color.o draw.o dvi.o font.o misc.o pk.o set.o special.o papersiz.o ppagelist.o vf.o  ft.o enc.o fontmap.o tfm.o -o dvipng -L/usr/local/sage/local/lib -Wl,--rpath -Wl,/usr/local/sage/local/lib -lfreetype -lkpathsea -lgd -lpng -lz -lm  \nspecial.o: In function `SetSpecial':\nspecial.c:(.text+0x13ac): undefined reference to `gdImageCreateFromJpeg'\ncollect2: ld returned 1 exit status\nmake: *** [dvipng] Error 1\nError building dvipng.\n\nreal\t0m5.119s\nuser\t0m2.720s\nsys\t0m2.300s\nsage: An error occurred while installing dvipng-1.8\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /usr/local/sage/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/usr/local/sage/spkg/build/dvipng-1.8 and type 'make'.\nInstead type \"/usr/local/sage/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/usr/local/sage/spkg/build/dvipng-1.8\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```\n\n\nI installed  libkpathsea-dev in order to get as far as the above:\n\n```\nroot@sage:/usr/local/sage# apt-get install libkpathsea-dev\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4865\n\n",
     "created_at": "2008-12-24T05:18:46Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_004865.json:
     "title": "dvipng optional spkg fails to build on sage.math (our main devel machine)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4865",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  dimpase
+CC:  @dimpase
 
 
 ```
@@ -99,7 +99,7 @@ archive/issue_comments_036867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4865#issuecomment-36867",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_036868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4865#issuecomment-36868",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_036869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4865",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4865#issuecomment-36869",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009032.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  kcrisman\n\n\n```\nsage: a=8\nsage: a.n()\n8.00000000000000\nsage: a.numerical_approx()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/zimmerma/<ipython console> in <module>()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2628)()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2828)()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2595)()\n\nAttributeError: 'sage.rings.integer.Integer' object has no attribute 'numerical_approx'\n```\n\nThe same holds for a=17/2 for example.\n\nSince `n` is a shortcut for `numerical_approx`,\nit should work with `numerical_approx` too. In addition,\nif one uses a variable `n` is a program, it would be more\nportable to use `numerical_approx`. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9032\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\n\n```\nsage: a=8\nsage: a.n()\n8.00000000000000\nsage: a.numerical_approx()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/zimmerma/<ipython console> in <module>()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2628)()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2828)()\n\n/usr/local/sage-4.4.2/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2595)()\n\nAttributeError: 'sage.rings.integer.Integer' object has no attribute 'numerical_approx'\n```\n\nThe same holds for a=17/2 for example.\n\nSince `n` is a shortcut for `numerical_approx`,\nit should work with `numerical_approx` too. In addition,\nif one uses a variable `n` is a program, it would be more\nportable to use `numerical_approx`. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9032\n\n",
     "created_at": "2010-05-24T09:12:23Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_009032.json:
     "title": "no method numerical_approx for integers and rationals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9032",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  kcrisman
+CC:  @kcrisman
 
 
 ```
@@ -64,7 +64,7 @@ archive/issue_comments_083586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83586",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_083590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83590",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_083591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83591",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_083592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83592",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_083593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83593",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_083596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83596",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_083597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83597",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_083599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83599",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_083600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83600",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_083606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83606",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_083607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83607",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_083608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83608",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_083609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83609",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_083610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83610",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_083613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83613",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -639,7 +639,7 @@ archive/issue_comments_083614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83614",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -657,7 +657,7 @@ archive/issue_comments_083615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83615",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -675,7 +675,7 @@ archive/issue_comments_083616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83616",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -716,7 +716,7 @@ archive/issue_comments_083618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83618",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -734,7 +734,7 @@ archive/issue_comments_083619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83619",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -906,7 +906,7 @@ archive/issue_comments_083624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83624",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -924,7 +924,7 @@ archive/issue_comments_083625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83625",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -942,7 +942,7 @@ archive/issue_comments_083626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83626",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -965,7 +965,7 @@ archive/issue_comments_083627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83627",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -999,7 +999,7 @@ archive/issue_comments_083628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83628",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1024,7 +1024,7 @@ archive/issue_comments_083629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83629",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1044,7 +1044,7 @@ archive/issue_comments_083630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9032",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9032#issuecomment-83630",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

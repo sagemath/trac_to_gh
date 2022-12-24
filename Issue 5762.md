@@ -14,7 +14,7 @@ archive/issues_005762.json:
     "title": "Bring doctests of sage/misc/latex.py to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5762",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_045043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5762#issuecomment-45043",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

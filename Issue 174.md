@@ -3,7 +3,7 @@
 archive/issues_000174.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  burcin\n\nHermite Normal form is the analogue of echelon form over the integers.\nIt's crucial for almost all efficient computations with Z-modules (infinite \nabelian groups, finite abelian groups, lattices, modular abelian varieties\nvia lattices, etc).  \n\nMAGMA is 50 times faster even for small examples, and asymptotically\nmuch faster than GAP, PARI, and NTL. \n\nSee this page http://magma.maths.usyd.edu.au/users/allan/mat/hermite.html\nwhich is mirrored here:\nhttp://sage.math.washington.edu/sage/misc/hermite.html\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/174\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nHermite Normal form is the analogue of echelon form over the integers.\nIt's crucial for almost all efficient computations with Z-modules (infinite \nabelian groups, finite abelian groups, lattices, modular abelian varieties\nvia lattices, etc).  \n\nMAGMA is 50 times faster even for small examples, and asymptotically\nmuch faster than GAP, PARI, and NTL. \n\nSee this page http://magma.maths.usyd.edu.au/users/allan/mat/hermite.html\nwhich is mirrored here:\nhttp://sage.math.washington.edu/sage/misc/hermite.html\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/174\n\n",
     "created_at": "2006-12-01T02:15:15Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_000174.json:
     "title": "all existing open source Hermite Normal Form implementations totally SUCK.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/174",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  burcin
+CC:  @burcin
 
 Hermite Normal form is the analogue of echelon form over the integers.
 It's crucial for almost all efficient computations with Z-modules (infinite 
@@ -52,7 +52,7 @@ archive/issue_comments_000798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-798",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_000799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-799",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,16 +83,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_000800.json:
 ```json
 {
-    "body": "Attachment [HermiteNormalForm_1.tex](tarball://root/attachments/some-uuid/ticket174/HermiteNormalForm_1.tex) by was created at 2007-01-13 01:44:45",
+    "body": "Attachment [HermiteNormalForm_1.tex](tarball://root/attachments/some-uuid/ticket174/HermiteNormalForm_1.tex) by @williamstein created at 2007-01-13 01:44:45",
     "created_at": "2007-01-13T01:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-800",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [HermiteNormalForm_1.tex](tarball://root/attachments/some-uuid/ticket174/HermiteNormalForm_1.tex) by was created at 2007-01-13 01:44:45
+Attachment [HermiteNormalForm_1.tex](tarball://root/attachments/some-uuid/ticket174/HermiteNormalForm_1.tex) by @williamstein created at 2007-01-13 01:44:45
 
 
 
@@ -106,7 +106,7 @@ archive/issue_comments_000801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-801",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,16 +120,16 @@ be reasonably easy to implement in SAGE given what we now have.
 archive/issue_comments_000802.json:
 ```json
 {
-    "body": "Attachment [trac-174.patch](tarball://root/attachments/some-uuid/ticket174/trac-174.patch) by was created at 2008-02-08 16:08:15",
+    "body": "Attachment [trac-174.patch](tarball://root/attachments/some-uuid/ticket174/trac-174.patch) by @williamstein created at 2008-02-08 16:08:15",
     "created_at": "2008-02-08T16:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-802",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-174.patch](tarball://root/attachments/some-uuid/ticket174/trac-174.patch) by was created at 2008-02-08 16:08:15
+Attachment [trac-174.patch](tarball://root/attachments/some-uuid/ticket174/trac-174.patch) by @williamstein created at 2008-02-08 16:08:15
 
 
 
@@ -138,16 +138,16 @@ Attachment [trac-174.patch](tarball://root/attachments/some-uuid/ticket174/trac-
 archive/issue_comments_000803.json:
 ```json
 {
-    "body": "Attachment [hnfrow.sage](tarball://root/attachments/some-uuid/ticket174/hnfrow.sage) by was created at 2008-02-08 16:11:31",
+    "body": "Attachment [hnfrow.sage](tarball://root/attachments/some-uuid/ticket174/hnfrow.sage) by @williamstein created at 2008-02-08 16:11:31",
     "created_at": "2008-02-08T16:11:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-803",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [hnfrow.sage](tarball://root/attachments/some-uuid/ticket174/hnfrow.sage) by was created at 2008-02-08 16:11:31
+Attachment [hnfrow.sage](tarball://root/attachments/some-uuid/ticket174/hnfrow.sage) by @williamstein created at 2008-02-08 16:11:31
 
 
 
@@ -156,16 +156,16 @@ Attachment [hnfrow.sage](tarball://root/attachments/some-uuid/ticket174/hnfrow.s
 archive/issue_comments_000804.json:
 ```json
 {
-    "body": "Attachment [trac-174-part2.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part2.patch) by was created at 2008-02-08 16:11:49",
+    "body": "Attachment [trac-174-part2.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part2.patch) by @williamstein created at 2008-02-08 16:11:49",
     "created_at": "2008-02-08T16:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-804",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-174-part2.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part2.patch) by was created at 2008-02-08 16:11:49
+Attachment [trac-174-part2.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part2.patch) by @williamstein created at 2008-02-08 16:11:49
 
 
 
@@ -174,16 +174,16 @@ Attachment [trac-174-part2.patch](tarball://root/attachments/some-uuid/ticket174
 archive/issue_comments_000805.json:
 ```json
 {
-    "body": "Attachment [trac-174-part3.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part3.patch) by was created at 2008-02-17 01:14:22\n\nI've put the final hnf.hg bundle here:\n\n  http://sage.math.washington.edu/home/was/patches/hnf.hg\n\nThis is a bundle that I made by cleanly applying all my relevant\npatches to 2.10.2.alpha0, then do hg_sage.send(...). \n\nThe code is well documented, works well (very well tested with\nautomated testing and doctstrings), but has a HUGE MEMORY LEAK somewhere:\n\n\n```\nsage: a = random_matrix(ZZ,200,x=0,y=9)\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'234M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'239M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'244M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'249M+'\n```\n\n\nI suspect the memleak is in the optimized GMP code I added to matrix_integer_dense, and will find out soon...",
+    "body": "Attachment [trac-174-part3.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part3.patch) by @williamstein created at 2008-02-17 01:14:22\n\nI've put the final hnf.hg bundle here:\n\n  http://sage.math.washington.edu/home/was/patches/hnf.hg\n\nThis is a bundle that I made by cleanly applying all my relevant\npatches to 2.10.2.alpha0, then do hg_sage.send(...). \n\nThe code is well documented, works well (very well tested with\nautomated testing and doctstrings), but has a HUGE MEMORY LEAK somewhere:\n\n\n```\nsage: a = random_matrix(ZZ,200,x=0,y=9)\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'234M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'239M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'244M+'\nsage: a._clear_cache(); e = a.hermite_form(proof=False); get_memory_usage()\n'249M+'\n```\n\n\nI suspect the memleak is in the optimized GMP code I added to matrix_integer_dense, and will find out soon...",
     "created_at": "2008-02-17T01:14:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-805",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-174-part3.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part3.patch) by was created at 2008-02-17 01:14:22
+Attachment [trac-174-part3.patch](tarball://root/attachments/some-uuid/ticket174/trac-174-part3.patch) by @williamstein created at 2008-02-17 01:14:22
 
 I've put the final hnf.hg bundle here:
 
@@ -223,7 +223,7 @@ archive/issue_comments_000806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-806",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_000807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/174",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/174#issuecomment-807",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

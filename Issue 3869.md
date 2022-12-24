@@ -3,7 +3,7 @@
 archive/issues_003869.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nKeywords: elliptic curve database\n\nExample:\n\n```\nsage: CDB=CremonaDatabase()    \nsage: [[EllipticCurve(ai[0]).label() for ai in C] for C in CDB.isogeny_classes(1728)]\n\n[['1728a1', '1728a2', '1728a3', '1728a4'],\n ['1728b1'],\n ['1728ba1'],\n ['1728bb1', '1728bb2', '1728bb3'],\n ['1728c1'],\n ['1728d1'],\n ['1728e1', '1728e2', '1728e3'],\n ['1728f1', '1728f2'],\n ['1728g1'],\n ['1728h1'],\n ['1728i1'],\n ['1728j1', '1728j2', '1728j3'],\n ['1728k1'],\n ['1728l1'],\n ['1728m1', '1728m2'],\n ['1728n1'],\n ['1728o1'],\n ['1728p1'],\n ['1728q1'],\n ['1728r1'],\n ['1728s1', '1728s2', '1728s3'],\n ['1728t1'],\n ['1728u1'],\n ['1728v1', '1728v2', '1728v3', '1728v4'],\n ['1728w1'],\n ['1728x1'],\n ['1728y1'],\n ['1728z1']]\n```\n\n\nThe keys are strings like '1728a1',...,'1728z1','1728ba1',... and these a wrongly sorted by the standard sort function.  What this means is that when iterating through the database, the isogeny classes are not listed in the standard order a,b,...,z,ba,bb,...,bz,...\n\nIn the above example, classes ba and bb should come after class z, and not between classes b and c.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3869\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: elliptic curve database\n\nExample:\n\n```\nsage: CDB=CremonaDatabase()    \nsage: [[EllipticCurve(ai[0]).label() for ai in C] for C in CDB.isogeny_classes(1728)]\n\n[['1728a1', '1728a2', '1728a3', '1728a4'],\n ['1728b1'],\n ['1728ba1'],\n ['1728bb1', '1728bb2', '1728bb3'],\n ['1728c1'],\n ['1728d1'],\n ['1728e1', '1728e2', '1728e3'],\n ['1728f1', '1728f2'],\n ['1728g1'],\n ['1728h1'],\n ['1728i1'],\n ['1728j1', '1728j2', '1728j3'],\n ['1728k1'],\n ['1728l1'],\n ['1728m1', '1728m2'],\n ['1728n1'],\n ['1728o1'],\n ['1728p1'],\n ['1728q1'],\n ['1728r1'],\n ['1728s1', '1728s2', '1728s3'],\n ['1728t1'],\n ['1728u1'],\n ['1728v1', '1728v2', '1728v3', '1728v4'],\n ['1728w1'],\n ['1728x1'],\n ['1728y1'],\n ['1728z1']]\n```\n\n\nThe keys are strings like '1728a1',...,'1728z1','1728ba1',... and these a wrongly sorted by the standard sort function.  What this means is that when iterating through the database, the isogeny classes are not listed in the standard order a,b,...,z,ba,bb,...,bz,...\n\nIn the above example, classes ba and bb should come after class z, and not between classes b and c.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3869\n\n",
     "created_at": "2008-08-15T08:43:49Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003869.json:
     "title": "CremonaDatabase functions iter() and isogeny_classes() sort keys wrongly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3869",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Keywords: elliptic curve database
 
@@ -74,16 +74,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3869
 archive/issue_comments_027578.json:
 ```json
 {
-    "body": "Attachment [sage-trac3869.patch](tarball://root/attachments/some-uuid/ticket3869/sage-trac3869.patch) by cremona created at 2008-08-15 10:29:33\n\nThe attached patch fixes this by defining a new cmp function for curve codes which gets it right.\n\nThis should apply to 3.1.\n\nI have doctested the new functions, and also checked that ell_rational_field doctests ok.",
+    "body": "Attachment [sage-trac3869.patch](tarball://root/attachments/some-uuid/ticket3869/sage-trac3869.patch) by @JohnCremona created at 2008-08-15 10:29:33\n\nThe attached patch fixes this by defining a new cmp function for curve codes which gets it right.\n\nThis should apply to 3.1.\n\nI have doctested the new functions, and also checked that ell_rational_field doctests ok.",
     "created_at": "2008-08-15T10:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3869#issuecomment-27578",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac3869.patch](tarball://root/attachments/some-uuid/ticket3869/sage-trac3869.patch) by cremona created at 2008-08-15 10:29:33
+Attachment [sage-trac3869.patch](tarball://root/attachments/some-uuid/ticket3869/sage-trac3869.patch) by @JohnCremona created at 2008-08-15 10:29:33
 
 The attached patch fixes this by defining a new cmp function for curve codes which gets it right.
 
@@ -147,7 +147,7 @@ archive/issue_comments_027581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3869#issuecomment-27581",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

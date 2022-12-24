@@ -3,7 +3,7 @@
 archive/issues_007596.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  slelievre\n\nHere's an example:\n\n\n```\nsage: K.<a> = NumberField(x)\nsage: K.ideal(5)\nFractional ideal (5)\nsage: QQ.ideal(5)\nPrincipal ideal (1) of Rational Field\nsage: QQ.number_field().ideal(5)\nPrincipal ideal (1) of Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7596\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @slel\n\nHere's an example:\n\n\n```\nsage: K.<a> = NumberField(x)\nsage: K.ideal(5)\nFractional ideal (5)\nsage: QQ.ideal(5)\nPrincipal ideal (1) of Rational Field\nsage: QQ.number_field().ideal(5)\nPrincipal ideal (1) of Rational Field\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7596\n\n",
     "created_at": "2009-12-03T20:06:43Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_007596.json:
     "title": "QQ.number_field() does not behave like any other NumberField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7596",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  slelievre
+CC:  @slel
 
 Here's an example:
 
@@ -51,7 +51,7 @@ archive/issue_comments_064789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7596#issuecomment-64789",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -64,16 +64,16 @@ sorry modified the wrong ticket, i meant to edit #9414 which is a duplicate of t
 archive/issue_comments_064790.json:
 ```json
 {
-    "body": "Attachment [trac_7596_places_for_QQ.patch](tarball://root/attachments/some-uuid/ticket7596/trac_7596_places_for_QQ.patch) by chapoton created at 2013-07-25 14:17:23\n\nhere is already a ticket for the easy part : a method \"places\" for QQ",
+    "body": "Attachment [trac_7596_places_for_QQ.patch](tarball://root/attachments/some-uuid/ticket7596/trac_7596_places_for_QQ.patch) by @fchapoton created at 2013-07-25 14:17:23\n\nhere is already a ticket for the easy part : a method \"places\" for QQ",
     "created_at": "2013-07-25T14:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7596#issuecomment-64790",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_7596_places_for_QQ.patch](tarball://root/attachments/some-uuid/ticket7596/trac_7596_places_for_QQ.patch) by chapoton created at 2013-07-25 14:17:23
+Attachment [trac_7596_places_for_QQ.patch](tarball://root/attachments/some-uuid/ticket7596/trac_7596_places_for_QQ.patch) by @fchapoton created at 2013-07-25 14:17:23
 
 here is already a ticket for the easy part : a method "places" for QQ
 
@@ -89,7 +89,7 @@ archive/issue_comments_064791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7596#issuecomment-64791",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -110,16 +110,16 @@ but this breaks the lcm and gcd in a bad way..
 archive/issue_comments_064792.json:
 ```json
 {
-    "body": "Attachment [trac_7596_number_fields_are_quotient_fields.patch](tarball://root/attachments/some-uuid/ticket7596/trac_7596_number_fields_are_quotient_fields.patch) by chapoton created at 2013-07-26 12:23:42",
+    "body": "Attachment [trac_7596_number_fields_are_quotient_fields.patch](tarball://root/attachments/some-uuid/ticket7596/trac_7596_number_fields_are_quotient_fields.patch) by @fchapoton created at 2013-07-26 12:23:42",
     "created_at": "2013-07-26T12:23:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7596#issuecomment-64792",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_7596_number_fields_are_quotient_fields.patch](tarball://root/attachments/some-uuid/ticket7596/trac_7596_number_fields_are_quotient_fields.patch) by chapoton created at 2013-07-26 12:23:42
+Attachment [trac_7596_number_fields_are_quotient_fields.patch](tarball://root/attachments/some-uuid/ticket7596/trac_7596_number_fields_are_quotient_fields.patch) by @fchapoton created at 2013-07-26 12:23:42
 
 
 
@@ -133,7 +133,7 @@ archive/issue_comments_064793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7596#issuecomment-64793",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_064794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7596#issuecomment-64794",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_064796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7596#issuecomment-64796",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_064797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7596#issuecomment-64797",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_064798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7596#issuecomment-64798",
-    "user": "lorenz"
+    "user": "@yyyyx4"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_064799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7596#issuecomment-64799",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_064800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7596#issuecomment-64800",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

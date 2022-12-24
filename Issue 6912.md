@@ -3,7 +3,7 @@
 archive/issues_006912.json:
 ```json
 {
-    "body": "Assignee: was\n\nMathematica can plot parametric regions:\n\n```\nParametricPlot[r^2 { Sqrt[t] Cos[t], Sin[t]}, {t, 0, 3 Pi/2}, {r, 1, 2}]\n```\n\n\nSee http://reference.wolfram.com/mathematica/ref/ParametricPlot.html for output.  We should be able to do this too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6912\n\n",
+    "body": "Assignee: @williamstein\n\nMathematica can plot parametric regions:\n\n```\nParametricPlot[r^2 { Sqrt[t] Cos[t], Sin[t]}, {t, 0, 3 Pi/2}, {r, 1, 2}]\n```\n\n\nSee http://reference.wolfram.com/mathematica/ref/ParametricPlot.html for output.  We should be able to do this too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6912\n\n",
     "created_at": "2009-09-10T07:15:44Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_006912.json:
     "title": "parametric regions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6912",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Mathematica can plot parametric regions:
 
@@ -44,7 +44,7 @@ archive/issue_comments_057095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6912#issuecomment-57095",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

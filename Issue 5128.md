@@ -3,7 +3,7 @@
 archive/issues_005128.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  niles\n\nThis provides an easy way to make a matplotlib image and combine it with other Graphics() objects:\n\n\n```\nclass Matplotlib_Primitive(GraphicPrimitive):\n    \"\"\"\n    Primitive class that initializes the\n    matrix_plot graphics type \n    \"\"\"\n    def __init__(self, artist, options=None):\n        self.artist = artist\n        GraphicPrimitive.__init__(self, options)        \n\n    def get_minmax_data(self):\n        \"\"\"\n        Returns a dictionary with the bounding box data.\n                \n        EXAMPLES:\n            sage: m = matrix_plot(matrix([[1,3,5,1],[2,4,5,6],[1,3,5,7]]))[0]\n            sage: list(sorted(m.get_minmax_data().items()))\n            [('xmax', 4), ('xmin', 0), ('ymax', 3), ('ymin', 0)]\n\n        \"\"\"\n        return dict(zip(['xmin', 'xmax', 'ymax', 'ymin'], self.artist.get_extent()))\n\n    def _allowed_options(self):\n        return {}\n\n    def _repr_(self):\n        return \"MatrixPlot defined by a %s x %s data grid\"%(self.xy_array_row, self.xy_array_col)\n\n    def _render_on_subplot(self, subplot):\n        subplot.add_artist(self.artist)\n\ndef matplotlib_plot(mat):\n    from sage.plot.plot import Graphics\n    g = Graphics()\n    g.add_primitive(Matplotlib_Primitive(mat))\n    return g\n```\n\n\nExample use:\n\n\n```\nA=random_matrix(RDF,100)\nA.numpy()\nimport pylab\nimport numpy\nB=A.numpy().astype(float)\nim = pylab.imshow(B/numpy.max(B),  origin='upper',alpha=0.6)\nmatplotlib_plot(im)+polygon([[0,10],[10,0],[20,40]])\n```\n\n\n\nThis just needs to be put in a file in the plot/ directory and an entry added to all.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5128\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nilesjohnson\n\nThis provides an easy way to make a matplotlib image and combine it with other Graphics() objects:\n\n\n```\nclass Matplotlib_Primitive(GraphicPrimitive):\n    \"\"\"\n    Primitive class that initializes the\n    matrix_plot graphics type \n    \"\"\"\n    def __init__(self, artist, options=None):\n        self.artist = artist\n        GraphicPrimitive.__init__(self, options)        \n\n    def get_minmax_data(self):\n        \"\"\"\n        Returns a dictionary with the bounding box data.\n                \n        EXAMPLES:\n            sage: m = matrix_plot(matrix([[1,3,5,1],[2,4,5,6],[1,3,5,7]]))[0]\n            sage: list(sorted(m.get_minmax_data().items()))\n            [('xmax', 4), ('xmin', 0), ('ymax', 3), ('ymin', 0)]\n\n        \"\"\"\n        return dict(zip(['xmin', 'xmax', 'ymax', 'ymin'], self.artist.get_extent()))\n\n    def _allowed_options(self):\n        return {}\n\n    def _repr_(self):\n        return \"MatrixPlot defined by a %s x %s data grid\"%(self.xy_array_row, self.xy_array_col)\n\n    def _render_on_subplot(self, subplot):\n        subplot.add_artist(self.artist)\n\ndef matplotlib_plot(mat):\n    from sage.plot.plot import Graphics\n    g = Graphics()\n    g.add_primitive(Matplotlib_Primitive(mat))\n    return g\n```\n\n\nExample use:\n\n\n```\nA=random_matrix(RDF,100)\nA.numpy()\nimport pylab\nimport numpy\nB=A.numpy().astype(float)\nim = pylab.imshow(B/numpy.max(B),  origin='upper',alpha=0.6)\nmatplotlib_plot(im)+polygon([[0,10],[10,0],[20,40]])\n```\n\n\n\nThis just needs to be put in a file in the plot/ directory and an entry added to all.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5128\n\n",
     "created_at": "2009-01-29T11:56:58Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_005128.json:
     "title": "matplotlib Graphics() wrapper",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5128",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  niles
+CC:  @nilesjohnson
 
 This provides an easy way to make a matplotlib image and combine it with other Graphics() objects:
 
@@ -96,7 +96,7 @@ archive/issue_comments_039185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39185",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_039186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39186",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -127,16 +127,16 @@ Something doesn't work in the above patch.  I need to figure out how to get the 
 archive/issue_comments_039187.json:
 ```json
 {
-    "body": "Attachment [trac_5128-matplotlib-plot.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.patch) by jason created at 2009-02-24 09:47:35",
+    "body": "Attachment [trac_5128-matplotlib-plot.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.patch) by @jasongrout created at 2009-02-24 09:47:35",
     "created_at": "2009-02-24T09:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39187",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5128-matplotlib-plot.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.patch) by jason created at 2009-02-24 09:47:35
+Attachment [trac_5128-matplotlib-plot.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.patch) by @jasongrout created at 2009-02-24 09:47:35
 
 
 
@@ -150,7 +150,7 @@ archive/issue_comments_039188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39188",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_039189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39189",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_039190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39190",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -202,16 +202,16 @@ That's correct.  This ticket is the other direction.
 archive/issue_comments_039191.json:
 ```json
 {
-    "body": "Attachment [trac_5128-matplotlib-plot.2.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.2.patch) by jason created at 2009-09-17 19:09:36\n\napply instead of previous patch.",
+    "body": "Attachment [trac_5128-matplotlib-plot.2.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.2.patch) by @jasongrout created at 2009-09-17 19:09:36\n\napply instead of previous patch.",
     "created_at": "2009-09-17T19:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39191",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5128-matplotlib-plot.2.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.2.patch) by jason created at 2009-09-17 19:09:36
+Attachment [trac_5128-matplotlib-plot.2.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.2.patch) by @jasongrout created at 2009-09-17 19:09:36
 
 apply instead of previous patch.
 
@@ -227,7 +227,7 @@ archive/issue_comments_039192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39192",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -240,16 +240,16 @@ apply instead of previous patches
 archive/issue_comments_039193.json:
 ```json
 {
-    "body": "Attachment [trac_5128-matplotlib-plot.3.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.3.patch) by jason created at 2009-09-17 19:11:49\n\nI've attached another iteration.  I've also posted to the matplotlib users mailing list about the problems in the above patch.",
+    "body": "Attachment [trac_5128-matplotlib-plot.3.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.3.patch) by @jasongrout created at 2009-09-17 19:11:49\n\nI've attached another iteration.  I've also posted to the matplotlib users mailing list about the problems in the above patch.",
     "created_at": "2009-09-17T19:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39193",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_5128-matplotlib-plot.3.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.3.patch) by jason created at 2009-09-17 19:11:49
+Attachment [trac_5128-matplotlib-plot.3.patch](tarball://root/attachments/some-uuid/ticket5128/trac_5128-matplotlib-plot.3.patch) by @jasongrout created at 2009-09-17 19:11:49
 
 I've attached another iteration.  I've also posted to the matplotlib users mailing list about the problems in the above patch.
 
@@ -265,7 +265,7 @@ archive/issue_comments_039194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39194",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_039195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39195",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_039196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39196",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_039197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39197",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_039198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39198",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_039199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39199",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_039200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5128",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5128#issuecomment-39200",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

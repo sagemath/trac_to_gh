@@ -14,7 +14,7 @@ archive/issues_002803.json:
     "title": "notebook -- the confirmation email after creating a new account is marked as spam",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2803",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -67,7 +67,7 @@ archive/issue_comments_019241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2803#issuecomment-19241",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_019242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2803#issuecomment-19242",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_019243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2803#issuecomment-19243",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_019244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2803#issuecomment-19244",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_019245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2803#issuecomment-19245",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_019246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2803#issuecomment-19246",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_019247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2803#issuecomment-19247",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_019248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2803#issuecomment-19248",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

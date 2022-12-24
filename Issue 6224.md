@@ -14,7 +14,7 @@ archive/issues_006224.json:
     "title": "sage startup takes way to long",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6224",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -53,7 +53,7 @@ archive/issue_comments_049692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6224#issuecomment-49692",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

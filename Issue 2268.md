@@ -3,7 +3,7 @@
 archive/issues_002268.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThe following patch \"makes the common case fast.\"  If there is a trivial coercion map this can improve performance by 30x or more.  Furthermore the previous has_key() was not compiling into fast code, this improves it.  It also cleans up the try statement by replacing it with the if statement that maintains backwards compatibility.  This if statement should be eventually removed, but there is a significant body of doctests that fail because code calls has_coerce_map with nonsensical arguments (sometimes self is not a Parent, for instance).  Non-trivial speedups are not as dramatic but still easily measurable in tight loops.  This code has been verified at the .c file level for reference issues and make checked.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2268\n\n",
+    "body": "Assignee: @garyfurnish\n\nThe following patch \"makes the common case fast.\"  If there is a trivial coercion map this can improve performance by 30x or more.  Furthermore the previous has_key() was not compiling into fast code, this improves it.  It also cleans up the try statement by replacing it with the if statement that maintains backwards compatibility.  This if statement should be eventually removed, but there is a significant body of doctests that fail because code calls has_coerce_map with nonsensical arguments (sometimes self is not a Parent, for instance).  Non-trivial speedups are not as dramatic but still easily measurable in tight loops.  This code has been verified at the .c file level for reference issues and make checked.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2268\n\n",
     "created_at": "2008-02-22T22:17:23Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_002268.json:
     "title": "has_coerce_map_from_c performance improvements (patch included)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2268",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 The following patch "makes the common case fast."  If there is a trivial coercion map this can improve performance by 30x or more.  Furthermore the previous has_key() was not compiling into fast code, this improves it.  It also cleans up the try statement by replacing it with the if statement that maintains backwards compatibility.  This if statement should be eventually removed, but there is a significant body of doctests that fail because code calls has_coerce_map with nonsensical arguments (sometimes self is not a Parent, for instance).  Non-trivial speedups are not as dramatic but still easily measurable in tight loops.  This code has been verified at the .c file level for reference issues and make checked.  
 
@@ -55,7 +55,7 @@ archive/issue_comments_015028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2268#issuecomment-15028",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_015029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2268#issuecomment-15029",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_015030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2268#issuecomment-15030",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_015031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2268#issuecomment-15031",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -162,16 +162,16 @@ patch based off 2.10.2
 archive/issue_comments_015032.json:
 ```json
 {
-    "body": "Attachment [parent.pyx.2.patch](tarball://root/attachments/some-uuid/ticket2268/parent.pyx.2.patch) by gfurnish created at 2008-02-23 06:22:56\n\nWhile there is a new coercion system coming soon, it seems like a good idea to have a high performance solution until it is released.  This new solution uses a single lookup statement but uses Py* to bypass the try except mechanism to keep speed up.  Unfortunately it has the if statement for backwards compatibility, but with some luck that might be removable before the next release.",
+    "body": "Attachment [parent.pyx.2.patch](tarball://root/attachments/some-uuid/ticket2268/parent.pyx.2.patch) by @garyfurnish created at 2008-02-23 06:22:56\n\nWhile there is a new coercion system coming soon, it seems like a good idea to have a high performance solution until it is released.  This new solution uses a single lookup statement but uses Py* to bypass the try except mechanism to keep speed up.  Unfortunately it has the if statement for backwards compatibility, but with some luck that might be removable before the next release.",
     "created_at": "2008-02-23T06:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2268#issuecomment-15032",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [parent.pyx.2.patch](tarball://root/attachments/some-uuid/ticket2268/parent.pyx.2.patch) by gfurnish created at 2008-02-23 06:22:56
+Attachment [parent.pyx.2.patch](tarball://root/attachments/some-uuid/ticket2268/parent.pyx.2.patch) by @garyfurnish created at 2008-02-23 06:22:56
 
 While there is a new coercion system coming soon, it seems like a good idea to have a high performance solution until it is released.  This new solution uses a single lookup statement but uses Py* to bypass the try except mechanism to keep speed up.  Unfortunately it has the if statement for backwards compatibility, but with some luck that might be removable before the next release.
 
@@ -182,16 +182,16 @@ While there is a new coercion system coming soon, it seems like a good idea to h
 archive/issue_comments_015033.json:
 ```json
 {
-    "body": "Attachment [2268-alt.patch](tarball://root/attachments/some-uuid/ticket2268/2268-alt.patch) by robertwb created at 2008-02-29 01:31:51",
+    "body": "Attachment [2268-alt.patch](tarball://root/attachments/some-uuid/ticket2268/2268-alt.patch) by @robertwb created at 2008-02-29 01:31:51",
     "created_at": "2008-02-29T01:31:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2268#issuecomment-15033",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2268-alt.patch](tarball://root/attachments/some-uuid/ticket2268/2268-alt.patch) by robertwb created at 2008-02-29 01:31:51
+Attachment [2268-alt.patch](tarball://root/attachments/some-uuid/ticket2268/2268-alt.patch) by @robertwb created at 2008-02-29 01:31:51
 
 
 
@@ -205,7 +205,7 @@ archive/issue_comments_015034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2268#issuecomment-15034",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_015035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2268",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2268#issuecomment-15035",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

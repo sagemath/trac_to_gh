@@ -3,7 +3,7 @@
 archive/issues_007746.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  wdj\n\nKeywords: Blum-Goldwasser, probabilistic encryption\n\nThe Blum-Goldwasser probabilistic public-key encryption scheme. This scheme was originally described by (Blum and Goldwasser 1985). See also section 8.7.2 of (Menezes et al. 1996) and the [Wikipedia article](http://en.wikipedia.org/wiki/Blum-Goldwasser_cryptosystem) on this scheme.\n\n* (Blum and Goldwasser 1985) M. Blum and S. Goldwasser. An Efficient Probabilistic Public-Key Encryption Scheme Which Hides All Partial Information. In Proceedings of CRYPTO 84 on Advances in Cryptology, pp. 289\u2013299, Springer, 1985.\n\n* (Menezes et al. 1996) A. J. Menezes, P. C. van Oorschot, and S. A. Vanstone. Handbook of Applied Cryptography. CRC Press, 1996.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7746\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @wdjoyner\n\nKeywords: Blum-Goldwasser, probabilistic encryption\n\nThe Blum-Goldwasser probabilistic public-key encryption scheme. This scheme was originally described by (Blum and Goldwasser 1985). See also section 8.7.2 of (Menezes et al. 1996) and the [Wikipedia article](http://en.wikipedia.org/wiki/Blum-Goldwasser_cryptosystem) on this scheme.\n\n* (Blum and Goldwasser 1985) M. Blum and S. Goldwasser. An Efficient Probabilistic Public-Key Encryption Scheme Which Hides All Partial Information. In Proceedings of CRYPTO 84 on Advances in Cryptology, pp. 289\u2013299, Springer, 1985.\n\n* (Menezes et al. 1996) A. J. Menezes, P. C. van Oorschot, and S. A. Vanstone. Handbook of Applied Cryptography. CRC Press, 1996.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7746\n\n",
     "created_at": "2009-12-21T03:37:12Z",
     "labels": [
         "cryptography",
@@ -19,7 +19,7 @@ archive/issues_007746.json:
 ```
 Assignee: mvngu
 
-CC:  wdj
+CC:  @wdjoyner
 
 Keywords: Blum-Goldwasser, probabilistic encryption
 
@@ -105,7 +105,7 @@ archive/issue_comments_066677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7746#issuecomment-66677",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_066680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7746#issuecomment-66680",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_066684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7746#issuecomment-66684",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_066685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7746#issuecomment-66685",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

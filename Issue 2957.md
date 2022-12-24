@@ -62,7 +62,7 @@ archive/issue_comments_020399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20399",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_020400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20400",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_020401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20401",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_020402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20402",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_020403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20403",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -180,16 +180,16 @@ newest version
 archive/issue_comments_020404.json:
 ```json
 {
-    "body": "Attachment [mpoly_singular_overflow.patch](tarball://root/attachments/some-uuid/ticket2957/mpoly_singular_overflow.patch) by malb created at 2009-01-25 09:03:18\n\nBurcin agrees that this is a positive review now.",
+    "body": "Attachment [mpoly_singular_overflow.patch](tarball://root/attachments/some-uuid/ticket2957/mpoly_singular_overflow.patch) by @malb created at 2009-01-25 09:03:18\n\nBurcin agrees that this is a positive review now.",
     "created_at": "2009-01-25T09:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20404",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [mpoly_singular_overflow.patch](tarball://root/attachments/some-uuid/ticket2957/mpoly_singular_overflow.patch) by malb created at 2009-01-25 09:03:18
+Attachment [mpoly_singular_overflow.patch](tarball://root/attachments/some-uuid/ticket2957/mpoly_singular_overflow.patch) by @malb created at 2009-01-25 09:03:18
 
 Burcin agrees that this is a positive review now.
 

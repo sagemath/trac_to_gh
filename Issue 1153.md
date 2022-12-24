@@ -14,7 +14,7 @@ archive/issues_001153.json:
     "title": "[with patch] fixed documentation typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1153",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tba

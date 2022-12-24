@@ -14,7 +14,7 @@ archive/issues_009157.json:
     "title": "(k-cores) Improvement to subgraph search",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9157",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -37,7 +37,7 @@ archive/issue_comments_085489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9157#issuecomment-85489",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003884.json:
     "title": "change banner in \"sage -advanced\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3884",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty

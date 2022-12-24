@@ -3,7 +3,7 @@
 archive/issues_004206.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4206\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4206\n\n",
     "created_at": "2008-09-27T09:39:25Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004206.json:
     "title": "convert RDF and CDF vectors to use numpy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4206",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_030529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30529",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_030530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30530",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_030531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30531",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_030533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30533",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_030534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30534",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_030535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30535",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_030536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30536",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_030537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30537",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_030538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30538",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -377,7 +377,7 @@ archive/issue_comments_030539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30539",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -395,7 +395,7 @@ archive/issue_comments_030540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30540",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_030541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30541",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_030542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30542",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -479,16 +479,16 @@ Changing status from new to assigned.
 archive/issue_comments_030543.json:
 ```json
 {
-    "body": "Attachment [vector-RDF-CDF-numpy.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.patch) by jason created at 2008-11-24 16:19:31\n\nTo review this patch:\n\n1. Start with sage-3.2\n2. Apply the patch at #4570\n3. Apply the following patch to /sage/local/lib/python2.5/site-packages/Cython/Compiler/Buffer.py:\n\n\n```\ndiff -r 04e83ffd8ea2 Cython/Compiler/Buffer.py\n--- a/Cython/Compiler/Buffer.py Fri Nov 07 06:55:37 2008 +0100\n+++ b/Cython/Compiler/Buffer.py Sun Nov 23 16:58:15 2008 +0100\n@@ -710,7 +710,11 @@ def use_py2_buffer_functions(env):\n     # Search all types for __getbuffer__ overloads\n     types = []\n+    visited_scopes = set()\n     def find_buffer_types(scope):\n+        if scope in visited_scopes:\n+            return\n+        visited_scopes.add(scope)\n         for m in scope.cimported_modules:\n             find_buffer_types(m)\n         for e in scope.type_entries:\n```\n\n4. Of course, do sage -br",
+    "body": "Attachment [vector-RDF-CDF-numpy.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.patch) by @jasongrout created at 2008-11-24 16:19:31\n\nTo review this patch:\n\n1. Start with sage-3.2\n2. Apply the patch at #4570\n3. Apply the following patch to /sage/local/lib/python2.5/site-packages/Cython/Compiler/Buffer.py:\n\n\n```\ndiff -r 04e83ffd8ea2 Cython/Compiler/Buffer.py\n--- a/Cython/Compiler/Buffer.py Fri Nov 07 06:55:37 2008 +0100\n+++ b/Cython/Compiler/Buffer.py Sun Nov 23 16:58:15 2008 +0100\n@@ -710,7 +710,11 @@ def use_py2_buffer_functions(env):\n     # Search all types for __getbuffer__ overloads\n     types = []\n+    visited_scopes = set()\n     def find_buffer_types(scope):\n+        if scope in visited_scopes:\n+            return\n+        visited_scopes.add(scope)\n         for m in scope.cimported_modules:\n             find_buffer_types(m)\n         for e in scope.type_entries:\n```\n\n4. Of course, do sage -br",
     "created_at": "2008-11-24T16:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30543",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [vector-RDF-CDF-numpy.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.patch) by jason created at 2008-11-24 16:19:31
+Attachment [vector-RDF-CDF-numpy.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.patch) by @jasongrout created at 2008-11-24 16:19:31
 
 To review this patch:
 
@@ -523,16 +523,16 @@ diff -r 04e83ffd8ea2 Cython/Compiler/Buffer.py
 archive/issue_comments_030544.json:
 ```json
 {
-    "body": "Changing assignee from was to jason.",
+    "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2008-11-24T16:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30544",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from was to jason.
+Changing assignee from @williamstein to @jasongrout.
 
 
 
@@ -546,7 +546,7 @@ archive/issue_comments_030545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30545",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -559,16 +559,16 @@ Oh, yeah, and step 3.5: apply the patch on this ticket :).
 archive/issue_comments_030546.json:
 ```json
 {
-    "body": "Attachment [vector-rdf-doctest-correction.patch](tarball://root/attachments/some-uuid/ticket4206/vector-rdf-doctest-correction.patch) by jason created at 2008-11-24 20:28:06",
+    "body": "Attachment [vector-rdf-doctest-correction.patch](tarball://root/attachments/some-uuid/ticket4206/vector-rdf-doctest-correction.patch) by @jasongrout created at 2008-11-24 20:28:06",
     "created_at": "2008-11-24T20:28:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30546",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [vector-rdf-doctest-correction.patch](tarball://root/attachments/some-uuid/ticket4206/vector-rdf-doctest-correction.patch) by jason created at 2008-11-24 20:28:06
+Attachment [vector-rdf-doctest-correction.patch](tarball://root/attachments/some-uuid/ticket4206/vector-rdf-doctest-correction.patch) by @jasongrout created at 2008-11-24 20:28:06
 
 
 
@@ -582,7 +582,7 @@ archive/issue_comments_030547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30547",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -600,7 +600,7 @@ archive/issue_comments_030548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30548",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -618,7 +618,7 @@ archive/issue_comments_030549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30549",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -631,16 +631,16 @@ I'm rebasing this to merge after #4580 has been merged.
 archive/issue_comments_030550.json:
 ```json
 {
-    "body": "Attachment [vector-RDF-CDF-numpy.2.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.2.patch) by jason created at 2008-11-26 17:40:45\n\nRebased for sage-3.2.1.alpha1",
+    "body": "Attachment [vector-RDF-CDF-numpy.2.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.2.patch) by @jasongrout created at 2008-11-26 17:40:45\n\nRebased for sage-3.2.1.alpha1",
     "created_at": "2008-11-26T17:40:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30550",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [vector-RDF-CDF-numpy.2.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.2.patch) by jason created at 2008-11-26 17:40:45
+Attachment [vector-RDF-CDF-numpy.2.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy.2.patch) by @jasongrout created at 2008-11-26 17:40:45
 
 Rebased for sage-3.2.1.alpha1
 
@@ -656,7 +656,7 @@ archive/issue_comments_030551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30551",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -680,7 +680,7 @@ archive/issue_comments_030552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30552",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -698,7 +698,7 @@ archive/issue_comments_030553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30553",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -761,7 +761,7 @@ archive/issue_comments_030554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30554",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -774,16 +774,16 @@ Apparently I  concentrated so much on making the documentation in vector_double_
 archive/issue_comments_030555.json:
 ```json
 {
-    "body": "Attachment [vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch) by jason created at 2008-11-28 02:57:37",
+    "body": "Attachment [vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch) by @jasongrout created at 2008-11-28 02:57:37",
     "created_at": "2008-11-28T02:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30555",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch) by jason created at 2008-11-28 02:57:37
+Attachment [vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy-sage-3.2.1.alpha2.patch) by @jasongrout created at 2008-11-28 02:57:37
 
 
 
@@ -797,7 +797,7 @@ archive/issue_comments_030556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30556",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_030557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30557",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -891,7 +891,7 @@ archive/issue_comments_030558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30558",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -911,7 +911,7 @@ archive/issue_comments_030559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30559",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -940,7 +940,7 @@ archive/issue_comments_030560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30560",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -953,16 +953,16 @@ Reviewer -- make sure that the attached file v.sobj can be loaded after this pat
 archive/issue_comments_030561.json:
 ```json
 {
-    "body": "Attachment [v.sobj](tarball://root/attachments/some-uuid/ticket4206/v.sobj) by jason created at 2008-12-03 17:31:58\n\nThe updated (sage-3.2.1) patch deletes the real_double_vector.pyx and complex_double_vector.pyx files and instead creates (real|complex)_double_vector.py files, which basically contain references to the unpickling functions and make the old classes aliases for the new classes.  We could just as well make the old classes = None (and I think unpickling old things will still work), but this way there is some sort of backwards compatibility for people still using the old class names.",
+    "body": "Attachment [v.sobj](tarball://root/attachments/some-uuid/ticket4206/v.sobj) by @jasongrout created at 2008-12-03 17:31:58\n\nThe updated (sage-3.2.1) patch deletes the real_double_vector.pyx and complex_double_vector.pyx files and instead creates (real|complex)_double_vector.py files, which basically contain references to the unpickling functions and make the old classes aliases for the new classes.  We could just as well make the old classes = None (and I think unpickling old things will still work), but this way there is some sort of backwards compatibility for people still using the old class names.",
     "created_at": "2008-12-03T17:31:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30561",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [v.sobj](tarball://root/attachments/some-uuid/ticket4206/v.sobj) by jason created at 2008-12-03 17:31:58
+Attachment [v.sobj](tarball://root/attachments/some-uuid/ticket4206/v.sobj) by @jasongrout created at 2008-12-03 17:31:58
 
 The updated (sage-3.2.1) patch deletes the real_double_vector.pyx and complex_double_vector.pyx files and instead creates (real|complex)_double_vector.py files, which basically contain references to the unpickling functions and make the old classes aliases for the new classes.  We could just as well make the old classes = None (and I think unpickling old things will still work), but this way there is some sort of backwards compatibility for people still using the old class names.
 
@@ -978,7 +978,7 @@ archive/issue_comments_030562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30562",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1000,7 +1000,7 @@ archive/issue_comments_030563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30563",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1046,7 +1046,7 @@ archive/issue_comments_030565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30565",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1064,7 +1064,7 @@ archive/issue_comments_030566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30566",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1129,16 +1129,16 @@ I get the same error stream as was on intel atom.
 archive/issue_comments_030568.json:
 ```json
 {
-    "body": "Attachment [real_roots-import.patch](tarball://root/attachments/some-uuid/ticket4206/real_roots-import.patch) by jason created at 2008-12-07 03:41:54\n\nI attached a patch which should take care of the problem.  The problem was manifest on a system that does not have a system numpy; the include directories were not set up properly for real_roots.pyx.  So now, apply vector-RDF-CDF-numpy-sage-3.2.1.patch and then apply real_roots-import.patch.\n\nLet me know if the problem still persists.",
+    "body": "Attachment [real_roots-import.patch](tarball://root/attachments/some-uuid/ticket4206/real_roots-import.patch) by @jasongrout created at 2008-12-07 03:41:54\n\nI attached a patch which should take care of the problem.  The problem was manifest on a system that does not have a system numpy; the include directories were not set up properly for real_roots.pyx.  So now, apply vector-RDF-CDF-numpy-sage-3.2.1.patch and then apply real_roots-import.patch.\n\nLet me know if the problem still persists.",
     "created_at": "2008-12-07T03:41:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30568",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [real_roots-import.patch](tarball://root/attachments/some-uuid/ticket4206/real_roots-import.patch) by jason created at 2008-12-07 03:41:54
+Attachment [real_roots-import.patch](tarball://root/attachments/some-uuid/ticket4206/real_roots-import.patch) by @jasongrout created at 2008-12-07 03:41:54
 
 I attached a patch which should take care of the problem.  The problem was manifest on a system that does not have a system numpy; the include directories were not set up properly for real_roots.pyx.  So now, apply vector-RDF-CDF-numpy-sage-3.2.1.patch and then apply real_roots-import.patch.
 
@@ -1195,7 +1195,7 @@ archive/issue_comments_030570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30570",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1215,7 +1215,7 @@ archive/issue_comments_030571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30571",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1249,7 +1249,7 @@ archive/issue_comments_030572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30572",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1296,7 +1296,7 @@ archive/issue_comments_030573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30573",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1316,7 +1316,7 @@ archive/issue_comments_030574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30574",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -1329,16 +1329,16 @@ apply on top of previous patches
 archive/issue_comments_030575.json:
 ```json
 {
-    "body": "Attachment [vector_fft.patch](tarball://root/attachments/some-uuid/ticket4206/vector_fft.patch) by jason created at 2008-12-09 06:49:36\n\nOkay, updated the vector_fft.patch. The new timing comparison is:\n\n\n```\nsage: v=vector(RDF, range(1000000r))\nn=v.numpy()\nsage: n=v.numpy()\nsage: import scipy; import scipy.fftpack\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 342 ms per loop\nsage: timeit('b=scipy.fft(n)')\n5 loops, best of 3: 316 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 442 ms per loop\nsage: timeit('b=scipy.ifft(n)')\n5 loops, best of 3: 416 ms per loop\nsage: v=vector(CDF, range(1000000r))\nsage: n=v.numpy()\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 346 ms per loop\nsage: timeit('b=scipy.fft(n)')\n5 loops, best of 3: 319 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 470 ms per loop\nsage: timeit('b=scipy.ifft(n)')\n5 loops, best of 3: 419 ms per loop\n```\n\n\nSince the timing issue is addressed, I'm marking this as positive review as directed in jkantor's comment.",
+    "body": "Attachment [vector_fft.patch](tarball://root/attachments/some-uuid/ticket4206/vector_fft.patch) by @jasongrout created at 2008-12-09 06:49:36\n\nOkay, updated the vector_fft.patch. The new timing comparison is:\n\n\n```\nsage: v=vector(RDF, range(1000000r))\nn=v.numpy()\nsage: n=v.numpy()\nsage: import scipy; import scipy.fftpack\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 342 ms per loop\nsage: timeit('b=scipy.fft(n)')\n5 loops, best of 3: 316 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 442 ms per loop\nsage: timeit('b=scipy.ifft(n)')\n5 loops, best of 3: 416 ms per loop\nsage: v=vector(CDF, range(1000000r))\nsage: n=v.numpy()\nsage: timeit('a=v.fft()')\n5 loops, best of 3: 346 ms per loop\nsage: timeit('b=scipy.fft(n)')\n5 loops, best of 3: 319 ms per loop\nsage: timeit('a=v.inv_fft()')\n5 loops, best of 3: 470 ms per loop\nsage: timeit('b=scipy.ifft(n)')\n5 loops, best of 3: 419 ms per loop\n```\n\n\nSince the timing issue is addressed, I'm marking this as positive review as directed in jkantor's comment.",
     "created_at": "2008-12-09T06:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30575",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [vector_fft.patch](tarball://root/attachments/some-uuid/ticket4206/vector_fft.patch) by jason created at 2008-12-09 06:49:36
+Attachment [vector_fft.patch](tarball://root/attachments/some-uuid/ticket4206/vector_fft.patch) by @jasongrout created at 2008-12-09 06:49:36
 
 Okay, updated the vector_fft.patch. The new timing comparison is:
 
@@ -1439,16 +1439,16 @@ Michael
 archive/issue_comments_030578.json:
 ```json
 {
-    "body": "Attachment [vector-RDF-CDF-numpy-sage-3.2.1.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy-sage-3.2.1.patch) by jason created at 2008-12-09 08:06:40\n\ndeleted reject hunk from file; the three patches should work now.",
+    "body": "Attachment [vector-RDF-CDF-numpy-sage-3.2.1.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy-sage-3.2.1.patch) by @jasongrout created at 2008-12-09 08:06:40\n\ndeleted reject hunk from file; the three patches should work now.",
     "created_at": "2008-12-09T08:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30578",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [vector-RDF-CDF-numpy-sage-3.2.1.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy-sage-3.2.1.patch) by jason created at 2008-12-09 08:06:40
+Attachment [vector-RDF-CDF-numpy-sage-3.2.1.patch](tarball://root/attachments/some-uuid/ticket4206/vector-RDF-CDF-numpy-sage-3.2.1.patch) by @jasongrout created at 2008-12-09 08:06:40
 
 deleted reject hunk from file; the three patches should work now.
 
@@ -1543,7 +1543,7 @@ archive/issue_comments_030580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4206",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4206#issuecomment-30580",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

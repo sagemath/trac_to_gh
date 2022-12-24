@@ -14,7 +14,7 @@ archive/issues_009967.json:
     "title": "Stop Dancing Links polluting the global namespace",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9967",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 Assignee: sage-combinat
@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9968
 archive/issue_comments_099874.json:
 ```json
 {
-    "body": "Attachment [trac_9968.patch](tarball://root/attachments/some-uuid/ticket9968/trac_9968.patch) by davidloeffler created at 2010-09-22 10:17:07\n\npatch against 4.6.alpha1",
+    "body": "Attachment [trac_9968.patch](tarball://root/attachments/some-uuid/ticket9968/trac_9968.patch) by @loefflerd created at 2010-09-22 10:17:07\n\npatch against 4.6.alpha1",
     "created_at": "2010-09-22T10:17:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9967#issuecomment-99874",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_9968.patch](tarball://root/attachments/some-uuid/ticket9968/trac_9968.patch) by davidloeffler created at 2010-09-22 10:17:07
+Attachment [trac_9968.patch](tarball://root/attachments/some-uuid/ticket9968/trac_9968.patch) by @loefflerd created at 2010-09-22 10:17:07
 
 patch against 4.6.alpha1
 
@@ -74,7 +74,7 @@ archive/issue_comments_099875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9967#issuecomment-99875",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_099876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9967#issuecomment-99876",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_099877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9967#issuecomment-99877",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_099878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9967#issuecomment-99878",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_099879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9967#issuecomment-99879",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

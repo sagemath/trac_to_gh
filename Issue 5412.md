@@ -14,7 +14,7 @@ archive/issues_005412.json:
     "title": "bug in edit and set_edit_template",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5412",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -118,7 +118,7 @@ archive/issue_comments_041848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5412#issuecomment-41848",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

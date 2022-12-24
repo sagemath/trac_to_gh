@@ -14,7 +14,7 @@ archive/issues_002481.json:
     "title": "setuptools spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2481",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_016816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2481#issuecomment-16816",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_016817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2481",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2481#issuecomment-16817",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002502.json:
     "title": "[with patch, needs review] doctest coverage for finite fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2502",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: failure
@@ -118,16 +118,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2502
 archive/issue_comments_016955.json:
 ```json
 {
-    "body": "Attachment [gf_doctests.patch](tarball://root/attachments/some-uuid/ticket2502/gf_doctests.patch) by malb created at 2008-03-12 19:03:03\n\nnote that finite_field_element.py is not addressed in this patch",
+    "body": "Attachment [gf_doctests.patch](tarball://root/attachments/some-uuid/ticket2502/gf_doctests.patch) by @malb created at 2008-03-12 19:03:03\n\nnote that finite_field_element.py is not addressed in this patch",
     "created_at": "2008-03-12T19:03:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2502#issuecomment-16955",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [gf_doctests.patch](tarball://root/attachments/some-uuid/ticket2502/gf_doctests.patch) by malb created at 2008-03-12 19:03:03
+Attachment [gf_doctests.patch](tarball://root/attachments/some-uuid/ticket2502/gf_doctests.patch) by @malb created at 2008-03-12 19:03:03
 
 note that finite_field_element.py is not addressed in this patch
 
@@ -143,7 +143,7 @@ archive/issue_comments_016956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2502#issuecomment-16956",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

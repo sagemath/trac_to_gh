@@ -3,7 +3,7 @@
 archive/issues_005121.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: E = EllipticCurve('37a')\nsage: plot(E)\nsage: plot(E, xmin=25,xmax=25)\nTraceback (most recent call last):\n...\nAttributeError: 'SymbolicEquation' object has no attribute '_fast_float_'\n```\n\n\nThis broke David Hansen's thesis.  It also caused me a lot of embarasement during my talk at Sage Days 12!!!\n\nIt is a new bug introduced by some plot refactoring recently. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5121\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: E = EllipticCurve('37a')\nsage: plot(E)\nsage: plot(E, xmin=25,xmax=25)\nTraceback (most recent call last):\n...\nAttributeError: 'SymbolicEquation' object has no attribute '_fast_float_'\n```\n\n\nThis broke David Hansen's thesis.  It also caused me a lot of embarasement during my talk at Sage Days 12!!!\n\nIt is a new bug introduced by some plot refactoring recently. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5121\n\n",
     "created_at": "2009-01-28T20:07:18Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005121.json:
     "title": "major bug in plot command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5121",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -50,7 +50,7 @@ archive/issue_comments_039153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5121#issuecomment-39153",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_039154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5121#issuecomment-39154",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -81,16 +81,16 @@ This broke in the commit http://www.sagemath.org/hg/sage-main/diff/ed11b267ec9f/
 archive/issue_comments_039155.json:
 ```json
 {
-    "body": "Attachment [trac_5121.patch](tarball://root/attachments/some-uuid/ticket5121/trac_5121.patch) by was created at 2009-01-28 23:14:17",
+    "body": "Attachment [trac_5121.patch](tarball://root/attachments/some-uuid/ticket5121/trac_5121.patch) by @williamstein created at 2009-01-28 23:14:17",
     "created_at": "2009-01-28T23:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5121",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5121#issuecomment-39155",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5121.patch](tarball://root/attachments/some-uuid/ticket5121/trac_5121.patch) by was created at 2009-01-28 23:14:17
+Attachment [trac_5121.patch](tarball://root/attachments/some-uuid/ticket5121/trac_5121.patch) by @williamstein created at 2009-01-28 23:14:17
 
 
 

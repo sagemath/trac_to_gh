@@ -3,7 +3,7 @@
 archive/issues_004064.json:
 ```json
 {
-    "body": "Assignee: was\n\nJohn Cremona found this:\n\n\n```\nsage: E = EllipticCurve('37a')                     \nsage: E.period_lattice().basis(prec=30)[0].parent()\nReal Field with 896 bits of precision\nsage: E.period_lattice().basis(prec=100)[0].parent()\nReal Field with 3136 bits of precision\n```\n\n\nSo we ask for 30 decimal digits of precision (which should be about 100 bits), and pari (apparently) gives us 896 bits.  Or we ask for 100 decimal digits (about 333 bits), and we get 3136 bits.  This probably has nothing to do with elliptic curves, but rather with the pari interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4064\n\n",
+    "body": "Assignee: @williamstein\n\nJohn Cremona found this:\n\n\n```\nsage: E = EllipticCurve('37a')                     \nsage: E.period_lattice().basis(prec=30)[0].parent()\nReal Field with 896 bits of precision\nsage: E.period_lattice().basis(prec=100)[0].parent()\nReal Field with 3136 bits of precision\n```\n\n\nSo we ask for 30 decimal digits of precision (which should be about 100 bits), and pari (apparently) gives us 896 bits.  Or we ask for 100 decimal digits (about 333 bits), and we get 3136 bits.  This probably has nothing to do with elliptic curves, but rather with the pari interface.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4064\n\n",
     "created_at": "2008-09-04T23:34:40Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004064.json:
     "title": "pari precision issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4064",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 John Cremona found this:
 
@@ -49,7 +49,7 @@ archive/issue_comments_029313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29313",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_029314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29314",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_029315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29315",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -118,16 +118,16 @@ The main point is that converting from pari to Sage using .python() has a precis
 archive/issue_comments_029316.json:
 ```json
 {
-    "body": "Attachment [4064-ell_pari_precision.patch](tarball://root/attachments/some-uuid/ticket4064/4064-ell_pari_precision.patch) by AlexGhitza created at 2008-09-06 11:14:19",
+    "body": "Attachment [4064-ell_pari_precision.patch](tarball://root/attachments/some-uuid/ticket4064/4064-ell_pari_precision.patch) by @aghitza created at 2008-09-06 11:14:19",
     "created_at": "2008-09-06T11:14:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29316",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [4064-ell_pari_precision.patch](tarball://root/attachments/some-uuid/ticket4064/4064-ell_pari_precision.patch) by AlexGhitza created at 2008-09-06 11:14:19
+Attachment [4064-ell_pari_precision.patch](tarball://root/attachments/some-uuid/ticket4064/4064-ell_pari_precision.patch) by @aghitza created at 2008-09-06 11:14:19
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_029317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29317",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_029318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29318",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_029319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29319",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -227,16 +227,16 @@ This is just on account of differing behaviour on 64-bit machines which Alex had
 archive/issue_comments_029320.json:
 ```json
 {
-    "body": "Attachment [4064-ell_pari_precision-1a.patch](tarball://root/attachments/some-uuid/ticket4064/4064-ell_pari_precision-1a.patch) by cremona created at 2008-09-06 19:31:02",
+    "body": "Attachment [4064-ell_pari_precision-1a.patch](tarball://root/attachments/some-uuid/ticket4064/4064-ell_pari_precision-1a.patch) by @JohnCremona created at 2008-09-06 19:31:02",
     "created_at": "2008-09-06T19:31:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29320",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [4064-ell_pari_precision-1a.patch](tarball://root/attachments/some-uuid/ticket4064/4064-ell_pari_precision-1a.patch) by cremona created at 2008-09-06 19:31:02
+Attachment [4064-ell_pari_precision-1a.patch](tarball://root/attachments/some-uuid/ticket4064/4064-ell_pari_precision-1a.patch) by @JohnCremona created at 2008-09-06 19:31:02
 
 
 
@@ -250,7 +250,7 @@ archive/issue_comments_029321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29321",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_029322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29322",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_029323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29323",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -316,16 +316,16 @@ apply before the above two patches, on top of pristine 3.1.2.alpha4 (ignore if u
 archive/issue_comments_029324.json:
 ```json
 {
-    "body": "Attachment [4064-prerequisites.patch](tarball://root/attachments/some-uuid/ticket4064/4064-prerequisites.patch) by AlexGhitza created at 2008-09-06 22:14:53\n\nFor the record, John's patch looks good to me.\n\nIn order to ease the work of whoever might want to look at this before rc0 comes out, I have attached a patch with all the prerequisites listed in the above comments.  So if you're on a 3.1.2.alpha4 and want to check this out, first apply 4064-prerequisites.patch, then the two others from this ticket.  You of course don't have to review any of the changes in 4064-prerequisites.patch, since these have all already been reviewed and merged.\n\nIf you're on rc0 just apply the two first patches.",
+    "body": "Attachment [4064-prerequisites.patch](tarball://root/attachments/some-uuid/ticket4064/4064-prerequisites.patch) by @aghitza created at 2008-09-06 22:14:53\n\nFor the record, John's patch looks good to me.\n\nIn order to ease the work of whoever might want to look at this before rc0 comes out, I have attached a patch with all the prerequisites listed in the above comments.  So if you're on a 3.1.2.alpha4 and want to check this out, first apply 4064-prerequisites.patch, then the two others from this ticket.  You of course don't have to review any of the changes in 4064-prerequisites.patch, since these have all already been reviewed and merged.\n\nIf you're on rc0 just apply the two first patches.",
     "created_at": "2008-09-06T22:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29324",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [4064-prerequisites.patch](tarball://root/attachments/some-uuid/ticket4064/4064-prerequisites.patch) by AlexGhitza created at 2008-09-06 22:14:53
+Attachment [4064-prerequisites.patch](tarball://root/attachments/some-uuid/ticket4064/4064-prerequisites.patch) by @aghitza created at 2008-09-06 22:14:53
 
 For the record, John's patch looks good to me.
 
@@ -345,7 +345,7 @@ archive/issue_comments_029325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29325",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_029327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29327",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_029328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4064#issuecomment-29328",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

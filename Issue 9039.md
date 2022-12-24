@@ -3,7 +3,7 @@
 archive/issues_009039.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  wuthrich\n\nDoes not check for primes of bad reduction at all!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9039\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @categorie\n\nDoes not check for primes of bad reduction at all!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9039\n\n",
     "created_at": "2010-05-25T00:37:50Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_009039.json:
     "title": "major error in E.sha().bound_kato() for E an elliptic curve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9039",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  wuthrich
+CC:  @categorie
 
 Does not check for primes of bad reduction at all!!
 
@@ -39,7 +39,7 @@ archive/issue_comments_083673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9039#issuecomment-83673",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_083674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9039#issuecomment-83674",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_083675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9039#issuecomment-83675",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_083676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9039#issuecomment-83676",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_083677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9039#issuecomment-83677",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_083678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9039#issuecomment-83678",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_083679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9039#issuecomment-83679",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -238,16 +238,16 @@ Chris.
 archive/issue_comments_083680.json:
 ```json
 {
-    "body": "Attachment [trac_9039.patch](tarball://root/attachments/some-uuid/ticket9039/trac_9039.patch) by rlm created at 2010-05-27 22:32:57\n\nChris,\n\nTake a look at the newest patch. This should provide a correct version of `bound_kato`.",
+    "body": "Attachment [trac_9039.patch](tarball://root/attachments/some-uuid/ticket9039/trac_9039.patch) by @rlmill created at 2010-05-27 22:32:57\n\nChris,\n\nTake a look at the newest patch. This should provide a correct version of `bound_kato`.",
     "created_at": "2010-05-27T22:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9039#issuecomment-83680",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9039.patch](tarball://root/attachments/some-uuid/ticket9039/trac_9039.patch) by rlm created at 2010-05-27 22:32:57
+Attachment [trac_9039.patch](tarball://root/attachments/some-uuid/ticket9039/trac_9039.patch) by @rlmill created at 2010-05-27 22:32:57
 
 Chris,
 
@@ -265,7 +265,7 @@ archive/issue_comments_083681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9039#issuecomment-83681",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_083682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9039#issuecomment-83682",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_083683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9039#issuecomment-83683",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_083684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9039",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9039#issuecomment-83684",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

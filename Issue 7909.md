@@ -3,7 +3,7 @@
 archive/issues_007909.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jsp\n\nsage-env has $MKDIR in one place, which will cause problems with an updated 'sage-env' which no longer defines MKDIR. \n\nI'm attaching a copy of the revised sage-env, and also a Mercurial patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7909\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies\n\nsage-env has $MKDIR in one place, which will cause problems with an updated 'sage-env' which no longer defines MKDIR. \n\nI'm attaching a copy of the revised sage-env, and also a Mercurial patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7909\n\n",
     "created_at": "2010-01-12T16:15:32Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_007909.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  jsp
+CC:  @jaapspies
 
 sage-env has $MKDIR in one place, which will cause problems with an updated 'sage-env' which no longer defines MKDIR. 
 
@@ -115,7 +115,7 @@ archive/issue_comments_068782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7909",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7909#issuecomment-68782",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_068783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7909",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7909#issuecomment-68783",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_068784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7909",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7909#issuecomment-68784",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_068785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7909",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7909#issuecomment-68785",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_068786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7909",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7909#issuecomment-68786",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

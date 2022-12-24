@@ -14,7 +14,7 @@ archive/issues_007353.json:
     "title": "French documentation should use Sphinx's French localization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7353",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: mvngu
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7353
 archive/issue_comments_061590.json:
 ```json
 {
-    "body": "Attachment [trac_7353.patch](tarball://root/attachments/some-uuid/ticket7353/trac_7353.patch) by ddrake created at 2009-10-30 01:47:35",
+    "body": "Attachment [trac_7353.patch](tarball://root/attachments/some-uuid/ticket7353/trac_7353.patch) by @dandrake created at 2009-10-30 01:47:35",
     "created_at": "2009-10-30T01:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61590",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_7353.patch](tarball://root/attachments/some-uuid/ticket7353/trac_7353.patch) by ddrake created at 2009-10-30 01:47:35
+Attachment [trac_7353.patch](tarball://root/attachments/some-uuid/ticket7353/trac_7353.patch) by @dandrake created at 2009-10-30 01:47:35
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_061591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61591",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_061592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61592",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_061593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61593",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_061594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61594",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_061595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61595",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

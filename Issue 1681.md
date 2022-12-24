@@ -14,7 +14,7 @@ archive/issues_001681.json:
     "title": "serious bug when raising complex(0,1) to the power of the Sage integer 2.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1681",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -53,7 +53,7 @@ archive/issue_comments_010662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1681#issuecomment-10662",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,16 +76,16 @@ mabshoff: is #1681 the fault of the maxime interface?
 archive/issue_comments_010663.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2008-01-04T21:07:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1681#issuecomment-10663",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_010664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1681#issuecomment-10664",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_010665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1681#issuecomment-10665",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -138,16 +138,16 @@ Changing status from new to assigned.
 archive/issue_comments_010666.json:
 ```json
 {
-    "body": "Attachment [1681-complex-pow.diff](tarball://root/attachments/some-uuid/ticket1681/1681-complex-pow.diff) by robertwb created at 2008-01-04 21:10:21",
+    "body": "Attachment [1681-complex-pow.diff](tarball://root/attachments/some-uuid/ticket1681/1681-complex-pow.diff) by @robertwb created at 2008-01-04 21:10:21",
     "created_at": "2008-01-04T21:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1681#issuecomment-10666",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1681-complex-pow.diff](tarball://root/attachments/some-uuid/ticket1681/1681-complex-pow.diff) by robertwb created at 2008-01-04 21:10:21
+Attachment [1681-complex-pow.diff](tarball://root/attachments/some-uuid/ticket1681/1681-complex-pow.diff) by @robertwb created at 2008-01-04 21:10:21
 
 
 

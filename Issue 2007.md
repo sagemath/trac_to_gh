@@ -14,7 +14,7 @@ archive/issues_002007.json:
     "title": "crap -- the R spkg contains precompiled java files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2007",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -66,7 +66,7 @@ archive/issue_comments_012983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2007#issuecomment-12983",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_012984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2007#issuecomment-12984",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

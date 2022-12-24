@@ -3,7 +3,7 @@
 archive/issues_002694.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nHecke algebra basis is not implemented.\nhere is how one can reproduce it:\n\n```\nsage: M=ModularSymbols(431,2,1)\nsage: C=M.cuspidal_submodule()\nsage: TT=C.hecke_algebra()\nsage: TT.basis()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/home/syazdani/sage-2.11.alpha1/<ipython console> in <module>()\n\n/home/syazdani/sage/local/lib/python2.5/site-packages/sage/modular/hecke/algebra.py in basis(self)\n    145\n    146     def basis(self):\n--> 147         raise NotImplementedError\n    148\n    149     def discriminant(self):\n\n<type 'exceptions.NotImplementedError'>:\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2694\n\n",
+    "body": "Assignee: @craigcitro\n\nHecke algebra basis is not implemented.\nhere is how one can reproduce it:\n\n```\nsage: M=ModularSymbols(431,2,1)\nsage: C=M.cuspidal_submodule()\nsage: TT=C.hecke_algebra()\nsage: TT.basis()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/home/syazdani/sage-2.11.alpha1/<ipython console> in <module>()\n\n/home/syazdani/sage/local/lib/python2.5/site-packages/sage/modular/hecke/algebra.py in basis(self)\n    145\n    146     def basis(self):\n--> 147         raise NotImplementedError\n    148\n    149     def discriminant(self):\n\n<type 'exceptions.NotImplementedError'>:\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2694\n\n",
     "created_at": "2008-03-28T05:02:07Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_002694.json:
     "title": "Hecke algebra basis not implemented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2694",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Hecke algebra basis is not implemented.
 here is how one can reproduce it:
@@ -84,7 +84,7 @@ archive/issue_comments_018541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2694#issuecomment-18541",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_018542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2694#issuecomment-18542",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_018543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2694#issuecomment-18543",
-    "user": "cnassau"
+    "user": "@cnassau"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_018544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2694#issuecomment-18544",
-    "user": "cnassau"
+    "user": "@cnassau"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_018545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2694#issuecomment-18545",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

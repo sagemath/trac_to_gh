@@ -3,7 +3,7 @@
 archive/issues_003025.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: V = VectorSpace(GF(2),10, sparse=True)\nsage: w = V(0)\nsage: w[0] = 2\nsage: print w[0]\n2\nsage: print type(w[0])\n<type 'sage.rings.integer.Integer'>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3025\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: V = VectorSpace(GF(2),10, sparse=True)\nsage: w = V(0)\nsage: w[0] = 2\nsage: print w[0]\n2\nsage: print type(w[0])\n<type 'sage.rings.integer.Integer'>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3025\n\n",
     "created_at": "2008-04-25T20:57:56Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_003025.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3025
 archive/issue_comments_020801.json:
 ```json
 {
-    "body": "Attachment [9609.patch](tarball://root/attachments/some-uuid/ticket3025/9609.patch) by was created at 2008-04-25 21:18:57\n\nthis fixes the bug!",
+    "body": "Attachment [9609.patch](tarball://root/attachments/some-uuid/ticket3025/9609.patch) by @williamstein created at 2008-04-25 21:18:57\n\nthis fixes the bug!",
     "created_at": "2008-04-25T21:18:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3025",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3025#issuecomment-20801",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [9609.patch](tarball://root/attachments/some-uuid/ticket3025/9609.patch) by was created at 2008-04-25 21:18:57
+Attachment [9609.patch](tarball://root/attachments/some-uuid/ticket3025/9609.patch) by @williamstein created at 2008-04-25 21:18:57
 
 this fixes the bug!
 

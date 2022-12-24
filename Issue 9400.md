@@ -3,7 +3,7 @@
 archive/issues_009400.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  jdemeyer\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9400\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @jdemeyer\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9400\n\n",
     "created_at": "2010-07-01T03:43:21Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_009400.json:
     "title": "modify the NumberField constructor to pass in optional integer B such that all the internal pari routines will replace the discriminant by its gcd with B, making some things massively faster.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9400",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_089529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89529",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_089530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89530",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_089531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89531",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_089532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89532",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_089533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89533",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_089534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89534",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_089535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89535",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -218,16 +218,16 @@ apply only this patch (which also addresses the referees issue with __hash__)
 archive/issue_comments_089536.json:
 ```json
 {
-    "body": "Attachment [trac_9400.patch](tarball://root/attachments/some-uuid/ticket9400/trac_9400.patch) by was created at 2010-08-14 00:58:06\n\nOK, new patch up that changes __hash__.  It passes all doctests on sage.math.",
+    "body": "Attachment [trac_9400.patch](tarball://root/attachments/some-uuid/ticket9400/trac_9400.patch) by @williamstein created at 2010-08-14 00:58:06\n\nOK, new patch up that changes __hash__.  It passes all doctests on sage.math.",
     "created_at": "2010-08-14T00:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89536",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9400.patch](tarball://root/attachments/some-uuid/ticket9400/trac_9400.patch) by was created at 2010-08-14 00:58:06
+Attachment [trac_9400.patch](tarball://root/attachments/some-uuid/ticket9400/trac_9400.patch) by @williamstein created at 2010-08-14 00:58:06
 
 OK, new patch up that changes __hash__.  It passes all doctests on sage.math.
 
@@ -243,7 +243,7 @@ archive/issue_comments_089537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89537",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_089538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89538",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_089539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89539",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_089540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89540",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_089541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89541",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_089542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89542",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_089543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89543",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_089544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89544",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -465,16 +465,16 @@ Patch for the "maximize at primes" part, rebased to sage-4.6.prealpha1 (see #934
 archive/issue_comments_089545.json:
 ```json
 {
-    "body": "Attachment [9400_maximize_at_primes.patch](tarball://root/attachments/some-uuid/ticket9400/9400_maximize_at_primes.patch) by jdemeyer created at 2010-08-18 22:03:39",
+    "body": "Attachment [9400_maximize_at_primes.patch](tarball://root/attachments/some-uuid/ticket9400/9400_maximize_at_primes.patch) by @jdemeyer created at 2010-08-18 22:03:39",
     "created_at": "2010-08-18T22:03:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89545",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9400_maximize_at_primes.patch](tarball://root/attachments/some-uuid/ticket9400/9400_maximize_at_primes.patch) by jdemeyer created at 2010-08-18 22:03:39
+Attachment [9400_maximize_at_primes.patch](tarball://root/attachments/some-uuid/ticket9400/9400_maximize_at_primes.patch) by @jdemeyer created at 2010-08-18 22:03:39
 
 
 
@@ -488,7 +488,7 @@ archive/issue_comments_089546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89546",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_089547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89547",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -525,16 +525,16 @@ Apply on top of 9400_maximize_at_primes.patc
 archive/issue_comments_089548.json:
 ```json
 {
-    "body": "Attachment [9400_jd_review.patch](tarball://root/attachments/some-uuid/ticket9400/9400_jd_review.patch) by jdemeyer created at 2010-08-24 19:34:30",
+    "body": "Attachment [9400_jd_review.patch](tarball://root/attachments/some-uuid/ticket9400/9400_jd_review.patch) by @jdemeyer created at 2010-08-24 19:34:30",
     "created_at": "2010-08-24T19:34:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89548",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9400_jd_review.patch](tarball://root/attachments/some-uuid/ticket9400/9400_jd_review.patch) by jdemeyer created at 2010-08-24 19:34:30
+Attachment [9400_jd_review.patch](tarball://root/attachments/some-uuid/ticket9400/9400_jd_review.patch) by @jdemeyer created at 2010-08-24 19:34:30
 
 
 
@@ -543,16 +543,16 @@ Attachment [9400_jd_review.patch](tarball://root/attachments/some-uuid/ticket940
 archive/issue_comments_089549.json:
 ```json
 {
-    "body": "Changing assignee from davidloeffler to jdemeyer.",
+    "body": "Changing assignee from @loefflerd to @jdemeyer.",
     "created_at": "2010-08-24T19:34:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89549",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from davidloeffler to jdemeyer.
+Changing assignee from @loefflerd to @jdemeyer.
 
 
 
@@ -566,7 +566,7 @@ archive/issue_comments_089550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89550",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -584,7 +584,7 @@ archive/issue_comments_089551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89551",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -620,7 +620,7 @@ archive/issue_comments_089552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89552",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_089553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89553",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -685,7 +685,7 @@ archive/issue_comments_089554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89554",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -698,16 +698,16 @@ Thanks John, I will take care of these issues when I have time.
 archive/issue_comments_089555.json:
 ```json
 {
-    "body": "Attachment [9400_docfix.patch](tarball://root/attachments/some-uuid/ticket9400/9400_docfix.patch) by jdemeyer created at 2010-09-05 12:41:26\n\nApply on top of previous 2 patches, small documentation fixes",
+    "body": "Attachment [9400_docfix.patch](tarball://root/attachments/some-uuid/ticket9400/9400_docfix.patch) by @jdemeyer created at 2010-09-05 12:41:26\n\nApply on top of previous 2 patches, small documentation fixes",
     "created_at": "2010-09-05T12:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89555",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9400_docfix.patch](tarball://root/attachments/some-uuid/ticket9400/9400_docfix.patch) by jdemeyer created at 2010-09-05 12:41:26
+Attachment [9400_docfix.patch](tarball://root/attachments/some-uuid/ticket9400/9400_docfix.patch) by @jdemeyer created at 2010-09-05 12:41:26
 
 Apply on top of previous 2 patches, small documentation fixes
 
@@ -723,7 +723,7 @@ archive/issue_comments_089556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89556",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -736,16 +736,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_089557.json:
 ```json
 {
-    "body": "Attachment [9400_combined.patch](tarball://root/attachments/some-uuid/ticket9400/9400_combined.patch) by jdemeyer created at 2010-09-05 16:34:45\n\nAll 3 patches combined (apply only this patch)",
+    "body": "Attachment [9400_combined.patch](tarball://root/attachments/some-uuid/ticket9400/9400_combined.patch) by @jdemeyer created at 2010-09-05 16:34:45\n\nAll 3 patches combined (apply only this patch)",
     "created_at": "2010-09-05T16:34:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89557",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9400_combined.patch](tarball://root/attachments/some-uuid/ticket9400/9400_combined.patch) by jdemeyer created at 2010-09-05 16:34:45
+Attachment [9400_combined.patch](tarball://root/attachments/some-uuid/ticket9400/9400_combined.patch) by @jdemeyer created at 2010-09-05 16:34:45
 
 All 3 patches combined (apply only this patch)
 
@@ -761,7 +761,7 @@ archive/issue_comments_089558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89558",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -785,7 +785,7 @@ archive/issue_comments_089559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89559",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -847,7 +847,7 @@ archive/issue_comments_089560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89560",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -865,7 +865,7 @@ archive/issue_comments_089561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89561",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -883,7 +883,7 @@ archive/issue_comments_089562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89562",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -904,7 +904,7 @@ archive/issue_comments_089563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89563",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -922,7 +922,7 @@ archive/issue_comments_089564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89564",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -943,7 +943,7 @@ archive/issue_comments_089565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89565",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -964,7 +964,7 @@ archive/issue_comments_089566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89566",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -982,7 +982,7 @@ archive/issue_comments_089567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89567",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1006,7 +1006,7 @@ archive/issue_comments_089568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89568",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1024,7 +1024,7 @@ archive/issue_comments_089569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9400",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9400#issuecomment-89569",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

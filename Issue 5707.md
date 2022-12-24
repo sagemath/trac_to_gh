@@ -3,7 +3,7 @@
 archive/issues_005707.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nTry this and see no plus signs! Ouch.\n\n```\nsage: x = ModularSymbols(43)(vector([0,0,0,0,1,1,1]))\nsage: show(x.modular_symbol_rep())\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5707\n\n",
+    "body": "Assignee: @craigcitro\n\nTry this and see no plus signs! Ouch.\n\n```\nsage: x = ModularSymbols(43)(vector([0,0,0,0,1,1,1]))\nsage: show(x.modular_symbol_rep())\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5707\n\n",
     "created_at": "2009-04-07T21:28:39Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_005707.json:
     "title": "plus signs missing in typesetting of modular symbols",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5707",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Try this and see no plus signs! Ouch.
 
@@ -65,7 +65,7 @@ archive/issue_comments_044596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5707#issuecomment-44596",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_044597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5707",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5707#issuecomment-44597",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

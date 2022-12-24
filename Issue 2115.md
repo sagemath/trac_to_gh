@@ -3,7 +3,7 @@
 archive/issues_002115.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2115\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2115\n\n",
     "created_at": "2008-02-08T15:15:26Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002115.json:
     "title": "add native python implementation of multiset combinations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2115",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_013870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2115#issuecomment-13870",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_013871.json:
 ```json
 {
-    "body": "Attachment [2115.patch](tarball://root/attachments/some-uuid/ticket2115/2115.patch) by mhansen created at 2008-02-08 15:16:32",
+    "body": "Attachment [2115.patch](tarball://root/attachments/some-uuid/ticket2115/2115.patch) by @mwhansen created at 2008-02-08 15:16:32",
     "created_at": "2008-02-08T15:16:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2115",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2115#issuecomment-13871",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2115.patch](tarball://root/attachments/some-uuid/ticket2115/2115.patch) by mhansen created at 2008-02-08 15:16:32
+Attachment [2115.patch](tarball://root/attachments/some-uuid/ticket2115/2115.patch) by @mwhansen created at 2008-02-08 15:16:32
 
 
 

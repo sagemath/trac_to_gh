@@ -3,7 +3,7 @@
 archive/issues_006046.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: number field height\n\nThis patch implements local (archimedean non) and global heights for elements of number fields, and also rationals.\n\nThis will be used in an eventual implementation of #360 (which must be one of the oldest outstanding tickets, mea culpa).\n\nIt's all in rings/rational.pyx and rings/number_field/number_field_element.pyx and no other files should be affected.\n\nThe second patch was added after 64-bit testing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6046\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: number field height\n\nThis patch implements local (archimedean non) and global heights for elements of number fields, and also rationals.\n\nThis will be used in an eventual implementation of #360 (which must be one of the oldest outstanding tickets, mea culpa).\n\nIt's all in rings/rational.pyx and rings/number_field/number_field_element.pyx and no other files should be affected.\n\nThe second patch was added after 64-bit testing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6046\n\n",
     "created_at": "2009-05-15T16:16:04Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006046.json:
     "title": "[with patch, needs review] Implement local and global heights for number field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6046",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: number field height
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6046
 archive/issue_comments_048169.json:
 ```json
 {
-    "body": "Attachment [heights.patch](tarball://root/attachments/some-uuid/ticket6046/heights.patch) by cremona created at 2009-05-15 16:16:26\n\napplies to 3.4.2",
+    "body": "Attachment [heights.patch](tarball://root/attachments/some-uuid/ticket6046/heights.patch) by @JohnCremona created at 2009-05-15 16:16:26\n\napplies to 3.4.2",
     "created_at": "2009-05-15T16:16:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6046#issuecomment-48169",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [heights.patch](tarball://root/attachments/some-uuid/ticket6046/heights.patch) by cremona created at 2009-05-15 16:16:26
+Attachment [heights.patch](tarball://root/attachments/some-uuid/ticket6046/heights.patch) by @JohnCremona created at 2009-05-15 16:16:26
 
 applies to 3.4.2
 
@@ -65,7 +65,7 @@ archive/issue_comments_048170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6046#issuecomment-48170",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_048173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6046#issuecomment-48173",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_048176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6046#issuecomment-48176",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_048177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6046#issuecomment-48177",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_048178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6046#issuecomment-48178",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_048179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6046#issuecomment-48179",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -468,16 +468,16 @@ Replaces all earlier patches; based on 4.0.alpha0
 archive/issue_comments_048180.json:
 ```json
 {
-    "body": "Attachment [trac_6046.patch](tarball://root/attachments/some-uuid/ticket6046/trac_6046.patch) by cremona created at 2009-05-17 15:22:35\n\nThe new patch trac_6046.patch replaces all earlier ones.  I have taken Francis's advice and now use the places() function (notwithstanding the issue raised above).  This meant implementing places() for relative extensions, which I did.  I also made a slight refinement to K.primes_above() which used to sort on degree but now also sort on norm (thus avoiding one possible source of doctest failures due to randomness).  It may well be that whoever wrote this only ever intended it to be used with prime arguments!  Note however that where there are two primes in the list with the same degree and norm, the order is not necessarily canonical.\n\nI have tested this on both 32-bit and 64-bit machines.",
+    "body": "Attachment [trac_6046.patch](tarball://root/attachments/some-uuid/ticket6046/trac_6046.patch) by @JohnCremona created at 2009-05-17 15:22:35\n\nThe new patch trac_6046.patch replaces all earlier ones.  I have taken Francis's advice and now use the places() function (notwithstanding the issue raised above).  This meant implementing places() for relative extensions, which I did.  I also made a slight refinement to K.primes_above() which used to sort on degree but now also sort on norm (thus avoiding one possible source of doctest failures due to randomness).  It may well be that whoever wrote this only ever intended it to be used with prime arguments!  Note however that where there are two primes in the list with the same degree and norm, the order is not necessarily canonical.\n\nI have tested this on both 32-bit and 64-bit machines.",
     "created_at": "2009-05-17T15:22:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6046#issuecomment-48180",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6046.patch](tarball://root/attachments/some-uuid/ticket6046/trac_6046.patch) by cremona created at 2009-05-17 15:22:35
+Attachment [trac_6046.patch](tarball://root/attachments/some-uuid/ticket6046/trac_6046.patch) by @JohnCremona created at 2009-05-17 15:22:35
 
 The new patch trac_6046.patch replaces all earlier ones.  I have taken Francis's advice and now use the places() function (notwithstanding the issue raised above).  This meant implementing places() for relative extensions, which I did.  I also made a slight refinement to K.primes_above() which used to sort on degree but now also sort on norm (thus avoiding one possible source of doctest failures due to randomness).  It may well be that whoever wrote this only ever intended it to be used with prime arguments!  Note however that where there are two primes in the list with the same degree and norm, the order is not necessarily canonical.
 
@@ -495,7 +495,7 @@ archive/issue_comments_048181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6046",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6046#issuecomment-48181",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

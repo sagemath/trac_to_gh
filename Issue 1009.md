@@ -14,7 +14,7 @@ archive/issues_001009.json:
     "title": "incredibly slow caching of ntl context objects.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1009",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1009
 archive/issue_comments_006163.json:
 ```json
 {
-    "body": "Attachment [1009.patch](tarball://root/attachments/some-uuid/ticket1009/1009.patch) by was created at 2007-10-27 03:51:32",
+    "body": "Attachment [1009.patch](tarball://root/attachments/some-uuid/ticket1009/1009.patch) by @williamstein created at 2007-10-27 03:51:32",
     "created_at": "2007-10-27T03:51:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1009",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1009#issuecomment-6163",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [1009.patch](tarball://root/attachments/some-uuid/ticket1009/1009.patch) by was created at 2007-10-27 03:51:32
+Attachment [1009.patch](tarball://root/attachments/some-uuid/ticket1009/1009.patch) by @williamstein created at 2007-10-27 03:51:32
 
 
 

@@ -14,7 +14,7 @@ archive/issues_003685.json:
     "title": "make damned sure that \"import sage.all\" doesn't import ipython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3685",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -47,7 +47,7 @@ archive/issue_comments_026108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26108",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_026109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26109",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -148,16 +148,16 @@ That said, it's a smallish patch I made in 30 minutes.  So it's not crazy compli
 archive/issue_comments_026110.json:
 ```json
 {
-    "body": "Attachment [sage-3685.patch](tarball://root/attachments/some-uuid/ticket3685/sage-3685.patch) by mhansen created at 2008-08-04 09:01:54\n\nThis patch causes some problems on my machine.\n\n1) Sage segfaults at exit.\n\n2) When doing sage -t, I get the following problem for every file:\n\n```\nsage -t  devel/sage-combinat/sage/combinat/root_system/all.pyTraceback (most recent call last):\n  File \"/opt/sage/tmp/.doctest_all.py\", line 2, in <module>\n    from sage.all_cmdline import *; \n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/all.py\", line 72, in <module>\n    from sage.rings.all      import *\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/all.py\", line 94, in <module>\n    from qqbar import (AlgebraicRealField, is_AlgebraicRealField, AA,\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/qqbar.py\", line 1163, in <module>\n    QQxy = QQ['x', 'y']\n  File \"ring.pyx\", line 146, in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:1851)\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 303, in PolynomialRing\n    R = _multi_variate(base_ring, names, n, sparse, order)        \n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 409, in _multi_variate\n    from sage.rings.polynomial.multi_polynomial_libsingular import MPolynomialRing_libsingular\n```\n",
+    "body": "Attachment [sage-3685.patch](tarball://root/attachments/some-uuid/ticket3685/sage-3685.patch) by @mwhansen created at 2008-08-04 09:01:54\n\nThis patch causes some problems on my machine.\n\n1) Sage segfaults at exit.\n\n2) When doing sage -t, I get the following problem for every file:\n\n```\nsage -t  devel/sage-combinat/sage/combinat/root_system/all.pyTraceback (most recent call last):\n  File \"/opt/sage/tmp/.doctest_all.py\", line 2, in <module>\n    from sage.all_cmdline import *; \n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/all.py\", line 72, in <module>\n    from sage.rings.all      import *\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/all.py\", line 94, in <module>\n    from qqbar import (AlgebraicRealField, is_AlgebraicRealField, AA,\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/qqbar.py\", line 1163, in <module>\n    QQxy = QQ['x', 'y']\n  File \"ring.pyx\", line 146, in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:1851)\n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 303, in PolynomialRing\n    R = _multi_variate(base_ring, names, n, sparse, order)        \n  File \"/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 409, in _multi_variate\n    from sage.rings.polynomial.multi_polynomial_libsingular import MPolynomialRing_libsingular\n```\n",
     "created_at": "2008-08-04T09:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26110",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage-3685.patch](tarball://root/attachments/some-uuid/ticket3685/sage-3685.patch) by mhansen created at 2008-08-04 09:01:54
+Attachment [sage-3685.patch](tarball://root/attachments/some-uuid/ticket3685/sage-3685.patch) by @mwhansen created at 2008-08-04 09:01:54
 
 This patch causes some problems on my machine.
 
@@ -197,7 +197,7 @@ archive/issue_comments_026111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26111",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_026113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26113",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_026114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26114",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -274,16 +274,16 @@ Changing priority from blocker to major.
 archive/issue_comments_026115.json:
 ```json
 {
-    "body": "Attachment [trac_3685.patch](tarball://root/attachments/some-uuid/ticket3685/trac_3685.patch) by mhansen created at 2013-07-22 14:22:45",
+    "body": "Attachment [trac_3685.patch](tarball://root/attachments/some-uuid/ticket3685/trac_3685.patch) by @mwhansen created at 2013-07-22 14:22:45",
     "created_at": "2013-07-22T14:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26115",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3685.patch](tarball://root/attachments/some-uuid/ticket3685/trac_3685.patch) by mhansen created at 2013-07-22 14:22:45
+Attachment [trac_3685.patch](tarball://root/attachments/some-uuid/ticket3685/trac_3685.patch) by @mwhansen created at 2013-07-22 14:22:45
 
 
 
@@ -297,7 +297,7 @@ archive/issue_comments_026116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26116",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_026117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26117",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_026118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26118",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_026119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26119",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_026120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26120",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_026121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26121",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -402,16 +402,16 @@ Changing keywords from "" to "startup time and imports".
 archive/issue_comments_026122.json:
 ```json
 {
-    "body": "Attachment [trac_3685_remove_tab.patch](tarball://root/attachments/some-uuid/ticket3685/trac_3685_remove_tab.patch) by chapoton created at 2013-08-25 16:14:57\n\nI have found the problem, it seems ! Here is the patch solving the issue.\n\nNeeds review !",
+    "body": "Attachment [trac_3685_remove_tab.patch](tarball://root/attachments/some-uuid/ticket3685/trac_3685_remove_tab.patch) by @fchapoton created at 2013-08-25 16:14:57\n\nI have found the problem, it seems ! Here is the patch solving the issue.\n\nNeeds review !",
     "created_at": "2013-08-25T16:14:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26122",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_3685_remove_tab.patch](tarball://root/attachments/some-uuid/ticket3685/trac_3685_remove_tab.patch) by chapoton created at 2013-08-25 16:14:57
+Attachment [trac_3685_remove_tab.patch](tarball://root/attachments/some-uuid/ticket3685/trac_3685_remove_tab.patch) by @fchapoton created at 2013-08-25 16:14:57
 
 I have found the problem, it seems ! Here is the patch solving the issue.
 
@@ -429,7 +429,7 @@ archive/issue_comments_026123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26123",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_026124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26124",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_026125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26125",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_026126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26126",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_026127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26127",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_026128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26128",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_026129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26129",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_026130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3685#issuecomment-26130",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

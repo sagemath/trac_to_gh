@@ -3,7 +3,7 @@
 archive/issues_002688.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2688\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2688\n\n",
     "created_at": "2008-03-27T20:54:59Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002688.json:
     "title": "Kuratowski subgraph isolator for planarity checking",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2688",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_018507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2688#issuecomment-18507",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -104,16 +104,16 @@ Michael
 archive/issue_comments_018509.json:
 ```json
 {
-    "body": "Attachment [2688-fix.patch](tarball://root/attachments/some-uuid/ticket2688/2688-fix.patch) by rlm created at 2008-03-29 20:45:35",
+    "body": "Attachment [2688-fix.patch](tarball://root/attachments/some-uuid/ticket2688/2688-fix.patch) by @rlmill created at 2008-03-29 20:45:35",
     "created_at": "2008-03-29T20:45:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2688#issuecomment-18509",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [2688-fix.patch](tarball://root/attachments/some-uuid/ticket2688/2688-fix.patch) by rlm created at 2008-03-29 20:45:35
+Attachment [2688-fix.patch](tarball://root/attachments/some-uuid/ticket2688/2688-fix.patch) by @rlmill created at 2008-03-29 20:45:35
 
 
 

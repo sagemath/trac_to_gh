@@ -3,7 +3,7 @@
 archive/issues_005338.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  robertwb\n\nThe code below works instantly in Sage 3.2.1, but starting with Sage 3.2.2 it doesn't even finish the last command in 30 minutes CPU time:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage:     sage: x = var('x')\nsage:     sage: eqn =  x^3 + sqrt(2)*x + 5 == 0\nsage:     sage: a = solve(eqn, x)[0].rhs()\nsage:     sage: K.<b> = QQ[a]\n```\n\nCarl Witty suggests:\n\n```\n[10:23am] mabs: So far it has eaten *4 minutes* of CPU time.\n[10:23am] cwitty: It looks like somebody changed the embedding \nsystem to use QQbar instead of wstein's algdep-of-numerical-value.\n```\n\nThis is likely related to the new embedding code in Sage 3.2.2, so I am CCing RobertWB.\n| Sage Version 3.2.2, Release Date: 2008-12-18                       |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5338\n\n",
+    "body": "Assignee: tbd\n\nCC:  @robertwb\n\nThe code below works instantly in Sage 3.2.1, but starting with Sage 3.2.2 it doesn't even finish the last command in 30 minutes CPU time:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage:     sage: x = var('x')\nsage:     sage: eqn =  x^3 + sqrt(2)*x + 5 == 0\nsage:     sage: a = solve(eqn, x)[0].rhs()\nsage:     sage: K.<b> = QQ[a]\n```\n\nCarl Witty suggests:\n\n```\n[10:23am] mabs: So far it has eaten *4 minutes* of CPU time.\n[10:23am] cwitty: It looks like somebody changed the embedding \nsystem to use QQbar instead of wstein's algdep-of-numerical-value.\n```\n\nThis is likely related to the new embedding code in Sage 3.2.2, so I am CCing RobertWB.\n| Sage Version 3.2.2, Release Date: 2008-12-18                       |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5338\n\n",
     "created_at": "2009-02-22T18:50:31Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_005338.json:
 ```
 Assignee: tbd
 
-CC:  robertwb
+CC:  @robertwb
 
 The code below works instantly in Sage 3.2.1, but starting with Sage 3.2.2 it doesn't even finish the last command in 30 minutes CPU time:
 
@@ -63,7 +63,7 @@ archive/issue_comments_041121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5338#issuecomment-41121",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_041122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5338#issuecomment-41122",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_041124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5338#issuecomment-41124",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_041125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5338#issuecomment-41125",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_041126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5338#issuecomment-41126",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_041127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5338#issuecomment-41127",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_041128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5338#issuecomment-41128",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_041129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5338#issuecomment-41129",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_041130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5338#issuecomment-41130",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_041131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5338#issuecomment-41131",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -346,16 +346,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_041132.json:
 ```json
 {
-    "body": "Attachment [trac_5338.2.patch](tarball://root/attachments/some-uuid/ticket5338/trac_5338.2.patch) by robertwb created at 2009-12-02 04:02:32",
+    "body": "Attachment [trac_5338.2.patch](tarball://root/attachments/some-uuid/ticket5338/trac_5338.2.patch) by @robertwb created at 2009-12-02 04:02:32",
     "created_at": "2009-12-02T04:02:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5338#issuecomment-41132",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac_5338.2.patch](tarball://root/attachments/some-uuid/ticket5338/trac_5338.2.patch) by robertwb created at 2009-12-02 04:02:32
+Attachment [trac_5338.2.patch](tarball://root/attachments/some-uuid/ticket5338/trac_5338.2.patch) by @robertwb created at 2009-12-02 04:02:32
 
 
 
@@ -369,7 +369,7 @@ archive/issue_comments_041133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5338#issuecomment-41133",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_041134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5338",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5338#issuecomment-41134",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

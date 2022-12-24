@@ -159,7 +159,7 @@ archive/issue_comments_021135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3061",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3061#issuecomment-21135",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

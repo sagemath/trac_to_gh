@@ -14,7 +14,7 @@ archive/issues_007046.json:
     "title": "Singular fails to build on OS X 10.6 with case sensitive file system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7046",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 Assignee: tbd

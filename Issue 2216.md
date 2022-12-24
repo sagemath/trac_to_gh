@@ -3,7 +3,7 @@
 archive/issues_002216.json:
 ```json
 {
-    "body": "Assignee: was\n\nSo I just tried the following:\n\n\n```\nsage: F.<alpha> = NumberField(x**4+3)\nsage: F.order([alpha**2], allow_subfield=True)\n```\n\n\nand it seemed to go into an infinite loop. (Maybe I'm impatient, but it doesn't seem like it should take more than 2 seconds to do this, nevermind the minute I waited.) I haven't looked to see what the problem is at all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2216\n\n",
+    "body": "Assignee: @williamstein\n\nSo I just tried the following:\n\n\n```\nsage: F.<alpha> = NumberField(x**4+3)\nsage: F.order([alpha**2], allow_subfield=True)\n```\n\n\nand it seemed to go into an infinite loop. (Maybe I'm impatient, but it doesn't seem like it should take more than 2 seconds to do this, nevermind the minute I waited.) I haven't looked to see what the problem is at all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2216\n\n",
     "created_at": "2008-02-20T01:57:12Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002216.json:
     "title": "Creating an order in a number field --> infinite loop?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2216",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 So I just tried the following:
 
@@ -46,7 +46,7 @@ archive/issue_comments_014652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2216#issuecomment-14652",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_014653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2216#issuecomment-14653",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_014654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2216#issuecomment-14654",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -95,16 +95,16 @@ revised patch
 archive/issue_comments_014655.json:
 ```json
 {
-    "body": "Attachment [2216-order_bug.patch](tarball://root/attachments/some-uuid/ticket2216/2216-order_bug.patch) by AlexGhitza created at 2008-04-26 13:42:30\n\nI've replaced the patch with one in which \"trac #2216 has been fixed\" is changed into something more informative for the user (\"an order in a subfield\").",
+    "body": "Attachment [2216-order_bug.patch](tarball://root/attachments/some-uuid/ticket2216/2216-order_bug.patch) by @aghitza created at 2008-04-26 13:42:30\n\nI've replaced the patch with one in which \"trac #2216 has been fixed\" is changed into something more informative for the user (\"an order in a subfield\").",
     "created_at": "2008-04-26T13:42:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2216#issuecomment-14655",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [2216-order_bug.patch](tarball://root/attachments/some-uuid/ticket2216/2216-order_bug.patch) by AlexGhitza created at 2008-04-26 13:42:30
+Attachment [2216-order_bug.patch](tarball://root/attachments/some-uuid/ticket2216/2216-order_bug.patch) by @aghitza created at 2008-04-26 13:42:30
 
 I've replaced the patch with one in which "trac #2216 has been fixed" is changed into something more informative for the user ("an order in a subfield").
 

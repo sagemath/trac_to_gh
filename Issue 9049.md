@@ -3,7 +3,7 @@
 archive/issues_009049.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nI'm interested in computing the 0-dimensional variety of an ideal over finite field extensions of Q. I've tried the following code both on my copy (v4.4.1) of sage and online and it produces an error message. My friend tried the same code on his v4.2 sage and it worked fine. Is it possible there's a bug in the newer version?\n\n\n```\nS.<t>=PolynomialRing(QQ)\nF.<q>=QQ.extension(t^4+1)\nR.<x,y>=PolynomialRing(F)\nI=R.ideal(x,y^4+1)\nI.variety()\n```\n\n\nThis produces the following error message:\n          \t\n\nTraceback (click to the left of this block for traceback)\n...\nValueError: Length must be equal to the degree of this number field\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_11.py\", line 10, in <module>\n    exec compile(u'open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"Uy48dD49UG9seW5vbWlhbFJpbmcoUVEpCkYuPHE+PVFRLmV4dGVuc2lvbih0XjQrMSkKUi48eCx5Pj1Qb2x5bm9taWFsUmluZyhGKQpJPVIuaWRlYWwoeCx5XjQrMSkKSS52YXJpZXR5KCk=\"),globals())+\"\\\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpZcwb0q/___code___.py\", line 7, in <module>\n    exec compile(u'I.variety()\n  File \"\", line 1, in <module>\n    \n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 407, in __call__\n    return self.f(self._instance, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 2094, in variety\n    TI = self.triangular_decomposition('singular:triangLfak')\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 407, in __call__\n    return self.f(self._instance, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 901, in triangular_decomposition\n    is_groebner = self.basis_is_groebner()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/misc/cachefunc.py\", line 322, in __call__\n    return self._cachedmethod._instance_call(self._instance, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/misc/cachefunc.py\", line 466, in _instance_call\n    cache[key] = self._cachedfunc.f(inst, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 1666, in basis_is_groebner\n    F = matrix(R, 1, self.ngens(), self.gens())\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/constructor.py\", line 652, in matrix\n    return matrix_space.MatrixSpace(ring, nrows, ncols, sparse=sparse)(entries)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 405, in __call__\n    return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 1136, in matrix\n    return self.__matrix_class(self, entries=x, copy=copy, coerce=coerce) \n  File \"matrix_generic_dense.pyx\", line 68, in sage.matrix.matrix_generic_dense.Matrix_generic_dense.__init__ (sage/matrix/matrix_generic_dense.c:1997)\n  File \"multi_polynomial_libsingular.pyx\", line 758, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7176)\n  File \"parent.pyx\", line 854, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/number_field/number_field.py\", line 1023, in _element_constructor_\n    raise ValueError, \"Length must be equal to the degree of this number field\"\nValueError: Length must be equal to the degree of this number field\n\nIssue created by migration from https://trac.sagemath.org/ticket/9049\n\n",
+    "body": "Assignee: @aghitza\n\nI'm interested in computing the 0-dimensional variety of an ideal over finite field extensions of Q. I've tried the following code both on my copy (v4.4.1) of sage and online and it produces an error message. My friend tried the same code on his v4.2 sage and it worked fine. Is it possible there's a bug in the newer version?\n\n\n```\nS.<t>=PolynomialRing(QQ)\nF.<q>=QQ.extension(t^4+1)\nR.<x,y>=PolynomialRing(F)\nI=R.ideal(x,y^4+1)\nI.variety()\n```\n\n\nThis produces the following error message:\n          \t\n\nTraceback (click to the left of this block for traceback)\n...\nValueError: Length must be equal to the degree of this number field\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_11.py\", line 10, in <module>\n    exec compile(u'open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"Uy48dD49UG9seW5vbWlhbFJpbmcoUVEpCkYuPHE+PVFRLmV4dGVuc2lvbih0XjQrMSkKUi48eCx5Pj1Qb2x5bm9taWFsUmluZyhGKQpJPVIuaWRlYWwoeCx5XjQrMSkKSS52YXJpZXR5KCk=\"),globals())+\"\\\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpZcwb0q/___code___.py\", line 7, in <module>\n    exec compile(u'I.variety()\n  File \"\", line 1, in <module>\n    \n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 407, in __call__\n    return self.f(self._instance, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 2094, in variety\n    TI = self.triangular_decomposition('singular:triangLfak')\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 407, in __call__\n    return self.f(self._instance, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 901, in triangular_decomposition\n    is_groebner = self.basis_is_groebner()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/misc/cachefunc.py\", line 322, in __call__\n    return self._cachedmethod._instance_call(self._instance, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/misc/cachefunc.py\", line 466, in _instance_call\n    cache[key] = self._cachedfunc.f(inst, *args, **kwds)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 1666, in basis_is_groebner\n    F = matrix(R, 1, self.ngens(), self.gens())\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/constructor.py\", line 652, in matrix\n    return matrix_space.MatrixSpace(ring, nrows, ncols, sparse=sparse)(entries)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 405, in __call__\n    return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\", line 1136, in matrix\n    return self.__matrix_class(self, entries=x, copy=copy, coerce=coerce) \n  File \"matrix_generic_dense.pyx\", line 68, in sage.matrix.matrix_generic_dense.Matrix_generic_dense.__init__ (sage/matrix/matrix_generic_dense.c:1997)\n  File \"multi_polynomial_libsingular.pyx\", line 758, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:7176)\n  File \"parent.pyx\", line 854, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/number_field/number_field.py\", line 1023, in _element_constructor_\n    raise ValueError, \"Length must be equal to the degree of this number field\"\nValueError: Length must be equal to the degree of this number field\n\nIssue created by migration from https://trac.sagemath.org/ticket/9049\n\n",
     "created_at": "2010-05-25T20:37:38Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_009049.json:
     "user": "cynthia_vinzant"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 I'm interested in computing the 0-dimensional variety of an ideal over finite field extensions of Q. I've tried the following code both on my copy (v4.4.1) of sage and online and it produces an error message. My friend tried the same code on his v4.2 sage and it worked fine. Is it possible there's a bug in the newer version?
 
@@ -93,7 +93,7 @@ archive/issue_comments_083777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83777",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_083778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83778",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
@@ -151,16 +151,16 @@ That would be great. Thanks!
 archive/issue_comments_083780.json:
 ```json
 {
-    "body": "Attachment [trac_9049_fix_is_groebner.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_fix_is_groebner.patch) by syazdani created at 2010-06-25 15:27:59\n\nconverts a tuple to a list so matrix constructor isn't confused.",
+    "body": "Attachment [trac_9049_fix_is_groebner.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_fix_is_groebner.patch) by @syazdani77 created at 2010-06-25 15:27:59\n\nconverts a tuple to a list so matrix constructor isn't confused.",
     "created_at": "2010-06-25T15:27:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83780",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
-Attachment [trac_9049_fix_is_groebner.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_fix_is_groebner.patch) by syazdani created at 2010-06-25 15:27:59
+Attachment [trac_9049_fix_is_groebner.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_fix_is_groebner.patch) by @syazdani77 created at 2010-06-25 15:27:59
 
 converts a tuple to a list so matrix constructor isn't confused.
 
@@ -194,7 +194,7 @@ archive/issue_comments_083782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83782",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_083783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83783",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_083784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83784",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_083785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83785",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_083786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83786",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_083787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83787",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -299,16 +299,16 @@ Apply this patch only: allow construction of matrices from tuples.
 archive/issue_comments_083788.json:
 ```json
 {
-    "body": "Attachment [trac_9049_bug_in_matrices_from_tuples.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_bug_in_matrices_from_tuples.patch) by novoselt created at 2010-09-24 18:20:58\n\nDone!",
+    "body": "Attachment [trac_9049_bug_in_matrices_from_tuples.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_bug_in_matrices_from_tuples.patch) by @novoselt created at 2010-09-24 18:20:58\n\nDone!",
     "created_at": "2010-09-24T18:20:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83788",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9049_bug_in_matrices_from_tuples.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_bug_in_matrices_from_tuples.patch) by novoselt created at 2010-09-24 18:20:58
+Attachment [trac_9049_bug_in_matrices_from_tuples.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_bug_in_matrices_from_tuples.patch) by @novoselt created at 2010-09-24 18:20:58
 
 Done!
 
@@ -324,7 +324,7 @@ archive/issue_comments_083789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83789",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -337,16 +337,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_083790.json:
 ```json
 {
-    "body": "Attachment [trac_9049_bug_in_matrices_from_tuples.take2.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_bug_in_matrices_from_tuples.take2.patch) by burcin created at 2010-09-24 21:18:45\n\nalternative patch",
+    "body": "Attachment [trac_9049_bug_in_matrices_from_tuples.take2.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_bug_in_matrices_from_tuples.take2.patch) by @burcin created at 2010-09-24 21:18:45\n\nalternative patch",
     "created_at": "2010-09-24T21:18:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83790",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9049_bug_in_matrices_from_tuples.take2.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_bug_in_matrices_from_tuples.take2.patch) by burcin created at 2010-09-24 21:18:45
+Attachment [trac_9049_bug_in_matrices_from_tuples.take2.patch](tarball://root/attachments/some-uuid/ticket9049/trac_9049_bug_in_matrices_from_tuples.take2.patch) by @burcin created at 2010-09-24 21:18:45
 
 alternative patch
 
@@ -362,7 +362,7 @@ archive/issue_comments_083791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83791",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_083792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83792",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_083793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83793",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_083794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83794",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_083795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83795",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_083796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9049#issuecomment-83796",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002473.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nBipartiteGraph.__init__ does not call the base class __init__ for some inputs, leaving the object unusable.  For example, \n\n```\nsage: B = BipartiteGraph(None)\nsage: B\n```\n\nwill throw an exception because the base class attributes have not been initialized.  The attached patch ensures the base class __init__ is called.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2473\n\n",
+    "body": "Assignee: @rlmill\n\nBipartiteGraph.__init__ does not call the base class __init__ for some inputs, leaving the object unusable.  For example, \n\n```\nsage: B = BipartiteGraph(None)\nsage: B\n```\n\nwill throw an exception because the base class attributes have not been initialized.  The attached patch ensures the base class __init__ is called.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2473\n\n",
     "created_at": "2008-03-11T22:03:53Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002473.json:
     "title": "[with patch, needs review] BipartiteGraph.__init__ does not properly initialize for some inputs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2473",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 BipartiteGraph.__init__ does not call the base class __init__ for some inputs, leaving the object unusable.  For example, 
 
@@ -44,7 +44,7 @@ archive/issue_comments_016745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2473#issuecomment-16745",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -57,16 +57,16 @@ The problem with this approach is it allows one to construct graphs which are no
 archive/issue_comments_016746.json:
 ```json
 {
-    "body": "Attachment [bipartite_graph_input.patch](tarball://root/attachments/some-uuid/ticket2473/bipartite_graph_input.patch) by rhinton created at 2008-03-12 18:57:52\n\ntry #2",
+    "body": "Attachment [bipartite_graph_input.patch](tarball://root/attachments/some-uuid/ticket2473/bipartite_graph_input.patch) by @rhinton created at 2008-03-12 18:57:52\n\ntry #2",
     "created_at": "2008-03-12T18:57:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2473#issuecomment-16746",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [bipartite_graph_input.patch](tarball://root/attachments/some-uuid/ticket2473/bipartite_graph_input.patch) by rhinton created at 2008-03-12 18:57:52
+Attachment [bipartite_graph_input.patch](tarball://root/attachments/some-uuid/ticket2473/bipartite_graph_input.patch) by @rhinton created at 2008-03-12 18:57:52
 
 try #2
 
@@ -77,16 +77,16 @@ try #2
 archive/issue_comments_016747.json:
 ```json
 {
-    "body": "Attachment [bipartite_graph_input.2.patch](tarball://root/attachments/some-uuid/ticket2473/bipartite_graph_input.2.patch) by rhinton created at 2008-03-12 18:59:27\n\nThe updated patch, I believe, addresses your concerns.  It also fixes several more bugs.",
+    "body": "Attachment [bipartite_graph_input.2.patch](tarball://root/attachments/some-uuid/ticket2473/bipartite_graph_input.2.patch) by @rhinton created at 2008-03-12 18:59:27\n\nThe updated patch, I believe, addresses your concerns.  It also fixes several more bugs.",
     "created_at": "2008-03-12T18:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2473#issuecomment-16747",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [bipartite_graph_input.2.patch](tarball://root/attachments/some-uuid/ticket2473/bipartite_graph_input.2.patch) by rhinton created at 2008-03-12 18:59:27
+Attachment [bipartite_graph_input.2.patch](tarball://root/attachments/some-uuid/ticket2473/bipartite_graph_input.2.patch) by @rhinton created at 2008-03-12 18:59:27
 
 The updated patch, I believe, addresses your concerns.  It also fixes several more bugs.
 
@@ -102,7 +102,7 @@ archive/issue_comments_016748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2473#issuecomment-16748",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_016749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2473#issuecomment-16749",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -139,16 +139,16 @@ Some notes:
 archive/issue_comments_016750.json:
 ```json
 {
-    "body": "Attachment [2473-ref.patch](tarball://root/attachments/some-uuid/ticket2473/2473-ref.patch) by rlm created at 2008-03-13 02:24:50\n\nApply bipartite_graph_input.2.patch, then this.",
+    "body": "Attachment [2473-ref.patch](tarball://root/attachments/some-uuid/ticket2473/2473-ref.patch) by @rlmill created at 2008-03-13 02:24:50\n\nApply bipartite_graph_input.2.patch, then this.",
     "created_at": "2008-03-13T02:24:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2473#issuecomment-16750",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [2473-ref.patch](tarball://root/attachments/some-uuid/ticket2473/2473-ref.patch) by rlm created at 2008-03-13 02:24:50
+Attachment [2473-ref.patch](tarball://root/attachments/some-uuid/ticket2473/2473-ref.patch) by @rlmill created at 2008-03-13 02:24:50
 
 Apply bipartite_graph_input.2.patch, then this.
 

@@ -3,7 +3,7 @@
 archive/issues_006106.json:
 ```json
 {
-    "body": "Assignee: justin\n\nCC:  ncalexan\n\nKeywords: binary quadratic forms\n\nI added functions to check for the reducibility of an indefinite binary quadratic form and reduce it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6106\n\n",
+    "body": "Assignee: justin\n\nCC:  @ncalexan\n\nKeywords: binary quadratic forms\n\nI added functions to check for the reducibility of an indefinite binary quadratic form and reduce it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6106\n\n",
     "created_at": "2009-05-21T05:22:11Z",
     "labels": [
         "quadratic forms",
@@ -19,7 +19,7 @@ archive/issues_006106.json:
 ```
 Assignee: justin
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: binary quadratic forms
 
@@ -61,7 +61,7 @@ archive/issue_comments_048778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48778",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_048779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48779",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_048780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48780",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_048782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48782",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_048783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48783",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_048784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48784",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_048785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48785",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_048786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48786",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_048787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48787",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_048788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48788",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_048789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48789",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_048790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48790",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_048791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48791",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_048792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48792",
-    "user": "sbrandhorst"
+    "user": "@simonbrandhorst"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_048793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6106#issuecomment-48793",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

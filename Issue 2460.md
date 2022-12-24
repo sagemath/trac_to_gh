@@ -14,7 +14,7 @@ archive/issues_002460.json:
     "title": "some issues with factorization.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2460",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -70,7 +70,7 @@ archive/issue_comments_016656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16656",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,16 +83,16 @@ Changing status from new to assigned.
 archive/issue_comments_016657.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2008-03-10T16:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16657",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -101,16 +101,16 @@ Changing assignee from somebody to was.
 archive/issue_comments_016658.json:
 ```json
 {
-    "body": "Changing assignee from was to gfurnish.",
+    "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-10T16:22:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16658",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was to gfurnish.
+Changing assignee from @williamstein to @garyfurnish.
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_016659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16659",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_016660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16660",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -155,16 +155,16 @@ Changing status from new to assigned.
 archive/issue_comments_016661.json:
 ```json
 {
-    "body": "Attachment [trac_2460.patch](tarball://root/attachments/some-uuid/ticket2460/trac_2460.patch) by gfurnish created at 2008-03-10 16:29:45",
+    "body": "Attachment [trac_2460.patch](tarball://root/attachments/some-uuid/ticket2460/trac_2460.patch) by @garyfurnish created at 2008-03-10 16:29:45",
     "created_at": "2008-03-10T16:29:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16661",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_2460.patch](tarball://root/attachments/some-uuid/ticket2460/trac_2460.patch) by gfurnish created at 2008-03-10 16:29:45
+Attachment [trac_2460.patch](tarball://root/attachments/some-uuid/ticket2460/trac_2460.patch) by @garyfurnish created at 2008-03-10 16:29:45
 
 
 
@@ -178,7 +178,7 @@ archive/issue_comments_016662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16662",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -191,16 +191,16 @@ There is a possibility that fixing commutativity may other things.
 archive/issue_comments_016663.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to was.",
+    "body": "Changing assignee from @garyfurnish to @williamstein.",
     "created_at": "2008-03-10T17:12:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16663",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from gfurnish to was.
+Changing assignee from @garyfurnish to @williamstein.
 
 
 
@@ -214,7 +214,7 @@ archive/issue_comments_016664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16664",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_016665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16665",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_016666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16666",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_016668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16668",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_016669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16669",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_016670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16670",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_016674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16674",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_016675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16675",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_016676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16676",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_016677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16677",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004318.json:
     "title": "update French tutorial for #4285",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4318",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_031603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4318#issuecomment-31603",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_031604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4318#issuecomment-31604",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -68,16 +68,16 @@ This is fixed in the Sphinx patches.
 archive/issue_comments_031605.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-01-02T06:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4318#issuecomment-31605",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_031606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4318#issuecomment-31606",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_031607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4318#issuecomment-31607",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_031608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4318#issuecomment-31608",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_031610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4318#issuecomment-31610",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_031611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4318#issuecomment-31611",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_031613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4318#issuecomment-31613",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 

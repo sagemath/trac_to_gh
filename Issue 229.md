@@ -3,7 +3,7 @@
 archive/issues_000229.json:
 ```json
 {
-    "body": "Assignee: was\n\nPLAN\n\n\nMake it so pickled objects can always be reloaded. To do this, ever single class *must* have a couple example pickled objects, and the doctest has to simply load them and make sure it works.   Make this a requirement for all SAGE classes (!).\n\nIssue created by migration from https://trac.sagemath.org/ticket/229\n\n",
+    "body": "Assignee: @williamstein\n\nPLAN\n\n\nMake it so pickled objects can always be reloaded. To do this, ever single class *must* have a couple example pickled objects, and the doctest has to simply load them and make sure it works.   Make this a requirement for all SAGE classes (!).\n\nIssue created by migration from https://trac.sagemath.org/ticket/229\n\n",
     "created_at": "2007-01-29T19:03:53Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000229.json:
     "title": "make it so all objects pickled now can be loaded in all future versions of SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/229",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 PLAN
 

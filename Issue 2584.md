@@ -3,7 +3,7 @@
 archive/issues_002584.json:
 ```json
 {
-    "body": "Assignee: jason\n\nThis causes a bug when printing:\n\n\n```\nshow([Matrix(ZZ,3,range(9)), Matrix(ZZ,3,range(9))])\n```\n\n\nNotice the extra \",\". A list of one element doesn't have the same problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2584\n\n",
+    "body": "Assignee: @jasongrout\n\nThis causes a bug when printing:\n\n\n```\nshow([Matrix(ZZ,3,range(9)), Matrix(ZZ,3,range(9))])\n```\n\n\nNotice the extra \",\". A list of one element doesn't have the same problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2584\n\n",
     "created_at": "2008-03-18T11:51:35Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002584.json:
     "title": "printing bug with show()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2584",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 This causes a bug when printing:
 
@@ -45,7 +45,7 @@ archive/issue_comments_017683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2584#issuecomment-17683",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_017684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2584#issuecomment-17684",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,16 +93,16 @@ Actually, the bug is in the list_function in latex.py in the case where the list
 archive/issue_comments_017685.json:
 ```json
 {
-    "body": "Attachment [list-print-extra-comma.patch](tarball://root/attachments/some-uuid/ticket2584/list-print-extra-comma.patch) by jason created at 2008-03-18 18:58:00",
+    "body": "Attachment [list-print-extra-comma.patch](tarball://root/attachments/some-uuid/ticket2584/list-print-extra-comma.patch) by @jasongrout created at 2008-03-18 18:58:00",
     "created_at": "2008-03-18T18:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2584#issuecomment-17685",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [list-print-extra-comma.patch](tarball://root/attachments/some-uuid/ticket2584/list-print-extra-comma.patch) by jason created at 2008-03-18 18:58:00
+Attachment [list-print-extra-comma.patch](tarball://root/attachments/some-uuid/ticket2584/list-print-extra-comma.patch) by @jasongrout created at 2008-03-18 18:58:00
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_017686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2584#issuecomment-17686",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_017687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2584#issuecomment-17687",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -174,16 +174,16 @@ Michael
 archive/issue_comments_017689.json:
 ```json
 {
-    "body": "Attachment [2584.patch](tarball://root/attachments/some-uuid/ticket2584/2584.patch) by mhansen created at 2008-03-18 22:53:58",
+    "body": "Attachment [2584.patch](tarball://root/attachments/some-uuid/ticket2584/2584.patch) by @mwhansen created at 2008-03-18 22:53:58",
     "created_at": "2008-03-18T22:53:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2584#issuecomment-17689",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2584.patch](tarball://root/attachments/some-uuid/ticket2584/2584.patch) by mhansen created at 2008-03-18 22:53:58
+Attachment [2584.patch](tarball://root/attachments/some-uuid/ticket2584/2584.patch) by @mwhansen created at 2008-03-18 22:53:58
 
 
 
@@ -197,7 +197,7 @@ archive/issue_comments_017690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2584#issuecomment-17690",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_017693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2584#issuecomment-17693",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_017694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2584#issuecomment-17694",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

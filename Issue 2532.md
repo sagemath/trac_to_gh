@@ -3,7 +3,7 @@
 archive/issues_002532.json:
 ```json
 {
-    "body": "Assignee: roed\n\nFixes a number of bugs in p-adic extensions.\n\n1. changes many object creation functions to pass on exceptions if necessary.\n2. fixes a bug in precision_absolute for capped relative extension elements that causes it to return the wrong answer if the element is not normalized.\n3. Fixes object creation functions so that they do not fail when asked to create an element of precision zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2532\n\n",
+    "body": "Assignee: @roed314\n\nFixes a number of bugs in p-adic extensions.\n\n1. changes many object creation functions to pass on exceptions if necessary.\n2. fixes a bug in precision_absolute for capped relative extension elements that causes it to return the wrong answer if the element is not normalized.\n3. Fixes object creation functions so that they do not fail when asked to create an element of precision zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2532\n\n",
     "created_at": "2008-03-15T19:05:56Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_002532.json:
     "title": "[with-patch] padic bugfix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2532",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 Fixes a number of bugs in p-adic extensions.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2532
 archive/issue_comments_017264.json:
 ```json
 {
-    "body": "Attachment [padic_restore_context_zero_bugfix.patch](tarball://root/attachments/some-uuid/ticket2532/padic_restore_context_zero_bugfix.patch) by mhansen created at 2008-03-15 21:49:01",
+    "body": "Attachment [padic_restore_context_zero_bugfix.patch](tarball://root/attachments/some-uuid/ticket2532/padic_restore_context_zero_bugfix.patch) by @mwhansen created at 2008-03-15 21:49:01",
     "created_at": "2008-03-15T21:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2532#issuecomment-17264",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [padic_restore_context_zero_bugfix.patch](tarball://root/attachments/some-uuid/ticket2532/padic_restore_context_zero_bugfix.patch) by mhansen created at 2008-03-15 21:49:01
+Attachment [padic_restore_context_zero_bugfix.patch](tarball://root/attachments/some-uuid/ticket2532/padic_restore_context_zero_bugfix.patch) by @mwhansen created at 2008-03-15 21:49:01
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_017265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2532#issuecomment-17265",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

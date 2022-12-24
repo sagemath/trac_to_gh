@@ -14,7 +14,7 @@ archive/issues_006060.json:
     "title": "divmod fails when one argument is Integer and the other is a Python int",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6060",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 Assignee: somebody
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6060
 archive/issue_comments_048246.json:
 ```json
 {
-    "body": "Attachment [divmod.patch](tarball://root/attachments/some-uuid/ticket6060/divmod.patch) by fredrik.johansson created at 2009-05-18 03:19:22",
+    "body": "Attachment [divmod.patch](tarball://root/attachments/some-uuid/ticket6060/divmod.patch) by @fredrik-johansson created at 2009-05-18 03:19:22",
     "created_at": "2009-05-18T03:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48246",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [divmod.patch](tarball://root/attachments/some-uuid/ticket6060/divmod.patch) by fredrik.johansson created at 2009-05-18 03:19:22
+Attachment [divmod.patch](tarball://root/attachments/some-uuid/ticket6060/divmod.patch) by @fredrik-johansson created at 2009-05-18 03:19:22
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_048247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6060",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48247",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007762.json:
     "title": "`conf.py` for Sage documentation hardcodes sagenb path",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7762",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: mvngu
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7762
 archive/issue_comments_066862.json:
 ```json
 {
-    "body": "Attachment [trac_7762-conf-sagenb-path.patch](tarball://root/attachments/some-uuid/ticket7762/trac_7762-conf-sagenb-path.patch) by timdumol created at 2009-12-24 17:26:42\n\nUses `sagenb.misc.misc.DATA` instead.",
+    "body": "Attachment [trac_7762-conf-sagenb-path.patch](tarball://root/attachments/some-uuid/ticket7762/trac_7762-conf-sagenb-path.patch) by @TimDumol created at 2009-12-24 17:26:42\n\nUses `sagenb.misc.misc.DATA` instead.",
     "created_at": "2009-12-24T17:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7762#issuecomment-66862",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7762-conf-sagenb-path.patch](tarball://root/attachments/some-uuid/ticket7762/trac_7762-conf-sagenb-path.patch) by timdumol created at 2009-12-24 17:26:42
+Attachment [trac_7762-conf-sagenb-path.patch](tarball://root/attachments/some-uuid/ticket7762/trac_7762-conf-sagenb-path.patch) by @TimDumol created at 2009-12-24 17:26:42
 
 Uses `sagenb.misc.misc.DATA` instead.
 
@@ -75,7 +75,7 @@ archive/issue_comments_066863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7762#issuecomment-66863",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_066864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7762#issuecomment-66864",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_066865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7762#issuecomment-66865",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

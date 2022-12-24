@@ -3,7 +3,7 @@
 archive/issues_008529.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman\n\nKeywords: plot default color\n\nWhen plotting a function using `plot`, the default color for the graph of the function is blue.  The default color for `implicit_plot` is black.  It would be preferable to have the same default color.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8529\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: plot default color\n\nWhen plotting a function using `plot`, the default color for the graph of the function is blue.  The default color for `implicit_plot` is black.  It would be preferable to have the same default color.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8529\n\n",
     "created_at": "2010-03-13T22:34:10Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_008529.json:
     "title": "default colors for plot and implicit_plot are not consistent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8529",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Keywords: plot default color
 
@@ -41,7 +41,7 @@ archive/issue_comments_077074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77074",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_077076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77076",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_077077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77077",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_077078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77078",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_077079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77079",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_077080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77080",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_077081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77081",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_077082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77082",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_077083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77083",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_077085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77085",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_077086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77086",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_077090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77090",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_077091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77091",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_077092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77092",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -447,16 +447,16 @@ Apply after initial patch
 archive/issue_comments_077093.json:
 ```json
 {
-    "body": "Attachment [trac_8529-reviewer.patch](tarball://root/attachments/some-uuid/ticket8529/trac_8529-reviewer.patch) by kcrisman created at 2010-08-10 16:07:40\n\nSuper-cool example picture of this patch working",
+    "body": "Attachment [trac_8529-reviewer.patch](tarball://root/attachments/some-uuid/ticket8529/trac_8529-reviewer.patch) by @kcrisman created at 2010-08-10 16:07:40\n\nSuper-cool example picture of this patch working",
     "created_at": "2010-08-10T16:07:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77093",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_8529-reviewer.patch](tarball://root/attachments/some-uuid/ticket8529/trac_8529-reviewer.patch) by kcrisman created at 2010-08-10 16:07:40
+Attachment [trac_8529-reviewer.patch](tarball://root/attachments/some-uuid/ticket8529/trac_8529-reviewer.patch) by @kcrisman created at 2010-08-10 16:07:40
 
 Super-cool example picture of this patch working
 
@@ -467,16 +467,16 @@ Super-cool example picture of this patch working
 archive/issue_comments_077094.json:
 ```json
 {
-    "body": "Attachment [ColorfulCircles.png](tarball://root/attachments/some-uuid/ticket8529/ColorfulCircles.png) by jason created at 2010-08-14 08:40:34\n\nThis solves #9654 too.",
+    "body": "Attachment [ColorfulCircles.png](tarball://root/attachments/some-uuid/ticket8529/ColorfulCircles.png) by @jasongrout created at 2010-08-14 08:40:34\n\nThis solves #9654 too.",
     "created_at": "2010-08-14T08:40:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77094",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [ColorfulCircles.png](tarball://root/attachments/some-uuid/ticket8529/ColorfulCircles.png) by jason created at 2010-08-14 08:40:34
+Attachment [ColorfulCircles.png](tarball://root/attachments/some-uuid/ticket8529/ColorfulCircles.png) by @jasongrout created at 2010-08-14 08:40:34
 
 This solves #9654 too.
 
@@ -492,7 +492,7 @@ archive/issue_comments_077095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77095",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_077096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77096",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_077097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77097",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_077098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77098",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -620,7 +620,7 @@ archive/issue_comments_077099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77099",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_077100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77100",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -651,16 +651,16 @@ apply on top of previous patches
 archive/issue_comments_077101.json:
 ```json
 {
-    "body": "Attachment [trac-8529-reviewer-reviewer.patch](tarball://root/attachments/some-uuid/ticket8529/trac-8529-reviewer-reviewer.patch) by jason created at 2010-10-19 06:26:26\n\nI rebased the reviewer-reviewer patch for 4.6.alpha3.  In fact, that reviewer-reviewer patch was so picky, it probably would have been okay to just ignore it anyway.",
+    "body": "Attachment [trac-8529-reviewer-reviewer.patch](tarball://root/attachments/some-uuid/ticket8529/trac-8529-reviewer-reviewer.patch) by @jasongrout created at 2010-10-19 06:26:26\n\nI rebased the reviewer-reviewer patch for 4.6.alpha3.  In fact, that reviewer-reviewer patch was so picky, it probably would have been okay to just ignore it anyway.",
     "created_at": "2010-10-19T06:26:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77101",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8529-reviewer-reviewer.patch](tarball://root/attachments/some-uuid/ticket8529/trac-8529-reviewer-reviewer.patch) by jason created at 2010-10-19 06:26:26
+Attachment [trac-8529-reviewer-reviewer.patch](tarball://root/attachments/some-uuid/ticket8529/trac-8529-reviewer-reviewer.patch) by @jasongrout created at 2010-10-19 06:26:26
 
 I rebased the reviewer-reviewer patch for 4.6.alpha3.  In fact, that reviewer-reviewer patch was so picky, it probably would have been okay to just ignore it anyway.
 
@@ -676,7 +676,7 @@ archive/issue_comments_077102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77102",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -694,7 +694,7 @@ archive/issue_comments_077103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77103",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

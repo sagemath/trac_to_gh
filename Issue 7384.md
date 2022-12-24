@@ -3,7 +3,7 @@
 archive/issues_007384.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mpatel\n\n`sphinxify.py`'s doctests currently fail. Fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7384\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777\n\n`sphinxify.py`'s doctests currently fail. Fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7384\n\n",
     "created_at": "2009-11-03T20:46:18Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007384.json:
     "title": "SageNB -- Fix Sphinxify doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7384",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
 
-CC:  mpatel
+CC:  @qed777
 
 `sphinxify.py`'s doctests currently fail. Fix this.
 
@@ -39,7 +39,7 @@ archive/issue_comments_062102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7384#issuecomment-62102",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_062103.json:
 ```json
 {
-    "body": "Attachment [trac_7384-sphinxify-docstrings.patch](tarball://root/attachments/some-uuid/ticket7384/trac_7384-sphinxify-docstrings.patch) by timdumol created at 2009-11-03 21:19:48\n\nFixed the doctests",
+    "body": "Attachment [trac_7384-sphinxify-docstrings.patch](tarball://root/attachments/some-uuid/ticket7384/trac_7384-sphinxify-docstrings.patch) by @TimDumol created at 2009-11-03 21:19:48\n\nFixed the doctests",
     "created_at": "2009-11-03T21:19:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7384#issuecomment-62103",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7384-sphinxify-docstrings.patch](tarball://root/attachments/some-uuid/ticket7384/trac_7384-sphinxify-docstrings.patch) by timdumol created at 2009-11-03 21:19:48
+Attachment [trac_7384-sphinxify-docstrings.patch](tarball://root/attachments/some-uuid/ticket7384/trac_7384-sphinxify-docstrings.patch) by @TimDumol created at 2009-11-03 21:19:48
 
 Fixed the doctests
 
@@ -77,7 +77,7 @@ archive/issue_comments_062104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7384#issuecomment-62104",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -114,16 +114,16 @@ But it could be my setup.  If not, please see version 2 of the patch.
 archive/issue_comments_062105.json:
 ```json
 {
-    "body": "Attachment [trac_7384-sphinxify-docstrings_v2.patch](tarball://root/attachments/some-uuid/ticket7384/trac_7384-sphinxify-docstrings_v2.patch) by mpatel created at 2009-11-04 05:14:01\n\nUpdate doctest outputs.  Apply only this patch.",
+    "body": "Attachment [trac_7384-sphinxify-docstrings_v2.patch](tarball://root/attachments/some-uuid/ticket7384/trac_7384-sphinxify-docstrings_v2.patch) by @qed777 created at 2009-11-04 05:14:01\n\nUpdate doctest outputs.  Apply only this patch.",
     "created_at": "2009-11-04T05:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7384#issuecomment-62105",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7384-sphinxify-docstrings_v2.patch](tarball://root/attachments/some-uuid/ticket7384/trac_7384-sphinxify-docstrings_v2.patch) by mpatel created at 2009-11-04 05:14:01
+Attachment [trac_7384-sphinxify-docstrings_v2.patch](tarball://root/attachments/some-uuid/ticket7384/trac_7384-sphinxify-docstrings_v2.patch) by @qed777 created at 2009-11-04 05:14:01
 
 Update doctest outputs.  Apply only this patch.
 
@@ -139,7 +139,7 @@ archive/issue_comments_062106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7384#issuecomment-62106",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_062107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7384#issuecomment-62107",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_062108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7384#issuecomment-62108",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_062109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7384#issuecomment-62109",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

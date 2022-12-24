@@ -14,7 +14,7 @@ archive/issues_003851.json:
     "title": "[with patch, needs review] Steenrod algebra doctest patch: small coercion issue with 3.1alpha",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3851",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd

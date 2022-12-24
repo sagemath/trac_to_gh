@@ -3,7 +3,7 @@
 archive/issues_006526.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  saliola\n\nThis is one of the obstructions to switching the graph backends over to Cython by default.\n\nTo quote Franco:\n\n```\nBut all the doctest failures occur in the NaiveSuffixTreeClass, which\nis a naive implementation. This code was only intended for testing\npurposes, so I think it is fine to delete it (delete both\nNaiveSuffixTree and NaiveSuffixTreeClass). I am pretty certain it is\nnot used anywhere else (it should not be, if it is), because it is a\nvery slow implementation (hence, the name naive).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6526\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @saliola\n\nThis is one of the obstructions to switching the graph backends over to Cython by default.\n\nTo quote Franco:\n\n```\nBut all the doctest failures occur in the NaiveSuffixTreeClass, which\nis a naive implementation. This code was only intended for testing\npurposes, so I think it is fine to delete it (delete both\nNaiveSuffixTree and NaiveSuffixTreeClass). I am pretty certain it is\nnot used anywhere else (it should not be, if it is), because it is a\nvery slow implementation (hence, the name naive).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6526\n\n",
     "created_at": "2009-07-13T19:12:33Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_006526.json:
     "title": "remove naive suffix trees",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6526",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  saliola
+CC:  @saliola
 
 This is one of the obstructions to switching the graph backends over to Cython by default.
 
@@ -51,7 +51,7 @@ archive/issue_comments_053219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6526#issuecomment-53219",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_053220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6526#issuecomment-53220",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -82,16 +82,16 @@ based on #6519
 archive/issue_comments_053221.json:
 ```json
 {
-    "body": "Attachment [trac_6526-remove-naive-suffix-tree.patch](tarball://root/attachments/some-uuid/ticket6526/trac_6526-remove-naive-suffix-tree.patch) by rlm created at 2009-07-14 16:05:59",
+    "body": "Attachment [trac_6526-remove-naive-suffix-tree.patch](tarball://root/attachments/some-uuid/ticket6526/trac_6526-remove-naive-suffix-tree.patch) by @rlmill created at 2009-07-14 16:05:59",
     "created_at": "2009-07-14T16:05:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6526#issuecomment-53221",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6526-remove-naive-suffix-tree.patch](tarball://root/attachments/some-uuid/ticket6526/trac_6526-remove-naive-suffix-tree.patch) by rlm created at 2009-07-14 16:05:59
+Attachment [trac_6526-remove-naive-suffix-tree.patch](tarball://root/attachments/some-uuid/ticket6526/trac_6526-remove-naive-suffix-tree.patch) by @rlmill created at 2009-07-14 16:05:59
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_053222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6526",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6526#issuecomment-53222",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

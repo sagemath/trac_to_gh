@@ -3,7 +3,7 @@
 archive/issues_006911.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nFollowup to #6768, uses algorithm at http://wiki.sagemath.org/days17/projects/presagedays/discussion\n\nIssue created by migration from https://trac.sagemath.org/ticket/6911\n\n",
+    "body": "Assignee: @craigcitro\n\nFollowup to #6768, uses algorithm at http://wiki.sagemath.org/days17/projects/presagedays/discussion\n\nIssue created by migration from https://trac.sagemath.org/ticket/6911\n\n",
     "created_at": "2009-09-10T05:48:10Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_006911.json:
     "title": "Faster basis of a Hecke algebra",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6911",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Followup to #6768, uses algorithm at http://wiki.sagemath.org/days17/projects/presagedays/discussion
 
@@ -37,7 +37,7 @@ archive/issue_comments_057087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6911#issuecomment-57087",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -50,16 +50,16 @@ Also discriminants.
 archive/issue_comments_057088.json:
 ```json
 {
-    "body": "Attachment [6911-hecke-basis-disc.patch](tarball://root/attachments/some-uuid/ticket6911/6911-hecke-basis-disc.patch) by robertwb created at 2009-09-10 05:50:13",
+    "body": "Attachment [6911-hecke-basis-disc.patch](tarball://root/attachments/some-uuid/ticket6911/6911-hecke-basis-disc.patch) by @robertwb created at 2009-09-10 05:50:13",
     "created_at": "2009-09-10T05:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6911#issuecomment-57088",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6911-hecke-basis-disc.patch](tarball://root/attachments/some-uuid/ticket6911/6911-hecke-basis-disc.patch) by robertwb created at 2009-09-10 05:50:13
+Attachment [6911-hecke-basis-disc.patch](tarball://root/attachments/some-uuid/ticket6911/6911-hecke-basis-disc.patch) by @robertwb created at 2009-09-10 05:50:13
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_057089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6911#issuecomment-57089",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,16 +111,16 @@ abort: patch failed to apply
 archive/issue_comments_057090.json:
 ```json
 {
-    "body": "Attachment [trac_6911-referee-replace_other_patch-apply_only_this.patch](tarball://root/attachments/some-uuid/ticket6911/trac_6911-referee-replace_other_patch-apply_only_this.patch) by was created at 2009-09-19 11:23:38",
+    "body": "Attachment [trac_6911-referee-replace_other_patch-apply_only_this.patch](tarball://root/attachments/some-uuid/ticket6911/trac_6911-referee-replace_other_patch-apply_only_this.patch) by @williamstein created at 2009-09-19 11:23:38",
     "created_at": "2009-09-19T11:23:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6911#issuecomment-57090",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6911-referee-replace_other_patch-apply_only_this.patch](tarball://root/attachments/some-uuid/ticket6911/trac_6911-referee-replace_other_patch-apply_only_this.patch) by was created at 2009-09-19 11:23:38
+Attachment [trac_6911-referee-replace_other_patch-apply_only_this.patch](tarball://root/attachments/some-uuid/ticket6911/trac_6911-referee-replace_other_patch-apply_only_this.patch) by @williamstein created at 2009-09-19 11:23:38
 
 
 
@@ -129,16 +129,16 @@ Attachment [trac_6911-referee-replace_other_patch-apply_only_this.patch](tarball
 archive/issue_comments_057091.json:
 ```json
 {
-    "body": "Attachment [trac_6911-referee_followup_that_fixes_some_bugs.patch](tarball://root/attachments/some-uuid/ticket6911/trac_6911-referee_followup_that_fixes_some_bugs.patch) by was created at 2009-09-19 11:42:43",
+    "body": "Attachment [trac_6911-referee_followup_that_fixes_some_bugs.patch](tarball://root/attachments/some-uuid/ticket6911/trac_6911-referee_followup_that_fixes_some_bugs.patch) by @williamstein created at 2009-09-19 11:42:43",
     "created_at": "2009-09-19T11:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6911#issuecomment-57091",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6911-referee_followup_that_fixes_some_bugs.patch](tarball://root/attachments/some-uuid/ticket6911/trac_6911-referee_followup_that_fixes_some_bugs.patch) by was created at 2009-09-19 11:42:43
+Attachment [trac_6911-referee_followup_that_fixes_some_bugs.patch](tarball://root/attachments/some-uuid/ticket6911/trac_6911-referee_followup_that_fixes_some_bugs.patch) by @williamstein created at 2009-09-19 11:42:43
 
 
 
@@ -152,7 +152,7 @@ archive/issue_comments_057092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6911#issuecomment-57092",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

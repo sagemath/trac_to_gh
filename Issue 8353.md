@@ -3,7 +3,7 @@
 archive/issues_008353.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  slabbe sage-combinat\n\nKeywords: paths, height, width\n\nWhen dealing with word paths on the square grid, it is very useful to know their height and their width.\n\nIn particular, one can compute a bounding box for display purposes. This small ticket adds those two functionalities.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8353\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @seblabbe sage-combinat\n\nKeywords: paths, height, width\n\nWhen dealing with word paths on the square grid, it is very useful to know their height and their width.\n\nIn particular, one can compute a bounding box for display purposes. This small ticket adds those two functionalities.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8353\n\n",
     "created_at": "2010-02-24T22:34:23Z",
     "labels": [
         "combinatorics",
@@ -19,7 +19,7 @@ archive/issues_008353.json:
 ```
 Assignee: sage-combinat
 
-CC:  slabbe sage-combinat
+CC:  @seblabbe sage-combinat
 
 Keywords: paths, height, width
 
@@ -79,7 +79,7 @@ archive/issue_comments_074605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8353#issuecomment-74605",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_074606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8353#issuecomment-74606",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -207,16 +207,16 @@ Attachment [trac_8353_square_grid_word_paths_height_width-abm.patch](tarball://r
 archive/issue_comments_074612.json:
 ```json
 {
-    "body": "Attachment [trac_8353_review-sl.patch](tarball://root/attachments/some-uuid/ticket8353/trac_8353_review-sl.patch) by slabbe created at 2010-03-03 17:45:05\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8353_review-sl.patch](tarball://root/attachments/some-uuid/ticket8353/trac_8353_review-sl.patch) by @seblabbe created at 2010-03-03 17:45:05\n\nApplies over the precedent patch",
     "created_at": "2010-03-03T17:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8353#issuecomment-74612",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8353_review-sl.patch](tarball://root/attachments/some-uuid/ticket8353/trac_8353_review-sl.patch) by slabbe created at 2010-03-03 17:45:05
+Attachment [trac_8353_review-sl.patch](tarball://root/attachments/some-uuid/ticket8353/trac_8353_review-sl.patch) by @seblabbe created at 2010-03-03 17:45:05
 
 Applies over the precedent patch
 
@@ -232,7 +232,7 @@ archive/issue_comments_074613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8353#issuecomment-74613",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_074616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8353#issuecomment-74616",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

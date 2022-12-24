@@ -3,7 +3,7 @@
 archive/issues_005510.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  rhinton\n\nKeywords: m4ri, linear algebra\n\nThe attached patch(es) update Sage's interface to work with the HG version of M4RI available at: http://bitbucket.org/malb/m4ri/\n\nAlso, a dedicated (faster) `rank()` function was added for dense matrices over GF(2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5510\n\n",
+    "body": "Assignee: @malb\n\nCC:  @rhinton\n\nKeywords: m4ri, linear algebra\n\nThe attached patch(es) update Sage's interface to work with the HG version of M4RI available at: http://bitbucket.org/malb/m4ri/\n\nAlso, a dedicated (faster) `rank()` function was added for dense matrices over GF(2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5510\n\n",
     "created_at": "2009-03-13T15:38:21Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005510.json:
     "title": "[with patch, not ready for review] update M4RI interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5510",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  rhinton
+CC:  @rhinton
 
 Keywords: m4ri, linear algebra
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5510
 archive/issue_comments_042786.json:
 ```json
 {
-    "body": "Attachment [matrix_mod2_new_api_and_rank.patch](tarball://root/attachments/some-uuid/ticket5510/matrix_mod2_new_api_and_rank.patch) by malb created at 2009-05-12 01:36:56\n\nPatch requires SPKG at:\n\n   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20090512.spkg\n\nThis update is a requirement for updating PolyBoRi to 0.6.",
+    "body": "Attachment [matrix_mod2_new_api_and_rank.patch](tarball://root/attachments/some-uuid/ticket5510/matrix_mod2_new_api_and_rank.patch) by @malb created at 2009-05-12 01:36:56\n\nPatch requires SPKG at:\n\n   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20090512.spkg\n\nThis update is a requirement for updating PolyBoRi to 0.6.",
     "created_at": "2009-05-12T01:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5510#issuecomment-42786",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [matrix_mod2_new_api_and_rank.patch](tarball://root/attachments/some-uuid/ticket5510/matrix_mod2_new_api_and_rank.patch) by malb created at 2009-05-12 01:36:56
+Attachment [matrix_mod2_new_api_and_rank.patch](tarball://root/attachments/some-uuid/ticket5510/matrix_mod2_new_api_and_rank.patch) by @malb created at 2009-05-12 01:36:56
 
 Patch requires SPKG at:
 
@@ -67,7 +67,7 @@ archive/issue_comments_042787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5510#issuecomment-42787",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_042788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5510#issuecomment-42788",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_042789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5510#issuecomment-42789",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_042790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5510#issuecomment-42790",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_042791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5510#issuecomment-42791",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_042792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5510#issuecomment-42792",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_042793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5510#issuecomment-42793",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_042794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5510#issuecomment-42794",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_042795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5510#issuecomment-42795",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_042796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5510#issuecomment-42796",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_042797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5510#issuecomment-42797",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

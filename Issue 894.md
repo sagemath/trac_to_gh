@@ -338,7 +338,7 @@ archive/issue_comments_005503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/894#issuecomment-5503",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -351,16 +351,16 @@ I'm attaching a patch that fixes about half or more of the memory leaks above (m
 archive/issue_comments_005504.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to craigcitro.",
+    "body": "Changing assignee from mabshoff to @craigcitro.",
     "created_at": "2007-11-03T18:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/894#issuecomment-5504",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from mabshoff to craigcitro.
+Changing assignee from mabshoff to @craigcitro.
 
 
 
@@ -374,7 +374,7 @@ archive/issue_comments_005505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/894#issuecomment-5505",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_005506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/894#issuecomment-5506",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -405,16 +405,16 @@ Changing status from new to assigned.
 archive/issue_comments_005507.json:
 ```json
 {
-    "body": "Attachment [trac_894.hg](tarball://root/attachments/some-uuid/ticket894/trac_894.hg) by craigcitro created at 2007-11-03 20:13:59",
+    "body": "Attachment [trac_894.hg](tarball://root/attachments/some-uuid/ticket894/trac_894.hg) by @craigcitro created at 2007-11-03 20:13:59",
     "created_at": "2007-11-03T20:13:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/894#issuecomment-5507",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_894.hg](tarball://root/attachments/some-uuid/ticket894/trac_894.hg) by craigcitro created at 2007-11-03 20:13:59
+Attachment [trac_894.hg](tarball://root/attachments/some-uuid/ticket894/trac_894.hg) by @craigcitro created at 2007-11-03 20:13:59
 
 
 
@@ -428,7 +428,7 @@ archive/issue_comments_005508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/894#issuecomment-5508",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_005509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/894",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/894#issuecomment-5509",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

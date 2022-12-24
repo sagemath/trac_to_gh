@@ -14,7 +14,7 @@ archive/issues_000353.json:
     "title": "public sage notebook robustness",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/353",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/353
 archive/issue_comments_001711.json:
 ```json
 {
-    "body": "Changing assignee from boothby to was.",
+    "body": "Changing assignee from boothby to @williamstein.",
     "created_at": "2007-04-20T15:05:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/353#issuecomment-1711",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from boothby to was.
+Changing assignee from boothby to @williamstein.
 
 
 

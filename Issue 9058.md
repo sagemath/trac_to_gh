@@ -14,7 +14,7 @@ archive/issues_009058.json:
     "title": "Compute cores to improve subgraph_search",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9058",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -43,7 +43,7 @@ archive/issue_comments_084046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-84046",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_084047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-84047",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_084050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-84050",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_084051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-84051",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_084053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-84053",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

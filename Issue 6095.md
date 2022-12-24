@@ -3,7 +3,7 @@
 archive/issues_006095.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\ninteresting because almost digits of e.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6095\n\n",
+    "body": "Assignee: @mwhansen\n\ninteresting because almost digits of e.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6095\n\n",
     "created_at": "2009-05-20T21:20:44Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_006095.json:
     "title": "implement sloane sequence: A060302 (digits of (pi^4+pi^5))^(1/6)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6095",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 interesting because almost digits of e.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6095
 archive/issue_comments_048599.json:
 ```json
 {
-    "body": "Attachment [12164.patch](tarball://root/attachments/some-uuid/ticket6095/12164.patch) by was created at 2009-05-20 21:48:42",
+    "body": "Attachment [12164.patch](tarball://root/attachments/some-uuid/ticket6095/12164.patch) by @williamstein created at 2009-05-20 21:48:42",
     "created_at": "2009-05-20T21:48:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6095#issuecomment-48599",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [12164.patch](tarball://root/attachments/some-uuid/ticket6095/12164.patch) by was created at 2009-05-20 21:48:42
+Attachment [12164.patch](tarball://root/attachments/some-uuid/ticket6095/12164.patch) by @williamstein created at 2009-05-20 21:48:42
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_048600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6095#issuecomment-48600",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_048601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6095#issuecomment-48601",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

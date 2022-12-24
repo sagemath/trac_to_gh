@@ -3,7 +3,7 @@
 archive/issues_008939.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  malb jpflori\n\nAttached patch adds templated matrix classes for FLINT's `fmpz_poly` and `zmod_poly` structs.\n\nAt the moment there is no extra functionality provided by the classes, but fast nullspace (over the fraction field), and hopefully inverse implementations will be coming soon. In any case, this should be a good basis for implementing fast algorithms for these matrices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8939\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @malb jpflori\n\nAttached patch adds templated matrix classes for FLINT's `fmpz_poly` and `zmod_poly` structs.\n\nAt the moment there is no extra functionality provided by the classes, but fast nullspace (over the fraction field), and hopefully inverse implementations will be coming soon. In any case, this should be a good basis for implementing fast algorithms for these matrices.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8939\n\n",
     "created_at": "2010-05-09T22:52:10Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_008939.json:
     "title": "matrix classes for flint polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8939",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: jason, was
 
-CC:  malb jpflori
+CC:  @malb jpflori
 
 Attached patch adds templated matrix classes for FLINT's `fmpz_poly` and `zmod_poly` structs.
 
@@ -41,7 +41,7 @@ archive/issue_comments_082312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8939#issuecomment-82312",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_review.
 archive/issue_comments_082313.json:
 ```json
 {
-    "body": "Attachment [trac_8939-matrix_template-4.4.2.patch](tarball://root/attachments/some-uuid/ticket8939/trac_8939-matrix_template-4.4.2.patch) by burcin created at 2010-05-22 10:41:03\n\nrebased to 4.4.2",
+    "body": "Attachment [trac_8939-matrix_template-4.4.2.patch](tarball://root/attachments/some-uuid/ticket8939/trac_8939-matrix_template-4.4.2.patch) by @burcin created at 2010-05-22 10:41:03\n\nrebased to 4.4.2",
     "created_at": "2010-05-22T10:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8939#issuecomment-82313",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8939-matrix_template-4.4.2.patch](tarball://root/attachments/some-uuid/ticket8939/trac_8939-matrix_template-4.4.2.patch) by burcin created at 2010-05-22 10:41:03
+Attachment [trac_8939-matrix_template-4.4.2.patch](tarball://root/attachments/some-uuid/ticket8939/trac_8939-matrix_template-4.4.2.patch) by @burcin created at 2010-05-22 10:41:03
 
 rebased to 4.4.2
 
@@ -79,7 +79,7 @@ archive/issue_comments_082314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8939#issuecomment-82314",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_082315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8939#issuecomment-82315",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_082316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8939#issuecomment-82316",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_082317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8939#issuecomment-82317",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -162,16 +162,16 @@ The patch looks good. However, I'd prefer to have a bit more documentation.
 archive/issue_comments_082318.json:
 ```json
 {
-    "body": "Attachment [trac_8939-matrix_template-4.4.2-part2.patch](tarball://root/attachments/some-uuid/ticket8939/trac_8939-matrix_template-4.4.2-part2.patch) by burcin created at 2010-09-25 19:52:58\n\naddress referee comments",
+    "body": "Attachment [trac_8939-matrix_template-4.4.2-part2.patch](tarball://root/attachments/some-uuid/ticket8939/trac_8939-matrix_template-4.4.2-part2.patch) by @burcin created at 2010-09-25 19:52:58\n\naddress referee comments",
     "created_at": "2010-09-25T19:52:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8939#issuecomment-82318",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8939-matrix_template-4.4.2-part2.patch](tarball://root/attachments/some-uuid/ticket8939/trac_8939-matrix_template-4.4.2-part2.patch) by burcin created at 2010-09-25 19:52:58
+Attachment [trac_8939-matrix_template-4.4.2-part2.patch](tarball://root/attachments/some-uuid/ticket8939/trac_8939-matrix_template-4.4.2-part2.patch) by @burcin created at 2010-09-25 19:52:58
 
 address referee comments
 
@@ -187,7 +187,7 @@ archive/issue_comments_082319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8939#issuecomment-82319",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_082320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8939#issuecomment-82320",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_082321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8939#issuecomment-82321",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_082322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8939#issuecomment-82322",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_082323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8939#issuecomment-82323",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 

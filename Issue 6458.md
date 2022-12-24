@@ -3,7 +3,7 @@
 archive/issues_006458.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis adds a few lines to get `inverse_mod` working in the ring of integers of a relative field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6458\n\n",
+    "body": "Assignee: @williamstein\n\nThis adds a few lines to get `inverse_mod` working in the ring of integers of a relative field.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6458\n\n",
     "created_at": "2009-07-02T13:27:16Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006458.json:
     "title": "Inverse modulo an ideal in a relative number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6458",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This adds a few lines to get `inverse_mod` working in the ring of integers of a relative field.
 
@@ -37,7 +37,7 @@ archive/issue_comments_052188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6458#issuecomment-52188",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -50,16 +50,16 @@ patch against 4.1.alpha2
 archive/issue_comments_052189.json:
 ```json
 {
-    "body": "Attachment [trac_6458-relative_ideal_inverse_mod.patch](tarball://root/attachments/some-uuid/ticket6458/trac_6458-relative_ideal_inverse_mod.patch) by davidloeffler created at 2009-07-02 13:35:14",
+    "body": "Attachment [trac_6458-relative_ideal_inverse_mod.patch](tarball://root/attachments/some-uuid/ticket6458/trac_6458-relative_ideal_inverse_mod.patch) by @loefflerd created at 2009-07-02 13:35:14",
     "created_at": "2009-07-02T13:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6458#issuecomment-52189",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6458-relative_ideal_inverse_mod.patch](tarball://root/attachments/some-uuid/ticket6458/trac_6458-relative_ideal_inverse_mod.patch) by davidloeffler created at 2009-07-02 13:35:14
+Attachment [trac_6458-relative_ideal_inverse_mod.patch](tarball://root/attachments/some-uuid/ticket6458/trac_6458-relative_ideal_inverse_mod.patch) by @loefflerd created at 2009-07-02 13:35:14
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_052190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6458#issuecomment-52190",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_052191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6458#issuecomment-52191",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -117,16 +117,16 @@ Got:
 archive/issue_comments_052192.json:
 ```json
 {
-    "body": "Attachment [trac_6458-fix.patch](tarball://root/attachments/some-uuid/ticket6458/trac_6458-fix.patch) by davidloeffler created at 2009-07-14 22:04:13\n\napply after previous patch",
+    "body": "Attachment [trac_6458-fix.patch](tarball://root/attachments/some-uuid/ticket6458/trac_6458-fix.patch) by @loefflerd created at 2009-07-14 22:04:13\n\napply after previous patch",
     "created_at": "2009-07-14T22:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6458#issuecomment-52192",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6458-fix.patch](tarball://root/attachments/some-uuid/ticket6458/trac_6458-fix.patch) by davidloeffler created at 2009-07-14 22:04:13
+Attachment [trac_6458-fix.patch](tarball://root/attachments/some-uuid/ticket6458/trac_6458-fix.patch) by @loefflerd created at 2009-07-14 22:04:13
 
 apply after previous patch
 
@@ -142,7 +142,7 @@ archive/issue_comments_052193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6458#issuecomment-52193",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_052194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6458#issuecomment-52194",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

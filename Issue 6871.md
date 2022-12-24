@@ -14,7 +14,7 @@ archive/issues_006871.json:
     "title": "temporary passwords aren't temporary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6871",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: boothby
@@ -69,7 +69,7 @@ archive/issue_comments_056736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6871#issuecomment-56736",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_056737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6871",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6871#issuecomment-56737",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

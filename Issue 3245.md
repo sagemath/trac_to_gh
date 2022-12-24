@@ -3,7 +3,7 @@
 archive/issues_003245.json:
 ```json
 {
-    "body": "Assignee: was\n\nRight now, there is just coeff and coeffs while other rings have both or just coefficients.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3245\n\n",
+    "body": "Assignee: @williamstein\n\nRight now, there is just coeff and coeffs while other rings have both or just coefficients.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3245\n\n",
     "created_at": "2008-05-17T20:50:27Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003245.json:
     "title": "[with patch, needs review] provide coefficient and coefficients methods for symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3245",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Right now, there is just coeff and coeffs while other rings have both or just coefficients.
 

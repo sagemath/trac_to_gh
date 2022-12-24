@@ -3,7 +3,7 @@
 archive/issues_001969.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n> Something like %history, but which writes the output to a file.\n\nI just put it in SVN, as the new '-f flag'. This is what it looks like:\n\nIn [1]: hist -f foo\nFile 'foo' exists. Overwrite? n\nAborting.\n\nIn [2]: hist\n1: _ip.magic(\"hist -f foo\")\n2: _ip.magic(\"hist \")\n\nIn [3]: hist -r\n1: hist -f foo\n2: hist\n3: hist -r\n\nIn [4]: hist -rn\nhist -f foo\nhist\nhist -r\nhist -rn\n\nIn [5]: hist -rn -f foo\nFile 'foo' exists. Overwrite? y\n\nIn [6]: !cat foo\nhist -f foo\nhist\nhist -r\nhist -rn\nhist -rn -f foo\n\n> By the way, %hist still is preparsed in Sage.  I should have fixed\n> this long ago.  Could you remind me what you recommended I do?\n\nSee above, -r gives you the raw history always, and -n omits line numbers.\n\n\nLet me know how this works for you.\n\n -- Fernando\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1969\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n> Something like %history, but which writes the output to a file.\n\nI just put it in SVN, as the new '-f flag'. This is what it looks like:\n\nIn [1]: hist -f foo\nFile 'foo' exists. Overwrite? n\nAborting.\n\nIn [2]: hist\n1: _ip.magic(\"hist -f foo\")\n2: _ip.magic(\"hist \")\n\nIn [3]: hist -r\n1: hist -f foo\n2: hist\n3: hist -r\n\nIn [4]: hist -rn\nhist -f foo\nhist\nhist -r\nhist -rn\n\nIn [5]: hist -rn -f foo\nFile 'foo' exists. Overwrite? y\n\nIn [6]: !cat foo\nhist -f foo\nhist\nhist -r\nhist -rn\nhist -rn -f foo\n\n> By the way, %hist still is preparsed in Sage.  I should have fixed\n> this long ago.  Could you remind me what you recommended I do?\n\nSee above, -r gives you the raw history always, and -n omits line numbers.\n\n\nLet me know how this works for you.\n\n -- Fernando\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1969\n\n",
     "created_at": "2008-01-29T10:54:40Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_001969.json:
     "title": "ipython -- update to svn to get this new %hist functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1969",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```

@@ -3,7 +3,7 @@
 archive/issues_009726.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  kcrisman\n\nKeywords: RSA, educational\n\nA stand alone function srsa.py to implement an educational version of the RSA cryptosystem.This is the first native version of the RSA in SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9726\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nKeywords: RSA, educational\n\nA stand alone function srsa.py to implement an educational version of the RSA cryptosystem.This is the first native version of the RSA in SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9726\n\n",
     "created_at": "2010-08-11T19:09:43Z",
     "labels": [
         "cryptography",
@@ -18,7 +18,7 @@ archive/issues_009726.json:
 ```
 Assignee: mvngu
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Keywords: RSA, educational
 
@@ -76,7 +76,7 @@ archive/issue_comments_095060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9726#issuecomment-95060",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_095061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9726#issuecomment-95061",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_095065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9726",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9726#issuecomment-95065",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

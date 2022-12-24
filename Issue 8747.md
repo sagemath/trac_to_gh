@@ -3,7 +3,7 @@
 archive/issues_008747.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nThanks to #8742 one can speed up TestSuite by using `LazyFormat` to report failure. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8747\n\n",
+    "body": "Assignee: @hivert\n\nThanks to #8742 one can speed up TestSuite by using `LazyFormat` to report failure. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8747\n\n",
     "created_at": "2010-04-22T19:58:57Z",
     "labels": [
         "categories",
@@ -14,10 +14,10 @@ archive/issues_008747.json:
     "title": "Speedup testsuite using LazyFormat",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8747",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 Thanks to #8742 one can speed up TestSuite by using `LazyFormat` to report failure. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8747
 archive/issue_comments_080027.json:
 ```json
 {
-    "body": "Attachment [trac_8747-testsuite-speedup-fh.patch](tarball://root/attachments/some-uuid/ticket8747/trac_8747-testsuite-speedup-fh.patch) by hivert created at 2010-04-30 21:53:30",
+    "body": "Attachment [trac_8747-testsuite-speedup-fh.patch](tarball://root/attachments/some-uuid/ticket8747/trac_8747-testsuite-speedup-fh.patch) by @hivert created at 2010-04-30 21:53:30",
     "created_at": "2010-04-30T21:53:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80027",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8747-testsuite-speedup-fh.patch](tarball://root/attachments/some-uuid/ticket8747/trac_8747-testsuite-speedup-fh.patch) by hivert created at 2010-04-30 21:53:30
+Attachment [trac_8747-testsuite-speedup-fh.patch](tarball://root/attachments/some-uuid/ticket8747/trac_8747-testsuite-speedup-fh.patch) by @hivert created at 2010-04-30 21:53:30
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_080028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80028",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_080029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80029",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_080030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80030",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_080031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80031",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_080032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80032",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_080033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80033",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

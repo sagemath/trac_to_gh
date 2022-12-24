@@ -14,7 +14,7 @@ archive/issues_005860.json:
     "title": "delete sage/catalogue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5860",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5860
 archive/issue_comments_046297.json:
 ```json
 {
-    "body": "Attachment [trac_5860.patch](tarball://root/attachments/some-uuid/ticket5860/trac_5860.patch) by was created at 2009-04-23 05:09:38",
+    "body": "Attachment [trac_5860.patch](tarball://root/attachments/some-uuid/ticket5860/trac_5860.patch) by @williamstein created at 2009-04-23 05:09:38",
     "created_at": "2009-04-23T05:09:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5860#issuecomment-46297",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5860.patch](tarball://root/attachments/some-uuid/ticket5860/trac_5860.patch) by was created at 2009-04-23 05:09:38
+Attachment [trac_5860.patch](tarball://root/attachments/some-uuid/ticket5860/trac_5860.patch) by @williamstein created at 2009-04-23 05:09:38
 
 
 

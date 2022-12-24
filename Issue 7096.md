@@ -3,7 +3,7 @@
 archive/issues_007096.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  shumow@gmail.com\n\nKeywords: elliptic curve isogeny\n\n\n```\nsage: p = 1019\nsage: F = GF(p)\nsage: E = EllipticCurve(F,[1,-1,0,1,1])\nsage: psi = E.division_polynomial(7).factor()[3][0]\nsage: phi = E.isogeny(kernel=psi)\nsage: assert phi.degree()==7\nsage: phi.dual()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/jec/.sage/temp/selmer/14232/_home_jec__sage_init_sage_0.py in <module>()\n\n/home/jec/sage-4.1.2.rc0/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_curve_isogeny.pyc in dual(self)\n   2998\n   2999         phi_hat.set_pre_isomorphism(pre_isom)\n-> 3000         phi_hat.set_post_isomorphism(post_isom)\n   3001\n   3002         self.__dual = phi_hat\n\n/home/jec/sage-4.1.2.rc0/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_curve_isogeny.pyc in set_post_isomorphism(self, postWI)\n   2627\n   2628         if (self.__E2 != WIdom):\n-> 2629             raise ValueError, \"Invalid parameter: isomorphism must have domain curve equal to this isogenies'codomain.\"\n   2630\n   2631         if (None == self.__post_isomorphism):\n\nValueError: Invalid parameter: isomorphism must have domain curve equal to this isogenies' codomain.\n```\n\n\nThis looks like something which should be easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7096\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  shumow@gmail.com\n\nKeywords: elliptic curve isogeny\n\n\n```\nsage: p = 1019\nsage: F = GF(p)\nsage: E = EllipticCurve(F,[1,-1,0,1,1])\nsage: psi = E.division_polynomial(7).factor()[3][0]\nsage: phi = E.isogeny(kernel=psi)\nsage: assert phi.degree()==7\nsage: phi.dual()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/jec/.sage/temp/selmer/14232/_home_jec__sage_init_sage_0.py in <module>()\n\n/home/jec/sage-4.1.2.rc0/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_curve_isogeny.pyc in dual(self)\n   2998\n   2999         phi_hat.set_pre_isomorphism(pre_isom)\n-> 3000         phi_hat.set_post_isomorphism(post_isom)\n   3001\n   3002         self.__dual = phi_hat\n\n/home/jec/sage-4.1.2.rc0/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_curve_isogeny.pyc in set_post_isomorphism(self, postWI)\n   2627\n   2628         if (self.__E2 != WIdom):\n-> 2629             raise ValueError, \"Invalid parameter: isomorphism must have domain curve equal to this isogenies'codomain.\"\n   2630\n   2631         if (None == self.__post_isomorphism):\n\nValueError: Invalid parameter: isomorphism must have domain curve equal to this isogenies' codomain.\n```\n\n\nThis looks like something which should be easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7096\n\n",
     "created_at": "2009-10-02T15:05:02Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_007096.json:
     "title": "bug in dual isogeny computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7096",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 CC:  shumow@gmail.com
 
@@ -68,16 +68,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7096
 archive/issue_comments_058697.json:
 ```json
 {
-    "body": "Remove assignee davidloeffler.",
+    "body": "Remove assignee @loefflerd.",
     "created_at": "2009-10-09T09:10:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58697",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Remove assignee davidloeffler.
+Remove assignee @loefflerd.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_058698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58698",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_058699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58699",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_058700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58700",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -170,16 +170,16 @@ After 1 hour of chasing through the code, I was not able to find the error. I in
 archive/issue_comments_058701.json:
 ```json
 {
-    "body": "Attachment [trac_7096.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096.patch) by wuthrich created at 2009-10-17 23:10:34\n\napplies to 4.1.2. after trac #6886. this is only a provisional patch.",
+    "body": "Attachment [trac_7096.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096.patch) by @categorie created at 2009-10-17 23:10:34\n\napplies to 4.1.2. after trac #6886. this is only a provisional patch.",
     "created_at": "2009-10-17T23:10:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58701",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_7096.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096.patch) by wuthrich created at 2009-10-17 23:10:34
+Attachment [trac_7096.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096.patch) by @categorie created at 2009-10-17 23:10:34
 
 applies to 4.1.2. after trac #6886. this is only a provisional patch.
 
@@ -195,7 +195,7 @@ archive/issue_comments_058702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58702",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_058703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58703",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_058704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58704",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_058705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58705",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_058706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58706",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -346,7 +346,7 @@ archive/issue_comments_058707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58707",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -359,16 +359,16 @@ The problem is that most errors go back to problems for the `EllipticCurveIsogen
 archive/issue_comments_058708.json:
 ```json
 {
-    "body": "Attachment [trac_7096_2.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_2.patch) by wuthrich created at 2009-10-29 13:37:28\n\nAnother preliminary version. Replaces the previous patch.",
+    "body": "Attachment [trac_7096_2.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_2.patch) by @categorie created at 2009-10-29 13:37:28\n\nAnother preliminary version. Replaces the previous patch.",
     "created_at": "2009-10-29T13:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58708",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_7096_2.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_2.patch) by wuthrich created at 2009-10-29 13:37:28
+Attachment [trac_7096_2.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_2.patch) by @categorie created at 2009-10-29 13:37:28
 
 Another preliminary version. Replaces the previous patch.
 
@@ -384,7 +384,7 @@ archive/issue_comments_058709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58709",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -423,16 +423,16 @@ Note that this ticket also includes the correction asked for in #7307.
 archive/issue_comments_058710.json:
 ```json
 {
-    "body": "Attachment [trac_7096_3.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_3.patch) by wuthrich created at 2009-11-01 14:29:56\n\npatch for this ticket exported against 4.2.alpha1. (in particular after #6886). This patch should be reviewed while the previously submitted should be ignored.",
+    "body": "Attachment [trac_7096_3.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_3.patch) by @categorie created at 2009-11-01 14:29:56\n\npatch for this ticket exported against 4.2.alpha1. (in particular after #6886). This patch should be reviewed while the previously submitted should be ignored.",
     "created_at": "2009-11-01T14:29:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58710",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_7096_3.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_3.patch) by wuthrich created at 2009-11-01 14:29:56
+Attachment [trac_7096_3.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_3.patch) by @categorie created at 2009-11-01 14:29:56
 
 patch for this ticket exported against 4.2.alpha1. (in particular after #6886). This patch should be reviewed while the previously submitted should be ignored.
 
@@ -448,7 +448,7 @@ archive/issue_comments_058711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58711",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_058712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58712",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_058713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58713",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_058714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58714",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -520,7 +520,7 @@ archive/issue_comments_058715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58715",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_058716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58716",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -551,16 +551,16 @@ After writing the above I went ahead anyway and read the patch -- when ell_wp.py
 archive/issue_comments_058717.json:
 ```json
 {
-    "body": "Attachment [trac_7096_4.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_4.patch) by wuthrich created at 2009-11-01 15:19:43\n\nReplaces all previous patches.",
+    "body": "Attachment [trac_7096_4.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_4.patch) by @categorie created at 2009-11-01 15:19:43\n\nReplaces all previous patches.",
     "created_at": "2009-11-01T15:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58717",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_7096_4.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_4.patch) by wuthrich created at 2009-11-01 15:19:43
+Attachment [trac_7096_4.patch](tarball://root/attachments/some-uuid/ticket7096/trac_7096_4.patch) by @categorie created at 2009-11-01 15:19:43
 
 Replaces all previous patches.
 
@@ -576,7 +576,7 @@ archive/issue_comments_058718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58718",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_058719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58719",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -612,7 +612,7 @@ archive/issue_comments_058720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58720",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -632,7 +632,7 @@ archive/issue_comments_058721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58721",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -652,7 +652,7 @@ archive/issue_comments_058722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7096#issuecomment-58722",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

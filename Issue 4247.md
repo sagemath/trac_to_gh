@@ -3,7 +3,7 @@
 archive/issues_004247.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis works:\n\n```\nsage: text(\"sage\", (0,0), rgbcolor=(0r,0r,0r)).save(SAGE_TMP + 'a.pdf')\n```\n\nbut this doesn't (big confusing traceback):\n\n```\nsage: text(\"sage\", (0,0), rgbcolor=(0,0,0)).save(SAGE_TMP + 'a.pdf')\n```\n\n\nThe fix will be to make sure text (or whatever) normalizes the rgb input\nparams to all be of type float. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4247\n\n",
+    "body": "Assignee: @williamstein\n\nThis works:\n\n```\nsage: text(\"sage\", (0,0), rgbcolor=(0r,0r,0r)).save(SAGE_TMP + 'a.pdf')\n```\n\nbut this doesn't (big confusing traceback):\n\n```\nsage: text(\"sage\", (0,0), rgbcolor=(0,0,0)).save(SAGE_TMP + 'a.pdf')\n```\n\n\nThe fix will be to make sure text (or whatever) normalizes the rgb input\nparams to all be of type float. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4247\n\n",
     "created_at": "2008-10-06T21:25:32Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004247.json:
     "title": "plotting -- bug in text and pdf export",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4247",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This works:
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4247
 archive/issue_comments_030879.json:
 ```json
 {
-    "body": "Attachment [trac-4247.patch](tarball://root/attachments/some-uuid/ticket4247/trac-4247.patch) by was created at 2008-10-06 21:39:56",
+    "body": "Attachment [trac-4247.patch](tarball://root/attachments/some-uuid/ticket4247/trac-4247.patch) by @williamstein created at 2008-10-06 21:39:56",
     "created_at": "2008-10-06T21:39:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4247#issuecomment-30879",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-4247.patch](tarball://root/attachments/some-uuid/ticket4247/trac-4247.patch) by was created at 2008-10-06 21:39:56
+Attachment [trac-4247.patch](tarball://root/attachments/some-uuid/ticket4247/trac-4247.patch) by @williamstein created at 2008-10-06 21:39:56
 
 
 
@@ -64,16 +64,16 @@ Attachment [trac-4247.patch](tarball://root/attachments/some-uuid/ticket4247/tra
 archive/issue_comments_030880.json:
 ```json
 {
-    "body": "Attachment [trac_4247.patch](tarball://root/attachments/some-uuid/ticket4247/trac_4247.patch) by mhansen created at 2008-10-06 21:53:05\n\nApply only trac_4247.patch -- it is rebased against the latest plot.py.  Otherwise, it looks good to me.",
+    "body": "Attachment [trac_4247.patch](tarball://root/attachments/some-uuid/ticket4247/trac_4247.patch) by @mwhansen created at 2008-10-06 21:53:05\n\nApply only trac_4247.patch -- it is rebased against the latest plot.py.  Otherwise, it looks good to me.",
     "created_at": "2008-10-06T21:53:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4247",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4247#issuecomment-30880",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4247.patch](tarball://root/attachments/some-uuid/ticket4247/trac_4247.patch) by mhansen created at 2008-10-06 21:53:05
+Attachment [trac_4247.patch](tarball://root/attachments/some-uuid/ticket4247/trac_4247.patch) by @mwhansen created at 2008-10-06 21:53:05
 
 Apply only trac_4247.patch -- it is rebased against the latest plot.py.  Otherwise, it looks good to me.
 

@@ -14,7 +14,7 @@ archive/issues_002860.json:
     "title": "easy-to-fix bug in html.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2860",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -116,16 +116,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2860
 archive/issue_comments_019626.json:
 ```json
 {
-    "body": "Attachment [sage-2860.patch](tarball://root/attachments/some-uuid/ticket2860/sage-2860.patch) by was created at 2008-05-11 07:49:56\n\nAttached patch fixes this.  \n\nNobody has a test case to reproduce the claimed problem.  So I read\nthe code, vastly improved its documentation, and did make a change that\nlogically must fix exactly the reported bug.",
+    "body": "Attachment [sage-2860.patch](tarball://root/attachments/some-uuid/ticket2860/sage-2860.patch) by @williamstein created at 2008-05-11 07:49:56\n\nAttached patch fixes this.  \n\nNobody has a test case to reproduce the claimed problem.  So I read\nthe code, vastly improved its documentation, and did make a change that\nlogically must fix exactly the reported bug.",
     "created_at": "2008-05-11T07:49:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2860#issuecomment-19626",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2860.patch](tarball://root/attachments/some-uuid/ticket2860/sage-2860.patch) by was created at 2008-05-11 07:49:56
+Attachment [sage-2860.patch](tarball://root/attachments/some-uuid/ticket2860/sage-2860.patch) by @williamstein created at 2008-05-11 07:49:56
 
 Attached patch fixes this.  
 

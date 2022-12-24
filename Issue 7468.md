@@ -3,7 +3,7 @@
 archive/issues_007468.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mpatel\n\nThis package will be used for future testing. Adding another package to a package was also done with the Trac package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7468\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777\n\nThis package will be used for future testing. Adding another package to a package was also done with the Trac package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7468\n\n",
     "created_at": "2009-11-15T07:26:48Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007468.json:
     "title": "SageNB - Include `zope.testbrowser` and its dependencies in the SageNB package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7468",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
 
-CC:  mpatel
+CC:  @qed777
 
 This package will be used for future testing. Adding another package to a package was also done with the Trac package.
 
@@ -39,7 +39,7 @@ archive/issue_comments_062900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7468#issuecomment-62900",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -52,16 +52,16 @@ Adds `zope.testbrowser` to the package's dependencies and makes `spkg-dist` auto
 archive/issue_comments_062901.json:
 ```json
 {
-    "body": "Attachment [trac_7468-zope.testbrowser.patch](tarball://root/attachments/some-uuid/ticket7468/trac_7468-zope.testbrowser.patch) by timdumol created at 2009-11-15 07:31:10\n\nThis should do the trick.",
+    "body": "Attachment [trac_7468-zope.testbrowser.patch](tarball://root/attachments/some-uuid/ticket7468/trac_7468-zope.testbrowser.patch) by @TimDumol created at 2009-11-15 07:31:10\n\nThis should do the trick.",
     "created_at": "2009-11-15T07:31:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7468#issuecomment-62901",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7468-zope.testbrowser.patch](tarball://root/attachments/some-uuid/ticket7468/trac_7468-zope.testbrowser.patch) by timdumol created at 2009-11-15 07:31:10
+Attachment [trac_7468-zope.testbrowser.patch](tarball://root/attachments/some-uuid/ticket7468/trac_7468-zope.testbrowser.patch) by @TimDumol created at 2009-11-15 07:31:10
 
 This should do the trick.
 
@@ -77,7 +77,7 @@ archive/issue_comments_062902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7468#issuecomment-62902",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_062903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7468#issuecomment-62903",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_062904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7468#issuecomment-62904",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_062905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7468#issuecomment-62905",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_062906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7468#issuecomment-62906",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_062907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7468#issuecomment-62907",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_062908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7468#issuecomment-62908",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_062909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7468#issuecomment-62909",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_062910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7468#issuecomment-62910",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_062911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7468#issuecomment-62911",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_062912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7468#issuecomment-62912",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

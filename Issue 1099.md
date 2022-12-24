@@ -3,7 +3,7 @@
 archive/issues_001099.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\nCurrently there are four different functions to delete things from a graph: delete_edge, delete_edges, delete_vertex, and delete_vertices.  How about we consolidate these into one function, \"delete\", that looks like this:\n\ndelete(vertices=list_of_vertices, edges=list_of_edges) deletes the vertices specified, then the edges specified.\n\nSo:\n\n* delete_vertex(v) == delete(vertices=[v])\n\n* delete_vertices(list) == delete(vertices=list)\n\n* delete_edge(e) == delete(edges=[e])\n\n* delete_edges(list) == delete(edges=list)\n\n* deleting vertices and edges is accomplished by passing both parameters in.\n\nThis idea may be completely irrational, but I thought I'd throw it out in an effort to consolidate functions and make the interface simpler to remember.  What do you think?\n\n(I'm ignoring delete_multiedge here, though we could probably include that in as an option to delete).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1099\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nCurrently there are four different functions to delete things from a graph: delete_edge, delete_edges, delete_vertex, and delete_vertices.  How about we consolidate these into one function, \"delete\", that looks like this:\n\ndelete(vertices=list_of_vertices, edges=list_of_edges) deletes the vertices specified, then the edges specified.\n\nSo:\n\n* delete_vertex(v) == delete(vertices=[v])\n\n* delete_vertices(list) == delete(vertices=list)\n\n* delete_edge(e) == delete(edges=[e])\n\n* delete_edges(list) == delete(edges=list)\n\n* deleting vertices and edges is accomplished by passing both parameters in.\n\nThis idea may be completely irrational, but I thought I'd throw it out in an effort to consolidate functions and make the interface simpler to remember.  What do you think?\n\n(I'm ignoring delete_multiedge here, though we could probably include that in as an option to delete).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1099\n\n",
     "created_at": "2007-11-04T03:30:51Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001099.json:
     "title": "graphs: consolidating delete functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1099",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1099
 archive/issue_comments_006641.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-17T15:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6641",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_006642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6642",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_006643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6643",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -107,16 +107,16 @@ Changing keywords from "graphs" to "".
 archive/issue_comments_006644.json:
 ```json
 {
-    "body": "Attachment [delete.patch](tarball://root/attachments/some-uuid/ticket1099/delete.patch) by rlm created at 2008-01-27 03:11:02\n\nDefines the delete function, but does not remove any other functions",
+    "body": "Attachment [delete.patch](tarball://root/attachments/some-uuid/ticket1099/delete.patch) by @rlmill created at 2008-01-27 03:11:02\n\nDefines the delete function, but does not remove any other functions",
     "created_at": "2008-01-27T03:11:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6644",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [delete.patch](tarball://root/attachments/some-uuid/ticket1099/delete.patch) by rlm created at 2008-01-27 03:11:02
+Attachment [delete.patch](tarball://root/attachments/some-uuid/ticket1099/delete.patch) by @rlmill created at 2008-01-27 03:11:02
 
 Defines the delete function, but does not remove any other functions
 
@@ -132,7 +132,7 @@ archive/issue_comments_006645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6645",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_006646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6646",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_006648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6648",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -215,16 +215,16 @@ I propose the following:
 archive/issue_comments_006649.json:
 ```json
 {
-    "body": "Attachment [delete-2.patch](tarball://root/attachments/some-uuid/ticket1099/delete-2.patch) by rlm created at 2008-01-28 19:08:56\n\nOn top of delete.patch",
+    "body": "Attachment [delete-2.patch](tarball://root/attachments/some-uuid/ticket1099/delete-2.patch) by @rlmill created at 2008-01-28 19:08:56\n\nOn top of delete.patch",
     "created_at": "2008-01-28T19:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6649",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [delete-2.patch](tarball://root/attachments/some-uuid/ticket1099/delete-2.patch) by rlm created at 2008-01-28 19:08:56
+Attachment [delete-2.patch](tarball://root/attachments/some-uuid/ticket1099/delete-2.patch) by @rlmill created at 2008-01-28 19:08:56
 
 On top of delete.patch
 
@@ -235,16 +235,16 @@ On top of delete.patch
 archive/issue_comments_006650.json:
 ```json
 {
-    "body": "Attachment [delete-3.patch](tarball://root/attachments/some-uuid/ticket1099/delete-3.patch) by rlm created at 2008-01-28 19:09:34\n\nOn top of delete-2.patch",
+    "body": "Attachment [delete-3.patch](tarball://root/attachments/some-uuid/ticket1099/delete-3.patch) by @rlmill created at 2008-01-28 19:09:34\n\nOn top of delete-2.patch",
     "created_at": "2008-01-28T19:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6650",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [delete-3.patch](tarball://root/attachments/some-uuid/ticket1099/delete-3.patch) by rlm created at 2008-01-28 19:09:34
+Attachment [delete-3.patch](tarball://root/attachments/some-uuid/ticket1099/delete-3.patch) by @rlmill created at 2008-01-28 19:09:34
 
 On top of delete-2.patch
 
@@ -255,16 +255,16 @@ On top of delete-2.patch
 archive/issue_comments_006651.json:
 ```json
 {
-    "body": "Attachment [delete-4.patch](tarball://root/attachments/some-uuid/ticket1099/delete-4.patch) by jason created at 2008-01-28 20:59:36\n\non top of delete-3.patch",
+    "body": "Attachment [delete-4.patch](tarball://root/attachments/some-uuid/ticket1099/delete-4.patch) by @jasongrout created at 2008-01-28 20:59:36\n\non top of delete-3.patch",
     "created_at": "2008-01-28T20:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6651",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [delete-4.patch](tarball://root/attachments/some-uuid/ticket1099/delete-4.patch) by jason created at 2008-01-28 20:59:36
+Attachment [delete-4.patch](tarball://root/attachments/some-uuid/ticket1099/delete-4.patch) by @jasongrout created at 2008-01-28 20:59:36
 
 on top of delete-3.patch
 
@@ -280,7 +280,7 @@ archive/issue_comments_006652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6652",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_006653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6653",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_006654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6654",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_006656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6656",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_006658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6658",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

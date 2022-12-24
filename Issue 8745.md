@@ -3,7 +3,7 @@
 archive/issues_008745.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  wdj\n\nThis patch adds a function to block_design returning a Steiner Triple System on any number of vertices n congruent to 1 or 3 modulo 6. There is none otherwise :-)\n\nThe function is pretty short, a satisfiable decomposition being explicitely given in the reference : \nhttp://www.utu.fi/~honkala/designs.ps\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8745\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @wdjoyner\n\nThis patch adds a function to block_design returning a Steiner Triple System on any number of vertices n congruent to 1 or 3 modulo 6. There is none otherwise :-)\n\nThe function is pretty short, a satisfiable decomposition being explicitely given in the reference : \nhttp://www.utu.fi/~honkala/designs.ps\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8745\n\n",
     "created_at": "2010-04-22T12:31:11Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_008745.json:
     "title": "Steiner Triple Systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8745",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: sage-combinat
 
-CC:  wdj
+CC:  @wdjoyner
 
 This patch adds a function to block_design returning a Steiner Triple System on any number of vertices n congruent to 1 or 3 modulo 6. There is none otherwise :-)
 
@@ -44,7 +44,7 @@ archive/issue_comments_080013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8745#issuecomment-80013",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -57,16 +57,16 @@ Changing status from new to needs_review.
 archive/issue_comments_080014.json:
 ```json
 {
-    "body": "Attachment [trac_8745.patch](tarball://root/attachments/some-uuid/ticket8745/trac_8745.patch) by ncohen created at 2010-04-22 12:34:01",
+    "body": "Attachment [trac_8745.patch](tarball://root/attachments/some-uuid/ticket8745/trac_8745.patch) by @nathanncohen created at 2010-04-22 12:34:01",
     "created_at": "2010-04-22T12:34:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8745#issuecomment-80014",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8745.patch](tarball://root/attachments/some-uuid/ticket8745/trac_8745.patch) by ncohen created at 2010-04-22 12:34:01
+Attachment [trac_8745.patch](tarball://root/attachments/some-uuid/ticket8745/trac_8745.patch) by @nathanncohen created at 2010-04-22 12:34:01
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_080015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8745#issuecomment-80015",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_080016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8745#issuecomment-80016",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_080017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8745#issuecomment-80017",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_080018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8745",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8745#issuecomment-80018",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

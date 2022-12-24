@@ -3,7 +3,7 @@
 archive/issues_000614.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nBad doctest:\nsage: 2r**(SR(2)-1-1r)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/614\n\n",
+    "body": "Assignee: @mwhansen\n\nBad doctest:\nsage: 2r**(SR(2)-1-1r)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/614\n\n",
     "created_at": "2007-09-07T04:32:11Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_000614.json:
     "title": "structure/element.pyx:  non-integral exponents not supported error in doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/614",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Bad doctest:
 sage: 2r**(SR(2)-1-1r)
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/614
 archive/issue_comments_003153.json:
 ```json
 {
-    "body": "Attachment [614.patch](tarball://root/attachments/some-uuid/ticket614/614.patch) by mhansen created at 2007-09-07 04:33:12\n\nPatch attached.",
+    "body": "Attachment [614.patch](tarball://root/attachments/some-uuid/ticket614/614.patch) by @mwhansen created at 2007-09-07 04:33:12\n\nPatch attached.",
     "created_at": "2007-09-07T04:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/614#issuecomment-3153",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [614.patch](tarball://root/attachments/some-uuid/ticket614/614.patch) by mhansen created at 2007-09-07 04:33:12
+Attachment [614.patch](tarball://root/attachments/some-uuid/ticket614/614.patch) by @mwhansen created at 2007-09-07 04:33:12
 
 Patch attached.
 
@@ -59,7 +59,7 @@ archive/issue_comments_003154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/614#issuecomment-3154",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

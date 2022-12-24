@@ -3,7 +3,7 @@
 archive/issues_007440.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was david.kirkby@onetel.net\n\nI tried to build the valgrind_3.3.1 spkg on ubuntu-9.10 and it quickly fails with \n\n```\nconfigure: error: Valgrind requires glibc version 2.2 - 2.7\nerror configuring valgrind 3.3.1\n\nreal    0m10.843s\nuser    0m2.928s\nsys     0m6.640s\nsage: An error occurred while installing valgrind_3.3.1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7440\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein david.kirkby@onetel.net\n\nI tried to build the valgrind_3.3.1 spkg on ubuntu-9.10 and it quickly fails with \n\n```\nconfigure: error: Valgrind requires glibc version 2.2 - 2.7\nerror configuring valgrind 3.3.1\n\nreal    0m10.843s\nuser    0m2.928s\nsys     0m6.640s\nsage: An error occurred while installing valgrind_3.3.1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7440\n\n",
     "created_at": "2009-11-12T05:40:01Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_007440.json:
     "title": "optional valgrind spkg doesn't build with newer GCC's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7440",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  was david.kirkby@onetel.net
+CC:  @williamstein david.kirkby@onetel.net
 
 I tried to build the valgrind_3.3.1 spkg on ubuntu-9.10 and it quickly fails with 
 
@@ -50,7 +50,7 @@ archive/issue_comments_062614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62614",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_062615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62615",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_062616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62616",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_062617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62617",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_062618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62618",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_062619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62619",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_062620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62620",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_062621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62621",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_062624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62624",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_062625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62625",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_062626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62626",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -495,7 +495,7 @@ archive/issue_comments_062632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62632",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -513,7 +513,7 @@ archive/issue_comments_062633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62633",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -574,7 +574,7 @@ archive/issue_comments_062636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7440#issuecomment-62636",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

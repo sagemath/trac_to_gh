@@ -3,7 +3,7 @@
 archive/issues_009615.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  bober craigcitro cremona mrubinst@math.uwaterloo.ca mpatel mvngu rishi ylchapuy rbeezer\n\nKeywords: lcalc\n\nDoctest failures in alpha1: https://groups.google.com/group/sage-release/msg/8807ed7073c6793f :\n\n```\nFile \"/scratch/scratch/schilly/sage/sage-4.5.2.alpha1/devel/sage/sage/\nlibs/lcalc/lcalc_Lfunction.pyx\", line 780:\n    sage: L.value(0.5)\nExpected:\n    0\nGot:\n    -1.28235854574334e-17\n----------------------------------------------- \n```\n\nThis is related to #5396.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9615\n\n",
+    "body": "Assignee: mvngu\n\nCC:  bober @craigcitro @JohnCremona mrubinst@math.uwaterloo.ca @qed777 mvngu @rishikesha ylchapuy @rbeezer\n\nKeywords: lcalc\n\nDoctest failures in alpha1: https://groups.google.com/group/sage-release/msg/8807ed7073c6793f :\n\n```\nFile \"/scratch/scratch/schilly/sage/sage-4.5.2.alpha1/devel/sage/sage/\nlibs/lcalc/lcalc_Lfunction.pyx\", line 780:\n    sage: L.value(0.5)\nExpected:\n    0\nGot:\n    -1.28235854574334e-17\n----------------------------------------------- \n```\n\nThis is related to #5396.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9615\n\n",
     "created_at": "2010-07-28T02:41:49Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009615.json:
     "title": "doctest failures with lcalc functions in 4.5.2.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9615",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: mvngu
 
-CC:  bober craigcitro cremona mrubinst@math.uwaterloo.ca mpatel mvngu rishi ylchapuy rbeezer
+CC:  bober @craigcitro @JohnCremona mrubinst@math.uwaterloo.ca @qed777 mvngu @rishikesha ylchapuy @rbeezer
 
 Keywords: lcalc
 
@@ -56,7 +56,7 @@ archive/issue_comments_093107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93107",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -84,16 +84,16 @@ From sage-release:
 archive/issue_comments_093108.json:
 ```json
 {
-    "body": "Attachment [9615.patch](tarball://root/attachments/some-uuid/ticket9615/9615.patch) by rishi created at 2010-07-28 12:00:01",
+    "body": "Attachment [9615.patch](tarball://root/attachments/some-uuid/ticket9615/9615.patch) by @rishikesha created at 2010-07-28 12:00:01",
     "created_at": "2010-07-28T12:00:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93108",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [9615.patch](tarball://root/attachments/some-uuid/ticket9615/9615.patch) by rishi created at 2010-07-28 12:00:01
+Attachment [9615.patch](tarball://root/attachments/some-uuid/ticket9615/9615.patch) by @rishikesha created at 2010-07-28 12:00:01
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_093109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93109",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -120,16 +120,16 @@ I did not check my email before creating a duplicate ticket and submitting a pat
 archive/issue_comments_093110.json:
 ```json
 {
-    "body": "Changing assignee from mvngu to rishi.",
+    "body": "Changing assignee from mvngu to @rishikesha.",
     "created_at": "2010-07-28T12:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93110",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Changing assignee from mvngu to rishi.
+Changing assignee from mvngu to @rishikesha.
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_093111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93111",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_093112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93112",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -176,16 +176,16 @@ Changing status from new to needs_review.
 archive/issue_comments_093113.json:
 ```json
 {
-    "body": "Attachment [9615.2.patch](tarball://root/attachments/some-uuid/ticket9615/9615.2.patch) by mpatel created at 2010-07-28 23:08:06\n\nTicket number and somewhat more general comment in commit string.  Apply only this patch.",
+    "body": "Attachment [9615.2.patch](tarball://root/attachments/some-uuid/ticket9615/9615.2.patch) by @qed777 created at 2010-07-28 23:08:06\n\nTicket number and somewhat more general comment in commit string.  Apply only this patch.",
     "created_at": "2010-07-28T23:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93113",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [9615.2.patch](tarball://root/attachments/some-uuid/ticket9615/9615.2.patch) by mpatel created at 2010-07-28 23:08:06
+Attachment [9615.2.patch](tarball://root/attachments/some-uuid/ticket9615/9615.2.patch) by @qed777 created at 2010-07-28 23:08:06
 
 Ticket number and somewhat more general comment in commit string.  Apply only this patch.
 
@@ -201,7 +201,7 @@ archive/issue_comments_093114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93114",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_093115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93115",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_093116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93116",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_093117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93117",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_093118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93118",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_093119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93119",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_093120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93120",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_093121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93121",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -401,16 +401,16 @@ Add a note with the ticket number.  Apply on top of [attachment:9615.2.patch]
 archive/issue_comments_093122.json:
 ```json
 {
-    "body": "Attachment [trac_9615-lcalc_doctest_note.patch](tarball://root/attachments/some-uuid/ticket9615/trac_9615-lcalc_doctest_note.patch) by mpatel created at 2010-07-29 05:56:50\n\nUnless anyone objects, I'm changing the status to *positive_review* and merging\n\n* [attachment:9615.2.patch]\n* [attachment:trac_9615-lcalc_doctest_note.patch]\n\nin 4.5.2.rc0.  The latter, which someone should review, follows up on [comment:7 Leif's suggestion].  Or should I exclude it?",
+    "body": "Attachment [trac_9615-lcalc_doctest_note.patch](tarball://root/attachments/some-uuid/ticket9615/trac_9615-lcalc_doctest_note.patch) by @qed777 created at 2010-07-29 05:56:50\n\nUnless anyone objects, I'm changing the status to *positive_review* and merging\n\n* [attachment:9615.2.patch]\n* [attachment:trac_9615-lcalc_doctest_note.patch]\n\nin 4.5.2.rc0.  The latter, which someone should review, follows up on [comment:7 Leif's suggestion].  Or should I exclude it?",
     "created_at": "2010-07-29T05:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93122",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9615-lcalc_doctest_note.patch](tarball://root/attachments/some-uuid/ticket9615/trac_9615-lcalc_doctest_note.patch) by mpatel created at 2010-07-29 05:56:50
+Attachment [trac_9615-lcalc_doctest_note.patch](tarball://root/attachments/some-uuid/ticket9615/trac_9615-lcalc_doctest_note.patch) by @qed777 created at 2010-07-29 05:56:50
 
 Unless anyone objects, I'm changing the status to *positive_review* and merging
 
@@ -431,7 +431,7 @@ archive/issue_comments_093123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93123",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_093124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93124",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -467,7 +467,7 @@ archive/issue_comments_093125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93125",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_093126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93126",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -522,16 +522,16 @@ But now it's too late...
 archive/issue_comments_093127.json:
 ```json
 {
-    "body": "Attachment [trac_9615-lcalc_doctest_note.2.patch](tarball://root/attachments/some-uuid/ticket9615/trac_9615-lcalc_doctest_note.2.patch) by mpatel created at 2010-08-01 08:12:23\n\nUse Leif's better note.  Replaces previous version.  Apply on top of [attachment:9615.2.patch]",
+    "body": "Attachment [trac_9615-lcalc_doctest_note.2.patch](tarball://root/attachments/some-uuid/ticket9615/trac_9615-lcalc_doctest_note.2.patch) by @qed777 created at 2010-08-01 08:12:23\n\nUse Leif's better note.  Replaces previous version.  Apply on top of [attachment:9615.2.patch]",
     "created_at": "2010-08-01T08:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93127",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9615-lcalc_doctest_note.2.patch](tarball://root/attachments/some-uuid/ticket9615/trac_9615-lcalc_doctest_note.2.patch) by mpatel created at 2010-08-01 08:12:23
+Attachment [trac_9615-lcalc_doctest_note.2.patch](tarball://root/attachments/some-uuid/ticket9615/trac_9615-lcalc_doctest_note.2.patch) by @qed777 created at 2010-08-01 08:12:23
 
 Use Leif's better note.  Replaces previous version.  Apply on top of [attachment:9615.2.patch]
 
@@ -547,7 +547,7 @@ archive/issue_comments_093128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9615",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9615#issuecomment-93128",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009059.json:
     "title": "some shortcuts for \"is_H-free\" tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9059",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -46,7 +46,7 @@ archive/issue_comments_084054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9059#issuecomment-84054",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_084055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9059#issuecomment-84055",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_084056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9059#issuecomment-84056",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -97,16 +97,16 @@ Nathann
 archive/issue_comments_084057.json:
 ```json
 {
-    "body": "Attachment [trac_9059.patch](tarball://root/attachments/some-uuid/ticket9059/trac_9059.patch) by rlm created at 2010-06-21 20:45:44\n\nLooks good to me.",
+    "body": "Attachment [trac_9059.patch](tarball://root/attachments/some-uuid/ticket9059/trac_9059.patch) by @rlmill created at 2010-06-21 20:45:44\n\nLooks good to me.",
     "created_at": "2010-06-21T20:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9059#issuecomment-84057",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9059.patch](tarball://root/attachments/some-uuid/ticket9059/trac_9059.patch) by rlm created at 2010-06-21 20:45:44
+Attachment [trac_9059.patch](tarball://root/attachments/some-uuid/ticket9059/trac_9059.patch) by @rlmill created at 2010-06-21 20:45:44
 
 Looks good to me.
 
@@ -122,7 +122,7 @@ archive/issue_comments_084058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9059#issuecomment-84058",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_084059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9059#issuecomment-84059",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

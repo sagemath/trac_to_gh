@@ -3,7 +3,7 @@
 archive/issues_007251.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  sage-combinat mhansen robertwb\n\nKeywords: Integer, IntegerWrapper\n\nThe attached patch allows for the creation of integers whose parents are not IntegerRing():\n\n\n```\n            sage: n = Integer(3, parent = Primes())\n            sage: n\n            3\n            sage: n.parent()\n            Set of all prime numbers: 2, 3, 5, 7, ...\n```\n\n\nThat's used in a couple places in the category code #5891, when illustrating how to create new parents like the set of prime integers. So this is quite urgent.\n\nAny better implementation welcome! I am fine also with having this work only for IntegerWrapper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7251\n\n",
+    "body": "Assignee: somebody\n\nCC:  sage-combinat @mwhansen @robertwb\n\nKeywords: Integer, IntegerWrapper\n\nThe attached patch allows for the creation of integers whose parents are not IntegerRing():\n\n\n```\n            sage: n = Integer(3, parent = Primes())\n            sage: n\n            3\n            sage: n.parent()\n            Set of all prime numbers: 2, 3, 5, 7, ...\n```\n\n\nThat's used in a couple places in the category code #5891, when illustrating how to create new parents like the set of prime integers. So this is quite urgent.\n\nAny better implementation welcome! I am fine also with having this work only for IntegerWrapper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7251\n\n",
     "created_at": "2009-10-19T21:59:48Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_007251.json:
     "title": "Allow for Integer(3, parent = MyParent)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7251",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: somebody
 
-CC:  sage-combinat mhansen robertwb
+CC:  sage-combinat @mwhansen @robertwb
 
 Keywords: Integer, IntegerWrapper
 
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7251
 archive/issue_comments_060231.json:
 ```json
 {
-    "body": "Changing assignee from somebody to nthiery.",
+    "body": "Changing assignee from somebody to @nthiery.",
     "created_at": "2009-10-19T22:02:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7251#issuecomment-60231",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Changing assignee from somebody to nthiery.
+Changing assignee from somebody to @nthiery.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_060232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7251#issuecomment-60232",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_060233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7251#issuecomment-60233",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_060234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7251#issuecomment-60234",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_060235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7251#issuecomment-60235",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_060236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7251#issuecomment-60236",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_060237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7251#issuecomment-60237",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_060238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7251#issuecomment-60238",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -228,16 +228,16 @@ It's all a bit messy, and I've been wanting to redo it for a while (extending it
 archive/issue_comments_060239.json:
 ```json
 {
-    "body": "Attachment [trac_7251-integer_parent-nt.patch](tarball://root/attachments/some-uuid/ticket7251/trac_7251-integer_parent-nt.patch) by nthiery created at 2009-10-20 21:20:13\n\nReplying to [comment:8 robertwb]:\n> I should explain this a bit more--typically there shouldn't be any issues doing this with Cython classes. With Integers what we do is hijack the allocation/deallocation function slots with our own custom functions that stick already allocated Integers (with initialized parent and mpz_t fields) into a pool on \"deallocation\" and then pull them out whenever a new one is needed. Because Integers are so common, this is actually a significant savings, but does cause issues with subclassing from Python. \n> \n> IntegerWrapper is OK because it statically sets its alloc/dealloc methods to the *original* Integer alloc/dealloc methods (before we manually swap them out for ours). \n\nThanks for the explanations! I have added them to the documentation of IntegerWrapper.\n\nThe latest patch also just modifies IntegerWrapper, without touching Integer.",
+    "body": "Attachment [trac_7251-integer_parent-nt.patch](tarball://root/attachments/some-uuid/ticket7251/trac_7251-integer_parent-nt.patch) by @nthiery created at 2009-10-20 21:20:13\n\nReplying to [comment:8 robertwb]:\n> I should explain this a bit more--typically there shouldn't be any issues doing this with Cython classes. With Integers what we do is hijack the allocation/deallocation function slots with our own custom functions that stick already allocated Integers (with initialized parent and mpz_t fields) into a pool on \"deallocation\" and then pull them out whenever a new one is needed. Because Integers are so common, this is actually a significant savings, but does cause issues with subclassing from Python. \n> \n> IntegerWrapper is OK because it statically sets its alloc/dealloc methods to the *original* Integer alloc/dealloc methods (before we manually swap them out for ours). \n\nThanks for the explanations! I have added them to the documentation of IntegerWrapper.\n\nThe latest patch also just modifies IntegerWrapper, without touching Integer.",
     "created_at": "2009-10-20T21:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7251#issuecomment-60239",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7251-integer_parent-nt.patch](tarball://root/attachments/some-uuid/ticket7251/trac_7251-integer_parent-nt.patch) by nthiery created at 2009-10-20 21:20:13
+Attachment [trac_7251-integer_parent-nt.patch](tarball://root/attachments/some-uuid/ticket7251/trac_7251-integer_parent-nt.patch) by @nthiery created at 2009-10-20 21:20:13
 
 Replying to [comment:8 robertwb]:
 > I should explain this a bit more--typically there shouldn't be any issues doing this with Cython classes. With Integers what we do is hijack the allocation/deallocation function slots with our own custom functions that stick already allocated Integers (with initialized parent and mpz_t fields) into a pool on "deallocation" and then pull them out whenever a new one is needed. Because Integers are so common, this is actually a significant savings, but does cause issues with subclassing from Python. 
@@ -260,7 +260,7 @@ archive/issue_comments_060240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7251#issuecomment-60240",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_060241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7251#issuecomment-60241",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_060242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7251#issuecomment-60242",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_060243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7251#issuecomment-60243",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

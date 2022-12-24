@@ -3,7 +3,7 @@
 archive/issues_009688.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  chapoton\n\nTry doing\n\n  sh.eval? \n\nin the Sage notebook, and the output gets corrupted, because the example in the docstring is complicated. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9688\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nTry doing\n\n  sh.eval? \n\nin the Sage notebook, and the output gets corrupted, because the example in the docstring is complicated. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9688\n\n",
     "created_at": "2010-08-05T04:57:45Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009688.json:
     "title": "sage notebook: Output of sh.eval? is corrupted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9688",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
 
-CC:  chapoton
+CC:  @fchapoton
 
 Try doing
 
@@ -43,7 +43,7 @@ archive/issue_comments_094173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9688#issuecomment-94173",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_094174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9688#issuecomment-94174",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_094175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9688",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9688#issuecomment-94175",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

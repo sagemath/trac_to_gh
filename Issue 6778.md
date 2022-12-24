@@ -14,7 +14,7 @@ archive/issues_006778.json:
     "title": "[with patch, needs review] Fix nfacets for non-reflexive lattice polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6778",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: mhampton

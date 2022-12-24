@@ -14,7 +14,7 @@ archive/issues_006738.json:
     "title": "typo in spkg-install for atlas spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6738",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

@@ -53,16 +53,16 @@ apply to scripts repository in sage-4.1.1.rc0
 archive/issue_comments_054750.json:
 ```json
 {
-    "body": "Attachment [trac_6668_scripts_doctest.patch](tarball://root/attachments/some-uuid/ticket6668/trac_6668_scripts_doctest.patch) by AlexGhitza created at 2009-08-03 23:32:17",
+    "body": "Attachment [trac_6668_scripts_doctest.patch](tarball://root/attachments/some-uuid/ticket6668/trac_6668_scripts_doctest.patch) by @aghitza created at 2009-08-03 23:32:17",
     "created_at": "2009-08-03T23:32:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6668#issuecomment-54750",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6668_scripts_doctest.patch](tarball://root/attachments/some-uuid/ticket6668/trac_6668_scripts_doctest.patch) by AlexGhitza created at 2009-08-03 23:32:17
+Attachment [trac_6668_scripts_doctest.patch](tarball://root/attachments/some-uuid/ticket6668/trac_6668_scripts_doctest.patch) by @aghitza created at 2009-08-03 23:32:17
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_054753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6668#issuecomment-54753",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

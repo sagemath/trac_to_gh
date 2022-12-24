@@ -3,7 +3,7 @@
 archive/issues_003473.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  embray\n\n`sage` should have better error messages when the `$SAGE_ROOT/devel/sage` symlink doesn't exist. I'll fix this soon if no one beats me to it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3473\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @embray\n\n`sage` should have better error messages when the `$SAGE_ROOT/devel/sage` symlink doesn't exist. I'll fix this soon if no one beats me to it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3473\n\n",
     "created_at": "2008-06-19T21:20:16Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_003473.json:
     "title": "sage has bad error messages when sage link doesn't exist.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3473",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  embray
+CC:  @embray
 
 `sage` should have better error messages when the `$SAGE_ROOT/devel/sage` symlink doesn't exist. I'll fix this soon if no one beats me to it.
 
@@ -39,7 +39,7 @@ archive/issue_comments_024481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3473#issuecomment-24481",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_024482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3473#issuecomment-24482",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_024483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3473#issuecomment-24483",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_024484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3473#issuecomment-24484",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

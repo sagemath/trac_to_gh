@@ -3,7 +3,7 @@
 archive/issues_006593.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  sage-combinat jsp\n\nKeywords: word morphism\n\nWhen sage-4.1.1.alpha0 was released (see http://groups.google.com/group/sage-devel/browse_thread/thread/267a2cb90085536b?hl=en), the following problem was reported :\n\n\n```\nSame here on Fedora 10 and Fedora 11, 32 bit.\n\nIn addition both in a fresh install and in an upgrade:\n\nsage -t  \"devel/sage/sage/combinat/words/morphism.py\"\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.1/devel/sage/sage/combinat/words/morphism.py\", line 616:\n     sage: m.extend_by(n)\nExpected:\n     Morphism from Words over Ordered Alphabet ['a', 'b', 0, 1] to Words over Ordered Alphabet ['a', 'b', 0, 1]\nGot:\n     Morphism from Words over Ordered Alphabet [0, 1, 'a', 'b'] to Words over Ordered Alphabet [0, 1, 'a', 'b']\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.1/devel/sage/sage/combinat/words/morphism.py\", line 618:\n     sage: n.extend_by(m)\nExpected:\n     Morphism from Words over Ordered Alphabet ['a', 'b', 0, 1] to Words over Ordered Alphabet ['a', 'b', 0, 1, 5]\nGot:\n     Morphism from Words over Ordered Alphabet [0, 1, 'a', 'b'] to Words over Ordered Alphabet [0, 1, 5, 'a', 'b']\n**********************************************************************\n1 items had failures:\n    2 of  10 in __main__.example_11\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/jaap/Download/sage-4.1/tmp/.doctest_morphism.py\n         [3.2 s]\nexit code: 1024\n\nJaap \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6593\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat @jaapspies\n\nKeywords: word morphism\n\nWhen sage-4.1.1.alpha0 was released (see http://groups.google.com/group/sage-devel/browse_thread/thread/267a2cb90085536b?hl=en), the following problem was reported :\n\n\n```\nSame here on Fedora 10 and Fedora 11, 32 bit.\n\nIn addition both in a fresh install and in an upgrade:\n\nsage -t  \"devel/sage/sage/combinat/words/morphism.py\"\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.1/devel/sage/sage/combinat/words/morphism.py\", line 616:\n     sage: m.extend_by(n)\nExpected:\n     Morphism from Words over Ordered Alphabet ['a', 'b', 0, 1] to Words over Ordered Alphabet ['a', 'b', 0, 1]\nGot:\n     Morphism from Words over Ordered Alphabet [0, 1, 'a', 'b'] to Words over Ordered Alphabet [0, 1, 'a', 'b']\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.1/devel/sage/sage/combinat/words/morphism.py\", line 618:\n     sage: n.extend_by(m)\nExpected:\n     Morphism from Words over Ordered Alphabet ['a', 'b', 0, 1] to Words over Ordered Alphabet ['a', 'b', 0, 1, 5]\nGot:\n     Morphism from Words over Ordered Alphabet [0, 1, 'a', 'b'] to Words over Ordered Alphabet [0, 1, 5, 'a', 'b']\n**********************************************************************\n1 items had failures:\n    2 of  10 in __main__.example_11\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/jaap/Download/sage-4.1/tmp/.doctest_morphism.py\n         [3.2 s]\nexit code: 1024\n\nJaap \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6593\n\n",
     "created_at": "2009-07-22T16:31:05Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_006593.json:
     "title": "WordMorphism: doctest failure in Fedora",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6593",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
-CC:  sage-combinat jsp
+CC:  sage-combinat @jaapspies
 
 Keywords: word morphism
 
@@ -69,16 +69,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6593
 archive/issue_comments_053956.json:
 ```json
 {
-    "body": "Attachment [trac_6593-word-morphism-doctest-sl.patch](tarball://root/attachments/some-uuid/ticket6593/trac_6593-word-morphism-doctest-sl.patch) by slabbe created at 2009-07-22 17:08:55",
+    "body": "Attachment [trac_6593-word-morphism-doctest-sl.patch](tarball://root/attachments/some-uuid/ticket6593/trac_6593-word-morphism-doctest-sl.patch) by @seblabbe created at 2009-07-22 17:08:55",
     "created_at": "2009-07-22T17:08:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6593#issuecomment-53956",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_6593-word-morphism-doctest-sl.patch](tarball://root/attachments/some-uuid/ticket6593/trac_6593-word-morphism-doctest-sl.patch) by slabbe created at 2009-07-22 17:08:55
+Attachment [trac_6593-word-morphism-doctest-sl.patch](tarball://root/attachments/some-uuid/ticket6593/trac_6593-word-morphism-doctest-sl.patch) by @seblabbe created at 2009-07-22 17:08:55
 
 
 
@@ -92,7 +92,7 @@ archive/issue_comments_053957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6593#issuecomment-53957",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_053958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6593#issuecomment-53958",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_053959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6593",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6593#issuecomment-53959",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 

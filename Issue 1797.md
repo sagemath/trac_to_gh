@@ -3,7 +3,7 @@
 archive/issues_001797.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1797\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1797\n\n",
     "created_at": "2008-01-16T21:51:20Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001797.json:
     "title": "[with patch] add another doctest for expansion of elementary symmetric functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1797",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 

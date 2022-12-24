@@ -3,7 +3,7 @@
 archive/issues_005428.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  georgsweber was\n\nJohn Palmieri reported this first in sage-3.4.alpha. I is still here\nin rc0:\n\n\n\n```\nFile \"/home/jaap/downloads/sage-3.4.alpha0/devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst\", line 25:\n    sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]\nExpected:\n    (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1,\n     -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)\nGot:\n    (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_0\n\n```\n\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5428\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  georgsweber @williamstein\n\nJohn Palmieri reported this first in sage-3.4.alpha. I is still here\nin rc0:\n\n\n\n```\nFile \"/home/jaap/downloads/sage-3.4.alpha0/devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst\", line 25:\n    sage: t2 = ModularSymbols(389,sign=1).hecke_matrix(2); t2[0]\nExpected:\n    (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, 1, -1, 0, 0, 1, 1, 0, 1,\n     -1, 1, -1, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, -1, -1)\nGot:\n    (3, 0, -1, 0, 0, -1, 1, 0, 0, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0, 1, -1, 1, -1, 1, 0, 0, 0, 0, 0, 0, 1, -1, -1)\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_0\n\n```\n\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5428\n\n",
     "created_at": "2009-03-03T13:01:22Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_005428.json:
     "title": "Doctest failure in devel/sage/doc/en/bordeaux_2008/method_of_graphs.rst",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5428",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: mabshoff
 
-CC:  georgsweber was
+CC:  georgsweber @williamstein
 
 John Palmieri reported this first in sage-3.4.alpha. I is still here
 in rc0:
@@ -60,7 +60,7 @@ archive/issue_comments_041989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5428#issuecomment-41989",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_041995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5428#issuecomment-41995",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -432,7 +432,7 @@ archive/issue_comments_042002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5428#issuecomment-42002",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_042004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5428#issuecomment-42004",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_042006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5428#issuecomment-42006",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

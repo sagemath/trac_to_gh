@@ -14,7 +14,7 @@ archive/issues_002422.json:
     "title": "Update Programming Guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2422",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tba
@@ -50,7 +50,7 @@ archive/issue_comments_016389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2422",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2422#issuecomment-16389",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

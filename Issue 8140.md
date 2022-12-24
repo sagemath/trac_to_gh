@@ -14,7 +14,7 @@ archive/issues_008140.json:
     "title": "words.CharacteristicSturmianWord does not do what it says",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8140",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 Assignee: sage-combinat
@@ -67,7 +67,7 @@ archive/issue_comments_071569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8140#issuecomment-71569",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing status from new to needs_review.
 archive/issue_comments_071570.json:
 ```json
 {
-    "body": "Attachment [trac_8140-sturmian-sl.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140-sturmian-sl.patch) by slabbe created at 2010-02-01 21:01:12",
+    "body": "Attachment [trac_8140-sturmian-sl.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140-sturmian-sl.patch) by @seblabbe created at 2010-02-01 21:01:12",
     "created_at": "2010-02-01T21:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8140#issuecomment-71570",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8140-sturmian-sl.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140-sturmian-sl.patch) by slabbe created at 2010-02-01 21:01:12
+Attachment [trac_8140-sturmian-sl.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140-sturmian-sl.patch) by @seblabbe created at 2010-02-01 21:01:12
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_071571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8140#issuecomment-71571",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -159,16 +159,16 @@ Few minor changes -- I let Sébastien check if he approves the changes
 archive/issue_comments_071574.json:
 ```json
 {
-    "body": "Attachment [trac_8140_cf-arg-sl.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140_cf-arg-sl.patch) by slabbe created at 2010-02-04 17:22:49\n\nApplies over the two precedent patches.",
+    "body": "Attachment [trac_8140_cf-arg-sl.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140_cf-arg-sl.patch) by @seblabbe created at 2010-02-04 17:22:49\n\nApplies over the two precedent patches.",
     "created_at": "2010-02-04T17:22:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8140#issuecomment-71574",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8140_cf-arg-sl.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140_cf-arg-sl.patch) by slabbe created at 2010-02-04 17:22:49
+Attachment [trac_8140_cf-arg-sl.patch](tarball://root/attachments/some-uuid/ticket8140/trac_8140_cf-arg-sl.patch) by @seblabbe created at 2010-02-04 17:22:49
 
 Applies over the two precedent patches.
 
@@ -184,7 +184,7 @@ archive/issue_comments_071575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8140#issuecomment-71575",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_071576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8140#issuecomment-71576",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_071579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8140#issuecomment-71579",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_071580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8140#issuecomment-71580",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_071581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8140#issuecomment-71581",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

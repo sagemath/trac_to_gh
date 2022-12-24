@@ -3,7 +3,7 @@
 archive/issues_004840.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  burcin\n\nFLINT uses its own memory pool. In order to clean up Sage's valgrind log call  flint_stack_cleanup() right before unloading FLINT.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4840\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nFLINT uses its own memory pool. In order to clean up Sage's valgrind log call  flint_stack_cleanup() right before unloading FLINT.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4840\n\n",
     "created_at": "2008-12-20T22:11:53Z",
     "labels": [
         "linear algebra",
@@ -17,9 +17,9 @@ archive/issues_004840.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  burcin
+CC:  @burcin
 
 FLINT uses its own memory pool. In order to clean up Sage's valgrind log call  flint_stack_cleanup() right before unloading FLINT.
 
@@ -74,7 +74,7 @@ Changing component from linear algebra to memleak.
 archive/issue_comments_036706.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-12-20T22:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4840",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_036706.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_036707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36707",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_036708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36708",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -128,16 +128,16 @@ attachment:trac_4840-flint_free.patch should fix this.
 archive/issue_comments_036709.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to burcin.",
+    "body": "Changing assignee from mabshoff to @burcin.",
     "created_at": "2009-01-23T08:10:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36709",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from mabshoff to burcin.
+Changing assignee from mabshoff to @burcin.
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_036710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36710",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -197,16 +197,16 @@ Michael
 archive/issue_comments_036712.json:
 ```json
 {
-    "body": "Attachment [trac_4840-flint_free.patch](tarball://root/attachments/some-uuid/ticket4840/trac_4840-flint_free.patch) by burcin created at 2009-01-24 17:34:06\n\nNew patch fixes merge failure.",
+    "body": "Attachment [trac_4840-flint_free.patch](tarball://root/attachments/some-uuid/ticket4840/trac_4840-flint_free.patch) by @burcin created at 2009-01-24 17:34:06\n\nNew patch fixes merge failure.",
     "created_at": "2009-01-24T17:34:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36712",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_4840-flint_free.patch](tarball://root/attachments/some-uuid/ticket4840/trac_4840-flint_free.patch) by burcin created at 2009-01-24 17:34:06
+Attachment [trac_4840-flint_free.patch](tarball://root/attachments/some-uuid/ticket4840/trac_4840-flint_free.patch) by @burcin created at 2009-01-24 17:34:06
 
 New patch fixes merge failure.
 

@@ -3,7 +3,7 @@
 archive/issues_003487.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen sage comes up it announces:\n\nLoading SAGE library. Current Mercurial branch is: worldDomination\n\nturns out, this is the current \"clone\"... when you are using \"hg branches\" in your clone it would be nice for it to say something like:\n\nLoading SAGE library. Current Mercurial clone is: worldDomination on branch: riemannProof\n\nIssue created by migration from https://trac.sagemath.org/ticket/3487\n\n",
+    "body": "Assignee: @williamstein\n\nWhen sage comes up it announces:\n\nLoading SAGE library. Current Mercurial branch is: worldDomination\n\nturns out, this is the current \"clone\"... when you are using \"hg branches\" in your clone it would be nice for it to say something like:\n\nLoading SAGE library. Current Mercurial clone is: worldDomination on branch: riemannProof\n\nIssue created by migration from https://trac.sagemath.org/ticket/3487\n\n",
     "created_at": "2008-06-20T21:02:04Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_003487.json:
     "user": "ghtdak"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When sage comes up it announces:
 
@@ -69,7 +69,7 @@ archive/issue_comments_024575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3487#issuecomment-24575",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_024576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3487#issuecomment-24576",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_024577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3487#issuecomment-24577",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_024578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3487#issuecomment-24578",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_024579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3487#issuecomment-24579",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

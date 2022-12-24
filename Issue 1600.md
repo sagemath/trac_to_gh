@@ -49,16 +49,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1600
 archive/issue_comments_010170.json:
 ```json
 {
-    "body": "Attachment [craigcitro-1600.patch](tarball://root/attachments/some-uuid/ticket1600/craigcitro-1600.patch) by craigcitro created at 2008-01-21 09:36:56",
+    "body": "Attachment [craigcitro-1600.patch](tarball://root/attachments/some-uuid/ticket1600/craigcitro-1600.patch) by @craigcitro created at 2008-01-21 09:36:56",
     "created_at": "2008-01-21T09:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1600#issuecomment-10170",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [craigcitro-1600.patch](tarball://root/attachments/some-uuid/ticket1600/craigcitro-1600.patch) by craigcitro created at 2008-01-21 09:36:56
+Attachment [craigcitro-1600.patch](tarball://root/attachments/some-uuid/ticket1600/craigcitro-1600.patch) by @craigcitro created at 2008-01-21 09:36:56
 
 
 
@@ -72,7 +72,7 @@ archive/issue_comments_010171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1600#issuecomment-10171",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -85,16 +85,16 @@ Changing status from new to assigned.
 archive/issue_comments_010172.json:
 ```json
 {
-    "body": "Changing assignee from somebody to craigcitro.",
+    "body": "Changing assignee from somebody to @craigcitro.",
     "created_at": "2008-01-21T09:38:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1600#issuecomment-10172",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from somebody to craigcitro.
+Changing assignee from somebody to @craigcitro.
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_010173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1600#issuecomment-10173",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_010174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1600",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1600#issuecomment-10174",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

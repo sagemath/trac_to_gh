@@ -3,7 +3,7 @@
 archive/issues_000102.json:
 ```json
 {
-    "body": "Assignee: was\n\nWould be nice to have RSS for the wiki \"recent changes\". Apparently you can do this with:\n\nhttp://moinmoin.wikiwikiweb.de/MoinMoinSyndication\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/102\n\n",
+    "body": "Assignee: @williamstein\n\nWould be nice to have RSS for the wiki \"recent changes\". Apparently you can do this with:\n\nhttp://moinmoin.wikiwikiweb.de/MoinMoinSyndication\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/102\n\n",
     "created_at": "2006-10-01T15:24:55Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_000102.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Would be nice to have RSS for the wiki "recent changes". Apparently you can do this with:
 

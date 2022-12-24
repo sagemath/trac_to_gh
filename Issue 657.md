@@ -3,7 +3,7 @@
 archive/issues_000657.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis may be due to how cmp is implemented (to produce symbolic expressions).\n\n\n```\nOn Aug 14, 2007, at 2:07 AM, PaulOlivierSage@gmail.com wrote:\n\n\nHi,\nI have some problems with the way is_zero() is implemented (or maybe\nit is the documentation...)\nIs this behavior really desirable?\n\nsage: k = var('k')\nsage: pol = 1/(k-1) - 1/k -1/k/(k-1)\nsage: pol\n-1/((k - 1)*k) - (1/k) + 1/(k - 1)\nsage: pol.partial_fraction()\n0\nsage: pol.is_zero()\nFalse\nsage: pol.is_zero??\nType:           builtin_function_or_method\nBase Class:     <type 'builtin_function_or_method'>\nString Form:    <built-in method is_zero of SymbolicArithmetic object\nat 0xc4b6af8>\nNamespace:      Interactive\nSource:\n    def is_zero(self):\n        \"\"\"\n        Return True if self equals self.parent()(0). The default\n        implementation is to fall back to 'not self.__nonzero__'.\n\n        NOTE: Do not re-implement this method in your subclass but\n        implement __nonzero__ instead.\n        \"\"\"\n        return not self\nsage: pol == pol.parent()(0)\n-1/((k - 1)*k) - (1/k) + 1/(k - 1) == 0\n\nPaul\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/657\n\n",
+    "body": "Assignee: @williamstein\n\nThis may be due to how cmp is implemented (to produce symbolic expressions).\n\n\n```\nOn Aug 14, 2007, at 2:07 AM, PaulOlivierSage@gmail.com wrote:\n\n\nHi,\nI have some problems with the way is_zero() is implemented (or maybe\nit is the documentation...)\nIs this behavior really desirable?\n\nsage: k = var('k')\nsage: pol = 1/(k-1) - 1/k -1/k/(k-1)\nsage: pol\n-1/((k - 1)*k) - (1/k) + 1/(k - 1)\nsage: pol.partial_fraction()\n0\nsage: pol.is_zero()\nFalse\nsage: pol.is_zero??\nType:           builtin_function_or_method\nBase Class:     <type 'builtin_function_or_method'>\nString Form:    <built-in method is_zero of SymbolicArithmetic object\nat 0xc4b6af8>\nNamespace:      Interactive\nSource:\n    def is_zero(self):\n        \"\"\"\n        Return True if self equals self.parent()(0). The default\n        implementation is to fall back to 'not self.__nonzero__'.\n\n        NOTE: Do not re-implement this method in your subclass but\n        implement __nonzero__ instead.\n        \"\"\"\n        return not self\nsage: pol == pol.parent()(0)\n-1/((k - 1)*k) - (1/k) + 1/(k - 1) == 0\n\nPaul\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/657\n\n",
     "created_at": "2007-09-14T21:06:10Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_000657.json:
     "title": "Strange is_zero behavior for symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/657",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This may be due to how cmp is implemented (to produce symbolic expressions).
 
@@ -78,7 +78,7 @@ archive/issue_comments_003414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/657#issuecomment-3414",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,16 +91,16 @@ Changing status from new to assigned.
 archive/issue_comments_003415.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-10-24T01:48:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/657#issuecomment-3415",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_003416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/657#issuecomment-3416",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_003417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/657#issuecomment-3417",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_003418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/657#issuecomment-3418",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_003419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/657#issuecomment-3419",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_003420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/657#issuecomment-3420",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_003421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/657#issuecomment-3421",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_003422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/657#issuecomment-3422",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -288,16 +288,16 @@ Changing status from closed to reopened.
 archive/issue_comments_003423.json:
 ```json
 {
-    "body": "Attachment [657.patch](tarball://root/attachments/some-uuid/ticket657/657.patch) by mhansen created at 2007-10-26 03:55:13\n\nPatch updated.",
+    "body": "Attachment [657.patch](tarball://root/attachments/some-uuid/ticket657/657.patch) by @mwhansen created at 2007-10-26 03:55:13\n\nPatch updated.",
     "created_at": "2007-10-26T03:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/657",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/657#issuecomment-3423",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [657.patch](tarball://root/attachments/some-uuid/ticket657/657.patch) by mhansen created at 2007-10-26 03:55:13
+Attachment [657.patch](tarball://root/attachments/some-uuid/ticket657/657.patch) by @mwhansen created at 2007-10-26 03:55:13
 
 Patch updated.
 

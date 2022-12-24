@@ -3,7 +3,7 @@
 archive/issues_004736.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nWhen reintroducing the bug from #4540 on purposed the doctesting framework after applying #717 and #4719 has trouble detecting segfualts and summarizing them at the end. For example consider this failure:\n\n```\nsage -t  \"devel/sage/sage/combinat/sf/kschur.py\"           \nException exceptions.TypeError: 'cannot convert a (= 1) to OP' in\n'sage.libs.symmetrica.symmetrica._op_schur_general_dict' ignored\nfunction: mult(1)\n       [3.1 s]\n```\n\nWhen running \"-tp 8 -long\" the failure is reported as:\n\n```\n sage -t -long devel/sage/sage/combinat/sf/kschur.py # 0 doctests failed\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4736\n\n",
+    "body": "Assignee: @garyfurnish\n\nWhen reintroducing the bug from #4540 on purposed the doctesting framework after applying #717 and #4719 has trouble detecting segfualts and summarizing them at the end. For example consider this failure:\n\n```\nsage -t  \"devel/sage/sage/combinat/sf/kschur.py\"           \nException exceptions.TypeError: 'cannot convert a (= 1) to OP' in\n'sage.libs.symmetrica.symmetrica._op_schur_general_dict' ignored\nfunction: mult(1)\n       [3.1 s]\n```\n\nWhen running \"-tp 8 -long\" the failure is reported as:\n\n```\n sage -t -long devel/sage/sage/combinat/sf/kschur.py # 0 doctests failed\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4736\n\n",
     "created_at": "2008-12-07T05:46:15Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_004736.json:
     "user": "mabshoff"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 When reintroducing the bug from #4540 on purposed the doctesting framework after applying #717 and #4719 has trouble detecting segfualts and summarizing them at the end. For example consider this failure:
 
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4736
 archive/issue_comments_035757.json:
 ```json
 {
-    "body": "Attachment [trac_4736_bin.patch](tarball://root/attachments/some-uuid/ticket4736/trac_4736_bin.patch) by gfurnish created at 2008-12-07 05:47:46",
+    "body": "Attachment [trac_4736_bin.patch](tarball://root/attachments/some-uuid/ticket4736/trac_4736_bin.patch) by @garyfurnish created at 2008-12-07 05:47:46",
     "created_at": "2008-12-07T05:47:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4736#issuecomment-35757",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_4736_bin.patch](tarball://root/attachments/some-uuid/ticket4736/trac_4736_bin.patch) by gfurnish created at 2008-12-07 05:47:46
+Attachment [trac_4736_bin.patch](tarball://root/attachments/some-uuid/ticket4736/trac_4736_bin.patch) by @garyfurnish created at 2008-12-07 05:47:46
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_035758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4736#issuecomment-35758",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -148,16 +148,16 @@ Michael
 archive/issue_comments_035760.json:
 ```json
 {
-    "body": "Attachment [trac_4736_2_bin.patch](tarball://root/attachments/some-uuid/ticket4736/trac_4736_2_bin.patch) by gfurnish created at 2008-12-08 22:28:47\n\nApply on top of existing patch.",
+    "body": "Attachment [trac_4736_2_bin.patch](tarball://root/attachments/some-uuid/ticket4736/trac_4736_2_bin.patch) by @garyfurnish created at 2008-12-08 22:28:47\n\nApply on top of existing patch.",
     "created_at": "2008-12-08T22:28:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4736#issuecomment-35760",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_4736_2_bin.patch](tarball://root/attachments/some-uuid/ticket4736/trac_4736_2_bin.patch) by gfurnish created at 2008-12-08 22:28:47
+Attachment [trac_4736_2_bin.patch](tarball://root/attachments/some-uuid/ticket4736/trac_4736_2_bin.patch) by @garyfurnish created at 2008-12-08 22:28:47
 
 Apply on top of existing patch.
 

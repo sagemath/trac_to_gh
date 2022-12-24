@@ -14,7 +14,7 @@ archive/issues_007094.json:
     "title": "some doctest leaves the file \" my_general_distribution_plot.png\" in SAGE_ROOT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7094",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_058620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7094#issuecomment-58620",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_058621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7094",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7094#issuecomment-58621",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007610.json:
     "title": "`readline-6.0` causes \"undefined symbol: PC\" errors on Arch Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7610",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: tbd
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7610
 archive/issue_comments_064996.json:
 ```json
 {
-    "body": "Attachment [trac_7610-readline-arch-workaround.patch](tarball://root/attachments/some-uuid/ticket7610/trac_7610-readline-arch-workaround.patch) by timdumol created at 2009-12-06 02:54:38\n\nAdds Arch Linux workaround (copies over system library)",
+    "body": "Attachment [trac_7610-readline-arch-workaround.patch](tarball://root/attachments/some-uuid/ticket7610/trac_7610-readline-arch-workaround.patch) by @TimDumol created at 2009-12-06 02:54:38\n\nAdds Arch Linux workaround (copies over system library)",
     "created_at": "2009-12-06T02:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7610#issuecomment-64996",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7610-readline-arch-workaround.patch](tarball://root/attachments/some-uuid/ticket7610/trac_7610-readline-arch-workaround.patch) by timdumol created at 2009-12-06 02:54:38
+Attachment [trac_7610-readline-arch-workaround.patch](tarball://root/attachments/some-uuid/ticket7610/trac_7610-readline-arch-workaround.patch) by @TimDumol created at 2009-12-06 02:54:38
 
 Adds Arch Linux workaround (copies over system library)
 
@@ -65,7 +65,7 @@ archive/issue_comments_064997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7610#issuecomment-64997",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_064998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7610#issuecomment-64998",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_064999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7610#issuecomment-64999",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_065000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7610#issuecomment-65000",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_065001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7610#issuecomment-65001",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_065002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7610#issuecomment-65002",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

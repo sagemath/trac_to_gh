@@ -14,7 +14,7 @@ archive/issues_002628.json:
     "title": "Literate notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2628",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 Assignee: boothby
@@ -51,7 +51,7 @@ archive/issue_comments_018059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2628#issuecomment-18059",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -64,16 +64,16 @@ Mockup
 archive/issue_comments_018060.json:
 ```json
 {
-    "body": "Attachment [literate_notebook.png](tarball://root/attachments/some-uuid/ticket2628/literate_notebook.png) by dunfield created at 2008-03-21 15:46:54\n\n\"Source\" for mockup",
+    "body": "Attachment [literate_notebook.png](tarball://root/attachments/some-uuid/ticket2628/literate_notebook.png) by @NathanDunfield created at 2008-03-21 15:46:54\n\n\"Source\" for mockup",
     "created_at": "2008-03-21T15:46:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2628#issuecomment-18060",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
-Attachment [literate_notebook.png](tarball://root/attachments/some-uuid/ticket2628/literate_notebook.png) by dunfield created at 2008-03-21 15:46:54
+Attachment [literate_notebook.png](tarball://root/attachments/some-uuid/ticket2628/literate_notebook.png) by @NathanDunfield created at 2008-03-21 15:46:54
 
 "Source" for mockup
 
@@ -84,16 +84,16 @@ Attachment [literate_notebook.png](tarball://root/attachments/some-uuid/ticket26
 archive/issue_comments_018061.json:
 ```json
 {
-    "body": "Attachment [notebook.txt](tarball://root/attachments/some-uuid/ticket2628/notebook.txt) by gfurnish created at 2008-03-21 16:34:49",
+    "body": "Attachment [notebook.txt](tarball://root/attachments/some-uuid/ticket2628/notebook.txt) by @garyfurnish created at 2008-03-21 16:34:49",
     "created_at": "2008-03-21T16:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2628#issuecomment-18061",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [notebook.txt](tarball://root/attachments/some-uuid/ticket2628/notebook.txt) by gfurnish created at 2008-03-21 16:34:49
+Attachment [notebook.txt](tarball://root/attachments/some-uuid/ticket2628/notebook.txt) by @garyfurnish created at 2008-03-21 16:34:49
 
 
 
@@ -107,7 +107,7 @@ archive/issue_comments_018062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2628#issuecomment-18062",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_018063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2628#issuecomment-18063",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -140,16 +140,16 @@ I think this can probably be closed since TinyMCE (at #4705) was added.
 archive/issue_comments_018064.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-19T13:53:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2628#issuecomment-18064",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -163,7 +163,7 @@ archive/issue_comments_018065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2628#issuecomment-18065",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_018066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2628#issuecomment-18066",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_018067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2628",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2628#issuecomment-18067",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

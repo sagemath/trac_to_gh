@@ -3,7 +3,7 @@
 archive/issues_004838.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: plot complex number\n\nIt would be nice to be able to do:\n\n\n```\nsage: CC(3-2*I).plot()\n```\n\n\nwhich would return a plot object of the point 3-2*I.  I guess it just needs to wrap the normal plot of a point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4838\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: plot complex number\n\nIt would be nice to be able to do:\n\n\n```\nsage: CC(3-2*I).plot()\n```\n\n\nwhich would return a plot object of the point 3-2*I.  I guess it just needs to wrap the normal plot of a point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4838\n\n",
     "created_at": "2008-12-20T16:47:25Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004838.json:
     "title": "implement plotting of complex numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4838",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: plot complex number
 
@@ -47,7 +47,7 @@ archive/issue_comments_036682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4838#issuecomment-36682",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -60,16 +60,16 @@ Changing status from new to needs_review.
 archive/issue_comments_036683.json:
 ```json
 {
-    "body": "Attachment [patch_4838-vd.patch](tarball://root/attachments/some-uuid/ticket4838/patch_4838-vd.patch) by vdelecroix created at 2010-01-29 22:34:31",
+    "body": "Attachment [patch_4838-vd.patch](tarball://root/attachments/some-uuid/ticket4838/patch_4838-vd.patch) by @videlec created at 2010-01-29 22:34:31",
     "created_at": "2010-01-29T22:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4838#issuecomment-36683",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [patch_4838-vd.patch](tarball://root/attachments/some-uuid/ticket4838/patch_4838-vd.patch) by vdelecroix created at 2010-01-29 22:34:31
+Attachment [patch_4838-vd.patch](tarball://root/attachments/some-uuid/ticket4838/patch_4838-vd.patch) by @videlec created at 2010-01-29 22:34:31
 
 
 
@@ -78,16 +78,16 @@ Attachment [patch_4838-vd.patch](tarball://root/attachments/some-uuid/ticket4838
 archive/issue_comments_036684.json:
 ```json
 {
-    "body": "Attachment [trac_4838-vd.patch](tarball://root/attachments/some-uuid/ticket4838/trac_4838-vd.patch) by vdelecroix created at 2010-01-29 22:45:04\n\nuse only this one !",
+    "body": "Attachment [trac_4838-vd.patch](tarball://root/attachments/some-uuid/ticket4838/trac_4838-vd.patch) by @videlec created at 2010-01-29 22:45:04\n\nuse only this one !",
     "created_at": "2010-01-29T22:45:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4838#issuecomment-36684",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_4838-vd.patch](tarball://root/attachments/some-uuid/ticket4838/trac_4838-vd.patch) by vdelecroix created at 2010-01-29 22:45:04
+Attachment [trac_4838-vd.patch](tarball://root/attachments/some-uuid/ticket4838/trac_4838-vd.patch) by @videlec created at 2010-01-29 22:45:04
 
 use only this one !
 
@@ -152,7 +152,7 @@ archive/issue_comments_036687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4838#issuecomment-36687",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_036688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4838#issuecomment-36688",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_036689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4838",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4838#issuecomment-36689",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

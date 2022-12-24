@@ -3,7 +3,7 @@
 archive/issues_002139.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nHello,\n\nI'm doing some work with complete matchings, and I'm dealing with them\nas set partitions. I just need to iterate over matchings, not make\nlists, so it seems like I shouldn't run out of memory (I have 1.5 gigs\ninstalled), but I am. I'm using Sage 2.10.1 on Linux.\n\nIf I do something like the following, memory usage climbs and climbs:\n\n n = 0\n for m in SetPartitions(range(16), [2, 2, 2, 2, 2, 2, 2, 2]):\n   n += 1\n\nThis seems weird, since there's a set partitions iterator, and it\nshouldn't take a lot of memory.\n\nOn the other hand, here's an iterator for complete matchings that I\nwrote that works just fine:\n\n def matchings(n):\n   for m in matchingsset(range(1, n+1)): yield m\n\n def matchingsset(L):\n   if len(L) == 0:\n     yield []\n   else:\n     for k in range(1,len(L)):\n       for m in matchingsset(L[1:k] + L[k+1:]):\n         yield m + [[L[0], L[k]]]\n   return\n\nNow running the same counting loop works, with no extra memory usage:\n\n n = 0\n for m in matchings(16):\n   n += 1\n\nSage seems to have an iterator for set partitions; it is working? Do I\nneed to use something else to get a memory-efficient iterator?\n\nThanks for the help,\n\nDan\n\nIssue created by migration from https://trac.sagemath.org/ticket/2139\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nHello,\n\nI'm doing some work with complete matchings, and I'm dealing with them\nas set partitions. I just need to iterate over matchings, not make\nlists, so it seems like I shouldn't run out of memory (I have 1.5 gigs\ninstalled), but I am. I'm using Sage 2.10.1 on Linux.\n\nIf I do something like the following, memory usage climbs and climbs:\n\n n = 0\n for m in SetPartitions(range(16), [2, 2, 2, 2, 2, 2, 2, 2]):\n   n += 1\n\nThis seems weird, since there's a set partitions iterator, and it\nshouldn't take a lot of memory.\n\nOn the other hand, here's an iterator for complete matchings that I\nwrote that works just fine:\n\n def matchings(n):\n   for m in matchingsset(range(1, n+1)): yield m\n\n def matchingsset(L):\n   if len(L) == 0:\n     yield []\n   else:\n     for k in range(1,len(L)):\n       for m in matchingsset(L[1:k] + L[k+1:]):\n         yield m + [[L[0], L[k]]]\n   return\n\nNow running the same counting loop works, with no extra memory usage:\n\n n = 0\n for m in matchings(16):\n   n += 1\n\nSage seems to have an iterator for set partitions; it is working? Do I\nneed to use something else to get a memory-efficient iterator?\n\nThanks for the help,\n\nDan\n\nIssue created by migration from https://trac.sagemath.org/ticket/2139\n\n",
     "created_at": "2008-02-11T06:39:11Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002139.json:
     "title": "set partitions iterator not working",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2139",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -76,16 +76,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2139
 archive/issue_comments_014024.json:
 ```json
 {
-    "body": "Attachment [set_partition.patch](tarball://root/attachments/some-uuid/ticket2139/set_partition.patch) by mhansen created at 2008-02-11 06:40:56",
+    "body": "Attachment [set_partition.patch](tarball://root/attachments/some-uuid/ticket2139/set_partition.patch) by @mwhansen created at 2008-02-11 06:40:56",
     "created_at": "2008-02-11T06:40:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2139#issuecomment-14024",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [set_partition.patch](tarball://root/attachments/some-uuid/ticket2139/set_partition.patch) by mhansen created at 2008-02-11 06:40:56
+Attachment [set_partition.patch](tarball://root/attachments/some-uuid/ticket2139/set_partition.patch) by @mwhansen created at 2008-02-11 06:40:56
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_014025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2139#issuecomment-14025",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_014026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2139#issuecomment-14026",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_014027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2139#issuecomment-14027",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

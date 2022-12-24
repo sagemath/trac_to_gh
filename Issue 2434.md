@@ -3,7 +3,7 @@
 archive/issues_002434.json:
 ```json
 {
-    "body": "Assignee: was\n\nFor 2.10.3.rc2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2434\n\n",
+    "body": "Assignee: @williamstein\n\nFor 2.10.3.rc2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2434\n\n",
     "created_at": "2008-03-09T05:11:59Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002434.json:
     "title": "[with patch, easy review] fix doctest in plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2434",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 For 2.10.3.rc2.
 

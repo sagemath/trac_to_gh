@@ -3,7 +3,7 @@
 archive/issues_005014.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mjo\n\n\n```\n\nOn Sun, Jan 18, 2009 at 6:49 AM, Paul Zimmermann <Paul.Zimmermann@loria.fr> wrote:\n>       Hi,\n>\n> I hit the following:\n>\n> sage: P.<x> = PolynomialRing(GF(17))\n> sage: m = Matrix(P,2,2)\n> sage: m.randomize(); m\n>\n> [ 6*x^2 + 8*x + 12 10*x^2 + 4*x + 11]\n> [8*x^2 + 12*x + 15  8*x^2 + 9*x + 16]\n> sage: m.rank()\n> ...\n> NotImplementedError: echelon form over Univariate Polynomial Ring in x over Finite Field of size 17 not yet implemented\n>\n> Isn't that provided by either GP or Linbox?\n\nYes, by gp.  I have no idea if it is in Linbox.\n\nsage: gp(m).matrank()\n2\nsage: pari(m).matrank()\nboom -- matrank not wrapped\n\nSomebody *could* implement this by wrapping pari's matrank then doing the conversion and calling it.  Of course, much better would be to do:\n\nsage: m.change_ring(m.base_ring().fraction_field()).rank()\n2\n\nwhich already works. \n\nI am puzzled that rank doesn't first change base to the fraction field, *then* call echelon form -- it's stupid that it tries to call echelon form over the same base ring, since that is often much harder (e.g., it is Hermite form over ZZ).\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5014\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @orlitzky\n\n\n```\n\nOn Sun, Jan 18, 2009 at 6:49 AM, Paul Zimmermann <Paul.Zimmermann@loria.fr> wrote:\n>       Hi,\n>\n> I hit the following:\n>\n> sage: P.<x> = PolynomialRing(GF(17))\n> sage: m = Matrix(P,2,2)\n> sage: m.randomize(); m\n>\n> [ 6*x^2 + 8*x + 12 10*x^2 + 4*x + 11]\n> [8*x^2 + 12*x + 15  8*x^2 + 9*x + 16]\n> sage: m.rank()\n> ...\n> NotImplementedError: echelon form over Univariate Polynomial Ring in x over Finite Field of size 17 not yet implemented\n>\n> Isn't that provided by either GP or Linbox?\n\nYes, by gp.  I have no idea if it is in Linbox.\n\nsage: gp(m).matrank()\n2\nsage: pari(m).matrank()\nboom -- matrank not wrapped\n\nSomebody *could* implement this by wrapping pari's matrank then doing the conversion and calling it.  Of course, much better would be to do:\n\nsage: m.change_ring(m.base_ring().fraction_field()).rank()\n2\n\nwhich already works. \n\nI am puzzled that rank doesn't first change base to the fraction field, *then* call echelon form -- it's stupid that it tries to call echelon form over the same base ring, since that is often much harder (e.g., it is Hermite form over ZZ).\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5014\n\n",
     "created_at": "2009-01-18T14:59:32Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005014.json:
     "title": "matrix rank should call echelon_form over *fraction field*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5014",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mjo
+CC:  @orlitzky
 
 
 ```
@@ -77,7 +77,7 @@ archive/issue_comments_038209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5014#issuecomment-38209",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -124,16 +124,16 @@ sage: m.rank()
 archive/issue_comments_038211.json:
 ```json
 {
-    "body": "Attachment [sage-trac_5014.patch](tarball://root/attachments/some-uuid/ticket5014/sage-trac_5014.patch) by mjo created at 2012-01-08 00:07:14\n\nAdd a doctest computing the rank of one of these matrices.",
+    "body": "Attachment [sage-trac_5014.patch](tarball://root/attachments/some-uuid/ticket5014/sage-trac_5014.patch) by @orlitzky created at 2012-01-08 00:07:14\n\nAdd a doctest computing the rank of one of these matrices.",
     "created_at": "2012-01-08T00:07:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5014#issuecomment-38211",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_5014.patch](tarball://root/attachments/some-uuid/ticket5014/sage-trac_5014.patch) by mjo created at 2012-01-08 00:07:14
+Attachment [sage-trac_5014.patch](tarball://root/attachments/some-uuid/ticket5014/sage-trac_5014.patch) by @orlitzky created at 2012-01-08 00:07:14
 
 Add a doctest computing the rank of one of these matrices.
 
@@ -149,7 +149,7 @@ archive/issue_comments_038212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5014#issuecomment-38212",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_038213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5014#issuecomment-38213",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_038214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5014#issuecomment-38214",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_038215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5014#issuecomment-38215",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

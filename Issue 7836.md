@@ -3,7 +3,7 @@
 archive/issues_007836.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  cremona rlm\n\nFrom #7595:\n\nReplying to [comment:10 cremona]:\n> I have some problems with the CRT* functions though.\n> \n>    1. CRT_list does not check that the two lists have the same length;  if the moduli list is shorter you get an IndexError, but it would be better to catch that and raise a more informative error.\n> \n>    2. CRT_basis is rather silly.   It calls CRT_list n times with the same moduli, which must be wasteful.  It would be better to call plain CRT n times with suitable moduli (exercise for the reader).\n> \n> Of course, I don't think that these issues should delay the current patch, but deserve a ticket of their own to make sure they are tided up.\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/7836\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @rlmill\n\nFrom #7595:\n\nReplying to [comment:10 cremona]:\n> I have some problems with the CRT* functions though.\n> \n>    1. CRT_list does not check that the two lists have the same length;  if the moduli list is shorter you get an IndexError, but it would be better to catch that and raise a more informative error.\n> \n>    2. CRT_basis is rather silly.   It calls CRT_list n times with the same moduli, which must be wasteful.  It would be better to call plain CRT n times with suitable moduli (exercise for the reader).\n> \n> Of course, I don't think that these issues should delay the current patch, but deserve a ticket of their own to make sure they are tided up.\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/7836\n\n",
     "created_at": "2010-01-03T21:37:37Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_007836.json:
     "title": "Clean up the CRT_* functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7836",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  cremona rlm
+CC:  @JohnCremona @rlmill
 
 From #7595:
 
@@ -49,7 +49,7 @@ archive/issue_comments_067885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67885",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -62,16 +62,16 @@ Applies to 4.3 + patches at #7595
 archive/issue_comments_067886.json:
 ```json
 {
-    "body": "Attachment [trac_7836-CRT.patch](tarball://root/attachments/some-uuid/ticket7836/trac_7836-CRT.patch) by cremona created at 2010-01-04 17:22:50\n\nThe attached patch is based on 4.3 + the patches at #7595.  I tested all files which use either CRT_list or CRT_basis.",
+    "body": "Attachment [trac_7836-CRT.patch](tarball://root/attachments/some-uuid/ticket7836/trac_7836-CRT.patch) by @JohnCremona created at 2010-01-04 17:22:50\n\nThe attached patch is based on 4.3 + the patches at #7595.  I tested all files which use either CRT_list or CRT_basis.",
     "created_at": "2010-01-04T17:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67886",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7836-CRT.patch](tarball://root/attachments/some-uuid/ticket7836/trac_7836-CRT.patch) by cremona created at 2010-01-04 17:22:50
+Attachment [trac_7836-CRT.patch](tarball://root/attachments/some-uuid/ticket7836/trac_7836-CRT.patch) by @JohnCremona created at 2010-01-04 17:22:50
 
 The attached patch is based on 4.3 + the patches at #7595.  I tested all files which use either CRT_list or CRT_basis.
 
@@ -87,7 +87,7 @@ archive/issue_comments_067887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67887",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_067888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67888",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_067889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67889",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_067890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67890",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_067891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67891",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

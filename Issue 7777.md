@@ -3,7 +3,7 @@
 archive/issues_007777.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat jbandlow\n\nKeywords: symmetric functions, inject\n\nThe title says it all. Depends on #7776\n\nIssue created by migration from https://trac.sagemath.org/ticket/7777\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat @jbandlow\n\nKeywords: symmetric functions, inject\n\nThe title says it all. Depends on #7776\n\nIssue created by migration from https://trac.sagemath.org/ticket/7777\n\n",
     "created_at": "2009-12-27T22:29:20Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_007777.json:
     "title": "Implement SymmetricFunctions(QQ).inject_shorthands()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7777",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: sage-combinat
 
-CC:  sage-combinat jbandlow
+CC:  sage-combinat @jbandlow
 
 Keywords: symmetric functions, inject
 
@@ -41,7 +41,7 @@ archive/issue_comments_067052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67052",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_067053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67053",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_067054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67054",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -90,16 +90,16 @@ Although I haven't tested it yet, I'm in principle very happy with the 'green' p
 archive/issue_comments_067055.json:
 ```json
 {
-    "body": "Attachment [trac_7777_symmetric_functions-inject_shorthands-nt.patch](tarball://root/attachments/some-uuid/ticket7777/trac_7777_symmetric_functions-inject_shorthands-nt.patch) by nthiery created at 2010-01-07 19:48:08",
+    "body": "Attachment [trac_7777_symmetric_functions-inject_shorthands-nt.patch](tarball://root/attachments/some-uuid/ticket7777/trac_7777_symmetric_functions-inject_shorthands-nt.patch) by @nthiery created at 2010-01-07 19:48:08",
     "created_at": "2010-01-07T19:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67055",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7777_symmetric_functions-inject_shorthands-nt.patch](tarball://root/attachments/some-uuid/ticket7777/trac_7777_symmetric_functions-inject_shorthands-nt.patch) by nthiery created at 2010-01-07 19:48:08
+Attachment [trac_7777_symmetric_functions-inject_shorthands-nt.patch](tarball://root/attachments/some-uuid/ticket7777/trac_7777_symmetric_functions-inject_shorthands-nt.patch) by @nthiery created at 2010-01-07 19:48:08
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_067056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67056",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_067057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67057",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_067058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67058",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_067059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67059",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_067060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67060",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_067061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67061",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_067062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67062",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_067063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67063",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_067064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67064",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_067065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7777#issuecomment-67065",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

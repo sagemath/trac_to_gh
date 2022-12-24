@@ -3,7 +3,7 @@
 archive/issues_007043.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif dimpase\n\nKeywords: ntl solaris linker\n\nI'm using\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\n```\nC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n/opt/xxxsunstudio12.1/bin/CC -I../include -I.  -O2 -g   -fPIC -c G_LLL_RR.c\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n/opt/xxxsunstudio12.1/bin/CC -I../include -I.  -O2 -g   -fPIC -c vec_ulong.c\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n/opt/xxxsunstudio12.1/bin/CC -I../include -I.  -O2 -g   -fPIC -c vec_vec_ulong.c\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/ntl-5.4.2.p9/src/src'\n/opt/xxxsunstudio12.1/bin/CC -I../include -I.  -O2 -g    -fPIC -shared -o lib`cat DIRNAME`.so FFT.o FacVec.o GF2.o GF2E.o GF2EX.o GF2EXFactoring.o GF2X.o GF2X1.o GF2XFactoring.o GF2XVec.o GetTime.o HNF.o ctools.o LLL.o LLL_FP.o LLL_QP.o LLL_RR.o LLL_XD.o RR.o WordVector.o ZZ.o ZZVec.o ZZX.o ZZX1.o ZZXCharPoly.o ZZXFactoring.o ZZ_p.o ZZ_pE.o ZZ_pEX.o ZZ_pEXFactoring.o ZZ_pX.o ZZ_pX1.o ZZ_pXCharPoly.o ZZ_pXFactoring.o fileio.o lip.o lzz_p.o lzz_pE.o lzz_pEX.o lzz_pEXFactoring.o lzz_pX.o lzz_pX1.o lzz_pXCharPoly.o lzz_pXFactoring.o mat_GF2.o mat_GF2E.o mat_RR.o mat_ZZ.o mat_ZZ_p.o mat_ZZ_pE.o mat_lzz_p.o mat_lzz_pE.o mat_poly_ZZ.o mat_poly_ZZ_p.o mat_poly_lzz_p.o pair_GF2EX_long.o pair_GF2X_long.o pair_ZZX_long.o pair_ZZ_pEX_long.o pair_ZZ_pX_long.o pair_lzz_pEX_long.o pair_lzz_pX_long.o quad_float.o tools.o vec_GF2.o vec_GF2E.o vec_GF2XVec.o vec_RR.o vec_ZZ.o vec_ZZVec.o vec_ZZ_p.o vec_ZZ_pE.o vec_double.o vec_long.o vec_lzz_p.o vec_lzz_pE.o vec_quad_float.o vec_vec_GF2.o vec_vec_GF2E.o vec_vec_RR.o vec_vec_ZZ.o vec_vec_ZZ_p.o vec_vec_ZZ_pE.o vec_vec_long.o vec_vec_lzz_p.o vec_vec_lzz_pE.o vec_xdouble.o xdouble.o G_LLL_FP.o G_LLL_QP.o G_LLL_XD.o G_LLL_RR.o vec_ulong.o vec_vec_ulong.o -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib -lgmp\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nCC: Warning: Option -shared passed to ld, if ld is invoked, ignored otherwise\nld: fatal: option -h and building a dynamic executable are incompatible\nld: fatal: option -f and building a dynamic executable are incompatible\nld: fatal: Flags processing errors\nmake[2]: *** [libntl.so] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/ntl-5.4.2.p9/src/src'\nError creating ntl shared library.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7043\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @dimpase\n\nKeywords: ntl solaris linker\n\nI'm using\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\n```\nC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n/opt/xxxsunstudio12.1/bin/CC -I../include -I.  -O2 -g   -fPIC -c G_LLL_RR.c\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n/opt/xxxsunstudio12.1/bin/CC -I../include -I.  -O2 -g   -fPIC -c vec_ulong.c\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n/opt/xxxsunstudio12.1/bin/CC -I../include -I.  -O2 -g   -fPIC -c vec_vec_ulong.c\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/ntl-5.4.2.p9/src/src'\n/opt/xxxsunstudio12.1/bin/CC -I../include -I.  -O2 -g    -fPIC -shared -o lib`cat DIRNAME`.so FFT.o FacVec.o GF2.o GF2E.o GF2EX.o GF2EXFactoring.o GF2X.o GF2X1.o GF2XFactoring.o GF2XVec.o GetTime.o HNF.o ctools.o LLL.o LLL_FP.o LLL_QP.o LLL_RR.o LLL_XD.o RR.o WordVector.o ZZ.o ZZVec.o ZZX.o ZZX1.o ZZXCharPoly.o ZZXFactoring.o ZZ_p.o ZZ_pE.o ZZ_pEX.o ZZ_pEXFactoring.o ZZ_pX.o ZZ_pX1.o ZZ_pXCharPoly.o ZZ_pXFactoring.o fileio.o lip.o lzz_p.o lzz_pE.o lzz_pEX.o lzz_pEXFactoring.o lzz_pX.o lzz_pX1.o lzz_pXCharPoly.o lzz_pXFactoring.o mat_GF2.o mat_GF2E.o mat_RR.o mat_ZZ.o mat_ZZ_p.o mat_ZZ_pE.o mat_lzz_p.o mat_lzz_pE.o mat_poly_ZZ.o mat_poly_ZZ_p.o mat_poly_lzz_p.o pair_GF2EX_long.o pair_GF2X_long.o pair_ZZX_long.o pair_ZZ_pEX_long.o pair_ZZ_pX_long.o pair_lzz_pEX_long.o pair_lzz_pX_long.o quad_float.o tools.o vec_GF2.o vec_GF2E.o vec_GF2XVec.o vec_RR.o vec_ZZ.o vec_ZZVec.o vec_ZZ_p.o vec_ZZ_pE.o vec_double.o vec_long.o vec_lzz_p.o vec_lzz_pE.o vec_quad_float.o vec_vec_GF2.o vec_vec_GF2E.o vec_vec_RR.o vec_vec_ZZ.o vec_vec_ZZ_p.o vec_vec_ZZ_pE.o vec_vec_long.o vec_vec_lzz_p.o vec_vec_lzz_pE.o vec_xdouble.o xdouble.o G_LLL_FP.o G_LLL_QP.o G_LLL_XD.o G_LLL_RR.o vec_ulong.o vec_vec_ulong.o -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib -lgmp\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nCC: Warning: Option -shared passed to ld, if ld is invoked, ignored otherwise\nld: fatal: option -h and building a dynamic executable are incompatible\nld: fatal: option -f and building a dynamic executable are incompatible\nld: fatal: Flags processing errors\nmake[2]: *** [libntl.so] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/ntl-5.4.2.p9/src/src'\nError creating ntl shared library.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7043\n\n",
     "created_at": "2009-09-28T00:43:35Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_007043.json:
 ```
 Assignee: tbd
 
-CC:  leif dimpase
+CC:  @nexttime @dimpase
 
 Keywords: ntl solaris linker
 
@@ -67,7 +67,7 @@ archive/issue_comments_058304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7043#issuecomment-58304",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_058305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7043#issuecomment-58305",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_058306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7043#issuecomment-58306",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_058307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7043#issuecomment-58307",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_058308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7043#issuecomment-58308",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

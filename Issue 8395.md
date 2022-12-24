@@ -3,7 +3,7 @@
 archive/issues_008395.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  jason ncohen\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/42110dbb598d11d2):\n\n```\n[mvngu@sage mvngu]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: G = Graph({1:[1]}); G\nLooped graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\nsage: G = Graph({1:[1]}, loops=True); G\nLooped graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\nsage: G = Graph({1:[1]}, loops=True, multiedges=True); G\nLooped multi-graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe size of G is 1 because there is one edge, i.e. the single\nself-loop. As shown by the above session, Sage reports the size of G\nas 0. I believe this is a bug. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8395\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout @nathanncohen\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/42110dbb598d11d2):\n\n```\n[mvngu@sage mvngu]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: G = Graph({1:[1]}); G\nLooped graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\nsage: G = Graph({1:[1]}, loops=True); G\nLooped graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\nsage: G = Graph({1:[1]}, loops=True, multiedges=True); G\nLooped multi-graph on 1 vertex\nsage: sum(G.degree())\n1\nsage: G.size()\n0\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nThe size of G is 1 because there is one edge, i.e. the single\nself-loop. As shown by the above session, Sage reports the size of G\nas 0. I believe this is a bug. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8395\n\n",
     "created_at": "2010-02-28T14:52:11Z",
     "labels": [
         "graph theory",
@@ -17,9 +17,9 @@ archive/issues_008395.json:
     "user": "mvngu"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  jason ncohen
+CC:  @jasongrout @nathanncohen
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/42110dbb598d11d2):
 
@@ -100,16 +100,16 @@ Changing status from new to needs_review.
 archive/issue_comments_075219.json:
 ```json
 {
-    "body": "Attachment [trac_8395-part2.patch](tarball://root/attachments/some-uuid/ticket8395/trac_8395-part2.patch) by rlm created at 2010-12-03 16:26:30\n\napply after previous patch",
+    "body": "Attachment [trac_8395-part2.patch](tarball://root/attachments/some-uuid/ticket8395/trac_8395-part2.patch) by @rlmill created at 2010-12-03 16:26:30\n\napply after previous patch",
     "created_at": "2010-12-03T16:26:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8395#issuecomment-75219",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8395-part2.patch](tarball://root/attachments/some-uuid/ticket8395/trac_8395-part2.patch) by rlm created at 2010-12-03 16:26:30
+Attachment [trac_8395-part2.patch](tarball://root/attachments/some-uuid/ticket8395/trac_8395-part2.patch) by @rlmill created at 2010-12-03 16:26:30
 
 apply after previous patch
 
@@ -125,7 +125,7 @@ archive/issue_comments_075220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8395#issuecomment-75220",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_075222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8395",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8395#issuecomment-75222",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

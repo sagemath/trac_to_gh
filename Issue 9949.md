@@ -3,7 +3,7 @@
 archive/issues_009949.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  kcrisman\n\nKeywords: brian brain simulator neuronal dynamics\n\nBrian, a simulator for spiking neural networks, has been recently accepted as an experimental package (see ticket [#9675](http://trac.sagemath.org/sage_trac/ticket/9675) and [Brian's webage](http://www.briansimulator.org/)). In this ticket, it has been suggested the possibility to change it to an optional package. However, at least it should be tested in some different platforms.\n\nCode can be downloaded by clicking [here](http://code.google.com/p/spkg-upload/downloads/detail?name=brian-1.2.1.p0.spkg&can=2&q=) or at Sage's experimental packages page: [http://www.sagemath.org/packages/experimental/](http://www.sagemath.org/packages/experimental/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9950\n\n",
+    "body": "Assignee: tbd\n\nCC:  @kcrisman\n\nKeywords: brian brain simulator neuronal dynamics\n\nBrian, a simulator for spiking neural networks, has been recently accepted as an experimental package (see ticket [#9675](http://trac.sagemath.org/sage_trac/ticket/9675) and [Brian's webage](http://www.briansimulator.org/)). In this ticket, it has been suggested the possibility to change it to an optional package. However, at least it should be tested in some different platforms.\n\nCode can be downloaded by clicking [here](http://code.google.com/p/spkg-upload/downloads/detail?name=brian-1.2.1.p0.spkg&can=2&q=) or at Sage's experimental packages page: [http://www.sagemath.org/packages/experimental/](http://www.sagemath.org/packages/experimental/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9950\n\n",
     "created_at": "2010-09-19T17:51:10Z",
     "labels": [
         "packages: optional",
@@ -19,7 +19,7 @@ archive/issues_009949.json:
 ```
 Assignee: tbd
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Keywords: brian brain simulator neuronal dynamics
 
@@ -68,7 +68,7 @@ archive/issue_comments_099231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9949#issuecomment-99231",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_099232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9949#issuecomment-99232",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_099233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9949#issuecomment-99233",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_099234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9949#issuecomment-99234",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_099235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9949#issuecomment-99235",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_099236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9949#issuecomment-99236",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_099237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9949#issuecomment-99237",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_099238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9949#issuecomment-99238",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_099239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9949#issuecomment-99239",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

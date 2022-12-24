@@ -14,7 +14,7 @@ archive/issues_005420.json:
     "title": "imag(complex(0,1)) gives TypeError (easy)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5420",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5420
 archive/issue_comments_041932.json:
 ```json
 {
-    "body": "Changing assignee from tbd to jason.",
+    "body": "Changing assignee from tbd to @jasongrout.",
     "created_at": "2009-03-13T17:54:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5420#issuecomment-41932",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from tbd to jason.
+Changing assignee from tbd to @jasongrout.
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_041933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5420#issuecomment-41933",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_041934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5420#issuecomment-41934",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

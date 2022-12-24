@@ -14,7 +14,7 @@ archive/issues_005768.json:
     "title": "improve coverage of generators.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5768",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_045122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5768#issuecomment-45122",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_045123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5768#issuecomment-45123",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_045124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5768#issuecomment-45124",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_045125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5768#issuecomment-45125",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_045126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5768#issuecomment-45126",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_045127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5768#issuecomment-45127",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

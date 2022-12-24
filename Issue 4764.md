@@ -3,7 +3,7 @@
 archive/issues_004764.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\n\n```\nsage: f = EllipticCurve('128a').modular_symbol_space()\nsage: f.complement()\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/robert/.sage/sage_notebook/worksheets/admin/110/code/7.py\", line 7, in <module>\n    f.complement()\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 202, in complement\n    raise RuntimeError, \"Computation of complementary space failed (cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\nRuntimeError: Computation of complementary space failed (cut down to rank 18, but should have cut down to rank 1).\n```\n\n\nNote that the error is wrong, as \n\n\n```\nsage: ModularSymbols(128, sign=1)\n          \t\n\nModular Symbols space of dimension 18 for Gamma_0(128) of weight 2 with sign 1 over Rational Field\n```\n\n\nhowever, it should have cut the rank down to 17.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4764\n\n",
+    "body": "Assignee: @craigcitro\n\n\n```\nsage: f = EllipticCurve('128a').modular_symbol_space()\nsage: f.complement()\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/robert/.sage/sage_notebook/worksheets/admin/110/code/7.py\", line 7, in <module>\n    f.complement()\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py\", line 202, in complement\n    raise RuntimeError, \"Computation of complementary space failed (cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\nRuntimeError: Computation of complementary space failed (cut down to rank 18, but should have cut down to rank 1).\n```\n\n\nNote that the error is wrong, as \n\n\n```\nsage: ModularSymbols(128, sign=1)\n          \t\n\nModular Symbols space of dimension 18 for Gamma_0(128) of weight 2 with sign 1 over Rational Field\n```\n\n\nhowever, it should have cut the rank down to 17.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4764\n\n",
     "created_at": "2008-12-12T01:50:28Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_004764.json:
     "title": "Error in computing compliment of modular symbol space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4764",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 
 ```
@@ -64,7 +64,7 @@ archive/issue_comments_036107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4764#issuecomment-36107",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_036108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4764#issuecomment-36108",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_036109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4764#issuecomment-36109",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

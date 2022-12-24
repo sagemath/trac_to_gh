@@ -14,7 +14,7 @@ archive/issues_007471.json:
     "title": "update the patches in the mpir spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7471",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -91,7 +91,7 @@ archive/issue_comments_062929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62929",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_062930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62930",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_062931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62931",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_062932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62932",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_062933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62933",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_062934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62934",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_062935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62935",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

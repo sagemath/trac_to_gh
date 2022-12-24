@@ -3,7 +3,7 @@
 archive/issues_009103.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nI believe the ATLAS package has modifications to the upstream source code, as some files in the 'patches' subdirectory are identical to those in the original source code directory. \n\nFurthermore, ATLAS was apparently updated to the latest upstream source code on February 20th, 2009 (that's what SPKG.txt says), but some of the files in the 'src' directory have modification dates of June 22nd 2009 - some 4 months later. \n\nI don't know for sure who is guilty here, but I've suspicion it might be me, as 'hg log' shows:\n\n\n```\nchangeset:   53:41de1efe8559\nuser:        Robert Miller <rlm@rlmiller.org>\ndate:        Thu Jul 02 14:13:54 2009 -0700\nsummary:     Checked in drkirkby's changes\n\nchangeset:   52:3acaaff52099\nuser:        William Stein <wstein@gmail.com>\ndate:        Tue Jun 02 14:30:03 2009 -0700\nsummary:     fix FAT binary building so only impacts x86 boxes (e.g. not itanium!)\n```\n\n\nSo it looks like I probably screwed up, and Robert did not notice and checked in my changes.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/9103\n\n",
+    "body": "Assignee: @aghitza\n\nI believe the ATLAS package has modifications to the upstream source code, as some files in the 'patches' subdirectory are identical to those in the original source code directory. \n\nFurthermore, ATLAS was apparently updated to the latest upstream source code on February 20th, 2009 (that's what SPKG.txt says), but some of the files in the 'src' directory have modification dates of June 22nd 2009 - some 4 months later. \n\nI don't know for sure who is guilty here, but I've suspicion it might be me, as 'hg log' shows:\n\n\n```\nchangeset:   53:41de1efe8559\nuser:        Robert Miller <rlm@rlmiller.org>\ndate:        Thu Jul 02 14:13:54 2009 -0700\nsummary:     Checked in drkirkby's changes\n\nchangeset:   52:3acaaff52099\nuser:        William Stein <wstein@gmail.com>\ndate:        Tue Jun 02 14:30:03 2009 -0700\nsummary:     fix FAT binary building so only impacts x86 boxes (e.g. not itanium!)\n```\n\n\nSo it looks like I probably screwed up, and Robert did not notice and checked in my changes.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/9103\n\n",
     "created_at": "2010-05-31T11:22:31Z",
     "labels": [
         "algebra",
@@ -17,7 +17,7 @@ archive/issues_009103.json:
     "user": "drkirkby"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 I believe the ATLAS package has modifications to the upstream source code, as some files in the 'patches' subdirectory are identical to those in the original source code directory. 
 
@@ -52,16 +52,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9103
 archive/issue_comments_084595.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to tbd.",
+    "body": "Changing assignee from @aghitza to tbd.",
     "created_at": "2010-09-02T11:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9103#issuecomment-84595",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from AlexGhitza to tbd.
+Changing assignee from @aghitza to tbd.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_084596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9103#issuecomment-84596",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_084597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9103#issuecomment-84597",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_084598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9103#issuecomment-84598",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

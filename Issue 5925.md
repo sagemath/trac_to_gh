@@ -3,7 +3,7 @@
 archive/issues_005925.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n- Treat the case where _multiply_basis returns a monomial specially, to avoid creating lots of temporary dictionaries.  Speeds things up significantly.\n- Use z_elt.get(m,ABRzero) to provide a default value.  Faster.\n- Pull left_c * right_c out of inner loop.  Didn't time this, but it must be faster.\n- Replace first use of BR with ABR so that BR isn't used twice in the same function for different rings.\n- Add doctests so the four major cases are all tested locally.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5925\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n- Treat the case where _multiply_basis returns a monomial specially, to avoid creating lots of temporary dictionaries.  Speeds things up significantly.\n- Use z_elt.get(m,ABRzero) to provide a default value.  Faster.\n- Pull left_c * right_c out of inner loop.  Didn't time this, but it must be faster.\n- Replace first use of BR with ABR so that BR isn't used twice in the same function for different rings.\n- Add doctests so the four major cases are all tested locally.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5925\n\n",
     "created_at": "2009-04-29T01:04:40Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005925.json:
     "title": "[with patch, needs review] Improve speed of CombinatorialAlgebra.multiply()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5925",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5925
 archive/issue_comments_046843.json:
 ```json
 {
-    "body": "Attachment [multiply.patch](tarball://root/attachments/some-uuid/ticket5925/multiply.patch) by jdc created at 2009-04-29 01:05:18\n\npatch against 3.4",
+    "body": "Attachment [multiply.patch](tarball://root/attachments/some-uuid/ticket5925/multiply.patch) by @jdchristensen created at 2009-04-29 01:05:18\n\npatch against 3.4",
     "created_at": "2009-04-29T01:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5925#issuecomment-46843",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 
-Attachment [multiply.patch](tarball://root/attachments/some-uuid/ticket5925/multiply.patch) by jdc created at 2009-04-29 01:05:18
+Attachment [multiply.patch](tarball://root/attachments/some-uuid/ticket5925/multiply.patch) by @jdchristensen created at 2009-04-29 01:05:18
 
 patch against 3.4
 
@@ -63,7 +63,7 @@ archive/issue_comments_046844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5925#issuecomment-46844",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_046846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5925#issuecomment-46846",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_046847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5925#issuecomment-46847",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_046849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5925#issuecomment-46849",
-    "user": "jdc"
+    "user": "@jdchristensen"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_046850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5925#issuecomment-46850",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_046851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5925#issuecomment-46851",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_046852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5925#issuecomment-46852",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

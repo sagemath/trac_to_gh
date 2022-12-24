@@ -3,7 +3,7 @@
 archive/issues_005890.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was cremona\n\nKeywords: elliptic curve field\n\nAs noted at #5765, `ell_generic.py` has some functions that do not make sense over a general ring and should rather be moved down to `ell_field.py` or one of its descendants.\n\nNote also William's comment from #5765: I think it would be nice to be able to implement the elliptic curve factorization method (ECM) without having to use this hack:\n\n\n```\nR = Zmod(N)\nR.is_field = lambda: True\nE = EllipticCurve(R, [-1,0])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5890\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @JohnCremona\n\nKeywords: elliptic curve field\n\nAs noted at #5765, `ell_generic.py` has some functions that do not make sense over a general ring and should rather be moved down to `ell_field.py` or one of its descendants.\n\nNote also William's comment from #5765: I think it would be nice to be able to implement the elliptic curve factorization method (ECM) without having to use this hack:\n\n\n```\nR = Zmod(N)\nR.is_field = lambda: True\nE = EllipticCurve(R, [-1,0])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5890\n\n",
     "created_at": "2009-04-24T23:43:37Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_005890.json:
     "title": "clean up schemes/elliptic_curves/ell_generic.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5890",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was cremona
+CC:  @williamstein @JohnCremona
 
 Keywords: elliptic curve field
 
@@ -52,7 +52,7 @@ archive/issue_comments_046570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46570",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_046571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46571",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_046572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46572",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -116,16 +116,16 @@ There are more things to do, but they are issues with the generic code for curve
 archive/issue_comments_046573.json:
 ```json
 {
-    "body": "Changing assignee from was to AlexGhitza.",
+    "body": "Changing assignee from @williamstein to @aghitza.",
     "created_at": "2009-04-25T05:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46573",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to AlexGhitza.
+Changing assignee from @williamstein to @aghitza.
 
 
 
@@ -139,7 +139,7 @@ archive/issue_comments_046574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46574",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_046575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46575",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -170,16 +170,16 @@ depends on the latest patch at #5765
 archive/issue_comments_046576.json:
 ```json
 {
-    "body": "Attachment [trac_5890.patch](tarball://root/attachments/some-uuid/ticket5890/trac_5890.patch) by AlexGhitza created at 2009-04-25 05:26:32",
+    "body": "Attachment [trac_5890.patch](tarball://root/attachments/some-uuid/ticket5890/trac_5890.patch) by @aghitza created at 2009-04-25 05:26:32",
     "created_at": "2009-04-25T05:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46576",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5890.patch](tarball://root/attachments/some-uuid/ticket5890/trac_5890.patch) by AlexGhitza created at 2009-04-25 05:26:32
+Attachment [trac_5890.patch](tarball://root/attachments/some-uuid/ticket5890/trac_5890.patch) by @aghitza created at 2009-04-25 05:26:32
 
 
 
@@ -193,7 +193,7 @@ archive/issue_comments_046577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46577",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

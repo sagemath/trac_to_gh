@@ -3,7 +3,7 @@
 archive/issues_005345.json:
 ```json
 {
-    "body": "Assignee: rbeezer\n\nKeywords: transpose\n\nThis patch has two changes to the transpose method in matrix_dense.pyx to provide about a 15% speedup.  If this is accepted, I'll look into the other non-sparse routines for transpose and antitranspose.\n\n1.  A double loop indexes into the list of matrix entries using multiplication to create a reordered list for the transpose.  The effect of the multiplications is replaced by repeated additions.\n\n2.  Retrieving the list in the original matrix makes a copy with list().  This has been replaced by the internal _list() to just reference the original.\n\nPasses  sage -t  for  matrix2.pyx  and  matrix_dense.pyx\n\n```\nm = identity_matrix(5000)\ntime m.transpose()\n```\n\nTimings (user + system):\n\n11.94s : Stock 3.3\n\n11.20s : No multiplication\n\n10.18s : No multiplication, with _list()\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5345\n\n",
+    "body": "Assignee: @rbeezer\n\nKeywords: transpose\n\nThis patch has two changes to the transpose method in matrix_dense.pyx to provide about a 15% speedup.  If this is accepted, I'll look into the other non-sparse routines for transpose and antitranspose.\n\n1.  A double loop indexes into the list of matrix entries using multiplication to create a reordered list for the transpose.  The effect of the multiplications is replaced by repeated additions.\n\n2.  Retrieving the list in the original matrix makes a copy with list().  This has been replaced by the internal _list() to just reference the original.\n\nPasses  sage -t  for  matrix2.pyx  and  matrix_dense.pyx\n\n```\nm = identity_matrix(5000)\ntime m.transpose()\n```\n\nTimings (user + system):\n\n11.94s : Stock 3.3\n\n11.20s : No multiplication\n\n10.18s : No multiplication, with _list()\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5345\n\n",
     "created_at": "2009-02-23T02:02:11Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005345.json:
     "title": "Optimize transpose for dense matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5345",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: rbeezer
+Assignee: @rbeezer
 
 Keywords: transpose
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5345
 archive/issue_comments_041170.json:
 ```json
 {
-    "body": "Attachment [trac-5345-transpose-optimize.patch](tarball://root/attachments/some-uuid/ticket5345/trac-5345-transpose-optimize.patch) by rbeezer created at 2009-02-23 02:03:28",
+    "body": "Attachment [trac-5345-transpose-optimize.patch](tarball://root/attachments/some-uuid/ticket5345/trac-5345-transpose-optimize.patch) by @rbeezer created at 2009-02-23 02:03:28",
     "created_at": "2009-02-23T02:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5345#issuecomment-41170",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac-5345-transpose-optimize.patch](tarball://root/attachments/some-uuid/ticket5345/trac-5345-transpose-optimize.patch) by rbeezer created at 2009-02-23 02:03:28
+Attachment [trac-5345-transpose-optimize.patch](tarball://root/attachments/some-uuid/ticket5345/trac-5345-transpose-optimize.patch) by @rbeezer created at 2009-02-23 02:03:28
 
 
 
@@ -153,7 +153,7 @@ archive/issue_comments_041174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5345#issuecomment-41174",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_041178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5345#issuecomment-41178",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_041180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5345#issuecomment-41180",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_041185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5345#issuecomment-41185",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_041190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5345#issuecomment-41190",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

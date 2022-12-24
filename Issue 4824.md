@@ -3,7 +3,7 @@
 archive/issues_004824.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is kind of sad, given that pari(...) is done entirely in C-level Cython compiled code in memory, and the magma(...) conversion is done using pexpect and the file system!\n\n```\nsage: a = random_matrix(ZZ,1000,x=-10,y=10)\nsage: time m = magma(a)\nCPU times: user 0.14 s, sys: 0.02 s, total: 0.16 s\nWall time: 0.36 s\nsage: time b= pari(a)\nCPU times: user 21.51 s, sys: 0.72 s, total: 22.23 s\nWall time: 22.24 s\n```\n\n\nFixing this will help with some algorithms, such as Hermite form. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4824\n\n",
+    "body": "Assignee: @williamstein\n\nThis is kind of sad, given that pari(...) is done entirely in C-level Cython compiled code in memory, and the magma(...) conversion is done using pexpect and the file system!\n\n```\nsage: a = random_matrix(ZZ,1000,x=-10,y=10)\nsage: time m = magma(a)\nCPU times: user 0.14 s, sys: 0.02 s, total: 0.16 s\nWall time: 0.36 s\nsage: time b= pari(a)\nCPU times: user 21.51 s, sys: 0.72 s, total: 22.23 s\nWall time: 22.24 s\n```\n\n\nFixing this will help with some algorithms, such as Hermite form. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4824\n\n",
     "created_at": "2008-12-18T01:25:11Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004824.json:
     "title": "speed up conversion of matrices from sage to pari",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4824",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is kind of sad, given that pari(...) is done entirely in C-level Cython compiled code in memory, and the magma(...) conversion is done using pexpect and the file system!
 
@@ -50,7 +50,7 @@ archive/issue_comments_036578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4824#issuecomment-36578",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_036579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4824#issuecomment-36579",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_036580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4824#issuecomment-36580",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_036581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4824",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4824#issuecomment-36581",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

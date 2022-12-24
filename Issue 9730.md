@@ -201,16 +201,16 @@ Modified version of rc4.patch including sanity checks (passed doctests)
 archive/issue_comments_095106.json:
 ```json
 {
-    "body": "Attachment [rc4_mod1.patch](tarball://root/attachments/some-uuid/ticket9730/rc4_mod1.patch) by chapoton created at 2013-08-22 17:17:55\n\napply rc4_mod1.patch",
+    "body": "Attachment [rc4_mod1.patch](tarball://root/attachments/some-uuid/ticket9730/rc4_mod1.patch) by @fchapoton created at 2013-08-22 17:17:55\n\napply rc4_mod1.patch",
     "created_at": "2013-08-22T17:17:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9730#issuecomment-95106",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [rc4_mod1.patch](tarball://root/attachments/some-uuid/ticket9730/rc4_mod1.patch) by chapoton created at 2013-08-22 17:17:55
+Attachment [rc4_mod1.patch](tarball://root/attachments/some-uuid/ticket9730/rc4_mod1.patch) by @fchapoton created at 2013-08-22 17:17:55
 
 apply rc4_mod1.patch
 
@@ -226,7 +226,7 @@ archive/issue_comments_095107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9730#issuecomment-95107",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -239,16 +239,16 @@ apply only rc4_mod1.patch
 archive/issue_comments_095108.json:
 ```json
 {
-    "body": "Attachment [trac_9730_addon.patch](tarball://root/attachments/some-uuid/ticket9730/trac_9730_addon.patch) by chapoton created at 2013-08-22 17:31:12",
+    "body": "Attachment [trac_9730_addon.patch](tarball://root/attachments/some-uuid/ticket9730/trac_9730_addon.patch) by @fchapoton created at 2013-08-22 17:31:12",
     "created_at": "2013-08-22T17:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9730#issuecomment-95108",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_9730_addon.patch](tarball://root/attachments/some-uuid/ticket9730/trac_9730_addon.patch) by chapoton created at 2013-08-22 17:31:12
+Attachment [trac_9730_addon.patch](tarball://root/attachments/some-uuid/ticket9730/trac_9730_addon.patch) by @fchapoton created at 2013-08-22 17:31:12
 
 
 
@@ -262,7 +262,7 @@ archive/issue_comments_095109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9730#issuecomment-95109",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

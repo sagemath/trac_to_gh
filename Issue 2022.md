@@ -14,7 +14,7 @@ archive/issues_002022.json:
     "title": "[with patch] bug with load and loads when data is not compressed during save",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2022",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody

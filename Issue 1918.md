@@ -3,7 +3,7 @@
 archive/issues_001918.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  hivert nthiery\n\nThe rows of matrices in a list right now do not line up when printed, even though carriage returns are inserted as if they should line up.  That means all the matrices look *very* messed up when printing a list of matrices.\n\nIn the command line:\n\n\n```\nsage: list(MatrixSpace(GF(2),2))\n\n[[0 0]\n[0 0],\n [1 0]\n[0 0],\n [0 1]\n[0 0],\n [0 0]\n[1 0],\n [0 0]\n[0 1],\n [1 1]\n[0 0],\n [1 0]\n[1 0],\n [1 0]\n[0 1],\n [0 1]\n[1 0],\n [0 1]\n[0 1],\n [0 0]\n[1 1],\n [1 1]\n[1 0],\n [1 1]\n[0 1],\n [1 0]\n[1 1],\n [0 1]\n[1 1],\n [1 1]\n[1 1]]\n```\n\n\nIn the notebook, it's worse.  Each matrix is chopped in half and continues at the start of the next line.  This gives the appearance of matrices that are not part of the list (one row of one matrix and another row from a different matrix).\n\n\n```\n[[0 0]\n[0 0], [1 0]\n[0 0], [0 1]\n[0 0], [0 0]\n[1 0], [0 0]\n[0 1], [1 1]\n[0 0], [1 0]\n[1 0], [1 0]\n[0 1], [0 1]\n[1 0], [0 1]\n[0 1], [0 0]\n[1 1], [1 1]\n[1 0], [1 1]\n[0 1], [1 0]\n[1 1], [0 1]\n[1 1], [1 1]\n[1 1]]\n```\n\n\nAn example of better output would be:\n\n\n```\nsage: list(MatrixSpace(GF(2),2))\n\n[\n[0 0]\n[0 0],\n\n[1 0]\n[0 0],\n\n[0 1]\n[0 0],\n\n[0 0]\n[1 0],\n\n[0 0]\n[0 1],\n\n[1 1]\n[0 0],\n\n[1 0]\n[1 0],\n\n[1 0]\n[0 1],\n\n[0 1]\n[1 0],\n\n[0 1]\n[0 1],\n\n[0 0]\n[1 1],\n\n[1 1]\n[1 0],\n\n[1 1]\n[0 1],\n\n[1 0]\n[1 1],\n\n[0 1]\n[1 1],\n\n[1 1]\n[1 1]]\n```\n\n\nOr even better:\n\n```\n[\n[0 0]  [1 0]  [0 1]  [0 0]  [0 0]  [1 1]  \n[0 0], [0 0], [0 0], [1 0], [0 1], [0 0], \n\n[1 0]  [1 0]  [0 1]  [0 1]  [0 0]  [1 1]\n[1 0], [0 1], [1 0], [0 1], [1 1], [1 0],\n\n[1 1]  [1 0]  [0 1]  [1 1]\n[0 1], [1 1], [1 1], [1 1]\n]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1918\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @hivert @nthiery\n\nThe rows of matrices in a list right now do not line up when printed, even though carriage returns are inserted as if they should line up.  That means all the matrices look *very* messed up when printing a list of matrices.\n\nIn the command line:\n\n\n```\nsage: list(MatrixSpace(GF(2),2))\n\n[[0 0]\n[0 0],\n [1 0]\n[0 0],\n [0 1]\n[0 0],\n [0 0]\n[1 0],\n [0 0]\n[0 1],\n [1 1]\n[0 0],\n [1 0]\n[1 0],\n [1 0]\n[0 1],\n [0 1]\n[1 0],\n [0 1]\n[0 1],\n [0 0]\n[1 1],\n [1 1]\n[1 0],\n [1 1]\n[0 1],\n [1 0]\n[1 1],\n [0 1]\n[1 1],\n [1 1]\n[1 1]]\n```\n\n\nIn the notebook, it's worse.  Each matrix is chopped in half and continues at the start of the next line.  This gives the appearance of matrices that are not part of the list (one row of one matrix and another row from a different matrix).\n\n\n```\n[[0 0]\n[0 0], [1 0]\n[0 0], [0 1]\n[0 0], [0 0]\n[1 0], [0 0]\n[0 1], [1 1]\n[0 0], [1 0]\n[1 0], [1 0]\n[0 1], [0 1]\n[1 0], [0 1]\n[0 1], [0 0]\n[1 1], [1 1]\n[1 0], [1 1]\n[0 1], [1 0]\n[1 1], [0 1]\n[1 1], [1 1]\n[1 1]]\n```\n\n\nAn example of better output would be:\n\n\n```\nsage: list(MatrixSpace(GF(2),2))\n\n[\n[0 0]\n[0 0],\n\n[1 0]\n[0 0],\n\n[0 1]\n[0 0],\n\n[0 0]\n[1 0],\n\n[0 0]\n[0 1],\n\n[1 1]\n[0 0],\n\n[1 0]\n[1 0],\n\n[1 0]\n[0 1],\n\n[0 1]\n[1 0],\n\n[0 1]\n[0 1],\n\n[0 0]\n[1 1],\n\n[1 1]\n[1 0],\n\n[1 1]\n[0 1],\n\n[1 0]\n[1 1],\n\n[0 1]\n[1 1],\n\n[1 1]\n[1 1]]\n```\n\n\nOr even better:\n\n```\n[\n[0 0]  [1 0]  [0 1]  [0 0]  [0 0]  [1 1]  \n[0 0], [0 0], [0 0], [1 0], [0 1], [0 0], \n\n[1 0]  [1 0]  [0 1]  [0 1]  [0 0]  [1 1]\n[1 0], [0 1], [1 0], [0 1], [1 1], [1 0],\n\n[1 1]  [1 0]  [0 1]  [1 1]\n[0 1], [1 1], [1 1], [1 1]\n]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1918\n\n",
     "created_at": "2008-01-25T01:27:06Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_001918.json:
     "title": "Matrices that are printed are not aligned",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1918",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  hivert nthiery
+CC:  @hivert @nthiery
 
 The rows of matrices in a list right now do not line up when printed, even though carriage returns are inserted as if they should line up.  That means all the matrices look *very* messed up when printing a list of matrices.
 
@@ -178,7 +178,7 @@ archive/issue_comments_012144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1918#issuecomment-12144",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_012145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1918#issuecomment-12145",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_012147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1918#issuecomment-12147",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_012153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1918#issuecomment-12153",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -401,7 +401,7 @@ archive/issue_comments_012154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1918#issuecomment-12154",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_012155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1918#issuecomment-12155",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_012157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1918#issuecomment-12157",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_012158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1918#issuecomment-12158",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_012159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1918#issuecomment-12159",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -562,7 +562,7 @@ archive/issue_comments_012160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1918#issuecomment-12160",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -643,7 +643,7 @@ archive/issue_comments_012162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1918#issuecomment-12162",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

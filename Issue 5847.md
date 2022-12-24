@@ -3,7 +3,7 @@
 archive/issues_005847.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  zimmerma dimpase\n\n\n```\nChanges between ecm-6.2.1 and ecm-6.2.2:\n* Updated build project files for Visual C by Brian Gladman, also adds\nmissing NTT_GFP_TWIDDLE_DI[FT]_BREAKOVER defines in VC parameter file\n* Fixed uninitialised parameter to P-1 probability computation\n* In tune.c : fixed generation of NTT_GFP_TWIDDLE_DI[FT]_BREAKOVER values,\navoid calling cputime() excessively often when timing short functions,\nfixed access to uninitialised memory\n* Fixed serious split infinitive in configure script (thanks Paul Leyland)\n* Removed unnecessary carry propagation in x86_64 mulredc code, slight\nspeedup (thanks Philip McLaughlin)\n* Fixed non-portable PIC code in x86_64/redc.asm\n* Fixed problem with pattern matching host type names in configure.in\n* Converted binary constants in spv.c and ntt_gfp.c to hexadecimal,\nsome assembler do not support binary constants\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5847\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @zimmermann6 @dimpase\n\n\n```\nChanges between ecm-6.2.1 and ecm-6.2.2:\n* Updated build project files for Visual C by Brian Gladman, also adds\nmissing NTT_GFP_TWIDDLE_DI[FT]_BREAKOVER defines in VC parameter file\n* Fixed uninitialised parameter to P-1 probability computation\n* In tune.c : fixed generation of NTT_GFP_TWIDDLE_DI[FT]_BREAKOVER values,\navoid calling cputime() excessively often when timing short functions,\nfixed access to uninitialised memory\n* Fixed serious split infinitive in configure script (thanks Paul Leyland)\n* Removed unnecessary carry propagation in x86_64 mulredc code, slight\nspeedup (thanks Philip McLaughlin)\n* Fixed non-portable PIC code in x86_64/redc.asm\n* Fixed problem with pattern matching host type names in configure.in\n* Converted binary constants in spv.c and ntt_gfp.c to hexadecimal,\nsome assembler do not support binary constants\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5847\n\n",
     "created_at": "2009-04-21T23:49:57Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_005847.json:
 ```
 Assignee: mabshoff
 
-CC:  zimmerma dimpase
+CC:  @zimmermann6 @dimpase
 
 
 ```
@@ -60,7 +60,7 @@ archive/issue_comments_045993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-45993",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_045994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-45994",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_045995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-45995",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_045996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-45996",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_045997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-45997",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_045998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-45998",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -240,16 +240,16 @@ Same for Fedora 13 x86 (Pentium 4 Prescott, gcc 4.4.4, parallel build with 6 job
 archive/issue_comments_045999.json:
 ```json
 {
-    "body": "Attachment [trac_5847-GMP-ECM-6.3_spkg_update-reviewer.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-GMP-ECM-6.3_spkg_update-reviewer.patch) by leif created at 2010-09-03 03:12:15\n\nSuggested changes - NOT (yet) a Mercurial patch. (Minor fixes, some comments added, some clean-up.)",
+    "body": "Attachment [trac_5847-GMP-ECM-6.3_spkg_update-reviewer.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-GMP-ECM-6.3_spkg_update-reviewer.patch) by @nexttime created at 2010-09-03 03:12:15\n\nSuggested changes - NOT (yet) a Mercurial patch. (Minor fixes, some comments added, some clean-up.)",
     "created_at": "2010-09-03T03:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-45999",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_5847-GMP-ECM-6.3_spkg_update-reviewer.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-GMP-ECM-6.3_spkg_update-reviewer.patch) by leif created at 2010-09-03 03:12:15
+Attachment [trac_5847-GMP-ECM-6.3_spkg_update-reviewer.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-GMP-ECM-6.3_spkg_update-reviewer.patch) by @nexttime created at 2010-09-03 03:12:15
 
 Suggested changes - NOT (yet) a Mercurial patch. (Minor fixes, some comments added, some clean-up.)
 
@@ -265,7 +265,7 @@ archive/issue_comments_046000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46000",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_046001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46001",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_046002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46002",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_046003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46003",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -351,16 +351,16 @@ SPKG "reviewer" patch, based on Mike's, i.e. ecm-6.3 vs. ecm-6.3.p0. For referen
 archive/issue_comments_046004.json:
 ```json
 {
-    "body": "Attachment [trac_5847-ecm-6.3_vs._ecm-6.3.p0-spkg.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3_vs._ecm-6.3.p0-spkg.patch) by jdemeyer created at 2010-11-04 15:50:23\n\nBuilt and tested on sage.math.washington.edu without problems.",
+    "body": "Attachment [trac_5847-ecm-6.3_vs._ecm-6.3.p0-spkg.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3_vs._ecm-6.3.p0-spkg.patch) by @jdemeyer created at 2010-11-04 15:50:23\n\nBuilt and tested on sage.math.washington.edu without problems.",
     "created_at": "2010-11-04T15:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46004",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_5847-ecm-6.3_vs._ecm-6.3.p0-spkg.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3_vs._ecm-6.3.p0-spkg.patch) by jdemeyer created at 2010-11-04 15:50:23
+Attachment [trac_5847-ecm-6.3_vs._ecm-6.3.p0-spkg.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3_vs._ecm-6.3.p0-spkg.patch) by @jdemeyer created at 2010-11-04 15:50:23
 
 Built and tested on sage.math.washington.edu without problems.
 
@@ -371,16 +371,16 @@ Built and tested on sage.math.washington.edu without problems.
 archive/issue_comments_046005.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to leif.",
+    "body": "Changing assignee from mabshoff to @nexttime.",
     "created_at": "2010-11-04T18:32:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46005",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Changing assignee from mabshoff to leif.
+Changing assignee from mabshoff to @nexttime.
 
 
 
@@ -394,7 +394,7 @@ archive/issue_comments_046006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46006",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -460,7 +460,7 @@ archive/issue_comments_046007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46007",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -473,16 +473,16 @@ Log file for failed build on OS X 10.4 powerpc G5
 archive/issue_comments_046008.json:
 ```json
 {
-    "body": "Attachment [ecm-6.3.p0.log](tarball://root/attachments/some-uuid/ticket5847/ecm-6.3.p0.log) by jdemeyer created at 2010-11-04 19:58:41",
+    "body": "Attachment [ecm-6.3.p0.log](tarball://root/attachments/some-uuid/ticket5847/ecm-6.3.p0.log) by @jdemeyer created at 2010-11-04 19:58:41",
     "created_at": "2010-11-04T19:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46008",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [ecm-6.3.p0.log](tarball://root/attachments/some-uuid/ticket5847/ecm-6.3.p0.log) by jdemeyer created at 2010-11-04 19:58:41
+Attachment [ecm-6.3.p0.log](tarball://root/attachments/some-uuid/ticket5847/ecm-6.3.p0.log) by @jdemeyer created at 2010-11-04 19:58:41
 
 
 
@@ -496,7 +496,7 @@ archive/issue_comments_046009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46009",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_046010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46010",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_046011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46011",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_046012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46012",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_046013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46013",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -647,7 +647,7 @@ archive/issue_comments_046014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46014",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -672,7 +672,7 @@ archive/issue_comments_046015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46015",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -690,7 +690,7 @@ archive/issue_comments_046016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46016",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -723,7 +723,7 @@ archive/issue_comments_046017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46017",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -758,7 +758,7 @@ archive/issue_comments_046018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46018",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -778,7 +778,7 @@ archive/issue_comments_046019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46019",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -798,7 +798,7 @@ archive/issue_comments_046020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46020",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -869,7 +869,7 @@ archive/issue_comments_046021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46021",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -889,7 +889,7 @@ archive/issue_comments_046022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46022",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -930,7 +930,7 @@ archive/issue_comments_046023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46023",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -948,7 +948,7 @@ archive/issue_comments_046024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46024",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -981,7 +981,7 @@ archive/issue_comments_046025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46025",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1018,7 +1018,7 @@ archive/issue_comments_046026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46026",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1036,7 +1036,7 @@ archive/issue_comments_046027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46027",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1064,7 +1064,7 @@ archive/issue_comments_046028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46028",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1110,7 +1110,7 @@ archive/issue_comments_046029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46029",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1189,7 +1189,7 @@ archive/issue_comments_046030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46030",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1207,7 +1207,7 @@ archive/issue_comments_046031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46031",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1241,7 +1241,7 @@ archive/issue_comments_046032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46032",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1272,7 +1272,7 @@ archive/issue_comments_046033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46033",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1290,7 +1290,7 @@ archive/issue_comments_046034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46034",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1303,16 +1303,16 @@ macosx 10.5 ppc G4 failure of ./configure
 archive/issue_comments_046035.json:
 ```json
 {
-    "body": "Attachment [config.log](tarball://root/attachments/some-uuid/ticket5847/config.log) by dimpase created at 2010-11-07 05:01:14\n\nReplying to [comment:33 leif]:\n> Replying to [comment:32 dimpase]:\n> > on MacOSX 10.5 PPC (G4) I get\n> > \n\n```\n checking what assembly label suffix to use... :\n checking if globals are prefixed by underscore... configure: error: Test program links neither with nor without underscore.\n Error configuring GMP-ECM.\n```\n\n \n> Can you attach the `config.log`?\n\ndone\n\n> \n> (Maybe weird `CFLAGS` etc. settings in your environment?)\nno, it's rather prosaic\n\n```\n$ gcc -g conftes1.o conftes2.o \ncollect2: ld terminated with signal 10 [Bus error]\nld warning: can't find atom for stabs FUN at 00000000 in conftes2.o\n```\n",
+    "body": "Attachment [config.log](tarball://root/attachments/some-uuid/ticket5847/config.log) by @dimpase created at 2010-11-07 05:01:14\n\nReplying to [comment:33 leif]:\n> Replying to [comment:32 dimpase]:\n> > on MacOSX 10.5 PPC (G4) I get\n> > \n\n```\n checking what assembly label suffix to use... :\n checking if globals are prefixed by underscore... configure: error: Test program links neither with nor without underscore.\n Error configuring GMP-ECM.\n```\n\n \n> Can you attach the `config.log`?\n\ndone\n\n> \n> (Maybe weird `CFLAGS` etc. settings in your environment?)\nno, it's rather prosaic\n\n```\n$ gcc -g conftes1.o conftes2.o \ncollect2: ld terminated with signal 10 [Bus error]\nld warning: can't find atom for stabs FUN at 00000000 in conftes2.o\n```\n",
     "created_at": "2010-11-07T05:01:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46035",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [config.log](tarball://root/attachments/some-uuid/ticket5847/config.log) by dimpase created at 2010-11-07 05:01:14
+Attachment [config.log](tarball://root/attachments/some-uuid/ticket5847/config.log) by @dimpase created at 2010-11-07 05:01:14
 
 Replying to [comment:33 leif]:
 > Replying to [comment:32 dimpase]:
@@ -1353,7 +1353,7 @@ archive/issue_comments_046036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46036",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1404,7 +1404,7 @@ archive/issue_comments_046037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46037",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1422,7 +1422,7 @@ archive/issue_comments_046038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46038",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1485,7 +1485,7 @@ archive/issue_comments_046039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46039",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1510,16 +1510,16 @@ I'll attach config.log, just in case.
 archive/issue_comments_046040.json:
 ```json
 {
-    "body": "Attachment [c.log](tarball://root/attachments/some-uuid/ticket5847/c.log) by dimpase created at 2010-11-07 06:46:34\n\nmacosx 10.5 ppc G4 with tweaked ./configure --disable-asm-redc (adding extra command in conftes2.s)",
+    "body": "Attachment [c.log](tarball://root/attachments/some-uuid/ticket5847/c.log) by @dimpase created at 2010-11-07 06:46:34\n\nmacosx 10.5 ppc G4 with tweaked ./configure --disable-asm-redc (adding extra command in conftes2.s)",
     "created_at": "2010-11-07T06:46:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46040",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [c.log](tarball://root/attachments/some-uuid/ticket5847/c.log) by dimpase created at 2010-11-07 06:46:34
+Attachment [c.log](tarball://root/attachments/some-uuid/ticket5847/c.log) by @dimpase created at 2010-11-07 06:46:34
 
 macosx 10.5 ppc G4 with tweaked ./configure --disable-asm-redc (adding extra command in conftes2.s)
 
@@ -1535,7 +1535,7 @@ archive/issue_comments_046041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46041",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1564,7 +1564,7 @@ archive/issue_comments_046042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46042",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1589,7 +1589,7 @@ archive/issue_comments_046043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46043",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1616,7 +1616,7 @@ archive/issue_comments_046044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46044",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1647,7 +1647,7 @@ archive/issue_comments_046045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46045",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1694,7 +1694,7 @@ archive/issue_comments_046046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46046",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1719,7 +1719,7 @@ archive/issue_comments_046047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46047",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1766,7 +1766,7 @@ archive/issue_comments_046048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46048",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1808,7 +1808,7 @@ archive/issue_comments_046049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46049",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1830,7 +1830,7 @@ archive/issue_comments_046050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46050",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1858,7 +1858,7 @@ archive/issue_comments_046051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46051",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -1887,7 +1887,7 @@ archive/issue_comments_046052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46052",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -2022,7 +2022,7 @@ archive/issue_comments_046053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46053",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -2050,7 +2050,7 @@ archive/issue_comments_046054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46054",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2076,7 +2076,7 @@ archive/issue_comments_046055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46055",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -2123,7 +2123,7 @@ archive/issue_comments_046056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46056",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2143,7 +2143,7 @@ archive/issue_comments_046057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46057",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2161,7 +2161,7 @@ archive/issue_comments_046058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46058",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2174,16 +2174,16 @@ patch from p0 to p1, for review
 archive/issue_comments_046059.json:
 ```json
 {
-    "body": "Attachment [ecm-6.3.p1.patch](tarball://root/attachments/some-uuid/ticket5847/ecm-6.3.p1.patch) by jdemeyer created at 2010-11-11 13:14:26",
+    "body": "Attachment [ecm-6.3.p1.patch](tarball://root/attachments/some-uuid/ticket5847/ecm-6.3.p1.patch) by @jdemeyer created at 2010-11-11 13:14:26",
     "created_at": "2010-11-11T13:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46059",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [ecm-6.3.p1.patch](tarball://root/attachments/some-uuid/ticket5847/ecm-6.3.p1.patch) by jdemeyer created at 2010-11-11 13:14:26
+Attachment [ecm-6.3.p1.patch](tarball://root/attachments/some-uuid/ticket5847/ecm-6.3.p1.patch) by @jdemeyer created at 2010-11-11 13:14:26
 
 
 
@@ -2197,7 +2197,7 @@ archive/issue_comments_046060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46060",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2215,7 +2215,7 @@ archive/issue_comments_046061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46061",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -2233,7 +2233,7 @@ archive/issue_comments_046062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46062",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -2254,7 +2254,7 @@ archive/issue_comments_046063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46063",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2272,7 +2272,7 @@ archive/issue_comments_046064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46064",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2290,7 +2290,7 @@ archive/issue_comments_046065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46065",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2308,7 +2308,7 @@ archive/issue_comments_046066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46066",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2326,7 +2326,7 @@ archive/issue_comments_046067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46067",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2344,7 +2344,7 @@ archive/issue_comments_046068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46068",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2373,7 +2373,7 @@ archive/issue_comments_046069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46069",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2391,7 +2391,7 @@ archive/issue_comments_046070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46070",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2461,7 +2461,7 @@ archive/issue_comments_046071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46071",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2479,7 +2479,7 @@ archive/issue_comments_046072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46072",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2505,7 +2505,7 @@ archive/issue_comments_046073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46073",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2534,7 +2534,7 @@ archive/issue_comments_046074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46074",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2554,7 +2554,7 @@ archive/issue_comments_046075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46075",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -2575,7 +2575,7 @@ archive/issue_comments_046076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46076",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2593,7 +2593,7 @@ archive/issue_comments_046077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46077",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2624,7 +2624,7 @@ archive/issue_comments_046078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46078",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2642,7 +2642,7 @@ archive/issue_comments_046079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46079",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2670,7 +2670,7 @@ archive/issue_comments_046080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46080",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2734,7 +2734,7 @@ archive/issue_comments_046081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46081",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2764,7 +2764,7 @@ archive/issue_comments_046082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46082",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2782,7 +2782,7 @@ archive/issue_comments_046083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46083",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2805,7 +2805,7 @@ archive/issue_comments_046084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46084",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2825,7 +2825,7 @@ archive/issue_comments_046085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46085",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2853,7 +2853,7 @@ archive/issue_comments_046086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46086",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2880,7 +2880,7 @@ archive/issue_comments_046087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46087",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2910,7 +2910,7 @@ archive/issue_comments_046088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46088",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -2940,7 +2940,7 @@ archive/issue_comments_046089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46089",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2988,7 +2988,7 @@ archive/issue_comments_046090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46090",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -3016,7 +3016,7 @@ archive/issue_comments_046091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46091",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -3034,7 +3034,7 @@ archive/issue_comments_046092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46092",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3056,7 +3056,7 @@ archive/issue_comments_046093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46093",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3074,7 +3074,7 @@ archive/issue_comments_046094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46094",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3092,7 +3092,7 @@ archive/issue_comments_046095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46095",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3162,16 +3162,16 @@ A new MPIR (2.1.3.p2) spkg which handles `CFLAGS` better (allowing us to use pro
 archive/issue_comments_046096.json:
 ```json
 {
-    "body": "Attachment [trac_5847-ecm-6.3.p1-p2.diff](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3.p1-p2.diff) by leif created at 2010-11-25 14:55:13\n\nDiff between the p1 and the p2 spkg. For reference / review.",
+    "body": "Attachment [trac_5847-ecm-6.3.p1-p2.diff](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3.p1-p2.diff) by @nexttime created at 2010-11-25 14:55:13\n\nDiff between the p1 and the p2 spkg. For reference / review.",
     "created_at": "2010-11-25T14:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46096",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_5847-ecm-6.3.p1-p2.diff](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3.p1-p2.diff) by leif created at 2010-11-25 14:55:13
+Attachment [trac_5847-ecm-6.3.p1-p2.diff](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3.p1-p2.diff) by @nexttime created at 2010-11-25 14:55:13
 
 Diff between the p1 and the p2 spkg. For reference / review.
 
@@ -3182,16 +3182,16 @@ Diff between the p1 and the p2 spkg. For reference / review.
 archive/issue_comments_046097.json:
 ```json
 {
-    "body": "Attachment [trac_5847-ecm-6.3.p1-p2.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3.p1-p2.patch) by leif created at 2010-11-25 15:44:15\n\nMercurial patch to get the p2 from the p1 spkg. Except for the commit messages perhaps less readable. (6 changesets.)",
+    "body": "Attachment [trac_5847-ecm-6.3.p1-p2.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3.p1-p2.patch) by @nexttime created at 2010-11-25 15:44:15\n\nMercurial patch to get the p2 from the p1 spkg. Except for the commit messages perhaps less readable. (6 changesets.)",
     "created_at": "2010-11-25T15:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46097",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_5847-ecm-6.3.p1-p2.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3.p1-p2.patch) by leif created at 2010-11-25 15:44:15
+Attachment [trac_5847-ecm-6.3.p1-p2.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-ecm-6.3.p1-p2.patch) by @nexttime created at 2010-11-25 15:44:15
 
 Mercurial patch to get the p2 from the p1 spkg. Except for the commit messages perhaps less readable. (6 changesets.)
 
@@ -3207,7 +3207,7 @@ archive/issue_comments_046098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46098",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -3229,7 +3229,7 @@ archive/issue_comments_046099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46099",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3255,7 +3255,7 @@ archive/issue_comments_046100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46100",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -3273,7 +3273,7 @@ archive/issue_comments_046101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46101",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3294,7 +3294,7 @@ archive/issue_comments_046102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46102",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -3377,7 +3377,7 @@ archive/issue_comments_046106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46106",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3428,7 +3428,7 @@ archive/issue_comments_046107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46107",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3453,7 +3453,7 @@ archive/issue_comments_046108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46108",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3604,7 +3604,7 @@ archive/issue_comments_046113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46113",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3622,7 +3622,7 @@ archive/issue_comments_046114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46114",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3709,7 +3709,7 @@ archive/issue_comments_046115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46115",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3729,7 +3729,7 @@ archive/issue_comments_046116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46116",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3805,7 +3805,7 @@ archive/issue_comments_046118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46118",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3869,7 +3869,7 @@ archive/issue_comments_046120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46120",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3895,16 +3895,16 @@ May take 1-2 hours until I upload a Mercurial patch.
 archive/issue_comments_046121.json:
 ```json
 {
-    "body": "Attachment [trac_5847-module_list-fix_execstack-sagelib.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-module_list-fix_execstack-sagelib.patch) by leif created at 2011-06-02 19:50:04\n\nSage library patch. Fixes 'execstack' issue on Fedora with GCC 4.6.0. Based on Sage 4.7.rc2.",
+    "body": "Attachment [trac_5847-module_list-fix_execstack-sagelib.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-module_list-fix_execstack-sagelib.patch) by @nexttime created at 2011-06-02 19:50:04\n\nSage library patch. Fixes 'execstack' issue on Fedora with GCC 4.6.0. Based on Sage 4.7.rc2.",
     "created_at": "2011-06-02T19:50:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46121",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_5847-module_list-fix_execstack-sagelib.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-module_list-fix_execstack-sagelib.patch) by leif created at 2011-06-02 19:50:04
+Attachment [trac_5847-module_list-fix_execstack-sagelib.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-module_list-fix_execstack-sagelib.patch) by @nexttime created at 2011-06-02 19:50:04
 
 Sage library patch. Fixes 'execstack' issue on Fedora with GCC 4.6.0. Based on Sage 4.7.rc2.
 
@@ -3920,7 +3920,7 @@ archive/issue_comments_046122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46122",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3938,7 +3938,7 @@ archive/issue_comments_046123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46123",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -4007,7 +4007,7 @@ archive/issue_comments_046126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46126",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -4030,7 +4030,7 @@ archive/issue_comments_046127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46127",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4076,7 +4076,7 @@ archive/issue_comments_046129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46129",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -4097,7 +4097,7 @@ archive/issue_comments_046130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46130",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4115,7 +4115,7 @@ archive/issue_comments_046131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46131",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4133,7 +4133,7 @@ archive/issue_comments_046132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46132",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -4151,16 +4151,16 @@ Though positively reviewed (and independent of other tickets / spkgs), this tick
 archive/issue_comments_046133.json:
 ```json
 {
-    "body": "Attachment [trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch) by leif created at 2011-07-05 10:54:38\n\nSage library patch. Fixes 'execstack' issue on Fedora with GCC 4.6.0. Rebased to Sage 4.7.1.alpha4. (Cf. #11377)",
+    "body": "Attachment [trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch) by @nexttime created at 2011-07-05 10:54:38\n\nSage library patch. Fixes 'execstack' issue on Fedora with GCC 4.6.0. Rebased to Sage 4.7.1.alpha4. (Cf. #11377)",
     "created_at": "2011-07-05T10:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46133",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch) by leif created at 2011-07-05 10:54:38
+Attachment [trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch](tarball://root/attachments/some-uuid/ticket5847/trac_5847-module_list-fix_execstack-sagelib-rebased_to_4.7.1.alpha4.patch) by @nexttime created at 2011-07-05 10:54:38
 
 Sage library patch. Fixes 'execstack' issue on Fedora with GCC 4.6.0. Rebased to Sage 4.7.1.alpha4. (Cf. #11377)
 
@@ -4176,7 +4176,7 @@ archive/issue_comments_046134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46134",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -4194,7 +4194,7 @@ archive/issue_comments_046135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46135",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -4212,7 +4212,7 @@ archive/issue_comments_046136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46136",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -4230,7 +4230,7 @@ archive/issue_comments_046137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46137",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -4248,7 +4248,7 @@ archive/issue_comments_046138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46138",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -4269,7 +4269,7 @@ archive/issue_comments_046139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46139",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -4293,7 +4293,7 @@ archive/issue_comments_046140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46140",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -4311,7 +4311,7 @@ archive/issue_comments_046141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46141",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -4329,7 +4329,7 @@ archive/issue_comments_046142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46142",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -4349,7 +4349,7 @@ archive/issue_comments_046143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5847#issuecomment-46143",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

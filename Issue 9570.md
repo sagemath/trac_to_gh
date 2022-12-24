@@ -14,7 +14,7 @@ archive/issues_009570.json:
     "title": "Wrong LP solver ordering",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9570",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, jkantor
@@ -39,7 +39,7 @@ archive/issue_comments_092418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9570#issuecomment-92418",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_092419.json:
 ```json
 {
-    "body": "Attachment [trac_9570.patch](tarball://root/attachments/some-uuid/ticket9570/trac_9570.patch) by ncohen created at 2010-07-22 02:57:28",
+    "body": "Attachment [trac_9570.patch](tarball://root/attachments/some-uuid/ticket9570/trac_9570.patch) by @nathanncohen created at 2010-07-22 02:57:28",
     "created_at": "2010-07-22T02:57:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9570#issuecomment-92419",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9570.patch](tarball://root/attachments/some-uuid/ticket9570/trac_9570.patch) by ncohen created at 2010-07-22 02:57:28
+Attachment [trac_9570.patch](tarball://root/attachments/some-uuid/ticket9570/trac_9570.patch) by @nathanncohen created at 2010-07-22 02:57:28
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_092422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9570#issuecomment-92422",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_092423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9570#issuecomment-92423",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_092424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9570#issuecomment-92424",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_092425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9570#issuecomment-92425",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

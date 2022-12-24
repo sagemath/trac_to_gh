@@ -3,7 +3,7 @@
 archive/issues_001239.json:
 ```json
 {
-    "body": "Assignee: was\n\nScripts were recently updated http://www.math.unicaen.fr/~simon/\n\nIt now handles two-torsion more uniformly, works on more curves, and actually returns points on the curve given. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1239\n\n",
+    "body": "Assignee: @williamstein\n\nScripts were recently updated http://www.math.unicaen.fr/~simon/\n\nIt now handles two-torsion more uniformly, works on more curves, and actually returns points on the curve given. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1239\n\n",
     "created_at": "2007-11-21T19:43:50Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001239.json:
     "title": "Wrap Simon's new gp two descent code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1239",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Scripts were recently updated http://www.math.unicaen.fr/~simon/
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1239
 archive/issue_comments_007742.json:
 ```json
 {
-    "body": "Attachment [extcode_simon_code.patch](tarball://root/attachments/some-uuid/ticket1239/extcode_simon_code.patch) by robertwb created at 2007-11-21 19:46:18",
+    "body": "Attachment [extcode_simon_code.patch](tarball://root/attachments/some-uuid/ticket1239/extcode_simon_code.patch) by @robertwb created at 2007-11-21 19:46:18",
     "created_at": "2007-11-21T19:46:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1239#issuecomment-7742",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [extcode_simon_code.patch](tarball://root/attachments/some-uuid/ticket1239/extcode_simon_code.patch) by robertwb created at 2007-11-21 19:46:18
+Attachment [extcode_simon_code.patch](tarball://root/attachments/some-uuid/ticket1239/extcode_simon_code.patch) by @robertwb created at 2007-11-21 19:46:18
 
 
 
@@ -52,16 +52,16 @@ Attachment [extcode_simon_code.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_007743.json:
 ```json
 {
-    "body": "Attachment [simon-interface.hg](tarball://root/attachments/some-uuid/ticket1239/simon-interface.hg) by robertwb created at 2007-11-21 19:48:48\n\nJohn Cremona and I worked on this during Sage Days 6. \n\nThe attached patches have the new version of the code (to be applied to extcode) and a revised interface. \n\nThis also includes an implementation of transformations between different Weierstrass models.",
+    "body": "Attachment [simon-interface.hg](tarball://root/attachments/some-uuid/ticket1239/simon-interface.hg) by @robertwb created at 2007-11-21 19:48:48\n\nJohn Cremona and I worked on this during Sage Days 6. \n\nThe attached patches have the new version of the code (to be applied to extcode) and a revised interface. \n\nThis also includes an implementation of transformations between different Weierstrass models.",
     "created_at": "2007-11-21T19:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1239#issuecomment-7743",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [simon-interface.hg](tarball://root/attachments/some-uuid/ticket1239/simon-interface.hg) by robertwb created at 2007-11-21 19:48:48
+Attachment [simon-interface.hg](tarball://root/attachments/some-uuid/ticket1239/simon-interface.hg) by @robertwb created at 2007-11-21 19:48:48
 
 John Cremona and I worked on this during Sage Days 6. 
 
@@ -76,16 +76,16 @@ This also includes an implementation of transformations between different Weiers
 archive/issue_comments_007744.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-11-21T19:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1239#issuecomment-7744",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_007745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1239#issuecomment-7745",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_007746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1239#issuecomment-7746",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_007747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1239#issuecomment-7747",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -188,16 +188,16 @@ archive/issue_comments_007747.json:
 archive/issue_comments_007748.json:
 ```json
 {
-    "body": "Attachment [trac-1239.patch](tarball://root/attachments/some-uuid/ticket1239/trac-1239.patch) by was created at 2007-12-15 07:22:15\n\ntentative_trac-1239.patch",
+    "body": "Attachment [trac-1239.patch](tarball://root/attachments/some-uuid/ticket1239/trac-1239.patch) by @williamstein created at 2007-12-15 07:22:15\n\ntentative_trac-1239.patch",
     "created_at": "2007-12-15T07:22:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1239#issuecomment-7748",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1239.patch](tarball://root/attachments/some-uuid/ticket1239/trac-1239.patch) by was created at 2007-12-15 07:22:15
+Attachment [trac-1239.patch](tarball://root/attachments/some-uuid/ticket1239/trac-1239.patch) by @williamstein created at 2007-12-15 07:22:15
 
 tentative_trac-1239.patch
 
@@ -213,7 +213,7 @@ archive/issue_comments_007749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1239#issuecomment-7749",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -226,16 +226,16 @@ archive/issue_comments_007749.json:
 archive/issue_comments_007750.json:
 ```json
 {
-    "body": "Attachment [1239-docstring-issues.patch](tarball://root/attachments/some-uuid/ticket1239/1239-docstring-issues.patch) by robertwb created at 2007-12-15 07:51:31",
+    "body": "Attachment [1239-docstring-issues.patch](tarball://root/attachments/some-uuid/ticket1239/1239-docstring-issues.patch) by @robertwb created at 2007-12-15 07:51:31",
     "created_at": "2007-12-15T07:51:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1239#issuecomment-7750",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1239-docstring-issues.patch](tarball://root/attachments/some-uuid/ticket1239/1239-docstring-issues.patch) by robertwb created at 2007-12-15 07:51:31
+Attachment [1239-docstring-issues.patch](tarball://root/attachments/some-uuid/ticket1239/1239-docstring-issues.patch) by @robertwb created at 2007-12-15 07:51:31
 
 
 
@@ -249,7 +249,7 @@ archive/issue_comments_007751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1239#issuecomment-7751",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_007752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1239#issuecomment-7752",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -282,16 +282,16 @@ Changing status from new to assigned.
 archive/issue_comments_007753.json:
 ```json
 {
-    "body": "Attachment [1239-integrality-issues.patch](tarball://root/attachments/some-uuid/ticket1239/1239-integrality-issues.patch) by robertwb created at 2007-12-15 08:32:27\n\nTurned out to be an indentation issue. Also added another doctest. \n\nShould be ready to go in now.",
+    "body": "Attachment [1239-integrality-issues.patch](tarball://root/attachments/some-uuid/ticket1239/1239-integrality-issues.patch) by @robertwb created at 2007-12-15 08:32:27\n\nTurned out to be an indentation issue. Also added another doctest. \n\nShould be ready to go in now.",
     "created_at": "2007-12-15T08:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1239",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1239#issuecomment-7753",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1239-integrality-issues.patch](tarball://root/attachments/some-uuid/ticket1239/1239-integrality-issues.patch) by robertwb created at 2007-12-15 08:32:27
+Attachment [1239-integrality-issues.patch](tarball://root/attachments/some-uuid/ticket1239/1239-integrality-issues.patch) by @robertwb created at 2007-12-15 08:32:27
 
 Turned out to be an indentation issue. Also added another doctest. 
 

@@ -3,7 +3,7 @@
 archive/issues_001055.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe current implementation of quadratic number fields calculates the discriminant on initialization, which can be expensive and is unnecessary. \n\nElements are represented as a+b sqrt(D) / denom. I don't believe that we require D to be the discriminant, but this needs to be verified before a change is made. For efficiency reasons, it might be worth doing trial division to reduce squares of small prime powers from D, as smaller D yields faster arithmetic. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1055\n\n",
+    "body": "Assignee: @williamstein\n\nThe current implementation of quadratic number fields calculates the discriminant on initialization, which can be expensive and is unnecessary. \n\nElements are represented as a+b sqrt(D) / denom. I don't believe that we require D to be the discriminant, but this needs to be verified before a change is made. For efficiency reasons, it might be worth doing trial division to reduce squares of small prime powers from D, as smaller D yields faster arithmetic. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1055\n\n",
     "created_at": "2007-11-01T20:27:44Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001055.json:
     "title": "Don't factor discriminant for quadratic number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1055",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The current implementation of quadratic number fields calculates the discriminant on initialization, which can be expensive and is unnecessary. 
 
@@ -40,7 +40,7 @@ archive/issue_comments_006415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1055#issuecomment-6415",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -53,16 +53,16 @@ easy to fix?
 archive/issue_comments_006416.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-11-03T17:06:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1055#issuecomment-6416",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_006417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1055#issuecomment-6417",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -89,16 +89,16 @@ Changing status from new to assigned.
 archive/issue_comments_006418.json:
 ```json
 {
-    "body": "Attachment [1055-quad-nf.diff](tarball://root/attachments/some-uuid/ticket1055/1055-quad-nf.diff) by robertwb created at 2007-11-03 22:17:38",
+    "body": "Attachment [1055-quad-nf.diff](tarball://root/attachments/some-uuid/ticket1055/1055-quad-nf.diff) by @robertwb created at 2007-11-03 22:17:38",
     "created_at": "2007-11-03T22:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1055#issuecomment-6418",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1055-quad-nf.diff](tarball://root/attachments/some-uuid/ticket1055/1055-quad-nf.diff) by robertwb created at 2007-11-03 22:17:38
+Attachment [1055-quad-nf.diff](tarball://root/attachments/some-uuid/ticket1055/1055-quad-nf.diff) by @robertwb created at 2007-11-03 22:17:38
 
 
 

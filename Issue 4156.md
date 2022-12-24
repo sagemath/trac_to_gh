@@ -3,7 +3,7 @@
 archive/issues_004156.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nIt's a small one, which is only part of the doctesting part of the code, and the code will soon be removed entirely, but no point letting it leak...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4156\n\n",
+    "body": "Assignee: @rlmill\n\nIt's a small one, which is only part of the doctesting part of the code, and the code will soon be removed entirely, but no point letting it leak...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4156\n\n",
     "created_at": "2008-09-20T08:35:40Z",
     "labels": [
         "memleak",
@@ -14,10 +14,10 @@ archive/issues_004156.json:
     "title": "[with patch, needs review] memleak in graph_isom",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4156",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 It's a small one, which is only part of the doctesting part of the code, and the code will soon be removed entirely, but no point letting it leak...
 

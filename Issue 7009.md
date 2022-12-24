@@ -14,7 +14,7 @@ archive/issues_007009.json:
     "title": "Formatted output options for ciphertext",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7009",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: somebody

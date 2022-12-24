@@ -3,7 +3,7 @@
 archive/issues_008558.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  slelievre\n\nKeywords: gcd, pari, number field\n\nQuestion arised here,\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/0f5b029970e1a4e2/fcec7d0e35474fbd#fcec7d0e35474fbd\n\nunivariate gcd is performed using euclidean algorithm, which causes explosion of coefficients and is slow but for trivial examples. Instead we should use pari that performs better.\n\n1.- Add a _pari_ function for absolute number fields taht work\n\n2.- Add gcd using pari for absolute number fields\n\n3.- For relative number fields, pass to an absolute representation. This may be slow. But for the cases where this is slow the current implementation may be unfeasible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8558\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @slel\n\nKeywords: gcd, pari, number field\n\nQuestion arised here,\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/0f5b029970e1a4e2/fcec7d0e35474fbd#fcec7d0e35474fbd\n\nunivariate gcd is performed using euclidean algorithm, which causes explosion of coefficients and is slow but for trivial examples. Instead we should use pari that performs better.\n\n1.- Add a _pari_ function for absolute number fields taht work\n\n2.- Add gcd using pari for absolute number fields\n\n3.- For relative number fields, pass to an absolute representation. This may be slow. But for the cases where this is slow the current implementation may be unfeasible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8558\n\n",
     "created_at": "2010-03-18T17:14:43Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008558.json:
     "title": "Make gcd use pari for univariate polynomial rings over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8558",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  slelievre
+CC:  @slel
 
 Keywords: gcd, pari, number field
 
@@ -51,7 +51,7 @@ archive/issue_comments_077423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77423",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_077424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77424",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -82,16 +82,16 @@ Changing keywords from "gcd, pari, number field" to "gcd, pari, ntl, number fiel
 archive/issue_comments_077425.json:
 ```json
 {
-    "body": "Attachment [13911.patch](tarball://root/attachments/some-uuid/ticket8558/13911.patch) by lftabera created at 2010-03-27 19:15:04\n\nThe pari algorithm is not fast enough. I have implemented a modular algorithm using ntl.\n\nThe patch needs doctest and integration in sage (it is, right now, a separate function).\n\nIt adds a new function modular_gcd\n\nTo test it, apply the patch and\n\nfrom sage.rings.polynomial.polynomial_absolute_number_field import modular_gcd\n\nSome timmings: (800 Mhz i386 linux, 1Gb ram)\n\n\n```\nsage: N.<a>=NumberField(x^3 -123)         \nsage: K.<t>=N[]                           \nsage: f=K.random_element(degree=2)        \nsage: g1=K.random_element(degree=15)      \nsage: g2=K.random_element(degree=15)      \nsage: h1=f*g1                             \nsage: h2=f*g2                             \nsage: %time modular_gcd(h1,h2,'pari')     \nCPU times: user 0.30 s, sys: 0.00 s, total: 0.30 s\nWall time: 0.31 s                                 \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\nsage: %time modular_gcd(h1,h2)                                                                                \nCPU times: user 0.10 s, sys: 0.00 s, total: 0.10 s                                                            \nWall time: 0.12 s                                                                                             \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\nsage: %time modular_gcd(h1,h2,'euclidean')                                                                    \nCPU times: user 11.28 s, sys: 0.05 s, total: 11.33 s                                                          \nWall time: 12.21 s                                                                                            \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\n```\n\n\n\n```\nsage: N.<a>=NumberField(x^10 - 123)\nsage: K.<t>=N[]\nsage: f=K.random_element(degree=2)\nsage: g1=K.random_element(degree=15)\nsage: g2=K.random_element(degree=15)\nsage: h1=f*g1\nsage: h2=f*g2\nsage: %time l=modular_gcd(h1,h2,'pari')\nCPU times: user 30.06 s, sys: 0.02 s, total: 30.07 s\nWall time: 32.15 s\nsage: %time l=modular_gcd(h1,h2,'modular')\nCPU times: user 0.43 s, sys: 0.00 s, total: 0.43 s\nWall time: 0.47 s\n```\n",
+    "body": "Attachment [13911.patch](tarball://root/attachments/some-uuid/ticket8558/13911.patch) by @lftabera created at 2010-03-27 19:15:04\n\nThe pari algorithm is not fast enough. I have implemented a modular algorithm using ntl.\n\nThe patch needs doctest and integration in sage (it is, right now, a separate function).\n\nIt adds a new function modular_gcd\n\nTo test it, apply the patch and\n\nfrom sage.rings.polynomial.polynomial_absolute_number_field import modular_gcd\n\nSome timmings: (800 Mhz i386 linux, 1Gb ram)\n\n\n```\nsage: N.<a>=NumberField(x^3 -123)         \nsage: K.<t>=N[]                           \nsage: f=K.random_element(degree=2)        \nsage: g1=K.random_element(degree=15)      \nsage: g2=K.random_element(degree=15)      \nsage: h1=f*g1                             \nsage: h2=f*g2                             \nsage: %time modular_gcd(h1,h2,'pari')     \nCPU times: user 0.30 s, sys: 0.00 s, total: 0.30 s\nWall time: 0.31 s                                 \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\nsage: %time modular_gcd(h1,h2)                                                                                \nCPU times: user 0.10 s, sys: 0.00 s, total: 0.10 s                                                            \nWall time: 0.12 s                                                                                             \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\nsage: %time modular_gcd(h1,h2,'euclidean')                                                                    \nCPU times: user 11.28 s, sys: 0.05 s, total: 11.33 s                                                          \nWall time: 12.21 s                                                                                            \nt^2 + (-35396/663609*a^2 + 92498/663609*a + 1750733/663609)*t - 1312/663609*a^2 + 3026/221203*a + 66060/221203\n```\n\n\n\n```\nsage: N.<a>=NumberField(x^10 - 123)\nsage: K.<t>=N[]\nsage: f=K.random_element(degree=2)\nsage: g1=K.random_element(degree=15)\nsage: g2=K.random_element(degree=15)\nsage: h1=f*g1\nsage: h2=f*g2\nsage: %time l=modular_gcd(h1,h2,'pari')\nCPU times: user 30.06 s, sys: 0.02 s, total: 30.07 s\nWall time: 32.15 s\nsage: %time l=modular_gcd(h1,h2,'modular')\nCPU times: user 0.43 s, sys: 0.00 s, total: 0.43 s\nWall time: 0.47 s\n```\n",
     "created_at": "2010-03-27T19:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77425",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [13911.patch](tarball://root/attachments/some-uuid/ticket8558/13911.patch) by lftabera created at 2010-03-27 19:15:04
+Attachment [13911.patch](tarball://root/attachments/some-uuid/ticket8558/13911.patch) by @lftabera created at 2010-03-27 19:15:04
 
 The pari algorithm is not fast enough. I have implemented a modular algorithm using ntl.
 
@@ -159,7 +159,7 @@ archive/issue_comments_077426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77426",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_077427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77427",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_077428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77428",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_077429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77429",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -257,16 +257,16 @@ Added the method also for number fields of degree 1 using Flint in this special 
 archive/issue_comments_077430.json:
 ```json
 {
-    "body": "Attachment [14371.patch](tarball://root/attachments/some-uuid/ticket8558/14371.patch) by lftabera created at 2010-09-14 13:20:27\n\nNow that #4000 has possitive review, I raise the priority of this one.\n\nUpdated patch to work in 4.5.3\n\nNow, it works also for relative number fields, passing to an absolute representation and performing there the computations. This is not optimal but it is usable.\n\nIf the extension of the field is one, then the gcd of QQ[x] is used wich is faster.",
+    "body": "Attachment [14371.patch](tarball://root/attachments/some-uuid/ticket8558/14371.patch) by @lftabera created at 2010-09-14 13:20:27\n\nNow that #4000 has possitive review, I raise the priority of this one.\n\nUpdated patch to work in 4.5.3\n\nNow, it works also for relative number fields, passing to an absolute representation and performing there the computations. This is not optimal but it is usable.\n\nIf the extension of the field is one, then the gcd of QQ[x] is used wich is faster.",
     "created_at": "2010-09-14T13:20:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77430",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [14371.patch](tarball://root/attachments/some-uuid/ticket8558/14371.patch) by lftabera created at 2010-09-14 13:20:27
+Attachment [14371.patch](tarball://root/attachments/some-uuid/ticket8558/14371.patch) by @lftabera created at 2010-09-14 13:20:27
 
 Now that #4000 has possitive review, I raise the priority of this one.
 
@@ -288,7 +288,7 @@ archive/issue_comments_077431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77431",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -301,16 +301,16 @@ Changing priority from minor to major.
 archive/issue_comments_077432.json:
 ```json
 {
-    "body": "Attachment [trac-5885.patch](tarball://root/attachments/some-uuid/ticket8558/trac-5885.patch) by cremona created at 2010-10-29 19:37:24\n\nI can confirm that the patch applies fine to 4.6.rc0 and all tests (including long) pass.\n\nThere are some minor problems with the documentation (just punctuation) -- now I am studying the code, since this looks like very useful functionality!",
+    "body": "Attachment [trac-5885.patch](tarball://root/attachments/some-uuid/ticket8558/trac-5885.patch) by @JohnCremona created at 2010-10-29 19:37:24\n\nI can confirm that the patch applies fine to 4.6.rc0 and all tests (including long) pass.\n\nThere are some minor problems with the documentation (just punctuation) -- now I am studying the code, since this looks like very useful functionality!",
     "created_at": "2010-10-29T19:37:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77432",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-5885.patch](tarball://root/attachments/some-uuid/ticket8558/trac-5885.patch) by cremona created at 2010-10-29 19:37:24
+Attachment [trac-5885.patch](tarball://root/attachments/some-uuid/ticket8558/trac-5885.patch) by @JohnCremona created at 2010-10-29 19:37:24
 
 I can confirm that the patch applies fine to 4.6.rc0 and all tests (including long) pass.
 
@@ -328,7 +328,7 @@ archive/issue_comments_077433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77433",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_077434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77434",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_077435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77435",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -383,16 +383,16 @@ avoid next_prime, better exceptions
 archive/issue_comments_077436.json:
 ```json
 {
-    "body": "Attachment [trac-8558.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.patch) by lftabera created at 2011-03-28 10:46:13",
+    "body": "Attachment [trac-8558.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.patch) by @lftabera created at 2011-03-28 10:46:13",
     "created_at": "2011-03-28T10:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77436",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [trac-8558.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.patch) by lftabera created at 2011-03-28 10:46:13
+Attachment [trac-8558.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.patch) by @lftabera created at 2011-03-28 10:46:13
 
 
 
@@ -406,7 +406,7 @@ archive/issue_comments_077437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77437",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_077438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77438",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -442,7 +442,7 @@ archive/issue_comments_077439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77439",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_077440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77440",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -482,7 +482,7 @@ archive/issue_comments_077441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77441",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_077442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77442",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_077443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77443",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_077444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77444",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -562,7 +562,7 @@ archive/issue_comments_077445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77445",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -625,7 +625,7 @@ archive/issue_comments_077446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77446",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -643,7 +643,7 @@ archive/issue_comments_077447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77447",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -661,7 +661,7 @@ archive/issue_comments_077448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77448",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -694,7 +694,7 @@ archive/issue_comments_077449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77449",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -712,7 +712,7 @@ archive/issue_comments_077450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77450",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -737,7 +737,7 @@ archive/issue_comments_077451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77451",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -755,7 +755,7 @@ archive/issue_comments_077452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77452",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -775,7 +775,7 @@ archive/issue_comments_077453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77453",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -788,16 +788,16 @@ rebase to 5.8.beta2
 archive/issue_comments_077454.json:
 ```json
 {
-    "body": "Attachment [trac-8558.2.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.2.patch) by lftabera created at 2013-03-03 20:02:49\n\nApply: trac-8558.2.patch",
+    "body": "Attachment [trac-8558.2.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.2.patch) by @lftabera created at 2013-03-03 20:02:49\n\nApply: trac-8558.2.patch",
     "created_at": "2013-03-03T20:02:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77454",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [trac-8558.2.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.2.patch) by lftabera created at 2013-03-03 20:02:49
+Attachment [trac-8558.2.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.2.patch) by @lftabera created at 2013-03-03 20:02:49
 
 Apply: trac-8558.2.patch
 
@@ -813,7 +813,7 @@ archive/issue_comments_077455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77455",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -831,7 +831,7 @@ archive/issue_comments_077456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77456",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -862,7 +862,7 @@ archive/issue_comments_077457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77457",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -880,7 +880,7 @@ archive/issue_comments_077458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77458",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -898,7 +898,7 @@ archive/issue_comments_077459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77459",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -911,16 +911,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_077460.json:
 ```json
 {
-    "body": "Attachment [trac-8558.2.2.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.2.2.patch) by lftabera created at 2013-12-20 12:28:14\n\nrebase to 5.13",
+    "body": "Attachment [trac-8558.2.2.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.2.2.patch) by @lftabera created at 2013-12-20 12:28:14\n\nrebase to 5.13",
     "created_at": "2013-12-20T12:28:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77460",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [trac-8558.2.2.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.2.2.patch) by lftabera created at 2013-12-20 12:28:14
+Attachment [trac-8558.2.2.patch](tarball://root/attachments/some-uuid/ticket8558/trac-8558.2.2.patch) by @lftabera created at 2013-12-20 12:28:14
 
 rebase to 5.13
 
@@ -936,7 +936,7 @@ archive/issue_comments_077461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77461",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -954,7 +954,7 @@ archive/issue_comments_077462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77462",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -990,7 +990,7 @@ archive/issue_comments_077464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77464",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1008,7 +1008,7 @@ archive/issue_comments_077465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77465",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -1044,7 +1044,7 @@ archive/issue_comments_077467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77467",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -1064,7 +1064,7 @@ archive/issue_comments_077468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77468",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1122,7 +1122,7 @@ archive/issue_comments_077471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77471",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1140,7 +1140,7 @@ archive/issue_comments_077472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77472",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1158,7 +1158,7 @@ archive/issue_comments_077473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77473",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1194,7 +1194,7 @@ archive/issue_comments_077475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77475",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1212,7 +1212,7 @@ archive/issue_comments_077476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77476",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1230,7 +1230,7 @@ archive/issue_comments_077477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77477",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -1274,7 +1274,7 @@ archive/issue_comments_077479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77479",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1367,7 +1367,7 @@ archive/issue_comments_077480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77480",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1385,7 +1385,7 @@ archive/issue_comments_077481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77481",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1403,7 +1403,7 @@ archive/issue_comments_077482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77482",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1421,7 +1421,7 @@ archive/issue_comments_077483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77483",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1451,7 +1451,7 @@ archive/issue_comments_077484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77484",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1469,7 +1469,7 @@ archive/issue_comments_077485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77485",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1520,7 +1520,7 @@ archive/issue_comments_077487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77487",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1538,7 +1538,7 @@ archive/issue_comments_077488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77488",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1576,7 +1576,7 @@ archive/issue_comments_077490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77490",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1612,7 +1612,7 @@ archive/issue_comments_077492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77492",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1630,7 +1630,7 @@ archive/issue_comments_077493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77493",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1648,7 +1648,7 @@ archive/issue_comments_077494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77494",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -1666,7 +1666,7 @@ archive/issue_comments_077495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77495",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -1702,7 +1702,7 @@ archive/issue_comments_077497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77497",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1724,7 +1724,7 @@ archive/issue_comments_077498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77498",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1742,7 +1742,7 @@ archive/issue_comments_077499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77499",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -1763,7 +1763,7 @@ archive/issue_comments_077500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77500",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -1781,7 +1781,7 @@ archive/issue_comments_077501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77501",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -1799,7 +1799,7 @@ archive/issue_comments_077502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77502",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1817,7 +1817,7 @@ archive/issue_comments_077503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77503",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -1835,7 +1835,7 @@ archive/issue_comments_077504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77504",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -1853,7 +1853,7 @@ archive/issue_comments_077505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8558",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8558#issuecomment-77505",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

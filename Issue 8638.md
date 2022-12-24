@@ -14,7 +14,7 @@ archive/issues_008638.json:
     "title": "iconv -- make with SAGE_CHECK=\"yes\" fails on iconv with x86_64 ubuntu",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8638",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: kirkby
@@ -116,7 +116,7 @@ archive/issue_comments_078327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78327",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_078328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78328",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_078329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78329",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_078330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78330",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_078331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78331",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_078332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78332",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_078333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78333",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

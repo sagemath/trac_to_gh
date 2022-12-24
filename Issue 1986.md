@@ -14,7 +14,7 @@ archive/issues_001986.json:
     "title": "Numerical noise in fast evaluation code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1986",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: failure
@@ -70,7 +70,7 @@ archive/issue_comments_012861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1986#issuecomment-12861",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -92,16 +92,16 @@ I thought the ... would take care of it. I'd be happy to make a patch, if someon
 archive/issue_comments_012862.json:
 ```json
 {
-    "body": "Attachment [trac-1986.patch](tarball://root/attachments/some-uuid/ticket1986/trac-1986.patch) by was created at 2008-02-02 08:20:50",
+    "body": "Attachment [trac-1986.patch](tarball://root/attachments/some-uuid/ticket1986/trac-1986.patch) by @williamstein created at 2008-02-02 08:20:50",
     "created_at": "2008-02-02T08:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1986",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1986#issuecomment-12862",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1986.patch](tarball://root/attachments/some-uuid/ticket1986/trac-1986.patch) by was created at 2008-02-02 08:20:50
+Attachment [trac-1986.patch](tarball://root/attachments/some-uuid/ticket1986/trac-1986.patch) by @williamstein created at 2008-02-02 08:20:50
 
 
 

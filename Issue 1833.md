@@ -3,7 +3,7 @@
 archive/issues_001833.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: x,y = var('x,y')\nsage: plot3d(x*y, (x,-1,1), (y,-1,1))\n```\n\nis fast, but \n\n```\nsage: x,y = var('x,y')\nsage: plot3d(x*y, (-1,1), (-1,1))\n```\n\nis shockingly slow (and similar remarks for parametric plots).   The attached patch fixes this problem. \n\nThis also fixes trac #1737.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1833\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: x,y = var('x,y')\nsage: plot3d(x*y, (x,-1,1), (y,-1,1))\n```\n\nis fast, but \n\n```\nsage: x,y = var('x,y')\nsage: plot3d(x*y, (-1,1), (-1,1))\n```\n\nis shockingly slow (and similar remarks for parametric plots).   The attached patch fixes this problem. \n\nThis also fixes trac #1737.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1833\n\n",
     "created_at": "2008-01-18T16:22:22Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001833.json:
     "title": "[with patch; needs review] plot3d and parametric_plot3d can be very slow on some inputs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1833",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -52,7 +52,7 @@ archive/issue_comments_011601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1833#issuecomment-11601",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_011602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1833#issuecomment-11602",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,16 +83,16 @@ This patch also moves plot3d_adaptive into plot3d (i.e., as an option), and depr
 archive/issue_comments_011603.json:
 ```json
 {
-    "body": "Attachment [trac-1833.patch](tarball://root/attachments/some-uuid/ticket1833/trac-1833.patch) by was created at 2008-01-18 16:24:23",
+    "body": "Attachment [trac-1833.patch](tarball://root/attachments/some-uuid/ticket1833/trac-1833.patch) by @williamstein created at 2008-01-18 16:24:23",
     "created_at": "2008-01-18T16:24:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1833#issuecomment-11603",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1833.patch](tarball://root/attachments/some-uuid/ticket1833/trac-1833.patch) by was created at 2008-01-18 16:24:23
+Attachment [trac-1833.patch](tarball://root/attachments/some-uuid/ticket1833/trac-1833.patch) by @williamstein created at 2008-01-18 16:24:23
 
 
 
@@ -106,7 +106,7 @@ archive/issue_comments_011604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1833#issuecomment-11604",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

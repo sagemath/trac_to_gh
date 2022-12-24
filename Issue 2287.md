@@ -14,7 +14,7 @@ archive/issues_002287.json:
     "title": "error installing rubiks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2287",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 Assignee: mabshoff
@@ -117,7 +117,7 @@ archive/issue_comments_015170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2287",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2287#issuecomment-15170",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

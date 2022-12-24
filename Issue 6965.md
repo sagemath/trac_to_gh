@@ -3,7 +3,7 @@
 archive/issues_006965.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  jason\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/61612a7bcca169e7/17f2ab8eb4f63b7f):\n\n```\nI should have posted this question here instead of at #6865, as the\nanswer is probably interesting to many people here.  I'd heard things\nabout MANIFEST.in, but for some reason didn't have a clear idea of what\nit was or what I should do about it.  It would be nice if something was\nadded to the developer's guide... \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6965\n\n",
+    "body": "Assignee: tba\n\nCC:  @jasongrout\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/61612a7bcca169e7/17f2ab8eb4f63b7f):\n\n```\nI should have posted this question here instead of at #6865, as the\nanswer is probably interesting to many people here.  I'd heard things\nabout MANIFEST.in, but for some reason didn't have a clear idea of what\nit was or what I should do about it.  It would be nice if something was\nadded to the developer's guide... \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6965\n\n",
     "created_at": "2009-09-20T02:56:51Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_006965.json:
 ```
 Assignee: tba
 
-CC:  jason
+CC:  @jasongrout
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/61612a7bcca169e7/17f2ab8eb4f63b7f):
 
@@ -48,7 +48,7 @@ archive/issue_comments_057624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6965#issuecomment-57624",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_057625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6965#issuecomment-57625",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_057626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6965#issuecomment-57626",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_057627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6965#issuecomment-57627",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_057628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6965#issuecomment-57628",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -175,16 +175,16 @@ which is usually more up-to-date than the given URL. The given URL is more speci
 archive/issue_comments_057631.json:
 ```json
 {
-    "body": "Attachment [trac_6965-manifest.patch](tarball://root/attachments/some-uuid/ticket6965/trac_6965-manifest.patch) by jhpalmieri created at 2009-12-22 16:02:30\n\nGood point about the URL.  I've replaced the patch with a new one, changing just the URL to the more permanent one.",
+    "body": "Attachment [trac_6965-manifest.patch](tarball://root/attachments/some-uuid/ticket6965/trac_6965-manifest.patch) by @jhpalmieri created at 2009-12-22 16:02:30\n\nGood point about the URL.  I've replaced the patch with a new one, changing just the URL to the more permanent one.",
     "created_at": "2009-12-22T16:02:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6965#issuecomment-57631",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6965-manifest.patch](tarball://root/attachments/some-uuid/ticket6965/trac_6965-manifest.patch) by jhpalmieri created at 2009-12-22 16:02:30
+Attachment [trac_6965-manifest.patch](tarball://root/attachments/some-uuid/ticket6965/trac_6965-manifest.patch) by @jhpalmieri created at 2009-12-22 16:02:30
 
 Good point about the URL.  I've replaced the patch with a new one, changing just the URL to the more permanent one.
 
@@ -200,7 +200,7 @@ archive/issue_comments_057632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6965#issuecomment-57632",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

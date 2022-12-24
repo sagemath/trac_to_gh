@@ -3,7 +3,7 @@
 archive/issues_008334.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  was\n\nMoves residue fields to the coercion model, makes the reduction and lifting maps morphisms, prepares the way for 7885 (Tate's algorithm for function fields).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8334\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\nMoves residue fields to the coercion model, makes the reduction and lifting maps morphisms, prepares the way for 7885 (Tate's algorithm for function fields).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8334\n\n",
     "created_at": "2010-02-23T15:16:53Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008334.json:
     "title": "Improvements to residue fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8334",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  was
+CC:  @williamstein
 
 Moves residue fields to the coercion model, makes the reduction and lifting maps morphisms, prepares the way for 7885 (Tate's algorithm for function fields).
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8334
 archive/issue_comments_074231.json:
 ```json
 {
-    "body": "Attachment [7585_9_1_frac_and_coerce_updates.patch](tarball://root/attachments/some-uuid/ticket8334/7585_9_1_frac_and_coerce_updates.patch) by roed created at 2010-02-23 15:22:47\n\nApply after other patch",
+    "body": "Attachment [7585_9_1_frac_and_coerce_updates.patch](tarball://root/attachments/some-uuid/ticket8334/7585_9_1_frac_and_coerce_updates.patch) by @roed314 created at 2010-02-23 15:22:47\n\nApply after other patch",
     "created_at": "2010-02-23T15:22:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74231",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_9_1_frac_and_coerce_updates.patch](tarball://root/attachments/some-uuid/ticket8334/7585_9_1_frac_and_coerce_updates.patch) by roed created at 2010-02-23 15:22:47
+Attachment [7585_9_1_frac_and_coerce_updates.patch](tarball://root/attachments/some-uuid/ticket8334/7585_9_1_frac_and_coerce_updates.patch) by @roed314 created at 2010-02-23 15:22:47
 
 Apply after other patch
 
@@ -54,16 +54,16 @@ Apply after other patch
 archive/issue_comments_074232.json:
 ```json
 {
-    "body": "Attachment [8334_residue_fields.patch](tarball://root/attachments/some-uuid/ticket8334/8334_residue_fields.patch) by roed created at 2010-02-23 15:26:47\n\nFixes various bugs and doctest failures introduced in earlier patches.",
+    "body": "Attachment [8334_residue_fields.patch](tarball://root/attachments/some-uuid/ticket8334/8334_residue_fields.patch) by @roed314 created at 2010-02-23 15:26:47\n\nFixes various bugs and doctest failures introduced in earlier patches.",
     "created_at": "2010-02-23T15:26:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74232",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [8334_residue_fields.patch](tarball://root/attachments/some-uuid/ticket8334/8334_residue_fields.patch) by roed created at 2010-02-23 15:26:47
+Attachment [8334_residue_fields.patch](tarball://root/attachments/some-uuid/ticket8334/8334_residue_fields.patch) by @roed314 created at 2010-02-23 15:26:47
 
 Fixes various bugs and doctest failures introduced in earlier patches.
 
@@ -74,16 +74,16 @@ Fixes various bugs and doctest failures introduced in earlier patches.
 archive/issue_comments_074233.json:
 ```json
 {
-    "body": "Attachment [7585_12_1_fixes.patch](tarball://root/attachments/some-uuid/ticket8334/7585_12_1_fixes.patch) by roed created at 2010-02-23 17:37:23\n\nPart of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\n\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
+    "body": "Attachment [7585_12_1_fixes.patch](tarball://root/attachments/some-uuid/ticket8334/7585_12_1_fixes.patch) by @roed314 created at 2010-02-23 17:37:23\n\nPart of a series:\n\n```\n8218 -> 8332 -> 7880 -> 7883 -> 8333 -> 8334 -> 8335\n```\n\nI tried to make each of these mostly self contained, with doctests passing after every ticket, but I didn't entirely succeed.  If you're reviewing one of these tickets, applying later tickets will hopefully fix doctest failures that you're seeing.",
     "created_at": "2010-02-23T17:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74233",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_12_1_fixes.patch](tarball://root/attachments/some-uuid/ticket8334/7585_12_1_fixes.patch) by roed created at 2010-02-23 17:37:23
+Attachment [7585_12_1_fixes.patch](tarball://root/attachments/some-uuid/ticket8334/7585_12_1_fixes.patch) by @roed314 created at 2010-02-23 17:37:23
 
 Part of a series:
 
@@ -105,7 +105,7 @@ archive/issue_comments_074234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74234",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_074235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74235",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_074236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74236",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -188,16 +188,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074237.json:
 ```json
 {
-    "body": "Attachment [8334_residue_fields-rebased_for_8446.patch](tarball://root/attachments/some-uuid/ticket8334/8334_residue_fields-rebased_for_8446.patch) by davidloeffler created at 2010-04-20 10:15:45\n\napply instead of 8334_residue_fields.patch -- rebased to apply after #8446",
+    "body": "Attachment [8334_residue_fields-rebased_for_8446.patch](tarball://root/attachments/some-uuid/ticket8334/8334_residue_fields-rebased_for_8446.patch) by @loefflerd created at 2010-04-20 10:15:45\n\napply instead of 8334_residue_fields.patch -- rebased to apply after #8446",
     "created_at": "2010-04-20T10:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74237",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [8334_residue_fields-rebased_for_8446.patch](tarball://root/attachments/some-uuid/ticket8334/8334_residue_fields-rebased_for_8446.patch) by davidloeffler created at 2010-04-20 10:15:45
+Attachment [8334_residue_fields-rebased_for_8446.patch](tarball://root/attachments/some-uuid/ticket8334/8334_residue_fields-rebased_for_8446.patch) by @loefflerd created at 2010-04-20 10:15:45
 
 apply instead of 8334_residue_fields.patch -- rebased to apply after #8446
 
@@ -213,7 +213,7 @@ archive/issue_comments_074238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74238",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_074239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74239",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_074240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74240",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_074241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74241",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_074242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74242",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -319,16 +319,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_074243.json:
 ```json
 {
-    "body": "Attachment [8334_residue_fields-rebased_for_9343.patch](tarball://root/attachments/some-uuid/ticket8334/8334_residue_fields-rebased_for_9343.patch) by roed created at 2010-09-23 16:35:17\n\nRebased against 4.6.alpha1",
+    "body": "Attachment [8334_residue_fields-rebased_for_9343.patch](tarball://root/attachments/some-uuid/ticket8334/8334_residue_fields-rebased_for_9343.patch) by @roed314 created at 2010-09-23 16:35:17\n\nRebased against 4.6.alpha1",
     "created_at": "2010-09-23T16:35:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74243",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [8334_residue_fields-rebased_for_9343.patch](tarball://root/attachments/some-uuid/ticket8334/8334_residue_fields-rebased_for_9343.patch) by roed created at 2010-09-23 16:35:17
+Attachment [8334_residue_fields-rebased_for_9343.patch](tarball://root/attachments/some-uuid/ticket8334/8334_residue_fields-rebased_for_9343.patch) by @roed314 created at 2010-09-23 16:35:17
 
 Rebased against 4.6.alpha1
 
@@ -344,7 +344,7 @@ archive/issue_comments_074244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74244",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_074245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74245",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_074246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74246",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_074247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74247",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_074248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74248",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -443,16 +443,16 @@ Fixed merge error; apply against 4.6.alpha1
 archive/issue_comments_074249.json:
 ```json
 {
-    "body": "Attachment [7585_12_1_fixes.2.patch](tarball://root/attachments/some-uuid/ticket8334/7585_12_1_fixes.2.patch) by roed created at 2010-09-23 16:57:35\n\nForgot to delete 4 lines.  I'm still building, but the build has progressed past `residue_field.pyx`.",
+    "body": "Attachment [7585_12_1_fixes.2.patch](tarball://root/attachments/some-uuid/ticket8334/7585_12_1_fixes.2.patch) by @roed314 created at 2010-09-23 16:57:35\n\nForgot to delete 4 lines.  I'm still building, but the build has progressed past `residue_field.pyx`.",
     "created_at": "2010-09-23T16:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74249",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [7585_12_1_fixes.2.patch](tarball://root/attachments/some-uuid/ticket8334/7585_12_1_fixes.2.patch) by roed created at 2010-09-23 16:57:35
+Attachment [7585_12_1_fixes.2.patch](tarball://root/attachments/some-uuid/ticket8334/7585_12_1_fixes.2.patch) by @roed314 created at 2010-09-23 16:57:35
 
 Forgot to delete 4 lines.  I'm still building, but the build has progressed past `residue_field.pyx`.
 
@@ -468,7 +468,7 @@ archive/issue_comments_074250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74250",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_074251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74251",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_074252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74252",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_074253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74253",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_074254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74254",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -557,16 +557,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_074255.json:
 ```json
 {
-    "body": "Attachment [8333_8334_ALL.patch](tarball://root/attachments/some-uuid/ticket8334/8333_8334_ALL.patch) by roed created at 2010-09-24 14:30:08\n\nYou now only need to apply one patch.",
+    "body": "Attachment [8333_8334_ALL.patch](tarball://root/attachments/some-uuid/ticket8334/8333_8334_ALL.patch) by @roed314 created at 2010-09-24 14:30:08\n\nYou now only need to apply one patch.",
     "created_at": "2010-09-24T14:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74255",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [8333_8334_ALL.patch](tarball://root/attachments/some-uuid/ticket8334/8333_8334_ALL.patch) by roed created at 2010-09-24 14:30:08
+Attachment [8333_8334_ALL.patch](tarball://root/attachments/some-uuid/ticket8334/8333_8334_ALL.patch) by @roed314 created at 2010-09-24 14:30:08
 
 You now only need to apply one patch.
 
@@ -582,7 +582,7 @@ archive/issue_comments_074256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74256",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -600,7 +600,7 @@ archive/issue_comments_074257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74257",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -620,7 +620,7 @@ archive/issue_comments_074258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74258",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -633,16 +633,16 @@ Thanks.  That's especially useful since I just broke my mercurial queues trying 
 archive/issue_comments_074259.json:
 ```json
 {
-    "body": "Attachment [8333_8334_ALL-rebased_for_9764.patch](tarball://root/attachments/some-uuid/ticket8334/8333_8334_ALL-rebased_for_9764.patch) by davidloeffler created at 2010-09-24 15:23:17\n\nApply only this patch -- see comment below.",
+    "body": "Attachment [8333_8334_ALL-rebased_for_9764.patch](tarball://root/attachments/some-uuid/ticket8334/8333_8334_ALL-rebased_for_9764.patch) by @loefflerd created at 2010-09-24 15:23:17\n\nApply only this patch -- see comment below.",
     "created_at": "2010-09-24T15:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74259",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [8333_8334_ALL-rebased_for_9764.patch](tarball://root/attachments/some-uuid/ticket8334/8333_8334_ALL-rebased_for_9764.patch) by davidloeffler created at 2010-09-24 15:23:17
+Attachment [8333_8334_ALL-rebased_for_9764.patch](tarball://root/attachments/some-uuid/ticket8334/8333_8334_ALL-rebased_for_9764.patch) by @loefflerd created at 2010-09-24 15:23:17
 
 Apply only this patch -- see comment below.
 
@@ -658,7 +658,7 @@ archive/issue_comments_074260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74260",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -678,7 +678,7 @@ archive/issue_comments_074261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74261",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -696,7 +696,7 @@ archive/issue_comments_074262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74262",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -714,7 +714,7 @@ archive/issue_comments_074263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74263",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -738,7 +738,7 @@ archive/issue_comments_074264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74264",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -756,7 +756,7 @@ archive/issue_comments_074265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74265",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -781,7 +781,7 @@ archive/issue_comments_074266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74266",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -810,7 +810,7 @@ archive/issue_comments_074267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74267",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -828,7 +828,7 @@ archive/issue_comments_074268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74268",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -841,16 +841,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_074269.json:
 ```json
 {
-    "body": "Attachment [8333_8334_ALL-better_commit_string.patch](tarball://root/attachments/some-uuid/ticket8334/8333_8334_ALL-better_commit_string.patch) by davidloeffler created at 2010-09-28 10:18:43\n\nVersion with better commit string.",
+    "body": "Attachment [8333_8334_ALL-better_commit_string.patch](tarball://root/attachments/some-uuid/ticket8334/8333_8334_ALL-better_commit_string.patch) by @loefflerd created at 2010-09-28 10:18:43\n\nVersion with better commit string.",
     "created_at": "2010-09-28T10:18:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74269",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [8333_8334_ALL-better_commit_string.patch](tarball://root/attachments/some-uuid/ticket8334/8333_8334_ALL-better_commit_string.patch) by davidloeffler created at 2010-09-28 10:18:43
+Attachment [8333_8334_ALL-better_commit_string.patch](tarball://root/attachments/some-uuid/ticket8334/8333_8334_ALL-better_commit_string.patch) by @loefflerd created at 2010-09-28 10:18:43
 
 Version with better commit string.
 
@@ -866,7 +866,7 @@ archive/issue_comments_074270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74270",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -884,7 +884,7 @@ archive/issue_comments_074271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74271",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -902,7 +902,7 @@ archive/issue_comments_074272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74272",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -920,7 +920,7 @@ archive/issue_comments_074273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74273",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -938,7 +938,7 @@ archive/issue_comments_074274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74274",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -971,7 +971,7 @@ archive/issue_comments_074275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74275",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -989,7 +989,7 @@ archive/issue_comments_074276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74276",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1030,7 +1030,7 @@ archive/issue_comments_074277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74277",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -1050,7 +1050,7 @@ archive/issue_comments_074278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8334#issuecomment-74278",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002550.json:
     "title": "[with trivial patch, needs review] remove UTF-8 garbage from SBox file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2550",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba

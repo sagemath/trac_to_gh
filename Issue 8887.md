@@ -3,7 +3,7 @@
 archive/issues_008887.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nTitle says all\n\nIssue created by migration from https://trac.sagemath.org/ticket/8887\n\n",
+    "body": "Assignee: @nthiery\n\nTitle says all\n\nIssue created by migration from https://trac.sagemath.org/ticket/8887\n\n",
     "created_at": "2010-05-05T11:28:08Z",
     "labels": [
         "categories",
@@ -14,10 +14,10 @@ archive/issues_008887.json:
     "title": "Monoids().ParentMethods.prod doctest is ill formated.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8887",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 Title says all
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8887
 archive/issue_comments_081703.json:
 ```json
 {
-    "body": "Changing assignee from nthiery to hivert.",
+    "body": "Changing assignee from @nthiery to @hivert.",
     "created_at": "2010-05-11T17:04:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8887#issuecomment-81703",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from nthiery to hivert.
+Changing assignee from @nthiery to @hivert.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_081704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8887#issuecomment-81704",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_081705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8887#issuecomment-81705",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -86,16 +86,16 @@ Changing keywords from "" to "Documentation Monoids".
 archive/issue_comments_081706.json:
 ```json
 {
-    "body": "Attachment [trac_8887-typo_monoid_prod-fh.patch](tarball://root/attachments/some-uuid/ticket8887/trac_8887-typo_monoid_prod-fh.patch) by hivert created at 2010-05-11 17:04:49",
+    "body": "Attachment [trac_8887-typo_monoid_prod-fh.patch](tarball://root/attachments/some-uuid/ticket8887/trac_8887-typo_monoid_prod-fh.patch) by @hivert created at 2010-05-11 17:04:49",
     "created_at": "2010-05-11T17:04:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8887#issuecomment-81706",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8887-typo_monoid_prod-fh.patch](tarball://root/attachments/some-uuid/ticket8887/trac_8887-typo_monoid_prod-fh.patch) by hivert created at 2010-05-11 17:04:49
+Attachment [trac_8887-typo_monoid_prod-fh.patch](tarball://root/attachments/some-uuid/ticket8887/trac_8887-typo_monoid_prod-fh.patch) by @hivert created at 2010-05-11 17:04:49
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_081707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8887#issuecomment-81707",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_081708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8887#issuecomment-81708",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_081709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8887#issuecomment-81709",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_081710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8887",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8887#issuecomment-81710",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

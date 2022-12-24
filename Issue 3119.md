@@ -3,7 +3,7 @@
 archive/issues_003119.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following should now be trivial to support given all the cool transformations of models code that John Cremona and Robert Bradshaw added to Sage.   Just transform the curve to minimal form, find the isomorphism explicitly, then transform the answers back. \n\n```\nsage: E = EllipticCurve([-3/8,-2/3])\nsage: E.gens()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/edu/2007-2008/sage/homework/5/<ipython console> in <module>()\n\n/Users/was/build/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in gens(self, verbose, rank1_search, algorithm, only_use_mwrank, proof)\n   1349         # end if (not_use_mwrank)\n   1350         if not self.is_integral():\n-> 1351             raise NotImplementedError, \"gens via mwrank only implemented for curves with integer coefficients.\"\n   1352         if algorithm == \"mwrank_lib\":\n   1353             misc.verbose(\"Calling mwrank C++ library.\")\n\n<type 'exceptions.NotImplementedError'>: gens via mwrank only implemented for curves with integer coefficients.\n```\n\n\nSee how trivial this will now be to implement:\n\n```\nsage: F = E.minimal_model()\nsage: phi = F.isomorphism_to(E)\nsage: [phi(z) for z in F.gens()]\n[(10/9 : 29/54 : 1)]\n```\n\n\nWhat could be easier?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3119\n\n",
+    "body": "Assignee: @williamstein\n\nThe following should now be trivial to support given all the cool transformations of models code that John Cremona and Robert Bradshaw added to Sage.   Just transform the curve to minimal form, find the isomorphism explicitly, then transform the answers back. \n\n```\nsage: E = EllipticCurve([-3/8,-2/3])\nsage: E.gens()\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/Users/was/edu/2007-2008/sage/homework/5/<ipython console> in <module>()\n\n/Users/was/build/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in gens(self, verbose, rank1_search, algorithm, only_use_mwrank, proof)\n   1349         # end if (not_use_mwrank)\n   1350         if not self.is_integral():\n-> 1351             raise NotImplementedError, \"gens via mwrank only implemented for curves with integer coefficients.\"\n   1352         if algorithm == \"mwrank_lib\":\n   1353             misc.verbose(\"Calling mwrank C++ library.\")\n\n<type 'exceptions.NotImplementedError'>: gens via mwrank only implemented for curves with integer coefficients.\n```\n\n\nSee how trivial this will now be to implement:\n\n```\nsage: F = E.minimal_model()\nsage: phi = F.isomorphism_to(E)\nsage: [phi(z) for z in F.gens()]\n[(10/9 : 29/54 : 1)]\n```\n\n\nWhat could be easier?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3119\n\n",
     "created_at": "2008-05-07T04:23:04Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003119.json:
     "title": "elliptic curves -- implement gens function for non-integral models",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3119",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following should now be trivial to support given all the cool transformations of models code that John Cremona and Robert Bradshaw added to Sage.   Just transform the curve to minimal form, find the isomorphism explicitly, then transform the answers back. 
 
@@ -69,7 +69,7 @@ archive/issue_comments_021594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21594",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -91,16 +91,16 @@ Patch coming up.
 archive/issue_comments_021595.json:
 ```json
 {
-    "body": "Attachment [trac-3119.patch](tarball://root/attachments/some-uuid/ticket3119/trac-3119.patch) by cremona created at 2008-05-26 13:55:17\n\nThe attached patch fixes the (spurious) error caused by an unnecessary testing for a case (non-integral curves) which are in fact well handled by mwrank.  At the same time I deleted the first TODO item from gens() since non-minimal models are similarly catered for.\n\nTwo new doctests illustrate the successful running of gens() on non-integral and non-minimal curves.\n\nOne small other thing:  when gens() calls mwrank it passes the command-line parameter \"-p 100\" which helps curves with large coefficients and 2-torsion and is otherwise harmless.  This is pending a more intelligent handling of mwrank options in gens() (which is nontrivial since gens() needs to parse the output from mwrank and this is seriously affected by what parameters the user passes!).\n\nIn fact it would be much better to avoid the mwrank console at all for gens() and just use the library.  This is in progress (see #1949)",
+    "body": "Attachment [trac-3119.patch](tarball://root/attachments/some-uuid/ticket3119/trac-3119.patch) by @JohnCremona created at 2008-05-26 13:55:17\n\nThe attached patch fixes the (spurious) error caused by an unnecessary testing for a case (non-integral curves) which are in fact well handled by mwrank.  At the same time I deleted the first TODO item from gens() since non-minimal models are similarly catered for.\n\nTwo new doctests illustrate the successful running of gens() on non-integral and non-minimal curves.\n\nOne small other thing:  when gens() calls mwrank it passes the command-line parameter \"-p 100\" which helps curves with large coefficients and 2-torsion and is otherwise harmless.  This is pending a more intelligent handling of mwrank options in gens() (which is nontrivial since gens() needs to parse the output from mwrank and this is seriously affected by what parameters the user passes!).\n\nIn fact it would be much better to avoid the mwrank console at all for gens() and just use the library.  This is in progress (see #1949)",
     "created_at": "2008-05-26T13:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21595",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-3119.patch](tarball://root/attachments/some-uuid/ticket3119/trac-3119.patch) by cremona created at 2008-05-26 13:55:17
+Attachment [trac-3119.patch](tarball://root/attachments/some-uuid/ticket3119/trac-3119.patch) by @JohnCremona created at 2008-05-26 13:55:17
 
 The attached patch fixes the (spurious) error caused by an unnecessary testing for a case (non-integral curves) which are in fact well handled by mwrank.  At the same time I deleted the first TODO item from gens() since non-minimal models are similarly catered for.
 
@@ -122,7 +122,7 @@ archive/issue_comments_021596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21596",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -135,16 +135,16 @@ Apply after first patch
 archive/issue_comments_021597.json:
 ```json
 {
-    "body": "Attachment [9774.patch](tarball://root/attachments/some-uuid/ticket3119/9774.patch) by cremona created at 2008-05-26 17:49:03\n\nAnother patch (to be applied after previous) fixing two other things:\n\nFirst:  I finally got rid of the terrible behaviour of the mwrank_EllipticCurve constructor with non-integral input.  It now throws an error.  [Although mwrank can take non-integral elliptic curves in some circumstances, this will require more work.]\n\nSecond:  There was a bug in the gens() function for \n\nBefore:\n\n```\nsage: E=EllipticCurve('389a1').change_weierstrass_model([1/20,0,0,0])\nsage: E.gens(algorithm=\"mwrank_lib\")\n[(0 : 1 : 0), (0 : 1 : 0)]\n```\n\nwhich is not just wrong but very wrong!\n\nAfter:\n\n```\nsage: E=EllipticCurve('389a1').change_weierstrass_model([1/20,0,0,0])\nsage: E.gens(algorithm='mwrank_lib')\n[(-400 : 8000 : 1), (0 : -8000 : 1)]\n```\n",
+    "body": "Attachment [9774.patch](tarball://root/attachments/some-uuid/ticket3119/9774.patch) by @JohnCremona created at 2008-05-26 17:49:03\n\nAnother patch (to be applied after previous) fixing two other things:\n\nFirst:  I finally got rid of the terrible behaviour of the mwrank_EllipticCurve constructor with non-integral input.  It now throws an error.  [Although mwrank can take non-integral elliptic curves in some circumstances, this will require more work.]\n\nSecond:  There was a bug in the gens() function for \n\nBefore:\n\n```\nsage: E=EllipticCurve('389a1').change_weierstrass_model([1/20,0,0,0])\nsage: E.gens(algorithm=\"mwrank_lib\")\n[(0 : 1 : 0), (0 : 1 : 0)]\n```\n\nwhich is not just wrong but very wrong!\n\nAfter:\n\n```\nsage: E=EllipticCurve('389a1').change_weierstrass_model([1/20,0,0,0])\nsage: E.gens(algorithm='mwrank_lib')\n[(-400 : 8000 : 1), (0 : -8000 : 1)]\n```\n",
     "created_at": "2008-05-26T17:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21597",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [9774.patch](tarball://root/attachments/some-uuid/ticket3119/9774.patch) by cremona created at 2008-05-26 17:49:03
+Attachment [9774.patch](tarball://root/attachments/some-uuid/ticket3119/9774.patch) by @JohnCremona created at 2008-05-26 17:49:03
 
 Another patch (to be applied after previous) fixing two other things:
 
@@ -183,7 +183,7 @@ archive/issue_comments_021598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21598",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -200,16 +200,16 @@ I'll be fixing eclib in due course.
 archive/issue_comments_021599.json:
 ```json
 {
-    "body": "Attachment [eclib.patch](tarball://root/attachments/some-uuid/ticket3119/eclib.patch) by cremona created at 2008-05-26 21:29:09\n\nExtra patch added to fix the same bug in a better way.  Now wrap.cc should not need to be changed -- just checking...",
+    "body": "Attachment [eclib.patch](tarball://root/attachments/some-uuid/ticket3119/eclib.patch) by @JohnCremona created at 2008-05-26 21:29:09\n\nExtra patch added to fix the same bug in a better way.  Now wrap.cc should not need to be changed -- just checking...",
     "created_at": "2008-05-26T21:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21599",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [eclib.patch](tarball://root/attachments/some-uuid/ticket3119/eclib.patch) by cremona created at 2008-05-26 21:29:09
+Attachment [eclib.patch](tarball://root/attachments/some-uuid/ticket3119/eclib.patch) by @JohnCremona created at 2008-05-26 21:29:09
 
 Extra patch added to fix the same bug in a better way.  Now wrap.cc should not need to be changed -- just checking...
 
@@ -220,16 +220,16 @@ Extra patch added to fix the same bug in a better way.  Now wrap.cc should not n
 archive/issue_comments_021600.json:
 ```json
 {
-    "body": "Attachment [trac-3119a.patch](tarball://root/attachments/some-uuid/ticket3119/trac-3119a.patch) by cremona created at 2008-05-26 22:11:45\n\nLatest patch trac-3119a.patch undoes one change in the original patch (the one-line change to wrap.cc) since the same thing is fixed better by patching eclib.  I have tested this, so I hope it is clear.",
+    "body": "Attachment [trac-3119a.patch](tarball://root/attachments/some-uuid/ticket3119/trac-3119a.patch) by @JohnCremona created at 2008-05-26 22:11:45\n\nLatest patch trac-3119a.patch undoes one change in the original patch (the one-line change to wrap.cc) since the same thing is fixed better by patching eclib.  I have tested this, so I hope it is clear.",
     "created_at": "2008-05-26T22:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21600",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-3119a.patch](tarball://root/attachments/some-uuid/ticket3119/trac-3119a.patch) by cremona created at 2008-05-26 22:11:45
+Attachment [trac-3119a.patch](tarball://root/attachments/some-uuid/ticket3119/trac-3119a.patch) by @JohnCremona created at 2008-05-26 22:11:45
 
 Latest patch trac-3119a.patch undoes one change in the original patch (the one-line change to wrap.cc) since the same thing is fixed better by patching eclib.  I have tested this, so I hope it is clear.
 
@@ -245,7 +245,7 @@ archive/issue_comments_021601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21601",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_021602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21602",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -276,16 +276,16 @@ this is the *fourth* patch to the sage main repo that has to be applied
 archive/issue_comments_021603.json:
 ```json
 {
-    "body": "Attachment [sage-3119-part4.patch](tarball://root/attachments/some-uuid/ticket3119/sage-3119-part4.patch) by was created at 2008-06-16 00:35:57\n\nREFEREE REPORT:\n\nExcellent.  However there are several doctest failures after applying the patches:\n\n```\nD-69-91-137-77:~ was$ sage -t d/sage/sage/schemes/elliptic_curves/ell_rational_field.pysage -t  d/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 145:\n    sage: E.gens()         # causes actual rank to be computed\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 147:\n    sage: E.rank()         # the correct rank\nExpected:\n    1\nGot:\n    99\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1413:\n    sage: E.gens()\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1538:\n    sage: Q=5*P; Q\nExpected:\n    (1/4 : -3/8 : 1)\nGot:\n    (1/4 : -5/8 : 1)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1540:\n    sage: E.saturation([Q])\nExpected:\n    ([(0 : -1 : 1)], '5', 0.0511114075779915)\nGot:\n    ([(0 : 0 : 1)], '5', 0.0511114075779915)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 252:\n    sage: E.gens()\nExpected:\n    [(-2 : 3 : 1), (-7/4 : 25/8 : 1), (1 : -1 : 1)]\nGot:\n    [(-2 : 3 : 1), (-1 : 3 : 1), (0 : 2 : 1)]\n**********************************************************************\n5 items had failures:\n   2 of   6 in __main__.example_2\n   1 of   4 in __main__.example_32\n   2 of   5 in __main__.example_35\n   1 of   6 in __main__.example_62\n   1 of   8 in __main__.example_7\n***Test Failed*** 7 failures.\nFor whitespace errors, see the file /Users/was/s/tmp/.doctest_ell_rational_field.py\n\t [47.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  d/sage/sage/schemes/elliptic_curves/ell_rational_field.py\nTotal time for all tests: 47.8 seconds\n```\n\n\n}}}",
+    "body": "Attachment [sage-3119-part4.patch](tarball://root/attachments/some-uuid/ticket3119/sage-3119-part4.patch) by @williamstein created at 2008-06-16 00:35:57\n\nREFEREE REPORT:\n\nExcellent.  However there are several doctest failures after applying the patches:\n\n```\nD-69-91-137-77:~ was$ sage -t d/sage/sage/schemes/elliptic_curves/ell_rational_field.pysage -t  d/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 145:\n    sage: E.gens()         # causes actual rank to be computed\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 147:\n    sage: E.rank()         # the correct rank\nExpected:\n    1\nGot:\n    99\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1413:\n    sage: E.gens()\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1538:\n    sage: Q=5*P; Q\nExpected:\n    (1/4 : -3/8 : 1)\nGot:\n    (1/4 : -5/8 : 1)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1540:\n    sage: E.saturation([Q])\nExpected:\n    ([(0 : -1 : 1)], '5', 0.0511114075779915)\nGot:\n    ([(0 : 0 : 1)], '5', 0.0511114075779915)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 252:\n    sage: E.gens()\nExpected:\n    [(-2 : 3 : 1), (-7/4 : 25/8 : 1), (1 : -1 : 1)]\nGot:\n    [(-2 : 3 : 1), (-1 : 3 : 1), (0 : 2 : 1)]\n**********************************************************************\n5 items had failures:\n   2 of   6 in __main__.example_2\n   1 of   4 in __main__.example_32\n   2 of   5 in __main__.example_35\n   1 of   6 in __main__.example_62\n   1 of   8 in __main__.example_7\n***Test Failed*** 7 failures.\nFor whitespace errors, see the file /Users/was/s/tmp/.doctest_ell_rational_field.py\n\t [47.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  d/sage/sage/schemes/elliptic_curves/ell_rational_field.py\nTotal time for all tests: 47.8 seconds\n```\n\n\n}}}",
     "created_at": "2008-06-16T00:35:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21603",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3119-part4.patch](tarball://root/attachments/some-uuid/ticket3119/sage-3119-part4.patch) by was created at 2008-06-16 00:35:57
+Attachment [sage-3119-part4.patch](tarball://root/attachments/some-uuid/ticket3119/sage-3119-part4.patch) by @williamstein created at 2008-06-16 00:35:57
 
 REFEREE REPORT:
 
@@ -370,7 +370,7 @@ archive/issue_comments_021604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21604",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_021605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21605",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_021606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21606",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_021607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21607",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -459,7 +459,7 @@ archive/issue_comments_021608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21608",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_021610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21610",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -512,16 +512,16 @@ archive/issue_comments_021610.json:
 archive/issue_comments_021611.json:
 ```json
 {
-    "body": "Attachment [sage-3119-new.patch](tarball://root/attachments/some-uuid/ticket3119/sage-3119-new.patch) by cremona created at 2008-06-28 16:06:21\n\nI have combined and simplified the confusion of earlier patches, so now only *one* need to be applied: sage-3119-new.patch.  This is based in version 3.0.4.alpha0.  Note that it requires  eclib-20080310.p3 which is not in 3.0.4.alpha0 but is in alpha1 (the one which did not build) so reviewers should test with 3.0.4.alpha2 (or later). If run with the older eclib, the doctests in ell_rational_field.py still pass but take about 4 times as long (proving that the patch to eclib is not quite as trivial as it appears).",
+    "body": "Attachment [sage-3119-new.patch](tarball://root/attachments/some-uuid/ticket3119/sage-3119-new.patch) by @JohnCremona created at 2008-06-28 16:06:21\n\nI have combined and simplified the confusion of earlier patches, so now only *one* need to be applied: sage-3119-new.patch.  This is based in version 3.0.4.alpha0.  Note that it requires  eclib-20080310.p3 which is not in 3.0.4.alpha0 but is in alpha1 (the one which did not build) so reviewers should test with 3.0.4.alpha2 (or later). If run with the older eclib, the doctests in ell_rational_field.py still pass but take about 4 times as long (proving that the patch to eclib is not quite as trivial as it appears).",
     "created_at": "2008-06-28T16:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21611",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-3119-new.patch](tarball://root/attachments/some-uuid/ticket3119/sage-3119-new.patch) by cremona created at 2008-06-28 16:06:21
+Attachment [sage-3119-new.patch](tarball://root/attachments/some-uuid/ticket3119/sage-3119-new.patch) by @JohnCremona created at 2008-06-28 16:06:21
 
 I have combined and simplified the confusion of earlier patches, so now only *one* need to be applied: sage-3119-new.patch.  This is based in version 3.0.4.alpha0.  Note that it requires  eclib-20080310.p3 which is not in 3.0.4.alpha0 but is in alpha1 (the one which did not build) so reviewers should test with 3.0.4.alpha2 (or later). If run with the older eclib, the doctests in ell_rational_field.py still pass but take about 4 times as long (proving that the patch to eclib is not quite as trivial as it appears).
 
@@ -537,7 +537,7 @@ archive/issue_comments_021612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21612",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_021613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3119#issuecomment-21613",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

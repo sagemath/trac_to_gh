@@ -14,7 +14,7 @@ archive/issues_003899.json:
     "title": "massive unpickle problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3899",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -70,7 +70,7 @@ archive/issue_comments_027895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3899#issuecomment-27895",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_027896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3899#issuecomment-27896",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_027897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3899#issuecomment-27897",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_027898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3899#issuecomment-27898",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

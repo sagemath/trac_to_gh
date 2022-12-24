@@ -3,7 +3,7 @@
 archive/issues_001765.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  dfdeshom\n\n\n```\nsage: var(\"s,i,b,m,g\");\nsage: sys = [ m*(1-s) - b*s*i, b*s*i-g*i ];\nsage: equilibria = solve(sys,s,i);\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\n> solve's\n> syntax seems assymetric as used here.  Shouldn't the second argument\n> be a sequence of variables?\n\nYou mean like this:\n\nsage: solve(sys, [s, i])              # this is not implemented\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\nThat seems like a really good idea.\nNote that right now at least you can do the following\n(note the *) and it will work:\n\nsage: solve(sys, *[s, i])\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\n```\n\n\nThis would be very easy to implement. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1765\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @dfdeshom\n\n\n```\nsage: var(\"s,i,b,m,g\");\nsage: sys = [ m*(1-s) - b*s*i, b*s*i-g*i ];\nsage: equilibria = solve(sys,s,i);\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\n> solve's\n> syntax seems assymetric as used here.  Shouldn't the second argument\n> be a sequence of variables?\n\nYou mean like this:\n\nsage: solve(sys, [s, i])              # this is not implemented\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\nThat seems like a really good idea.\nNote that right now at least you can do the following\n(note the *) and it will work:\n\nsage: solve(sys, *[s, i])\n[[s == 1, i == 0], [s == g/b, i == (b - g)*m/(b*g)]]\n\n```\n\n\nThis would be very easy to implement. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1765\n\n",
     "created_at": "2008-01-13T05:24:26Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_001765.json:
     "title": "allow list of variables as second input to solve command (very easy to implement)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1765",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  dfdeshom
+CC:  @dfdeshom
 
 
 ```
@@ -60,16 +60,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1765
 archive/issue_comments_011144.json:
 ```json
 {
-    "body": "Attachment [1765.patch](tarball://root/attachments/some-uuid/ticket1765/1765.patch) by dfdeshom created at 2008-03-04 03:19:13",
+    "body": "Attachment [1765.patch](tarball://root/attachments/some-uuid/ticket1765/1765.patch) by @dfdeshom created at 2008-03-04 03:19:13",
     "created_at": "2008-03-04T03:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1765#issuecomment-11144",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [1765.patch](tarball://root/attachments/some-uuid/ticket1765/1765.patch) by dfdeshom created at 2008-03-04 03:19:13
+Attachment [1765.patch](tarball://root/attachments/some-uuid/ticket1765/1765.patch) by @dfdeshom created at 2008-03-04 03:19:13
 
 
 
@@ -83,7 +83,7 @@ archive/issue_comments_011145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1765#issuecomment-11145",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -105,16 +105,16 @@ this still throws a ValueError.
 archive/issue_comments_011146.json:
 ```json
 {
-    "body": "Attachment [1765.hg](tarball://root/attachments/some-uuid/ticket1765/1765.hg) by dfdeshom created at 2008-03-13 15:03:58",
+    "body": "Attachment [1765.hg](tarball://root/attachments/some-uuid/ticket1765/1765.hg) by @dfdeshom created at 2008-03-13 15:03:58",
     "created_at": "2008-03-13T15:03:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1765#issuecomment-11146",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [1765.hg](tarball://root/attachments/some-uuid/ticket1765/1765.hg) by dfdeshom created at 2008-03-13 15:03:58
+Attachment [1765.hg](tarball://root/attachments/some-uuid/ticket1765/1765.hg) by @dfdeshom created at 2008-03-13 15:03:58
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_011147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1765#issuecomment-11147",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -141,16 +141,16 @@ Should be corrected now so ` solve(sys, [s, i]) ` should now work. The correct c
 archive/issue_comments_011148.json:
 ```json
 {
-    "body": "Attachment [1765_new.patch](tarball://root/attachments/some-uuid/ticket1765/1765_new.patch) by AlexGhitza created at 2008-03-15 17:41:33\n\nuse instead of the above",
+    "body": "Attachment [1765_new.patch](tarball://root/attachments/some-uuid/ticket1765/1765_new.patch) by @aghitza created at 2008-03-15 17:41:33\n\nuse instead of the above",
     "created_at": "2008-03-15T17:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1765#issuecomment-11148",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [1765_new.patch](tarball://root/attachments/some-uuid/ticket1765/1765_new.patch) by AlexGhitza created at 2008-03-15 17:41:33
+Attachment [1765_new.patch](tarball://root/attachments/some-uuid/ticket1765/1765_new.patch) by @aghitza created at 2008-03-15 17:41:33
 
 use instead of the above
 
@@ -166,7 +166,7 @@ archive/issue_comments_011149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1765#issuecomment-11149",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004258.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  cpernet burcin jason simonking\n\nKeywords: linbox, linear algebra\n\n\n```\nsage: A = random_matrix(GF(3),2000,2000)\nsage: %time A*A\n2000 x 2000 dense matrix over Finite Field of size 3\nCPU time: 14.69 s,  Wall time: 15.08 s\n```\n\n\n\n```\nsage: %time A._multiply_linbox(A)\n2000 x 2000 dense matrix over Finite Field of size 3\nCPU time: 2.47 s,  Wall time: 2.55 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4258\n\n",
+    "body": "Assignee: @malb\n\nCC:  @ClementPernet @burcin @jasongrout simonking\n\nKeywords: linbox, linear algebra\n\n\n```\nsage: A = random_matrix(GF(3),2000,2000)\nsage: %time A*A\n2000 x 2000 dense matrix over Finite Field of size 3\nCPU time: 14.69 s,  Wall time: 15.08 s\n```\n\n\n\n```\nsage: %time A._multiply_linbox(A)\n2000 x 2000 dense matrix over Finite Field of size 3\nCPU time: 2.47 s,  Wall time: 2.55 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4258\n\n",
     "created_at": "2008-10-10T08:50:02Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_004258.json:
     "title": "switch multiplication of dense matrices over finite prime fields to LinBox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4258",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  cpernet burcin jason simonking
+CC:  @ClementPernet @burcin @jasongrout simonking
 
 Keywords: linbox, linear algebra
 
@@ -56,7 +56,7 @@ archive/issue_comments_030987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4258#issuecomment-30987",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_030988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4258#issuecomment-30988",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_030989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4258#issuecomment-30989",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_030990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4258#issuecomment-30990",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_030991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4258#issuecomment-30991",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_030992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4258#issuecomment-30992",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_030993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4258#issuecomment-30993",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_030994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4258#issuecomment-30994",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

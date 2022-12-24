@@ -14,7 +14,7 @@ archive/issues_009165.json:
     "title": "cygwin: lcalc does not work for elliptic curves on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9165",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -102,7 +102,7 @@ archive/issue_comments_085568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9165#issuecomment-85568",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_085570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9165#issuecomment-85570",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_085571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9165#issuecomment-85571",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_085572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9165#issuecomment-85572",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_085573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9165#issuecomment-85573",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_085574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9165#issuecomment-85574",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_085575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9165#issuecomment-85575",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_085578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9165",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9165#issuecomment-85578",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

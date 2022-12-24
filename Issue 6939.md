@@ -3,7 +3,7 @@
 archive/issues_006939.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mpatel kcrisman boothby\n\nCurrently, a scrollbar appears down at the bottom of the entire worksheet, which is only minimally helpful, since you then need to go to the bottom and scroll everything over.\n\nThis patch makes scrollbars appear on output that is too wide, but just on that output.\n\nTo test, do something like:\n\n\n```\nf=cos(x)-x\nshow(f.taylor(x,0,50))\n```\n\n\nin the notebook\n\nIssue created by migration from https://trac.sagemath.org/ticket/6939\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777 @kcrisman boothby\n\nCurrently, a scrollbar appears down at the bottom of the entire worksheet, which is only minimally helpful, since you then need to go to the bottom and scroll everything over.\n\nThis patch makes scrollbars appear on output that is too wide, but just on that output.\n\nTo test, do something like:\n\n\n```\nf=cos(x)-x\nshow(f.taylor(x,0,50))\n```\n\n\nin the notebook\n\nIssue created by migration from https://trac.sagemath.org/ticket/6939\n\n",
     "created_at": "2009-09-15T22:08:01Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006939.json:
     "title": "[with patch, needs review] Make scrollbars appear on cell output when the output is too wide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6939",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  mpatel kcrisman boothby
+CC:  @qed777 @kcrisman boothby
 
 Currently, a scrollbar appears down at the bottom of the entire worksheet, which is only minimally helpful, since you then need to go to the bottom and scroll everything over.
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6939
 archive/issue_comments_057364.json:
 ```json
 {
-    "body": "Attachment [trac-6939-notebook-css-overflow.patch](tarball://root/attachments/some-uuid/ticket6939/trac-6939-notebook-css-overflow.patch) by jason created at 2009-09-15 22:10:13",
+    "body": "Attachment [trac-6939-notebook-css-overflow.patch](tarball://root/attachments/some-uuid/ticket6939/trac-6939-notebook-css-overflow.patch) by @jasongrout created at 2009-09-15 22:10:13",
     "created_at": "2009-09-15T22:10:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57364",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-6939-notebook-css-overflow.patch](tarball://root/attachments/some-uuid/ticket6939/trac-6939-notebook-css-overflow.patch) by jason created at 2009-09-15 22:10:13
+Attachment [trac-6939-notebook-css-overflow.patch](tarball://root/attachments/some-uuid/ticket6939/trac-6939-notebook-css-overflow.patch) by @jasongrout created at 2009-09-15 22:10:13
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_057365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57365",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_057366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57366",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_057367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57367",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_057368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57368",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_057369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57369",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_057370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57370",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_057372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57372",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -243,16 +243,16 @@ It looks like #6865 is getting reviewed pretty quickly, so I'll fix the above do
 archive/issue_comments_057373.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2009-09-19T02:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57373",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 
@@ -266,7 +266,7 @@ archive/issue_comments_057374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57374",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -279,16 +279,16 @@ Changing status from new to assigned.
 archive/issue_comments_057375.json:
 ```json
 {
-    "body": "Attachment [trac-6939-notebook-css-overflow.2.patch](tarball://root/attachments/some-uuid/ticket6939/trac-6939-notebook-css-overflow.2.patch) by mpatel created at 2009-09-21 01:01:48\n\nRebased against #6865.  Apply only this patch.",
+    "body": "Attachment [trac-6939-notebook-css-overflow.2.patch](tarball://root/attachments/some-uuid/ticket6939/trac-6939-notebook-css-overflow.2.patch) by @qed777 created at 2009-09-21 01:01:48\n\nRebased against #6865.  Apply only this patch.",
     "created_at": "2009-09-21T01:01:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57375",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac-6939-notebook-css-overflow.2.patch](tarball://root/attachments/some-uuid/ticket6939/trac-6939-notebook-css-overflow.2.patch) by mpatel created at 2009-09-21 01:01:48
+Attachment [trac-6939-notebook-css-overflow.2.patch](tarball://root/attachments/some-uuid/ticket6939/trac-6939-notebook-css-overflow.2.patch) by @qed777 created at 2009-09-21 01:01:48
 
 Rebased against #6865.  Apply only this patch.
 
@@ -304,7 +304,7 @@ archive/issue_comments_057376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57376",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_057377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57377",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_057378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57378",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_057379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6939",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6939#issuecomment-57379",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

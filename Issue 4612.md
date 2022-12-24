@@ -14,7 +14,7 @@ archive/issues_004612.json:
     "title": "[with patch, needs review] is_perfect_power for rationals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4612",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_034611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34611",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_034612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34612",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_034613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34613",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_034614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34614",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_034615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34615",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_034616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34616",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_034617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34617",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -218,16 +218,16 @@ Certainly it's clear that you can replace n/d by n*d, but we already know what t
 archive/issue_comments_034618.json:
 ```json
 {
-    "body": "Attachment [4612-QQ-perfect-power.patch](tarball://root/attachments/some-uuid/ticket4612/4612-QQ-perfect-power.patch) by robertwb created at 2008-12-19 23:11:55",
+    "body": "Attachment [4612-QQ-perfect-power.patch](tarball://root/attachments/some-uuid/ticket4612/4612-QQ-perfect-power.patch) by @robertwb created at 2008-12-19 23:11:55",
     "created_at": "2008-12-19T23:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34618",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4612-QQ-perfect-power.patch](tarball://root/attachments/some-uuid/ticket4612/4612-QQ-perfect-power.patch) by robertwb created at 2008-12-19 23:11:55
+Attachment [4612-QQ-perfect-power.patch](tarball://root/attachments/some-uuid/ticket4612/4612-QQ-perfect-power.patch) by @robertwb created at 2008-12-19 23:11:55
 
 
 
@@ -241,7 +241,7 @@ archive/issue_comments_034619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34619",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_034620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34620",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_034621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34621",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_034622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34622",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_034626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34626",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -445,16 +445,16 @@ Assuming that this gets a positive review, I'll open another ticket to say "remo
 archive/issue_comments_034627.json:
 ```json
 {
-    "body": "Changing assignee from somebody to craigcitro.",
+    "body": "Changing assignee from somebody to @craigcitro.",
     "created_at": "2009-01-11T08:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34627",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from somebody to craigcitro.
+Changing assignee from somebody to @craigcitro.
 
 
 
@@ -468,7 +468,7 @@ archive/issue_comments_034628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34628",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -481,16 +481,16 @@ Changing status from new to assigned.
 archive/issue_comments_034629.json:
 ```json
 {
-    "body": "Attachment [trac-4612-v2.patch](tarball://root/attachments/some-uuid/ticket4612/trac-4612-v2.patch) by craigcitro created at 2009-01-11 08:30:58\n\nNote: apply **only** `trac-4612-v2.patch`, i.e. don't apply it on top of Robert's patch.",
+    "body": "Attachment [trac-4612-v2.patch](tarball://root/attachments/some-uuid/ticket4612/trac-4612-v2.patch) by @craigcitro created at 2009-01-11 08:30:58\n\nNote: apply **only** `trac-4612-v2.patch`, i.e. don't apply it on top of Robert's patch.",
     "created_at": "2009-01-11T08:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34629",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4612-v2.patch](tarball://root/attachments/some-uuid/ticket4612/trac-4612-v2.patch) by craigcitro created at 2009-01-11 08:30:58
+Attachment [trac-4612-v2.patch](tarball://root/attachments/some-uuid/ticket4612/trac-4612-v2.patch) by @craigcitro created at 2009-01-11 08:30:58
 
 Note: apply **only** `trac-4612-v2.patch`, i.e. don't apply it on top of Robert's patch.
 
@@ -506,7 +506,7 @@ archive/issue_comments_034630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34630",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_034632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34632",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_034633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4612",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4612#issuecomment-34633",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

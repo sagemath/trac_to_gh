@@ -3,7 +3,7 @@
 archive/issues_005706.json:
 ```json
 {
-    "body": "Assignee: was\n\nMake Sage hurt:\n\n```\nvar('x,y')\nimplicit_plot(x^2+y^2 == 1, (x,-2,2), (y,-2,2))\n```\n\n\nThe problem is that implicit_plot takes a function, not a symbolic equation, so it views \"x<sup>2+y</sup>2 == 1\" as a function --- and that is very painful.  \n\nSOLUTION: Check if the input is an equation, and if so, make RHS zero, and plot corresponding function equal to 0.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5706\n\n",
+    "body": "Assignee: @williamstein\n\nMake Sage hurt:\n\n```\nvar('x,y')\nimplicit_plot(x^2+y^2 == 1, (x,-2,2), (y,-2,2))\n```\n\n\nThe problem is that implicit_plot takes a function, not a symbolic equation, so it views \"x<sup>2+y</sup>2 == 1\" as a function --- and that is very painful.  \n\nSOLUTION: Check if the input is an equation, and if so, make RHS zero, and plot corresponding function equal to 0.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5706\n\n",
     "created_at": "2009-04-07T17:36:29Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_005706.json:
     "title": "implicit_plot totally sucks when input an equation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5706",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Make Sage hurt:
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5706
 archive/issue_comments_044589.json:
 ```json
 {
-    "body": "Attachment [trac_5706.patch](tarball://root/attachments/some-uuid/ticket5706/trac_5706.patch) by was created at 2009-04-09 06:11:45",
+    "body": "Attachment [trac_5706.patch](tarball://root/attachments/some-uuid/ticket5706/trac_5706.patch) by @williamstein created at 2009-04-09 06:11:45",
     "created_at": "2009-04-09T06:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5706#issuecomment-44589",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5706.patch](tarball://root/attachments/some-uuid/ticket5706/trac_5706.patch) by was created at 2009-04-09 06:11:45
+Attachment [trac_5706.patch](tarball://root/attachments/some-uuid/ticket5706/trac_5706.patch) by @williamstein created at 2009-04-09 06:11:45
 
 
 

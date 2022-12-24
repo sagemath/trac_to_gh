@@ -14,7 +14,7 @@ archive/issues_004514.json:
     "title": "Equality test fails for element coerced back into GL(2,7)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4514",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 Assignee: tbd
@@ -55,7 +55,7 @@ archive/issue_comments_033507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4514#issuecomment-33507",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_033509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4514#issuecomment-33509",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_033510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4514",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4514#issuecomment-33510",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

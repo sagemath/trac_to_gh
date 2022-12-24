@@ -3,7 +3,7 @@
 archive/issues_001964.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexander@gmail.com\n\nThis illustrates attaching multiple files not working.  I don't know if this was ever implemented, but if so it's broken now.  If not, I think it will be fairly easy (the code is in misc/something). \n\n\n```\nteragon:tmp was$ touch a.sage b.sage\nteragon:tmp was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10, Release Date: 2008-01-18                        |\n| Type notebook() for the GUI, and license() for information.        |\nsage: attach a.sage b.sage\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/misc/interpreter.py in sage_prefilter(self, block, continuation)\n    393         for i in range(len(B)):\n    394             L = B[i]\n--> 395             M = d\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1964\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nThis illustrates attaching multiple files not working.  I don't know if this was ever implemented, but if so it's broken now.  If not, I think it will be fairly easy (the code is in misc/something). \n\n\n```\nteragon:tmp was$ touch a.sage b.sage\nteragon:tmp was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10, Release Date: 2008-01-18                        |\n| Type notebook() for the GUI, and license() for information.        |\nsage: attach a.sage b.sage\n---------------------------------------------------------------------------\n<type 'exceptions.ImportError'>           Traceback (most recent call last)\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/misc/interpreter.py in sage_prefilter(self, block, continuation)\n    393         for i in range(len(B)):\n    394             L = B[i]\n--> 395             M = d\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1964\n\n",
     "created_at": "2008-01-29T02:38:26Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_001964.json:
     "title": "attaching multiple files should work but is broken (or never implemented?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1964",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  ncalexander@gmail.com
 
@@ -58,7 +58,7 @@ archive/issue_comments_012707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12707",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_012708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12708",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_012709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12709",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -120,16 +120,16 @@ archive/issue_comments_012709.json:
 archive/issue_comments_012710.json:
 ```json
 {
-    "body": "Changing assignee from was to ncalexan.",
+    "body": "Changing assignee from @williamstein to @ncalexan.",
     "created_at": "2008-02-10T06:53:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12710",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Changing assignee from was to ncalexan.
+Changing assignee from @williamstein to @ncalexan.
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_012712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12712",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_012713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12713",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_012715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12715",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -418,16 +418,16 @@ Michael
 archive/issue_comments_012719.json:
 ```json
 {
-    "body": "Attachment [1964-ncalexan-against-2.10.2.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-against-2.10.2.patch) by ncalexan created at 2008-02-24 22:06:36\n\n`1964-ncalexan-against-2.10.2.patch` is a single patch against 2.10.2 that should merge cleanly.",
+    "body": "Attachment [1964-ncalexan-against-2.10.2.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-against-2.10.2.patch) by @ncalexan created at 2008-02-24 22:06:36\n\n`1964-ncalexan-against-2.10.2.patch` is a single patch against 2.10.2 that should merge cleanly.",
     "created_at": "2008-02-24T22:06:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12719",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [1964-ncalexan-against-2.10.2.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-against-2.10.2.patch) by ncalexan created at 2008-02-24 22:06:36
+Attachment [1964-ncalexan-against-2.10.2.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-against-2.10.2.patch) by @ncalexan created at 2008-02-24 22:06:36
 
 `1964-ncalexan-against-2.10.2.patch` is a single patch against 2.10.2 that should merge cleanly.
 
@@ -465,7 +465,7 @@ archive/issue_comments_012721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12721",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -572,16 +572,16 @@ Michael
 archive/issue_comments_012724.json:
 ```json
 {
-    "body": "Attachment [1964-ncalexan-against-3.0.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-against-3.0.patch) by ncalexan created at 2008-05-18 18:20:14",
+    "body": "Attachment [1964-ncalexan-against-3.0.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-against-3.0.patch) by @ncalexan created at 2008-05-18 18:20:14",
     "created_at": "2008-05-18T18:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12724",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [1964-ncalexan-against-3.0.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-against-3.0.patch) by ncalexan created at 2008-05-18 18:20:14
+Attachment [1964-ncalexan-against-3.0.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-against-3.0.patch) by @ncalexan created at 2008-05-18 18:20:14
 
 
 
@@ -595,7 +595,7 @@ archive/issue_comments_012725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12725",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -610,16 +610,16 @@ It does *NOT* address the load/attach in files issue.  I am going to look at tha
 archive/issue_comments_012726.json:
 ```json
 {
-    "body": "Attachment [1964-ncalexan-multiple-files-1.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-multiple-files-1.patch) by ncalexan created at 2008-05-19 05:15:52",
+    "body": "Attachment [1964-ncalexan-multiple-files-1.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-multiple-files-1.patch) by @ncalexan created at 2008-05-19 05:15:52",
     "created_at": "2008-05-19T05:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12726",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [1964-ncalexan-multiple-files-1.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-multiple-files-1.patch) by ncalexan created at 2008-05-19 05:15:52
+Attachment [1964-ncalexan-multiple-files-1.patch](tarball://root/attachments/some-uuid/ticket1964/1964-ncalexan-multiple-files-1.patch) by @ncalexan created at 2008-05-19 05:15:52
 
 
 
@@ -633,7 +633,7 @@ archive/issue_comments_012727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12727",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -655,7 +655,7 @@ archive/issue_comments_012728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12728",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -687,7 +687,7 @@ archive/issue_comments_012729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12729",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -705,7 +705,7 @@ archive/issue_comments_012730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12730",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -723,7 +723,7 @@ archive/issue_comments_012731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12731",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -747,7 +747,7 @@ archive/issue_comments_012732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12732",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -765,7 +765,7 @@ archive/issue_comments_012733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1964#issuecomment-12733",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

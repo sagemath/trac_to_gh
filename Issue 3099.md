@@ -3,7 +3,7 @@
 archive/issues_003099.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  polybori dimpase\n\nSingular crashes at degree 13 on intel core duo machine (mac os 10.5.2) when running \"fano7.sage\" with user command \"run2(1,20)\".  See attached files (fano7.sage, crash.txt}.  You may want to try \"run(12,20)\" to get to the crash more quickly.  Also, \"run2(19,40)\" crashed a quad core ppc machine with 8 gigs of memory.  The crash occurred before there was any significant output.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3099\n\n",
+    "body": "Assignee: @malb\n\nCC:  polybori @dimpase\n\nSingular crashes at degree 13 on intel core duo machine (mac os 10.5.2) when running \"fano7.sage\" with user command \"run2(1,20)\".  See attached files (fano7.sage, crash.txt}.  You may want to try \"run(12,20)\" to get to the crash more quickly.  Also, \"run2(19,40)\" crashed a quad core ppc machine with 8 gigs of memory.  The crash occurred before there was any significant output.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3099\n\n",
     "created_at": "2008-05-03T21:00:46Z",
     "labels": [
         "commutative algebra",
@@ -17,9 +17,9 @@ archive/issues_003099.json:
     "user": "jxxcarlson"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  polybori dimpase
+CC:  polybori @dimpase
 
 Singular crashes at degree 13 on intel core duo machine (mac os 10.5.2) when running "fano7.sage" with user command "run2(1,20)".  See attached files (fano7.sage, crash.txt}.  You may want to try "run(12,20)" to get to the crash more quickly.  Also, "run2(19,40)" crashed a quad core ppc machine with 8 gigs of memory.  The crash occurred before there was any significant output.
 
@@ -176,7 +176,7 @@ Michael
 archive/issue_comments_021403.json:
 ```json
 {
-    "body": "Changing assignee from malb to mabshoff.",
+    "body": "Changing assignee from @malb to mabshoff.",
     "created_at": "2008-05-29T01:58:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3099",
     "type": "issue_comment",
@@ -185,7 +185,7 @@ archive/issue_comments_021403.json:
 }
 ```
 
-Changing assignee from malb to mabshoff.
+Changing assignee from @malb to mabshoff.
 
 
 
@@ -256,7 +256,7 @@ archive/issue_comments_021407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3099#issuecomment-21407",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_021408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3099#issuecomment-21408",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_021409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3099#issuecomment-21409",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_021410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3099#issuecomment-21410",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_021411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3099#issuecomment-21411",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

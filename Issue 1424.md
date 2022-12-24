@@ -14,7 +14,7 @@ archive/issues_001424.json:
     "title": "[with patch] threaded map function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1424",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_009178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1424#issuecomment-9178",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -50,15 +50,15 @@ Resolution: fixed
 archive/issue_comments_009179.json:
 ```json
 {
-    "body": "Attachment [trac-1424.patch](tarball://root/attachments/some-uuid/ticket1424/trac-1424.patch) by rlm created at 2007-12-21 00:58:43\n\nmerged in 29.1. alpha2",
+    "body": "Attachment [trac-1424.patch](tarball://root/attachments/some-uuid/ticket1424/trac-1424.patch) by @rlmill created at 2007-12-21 00:58:43\n\nmerged in 29.1. alpha2",
     "created_at": "2007-12-21T00:58:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1424",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1424#issuecomment-9179",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-1424.patch](tarball://root/attachments/some-uuid/ticket1424/trac-1424.patch) by rlm created at 2007-12-21 00:58:43
+Attachment [trac-1424.patch](tarball://root/attachments/some-uuid/ticket1424/trac-1424.patch) by @rlmill created at 2007-12-21 00:58:43
 
 merged in 29.1. alpha2

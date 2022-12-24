@@ -14,7 +14,7 @@ archive/issues_000168.json:
     "title": "Plot bounds ignored when frame=True",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/168",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby
@@ -45,7 +45,7 @@ archive/issue_comments_000752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/168#issuecomment-752",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_000753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/168#issuecomment-753",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

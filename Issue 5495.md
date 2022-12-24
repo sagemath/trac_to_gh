@@ -14,7 +14,7 @@ archive/issues_005495.json:
     "title": "type: \"A mysterious error (perphaps a memory error?)\"   *PERP*HAPS!!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5495",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -47,7 +47,7 @@ archive/issue_comments_042674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5495#issuecomment-42674",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_042675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5495#issuecomment-42675",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -78,16 +78,16 @@ Changing status from new to assigned.
 archive/issue_comments_042676.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to jhpalmieri.",
+    "body": "Changing assignee from cwitty to @jhpalmieri.",
     "created_at": "2009-03-22T22:11:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5495#issuecomment-42676",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from cwitty to jhpalmieri.
+Changing assignee from cwitty to @jhpalmieri.
 
 
 
@@ -96,16 +96,16 @@ Changing assignee from cwitty to jhpalmieri.
 archive/issue_comments_042677.json:
 ```json
 {
-    "body": "Attachment [5495.patch](tarball://root/attachments/some-uuid/ticket5495/5495.patch) by jhpalmieri created at 2009-03-22 22:12:33",
+    "body": "Attachment [5495.patch](tarball://root/attachments/some-uuid/ticket5495/5495.patch) by @jhpalmieri created at 2009-03-22 22:12:33",
     "created_at": "2009-03-22T22:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5495#issuecomment-42677",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5495.patch](tarball://root/attachments/some-uuid/ticket5495/5495.patch) by jhpalmieri created at 2009-03-22 22:12:33
+Attachment [5495.patch](tarball://root/attachments/some-uuid/ticket5495/5495.patch) by @jhpalmieri created at 2009-03-22 22:12:33
 
 
 
@@ -149,7 +149,7 @@ archive/issue_comments_042679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5495",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5495#issuecomment-42679",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

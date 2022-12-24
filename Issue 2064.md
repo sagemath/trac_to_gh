@@ -3,7 +3,7 @@
 archive/issues_002064.json:
 ```json
 {
-    "body": "Assignee: ncalexan\n\nCC:  jhpalmieri robertwb\n\nIf you cpdef a function foo, and do foo?? from the command line, it displays both foo and the next function after it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2064\n\n",
+    "body": "Assignee: @ncalexan\n\nCC:  @jhpalmieri @robertwb\n\nIf you cpdef a function foo, and do foo?? from the command line, it displays both foo and the next function after it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2064\n\n",
     "created_at": "2008-02-05T21:38:25Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_002064.json:
     "title": "foo?? doesn't know about cpdef from the command line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2064",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: ncalexan
+Assignee: @ncalexan
 
-CC:  jhpalmieri robertwb
+CC:  @jhpalmieri @robertwb
 
 If you cpdef a function foo, and do foo?? from the command line, it displays both foo and the next function after it.
 
@@ -39,7 +39,7 @@ archive/issue_comments_013358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13358",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_013359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13359",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_013360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13360",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_013361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13361",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_013362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13362",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -124,16 +124,16 @@ Changing type from enhancement to defect.
 archive/issue_comments_013363.json:
 ```json
 {
-    "body": "Attachment [trac_2064-sage_cpdef_inspect.patch](tarball://root/attachments/some-uuid/ticket2064/trac_2064-sage_cpdef_inspect.patch) by mpatel created at 2010-02-02 04:57:40\n\nI've attached a patch uses a modified `inspect.BlockFinder` to recognize the `cdef` and `cpdef` tokens.  This appears to work for me, but I'm not a Cython expert.\n\nCurrently, the notebook has its own `sagenb.misc.sageinspect` and this has diverged in several places from `sage.misc.sageinspect`.  If the approach here is OK, I'll open a separate ticket to reconcile the files and fixes this problem in the notebook.",
+    "body": "Attachment [trac_2064-sage_cpdef_inspect.patch](tarball://root/attachments/some-uuid/ticket2064/trac_2064-sage_cpdef_inspect.patch) by @qed777 created at 2010-02-02 04:57:40\n\nI've attached a patch uses a modified `inspect.BlockFinder` to recognize the `cdef` and `cpdef` tokens.  This appears to work for me, but I'm not a Cython expert.\n\nCurrently, the notebook has its own `sagenb.misc.sageinspect` and this has diverged in several places from `sage.misc.sageinspect`.  If the approach here is OK, I'll open a separate ticket to reconcile the files and fixes this problem in the notebook.",
     "created_at": "2010-02-02T04:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13363",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_2064-sage_cpdef_inspect.patch](tarball://root/attachments/some-uuid/ticket2064/trac_2064-sage_cpdef_inspect.patch) by mpatel created at 2010-02-02 04:57:40
+Attachment [trac_2064-sage_cpdef_inspect.patch](tarball://root/attachments/some-uuid/ticket2064/trac_2064-sage_cpdef_inspect.patch) by @qed777 created at 2010-02-02 04:57:40
 
 I've attached a patch uses a modified `inspect.BlockFinder` to recognize the `cdef` and `cpdef` tokens.  This appears to work for me, but I'm not a Cython expert.
 
@@ -151,7 +151,7 @@ archive/issue_comments_013364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13364",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_013365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13365",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_013366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13366",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_013367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13367",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_013368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13368",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -240,16 +240,16 @@ Removes "cdef" from keyword list.  Apply only this patch.
 archive/issue_comments_013369.json:
 ```json
 {
-    "body": "Attachment [trac_2064-sage_cpdef_inspect.2.patch](tarball://root/attachments/some-uuid/ticket2064/trac_2064-sage_cpdef_inspect.2.patch) by mpatel created at 2010-02-16 21:23:47\n\nV2 adds only \"cpdef\" to the token search (or search for tokens).",
+    "body": "Attachment [trac_2064-sage_cpdef_inspect.2.patch](tarball://root/attachments/some-uuid/ticket2064/trac_2064-sage_cpdef_inspect.2.patch) by @qed777 created at 2010-02-16 21:23:47\n\nV2 adds only \"cpdef\" to the token search (or search for tokens).",
     "created_at": "2010-02-16T21:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13369",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_2064-sage_cpdef_inspect.2.patch](tarball://root/attachments/some-uuid/ticket2064/trac_2064-sage_cpdef_inspect.2.patch) by mpatel created at 2010-02-16 21:23:47
+Attachment [trac_2064-sage_cpdef_inspect.2.patch](tarball://root/attachments/some-uuid/ticket2064/trac_2064-sage_cpdef_inspect.2.patch) by @qed777 created at 2010-02-16 21:23:47
 
 V2 adds only "cpdef" to the token search (or search for tokens).
 
@@ -265,7 +265,7 @@ archive/issue_comments_013370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13370",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_013371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13371",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_013372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2064#issuecomment-13372",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

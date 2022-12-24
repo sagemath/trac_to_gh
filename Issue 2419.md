@@ -3,7 +3,7 @@
 archive/issues_002419.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  wdj was\n\nKeywords: gap singular resultant\n\nI consider the following bug critical, because it completely corrupts the Singular interface. However, it seems that the error only occurs on very few machines - so far, only one other person can reproduce the bug - see discussions at http://groups.google.com/group/sage-support/browse_thread/thread/5006f9a839723e27?hl=en\n\nCreating a univariate polynomial ring R over the rationals, computing the resultant of two polynomials in that ring and using the gap interface for the Integers makes the singular interface fail on R (on some machines). To be precise:\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^3 + x + 1;  g = x^3 - x - 1\nsage: r = f.resultant(g)\nsage: gap(ZZ)\nIntegers\nsage: singular(R).typeof()    # this should yield 'ring' !\nprint(sage8);\nsage: singular(R).name()   # this is correct ...\n'sage0'\nsage: singular('sage0')   # ... hence, this should return a ring - but it doesn't\nprint(sage9);\nsage: singular('sage0')\nprint(sage10);\nsage: singular('sage0')\nprint(sage11);\n```\n\n\nNote that computing the resultant is important. If i replace it with, say, `singular(R)`, then the error does not occur. Also, if `gap(ZZ)` is done *before* computing the resultant, the error does not occur.\n\nDavid Joyner observed that on both machines showing that error, there is an rpm based Linux. However, i know a machine with the same Linux that does not show that error.\nAgain, see http://groups.google.com/group/sage-support/browse_thread/thread/5006f9a839723e27?hl=en\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2419\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @wdjoyner @williamstein\n\nKeywords: gap singular resultant\n\nI consider the following bug critical, because it completely corrupts the Singular interface. However, it seems that the error only occurs on very few machines - so far, only one other person can reproduce the bug - see discussions at http://groups.google.com/group/sage-support/browse_thread/thread/5006f9a839723e27?hl=en\n\nCreating a univariate polynomial ring R over the rationals, computing the resultant of two polynomials in that ring and using the gap interface for the Integers makes the singular interface fail on R (on some machines). To be precise:\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^3 + x + 1;  g = x^3 - x - 1\nsage: r = f.resultant(g)\nsage: gap(ZZ)\nIntegers\nsage: singular(R).typeof()    # this should yield 'ring' !\nprint(sage8);\nsage: singular(R).name()   # this is correct ...\n'sage0'\nsage: singular('sage0')   # ... hence, this should return a ring - but it doesn't\nprint(sage9);\nsage: singular('sage0')\nprint(sage10);\nsage: singular('sage0')\nprint(sage11);\n```\n\n\nNote that computing the resultant is important. If i replace it with, say, `singular(R)`, then the error does not occur. Also, if `gap(ZZ)` is done *before* computing the resultant, the error does not occur.\n\nDavid Joyner observed that on both machines showing that error, there is an rpm based Linux. However, i know a machine with the same Linux that does not show that error.\nAgain, see http://groups.google.com/group/sage-support/browse_thread/thread/5006f9a839723e27?hl=en\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2419\n\n",
     "created_at": "2008-03-07T08:10:10Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_002419.json:
     "title": "Gap interface and resultant destroy the Singular interface on some machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2419",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  wdj was
+CC:  @wdjoyner @williamstein
 
 Keywords: gap singular resultant
 
@@ -68,7 +68,7 @@ archive/issue_comments_016319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16319",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_016320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16320",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_016321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16321",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_016322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16322",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_016323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16323",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_016324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16324",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_016325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16325",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_016326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16326",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -383,16 +383,16 @@ Hopefully it is reproducible for you.
 archive/issue_comments_016327.json:
 ```json
 {
-    "body": "Attachment [sage-2419-singular_synch.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-singular_synch.patch) by was created at 2008-03-12 15:33:10",
+    "body": "Attachment [sage-2419-singular_synch.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-singular_synch.patch) by @williamstein created at 2008-03-12 15:33:10",
     "created_at": "2008-03-12T15:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16327",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2419-singular_synch.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-singular_synch.patch) by was created at 2008-03-12 15:33:10
+Attachment [sage-2419-singular_synch.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-singular_synch.patch) by @williamstein created at 2008-03-12 15:33:10
 
 
 
@@ -406,7 +406,7 @@ archive/issue_comments_016328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16328",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_016329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16329",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_016330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16330",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_016331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16331",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_016332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16332",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_016333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16333",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_016334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16334",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_016335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16335",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -628,7 +628,7 @@ archive/issue_comments_016338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16338",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -646,7 +646,7 @@ archive/issue_comments_016339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16339",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -666,7 +666,7 @@ archive/issue_comments_016340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16340",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -706,7 +706,7 @@ archive/issue_comments_016342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16342",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -727,7 +727,7 @@ archive/issue_comments_016343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16343",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -746,7 +746,7 @@ archive/issue_comments_016344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16344",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -778,7 +778,7 @@ archive/issue_comments_016345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16345",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -791,16 +791,16 @@ Adding some doctests to singular synchronization. To be applied after William's 
 archive/issue_comments_016346.json:
 ```json
 {
-    "body": "Attachment [sage-2419-singular_synch_doctest.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-singular_synch_doctest.patch) by SimonKing created at 2008-03-13 10:40:04\n\nI found that bug since doc tests for my patch from #2420 failed. Thus i expected that William's synchronization patch would fix #2420 as well, but it didn't -- see my comments there.\n\nI'll try to boil down the new problem, but i suspect that a synchronization will be needed for the gap interface as well.",
+    "body": "Attachment [sage-2419-singular_synch_doctest.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-singular_synch_doctest.patch) by @simon-king-jena created at 2008-03-13 10:40:04\n\nI found that bug since doc tests for my patch from #2420 failed. Thus i expected that William's synchronization patch would fix #2420 as well, but it didn't -- see my comments there.\n\nI'll try to boil down the new problem, but i suspect that a synchronization will be needed for the gap interface as well.",
     "created_at": "2008-03-13T10:40:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16346",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [sage-2419-singular_synch_doctest.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-singular_synch_doctest.patch) by SimonKing created at 2008-03-13 10:40:04
+Attachment [sage-2419-singular_synch_doctest.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-singular_synch_doctest.patch) by @simon-king-jena created at 2008-03-13 10:40:04
 
 I found that bug since doc tests for my patch from #2420 failed. Thus i expected that William's synchronization patch would fix #2420 as well, but it didn't -- see my comments there.
 
@@ -818,7 +818,7 @@ archive/issue_comments_016347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16347",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -842,7 +842,7 @@ archive/issue_comments_016348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16348",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -866,7 +866,7 @@ archive/issue_comments_016349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16349",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -901,16 +901,16 @@ Michael
 archive/issue_comments_016351.json:
 ```json
 {
-    "body": "Attachment [sage-2419-refactor.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-refactor.patch) by was created at 2008-04-20 19:50:30\n\napply *all three* patches in order.",
+    "body": "Attachment [sage-2419-refactor.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-refactor.patch) by @williamstein created at 2008-04-20 19:50:30\n\napply *all three* patches in order.",
     "created_at": "2008-04-20T19:50:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16351",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2419-refactor.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-refactor.patch) by was created at 2008-04-20 19:50:30
+Attachment [sage-2419-refactor.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-refactor.patch) by @williamstein created at 2008-04-20 19:50:30
 
 apply *all three* patches in order.
 
@@ -926,7 +926,7 @@ archive/issue_comments_016352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16352",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -945,7 +945,7 @@ archive/issue_comments_016353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16353",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1099,16 +1099,16 @@ Michael
 archive/issue_comments_016357.json:
 ```json
 {
-    "body": "Attachment [sage-2419-followup.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-followup.patch) by was created at 2008-04-21 01:52:26",
+    "body": "Attachment [sage-2419-followup.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-followup.patch) by @williamstein created at 2008-04-21 01:52:26",
     "created_at": "2008-04-21T01:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2419",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2419#issuecomment-16357",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2419-followup.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-followup.patch) by was created at 2008-04-21 01:52:26
+Attachment [sage-2419-followup.patch](tarball://root/attachments/some-uuid/ticket2419/sage-2419-followup.patch) by @williamstein created at 2008-04-21 01:52:26
 
 
 

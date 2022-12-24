@@ -3,7 +3,7 @@
 archive/issues_000483.json:
 ```json
 {
-    "body": "Assignee: was\n\n* fixes two tiny bugs in my previous patch, one in cocoa.py and one in expect.py (that's 5827.patch ), thanks dropdrive on #sage-devel\n\n* add doc on how to do ssh through hops \n(that's 5828.patch )\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/483\n\n",
+    "body": "Assignee: @williamstein\n\n* fixes two tiny bugs in my previous patch, one in cocoa.py and one in expect.py (that's 5827.patch ), thanks dropdrive on #sage-devel\n\n* add doc on how to do ssh through hops \n(that's 5828.patch )\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/483\n\n",
     "created_at": "2007-08-23T10:06:39Z",
     "labels": [
         "user interface",
@@ -17,7 +17,7 @@ archive/issues_000483.json:
     "user": "pdehaye"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 * fixes two tiny bugs in my previous patch, one in cocoa.py and one in expect.py (that's 5827.patch ), thanks dropdrive on #sage-devel
 
@@ -91,7 +91,7 @@ Attachment [5828.patch](tarball://root/attachments/some-uuid/ticket483/5828.patc
 archive/issue_comments_002414.json:
 ```json
 {
-    "body": "Changing assignee from was to pdehaye.",
+    "body": "Changing assignee from @williamstein to pdehaye.",
     "created_at": "2007-08-23T10:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/483",
     "type": "issue_comment",
@@ -100,7 +100,7 @@ archive/issue_comments_002414.json:
 }
 ```
 
-Changing assignee from was to pdehaye.
+Changing assignee from @williamstein to pdehaye.
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_002415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2415",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_002416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2416",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

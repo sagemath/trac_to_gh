@@ -14,7 +14,7 @@ archive/issues_001140.json:
     "title": "typo in documentation [with patch]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1140",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1140
 archive/issue_comments_006932.json:
 ```json
 {
-    "body": "Attachment [7210.patch](tarball://root/attachments/some-uuid/ticket1140/7210.patch) by mhansen created at 2007-11-10 19:54:40",
+    "body": "Attachment [7210.patch](tarball://root/attachments/some-uuid/ticket1140/7210.patch) by @mwhansen created at 2007-11-10 19:54:40",
     "created_at": "2007-11-10T19:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1140",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1140#issuecomment-6932",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [7210.patch](tarball://root/attachments/some-uuid/ticket1140/7210.patch) by mhansen created at 2007-11-10 19:54:40
+Attachment [7210.patch](tarball://root/attachments/some-uuid/ticket1140/7210.patch) by @mwhansen created at 2007-11-10 19:54:40
 
 
 

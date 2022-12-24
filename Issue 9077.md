@@ -3,7 +3,7 @@
 archive/issues_009077.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9077\n\n",
+    "body": "Assignee: @burcin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9077\n\n",
     "created_at": "2010-05-28T20:40:44Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_009077.json:
     "title": "change sqrt to that it obeys the Lithinuania standard: sqrt(x) is x^3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9077",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_084265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9077#issuecomment-84265",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_084266.json:
 ```json
 {
-    "body": "Attachment [trac_9077.patch](tarball://root/attachments/some-uuid/ticket9077/trac_9077.patch) by was created at 2010-05-28 20:53:05",
+    "body": "Attachment [trac_9077.patch](tarball://root/attachments/some-uuid/ticket9077/trac_9077.patch) by @williamstein created at 2010-05-28 20:53:05",
     "created_at": "2010-05-28T20:53:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9077#issuecomment-84266",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9077.patch](tarball://root/attachments/some-uuid/ticket9077/trac_9077.patch) by was created at 2010-05-28 20:53:05
+Attachment [trac_9077.patch](tarball://root/attachments/some-uuid/ticket9077/trac_9077.patch) by @williamstein created at 2010-05-28 20:53:05
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_084267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9077#issuecomment-84267",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_084268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9077#issuecomment-84268",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_084269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9077#issuecomment-84269",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_084270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9077#issuecomment-84270",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

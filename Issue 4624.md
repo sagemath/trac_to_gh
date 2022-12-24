@@ -3,7 +3,7 @@
 archive/issues_004624.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mhansen\n\nSigh:\n\n```\nsage-3.2.1.alpha2/spkg/standard/sage_scripts-3.2.1.alpha1$ hg stat\n! ipy_profile_sage.py\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4624\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nSigh:\n\n```\nsage-3.2.1.alpha2/spkg/standard/sage_scripts-3.2.1.alpha1$ hg stat\n! ipy_profile_sage.py\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4624\n\n",
     "created_at": "2008-11-26T14:56:24Z",
     "labels": [
         "distribution",
@@ -19,7 +19,7 @@ archive/issues_004624.json:
 ```
 Assignee: mabshoff
 
-CC:  mhansen
+CC:  @mwhansen
 
 Sigh:
 
@@ -87,7 +87,7 @@ archive/issue_comments_034776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4624#issuecomment-34776",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -125,16 +125,16 @@ Michael
 archive/issue_comments_034778.json:
 ```json
 {
-    "body": "Attachment [scripts-4624.patch](tarball://root/attachments/some-uuid/ticket4624/scripts-4624.patch) by was created at 2008-11-27 01:35:10",
+    "body": "Attachment [scripts-4624.patch](tarball://root/attachments/some-uuid/ticket4624/scripts-4624.patch) by @williamstein created at 2008-11-27 01:35:10",
     "created_at": "2008-11-27T01:35:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4624#issuecomment-34778",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-4624.patch](tarball://root/attachments/some-uuid/ticket4624/scripts-4624.patch) by was created at 2008-11-27 01:35:10
+Attachment [scripts-4624.patch](tarball://root/attachments/some-uuid/ticket4624/scripts-4624.patch) by @williamstein created at 2008-11-27 01:35:10
 
 
 

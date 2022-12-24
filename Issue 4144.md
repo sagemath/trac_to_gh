@@ -3,7 +3,7 @@
 archive/issues_004144.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: crypto, aes, sbox, mq\n\nmake it so that this works:\n\n\n```\nsage: sr = mq.SR(1,1,1,4, allow_zero_inversions=True)\nsage: S = mq.SBox([sr.sub_byte(e) for e in list(sr.k)])\nsage: S\n(6, 5, 2, 9, 4, 7, 3, 12, 14, 15, 10, 0, 8, 1, 13, 11)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4144\n\n",
+    "body": "Assignee: @malb\n\nKeywords: crypto, aes, sbox, mq\n\nmake it so that this works:\n\n\n```\nsage: sr = mq.SR(1,1,1,4, allow_zero_inversions=True)\nsage: S = mq.SBox([sr.sub_byte(e) for e in list(sr.k)])\nsage: S\n(6, 5, 2, 9, 4, 7, 3, 12, 14, 15, 10, 0, 8, 1, 13, 11)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4144\n\n",
     "created_at": "2008-09-18T10:26:59Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_004144.json:
     "title": "[with patch, needs review] allow finite field elements in SBox constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4144",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: crypto, aes, sbox, mq
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4144
 archive/issue_comments_030087.json:
 ```json
 {
-    "body": "Attachment [sbox_gfq.patch](tarball://root/attachments/some-uuid/ticket4144/sbox_gfq.patch) by malb created at 2008-09-18 10:27:16",
+    "body": "Attachment [sbox_gfq.patch](tarball://root/attachments/some-uuid/ticket4144/sbox_gfq.patch) by @malb created at 2008-09-18 10:27:16",
     "created_at": "2008-09-18T10:27:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4144#issuecomment-30087",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sbox_gfq.patch](tarball://root/attachments/some-uuid/ticket4144/sbox_gfq.patch) by malb created at 2008-09-18 10:27:16
+Attachment [sbox_gfq.patch](tarball://root/attachments/some-uuid/ticket4144/sbox_gfq.patch) by @malb created at 2008-09-18 10:27:16
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_030088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4144",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4144#issuecomment-30088",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

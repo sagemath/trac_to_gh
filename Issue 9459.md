@@ -3,7 +3,7 @@
 archive/issues_009459.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen\n\nRight now, there is a function radical() as member of IntegerRing_class.  But there is no generic radical() function:\n\n```\nsage: radical(100)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/usr/local/src/sage-4.4.4/devel/sage-test/<ipython console> in <module>()\n\nNameError: name 'radical' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9459\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nRight now, there is a function radical() as member of IntegerRing_class.  But there is no generic radical() function:\n\n```\nsage: radical(100)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/usr/local/src/sage-4.4.4/devel/sage-test/<ipython console> in <module>()\n\nNameError: name 'radical' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9459\n\n",
     "created_at": "2010-07-08T21:43:40Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_009459.json:
     "title": "Implement a generic radical() function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9459",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mhansen
+CC:  @mwhansen
 
 Right now, there is a function radical() as member of IntegerRing_class.  But there is no generic radical() function:
 
@@ -50,7 +50,7 @@ archive/issue_comments_090679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9459#issuecomment-90679",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_090680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9459#issuecomment-90680",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_090681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9459#issuecomment-90681",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_090682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9459#issuecomment-90682",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_090683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9459#issuecomment-90683",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_090684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9459#issuecomment-90684",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_090685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9459#issuecomment-90685",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_090686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9459#issuecomment-90686",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -196,13 +196,13 @@ Resolution: fixed
 archive/issue_comments_090687.json:
 ```json
 {
-    "body": "Attachment [9459.patch](tarball://root/attachments/some-uuid/ticket9459/9459.patch) by jdemeyer created at 2011-01-12 06:32:30",
+    "body": "Attachment [9459.patch](tarball://root/attachments/some-uuid/ticket9459/9459.patch) by @jdemeyer created at 2011-01-12 06:32:30",
     "created_at": "2011-01-12T06:32:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9459#issuecomment-90687",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9459.patch](tarball://root/attachments/some-uuid/ticket9459/9459.patch) by jdemeyer created at 2011-01-12 06:32:30
+Attachment [9459.patch](tarball://root/attachments/some-uuid/ticket9459/9459.patch) by @jdemeyer created at 2011-01-12 06:32:30

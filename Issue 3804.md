@@ -14,7 +14,7 @@ archive/issues_003804.json:
     "title": "implement a preview button for \"edit\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3804",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_027034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3804#issuecomment-27034",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_027035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3804#issuecomment-27035",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_027036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3804#issuecomment-27036",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

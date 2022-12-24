@@ -3,7 +3,7 @@
 archive/issues_007504.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: magma, boolean context\n\nCompare the following results:\n\n```\nsage: bool(pari(False))\nFalse\nsage: bool(gap(False))\nFalse\nsage: bool(maxima(False))\nFalse\nsage: bool(maple(False))\nFalse\nsage: bool(mathematica(False))\nFalse\nsage: bool(magma(False))\nTrue\n```\n\nThis is in some sense the inverse problem to #845.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7504\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: magma, boolean context\n\nCompare the following results:\n\n```\nsage: bool(pari(False))\nFalse\nsage: bool(gap(False))\nFalse\nsage: bool(maxima(False))\nFalse\nsage: bool(maple(False))\nFalse\nsage: bool(mathematica(False))\nFalse\nsage: bool(magma(False))\nTrue\n```\n\nThis is in some sense the inverse problem to #845.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7504\n\n",
     "created_at": "2009-11-20T13:27:44Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_007504.json:
     "title": "Magma booleans don't evaluate correctly in boolean contexts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7504",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: magma, boolean context
 
@@ -160,7 +160,7 @@ archive/issue_comments_063438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7504#issuecomment-63438",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_063439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7504#issuecomment-63439",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_063440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7504#issuecomment-63440",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_063441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7504#issuecomment-63441",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -243,16 +243,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_063442.json:
 ```json
 {
-    "body": "Attachment [trac_7504.patch](tarball://root/attachments/some-uuid/ticket7504/trac_7504.patch) by kedlaya created at 2009-11-24 22:19:29\n\nThis applied against 4.2, fixed the issue for me, and doesn't appear to have caused any failures of optional doctests.",
+    "body": "Attachment [trac_7504.patch](tarball://root/attachments/some-uuid/ticket7504/trac_7504.patch) by @kedlaya created at 2009-11-24 22:19:29\n\nThis applied against 4.2, fixed the issue for me, and doesn't appear to have caused any failures of optional doctests.",
     "created_at": "2009-11-24T22:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7504#issuecomment-63442",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
-Attachment [trac_7504.patch](tarball://root/attachments/some-uuid/ticket7504/trac_7504.patch) by kedlaya created at 2009-11-24 22:19:29
+Attachment [trac_7504.patch](tarball://root/attachments/some-uuid/ticket7504/trac_7504.patch) by @kedlaya created at 2009-11-24 22:19:29
 
 This applied against 4.2, fixed the issue for me, and doesn't appear to have caused any failures of optional doctests.
 
@@ -268,7 +268,7 @@ archive/issue_comments_063443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7504",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7504#issuecomment-63443",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

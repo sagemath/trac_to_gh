@@ -3,7 +3,7 @@
 archive/issues_006295.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  craigcitro\n\nThe build process runs sphinx-build even if a package fails to install. This hides the real error message from the spkg build.\n\nThis patch to spkg/install fixes the problem:\n\n\n```\n--- install.old 2009-06-12 08:46:55.000000000 +0200\n+++ install     2009-06-15 11:47:02.000000000 +0200\n@@ -357,6 +357,11 @@\n \n time make -f standard/deps $1\n \n+if [ $? -ne 0 ]; then\n+       echo \"Error building Sage.\"\n+       exit 1\n+fi\n+\n #Build the documentation\n rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\n rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6295\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @craigcitro\n\nThe build process runs sphinx-build even if a package fails to install. This hides the real error message from the spkg build.\n\nThis patch to spkg/install fixes the problem:\n\n\n```\n--- install.old 2009-06-12 08:46:55.000000000 +0200\n+++ install     2009-06-15 11:47:02.000000000 +0200\n@@ -357,6 +357,11 @@\n \n time make -f standard/deps $1\n \n+if [ $? -ne 0 ]; then\n+       echo \"Error building Sage.\"\n+       exit 1\n+fi\n+\n #Build the documentation\n rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\n rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6295\n\n",
     "created_at": "2009-06-15T09:52:30Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_006295.json:
     "title": "[with patch, needs review] build runs sphinx-build even on failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6295",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  craigcitro
+CC:  @craigcitro
 
 The build process runs sphinx-build even if a package fails to install. This hides the real error message from the spkg build.
 
@@ -60,7 +60,7 @@ archive/issue_comments_050236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6295#issuecomment-50236",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_050237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6295",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6295#issuecomment-50237",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

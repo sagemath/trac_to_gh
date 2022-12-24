@@ -14,7 +14,7 @@ archive/issues_008255.json:
     "title": "update SageTeX spkg to 2.2.3.p0 to fix spkg-check script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8255",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tbd
@@ -43,7 +43,7 @@ archive/issue_comments_073045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73045",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_073048.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73048",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_073050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73050",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_073051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73051",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_073053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73053",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_073055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73055",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_073056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73056",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_073057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73057",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_073058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73058",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_073059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73059",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_073060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73060",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -400,7 +400,7 @@ archive/issue_comments_073061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73061",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_073062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73062",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

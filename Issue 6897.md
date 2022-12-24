@@ -3,7 +3,7 @@
 archive/issues_006897.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  rkirov mhansen\n\nMoving Notebook to Django will abstract the server and  user authentication, and give us a free admin interface, as well as a large support codebase.\n\n1On Aug 31, 11:20 pm, William Stein <wst...`@`gmail.com> wrote:\n> <SNIP>\n> \n> I'm not at all convinced that using twisted in any way (web or web2) is a\n> good idea for the Sage notebook.   I plan to revisit this in late\n> September.    The first thing I plan to do is consider switching from\n> twisted to Django, as is done in codenode -- seehttp://codenode.org/--\n> hopefully, even sharing code with that project.   Of course, twisted could\n> still get used at a certain level behind the scenes, but the Sage notebook\n> would then no longer explicitly use it.\n> \n> So if you want to help as you describe above, perhaps you could accelerate\n> this.  This involves:\n> \n>   (1) getting familiar with Django, if you don't already know it.\n> \n>   (2) reading through the current codenode codebase\n> \n>   (3) then formulating a plan to replace server/notebook/twist.py with\n> something based either directly on Django, or possibly using codenode in\n> some way.\n> \n> The above is what I would do, but if you do it first that would be\n> spectacular.\n> \n> William\n\nIssue created by migration from https://trac.sagemath.org/ticket/6897\n\n",
+    "body": "Assignee: boothby\n\nCC:  rkirov @mwhansen\n\nMoving Notebook to Django will abstract the server and  user authentication, and give us a free admin interface, as well as a large support codebase.\n\n1On Aug 31, 11:20 pm, William Stein <wst...`@`gmail.com> wrote:\n> <SNIP>\n> \n> I'm not at all convinced that using twisted in any way (web or web2) is a\n> good idea for the Sage notebook.   I plan to revisit this in late\n> September.    The first thing I plan to do is consider switching from\n> twisted to Django, as is done in codenode -- seehttp://codenode.org/--\n> hopefully, even sharing code with that project.   Of course, twisted could\n> still get used at a certain level behind the scenes, but the Sage notebook\n> would then no longer explicitly use it.\n> \n> So if you want to help as you describe above, perhaps you could accelerate\n> this.  This involves:\n> \n>   (1) getting familiar with Django, if you don't already know it.\n> \n>   (2) reading through the current codenode codebase\n> \n>   (3) then formulating a plan to replace server/notebook/twist.py with\n> something based either directly on Django, or possibly using codenode in\n> some way.\n> \n> The above is what I would do, but if you do it first that would be\n> spectacular.\n> \n> William\n\nIssue created by migration from https://trac.sagemath.org/ticket/6897\n\n",
     "created_at": "2009-09-06T03:18:54Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006897.json:
     "title": "Migrate Notebook to Django",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6897",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
 
-CC:  rkirov mhansen
+CC:  rkirov @mwhansen
 
 Moving Notebook to Django will abstract the server and  user authentication, and give us a free admin interface, as well as a large support codebase.
 
@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6897
 archive/issue_comments_056967.json:
 ```json
 {
-    "body": "Changing assignee from boothby to timdumol.",
+    "body": "Changing assignee from boothby to @TimDumol.",
     "created_at": "2009-09-09T13:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56967",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Changing assignee from boothby to timdumol.
+Changing assignee from boothby to @TimDumol.
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_056968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56968",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_056969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56969",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_056970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56970",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_056971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56971",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_056972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56972",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_056973.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56973",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_056974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56974",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_056975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56975",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_056976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56976",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_056977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56977",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_056978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56978",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_056979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56979",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_056980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56980",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_056981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56981",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_056982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56982",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_056983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56983",
-    "user": "mboratko"
+    "user": "@mboratko"
 }
 ```
 
@@ -416,7 +416,7 @@ archive/issue_comments_056984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56984",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -434,7 +434,7 @@ archive/issue_comments_056985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56985",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_056986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56986",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

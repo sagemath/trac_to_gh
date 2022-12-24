@@ -3,7 +3,7 @@
 archive/issues_007802.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  robertwb mvngu\n\nThe IEEE754 standard has two versions of \"round to nearest\".  It appears that ours is the \"ties toward even\" version (see http://www.mpfr.org/mpfr-current/mpfr.html#MPFR-Basics).  We ought to mention this in the docs to RealField when it talks about the rounding modes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7802\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @robertwb mvngu\n\nThe IEEE754 standard has two versions of \"round to nearest\".  It appears that ours is the \"ties toward even\" version (see http://www.mpfr.org/mpfr-current/mpfr.html#MPFR-Basics).  We ought to mention this in the docs to RealField when it talks about the rounding modes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7802\n\n",
     "created_at": "2010-01-01T10:52:06Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_007802.json:
     "title": "Mention that RNDN is the \"ties toward even\" version in RealField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7802",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mvngu
 
-CC:  robertwb mvngu
+CC:  @robertwb mvngu
 
 The IEEE754 standard has two versions of "round to nearest".  It appears that ours is the "ties toward even" version (see http://www.mpfr.org/mpfr-current/mpfr.html#MPFR-Basics).  We ought to mention this in the docs to RealField when it talks about the rounding modes.
 
@@ -39,7 +39,7 @@ archive/issue_comments_067502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7802#issuecomment-67502",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_067503.json:
 ```json
 {
-    "body": "Attachment [trac-7802-ties-to-even-doc.patch](tarball://root/attachments/some-uuid/ticket7802/trac-7802-ties-to-even-doc.patch) by jason created at 2010-01-20 06:14:08",
+    "body": "Attachment [trac-7802-ties-to-even-doc.patch](tarball://root/attachments/some-uuid/ticket7802/trac-7802-ties-to-even-doc.patch) by @jasongrout created at 2010-01-20 06:14:08",
     "created_at": "2010-01-20T06:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7802#issuecomment-67503",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7802-ties-to-even-doc.patch](tarball://root/attachments/some-uuid/ticket7802/trac-7802-ties-to-even-doc.patch) by jason created at 2010-01-20 06:14:08
+Attachment [trac-7802-ties-to-even-doc.patch](tarball://root/attachments/some-uuid/ticket7802/trac-7802-ties-to-even-doc.patch) by @jasongrout created at 2010-01-20 06:14:08
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_003142.json:
 ```json
 {
-    "body": "Assignee: malb\n\nhomogenization could fail if the first polynomial in the list is homogenious but later polynomials aren't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3142\n\n",
+    "body": "Assignee: @malb\n\nhomogenization could fail if the first polynomial in the list is homogenious but later polynomials aren't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3142\n\n",
     "created_at": "2008-05-09T10:44:15Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_003142.json:
     "title": "[with patch, needs review] MPolynomialIdeal.homogenize bugfix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3142",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 homogenization could fail if the first polynomial in the list is homogenious but later polynomials aren't.
 

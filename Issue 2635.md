@@ -14,7 +14,7 @@ archive/issues_002635.json:
     "title": "MAJOR NOTEBOOK BUG -- sending unevaluated cells back to the server is severly broken.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2635",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -39,7 +39,7 @@ archive/issue_comments_018104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2635#issuecomment-18104",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_018106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2635",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2635#issuecomment-18106",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

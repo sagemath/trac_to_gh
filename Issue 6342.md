@@ -14,7 +14,7 @@ archive/issues_006342.json:
     "title": "notebook -- fix that the slideshow mode in the notebook utterly completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6342",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -81,16 +81,16 @@ Step 1 may be omitted, this bug is active in normal mode.  Step 5 should read, "
 archive/issue_comments_050672.json:
 ```json
 {
-    "body": "Attachment [trac_6342-part2.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part2.patch) by was created at 2009-06-17 10:28:59\n\na tiny little bugfix",
+    "body": "Attachment [trac_6342-part2.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part2.patch) by @williamstein created at 2009-06-17 10:28:59\n\na tiny little bugfix",
     "created_at": "2009-06-17T10:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50672",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6342-part2.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part2.patch) by was created at 2009-06-17 10:28:59
+Attachment [trac_6342-part2.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part2.patch) by @williamstein created at 2009-06-17 10:28:59
 
 a tiny little bugfix
 
@@ -101,16 +101,16 @@ a tiny little bugfix
 archive/issue_comments_050673.json:
 ```json
 {
-    "body": "Attachment [trac_6342-part3.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part3.patch) by was created at 2009-06-17 10:29:12",
+    "body": "Attachment [trac_6342-part3.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part3.patch) by @williamstein created at 2009-06-17 10:29:12",
     "created_at": "2009-06-17T10:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50673",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6342-part3.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part3.patch) by was created at 2009-06-17 10:29:12
+Attachment [trac_6342-part3.patch](tarball://root/attachments/some-uuid/ticket6342/trac_6342-part3.patch) by @williamstein created at 2009-06-17 10:29:12
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_050674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50674",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_050677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50677",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_050680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50680",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_050681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50681",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_050682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6342",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50682",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

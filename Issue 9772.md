@@ -3,7 +3,7 @@
 archive/issues_009772.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  davidloeffler cremona was nthiery boothby jason kcrisman mhansen justin alexghitza\n\nThis patch will implement abelian groups, both additive and multiplicative, finite and infinite, under a common abstract class, using machinery for quotients of modules over `ZZ`.  This will make subgroups, intersections of subgroups, isomorphism classes, and quotient groups possible.  Generators may be of any type, so long as they support the minimal operations required.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9773\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @loefflerd @JohnCremona @williamstein @nthiery boothby @jasongrout @kcrisman @mwhansen justin alexghitza\n\nThis patch will implement abelian groups, both additive and multiplicative, finite and infinite, under a common abstract class, using machinery for quotients of modules over `ZZ`.  This will make subgroups, intersections of subgroups, isomorphism classes, and quotient groups possible.  Generators may be of any type, so long as they support the minimal operations required.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9773\n\n",
     "created_at": "2010-08-20T22:55:53Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009772.json:
     "title": "Abelian groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9772",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  davidloeffler cremona was nthiery boothby jason kcrisman mhansen justin alexghitza
+CC:  @loefflerd @JohnCremona @williamstein @nthiery boothby @jasongrout @kcrisman @mwhansen justin alexghitza
 
 This patch will implement abelian groups, both additive and multiplicative, finite and infinite, under a common abstract class, using machinery for quotients of modules over `ZZ`.  This will make subgroups, intersections of subgroups, isomorphism classes, and quotient groups possible.  Generators may be of any type, so long as they support the minimal operations required.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9773
 archive/issue_comments_095765.json:
 ```json
 {
-    "body": "Attachment [trac_9773-abelian-groups-draft-1.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-1.patch) by rbeezer created at 2010-08-20 23:14:32\n\nAAG is the class of additive abelian groups.  This is an infinite group with a subgroup and a quotient.  (Typically quotients lose the generators and are \"generic\" but not in this example.)\n\n\n```\nsage: A=AAG([3,4,0])\nsage: A.gens()\n((2, 3, 0), (0, 0, 1))\nsage: A.0.order()\n12\nsage: A.1.order()\n+Infinity\nsage: B=A.subgroup([A.1])\nsage: B\nInfinite additive abelian group isomorphic to Z with generator(s): (0, 0, 1)\nsage: C=A/B\nsage: C\nFinite additive abelian group isomorphic to Z_12 with generator(s): (2, 3, 0)\n```\n\n\nGUN is a constructor of Groups of Units Mod n.  It employs MAG, the class of multiplicative abelian groups.  This is an intersection of two subgroups, and then a Cayley table is free (in the category of multiplicative groups).\n\n\n```\nsage: G=GUN(72)\nsage: G.list()\n[1, 65, 49, 17, 25, 41, 55, 47, 31, 71, 7, 23, 37, 29, 13, 53, 61, 5, 19, 11, 67, 35, 43, 59]\nsage: G.subgroup([71,7])\nFinite multiplicative abelian group isomorphic to Z_2 + Z_6 with generator(s): 55, 65\nsage: K=G.subgroup([71,7])\nsage: K.list()\n[1, 65, 49, 17, 25, 41, 55, 47, 31, 71, 7, 23]\nsage: L=G.subgroup([13,7])\nsage: L\nFinite multiplicative abelian group isomorphic to Z_2 + Z_6 with generator(s): 55, 61\nsage: L.list()\n[1, 61, 49, 37, 25, 13, 55, 43, 31, 19, 7, 67]\nsage: M=K.intersection(L)\nsage: M.list()\n[1, 7, 49, 55, 25, 31]\nsage: M\nFinite multiplicative abelian group isomorphic to Z_6 with generator(s): 7\nsage: M.cayley_table()\n*  a b c d e f\n +------------\na| a b c d e f\nb| b c d e f a\nc| c d e f a b\nd| d e f a b c\ne| e f a b c d\nf| f a b c d e\n```\n\n\nThis is an example from the current additive abelian wrapper class.  It shows the generators keyword allowing arbitrary elements to form the group, so long as they know how to add.  GUN above is similar, but with multiplication.\n\n\n\n```\nsage: E = EllipticCurve('30a2')\nsage: pts = [E(4,-7,1), E(7/4, -11/8, 1), E(3, -2, 1)]\nsage: M=AAG([3,2,2], generators=pts)\nsage: M.list()\n[(0 : 1 : 0), (13 : -52 : 1), (4 : -7 : 1), (3 : -2 : 1), (4 : 2 : 1), (13 : 38 : 1), (7/4 : -11/8 : 1), (1 : -4 : 1), (-2 : -7 : 1), (-5 : 2 : 1), (-2 : 8 : 1), (1 : 2 : 1)]\nsage: M.gens()\n((7/4 : -11/8 : 1), (13 : -52 : 1))\nsage: N=M.subgroup([M.1])\nsage: N\nFinite additive abelian group isomorphic to Z_6 with generator(s): (13 : -52 : 1)\nsage: N.list()\n[(0 : 1 : 0), (13 : -52 : 1), (4 : -7 : 1), (3 : -2 : 1), (4 : 2 : 1), (13 : 38 : 1)]\n```\n\n\nThere is lots to do here still: different filenames, different class names, error-checking, doctests, comparisons, and so on.  But the code seems to be working.  I'm not 100% confident on the `__call__` method of the main abstract class and I don't know if I need some things to support coercion better.  Any advice or comments at this stage would be appreciated before I begin to clean this all up.",
+    "body": "Attachment [trac_9773-abelian-groups-draft-1.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-1.patch) by @rbeezer created at 2010-08-20 23:14:32\n\nAAG is the class of additive abelian groups.  This is an infinite group with a subgroup and a quotient.  (Typically quotients lose the generators and are \"generic\" but not in this example.)\n\n\n```\nsage: A=AAG([3,4,0])\nsage: A.gens()\n((2, 3, 0), (0, 0, 1))\nsage: A.0.order()\n12\nsage: A.1.order()\n+Infinity\nsage: B=A.subgroup([A.1])\nsage: B\nInfinite additive abelian group isomorphic to Z with generator(s): (0, 0, 1)\nsage: C=A/B\nsage: C\nFinite additive abelian group isomorphic to Z_12 with generator(s): (2, 3, 0)\n```\n\n\nGUN is a constructor of Groups of Units Mod n.  It employs MAG, the class of multiplicative abelian groups.  This is an intersection of two subgroups, and then a Cayley table is free (in the category of multiplicative groups).\n\n\n```\nsage: G=GUN(72)\nsage: G.list()\n[1, 65, 49, 17, 25, 41, 55, 47, 31, 71, 7, 23, 37, 29, 13, 53, 61, 5, 19, 11, 67, 35, 43, 59]\nsage: G.subgroup([71,7])\nFinite multiplicative abelian group isomorphic to Z_2 + Z_6 with generator(s): 55, 65\nsage: K=G.subgroup([71,7])\nsage: K.list()\n[1, 65, 49, 17, 25, 41, 55, 47, 31, 71, 7, 23]\nsage: L=G.subgroup([13,7])\nsage: L\nFinite multiplicative abelian group isomorphic to Z_2 + Z_6 with generator(s): 55, 61\nsage: L.list()\n[1, 61, 49, 37, 25, 13, 55, 43, 31, 19, 7, 67]\nsage: M=K.intersection(L)\nsage: M.list()\n[1, 7, 49, 55, 25, 31]\nsage: M\nFinite multiplicative abelian group isomorphic to Z_6 with generator(s): 7\nsage: M.cayley_table()\n*  a b c d e f\n +------------\na| a b c d e f\nb| b c d e f a\nc| c d e f a b\nd| d e f a b c\ne| e f a b c d\nf| f a b c d e\n```\n\n\nThis is an example from the current additive abelian wrapper class.  It shows the generators keyword allowing arbitrary elements to form the group, so long as they know how to add.  GUN above is similar, but with multiplication.\n\n\n\n```\nsage: E = EllipticCurve('30a2')\nsage: pts = [E(4,-7,1), E(7/4, -11/8, 1), E(3, -2, 1)]\nsage: M=AAG([3,2,2], generators=pts)\nsage: M.list()\n[(0 : 1 : 0), (13 : -52 : 1), (4 : -7 : 1), (3 : -2 : 1), (4 : 2 : 1), (13 : 38 : 1), (7/4 : -11/8 : 1), (1 : -4 : 1), (-2 : -7 : 1), (-5 : 2 : 1), (-2 : 8 : 1), (1 : 2 : 1)]\nsage: M.gens()\n((7/4 : -11/8 : 1), (13 : -52 : 1))\nsage: N=M.subgroup([M.1])\nsage: N\nFinite additive abelian group isomorphic to Z_6 with generator(s): (13 : -52 : 1)\nsage: N.list()\n[(0 : 1 : 0), (13 : -52 : 1), (4 : -7 : 1), (3 : -2 : 1), (4 : 2 : 1), (13 : 38 : 1)]\n```\n\n\nThere is lots to do here still: different filenames, different class names, error-checking, doctests, comparisons, and so on.  But the code seems to be working.  I'm not 100% confident on the `__call__` method of the main abstract class and I don't know if I need some things to support coercion better.  Any advice or comments at this stage would be appreciated before I begin to clean this all up.",
     "created_at": "2010-08-20T23:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95765",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9773-abelian-groups-draft-1.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-1.patch) by rbeezer created at 2010-08-20 23:14:32
+Attachment [trac_9773-abelian-groups-draft-1.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-1.patch) by @rbeezer created at 2010-08-20 23:14:32
 
 AAG is the class of additive abelian groups.  This is an infinite group with a subgroup and a quotient.  (Typically quotients lose the generators and are "generic" but not in this example.)
 
@@ -133,7 +133,7 @@ archive/issue_comments_095766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95766",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_095767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95767",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_095768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95768",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_095769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95769",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_095770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95770",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_095771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95771",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -254,16 +254,16 @@ Please close #9694 when this ticket is merged.
 archive/issue_comments_095772.json:
 ```json
 {
-    "body": "Attachment [trac_9773-abelian-groups-draft-2.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-2.patch) by rbeezer created at 2010-09-02 04:18:10",
+    "body": "Attachment [trac_9773-abelian-groups-draft-2.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-2.patch) by @rbeezer created at 2010-09-02 04:18:10",
     "created_at": "2010-09-02T04:18:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95772",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9773-abelian-groups-draft-2.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-2.patch) by rbeezer created at 2010-09-02 04:18:10
+Attachment [trac_9773-abelian-groups-draft-2.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-2.patch) by @rbeezer created at 2010-09-02 04:18:10
 
 
 
@@ -277,7 +277,7 @@ archive/issue_comments_095773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95773",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_095774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95774",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_095775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95775",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_095776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95776",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_095777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95777",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_095778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95778",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -401,16 +401,16 @@ Rob
 archive/issue_comments_095779.json:
 ```json
 {
-    "body": "Attachment [trac_9773-abelian-groups-draft-3.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-3.patch) by rbeezer created at 2012-05-17 22:49:10\n\nDraft 3 patch is actually about a year old at time of posting (for safe-keeping).  Category code changed out from under me, so I had to start over last summer.  This applies on 5.0.rc0, builds, and simple testing of the abstract classes seems to be successful. \n\nNeeds documentation, some changes, and practical derived classes, like totally abstract cyclic groups, the multiplicative subgroup of units mod n, etc.  IIRC, there are examples of these in the previous drafts.  I fully intend to work on this over the summer.",
+    "body": "Attachment [trac_9773-abelian-groups-draft-3.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-3.patch) by @rbeezer created at 2012-05-17 22:49:10\n\nDraft 3 patch is actually about a year old at time of posting (for safe-keeping).  Category code changed out from under me, so I had to start over last summer.  This applies on 5.0.rc0, builds, and simple testing of the abstract classes seems to be successful. \n\nNeeds documentation, some changes, and practical derived classes, like totally abstract cyclic groups, the multiplicative subgroup of units mod n, etc.  IIRC, there are examples of these in the previous drafts.  I fully intend to work on this over the summer.",
     "created_at": "2012-05-17T22:49:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95779",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9773-abelian-groups-draft-3.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-3.patch) by rbeezer created at 2012-05-17 22:49:10
+Attachment [trac_9773-abelian-groups-draft-3.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-3.patch) by @rbeezer created at 2012-05-17 22:49:10
 
 Draft 3 patch is actually about a year old at time of posting (for safe-keeping).  Category code changed out from under me, so I had to start over last summer.  This applies on 5.0.rc0, builds, and simple testing of the abstract classes seems to be successful. 
 
@@ -428,7 +428,7 @@ archive/issue_comments_095780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95780",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -448,16 +448,16 @@ I've tried to add copious comments to make it easier to navigate the code.  More
 archive/issue_comments_095781.json:
 ```json
 {
-    "body": "Attachment [trac_9773-abelian-groups-draft-4.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-4.patch) by rbeezer created at 2012-07-16 04:01:34",
+    "body": "Attachment [trac_9773-abelian-groups-draft-4.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-4.patch) by @rbeezer created at 2012-07-16 04:01:34",
     "created_at": "2012-07-16T04:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95781",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9773-abelian-groups-draft-4.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-4.patch) by rbeezer created at 2012-07-16 04:01:34
+Attachment [trac_9773-abelian-groups-draft-4.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-4.patch) by @rbeezer created at 2012-07-16 04:01:34
 
 
 
@@ -471,7 +471,7 @@ archive/issue_comments_095782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95782",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -486,16 +486,16 @@ Test suite on the elliptic curve example was testing the wrong instance - as cor
 archive/issue_comments_095783.json:
 ```json
 {
-    "body": "Attachment [trac_9773-abelian-groups-draft-5.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-5.patch) by rbeezer created at 2012-07-31 02:58:56\n\ndraft-4 failed to include \"__init__.py\" in the patch - that has been corrected in draft-5.\n\nDavid Roe helped me rework the initialization of the module class, so now the test suite is not doing additive tests on the multiplicative classes.  And I also believe I understand the problems with the element constructor (again with David's help).  So I think I'm over the hump on this one now.\n\nLong list of tests at module level are all passing, except one test suite (which I think I understand and can correct).  A few other test suites commented-out, but I think they are correctable also.",
+    "body": "Attachment [trac_9773-abelian-groups-draft-5.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-5.patch) by @rbeezer created at 2012-07-31 02:58:56\n\ndraft-4 failed to include \"__init__.py\" in the patch - that has been corrected in draft-5.\n\nDavid Roe helped me rework the initialization of the module class, so now the test suite is not doing additive tests on the multiplicative classes.  And I also believe I understand the problems with the element constructor (again with David's help).  So I think I'm over the hump on this one now.\n\nLong list of tests at module level are all passing, except one test suite (which I think I understand and can correct).  A few other test suites commented-out, but I think they are correctable also.",
     "created_at": "2012-07-31T02:58:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95783",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9773-abelian-groups-draft-5.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-5.patch) by rbeezer created at 2012-07-31 02:58:56
+Attachment [trac_9773-abelian-groups-draft-5.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-5.patch) by @rbeezer created at 2012-07-31 02:58:56
 
 draft-4 failed to include "__init__.py" in the patch - that has been corrected in draft-5.
 
@@ -510,16 +510,16 @@ Long list of tests at module level are all passing, except one test suite (which
 archive/issue_comments_095784.json:
 ```json
 {
-    "body": "Attachment [trac_9773-abelian-groups-draft-6.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-6.patch) by rbeezer created at 2012-08-08 03:53:32",
+    "body": "Attachment [trac_9773-abelian-groups-draft-6.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-6.patch) by @rbeezer created at 2012-08-08 03:53:32",
     "created_at": "2012-08-08T03:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95784",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9773-abelian-groups-draft-6.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-6.patch) by rbeezer created at 2012-08-08 03:53:32
+Attachment [trac_9773-abelian-groups-draft-6.patch](tarball://root/attachments/some-uuid/ticket9773/trac_9773-abelian-groups-draft-6.patch) by @rbeezer created at 2012-08-08 03:53:32
 
 
 
@@ -533,7 +533,7 @@ archive/issue_comments_095785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95785",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_095786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95786",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -573,7 +573,7 @@ archive/issue_comments_095787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95787",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_095788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95788",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -614,7 +614,7 @@ archive/issue_comments_095789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95789",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -636,7 +636,7 @@ archive/issue_comments_095790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9772",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9772#issuecomment-95790",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

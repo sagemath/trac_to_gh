@@ -14,7 +14,7 @@ archive/issues_004265.json:
     "title": "[with patch, needs review] EllipticCurve.a_invariants should return a tuple rather than a list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4265",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: cwitty
@@ -37,7 +37,7 @@ archive/issue_comments_031110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4265#issuecomment-31110",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_031111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4265",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4265#issuecomment-31111",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

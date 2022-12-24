@@ -14,7 +14,7 @@ archive/issues_003689.json:
     "title": "trivial problems in the examples spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3689",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3689
 archive/issue_comments_026150.json:
 ```json
 {
-    "body": "Attachment [sage_scripts-shebang.patch](tarball://root/attachments/some-uuid/ticket3689/sage_scripts-shebang.patch) by tabbott created at 2009-04-26 05:20:33",
+    "body": "Attachment [sage_scripts-shebang.patch](tarball://root/attachments/some-uuid/ticket3689/sage_scripts-shebang.patch) by @timabbott created at 2009-04-26 05:20:33",
     "created_at": "2009-04-26T05:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3689#issuecomment-26150",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [sage_scripts-shebang.patch](tarball://root/attachments/some-uuid/ticket3689/sage_scripts-shebang.patch) by tabbott created at 2009-04-26 05:20:33
+Attachment [sage_scripts-shebang.patch](tarball://root/attachments/some-uuid/ticket3689/sage_scripts-shebang.patch) by @timabbott created at 2009-04-26 05:20:33
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_026151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3689#issuecomment-26151",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_026152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3689",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3689#issuecomment-26152",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 

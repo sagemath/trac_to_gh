@@ -14,7 +14,7 @@ archive/issues_002829.json:
     "title": "[with patch, needs review] PyLint cleanup of crypto.mq.sr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2829",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: cwitty
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2829
 archive/issue_comments_019418.json:
 ```json
 {
-    "body": "Attachment [pylint_crypto_mq_sr__py.patch](tarball://root/attachments/some-uuid/ticket2829/pylint_crypto_mq_sr__py.patch) by malb created at 2008-04-06 13:28:02",
+    "body": "Attachment [pylint_crypto_mq_sr__py.patch](tarball://root/attachments/some-uuid/ticket2829/pylint_crypto_mq_sr__py.patch) by @malb created at 2008-04-06 13:28:02",
     "created_at": "2008-04-06T13:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2829",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19418",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [pylint_crypto_mq_sr__py.patch](tarball://root/attachments/some-uuid/ticket2829/pylint_crypto_mq_sr__py.patch) by malb created at 2008-04-06 13:28:02
+Attachment [pylint_crypto_mq_sr__py.patch](tarball://root/attachments/some-uuid/ticket2829/pylint_crypto_mq_sr__py.patch) by @malb created at 2008-04-06 13:28:02
 
 
 

@@ -124,16 +124,16 @@ Took care of (1) and also now clicking "Upload Worksheet" when form blank no lon
 archive/issue_comments_027378.json:
 ```json
 {
-    "body": "Attachment [sage-3849_1.patch](tarball://root/attachments/some-uuid/ticket3849/sage-3849_1.patch) by was created at 2009-11-20 00:34:53\n\nForget about this code.  This is an important error though.\n\nThe attached patch sagenb_3849-part1.patch I think completely fixes all such problems for uploading a *worksheet*, but doesn't do anything about Data-->Upload or attach file.\n\nI'm making Data -->Upload or attach a file a new ticket: #7495",
+    "body": "Attachment [sage-3849_1.patch](tarball://root/attachments/some-uuid/ticket3849/sage-3849_1.patch) by @williamstein created at 2009-11-20 00:34:53\n\nForget about this code.  This is an important error though.\n\nThe attached patch sagenb_3849-part1.patch I think completely fixes all such problems for uploading a *worksheet*, but doesn't do anything about Data-->Upload or attach file.\n\nI'm making Data -->Upload or attach a file a new ticket: #7495",
     "created_at": "2009-11-20T00:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3849#issuecomment-27378",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3849_1.patch](tarball://root/attachments/some-uuid/ticket3849/sage-3849_1.patch) by was created at 2009-11-20 00:34:53
+Attachment [sage-3849_1.patch](tarball://root/attachments/some-uuid/ticket3849/sage-3849_1.patch) by @williamstein created at 2009-11-20 00:34:53
 
 Forget about this code.  This is an important error though.
 
@@ -153,7 +153,7 @@ archive/issue_comments_027379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3849#issuecomment-27379",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -166,16 +166,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_027380.json:
 ```json
 {
-    "body": "Attachment [sagenb_3849.patch](tarball://root/attachments/some-uuid/ticket3849/sagenb_3849.patch) by was created at 2009-11-20 00:36:56",
+    "body": "Attachment [sagenb_3849.patch](tarball://root/attachments/some-uuid/ticket3849/sagenb_3849.patch) by @williamstein created at 2009-11-20 00:36:56",
     "created_at": "2009-11-20T00:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3849#issuecomment-27380",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagenb_3849.patch](tarball://root/attachments/some-uuid/ticket3849/sagenb_3849.patch) by was created at 2009-11-20 00:36:56
+Attachment [sagenb_3849.patch](tarball://root/attachments/some-uuid/ticket3849/sagenb_3849.patch) by @williamstein created at 2009-11-20 00:36:56
 
 
 
@@ -184,16 +184,16 @@ Attachment [sagenb_3849.patch](tarball://root/attachments/some-uuid/ticket3849/s
 archive/issue_comments_027381.json:
 ```json
 {
-    "body": "Attachment [sagenb_3849.2.patch](tarball://root/attachments/some-uuid/ticket3849/sagenb_3849.2.patch) by mpatel created at 2009-11-20 07:29:36\n\nVersion 2.  Added backlink.  Apply only this patch to the sagenb repo.",
+    "body": "Attachment [sagenb_3849.2.patch](tarball://root/attachments/some-uuid/ticket3849/sagenb_3849.2.patch) by @qed777 created at 2009-11-20 07:29:36\n\nVersion 2.  Added backlink.  Apply only this patch to the sagenb repo.",
     "created_at": "2009-11-20T07:29:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3849#issuecomment-27381",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [sagenb_3849.2.patch](tarball://root/attachments/some-uuid/ticket3849/sagenb_3849.2.patch) by mpatel created at 2009-11-20 07:29:36
+Attachment [sagenb_3849.2.patch](tarball://root/attachments/some-uuid/ticket3849/sagenb_3849.2.patch) by @qed777 created at 2009-11-20 07:29:36
 
 Version 2.  Added backlink.  Apply only this patch to the sagenb repo.
 
@@ -209,7 +209,7 @@ archive/issue_comments_027382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3849#issuecomment-27382",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_027383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3849#issuecomment-27383",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_027384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3849#issuecomment-27384",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_027385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3849#issuecomment-27385",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_027386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3849#issuecomment-27386",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

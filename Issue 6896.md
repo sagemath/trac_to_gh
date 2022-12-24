@@ -55,7 +55,7 @@ archive/issue_comments_056958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6896#issuecomment-56958",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,16 +155,16 @@ Patch to README.txt, changing supported compilers
 archive/issue_comments_056963.json:
 ```json
 {
-    "body": "Attachment [README.txt.trac-6896-1.patch](tarball://root/attachments/some-uuid/ticket6896/README.txt.trac-6896-1.patch) by was created at 2009-09-07 02:07:59\n\nThe relevant lines of the file README.2.txt looks very good to me.",
+    "body": "Attachment [README.txt.trac-6896-1.patch](tarball://root/attachments/some-uuid/ticket6896/README.txt.trac-6896-1.patch) by @williamstein created at 2009-09-07 02:07:59\n\nThe relevant lines of the file README.2.txt looks very good to me.",
     "created_at": "2009-09-07T02:07:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6896#issuecomment-56963",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [README.txt.trac-6896-1.patch](tarball://root/attachments/some-uuid/ticket6896/README.txt.trac-6896-1.patch) by was created at 2009-09-07 02:07:59
+Attachment [README.txt.trac-6896-1.patch](tarball://root/attachments/some-uuid/ticket6896/README.txt.trac-6896-1.patch) by @williamstein created at 2009-09-07 02:07:59
 
 The relevant lines of the file README.2.txt looks very good to me.
 

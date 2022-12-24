@@ -3,7 +3,7 @@
 archive/issues_007748.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mvngu\n\nWe don't appear to have this, though perhaps it is in Pynac/Ginac already.  We also need to translate Maxima's gamma_incomplete to our gamma_inc or incomplete_gamma as part of this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7748\n\n",
+    "body": "Assignee: @burcin\n\nCC:  mvngu\n\nWe don't appear to have this, though perhaps it is in Pynac/Ginac already.  We also need to translate Maxima's gamma_incomplete to our gamma_inc or incomplete_gamma as part of this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7748\n\n",
     "created_at": "2009-12-22T17:18:07Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_007748.json:
     "title": "Make incomplete gamma function symbolic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7748",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 CC:  mvngu
 
@@ -39,7 +39,7 @@ archive/issue_comments_066696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66696",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_066697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66697",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_066698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66698",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_066703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66703",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_066704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66704",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -279,16 +279,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_066707.json:
 ```json
 {
-    "body": "Changing assignee from burcin to zimmerma.",
+    "body": "Changing assignee from @burcin to @zimmermann6.",
     "created_at": "2010-02-08T13:09:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66707",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Changing assignee from burcin to zimmerma.
+Changing assignee from @burcin to @zimmermann6.
 
 
 
@@ -302,7 +302,7 @@ archive/issue_comments_066708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66708",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_066709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66709",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_066710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66710",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -456,16 +456,16 @@ Flavia
 archive/issue_comments_066714.json:
 ```json
 {
-    "body": "Attachment [trac_7748-exp_integral_ver2.4.3.3.alpha1.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-exp_integral_ver2.4.3.3.alpha1.patch) by burcin created at 2010-02-20 17:51:19\n\nrebased to 4.3.3.alpha1",
+    "body": "Attachment [trac_7748-exp_integral_ver2.4.3.3.alpha1.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-exp_integral_ver2.4.3.3.alpha1.patch) by @burcin created at 2010-02-20 17:51:19\n\nrebased to 4.3.3.alpha1",
     "created_at": "2010-02-20T17:51:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66714",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7748-exp_integral_ver2.4.3.3.alpha1.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-exp_integral_ver2.4.3.3.alpha1.patch) by burcin created at 2010-02-20 17:51:19
+Attachment [trac_7748-exp_integral_ver2.4.3.3.alpha1.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-exp_integral_ver2.4.3.3.alpha1.patch) by @burcin created at 2010-02-20 17:51:19
 
 rebased to 4.3.3.alpha1
 
@@ -481,7 +481,7 @@ archive/issue_comments_066715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66715",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -494,16 +494,16 @@ rebased to 4.3.3.alpha1
 archive/issue_comments_066716.json:
 ```json
 {
-    "body": "Attachment [trac_7748-gamma_wrapper.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.patch) by burcin created at 2010-02-20 17:52:27\n\nwrapper for gamma and incomplete gamma",
+    "body": "Attachment [trac_7748-gamma_wrapper.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.patch) by @burcin created at 2010-02-20 17:52:27\n\nwrapper for gamma and incomplete gamma",
     "created_at": "2010-02-20T17:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66716",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7748-gamma_wrapper.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.patch) by burcin created at 2010-02-20 17:52:27
+Attachment [trac_7748-gamma_wrapper.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.patch) by @burcin created at 2010-02-20 17:52:27
 
 wrapper for gamma and incomplete gamma
 
@@ -514,16 +514,16 @@ wrapper for gamma and incomplete gamma
 archive/issue_comments_066717.json:
 ```json
 {
-    "body": "Attachment [trac_7748-gamma_wrapper.2.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.2.patch) by burcin created at 2010-02-20 17:57:02\n\nwrapper for gamma and incomplete gamma",
+    "body": "Attachment [trac_7748-gamma_wrapper.2.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.2.patch) by @burcin created at 2010-02-20 17:57:02\n\nwrapper for gamma and incomplete gamma",
     "created_at": "2010-02-20T17:57:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66717",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7748-gamma_wrapper.2.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.2.patch) by burcin created at 2010-02-20 17:57:02
+Attachment [trac_7748-gamma_wrapper.2.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.2.patch) by @burcin created at 2010-02-20 17:57:02
 
 wrapper for gamma and incomplete gamma
 
@@ -539,7 +539,7 @@ archive/issue_comments_066718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66718",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -566,7 +566,7 @@ archive/issue_comments_066719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66719",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -584,7 +584,7 @@ archive/issue_comments_066720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66720",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_066721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66721",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_066722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66722",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -644,16 +644,16 @@ apart from the above failure, all tests pass with sage 4.3.3 (apart from the Fed
 archive/issue_comments_066723.json:
 ```json
 {
-    "body": "Attachment [trac_7748-gamma_wrapper.3.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.3.patch) by burcin created at 2010-03-02 11:33:29\n\nfix new doctest failure",
+    "body": "Attachment [trac_7748-gamma_wrapper.3.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.3.patch) by @burcin created at 2010-03-02 11:33:29\n\nfix new doctest failure",
     "created_at": "2010-03-02T11:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66723",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7748-gamma_wrapper.3.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.3.patch) by burcin created at 2010-03-02 11:33:29
+Attachment [trac_7748-gamma_wrapper.3.patch](tarball://root/attachments/some-uuid/ticket7748/trac_7748-gamma_wrapper.3.patch) by @burcin created at 2010-03-02 11:33:29
 
 fix new doctest failure
 
@@ -669,7 +669,7 @@ archive/issue_comments_066724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66724",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_066725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66725",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -713,7 +713,7 @@ archive/issue_comments_066726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66726",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -733,7 +733,7 @@ archive/issue_comments_066727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66727",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -751,7 +751,7 @@ archive/issue_comments_066728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66728",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -795,7 +795,7 @@ archive/issue_comments_066730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66730",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -817,7 +817,7 @@ archive/issue_comments_066731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7748#issuecomment-66731",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

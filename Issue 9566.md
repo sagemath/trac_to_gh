@@ -3,7 +3,7 @@
 archive/issues_009566.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  burcin\n\nThis can simplify code that needs to call mpmath in some places.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9566\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @burcin\n\nThis can simplify code that needs to call mpmath in some places.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9566\n\n",
     "created_at": "2010-07-21T17:49:51Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009566.json:
     "title": "[with patch, needs review] Allow sage.libs.mpmath.call(..., parent=something)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9566",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  burcin
+CC:  @burcin
 
 This can simplify code that needs to call mpmath in some places.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9566
 archive/issue_comments_092346.json:
 ```json
 {
-    "body": "Attachment [mpmath_call.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call.patch) by schilly created at 2010-07-21 21:17:01\n\ndoes it make sense to also test for parent RDF ?",
+    "body": "Attachment [mpmath_call.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call.patch) by @haraldschilly created at 2010-07-21 21:17:01\n\ndoes it make sense to also test for parent RDF ?",
     "created_at": "2010-07-21T21:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92346",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [mpmath_call.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call.patch) by schilly created at 2010-07-21 21:17:01
+Attachment [mpmath_call.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call.patch) by @haraldschilly created at 2010-07-21 21:17:01
 
 does it make sense to also test for parent RDF ?
 
@@ -54,16 +54,16 @@ does it make sense to also test for parent RDF ?
 archive/issue_comments_092347.json:
 ```json
 {
-    "body": "Attachment [mpmath_call_reviewer.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call_reviewer.patch) by schilly created at 2010-07-21 21:17:38\n\nworks for me",
+    "body": "Attachment [mpmath_call_reviewer.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call_reviewer.patch) by @haraldschilly created at 2010-07-21 21:17:38\n\nworks for me",
     "created_at": "2010-07-21T21:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92347",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [mpmath_call_reviewer.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call_reviewer.patch) by schilly created at 2010-07-21 21:17:38
+Attachment [mpmath_call_reviewer.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call_reviewer.patch) by @haraldschilly created at 2010-07-21 21:17:38
 
 works for me
 
@@ -79,7 +79,7 @@ archive/issue_comments_092348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92348",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_092349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92349",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_092350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92350",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_092351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92351",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_092352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92352",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -164,16 +164,16 @@ Please include ticket numbers in commit messages! Please change back to positive
 archive/issue_comments_092353.json:
 ```json
 {
-    "body": "Attachment [mpmath_call_FIXED.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call_FIXED.patch) by fredrik.johansson created at 2010-07-22 20:54:14\n\nfixed patch",
+    "body": "Attachment [mpmath_call_FIXED.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call_FIXED.patch) by @fredrik-johansson created at 2010-07-22 20:54:14\n\nfixed patch",
     "created_at": "2010-07-22T20:54:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92353",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Attachment [mpmath_call_FIXED.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call_FIXED.patch) by fredrik.johansson created at 2010-07-22 20:54:14
+Attachment [mpmath_call_FIXED.patch](tarball://root/attachments/some-uuid/ticket9566/mpmath_call_FIXED.patch) by @fredrik-johansson created at 2010-07-22 20:54:14
 
 fixed patch
 
@@ -189,7 +189,7 @@ archive/issue_comments_092354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92354",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_092355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92355",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_092356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92356",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_092357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92357",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_092358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92358",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_092359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9566",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92359",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

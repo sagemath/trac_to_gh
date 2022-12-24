@@ -3,7 +3,7 @@
 archive/issues_007992.json:
 ```json
 {
-    "body": "Assignee: cremona\n\n`A 2-descent didn't not complete successfully`\n\nIssue created by migration from https://trac.sagemath.org/ticket/7992\n\n",
+    "body": "Assignee: @JohnCremona\n\n`A 2-descent didn't not complete successfully`\n\nIssue created by migration from https://trac.sagemath.org/ticket/7992\n\n",
     "created_at": "2010-01-19T04:46:19Z",
     "labels": [
         "elliptic curves",
@@ -13,10 +13,10 @@ archive/issues_007992.json:
     "title": "typo in sage/libs/mwrank/interface.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7992",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 `A 2-descent didn't not complete successfully`
 
@@ -36,7 +36,7 @@ archive/issue_comments_069800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69800",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -54,7 +54,7 @@ archive/issue_comments_069801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69801",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -67,16 +67,16 @@ Changing status from new to needs_work.
 archive/issue_comments_069802.json:
 ```json
 {
-    "body": "Attachment [trac_7992-typo.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.patch) by cremona created at 2010-01-19 09:22:05\n\nPatch attached.  As far as I can see this message does not appear in a doctest.  Which means that I should add a doctest for it, hence not ready for review yet.",
+    "body": "Attachment [trac_7992-typo.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.patch) by @JohnCremona created at 2010-01-19 09:22:05\n\nPatch attached.  As far as I can see this message does not appear in a doctest.  Which means that I should add a doctest for it, hence not ready for review yet.",
     "created_at": "2010-01-19T09:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69802",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7992-typo.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.patch) by cremona created at 2010-01-19 09:22:05
+Attachment [trac_7992-typo.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.patch) by @JohnCremona created at 2010-01-19 09:22:05
 
 Patch attached.  As far as I can see this message does not appear in a doctest.  Which means that I should add a doctest for it, hence not ready for review yet.
 
@@ -92,7 +92,7 @@ archive/issue_comments_069803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69803",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -105,16 +105,16 @@ replaces previous
 archive/issue_comments_069804.json:
 ```json
 {
-    "body": "Attachment [trac_7992-typo.2.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.2.patch) by cremona created at 2010-01-19 09:38:00\n\nNew patch adds doctest (one showing failure and one ok).\n\nI don't know why the output of the RuntimeError does not include the string (the one where the typo was fixed).  Maybe the review does?",
+    "body": "Attachment [trac_7992-typo.2.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.2.patch) by @JohnCremona created at 2010-01-19 09:38:00\n\nNew patch adds doctest (one showing failure and one ok).\n\nI don't know why the output of the RuntimeError does not include the string (the one where the typo was fixed).  Maybe the review does?",
     "created_at": "2010-01-19T09:38:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69804",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7992-typo.2.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.2.patch) by cremona created at 2010-01-19 09:38:00
+Attachment [trac_7992-typo.2.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.2.patch) by @JohnCremona created at 2010-01-19 09:38:00
 
 New patch adds doctest (one showing failure and one ok).
 
@@ -132,7 +132,7 @@ archive/issue_comments_069805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69805",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_069806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69806",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_069807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69807",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_069808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69808",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

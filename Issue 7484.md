@@ -3,7 +3,7 @@
 archive/issues_007484.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  schilly\n\nHere's a patch for README.txt to document this:\n\n\n```\n--- README.txt.orig     2009-11-17 20:02:26.833640422 -0600\n+++ README.txt  2009-11-17 20:07:26.763327405 -0600\n@@ -47,6 +47,14 @@\n      >= 10.4.x and certain Linux distributions are 100% supported.\n      See below for a complete list.\n  \n+     NOTE: If you're using Fortran on a platform for which the included g95 binaries\n+     do not work (e.g., Itanium or Ubuntu 9.10), you must use a system-wide gfortran.\n+     You must set the SAGE_FORTRAN and SAGE_FORTRAN_LIB environment variables before\n+     making Sage.  Do this by typing\n+\n+          export SAGE_FORTRAN=/exact/path/to/gfortran\n+          export SAGE_FORTRAN_LIB=/path/to/fortran/libs/libgfortran.so\n+\n    2. Extract the tarball:\n           tar xvf sage-*.tar\n \n@@ -75,13 +83,6 @@\n     Use Sage on Microsoft Windows via VMware.\n     We do not always test on OS X 10.4, but Sage should work there fine.\n \n-NOTE: If you're using Fortran on a platform without g95 binaries included\n-      with Sage, e.g., Itanium, you must use a system-wide gfortran.  You \n-      have to explicitly tell the build process about the fortran\n-      compiler and library location.  Do this by typing\n-\n-          export SAGE_FORTRAN=/exact/path/to/gfortran\n-          export SAGE_FORTRAN_LIB=/path/to/fortran/libs/libgfortran.so\n \n NOT OFFICIALLY SUPPORTED, BUT NEARLY WORKS:\n        PROCESSOR       OPERATING SYSTEM\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7484\n\n",
+    "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nHere's a patch for README.txt to document this:\n\n\n```\n--- README.txt.orig     2009-11-17 20:02:26.833640422 -0600\n+++ README.txt  2009-11-17 20:07:26.763327405 -0600\n@@ -47,6 +47,14 @@\n      >= 10.4.x and certain Linux distributions are 100% supported.\n      See below for a complete list.\n  \n+     NOTE: If you're using Fortran on a platform for which the included g95 binaries\n+     do not work (e.g., Itanium or Ubuntu 9.10), you must use a system-wide gfortran.\n+     You must set the SAGE_FORTRAN and SAGE_FORTRAN_LIB environment variables before\n+     making Sage.  Do this by typing\n+\n+          export SAGE_FORTRAN=/exact/path/to/gfortran\n+          export SAGE_FORTRAN_LIB=/path/to/fortran/libs/libgfortran.so\n+\n    2. Extract the tarball:\n           tar xvf sage-*.tar\n \n@@ -75,13 +83,6 @@\n     Use Sage on Microsoft Windows via VMware.\n     We do not always test on OS X 10.4, but Sage should work there fine.\n \n-NOTE: If you're using Fortran on a platform without g95 binaries included\n-      with Sage, e.g., Itanium, you must use a system-wide gfortran.  You \n-      have to explicitly tell the build process about the fortran\n-      compiler and library location.  Do this by typing\n-\n-          export SAGE_FORTRAN=/exact/path/to/gfortran\n-          export SAGE_FORTRAN_LIB=/path/to/fortran/libs/libgfortran.so\n \n NOT OFFICIALLY SUPPORTED, BUT NEARLY WORKS:\n        PROCESSOR       OPERATING SYSTEM\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7484\n\n",
     "created_at": "2009-11-18T02:10:22Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_007484.json:
     "title": "Sage does not build on stock Ubuntu 9.10 without installing gfortran and setting SAGE_FORTRAN(_LIB)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7484",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: tbd
 
-CC:  schilly
+CC:  @haraldschilly
 
 Here's a patch for README.txt to document this:
 
@@ -75,7 +75,7 @@ archive/issue_comments_063199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63199",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_063200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63200",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_063201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63201",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_063205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63205",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_063216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63216",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_063217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63217",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_063218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63218",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

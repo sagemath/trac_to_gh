@@ -14,7 +14,7 @@ archive/issues_001104.json:
     "title": "Ideal() should check arguments better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1104",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: somebody
@@ -85,7 +85,7 @@ archive/issue_comments_006679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1104#issuecomment-6679",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_006681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1104#issuecomment-6681",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_006682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1104#issuecomment-6682",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -217,16 +217,16 @@ Michael
 archive/issue_comments_006684.json:
 ```json
 {
-    "body": "Attachment [1104-Ideal_args.patch](tarball://root/attachments/some-uuid/ticket1104/1104-Ideal_args.patch) by AlexGhitza created at 2008-09-29 23:17:56",
+    "body": "Attachment [1104-Ideal_args.patch](tarball://root/attachments/some-uuid/ticket1104/1104-Ideal_args.patch) by @aghitza created at 2008-09-29 23:17:56",
     "created_at": "2008-09-29T23:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1104#issuecomment-6684",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [1104-Ideal_args.patch](tarball://root/attachments/some-uuid/ticket1104/1104-Ideal_args.patch) by AlexGhitza created at 2008-09-29 23:17:56
+Attachment [1104-Ideal_args.patch](tarball://root/attachments/some-uuid/ticket1104/1104-Ideal_args.patch) by @aghitza created at 2008-09-29 23:17:56
 
 
 
@@ -240,7 +240,7 @@ archive/issue_comments_006685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1104#issuecomment-6685",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_006686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1104#issuecomment-6686",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

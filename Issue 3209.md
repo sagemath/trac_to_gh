@@ -3,7 +3,7 @@
 archive/issues_003209.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere should be a way to concatenate a list of Graphics objects without adding them one-by-one (which is quadratic time). \n\nIssue created by migration from https://trac.sagemath.org/ticket/3209\n\n",
+    "body": "Assignee: @williamstein\n\nThere should be a way to concatenate a list of Graphics objects without adding them one-by-one (which is quadratic time). \n\nIssue created by migration from https://trac.sagemath.org/ticket/3209\n\n",
     "created_at": "2008-05-15T06:43:08Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_003209.json:
     "title": "summing graphics elements takes way to long",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3209",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There should be a way to concatenate a list of Graphics objects without adding them one-by-one (which is quadratic time). 
 
@@ -37,7 +37,7 @@ archive/issue_comments_022186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3209#issuecomment-22186",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

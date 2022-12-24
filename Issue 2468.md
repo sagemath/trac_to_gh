@@ -3,7 +3,7 @@
 archive/issues_002468.json:
 ```json
 {
-    "body": "Assignee: was\n\nCheck this out:\n\n\n```\nsage: A = Matrix(RDF, [[1, 0], [0, 0]])\nsage: A.inverse()\n\n[nan nan]\n[nan inf]\n```\n\n\nThis is, to say the least, weird.  This should throw a ZeroDivisionError instead.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2468\n\n",
+    "body": "Assignee: @williamstein\n\nCheck this out:\n\n\n```\nsage: A = Matrix(RDF, [[1, 0], [0, 0]])\nsage: A.inverse()\n\n[nan nan]\n[nan inf]\n```\n\n\nThis is, to say the least, weird.  This should throw a ZeroDivisionError instead.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2468\n\n",
     "created_at": "2008-03-11T02:46:35Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002468.json:
     "title": "inverting a non-invertible matrix over RDF returns weird results",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2468",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Check this out:
 
@@ -50,7 +50,7 @@ archive/issue_comments_016717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2468#issuecomment-16717",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_016718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2468#issuecomment-16718",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_016719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2468#issuecomment-16719",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -132,16 +132,16 @@ I've added a patch that, in addition:
 archive/issue_comments_016720.json:
 ```json
 {
-    "body": "Attachment [2468.hg](tarball://root/attachments/some-uuid/ticket2468/2468.hg) by dfdeshom created at 2008-03-14 05:34:49\n\ncorrect a small typo in patch",
+    "body": "Attachment [2468.hg](tarball://root/attachments/some-uuid/ticket2468/2468.hg) by @dfdeshom created at 2008-03-14 05:34:49\n\ncorrect a small typo in patch",
     "created_at": "2008-03-14T05:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2468#issuecomment-16720",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2468.hg](tarball://root/attachments/some-uuid/ticket2468/2468.hg) by dfdeshom created at 2008-03-14 05:34:49
+Attachment [2468.hg](tarball://root/attachments/some-uuid/ticket2468/2468.hg) by @dfdeshom created at 2008-03-14 05:34:49
 
 correct a small typo in patch
 

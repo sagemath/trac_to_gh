@@ -3,7 +3,7 @@
 archive/issues_002093.json:
 ```json
 {
-    "body": "Assignee: moretti\n\nThis is really confusing to calculus level students:\n\n```\nsage: x(x+1)\nx + 1\n```\n\n\nThere may be no good fix here, but one idea is to override __call__() on SmybolicVariable to raise an exception.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2093\n\n",
+    "body": "Assignee: @bobmoretti\n\nThis is really confusing to calculus level students:\n\n```\nsage: x(x+1)\nx + 1\n```\n\n\nThere may be no good fix here, but one idea is to override __call__() on SmybolicVariable to raise an exception.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2093\n\n",
     "created_at": "2008-02-08T01:07:37Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002093.json:
     "title": "floats - sage is inconsistant at times",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2093",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
-Assignee: moretti
+Assignee: @bobmoretti
 
 This is really confusing to calculus level students:
 
@@ -45,7 +45,7 @@ archive/issue_comments_013529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2093#issuecomment-13529",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -79,16 +79,16 @@ There is a fair amount of functionality that would be lost by removing function 
 archive/issue_comments_013530.json:
 ```json
 {
-    "body": "Changing assignee from moretti to mhansen.",
+    "body": "Changing assignee from @bobmoretti to @mwhansen.",
     "created_at": "2008-02-08T01:57:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2093#issuecomment-13530",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from moretti to mhansen.
+Changing assignee from @bobmoretti to @mwhansen.
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_013531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2093#issuecomment-13531",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_013532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2093#issuecomment-13532",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_013533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2093#issuecomment-13533",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_013534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2093",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2093#issuecomment-13534",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

@@ -71,16 +71,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4077
 archive/issue_comments_029426.json:
 ```json
 {
-    "body": "Attachment [trac_4077.patch](tarball://root/attachments/some-uuid/ticket4077/trac_4077.patch) by mhansen created at 2008-09-08 23:20:30",
+    "body": "Attachment [trac_4077.patch](tarball://root/attachments/some-uuid/ticket4077/trac_4077.patch) by @mwhansen created at 2008-09-08 23:20:30",
     "created_at": "2008-09-08T23:20:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4077#issuecomment-29426",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4077.patch](tarball://root/attachments/some-uuid/ticket4077/trac_4077.patch) by mhansen created at 2008-09-08 23:20:30
+Attachment [trac_4077.patch](tarball://root/attachments/some-uuid/ticket4077/trac_4077.patch) by @mwhansen created at 2008-09-08 23:20:30
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_029427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4077#issuecomment-29427",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -107,16 +107,16 @@ Changing status from new to assigned.
 archive/issue_comments_029428.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2008-09-08T23:20:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4077#issuecomment-29428",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_004531.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\n```\nsage -t  devel/sage/sage/combinat/species/library.py \n********************************************************************** \nFile \"/home/john/sage-3.2.rc1/devel/sage/sage/combinat/species/library.py\", \nline 86: \n    sage: a.automorphism_group() \nExpected: \n    Permutation Group with generators [(), ()] \nGot: \n    Permutation Group with generators [()] \n********************************************************************** \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4531\n\n",
+    "body": "Assignee: @mwhansen\n\n\n```\nsage -t  devel/sage/sage/combinat/species/library.py \n********************************************************************** \nFile \"/home/john/sage-3.2.rc1/devel/sage/sage/combinat/species/library.py\", \nline 86: \n    sage: a.automorphism_group() \nExpected: \n    Permutation Group with generators [(), ()] \nGot: \n    Permutation Group with generators [()] \n********************************************************************** \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4531\n\n",
     "created_at": "2008-11-15T20:13:32Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_004531.json:
     "user": "mabshoff"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 ```
@@ -121,7 +121,7 @@ archive/issue_comments_033751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4531#issuecomment-33751",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,16 +134,16 @@ I am fixing this by changing permutation groups to make their gens be canonicali
 archive/issue_comments_033752.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to was.",
+    "body": "Changing assignee from @mwhansen to @williamstein.",
     "created_at": "2008-11-18T07:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4531#issuecomment-33752",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from mhansen to was.
+Changing assignee from @mwhansen to @williamstein.
 
 
 
@@ -152,16 +152,16 @@ Changing assignee from mhansen to was.
 archive/issue_comments_033753.json:
 ```json
 {
-    "body": "Attachment [sage-4531.patch](tarball://root/attachments/some-uuid/ticket4531/sage-4531.patch) by was created at 2008-11-18 16:56:50",
+    "body": "Attachment [sage-4531.patch](tarball://root/attachments/some-uuid/ticket4531/sage-4531.patch) by @williamstein created at 2008-11-18 16:56:50",
     "created_at": "2008-11-18T16:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4531#issuecomment-33753",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4531.patch](tarball://root/attachments/some-uuid/ticket4531/sage-4531.patch) by was created at 2008-11-18 16:56:50
+Attachment [sage-4531.patch](tarball://root/attachments/some-uuid/ticket4531/sage-4531.patch) by @williamstein created at 2008-11-18 16:56:50
 
 
 
@@ -170,16 +170,16 @@ Attachment [sage-4531.patch](tarball://root/attachments/some-uuid/ticket4531/sag
 archive/issue_comments_033754.json:
 ```json
 {
-    "body": "Attachment [doc-4531.patch](tarball://root/attachments/some-uuid/ticket4531/doc-4531.patch) by was created at 2008-11-18 16:56:58",
+    "body": "Attachment [doc-4531.patch](tarball://root/attachments/some-uuid/ticket4531/doc-4531.patch) by @williamstein created at 2008-11-18 16:56:58",
     "created_at": "2008-11-18T16:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4531#issuecomment-33754",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doc-4531.patch](tarball://root/attachments/some-uuid/ticket4531/doc-4531.patch) by was created at 2008-11-18 16:56:58
+Attachment [doc-4531.patch](tarball://root/attachments/some-uuid/ticket4531/doc-4531.patch) by @williamstein created at 2008-11-18 16:56:58
 
 
 
@@ -188,16 +188,16 @@ Attachment [doc-4531.patch](tarball://root/attachments/some-uuid/ticket4531/doc-
 archive/issue_comments_033755.json:
 ```json
 {
-    "body": "Attachment [sage-4531-part2.patch](tarball://root/attachments/some-uuid/ticket4531/sage-4531-part2.patch) by was created at 2008-11-18 17:01:06\n\ntrivial followup",
+    "body": "Attachment [sage-4531-part2.patch](tarball://root/attachments/some-uuid/ticket4531/sage-4531-part2.patch) by @williamstein created at 2008-11-18 17:01:06\n\ntrivial followup",
     "created_at": "2008-11-18T17:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4531",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4531#issuecomment-33755",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4531-part2.patch](tarball://root/attachments/some-uuid/ticket4531/sage-4531-part2.patch) by was created at 2008-11-18 17:01:06
+Attachment [sage-4531-part2.patch](tarball://root/attachments/some-uuid/ticket4531/sage-4531-part2.patch) by @williamstein created at 2008-11-18 17:01:06
 
 trivial followup
 

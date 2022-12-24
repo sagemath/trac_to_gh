@@ -3,7 +3,7 @@
 archive/issues_008049.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jdemeyer tmonteil\n\n\n```\nI'm suddenly very concerned that Sage binaries won't work at all on computers without libgfortran.so installed. Does Sage even start up on such a box?\n\nYep.  If I take one of the Sage build machines, remove libgfortran, then start Sage I get:\n\n$ sage\nBOOM!\n\n.... ImportError: libgfortran.so.3: cannot open shared object file: No such file or directory\n\n----------------\n\nNot good, since most Linux installs won't have libgfortran.  If I then reinstall gfortran, and copy libgfortran.so  to SAGE_ROOT/local/lib/, then uninstall gfortran, then Sage works fine again.\n\ncp /usr/lib/libgfortran.so.3.0.0 local/lib/libgfortran.so.3\n\nwstein@ubuntu910-64:/tmp/wstein/farm/sage-4.3.1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: import scipy.linalg\nsage:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8049\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jdemeyer tmonteil\n\n\n```\nI'm suddenly very concerned that Sage binaries won't work at all on computers without libgfortran.so installed. Does Sage even start up on such a box?\n\nYep.  If I take one of the Sage build machines, remove libgfortran, then start Sage I get:\n\n$ sage\nBOOM!\n\n.... ImportError: libgfortran.so.3: cannot open shared object file: No such file or directory\n\n----------------\n\nNot good, since most Linux installs won't have libgfortran.  If I then reinstall gfortran, and copy libgfortran.so  to SAGE_ROOT/local/lib/, then uninstall gfortran, then Sage works fine again.\n\ncp /usr/lib/libgfortran.so.3.0.0 local/lib/libgfortran.so.3\n\nwstein@ubuntu910-64:/tmp/wstein/farm/sage-4.3.1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: import scipy.linalg\nsage:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8049\n\n",
     "created_at": "2010-01-24T02:22:18Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_008049.json:
     "title": "libgfortran *must* get shipped with the Sage binaries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8049",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  jdemeyer tmonteil
+CC:  @jdemeyer tmonteil
 
 
 ```
@@ -132,7 +132,7 @@ archive/issue_comments_070365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70365",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_070366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70366",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_070367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70367",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_070370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70370",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_070371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70371",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_070374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70374",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_070376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70376",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_070377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70377",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_070378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70378",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_070379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70379",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_070380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70380",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_070381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70381",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_070382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70382",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -552,7 +552,7 @@ archive/issue_comments_070383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70383",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -572,7 +572,7 @@ archive/issue_comments_070384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70384",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_070385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70385",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -620,7 +620,7 @@ archive/issue_comments_070386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70386",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_070387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70387",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_070389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8049",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8049#issuecomment-70389",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

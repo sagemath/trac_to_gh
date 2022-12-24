@@ -3,7 +3,7 @@
 archive/issues_003731.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nKeywords: wester, calculus\n\nThere is an example in sage.calculus.wester starting like this:\n\n```\nsage: # (YES) Expand (1+x)^20, take derivative and factorize. \n```\n\nThe ensuing calculation involves no derivatives, just expanding and factoring (1+x)^20.\n\nThe patch adds in some derivative calculations.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3731\n\n",
+    "body": "Assignee: @garyfurnish\n\nKeywords: wester, calculus\n\nThere is an example in sage.calculus.wester starting like this:\n\n```\nsage: # (YES) Expand (1+x)^20, take derivative and factorize. \n```\n\nThe ensuing calculation involves no derivatives, just expanding and factoring (1+x)^20.\n\nThe patch adds in some derivative calculations.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3731\n\n",
     "created_at": "2008-07-27T15:32:24Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003731.json:
     "title": "[with patch, needs review] missing some derivatives in wester",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3731",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 Keywords: wester, calculus
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3731
 archive/issue_comments_026489.json:
 ```json
 {
-    "body": "Attachment [3731.patch](tarball://root/attachments/some-uuid/ticket3731/3731.patch) by jhpalmieri created at 2008-07-27 15:32:49",
+    "body": "Attachment [3731.patch](tarball://root/attachments/some-uuid/ticket3731/3731.patch) by @jhpalmieri created at 2008-07-27 15:32:49",
     "created_at": "2008-07-27T15:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3731#issuecomment-26489",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [3731.patch](tarball://root/attachments/some-uuid/ticket3731/3731.patch) by jhpalmieri created at 2008-07-27 15:32:49
+Attachment [3731.patch](tarball://root/attachments/some-uuid/ticket3731/3731.patch) by @jhpalmieri created at 2008-07-27 15:32:49
 
 
 
@@ -62,16 +62,16 @@ Attachment [3731.patch](tarball://root/attachments/some-uuid/ticket3731/3731.pat
 archive/issue_comments_026490.json:
 ```json
 {
-    "body": "Attachment [3731.2.patch](tarball://root/attachments/some-uuid/ticket3731/3731.2.patch) by jhpalmieri created at 2008-07-27 20:29:03",
+    "body": "Attachment [3731.2.patch](tarball://root/attachments/some-uuid/ticket3731/3731.2.patch) by @jhpalmieri created at 2008-07-27 20:29:03",
     "created_at": "2008-07-27T20:29:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3731#issuecomment-26490",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [3731.2.patch](tarball://root/attachments/some-uuid/ticket3731/3731.2.patch) by jhpalmieri created at 2008-07-27 20:29:03
+Attachment [3731.2.patch](tarball://root/attachments/some-uuid/ticket3731/3731.2.patch) by @jhpalmieri created at 2008-07-27 20:29:03
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_026491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3731#issuecomment-26491",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_026492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3731#issuecomment-26492",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

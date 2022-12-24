@@ -3,7 +3,7 @@
 archive/issues_004521.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  saliola mhansen knsam\n\n1. This gives an error:\n\nsage: G = PermutationGroup([])\nsage: G.list()\n\n2. Permutation group should take an argument for the degree, e.g.:\n\nsage: G = PermutationGroup([],degree=4)\n\n3. Permutation group should set the degree correctly:\n\nsage: G = PermutationGroup([[]])\nsage: \nsage: G.list()\n[()]\nsage: G.degree()\n1\nsage: G = PermutationGroup([This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro))\nsage: G.degree()\n1\n\nThe first group should have degree 0. \n\n3. Degree 0 should really be supported or \nwe will have difficulties with automorphism \ngroups of boundary cases.  Currently this \ngives an error:\n\nsage: SymmetricGroup(0)\n\nCertainly these examples should go into the \ndocstrings.\nMost of these can be trivially fixed, but \nit would be good if someone could review \npermutation groups with a view to catching \nthese problems before they arise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4521\n\n",
+    "body": "Assignee: joyner\n\nCC:  @saliola @mwhansen @KPanComputes\n\n1. This gives an error:\n\nsage: G = PermutationGroup([])\nsage: G.list()\n\n2. Permutation group should take an argument for the degree, e.g.:\n\nsage: G = PermutationGroup([],degree=4)\n\n3. Permutation group should set the degree correctly:\n\nsage: G = PermutationGroup([[]])\nsage: \nsage: G.list()\n[()]\nsage: G.degree()\n1\nsage: G = PermutationGroup([This is the Trac macro *1* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1-macro))\nsage: G.degree()\n1\n\nThe first group should have degree 0. \n\n3. Degree 0 should really be supported or \nwe will have difficulties with automorphism \ngroups of boundary cases.  Currently this \ngives an error:\n\nsage: SymmetricGroup(0)\n\nCertainly these examples should go into the \ndocstrings.\nMost of these can be trivially fixed, but \nit would be good if someone could review \npermutation groups with a view to catching \nthese problems before they arise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4521\n\n",
     "created_at": "2008-11-14T09:05:07Z",
     "labels": [
         "group theory",
@@ -19,7 +19,7 @@ archive/issues_004521.json:
 ```
 Assignee: joyner
 
-CC:  saliola mhansen knsam
+CC:  @saliola @mwhansen @KPanComputes
 
 1. This gives an error:
 
@@ -74,7 +74,7 @@ archive/issue_comments_033554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4521#issuecomment-33554",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_033555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4521#issuecomment-33555",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_033556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4521#issuecomment-33556",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_033557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4521#issuecomment-33557",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_033558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4521#issuecomment-33558",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_033559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4521#issuecomment-33559",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_033560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4521#issuecomment-33560",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_033561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4521#issuecomment-33561",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_033562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4521#issuecomment-33562",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

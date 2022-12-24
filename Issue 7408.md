@@ -3,7 +3,7 @@
 archive/issues_007408.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  hivert\n\nThe implementation of RSK in Sage has a number of inefficiencies which add up when dealing with large permutations.  The main improvement comes from using a binary search to figure out where to insert the number.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7408\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @hivert\n\nThe implementation of RSK in Sage has a number of inefficiencies which add up when dealing with large permutations.  The main improvement comes from using a binary search to figure out where to insert the number.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7408\n\n",
     "created_at": "2009-11-07T19:43:20Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_007408.json:
     "title": "Improve the speed of RSK",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7408",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  hivert
+CC:  @hivert
 
 The implementation of RSK in Sage has a number of inefficiencies which add up when dealing with large permutations.  The main improvement comes from using a binary search to figure out where to insert the number.
 
@@ -39,7 +39,7 @@ archive/issue_comments_062341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62341",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_062342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62342",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_062344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62344",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -147,16 +147,16 @@ I've put up a new patch which incorporates Yann's ideas as well as gets rid of t
 archive/issue_comments_062345.json:
 ```json
 {
-    "body": "Attachment [trac_7408-rsk.patch](tarball://root/attachments/some-uuid/ticket7408/trac_7408-rsk.patch) by mhansen created at 2009-11-08 07:13:28",
+    "body": "Attachment [trac_7408-rsk.patch](tarball://root/attachments/some-uuid/ticket7408/trac_7408-rsk.patch) by @mwhansen created at 2009-11-08 07:13:28",
     "created_at": "2009-11-08T07:13:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62345",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7408-rsk.patch](tarball://root/attachments/some-uuid/ticket7408/trac_7408-rsk.patch) by mhansen created at 2009-11-08 07:13:28
+Attachment [trac_7408-rsk.patch](tarball://root/attachments/some-uuid/ticket7408/trac_7408-rsk.patch) by @mwhansen created at 2009-11-08 07:13:28
 
 
 
@@ -170,7 +170,7 @@ archive/issue_comments_062346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62346",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_062347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62347",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_062350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7408",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62350",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

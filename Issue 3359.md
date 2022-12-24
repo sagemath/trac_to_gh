@@ -3,7 +3,7 @@
 archive/issues_003359.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\nDear Andrey,\n\nOn Jun 4, 7:21 am, Andrey Novoseltsev <novos...@gmail.com> wrote:\n> What is wrong with the code below and how to fix it?\n\nI don't know what precisely is wrong with that code, but a very\nsimilar code works.\n\nFirst, i can reproduce the trouble:\nsage: Rt.<t> = PolynomialRing(QQ,1)\nsage: p = 1+t\nsage: R.<u,v> = PolynomialRing(QQ, 2)\nsage: p(u/v)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call\nlast)\n...\n\nThe following works:\nsage: Rt2.<t> = PolynomialRing(QQ)\nsage: p2 = 1+t\nsage: p2(u/v)\n(u + v)/v\n\nThe difference is that Rt is a Multivariate Polynomial Ring (with one\nvariable, though), but Rt2 is a genuine Univariate Polynomial Ring.\n\nSo, at least there is a work-around.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3359\n\n",
+    "body": "Assignee: @malb\n\n\n```\nDear Andrey,\n\nOn Jun 4, 7:21 am, Andrey Novoseltsev <novos...@gmail.com> wrote:\n> What is wrong with the code below and how to fix it?\n\nI don't know what precisely is wrong with that code, but a very\nsimilar code works.\n\nFirst, i can reproduce the trouble:\nsage: Rt.<t> = PolynomialRing(QQ,1)\nsage: p = 1+t\nsage: R.<u,v> = PolynomialRing(QQ, 2)\nsage: p(u/v)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call\nlast)\n...\n\nThe following works:\nsage: Rt2.<t> = PolynomialRing(QQ)\nsage: p2 = 1+t\nsage: p2(u/v)\n(u + v)/v\n\nThe difference is that Rt is a Multivariate Polynomial Ring (with one\nvariable, though), but Rt2 is a genuine Univariate Polynomial Ring.\n\nSo, at least there is a work-around.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3359\n\n",
     "created_at": "2008-06-04T15:46:35Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_003359.json:
     "title": "bug/inconsistency in multivariate polynomial substitution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3359",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -63,16 +63,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3359
 archive/issue_comments_023387.json:
 ```json
 {
-    "body": "Attachment [trac_3359.patch](tarball://root/attachments/some-uuid/ticket3359/trac_3359.patch) by malb created at 2008-08-18 13:54:46\n\nThe attached patch fixes this issue.",
+    "body": "Attachment [trac_3359.patch](tarball://root/attachments/some-uuid/ticket3359/trac_3359.patch) by @malb created at 2008-08-18 13:54:46\n\nThe attached patch fixes this issue.",
     "created_at": "2008-08-18T13:54:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3359#issuecomment-23387",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_3359.patch](tarball://root/attachments/some-uuid/ticket3359/trac_3359.patch) by malb created at 2008-08-18 13:54:46
+Attachment [trac_3359.patch](tarball://root/attachments/some-uuid/ticket3359/trac_3359.patch) by @malb created at 2008-08-18 13:54:46
 
 The attached patch fixes this issue.
 
@@ -88,7 +88,7 @@ archive/issue_comments_023388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3359#issuecomment-23388",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -101,16 +101,16 @@ was, can I ask you to review the patch since you reported the issue?
 archive/issue_comments_023389.json:
 ```json
 {
-    "body": "Attachment [trac_3359-2.patch](tarball://root/attachments/some-uuid/ticket3359/trac_3359-2.patch) by mhansen created at 2008-08-26 22:20:44\n\nLooks good to me.  Apply both patches.",
+    "body": "Attachment [trac_3359-2.patch](tarball://root/attachments/some-uuid/ticket3359/trac_3359-2.patch) by @mwhansen created at 2008-08-26 22:20:44\n\nLooks good to me.  Apply both patches.",
     "created_at": "2008-08-26T22:20:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3359#issuecomment-23389",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3359-2.patch](tarball://root/attachments/some-uuid/ticket3359/trac_3359-2.patch) by mhansen created at 2008-08-26 22:20:44
+Attachment [trac_3359-2.patch](tarball://root/attachments/some-uuid/ticket3359/trac_3359-2.patch) by @mwhansen created at 2008-08-26 22:20:44
 
 Looks good to me.  Apply both patches.
 

@@ -3,7 +3,7 @@
 archive/issues_002570.json:
 ```json
 {
-    "body": "Assignee: was\n\nOne could add functionality to `hg_sage` to make it take a list of patches or bundles, apply each and rollback (but not revert!) until either (1) no patches are left, or (2) an error occurs. This would allow one to flatten patches and bundles by using this, then commiting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2570\n\n",
+    "body": "Assignee: @williamstein\n\nOne could add functionality to `hg_sage` to make it take a list of patches or bundles, apply each and rollback (but not revert!) until either (1) no patches are left, or (2) an error occurs. This would allow one to flatten patches and bundles by using this, then commiting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2570\n\n",
     "created_at": "2008-03-17T10:36:02Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_002570.json:
     "title": "make apply_and_flatten for hg_sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2570",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 One could add functionality to `hg_sage` to make it take a list of patches or bundles, apply each and rollback (but not revert!) until either (1) no patches are left, or (2) an error occurs. This would allow one to flatten patches and bundles by using this, then commiting.
 
@@ -37,7 +37,7 @@ archive/issue_comments_017561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2570#issuecomment-17561",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_017562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2570#issuecomment-17562",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_017563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2570#issuecomment-17563",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_017564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2570#issuecomment-17564",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_017565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2570",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2570#issuecomment-17565",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

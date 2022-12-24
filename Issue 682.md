@@ -14,7 +14,7 @@ archive/issues_000682.json:
     "title": "make it easier to load/save worksheets in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/682",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -122,7 +122,7 @@ archive/issue_comments_003541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/682#issuecomment-3541",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_003542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/682#issuecomment-3542",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

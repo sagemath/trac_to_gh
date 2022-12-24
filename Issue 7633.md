@@ -3,7 +3,7 @@
 archive/issues_007633.json:
 ```json
 {
-    "body": "Assignee: was\n\nThanks to #7627 I just looked at the very nice notebook settings page, and noticed that the save/cancel buttons are hidden at the bottom.  It would be nice replicate them at the top of the screen too. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7633\n\n",
+    "body": "Assignee: @williamstein\n\nThanks to #7627 I just looked at the very nice notebook settings page, and noticed that the save/cancel buttons are hidden at the bottom.  It would be nice replicate them at the top of the screen too. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7633\n\n",
     "created_at": "2009-12-09T00:16:38Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007633.json:
     "title": "sagenb -- add \"Save/ Cancel\" buttons to the top of the display too for notebook settings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7633",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Thanks to #7627 I just looked at the very nice notebook settings page, and noticed that the save/cancel buttons are hidden at the bottom.  It would be nice replicate them at the top of the screen too. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7633
 archive/issue_comments_065218.json:
 ```json
 {
-    "body": "Attachment [trac_7633-nb_settings_buttons.patch](tarball://root/attachments/some-uuid/ticket7633/trac_7633-nb_settings_buttons.patch) by mpatel created at 2010-01-25 16:25:55\n\nCopy Save, Cancel to top of notebook settings page.  sagenb repo.",
+    "body": "Attachment [trac_7633-nb_settings_buttons.patch](tarball://root/attachments/some-uuid/ticket7633/trac_7633-nb_settings_buttons.patch) by @qed777 created at 2010-01-25 16:25:55\n\nCopy Save, Cancel to top of notebook settings page.  sagenb repo.",
     "created_at": "2010-01-25T16:25:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7633#issuecomment-65218",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7633-nb_settings_buttons.patch](tarball://root/attachments/some-uuid/ticket7633/trac_7633-nb_settings_buttons.patch) by mpatel created at 2010-01-25 16:25:55
+Attachment [trac_7633-nb_settings_buttons.patch](tarball://root/attachments/some-uuid/ticket7633/trac_7633-nb_settings_buttons.patch) by @qed777 created at 2010-01-25 16:25:55
 
 Copy Save, Cancel to top of notebook settings page.  sagenb repo.
 
@@ -57,7 +57,7 @@ archive/issue_comments_065219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7633#issuecomment-65219",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_065220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7633#issuecomment-65220",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to needs_review.
 archive/issue_comments_065221.json:
 ```json
 {
-    "body": "Attachment [trac_7633-nb_settings_buttons-reviewer.patch](tarball://root/attachments/some-uuid/ticket7633/trac_7633-nb_settings_buttons-reviewer.patch) by timdumol created at 2010-04-03 16:23:56\n\nReviewer patch. Apply on top of previous. Does the same for Account Settings, and changes the elements from <input>s to <button>s.",
+    "body": "Attachment [trac_7633-nb_settings_buttons-reviewer.patch](tarball://root/attachments/some-uuid/ticket7633/trac_7633-nb_settings_buttons-reviewer.patch) by @TimDumol created at 2010-04-03 16:23:56\n\nReviewer patch. Apply on top of previous. Does the same for Account Settings, and changes the elements from <input>s to <button>s.",
     "created_at": "2010-04-03T16:23:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7633#issuecomment-65221",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7633-nb_settings_buttons-reviewer.patch](tarball://root/attachments/some-uuid/ticket7633/trac_7633-nb_settings_buttons-reviewer.patch) by timdumol created at 2010-04-03 16:23:56
+Attachment [trac_7633-nb_settings_buttons-reviewer.patch](tarball://root/attachments/some-uuid/ticket7633/trac_7633-nb_settings_buttons-reviewer.patch) by @TimDumol created at 2010-04-03 16:23:56
 
 Reviewer patch. Apply on top of previous. Does the same for Account Settings, and changes the elements from <input>s to <button>s.
 
@@ -113,7 +113,7 @@ archive/issue_comments_065222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7633#issuecomment-65222",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_065225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7633",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7633#issuecomment-65225",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

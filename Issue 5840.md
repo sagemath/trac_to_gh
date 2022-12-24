@@ -3,7 +3,7 @@
 archive/issues_005840.json:
 ```json
 {
-    "body": "Assignee: ddrake\n\nI've made a new spkg for SageTeX. It now has a proper Mercurial repository layout, improved spkg-check, documentation about TeXShop, and more examples.\n\nThe spkg is available from http://sage.math.washington.edu/home/drake/code/sage/st/sagetex-2.0.2.spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5840\n\n",
+    "body": "Assignee: @dandrake\n\nI've made a new spkg for SageTeX. It now has a proper Mercurial repository layout, improved spkg-check, documentation about TeXShop, and more examples.\n\nThe spkg is available from http://sage.math.washington.edu/home/drake/code/sage/st/sagetex-2.0.2.spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5840\n\n",
     "created_at": "2009-04-21T04:16:23Z",
     "labels": [
         "packages: optional",
@@ -14,10 +14,10 @@ archive/issues_005840.json:
     "title": "update SageTeX spkg to version 2.0.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5840",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
-Assignee: ddrake
+Assignee: @dandrake
 
 I've made a new spkg for SageTeX. It now has a proper Mercurial repository layout, improved spkg-check, documentation about TeXShop, and more examples.
 
@@ -39,7 +39,7 @@ archive/issue_comments_045915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5840#issuecomment-45915",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_045916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5840#issuecomment-45916",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_045917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5840#issuecomment-45917",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_045918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5840#issuecomment-45918",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_045919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5840#issuecomment-45919",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_045920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5840#issuecomment-45920",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_045921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5840#issuecomment-45921",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_045922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5840#issuecomment-45922",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_045923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5840#issuecomment-45923",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

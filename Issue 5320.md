@@ -14,7 +14,7 @@ archive/issues_005320.json:
     "title": "update Sphinx to 0.5.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5320",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -39,7 +39,7 @@ archive/issue_comments_040966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5320#issuecomment-40966",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_040967.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-02-20T11:27:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5320#issuecomment-40967",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_040968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5320#issuecomment-40968",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002384.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  dmharvey ncalexan mderickx\n\n\n```\n[Tue Mar 4 2008] [05:06:54] <dmharvey>  how many finite field implementations do we have?\n[Tue Mar 4 2008] [05:06:56] <dmharvey>  it's crazy.\n```\n\n\nI propose:\n* implement `FiniteField_ntl` which covers `ntl.GF2E`, `ntl.ZZ_pE` and `ntl.lzz_pE` via a bunch of function pointers. This introduces a pointer dereference as overhead but this should be relatively cheap compared to the actual operations (small fields are implemented via Givaro anyway). \n* kill `FiniteField_ext_pari` \n\nThis would leave us with two implementations: one for small extension fields and one for larger (in terms of the order)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2384\n\n",
+    "body": "Assignee: @malb\n\nCC:  dmharvey @ncalexan @koffie\n\n\n```\n[Tue Mar 4 2008] [05:06:54] <dmharvey>  how many finite field implementations do we have?\n[Tue Mar 4 2008] [05:06:56] <dmharvey>  it's crazy.\n```\n\n\nI propose:\n* implement `FiniteField_ntl` which covers `ntl.GF2E`, `ntl.ZZ_pE` and `ntl.lzz_pE` via a bunch of function pointers. This introduces a pointer dereference as overhead but this should be relatively cheap compared to the actual operations (small fields are implemented via Givaro anyway). \n* kill `FiniteField_ext_pari` \n\nThis would leave us with two implementations: one for small extension fields and one for larger (in terms of the order)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2384\n\n",
     "created_at": "2008-03-04T11:38:04Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_002384.json:
     "title": "reduce finite field implementations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2384",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  dmharvey ncalexan mderickx
+CC:  dmharvey @ncalexan @koffie
 
 
 ```
@@ -84,7 +84,7 @@ archive/issue_comments_016083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2384#issuecomment-16083",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_016084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2384#issuecomment-16084",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_016086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2384#issuecomment-16086",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_016088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2384#issuecomment-16088",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_016089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2384#issuecomment-16089",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_016091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2384#issuecomment-16091",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_016092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2384#issuecomment-16092",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_016093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2384#issuecomment-16093",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_016094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2384#issuecomment-16094",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

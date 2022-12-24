@@ -3,7 +3,7 @@
 archive/issues_000445.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n1. Start a hard calc in magma, e.g., ask if polynomial is irreducible.\n2. interrupt in notebook.\n3. OK get sage back, but magma is not really interupted!  it's still running.\n\nThis is BAD.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/445\n\n",
+    "body": "Assignee: @williamstein\n\n\n1. Start a hard calc in magma, e.g., ask if polynomial is irreducible.\n2. interrupt in notebook.\n3. OK get sage back, but magma is not really interupted!  it's still running.\n\nThis is BAD.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/445\n\n",
     "created_at": "2007-08-18T21:09:45Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000445.json:
     "title": "serious issue with how interupting subprocesses sometimes behaves.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/445",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 1. Start a hard calc in magma, e.g., ask if polynomial is irreducible.
@@ -43,7 +43,7 @@ archive/issue_comments_002230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/445",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/445#issuecomment-2230",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

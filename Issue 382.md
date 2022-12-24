@@ -3,7 +3,7 @@
 archive/issues_000382.json:
 ```json
 {
-    "body": "Assignee: was\n\nIn \"databases/db_class_polynomials.py:_dbpath()\", the \"NYI\" error for level>1 refers\nto the variable 's'; it should be 'level'. \n\nBundle attached.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/382\n\n",
+    "body": "Assignee: @williamstein\n\nIn \"databases/db_class_polynomials.py:_dbpath()\", the \"NYI\" error for level>1 refers\nto the variable 's'; it should be 'level'. \n\nBundle attached.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/382\n\n",
     "created_at": "2007-05-29T04:23:16Z",
     "labels": [
         "algebraic geometry",
@@ -16,7 +16,7 @@ archive/issues_000382.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 In "databases/db_class_polynomials.py:_dbpath()", the "NYI" error for level>1 refers
 to the variable 's'; it should be 'level'. 
@@ -58,7 +58,7 @@ archive/issue_comments_001861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/382#issuecomment-1861",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_001862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/382#issuecomment-1862",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

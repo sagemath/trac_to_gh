@@ -14,7 +14,7 @@ archive/issues_001731.json:
     "title": "SAge mac app",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1731",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -212,7 +212,7 @@ archive/issue_comments_010960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1731#issuecomment-10960",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

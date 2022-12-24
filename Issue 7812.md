@@ -3,7 +3,7 @@
 archive/issues_007812.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  jbandlow ncohen\n\nKeywords: bell numbers\n\nFredrick Johansson discusses [here](http://fredrik-j.blogspot.com/2009/03/computing-generalized-bell-numbers.html) his implementation of generalized Bell numbers in mpmath. I've verified that this function is present in the version of mpmath shipped with sage 4.3. Benchmarks show it is faster than GAP (currently used by sage) and even mathematica.  This should be very easy to wrap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7812\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @jbandlow @nathanncohen\n\nKeywords: bell numbers\n\nFredrick Johansson discusses [here](http://fredrik-j.blogspot.com/2009/03/computing-generalized-bell-numbers.html) his implementation of generalized Bell numbers in mpmath. I've verified that this function is present in the version of mpmath shipped with sage 4.3. Benchmarks show it is faster than GAP (currently used by sage) and even mathematica.  This should be very easy to wrap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7812\n\n",
     "created_at": "2010-01-02T02:41:55Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_007812.json:
     "title": "Compute Bell numbers using mpmath by default (instead of GAP)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7812",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 Assignee: sage-combinat
 
-CC:  jbandlow ncohen
+CC:  @jbandlow @nathanncohen
 
 Keywords: bell numbers
 
@@ -41,7 +41,7 @@ archive/issue_comments_067598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7812#issuecomment-67598",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_067599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7812#issuecomment-67599",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_067600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7812#issuecomment-67600",
-    "user": "bsalisbury1"
+    "user": "@bsalisbury1"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_067601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7812",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7812#issuecomment-67601",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008050.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  vbraun alexghitza mhampton\n\nThe file SPKG.txt in the cddlib spkg does not respect the rules at\n\nhttp://www.sagemath.org/doc/developer/producing_spkgs.html\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8050\n\n",
+    "body": "Assignee: tbd\n\nCC:  @vbraun alexghitza mhampton\n\nThe file SPKG.txt in the cddlib spkg does not respect the rules at\n\nhttp://www.sagemath.org/doc/developer/producing_spkgs.html\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8050\n\n",
     "created_at": "2010-01-24T03:23:23Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_008050.json:
     "title": "fix SPKG.txt in cddlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8050",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: tbd
 
-CC:  vbraun alexghitza mhampton
+CC:  @vbraun alexghitza mhampton
 
 The file SPKG.txt in the cddlib spkg does not respect the rules at
 
@@ -43,7 +43,7 @@ archive/issue_comments_070390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8050#issuecomment-70390",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -56,16 +56,16 @@ Updated SPKG.txt
 archive/issue_comments_070391.json:
 ```json
 {
-    "body": "Attachment [SPKG.txt](tarball://root/attachments/some-uuid/ticket8050/SPKG.txt) by vbraun created at 2010-01-27 17:09:08\n\nI've attached my current version, and I think it conforms to the specs. Let me know if there is anything missing.",
+    "body": "Attachment [SPKG.txt](tarball://root/attachments/some-uuid/ticket8050/SPKG.txt) by @vbraun created at 2010-01-27 17:09:08\n\nI've attached my current version, and I think it conforms to the specs. Let me know if there is anything missing.",
     "created_at": "2010-01-27T17:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8050#issuecomment-70391",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [SPKG.txt](tarball://root/attachments/some-uuid/ticket8050/SPKG.txt) by vbraun created at 2010-01-27 17:09:08
+Attachment [SPKG.txt](tarball://root/attachments/some-uuid/ticket8050/SPKG.txt) by @vbraun created at 2010-01-27 17:09:08
 
 I've attached my current version, and I think it conforms to the specs. Let me know if there is anything missing.
 
@@ -81,7 +81,7 @@ archive/issue_comments_070392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8050#issuecomment-70392",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_070394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8050",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8050#issuecomment-70394",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002706.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm\n\nSet of functions for manipulating individual bits in lists of longs. This will be especially helpful for the graph isomorphism code as it provides a level of abstraction that should help eliminate bugs. \n\nIt is a pxi file so that the functions can be declared and used inline. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2706\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nSet of functions for manipulating individual bits in lists of longs. This will be especially helpful for the graph isomorphism code as it provides a level of abstraction that should help eliminate bugs. \n\nIt is a pxi file so that the functions can be declared and used inline. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2706\n\n",
     "created_at": "2008-03-28T20:00:01Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_002706.json:
     "title": "[with patch] Fast bitset implimentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2706",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm
+CC:  @rlmill
 
 Set of functions for manipulating individual bits in lists of longs. This will be especially helpful for the graph isomorphism code as it provides a level of abstraction that should help eliminate bugs. 
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2706
 archive/issue_comments_018663.json:
 ```json
 {
-    "body": "Attachment [bitsets.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets.patch) by robertwb created at 2008-03-28 20:00:10",
+    "body": "Attachment [bitsets.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets.patch) by @robertwb created at 2008-03-28 20:00:10",
     "created_at": "2008-03-28T20:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2706#issuecomment-18663",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [bitsets.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets.patch) by robertwb created at 2008-03-28 20:00:10
+Attachment [bitsets.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets.patch) by @robertwb created at 2008-03-28 20:00:10
 
 
 
@@ -54,16 +54,16 @@ Attachment [bitsets.patch](tarball://root/attachments/some-uuid/ticket2706/bitse
 archive/issue_comments_018664.json:
 ```json
 {
-    "body": "Attachment [bitsets2.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets2.patch) by robertwb created at 2008-03-28 20:52:49",
+    "body": "Attachment [bitsets2.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets2.patch) by @robertwb created at 2008-03-28 20:52:49",
     "created_at": "2008-03-28T20:52:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2706#issuecomment-18664",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [bitsets2.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets2.patch) by robertwb created at 2008-03-28 20:52:49
+Attachment [bitsets2.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets2.patch) by @robertwb created at 2008-03-28 20:52:49
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_018665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2706#issuecomment-18665",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -126,16 +126,16 @@ Merged in Sage 2.11.alpha2
 archive/issue_comments_018668.json:
 ```json
 {
-    "body": "Attachment [bitsets3.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets3.patch) by robertwb created at 2008-03-29 01:45:46\n\nFixed minor bug, added more doctests. \n\nAll tests pass on 32-bit intel OS X and on sage.math (modulo limbs count)",
+    "body": "Attachment [bitsets3.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets3.patch) by @robertwb created at 2008-03-29 01:45:46\n\nFixed minor bug, added more doctests. \n\nAll tests pass on 32-bit intel OS X and on sage.math (modulo limbs count)",
     "created_at": "2008-03-29T01:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2706",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2706#issuecomment-18668",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [bitsets3.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets3.patch) by robertwb created at 2008-03-29 01:45:46
+Attachment [bitsets3.patch](tarball://root/attachments/some-uuid/ticket2706/bitsets3.patch) by @robertwb created at 2008-03-29 01:45:46
 
 Fixed minor bug, added more doctests. 
 

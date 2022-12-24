@@ -3,7 +3,7 @@
 archive/issues_006854.json:
 ```json
 {
-    "body": "CC:  mhansen simonking\n\nHello !!\n\nI know nothing about Symbolics in Sage, but I will be using InfinitePolynomialRing and I think the following code can be considered a bug. I create an expression using an element from InfinitePolynomialRing, on which I use \"Tab\" to list its methods, some of them not being printed. Example :\n\n\n```\nsage: P.<x>=InfinitePolynomialRing(RR)\nsage: e=x[1]+x[3]\nsage: e.\ne.abs                           e.footprint                     e.multiplicative_order          e.save\ne.additive_order                e.is_nilpotent                  e.n                             e.squeezed\ne.base_extend                   e.is_one                        e.order                         e.stretch\ne.base_ring                     e.is_unit                       e.parent                        e.subs\ne.category                      e.is_zero                       e.polynomial                    e.substitute\ne.coefficient                   e.lc                            e.reduce                        e.symmetric_cancellation_order\ne.db                            e.lm                            e.rename                        e.tail\ne.dump                          e.lt                            e.reset_name                    e.variables\ne.dumps                         e.max_index                     e.ring                          e.version\nsage: e.constant_coefficient()\n0.000000000000000\n```\n\n\nBesides, I do not understand why ( and I would really need it the other way ) inequalities on such expression return binaries instead of being kept symbolic :\n\n\n```\nsage: e<3\nFalse\n```\n\n\nBut this may be intentional, even though I do not like it :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6854\n\n",
+    "body": "CC:  @mwhansen simonking\n\nHello !!\n\nI know nothing about Symbolics in Sage, but I will be using InfinitePolynomialRing and I think the following code can be considered a bug. I create an expression using an element from InfinitePolynomialRing, on which I use \"Tab\" to list its methods, some of them not being printed. Example :\n\n\n```\nsage: P.<x>=InfinitePolynomialRing(RR)\nsage: e=x[1]+x[3]\nsage: e.\ne.abs                           e.footprint                     e.multiplicative_order          e.save\ne.additive_order                e.is_nilpotent                  e.n                             e.squeezed\ne.base_extend                   e.is_one                        e.order                         e.stretch\ne.base_ring                     e.is_unit                       e.parent                        e.subs\ne.category                      e.is_zero                       e.polynomial                    e.substitute\ne.coefficient                   e.lc                            e.reduce                        e.symmetric_cancellation_order\ne.db                            e.lm                            e.rename                        e.tail\ne.dump                          e.lt                            e.reset_name                    e.variables\ne.dumps                         e.max_index                     e.ring                          e.version\nsage: e.constant_coefficient()\n0.000000000000000\n```\n\n\nBesides, I do not understand why ( and I would really need it the other way ) inequalities on such expression return binaries instead of being kept symbolic :\n\n\n```\nsage: e<3\nFalse\n```\n\n\nBut this may be intentional, even though I do not like it :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6854\n\n",
     "created_at": "2009-09-01T08:17:04Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006854.json:
     "title": "Something weird in the implementation of InfinitePolynomialRing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6854",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-CC:  mhansen simonking
+CC:  @mwhansen simonking
 
 Hello !!
 
@@ -71,7 +71,7 @@ archive/issue_comments_056505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56505",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_056506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56506",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_056507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56507",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_056508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56508",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_056509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56509",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_056510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56510",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_056511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56511",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_056512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56512",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_056513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56513",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_056514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56514",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -321,16 +321,16 @@ I understood that the new trac system is that I don't need to add [with patch, n
 archive/issue_comments_056515.json:
 ```json
 {
-    "body": "Set assignee to SimonKing.",
+    "body": "Set assignee to @simon-king-jena.",
     "created_at": "2009-11-30T20:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56515",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Set assignee to SimonKing.
+Set assignee to @simon-king-jena.
 
 
 
@@ -344,7 +344,7 @@ archive/issue_comments_056516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56516",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_056517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56517",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -401,16 +401,16 @@ Introspection and tab completion(plus doc tests) for elements of InfinitePolynom
 archive/issue_comments_056518.json:
 ```json
 {
-    "body": "Attachment [6854_tab_completion.patch](tarball://root/attachments/some-uuid/ticket6854/6854_tab_completion.patch) by SimonKing created at 2009-11-30 22:10:52\n\nHi!\n\nYet another patch (still under the same name). This time, I added some doc tests. \n\n`dir()` provides a nice indirect doc test for `__getattr__` (after all, this is where the introspection eventually got implemented). But I still don't know how to properly test tab completion. Hence, I call the relevant method directly, although it is underscore. \n\nCheers,\nSimon",
+    "body": "Attachment [6854_tab_completion.patch](tarball://root/attachments/some-uuid/ticket6854/6854_tab_completion.patch) by @simon-king-jena created at 2009-11-30 22:10:52\n\nHi!\n\nYet another patch (still under the same name). This time, I added some doc tests. \n\n`dir()` provides a nice indirect doc test for `__getattr__` (after all, this is where the introspection eventually got implemented). But I still don't know how to properly test tab completion. Hence, I call the relevant method directly, although it is underscore. \n\nCheers,\nSimon",
     "created_at": "2009-11-30T22:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56518",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [6854_tab_completion.patch](tarball://root/attachments/some-uuid/ticket6854/6854_tab_completion.patch) by SimonKing created at 2009-11-30 22:10:52
+Attachment [6854_tab_completion.patch](tarball://root/attachments/some-uuid/ticket6854/6854_tab_completion.patch) by @simon-king-jena created at 2009-11-30 22:10:52
 
 Hi!
 
@@ -433,7 +433,7 @@ archive/issue_comments_056519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56519",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -446,16 +446,16 @@ Adding a better doc test for tab completion
 archive/issue_comments_056520.json:
 ```json
 {
-    "body": "Attachment [6854_tab_completion_doctest.patch](tarball://root/attachments/some-uuid/ticket6854/6854_tab_completion_doctest.patch) by SimonKing created at 2009-12-01 13:56:00\n\nThe second patch (to be applied after the first) provides a nice indirect doc test for tab completion, according to William's advice at [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/1bf6652891c4e45).",
+    "body": "Attachment [6854_tab_completion_doctest.patch](tarball://root/attachments/some-uuid/ticket6854/6854_tab_completion_doctest.patch) by @simon-king-jena created at 2009-12-01 13:56:00\n\nThe second patch (to be applied after the first) provides a nice indirect doc test for tab completion, according to William's advice at [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/1bf6652891c4e45).",
     "created_at": "2009-12-01T13:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56520",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [6854_tab_completion_doctest.patch](tarball://root/attachments/some-uuid/ticket6854/6854_tab_completion_doctest.patch) by SimonKing created at 2009-12-01 13:56:00
+Attachment [6854_tab_completion_doctest.patch](tarball://root/attachments/some-uuid/ticket6854/6854_tab_completion_doctest.patch) by @simon-king-jena created at 2009-12-01 13:56:00
 
 The second patch (to be applied after the first) provides a nice indirect doc test for tab completion, according to William's advice at [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/1bf6652891c4e45).
 
@@ -471,7 +471,7 @@ archive/issue_comments_056521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56521",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_056522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56522",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -524,7 +524,7 @@ archive/issue_comments_056523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56523",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -542,7 +542,7 @@ archive/issue_comments_056524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56524",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_056525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6854",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6854#issuecomment-56525",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

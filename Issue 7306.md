@@ -3,7 +3,7 @@
 archive/issues_007306.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nWhile working on a different graph generator, I noticed that the second example for the new Generalized Petersen Graph was not being formatted right in the HTML docs.  And in the stock 4.2 docs it is also not coming through right.\n\nI'm not sure why it wasn't working, but a bit of editing seems to have set it right.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7306\n\n",
+    "body": "Assignee: @rlmill\n\nWhile working on a different graph generator, I noticed that the second example for the new Generalized Petersen Graph was not being formatted right in the HTML docs.  And in the stock 4.2 docs it is also not coming through right.\n\nI'm not sure why it wasn't working, but a bit of editing seems to have set it right.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7306\n\n",
     "created_at": "2009-10-26T04:49:51Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007306.json:
     "title": "Documentation fix for Generalized Petersen graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7306",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 While working on a different graph generator, I noticed that the second example for the new Generalized Petersen Graph was not being formatted right in the HTML docs.  And in the stock 4.2 docs it is also not coming through right.
 
@@ -39,7 +39,7 @@ archive/issue_comments_061017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7306#issuecomment-61017",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_061018.json:
 ```json
 {
-    "body": "Attachment [trac_7306_docs_generalized_petersen.patch](tarball://root/attachments/some-uuid/ticket7306/trac_7306_docs_generalized_petersen.patch) by ncohen created at 2009-10-26 06:57:50",
+    "body": "Attachment [trac_7306_docs_generalized_petersen.patch](tarball://root/attachments/some-uuid/ticket7306/trac_7306_docs_generalized_petersen.patch) by @nathanncohen created at 2009-10-26 06:57:50",
     "created_at": "2009-10-26T06:57:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7306#issuecomment-61018",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7306_docs_generalized_petersen.patch](tarball://root/attachments/some-uuid/ticket7306/trac_7306_docs_generalized_petersen.patch) by ncohen created at 2009-10-26 06:57:50
+Attachment [trac_7306_docs_generalized_petersen.patch](tarball://root/attachments/some-uuid/ticket7306/trac_7306_docs_generalized_petersen.patch) by @nathanncohen created at 2009-10-26 06:57:50
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_061019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7306#issuecomment-61019",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_061020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7306#issuecomment-61020",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_061021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7306#issuecomment-61021",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

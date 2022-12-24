@@ -14,7 +14,7 @@ archive/issues_004284.json:
     "title": "modular symbols -- applying Hecke operator on cuspidal subspace broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4284",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: citro
@@ -64,7 +64,7 @@ archive/issue_comments_031348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4284#issuecomment-31348",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -77,16 +77,16 @@ Changing status from new to assigned.
 archive/issue_comments_031349.json:
 ```json
 {
-    "body": "Attachment [trac-4284.patch](tarball://root/attachments/some-uuid/ticket4284/trac-4284.patch) by craigcitro created at 2008-10-17 09:47:11\n\nYep, this just wasn't tested at all. Fixed it, added some doctests.",
+    "body": "Attachment [trac-4284.patch](tarball://root/attachments/some-uuid/ticket4284/trac-4284.patch) by @craigcitro created at 2008-10-17 09:47:11\n\nYep, this just wasn't tested at all. Fixed it, added some doctests.",
     "created_at": "2008-10-17T09:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4284#issuecomment-31349",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4284.patch](tarball://root/attachments/some-uuid/ticket4284/trac-4284.patch) by craigcitro created at 2008-10-17 09:47:11
+Attachment [trac-4284.patch](tarball://root/attachments/some-uuid/ticket4284/trac-4284.patch) by @craigcitro created at 2008-10-17 09:47:11
 
 Yep, this just wasn't tested at all. Fixed it, added some doctests.
 
@@ -97,16 +97,16 @@ Yep, this just wasn't tested at all. Fixed it, added some doctests.
 archive/issue_comments_031350.json:
 ```json
 {
-    "body": "Changing assignee from citro to craigcitro.",
+    "body": "Changing assignee from citro to @craigcitro.",
     "created_at": "2008-10-17T09:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4284#issuecomment-31350",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from citro to craigcitro.
+Changing assignee from citro to @craigcitro.
 
 
 
@@ -120,7 +120,7 @@ archive/issue_comments_031351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4284#issuecomment-31351",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

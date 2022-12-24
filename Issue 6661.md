@@ -3,7 +3,7 @@
 archive/issues_006661.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: KeyboardInterrupt\n\nWhen there is a `KeyboardInterrupt` while `_expect_expr` talks with some interface, there is *always* the warning message\n\n```\nControl-C pressed.  Interrupting R. Please wait a few seconds...\n```\n\nbefore the `KeyboardInterrupt` is re-raised -- regardless whether the interface is R or anything else!\n\nThe patch that I am about to post would instead print \n\n```\n\"Control-C pressed.  Interrupting %s. Please wait a few seconds...\"%self\n```\n\nwhere `self` is the interface.\n\nI know that all bug fixes should be doc tested. But can someone explain to me how one can produce a `KeyboardInterrupt` while `_expect_expr()` is running?\n\nIssue created by migration from https://trac.sagemath.org/ticket/6661\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: KeyboardInterrupt\n\nWhen there is a `KeyboardInterrupt` while `_expect_expr` talks with some interface, there is *always* the warning message\n\n```\nControl-C pressed.  Interrupting R. Please wait a few seconds...\n```\n\nbefore the `KeyboardInterrupt` is re-raised -- regardless whether the interface is R or anything else!\n\nThe patch that I am about to post would instead print \n\n```\n\"Control-C pressed.  Interrupting %s. Please wait a few seconds...\"%self\n```\n\nwhere `self` is the interface.\n\nI know that all bug fixes should be doc tested. But can someone explain to me how one can produce a `KeyboardInterrupt` while `_expect_expr()` is running?\n\nIssue created by migration from https://trac.sagemath.org/ticket/6661\n\n",
     "created_at": "2009-07-31T13:32:17Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_006661.json:
     "title": "Misleading warning message of  _expect_expr() at KeyboardInterrupt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6661",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: KeyboardInterrupt
 
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6661
 archive/issue_comments_054672.json:
 ```json
 {
-    "body": "Changing assignee from was to SimonKing.",
+    "body": "Changing assignee from @williamstein to @simon-king-jena.",
     "created_at": "2009-07-31T13:34:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6661#issuecomment-54672",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Changing assignee from was to SimonKing.
+Changing assignee from @williamstein to @simon-king-jena.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_054673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6661#issuecomment-54673",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_054674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6661#issuecomment-54674",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -104,16 +104,16 @@ Fixing a misleading warning message in _expect_expr, with doc test included
 archive/issue_comments_054675.json:
 ```json
 {
-    "body": "Attachment [trac_6661_expect_expr.patch](tarball://root/attachments/some-uuid/ticket6661/trac_6661_expect_expr.patch) by SimonKing created at 2009-07-31 19:19:22\n\nMeanwhile there also is a doc test (thank you for pointing me to the \"alarm\" function, William!), so, I think the patch is ready for review!\n\nNow, we have a better warning message:\n\n```\nsage: print sage0.eval(\"alarm(1); singular._expect_expr('1')\")\nControl-C pressed.  Interrupting Singular. Please wait a few seconds...\n---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)\n\n/home/king/.sage/temp/gauss/29173/_home_king__sage_init_sage_0.py in <module>()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in _expect_expr(self, expr, timeout)\n    838                 else:\n    839                     break\n--> 840             raise KeyboardInterrupt, msg\n    841\n    842     def _sendstr(self, str):\n\nKeyboardInterrupt: computation timed out because alarm was set for 1 seconds\nsage: print sage0.eval(\"alarm(1); gap._expect_expr('1')\")\nControl-C pressed.  Interrupting Gap. Please wait a few seconds...\n---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)\n\n/home/king/.sage/temp/gauss/29173/_home_king__sage_init_sage_0.py in <module>()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in _expect_expr(self, expr, timeout)\n    838                 else:\n    839                     break\n--> 840             raise KeyboardInterrupt, msg\n    841\n    842     def _sendstr(self, str):\n\nKeyboardInterrupt: computation timed out because alarm was set for 1 seconds\n```\n\n\nNote that it correctly says \"Interrupting Singular\" or \"Interrupting Gap\".",
+    "body": "Attachment [trac_6661_expect_expr.patch](tarball://root/attachments/some-uuid/ticket6661/trac_6661_expect_expr.patch) by @simon-king-jena created at 2009-07-31 19:19:22\n\nMeanwhile there also is a doc test (thank you for pointing me to the \"alarm\" function, William!), so, I think the patch is ready for review!\n\nNow, we have a better warning message:\n\n```\nsage: print sage0.eval(\"alarm(1); singular._expect_expr('1')\")\nControl-C pressed.  Interrupting Singular. Please wait a few seconds...\n---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)\n\n/home/king/.sage/temp/gauss/29173/_home_king__sage_init_sage_0.py in <module>()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in _expect_expr(self, expr, timeout)\n    838                 else:\n    839                     break\n--> 840             raise KeyboardInterrupt, msg\n    841\n    842     def _sendstr(self, str):\n\nKeyboardInterrupt: computation timed out because alarm was set for 1 seconds\nsage: print sage0.eval(\"alarm(1); gap._expect_expr('1')\")\nControl-C pressed.  Interrupting Gap. Please wait a few seconds...\n---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)\n\n/home/king/.sage/temp/gauss/29173/_home_king__sage_init_sage_0.py in <module>()\n\n/home/king/SAGE/sage-4.1/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in _expect_expr(self, expr, timeout)\n    838                 else:\n    839                     break\n--> 840             raise KeyboardInterrupt, msg\n    841\n    842     def _sendstr(self, str):\n\nKeyboardInterrupt: computation timed out because alarm was set for 1 seconds\n```\n\n\nNote that it correctly says \"Interrupting Singular\" or \"Interrupting Gap\".",
     "created_at": "2009-07-31T19:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6661#issuecomment-54675",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [trac_6661_expect_expr.patch](tarball://root/attachments/some-uuid/ticket6661/trac_6661_expect_expr.patch) by SimonKing created at 2009-07-31 19:19:22
+Attachment [trac_6661_expect_expr.patch](tarball://root/attachments/some-uuid/ticket6661/trac_6661_expect_expr.patch) by @simon-king-jena created at 2009-07-31 19:19:22
 
 Meanwhile there also is a doc test (thank you for pointing me to the "alarm" function, William!), so, I think the patch is ready for review!
 

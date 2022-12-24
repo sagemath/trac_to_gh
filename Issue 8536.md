@@ -3,7 +3,7 @@
 archive/issues_008536.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jhpalmieri\n\nWhen quitting we see\n\n```\nExiting SAGE (CPU time 0m0.04s, Wall time 0m0.63s).\n```\n\nand there are several other places where \"SAGE\" is output instead of \"Sage\".\n\nThe patch changes these.  I tested the whole library: no doctests needed changing at all.  But maybe there are other issues which I did not think of.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8536\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jhpalmieri\n\nWhen quitting we see\n\n```\nExiting SAGE (CPU time 0m0.04s, Wall time 0m0.63s).\n```\n\nand there are several other places where \"SAGE\" is output instead of \"Sage\".\n\nThe patch changes these.  I tested the whole library: no doctests needed changing at all.  But maybe there are other issues which I did not think of.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8536\n\n",
     "created_at": "2010-03-14T18:01:19Z",
     "labels": [
         "user interface",
@@ -14,12 +14,12 @@ archive/issues_008536.json:
     "title": "Change SAGE\" to \"Sage\" in output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8536",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 When quitting we see
 
@@ -47,7 +47,7 @@ archive/issue_comments_077150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77150",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_077151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77151",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_077152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77152",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_077153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77153",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -114,16 +114,16 @@ applies to 4.3.5
 archive/issue_comments_077154.json:
 ```json
 {
-    "body": "Attachment [trac_8536-SAGE.patch](tarball://root/attachments/some-uuid/ticket8536/trac_8536-SAGE.patch) by cremona created at 2010-04-01 09:26:58\n\nI don't know how to change the file c_lib/src/interrupt.c safely since it is not included in the cloning system.  Can you either tell me how to do that, or do it yourself?\n\nMeanwhile I have added to the patch to deal with file misc/sagedoc.py so that the latex control sequences \\sage and \\SAGE (and also \\Sage) convert to 'Sage' instead of 'SAGE'.  I am not too sure of the reperucssions of this (it will surely change a lot o the documentation, but not affect doctests), so I am cc-ing jpalmieri and hope that he will comment.\n\nI testing the whole sage library and all tests passed.",
+    "body": "Attachment [trac_8536-SAGE.patch](tarball://root/attachments/some-uuid/ticket8536/trac_8536-SAGE.patch) by @JohnCremona created at 2010-04-01 09:26:58\n\nI don't know how to change the file c_lib/src/interrupt.c safely since it is not included in the cloning system.  Can you either tell me how to do that, or do it yourself?\n\nMeanwhile I have added to the patch to deal with file misc/sagedoc.py so that the latex control sequences \\sage and \\SAGE (and also \\Sage) convert to 'Sage' instead of 'SAGE'.  I am not too sure of the reperucssions of this (it will surely change a lot o the documentation, but not affect doctests), so I am cc-ing jpalmieri and hope that he will comment.\n\nI testing the whole sage library and all tests passed.",
     "created_at": "2010-04-01T09:26:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77154",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8536-SAGE.patch](tarball://root/attachments/some-uuid/ticket8536/trac_8536-SAGE.patch) by cremona created at 2010-04-01 09:26:58
+Attachment [trac_8536-SAGE.patch](tarball://root/attachments/some-uuid/ticket8536/trac_8536-SAGE.patch) by @JohnCremona created at 2010-04-01 09:26:58
 
 I don't know how to change the file c_lib/src/interrupt.c safely since it is not included in the cloning system.  Can you either tell me how to do that, or do it yourself?
 
@@ -143,7 +143,7 @@ archive/issue_comments_077155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77155",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_077156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77156",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_077157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77157",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -197,16 +197,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_077158.json:
 ```json
 {
-    "body": "Attachment [trac_8536-SAGE.2.patch](tarball://root/attachments/some-uuid/ticket8536/trac_8536-SAGE.2.patch) by cremona created at 2010-04-01 13:24:57\n\nYou are right.  I updated the patch to include that file, and reinstated \"needs review\".",
+    "body": "Attachment [trac_8536-SAGE.2.patch](tarball://root/attachments/some-uuid/ticket8536/trac_8536-SAGE.2.patch) by @JohnCremona created at 2010-04-01 13:24:57\n\nYou are right.  I updated the patch to include that file, and reinstated \"needs review\".",
     "created_at": "2010-04-01T13:24:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77158",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8536-SAGE.2.patch](tarball://root/attachments/some-uuid/ticket8536/trac_8536-SAGE.2.patch) by cremona created at 2010-04-01 13:24:57
+Attachment [trac_8536-SAGE.2.patch](tarball://root/attachments/some-uuid/ticket8536/trac_8536-SAGE.2.patch) by @JohnCremona created at 2010-04-01 13:24:57
 
 You are right.  I updated the patch to include that file, and reinstated "needs review".
 
@@ -222,7 +222,7 @@ archive/issue_comments_077159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77159",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_077160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77160",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_077161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77161",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_077162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77162",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_077163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77163",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_077164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8536#issuecomment-77164",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

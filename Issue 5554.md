@@ -3,7 +3,7 @@
 archive/issues_005554.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jkantor wstein\n\nKeywords: cholesky decomposition RDF real\n\nThe attached patch\n\n* renames cholesky() to cholesky_decomposition()\n* improves the documentation\n* adds a helper function _cholesky_decomposition_() for specialization;\n* moves the GSL/scipy cholesky function to matrix_real_double_dense, where it belongs;\n* implements a generic Cholesky decomposition that works for arbitrary precision real and complex fields, where we generalize symmetric to Hermitian.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5554\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  jkantor wstein\n\nKeywords: cholesky decomposition RDF real\n\nThe attached patch\n\n* renames cholesky() to cholesky_decomposition()\n* improves the documentation\n* adds a helper function _cholesky_decomposition_() for specialization;\n* moves the GSL/scipy cholesky function to matrix_real_double_dense, where it belongs;\n* implements a generic Cholesky decomposition that works for arbitrary precision real and complex fields, where we generalize symmetric to Hermitian.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5554\n\n",
     "created_at": "2009-03-17T21:38:35Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005554.json:
     "title": "implement cholesky_decomposition for matrices other than RDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5554",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  jkantor wstein
 
@@ -48,7 +48,7 @@ archive/issue_comments_043198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5554#issuecomment-43198",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_043199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5554#issuecomment-43199",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -119,16 +119,16 @@ Michael
 archive/issue_comments_043201.json:
 ```json
 {
-    "body": "Attachment [trac_5554-cholesky-decomposition-2.patch](tarball://root/attachments/some-uuid/ticket5554/trac_5554-cholesky-decomposition-2.patch) by ncalexan created at 2009-05-19 16:27:07\n\nOkay, this adds back cholesky, with a deprecation warning.  I'm returning this to positive review, since nothing else has changed.",
+    "body": "Attachment [trac_5554-cholesky-decomposition-2.patch](tarball://root/attachments/some-uuid/ticket5554/trac_5554-cholesky-decomposition-2.patch) by @ncalexan created at 2009-05-19 16:27:07\n\nOkay, this adds back cholesky, with a deprecation warning.  I'm returning this to positive review, since nothing else has changed.",
     "created_at": "2009-05-19T16:27:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5554#issuecomment-43201",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac_5554-cholesky-decomposition-2.patch](tarball://root/attachments/some-uuid/ticket5554/trac_5554-cholesky-decomposition-2.patch) by ncalexan created at 2009-05-19 16:27:07
+Attachment [trac_5554-cholesky-decomposition-2.patch](tarball://root/attachments/some-uuid/ticket5554/trac_5554-cholesky-decomposition-2.patch) by @ncalexan created at 2009-05-19 16:27:07
 
 Okay, this adds back cholesky, with a deprecation warning.  I'm returning this to positive review, since nothing else has changed.
 

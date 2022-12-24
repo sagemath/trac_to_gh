@@ -14,7 +14,7 @@ archive/issues_005522.json:
     "title": "[with patch; needs work] Fix segfault if libsingular.so can't be found",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5522",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -115,7 +115,7 @@ archive/issue_comments_042949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5522#issuecomment-42949",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_042951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5522#issuecomment-42951",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_042953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5522#issuecomment-42953",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_042960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5522#issuecomment-42960",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_042965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5522#issuecomment-42965",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -656,7 +656,7 @@ archive/issue_comments_042971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5522#issuecomment-42971",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -674,7 +674,7 @@ archive/issue_comments_042972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5522#issuecomment-42972",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

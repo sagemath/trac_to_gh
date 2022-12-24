@@ -3,7 +3,7 @@
 archive/issues_009879.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman zimmerma\n\nKeywords: pynac\n\nHere is a short example found by Burcin and reproducing the bug:\n\nb = [var('b_%s'%i) for i in range(4)]\n\nprecomp = (2^b_2 + 2)*(2^b_1 + 2^(-b_1) + 2<sup>b_1*2</sup>b_0 - 2<sup>b_1*2</sup>(-b_0)\n- 2<sup>(-b_1)*2</sup>b_0 - 2<sup>(-b_1)*2</sup>(-b_0) + 2^b_0 + 2^(-b_0) - 9) + (2^b_1 +\n2^(-b_1) + 2<sup>b_1*2</sup>b_0 - 2<sup>b_1*2</sup>(-b_0) - 2<sup>(-b_1)*2</sup>b_0 -\n2<sup>(-b_1)*2</sup>(-b_0) + 2^b_0 + 2^(-b_0) - 9)/2^b_2\n\nrepl_dict = {b_0: b_0, b_3: b_1, b_2: b_3, b_1: b_2}\nP = precomp.substitute(repl_dict)\nP.expand() \n\nThis is already being discussed here:\nhttp://groups.google.com/group/sage-support/browse_thread/thread/7c85f02c76012722\n\nIssue created by migration from https://trac.sagemath.org/ticket/9880\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @zimmermann6\n\nKeywords: pynac\n\nHere is a short example found by Burcin and reproducing the bug:\n\nb = [var('b_%s'%i) for i in range(4)]\n\nprecomp = (2^b_2 + 2)*(2^b_1 + 2^(-b_1) + 2<sup>b_1*2</sup>b_0 - 2<sup>b_1*2</sup>(-b_0)\n- 2<sup>(-b_1)*2</sup>b_0 - 2<sup>(-b_1)*2</sup>(-b_0) + 2^b_0 + 2^(-b_0) - 9) + (2^b_1 +\n2^(-b_1) + 2<sup>b_1*2</sup>b_0 - 2<sup>b_1*2</sup>(-b_0) - 2<sup>(-b_1)*2</sup>b_0 -\n2<sup>(-b_1)*2</sup>(-b_0) + 2^b_0 + 2^(-b_0) - 9)/2^b_2\n\nrepl_dict = {b_0: b_0, b_3: b_1, b_2: b_3, b_1: b_2}\nP = precomp.substitute(repl_dict)\nP.expand() \n\nThis is already being discussed here:\nhttp://groups.google.com/group/sage-support/browse_thread/thread/7c85f02c76012722\n\nIssue created by migration from https://trac.sagemath.org/ticket/9880\n\n",
     "created_at": "2010-09-09T09:01:09Z",
     "labels": [
         "symbolics",
@@ -17,9 +17,9 @@ archive/issues_009879.json:
     "user": "jpflori"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman zimmerma
+CC:  @kcrisman @zimmermann6
 
 Keywords: pynac
 
@@ -189,7 +189,7 @@ archive/issue_comments_097816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97816",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_097817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97817",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_097818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97818",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_097819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97819",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -256,16 +256,16 @@ archive/issue_comments_097819.json:
 archive/issue_comments_097820.json:
 ```json
 {
-    "body": "Attachment [trac_9880_revert_marking_random_from_trac_10187.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_revert_marking_random_from_trac_10187.patch) by vbraun created at 2010-12-01 14:07:35\n\nRe-enable doctests that fail on PPC due to this issue (updated)",
+    "body": "Attachment [trac_9880_revert_marking_random_from_trac_10187.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_revert_marking_random_from_trac_10187.patch) by @vbraun created at 2010-12-01 14:07:35\n\nRe-enable doctests that fail on PPC due to this issue (updated)",
     "created_at": "2010-12-01T14:07:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97820",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9880_revert_marking_random_from_trac_10187.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_revert_marking_random_from_trac_10187.patch) by vbraun created at 2010-12-01 14:07:35
+Attachment [trac_9880_revert_marking_random_from_trac_10187.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_revert_marking_random_from_trac_10187.patch) by @vbraun created at 2010-12-01 14:07:35
 
 Re-enable doctests that fail on PPC due to this issue (updated)
 
@@ -281,7 +281,7 @@ archive/issue_comments_097821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97821",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_097823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97823",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_097828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97828",
-    "user": "gagern"
+    "user": "@gagern"
 }
 ```
 
@@ -644,7 +644,7 @@ archive/issue_comments_097830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97830",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_097832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97832",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -713,7 +713,7 @@ archive/issue_comments_097833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97833",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -731,7 +731,7 @@ archive/issue_comments_097834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97834",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -790,7 +790,7 @@ archive/issue_comments_097836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97836",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -900,7 +900,7 @@ archive/issue_comments_097840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97840",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -913,7 +913,7 @@ Jean-Pierre: I think paristech.fr has some issues at the moment, can you upload 
 archive/issue_comments_097841.json:
 ```json
 {
-    "body": "Changing assignee from burcin to jpflori.",
+    "body": "Changing assignee from @burcin to jpflori.",
     "created_at": "2011-03-02T11:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -922,7 +922,7 @@ archive/issue_comments_097841.json:
 }
 ```
 
-Changing assignee from burcin to jpflori.
+Changing assignee from @burcin to jpflori.
 
 
 
@@ -955,7 +955,7 @@ It is quite the same as the one you would get by applying the patches of the tic
 archive/issue_comments_097843.json:
 ```json
 {
-    "body": "Changing assignee from jpflori to burcin.",
+    "body": "Changing assignee from jpflori to @burcin.",
     "created_at": "2011-03-02T11:24:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
@@ -964,7 +964,7 @@ archive/issue_comments_097843.json:
 }
 ```
 
-Changing assignee from jpflori to burcin.
+Changing assignee from jpflori to @burcin.
 
 
 
@@ -978,7 +978,7 @@ archive/issue_comments_097844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97844",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -998,7 +998,7 @@ archive/issue_comments_097845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97845",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1011,16 +1011,16 @@ Randomized testing of orders
 archive/issue_comments_097846.json:
 ```json
 {
-    "body": "Attachment [strict_weak_order.py](tarball://root/attachments/some-uuid/ticket9880/strict_weak_order.py) by vbraun created at 2011-03-02 14:23:45\n\nWith the attached script I find some examples in `cmp_add` where `a<b<c<a`. This violates SWO:\n\n```\nsage: attach strict_weak_order.py\nsage: test_symbolic_expression_order(10000)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/Sage/Order/<ipython console> in <module>()\n\n/home/vbraun/Sage/Order/strict_weak_order.py in test_symbolic_expression_order(repetitions)\n    113         c = make_random_expr()\n    114         assert_strict_weak_order(a, b, c, lambda x,y: x._cmp_(y))\n--> 115         assert_strict_weak_order(a, b, c, lambda x,y: x._cmp_add(y))\n    116         assert_strict_weak_order(a, b, c, lambda x,y: x._cmp_mul(y))\n    117 \n\n/home/vbraun/Sage/Order/strict_weak_order.py in assert_strict_weak_order(a, b, c, cmp_func)\n     63             \n     64     for i,j,k in Permutations([0,1,2]):   # transitivity\n---> 65         if cmp[i,j] and cmp[j,k] and not cmp[i,k]: raise ValueError, msg\n     66 \n     67     def incomparable(i,j):\n\nValueError: The binary relation failed to be a strict weak order on the elements\n a = 2*v10*(v5 - 2)*v7 + (-(v8 + e)*(-v8 + pi) + v6)*(v9*e - 2) - v2 - v3 - v5 - v9\n b = -(v3*v8 - 51*v2 - 105)*(v2 + 5)*(v3 - 1) + 3*v6*v9\n c = -v1*v6*brun + v6*v9*pi + 3*(7*(v5 + 1)*v7 - 3)*(-(v3 - 1)*e + v4) - (v5 - 4)*(v9 + 8) - v3 - 3\n[0 0 1]\n[1 0 0]\n[0 1 0]\n```\n",
+    "body": "Attachment [strict_weak_order.py](tarball://root/attachments/some-uuid/ticket9880/strict_weak_order.py) by @vbraun created at 2011-03-02 14:23:45\n\nWith the attached script I find some examples in `cmp_add` where `a<b<c<a`. This violates SWO:\n\n```\nsage: attach strict_weak_order.py\nsage: test_symbolic_expression_order(10000)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/Sage/Order/<ipython console> in <module>()\n\n/home/vbraun/Sage/Order/strict_weak_order.py in test_symbolic_expression_order(repetitions)\n    113         c = make_random_expr()\n    114         assert_strict_weak_order(a, b, c, lambda x,y: x._cmp_(y))\n--> 115         assert_strict_weak_order(a, b, c, lambda x,y: x._cmp_add(y))\n    116         assert_strict_weak_order(a, b, c, lambda x,y: x._cmp_mul(y))\n    117 \n\n/home/vbraun/Sage/Order/strict_weak_order.py in assert_strict_weak_order(a, b, c, cmp_func)\n     63             \n     64     for i,j,k in Permutations([0,1,2]):   # transitivity\n---> 65         if cmp[i,j] and cmp[j,k] and not cmp[i,k]: raise ValueError, msg\n     66 \n     67     def incomparable(i,j):\n\nValueError: The binary relation failed to be a strict weak order on the elements\n a = 2*v10*(v5 - 2)*v7 + (-(v8 + e)*(-v8 + pi) + v6)*(v9*e - 2) - v2 - v3 - v5 - v9\n b = -(v3*v8 - 51*v2 - 105)*(v2 + 5)*(v3 - 1) + 3*v6*v9\n c = -v1*v6*brun + v6*v9*pi + 3*(7*(v5 + 1)*v7 - 3)*(-(v3 - 1)*e + v4) - (v5 - 4)*(v9 + 8) - v3 - 3\n[0 0 1]\n[1 0 0]\n[0 1 0]\n```\n",
     "created_at": "2011-03-02T14:23:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97846",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [strict_weak_order.py](tarball://root/attachments/some-uuid/ticket9880/strict_weak_order.py) by vbraun created at 2011-03-02 14:23:45
+Attachment [strict_weak_order.py](tarball://root/attachments/some-uuid/ticket9880/strict_weak_order.py) by @vbraun created at 2011-03-02 14:23:45
 
 With the attached script I find some examples in `cmp_add` where `a<b<c<a`. This violates SWO:
 
@@ -1154,7 +1154,7 @@ archive/issue_comments_097851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97851",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1167,16 +1167,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_097852.json:
 ```json
 {
-    "body": "Attachment [trac_9880-pynac_order_jp_new-p2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-pynac_order_jp_new-p2.patch) by vbraun created at 2011-05-04 14:59:57\n\nJean-Pierre: Are you now finished with running your tests? Can you bring the spkg into a reviewable state? At the very least it should be called pynac-0.2.1.p0.spkg and have a SPKG.txt entry.",
+    "body": "Attachment [trac_9880-pynac_order_jp_new-p2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-pynac_order_jp_new-p2.patch) by @vbraun created at 2011-05-04 14:59:57\n\nJean-Pierre: Are you now finished with running your tests? Can you bring the spkg into a reviewable state? At the very least it should be called pynac-0.2.1.p0.spkg and have a SPKG.txt entry.",
     "created_at": "2011-05-04T14:59:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97852",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9880-pynac_order_jp_new-p2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-pynac_order_jp_new-p2.patch) by vbraun created at 2011-05-04 14:59:57
+Attachment [trac_9880-pynac_order_jp_new-p2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-pynac_order_jp_new-p2.patch) by @vbraun created at 2011-05-04 14:59:57
 
 Jean-Pierre: Are you now finished with running your tests? Can you bring the spkg into a reviewable state? At the very least it should be called pynac-0.2.1.p0.spkg and have a SPKG.txt entry.
 
@@ -1192,7 +1192,7 @@ archive/issue_comments_097853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97853",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1375,7 +1375,7 @@ archive/issue_comments_097857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97857",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1409,7 +1409,7 @@ archive/issue_comments_097858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97858",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1422,16 +1422,16 @@ Initial patch
 archive/issue_comments_097859.json:
 ```json
 {
-    "body": "Attachment [trac_9880_pynac_order.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order.patch) by vbraun created at 2011-06-15 00:37:47\n\nInitial patch",
+    "body": "Attachment [trac_9880_pynac_order.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order.patch) by @vbraun created at 2011-06-15 00:37:47\n\nInitial patch",
     "created_at": "2011-06-15T00:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97859",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9880_pynac_order.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order.patch) by vbraun created at 2011-06-15 00:37:47
+Attachment [trac_9880_pynac_order.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order.patch) by @vbraun created at 2011-06-15 00:37:47
 
 Initial patch
 
@@ -1442,16 +1442,16 @@ Initial patch
 archive/issue_comments_097860.json:
 ```json
 {
-    "body": "Attachment [trac_9880_randomized_testing.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_randomized_testing.patch) by vbraun created at 2011-06-15 00:37:56\n\nInitial patch",
+    "body": "Attachment [trac_9880_randomized_testing.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_randomized_testing.patch) by @vbraun created at 2011-06-15 00:37:56\n\nInitial patch",
     "created_at": "2011-06-15T00:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97860",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9880_randomized_testing.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_randomized_testing.patch) by vbraun created at 2011-06-15 00:37:56
+Attachment [trac_9880_randomized_testing.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_randomized_testing.patch) by @vbraun created at 2011-06-15 00:37:56
 
 Initial patch
 
@@ -1467,7 +1467,7 @@ archive/issue_comments_097861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97861",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1489,7 +1489,7 @@ archive/issue_comments_097862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97862",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1502,16 +1502,16 @@ updated JP's patch for sage library to work with the new order patches
 archive/issue_comments_097863.json:
 ```json
 {
-    "body": "Attachment [trac_9880_pynac_order.take2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order.take2.patch) by burcin created at 2011-06-16 19:48:35",
+    "body": "Attachment [trac_9880_pynac_order.take2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order.take2.patch) by @burcin created at 2011-06-16 19:48:35",
     "created_at": "2011-06-16T19:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97863",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880_pynac_order.take2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order.take2.patch) by burcin created at 2011-06-16 19:48:35
+Attachment [trac_9880_pynac_order.take2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order.take2.patch) by @burcin created at 2011-06-16 19:48:35
 
 
 
@@ -1520,16 +1520,16 @@ Attachment [trac_9880_pynac_order.take2.patch](tarball://root/attachments/some-u
 archive/issue_comments_097864.json:
 ```json
 {
-    "body": "Attachment [trac_9880-stable_operands.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-stable_operands.patch) by burcin created at 2011-06-16 19:50:34",
+    "body": "Attachment [trac_9880-stable_operands.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-stable_operands.patch) by @burcin created at 2011-06-16 19:50:34",
     "created_at": "2011-06-16T19:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97864",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-stable_operands.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-stable_operands.patch) by burcin created at 2011-06-16 19:50:34
+Attachment [trac_9880-stable_operands.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-stable_operands.patch) by @burcin created at 2011-06-16 19:50:34
 
 
 
@@ -1543,7 +1543,7 @@ archive/issue_comments_097865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97865",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1561,7 +1561,7 @@ archive/issue_comments_097866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97866",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1583,16 +1583,16 @@ Then a lot of doctests need to get fixed. We also need to document that `.find()
 archive/issue_comments_097867.json:
 ```json
 {
-    "body": "Attachment [trac_9880-fix_comparison.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_comparison.patch) by vbraun created at 2011-06-17 19:06:30\n\nInitial patch",
+    "body": "Attachment [trac_9880-fix_comparison.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_comparison.patch) by @vbraun created at 2011-06-17 19:06:30\n\nInitial patch",
     "created_at": "2011-06-17T19:06:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97867",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9880-fix_comparison.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_comparison.patch) by vbraun created at 2011-06-17 19:06:30
+Attachment [trac_9880-fix_comparison.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_comparison.patch) by @vbraun created at 2011-06-17 19:06:30
 
 Initial patch
 
@@ -1608,7 +1608,7 @@ archive/issue_comments_097868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97868",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1626,16 +1626,16 @@ sage: x._cmp_add(1)
 archive/issue_comments_097869.json:
 ```json
 {
-    "body": "Attachment [trac_9880_pynac_infinities.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_infinities.patch) by vbraun created at 2011-06-17 19:37:05\n\nFixed commit message.",
+    "body": "Attachment [trac_9880_pynac_infinities.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_infinities.patch) by @vbraun created at 2011-06-17 19:37:05\n\nFixed commit message.",
     "created_at": "2011-06-17T19:37:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97869",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9880_pynac_infinities.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_infinities.patch) by vbraun created at 2011-06-17 19:37:05
+Attachment [trac_9880_pynac_infinities.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_infinities.patch) by @vbraun created at 2011-06-17 19:37:05
 
 Fixed commit message.
 
@@ -1651,7 +1651,7 @@ archive/issue_comments_097870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97870",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1664,16 +1664,16 @@ Initial patch
 archive/issue_comments_097871.json:
 ```json
 {
-    "body": "Attachment [trac_9880-fix_doctests_symbolic.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests_symbolic.patch) by vbraun created at 2011-06-18 03:14:09\n\nThe `trac_9880-fix_doctests_symbolic.patch` fixes the bulk of the doctests in `sage.symbolic.expression.pyx` and `sage.symbolic.random_tests.py`. There are a few remaining that depend on a random sign in the print output that Burcin is fixing right now.",
+    "body": "Attachment [trac_9880-fix_doctests_symbolic.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests_symbolic.patch) by @vbraun created at 2011-06-18 03:14:09\n\nThe `trac_9880-fix_doctests_symbolic.patch` fixes the bulk of the doctests in `sage.symbolic.expression.pyx` and `sage.symbolic.random_tests.py`. There are a few remaining that depend on a random sign in the print output that Burcin is fixing right now.",
     "created_at": "2011-06-18T03:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97871",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9880-fix_doctests_symbolic.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests_symbolic.patch) by vbraun created at 2011-06-18 03:14:09
+Attachment [trac_9880-fix_doctests_symbolic.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests_symbolic.patch) by @vbraun created at 2011-06-18 03:14:09
 
 The `trac_9880-fix_doctests_symbolic.patch` fixes the bulk of the doctests in `sage.symbolic.expression.pyx` and `sage.symbolic.random_tests.py`. There are a few remaining that depend on a random sign in the print output that Burcin is fixing right now.
 
@@ -1689,7 +1689,7 @@ archive/issue_comments_097872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97872",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1720,7 +1720,7 @@ archive/issue_comments_097873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97873",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -1838,7 +1838,7 @@ archive/issue_comments_097877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97877",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2066,16 +2066,16 @@ Got:
 archive/issue_comments_097888.json:
 ```json
 {
-    "body": "Attachment [trac_9880-fix_doctests-be.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.patch) by burcin created at 2011-11-25 16:48:47",
+    "body": "Attachment [trac_9880-fix_doctests-be.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.patch) by @burcin created at 2011-11-25 16:48:47",
     "created_at": "2011-11-25T16:48:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97888",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-fix_doctests-be.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.patch) by burcin created at 2011-11-25 16:48:47
+Attachment [trac_9880-fix_doctests-be.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.patch) by @burcin created at 2011-11-25 16:48:47
 
 
 
@@ -2089,7 +2089,7 @@ archive/issue_comments_097889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97889",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2154,7 +2154,7 @@ archive/issue_comments_097891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97891",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2171,16 +2171,16 @@ Naturally the doctest patches, the last two in the list, have bitrotted. The res
 archive/issue_comments_097892.json:
 ```json
 {
-    "body": "Attachment [trac_9880_pynac_order.take2.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order.take2.rebased-5.5.rc0.patch) by burcin created at 2012-11-21 21:12:31",
+    "body": "Attachment [trac_9880_pynac_order.take2.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order.take2.rebased-5.5.rc0.patch) by @burcin created at 2012-11-21 21:12:31",
     "created_at": "2012-11-21T21:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97892",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880_pynac_order.take2.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order.take2.rebased-5.5.rc0.patch) by burcin created at 2012-11-21 21:12:31
+Attachment [trac_9880_pynac_order.take2.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order.take2.rebased-5.5.rc0.patch) by @burcin created at 2012-11-21 21:12:31
 
 
 
@@ -2189,16 +2189,16 @@ Attachment [trac_9880_pynac_order.take2.rebased-5.5.rc0.patch](tarball://root/at
 archive/issue_comments_097893.json:
 ```json
 {
-    "body": "Attachment [trac_9880-stable_operands.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-stable_operands.rebased-5.5.rc0.patch) by burcin created at 2012-11-21 21:12:50",
+    "body": "Attachment [trac_9880-stable_operands.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-stable_operands.rebased-5.5.rc0.patch) by @burcin created at 2012-11-21 21:12:50",
     "created_at": "2012-11-21T21:12:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97893",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-stable_operands.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-stable_operands.rebased-5.5.rc0.patch) by burcin created at 2012-11-21 21:12:50
+Attachment [trac_9880-stable_operands.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-stable_operands.rebased-5.5.rc0.patch) by @burcin created at 2012-11-21 21:12:50
 
 
 
@@ -2207,16 +2207,16 @@ Attachment [trac_9880-stable_operands.rebased-5.5.rc0.patch](tarball://root/atta
 archive/issue_comments_097894.json:
 ```json
 {
-    "body": "Attachment [trac_9880-fix_doctests_symbolic.take2.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests_symbolic.take2.rebased-5.5.rc0.patch) by burcin created at 2012-11-21 21:13:33",
+    "body": "Attachment [trac_9880-fix_doctests_symbolic.take2.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests_symbolic.take2.rebased-5.5.rc0.patch) by @burcin created at 2012-11-21 21:13:33",
     "created_at": "2012-11-21T21:13:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97894",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-fix_doctests_symbolic.take2.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests_symbolic.take2.rebased-5.5.rc0.patch) by burcin created at 2012-11-21 21:13:33
+Attachment [trac_9880-fix_doctests_symbolic.take2.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests_symbolic.take2.rebased-5.5.rc0.patch) by @burcin created at 2012-11-21 21:13:33
 
 
 
@@ -2225,16 +2225,16 @@ Attachment [trac_9880-fix_doctests_symbolic.take2.rebased-5.5.rc0.patch](tarball
 archive/issue_comments_097895.json:
 ```json
 {
-    "body": "Attachment [trac_9880-fix_doctests-be.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.rebased-5.5.rc0.patch) by burcin created at 2012-11-21 21:26:02\n\nI rebased the patches to Sage 5.5.rc0, dropping doctest fixes that resulted in nontrivial conflicts on the way.\n\nVolker's [attachment:trac_9880_fix_import.patch] is now on #13737.\n\nMy Sage patch queue contains Pynac 0.2.6 associated patches from #13262, #13609, #13587. The patches on this ticket might apply cleanly without those, I haven't tried.",
+    "body": "Attachment [trac_9880-fix_doctests-be.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.rebased-5.5.rc0.patch) by @burcin created at 2012-11-21 21:26:02\n\nI rebased the patches to Sage 5.5.rc0, dropping doctest fixes that resulted in nontrivial conflicts on the way.\n\nVolker's [attachment:trac_9880_fix_import.patch] is now on #13737.\n\nMy Sage patch queue contains Pynac 0.2.6 associated patches from #13262, #13609, #13587. The patches on this ticket might apply cleanly without those, I haven't tried.",
     "created_at": "2012-11-21T21:26:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97895",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-fix_doctests-be.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.rebased-5.5.rc0.patch) by burcin created at 2012-11-21 21:26:02
+Attachment [trac_9880-fix_doctests-be.rebased-5.5.rc0.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.rebased-5.5.rc0.patch) by @burcin created at 2012-11-21 21:26:02
 
 I rebased the patches to Sage 5.5.rc0, dropping doctest fixes that resulted in nontrivial conflicts on the way.
 
@@ -2249,16 +2249,16 @@ My Sage patch queue contains Pynac 0.2.6 associated patches from #13262, #13609,
 archive/issue_comments_097896.json:
 ```json
 {
-    "body": "Attachment [trac_9880-doctest_for_9046-rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-doctest_for_9046-rebased-5.9.patch) by burcin created at 2013-05-07 16:48:56",
+    "body": "Attachment [trac_9880-doctest_for_9046-rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-doctest_for_9046-rebased-5.9.patch) by @burcin created at 2013-05-07 16:48:56",
     "created_at": "2013-05-07T16:48:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97896",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-doctest_for_9046-rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-doctest_for_9046-rebased-5.9.patch) by burcin created at 2013-05-07 16:48:56
+Attachment [trac_9880-doctest_for_9046-rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-doctest_for_9046-rebased-5.9.patch) by @burcin created at 2013-05-07 16:48:56
 
 
 
@@ -2267,16 +2267,16 @@ Attachment [trac_9880-doctest_for_9046-rebased-5.9.patch](tarball://root/attachm
 archive/issue_comments_097897.json:
 ```json
 {
-    "body": "Attachment [trac_9880-fix_doctests_symbolic.take2.rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests_symbolic.take2.rebased-5.9.patch) by burcin created at 2013-05-07 16:49:36",
+    "body": "Attachment [trac_9880-fix_doctests_symbolic.take2.rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests_symbolic.take2.rebased-5.9.patch) by @burcin created at 2013-05-07 16:49:36",
     "created_at": "2013-05-07T16:49:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97897",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-fix_doctests_symbolic.take2.rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests_symbolic.take2.rebased-5.9.patch) by burcin created at 2013-05-07 16:49:36
+Attachment [trac_9880-fix_doctests_symbolic.take2.rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests_symbolic.take2.rebased-5.9.patch) by @burcin created at 2013-05-07 16:49:36
 
 
 
@@ -2285,16 +2285,16 @@ Attachment [trac_9880-fix_doctests_symbolic.take2.rebased-5.9.patch](tarball://r
 archive/issue_comments_097898.json:
 ```json
 {
-    "body": "Attachment [trac_9880-fix_doctests-be.rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.rebased-5.9.patch) by burcin created at 2013-05-07 16:56:37\n\nI rebased the patches to 5.9.\n\nHere is an example where `minpoly()` does not terminate:\n\n\n```\nsage: var('x')\nx\nsage: eqn =  x^3 + sqrt(2)*x + 5 == 0\nsage: a = solve(eqn, x)[0].rhs()\nsage: a\n-1/2*(1/18*sqrt(3)*sqrt(8*sqrt(2) + 675) - 5/2)^(1/3)*(I*sqrt(3) + 1) - 1/6*sqrt(2)*(I*sqrt(3) - 1)/(1/18*sqrt(3)*sqrt(8*sqrt(2) + 675) - 5/2)^(1/3)\nsage: QQ[a]\n```\n\nor \n\n```\nsage: a.minpoly()\n```\n",
+    "body": "Attachment [trac_9880-fix_doctests-be.rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.rebased-5.9.patch) by @burcin created at 2013-05-07 16:56:37\n\nI rebased the patches to 5.9.\n\nHere is an example where `minpoly()` does not terminate:\n\n\n```\nsage: var('x')\nx\nsage: eqn =  x^3 + sqrt(2)*x + 5 == 0\nsage: a = solve(eqn, x)[0].rhs()\nsage: a\n-1/2*(1/18*sqrt(3)*sqrt(8*sqrt(2) + 675) - 5/2)^(1/3)*(I*sqrt(3) + 1) - 1/6*sqrt(2)*(I*sqrt(3) - 1)/(1/18*sqrt(3)*sqrt(8*sqrt(2) + 675) - 5/2)^(1/3)\nsage: QQ[a]\n```\n\nor \n\n```\nsage: a.minpoly()\n```\n",
     "created_at": "2013-05-07T16:56:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97898",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-fix_doctests-be.rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.rebased-5.9.patch) by burcin created at 2013-05-07 16:56:37
+Attachment [trac_9880-fix_doctests-be.rebased-5.9.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be.rebased-5.9.patch) by @burcin created at 2013-05-07 16:56:37
 
 I rebased the patches to 5.9.
 
@@ -2325,16 +2325,16 @@ sage: a.minpoly()
 archive/issue_comments_097899.json:
 ```json
 {
-    "body": "Attachment [trac_9880-fix_doctests-be-rebased-5.9-on_13213.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be-rebased-5.9-on_13213.patch) by burcin created at 2013-05-09 16:15:10",
+    "body": "Attachment [trac_9880-fix_doctests-be-rebased-5.9-on_13213.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be-rebased-5.9-on_13213.patch) by @burcin created at 2013-05-09 16:15:10",
     "created_at": "2013-05-09T16:15:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97899",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-fix_doctests-be-rebased-5.9-on_13213.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be-rebased-5.9-on_13213.patch) by burcin created at 2013-05-09 16:15:10
+Attachment [trac_9880-fix_doctests-be-rebased-5.9-on_13213.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-be-rebased-5.9-on_13213.patch) by @burcin created at 2013-05-09 16:15:10
 
 
 
@@ -2343,16 +2343,16 @@ Attachment [trac_9880-fix_doctests-be-rebased-5.9-on_13213.patch](tarball://root
 archive/issue_comments_097900.json:
 ```json
 {
-    "body": "Attachment [trac_9880-more_doctests-be.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-more_doctests-be.patch) by burcin created at 2013-05-09 16:28:04\n\nI think this is finally good to be tested.\n\nThere is a new Pynac spkg (it's just for testing) and updated patches on this ticket. I'm working with vanilla 5.9. Note that this ticket now depends on #13213 for the fixes to the quadratic number field ordering.\n\nPlease test and report results.",
+    "body": "Attachment [trac_9880-more_doctests-be.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-more_doctests-be.patch) by @burcin created at 2013-05-09 16:28:04\n\nI think this is finally good to be tested.\n\nThere is a new Pynac spkg (it's just for testing) and updated patches on this ticket. I'm working with vanilla 5.9. Note that this ticket now depends on #13213 for the fixes to the quadratic number field ordering.\n\nPlease test and report results.",
     "created_at": "2013-05-09T16:28:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97900",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-more_doctests-be.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-more_doctests-be.patch) by burcin created at 2013-05-09 16:28:04
+Attachment [trac_9880-more_doctests-be.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-more_doctests-be.patch) by @burcin created at 2013-05-09 16:28:04
 
 I think this is finally good to be tested.
 
@@ -2392,16 +2392,16 @@ I guess what's left to do is:
 archive/issue_comments_097902.json:
 ```json
 {
-    "body": "Attachment [trac_9880_pynac_order-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order-sage_5_10_beta2.patch) by burcin created at 2013-05-10 17:03:00",
+    "body": "Attachment [trac_9880_pynac_order-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order-sage_5_10_beta2.patch) by @burcin created at 2013-05-10 17:03:00",
     "created_at": "2013-05-10T17:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97902",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880_pynac_order-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order-sage_5_10_beta2.patch) by burcin created at 2013-05-10 17:03:00
+Attachment [trac_9880_pynac_order-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_pynac_order-sage_5_10_beta2.patch) by @burcin created at 2013-05-10 17:03:00
 
 
 
@@ -2410,16 +2410,16 @@ Attachment [trac_9880_pynac_order-sage_5_10_beta2.patch](tarball://root/attachme
 archive/issue_comments_097903.json:
 ```json
 {
-    "body": "Attachment [trac_9880_randomized_testing-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_randomized_testing-sage_5_10_beta2.patch) by burcin created at 2013-05-10 17:03:19",
+    "body": "Attachment [trac_9880_randomized_testing-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_randomized_testing-sage_5_10_beta2.patch) by @burcin created at 2013-05-10 17:03:19",
     "created_at": "2013-05-10T17:03:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97903",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880_randomized_testing-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_randomized_testing-sage_5_10_beta2.patch) by burcin created at 2013-05-10 17:03:19
+Attachment [trac_9880_randomized_testing-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880_randomized_testing-sage_5_10_beta2.patch) by @burcin created at 2013-05-10 17:03:19
 
 
 
@@ -2428,16 +2428,16 @@ Attachment [trac_9880_randomized_testing-sage_5_10_beta2.patch](tarball://root/a
 archive/issue_comments_097904.json:
 ```json
 {
-    "body": "Attachment [trac_9880-doctest_for_9046-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-doctest_for_9046-sage_5_10_beta2.patch) by burcin created at 2013-05-10 17:03:36",
+    "body": "Attachment [trac_9880-doctest_for_9046-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-doctest_for_9046-sage_5_10_beta2.patch) by @burcin created at 2013-05-10 17:03:36",
     "created_at": "2013-05-10T17:03:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97904",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-doctest_for_9046-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-doctest_for_9046-sage_5_10_beta2.patch) by burcin created at 2013-05-10 17:03:36
+Attachment [trac_9880-doctest_for_9046-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-doctest_for_9046-sage_5_10_beta2.patch) by @burcin created at 2013-05-10 17:03:36
 
 
 
@@ -2446,16 +2446,16 @@ Attachment [trac_9880-doctest_for_9046-sage_5_10_beta2.patch](tarball://root/att
 archive/issue_comments_097905.json:
 ```json
 {
-    "body": "Attachment [trac_9880-add_doctests-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-add_doctests-sage_5_10_beta2.patch) by burcin created at 2013-05-10 17:04:15",
+    "body": "Attachment [trac_9880-add_doctests-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-add_doctests-sage_5_10_beta2.patch) by @burcin created at 2013-05-10 17:04:15",
     "created_at": "2013-05-10T17:04:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97905",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-add_doctests-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-add_doctests-sage_5_10_beta2.patch) by burcin created at 2013-05-10 17:04:15
+Attachment [trac_9880-add_doctests-sage_5_10_beta2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-add_doctests-sage_5_10_beta2.patch) by @burcin created at 2013-05-10 17:04:15
 
 
 
@@ -2469,7 +2469,7 @@ archive/issue_comments_097906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97906",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2487,7 +2487,7 @@ archive/issue_comments_097907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97907",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2512,7 +2512,7 @@ archive/issue_comments_097908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97908",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -2564,7 +2564,7 @@ archive/issue_comments_097910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97910",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2632,7 +2632,7 @@ archive/issue_comments_097912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97912",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -2657,16 +2657,16 @@ Paul
 archive/issue_comments_097913.json:
 ```json
 {
-    "body": "Attachment [trac_9880-fix_doctests-sage_5_10_beta2.take2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-sage_5_10_beta2.take2.patch) by burcin created at 2013-05-23 11:11:05",
+    "body": "Attachment [trac_9880-fix_doctests-sage_5_10_beta2.take2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-sage_5_10_beta2.take2.patch) by @burcin created at 2013-05-23 11:11:05",
     "created_at": "2013-05-23T11:11:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97913",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-fix_doctests-sage_5_10_beta2.take2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-sage_5_10_beta2.take2.patch) by burcin created at 2013-05-23 11:11:05
+Attachment [trac_9880-fix_doctests-sage_5_10_beta2.take2.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-sage_5_10_beta2.take2.patch) by @burcin created at 2013-05-23 11:11:05
 
 
 
@@ -2680,7 +2680,7 @@ archive/issue_comments_097914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97914",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2735,7 +2735,7 @@ archive/issue_comments_097916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97916",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2798,7 +2798,7 @@ archive/issue_comments_097918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97918",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -2898,7 +2898,7 @@ archive/issue_comments_097923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97923",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -3009,7 +3009,7 @@ archive/issue_comments_097929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97929",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -3027,7 +3027,7 @@ archive/issue_comments_097930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97930",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -3045,7 +3045,7 @@ archive/issue_comments_097931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97931",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -3063,7 +3063,7 @@ archive/issue_comments_097932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97932",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -3084,7 +3084,7 @@ archive/issue_comments_097933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97933",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -3102,7 +3102,7 @@ archive/issue_comments_097934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97934",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -3115,16 +3115,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_097935.json:
 ```json
 {
-    "body": "Attachment [trac_9880-fix_doctests-sage_5_10_beta2.take3.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-sage_5_10_beta2.take3.patch) by burcin created at 2013-05-29 12:56:44\n\nReplying to [comment:94 jdemeyer]:\n> Please rebase to #9890 (the latest patch applies with fuzz 2).\n\nDone.",
+    "body": "Attachment [trac_9880-fix_doctests-sage_5_10_beta2.take3.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-sage_5_10_beta2.take3.patch) by @burcin created at 2013-05-29 12:56:44\n\nReplying to [comment:94 jdemeyer]:\n> Please rebase to #9890 (the latest patch applies with fuzz 2).\n\nDone.",
     "created_at": "2013-05-29T12:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97935",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9880-fix_doctests-sage_5_10_beta2.take3.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-sage_5_10_beta2.take3.patch) by burcin created at 2013-05-29 12:56:44
+Attachment [trac_9880-fix_doctests-sage_5_10_beta2.take3.patch](tarball://root/attachments/some-uuid/ticket9880/trac_9880-fix_doctests-sage_5_10_beta2.take3.patch) by @burcin created at 2013-05-29 12:56:44
 
 Replying to [comment:94 jdemeyer]:
 > Please rebase to #9890 (the latest patch applies with fuzz 2).
@@ -3143,7 +3143,7 @@ archive/issue_comments_097936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97936",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -3161,7 +3161,7 @@ archive/issue_comments_097937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9879#issuecomment-97937",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

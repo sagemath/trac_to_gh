@@ -3,7 +3,7 @@
 archive/issues_002583.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n```\nsage -t -long devel/sage/sage/plot/plot.py\n----------------------------------------------------------------------\nTotal time for all tests: 965.6 seconds\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py\nsage -t -long devel/sage-main/sage/plot/plot.py             **********************************************************************\nFile \"plot.py\", line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha0/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_118[17]>\", line 1, in <module>\n        networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=Integer(0))###line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\n    AttributeError: 'Graph' object has no attribute '_nxg'\n**********************************************************************\n1 items had failures:\n   1 of  18 in __main__.example_118\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_plot.py\n         [68.5 s]\nexit code: 256\n```\n\n\nAs a reminder: Ye Shall doctest the all of Sage before submitting any patch that changes fundamental things.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2583\n\n",
+    "body": "Assignee: @rlmill\n\n\n```\nsage -t -long devel/sage/sage/plot/plot.py\n----------------------------------------------------------------------\nTotal time for all tests: 965.6 seconds\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py\nsage -t -long devel/sage-main/sage/plot/plot.py             **********************************************************************\nFile \"plot.py\", line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha0/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_118[17]>\", line 1, in <module>\n        networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=Integer(0))###line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\n    AttributeError: 'Graph' object has no attribute '_nxg'\n**********************************************************************\n1 items had failures:\n   1 of  18 in __main__.example_118\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_plot.py\n         [68.5 s]\nexit code: 256\n```\n\n\nAs a reminder: Ye Shall doctest the all of Sage before submitting any patch that changes fundamental things.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2583\n\n",
     "created_at": "2008-03-18T11:27:43Z",
     "labels": [
         "graph theory",
@@ -17,7 +17,7 @@ archive/issues_002583.json:
     "user": "mabshoff"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 ```
@@ -63,16 +63,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2583
 archive/issue_comments_017674.json:
 ```json
 {
-    "body": "Attachment [2583.patch](tarball://root/attachments/some-uuid/ticket2583/2583.patch) by rlm created at 2008-03-18 13:32:20",
+    "body": "Attachment [2583.patch](tarball://root/attachments/some-uuid/ticket2583/2583.patch) by @rlmill created at 2008-03-18 13:32:20",
     "created_at": "2008-03-18T13:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17674",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [2583.patch](tarball://root/attachments/some-uuid/ticket2583/2583.patch) by rlm created at 2008-03-18 13:32:20
+Attachment [2583.patch](tarball://root/attachments/some-uuid/ticket2583/2583.patch) by @rlmill created at 2008-03-18 13:32:20
 
 
 

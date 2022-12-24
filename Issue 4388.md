@@ -3,7 +3,7 @@
 archive/issues_004388.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: EllipticCurve('11a').period_lattice().basis_matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 0.634604652139777 + 1.45881661693850*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4388\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: EllipticCurve('11a').period_lattice().basis_matrix()\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce 0.634604652139777 + 1.45881661693850*I (<type 'sage.rings.complex_number.ComplexNumber'>) to Rational\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4388\n\n",
     "created_at": "2008-10-30T05:15:58Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004388.json:
     "title": "elliptic curves: basis_matrix command totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4388",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -44,7 +44,7 @@ archive/issue_comments_032298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4388#issuecomment-32298",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_032299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4388#issuecomment-32299",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_032300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4388#issuecomment-32300",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -142,16 +142,16 @@ sage: L.complex_area()
 archive/issue_comments_032301.json:
 ```json
 {
-    "body": "Attachment [sage-trac4388.patch](tarball://root/attachments/some-uuid/ticket4388/sage-trac4388.patch) by cremona created at 2008-10-30 18:46:03",
+    "body": "Attachment [sage-trac4388.patch](tarball://root/attachments/some-uuid/ticket4388/sage-trac4388.patch) by @JohnCremona created at 2008-10-30 18:46:03",
     "created_at": "2008-10-30T18:46:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4388#issuecomment-32301",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac4388.patch](tarball://root/attachments/some-uuid/ticket4388/sage-trac4388.patch) by cremona created at 2008-10-30 18:46:03
+Attachment [sage-trac4388.patch](tarball://root/attachments/some-uuid/ticket4388/sage-trac4388.patch) by @JohnCremona created at 2008-10-30 18:46:03
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_032302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4388#issuecomment-32302",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_032303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4388#issuecomment-32303",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

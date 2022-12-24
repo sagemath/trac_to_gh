@@ -14,7 +14,7 @@ archive/issues_005977.json:
     "title": "Implement sage -clean-residues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5977",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: mabshoff
@@ -110,7 +110,7 @@ archive/issue_comments_047469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5977#issuecomment-47469",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_047470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5977#issuecomment-47470",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -143,16 +143,16 @@ apply to repo in $SAGE_LOCAL/bin
 archive/issue_comments_047471.json:
 ```json
 {
-    "body": "Attachment [trac-5977-bin.patch](tarball://root/attachments/some-uuid/ticket5977/trac-5977-bin.patch) by craigcitro created at 2009-05-27 07:17:44\n\nI've attached a patch to clean the build tree. It's really two patches: one for the `$SAGE_LOCAL/bin` repo, which has the actual functionality, and another for the main repo. \n\nThe patch for the main repo simply removes two top-level imports of `dsage` -- there are dsage files sitting in my build dir with no corresponding files in the source tree; if something is simply wrong with my build (actually, with both of the builds I checked), then I'm happy to change this. \n\nThe code itself should be fairly readable, I think. I've written a little script called `sage-sync-build`, which simply walks the `build` tree and looks for files that don't have a corresponding file in the source tree. If it finds any, it deletes them. After finishing each directory in `build/`, it deletes the directory if it's now empty.\n\nMostly for testing purposes, I gave this three command-line arguments:\n\n* `-p`: prune empty directories. (This is on by default, and passing `-p` turns it off.)\n\n* `-d`: dry run. If this is passed, simply mention what files it would delete.\n\n* `-v`: verbose. Print info about what it's doing.\n\nNOTES:\n\n* I tested this in my sage tree, and it seemed to work. Then I touched some filenames in `sage/` or `build/` appropriately, and it **seems** to do what I expect. However, if playing with the build system has taught me anything, there are surely tons of cases that I didn't anticipate. I'm happy to fix any bugs people run into.\n\n* I tried to be careful about using `os.path.sep` and `os.path.extsep` to compose the paths; I'm sure I slipped up somewhere. I've got a shiny nickel for the first person to spot a slip-up ... `:)`\n\n* I'm not wedded to any of the names, or the command-line arguments. I made up `sync-build` after about 20 seconds of thought, so feel free to say it's a silly name, and think of something better. \n\n* One more vague comment: I feel like we **should** be able to make distutils do this work for us. I spent about 5 minutes looking at documentation and source, and didn't see anything, but my search was by no means exhaustive. If anyone knows distutils better than I do, and has an idea, just let me know. I'd like to get back to putting the caching of dependencies back in place (#4651) soon, so I'll try and dig around more then.",
+    "body": "Attachment [trac-5977-bin.patch](tarball://root/attachments/some-uuid/ticket5977/trac-5977-bin.patch) by @craigcitro created at 2009-05-27 07:17:44\n\nI've attached a patch to clean the build tree. It's really two patches: one for the `$SAGE_LOCAL/bin` repo, which has the actual functionality, and another for the main repo. \n\nThe patch for the main repo simply removes two top-level imports of `dsage` -- there are dsage files sitting in my build dir with no corresponding files in the source tree; if something is simply wrong with my build (actually, with both of the builds I checked), then I'm happy to change this. \n\nThe code itself should be fairly readable, I think. I've written a little script called `sage-sync-build`, which simply walks the `build` tree and looks for files that don't have a corresponding file in the source tree. If it finds any, it deletes them. After finishing each directory in `build/`, it deletes the directory if it's now empty.\n\nMostly for testing purposes, I gave this three command-line arguments:\n\n* `-p`: prune empty directories. (This is on by default, and passing `-p` turns it off.)\n\n* `-d`: dry run. If this is passed, simply mention what files it would delete.\n\n* `-v`: verbose. Print info about what it's doing.\n\nNOTES:\n\n* I tested this in my sage tree, and it seemed to work. Then I touched some filenames in `sage/` or `build/` appropriately, and it **seems** to do what I expect. However, if playing with the build system has taught me anything, there are surely tons of cases that I didn't anticipate. I'm happy to fix any bugs people run into.\n\n* I tried to be careful about using `os.path.sep` and `os.path.extsep` to compose the paths; I'm sure I slipped up somewhere. I've got a shiny nickel for the first person to spot a slip-up ... `:)`\n\n* I'm not wedded to any of the names, or the command-line arguments. I made up `sync-build` after about 20 seconds of thought, so feel free to say it's a silly name, and think of something better. \n\n* One more vague comment: I feel like we **should** be able to make distutils do this work for us. I spent about 5 minutes looking at documentation and source, and didn't see anything, but my search was by no means exhaustive. If anyone knows distutils better than I do, and has an idea, just let me know. I'd like to get back to putting the caching of dependencies back in place (#4651) soon, so I'll try and dig around more then.",
     "created_at": "2009-05-27T07:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5977#issuecomment-47471",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-5977-bin.patch](tarball://root/attachments/some-uuid/ticket5977/trac-5977-bin.patch) by craigcitro created at 2009-05-27 07:17:44
+Attachment [trac-5977-bin.patch](tarball://root/attachments/some-uuid/ticket5977/trac-5977-bin.patch) by @craigcitro created at 2009-05-27 07:17:44
 
 I've attached a patch to clean the build tree. It's really two patches: one for the `$SAGE_LOCAL/bin` repo, which has the actual functionality, and another for the main repo. 
 
@@ -190,7 +190,7 @@ archive/issue_comments_047472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5977#issuecomment-47472",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_047473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5977#issuecomment-47473",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_047474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5977#issuecomment-47474",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -239,16 +239,16 @@ Changing status from new to assigned.
 archive/issue_comments_047475.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-05-28T04:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5977#issuecomment-47475",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -262,7 +262,7 @@ archive/issue_comments_047476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5977#issuecomment-47476",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_047477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5977#issuecomment-47477",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_047478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5977",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5977#issuecomment-47478",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

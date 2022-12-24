@@ -3,7 +3,7 @@
 archive/issues_006543.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: tachyon, graphics, 3d, raytracer\n\nCurrently tachyon is hardly documented or doctested at all, which is bad.  I (Marshall Hampton) will try to work on bringing it up to 100% coverage within the next month or so.  If someone wants to beat me to it, please let me know.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6543\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: tachyon, graphics, 3d, raytracer\n\nCurrently tachyon is hardly documented or doctested at all, which is bad.  I (Marshall Hampton) will try to work on bringing it up to 100% coverage within the next month or so.  If someone wants to beat me to it, please let me know.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6543\n\n",
     "created_at": "2009-07-16T18:24:18Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_006543.json:
     "user": "mhampton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: tachyon, graphics, 3d, raytracer
 
@@ -92,7 +92,7 @@ I have brought coverage to 100%, and also added some functionality like axis-ali
 archive/issue_comments_053346.json:
 ```json
 {
-    "body": "Changing assignee from was to mhampton.",
+    "body": "Changing assignee from @williamstein to mhampton.",
     "created_at": "2009-07-23T03:21:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6543",
     "type": "issue_comment",
@@ -101,7 +101,7 @@ archive/issue_comments_053346.json:
 }
 ```
 
-Changing assignee from was to mhampton.
+Changing assignee from @williamstein to mhampton.
 
 
 
@@ -326,7 +326,7 @@ archive/issue_comments_053351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6543#issuecomment-53351",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_053356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6543#issuecomment-53356",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_053357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6543#issuecomment-53357",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_053358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6543",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6543#issuecomment-53358",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

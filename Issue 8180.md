@@ -3,7 +3,7 @@
 archive/issues_008180.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  mvngu jsp\n\nMinh created a 4.3.0.1.alpha3 which should have really been called 4.3.0.2.alpha3, as it was based on the 4.3.0.1 sources, with patches applied. It was  created to sort out what broke the Sage build between 4.3.0 and 4.3.1. \n\nThe previous version, 4.3.0.1.alpha2 did not have this issue, but 4.3.0.1.alpha3 is reporting the error message about kpsewhich is not found. From what I can gather, this kpsewhich is part of Latex. Since Latex is not a requirement to build Sage, this error should not be happening. It would appear one of the following patches is causing this, though none of them look as though they are likely to caused the problem. \n\n#5174, #1321, #6595, #6820, #6965\n\n\nBut these are the only patches applied between a version which did not generate the error, and one which does. \n\n\n```\nUpon loading this alpha3, it now shows that kpsewhich is not found:\n\n[mvngu@t2 sage-4.3.0.1.alpha3-32-bit-t2.math-gcc]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsh: kpsewhich: not found\nsh: kpsewhich: not found\nsage: 2 + 3\n5\n```\n\n| Sage Version 4.3.0.1.alpha3, Release Date: 2010-01-28              |\n| Type notebook() for the GUI, and license() for information.        |\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/8180\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  mvngu @jaapspies\n\nMinh created a 4.3.0.1.alpha3 which should have really been called 4.3.0.2.alpha3, as it was based on the 4.3.0.1 sources, with patches applied. It was  created to sort out what broke the Sage build between 4.3.0 and 4.3.1. \n\nThe previous version, 4.3.0.1.alpha2 did not have this issue, but 4.3.0.1.alpha3 is reporting the error message about kpsewhich is not found. From what I can gather, this kpsewhich is part of Latex. Since Latex is not a requirement to build Sage, this error should not be happening. It would appear one of the following patches is causing this, though none of them look as though they are likely to caused the problem. \n\n#5174, #1321, #6595, #6820, #6965\n\n\nBut these are the only patches applied between a version which did not generate the error, and one which does. \n\n\n```\nUpon loading this alpha3, it now shows that kpsewhich is not found:\n\n[mvngu@t2 sage-4.3.0.1.alpha3-32-bit-t2.math-gcc]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsh: kpsewhich: not found\nsh: kpsewhich: not found\nsage: 2 + 3\n5\n```\n\n| Sage Version 4.3.0.1.alpha3, Release Date: 2010-01-28              |\n| Type notebook() for the GUI, and license() for information.        |\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/8180\n\n",
     "created_at": "2010-02-03T20:06:36Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_008180.json:
 ```
 Assignee: drkirkby
 
-CC:  mvngu jsp
+CC:  mvngu @jaapspies
 
 Minh created a 4.3.0.1.alpha3 which should have really been called 4.3.0.2.alpha3, as it was based on the 4.3.0.1 sources, with patches applied. It was  created to sort out what broke the Sage build between 4.3.0 and 4.3.1. 
 
@@ -68,7 +68,7 @@ archive/issue_comments_072089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8180#issuecomment-72089",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_072090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8180#issuecomment-72090",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_072091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8180#issuecomment-72091",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -138,16 +138,16 @@ Here's a patch which does fix the problem, I think.
 archive/issue_comments_072092.json:
 ```json
 {
-    "body": "Attachment [trac_8180-kpsewhich.patch](tarball://root/attachments/some-uuid/ticket8180/trac_8180-kpsewhich.patch) by was created at 2010-02-04 02:57:57",
+    "body": "Attachment [trac_8180-kpsewhich.patch](tarball://root/attachments/some-uuid/ticket8180/trac_8180-kpsewhich.patch) by @williamstein created at 2010-02-04 02:57:57",
     "created_at": "2010-02-04T02:57:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8180#issuecomment-72092",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8180-kpsewhich.patch](tarball://root/attachments/some-uuid/ticket8180/trac_8180-kpsewhich.patch) by was created at 2010-02-04 02:57:57
+Attachment [trac_8180-kpsewhich.patch](tarball://root/attachments/some-uuid/ticket8180/trac_8180-kpsewhich.patch) by @williamstein created at 2010-02-04 02:57:57
 
 
 
@@ -161,7 +161,7 @@ archive/issue_comments_072093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8180#issuecomment-72093",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_072094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8180#issuecomment-72094",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002296.json:
     "title": "setup.py -- another issue with cython dependency checking",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2296",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -102,7 +102,7 @@ archive/issue_comments_015228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2296#issuecomment-15228",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_015229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2296",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2296#issuecomment-15229",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

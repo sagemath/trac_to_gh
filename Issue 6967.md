@@ -14,7 +14,7 @@ archive/issues_006967.json:
     "title": "@parallel -- dramatically improve by rewriting with fork directly, using files, timeouts, controlling interfaces, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6967",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -37,7 +37,7 @@ archive/issue_comments_057637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6967#issuecomment-57637",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ first usable version
 archive/issue_comments_057638.json:
 ```json
 {
-    "body": "Attachment [trac_6967-part1.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part1.patch) by was created at 2009-09-20 11:16:01",
+    "body": "Attachment [trac_6967-part1.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part1.patch) by @williamstein created at 2009-09-20 11:16:01",
     "created_at": "2009-09-20T11:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6967#issuecomment-57638",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6967-part1.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part1.patch) by was created at 2009-09-20 11:16:01
+Attachment [trac_6967-part1.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part1.patch) by @williamstein created at 2009-09-20 11:16:01
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_057639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6967#issuecomment-57639",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_057640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6967#issuecomment-57640",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_057641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6967#issuecomment-57641",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_057642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6967#issuecomment-57642",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_057643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6967#issuecomment-57643",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -158,16 +158,16 @@ This also fixes a very serious bug in sage.interfaces.quit which will lead to zo
 archive/issue_comments_057644.json:
 ```json
 {
-    "body": "Attachment [trac_6967-part2.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part2.patch) by was created at 2010-01-18 12:30:34",
+    "body": "Attachment [trac_6967-part2.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part2.patch) by @williamstein created at 2010-01-18 12:30:34",
     "created_at": "2010-01-18T12:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6967#issuecomment-57644",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6967-part2.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part2.patch) by was created at 2010-01-18 12:30:34
+Attachment [trac_6967-part2.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part2.patch) by @williamstein created at 2010-01-18 12:30:34
 
 
 
@@ -176,16 +176,16 @@ Attachment [trac_6967-part2.patch](tarball://root/attachments/some-uuid/ticket69
 archive/issue_comments_057645.json:
 ```json
 {
-    "body": "Attachment [trac_6967-part3.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part3.patch) by was created at 2010-01-18 13:51:42",
+    "body": "Attachment [trac_6967-part3.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part3.patch) by @williamstein created at 2010-01-18 13:51:42",
     "created_at": "2010-01-18T13:51:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6967#issuecomment-57645",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6967-part3.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part3.patch) by was created at 2010-01-18 13:51:42
+Attachment [trac_6967-part3.patch](tarball://root/attachments/some-uuid/ticket6967/trac_6967-part3.patch) by @williamstein created at 2010-01-18 13:51:42
 
 
 
@@ -199,7 +199,7 @@ archive/issue_comments_057646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6967#issuecomment-57646",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_057647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6967#issuecomment-57647",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_057648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6967#issuecomment-57648",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

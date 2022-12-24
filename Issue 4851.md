@@ -14,7 +14,7 @@ archive/issues_004851.json:
     "title": "infinite recursion with encoding entities for worksheet titles with apostrophes, etc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4851",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: boothby
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4851
 archive/issue_comments_036780.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-19T08:04:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4851#issuecomment-36780",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_036781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4851#issuecomment-36781",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -86,16 +86,16 @@ Changing status from new to assigned.
 archive/issue_comments_036782.json:
 ```json
 {
-    "body": "Attachment [trac_4851.patch](tarball://root/attachments/some-uuid/ticket4851/trac_4851.patch) by ddrake created at 2009-01-19 08:34:25\n\nThe code looks good, and the reported problem is fixed. I give this a positive review provided that a doctest gets added, or a test in the Selenium test suite is added.",
+    "body": "Attachment [trac_4851.patch](tarball://root/attachments/some-uuid/ticket4851/trac_4851.patch) by @dandrake created at 2009-01-19 08:34:25\n\nThe code looks good, and the reported problem is fixed. I give this a positive review provided that a doctest gets added, or a test in the Selenium test suite is added.",
     "created_at": "2009-01-19T08:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4851#issuecomment-36782",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_4851.patch](tarball://root/attachments/some-uuid/ticket4851/trac_4851.patch) by ddrake created at 2009-01-19 08:34:25
+Attachment [trac_4851.patch](tarball://root/attachments/some-uuid/ticket4851/trac_4851.patch) by @dandrake created at 2009-01-19 08:34:25
 
 The code looks good, and the reported problem is fixed. I give this a positive review provided that a doctest gets added, or a test in the Selenium test suite is added.
 

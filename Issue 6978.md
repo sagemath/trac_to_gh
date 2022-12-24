@@ -14,7 +14,7 @@ archive/issues_006978.json:
     "title": "[patch, needs review] fixes matplotlib to compile in cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6978",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_057707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6978#issuecomment-57707",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_057708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6978#issuecomment-57708",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_057709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6978#issuecomment-57709",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_057710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6978",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6978#issuecomment-57710",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

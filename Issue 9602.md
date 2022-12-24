@@ -3,7 +3,7 @@
 archive/issues_009602.json:
 ```json
 {
-    "body": "Assignee: pjeremy\n\ngap sysfiles.c is very host-dependent.  Current code includes a mixture of SYS_xxx and HAVE_xxx_H tests.  Whilst SYS_BSD might appear logical for FreeBSD, there is no testing for this, and recent FreeBSD variants support termios.h.\n\nThe attached patches (mostly taken from the FreeBSD port) add tests for HAVE_TERMIOS_H to make gap compile on FreeBSD 8.x.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9602\n\n",
+    "body": "Assignee: @peterjeremy\n\ngap sysfiles.c is very host-dependent.  Current code includes a mixture of SYS_xxx and HAVE_xxx_H tests.  Whilst SYS_BSD might appear logical for FreeBSD, there is no testing for this, and recent FreeBSD variants support termios.h.\n\nThe attached patches (mostly taken from the FreeBSD port) add tests for HAVE_TERMIOS_H to make gap compile on FreeBSD 8.x.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9602\n\n",
     "created_at": "2010-07-26T11:22:14Z",
     "labels": [
         "porting: BSD",
@@ -14,10 +14,10 @@ archive/issues_009602.json:
     "title": "Fix gap on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9602",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: pjeremy
+Assignee: @peterjeremy
 
 gap sysfiles.c is very host-dependent.  Current code includes a mixture of SYS_xxx and HAVE_xxx_H tests.  Whilst SYS_BSD might appear logical for FreeBSD, there is no testing for this, and recent FreeBSD variants support termios.h.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9602
 archive/issue_comments_092938.json:
 ```json
 {
-    "body": "Attachment [gap-4.4.12.p4.patch](tarball://root/attachments/some-uuid/ticket9602/gap-4.4.12.p4.patch) by kcrisman created at 2012-01-31 01:48:26\n\nStephen Montgomery-Smith has successfully compiled with a very similar (identical?) patch, attached.",
+    "body": "Attachment [gap-4.4.12.p4.patch](tarball://root/attachments/some-uuid/ticket9602/gap-4.4.12.p4.patch) by @kcrisman created at 2012-01-31 01:48:26\n\nStephen Montgomery-Smith has successfully compiled with a very similar (identical?) patch, attached.",
     "created_at": "2012-01-31T01:48:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9602#issuecomment-92938",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [gap-4.4.12.p4.patch](tarball://root/attachments/some-uuid/ticket9602/gap-4.4.12.p4.patch) by kcrisman created at 2012-01-31 01:48:26
+Attachment [gap-4.4.12.p4.patch](tarball://root/attachments/some-uuid/ticket9602/gap-4.4.12.p4.patch) by @kcrisman created at 2012-01-31 01:48:26
 
 Stephen Montgomery-Smith has successfully compiled with a very similar (identical?) patch, attached.
 
@@ -54,16 +54,16 @@ Stephen Montgomery-Smith has successfully compiled with a very similar (identica
 archive/issue_comments_092939.json:
 ```json
 {
-    "body": "Attachment [spkg-patch-gap-4.4.12.p6](tarball://root/attachments/some-uuid/ticket9602/spkg-patch-gap-4.4.12.p6) by kcrisman created at 2012-01-31 01:48:41",
+    "body": "Attachment [spkg-patch-gap-4.4.12.p6](tarball://root/attachments/some-uuid/ticket9602/spkg-patch-gap-4.4.12.p6) by @kcrisman created at 2012-01-31 01:48:41",
     "created_at": "2012-01-31T01:48:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9602#issuecomment-92939",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [spkg-patch-gap-4.4.12.p6](tarball://root/attachments/some-uuid/ticket9602/spkg-patch-gap-4.4.12.p6) by kcrisman created at 2012-01-31 01:48:41
+Attachment [spkg-patch-gap-4.4.12.p6](tarball://root/attachments/some-uuid/ticket9602/spkg-patch-gap-4.4.12.p6) by @kcrisman created at 2012-01-31 01:48:41
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_092941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9602#issuecomment-92941",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_092942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9602#issuecomment-92942",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_092943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9602#issuecomment-92943",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_092944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9602#issuecomment-92944",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_092945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9602#issuecomment-92945",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_092946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9602#issuecomment-92946",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_092948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9602#issuecomment-92948",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_092949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9602#issuecomment-92949",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_092950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9602#issuecomment-92950",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

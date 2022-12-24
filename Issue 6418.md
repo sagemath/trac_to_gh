@@ -3,7 +3,7 @@
 archive/issues_006418.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThis fixes most of the warnings for building the html version of the reference manual in Sage 4.1.alpha1.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6418\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThis fixes most of the warnings for building the html version of the reference manual in Sage 4.1.alpha1.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6418\n\n",
     "created_at": "2009-06-26T00:28:48Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_006418.json:
     "title": "[with patch; needs review] ref manual fixes for 4.1.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6418",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 This fixes most of the warnings for building the html version of the reference manual in Sage 4.1.alpha1.
 
@@ -58,7 +58,7 @@ archive/issue_comments_051541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6418#issuecomment-51541",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_051542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6418#issuecomment-51542",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

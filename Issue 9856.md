@@ -3,7 +3,7 @@
 archive/issues_009856.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mhansen mvngu schilly\n\nKeywords: biopython\n\nBiopython is actively maintained and this latest release comes closer to supporting python 3.0.  It also improves some command-line utilities and other miscellaneous improvements.\n\nAn spkg is available at:\nhttp://sage.math.washington.edu/home/mhampton/biopython-1.55.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9857\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mwhansen mvngu @haraldschilly\n\nKeywords: biopython\n\nBiopython is actively maintained and this latest release comes closer to supporting python 3.0.  It also improves some command-line utilities and other miscellaneous improvements.\n\nAn spkg is available at:\nhttp://sage.math.washington.edu/home/mhampton/biopython-1.55.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9857\n\n",
     "created_at": "2010-09-04T20:31:05Z",
     "labels": [
         "packages: optional",
@@ -19,7 +19,7 @@ archive/issues_009856.json:
 ```
 Assignee: tbd
 
-CC:  mhansen mvngu schilly
+CC:  @mwhansen mvngu @haraldschilly
 
 Keywords: biopython
 
@@ -44,7 +44,7 @@ archive/issue_comments_097296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9856#issuecomment-97296",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_097299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9856#issuecomment-97299",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_097302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9856#issuecomment-97302",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_097303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9856#issuecomment-97303",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_097304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9856#issuecomment-97304",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_097305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9856#issuecomment-97305",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_097306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9856#issuecomment-97306",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_097307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9856#issuecomment-97307",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_097308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9856#issuecomment-97308",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

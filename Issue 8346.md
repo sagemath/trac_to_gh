@@ -3,7 +3,7 @@
 archive/issues_008346.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman jhpalmieri boothby\n\n\n```\nI got this from the \"report a problem\" bugtracker:\n\nFeature request: rename data files in the notebook\n\nIf you upload a data file to the notebook and make a mistake in the\n\"What do you want to call it?\" field, there is no way to change the\nname from within the notebook, except for deleting the file and\nre-uploading it.        It would be convenient if one could rename data files\nfrom within the notebook.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8346\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @jhpalmieri boothby\n\n\n```\nI got this from the \"report a problem\" bugtracker:\n\nFeature request: rename data files in the notebook\n\nIf you upload a data file to the notebook and make a mistake in the\n\"What do you want to call it?\" field, there is no way to change the\nname from within the notebook, except for deleting the file and\nre-uploading it.        It would be convenient if one could rename data files\nfrom within the notebook.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8346\n\n",
     "created_at": "2010-02-24T14:50:04Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008346.json:
     "title": "sagenb: notebook feature request \"rename a data file\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8346",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman jhpalmieri boothby
+CC:  @kcrisman @jhpalmieri boothby
 
 
 ```
@@ -51,7 +51,7 @@ archive/issue_comments_074514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8346#issuecomment-74514",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_074515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8346#issuecomment-74515",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_074516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8346#issuecomment-74516",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_074517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8346#issuecomment-74517",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_074518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8346#issuecomment-74518",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

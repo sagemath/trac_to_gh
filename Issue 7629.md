@@ -3,7 +3,7 @@
 archive/issues_007629.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ddrake chapoton\n\nI'm setting up a campus server, and it would extremely useful if I could require valid email addresses and restrict email addresses to campus addresses.  This would allow anyone with a valid campus email address to create an account.\n\nNote that for this to work, we also need to make it required to confirm email addresses before accounts are activated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7629\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @dandrake @fchapoton\n\nI'm setting up a campus server, and it would extremely useful if I could require valid email addresses and restrict email addresses to campus addresses.  This would allow anyone with a valid campus email address to create an account.\n\nNote that for this to work, we also need to make it required to confirm email addresses before accounts are activated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7629\n\n",
     "created_at": "2009-12-08T19:58:17Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007629.json:
     "title": "Make it possible to restrict the domains of email addresses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7629",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ddrake chapoton
+CC:  @dandrake @fchapoton
 
 I'm setting up a campus server, and it would extremely useful if I could require valid email addresses and restrict email addresses to campus addresses.  This would allow anyone with a valid campus email address to create an account.
 
@@ -41,7 +41,7 @@ archive/issue_comments_065179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7629#issuecomment-65179",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_065180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7629#issuecomment-65180",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_065181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7629#issuecomment-65181",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_065182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7629#issuecomment-65182",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -108,16 +108,16 @@ Changing status from new to needs_review.
 archive/issue_comments_065183.json:
 ```json
 {
-    "body": "Attachment [trac_7629-validate_email_custom.patch](tarball://root/attachments/some-uuid/ticket7629/trac_7629-validate_email_custom.patch) by mpatel created at 2010-01-28 06:28:57\n\nThe patch is from #8038's V3.",
+    "body": "Attachment [trac_7629-validate_email_custom.patch](tarball://root/attachments/some-uuid/ticket7629/trac_7629-validate_email_custom.patch) by @qed777 created at 2010-01-28 06:28:57\n\nThe patch is from #8038's V3.",
     "created_at": "2010-01-28T06:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7629#issuecomment-65183",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7629-validate_email_custom.patch](tarball://root/attachments/some-uuid/ticket7629/trac_7629-validate_email_custom.patch) by mpatel created at 2010-01-28 06:28:57
+Attachment [trac_7629-validate_email_custom.patch](tarball://root/attachments/some-uuid/ticket7629/trac_7629-validate_email_custom.patch) by @qed777 created at 2010-01-28 06:28:57
 
 The patch is from #8038's V3.
 
@@ -133,7 +133,7 @@ archive/issue_comments_065184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7629#issuecomment-65184",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_065185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7629#issuecomment-65185",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_065186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7629#issuecomment-65186",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_065187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7629#issuecomment-65187",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_065188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7629#issuecomment-65188",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_065189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7629#issuecomment-65189",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_065190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7629#issuecomment-65190",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003580.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  craigcitro jvoight\n\nThis is a followup to #3577 that is forced by a merge conflict.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3580\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @craigcitro @jvoight\n\nThis is a followup to #3577 that is forced by a merge conflict.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3580\n\n",
     "created_at": "2008-07-07T02:56:55Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_003580.json:
     "title": "ensure that numpy is not imported on startup.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3580",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
 
-CC:  craigcitro jvoight
+CC:  @craigcitro @jvoight
 
 This is a followup to #3577 that is forced by a merge conflict.
 
@@ -61,7 +61,7 @@ archive/issue_comments_025275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3580#issuecomment-25275",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -85,16 +85,16 @@ sage: search_src("^from", "numpy")
 archive/issue_comments_025276.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to craigcitro.",
+    "body": "Changing assignee from cwitty to @craigcitro.",
     "created_at": "2008-11-07T18:12:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3580#issuecomment-25276",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from cwitty to craigcitro.
+Changing assignee from cwitty to @craigcitro.
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_025277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3580#issuecomment-25277",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_025279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3580#issuecomment-25279",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_025280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3580#issuecomment-25280",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -221,16 +221,16 @@ Got:
 archive/issue_comments_025282.json:
 ```json
 {
-    "body": "Attachment [trac-3580.patch](tarball://root/attachments/some-uuid/ticket3580/trac-3580.patch) by craigcitro created at 2008-11-09 08:22:18",
+    "body": "Attachment [trac-3580.patch](tarball://root/attachments/some-uuid/ticket3580/trac-3580.patch) by @craigcitro created at 2008-11-09 08:22:18",
     "created_at": "2008-11-09T08:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3580#issuecomment-25282",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3580.patch](tarball://root/attachments/some-uuid/ticket3580/trac-3580.patch) by craigcitro created at 2008-11-09 08:22:18
+Attachment [trac-3580.patch](tarball://root/attachments/some-uuid/ticket3580/trac-3580.patch) by @craigcitro created at 2008-11-09 08:22:18
 
 
 
@@ -244,7 +244,7 @@ archive/issue_comments_025283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3580",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3580#issuecomment-25283",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

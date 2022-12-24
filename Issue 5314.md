@@ -3,7 +3,7 @@
 archive/issues_005314.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: permutations, empty\n\nRight now sage consider that there is no empty permutations.\n\n```\nsage: [] in Permutations()\nFalse\n```\n\nThere seems to be an agreement about the fact that the empty permutations exists ! Indeed there exists an empty set, and there exits exactly one function from the empty set to itself which is clearly bijective.\n\nThe patch solve this defect:\n\n```\nsage: import sage_emacs as emacs\nsage: [] in Permutations()\nTrue\nsage: Permutations(0).list()\n[[]]\nsage: Permutations(0).count()\n1\n```\n\n\nAuthor: Florent Hivert\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5314\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: permutations, empty\n\nRight now sage consider that there is no empty permutations.\n\n```\nsage: [] in Permutations()\nFalse\n```\n\nThere seems to be an agreement about the fact that the empty permutations exists ! Indeed there exists an empty set, and there exits exactly one function from the empty set to itself which is clearly bijective.\n\nThe patch solve this defect:\n\n```\nsage: import sage_emacs as emacs\nsage: [] in Permutations()\nTrue\nsage: Permutations(0).list()\n[[]]\nsage: Permutations(0).count()\n1\n```\n\n\nAuthor: Florent Hivert\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5314\n\n",
     "created_at": "2009-02-19T19:33:12Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005314.json:
     "title": "[with patch, needs review] The empty permutations exists !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5314",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -64,7 +64,7 @@ archive/issue_comments_040932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40932",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -77,16 +77,16 @@ Patch proposal
 archive/issue_comments_040933.json:
 ```json
 {
-    "body": "Changing assignee from hivert to mhansen.",
+    "body": "Changing assignee from @hivert to @mwhansen.",
     "created_at": "2009-02-19T19:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40933",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from hivert to mhansen.
+Changing assignee from @hivert to @mwhansen.
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_040934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40934",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -113,16 +113,16 @@ Changing status from new to assigned.
 archive/issue_comments_040935.json:
 ```json
 {
-    "body": "Attachment [trivial_permutations_fix-fh.patch](tarball://root/attachments/some-uuid/ticket5314/trivial_permutations_fix-fh.patch) by mhansen created at 2009-02-19 19:37:56\n\nLooks good and passes tests for me.",
+    "body": "Attachment [trivial_permutations_fix-fh.patch](tarball://root/attachments/some-uuid/ticket5314/trivial_permutations_fix-fh.patch) by @mwhansen created at 2009-02-19 19:37:56\n\nLooks good and passes tests for me.",
     "created_at": "2009-02-19T19:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5314",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40935",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trivial_permutations_fix-fh.patch](tarball://root/attachments/some-uuid/ticket5314/trivial_permutations_fix-fh.patch) by mhansen created at 2009-02-19 19:37:56
+Attachment [trivial_permutations_fix-fh.patch](tarball://root/attachments/some-uuid/ticket5314/trivial_permutations_fix-fh.patch) by @mwhansen created at 2009-02-19 19:37:56
 
 Looks good and passes tests for me.
 

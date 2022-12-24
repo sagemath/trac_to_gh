@@ -14,7 +14,7 @@ archive/issues_007284.json:
     "title": "create an optional gmp spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7284",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -43,7 +43,7 @@ archive/issue_comments_060618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7284#issuecomment-60618",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_060621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7284#issuecomment-60621",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_060623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7284#issuecomment-60623",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_060624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7284#issuecomment-60624",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_060625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7284#issuecomment-60625",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

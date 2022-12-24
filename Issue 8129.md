@@ -3,7 +3,7 @@
 archive/issues_008129.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  was jason jhpalmieri\n\nKeywords: notebook, jsmath, fonts\n\nInstalling the jsMath image fonts in `SAGE_LOCAL/lib/jsmath/fonts`, say, should make it easier to upgrade to new SageNB versions.\n\nNote: Both the notebook and the command-line can use jsMath (e.g., `browse_sage_doc(identity_matrix)`).  We could detect and check the relevant paths and make a symbolic link in `sage.all`.\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/53157b4e21f4ef86), #7467, #7778.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8129\n\n",
+    "body": "Assignee: tbd\n\nCC:  @williamstein @jasongrout @jhpalmieri\n\nKeywords: notebook, jsmath, fonts\n\nInstalling the jsMath image fonts in `SAGE_LOCAL/lib/jsmath/fonts`, say, should make it easier to upgrade to new SageNB versions.\n\nNote: Both the notebook and the command-line can use jsMath (e.g., `browse_sage_doc(identity_matrix)`).  We could detect and check the relevant paths and make a symbolic link in `sage.all`.\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/53157b4e21f4ef86), #7467, #7778.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8129\n\n",
     "created_at": "2010-01-30T04:06:57Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_008129.json:
     "title": "Install jsMath image fonts in a fixed location",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8129",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
 
-CC:  was jason jhpalmieri
+CC:  @williamstein @jasongrout @jhpalmieri
 
 Keywords: notebook, jsmath, fonts
 
@@ -45,7 +45,7 @@ archive/issue_comments_071474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8129#issuecomment-71474",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_071475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8129#issuecomment-71475",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_071476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8129#issuecomment-71476",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_071477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8129#issuecomment-71477",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -117,16 +117,16 @@ Look for jsMath fonts in `SAGE_LOCAL/...`.  Depends on #8051.  sagenb repo.
 archive/issue_comments_071478.json:
 ```json
 {
-    "body": "Attachment [trac_8129-jsmath_fonts.patch](tarball://root/attachments/some-uuid/ticket8129/trac_8129-jsmath_fonts.patch) by mpatel created at 2010-02-05 11:18:50\n\nWith the patch, the server does a simple check for jsMath fonts under `SAGE_LOCAL`:\n\n```python\njsmath_fonts_path = os.path.join(os.environ['SAGE_LOCAL'],\n                                 'lib', 'jsmath', 'fonts')\nif not os.path.exists(jsmath_fonts_path):\n    jsmath_fonts_path = os.path.join(javascript_path, 'jsmath', 'fonts')\n```\n\n\nWe'll need to add the msbm10 fonts to the fonts spkg.  Instead of putting even more version-checking logic in `jsmath-image-fonts-*.spkg` `spkg-install`, should we give the new spkg a different name, e.g., `jsmath-image-fonts-new-*.spkg`?  Its `spkg-install` would just install the fonts in `SAGE_LOCAL/lib/jsmath/fonts`.\n\nAlso, should we try adding **all** of the [extra jsMath fonts](http://www.math.union.edu/~dpvc/jsmath/download/extra-fonts/welcome.html) to the new spkg?\n\n```\nbbold10\ncmbsy10\ncmbx10\ncmex10\ncm-fonts\ncmmi10\ncmmib10\ncmr10\ncmss10\ncmsy10\ncmti10\neufb10\neufm10\neurb10\neurm10\neusb10\neusm10\nlasy10\nlasyb10\nmsam10\nmsbm10\nrsfs10\nstmary10\nwasy10\nwasyb10\n```\n\n?",
+    "body": "Attachment [trac_8129-jsmath_fonts.patch](tarball://root/attachments/some-uuid/ticket8129/trac_8129-jsmath_fonts.patch) by @qed777 created at 2010-02-05 11:18:50\n\nWith the patch, the server does a simple check for jsMath fonts under `SAGE_LOCAL`:\n\n```python\njsmath_fonts_path = os.path.join(os.environ['SAGE_LOCAL'],\n                                 'lib', 'jsmath', 'fonts')\nif not os.path.exists(jsmath_fonts_path):\n    jsmath_fonts_path = os.path.join(javascript_path, 'jsmath', 'fonts')\n```\n\n\nWe'll need to add the msbm10 fonts to the fonts spkg.  Instead of putting even more version-checking logic in `jsmath-image-fonts-*.spkg` `spkg-install`, should we give the new spkg a different name, e.g., `jsmath-image-fonts-new-*.spkg`?  Its `spkg-install` would just install the fonts in `SAGE_LOCAL/lib/jsmath/fonts`.\n\nAlso, should we try adding **all** of the [extra jsMath fonts](http://www.math.union.edu/~dpvc/jsmath/download/extra-fonts/welcome.html) to the new spkg?\n\n```\nbbold10\ncmbsy10\ncmbx10\ncmex10\ncm-fonts\ncmmi10\ncmmib10\ncmr10\ncmss10\ncmsy10\ncmti10\neufb10\neufm10\neurb10\neurm10\neusb10\neusm10\nlasy10\nlasyb10\nmsam10\nmsbm10\nrsfs10\nstmary10\nwasy10\nwasyb10\n```\n\n?",
     "created_at": "2010-02-05T11:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8129#issuecomment-71478",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8129-jsmath_fonts.patch](tarball://root/attachments/some-uuid/ticket8129/trac_8129-jsmath_fonts.patch) by mpatel created at 2010-02-05 11:18:50
+Attachment [trac_8129-jsmath_fonts.patch](tarball://root/attachments/some-uuid/ticket8129/trac_8129-jsmath_fonts.patch) by @qed777 created at 2010-02-05 11:18:50
 
 With the patch, the server does a simple check for jsMath fonts under `SAGE_LOCAL`:
 
@@ -184,7 +184,7 @@ archive/issue_comments_071479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8129#issuecomment-71479",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_071480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8129#issuecomment-71480",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_071481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8129#issuecomment-71481",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_071482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8129#issuecomment-71482",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

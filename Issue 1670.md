@@ -3,7 +3,7 @@
 archive/issues_001670.json:
 ```json
 {
-    "body": "Assignee: was\n\nHi,\n\nThis is the latest 3d bundle.\n\nThere will still be some doctest failures in 3d -- just put nodoctest in the files.\n\nThis can be included in Sage, but much work remains before it is released. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1670\n\n",
+    "body": "Assignee: @williamstein\n\nHi,\n\nThis is the latest 3d bundle.\n\nThere will still be some doctest failures in 3d -- just put nodoctest in the files.\n\nThis can be included in Sage, but much work remains before it is released. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1670\n\n",
     "created_at": "2008-01-03T16:06:53Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001670.json:
     "title": "jmol / 3d -- my latest bundle",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1670",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Hi,
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1670
 archive/issue_comments_010603.json:
 ```json
 {
-    "body": "Attachment [3d-jan3-2008.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-2008.hg) by robertwb created at 2008-01-03 20:11:23",
+    "body": "Attachment [3d-jan3-2008.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-2008.hg) by @robertwb created at 2008-01-03 20:11:23",
     "created_at": "2008-01-03T20:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1670#issuecomment-10603",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3d-jan3-2008.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-2008.hg) by robertwb created at 2008-01-03 20:11:23
+Attachment [3d-jan3-2008.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-2008.hg) by @robertwb created at 2008-01-03 20:11:23
 
 
 
@@ -56,16 +56,16 @@ Attachment [3d-jan3-2008.hg](tarball://root/attachments/some-uuid/ticket1670/3d-
 archive/issue_comments_010604.json:
 ```json
 {
-    "body": "Attachment [3d-jan3-merged.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-merged.hg) by robertwb created at 2008-01-04 06:13:33",
+    "body": "Attachment [3d-jan3-merged.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-merged.hg) by @robertwb created at 2008-01-04 06:13:33",
     "created_at": "2008-01-04T06:13:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1670#issuecomment-10604",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3d-jan3-merged.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-merged.hg) by robertwb created at 2008-01-04 06:13:33
+Attachment [3d-jan3-merged.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-merged.hg) by @robertwb created at 2008-01-04 06:13:33
 
 
 
@@ -74,16 +74,16 @@ Attachment [3d-jan3-merged.hg](tarball://root/attachments/some-uuid/ticket1670/3
 archive/issue_comments_010605.json:
 ```json
 {
-    "body": "Attachment [3d-jan3-robert.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-robert.hg) by robertwb created at 2008-01-04 06:19:00\n\nFigured out how to display text in jmol, got rid of logo, implemented \"ruler\" function for displaying tick marks, ...",
+    "body": "Attachment [3d-jan3-robert.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-robert.hg) by @robertwb created at 2008-01-04 06:19:00\n\nFigured out how to display text in jmol, got rid of logo, implemented \"ruler\" function for displaying tick marks, ...",
     "created_at": "2008-01-04T06:19:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1670#issuecomment-10605",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3d-jan3-robert.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-robert.hg) by robertwb created at 2008-01-04 06:19:00
+Attachment [3d-jan3-robert.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-robert.hg) by @robertwb created at 2008-01-04 06:19:00
 
 Figured out how to display text in jmol, got rid of logo, implemented "ruler" function for displaying tick marks, ...
 
@@ -94,16 +94,16 @@ Figured out how to display text in jmol, got rid of logo, implemented "ruler" fu
 archive/issue_comments_010606.json:
 ```json
 {
-    "body": "Attachment [3d-jan3-robert2.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-robert2.hg) by robertwb created at 2008-01-04 07:53:14",
+    "body": "Attachment [3d-jan3-robert2.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-robert2.hg) by @robertwb created at 2008-01-04 07:53:14",
     "created_at": "2008-01-04T07:53:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1670#issuecomment-10606",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3d-jan3-robert2.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-robert2.hg) by robertwb created at 2008-01-04 07:53:14
+Attachment [3d-jan3-robert2.hg](tarball://root/attachments/some-uuid/ticket1670/3d-jan3-robert2.hg) by @robertwb created at 2008-01-04 07:53:14
 
 
 
@@ -112,16 +112,16 @@ Attachment [3d-jan3-robert2.hg](tarball://root/attachments/some-uuid/ticket1670/
 archive/issue_comments_010607.json:
 ```json
 {
-    "body": "Attachment [jmol-jan4.hg](tarball://root/attachments/some-uuid/ticket1670/jmol-jan4.hg) by was created at 2008-01-04 11:14:37\n\nThis replaces one of the same name and merges cleanly (but doctests will fail)",
+    "body": "Attachment [jmol-jan4.hg](tarball://root/attachments/some-uuid/ticket1670/jmol-jan4.hg) by @williamstein created at 2008-01-04 11:14:37\n\nThis replaces one of the same name and merges cleanly (but doctests will fail)",
     "created_at": "2008-01-04T11:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1670#issuecomment-10607",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [jmol-jan4.hg](tarball://root/attachments/some-uuid/ticket1670/jmol-jan4.hg) by was created at 2008-01-04 11:14:37
+Attachment [jmol-jan4.hg](tarball://root/attachments/some-uuid/ticket1670/jmol-jan4.hg) by @williamstein created at 2008-01-04 11:14:37
 
 This replaces one of the same name and merges cleanly (but doctests will fail)
 

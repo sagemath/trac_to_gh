@@ -3,7 +3,7 @@
 archive/issues_000990.json:
 ```json
 {
-    "body": "Assignee: was\n\nAdd support for inverse hyperbolic functions in Sage\n\nIssue created by migration from https://trac.sagemath.org/ticket/990\n\n",
+    "body": "Assignee: @williamstein\n\nAdd support for inverse hyperbolic functions in Sage\n\nIssue created by migration from https://trac.sagemath.org/ticket/990\n\n",
     "created_at": "2007-10-25T01:17:12Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_000990.json:
     "title": "no support for asinh/acosh etc. in symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/990",
-    "user": "moretti"
+    "user": "@bobmoretti"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Add support for inverse hyperbolic functions in Sage
 
@@ -37,7 +37,7 @@ archive/issue_comments_006040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/990#issuecomment-6040",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -65,16 +65,16 @@ sage: atanh(0.2)
 archive/issue_comments_006041.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-11-30T23:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/990#issuecomment-6041",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_006042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/990#issuecomment-6042",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_006043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/990#issuecomment-6043",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

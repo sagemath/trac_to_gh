@@ -3,7 +3,7 @@
 archive/issues_006875.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: polar_plot, fill\n\nThe fill option for polar_plot does not work correctly anymore.\n\nThe following two doctests don't produce the supposed output:\n\n* Fill the area between two functions:\n\n```\nsage: polar_plot(cos(4*x) + 1.5, 0, 2*pi, fill=0.5 * cos(4*x) + 2.5, fillcolor='orange').show(aspect_ratio=1)\n```\n\n\n* Fill the area between several spirals:\n\n```\nsage: polar_plot([(1.2+k*0.2)*log(x) for k in range(6)], 1, 3 * pi, fill = {0: [1], 2: [3], 4: [5]})\n```\n\n\nThis regression has been introduced with the changeset 12287 (Ticket: #5930).\n\nSage really needs a test framework for plots. Otherwise more and more regressions will creep in, without anybody noticing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6875\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: polar_plot, fill\n\nThe fill option for polar_plot does not work correctly anymore.\n\nThe following two doctests don't produce the supposed output:\n\n* Fill the area between two functions:\n\n```\nsage: polar_plot(cos(4*x) + 1.5, 0, 2*pi, fill=0.5 * cos(4*x) + 2.5, fillcolor='orange').show(aspect_ratio=1)\n```\n\n\n* Fill the area between several spirals:\n\n```\nsage: polar_plot([(1.2+k*0.2)*log(x) for k in range(6)], 1, 3 * pi, fill = {0: [1], 2: [3], 4: [5]})\n```\n\n\nThis regression has been introduced with the changeset 12287 (Ticket: #5930).\n\nSage really needs a test framework for plots. Otherwise more and more regressions will creep in, without anybody noticing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6875\n\n",
     "created_at": "2009-09-03T11:03:40Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_006875.json:
     "user": "whuss"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: polar_plot, fill
 
@@ -78,7 +78,7 @@ archive/issue_comments_056756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6875#issuecomment-56756",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_056760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6875#issuecomment-56760",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007683.json:
     "title": "sphinx reference manual documentation has a *major* issues: in some cases the input parameters to functions are completely omitted causing great confusion!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7683",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mvngu
@@ -50,7 +50,7 @@ archive/issue_comments_065936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65936",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_065937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65937",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -81,16 +81,16 @@ The problem is that Sphinx needs to use the functions in sage.misc.sageinspect t
 archive/issue_comments_065938.json:
 ```json
 {
-    "body": "Attachment [trac_7683.patch](tarball://root/attachments/some-uuid/ticket7683/trac_7683.patch) by mhansen created at 2009-12-15 10:06:02",
+    "body": "Attachment [trac_7683.patch](tarball://root/attachments/some-uuid/ticket7683/trac_7683.patch) by @mwhansen created at 2009-12-15 10:06:02",
     "created_at": "2009-12-15T10:06:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65938",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7683.patch](tarball://root/attachments/some-uuid/ticket7683/trac_7683.patch) by mhansen created at 2009-12-15 10:06:02
+Attachment [trac_7683.patch](tarball://root/attachments/some-uuid/ticket7683/trac_7683.patch) by @mwhansen created at 2009-12-15 10:06:02
 
 
 
@@ -99,16 +99,16 @@ Attachment [trac_7683.patch](tarball://root/attachments/some-uuid/ticket7683/tra
 archive/issue_comments_065939.json:
 ```json
 {
-    "body": "Attachment [sphinx-0.6.3.p3.patch](tarball://root/attachments/some-uuid/ticket7683/sphinx-0.6.3.p3.patch) by mhansen created at 2009-12-15 10:06:59",
+    "body": "Attachment [sphinx-0.6.3.p3.patch](tarball://root/attachments/some-uuid/ticket7683/sphinx-0.6.3.p3.patch) by @mwhansen created at 2009-12-15 10:06:59",
     "created_at": "2009-12-15T10:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65939",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sphinx-0.6.3.p3.patch](tarball://root/attachments/some-uuid/ticket7683/sphinx-0.6.3.p3.patch) by mhansen created at 2009-12-15 10:06:59
+Attachment [sphinx-0.6.3.p3.patch](tarball://root/attachments/some-uuid/ticket7683/sphinx-0.6.3.p3.patch) by @mwhansen created at 2009-12-15 10:06:59
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_065940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65940",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_065941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65941",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_065942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65942",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_065943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65943",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_065944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65944",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_065945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65945",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_065946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65946",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_065947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7683",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65947",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

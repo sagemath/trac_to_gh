@@ -3,7 +3,7 @@
 archive/issues_008266.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  abmasse\n\nDocumentation of words and word objects contains only pickle tests and lacks good examples :\n\n\n```\nsage: words?\n...\nDocstring:\n    \n        A class consisting of constructors for several famous words.\n        \n        TESTS::\n    \n            sage: from sage.combinat.words.word_generators import WordGenerator\n            sage: MyWordBank = WordGenerator()\n            sage: type(loads(dumps(MyWordBank)))\n            <class 'sage.combinat.words.word_generators.WordGenerator'>\n```\n\n    \n        \n\n```\nsage: w = Word(range(5))\nsage: w?\n...\nDocstring:\n    \n        TESTS::\n    \n            sage: w = Word([0,1,1,0])\n            sage: w == loads(dumps(w))\n            True\n```\n\n        \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8266\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nDocumentation of words and word objects contains only pickle tests and lacks good examples :\n\n\n```\nsage: words?\n...\nDocstring:\n    \n        A class consisting of constructors for several famous words.\n        \n        TESTS::\n    \n            sage: from sage.combinat.words.word_generators import WordGenerator\n            sage: MyWordBank = WordGenerator()\n            sage: type(loads(dumps(MyWordBank)))\n            <class 'sage.combinat.words.word_generators.WordGenerator'>\n```\n\n    \n        \n\n```\nsage: w = Word(range(5))\nsage: w?\n...\nDocstring:\n    \n        TESTS::\n    \n            sage: w = Word([0,1,1,0])\n            sage: w == loads(dumps(w))\n            True\n```\n\n        \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8266\n\n",
     "created_at": "2010-02-14T22:35:51Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_008266.json:
     "title": "Improve documentation for word objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8266",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  abmasse
 
@@ -70,16 +70,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8266
 archive/issue_comments_073169.json:
 ```json
 {
-    "body": "Attachment [trac_8266_word_doc_object-sl.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266_word_doc_object-sl.patch) by slabbe created at 2010-02-14 22:39:15\n\nDepends on #7619.",
+    "body": "Attachment [trac_8266_word_doc_object-sl.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266_word_doc_object-sl.patch) by @seblabbe created at 2010-02-14 22:39:15\n\nDepends on #7619.",
     "created_at": "2010-02-14T22:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8266#issuecomment-73169",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8266_word_doc_object-sl.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266_word_doc_object-sl.patch) by slabbe created at 2010-02-14 22:39:15
+Attachment [trac_8266_word_doc_object-sl.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266_word_doc_object-sl.patch) by @seblabbe created at 2010-02-14 22:39:15
 
 Depends on #7619.
 
@@ -95,7 +95,7 @@ archive/issue_comments_073170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8266#issuecomment-73170",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_073171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8266#issuecomment-73171",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_073174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8266#issuecomment-73174",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_073175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8266#issuecomment-73175",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -212,16 +212,16 @@ Since I my patch fix only two characters in the doc and because I agree with you
 archive/issue_comments_073176.json:
 ```json
 {
-    "body": "Attachment [trac_8266-review2-sl.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266-review2-sl.patch) by slabbe created at 2010-03-05 16:01:24\n\nApplies over the two precedent patches.",
+    "body": "Attachment [trac_8266-review2-sl.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266-review2-sl.patch) by @seblabbe created at 2010-03-05 16:01:24\n\nApplies over the two precedent patches.",
     "created_at": "2010-03-05T16:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8266#issuecomment-73176",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8266-review2-sl.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266-review2-sl.patch) by slabbe created at 2010-03-05 16:01:24
+Attachment [trac_8266-review2-sl.patch](tarball://root/attachments/some-uuid/ticket8266/trac_8266-review2-sl.patch) by @seblabbe created at 2010-03-05 16:01:24
 
 Applies over the two precedent patches.
 
@@ -237,7 +237,7 @@ archive/issue_comments_073177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8266",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8266#issuecomment-73177",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

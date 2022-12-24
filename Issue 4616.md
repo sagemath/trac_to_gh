@@ -3,7 +3,7 @@
 archive/issues_004616.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nThis is a method of the Piecewise class (which I use almost on a daily basis in teaching):\n\n\n```\nsage: f1 = lambda x: x*(pi-x)\nsage: f = Piecewise([[(0,pi),f1]])\nsage: f.cosine_series_coefficient(0,pi)\n                                               \n```\n\nRequires a ctl-c.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4616\n\n",
+    "body": "Assignee: @wdjoyner\n\nThis is a method of the Piecewise class (which I use almost on a daily basis in teaching):\n\n\n```\nsage: f1 = lambda x: x*(pi-x)\nsage: f = Piecewise([[(0,pi),f1]])\nsage: f.cosine_series_coefficient(0,pi)\n                                               \n```\n\nRequires a ctl-c.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4616\n\n",
     "created_at": "2008-11-25T12:47:24Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004616.json:
     "title": "cosine_series_coefficient hangs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4616",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 This is a method of the Piecewise class (which I use almost on a daily basis in teaching):
 
@@ -69,7 +69,7 @@ archive/issue_comments_034648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4616#issuecomment-34648",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_034650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4616#issuecomment-34650",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -156,16 +156,16 @@ sage:
 archive/issue_comments_034651.json:
 ```json
 {
-    "body": "Attachment [trac-4616.patch](tarball://root/attachments/some-uuid/ticket4616/trac-4616.patch) by rlm created at 2009-01-22 17:27:50\n\nVerified that this is now fixed, attached a patch with a doctest.",
+    "body": "Attachment [trac-4616.patch](tarball://root/attachments/some-uuid/ticket4616/trac-4616.patch) by @rlmill created at 2009-01-22 17:27:50\n\nVerified that this is now fixed, attached a patch with a doctest.",
     "created_at": "2009-01-22T17:27:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4616#issuecomment-34651",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-4616.patch](tarball://root/attachments/some-uuid/ticket4616/trac-4616.patch) by rlm created at 2009-01-22 17:27:50
+Attachment [trac-4616.patch](tarball://root/attachments/some-uuid/ticket4616/trac-4616.patch) by @rlmill created at 2009-01-22 17:27:50
 
 Verified that this is now fixed, attached a patch with a doctest.
 
@@ -181,7 +181,7 @@ archive/issue_comments_034652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4616#issuecomment-34652",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

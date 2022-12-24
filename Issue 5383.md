@@ -3,7 +3,7 @@
 archive/issues_005383.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: principal ideal domain span free module isinstance\n\nThis is the cause of things like:\n\n\n```\nsage: R.<x, y> = QQ[]\nsage: M = R^2\nsage: span(R, vector([1, 0]))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/.sage/temp/dhcp_v009_038.mobile.uci.edu/301/_Users_ncalexan_Documents_School_rumely_polynomial_ring_as_module2_sage_142.py in <module>()\n\n/Users/ncalexan/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/modules/free_module.pyc in span(gens, base_ring, check, already_echelonized)\n    408 \n    409     if not isinstance(R, principal_ideal_domain.PrincipalIdealDomain):\n--> 410         raise TypeError, \"The base_ring (= %s) must be a principal ideal domain.\"%R\n    411     if len(gens) == 0:\n    412         return FreeModule(R, 0)\n\nTypeError: The base_ring (= Multivariate Polynomial Ring in x, y over Rational Field) must be a principal ideal domain.\n```\n\n\nSurprisingly few places where this bites us:\n\n\n```\nsage: search_src('PrincipalIdealDomain')\nmodules/free_module.py:        elif isinstance(base_ring, principal_ideal_domain.PrincipalIdealDomain):\nmodules/free_module.py:    if not isinstance(R, principal_ideal_domain.PrincipalIdealDomain):\nmodules/free_module.py:        if not isinstance(base_ring, principal_ideal_domain.PrincipalIdealDomain):\nmodules/free_quadratic_module.py:    elif isinstance(base_ring, principal_ideal_domain.PrincipalIdealDomain):\nrings/all.py:from principal_ideal_domain import PrincipalIdealDomain, is_PrincipalIdealDomain\nrings/all.py:from principal_ideal_domain_element import PrincipalIdealDomainElement, is_PrincipalIdealDomainElement\nrings/ideal.py:    if isinstance(R, sage.rings.principal_ideal_domain.PrincipalIdealDomain):\n<snip>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5383\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: principal ideal domain span free module isinstance\n\nThis is the cause of things like:\n\n\n```\nsage: R.<x, y> = QQ[]\nsage: M = R^2\nsage: span(R, vector([1, 0]))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/.sage/temp/dhcp_v009_038.mobile.uci.edu/301/_Users_ncalexan_Documents_School_rumely_polynomial_ring_as_module2_sage_142.py in <module>()\n\n/Users/ncalexan/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/modules/free_module.pyc in span(gens, base_ring, check, already_echelonized)\n    408 \n    409     if not isinstance(R, principal_ideal_domain.PrincipalIdealDomain):\n--> 410         raise TypeError, \"The base_ring (= %s) must be a principal ideal domain.\"%R\n    411     if len(gens) == 0:\n    412         return FreeModule(R, 0)\n\nTypeError: The base_ring (= Multivariate Polynomial Ring in x, y over Rational Field) must be a principal ideal domain.\n```\n\n\nSurprisingly few places where this bites us:\n\n\n```\nsage: search_src('PrincipalIdealDomain')\nmodules/free_module.py:        elif isinstance(base_ring, principal_ideal_domain.PrincipalIdealDomain):\nmodules/free_module.py:    if not isinstance(R, principal_ideal_domain.PrincipalIdealDomain):\nmodules/free_module.py:        if not isinstance(base_ring, principal_ideal_domain.PrincipalIdealDomain):\nmodules/free_quadratic_module.py:    elif isinstance(base_ring, principal_ideal_domain.PrincipalIdealDomain):\nrings/all.py:from principal_ideal_domain import PrincipalIdealDomain, is_PrincipalIdealDomain\nrings/all.py:from principal_ideal_domain_element import PrincipalIdealDomainElement, is_PrincipalIdealDomainElement\nrings/ideal.py:    if isinstance(R, sage.rings.principal_ideal_domain.PrincipalIdealDomain):\n<snip>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5383\n\n",
     "created_at": "2009-02-26T04:41:00Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005383.json:
     "title": "isinstance(PrincipalIdealDomain) should be replaced with a method .is_principal_ideal_domain()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5383",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: principal ideal domain span free module isinstance
 
@@ -76,7 +76,7 @@ archive/issue_comments_041457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5383#issuecomment-41457",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_041459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5383#issuecomment-41459",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_041460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5383#issuecomment-41460",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -147,16 +147,16 @@ Changing status from new to needs_review.
 archive/issue_comments_041461.json:
 ```json
 {
-    "body": "Attachment [trac_5383.patch](tarball://root/attachments/some-uuid/ticket5383/trac_5383.patch) by mhansen created at 2013-07-23 15:30:09",
+    "body": "Attachment [trac_5383.patch](tarball://root/attachments/some-uuid/ticket5383/trac_5383.patch) by @mwhansen created at 2013-07-23 15:30:09",
     "created_at": "2013-07-23T15:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5383#issuecomment-41461",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5383.patch](tarball://root/attachments/some-uuid/ticket5383/trac_5383.patch) by mhansen created at 2013-07-23 15:30:09
+Attachment [trac_5383.patch](tarball://root/attachments/some-uuid/ticket5383/trac_5383.patch) by @mwhansen created at 2013-07-23 15:30:09
 
 
 
@@ -170,7 +170,7 @@ archive/issue_comments_041462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5383#issuecomment-41462",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_041463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5383#issuecomment-41463",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_041466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5383#issuecomment-41466",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_041467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5383",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5383#issuecomment-41467",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

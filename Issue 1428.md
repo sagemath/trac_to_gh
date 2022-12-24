@@ -3,7 +3,7 @@
 archive/issues_001428.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  dfdeshom@gmail.com\n\n\n```\nHallo!\n\nI tried to compute the SVD of a complex matrix (module\nmatrix.matrix_complex_double_dense), but I didn't found a function to\ndo so. However, real matrices (module matrix.matrix_real_double_dense)\nsupport it. Is there really no way to compute a complex SVD? If I\nremember correctly, at least the underlying library GSL supports\ncomplex SVDs... What would I have to do to integrate those functions\ninto Sage?\n\nSander\n```\n\n\nBasically all that needs to be done is to translate the real code over to the complex case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1428\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  dfdeshom@gmail.com\n\n\n```\nHallo!\n\nI tried to compute the SVD of a complex matrix (module\nmatrix.matrix_complex_double_dense), but I didn't found a function to\ndo so. However, real matrices (module matrix.matrix_real_double_dense)\nsupport it. Is there really no way to compute a complex SVD? If I\nremember correctly, at least the underlying library GSL supports\ncomplex SVDs... What would I have to do to integrate those functions\ninto Sage?\n\nSander\n```\n\n\nBasically all that needs to be done is to translate the real code over to the complex case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1428\n\n",
     "created_at": "2007-12-08T14:53:32Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001428.json:
     "title": "add SVD method to matrix_complex_double_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1428",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  dfdeshom@gmail.com
 
@@ -55,7 +55,7 @@ archive/issue_comments_009203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1428#issuecomment-9203",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_009204.json:
 ```json
 {
-    "body": "Attachment [1428.patch](tarball://root/attachments/some-uuid/ticket1428/1428.patch) by mhansen created at 2007-12-22 13:15:23",
+    "body": "Attachment [1428.patch](tarball://root/attachments/some-uuid/ticket1428/1428.patch) by @mwhansen created at 2007-12-22 13:15:23",
     "created_at": "2007-12-22T13:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1428#issuecomment-9204",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1428.patch](tarball://root/attachments/some-uuid/ticket1428/1428.patch) by mhansen created at 2007-12-22 13:15:23
+Attachment [1428.patch](tarball://root/attachments/some-uuid/ticket1428/1428.patch) by @mwhansen created at 2007-12-22 13:15:23
 
 
 
@@ -86,16 +86,16 @@ Attachment [1428.patch](tarball://root/attachments/some-uuid/ticket1428/1428.pat
 archive/issue_comments_009205.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-12-22T13:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1428#issuecomment-9205",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_009206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1428#issuecomment-9206",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 

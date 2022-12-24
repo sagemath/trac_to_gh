@@ -3,7 +3,7 @@
 archive/issues_004083.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cswiercz software@pacificafog.com slelievre\n\nKeywords: finance, options, black-scholes\n\nIncludes capabilities for options pricing using the Black-Scholes model. The primary class of this ticket is finance.Option, which uses finance.Stock.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4083\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @cswiercz software@pacificafog.com @slel\n\nKeywords: finance, options, black-scholes\n\nIncludes capabilities for options pricing using the Black-Scholes model. The primary class of this ticket is finance.Option, which uses finance.Stock.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4083\n\n",
     "created_at": "2008-09-09T02:16:17Z",
     "labels": [
         "finance",
@@ -14,12 +14,12 @@ archive/issues_004083.json:
     "title": "sage.finance - Options pricing implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4083",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cswiercz software@pacificafog.com slelievre
+CC:  @cswiercz software@pacificafog.com @slel
 
 Keywords: finance, options, black-scholes
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4083
 archive/issue_comments_029454.json:
 ```json
 {
-    "body": "Attachment [sage-4083-part1.patch](tarball://root/attachments/some-uuid/ticket4083/sage-4083-part1.patch) by cswiercz created at 2008-09-09 02:17:33\n\nInitial implementation of the Option class.",
+    "body": "Attachment [sage-4083-part1.patch](tarball://root/attachments/some-uuid/ticket4083/sage-4083-part1.patch) by @cswiercz created at 2008-09-09 02:17:33\n\nInitial implementation of the Option class.",
     "created_at": "2008-09-09T02:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29454",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [sage-4083-part1.patch](tarball://root/attachments/some-uuid/ticket4083/sage-4083-part1.patch) by cswiercz created at 2008-09-09 02:17:33
+Attachment [sage-4083-part1.patch](tarball://root/attachments/some-uuid/ticket4083/sage-4083-part1.patch) by @cswiercz created at 2008-09-09 02:17:33
 
 Initial implementation of the Option class.
 
@@ -61,7 +61,7 @@ archive/issue_comments_029455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29455",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -74,16 +74,16 @@ Changing status from new to assigned.
 archive/issue_comments_029456.json:
 ```json
 {
-    "body": "Changing assignee from was to cswiercz.",
+    "body": "Changing assignee from @williamstein to @cswiercz.",
     "created_at": "2008-09-16T22:40:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29456",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Changing assignee from was to cswiercz.
+Changing assignee from @williamstein to @cswiercz.
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_029457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29457",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -229,7 +229,7 @@ This will work using the new -only_optional doctesting framework, which allows u
 archive/issue_comments_029458.json:
 ```json
 {
-    "body": "Changing assignee from cswiercz to psinis.",
+    "body": "Changing assignee from @cswiercz to psinis.",
     "created_at": "2009-02-23T22:17:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4083",
     "type": "issue_comment",
@@ -238,7 +238,7 @@ archive/issue_comments_029458.json:
 }
 ```
 
-Changing assignee from cswiercz to psinis.
+Changing assignee from @cswiercz to psinis.
 
 
 
@@ -270,7 +270,7 @@ archive/issue_comments_029460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29460",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_029461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29461",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_029462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29462",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_029463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29463",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_029464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29464",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_029465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29465",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

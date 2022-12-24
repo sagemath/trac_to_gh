@@ -3,7 +3,7 @@
 archive/issues_008954.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8954\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8954\n\n",
     "created_at": "2010-05-12T06:52:47Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008954.json:
     "title": "Implementation of the affine nilTemperley Lieb algebra of type A",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8954",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_082524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82524",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_082525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82525",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_082526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82526",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_082527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82527",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_082528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82528",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_082529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82529",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -181,16 +181,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_082530.json:
 ```json
 {
-    "body": "Attachment [trac_8954-nilTemperley-as.patch](tarball://root/attachments/some-uuid/ticket8954/trac_8954-nilTemperley-as.patch) by jbandlow created at 2010-05-21 14:06:40\n\nAnne,\n\nThanks for making the changes I suggested.  I'm happy with the code now, and I've run the tests on sage-4.4.2 and they all pass. Positive review!",
+    "body": "Attachment [trac_8954-nilTemperley-as.patch](tarball://root/attachments/some-uuid/ticket8954/trac_8954-nilTemperley-as.patch) by @jbandlow created at 2010-05-21 14:06:40\n\nAnne,\n\nThanks for making the changes I suggested.  I'm happy with the code now, and I've run the tests on sage-4.4.2 and they all pass. Positive review!",
     "created_at": "2010-05-21T14:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82530",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [trac_8954-nilTemperley-as.patch](tarball://root/attachments/some-uuid/ticket8954/trac_8954-nilTemperley-as.patch) by jbandlow created at 2010-05-21 14:06:40
+Attachment [trac_8954-nilTemperley-as.patch](tarball://root/attachments/some-uuid/ticket8954/trac_8954-nilTemperley-as.patch) by @jbandlow created at 2010-05-21 14:06:40
 
 Anne,
 
@@ -208,7 +208,7 @@ archive/issue_comments_082531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82531",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004563.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen\n\nThis does not work:\n\n\n```\nsage: polar_plot(x, (x, 0, 1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\nTypeError: polar_plot() takes exactly 3 arguments (2 given)\n```\n\n\nBut this does:\n\n\n```\nsage: polar_plot(x,0, 1)\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4563\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nThis does not work:\n\n\n```\nsage: polar_plot(x, (x, 0, 1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\nTypeError: polar_plot() takes exactly 3 arguments (2 given)\n```\n\n\nBut this does:\n\n\n```\nsage: polar_plot(x,0, 1)\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4563\n\n",
     "created_at": "2008-11-20T08:19:26Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_004563.json:
     "title": "polar plot does not accept (t, 0, 2*pi) syntax for the interval",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4563",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mhansen
+CC:  @mwhansen
 
 This does not work:
 
@@ -61,7 +61,7 @@ archive/issue_comments_034177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4563#issuecomment-34177",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,16 +74,16 @@ Ccing mhansen since he is currently working on plotting code.
 archive/issue_comments_034178.json:
 ```json
 {
-    "body": "Attachment [trac-4563.patch](tarball://root/attachments/some-uuid/ticket4563/trac-4563.patch) by jason created at 2009-01-22 19:00:44",
+    "body": "Attachment [trac-4563.patch](tarball://root/attachments/some-uuid/ticket4563/trac-4563.patch) by @jasongrout created at 2009-01-22 19:00:44",
     "created_at": "2009-01-22T19:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4563#issuecomment-34178",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-4563.patch](tarball://root/attachments/some-uuid/ticket4563/trac-4563.patch) by jason created at 2009-01-22 19:00:44
+Attachment [trac-4563.patch](tarball://root/attachments/some-uuid/ticket4563/trac-4563.patch) by @jasongrout created at 2009-01-22 19:00:44
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_034179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4563",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4563#issuecomment-34179",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

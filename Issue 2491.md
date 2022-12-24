@@ -3,7 +3,7 @@
 archive/issues_002491.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nFrom IRC #sage-devel\n\n\n```\n<mhansen> jaap: There's a difference between sloane.A000001?? and sage.combinat.sloane_functions.A000001??\n<jaap> mhansen sage: sloane.A000001??\n<jaap> Error getting source: arg is not a module, class, method, function, traceback, frame, or code object\n<mhansen> jaap: A bit earlier I had said that  sloane.A000001?? doesn't work because of the way the sloane object works.\n<jaap> ok, but how about the OEIS user who wants to see how things work?\n<mhansen> If it's a bug, then it should be reported.\n<jaap> I think so\n```\n\n\n\n\n\n```\nsage: sloane.A000045\n Fibonacci numbers with index n >= 0\n\nsage: sloane.A000045?\n\nsage: sloane.A000045??\nError getting source: arg is not a module, class, method, function, traceback, frame, or code object\n\nsage: sage.combinat.sloane_functions.A000045??\n\nworks ok.\n\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2491\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nFrom IRC #sage-devel\n\n\n```\n<mhansen> jaap: There's a difference between sloane.A000001?? and sage.combinat.sloane_functions.A000001??\n<jaap> mhansen sage: sloane.A000001??\n<jaap> Error getting source: arg is not a module, class, method, function, traceback, frame, or code object\n<mhansen> jaap: A bit earlier I had said that  sloane.A000001?? doesn't work because of the way the sloane object works.\n<jaap> ok, but how about the OEIS user who wants to see how things work?\n<mhansen> If it's a bug, then it should be reported.\n<jaap> I think so\n```\n\n\n\n\n\n```\nsage: sloane.A000045\n Fibonacci numbers with index n >= 0\n\nsage: sloane.A000045?\n\nsage: sloane.A000045??\nError getting source: arg is not a module, class, method, function, traceback, frame, or code object\n\nsage: sage.combinat.sloane_functions.A000045??\n\nworks ok.\n\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2491\n\n",
     "created_at": "2008-03-12T14:13:50Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002491.json:
     "title": "Showing source from sloane_functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2491",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -72,7 +72,7 @@ archive/issue_comments_016879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2491#issuecomment-16879",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,16 +88,16 @@ That this doesn't work should be considered a bug.   The actual introspection is
 archive/issue_comments_016880.json:
 ```json
 {
-    "body": "Attachment [trac_2491.patch](tarball://root/attachments/some-uuid/ticket2491/trac_2491.patch) by mhansen created at 2008-08-27 01:56:10",
+    "body": "Attachment [trac_2491.patch](tarball://root/attachments/some-uuid/ticket2491/trac_2491.patch) by @mwhansen created at 2008-08-27 01:56:10",
     "created_at": "2008-08-27T01:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2491#issuecomment-16880",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_2491.patch](tarball://root/attachments/some-uuid/ticket2491/trac_2491.patch) by mhansen created at 2008-08-27 01:56:10
+Attachment [trac_2491.patch](tarball://root/attachments/some-uuid/ticket2491/trac_2491.patch) by @mwhansen created at 2008-08-27 01:56:10
 
 
 

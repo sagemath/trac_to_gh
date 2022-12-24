@@ -3,7 +3,7 @@
 archive/issues_006413.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  defeo jpflori lorenz\n\n\n```\nsage: p = 11\nsage: E = EllipticCurve(GF(p), [1,1])\nsage: E.multiplication_by_m(p)\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/Users/hlaw/.sage/temp/resid_tg082.upc.es/80890/_Users_hlaw__sage_init_sage_0.py in <module>()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.pyc in multiplication_by_m(self, m, x_only)\n   2133         #  and hence 2*my+a1*mx+a3 = (1/m)*(2*y+a1*x+a3)*d(mx)/dx\n   2134 \n-> 2135         my = ((2*y+a1*x+a3)*mx.derivative(x)/m - a1*mx-a3)/2\n   2136 \n   2137         return mx, my\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:10361)()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6105)()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:10342)()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.so in sage.rings.fraction_field_element.FractionFieldElement._div_ (sage/rings/fraction_field_element.c:5805)()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.so in sage.rings.fraction_field_element.FractionFieldElement.__init__ (sage/rings/fraction_field_element.c:1954)()\n\nZeroDivisionError: fraction field element division by zero\n```\n\nOne can see from the line that causes the error that the calculation of the *y*-component of the isogeny involves a division by *m*, which in this case is the characteristic of the ground field.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6413\n\n",
+    "body": "Assignee: tba\n\nCC:  @defeo jpflori @yyyyx4\n\n\n```\nsage: p = 11\nsage: E = EllipticCurve(GF(p), [1,1])\nsage: E.multiplication_by_m(p)\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/Users/hlaw/.sage/temp/resid_tg082.upc.es/80890/_Users_hlaw__sage_init_sage_0.py in <module>()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.pyc in multiplication_by_m(self, m, x_only)\n   2133         #  and hence 2*my+a1*mx+a3 = (1/m)*(2*y+a1*x+a3)*d(mx)/dx\n   2134 \n-> 2135         my = ((2*y+a1*x+a3)*mx.derivative(x)/m - a1*mx-a3)/2\n   2136 \n   2137         return mx, my\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:10361)()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6105)()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:10342)()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.so in sage.rings.fraction_field_element.FractionFieldElement._div_ (sage/rings/fraction_field_element.c:5805)()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.so in sage.rings.fraction_field_element.FractionFieldElement.__init__ (sage/rings/fraction_field_element.c:1954)()\n\nZeroDivisionError: fraction field element division by zero\n```\n\nOne can see from the line that causes the error that the calculation of the *y*-component of the isogeny involves a division by *m*, which in this case is the characteristic of the ground field.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6413\n\n",
     "created_at": "2009-06-25T18:23:38Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_006413.json:
     "title": "Retrieving the multiplication-by-p isogeny on elliptic curves over fields of characteristic p fails.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6413",
-    "user": "hlaw"
+    "user": "@unzvfu"
 }
 ```
 Assignee: tba
 
-CC:  defeo jpflori lorenz
+CC:  @defeo jpflori @yyyyx4
 
 
 ```
@@ -70,7 +70,7 @@ archive/issue_comments_051494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6413#issuecomment-51494",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_051495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6413#issuecomment-51495",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

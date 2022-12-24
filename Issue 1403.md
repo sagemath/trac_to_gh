@@ -3,7 +3,7 @@
 archive/issues_001403.json:
 ```json
 {
-    "body": "Assignee: was\n\nJustin Walker reported:\n\n```\n'mwrank' doesn't like it if you just exit (by typing \"^D\" or, more or  \nless equivalently, by \"ending a file\").\n\nThus, if you run 'mwrank' and give it a file containing, for example,  \n\"[0,0,1,-1,0]\" and nothing else, it will barf at the end.  If your  \nfile contains \"[0,0,0,0,0]\", the program sweetly closes up shop (when  \nit reads this) and quits.\n\nThe error I get is\n   bad ZZ input\n   Abort trap\n\nAnyone know why this doesn't show up in the test logs?  Is it worth  \ntracking down?\n\nThe issue is that the terminating condition for input processing in  \n'getcurve()' is a \"null curve\" (\"\"[0,0,0,0,0]\"\"), rather than EOF.  \nAn EOF is an error condition, hence the abort(). \n```\n\n\nSee also #1402.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1403\n\n",
+    "body": "Assignee: @williamstein\n\nJustin Walker reported:\n\n```\n'mwrank' doesn't like it if you just exit (by typing \"^D\" or, more or  \nless equivalently, by \"ending a file\").\n\nThus, if you run 'mwrank' and give it a file containing, for example,  \n\"[0,0,1,-1,0]\" and nothing else, it will barf at the end.  If your  \nfile contains \"[0,0,0,0,0]\", the program sweetly closes up shop (when  \nit reads this) and quits.\n\nThe error I get is\n   bad ZZ input\n   Abort trap\n\nAnyone know why this doesn't show up in the test logs?  Is it worth  \ntracking down?\n\nThe issue is that the terminating condition for input processing in  \n'getcurve()' is a \"null curve\" (\"\"[0,0,0,0,0]\"\"), rather than EOF.  \nAn EOF is an error condition, hence the abort(). \n```\n\n\nSee also #1402.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1403\n\n",
     "created_at": "2007-12-05T11:42:07Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001403.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Justin Walker reported:
 
@@ -93,7 +93,7 @@ archive/issue_comments_009050.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1403#issuecomment-9050",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -106,16 +106,16 @@ patch for file qrank/getcurve.cc which fixes the problem
 archive/issue_comments_009051.json:
 ```json
 {
-    "body": "Attachment [getcurve.patch](tarball://root/attachments/some-uuid/ticket1403/getcurve.patch) by cremona created at 2007-12-05 20:23:15\n\nI have fixed this.  Patch attached.  JEC",
+    "body": "Attachment [getcurve.patch](tarball://root/attachments/some-uuid/ticket1403/getcurve.patch) by @JohnCremona created at 2007-12-05 20:23:15\n\nI have fixed this.  Patch attached.  JEC",
     "created_at": "2007-12-05T20:23:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1403#issuecomment-9051",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [getcurve.patch](tarball://root/attachments/some-uuid/ticket1403/getcurve.patch) by cremona created at 2007-12-05 20:23:15
+Attachment [getcurve.patch](tarball://root/attachments/some-uuid/ticket1403/getcurve.patch) by @JohnCremona created at 2007-12-05 20:23:15
 
 I have fixed this.  Patch attached.  JEC
 
@@ -131,7 +131,7 @@ archive/issue_comments_009052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1403#issuecomment-9052",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_009059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1403#issuecomment-9059",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_009060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1403#issuecomment-9060",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -294,16 +294,16 @@ Changing status from closed to reopened.
 archive/issue_comments_009061.json:
 ```json
 {
-    "body": "Attachment [reader.h.patch](tarball://root/attachments/some-uuid/ticket1403/reader.h.patch) by cremona created at 2007-12-06 09:09:08\n\nSecond patch file reader.h.patch to be applied to qcurves/reader.h will stop the same happening for other binaries (e.g. tate, conductor etc) built in the qcurves directory.",
+    "body": "Attachment [reader.h.patch](tarball://root/attachments/some-uuid/ticket1403/reader.h.patch) by @JohnCremona created at 2007-12-06 09:09:08\n\nSecond patch file reader.h.patch to be applied to qcurves/reader.h will stop the same happening for other binaries (e.g. tate, conductor etc) built in the qcurves directory.",
     "created_at": "2007-12-06T09:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1403#issuecomment-9061",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [reader.h.patch](tarball://root/attachments/some-uuid/ticket1403/reader.h.patch) by cremona created at 2007-12-06 09:09:08
+Attachment [reader.h.patch](tarball://root/attachments/some-uuid/ticket1403/reader.h.patch) by @JohnCremona created at 2007-12-06 09:09:08
 
 Second patch file reader.h.patch to be applied to qcurves/reader.h will stop the same happening for other binaries (e.g. tate, conductor etc) built in the qcurves directory.
 

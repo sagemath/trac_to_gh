@@ -3,7 +3,7 @@
 archive/issues_007602.json:
 ```json
 {
-    "body": "Assignee: was\n\nAndyNovo wrote on [sage-devel]:\n\n```\nWe've been working on factoring polynomials in FLINT very intensively the last couple months.  So we've been making floating point LLL in FLINT.  During the process I just discovered what I thought was my bug but is actually a bug in fpLLL which means it's a bug in SAGE too.\n\nHere's a simple lattice which triggers the bug on my 32 bit machine.\n(It's the zero rows which are not handled cleanly causing it to size\nreduce in very odd ways...)  For a 64 bit machine I have a much larger example which breaks it.\n\n[[0 0 0 0 0]\n[0 0 0 0 0]\n[1 0 0 0 11]\n[0 1 0 0 47]\n[0 0 1 0 3748]]\n\nTo test the bug in SAGE just run the following code:\n\nmatrix([[0,0,0,0,0],[0,0,0,0,0],[1,0,0,0,11],[0,1,0,0,47],\n[0,0,1,0,3748]]).LLL()\n\n(This was on SAGE 4-1-1 the August 14th version.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7602\n\n",
+    "body": "Assignee: @williamstein\n\nAndyNovo wrote on [sage-devel]:\n\n```\nWe've been working on factoring polynomials in FLINT very intensively the last couple months.  So we've been making floating point LLL in FLINT.  During the process I just discovered what I thought was my bug but is actually a bug in fpLLL which means it's a bug in SAGE too.\n\nHere's a simple lattice which triggers the bug on my 32 bit machine.\n(It's the zero rows which are not handled cleanly causing it to size\nreduce in very odd ways...)  For a 64 bit machine I have a much larger example which breaks it.\n\n[[0 0 0 0 0]\n[0 0 0 0 0]\n[1 0 0 0 11]\n[0 1 0 0 47]\n[0 0 1 0 3748]]\n\nTo test the bug in SAGE just run the following code:\n\nmatrix([[0,0,0,0,0],[0,0,0,0,0],[1,0,0,0,11],[0,1,0,0,47],\n[0,0,1,0,3748]]).LLL()\n\n(This was on SAGE 4-1-1 the August 14th version.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7602\n\n",
     "created_at": "2009-12-04T11:13:19Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_007602.json:
     "title": "bug in fpLLL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7602",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 AndyNovo wrote on [sage-devel]:
 
@@ -59,7 +59,7 @@ archive/issue_comments_064863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7602#issuecomment-64863",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_064864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7602#issuecomment-64864",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_064865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7602#issuecomment-64865",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_064866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7602#issuecomment-64866",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_064867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7602#issuecomment-64867",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_064868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7602#issuecomment-64868",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_064869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7602",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7602#issuecomment-64869",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

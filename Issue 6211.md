@@ -3,7 +3,7 @@
 archive/issues_006211.json:
 ```json
 {
-    "body": "CC:  mhansen\n\nReported by Ricardo on sage-support:\n\n\n```\nI had installed sage 3.4.1 in my Ubuntu machine, and every time I did\nsomething like:\n\nf=function(\"f\",x)\nintegrate(f,x,0,1)\n\nin a notebook, sage showed me the equation using an integral symbol. I\njust installed sage 4.0, and when I do the same, I get:\n\nintegrate(f(x), x, 0, 1)\n\n\nno matter if I check the Typeset Box. It happens also with\nderivatives.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6211\n\n",
+    "body": "CC:  @mwhansen\n\nReported by Ricardo on sage-support:\n\n\n```\nI had installed sage 3.4.1 in my Ubuntu machine, and every time I did\nsomething like:\n\nf=function(\"f\",x)\nintegrate(f,x,0,1)\n\nin a notebook, sage showed me the equation using an integral symbol. I\njust installed sage 4.0, and when I do the same, I get:\n\nintegrate(f(x), x, 0, 1)\n\n\nno matter if I check the Typeset Box. It happens also with\nderivatives.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6211\n\n",
     "created_at": "2009-06-04T20:06:11Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006211.json:
     "title": "typesetting symbolic integrals broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6211",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-CC:  mhansen
+CC:  @mwhansen
 
 Reported by Ricardo on sage-support:
 
@@ -56,7 +56,7 @@ archive/issue_comments_049623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6211#issuecomment-49623",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_049624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6211#issuecomment-49624",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_049625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6211#issuecomment-49625",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -134,16 +134,16 @@ This was about typesetting integrals, but since a description of exp not typeset
 archive/issue_comments_049626.json:
 ```json
 {
-    "body": "Attachment [trac_6211-exp_latex.patch](tarball://root/attachments/some-uuid/ticket6211/trac_6211-exp_latex.patch) by burcin created at 2009-06-14 21:36:57",
+    "body": "Attachment [trac_6211-exp_latex.patch](tarball://root/attachments/some-uuid/ticket6211/trac_6211-exp_latex.patch) by @burcin created at 2009-06-14 21:36:57",
     "created_at": "2009-06-14T21:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6211#issuecomment-49626",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6211-exp_latex.patch](tarball://root/attachments/some-uuid/ticket6211/trac_6211-exp_latex.patch) by burcin created at 2009-06-14 21:36:57
+Attachment [trac_6211-exp_latex.patch](tarball://root/attachments/some-uuid/ticket6211/trac_6211-exp_latex.patch) by @burcin created at 2009-06-14 21:36:57
 
 
 
@@ -157,7 +157,7 @@ archive/issue_comments_049627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6211#issuecomment-49627",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_049628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6211",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6211#issuecomment-49628",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

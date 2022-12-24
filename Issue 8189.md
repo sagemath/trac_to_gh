@@ -14,7 +14,7 @@ archive/issues_008189.json:
     "title": "hg.py: fix some docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8189",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -44,7 +44,7 @@ archive/issue_comments_072181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8189#issuecomment-72181",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -57,16 +57,16 @@ Changing status from new to needs_review.
 archive/issue_comments_072182.json:
 ```json
 {
-    "body": "Attachment [trac_8189-hg.patch](tarball://root/attachments/some-uuid/ticket8189/trac_8189-hg.patch) by jhpalmieri created at 2010-02-05 04:55:30",
+    "body": "Attachment [trac_8189-hg.patch](tarball://root/attachments/some-uuid/ticket8189/trac_8189-hg.patch) by @jhpalmieri created at 2010-02-05 04:55:30",
     "created_at": "2010-02-05T04:55:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8189#issuecomment-72182",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8189-hg.patch](tarball://root/attachments/some-uuid/ticket8189/trac_8189-hg.patch) by jhpalmieri created at 2010-02-05 04:55:30
+Attachment [trac_8189-hg.patch](tarball://root/attachments/some-uuid/ticket8189/trac_8189-hg.patch) by @jhpalmieri created at 2010-02-05 04:55:30
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_072184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8189#issuecomment-72184",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

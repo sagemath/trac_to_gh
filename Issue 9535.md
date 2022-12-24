@@ -3,7 +3,7 @@
 archive/issues_009535.json:
 ```json
 {
-    "body": "Assignee: cremona\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9535\n\n",
+    "body": "Assignee: @JohnCremona\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9535\n\n",
     "created_at": "2010-07-18T07:01:21Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_009535.json:
     "title": "elliptic curves modular symbols should call eclib by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9535",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_091839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9535#issuecomment-91839",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_091840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9535#issuecomment-91840",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_091841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9535#issuecomment-91841",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_091842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9535#issuecomment-91842",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_091843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9535#issuecomment-91843",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_091844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9535#issuecomment-91844",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_091845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9535#issuecomment-91845",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

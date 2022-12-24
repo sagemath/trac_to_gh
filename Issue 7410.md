@@ -14,7 +14,7 @@ archive/issues_007410.json:
     "title": "Strings sometimes truncated in notebook mode.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7410",
-    "user": "AJonsson"
+    "user": "@haaninjo"
 }
 ```
 Assignee: boothby
@@ -55,7 +55,7 @@ archive/issue_comments_062357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7410#issuecomment-62357",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_062358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7410#issuecomment-62358",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_062359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7410#issuecomment-62359",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_062360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7410#issuecomment-62360",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_062361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7410#issuecomment-62361",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_062362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7410",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7410#issuecomment-62362",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

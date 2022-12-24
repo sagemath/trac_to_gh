@@ -3,7 +3,7 @@
 archive/issues_007921.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat mhansen robertwb roed\n\nWith this patch, all parents and elements can inherit code from categories. This is implemented via __getattr__.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7921\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat @mwhansen @robertwb @roed314\n\nWith this patch, all parents and elements can inherit code from categories. This is implemented via __getattr__.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7921\n\n",
     "created_at": "2010-01-13T16:05:49Z",
     "labels": [
         "categories",
@@ -14,12 +14,12 @@ archive/issues_007921.json:
     "title": "Categories for extension types via __getattr___",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7921",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
-CC:  sage-combinat mhansen robertwb roed
+CC:  sage-combinat @mwhansen @robertwb @roed314
 
 With this patch, all parents and elements can inherit code from categories. This is implemented via __getattr__.
 
@@ -39,7 +39,7 @@ archive/issue_comments_068911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68911",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_068912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68912",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_068913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68913",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_068914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68914",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_068915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68915",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_068916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68916",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -145,16 +145,16 @@ Robert: please let me know if I should open a separate ticket for the second pat
 archive/issue_comments_068917.json:
 ```json
 {
-    "body": "Attachment [categories_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket7921/categories_testsuite-nt.patch) by nthiery created at 2010-01-17 20:59:52\n\nPatch 2: stronger category tests",
+    "body": "Attachment [categories_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket7921/categories_testsuite-nt.patch) by @nthiery created at 2010-01-17 20:59:52\n\nPatch 2: stronger category tests",
     "created_at": "2010-01-17T20:59:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68917",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [categories_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket7921/categories_testsuite-nt.patch) by nthiery created at 2010-01-17 20:59:52
+Attachment [categories_testsuite-nt.patch](tarball://root/attachments/some-uuid/ticket7921/categories_testsuite-nt.patch) by @nthiery created at 2010-01-17 20:59:52
 
 Patch 2: stronger category tests
 
@@ -170,7 +170,7 @@ archive/issue_comments_068918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68918",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_068919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68919",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_068920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68920",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_068921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68921",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_068922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68922",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_068923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68923",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_068924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68924",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_068925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68925",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_068926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68926",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_068927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68927",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_068928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68928",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_068931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68931",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_068932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68932",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_068933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7921",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7921#issuecomment-68933",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 

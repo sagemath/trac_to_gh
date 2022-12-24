@@ -14,7 +14,7 @@ archive/issues_004908.json:
     "title": "convert sage.databases.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4908",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4908
 archive/issue_comments_037253.json:
 ```json
 {
-    "body": "Attachment [trac_4908.patch](tarball://root/attachments/some-uuid/ticket4908/trac_4908.patch) by mhansen created at 2009-01-02 02:36:28",
+    "body": "Attachment [trac_4908.patch](tarball://root/attachments/some-uuid/ticket4908/trac_4908.patch) by @mwhansen created at 2009-01-02 02:36:28",
     "created_at": "2009-01-02T02:36:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4908",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4908#issuecomment-37253",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4908.patch](tarball://root/attachments/some-uuid/ticket4908/trac_4908.patch) by mhansen created at 2009-01-02 02:36:28
+Attachment [trac_4908.patch](tarball://root/attachments/some-uuid/ticket4908/trac_4908.patch) by @mwhansen created at 2009-01-02 02:36:28
 
 
 

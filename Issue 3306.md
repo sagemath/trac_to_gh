@@ -3,7 +3,7 @@
 archive/issues_003306.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  fbissey\n\nI've attached a patch that completely replaces the minimal symmetrica makefile with a much more standard version.  It includes a shared library with a soname (the symmetrica version number must be maintained in the package; currently its a variable in the makefile) and adds normal targets like clean, install, etc.\n\nThis probably needs to be fixed to do shared libraries correctly for non-linux; I'm not sure exactly how that is supposed to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3306\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @kiwifb\n\nI've attached a patch that completely replaces the minimal symmetrica makefile with a much more standard version.  It includes a shared library with a soname (the symmetrica version number must be maintained in the package; currently its a variable in the makefile) and adds normal targets like clean, install, etc.\n\nThis probably needs to be fixed to do shared libraries correctly for non-linux; I'm not sure exactly how that is supposed to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3306\n\n",
     "created_at": "2008-05-26T03:46:45Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_003306.json:
     "title": "[with patch; needs review] shared library for symmetrica",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3306",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
 
-CC:  fbissey
+CC:  @kiwifb
 
 I've attached a patch that completely replaces the minimal symmetrica makefile with a much more standard version.  It includes a shared library with a soname (the symmetrica version number must be maintained in the package; currently its a variable in the makefile) and adds normal targets like clean, install, etc.
 
@@ -65,7 +65,7 @@ archive/issue_comments_022866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22866",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_022870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22870",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_022872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22872",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_022873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22873",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_022874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22874",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_022875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22875",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_022876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3306",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22876",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

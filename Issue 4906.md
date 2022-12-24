@@ -14,7 +14,7 @@ archive/issues_004906.json:
     "title": "convert sage.combinat.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4906",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -39,7 +39,7 @@ archive/issue_comments_037224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37224",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_037225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37225",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_037226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37226",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_037227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37227",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_037228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37228",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_037229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37229",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_037230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37230",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_037231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37231",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_037232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37232",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -294,16 +294,16 @@ Ok, so if you want to do some of those tonigh, by memory, I would tell you to lo
 archive/issue_comments_037233.json:
 ```json
 {
-    "body": "Attachment [sage.combinat-final.patch](tarball://root/attachments/some-uuid/ticket4906/sage.combinat-final.patch) by mhansen created at 2009-02-21 19:16:11",
+    "body": "Attachment [sage.combinat-final.patch](tarball://root/attachments/some-uuid/ticket4906/sage.combinat-final.patch) by @mwhansen created at 2009-02-21 19:16:11",
     "created_at": "2009-02-21T19:16:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37233",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage.combinat-final.patch](tarball://root/attachments/some-uuid/ticket4906/sage.combinat-final.patch) by mhansen created at 2009-02-21 19:16:11
+Attachment [sage.combinat-final.patch](tarball://root/attachments/some-uuid/ticket4906/sage.combinat-final.patch) by @mwhansen created at 2009-02-21 19:16:11
 
 
 
@@ -353,7 +353,7 @@ archive/issue_comments_037236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37236",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -605,7 +605,7 @@ archive/issue_comments_037237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37237",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -624,7 +624,7 @@ archive/issue_comments_037238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37238",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -650,7 +650,7 @@ archive/issue_comments_037239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37239",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -663,16 +663,16 @@ Comments on the patch by Nicolas
 archive/issue_comments_037240.json:
 ```json
 {
-    "body": "Attachment [comments](tarball://root/attachments/some-uuid/ticket4906/comments) by hivert created at 2009-02-24 09:38:57\n\nNew corrections concerning set_partition.py and set_partition_ordered.py:\n\n## File set_partition.py\n\n* function less: missing <\n\n```\n-    Returns True if s < t otherwise it returns False.\n+    Returns True if s t otherwise it returns False.\n```\n \n\n == File ordered_set_partition.py ==\n\n* main doc: missing brackets (twice):\n\n```\n-EXAMPLES:\n-  There are 13 ordered set partitions of {1,2,3}.\n+EXAMPLES: There are 13 ordered set partitions of 1,2,3.\n \n-  There are 12 ordered set partitions of {1,2,3,4} whose underlying\n+There are 12 ordered set partitions of 1,2,3,4 whose underlying\n```\n",
+    "body": "Attachment [comments](tarball://root/attachments/some-uuid/ticket4906/comments) by @hivert created at 2009-02-24 09:38:57\n\nNew corrections concerning set_partition.py and set_partition_ordered.py:\n\n## File set_partition.py\n\n* function less: missing <\n\n```\n-    Returns True if s < t otherwise it returns False.\n+    Returns True if s t otherwise it returns False.\n```\n \n\n == File ordered_set_partition.py ==\n\n* main doc: missing brackets (twice):\n\n```\n-EXAMPLES:\n-  There are 13 ordered set partitions of {1,2,3}.\n+EXAMPLES: There are 13 ordered set partitions of 1,2,3.\n \n-  There are 12 ordered set partitions of {1,2,3,4} whose underlying\n+There are 12 ordered set partitions of 1,2,3,4 whose underlying\n```\n",
     "created_at": "2009-02-24T09:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37240",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [comments](tarball://root/attachments/some-uuid/ticket4906/comments) by hivert created at 2009-02-24 09:38:57
+Attachment [comments](tarball://root/attachments/some-uuid/ticket4906/comments) by @hivert created at 2009-02-24 09:38:57
 
 New corrections concerning set_partition.py and set_partition_ordered.py:
 
@@ -712,7 +712,7 @@ archive/issue_comments_037241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37241",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -873,7 +873,7 @@ archive/issue_comments_037242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37242",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -913,16 +913,16 @@ Michael
 archive/issue_comments_037244.json:
 ```json
 {
-    "body": "Attachment [combinat-fixes.patch](tarball://root/attachments/some-uuid/ticket4906/combinat-fixes.patch) by mhansen created at 2009-02-24 16:41:58",
+    "body": "Attachment [combinat-fixes.patch](tarball://root/attachments/some-uuid/ticket4906/combinat-fixes.patch) by @mwhansen created at 2009-02-24 16:41:58",
     "created_at": "2009-02-24T16:41:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4906",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4906#issuecomment-37244",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [combinat-fixes.patch](tarball://root/attachments/some-uuid/ticket4906/combinat-fixes.patch) by mhansen created at 2009-02-24 16:41:58
+Attachment [combinat-fixes.patch](tarball://root/attachments/some-uuid/ticket4906/combinat-fixes.patch) by @mwhansen created at 2009-02-24 16:41:58
 
 
 

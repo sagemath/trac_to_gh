@@ -14,7 +14,7 @@ archive/issues_000516.json:
     "title": "memory leak in libSINGULAR conversion routine",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/516",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_002607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/516#issuecomment-2607",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -50,16 +50,16 @@ As trac doesn't accept my attachment, try this: http://sage.math.washington.edu/
 archive/issue_comments_002608.json:
 ```json
 {
-    "body": "Changing assignee from somebody to malb.",
+    "body": "Changing assignee from somebody to @malb.",
     "created_at": "2007-08-29T20:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/516#issuecomment-2608",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from somebody to malb.
+Changing assignee from somebody to @malb.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_002609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/516#issuecomment-2609",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_002610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/516",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/516#issuecomment-2610",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006021.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\nKeywords: elliptic curve periods\n\nFor elliptic curves over number fields we currently only support the period lattice for real embeddings.  here we will implement the same for complex embeddings too (using the complex AGM method to compute the basis).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6021\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nKeywords: elliptic curve periods\n\nFor elliptic curves over number fields we currently only support the period lattice for real embeddings.  here we will implement the same for complex embeddings too (using the complex AGM method to compute the basis).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6021\n\n",
     "created_at": "2009-05-11T14:10:05Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_006021.json:
     "title": "Implement period lattices for elliptic curves over CC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6021",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: elliptic curve periods
 
@@ -41,7 +41,7 @@ archive/issue_comments_047939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47939",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_047940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47940",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_047941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47941",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_047942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47942",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_047943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47943",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_047944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47944",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_047946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47946",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -223,16 +223,16 @@ I will look into it.
 archive/issue_comments_047947.json:
 ```json
 {
-    "body": "Attachment [trac_6021_new.patch](tarball://root/attachments/some-uuid/ticket6021/trac_6021_new.patch) by cremona created at 2009-05-17 16:56:03\n\nReplaces all previous; based on 4.0.alpha0",
+    "body": "Attachment [trac_6021_new.patch](tarball://root/attachments/some-uuid/ticket6021/trac_6021_new.patch) by @JohnCremona created at 2009-05-17 16:56:03\n\nReplaces all previous; based on 4.0.alpha0",
     "created_at": "2009-05-17T16:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47947",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6021_new.patch](tarball://root/attachments/some-uuid/ticket6021/trac_6021_new.patch) by cremona created at 2009-05-17 16:56:03
+Attachment [trac_6021_new.patch](tarball://root/attachments/some-uuid/ticket6021/trac_6021_new.patch) by @JohnCremona created at 2009-05-17 16:56:03
 
 Replaces all previous; based on 4.0.alpha0
 
@@ -248,7 +248,7 @@ archive/issue_comments_047948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47948",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_047949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47949",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_047950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47950",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -317,7 +317,7 @@ archive/issue_comments_047951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47951",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -330,16 +330,16 @@ I'm headed to bed soon, but I think Pari is involved in the root finding.
 archive/issue_comments_047952.json:
 ```json
 {
-    "body": "Attachment [embed_qqbar.patch](tarball://root/attachments/some-uuid/ticket6021/embed_qqbar.patch) by cremona created at 2009-05-22 15:03:55\n\nApply after previous",
+    "body": "Attachment [embed_qqbar.patch](tarball://root/attachments/some-uuid/ticket6021/embed_qqbar.patch) by @JohnCremona created at 2009-05-22 15:03:55\n\nApply after previous",
     "created_at": "2009-05-22T15:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47952",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [embed_qqbar.patch](tarball://root/attachments/some-uuid/ticket6021/embed_qqbar.patch) by cremona created at 2009-05-22 15:03:55
+Attachment [embed_qqbar.patch](tarball://root/attachments/some-uuid/ticket6021/embed_qqbar.patch) by @JohnCremona created at 2009-05-22 15:03:55
 
 Apply after previous
 
@@ -355,7 +355,7 @@ archive/issue_comments_047953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47953",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -368,16 +368,16 @@ apply after previous two
 archive/issue_comments_047954.json:
 ```json
 {
-    "body": "Attachment [cperiods.patch](tarball://root/attachments/some-uuid/ticket6021/cperiods.patch) by cremona created at 2009-05-22 15:13:07\n\nOK, so I have added two new patches:  embed_qqbar.patch is independent of the others, and adds functionality to the refine_embedding() function for embeddings of number fields to allow extending any embedding into RR or CC to an embedding into AA or QQbar (choosing the correct root).  Then cperiods.patch uses that to rethink how precision is handled for period lattices (real and complex):  the embedding supplied by the user is only used to determine which embedding is wanted, not its precision (which is ignored).  the lattice converts this (on construction) into an embedding into AA or QQbar, which it keeps.  Then the period-finding functions do as much as they can exactly (i.e. in AA or QQbar), up as far as computing sqrt(ei-ej) where e1,e2,e3 are the roots of the 2-division polynomial (so these expressions may have degree 6* the degree of the field);  only then are they converted into RR or CC (with the correct precision) for the transcendental step of computing AGMs.\n\nTo test this I removed the \"...\" which worried robertwb and reran the doctests -- they now all pass and agree on both 32 and 64-bit machines.\n\nI think this is a good strategy to use for number field embeddings (a.k.a. infinite places): separate the information \"which place\" from the information \"what precision\".\n\nIf this is approved, I will use the same tactic to improve the precision of the elliptic log (since the next thing on this agenda is to implement complex elliptic logs).",
+    "body": "Attachment [cperiods.patch](tarball://root/attachments/some-uuid/ticket6021/cperiods.patch) by @JohnCremona created at 2009-05-22 15:13:07\n\nOK, so I have added two new patches:  embed_qqbar.patch is independent of the others, and adds functionality to the refine_embedding() function for embeddings of number fields to allow extending any embedding into RR or CC to an embedding into AA or QQbar (choosing the correct root).  Then cperiods.patch uses that to rethink how precision is handled for period lattices (real and complex):  the embedding supplied by the user is only used to determine which embedding is wanted, not its precision (which is ignored).  the lattice converts this (on construction) into an embedding into AA or QQbar, which it keeps.  Then the period-finding functions do as much as they can exactly (i.e. in AA or QQbar), up as far as computing sqrt(ei-ej) where e1,e2,e3 are the roots of the 2-division polynomial (so these expressions may have degree 6* the degree of the field);  only then are they converted into RR or CC (with the correct precision) for the transcendental step of computing AGMs.\n\nTo test this I removed the \"...\" which worried robertwb and reran the doctests -- they now all pass and agree on both 32 and 64-bit machines.\n\nI think this is a good strategy to use for number field embeddings (a.k.a. infinite places): separate the information \"which place\" from the information \"what precision\".\n\nIf this is approved, I will use the same tactic to improve the precision of the elliptic log (since the next thing on this agenda is to implement complex elliptic logs).",
     "created_at": "2009-05-22T15:13:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47954",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [cperiods.patch](tarball://root/attachments/some-uuid/ticket6021/cperiods.patch) by cremona created at 2009-05-22 15:13:07
+Attachment [cperiods.patch](tarball://root/attachments/some-uuid/ticket6021/cperiods.patch) by @JohnCremona created at 2009-05-22 15:13:07
 
 OK, so I have added two new patches:  embed_qqbar.patch is independent of the others, and adds functionality to the refine_embedding() function for embeddings of number fields to allow extending any embedding into RR or CC to an embedding into AA or QQbar (choosing the correct root).  Then cperiods.patch uses that to rethink how precision is handled for period lattices (real and complex):  the embedding supplied by the user is only used to determine which embedding is wanted, not its precision (which is ignored).  the lattice converts this (on construction) into an embedding into AA or QQbar, which it keeps.  Then the period-finding functions do as much as they can exactly (i.e. in AA or QQbar), up as far as computing sqrt(ei-ej) where e1,e2,e3 are the roots of the 2-division polynomial (so these expressions may have degree 6* the degree of the field);  only then are they converted into RR or CC (with the correct precision) for the transcendental step of computing AGMs.
 
@@ -399,7 +399,7 @@ archive/issue_comments_047955.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47955",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_047956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47956",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_047957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47957",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -461,7 +461,7 @@ archive/issue_comments_047958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47958",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -479,7 +479,7 @@ archive/issue_comments_047959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47959",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_047960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47960",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -515,7 +515,7 @@ archive/issue_comments_047961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6021#issuecomment-47961",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

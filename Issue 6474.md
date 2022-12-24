@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6474
 archive/issue_comments_052331.json:
 ```json
 {
-    "body": "Changing assignee from tba to jhpalmieri.",
+    "body": "Changing assignee from tba to @jhpalmieri.",
     "created_at": "2009-07-07T14:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6474#issuecomment-52331",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from tba to jhpalmieri.
+Changing assignee from tba to @jhpalmieri.
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_052332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6474#issuecomment-52332",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_052333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6474#issuecomment-52333",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -107,16 +107,16 @@ Changing status from new to assigned.
 archive/issue_comments_052334.json:
 ```json
 {
-    "body": "Attachment [trac_6474_pdf.patch](tarball://root/attachments/some-uuid/ticket6474/trac_6474_pdf.patch) by jhpalmieri created at 2009-07-07 14:59:25",
+    "body": "Attachment [trac_6474_pdf.patch](tarball://root/attachments/some-uuid/ticket6474/trac_6474_pdf.patch) by @jhpalmieri created at 2009-07-07 14:59:25",
     "created_at": "2009-07-07T14:59:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6474#issuecomment-52334",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6474_pdf.patch](tarball://root/attachments/some-uuid/ticket6474/trac_6474_pdf.patch) by jhpalmieri created at 2009-07-07 14:59:25
+Attachment [trac_6474_pdf.patch](tarball://root/attachments/some-uuid/ticket6474/trac_6474_pdf.patch) by @jhpalmieri created at 2009-07-07 14:59:25
 
 
 
@@ -153,7 +153,7 @@ archive/issue_comments_052336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6474",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6474#issuecomment-52336",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

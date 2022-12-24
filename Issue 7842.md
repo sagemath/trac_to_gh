@@ -3,7 +3,7 @@
 archive/issues_007842.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: attrcall\n\nThe attached patch allows for the following:\n\n\n```\n            sage: xseries = attrcall('series', x)\n            sage: xseries(sin(x), 4)\n            1*x + (-1/6)*x^3 + Order(x^4)\n```\n\n\nThis is used in #7753\n\nIssue created by migration from https://trac.sagemath.org/ticket/7842\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: attrcall\n\nThe attached patch allows for the following:\n\n\n```\n            sage: xseries = attrcall('series', x)\n            sage: xseries(sin(x), 4)\n            1*x + (-1/6)*x^3 + Order(x^4)\n```\n\n\nThis is used in #7753\n\nIssue created by migration from https://trac.sagemath.org/ticket/7842\n\n",
     "created_at": "2010-01-04T15:27:08Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_007842.json:
     "title": "Let attrcall objects accept further arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7842",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7842
 archive/issue_comments_067929.json:
 ```json
 {
-    "body": "Attachment [trac_7842-attrcall-nt.patch](tarball://root/attachments/some-uuid/ticket7842/trac_7842-attrcall-nt.patch) by nthiery created at 2010-01-04 15:28:23",
+    "body": "Attachment [trac_7842-attrcall-nt.patch](tarball://root/attachments/some-uuid/ticket7842/trac_7842-attrcall-nt.patch) by @nthiery created at 2010-01-04 15:28:23",
     "created_at": "2010-01-04T15:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7842#issuecomment-67929",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7842-attrcall-nt.patch](tarball://root/attachments/some-uuid/ticket7842/trac_7842-attrcall-nt.patch) by nthiery created at 2010-01-04 15:28:23
+Attachment [trac_7842-attrcall-nt.patch](tarball://root/attachments/some-uuid/ticket7842/trac_7842-attrcall-nt.patch) by @nthiery created at 2010-01-04 15:28:23
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_067930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7842#issuecomment-67930",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_067931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7842#issuecomment-67931",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_067932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7842#issuecomment-67932",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_067933.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7842#issuecomment-67933",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_067934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7842#issuecomment-67934",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_067935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7842#issuecomment-67935",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

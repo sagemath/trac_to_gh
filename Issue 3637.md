@@ -3,7 +3,7 @@
 archive/issues_003637.json:
 ```json
 {
-    "body": "Assignee: was\n\nImplement Jacobi sums of Dirichlet characters.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3637\n\n",
+    "body": "Assignee: @williamstein\n\nImplement Jacobi sums of Dirichlet characters.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3637\n\n",
     "created_at": "2008-07-10T21:55:11Z",
     "labels": [
         "modular forms",
@@ -17,7 +17,7 @@ archive/issues_003637.json:
     "user": "ekirkman"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Implement Jacobi sums of Dirichlet characters.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3637
 archive/issue_comments_025724.json:
 ```json
 {
-    "body": "Attachment [trac3637-jacobi_sums.patch](tarball://root/attachments/some-uuid/ticket3637/trac3637-jacobi_sums.patch) by wdj created at 2008-07-12 09:55:49\n\nApplies to 3.0.4 and passes sage -testall.\n\nLet e, f be elements of D = DirichletGroup(N), for some N, and define the Jacobi sum by \nJ(e,f) = sum([e(x)*f(1-x) for x in IntegerModRing(N)]).\nExcept in \"corner cases\", this patch defines J(e,f) by G(e)*G(f)/G(e*f). \nThis is okay in most cases. (I'm having to rely on \nwww.math.mcgill.ca/goren/SeminarOnCohomology/mycohomologytalk.pdf since my books are disorganized due to some renovation at my house, but I'm going to assume Proposition 3.3 in that paper is correct.) However, the case of J(trivial, trivial) does not always seem to return the correct answer in general:\n\nsage: N = 9\nsage: D = DirichletGroup(N)\nsage: g = D(1)\nsage: g.jacobi_sum(g)\n7\nsage: sum([g(x)*g(1-x) for x in IntegerModRing(N)])\n3\n\nI could be wrong but possibly this needs to be looked at.\n\nIn any case, here are some amusing examples which could be mixed into the \ndocstring if desired:\n\nsage: N = 9\nsage: D = DirichletGroup(N)\nsage: e = D.0\nsage: e(-1)\n-1\nsage: f = D[-1]\nsage: e*f\n[1]\nsage: j1 = e.jacobi_sum(e)\nsage: j2 = f.jacobi_sum(f)\nsage: j3 = e.jacobi_sum(f)\nsage: j1*j1.conjugate(); j2*j2.conjugate(); j3*j3.conjugate()\n9\n9\n1\nsage: j1; (j1/3)^3\n-3*zeta18^3\n1\nsage: j2; (j2/3)^3\n3*zeta18^3 - 3\n1",
+    "body": "Attachment [trac3637-jacobi_sums.patch](tarball://root/attachments/some-uuid/ticket3637/trac3637-jacobi_sums.patch) by @wdjoyner created at 2008-07-12 09:55:49\n\nApplies to 3.0.4 and passes sage -testall.\n\nLet e, f be elements of D = DirichletGroup(N), for some N, and define the Jacobi sum by \nJ(e,f) = sum([e(x)*f(1-x) for x in IntegerModRing(N)]).\nExcept in \"corner cases\", this patch defines J(e,f) by G(e)*G(f)/G(e*f). \nThis is okay in most cases. (I'm having to rely on \nwww.math.mcgill.ca/goren/SeminarOnCohomology/mycohomologytalk.pdf since my books are disorganized due to some renovation at my house, but I'm going to assume Proposition 3.3 in that paper is correct.) However, the case of J(trivial, trivial) does not always seem to return the correct answer in general:\n\nsage: N = 9\nsage: D = DirichletGroup(N)\nsage: g = D(1)\nsage: g.jacobi_sum(g)\n7\nsage: sum([g(x)*g(1-x) for x in IntegerModRing(N)])\n3\n\nI could be wrong but possibly this needs to be looked at.\n\nIn any case, here are some amusing examples which could be mixed into the \ndocstring if desired:\n\nsage: N = 9\nsage: D = DirichletGroup(N)\nsage: e = D.0\nsage: e(-1)\n-1\nsage: f = D[-1]\nsage: e*f\n[1]\nsage: j1 = e.jacobi_sum(e)\nsage: j2 = f.jacobi_sum(f)\nsage: j3 = e.jacobi_sum(f)\nsage: j1*j1.conjugate(); j2*j2.conjugate(); j3*j3.conjugate()\n9\n9\n1\nsage: j1; (j1/3)^3\n-3*zeta18^3\n1\nsage: j2; (j2/3)^3\n3*zeta18^3 - 3\n1",
     "created_at": "2008-07-12T09:55:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3637#issuecomment-25724",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac3637-jacobi_sums.patch](tarball://root/attachments/some-uuid/ticket3637/trac3637-jacobi_sums.patch) by wdj created at 2008-07-12 09:55:49
+Attachment [trac3637-jacobi_sums.patch](tarball://root/attachments/some-uuid/ticket3637/trac3637-jacobi_sums.patch) by @wdjoyner created at 2008-07-12 09:55:49
 
 Applies to 3.0.4 and passes sage -testall.
 
@@ -98,7 +98,7 @@ archive/issue_comments_025725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3637#issuecomment-25725",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_025726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3637#issuecomment-25726",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -143,16 +143,16 @@ sage: sum([g(x)*g(1-x) for x in IntegerModRing(N)])
 archive/issue_comments_025727.json:
 ```json
 {
-    "body": "Attachment [3637-ekirkman-jacobi-sums.patch](tarball://root/attachments/some-uuid/ticket3637/3637-ekirkman-jacobi-sums.patch) by ncalexan created at 2008-08-11 03:42:44\n\n`3637-ekirkman-jacobi-sums.patch` adds an error (and a check=False) option preventing Jacobi sums with non-prime moduli.  It also sets J(1, 1) = p-1, rather than the previous J(1, 1) = p+1 (which was the cause of wdj's error).\n\nNeeds review.",
+    "body": "Attachment [3637-ekirkman-jacobi-sums.patch](tarball://root/attachments/some-uuid/ticket3637/3637-ekirkman-jacobi-sums.patch) by @ncalexan created at 2008-08-11 03:42:44\n\n`3637-ekirkman-jacobi-sums.patch` adds an error (and a check=False) option preventing Jacobi sums with non-prime moduli.  It also sets J(1, 1) = p-1, rather than the previous J(1, 1) = p+1 (which was the cause of wdj's error).\n\nNeeds review.",
     "created_at": "2008-08-11T03:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3637#issuecomment-25727",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3637-ekirkman-jacobi-sums.patch](tarball://root/attachments/some-uuid/ticket3637/3637-ekirkman-jacobi-sums.patch) by ncalexan created at 2008-08-11 03:42:44
+Attachment [3637-ekirkman-jacobi-sums.patch](tarball://root/attachments/some-uuid/ticket3637/3637-ekirkman-jacobi-sums.patch) by @ncalexan created at 2008-08-11 03:42:44
 
 `3637-ekirkman-jacobi-sums.patch` adds an error (and a check=False) option preventing Jacobi sums with non-prime moduli.  It also sets J(1, 1) = p-1, rather than the previous J(1, 1) = p+1 (which was the cause of wdj's error).
 
@@ -170,7 +170,7 @@ archive/issue_comments_025728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3637#issuecomment-25728",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

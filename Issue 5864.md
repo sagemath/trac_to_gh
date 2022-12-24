@@ -14,7 +14,7 @@ archive/issues_005864.json:
     "title": "Correctly inherit build environment in eclib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5864",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 Assignee: mabshoff
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5864
 archive/issue_comments_046326.json:
 ```json
 {
-    "body": "Attachment [eclib-20080310.p7.patch](tarball://root/attachments/some-uuid/ticket5864/eclib-20080310.p7.patch) by pjeremy created at 2009-04-23 06:47:10",
+    "body": "Attachment [eclib-20080310.p7.patch](tarball://root/attachments/some-uuid/ticket5864/eclib-20080310.p7.patch) by @peterjeremy created at 2009-04-23 06:47:10",
     "created_at": "2009-04-23T06:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5864#issuecomment-46326",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [eclib-20080310.p7.patch](tarball://root/attachments/some-uuid/ticket5864/eclib-20080310.p7.patch) by pjeremy created at 2009-04-23 06:47:10
+Attachment [eclib-20080310.p7.patch](tarball://root/attachments/some-uuid/ticket5864/eclib-20080310.p7.patch) by @peterjeremy created at 2009-04-23 06:47:10
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_046327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5864#issuecomment-46327",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to assigned.
 archive/issue_comments_046328.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-20T07:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5864#issuecomment-46328",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_046329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5864#issuecomment-46329",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_046330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5864#issuecomment-46330",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_046331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5864#issuecomment-46331",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_046332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5864",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5864#issuecomment-46332",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001847.json:
 ```json
 {
-    "body": "Assignee: was\n\nPrinting of Sha is ugly:\n\n\n```\nsage: E = EllipticCurve('37a')\nsage: Sha = E.sha(); Sha\n<class 'sage.schemes.elliptic_curves.sha.Sha'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1847\n\n",
+    "body": "Assignee: @williamstein\n\nPrinting of Sha is ugly:\n\n\n```\nsage: E = EllipticCurve('37a')\nsage: Sha = E.sha(); Sha\n<class 'sage.schemes.elliptic_curves.sha.Sha'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1847\n\n",
     "created_at": "2008-01-19T12:46:42Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001847.json:
     "title": "add nice print method for Sha(Elliptic curve) [trivial to implement -- requires taste]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1847",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Printing of Sha is ugly:
 
@@ -45,7 +45,7 @@ archive/issue_comments_011689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1847#issuecomment-11689",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -95,16 +95,16 @@ Michael
 archive/issue_comments_011691.json:
 ```json
 {
-    "body": "Attachment [trac-1847.patch](tarball://root/attachments/some-uuid/ticket1847/trac-1847.patch) by rlm created at 2009-01-26 15:34:26\n\nPatch updated.",
+    "body": "Attachment [trac-1847.patch](tarball://root/attachments/some-uuid/ticket1847/trac-1847.patch) by @rlmill created at 2009-01-26 15:34:26\n\nPatch updated.",
     "created_at": "2009-01-26T15:34:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1847",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1847#issuecomment-11691",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-1847.patch](tarball://root/attachments/some-uuid/ticket1847/trac-1847.patch) by rlm created at 2009-01-26 15:34:26
+Attachment [trac-1847.patch](tarball://root/attachments/some-uuid/ticket1847/trac-1847.patch) by @rlmill created at 2009-01-26 15:34:26
 
 Patch updated.
 

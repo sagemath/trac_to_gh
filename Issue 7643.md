@@ -3,7 +3,7 @@
 archive/issues_007643.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  ncalexan\n\n\n```\nsage: K.<a> = QuadraticField(-5)\nsage: L.<b> = QuadraticField(-47)\nsage: K.composite_fields(L, names='c')\n[]\nsage: K.<a> = NumberField(x^2 + 5)\nsage: L.<b> = NumberField(x^2 + 47)\nsage: K.composite_fields(L, names='c')\n[Number Field in c0 with defining polynomial x^4 + 104*x^2 + 1764]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7643\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @ncalexan\n\n\n```\nsage: K.<a> = QuadraticField(-5)\nsage: L.<b> = QuadraticField(-47)\nsage: K.composite_fields(L, names='c')\n[]\nsage: K.<a> = NumberField(x^2 + 5)\nsage: L.<b> = NumberField(x^2 + 47)\nsage: K.composite_fields(L, names='c')\n[Number Field in c0 with defining polynomial x^4 + 104*x^2 + 1764]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7643\n\n",
     "created_at": "2009-12-09T20:12:28Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_007643.json:
     "title": "composite_fields does not play nice with QuadraticFields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7643",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  ncalexan
+CC:  @ncalexan
 
 
 ```
@@ -168,7 +168,7 @@ archive/issue_comments_065324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7643#issuecomment-65324",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_065325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7643#issuecomment-65325",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -287,16 +287,16 @@ replaces earlier patch, based on 4.3
 archive/issue_comments_065329.json:
 ```json
 {
-    "body": "Attachment [trac_7643_revised.patch](tarball://root/attachments/some-uuid/ticket7643/trac_7643_revised.patch) by cremona created at 2010-01-16 19:59:58\n\nSorry to have given your more work to do ;)\n\nI'll take a look!",
+    "body": "Attachment [trac_7643_revised.patch](tarball://root/attachments/some-uuid/ticket7643/trac_7643_revised.patch) by @JohnCremona created at 2010-01-16 19:59:58\n\nSorry to have given your more work to do ;)\n\nI'll take a look!",
     "created_at": "2010-01-16T19:59:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7643#issuecomment-65329",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7643_revised.patch](tarball://root/attachments/some-uuid/ticket7643/trac_7643_revised.patch) by cremona created at 2010-01-16 19:59:58
+Attachment [trac_7643_revised.patch](tarball://root/attachments/some-uuid/ticket7643/trac_7643_revised.patch) by @JohnCremona created at 2010-01-16 19:59:58
 
 Sorry to have given your more work to do ;)
 
@@ -314,7 +314,7 @@ archive/issue_comments_065330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7643#issuecomment-65330",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_065331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7643#issuecomment-65331",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_065332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7643",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7643#issuecomment-65332",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

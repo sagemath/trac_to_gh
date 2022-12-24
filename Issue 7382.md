@@ -3,7 +3,7 @@
 archive/issues_007382.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  jen minz jpflori\n\nSo I don't actually *need* matrix_of_frobenius_hyperelliptic of a curve over an extension field, but I inadvertently passed it in during a computation and caused a segfault. It would be nice for this to work (coercion?), since the curve is defined over QQ anyway.\n\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(3,5)\nsage: J.<a> = K.extension(x^30-3)\nsage: HJ = H.change_ring(J)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HJ)\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7382\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @jbalakrishnan minz jpflori\n\nSo I don't actually *need* matrix_of_frobenius_hyperelliptic of a curve over an extension field, but I inadvertently passed it in during a computation and caused a segfault. It would be nice for this to work (coercion?), since the curve is defined over QQ anyway.\n\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(3,5)\nsage: J.<a> = K.extension(x^30-3)\nsage: HJ = H.change_ring(J)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HJ)\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7382\n\n",
     "created_at": "2009-11-03T17:59:21Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_007382.json:
     "title": "MonskyWashnitzer segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7382",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  jen minz jpflori
+CC:  @jbalakrishnan minz jpflori
 
 So I don't actually *need* matrix_of_frobenius_hyperelliptic of a curve over an extension field, but I inadvertently passed it in during a computation and caused a segfault. It would be nice for this to work (coercion?), since the curve is defined over QQ anyway.
 
@@ -61,7 +61,7 @@ archive/issue_comments_062096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7382#issuecomment-62096",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_062097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7382#issuecomment-62097",
-    "user": "edgarcosta"
+    "user": "@edgarcosta"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_062098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7382#issuecomment-62098",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_062099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7382#issuecomment-62099",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_062100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7382#issuecomment-62100",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_062101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7382#issuecomment-62101",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

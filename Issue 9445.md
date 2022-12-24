@@ -3,7 +3,7 @@
 archive/issues_009445.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nIt's possible these are related.  In tests of 4.5.a4, the following doctests fail:\n\n1)       File \"wrapper.pyx\", line 171, in sage.libs.galrep.wrapper.GalRep.non_surjective_primes (sage/libs/galrep/wrapper.c:2602)\n    ValueError: min and max must be <= 59\n\n2) File \"/Users/Sage/sage-4.5.alpha4/devel/sage/sage/libs/galrep/wrapper.pyx\", line 163:\n    sage: galrep.GalRep().non_surjective_primes(-432,8208,7,59)\nExpected:\n    []\nGot:\n    [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59]\n\nSeems to be a failure on Mac OS X, 10.5.8, and has not been reported elsewhere.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9445\n\n",
+    "body": "Assignee: @JohnCremona\n\nIt's possible these are related.  In tests of 4.5.a4, the following doctests fail:\n\n1)       File \"wrapper.pyx\", line 171, in sage.libs.galrep.wrapper.GalRep.non_surjective_primes (sage/libs/galrep/wrapper.c:2602)\n    ValueError: min and max must be <= 59\n\n2) File \"/Users/Sage/sage-4.5.alpha4/devel/sage/sage/libs/galrep/wrapper.pyx\", line 163:\n    sage: galrep.GalRep().non_surjective_primes(-432,8208,7,59)\nExpected:\n    []\nGot:\n    [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59]\n\nSeems to be a failure on Mac OS X, 10.5.8, and has not been reported elsewhere.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9445\n\n",
     "created_at": "2010-07-07T05:43:03Z",
     "labels": [
         "elliptic curves",
@@ -17,7 +17,7 @@ archive/issues_009445.json:
     "user": "justin"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 It's possible these are related.  In tests of 4.5.a4, the following doctests fail:
 
@@ -99,7 +99,7 @@ archive/issue_comments_090507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9445",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9445#issuecomment-90507",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_090508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9445",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9445#issuecomment-90508",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_090509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9445",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9445#issuecomment-90509",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_090510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9445",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9445#issuecomment-90510",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

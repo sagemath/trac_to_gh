@@ -14,7 +14,7 @@ archive/issues_002449.json:
     "title": "interact -- interactive functions in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2449",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2449
 archive/issue_comments_016547.json:
 ```json
 {
-    "body": "Changing assignee from boothby to was.",
+    "body": "Changing assignee from boothby to @williamstein.",
     "created_at": "2008-03-09T23:47:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2449#issuecomment-16547",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from boothby to was.
+Changing assignee from boothby to @williamstein.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_016548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2449#issuecomment-16548",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_016549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2449#issuecomment-16549",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_016550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2449#issuecomment-16550",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_016551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2449#issuecomment-16551",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_016552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2449#issuecomment-16552",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_016556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2449#issuecomment-16556",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_016557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2449#issuecomment-16557",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_016558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2449#issuecomment-16558",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -338,16 +338,16 @@ It shouldn't be on by default because it would clutter the interface.
 archive/issue_comments_016559.json:
 ```json
 {
-    "body": "Attachment [sage-2449-extra1.patch](tarball://root/attachments/some-uuid/ticket2449/sage-2449-extra1.patch) by was created at 2008-03-10 16:41:07\n\nOnly apply this *after* #2451, or some of the doctest examples might be very slow.",
+    "body": "Attachment [sage-2449-extra1.patch](tarball://root/attachments/some-uuid/ticket2449/sage-2449-extra1.patch) by @williamstein created at 2008-03-10 16:41:07\n\nOnly apply this *after* #2451, or some of the doctest examples might be very slow.",
     "created_at": "2008-03-10T16:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2449#issuecomment-16559",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2449-extra1.patch](tarball://root/attachments/some-uuid/ticket2449/sage-2449-extra1.patch) by was created at 2008-03-10 16:41:07
+Attachment [sage-2449-extra1.patch](tarball://root/attachments/some-uuid/ticket2449/sage-2449-extra1.patch) by @williamstein created at 2008-03-10 16:41:07
 
 Only apply this *after* #2451, or some of the doctest examples might be very slow.
 
@@ -385,7 +385,7 @@ archive/issue_comments_016561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2449#issuecomment-16561",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

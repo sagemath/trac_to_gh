@@ -3,7 +3,7 @@
 archive/issues_004982.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  malb burcin\n\nSee discussion at end of #4965. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4982\n\n",
+    "body": "Assignee: tbd\n\nCC:  @malb @burcin\n\nSee discussion at end of #4965. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4982\n\n",
     "created_at": "2009-01-15T19:57:37Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_004982.json:
     "title": "consolidate shifts in polynomial_template",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4982",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
 
-CC:  malb burcin
+CC:  @malb @burcin
 
 See discussion at end of #4965. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_037977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4982#issuecomment-37977",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_037979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4982#issuecomment-37979",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_037980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4982#issuecomment-37980",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing status from new to needs_review.
 archive/issue_comments_037981.json:
 ```json
 {
-    "body": "Attachment [trac_4982.patch](tarball://root/attachments/some-uuid/ticket4982/trac_4982.patch) by AlexGhitza created at 2009-11-16 05:37:45\n\nI'm ccing the participants in the discussion at #4965 in case they had something else in mind.",
+    "body": "Attachment [trac_4982.patch](tarball://root/attachments/some-uuid/ticket4982/trac_4982.patch) by @aghitza created at 2009-11-16 05:37:45\n\nI'm ccing the participants in the discussion at #4965 in case they had something else in mind.",
     "created_at": "2009-11-16T05:37:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4982#issuecomment-37981",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_4982.patch](tarball://root/attachments/some-uuid/ticket4982/trac_4982.patch) by AlexGhitza created at 2009-11-16 05:37:45
+Attachment [trac_4982.patch](tarball://root/attachments/some-uuid/ticket4982/trac_4982.patch) by @aghitza created at 2009-11-16 05:37:45
 
 I'm ccing the participants in the discussion at #4965 in case they had something else in mind.
 
@@ -137,7 +137,7 @@ archive/issue_comments_037982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4982#issuecomment-37982",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_037983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4982#issuecomment-37983",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -192,16 +192,16 @@ Doctests pass btw., applies cleanly etc.
 archive/issue_comments_037984.json:
 ```json
 {
-    "body": "Attachment [trac_4982_speedup.patch](tarball://root/attachments/some-uuid/ticket4982/trac_4982_speedup.patch) by malb created at 2009-11-20 10:49:37\n\nAlex and I were discussing this off-list. The speedup patch does the following:\n\n* added a new C function which all methods call now \n* I inlined it\n* and I changed the code to avoid some initialisation\n\nHere is what I got:\n\n**Vanilla:**\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(50)\nsage: %timeit f<<50\n1000000 loops, best of 3: 730 ns per loop\n```\n\n\n**Patch:**\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(50)\nsage: %timeit f<<50\n1000000 loops, best of 3: 1.06 \u00b5s per loop\n```\n\n\n**Patch + Speed-up:**\n\n```\nsage: P.<x> = GF(2)[]\nsage: %timeit f<<50\n1000000 loops, best of 3: 761 ns per loop\n```\n\n\nSo there is still some overhead, but I think its acceptable.",
+    "body": "Attachment [trac_4982_speedup.patch](tarball://root/attachments/some-uuid/ticket4982/trac_4982_speedup.patch) by @malb created at 2009-11-20 10:49:37\n\nAlex and I were discussing this off-list. The speedup patch does the following:\n\n* added a new C function which all methods call now \n* I inlined it\n* and I changed the code to avoid some initialisation\n\nHere is what I got:\n\n**Vanilla:**\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(50)\nsage: %timeit f<<50\n1000000 loops, best of 3: 730 ns per loop\n```\n\n\n**Patch:**\n\n```\nsage: P.<x> = GF(2)[]\nsage: f = P.random_element(50)\nsage: %timeit f<<50\n1000000 loops, best of 3: 1.06 \u00b5s per loop\n```\n\n\n**Patch + Speed-up:**\n\n```\nsage: P.<x> = GF(2)[]\nsage: %timeit f<<50\n1000000 loops, best of 3: 761 ns per loop\n```\n\n\nSo there is still some overhead, but I think its acceptable.",
     "created_at": "2009-11-20T10:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4982#issuecomment-37984",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_4982_speedup.patch](tarball://root/attachments/some-uuid/ticket4982/trac_4982_speedup.patch) by malb created at 2009-11-20 10:49:37
+Attachment [trac_4982_speedup.patch](tarball://root/attachments/some-uuid/ticket4982/trac_4982_speedup.patch) by @malb created at 2009-11-20 10:49:37
 
 Alex and I were discussing this off-list. The speedup patch does the following:
 
@@ -254,7 +254,7 @@ archive/issue_comments_037985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4982#issuecomment-37985",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_037986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4982#issuecomment-37986",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_037987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4982#issuecomment-37987",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

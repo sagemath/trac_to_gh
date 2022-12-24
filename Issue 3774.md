@@ -3,7 +3,7 @@
 archive/issues_003774.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  alexghitza\n\n\n```\nOn Aug 1, 2008, at 7:05 AM, Nils Skoruppa wrote:\n\n\nIt seems that,  for non elements,  __radd__ is set disfunctional\nby the coercion model. On the other hand, it might be desirable\nto have this enabled for people writing their own classes but having\nreasons to avoid (parts of)  the coercion system (like me :-)\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3774\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  alexghitza\n\n\n```\nOn Aug 1, 2008, at 7:05 AM, Nils Skoruppa wrote:\n\n\nIt seems that,  for non elements,  __radd__ is set disfunctional\nby the coercion model. On the other hand, it might be desirable\nto have this enabled for people writing their own classes but having\nreasons to avoid (parts of)  the coercion system (like me :-)\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3774\n\n",
     "created_at": "2008-08-05T08:24:46Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_003774.json:
     "title": "__radd__ doesn't work when left hand side is an Element",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3774",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 CC:  alexghitza
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3774
 archive/issue_comments_026842.json:
 ```json
 {
-    "body": "Attachment [3774-radd.patch](tarball://root/attachments/some-uuid/ticket3774/3774-radd.patch) by robertwb created at 2008-08-05 08:25:54",
+    "body": "Attachment [3774-radd.patch](tarball://root/attachments/some-uuid/ticket3774/3774-radd.patch) by @robertwb created at 2008-08-05 08:25:54",
     "created_at": "2008-08-05T08:25:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3774#issuecomment-26842",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3774-radd.patch](tarball://root/attachments/some-uuid/ticket3774/3774-radd.patch) by robertwb created at 2008-08-05 08:25:54
+Attachment [3774-radd.patch](tarball://root/attachments/some-uuid/ticket3774/3774-radd.patch) by @robertwb created at 2008-08-05 08:25:54
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_026843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3774#issuecomment-26843",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_026844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3774#issuecomment-26844",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_026845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3774#issuecomment-26845",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -118,16 +118,16 @@ Please go ahead and write one, though implementing `__radd__` should not be enco
 archive/issue_comments_026846.json:
 ```json
 {
-    "body": "Attachment [trac_3774.patch](tarball://root/attachments/some-uuid/ticket3774/trac_3774.patch) by mhansen created at 2008-09-24 02:10:59",
+    "body": "Attachment [trac_3774.patch](tarball://root/attachments/some-uuid/ticket3774/trac_3774.patch) by @mwhansen created at 2008-09-24 02:10:59",
     "created_at": "2008-09-24T02:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3774#issuecomment-26846",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3774.patch](tarball://root/attachments/some-uuid/ticket3774/trac_3774.patch) by mhansen created at 2008-09-24 02:10:59
+Attachment [trac_3774.patch](tarball://root/attachments/some-uuid/ticket3774/trac_3774.patch) by @mwhansen created at 2008-09-24 02:10:59
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_026847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3774",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3774#issuecomment-26847",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

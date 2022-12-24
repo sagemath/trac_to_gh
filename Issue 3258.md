@@ -37,7 +37,7 @@ archive/issue_comments_022544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3258#issuecomment-22544",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_022545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3258",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3258#issuecomment-22545",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

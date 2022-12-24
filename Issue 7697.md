@@ -14,7 +14,7 @@ archive/issues_007697.json:
     "title": "Delete OS X meta-crap from gfan-0.3.p4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7697",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -41,7 +41,7 @@ archive/issue_comments_066036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7697#issuecomment-66036",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_066037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7697#issuecomment-66037",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_066038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7697#issuecomment-66038",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_066039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7697#issuecomment-66039",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_066040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7697#issuecomment-66040",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006447.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  saliola wdj\n\nThis feature would add another backend to 3D plotting, in addition to Jmol and Tachyon, that would render the plot using the new HTML5 <canvas> element, which supports drawing arbitrary shapes to a section of a web page.\n\nThe idea was initially suggested in [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/9e0ca32eb97d5757/d47d88b28d292512) on sage-devel.\n\nAlthough JavaScript is significantly slower than Java, a canvas backend is feasible and might provide a nice, compatible, alternative.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6447\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @saliola @wdjoyner\n\nThis feature would add another backend to 3D plotting, in addition to Jmol and Tachyon, that would render the plot using the new HTML5 <canvas> element, which supports drawing arbitrary shapes to a section of a web page.\n\nThe idea was initially suggested in [this thread](http://groups.google.com/group/sage-devel/browse_thread/thread/9e0ca32eb97d5757/d47d88b28d292512) on sage-devel.\n\nAlthough JavaScript is significantly slower than Java, a canvas backend is feasible and might provide a nice, compatible, alternative.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6447\n\n",
     "created_at": "2009-06-29T18:43:12Z",
     "labels": [
         "graphics",
@@ -17,9 +17,9 @@ archive/issues_006447.json:
     "user": "wcauchois"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  saliola wdj
+CC:  @saliola @wdjoyner
 
 This feature would add another backend to 3D plotting, in addition to Jmol and Tachyon, that would render the plot using the new HTML5 <canvas> element, which supports drawing arbitrary shapes to a section of a web page.
 
@@ -75,7 +75,7 @@ archive/issue_comments_051802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51802",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_051803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51803",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_051804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51804",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_051805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51805",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_051806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51806",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_051808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51808",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_051809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51809",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_051810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51810",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_051814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51814",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_051815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51815",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_051820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51820",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -528,7 +528,7 @@ archive/issue_comments_051824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51824",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_051825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51825",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -602,7 +602,7 @@ archive/issue_comments_051827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51827",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -624,7 +624,7 @@ archive/issue_comments_051828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51828",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -650,7 +650,7 @@ archive/issue_comments_051829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6447",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6447#issuecomment-51829",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

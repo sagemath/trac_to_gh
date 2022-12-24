@@ -14,7 +14,7 @@ archive/issues_003415.json:
     "title": "sage-3.0.3.alpha2 -- clean test of simple.py fails badly on osx ppc (fermat)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3415",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -176,16 +176,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3415
 archive/issue_comments_023944.json:
 ```json
 {
-    "body": "Changing assignee from boothby to robertwb.",
+    "body": "Changing assignee from boothby to @robertwb.",
     "created_at": "2008-06-13T14:29:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3415#issuecomment-23944",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from boothby to robertwb.
+Changing assignee from boothby to @robertwb.
 
 
 
@@ -194,16 +194,16 @@ Changing assignee from boothby to robertwb.
 archive/issue_comments_023945.json:
 ```json
 {
-    "body": "Attachment [3415-simpletwist.patch](tarball://root/attachments/some-uuid/ticket3415/3415-simpletwist.patch) by robertwb created at 2008-06-13 18:29:48\n\nI knew I was getting into trouble as soon as I tried to write doctests for a live notebook... \n\nThe above patch may not fix the issue, but it will help debut what is going on. It looks like it was unable to open a port to start the notebook (firewall issue?).",
+    "body": "Attachment [3415-simpletwist.patch](tarball://root/attachments/some-uuid/ticket3415/3415-simpletwist.patch) by @robertwb created at 2008-06-13 18:29:48\n\nI knew I was getting into trouble as soon as I tried to write doctests for a live notebook... \n\nThe above patch may not fix the issue, but it will help debut what is going on. It looks like it was unable to open a port to start the notebook (firewall issue?).",
     "created_at": "2008-06-13T18:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3415#issuecomment-23945",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3415-simpletwist.patch](tarball://root/attachments/some-uuid/ticket3415/3415-simpletwist.patch) by robertwb created at 2008-06-13 18:29:48
+Attachment [3415-simpletwist.patch](tarball://root/attachments/some-uuid/ticket3415/3415-simpletwist.patch) by @robertwb created at 2008-06-13 18:29:48
 
 I knew I was getting into trouble as soon as I tried to write doctests for a live notebook... 
 
@@ -221,7 +221,7 @@ archive/issue_comments_023946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3415#issuecomment-23946",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

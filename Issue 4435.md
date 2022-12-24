@@ -14,7 +14,7 @@ archive/issues_004435.json:
     "title": "%latex -- don't use \\usepackage{fullpage}",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4435",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -72,7 +72,7 @@ archive/issue_comments_032601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4435#issuecomment-32601",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_032602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4435#issuecomment-32602",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -103,16 +103,16 @@ Changing status from new to assigned.
 archive/issue_comments_032603.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to jhpalmieri.",
+    "body": "Changing assignee from cwitty to @jhpalmieri.",
     "created_at": "2009-03-22T22:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4435#issuecomment-32603",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from cwitty to jhpalmieri.
+Changing assignee from cwitty to @jhpalmieri.
 
 
 
@@ -126,7 +126,7 @@ archive/issue_comments_032604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4435#issuecomment-32604",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_032605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4435#issuecomment-32605",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_032607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4435#issuecomment-32607",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_032608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4435#issuecomment-32608",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_032609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4435#issuecomment-32609",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -300,16 +300,16 @@ Here's a rebased patch.
 archive/issue_comments_032610.json:
 ```json
 {
-    "body": "Attachment [4435.patch](tarball://root/attachments/some-uuid/ticket4435/4435.patch) by jhpalmieri created at 2009-04-24 19:30:58\n\nrebased against 3.4.2.alpha0",
+    "body": "Attachment [4435.patch](tarball://root/attachments/some-uuid/ticket4435/4435.patch) by @jhpalmieri created at 2009-04-24 19:30:58\n\nrebased against 3.4.2.alpha0",
     "created_at": "2009-04-24T19:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4435#issuecomment-32610",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [4435.patch](tarball://root/attachments/some-uuid/ticket4435/4435.patch) by jhpalmieri created at 2009-04-24 19:30:58
+Attachment [4435.patch](tarball://root/attachments/some-uuid/ticket4435/4435.patch) by @jhpalmieri created at 2009-04-24 19:30:58
 
 rebased against 3.4.2.alpha0
 
@@ -325,7 +325,7 @@ archive/issue_comments_032611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4435#issuecomment-32611",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_032613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4435#issuecomment-32613",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

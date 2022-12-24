@@ -14,7 +14,7 @@ archive/issues_001016.json:
     "title": "[with patch] add max_level argument to flatten",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1016",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: cwitty

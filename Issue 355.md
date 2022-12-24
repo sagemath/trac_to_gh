@@ -3,7 +3,7 @@
 archive/issues_000355.json:
 ```json
 {
-    "body": "Assignee: was\n\nOffending code:\n\n```\nR = ZZ.quo(6*ZZ)\nS.<x> = R['x']\np = x^2-1\nprint p.roots()\n```\n\n\n\n```\nTraceback (most recent call last):        R = ZZ.quo(i*ZZ)\n  File \"/home/boothby/sage_notebook/worksheets/hw4/\", line 5, in <module>\n    \n  File \"polynomial_element.pyx\", line 1555, in polynomial_element.Polynomial.roots\n  File \"polynomial_element.pyx\", line 989, in polynomial_element.Polynomial.factor\n  File \"gen.pyx\", line 6003, in gen._pari_trap\ngen.PariError:  (8)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/355\n\n",
+    "body": "Assignee: @williamstein\n\nOffending code:\n\n```\nR = ZZ.quo(6*ZZ)\nS.<x> = R['x']\np = x^2-1\nprint p.roots()\n```\n\n\n\n```\nTraceback (most recent call last):        R = ZZ.quo(i*ZZ)\n  File \"/home/boothby/sage_notebook/worksheets/hw4/\", line 5, in <module>\n    \n  File \"polynomial_element.pyx\", line 1555, in polynomial_element.Polynomial.roots\n  File \"polynomial_element.pyx\", line 989, in polynomial_element.Polynomial.factor\n  File \"gen.pyx\", line 6003, in gen._pari_trap\ngen.PariError:  (8)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/355\n\n",
     "created_at": "2007-04-22T18:45:38Z",
     "labels": [
         "number theory",
@@ -16,7 +16,7 @@ archive/issues_000355.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Offending code:
 
@@ -56,7 +56,7 @@ archive/issue_comments_001719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/355#issuecomment-1719",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_001720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/355",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/355#issuecomment-1720",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

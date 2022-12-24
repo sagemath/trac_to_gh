@@ -80,7 +80,7 @@ archive/issue_comments_081271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8839#issuecomment-81271",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_081272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8839#issuecomment-81272",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_081273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8839#issuecomment-81273",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_081274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8839#issuecomment-81274",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_081275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8839#issuecomment-81275",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_081276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8839#issuecomment-81276",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_081277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8839",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8839#issuecomment-81277",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

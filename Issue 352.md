@@ -3,7 +3,7 @@
 archive/issues_000352.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n> After trying some things, I've noticed that it is possible to coerce a\n> flat list into a sparse matrix but not a list of lists.\n> \n> E.G.\n> sage: B = MatrixSpace(ZZ,5,5)\n> sage: v = [0 for i in range(25)]\n> sage: u = [[0 for i in range(5)] for j in range(5)]\n> sage: B(v)\n> [0 0 0 0 0]\n> [0 0 0 0 0]\n> [0 0 0 0 0]\n> [0 0 0 0 0]\n> [0 0 0 0 0]\n> \n> sage: B(u) ---> results in the same error as before.\n> Is there a conceptual reason that a flat list works, but a list of\n\nThat looks like just a mistake on our paper.  We should make\nit so both cases work. \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/352\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n> After trying some things, I've noticed that it is possible to coerce a\n> flat list into a sparse matrix but not a list of lists.\n> \n> E.G.\n> sage: B = MatrixSpace(ZZ,5,5)\n> sage: v = [0 for i in range(25)]\n> sage: u = [[0 for i in range(5)] for j in range(5)]\n> sage: B(v)\n> [0 0 0 0 0]\n> [0 0 0 0 0]\n> [0 0 0 0 0]\n> [0 0 0 0 0]\n> [0 0 0 0 0]\n> \n> sage: B(u) ---> results in the same error as before.\n> Is there a conceptual reason that a flat list works, but a list of\n\nThat looks like just a mistake on our paper.  We should make\nit so both cases work. \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/352\n\n",
     "created_at": "2007-04-19T21:15:46Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000352.json:
     "title": "error in matrix creation options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/352",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```

@@ -3,7 +3,7 @@
 archive/issues_009101.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  mvngu jsp jhpalmieri\n\nTrying to compile Sage as 64-bit on SPARC, I get an error with linbox:\n\n\n```\nchecking whether GMP is 4.0 or greater... yes\nchecking whether GMP was compiled with --enable-cxx... yes\nchecking for NTL >= 5.0... found\nchecking for GIVARO >= 3.2.10... found\nchecking whether to compile the sage interface... yes\nchecking for C interface to BLAS... not found\nchecking for others BLAS... not found\n\n*******************************************************************************\n ERROR: BLAS not found!\n\n BLAS routines are required for this library to compile. Please\n make sure BLAS are installed and specify its location with the option\n --with-blas=<lib> when running configure.\n*******************************************************************************\nError configuring linbox\n\nreal    0m32.070s\nuser    0m15.156s\nsys     0m12.915s\nsage: An error occurred while installing linbox-1.1.6.p3\n```\n\n\nNo such error occurs when building linbox on OpenSolaris in 64-bit mode. \n\nThis looks to me like it might be an error in spkg/standard/deps, as there is nothing there as far as I can see \n\n\n```\n$(INST)/$(LINBOX): $(BASE) $(INST)/$(MPIR) $(INST)/$(NTL) $(INST)/$(GIVARO) $(INST)/$(GSL) $(INST)/$(ATLAS)\n        $(SAGE_SPKG) $(LINBOX) 2>&1\n\n```\n\n\nto make linbox dependent on BLAS. The BLAS library is not failing to install - it does not try to install.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9101\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  mvngu @jaapspies @jhpalmieri\n\nTrying to compile Sage as 64-bit on SPARC, I get an error with linbox:\n\n\n```\nchecking whether GMP is 4.0 or greater... yes\nchecking whether GMP was compiled with --enable-cxx... yes\nchecking for NTL >= 5.0... found\nchecking for GIVARO >= 3.2.10... found\nchecking whether to compile the sage interface... yes\nchecking for C interface to BLAS... not found\nchecking for others BLAS... not found\n\n*******************************************************************************\n ERROR: BLAS not found!\n\n BLAS routines are required for this library to compile. Please\n make sure BLAS are installed and specify its location with the option\n --with-blas=<lib> when running configure.\n*******************************************************************************\nError configuring linbox\n\nreal    0m32.070s\nuser    0m15.156s\nsys     0m12.915s\nsage: An error occurred while installing linbox-1.1.6.p3\n```\n\n\nNo such error occurs when building linbox on OpenSolaris in 64-bit mode. \n\nThis looks to me like it might be an error in spkg/standard/deps, as there is nothing there as far as I can see \n\n\n```\n$(INST)/$(LINBOX): $(BASE) $(INST)/$(MPIR) $(INST)/$(NTL) $(INST)/$(GIVARO) $(INST)/$(GSL) $(INST)/$(ATLAS)\n        $(SAGE_SPKG) $(LINBOX) 2>&1\n\n```\n\n\nto make linbox dependent on BLAS. The BLAS library is not failing to install - it does not try to install.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9101\n\n",
     "created_at": "2010-05-31T03:12:01Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009101.json:
 ```
 Assignee: drkirkby
 
-CC:  mvngu jsp jhpalmieri
+CC:  mvngu @jaapspies @jhpalmieri
 
 Trying to compile Sage as 64-bit on SPARC, I get an error with linbox:
 
@@ -97,7 +97,7 @@ archive/issue_comments_084558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9101#issuecomment-84558",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_084565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9101#issuecomment-84565",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_084567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9101#issuecomment-84567",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_084568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9101#issuecomment-84568",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

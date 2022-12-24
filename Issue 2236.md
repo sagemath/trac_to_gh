@@ -3,7 +3,7 @@
 archive/issues_002236.json:
 ```json
 {
-    "body": "Assignee: was\n\n\np=plot(x, (x,-1,1))\np[0][0] == -1\np[0][-1] == 1\n\nThey will almost always return false before the patch.  After the patch, the two statements should return True always.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2236\n\n",
+    "body": "Assignee: @williamstein\n\n\np=plot(x, (x,-1,1))\np[0][0] == -1\np[0][-1] == 1\n\nThey will almost always return false before the patch.  After the patch, the two statements should return True always.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2236\n\n",
     "created_at": "2008-02-20T22:39:42Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002236.json:
     "title": "plot randomizes the endpoints of the interval and causes wiggling in the graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2236",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 p=plot(x, (x,-1,1))
@@ -42,7 +42,7 @@ archive/issue_comments_014808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2236#issuecomment-14808",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,16 +55,16 @@ I agree with the suggestion to *not* randomize the endpoints.  That's bad.
 archive/issue_comments_014809.json:
 ```json
 {
-    "body": "Attachment [plot_fix_endpoints.patch](tarball://root/attachments/some-uuid/ticket2236/plot_fix_endpoints.patch) by jason created at 2008-02-20 22:51:08",
+    "body": "Attachment [plot_fix_endpoints.patch](tarball://root/attachments/some-uuid/ticket2236/plot_fix_endpoints.patch) by @jasongrout created at 2008-02-20 22:51:08",
     "created_at": "2008-02-20T22:51:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2236#issuecomment-14809",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [plot_fix_endpoints.patch](tarball://root/attachments/some-uuid/ticket2236/plot_fix_endpoints.patch) by jason created at 2008-02-20 22:51:08
+Attachment [plot_fix_endpoints.patch](tarball://root/attachments/some-uuid/ticket2236/plot_fix_endpoints.patch) by @jasongrout created at 2008-02-20 22:51:08
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_014812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2236#issuecomment-14812",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

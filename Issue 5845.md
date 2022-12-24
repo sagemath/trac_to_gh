@@ -14,7 +14,7 @@ archive/issues_005845.json:
     "title": "Fix precision bug in hilbert_class_polynomial()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5845",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 Assignee: tbd
@@ -46,7 +46,7 @@ archive/issue_comments_045974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5845#issuecomment-45974",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -59,16 +59,16 @@ Applies to 3.4.1.rc4
 archive/issue_comments_045975.json:
 ```json
 {
-    "body": "Attachment [trac_5845.patch](tarball://root/attachments/some-uuid/ticket5845/trac_5845.patch) by cremona created at 2009-04-21 10:47:00",
+    "body": "Attachment [trac_5845.patch](tarball://root/attachments/some-uuid/ticket5845/trac_5845.patch) by @JohnCremona created at 2009-04-21 10:47:00",
     "created_at": "2009-04-21T10:47:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5845#issuecomment-45975",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5845.patch](tarball://root/attachments/some-uuid/ticket5845/trac_5845.patch) by cremona created at 2009-04-21 10:47:00
+Attachment [trac_5845.patch](tarball://root/attachments/some-uuid/ticket5845/trac_5845.patch) by @JohnCremona created at 2009-04-21 10:47:00
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_045977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5845#issuecomment-45977",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_045978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5845#issuecomment-45978",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_045979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5845#issuecomment-45979",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -153,16 +153,16 @@ Will do -- John
 archive/issue_comments_045980.json:
 ```json
 {
-    "body": "Attachment [trac_5845_rebase.patch](tarball://root/attachments/some-uuid/ticket5845/trac_5845_rebase.patch) by cremona created at 2009-06-01 08:20:38\n\nRebased to 4.0 (replace previous)",
+    "body": "Attachment [trac_5845_rebase.patch](tarball://root/attachments/some-uuid/ticket5845/trac_5845_rebase.patch) by @JohnCremona created at 2009-06-01 08:20:38\n\nRebased to 4.0 (replace previous)",
     "created_at": "2009-06-01T08:20:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5845#issuecomment-45980",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5845_rebase.patch](tarball://root/attachments/some-uuid/ticket5845/trac_5845_rebase.patch) by cremona created at 2009-06-01 08:20:38
+Attachment [trac_5845_rebase.patch](tarball://root/attachments/some-uuid/ticket5845/trac_5845_rebase.patch) by @JohnCremona created at 2009-06-01 08:20:38
 
 Rebased to 4.0 (replace previous)
 
@@ -178,7 +178,7 @@ archive/issue_comments_045981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5845#issuecomment-45981",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_045982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5845#issuecomment-45982",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_045983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5845#issuecomment-45983",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_006183.json:
     "title": "Quaternion algebra latexification",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6183",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6183
 archive/issue_comments_049362.json:
 ```json
 {
-    "body": "Changing assignee from tbd to AlexGhitza.",
+    "body": "Changing assignee from tbd to @aghitza.",
     "created_at": "2009-07-11T13:12:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6183#issuecomment-49362",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from tbd to AlexGhitza.
+Changing assignee from tbd to @aghitza.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_049363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6183#issuecomment-49363",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_049364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6183#issuecomment-49364",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_049365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6183#issuecomment-49365",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_049366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6183#issuecomment-49366",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -122,16 +122,16 @@ See attached patch.
 archive/issue_comments_049367.json:
 ```json
 {
-    "body": "Attachment [trac_6183.patch](tarball://root/attachments/some-uuid/ticket6183/trac_6183.patch) by AlexGhitza created at 2009-07-11 13:12:23",
+    "body": "Attachment [trac_6183.patch](tarball://root/attachments/some-uuid/ticket6183/trac_6183.patch) by @aghitza created at 2009-07-11 13:12:23",
     "created_at": "2009-07-11T13:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6183#issuecomment-49367",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_6183.patch](tarball://root/attachments/some-uuid/ticket6183/trac_6183.patch) by AlexGhitza created at 2009-07-11 13:12:23
+Attachment [trac_6183.patch](tarball://root/attachments/some-uuid/ticket6183/trac_6183.patch) by @aghitza created at 2009-07-11 13:12:23
 
 
 
@@ -145,7 +145,7 @@ archive/issue_comments_049368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6183#issuecomment-49368",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_049369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6183#issuecomment-49369",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_049370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6183#issuecomment-49370",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

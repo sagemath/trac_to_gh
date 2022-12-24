@@ -14,7 +14,7 @@ archive/issues_002359.json:
     "title": "notebook -- make it so when you send a kill signal to the notebook server it saves state",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2359",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -55,7 +55,7 @@ archive/issue_comments_015902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2359#issuecomment-15902",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_015903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2359#issuecomment-15903",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_015904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2359#issuecomment-15904",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_015905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2359",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2359#issuecomment-15905",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

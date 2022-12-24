@@ -3,7 +3,7 @@
 archive/issues_001666.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1666\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1666\n\n",
     "created_at": "2008-01-03T11:30:22Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001666.json:
     "title": "jmol cylinders should use the draw command (rather than be triangulated as a pmesh)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1666",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1666
 archive/issue_comments_010586.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2008-01-03T11:30:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1666#issuecomment-10586",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_010587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1666#issuecomment-10587",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_010588.json:
 ```json
 {
-    "body": "Attachment [1666-jmol-lines.diff](tarball://root/attachments/some-uuid/ticket1666/1666-jmol-lines.diff) by robertwb created at 2008-01-03 12:22:57",
+    "body": "Attachment [1666-jmol-lines.diff](tarball://root/attachments/some-uuid/ticket1666/1666-jmol-lines.diff) by @robertwb created at 2008-01-03 12:22:57",
     "created_at": "2008-01-03T12:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1666",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1666#issuecomment-10588",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [1666-jmol-lines.diff](tarball://root/attachments/some-uuid/ticket1666/1666-jmol-lines.diff) by robertwb created at 2008-01-03 12:22:57
+Attachment [1666-jmol-lines.diff](tarball://root/attachments/some-uuid/ticket1666/1666-jmol-lines.diff) by @robertwb created at 2008-01-03 12:22:57
 
 
 

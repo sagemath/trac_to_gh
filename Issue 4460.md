@@ -14,7 +14,7 @@ archive/issues_004460.json:
     "title": "add link to PDF manuals in doc/html/index.html",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4460",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: tba
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4460
 archive/issue_comments_032908.json:
 ```json
 {
-    "body": "Attachment [trac_4460_pdf_links.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460_pdf_links.patch) by mpatel created at 2009-07-08 19:09:51\n\nIncludes pdf.png",
+    "body": "Attachment [trac_4460_pdf_links.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460_pdf_links.patch) by @qed777 created at 2009-07-08 19:09:51\n\nIncludes pdf.png",
     "created_at": "2009-07-08T19:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32908",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_4460_pdf_links.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460_pdf_links.patch) by mpatel created at 2009-07-08 19:09:51
+Attachment [trac_4460_pdf_links.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460_pdf_links.patch) by @qed777 created at 2009-07-08 19:09:51
 
 Includes pdf.png
 
@@ -72,7 +72,7 @@ archive/issue_comments_032909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32909",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_032910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32910",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_032911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32911",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_032912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32912",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_032913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32913",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_032914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32914",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -184,16 +184,16 @@ Apply only this patch.
 archive/issue_comments_032915.json:
 ```json
 {
-    "body": "Attachment [trac_4460-pdf_links_v2.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v2.patch) by mpatel created at 2009-07-22 23:19:41\n\nReplying to [comment:6 jhpalmieri]:\n> On the other hand, if I click on the \"Help\" button from the notebook, then click on \"Fast static versions of the Documentation\", then the I see pdf links but they don't work: I get messages like \"The resource /pdf/en/tutorial/SageTutorial.pdf cannot be found.\"\nThanks very much for catching this.  I think v2 covers both the static and offline docs.\n\nAside:  In the drive for internationalization, perhaps we should instead map `doc/common/output` to, e.g., `http://localhost:8000/doc/static` and serve `index.html` as `http://localhost:8000/doc/static/html/` + `LANG` + `/index.html`.\n\nCorrection:  That should be\n\n```\nconvert $SAGE_ROOT/local/share/moin/htdocs/applets/FCKeditor/editor/filemanager/browser/default/images/icons/pdf.gif $SAGE_ROOT/devel/sage/doc/en/website/static/pdf.png\n```\n",
+    "body": "Attachment [trac_4460-pdf_links_v2.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v2.patch) by @qed777 created at 2009-07-22 23:19:41\n\nReplying to [comment:6 jhpalmieri]:\n> On the other hand, if I click on the \"Help\" button from the notebook, then click on \"Fast static versions of the Documentation\", then the I see pdf links but they don't work: I get messages like \"The resource /pdf/en/tutorial/SageTutorial.pdf cannot be found.\"\nThanks very much for catching this.  I think v2 covers both the static and offline docs.\n\nAside:  In the drive for internationalization, perhaps we should instead map `doc/common/output` to, e.g., `http://localhost:8000/doc/static` and serve `index.html` as `http://localhost:8000/doc/static/html/` + `LANG` + `/index.html`.\n\nCorrection:  That should be\n\n```\nconvert $SAGE_ROOT/local/share/moin/htdocs/applets/FCKeditor/editor/filemanager/browser/default/images/icons/pdf.gif $SAGE_ROOT/devel/sage/doc/en/website/static/pdf.png\n```\n",
     "created_at": "2009-07-22T23:19:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32915",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_4460-pdf_links_v2.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v2.patch) by mpatel created at 2009-07-22 23:19:41
+Attachment [trac_4460-pdf_links_v2.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v2.patch) by @qed777 created at 2009-07-22 23:19:41
 
 Replying to [comment:6 jhpalmieri]:
 > On the other hand, if I click on the "Help" button from the notebook, then click on "Fast static versions of the Documentation", then the I see pdf links but they don't work: I get messages like "The resource /pdf/en/tutorial/SageTutorial.pdf cannot be found."
@@ -220,7 +220,7 @@ archive/issue_comments_032916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32916",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_032919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32919",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_032920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32920",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -313,16 +313,16 @@ Apply only this patch.
 archive/issue_comments_032921.json:
 ```json
 {
-    "body": "Attachment [trac_4460-pdf_links_v3.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v3.patch) by mpatel created at 2009-07-24 08:30:48\n\nVersion 3 adds an option `--no-pdf-links` to the doc builder.  Try\n* `sage -docbuild website html --no-pdf-links -S -a`\n* `sage -docbuild website html -S -a`\nNote: `-S -a` forces a rewrite.\n\nSince #6187 awaits further inspection, I suggest that we keep waiting on this ticket.  Meanwhile, feel free to populate the website's empty sidebar.  Quick references?",
+    "body": "Attachment [trac_4460-pdf_links_v3.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v3.patch) by @qed777 created at 2009-07-24 08:30:48\n\nVersion 3 adds an option `--no-pdf-links` to the doc builder.  Try\n* `sage -docbuild website html --no-pdf-links -S -a`\n* `sage -docbuild website html -S -a`\nNote: `-S -a` forces a rewrite.\n\nSince #6187 awaits further inspection, I suggest that we keep waiting on this ticket.  Meanwhile, feel free to populate the website's empty sidebar.  Quick references?",
     "created_at": "2009-07-24T08:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32921",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_4460-pdf_links_v3.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v3.patch) by mpatel created at 2009-07-24 08:30:48
+Attachment [trac_4460-pdf_links_v3.patch](tarball://root/attachments/some-uuid/ticket4460/trac_4460-pdf_links_v3.patch) by @qed777 created at 2009-07-24 08:30:48
 
 Version 3 adds an option `--no-pdf-links` to the doc builder.  Try
 * `sage -docbuild website html --no-pdf-links -S -a`
@@ -361,7 +361,7 @@ archive/issue_comments_032923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32923",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_032924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32924",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_032929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32929",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_032930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4460",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4460#issuecomment-32930",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

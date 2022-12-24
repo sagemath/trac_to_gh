@@ -14,7 +14,7 @@ archive/issues_007436.json:
     "title": "frobby optional spkg doesn't build on a lot of machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7436",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -122,7 +122,7 @@ archive/issue_comments_062578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7436#issuecomment-62578",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_062579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7436#issuecomment-62579",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_062580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7436#issuecomment-62580",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_062582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7436#issuecomment-62582",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 

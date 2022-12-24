@@ -3,7 +3,7 @@
 archive/issues_009509.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  boothby vdelecroix\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9509\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  boothby @videlec\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9509\n\n",
     "created_at": "2010-07-15T14:43:30Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009509.json:
     "title": "graphs() should give you graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9509",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  boothby vdelecroix
+CC:  boothby @videlec
 
 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9509
 archive/issue_comments_091375.json:
 ```json
 {
-    "body": "Attachment [trac_9509-graph_gen.patch](tarball://root/attachments/some-uuid/ticket9509/trac_9509-graph_gen.patch) by rlm created at 2010-07-15 14:46:06",
+    "body": "Attachment [trac_9509-graph_gen.patch](tarball://root/attachments/some-uuid/ticket9509/trac_9509-graph_gen.patch) by @rlmill created at 2010-07-15 14:46:06",
     "created_at": "2010-07-15T14:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91375",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9509-graph_gen.patch](tarball://root/attachments/some-uuid/ticket9509/trac_9509-graph_gen.patch) by rlm created at 2010-07-15 14:46:06
+Attachment [trac_9509-graph_gen.patch](tarball://root/attachments/some-uuid/ticket9509/trac_9509-graph_gen.patch) by @rlmill created at 2010-07-15 14:46:06
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_091376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91376",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_091377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91377",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_091378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91378",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_091379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91379",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -143,16 +143,16 @@ Please check and let me know if there are problems.
 archive/issue_comments_091380.json:
 ```json
 {
-    "body": "Attachment [trac_9509-graph_gen.2.patch](tarball://root/attachments/some-uuid/ticket9509/trac_9509-graph_gen.2.patch) by mpatel created at 2010-07-21 02:37:51\n\nRebased for queue in comment 3.  Apply only this patch.",
+    "body": "Attachment [trac_9509-graph_gen.2.patch](tarball://root/attachments/some-uuid/ticket9509/trac_9509-graph_gen.2.patch) by @qed777 created at 2010-07-21 02:37:51\n\nRebased for queue in comment 3.  Apply only this patch.",
     "created_at": "2010-07-21T02:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91380",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9509-graph_gen.2.patch](tarball://root/attachments/some-uuid/ticket9509/trac_9509-graph_gen.2.patch) by mpatel created at 2010-07-21 02:37:51
+Attachment [trac_9509-graph_gen.2.patch](tarball://root/attachments/some-uuid/ticket9509/trac_9509-graph_gen.2.patch) by @qed777 created at 2010-07-21 02:37:51
 
 Rebased for queue in comment 3.  Apply only this patch.
 
@@ -168,7 +168,7 @@ archive/issue_comments_091381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91381",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_091382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91382",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_091383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91383",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_091384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91384",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_091385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91385",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

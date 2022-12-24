@@ -14,7 +14,7 @@ archive/issues_007437.json:
     "title": "the optional gnuplotpy-1.7.p3 spkg doesn't build at all since with switched to python-2.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7437",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -55,7 +55,7 @@ archive/issue_comments_062583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7437#issuecomment-62583",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_062584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7437#issuecomment-62584",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_062585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7437#issuecomment-62585",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_062586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7437#issuecomment-62586",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

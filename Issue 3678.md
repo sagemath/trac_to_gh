@@ -14,7 +14,7 @@ archive/issues_003678.json:
     "title": "Fractional powers for polynomial variables bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3678",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: tbd
@@ -73,7 +73,7 @@ archive/issue_comments_026045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3678#issuecomment-26045",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -86,16 +86,16 @@ The attached patch fixes this by introducing the same type-check as in the univa
 archive/issue_comments_026046.json:
 ```json
 {
-    "body": "Attachment [trac_3678.patch](tarball://root/attachments/some-uuid/ticket3678/trac_3678.patch) by AlexGhitza created at 2008-12-21 05:29:15",
+    "body": "Attachment [trac_3678.patch](tarball://root/attachments/some-uuid/ticket3678/trac_3678.patch) by @aghitza created at 2008-12-21 05:29:15",
     "created_at": "2008-12-21T05:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3678#issuecomment-26046",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_3678.patch](tarball://root/attachments/some-uuid/ticket3678/trac_3678.patch) by AlexGhitza created at 2008-12-21 05:29:15
+Attachment [trac_3678.patch](tarball://root/attachments/some-uuid/ticket3678/trac_3678.patch) by @aghitza created at 2008-12-21 05:29:15
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_026047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3678#issuecomment-26047",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

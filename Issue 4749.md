@@ -3,7 +3,7 @@
 archive/issues_004749.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cswiercz\n\nIf I have a point P on an elliptic curve E and F is another curve, then F(P) should work if possible.  It doesn't.   For example:\n\n```\nE = EllipticCurve([1,-1,0,94,9]) \nR = E([0,3]) + 5*E([8,31])      # big denom's\nE11 = E.change_ring(GF(11))\nE11(R) \n BOOM!\n```\n\nBut it should clear denominators and coerce in the triple like so:\n\n```\ndef reduce(R, p):\n    x, y = R.xy()\n    d = LCM(x.denominator(), y.denominator())\n    return R.curve().change_ring(GF(p))([x*d,y*d,d])\n```\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4749\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @cswiercz\n\nIf I have a point P on an elliptic curve E and F is another curve, then F(P) should work if possible.  It doesn't.   For example:\n\n```\nE = EllipticCurve([1,-1,0,94,9]) \nR = E([0,3]) + 5*E([8,31])      # big denom's\nE11 = E.change_ring(GF(11))\nE11(R) \n BOOM!\n```\n\nBut it should clear denominators and coerce in the triple like so:\n\n```\ndef reduce(R, p):\n    x, y = R.xy()\n    d = LCM(x.denominator(), y.denominator())\n    return R.curve().change_ring(GF(p))([x*d,y*d,d])\n```\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4749\n\n",
     "created_at": "2008-12-10T01:00:06Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_004749.json:
     "title": "improve coercion of points between elliptic curves and reduction of points mod p",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4749",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cswiercz
+CC:  @cswiercz
 
 If I have a point P on an elliptic curve E and F is another curve, then F(P) should work if possible.  It doesn't.   For example:
 
@@ -58,7 +58,7 @@ archive/issue_comments_035937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35937",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_035938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35938",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -89,16 +89,16 @@ Changing status from new to assigned.
 archive/issue_comments_035939.json:
 ```json
 {
-    "body": "Attachment [4749.patch](tarball://root/attachments/some-uuid/ticket4749/4749.patch) by cswiercz created at 2008-12-16 05:23:09",
+    "body": "Attachment [4749.patch](tarball://root/attachments/some-uuid/ticket4749/4749.patch) by @cswiercz created at 2008-12-16 05:23:09",
     "created_at": "2008-12-16T05:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35939",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [4749.patch](tarball://root/attachments/some-uuid/ticket4749/4749.patch) by cswiercz created at 2008-12-16 05:23:09
+Attachment [4749.patch](tarball://root/attachments/some-uuid/ticket4749/4749.patch) by @cswiercz created at 2008-12-16 05:23:09
 
 
 
@@ -107,16 +107,16 @@ Attachment [4749.patch](tarball://root/attachments/some-uuid/ticket4749/4749.pat
 archive/issue_comments_035940.json:
 ```json
 {
-    "body": "Changing assignee from was to cswiercz.",
+    "body": "Changing assignee from @williamstein to @cswiercz.",
     "created_at": "2008-12-16T05:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35940",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Changing assignee from was to cswiercz.
+Changing assignee from @williamstein to @cswiercz.
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_035941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35941",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -143,16 +143,16 @@ Change "This functionality is implemented in the \code{__call__} method. " to "T
 archive/issue_comments_035942.json:
 ```json
 {
-    "body": "Attachment [4749-part2.patch](tarball://root/attachments/some-uuid/ticket4749/4749-part2.patch) by cswiercz created at 2008-12-16 19:05:12",
+    "body": "Attachment [4749-part2.patch](tarball://root/attachments/some-uuid/ticket4749/4749-part2.patch) by @cswiercz created at 2008-12-16 19:05:12",
     "created_at": "2008-12-16T19:05:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35942",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [4749-part2.patch](tarball://root/attachments/some-uuid/ticket4749/4749-part2.patch) by cswiercz created at 2008-12-16 19:05:12
+Attachment [4749-part2.patch](tarball://root/attachments/some-uuid/ticket4749/4749-part2.patch) by @cswiercz created at 2008-12-16 19:05:12
 
 
 
@@ -166,7 +166,7 @@ archive/issue_comments_035943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35943",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -217,16 +217,16 @@ I expect that I will post an alternative patch here before long.
 archive/issue_comments_035944.json:
 ```json
 {
-    "body": "Attachment [4749-part3.patch](tarball://root/attachments/some-uuid/ticket4749/4749-part3.patch) by cremona created at 2008-12-19 17:23:11",
+    "body": "Attachment [4749-part3.patch](tarball://root/attachments/some-uuid/ticket4749/4749-part3.patch) by @JohnCremona created at 2008-12-19 17:23:11",
     "created_at": "2008-12-19T17:23:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35944",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [4749-part3.patch](tarball://root/attachments/some-uuid/ticket4749/4749-part3.patch) by cremona created at 2008-12-19 17:23:11
+Attachment [4749-part3.patch](tarball://root/attachments/some-uuid/ticket4749/4749-part3.patch) by @JohnCremona created at 2008-12-19 17:23:11
 
 
 
@@ -240,7 +240,7 @@ archive/issue_comments_035945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4749",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35945",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

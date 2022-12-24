@@ -3,7 +3,7 @@
 archive/issues_009560.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  cwitty mstreng kcrisman\n\nIt's convenient to assume that True and False are equivalent to 1 and 0 in Python, but this doesn't work as expected with symbolic expressions:\n\n\n```\nsage: SR(5) + True; SR(5) * True; SR(5) - True\n2\n1\n0\nsage: 5 + True; 5 * True; 5 - True\n6\n5\n4\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9560\n\n",
+    "body": "Assignee: @burcin\n\nCC:  cwitty @mstreng @kcrisman\n\nIt's convenient to assume that True and False are equivalent to 1 and 0 in Python, but this doesn't work as expected with symbolic expressions:\n\n\n```\nsage: SR(5) + True; SR(5) * True; SR(5) - True\n2\n1\n0\nsage: 5 + True; 5 * True; 5 - True\n6\n5\n4\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9560\n\n",
     "created_at": "2010-07-21T09:06:17Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009560.json:
     "title": "Symbolic expressions don't do arithmetic with bools nicely",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9560",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  cwitty mstreng kcrisman
+CC:  cwitty @mstreng @kcrisman
 
 It's convenient to assume that True and False are equivalent to 1 and 0 in Python, but this doesn't work as expected with symbolic expressions:
 
@@ -52,7 +52,7 @@ archive/issue_comments_092156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9560#issuecomment-92156",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_092157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9560#issuecomment-92157",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_092158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9560#issuecomment-92158",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -102,16 +102,16 @@ See
 archive/issue_comments_092159.json:
 ```json
 {
-    "body": "Attachment [trac_9560-symbolic_bool_arith.patch](tarball://root/attachments/some-uuid/ticket9560/trac_9560-symbolic_bool_arith.patch) by burcin created at 2010-09-25 20:30:34",
+    "body": "Attachment [trac_9560-symbolic_bool_arith.patch](tarball://root/attachments/some-uuid/ticket9560/trac_9560-symbolic_bool_arith.patch) by @burcin created at 2010-09-25 20:30:34",
     "created_at": "2010-09-25T20:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9560#issuecomment-92159",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_9560-symbolic_bool_arith.patch](tarball://root/attachments/some-uuid/ticket9560/trac_9560-symbolic_bool_arith.patch) by burcin created at 2010-09-25 20:30:34
+Attachment [trac_9560-symbolic_bool_arith.patch](tarball://root/attachments/some-uuid/ticket9560/trac_9560-symbolic_bool_arith.patch) by @burcin created at 2010-09-25 20:30:34
 
 
 
@@ -125,7 +125,7 @@ archive/issue_comments_092160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9560#issuecomment-92160",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_092161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9560#issuecomment-92161",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_092162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9560#issuecomment-92162",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_092163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9560#issuecomment-92163",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_092164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9560#issuecomment-92164",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_092165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9560#issuecomment-92165",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

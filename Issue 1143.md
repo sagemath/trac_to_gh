@@ -3,7 +3,7 @@
 archive/issues_001143.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  jason\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1143\n\n",
+    "body": "Assignee: tba\n\nCC:  @jasongrout\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1143\n\n",
     "created_at": "2007-11-11T11:32:47Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_001143.json:
     "title": "[with patch] improve nintegrate documentation in response to Paul Zimmerman's talk",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1143",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
 
-CC:  jason
+CC:  @jasongrout
 
 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1143
 archive/issue_comments_006947.json:
 ```json
 {
-    "body": "Attachment [zimmer.patch](tarball://root/attachments/some-uuid/ticket1143/zimmer.patch) by was created at 2007-11-11 15:32:10\n\nDo not apply -- Paul points out that\n\n```\nOf course. It seems to me that **nintegral** calls Maxima and not GSL\n(it is numerical_integral which calls GSL).\n\nYou might want to provide only one interface to numerical quadrature\n(which might call GSL or Maxima or Pari with some options), and also\nallow for arbitrary precision quadrature (it seems only Pari/GP allows this).\n```\n\nand he's right -- it's just calling maxima.  So the above patch would\nactually break the docs!",
+    "body": "Attachment [zimmer.patch](tarball://root/attachments/some-uuid/ticket1143/zimmer.patch) by @williamstein created at 2007-11-11 15:32:10\n\nDo not apply -- Paul points out that\n\n```\nOf course. It seems to me that **nintegral** calls Maxima and not GSL\n(it is numerical_integral which calls GSL).\n\nYou might want to provide only one interface to numerical quadrature\n(which might call GSL or Maxima or Pari with some options), and also\nallow for arbitrary precision quadrature (it seems only Pari/GP allows this).\n```\n\nand he's right -- it's just calling maxima.  So the above patch would\nactually break the docs!",
     "created_at": "2007-11-11T15:32:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1143#issuecomment-6947",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [zimmer.patch](tarball://root/attachments/some-uuid/ticket1143/zimmer.patch) by was created at 2007-11-11 15:32:10
+Attachment [zimmer.patch](tarball://root/attachments/some-uuid/ticket1143/zimmer.patch) by @williamstein created at 2007-11-11 15:32:10
 
 Do not apply -- Paul points out that
 
@@ -88,16 +88,16 @@ Michael
 archive/issue_comments_006949.json:
 ```json
 {
-    "body": "Attachment [trac1143-part2.patch](tarball://root/attachments/some-uuid/ticket1143/trac1143-part2.patch) by was created at 2007-12-02 19:22:57",
+    "body": "Attachment [trac1143-part2.patch](tarball://root/attachments/some-uuid/ticket1143/trac1143-part2.patch) by @williamstein created at 2007-12-02 19:22:57",
     "created_at": "2007-12-02T19:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1143#issuecomment-6949",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac1143-part2.patch](tarball://root/attachments/some-uuid/ticket1143/trac1143-part2.patch) by was created at 2007-12-02 19:22:57
+Attachment [trac1143-part2.patch](tarball://root/attachments/some-uuid/ticket1143/trac1143-part2.patch) by @williamstein created at 2007-12-02 19:22:57
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_008942.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason mvngu mhansen\n\nKeywords: limit\n\nIn all three calculations below, the first result is false, whereas in a previous version of Sage, he returned Und what is the correct answer.\n\n\n```\nsage:f(x) = (cos(pi/4-x) - tan(x)) / (1 - sin(pi/4+x))\nsage:limit(f(x), x = pi/4) \n+Infinity\nsage: limit(f(x), x = pi/4, dir='plus')            \n-Infinity\nsage: limit(f(x), x = pi/4, dir='minus')           \n+Infinity\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8942\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout mvngu @mwhansen\n\nKeywords: limit\n\nIn all three calculations below, the first result is false, whereas in a previous version of Sage, he returned Und what is the correct answer.\n\n\n```\nsage:f(x) = (cos(pi/4-x) - tan(x)) / (1 - sin(pi/4+x))\nsage:limit(f(x), x = pi/4) \n+Infinity\nsage: limit(f(x), x = pi/4, dir='plus')            \n-Infinity\nsage: limit(f(x), x = pi/4, dir='minus')           \n+Infinity\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8942\n\n",
     "created_at": "2010-05-10T09:32:39Z",
     "labels": [
         "calculus",
@@ -17,9 +17,9 @@ archive/issues_008942.json:
     "user": "casamayou"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason mvngu mhansen
+CC:  @jasongrout mvngu @mwhansen
 
 Keywords: limit
 
@@ -53,7 +53,7 @@ archive/issue_comments_082331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82331",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_082334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82334",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_082335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82335",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_082336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82336",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -181,16 +181,16 @@ I will now violate that same web page by re-opening it; since it hasn't actually
 archive/issue_comments_082337.json:
 ```json
 {
-    "body": "Attachment [trac_8942-unsigned-inf.patch](tarball://root/attachments/some-uuid/ticket8942/trac_8942-unsigned-inf.patch) by kcrisman created at 2010-05-27 16:05:19\n\nBased on 4.4.2",
+    "body": "Attachment [trac_8942-unsigned-inf.patch](tarball://root/attachments/some-uuid/ticket8942/trac_8942-unsigned-inf.patch) by @kcrisman created at 2010-05-27 16:05:19\n\nBased on 4.4.2",
     "created_at": "2010-05-27T16:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82337",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_8942-unsigned-inf.patch](tarball://root/attachments/some-uuid/ticket8942/trac_8942-unsigned-inf.patch) by kcrisman created at 2010-05-27 16:05:19
+Attachment [trac_8942-unsigned-inf.patch](tarball://root/attachments/some-uuid/ticket8942/trac_8942-unsigned-inf.patch) by @kcrisman created at 2010-05-27 16:05:19
 
 Based on 4.4.2
 
@@ -206,7 +206,7 @@ archive/issue_comments_082338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82338",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_082339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82339",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_082340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82340",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_082341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82341",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_082342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82342",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_082343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82343",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

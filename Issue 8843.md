@@ -14,7 +14,7 @@ archive/issues_008843.json:
     "title": "fix c_lib on Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8843",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_081292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81292",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_081293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81293",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_081294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81294",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -88,16 +88,16 @@ Unfortunately, after applying this, libcsage just doesn't build anymore.
 archive/issue_comments_081295.json:
 ```json
 {
-    "body": "Attachment [trac_8843-c_lib.patch](tarball://root/attachments/some-uuid/ticket8843/trac_8843-c_lib.patch) by mhansen created at 2010-05-25 18:21:15",
+    "body": "Attachment [trac_8843-c_lib.patch](tarball://root/attachments/some-uuid/ticket8843/trac_8843-c_lib.patch) by @mwhansen created at 2010-05-25 18:21:15",
     "created_at": "2010-05-25T18:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81295",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8843-c_lib.patch](tarball://root/attachments/some-uuid/ticket8843/trac_8843-c_lib.patch) by mhansen created at 2010-05-25 18:21:15
+Attachment [trac_8843-c_lib.patch](tarball://root/attachments/some-uuid/ticket8843/trac_8843-c_lib.patch) by @mwhansen created at 2010-05-25 18:21:15
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_081296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81296",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_081297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81297",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_081298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81298",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_081299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81299",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_081300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81300",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

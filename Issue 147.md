@@ -3,7 +3,7 @@
 archive/issues_000147.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe build breaks here because of missing headerrs:\n\n    gcc -DHAVE_CONFIG_H -I. -I. -I. -I/SandBox/Justin/sb/sage-1.4/local//include/freetype2 \\\n         -I/SandBox/Justin/sb/sage-1.4/local//include -g -O2 -MT gdft.lo -MD -MP -MF \\\n         .deps/gdft.Tpo -c gdft.c  -fno-common -DPIC -o .libs/gdft.lo\n    gdft.c:1366:35: error: fontconfig/fontconfig.h: No such file or directory\n\nIssue created by migration from https://trac.sagemath.org/ticket/147\n\n",
+    "body": "Assignee: @williamstein\n\nThe build breaks here because of missing headerrs:\n\n    gcc -DHAVE_CONFIG_H -I. -I. -I. -I/SandBox/Justin/sb/sage-1.4/local//include/freetype2 \\\n         -I/SandBox/Justin/sb/sage-1.4/local//include -g -O2 -MT gdft.lo -MD -MP -MF \\\n         .deps/gdft.Tpo -c gdft.c  -fno-common -DPIC -o .libs/gdft.lo\n    gdft.c:1366:35: error: fontconfig/fontconfig.h: No such file or directory\n\nIssue created by migration from https://trac.sagemath.org/ticket/147\n\n",
     "created_at": "2006-10-21T20:51:54Z",
     "labels": [
         "algebraic geometry",
@@ -16,7 +16,7 @@ archive/issues_000147.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The build breaks here because of missing headerrs:
 
@@ -61,7 +61,7 @@ archive/issue_comments_000673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/147#issuecomment-673",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_000674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/147#issuecomment-674",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

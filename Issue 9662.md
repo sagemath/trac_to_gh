@@ -3,7 +3,7 @@
 archive/issues_009662.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhen executing a GP command using the Sage interface, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):\n\n\n```\ngp> kill(x)   /* No output */\n```\n\n\nBut in Sage:\n\n```\nsage: gp('kill(x)')\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9662\n\n",
+    "body": "Assignee: @williamstein\n\nWhen executing a GP command using the Sage interface, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):\n\n\n```\ngp> kill(x)   /* No output */\n```\n\n\nBut in Sage:\n\n```\nsage: gp('kill(x)')\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9662\n\n",
     "created_at": "2010-08-01T17:37:29Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_009662.json:
     "title": "gp(string) always returns a value, even when it should not",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9662",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 When executing a GP command using the Sage interface, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):
 
@@ -51,7 +51,7 @@ archive/issue_comments_093781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9662#issuecomment-93781",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_093782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9662#issuecomment-93782",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_093783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9662#issuecomment-93783",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_093784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9662#issuecomment-93784",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004222.json:
     "title": "Building R fails due to problem with readline",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4222",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 Assignee: mabshoff
@@ -90,7 +90,7 @@ archive/issue_comments_030677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4222#issuecomment-30677",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_030679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4222#issuecomment-30679",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

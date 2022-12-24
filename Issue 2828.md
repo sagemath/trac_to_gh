@@ -3,7 +3,7 @@
 archive/issues_002828.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2828\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2828\n\n",
     "created_at": "2008-04-06T10:09:16Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002828.json:
     "title": "get doctest coverage for combinat/ to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2828",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_019412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2828#issuecomment-19412",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_019413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2828#issuecomment-19413",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -70,16 +70,16 @@ Ignore lint.patch.  2828.patch is the one to be reviewed.
 archive/issue_comments_019414.json:
 ```json
 {
-    "body": "Attachment [2828.patch](tarball://root/attachments/some-uuid/ticket2828/2828.patch) by mhansen created at 2008-04-06 10:36:42\n\nNote that this patch is based against 3.0.alpha2.",
+    "body": "Attachment [2828.patch](tarball://root/attachments/some-uuid/ticket2828/2828.patch) by @mwhansen created at 2008-04-06 10:36:42\n\nNote that this patch is based against 3.0.alpha2.",
     "created_at": "2008-04-06T10:36:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2828#issuecomment-19414",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2828.patch](tarball://root/attachments/some-uuid/ticket2828/2828.patch) by mhansen created at 2008-04-06 10:36:42
+Attachment [2828.patch](tarball://root/attachments/some-uuid/ticket2828/2828.patch) by @mwhansen created at 2008-04-06 10:36:42
 
 Note that this patch is based against 3.0.alpha2.
 
@@ -95,7 +95,7 @@ archive/issue_comments_019415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2828",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2828#issuecomment-19415",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

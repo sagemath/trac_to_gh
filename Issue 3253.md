@@ -3,7 +3,7 @@
 archive/issues_003253.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  alexghitza\n\nThe code {{{ # file = singularlocus1.sage\nK = QQ\nR.<x,y,z> = PolynomialRing(K)\nf = x^3 + y^3 + z^3\nJ = f.jacob()*R # Jacobian ideal\nd = J.dimension()\nprint \"f =\", f\nprint \"dimension(Jacobian ideal of f) =\", d\nprint \"projective dimension of singular locus of f =\", d-1 }}}\ngenerates an error:\n\n[chiquito:jc] sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0, Release Date: 2008-04-21                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: load \"singularlocus1.sage\"\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/carlson/.sage/temp/chiquito.lan/9508/_Users_carlson_docs_chiquito__Research_CIMAT_Lectures_sageprogs_singularlocus1_sage_0.py in <module>()\n      7 R = PolynomialRing(K,names=('x', 'y', 'z')); (x, y, z,) = R._first_ngens(Integer(3))\n      8 f = x**Integer(3) + y**Integer(3) + z**Integer(3)\n----> 9 J = f.jacob()*R # Jacobian ideal\n     10 d = J.dimension()\n     11 print \"f =\", f\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute 'jacob'\nWARNING: Failure executing file: </Users/carlson/.sage/temp/chiquito.lan/9508/_Users_carlson_docs_chiquito__Research_CIMAT_Lectures_sageprogs_singularlocus1_sage_0.py>\n\n\nIt seems that f.jacob() no longer exists.  (for a while it didn't, then it did, now it doesn')\n\nIssue created by migration from https://trac.sagemath.org/ticket/3253\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\nThe code {{{ # file = singularlocus1.sage\nK = QQ\nR.<x,y,z> = PolynomialRing(K)\nf = x^3 + y^3 + z^3\nJ = f.jacob()*R # Jacobian ideal\nd = J.dimension()\nprint \"f =\", f\nprint \"dimension(Jacobian ideal of f) =\", d\nprint \"projective dimension of singular locus of f =\", d-1 }}}\ngenerates an error:\n\n[chiquito:jc] sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0, Release Date: 2008-04-21                         |\n| Type notebook() for the GUI, and license() for information.        |\nsage: load \"singularlocus1.sage\"\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/carlson/.sage/temp/chiquito.lan/9508/_Users_carlson_docs_chiquito__Research_CIMAT_Lectures_sageprogs_singularlocus1_sage_0.py in <module>()\n      7 R = PolynomialRing(K,names=('x', 'y', 'z')); (x, y, z,) = R._first_ngens(Integer(3))\n      8 f = x**Integer(3) + y**Integer(3) + z**Integer(3)\n----> 9 J = f.jacob()*R # Jacobian ideal\n     10 d = J.dimension()\n     11 print \"f =\", f\n\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute 'jacob'\nWARNING: Failure executing file: </Users/carlson/.sage/temp/chiquito.lan/9508/_Users_carlson_docs_chiquito__Research_CIMAT_Lectures_sageprogs_singularlocus1_sage_0.py>\n\n\nIt seems that f.jacob() no longer exists.  (for a while it didn't, then it did, now it doesn')\n\nIssue created by migration from https://trac.sagemath.org/ticket/3253\n\n",
     "created_at": "2008-05-18T03:43:31Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_003253.json:
     "user": "jxxcarlson"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  alexghitza
 
@@ -96,7 +96,7 @@ archive/issue_comments_022503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3253#issuecomment-22503",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_022504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3253#issuecomment-22504",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_022505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3253#issuecomment-22505",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_022506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3253#issuecomment-22506",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_022507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3253#issuecomment-22507",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_022508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3253#issuecomment-22508",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -201,16 +201,16 @@ This function should not be implemented for `sage.rings.polynomial.multi_polynom
 archive/issue_comments_022509.json:
 ```json
 {
-    "body": "Attachment [3253-jacobian_ideal.patch](tarball://root/attachments/some-uuid/ticket3253/3253-jacobian_ideal.patch) by AlexGhitza created at 2008-08-28 03:39:57",
+    "body": "Attachment [3253-jacobian_ideal.patch](tarball://root/attachments/some-uuid/ticket3253/3253-jacobian_ideal.patch) by @aghitza created at 2008-08-28 03:39:57",
     "created_at": "2008-08-28T03:39:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3253#issuecomment-22509",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [3253-jacobian_ideal.patch](tarball://root/attachments/some-uuid/ticket3253/3253-jacobian_ideal.patch) by AlexGhitza created at 2008-08-28 03:39:57
+Attachment [3253-jacobian_ideal.patch](tarball://root/attachments/some-uuid/ticket3253/3253-jacobian_ideal.patch) by @aghitza created at 2008-08-28 03:39:57
 
 
 
@@ -224,7 +224,7 @@ archive/issue_comments_022510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3253#issuecomment-22510",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_022511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3253#issuecomment-22511",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

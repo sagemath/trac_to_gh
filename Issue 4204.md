@@ -3,7 +3,7 @@
 archive/issues_004204.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mvngu\n\nKeywords: tutorial, screen\n\nThe question \"how can I let Sage run when I'm logged out?\" comes up often enough that it probably deserves a short section in the tutorial, most likely in Chapter 3 (The Interactive Shell).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4204\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  mvngu\n\nKeywords: tutorial, screen\n\nThe question \"how can I let Sage run when I'm logged out?\" comes up often enough that it probably deserves a short section in the tutorial, most likely in Chapter 3 (The Interactive Shell).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4204\n\n",
     "created_at": "2008-09-27T02:25:16Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_004204.json:
     "title": "add short section on using screen to the tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4204",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  mvngu
 

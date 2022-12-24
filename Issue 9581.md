@@ -3,7 +3,7 @@
 archive/issues_009581.json:
 ```json
 {
-    "body": "Assignee: vdelecroix\n\nCC:  ncohen rmiller\n\nKeywords: graph\n\nCurrently, the edge_incident method of generic graph calls edge_boundary which first take a lot of time and secondly does not work\n\n\n```\nsage: G = Graph(loops=True)\nsage: G.add_edge(0,0)\nsage: G.edges()\n[(0, 0, None)]\nsage: list(G.edge_iterator(0))\n[(0, 0, None)]\nsage: G.edges_incident(0)\n[]\n```\n\n\nThe ticket also aims to reduce multiple calls (edge_boundary does not call directly vertex_iterator as it should).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9581\n\n",
+    "body": "Assignee: @videlec\n\nCC:  @nathanncohen rmiller\n\nKeywords: graph\n\nCurrently, the edge_incident method of generic graph calls edge_boundary which first take a lot of time and secondly does not work\n\n\n```\nsage: G = Graph(loops=True)\nsage: G.add_edge(0,0)\nsage: G.edges()\n[(0, 0, None)]\nsage: list(G.edge_iterator(0))\n[(0, 0, None)]\nsage: G.edges_incident(0)\n[]\n```\n\n\nThe ticket also aims to reduce multiple calls (edge_boundary does not call directly vertex_iterator as it should).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9581\n\n",
     "created_at": "2010-07-23T07:13:18Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009581.json:
     "title": "edge_incident bug in generic_graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9581",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
-Assignee: vdelecroix
+Assignee: @videlec
 
-CC:  ncohen rmiller
+CC:  @nathanncohen rmiller
 
 Keywords: graph
 
@@ -56,7 +56,7 @@ archive/issue_comments_092537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92537",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_092538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92538",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -91,16 +91,16 @@ Nathann
 archive/issue_comments_092539.json:
 ```json
 {
-    "body": "Attachment [trac_9581-fix.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-fix.patch) by vdelecroix created at 2010-07-23 23:27:42\n\nNathan, Why did you put this ticket as needs_review? It seems to be important to be a lot more explicit in the definition of each function of generic_graph and implement all the cases in examples... perhaps it is the matter of another ticket...",
+    "body": "Attachment [trac_9581-fix.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-fix.patch) by @videlec created at 2010-07-23 23:27:42\n\nNathan, Why did you put this ticket as needs_review? It seems to be important to be a lot more explicit in the definition of each function of generic_graph and implement all the cases in examples... perhaps it is the matter of another ticket...",
     "created_at": "2010-07-23T23:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92539",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_9581-fix.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-fix.patch) by vdelecroix created at 2010-07-23 23:27:42
+Attachment [trac_9581-fix.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-fix.patch) by @videlec created at 2010-07-23 23:27:42
 
 Nathan, Why did you put this ticket as needs_review? It seems to be important to be a lot more explicit in the definition of each function of generic_graph and implement all the cases in examples... perhaps it is the matter of another ticket...
 
@@ -116,7 +116,7 @@ archive/issue_comments_092540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92540",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_092541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92541",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_092542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92542",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -165,16 +165,16 @@ apply only this patch which takes care of Nathan remark
 archive/issue_comments_092543.json:
 ```json
 {
-    "body": "Attachment [trac_9581-edge_incident.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-edge_incident.patch) by vdelecroix created at 2010-10-10 10:20:24",
+    "body": "Attachment [trac_9581-edge_incident.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-edge_incident.patch) by @videlec created at 2010-10-10 10:20:24",
     "created_at": "2010-10-10T10:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92543",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_9581-edge_incident.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-edge_incident.patch) by vdelecroix created at 2010-10-10 10:20:24
+Attachment [trac_9581-edge_incident.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-edge_incident.patch) by @videlec created at 2010-10-10 10:20:24
 
 
 
@@ -188,7 +188,7 @@ archive/issue_comments_092544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92544",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_092545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92545",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_092546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92546",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -239,16 +239,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_092547.json:
 ```json
 {
-    "body": "Attachment [trac_9581-edge_incident.2.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-edge_incident.2.patch) by vdelecroix created at 2010-10-11 08:02:00\n\nrebased version (apply only this one)",
+    "body": "Attachment [trac_9581-edge_incident.2.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-edge_incident.2.patch) by @videlec created at 2010-10-11 08:02:00\n\nrebased version (apply only this one)",
     "created_at": "2010-10-11T08:02:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92547",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_9581-edge_incident.2.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-edge_incident.2.patch) by vdelecroix created at 2010-10-11 08:02:00
+Attachment [trac_9581-edge_incident.2.patch](tarball://root/attachments/some-uuid/ticket9581/trac_9581-edge_incident.2.patch) by @videlec created at 2010-10-11 08:02:00
 
 rebased version (apply only this one)
 
@@ -264,7 +264,7 @@ archive/issue_comments_092548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92548",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_092549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92549",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_092550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92550",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_092551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9581#issuecomment-92551",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

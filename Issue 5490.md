@@ -3,7 +3,7 @@
 archive/issues_005490.json:
 ```json
 {
-    "body": "Assignee: psinis\n\nCC:  cswiercz\n\nKeywords: finance, dates\n\nCalculates the date for Easter according to any of three methods: Western, Eastern Orthodox, and Julian.\n\n(Critical for future libraries which will introduce business date calculations)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5490\n\n",
+    "body": "Assignee: psinis\n\nCC:  @cswiercz\n\nKeywords: finance, dates\n\nCalculates the date for Easter according to any of three methods: Western, Eastern Orthodox, and Julian.\n\n(Critical for future libraries which will introduce business date calculations)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5490\n\n",
     "created_at": "2009-03-11T22:19:28Z",
     "labels": [
         "finance",
@@ -19,7 +19,7 @@ archive/issues_005490.json:
 ```
 Assignee: psinis
 
-CC:  cswiercz
+CC:  @cswiercz
 
 Keywords: finance, dates
 
@@ -61,7 +61,7 @@ archive/issue_comments_042634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5490#issuecomment-42634",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_042636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5490#issuecomment-42636",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_042637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5490#issuecomment-42637",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_042639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5490#issuecomment-42639",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_042640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5490#issuecomment-42640",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_042641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5490",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5490#issuecomment-42641",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 

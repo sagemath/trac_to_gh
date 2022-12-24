@@ -14,7 +14,7 @@ archive/issues_008261.json:
     "title": "cygwin: mpfr fails 1 test in its test suite on windows",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8261",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -52,7 +52,7 @@ archive/issue_comments_073110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8261#issuecomment-73110",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_073111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8261#issuecomment-73111",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_073112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8261#issuecomment-73112",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_073113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8261#issuecomment-73113",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_073118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8261",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8261#issuecomment-73118",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

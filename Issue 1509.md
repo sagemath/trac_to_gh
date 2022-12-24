@@ -3,7 +3,7 @@
 archive/issues_001509.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\nSince axes_label is broken in plot(), one must resort to adding your\nown custom labels to a plot().\n\nIt would be nice in this application, and others, if one could rotate\ntext objects.  For example, it\nwould be nice to be able to make a custom y-axis label that was\nparallel to the y-axis.  I guess,\nin general, the ability to rotate text would be a useful feature.\n\n```\n\n\nFor Sage, make sure to look up how Mathematica does text rotation, etc.,\nand use that interface instead of making something up at random. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1509\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\nSince axes_label is broken in plot(), one must resort to adding your\nown custom labels to a plot().\n\nIt would be nice in this application, and others, if one could rotate\ntext objects.  For example, it\nwould be nice to be able to make a custom y-axis label that was\nparallel to the y-axis.  I guess,\nin general, the ability to rotate text would be a useful feature.\n\n```\n\n\nFor Sage, make sure to look up how Mathematica does text rotation, etc.,\nand use that interface instead of making something up at random. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1509\n\n",
     "created_at": "2007-12-14T18:05:28Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001509.json:
     "title": "plotting -- improve text support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1509",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -70,16 +70,16 @@ I think a solution like that would be pretty easy in sage.  For example, this mi
 archive/issue_comments_009662.json:
 ```json
 {
-    "body": "Attachment [text.py.patch](tarball://root/attachments/some-uuid/ticket1509/text.py.patch) by wdj created at 2009-08-17 19:36:50\n\nReplying to [comment:1 mrtrumbe]:\n> Regarding text rotation, can we just pass through the rotation option?  \n> This option is already available on the underlying matplotlib text objects, \n> so it seems like a layup.  I've attached a patch which accomplishes just that \n> (it is a very minor change).  This seems to work quite well here.\n\n\nI tried to download it and got a strange method. I guess it is not an hg patch but a diff?\n\nAlso, did you include an example in the docstring to illustrate your new feature?",
+    "body": "Attachment [text.py.patch](tarball://root/attachments/some-uuid/ticket1509/text.py.patch) by @wdjoyner created at 2009-08-17 19:36:50\n\nReplying to [comment:1 mrtrumbe]:\n> Regarding text rotation, can we just pass through the rotation option?  \n> This option is already available on the underlying matplotlib text objects, \n> so it seems like a layup.  I've attached a patch which accomplishes just that \n> (it is a very minor change).  This seems to work quite well here.\n\n\nI tried to download it and got a strange method. I guess it is not an hg patch but a diff?\n\nAlso, did you include an example in the docstring to illustrate your new feature?",
     "created_at": "2009-08-17T19:36:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1509#issuecomment-9662",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [text.py.patch](tarball://root/attachments/some-uuid/ticket1509/text.py.patch) by wdj created at 2009-08-17 19:36:50
+Attachment [text.py.patch](tarball://root/attachments/some-uuid/ticket1509/text.py.patch) by @wdjoyner created at 2009-08-17 19:36:50
 
 Replying to [comment:1 mrtrumbe]:
 > Regarding text rotation, can we just pass through the rotation option?  
@@ -130,7 +130,7 @@ archive/issue_comments_009664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1509#issuecomment-9664",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -215,16 +215,16 @@ This is a proper hg patch.  Code is docstring tested.
 archive/issue_comments_009668.json:
 ```json
 {
-    "body": "Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket1509/12846.patch) by kcrisman created at 2009-10-05 18:24:07\n\nThis is really neat, as the graphic says! It makes good sense to get more of the mpl functionality exposed, even if axes_labels now works again.  Positive review.  Apply only most recent patch.",
+    "body": "Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket1509/12846.patch) by @kcrisman created at 2009-10-05 18:24:07\n\nThis is really neat, as the graphic says! It makes good sense to get more of the mpl functionality exposed, even if axes_labels now works again.  Positive review.  Apply only most recent patch.",
     "created_at": "2009-10-05T18:24:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1509#issuecomment-9668",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket1509/12846.patch) by kcrisman created at 2009-10-05 18:24:07
+Attachment [12846.patch](tarball://root/attachments/some-uuid/ticket1509/12846.patch) by @kcrisman created at 2009-10-05 18:24:07
 
 This is really neat, as the graphic says! It makes good sense to get more of the mpl functionality exposed, even if axes_labels now works again.  Positive review.  Apply only most recent patch.
 
@@ -240,7 +240,7 @@ archive/issue_comments_009669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1509",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1509#issuecomment-9669",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008008.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was rbeezer\n\nThis is a resolution to the issues at #3211.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8008\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @rbeezer\n\nThis is a resolution to the issues at #3211.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8008\n\n",
     "created_at": "2010-01-20T05:01:34Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_008008.json:
     "title": "Implement an rref() function which works over the fraction field of the base ring of a matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8008",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was rbeezer
+CC:  @williamstein @rbeezer
 
 This is a resolution to the issues at #3211.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8008
 archive/issue_comments_069980.json:
 ```json
 {
-    "body": "Attachment [trac-8008-rref.patch](tarball://root/attachments/some-uuid/ticket8008/trac-8008-rref.patch) by jason created at 2010-01-20 05:04:42",
+    "body": "Attachment [trac-8008-rref.patch](tarball://root/attachments/some-uuid/ticket8008/trac-8008-rref.patch) by @jasongrout created at 2010-01-20 05:04:42",
     "created_at": "2010-01-20T05:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8008#issuecomment-69980",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8008-rref.patch](tarball://root/attachments/some-uuid/ticket8008/trac-8008-rref.patch) by jason created at 2010-01-20 05:04:42
+Attachment [trac-8008-rref.patch](tarball://root/attachments/some-uuid/ticket8008/trac-8008-rref.patch) by @jasongrout created at 2010-01-20 05:04:42
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_069981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8008#issuecomment-69981",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_069984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8008#issuecomment-69984",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -135,16 +135,16 @@ apply on top of previous patch
 archive/issue_comments_069985.json:
 ```json
 {
-    "body": "Attachment [trac-8008-fixes.patch](tarball://root/attachments/some-uuid/ticket8008/trac-8008-fixes.patch) by jason created at 2010-01-20 10:02:48",
+    "body": "Attachment [trac-8008-fixes.patch](tarball://root/attachments/some-uuid/ticket8008/trac-8008-fixes.patch) by @jasongrout created at 2010-01-20 10:02:48",
     "created_at": "2010-01-20T10:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8008#issuecomment-69985",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8008-fixes.patch](tarball://root/attachments/some-uuid/ticket8008/trac-8008-fixes.patch) by jason created at 2010-01-20 10:02:48
+Attachment [trac-8008-fixes.patch](tarball://root/attachments/some-uuid/ticket8008/trac-8008-fixes.patch) by @jasongrout created at 2010-01-20 10:02:48
 
 
 
@@ -158,7 +158,7 @@ archive/issue_comments_069986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8008#issuecomment-69986",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_069987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8008#issuecomment-69987",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_069995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8008#issuecomment-69995",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -376,16 +376,16 @@ I think the rebase is fine.  But I wanted to add some doctests for more complica
 archive/issue_comments_069996.json:
 ```json
 {
-    "body": "Attachment [trac_8008-rebase-plus-more.patch](tarball://root/attachments/some-uuid/ticket8008/trac_8008-rebase-plus-more.patch) by kcrisman created at 2010-02-04 04:33:21",
+    "body": "Attachment [trac_8008-rebase-plus-more.patch](tarball://root/attachments/some-uuid/ticket8008/trac_8008-rebase-plus-more.patch) by @kcrisman created at 2010-02-04 04:33:21",
     "created_at": "2010-02-04T04:33:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8008#issuecomment-69996",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_8008-rebase-plus-more.patch](tarball://root/attachments/some-uuid/ticket8008/trac_8008-rebase-plus-more.patch) by kcrisman created at 2010-02-04 04:33:21
+Attachment [trac_8008-rebase-plus-more.patch](tarball://root/attachments/some-uuid/ticket8008/trac_8008-rebase-plus-more.patch) by @kcrisman created at 2010-02-04 04:33:21
 
 
 
@@ -399,7 +399,7 @@ archive/issue_comments_069997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8008#issuecomment-69997",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_069998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8008#issuecomment-69998",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_069999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8008#issuecomment-69999",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -498,7 +498,7 @@ archive/issue_comments_070002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8008",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8008#issuecomment-70002",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

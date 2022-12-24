@@ -14,7 +14,7 @@ archive/issues_001879.json:
     "title": "notebook -- registering redirects to annoying url",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1879",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -75,7 +75,7 @@ archive/issue_comments_011893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1879#issuecomment-11893",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

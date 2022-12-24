@@ -3,7 +3,7 @@
 archive/issues_006585.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  sage-combinat\n\nThis patch changes a few docstrings in partition.py which contain backslashes from\n\n```\n\"\"\"\nblah\n\"\"\"\n```\n\nto\n\n```\nr\"\"\"\nblah\n\"\"\"\n```\n\n(I've been playing with version 0.6.2 of Sphinx, and it barfs without making this change.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6585\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  sage-combinat\n\nThis patch changes a few docstrings in partition.py which contain backslashes from\n\n```\n\"\"\"\nblah\n\"\"\"\n```\n\nto\n\n```\nr\"\"\"\nblah\n\"\"\"\n```\n\n(I've been playing with version 0.6.2 of Sphinx, and it barfs without making this change.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6585\n\n",
     "created_at": "2009-07-22T05:04:28Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_006585.json:
     "title": "[with patch, needs review] trivial change to a few docstrings in partition.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6585",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 CC:  sage-combinat
 
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6585
 archive/issue_comments_053802.json:
 ```json
 {
-    "body": "Attachment [trac_6585-backslash.patch](tarball://root/attachments/some-uuid/ticket6585/trac_6585-backslash.patch) by jhpalmieri created at 2009-07-22 05:04:57",
+    "body": "Attachment [trac_6585-backslash.patch](tarball://root/attachments/some-uuid/ticket6585/trac_6585-backslash.patch) by @jhpalmieri created at 2009-07-22 05:04:57",
     "created_at": "2009-07-22T05:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6585",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6585#issuecomment-53802",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_6585-backslash.patch](tarball://root/attachments/some-uuid/ticket6585/trac_6585-backslash.patch) by jhpalmieri created at 2009-07-22 05:04:57
+Attachment [trac_6585-backslash.patch](tarball://root/attachments/some-uuid/ticket6585/trac_6585-backslash.patch) by @jhpalmieri created at 2009-07-22 05:04:57
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_004480.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  tornaria\n\nThe attached patch builds the entire dependency tree from scratch in 0.6 seconds, and caches it to disk so subsequent dependency checking takes 0.05 seconds to verify. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4480\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @tornaria\n\nThe attached patch builds the entire dependency tree from scratch in 0.6 seconds, and caches it to disk so subsequent dependency checking takes 0.05 seconds to verify. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4480\n\n",
     "created_at": "2008-11-09T12:45:56Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_004480.json:
     "title": "[with patch, needs review] cython dependancy checking is too slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4480",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
 
-CC:  tornaria
+CC:  @tornaria
 
 The attached patch builds the entire dependency tree from scratch in 0.6 seconds, and caches it to disk so subsequent dependency checking takes 0.05 seconds to verify. 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4480
 archive/issue_comments_033092.json:
 ```json
 {
-    "body": "Attachment [4480-cython-deps.patch](tarball://root/attachments/some-uuid/ticket4480/4480-cython-deps.patch) by robertwb created at 2008-11-09 13:07:50",
+    "body": "Attachment [4480-cython-deps.patch](tarball://root/attachments/some-uuid/ticket4480/4480-cython-deps.patch) by @robertwb created at 2008-11-09 13:07:50",
     "created_at": "2008-11-09T13:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33092",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4480-cython-deps.patch](tarball://root/attachments/some-uuid/ticket4480/4480-cython-deps.patch) by robertwb created at 2008-11-09 13:07:50
+Attachment [4480-cython-deps.patch](tarball://root/attachments/some-uuid/ticket4480/4480-cython-deps.patch) by @robertwb created at 2008-11-09 13:07:50
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_033093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33093",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -70,16 +70,16 @@ So Gonzalo and I are in the middle of writing the build process in `setup.py`. L
 archive/issue_comments_033094.json:
 ```json
 {
-    "body": "Attachment [trac-4480-rc0.patch](tarball://root/attachments/some-uuid/ticket4480/trac-4480-rc0.patch) by craigcitro created at 2008-11-13 13:42:14\n\nHere we go! So this patch applies on top of `rc0` + the patch at #4500, because it was a needed fix. With this patch in, we've got it all: fast cached dependency checking, parallel calls to Cython, and dozens of small improvements to the build system thrown in, too. I also reorganized `setup.py` and created a `module_list.py` to have the list of extension modules. \n\nRobert, I've looked at (probably every line of) your code which is now in here -- can you review the rest? I did make small changes to one or two of your functions; in particular, `parse_deps`, I think.\n\nI've run it through some paces, but I'm happy to fix any bugs that pop up.\n\nCredit should go to Rob, Gonzalo, and me.",
+    "body": "Attachment [trac-4480-rc0.patch](tarball://root/attachments/some-uuid/ticket4480/trac-4480-rc0.patch) by @craigcitro created at 2008-11-13 13:42:14\n\nHere we go! So this patch applies on top of `rc0` + the patch at #4500, because it was a needed fix. With this patch in, we've got it all: fast cached dependency checking, parallel calls to Cython, and dozens of small improvements to the build system thrown in, too. I also reorganized `setup.py` and created a `module_list.py` to have the list of extension modules. \n\nRobert, I've looked at (probably every line of) your code which is now in here -- can you review the rest? I did make small changes to one or two of your functions; in particular, `parse_deps`, I think.\n\nI've run it through some paces, but I'm happy to fix any bugs that pop up.\n\nCredit should go to Rob, Gonzalo, and me.",
     "created_at": "2008-11-13T13:42:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33094",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4480-rc0.patch](tarball://root/attachments/some-uuid/ticket4480/trac-4480-rc0.patch) by craigcitro created at 2008-11-13 13:42:14
+Attachment [trac-4480-rc0.patch](tarball://root/attachments/some-uuid/ticket4480/trac-4480-rc0.patch) by @craigcitro created at 2008-11-13 13:42:14
 
 Here we go! So this patch applies on top of `rc0` + the patch at #4500, because it was a needed fix. With this patch in, we've got it all: fast cached dependency checking, parallel calls to Cython, and dozens of small improvements to the build system thrown in, too. I also reorganized `setup.py` and created a `module_list.py` to have the list of extension modules. 
 
@@ -101,7 +101,7 @@ archive/issue_comments_033095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33095",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -114,16 +114,16 @@ Changing status from new to assigned.
 archive/issue_comments_033096.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to craigcitro.",
+    "body": "Changing assignee from mabshoff to @craigcitro.",
     "created_at": "2008-11-13T13:42:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33096",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from mabshoff to craigcitro.
+Changing assignee from mabshoff to @craigcitro.
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_033097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33097",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_033099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33099",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_033101.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33101",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_033102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33102",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_033103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33103",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_033104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33104",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_033108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33108",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

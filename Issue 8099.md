@@ -14,7 +14,7 @@ archive/issues_008099.json:
     "title": "pari fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8099",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -43,7 +43,7 @@ archive/issue_comments_071065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8099#issuecomment-71065",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing status from new to needs_review.
 archive/issue_comments_071066.json:
 ```json
 {
-    "body": "Attachment [pari-2.3.3.p8.patch](tarball://root/attachments/some-uuid/ticket8099/pari-2.3.3.p8.patch) by jsp created at 2010-01-27 23:37:24\n\nAn spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/pari-2.3.3.p8.spkg](http://boxen.math.washington.edu/home/jsp/ports/pari-2.3.3.p8.spkg)\n\nJaap",
+    "body": "Attachment [pari-2.3.3.p8.patch](tarball://root/attachments/some-uuid/ticket8099/pari-2.3.3.p8.patch) by @jaapspies created at 2010-01-27 23:37:24\n\nAn spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/pari-2.3.3.p8.spkg](http://boxen.math.washington.edu/home/jsp/ports/pari-2.3.3.p8.spkg)\n\nJaap",
     "created_at": "2010-01-27T23:37:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8099#issuecomment-71066",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [pari-2.3.3.p8.patch](tarball://root/attachments/some-uuid/ticket8099/pari-2.3.3.p8.patch) by jsp created at 2010-01-27 23:37:24
+Attachment [pari-2.3.3.p8.patch](tarball://root/attachments/some-uuid/ticket8099/pari-2.3.3.p8.patch) by @jaapspies created at 2010-01-27 23:37:24
 
 An spkg can be found here:
 
@@ -116,7 +116,7 @@ archive/issue_comments_071068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8099#issuecomment-71068",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_071073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8099#issuecomment-71073",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_071074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8099",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8099#issuecomment-71074",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005313.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  leif\n\nWhen looking at #3760 it took a long long time to see that this had anything whatever to do with singular.  To speed this up, we should patch two files in Singular so that instead of getting\n\n\n```\nerror: no more memory\nSystem 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/103 Regions 2:2\n\nhalt 14\n```\n\nas an error, one gets\n\n\n```\nSINGULAR error: no more memory\nSystem 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/103 Regions 2:2\n...\nand then an exception is raised!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5313\n\n",
+    "body": "Assignee: @malb\n\nCC:  @nexttime\n\nWhen looking at #3760 it took a long long time to see that this had anything whatever to do with singular.  To speed this up, we should patch two files in Singular so that instead of getting\n\n\n```\nerror: no more memory\nSystem 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/103 Regions 2:2\n\nhalt 14\n```\n\nas an error, one gets\n\n\n```\nSINGULAR error: no more memory\nSystem 5120k:5120k Appl 4638k/481k Malloc 4095k/0k Valloc 1024k/480k Pages 153/103 Regions 2:2\n...\nand then an exception is raised!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5313\n\n",
     "created_at": "2009-02-19T19:18:47Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_005313.json:
     "title": "patch singular so that when it runs out of memory the error message says \"singular\" in it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5313",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  leif
+CC:  @nexttime
 
 When looking at #3760 it took a long long time to see that this had anything whatever to do with singular.  To speed this up, we should patch two files in Singular so that instead of getting
 
@@ -58,7 +58,7 @@ archive/issue_comments_040918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40918",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_040919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40919",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_040920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40920",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_040921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40921",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_040922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40922",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -180,16 +180,16 @@ I submitted this upstream to Hans Schoenemann
 archive/issue_comments_040923.json:
 ```json
 {
-    "body": "Attachment [Singular_error.patch](tarball://root/attachments/some-uuid/ticket5313/Singular_error.patch) by was created at 2010-07-14 20:53:05\n\nNOTE to future self:\n\nTo work on singular:\n\n1. sage -f -m singular-x.y.z.spkg\n2. cd spkg/build/singular-x.y.z\n3. Make changes\n4. Type `make install-libsingular`",
+    "body": "Attachment [Singular_error.patch](tarball://root/attachments/some-uuid/ticket5313/Singular_error.patch) by @williamstein created at 2010-07-14 20:53:05\n\nNOTE to future self:\n\nTo work on singular:\n\n1. sage -f -m singular-x.y.z.spkg\n2. cd spkg/build/singular-x.y.z\n3. Make changes\n4. Type `make install-libsingular`",
     "created_at": "2010-07-14T20:53:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40923",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [Singular_error.patch](tarball://root/attachments/some-uuid/ticket5313/Singular_error.patch) by was created at 2010-07-14 20:53:05
+Attachment [Singular_error.patch](tarball://root/attachments/some-uuid/ticket5313/Singular_error.patch) by @williamstein created at 2010-07-14 20:53:05
 
 NOTE to future self:
 
@@ -212,7 +212,7 @@ archive/issue_comments_040924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40924",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -289,16 +289,16 @@ This is all on sage.math.
 archive/issue_comments_040925.json:
 ```json
 {
-    "body": "Attachment [trac_5313-sigon_sigoff.patch](tarball://root/attachments/some-uuid/ticket5313/trac_5313-sigon_sigoff.patch) by was created at 2010-07-14 21:28:49\n\nThis makes it so errors during arithmetic can be handled.   This won't do anything though unless the singular library is patched to call abort() before exit, as explained in a comment on this ticket.",
+    "body": "Attachment [trac_5313-sigon_sigoff.patch](tarball://root/attachments/some-uuid/ticket5313/trac_5313-sigon_sigoff.patch) by @williamstein created at 2010-07-14 21:28:49\n\nThis makes it so errors during arithmetic can be handled.   This won't do anything though unless the singular library is patched to call abort() before exit, as explained in a comment on this ticket.",
     "created_at": "2010-07-14T21:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40925",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5313-sigon_sigoff.patch](tarball://root/attachments/some-uuid/ticket5313/trac_5313-sigon_sigoff.patch) by was created at 2010-07-14 21:28:49
+Attachment [trac_5313-sigon_sigoff.patch](tarball://root/attachments/some-uuid/ticket5313/trac_5313-sigon_sigoff.patch) by @williamstein created at 2010-07-14 21:28:49
 
 This makes it so errors during arithmetic can be handled.   This won't do anything though unless the singular library is patched to call abort() before exit, as explained in a comment on this ticket.
 
@@ -309,16 +309,16 @@ This makes it so errors during arithmetic can be handled.   This won't do anythi
 archive/issue_comments_040926.json:
 ```json
 {
-    "body": "Attachment [singular-spkg_add_abort.patch](tarball://root/attachments/some-uuid/ticket5313/singular-spkg_add_abort.patch) by was created at 2010-07-14 21:36:57\n\nthis is a patch to the singular spkg.  It patches a patch file.",
+    "body": "Attachment [singular-spkg_add_abort.patch](tarball://root/attachments/some-uuid/ticket5313/singular-spkg_add_abort.patch) by @williamstein created at 2010-07-14 21:36:57\n\nthis is a patch to the singular spkg.  It patches a patch file.",
     "created_at": "2010-07-14T21:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40926",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [singular-spkg_add_abort.patch](tarball://root/attachments/some-uuid/ticket5313/singular-spkg_add_abort.patch) by was created at 2010-07-14 21:36:57
+Attachment [singular-spkg_add_abort.patch](tarball://root/attachments/some-uuid/ticket5313/singular-spkg_add_abort.patch) by @williamstein created at 2010-07-14 21:36:57
 
 this is a patch to the singular spkg.  It patches a patch file.
 
@@ -334,7 +334,7 @@ archive/issue_comments_040927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40927",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_040928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40928",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_040929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40929",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_040930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40930",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_040931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5313#issuecomment-40931",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001603.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1603\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1603\n\n",
     "created_at": "2007-12-27T02:05:09Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001603.json:
     "title": "upgrade pari to 2.3.3, which was recently released",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1603",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_010187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1603#issuecomment-10187",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_010188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1603#issuecomment-10188",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_010189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1603#issuecomment-10189",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

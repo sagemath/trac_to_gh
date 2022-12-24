@@ -3,7 +3,7 @@
 archive/issues_001417.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/symmetrica-2.0.spkg \n\nIssue created by migration from https://trac.sagemath.org/ticket/1417\n\n",
+    "body": "Assignee: @williamstein\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/symmetrica-2.0.spkg \n\nIssue created by migration from https://trac.sagemath.org/ticket/1417\n\n",
     "created_at": "2007-12-07T09:54:27Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_001417.json:
     "title": "update symmetrica",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1417",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There is an spkg at http://sage.math.washington.edu/home/mhansen/symmetrica-2.0.spkg 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1417
 archive/issue_comments_009140.json:
 ```json
 {
-    "body": "Attachment [1417.patch](tarball://root/attachments/some-uuid/ticket1417/1417.patch) by mhansen created at 2007-12-07 10:26:04",
+    "body": "Attachment [1417.patch](tarball://root/attachments/some-uuid/ticket1417/1417.patch) by @mwhansen created at 2007-12-07 10:26:04",
     "created_at": "2007-12-07T10:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1417#issuecomment-9140",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1417.patch](tarball://root/attachments/some-uuid/ticket1417/1417.patch) by mhansen created at 2007-12-07 10:26:04
+Attachment [1417.patch](tarball://root/attachments/some-uuid/ticket1417/1417.patch) by @mwhansen created at 2007-12-07 10:26:04
 
 
 
@@ -50,16 +50,16 @@ Attachment [1417.patch](tarball://root/attachments/some-uuid/ticket1417/1417.pat
 archive/issue_comments_009141.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-12-07T10:27:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1417#issuecomment-9141",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_009142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1417#issuecomment-9142",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_009148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1417",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1417#issuecomment-9148",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

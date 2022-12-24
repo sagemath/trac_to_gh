@@ -3,7 +3,7 @@
 archive/issues_008626.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  cwitty\n\nIt would be nice if roots of quadratics printed using the quadratic formula in QQbar, i.e., \n\n\n```\nsage: QQbar(sqrt(2))\nsqrt(2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8626\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  cwitty\n\nIt would be nice if roots of quadratics printed using the quadratic formula in QQbar, i.e., \n\n\n```\nsage: QQbar(sqrt(2))\nsqrt(2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8626\n\n",
     "created_at": "2010-03-29T19:24:06Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_008626.json:
     "title": "qqbar quadratic elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8626",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  cwitty
 
@@ -46,7 +46,7 @@ archive/issue_comments_078205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78205",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_078206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78206",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_078207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78207",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -128,16 +128,16 @@ sage: m.eigenvalues()
 archive/issue_comments_078208.json:
 ```json
 {
-    "body": "Attachment [trac-8626-qqbar-sqrt-printing.patch](tarball://root/attachments/some-uuid/ticket8626/trac-8626-qqbar-sqrt-printing.patch) by jason created at 2010-04-21 02:47:08",
+    "body": "Attachment [trac-8626-qqbar-sqrt-printing.patch](tarball://root/attachments/some-uuid/ticket8626/trac-8626-qqbar-sqrt-printing.patch) by @jasongrout created at 2010-04-21 02:47:08",
     "created_at": "2010-04-21T02:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78208",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8626-qqbar-sqrt-printing.patch](tarball://root/attachments/some-uuid/ticket8626/trac-8626-qqbar-sqrt-printing.patch) by jason created at 2010-04-21 02:47:08
+Attachment [trac-8626-qqbar-sqrt-printing.patch](tarball://root/attachments/some-uuid/ticket8626/trac-8626-qqbar-sqrt-printing.patch) by @jasongrout created at 2010-04-21 02:47:08
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_078209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78209",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -164,16 +164,16 @@ apply on top of previous patch
 archive/issue_comments_078210.json:
 ```json
 {
-    "body": "Attachment [trac-8626-qqbar-symbolics.patch](tarball://root/attachments/some-uuid/ticket8626/trac-8626-qqbar-symbolics.patch) by jason created at 2010-04-21 02:48:55\n\nI've attached a work-in-progress patch that allows qqbar elements to be converted to symbolics elements in a smart way, i.e., square roots become symbolic square roots, etc.",
+    "body": "Attachment [trac-8626-qqbar-symbolics.patch](tarball://root/attachments/some-uuid/ticket8626/trac-8626-qqbar-symbolics.patch) by @jasongrout created at 2010-04-21 02:48:55\n\nI've attached a work-in-progress patch that allows qqbar elements to be converted to symbolics elements in a smart way, i.e., square roots become symbolic square roots, etc.",
     "created_at": "2010-04-21T02:48:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78210",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8626-qqbar-symbolics.patch](tarball://root/attachments/some-uuid/ticket8626/trac-8626-qqbar-symbolics.patch) by jason created at 2010-04-21 02:48:55
+Attachment [trac-8626-qqbar-symbolics.patch](tarball://root/attachments/some-uuid/ticket8626/trac-8626-qqbar-symbolics.patch) by @jasongrout created at 2010-04-21 02:48:55
 
 I've attached a work-in-progress patch that allows qqbar elements to be converted to symbolics elements in a smart way, i.e., square roots become symbolic square roots, etc.
 
@@ -189,7 +189,7 @@ archive/issue_comments_078211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78211",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_078212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78212",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_078213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78213",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_078214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78214",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_078215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78215",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_078216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78216",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -316,7 +316,7 @@ archive/issue_comments_078217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78217",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_078218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8626#issuecomment-78218",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

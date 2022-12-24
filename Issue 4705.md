@@ -14,7 +14,7 @@ archive/issues_004705.json:
     "title": "Make in-line wysiwyg editor for text cells using TinyMCE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4705",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4705
 archive/issue_comments_035454.json:
 ```json
 {
-    "body": "Attachment [tinymce-editable.patch](tarball://root/attachments/some-uuid/ticket4705/tinymce-editable.patch) by jason created at 2008-12-05 01:13:43",
+    "body": "Attachment [tinymce-editable.patch](tarball://root/attachments/some-uuid/ticket4705/tinymce-editable.patch) by @jasongrout created at 2008-12-05 01:13:43",
     "created_at": "2008-12-05T01:13:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35454",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [tinymce-editable.patch](tarball://root/attachments/some-uuid/ticket4705/tinymce-editable.patch) by jason created at 2008-12-05 01:13:43
+Attachment [tinymce-editable.patch](tarball://root/attachments/some-uuid/ticket4705/tinymce-editable.patch) by @jasongrout created at 2008-12-05 01:13:43
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_035455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35455",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -70,16 +70,16 @@ The spkg is at http://sage.math.washington.edu/home/jason/notebook/tinyMCE-3.2.0
 archive/issue_comments_035456.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2008-12-05T01:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35456",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_035457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35457",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_035462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35462",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_035463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35463",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_035464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35464",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -252,16 +252,16 @@ http://zeta-puppis.com/2006/03/07/javascript-script-execution-in-innerhtml-the-r
 archive/issue_comments_035465.json:
 ```json
 {
-    "body": "Attachment [safari-fix.patch](tarball://root/attachments/some-uuid/ticket4705/safari-fix.patch) by jason created at 2008-12-22 23:06:03\n\napply on top of previous patch",
+    "body": "Attachment [safari-fix.patch](tarball://root/attachments/some-uuid/ticket4705/safari-fix.patch) by @jasongrout created at 2008-12-22 23:06:03\n\napply on top of previous patch",
     "created_at": "2008-12-22T23:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35465",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [safari-fix.patch](tarball://root/attachments/some-uuid/ticket4705/safari-fix.patch) by jason created at 2008-12-22 23:06:03
+Attachment [safari-fix.patch](tarball://root/attachments/some-uuid/ticket4705/safari-fix.patch) by @jasongrout created at 2008-12-22 23:06:03
 
 apply on top of previous patch
 
@@ -277,7 +277,7 @@ archive/issue_comments_035466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35466",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_035468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35468",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_035469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35469",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_035472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35472",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -437,7 +437,7 @@ archive/issue_comments_035473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35473",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -462,7 +462,7 @@ archive/issue_comments_035474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35474",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_035475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35475",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_035476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35476",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -588,7 +588,7 @@ archive/issue_comments_035479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35479",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -606,7 +606,7 @@ archive/issue_comments_035480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35480",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -665,7 +665,7 @@ archive/issue_comments_035482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35482",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -705,7 +705,7 @@ archive/issue_comments_035484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35484",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -725,7 +725,7 @@ archive/issue_comments_035485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35485",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -818,7 +818,7 @@ archive/issue_comments_035489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35489",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -849,7 +849,7 @@ archive/issue_comments_035490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35490",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -864,16 +864,16 @@ I most certainly second the comment that Jason will be very happy to see this fi
 archive/issue_comments_035491.json:
 ```json
 {
-    "body": "Attachment [ghost-text.patch](tarball://root/attachments/some-uuid/ticket4705/ghost-text.patch) by jason created at 2009-01-16 17:53:16",
+    "body": "Attachment [ghost-text.patch](tarball://root/attachments/some-uuid/ticket4705/ghost-text.patch) by @jasongrout created at 2009-01-16 17:53:16",
     "created_at": "2009-01-16T17:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35491",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [ghost-text.patch](tarball://root/attachments/some-uuid/ticket4705/ghost-text.patch) by jason created at 2009-01-16 17:53:16
+Attachment [ghost-text.patch](tarball://root/attachments/some-uuid/ticket4705/ghost-text.patch) by @jasongrout created at 2009-01-16 17:53:16
 
 
 
@@ -887,7 +887,7 @@ archive/issue_comments_035492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35492",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

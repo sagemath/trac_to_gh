@@ -14,7 +14,7 @@ archive/issues_002814.json:
     "title": "sage-3.0-alpha1 on ppc -- new randstate code doesn't work right at all",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2814",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty

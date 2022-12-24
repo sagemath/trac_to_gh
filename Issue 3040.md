@@ -3,7 +3,7 @@
 archive/issues_003040.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3040\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3040\n\n",
     "created_at": "2008-04-27T03:21:07Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_003040.json:
     "title": "[with patch; needs review] make it so magma(A) works for matrices over cyclotomic number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3040",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan
+CC:  @ncalexan
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_020916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3040#issuecomment-20916",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_020917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3040#issuecomment-20917",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_020918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3040#issuecomment-20918",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -152,16 +152,16 @@ Michael
 archive/issue_comments_020920.json:
 ```json
 {
-    "body": "Attachment [sage-3040-doctest-rebase.patch](tarball://root/attachments/some-uuid/ticket3040/sage-3040-doctest-rebase.patch) by was created at 2008-06-09 07:25:44",
+    "body": "Attachment [sage-3040-doctest-rebase.patch](tarball://root/attachments/some-uuid/ticket3040/sage-3040-doctest-rebase.patch) by @williamstein created at 2008-06-09 07:25:44",
     "created_at": "2008-06-09T07:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3040",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3040#issuecomment-20920",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3040-doctest-rebase.patch](tarball://root/attachments/some-uuid/ticket3040/sage-3040-doctest-rebase.patch) by was created at 2008-06-09 07:25:44
+Attachment [sage-3040-doctest-rebase.patch](tarball://root/attachments/some-uuid/ticket3040/sage-3040-doctest-rebase.patch) by @williamstein created at 2008-06-09 07:25:44
 
 
 

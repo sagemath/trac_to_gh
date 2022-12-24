@@ -3,7 +3,7 @@
 archive/issues_004842.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  craigcitro robertwb\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/12394b2efb1f6344/59421c4079e00cc5 for details:\n\n```\n> That example was with CyclotomicField(12) and CyclotomicField(132) ... \n\nAh. I bet the time was spent resolving the roots of CyclotomicField \n(132) to high enough precision to distinguish them. If you don't come   \nup with a patch for this, I'll (probably) do it later tonight. \n- Robert \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4842\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @craigcitro @robertwb\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/12394b2efb1f6344/59421c4079e00cc5 for details:\n\n```\n> That example was with CyclotomicField(12) and CyclotomicField(132) ... \n\nAh. I bet the time was spent resolving the roots of CyclotomicField \n(132) to high enough precision to distinguish them. If you don't come   \nup with a patch for this, I'll (probably) do it later tonight. \n- Robert \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4842\n\n",
     "created_at": "2008-12-20T22:54:44Z",
     "labels": [
         "coercion",
@@ -17,9 +17,9 @@ archive/issues_004842.json:
     "user": "mabshoff"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  craigcitro robertwb
+CC:  @craigcitro @robertwb
 
 See http://groups.google.com/group/sage-devel/browse_thread/thread/12394b2efb1f6344/59421c4079e00cc5 for details:
 
@@ -53,7 +53,7 @@ archive/issue_comments_036720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36720",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -66,16 +66,16 @@ Oh, I should handle the case of 2m -> m for m odd.
 archive/issue_comments_036721.json:
 ```json
 {
-    "body": "Attachment [4842-cyclo-coerce.patch](tarball://root/attachments/some-uuid/ticket4842/4842-cyclo-coerce.patch) by robertwb created at 2008-12-21 13:10:22",
+    "body": "Attachment [4842-cyclo-coerce.patch](tarball://root/attachments/some-uuid/ticket4842/4842-cyclo-coerce.patch) by @robertwb created at 2008-12-21 13:10:22",
     "created_at": "2008-12-21T13:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36721",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4842-cyclo-coerce.patch](tarball://root/attachments/some-uuid/ticket4842/4842-cyclo-coerce.patch) by robertwb created at 2008-12-21 13:10:22
+Attachment [4842-cyclo-coerce.patch](tarball://root/attachments/some-uuid/ticket4842/4842-cyclo-coerce.patch) by @robertwb created at 2008-12-21 13:10:22
 
 
 
@@ -89,7 +89,7 @@ archive/issue_comments_036722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36722",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_036724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36724",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006074.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ncohen mvngu slelievre\n\nEssentially, this shouldn't be too difficult to implement in Sage:\n\nhttp://cs.anu.edu.au/~bdm/papers/plantri-full.pdf\n\nThe basic steps to generate plane graphs (graphs embedded in the plane) of minimum degree at least `d`, connectivity at least `k`, number of edges at least `e`, and max face size at most `p`, are:\n\n1. Implement section 1.3 of the above paper. This allows for a much faster implementation of automorphism group and isomorphism in the case of plane graphs.\n\n2. Generate all planar triangluations, with min degree at least `max(d,3)`, connectivity at least `max(k,3)`. This is described in section 1.2, mainly the third paragraph. Essentially, you start with K_4, and you augment by one of the three moves E_3, E_4, or E_5. The \"backwards\" step in canonical augmentation here is to first try to remove the least-labeled vertex of degree 3, i.e. try to undo E_3 if possible, or degree 4 if that is possible, i.e. try to undo E_4 if possible, then finally checking for degree 5.\n\n3. Use these, together with edge deletion and canonical augmentation, to generate all plane graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6074\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen mvngu @slel\n\nEssentially, this shouldn't be too difficult to implement in Sage:\n\nhttp://cs.anu.edu.au/~bdm/papers/plantri-full.pdf\n\nThe basic steps to generate plane graphs (graphs embedded in the plane) of minimum degree at least `d`, connectivity at least `k`, number of edges at least `e`, and max face size at most `p`, are:\n\n1. Implement section 1.3 of the above paper. This allows for a much faster implementation of automorphism group and isomorphism in the case of plane graphs.\n\n2. Generate all planar triangluations, with min degree at least `max(d,3)`, connectivity at least `max(k,3)`. This is described in section 1.2, mainly the third paragraph. Essentially, you start with K_4, and you augment by one of the three moves E_3, E_4, or E_5. The \"backwards\" step in canonical augmentation here is to first try to remove the least-labeled vertex of degree 3, i.e. try to undo E_3 if possible, or degree 4 if that is possible, i.e. try to undo E_4 if possible, then finally checking for degree 5.\n\n3. Use these, together with edge deletion and canonical augmentation, to generate all plane graphs.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6074\n\n",
     "created_at": "2009-05-18T19:06:13Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_006074.json:
     "title": "Planar graph generation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6074",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  ncohen mvngu slelievre
+CC:  @nathanncohen mvngu @slel
 
 Essentially, this shouldn't be too difficult to implement in Sage:
 
@@ -67,7 +67,7 @@ archive/issue_comments_048352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6074#issuecomment-48352",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_048353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6074#issuecomment-48353",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_048354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6074#issuecomment-48354",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_048355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6074#issuecomment-48355",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

@@ -13,7 +13,7 @@ archive/issues_000001.json:
     "title": "SAGE Notebook leaves dead processes on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -38,7 +38,7 @@ archive/issue_comments_000001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1#issuecomment-1",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_000002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1#issuecomment-2",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

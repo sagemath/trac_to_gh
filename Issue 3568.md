@@ -14,7 +14,7 @@ archive/issues_003568.json:
     "title": "optimize sage startup -- don't import twisted.web2 until needed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3568",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -66,7 +66,7 @@ archive/issue_comments_025206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3568#issuecomment-25206",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,16 +99,16 @@ teragon-2:notebook was$ sage -startuptime |grep notebook
 archive/issue_comments_025207.json:
 ```json
 {
-    "body": "Attachment [sage-3568.patch](tarball://root/attachments/some-uuid/ticket3568/sage-3568.patch) by was created at 2008-07-06 20:08:58",
+    "body": "Attachment [sage-3568.patch](tarball://root/attachments/some-uuid/ticket3568/sage-3568.patch) by @williamstein created at 2008-07-06 20:08:58",
     "created_at": "2008-07-06T20:08:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3568#issuecomment-25207",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3568.patch](tarball://root/attachments/some-uuid/ticket3568/sage-3568.patch) by was created at 2008-07-06 20:08:58
+Attachment [sage-3568.patch](tarball://root/attachments/some-uuid/ticket3568/sage-3568.patch) by @williamstein created at 2008-07-06 20:08:58
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_025208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3568#issuecomment-25208",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_025209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3568#issuecomment-25209",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -157,16 +157,16 @@ makes a sample notebook; this will be even cleaner actually. I'll attach this so
 archive/issue_comments_025210.json:
 ```json
 {
-    "body": "Attachment [sage-3568-part2.patch](tarball://root/attachments/some-uuid/ticket3568/sage-3568-part2.patch) by was created at 2008-07-06 23:24:28",
+    "body": "Attachment [sage-3568-part2.patch](tarball://root/attachments/some-uuid/ticket3568/sage-3568-part2.patch) by @williamstein created at 2008-07-06 23:24:28",
     "created_at": "2008-07-06T23:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3568#issuecomment-25210",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3568-part2.patch](tarball://root/attachments/some-uuid/ticket3568/sage-3568-part2.patch) by was created at 2008-07-06 23:24:28
+Attachment [sage-3568-part2.patch](tarball://root/attachments/some-uuid/ticket3568/sage-3568-part2.patch) by @williamstein created at 2008-07-06 23:24:28
 
 
 
@@ -175,16 +175,16 @@ Attachment [sage-3568-part2.patch](tarball://root/attachments/some-uuid/ticket35
 archive/issue_comments_025211.json:
 ```json
 {
-    "body": "Attachment [3568-was-notebook-startup-and-test-object.patch](tarball://root/attachments/some-uuid/ticket3568/3568-was-notebook-startup-and-test-object.patch) by ncalexan created at 2008-08-10 21:32:49",
+    "body": "Attachment [3568-was-notebook-startup-and-test-object.patch](tarball://root/attachments/some-uuid/ticket3568/3568-was-notebook-startup-and-test-object.patch) by @ncalexan created at 2008-08-10 21:32:49",
     "created_at": "2008-08-10T21:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3568#issuecomment-25211",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [3568-was-notebook-startup-and-test-object.patch](tarball://root/attachments/some-uuid/ticket3568/3568-was-notebook-startup-and-test-object.patch) by ncalexan created at 2008-08-10 21:32:49
+Attachment [3568-was-notebook-startup-and-test-object.patch](tarball://root/attachments/some-uuid/ticket3568/3568-was-notebook-startup-and-test-object.patch) by @ncalexan created at 2008-08-10 21:32:49
 
 
 
@@ -198,7 +198,7 @@ archive/issue_comments_025212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3568#issuecomment-25212",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_025214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3568#issuecomment-25214",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_025215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3568",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3568#issuecomment-25215",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

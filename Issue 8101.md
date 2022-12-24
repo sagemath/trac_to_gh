@@ -14,7 +14,7 @@ archive/issues_008101.json:
     "title": "ntl fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8101",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -41,7 +41,7 @@ archive/issue_comments_071081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-71081",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_review.
 archive/issue_comments_071082.json:
 ```json
 {
-    "body": "Attachment [ntl-5.4.2.p11.patch](tarball://root/attachments/some-uuid/ticket8101/ntl-5.4.2.p11.patch) by jsp created at 2010-01-27 23:58:42\n\nAn spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/ntl-5.4.2.p11.spkg](http://boxen.math.washington.edu/home/jsp/ports/ntl-5.4.2.p11.spkg)\n\nJaap",
+    "body": "Attachment [ntl-5.4.2.p11.patch](tarball://root/attachments/some-uuid/ticket8101/ntl-5.4.2.p11.patch) by @jaapspies created at 2010-01-27 23:58:42\n\nAn spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/ntl-5.4.2.p11.spkg](http://boxen.math.washington.edu/home/jsp/ports/ntl-5.4.2.p11.spkg)\n\nJaap",
     "created_at": "2010-01-27T23:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-71082",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [ntl-5.4.2.p11.patch](tarball://root/attachments/some-uuid/ticket8101/ntl-5.4.2.p11.patch) by jsp created at 2010-01-27 23:58:42
+Attachment [ntl-5.4.2.p11.patch](tarball://root/attachments/some-uuid/ticket8101/ntl-5.4.2.p11.patch) by @jaapspies created at 2010-01-27 23:58:42
 
 An spkg can be found here:
 
@@ -128,7 +128,7 @@ archive/issue_comments_071085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8101",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-71085",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

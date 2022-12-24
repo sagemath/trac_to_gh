@@ -3,7 +3,7 @@
 archive/issues_006251.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  robertwb\n\nKeywords: simple server logout\n\nI'm using the simple server, and it seems like the logout command doesn't really log you out. From a regular Python (2.6) session:\n\n```\n>>> import urllib\n>>> def get_url(url): h = urllib.urlopen(url); data = h.read(); h.close(); return data \n... \n>>> print(get_url('http://localhost:8000/simple/login?username=admin&password=xxx'))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n>>> sess = \"515f64ef06471627e1d4a903ee921899\"\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=2*2'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 1\n}\n___S_A_G_E___\n\n4\n\n>>> print(get_url('http://localhost:8000/simple/logout?session={0}'.format(sess)))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n```\n\n\nBut you can still issue compute commands and have them evaluated. In the same Python session:\n\n```\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=3*3'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 3\n}\n___S_A_G_E___\n\n9\n\n```\n\nIn the LogoutResource class of twist.py, I see that we quit the worksheet and remove all the cells, but it's retaining some state -- note above that after we logout, the next compute command uses  cell 3. You never explicitly remove \"session\" from the sessions dictionary; is that something that should be done?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6251\n\n",
+    "body": "Assignee: boothby\n\nCC:  @robertwb\n\nKeywords: simple server logout\n\nI'm using the simple server, and it seems like the logout command doesn't really log you out. From a regular Python (2.6) session:\n\n```\n>>> import urllib\n>>> def get_url(url): h = urllib.urlopen(url); data = h.read(); h.close(); return data \n... \n>>> print(get_url('http://localhost:8000/simple/login?username=admin&password=xxx'))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n>>> sess = \"515f64ef06471627e1d4a903ee921899\"\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=2*2'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 1\n}\n___S_A_G_E___\n\n4\n\n>>> print(get_url('http://localhost:8000/simple/logout?session={0}'.format(sess)))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n```\n\n\nBut you can still issue compute commands and have them evaluated. In the same Python session:\n\n```\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=3*3'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 3\n}\n___S_A_G_E___\n\n9\n\n```\n\nIn the LogoutResource class of twist.py, I see that we quit the worksheet and remove all the cells, but it's retaining some state -- note above that after we logout, the next compute command uses  cell 3. You never explicitly remove \"session\" from the sessions dictionary; is that something that should be done?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6251\n\n",
     "created_at": "2009-06-09T01:20:04Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006251.json:
     "title": "LogoutResource in sage/server/simple/twist.py doesn't really log you out",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6251",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: boothby
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: simple server logout
 
@@ -89,7 +89,7 @@ archive/issue_comments_049921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49921",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_049922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49922",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -120,16 +120,16 @@ Yes, this should be fixed. It's a security issue as well. I'm surprised the sess
 archive/issue_comments_049923.json:
 ```json
 {
-    "body": "Attachment [trac_6251.patch](tarball://root/attachments/some-uuid/ticket6251/trac_6251.patch) by ddrake created at 2009-06-09 07:23:46",
+    "body": "Attachment [trac_6251.patch](tarball://root/attachments/some-uuid/ticket6251/trac_6251.patch) by @dandrake created at 2009-06-09 07:23:46",
     "created_at": "2009-06-09T07:23:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49923",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_6251.patch](tarball://root/attachments/some-uuid/ticket6251/trac_6251.patch) by ddrake created at 2009-06-09 07:23:46
+Attachment [trac_6251.patch](tarball://root/attachments/some-uuid/ticket6251/trac_6251.patch) by @dandrake created at 2009-06-09 07:23:46
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_049924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49924",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_049925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49925",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_049926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49926",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -203,16 +203,16 @@ The "further-stuff" patch removes the nodoctest, since the file does pass doctes
 archive/issue_comments_049927.json:
 ```json
 {
-    "body": "Changing assignee from boothby to ddrake.",
+    "body": "Changing assignee from boothby to @dandrake.",
     "created_at": "2009-06-09T09:30:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49927",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from boothby to ddrake.
+Changing assignee from boothby to @dandrake.
 
 
 
@@ -226,7 +226,7 @@ archive/issue_comments_049928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49928",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_049929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49929",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_049930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49930",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_049931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49931",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_049932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49932",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -314,16 +314,16 @@ Positive review subject to removing twist.rst from the patch.
 archive/issue_comments_049933.json:
 ```json
 {
-    "body": "Attachment [trac_6251-further-stuff.patch](tarball://root/attachments/some-uuid/ticket6251/trac_6251-further-stuff.patch) by ddrake created at 2009-07-26 05:36:15",
+    "body": "Attachment [trac_6251-further-stuff.patch](tarball://root/attachments/some-uuid/ticket6251/trac_6251-further-stuff.patch) by @dandrake created at 2009-07-26 05:36:15",
     "created_at": "2009-07-26T05:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49933",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_6251-further-stuff.patch](tarball://root/attachments/some-uuid/ticket6251/trac_6251-further-stuff.patch) by ddrake created at 2009-07-26 05:36:15
+Attachment [trac_6251-further-stuff.patch](tarball://root/attachments/some-uuid/ticket6251/trac_6251-further-stuff.patch) by @dandrake created at 2009-07-26 05:36:15
 
 
 

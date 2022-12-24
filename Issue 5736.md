@@ -3,7 +3,7 @@
 archive/issues_005736.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nThis patch adds many new doctests (mainly in sage/modular/hecke) and adds Brandt modules to the reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5736\n\n",
+    "body": "Assignee: @loefflerd\n\nThis patch adds many new doctests (mainly in sage/modular/hecke) and adds Brandt modules to the reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5736\n\n",
     "created_at": "2009-04-10T19:43:47Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_005736.json:
     "title": "Improve doctest coverage for sage/modular/hecke",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5736",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 This patch adds many new doctests (mainly in sage/modular/hecke) and adds Brandt modules to the reference manual.
 
@@ -84,7 +84,7 @@ archive/issue_comments_044823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44823",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_044824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44824",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_044825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44825",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_044826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44826",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_044827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44827",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_044828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44828",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_044829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44829",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_044830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44830",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -360,16 +360,16 @@ Turns out that the doctests fail as a knock-on effect of #4306: the basis_matrix
 archive/issue_comments_044831.json:
 ```json
 {
-    "body": "Attachment [trac_5736-rebase.patch](tarball://root/attachments/some-uuid/ticket5736/trac_5736-rebase.patch) by davidloeffler created at 2009-04-26 09:07:56\n\nreplaces all previous patches, rebased to 3.4.2.alpha0",
+    "body": "Attachment [trac_5736-rebase.patch](tarball://root/attachments/some-uuid/ticket5736/trac_5736-rebase.patch) by @loefflerd created at 2009-04-26 09:07:56\n\nreplaces all previous patches, rebased to 3.4.2.alpha0",
     "created_at": "2009-04-26T09:07:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44831",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5736-rebase.patch](tarball://root/attachments/some-uuid/ticket5736/trac_5736-rebase.patch) by davidloeffler created at 2009-04-26 09:07:56
+Attachment [trac_5736-rebase.patch](tarball://root/attachments/some-uuid/ticket5736/trac_5736-rebase.patch) by @loefflerd created at 2009-04-26 09:07:56
 
 replaces all previous patches, rebased to 3.4.2.alpha0
 
@@ -385,7 +385,7 @@ archive/issue_comments_044832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44832",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_044833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44833",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_044834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44834",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_044835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44835",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -579,16 +579,16 @@ Michael
 archive/issue_comments_044840.json:
 ```json
 {
-    "body": "Attachment [trac_5736-more.patch](tarball://root/attachments/some-uuid/ticket5736/trac_5736-more.patch) by davidloeffler created at 2009-04-30 22:49:54\n\napply over previous patch",
+    "body": "Attachment [trac_5736-more.patch](tarball://root/attachments/some-uuid/ticket5736/trac_5736-more.patch) by @loefflerd created at 2009-04-30 22:49:54\n\napply over previous patch",
     "created_at": "2009-04-30T22:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44840",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5736-more.patch](tarball://root/attachments/some-uuid/ticket5736/trac_5736-more.patch) by davidloeffler created at 2009-04-30 22:49:54
+Attachment [trac_5736-more.patch](tarball://root/attachments/some-uuid/ticket5736/trac_5736-more.patch) by @loefflerd created at 2009-04-30 22:49:54
 
 apply over previous patch
 
@@ -604,7 +604,7 @@ archive/issue_comments_044841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44841",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -622,7 +622,7 @@ archive/issue_comments_044842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44842",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -866,7 +866,7 @@ archive/issue_comments_044846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5736#issuecomment-44846",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

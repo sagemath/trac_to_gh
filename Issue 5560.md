@@ -3,7 +3,7 @@
 archive/issues_005560.json:
 ```json
 {
-    "body": "Assignee: rhinton\n\nCC:  malb\n\nI want to use the `GF2X::MinPolySeq` function from my Cython application in Sage, but the function declaration and input data type, vec_GF2, are not included in the current NTL interface shim.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5560\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @malb\n\nI want to use the `GF2X::MinPolySeq` function from my Cython application in Sage, but the function declaration and input data type, vec_GF2, are not included in the current NTL interface shim.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5560\n\n",
     "created_at": "2009-03-18T16:38:46Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005560.json:
     "title": "[with patch, needs review] NTL interface missing wrappers for vec_GF2 type and GF2X::MinPolySeq",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5560",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: rhinton
+Assignee: @rhinton
 
-CC:  malb
+CC:  @malb
 
 I want to use the `GF2X::MinPolySeq` function from my Cython application in Sage, but the function declaration and input data type, vec_GF2, are not included in the current NTL interface shim.
 
@@ -40,7 +40,7 @@ archive/issue_comments_043270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5560#issuecomment-43270",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_043271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5560#issuecomment-43271",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -80,16 +80,16 @@ and tell it that they are pointing to the same thing ('put')
 archive/issue_comments_043272.json:
 ```json
 {
-    "body": "Attachment [trac_5560_ntl_vec_GF2_MinPolySeq.patch](tarball://root/attachments/some-uuid/ticket5560/trac_5560_ntl_vec_GF2_MinPolySeq.patch) by rhinton created at 2009-03-23 18:01:27\n\nI split out the two cases into put_GF2 and put_long.  Anything other suggestions for positive review? :-)",
+    "body": "Attachment [trac_5560_ntl_vec_GF2_MinPolySeq.patch](tarball://root/attachments/some-uuid/ticket5560/trac_5560_ntl_vec_GF2_MinPolySeq.patch) by @rhinton created at 2009-03-23 18:01:27\n\nI split out the two cases into put_GF2 and put_long.  Anything other suggestions for positive review? :-)",
     "created_at": "2009-03-23T18:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5560#issuecomment-43272",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [trac_5560_ntl_vec_GF2_MinPolySeq.patch](tarball://root/attachments/some-uuid/ticket5560/trac_5560_ntl_vec_GF2_MinPolySeq.patch) by rhinton created at 2009-03-23 18:01:27
+Attachment [trac_5560_ntl_vec_GF2_MinPolySeq.patch](tarball://root/attachments/some-uuid/ticket5560/trac_5560_ntl_vec_GF2_MinPolySeq.patch) by @rhinton created at 2009-03-23 18:01:27
 
 I split out the two cases into put_GF2 and put_long.  Anything other suggestions for positive review? :-)
 
@@ -105,7 +105,7 @@ archive/issue_comments_043273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5560",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5560#issuecomment-43273",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001956.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  mhansen simonking malb hlaw\n\nMultivariate power series arithmetic has been requested a *lot*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1956\n\n",
+    "body": "Assignee: @malb\n\nCC:  @mwhansen simonking @malb @unzvfu\n\nMultivariate power series arithmetic has been requested a *lot*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1956\n\n",
     "created_at": "2008-01-28T02:26:47Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_001956.json:
     "title": "implement multivariate power series arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1956",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  mhansen simonking malb hlaw
+CC:  @mwhansen simonking @malb @unzvfu
 
 Multivariate power series arithmetic has been requested a *lot*.
 
@@ -39,7 +39,7 @@ archive/issue_comments_012450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12450",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_012452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12452",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_012453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12453",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_012454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12454",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_012455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12455",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_012456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12456",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_012457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12457",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_012458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12458",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_012459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12459",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_012460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12460",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_012461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12461",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_012462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12462",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -568,7 +568,7 @@ archive/issue_comments_012463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12463",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -586,7 +586,7 @@ archive/issue_comments_012464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12464",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_012465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12465",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -659,7 +659,7 @@ archive/issue_comments_012466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12466",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -682,7 +682,7 @@ archive/issue_comments_012467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12467",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -726,7 +726,7 @@ archive/issue_comments_012468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12468",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -746,7 +746,7 @@ archive/issue_comments_012469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12469",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -764,7 +764,7 @@ archive/issue_comments_012470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12470",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -782,7 +782,7 @@ archive/issue_comments_012471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12471",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -800,7 +800,7 @@ archive/issue_comments_012472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12472",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -816,16 +816,16 @@ Ah; I don't have an account on sage.math.  Most of the uses of random_element co
 archive/issue_comments_012473.json:
 ```json
 {
-    "body": "Attachment [trac_1956_multi_power_series_new.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new.patch) by niles created at 2010-09-15 21:43:00\n\napply only this patch;  removes needless uses of random_element, adds some doctests, cleans up some documentation",
+    "body": "Attachment [trac_1956_multi_power_series_new.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new.patch) by @nilesjohnson created at 2010-09-15 21:43:00\n\napply only this patch;  removes needless uses of random_element, adds some doctests, cleans up some documentation",
     "created_at": "2010-09-15T21:43:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12473",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_multi_power_series_new.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new.patch) by niles created at 2010-09-15 21:43:00
+Attachment [trac_1956_multi_power_series_new.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new.patch) by @nilesjohnson created at 2010-09-15 21:43:00
 
 apply only this patch;  removes needless uses of random_element, adds some doctests, cleans up some documentation
 
@@ -841,7 +841,7 @@ archive/issue_comments_012474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12474",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -861,7 +861,7 @@ archive/issue_comments_012475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12475",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -902,7 +902,7 @@ archive/issue_comments_012476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12476",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -920,7 +920,7 @@ archive/issue_comments_012477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12477",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -946,7 +946,7 @@ archive/issue_comments_012478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12478",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -964,7 +964,7 @@ archive/issue_comments_012479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12479",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -989,7 +989,7 @@ archive/issue_comments_012480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12480",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1007,7 +1007,7 @@ archive/issue_comments_012481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12481",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1025,7 +1025,7 @@ archive/issue_comments_012482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12482",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1047,7 +1047,7 @@ archive/issue_comments_012483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12483",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1065,7 +1065,7 @@ archive/issue_comments_012484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12484",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1078,16 +1078,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_012485.json:
 ```json
 {
-    "body": "Attachment [trac_1956_multi_power_series_new_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_2.patch) by niles created at 2010-09-16 17:29:42\n\nOk, the latest patch [attachment:trac_1956_multi_power_series_new_2.patch] passes all tests in the `sage/rings` directory, so I'm uploading it and starting `ptestlong`.\n\nAt this point, I'd like to start thinking that any other limitations of this patch should be filed under a new ticket, but we'll see what comes up.",
+    "body": "Attachment [trac_1956_multi_power_series_new_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_2.patch) by @nilesjohnson created at 2010-09-16 17:29:42\n\nOk, the latest patch [attachment:trac_1956_multi_power_series_new_2.patch] passes all tests in the `sage/rings` directory, so I'm uploading it and starting `ptestlong`.\n\nAt this point, I'd like to start thinking that any other limitations of this patch should be filed under a new ticket, but we'll see what comes up.",
     "created_at": "2010-09-16T17:29:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12485",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_multi_power_series_new_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_2.patch) by niles created at 2010-09-16 17:29:42
+Attachment [trac_1956_multi_power_series_new_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_2.patch) by @nilesjohnson created at 2010-09-16 17:29:42
 
 Ok, the latest patch [attachment:trac_1956_multi_power_series_new_2.patch] passes all tests in the `sage/rings` directory, so I'm uploading it and starting `ptestlong`.
 
@@ -1105,7 +1105,7 @@ archive/issue_comments_012486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12486",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1118,16 +1118,16 @@ apply only this patch; minor docstring fixes, and update to `remove_var`
 archive/issue_comments_012487.json:
 ```json
 {
-    "body": "Attachment [trac_1956_multi_power_series_new_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_3.patch) by niles created at 2010-09-16 17:57:43\n\nforgot to check the documentation!  There's just one minor fix, and it reminded me to update the behavior of `remove_var` to be consistent with the (new) behavior of `remove_var` for multivariate polynomial rings.  Here's the new patch: [attachment:trac_1956_multi_power_series_new_3.patch].\n\nsorry for the rapid-fire posts!",
+    "body": "Attachment [trac_1956_multi_power_series_new_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_3.patch) by @nilesjohnson created at 2010-09-16 17:57:43\n\nforgot to check the documentation!  There's just one minor fix, and it reminded me to update the behavior of `remove_var` to be consistent with the (new) behavior of `remove_var` for multivariate polynomial rings.  Here's the new patch: [attachment:trac_1956_multi_power_series_new_3.patch].\n\nsorry for the rapid-fire posts!",
     "created_at": "2010-09-16T17:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12487",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_multi_power_series_new_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_3.patch) by niles created at 2010-09-16 17:57:43
+Attachment [trac_1956_multi_power_series_new_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_3.patch) by @nilesjohnson created at 2010-09-16 17:57:43
 
 forgot to check the documentation!  There's just one minor fix, and it reminded me to update the behavior of `remove_var` to be consistent with the (new) behavior of `remove_var` for multivariate polynomial rings.  Here's the new patch: [attachment:trac_1956_multi_power_series_new_3.patch].
 
@@ -1145,7 +1145,7 @@ archive/issue_comments_012488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12488",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1163,7 +1163,7 @@ archive/issue_comments_012489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12489",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1181,7 +1181,7 @@ archive/issue_comments_012490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12490",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1199,7 +1199,7 @@ archive/issue_comments_012491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12491",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1225,7 +1225,7 @@ archive/issue_comments_012492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12492",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1265,7 +1265,7 @@ archive/issue_comments_012493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12493",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1283,7 +1283,7 @@ archive/issue_comments_012494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12494",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1305,7 +1305,7 @@ archive/issue_comments_012495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12495",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1329,7 +1329,7 @@ archive/issue_comments_012496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12496",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -1347,7 +1347,7 @@ archive/issue_comments_012497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12497",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1368,7 +1368,7 @@ archive/issue_comments_012498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12498",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1386,7 +1386,7 @@ archive/issue_comments_012499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12499",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1449,7 +1449,7 @@ archive/issue_comments_012500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12500",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1462,16 +1462,16 @@ implements multivariate power series rings through `PowerSeriesRing`
 archive/issue_comments_012501.json:
 ```json
 {
-    "body": "Attachment [trac_1956_uni_multi_ps.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps.patch) by niles created at 2010-09-23 17:35:14\n\nOk, I've attached a new patch which carries out the plan above.  After running doctests, it seems that there is a non-trivial body of code (elliptic curves, and maybe p-adics) that makes use of the syntax\n\n\n```\nT = PowerSeriesRing(QQ,'t',3)\n```\n\n\nor\n\n\n```\nT.<t> = PowerSeriesRing(QQ,3)\n```\n\n\nto construct univariate power series rings.  I will mention this and a few other things in a new ticket for merging univariate and multivariate power series rings.\n\nThis new patch passes all doctests (with -long), and documentation builds cleanly, looks good.",
+    "body": "Attachment [trac_1956_uni_multi_ps.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps.patch) by @nilesjohnson created at 2010-09-23 17:35:14\n\nOk, I've attached a new patch which carries out the plan above.  After running doctests, it seems that there is a non-trivial body of code (elliptic curves, and maybe p-adics) that makes use of the syntax\n\n\n```\nT = PowerSeriesRing(QQ,'t',3)\n```\n\n\nor\n\n\n```\nT.<t> = PowerSeriesRing(QQ,3)\n```\n\n\nto construct univariate power series rings.  I will mention this and a few other things in a new ticket for merging univariate and multivariate power series rings.\n\nThis new patch passes all doctests (with -long), and documentation builds cleanly, looks good.",
     "created_at": "2010-09-23T17:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12501",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_uni_multi_ps.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps.patch) by niles created at 2010-09-23 17:35:14
+Attachment [trac_1956_uni_multi_ps.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps.patch) by @nilesjohnson created at 2010-09-23 17:35:14
 
 Ok, I've attached a new patch which carries out the plan above.  After running doctests, it seems that there is a non-trivial body of code (elliptic curves, and maybe p-adics) that makes use of the syntax
 
@@ -1505,7 +1505,7 @@ archive/issue_comments_012502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12502",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1523,7 +1523,7 @@ archive/issue_comments_012503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12503",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1544,7 +1544,7 @@ archive/issue_comments_012504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12504",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1557,16 +1557,16 @@ Note: these patches apply cleanly to sage 4.6.alpha1
 archive/issue_comments_012505.json:
 ```json
 {
-    "body": "Attachment [trac_1956_uni_multi_ps_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps_2.patch) by niles created at 2010-09-25 13:11:17\n\nminor change fixing `_im_gens_` for use with ring homomorphisms",
+    "body": "Attachment [trac_1956_uni_multi_ps_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps_2.patch) by @nilesjohnson created at 2010-09-25 13:11:17\n\nminor change fixing `_im_gens_` for use with ring homomorphisms",
     "created_at": "2010-09-25T13:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12505",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_uni_multi_ps_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps_2.patch) by niles created at 2010-09-25 13:11:17
+Attachment [trac_1956_uni_multi_ps_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps_2.patch) by @nilesjohnson created at 2010-09-25 13:11:17
 
 minor change fixing `_im_gens_` for use with ring homomorphisms
 
@@ -1582,7 +1582,7 @@ archive/issue_comments_012506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12506",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1605,7 +1605,7 @@ archive/issue_comments_012507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12507",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1623,7 +1623,7 @@ archive/issue_comments_012508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12508",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1646,7 +1646,7 @@ archive/issue_comments_012509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12509",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1719,7 +1719,7 @@ archive/issue_comments_012510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12510",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -1813,7 +1813,7 @@ archive/issue_comments_012511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12511",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -1844,7 +1844,7 @@ archive/issue_comments_012512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12512",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -2051,7 +2051,7 @@ archive/issue_comments_012513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12513",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -2069,7 +2069,7 @@ archive/issue_comments_012514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12514",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -2154,7 +2154,7 @@ archive/issue_comments_012515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12515",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -2172,7 +2172,7 @@ archive/issue_comments_012516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12516",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -2190,7 +2190,7 @@ archive/issue_comments_012517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12517",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -2213,7 +2213,7 @@ archive/issue_comments_012518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12518",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -2229,16 +2229,16 @@ Thanks for the feedback, and the encouragement; I'll try to get back to this nex
 archive/issue_comments_012519.json:
 ```json
 {
-    "body": "Attachment [trac_1956_multi_ps_cleanup.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_cleanup.patch) by niles created at 2010-11-29 19:49:14\n\ncode cleanup, addressing comments of was",
+    "body": "Attachment [trac_1956_multi_ps_cleanup.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_cleanup.patch) by @nilesjohnson created at 2010-11-29 19:49:14\n\ncode cleanup, addressing comments of was",
     "created_at": "2010-11-29T19:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12519",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_multi_ps_cleanup.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_cleanup.patch) by niles created at 2010-11-29 19:49:14
+Attachment [trac_1956_multi_ps_cleanup.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_cleanup.patch) by @nilesjohnson created at 2010-11-29 19:49:14
 
 code cleanup, addressing comments of was
 
@@ -2254,7 +2254,7 @@ archive/issue_comments_012520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12520",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -2272,7 +2272,7 @@ archive/issue_comments_012521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12521",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -2345,7 +2345,7 @@ archive/issue_comments_012522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12522",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -2387,7 +2387,7 @@ archive/issue_comments_012524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12524",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -2454,7 +2454,7 @@ Attachment [bg.sage](tarball://root/attachments/some-uuid/ticket1956/bg.sage) by
 archive/issue_comments_012528.json:
 ```json
 {
-    "body": "Changing assignee from malb to pernici.",
+    "body": "Changing assignee from @malb to pernici.",
     "created_at": "2010-12-28T06:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
@@ -2463,7 +2463,7 @@ archive/issue_comments_012528.json:
 }
 ```
 
-Changing assignee from malb to pernici.
+Changing assignee from @malb to pernici.
 
 
 
@@ -2583,7 +2583,7 @@ archive/issue_comments_012530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12530",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -2605,7 +2605,7 @@ archive/issue_comments_012531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12531",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -2646,7 +2646,7 @@ archive/issue_comments_012533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12533",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -2713,7 +2713,7 @@ archive/issue_comments_012535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12535",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -2737,7 +2737,7 @@ archive/issue_comments_012536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12536",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -2755,7 +2755,7 @@ archive/issue_comments_012537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12537",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2802,16 +2802,16 @@ So, I don't mind about the different timings; but I think methods should be more
 archive/issue_comments_012538.json:
 ```json
 {
-    "body": "Attachment [trac_1956_one_variable_fix.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_one_variable_fix.patch) by niles created at 2011-01-04 13:43:22\n\napply on top of other patches; return univariate ring rather than multivariate ring in one variable",
+    "body": "Attachment [trac_1956_one_variable_fix.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_one_variable_fix.patch) by @nilesjohnson created at 2011-01-04 13:43:22\n\napply on top of other patches; return univariate ring rather than multivariate ring in one variable",
     "created_at": "2011-01-04T13:43:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12538",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_one_variable_fix.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_one_variable_fix.patch) by niles created at 2011-01-04 13:43:22
+Attachment [trac_1956_one_variable_fix.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_one_variable_fix.patch) by @nilesjohnson created at 2011-01-04 13:43:22
 
 apply on top of other patches; return univariate ring rather than multivariate ring in one variable
 
@@ -2827,7 +2827,7 @@ archive/issue_comments_012539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12539",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -2845,7 +2845,7 @@ archive/issue_comments_012540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12540",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -2905,7 +2905,7 @@ archive/issue_comments_012541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12541",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -2923,7 +2923,7 @@ archive/issue_comments_012542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12542",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -3031,7 +3031,7 @@ archive/issue_comments_012543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12543",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -3049,7 +3049,7 @@ archive/issue_comments_012544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12544",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -3083,7 +3083,7 @@ archive/issue_comments_012545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12545",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -3124,7 +3124,7 @@ archive/issue_comments_012546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12546",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -3156,7 +3156,7 @@ archive/issue_comments_012547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12547",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -3332,7 +3332,7 @@ archive/issue_comments_012550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12550",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -3486,7 +3486,7 @@ archive/issue_comments_012554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12554",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -3576,7 +3576,7 @@ archive/issue_comments_012557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12557",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -3735,7 +3735,7 @@ archive/issue_comments_012561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12561",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -3842,7 +3842,7 @@ archive/issue_comments_012563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12563",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -3977,7 +3977,7 @@ archive/issue_comments_012566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12566",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4093,7 +4093,7 @@ archive/issue_comments_012569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12569",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4106,16 +4106,16 @@ updated for sage 4.6.2
 archive/issue_comments_012570.json:
 ```json
 {
-    "body": "Attachment [trac_1956_uni_multi_ps_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps_3.patch) by niles created at 2011-03-17 20:25:27\n\nMore code rot; patches should all apply to 4.6.2 now.\n\n\nFor the buildbot: \n\nApply \ntrac_1956_multi_power_series_new_4.patch,\ntrac_1956_uni_multi_ps_3.patch,\ntrac_1956_multi_ps_cleanup.patch",
+    "body": "Attachment [trac_1956_uni_multi_ps_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps_3.patch) by @nilesjohnson created at 2011-03-17 20:25:27\n\nMore code rot; patches should all apply to 4.6.2 now.\n\n\nFor the buildbot: \n\nApply \ntrac_1956_multi_power_series_new_4.patch,\ntrac_1956_uni_multi_ps_3.patch,\ntrac_1956_multi_ps_cleanup.patch",
     "created_at": "2011-03-17T20:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12570",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_uni_multi_ps_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps_3.patch) by niles created at 2011-03-17 20:25:27
+Attachment [trac_1956_uni_multi_ps_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_uni_multi_ps_3.patch) by @nilesjohnson created at 2011-03-17 20:25:27
 
 More code rot; patches should all apply to 4.6.2 now.
 
@@ -4139,7 +4139,7 @@ archive/issue_comments_012571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12571",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4154,16 +4154,16 @@ Apply trac_1956_multi_power_series_new_4.patch, trac_1956_uni_multi_ps_3.patch, 
 archive/issue_comments_012572.json:
 ```json
 {
-    "body": "Attachment [trac_1956_multi_power_series_new_4.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_4.patch) by niles created at 2011-03-18 13:55:50\n\npickling fixed, minor docstring formatting fixed",
+    "body": "Attachment [trac_1956_multi_power_series_new_4.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_4.patch) by @nilesjohnson created at 2011-03-18 13:55:50\n\npickling fixed, minor docstring formatting fixed",
     "created_at": "2011-03-18T13:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12572",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_multi_power_series_new_4.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_4.patch) by niles created at 2011-03-18 13:55:50
+Attachment [trac_1956_multi_power_series_new_4.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_power_series_new_4.patch) by @nilesjohnson created at 2011-03-18 13:55:50
 
 pickling fixed, minor docstring formatting fixed
 
@@ -4179,7 +4179,7 @@ archive/issue_comments_012573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12573",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4201,7 +4201,7 @@ archive/issue_comments_012574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12574",
-    "user": "hlaw"
+    "user": "@unzvfu"
 }
 ```
 
@@ -4297,7 +4297,7 @@ archive/issue_comments_012575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12575",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4340,7 +4340,7 @@ archive/issue_comments_012576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12576",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4358,7 +4358,7 @@ archive/issue_comments_012577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12577",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4449,7 +4449,7 @@ archive/issue_comments_012578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12578",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4471,7 +4471,7 @@ archive/issue_comments_012579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12579",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4484,16 +4484,16 @@ improved coercion and substitution; also fixed minor typo
 archive/issue_comments_012580.json:
 ```json
 {
-    "body": "Attachment [trac_1956_multi_ps_coercion.2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_coercion.2.patch) by niles created at 2011-03-27 01:32:29\n\nimproved coercion and substitution; also fixed minor typos",
+    "body": "Attachment [trac_1956_multi_ps_coercion.2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_coercion.2.patch) by @nilesjohnson created at 2011-03-27 01:32:29\n\nimproved coercion and substitution; also fixed minor typos",
     "created_at": "2011-03-27T01:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12580",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_multi_ps_coercion.2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_coercion.2.patch) by niles created at 2011-03-27 01:32:29
+Attachment [trac_1956_multi_ps_coercion.2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_coercion.2.patch) by @nilesjohnson created at 2011-03-27 01:32:29
 
 improved coercion and substitution; also fixed minor typos
 
@@ -4504,16 +4504,16 @@ improved coercion and substitution; also fixed minor typos
 archive/issue_comments_012581.json:
 ```json
 {
-    "body": "Attachment [trac_1956_multi_ps_coercion.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_coercion.patch) by niles created at 2011-03-27 01:35:16\n\napologies for the many rapid updates -- fixing some stupid typos and trying to get the buildbot to apply the right patches.\n\nApply trac_1956_multi_power_series_new_4.patch, trac_1956_uni_multi_ps_3.patch, trac_1956_multi_ps_cleanup.patch, trac_1956_multi_ps_coercion.patch",
+    "body": "Attachment [trac_1956_multi_ps_coercion.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_coercion.patch) by @nilesjohnson created at 2011-03-27 01:35:16\n\napologies for the many rapid updates -- fixing some stupid typos and trying to get the buildbot to apply the right patches.\n\nApply trac_1956_multi_power_series_new_4.patch, trac_1956_uni_multi_ps_3.patch, trac_1956_multi_ps_cleanup.patch, trac_1956_multi_ps_coercion.patch",
     "created_at": "2011-03-27T01:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12581",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_multi_ps_coercion.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_coercion.patch) by niles created at 2011-03-27 01:35:16
+Attachment [trac_1956_multi_ps_coercion.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_multi_ps_coercion.patch) by @nilesjohnson created at 2011-03-27 01:35:16
 
 apologies for the many rapid updates -- fixing some stupid typos and trying to get the buildbot to apply the right patches.
 
@@ -4531,7 +4531,7 @@ archive/issue_comments_012582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12582",
-    "user": "hlaw"
+    "user": "@unzvfu"
 }
 ```
 
@@ -4555,7 +4555,7 @@ archive/issue_comments_012583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12583",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4605,7 +4605,7 @@ archive/issue_comments_012584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12584",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4618,16 +4618,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_012585.json:
 ```json
 {
-    "body": "Attachment [trac_1956_combined.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined.patch) by niles created at 2011-04-15 00:58:30\n\nall patches at once",
+    "body": "Attachment [trac_1956_combined.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined.patch) by @nilesjohnson created at 2011-04-15 00:58:30\n\nall patches at once",
     "created_at": "2011-04-15T00:58:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12585",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_combined.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined.patch) by niles created at 2011-04-15 00:58:30
+Attachment [trac_1956_combined.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined.patch) by @nilesjohnson created at 2011-04-15 00:58:30
 
 all patches at once
 
@@ -4643,7 +4643,7 @@ archive/issue_comments_012586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12586",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4668,7 +4668,7 @@ archive/issue_comments_012587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12587",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4695,7 +4695,7 @@ archive/issue_comments_012588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12588",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -4713,7 +4713,7 @@ archive/issue_comments_012589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12589",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -4808,16 +4808,16 @@ Fine by me.
 archive/issue_comments_012590.json:
 ```json
 {
-    "body": "Attachment [trac_1956_combined_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_2.patch) by niles created at 2011-05-01 23:47:24",
+    "body": "Attachment [trac_1956_combined_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_2.patch) by @nilesjohnson created at 2011-05-01 23:47:24",
     "created_at": "2011-05-01T23:47:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12590",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_combined_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_2.patch) by niles created at 2011-05-01 23:47:24
+Attachment [trac_1956_combined_2.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_2.patch) by @nilesjohnson created at 2011-05-01 23:47:24
 
 
 
@@ -4831,7 +4831,7 @@ archive/issue_comments_012591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12591",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4851,7 +4851,7 @@ archive/issue_comments_012592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12592",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4966,7 +4966,7 @@ archive/issue_comments_012593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12593",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -4984,7 +4984,7 @@ archive/issue_comments_012594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12594",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5005,7 +5005,7 @@ archive/issue_comments_012595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12595",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5018,16 +5018,16 @@ diff between `trac_1956_combined.patch` and `trac_1956_combined_2.patch`
 archive/issue_comments_012596.json:
 ```json
 {
-    "body": "Attachment [combined_1-2.diff](tarball://root/attachments/some-uuid/ticket1956/combined_1-2.diff) by malb created at 2011-05-02 09:48:19\n\nThis seems to be the current status:\n\n1. Sage passes all doctests with this patch\n\nwaiting for patchbot :)\n\n2. All code is documented and doctested thoroughly; documentation builds without error or warning\n\n**positive review**\n\n3. The underlying concept of the implementation (a wrapper for certain univariate power series over multivariate polynomials) is sound\n\n**positive review**\n\n4. multi_power_series_ring.py: the code accurately does what it claims to do\n\n**positive review**\n\n5. multi_power_series_ring_element.py: the code accurately does what it claims to do\n\n**needs review**\n\n6. Integration with the rest of sage: construction and use of PowerSeriesRings works correctly, and parallels behavior of polynomial rings\n\n**positive review**\n\n7. Performance: the multivariate power series arithmetic is fast enough to be included in Sage\n\n**positive review**\n\n8. Coding: the code is free from obvious inefficiencies in error handling, memory management, etc.\n\n**positive review**\n\n9. The items on this list constitute a complete review\n\n**positive review**\n\n\n----\n\nThanks for explaining the default precision business to me! As I said, I rarely touch power series.\n\n----\n> Excessive or not, each of the double underscore methods is necessary to replace the corresponding method of `PowerSeries` or `PowerSeriesRing_generic`, from which the `MPowerSeries*` classes inherit.  Here's a complete list of the double underscore attributes:\n\nSorry, I didn't mean stuff like `__init__` which of course has to be like it is. I meant stuff like `__poly_ring` which could easily be `_poly_ring`.",
+    "body": "Attachment [combined_1-2.diff](tarball://root/attachments/some-uuid/ticket1956/combined_1-2.diff) by @malb created at 2011-05-02 09:48:19\n\nThis seems to be the current status:\n\n1. Sage passes all doctests with this patch\n\nwaiting for patchbot :)\n\n2. All code is documented and doctested thoroughly; documentation builds without error or warning\n\n**positive review**\n\n3. The underlying concept of the implementation (a wrapper for certain univariate power series over multivariate polynomials) is sound\n\n**positive review**\n\n4. multi_power_series_ring.py: the code accurately does what it claims to do\n\n**positive review**\n\n5. multi_power_series_ring_element.py: the code accurately does what it claims to do\n\n**needs review**\n\n6. Integration with the rest of sage: construction and use of PowerSeriesRings works correctly, and parallels behavior of polynomial rings\n\n**positive review**\n\n7. Performance: the multivariate power series arithmetic is fast enough to be included in Sage\n\n**positive review**\n\n8. Coding: the code is free from obvious inefficiencies in error handling, memory management, etc.\n\n**positive review**\n\n9. The items on this list constitute a complete review\n\n**positive review**\n\n\n----\n\nThanks for explaining the default precision business to me! As I said, I rarely touch power series.\n\n----\n> Excessive or not, each of the double underscore methods is necessary to replace the corresponding method of `PowerSeries` or `PowerSeriesRing_generic`, from which the `MPowerSeries*` classes inherit.  Here's a complete list of the double underscore attributes:\n\nSorry, I didn't mean stuff like `__init__` which of course has to be like it is. I meant stuff like `__poly_ring` which could easily be `_poly_ring`.",
     "created_at": "2011-05-02T09:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12596",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [combined_1-2.diff](tarball://root/attachments/some-uuid/ticket1956/combined_1-2.diff) by malb created at 2011-05-02 09:48:19
+Attachment [combined_1-2.diff](tarball://root/attachments/some-uuid/ticket1956/combined_1-2.diff) by @malb created at 2011-05-02 09:48:19
 
 This seems to be the current status:
 
@@ -5089,7 +5089,7 @@ archive/issue_comments_012597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12597",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5128,7 +5128,7 @@ archive/issue_comments_012598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12598",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -5146,7 +5146,7 @@ archive/issue_comments_012599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12599",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -5173,7 +5173,7 @@ archive/issue_comments_012600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12600",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5194,7 +5194,7 @@ archive/issue_comments_012601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12601",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5212,7 +5212,7 @@ archive/issue_comments_012602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12602",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5237,7 +5237,7 @@ archive/issue_comments_012603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12603",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -5255,7 +5255,7 @@ archive/issue_comments_012604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12604",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5290,16 +5290,16 @@ __base_ring
 archive/issue_comments_012605.json:
 ```json
 {
-    "body": "Attachment [trac_1956_combined_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_3.patch) by niles created at 2011-05-03 02:07:17",
+    "body": "Attachment [trac_1956_combined_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_3.patch) by @nilesjohnson created at 2011-05-03 02:07:17",
     "created_at": "2011-05-03T02:07:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12605",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_combined_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_3.patch) by niles created at 2011-05-03 02:07:17
+Attachment [trac_1956_combined_3.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_3.patch) by @nilesjohnson created at 2011-05-03 02:07:17
 
 
 
@@ -5313,7 +5313,7 @@ archive/issue_comments_012606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12606",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5335,7 +5335,7 @@ archive/issue_comments_012607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12607",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5353,7 +5353,7 @@ archive/issue_comments_012608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12608",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5371,7 +5371,7 @@ archive/issue_comments_012609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12609",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -5397,7 +5397,7 @@ archive/issue_comments_012610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12610",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -5421,7 +5421,7 @@ archive/issue_comments_012611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12611",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -5437,16 +5437,16 @@ To be precise: Double underscore names are only problematic if they *start* with
 archive/issue_comments_012612.json:
 ```json
 {
-    "body": "Attachment [trac_1956_combined_4.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_4.patch) by niles created at 2011-05-03 11:57:11\n\nremoved unnecessary double underscore attributes from `MPowerSeries_generic`",
+    "body": "Attachment [trac_1956_combined_4.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_4.patch) by @nilesjohnson created at 2011-05-03 11:57:11\n\nremoved unnecessary double underscore attributes from `MPowerSeries_generic`",
     "created_at": "2011-05-03T11:57:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12612",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_combined_4.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_4.patch) by niles created at 2011-05-03 11:57:11
+Attachment [trac_1956_combined_4.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_4.patch) by @nilesjohnson created at 2011-05-03 11:57:11
 
 removed unnecessary double underscore attributes from `MPowerSeries_generic`
 
@@ -5462,7 +5462,7 @@ archive/issue_comments_012613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12613",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5482,7 +5482,7 @@ archive/issue_comments_012614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12614",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5500,7 +5500,7 @@ archive/issue_comments_012615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12615",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -5518,7 +5518,7 @@ archive/issue_comments_012616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12616",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -5536,7 +5536,7 @@ archive/issue_comments_012617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12617",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5554,7 +5554,7 @@ archive/issue_comments_012618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12618",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5587,16 +5587,16 @@ Got:
 archive/issue_comments_012619.json:
 ```json
 {
-    "body": "Attachment [trac_1956_combined_5.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_5.patch) by niles created at 2011-05-11 18:44:17\n\nupdated for new repr of completion functor",
+    "body": "Attachment [trac_1956_combined_5.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_5.patch) by @nilesjohnson created at 2011-05-11 18:44:17\n\nupdated for new repr of completion functor",
     "created_at": "2011-05-11T18:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12619",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_combined_5.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_5.patch) by niles created at 2011-05-11 18:44:17
+Attachment [trac_1956_combined_5.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_5.patch) by @nilesjohnson created at 2011-05-11 18:44:17
 
 updated for new repr of completion functor
 
@@ -5612,7 +5612,7 @@ archive/issue_comments_012620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12620",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5630,7 +5630,7 @@ archive/issue_comments_012621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12621",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5648,7 +5648,7 @@ archive/issue_comments_012622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12622",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5666,7 +5666,7 @@ archive/issue_comments_012623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12623",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5684,7 +5684,7 @@ archive/issue_comments_012624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12624",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5733,7 +5733,7 @@ archive/issue_comments_012625.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12625",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5756,16 +5756,16 @@ I've addressed this problem, but I see other issues with `sage/interfaces/maxima
 archive/issue_comments_012626.json:
 ```json
 {
-    "body": "Attachment [trac_1956_combined_6.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_6.patch) by niles created at 2011-05-12 14:54:44",
+    "body": "Attachment [trac_1956_combined_6.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_6.patch) by @nilesjohnson created at 2011-05-12 14:54:44",
     "created_at": "2011-05-12T14:54:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12626",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_1956_combined_6.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_6.patch) by niles created at 2011-05-12 14:54:44
+Attachment [trac_1956_combined_6.patch](tarball://root/attachments/some-uuid/ticket1956/trac_1956_combined_6.patch) by @nilesjohnson created at 2011-05-12 14:54:44
 
 
 
@@ -5779,7 +5779,7 @@ archive/issue_comments_012627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12627",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5797,7 +5797,7 @@ archive/issue_comments_012628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12628",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5818,7 +5818,7 @@ archive/issue_comments_012629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12629",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -5836,7 +5836,7 @@ archive/issue_comments_012630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12630",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5859,7 +5859,7 @@ archive/issue_comments_012631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12631",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -5877,7 +5877,7 @@ archive/issue_comments_012632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12632",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -5895,7 +5895,7 @@ archive/issue_comments_012633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1956",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1956#issuecomment-12633",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

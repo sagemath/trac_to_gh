@@ -52,7 +52,7 @@ archive/issue_comments_025922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25922",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_025923.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25923",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_025924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25924",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -101,16 +101,16 @@ Changing status from new to needs_review.
 archive/issue_comments_025925.json:
 ```json
 {
-    "body": "Changing assignee from tba to tscrim.",
+    "body": "Changing assignee from tba to @tscrim.",
     "created_at": "2012-11-26T06:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25925",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Changing assignee from tba to tscrim.
+Changing assignee from tba to @tscrim.
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_025926.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25926",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_025927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25927",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_025928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25928",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_025929.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25929",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_025930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25930",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_025931.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25931",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_025932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25932",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -284,16 +284,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_025933.json:
 ```json
 {
-    "body": "Attachment [trac_3668-set_doc_update-ts.patch](tarball://root/attachments/some-uuid/ticket3668/trac_3668-set_doc_update-ts.patch) by tscrim created at 2013-07-12 09:41:02\n\nNew version which keeps the actual hash and removes now unneeded `#indirect doctests`.",
+    "body": "Attachment [trac_3668-set_doc_update-ts.patch](tarball://root/attachments/some-uuid/ticket3668/trac_3668-set_doc_update-ts.patch) by @tscrim created at 2013-07-12 09:41:02\n\nNew version which keeps the actual hash and removes now unneeded `#indirect doctests`.",
     "created_at": "2013-07-12T09:41:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25933",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_3668-set_doc_update-ts.patch](tarball://root/attachments/some-uuid/ticket3668/trac_3668-set_doc_update-ts.patch) by tscrim created at 2013-07-12 09:41:02
+Attachment [trac_3668-set_doc_update-ts.patch](tarball://root/attachments/some-uuid/ticket3668/trac_3668-set_doc_update-ts.patch) by @tscrim created at 2013-07-12 09:41:02
 
 New version which keeps the actual hash and removes now unneeded `#indirect doctests`.
 
@@ -309,7 +309,7 @@ archive/issue_comments_025934.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25934",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_025935.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25935",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_025936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3668",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3668#issuecomment-25936",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

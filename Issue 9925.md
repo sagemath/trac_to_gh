@@ -3,7 +3,7 @@
 archive/issues_009925.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  novoselt vbraun mhampton\n\nI get this reproducible doctest error with a trial 4.6.alpha1 (32-bit build) on bsd.math (OS X 10.6):\n\n```python\nsage -t -long \"devel/sage/sage/schemes/generic/toric_divisor.py\"\n**********************************************************************\nFile \"/Users/mpatel/tmp/bb/slave/bsd_scratch/build/sage-4.6.alpha1/devel/sage/sage/schemes/generic/toric_divisor.py\", line 1522:\n    sage: supp.Vrepresentation()\nExpected:\n    [A vertex at (-1, 1), A vertex at (0, 2), A vertex at (0, -1), A vertex at (3, -1)]\nGot:\n    [A vertex at (-1, 1), A vertex at (0, 2), A vertex at (3, -1), A vertex at (0, -1)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9926\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @novoselt @vbraun mhampton\n\nI get this reproducible doctest error with a trial 4.6.alpha1 (32-bit build) on bsd.math (OS X 10.6):\n\n```python\nsage -t -long \"devel/sage/sage/schemes/generic/toric_divisor.py\"\n**********************************************************************\nFile \"/Users/mpatel/tmp/bb/slave/bsd_scratch/build/sage-4.6.alpha1/devel/sage/sage/schemes/generic/toric_divisor.py\", line 1522:\n    sage: supp.Vrepresentation()\nExpected:\n    [A vertex at (-1, 1), A vertex at (0, 2), A vertex at (0, -1), A vertex at (3, -1)]\nGot:\n    [A vertex at (-1, 1), A vertex at (0, 2), A vertex at (3, -1), A vertex at (0, -1)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9926\n\n",
     "created_at": "2010-09-17T00:46:23Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009925.json:
     "title": "Doctest error in sage/schemes/generic/toric_divisor.py on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9925",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  novoselt vbraun mhampton
+CC:  @novoselt @vbraun mhampton
 
 I get this reproducible doctest error with a trial 4.6.alpha1 (32-bit build) on bsd.math (OS X 10.6):
 
@@ -51,7 +51,7 @@ archive/issue_comments_098830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98830",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_098831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98831",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_098832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98832",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_098833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98833",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_098834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98834",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_098836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98836",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_098838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98838",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_098842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98842",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_098843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98843",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_098844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98844",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_098845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98845",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -463,7 +463,7 @@ archive/issue_comments_098846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98846",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_098847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98847",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_098848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98848",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_098849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98849",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -544,7 +544,7 @@ archive/issue_comments_098850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98850",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -562,7 +562,7 @@ archive/issue_comments_098851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98851",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -580,7 +580,7 @@ archive/issue_comments_098852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98852",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -598,7 +598,7 @@ archive/issue_comments_098853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98853",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_098854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98854",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -637,7 +637,7 @@ archive/issue_comments_098855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9925#issuecomment-98855",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

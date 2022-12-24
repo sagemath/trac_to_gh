@@ -14,7 +14,7 @@ archive/issues_004850.json:
     "title": "bug in power_mod",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4850",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -68,7 +68,7 @@ archive/issue_comments_036774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4850#issuecomment-36774",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -115,16 +115,16 @@ Thoughts?
 archive/issue_comments_036775.json:
 ```json
 {
-    "body": "Attachment [trac_4850.patch](tarball://root/attachments/some-uuid/ticket4850/trac_4850.patch) by was created at 2009-01-24 01:12:44",
+    "body": "Attachment [trac_4850.patch](tarball://root/attachments/some-uuid/ticket4850/trac_4850.patch) by @williamstein created at 2009-01-24 01:12:44",
     "created_at": "2009-01-24T01:12:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4850#issuecomment-36775",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4850.patch](tarball://root/attachments/some-uuid/ticket4850/trac_4850.patch) by was created at 2009-01-24 01:12:44
+Attachment [trac_4850.patch](tarball://root/attachments/some-uuid/ticket4850/trac_4850.patch) by @williamstein created at 2009-01-24 01:12:44
 
 
 
@@ -138,7 +138,7 @@ archive/issue_comments_036776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4850#issuecomment-36776",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_036777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4850",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4850#issuecomment-36777",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

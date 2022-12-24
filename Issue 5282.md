@@ -3,7 +3,7 @@
 archive/issues_005282.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5282\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5282\n\n",
     "created_at": "2009-02-16T06:29:42Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_005282.json:
     "user": "wasI"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_040597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5282#issuecomment-40597",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ OK, I'm posting a patch that fixes this problem.  I improved syseval by getting 
 archive/issue_comments_040598.json:
 ```json
 {
-    "body": "Attachment [trac_5282.patch](tarball://root/attachments/some-uuid/ticket5282/trac_5282.patch) by was created at 2009-02-16 07:00:30",
+    "body": "Attachment [trac_5282.patch](tarball://root/attachments/some-uuid/ticket5282/trac_5282.patch) by @williamstein created at 2009-02-16 07:00:30",
     "created_at": "2009-02-16T07:00:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5282#issuecomment-40598",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5282.patch](tarball://root/attachments/some-uuid/ticket5282/trac_5282.patch) by was created at 2009-02-16 07:00:30
+Attachment [trac_5282.patch](tarball://root/attachments/some-uuid/ticket5282/trac_5282.patch) by @williamstein created at 2009-02-16 07:00:30
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_040602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5282",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5282#issuecomment-40602",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 

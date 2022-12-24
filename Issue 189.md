@@ -14,7 +14,7 @@ archive/issues_000189.json:
     "title": "bug in text output for notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/189",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -72,7 +72,7 @@ archive/issue_comments_000856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/189#issuecomment-856",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_000857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/189#issuecomment-857",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

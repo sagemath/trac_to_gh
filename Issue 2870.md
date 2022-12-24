@@ -3,7 +3,7 @@
 archive/issues_002870.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nVarious files import specific classes from calculus.py instead of their wrappers, making them too dependent on calculus internals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2870\n\n",
+    "body": "Assignee: @garyfurnish\n\nVarious files import specific classes from calculus.py instead of their wrappers, making them too dependent on calculus internals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2870\n\n",
     "created_at": "2008-04-10T05:46:11Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002870.json:
     "title": "[with patch, needs review] Various files poorly import calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2870",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 Various files import specific classes from calculus.py instead of their wrappers, making them too dependent on calculus internals.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2870
 archive/issue_comments_019697.json:
 ```json
 {
-    "body": "Attachment [trac_2870.patch](tarball://root/attachments/some-uuid/ticket2870/trac_2870.patch) by gfurnish created at 2008-04-10 05:46:53",
+    "body": "Attachment [trac_2870.patch](tarball://root/attachments/some-uuid/ticket2870/trac_2870.patch) by @garyfurnish created at 2008-04-10 05:46:53",
     "created_at": "2008-04-10T05:46:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2870#issuecomment-19697",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_2870.patch](tarball://root/attachments/some-uuid/ticket2870/trac_2870.patch) by gfurnish created at 2008-04-10 05:46:53
+Attachment [trac_2870.patch](tarball://root/attachments/some-uuid/ticket2870/trac_2870.patch) by @garyfurnish created at 2008-04-10 05:46:53
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_019698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2870#issuecomment-19698",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_019699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2870#issuecomment-19699",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

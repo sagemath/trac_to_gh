@@ -14,7 +14,7 @@ archive/issues_004914.json:
     "title": "convert sage.groups.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4914",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4914
 archive/issue_comments_037288.json:
 ```json
 {
-    "body": "Attachment [trac_4914.patch](tarball://root/attachments/some-uuid/ticket4914/trac_4914.patch) by mhansen created at 2009-01-02 02:54:31",
+    "body": "Attachment [trac_4914.patch](tarball://root/attachments/some-uuid/ticket4914/trac_4914.patch) by @mwhansen created at 2009-01-02 02:54:31",
     "created_at": "2009-01-02T02:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4914#issuecomment-37288",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4914.patch](tarball://root/attachments/some-uuid/ticket4914/trac_4914.patch) by mhansen created at 2009-01-02 02:54:31
+Attachment [trac_4914.patch](tarball://root/attachments/some-uuid/ticket4914/trac_4914.patch) by @mwhansen created at 2009-01-02 02:54:31
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_037289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4914#issuecomment-37289",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_037290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4914#issuecomment-37290",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -117,16 +117,16 @@ For (3), I think all of the linear groups stuff was there before they got moved 
 archive/issue_comments_037291.json:
 ```json
 {
-    "body": "Attachment [trac_4914-2.patch](tarball://root/attachments/some-uuid/ticket4914/trac_4914-2.patch) by mhansen created at 2009-01-02 20:25:47",
+    "body": "Attachment [trac_4914-2.patch](tarball://root/attachments/some-uuid/ticket4914/trac_4914-2.patch) by @mwhansen created at 2009-01-02 20:25:47",
     "created_at": "2009-01-02T20:25:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4914#issuecomment-37291",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4914-2.patch](tarball://root/attachments/some-uuid/ticket4914/trac_4914-2.patch) by mhansen created at 2009-01-02 20:25:47
+Attachment [trac_4914-2.patch](tarball://root/attachments/some-uuid/ticket4914/trac_4914-2.patch) by @mwhansen created at 2009-01-02 20:25:47
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_037293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4914#issuecomment-37293",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_037295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4914#issuecomment-37295",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_037297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4914#issuecomment-37297",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_037298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4914#issuecomment-37298",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_037299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4914#issuecomment-37299",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -303,16 +303,16 @@ Changing status from new to assigned.
 archive/issue_comments_037300.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-01-25T02:58:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4914#issuecomment-37300",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -326,7 +326,7 @@ archive/issue_comments_037301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4914",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4914#issuecomment-37301",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

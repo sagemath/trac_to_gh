@@ -3,7 +3,7 @@
 archive/issues_005695.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  hivert saliola\n\nThis looks like fallout from #5308:\n\n```\nsage -t -long \"devel/sage/sage/combinat/words/words.py\"     \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc1/devel/sage/sage/combinat/words/words.py\", line 760:\n    sage: Words(7,13).cardinality()\nExpected:\n    96889010407L               \nGot:\n    96889010407\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc1/devel/sage/sage/combinat/words/words.py\", line 763:\n    sage: Words(['a','b','c','d','e','f','g'],13).cardinality()\nExpected:\n    96889010407L               \nGot:\n    96889010407\n**********************************************************************\n1 items had failures:\n   2 of  12 in __main__.example_31\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/mabshoff/sage-3.4.1.rc1/tmp/.doctest_words.py\n\t [18.4 s]\nexit code: 1024\n```\n\n\nTrivial patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5695\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @hivert @saliola\n\nThis looks like fallout from #5308:\n\n```\nsage -t -long \"devel/sage/sage/combinat/words/words.py\"     \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc1/devel/sage/sage/combinat/words/words.py\", line 760:\n    sage: Words(7,13).cardinality()\nExpected:\n    96889010407L               \nGot:\n    96889010407\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.4.1.rc1/devel/sage/sage/combinat/words/words.py\", line 763:\n    sage: Words(['a','b','c','d','e','f','g'],13).cardinality()\nExpected:\n    96889010407L               \nGot:\n    96889010407\n**********************************************************************\n1 items had failures:\n   2 of  12 in __main__.example_31\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/mabshoff/sage-3.4.1.rc1/tmp/.doctest_words.py\n\t [18.4 s]\nexit code: 1024\n```\n\n\nTrivial patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5695\n\n",
     "created_at": "2009-04-06T18:31:14Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_005695.json:
 ```
 Assignee: mabshoff
 
-CC:  hivert saliola
+CC:  @hivert @saliola
 
 This looks like fallout from #5308:
 
@@ -113,7 +113,7 @@ archive/issue_comments_044521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5695#issuecomment-44521",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_044522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5695",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5695#issuecomment-44522",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

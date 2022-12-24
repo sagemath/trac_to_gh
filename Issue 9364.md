@@ -93,7 +93,7 @@ archive/issue_comments_088957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9364#issuecomment-88957",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_088958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9364#issuecomment-88958",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -124,16 +124,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_088959.json:
 ```json
 {
-    "body": "Attachment [trac9364-BooleanFunction_is_symmetric-untabified.patch](tarball://root/attachments/some-uuid/ticket9364/trac9364-BooleanFunction_is_symmetric-untabified.patch) by davidloeffler created at 2010-06-30 17:23:20\n\nVersion without tabs - apply only this patch",
+    "body": "Attachment [trac9364-BooleanFunction_is_symmetric-untabified.patch](tarball://root/attachments/some-uuid/ticket9364/trac9364-BooleanFunction_is_symmetric-untabified.patch) by @loefflerd created at 2010-06-30 17:23:20\n\nVersion without tabs - apply only this patch",
     "created_at": "2010-06-30T17:23:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9364#issuecomment-88959",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac9364-BooleanFunction_is_symmetric-untabified.patch](tarball://root/attachments/some-uuid/ticket9364/trac9364-BooleanFunction_is_symmetric-untabified.patch) by davidloeffler created at 2010-06-30 17:23:20
+Attachment [trac9364-BooleanFunction_is_symmetric-untabified.patch](tarball://root/attachments/some-uuid/ticket9364/trac9364-BooleanFunction_is_symmetric-untabified.patch) by @loefflerd created at 2010-06-30 17:23:20
 
 Version without tabs - apply only this patch
 
@@ -149,7 +149,7 @@ archive/issue_comments_088960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9364#issuecomment-88960",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_088961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9364#issuecomment-88961",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

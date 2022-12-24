@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9846
 archive/issue_comments_097167.json:
 ```json
 {
-    "body": "Attachment [trac_9846_parallel_help.patch](tarball://root/attachments/some-uuid/ticket9846/trac_9846_parallel_help.patch) by aapitzsch created at 2011-01-07 10:07:24",
+    "body": "Attachment [trac_9846_parallel_help.patch](tarball://root/attachments/some-uuid/ticket9846/trac_9846_parallel_help.patch) by @a-andre created at 2011-01-07 10:07:24",
     "created_at": "2011-01-07T10:07:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9845#issuecomment-97167",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
-Attachment [trac_9846_parallel_help.patch](tarball://root/attachments/some-uuid/ticket9846/trac_9846_parallel_help.patch) by aapitzsch created at 2011-01-07 10:07:24
+Attachment [trac_9846_parallel_help.patch](tarball://root/attachments/some-uuid/ticket9846/trac_9846_parallel_help.patch) by @a-andre created at 2011-01-07 10:07:24
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_097168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9845#issuecomment-97168",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_097169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9845#issuecomment-97169",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_097170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9845#issuecomment-97170",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_097171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9845",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9845#issuecomment-97171",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

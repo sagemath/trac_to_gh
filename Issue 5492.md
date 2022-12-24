@@ -3,7 +3,7 @@
 archive/issues_005492.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: build test\n\nThis was requested by Mike Stillman at Sage Days 14, and sounds like a good idea to me:  have\n\n\n```\nsage -bt <filename(s)>\n```\n\n\nas a shortcut for the current\n\n\n```\nsage -b\nsage -t <filename(s)>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5492\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: build test\n\nThis was requested by Mike Stillman at Sage Days 14, and sounds like a good idea to me:  have\n\n\n```\nsage -bt <filename(s)>\n```\n\n\nas a shortcut for the current\n\n\n```\nsage -b\nsage -t <filename(s)>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5492\n\n",
     "created_at": "2009-03-11T22:54:04Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_005492.json:
     "title": "implement sage -bt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5492",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: build test
 
@@ -55,7 +55,7 @@ archive/issue_comments_042660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5492#issuecomment-42660",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -68,16 +68,16 @@ Patch for sage-scripts
 archive/issue_comments_042661.json:
 ```json
 {
-    "body": "Attachment [5492_sage_bt.patch](tarball://root/attachments/some-uuid/ticket5492/5492_sage_bt.patch) by jdemeyer created at 2010-10-15 07:40:31",
+    "body": "Attachment [5492_sage_bt.patch](tarball://root/attachments/some-uuid/ticket5492/5492_sage_bt.patch) by @jdemeyer created at 2010-10-15 07:40:31",
     "created_at": "2010-10-15T07:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5492#issuecomment-42661",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [5492_sage_bt.patch](tarball://root/attachments/some-uuid/ticket5492/5492_sage_bt.patch) by jdemeyer created at 2010-10-15 07:40:31
+Attachment [5492_sage_bt.patch](tarball://root/attachments/some-uuid/ticket5492/5492_sage_bt.patch) by @jdemeyer created at 2010-10-15 07:40:31
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_042662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5492#issuecomment-42662",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_042663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5492#issuecomment-42663",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_042664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5492#issuecomment-42664",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_042665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5492#issuecomment-42665",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007760.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  craigcitro\n\nWe need to make sure the hg qpush command is failing with the proper exit code and handle it appropriately.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7760\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @craigcitro\n\nWe need to make sure the hg qpush command is failing with the proper exit code and handle it appropriately.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7760\n\n",
     "created_at": "2009-12-24T11:03:04Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_007760.json:
     "title": "sage -merge fails silently when applying patches with rejects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7760",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  craigcitro
+CC:  @craigcitro
 
 We need to make sure the hg qpush command is failing with the proper exit code and handle it appropriately.
 
@@ -39,7 +39,7 @@ archive/issue_comments_066819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7760#issuecomment-66819",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_066820.json:
 ```json
 {
-    "body": "Attachment [trac_7760.patch](tarball://root/attachments/some-uuid/ticket7760/trac_7760.patch) by mhansen created at 2010-01-16 17:46:05",
+    "body": "Attachment [trac_7760.patch](tarball://root/attachments/some-uuid/ticket7760/trac_7760.patch) by @mwhansen created at 2010-01-16 17:46:05",
     "created_at": "2010-01-16T17:46:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7760#issuecomment-66820",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7760.patch](tarball://root/attachments/some-uuid/ticket7760/trac_7760.patch) by mhansen created at 2010-01-16 17:46:05
+Attachment [trac_7760.patch](tarball://root/attachments/some-uuid/ticket7760/trac_7760.patch) by @mwhansen created at 2010-01-16 17:46:05
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_066821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7760#issuecomment-66821",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_066822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7760#issuecomment-66822",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_066823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7760#issuecomment-66823",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_066824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7760#issuecomment-66824",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

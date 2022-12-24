@@ -14,7 +14,7 @@ archive/issues_007119.json:
     "title": "Redundant minus sign in PolyDict polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7119",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 Assignee: Kwankyu Lee
@@ -55,7 +55,7 @@ archive/issue_comments_059011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7119#issuecomment-59011",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing status from new to assigned.
 archive/issue_comments_059012.json:
 ```json
 {
-    "body": "Attachment [trac7119.patch](tarball://root/attachments/some-uuid/ticket7119/trac7119.patch) by klee created at 2009-10-05 04:59:59\n\nThe patch corrects the bug.",
+    "body": "Attachment [trac7119.patch](tarball://root/attachments/some-uuid/ticket7119/trac7119.patch) by @kwankyu created at 2009-10-05 04:59:59\n\nThe patch corrects the bug.",
     "created_at": "2009-10-05T04:59:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7119#issuecomment-59012",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Attachment [trac7119.patch](tarball://root/attachments/some-uuid/ticket7119/trac7119.patch) by klee created at 2009-10-05 04:59:59
+Attachment [trac7119.patch](tarball://root/attachments/some-uuid/ticket7119/trac7119.patch) by @kwankyu created at 2009-10-05 04:59:59
 
 The patch corrects the bug.
 
@@ -88,16 +88,16 @@ The patch corrects the bug.
 archive/issue_comments_059013.json:
 ```json
 {
-    "body": "Changing assignee from Kwankyu Lee to klee.",
+    "body": "Changing assignee from Kwankyu Lee to @kwankyu.",
     "created_at": "2009-10-05T04:59:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7119#issuecomment-59013",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Changing assignee from Kwankyu Lee to klee.
+Changing assignee from Kwankyu Lee to @kwankyu.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_059014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7119#issuecomment-59014",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -124,16 +124,16 @@ I think a doctest should be added for the case that the patch fixes. ~ adam
 archive/issue_comments_059015.json:
 ```json
 {
-    "body": "Attachment [trac_#7119.patch](tarball://root/attachments/some-uuid/ticket7119/trac_#7119.patch) by klee created at 2009-10-12 08:03:55\n\nThe new patch includes doctests and a bugfix of the patch itself.\n\nMartin says:\n\nAlex Ghitza wrote a patch to fix printing of multivariate polynomials in\ngeneral\n\n  http://trac.sagemath.org/sage_trac/ticket/6551\n\nwhich might contain your fix. However, it needs some work before it can go in.\n\n\nHowever, it seems to me that Alex Ghitza's patch is independent with the current patch.",
+    "body": "Attachment [trac_#7119.patch](tarball://root/attachments/some-uuid/ticket7119/trac_#7119.patch) by @kwankyu created at 2009-10-12 08:03:55\n\nThe new patch includes doctests and a bugfix of the patch itself.\n\nMartin says:\n\nAlex Ghitza wrote a patch to fix printing of multivariate polynomials in\ngeneral\n\n  http://trac.sagemath.org/sage_trac/ticket/6551\n\nwhich might contain your fix. However, it needs some work before it can go in.\n\n\nHowever, it seems to me that Alex Ghitza's patch is independent with the current patch.",
     "created_at": "2009-10-12T08:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7119#issuecomment-59015",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Attachment [trac_#7119.patch](tarball://root/attachments/some-uuid/ticket7119/trac_#7119.patch) by klee created at 2009-10-12 08:03:55
+Attachment [trac_#7119.patch](tarball://root/attachments/some-uuid/ticket7119/trac_#7119.patch) by @kwankyu created at 2009-10-12 08:03:55
 
 The new patch includes doctests and a bugfix of the patch itself.
 
@@ -161,7 +161,7 @@ archive/issue_comments_059016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7119#issuecomment-59016",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_059017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7119#issuecomment-59017",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_059018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7119#issuecomment-59018",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -230,16 +230,16 @@ suggested changes
 archive/issue_comments_059019.json:
 ```json
 {
-    "body": "Attachment [trac_7119_b.patch](tarball://root/attachments/some-uuid/ticket7119/trac_7119_b.patch) by awebb created at 2009-10-12 11:43:09\n\nI added a \"suggested changes\" patch just to clarify. ~ Adam",
+    "body": "Attachment [trac_7119_b.patch](tarball://root/attachments/some-uuid/ticket7119/trac_7119_b.patch) by @maxthemouse created at 2009-10-12 11:43:09\n\nI added a \"suggested changes\" patch just to clarify. ~ Adam",
     "created_at": "2009-10-12T11:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7119#issuecomment-59019",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
-Attachment [trac_7119_b.patch](tarball://root/attachments/some-uuid/ticket7119/trac_7119_b.patch) by awebb created at 2009-10-12 11:43:09
+Attachment [trac_7119_b.patch](tarball://root/attachments/some-uuid/ticket7119/trac_7119_b.patch) by @maxthemouse created at 2009-10-12 11:43:09
 
 I added a "suggested changes" patch just to clarify. ~ Adam
 
@@ -255,7 +255,7 @@ archive/issue_comments_059020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7119#issuecomment-59020",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_059021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7119#issuecomment-59021",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_059022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7119#issuecomment-59022",
-    "user": "awebb"
+    "user": "@maxthemouse"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_059023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7119",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7119#issuecomment-59023",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001698.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  burcin\n\n\n```\n\nHas anybody ever built or used PolyBoRi on Linux *ITANIUM*?  \nBecause I just tried and the simplest\nuse of it from Sage segfaults PolyBoRi.   Since Itanium is \nsupposed to be supported Sage platform this is very\nserious:\n\nsage -t --gdb pbori.pyx\n\nSIGSEGV\nboost::intrusive_ptr<polybori::CCuddCore>::operator-> (this=0x0)\n   at ...intrusive_ptr.hpp:120\n120         return p_;\n\n(this was typed in by me manually just now). \n\nAny ideas?!   If necessary I can loan you the password I  have to an itanium box, but\nhopefully one of you has access to an Itanium Linux machine.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1698\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @burcin\n\n\n```\n\nHas anybody ever built or used PolyBoRi on Linux *ITANIUM*?  \nBecause I just tried and the simplest\nuse of it from Sage segfaults PolyBoRi.   Since Itanium is \nsupposed to be supported Sage platform this is very\nserious:\n\nsage -t --gdb pbori.pyx\n\nSIGSEGV\nboost::intrusive_ptr<polybori::CCuddCore>::operator-> (this=0x0)\n   at ...intrusive_ptr.hpp:120\n120         return p_;\n\n(this was typed in by me manually just now). \n\nAny ideas?!   If necessary I can loan you the password I  have to an itanium box, but\nhopefully one of you has access to an Itanium Linux machine.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1698\n\n",
     "created_at": "2008-01-06T01:41:04Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_001698.json:
     "title": "PolyBoRi doesn't work at all on Itanium Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1698",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  burcin
+CC:  @burcin
 
 
 ```
@@ -82,7 +82,7 @@ archive/issue_comments_010772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1698#issuecomment-10772",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

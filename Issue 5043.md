@@ -3,7 +3,7 @@
 archive/issues_005043.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\n\nOn Tue, Jan 20, 2009 at 8:03 PM, davidp <davidp@reed.edu> wrote:\n>\n> I will be teaching abstract algebra this semester and want to\n> introduce my students to Sage and GAP.  I have installed\n> gap_packages-4.4.10_6, but I am still having trouble with\n> documentation:\n>\n> ----------------------------------------------------------------------\n> | Sage Version 3.2.3, Release Date: 2009-01-05                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: gap_console()\n> GAP4, Version: 4.4.10 of 02-Oct-2007, i686-pc-linux-gnu-gcc\n> gap> ?SymmetricGroup\n> Help: Showing `Reference: SymmetricGroup'\n> Record: '<rec>.tempfile' must have an assigned value at\n> str := OutputTextFile( $SAGE.tempfile, false );\n>  called from\n> HELP_VIEWER_INFO.(viewer).show( data ); called from\n> HELP_PRINT_MATCH( i ); called from\n> HELP_SHOW_MATCHES( books, str, true ) called from\n> <function>( <arguments> ) called from read-eval-loop\n> Entering break read-eval-print loop ...\n> you can 'quit;' to quit to outer loop, or\n> you can 'return;' after assigning a value to continue\n> brk>\n>\n>\n> I am running Sage on a thinkpad with Fedora 10.\n>\n> Any suggestions would be appreciated.\n\nThe above happens because the default GAP workspace evidently that messes up the help system.  I think this is a bug (?), probably in GAP. \n\nYou can do the following instead:\n\nsage: gap_console(False)\n...\n\nOr\n\nsage: gap.SymmetricGroup?            # <--- i like this\n\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5043\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Tue, Jan 20, 2009 at 8:03 PM, davidp <davidp@reed.edu> wrote:\n>\n> I will be teaching abstract algebra this semester and want to\n> introduce my students to Sage and GAP.  I have installed\n> gap_packages-4.4.10_6, but I am still having trouble with\n> documentation:\n>\n> ----------------------------------------------------------------------\n> | Sage Version 3.2.3, Release Date: 2009-01-05                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: gap_console()\n> GAP4, Version: 4.4.10 of 02-Oct-2007, i686-pc-linux-gnu-gcc\n> gap> ?SymmetricGroup\n> Help: Showing `Reference: SymmetricGroup'\n> Record: '<rec>.tempfile' must have an assigned value at\n> str := OutputTextFile( $SAGE.tempfile, false );\n>  called from\n> HELP_VIEWER_INFO.(viewer).show( data ); called from\n> HELP_PRINT_MATCH( i ); called from\n> HELP_SHOW_MATCHES( books, str, true ) called from\n> <function>( <arguments> ) called from read-eval-loop\n> Entering break read-eval-print loop ...\n> you can 'quit;' to quit to outer loop, or\n> you can 'return;' after assigning a value to continue\n> brk>\n>\n>\n> I am running Sage on a thinkpad with Fedora 10.\n>\n> Any suggestions would be appreciated.\n\nThe above happens because the default GAP workspace evidently that messes up the help system.  I think this is a bug (?), probably in GAP. \n\nYou can do the following instead:\n\nsage: gap_console(False)\n...\n\nOr\n\nsage: gap.SymmetricGroup?            # <--- i like this\n\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5043\n\n",
     "created_at": "2009-01-21T05:42:07Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_005043.json:
     "title": "gap_console help broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5043",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -87,7 +87,7 @@ archive/issue_comments_038409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38409",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,16 +187,16 @@ Steve Linton    School of Computer Science  &
 archive/issue_comments_038410.json:
 ```json
 {
-    "body": "Attachment [trac_5043-extcode-gap-console-help.patch](tarball://root/attachments/some-uuid/ticket5043/trac_5043-extcode-gap-console-help.patch) by iandrus created at 2012-06-05 17:54:15",
+    "body": "Attachment [trac_5043-extcode-gap-console-help.patch](tarball://root/attachments/some-uuid/ticket5043/trac_5043-extcode-gap-console-help.patch) by @gvol created at 2012-06-05 17:54:15",
     "created_at": "2012-06-05T17:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38410",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
-Attachment [trac_5043-extcode-gap-console-help.patch](tarball://root/attachments/some-uuid/ticket5043/trac_5043-extcode-gap-console-help.patch) by iandrus created at 2012-06-05 17:54:15
+Attachment [trac_5043-extcode-gap-console-help.patch](tarball://root/attachments/some-uuid/ticket5043/trac_5043-extcode-gap-console-help.patch) by @gvol created at 2012-06-05 17:54:15
 
 
 
@@ -205,16 +205,16 @@ Attachment [trac_5043-extcode-gap-console-help.patch](tarball://root/attachments
 archive/issue_comments_038411.json:
 ```json
 {
-    "body": "Attachment [trac_5043-gap-console-help.patch](tarball://root/attachments/some-uuid/ticket5043/trac_5043-gap-console-help.patch) by iandrus created at 2012-06-05 17:54:36",
+    "body": "Attachment [trac_5043-gap-console-help.patch](tarball://root/attachments/some-uuid/ticket5043/trac_5043-gap-console-help.patch) by @gvol created at 2012-06-05 17:54:36",
     "created_at": "2012-06-05T17:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38411",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
-Attachment [trac_5043-gap-console-help.patch](tarball://root/attachments/some-uuid/ticket5043/trac_5043-gap-console-help.patch) by iandrus created at 2012-06-05 17:54:36
+Attachment [trac_5043-gap-console-help.patch](tarball://root/attachments/some-uuid/ticket5043/trac_5043-gap-console-help.patch) by @gvol created at 2012-06-05 17:54:36
 
 
 
@@ -228,7 +228,7 @@ archive/issue_comments_038412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38412",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_038413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38413",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_038414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38414",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_038415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38415",
-    "user": "iandrus"
+    "user": "@gvol"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_038416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38416",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -327,7 +327,7 @@ archive/issue_comments_038417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38417",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_038418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38418",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

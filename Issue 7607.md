@@ -3,7 +3,7 @@
 archive/issues_007607.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  mhansen\n\nWith Sage 4.3.alpha0 and 4.3.alpha1, this shows up under the script repository:\n\n```\n~/Desktop/sage-4.3.alpha1/sage -hg st\n? hmac256\n? jmol\n? pilconvert.py\n? pildriver.py\n? pilfile.py\n? pilfont.py\n? pilprint.py\n? sphinx-autogen\n```\n\nThose files should be added using \"hg add\" and then checked in with \"hg ci\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/7607\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @mwhansen\n\nWith Sage 4.3.alpha0 and 4.3.alpha1, this shows up under the script repository:\n\n```\n~/Desktop/sage-4.3.alpha1/sage -hg st\n? hmac256\n? jmol\n? pilconvert.py\n? pildriver.py\n? pilfile.py\n? pilfont.py\n? pilprint.py\n? sphinx-autogen\n```\n\nThose files should be added using \"hg add\" and then checked in with \"hg ci\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/7607\n\n",
     "created_at": "2009-12-05T13:33:46Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_007607.json:
 ```
 Assignee: mvngu
 
-CC:  mhansen
+CC:  @mwhansen
 
 With Sage 4.3.alpha0 and 4.3.alpha1, this shows up under the script repository:
 
@@ -53,7 +53,7 @@ archive/issue_comments_064894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7607#issuecomment-64894",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_064899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7607#issuecomment-64899",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_064900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7607#issuecomment-64900",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

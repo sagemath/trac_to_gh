@@ -3,7 +3,7 @@
 archive/issues_000106.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is especially a problem in the SAGE notebook.   Probably the same problem happens for Mathematica.\n\nIssue created by migration from https://trac.sagemath.org/ticket/106\n\n",
+    "body": "Assignee: @williamstein\n\nThis is especially a problem in the SAGE notebook.   Probably the same problem happens for Mathematica.\n\nIssue created by migration from https://trac.sagemath.org/ticket/106\n\n",
     "created_at": "2006-10-03T03:50:03Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000106.json:
     "title": "maple (etc?) tab completion -- asking for a list of all completions gives a bad error message if maple isn't installed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/106",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is especially a problem in the SAGE notebook.   Probably the same problem happens for Mathematica.
 
@@ -109,16 +109,16 @@ Michael
 archive/issue_comments_000504.json:
 ```json
 {
-    "body": "Attachment [6169.patch](tarball://root/attachments/some-uuid/ticket106/6169.patch) by was created at 2007-09-06 18:45:07\n\nfixes the problem",
+    "body": "Attachment [6169.patch](tarball://root/attachments/some-uuid/ticket106/6169.patch) by @williamstein created at 2007-09-06 18:45:07\n\nfixes the problem",
     "created_at": "2007-09-06T18:45:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/106#issuecomment-504",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [6169.patch](tarball://root/attachments/some-uuid/ticket106/6169.patch) by was created at 2007-09-06 18:45:07
+Attachment [6169.patch](tarball://root/attachments/some-uuid/ticket106/6169.patch) by @williamstein created at 2007-09-06 18:45:07
 
 fixes the problem
 
@@ -134,7 +134,7 @@ archive/issue_comments_000505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/106#issuecomment-505",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_000506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/106",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/106#issuecomment-506",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -13,7 +13,7 @@ archive/issues_000023.json:
     "title": "(Z/nZ)^k problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/23",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_000182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/23",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/23#issuecomment-182",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_000183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/23",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/23#issuecomment-183",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

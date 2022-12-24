@@ -3,7 +3,7 @@
 archive/issues_005792.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: dirichlet characters\n\nThis is pretty worrying:\n\n\n```\nsage: half_integral_weight_modform_basis(trivial_character(16), 9, 10)\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/home/david/.sage/temp/groke/13438/_home_david__sage_init_sage_0.py in <module>()\n\n/home/david/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/modular/modform/half_integral.pyc in half_integral_weight_modform_basis(chi, k, prec)\n    115     chi = chi.minimize_base_ring()\n    116     psi = chi.parent()(DirichletGroup(4, chi.base_ring()).gen())\n--> 117     eps = chi*psi**((k+1) // 2)\n    118     eps = eps.minimize_base_ring()\n    119     M   = constructor.ModularForms(eps, (k+1)//2)\n\n/home/david/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/modular/dirichlet.pyc in __pow__(self, n)\n    463             [1, -1]\n    464         \"\"\"\n--> 465         return DirichletCharacter(self.parent(), n * self.element(), check=False)\n    466\n    467     def _repr_(self):\n\n/home/david/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/modular/dirichlet.pyc in element(self)\n   1447             M    = P._module\n   1448             dlog = P._zeta_dlog\n-> 1449             v = M([dlog[x] for x in self.values_on_gens()])\n   1450             self.__element = v\n   1451             return v\n\nKeyError: -1\n```\n\n\nSo something is going a bit wrong when multiplying trivial_character(16) by another character.\n\nI thought I had fixed this one, as part of #5648: there was a bug with arithmetic operations on characters whose parents had the same moduli but different zeta orders. But it looks like it isn't fixed after all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5792\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: dirichlet characters\n\nThis is pretty worrying:\n\n\n```\nsage: half_integral_weight_modform_basis(trivial_character(16), 9, 10)\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/home/david/.sage/temp/groke/13438/_home_david__sage_init_sage_0.py in <module>()\n\n/home/david/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/modular/modform/half_integral.pyc in half_integral_weight_modform_basis(chi, k, prec)\n    115     chi = chi.minimize_base_ring()\n    116     psi = chi.parent()(DirichletGroup(4, chi.base_ring()).gen())\n--> 117     eps = chi*psi**((k+1) // 2)\n    118     eps = eps.minimize_base_ring()\n    119     M   = constructor.ModularForms(eps, (k+1)//2)\n\n/home/david/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/modular/dirichlet.pyc in __pow__(self, n)\n    463             [1, -1]\n    464         \"\"\"\n--> 465         return DirichletCharacter(self.parent(), n * self.element(), check=False)\n    466\n    467     def _repr_(self):\n\n/home/david/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/modular/dirichlet.pyc in element(self)\n   1447             M    = P._module\n   1448             dlog = P._zeta_dlog\n-> 1449             v = M([dlog[x] for x in self.values_on_gens()])\n   1450             self.__element = v\n   1451             return v\n\nKeyError: -1\n```\n\n\nSo something is going a bit wrong when multiplying trivial_character(16) by another character.\n\nI thought I had fixed this one, as part of #5648: there was a bug with arithmetic operations on characters whose parents had the same moduli but different zeta orders. But it looks like it isn't fixed after all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5792\n\n",
     "created_at": "2009-04-15T15:55:06Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_005792.json:
     "title": "Dirichlet character bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5792",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: dirichlet characters
 
@@ -76,7 +76,7 @@ archive/issue_comments_045357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5792#issuecomment-45357",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -123,16 +123,16 @@ I've attached a patch that does the former.
 archive/issue_comments_045358.json:
 ```json
 {
-    "body": "Attachment [trac-5792.patch](tarball://root/attachments/some-uuid/ticket5792/trac-5792.patch) by craigcitro created at 2009-04-16 01:11:40",
+    "body": "Attachment [trac-5792.patch](tarball://root/attachments/some-uuid/ticket5792/trac-5792.patch) by @craigcitro created at 2009-04-16 01:11:40",
     "created_at": "2009-04-16T01:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5792#issuecomment-45358",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-5792.patch](tarball://root/attachments/some-uuid/ticket5792/trac-5792.patch) by craigcitro created at 2009-04-16 01:11:40
+Attachment [trac-5792.patch](tarball://root/attachments/some-uuid/ticket5792/trac-5792.patch) by @craigcitro created at 2009-04-16 01:11:40
 
 
 
@@ -146,7 +146,7 @@ archive/issue_comments_045359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5792#issuecomment-45359",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_045360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5792#issuecomment-45360",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -198,16 +198,16 @@ So my vote: we commit this patch, and then open a new ticket to clean up this `z
 archive/issue_comments_045361.json:
 ```json
 {
-    "body": "Attachment [trac_5792_rebase.patch](tarball://root/attachments/some-uuid/ticket5792/trac_5792_rebase.patch) by davidloeffler created at 2009-05-11 08:55:19\n\nreplaces previous patch, apply over #4357 and #5250",
+    "body": "Attachment [trac_5792_rebase.patch](tarball://root/attachments/some-uuid/ticket5792/trac_5792_rebase.patch) by @loefflerd created at 2009-05-11 08:55:19\n\nreplaces previous patch, apply over #4357 and #5250",
     "created_at": "2009-05-11T08:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5792#issuecomment-45361",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5792_rebase.patch](tarball://root/attachments/some-uuid/ticket5792/trac_5792_rebase.patch) by davidloeffler created at 2009-05-11 08:55:19
+Attachment [trac_5792_rebase.patch](tarball://root/attachments/some-uuid/ticket5792/trac_5792_rebase.patch) by @loefflerd created at 2009-05-11 08:55:19
 
 replaces previous patch, apply over #4357 and #5250
 
@@ -223,7 +223,7 @@ archive/issue_comments_045362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5792#issuecomment-45362",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

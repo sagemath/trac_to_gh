@@ -3,7 +3,7 @@
 archive/issues_004205.json:
 ```json
 {
-    "body": "Assignee: was\n\nApparently we use the numpy C API in the RDF/CDF vector classes, which causes deprecation warnings with numpy 1.2.  This patch updates this code to use current functions in numpy 1.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4205\n\n",
+    "body": "Assignee: @williamstein\n\nApparently we use the numpy C API in the RDF/CDF vector classes, which causes deprecation warnings with numpy 1.2.  This patch updates this code to use current functions in numpy 1.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4205\n\n",
     "created_at": "2008-09-27T07:19:13Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_004205.json:
     "title": "[with patch, needs review] Fix deprecation warnings from numpy 1.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4205",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Apparently we use the numpy C API in the RDF/CDF vector classes, which causes deprecation warnings with numpy 1.2.  This patch updates this code to use current functions in numpy 1.2.
 
@@ -37,7 +37,7 @@ archive/issue_comments_030513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4205#issuecomment-30513",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_030514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4205#issuecomment-30514",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -533,7 +533,7 @@ archive/issue_comments_030518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4205#issuecomment-30518",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -562,7 +562,7 @@ archive/issue_comments_030519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4205#issuecomment-30519",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_030520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4205#issuecomment-30520",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -615,7 +615,7 @@ archive/issue_comments_030521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4205#issuecomment-30521",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_030522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4205#issuecomment-30522",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -673,7 +673,7 @@ archive/issue_comments_030524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4205#issuecomment-30524",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -691,7 +691,7 @@ archive/issue_comments_030525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4205#issuecomment-30525",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -709,7 +709,7 @@ archive/issue_comments_030526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4205",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4205#issuecomment-30526",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

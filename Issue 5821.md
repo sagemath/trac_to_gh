@@ -3,7 +3,7 @@
 archive/issues_005821.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robertwb\n\nKeywords: preparser\n\nWhen reviewing #5595, I tried typing this:\n\n```\nsage: import re\nsage: dep_regex = re.compile(r'^ *(?:(?:cimport +([\\w\\. ,]+))|(?:from +(\\w+) +cimport)|(?:include *[\\'\"]([^\\'\"]+)[\\'\"])|(?:cdef *extern *from *[\\'\"]([^\\'\"]+)[\\'\"]))', re.M)\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     dep_regex = re.compile(r'^ *(?:(?:cimport +([\\w\\. ,]+))|(?:from +(\\w+) +cimport)|(?:include *[\\'\"]([^\\'\"]+)[ * BackslashOperator() * '\"])|(?:cdef *extern *from *[\\'\"]([^\\'\"]+)[\\'\"]))', re.M)\n                                                                                                                                                                          ^\nSyntaxError: invalid syntax\n```\n\n\nNote that the preparser has turned a backslash from the middle of the regular expression into `\" * BackslashOperator() * \"`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5821\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nKeywords: preparser\n\nWhen reviewing #5595, I tried typing this:\n\n```\nsage: import re\nsage: dep_regex = re.compile(r'^ *(?:(?:cimport +([\\w\\. ,]+))|(?:from +(\\w+) +cimport)|(?:include *[\\'\"]([^\\'\"]+)[\\'\"])|(?:cdef *extern *from *[\\'\"]([^\\'\"]+)[\\'\"]))', re.M)\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     dep_regex = re.compile(r'^ *(?:(?:cimport +([\\w\\. ,]+))|(?:from +(\\w+) +cimport)|(?:include *[\\'\"]([^\\'\"]+)[ * BackslashOperator() * '\"])|(?:cdef *extern *from *[\\'\"]([^\\'\"]+)[\\'\"]))', re.M)\n                                                                                                                                                                          ^\nSyntaxError: invalid syntax\n```\n\n\nNote that the preparser has turned a backslash from the middle of the regular expression into `\" * BackslashOperator() * \"`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5821\n\n",
     "created_at": "2009-04-19T03:31:24Z",
     "labels": [
         "user interface",
@@ -17,9 +17,9 @@ archive/issues_005821.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robertwb
+CC:  @robertwb
 
 Keywords: preparser
 
@@ -54,7 +54,7 @@ archive/issue_comments_045746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5821#issuecomment-45746",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -69,16 +69,16 @@ http://docs.python.org/reference/lexical_analysis.html
 archive/issue_comments_045747.json:
 ```json
 {
-    "body": "Attachment [5821-preparse-raw.patch](tarball://root/attachments/some-uuid/ticket5821/5821-preparse-raw.patch) by robertwb created at 2009-04-19 07:27:44",
+    "body": "Attachment [5821-preparse-raw.patch](tarball://root/attachments/some-uuid/ticket5821/5821-preparse-raw.patch) by @robertwb created at 2009-04-19 07:27:44",
     "created_at": "2009-04-19T07:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5821",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5821#issuecomment-45747",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5821-preparse-raw.patch](tarball://root/attachments/some-uuid/ticket5821/5821-preparse-raw.patch) by robertwb created at 2009-04-19 07:27:44
+Attachment [5821-preparse-raw.patch](tarball://root/attachments/some-uuid/ticket5821/5821-preparse-raw.patch) by @robertwb created at 2009-04-19 07:27:44
 
 
 

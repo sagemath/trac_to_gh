@@ -3,7 +3,7 @@
 archive/issues_002710.json:
 ```json
 {
-    "body": "Assignee: was\n\nOn OS X, `!singular` no longer works.  It works fine on Linux still. \n\n\n```\nLast login: Fri Mar 28 12:02:34 on ttys001\nD-69-91-159-150:~ was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: modabvar\n| SAGE Version 2.10.4, Release Date: 2008-03-16                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: !singular\ndyld: Library not loaded: libntl.dylib\n  Referenced from: /Users/was/build/sage-2.10.4/local/bin/Singular-3-0-4\n  Reason: image not found\n/Users/was/build/sage-2.10.4/local/bin/singular: line 2:   408 Trace/BPT trap          Singular-3-0-4 $*\nsage: \n```\n\n\nNote that singular.console() does work:\n\n```\nsage: singular.console()\n                     SINGULAR                             /  Development\n A Computer Algebra System for Polynomial Computations   /   version 3-0-4\n                                                       0<\n     by: G.-M. Greuel, G. Pfister, H. Schoenemann        \\   Nov 2007\nFB Mathematik der Universitaet, D-67653 Kaiserslautern    \\\n> Auf Wiedersehen.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2710\n\n",
+    "body": "Assignee: @williamstein\n\nOn OS X, `!singular` no longer works.  It works fine on Linux still. \n\n\n```\nLast login: Fri Mar 28 12:02:34 on ttys001\nD-69-91-159-150:~ was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: modabvar\n| SAGE Version 2.10.4, Release Date: 2008-03-16                      |\n| Type notebook() for the GUI, and license() for information.        |\nsage: !singular\ndyld: Library not loaded: libntl.dylib\n  Referenced from: /Users/was/build/sage-2.10.4/local/bin/Singular-3-0-4\n  Reason: image not found\n/Users/was/build/sage-2.10.4/local/bin/singular: line 2:   408 Trace/BPT trap          Singular-3-0-4 $*\nsage: \n```\n\n\nNote that singular.console() does work:\n\n```\nsage: singular.console()\n                     SINGULAR                             /  Development\n A Computer Algebra System for Polynomial Computations   /   version 3-0-4\n                                                       0<\n     by: G.-M. Greuel, G. Pfister, H. Schoenemann        \\   Nov 2007\nFB Mathematik der Universitaet, D-67653 Kaiserslautern    \\\n> Auf Wiedersehen.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2710\n\n",
     "created_at": "2008-03-28T21:32:17Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_002710.json:
     "title": "bug -- !singular doesn't work anymore on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2710",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 On OS X, `!singular` no longer works.  It works fine on Linux still. 
 

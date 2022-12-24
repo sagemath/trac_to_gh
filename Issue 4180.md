@@ -3,7 +3,7 @@
 archive/issues_004180.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nYeah, I think it would greatly help if users could send an env\nvariable that dumps the pexpect communication to a file. Currently I\nhave to debug some Singular vs. pexpect problems on Solaris, but I\nguess with mhansen's help I will finally learn how to fix those\nissues. But for random users out there a magic switch that gives us\nlogs and helps us hunt down \"random\" problems would be a great thing\nIMHO.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4180\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nYeah, I think it would greatly help if users could send an env\nvariable that dumps the pexpect communication to a file. Currently I\nhave to debug some Singular vs. pexpect problems on Solaris, but I\nguess with mhansen's help I will finally learn how to fix those\nissues. But for random users out there a magic switch that gives us\nlogs and helps us hunt down \"random\" problems would be a great thing\nIMHO.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4180\n\n",
     "created_at": "2008-09-23T22:16:39Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004180.json:
     "title": "magic pexpect logging switch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4180",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4180
 archive/issue_comments_030327.json:
 ```json
 {
-    "body": "Attachment [trac_4180.patch](tarball://root/attachments/some-uuid/ticket4180/trac_4180.patch) by mhansen created at 2008-09-24 00:14:20",
+    "body": "Attachment [trac_4180.patch](tarball://root/attachments/some-uuid/ticket4180/trac_4180.patch) by @mwhansen created at 2008-09-24 00:14:20",
     "created_at": "2008-09-24T00:14:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30327",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4180.patch](tarball://root/attachments/some-uuid/ticket4180/trac_4180.patch) by mhansen created at 2008-09-24 00:14:20
+Attachment [trac_4180.patch](tarball://root/attachments/some-uuid/ticket4180/trac_4180.patch) by @mwhansen created at 2008-09-24 00:14:20
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_030328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30328",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_030329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30329",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -96,16 +96,16 @@ I've added a patch to do this which uses the SAGE_PEXPECT_LOG environment variab
 archive/issue_comments_030330.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-09-24T00:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30330",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 

@@ -13,7 +13,7 @@ archive/issues_003656.json:
     "title": "log_repr and log on finite field with prime order fails,",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3656",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 Assignee: tbd
@@ -48,7 +48,7 @@ archive/issue_comments_025848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3656#issuecomment-25848",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_025849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3656#issuecomment-25849",
-    "user": "syazdani"
+    "user": "@syazdani77"
 }
 ```
 

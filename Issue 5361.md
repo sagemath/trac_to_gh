@@ -188,7 +188,7 @@ archive/issue_comments_041309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5361#issuecomment-41309",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -201,16 +201,16 @@ Changing status from new to assigned.
 archive/issue_comments_041310.json:
 ```json
 {
-    "body": "Attachment [trac_5361.patch](tarball://root/attachments/some-uuid/ticket5361/trac_5361.patch) by mhansen created at 2009-02-28 04:20:13",
+    "body": "Attachment [trac_5361.patch](tarball://root/attachments/some-uuid/ticket5361/trac_5361.patch) by @mwhansen created at 2009-02-28 04:20:13",
     "created_at": "2009-02-28T04:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5361#issuecomment-41310",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5361.patch](tarball://root/attachments/some-uuid/ticket5361/trac_5361.patch) by mhansen created at 2009-02-28 04:20:13
+Attachment [trac_5361.patch](tarball://root/attachments/some-uuid/ticket5361/trac_5361.patch) by @mwhansen created at 2009-02-28 04:20:13
 
 
 
@@ -219,16 +219,16 @@ Attachment [trac_5361.patch](tarball://root/attachments/some-uuid/ticket5361/tra
 archive/issue_comments_041311.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-02-28T04:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5361",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5361#issuecomment-41311",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 

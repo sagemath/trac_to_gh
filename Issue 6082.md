@@ -14,7 +14,7 @@ archive/issues_006082.json:
     "title": "[with patch, needs review] realloc called too often for Integer construction/deconstruction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6082",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6082
 archive/issue_comments_048407.json:
 ```json
 {
-    "body": "Attachment [6082-integer-speed.patch](tarball://root/attachments/some-uuid/ticket6082/6082-integer-speed.patch) by robertwb created at 2009-05-20 21:12:11\n\nNow it only reclaims the memory if more than 10 limbs (80 bytes) are used.",
+    "body": "Attachment [6082-integer-speed.patch](tarball://root/attachments/some-uuid/ticket6082/6082-integer-speed.patch) by @robertwb created at 2009-05-20 21:12:11\n\nNow it only reclaims the memory if more than 10 limbs (80 bytes) are used.",
     "created_at": "2009-05-20T21:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6082",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6082#issuecomment-48407",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6082-integer-speed.patch](tarball://root/attachments/some-uuid/ticket6082/6082-integer-speed.patch) by robertwb created at 2009-05-20 21:12:11
+Attachment [6082-integer-speed.patch](tarball://root/attachments/some-uuid/ticket6082/6082-integer-speed.patch) by @robertwb created at 2009-05-20 21:12:11
 
 Now it only reclaims the memory if more than 10 limbs (80 bytes) are used.
 

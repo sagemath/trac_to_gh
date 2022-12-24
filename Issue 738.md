@@ -3,7 +3,7 @@
 archive/issues_000738.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\n\n```\nThere's a bug in matrix2.pyx which is making my new\nPolynomial_integer_dense class fail some doctests.\n\nWhen you run this command:\n\n       matrix(ZZ,3,range(9))._charpoly_hessenberg('Z')\n\nthen on line 992 of matrix2.pyx, the list v contains Rationals even\nthough the polynomial constructor (for base ring Z) is called with\ncheck=False.\n\nAnd to answer your next question:\n\nsage: R.<x> = PolynomialRing(ZZ)\nsage: R([1/2, 3/4, 5/6, 7/8], check=False)\n7*x^3 + 5*x^2 + 3*x + 1\n\n!!!\n\nI'm sure one of you can fix this much faster than I can....\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/738\n\n",
+    "body": "Assignee: @robertwb\n\n\n```\nThere's a bug in matrix2.pyx which is making my new\nPolynomial_integer_dense class fail some doctests.\n\nWhen you run this command:\n\n       matrix(ZZ,3,range(9))._charpoly_hessenberg('Z')\n\nthen on line 992 of matrix2.pyx, the list v contains Rationals even\nthough the polynomial constructor (for base ring Z) is called with\ncheck=False.\n\nAnd to answer your next question:\n\nsage: R.<x> = PolynomialRing(ZZ)\nsage: R([1/2, 3/4, 5/6, 7/8], check=False)\n7*x^3 + 5*x^2 + 3*x + 1\n\n!!!\n\nI'm sure one of you can fix this much faster than I can....\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/738\n\n",
     "created_at": "2007-09-22T21:58:39Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000738.json:
     "title": "probably easy-to-fix bug in matrix2.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/738",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 
 ```
@@ -55,7 +55,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/738
 archive/issue_comments_004322.json:
 ```json
 {
-    "body": "Changing assignee from robertwb to dmharvey.",
+    "body": "Changing assignee from @robertwb to dmharvey.",
     "created_at": "2007-09-23T18:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/738",
     "type": "issue_comment",
@@ -64,7 +64,7 @@ archive/issue_comments_004322.json:
 }
 ```
 
-Changing assignee from robertwb to dmharvey.
+Changing assignee from @robertwb to dmharvey.
 
 
 
@@ -134,7 +134,7 @@ archive/issue_comments_004326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4326",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

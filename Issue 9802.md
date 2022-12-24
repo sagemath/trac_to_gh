@@ -3,7 +3,7 @@
 archive/issues_009802.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  bwonderly mhansen wdj jason\n\nThis will vastly improve the documentation of the `random_matrix` command in common use cases (integers, rationals,...).\n\nIt will also allow for new, more specialized constructions, such as Billy Wonderly's work at #9720, #9754, #9820.\n\nSee #9720 for motivating discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9803\n\n",
+    "body": "Assignee: jason, was\n\nCC:  bwonderly @mwhansen @wdjoyner @jasongrout\n\nThis will vastly improve the documentation of the `random_matrix` command in common use cases (integers, rationals,...).\n\nIt will also allow for new, more specialized constructions, such as Billy Wonderly's work at #9720, #9754, #9820.\n\nSee #9720 for motivating discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9803\n\n",
     "created_at": "2010-08-26T00:27:48Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_009802.json:
     "title": "Generalize and document the random_matrix constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9802",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: jason, was
 
-CC:  bwonderly mhansen wdj jason
+CC:  bwonderly @mwhansen @wdjoyner @jasongrout
 
 This will vastly improve the documentation of the `random_matrix` command in common use cases (integers, rationals,...).
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9803
 archive/issue_comments_096306.json:
 ```json
 {
-    "body": "Attachment [trac_9803-random-matrix-constructor-v1.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v1.patch) by rbeezer created at 2010-08-26 22:16:20",
+    "body": "Attachment [trac_9803-random-matrix-constructor-v1.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v1.patch) by @rbeezer created at 2010-08-26 22:16:20",
     "created_at": "2010-08-26T22:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96306",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9803-random-matrix-constructor-v1.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v1.patch) by rbeezer created at 2010-08-26 22:16:20
+Attachment [trac_9803-random-matrix-constructor-v1.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v1.patch) by @rbeezer created at 2010-08-26 22:16:20
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_096307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96307",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_096308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96308",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -109,16 +109,16 @@ Changing status from new to needs_review.
 archive/issue_comments_096309.json:
 ```json
 {
-    "body": "Attachment [trac_9803-random-matrix-constructor-v2.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v2.patch) by rbeezer created at 2010-08-27 01:43:36\n\nStandalone patch",
+    "body": "Attachment [trac_9803-random-matrix-constructor-v2.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v2.patch) by @rbeezer created at 2010-08-27 01:43:36\n\nStandalone patch",
     "created_at": "2010-08-27T01:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96309",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9803-random-matrix-constructor-v2.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v2.patch) by rbeezer created at 2010-08-27 01:43:36
+Attachment [trac_9803-random-matrix-constructor-v2.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v2.patch) by @rbeezer created at 2010-08-27 01:43:36
 
 Standalone patch
 
@@ -134,7 +134,7 @@ archive/issue_comments_096310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96310",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_096311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96311",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_096312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96312",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_096313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96313",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_096314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96314",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_096315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96315",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_096316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96316",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_096318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96318",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

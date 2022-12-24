@@ -3,7 +3,7 @@
 archive/issues_004096.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  alexghitza\n\nThis is a follow-up from 4064.  Alex Ghitza and I are doing a big job sorting out the interface with the pari library with respect to (real and complex) precision, where there is currently confusion leading to weird results when word-precision, bit-precision and decimal precision are being confused.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4096\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  alexghitza\n\nThis is a follow-up from 4064.  Alex Ghitza and I are doing a big job sorting out the interface with the pari library with respect to (real and complex) precision, where there is currently confusion leading to weird results when word-precision, bit-precision and decimal precision are being confused.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4096\n\n",
     "created_at": "2008-09-10T08:44:01Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_004096.json:
     "title": "pari precision interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4096",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 CC:  alexghitza
 
@@ -39,7 +39,7 @@ archive/issue_comments_029544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29544",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_029545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29545",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_029546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29546",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_029547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29547",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_029548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29548",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -140,16 +140,16 @@ doc patch, apply to 3.1.2
 archive/issue_comments_029549.json:
 ```json
 {
-    "body": "Attachment [4096-doc_const.patch](tarball://root/attachments/some-uuid/ticket4096/4096-doc_const.patch) by AlexGhitza created at 2008-09-19 23:43:27\n\nJohn and I agree that it is time for this to be reviewed.\n\nTo make this easier, I have put everything into one patch 4096-pari_real_precision_all.patch, which applies to 3.1.2.  There is also a small doc patch 4096-doc_const.patch which fixes a related issue in const.tex, and also applies to 3.1.2.\n\nNote to the reviewer: it would be best to start by scrolling down in the main patch until you hit the top of gen.pyx; there we have inserted a doc section called \"Guide to real precision and the Pari library\", which documents the correct behavior which is implemented by the patch.",
+    "body": "Attachment [4096-doc_const.patch](tarball://root/attachments/some-uuid/ticket4096/4096-doc_const.patch) by @aghitza created at 2008-09-19 23:43:27\n\nJohn and I agree that it is time for this to be reviewed.\n\nTo make this easier, I have put everything into one patch 4096-pari_real_precision_all.patch, which applies to 3.1.2.  There is also a small doc patch 4096-doc_const.patch which fixes a related issue in const.tex, and also applies to 3.1.2.\n\nNote to the reviewer: it would be best to start by scrolling down in the main patch until you hit the top of gen.pyx; there we have inserted a doc section called \"Guide to real precision and the Pari library\", which documents the correct behavior which is implemented by the patch.",
     "created_at": "2008-09-19T23:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29549",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [4096-doc_const.patch](tarball://root/attachments/some-uuid/ticket4096/4096-doc_const.patch) by AlexGhitza created at 2008-09-19 23:43:27
+Attachment [4096-doc_const.patch](tarball://root/attachments/some-uuid/ticket4096/4096-doc_const.patch) by @aghitza created at 2008-09-19 23:43:27
 
 John and I agree that it is time for this to be reviewed.
 
@@ -200,7 +200,7 @@ archive/issue_comments_029551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29551",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_029552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29552",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -242,16 +242,16 @@ It was fine with alpha0.  Thanks, Alex.
 archive/issue_comments_029553.json:
 ```json
 {
-    "body": "Attachment [4096-pari_real_precision_all.patch](tarball://root/attachments/some-uuid/ticket4096/4096-pari_real_precision_all.patch) by AlexGhitza created at 2008-09-25 13:30:22\n\napply to 3.1.3.alpha1",
+    "body": "Attachment [4096-pari_real_precision_all.patch](tarball://root/attachments/some-uuid/ticket4096/4096-pari_real_precision_all.patch) by @aghitza created at 2008-09-25 13:30:22\n\napply to 3.1.3.alpha1",
     "created_at": "2008-09-25T13:30:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29553",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [4096-pari_real_precision_all.patch](tarball://root/attachments/some-uuid/ticket4096/4096-pari_real_precision_all.patch) by AlexGhitza created at 2008-09-25 13:30:22
+Attachment [4096-pari_real_precision_all.patch](tarball://root/attachments/some-uuid/ticket4096/4096-pari_real_precision_all.patch) by @aghitza created at 2008-09-25 13:30:22
 
 apply to 3.1.3.alpha1
 
@@ -267,7 +267,7 @@ archive/issue_comments_029554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29554",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_029555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29555",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

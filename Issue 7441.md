@@ -14,7 +14,7 @@ archive/issues_007441.json:
     "title": "notebook: make it possible to upload from the url of a published worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7441",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -56,7 +56,7 @@ archive/issue_comments_062641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62641",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_062642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62642",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_062643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62643",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_062644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62644",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -155,16 +155,16 @@ add <link rel="alternate"... stuff to published worksheets
 archive/issue_comments_062645.json:
 ```json
 {
-    "body": "Attachment [trac_7441_link_rel.patch](tarball://root/attachments/some-uuid/ticket7441/trac_7441_link_rel.patch) by ddrake created at 2010-05-20 02:37:51\n\nadd support to \"upload a worksheet\" page for parsing <link rel=\"alternate\"... links",
+    "body": "Attachment [trac_7441_link_rel.patch](tarball://root/attachments/some-uuid/ticket7441/trac_7441_link_rel.patch) by @dandrake created at 2010-05-20 02:37:51\n\nadd support to \"upload a worksheet\" page for parsing <link rel=\"alternate\"... links",
     "created_at": "2010-05-20T02:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62645",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_7441_link_rel.patch](tarball://root/attachments/some-uuid/ticket7441/trac_7441_link_rel.patch) by ddrake created at 2010-05-20 02:37:51
+Attachment [trac_7441_link_rel.patch](tarball://root/attachments/some-uuid/ticket7441/trac_7441_link_rel.patch) by @dandrake created at 2010-05-20 02:37:51
 
 add support to "upload a worksheet" page for parsing <link rel="alternate"... links
 
@@ -175,16 +175,16 @@ add support to "upload a worksheet" page for parsing <link rel="alternate"... li
 archive/issue_comments_062646.json:
 ```json
 {
-    "body": "Attachment [trac_7441_upload.patch](tarball://root/attachments/some-uuid/ticket7441/trac_7441_upload.patch) by ddrake created at 2010-05-20 02:43:09\n\nThese two patches are a mostly-working implementation of these ideas. The \"link_rel\" patch simply adds the appropriate link into the head of published worksheets; the \"upload\" patch adds support to the \"upload a worksheet\" stuff so that it parses and downloads associated worksheets.\n\nRight now, however, it runs into a strange error that I don't understand. Try applying these patches, publishing a worksheet, and then using the worksheet's public URL in the upload box. You'll get a strange twisted error, the user's session will get messed up, but if you log back in, you'll see that the worksheet did get imported.\n\n(It's likely that it won't work at all with https URLs; we'll work on that later.)\n\nAny ideas?",
+    "body": "Attachment [trac_7441_upload.patch](tarball://root/attachments/some-uuid/ticket7441/trac_7441_upload.patch) by @dandrake created at 2010-05-20 02:43:09\n\nThese two patches are a mostly-working implementation of these ideas. The \"link_rel\" patch simply adds the appropriate link into the head of published worksheets; the \"upload\" patch adds support to the \"upload a worksheet\" stuff so that it parses and downloads associated worksheets.\n\nRight now, however, it runs into a strange error that I don't understand. Try applying these patches, publishing a worksheet, and then using the worksheet's public URL in the upload box. You'll get a strange twisted error, the user's session will get messed up, but if you log back in, you'll see that the worksheet did get imported.\n\n(It's likely that it won't work at all with https URLs; we'll work on that later.)\n\nAny ideas?",
     "created_at": "2010-05-20T02:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62646",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_7441_upload.patch](tarball://root/attachments/some-uuid/ticket7441/trac_7441_upload.patch) by ddrake created at 2010-05-20 02:43:09
+Attachment [trac_7441_upload.patch](tarball://root/attachments/some-uuid/ticket7441/trac_7441_upload.patch) by @dandrake created at 2010-05-20 02:43:09
 
 These two patches are a mostly-working implementation of these ideas. The "link_rel" patch simply adds the appropriate link into the head of published worksheets; the "upload" patch adds support to the "upload a worksheet" stuff so that it parses and downloads associated worksheets.
 
@@ -206,7 +206,7 @@ archive/issue_comments_062647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62647",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_062648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62648",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_062649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62649",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_062650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62650",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_062651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62651",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_062652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62652",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_062653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62653",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_062654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7441#issuecomment-62654",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003536.json:
     "title": "jmol -- update the spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3536",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_024956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3536#issuecomment-24956",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing component from algebra to graphics.
 archive/issue_comments_024957.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2008-06-30T02:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3536",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3536#issuecomment-24957",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 

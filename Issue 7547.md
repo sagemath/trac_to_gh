@@ -3,7 +3,7 @@
 archive/issues_007547.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ncohen\n\nIt seems to be the main bottleneck in graph plotting!\nThis patch cuts down by 30% the time for `sage -t graph.py` on my machine... (and doctests of course still pass)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7547\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nathanncohen\n\nIt seems to be the main bottleneck in graph plotting!\nThis patch cuts down by 30% the time for `sage -t graph.py` on my machine... (and doctests of course still pass)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7547\n\n",
     "created_at": "2009-11-28T02:14:34Z",
     "labels": [
         "graph theory",
@@ -17,9 +17,9 @@ archive/issues_007547.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  ncohen
+CC:  @nathanncohen
 
 It seems to be the main bottleneck in graph plotting!
 This patch cuts down by 30% the time for `sage -t graph.py` on my machine... (and doctests of course still pass)
@@ -91,7 +91,7 @@ archive/issue_comments_064105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7547#issuecomment-64105",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_064106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7547#issuecomment-64106",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_064107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7547#issuecomment-64107",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_064113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7547#issuecomment-64113",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_064114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7547",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7547#issuecomment-64114",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

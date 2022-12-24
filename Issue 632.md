@@ -14,7 +14,7 @@ archive/issues_000632.json:
     "title": "bug in command line time function and something -- very weird",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/632",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody

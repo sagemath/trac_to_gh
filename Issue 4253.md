@@ -3,7 +3,7 @@
 archive/issues_004253.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: polybori\n\n\n```\nsage: r.<x,y>=BooleanPolynomialRing(2)\n\nsage: p=r(\"0\")\nsage: p.navigation()==p.navigation()\nFalse\n```\n\nShould be True, probably `__eq__` not implemented.\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4253\n\n",
+    "body": "Assignee: @malb\n\nKeywords: polybori\n\n\n```\nsage: r.<x,y>=BooleanPolynomialRing(2)\n\nsage: p=r(\"0\")\nsage: p.navigation()==p.navigation()\nFalse\n```\n\nShould be True, probably `__eq__` not implemented.\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4253\n\n",
     "created_at": "2008-10-08T06:42:41Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_004253.json:
     "user": "PolyBoRi"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: polybori
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4253
 archive/issue_comments_030937.json:
 ```json
 {
-    "body": "Attachment [pbori_navigator_eq.patch](tarball://root/attachments/some-uuid/ticket4253/pbori_navigator_eq.patch) by malb created at 2008-10-08 14:17:07",
+    "body": "Attachment [pbori_navigator_eq.patch](tarball://root/attachments/some-uuid/ticket4253/pbori_navigator_eq.patch) by @malb created at 2008-10-08 14:17:07",
     "created_at": "2008-10-08T14:17:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4253",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4253#issuecomment-30937",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [pbori_navigator_eq.patch](tarball://root/attachments/some-uuid/ticket4253/pbori_navigator_eq.patch) by malb created at 2008-10-08 14:17:07
+Attachment [pbori_navigator_eq.patch](tarball://root/attachments/some-uuid/ticket4253/pbori_navigator_eq.patch) by @malb created at 2008-10-08 14:17:07
 
 
 

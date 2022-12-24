@@ -186,7 +186,7 @@ archive/issue_comments_029268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29268",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_029269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29269",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_029271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29271",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_029273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29273",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -397,16 +397,16 @@ $ echo $?
 archive/issue_comments_029276.json:
 ```json
 {
-    "body": "Attachment [trac_4059_v3.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v3.patch) by malb created at 2008-09-05 10:00:50\n\nReplying to [comment:10 mabshoff]:\n> On bsd the new m4ri reports:\n...\n> checking the L1 cache size... 0 Bytes\n> checking the L2 cache size... 4194304 Bytes\n\nThat's fine. Eventually, I should fix the L1 detection code though. IMHO, the whole cache detection needs to be refactored, but I don't want to do it just before a release.",
+    "body": "Attachment [trac_4059_v3.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v3.patch) by @malb created at 2008-09-05 10:00:50\n\nReplying to [comment:10 mabshoff]:\n> On bsd the new m4ri reports:\n...\n> checking the L1 cache size... 0 Bytes\n> checking the L2 cache size... 4194304 Bytes\n\nThat's fine. Eventually, I should fix the L1 detection code though. IMHO, the whole cache detection needs to be refactored, but I don't want to do it just before a release.",
     "created_at": "2008-09-05T10:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29276",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_4059_v3.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v3.patch) by malb created at 2008-09-05 10:00:50
+Attachment [trac_4059_v3.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v3.patch) by @malb created at 2008-09-05 10:00:50
 
 Replying to [comment:10 mabshoff]:
 > On bsd the new m4ri reports:
@@ -428,7 +428,7 @@ archive/issue_comments_029277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29277",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_029278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29278",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -498,16 +498,16 @@ I hope trac_4059_v4.patch can fix this.
 archive/issue_comments_029280.json:
 ```json
 {
-    "body": "Attachment [trac_4059_v4.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v4.patch) by malb created at 2008-09-05 17:42:52\n\nI updated the SPKG again and tested in on OSX 10.4 on x86 (for this I disabled the CPUID technique so that this code is actually run) and it works. Good work!",
+    "body": "Attachment [trac_4059_v4.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v4.patch) by @malb created at 2008-09-05 17:42:52\n\nI updated the SPKG again and tested in on OSX 10.4 on x86 (for this I disabled the CPUID technique so that this code is actually run) and it works. Good work!",
     "created_at": "2008-09-05T17:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29280",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_4059_v4.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v4.patch) by malb created at 2008-09-05 17:42:52
+Attachment [trac_4059_v4.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v4.patch) by @malb created at 2008-09-05 17:42:52
 
 I updated the SPKG again and tested in on OSX 10.4 on x86 (for this I disabled the CPUID technique so that this code is actually run) and it works. Good work!
 

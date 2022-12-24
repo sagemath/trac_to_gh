@@ -14,7 +14,7 @@ archive/issues_003343.json:
     "title": "arguments, documentation to ln function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3343",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3343
 archive/issue_comments_023220.json:
 ```json
 {
-    "body": "Attachment [3343.patch](tarball://root/attachments/some-uuid/ticket3343/3343.patch) by jhpalmieri created at 2008-05-31 21:49:10",
+    "body": "Attachment [3343.patch](tarball://root/attachments/some-uuid/ticket3343/3343.patch) by @jhpalmieri created at 2008-05-31 21:49:10",
     "created_at": "2008-05-31T21:49:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3343#issuecomment-23220",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [3343.patch](tarball://root/attachments/some-uuid/ticket3343/3343.patch) by jhpalmieri created at 2008-05-31 21:49:10
+Attachment [3343.patch](tarball://root/attachments/some-uuid/ticket3343/3343.patch) by @jhpalmieri created at 2008-05-31 21:49:10
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_023221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3343#issuecomment-23221",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

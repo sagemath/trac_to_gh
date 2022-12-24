@@ -3,7 +3,7 @@
 archive/issues_009918.json:
 ```json
 {
-    "body": "Assignee: jason\n\nKeywords: decorators\n\nThe `@`wraps decorator from the Python standard library does not work for non-function callables (e.g. methods) in Python versions older than 3.2. It was fixed as Python bug issue 3445. Until Sage upgrades to such a new version of Python, we should have a small work-around.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9919\n\n",
+    "body": "Assignee: @jasongrout\n\nKeywords: decorators\n\nThe `@`wraps decorator from the Python standard library does not work for non-function callables (e.g. methods) in Python versions older than 3.2. It was fixed as Python bug issue 3445. Until Sage upgrades to such a new version of Python, we should have a small work-around.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9919\n\n",
     "created_at": "2010-09-16T14:07:12Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_009918.json:
     "title": "Wrap wraps-decorator working around bug when used with non-function callables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9918",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 Keywords: decorators
 
@@ -39,7 +39,7 @@ archive/issue_comments_098700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9918#issuecomment-98700",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_098701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9918#issuecomment-98701",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_098702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9918#issuecomment-98702",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_098703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9918#issuecomment-98703",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_098704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9918#issuecomment-98704",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_098705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9918#issuecomment-98705",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_098706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9918#issuecomment-98706",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -162,16 +162,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_098707.json:
 ```json
 {
-    "body": "Attachment [trac_9919_workaround_upd_wrapper_bug.patch](tarball://root/attachments/some-uuid/ticket9919/trac_9919_workaround_upd_wrapper_bug.patch) by jsrn created at 2010-11-11 12:56:58\n\nFixed the commit message. Changed back to positive review as the code hasn't changed since Robert Miller's review.",
+    "body": "Attachment [trac_9919_workaround_upd_wrapper_bug.patch](tarball://root/attachments/some-uuid/ticket9919/trac_9919_workaround_upd_wrapper_bug.patch) by @johanrosenkilde created at 2010-11-11 12:56:58\n\nFixed the commit message. Changed back to positive review as the code hasn't changed since Robert Miller's review.",
     "created_at": "2010-11-11T12:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9918#issuecomment-98707",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
-Attachment [trac_9919_workaround_upd_wrapper_bug.patch](tarball://root/attachments/some-uuid/ticket9919/trac_9919_workaround_upd_wrapper_bug.patch) by jsrn created at 2010-11-11 12:56:58
+Attachment [trac_9919_workaround_upd_wrapper_bug.patch](tarball://root/attachments/some-uuid/ticket9919/trac_9919_workaround_upd_wrapper_bug.patch) by @johanrosenkilde created at 2010-11-11 12:56:58
 
 Fixed the commit message. Changed back to positive review as the code hasn't changed since Robert Miller's review.
 
@@ -187,7 +187,7 @@ archive/issue_comments_098708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9918#issuecomment-98708",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_098709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9918#issuecomment-98709",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

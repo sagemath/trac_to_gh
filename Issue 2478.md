@@ -3,7 +3,7 @@
 archive/issues_002478.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  robertwb\n\nMake the function effective, instead of really really slow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2478\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @robertwb\n\nMake the function effective, instead of really really slow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2478\n\n",
     "created_at": "2008-03-11T23:43:11Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_002478.json:
     "title": "[with patch, needs review] chromatic polynomial revisited",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2478",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  robertwb
+CC:  @robertwb
 
 Make the function effective, instead of really really slow.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2478
 archive/issue_comments_016791.json:
 ```json
 {
-    "body": "Attachment [2478-chrompoly.patch](tarball://root/attachments/some-uuid/ticket2478/2478-chrompoly.patch) by rlm created at 2008-03-12 04:31:38",
+    "body": "Attachment [2478-chrompoly.patch](tarball://root/attachments/some-uuid/ticket2478/2478-chrompoly.patch) by @rlmill created at 2008-03-12 04:31:38",
     "created_at": "2008-03-12T04:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2478#issuecomment-16791",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [2478-chrompoly.patch](tarball://root/attachments/some-uuid/ticket2478/2478-chrompoly.patch) by rlm created at 2008-03-12 04:31:38
+Attachment [2478-chrompoly.patch](tarball://root/attachments/some-uuid/ticket2478/2478-chrompoly.patch) by @rlmill created at 2008-03-12 04:31:38
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_016793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2478#issuecomment-16793",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_016794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2478#issuecomment-16794",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_016795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2478#issuecomment-16795",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_016796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2478",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2478#issuecomment-16796",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

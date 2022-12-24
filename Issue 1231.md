@@ -3,7 +3,7 @@
 archive/issues_001231.json:
 ```json
 {
-    "body": "Assignee: was\n\nHere is the troublesome code:\n\n\n```\nModularSymbols(1,8,0,GF(3)).simple_factors()\n```\n\n\nwhich results in\n\n\n```\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\n8 is the smallest weight for which this happens over GF(3).  The same issue occurs with all of the following (again, smallest weight):\n\n```\nModularSymbols(1,12,0,GF(5)).simple_factors()\nModularSymbols(1,12,0,GF(7)).simple_factors()\nModularSymbols(1,12,0,GF(11)).simple_factors()\nModularSymbols(1,12,0,GF(13)).simple_factors()\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1231\n\n",
+    "body": "Assignee: @williamstein\n\nHere is the troublesome code:\n\n\n```\nModularSymbols(1,8,0,GF(3)).simple_factors()\n```\n\n\nwhich results in\n\n\n```\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\n8 is the smallest weight for which this happens over GF(3).  The same issue occurs with all of the following (again, smallest weight):\n\n```\nModularSymbols(1,12,0,GF(5)).simple_factors()\nModularSymbols(1,12,0,GF(7)).simple_factors()\nModularSymbols(1,12,0,GF(11)).simple_factors()\nModularSymbols(1,12,0,GF(13)).simple_factors()\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1231\n\n",
     "created_at": "2007-11-21T03:45:15Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_001231.json:
     "title": "seg fault when computing with modular symbols over a finite field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1231",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Here is the troublesome code:
 
@@ -341,16 +341,16 @@ Michael
 archive/issue_comments_007661.json:
 ```json
 {
-    "body": "Attachment [trac_1231.hg](tarball://root/attachments/some-uuid/ticket1231/trac_1231.hg) by craigcitro created at 2007-12-02 10:45:13",
+    "body": "Attachment [trac_1231.hg](tarball://root/attachments/some-uuid/ticket1231/trac_1231.hg) by @craigcitro created at 2007-12-02 10:45:13",
     "created_at": "2007-12-02T10:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1231#issuecomment-7661",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_1231.hg](tarball://root/attachments/some-uuid/ticket1231/trac_1231.hg) by craigcitro created at 2007-12-02 10:45:13
+Attachment [trac_1231.hg](tarball://root/attachments/some-uuid/ticket1231/trac_1231.hg) by @craigcitro created at 2007-12-02 10:45:13
 
 
 
@@ -364,7 +364,7 @@ archive/issue_comments_007662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1231#issuecomment-7662",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -377,16 +377,16 @@ Fixed this. It was a coercion problem: we tried to subtract an int from a matrix
 archive/issue_comments_007663.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2007-12-02T10:46:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1231#issuecomment-7663",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -400,7 +400,7 @@ archive/issue_comments_007664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1231#issuecomment-7664",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -433,16 +433,16 @@ I have two issues.  First, the bundle includes the patches for #1129, which I st
 archive/issue_comments_007666.json:
 ```json
 {
-    "body": "Attachment [1231.patch](tarball://root/attachments/some-uuid/ticket1231/1231.patch) by craigcitro created at 2007-12-02 19:12:20",
+    "body": "Attachment [1231.patch](tarball://root/attachments/some-uuid/ticket1231/1231.patch) by @craigcitro created at 2007-12-02 19:12:20",
     "created_at": "2007-12-02T19:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1231#issuecomment-7666",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [1231.patch](tarball://root/attachments/some-uuid/ticket1231/1231.patch) by craigcitro created at 2007-12-02 19:12:20
+Attachment [1231.patch](tarball://root/attachments/some-uuid/ticket1231/1231.patch) by @craigcitro created at 2007-12-02 19:12:20
 
 
 
@@ -456,7 +456,7 @@ archive/issue_comments_007667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1231#issuecomment-7667",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_007668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1231#issuecomment-7668",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

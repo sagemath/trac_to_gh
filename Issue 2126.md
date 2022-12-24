@@ -3,7 +3,7 @@
 archive/issues_002126.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe attached patch fixes a small typo and adds a small clarification to the docstring (specifying which normalization of the Eisenstein series is returned).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2126\n\n",
+    "body": "Assignee: @aghitza\n\nThe attached patch fixes a small typo and adds a small clarification to the docstring (specifying which normalization of the Eisenstein series is returned).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2126\n\n",
     "created_at": "2008-02-09T09:41:48Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_002126.json:
     "title": "[with patch, needs review] small fixes to eisenstein_series_qexp()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2126",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The attached patch fixes a small typo and adds a small clarification to the docstring (specifying which normalization of the Eisenstein series is returned).
 
@@ -38,7 +38,7 @@ archive/issue_comments_013942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2126#issuecomment-13942",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -67,16 +67,16 @@ Other than that, I approve.
 archive/issue_comments_013943.json:
 ```json
 {
-    "body": "Attachment [2126-eisenstein_series_qexp.patch](tarball://root/attachments/some-uuid/ticket2126/2126-eisenstein_series_qexp.patch) by AlexGhitza created at 2008-02-17 00:17:59\n\nI've incorporated Robert's suggested change and resubmitted the patch.",
+    "body": "Attachment [2126-eisenstein_series_qexp.patch](tarball://root/attachments/some-uuid/ticket2126/2126-eisenstein_series_qexp.patch) by @aghitza created at 2008-02-17 00:17:59\n\nI've incorporated Robert's suggested change and resubmitted the patch.",
     "created_at": "2008-02-17T00:17:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2126",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2126#issuecomment-13943",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [2126-eisenstein_series_qexp.patch](tarball://root/attachments/some-uuid/ticket2126/2126-eisenstein_series_qexp.patch) by AlexGhitza created at 2008-02-17 00:17:59
+Attachment [2126-eisenstein_series_qexp.patch](tarball://root/attachments/some-uuid/ticket2126/2126-eisenstein_series_qexp.patch) by @aghitza created at 2008-02-17 00:17:59
 
 I've incorporated Robert's suggested change and resubmitted the patch.
 

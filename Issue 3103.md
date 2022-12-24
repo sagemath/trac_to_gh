@@ -3,7 +3,7 @@
 archive/issues_003103.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan rbradshaw jason\n\nKeywords: vector CDF coerce\n\nWith\n\n```\nsage: version()\n'SAGE Version 3.0.1.alpha0, Release Date: 2008-04-26'\n```\n\nI get the following coercion errors:\n\n\n```\nsage: vector(CDF, [2, 2]) * vector(ZZ, [1, 3])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/element.pyx in sage.structure.element.Vector.__mul__ (sage/structure/element.c:10413)()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5292)()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Ambient free module of rank 2 over the principal ideal domain Integer Ring'\nsage: vector(CDF, [2, 2]) * vector(QQ, [1, 3])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/element.pyx in sage.structure.element.Vector.__mul__ (sage/structure/element.c:10413)()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5292)()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Vector space of dimension 2 over Rational Field'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3103\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan rbradshaw @jasongrout\n\nKeywords: vector CDF coerce\n\nWith\n\n```\nsage: version()\n'SAGE Version 3.0.1.alpha0, Release Date: 2008-04-26'\n```\n\nI get the following coercion errors:\n\n\n```\nsage: vector(CDF, [2, 2]) * vector(ZZ, [1, 3])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/element.pyx in sage.structure.element.Vector.__mul__ (sage/structure/element.c:10413)()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5292)()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Ambient free module of rank 2 over the principal ideal domain Integer Ring'\nsage: vector(CDF, [2, 2]) * vector(QQ, [1, 3])\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/element.pyx in sage.structure.element.Vector.__mul__ (sage/structure/element.c:10413)()\n\n/Users/ncalexan/sage-3.0.1.alpha0/devel/sage-nca/sage/rings/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5292)()\n\n<type 'exceptions.TypeError'>: unsupported operand parent(s) for '*': 'Vector space of dimension 2 over Complex Double Field' and 'Vector space of dimension 2 over Rational Field'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3103\n\n",
     "created_at": "2008-05-05T04:12:05Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_003103.json:
     "title": "coercion errors of vectors from ZZ^2 and QQ^2 into CDF^2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3103",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan rbradshaw jason
+CC:  @ncalexan rbradshaw @jasongrout
 
 Keywords: vector CDF coerce
 
@@ -75,7 +75,7 @@ archive/issue_comments_021433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3103#issuecomment-21433",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_021434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3103#issuecomment-21434",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_021435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3103#issuecomment-21435",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_021437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3103#issuecomment-21437",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_021443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3103#issuecomment-21443",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_021444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3103#issuecomment-21444",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_021445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3103",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3103#issuecomment-21445",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

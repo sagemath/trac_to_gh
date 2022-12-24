@@ -3,7 +3,7 @@
 archive/issues_003622.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nWhen you create a symbolic expression and numerically integrate it, Sage should use\nthe fast_float framework to do this (a bazzilion times!) faster than it does right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3622\n\n",
+    "body": "Assignee: @robertwb\n\nWhen you create a symbolic expression and numerically integrate it, Sage should use\nthe fast_float framework to do this (a bazzilion times!) faster than it does right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3622\n\n",
     "created_at": "2008-07-09T00:35:13Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003622.json:
     "title": "numerical fast integration using fast float",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3622",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 When you create a symbolic expression and numerically integrate it, Sage should use
 the fast_float framework to do this (a bazzilion times!) faster than it does right now.
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3622
 archive/issue_comments_025598.json:
 ```json
 {
-    "body": "Attachment [3622-fast_float_integration.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.patch) by robertwb created at 2008-08-06 07:23:53",
+    "body": "Attachment [3622-fast_float_integration.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.patch) by @robertwb created at 2008-08-06 07:23:53",
     "created_at": "2008-08-06T07:23:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25598",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3622-fast_float_integration.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.patch) by robertwb created at 2008-08-06 07:23:53
+Attachment [3622-fast_float_integration.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.patch) by @robertwb created at 2008-08-06 07:23:53
 
 
 
@@ -56,7 +56,7 @@ archive/issue_comments_025599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25599",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_025600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25600",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_025601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25601",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -166,16 +166,16 @@ This is a duplicate of #2881, although maybe we should keep this version since i
 archive/issue_comments_025602.json:
 ```json
 {
-    "body": "Attachment [3622-fast_float_integration.2.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.2.patch) by robertwb created at 2008-09-02 03:40:30\n\nupdated",
+    "body": "Attachment [3622-fast_float_integration.2.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.2.patch) by @robertwb created at 2008-09-02 03:40:30\n\nupdated",
     "created_at": "2008-09-02T03:40:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25602",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3622-fast_float_integration.2.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.2.patch) by robertwb created at 2008-09-02 03:40:30
+Attachment [3622-fast_float_integration.2.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.2.patch) by @robertwb created at 2008-09-02 03:40:30
 
 updated
 
@@ -191,7 +191,7 @@ archive/issue_comments_025603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25603",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -204,16 +204,16 @@ one more optimization
 archive/issue_comments_025604.json:
 ```json
 {
-    "body": "Attachment [3622-fast_float_integration.3.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.3.patch) by robertwb created at 2008-09-02 03:54:32\n\nI added some more documentation to show that the old behavior is not lost. I also fixed it so constant functions work (that never worked before either, but it was an easy fix). \n\nFast float construction has been optimized in the meantime, so now it's always faster. \n\n\n```\nsage: f = lambda x: sin(x)^3 + sin(x)\nsage: timeit('numerical_integral(f, 0, pi)')\n625 loops, best of 3: 869 \u00b5s per loop\nsage: f = sin(x)^3 + sin(x)\nsage: timeit('numerical_integral(f, 0, pi)')\n5 loops, best of 3: 134 \u00b5s per loop\n```\n\n\n(Note that `timeit('numerical_integral(sin(x)^3 + sin(x),  0, pi)')` is a bit unfair because it constructs the symbolic expression every loop, but this isn't a typical use case anyways...)",
+    "body": "Attachment [3622-fast_float_integration.3.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.3.patch) by @robertwb created at 2008-09-02 03:54:32\n\nI added some more documentation to show that the old behavior is not lost. I also fixed it so constant functions work (that never worked before either, but it was an easy fix). \n\nFast float construction has been optimized in the meantime, so now it's always faster. \n\n\n```\nsage: f = lambda x: sin(x)^3 + sin(x)\nsage: timeit('numerical_integral(f, 0, pi)')\n625 loops, best of 3: 869 \u00b5s per loop\nsage: f = sin(x)^3 + sin(x)\nsage: timeit('numerical_integral(f, 0, pi)')\n5 loops, best of 3: 134 \u00b5s per loop\n```\n\n\n(Note that `timeit('numerical_integral(sin(x)^3 + sin(x),  0, pi)')` is a bit unfair because it constructs the symbolic expression every loop, but this isn't a typical use case anyways...)",
     "created_at": "2008-09-02T03:54:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25604",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3622-fast_float_integration.3.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.3.patch) by robertwb created at 2008-09-02 03:54:32
+Attachment [3622-fast_float_integration.3.patch](tarball://root/attachments/some-uuid/ticket3622/3622-fast_float_integration.3.patch) by @robertwb created at 2008-09-02 03:54:32
 
 I added some more documentation to show that the old behavior is not lost. I also fixed it so constant functions work (that never worked before either, but it was an easy fix). 
 
@@ -244,7 +244,7 @@ archive/issue_comments_025605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25605",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_025606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25606",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_025607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25607",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_025608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25608",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -369,7 +369,7 @@ archive/issue_comments_025609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25609",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_025610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25610",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -417,7 +417,7 @@ archive/issue_comments_025611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25611",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -435,7 +435,7 @@ archive/issue_comments_025612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3622#issuecomment-25612",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

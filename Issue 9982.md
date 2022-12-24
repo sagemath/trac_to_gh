@@ -3,7 +3,7 @@
 archive/issues_009982.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  chapoton\n\nUsing the following system: \n\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fair wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* DDS-4 tape drive \n\nboehm_gc-7.1.p6 fails to build properly on AIX. See attached log of the build. I'm not sure yet if this is an upstream problem on a Sage problem. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9983\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @fchapoton\n\nUsing the following system: \n\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fair wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* DDS-4 tape drive \n\nboehm_gc-7.1.p6 fails to build properly on AIX. See attached log of the build. I'm not sure yet if this is an upstream problem on a Sage problem. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9983\n\n",
     "created_at": "2010-09-23T20:26:50Z",
     "labels": [
         "porting: AIX or HP-UX",
@@ -19,7 +19,7 @@ archive/issues_009982.json:
 ```
 Assignee: drkirkby
 
-CC:  chapoton
+CC:  @fchapoton
 
 Using the following system: 
 
@@ -62,16 +62,16 @@ Log of a failed build on an RS/6000 running AIX 5.3
 archive/issue_comments_100314.json:
 ```json
 {
-    "body": "Attachment [boehm_gc-7.1.p6.log](tarball://root/attachments/some-uuid/ticket9983/boehm_gc-7.1.p6.log) by jmantysalo created at 2016-08-30 04:43:09\n\nEOL for AIX 5.3 was four years ago, and nobody seems to care about this ticket. So I suggest we close this as wontfix.",
+    "body": "Attachment [boehm_gc-7.1.p6.log](tarball://root/attachments/some-uuid/ticket9983/boehm_gc-7.1.p6.log) by @jm58660 created at 2016-08-30 04:43:09\n\nEOL for AIX 5.3 was four years ago, and nobody seems to care about this ticket. So I suggest we close this as wontfix.",
     "created_at": "2016-08-30T04:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9982#issuecomment-100314",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
-Attachment [boehm_gc-7.1.p6.log](tarball://root/attachments/some-uuid/ticket9983/boehm_gc-7.1.p6.log) by jmantysalo created at 2016-08-30 04:43:09
+Attachment [boehm_gc-7.1.p6.log](tarball://root/attachments/some-uuid/ticket9983/boehm_gc-7.1.p6.log) by @jm58660 created at 2016-08-30 04:43:09
 
 EOL for AIX 5.3 was four years ago, and nobody seems to care about this ticket. So I suggest we close this as wontfix.
 
@@ -87,7 +87,7 @@ archive/issue_comments_100315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9982#issuecomment-100315",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_100316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9982#issuecomment-100316",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_100317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9982#issuecomment-100317",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_100318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9982#issuecomment-100318",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_100319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9982#issuecomment-100319",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_100320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9982#issuecomment-100320",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

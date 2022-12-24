@@ -3,7 +3,7 @@
 archive/issues_005347.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  mhansen\n\n\n```\nsage: K = GF(7)\nsage: K(3).divides(1)\nFalse\nsage: K(3).divides(K(1))\nTraceback (most recent call last)\n...\nZeroDivisionError: reduction modulo right not defined.\n```\n\n\nThis is because of this code added at http://hg.sagemath.org/sage-main/rev/0cb746e1a4bd\n\n\n```\ndef divides(self, x):\n    return (x % self) == 0\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5347\n\n",
+    "body": "Assignee: somebody\n\nCC:  @mwhansen\n\n\n```\nsage: K = GF(7)\nsage: K(3).divides(1)\nFalse\nsage: K(3).divides(K(1))\nTraceback (most recent call last)\n...\nZeroDivisionError: reduction modulo right not defined.\n```\n\n\nThis is because of this code added at http://hg.sagemath.org/sage-main/rev/0cb746e1a4bd\n\n\n```\ndef divides(self, x):\n    return (x % self) == 0\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5347\n\n",
     "created_at": "2009-02-23T08:21:33Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_005347.json:
     "title": "divides() may fail for 1 on the rhs.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5347",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
 
-CC:  mhansen
+CC:  @mwhansen
 
 
 ```
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5347
 archive/issue_comments_041200.json:
 ```json
 {
-    "body": "Attachment [trac_5347-divides.patch](tarball://root/attachments/some-uuid/ticket5347/trac_5347-divides.patch) by cremona created at 2009-08-30 17:43:24\n\nApplies to 4.1.1",
+    "body": "Attachment [trac_5347-divides.patch](tarball://root/attachments/some-uuid/ticket5347/trac_5347-divides.patch) by @JohnCremona created at 2009-08-30 17:43:24\n\nApplies to 4.1.1",
     "created_at": "2009-08-30T17:43:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5347#issuecomment-41200",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5347-divides.patch](tarball://root/attachments/some-uuid/ticket5347/trac_5347-divides.patch) by cremona created at 2009-08-30 17:43:24
+Attachment [trac_5347-divides.patch](tarball://root/attachments/some-uuid/ticket5347/trac_5347-divides.patch) by @JohnCremona created at 2009-08-30 17:43:24
 
 Applies to 4.1.1
 
@@ -79,7 +79,7 @@ archive/issue_comments_041201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5347#issuecomment-41201",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_041202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5347#issuecomment-41202",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_041203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5347",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5347#issuecomment-41203",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

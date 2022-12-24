@@ -14,7 +14,7 @@ archive/issues_009495.json:
     "title": "Incomplete plot of EllipticCurve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9495",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: jason, was

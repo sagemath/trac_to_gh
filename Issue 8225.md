@@ -3,7 +3,7 @@
 archive/issues_008225.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\n\nOn Tue, Feb 9, 2010 at 1:22 PM, finotti <luis.finotti@gmail.com> wrote:\n> Dear all,\n>\n> Cells starting with \"%time\" stopped working with 4.3.2.  (It works\n> with 4.3.1.)  Is it no long supported or is it a bug? (time still\n> works with the command line.)\n>\n> Running on Linux 32-bit, ubuntu binary.\n>\n> Thanks,\n```\n\nWow, what a horrible, horrible regression!   Indeed, I've confirmed that what happens is that doing %time causes the notebook to hang forever, and be pretty broken thereafter.   Ouch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8225\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Tue, Feb 9, 2010 at 1:22 PM, finotti <luis.finotti@gmail.com> wrote:\n> Dear all,\n>\n> Cells starting with \"%time\" stopped working with 4.3.2.  (It works\n> with 4.3.1.)  Is it no long supported or is it a bug? (time still\n> works with the command line.)\n>\n> Running on Linux 32-bit, ubuntu binary.\n>\n> Thanks,\n```\n\nWow, what a horrible, horrible regression!   Indeed, I've confirmed that what happens is that doing %time causes the notebook to hang forever, and be pretty broken thereafter.   Ouch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8225\n\n",
     "created_at": "2010-02-10T01:39:34Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_008225.json:
     "title": "%time now hugely broken in sagenb-0.7.4 (sage-4.3.2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8225",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8225
 archive/issue_comments_072628.json:
 ```json
 {
-    "body": "Attachment [trac_8225-timeit_notebook.patch](tarball://root/attachments/some-uuid/ticket8225/trac_8225-timeit_notebook.patch) by mpatel created at 2010-02-14 03:22:26\n\nFix `%time` and `%timeit`.  sagenb repo.",
+    "body": "Attachment [trac_8225-timeit_notebook.patch](tarball://root/attachments/some-uuid/ticket8225/trac_8225-timeit_notebook.patch) by @qed777 created at 2010-02-14 03:22:26\n\nFix `%time` and `%timeit`.  sagenb repo.",
     "created_at": "2010-02-14T03:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8225#issuecomment-72628",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8225-timeit_notebook.patch](tarball://root/attachments/some-uuid/ticket8225/trac_8225-timeit_notebook.patch) by mpatel created at 2010-02-14 03:22:26
+Attachment [trac_8225-timeit_notebook.patch](tarball://root/attachments/some-uuid/ticket8225/trac_8225-timeit_notebook.patch) by @qed777 created at 2010-02-14 03:22:26
 
 Fix `%time` and `%timeit`.  sagenb repo.
 
@@ -73,7 +73,7 @@ archive/issue_comments_072629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8225#issuecomment-72629",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_072630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8225#issuecomment-72630",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_072631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8225#issuecomment-72631",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_072632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8225#issuecomment-72632",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -142,16 +142,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_072633.json:
 ```json
 {
-    "body": "Remove assignee was.",
+    "body": "Remove assignee @williamstein.",
     "created_at": "2010-03-07T00:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8225#issuecomment-72633",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Remove assignee was.
+Remove assignee @williamstein.
 
 
 
@@ -165,7 +165,7 @@ archive/issue_comments_072634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8225#issuecomment-72634",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

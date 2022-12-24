@@ -59,7 +59,7 @@ archive/issue_comments_026078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3682#issuecomment-26078",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -72,16 +72,16 @@ I think we should mark this as invalid.
 archive/issue_comments_026079.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-19T22:34:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3682#issuecomment-26079",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -95,7 +95,7 @@ archive/issue_comments_026080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3682#issuecomment-26080",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_026081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3682#issuecomment-26081",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_026082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3682",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3682#issuecomment-26082",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

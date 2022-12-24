@@ -3,7 +3,7 @@
 archive/issues_008652.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  leif\n\nI got this bug/traceback today by making a file grader.py and a file grader.sage (their content doesn't matter).  \n\n\n```\nsage: import grader\nsage: load grader.sage\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/edu/2010/480/grading/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage/local/lib/python2.6/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\n   1487             return\n   1488         \n-> 1489     filename = filename.strip()\n   1490     \n   1491     if filename.lower().startswith('http://'):\n\nAttributeError: 'module' object has no attribute 'strip'\nsage: \n```\n\n\nThe above bug is the fault of the rewrite *I* did of load and attach, so is my fault. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8652\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nexttime\n\nI got this bug/traceback today by making a file grader.py and a file grader.sage (their content doesn't matter).  \n\n\n```\nsage: import grader\nsage: load grader.sage\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/edu/2010/480/grading/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage/local/lib/python2.6/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\n   1487             return\n   1488         \n-> 1489     filename = filename.strip()\n   1490     \n   1491     if filename.lower().startswith('http://'):\n\nAttributeError: 'module' object has no attribute 'strip'\nsage: \n```\n\n\nThe above bug is the fault of the rewrite *I* did of load and attach, so is my fault. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8652\n\n",
     "created_at": "2010-04-06T05:25:31Z",
     "labels": [
         "user interface",
@@ -14,12 +14,12 @@ archive/issues_008652.json:
     "title": "load uses \"strip\" on non-strings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8652",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  leif
+CC:  @nexttime
 
 I got this bug/traceback today by making a file grader.py and a file grader.sage (their content doesn't matter).  
 
@@ -62,7 +62,7 @@ archive/issue_comments_078503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78503",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_078504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78504",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_078505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78505",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_078506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78506",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_078507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78507",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_078508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78508",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_078509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78509",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

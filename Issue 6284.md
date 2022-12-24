@@ -14,7 +14,7 @@ archive/issues_006284.json:
     "title": "fix the numerous broken optional magma doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6284",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -218,7 +218,7 @@ archive/issue_comments_050183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6284#issuecomment-50183",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_050184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6284#issuecomment-50184",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

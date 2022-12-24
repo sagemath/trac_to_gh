@@ -3,7 +3,7 @@
 archive/issues_005360.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  mhansen\n\nKeywords: sphinx transform.\n\n## File: sage/server/introspect.py\n\n* Some pairs of single quote are transformed to double quote\n\n```\n- sage: nb.add_user('Mark','password','',force=True) \n+ sage: nb.add_user('Mark','password',\",force=True)\n```\n\n\n```\n- sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', '', W) \n+ sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', \", W) \n```\n\nIt looks like a bad Idea...\n\nI probably miss some so that a systematic replace `,\",` by `,'',` should solve the problem.    \n\n\n* Also in edit_text. the transformation\n\n```\nReturns a plain-text version of the worksheet with \\{\\{\\{\\}\\}\\} wiki-formatting,\n```\n\ninto \n\n```\nReturns a plain-text version of the worksheet with `` \n```\n\nlooks suspicious to me. \n\n* function edit_save: lost ` {{{` }}}:\n\n```\nignore_ids -- bool (default: False); if True ignore all the \n              id's in the `` code block. \n```\n\nis now:\n\n```\n-  ``ignore_ids`` - bool (default: False); if True \n   ignore all the id's in the code block. \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5360\n\n",
+    "body": "Assignee: tba\n\nCC:  @mwhansen\n\nKeywords: sphinx transform.\n\n## File: sage/server/introspect.py\n\n* Some pairs of single quote are transformed to double quote\n\n```\n- sage: nb.add_user('Mark','password','',force=True) \n+ sage: nb.add_user('Mark','password',\",force=True)\n```\n\n\n```\n- sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', '', W) \n+ sage: C = sage.server.notebook.cell.Cell(0, 'plot(sin(x),0,5)', \", W) \n```\n\nIt looks like a bad Idea...\n\nI probably miss some so that a systematic replace `,\",` by `,'',` should solve the problem.    \n\n\n* Also in edit_text. the transformation\n\n```\nReturns a plain-text version of the worksheet with \\{\\{\\{\\}\\}\\} wiki-formatting,\n```\n\ninto \n\n```\nReturns a plain-text version of the worksheet with `` \n```\n\nlooks suspicious to me. \n\n* function edit_save: lost ` {{{` }}}:\n\n```\nignore_ids -- bool (default: False); if True ignore all the \n              id's in the `` code block. \n```\n\nis now:\n\n```\n-  ``ignore_ids`` - bool (default: False); if True \n   ignore all the id's in the code block. \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5360\n\n",
     "created_at": "2009-02-24T18:09:05Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_005360.json:
     "title": "Redeading of #4927 convert sage.server.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5360",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: tba
 
-CC:  mhansen
+CC:  @mwhansen
 
 Keywords: sphinx transform.
 
@@ -111,7 +111,7 @@ archive/issue_comments_041299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5360#issuecomment-41299",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -131,16 +131,16 @@ sage.server.notebook.notebook.Notebook.import_worksheet?
 archive/issue_comments_041300.json:
 ```json
 {
-    "body": "Attachment [trac_5360-sage_server_docstrings.patch](tarball://root/attachments/some-uuid/ticket5360/trac_5360-sage_server_docstrings.patch) by mpatel created at 2009-08-10 10:16:36",
+    "body": "Attachment [trac_5360-sage_server_docstrings.patch](tarball://root/attachments/some-uuid/ticket5360/trac_5360-sage_server_docstrings.patch) by @qed777 created at 2009-08-10 10:16:36",
     "created_at": "2009-08-10T10:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5360#issuecomment-41300",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5360-sage_server_docstrings.patch](tarball://root/attachments/some-uuid/ticket5360/trac_5360-sage_server_docstrings.patch) by mpatel created at 2009-08-10 10:16:36
+Attachment [trac_5360-sage_server_docstrings.patch](tarball://root/attachments/some-uuid/ticket5360/trac_5360-sage_server_docstrings.patch) by @qed777 created at 2009-08-10 10:16:36
 
 
 
@@ -154,7 +154,7 @@ archive/issue_comments_041301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5360#issuecomment-41301",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -178,16 +178,16 @@ Feel free to make further changes.
 archive/issue_comments_041302.json:
 ```json
 {
-    "body": "Attachment [trac_5360-sage_server_docstrings_v2.patch](tarball://root/attachments/some-uuid/ticket5360/trac_5360-sage_server_docstrings_v2.patch) by mpatel created at 2009-08-10 13:58:45\n\nNew version.  Apply only this patch.",
+    "body": "Attachment [trac_5360-sage_server_docstrings_v2.patch](tarball://root/attachments/some-uuid/ticket5360/trac_5360-sage_server_docstrings_v2.patch) by @qed777 created at 2009-08-10 13:58:45\n\nNew version.  Apply only this patch.",
     "created_at": "2009-08-10T13:58:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5360#issuecomment-41302",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_5360-sage_server_docstrings_v2.patch](tarball://root/attachments/some-uuid/ticket5360/trac_5360-sage_server_docstrings_v2.patch) by mpatel created at 2009-08-10 13:58:45
+Attachment [trac_5360-sage_server_docstrings_v2.patch](tarball://root/attachments/some-uuid/ticket5360/trac_5360-sage_server_docstrings_v2.patch) by @qed777 created at 2009-08-10 13:58:45
 
 New version.  Apply only this patch.
 
@@ -203,7 +203,7 @@ archive/issue_comments_041303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5360#issuecomment-41303",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_041304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5360#issuecomment-41304",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_041305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5360#issuecomment-41305",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_041306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5360#issuecomment-41306",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

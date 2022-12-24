@@ -3,7 +3,7 @@
 archive/issues_006709.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net dimpase\n\nI'll post a couple of logs later, but thought I'd create a ticket for this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6709\n\n",
+    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net @dimpase\n\nI'll post a couple of logs later, but thought I'd create a ticket for this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6709\n\n",
     "created_at": "2009-08-09T10:24:07Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_006709.json:
 ```
 Assignee: tbd
 
-CC:  david.kirkby@onetel.net dimpase
+CC:  david.kirkby@onetel.net @dimpase
 
 I'll post a couple of logs later, but thought I'd create a ticket for this. 
 
@@ -154,7 +154,7 @@ archive/issue_comments_055092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6709#issuecomment-55092",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_055093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6709#issuecomment-55093",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_055094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6709#issuecomment-55094",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_055095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6709#issuecomment-55095",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_055096.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6709#issuecomment-55096",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_055097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6709#issuecomment-55097",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

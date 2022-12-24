@@ -3,7 +3,7 @@
 archive/issues_002765.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis fixes a bug in determining the canonical label of different permutations of the Hoffman-Singleton graph. As such, the constructor is included to make for a nice doctest. This bug was discovered by Godsil.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2765\n\n",
+    "body": "Assignee: @rlmill\n\nThis fixes a bug in determining the canonical label of different permutations of the Hoffman-Singleton graph. As such, the constructor is included to make for a nice doctest. This bug was discovered by Godsil.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2765\n\n",
     "created_at": "2008-04-01T22:53:37Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002765.json:
     "title": "[with patch, needs review] bug in graph_isom, Hoffman-Singleton constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2765",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This fixes a bug in determining the canonical label of different permutations of the Hoffman-Singleton graph. As such, the constructor is included to make for a nice doctest. This bug was discovered by Godsil.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2765
 archive/issue_comments_018990.json:
 ```json
 {
-    "body": "Attachment [2765-graph_isom_bug_and_HS.patch](tarball://root/attachments/some-uuid/ticket2765/2765-graph_isom_bug_and_HS.patch) by rlm created at 2008-04-02 07:06:06",
+    "body": "Attachment [2765-graph_isom_bug_and_HS.patch](tarball://root/attachments/some-uuid/ticket2765/2765-graph_isom_bug_and_HS.patch) by @rlmill created at 2008-04-02 07:06:06",
     "created_at": "2008-04-02T07:06:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2765#issuecomment-18990",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [2765-graph_isom_bug_and_HS.patch](tarball://root/attachments/some-uuid/ticket2765/2765-graph_isom_bug_and_HS.patch) by rlm created at 2008-04-02 07:06:06
+Attachment [2765-graph_isom_bug_and_HS.patch](tarball://root/attachments/some-uuid/ticket2765/2765-graph_isom_bug_and_HS.patch) by @rlmill created at 2008-04-02 07:06:06
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_018991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2765#issuecomment-18991",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_018992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2765",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2765#issuecomment-18992",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

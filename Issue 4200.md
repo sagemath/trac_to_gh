@@ -14,7 +14,7 @@ archive/issues_004200.json:
     "title": "Update numpy to 1.2.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4200",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -40,7 +40,7 @@ archive/issue_comments_030477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4200",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4200#issuecomment-30477",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

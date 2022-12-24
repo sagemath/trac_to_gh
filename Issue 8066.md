@@ -14,7 +14,7 @@ archive/issues_008066.json:
     "title": "New libgpg_error-1.6.p3.spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8066",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -44,7 +44,7 @@ archive/issue_comments_070685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8066#issuecomment-70685",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -117,16 +117,16 @@ I would also put the ticket number you are fixing in SPKG.txt. You should create
 archive/issue_comments_070689.json:
 ```json
 {
-    "body": "Attachment [libgpg_error-1.6.p3+.patch](tarball://root/attachments/some-uuid/ticket8066/libgpg_error-1.6.p3+.patch) by jsp created at 2010-01-27 13:37:51",
+    "body": "Attachment [libgpg_error-1.6.p3+.patch](tarball://root/attachments/some-uuid/ticket8066/libgpg_error-1.6.p3+.patch) by @jaapspies created at 2010-01-27 13:37:51",
     "created_at": "2010-01-27T13:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8066#issuecomment-70689",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [libgpg_error-1.6.p3+.patch](tarball://root/attachments/some-uuid/ticket8066/libgpg_error-1.6.p3+.patch) by jsp created at 2010-01-27 13:37:51
+Attachment [libgpg_error-1.6.p3+.patch](tarball://root/attachments/some-uuid/ticket8066/libgpg_error-1.6.p3+.patch) by @jaapspies created at 2010-01-27 13:37:51
 
 
 
@@ -140,7 +140,7 @@ archive/issue_comments_070690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8066#issuecomment-70690",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_070691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8066#issuecomment-70691",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_070694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8066",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8066#issuecomment-70694",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

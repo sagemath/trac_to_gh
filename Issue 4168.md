@@ -14,7 +14,7 @@ archive/issues_004168.json:
     "title": "native mpfr polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4168",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -61,7 +61,7 @@ archive/issue_comments_030253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4168#issuecomment-30253",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -76,16 +76,16 @@ If no one else gets around to this, eventually I will. The code is there, it's j
 archive/issue_comments_030254.json:
 ```json
 {
-    "body": "Attachment [4168-RRx.patch](tarball://root/attachments/some-uuid/ticket4168/4168-RRx.patch) by robertwb created at 2008-10-31 17:54:54\n\nOK, I did this yesterday during bug days. Ran all tests and fixed a bit of numerical noise this morning.",
+    "body": "Attachment [4168-RRx.patch](tarball://root/attachments/some-uuid/ticket4168/4168-RRx.patch) by @robertwb created at 2008-10-31 17:54:54\n\nOK, I did this yesterday during bug days. Ran all tests and fixed a bit of numerical noise this morning.",
     "created_at": "2008-10-31T17:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4168#issuecomment-30254",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4168-RRx.patch](tarball://root/attachments/some-uuid/ticket4168/4168-RRx.patch) by robertwb created at 2008-10-31 17:54:54
+Attachment [4168-RRx.patch](tarball://root/attachments/some-uuid/ticket4168/4168-RRx.patch) by @robertwb created at 2008-10-31 17:54:54
 
 OK, I did this yesterday during bug days. Ran all tests and fixed a bit of numerical noise this morning.
 
@@ -101,7 +101,7 @@ archive/issue_comments_030255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4168#issuecomment-30255",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

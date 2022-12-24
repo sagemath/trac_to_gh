@@ -14,7 +14,7 @@ archive/issues_003770.json:
     "title": "multiple copies of dsage_setup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3770",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff

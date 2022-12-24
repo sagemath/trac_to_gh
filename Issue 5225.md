@@ -3,7 +3,7 @@
 archive/issues_005225.json:
 ```json
 {
-    "body": "Assignee: malb\n\nNormally, Sage tries to allow explicit conversions between arbitrary polynomial rings, if they share the same variable names.\n\nHere's a case where that doesn't work:\n\n```\nR.<a,b,c,d,e,f,x,y,z,t,s,r>=PolynomialRing(QQ,12,order='lex')\nI=R.ideal(a^2+d^2-x,a*b+d*e-y,a*c+d*f-z,b^2+e^2-t,b*c+e*f-s,c*c+f*f-r)\nj=I.groebner_basis()\nR1.<x,y,z,t,s,r>=QQ[]\nR2=FractionField(R1)\nR3.<a,b,c,d,e,f>=R1.fraction_field()[]\nR3(j[0])\n```\n\n\nFor now, the workaround is:\n\n```\n sage_eval(str(j[0]), locals=locals())\n```\n\nbut IMHO the original code should work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5225\n\n",
+    "body": "Assignee: @malb\n\nNormally, Sage tries to allow explicit conversions between arbitrary polynomial rings, if they share the same variable names.\n\nHere's a case where that doesn't work:\n\n```\nR.<a,b,c,d,e,f,x,y,z,t,s,r>=PolynomialRing(QQ,12,order='lex')\nI=R.ideal(a^2+d^2-x,a*b+d*e-y,a*c+d*f-z,b^2+e^2-t,b*c+e*f-s,c*c+f*f-r)\nj=I.groebner_basis()\nR1.<x,y,z,t,s,r>=QQ[]\nR2=FractionField(R1)\nR3.<a,b,c,d,e,f>=R1.fraction_field()[]\nR3(j[0])\n```\n\n\nFor now, the workaround is:\n\n```\n sage_eval(str(j[0]), locals=locals())\n```\n\nbut IMHO the original code should work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5225\n\n",
     "created_at": "2009-02-09T22:14:57Z",
     "labels": [
         "commutative algebra",
@@ -17,7 +17,7 @@ archive/issues_005225.json:
     "user": "cwitty"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Normally, Sage tries to allow explicit conversions between arbitrary polynomial rings, if they share the same variable names.
 
@@ -58,7 +58,7 @@ archive/issue_comments_040042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5225#issuecomment-40042",
-    "user": "bruno"
+    "user": "@bgrenet"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_040043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5225#issuecomment-40043",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_040044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5225#issuecomment-40044",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_040045.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5225#issuecomment-40045",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_040046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5225#issuecomment-40046",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006879.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  jcooley\n\nKeywords: elliptic curve\n\nExample:\n\n```\nsage: E = EllipticCurve(QQbar,[1,0])\nsage: E.base_field()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/jec/sage/isog50.py in <module>()\n\nAttributeError: 'EllipticCurve_generic' object has no attribute 'base_field'\n```\n\n\nThis is because the curve constructed is an ell_generic and not an ell_field, despite {{{QQbar.is_field()}} returning True.\n\nSimilarly with RR and CC in place of QQbar.\n\nAll that is required is a two-line addition around line 213 of elliptic_curves/constructor.py.\n\nPatch up soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6879\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  jcooley\n\nKeywords: elliptic curve\n\nExample:\n\n```\nsage: E = EllipticCurve(QQbar,[1,0])\nsage: E.base_field()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/jec/sage/isog50.py in <module>()\n\nAttributeError: 'EllipticCurve_generic' object has no attribute 'base_field'\n```\n\n\nThis is because the curve constructed is an ell_generic and not an ell_field, despite {{{QQbar.is_field()}} returning True.\n\nSimilarly with RR and CC in place of QQbar.\n\nAll that is required is a two-line addition around line 213 of elliptic_curves/constructor.py.\n\nPatch up soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6879\n\n",
     "created_at": "2009-09-03T16:24:13Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_006879.json:
     "title": "Elliptic curve constructor does not check if the base is a field properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6879",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 CC:  jcooley
 
@@ -56,16 +56,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6879
 archive/issue_comments_056785.json:
 ```json
 {
-    "body": "Attachment [trac_6879-ell_field.patch](tarball://root/attachments/some-uuid/ticket6879/trac_6879-ell_field.patch) by cremona created at 2009-09-03 16:45:34\n\nApplies to 4.1.1",
+    "body": "Attachment [trac_6879-ell_field.patch](tarball://root/attachments/some-uuid/ticket6879/trac_6879-ell_field.patch) by @JohnCremona created at 2009-09-03 16:45:34\n\nApplies to 4.1.1",
     "created_at": "2009-09-03T16:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6879#issuecomment-56785",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6879-ell_field.patch](tarball://root/attachments/some-uuid/ticket6879/trac_6879-ell_field.patch) by cremona created at 2009-09-03 16:45:34
+Attachment [trac_6879-ell_field.patch](tarball://root/attachments/some-uuid/ticket6879/trac_6879-ell_field.patch) by @JohnCremona created at 2009-09-03 16:45:34
 
 Applies to 4.1.1
 
@@ -81,7 +81,7 @@ archive/issue_comments_056786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6879#issuecomment-56786",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_056787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6879",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6879#issuecomment-56787",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

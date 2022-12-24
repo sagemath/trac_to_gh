@@ -3,7 +3,7 @@
 archive/issues_009644.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCC:  kcrisman leif ddrake schilly mvngu\n\nReported by Dan on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/3694601bc3de1a80):\n\n```\nThis is an observation about the pre-compiled binaries for Mac OS.\n\nIf the (unpacked) sage disk image directory is saved in a folder that has a\nspace character in its name, for example:\n\n$HOME/Applications/my folder\n\nThen sage will not load properly when the \"sage\" executable is clicked. The\nterminal session begins, but the application doesn't load successfully.\n\nChanging the parent directory name to \"my_folder\" resolved this issue.\n\nWhile using space characters in directory names probably isn't all that common\nin UNIX or Linux installations, it is more common in Mac OS installations.\nPerhaps the installation instructions could be updated to mention this issue? \n```\n\n\nThis actually appears to be a more general problem:\n\n```sh\n$ hostname\nsage.math.washington.edu\n$ pwd\n/mnt/usb1/scratch/mpatel/tmp/my sage\n$ ./sage\nError setting environment variables by running /mnt/usb1/scratch/mpatel/tmp/my sage/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel).\ncat: /bin/sage-banner: No such file or directory\nmkdir: cannot create directory `': No such file or directory\ncp: cannot create directory `/ipython': Permission denied\nTraceback (most recent call last):\n  File \"./sage-cleaner\", line 25, in <module>\n    DOT_SAGE = os.environ['DOT_SAGE']\n  File \"/mnt/usb1/scratch/mpatel/tmp/my sage/local/lib/python2.6/UserDict.py\", line 22, in __getitem__\n    raise KeyError(key)\nKeyError: 'DOT_SAGE'\n**********************************************************************\nWelcome to IPython. I will try to create a personal configuration directory\nwhere you can customize many aspects of IPython's functionality in:\n\n/ipython\nInitializing from configuration /mnt/usb1/scratch/mpatel/tmp/my sage/local/lib/python2.6/site-packages/IPython/UserConfig\nWARNING: \n\nThere was a problem with the installation:\n[Errno 13] Permission denied: '/ipython'\nTry to correct it or contact the developers if you think it's a bug.\nIPython will proceed with builtin defaults.\nPlease press <RETURN> to start IPython.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9644\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @kcrisman @nexttime @dandrake @haraldschilly mvngu\n\nReported by Dan on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/3694601bc3de1a80):\n\n```\nThis is an observation about the pre-compiled binaries for Mac OS.\n\nIf the (unpacked) sage disk image directory is saved in a folder that has a\nspace character in its name, for example:\n\n$HOME/Applications/my folder\n\nThen sage will not load properly when the \"sage\" executable is clicked. The\nterminal session begins, but the application doesn't load successfully.\n\nChanging the parent directory name to \"my_folder\" resolved this issue.\n\nWhile using space characters in directory names probably isn't all that common\nin UNIX or Linux installations, it is more common in Mac OS installations.\nPerhaps the installation instructions could be updated to mention this issue? \n```\n\n\nThis actually appears to be a more general problem:\n\n```sh\n$ hostname\nsage.math.washington.edu\n$ pwd\n/mnt/usb1/scratch/mpatel/tmp/my sage\n$ ./sage\nError setting environment variables by running /mnt/usb1/scratch/mpatel/tmp/my sage/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel).\ncat: /bin/sage-banner: No such file or directory\nmkdir: cannot create directory `': No such file or directory\ncp: cannot create directory `/ipython': Permission denied\nTraceback (most recent call last):\n  File \"./sage-cleaner\", line 25, in <module>\n    DOT_SAGE = os.environ['DOT_SAGE']\n  File \"/mnt/usb1/scratch/mpatel/tmp/my sage/local/lib/python2.6/UserDict.py\", line 22, in __getitem__\n    raise KeyError(key)\nKeyError: 'DOT_SAGE'\n**********************************************************************\nWelcome to IPython. I will try to create a personal configuration directory\nwhere you can customize many aspects of IPython's functionality in:\n\n/ipython\nInitializing from configuration /mnt/usb1/scratch/mpatel/tmp/my sage/local/lib/python2.6/site-packages/IPython/UserConfig\nWARNING: \n\nThere was a problem with the installation:\n[Errno 13] Permission denied: '/ipython'\nTry to correct it or contact the developers if you think it's a bug.\nIPython will proceed with builtin defaults.\nPlease press <RETURN> to start IPython.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9644\n\n",
     "created_at": "2010-07-30T01:15:46Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_009644.json:
     "title": "Make Sage run even when $SAGE_ROOT contains spaces",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9644",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
-CC:  kcrisman leif ddrake schilly mvngu
+CC:  @kcrisman @nexttime @dandrake @haraldschilly mvngu
 
 Reported by Dan on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/3694601bc3de1a80):
 
@@ -92,7 +92,7 @@ archive/issue_comments_093477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93477",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_093478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93478",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_093479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93479",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_093480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93480",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_093481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93481",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_093482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93482",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_093483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93483",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_093485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93485",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -401,16 +401,16 @@ Gives error message on spaces in $SAGE_ROOT. (Draft, but functional. Slightly mo
 archive/issue_comments_093486.json:
 ```json
 {
-    "body": "Attachment [trac_9644-first_aid_for_spaces_in_SAGE_ROOT-scripts_repo.patch](tarball://root/attachments/some-uuid/ticket9644/trac_9644-first_aid_for_spaces_in_SAGE_ROOT-scripts_repo.patch) by leif created at 2010-07-30 14:36:07\n\nWe could require people who update/provide new spkgs to at least check if the upstream supports spaces in path names (I really doubt all will), and to harden the corresponding Sage scripts in that way. But I expect this to be a long lasting process, rather than a goal for any release in the nearer future.\n\nAnd I have absolutely no idea which \"inner\" parts of Sage (i.e. Python code) might break on spaces in file or path names.\n\nOf course users that only download and install binaries should somehow get informed, too, e.g. directly on the download page.",
+    "body": "Attachment [trac_9644-first_aid_for_spaces_in_SAGE_ROOT-scripts_repo.patch](tarball://root/attachments/some-uuid/ticket9644/trac_9644-first_aid_for_spaces_in_SAGE_ROOT-scripts_repo.patch) by @nexttime created at 2010-07-30 14:36:07\n\nWe could require people who update/provide new spkgs to at least check if the upstream supports spaces in path names (I really doubt all will), and to harden the corresponding Sage scripts in that way. But I expect this to be a long lasting process, rather than a goal for any release in the nearer future.\n\nAnd I have absolutely no idea which \"inner\" parts of Sage (i.e. Python code) might break on spaces in file or path names.\n\nOf course users that only download and install binaries should somehow get informed, too, e.g. directly on the download page.",
     "created_at": "2010-07-30T14:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93486",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9644-first_aid_for_spaces_in_SAGE_ROOT-scripts_repo.patch](tarball://root/attachments/some-uuid/ticket9644/trac_9644-first_aid_for_spaces_in_SAGE_ROOT-scripts_repo.patch) by leif created at 2010-07-30 14:36:07
+Attachment [trac_9644-first_aid_for_spaces_in_SAGE_ROOT-scripts_repo.patch](tarball://root/attachments/some-uuid/ticket9644/trac_9644-first_aid_for_spaces_in_SAGE_ROOT-scripts_repo.patch) by @nexttime created at 2010-07-30 14:36:07
 
 We could require people who update/provide new spkgs to at least check if the upstream supports spaces in path names (I really doubt all will), and to harden the corresponding Sage scripts in that way. But I expect this to be a long lasting process, rather than a goal for any release in the nearer future.
 
@@ -430,7 +430,7 @@ archive/issue_comments_093487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93487",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_093488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93488",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_093489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93489",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_093490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93490",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_093491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93491",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -545,7 +545,7 @@ archive/issue_comments_093492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93492",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_093493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93493",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_093494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93494",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -610,7 +610,7 @@ archive/issue_comments_093495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93495",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -630,7 +630,7 @@ archive/issue_comments_093496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93496",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -684,7 +684,7 @@ archive/issue_comments_093499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93499",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -702,7 +702,7 @@ archive/issue_comments_093500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93500",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -723,7 +723,7 @@ archive/issue_comments_093501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93501",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -741,7 +741,7 @@ archive/issue_comments_093502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93502",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -759,7 +759,7 @@ archive/issue_comments_093503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93503",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_093504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93504",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -833,7 +833,7 @@ archive/issue_comments_093505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93505",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -851,7 +851,7 @@ archive/issue_comments_093506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93506",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -939,7 +939,7 @@ archive/issue_comments_093509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93509",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -966,7 +966,7 @@ archive/issue_comments_093510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93510",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -984,7 +984,7 @@ archive/issue_comments_093511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93511",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -997,16 +997,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_093512.json:
 ```json
 {
-    "body": "Attachment [trac_9644-scripts-ref.patch](tarball://root/attachments/some-uuid/ticket9644/trac_9644-scripts-ref.patch) by jhpalmieri created at 2010-09-29 16:47:43\n\napply on top of other scripts patch",
+    "body": "Attachment [trac_9644-scripts-ref.patch](tarball://root/attachments/some-uuid/ticket9644/trac_9644-scripts-ref.patch) by @jhpalmieri created at 2010-09-29 16:47:43\n\napply on top of other scripts patch",
     "created_at": "2010-09-29T16:47:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93512",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9644-scripts-ref.patch](tarball://root/attachments/some-uuid/ticket9644/trac_9644-scripts-ref.patch) by jhpalmieri created at 2010-09-29 16:47:43
+Attachment [trac_9644-scripts-ref.patch](tarball://root/attachments/some-uuid/ticket9644/trac_9644-scripts-ref.patch) by @jhpalmieri created at 2010-09-29 16:47:43
 
 apply on top of other scripts patch
 
@@ -1022,7 +1022,7 @@ archive/issue_comments_093513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93513",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1040,7 +1040,7 @@ archive/issue_comments_093514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93514",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1058,7 +1058,7 @@ archive/issue_comments_093515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93515",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1076,7 +1076,7 @@ archive/issue_comments_093516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93516",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1094,7 +1094,7 @@ archive/issue_comments_093517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93517",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1114,7 +1114,7 @@ archive/issue_comments_093518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9644",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9644#issuecomment-93518",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

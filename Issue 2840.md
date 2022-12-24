@@ -14,7 +14,7 @@ archive/issues_002840.json:
     "title": "notebook -- remove ALL unused javascript from js.py and DOCUMENT every single function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2840",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2840
 archive/issue_comments_019480.json:
 ```json
 {
-    "body": "Attachment [sage-2840.patch](tarball://root/attachments/some-uuid/ticket2840/sage-2840.patch) by was created at 2008-04-07 08:01:10",
+    "body": "Attachment [sage-2840.patch](tarball://root/attachments/some-uuid/ticket2840/sage-2840.patch) by @williamstein created at 2008-04-07 08:01:10",
     "created_at": "2008-04-07T08:01:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19480",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2840.patch](tarball://root/attachments/some-uuid/ticket2840/sage-2840.patch) by was created at 2008-04-07 08:01:10
+Attachment [sage-2840.patch](tarball://root/attachments/some-uuid/ticket2840/sage-2840.patch) by @williamstein created at 2008-04-07 08:01:10
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_019481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19481",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_019482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19482",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_019483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19483",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_019485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2840",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19485",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

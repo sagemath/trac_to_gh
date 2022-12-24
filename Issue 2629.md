@@ -3,7 +3,7 @@
 archive/issues_002629.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jhpalmieri\n\nWhen working on a notebook, one tends to end up at the bottom of browser window in the final cell.   However: \n\na) If you evaluate this final cell, a new input cell is created, but it is frequently at least partially off-screen and you have to scroll down to get to it.  Currently, window scrolls to accommodate the output of the evaluation, and so should scroll a little more to make the new input cell fully visible.\n\nb) If you do a tab completion or ?-query in the final cell, the output often is partially of screen.   In bad cases, the output is completely off screen and this is very confusing the to user since the program appears to be not responding to their input.   This could be solved either by having the window scroll or having the box appear above the input cell in this instance, though the latter behavior is probably only appropriate for tab completion.  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2629\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jhpalmieri\n\nWhen working on a notebook, one tends to end up at the bottom of browser window in the final cell.   However: \n\na) If you evaluate this final cell, a new input cell is created, but it is frequently at least partially off-screen and you have to scroll down to get to it.  Currently, window scrolls to accommodate the output of the evaluation, and so should scroll a little more to make the new input cell fully visible.\n\nb) If you do a tab completion or ?-query in the final cell, the output often is partially of screen.   In bad cases, the output is completely off screen and this is very confusing the to user since the program appears to be not responding to their input.   This could be solved either by having the window scroll or having the box appear above the input cell in this instance, though the latter behavior is probably only appropriate for tab completion.  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2629\n\n",
     "created_at": "2008-03-21T16:01:38Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_002629.json:
     "title": "Bottom of page problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2629",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 Assignee: boothby
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 When working on a notebook, one tends to end up at the bottom of browser window in the final cell.   However: 
 
@@ -45,7 +45,7 @@ archive/issue_comments_018068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2629#issuecomment-18068",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_018069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2629#issuecomment-18069",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_018070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2629#issuecomment-18070",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_018071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2629#issuecomment-18071",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_018072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2629#issuecomment-18072",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_018073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2629#issuecomment-18073",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_018074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2629#issuecomment-18074",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_018075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2629#issuecomment-18075",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_018076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2629#issuecomment-18076",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

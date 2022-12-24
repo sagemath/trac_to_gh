@@ -14,7 +14,7 @@ archive/issues_008196.json:
     "title": "bad documentation output in tty mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8196",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: mvngu
@@ -49,7 +49,7 @@ archive/issue_comments_072286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72286",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_072287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72287",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_072288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72288",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_072289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8196",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72289",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

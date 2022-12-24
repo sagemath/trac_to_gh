@@ -3,7 +3,7 @@
 archive/issues_004973.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  craigcitro\n\n`__getitem__` in matrix0.pyx uses C Python API and that code should have **never** been merged as is. The C API was used to get maximum speed. If possible rewrite this code to not use the C API, but it should not lose too much speed. This might be impossible or require adding bits to Cython.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4973\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro\n\n`__getitem__` in matrix0.pyx uses C Python API and that code should have **never** been merged as is. The C API was used to get maximum speed. If possible rewrite this code to not use the C API, but it should not lose too much speed. This might be impossible or require adding bits to Cython.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4973\n\n",
     "created_at": "2009-01-14T09:30:10Z",
     "labels": [
         "misc",
@@ -17,9 +17,9 @@ archive/issues_004973.json:
     "user": "mabshoff"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  craigcitro
+CC:  @craigcitro
 
 `__getitem__` in matrix0.pyx uses C Python API and that code should have **never** been merged as is. The C API was used to get maximum speed. If possible rewrite this code to not use the C API, but it should not lose too much speed. This might be impossible or require adding bits to Cython.
 
@@ -43,7 +43,7 @@ archive/issue_comments_037874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37874",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -56,16 +56,16 @@ Changing status from new to assigned.
 archive/issue_comments_037875.json:
 ```json
 {
-    "body": "Changing assignee from craigcitro to jason.",
+    "body": "Changing assignee from @craigcitro to @jasongrout.",
     "created_at": "2009-01-14T10:25:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37875",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from craigcitro to jason.
+Changing assignee from @craigcitro to @jasongrout.
 
 
 
@@ -74,16 +74,16 @@ Changing assignee from craigcitro to jason.
 archive/issue_comments_037876.json:
 ```json
 {
-    "body": "Attachment [matrix-getitem.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.patch) by jason created at 2009-01-14 12:05:17",
+    "body": "Attachment [matrix-getitem.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.patch) by @jasongrout created at 2009-01-14 12:05:17",
     "created_at": "2009-01-14T12:05:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37876",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [matrix-getitem.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.patch) by jason created at 2009-01-14 12:05:17
+Attachment [matrix-getitem.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.patch) by @jasongrout created at 2009-01-14 12:05:17
 
 
 
@@ -97,7 +97,7 @@ archive/issue_comments_037877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37877",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -110,16 +110,16 @@ I didn't mean to mark this as needs review.  There are a few additions to the ge
 archive/issue_comments_037878.json:
 ```json
 {
-    "body": "Attachment [matrix-getitem.2.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.2.patch) by jason created at 2009-01-15 04:05:55\n\nApply matrix-getitem.2.patch only.  This eliminates the C API calls, but keeps the speed, approximately (some cases are a bit slower, some are a bit faster).  This patch also adds more standard slicing functionality to getitem, which actually changes a few behaviors which went against python convention.  See the changed docstrings, for example.",
+    "body": "Attachment [matrix-getitem.2.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.2.patch) by @jasongrout created at 2009-01-15 04:05:55\n\nApply matrix-getitem.2.patch only.  This eliminates the C API calls, but keeps the speed, approximately (some cases are a bit slower, some are a bit faster).  This patch also adds more standard slicing functionality to getitem, which actually changes a few behaviors which went against python convention.  See the changed docstrings, for example.",
     "created_at": "2009-01-15T04:05:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37878",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [matrix-getitem.2.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.2.patch) by jason created at 2009-01-15 04:05:55
+Attachment [matrix-getitem.2.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.2.patch) by @jasongrout created at 2009-01-15 04:05:55
 
 Apply matrix-getitem.2.patch only.  This eliminates the C API calls, but keeps the speed, approximately (some cases are a bit slower, some are a bit faster).  This patch also adds more standard slicing functionality to getitem, which actually changes a few behaviors which went against python convention.  See the changed docstrings, for example.
 
@@ -130,16 +130,16 @@ Apply matrix-getitem.2.patch only.  This eliminates the C API calls, but keeps t
 archive/issue_comments_037879.json:
 ```json
 {
-    "body": "Attachment [matrix-getitem.3.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.3.patch) by jason created at 2009-01-15 06:19:59\n\napply only matrix-getitem.3.patch.  This patch replaces the call to normalize_slice with a standard python idiom for the same functionality.",
+    "body": "Attachment [matrix-getitem.3.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.3.patch) by @jasongrout created at 2009-01-15 06:19:59\n\napply only matrix-getitem.3.patch.  This patch replaces the call to normalize_slice with a standard python idiom for the same functionality.",
     "created_at": "2009-01-15T06:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37879",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [matrix-getitem.3.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.3.patch) by jason created at 2009-01-15 06:19:59
+Attachment [matrix-getitem.3.patch](tarball://root/attachments/some-uuid/ticket4973/matrix-getitem.3.patch) by @jasongrout created at 2009-01-15 06:19:59
 
 apply only matrix-getitem.3.patch.  This patch replaces the call to normalize_slice with a standard python idiom for the same functionality.
 
@@ -155,7 +155,7 @@ archive/issue_comments_037880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37880",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -172,16 +172,16 @@ Cython doesn't quite do everything we want to get maximal speed out of this call
 archive/issue_comments_037881.json:
 ```json
 {
-    "body": "Attachment [trac-4973-pt2.patch](tarball://root/attachments/some-uuid/ticket4973/trac-4973-pt2.patch) by craigcitro created at 2009-01-15 22:50:03\n\nNew version of the patch. So this adds one additional Python/C API call, but gets a 10% speedup for the case of `M[i,j]`, which I think is worthwhile. Furthermore, it's only necessary because this is a case where Cython doesn't do enough specific optimization for us -- one day, when Cython gets smarter, we can clean this up more.\n\nAlso fixed a bug in matrix indexing with tuples, and added a doctest for that case.",
+    "body": "Attachment [trac-4973-pt2.patch](tarball://root/attachments/some-uuid/ticket4973/trac-4973-pt2.patch) by @craigcitro created at 2009-01-15 22:50:03\n\nNew version of the patch. So this adds one additional Python/C API call, but gets a 10% speedup for the case of `M[i,j]`, which I think is worthwhile. Furthermore, it's only necessary because this is a case where Cython doesn't do enough specific optimization for us -- one day, when Cython gets smarter, we can clean this up more.\n\nAlso fixed a bug in matrix indexing with tuples, and added a doctest for that case.",
     "created_at": "2009-01-15T22:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37881",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4973-pt2.patch](tarball://root/attachments/some-uuid/ticket4973/trac-4973-pt2.patch) by craigcitro created at 2009-01-15 22:50:03
+Attachment [trac-4973-pt2.patch](tarball://root/attachments/some-uuid/ticket4973/trac-4973-pt2.patch) by @craigcitro created at 2009-01-15 22:50:03
 
 New version of the patch. So this adds one additional Python/C API call, but gets a 10% speedup for the case of `M[i,j]`, which I think is worthwhile. Furthermore, it's only necessary because this is a case where Cython doesn't do enough specific optimization for us -- one day, when Cython gets smarter, we can clean this up more.
 
@@ -199,7 +199,7 @@ archive/issue_comments_037882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37882",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_037883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37883",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -261,16 +261,16 @@ So, positive review if this regression is fixed.
 archive/issue_comments_037884.json:
 ```json
 {
-    "body": "Attachment [trac-4973-pt3.patch](tarball://root/attachments/some-uuid/ticket4973/trac-4973-pt3.patch) by craigcitro created at 2009-01-16 02:13:06\n\nPatch attached that fixes the regression (at least on my machine).",
+    "body": "Attachment [trac-4973-pt3.patch](tarball://root/attachments/some-uuid/ticket4973/trac-4973-pt3.patch) by @craigcitro created at 2009-01-16 02:13:06\n\nPatch attached that fixes the regression (at least on my machine).",
     "created_at": "2009-01-16T02:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37884",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4973-pt3.patch](tarball://root/attachments/some-uuid/ticket4973/trac-4973-pt3.patch) by craigcitro created at 2009-01-16 02:13:06
+Attachment [trac-4973-pt3.patch](tarball://root/attachments/some-uuid/ticket4973/trac-4973-pt3.patch) by @craigcitro created at 2009-01-16 02:13:06
 
 Patch attached that fixes the regression (at least on my machine).
 
@@ -286,7 +286,7 @@ archive/issue_comments_037885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37885",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_037886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37886",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -346,16 +346,16 @@ apply on top of previous patch
 archive/issue_comments_037887.json:
 ```json
 {
-    "body": "Attachment [doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4973/doctest-fix.patch) by jason created at 2009-01-16 02:24:52",
+    "body": "Attachment [doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4973/doctest-fix.patch) by @jasongrout created at 2009-01-16 02:24:52",
     "created_at": "2009-01-16T02:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37887",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4973/doctest-fix.patch) by jason created at 2009-01-16 02:24:52
+Attachment [doctest-fix.patch](tarball://root/attachments/some-uuid/ticket4973/doctest-fix.patch) by @jasongrout created at 2009-01-16 02:24:52
 
 
 
@@ -369,7 +369,7 @@ archive/issue_comments_037888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37888",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_037889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37889",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_037890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37890",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -479,7 +479,7 @@ archive/issue_comments_037891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37891",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -497,7 +497,7 @@ archive/issue_comments_037892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37892",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_037893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37893",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_037894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37894",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

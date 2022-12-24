@@ -3,7 +3,7 @@
 archive/issues_000663.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/663\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/663\n\n",
     "created_at": "2007-09-15T20:34:27Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000663.json:
     "title": "get flint into SAGE!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/663",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_003447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/663#issuecomment-3447",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_003448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/663",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/663#issuecomment-3448",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

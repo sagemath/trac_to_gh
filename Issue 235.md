@@ -3,7 +3,7 @@
 archive/issues_000235.json:
 ```json
 {
-    "body": "Assignee: was\n\nNeed to do \n\n    ranlib $SAGE_ROOT/local/lib/*.a \n\nin some cases when move sage. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/235\n\n",
+    "body": "Assignee: @williamstein\n\nNeed to do \n\n    ranlib $SAGE_ROOT/local/lib/*.a \n\nin some cases when move sage. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/235\n\n",
     "created_at": "2007-01-31T01:15:25Z",
     "labels": [
         "algebraic geometry",
@@ -13,10 +13,10 @@ archive/issues_000235.json:
     "title": "ranlib and binaries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/235",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Need to do 
 
@@ -41,7 +41,7 @@ archive/issue_comments_001038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/235#issuecomment-1038",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_001039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/235",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/235#issuecomment-1039",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

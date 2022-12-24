@@ -3,7 +3,7 @@
 archive/issues_009529.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  chapoton tscrim\n\nTo reproduce this, you can do something like the following in bash:\n\n```\n\nsage-4.5.rc1/devel/sage-main$ for i in `seq 1 20`;\n> do\n>     ../../sage -t sage/graphs/graph_plot.py\n> done\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9529\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @fchapoton @tscrim\n\nTo reproduce this, you can do something like the following in bash:\n\n```\n\nsage-4.5.rc1/devel/sage-main$ for i in `seq 1 20`;\n> do\n>     ../../sage -t sage/graphs/graph_plot.py\n> done\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9529\n\n",
     "created_at": "2010-07-17T12:56:30Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009529.json:
     "title": "in graph_plot.py, sometimes get \"libpng error: Image width or height is zero in IHDR\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9529",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  chapoton tscrim
+CC:  @fchapoton @tscrim
 
 To reproduce this, you can do something like the following in bash:
 
@@ -50,7 +50,7 @@ archive/issue_comments_091683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9529#issuecomment-91683",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_091684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9529#issuecomment-91684",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_091686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9529#issuecomment-91686",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_091687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9529#issuecomment-91687",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -224,16 +224,16 @@ Changing component from algebra to graph theory.
 archive/issue_comments_091688.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to jason, ncohen, rlm.",
+    "body": "Changing assignee from @aghitza to jason, ncohen, rlm.",
     "created_at": "2010-07-19T08:53:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9529#issuecomment-91688",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from AlexGhitza to jason, ncohen, rlm.
+Changing assignee from @aghitza to jason, ncohen, rlm.
 
 
 
@@ -247,7 +247,7 @@ archive/issue_comments_091689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9529#issuecomment-91689",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_091690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9529#issuecomment-91690",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_091691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9529#issuecomment-91691",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_091692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9529#issuecomment-91692",
-    "user": "jmantysalo"
+    "user": "@jm58660"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_091693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9529#issuecomment-91693",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_091694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9529#issuecomment-91694",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_091695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9529#issuecomment-91695",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_091696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9529",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9529#issuecomment-91696",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

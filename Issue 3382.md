@@ -3,7 +3,7 @@
 archive/issues_003382.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: polytope, polyhedra, polynomials\n\nCurrently multivariable polynomials have a newton_polytope method which doesn't work without the optional polymake package installed.  This patch switches this method to using the Sage-native code in geometry/polyhedra.py, which only needs the default cddlib (in the future, this might optionally use lrs as well).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3382\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: polytope, polyhedra, polynomials\n\nCurrently multivariable polynomials have a newton_polytope method which doesn't work without the optional polymake package installed.  This patch switches this method to using the Sage-native code in geometry/polyhedra.py, which only needs the default cddlib (in the future, this might optionally use lrs as well).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3382\n\n",
     "created_at": "2008-06-08T12:50:15Z",
     "labels": [
         "geometry",
@@ -17,7 +17,7 @@ archive/issues_003382.json:
     "user": "mhampton"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: polytope, polyhedra, polynomials
 
@@ -57,7 +57,7 @@ archive/issue_comments_023675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3382#issuecomment-23675",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_023676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3382",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3382#issuecomment-23676",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

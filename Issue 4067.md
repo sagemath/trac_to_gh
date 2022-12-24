@@ -54,16 +54,16 @@ Changing status from new to assigned.
 archive/issue_comments_029352.json:
 ```json
 {
-    "body": "Attachment [trac_4067.patch](tarball://root/attachments/some-uuid/ticket4067/trac_4067.patch) by malb created at 2008-09-05 10:38:02\n\nPatch looks good, I only read it though.",
+    "body": "Attachment [trac_4067.patch](tarball://root/attachments/some-uuid/ticket4067/trac_4067.patch) by @malb created at 2008-09-05 10:38:02\n\nPatch looks good, I only read it though.",
     "created_at": "2008-09-05T10:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4067#issuecomment-29352",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_4067.patch](tarball://root/attachments/some-uuid/ticket4067/trac_4067.patch) by malb created at 2008-09-05 10:38:02
+Attachment [trac_4067.patch](tarball://root/attachments/some-uuid/ticket4067/trac_4067.patch) by @malb created at 2008-09-05 10:38:02
 
 Patch looks good, I only read it though.
 

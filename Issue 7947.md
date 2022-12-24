@@ -3,7 +3,7 @@
 archive/issues_007947.json:
 ```json
 {
-    "body": "Assignee: tornaria\n\nCC:  jonhanke\n\nAfter the fix in #7100 (rounding issues), there's still a bug in `the vectors_by_length()` code:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Q = QuadraticForm(ZZ, 4, [1,-1,-1,-1, 1,0,0, 4,-3, 4])\nsage: Q.vectors_by_length(3)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n| Sage Version 4.3, Release Date: 2009-12-24                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/tornaria/.sage/temp/sage/9609/_home_tornaria__sage_init_sage_0.py in <module>()\n\n/home/tornaria/sage/sage-4.3/local/lib/python2.6/site-packages/sage/quadratic_forms/quadratic_form__split_local_covering.pyc in vectors_by_length(self, bound)\n    213             ## Now go back and compute the bounds...\n    214             ## 2. Compute bounds\n--> 215             Z = (T[i] / Q[i][i]).sqrt(extend=False)\n    216             L[i] = ( Z - U[i]).floor()\n    217             x[i] = (-Z - U[i]).ceil()\n\n/home/tornaria/sage/sage-4.3/local/lib/python2.6/site-packages/sage/rings/real_double.so in sage.rings.real_double.RealDoubleElement.sqrt (sage/rings/real_double.c:10382)()\n\nValueError: negative number -0.888887555556 does not have a square root in the real field\n```\n\nYou can tell this is not a rounding issue from the error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7947\n\n",
+    "body": "Assignee: @tornaria\n\nCC:  @jonhanke\n\nAfter the fix in #7100 (rounding issues), there's still a bug in `the vectors_by_length()` code:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Q = QuadraticForm(ZZ, 4, [1,-1,-1,-1, 1,0,0, 4,-3, 4])\nsage: Q.vectors_by_length(3)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n| Sage Version 4.3, Release Date: 2009-12-24                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/tornaria/.sage/temp/sage/9609/_home_tornaria__sage_init_sage_0.py in <module>()\n\n/home/tornaria/sage/sage-4.3/local/lib/python2.6/site-packages/sage/quadratic_forms/quadratic_form__split_local_covering.pyc in vectors_by_length(self, bound)\n    213             ## Now go back and compute the bounds...\n    214             ## 2. Compute bounds\n--> 215             Z = (T[i] / Q[i][i]).sqrt(extend=False)\n    216             L[i] = ( Z - U[i]).floor()\n    217             x[i] = (-Z - U[i]).ceil()\n\n/home/tornaria/sage/sage-4.3/local/lib/python2.6/site-packages/sage/rings/real_double.so in sage.rings.real_double.RealDoubleElement.sqrt (sage/rings/real_double.c:10382)()\n\nValueError: negative number -0.888887555556 does not have a square root in the real field\n```\n\nYou can tell this is not a rounding issue from the error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7947\n\n",
     "created_at": "2010-01-16T14:24:23Z",
     "labels": [
         "quadratic forms",
@@ -14,12 +14,12 @@ archive/issues_007947.json:
     "title": "iteration error in QuadraticForm.vectors_by_length()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7947",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
-Assignee: tornaria
+Assignee: @tornaria
 
-CC:  jonhanke
+CC:  @jonhanke
 
 After the fix in #7100 (rounding issues), there's still a bug in `the vectors_by_length()` code:
 
@@ -59,16 +59,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7947
 archive/issue_comments_069335.json:
 ```json
 {
-    "body": "Attachment [trac_7947.patch](tarball://root/attachments/some-uuid/ticket7947/trac_7947.patch) by tornaria created at 2010-01-16 14:35:14\n\nfix iteration error in QuadraticForm.vectors_by_length()",
+    "body": "Attachment [trac_7947.patch](tarball://root/attachments/some-uuid/ticket7947/trac_7947.patch) by @tornaria created at 2010-01-16 14:35:14\n\nfix iteration error in QuadraticForm.vectors_by_length()",
     "created_at": "2010-01-16T14:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69335",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [trac_7947.patch](tarball://root/attachments/some-uuid/ticket7947/trac_7947.patch) by tornaria created at 2010-01-16 14:35:14
+Attachment [trac_7947.patch](tarball://root/attachments/some-uuid/ticket7947/trac_7947.patch) by @tornaria created at 2010-01-16 14:35:14
 
 fix iteration error in QuadraticForm.vectors_by_length()
 
@@ -84,7 +84,7 @@ archive/issue_comments_069336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69336",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_069337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69337",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_069338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69338",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_069339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69339",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008145.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nKeywords: graph coloring\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/aa8be76acfcf54ba):\n\n```\nFor those of you who are fans of Joe Culberson's graph theory software\n[1], he just gave us the go-ahead [2] to start doing what is necessary\nto incorporate it into Sage. I think this might be faster than\nanything we ship standard for graph coloring/chromatic number,\nalthough I don't have time to investigate. I'd be more than happy to\nanswer questions if someone else wanted to give this a try.\n\n--RLM\n\n[1] http://webdocs.cs.ualberta.ca/~joe/Coloring/\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8145\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: graph coloring\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/aa8be76acfcf54ba):\n\n```\nFor those of you who are fans of Joe Culberson's graph theory software\n[1], he just gave us the go-ahead [2] to start doing what is necessary\nto incorporate it into Sage. I think this might be faster than\nanything we ship standard for graph coloring/chromatic number,\nalthough I don't have time to investigate. I'd be more than happy to\nanswer questions if someone else wanted to give this a try.\n\n--RLM\n\n[1] http://webdocs.cs.ualberta.ca/~joe/Coloring/\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8145\n\n",
     "created_at": "2010-02-01T20:34:16Z",
     "labels": [
         "graph theory",
@@ -17,7 +17,7 @@ archive/issues_008145.json:
     "user": "mvngu"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Keywords: graph coloring
 
@@ -71,7 +71,7 @@ archive/issue_comments_071605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8145#issuecomment-71605",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_071606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8145#issuecomment-71606",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_071607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8145#issuecomment-71607",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_071608.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8145#issuecomment-71608",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

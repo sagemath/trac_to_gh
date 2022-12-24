@@ -14,7 +14,7 @@ archive/issues_000359.json:
     "title": "Consider adding dhtml javascript drawing functionality to the SAGE notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/359",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: Robert Miller

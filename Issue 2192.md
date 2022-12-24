@@ -3,7 +3,7 @@
 archive/issues_002192.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  ncalexan\n\nThis patch does a number of different things:\n\n* It makes it so that for `chi` a Dirichlet character, `chi.__call__` has a new\n  optional argument \"integral_value\", which makes it return values in the \n  maximal order of a cyclotomic field, instead of the cyclotomic field. I \n  needed this so that I could multiply `chi(n)` by an element of a finite field,\n  so that it can do coercion for me. In the process of doing this, I ended\n  up doing all of the following as well:\n\n* There was a big \"TODO\" in the `values()` method for Dirichlet characters, \n  where William left a suggestion for a way to improve the speed of finding \n  all the values of a Dirichlet character. I did this, and here's the result.\n  (Note that it caches values, so evaluating on the same character repeatedly\n  will only test the code once.)\n\n  BEFORE:\n  {{{\n  sage: G = DirichletGroup(960)\n  sage: time for chi in G: ls = chi.values()\n  CPU times: user 2.03 s, sys: 0.20 s, total: 2.22 s\n  Wall time: 2.22\n  sage: G = DirichletGroup(1040)\n  sage: time for chi in G: ls = chi.values()\n  CPU times: user 4.11 s, sys: 0.41 s, total: 4.52 s\n  Wall time: 4.52\n  }}}\n\n  AFTER: \n  {{{\n  sage: G = DirichletGroup(960)\n  sage: time for chi in G: ls = chi.values()\n  CPU times: user 0.50 s, sys: 0.01 s, total: 0.50 s\n  Wall time: 0.50\n  sage: G = DirichletGroup(1040)\n  sage: time for chi in G: ls = chi.values()\n  CPU times: user 1.11 s, sys: 0.01 s, total: 1.12 s\n  Wall time: 1.12\n  }}}\n\n* I also noticed that evaluating the trivial character was falling through to\n  some overly complicated code. Here's the comparison:\n\n  BEFORE:\n  {{{\n  sage: id = DirichletGroup(1).0\n  sage: n = 3\n  sage: time for _ in range(1000000): x = id(n)\n  CPU times: user 12.08 s, sys: 0.90 s, total: 12.98 s\n  Wall time: 12.98\n  }}}\n\n  AFTER:\n  {{{\n  sage: id = DirichletGroup(1).0\n  sage: n = 3\n  sage: time for _ in range(1000000): x = id(n)\n  CPU times: user 3.63 s, sys: 0.74 s, total: 4.37 s\n  Wall time: 4.37\n  }}}\n\n* While working on this, I noticed that elements of `CyclotomicField(3)`\n  and other degree 2 cyclotomic fields were being represented as \n  `NumberFieldElement`s, not `NumberFieldElement_quadratic`s. I fixed this,\n  which involves one silly-looking but necessary piece of code in \n  number_field_element_quadratic.pyx -- it has to convert between two \n  representations of elements, so some amount of mess is unavoidable.\n\n* I fixed one small bug while doing this: as an example, before this\n  patch, Sage claims that you can't coerce `zeta6` into `CyclotomicField(3)`.\n  This was a pretty trivial fix.\n\nI think that's it for this patch. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2192\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @ncalexan\n\nThis patch does a number of different things:\n\n* It makes it so that for `chi` a Dirichlet character, `chi.__call__` has a new\n  optional argument \"integral_value\", which makes it return values in the \n  maximal order of a cyclotomic field, instead of the cyclotomic field. I \n  needed this so that I could multiply `chi(n)` by an element of a finite field,\n  so that it can do coercion for me. In the process of doing this, I ended\n  up doing all of the following as well:\n\n* There was a big \"TODO\" in the `values()` method for Dirichlet characters, \n  where William left a suggestion for a way to improve the speed of finding \n  all the values of a Dirichlet character. I did this, and here's the result.\n  (Note that it caches values, so evaluating on the same character repeatedly\n  will only test the code once.)\n\n  BEFORE:\n  {{{\n  sage: G = DirichletGroup(960)\n  sage: time for chi in G: ls = chi.values()\n  CPU times: user 2.03 s, sys: 0.20 s, total: 2.22 s\n  Wall time: 2.22\n  sage: G = DirichletGroup(1040)\n  sage: time for chi in G: ls = chi.values()\n  CPU times: user 4.11 s, sys: 0.41 s, total: 4.52 s\n  Wall time: 4.52\n  }}}\n\n  AFTER: \n  {{{\n  sage: G = DirichletGroup(960)\n  sage: time for chi in G: ls = chi.values()\n  CPU times: user 0.50 s, sys: 0.01 s, total: 0.50 s\n  Wall time: 0.50\n  sage: G = DirichletGroup(1040)\n  sage: time for chi in G: ls = chi.values()\n  CPU times: user 1.11 s, sys: 0.01 s, total: 1.12 s\n  Wall time: 1.12\n  }}}\n\n* I also noticed that evaluating the trivial character was falling through to\n  some overly complicated code. Here's the comparison:\n\n  BEFORE:\n  {{{\n  sage: id = DirichletGroup(1).0\n  sage: n = 3\n  sage: time for _ in range(1000000): x = id(n)\n  CPU times: user 12.08 s, sys: 0.90 s, total: 12.98 s\n  Wall time: 12.98\n  }}}\n\n  AFTER:\n  {{{\n  sage: id = DirichletGroup(1).0\n  sage: n = 3\n  sage: time for _ in range(1000000): x = id(n)\n  CPU times: user 3.63 s, sys: 0.74 s, total: 4.37 s\n  Wall time: 4.37\n  }}}\n\n* While working on this, I noticed that elements of `CyclotomicField(3)`\n  and other degree 2 cyclotomic fields were being represented as \n  `NumberFieldElement`s, not `NumberFieldElement_quadratic`s. I fixed this,\n  which involves one silly-looking but necessary piece of code in \n  number_field_element_quadratic.pyx -- it has to convert between two \n  representations of elements, so some amount of mess is unavoidable.\n\n* I fixed one small bug while doing this: as an example, before this\n  patch, Sage claims that you can't coerce `zeta6` into `CyclotomicField(3)`.\n  This was a pretty trivial fix.\n\nI think that's it for this patch. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2192\n\n",
     "created_at": "2008-02-17T11:58:22Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_002192.json:
     "title": "[with patch, needs review] various Dirichlet character fixes/improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2192",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  ncalexan
+CC:  @ncalexan
 
 This patch does a number of different things:
 
@@ -105,16 +105,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2192
 archive/issue_comments_014385.json:
 ```json
 {
-    "body": "Attachment [trac-2192-pt2.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-pt2.patch) by craigcitro created at 2008-02-17 12:09:26",
+    "body": "Attachment [trac-2192-pt2.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-pt2.patch) by @craigcitro created at 2008-02-17 12:09:26",
     "created_at": "2008-02-17T12:09:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2192#issuecomment-14385",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2192-pt2.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-pt2.patch) by craigcitro created at 2008-02-17 12:09:26
+Attachment [trac-2192-pt2.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-pt2.patch) by @craigcitro created at 2008-02-17 12:09:26
 
 
 
@@ -128,7 +128,7 @@ archive/issue_comments_014386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2192#issuecomment-14386",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_014387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2192#issuecomment-14387",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_014388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2192#issuecomment-14388",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_014389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2192#issuecomment-14389",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_014390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2192#issuecomment-14390",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_014391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2192#issuecomment-14391",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -290,16 +290,16 @@ single patch with all changes
 archive/issue_comments_014392.json:
 ```json
 {
-    "body": "Attachment [trac-2192-full.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-full.patch) by craigcitro created at 2008-03-14 08:02:15\n\nI've fixed several things, addressed all the referee's comments, and attached a new patch. Here's a quick description of what went into the new patch:\n\n* Took William's advice, and simply fixed `DirichletGroup(N,R)` to do what one would    expect. Removed the `integral_value` option my previous patch introduced.\n\n* Fixing this, and making it work, involved changing something: \n  {{{\n  sage: CyclotomicField(5).zeta_order()\n  }}}\n  has become\n  {{{\n  sage: CyclotomicField(5).zeta_order()\n  10\n  sage: CyclotomicField(5)._n()\n  5\n  }}}\n  That is, I've made it explicit that adding an `n`th root of unity with `n` odd adds a `2n`th root of unity. I debated not doing this, but it ended up being that if I didn't make this change, then every time someone called `zeta_order()` on a `CyclotomicField`, they had to check to see if the result was odd, and if so, multiply it by two to actually make what they were doing correct. I figured that this was a much better fix, and William agreed, so it seemed like a reasonable plan. \n  This involved making lots of changes all over the place, and introducing the `_n()` method. I've tested it pretty thoroughly, so I don't think there's any craziness left, but I'm happy to fix bugs if I've missed anything.\n  Making `CyclotomicField(3)(CyclotomicField(6).0)` still work correctly with this change took some extra coding. I mention this so that whoever is reviewing this patch doesn't think I was changing things at random.\n\nJust for the sake of completeness, let me address all the comments in William's referee report:\n\n1. Changed all the `pyrex`s to `cython`s.\n2. Actually, this doctests are perfectly fine. Notice that (somewhat counter-intuitively for me, as well as you) it's a method on the *element*, not on the *field*. So if `x` is in a quadratic extension, `x._lift_cyclotomic_element(...)` calls specifically that code. \n3. Yep, took those out. I always feel rude removing other people's comments -- after all, if I leave comments in the code, I think it's for a reason. But these are now gone.\n4. This is similar to (2) -- the issue is that in that case, you know both `self.parent()` and `new_parent` are cyclotomic fields of degree 2 over Q, and that an embedding is possible. Actually, I guess you could also have cf3 and cf3, or cf6 and cf6. The code still works in this case, but I've corrected the comment and I'll add the patch after I finish typing this.\n5. Done. I agree, this is cleaner. I didn't read until the end that you thought it should be on a separate ticket, so I'm including it here (since it's already pretty mixed in with this character code). I also added the `integral` flag.\n\nI think that covers it.",
+    "body": "Attachment [trac-2192-full.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-full.patch) by @craigcitro created at 2008-03-14 08:02:15\n\nI've fixed several things, addressed all the referee's comments, and attached a new patch. Here's a quick description of what went into the new patch:\n\n* Took William's advice, and simply fixed `DirichletGroup(N,R)` to do what one would    expect. Removed the `integral_value` option my previous patch introduced.\n\n* Fixing this, and making it work, involved changing something: \n  {{{\n  sage: CyclotomicField(5).zeta_order()\n  }}}\n  has become\n  {{{\n  sage: CyclotomicField(5).zeta_order()\n  10\n  sage: CyclotomicField(5)._n()\n  5\n  }}}\n  That is, I've made it explicit that adding an `n`th root of unity with `n` odd adds a `2n`th root of unity. I debated not doing this, but it ended up being that if I didn't make this change, then every time someone called `zeta_order()` on a `CyclotomicField`, they had to check to see if the result was odd, and if so, multiply it by two to actually make what they were doing correct. I figured that this was a much better fix, and William agreed, so it seemed like a reasonable plan. \n  This involved making lots of changes all over the place, and introducing the `_n()` method. I've tested it pretty thoroughly, so I don't think there's any craziness left, but I'm happy to fix bugs if I've missed anything.\n  Making `CyclotomicField(3)(CyclotomicField(6).0)` still work correctly with this change took some extra coding. I mention this so that whoever is reviewing this patch doesn't think I was changing things at random.\n\nJust for the sake of completeness, let me address all the comments in William's referee report:\n\n1. Changed all the `pyrex`s to `cython`s.\n2. Actually, this doctests are perfectly fine. Notice that (somewhat counter-intuitively for me, as well as you) it's a method on the *element*, not on the *field*. So if `x` is in a quadratic extension, `x._lift_cyclotomic_element(...)` calls specifically that code. \n3. Yep, took those out. I always feel rude removing other people's comments -- after all, if I leave comments in the code, I think it's for a reason. But these are now gone.\n4. This is similar to (2) -- the issue is that in that case, you know both `self.parent()` and `new_parent` are cyclotomic fields of degree 2 over Q, and that an embedding is possible. Actually, I guess you could also have cf3 and cf3, or cf6 and cf6. The code still works in this case, but I've corrected the comment and I'll add the patch after I finish typing this.\n5. Done. I agree, this is cleaner. I didn't read until the end that you thought it should be on a separate ticket, so I'm including it here (since it's already pretty mixed in with this character code). I also added the `integral` flag.\n\nI think that covers it.",
     "created_at": "2008-03-14T08:02:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2192#issuecomment-14392",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2192-full.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-full.patch) by craigcitro created at 2008-03-14 08:02:15
+Attachment [trac-2192-full.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-full.patch) by @craigcitro created at 2008-03-14 08:02:15
 
 I've fixed several things, addressed all the referee's comments, and attached a new patch. Here's a quick description of what went into the new patch:
 
@@ -337,16 +337,16 @@ I think that covers it.
 archive/issue_comments_014393.json:
 ```json
 {
-    "body": "Attachment [trac-2192-touch-up.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-touch-up.patch) by craigcitro created at 2008-03-14 08:03:16\n\napply after trac-2192-full.patch",
+    "body": "Attachment [trac-2192-touch-up.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-touch-up.patch) by @craigcitro created at 2008-03-14 08:03:16\n\napply after trac-2192-full.patch",
     "created_at": "2008-03-14T08:03:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2192#issuecomment-14393",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2192-touch-up.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-touch-up.patch) by craigcitro created at 2008-03-14 08:03:16
+Attachment [trac-2192-touch-up.patch](tarball://root/attachments/some-uuid/ticket2192/trac-2192-touch-up.patch) by @craigcitro created at 2008-03-14 08:03:16
 
 apply after trac-2192-full.patch
 

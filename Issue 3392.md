@@ -37,7 +37,7 @@ archive/issue_comments_023756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3392#issuecomment-23756",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_023757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3392#issuecomment-23757",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_023758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3392#issuecomment-23758",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_023759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3392#issuecomment-23759",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_023760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3392#issuecomment-23760",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -124,16 +124,16 @@ Apply instead of above
 archive/issue_comments_023761.json:
 ```json
 {
-    "body": "Attachment [matplotlib-sage.3.patch](tarball://root/attachments/some-uuid/ticket3392/matplotlib-sage.3.patch) by jason created at 2008-08-21 22:28:23\n\nthe matplotlib-sage.3.patch above includes the other two patches and should be applied instead.  the .3.patch file also includes several more fixes for things added in 3.1.1.",
+    "body": "Attachment [matplotlib-sage.3.patch](tarball://root/attachments/some-uuid/ticket3392/matplotlib-sage.3.patch) by @jasongrout created at 2008-08-21 22:28:23\n\nthe matplotlib-sage.3.patch above includes the other two patches and should be applied instead.  the .3.patch file also includes several more fixes for things added in 3.1.1.",
     "created_at": "2008-08-21T22:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3392#issuecomment-23761",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [matplotlib-sage.3.patch](tarball://root/attachments/some-uuid/ticket3392/matplotlib-sage.3.patch) by jason created at 2008-08-21 22:28:23
+Attachment [matplotlib-sage.3.patch](tarball://root/attachments/some-uuid/ticket3392/matplotlib-sage.3.patch) by @jasongrout created at 2008-08-21 22:28:23
 
 the matplotlib-sage.3.patch above includes the other two patches and should be applied instead.  the .3.patch file also includes several more fixes for things added in 3.1.1.
 
@@ -149,7 +149,7 @@ archive/issue_comments_023762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3392#issuecomment-23762",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_023768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3392#issuecomment-23768",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004236.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n1) This should work (?)\n\nsage: B.<x,y> = BooleanPolynomialRing()\nsage: B*[x*y + 1, x + y]\nsage: I = B*[x*y + 1, x + y]\nsage: I._magma_()\n\nIdeal of Affine Algebra of rank 2 over GF(2)\nLexicographical Order\nVariables: x, y\nQuotient relations:\n[\nx^2 + x,\ny^2 + y\n]\nGenerating basis:\n[\nx*y + 1,\nx + y\n]\n\nsage: Im = I._magma_()\nsage: Im.GroebnerBasis()\nTypeError: Error evaluation Magma code.\nIN:_sage_[21] := GroebnerBasis(_sage_[20]);\nOUT:\n>> _sage_[21] := GroebnerBasis(_sage_[20]);\n                             ^\nRuntime error in 'GroebnerBasis': Bad argument types\nArgument types given: RngMPolRes\n```\n\n\nReported by Martin Albrecht\n\nIssue created by migration from https://trac.sagemath.org/ticket/4236\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n1) This should work (?)\n\nsage: B.<x,y> = BooleanPolynomialRing()\nsage: B*[x*y + 1, x + y]\nsage: I = B*[x*y + 1, x + y]\nsage: I._magma_()\n\nIdeal of Affine Algebra of rank 2 over GF(2)\nLexicographical Order\nVariables: x, y\nQuotient relations:\n[\nx^2 + x,\ny^2 + y\n]\nGenerating basis:\n[\nx*y + 1,\nx + y\n]\n\nsage: Im = I._magma_()\nsage: Im.GroebnerBasis()\nTypeError: Error evaluation Magma code.\nIN:_sage_[21] := GroebnerBasis(_sage_[20]);\nOUT:\n>> _sage_[21] := GroebnerBasis(_sage_[20]);\n                             ^\nRuntime error in 'GroebnerBasis': Bad argument types\nArgument types given: RngMPolRes\n```\n\n\nReported by Martin Albrecht\n\nIssue created by migration from https://trac.sagemath.org/ticket/4236\n\n",
     "created_at": "2008-10-02T16:28:41Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004236.json:
     "title": "magma -- boolean ring conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4236",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -72,7 +72,7 @@ archive/issue_comments_030775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4236#issuecomment-30775",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_030776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4236#issuecomment-30776",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_030777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4236#issuecomment-30777",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_030778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4236#issuecomment-30778",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_030779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4236#issuecomment-30779",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_030780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4236",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4236#issuecomment-30780",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

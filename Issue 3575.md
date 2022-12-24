@@ -14,7 +14,7 @@ archive/issues_003575.json:
     "title": "[with patch; needs review] delete random crap from the bottom of complex_double.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3575",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3575
 archive/issue_comments_025252.json:
 ```json
 {
-    "body": "Attachment [sage-3575.patch](tarball://root/attachments/some-uuid/ticket3575/sage-3575.patch) by wjp created at 2008-07-06 22:06:57",
+    "body": "Attachment [sage-3575.patch](tarball://root/attachments/some-uuid/ticket3575/sage-3575.patch) by @wjp created at 2008-07-06 22:06:57",
     "created_at": "2008-07-06T22:06:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3575",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3575#issuecomment-25252",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [sage-3575.patch](tarball://root/attachments/some-uuid/ticket3575/sage-3575.patch) by wjp created at 2008-07-06 22:06:57
+Attachment [sage-3575.patch](tarball://root/attachments/some-uuid/ticket3575/sage-3575.patch) by @wjp created at 2008-07-06 22:06:57
 
 
 

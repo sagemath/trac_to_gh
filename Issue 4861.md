@@ -62,16 +62,16 @@ Michael
 archive/issue_comments_036845.json:
 ```json
 {
-    "body": "Attachment [trac_4861.patch](tarball://root/attachments/some-uuid/ticket4861/trac_4861.patch) by malb created at 2008-12-24 13:45:05\n\n**Review**\n* SPKG.txt is updated properly (+1)\n* hg status returns cleanly (+1)\n* doesn't seem to contain unneeded binary cruft (+1)\n* attached patch `trac_4861.patch` looks good (+1)\n* `spkg-install` works on sage.math (+1)\n* `spkg-install` **runs test suite** (-1)\n* `make ptest` passes on sage.math (+1)\n\n\"positive review\" if the test suite is disabled or it is explained why it needs to be run.",
+    "body": "Attachment [trac_4861.patch](tarball://root/attachments/some-uuid/ticket4861/trac_4861.patch) by @malb created at 2008-12-24 13:45:05\n\n**Review**\n* SPKG.txt is updated properly (+1)\n* hg status returns cleanly (+1)\n* doesn't seem to contain unneeded binary cruft (+1)\n* attached patch `trac_4861.patch` looks good (+1)\n* `spkg-install` works on sage.math (+1)\n* `spkg-install` **runs test suite** (-1)\n* `make ptest` passes on sage.math (+1)\n\n\"positive review\" if the test suite is disabled or it is explained why it needs to be run.",
     "created_at": "2008-12-24T13:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4861#issuecomment-36845",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_4861.patch](tarball://root/attachments/some-uuid/ticket4861/trac_4861.patch) by malb created at 2008-12-24 13:45:05
+Attachment [trac_4861.patch](tarball://root/attachments/some-uuid/ticket4861/trac_4861.patch) by @malb created at 2008-12-24 13:45:05
 
 **Review**
 * SPKG.txt is updated properly (+1)
@@ -118,7 +118,7 @@ archive/issue_comments_036847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4861",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4861#issuecomment-36847",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

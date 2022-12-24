@@ -46,7 +46,7 @@ archive/issue_comments_005425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/877#issuecomment-5425",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_005426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/877#issuecomment-5426",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -77,16 +77,16 @@ archive/issue_comments_005426.json:
 archive/issue_comments_005427.json:
 ```json
 {
-    "body": "Changing assignee from tba to jhpalmieri.",
+    "body": "Changing assignee from tba to @jhpalmieri.",
     "created_at": "2009-07-24T23:53:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/877#issuecomment-5427",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from tba to jhpalmieri.
+Changing assignee from tba to @jhpalmieri.
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_005428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/877#issuecomment-5428",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_005429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/877#issuecomment-5429",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -133,16 +133,16 @@ To test: I know that the files steenrod_algebra_element.py and structure/factori
 archive/issue_comments_005430.json:
 ```json
 {
-    "body": "Attachment [trac_877-scripts-coverage.patch](tarball://root/attachments/some-uuid/ticket877/trac_877-scripts-coverage.patch) by jhpalmieri created at 2009-07-24 23:55:48\n\napply to scripts repository",
+    "body": "Attachment [trac_877-scripts-coverage.patch](tarball://root/attachments/some-uuid/ticket877/trac_877-scripts-coverage.patch) by @jhpalmieri created at 2009-07-24 23:55:48\n\napply to scripts repository",
     "created_at": "2009-07-24T23:55:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/877#issuecomment-5430",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_877-scripts-coverage.patch](tarball://root/attachments/some-uuid/ticket877/trac_877-scripts-coverage.patch) by jhpalmieri created at 2009-07-24 23:55:48
+Attachment [trac_877-scripts-coverage.patch](tarball://root/attachments/some-uuid/ticket877/trac_877-scripts-coverage.patch) by @jhpalmieri created at 2009-07-24 23:55:48
 
 apply to scripts repository
 
@@ -158,7 +158,7 @@ archive/issue_comments_005431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/877#issuecomment-5431",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_005432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/877#issuecomment-5432",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_005433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/877#issuecomment-5433",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_005434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/877#issuecomment-5434",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -242,16 +242,16 @@ use this version instead
 archive/issue_comments_005435.json:
 ```json
 {
-    "body": "Attachment [trac_877-scripts-coverage2.patch](tarball://root/attachments/some-uuid/ticket877/trac_877-scripts-coverage2.patch) by jhpalmieri created at 2009-07-25 15:00:33\n\ntrac_877-scripts-coverage2.patch interchanges the lines that schilly mentions.  It also moves another re.compile statement earlier.  It also stores the list of nested functions in the list \"closures\", for possible future use.",
+    "body": "Attachment [trac_877-scripts-coverage2.patch](tarball://root/attachments/some-uuid/ticket877/trac_877-scripts-coverage2.patch) by @jhpalmieri created at 2009-07-25 15:00:33\n\ntrac_877-scripts-coverage2.patch interchanges the lines that schilly mentions.  It also moves another re.compile statement earlier.  It also stores the list of nested functions in the list \"closures\", for possible future use.",
     "created_at": "2009-07-25T15:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/877#issuecomment-5435",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_877-scripts-coverage2.patch](tarball://root/attachments/some-uuid/ticket877/trac_877-scripts-coverage2.patch) by jhpalmieri created at 2009-07-25 15:00:33
+Attachment [trac_877-scripts-coverage2.patch](tarball://root/attachments/some-uuid/ticket877/trac_877-scripts-coverage2.patch) by @jhpalmieri created at 2009-07-25 15:00:33
 
 trac_877-scripts-coverage2.patch interchanges the lines that schilly mentions.  It also moves another re.compile statement earlier.  It also stores the list of nested functions in the list "closures", for possible future use.
 

@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3070
 archive/issue_comments_021191.json:
 ```json
 {
-    "body": "Attachment [trac3070-cayley_graph_constructor.patch](tarball://root/attachments/some-uuid/ticket3070/trac3070-cayley_graph_constructor.patch) by rlm created at 2008-05-01 18:11:13",
+    "body": "Attachment [trac3070-cayley_graph_constructor.patch](tarball://root/attachments/some-uuid/ticket3070/trac3070-cayley_graph_constructor.patch) by @rlmill created at 2008-05-01 18:11:13",
     "created_at": "2008-05-01T18:11:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3070#issuecomment-21191",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac3070-cayley_graph_constructor.patch](tarball://root/attachments/some-uuid/ticket3070/trac3070-cayley_graph_constructor.patch) by rlm created at 2008-05-01 18:11:13
+Attachment [trac3070-cayley_graph_constructor.patch](tarball://root/attachments/some-uuid/ticket3070/trac3070-cayley_graph_constructor.patch) by @rlmill created at 2008-05-01 18:11:13
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_021192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3070#issuecomment-21192",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_021193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3070#issuecomment-21193",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_021194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3070#issuecomment-21194",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

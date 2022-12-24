@@ -14,7 +14,7 @@ archive/issues_002507.json:
     "title": "Docstrings and Doctests for rings/quotient_ring_element.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2507",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 Assignee: failure
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2507
 archive/issue_comments_016983.json:
 ```json
 {
-    "body": "Changing assignee from failure to cswiercz.",
+    "body": "Changing assignee from failure to @cswiercz.",
     "created_at": "2008-03-14T03:59:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2507#issuecomment-16983",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Changing assignee from failure to cswiercz.
+Changing assignee from failure to @cswiercz.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_016984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2507#issuecomment-16984",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -96,16 +96,16 @@ Michael
 archive/issue_comments_016986.json:
 ```json
 {
-    "body": "Attachment [2507.patch](tarball://root/attachments/some-uuid/ticket2507/2507.patch) by mhansen created at 2008-04-07 23:01:13\n\n2507.patch applies against 3.0.alpha2 and passes tests.",
+    "body": "Attachment [2507.patch](tarball://root/attachments/some-uuid/ticket2507/2507.patch) by @mwhansen created at 2008-04-07 23:01:13\n\n2507.patch applies against 3.0.alpha2 and passes tests.",
     "created_at": "2008-04-07T23:01:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2507#issuecomment-16986",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2507.patch](tarball://root/attachments/some-uuid/ticket2507/2507.patch) by mhansen created at 2008-04-07 23:01:13
+Attachment [2507.patch](tarball://root/attachments/some-uuid/ticket2507/2507.patch) by @mwhansen created at 2008-04-07 23:01:13
 
 2507.patch applies against 3.0.alpha2 and passes tests.
 
@@ -151,7 +151,7 @@ archive/issue_comments_016988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2507#issuecomment-16988",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_016989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2507#issuecomment-16989",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_016990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2507#issuecomment-16990",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -224,16 +224,16 @@ Changing status from new to assigned.
 archive/issue_comments_016991.json:
 ```json
 {
-    "body": "Attachment [2507_additional.patch](tarball://root/attachments/some-uuid/ticket2507/2507_additional.patch) by cswiercz created at 2008-04-17 23:53:47",
+    "body": "Attachment [2507_additional.patch](tarball://root/attachments/some-uuid/ticket2507/2507_additional.patch) by @cswiercz created at 2008-04-17 23:53:47",
     "created_at": "2008-04-17T23:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2507#issuecomment-16991",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [2507_additional.patch](tarball://root/attachments/some-uuid/ticket2507/2507_additional.patch) by cswiercz created at 2008-04-17 23:53:47
+Attachment [2507_additional.patch](tarball://root/attachments/some-uuid/ticket2507/2507_additional.patch) by @cswiercz created at 2008-04-17 23:53:47
 
 
 
@@ -247,7 +247,7 @@ archive/issue_comments_016992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2507#issuecomment-16992",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_016994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2507#issuecomment-16994",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_016995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2507#issuecomment-16995",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_016996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2507#issuecomment-16996",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_016998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2507#issuecomment-16998",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_016999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2507",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2507#issuecomment-16999",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

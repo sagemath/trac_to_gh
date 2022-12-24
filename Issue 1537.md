@@ -3,7 +3,7 @@
 archive/issues_001537.json:
 ```json
 {
-    "body": "Assignee: was\n\nFor example \n\n```\nsage: from sage.plot.plot3d.all import *\nsage: S = plot3d(lambda x, y: 1/(1+x^2+y^2), (-5,5), (-5,5), 'yellow')\nsage: S.show(viewer='jmol')\n```\n\nor even\n\n```\nsage: S = plot3d(lambda x, y: 0, (-5,5), (-5,5), 'yellow')\nsage: S.show(viewer='jmol')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1537\n\n",
+    "body": "Assignee: @williamstein\n\nFor example \n\n```\nsage: from sage.plot.plot3d.all import *\nsage: S = plot3d(lambda x, y: 1/(1+x^2+y^2), (-5,5), (-5,5), 'yellow')\nsage: S.show(viewer='jmol')\n```\n\nor even\n\n```\nsage: S = plot3d(lambda x, y: 0, (-5,5), (-5,5), 'yellow')\nsage: S.show(viewer='jmol')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1537\n\n",
     "created_at": "2007-12-16T10:34:55Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001537.json:
     "title": "jmol triangulation/shadow weirdness",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1537",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 For example 
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1537
 archive/issue_comments_009812.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-12-16T10:35:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1537#issuecomment-9812",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_009813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1537#issuecomment-9813",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_009815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1537#issuecomment-9815",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

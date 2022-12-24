@@ -3,7 +3,7 @@
 archive/issues_008263.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  leif\n\nFew if any environment variables are documented fully. #8262 is supposed to do this for MAKE_CHECK, but I'm aware of some others which need documenting. \n \n* SAGE_PORT (Allows one to build on any rare (unsupported) platform, like AIX, FreeBSD, HP-UX, Solaris on x86 hardware etc. \n* SAGE_USE_OLD_GCC (Allows use of gcc 3.4.x) \n* CFLAG64 (Flag to build 64-bit binary, defaults to -m64) \n* SAGE_ATLAS_LIB (I've not much idea, but found it when looking)\n* INCLUDE_MPFR_PATCH - (Adds a patch to MPFR to bypass a bug in the Solaris memset on sun4v machines.  Note, if Sun patch 142542-01 is installed on sun4v machines, this is not needed, as that fixes the bug. Values are: \n  * INCLUDE_MPFR_PATCH=0 will never include the patch - useful if you know any sun4v machines MPFR will be used on, are patched. \n  * INCLUDE_MPFR_PATCH=1 will include, so binary will work on a sun4v machine, even if created on an older sun4u machine.\n  * If unset, will include patch on sun4v machines only.\n \n\nThere are probably others too. Some like CC, are fairly obvious, but in many cases do not work, so in some ways, they might be best either undocumented, or documented with a warning that not all packages accept them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8263\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @nexttime\n\nFew if any environment variables are documented fully. #8262 is supposed to do this for MAKE_CHECK, but I'm aware of some others which need documenting. \n \n* SAGE_PORT (Allows one to build on any rare (unsupported) platform, like AIX, FreeBSD, HP-UX, Solaris on x86 hardware etc. \n* SAGE_USE_OLD_GCC (Allows use of gcc 3.4.x) \n* CFLAG64 (Flag to build 64-bit binary, defaults to -m64) \n* SAGE_ATLAS_LIB (I've not much idea, but found it when looking)\n* INCLUDE_MPFR_PATCH - (Adds a patch to MPFR to bypass a bug in the Solaris memset on sun4v machines.  Note, if Sun patch 142542-01 is installed on sun4v machines, this is not needed, as that fixes the bug. Values are: \n  * INCLUDE_MPFR_PATCH=0 will never include the patch - useful if you know any sun4v machines MPFR will be used on, are patched. \n  * INCLUDE_MPFR_PATCH=1 will include, so binary will work on a sun4v machine, even if created on an older sun4u machine.\n  * If unset, will include patch on sun4v machines only.\n \n\nThere are probably others too. Some like CC, are fairly obvious, but in many cases do not work, so in some ways, they might be best either undocumented, or documented with a warning that not all packages accept them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8263\n\n",
     "created_at": "2010-02-14T14:00:37Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008263.json:
 ```
 Assignee: mvngu
 
-CC:  leif
+CC:  @nexttime
 
 Few if any environment variables are documented fully. #8262 is supposed to do this for MAKE_CHECK, but I'm aware of some others which need documenting. 
  
@@ -51,7 +51,7 @@ archive/issue_comments_073128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73128",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_073129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73129",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_073130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73130",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_073131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73131",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_073134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73134",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_073136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73136",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_073137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73137",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_073138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73138",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_073141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73141",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -438,7 +438,7 @@ archive/issue_comments_073142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73142",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -456,7 +456,7 @@ archive/issue_comments_073143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73143",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_073144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73144",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_073146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73146",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -582,7 +582,7 @@ archive/issue_comments_073148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73148",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -654,7 +654,7 @@ archive/issue_comments_073151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73151",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -672,7 +672,7 @@ archive/issue_comments_073152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73152",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -687,16 +687,16 @@ By the way, another potentially useful GNU Make option is `-l`.  For example, `m
 archive/issue_comments_073153.json:
 ```json
 {
-    "body": "Attachment [trac_8263-installation.patch](tarball://root/attachments/some-uuid/ticket8263/trac_8263-installation.patch) by jhpalmieri created at 2010-06-28 02:32:48",
+    "body": "Attachment [trac_8263-installation.patch](tarball://root/attachments/some-uuid/ticket8263/trac_8263-installation.patch) by @jhpalmieri created at 2010-06-28 02:32:48",
     "created_at": "2010-06-28T02:32:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73153",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8263-installation.patch](tarball://root/attachments/some-uuid/ticket8263/trac_8263-installation.patch) by jhpalmieri created at 2010-06-28 02:32:48
+Attachment [trac_8263-installation.patch](tarball://root/attachments/some-uuid/ticket8263/trac_8263-installation.patch) by @jhpalmieri created at 2010-06-28 02:32:48
 
 
 
@@ -710,7 +710,7 @@ archive/issue_comments_073154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73154",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -728,7 +728,7 @@ archive/issue_comments_073155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73155",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -746,7 +746,7 @@ archive/issue_comments_073156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8263",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8263#issuecomment-73156",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

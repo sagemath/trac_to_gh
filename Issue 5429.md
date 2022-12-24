@@ -14,7 +14,7 @@ archive/issues_005429.json:
     "title": "Change the QuadraticForm base_ring to only define the equivalence, but not the ring for coefficients/values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5429",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 Assignee: tbd
@@ -43,7 +43,7 @@ archive/issue_comments_042012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5429",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5429#issuecomment-42012",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

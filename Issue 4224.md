@@ -3,7 +3,7 @@
 archive/issues_004224.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  jason\n\nSome intervals were printing incorrectly in question-mark style (the printed result didn't always include the lower bound of the interval), as reported here: http://groups.google.com/group/sage-support/browse_thread/thread/844cde94499c42a1#\n\n(Thanks to Pong for reporting the problem, and Jason Grout for bringing it to my attention!)\n\nIt turns out that this is a single-character fix: I had RNDN (round-to-nearest) where I needed RNDD (round-down).  Unfortunately, lots of doctests recorded incorrect printing, so the actual patch is almost entirely doctest fixes.\n\nThis patch against 3.1.2 passes -testall.  I hand-checked several (but not all) of the doctest changes against .str(style='brackets').\n\nIssue created by migration from https://trac.sagemath.org/ticket/4224\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @jasongrout\n\nSome intervals were printing incorrectly in question-mark style (the printed result didn't always include the lower bound of the interval), as reported here: http://groups.google.com/group/sage-support/browse_thread/thread/844cde94499c42a1#\n\n(Thanks to Pong for reporting the problem, and Jason Grout for bringing it to my attention!)\n\nIt turns out that this is a single-character fix: I had RNDN (round-to-nearest) where I needed RNDD (round-down).  Unfortunately, lots of doctests recorded incorrect printing, so the actual patch is almost entirely doctest fixes.\n\nThis patch against 3.1.2 passes -testall.  I hand-checked several (but not all) of the doctest changes against .str(style='brackets').\n\nIssue created by migration from https://trac.sagemath.org/ticket/4224\n\n",
     "created_at": "2008-09-30T19:09:41Z",
     "labels": [
         "basic arithmetic",
@@ -19,7 +19,7 @@ archive/issues_004224.json:
 ```
 Assignee: cwitty
 
-CC:  jason
+CC:  @jasongrout
 
 Some intervals were printing incorrectly in question-mark style (the printed result didn't always include the lower bound of the interval), as reported here: http://groups.google.com/group/sage-support/browse_thread/thread/844cde94499c42a1#
 
@@ -162,7 +162,7 @@ archive/issue_comments_030703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4224",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4224#issuecomment-30703",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

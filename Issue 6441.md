@@ -138,7 +138,7 @@ archive/issue_comments_051698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51698",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_051700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51700",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_051701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51701",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_051702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51702",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_051704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51704",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -409,16 +409,16 @@ Updated patch (20090707)
 archive/issue_comments_051707.json:
 ```json
 {
-    "body": "Attachment [dfmatrix20090707.patch](tarball://root/attachments/some-uuid/ticket6441/dfmatrix20090707.patch) by rbeezer created at 2009-08-05 06:47:55\n\nHi Sebastian,\n\n1.  I understand [Se02] a lot better now - well enough to have caught the typo in Algorithm 3.1 (missing minus sign before last term in penultimate line).  That might be a good thing to mention in the docstring near the citation.\n\n2.  So I should be OK with `_charpoly_df()` now.  One question, why did you choose to accumulate for sums using a construction like the following?\n\n\n```\nfor k in xrange(p): \n    F.set_unsafe(p, t, F.get_unsafe(p, t) - A.get_unsafe(k, t) * F.get_unsafe(p-k-1, t))\n```\n\n\nA few lines above you used a temporary variable `s`, which is what I would have expected later.  Just wondering about the rationale?\n\n3.  I'm not sure `_is_certainly_field()` (and its integral domain companion) are the best way around the \"not-implemented\" problem.  I see the problem, and understand the fix, but I'd rather see fewer global functions in Sage and more object methods.  And I am familiar with the linear algebra routines, but less familiar with design decisions for rings.  Would you mind presenting the problem (and perhaps your solution) on sage-devel and see if there is a cleaner way to solve it or some kind of explanation?  Or perhaps your solution is the best idea.  Me, I'd probably just try to handle the exception where it happens rather than make a function that looks so much like `is_field()`, but isn't really the same at all.\n\n\n4.  You've included lots of formatting fixes - which is fantastic.  But Sage likes to have small patches that address one thing.  How hard would it be for you to separate the documentation clean-up from the division-free stuff?  For example, right now, it is hard to notice where your changes to the determinant have affected doctests in unrelated modules, since they are mixed in with lots of other small changes.  You could put the formatting fixes in a new ticket (e.g. \"docstring clean-up for matrices\"), and I could review that patch very quickly.  Then when somebody comes back to look at the df stuff, they can see exactly what changed, while nobody will probably ever look at the dosctring clean-up patch again.  and you'll get credit for two patches.  ;-)\n\n\nAs I've said, this is a great addition to Sage and very carefully done, which is really appreciated.  None of the above will keep me from looking at this some more in the next couple of days, so at your leisure.\n\nRob",
+    "body": "Attachment [dfmatrix20090707.patch](tarball://root/attachments/some-uuid/ticket6441/dfmatrix20090707.patch) by @rbeezer created at 2009-08-05 06:47:55\n\nHi Sebastian,\n\n1.  I understand [Se02] a lot better now - well enough to have caught the typo in Algorithm 3.1 (missing minus sign before last term in penultimate line).  That might be a good thing to mention in the docstring near the citation.\n\n2.  So I should be OK with `_charpoly_df()` now.  One question, why did you choose to accumulate for sums using a construction like the following?\n\n\n```\nfor k in xrange(p): \n    F.set_unsafe(p, t, F.get_unsafe(p, t) - A.get_unsafe(k, t) * F.get_unsafe(p-k-1, t))\n```\n\n\nA few lines above you used a temporary variable `s`, which is what I would have expected later.  Just wondering about the rationale?\n\n3.  I'm not sure `_is_certainly_field()` (and its integral domain companion) are the best way around the \"not-implemented\" problem.  I see the problem, and understand the fix, but I'd rather see fewer global functions in Sage and more object methods.  And I am familiar with the linear algebra routines, but less familiar with design decisions for rings.  Would you mind presenting the problem (and perhaps your solution) on sage-devel and see if there is a cleaner way to solve it or some kind of explanation?  Or perhaps your solution is the best idea.  Me, I'd probably just try to handle the exception where it happens rather than make a function that looks so much like `is_field()`, but isn't really the same at all.\n\n\n4.  You've included lots of formatting fixes - which is fantastic.  But Sage likes to have small patches that address one thing.  How hard would it be for you to separate the documentation clean-up from the division-free stuff?  For example, right now, it is hard to notice where your changes to the determinant have affected doctests in unrelated modules, since they are mixed in with lots of other small changes.  You could put the formatting fixes in a new ticket (e.g. \"docstring clean-up for matrices\"), and I could review that patch very quickly.  Then when somebody comes back to look at the df stuff, they can see exactly what changed, while nobody will probably ever look at the dosctring clean-up patch again.  and you'll get credit for two patches.  ;-)\n\n\nAs I've said, this is a great addition to Sage and very carefully done, which is really appreciated.  None of the above will keep me from looking at this some more in the next couple of days, so at your leisure.\n\nRob",
     "created_at": "2009-08-05T06:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51707",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [dfmatrix20090707.patch](tarball://root/attachments/some-uuid/ticket6441/dfmatrix20090707.patch) by rbeezer created at 2009-08-05 06:47:55
+Attachment [dfmatrix20090707.patch](tarball://root/attachments/some-uuid/ticket6441/dfmatrix20090707.patch) by @rbeezer created at 2009-08-05 06:47:55
 
 Hi Sebastian,
 
@@ -457,7 +457,7 @@ archive/issue_comments_051708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51708",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_051710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51710",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -583,7 +583,7 @@ archive/issue_comments_051712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51712",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -647,16 +647,16 @@ Division-free matrix computations (20090821)
 archive/issue_comments_051715.json:
 ```json
 {
-    "body": "Attachment [20090821_Charpoly.patch](tarball://root/attachments/some-uuid/ticket6441/20090821_Charpoly.patch) by rbeezer created at 2009-08-22 05:11:51\n\nHi Sebastian,\n\nI've been using this routine to explore some characteristic polynomials with symbolic coefficients that Chris Godsil is interested in for graph theory.  Its great to have this efficient routine available.  It also seems that this latest version is about twice as fast as the first one, so the revisions here are providing a real speed-up.\n\n1.  Documentation warnings:  I only got two warnings from matrix2.pyx.  In the docstring for `adjoint()` the description of `N` as input has its second line aligned relative to the second dash, where it is the text off the first dash that sets the indent location.   In the docstring for `charpoly()` the line that begins `If an algorithm is specified explicitly,...` needs to be pulled left to align properly.\n\nThe warnings you get when you build the documentation tell you the file and the method where it happens, then there is a line number, which is relative to the start of that particular docstring and give the location (roughly - plus/minus a line?).  If you still have a third warning, maybe you can locate it this way to help figure out the problem (or post the location here).\n\n2.  Patch failures:  I had two parts of the patch which failed.  One was the spelling of \"determinant\" in `matrix_space.py` which is no big deal, the other was the first portion of the `determinant()` definition, which is important, and I made that change by hand so I could test the patch.  Is this patch relative to 4.1.1 now?  If not, it should be \"rebased\" to 4.1.1 which I can explain how to do if you are not sure how (or what that is).\n\n3.  Doctest failure:  I'm getting one doctest failure.  In `matrix_space.py` the test `tinv(QQ, sparse=False)` seems to be throwing an `ArithmeticError` rather than a `ValueError` for a non-square matrix.  Presumably this should be easy for you to fix, since there are several other fixes like this already.\n\n4.  Patch name:  the file for the patch should eventually be named  `trac_6441_description.patch` where \"description\" is something really simple like \"df_charpoly\"\n\n5.  Ring and Field checks:  Yes, lets go through the exercise of seeing what sage-devel says about the `is_certainly_xx` methods and go with the consensus there.\n\n6.  Overconvergent Modular Forms:  I know nothing about these, or the need to use the \"hessenberg\" algorithm, so we can defer to David Loeffler's judgment on this one?\n\nAlmost there!\n\nRob",
+    "body": "Attachment [20090821_Charpoly.patch](tarball://root/attachments/some-uuid/ticket6441/20090821_Charpoly.patch) by @rbeezer created at 2009-08-22 05:11:51\n\nHi Sebastian,\n\nI've been using this routine to explore some characteristic polynomials with symbolic coefficients that Chris Godsil is interested in for graph theory.  Its great to have this efficient routine available.  It also seems that this latest version is about twice as fast as the first one, so the revisions here are providing a real speed-up.\n\n1.  Documentation warnings:  I only got two warnings from matrix2.pyx.  In the docstring for `adjoint()` the description of `N` as input has its second line aligned relative to the second dash, where it is the text off the first dash that sets the indent location.   In the docstring for `charpoly()` the line that begins `If an algorithm is specified explicitly,...` needs to be pulled left to align properly.\n\nThe warnings you get when you build the documentation tell you the file and the method where it happens, then there is a line number, which is relative to the start of that particular docstring and give the location (roughly - plus/minus a line?).  If you still have a third warning, maybe you can locate it this way to help figure out the problem (or post the location here).\n\n2.  Patch failures:  I had two parts of the patch which failed.  One was the spelling of \"determinant\" in `matrix_space.py` which is no big deal, the other was the first portion of the `determinant()` definition, which is important, and I made that change by hand so I could test the patch.  Is this patch relative to 4.1.1 now?  If not, it should be \"rebased\" to 4.1.1 which I can explain how to do if you are not sure how (or what that is).\n\n3.  Doctest failure:  I'm getting one doctest failure.  In `matrix_space.py` the test `tinv(QQ, sparse=False)` seems to be throwing an `ArithmeticError` rather than a `ValueError` for a non-square matrix.  Presumably this should be easy for you to fix, since there are several other fixes like this already.\n\n4.  Patch name:  the file for the patch should eventually be named  `trac_6441_description.patch` where \"description\" is something really simple like \"df_charpoly\"\n\n5.  Ring and Field checks:  Yes, lets go through the exercise of seeing what sage-devel says about the `is_certainly_xx` methods and go with the consensus there.\n\n6.  Overconvergent Modular Forms:  I know nothing about these, or the need to use the \"hessenberg\" algorithm, so we can defer to David Loeffler's judgment on this one?\n\nAlmost there!\n\nRob",
     "created_at": "2009-08-22T05:11:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51715",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [20090821_Charpoly.patch](tarball://root/attachments/some-uuid/ticket6441/20090821_Charpoly.patch) by rbeezer created at 2009-08-22 05:11:51
+Attachment [20090821_Charpoly.patch](tarball://root/attachments/some-uuid/ticket6441/20090821_Charpoly.patch) by @rbeezer created at 2009-08-22 05:11:51
 
 Hi Sebastian,
 
@@ -728,7 +728,7 @@ archive/issue_comments_051717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51717",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -753,7 +753,7 @@ archive/issue_comments_051718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51718",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -771,7 +771,7 @@ archive/issue_comments_051719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51719",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -795,7 +795,7 @@ archive/issue_comments_051720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51720",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -882,16 +882,16 @@ Attachment [trac_6441_a_rings.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_051724.json:
 ```json
 {
-    "body": "Attachment [trac_6441_b_df_charpoly.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.patch) by rbeezer created at 2009-08-26 05:55:19\n\nHi Sebastian,\n\nWorking in batches - this is just about `is_field()` and friends.\n\n1.  In `sage/algebras/group_algebra.py` you have `self.base_ring.is_integral()` which needs to be completed to `.is_integral_domain()`.\n\n2.  Patch attached - it has a doctest for `is_field` in `sage/rings/ring.pyx` to illustrate the `proof` parameter in action (which I think should be illustrated at least once).  You'll recognize it from your sage-devel post.  Do you have something similar that would work well for `is_integral_domain()`?\n\n3.  When I applied the patch a colon was missing in `sage/rings/quotient_ring.py` after a `try`.  No idea why - since the colon is in your patch.  But I fixed it by hand, and so its in my attached patch, along with the fix for (1) above.  So you might just cut out the doctest by hand to build it in rather than applying the patch.\n\nI'll look at part (b) in the next couple of days.\n\nRob",
+    "body": "Attachment [trac_6441_b_df_charpoly.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.patch) by @rbeezer created at 2009-08-26 05:55:19\n\nHi Sebastian,\n\nWorking in batches - this is just about `is_field()` and friends.\n\n1.  In `sage/algebras/group_algebra.py` you have `self.base_ring.is_integral()` which needs to be completed to `.is_integral_domain()`.\n\n2.  Patch attached - it has a doctest for `is_field` in `sage/rings/ring.pyx` to illustrate the `proof` parameter in action (which I think should be illustrated at least once).  You'll recognize it from your sage-devel post.  Do you have something similar that would work well for `is_integral_domain()`?\n\n3.  When I applied the patch a colon was missing in `sage/rings/quotient_ring.py` after a `try`.  No idea why - since the colon is in your patch.  But I fixed it by hand, and so its in my attached patch, along with the fix for (1) above.  So you might just cut out the doctest by hand to build it in rather than applying the patch.\n\nI'll look at part (b) in the next couple of days.\n\nRob",
     "created_at": "2009-08-26T05:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51724",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_6441_b_df_charpoly.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.patch) by rbeezer created at 2009-08-26 05:55:19
+Attachment [trac_6441_b_df_charpoly.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.patch) by @rbeezer created at 2009-08-26 05:55:19
 
 Hi Sebastian,
 
@@ -914,16 +914,16 @@ Rob
 archive/issue_comments_051725.json:
 ```json
 {
-    "body": "Attachment [trac_6441_a_reviewer.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_a_reviewer.patch) by rbeezer created at 2009-08-27 04:59:43\n\nSebastian,\n\nLooks to me like maybe  `trac_6441_b_df_charpoly.patch`  is the wrong file?  It has 3-D arrays in the main routine and lots of minor (unrelated) documentation fixes, though it does fix the integral domain problem from the \"a\" patch.  I liked the looks of `20090821_Charpoly.patch` better, which incorporates Yann's suggestions.  Am I mis-understanding something?\n\nRob",
+    "body": "Attachment [trac_6441_a_reviewer.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_a_reviewer.patch) by @rbeezer created at 2009-08-27 04:59:43\n\nSebastian,\n\nLooks to me like maybe  `trac_6441_b_df_charpoly.patch`  is the wrong file?  It has 3-D arrays in the main routine and lots of minor (unrelated) documentation fixes, though it does fix the integral domain problem from the \"a\" patch.  I liked the looks of `20090821_Charpoly.patch` better, which incorporates Yann's suggestions.  Am I mis-understanding something?\n\nRob",
     "created_at": "2009-08-27T04:59:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51725",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_6441_a_reviewer.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_a_reviewer.patch) by rbeezer created at 2009-08-27 04:59:43
+Attachment [trac_6441_a_reviewer.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_a_reviewer.patch) by @rbeezer created at 2009-08-27 04:59:43
 
 Sebastian,
 
@@ -965,7 +965,7 @@ archive/issue_comments_051727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51727",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1046,7 +1046,7 @@ archive/issue_comments_051731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51731",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1163,16 +1163,16 @@ Attachment [trac_6441_a_rings.3.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_051735.json:
 ```json
 {
-    "body": "Attachment [trac_6441_b_df_charpoly.3.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.3.patch) by rbeezer created at 2009-08-30 05:26:44\n\nSebstian,\n\nVery good!  Builds cleanly and passes all tests.  I got two warnings building the documentation, I think these were leftovers from the discussion above.  I've attached a patch that fixes both.\n\nSo this is a positive review, though you need to accept my changes in the documentation patch.  If the changes look OK, then change the subject line to `[with patch, positive review]` and then it'll get merged into the next release.\n\nThis will be a great addition to Sage.  Thanks for your patience with all the details.  Your next patch should be a whole lot easier.\n\nRelease manager:  Apply the two patches from 2009/08/28 (version 3), first the \"a_rings\" and then the \"b_df_charpoly\", then the reviewer patch.\n\nRob",
+    "body": "Attachment [trac_6441_b_df_charpoly.3.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.3.patch) by @rbeezer created at 2009-08-30 05:26:44\n\nSebstian,\n\nVery good!  Builds cleanly and passes all tests.  I got two warnings building the documentation, I think these were leftovers from the discussion above.  I've attached a patch that fixes both.\n\nSo this is a positive review, though you need to accept my changes in the documentation patch.  If the changes look OK, then change the subject line to `[with patch, positive review]` and then it'll get merged into the next release.\n\nThis will be a great addition to Sage.  Thanks for your patience with all the details.  Your next patch should be a whole lot easier.\n\nRelease manager:  Apply the two patches from 2009/08/28 (version 3), first the \"a_rings\" and then the \"b_df_charpoly\", then the reviewer patch.\n\nRob",
     "created_at": "2009-08-30T05:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51735",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_6441_b_df_charpoly.3.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.3.patch) by rbeezer created at 2009-08-30 05:26:44
+Attachment [trac_6441_b_df_charpoly.3.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_b_df_charpoly.3.patch) by @rbeezer created at 2009-08-30 05:26:44
 
 Sebstian,
 
@@ -1193,16 +1193,16 @@ Rob
 archive/issue_comments_051736.json:
 ```json
 {
-    "body": "Attachment [trac_6441_reviewer_doctests.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_reviewer_doctests.patch) by rbeezer created at 2009-08-30 05:27:30",
+    "body": "Attachment [trac_6441_reviewer_doctests.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_reviewer_doctests.patch) by @rbeezer created at 2009-08-30 05:27:30",
     "created_at": "2009-08-30T05:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51736",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_6441_reviewer_doctests.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_reviewer_doctests.patch) by rbeezer created at 2009-08-30 05:27:30
+Attachment [trac_6441_reviewer_doctests.patch](tarball://root/attachments/some-uuid/ticket6441/trac_6441_reviewer_doctests.patch) by @rbeezer created at 2009-08-30 05:27:30
 
 
 
@@ -1501,7 +1501,7 @@ archive/issue_comments_051745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51745",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1549,7 +1549,7 @@ archive/issue_comments_051747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51747",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -1638,7 +1638,7 @@ archive/issue_comments_051751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6441",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6441#issuecomment-51751",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

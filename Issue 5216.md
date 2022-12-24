@@ -67,7 +67,7 @@ archive/issue_comments_039961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5216#issuecomment-39961",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing status from assigned to new.
 archive/issue_comments_039962.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-02-15T06:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5216#issuecomment-39962",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_039963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5216",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5216#issuecomment-39963",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

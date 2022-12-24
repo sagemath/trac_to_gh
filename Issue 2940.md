@@ -3,7 +3,7 @@
 archive/issues_002940.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following should all work \n\n\n```\nsage: var('x,y')\n(x, y)\nsage: (a < 1) + (b < 2)\nb + a < 3\nsage: (a < 1) + (b <= 2)\na + b < 3\nsage: (a <= 1) + (b == 2)\na + b <= 3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2940\n\n",
+    "body": "Assignee: @williamstein\n\nThe following should all work \n\n\n```\nsage: var('x,y')\n(x, y)\nsage: (a < 1) + (b < 2)\nb + a < 3\nsage: (a < 1) + (b <= 2)\na + b < 3\nsage: (a <= 1) + (b == 2)\na + b <= 3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2940\n\n",
     "created_at": "2008-04-16T09:07:51Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002940.json:
     "title": "symbolic equation arithmetic is to restrictive",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2940",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following should all work 
 
@@ -50,7 +50,7 @@ archive/issue_comments_020252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2940#issuecomment-20252",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_020253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2940#issuecomment-20253",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_020254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2940",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2940#issuecomment-20254",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

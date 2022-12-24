@@ -3,7 +3,7 @@
 archive/issues_002146.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  malb\n\nSee below. \n\n\n```\nsage: R.<x,y,z> = BooleanPolynomialRing(3)\nsage: R.random_element()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/multi_polynomial_ring_generic.pyx in sage.rings.polynomial.multi_polynomial_ring_generic.MPolynomialRing_generic.random_element()\n\n/Users/was/pbori.pyx in sage.rings.polynomial.pbori.BooleanPolynomialRing.__call__()\n\n<type 'exceptions.TypeError'>: cannot convert <type 'dict'> to BooleanPolynomial\nsage: \n\n```\n\n\nBy the way, wouldn't it be better to call it `PolynomialBooleanRing` instead\nof `BooleanPolynomialRing`?  I suggest this for two reasons:\n1. It is PolyBoRi, after all, not BoPolyRi.\n2. The other Sage polynomial ring(s) starts with \"Polynomial\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/2146\n\n",
+    "body": "Assignee: @malb\n\nCC:  @malb\n\nSee below. \n\n\n```\nsage: R.<x,y,z> = BooleanPolynomialRing(3)\nsage: R.random_element()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/multi_polynomial_ring_generic.pyx in sage.rings.polynomial.multi_polynomial_ring_generic.MPolynomialRing_generic.random_element()\n\n/Users/was/pbori.pyx in sage.rings.polynomial.pbori.BooleanPolynomialRing.__call__()\n\n<type 'exceptions.TypeError'>: cannot convert <type 'dict'> to BooleanPolynomial\nsage: \n\n```\n\n\nBy the way, wouldn't it be better to call it `PolynomialBooleanRing` instead\nof `BooleanPolynomialRing`?  I suggest this for two reasons:\n1. It is PolyBoRi, after all, not BoPolyRi.\n2. The other Sage polynomial ring(s) starts with \"Polynomial\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/2146\n\n",
     "created_at": "2008-02-13T03:49:00Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_002146.json:
     "title": "PolyBoRi random_element is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2146",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  malb
+CC:  @malb
 
 See below. 
 
@@ -63,7 +63,7 @@ archive/issue_comments_014080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2146#issuecomment-14080",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_014081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2146#issuecomment-14081",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -94,16 +94,16 @@ Add random_element to BooleanPolynomialRing
 archive/issue_comments_014082.json:
 ```json
 {
-    "body": "Attachment [2146-BooelanPolynomial_random_element.patch](tarball://root/attachments/some-uuid/ticket2146/2146-BooelanPolynomial_random_element.patch) by burcin created at 2008-02-17 16:40:48\n\nattachment:2146-BooelanPolynomial_random_element.patch adds a `random_element` method to `BooleanPolynomialRing`.\n\nThe doctests for errors work only after applying the patch for `sage-doctest` at ticket:2193.",
+    "body": "Attachment [2146-BooelanPolynomial_random_element.patch](tarball://root/attachments/some-uuid/ticket2146/2146-BooelanPolynomial_random_element.patch) by @burcin created at 2008-02-17 16:40:48\n\nattachment:2146-BooelanPolynomial_random_element.patch adds a `random_element` method to `BooleanPolynomialRing`.\n\nThe doctests for errors work only after applying the patch for `sage-doctest` at ticket:2193.",
     "created_at": "2008-02-17T16:40:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2146#issuecomment-14082",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [2146-BooelanPolynomial_random_element.patch](tarball://root/attachments/some-uuid/ticket2146/2146-BooelanPolynomial_random_element.patch) by burcin created at 2008-02-17 16:40:48
+Attachment [2146-BooelanPolynomial_random_element.patch](tarball://root/attachments/some-uuid/ticket2146/2146-BooelanPolynomial_random_element.patch) by @burcin created at 2008-02-17 16:40:48
 
 attachment:2146-BooelanPolynomial_random_element.patch adds a `random_element` method to `BooleanPolynomialRing`.
 
@@ -121,7 +121,7 @@ archive/issue_comments_014083.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2146#issuecomment-14083",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -134,16 +134,16 @@ Changing status from new to assigned.
 archive/issue_comments_014084.json:
 ```json
 {
-    "body": "Changing assignee from malb to burcin.",
+    "body": "Changing assignee from @malb to @burcin.",
     "created_at": "2008-02-17T16:40:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2146#issuecomment-14084",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from malb to burcin.
+Changing assignee from @malb to @burcin.
 
 
 
@@ -157,7 +157,7 @@ archive/issue_comments_014085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2146",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2146#issuecomment-14085",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

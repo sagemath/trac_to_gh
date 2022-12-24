@@ -62,16 +62,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3638
 archive/issue_comments_025731.json:
 ```json
 {
-    "body": "Changing assignee from tbd to malb.",
+    "body": "Changing assignee from tbd to @malb.",
     "created_at": "2009-01-25T19:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3638#issuecomment-25731",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from tbd to malb.
+Changing assignee from tbd to @malb.
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_025732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3638#issuecomment-25732",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -98,16 +98,16 @@ Changing status from new to assigned.
 archive/issue_comments_025733.json:
 ```json
 {
-    "body": "Attachment [3638-free-module-coerce.patch](tarball://root/attachments/some-uuid/ticket3638/3638-free-module-coerce.patch) by robertwb created at 2010-01-17 09:43:06\n\nFixed the Z/8Z case. As for Z/7Z and Q, they are incomparable, which by convention means == returns False. (If it gave an error,we would have to re-think nonsense like `\"some string\" != random_matrix(ZZ, 3)` returning False).",
+    "body": "Attachment [3638-free-module-coerce.patch](tarball://root/attachments/some-uuid/ticket3638/3638-free-module-coerce.patch) by @robertwb created at 2010-01-17 09:43:06\n\nFixed the Z/8Z case. As for Z/7Z and Q, they are incomparable, which by convention means == returns False. (If it gave an error,we would have to re-think nonsense like `\"some string\" != random_matrix(ZZ, 3)` returning False).",
     "created_at": "2010-01-17T09:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3638#issuecomment-25733",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3638-free-module-coerce.patch](tarball://root/attachments/some-uuid/ticket3638/3638-free-module-coerce.patch) by robertwb created at 2010-01-17 09:43:06
+Attachment [3638-free-module-coerce.patch](tarball://root/attachments/some-uuid/ticket3638/3638-free-module-coerce.patch) by @robertwb created at 2010-01-17 09:43:06
 
 Fixed the Z/8Z case. As for Z/7Z and Q, they are incomparable, which by convention means == returns False. (If it gave an error,we would have to re-think nonsense like `"some string" != random_matrix(ZZ, 3)` returning False).
 
@@ -123,7 +123,7 @@ archive/issue_comments_025734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3638#issuecomment-25734",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_025735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3638#issuecomment-25735",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_025736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3638#issuecomment-25736",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_025737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3638",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3638#issuecomment-25737",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

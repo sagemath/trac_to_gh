@@ -14,7 +14,7 @@ archive/issues_009497.json:
     "title": "Fix the Singular spkg so it can take advantage of building in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9497",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -48,7 +48,7 @@ archive/issue_comments_091190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91190",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_091191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91191",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_091192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91192",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -224,16 +224,16 @@ Changing keywords from "" to "singular".
 archive/issue_comments_091193.json:
 ```json
 {
-    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket9497/spkg-install) by malb created at 2011-01-14 18:30:08",
+    "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket9497/spkg-install) by @malb created at 2011-01-14 18:30:08",
     "created_at": "2011-01-14T18:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91193",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket9497/spkg-install) by malb created at 2011-01-14 18:30:08
+Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket9497/spkg-install) by @malb created at 2011-01-14 18:30:08
 
 
 
@@ -247,7 +247,7 @@ archive/issue_comments_091194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91194",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_091195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91195",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_091196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91196",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -298,16 +298,16 @@ patch for p5
 archive/issue_comments_091197.json:
 ```json
 {
-    "body": "Attachment [trac_9497-singular-parallel.patch](tarball://root/attachments/some-uuid/ticket9497/trac_9497-singular-parallel.patch) by jhpalmieri created at 2011-03-26 23:13:07\n\npatch for p6",
+    "body": "Attachment [trac_9497-singular-parallel.patch](tarball://root/attachments/some-uuid/ticket9497/trac_9497-singular-parallel.patch) by @jhpalmieri created at 2011-03-26 23:13:07\n\npatch for p6",
     "created_at": "2011-03-26T23:13:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91197",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9497-singular-parallel.patch](tarball://root/attachments/some-uuid/ticket9497/trac_9497-singular-parallel.patch) by jhpalmieri created at 2011-03-26 23:13:07
+Attachment [trac_9497-singular-parallel.patch](tarball://root/attachments/some-uuid/ticket9497/trac_9497-singular-parallel.patch) by @jhpalmieri created at 2011-03-26 23:13:07
 
 patch for p6
 
@@ -318,16 +318,16 @@ patch for p6
 archive/issue_comments_091198.json:
 ```json
 {
-    "body": "Attachment [trac_9497-singular-rm.patch](tarball://root/attachments/some-uuid/ticket9497/trac_9497-singular-rm.patch) by jhpalmieri created at 2011-03-26 23:51:59\n\nThe spkg here needed to be rebased against the current one (which is also called \"...p4.spkg\").  I've rebased it, and then I made a further change: I changed \"$RM\" in the spkg-install file to \"rm\" -- this has been done in the spkg-install files for all of the other spkgs, and also see the discussion at #3537.  I've posted the patch files for the two new spkgs, for review purposes.  The two new spkgs are here:\n\n- [http://sage.math.washington.edu/home/palmieri/SPKG/singular-3-1-1-4.p5.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/singular-3-1-1-4.p5.spkg) -- enable parallel build\n- [http://sage.math.washington.edu/home/palmieri/SPKG/singular-3-1-1-4.p6.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/singular-3-1-1-4.p6.spkg) -- p5 and also change $RM to rm\n\nBy the way, I built p5 by applying malb's patch to the current p4.  I tested that successfully on a Mac, on sage.math, on Dave Kirkby's machine hawk (OpenSolaris), and on t2.math.washington.edu (Solaris).  I couldn't access the skynet machines, so I couldn't test on them, but this is a pretty good range of hardware.  The build was at least somewhat faster on all of them, and tests passed with the new version.  So this is almost good enough for a positive review of p5, except that I built it and I'd like another pair of eyes to look at it.  Then the changes in p6 require a review anyway.",
+    "body": "Attachment [trac_9497-singular-rm.patch](tarball://root/attachments/some-uuid/ticket9497/trac_9497-singular-rm.patch) by @jhpalmieri created at 2011-03-26 23:51:59\n\nThe spkg here needed to be rebased against the current one (which is also called \"...p4.spkg\").  I've rebased it, and then I made a further change: I changed \"$RM\" in the spkg-install file to \"rm\" -- this has been done in the spkg-install files for all of the other spkgs, and also see the discussion at #3537.  I've posted the patch files for the two new spkgs, for review purposes.  The two new spkgs are here:\n\n- [http://sage.math.washington.edu/home/palmieri/SPKG/singular-3-1-1-4.p5.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/singular-3-1-1-4.p5.spkg) -- enable parallel build\n- [http://sage.math.washington.edu/home/palmieri/SPKG/singular-3-1-1-4.p6.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/singular-3-1-1-4.p6.spkg) -- p5 and also change $RM to rm\n\nBy the way, I built p5 by applying malb's patch to the current p4.  I tested that successfully on a Mac, on sage.math, on Dave Kirkby's machine hawk (OpenSolaris), and on t2.math.washington.edu (Solaris).  I couldn't access the skynet machines, so I couldn't test on them, but this is a pretty good range of hardware.  The build was at least somewhat faster on all of them, and tests passed with the new version.  So this is almost good enough for a positive review of p5, except that I built it and I'd like another pair of eyes to look at it.  Then the changes in p6 require a review anyway.",
     "created_at": "2011-03-26T23:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91198",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9497-singular-rm.patch](tarball://root/attachments/some-uuid/ticket9497/trac_9497-singular-rm.patch) by jhpalmieri created at 2011-03-26 23:51:59
+Attachment [trac_9497-singular-rm.patch](tarball://root/attachments/some-uuid/ticket9497/trac_9497-singular-rm.patch) by @jhpalmieri created at 2011-03-26 23:51:59
 
 The spkg here needed to be rebased against the current one (which is also called "...p4.spkg").  I've rebased it, and then I made a further change: I changed "$RM" in the spkg-install file to "rm" -- this has been done in the spkg-install files for all of the other spkgs, and also see the discussion at #3537.  I've posted the patch files for the two new spkgs, for review purposes.  The two new spkgs are here:
 
@@ -418,7 +418,7 @@ archive/issue_comments_091200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91200",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_091201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91201",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_091202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91202",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_091204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91204",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -672,7 +672,7 @@ archive/issue_comments_091210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9497#issuecomment-91210",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -117,7 +117,7 @@ Changing component from algebra to graphics.
 archive/issue_comments_049375.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2009-06-02T12:16:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6184",
     "type": "issue_comment",
@@ -126,7 +126,7 @@ archive/issue_comments_049375.json:
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -140,7 +140,7 @@ archive/issue_comments_049376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6184#issuecomment-49376",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_049377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6184#issuecomment-49377",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

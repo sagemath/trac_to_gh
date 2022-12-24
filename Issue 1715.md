@@ -3,7 +3,7 @@
 archive/issues_001715.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin mabshoff\n\nPickling and hashing of PolyBori rings and polynomials.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1715\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin mabshoff\n\nPickling and hashing of PolyBori rings and polynomials.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1715\n\n",
     "created_at": "2008-01-07T15:41:40Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_001715.json:
     "title": "[with patch, needs review] PolyBoRi pickling/hasing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1715",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin mabshoff
+CC:  @burcin mabshoff
 
 Pickling and hashing of PolyBori rings and polynomials.
 
@@ -39,7 +39,7 @@ archive/issue_comments_010871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1715#issuecomment-10871",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_010872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1715#issuecomment-10872",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -92,16 +92,16 @@ Michael
 archive/issue_comments_010874.json:
 ```json
 {
-    "body": "Attachment [trac_1715.patch](tarball://root/attachments/some-uuid/ticket1715/trac_1715.patch) by malb created at 2008-01-17 13:23:12",
+    "body": "Attachment [trac_1715.patch](tarball://root/attachments/some-uuid/ticket1715/trac_1715.patch) by @malb created at 2008-01-17 13:23:12",
     "created_at": "2008-01-17T13:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1715#issuecomment-10874",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1715.patch](tarball://root/attachments/some-uuid/ticket1715/trac_1715.patch) by malb created at 2008-01-17 13:23:12
+Attachment [trac_1715.patch](tarball://root/attachments/some-uuid/ticket1715/trac_1715.patch) by @malb created at 2008-01-17 13:23:12
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_010875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1715#issuecomment-10875",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_010876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1715#issuecomment-10876",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

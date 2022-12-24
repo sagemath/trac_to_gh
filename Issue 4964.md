@@ -80,7 +80,7 @@ archive/issue_comments_037725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37725",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_037726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37726",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_037727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37727",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_037728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37728",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_037729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37729",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_037731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37731",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_037733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37733",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_037736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37736",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -413,16 +413,16 @@ New patch is up. I kept the pairing down in the ElliptiCurvePoint_finite_field c
 archive/issue_comments_037739.json:
 ```json
 {
-    "body": "Attachment [trac_4964a.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964a.patch) by cremona created at 2009-02-07 15:42:40\n\nThe revised patch fixes the bug.  I have taken the liberty of adding my patch trac_4964a.patch (to be applied after trac_4964.patch) which does the following:\n\n1. Adds a doctest to show that the bug I reported is fixed.\n2.  Moves the functions to the class EllipticCurvePoint_field, as I originally suggested, since this works perfectly well!\n3. Illustrate my point in 2 by adding a docest computing a 5th order Weil pairing over the 5th cyclotomic field.\n4. Edited the documentation about the implementation only applying when both points have the same order n, since in fact the only condition is that n*P=n*Q=0, i.e. that they are both in E[n], so the function could be applied to any two torsion points provided that n is a common multiple of their orders.\n\nIf dmhansen is happy with these adjustments then I am happy with the (combined) patch, so I am optimistically giving it a positive review.  Ideally, a 3rd party would take a look too.",
+    "body": "Attachment [trac_4964a.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964a.patch) by @JohnCremona created at 2009-02-07 15:42:40\n\nThe revised patch fixes the bug.  I have taken the liberty of adding my patch trac_4964a.patch (to be applied after trac_4964.patch) which does the following:\n\n1. Adds a doctest to show that the bug I reported is fixed.\n2.  Moves the functions to the class EllipticCurvePoint_field, as I originally suggested, since this works perfectly well!\n3. Illustrate my point in 2 by adding a docest computing a 5th order Weil pairing over the 5th cyclotomic field.\n4. Edited the documentation about the implementation only applying when both points have the same order n, since in fact the only condition is that n*P=n*Q=0, i.e. that they are both in E[n], so the function could be applied to any two torsion points provided that n is a common multiple of their orders.\n\nIf dmhansen is happy with these adjustments then I am happy with the (combined) patch, so I am optimistically giving it a positive review.  Ideally, a 3rd party would take a look too.",
     "created_at": "2009-02-07T15:42:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37739",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4964a.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964a.patch) by cremona created at 2009-02-07 15:42:40
+Attachment [trac_4964a.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964a.patch) by @JohnCremona created at 2009-02-07 15:42:40
 
 The revised patch fixes the bug.  I have taken the liberty of adding my patch trac_4964a.patch (to be applied after trac_4964.patch) which does the following:
 
@@ -473,16 +473,16 @@ I am very happy with the changes and yes it would be nice to get a 3rd party rev
 archive/issue_comments_037741.json:
 ```json
 {
-    "body": "Attachment [trac_4964b.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964b.patch) by cremona created at 2009-02-07 17:17:05\n\nApply after previous two.",
+    "body": "Attachment [trac_4964b.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964b.patch) by @JohnCremona created at 2009-02-07 17:17:05\n\nApply after previous two.",
     "created_at": "2009-02-07T17:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37741",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_4964b.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964b.patch) by cremona created at 2009-02-07 17:17:05
+Attachment [trac_4964b.patch](tarball://root/attachments/some-uuid/ticket4964/trac_4964b.patch) by @JohnCremona created at 2009-02-07 17:17:05
 
 Apply after previous two.
 
@@ -498,7 +498,7 @@ archive/issue_comments_037742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37742",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_037745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4964",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37745",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003071.json:
     "title": "Using pbuild does not create site-packages sage symlink",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3071",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 Assignee: mabshoff
@@ -41,7 +41,7 @@ archive/issue_comments_021198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3071#issuecomment-21198",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_021199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3071#issuecomment-21199",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -72,16 +72,16 @@ The attached patch should fix this issue and the linking issues reported on the 
 archive/issue_comments_021200.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to gfurnish.",
+    "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-05-02T00:18:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3071#issuecomment-21200",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from mabshoff to gfurnish.
+Changing assignee from mabshoff to @garyfurnish.
 
 
 
@@ -90,16 +90,16 @@ Changing assignee from mabshoff to gfurnish.
 archive/issue_comments_021201.json:
 ```json
 {
-    "body": "Attachment [trac_3071.patch](tarball://root/attachments/some-uuid/ticket3071/trac_3071.patch) by gfurnish created at 2008-05-02 00:21:33",
+    "body": "Attachment [trac_3071.patch](tarball://root/attachments/some-uuid/ticket3071/trac_3071.patch) by @garyfurnish created at 2008-05-02 00:21:33",
     "created_at": "2008-05-02T00:21:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3071#issuecomment-21201",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3071.patch](tarball://root/attachments/some-uuid/ticket3071/trac_3071.patch) by gfurnish created at 2008-05-02 00:21:33
+Attachment [trac_3071.patch](tarball://root/attachments/some-uuid/ticket3071/trac_3071.patch) by @garyfurnish created at 2008-05-02 00:21:33
 
 
 
@@ -108,16 +108,16 @@ Attachment [trac_3071.patch](tarball://root/attachments/some-uuid/ticket3071/tra
 archive/issue_comments_021202.json:
 ```json
 {
-    "body": "Attachment [trac_3071_2.patch](tarball://root/attachments/some-uuid/ticket3071/trac_3071_2.patch) by wjp created at 2008-05-02 10:18:40",
+    "body": "Attachment [trac_3071_2.patch](tarball://root/attachments/some-uuid/ticket3071/trac_3071_2.patch) by @wjp created at 2008-05-02 10:18:40",
     "created_at": "2008-05-02T10:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3071",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3071#issuecomment-21202",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac_3071_2.patch](tarball://root/attachments/some-uuid/ticket3071/trac_3071_2.patch) by wjp created at 2008-05-02 10:18:40
+Attachment [trac_3071_2.patch](tarball://root/attachments/some-uuid/ticket3071/trac_3071_2.patch) by @wjp created at 2008-05-02 10:18:40
 
 
 

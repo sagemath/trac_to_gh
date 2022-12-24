@@ -3,7 +3,7 @@
 archive/issues_000502.json:
 ```json
 {
-    "body": "Assignee: was\n\npexpect is at version 2.1, but SAGE uses 2.0.  Investigate why 2.1 is so much slower.\nAlso, speed everything up more.  Says dropdrive on irc:\n\n```\n\n13:53 < dropdrive> was_: I looked into the pipes being slow thing, and Pexpect is just horrible with large amounts of data\n                   (O(n^2)).  I made a fix (O(n)) that reads 6MB/s.  But pexpect will always be slow if you have to call\n                   .expect many times (twice per line as it stands), because pexpect slices its buffer every time.\n13:55 < dropdrive> was_: So if you read a 4096-byte block from a pipe, and .expect gets called every 80 characters,\n                   pexpect will build buffer[80*n:] for n from 1 to 50\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/502\n\n",
+    "body": "Assignee: @williamstein\n\npexpect is at version 2.1, but SAGE uses 2.0.  Investigate why 2.1 is so much slower.\nAlso, speed everything up more.  Says dropdrive on irc:\n\n```\n\n13:53 < dropdrive> was_: I looked into the pipes being slow thing, and Pexpect is just horrible with large amounts of data\n                   (O(n^2)).  I made a fix (O(n)) that reads 6MB/s.  But pexpect will always be slow if you have to call\n                   .expect many times (twice per line as it stands), because pexpect slices its buffer every time.\n13:55 < dropdrive> was_: So if you read a 4096-byte block from a pipe, and .expect gets called every 80 characters,\n                   pexpect will build buffer[80*n:] for n from 1 to 50\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/502\n\n",
     "created_at": "2007-08-28T21:07:42Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000502.json:
     "title": "pexpect -- optimize; maybe update to newest version?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/502",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 pexpect is at version 2.1, but SAGE uses 2.0.  Investigate why 2.1 is so much slower.
 Also, speed everything up more.  Says dropdrive on irc:
@@ -427,7 +427,7 @@ archive/issue_comments_002508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/502#issuecomment-2508",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_002509.json:
     "issue": "https://github.com/sagemath/sagetest/issues/502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/502#issuecomment-2509",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -463,7 +463,7 @@ archive/issue_comments_002510.json:
     "issue": "https://github.com/sagemath/sagetest/issues/502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/502#issuecomment-2510",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -481,7 +481,7 @@ archive/issue_comments_002511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/502#issuecomment-2511",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -499,7 +499,7 @@ archive/issue_comments_002512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/502#issuecomment-2512",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_002513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/502#issuecomment-2513",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_002514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/502#issuecomment-2514",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008918.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  jbandlow\n\nSee these examples:\n\n\n```\nsage: Permutation([1,2,3])\n[1, 2, 3]\nsage: Permutation([1,2,3,1])\n[1, 2, 3, 1]\nsage: [1,2,3] in Permutations()\nTrue\nsage: [1,2,3,1] in Permutations()\nFalse\nsage: Permutation([1,2,3,1]) in Permutations()\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8918\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @jbandlow\n\nSee these examples:\n\n\n```\nsage: Permutation([1,2,3])\n[1, 2, 3]\nsage: Permutation([1,2,3,1])\n[1, 2, 3, 1]\nsage: [1,2,3] in Permutations()\nTrue\nsage: [1,2,3,1] in Permutations()\nFalse\nsage: Permutation([1,2,3,1]) in Permutations()\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8918\n\n",
     "created_at": "2010-05-07T16:48:02Z",
     "labels": [
         "combinatorics",
@@ -19,7 +19,7 @@ archive/issues_008918.json:
 ```
 Assignee: sage-combinat
 
-CC:  jbandlow
+CC:  @jbandlow
 
 See these examples:
 
@@ -54,7 +54,7 @@ archive/issue_comments_082136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8918#issuecomment-82136",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_082137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8918#issuecomment-82137",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_082138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8918#issuecomment-82138",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_082139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8918#issuecomment-82139",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_082140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8918#issuecomment-82140",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_082141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8918",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8918#issuecomment-82141",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

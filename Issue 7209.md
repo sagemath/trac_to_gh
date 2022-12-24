@@ -3,7 +3,7 @@
 archive/issues_007209.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nWith the attached patch, sage -coverage looks for either a loads/dumps test or TestSuite, and suggests using the later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7209\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nWith the attached patch, sage -coverage looks for either a loads/dumps test or TestSuite, and suggests using the later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7209\n\n",
     "created_at": "2009-10-14T13:50:22Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_007209.json:
     "title": "Make `sage -coverage` aware of TestSuite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7209",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_059828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59828",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_059829.json:
 ```json
 {
-    "body": "Attachment [trac_7209-coverage-TestSuite-nt.patch](tarball://root/attachments/some-uuid/ticket7209/trac_7209-coverage-TestSuite-nt.patch) by nthiery created at 2009-10-14 14:09:30",
+    "body": "Attachment [trac_7209-coverage-TestSuite-nt.patch](tarball://root/attachments/some-uuid/ticket7209/trac_7209-coverage-TestSuite-nt.patch) by @nthiery created at 2009-10-14 14:09:30",
     "created_at": "2009-10-14T14:09:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59829",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7209-coverage-TestSuite-nt.patch](tarball://root/attachments/some-uuid/ticket7209/trac_7209-coverage-TestSuite-nt.patch) by nthiery created at 2009-10-14 14:09:30
+Attachment [trac_7209-coverage-TestSuite-nt.patch](tarball://root/attachments/some-uuid/ticket7209/trac_7209-coverage-TestSuite-nt.patch) by @nthiery created at 2009-10-14 14:09:30
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_059830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59830",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_059831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59831",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_059832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59832",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_059833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59833",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_059834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59834",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_059835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7209",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59835",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

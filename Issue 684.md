@@ -3,7 +3,7 @@
 archive/issues_000684.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: x = ntl.ZZ(5)\nsage: x\n5\nsage: type(x)\n<type 'sage.libs.ntl.ntl.ntl_ZZ'>\nsage: Integer(x)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/<ipython console> in <module>()\n\n/home/dmharvey/integer.pyx in integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/684\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: x = ntl.ZZ(5)\nsage: x\n5\nsage: type(x)\n<type 'sage.libs.ntl.ntl.ntl_ZZ'>\nsage: Integer(x)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/<ipython console> in <module>()\n\n/home/dmharvey/integer.pyx in integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/684\n\n",
     "created_at": "2007-09-18T00:49:08Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_000684.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -55,7 +55,7 @@ archive/issue_comments_003547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/684#issuecomment-3547",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_003548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/684#issuecomment-3548",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -100,7 +100,7 @@ William
 archive/issue_comments_003549.json:
 ```json
 {
-    "body": "Changing assignee from was to dmharvey.",
+    "body": "Changing assignee from @williamstein to dmharvey.",
     "created_at": "2007-09-28T04:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/684",
     "type": "issue_comment",
@@ -109,7 +109,7 @@ archive/issue_comments_003549.json:
 }
 ```
 
-Changing assignee from was to dmharvey.
+Changing assignee from @williamstein to dmharvey.
 
 
 
@@ -180,7 +180,7 @@ archive/issue_comments_003552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/684#issuecomment-3552",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_003553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/684",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/684#issuecomment-3553",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

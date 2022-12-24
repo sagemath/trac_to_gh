@@ -3,7 +3,7 @@
 archive/issues_008609.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe patch switches AmbientSpace and Scheme to inherit from Parent rather than old-style classes. I used to get random segfaults in \"sage -testall\" with this patch applied, but with 4.3.3 it seems to be smooth and in anyway the patch is very simple and should not introduce new bugs.\n\nTo \"fix\" broken doctests because of the missing list() method I have just removed them, since they were in functions not directly related to list() anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8609\n\n",
+    "body": "Assignee: @aghitza\n\nThe patch switches AmbientSpace and Scheme to inherit from Parent rather than old-style classes. I used to get random segfaults in \"sage -testall\" with this patch applied, but with 4.3.3 it seems to be smooth and in anyway the patch is very simple and should not introduce new bugs.\n\nTo \"fix\" broken doctests because of the missing list() method I have just removed them, since they were in functions not directly related to list() anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8609\n\n",
     "created_at": "2010-03-25T22:39:30Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_008609.json:
     "title": "Switch AmbientSpace and Scheme to Parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8609",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The patch switches AmbientSpace and Scheme to inherit from Parent rather than old-style classes. I used to get random segfaults in "sage -testall" with this patch applied, but with 4.3.3 it seems to be smooth and in anyway the patch is very simple and should not introduce new bugs.
 
@@ -39,7 +39,7 @@ archive/issue_comments_077989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8609#issuecomment-77989",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_077990.json:
 ```json
 {
-    "body": "Attachment [trac_8609_switch_ambient_space_and_scheme_to_parent.patch](tarball://root/attachments/some-uuid/ticket8609/trac_8609_switch_ambient_space_and_scheme_to_parent.patch) by novoselt created at 2010-03-25 22:52:48",
+    "body": "Attachment [trac_8609_switch_ambient_space_and_scheme_to_parent.patch](tarball://root/attachments/some-uuid/ticket8609/trac_8609_switch_ambient_space_and_scheme_to_parent.patch) by @novoselt created at 2010-03-25 22:52:48",
     "created_at": "2010-03-25T22:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8609#issuecomment-77990",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8609_switch_ambient_space_and_scheme_to_parent.patch](tarball://root/attachments/some-uuid/ticket8609/trac_8609_switch_ambient_space_and_scheme_to_parent.patch) by novoselt created at 2010-03-25 22:52:48
+Attachment [trac_8609_switch_ambient_space_and_scheme_to_parent.patch](tarball://root/attachments/some-uuid/ticket8609/trac_8609_switch_ambient_space_and_scheme_to_parent.patch) by @novoselt created at 2010-03-25 22:52:48
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_077991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8609#issuecomment-77991",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_077992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8609#issuecomment-77992",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_077993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8609#issuecomment-77993",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_077994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8609#issuecomment-77994",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_077995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8609#issuecomment-77995",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_077996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8609#issuecomment-77996",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_077997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8609#issuecomment-77997",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_077998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8609#issuecomment-77998",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_077999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8609#issuecomment-77999",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

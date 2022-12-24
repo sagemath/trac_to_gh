@@ -3,7 +3,7 @@
 archive/issues_000180.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n[justin]: Hmmm...it's actually \"-s -i\".  The 'sage' command seems to care about the order of switches; \"-f -i\" works, while \"-i -f\" doesn't.  \"-i -s\" does not save the results, while '-s -i' does.  Is that intentional?\n[11:54am] was389: it's a bug.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/180\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n[justin]: Hmmm...it's actually \"-s -i\".  The 'sage' command seems to care about the order of switches; \"-f -i\" works, while \"-i -f\" doesn't.  \"-i -s\" does not save the results, while '-s -i' does.  Is that intentional?\n[11:54am] was389: it's a bug.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/180\n\n",
     "created_at": "2006-12-10T19:59:06Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000180.json:
     "title": "-s option to sage issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/180",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -88,7 +88,7 @@ archive/issue_comments_000827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/180#issuecomment-827",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_000828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/180",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/180#issuecomment-828",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

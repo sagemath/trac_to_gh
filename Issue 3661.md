@@ -3,7 +3,7 @@
 archive/issues_003661.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3661\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3661\n\n",
     "created_at": "2008-07-16T00:32:47Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_003661.json:
     "title": "move sage/combinat/family.py into the main tree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3661",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3661
 archive/issue_comments_025874.json:
 ```json
 {
-    "body": "Attachment [trac_3661-2.patch](tarball://root/attachments/some-uuid/ticket3661/trac_3661-2.patch) by mhansen created at 2008-07-16 04:14:15",
+    "body": "Attachment [trac_3661-2.patch](tarball://root/attachments/some-uuid/ticket3661/trac_3661-2.patch) by @mwhansen created at 2008-07-16 04:14:15",
     "created_at": "2008-07-16T04:14:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3661#issuecomment-25874",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3661-2.patch](tarball://root/attachments/some-uuid/ticket3661/trac_3661-2.patch) by mhansen created at 2008-07-16 04:14:15
+Attachment [trac_3661-2.patch](tarball://root/attachments/some-uuid/ticket3661/trac_3661-2.patch) by @mwhansen created at 2008-07-16 04:14:15
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_025875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3661#issuecomment-25875",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_025876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3661#issuecomment-25876",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

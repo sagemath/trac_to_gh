@@ -3,7 +3,7 @@
 archive/issues_001111.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: eqn.expand() # does it to both sides\nsage: eqn.expand('right') # does it to the right\nsage: eqn.expand('left') # does it to the right\n```\n\n\nSee the sage-devel thread Enhancing the SymbolicEquation class\n\nIssue created by migration from https://trac.sagemath.org/ticket/1111\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: eqn.expand() # does it to both sides\nsage: eqn.expand('right') # does it to the right\nsage: eqn.expand('left') # does it to the right\n```\n\n\nSee the sage-devel thread Enhancing the SymbolicEquation class\n\nIssue created by migration from https://trac.sagemath.org/ticket/1111\n\n",
     "created_at": "2007-11-06T05:25:35Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001111.json:
     "title": "Symbolic equation expand left and right",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1111",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1111
 archive/issue_comments_006717.json:
 ```json
 {
-    "body": "Attachment [1111.patch](tarball://root/attachments/some-uuid/ticket1111/1111.patch) by mhansen created at 2007-11-26 22:01:19",
+    "body": "Attachment [1111.patch](tarball://root/attachments/some-uuid/ticket1111/1111.patch) by @mwhansen created at 2007-11-26 22:01:19",
     "created_at": "2007-11-26T22:01:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6717",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1111.patch](tarball://root/attachments/some-uuid/ticket1111/1111.patch) by mhansen created at 2007-11-26 22:01:19
+Attachment [1111.patch](tarball://root/attachments/some-uuid/ticket1111/1111.patch) by @mwhansen created at 2007-11-26 22:01:19
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_006718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6718",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -76,16 +76,16 @@ Changing status from new to assigned.
 archive/issue_comments_006719.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-11-26T22:01:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6719",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_006720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6720",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

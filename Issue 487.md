@@ -3,7 +3,7 @@
 archive/issues_000487.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe Problem has been reported by Kevin McGown at http://groups.google.com/group/sage-forum/t/a8a6efc565e36339\n\nIn SAGE 2.8 it seems there is a problem with the is_principal method\nfor fractional ideals in a number field.  In the code below I create\nthe same ideal in two different ways and obtain two different answers\nfrom is_principal (True and False). \n\n\n```\nsage: K = QuadraticField(-119,'a')\nsage: P2 = K.ideal([2]).factor()[0][0]\nsage: I = P2^5\nsage: a = K.0\nsage: J = K.ideal([1/2*a+3/2])\nsage: I==J\nTrue\nsage: I.is_principal()\nFalse\nsage: J.is_principal()\nTrue\n```\n\n\nKevin also suggested a fix:\n\n```\nI believe the problem is with the following line in the is_principal()\nmethod:\n\nif len (self.gens()) <= 1:\n\nInstead it should read:\n\nif len (self.gens_reduced()) <= 1:\n\nNot 100% sure, but I thought I would bring it to your attention.\n\n- Kevin\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/487\n\n",
+    "body": "Assignee: @williamstein\n\nThe Problem has been reported by Kevin McGown at http://groups.google.com/group/sage-forum/t/a8a6efc565e36339\n\nIn SAGE 2.8 it seems there is a problem with the is_principal method\nfor fractional ideals in a number field.  In the code below I create\nthe same ideal in two different ways and obtain two different answers\nfrom is_principal (True and False). \n\n\n```\nsage: K = QuadraticField(-119,'a')\nsage: P2 = K.ideal([2]).factor()[0][0]\nsage: I = P2^5\nsage: a = K.0\nsage: J = K.ideal([1/2*a+3/2])\nsage: I==J\nTrue\nsage: I.is_principal()\nFalse\nsage: J.is_principal()\nTrue\n```\n\n\nKevin also suggested a fix:\n\n```\nI believe the problem is with the following line in the is_principal()\nmethod:\n\nif len (self.gens()) <= 1:\n\nInstead it should read:\n\nif len (self.gens_reduced()) <= 1:\n\nNot 100% sure, but I thought I would bring it to your attention.\n\n- Kevin\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/487\n\n",
     "created_at": "2007-08-24T05:29:07Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_000487.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The Problem has been reported by Kevin McGown at http://groups.google.com/group/sage-forum/t/a8a6efc565e36339
 
@@ -120,7 +120,7 @@ archive/issue_comments_002431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/487#issuecomment-2431",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_002432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/487",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/487#issuecomment-2432",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

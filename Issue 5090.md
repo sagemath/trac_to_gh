@@ -3,7 +3,7 @@
 archive/issues_005090.json:
 ```json
 {
-    "body": "Assignee: was\n\nAn spkg is at http://sage.math.washington.edu/home/jason/numpy-1.2.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/5090\n\n",
+    "body": "Assignee: @williamstein\n\nAn spkg is at http://sage.math.washington.edu/home/jason/numpy-1.2.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/5090\n\n",
     "created_at": "2009-01-24T16:35:47Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005090.json:
     "title": "upgrade numpy to 1.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5090",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 An spkg is at http://sage.math.washington.edu/home/jason/numpy-1.2.1.spkg
 
@@ -74,7 +74,7 @@ Changing component from linear algebra to packages.
 archive/issue_comments_038782.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2009-01-24T18:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
@@ -83,7 +83,7 @@ archive/issue_comments_038782.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -217,7 +217,7 @@ archive/issue_comments_038789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38789",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_038790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38790",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_038791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38791",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_038792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38792",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

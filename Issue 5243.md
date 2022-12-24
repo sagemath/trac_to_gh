@@ -3,7 +3,7 @@
 archive/issues_005243.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat ddrake\n\nKeywords: parking functions / Dyck words\n\nThis patch implement the combinatorial classes of non decreassing parking function with the usual methods (counting/listing/!__contains!__/iterating)... It also implements bijections from and to Dyck words.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5243\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @dandrake\n\nKeywords: parking functions / Dyck words\n\nThis patch implement the combinatorial classes of non decreassing parking function with the usual methods (counting/listing/!__contains!__/iterating)... It also implements bijections from and to Dyck words.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5243\n\n",
     "created_at": "2009-02-12T13:45:37Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_005243.json:
     "title": "[with patch, needs review] non decreasing parking functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5243",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  sage-combinat ddrake
+CC:  sage-combinat @dandrake
 
 Keywords: parking functions / Dyck words
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5243
 archive/issue_comments_040186.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to nthiery.",
+    "body": "Changing assignee from @mwhansen to @nthiery.",
     "created_at": "2009-02-12T18:39:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40186",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from mhansen to nthiery.
+Changing assignee from @mwhansen to @nthiery.
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_040187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40187",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_040188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40188",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -90,16 +90,16 @@ I modified my patch according to Nicolas remarks. I took the occasion to adapt t
 archive/issue_comments_040189.json:
 ```json
 {
-    "body": "Changing assignee from nthiery to hivert.",
+    "body": "Changing assignee from @nthiery to @hivert.",
     "created_at": "2009-03-01T18:23:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40189",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from nthiery to hivert.
+Changing assignee from @nthiery to @hivert.
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_040190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40190",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_040191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40191",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_040192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40192",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -164,16 +164,16 @@ Rebased patch
 archive/issue_comments_040193.json:
 ```json
 {
-    "body": "Attachment [non_decreasing_parking_function-5243-submitted.patch](tarball://root/attachments/some-uuid/ticket5243/non_decreasing_parking_function-5243-submitted.patch) by nthiery created at 2009-04-14 02:14:33",
+    "body": "Attachment [non_decreasing_parking_function-5243-submitted.patch](tarball://root/attachments/some-uuid/ticket5243/non_decreasing_parking_function-5243-submitted.patch) by @nthiery created at 2009-04-14 02:14:33",
     "created_at": "2009-04-14T02:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40193",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [non_decreasing_parking_function-5243-submitted.patch](tarball://root/attachments/some-uuid/ticket5243/non_decreasing_parking_function-5243-submitted.patch) by nthiery created at 2009-04-14 02:14:33
+Attachment [non_decreasing_parking_function-5243-submitted.patch](tarball://root/attachments/some-uuid/ticket5243/non_decreasing_parking_function-5243-submitted.patch) by @nthiery created at 2009-04-14 02:14:33
 
 
 
@@ -187,7 +187,7 @@ archive/issue_comments_040194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40194",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_040195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40195",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_040196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40196",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_040197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40197",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -335,16 +335,16 @@ I uploaded my documentation fixes patch, since there's no reason to keep it secr
 archive/issue_comments_040198.json:
 ```json
 {
-    "body": "Attachment [trac_5243-fixes.patch](tarball://root/attachments/some-uuid/ticket5243/trac_5243-fixes.patch) by ddrake created at 2009-05-06 04:28:52",
+    "body": "Attachment [trac_5243-fixes.patch](tarball://root/attachments/some-uuid/ticket5243/trac_5243-fixes.patch) by @dandrake created at 2009-05-06 04:28:52",
     "created_at": "2009-05-06T04:28:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40198",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_5243-fixes.patch](tarball://root/attachments/some-uuid/ticket5243/trac_5243-fixes.patch) by ddrake created at 2009-05-06 04:28:52
+Attachment [trac_5243-fixes.patch](tarball://root/attachments/some-uuid/ticket5243/trac_5243-fixes.patch) by @dandrake created at 2009-05-06 04:28:52
 
 
 
@@ -353,16 +353,16 @@ Attachment [trac_5243-fixes.patch](tarball://root/attachments/some-uuid/ticket52
 archive/issue_comments_040199.json:
 ```json
 {
-    "body": "Attachment [trac_5243-getitem_vs_call.patch](tarball://root/attachments/some-uuid/ticket5243/trac_5243-getitem_vs_call.patch) by mhansen created at 2009-09-26 04:16:51",
+    "body": "Attachment [trac_5243-getitem_vs_call.patch](tarball://root/attachments/some-uuid/ticket5243/trac_5243-getitem_vs_call.patch) by @mwhansen created at 2009-09-26 04:16:51",
     "created_at": "2009-09-26T04:16:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40199",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5243-getitem_vs_call.patch](tarball://root/attachments/some-uuid/ticket5243/trac_5243-getitem_vs_call.patch) by mhansen created at 2009-09-26 04:16:51
+Attachment [trac_5243-getitem_vs_call.patch](tarball://root/attachments/some-uuid/ticket5243/trac_5243-getitem_vs_call.patch) by @mwhansen created at 2009-09-26 04:16:51
 
 
 
@@ -376,7 +376,7 @@ archive/issue_comments_040200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40200",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_040201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40201",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_040202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40202",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_040203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5243#issuecomment-40203",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

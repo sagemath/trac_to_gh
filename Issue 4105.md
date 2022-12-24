@@ -14,7 +14,7 @@ archive/issues_004105.json:
     "title": "multiplication of permutations in distinct subgroups sometimes doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4105",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: joyner
@@ -82,7 +82,7 @@ archive/issue_comments_029727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29727",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_029728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29728",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_029730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29730",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_029731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29731",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_029732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29732",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_029733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29733",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_029734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29734",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_029735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4105",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29735",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

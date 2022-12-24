@@ -14,7 +14,7 @@ archive/issues_006315.json:
     "title": "optional doctest failure -- caused by mistakes in lectures on number theory rst book",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6315",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -155,7 +155,7 @@ archive/issue_comments_050408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6315#issuecomment-50408",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -174,16 +174,16 @@ Are the authors of the book aware of this error?
 archive/issue_comments_050409.json:
 ```json
 {
-    "body": "Attachment [trac_6315-part2.patch](tarball://root/attachments/some-uuid/ticket6315/trac_6315-part2.patch) by was created at 2011-08-23 08:10:37\n\nReplying to [comment:2 mstreng]:\n> Are the authors of the book aware of this error?\n\nThe authors \"= me\" is aware now.  I've posted a part2 patch that puts ...'s in for the timings, explains that the doctest is showing the reader *how* to compare timings with Magma (which is good to know how to do easily), and remarks that in fact the timings may change over time.",
+    "body": "Attachment [trac_6315-part2.patch](tarball://root/attachments/some-uuid/ticket6315/trac_6315-part2.patch) by @williamstein created at 2011-08-23 08:10:37\n\nReplying to [comment:2 mstreng]:\n> Are the authors of the book aware of this error?\n\nThe authors \"= me\" is aware now.  I've posted a part2 patch that puts ...'s in for the timings, explains that the doctest is showing the reader *how* to compare timings with Magma (which is good to know how to do easily), and remarks that in fact the timings may change over time.",
     "created_at": "2011-08-23T08:10:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6315#issuecomment-50409",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6315-part2.patch](tarball://root/attachments/some-uuid/ticket6315/trac_6315-part2.patch) by was created at 2011-08-23 08:10:37
+Attachment [trac_6315-part2.patch](tarball://root/attachments/some-uuid/ticket6315/trac_6315-part2.patch) by @williamstein created at 2011-08-23 08:10:37
 
 Replying to [comment:2 mstreng]:
 > Are the authors of the book aware of this error?
@@ -202,7 +202,7 @@ archive/issue_comments_050410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6315#issuecomment-50410",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_050411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6315#issuecomment-50411",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_050412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6315#issuecomment-50412",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_050413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6315",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6315#issuecomment-50413",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

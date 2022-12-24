@@ -14,7 +14,7 @@ archive/issues_005379.json:
     "title": "html conversion problems with live version of tutorial (ReST version)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5379",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tba
@@ -114,16 +114,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5379
 archive/issue_comments_041419.json:
 ```json
 {
-    "body": "Changing assignee from tba to jhpalmieri.",
+    "body": "Changing assignee from tba to @jhpalmieri.",
     "created_at": "2009-04-07T21:09:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41419",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from tba to jhpalmieri.
+Changing assignee from tba to @jhpalmieri.
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_041420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41420",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_041421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41421",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -168,16 +168,16 @@ In the most recent version of Sage (3.4.1.rc1), I don't see problems 4, 5, 6 any
 archive/issue_comments_041422.json:
 ```json
 {
-    "body": "Attachment [5379-live-tut.patch](tarball://root/attachments/some-uuid/ticket5379/5379-live-tut.patch) by was created at 2009-04-12 05:40:40",
+    "body": "Attachment [5379-live-tut.patch](tarball://root/attachments/some-uuid/ticket5379/5379-live-tut.patch) by @williamstein created at 2009-04-12 05:40:40",
     "created_at": "2009-04-12T05:40:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41422",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [5379-live-tut.patch](tarball://root/attachments/some-uuid/ticket5379/5379-live-tut.patch) by was created at 2009-04-12 05:40:40
+Attachment [5379-live-tut.patch](tarball://root/attachments/some-uuid/ticket5379/5379-live-tut.patch) by @williamstein created at 2009-04-12 05:40:40
 
 
 
@@ -191,7 +191,7 @@ archive/issue_comments_041423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41423",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_041424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41424",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_041425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41425",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -240,16 +240,16 @@ apply this on top of the other patch
 archive/issue_comments_041426.json:
 ```json
 {
-    "body": "Attachment [5379-doctest.patch](tarball://root/attachments/some-uuid/ticket5379/5379-doctest.patch) by was created at 2009-04-13 14:11:12\n\nIt works now.",
+    "body": "Attachment [5379-doctest.patch](tarball://root/attachments/some-uuid/ticket5379/5379-doctest.patch) by @williamstein created at 2009-04-13 14:11:12\n\nIt works now.",
     "created_at": "2009-04-13T14:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41426",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [5379-doctest.patch](tarball://root/attachments/some-uuid/ticket5379/5379-doctest.patch) by was created at 2009-04-13 14:11:12
+Attachment [5379-doctest.patch](tarball://root/attachments/some-uuid/ticket5379/5379-doctest.patch) by @williamstein created at 2009-04-13 14:11:12
 
 It works now.
 

@@ -3,7 +3,7 @@
 archive/issues_006545.json:
 ```json
 {
-    "body": "Assignee: malb\n\n`MPolynomialIdeal.interreduced_basis()` should return the same sorted list as `MPolynomialIdeal.interreduced_basis()`, also the input to `MPolynomialIdeal.triangular_decomposition()` must be sorted to avoid confusing Singular.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6545\n\n",
+    "body": "Assignee: @malb\n\n`MPolynomialIdeal.interreduced_basis()` should return the same sorted list as `MPolynomialIdeal.interreduced_basis()`, also the input to `MPolynomialIdeal.triangular_decomposition()` must be sorted to avoid confusing Singular.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6545\n\n",
     "created_at": "2009-07-16T19:23:45Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_006545.json:
     "title": "sorting of ideal bases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6545",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 `MPolynomialIdeal.interreduced_basis()` should return the same sorted list as `MPolynomialIdeal.interreduced_basis()`, also the input to `MPolynomialIdeal.triangular_decomposition()` must be sorted to avoid confusing Singular.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6545
 archive/issue_comments_053362.json:
 ```json
 {
-    "body": "Attachment [trac_6545_mpolynomial_ideal_sorted_outputs.patch](tarball://root/attachments/some-uuid/ticket6545/trac_6545_mpolynomial_ideal_sorted_outputs.patch) by malb created at 2009-07-16 19:24:52",
+    "body": "Attachment [trac_6545_mpolynomial_ideal_sorted_outputs.patch](tarball://root/attachments/some-uuid/ticket6545/trac_6545_mpolynomial_ideal_sorted_outputs.patch) by @malb created at 2009-07-16 19:24:52",
     "created_at": "2009-07-16T19:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6545#issuecomment-53362",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_6545_mpolynomial_ideal_sorted_outputs.patch](tarball://root/attachments/some-uuid/ticket6545/trac_6545_mpolynomial_ideal_sorted_outputs.patch) by malb created at 2009-07-16 19:24:52
+Attachment [trac_6545_mpolynomial_ideal_sorted_outputs.patch](tarball://root/attachments/some-uuid/ticket6545/trac_6545_mpolynomial_ideal_sorted_outputs.patch) by @malb created at 2009-07-16 19:24:52
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_053363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6545#issuecomment-53363",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_053364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6545#issuecomment-53364",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_053365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6545#issuecomment-53365",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_053366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6545#issuecomment-53366",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_053367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6545#issuecomment-53367",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_053368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6545#issuecomment-53368",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_053369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6545#issuecomment-53369",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_053370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6545#issuecomment-53370",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_053371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6545#issuecomment-53371",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_053372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6545#issuecomment-53372",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_053373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6545#issuecomment-53373",
-    "user": "john_perry"
+    "user": "@johnperry-math"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_053375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6545#issuecomment-53375",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

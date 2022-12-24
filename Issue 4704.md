@@ -3,7 +3,7 @@
 archive/issues_004704.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  boothby tclemans robertwb\n\nThis ticket splits off part of #4267.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4704\n\n",
+    "body": "Assignee: boothby\n\nCC:  boothby tclemans @robertwb\n\nThis ticket splits off part of #4267.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4704\n\n",
     "created_at": "2008-12-05T01:11:07Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_004704.json:
     "title": "Use jquery to make the javascript code nicer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4704",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  boothby tclemans robertwb
+CC:  boothby tclemans @robertwb
 
 This ticket splits off part of #4267.
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4704
 archive/issue_comments_035435.json:
 ```json
 {
-    "body": "Attachment [jquery-javascript-cleanup.patch](tarball://root/attachments/some-uuid/ticket4704/jquery-javascript-cleanup.patch) by jason created at 2008-12-05 01:11:54\n\nThis depends on the patch at #4700.",
+    "body": "Attachment [jquery-javascript-cleanup.patch](tarball://root/attachments/some-uuid/ticket4704/jquery-javascript-cleanup.patch) by @jasongrout created at 2008-12-05 01:11:54\n\nThis depends on the patch at #4700.",
     "created_at": "2008-12-05T01:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4704#issuecomment-35435",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [jquery-javascript-cleanup.patch](tarball://root/attachments/some-uuid/ticket4704/jquery-javascript-cleanup.patch) by jason created at 2008-12-05 01:11:54
+Attachment [jquery-javascript-cleanup.patch](tarball://root/attachments/some-uuid/ticket4704/jquery-javascript-cleanup.patch) by @jasongrout created at 2008-12-05 01:11:54
 
 This depends on the patch at #4700.
 
@@ -56,16 +56,16 @@ This depends on the patch at #4700.
 archive/issue_comments_035436.json:
 ```json
 {
-    "body": "Changing assignee from boothby to jason.",
+    "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2008-12-05T01:12:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4704#issuecomment-35436",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from boothby to jason.
+Changing assignee from boothby to @jasongrout.
 
 
 
@@ -79,7 +79,7 @@ archive/issue_comments_035437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4704#issuecomment-35437",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_035438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4704#issuecomment-35438",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_035439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4704#issuecomment-35439",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_035440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4704#issuecomment-35440",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_035442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4704#issuecomment-35442",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_035443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4704#issuecomment-35443",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_035444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4704#issuecomment-35444",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_035445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4704#issuecomment-35445",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_035452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4704",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4704#issuecomment-35452",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

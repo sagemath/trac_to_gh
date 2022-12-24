@@ -3,7 +3,7 @@
 archive/issues_008237.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  robert.marik\n\nAs subject says:\n\n```\nsage: maxima('inf').sage()\n+Infinity\nsage: maxima('infinity').sage()\n+Infinity\n```\n\n\nFrom Maxima manual\n\n```\nConstant: inf\n    inf represents real positive infinity.\n\nConstant: infinity\n    infinity represents complex infinity.\n\nConstant: minf\n    minf represents real minus (i.e., negative) infinity. \n```\n\nAs a cosequence, Sage fails to evaluate limit of 1/x at x=0. Maxima gives correct result (complex infinity)\n\n```\nsage: maxima('limit(1/x,x,0)')\ninfinity\nsage: maxima('limit(1/x,x,0)').sage()\n+Infinity\nsage: limit(1/x,x=0)\n+Infinity\nsage: maxima('limit(1/x,x,0,plus)')\ninf\nsage: maxima('limit(1/x,x,0,plus)').sage()\n+Infinity\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8237\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @robert-marik\n\nAs subject says:\n\n```\nsage: maxima('inf').sage()\n+Infinity\nsage: maxima('infinity').sage()\n+Infinity\n```\n\n\nFrom Maxima manual\n\n```\nConstant: inf\n    inf represents real positive infinity.\n\nConstant: infinity\n    infinity represents complex infinity.\n\nConstant: minf\n    minf represents real minus (i.e., negative) infinity. \n```\n\nAs a cosequence, Sage fails to evaluate limit of 1/x at x=0. Maxima gives correct result (complex infinity)\n\n```\nsage: maxima('limit(1/x,x,0)')\ninfinity\nsage: maxima('limit(1/x,x,0)').sage()\n+Infinity\nsage: limit(1/x,x=0)\n+Infinity\nsage: maxima('limit(1/x,x,0,plus)')\ninf\nsage: maxima('limit(1/x,x,0,plus)').sage()\n+Infinity\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8237\n\n",
     "created_at": "2010-02-11T17:09:35Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_008237.json:
     "title": "Sage does not recognize Maxima's complex ininity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8237",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  robert.marik
+CC:  @robert-marik
 
 As subject says:
 
@@ -76,7 +76,7 @@ archive/issue_comments_072758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72758",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -89,16 +89,16 @@ reported on [sage-devel](http://groups.google.cz/group/sage-devel/browse_thread/
 archive/issue_comments_072759.json:
 ```json
 {
-    "body": "Changing assignee from burcin to robert.marik.",
+    "body": "Changing assignee from @burcin to @robert-marik.",
     "created_at": "2010-02-11T18:22:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72759",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Changing assignee from burcin to robert.marik.
+Changing assignee from @burcin to @robert-marik.
 
 
 
@@ -107,16 +107,16 @@ Changing assignee from burcin to robert.marik.
 archive/issue_comments_072760.json:
 ```json
 {
-    "body": "Changing assignee from robert.marik to burcin.",
+    "body": "Changing assignee from @robert-marik to @burcin.",
     "created_at": "2010-02-11T18:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72760",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Changing assignee from robert.marik to burcin.
+Changing assignee from @robert-marik to @burcin.
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_072761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72761",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -170,16 +170,16 @@ What the heck?
 archive/issue_comments_072762.json:
 ```json
 {
-    "body": "Attachment [trac_8237-maxima_infinity.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.patch) by burcin created at 2010-02-11 22:00:42\n\nfix conversion of different infinities back from maxima",
+    "body": "Attachment [trac_8237-maxima_infinity.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.patch) by @burcin created at 2010-02-11 22:00:42\n\nfix conversion of different infinities back from maxima",
     "created_at": "2010-02-11T22:00:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72762",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8237-maxima_infinity.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.patch) by burcin created at 2010-02-11 22:00:42
+Attachment [trac_8237-maxima_infinity.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.patch) by @burcin created at 2010-02-11 22:00:42
 
 fix conversion of different infinities back from maxima
 
@@ -195,7 +195,7 @@ archive/issue_comments_072763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72763",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_072764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72764",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_072765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72765",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_072766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72766",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_072767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72767",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -327,16 +327,16 @@ apply only this patch
 archive/issue_comments_072768.json:
 ```json
 {
-    "body": "Attachment [trac_8237-maxima_infinity.take2.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.take2.patch) by burcin created at 2010-02-20 14:36:11\n\nI was trying to get the first patch out quickly, so it ended up being too sloppy. I hope attachment:trac_8237-maxima_infinity.take2.patch is cleaner. :)\n\nI think it's more natural to put the maxima conversions for different infinities in `sage/symbolic/constants.py` where all the other constants are declared, so I removed the lines in `calculus.py`. I also added doctests with `limit(1/x, ...)`.",
+    "body": "Attachment [trac_8237-maxima_infinity.take2.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.take2.patch) by @burcin created at 2010-02-20 14:36:11\n\nI was trying to get the first patch out quickly, so it ended up being too sloppy. I hope attachment:trac_8237-maxima_infinity.take2.patch is cleaner. :)\n\nI think it's more natural to put the maxima conversions for different infinities in `sage/symbolic/constants.py` where all the other constants are declared, so I removed the lines in `calculus.py`. I also added doctests with `limit(1/x, ...)`.",
     "created_at": "2010-02-20T14:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72768",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8237-maxima_infinity.take2.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.take2.patch) by burcin created at 2010-02-20 14:36:11
+Attachment [trac_8237-maxima_infinity.take2.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.take2.patch) by @burcin created at 2010-02-20 14:36:11
 
 I was trying to get the first patch out quickly, so it ended up being too sloppy. I hope attachment:trac_8237-maxima_infinity.take2.patch is cleaner. :)
 
@@ -354,7 +354,7 @@ archive/issue_comments_072769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72769",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_072771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72771",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -500,7 +500,7 @@ archive/issue_comments_072773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72773",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -513,16 +513,16 @@ apply only this patch
 archive/issue_comments_072774.json:
 ```json
 {
-    "body": "Attachment [trac_8237-maxima_infinity.take3.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.take3.patch) by burcin created at 2010-04-12 08:35:08\n\nI rebased the patch so that it applies cleanly after #7661.\n\nThis ticket depends on #7661. Only attachment:trac_8237-maxima_infinity.take3.patch should be applied.",
+    "body": "Attachment [trac_8237-maxima_infinity.take3.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.take3.patch) by @burcin created at 2010-04-12 08:35:08\n\nI rebased the patch so that it applies cleanly after #7661.\n\nThis ticket depends on #7661. Only attachment:trac_8237-maxima_infinity.take3.patch should be applied.",
     "created_at": "2010-04-12T08:35:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72774",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8237-maxima_infinity.take3.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.take3.patch) by burcin created at 2010-04-12 08:35:08
+Attachment [trac_8237-maxima_infinity.take3.patch](tarball://root/attachments/some-uuid/ticket8237/trac_8237-maxima_infinity.take3.patch) by @burcin created at 2010-04-12 08:35:08
 
 I rebased the patch so that it applies cleanly after #7661.
 
@@ -540,7 +540,7 @@ archive/issue_comments_072775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72775",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_072776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72776",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -580,7 +580,7 @@ archive/issue_comments_072777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8237#issuecomment-72777",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 

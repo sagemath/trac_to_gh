@@ -61,7 +61,7 @@ archive/issue_comments_007982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1275#issuecomment-7982",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_007983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1275#issuecomment-7983",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_007986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1275#issuecomment-7986",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -252,16 +252,16 @@ One thing that looked really out of place to me was the handling of the golden r
 archive/issue_comments_007987.json:
 ```json
 {
-    "body": "Attachment [qqbar-sqrt-golden.patch](tarball://root/attachments/some-uuid/ticket1275/qqbar-sqrt-golden.patch) by robertwb created at 2007-12-01 02:27:29",
+    "body": "Attachment [qqbar-sqrt-golden.patch](tarball://root/attachments/some-uuid/ticket1275/qqbar-sqrt-golden.patch) by @robertwb created at 2007-12-01 02:27:29",
     "created_at": "2007-12-01T02:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1275#issuecomment-7987",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [qqbar-sqrt-golden.patch](tarball://root/attachments/some-uuid/ticket1275/qqbar-sqrt-golden.patch) by robertwb created at 2007-12-01 02:27:29
+Attachment [qqbar-sqrt-golden.patch](tarball://root/attachments/some-uuid/ticket1275/qqbar-sqrt-golden.patch) by @robertwb created at 2007-12-01 02:27:29
 
 
 
@@ -335,7 +335,7 @@ archive/issue_comments_007990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1275#issuecomment-7990",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

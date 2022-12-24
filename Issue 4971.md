@@ -69,16 +69,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4971
 archive/issue_comments_037858.json:
 ```json
 {
-    "body": "Attachment [trac_4971.patch](tarball://root/attachments/some-uuid/ticket4971/trac_4971.patch) by was created at 2009-01-24 16:05:41",
+    "body": "Attachment [trac_4971.patch](tarball://root/attachments/some-uuid/ticket4971/trac_4971.patch) by @williamstein created at 2009-01-24 16:05:41",
     "created_at": "2009-01-24T16:05:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4971#issuecomment-37858",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4971.patch](tarball://root/attachments/some-uuid/ticket4971/trac_4971.patch) by was created at 2009-01-24 16:05:41
+Attachment [trac_4971.patch](tarball://root/attachments/some-uuid/ticket4971/trac_4971.patch) by @williamstein created at 2009-01-24 16:05:41
 
 
 

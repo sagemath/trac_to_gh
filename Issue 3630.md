@@ -14,7 +14,7 @@ archive/issues_003630.json:
     "title": "[with spkg, needs review] twisted 8.1.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3630",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 Assignee: mabshoff

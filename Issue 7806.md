@@ -14,7 +14,7 @@ archive/issues_007806.json:
     "title": "Clarify what a MIP variable is",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7806",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: mvngu
@@ -39,7 +39,7 @@ archive/issue_comments_067533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7806",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7806#issuecomment-67533",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004335.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nGiven a space of CuspForms, there is a newforms method which gives a list of newforms associated to that space, with a name specified by the user. However, this does not seem to work correctly at the moment:\n\n```\nsage: S=CuspForms(23)\nsage: S.newforms('b')\n[q + a0*q^2 + (-2*a0 - 1)*q^3 + (-a0 - 1)*q^4 + 2*a0*q^5 + O(q^6)]\n```\n\n\nI think that the newforms code should be changed to something like:\n\n```\ndef newforms(self, names=None):\n        \"\"\"\n        Return all cusp forms in the cuspidal subspace of self.\n        \n        EXAMPLES:\n        \n        sage: CuspForms(23).newforms('b')\n        [q + b0*q^2 + (-2*b0 - 1)*q^3 + (-b0 - 1)*q^4 + 2*b0*q^5 + O(q^6)]\n        \"\"\"\n        M = self.modular_symbols(sign=1)\n        factors = M.cuspidal_subspace().new_subspace().decomposition()\n        large_dims = [ X.dimension() for X in factors if X.dimension() != 1 ]\n        if len(large_dims) > 0 and names is None:            \n            names = 'a'\n        return [ element.Newform(self, factors[i], names=(names+str(i)) )\n                 for i in range(len(factors)) ]\n```\n\n(removing the ValueError statement) as this should correctly use the user-specified name if one is given or default to 'a' if one is not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4335\n\n",
+    "body": "Assignee: @craigcitro\n\nGiven a space of CuspForms, there is a newforms method which gives a list of newforms associated to that space, with a name specified by the user. However, this does not seem to work correctly at the moment:\n\n```\nsage: S=CuspForms(23)\nsage: S.newforms('b')\n[q + a0*q^2 + (-2*a0 - 1)*q^3 + (-a0 - 1)*q^4 + 2*a0*q^5 + O(q^6)]\n```\n\n\nI think that the newforms code should be changed to something like:\n\n```\ndef newforms(self, names=None):\n        \"\"\"\n        Return all cusp forms in the cuspidal subspace of self.\n        \n        EXAMPLES:\n        \n        sage: CuspForms(23).newforms('b')\n        [q + b0*q^2 + (-2*b0 - 1)*q^3 + (-b0 - 1)*q^4 + 2*b0*q^5 + O(q^6)]\n        \"\"\"\n        M = self.modular_symbols(sign=1)\n        factors = M.cuspidal_subspace().new_subspace().decomposition()\n        large_dims = [ X.dimension() for X in factors if X.dimension() != 1 ]\n        if len(large_dims) > 0 and names is None:            \n            names = 'a'\n        return [ element.Newform(self, factors[i], names=(names+str(i)) )\n                 for i in range(len(factors)) ]\n```\n\n(removing the ValueError statement) as this should correctly use the user-specified name if one is given or default to 'a' if one is not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4335\n\n",
     "created_at": "2008-10-21T19:15:07Z",
     "labels": [
         "modular forms",
@@ -17,7 +17,7 @@ archive/issues_004335.json:
     "user": "ljpk"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Given a space of CuspForms, there is a newforms method which gives a list of newforms associated to that space, with a name specified by the user. However, this does not seem to work correctly at the moment:
 
@@ -67,7 +67,7 @@ archive/issue_comments_031786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31786",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -82,16 +82,16 @@ Thanks for pointing this out!  I guess we only ever tested with 'a'.  This will 
 archive/issue_comments_031787.json:
 ```json
 {
-    "body": "Attachment [trac-4335.patch](tarball://root/attachments/some-uuid/ticket4335/trac-4335.patch) by craigcitro created at 2008-10-22 04:13:57\n\nSorry, I couldn't wait until Thursday. :) I think William's comment is right -- I probably just never tested this with anything except `a`, since that's the letter I usually use. \n\nHowever, raising an error if no variable name is provided is, in fact, the intended behavior -- basically obeying the rule of \"explicit is better than implicit.\"",
+    "body": "Attachment [trac-4335.patch](tarball://root/attachments/some-uuid/ticket4335/trac-4335.patch) by @craigcitro created at 2008-10-22 04:13:57\n\nSorry, I couldn't wait until Thursday. :) I think William's comment is right -- I probably just never tested this with anything except `a`, since that's the letter I usually use. \n\nHowever, raising an error if no variable name is provided is, in fact, the intended behavior -- basically obeying the rule of \"explicit is better than implicit.\"",
     "created_at": "2008-10-22T04:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31787",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4335.patch](tarball://root/attachments/some-uuid/ticket4335/trac-4335.patch) by craigcitro created at 2008-10-22 04:13:57
+Attachment [trac-4335.patch](tarball://root/attachments/some-uuid/ticket4335/trac-4335.patch) by @craigcitro created at 2008-10-22 04:13:57
 
 Sorry, I couldn't wait until Thursday. :) I think William's comment is right -- I probably just never tested this with anything except `a`, since that's the letter I usually use. 
 
@@ -109,7 +109,7 @@ archive/issue_comments_031788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31788",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_031789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31789",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_031791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31791",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_031792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31792",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -231,16 +231,16 @@ Michael
 archive/issue_comments_031794.json:
 ```json
 {
-    "body": "Attachment [trac-4335-rebase.patch](tarball://root/attachments/some-uuid/ticket4335/trac-4335-rebase.patch) by craigcitro created at 2008-10-26 04:53:40\n\nI rebased the patch, and it *should* work -- I don't have a current alpha, but I was pretty sure it was my patch from another ticket that caused the merge troubles. Let me know if this one doesn't work.",
+    "body": "Attachment [trac-4335-rebase.patch](tarball://root/attachments/some-uuid/ticket4335/trac-4335-rebase.patch) by @craigcitro created at 2008-10-26 04:53:40\n\nI rebased the patch, and it *should* work -- I don't have a current alpha, but I was pretty sure it was my patch from another ticket that caused the merge troubles. Let me know if this one doesn't work.",
     "created_at": "2008-10-26T04:53:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4335",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31794",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4335-rebase.patch](tarball://root/attachments/some-uuid/ticket4335/trac-4335-rebase.patch) by craigcitro created at 2008-10-26 04:53:40
+Attachment [trac-4335-rebase.patch](tarball://root/attachments/some-uuid/ticket4335/trac-4335-rebase.patch) by @craigcitro created at 2008-10-26 04:53:40
 
 I rebased the patch, and it *should* work -- I don't have a current alpha, but I was pretty sure it was my patch from another ticket that caused the merge troubles. Let me know if this one doesn't work.
 

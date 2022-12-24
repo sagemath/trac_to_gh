@@ -14,7 +14,7 @@ archive/issues_007800.json:
     "title": "dsage -- re-enable use of openssl to certificate keys, if openssl is installed  (why the notebook in secure mode is so slow to generate initial kesy!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7800",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -58,7 +58,7 @@ archive/issue_comments_067488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7800#issuecomment-67488",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_067489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7800#issuecomment-67489",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_067490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7800#issuecomment-67490",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_067494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7800#issuecomment-67494",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_067495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7800",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7800#issuecomment-67495",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

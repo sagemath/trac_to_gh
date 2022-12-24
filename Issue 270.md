@@ -14,7 +14,7 @@ archive/issues_000270.json:
     "title": "bug in permutation group arithmetic code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/270",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -70,7 +70,7 @@ archive/issue_comments_001287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/270",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/270#issuecomment-1287",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

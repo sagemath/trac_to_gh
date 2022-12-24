@@ -3,7 +3,7 @@
 archive/issues_001251.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nThe tut.tex file needed a few updates and corrections. The patch is at\nhttp://sage.math.washington.edu/home/wdj/patches/tut20071123.hg\nThe new latex file (which passes sage -t) is at\nhttp://sage.math.washington.edu/home/wdj/patches/tut.tex\nI also tried to change the file copyright.tex (which is\nin the commontex subdirectory). I don't think the changes stuck, but\nthe revised version is at\nhttp://sage.math.washington.edu/home/wdj/patches/copyright.tex\n(The old one said \"See the end of this document for licensing\ninformation. However, those sections were commented out, so I just\ncopied some lines from the start of the wiki.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1251\n\n",
+    "body": "Assignee: @wdjoyner\n\nThe tut.tex file needed a few updates and corrections. The patch is at\nhttp://sage.math.washington.edu/home/wdj/patches/tut20071123.hg\nThe new latex file (which passes sage -t) is at\nhttp://sage.math.washington.edu/home/wdj/patches/tut.tex\nI also tried to change the file copyright.tex (which is\nin the commontex subdirectory). I don't think the changes stuck, but\nthe revised version is at\nhttp://sage.math.washington.edu/home/wdj/patches/copyright.tex\n(The old one said \"See the end of this document for licensing\ninformation. However, those sections were commented out, so I just\ncopied some lines from the start of the wiki.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1251\n\n",
     "created_at": "2007-11-23T22:54:56Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_001251.json:
     "title": "tutorial out of date",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1251",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
 The tut.tex file needed a few updates and corrections. The patch is at
 http://sage.math.washington.edu/home/wdj/patches/tut20071123.hg
@@ -48,7 +48,7 @@ archive/issue_comments_007831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1251#issuecomment-7831",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_007832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1251#issuecomment-7832",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

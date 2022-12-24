@@ -3,7 +3,7 @@
 archive/issues_004831.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  davidloeffler m.t.aranes@warwick.ac.uk\n\nKeywords: number fields, orders, ideals\n\nThis follows on from #4536:\n\n1. New invertible_residues() iterator for iterating though only the invertible residues modulo an integral ideal.\n2. New function like pari's add_to_1 so that A.add_to_1(B) return a in A such that 1-a is in B.  (The name of this might change before we upload a patch).\n\nPatch to follows later today.\n\nJohn Cremona and Maite Aranes\n\nIssue created by migration from https://trac.sagemath.org/ticket/4831\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @loefflerd m.t.aranes@warwick.ac.uk\n\nKeywords: number fields, orders, ideals\n\nThis follows on from #4536:\n\n1. New invertible_residues() iterator for iterating though only the invertible residues modulo an integral ideal.\n2. New function like pari's add_to_1 so that A.add_to_1(B) return a in A such that 1-a is in B.  (The name of this might change before we upload a patch).\n\nPatch to follows later today.\n\nJohn Cremona and Maite Aranes\n\nIssue created by migration from https://trac.sagemath.org/ticket/4831\n\n",
     "created_at": "2008-12-19T12:31:40Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_004831.json:
     "title": "More number field ideal utilities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4831",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  davidloeffler m.t.aranes@warwick.ac.uk
+CC:  @loefflerd m.t.aranes@warwick.ac.uk
 
 Keywords: number fields, orders, ideals
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4831
 archive/issue_comments_036617.json:
 ```json
 {
-    "body": "Attachment [trac-4831.patch](tarball://root/attachments/some-uuid/ticket4831/trac-4831.patch) by cremona created at 2008-12-19 16:39:11",
+    "body": "Attachment [trac-4831.patch](tarball://root/attachments/some-uuid/ticket4831/trac-4831.patch) by @JohnCremona created at 2008-12-19 16:39:11",
     "created_at": "2008-12-19T16:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36617",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4831.patch](tarball://root/attachments/some-uuid/ticket4831/trac-4831.patch) by cremona created at 2008-12-19 16:39:11
+Attachment [trac-4831.patch](tarball://root/attachments/some-uuid/ticket4831/trac-4831.patch) by @JohnCremona created at 2008-12-19 16:39:11
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_036618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36618",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_036620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36620",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_036621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36621",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_036622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36622",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

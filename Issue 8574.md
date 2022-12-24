@@ -3,7 +3,7 @@
 archive/issues_008574.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  abmasse\n\n\n```\n\n\n---------- Forwarded message ----------  \nFrom: Timo Jolivet\nDate: 2010/3/20\nSubject: bug WordMorphism ?\n\n\nUn bug bizarre :\n\nsage: s = WordMorphism('0->0,1->%s'%('1'*100))\nsage: s(\nKeyboardInterrupt\nsage: s = WordMorphism('0->000,1->%s'%('1'*100))\nsage: s('0')\nword: 000\nsage: s('1')\nword: 1111111111111111111111111111111111111111...\nsage: len(s('0'))\n3\nsage: len(s('1'))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n/slabbe_hacked_macbook/<ipython console> in <module>()\nTypeError: an integer is required\n\n\n\nC'est d'autant plus bizarre que le code suivant marche :\n\nsage: len(Word('1'*100))\n100\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8574\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\n\n```\n\n\n---------- Forwarded message ----------  \nFrom: Timo Jolivet\nDate: 2010/3/20\nSubject: bug WordMorphism ?\n\n\nUn bug bizarre :\n\nsage: s = WordMorphism('0->0,1->%s'%('1'*100))\nsage: s(\nKeyboardInterrupt\nsage: s = WordMorphism('0->000,1->%s'%('1'*100))\nsage: s('0')\nword: 000\nsage: s('1')\nword: 1111111111111111111111111111111111111111...\nsage: len(s('0'))\n3\nsage: len(s('1'))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n/slabbe_hacked_macbook/<ipython console> in <module>()\nTypeError: an integer is required\n\n\n\nC'est d'autant plus bizarre que le code suivant marche :\n\nsage: len(Word('1'*100))\n100\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8574\n\n",
     "created_at": "2010-03-22T09:21:10Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008574.json:
     "title": "Length of a finite word defined by an iterator is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8574",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  abmasse
 
@@ -75,7 +75,7 @@ archive/issue_comments_077659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77659",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -159,16 +159,16 @@ Sébastien
 archive/issue_comments_077660.json:
 ```json
 {
-    "body": "Attachment [trac_8574-length-sl.patch](tarball://root/attachments/some-uuid/ticket8574/trac_8574-length-sl.patch) by slabbe created at 2010-03-31 21:40:37\n\nDepends on #8429.",
+    "body": "Attachment [trac_8574-length-sl.patch](tarball://root/attachments/some-uuid/ticket8574/trac_8574-length-sl.patch) by @seblabbe created at 2010-03-31 21:40:37\n\nDepends on #8429.",
     "created_at": "2010-03-31T21:40:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77660",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8574-length-sl.patch](tarball://root/attachments/some-uuid/ticket8574/trac_8574-length-sl.patch) by slabbe created at 2010-03-31 21:40:37
+Attachment [trac_8574-length-sl.patch](tarball://root/attachments/some-uuid/ticket8574/trac_8574-length-sl.patch) by @seblabbe created at 2010-03-31 21:40:37
 
 Depends on #8429.
 
@@ -184,7 +184,7 @@ archive/issue_comments_077661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77661",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_077664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77664",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_077665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77665",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_077669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77669",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_077670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77670",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

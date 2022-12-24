@@ -3,7 +3,7 @@
 archive/issues_008947.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  rbeezer was robertwb\n\nThis patch makes vectors of callable symbolic rings print nicer, in the form arguments mapsto vector\n\n\n```\nsage: f(x,y)=[3*x,e^x,2*x*y]\nsage: f\n(x, y) |--> (3*x, e^x, 2*x*y)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8947\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @rbeezer @williamstein @robertwb\n\nThis patch makes vectors of callable symbolic rings print nicer, in the form arguments mapsto vector\n\n\n```\nsage: f(x,y)=[3*x,e^x,2*x*y]\nsage: f\n(x, y) |--> (3*x, e^x, 2*x*y)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8947\n\n",
     "created_at": "2010-05-11T06:25:01Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_008947.json:
     "title": "pretty printing of vectors over callable symbolic rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8947",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  rbeezer was robertwb
+CC:  @rbeezer @williamstein @robertwb
 
 This patch makes vectors of callable symbolic rings print nicer, in the form arguments mapsto vector
 
@@ -48,7 +48,7 @@ archive/issue_comments_082367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82367",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_082368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82368",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -79,16 +79,16 @@ Doctests need to be fixed up.
 archive/issue_comments_082369.json:
 ```json
 {
-    "body": "Attachment [trac-8947-callable-SR-vectors-print.patch](tarball://root/attachments/some-uuid/ticket8947/trac-8947-callable-SR-vectors-print.patch) by jason created at 2010-05-11 18:03:00",
+    "body": "Attachment [trac-8947-callable-SR-vectors-print.patch](tarball://root/attachments/some-uuid/ticket8947/trac-8947-callable-SR-vectors-print.patch) by @jasongrout created at 2010-05-11 18:03:00",
     "created_at": "2010-05-11T18:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82369",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8947-callable-SR-vectors-print.patch](tarball://root/attachments/some-uuid/ticket8947/trac-8947-callable-SR-vectors-print.patch) by jason created at 2010-05-11 18:03:00
+Attachment [trac-8947-callable-SR-vectors-print.patch](tarball://root/attachments/some-uuid/ticket8947/trac-8947-callable-SR-vectors-print.patch) by @jasongrout created at 2010-05-11 18:03:00
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_082370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82370",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_082371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82371",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_082372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82372",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_082373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82373",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_082374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82374",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_082375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82375",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_082376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82376",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_082377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82377",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_082378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82378",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -328,16 +328,16 @@ The following tests failed:
 archive/issue_comments_082379.json:
 ```json
 {
-    "body": "Attachment [trac-8947-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket8947/trac-8947-doctest-fix.patch) by jason created at 2010-06-01 22:08:08\n\napply on top of previous patches",
+    "body": "Attachment [trac-8947-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket8947/trac-8947-doctest-fix.patch) by @jasongrout created at 2010-06-01 22:08:08\n\napply on top of previous patches",
     "created_at": "2010-06-01T22:08:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82379",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8947-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket8947/trac-8947-doctest-fix.patch) by jason created at 2010-06-01 22:08:08
+Attachment [trac-8947-doctest-fix.patch](tarball://root/attachments/some-uuid/ticket8947/trac-8947-doctest-fix.patch) by @jasongrout created at 2010-06-01 22:08:08
 
 apply on top of previous patches
 
@@ -353,7 +353,7 @@ archive/issue_comments_082380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82380",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -371,7 +371,7 @@ archive/issue_comments_082381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82381",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_082382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82382",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_082383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82383",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_082384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8947",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8947#issuecomment-82384",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

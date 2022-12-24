@@ -3,7 +3,7 @@
 archive/issues_009464.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  rlm jhpalmieri mpatel\n\nIn the sage-4.5.alpha4 code, the $SAGE_ROOT/spkg/standard/deps file has this entry for R:\n\n\n```\n$(INST)/$(R): $(BASE) $(INST)/$(PYTHON) $(INST)/$(ATLAS) $(INST)/$(ICONV)\n        $(INSTALL) \"$(SAGE_SPKG) $(R) 2>&1\" \"tee -a $(SAGE_LOGS)/$(R).log\"\n```\n\n\nNote, there is no Fortran dependency listed, yet R does have Fortran files:\n\n\n```\ndrkirkby@hawk:~/sage-4.5.alpha4/spkg/standard$ find r-2.10.1.p2 -name '*.f'\nr-2.10.1.p2/src/src/library/stats/src/stxwx.f\nr-2.10.1.p2/src/src/library/stats/src/sgram.f\nr-2.10.1.p2/src/src/library/stats/src/bsplvd.f\nr-2.10.1.p2/src/src/library/stats/src/stl.f\nr-2.10.1.p2/src/src/library/stats/src/hclust.f\nr-2.10.1.p2/src/src/library/stats/src/sslvrg.f\nr-2.10.1.p2/src/src/library/stats/src/qsbart.f\nr-2.10.1.p2/src/src/library/stats/src/bvalue.f\nr-2.10.1.p2/src/src/library/stats/src/loessf.f\nr-2.10.1.p2/src/src/library/stats/src/lminfl.f\nr-2.10.1.p2/src/src/library/stats/src/kmns.f\nr-2.10.1.p2/src/src/library/stats/src/eureka.f\nr-2.10.1.p2/src/src/library/stats/src/sinerp.f\nr-2.10.1.p2/src/src/library/stats/src/bvalus.f\nr-2.10.1.p2/src/src/library/stats/src/ppr.f\nr-2.10.1.p2/src/src/library/stats/src/portsrc.f\nr-2.10.1.p2/src/src/appl/dchdc.f\nr-2.10.1.p2/src/src/appl/chol.f\nr-2.10.1.p2/src/src/appl/dqrsl.f\nr-2.10.1.p2/src/src/appl/dqrdc2.f\nr-2.10.1.p2/src/src/appl/eigen.f\nr-2.10.1.p2/src/src/appl/dpoco.f\nr-2.10.1.p2/src/src/appl/dposl.f\nr-2.10.1.p2/src/src/appl/dpbfa.f\nr-2.10.1.p2/src/src/appl/dtrco.f\nr-2.10.1.p2/src/src/appl/dtrsl.f\nr-2.10.1.p2/src/src/appl/ch2inv.f\nr-2.10.1.p2/src/src/appl/dpofa.f\nr-2.10.1.p2/src/src/appl/dqrutl.f\nr-2.10.1.p2/src/src/appl/dqrdc.f\nr-2.10.1.p2/src/src/appl/dpbsl.f\nr-2.10.1.p2/src/src/appl/dpodi.f\nr-2.10.1.p2/src/src/appl/dqrls.f\nr-2.10.1.p2/src/src/appl/dsvdc.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack4.f\nr-2.10.1.p2/src/src/modules/lapack/vecLibg95f.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack3.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack2.f\netc\n```\n\n\nI'll upload a patch and deps file\n\nDave \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9464\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @rlmill @jhpalmieri @qed777\n\nIn the sage-4.5.alpha4 code, the $SAGE_ROOT/spkg/standard/deps file has this entry for R:\n\n\n```\n$(INST)/$(R): $(BASE) $(INST)/$(PYTHON) $(INST)/$(ATLAS) $(INST)/$(ICONV)\n        $(INSTALL) \"$(SAGE_SPKG) $(R) 2>&1\" \"tee -a $(SAGE_LOGS)/$(R).log\"\n```\n\n\nNote, there is no Fortran dependency listed, yet R does have Fortran files:\n\n\n```\ndrkirkby@hawk:~/sage-4.5.alpha4/spkg/standard$ find r-2.10.1.p2 -name '*.f'\nr-2.10.1.p2/src/src/library/stats/src/stxwx.f\nr-2.10.1.p2/src/src/library/stats/src/sgram.f\nr-2.10.1.p2/src/src/library/stats/src/bsplvd.f\nr-2.10.1.p2/src/src/library/stats/src/stl.f\nr-2.10.1.p2/src/src/library/stats/src/hclust.f\nr-2.10.1.p2/src/src/library/stats/src/sslvrg.f\nr-2.10.1.p2/src/src/library/stats/src/qsbart.f\nr-2.10.1.p2/src/src/library/stats/src/bvalue.f\nr-2.10.1.p2/src/src/library/stats/src/loessf.f\nr-2.10.1.p2/src/src/library/stats/src/lminfl.f\nr-2.10.1.p2/src/src/library/stats/src/kmns.f\nr-2.10.1.p2/src/src/library/stats/src/eureka.f\nr-2.10.1.p2/src/src/library/stats/src/sinerp.f\nr-2.10.1.p2/src/src/library/stats/src/bvalus.f\nr-2.10.1.p2/src/src/library/stats/src/ppr.f\nr-2.10.1.p2/src/src/library/stats/src/portsrc.f\nr-2.10.1.p2/src/src/appl/dchdc.f\nr-2.10.1.p2/src/src/appl/chol.f\nr-2.10.1.p2/src/src/appl/dqrsl.f\nr-2.10.1.p2/src/src/appl/dqrdc2.f\nr-2.10.1.p2/src/src/appl/eigen.f\nr-2.10.1.p2/src/src/appl/dpoco.f\nr-2.10.1.p2/src/src/appl/dposl.f\nr-2.10.1.p2/src/src/appl/dpbfa.f\nr-2.10.1.p2/src/src/appl/dtrco.f\nr-2.10.1.p2/src/src/appl/dtrsl.f\nr-2.10.1.p2/src/src/appl/ch2inv.f\nr-2.10.1.p2/src/src/appl/dpofa.f\nr-2.10.1.p2/src/src/appl/dqrutl.f\nr-2.10.1.p2/src/src/appl/dqrdc.f\nr-2.10.1.p2/src/src/appl/dpbsl.f\nr-2.10.1.p2/src/src/appl/dpodi.f\nr-2.10.1.p2/src/src/appl/dqrls.f\nr-2.10.1.p2/src/src/appl/dsvdc.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack4.f\nr-2.10.1.p2/src/src/modules/lapack/vecLibg95f.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack3.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack2.f\netc\n```\n\n\nI'll upload a patch and deps file\n\nDave \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9464\n\n",
     "created_at": "2010-07-09T12:38:51Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009464.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  rlm jhpalmieri mpatel
+CC:  @rlmill @jhpalmieri @qed777
 
 In the sage-4.5.alpha4 code, the $SAGE_ROOT/spkg/standard/deps file has this entry for R:
 
@@ -99,7 +99,7 @@ archive/issue_comments_090757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90757",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_090758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90758",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_090761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90761",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_090764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90764",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_090765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90765",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_090766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90766",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_090767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90767",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_090768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90768",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

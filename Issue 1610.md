@@ -14,7 +14,7 @@ archive/issues_001610.json:
     "title": "hg record / cherry picking -- add something to the programming guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1610",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -70,7 +70,7 @@ archive/issue_comments_010239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1610#issuecomment-10239",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_010241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1610#issuecomment-10241",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -119,16 +119,16 @@ Changing status from new to needs_review.
 archive/issue_comments_010242.json:
 ```json
 {
-    "body": "Attachment [trac_1610_doc_cherry_picking.patch](tarball://root/attachments/some-uuid/ticket1610/trac_1610_doc_cherry_picking.patch) by rbeezer created at 2010-02-09 04:51:20\n\nApply #8206 before applying the \"cherry picking\" patch.",
+    "body": "Attachment [trac_1610_doc_cherry_picking.patch](tarball://root/attachments/some-uuid/ticket1610/trac_1610_doc_cherry_picking.patch) by @rbeezer created at 2010-02-09 04:51:20\n\nApply #8206 before applying the \"cherry picking\" patch.",
     "created_at": "2010-02-09T04:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1610#issuecomment-10242",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_1610_doc_cherry_picking.patch](tarball://root/attachments/some-uuid/ticket1610/trac_1610_doc_cherry_picking.patch) by rbeezer created at 2010-02-09 04:51:20
+Attachment [trac_1610_doc_cherry_picking.patch](tarball://root/attachments/some-uuid/ticket1610/trac_1610_doc_cherry_picking.patch) by @rbeezer created at 2010-02-09 04:51:20
 
 Apply #8206 before applying the "cherry picking" patch.
 

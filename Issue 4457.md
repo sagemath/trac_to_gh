@@ -99,7 +99,7 @@ archive/issue_comments_032875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4457#issuecomment-32875",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -114,16 +114,16 @@ The output can be found at http://sage.math.washington.edu/home/mhansen/sage/dev
 archive/issue_comments_032876.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-01-24T10:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4457#issuecomment-32876",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_032877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4457#issuecomment-32877",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -150,16 +150,16 @@ Changing status from new to assigned.
 archive/issue_comments_032878.json:
 ```json
 {
-    "body": "Attachment [trac_4457.patch](tarball://root/attachments/some-uuid/ticket4457/trac_4457.patch) by mhansen created at 2009-01-24 10:20:16",
+    "body": "Attachment [trac_4457.patch](tarball://root/attachments/some-uuid/ticket4457/trac_4457.patch) by @mwhansen created at 2009-01-24 10:20:16",
     "created_at": "2009-01-24T10:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4457#issuecomment-32878",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4457.patch](tarball://root/attachments/some-uuid/ticket4457/trac_4457.patch) by mhansen created at 2009-01-24 10:20:16
+Attachment [trac_4457.patch](tarball://root/attachments/some-uuid/ticket4457/trac_4457.patch) by @mwhansen created at 2009-01-24 10:20:16
 
 
 
@@ -173,7 +173,7 @@ archive/issue_comments_032879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4457#issuecomment-32879",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_032880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4457#issuecomment-32880",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

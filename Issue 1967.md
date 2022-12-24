@@ -3,7 +3,7 @@
 archive/issues_001967.json:
 ```json
 {
-    "body": "Assignee: was\n\nMany people have reported issues with locale.py going boom on quite a range of different OS X (and Linux?) machines.  The very slightly patched version of \n\n  SAGE_ROOT/local/lib/python2.5/site-packages/matplotlib/cbook.py\n\nattached to this ticket may very likely fix the problem.  See this thread:\n  \n  http://groups.google.com/group/sage-support/browse_thread/thread/edcf2740f7276e6a?hl=en#78ee7d78a0a99f12\n\nIf this really turns out to be the fix, cbook.py should be put into the matplotlib spkg as a patch. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1967\n\n",
+    "body": "Assignee: @williamstein\n\nMany people have reported issues with locale.py going boom on quite a range of different OS X (and Linux?) machines.  The very slightly patched version of \n\n  SAGE_ROOT/local/lib/python2.5/site-packages/matplotlib/cbook.py\n\nattached to this ticket may very likely fix the problem.  See this thread:\n  \n  http://groups.google.com/group/sage-support/browse_thread/thread/edcf2740f7276e6a?hl=en#78ee7d78a0a99f12\n\nIf this really turns out to be the fix, cbook.py should be put into the matplotlib spkg as a patch. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1967\n\n",
     "created_at": "2008-01-29T09:57:58Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001967.json:
     "title": "fix matplotlib local-related bugs once and for all (?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1967",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Many people have reported issues with locale.py going boom on quite a range of different OS X (and Linux?) machines.  The very slightly patched version of 
 

@@ -14,7 +14,7 @@ archive/issues_005912.json:
     "title": "%fortran mode is broken in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5912",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_046731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5912#issuecomment-46731",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,16 +94,16 @@ array([  0.,   1.,   1.,   2.,   3.,   5.,   8.,  13.,  21.,  34.])
 archive/issue_comments_046732.json:
 ```json
 {
-    "body": "Attachment [trac_5912.patch](tarball://root/attachments/some-uuid/ticket5912/trac_5912.patch) by was created at 2009-04-27 18:14:30",
+    "body": "Attachment [trac_5912.patch](tarball://root/attachments/some-uuid/ticket5912/trac_5912.patch) by @williamstein created at 2009-04-27 18:14:30",
     "created_at": "2009-04-27T18:14:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5912#issuecomment-46732",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5912.patch](tarball://root/attachments/some-uuid/ticket5912/trac_5912.patch) by was created at 2009-04-27 18:14:30
+Attachment [trac_5912.patch](tarball://root/attachments/some-uuid/ticket5912/trac_5912.patch) by @williamstein created at 2009-04-27 18:14:30
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_046733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5912#issuecomment-46733",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 

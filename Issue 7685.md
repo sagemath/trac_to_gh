@@ -3,7 +3,7 @@
 archive/issues_007685.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  kcrisman\n\nThe docstring for n.factor (for n a Sage integer) says it returns a list of pairs.  Actually it returns a Factorization (which derives from list, but prints differently, has arithmetic support, etc.).\n\nWe should also have an OUTPUT: block. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7685\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\nThe docstring for n.factor (for n a Sage integer) says it returns a list of pairs.  Actually it returns a Factorization (which derives from list, but prints differently, has arithmetic support, etc.).\n\nWe should also have an OUTPUT: block. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7685\n\n",
     "created_at": "2009-12-15T18:08:01Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_007685.json:
     "title": "integer.pyx: factor docstring lies about output -- fix this",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7685",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  kcrisman
+CC:  @kcrisman
 
 The docstring for n.factor (for n a Sage integer) says it returns a list of pairs.  Actually it returns a Factorization (which derives from list, but prints differently, has arithmetic support, etc.).
 
@@ -97,7 +97,7 @@ archive/issue_comments_065956.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7685#issuecomment-65956",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_065957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7685#issuecomment-65957",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_065958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7685#issuecomment-65958",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_065959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7685#issuecomment-65959",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

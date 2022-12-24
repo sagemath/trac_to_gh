@@ -3,7 +3,7 @@
 archive/issues_005193.json:
 ```json
 {
-    "body": "Assignee: was\n\nOn a 32-bit computer, `MatrixSpace` will let you create a matrix space with up to 2<sup>32</sup>-1 rows or columns.  But we use Py_ssize_t for matrix indices, which can only hold numbers up to 2<sup>31</sup>-1.\n\nPatch attached; all doctests pass on a 64-bit computer, and .../matrix_space.py doctests pass on a 32-bit computer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5193\n\n",
+    "body": "Assignee: @williamstein\n\nOn a 32-bit computer, `MatrixSpace` will let you create a matrix space with up to 2<sup>32</sup>-1 rows or columns.  But we use Py_ssize_t for matrix indices, which can only hold numbers up to 2<sup>31</sup>-1.\n\nPatch attached; all doctests pass on a 64-bit computer, and .../matrix_space.py doctests pass on a 32-bit computer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5193\n\n",
     "created_at": "2009-02-06T03:11:31Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_005193.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 On a 32-bit computer, `MatrixSpace` will let you create a matrix space with up to 2<sup>32</sup>-1 rows or columns.  But we use Py_ssize_t for matrix indices, which can only hold numbers up to 2<sup>31</sup>-1.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5193
 archive/issue_comments_039807.json:
 ```json
 {
-    "body": "Attachment [fix-max-matrix-size.patch](tarball://root/attachments/some-uuid/ticket5193/fix-max-matrix-size.patch) by jason created at 2009-02-06 08:20:41\n\nI think the reasoning is that Py_ssize_t is a signed integer to allow for negative indices.",
+    "body": "Attachment [fix-max-matrix-size.patch](tarball://root/attachments/some-uuid/ticket5193/fix-max-matrix-size.patch) by @jasongrout created at 2009-02-06 08:20:41\n\nI think the reasoning is that Py_ssize_t is a signed integer to allow for negative indices.",
     "created_at": "2009-02-06T08:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5193#issuecomment-39807",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [fix-max-matrix-size.patch](tarball://root/attachments/some-uuid/ticket5193/fix-max-matrix-size.patch) by jason created at 2009-02-06 08:20:41
+Attachment [fix-max-matrix-size.patch](tarball://root/attachments/some-uuid/ticket5193/fix-max-matrix-size.patch) by @jasongrout created at 2009-02-06 08:20:41
 
 I think the reasoning is that Py_ssize_t is a signed integer to allow for negative indices.
 
@@ -59,7 +59,7 @@ archive/issue_comments_039808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5193#issuecomment-39808",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

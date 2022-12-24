@@ -3,7 +3,7 @@
 archive/issues_006550.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif mpatel\n\nWhen ATLAS builds, it goes through a lengthly tuning process (taking 8.5 hours on 't2'). That could be shorted, by saving architectural defaults, but that needs the temporary files. \n \nSetting \n\n\n```\nDELETE_TMP=0\n```\n\n\non line 76 of $SAGE_ROOT/local/bin/sage-spkg causes a syntax error. \n\nWe need way to do this. Preferably from an environment variable. \n\nIn theory, if the line is changed to:\n\n\n```\nDELETE_TMP=\"${REMOVE_TMP:-1}\"\n```\n\n\nthen setting the environment variable REMOVE_TMP to 0 would make DELETE_TMP change from 1 to 0. Otherwise, it would default to 1.\n\nBut all I get are syntax errors. \n\nTo me, this is an important enhancement if we want to reduce the build time of Sage on 't2'\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6550\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @qed777\n\nWhen ATLAS builds, it goes through a lengthly tuning process (taking 8.5 hours on 't2'). That could be shorted, by saving architectural defaults, but that needs the temporary files. \n \nSetting \n\n\n```\nDELETE_TMP=0\n```\n\n\non line 76 of $SAGE_ROOT/local/bin/sage-spkg causes a syntax error. \n\nWe need way to do this. Preferably from an environment variable. \n\nIn theory, if the line is changed to:\n\n\n```\nDELETE_TMP=\"${REMOVE_TMP:-1}\"\n```\n\n\nthen setting the environment variable REMOVE_TMP to 0 would make DELETE_TMP change from 1 to 0. Otherwise, it would default to 1.\n\nBut all I get are syntax errors. \n\nTo me, this is an important enhancement if we want to reduce the build time of Sage on 't2'\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6550\n\n",
     "created_at": "2009-07-17T18:01:54Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_006550.json:
 ```
 Assignee: tbd
 
-CC:  leif mpatel
+CC:  @nexttime @qed777
 
 When ATLAS builds, it goes through a lengthly tuning process (taking 8.5 hours on 't2'). That could be shorted, by saving architectural defaults, but that needs the temporary files. 
  
@@ -67,7 +67,7 @@ archive/issue_comments_053405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6550#issuecomment-53405",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_053411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6550#issuecomment-53411",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_053412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6550#issuecomment-53412",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_053413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6550#issuecomment-53413",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_053414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6550#issuecomment-53414",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

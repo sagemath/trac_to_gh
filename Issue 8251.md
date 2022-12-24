@@ -3,7 +3,7 @@
 archive/issues_008251.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  robertwb was\n\nIt's possible to get a traceback for some dumb reason in some cases when computing the torsion subgroup of an elliptic curve:\n\n```\n...\nTraceback (most recent call last):           for K in J.unramified_outside([i],3):\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpSAW9n5/___code___.py\", line 6, in <module>\n    T=E.torsion_subgroup()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 3515, in torsion_subgroup\n    self.__torsion_subgroup = ell_torsion.EllipticCurveTorsionSubgroup(self, algorithm)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_torsion.py\", line 159, in __init__\n    if self.__K is RationalField() and algorithm in pari_torsion_algorithms:\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/rational_field.py\", line 208, in __init__\n    self._assign_names(('x',),normalize=False) # ???\n  File \"parent_gens.pyx\", line 327, in sage.structure.parent_gens.ParentWithGens._assign_names (sage/structure/parent_gens.c:2854)\n  File \"category_object.pyx\", line 336, in sage.structure.category_object.CategoryObject._assign_names (sage/structure/category_object.c:3286)\nValueError: variable names cannot be changed after object creation.\n```\n\n\nThe above is caused by running this script:\n\n```\nJ=JonesDatabase()\nP=Primes()\nfor E in cremona_optimal_curves([0..50]):\n    T=E.torsion_subgroup()\n    i=E.conductor()\n    if i.is_prime():\n       for K in J.unramified_outside([i],3):\n                F=E.base_extend(K)\n                T_1=F.torsion_subgroup() \n\n                if T != T_1:\n                    E.label();\n                    K.is_galois();\n                    T;\n                    T_1;\n    else:\n        j=2 \n        while j < i :\n            if j.is_prime():\n                n=i/j\n                if n.is_integral():\n                    for K in J.unramified_outside([j],3):\n                        F=E.base_extend(K)\n\n                        T_1=F.torsion_subgroup() \n                        if T != T_1:\n                            E.label();\n\n                            K.is_galois();\n                            T;\n                            T_1;\n            j=P.next(j)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8251\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @williamstein\n\nIt's possible to get a traceback for some dumb reason in some cases when computing the torsion subgroup of an elliptic curve:\n\n```\n...\nTraceback (most recent call last):           for K in J.unramified_outside([i],3):\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpSAW9n5/___code___.py\", line 6, in <module>\n    T=E.torsion_subgroup()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 3515, in torsion_subgroup\n    self.__torsion_subgroup = ell_torsion.EllipticCurveTorsionSubgroup(self, algorithm)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_torsion.py\", line 159, in __init__\n    if self.__K is RationalField() and algorithm in pari_torsion_algorithms:\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/rings/rational_field.py\", line 208, in __init__\n    self._assign_names(('x',),normalize=False) # ???\n  File \"parent_gens.pyx\", line 327, in sage.structure.parent_gens.ParentWithGens._assign_names (sage/structure/parent_gens.c:2854)\n  File \"category_object.pyx\", line 336, in sage.structure.category_object.CategoryObject._assign_names (sage/structure/category_object.c:3286)\nValueError: variable names cannot be changed after object creation.\n```\n\n\nThe above is caused by running this script:\n\n```\nJ=JonesDatabase()\nP=Primes()\nfor E in cremona_optimal_curves([0..50]):\n    T=E.torsion_subgroup()\n    i=E.conductor()\n    if i.is_prime():\n       for K in J.unramified_outside([i],3):\n                F=E.base_extend(K)\n                T_1=F.torsion_subgroup() \n\n                if T != T_1:\n                    E.label();\n                    K.is_galois();\n                    T;\n                    T_1;\n    else:\n        j=2 \n        while j < i :\n            if j.is_prime():\n                n=i/j\n                if n.is_integral():\n                    for K in J.unramified_outside([j],3):\n                        F=E.base_extend(K)\n\n                        T_1=F.torsion_subgroup() \n                        if T != T_1:\n                            E.label();\n\n                            K.is_galois();\n                            T;\n                            T_1;\n            j=P.next(j)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8251\n\n",
     "created_at": "2010-02-12T15:29:39Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_008251.json:
     "title": "traceback when computing E.torsion_subgroup() for an elliptic curve E",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8251",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  robertwb was
+CC:  @robertwb @williamstein
 
 It's possible to get a traceback for some dumb reason in some cases when computing the torsion subgroup of an elliptic curve:
 
@@ -96,7 +96,7 @@ archive/issue_comments_072988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-72988",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_072989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-72989",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_072990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-72990",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -191,16 +191,16 @@ ValueError: variable names cannot be changed after object creation.
 archive/issue_comments_072991.json:
 ```json
 {
-    "body": "Changing assignee from cremona to nthiery.",
+    "body": "Changing assignee from @JohnCremona to @nthiery.",
     "created_at": "2010-06-25T21:01:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-72991",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from cremona to nthiery.
+Changing assignee from @JohnCremona to @nthiery.
 
 
 
@@ -214,7 +214,7 @@ archive/issue_comments_072992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-72992",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_072993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-72993",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_072994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-72994",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_072995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-72995",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -293,16 +293,16 @@ There was also a new polynomial on John Jones' webpage, so the contents of this 
 archive/issue_comments_072996.json:
 ```json
 {
-    "body": "Attachment [8251_Jones_pickle.patch](tarball://root/attachments/some-uuid/ticket8251/8251_Jones_pickle.patch) by wjp created at 2011-01-09 06:35:27",
+    "body": "Attachment [8251_Jones_pickle.patch](tarball://root/attachments/some-uuid/ticket8251/8251_Jones_pickle.patch) by @wjp created at 2011-01-09 06:35:27",
     "created_at": "2011-01-09T06:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-72996",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [8251_Jones_pickle.patch](tarball://root/attachments/some-uuid/ticket8251/8251_Jones_pickle.patch) by wjp created at 2011-01-09 06:35:27
+Attachment [8251_Jones_pickle.patch](tarball://root/attachments/some-uuid/ticket8251/8251_Jones_pickle.patch) by @wjp created at 2011-01-09 06:35:27
 
 
 
@@ -311,16 +311,16 @@ Attachment [8251_Jones_pickle.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_072997.json:
 ```json
 {
-    "body": "Attachment [jones.sobj](tarball://root/attachments/some-uuid/ticket8251/jones.sobj) by wjp created at 2011-01-09 23:00:38\n\nIt would also be possible to fix unpickling the old sobj (and any other potentially broken old pickles) by creating an empty `RationalField.__setstate__(state)`.",
+    "body": "Attachment [jones.sobj](tarball://root/attachments/some-uuid/ticket8251/jones.sobj) by @wjp created at 2011-01-09 23:00:38\n\nIt would also be possible to fix unpickling the old sobj (and any other potentially broken old pickles) by creating an empty `RationalField.__setstate__(state)`.",
     "created_at": "2011-01-09T23:00:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-72997",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [jones.sobj](tarball://root/attachments/some-uuid/ticket8251/jones.sobj) by wjp created at 2011-01-09 23:00:38
+Attachment [jones.sobj](tarball://root/attachments/some-uuid/ticket8251/jones.sobj) by @wjp created at 2011-01-09 23:00:38
 
 It would also be possible to fix unpickling the old sobj (and any other potentially broken old pickles) by creating an empty `RationalField.__setstate__(state)`.
 
@@ -336,7 +336,7 @@ archive/issue_comments_072998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-72998",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_072999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-72999",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_073000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-73000",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_073001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-73001",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -437,7 +437,7 @@ archive/issue_comments_073002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-73002",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -455,7 +455,7 @@ archive/issue_comments_073003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-73003",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_073004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-73004",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -510,7 +510,7 @@ archive/issue_comments_073005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-73005",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -528,7 +528,7 @@ archive/issue_comments_073006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-73006",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_073007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8251",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8251#issuecomment-73007",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009559.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  boothby ncohen kini dimpase\n\nRight now this ticket is for organization, so I'm leaving it as \"new\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/9559\n\n",
+    "body": "Assignee: joyner\n\nCC:  boothby @nathanncohen @kini @dimpase\n\nRight now this ticket is for organization, so I'm leaving it as \"new\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/9559\n\n",
     "created_at": "2010-07-21T08:27:52Z",
     "labels": [
         "group theory",
@@ -14,12 +14,12 @@ archive/issues_009559.json:
     "title": "*generalized* canonical generation in Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9559",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: joyner
 
-CC:  boothby ncohen kini dimpase
+CC:  boothby @nathanncohen @kini @dimpase
 
 Right now this ticket is for organization, so I'm leaving it as "new".
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9559
 archive/issue_comments_092145.json:
 ```json
 {
-    "body": "Changing assignee from joyner to rlm.",
+    "body": "Changing assignee from joyner to @rlmill.",
     "created_at": "2010-07-21T08:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9559#issuecomment-92145",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from joyner to rlm.
+Changing assignee from joyner to @rlmill.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_092146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9559#issuecomment-92146",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_092149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9559#issuecomment-92149",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_092150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9559#issuecomment-92150",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -160,16 +160,16 @@ New documentation strings should conform to [http://sagemath.org/doc/developer/c
 archive/issue_comments_092151.json:
 ```json
 {
-    "body": "Attachment [trac_9559.patch](tarball://root/attachments/some-uuid/ticket9559/trac_9559.patch) by rlm created at 2013-01-17 04:39:26",
+    "body": "Attachment [trac_9559.patch](tarball://root/attachments/some-uuid/ticket9559/trac_9559.patch) by @rlmill created at 2013-01-17 04:39:26",
     "created_at": "2013-01-17T04:39:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9559#issuecomment-92151",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9559.patch](tarball://root/attachments/some-uuid/ticket9559/trac_9559.patch) by rlm created at 2013-01-17 04:39:26
+Attachment [trac_9559.patch](tarball://root/attachments/some-uuid/ticket9559/trac_9559.patch) by @rlmill created at 2013-01-17 04:39:26
 
 
 
@@ -183,7 +183,7 @@ archive/issue_comments_092152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9559#issuecomment-92152",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_092155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9559",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9559#issuecomment-92155",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

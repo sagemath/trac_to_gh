@@ -14,7 +14,7 @@ archive/issues_004967.json:
     "title": "[with patch] Trouble with .gaprc file when compiling from source",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4967",
-    "user": "mmeulien"
+    "user": "@orontee"
 }
 ```
 Assignee: mabshoff
@@ -70,7 +70,7 @@ archive/issue_comments_037798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4967#issuecomment-37798",
-    "user": "mmeulien"
+    "user": "@orontee"
 }
 ```
 

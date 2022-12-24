@@ -3,7 +3,7 @@
 archive/issues_009652.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mstreng lftabera\n\nThis code was added in #1148. I really think that the lines removed in my patch should be gone. The current (4.4.4) code is:\n\n\n```\ndef valuation(m, p):\n    if hasattr(m, 'valuation'):\n        return m.valuation(p)\n    if is_FractionFieldElement(m):  \n        return valuation(m.numerator()) - valuation(m.denominator())\n    if m == 0:\n        import sage.rings.all\n        return sage.rings.all.infinity\n    r = 0\n    power = p\n    while not (m % power): # m % power == 0\n        r += 1\n        power *= p\n    return r\n```\n\n\nPutting implementation specific to Fraction fields in a global function is bad practice. And since fraction fields have an implementation of valuation part of the above code will not be execucted. If it magicaly get's excecuted it will return bad results since it doesn't take into account the input variable \"p\" as it should.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9652\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @mstreng @lftabera\n\nThis code was added in #1148. I really think that the lines removed in my patch should be gone. The current (4.4.4) code is:\n\n\n```\ndef valuation(m, p):\n    if hasattr(m, 'valuation'):\n        return m.valuation(p)\n    if is_FractionFieldElement(m):  \n        return valuation(m.numerator()) - valuation(m.denominator())\n    if m == 0:\n        import sage.rings.all\n        return sage.rings.all.infinity\n    r = 0\n    power = p\n    while not (m % power): # m % power == 0\n        r += 1\n        power *= p\n    return r\n```\n\n\nPutting implementation specific to Fraction fields in a global function is bad practice. And since fraction fields have an implementation of valuation part of the above code will not be execucted. If it magicaly get's excecuted it will return bad results since it doesn't take into account the input variable \"p\" as it should.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9652\n\n",
     "created_at": "2010-07-31T20:35:45Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009652.json:
     "title": "Unnecesary and buggy code in arith.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9652",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mstreng lftabera
+CC:  @mstreng @lftabera
 
 This code was added in #1148. I really think that the lines removed in my patch should be gone. The current (4.4.4) code is:
 
@@ -60,7 +60,7 @@ archive/issue_comments_093637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93637",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_093638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93638",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_093639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93639",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_093640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93640",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_093641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93641",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_093642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93642",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_093643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93643",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -295,16 +295,16 @@ sage: preparse("valuation(1r,1r)")
 archive/issue_comments_093644.json:
 ```json
 {
-    "body": "Attachment [smallfix1-arith_valuation.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.patch) by mderickx created at 2010-08-02 18:57:05",
+    "body": "Attachment [smallfix1-arith_valuation.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.patch) by @koffie created at 2010-08-02 18:57:05",
     "created_at": "2010-08-02T18:57:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93644",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
-Attachment [smallfix1-arith_valuation.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.patch) by mderickx created at 2010-08-02 18:57:05
+Attachment [smallfix1-arith_valuation.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.patch) by @koffie created at 2010-08-02 18:57:05
 
 
 
@@ -318,7 +318,7 @@ archive/issue_comments_093645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93645",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_093646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93646",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_093647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93647",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -402,7 +402,7 @@ archive/issue_comments_093648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93648",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -420,7 +420,7 @@ archive/issue_comments_093649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93649",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -470,7 +470,7 @@ archive/issue_comments_093650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93650",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -488,7 +488,7 @@ archive/issue_comments_093651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93651",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_093652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93652",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_093653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93653",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -571,7 +571,7 @@ archive/issue_comments_093654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93654",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_093655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93655",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -610,7 +610,7 @@ archive/issue_comments_093656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93656",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -628,7 +628,7 @@ archive/issue_comments_093657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93657",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -648,7 +648,7 @@ archive/issue_comments_093658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93658",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -666,7 +666,7 @@ archive/issue_comments_093659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93659",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -701,7 +701,7 @@ archive/issue_comments_093660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93660",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -729,7 +729,7 @@ archive/issue_comments_093661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93661",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -761,7 +761,7 @@ archive/issue_comments_093662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93662",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -779,7 +779,7 @@ archive/issue_comments_093663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93663",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -797,7 +797,7 @@ archive/issue_comments_093664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93664",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -810,16 +810,16 @@ Ok, then i'll just move the relevant parts of the old code so it becomes an attr
 archive/issue_comments_093665.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to mderickx.",
+    "body": "Changing assignee from @aghitza to @koffie.",
     "created_at": "2010-09-11T08:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93665",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
-Changing assignee from AlexGhitza to mderickx.
+Changing assignee from @aghitza to @koffie.
 
 
 
@@ -833,7 +833,7 @@ archive/issue_comments_093666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93666",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -846,16 +846,16 @@ Use this one, the other is an old version
 archive/issue_comments_093667.json:
 ```json
 {
-    "body": "Attachment [smallfix1-arith_valuation.2.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.2.patch) by mderickx created at 2010-09-11 08:56:48\n\nOk, I moved the code, and the integer mod classes now also have a valuation attribute. All doctest should pass now when patching against 4.4.4 (sorry haven't updated in a while).",
+    "body": "Attachment [smallfix1-arith_valuation.2.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.2.patch) by @koffie created at 2010-09-11 08:56:48\n\nOk, I moved the code, and the integer mod classes now also have a valuation attribute. All doctest should pass now when patching against 4.4.4 (sorry haven't updated in a while).",
     "created_at": "2010-09-11T08:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93667",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
-Attachment [smallfix1-arith_valuation.2.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.2.patch) by mderickx created at 2010-09-11 08:56:48
+Attachment [smallfix1-arith_valuation.2.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.2.patch) by @koffie created at 2010-09-11 08:56:48
 
 Ok, I moved the code, and the integer mod classes now also have a valuation attribute. All doctest should pass now when patching against 4.4.4 (sorry haven't updated in a while).
 
@@ -871,7 +871,7 @@ archive/issue_comments_093668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93668",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -884,16 +884,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093669.json:
 ```json
 {
-    "body": "Attachment [smallfix1-arith_valuation.2.2.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.2.2.patch) by mderickx created at 2010-09-12 10:52:26\n\nUse this one, the other is an old version",
+    "body": "Attachment [smallfix1-arith_valuation.2.2.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.2.2.patch) by @koffie created at 2010-09-12 10:52:26\n\nUse this one, the other is an old version",
     "created_at": "2010-09-12T10:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93669",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
-Attachment [smallfix1-arith_valuation.2.2.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.2.2.patch) by mderickx created at 2010-09-12 10:52:26
+Attachment [smallfix1-arith_valuation.2.2.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation.2.2.patch) by @koffie created at 2010-09-12 10:52:26
 
 Use this one, the other is an old version
 
@@ -909,7 +909,7 @@ archive/issue_comments_093670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93670",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -922,16 +922,16 @@ previous patch with clenaer comment in the header
 archive/issue_comments_093671.json:
 ```json
 {
-    "body": "Attachment [smallfix1-arith_valuation-doctest.2.3.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation-doctest.2.3.patch) by lftabera created at 2010-09-14 11:27:08\n\nadditional doctest",
+    "body": "Attachment [smallfix1-arith_valuation-doctest.2.3.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation-doctest.2.3.patch) by @lftabera created at 2010-09-14 11:27:08\n\nadditional doctest",
     "created_at": "2010-09-14T11:27:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93671",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
-Attachment [smallfix1-arith_valuation-doctest.2.3.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation-doctest.2.3.patch) by lftabera created at 2010-09-14 11:27:08
+Attachment [smallfix1-arith_valuation-doctest.2.3.patch](tarball://root/attachments/some-uuid/ticket9652/smallfix1-arith_valuation-doctest.2.3.patch) by @lftabera created at 2010-09-14 11:27:08
 
 additional doctest
 
@@ -947,7 +947,7 @@ archive/issue_comments_093672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93672",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -969,7 +969,7 @@ archive/issue_comments_093673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93673",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -987,7 +987,7 @@ archive/issue_comments_093674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93674",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -1005,7 +1005,7 @@ archive/issue_comments_093675.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93675",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1023,7 +1023,7 @@ archive/issue_comments_093676.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93676",
-    "user": "lftabera"
+    "user": "@lftabera"
 }
 ```
 
@@ -1041,7 +1041,7 @@ archive/issue_comments_093677.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93677",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -1059,7 +1059,7 @@ archive/issue_comments_093678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9652",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9652#issuecomment-93678",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

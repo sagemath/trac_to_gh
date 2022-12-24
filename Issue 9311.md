@@ -3,7 +3,7 @@
 archive/issues_009311.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif jhpalmieri pjeremy\n\nRatpoints is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to \"yes\", no self-tests of ratpoints will be run. This is silly, as there is a small test suite. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9311\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime @jhpalmieri @peterjeremy\n\nRatpoints is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to \"yes\", no self-tests of ratpoints will be run. This is silly, as there is a small test suite. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9311\n\n",
     "created_at": "2010-06-22T15:25:09Z",
     "labels": [
         "spkg-check",
@@ -19,7 +19,7 @@ archive/issues_009311.json:
 ```
 Assignee: tbd
 
-CC:  leif jhpalmieri pjeremy
+CC:  @nexttime @jhpalmieri @peterjeremy
 
 Ratpoints is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to "yes", no self-tests of ratpoints will be run. This is silly, as there is a small test suite. 
 

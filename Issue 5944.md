@@ -3,7 +3,7 @@
 archive/issues_005944.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  mhansen\n\n\n```\nsage: t = var('t', ns=1)\nsage: a = (-2*t).exp(); a\ne^(-2*t)\nsage: b = (-t).exp(); b\ne^(-t)\nsage: a - b\n0\nsage: a\ne^(-t)\nsage: b\ne^(-t)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5944\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\n\n```\nsage: t = var('t', ns=1)\nsage: a = (-2*t).exp(); a\ne^(-2*t)\nsage: b = (-t).exp(); b\ne^(-t)\nsage: a - b\n0\nsage: a\ne^(-t)\nsage: b\ne^(-t)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5944\n\n",
     "created_at": "2009-04-29T22:59:30Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_005944.json:
     "title": "fix a nasty pynac bug in exp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5944",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  mhansen
+CC:  @mwhansen
 
 
 ```
@@ -53,7 +53,7 @@ archive/issue_comments_046995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5944#issuecomment-46995",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -66,16 +66,16 @@ add doctests for the fix
 archive/issue_comments_046996.json:
 ```json
 {
-    "body": "Attachment [trac_5944-doctest.patch](tarball://root/attachments/some-uuid/ticket5944/trac_5944-doctest.patch) by burcin created at 2009-05-05 23:22:20\n\nThe package for pynac 0.1.6 at #5777 has a fix for this. Attached patch adds doctests.",
+    "body": "Attachment [trac_5944-doctest.patch](tarball://root/attachments/some-uuid/ticket5944/trac_5944-doctest.patch) by @burcin created at 2009-05-05 23:22:20\n\nThe package for pynac 0.1.6 at #5777 has a fix for this. Attached patch adds doctests.",
     "created_at": "2009-05-05T23:22:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5944#issuecomment-46996",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5944-doctest.patch](tarball://root/attachments/some-uuid/ticket5944/trac_5944-doctest.patch) by burcin created at 2009-05-05 23:22:20
+Attachment [trac_5944-doctest.patch](tarball://root/attachments/some-uuid/ticket5944/trac_5944-doctest.patch) by @burcin created at 2009-05-05 23:22:20
 
 The package for pynac 0.1.6 at #5777 has a fix for this. Attached patch adds doctests.
 
@@ -91,7 +91,7 @@ archive/issue_comments_046997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5944#issuecomment-46997",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

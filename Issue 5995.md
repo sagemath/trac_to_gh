@@ -3,7 +3,7 @@
 archive/issues_005995.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  craigcitro\n\nThis is pretty poor, IMHO:\n\n```\nsage: M = ModularForms(17, 4)\nsage: S = M.cuspidal_submodule()\nsage: M.0 == S.0\nTrue\nsage: M.0 in S\nFalse\n```\n\n\nAs far as I can tell at a glance this is happening because `S.__call__(x)` tests whether or not the parent of x has a canonical inclusion map to S; it should probably be testing whether the parent of x has a canonical inclusion map to the *ambient space* of S.\n\nOnce the above is fixed we should also have a method `is_cuspidal()` for modular forms objects, which would be secretly just `self in self.parent().cuspidal_submodule()`. A corresponding `is_eisenstein()` would be good, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5995\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  @craigcitro\n\nThis is pretty poor, IMHO:\n\n```\nsage: M = ModularForms(17, 4)\nsage: S = M.cuspidal_submodule()\nsage: M.0 == S.0\nTrue\nsage: M.0 in S\nFalse\n```\n\n\nAs far as I can tell at a glance this is happening because `S.__call__(x)` tests whether or not the parent of x has a canonical inclusion map to S; it should probably be testing whether the parent of x has a canonical inclusion map to the *ambient space* of S.\n\nOnce the above is fixed we should also have a method `is_cuspidal()` for modular forms objects, which would be secretly just `self in self.parent().cuspidal_submodule()`. A corresponding `is_eisenstein()` would be good, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5995\n\n",
     "created_at": "2009-05-06T10:01:31Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_005995.json:
     "title": "Membership testing for modular forms subspaces is hopeless",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5995",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  craigcitro
+CC:  @craigcitro
 
 This is pretty poor, IMHO:
 
@@ -53,7 +53,7 @@ archive/issue_comments_047687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5995#issuecomment-47687",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -66,16 +66,16 @@ apply after #4357 and #5736
 archive/issue_comments_047688.json:
 ```json
 {
-    "body": "Attachment [trac_5995.patch](tarball://root/attachments/some-uuid/ticket5995/trac_5995.patch) by davidloeffler created at 2009-05-12 08:53:26\n\nHere's a patch, which adds ` is_cuspidal`, `is_eisenstein`, `is_new` and `is_old`, and corrects a funny glitch whereby elliptic curve newforms consistently claimed not to be cuspidal :-) I wrote the patch and ran tests with this and everything else (including the not-yet-fully-refereed #5968) installed simultaneously, but it should at least apply as long as you have the patches at #4357 and #5736 installed.",
+    "body": "Attachment [trac_5995.patch](tarball://root/attachments/some-uuid/ticket5995/trac_5995.patch) by @loefflerd created at 2009-05-12 08:53:26\n\nHere's a patch, which adds ` is_cuspidal`, `is_eisenstein`, `is_new` and `is_old`, and corrects a funny glitch whereby elliptic curve newforms consistently claimed not to be cuspidal :-) I wrote the patch and ran tests with this and everything else (including the not-yet-fully-refereed #5968) installed simultaneously, but it should at least apply as long as you have the patches at #4357 and #5736 installed.",
     "created_at": "2009-05-12T08:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5995#issuecomment-47688",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5995.patch](tarball://root/attachments/some-uuid/ticket5995/trac_5995.patch) by davidloeffler created at 2009-05-12 08:53:26
+Attachment [trac_5995.patch](tarball://root/attachments/some-uuid/ticket5995/trac_5995.patch) by @loefflerd created at 2009-05-12 08:53:26
 
 Here's a patch, which adds ` is_cuspidal`, `is_eisenstein`, `is_new` and `is_old`, and corrects a funny glitch whereby elliptic curve newforms consistently claimed not to be cuspidal :-) I wrote the patch and ran tests with this and everything else (including the not-yet-fully-refereed #5968) installed simultaneously, but it should at least apply as long as you have the patches at #4357 and #5736 installed.
 
@@ -91,7 +91,7 @@ archive/issue_comments_047689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5995#issuecomment-47689",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_047690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5995#issuecomment-47690",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_047691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5995",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5995#issuecomment-47691",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003232.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe BKZ algorithm is a lattice reduction algorithm AFAIK only implemented in NTL. \n\n\n```\n  -- BKZ: Block Korkin-Zolotarev reduction.\n     This is slower, but yields a higher-quality basis,\n     i.e., one with shorter vectors.\n     See the Schnorr-Euchner paper for a description of this.\n     This basically generalizes the LLL reduction condition\n     from blocks of size 2 to blocks of larger size.\n```\n\n\nIt enjoys more widespread use in cryptography these days and possibly other areas. Since Sage has Damien Stehle's fast fpLLL library and NTL's BKZ this would make Sage a very nice tool for people who care about these algorithms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3232\n\n",
+    "body": "Assignee: @williamstein\n\nThe BKZ algorithm is a lattice reduction algorithm AFAIK only implemented in NTL. \n\n\n```\n  -- BKZ: Block Korkin-Zolotarev reduction.\n     This is slower, but yields a higher-quality basis,\n     i.e., one with shorter vectors.\n     See the Schnorr-Euchner paper for a description of this.\n     This basically generalizes the LLL reduction condition\n     from blocks of size 2 to blocks of larger size.\n```\n\n\nIt enjoys more widespread use in cryptography these days and possibly other areas. Since Sage has Damien Stehle's fast fpLLL library and NTL's BKZ this would make Sage a very nice tool for people who care about these algorithms.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3232\n\n",
     "created_at": "2008-05-16T23:18:54Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003232.json:
     "title": "wrap NTL's BKZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3232",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The BKZ algorithm is a lattice reduction algorithm AFAIK only implemented in NTL. 
 
@@ -50,7 +50,7 @@ archive/issue_comments_022390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3232#issuecomment-22390",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_022391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3232#issuecomment-22391",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_022392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3232#issuecomment-22392",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_022393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3232#issuecomment-22393",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_022394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3232#issuecomment-22394",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_022397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3232#issuecomment-22397",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_022398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3232#issuecomment-22398",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_022399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3232#issuecomment-22399",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -270,16 +270,16 @@ addresses rpw's review
 archive/issue_comments_022400.json:
 ```json
 {
-    "body": "Attachment [bkz.patch](tarball://root/attachments/some-uuid/ticket3232/bkz.patch) by malb created at 2008-07-08 11:55:28\n\nTypos fixed in updated patch, apply `bkz.patch` only.",
+    "body": "Attachment [bkz.patch](tarball://root/attachments/some-uuid/ticket3232/bkz.patch) by @malb created at 2008-07-08 11:55:28\n\nTypos fixed in updated patch, apply `bkz.patch` only.",
     "created_at": "2008-07-08T11:55:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3232",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3232#issuecomment-22400",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [bkz.patch](tarball://root/attachments/some-uuid/ticket3232/bkz.patch) by malb created at 2008-07-08 11:55:28
+Attachment [bkz.patch](tarball://root/attachments/some-uuid/ticket3232/bkz.patch) by @malb created at 2008-07-08 11:55:28
 
 Typos fixed in updated patch, apply `bkz.patch` only.
 

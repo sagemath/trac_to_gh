@@ -3,7 +3,7 @@
 archive/issues_007788.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  craigcitro cremona ylchapuy robertwb\n\nI am attaching  patchs which adds to the documentation that the derivatives loose about half the precision. There is additional documentation to guide how many dirichlet coefficients are needed, at least for computing near the real axis.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7788\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @craigcitro @JohnCremona ylchapuy @robertwb\n\nI am attaching  patchs which adds to the documentation that the derivatives loose about half the precision. There is additional documentation to guide how many dirichlet coefficients are needed, at least for computing near the real axis.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7788\n\n",
     "created_at": "2009-12-29T16:45:25Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_007788.json:
     "title": "followup patch to #5396",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7788",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  craigcitro cremona ylchapuy robertwb
+CC:  @craigcitro @JohnCremona ylchapuy @robertwb
 
 I am attaching  patchs which adds to the documentation that the derivatives loose about half the precision. There is additional documentation to guide how many dirichlet coefficients are needed, at least for computing near the real axis.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7788
 archive/issue_comments_067213.json:
 ```json
 {
-    "body": "Attachment [minor_change_lcalc-1.patch](tarball://root/attachments/some-uuid/ticket7788/minor_change_lcalc-1.patch) by rishi created at 2009-12-29 16:45:42",
+    "body": "Attachment [minor_change_lcalc-1.patch](tarball://root/attachments/some-uuid/ticket7788/minor_change_lcalc-1.patch) by @rishikesha created at 2009-12-29 16:45:42",
     "created_at": "2009-12-29T16:45:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7788#issuecomment-67213",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [minor_change_lcalc-1.patch](tarball://root/attachments/some-uuid/ticket7788/minor_change_lcalc-1.patch) by rishi created at 2009-12-29 16:45:42
+Attachment [minor_change_lcalc-1.patch](tarball://root/attachments/some-uuid/ticket7788/minor_change_lcalc-1.patch) by @rishikesha created at 2009-12-29 16:45:42
 
 
 
@@ -52,16 +52,16 @@ Attachment [minor_change_lcalc-1.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_067214.json:
 ```json
 {
-    "body": "Attachment [minor_change_lcalc-combined.patch](tarball://root/attachments/some-uuid/ticket7788/minor_change_lcalc-combined.patch) by rishi created at 2009-12-29 18:24:14",
+    "body": "Attachment [minor_change_lcalc-combined.patch](tarball://root/attachments/some-uuid/ticket7788/minor_change_lcalc-combined.patch) by @rishikesha created at 2009-12-29 18:24:14",
     "created_at": "2009-12-29T18:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7788#issuecomment-67214",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [minor_change_lcalc-combined.patch](tarball://root/attachments/some-uuid/ticket7788/minor_change_lcalc-combined.patch) by rishi created at 2009-12-29 18:24:14
+Attachment [minor_change_lcalc-combined.patch](tarball://root/attachments/some-uuid/ticket7788/minor_change_lcalc-combined.patch) by @rishikesha created at 2009-12-29 18:24:14
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_067215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7788#issuecomment-67215",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_067216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7788#issuecomment-67216",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_067217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7788#issuecomment-67217",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_067218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7788#issuecomment-67218",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_067219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7788#issuecomment-67219",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_067220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7788#issuecomment-67220",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_067221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7788#issuecomment-67221",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_067222.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7788#issuecomment-67222",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_067223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7788#issuecomment-67223",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_067224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7788",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7788#issuecomment-67224",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

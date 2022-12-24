@@ -14,7 +14,7 @@ archive/issues_008778.json:
     "title": "remove jinja(1) from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8778",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_080365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8778#issuecomment-80365",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_080366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8778",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8778#issuecomment-80366",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

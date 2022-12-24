@@ -3,7 +3,7 @@
 archive/issues_006193.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cremona\n\nDepends on #6021.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6193\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nDepends on #6021.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6193\n\n",
     "created_at": "2009-06-03T06:58:06Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_006193.json:
     "title": "[with patch, needs review] implement elliptic logarithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6193",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cremona
+CC:  @JohnCremona
 
 Depends on #6021.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6193
 archive/issue_comments_049460.json:
 ```json
 {
-    "body": "Attachment [cperiods-2.patch](tarball://root/attachments/some-uuid/ticket6193/cperiods-2.patch) by robertwb created at 2009-06-03 06:59:15",
+    "body": "Attachment [cperiods-2.patch](tarball://root/attachments/some-uuid/ticket6193/cperiods-2.patch) by @robertwb created at 2009-06-03 06:59:15",
     "created_at": "2009-06-03T06:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6193#issuecomment-49460",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [cperiods-2.patch](tarball://root/attachments/some-uuid/ticket6193/cperiods-2.patch) by robertwb created at 2009-06-03 06:59:15
+Attachment [cperiods-2.patch](tarball://root/attachments/some-uuid/ticket6193/cperiods-2.patch) by @robertwb created at 2009-06-03 06:59:15
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_049461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6193#issuecomment-49461",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_049462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6193#issuecomment-49462",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_049463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6193#issuecomment-49463",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_049464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6193#issuecomment-49464",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_049465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6193#issuecomment-49465",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -200,16 +200,16 @@ Thinking about the agm termination condition, the convergence of agm is quadrati
 archive/issue_comments_049466.json:
 ```json
 {
-    "body": "Attachment [6193-ell-log-referee.patch](tarball://root/attachments/some-uuid/ticket6193/6193-ell-log-referee.patch) by robertwb created at 2009-06-05 11:11:56",
+    "body": "Attachment [6193-ell-log-referee.patch](tarball://root/attachments/some-uuid/ticket6193/6193-ell-log-referee.patch) by @robertwb created at 2009-06-05 11:11:56",
     "created_at": "2009-06-05T11:11:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6193#issuecomment-49466",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6193-ell-log-referee.patch](tarball://root/attachments/some-uuid/ticket6193/6193-ell-log-referee.patch) by robertwb created at 2009-06-05 11:11:56
+Attachment [6193-ell-log-referee.patch](tarball://root/attachments/some-uuid/ticket6193/6193-ell-log-referee.patch) by @robertwb created at 2009-06-05 11:11:56
 
 
 
@@ -223,7 +223,7 @@ archive/issue_comments_049467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6193#issuecomment-49467",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_049468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6193",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6193#issuecomment-49468",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

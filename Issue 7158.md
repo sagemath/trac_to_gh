@@ -3,7 +3,7 @@
 archive/issues_007158.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  timdumol was\n\nKeywords: sagenb captcha\n\nSee\n\n* [CAPTCHA](http://en.wikipedia.org/wiki/CAPTCHA)\n* [reCAPTCHA](http://recaptcha.net/)\n\nfor descriptions and examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7158\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol @williamstein\n\nKeywords: sagenb captcha\n\nSee\n\n* [CAPTCHA](http://en.wikipedia.org/wiki/CAPTCHA)\n* [reCAPTCHA](http://recaptcha.net/)\n\nfor descriptions and examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7158\n\n",
     "created_at": "2009-10-08T17:07:10Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007158.json:
     "title": "SageNB -- Set up challenge-response, such as a CAPTCHA, for account registration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7158",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
 
-CC:  timdumol was
+CC:  @TimDumol @williamstein
 
 Keywords: sagenb captcha
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7158
 archive/issue_comments_059309.json:
 ```json
 {
-    "body": "Attachment [trac_7158-captcha.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha.patch) by mpatel created at 2009-10-08 17:16:28\n\nAdd challenge-response to notebook registration page. Depends on #7110.",
+    "body": "Attachment [trac_7158-captcha.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha.patch) by @qed777 created at 2009-10-08 17:16:28\n\nAdd challenge-response to notebook registration page. Depends on #7110.",
     "created_at": "2009-10-08T17:16:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59309",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7158-captcha.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha.patch) by mpatel created at 2009-10-08 17:16:28
+Attachment [trac_7158-captcha.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha.patch) by @qed777 created at 2009-10-08 17:16:28
 
 Add challenge-response to notebook registration page. Depends on #7110.
 
@@ -66,7 +66,7 @@ archive/issue_comments_059310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59310",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_059311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59311",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_059312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59312",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_059313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59313",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_059314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59314",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -188,16 +188,16 @@ Rebased for #7196.  Added regexp test for simple challenge.  Apply only this pat
 archive/issue_comments_059315.json:
 ```json
 {
-    "body": "Attachment [trac_7158-captcha_v2.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2.patch) by mpatel created at 2009-10-14 08:49:42\n\nPatch v2:\n\n* Uses regular expressions to verify \"simple\" challenge responses.\n* Rebased against #7196.\n\nAs before, please edit `sagenb.notebook.server_conf.py` to set up and enable the new feature.",
+    "body": "Attachment [trac_7158-captcha_v2.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2.patch) by @qed777 created at 2009-10-14 08:49:42\n\nPatch v2:\n\n* Uses regular expressions to verify \"simple\" challenge responses.\n* Rebased against #7196.\n\nAs before, please edit `sagenb.notebook.server_conf.py` to set up and enable the new feature.",
     "created_at": "2009-10-14T08:49:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59315",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7158-captcha_v2.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2.patch) by mpatel created at 2009-10-14 08:49:42
+Attachment [trac_7158-captcha_v2.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2.patch) by @qed777 created at 2009-10-14 08:49:42
 
 Patch v2:
 
@@ -218,7 +218,7 @@ archive/issue_comments_059316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59316",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -239,16 +239,16 @@ broken by the new `.sagenb` directory name requirement(?).
 archive/issue_comments_059317.json:
 ```json
 {
-    "body": "Attachment [trac_7158-captcha_v2-REFEREE.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2-REFEREE.patch) by was created at 2009-10-17 05:57:43\n\napply this *after* applying trac_7158-captcha_v2.patch; it just makes a few minor changes I made during refereeing",
+    "body": "Attachment [trac_7158-captcha_v2-REFEREE.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2-REFEREE.patch) by @williamstein created at 2009-10-17 05:57:43\n\napply this *after* applying trac_7158-captcha_v2.patch; it just makes a few minor changes I made during refereeing",
     "created_at": "2009-10-17T05:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59317",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7158-captcha_v2-REFEREE.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2-REFEREE.patch) by was created at 2009-10-17 05:57:43
+Attachment [trac_7158-captcha_v2-REFEREE.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2-REFEREE.patch) by @williamstein created at 2009-10-17 05:57:43
 
 apply this *after* applying trac_7158-captcha_v2.patch; it just makes a few minor changes I made during refereeing
 
@@ -264,7 +264,7 @@ archive/issue_comments_059318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59318",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_059319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59319",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

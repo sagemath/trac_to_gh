@@ -3,7 +3,7 @@
 archive/issues_008321.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  maldun fredrik.johansson kcrisman mariah bober eviatarbach mforets\n\nFrom the sage-devel:\n\n\n```\nOn Feb 20, 2010, at 12:40 PM, John H Palmieri wrote:\n...\n> I was curious about this, so I tried specifying the number of digits:\n>\n> sage: h = integral(sin(x)/x^2, (x, 1, pi/2)); h\n> integrate(sin(x)/x^2, x, 1, 1/2*pi)\n> sage: h.n()\n> 0.33944794097891573\n> sage: h.n(digits=14)\n> 0.33944794097891573\n> sage: h.n(digits=600)\n> 0.33944794097891573\n> sage: h.n(digits=600) == h.n(digits=14)\n> True\n> sage: h.n(prec=50) == h.n(prec=1000)\n> True\n>\n> Is there an inherit limit in Sage on the accuracy of numerical\n> integrals?  \n```\n\n\nThe `_evalf_` function defined on line 179 of `sage/symbolic/integration/integral.py` calls the gsl `numerical_integral()` function and ignores the precision.\n\nWe should raise a `NotImplementedError` for high precision, or find a way to do arbitrary precision numerical integration.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8321\n\n",
+    "body": "Assignee: @burcin\n\nCC:  maldun @fredrik-johansson @kcrisman mariah bober @eviatarbach @mforets\n\nFrom the sage-devel:\n\n\n```\nOn Feb 20, 2010, at 12:40 PM, John H Palmieri wrote:\n...\n> I was curious about this, so I tried specifying the number of digits:\n>\n> sage: h = integral(sin(x)/x^2, (x, 1, pi/2)); h\n> integrate(sin(x)/x^2, x, 1, 1/2*pi)\n> sage: h.n()\n> 0.33944794097891573\n> sage: h.n(digits=14)\n> 0.33944794097891573\n> sage: h.n(digits=600)\n> 0.33944794097891573\n> sage: h.n(digits=600) == h.n(digits=14)\n> True\n> sage: h.n(prec=50) == h.n(prec=1000)\n> True\n>\n> Is there an inherit limit in Sage on the accuracy of numerical\n> integrals?  \n```\n\n\nThe `_evalf_` function defined on line 179 of `sage/symbolic/integration/integral.py` calls the gsl `numerical_integral()` function and ignores the precision.\n\nWe should raise a `NotImplementedError` for high precision, or find a way to do arbitrary precision numerical integration.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8321\n\n",
     "created_at": "2010-02-21T21:26:32Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_008321.json:
     "title": "numerical integration with arbitrary precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8321",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  maldun fredrik.johansson kcrisman mariah bober eviatarbach mforets
+CC:  maldun @fredrik-johansson @kcrisman mariah bober @eviatarbach @mforets
 
 From the sage-devel:
 
@@ -67,7 +67,7 @@ archive/issue_comments_073805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73805",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_073806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73806",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_073807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73807",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -232,7 +232,7 @@ greez maldun
 archive/issue_comments_073809.json:
 ```json
 {
-    "body": "Changing assignee from burcin to maldun.",
+    "body": "Changing assignee from @burcin to maldun.",
     "created_at": "2010-08-25T15:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
@@ -241,7 +241,7 @@ archive/issue_comments_073809.json:
 }
 ```
 
-Changing assignee from burcin to maldun.
+Changing assignee from @burcin to maldun.
 
 
 
@@ -250,7 +250,7 @@ Changing assignee from burcin to maldun.
 archive/issue_comments_073810.json:
 ```json
 {
-    "body": "Changing assignee from maldun to burcin.",
+    "body": "Changing assignee from maldun to @burcin.",
     "created_at": "2010-08-25T15:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
@@ -259,7 +259,7 @@ archive/issue_comments_073810.json:
 }
 ```
 
-Changing assignee from maldun to burcin.
+Changing assignee from maldun to @burcin.
 
 
 
@@ -327,7 +327,7 @@ archive/issue_comments_073814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73814",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_073815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73815",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_073818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73818",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_073819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73819",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -551,7 +551,7 @@ archive/issue_comments_073822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73822",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -586,7 +586,7 @@ archive/issue_comments_073823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73823",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -673,7 +673,7 @@ archive/issue_comments_073825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73825",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -725,7 +725,7 @@ archive/issue_comments_073827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73827",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -743,7 +743,7 @@ archive/issue_comments_073828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73828",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -761,7 +761,7 @@ archive/issue_comments_073829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73829",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -787,7 +787,7 @@ archive/issue_comments_073830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73830",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -810,7 +810,7 @@ archive/issue_comments_073831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73831",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -969,7 +969,7 @@ archive/issue_comments_073833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73833",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -989,7 +989,7 @@ archive/issue_comments_073834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73834",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1020,7 +1020,7 @@ archive/issue_comments_073835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73835",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1033,16 +1033,16 @@ rebase of previous patch to 4.7.1
 archive/issue_comments_073836.json:
 ```json
 {
-    "body": "Attachment [trac_8321_rebase.patch](tarball://root/attachments/some-uuid/ticket8321/trac_8321_rebase.patch) by benjaminfjones created at 2011-08-23 03:52:05\n\nI'm working on adding numerical integration examples, in the meantime I've posted a rebase of the previously uploaded patch to sage-4.7.1.",
+    "body": "Attachment [trac_8321_rebase.patch](tarball://root/attachments/some-uuid/ticket8321/trac_8321_rebase.patch) by @benjaminfjones created at 2011-08-23 03:52:05\n\nI'm working on adding numerical integration examples, in the meantime I've posted a rebase of the previously uploaded patch to sage-4.7.1.",
     "created_at": "2011-08-23T03:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73836",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
-Attachment [trac_8321_rebase.patch](tarball://root/attachments/some-uuid/ticket8321/trac_8321_rebase.patch) by benjaminfjones created at 2011-08-23 03:52:05
+Attachment [trac_8321_rebase.patch](tarball://root/attachments/some-uuid/ticket8321/trac_8321_rebase.patch) by @benjaminfjones created at 2011-08-23 03:52:05
 
 I'm working on adding numerical integration examples, in the meantime I've posted a rebase of the previously uploaded patch to sage-4.7.1.
 
@@ -1058,7 +1058,7 @@ archive/issue_comments_073837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73837",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1204,7 +1204,7 @@ archive/issue_comments_073838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73838",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1244,7 +1244,7 @@ archive/issue_comments_073839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73839",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -1262,7 +1262,7 @@ archive/issue_comments_073840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73840",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1285,7 +1285,7 @@ archive/issue_comments_073841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73841",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -1311,7 +1311,7 @@ archive/issue_comments_073842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73842",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -1371,16 +1371,16 @@ The estimate_error method should be changed to something better and should be te
 archive/issue_comments_073843.json:
 ```json
 {
-    "body": "Remove assignee burcin.",
+    "body": "Remove assignee @burcin.",
     "created_at": "2011-08-23T15:45:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73843",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
-Remove assignee burcin.
+Remove assignee @burcin.
 
 
 
@@ -1394,7 +1394,7 @@ archive/issue_comments_073844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73844",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1462,7 +1462,7 @@ archive/issue_comments_073845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73845",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -1484,7 +1484,7 @@ archive/issue_comments_073846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73846",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1527,7 +1527,7 @@ archive/issue_comments_073847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73847",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -1561,7 +1561,7 @@ archive/issue_comments_073848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73848",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -1636,7 +1636,7 @@ archive/issue_comments_073849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73849",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -1677,7 +1677,7 @@ archive/issue_comments_073850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73850",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -1710,7 +1710,7 @@ archive/issue_comments_073851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73851",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1728,7 +1728,7 @@ archive/issue_comments_073852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73852",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -1844,7 +1844,7 @@ archive/issue_comments_073853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73853",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1862,7 +1862,7 @@ archive/issue_comments_073854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73854",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1880,7 +1880,7 @@ archive/issue_comments_073855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73855",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1932,7 +1932,7 @@ archive/issue_comments_073856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73856",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -1977,7 +1977,7 @@ archive/issue_comments_073857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73857",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -2012,7 +2012,7 @@ archive/issue_comments_073858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73858",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 
@@ -2058,7 +2058,7 @@ archive/issue_comments_073859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73859",
-    "user": "mforets"
+    "user": "@mforets"
 }
 ```
 
@@ -2078,7 +2078,7 @@ archive/issue_comments_073860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8321#issuecomment-73860",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006037.json:
 ```json
 {
-    "body": "Assignee: justin\n\nCC:  mabshoff wstein tornaria\n\nCompletely rewritten and doctested Local densities routines according to a consistent interface (and algorithms) described in the attached PDF file.\n\nPatch to follow very shortly!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6037\n\n",
+    "body": "Assignee: justin\n\nCC:  mabshoff wstein @tornaria\n\nCompletely rewritten and doctested Local densities routines according to a consistent interface (and algorithms) described in the attached PDF file.\n\nPatch to follow very shortly!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6037\n\n",
     "created_at": "2009-05-14T10:03:59Z",
     "labels": [
         "quadratic forms",
@@ -14,12 +14,12 @@ archive/issues_006037.json:
     "title": "Major Upgrade to QuadraticForm Local Density Routines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6037",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 Assignee: justin
 
-CC:  mabshoff wstein tornaria
+CC:  mabshoff wstein @tornaria
 
 Completely rewritten and doctested Local densities routines according to a consistent interface (and algorithms) described in the attached PDF file.
 
@@ -41,7 +41,7 @@ archive/issue_comments_048076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6037#issuecomment-48076",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
@@ -54,16 +54,16 @@ Description of the inputs and algorithms used in QF local density routines
 archive/issue_comments_048077.json:
 ```json
 {
-    "body": "Attachment [Local Densities Writeup.pdf](tarball://root/attachments/some-uuid/ticket6037/Local Densities Writeup.pdf) by jonhanke created at 2009-05-14 21:18:47",
+    "body": "Attachment [Local Densities Writeup.pdf](tarball://root/attachments/some-uuid/ticket6037/Local Densities Writeup.pdf) by @jonhanke created at 2009-05-14 21:18:47",
     "created_at": "2009-05-14T21:18:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6037#issuecomment-48077",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
-Attachment [Local Densities Writeup.pdf](tarball://root/attachments/some-uuid/ticket6037/Local Densities Writeup.pdf) by jonhanke created at 2009-05-14 21:18:47
+Attachment [Local Densities Writeup.pdf](tarball://root/attachments/some-uuid/ticket6037/Local Densities Writeup.pdf) by @jonhanke created at 2009-05-14 21:18:47
 
 
 
@@ -72,16 +72,16 @@ Attachment [Local Densities Writeup.pdf](tarball://root/attachments/some-uuid/ti
 archive/issue_comments_048078.json:
 ```json
 {
-    "body": "Attachment [patch-2__QF_local_densities__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6037/patch-2__QF_local_densities__3.4.1.patch) by jonhanke created at 2009-05-14 21:19:46",
+    "body": "Attachment [patch-2__QF_local_densities__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6037/patch-2__QF_local_densities__3.4.1.patch) by @jonhanke created at 2009-05-14 21:19:46",
     "created_at": "2009-05-14T21:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6037#issuecomment-48078",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
-Attachment [patch-2__QF_local_densities__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6037/patch-2__QF_local_densities__3.4.1.patch) by jonhanke created at 2009-05-14 21:19:46
+Attachment [patch-2__QF_local_densities__3.4.1.patch](tarball://root/attachments/some-uuid/ticket6037/patch-2__QF_local_densities__3.4.1.patch) by @jonhanke created at 2009-05-14 21:19:46
 
 
 
@@ -90,16 +90,16 @@ Attachment [patch-2__QF_local_densities__3.4.1.patch](tarball://root/attachments
 archive/issue_comments_048079.json:
 ```json
 {
-    "body": "Attachment [Local Densities Writeup.tex](tarball://root/attachments/some-uuid/ticket6037/Local Densities Writeup.tex) by jonhanke created at 2009-05-15 18:16:41\n\nLaTeX file used to create the PDF writeup",
+    "body": "Attachment [Local Densities Writeup.tex](tarball://root/attachments/some-uuid/ticket6037/Local Densities Writeup.tex) by @jonhanke created at 2009-05-15 18:16:41\n\nLaTeX file used to create the PDF writeup",
     "created_at": "2009-05-15T18:16:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6037#issuecomment-48079",
-    "user": "jonhanke"
+    "user": "@jonhanke"
 }
 ```
 
-Attachment [Local Densities Writeup.tex](tarball://root/attachments/some-uuid/ticket6037/Local Densities Writeup.tex) by jonhanke created at 2009-05-15 18:16:41
+Attachment [Local Densities Writeup.tex](tarball://root/attachments/some-uuid/ticket6037/Local Densities Writeup.tex) by @jonhanke created at 2009-05-15 18:16:41
 
 LaTeX file used to create the PDF writeup
 
@@ -115,7 +115,7 @@ archive/issue_comments_048080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6037#issuecomment-48080",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 

@@ -63,16 +63,16 @@ Changing status from new to assigned.
 archive/issue_comments_029373.json:
 ```json
 {
-    "body": "Attachment [trac_4070.patch](tarball://root/attachments/some-uuid/ticket4070/trac_4070.patch) by malb created at 2008-09-07 18:05:53\n\nBuilds fine on:\n* x86_64, Core2Duo, Debian GNU/Linux testing (my notebook)\n* x86_64, Opteron, Ubuntu (my desktop)\n* x86_64, Opteron, Debian GNU/Linux testing (my server at RHUL)\n* x86_64, Opteron, Debian GNU/Linux stable (**sage.math**)\n* x86_64, 2xCore2Duo, Fedora 8 (**eno**)\n\nStrictly speaking, `libs/polybori/decl.pxi` should be touched instead of `rings/polynomial/pbori.pyx` but this isn't a show stopper for now, since only one module links against PolyBoRi anyway (i.e. `rings.polynomialpbori`)",
+    "body": "Attachment [trac_4070.patch](tarball://root/attachments/some-uuid/ticket4070/trac_4070.patch) by @malb created at 2008-09-07 18:05:53\n\nBuilds fine on:\n* x86_64, Core2Duo, Debian GNU/Linux testing (my notebook)\n* x86_64, Opteron, Ubuntu (my desktop)\n* x86_64, Opteron, Debian GNU/Linux testing (my server at RHUL)\n* x86_64, Opteron, Debian GNU/Linux stable (**sage.math**)\n* x86_64, 2xCore2Duo, Fedora 8 (**eno**)\n\nStrictly speaking, `libs/polybori/decl.pxi` should be touched instead of `rings/polynomial/pbori.pyx` but this isn't a show stopper for now, since only one module links against PolyBoRi anyway (i.e. `rings.polynomialpbori`)",
     "created_at": "2008-09-07T18:05:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4070#issuecomment-29373",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_4070.patch](tarball://root/attachments/some-uuid/ticket4070/trac_4070.patch) by malb created at 2008-09-07 18:05:53
+Attachment [trac_4070.patch](tarball://root/attachments/some-uuid/ticket4070/trac_4070.patch) by @malb created at 2008-09-07 18:05:53
 
 Builds fine on:
 * x86_64, Core2Duo, Debian GNU/Linux testing (my notebook)
@@ -95,7 +95,7 @@ archive/issue_comments_029374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4070#issuecomment-29374",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_029375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4070#issuecomment-29375",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_029376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4070#issuecomment-29376",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_029377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4070",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4070#issuecomment-29377",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

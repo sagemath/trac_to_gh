@@ -3,7 +3,7 @@
 archive/issues_007243.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net mhansen\n\nIn the extcode spkg, pari/dokchitser/testall uses bashisms but has a /bin/sh #! line:\n\n#!/bin/sh\necho \"\\\\r ex-bsw\" | sage -gp\necho \"\\\\r ex-chgen\" | sage -gp\n\nWe should change the #! line to\n\n#!/bin/bash\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7243\n\n",
+    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net @mwhansen\n\nIn the extcode spkg, pari/dokchitser/testall uses bashisms but has a /bin/sh #! line:\n\n#!/bin/sh\necho \"\\\\r ex-bsw\" | sage -gp\necho \"\\\\r ex-chgen\" | sage -gp\n\nWe should change the #! line to\n\n#!/bin/bash\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7243\n\n",
     "created_at": "2009-10-19T00:09:55Z",
     "labels": [
         "porting",
@@ -14,12 +14,12 @@ archive/issues_007243.json:
     "title": "bashisms in extcode-4.1.2/pari/dokchitser/testall",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7243",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: tbd
 
-CC:  david.kirkby@onetel.net mhansen
+CC:  david.kirkby@onetel.net @mwhansen
 
 In the extcode spkg, pari/dokchitser/testall uses bashisms but has a /bin/sh #! line:
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7243
 archive/issue_comments_060134.json:
 ```json
 {
-    "body": "Attachment [trac_7243.patch](tarball://root/attachments/some-uuid/ticket7243/trac_7243.patch) by mhansen created at 2009-10-19 04:06:57",
+    "body": "Attachment [trac_7243.patch](tarball://root/attachments/some-uuid/ticket7243/trac_7243.patch) by @mwhansen created at 2009-10-19 04:06:57",
     "created_at": "2009-10-19T04:06:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7243#issuecomment-60134",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7243.patch](tarball://root/attachments/some-uuid/ticket7243/trac_7243.patch) by mhansen created at 2009-10-19 04:06:57
+Attachment [trac_7243.patch](tarball://root/attachments/some-uuid/ticket7243/trac_7243.patch) by @mwhansen created at 2009-10-19 04:06:57
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_060135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7243#issuecomment-60135",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_060138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7243#issuecomment-60138",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -158,16 +158,16 @@ Yeah, using '#!/usr/bin/env bash' should be correct.
 archive/issue_comments_060139.json:
 ```json
 {
-    "body": "Attachment [trac_7243.patch.v2](tarball://root/attachments/some-uuid/ticket7243/trac_7243.patch.v2) by tabbott created at 2009-12-17 19:34:25",
+    "body": "Attachment [trac_7243.patch.v2](tarball://root/attachments/some-uuid/ticket7243/trac_7243.patch.v2) by @timabbott created at 2009-12-17 19:34:25",
     "created_at": "2009-12-17T19:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7243#issuecomment-60139",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [trac_7243.patch.v2](tarball://root/attachments/some-uuid/ticket7243/trac_7243.patch.v2) by tabbott created at 2009-12-17 19:34:25
+Attachment [trac_7243.patch.v2](tarball://root/attachments/some-uuid/ticket7243/trac_7243.patch.v2) by @timabbott created at 2009-12-17 19:34:25
 
 
 
@@ -181,7 +181,7 @@ archive/issue_comments_060140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7243#issuecomment-60140",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_060144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7243",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7243#issuecomment-60144",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007717.json:
     "title": "sage -coverage enhancement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7717",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 Assignee: mvngu
@@ -49,7 +49,7 @@ archive/issue_comments_066283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7717",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7717#issuecomment-66283",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

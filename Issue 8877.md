@@ -14,7 +14,7 @@ archive/issues_008877.json:
     "title": "New methods in partitions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8877",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 Assignee: sage-combinat
@@ -39,7 +39,7 @@ archive/issue_comments_081577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8877#issuecomment-81577",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_081578.json:
 ```json
 {
-    "body": "Attachment [trac_8877-k_bounded-as.2.patch](tarball://root/attachments/some-uuid/ticket8877/trac_8877-k_bounded-as.2.patch) by hivert created at 2010-05-05 04:03:29",
+    "body": "Attachment [trac_8877-k_bounded-as.2.patch](tarball://root/attachments/some-uuid/ticket8877/trac_8877-k_bounded-as.2.patch) by @hivert created at 2010-05-05 04:03:29",
     "created_at": "2010-05-05T04:03:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8877#issuecomment-81578",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8877-k_bounded-as.2.patch](tarball://root/attachments/some-uuid/ticket8877/trac_8877-k_bounded-as.2.patch) by hivert created at 2010-05-05 04:03:29
+Attachment [trac_8877-k_bounded-as.2.patch](tarball://root/attachments/some-uuid/ticket8877/trac_8877-k_bounded-as.2.patch) by @hivert created at 2010-05-05 04:03:29
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_081579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8877#issuecomment-81579",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_081580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8877#issuecomment-81580",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_081581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8877#issuecomment-81581",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 

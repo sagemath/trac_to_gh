@@ -14,7 +14,7 @@ archive/issues_008771.json:
     "title": "Sage-4.4 + GCC-4.5.0 -- sage fails to startup due to libzn_poly missing symbol issue (ZNP_mpn_mulmid_fallback_thresh)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8771",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -66,7 +66,7 @@ archive/issue_comments_080271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80271",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_080272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80272",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_080273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80273",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_080274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80274",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_080275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80275",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_080276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80276",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_080277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80277",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_080278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80278",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

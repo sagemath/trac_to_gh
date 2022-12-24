@@ -3,7 +3,7 @@
 archive/issues_000752.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/752\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/752\n\n",
     "created_at": "2007-09-25T18:21:54Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_000752.json:
     "title": "jacobians not wrapped for singular multi-polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/752",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_004445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/752#issuecomment-4445",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_004446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/752#issuecomment-4446",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_004447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/752",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/752#issuecomment-4447",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

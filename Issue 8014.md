@@ -3,7 +3,7 @@
 archive/issues_008014.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  cremona wuthrich shumow lorenz\n\nCurrently, it's quite slow to create an `EllipticCurveIsogeny` object, because it precomputes a huge amount of information about itself. (This blocks the original request at #7262, for instance.) It seems like it would be easy enough (and generally useful!) to speed up creation of isogeny objects, and have them lazily evaluate the appropriate bits as needed. Then one could unify the `multiplication_by_m` and `multiplication_by_m_isogeny` methods, for instance (maybe by deprecating the former?).\n\nThat said, I haven't spent much time with the isogeny code -- if there's some obvious reason this is a bad idea, please comment on the ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8014\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona @categorie shumow @yyyyx4\n\nCurrently, it's quite slow to create an `EllipticCurveIsogeny` object, because it precomputes a huge amount of information about itself. (This blocks the original request at #7262, for instance.) It seems like it would be easy enough (and generally useful!) to speed up creation of isogeny objects, and have them lazily evaluate the appropriate bits as needed. Then one could unify the `multiplication_by_m` and `multiplication_by_m_isogeny` methods, for instance (maybe by deprecating the former?).\n\nThat said, I haven't spent much time with the isogeny code -- if there's some obvious reason this is a bad idea, please comment on the ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8014\n\n",
     "created_at": "2010-01-20T19:20:48Z",
     "labels": [
         "elliptic curves",
@@ -13,12 +13,12 @@ archive/issues_008014.json:
     "title": "Make `EllipticCurveIsogeny` objects faster to create via lazy evaluation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8014",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  cremona wuthrich shumow lorenz
+CC:  @JohnCremona @categorie shumow @yyyyx4
 
 Currently, it's quite slow to create an `EllipticCurveIsogeny` object, because it precomputes a huge amount of information about itself. (This blocks the original request at #7262, for instance.) It seems like it would be easy enough (and generally useful!) to speed up creation of isogeny objects, and have them lazily evaluate the appropriate bits as needed. Then one could unify the `multiplication_by_m` and `multiplication_by_m_isogeny` methods, for instance (maybe by deprecating the former?).
 
@@ -40,7 +40,7 @@ archive/issue_comments_070041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8014#issuecomment-70041",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_070042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8014",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8014#issuecomment-70042",
-    "user": "lorenz"
+    "user": "@yyyyx4"
 }
 ```
 

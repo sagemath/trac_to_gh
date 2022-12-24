@@ -14,7 +14,7 @@ archive/issues_006285.json:
     "title": "Wrong description of arcsin function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6285",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 Description for "arcsin" wrongly says it is "The inverse of the hyperbolic sine function" !!
@@ -57,7 +57,7 @@ archive/issue_comments_050185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6285#issuecomment-50185",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_050186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6285#issuecomment-50186",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_050187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6285#issuecomment-50187",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -106,16 +106,16 @@ I fixed these as a part of #6244. This bug can be closed once #6244 is merged.
 archive/issue_comments_050188.json:
 ```json
 {
-    "body": "Set assignee to burcin.",
+    "body": "Set assignee to @burcin.",
     "created_at": "2009-06-14T13:02:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6285#issuecomment-50188",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Set assignee to burcin.
+Set assignee to @burcin.
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_050189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6285#issuecomment-50189",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

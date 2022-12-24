@@ -3,7 +3,7 @@
 archive/issues_009599.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  wjp simonking malb jhpalmieri\n\nA patch at #1396 was merged in 4.5.2.alpha0, but that caused Sage to segfault when starting on t2.math. That ticket was backed out in 4.5.2.alpha1, and should be re-merged. See #9583 for discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9599\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @wjp simonking @malb @jhpalmieri\n\nA patch at #1396 was merged in 4.5.2.alpha0, but that caused Sage to segfault when starting on t2.math. That ticket was backed out in 4.5.2.alpha1, and should be re-merged. See #9583 for discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9599\n\n",
     "created_at": "2010-07-26T08:14:06Z",
     "labels": [
         "porting: Solaris",
@@ -14,12 +14,12 @@ archive/issues_009599.json:
     "title": "re-merge #1396 and insure that Sage starts on t2.math",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9599",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: drkirkby
 
-CC:  wjp simonking malb jhpalmieri
+CC:  @wjp simonking @malb @jhpalmieri
 
 A patch at #1396 was merged in 4.5.2.alpha0, but that caused Sage to segfault when starting on t2.math. That ticket was backed out in 4.5.2.alpha1, and should be re-merged. See #9583 for discussion.
 
@@ -39,7 +39,7 @@ archive/issue_comments_092880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9599#issuecomment-92880",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_092881.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9599#issuecomment-92881",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_092882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9599#issuecomment-92882",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_092883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9599#issuecomment-92883",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_092884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9599#issuecomment-92884",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_092885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9599#issuecomment-92885",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_092886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9599#issuecomment-92886",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_092887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9599#issuecomment-92887",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_092888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9599#issuecomment-92888",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -216,16 +216,16 @@ The commit message will have to be changed to reflect number, also you should sp
 archive/issue_comments_092889.json:
 ```json
 {
-    "body": "Attachment [trac_9599.patch](tarball://root/attachments/some-uuid/ticket9599/trac_9599.patch) by malb created at 2011-01-26 20:22:11",
+    "body": "Attachment [trac_9599.patch](tarball://root/attachments/some-uuid/ticket9599/trac_9599.patch) by @malb created at 2011-01-26 20:22:11",
     "created_at": "2011-01-26T20:22:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9599#issuecomment-92889",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_9599.patch](tarball://root/attachments/some-uuid/ticket9599/trac_9599.patch) by malb created at 2011-01-26 20:22:11
+Attachment [trac_9599.patch](tarball://root/attachments/some-uuid/ticket9599/trac_9599.patch) by @malb created at 2011-01-26 20:22:11
 
 
 
@@ -239,7 +239,7 @@ archive/issue_comments_092890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9599#issuecomment-92890",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_092891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9599",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9599#issuecomment-92891",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003699.json:
     "title": "rewrite free_module.py to use basis matrices everywhere",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3699",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
@@ -65,7 +65,7 @@ archive/issue_comments_026245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3699#issuecomment-26245",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,16 +98,16 @@ command :-).
 archive/issue_comments_026246.json:
 ```json
 {
-    "body": "Attachment [trac_3699.patch](tarball://root/attachments/some-uuid/ticket3699/trac_3699.patch) by cremona created at 2009-03-22 18:31:37\n\nPatch attached which does what I think was intended.  Based on 3.4, all tests in sage/modules should pass.",
+    "body": "Attachment [trac_3699.patch](tarball://root/attachments/some-uuid/ticket3699/trac_3699.patch) by @JohnCremona created at 2009-03-22 18:31:37\n\nPatch attached which does what I think was intended.  Based on 3.4, all tests in sage/modules should pass.",
     "created_at": "2009-03-22T18:31:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3699#issuecomment-26246",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_3699.patch](tarball://root/attachments/some-uuid/ticket3699/trac_3699.patch) by cremona created at 2009-03-22 18:31:37
+Attachment [trac_3699.patch](tarball://root/attachments/some-uuid/ticket3699/trac_3699.patch) by @JohnCremona created at 2009-03-22 18:31:37
 
 Patch attached which does what I think was intended.  Based on 3.4, all tests in sage/modules should pass.
 
@@ -123,7 +123,7 @@ archive/issue_comments_026247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3699#issuecomment-26247",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_026248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3699#issuecomment-26248",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_026249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3699#issuecomment-26249",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_026250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3699#issuecomment-26250",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

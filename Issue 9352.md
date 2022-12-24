@@ -14,7 +14,7 @@ archive/issues_009352.json:
     "title": "givaro spkg: trivial typo in spkg-check",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9352",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9352
 archive/issue_comments_088780.json:
 ```json
 {
-    "body": "Attachment [givaro.patch](tarball://root/attachments/some-uuid/ticket9352/givaro.patch) by jhpalmieri created at 2010-06-27 17:20:11",
+    "body": "Attachment [givaro.patch](tarball://root/attachments/some-uuid/ticket9352/givaro.patch) by @jhpalmieri created at 2010-06-27 17:20:11",
     "created_at": "2010-06-27T17:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9352#issuecomment-88780",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [givaro.patch](tarball://root/attachments/some-uuid/ticket9352/givaro.patch) by jhpalmieri created at 2010-06-27 17:20:11
+Attachment [givaro.patch](tarball://root/attachments/some-uuid/ticket9352/givaro.patch) by @jhpalmieri created at 2010-06-27 17:20:11
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_088781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9352#issuecomment-88781",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_088782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9352#issuecomment-88782",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_088785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9352#issuecomment-88785",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_088786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9352",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9352#issuecomment-88786",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

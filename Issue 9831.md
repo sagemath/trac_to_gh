@@ -3,7 +3,7 @@
 archive/issues_009831.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  jason\n\nThe W3C validator gives errors about missing targets for the <label> elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9832\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @jasongrout\n\nThe W3C validator gives errors about missing targets for the <label> elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9832\n\n",
     "created_at": "2010-08-28T13:42:47Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009831.json:
     "title": "Invalid HTML in data/sage/html/login.html",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9831",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: jason, was
 
-CC:  jason
+CC:  @jasongrout
 
 The W3C validator gives errors about missing targets for the <label> elements.
 
@@ -39,7 +39,7 @@ archive/issue_comments_097015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9831#issuecomment-97015",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -52,16 +52,16 @@ Fixes the error.
 archive/issue_comments_097016.json:
 ```json
 {
-    "body": "Attachment [trac_9832-invalid-html.patch](tarball://root/attachments/some-uuid/ticket9832/trac_9832-invalid-html.patch) by timdumol created at 2010-08-28 14:15:48",
+    "body": "Attachment [trac_9832-invalid-html.patch](tarball://root/attachments/some-uuid/ticket9832/trac_9832-invalid-html.patch) by @TimDumol created at 2010-08-28 14:15:48",
     "created_at": "2010-08-28T14:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9831#issuecomment-97016",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9832-invalid-html.patch](tarball://root/attachments/some-uuid/ticket9832/trac_9832-invalid-html.patch) by timdumol created at 2010-08-28 14:15:48
+Attachment [trac_9832-invalid-html.patch](tarball://root/attachments/some-uuid/ticket9832/trac_9832-invalid-html.patch) by @TimDumol created at 2010-08-28 14:15:48
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_097017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9831#issuecomment-97017",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -88,16 +88,16 @@ Changing status from new to needs_review.
 archive/issue_comments_097018.json:
 ```json
 {
-    "body": "Changing assignee from jason, was to jason.",
+    "body": "Changing assignee from jason, was to @jasongrout.",
     "created_at": "2010-10-08T20:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9831#issuecomment-97018",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from jason, was to jason.
+Changing assignee from jason, was to @jasongrout.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_097019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9831#issuecomment-97019",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_097020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9831#issuecomment-97020",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_097021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9831#issuecomment-97021",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_097022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9831",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9831#issuecomment-97022",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

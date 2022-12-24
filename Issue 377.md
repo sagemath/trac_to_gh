@@ -13,7 +13,7 @@ archive/issues_000377.json:
     "title": "major bug in number fields if defining poly has denoms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/377",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -49,7 +49,7 @@ archive/issue_comments_001797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/377#issuecomment-1797",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_001798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/377",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/377#issuecomment-1798",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -37,7 +37,7 @@ archive/issue_comments_001493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/313#issuecomment-1493",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_001496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/313#issuecomment-1496",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_001497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/313#issuecomment-1497",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_001498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/313#issuecomment-1498",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -162,16 +162,16 @@ Michael
 archive/issue_comments_001500.json:
 ```json
 {
-    "body": "Attachment [trac_313.patch](tarball://root/attachments/some-uuid/ticket313/trac_313.patch) by mhansen created at 2009-01-22 13:50:13",
+    "body": "Attachment [trac_313.patch](tarball://root/attachments/some-uuid/ticket313/trac_313.patch) by @mwhansen created at 2009-01-22 13:50:13",
     "created_at": "2009-01-22T13:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/313#issuecomment-1500",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_313.patch](tarball://root/attachments/some-uuid/ticket313/trac_313.patch) by mhansen created at 2009-01-22 13:50:13
+Attachment [trac_313.patch](tarball://root/attachments/some-uuid/ticket313/trac_313.patch) by @mwhansen created at 2009-01-22 13:50:13
 
 
 
@@ -185,7 +185,7 @@ archive/issue_comments_001501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/313",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/313#issuecomment-1501",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

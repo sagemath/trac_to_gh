@@ -3,7 +3,7 @@
 archive/issues_003975.json:
 ```json
 {
-    "body": "Assignee: was\n\ndelta is computed with xmin and xmax in the wrong order resulting in a negative delta.\n\nThis makes the rest of the code go very slowly.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3975\n\n",
+    "body": "Assignee: @williamstein\n\ndelta is computed with xmin and xmax in the wrong order resulting in a negative delta.\n\nThis makes the rest of the code go very slowly.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3975\n\n",
     "created_at": "2008-08-28T14:42:56Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_003975.json:
     "user": "anakha"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 delta is computed with xmin and xmax in the wrong order resulting in a negative delta.
 
@@ -54,16 +54,16 @@ Attachment [trac_3975.patch](tarball://root/attachments/some-uuid/ticket3975/tra
 archive/issue_comments_028562.json:
 ```json
 {
-    "body": "Attachment [trac_3975.2.patch](tarball://root/attachments/some-uuid/ticket3975/trac_3975.2.patch) by mhansen created at 2008-08-28 19:31:34\n\nI posted a rebased patch which should apply with all of the new plotting patches applied.\n\nPositive review.",
+    "body": "Attachment [trac_3975.2.patch](tarball://root/attachments/some-uuid/ticket3975/trac_3975.2.patch) by @mwhansen created at 2008-08-28 19:31:34\n\nI posted a rebased patch which should apply with all of the new plotting patches applied.\n\nPositive review.",
     "created_at": "2008-08-28T19:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3975",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3975#issuecomment-28562",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3975.2.patch](tarball://root/attachments/some-uuid/ticket3975/trac_3975.2.patch) by mhansen created at 2008-08-28 19:31:34
+Attachment [trac_3975.2.patch](tarball://root/attachments/some-uuid/ticket3975/trac_3975.2.patch) by @mwhansen created at 2008-08-28 19:31:34
 
 I posted a rebased patch which should apply with all of the new plotting patches applied.
 

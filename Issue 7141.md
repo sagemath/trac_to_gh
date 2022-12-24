@@ -14,7 +14,7 @@ archive/issues_007141.json:
     "title": "`math_parse` parses $'s in <script> tags",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7141",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7141
 archive/issue_comments_059180.json:
 ```json
 {
-    "body": "Attachment [trac_7141-sagenb-math_parse.patch](tarball://root/attachments/some-uuid/ticket7141/trac_7141-sagenb-math_parse.patch) by timdumol created at 2009-10-06 15:37:55\n\nFixes math_parse in sagenb.notebook.jsmath to skip <script> tags. Apply to sagenb repo.",
+    "body": "Attachment [trac_7141-sagenb-math_parse.patch](tarball://root/attachments/some-uuid/ticket7141/trac_7141-sagenb-math_parse.patch) by @TimDumol created at 2009-10-06 15:37:55\n\nFixes math_parse in sagenb.notebook.jsmath to skip <script> tags. Apply to sagenb repo.",
     "created_at": "2009-10-06T15:37:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7141#issuecomment-59180",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7141-sagenb-math_parse.patch](tarball://root/attachments/some-uuid/ticket7141/trac_7141-sagenb-math_parse.patch) by timdumol created at 2009-10-06 15:37:55
+Attachment [trac_7141-sagenb-math_parse.patch](tarball://root/attachments/some-uuid/ticket7141/trac_7141-sagenb-math_parse.patch) by @TimDumol created at 2009-10-06 15:37:55
 
 Fixes math_parse in sagenb.notebook.jsmath to skip <script> tags. Apply to sagenb repo.
 
@@ -59,7 +59,7 @@ archive/issue_comments_059181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7141#issuecomment-59181",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_059182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7141#issuecomment-59182",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003356.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3356\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3356\n\n",
     "created_at": "2008-06-03T07:13:19Z",
     "labels": [
         "finance",
@@ -14,10 +14,10 @@ archive/issues_003356.json:
     "title": "[with patch; not ready for review] finance -- add randomization code; optimize some models; improve plotting code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3356",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3356
 archive/issue_comments_023331.json:
 ```json
 {
-    "body": "Attachment [sage-3356-part1.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part1.patch) by was created at 2008-06-03 07:14:13\n\nThis depends on #3346.",
+    "body": "Attachment [sage-3356-part1.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part1.patch) by @williamstein created at 2008-06-03 07:14:13\n\nThis depends on #3346.",
     "created_at": "2008-06-03T07:14:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3356#issuecomment-23331",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3356-part1.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part1.patch) by was created at 2008-06-03 07:14:13
+Attachment [sage-3356-part1.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part1.patch) by @williamstein created at 2008-06-03 07:14:13
 
 This depends on #3346.
 
@@ -52,16 +52,16 @@ This depends on #3346.
 archive/issue_comments_023332.json:
 ```json
 {
-    "body": "Attachment [sage-3356-part2.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part2.patch) by was created at 2008-06-03 17:32:36",
+    "body": "Attachment [sage-3356-part2.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part2.patch) by @williamstein created at 2008-06-03 17:32:36",
     "created_at": "2008-06-03T17:32:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3356#issuecomment-23332",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3356-part2.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part2.patch) by was created at 2008-06-03 17:32:36
+Attachment [sage-3356-part2.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part2.patch) by @williamstein created at 2008-06-03 17:32:36
 
 
 
@@ -70,16 +70,16 @@ Attachment [sage-3356-part2.patch](tarball://root/attachments/some-uuid/ticket33
 archive/issue_comments_023333.json:
 ```json
 {
-    "body": "Attachment [sage-3356-part4.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part4.patch) by was created at 2008-06-04 17:55:38",
+    "body": "Attachment [sage-3356-part4.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part4.patch) by @williamstein created at 2008-06-04 17:55:38",
     "created_at": "2008-06-04T17:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3356#issuecomment-23333",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3356-part4.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part4.patch) by was created at 2008-06-04 17:55:38
+Attachment [sage-3356-part4.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part4.patch) by @williamstein created at 2008-06-04 17:55:38
 
 
 
@@ -88,16 +88,16 @@ Attachment [sage-3356-part4.patch](tarball://root/attachments/some-uuid/ticket33
 archive/issue_comments_023334.json:
 ```json
 {
-    "body": "Attachment [sage-3356-part5.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part5.patch) by was created at 2008-06-11 00:58:03\n\nThis will be ready to review once the doctest coverage is back at 100%.  As of patch 5 it is at about 90%.",
+    "body": "Attachment [sage-3356-part5.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part5.patch) by @williamstein created at 2008-06-11 00:58:03\n\nThis will be ready to review once the doctest coverage is back at 100%.  As of patch 5 it is at about 90%.",
     "created_at": "2008-06-11T00:58:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3356#issuecomment-23334",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3356-part5.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part5.patch) by was created at 2008-06-11 00:58:03
+Attachment [sage-3356-part5.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part5.patch) by @williamstein created at 2008-06-11 00:58:03
 
 This will be ready to review once the doctest coverage is back at 100%.  As of patch 5 it is at about 90%.
 
@@ -108,16 +108,16 @@ This will be ready to review once the doctest coverage is back at 100%.  As of p
 archive/issue_comments_023335.json:
 ```json
 {
-    "body": "Attachment [sage-3356-part6.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part6.patch) by cswiercz created at 2008-06-20 04:35:18\n\nAdded log-normal random distribution.",
+    "body": "Attachment [sage-3356-part6.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part6.patch) by @cswiercz created at 2008-06-20 04:35:18\n\nAdded log-normal random distribution.",
     "created_at": "2008-06-20T04:35:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3356#issuecomment-23335",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [sage-3356-part6.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part6.patch) by cswiercz created at 2008-06-20 04:35:18
+Attachment [sage-3356-part6.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part6.patch) by @cswiercz created at 2008-06-20 04:35:18
 
 Added log-normal random distribution.
 
@@ -133,7 +133,7 @@ archive/issue_comments_023336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3356#issuecomment-23336",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -146,16 +146,16 @@ Changing keywords from "" to "editor_wstein".
 archive/issue_comments_023337.json:
 ```json
 {
-    "body": "Attachment [sage-3356-part7.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part7.patch) by cswiercz created at 2008-06-20 18:10:22\n\nAdded doctests for TimeSeries.randomize",
+    "body": "Attachment [sage-3356-part7.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part7.patch) by @cswiercz created at 2008-06-20 18:10:22\n\nAdded doctests for TimeSeries.randomize",
     "created_at": "2008-06-20T18:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3356#issuecomment-23337",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [sage-3356-part7.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part7.patch) by cswiercz created at 2008-06-20 18:10:22
+Attachment [sage-3356-part7.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part7.patch) by @cswiercz created at 2008-06-20 18:10:22
 
 Added doctests for TimeSeries.randomize
 
@@ -193,7 +193,7 @@ archive/issue_comments_023339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3356#issuecomment-23339",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -240,16 +240,16 @@ easier to use branchy development between reviewable events.
 archive/issue_comments_023341.json:
 ```json
 {
-    "body": "Attachment [sage-3356-part8.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part8.patch) by was created at 2008-07-01 02:45:00",
+    "body": "Attachment [sage-3356-part8.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part8.patch) by @williamstein created at 2008-07-01 02:45:00",
     "created_at": "2008-07-01T02:45:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3356#issuecomment-23341",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3356-part8.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part8.patch) by was created at 2008-07-01 02:45:00
+Attachment [sage-3356-part8.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part8.patch) by @williamstein created at 2008-07-01 02:45:00
 
 
 
@@ -258,16 +258,16 @@ Attachment [sage-3356-part8.patch](tarball://root/attachments/some-uuid/ticket33
 archive/issue_comments_023342.json:
 ```json
 {
-    "body": "Attachment [sage-3356-part9.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part9.patch) by was created at 2008-07-01 06:28:04\n\nthis patch gets doctest coverage to 100%",
+    "body": "Attachment [sage-3356-part9.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part9.patch) by @williamstein created at 2008-07-01 06:28:04\n\nthis patch gets doctest coverage to 100%",
     "created_at": "2008-07-01T06:28:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3356#issuecomment-23342",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3356-part9.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part9.patch) by was created at 2008-07-01 06:28:04
+Attachment [sage-3356-part9.patch](tarball://root/attachments/some-uuid/ticket3356/sage-3356-part9.patch) by @williamstein created at 2008-07-01 06:28:04
 
 this patch gets doctest coverage to 100%
 
@@ -283,7 +283,7 @@ archive/issue_comments_023343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3356#issuecomment-23343",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

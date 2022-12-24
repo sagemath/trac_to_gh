@@ -3,7 +3,7 @@
 archive/issues_007715.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  simonking\n\nKeywords: vector, M4RI, matrix, GF(2)\n\nIn order to resolve the embarrassing situation at #3684, we need faster vectors mod 2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7715\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  simonking\n\nKeywords: vector, M4RI, matrix, GF(2)\n\nIn order to resolve the embarrassing situation at #3684, we need faster vectors mod 2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7715\n\n",
     "created_at": "2009-12-16T17:18:14Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_007715.json:
     "title": "implement vectors mod 2 as M4RI matrices with one row",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7715",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  simonking
 
@@ -41,7 +41,7 @@ archive/issue_comments_066261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7715#issuecomment-66261",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -117,16 +117,16 @@ The attached patch might indeed depend on #3684.
 archive/issue_comments_066262.json:
 ```json
 {
-    "body": "Attachment [vector_mod2_dense.patch](tarball://root/attachments/some-uuid/ticket7715/vector_mod2_dense.patch) by malb created at 2009-12-16 17:38:51",
+    "body": "Attachment [vector_mod2_dense.patch](tarball://root/attachments/some-uuid/ticket7715/vector_mod2_dense.patch) by @malb created at 2009-12-16 17:38:51",
     "created_at": "2009-12-16T17:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7715#issuecomment-66262",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [vector_mod2_dense.patch](tarball://root/attachments/some-uuid/ticket7715/vector_mod2_dense.patch) by malb created at 2009-12-16 17:38:51
+Attachment [vector_mod2_dense.patch](tarball://root/attachments/some-uuid/ticket7715/vector_mod2_dense.patch) by @malb created at 2009-12-16 17:38:51
 
 
 
@@ -140,7 +140,7 @@ archive/issue_comments_066263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7715#issuecomment-66263",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_066264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7715#issuecomment-66264",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_066265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7715#issuecomment-66265",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

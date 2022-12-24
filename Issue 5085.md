@@ -14,7 +14,7 @@ archive/issues_005085.json:
     "title": "fix_fpu for real_roots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5085",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_038755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5085#issuecomment-38755",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_038756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5085#issuecomment-38756",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_038758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5085#issuecomment-38758",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_038759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5085#issuecomment-38759",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

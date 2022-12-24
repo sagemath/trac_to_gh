@@ -3,7 +3,7 @@
 archive/issues_004738.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was\n\nKeywords: base ring relative number field order\n\nI think that the last ring should be the ring of integers of the relative number field.\n\n\n```\nsage: K = NumberField([x^2 + 2, x^2 + 3], 'a')\nsage: K.base_ring()\nNumber Field in a1 with defining polynomial x^2 + 3\nsage: K.maximal_order()\nRelative Order in Number Field in a0 with defining polynomial x^2 + 2 over its base field\nsage: K.maximal_order().base_ring()\nInteger Ring\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4738\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nKeywords: base ring relative number field order\n\nI think that the last ring should be the ring of integers of the relative number field.\n\n\n```\nsage: K = NumberField([x^2 + 2, x^2 + 3], 'a')\nsage: K.base_ring()\nNumber Field in a1 with defining polynomial x^2 + 3\nsage: K.maximal_order()\nRelative Order in Number Field in a0 with defining polynomial x^2 + 2 over its base field\nsage: K.maximal_order().base_ring()\nInteger Ring\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4738\n\n",
     "created_at": "2008-12-07T20:03:53Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_004738.json:
     "title": "base_ring of orders in relative number fields is wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4738",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was
+CC:  @williamstein
 
 Keywords: base ring relative number field order
 
@@ -53,7 +53,7 @@ archive/issue_comments_035767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4738#issuecomment-35767",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_035768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4738#issuecomment-35768",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_035770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4738#issuecomment-35770",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -342,16 +342,16 @@ Changing component from number theory to number fields.
 archive/issue_comments_035771.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-21T08:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4738#issuecomment-35771",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -365,7 +365,7 @@ archive/issue_comments_035772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4738#issuecomment-35772",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_035773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4738#issuecomment-35773",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_035774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4738#issuecomment-35774",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_035775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4738#issuecomment-35775",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_035776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4738#issuecomment-35776",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_035777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4738#issuecomment-35777",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_035778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4738",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4738#issuecomment-35778",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000924.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe matplotlib spkg overwrites lib/matplotlib/ticker.py with its own version.  This breaks \"tick\" formatting (the numbers displayed on the X and Y axis); the result is that these numbers display in scientific notation far more often than is reasonable.  (Note that this does not affect most Sage usage, since Sage turns off the matplotlib axes and draws its own.  However, Sage users should still be able to use the matplotlib package with its documented interface if they prefer.)\n\nNote that fixing this (restoring the original ticker.py), and making no other changes, will break plotting for people who have old versions of .sage/matplotlibrc, because their matplotlibrc will not specify values for axes.formatter.limits (which is read by line 271 of ticker.py).  This should be fixed either by figuring out how to safely upgrade people's matplotlibrc (possibly hard), or by changing matplotlib so that default values for axes.formatter.limits are used if the matplotlibrc does not specify values.\n\nIssue created by migration from https://trac.sagemath.org/ticket/924\n\n",
+    "body": "Assignee: @williamstein\n\nThe matplotlib spkg overwrites lib/matplotlib/ticker.py with its own version.  This breaks \"tick\" formatting (the numbers displayed on the X and Y axis); the result is that these numbers display in scientific notation far more often than is reasonable.  (Note that this does not affect most Sage usage, since Sage turns off the matplotlib axes and draws its own.  However, Sage users should still be able to use the matplotlib package with its documented interface if they prefer.)\n\nNote that fixing this (restoring the original ticker.py), and making no other changes, will break plotting for people who have old versions of .sage/matplotlibrc, because their matplotlibrc will not specify values for axes.formatter.limits (which is read by line 271 of ticker.py).  This should be fixed either by figuring out how to safely upgrade people's matplotlibrc (possibly hard), or by changing matplotlib so that default values for axes.formatter.limits are used if the matplotlibrc does not specify values.\n\nIssue created by migration from https://trac.sagemath.org/ticket/924\n\n",
     "created_at": "2007-10-18T21:43:22Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_000924.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The matplotlib spkg overwrites lib/matplotlib/ticker.py with its own version.  This breaks "tick" formatting (the numbers displayed on the X and Y axis); the result is that these numbers display in scientific notation far more often than is reasonable.  (Note that this does not affect most Sage usage, since Sage turns off the matplotlib axes and draws its own.  However, Sage users should still be able to use the matplotlib package with its documented interface if they prefer.)
 
@@ -75,7 +75,7 @@ archive/issue_comments_005662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5662",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_005663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5663",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_005664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5664",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,16 +132,16 @@ Changing priority from major to blocker.
 archive/issue_comments_005665.json:
 ```json
 {
-    "body": "Attachment [trac-924.patch](tarball://root/attachments/some-uuid/ticket924/trac-924.patch) by was created at 2007-12-21 23:34:28",
+    "body": "Attachment [trac-924.patch](tarball://root/attachments/some-uuid/ticket924/trac-924.patch) by @williamstein created at 2007-12-21 23:34:28",
     "created_at": "2007-12-21T23:34:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5665",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-924.patch](tarball://root/attachments/some-uuid/ticket924/trac-924.patch) by was created at 2007-12-21 23:34:28
+Attachment [trac-924.patch](tarball://root/attachments/some-uuid/ticket924/trac-924.patch) by @williamstein created at 2007-12-21 23:34:28
 
 
 
@@ -155,7 +155,7 @@ archive/issue_comments_005666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5666",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_005667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5667",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

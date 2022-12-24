@@ -14,7 +14,7 @@ archive/issues_008134.json:
     "title": "Escape $s in notebook keybindings docstring, config.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8134",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
@@ -44,7 +44,7 @@ archive/issue_comments_071531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71531",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -62,7 +62,7 @@ archive/issue_comments_071532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71532",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -75,16 +75,16 @@ Changing status from new to needs_review.
 archive/issue_comments_071533.json:
 ```json
 {
-    "body": "Attachment [trac_8134-escape_dollars.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.patch) by mpatel created at 2010-01-31 02:36:47\n\nI'm not sure why `sagenb.notebook.config?` doesn't render nicely in the notebook.",
+    "body": "Attachment [trac_8134-escape_dollars.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.patch) by @qed777 created at 2010-01-31 02:36:47\n\nI'm not sure why `sagenb.notebook.config?` doesn't render nicely in the notebook.",
     "created_at": "2010-01-31T02:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71533",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8134-escape_dollars.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.patch) by mpatel created at 2010-01-31 02:36:47
+Attachment [trac_8134-escape_dollars.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.patch) by @qed777 created at 2010-01-31 02:36:47
 
 I'm not sure why `sagenb.notebook.config?` doesn't render nicely in the notebook.
 
@@ -100,7 +100,7 @@ archive/issue_comments_071534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71534",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_071535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71535",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_071536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71536",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_071537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71537",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_071538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71538",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -185,16 +185,16 @@ Make top docstring raw.  Replaces previous.
 archive/issue_comments_071539.json:
 ```json
 {
-    "body": "Attachment [trac_8134-escape_dollars.2.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.2.patch) by mpatel created at 2010-02-06 16:26:52\n\nReplying to [comment:4 jhpalmieri]:\n> It fixes the error messages and the output looks good.  Should there be an 'r' before the triple quotes at the top of the file?  I'll give it a positive review either way, so if you want to add that, go ahead.\nDone!",
+    "body": "Attachment [trac_8134-escape_dollars.2.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.2.patch) by @qed777 created at 2010-02-06 16:26:52\n\nReplying to [comment:4 jhpalmieri]:\n> It fixes the error messages and the output looks good.  Should there be an 'r' before the triple quotes at the top of the file?  I'll give it a positive review either way, so if you want to add that, go ahead.\nDone!",
     "created_at": "2010-02-06T16:26:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71539",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8134-escape_dollars.2.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.2.patch) by mpatel created at 2010-02-06 16:26:52
+Attachment [trac_8134-escape_dollars.2.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.2.patch) by @qed777 created at 2010-02-06 16:26:52
 
 Replying to [comment:4 jhpalmieri]:
 > It fixes the error messages and the output looks good.  Should there be an 'r' before the triple quotes at the top of the file?  I'll give it a positive review either way, so if you want to add that, go ahead.
@@ -212,7 +212,7 @@ archive/issue_comments_071540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71540",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

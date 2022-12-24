@@ -3,7 +3,7 @@
 archive/issues_009928.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  roed caruso\n\nthe answer is probably in the file `polynomial_ring_constructor.py` in the function `single_variate`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9929\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @roed314 @xcaruso\n\nthe answer is probably in the file `polynomial_ring_constructor.py` in the function `single_variate`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9929\n\n",
     "created_at": "2010-09-17T07:27:14Z",
     "labels": [
         "algebra",
@@ -17,9 +17,9 @@ archive/issues_009928.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  roed caruso
+CC:  @roed314 @xcaruso
 
 the answer is probably in the file `polynomial_ring_constructor.py` in the function `single_variate`
 
@@ -39,7 +39,7 @@ archive/issue_comments_098870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98870",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_098871.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98871",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_098872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98872",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_098873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98873",
-    "user": "saraedum"
+    "user": "@saraedum"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_098874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98874",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_098875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9928",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98875",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

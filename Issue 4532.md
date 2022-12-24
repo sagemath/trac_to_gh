@@ -14,7 +14,7 @@ archive/issues_004532.json:
     "title": "[with patch, needs review] trivial typo in modform theta.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4532",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4532
 archive/issue_comments_033759.json:
 ```json
 {
-    "body": "Attachment [4523-typo-theta.patch](tarball://root/attachments/some-uuid/ticket4532/4523-typo-theta.patch) by robertwb created at 2008-11-16 07:22:57",
+    "body": "Attachment [4523-typo-theta.patch](tarball://root/attachments/some-uuid/ticket4532/4523-typo-theta.patch) by @robertwb created at 2008-11-16 07:22:57",
     "created_at": "2008-11-16T07:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4532#issuecomment-33759",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4523-typo-theta.patch](tarball://root/attachments/some-uuid/ticket4532/4523-typo-theta.patch) by robertwb created at 2008-11-16 07:22:57
+Attachment [4523-typo-theta.patch](tarball://root/attachments/some-uuid/ticket4532/4523-typo-theta.patch) by @robertwb created at 2008-11-16 07:22:57
 
 
 

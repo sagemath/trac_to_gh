@@ -14,7 +14,7 @@ archive/issues_004501.json:
     "title": "preparser does not know about python notation for complex numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4501",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: somebody
@@ -71,7 +71,7 @@ archive/issue_comments_033335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4501#issuecomment-33335",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_033336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4501#issuecomment-33336",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_033337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4501#issuecomment-33337",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_033338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4501#issuecomment-33338",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_033339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4501#issuecomment-33339",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_033340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4501#issuecomment-33340",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_033341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4501#issuecomment-33341",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_033342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4501",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4501#issuecomment-33342",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

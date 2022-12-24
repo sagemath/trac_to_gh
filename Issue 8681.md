@@ -3,7 +3,7 @@
 archive/issues_008681.json:
 ```json
 {
-    "body": "Assignee: justin\n\nCC:  tornaria was jonhanke ncalexan cremona\n\nThe attached patch implements methods for left and right matrix actions on binary quadratic forms.  It also extends the constructor `BinaryQF` to accept a homogeneous polynomial of degree 2 in 2 variables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8681\n\n",
+    "body": "Assignee: justin\n\nCC:  @tornaria @williamstein @jonhanke @ncalexan @JohnCremona\n\nThe attached patch implements methods for left and right matrix actions on binary quadratic forms.  It also extends the constructor `BinaryQF` to accept a homogeneous polynomial of degree 2 in 2 variables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8681\n\n",
     "created_at": "2010-04-13T13:05:18Z",
     "labels": [
         "quadratic forms",
@@ -14,12 +14,12 @@ archive/issues_008681.json:
     "title": "implement matrix actions on binary quadratic forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8681",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: justin
 
-CC:  tornaria was jonhanke ncalexan cremona
+CC:  @tornaria @williamstein @jonhanke @ncalexan @JohnCremona
 
 The attached patch implements methods for left and right matrix actions on binary quadratic forms.  It also extends the constructor `BinaryQF` to accept a homogeneous polynomial of degree 2 in 2 variables.
 
@@ -39,7 +39,7 @@ archive/issue_comments_079115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8681#issuecomment-79115",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_079116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8681#issuecomment-79116",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_079117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8681#issuecomment-79117",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_079118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8681#issuecomment-79118",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_079119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8681#issuecomment-79119",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -162,16 +162,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_079120.json:
 ```json
 {
-    "body": "Attachment [trac_8681.patch](tarball://root/attachments/some-uuid/ticket8681/trac_8681.patch) by AlexGhitza created at 2010-04-14 11:18:03\n\nI have implemented Gonzalo's suggestions.  It seems to work great, and indeed it's much faster; the matrix actions are almost 3 times faster with the new code, and `__call__` is an amazing 200 times faster.",
+    "body": "Attachment [trac_8681.patch](tarball://root/attachments/some-uuid/ticket8681/trac_8681.patch) by @aghitza created at 2010-04-14 11:18:03\n\nI have implemented Gonzalo's suggestions.  It seems to work great, and indeed it's much faster; the matrix actions are almost 3 times faster with the new code, and `__call__` is an amazing 200 times faster.",
     "created_at": "2010-04-14T11:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8681#issuecomment-79120",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_8681.patch](tarball://root/attachments/some-uuid/ticket8681/trac_8681.patch) by AlexGhitza created at 2010-04-14 11:18:03
+Attachment [trac_8681.patch](tarball://root/attachments/some-uuid/ticket8681/trac_8681.patch) by @aghitza created at 2010-04-14 11:18:03
 
 I have implemented Gonzalo's suggestions.  It seems to work great, and indeed it's much faster; the matrix actions are almost 3 times faster with the new code, and `__call__` is an amazing 200 times faster.
 
@@ -187,7 +187,7 @@ archive/issue_comments_079121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8681#issuecomment-79121",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_079122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8681#issuecomment-79122",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_079123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8681",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8681#issuecomment-79123",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -13,7 +13,7 @@ archive/issues_000286.json:
     "title": "First version of symbolic calculus module integrated into SAGE.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/286",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: Bobby Moretti
@@ -36,7 +36,7 @@ archive/issue_comments_001357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/286#issuecomment-1357",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -54,7 +54,7 @@ archive/issue_comments_001358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/286#issuecomment-1358",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

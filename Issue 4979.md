@@ -3,7 +3,7 @@
 archive/issues_004979.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  dimpase mkoeppe\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/f037b3c4cc4509eb for a discussion about the problem.\n\nxdg-open is not available on Solaris, so we should be using a Solaris specific mechanism to open the default browser. It is unclear at least to me at the moment what this would be.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4979\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @dimpase @mkoeppe\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/f037b3c4cc4509eb for a discussion about the problem.\n\nxdg-open is not available on Solaris, so we should be using a Solaris specific mechanism to open the default browser. It is unclear at least to me at the moment what this would be.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4979\n\n",
     "created_at": "2009-01-15T00:54:44Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_004979.json:
 ```
 Assignee: mabshoff
 
-CC:  dimpase mkoeppe
+CC:  @dimpase @mkoeppe
 
 See http://groups.google.com/group/sage-devel/browse_thread/thread/f037b3c4cc4509eb for a discussion about the problem.
 
@@ -103,7 +103,7 @@ archive/issue_comments_037961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4979#issuecomment-37961",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_037962.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4979#issuecomment-37962",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_037963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4979#issuecomment-37963",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_037964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4979#issuecomment-37964",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_037965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4979#issuecomment-37965",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

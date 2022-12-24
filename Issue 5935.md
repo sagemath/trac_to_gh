@@ -3,7 +3,7 @@
 archive/issues_005935.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nRight at the top overview of graph theory the ref manual has the line\n\n```\nsage: graphs_query.[tab]             # not tested\n```\n\n\nhttp://www.sagemath.org/doc/reference/sage/graphs/graph.html\n\nIf it isn't tested it's broken, and that's the case here, since there is no graphs_query object available on the Sage command line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5935\n\n",
+    "body": "Assignee: @rlmill\n\nRight at the top overview of graph theory the ref manual has the line\n\n```\nsage: graphs_query.[tab]             # not tested\n```\n\n\nhttp://www.sagemath.org/doc/reference/sage/graphs/graph.html\n\nIf it isn't tested it's broken, and that's the case here, since there is no graphs_query object available on the Sage command line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5935\n\n",
     "created_at": "2009-04-29T15:49:31Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_005935.json:
     "title": "graph theory docs -- sage: graphs_query.[tab]             # not tested",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5935",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Right at the top overview of graph theory the ref manual has the line
 
@@ -41,7 +41,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5935
 archive/issue_comments_046929.json:
 ```json
 {
-    "body": "Changing assignee from rlm to ekirkman.",
+    "body": "Changing assignee from @rlmill to ekirkman.",
     "created_at": "2009-05-21T21:55:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5935",
     "type": "issue_comment",
@@ -50,7 +50,7 @@ archive/issue_comments_046929.json:
 }
 ```
 
-Changing assignee from rlm to ekirkman.
+Changing assignee from @rlmill to ekirkman.
 
 
 
@@ -100,7 +100,7 @@ archive/issue_comments_046932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5935#issuecomment-46932",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

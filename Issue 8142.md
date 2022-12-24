@@ -3,7 +3,7 @@
 archive/issues_008142.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: notebook readline .inputrc\n\nTo reproduce the problem\n\n===============\n\n1. Create the file ~/.inputrc with the following content:\n\n\n\n$if Python\n\n# Pair insertion\n\n\"\\(\": \"\\C-q()\\C-b\"\n\n$endif\n\n\n\nThis will automaticaly insert a closing brace after the cursor when an opening brace is inserted when the application name is Python.\n\n\n2. Start Sage\n\n\n3. In command line, everything seems ok; closing braces get inserted automaticaly.\n\n\n4. In notebook, closing braces aren't inserted automaticaly AND computations never end!\n\n\nPossible workarounds\n\n=============\n\nFrom Bash documentation (Command Line Editing>Readline Init File>Conditional Init Constructs), \"Each program using the Readline library sets the APPLICATION NAME\". The \"$if\" constructs in the .inputrc file uses this variable for application-specific settings.\n\n\nSage should set that variable to its own value. Better it should change its value when the notebook is started/stopped.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8142\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: notebook readline .inputrc\n\nTo reproduce the problem\n\n===============\n\n1. Create the file ~/.inputrc with the following content:\n\n\n\n$if Python\n\n# Pair insertion\n\n\"\\(\": \"\\C-q()\\C-b\"\n\n$endif\n\n\n\nThis will automaticaly insert a closing brace after the cursor when an opening brace is inserted when the application name is Python.\n\n\n2. Start Sage\n\n\n3. In command line, everything seems ok; closing braces get inserted automaticaly.\n\n\n4. In notebook, closing braces aren't inserted automaticaly AND computations never end!\n\n\nPossible workarounds\n\n=============\n\nFrom Bash documentation (Command Line Editing>Readline Init File>Conditional Init Constructs), \"Each program using the Readline library sets the APPLICATION NAME\". The \"$if\" constructs in the .inputrc file uses this variable for application-specific settings.\n\n\nSage should set that variable to its own value. Better it should change its value when the notebook is started/stopped.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8142\n\n",
     "created_at": "2010-02-01T08:01:43Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_008142.json:
     "title": "Unexpected notebook behavior when readline init file is non empty",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8142",
-    "user": "mmeulien"
+    "user": "@orontee"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: notebook readline .inputrc
 
@@ -76,7 +76,7 @@ archive/issue_comments_071589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8142#issuecomment-71589",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_071590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8142#issuecomment-71590",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_071591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8142#issuecomment-71591",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_071592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8142#issuecomment-71592",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002141.json:
     "title": "Access to file list on notebook.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2141",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_014036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2141#issuecomment-14036",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_014037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2141#issuecomment-14037",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_014038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2141#issuecomment-14038",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_014039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2141#issuecomment-14039",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_014040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2141",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2141#issuecomment-14040",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

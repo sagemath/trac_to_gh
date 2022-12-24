@@ -3,7 +3,7 @@
 archive/issues_008184.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nKeywords: eclib\n\nWe provide an upgrade to eclib to patch-level 9, i.e. eclib-20080310.p9.spkg.  This does two things:\n\n1. Fixes a bug (found by Edray Goins and Jamie Wiegandt) in which second descent quartics were not tested for real-solubility, and so sometimes the rank bounds (and related selmer ranks) could be too high.\n\n2. Enhances the data available from the two_descent class so that the rank_bound and selmer_rank are separated, and both available.\n\nThe second item necessitated changes to the interface, which are here included in the patch.  In turn, some changes were needed in sage/schemes/elliptic_curve/\n\nNote that this affects #7575.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8184\n\n",
+    "body": "Assignee: @JohnCremona\n\nKeywords: eclib\n\nWe provide an upgrade to eclib to patch-level 9, i.e. eclib-20080310.p9.spkg.  This does two things:\n\n1. Fixes a bug (found by Edray Goins and Jamie Wiegandt) in which second descent quartics were not tested for real-solubility, and so sometimes the rank bounds (and related selmer ranks) could be too high.\n\n2. Enhances the data available from the two_descent class so that the rank_bound and selmer_rank are separated, and both available.\n\nThe second item necessitated changes to the interface, which are here included in the patch.  In turn, some changes were needed in sage/schemes/elliptic_curve/\n\nNote that this affects #7575.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8184\n\n",
     "created_at": "2010-02-04T14:27:17Z",
     "labels": [
         "elliptic curves",
@@ -14,10 +14,10 @@ archive/issues_008184.json:
     "title": "eclib upgrade and bugfix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8184",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Keywords: eclib
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8184
 archive/issue_comments_072126.json:
 ```json
 {
-    "body": "Attachment [eclib-20080310.p9.spkg](tarball://root/attachments/some-uuid/ticket8184/eclib-20080310.p9.spkg) by cremona created at 2010-02-04 14:28:18",
+    "body": "Attachment [eclib-20080310.p9.spkg](tarball://root/attachments/some-uuid/ticket8184/eclib-20080310.p9.spkg) by @JohnCremona created at 2010-02-04 14:28:18",
     "created_at": "2010-02-04T14:28:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72126",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [eclib-20080310.p9.spkg](tarball://root/attachments/some-uuid/ticket8184/eclib-20080310.p9.spkg) by cremona created at 2010-02-04 14:28:18
+Attachment [eclib-20080310.p9.spkg](tarball://root/attachments/some-uuid/ticket8184/eclib-20080310.p9.spkg) by @JohnCremona created at 2010-02-04 14:28:18
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_072127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72127",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_072128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72128",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_072129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72129",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -118,16 +118,16 @@ Applies to 4.3.2.alpha1
 archive/issue_comments_072130.json:
 ```json
 {
-    "body": "Attachment [trac_8184-eclib.patch](tarball://root/attachments/some-uuid/ticket8184/trac_8184-eclib.patch) by cremona created at 2010-02-04 15:59:20\n\nSorry -- try this one.\n\nNB After building the new spkg with \"sage -f\" the patch is required before Sage will work properly.  Even in a clone, you'll be stuck with the new spkg.  I am not sure how to revert back to the old eclib (if you want to).\n\nSo I would recommend tetsing this on (say) 4.3.2.alpha1 if you have it, and if all goes wrong you can build 4.3.2.rc0 which is out!",
+    "body": "Attachment [trac_8184-eclib.patch](tarball://root/attachments/some-uuid/ticket8184/trac_8184-eclib.patch) by @JohnCremona created at 2010-02-04 15:59:20\n\nSorry -- try this one.\n\nNB After building the new spkg with \"sage -f\" the patch is required before Sage will work properly.  Even in a clone, you'll be stuck with the new spkg.  I am not sure how to revert back to the old eclib (if you want to).\n\nSo I would recommend tetsing this on (say) 4.3.2.alpha1 if you have it, and if all goes wrong you can build 4.3.2.rc0 which is out!",
     "created_at": "2010-02-04T15:59:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72130",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8184-eclib.patch](tarball://root/attachments/some-uuid/ticket8184/trac_8184-eclib.patch) by cremona created at 2010-02-04 15:59:20
+Attachment [trac_8184-eclib.patch](tarball://root/attachments/some-uuid/ticket8184/trac_8184-eclib.patch) by @JohnCremona created at 2010-02-04 15:59:20
 
 Sorry -- try this one.
 
@@ -147,7 +147,7 @@ archive/issue_comments_072131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72131",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -160,16 +160,16 @@ Apply on top of trac_8184-eclib.patch
 archive/issue_comments_072132.json:
 ```json
 {
-    "body": "Attachment [trac_8184-indentation.patch](tarball://root/attachments/some-uuid/ticket8184/trac_8184-indentation.patch) by rlm created at 2010-02-04 19:09:33\n\nI added a patch which replaces tabs with single spaces (it looks like your editor sees tabs as eight spaces... mine only sees them as four).",
+    "body": "Attachment [trac_8184-indentation.patch](tarball://root/attachments/some-uuid/ticket8184/trac_8184-indentation.patch) by @rlmill created at 2010-02-04 19:09:33\n\nI added a patch which replaces tabs with single spaces (it looks like your editor sees tabs as eight spaces... mine only sees them as four).",
     "created_at": "2010-02-04T19:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72132",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8184-indentation.patch](tarball://root/attachments/some-uuid/ticket8184/trac_8184-indentation.patch) by rlm created at 2010-02-04 19:09:33
+Attachment [trac_8184-indentation.patch](tarball://root/attachments/some-uuid/ticket8184/trac_8184-indentation.patch) by @rlmill created at 2010-02-04 19:09:33
 
 I added a patch which replaces tabs with single spaces (it looks like your editor sees tabs as eight spaces... mine only sees them as four).
 
@@ -185,7 +185,7 @@ archive/issue_comments_072133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72133",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_072134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72134",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_072135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72135",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_072136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72136",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_072137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72137",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

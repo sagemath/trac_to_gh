@@ -3,7 +3,7 @@
 archive/issues_005303.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  cremona\n\n\n```\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/sha_tate.py\"\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.rc1/devel/sage/sage/schemes/elliptic_curves/sha_tate.py\", line 88:\n    sage: [sha.an_numerical(prec) for prec in xrange(30,100,10)] # long time\nExpected:\n    [1.0000000,\n    1.0000000000,\n    1.0000000000000,\n    1.0000000000000000,\n    1.0000000000000000000,\n    1.0000000000000000000000,\n    1.0000000000000000000000000]\nGot:\n    [0.99999969, 1.0000000000, 1.0000000000000, 1.0000000000000000, 1.0000000000000000000, 1.0000000000000000000000, 1.0000000000000000000000000]\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5303\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @JohnCremona\n\n\n```\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/sha_tate.py\"\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.3.rc1/devel/sage/sage/schemes/elliptic_curves/sha_tate.py\", line 88:\n    sage: [sha.an_numerical(prec) for prec in xrange(30,100,10)] # long time\nExpected:\n    [1.0000000,\n    1.0000000000,\n    1.0000000000000,\n    1.0000000000000000,\n    1.0000000000000000000,\n    1.0000000000000000000000,\n    1.0000000000000000000000000]\nGot:\n    [0.99999969, 1.0000000000, 1.0000000000000, 1.0000000000000000, 1.0000000000000000000, 1.0000000000000000000000, 1.0000000000000000000000000]\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5303\n\n",
     "created_at": "2009-02-18T11:55:21Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_005303.json:
 ```
 Assignee: mabshoff
 
-CC:  cremona
+CC:  @JohnCremona
 
 
 ```
@@ -146,7 +146,7 @@ archive/issue_comments_040800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5303",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5303#issuecomment-40800",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

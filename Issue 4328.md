@@ -14,7 +14,7 @@ archive/issues_004328.json:
     "title": "bug in roots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4328",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: somebody
@@ -51,7 +51,7 @@ archive/issue_comments_031747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4328#issuecomment-31747",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_031749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4328#issuecomment-31749",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_031750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4328#issuecomment-31750",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

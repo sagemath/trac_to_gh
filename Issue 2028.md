@@ -3,7 +3,7 @@
 archive/issues_002028.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe matrix eigenspaces() function is broken for rings over SR since the algorithm iterates over factors of the characteristic polynomial. \"for e,f in mat.charpoly().factor()\" works for matrices over polynomial rings, but not over the symbolic ring.  This is also brought up in #2021.\n\nData:\n\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: b=matrix(QQ,[[1,2],[3,4]])\nsage: [i for i in a.fcp()]\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/matrix/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'SymbolicArithmetic' object is not iterable\nsage: [i for i in b.fcp()]\n[(x^2 - 5*x - 2, 1)]\n```\n\n\nand \n\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: [i for i in a.fcp().factor_list()]\n[(x^2 - 5*x - 2, 1)]\n```\n\n\nSo apparently we need to somehow call factor_list() when we have a symbolic matrix or we need to change SymbolicArithmetic? to iterate through factor_list() when we ask for an iterator.  I don't know which is better.  Comments?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2028\n\n",
+    "body": "Assignee: @williamstein\n\nThe matrix eigenspaces() function is broken for rings over SR since the algorithm iterates over factors of the characteristic polynomial. \"for e,f in mat.charpoly().factor()\" works for matrices over polynomial rings, but not over the symbolic ring.  This is also brought up in #2021.\n\nData:\n\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: b=matrix(QQ,[[1,2],[3,4]])\nsage: [i for i in a.fcp()]\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/matrix/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'SymbolicArithmetic' object is not iterable\nsage: [i for i in b.fcp()]\n[(x^2 - 5*x - 2, 1)]\n```\n\n\nand \n\n\n```\nsage: a=matrix(SR,[[1,2],[3,4]])\nsage: [i for i in a.fcp().factor_list()]\n[(x^2 - 5*x - 2, 1)]\n```\n\n\nSo apparently we need to somehow call factor_list() when we have a symbolic matrix or we need to change SymbolicArithmetic? to iterate through factor_list() when we ask for an iterator.  I don't know which is better.  Comments?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2028\n\n",
     "created_at": "2008-02-02T03:57:59Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002028.json:
     "title": "Cannot iterate over SymbolicArithmetic objects like you can with poly rings / Eigenspaces() broken for matrices over SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2028",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The matrix eigenspaces() function is broken for rings over SR since the algorithm iterates over factors of the characteristic polynomial. "for e,f in mat.charpoly().factor()" works for matrices over polynomial rings, but not over the symbolic ring.  This is also brought up in #2021.
 
@@ -68,7 +68,7 @@ archive/issue_comments_013117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2028#issuecomment-13117",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_013118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2028#issuecomment-13118",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -100,16 +100,16 @@ Changing status from new to assigned.
 archive/issue_comments_013119.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-02-02T07:07:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2028#issuecomment-13119",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -118,16 +118,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_013120.json:
 ```json
 {
-    "body": "Attachment [trac-2028-part1.patch](tarball://root/attachments/some-uuid/ticket2028/trac-2028-part1.patch) by was created at 2008-02-02 09:45:02\n\nthis replaces 2028.patch; it's rebased against 2.10.1.rc4 since 2028.patch fails to apply.",
+    "body": "Attachment [trac-2028-part1.patch](tarball://root/attachments/some-uuid/ticket2028/trac-2028-part1.patch) by @williamstein created at 2008-02-02 09:45:02\n\nthis replaces 2028.patch; it's rebased against 2.10.1.rc4 since 2028.patch fails to apply.",
     "created_at": "2008-02-02T09:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2028#issuecomment-13120",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-2028-part1.patch](tarball://root/attachments/some-uuid/ticket2028/trac-2028-part1.patch) by was created at 2008-02-02 09:45:02
+Attachment [trac-2028-part1.patch](tarball://root/attachments/some-uuid/ticket2028/trac-2028-part1.patch) by @williamstein created at 2008-02-02 09:45:02
 
 this replaces 2028.patch; it's rebased against 2.10.1.rc4 since 2028.patch fails to apply.
 
@@ -143,7 +143,7 @@ archive/issue_comments_013121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2028#issuecomment-13121",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -179,16 +179,16 @@ sage: matrix(SR, 5, [1..5^2]).fcp()
 archive/issue_comments_013122.json:
 ```json
 {
-    "body": "Attachment [2028.2.patch](tarball://root/attachments/some-uuid/ticket2028/2028.2.patch) by mhansen created at 2008-02-03 04:15:45",
+    "body": "Attachment [2028.2.patch](tarball://root/attachments/some-uuid/ticket2028/2028.2.patch) by @mwhansen created at 2008-02-03 04:15:45",
     "created_at": "2008-02-03T04:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2028#issuecomment-13122",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2028.2.patch](tarball://root/attachments/some-uuid/ticket2028/2028.2.patch) by mhansen created at 2008-02-03 04:15:45
+Attachment [2028.2.patch](tarball://root/attachments/some-uuid/ticket2028/2028.2.patch) by @mwhansen created at 2008-02-03 04:15:45
 
 
 
@@ -202,7 +202,7 @@ archive/issue_comments_013123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2028#issuecomment-13123",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_013124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2028#issuecomment-13124",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_013125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2028#issuecomment-13125",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_013126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2028#issuecomment-13126",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_013127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2028#issuecomment-13127",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_013128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2028#issuecomment-13128",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_013129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2028",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2028#issuecomment-13129",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

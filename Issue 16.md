@@ -13,7 +13,7 @@ archive/issues_000016.json:
     "title": "failures building optional packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/16",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -43,7 +43,7 @@ archive/issue_comments_000069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/16",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/16#issuecomment-69",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_000070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/16",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/16#issuecomment-70",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_000071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/16",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/16#issuecomment-71",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_000072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/16",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/16#issuecomment-72",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

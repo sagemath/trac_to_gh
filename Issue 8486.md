@@ -14,7 +14,7 @@ archive/issues_008486.json:
     "title": "Xelatex and Sage notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8486",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 Assignee: tbd
@@ -49,7 +49,7 @@ archive/issue_comments_076471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76471",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -62,16 +62,16 @@ Example Sage notebook
 archive/issue_comments_076472.json:
 ```json
 {
-    "body": "Attachment [download_worksheets.zip](tarball://root/attachments/some-uuid/ticket8486/download_worksheets.zip) by klee created at 2010-03-10 07:46:41",
+    "body": "Attachment [download_worksheets.zip](tarball://root/attachments/some-uuid/ticket8486/download_worksheets.zip) by @kwankyu created at 2010-03-10 07:46:41",
     "created_at": "2010-03-10T07:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76472",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Attachment [download_worksheets.zip](tarball://root/attachments/some-uuid/ticket8486/download_worksheets.zip) by klee created at 2010-03-10 07:46:41
+Attachment [download_worksheets.zip](tarball://root/attachments/some-uuid/ticket8486/download_worksheets.zip) by @kwankyu created at 2010-03-10 07:46:41
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_076473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76473",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_076474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76474",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_076475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76475",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_076476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76476",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_076477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76477",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_076478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76478",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -240,16 +240,16 @@ Thank you, Dan. I will work on that.
 archive/issue_comments_076479.json:
 ```json
 {
-    "body": "Attachment [trac_8486.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486.patch) by klee created at 2010-03-16 13:17:40\n\nUpdated the patch. Now all doctests pass.",
+    "body": "Attachment [trac_8486.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486.patch) by @kwankyu created at 2010-03-16 13:17:40\n\nUpdated the patch. Now all doctests pass.",
     "created_at": "2010-03-16T13:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76479",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Attachment [trac_8486.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486.patch) by klee created at 2010-03-16 13:17:40
+Attachment [trac_8486.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486.patch) by @kwankyu created at 2010-03-16 13:17:40
 
 Updated the patch. Now all doctests pass.
 
@@ -265,7 +265,7 @@ archive/issue_comments_076480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76480",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_076481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76481",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_076482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76482",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_076483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76483",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_076484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76484",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -352,16 +352,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_076485.json:
 ```json
 {
-    "body": "Attachment [trac_8486_extra_documentation.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_extra_documentation.patch) by jhpalmieri created at 2010-03-17 15:47:19\n\nUsing `os.system('which xelatex >/dev/null')` won't work right on Solaris: on that OS, \"which\" has a return value of 0 even if the command is not found, so \n\n```\nnot bool(os.system('which xelatex >/dev/null'))\n```\n\nwill always return True there.  Use the function `have_program` from #8474 instead.",
+    "body": "Attachment [trac_8486_extra_documentation.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_extra_documentation.patch) by @jhpalmieri created at 2010-03-17 15:47:19\n\nUsing `os.system('which xelatex >/dev/null')` won't work right on Solaris: on that OS, \"which\" has a return value of 0 even if the command is not found, so \n\n```\nnot bool(os.system('which xelatex >/dev/null'))\n```\n\nwill always return True there.  Use the function `have_program` from #8474 instead.",
     "created_at": "2010-03-17T15:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76485",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8486_extra_documentation.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_extra_documentation.patch) by jhpalmieri created at 2010-03-17 15:47:19
+Attachment [trac_8486_extra_documentation.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_extra_documentation.patch) by @jhpalmieri created at 2010-03-17 15:47:19
 
 Using `os.system('which xelatex >/dev/null')` won't work right on Solaris: on that OS, "which" has a return value of 0 even if the command is not found, so 
 
@@ -383,7 +383,7 @@ archive/issue_comments_076486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76486",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -401,7 +401,7 @@ archive/issue_comments_076487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76487",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_076488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76488",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -440,16 +440,16 @@ Sure, and thanks for offering to rebase it.  (I understand your point, but I don
 archive/issue_comments_076489.json:
 ```json
 {
-    "body": "Attachment [trac_8486_use_have_program.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_use_have_program.patch) by ddrake created at 2010-03-18 01:08:09\n\none-line change to use have_program",
+    "body": "Attachment [trac_8486_use_have_program.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_use_have_program.patch) by @dandrake created at 2010-03-18 01:08:09\n\none-line change to use have_program",
     "created_at": "2010-03-18T01:08:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76489",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_8486_use_have_program.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_use_have_program.patch) by ddrake created at 2010-03-18 01:08:09
+Attachment [trac_8486_use_have_program.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_use_have_program.patch) by @dandrake created at 2010-03-18 01:08:09
 
 one-line change to use have_program
 
@@ -465,7 +465,7 @@ archive/issue_comments_076490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76490",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_076491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76491",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_076492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76492",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -519,7 +519,7 @@ archive/issue_comments_076493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76493",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -532,16 +532,16 @@ Looks good to me.  One docstring is missing the "r" before the triple quotes, so
 archive/issue_comments_076494.json:
 ```json
 {
-    "body": "Attachment [trac_8486-referee.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486-referee.patch) by klee created at 2010-03-18 01:56:27\n\ncombines and replaces all previous patches",
+    "body": "Attachment [trac_8486-referee.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486-referee.patch) by @kwankyu created at 2010-03-18 01:56:27\n\ncombines and replaces all previous patches",
     "created_at": "2010-03-18T01:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76494",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Attachment [trac_8486-referee.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486-referee.patch) by klee created at 2010-03-18 01:56:27
+Attachment [trac_8486-referee.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486-referee.patch) by @kwankyu created at 2010-03-18 01:56:27
 
 combines and replaces all previous patches
 
@@ -552,16 +552,16 @@ combines and replaces all previous patches
 archive/issue_comments_076495.json:
 ```json
 {
-    "body": "Attachment [trac_8486_v2.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_v2.patch) by klee created at 2010-03-18 02:04:27\n\nI looked at Dan's extra documentation. It is nice. But I deleted the last comment in the doc of \"engine\" because r\"\\usepackage...\" only fails in the notebook. See the discussion in \n\n!http://groups.google.com/group/sage-devel/browse_frm/thread/71cd8ec6313b7e16/da96b8c19ab45224#da96b8c19ab45224\n\nSee also the ticket 3154 at \n\nhttp://trac.sagemath.org/sage_trac/ticket/3154\n\nSo I think the problem of \"\\u\" in the raw string in notebook is only temporary, assuming the ticket 3154 is reviewed sooner or later.",
+    "body": "Attachment [trac_8486_v2.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_v2.patch) by @kwankyu created at 2010-03-18 02:04:27\n\nI looked at Dan's extra documentation. It is nice. But I deleted the last comment in the doc of \"engine\" because r\"\\usepackage...\" only fails in the notebook. See the discussion in \n\n!http://groups.google.com/group/sage-devel/browse_frm/thread/71cd8ec6313b7e16/da96b8c19ab45224#da96b8c19ab45224\n\nSee also the ticket 3154 at \n\nhttp://trac.sagemath.org/sage_trac/ticket/3154\n\nSo I think the problem of \"\\u\" in the raw string in notebook is only temporary, assuming the ticket 3154 is reviewed sooner or later.",
     "created_at": "2010-03-18T02:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76495",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Attachment [trac_8486_v2.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_v2.patch) by klee created at 2010-03-18 02:04:27
+Attachment [trac_8486_v2.patch](tarball://root/attachments/some-uuid/ticket8486/trac_8486_v2.patch) by @kwankyu created at 2010-03-18 02:04:27
 
 I looked at Dan's extra documentation. It is nice. But I deleted the last comment in the doc of "engine" because r"\usepackage..." only fails in the notebook. See the discussion in 
 
@@ -585,7 +585,7 @@ archive/issue_comments_076496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76496",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_076497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76497",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_076498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8486#issuecomment-76498",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

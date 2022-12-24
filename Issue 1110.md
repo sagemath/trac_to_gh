@@ -14,7 +14,7 @@ archive/issues_001110.json:
     "title": "[with trivial patch] improve notebook help message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1110",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

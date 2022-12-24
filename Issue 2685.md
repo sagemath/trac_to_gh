@@ -3,7 +3,7 @@
 archive/issues_002685.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe girth of a graph is the length of a smallest cycle.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2685\n\n",
+    "body": "Assignee: @rlmill\n\nThe girth of a graph is the length of a smallest cycle.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2685\n\n",
     "created_at": "2008-03-27T19:55:02Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002685.json:
     "title": "[with patch, needs review] compute the girth of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2685",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The girth of a graph is the length of a smallest cycle.
 
@@ -37,7 +37,7 @@ archive/issue_comments_018459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2685#issuecomment-18459",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_018460.json:
 ```json
 {
-    "body": "Attachment [2685-girth.patch](tarball://root/attachments/some-uuid/ticket2685/2685-girth.patch) by rlm created at 2008-03-27 21:56:59",
+    "body": "Attachment [2685-girth.patch](tarball://root/attachments/some-uuid/ticket2685/2685-girth.patch) by @rlmill created at 2008-03-27 21:56:59",
     "created_at": "2008-03-27T21:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2685",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2685#issuecomment-18460",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [2685-girth.patch](tarball://root/attachments/some-uuid/ticket2685/2685-girth.patch) by rlm created at 2008-03-27 21:56:59
+Attachment [2685-girth.patch](tarball://root/attachments/some-uuid/ticket2685/2685-girth.patch) by @rlmill created at 2008-03-27 21:56:59
 
 
 

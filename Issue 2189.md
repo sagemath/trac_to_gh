@@ -3,7 +3,7 @@
 archive/issues_002189.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason kcrisman\n\n\n```\n\n\nOn Feb 16, 2008 10:19 PM, inerkor@gmail.com <inerkor@gmail.com> wrote:\n> \n> Hello all.\n> \n> I have a Matrix of, say, 64x64 and I plot it using matrix_plot(). It\n> is a fractal that fills the square [0,1]x[0,1] so I want to keep a 2D\n> view. I would like to change the x,y axes ranging values to be in the\n> interval [0,1] rather than in {0, ..., 63}. I don't know how to do it.\n> Maybe using another plotting function?.\n> \n\nNobody has implemented a simple clean way to do that in Sage yet,\nthough it would be easy to do.  Here is a hackish way to do exactly\nwhat you want:\n\nsage: a = random_matrix(RDF,64)\nsage: import numpy\nsage: m = matrix_plot(a)\nsage: m[0].xrange =numpy.array([0,1],dtype=float)   # key part of all this\nsage: m[0].yrange =numpy.array([0,1],dtype=float)\nsage: m.xmax(1); m.ymax(1)\nsage: m.show()\n\nThe above will be helpful to whoever does implement this.\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2189\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout @kcrisman\n\n\n```\n\n\nOn Feb 16, 2008 10:19 PM, inerkor@gmail.com <inerkor@gmail.com> wrote:\n> \n> Hello all.\n> \n> I have a Matrix of, say, 64x64 and I plot it using matrix_plot(). It\n> is a fractal that fills the square [0,1]x[0,1] so I want to keep a 2D\n> view. I would like to change the x,y axes ranging values to be in the\n> interval [0,1] rather than in {0, ..., 63}. I don't know how to do it.\n> Maybe using another plotting function?.\n> \n\nNobody has implemented a simple clean way to do that in Sage yet,\nthough it would be easy to do.  Here is a hackish way to do exactly\nwhat you want:\n\nsage: a = random_matrix(RDF,64)\nsage: import numpy\nsage: m = matrix_plot(a)\nsage: m[0].xrange =numpy.array([0,1],dtype=float)   # key part of all this\nsage: m[0].yrange =numpy.array([0,1],dtype=float)\nsage: m.xmax(1); m.ymax(1)\nsage: m.show()\n\nThe above will be helpful to whoever does implement this.\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2189\n\n",
     "created_at": "2008-02-17T06:34:18Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_002189.json:
     "title": "improve functionality of matrix_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2189",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason kcrisman
+CC:  @jasongrout @kcrisman
 
 
 ```
@@ -65,7 +65,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/2189
 archive/issue_comments_014366.json:
 ```json
 {
-    "body": "Changing assignee from was to whuss.",
+    "body": "Changing assignee from @williamstein to whuss.",
     "created_at": "2008-12-11T17:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2189",
     "type": "issue_comment",
@@ -74,7 +74,7 @@ archive/issue_comments_014366.json:
 }
 ```
 
-Changing assignee from was to whuss.
+Changing assignee from @williamstein to whuss.
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_014368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14368",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_014371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14371",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_014372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14372",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_014373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14373",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_014374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2189",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14374",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

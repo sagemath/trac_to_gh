@@ -3,7 +3,7 @@
 archive/issues_008147.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  mvngu rossk jpalmieri leif\n\nThis is a follow-on to #8108 expanding on basic use of Mercurial queues for Sage development.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8147\n\n",
+    "body": "Assignee: mvngu\n\nCC:  mvngu rossk jpalmieri @nexttime\n\nThis is a follow-on to #8108 expanding on basic use of Mercurial queues for Sage development.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8147\n\n",
     "created_at": "2010-02-02T03:05:26Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008147.json:
     "title": "Add mercurial queues information to Developer Walkthrough",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8147",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: mvngu
 
-CC:  mvngu rossk jpalmieri leif
+CC:  mvngu rossk jpalmieri @nexttime
 
 This is a follow-on to #8108 expanding on basic use of Mercurial queues for Sage development.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8147
 archive/issue_comments_071615.json:
 ```json
 {
-    "body": "Attachment [trac_8147_developer_doc_mq.patch](tarball://root/attachments/some-uuid/ticket8147/trac_8147_developer_doc_mq.patch) by rbeezer created at 2010-02-02 06:27:58",
+    "body": "Attachment [trac_8147_developer_doc_mq.patch](tarball://root/attachments/some-uuid/ticket8147/trac_8147_developer_doc_mq.patch) by @rbeezer created at 2010-02-02 06:27:58",
     "created_at": "2010-02-02T06:27:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8147#issuecomment-71615",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8147_developer_doc_mq.patch](tarball://root/attachments/some-uuid/ticket8147/trac_8147_developer_doc_mq.patch) by rbeezer created at 2010-02-02 06:27:58
+Attachment [trac_8147_developer_doc_mq.patch](tarball://root/attachments/some-uuid/ticket8147/trac_8147_developer_doc_mq.patch) by @rbeezer created at 2010-02-02 06:27:58
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_071616.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8147#issuecomment-71616",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_071617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8147#issuecomment-71617",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_071620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8147#issuecomment-71620",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_071621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8147",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8147#issuecomment-71621",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_003552.json:
     "title": "sage notebook -- worksheet.py -- bring coverage up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3552",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -238,7 +238,7 @@ archive/issue_comments_025122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3552#issuecomment-25122",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -251,16 +251,16 @@ document top; optimize opening new worksheets
 archive/issue_comments_025123.json:
 ```json
 {
-    "body": "Attachment [sage-3552-part1.patch](tarball://root/attachments/some-uuid/ticket3552/sage-3552-part1.patch) by was created at 2008-07-05 21:08:06",
+    "body": "Attachment [sage-3552-part1.patch](tarball://root/attachments/some-uuid/ticket3552/sage-3552-part1.patch) by @williamstein created at 2008-07-05 21:08:06",
     "created_at": "2008-07-05T21:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3552#issuecomment-25123",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3552-part1.patch](tarball://root/attachments/some-uuid/ticket3552/sage-3552-part1.patch) by was created at 2008-07-05 21:08:06
+Attachment [sage-3552-part1.patch](tarball://root/attachments/some-uuid/ticket3552/sage-3552-part1.patch) by @williamstein created at 2008-07-05 21:08:06
 
 
 
@@ -274,7 +274,7 @@ archive/issue_comments_025124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3552#issuecomment-25124",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

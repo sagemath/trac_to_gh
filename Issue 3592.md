@@ -3,7 +3,7 @@
 archive/issues_003592.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\n1) Put there the attached sympy-0.6.0.spkg. \n\n2) Then apply the attached patch to Sage and rebuild Sage with \"sage -b\"\n\n3) make sure the test_sympy.py test works, this should be the outcome:\n\n\n\n```\n$ ./sage -t devel/sage/sage/calculus/test_sympy.py\nsage -t  3.0.3-debian-opteron64-x86_64-Linux/devel/sage/sage/calculus/test_sympy.py\n\t [5.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 5.2 seconds\n```\n\n\n4) make sure all tests work. The result of:\n\n$ ./sage -tp 6 devel/sage/sage &> test.log\n\nis attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3592\n\n",
+    "body": "Assignee: @garyfurnish\n\n1) Put there the attached sympy-0.6.0.spkg. \n\n2) Then apply the attached patch to Sage and rebuild Sage with \"sage -b\"\n\n3) make sure the test_sympy.py test works, this should be the outcome:\n\n\n\n```\n$ ./sage -t devel/sage/sage/calculus/test_sympy.py\nsage -t  3.0.3-debian-opteron64-x86_64-Linux/devel/sage/sage/calculus/test_sympy.py\n\t [5.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 5.2 seconds\n```\n\n\n4) make sure all tests work. The result of:\n\n$ ./sage -tp 6 devel/sage/sage &> test.log\n\nis attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3592\n\n",
     "created_at": "2008-07-07T22:06:16Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003592.json:
     "title": "please update sympy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3592",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 1) Put there the attached sympy-0.6.0.spkg. 
 
@@ -79,7 +79,7 @@ Michael
 archive/issue_comments_025380.json:
 ```json
 {
-    "body": "Changing assignee from gfurnish to ondrej.",
+    "body": "Changing assignee from @garyfurnish to ondrej.",
     "created_at": "2008-07-07T22:17:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3592",
     "type": "issue_comment",
@@ -88,7 +88,7 @@ archive/issue_comments_025380.json:
 }
 ```
 
-Changing assignee from gfurnish to ondrej.
+Changing assignee from @garyfurnish to ondrej.
 
 
 
@@ -142,7 +142,7 @@ archive/issue_comments_025383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3592#issuecomment-25383",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003646.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was tclemans yiqiang\n\nPeople have been complaining about a lack of paren matching in the notebook.  Do something.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3646\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein tclemans yiqiang\n\nPeople have been complaining about a lack of paren matching in the notebook.  Do something.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3646\n\n",
     "created_at": "2008-07-11T22:15:08Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_003646.json:
 ```
 Assignee: boothby
 
-CC:  was tclemans yiqiang
+CC:  @williamstein tclemans yiqiang
 
 People have been complaining about a lack of paren matching in the notebook.  Do something.
 
@@ -39,7 +39,7 @@ archive/issue_comments_025775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3646#issuecomment-25775",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_025778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3646#issuecomment-25778",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_025782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3646#issuecomment-25782",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_025785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3646#issuecomment-25785",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_025786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3646#issuecomment-25786",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_025787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3646#issuecomment-25787",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_025793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3646#issuecomment-25793",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -394,16 +394,16 @@ Rebase v. #7196.  Apply only this patch.
 archive/issue_comments_025794.json:
 ```json
 {
-    "body": "Attachment [trac_3646-sagenb_paren_match.patch](tarball://root/attachments/some-uuid/ticket3646/trac_3646-sagenb_paren_match.patch) by mpatel created at 2009-10-15 18:50:41\n\n[attachment:trac_3646-sagenb_paren_match.patch Patch] rebased against SageNB's #7196.",
+    "body": "Attachment [trac_3646-sagenb_paren_match.patch](tarball://root/attachments/some-uuid/ticket3646/trac_3646-sagenb_paren_match.patch) by @qed777 created at 2009-10-15 18:50:41\n\n[attachment:trac_3646-sagenb_paren_match.patch Patch] rebased against SageNB's #7196.",
     "created_at": "2009-10-15T18:50:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3646#issuecomment-25794",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_3646-sagenb_paren_match.patch](tarball://root/attachments/some-uuid/ticket3646/trac_3646-sagenb_paren_match.patch) by mpatel created at 2009-10-15 18:50:41
+Attachment [trac_3646-sagenb_paren_match.patch](tarball://root/attachments/some-uuid/ticket3646/trac_3646-sagenb_paren_match.patch) by @qed777 created at 2009-10-15 18:50:41
 
 [attachment:trac_3646-sagenb_paren_match.patch Patch] rebased against SageNB's #7196.
 
@@ -419,7 +419,7 @@ archive/issue_comments_025795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3646#issuecomment-25795",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

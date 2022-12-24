@@ -3,7 +3,7 @@
 archive/issues_001168.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: asinh(1)\n<type 'exceptions.NameError'>: name 'asinh' is not defined\nsage: asinh(x)\n<type 'exceptions.NameError'>: name 'asinh' is not defined\n```\n\nbut:\n\n```\nsage: integrate(1/sqrt(9+x^2), x)\nasinh(x/3)\nsage: (1.0).asinh()\n0.881373587019543\n```\n\nThe same holds for acosh and atanh.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1168\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: asinh(1)\n<type 'exceptions.NameError'>: name 'asinh' is not defined\nsage: asinh(x)\n<type 'exceptions.NameError'>: name 'asinh' is not defined\n```\n\nbut:\n\n```\nsage: integrate(1/sqrt(9+x^2), x)\nasinh(x/3)\nsage: (1.0).asinh()\n0.881373587019543\n```\n\nThe same holds for acosh and atanh.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1168\n\n",
     "created_at": "2007-11-13T22:58:42Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001168.json:
     "title": "asinh/acosh/atanh are only partially known to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1168",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -54,7 +54,7 @@ archive/issue_comments_007160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1168#issuecomment-7160",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_007161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1168#issuecomment-7161",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -97,16 +97,16 @@ Changing status from new to assigned.
 archive/issue_comments_007162.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-11-30T23:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1168#issuecomment-7162",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -120,7 +120,7 @@ archive/issue_comments_007163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1168",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1168#issuecomment-7163",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

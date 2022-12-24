@@ -3,7 +3,7 @@
 archive/issues_006178.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was ncalexan\n\nKeywords: echelon form\n\nI've written some code that calculates Hermite normal form over a general PID. I wrote this because I needed it for a particular application; I will now go ahead with that as a means of stress-testing the code I've just written, but this ticket is here to remind me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6178\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @ncalexan\n\nKeywords: echelon form\n\nI've written some code that calculates Hermite normal form over a general PID. I wrote this because I needed it for a particular application; I will now go ahead with that as a means of stress-testing the code I've just written, but this ticket is here to remind me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6178\n\n",
     "created_at": "2009-06-01T14:18:08Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_006178.json:
     "title": "Hermite normal form over PID's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6178",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was ncalexan
+CC:  @williamstein @ncalexan
 
 Keywords: echelon form
 
@@ -41,7 +41,7 @@ archive/issue_comments_049324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6178#issuecomment-49324",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -54,16 +54,16 @@ patch against 4.0.1.alpha0
 archive/issue_comments_049325.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-06-02T21:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6178#issuecomment-49325",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_049326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6178#issuecomment-49326",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -90,16 +90,16 @@ Changing status from new to assigned.
 archive/issue_comments_049327.json:
 ```json
 {
-    "body": "Attachment [trac_6178.patch](tarball://root/attachments/some-uuid/ticket6178/trac_6178.patch) by davidloeffler created at 2009-06-02 21:50:15\n\nHere's a patch, which adds echelon form (= Hermite normal form) over PID's. I've also added a simple routine for kernel finding over PID's using Smith form (since the algorithm we had before silently assumed that the base ring was a field).\n\nWith this installed, I've done some playing around with free modules over the ring of integers of Q(sqrt(-7)), and it seems to be quite usable. There are unresolved uniqueness issues, because I don't know how to pick a canonical generator for an ideal or a canonical representative for an element modulo an ideal (even in the particular case of number field orders), but I haven't yet found an example where this is a problem :-)\n\nWilliam: I'm CCing you on this, because you seemed interested in the Smith form stuff. In conjunction with your work at #5882 this will mean we can handle all sorts of new kinds of modules.",
+    "body": "Attachment [trac_6178.patch](tarball://root/attachments/some-uuid/ticket6178/trac_6178.patch) by @loefflerd created at 2009-06-02 21:50:15\n\nHere's a patch, which adds echelon form (= Hermite normal form) over PID's. I've also added a simple routine for kernel finding over PID's using Smith form (since the algorithm we had before silently assumed that the base ring was a field).\n\nWith this installed, I've done some playing around with free modules over the ring of integers of Q(sqrt(-7)), and it seems to be quite usable. There are unresolved uniqueness issues, because I don't know how to pick a canonical generator for an ideal or a canonical representative for an element modulo an ideal (even in the particular case of number field orders), but I haven't yet found an example where this is a problem :-)\n\nWilliam: I'm CCing you on this, because you seemed interested in the Smith form stuff. In conjunction with your work at #5882 this will mean we can handle all sorts of new kinds of modules.",
     "created_at": "2009-06-02T21:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6178#issuecomment-49327",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6178.patch](tarball://root/attachments/some-uuid/ticket6178/trac_6178.patch) by davidloeffler created at 2009-06-02 21:50:15
+Attachment [trac_6178.patch](tarball://root/attachments/some-uuid/ticket6178/trac_6178.patch) by @loefflerd created at 2009-06-02 21:50:15
 
 Here's a patch, which adds echelon form (= Hermite normal form) over PID's. I've also added a simple routine for kernel finding over PID's using Smith form (since the algorithm we had before silently assumed that the base ring was a field).
 
@@ -119,7 +119,7 @@ archive/issue_comments_049328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6178#issuecomment-49328",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_049329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6178#issuecomment-49329",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_049330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6178#issuecomment-49330",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_049331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6178#issuecomment-49331",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_049332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6178",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6178#issuecomment-49332",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

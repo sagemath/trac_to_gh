@@ -3,7 +3,7 @@
 archive/issues_008468.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  rbeezer\n\nKeywords: group theory\n\nAdd the document [Group Theory and Sage: A Primer](http://buzzard.ups.edu/sage/sage-group-theory-primer.pdf) to the documentation category \"Sage HOWTOs\". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8468\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rbeezer\n\nKeywords: group theory\n\nAdd the document [Group Theory and Sage: A Primer](http://buzzard.ups.edu/sage/sage-group-theory-primer.pdf) to the documentation category \"Sage HOWTOs\". The original proposal can be found on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8468\n\n",
     "created_at": "2010-03-07T02:22:36Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008468.json:
 ```
 Assignee: mvngu
 
-CC:  rbeezer
+CC:  @rbeezer
 
 Keywords: group theory
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8468
 archive/issue_comments_076256.json:
 ```json
 {
-    "body": "Attachment [sage-group-theory-primer.tex](tarball://root/attachments/some-uuid/ticket8468/sage-group-theory-primer.tex) by rbeezer created at 2010-03-11 01:23:22",
+    "body": "Attachment [sage-group-theory-primer.tex](tarball://root/attachments/some-uuid/ticket8468/sage-group-theory-primer.tex) by @rbeezer created at 2010-03-11 01:23:22",
     "created_at": "2010-03-11T01:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8468#issuecomment-76256",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [sage-group-theory-primer.tex](tarball://root/attachments/some-uuid/ticket8468/sage-group-theory-primer.tex) by rbeezer created at 2010-03-11 01:23:22
+Attachment [sage-group-theory-primer.tex](tarball://root/attachments/some-uuid/ticket8468/sage-group-theory-primer.tex) by @rbeezer created at 2010-03-11 01:23:22
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_076257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8468#issuecomment-76257",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -72,16 +72,16 @@ Changing status from new to needs_review.
 archive/issue_comments_076258.json:
 ```json
 {
-    "body": "Attachment [sage-group-theory-primer.pdf](tarball://root/attachments/some-uuid/ticket8468/sage-group-theory-primer.pdf) by rbeezer created at 2010-03-11 01:25:21\n\nTeX and PDF are posted here.  License should be compatible with the rest of Sage documentation now.  Any updates in the future should appear at http://abstract.ups.edu",
+    "body": "Attachment [sage-group-theory-primer.pdf](tarball://root/attachments/some-uuid/ticket8468/sage-group-theory-primer.pdf) by @rbeezer created at 2010-03-11 01:25:21\n\nTeX and PDF are posted here.  License should be compatible with the rest of Sage documentation now.  Any updates in the future should appear at http://abstract.ups.edu",
     "created_at": "2010-03-11T01:25:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8468#issuecomment-76258",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [sage-group-theory-primer.pdf](tarball://root/attachments/some-uuid/ticket8468/sage-group-theory-primer.pdf) by rbeezer created at 2010-03-11 01:25:21
+Attachment [sage-group-theory-primer.pdf](tarball://root/attachments/some-uuid/ticket8468/sage-group-theory-primer.pdf) by @rbeezer created at 2010-03-11 01:25:21
 
 TeX and PDF are posted here.  License should be compatible with the rest of Sage documentation now.  Any updates in the future should appear at http://abstract.ups.edu
 
@@ -97,7 +97,7 @@ archive/issue_comments_076259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8468#issuecomment-76259",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_076260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8468#issuecomment-76260",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_076265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8468#issuecomment-76265",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_076266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8468#issuecomment-76266",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_076267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8468#issuecomment-76267",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_076268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8468#issuecomment-76268",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_076269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8468#issuecomment-76269",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_076270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8468#issuecomment-76270",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 

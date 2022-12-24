@@ -14,7 +14,7 @@ archive/issues_009412.json:
     "title": "some random crap coming from zodb *sometimes*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9412",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: GeorgSWeber
@@ -59,7 +59,7 @@ archive/issue_comments_089720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9412#issuecomment-89720",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_089722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9412#issuecomment-89722",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_089723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9412#issuecomment-89723",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_089724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9412#issuecomment-89724",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -302,16 +302,16 @@ Changing status from new to needs_info.
 archive/issue_comments_089725.json:
 ```json
 {
-    "body": "Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket9412/deps.patch) by rlm created at 2010-07-05 21:39:03",
+    "body": "Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket9412/deps.patch) by @rlmill created at 2010-07-05 21:39:03",
     "created_at": "2010-07-05T21:39:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9412#issuecomment-89725",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket9412/deps.patch) by rlm created at 2010-07-05 21:39:03
+Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket9412/deps.patch) by @rlmill created at 2010-07-05 21:39:03
 
 
 
@@ -320,16 +320,16 @@ Attachment [deps.patch](tarball://root/attachments/some-uuid/ticket9412/deps.pat
 archive/issue_comments_089726.json:
 ```json
 {
-    "body": "Attachment [trac_9412-scripts.patch](tarball://root/attachments/some-uuid/ticket9412/trac_9412-scripts.patch) by rlm created at 2010-07-05 21:39:59",
+    "body": "Attachment [trac_9412-scripts.patch](tarball://root/attachments/some-uuid/ticket9412/trac_9412-scripts.patch) by @rlmill created at 2010-07-05 21:39:59",
     "created_at": "2010-07-05T21:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9412#issuecomment-89726",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9412-scripts.patch](tarball://root/attachments/some-uuid/ticket9412/trac_9412-scripts.patch) by rlm created at 2010-07-05 21:39:59
+Attachment [trac_9412-scripts.patch](tarball://root/attachments/some-uuid/ticket9412/trac_9412-scripts.patch) by @rlmill created at 2010-07-05 21:39:59
 
 
 
@@ -343,7 +343,7 @@ archive/issue_comments_089727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9412#issuecomment-89727",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -356,16 +356,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_089728.json:
 ```json
 {
-    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9412/deps) by rlm created at 2010-07-05 21:40:19",
+    "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9412/deps) by @rlmill created at 2010-07-05 21:40:19",
     "created_at": "2010-07-05T21:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9412#issuecomment-89728",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [deps](tarball://root/attachments/some-uuid/ticket9412/deps) by rlm created at 2010-07-05 21:40:19
+Attachment [deps](tarball://root/attachments/some-uuid/ticket9412/deps) by @rlmill created at 2010-07-05 21:40:19
 
 
 
@@ -428,7 +428,7 @@ archive/issue_comments_089731.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9412#issuecomment-89731",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -449,7 +449,7 @@ archive/issue_comments_089732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9412",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9412#issuecomment-89732",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

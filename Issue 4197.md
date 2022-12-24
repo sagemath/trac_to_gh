@@ -3,7 +3,7 @@
 archive/issues_004197.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  robertwb\n\nI thought we slayed this, but on eno we have this weird failure:\n\n\n```\nsage -t -long devel/sage/sage/rings/finite_field_ntl_gf2e.pyx**********************************************************************\nFile \"/home/wstein/eno/build/sage-3.1.3.alpha1/tmp/finite_field_ntl_gf2e.py\",\nline 167:\n   sage: k.modulus()\nExpected:\n   x^1024 + x^19 + x^6 + x + 1\nGot:\n   x^1024 + x^16 + x^15 + x^14 + x^13 + x^11 + x^10 + x^9 + x^7 + x^6 + x^2\n**********************************************************************\n1 items had failures:\n  1 of  10 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file\n/home/wstein/eno/build/sage-3.1.3.alpha1/tmp/.doctest_finite_field_ntl_gf2e.py\n        [1.2 s]\n\nThis machine is:\n[wstein@eno eno]$ cat /etc/issue\nFedora release 8 (Werewolf)\nKernel \\r on an \\m\n\n[wstein@eno eno]$ uname -a\nLinux eno 2.6.24.5-85.fc8 #1 SMP Sat Apr 19 11:18:09 EDT 2008 x86_64\nx86_64 x86_64 GNU/Linux\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4197\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb\n\nI thought we slayed this, but on eno we have this weird failure:\n\n\n```\nsage -t -long devel/sage/sage/rings/finite_field_ntl_gf2e.pyx**********************************************************************\nFile \"/home/wstein/eno/build/sage-3.1.3.alpha1/tmp/finite_field_ntl_gf2e.py\",\nline 167:\n   sage: k.modulus()\nExpected:\n   x^1024 + x^19 + x^6 + x + 1\nGot:\n   x^1024 + x^16 + x^15 + x^14 + x^13 + x^11 + x^10 + x^9 + x^7 + x^6 + x^2\n**********************************************************************\n1 items had failures:\n  1 of  10 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file\n/home/wstein/eno/build/sage-3.1.3.alpha1/tmp/.doctest_finite_field_ntl_gf2e.py\n        [1.2 s]\n\nThis machine is:\n[wstein@eno eno]$ cat /etc/issue\nFedora release 8 (Werewolf)\nKernel \\r on an \\m\n\n[wstein@eno eno]$ uname -a\nLinux eno 2.6.24.5-85.fc8 #1 SMP Sat Apr 19 11:18:09 EDT 2008 x86_64\nx86_64 x86_64 GNU/Linux\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4197\n\n",
     "created_at": "2008-09-25T23:33:46Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_004197.json:
     "title": "weird ntl finite field modulus caching bug.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4197",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
 
-CC:  robertwb
+CC:  @robertwb
 
 I thought we slayed this, but on eno we have this weird failure:
 
@@ -63,16 +63,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4197
 archive/issue_comments_030463.json:
 ```json
 {
-    "body": "Attachment [trac-4197.patch](tarball://root/attachments/some-uuid/ticket4197/trac-4197.patch) by was created at 2008-09-25 23:36:52",
+    "body": "Attachment [trac-4197.patch](tarball://root/attachments/some-uuid/ticket4197/trac-4197.patch) by @williamstein created at 2008-09-25 23:36:52",
     "created_at": "2008-09-25T23:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4197#issuecomment-30463",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-4197.patch](tarball://root/attachments/some-uuid/ticket4197/trac-4197.patch) by was created at 2008-09-25 23:36:52
+Attachment [trac-4197.patch](tarball://root/attachments/some-uuid/ticket4197/trac-4197.patch) by @williamstein created at 2008-09-25 23:36:52
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_030464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4197#issuecomment-30464",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

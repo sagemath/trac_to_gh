@@ -3,7 +3,7 @@
 archive/issues_000366.json:
 ```json
 {
-    "body": "Assignee: was\n\nOn laptops using wireless, VMWare changes its IP address -- so when a user moves between access points, the notebook ceases to respond to the IP address that it starts with.\n\nIssue created by migration from https://trac.sagemath.org/ticket/366\n\n",
+    "body": "Assignee: @williamstein\n\nOn laptops using wireless, VMWare changes its IP address -- so when a user moves between access points, the notebook ceases to respond to the IP address that it starts with.\n\nIssue created by migration from https://trac.sagemath.org/ticket/366\n\n",
     "created_at": "2007-05-17T20:48:09Z",
     "labels": [
         "interfaces",
@@ -16,7 +16,7 @@ archive/issues_000366.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 On laptops using wireless, VMWare changes its IP address -- so when a user moves between access points, the notebook ceases to respond to the IP address that it starts with.
 

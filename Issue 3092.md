@@ -3,7 +3,7 @@
 archive/issues_003092.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI've attached a patch that fixes the permissions issues with libsingular.so (and the oddly executable stuff in /usr/lib/singular).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3092\n\n",
+    "body": "Assignee: @timabbott\n\nI've attached a patch that fixes the permissions issues with libsingular.so (and the oddly executable stuff in /usr/lib/singular).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3092\n\n",
     "created_at": "2008-05-03T08:21:36Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_003092.json:
     "title": "[with patch; needs review] Debian Singular permissions fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3092",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I've attached a patch that fixes the permissions issues with libsingular.so (and the oddly executable stuff in /usr/lib/singular).
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3092
 archive/issue_comments_021343.json:
 ```json
 {
-    "body": "Attachment [singular-permissions.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.patch) by tabbott created at 2008-05-03 08:21:42",
+    "body": "Attachment [singular-permissions.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.patch) by @timabbott created at 2008-05-03 08:21:42",
     "created_at": "2008-05-03T08:21:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21343",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [singular-permissions.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.patch) by tabbott created at 2008-05-03 08:21:42
+Attachment [singular-permissions.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.patch) by @timabbott created at 2008-05-03 08:21:42
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_021347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21347",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_021348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21348",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_021349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21349",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -162,16 +162,16 @@ Resolution changed from fixed to
 archive/issue_comments_021350.json:
 ```json
 {
-    "body": "Attachment [singular-permissions.2.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.2.patch) by tabbott created at 2008-05-03 18:41:29",
+    "body": "Attachment [singular-permissions.2.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.2.patch) by @timabbott created at 2008-05-03 18:41:29",
     "created_at": "2008-05-03T18:41:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21350",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [singular-permissions.2.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.2.patch) by tabbott created at 2008-05-03 18:41:29
+Attachment [singular-permissions.2.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.2.patch) by @timabbott created at 2008-05-03 18:41:29
 
 
 

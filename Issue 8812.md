@@ -14,7 +14,7 @@ archive/issues_008812.json:
     "title": "notebook doctest failure in sage-4.4.1.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8812",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was

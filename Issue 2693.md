@@ -3,7 +3,7 @@
 archive/issues_002693.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  tscrim vdelecroix vklein\n\nConsider this example, which fails:\n\n```\nR.<x,y> = RR[]\np = x + y\nq = x*y\np.resultant(q)\n```\n\n(as reported here: http://groups.google.com/group/sage-support/browse_thread/thread/1d6289cead33d063#)\n\nThis is because multivariate resultants are implemented using the Singular pexpect interface, which does not support RR.\n\nA workaround for this particular problem (and a possible basis for an improved version) is:\n\n```\np.polynomial(x).resultant(q.polynomial(x)) \n```\n\nThat is, fall back to univariate resultants, which are implemented using Pari and are somewhat more generic.  (This is still not truly generic, though, since there are Sage rings which have no Pari equivalent.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2693\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @tscrim @videlec @vinklein\n\nConsider this example, which fails:\n\n```\nR.<x,y> = RR[]\np = x + y\nq = x*y\np.resultant(q)\n```\n\n(as reported here: http://groups.google.com/group/sage-support/browse_thread/thread/1d6289cead33d063#)\n\nThis is because multivariate resultants are implemented using the Singular pexpect interface, which does not support RR.\n\nA workaround for this particular problem (and a possible basis for an improved version) is:\n\n```\np.polynomial(x).resultant(q.polynomial(x)) \n```\n\nThat is, fall back to univariate resultants, which are implemented using Pari and are somewhat more generic.  (This is still not truly generic, though, since there are Sage rings which have no Pari equivalent.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2693\n\n",
     "created_at": "2008-03-28T02:21:37Z",
     "labels": [
         "algebraic geometry",
@@ -17,9 +17,9 @@ archive/issues_002693.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  tscrim vdelecroix vklein
+CC:  @tscrim @videlec @vinklein
 
 Consider this example, which fails:
 
@@ -58,7 +58,7 @@ archive/issue_comments_018528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2693#issuecomment-18528",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_018529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2693#issuecomment-18529",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_018530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2693#issuecomment-18530",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_018531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2693#issuecomment-18531",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_018532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2693#issuecomment-18532",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_018533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2693#issuecomment-18533",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_018535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2693#issuecomment-18535",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_018536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2693#issuecomment-18536",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_018537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2693#issuecomment-18537",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_018538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2693#issuecomment-18538",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_018539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2693",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2693#issuecomment-18539",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

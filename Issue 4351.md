@@ -3,7 +3,7 @@
 archive/issues_004351.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nPlease see #4346 first and apply the patch there.\n\nAfter applying this patch and doctesting all sage, there are a bunch of failures in the modular abelian varieties code:\n\n```\n\tsage -t  devel/sage-main/sage/modular/abvar/abvar_ambient_jacobian.py # 3 doctests failed\n\tsage -t  devel/sage-main/sage/modular/abvar/abvar_newform.py # 3 doctests failed\n\tsage -t  devel/sage-main/sage/modular/abvar/morphism.py # 3 doctests failed\n\tsage -t  devel/sage-main/sage/modular/abvar/homspace.py # 34 doctests failed\n\tsage -t  devel/sage-main/sage/modular/abvar/abvar.py # 11 doctests failed\n```\n\n\nThese are because of bugs in that code exposed by doing proper bounds checking.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4351\n\n",
+    "body": "Assignee: @craigcitro\n\nPlease see #4346 first and apply the patch there.\n\nAfter applying this patch and doctesting all sage, there are a bunch of failures in the modular abelian varieties code:\n\n```\n\tsage -t  devel/sage-main/sage/modular/abvar/abvar_ambient_jacobian.py # 3 doctests failed\n\tsage -t  devel/sage-main/sage/modular/abvar/abvar_newform.py # 3 doctests failed\n\tsage -t  devel/sage-main/sage/modular/abvar/morphism.py # 3 doctests failed\n\tsage -t  devel/sage-main/sage/modular/abvar/homspace.py # 34 doctests failed\n\tsage -t  devel/sage-main/sage/modular/abvar/abvar.py # 11 doctests failed\n```\n\n\nThese are because of bugs in that code exposed by doing proper bounds checking.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4351\n\n",
     "created_at": "2008-10-23T19:34:51Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_004351.json:
     "title": "bugs in abelian variety homspace computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4351",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Please see #4346 first and apply the patch there.
 
@@ -50,7 +50,7 @@ archive/issue_comments_031957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4351#issuecomment-31957",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_031958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4351",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4351#issuecomment-31958",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

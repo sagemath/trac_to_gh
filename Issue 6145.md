@@ -14,7 +14,7 @@ archive/issues_006145.json:
     "title": "upgrade mpir to 1.1.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6145",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_049056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6145#issuecomment-49056",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_049057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6145#issuecomment-49057",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_049058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6145#issuecomment-49058",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_049059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6145#issuecomment-49059",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

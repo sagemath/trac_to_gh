@@ -3,7 +3,7 @@
 archive/issues_009011.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  mhansen jason\n\nI decided to actually look at the numpy SVD decomposition in preparation for my class today, and quickly found that it is wrong. \n\n\n```\nsage: import numpy\nsage: numpy.linalg.svd?\n---\nDefinition: numpy.linalg.svd(a, full_matrices=1, compute_uv=1)\n\nDocstring:\n\n    Singular Value Decomposition.\n\n    Factorizes the matrix `a` into two unitary matrices, ``U`` and ``Vh``,\n    and a 1-dimensional array of singular values, ``s`` (real, non-negative),\n    such that ``a == U S Vh``, where ``S`` is the diagonal\n    matrix ``np.diag(s)``.\n----\n```\n\n\nThe statement that S is the diagonal matrix np.diag(s) is just totally false if the input matrix a is nonsquare, since S is also non square. \n\nThe best fix I could find is to replace np.diag(s) by\n\n```\nS = numpy.zeros( a )\nS[:len(s),:len(s)] = numpy.diag(s)\n```\n\n\nObviously, this should really be reported and patched upstream.\n\n  \n\nIssue created by migration from https://trac.sagemath.org/ticket/9011\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @mwhansen @jasongrout\n\nI decided to actually look at the numpy SVD decomposition in preparation for my class today, and quickly found that it is wrong. \n\n\n```\nsage: import numpy\nsage: numpy.linalg.svd?\n---\nDefinition: numpy.linalg.svd(a, full_matrices=1, compute_uv=1)\n\nDocstring:\n\n    Singular Value Decomposition.\n\n    Factorizes the matrix `a` into two unitary matrices, ``U`` and ``Vh``,\n    and a 1-dimensional array of singular values, ``s`` (real, non-negative),\n    such that ``a == U S Vh``, where ``S`` is the diagonal\n    matrix ``np.diag(s)``.\n----\n```\n\n\nThe statement that S is the diagonal matrix np.diag(s) is just totally false if the input matrix a is nonsquare, since S is also non square. \n\nThe best fix I could find is to replace np.diag(s) by\n\n```\nS = numpy.zeros( a )\nS[:len(s),:len(s)] = numpy.diag(s)\n```\n\n\nObviously, this should really be reported and patched upstream.\n\n  \n\nIssue created by migration from https://trac.sagemath.org/ticket/9011\n\n",
     "created_at": "2010-05-21T16:48:43Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_009011.json:
     "title": "the numpy SVD decomposition docstring is wrong",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9011",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
 
-CC:  mhansen jason
+CC:  @mwhansen @jasongrout
 
 I decided to actually look at the numpy SVD decomposition in preparation for my class today, and quickly found that it is wrong. 
 
@@ -72,7 +72,7 @@ archive/issue_comments_083359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9011#issuecomment-83359",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_083360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9011#issuecomment-83360",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_083361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9011#issuecomment-83361",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_083362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9011#issuecomment-83362",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_083363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9011",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9011#issuecomment-83363",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

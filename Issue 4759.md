@@ -14,7 +14,7 @@ archive/issues_004759.json:
     "title": "add branch option to sage -upgrade",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4759",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -57,7 +57,7 @@ archive/issue_comments_036068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4759#issuecomment-36068",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_036069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4759#issuecomment-36069",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_036070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4759#issuecomment-36070",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_036071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4759#issuecomment-36071",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_036072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4759#issuecomment-36072",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_036073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4759",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4759#issuecomment-36073",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

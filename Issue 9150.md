@@ -3,7 +3,7 @@
 archive/issues_009150.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  kcrisman\n\nSee #8368 for the contour plot patch; probably much of it can be recycled for density plots.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9150\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nSee #8368 for the contour plot patch; probably much of it can be recycled for density plots.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9150\n\n",
     "created_at": "2010-06-05T16:54:10Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009150.json:
     "title": "add colorbars to density plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9150",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  kcrisman
+CC:  @kcrisman
 
 See #8368 for the contour plot patch; probably much of it can be recycled for density plots.
 
@@ -39,7 +39,7 @@ archive/issue_comments_085431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9150#issuecomment-85431",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_085432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9150#issuecomment-85432",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_085433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9150",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9150#issuecomment-85433",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 

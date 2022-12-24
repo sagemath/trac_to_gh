@@ -14,7 +14,7 @@ archive/issues_009851.json:
     "title": "Error in edge_cut",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9851",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -42,7 +42,7 @@ archive/issue_comments_097234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97234",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_097235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97235",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_097236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97236",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -91,16 +91,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_097237.json:
 ```json
 {
-    "body": "Attachment [trac_9852.patch](tarball://root/attachments/some-uuid/ticket9852/trac_9852.patch) by dimpase created at 2010-09-04 03:57:46\n\nlooks reasonable.",
+    "body": "Attachment [trac_9852.patch](tarball://root/attachments/some-uuid/ticket9852/trac_9852.patch) by @dimpase created at 2010-09-04 03:57:46\n\nlooks reasonable.",
     "created_at": "2010-09-04T03:57:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97237",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
-Attachment [trac_9852.patch](tarball://root/attachments/some-uuid/ticket9852/trac_9852.patch) by dimpase created at 2010-09-04 03:57:46
+Attachment [trac_9852.patch](tarball://root/attachments/some-uuid/ticket9852/trac_9852.patch) by @dimpase created at 2010-09-04 03:57:46
 
 looks reasonable.
 
@@ -116,7 +116,7 @@ archive/issue_comments_097238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97238",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

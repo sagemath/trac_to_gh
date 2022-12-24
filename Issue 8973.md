@@ -3,7 +3,7 @@
 archive/issues_008973.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  benjaminfjones dimpase\n\nThe experimental spkg \"surf-1.1\" does not build with gcc-4.4.4. The following patch works for me.\n\n\n```\ndiff -ru a/surf/draw/SurfaceCalc.cc b/surf-1.1/surf/draw/SurfaceCalc.cc\n--- a/surf/draw/SurfaceCalc.cc  2004-11-08 11:00:43.000000000 +0100\n+++ b/surf-1.1/surf/draw/SurfaceCalc.cc 2010-05-15 17:48:38.663596876 +0200\n@@ -38,6 +38,7 @@\n #include <IO.h>\n \n #include <math.h>\n+#include <cstring>\n \n extern double Y_AXIS_LR_ROTATE;\n \ndiff -ru a/surf/image-formats/ByExtension.cc b/surf-1.1/surf/image-formats/ByExtension.cc\n--- a/surf/image-formats/ByExtension.cc 2003-04-14 17:12:37.000000000 +0200\n+++ b/surf-1.1/surf/image-formats/ByExtension.cc        2010-05-15 17:47:47.707096842 +0200\n@@ -26,7 +26,8 @@\n \n #include <AvailableImageFormats.h>\n \n-#include<iostream>\n+#include <iostream>\n+#include <cstring>\n \n namespace ImageFormats {\n \n@@ -87,7 +88,7 @@\n                }\n \n                // just look for \"*.extension\"\n-               char* ext = strrchr(filename, '.');\n+               const char* ext = strrchr(filename, '.');\n                if (ext == 0) {\n                        return 0;\n                }\ndiff -ru a/surf/misc/IO.cc b/surf-1.1/surf/misc/IO.cc\n--- a/surf/misc/IO.cc   2006-02-12 14:36:26.000000000 +0100\n+++ b/surf-1.1/surf/misc/IO.cc  2010-05-15 17:49:12.939096803 +0200\n@@ -27,6 +27,8 @@\n \n #include <errno.h>\n \n+#include <cstdlib>\n+\n #ifdef HAVE_UNISTD_H\n #  include <unistd.h>\n #endif\ndiff -ru a/surf/src/init_parser.cc b/surf-1.1/surf/src/init_parser.cc\n--- a/surf/src/init_parser.cc   2002-06-09 15:29:17.000000000 +0200\n+++ b/surf-1.1/surf/src/init_parser.cc  2010-05-15 17:45:32.318586702 +0200\n@@ -32,8 +32,8 @@\n #include <monomarith.h>\n #include <AvailableImageFormats.h>\n \n-#include<cstdio>\n-#include<string>\n+#include <cstdio>\n+#include <cstring>\n \n using namespace ScriptVar;\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8973\n\n",
+    "body": "Assignee: tbd\n\nCC:  @benjaminfjones @dimpase\n\nThe experimental spkg \"surf-1.1\" does not build with gcc-4.4.4. The following patch works for me.\n\n\n```\ndiff -ru a/surf/draw/SurfaceCalc.cc b/surf-1.1/surf/draw/SurfaceCalc.cc\n--- a/surf/draw/SurfaceCalc.cc  2004-11-08 11:00:43.000000000 +0100\n+++ b/surf-1.1/surf/draw/SurfaceCalc.cc 2010-05-15 17:48:38.663596876 +0200\n@@ -38,6 +38,7 @@\n #include <IO.h>\n \n #include <math.h>\n+#include <cstring>\n \n extern double Y_AXIS_LR_ROTATE;\n \ndiff -ru a/surf/image-formats/ByExtension.cc b/surf-1.1/surf/image-formats/ByExtension.cc\n--- a/surf/image-formats/ByExtension.cc 2003-04-14 17:12:37.000000000 +0200\n+++ b/surf-1.1/surf/image-formats/ByExtension.cc        2010-05-15 17:47:47.707096842 +0200\n@@ -26,7 +26,8 @@\n \n #include <AvailableImageFormats.h>\n \n-#include<iostream>\n+#include <iostream>\n+#include <cstring>\n \n namespace ImageFormats {\n \n@@ -87,7 +88,7 @@\n                }\n \n                // just look for \"*.extension\"\n-               char* ext = strrchr(filename, '.');\n+               const char* ext = strrchr(filename, '.');\n                if (ext == 0) {\n                        return 0;\n                }\ndiff -ru a/surf/misc/IO.cc b/surf-1.1/surf/misc/IO.cc\n--- a/surf/misc/IO.cc   2006-02-12 14:36:26.000000000 +0100\n+++ b/surf-1.1/surf/misc/IO.cc  2010-05-15 17:49:12.939096803 +0200\n@@ -27,6 +27,8 @@\n \n #include <errno.h>\n \n+#include <cstdlib>\n+\n #ifdef HAVE_UNISTD_H\n #  include <unistd.h>\n #endif\ndiff -ru a/surf/src/init_parser.cc b/surf-1.1/surf/src/init_parser.cc\n--- a/surf/src/init_parser.cc   2002-06-09 15:29:17.000000000 +0200\n+++ b/surf-1.1/surf/src/init_parser.cc  2010-05-15 17:45:32.318586702 +0200\n@@ -32,8 +32,8 @@\n #include <monomarith.h>\n #include <AvailableImageFormats.h>\n \n-#include<cstdio>\n-#include<string>\n+#include <cstdio>\n+#include <cstring>\n \n using namespace ScriptVar;\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8973\n\n",
     "created_at": "2010-05-15T16:01:44Z",
     "labels": [
         "packages: experimental",
@@ -14,12 +14,12 @@ archive/issues_008973.json:
     "title": "surf does not build (gcc 4.4.4)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8973",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 Assignee: tbd
 
-CC:  benjaminfjones dimpase
+CC:  @benjaminfjones @dimpase
 
 The experimental spkg "surf-1.1" does not build with gcc-4.4.4. The following patch works for me.
 
@@ -102,7 +102,7 @@ archive/issue_comments_082774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8973#issuecomment-82774",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_082775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8973#issuecomment-82775",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_082776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8973#issuecomment-82776",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_082777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8973#issuecomment-82777",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_082778.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8973#issuecomment-82778",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_082779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8973#issuecomment-82779",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_082780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8973#issuecomment-82780",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_082781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8973#issuecomment-82781",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_082782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8973#issuecomment-82782",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_082783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8973#issuecomment-82783",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_082784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8973",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8973#issuecomment-82784",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008699.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jhpalmieri was\n\nAs the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/54de5b70bc7b18e3) thread for some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8699\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jhpalmieri @williamstein\n\nAs the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/54de5b70bc7b18e3) thread for some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8699\n\n",
     "created_at": "2010-04-17T05:37:54Z",
     "labels": [
         "doctest coverage",
@@ -19,7 +19,7 @@ archive/issues_008699.json:
 ```
 Assignee: tbd
 
-CC:  jhpalmieri was
+CC:  @jhpalmieri @williamstein
 
 As the subject says. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/54de5b70bc7b18e3) thread for some background information.
 
@@ -134,7 +134,7 @@ archive/issue_comments_079256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8699#issuecomment-79256",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_079257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8699#issuecomment-79257",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_079259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8699#issuecomment-79259",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_079260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8699#issuecomment-79260",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -306,16 +306,16 @@ Also, isn't there an issue if qd1 and qs1 are both != -1, but qd1 comes before q
 archive/issue_comments_079261.json:
 ```json
 {
-    "body": "Attachment [trac_8699.patch](tarball://root/attachments/some-uuid/ticket8699/trac_8699.patch) by mhansen created at 2012-04-11 05:02:10",
+    "body": "Attachment [trac_8699.patch](tarball://root/attachments/some-uuid/ticket8699/trac_8699.patch) by @mwhansen created at 2012-04-11 05:02:10",
     "created_at": "2012-04-11T05:02:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8699#issuecomment-79261",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8699.patch](tarball://root/attachments/some-uuid/ticket8699/trac_8699.patch) by mhansen created at 2012-04-11 05:02:10
+Attachment [trac_8699.patch](tarball://root/attachments/some-uuid/ticket8699/trac_8699.patch) by @mwhansen created at 2012-04-11 05:02:10
 
 
 
@@ -329,7 +329,7 @@ archive/issue_comments_079262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8699#issuecomment-79262",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_079263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8699#issuecomment-79263",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_079264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8699#issuecomment-79264",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_079265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8699#issuecomment-79265",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_079266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8699#issuecomment-79266",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_079267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8699#issuecomment-79267",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

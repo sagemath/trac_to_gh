@@ -14,7 +14,7 @@ archive/issues_004523.json:
     "title": "browser cache not cleared when restarting the worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4523",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -55,7 +55,7 @@ archive/issue_comments_033570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4523#issuecomment-33570",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -68,16 +68,16 @@ This is fixed by adding a Last-Modified header to the response.
 archive/issue_comments_033571.json:
 ```json
 {
-    "body": "Attachment [trac_4523.patch](tarball://root/attachments/some-uuid/ticket4523/trac_4523.patch) by ddrake created at 2009-01-19 23:49:22\n\nFor anyone who doesn't want to read the patch, the new code adds the time (in seconds since the epoch) to the URL for each image, so the browser fetches image.png?1232408438 (or whatever the time is), and since that URL will change if one evaluates the cell at least one second later, the browser should pick up the new image.\n\nI tested this with Firefox (Ubuntu, XP), IE7, IE8 beta, and Opera (Ubuntu and XP) and can no longer reproduce the bug. Positive review.\n\n(BTW, at 23:31:30 UTC on February 13, 2009, the Unix time will be 1234567890.)",
+    "body": "Attachment [trac_4523.patch](tarball://root/attachments/some-uuid/ticket4523/trac_4523.patch) by @dandrake created at 2009-01-19 23:49:22\n\nFor anyone who doesn't want to read the patch, the new code adds the time (in seconds since the epoch) to the URL for each image, so the browser fetches image.png?1232408438 (or whatever the time is), and since that URL will change if one evaluates the cell at least one second later, the browser should pick up the new image.\n\nI tested this with Firefox (Ubuntu, XP), IE7, IE8 beta, and Opera (Ubuntu and XP) and can no longer reproduce the bug. Positive review.\n\n(BTW, at 23:31:30 UTC on February 13, 2009, the Unix time will be 1234567890.)",
     "created_at": "2009-01-19T23:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4523#issuecomment-33571",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_4523.patch](tarball://root/attachments/some-uuid/ticket4523/trac_4523.patch) by ddrake created at 2009-01-19 23:49:22
+Attachment [trac_4523.patch](tarball://root/attachments/some-uuid/ticket4523/trac_4523.patch) by @dandrake created at 2009-01-19 23:49:22
 
 For anyone who doesn't want to read the patch, the new code adds the time (in seconds since the epoch) to the URL for each image, so the browser fetches image.png?1232408438 (or whatever the time is), and since that URL will change if one evaluates the cell at least one second later, the browser should pick up the new image.
 

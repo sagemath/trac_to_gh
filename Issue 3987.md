@@ -3,7 +3,7 @@
 archive/issues_003987.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3987\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3987\n\n",
     "created_at": "2008-08-29T06:01:57Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003987.json:
     "title": "[with patch; needs review] interfaces -- add algorithm='magma' for polynomial factor and galois_group commands",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3987",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_028674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3987#issuecomment-28674",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

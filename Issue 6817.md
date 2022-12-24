@@ -14,7 +14,7 @@ archive/issues_006817.json:
     "title": "[with SPKG, needs review] GLPK for Sage, new version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6817",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: tbd
@@ -48,7 +48,7 @@ archive/issue_comments_056217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6817#issuecomment-56217",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_056218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6817#issuecomment-56218",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_056219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6817",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6817#issuecomment-56219",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

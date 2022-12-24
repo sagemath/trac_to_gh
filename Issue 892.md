@@ -14,7 +14,7 @@ archive/issues_000892.json:
     "title": "sage -t doesn't test .pxi files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/892",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: failure
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/892
 archive/issue_comments_005496.json:
 ```json
 {
-    "body": "Attachment [892.patch](tarball://root/attachments/some-uuid/ticket892/892.patch) by mhansen created at 2007-10-13 20:52:27",
+    "body": "Attachment [892.patch](tarball://root/attachments/some-uuid/ticket892/892.patch) by @mwhansen created at 2007-10-13 20:52:27",
     "created_at": "2007-10-13T20:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/892#issuecomment-5496",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [892.patch](tarball://root/attachments/some-uuid/ticket892/892.patch) by mhansen created at 2007-10-13 20:52:27
+Attachment [892.patch](tarball://root/attachments/some-uuid/ticket892/892.patch) by @mwhansen created at 2007-10-13 20:52:27
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_005497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/892",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/892#issuecomment-5497",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

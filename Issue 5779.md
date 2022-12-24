@@ -51,7 +51,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/5779
 archive/issue_comments_045243.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to robertwb.",
+    "body": "Changing assignee from mabshoff to @robertwb.",
     "created_at": "2009-04-13T20:05:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5779",
     "type": "issue_comment",
@@ -60,7 +60,7 @@ archive/issue_comments_045243.json:
 }
 ```
 
-Changing assignee from mabshoff to robertwb.
+Changing assignee from mabshoff to @robertwb.
 
 
 
@@ -132,7 +132,7 @@ archive/issue_comments_045246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5779#issuecomment-45246",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -170,16 +170,16 @@ Michael
 archive/issue_comments_045248.json:
 ```json
 {
-    "body": "Attachment [5779-fast-float-pow.patch](tarball://root/attachments/some-uuid/ticket5779/5779-fast-float-pow.patch) by robertwb created at 2009-04-16 05:21:10\n\nOK, I did the same thing as for fast_callable.",
+    "body": "Attachment [5779-fast-float-pow.patch](tarball://root/attachments/some-uuid/ticket5779/5779-fast-float-pow.patch) by @robertwb created at 2009-04-16 05:21:10\n\nOK, I did the same thing as for fast_callable.",
     "created_at": "2009-04-16T05:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5779#issuecomment-45248",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5779-fast-float-pow.patch](tarball://root/attachments/some-uuid/ticket5779/5779-fast-float-pow.patch) by robertwb created at 2009-04-16 05:21:10
+Attachment [5779-fast-float-pow.patch](tarball://root/attachments/some-uuid/ticket5779/5779-fast-float-pow.patch) by @robertwb created at 2009-04-16 05:21:10
 
 OK, I did the same thing as for fast_callable.
 

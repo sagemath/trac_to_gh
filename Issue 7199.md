@@ -3,7 +3,7 @@
 archive/issues_007199.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe following was reported to me by David Monniaux.\n\n```\nsparseflag=True\n\ndef essai1():\n    m=identity_matrix(QQ,dimen,sparse=sparseflag)\n    compound=m\n    for i in xrange(count):\n        compound = compound.stack(m)\n\ndef essai2():\n    m_rows=identity_matrix(QQ,dimen,sparse=sparseflag).rows()\n    compound_l=[]\n    for i in xrange(count):\n        compound_l += m_rows\n    m=Matrix(QQ,compound_l,sparse=sparseflag)\n\ndef essai3():\n    m=identity_matrix(QQ,dimen,sparse=sparseflag)\n    compound=Matrix(QQ,m.nrows()*count,m.ncols(),sparse=sparseflag)\n    for i in xrange(count):\n        compound[m.nrows()*i:m.nrows()*(i+1),:] = m\n```\n\nI get with Sage 4.1.1 on a 2.83Ghz Core 2:\n\n```\nsage: count=200\nsage: dimen=30\nsage: timeit('essai1()',number=1)\n1 loops, best of 3: 33.1 s per loop\nsage: timeit('essai2()',number=1)\n1 loops, best of 3: 25.4 s per loop\nsage: timeit('essai3()')\n5 loops, best of 3: 820 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7199\n\n",
+    "body": "Assignee: @williamstein\n\nThe following was reported to me by David Monniaux.\n\n```\nsparseflag=True\n\ndef essai1():\n    m=identity_matrix(QQ,dimen,sparse=sparseflag)\n    compound=m\n    for i in xrange(count):\n        compound = compound.stack(m)\n\ndef essai2():\n    m_rows=identity_matrix(QQ,dimen,sparse=sparseflag).rows()\n    compound_l=[]\n    for i in xrange(count):\n        compound_l += m_rows\n    m=Matrix(QQ,compound_l,sparse=sparseflag)\n\ndef essai3():\n    m=identity_matrix(QQ,dimen,sparse=sparseflag)\n    compound=Matrix(QQ,m.nrows()*count,m.ncols(),sparse=sparseflag)\n    for i in xrange(count):\n        compound[m.nrows()*i:m.nrows()*(i+1),:] = m\n```\n\nI get with Sage 4.1.1 on a 2.83Ghz Core 2:\n\n```\nsage: count=200\nsage: dimen=30\nsage: timeit('essai1()',number=1)\n1 loops, best of 3: 33.1 s per loop\nsage: timeit('essai2()',number=1)\n1 loops, best of 3: 25.4 s per loop\nsage: timeit('essai3()')\n5 loops, best of 3: 820 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7199\n\n",
     "created_at": "2009-10-13T13:32:12Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_007199.json:
     "title": "inefficiency of creation of sparse matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7199",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The following was reported to me by David Monniaux.
 
@@ -74,7 +74,7 @@ archive/issue_comments_059733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59733",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_059734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59734",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_059735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59735",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_059739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59739",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_059740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59740",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_059741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59741",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

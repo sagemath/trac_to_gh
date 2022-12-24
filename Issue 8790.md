@@ -3,7 +3,7 @@
 archive/issues_008790.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  rws\n\nAs the subject says. Currently, the coverage of `sage/logic/logic.py` in Sage 4.4 is:\n\n```\n[mvngu@sage sage-4.4]$ ./sage -coverage devel/sage-main/sage/logic/logic.py \n----------------------------------------------------------------------\ndevel/sage-main/sage/logic/logic.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/logic/logic.py: 16% (3 of 18)\n\nMissing documentation:\n\t * combine(self, statement1, statement2):\n\t * simplify(self, table):\n\t * prove(self, statement):\n\n\nMissing doctests:\n\t * get_bit(x, c):\n\t * eval(toks):\n\t * eval_ltor_toks(lrtoks):\n\t * reduce_bins(lrtoks):\n\t * reduce_monos(lrtoks):\n\t * eval_mon_op(args):\n\t * eval_bin_op(args):\n\t * eval_and_op(lval, rval):\n\t * eval_or_op(lval, rval):\n\t * eval_ifthen_op(lval, rval):\n\t * eval_iff_op(lval, rval):\n\t * tokenize(s, toks):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8790\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rwst\n\nAs the subject says. Currently, the coverage of `sage/logic/logic.py` in Sage 4.4 is:\n\n```\n[mvngu@sage sage-4.4]$ ./sage -coverage devel/sage-main/sage/logic/logic.py \n----------------------------------------------------------------------\ndevel/sage-main/sage/logic/logic.py\nERROR: Please add a `TestSuite(s).run()` doctest.\nSCORE devel/sage-main/sage/logic/logic.py: 16% (3 of 18)\n\nMissing documentation:\n\t * combine(self, statement1, statement2):\n\t * simplify(self, table):\n\t * prove(self, statement):\n\n\nMissing doctests:\n\t * get_bit(x, c):\n\t * eval(toks):\n\t * eval_ltor_toks(lrtoks):\n\t * reduce_bins(lrtoks):\n\t * reduce_monos(lrtoks):\n\t * eval_mon_op(args):\n\t * eval_bin_op(args):\n\t * eval_and_op(lval, rval):\n\t * eval_or_op(lval, rval):\n\t * eval_ifthen_op(lval, rval):\n\t * eval_iff_op(lval, rval):\n\t * tokenize(s, toks):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8790\n\n",
     "created_at": "2010-04-28T04:35:34Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008790.json:
 ```
 Assignee: mvngu
 
-CC:  rws
+CC:  @rwst
 
 As the subject says. Currently, the coverage of `sage/logic/logic.py` in Sage 4.4 is:
 
@@ -68,7 +68,7 @@ archive/issue_comments_080483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8790#issuecomment-80483",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_080484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8790#issuecomment-80484",
-    "user": "riccardomurri"
+    "user": "@riccardomurri"
 }
 ```
 
@@ -99,16 +99,16 @@ Add docstring to functions `combine`, `simplify` and `prove`.
 archive/issue_comments_080485.json:
 ```json
 {
-    "body": "Attachment [sage-issue-8790-not-implemented.diff](tarball://root/attachments/some-uuid/ticket8790/sage-issue-8790-not-implemented.diff) by riccardomurri created at 2013-08-25 11:45:19\n\nFunctions `simplify`, `combine` and `prove` are actually not implemented: the code is a stub. Patch ` sage-issue-8790-not-implemented.diff` provides a docstring stating that.\n\nI'm not sure how doctests should be provided here: one could probably change the code to raise a `NotImplemented` exception and look for that in the doctest.",
+    "body": "Attachment [sage-issue-8790-not-implemented.diff](tarball://root/attachments/some-uuid/ticket8790/sage-issue-8790-not-implemented.diff) by @riccardomurri created at 2013-08-25 11:45:19\n\nFunctions `simplify`, `combine` and `prove` are actually not implemented: the code is a stub. Patch ` sage-issue-8790-not-implemented.diff` provides a docstring stating that.\n\nI'm not sure how doctests should be provided here: one could probably change the code to raise a `NotImplemented` exception and look for that in the doctest.",
     "created_at": "2013-08-25T11:45:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8790#issuecomment-80485",
-    "user": "riccardomurri"
+    "user": "@riccardomurri"
 }
 ```
 
-Attachment [sage-issue-8790-not-implemented.diff](tarball://root/attachments/some-uuid/ticket8790/sage-issue-8790-not-implemented.diff) by riccardomurri created at 2013-08-25 11:45:19
+Attachment [sage-issue-8790-not-implemented.diff](tarball://root/attachments/some-uuid/ticket8790/sage-issue-8790-not-implemented.diff) by @riccardomurri created at 2013-08-25 11:45:19
 
 Functions `simplify`, `combine` and `prove` are actually not implemented: the code is a stub. Patch ` sage-issue-8790-not-implemented.diff` provides a docstring stating that.
 
@@ -126,7 +126,7 @@ archive/issue_comments_080486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8790#issuecomment-80486",
-    "user": "riccardomurri"
+    "user": "@riccardomurri"
 }
 ```
 
@@ -139,16 +139,16 @@ Rename internal functions to start with an underscore
 archive/issue_comments_080487.json:
 ```json
 {
-    "body": "Attachment [sage-issue-8790-module-private-funcs.diff](tarball://root/attachments/some-uuid/ticket8790/sage-issue-8790-module-private-funcs.diff) by riccardomurri created at 2013-08-25 11:51:49\n\nThe `get_bits`, `eval_*`, `reduce_*` and `tokenize` functions are\nexplictly described as \"for internal use only\".  It is inconvenient to\nprovide a doctest for them, as arguments are the internal\ndata structures used in the `SymbolicLogic` class.  \n\nPatch ` sage-issue-8790-module-private-funcs.diff\u200b`\nrenames the functions to begin with an underscore to make their\nnon-public nature more evident, in the hope to silence the coverage\nwarning.",
+    "body": "Attachment [sage-issue-8790-module-private-funcs.diff](tarball://root/attachments/some-uuid/ticket8790/sage-issue-8790-module-private-funcs.diff) by @riccardomurri created at 2013-08-25 11:51:49\n\nThe `get_bits`, `eval_*`, `reduce_*` and `tokenize` functions are\nexplictly described as \"for internal use only\".  It is inconvenient to\nprovide a doctest for them, as arguments are the internal\ndata structures used in the `SymbolicLogic` class.  \n\nPatch ` sage-issue-8790-module-private-funcs.diff\u200b`\nrenames the functions to begin with an underscore to make their\nnon-public nature more evident, in the hope to silence the coverage\nwarning.",
     "created_at": "2013-08-25T11:51:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8790#issuecomment-80487",
-    "user": "riccardomurri"
+    "user": "@riccardomurri"
 }
 ```
 
-Attachment [sage-issue-8790-module-private-funcs.diff](tarball://root/attachments/some-uuid/ticket8790/sage-issue-8790-module-private-funcs.diff) by riccardomurri created at 2013-08-25 11:51:49
+Attachment [sage-issue-8790-module-private-funcs.diff](tarball://root/attachments/some-uuid/ticket8790/sage-issue-8790-module-private-funcs.diff) by @riccardomurri created at 2013-08-25 11:51:49
 
 The `get_bits`, `eval_*`, `reduce_*` and `tokenize` functions are
 explictly described as "for internal use only".  It is inconvenient to
@@ -190,7 +190,7 @@ archive/issue_comments_080489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8790#issuecomment-80489",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_080490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8790#issuecomment-80490",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_080491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8790#issuecomment-80491",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_080492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8790",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8790#issuecomment-80492",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

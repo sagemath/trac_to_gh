@@ -3,7 +3,7 @@
 archive/issues_001219.json:
 ```json
 {
-    "body": "Assignee: was\n\nSomething funny is going on:\n\n\n```\nsage: MS = MatrixSpace(CC, 2, 2)\nsage: A = MS([[1,5],[3,-1]])\nsage: A.eigenspaces()\n\n[\n(4.00000000000000, [\n(1.00000000000000, 1.00000000000000)\n]),\n(-4.00000000000000, [\n\n])\n]\nsage: A.eigenspaces()[0]\n\n(4.00000000000000, [\n(1.00000000000000, 1.00000000000000)\n])\nsage: A.eigenspaces()[1]\n\n(-4.00000000000000, [\n\n])\nsage: MS = MatrixSpace(QQ, 2, 2)\nsage: A = MS([[1,5],[3,-1]])\nsage: A.eigenspaces()\n\n[\n(4, [\n(1, 1)\n]),\n(-4, [\n(1, -5/3)\n])\n]\n```\n\nI find it strange that eigenspaces works for QQ\nbut not for the larger field CC.\n\nWillam: The issue above is undoubtedly that\nthere is no specialized implementation of matrices over CC.\nIt's just completely generic code.  So some generic echelon\nis going wrong.  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1219\n\n",
+    "body": "Assignee: @williamstein\n\nSomething funny is going on:\n\n\n```\nsage: MS = MatrixSpace(CC, 2, 2)\nsage: A = MS([[1,5],[3,-1]])\nsage: A.eigenspaces()\n\n[\n(4.00000000000000, [\n(1.00000000000000, 1.00000000000000)\n]),\n(-4.00000000000000, [\n\n])\n]\nsage: A.eigenspaces()[0]\n\n(4.00000000000000, [\n(1.00000000000000, 1.00000000000000)\n])\nsage: A.eigenspaces()[1]\n\n(-4.00000000000000, [\n\n])\nsage: MS = MatrixSpace(QQ, 2, 2)\nsage: A = MS([[1,5],[3,-1]])\nsage: A.eigenspaces()\n\n[\n(4, [\n(1, 1)\n]),\n(-4, [\n(1, -5/3)\n])\n]\n```\n\nI find it strange that eigenspaces works for QQ\nbut not for the larger field CC.\n\nWillam: The issue above is undoubtedly that\nthere is no specialized implementation of matrices over CC.\nIt's just completely generic code.  So some generic echelon\nis going wrong.  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1219\n\n",
     "created_at": "2007-11-20T19:56:40Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001219.json:
     "title": "bug in eigenspaces over CC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1219",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Something funny is going on:
 
@@ -84,7 +84,7 @@ archive/issue_comments_007569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1219#issuecomment-7569",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_007570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1219",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1219#issuecomment-7570",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

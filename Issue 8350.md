@@ -3,7 +3,7 @@
 archive/issues_008350.json:
 ```json
 {
-    "body": "Assignee: rhinton\n\nCC:  rlm jason\n\nKeywords: BipartiteGraph\n\nBipartiteGraph needs to override add_vertex() and add_vertices() to properly partition the vertices.\n\n\n```\nsage: bg = BipartiteGraph()\nsage: bg.add_vertex('a')  # this vertex should go left or right\nsage: (bg.left, bg.right)  # one of these should contain vertex 'a'\n([], [])\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8350\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout\n\nKeywords: BipartiteGraph\n\nBipartiteGraph needs to override add_vertex() and add_vertices() to properly partition the vertices.\n\n\n```\nsage: bg = BipartiteGraph()\nsage: bg.add_vertex('a')  # this vertex should go left or right\nsage: (bg.left, bg.right)  # one of these should contain vertex 'a'\n([], [])\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8350\n\n",
     "created_at": "2010-02-24T18:04:42Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_008350.json:
     "title": "BipartiteGraph override add_vertex() and add_vertices()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8350",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: rhinton
+Assignee: @rhinton
 
-CC:  rlm jason
+CC:  @rlmill @jasongrout
 
 Keywords: BipartiteGraph
 
@@ -52,7 +52,7 @@ archive/issue_comments_074568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8350#issuecomment-74568",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_074569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8350#issuecomment-74569",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_074570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8350#issuecomment-74570",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_074571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8350#issuecomment-74571",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_074572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8350#issuecomment-74572",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_074573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8350#issuecomment-74573",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_074574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8350",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8350#issuecomment-74574",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 

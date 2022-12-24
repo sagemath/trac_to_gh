@@ -3,7 +3,7 @@
 archive/issues_009598.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  ncohen\n\nThe convex optimization Python module cvxopt and the linear programming library GLPK are both standard packages in Sage 4.5.  The module cvxopt includes a python interface to GLPK, but currently cvxopt is unaware of the presence of GLPK and does not compile or include that submodule: \n\n\n```\nsage: from cvxopt import glpk\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9598\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nathanncohen\n\nThe convex optimization Python module cvxopt and the linear programming library GLPK are both standard packages in Sage 4.5.  The module cvxopt includes a python interface to GLPK, but currently cvxopt is unaware of the presence of GLPK and does not compile or include that submodule: \n\n\n```\nsage: from cvxopt import glpk\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9598\n\n",
     "created_at": "2010-07-26T00:25:33Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009598.json:
     "title": "Make cvxopt be able to use GLPK",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9598",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 Assignee: tbd
 
-CC:  ncohen
+CC:  @nathanncohen
 
 The convex optimization Python module cvxopt and the linear programming library GLPK are both standard packages in Sage 4.5.  The module cvxopt includes a python interface to GLPK, but currently cvxopt is unaware of the presence of GLPK and does not compile or include that submodule: 
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9598
 archive/issue_comments_092858.json:
 ```json
 {
-    "body": "Changing assignee from tbd to dunfield.",
+    "body": "Changing assignee from tbd to @NathanDunfield.",
     "created_at": "2010-07-26T00:26:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92858",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
-Changing assignee from tbd to dunfield.
+Changing assignee from tbd to @NathanDunfield.
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_092859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92859",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_092860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92860",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing status from new to needs_review.
 archive/issue_comments_092861.json:
 ```json
 {
-    "body": "Attachment [trac_9598_build_cvxopt_with_glpk.patch](tarball://root/attachments/some-uuid/ticket9598/trac_9598_build_cvxopt_with_glpk.patch) by dunfield created at 2010-07-26 03:03:37\n\npatch",
+    "body": "Attachment [trac_9598_build_cvxopt_with_glpk.patch](tarball://root/attachments/some-uuid/ticket9598/trac_9598_build_cvxopt_with_glpk.patch) by @NathanDunfield created at 2010-07-26 03:03:37\n\npatch",
     "created_at": "2010-07-26T03:03:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92861",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
-Attachment [trac_9598_build_cvxopt_with_glpk.patch](tarball://root/attachments/some-uuid/ticket9598/trac_9598_build_cvxopt_with_glpk.patch) by dunfield created at 2010-07-26 03:03:37
+Attachment [trac_9598_build_cvxopt_with_glpk.patch](tarball://root/attachments/some-uuid/ticket9598/trac_9598_build_cvxopt_with_glpk.patch) by @NathanDunfield created at 2010-07-26 03:03:37
 
 patch
 
@@ -206,7 +206,7 @@ archive/issue_comments_092865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92865",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_092866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92866",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_092867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92867",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_092868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92868",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_092869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92869",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_092872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92872",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_092874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92874",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -503,16 +503,16 @@ As for a doctest, I think what schilly used in comment 42 of #6456 would work fi
 archive/issue_comments_092875.json:
 ```json
 {
-    "body": "Attachment [trac_9598_cvxopt_doc_update.patch](tarball://root/attachments/some-uuid/ticket9598/trac_9598_cvxopt_doc_update.patch) by dunfield created at 2010-07-26 19:44:00\n\ndevel/sage/doc/en/numerical_sage/cvxopt.rst",
+    "body": "Attachment [trac_9598_cvxopt_doc_update.patch](tarball://root/attachments/some-uuid/ticket9598/trac_9598_cvxopt_doc_update.patch) by @NathanDunfield created at 2010-07-26 19:44:00\n\ndevel/sage/doc/en/numerical_sage/cvxopt.rst",
     "created_at": "2010-07-26T19:44:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92875",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
-Attachment [trac_9598_cvxopt_doc_update.patch](tarball://root/attachments/some-uuid/ticket9598/trac_9598_cvxopt_doc_update.patch) by dunfield created at 2010-07-26 19:44:00
+Attachment [trac_9598_cvxopt_doc_update.patch](tarball://root/attachments/some-uuid/ticket9598/trac_9598_cvxopt_doc_update.patch) by @NathanDunfield created at 2010-07-26 19:44:00
 
 devel/sage/doc/en/numerical_sage/cvxopt.rst
 
@@ -564,7 +564,7 @@ archive/issue_comments_092877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92877",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -587,7 +587,7 @@ archive/issue_comments_092878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92878",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 
@@ -605,7 +605,7 @@ archive/issue_comments_092879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92879",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 

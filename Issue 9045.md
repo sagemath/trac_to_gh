@@ -14,7 +14,7 @@ archive/issues_009045.json:
     "title": "is_isomorphic bug (two generalized quadrangles over GF(5))",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9045",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9045
 archive/issue_comments_083739.json:
 ```json
 {
-    "body": "Attachment [trac_9045.patch](tarball://root/attachments/some-uuid/ticket9045/trac_9045.patch) by rlm created at 2010-05-25 16:45:39",
+    "body": "Attachment [trac_9045.patch](tarball://root/attachments/some-uuid/ticket9045/trac_9045.patch) by @rlmill created at 2010-05-25 16:45:39",
     "created_at": "2010-05-25T16:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9045#issuecomment-83739",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9045.patch](tarball://root/attachments/some-uuid/ticket9045/trac_9045.patch) by rlm created at 2010-05-25 16:45:39
+Attachment [trac_9045.patch](tarball://root/attachments/some-uuid/ticket9045/trac_9045.patch) by @rlmill created at 2010-05-25 16:45:39
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_083740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9045#issuecomment-83740",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_083743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9045",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9045#issuecomment-83743",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

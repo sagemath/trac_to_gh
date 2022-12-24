@@ -3,7 +3,7 @@
 archive/issues_000754.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/754\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/754\n\n",
     "created_at": "2007-09-25T22:46:40Z",
     "labels": [
         "distribution",
@@ -14,10 +14,10 @@ archive/issues_000754.json:
     "title": "get SAGE to build on DSL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/754",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_004461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/754#issuecomment-4461",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_004462.json:
 ```json
 {
-    "body": "Attachment [clisp-error.log](tarball://root/attachments/some-uuid/ticket754/clisp-error.log) by mhansen created at 2007-09-25 23:42:21",
+    "body": "Attachment [clisp-error.log](tarball://root/attachments/some-uuid/ticket754/clisp-error.log) by @mwhansen created at 2007-09-25 23:42:21",
     "created_at": "2007-09-25T23:42:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/754#issuecomment-4462",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [clisp-error.log](tarball://root/attachments/some-uuid/ticket754/clisp-error.log) by mhansen created at 2007-09-25 23:42:21
+Attachment [clisp-error.log](tarball://root/attachments/some-uuid/ticket754/clisp-error.log) by @mwhansen created at 2007-09-25 23:42:21
 
 
 
@@ -68,16 +68,16 @@ Attachment [clisp-error.log](tarball://root/attachments/some-uuid/ticket754/clis
 archive/issue_comments_004463.json:
 ```json
 {
-    "body": "Attachment [singular-error.log](tarball://root/attachments/some-uuid/ticket754/singular-error.log) by mhansen created at 2007-09-25 23:56:55\n\nclisp build error fixed by installing GNU sed instead of the BusyBox version.",
+    "body": "Attachment [singular-error.log](tarball://root/attachments/some-uuid/ticket754/singular-error.log) by @mwhansen created at 2007-09-25 23:56:55\n\nclisp build error fixed by installing GNU sed instead of the BusyBox version.",
     "created_at": "2007-09-25T23:56:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/754#issuecomment-4463",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [singular-error.log](tarball://root/attachments/some-uuid/ticket754/singular-error.log) by mhansen created at 2007-09-25 23:56:55
+Attachment [singular-error.log](tarball://root/attachments/some-uuid/ticket754/singular-error.log) by @mwhansen created at 2007-09-25 23:56:55
 
 clisp build error fixed by installing GNU sed instead of the BusyBox version.
 
@@ -93,7 +93,7 @@ archive/issue_comments_004464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/754#issuecomment-4464",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_004465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/754",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/754#issuecomment-4465",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

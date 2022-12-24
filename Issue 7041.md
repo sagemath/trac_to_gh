@@ -3,7 +3,7 @@
 archive/issues_007041.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  dimpase ohanar\n\nKeywords: gap solaris cc\n\nThe spkg-install for gap-4.4.10.p12\n\necho \"*WARNING*: Unsetting CC since that tends to break GAP building\"\nunset CC\necho \"*WARNING*: Unsetting CXX since that tends to break GAP building\"\nunset CXX\n\nThis appears to be done by Michael Abshoff as SPKG.txt shows:\n\n### gap-4.4.10.p8 (Michael Abshoff, June 16th, 2008)\n* unset CC in spkg-install (work around for #2575)\n\n\nLooking at http://sagetrac.org/sage_trac/ticket/2575 I can't help feel there must be a better solution.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7041\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dimpase @ohanar\n\nKeywords: gap solaris cc\n\nThe spkg-install for gap-4.4.10.p12\n\necho \"*WARNING*: Unsetting CC since that tends to break GAP building\"\nunset CC\necho \"*WARNING*: Unsetting CXX since that tends to break GAP building\"\nunset CXX\n\nThis appears to be done by Michael Abshoff as SPKG.txt shows:\n\n### gap-4.4.10.p8 (Michael Abshoff, June 16th, 2008)\n* unset CC in spkg-install (work around for #2575)\n\n\nLooking at http://sagetrac.org/sage_trac/ticket/2575 I can't help feel there must be a better solution.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7041\n\n",
     "created_at": "2009-09-27T16:30:04Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_007041.json:
 ```
 Assignee: tbd
 
-CC:  dimpase ohanar
+CC:  @dimpase @ohanar
 
 Keywords: gap solaris cc
 
@@ -54,7 +54,7 @@ archive/issue_comments_058287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58287",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_058288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58288",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_058289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58289",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_058290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58290",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_058291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58291",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_058292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58292",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_058293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58293",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -210,16 +210,16 @@ Changing status from new to needs_review.
 archive/issue_comments_058294.json:
 ```json
 {
-    "body": "Attachment [gap-4.4.12.p6-p7.diff](tarball://root/attachments/some-uuid/ticket7041/gap-4.4.12.p6-p7.diff) by leif created at 2012-04-09 12:18:19\n\nDiff between the previous spkg in Sage and my new p7 spkg.  For reference / review only.",
+    "body": "Attachment [gap-4.4.12.p6-p7.diff](tarball://root/attachments/some-uuid/ticket7041/gap-4.4.12.p6-p7.diff) by @nexttime created at 2012-04-09 12:18:19\n\nDiff between the previous spkg in Sage and my new p7 spkg.  For reference / review only.",
     "created_at": "2012-04-09T12:18:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58294",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [gap-4.4.12.p6-p7.diff](tarball://root/attachments/some-uuid/ticket7041/gap-4.4.12.p6-p7.diff) by leif created at 2012-04-09 12:18:19
+Attachment [gap-4.4.12.p6-p7.diff](tarball://root/attachments/some-uuid/ticket7041/gap-4.4.12.p6-p7.diff) by @nexttime created at 2012-04-09 12:18:19
 
 Diff between the previous spkg in Sage and my new p7 spkg.  For reference / review only.
 
@@ -235,7 +235,7 @@ archive/issue_comments_058295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58295",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -248,16 +248,16 @@ As usual, I've attached a diff of the spkg for easier reviewing.
 archive/issue_comments_058296.json:
 ```json
 {
-    "body": "Changing assignee from tbd to leif.",
+    "body": "Changing assignee from tbd to @nexttime.",
     "created_at": "2012-04-09T12:31:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58296",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Changing assignee from tbd to leif.
+Changing assignee from tbd to @nexttime.
 
 
 
@@ -271,7 +271,7 @@ archive/issue_comments_058297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58297",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_058298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58298",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_058299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58299",
-    "user": "ohanar"
+    "user": "@ohanar"
 }
 ```
 
@@ -325,7 +325,7 @@ archive/issue_comments_058300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7041",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7041#issuecomment-58300",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

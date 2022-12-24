@@ -3,7 +3,7 @@
 archive/issues_009860.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  rlm mvngu\n\nThe table of contents of the Graph Theory module is a bit hard to parse at the moment [1]. The file graph.py is even entitled \"Graph Theory\" itself, which must have remained from before this file was split into three, and the depth of 2 does not really help.\n\nThis patch is a possible way to clean it and make it.... readable ! I don't expect this patch to be merged as it is, as you probably have a different view of how it should be.. `:-)`\n\nNathann\n\n[1] http://www.sagemath.org/doc/reference/graphs.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/9861\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rlmill mvngu\n\nThe table of contents of the Graph Theory module is a bit hard to parse at the moment [1]. The file graph.py is even entitled \"Graph Theory\" itself, which must have remained from before this file was split into three, and the depth of 2 does not really help.\n\nThis patch is a possible way to clean it and make it.... readable ! I don't expect this patch to be merged as it is, as you probably have a different view of how it should be.. `:-)`\n\nNathann\n\n[1] http://www.sagemath.org/doc/reference/graphs.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/9861\n\n",
     "created_at": "2010-09-06T17:34:24Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009860.json:
     "title": "Improving the Graph Theory table of contents",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9860",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: mvngu
 
-CC:  rlm mvngu
+CC:  @rlmill mvngu
 
 The table of contents of the Graph Theory module is a bit hard to parse at the moment [1]. The file graph.py is even entitled "Graph Theory" itself, which must have remained from before this file was split into three, and the depth of 2 does not really help.
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9861
 archive/issue_comments_097356.json:
 ```json
 {
-    "body": "Attachment [trac_9861.patch](tarball://root/attachments/some-uuid/ticket9861/trac_9861.patch) by ncohen created at 2010-09-06 17:35:26",
+    "body": "Attachment [trac_9861.patch](tarball://root/attachments/some-uuid/ticket9861/trac_9861.patch) by @nathanncohen created at 2010-09-06 17:35:26",
     "created_at": "2010-09-06T17:35:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9860#issuecomment-97356",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9861.patch](tarball://root/attachments/some-uuid/ticket9861/trac_9861.patch) by ncohen created at 2010-09-06 17:35:26
+Attachment [trac_9861.patch](tarball://root/attachments/some-uuid/ticket9861/trac_9861.patch) by @nathanncohen created at 2010-09-06 17:35:26
 
 
 
@@ -138,7 +138,7 @@ archive/issue_comments_097360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9860#issuecomment-97360",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_097361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9860#issuecomment-97361",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_097362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9860#issuecomment-97362",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

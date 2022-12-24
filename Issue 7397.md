@@ -3,7 +3,7 @@
 archive/issues_007397.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: Prime numbers, categories\n\nThe set of prime number is now in the category `EnumeratedSets`. \n\nCheers, \n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7397\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: Prime numbers, categories\n\nThe set of prime number is now in the category `EnumeratedSets`. \n\nCheers, \n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7397\n\n",
     "created_at": "2009-11-05T16:09:22Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_007397.json:
     "title": "Updated Primes to the category system.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7397",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -45,7 +45,7 @@ archive/issue_comments_062195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7397#issuecomment-62195",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -58,16 +58,16 @@ Changing status from new to needs_review.
 archive/issue_comments_062196.json:
 ```json
 {
-    "body": "Attachment [trac_7397_prime_enumset-fh.patch](tarball://root/attachments/some-uuid/ticket7397/trac_7397_prime_enumset-fh.patch) by hivert created at 2009-11-06 13:41:50",
+    "body": "Attachment [trac_7397_prime_enumset-fh.patch](tarball://root/attachments/some-uuid/ticket7397/trac_7397_prime_enumset-fh.patch) by @hivert created at 2009-11-06 13:41:50",
     "created_at": "2009-11-06T13:41:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7397#issuecomment-62196",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7397_prime_enumset-fh.patch](tarball://root/attachments/some-uuid/ticket7397/trac_7397_prime_enumset-fh.patch) by hivert created at 2009-11-06 13:41:50
+Attachment [trac_7397_prime_enumset-fh.patch](tarball://root/attachments/some-uuid/ticket7397/trac_7397_prime_enumset-fh.patch) by @hivert created at 2009-11-06 13:41:50
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_062197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7397#issuecomment-62197",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_062198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7397#issuecomment-62198",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_062199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7397",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7397#issuecomment-62199",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

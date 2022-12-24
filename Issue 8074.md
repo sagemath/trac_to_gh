@@ -3,7 +3,7 @@
 archive/issues_008074.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  robertwb was jkantor zimmerma leif\n\nWhat should these return?\n\n\n```\n\nsage: RR('inf').is_real()\nTrue\nsage: RR('nan').is_real()\nTrue\nsage: RR('inf').is_unit()\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8074\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @robertwb @williamstein jkantor @zimmermann6 @nexttime\n\nWhat should these return?\n\n\n```\n\nsage: RR('inf').is_real()\nTrue\nsage: RR('nan').is_real()\nTrue\nsage: RR('inf').is_unit()\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8074\n\n",
     "created_at": "2010-01-26T08:37:57Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_008074.json:
     "title": "corner cases in RealField and real numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8074",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jkantor
 
-CC:  robertwb was jkantor zimmerma leif
+CC:  @robertwb @williamstein jkantor @zimmermann6 @nexttime
 
 What should these return?
 
@@ -51,7 +51,7 @@ archive/issue_comments_070743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8074#issuecomment-70743",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_070744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8074#issuecomment-70744",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_070745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8074#issuecomment-70745",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_070746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8074#issuecomment-70746",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_070747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8074#issuecomment-70747",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_070748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8074#issuecomment-70748",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_070749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8074#issuecomment-70749",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_070750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8074#issuecomment-70750",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

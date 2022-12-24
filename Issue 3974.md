@@ -3,7 +3,7 @@
 archive/issues_003974.json:
 ```json
 {
-    "body": "Assignee: was\n\nI propose a trivial change in the name of integral_weierstrass_model. According to ell_generic.py the terminology is chosen as\n\n> Elliptic curves are always represented by `Weierstass Models' with\n> five coefficients $[a_1,a_2,a_3,a_4,a_6]$ in standard notation.  In\n> Magma, `Weierstrass Model' means a model with a1=a2=a3=0, which is\n> called `Short Weierstrass Model' in Sage; \n\nso consequently the integral_weierstrass_model which gives back a Short Weierstrass Model should be called integral_short_weierstrass_model.\n\nThat is maybe pedantic and a matter of taste, but I believe it would be better.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3974\n\n",
+    "body": "Assignee: @williamstein\n\nI propose a trivial change in the name of integral_weierstrass_model. According to ell_generic.py the terminology is chosen as\n\n> Elliptic curves are always represented by `Weierstass Models' with\n> five coefficients $[a_1,a_2,a_3,a_4,a_6]$ in standard notation.  In\n> Magma, `Weierstrass Model' means a model with a1=a2=a3=0, which is\n> called `Short Weierstrass Model' in Sage; \n\nso consequently the integral_weierstrass_model which gives back a Short Weierstrass Model should be called integral_short_weierstrass_model.\n\nThat is maybe pedantic and a matter of taste, but I believe it would be better.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3974\n\n",
     "created_at": "2008-08-28T12:10:36Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003974.json:
     "title": "[with patch, needs review] renaming of integral_weierstrass_model to integral_short_weierstrass_model",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3974",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I propose a trivial change in the name of integral_weierstrass_model. According to ell_generic.py the terminology is chosen as
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3974
 archive/issue_comments_028552.json:
 ```json
 {
-    "body": "Attachment [sage_trac3974.patch](tarball://root/attachments/some-uuid/ticket3974/sage_trac3974.patch) by wuthrich created at 2008-08-28 12:10:49",
+    "body": "Attachment [sage_trac3974.patch](tarball://root/attachments/some-uuid/ticket3974/sage_trac3974.patch) by @categorie created at 2008-08-28 12:10:49",
     "created_at": "2008-08-28T12:10:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3974#issuecomment-28552",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [sage_trac3974.patch](tarball://root/attachments/some-uuid/ticket3974/sage_trac3974.patch) by wuthrich created at 2008-08-28 12:10:49
+Attachment [sage_trac3974.patch](tarball://root/attachments/some-uuid/ticket3974/sage_trac3974.patch) by @categorie created at 2008-08-28 12:10:49
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_028554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3974#issuecomment-28554",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_028555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3974#issuecomment-28555",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_028556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3974#issuecomment-28556",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -184,16 +184,16 @@ new patch, erplaces the first patch !
 archive/issue_comments_028557.json:
 ```json
 {
-    "body": "Attachment [sage_trac3974_new.patch](tarball://root/attachments/some-uuid/ticket3974/sage_trac3974_new.patch) by wuthrich created at 2008-08-29 13:28:56\n\nI changed the patch according to Michael's remark. It replaces the previous patch. This patch only works with the patch from ticket 3654.\n\n Chris.",
+    "body": "Attachment [sage_trac3974_new.patch](tarball://root/attachments/some-uuid/ticket3974/sage_trac3974_new.patch) by @categorie created at 2008-08-29 13:28:56\n\nI changed the patch according to Michael's remark. It replaces the previous patch. This patch only works with the patch from ticket 3654.\n\n Chris.",
     "created_at": "2008-08-29T13:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3974#issuecomment-28557",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [sage_trac3974_new.patch](tarball://root/attachments/some-uuid/ticket3974/sage_trac3974_new.patch) by wuthrich created at 2008-08-29 13:28:56
+Attachment [sage_trac3974_new.patch](tarball://root/attachments/some-uuid/ticket3974/sage_trac3974_new.patch) by @categorie created at 2008-08-29 13:28:56
 
 I changed the patch according to Michael's remark. It replaces the previous patch. This patch only works with the patch from ticket 3654.
 
@@ -211,7 +211,7 @@ archive/issue_comments_028558.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3974#issuecomment-28558",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

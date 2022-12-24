@@ -3,7 +3,7 @@
 archive/issues_001511.json:
 ```json
 {
-    "body": "Assignee: was\n\nhttp://jmol.sourceforge.net/ may be a promising answer to 3d graphics in Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1511\n\n",
+    "body": "Assignee: @williamstein\n\nhttp://jmol.sourceforge.net/ may be a promising answer to 3d graphics in Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1511\n\n",
     "created_at": "2007-12-14T19:58:09Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001511.json:
     "title": "Export 3d objects in jmol format",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1511",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 http://jmol.sourceforge.net/ may be a promising answer to 3d graphics in Sage. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_009685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1511#issuecomment-9685",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_009686.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-12-14T19:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1511#issuecomment-9686",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_009687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1511#issuecomment-9687",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_009688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1511#issuecomment-9688",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -128,16 +128,16 @@ Then, after downloading jmol, do
 archive/issue_comments_009689.json:
 ```json
 {
-    "body": "Attachment [jmol-export.hg](tarball://root/attachments/some-uuid/ticket1511/jmol-export.hg) by robertwb created at 2007-12-15 01:15:55",
+    "body": "Attachment [jmol-export.hg](tarball://root/attachments/some-uuid/ticket1511/jmol-export.hg) by @robertwb created at 2007-12-15 01:15:55",
     "created_at": "2007-12-15T01:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1511#issuecomment-9689",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [jmol-export.hg](tarball://root/attachments/some-uuid/ticket1511/jmol-export.hg) by robertwb created at 2007-12-15 01:15:55
+Attachment [jmol-export.hg](tarball://root/attachments/some-uuid/ticket1511/jmol-export.hg) by @robertwb created at 2007-12-15 01:15:55
 
 
 
@@ -151,7 +151,7 @@ archive/issue_comments_009690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1511#issuecomment-9690",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_009691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1511#issuecomment-9691",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_009692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1511#issuecomment-9692",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

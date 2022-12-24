@@ -3,7 +3,7 @@
 archive/issues_005037.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  sage-combinat\n\nAdd to Word Morphism the following functions :\n* `__add__()` that merges two Word Morphisms on disjoint domain.\n* `restriction(self, alphabet)` that returns a new Word Morphism constructed from self by restricting the domain to Words over the given alphabet.\n* `disjoint_alphabet(self)`, for involutions only, that returns a partition A,B,C of the alphabet s.t. self(A) = B, self(B)=A and self(C) = C.\n\n**Note : I am still not convince of those three names.**\n\nFix in Word Morphism the following function :\n* `is_involution(self)` : should first check that self is an endomorphism\n\nFix in word.py the following functions :\n* `colored_vector` : Fails on empty word.\n\nAdd in word.py the following possibilities:\n* `colored_vector` : Put a label on the graphical word displayed.\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/5037\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\nAdd to Word Morphism the following functions :\n* `__add__()` that merges two Word Morphisms on disjoint domain.\n* `restriction(self, alphabet)` that returns a new Word Morphism constructed from self by restricting the domain to Words over the given alphabet.\n* `disjoint_alphabet(self)`, for involutions only, that returns a partition A,B,C of the alphabet s.t. self(A) = B, self(B)=A and self(C) = C.\n\n**Note : I am still not convince of those three names.**\n\nFix in Word Morphism the following function :\n* `is_involution(self)` : should first check that self is an endomorphism\n\nFix in word.py the following functions :\n* `colored_vector` : Fails on empty word.\n\nAdd in word.py the following possibilities:\n* `colored_vector` : Put a label on the graphical word displayed.\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/5037\n\n",
     "created_at": "2009-01-20T19:27:34Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_005037.json:
     "title": "Bug fixes and new functionalities for Words library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5037",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  sage-combinat
 
@@ -54,7 +54,7 @@ archive/issue_comments_038345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5037",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5037#issuecomment-38345",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002075.json:
 ```json
 {
-    "body": "Assignee: was\n\nE.g., this is DEFINITELY WRONG -- it directly contradicts how things work over ZZ, and leads to major bugs in the free module code.   This must be changed ASAP.    There can be a method that returns the echelon form over the fraction field, but it must have a different name. \n\n```\nsage: R.<x> = QQ[]\nsage: a = matrix(R, 2, 3, [x,x^2,1,1+x, 1,x])\nsage: a.echelon_form()\n[                             1                              0    (-x^3 + 1)/(-x^3 - x^2 + x)]\n[                             0                              1 (x^2 - x - 1)/(-x^3 - x^2 + x)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2075\n\n",
+    "body": "Assignee: @williamstein\n\nE.g., this is DEFINITELY WRONG -- it directly contradicts how things work over ZZ, and leads to major bugs in the free module code.   This must be changed ASAP.    There can be a method that returns the echelon form over the fraction field, but it must have a different name. \n\n```\nsage: R.<x> = QQ[]\nsage: a = matrix(R, 2, 3, [x,x^2,1,1+x, 1,x])\nsage: a.echelon_form()\n[                             1                              0    (-x^3 + 1)/(-x^3 - x^2 + x)]\n[                             0                              1 (x^2 - x - 1)/(-x^3 - x^2 + x)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2075\n\n",
     "created_at": "2008-02-06T09:58:01Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002075.json:
     "title": "very serious bug in modules over QQ[x] -- they shouldn't \"work\" (solution fix defn of echelon form over QQ[x] to raise NotImplementedError)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2075",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 E.g., this is DEFINITELY WRONG -- it directly contradicts how things work over ZZ, and leads to major bugs in the free module code.   This must be changed ASAP.    There can be a method that returns the echelon form over the fraction field, but it must have a different name. 
 
@@ -46,7 +46,7 @@ archive/issue_comments_013420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2075#issuecomment-13420",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_013421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2075#issuecomment-13421",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_013424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2075#issuecomment-13424",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_013425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2075#issuecomment-13425",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -192,16 +192,16 @@ YES, this is a blocker.  If you create a free module over QQ[x] with given gener
 archive/issue_comments_013426.json:
 ```json
 {
-    "body": "Attachment [sage-2075.patch](tarball://root/attachments/some-uuid/ticket2075/sage-2075.patch) by malb created at 2008-02-21 20:04:10\n\nSome minor issues:\n\n* in docstring of `_echelonize_ring` `NotImplemenetedError` should get `\\code{`}\n* does `self.dense_matrix()` return `self` if it is already dense? If not the extra copy should be avoided by checking if the matrix is dense or sparse first\n* What is the status of \"`#not very useful?`\" is that a note to self to fix this or for the user?\n* \"#This code is by Me\" that should be William Stein\n* Erocal Burcin -> Burcin Erocal\n\nExcept those minor things the code looks good. Note, I didn't attempt to apply the patch yet.",
+    "body": "Attachment [sage-2075.patch](tarball://root/attachments/some-uuid/ticket2075/sage-2075.patch) by @malb created at 2008-02-21 20:04:10\n\nSome minor issues:\n\n* in docstring of `_echelonize_ring` `NotImplemenetedError` should get `\\code{`}\n* does `self.dense_matrix()` return `self` if it is already dense? If not the extra copy should be avoided by checking if the matrix is dense or sparse first\n* What is the status of \"`#not very useful?`\" is that a note to self to fix this or for the user?\n* \"#This code is by Me\" that should be William Stein\n* Erocal Burcin -> Burcin Erocal\n\nExcept those minor things the code looks good. Note, I didn't attempt to apply the patch yet.",
     "created_at": "2008-02-21T20:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2075#issuecomment-13426",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sage-2075.patch](tarball://root/attachments/some-uuid/ticket2075/sage-2075.patch) by malb created at 2008-02-21 20:04:10
+Attachment [sage-2075.patch](tarball://root/attachments/some-uuid/ticket2075/sage-2075.patch) by @malb created at 2008-02-21 20:04:10
 
 Some minor issues:
 
@@ -225,7 +225,7 @@ archive/issue_comments_013427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2075#issuecomment-13427",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_013428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2075#issuecomment-13428",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -277,16 +277,16 @@ fixes most minor issues
 archive/issue_comments_013429.json:
 ```json
 {
-    "body": "Attachment [sage-2075.2.patch](tarball://root/attachments/some-uuid/ticket2075/sage-2075.2.patch) by malb created at 2008-02-21 20:50:32\n\n`sage-2075.2.patch` fixes:\n* in docstring of _echelonize_ring NotImplemenetedError should get \\code{} \n* \"#This code is by Me\" that should be William Stein \n* Erocal Burcin -> Burcin Erocal\n\nLeft over:\n* \"does self.dense_matrix() return self if it is already dense? If not the extra copy should be avoided by checking if the matrix is dense or sparse first  -> Yes, it returns self.\" So it needs no fix\n* \"What is the status of \"#not very useful?\" is that a note to self to fix this or for the user?  ->  It looks WRONG to me. Shouldn't the second row be removed?!\"\n  rowred only considers constants for reduction, not very useful for most applications indeed.\n\nI say apply. If we don't like rowred the way it is, we should (a) rename it and/or (b) fix it in another ticket.",
+    "body": "Attachment [sage-2075.2.patch](tarball://root/attachments/some-uuid/ticket2075/sage-2075.2.patch) by @malb created at 2008-02-21 20:50:32\n\n`sage-2075.2.patch` fixes:\n* in docstring of _echelonize_ring NotImplemenetedError should get \\code{} \n* \"#This code is by Me\" that should be William Stein \n* Erocal Burcin -> Burcin Erocal\n\nLeft over:\n* \"does self.dense_matrix() return self if it is already dense? If not the extra copy should be avoided by checking if the matrix is dense or sparse first  -> Yes, it returns self.\" So it needs no fix\n* \"What is the status of \"#not very useful?\" is that a note to self to fix this or for the user?  ->  It looks WRONG to me. Shouldn't the second row be removed?!\"\n  rowred only considers constants for reduction, not very useful for most applications indeed.\n\nI say apply. If we don't like rowred the way it is, we should (a) rename it and/or (b) fix it in another ticket.",
     "created_at": "2008-02-21T20:50:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2075#issuecomment-13429",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sage-2075.2.patch](tarball://root/attachments/some-uuid/ticket2075/sage-2075.2.patch) by malb created at 2008-02-21 20:50:32
+Attachment [sage-2075.2.patch](tarball://root/attachments/some-uuid/ticket2075/sage-2075.2.patch) by @malb created at 2008-02-21 20:50:32
 
 `sage-2075.2.patch` fixes:
 * in docstring of _echelonize_ring NotImplemenetedError should get \code{} 

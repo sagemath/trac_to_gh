@@ -3,7 +3,7 @@
 archive/issues_005965.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  was jdemeyer jhpalmieri mkoeppe dimpase mjo\n\nSage requires both pseudoterminals (for pexpect) and shared memory (for pyprocessing semaphores). On modern linux, those are implemented via special filesystem mounts:\n- `/dev/pts` for pseudoterminals (of type `devpts`)\n- `/dev/shm` for shared memory (of type `tmpfs`)\nA normal system has those mounts active. However, running sage in a chroot fails in weird ways if we neglect to mount those inside the chroot:\n- the first one makes pexpect interfaces to fail, e.g.:\n\n```\nsage: gap(2)\nA workspace appears to have been corrupted... automatically rebuilding (this is harmless).\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/tornaria/.sage/temp/arf/10828/_home_tornaria__sage_init_sage_0.py in <module>()\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1002             return cls(self, x, name=name)\n   1003         try:\n-> 1004             return self._coerce_from_special_method(x)\n   1005         except TypeError:\n   1006             raise\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in _coerce_from_special_method(self, x)\n   1026             s = '_gp_'\n   1027         try:\n-> 1028             return (x.__getattribute__(s))(self)\n   1029         except AttributeError:\n   1030             return self(x._interface_init_())\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject._gap_ (sage/structure/sage_object.c:3370)()\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3018)()\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1000             return x\n   1001         if isinstance(x, basestring):\n-> 1002             return cls(self, x, name=name)\n   1003         try:\n   1004             return self._coerce_from_special_method(x)\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1375             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1376                 self._session_number = -1\n-> 1377                 raise TypeError, x\n   1378         self._session_number = parent._session_number\n   1379 \n\nTypeError: Unable to start gap because the command 'gap -r -b -p -T -o 9999G /opt/sage-3.4.1-x86_64-Linux/data//extcode/gap/sage.g' failed.\n```\n\n- the second one makes pyprocessing to fail, which can be reproduced by:\n\n```\nsage: import processing, processing.synchronize                      \nsage: processing._processing.SemLock(processing.synchronize.BOUNDED_SEMAPHORE, 1)                           \n---------------------------------------------------------------------------\nOSError                                   Traceback (most recent call last)\n\n/home/tornaria/.sage/temp/arf/10892/_home_tornaria__sage_init_sage_0.py in <module>()\n\nOSError: [Errno 38] Function not implemented\n```\n\nBoth failures are detected by doctests. The first one all over the place, and the second one by doctests in `sage/parallel/multiprocessing.py` and `sage/parallel/decorate.py`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5965\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @williamstein @jdemeyer @jhpalmieri @mkoeppe @dimpase @orlitzky\n\nSage requires both pseudoterminals (for pexpect) and shared memory (for pyprocessing semaphores). On modern linux, those are implemented via special filesystem mounts:\n- `/dev/pts` for pseudoterminals (of type `devpts`)\n- `/dev/shm` for shared memory (of type `tmpfs`)\nA normal system has those mounts active. However, running sage in a chroot fails in weird ways if we neglect to mount those inside the chroot:\n- the first one makes pexpect interfaces to fail, e.g.:\n\n```\nsage: gap(2)\nA workspace appears to have been corrupted... automatically rebuilding (this is harmless).\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/tornaria/.sage/temp/arf/10828/_home_tornaria__sage_init_sage_0.py in <module>()\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1002             return cls(self, x, name=name)\n   1003         try:\n-> 1004             return self._coerce_from_special_method(x)\n   1005         except TypeError:\n   1006             raise\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in _coerce_from_special_method(self, x)\n   1026             s = '_gp_'\n   1027         try:\n-> 1028             return (x.__getattribute__(s))(self)\n   1029         except AttributeError:\n   1030             return self(x._interface_init_())\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject._gap_ (sage/structure/sage_object.c:3370)()\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3018)()\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1000             return x\n   1001         if isinstance(x, basestring):\n-> 1002             return cls(self, x, name=name)\n   1003         try:\n   1004             return self._coerce_from_special_method(x)\n\n/opt/sage-3.4.1-x86_64-Linux/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1375             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1376                 self._session_number = -1\n-> 1377                 raise TypeError, x\n   1378         self._session_number = parent._session_number\n   1379 \n\nTypeError: Unable to start gap because the command 'gap -r -b -p -T -o 9999G /opt/sage-3.4.1-x86_64-Linux/data//extcode/gap/sage.g' failed.\n```\n\n- the second one makes pyprocessing to fail, which can be reproduced by:\n\n```\nsage: import processing, processing.synchronize                      \nsage: processing._processing.SemLock(processing.synchronize.BOUNDED_SEMAPHORE, 1)                           \n---------------------------------------------------------------------------\nOSError                                   Traceback (most recent call last)\n\n/home/tornaria/.sage/temp/arf/10892/_home_tornaria__sage_init_sage_0.py in <module>()\n\nOSError: [Errno 38] Function not implemented\n```\n\nBoth failures are detected by doctests. The first one all over the place, and the second one by doctests in `sage/parallel/multiprocessing.py` and `sage/parallel/decorate.py`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5965\n\n",
     "created_at": "2009-05-02T23:41:40Z",
     "labels": [
         "distribution",
@@ -14,12 +14,12 @@ archive/issues_005965.json:
     "title": "Check {{{/dev/pts}}} and {{{/dev/shm}}} requirement on linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5965",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 Assignee: mabshoff
 
-CC:  was jdemeyer jhpalmieri mkoeppe dimpase mjo
+CC:  @williamstein @jdemeyer @jhpalmieri @mkoeppe @dimpase @orlitzky
 
 Sage requires both pseudoterminals (for pexpect) and shared memory (for pyprocessing semaphores). On modern linux, those are implemented via special filesystem mounts:
 - `/dev/pts` for pseudoterminals (of type `devpts`)
@@ -101,7 +101,7 @@ archive/issue_comments_047241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47241",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -114,16 +114,16 @@ Actually, it may make more sense to just check that pseudoterminals and shared m
 archive/issue_comments_047242.json:
 ```json
 {
-    "body": "Attachment [sage-check.py](tarball://root/attachments/some-uuid/ticket5965/sage-check.py) by tornaria created at 2009-05-05 03:25:35\n\nThis simple python script checks availability of pseudoterminals and shared memory.",
+    "body": "Attachment [sage-check.py](tarball://root/attachments/some-uuid/ticket5965/sage-check.py) by @tornaria created at 2009-05-05 03:25:35\n\nThis simple python script checks availability of pseudoterminals and shared memory.",
     "created_at": "2009-05-05T03:25:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47242",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [sage-check.py](tarball://root/attachments/some-uuid/ticket5965/sage-check.py) by tornaria created at 2009-05-05 03:25:35
+Attachment [sage-check.py](tarball://root/attachments/some-uuid/ticket5965/sage-check.py) by @tornaria created at 2009-05-05 03:25:35
 
 This simple python script checks availability of pseudoterminals and shared memory.
 
@@ -139,7 +139,7 @@ archive/issue_comments_047243.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47243",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -152,16 +152,16 @@ The python script I attached does the job, except the error messages need to be 
 archive/issue_comments_047244.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to tornaria.",
+    "body": "Changing assignee from mabshoff to @tornaria.",
     "created_at": "2009-05-05T03:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47244",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Changing assignee from mabshoff to tornaria.
+Changing assignee from mabshoff to @tornaria.
 
 
 
@@ -219,7 +219,7 @@ archive/issue_comments_047247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47247",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_047248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47248",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_047249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47249",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_047250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47250",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_047252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47252",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_047253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47253",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_047254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47254",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -380,7 +380,7 @@ archive/issue_comments_047255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47255",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -393,16 +393,16 @@ Changing keywords from "" to "GAP PExpect cannot start server pty pseudo ttys sh
 archive/issue_comments_047256.json:
 ```json
 {
-    "body": "Attachment [sage-check-ptys-semaphore.py](tarball://root/attachments/some-uuid/ticket5965/sage-check-ptys-semaphore.py) by leif created at 2011-08-29 01:31:10\n\nRaising the priority to \"critical\" since this issue came up multiple times recently, especially in server setups (which usually use a chroot environment or virtualization), and also minimal Linux installations.\n\nPeople are rather unlikely to immediately relate the failure in starting GAP to pseudo ttys or device mounts.\n\nAlternatively, we could catch / check for the pty error in the code that creates PExpect interfaces, e.g. in `sage/interfaces/gap.py` (around line 903), in order to give a more appropriate error message.",
+    "body": "Attachment [sage-check-ptys-semaphore.py](tarball://root/attachments/some-uuid/ticket5965/sage-check-ptys-semaphore.py) by @nexttime created at 2011-08-29 01:31:10\n\nRaising the priority to \"critical\" since this issue came up multiple times recently, especially in server setups (which usually use a chroot environment or virtualization), and also minimal Linux installations.\n\nPeople are rather unlikely to immediately relate the failure in starting GAP to pseudo ttys or device mounts.\n\nAlternatively, we could catch / check for the pty error in the code that creates PExpect interfaces, e.g. in `sage/interfaces/gap.py` (around line 903), in order to give a more appropriate error message.",
     "created_at": "2011-08-29T01:31:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47256",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [sage-check-ptys-semaphore.py](tarball://root/attachments/some-uuid/ticket5965/sage-check-ptys-semaphore.py) by leif created at 2011-08-29 01:31:10
+Attachment [sage-check-ptys-semaphore.py](tarball://root/attachments/some-uuid/ticket5965/sage-check-ptys-semaphore.py) by @nexttime created at 2011-08-29 01:31:10
 
 Raising the priority to "critical" since this issue came up multiple times recently, especially in server setups (which usually use a chroot environment or virtualization), and also minimal Linux installations.
 
@@ -422,7 +422,7 @@ archive/issue_comments_047257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47257",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -440,7 +440,7 @@ archive/issue_comments_047258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47258",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -458,7 +458,7 @@ archive/issue_comments_047259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47259",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -476,7 +476,7 @@ archive/issue_comments_047260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47260",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_047261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47261",
-    "user": "thansen"
+    "user": "@tobihan"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_047262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47262",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_047263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47263",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -580,7 +580,7 @@ archive/issue_comments_047264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47264",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -598,7 +598,7 @@ archive/issue_comments_047265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47265",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_047266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47266",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -639,7 +639,7 @@ archive/issue_comments_047267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47267",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -657,7 +657,7 @@ archive/issue_comments_047268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47268",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -678,7 +678,7 @@ archive/issue_comments_047269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47269",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -696,7 +696,7 @@ archive/issue_comments_047270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47270",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -714,7 +714,7 @@ archive/issue_comments_047271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47271",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -732,7 +732,7 @@ archive/issue_comments_047272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47272",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -750,7 +750,7 @@ archive/issue_comments_047273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47273",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -768,7 +768,7 @@ archive/issue_comments_047274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5965",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5965#issuecomment-47274",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006777.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  mjo\n\nKeywords: polynomial segfault\n\nThis is with a modified\n\n```\n```\n\n| Sage Version 4.1.rc1, Release Date: 2009-07-07                     |\nMac OS X, Intel hardware.\n\n\n```\nsage: RealField(300)['x']( [ 1, ComplexField(300).gen(), 0 ])\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nProcess SAGE exited abnormally with code 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6777\n\n",
+    "body": "Assignee: @malb\n\nCC:  @orlitzky\n\nKeywords: polynomial segfault\n\nThis is with a modified\n\n```\n```\n\n| Sage Version 4.1.rc1, Release Date: 2009-07-07                     |\nMac OS X, Intel hardware.\n\n\n```\nsage: RealField(300)['x']( [ 1, ComplexField(300).gen(), 0 ])\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nProcess SAGE exited abnormally with code 1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6777\n\n",
     "created_at": "2009-08-19T22:48:53Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_006777.json:
     "title": "segfault with univariate polynomial, realfield, complexfield",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6777",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  mjo
+CC:  @orlitzky
 
 Keywords: polynomial segfault
 
@@ -66,7 +66,7 @@ archive/issue_comments_055821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6777#issuecomment-55821",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_055822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6777#issuecomment-55822",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_055823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6777#issuecomment-55823",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_055824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6777#issuecomment-55824",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -165,16 +165,16 @@ Patch to add a doctest expecting a TypeError
 archive/issue_comments_055825.json:
 ```json
 {
-    "body": "Attachment [sage-trac_6777.patch](tarball://root/attachments/some-uuid/ticket6777/sage-trac_6777.patch) by mhansen created at 2011-12-17 20:55:16\n\nmjo's patch looks good to me.  I updated the formatting slightly.",
+    "body": "Attachment [sage-trac_6777.patch](tarball://root/attachments/some-uuid/ticket6777/sage-trac_6777.patch) by @mwhansen created at 2011-12-17 20:55:16\n\nmjo's patch looks good to me.  I updated the formatting slightly.",
     "created_at": "2011-12-17T20:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6777#issuecomment-55825",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage-trac_6777.patch](tarball://root/attachments/some-uuid/ticket6777/sage-trac_6777.patch) by mhansen created at 2011-12-17 20:55:16
+Attachment [sage-trac_6777.patch](tarball://root/attachments/some-uuid/ticket6777/sage-trac_6777.patch) by @mwhansen created at 2011-12-17 20:55:16
 
 mjo's patch looks good to me.  I updated the formatting slightly.
 
@@ -190,7 +190,7 @@ archive/issue_comments_055826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6777#issuecomment-55826",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_055827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6777",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6777#issuecomment-55827",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003332.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nKeywords: pbuild\n\npbuild and sbuild currently compile with -O3; we should use -O2 for stability reasons (and -O3 may result in larger, slower code).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3332\n\n",
+    "body": "Assignee: @garyfurnish\n\nKeywords: pbuild\n\npbuild and sbuild currently compile with -O3; we should use -O2 for stability reasons (and -O3 may result in larger, slower code).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3332\n\n",
     "created_at": "2008-05-29T19:27:26Z",
     "labels": [
         "pbuild",
@@ -14,10 +14,10 @@ archive/issues_003332.json:
     "title": "Switch pbuild to -O2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3332",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 Keywords: pbuild
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3332
 archive/issue_comments_023105.json:
 ```json
 {
-    "body": "Attachment [trac_3332_extcode.patch](tarball://root/attachments/some-uuid/ticket3332/trac_3332_extcode.patch) by gfurnish created at 2008-05-29 19:27:46",
+    "body": "Attachment [trac_3332_extcode.patch](tarball://root/attachments/some-uuid/ticket3332/trac_3332_extcode.patch) by @garyfurnish created at 2008-05-29 19:27:46",
     "created_at": "2008-05-29T19:27:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3332#issuecomment-23105",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3332_extcode.patch](tarball://root/attachments/some-uuid/ticket3332/trac_3332_extcode.patch) by gfurnish created at 2008-05-29 19:27:46
+Attachment [trac_3332_extcode.patch](tarball://root/attachments/some-uuid/ticket3332/trac_3332_extcode.patch) by @garyfurnish created at 2008-05-29 19:27:46
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_023106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3332",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3332#issuecomment-23106",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

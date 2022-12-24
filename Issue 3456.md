@@ -3,7 +3,7 @@
 archive/issues_003456.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was\n\nKeywords: notebook database sql\n\nThe public notebook is useless as is.  Life will be better with SQL.  This is probably a duplicate, but I couldn't find the original ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3456\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein\n\nKeywords: notebook database sql\n\nThe public notebook is useless as is.  Life will be better with SQL.  This is probably a duplicate, but I couldn't find the original ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3456\n\n",
     "created_at": "2008-06-18T01:25:47Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_003456.json:
 ```
 Assignee: boothby
 
-CC:  was
+CC:  @williamstein
 
 Keywords: notebook database sql
 
@@ -115,7 +115,7 @@ archive/issue_comments_024368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3456#issuecomment-24368",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_024369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3456#issuecomment-24369",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_024370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3456#issuecomment-24370",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_024371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3456",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3456#issuecomment-24371",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

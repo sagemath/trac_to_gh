@@ -3,7 +3,7 @@
 archive/issues_003482.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nThis is easy to use -- so the docstrings at the bottom of sage/structure/sage_object.pyx.\n\n```\nsage.structure.sage_object.picklejar?\n```\n\nand \n\n```\nsage.structure.sage_object.unpickle_all?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3482\n\n",
+    "body": "Assignee: @robertwb\n\nThis is easy to use -- so the docstrings at the bottom of sage/structure/sage_object.pyx.\n\n```\nsage.structure.sage_object.picklejar?\n```\n\nand \n\n```\nsage.structure.sage_object.unpickle_all?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3482\n\n",
     "created_at": "2008-06-20T06:17:40Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_003482.json:
     "title": "create a pickle jar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3482",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 This is easy to use -- so the docstrings at the bottom of sage/structure/sage_object.pyx.
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3482
 archive/issue_comments_024533.json:
 ```json
 {
-    "body": "Attachment [sage-3482.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482.patch) by was created at 2008-06-20 06:27:41",
+    "body": "Attachment [sage-3482.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482.patch) by @williamstein created at 2008-06-20 06:27:41",
     "created_at": "2008-06-20T06:27:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3482#issuecomment-24533",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3482.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482.patch) by was created at 2008-06-20 06:27:41
+Attachment [sage-3482.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482.patch) by @williamstein created at 2008-06-20 06:27:41
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_024534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3482#issuecomment-24534",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_024535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3482#issuecomment-24535",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_024536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3482#issuecomment-24536",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_024538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3482#issuecomment-24538",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_024539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3482#issuecomment-24539",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -294,16 +294,16 @@ Nick
 archive/issue_comments_024540.json:
 ```json
 {
-    "body": "Attachment [sage-3482-part2.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482-part2.patch) by was created at 2008-07-06 17:57:10\n\nthis addresses the referee's remarks.",
+    "body": "Attachment [sage-3482-part2.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482-part2.patch) by @williamstein created at 2008-07-06 17:57:10\n\nthis addresses the referee's remarks.",
     "created_at": "2008-07-06T17:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3482#issuecomment-24540",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3482-part2.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482-part2.patch) by was created at 2008-07-06 17:57:10
+Attachment [sage-3482-part2.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482-part2.patch) by @williamstein created at 2008-07-06 17:57:10
 
 this addresses the referee's remarks.
 
@@ -314,16 +314,16 @@ this addresses the referee's remarks.
 archive/issue_comments_024541.json:
 ```json
 {
-    "body": "Attachment [pickle_jar-3.0.3.tar.bz2](tarball://root/attachments/some-uuid/ticket3482/pickle_jar-3.0.3.tar.bz2) by was created at 2008-07-06 19:16:44\n\nan official pickle jar from sage-3.0.3 made on ubuntu 64-bit (sagemath.org)",
+    "body": "Attachment [pickle_jar-3.0.3.tar.bz2](tarball://root/attachments/some-uuid/ticket3482/pickle_jar-3.0.3.tar.bz2) by @williamstein created at 2008-07-06 19:16:44\n\nan official pickle jar from sage-3.0.3 made on ubuntu 64-bit (sagemath.org)",
     "created_at": "2008-07-06T19:16:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3482#issuecomment-24541",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [pickle_jar-3.0.3.tar.bz2](tarball://root/attachments/some-uuid/ticket3482/pickle_jar-3.0.3.tar.bz2) by was created at 2008-07-06 19:16:44
+Attachment [pickle_jar-3.0.3.tar.bz2](tarball://root/attachments/some-uuid/ticket3482/pickle_jar-3.0.3.tar.bz2) by @williamstein created at 2008-07-06 19:16:44
 
 an official pickle jar from sage-3.0.3 made on ubuntu 64-bit (sagemath.org)
 
@@ -334,16 +334,16 @@ an official pickle jar from sage-3.0.3 made on ubuntu 64-bit (sagemath.org)
 archive/issue_comments_024542.json:
 ```json
 {
-    "body": "Attachment [sage-3482-part3.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482-part3.patch) by was created at 2008-07-06 19:37:28",
+    "body": "Attachment [sage-3482-part3.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482-part3.patch) by @williamstein created at 2008-07-06 19:37:28",
     "created_at": "2008-07-06T19:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3482#issuecomment-24542",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3482-part3.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482-part3.patch) by was created at 2008-07-06 19:37:28
+Attachment [sage-3482-part3.patch](tarball://root/attachments/some-uuid/ticket3482/sage-3482-part3.patch) by @williamstein created at 2008-07-06 19:37:28
 
 
 
@@ -357,7 +357,7 @@ archive/issue_comments_024543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3482#issuecomment-24543",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -406,13 +406,13 @@ Resolution: fixed
 archive/issue_comments_024546.json:
 ```json
 {
-    "body": "Attachment [pickle_jar-3.0.5.tar.bz2](tarball://root/attachments/some-uuid/ticket3482/pickle_jar-3.0.5.tar.bz2) by was created at 2008-07-29 15:21:22",
+    "body": "Attachment [pickle_jar-3.0.5.tar.bz2](tarball://root/attachments/some-uuid/ticket3482/pickle_jar-3.0.5.tar.bz2) by @williamstein created at 2008-07-29 15:21:22",
     "created_at": "2008-07-29T15:21:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3482",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3482#issuecomment-24546",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [pickle_jar-3.0.5.tar.bz2](tarball://root/attachments/some-uuid/ticket3482/pickle_jar-3.0.5.tar.bz2) by was created at 2008-07-29 15:21:22
+Attachment [pickle_jar-3.0.5.tar.bz2](tarball://root/attachments/some-uuid/ticket3482/pickle_jar-3.0.5.tar.bz2) by @williamstein created at 2008-07-29 15:21:22

@@ -14,7 +14,7 @@ archive/issues_008637.json:
     "title": "typo in sagenb/data/sage/html/worksheet_listing.html, line 117",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8637",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: jason, was
@@ -63,16 +63,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8637
 archive/issue_comments_078322.json:
 ```json
 {
-    "body": "Attachment [trac_8637.patch](tarball://root/attachments/some-uuid/ticket8637/trac_8637.patch) by ddrake created at 2010-03-31 23:47:22\n\nI made Paul's patch into a proper Mercurial patch and credited him for it. Please review!",
+    "body": "Attachment [trac_8637.patch](tarball://root/attachments/some-uuid/ticket8637/trac_8637.patch) by @dandrake created at 2010-03-31 23:47:22\n\nI made Paul's patch into a proper Mercurial patch and credited him for it. Please review!",
     "created_at": "2010-03-31T23:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8637#issuecomment-78322",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_8637.patch](tarball://root/attachments/some-uuid/ticket8637/trac_8637.patch) by ddrake created at 2010-03-31 23:47:22
+Attachment [trac_8637.patch](tarball://root/attachments/some-uuid/ticket8637/trac_8637.patch) by @dandrake created at 2010-03-31 23:47:22
 
 I made Paul's patch into a proper Mercurial patch and credited him for it. Please review!
 
@@ -88,7 +88,7 @@ archive/issue_comments_078323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8637#issuecomment-78323",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_078324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8637#issuecomment-78324",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_078325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8637#issuecomment-78325",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_078326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8637",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8637#issuecomment-78326",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

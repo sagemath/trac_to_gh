@@ -3,7 +3,7 @@
 archive/issues_002897.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThere was a small bug in the previous version of guava 3.4 which caused it to fail the (GAP) guava.tst file. This version is fixed. Also, some file permissions were \"wrong\" and those are fixed. The SPKG.txt file was updated. Other than these, the spkg is the same. It has been copied to \nhttp://sage.math.washington.edu/home/wdj/patches/gap-4.4.10.p6.spkg and was\ntested using sage -f. Seems to work fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2897\n\n",
+    "body": "Assignee: @rlmill\n\nThere was a small bug in the previous version of guava 3.4 which caused it to fail the (GAP) guava.tst file. This version is fixed. Also, some file permissions were \"wrong\" and those are fixed. The SPKG.txt file was updated. Other than these, the spkg is the same. It has been copied to \nhttp://sage.math.washington.edu/home/wdj/patches/gap-4.4.10.p6.spkg and was\ntested using sage -f. Seems to work fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2897\n\n",
     "created_at": "2008-04-12T14:42:49Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_002897.json:
     "title": "[with new spkg] GAP: replace guava 3.4 by new and improved guava 3.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2897",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 There was a small bug in the previous version of guava 3.4 which caused it to fail the (GAP) guava.tst file. This version is fixed. Also, some file permissions were "wrong" and those are fixed. The SPKG.txt file was updated. Other than these, the spkg is the same. It has been copied to 
 http://sage.math.washington.edu/home/wdj/patches/gap-4.4.10.p6.spkg and was

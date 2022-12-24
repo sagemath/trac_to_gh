@@ -3,7 +3,7 @@
 archive/issues_002727.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nThe mysterious libsingular.dll errors in the Debian SAGE port were caused by an uninitialized variable masking the real error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2727\n\n",
+    "body": "Assignee: @timabbott\n\nThe mysterious libsingular.dll errors in the Debian SAGE port were caused by an uninitialized variable masking the real error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2727\n\n",
     "created_at": "2008-03-29T22:32:55Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002727.json:
     "title": "[with patch; needs review] uninitialized cdef in multi_polynomial_libsingular.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2727",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 The mysterious libsingular.dll errors in the Debian SAGE port were caused by an uninitialized variable masking the real error.
 

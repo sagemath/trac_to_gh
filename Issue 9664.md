@@ -3,7 +3,7 @@
 archive/issues_009664.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  novoselt\n\nThere should be some graphical representation of rational polyhedral fans in low dimensions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9664\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nThere should be some graphical representation of rational polyhedral fans in low dimensions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9664\n\n",
     "created_at": "2010-08-01T20:15:07Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_009664.json:
     "title": "Graphical representation of fans",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9664",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 Assignee: mhampton
 
-CC:  novoselt
+CC:  @novoselt
 
 There should be some graphical representation of rational polyhedral fans in low dimensions.
 
@@ -39,7 +39,7 @@ archive/issue_comments_093809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93809",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_093810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93810",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_093811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93811",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_093812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93812",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_093813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93813",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -124,16 +124,16 @@ graphics for 2-d fans
 archive/issue_comments_093814.json:
 ```json
 {
-    "body": "Attachment [trac_9664_graphical_repr_of_fans.patch](tarball://root/attachments/some-uuid/ticket9664/trac_9664_graphical_repr_of_fans.patch) by novoselt created at 2010-09-25 20:38:07\n\nHi Volker! So, here is my plan/proposal:\n1. Make all \"toric objects\" plottable in a consistent way with options trickling down from complicated objects to simpler ones.\n2. Gather all these options in a single file, say `sage.geometry.toric_plot` and use this module to store default options with users being able to see all options, change them globally and reset to originals. The same options also can be passed to each individual object.\n3. It is totally fine to have different internal functions for 2d and 3d plots, but when possible options should have the same name/meaning.\n4. I like your round 2-d fans, but I think there should be 3 ways to plot fans (and other things): in the disk of given radius, in the box with given sides (i.e. xyz-dimensions), and in the polytope determined by rays, i.e. rays are drawn to primitive generators, and cones are drawn between primitive generators. Reason - I think that round plots are pretty (so people should use them and I propose this as default), boxed plots are common (so people may want to use them despite of round ones being prettier), and \"generator plot\" seems to be very natural from the point of view of CPR-Fano toric varieties and I think this should be the default for them.\n5. I think that rays should be a little longer than cones, so that arrows \"stick out\", and the length of these rays does not have to correlate with primitive generators (but it would be nice to mark the generators with red dots, or some other way to clearly distinguish them from other lattice points).\n6. What is the purpose of white strips surrounding rays in your functions? (I agree that it looks pretty ;-))\n\nHere are the options I think toric objects should have (each consequent one accepts parameters for previous ones):\n1. `ToricLatticeElement` (plots a point):\n   * `point_color`\n   * `point_size`\n   * `point_label`\n   * `point_label_shift` (so that it is not right on top of the point)\n2. `ToricLattice` (plots all points within the given region):\n   * `plot_type` (one of \"round\", \"box\", \"generators\")\n   * `radius` (for \"round\", can also be given for \"box\" as all six bounds)\n   * `xyzmin/max` (six parameters)\n3. `IntegralRayCollection`:\n   * `ray_color`\n   * `ray_thickness`\n   * `ray_extension` (how much longer should rays be compared to the size based on other parameters, to make \"arrows sticking out\")\n   * `ray_label`\n   * `ray_label_shift`\n   * `generator_color` (for the lattice point corresponding to generator)\n   * `generator_size`\n   * `plot_lattice` (True/False to include lattice points or not)\n4. `Cone`\n   * `cone_color`\n   * `cone_alpha`\n   * `cone_label`\n   * maybe something to determine label position, but it seems that it can be position quite well between rays without necessity to shift it further\n   * `plot_rays` (True/False)\n   * `ray_label` can be given as a list of separate labels for each ray (just indexing them may be not very good, e.g. for toric varieties it may make sense to stick coordinate names next to rays)\n5. `Fan`\n   * `plot_cones` (True/False)\n   * `cone_label` can be given as a list of separate labels for each cone\n\nIn 3-d cases there may be some sense in being able to specify options differently for 2-d and 3-d cones, but that should be more clear in the process. Also, instead of drawing points corresponding to generators, maybe it is better to draw vectors, as in your implementation. But I still would like to see rays continuing \"to infinity\", i.e. beyond shaded regions for cones.\n\nThoughtscomments?",
+    "body": "Attachment [trac_9664_graphical_repr_of_fans.patch](tarball://root/attachments/some-uuid/ticket9664/trac_9664_graphical_repr_of_fans.patch) by @novoselt created at 2010-09-25 20:38:07\n\nHi Volker! So, here is my plan/proposal:\n1. Make all \"toric objects\" plottable in a consistent way with options trickling down from complicated objects to simpler ones.\n2. Gather all these options in a single file, say `sage.geometry.toric_plot` and use this module to store default options with users being able to see all options, change them globally and reset to originals. The same options also can be passed to each individual object.\n3. It is totally fine to have different internal functions for 2d and 3d plots, but when possible options should have the same name/meaning.\n4. I like your round 2-d fans, but I think there should be 3 ways to plot fans (and other things): in the disk of given radius, in the box with given sides (i.e. xyz-dimensions), and in the polytope determined by rays, i.e. rays are drawn to primitive generators, and cones are drawn between primitive generators. Reason - I think that round plots are pretty (so people should use them and I propose this as default), boxed plots are common (so people may want to use them despite of round ones being prettier), and \"generator plot\" seems to be very natural from the point of view of CPR-Fano toric varieties and I think this should be the default for them.\n5. I think that rays should be a little longer than cones, so that arrows \"stick out\", and the length of these rays does not have to correlate with primitive generators (but it would be nice to mark the generators with red dots, or some other way to clearly distinguish them from other lattice points).\n6. What is the purpose of white strips surrounding rays in your functions? (I agree that it looks pretty ;-))\n\nHere are the options I think toric objects should have (each consequent one accepts parameters for previous ones):\n1. `ToricLatticeElement` (plots a point):\n   * `point_color`\n   * `point_size`\n   * `point_label`\n   * `point_label_shift` (so that it is not right on top of the point)\n2. `ToricLattice` (plots all points within the given region):\n   * `plot_type` (one of \"round\", \"box\", \"generators\")\n   * `radius` (for \"round\", can also be given for \"box\" as all six bounds)\n   * `xyzmin/max` (six parameters)\n3. `IntegralRayCollection`:\n   * `ray_color`\n   * `ray_thickness`\n   * `ray_extension` (how much longer should rays be compared to the size based on other parameters, to make \"arrows sticking out\")\n   * `ray_label`\n   * `ray_label_shift`\n   * `generator_color` (for the lattice point corresponding to generator)\n   * `generator_size`\n   * `plot_lattice` (True/False to include lattice points or not)\n4. `Cone`\n   * `cone_color`\n   * `cone_alpha`\n   * `cone_label`\n   * maybe something to determine label position, but it seems that it can be position quite well between rays without necessity to shift it further\n   * `plot_rays` (True/False)\n   * `ray_label` can be given as a list of separate labels for each ray (just indexing them may be not very good, e.g. for toric varieties it may make sense to stick coordinate names next to rays)\n5. `Fan`\n   * `plot_cones` (True/False)\n   * `cone_label` can be given as a list of separate labels for each cone\n\nIn 3-d cases there may be some sense in being able to specify options differently for 2-d and 3-d cones, but that should be more clear in the process. Also, instead of drawing points corresponding to generators, maybe it is better to draw vectors, as in your implementation. But I still would like to see rays continuing \"to infinity\", i.e. beyond shaded regions for cones.\n\nThoughtscomments?",
     "created_at": "2010-09-25T20:38:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93814",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9664_graphical_repr_of_fans.patch](tarball://root/attachments/some-uuid/ticket9664/trac_9664_graphical_repr_of_fans.patch) by novoselt created at 2010-09-25 20:38:07
+Attachment [trac_9664_graphical_repr_of_fans.patch](tarball://root/attachments/some-uuid/ticket9664/trac_9664_graphical_repr_of_fans.patch) by @novoselt created at 2010-09-25 20:38:07
 
 Hi Volker! So, here is my plan/proposal:
 1. Make all "toric objects" plottable in a consistent way with options trickling down from complicated objects to simpler ones.
@@ -189,7 +189,7 @@ archive/issue_comments_093815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93815",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_093816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93816",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_093817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93817",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_093818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93818",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_093819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93819",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_093820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93820",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_093821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93821",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -354,16 +354,16 @@ Apply this patch only.
 archive/issue_comments_093822.json:
 ```json
 {
-    "body": "Attachment [trac_9664_add_toric_potter.patch](tarball://root/attachments/some-uuid/ticket9664/trac_9664_add_toric_potter.patch) by vbraun created at 2010-10-06 09:17:44\n\nGreat! I don't think the cone caps are a priority; I'm not even sure whether they woudl be more confusing than helpful. Colored fog might be useful to show the 3-d cones, but then I don't think that the tachyon interface covers that. \n\nIn other words, I think we should merge this patch now :-)\n\nRelease manager: merge `trac_9664_add_toric_potter.patch` only.",
+    "body": "Attachment [trac_9664_add_toric_potter.patch](tarball://root/attachments/some-uuid/ticket9664/trac_9664_add_toric_potter.patch) by @vbraun created at 2010-10-06 09:17:44\n\nGreat! I don't think the cone caps are a priority; I'm not even sure whether they woudl be more confusing than helpful. Colored fog might be useful to show the 3-d cones, but then I don't think that the tachyon interface covers that. \n\nIn other words, I think we should merge this patch now :-)\n\nRelease manager: merge `trac_9664_add_toric_potter.patch` only.",
     "created_at": "2010-10-06T09:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93822",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [trac_9664_add_toric_potter.patch](tarball://root/attachments/some-uuid/ticket9664/trac_9664_add_toric_potter.patch) by vbraun created at 2010-10-06 09:17:44
+Attachment [trac_9664_add_toric_potter.patch](tarball://root/attachments/some-uuid/ticket9664/trac_9664_add_toric_potter.patch) by @vbraun created at 2010-10-06 09:17:44
 
 Great! I don't think the cone caps are a priority; I'm not even sure whether they woudl be more confusing than helpful. Colored fog might be useful to show the 3-d cones, but then I don't think that the tachyon interface covers that. 
 
@@ -383,7 +383,7 @@ archive/issue_comments_093823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93823",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_093825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93825",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -443,7 +443,7 @@ archive/issue_comments_093826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9664",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9664#issuecomment-93826",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

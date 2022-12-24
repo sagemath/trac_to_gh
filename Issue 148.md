@@ -3,7 +3,7 @@
 archive/issues_000148.json:
 ```json
 {
-    "body": "Assignee: was\n\nlinks in a notebook saved to html point to localhost -- they should just be relative anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/148\n\n",
+    "body": "Assignee: @williamstein\n\nlinks in a notebook saved to html point to localhost -- they should just be relative anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/148\n\n",
     "created_at": "2006-10-23T16:26:43Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_000148.json:
     "user": "boothby"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 links in a notebook saved to html point to localhost -- they should just be relative anyway.
 
@@ -50,7 +50,7 @@ Changing component from algebraic geometry to notebook.
 archive/issue_comments_000676.json:
 ```json
 {
-    "body": "Changing assignee from was to boothby.",
+    "body": "Changing assignee from @williamstein to boothby.",
     "created_at": "2006-10-23T16:27:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/148",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_000676.json:
 }
 ```
 
-Changing assignee from was to boothby.
+Changing assignee from @williamstein to boothby.
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_000678.json:
     "issue": "https://github.com/sagemath/sagetest/issues/148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/148#issuecomment-678",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_000679.json:
     "issue": "https://github.com/sagemath/sagetest/issues/148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/148#issuecomment-679",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_000680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/148#issuecomment-680",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

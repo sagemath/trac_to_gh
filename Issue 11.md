@@ -13,7 +13,7 @@ archive/issues_000011.json:
     "title": "doctest failure in functions/special.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/11",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -57,7 +57,7 @@ archive/issue_comments_000058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/11",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/11#issuecomment-58",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_000059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/11",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/11#issuecomment-59",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

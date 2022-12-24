@@ -3,7 +3,7 @@
 archive/issues_003468.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  boothby rpw wstein burcin\n\nThe Database is here: \n\n   http://www.risc.uni-linz.ac.at/Groebner-Bases-Implementations/\n\nWe were invited to add Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3468\n\n",
+    "body": "Assignee: cwitty\n\nCC:  boothby rpw wstein @burcin\n\nThe Database is here: \n\n   http://www.risc.uni-linz.ac.at/Groebner-Bases-Implementations/\n\nWe were invited to add Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3468\n\n",
     "created_at": "2008-06-19T03:47:21Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_003468.json:
     "title": "Add Sage to the Groebner Bases Implementations database",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3468",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: cwitty
 
-CC:  boothby rpw wstein burcin
+CC:  boothby rpw wstein @burcin
 
 The Database is here: 
 
@@ -43,7 +43,7 @@ archive/issue_comments_024456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3468#issuecomment-24456",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_024457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3468#issuecomment-24457",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_024458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3468#issuecomment-24458",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_024459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3468#issuecomment-24459",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_024460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3468#issuecomment-24460",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

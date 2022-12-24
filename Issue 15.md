@@ -13,7 +13,7 @@ archive/issues_000015.json:
     "title": "sin(integer) precision issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/15",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -45,7 +45,7 @@ archive/issue_comments_000067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/15",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/15#issuecomment-67",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_000068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/15",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/15#issuecomment-68",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

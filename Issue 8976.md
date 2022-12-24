@@ -3,7 +3,7 @@
 archive/issues_008976.json:
 ```json
 {
-    "body": "Assignee: jason\n\nKeywords: squarefree_part()\n\n\n```\nsage: squarefree_part(216)\n6\nsage: squarefree_part(216r)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/leif/sage-4.4.1.rc0/devel/sage-8799/<ipython console> in <module>()\n\n/home/leif/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sage/misc/functional.pyc in squarefree_part(x)\n   1478         pass\n   1479     F = factor(x)\n-> 1480     n = x.parent()(1)\n   1481     for p, e in F:\n   1482         if e%2 != 0:\n\nAttributeError: 'int' object has no attribute 'parent'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8976\n\n",
+    "body": "Assignee: @jasongrout\n\nKeywords: squarefree_part()\n\n\n```\nsage: squarefree_part(216)\n6\nsage: squarefree_part(216r)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/leif/sage-4.4.1.rc0/devel/sage-8799/<ipython console> in <module>()\n\n/home/leif/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sage/misc/functional.pyc in squarefree_part(x)\n   1478         pass\n   1479     F = factor(x)\n-> 1480     n = x.parent()(1)\n   1481     for p, e in F:\n   1482         if e%2 != 0:\n\nAttributeError: 'int' object has no attribute 'parent'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8976\n\n",
     "created_at": "2010-05-15T23:54:38Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_008976.json:
     "title": "squarefree_part() fails on Python types",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8976",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 Keywords: squarefree_part()
 
@@ -59,7 +59,7 @@ archive/issue_comments_082812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8976#issuecomment-82812",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_082813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8976#issuecomment-82813",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_082814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8976#issuecomment-82814",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_082815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8976#issuecomment-82815",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_082816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8976#issuecomment-82816",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -158,16 +158,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_082817.json:
 ```json
 {
-    "body": "Attachment [trac_8976-squarefree_part-fix-variant1.patch](tarball://root/attachments/some-uuid/ticket8976/trac_8976-squarefree_part-fix-variant1.patch) by leif created at 2010-05-16 01:27:55",
+    "body": "Attachment [trac_8976-squarefree_part-fix-variant1.patch](tarball://root/attachments/some-uuid/ticket8976/trac_8976-squarefree_part-fix-variant1.patch) by @nexttime created at 2010-05-16 01:27:55",
     "created_at": "2010-05-16T01:27:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8976#issuecomment-82817",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_8976-squarefree_part-fix-variant1.patch](tarball://root/attachments/some-uuid/ticket8976/trac_8976-squarefree_part-fix-variant1.patch) by leif created at 2010-05-16 01:27:55
+Attachment [trac_8976-squarefree_part-fix-variant1.patch](tarball://root/attachments/some-uuid/ticket8976/trac_8976-squarefree_part-fix-variant1.patch) by @nexttime created at 2010-05-16 01:27:55
 
 
 
@@ -181,7 +181,7 @@ archive/issue_comments_082818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8976#issuecomment-82818",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_082819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8976#issuecomment-82819",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_082820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8976#issuecomment-82820",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

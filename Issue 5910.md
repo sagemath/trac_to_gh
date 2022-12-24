@@ -94,16 +94,16 @@ with Unix newline
 archive/issue_comments_046706.json:
 ```json
 {
-    "body": "Attachment [trac_5910-boolopt.patch](tarball://root/attachments/some-uuid/ticket5910/trac_5910-boolopt.patch) by AlexGhitza created at 2010-01-02 03:18:33",
+    "body": "Attachment [trac_5910-boolopt.patch](tarball://root/attachments/some-uuid/ticket5910/trac_5910-boolopt.patch) by @aghitza created at 2010-01-02 03:18:33",
     "created_at": "2010-01-02T03:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5910#issuecomment-46706",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_5910-boolopt.patch](tarball://root/attachments/some-uuid/ticket5910/trac_5910-boolopt.patch) by AlexGhitza created at 2010-01-02 03:18:33
+Attachment [trac_5910-boolopt.patch](tarball://root/attachments/some-uuid/ticket5910/trac_5910-boolopt.patch) by @aghitza created at 2010-01-02 03:18:33
 
 
 
@@ -117,7 +117,7 @@ archive/issue_comments_046707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5910#issuecomment-46707",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_046708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5910#issuecomment-46708",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_046709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5910",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5910#issuecomment-46709",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

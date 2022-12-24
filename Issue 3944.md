@@ -14,7 +14,7 @@ archive/issues_003944.json:
     "title": "replace \"sage -upgrade\" by \"sage -expert_upgrade\" and upgrade() by \"expert_upgrade()\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3944",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3944
 archive/issue_comments_028313.json:
 ```json
 {
-    "body": "Attachment [sage-3944.patch](tarball://root/attachments/some-uuid/ticket3944/sage-3944.patch) by was created at 2008-08-24 16:25:45",
+    "body": "Attachment [sage-3944.patch](tarball://root/attachments/some-uuid/ticket3944/sage-3944.patch) by @williamstein created at 2008-08-24 16:25:45",
     "created_at": "2008-08-24T16:25:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3944#issuecomment-28313",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3944.patch](tarball://root/attachments/some-uuid/ticket3944/sage-3944.patch) by was created at 2008-08-24 16:25:45
+Attachment [sage-3944.patch](tarball://root/attachments/some-uuid/ticket3944/sage-3944.patch) by @williamstein created at 2008-08-24 16:25:45
 
 
 
@@ -51,16 +51,16 @@ Attachment [sage-3944.patch](tarball://root/attachments/some-uuid/ticket3944/sag
 archive/issue_comments_028314.json:
 ```json
 {
-    "body": "Attachment [scripts-3944.patch](tarball://root/attachments/some-uuid/ticket3944/scripts-3944.patch) by was created at 2008-08-24 16:28:51",
+    "body": "Attachment [scripts-3944.patch](tarball://root/attachments/some-uuid/ticket3944/scripts-3944.patch) by @williamstein created at 2008-08-24 16:28:51",
     "created_at": "2008-08-24T16:28:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3944#issuecomment-28314",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-3944.patch](tarball://root/attachments/some-uuid/ticket3944/scripts-3944.patch) by was created at 2008-08-24 16:28:51
+Attachment [scripts-3944.patch](tarball://root/attachments/some-uuid/ticket3944/scripts-3944.patch) by @williamstein created at 2008-08-24 16:28:51
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_028316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3944#issuecomment-28316",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_028317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3944",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3944#issuecomment-28317",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

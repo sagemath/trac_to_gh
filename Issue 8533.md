@@ -3,7 +3,7 @@
 archive/issues_008533.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  wdj rlm ncohen rbeezer sage-combinat bump jhpalmieri\n\nTicket #8470 adds a collection of thematic tutorials to the Sage standard documentation. We should be able to browse such tutorials from the Sage command line or within the Sage notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8533\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @wdjoyner @rlmill @nathanncohen @rbeezer sage-combinat @dwbump @jhpalmieri\n\nTicket #8470 adds a collection of thematic tutorials to the Sage standard documentation. We should be able to browse such tutorials from the Sage command line or within the Sage notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8533\n\n",
     "created_at": "2010-03-14T00:01:21Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_008533.json:
 ```
 Assignee: mvngu
 
-CC:  wdj rlm ncohen rbeezer sage-combinat bump jhpalmieri
+CC:  @wdjoyner @rlmill @nathanncohen @rbeezer sage-combinat @dwbump @jhpalmieri
 
 Ticket #8470 adds a collection of thematic tutorials to the Sage standard documentation. We should be able to browse such tutorials from the Sage command line or within the Sage notebook.
 
@@ -245,7 +245,7 @@ archive/issue_comments_077119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8533#issuecomment-77119",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -291,7 +291,7 @@ archive/issue_comments_077120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8533#issuecomment-77120",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -309,7 +309,7 @@ archive/issue_comments_077121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8533#issuecomment-77121",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_077126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8533#issuecomment-77126",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -439,7 +439,7 @@ archive/issue_comments_077127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8533#issuecomment-77127",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -457,7 +457,7 @@ archive/issue_comments_077128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8533#issuecomment-77128",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_077129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8533#issuecomment-77129",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -500,7 +500,7 @@ archive/issue_comments_077130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8533#issuecomment-77130",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -518,7 +518,7 @@ archive/issue_comments_077131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8533#issuecomment-77131",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -536,7 +536,7 @@ archive/issue_comments_077132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8533#issuecomment-77132",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -554,7 +554,7 @@ archive/issue_comments_077133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8533#issuecomment-77133",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

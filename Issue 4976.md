@@ -78,16 +78,16 @@ Attachment [fill_examples.sage](tarball://root/attachments/some-uuid/ticket4976/
 archive/issue_comments_037939.json:
 ```json
 {
-    "body": "Attachment [fill1.png](tarball://root/attachments/some-uuid/ticket4976/fill1.png) by kcrisman created at 2009-01-29 04:05:31\n\nI think that someone who does heavier-duty plotting (and who has a machine new enough that plot.py doesn't time out while testing) should give a final review, but it very nicely solves a lot of problems, and didn't break any of the examples I thought it might when I tried it.  After some thought, probably putting generate_plot_points separately (and with very nice documentation) is a wise idea as well, and hopefully someone who originated that code will agree.\n\nMy only functional caveat is that you may want to put in a catch for fill=min and fill=max (as opposed to fill='min' and fill='max') because it parses these as functions, which they are, but it should probably raise an error (in both cases seems to have net effect of fill='axis'), since max and min are not really functions of one variable.\n\nThere should probably also be more explicit documentation of how the fillcolor option works, as opposed to seeing fillcolor='#ccc' in the tests - all legal input categories should be listed, perhaps there are others.\n\nBut that's all quibbles and my own ignorance; this is a beautiful addition, and someone else should review it very soon to avoid bitrot.",
+    "body": "Attachment [fill1.png](tarball://root/attachments/some-uuid/ticket4976/fill1.png) by @kcrisman created at 2009-01-29 04:05:31\n\nI think that someone who does heavier-duty plotting (and who has a machine new enough that plot.py doesn't time out while testing) should give a final review, but it very nicely solves a lot of problems, and didn't break any of the examples I thought it might when I tried it.  After some thought, probably putting generate_plot_points separately (and with very nice documentation) is a wise idea as well, and hopefully someone who originated that code will agree.\n\nMy only functional caveat is that you may want to put in a catch for fill=min and fill=max (as opposed to fill='min' and fill='max') because it parses these as functions, which they are, but it should probably raise an error (in both cases seems to have net effect of fill='axis'), since max and min are not really functions of one variable.\n\nThere should probably also be more explicit documentation of how the fillcolor option works, as opposed to seeing fillcolor='#ccc' in the tests - all legal input categories should be listed, perhaps there are others.\n\nBut that's all quibbles and my own ignorance; this is a beautiful addition, and someone else should review it very soon to avoid bitrot.",
     "created_at": "2009-01-29T04:05:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37939",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [fill1.png](tarball://root/attachments/some-uuid/ticket4976/fill1.png) by kcrisman created at 2009-01-29 04:05:31
+Attachment [fill1.png](tarball://root/attachments/some-uuid/ticket4976/fill1.png) by @kcrisman created at 2009-01-29 04:05:31
 
 I think that someone who does heavier-duty plotting (and who has a machine new enough that plot.py doesn't time out while testing) should give a final review, but it very nicely solves a lot of problems, and didn't break any of the examples I thought it might when I tried it.  After some thought, probably putting generate_plot_points separately (and with very nice documentation) is a wise idea as well, and hopefully someone who originated that code will agree.
 
@@ -109,7 +109,7 @@ archive/issue_comments_037940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37940",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_037941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37941",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -210,16 +210,16 @@ I changed it to use generator comprehensions.
 archive/issue_comments_037944.json:
 ```json
 {
-    "body": "Attachment [4976-reviewer.patch](tarball://root/attachments/some-uuid/ticket4976/4976-reviewer.patch) by kcrisman created at 2009-02-04 03:51:23",
+    "body": "Attachment [4976-reviewer.patch](tarball://root/attachments/some-uuid/ticket4976/4976-reviewer.patch) by @kcrisman created at 2009-02-04 03:51:23",
     "created_at": "2009-02-04T03:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37944",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [4976-reviewer.patch](tarball://root/attachments/some-uuid/ticket4976/4976-reviewer.patch) by kcrisman created at 2009-02-04 03:51:23
+Attachment [4976-reviewer.patch](tarball://root/attachments/some-uuid/ticket4976/4976-reviewer.patch) by @kcrisman created at 2009-02-04 03:51:23
 
 
 
@@ -233,7 +233,7 @@ archive/issue_comments_037945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37945",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005364.json:
 ```json
 {
-    "body": "Assignee: was\n\nsome functions are not wraped which makes e.g. identity_matrix or transpose awfully slow for matrices over SR.\n(we do not use maxime.ident nor maxima.transpose)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5364\n\n",
+    "body": "Assignee: @williamstein\n\nsome functions are not wraped which makes e.g. identity_matrix or transpose awfully slow for matrices over SR.\n(we do not use maxime.ident nor maxima.transpose)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5364\n\n",
     "created_at": "2009-02-24T23:42:26Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_005364.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 some functions are not wraped which makes e.g. identity_matrix or transpose awfully slow for matrices over SR.
 (we do not use maxime.ident nor maxima.transpose)
@@ -40,7 +40,7 @@ archive/issue_comments_041327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5364#issuecomment-41327",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_041328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5364#issuecomment-41328",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007083.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nA few functions in functions/special.py need a little help to actually accept valid input.  Also, exp_int is duplicated in its functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7083\n\n",
+    "body": "Assignee: @burcin\n\nA few functions in functions/special.py need a little help to actually accept valid input.  Also, exp_int is duplicated in its functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7083\n\n",
     "created_at": "2009-09-30T15:03:10Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_007083.json:
     "title": "Improve a few special functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7083",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 A few functions in functions/special.py need a little help to actually accept valid input.  Also, exp_int is duplicated in its functionality.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7083
 archive/issue_comments_058549.json:
 ```json
 {
-    "body": "Attachment [trac_7083-special-funcs.patch](tarball://root/attachments/some-uuid/ticket7083/trac_7083-special-funcs.patch) by kcrisman created at 2009-09-30 15:04:02\n\nBased on 4.1.2.alpha4",
+    "body": "Attachment [trac_7083-special-funcs.patch](tarball://root/attachments/some-uuid/ticket7083/trac_7083-special-funcs.patch) by @kcrisman created at 2009-09-30 15:04:02\n\nBased on 4.1.2.alpha4",
     "created_at": "2009-09-30T15:04:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7083#issuecomment-58549",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7083-special-funcs.patch](tarball://root/attachments/some-uuid/ticket7083/trac_7083-special-funcs.patch) by kcrisman created at 2009-09-30 15:04:02
+Attachment [trac_7083-special-funcs.patch](tarball://root/attachments/some-uuid/ticket7083/trac_7083-special-funcs.patch) by @kcrisman created at 2009-09-30 15:04:02
 
 Based on 4.1.2.alpha4
 
@@ -57,7 +57,7 @@ archive/issue_comments_058550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7083#issuecomment-58550",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_058551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7083#issuecomment-58551",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_058552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7083#issuecomment-58552",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_058553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7083#issuecomment-58553",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_058554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7083#issuecomment-58554",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

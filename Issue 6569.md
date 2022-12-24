@@ -3,7 +3,7 @@
 archive/issues_006569.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rbeezer mjo\n\n\n```\n{{{\nsage: a=matrix(4,range(1,17),sparse=True)\nsage: a[[2.3],[2.1]]                     \n[0]\n}}}\n\nas compared to\n\n{{{\nsage: a=matrix(4,range(1,17))            \nsage: a[[2.3],[2.1]]         \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/tiny/8143/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.__getitem__ (sage/matrix/matrix0.c:4999)()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/matrix/matrix1.so in sage.matrix.matrix1.Matrix.matrix_from_rows_and_columns (sage/matrix/matrix1.c:8613)()\n\nTypeError: 'sage.rings.real_mpfr.RealLiteral' object cannot be interpreted as an index\n}}}\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6569\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rbeezer @orlitzky\n\n\n```\n{{{\nsage: a=matrix(4,range(1,17),sparse=True)\nsage: a[[2.3],[2.1]]                     \n[0]\n}}}\n\nas compared to\n\n{{{\nsage: a=matrix(4,range(1,17))            \nsage: a[[2.3],[2.1]]         \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/tiny/8143/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.__getitem__ (sage/matrix/matrix0.c:4999)()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/matrix/matrix1.so in sage.matrix.matrix1.Matrix.matrix_from_rows_and_columns (sage/matrix/matrix1.c:8613)()\n\nTypeError: 'sage.rings.real_mpfr.RealLiteral' object cannot be interpreted as an index\n}}}\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6569\n\n",
     "created_at": "2009-07-20T13:53:42Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_006569.json:
     "title": "sparse integer matrix doesn't raise an error on non-integer index",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6569",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rbeezer mjo
+CC:  @rbeezer @orlitzky
 
 
 ```
@@ -63,7 +63,7 @@ archive/issue_comments_053636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6569#issuecomment-53636",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_053637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6569#issuecomment-53637",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -94,16 +94,16 @@ Changing status from new to needs_review.
 archive/issue_comments_053638.json:
 ```json
 {
-    "body": "Attachment [sage-trac_6569.patch](tarball://root/attachments/some-uuid/ticket6569/sage-trac_6569.patch) by mjo created at 2012-01-22 19:38:14\n\nSome invalid indices weren't being caught in the general matrix[foo] accessor; the fact that non-sparse matrices failed with an error was an implementation detail.\n\nI think I've fixed them all, and doctested that sparse/dense behave the same way now.",
+    "body": "Attachment [sage-trac_6569.patch](tarball://root/attachments/some-uuid/ticket6569/sage-trac_6569.patch) by @orlitzky created at 2012-01-22 19:38:14\n\nSome invalid indices weren't being caught in the general matrix[foo] accessor; the fact that non-sparse matrices failed with an error was an implementation detail.\n\nI think I've fixed them all, and doctested that sparse/dense behave the same way now.",
     "created_at": "2012-01-22T19:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6569#issuecomment-53638",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_6569.patch](tarball://root/attachments/some-uuid/ticket6569/sage-trac_6569.patch) by mjo created at 2012-01-22 19:38:14
+Attachment [sage-trac_6569.patch](tarball://root/attachments/some-uuid/ticket6569/sage-trac_6569.patch) by @orlitzky created at 2012-01-22 19:38:14
 
 Some invalid indices weren't being caught in the general matrix[foo] accessor; the fact that non-sparse matrices failed with an error was an implementation detail.
 
@@ -121,7 +121,7 @@ archive/issue_comments_053639.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6569#issuecomment-53639",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_053640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6569#issuecomment-53640",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_053641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6569#issuecomment-53641",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

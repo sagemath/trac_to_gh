@@ -3,7 +3,7 @@
 archive/issues_008406.json:
 ```json
 {
-    "body": "Assignee: rlm\n\ntwo examples:\n\n```\nsage: G=Graph()\nsage: R.<a>=GF(3^3)\nsage: G.add_vertex(a^2)\nsage: G.vertices()\n[9]\n```\n\nThis should be `[a]`, but `int(a)=9`\n\n```\nsage: R.<x>=GF(3^3,'a')[]\nsage: G.add_vertex(x)\nValueError\n```\n\nThis should work as `x` is hashable.\n\n`int(x)` return a `ValueError`, but the code only tests for `TypeError`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8406\n\n",
+    "body": "Assignee: @rlmill\n\ntwo examples:\n\n```\nsage: G=Graph()\nsage: R.<a>=GF(3^3)\nsage: G.add_vertex(a^2)\nsage: G.vertices()\n[9]\n```\n\nThis should be `[a]`, but `int(a)=9`\n\n```\nsage: R.<x>=GF(3^3,'a')[]\nsage: G.add_vertex(x)\nValueError\n```\n\nThis should work as `x` is hashable.\n\n`int(x)` return a `ValueError`, but the code only tests for `TypeError`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8406\n\n",
     "created_at": "2010-03-01T08:28:27Z",
     "labels": [
         "graph theory",
@@ -17,7 +17,7 @@ archive/issues_008406.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 two examples:
 
@@ -94,7 +94,7 @@ archive/issue_comments_075311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75311",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_075314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75314",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_075315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75315",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_075318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75318",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_075319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75319",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_075322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75322",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

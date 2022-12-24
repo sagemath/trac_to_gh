@@ -3,7 +3,7 @@
 archive/issues_008621.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  bober cremona craigcitro\n\nI have added access to two new functions in lcalc wrapper.\n\ncompute_rank and hardy_z_function\n\nIssue created by migration from https://trac.sagemath.org/ticket/8621\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  bober @JohnCremona @craigcitro\n\nI have added access to two new functions in lcalc wrapper.\n\ncompute_rank and hardy_z_function\n\nIssue created by migration from https://trac.sagemath.org/ticket/8621\n\n",
     "created_at": "2010-03-29T00:36:00Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_008621.json:
     "title": "New functions in lcalc wrapper",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8621",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  bober cremona craigcitro
+CC:  bober @JohnCremona @craigcitro
 
 I have added access to two new functions in lcalc wrapper.
 
@@ -41,7 +41,7 @@ archive/issue_comments_078119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78119",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_078120.json:
 ```json
 {
-    "body": "Attachment [trac_8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621.patch) by rishi created at 2010-03-29 00:44:13\n\nI have added two new functions\n\n```\nsage: from sage.libs.lcalc.lcalc_Lfunction import (Lfunction_from_character, Lfunction_from_elliptic_curve)\nsage: chi=DirichletGroup(123)[31]\nsage: L1=Lfunction_from_character(chi)\nsage: L1.hardy_z_function(.5+5*I)\n-0.462453973892362 - 7.93526871565814e-15*I\nsage: L1.compute_rank()\n0\nsage: L2=Lfunction_from_elliptic_curve(EllipticCurve('37a'))\nsage: L2.compute_rank()\n1\nsage: L2.hardy_z_function(.5+6*I)\n-2.17184689048993 - 1.76053169785863e-15*I\nsage: L2.hardy_z_function(-.5+6*I)\n4.17981266933977 + 36.9688966864015*I\n```\n\n\nAlthough for elliptic curves, other programs will be better for analytic rank, I have added this because here it works for any L function",
+    "body": "Attachment [trac_8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621.patch) by @rishikesha created at 2010-03-29 00:44:13\n\nI have added two new functions\n\n```\nsage: from sage.libs.lcalc.lcalc_Lfunction import (Lfunction_from_character, Lfunction_from_elliptic_curve)\nsage: chi=DirichletGroup(123)[31]\nsage: L1=Lfunction_from_character(chi)\nsage: L1.hardy_z_function(.5+5*I)\n-0.462453973892362 - 7.93526871565814e-15*I\nsage: L1.compute_rank()\n0\nsage: L2=Lfunction_from_elliptic_curve(EllipticCurve('37a'))\nsage: L2.compute_rank()\n1\nsage: L2.hardy_z_function(.5+6*I)\n-2.17184689048993 - 1.76053169785863e-15*I\nsage: L2.hardy_z_function(-.5+6*I)\n4.17981266933977 + 36.9688966864015*I\n```\n\n\nAlthough for elliptic curves, other programs will be better for analytic rank, I have added this because here it works for any L function",
     "created_at": "2010-03-29T00:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78120",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [trac_8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621.patch) by rishi created at 2010-03-29 00:44:13
+Attachment [trac_8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621.patch) by @rishikesha created at 2010-03-29 00:44:13
 
 I have added two new functions
 
@@ -173,7 +173,7 @@ archive/issue_comments_078125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78125",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_078126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78126",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_078127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78127",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_078128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78128",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_078129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78129",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -306,16 +306,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_078130.json:
 ```json
 {
-    "body": "Attachment [trac_8621-review.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621-review.patch) by fbissey created at 2011-09-15 22:25:11\n\nI am attaching a patch to deal with this.",
+    "body": "Attachment [trac_8621-review.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621-review.patch) by @kiwifb created at 2011-09-15 22:25:11\n\nI am attaching a patch to deal with this.",
     "created_at": "2011-09-15T22:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78130",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_8621-review.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621-review.patch) by fbissey created at 2011-09-15 22:25:11
+Attachment [trac_8621-review.patch](tarball://root/attachments/some-uuid/ticket8621/trac_8621-review.patch) by @kiwifb created at 2011-09-15 22:25:11
 
 I am attaching a patch to deal with this.
 
@@ -331,7 +331,7 @@ archive/issue_comments_078131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78131",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_078132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78132",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -366,16 +366,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_078133.json:
 ```json
 {
-    "body": "Attachment [trac8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621.patch) by rishi created at 2012-04-15 20:00:46",
+    "body": "Attachment [trac8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621.patch) by @rishikesha created at 2012-04-15 20:00:46",
     "created_at": "2012-04-15T20:00:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78133",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [trac8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621.patch) by rishi created at 2012-04-15 20:00:46
+Attachment [trac8621.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621.patch) by @rishikesha created at 2012-04-15 20:00:46
 
 
 
@@ -389,7 +389,7 @@ archive/issue_comments_078134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78134",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_078135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78135",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_078136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78136",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_078139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78139",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_078140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78140",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -526,7 +526,7 @@ archive/issue_comments_078141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78141",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_078142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78142",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_078143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78143",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -577,16 +577,16 @@ replace previous (rebased for 5.11.rc1)
 archive/issue_comments_078144.json:
 ```json
 {
-    "body": "Attachment [trac8621_review_rebase.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621_review_rebase.patch) by cremona created at 2013-08-11 16:18:49\n\nI replaced the review patch with one which applies to 5.11.rc1.  The only change was in the index entry to the reference manual, which has since been rearranged.",
+    "body": "Attachment [trac8621_review_rebase.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621_review_rebase.patch) by @JohnCremona created at 2013-08-11 16:18:49\n\nI replaced the review patch with one which applies to 5.11.rc1.  The only change was in the index entry to the reference manual, which has since been rearranged.",
     "created_at": "2013-08-11T16:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78144",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac8621_review_rebase.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621_review_rebase.patch) by cremona created at 2013-08-11 16:18:49
+Attachment [trac8621_review_rebase.patch](tarball://root/attachments/some-uuid/ticket8621/trac8621_review_rebase.patch) by @JohnCremona created at 2013-08-11 16:18:49
 
 I replaced the review patch with one which applies to 5.11.rc1.  The only change was in the index entry to the reference manual, which has since been rearranged.
 
@@ -602,7 +602,7 @@ archive/issue_comments_078145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78145",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -620,7 +620,7 @@ archive/issue_comments_078146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78146",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_078147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78147",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -656,7 +656,7 @@ archive/issue_comments_078148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78148",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -677,7 +677,7 @@ archive/issue_comments_078149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78149",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_078150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78150",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -713,7 +713,7 @@ archive/issue_comments_078151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78151",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -733,7 +733,7 @@ archive/issue_comments_078152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78152",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -751,7 +751,7 @@ archive/issue_comments_078153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78153",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -771,7 +771,7 @@ archive/issue_comments_078154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8621",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8621#issuecomment-78154",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

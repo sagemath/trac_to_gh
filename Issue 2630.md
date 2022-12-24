@@ -3,7 +3,7 @@
 archive/issues_002630.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nFrom #311, \n  a Python API so testing is integrated into the SAGE shell (and into the notebook, although this is not particularly powerful at this time)\nThis ought to be easy to do now that sage-ptest is written in python.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2630\n\n",
+    "body": "Assignee: @garyfurnish\n\nFrom #311, \n  a Python API so testing is integrated into the SAGE shell (and into the notebook, although this is not particularly powerful at this time)\nThis ought to be easy to do now that sage-ptest is written in python.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2630\n\n",
     "created_at": "2008-03-21T16:02:10Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_002630.json:
     "title": "Python API for sage-ptest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2630",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 From #311, 
   a Python API so testing is integrated into the SAGE shell (and into the notebook, although this is not particularly powerful at this time)
@@ -39,7 +39,7 @@ archive/issue_comments_018077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2630#issuecomment-18077",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_018078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2630#issuecomment-18078",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_018079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2630#issuecomment-18079",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_018080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2630",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2630#issuecomment-18080",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

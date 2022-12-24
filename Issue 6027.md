@@ -128,7 +128,7 @@ archive/issue_comments_047992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6027#issuecomment-47992",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_047993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6027#issuecomment-47993",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_047994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6027#issuecomment-47994",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -192,16 +192,16 @@ Resolution: fixed
 archive/issue_comments_047995.json:
 ```json
 {
-    "body": "Attachment [trac_6027-osx104.patch](tarball://root/attachments/some-uuid/ticket6027/trac_6027-osx104.patch) by rlm created at 2009-06-25 17:13:53\n\nPositive review on William's additional patch, which is merged in sage-4.1.alpha1.",
+    "body": "Attachment [trac_6027-osx104.patch](tarball://root/attachments/some-uuid/ticket6027/trac_6027-osx104.patch) by @rlmill created at 2009-06-25 17:13:53\n\nPositive review on William's additional patch, which is merged in sage-4.1.alpha1.",
     "created_at": "2009-06-25T17:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6027",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6027#issuecomment-47995",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6027-osx104.patch](tarball://root/attachments/some-uuid/ticket6027/trac_6027-osx104.patch) by rlm created at 2009-06-25 17:13:53
+Attachment [trac_6027-osx104.patch](tarball://root/attachments/some-uuid/ticket6027/trac_6027-osx104.patch) by @rlmill created at 2009-06-25 17:13:53
 
 Positive review on William's additional patch, which is merged in sage-4.1.alpha1.
 

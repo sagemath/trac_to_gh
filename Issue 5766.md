@@ -14,7 +14,7 @@ archive/issues_005766.json:
     "title": "improve coverage of structure/formal_sum.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5766",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_045087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45087",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,16 +65,16 @@ sage: latex(FormalSum([(1,2), (5, 8/9), (-3, 7)]))
 archive/issue_comments_045088.json:
 ```json
 {
-    "body": "Attachment [trac_5766.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766.patch) by was created at 2009-04-12 01:40:24",
+    "body": "Attachment [trac_5766.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766.patch) by @williamstein created at 2009-04-12 01:40:24",
     "created_at": "2009-04-12T01:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45088",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5766.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766.patch) by was created at 2009-04-12 01:40:24
+Attachment [trac_5766.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766.patch) by @williamstein created at 2009-04-12 01:40:24
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_045089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45089",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -143,16 +143,16 @@ Michael
 archive/issue_comments_045091.json:
 ```json
 {
-    "body": "Attachment [trac_5766-doctest_fix.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-doctest_fix.patch) by was created at 2009-04-13 14:15:35",
+    "body": "Attachment [trac_5766-doctest_fix.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-doctest_fix.patch) by @williamstein created at 2009-04-13 14:15:35",
     "created_at": "2009-04-13T14:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45091",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5766-doctest_fix.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-doctest_fix.patch) by was created at 2009-04-13 14:15:35
+Attachment [trac_5766-doctest_fix.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-doctest_fix.patch) by @williamstein created at 2009-04-13 14:15:35
 
 
 
@@ -166,7 +166,7 @@ archive/issue_comments_045092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45092",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_045093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45093",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -220,16 +220,16 @@ They are sorted.  That's why the doctests failed for you -- because sort is not 
 archive/issue_comments_045094.json:
 ```json
 {
-    "body": "Attachment [trac_5766-part3.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-part3.patch) by was created at 2009-04-28 14:10:30",
+    "body": "Attachment [trac_5766-part3.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-part3.patch) by @williamstein created at 2009-04-28 14:10:30",
     "created_at": "2009-04-28T14:10:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45094",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5766-part3.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-part3.patch) by was created at 2009-04-28 14:10:30
+Attachment [trac_5766-part3.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-part3.patch) by @williamstein created at 2009-04-28 14:10:30
 
 
 
@@ -243,7 +243,7 @@ archive/issue_comments_045095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45095",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_045098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45098",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_045099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45099",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_045100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45100",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -370,16 +370,16 @@ Resolution: fixed
 archive/issue_comments_045101.json:
 ```json
 {
-    "body": "Attachment [trac_5766-rebased.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-rebased.patch) by mhansen created at 2009-06-04 18:33:58\n\nLooks good to me.\n\nMerged trac_5766-rebased.patch in 4.0.1.rc1.",
+    "body": "Attachment [trac_5766-rebased.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-rebased.patch) by @mwhansen created at 2009-06-04 18:33:58\n\nLooks good to me.\n\nMerged trac_5766-rebased.patch in 4.0.1.rc1.",
     "created_at": "2009-06-04T18:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45101",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5766-rebased.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-rebased.patch) by mhansen created at 2009-06-04 18:33:58
+Attachment [trac_5766-rebased.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-rebased.patch) by @mwhansen created at 2009-06-04 18:33:58
 
 Looks good to me.
 

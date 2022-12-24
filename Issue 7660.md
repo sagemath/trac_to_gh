@@ -3,7 +3,7 @@
 archive/issues_007660.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman\n\nFrom the following sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/951d510c814f894f\n\n\nArithmetic with inequalities can be confusing, since Sage does nothing to keep the inequality ``correct``. For example:\n\n\n```\nOn Thu, 10 Dec 2009 00:37:10 -0800 (PST)\n\"marik@mendelu.cz\" <marik@mendelu.cz> wrote:\n\n> sage: f = x + 3 < y - 2\n> sage: f*(-1)\n> -x - 3 < -y + 2\n```\n\n\nIt seems MMA doesn't apply any automatic simplification in this case:\n\n\n```\nOn Thu, 10 Dec 2009 09:54:36 -0800\nWilliam Stein <wstein@gmail.com> wrote:\n\n> Mathematica does something weird and formal:\n> \n> In[1]:= f := x+3 < y-2;\n> In[3]:= f*(-1)\n> Out[3]= -(3 + x < -2 + y)\n```\n\n\nMaple acts more intuitively, though the way ``formal products`` are printed leaves something to be desired, IMHO:\n\n\n```\nOn Thu, 10 Dec 2009 14:15:53 -0800\nWilliam Stein <wstein@gmail.com> wrote:\n\n> Here is what Maple does:\n> \n> flat:release_notes wstein$ maple\n>     |\\^/|     Maple 13 (APPLE UNIVERSAL OSX)\n> ._|\\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple\n> Inc. 2009 \\  MAPLE  /  All rights reserved. Maple is a trademark of\n>  <____ ____>  Waterloo Maple Inc.\n>       |       Type ? for help.\n> > f := x < y;  \n>                                   f := x < y\n> \n> > f*(-3);  \n>                                   -3 y < -3 x\n> \n> > f*z;  \n>                                   *(x < y, z)\n> \n> > f*a;  \n>                                   *(x < y, a)\n```\n\n\n\nWe should multiply both sides of the inequality only if the argument is a real number (as opposed to a symbol with real domain), and invert the relation when the argument is negative.\n\nNote that GiNaC leaves everything formal, like MMA, by default:\n\n\n```\nginsh - GiNaC Interactive Shell (ginac V1.5.3)\n  __,  _______  Copyright (C) 1999-2009 Johannes Gutenberg University Mainz,\n (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY.\n  ._) i N a C | You are welcome to redistribute it under certain conditions.\n<-------------' For details type `warranty;'.\n\nType ?? for a list of help topics.\n> f= x < y;\nx<y\n> f*-1;\n-(x<y)\n> f*-5;\n-5*(x<y)\n> f*-z;\n-z*(x<y)\n> f*z;\nz*(x<y)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7660\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nFrom the following sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/951d510c814f894f\n\n\nArithmetic with inequalities can be confusing, since Sage does nothing to keep the inequality ``correct``. For example:\n\n\n```\nOn Thu, 10 Dec 2009 00:37:10 -0800 (PST)\n\"marik@mendelu.cz\" <marik@mendelu.cz> wrote:\n\n> sage: f = x + 3 < y - 2\n> sage: f*(-1)\n> -x - 3 < -y + 2\n```\n\n\nIt seems MMA doesn't apply any automatic simplification in this case:\n\n\n```\nOn Thu, 10 Dec 2009 09:54:36 -0800\nWilliam Stein <wstein@gmail.com> wrote:\n\n> Mathematica does something weird and formal:\n> \n> In[1]:= f := x+3 < y-2;\n> In[3]:= f*(-1)\n> Out[3]= -(3 + x < -2 + y)\n```\n\n\nMaple acts more intuitively, though the way ``formal products`` are printed leaves something to be desired, IMHO:\n\n\n```\nOn Thu, 10 Dec 2009 14:15:53 -0800\nWilliam Stein <wstein@gmail.com> wrote:\n\n> Here is what Maple does:\n> \n> flat:release_notes wstein$ maple\n>     |\\^/|     Maple 13 (APPLE UNIVERSAL OSX)\n> ._|\\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple\n> Inc. 2009 \\  MAPLE  /  All rights reserved. Maple is a trademark of\n>  <____ ____>  Waterloo Maple Inc.\n>       |       Type ? for help.\n> > f := x < y;  \n>                                   f := x < y\n> \n> > f*(-3);  \n>                                   -3 y < -3 x\n> \n> > f*z;  \n>                                   *(x < y, z)\n> \n> > f*a;  \n>                                   *(x < y, a)\n```\n\n\n\nWe should multiply both sides of the inequality only if the argument is a real number (as opposed to a symbol with real domain), and invert the relation when the argument is negative.\n\nNote that GiNaC leaves everything formal, like MMA, by default:\n\n\n```\nginsh - GiNaC Interactive Shell (ginac V1.5.3)\n  __,  _______  Copyright (C) 1999-2009 Johannes Gutenberg University Mainz,\n (__) *       | Germany.  This is free software with ABSOLUTELY NO WARRANTY.\n  ._) i N a C | You are welcome to redistribute it under certain conditions.\n<-------------' For details type `warranty;'.\n\nType ?? for a list of help topics.\n> f= x < y;\nx<y\n> f*-1;\n-(x<y)\n> f*-5;\n-5*(x<y)\n> f*-z;\n-z*(x<y)\n> f*z;\nz*(x<y)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7660\n\n",
     "created_at": "2009-12-11T13:55:02Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_007660.json:
     "title": "arithmetic with inequalities confusing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7660",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman
+CC:  @kcrisman
 
 From the following sage-devel thread:
 
@@ -151,7 +151,7 @@ archive/issue_comments_065522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65522",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_065523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65523",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_065524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65524",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_065525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65525",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -254,7 +254,7 @@ archive/issue_comments_065526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65526",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_065528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65528",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -328,16 +328,16 @@ prototype patch
 archive/issue_comments_065529.json:
 ```json
 {
-    "body": "Attachment [trac_7660-inequality_arithmetic.patch](tarball://root/attachments/some-uuid/ticket7660/trac_7660-inequality_arithmetic.patch) by burcin created at 2013-01-09 11:09:14\n\nattachment:trac_7660-inequality_arithmetic.patch comments out a few lines in `_add_`, `_mul_`, etc., methods of symbolic expressions to pass the arithmetic on to GiNaC directly. I don't have time to test this and verify that it returns sensible answers, however we decide to define \"sensible\". Please test, see what doctests fail and try to produce horrific wrong results.\n\nQuite a few doctests and some documentation will have to change to match this new design decision. I'd like to make sure we agree on the behavior before trying to produce a clean patch. Of course, I'd appreciate help with the documentation in any case.",
+    "body": "Attachment [trac_7660-inequality_arithmetic.patch](tarball://root/attachments/some-uuid/ticket7660/trac_7660-inequality_arithmetic.patch) by @burcin created at 2013-01-09 11:09:14\n\nattachment:trac_7660-inequality_arithmetic.patch comments out a few lines in `_add_`, `_mul_`, etc., methods of symbolic expressions to pass the arithmetic on to GiNaC directly. I don't have time to test this and verify that it returns sensible answers, however we decide to define \"sensible\". Please test, see what doctests fail and try to produce horrific wrong results.\n\nQuite a few doctests and some documentation will have to change to match this new design decision. I'd like to make sure we agree on the behavior before trying to produce a clean patch. Of course, I'd appreciate help with the documentation in any case.",
     "created_at": "2013-01-09T11:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65529",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7660-inequality_arithmetic.patch](tarball://root/attachments/some-uuid/ticket7660/trac_7660-inequality_arithmetic.patch) by burcin created at 2013-01-09 11:09:14
+Attachment [trac_7660-inequality_arithmetic.patch](tarball://root/attachments/some-uuid/ticket7660/trac_7660-inequality_arithmetic.patch) by @burcin created at 2013-01-09 11:09:14
 
 attachment:trac_7660-inequality_arithmetic.patch comments out a few lines in `_add_`, `_mul_`, etc., methods of symbolic expressions to pass the arithmetic on to GiNaC directly. I don't have time to test this and verify that it returns sensible answers, however we decide to define "sensible". Please test, see what doctests fail and try to produce horrific wrong results.
 
@@ -355,7 +355,7 @@ archive/issue_comments_065530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65530",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_065531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65531",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_065532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65532",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_065533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65533",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_065536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65536",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -584,7 +584,7 @@ archive/issue_comments_065539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65539",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -602,7 +602,7 @@ archive/issue_comments_065540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65540",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_065542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65542",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -658,7 +658,7 @@ archive/issue_comments_065543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65543",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_065544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65544",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -696,7 +696,7 @@ archive/issue_comments_065545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65545",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -737,7 +737,7 @@ archive/issue_comments_065546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65546",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -765,7 +765,7 @@ archive/issue_comments_065547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65547",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -786,7 +786,7 @@ archive/issue_comments_065548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65548",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -807,7 +807,7 @@ archive/issue_comments_065549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65549",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -827,7 +827,7 @@ archive/issue_comments_065550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65550",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -845,7 +845,7 @@ archive/issue_comments_065551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65551",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -867,7 +867,7 @@ archive/issue_comments_065552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65552",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -885,7 +885,7 @@ archive/issue_comments_065553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65553",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -905,7 +905,7 @@ archive/issue_comments_065554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65554",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -936,7 +936,7 @@ archive/issue_comments_065555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65555",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -1076,7 +1076,7 @@ archive/issue_comments_065561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65561",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -1094,7 +1094,7 @@ archive/issue_comments_065562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65562",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -1112,7 +1112,7 @@ archive/issue_comments_065563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65563",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -1150,7 +1150,7 @@ archive/issue_comments_065565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65565",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -1186,7 +1186,7 @@ archive/issue_comments_065567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65567",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -1204,7 +1204,7 @@ archive/issue_comments_065568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65568",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -1240,7 +1240,7 @@ archive/issue_comments_065570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65570",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -1258,7 +1258,7 @@ archive/issue_comments_065571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65571",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1276,7 +1276,7 @@ archive/issue_comments_065572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65572",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1312,7 +1312,7 @@ archive/issue_comments_065574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65574",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -1330,7 +1330,7 @@ archive/issue_comments_065575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65575",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1348,7 +1348,7 @@ archive/issue_comments_065576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65576",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1366,7 +1366,7 @@ archive/issue_comments_065577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65577",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -1384,7 +1384,7 @@ archive/issue_comments_065578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65578",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -1402,7 +1402,7 @@ archive/issue_comments_065579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65579",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -1420,7 +1420,7 @@ archive/issue_comments_065580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65580",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -1438,7 +1438,7 @@ archive/issue_comments_065581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7660",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7660#issuecomment-65581",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

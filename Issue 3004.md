@@ -14,7 +14,7 @@ archive/issues_003004.json:
     "title": "bug in coercion edge case -- probably easy to fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3004",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody

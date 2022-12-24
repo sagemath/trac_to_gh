@@ -14,7 +14,7 @@ archive/issues_003727.json:
     "title": "bug report link in notebook for quick submitting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3727",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: boothby
@@ -49,7 +49,7 @@ archive/issue_comments_026452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3727#issuecomment-26452",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_026453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3727#issuecomment-26453",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -82,16 +82,16 @@ including the stack trace automatically is not possible, but i added an addition
 archive/issue_comments_026454.json:
 ```json
 {
-    "body": "Attachment [3727-quick-bug-report-in-notebook-schilly-1.patch](tarball://root/attachments/some-uuid/ticket3727/3727-quick-bug-report-in-notebook-schilly-1.patch) by schilly created at 2008-07-30 18:30:17\n\nduplicating functionality of help() to bugreport() in javascript, updated",
+    "body": "Attachment [3727-quick-bug-report-in-notebook-schilly-1.patch](tarball://root/attachments/some-uuid/ticket3727/3727-quick-bug-report-in-notebook-schilly-1.patch) by @haraldschilly created at 2008-07-30 18:30:17\n\nduplicating functionality of help() to bugreport() in javascript, updated",
     "created_at": "2008-07-30T18:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3727",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3727#issuecomment-26454",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [3727-quick-bug-report-in-notebook-schilly-1.patch](tarball://root/attachments/some-uuid/ticket3727/3727-quick-bug-report-in-notebook-schilly-1.patch) by schilly created at 2008-07-30 18:30:17
+Attachment [3727-quick-bug-report-in-notebook-schilly-1.patch](tarball://root/attachments/some-uuid/ticket3727/3727-quick-bug-report-in-notebook-schilly-1.patch) by @haraldschilly created at 2008-07-30 18:30:17
 
 duplicating functionality of help() to bugreport() in javascript, updated
 

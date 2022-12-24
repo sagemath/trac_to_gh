@@ -3,7 +3,7 @@
 archive/issues_007208.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: Family, enumerated set\n\nLog of the attached patch:\n\n- Families are parents, in the (Finite/Infinite)EnumeratedSets category\n- New class EnumeratedFamily; Family accept any (Finite)EnumeratedSet as input\n- Improves the output of lazy families, and update accordingly the\n  doctests in CombinatorialFreeModule, ...\n- Clean trailing whitespaces\n- Use TestSuite\n\nIssue created by migration from https://trac.sagemath.org/ticket/7208\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: Family, enumerated set\n\nLog of the attached patch:\n\n- Families are parents, in the (Finite/Infinite)EnumeratedSets category\n- New class EnumeratedFamily; Family accept any (Finite)EnumeratedSet as input\n- Improves the output of lazy families, and update accordingly the\n  doctests in CombinatorialFreeModule, ...\n- Clean trailing whitespaces\n- Use TestSuite\n\nIssue created by migration from https://trac.sagemath.org/ticket/7208\n\n",
     "created_at": "2009-10-14T12:44:35Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_007208.json:
     "title": "Refactorisation of families",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7208",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -48,7 +48,7 @@ archive/issue_comments_059817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7208#issuecomment-59817",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_059818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7208#issuecomment-59818",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_059819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7208#issuecomment-59819",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_059820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7208#issuecomment-59820",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_059821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7208#issuecomment-59821",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_059822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7208#issuecomment-59822",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -155,16 +155,16 @@ The updated patch is supposed to fix it. Florent: please review!
 archive/issue_comments_059823.json:
 ```json
 {
-    "body": "Attachment [trac_7208_family_enumset.patch](tarball://root/attachments/some-uuid/ticket7208/trac_7208_family_enumset.patch) by nthiery created at 2009-10-16 15:01:00",
+    "body": "Attachment [trac_7208_family_enumset.patch](tarball://root/attachments/some-uuid/ticket7208/trac_7208_family_enumset.patch) by @nthiery created at 2009-10-16 15:01:00",
     "created_at": "2009-10-16T15:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7208#issuecomment-59823",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_7208_family_enumset.patch](tarball://root/attachments/some-uuid/ticket7208/trac_7208_family_enumset.patch) by nthiery created at 2009-10-16 15:01:00
+Attachment [trac_7208_family_enumset.patch](tarball://root/attachments/some-uuid/ticket7208/trac_7208_family_enumset.patch) by @nthiery created at 2009-10-16 15:01:00
 
 
 
@@ -178,7 +178,7 @@ archive/issue_comments_059824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7208#issuecomment-59824",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_059825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7208#issuecomment-59825",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_059826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7208#issuecomment-59826",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_059827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7208",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7208#issuecomment-59827",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

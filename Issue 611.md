@@ -14,7 +14,7 @@ archive/issues_000611.json:
     "title": "refcount function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/611",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/611
 archive/issue_comments_003147.json:
 ```json
 {
-    "body": "Attachment [refcount.patch](tarball://root/attachments/some-uuid/ticket611/refcount.patch) by was created at 2007-09-07 01:28:57",
+    "body": "Attachment [refcount.patch](tarball://root/attachments/some-uuid/ticket611/refcount.patch) by @williamstein created at 2007-09-07 01:28:57",
     "created_at": "2007-09-07T01:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/611#issuecomment-3147",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [refcount.patch](tarball://root/attachments/some-uuid/ticket611/refcount.patch) by was created at 2007-09-07 01:28:57
+Attachment [refcount.patch](tarball://root/attachments/some-uuid/ticket611/refcount.patch) by @williamstein created at 2007-09-07 01:28:57
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_003148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/611#issuecomment-3148",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009505.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThe following is ok:\n\n```\nsage: var('x,y,z')\nsage: f=x*y*z^2\nsage: f.coeff(z^2)\nx*y\n```\n\nHowever the following is not:\n\n```\nsage: f.coeff(x*y)\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9505\n\n",
+    "body": "Assignee: @malb\n\nThe following is ok:\n\n```\nsage: var('x,y,z')\nsage: f=x*y*z^2\nsage: f.coeff(z^2)\nx*y\n```\n\nHowever the following is not:\n\n```\nsage: f.coeff(x*y)\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9505\n\n",
     "created_at": "2010-07-15T09:12:14Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_009505.json:
     "title": "coeff(f,x*y) does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9505",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 The following is ok:
 
@@ -52,7 +52,7 @@ archive/issue_comments_091309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91309",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_091310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91310",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_091311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91311",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -101,16 +101,16 @@ Changing component from commutative algebra to symbolics.
 archive/issue_comments_091312.json:
 ```json
 {
-    "body": "Changing assignee from malb to burcin.",
+    "body": "Changing assignee from @malb to @burcin.",
     "created_at": "2010-09-19T15:00:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91312",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from malb to burcin.
+Changing assignee from @malb to @burcin.
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_091313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91313",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_091314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91314",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_091315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91315",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_091316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91316",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -311,16 +311,16 @@ Out[12]= z
 archive/issue_comments_091317.json:
 ```json
 {
-    "body": "Attachment [trac_9505.patch](tarball://root/attachments/some-uuid/ticket9505/trac_9505.patch) by zimmerma created at 2013-08-23 13:00:11\n\nattached is a temporary fix that calls coeff in turn for each term `x^n` in `s`.\nIn addition it checks the extra argument `n` is only used for a single symbol.\n\nPaul",
+    "body": "Attachment [trac_9505.patch](tarball://root/attachments/some-uuid/ticket9505/trac_9505.patch) by @zimmermann6 created at 2013-08-23 13:00:11\n\nattached is a temporary fix that calls coeff in turn for each term `x^n` in `s`.\nIn addition it checks the extra argument `n` is only used for a single symbol.\n\nPaul",
     "created_at": "2013-08-23T13:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91317",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_9505.patch](tarball://root/attachments/some-uuid/ticket9505/trac_9505.patch) by zimmerma created at 2013-08-23 13:00:11
+Attachment [trac_9505.patch](tarball://root/attachments/some-uuid/ticket9505/trac_9505.patch) by @zimmermann6 created at 2013-08-23 13:00:11
 
 attached is a temporary fix that calls coeff in turn for each term `x^n` in `s`.
 In addition it checks the extra argument `n` is only used for a single symbol.
@@ -339,7 +339,7 @@ archive/issue_comments_091318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91318",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_091319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91319",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_091320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91320",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_091323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91323",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_091324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91324",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_091325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91325",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -545,7 +545,7 @@ archive/issue_comments_091328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91328",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -563,7 +563,7 @@ archive/issue_comments_091329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9505",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9505#issuecomment-91329",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

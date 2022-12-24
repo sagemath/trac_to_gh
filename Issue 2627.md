@@ -14,7 +14,7 @@ archive/issues_002627.json:
     "title": "Integer(abs(gamma(n+1))) is not always equal to factorial(n) for n a positive integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2627",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: cwitty
@@ -60,7 +60,7 @@ archive/issue_comments_018051.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2627#issuecomment-18051",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -73,16 +73,16 @@ The right fix would probably be to add a .gamma() method to the integers, and th
 archive/issue_comments_018052.json:
 ```json
 {
-    "body": "Attachment [2627-exact-gamma.patch](tarball://root/attachments/some-uuid/ticket2627/2627-exact-gamma.patch) by robertwb created at 2008-03-26 11:17:51\n\n\n```\nsage: sage: [ Integer(abs(gamma(n+1))) - factorial(n) for n in range(20, 30) ]\n[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\nsage: gamma(1/2)\nsqrt(pi)\nsage: gamma(-101/2)\n-2251799813685248*sqrt(pi)/275264606114823679801052037785492781962370429385126144787167211167753726318359375\n```\n",
+    "body": "Attachment [2627-exact-gamma.patch](tarball://root/attachments/some-uuid/ticket2627/2627-exact-gamma.patch) by @robertwb created at 2008-03-26 11:17:51\n\n\n```\nsage: sage: [ Integer(abs(gamma(n+1))) - factorial(n) for n in range(20, 30) ]\n[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\nsage: gamma(1/2)\nsqrt(pi)\nsage: gamma(-101/2)\n-2251799813685248*sqrt(pi)/275264606114823679801052037785492781962370429385126144787167211167753726318359375\n```\n",
     "created_at": "2008-03-26T11:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2627#issuecomment-18052",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2627-exact-gamma.patch](tarball://root/attachments/some-uuid/ticket2627/2627-exact-gamma.patch) by robertwb created at 2008-03-26 11:17:51
+Attachment [2627-exact-gamma.patch](tarball://root/attachments/some-uuid/ticket2627/2627-exact-gamma.patch) by @robertwb created at 2008-03-26 11:17:51
 
 
 ```
@@ -107,7 +107,7 @@ archive/issue_comments_018053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2627",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2627#issuecomment-18053",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

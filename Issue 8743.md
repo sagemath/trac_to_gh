@@ -3,7 +3,7 @@
 archive/issues_008743.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  was rbeezer\n\nchange_ring on a rational matrix goes against the documentation for the generic change_ring function, which states that a copy is always returned.  This patch fixes this and adds a TestSuite test for it (the advantage of a testsuite test is that this will be run for *every* matrix class, not just the rational matrix class).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8743\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @williamstein @rbeezer\n\nchange_ring on a rational matrix goes against the documentation for the generic change_ring function, which states that a copy is always returned.  This patch fixes this and adds a TestSuite test for it (the advantage of a testsuite test is that this will be run for *every* matrix class, not just the rational matrix class).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8743\n\n",
     "created_at": "2010-04-22T01:17:21Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_008743.json:
     "title": "change_ring on a rational matrix may return self",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8743",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  was rbeezer
+CC:  @williamstein @rbeezer
 
 change_ring on a rational matrix goes against the documentation for the generic change_ring function, which states that a copy is always returned.  This patch fixes this and adds a TestSuite test for it (the advantage of a testsuite test is that this will be run for *every* matrix class, not just the rational matrix class).
 
@@ -39,7 +39,7 @@ archive/issue_comments_079991.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8743#issuecomment-79991",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_079992.json:
 ```json
 {
-    "body": "Attachment [trac-8743-change_ring.patch](tarball://root/attachments/some-uuid/ticket8743/trac-8743-change_ring.patch) by jason created at 2010-04-22 01:41:00",
+    "body": "Attachment [trac-8743-change_ring.patch](tarball://root/attachments/some-uuid/ticket8743/trac-8743-change_ring.patch) by @jasongrout created at 2010-04-22 01:41:00",
     "created_at": "2010-04-22T01:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8743#issuecomment-79992",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8743-change_ring.patch](tarball://root/attachments/some-uuid/ticket8743/trac-8743-change_ring.patch) by jason created at 2010-04-22 01:41:00
+Attachment [trac-8743-change_ring.patch](tarball://root/attachments/some-uuid/ticket8743/trac-8743-change_ring.patch) by @jasongrout created at 2010-04-22 01:41:00
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_079995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8743#issuecomment-79995",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_079996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8743#issuecomment-79996",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_079997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8743",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8743#issuecomment-79997",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009260.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  kcrisman\n\nThe documentation from `RealIntervalField` says:\n\n```\n       See the documentation for ``RealIntervalField_class`` for many more\n       examples.\n```\n\nHowever there is no documentation for `RealIntervalField_class`:\n\n```\nsage: RealIntervalField_class?\nObject `RealIntervalField_class` not found.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9260\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nThe documentation from `RealIntervalField` says:\n\n```\n       See the documentation for ``RealIntervalField_class`` for many more\n       examples.\n```\n\nHowever there is no documentation for `RealIntervalField_class`:\n\n```\nsage: RealIntervalField_class?\nObject `RealIntervalField_class` not found.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9260\n\n",
     "created_at": "2010-06-18T09:52:05Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009260.json:
     "title": "missing pointer in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9260",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: mvngu
 
-CC:  kcrisman
+CC:  @kcrisman
 
 The documentation from `RealIntervalField` says:
 
@@ -52,7 +52,7 @@ archive/issue_comments_087131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87131",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_087132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87132",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_087133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87133",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_087134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87134",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_087135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87135",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_087136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87136",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -179,16 +179,16 @@ Based on Sage 5.1.beta0
 archive/issue_comments_087137.json:
 ```json
 {
-    "body": "Attachment [trac_9260.patch](tarball://root/attachments/some-uuid/ticket9260/trac_9260.patch) by kcrisman created at 2012-05-26 19:59:31",
+    "body": "Attachment [trac_9260.patch](tarball://root/attachments/some-uuid/ticket9260/trac_9260.patch) by @kcrisman created at 2012-05-26 19:59:31",
     "created_at": "2012-05-26T19:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87137",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9260.patch](tarball://root/attachments/some-uuid/ticket9260/trac_9260.patch) by kcrisman created at 2012-05-26 19:59:31
+Attachment [trac_9260.patch](tarball://root/attachments/some-uuid/ticket9260/trac_9260.patch) by @kcrisman created at 2012-05-26 19:59:31
 
 
 
@@ -202,7 +202,7 @@ archive/issue_comments_087138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87138",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_087139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87139",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_087140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87140",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_087141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87141",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -269,16 +269,16 @@ apply to $SAGE_ROOT/devel/sage
 archive/issue_comments_087142.json:
 ```json
 {
-    "body": "Attachment [trac_9260.reviewer.patch](tarball://root/attachments/some-uuid/ticket9260/trac_9260.reviewer.patch) by kini created at 2012-05-27 17:00:23\n\nHere's a reviewer patch to fix the \"excessively long line\", per your suggestion :)",
+    "body": "Attachment [trac_9260.reviewer.patch](tarball://root/attachments/some-uuid/ticket9260/trac_9260.reviewer.patch) by @kini created at 2012-05-27 17:00:23\n\nHere's a reviewer patch to fix the \"excessively long line\", per your suggestion :)",
     "created_at": "2012-05-27T17:00:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87142",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
-Attachment [trac_9260.reviewer.patch](tarball://root/attachments/some-uuid/ticket9260/trac_9260.reviewer.patch) by kini created at 2012-05-27 17:00:23
+Attachment [trac_9260.reviewer.patch](tarball://root/attachments/some-uuid/ticket9260/trac_9260.reviewer.patch) by @kini created at 2012-05-27 17:00:23
 
 Here's a reviewer patch to fix the "excessively long line", per your suggestion :)
 
@@ -294,7 +294,7 @@ archive/issue_comments_087143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87143",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_087144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87144",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_087145.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87145",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_087146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87146",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_087147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87147",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_087148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87148",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_087149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87149",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -422,7 +422,7 @@ archive/issue_comments_087150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9260",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9260#issuecomment-87150",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

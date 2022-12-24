@@ -3,7 +3,7 @@
 archive/issues_005402.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jbandlow\n\nKeywords: determinant\n\nThe following timings should be able to be improved.\n\n```\n       sage: dd = {(0,0):1}\n       sage: %timeit matrix(8,dd).det()\n       10 loops, best of 3: 213 ms per loop\n       sage: %timeit matrix(8,dd,sparse = False).det()\n       100 loops, best of 3: 629 \u00b5s per loop\n```\n\nWilliam suggested:\nLikely the fix will be to implement\na 1-line function that is just\n\n```\n  return self.dense_matrix().det(*args, **kwds)\n```\n\nuntil there is somebody who wants to implement a sparse algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5402\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jbandlow\n\nKeywords: determinant\n\nThe following timings should be able to be improved.\n\n```\n       sage: dd = {(0,0):1}\n       sage: %timeit matrix(8,dd).det()\n       10 loops, best of 3: 213 ms per loop\n       sage: %timeit matrix(8,dd,sparse = False).det()\n       100 loops, best of 3: 629 \u00b5s per loop\n```\n\nWilliam suggested:\nLikely the fix will be to implement\na 1-line function that is just\n\n```\n  return self.dense_matrix().det(*args, **kwds)\n```\n\nuntil there is somebody who wants to implement a sparse algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5402\n\n",
     "created_at": "2009-02-28T20:16:47Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_005402.json:
     "title": "Sparse determinants are slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5402",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jbandlow
+CC:  @jbandlow
 
 Keywords: determinant
 
@@ -59,7 +59,7 @@ archive/issue_comments_041719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5402#issuecomment-41719",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_041720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5402#issuecomment-41720",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_041724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5402#issuecomment-41724",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_041725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5402#issuecomment-41725",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_041728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5402#issuecomment-41728",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_041733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5402#issuecomment-41733",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_041735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5402#issuecomment-41735",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_041737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5402#issuecomment-41737",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_041738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5402",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5402#issuecomment-41738",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

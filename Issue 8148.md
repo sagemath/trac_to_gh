@@ -3,7 +3,7 @@
 archive/issues_008148.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat brunellus mjo\n\nIn Sage 4.3.2.alpha0:\n\n```\nsage: Q = Poset({1: [], 3: [], 2: [1, 3]})\nsage: Q.show()  # works fine\nsage: Q.dual().show()\n...\nIndexError: list index out of range\n```\n\nNote that the following works, and is what I'm using in my code right now:\n\n```\nsage: Poset(Q.hasse_diagram().reverse()).show()\n```\n\nActually, though, this fails if Q is defined instead to be\n\n```\nsage: Q = Poset({1: [], 2: [1]})\nsage: Q.show()  # works fine, although the picture looks a little funny\nsage: Poset(Q.hasse_diagram().reverse()).show()\n...\nRuntimeError: Error building image\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8148\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat brunellus @orlitzky\n\nIn Sage 4.3.2.alpha0:\n\n```\nsage: Q = Poset({1: [], 3: [], 2: [1, 3]})\nsage: Q.show()  # works fine\nsage: Q.dual().show()\n...\nIndexError: list index out of range\n```\n\nNote that the following works, and is what I'm using in my code right now:\n\n```\nsage: Poset(Q.hasse_diagram().reverse()).show()\n```\n\nActually, though, this fails if Q is defined instead to be\n\n```\nsage: Q = Poset({1: [], 2: [1]})\nsage: Q.show()  # works fine, although the picture looks a little funny\nsage: Poset(Q.hasse_diagram().reverse()).show()\n...\nRuntimeError: Error building image\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8148\n\n",
     "created_at": "2010-02-02T04:52:34Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_008148.json:
     "title": "looking at the dual of a poset: IndexError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8148",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: sage-combinat
 
-CC:  sage-combinat brunellus mjo
+CC:  sage-combinat brunellus @orlitzky
 
 In Sage 4.3.2.alpha0:
 
@@ -189,7 +189,7 @@ archive/issue_comments_071628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71628",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_071630.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71630",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_071632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71632",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_071633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71633",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_071634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8148",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71634",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

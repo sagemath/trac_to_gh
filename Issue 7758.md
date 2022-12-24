@@ -14,7 +14,7 @@ archive/issues_007758.json:
     "title": "doctest failure on OS X 10.5 intel due to randomization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7758",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -60,7 +60,7 @@ archive/issue_comments_066806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7758#issuecomment-66806",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,16 +73,16 @@ Changing status from new to needs_review.
 archive/issue_comments_066807.json:
 ```json
 {
-    "body": "Attachment [sagelib_7758.patch](tarball://root/attachments/some-uuid/ticket7758/sagelib_7758.patch) by was created at 2009-12-24 07:55:47",
+    "body": "Attachment [sagelib_7758.patch](tarball://root/attachments/some-uuid/ticket7758/sagelib_7758.patch) by @williamstein created at 2009-12-24 07:55:47",
     "created_at": "2009-12-24T07:55:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7758#issuecomment-66807",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sagelib_7758.patch](tarball://root/attachments/some-uuid/ticket7758/sagelib_7758.patch) by was created at 2009-12-24 07:55:47
+Attachment [sagelib_7758.patch](tarball://root/attachments/some-uuid/ticket7758/sagelib_7758.patch) by @williamstein created at 2009-12-24 07:55:47
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_066808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7758#issuecomment-66808",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -109,16 +109,16 @@ I merged this into 4.3.rc2 anyways, since 4.3 is lingering forever.   I'm leavin
 archive/issue_comments_066809.json:
 ```json
 {
-    "body": "Attachment [sagelib_7758-part2.patch](tarball://root/attachments/some-uuid/ticket7758/sagelib_7758-part2.patch) by ncohen created at 2009-12-24 22:26:16",
+    "body": "Attachment [sagelib_7758-part2.patch](tarball://root/attachments/some-uuid/ticket7758/sagelib_7758-part2.patch) by @nathanncohen created at 2009-12-24 22:26:16",
     "created_at": "2009-12-24T22:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7758#issuecomment-66809",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [sagelib_7758-part2.patch](tarball://root/attachments/some-uuid/ticket7758/sagelib_7758-part2.patch) by ncohen created at 2009-12-24 22:26:16
+Attachment [sagelib_7758-part2.patch](tarball://root/attachments/some-uuid/ticket7758/sagelib_7758-part2.patch) by @nathanncohen created at 2009-12-24 22:26:16
 
 
 
@@ -132,7 +132,7 @@ archive/issue_comments_066810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7758#issuecomment-66810",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_066811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7758#issuecomment-66811",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

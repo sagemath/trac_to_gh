@@ -44,7 +44,7 @@ archive/issue_comments_016282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2413#issuecomment-16282",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 

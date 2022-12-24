@@ -3,7 +3,7 @@
 archive/issues_006950.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  malb\n\nIt would be nice to have an efficient implementation for computing the algebraic immunity of a Boolean function and finding annihilators.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6950\n\n",
+    "body": "Assignee: somebody\n\nCC:  @malb\n\nIt would be nice to have an efficient implementation for computing the algebraic immunity of a Boolean function and finding annihilators.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6950\n\n",
     "created_at": "2009-09-17T19:28:30Z",
     "labels": [
         "cryptography",
@@ -19,7 +19,7 @@ archive/issues_006950.json:
 ```
 Assignee: somebody
 
-CC:  malb
+CC:  @malb
 
 It would be nice to have an efficient implementation for computing the algebraic immunity of a Boolean function and finding annihilators.
 
@@ -77,7 +77,7 @@ archive/issue_comments_057476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6950#issuecomment-57476",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_057477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6950#issuecomment-57477",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_057479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6950",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6950#issuecomment-57479",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

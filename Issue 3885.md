@@ -3,7 +3,7 @@
 archive/issues_003885.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nSalman Butt ran into the following bug:\n\n\n```\nsage: V = QQ**2\nsage: W = V.subspace([[1,2]])\nsage: W([2,1])\n(2, 1)\n```\n\n\nFix is attached, but the fact that you can still do the following is possibly worrisome:\n\n\n```\nsage: V = QQ**2\nsage: W = V.subspace([[1,2]])\nsage: W([2,1], check=False) in W\nTrue\n```\n\n\nI just started a sage-devel thread to see if we should also stop this, i.e. not let users shoot themselves in the foot so easily.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3885\n\n",
+    "body": "Assignee: @craigcitro\n\nSalman Butt ran into the following bug:\n\n\n```\nsage: V = QQ**2\nsage: W = V.subspace([[1,2]])\nsage: W([2,1])\n(2, 1)\n```\n\n\nFix is attached, but the fact that you can still do the following is possibly worrisome:\n\n\n```\nsage: V = QQ**2\nsage: W = V.subspace([[1,2]])\nsage: W([2,1], check=False) in W\nTrue\n```\n\n\nI just started a sage-devel thread to see if we should also stop this, i.e. not let users shoot themselves in the foot so easily.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3885\n\n",
     "created_at": "2008-08-17T21:58:14Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003885.json:
     "title": "[with patch, needs review and discussion] Bug in free module __call__ method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3885",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Salman Butt ran into the following bug:
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3885
 archive/issue_comments_027716.json:
 ```json
 {
-    "body": "Attachment [trac-3885.patch](tarball://root/attachments/some-uuid/ticket3885/trac-3885.patch) by craigcitro created at 2008-08-17 21:59:43",
+    "body": "Attachment [trac-3885.patch](tarball://root/attachments/some-uuid/ticket3885/trac-3885.patch) by @craigcitro created at 2008-08-17 21:59:43",
     "created_at": "2008-08-17T21:59:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27716",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3885.patch](tarball://root/attachments/some-uuid/ticket3885/trac-3885.patch) by craigcitro created at 2008-08-17 21:59:43
+Attachment [trac-3885.patch](tarball://root/attachments/some-uuid/ticket3885/trac-3885.patch) by @craigcitro created at 2008-08-17 21:59:43
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_027717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27717",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_027718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27718",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_027719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27719",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_027721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27721",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_027723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27723",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

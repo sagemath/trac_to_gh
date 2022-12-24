@@ -3,7 +3,7 @@
 archive/issues_001518.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1518\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1518\n\n",
     "created_at": "2007-12-15T05:41:50Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_001518.json:
     "title": "[with trivial patch] cache computing order of elliptic curve over finite field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1518",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 

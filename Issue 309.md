@@ -14,7 +14,7 @@ archive/issues_000309.json:
     "title": "rationals enumeration not  monotone in height.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/309",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: somebody
@@ -84,7 +84,7 @@ archive/issue_comments_001465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/309#issuecomment-1465",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -149,16 +149,16 @@ Wall time: 594.65 s
 archive/issue_comments_001466.json:
 ```json
 {
-    "body": "Changing assignee from somebody to AlexGhitza.",
+    "body": "Changing assignee from somebody to @aghitza.",
     "created_at": "2008-09-01T09:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/309#issuecomment-1466",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from somebody to AlexGhitza.
+Changing assignee from somebody to @aghitza.
 
 
 
@@ -172,7 +172,7 @@ archive/issue_comments_001467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/309#issuecomment-1467",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_001468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/309#issuecomment-1468",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_001469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/309#issuecomment-1469",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -268,16 +268,16 @@ Michael
 archive/issue_comments_001471.json:
 ```json
 {
-    "body": "Attachment [309-rational_iter_height.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height.patch) by AlexGhitza created at 2008-09-02 02:07:45\n\nmhansen gave me a crash course on iterators and I have implemented a method QQ.range_by_height().  John's request from above becomes then\n\n\n```\nsage: for q in QQ.range_by_height(3):                                          \n....:     print q                                                              \n....:                                                                          \n0\n1\n-1\n1/2\n-1/2\n2\n-2\n```\n\n\nI have replaced the old patch with one that contains this method as well.",
+    "body": "Attachment [309-rational_iter_height.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height.patch) by @aghitza created at 2008-09-02 02:07:45\n\nmhansen gave me a crash course on iterators and I have implemented a method QQ.range_by_height().  John's request from above becomes then\n\n\n```\nsage: for q in QQ.range_by_height(3):                                          \n....:     print q                                                              \n....:                                                                          \n0\n1\n-1\n1/2\n-1/2\n2\n-2\n```\n\n\nI have replaced the old patch with one that contains this method as well.",
     "created_at": "2008-09-02T02:07:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/309#issuecomment-1471",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [309-rational_iter_height.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height.patch) by AlexGhitza created at 2008-09-02 02:07:45
+Attachment [309-rational_iter_height.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height.patch) by @aghitza created at 2008-09-02 02:07:45
 
 mhansen gave me a crash course on iterators and I have implemented a method QQ.range_by_height().  John's request from above becomes then
 
@@ -378,16 +378,16 @@ Michael
 archive/issue_comments_001474.json:
 ```json
 {
-    "body": "Attachment [309-rational_iter_height_interactive.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height_interactive.patch) by AlexGhitza created at 2008-09-02 04:52:50\n\napply on top of 309-rational_iter_height.patch and the patch from #4037",
+    "body": "Attachment [309-rational_iter_height_interactive.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height_interactive.patch) by @aghitza created at 2008-09-02 04:52:50\n\napply on top of 309-rational_iter_height.patch and the patch from #4037",
     "created_at": "2008-09-02T04:52:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/309#issuecomment-1474",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [309-rational_iter_height_interactive.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height_interactive.patch) by AlexGhitza created at 2008-09-02 04:52:50
+Attachment [309-rational_iter_height_interactive.patch](tarball://root/attachments/some-uuid/ticket309/309-rational_iter_height_interactive.patch) by @aghitza created at 2008-09-02 04:52:50
 
 apply on top of 309-rational_iter_height.patch and the patch from #4037
 
@@ -403,7 +403,7 @@ archive/issue_comments_001475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/309#issuecomment-1475",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_001476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/309",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/309#issuecomment-1476",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

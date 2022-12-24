@@ -3,7 +3,7 @@
 archive/issues_001714.json:
 ```json
 {
-    "body": "Assignee: was\n\nkeyword arguments were not passed through to the remote sage instance now they are.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1714\n\n",
+    "body": "Assignee: @williamstein\n\nkeyword arguments were not passed through to the remote sage instance now they are.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1714\n\n",
     "created_at": "2008-01-07T15:37:02Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_001714.json:
     "title": "[with patch, needs review] allow keyword arguments for remote sage methods (sage0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1714",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 keyword arguments were not passed through to the remote sage instance now they are.
 
@@ -61,7 +61,7 @@ archive/issue_comments_010865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1714#issuecomment-10865",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_010866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1714#issuecomment-10866",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -92,16 +92,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_010867.json:
 ```json
 {
-    "body": "Attachment [sage0_keywords.2.patch](tarball://root/attachments/some-uuid/ticket1714/sage0_keywords.2.patch) by malb created at 2008-01-29 16:24:52\n\nThe new attached patch `sage0_keywords.2.patch` which replaces the old patch applies cleanly against `2.10.1.rc2`.",
+    "body": "Attachment [sage0_keywords.2.patch](tarball://root/attachments/some-uuid/ticket1714/sage0_keywords.2.patch) by @malb created at 2008-01-29 16:24:52\n\nThe new attached patch `sage0_keywords.2.patch` which replaces the old patch applies cleanly against `2.10.1.rc2`.",
     "created_at": "2008-01-29T16:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1714#issuecomment-10867",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sage0_keywords.2.patch](tarball://root/attachments/some-uuid/ticket1714/sage0_keywords.2.patch) by malb created at 2008-01-29 16:24:52
+Attachment [sage0_keywords.2.patch](tarball://root/attachments/some-uuid/ticket1714/sage0_keywords.2.patch) by @malb created at 2008-01-29 16:24:52
 
 The new attached patch `sage0_keywords.2.patch` which replaces the old patch applies cleanly against `2.10.1.rc2`.
 
@@ -117,7 +117,7 @@ archive/issue_comments_010868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1714",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1714#issuecomment-10868",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

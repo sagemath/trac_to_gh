@@ -3,7 +3,7 @@
 archive/issues_008325.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri\n\nSphinx warnings from building the HTML reference manual include:\n\n```\nmatrix/matrix_integer_dense.rst:6: (WARNING/2) error while formatting signature for sage.matrix.matrix_integer_dense.Matrix_integer_dense.LLL: Could not parse cython argspec\nplot/plot3d/base.rst:6: (WARNING/2) error while formatting signature for sage.plot.plot3d.base.Graphics3d.export_jmol: Could not parse cython argspec\n```\n\n\nRelated: #8244.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8325\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri\n\nSphinx warnings from building the HTML reference manual include:\n\n```\nmatrix/matrix_integer_dense.rst:6: (WARNING/2) error while formatting signature for sage.matrix.matrix_integer_dense.Matrix_integer_dense.LLL: Could not parse cython argspec\nplot/plot3d/base.rst:6: (WARNING/2) error while formatting signature for sage.plot.plot3d.base.Graphics3d.export_jmol: Could not parse cython argspec\n```\n\n\nRelated: #8244.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8325\n\n",
     "created_at": "2010-02-22T05:45:15Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008325.json:
     "title": "Sphinx warning: 'Could not parse cython argspec'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8325",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 Sphinx warnings from building the HTML reference manual include:
 
@@ -47,7 +47,7 @@ archive/issue_comments_073890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73890",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_073891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73891",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -78,16 +78,16 @@ Changing status from new to needs_review.
 archive/issue_comments_073892.json:
 ```json
 {
-    "body": "Attachment [trac_8325-cython_argspec.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.patch) by mpatel created at 2010-02-22 05:58:34\n\nThe patch should work for the cases in the description.",
+    "body": "Attachment [trac_8325-cython_argspec.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.patch) by @qed777 created at 2010-02-22 05:58:34\n\nThe patch should work for the cases in the description.",
     "created_at": "2010-02-22T05:58:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73892",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8325-cython_argspec.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.patch) by mpatel created at 2010-02-22 05:58:34
+Attachment [trac_8325-cython_argspec.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.patch) by @qed777 created at 2010-02-22 05:58:34
 
 The patch should work for the cases in the description.
 
@@ -103,7 +103,7 @@ archive/issue_comments_073893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73893",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_073894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73894",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_073895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73895",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_073896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73896",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_073897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73897",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -192,16 +192,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_073898.json:
 ```json
 {
-    "body": "Attachment [trac_8325-cython_argspec.2.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.2.patch) by mpatel created at 2010-02-25 07:36:11\n\nAST version.  sage repo.",
+    "body": "Attachment [trac_8325-cython_argspec.2.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.2.patch) by @qed777 created at 2010-02-25 07:36:11\n\nAST version.  sage repo.",
     "created_at": "2010-02-25T07:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73898",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8325-cython_argspec.2.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.2.patch) by mpatel created at 2010-02-25 07:36:11
+Attachment [trac_8325-cython_argspec.2.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.2.patch) by @qed777 created at 2010-02-25 07:36:11
 
 AST version.  sage repo.
 
@@ -217,7 +217,7 @@ archive/issue_comments_073899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73899",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_073900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73900",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_073901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73901",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -283,16 +283,16 @@ Should we fix the first problem and then go ahead with this?  I also notice that
 archive/issue_comments_073902.json:
 ```json
 {
-    "body": "Attachment [trac_8325-cython_argspec.3.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.3.patch) by mpatel created at 2010-03-04 08:45:05\n\nAnother clause.  More doctests.  Apply only this patch.   sage repo.",
+    "body": "Attachment [trac_8325-cython_argspec.3.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.3.patch) by @qed777 created at 2010-03-04 08:45:05\n\nAnother clause.  More doctests.  Apply only this patch.   sage repo.",
     "created_at": "2010-03-04T08:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73902",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8325-cython_argspec.3.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.3.patch) by mpatel created at 2010-03-04 08:45:05
+Attachment [trac_8325-cython_argspec.3.patch](tarball://root/attachments/some-uuid/ticket8325/trac_8325-cython_argspec.3.patch) by @qed777 created at 2010-03-04 08:45:05
 
 Another clause.  More doctests.  Apply only this patch.   sage repo.
 
@@ -308,7 +308,7 @@ archive/issue_comments_073903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73903",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_073904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73904",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_073905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73905",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_073906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73906",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_073907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73907",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -404,16 +404,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_073908.json:
 ```json
 {
-    "body": "Attachment [sagenb_8325-cython_argspec.patch](tarball://root/attachments/some-uuid/ticket8325/sagenb_8325-cython_argspec.patch) by mpatel created at 2010-03-04 23:46:46\n\nI've attached a version for SageNB.",
+    "body": "Attachment [sagenb_8325-cython_argspec.patch](tarball://root/attachments/some-uuid/ticket8325/sagenb_8325-cython_argspec.patch) by @qed777 created at 2010-03-04 23:46:46\n\nI've attached a version for SageNB.",
     "created_at": "2010-03-04T23:46:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73908",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [sagenb_8325-cython_argspec.patch](tarball://root/attachments/some-uuid/ticket8325/sagenb_8325-cython_argspec.patch) by mpatel created at 2010-03-04 23:46:46
+Attachment [sagenb_8325-cython_argspec.patch](tarball://root/attachments/some-uuid/ticket8325/sagenb_8325-cython_argspec.patch) by @qed777 created at 2010-03-04 23:46:46
 
 I've attached a version for SageNB.
 
@@ -429,7 +429,7 @@ archive/issue_comments_073909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73909",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_073910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73910",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_073911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73911",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -483,7 +483,7 @@ archive/issue_comments_073912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73912",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -496,16 +496,16 @@ Fix doctest imports.  Replaces previous sagenb patch.
 archive/issue_comments_073913.json:
 ```json
 {
-    "body": "Attachment [sagenb_8325-cython_argspec.2.patch](tarball://root/attachments/some-uuid/ticket8325/sagenb_8325-cython_argspec.2.patch) by mpatel created at 2010-03-05 01:26:41\n\nOops.  Sorry about that.  V2 is up.",
+    "body": "Attachment [sagenb_8325-cython_argspec.2.patch](tarball://root/attachments/some-uuid/ticket8325/sagenb_8325-cython_argspec.2.patch) by @qed777 created at 2010-03-05 01:26:41\n\nOops.  Sorry about that.  V2 is up.",
     "created_at": "2010-03-05T01:26:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73913",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [sagenb_8325-cython_argspec.2.patch](tarball://root/attachments/some-uuid/ticket8325/sagenb_8325-cython_argspec.2.patch) by mpatel created at 2010-03-05 01:26:41
+Attachment [sagenb_8325-cython_argspec.2.patch](tarball://root/attachments/some-uuid/ticket8325/sagenb_8325-cython_argspec.2.patch) by @qed777 created at 2010-03-05 01:26:41
 
 Oops.  Sorry about that.  V2 is up.
 
@@ -521,7 +521,7 @@ archive/issue_comments_073914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73914",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_073915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73915",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -557,7 +557,7 @@ archive/issue_comments_073916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73916",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -575,7 +575,7 @@ archive/issue_comments_073917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73917",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -593,7 +593,7 @@ archive/issue_comments_073918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73918",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -611,7 +611,7 @@ archive/issue_comments_073919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8325",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8325#issuecomment-73919",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

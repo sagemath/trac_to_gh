@@ -3,7 +3,7 @@
 archive/issues_009079.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\nsage: PolynomialRing(QQ,'u_ba')._singular_init_()\n...\nRuntimeError: Singular error:\n   ? error occurred in STDIN line 33: `if(defined(_b)>0){kill _b;};`\n   ? last reserved name was `defined`\n   skipping text from `)`\n```\n\n\nThis is because the function _singular_init_ incorrectly defines _vars.  The attached patch fixes this. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9079\n\n",
+    "body": "Assignee: @malb\n\n\n```\nsage: PolynomialRing(QQ,'u_ba')._singular_init_()\n...\nRuntimeError: Singular error:\n   ? error occurred in STDIN line 33: `if(defined(_b)>0){kill _b;};`\n   ? last reserved name was `defined`\n   skipping text from `)`\n```\n\n\nThis is because the function _singular_init_ incorrectly defines _vars.  The attached patch fixes this. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9079\n\n",
     "created_at": "2010-05-29T00:47:18Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_009079.json:
     "title": "fix bug in singular polynomial interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9079",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9079
 archive/issue_comments_084284.json:
 ```json
 {
-    "body": "Attachment [trac_9079.patch](tarball://root/attachments/some-uuid/ticket9079/trac_9079.patch) by was created at 2010-05-29 00:55:50",
+    "body": "Attachment [trac_9079.patch](tarball://root/attachments/some-uuid/ticket9079/trac_9079.patch) by @williamstein created at 2010-05-29 00:55:50",
     "created_at": "2010-05-29T00:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9079#issuecomment-84284",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9079.patch](tarball://root/attachments/some-uuid/ticket9079/trac_9079.patch) by was created at 2010-05-29 00:55:50
+Attachment [trac_9079.patch](tarball://root/attachments/some-uuid/ticket9079/trac_9079.patch) by @williamstein created at 2010-05-29 00:55:50
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_084285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9079#issuecomment-84285",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_084286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9079#issuecomment-84286",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_084287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9079#issuecomment-84287",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_084288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9079#issuecomment-84288",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_084289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9079#issuecomment-84289",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

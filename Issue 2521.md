@@ -3,7 +3,7 @@
 archive/issues_002521.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: G = DirichletGroup(4)\nsage: G(1).gauss_sum_numerical()\nTraceback (most recent call last):\n...\nTypeError: 1 must be coercible into Cyclotomic Field of order 2 and degree 1 (and is not an element)\n```\n\n\nInstead the result should be 0:\n\n```\nsage: G(1).gauss_sum()\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2521\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: G = DirichletGroup(4)\nsage: G(1).gauss_sum_numerical()\nTraceback (most recent call last):\n...\nTypeError: 1 must be coercible into Cyclotomic Field of order 2 and degree 1 (and is not an element)\n```\n\n\nInstead the result should be 0:\n\n```\nsage: G(1).gauss_sum()\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2521\n\n",
     "created_at": "2008-03-14T21:24:13Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002521.json:
     "title": "Bug in gauss_sum_numerical in degenerate case (probably easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2521",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -53,7 +53,7 @@ archive/issue_comments_017199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2521#issuecomment-17199",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_017200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2521#issuecomment-17200",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003391.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jason jkantor\n\n#3390 updates numpy to 1.1.0. Since that no longer works with the last stable release we also need to upgrade scipy to svn - figure out which revision to use.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3391\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout jkantor\n\n#3390 updates numpy to 1.1.0. Since that no longer works with the last stable release we also need to upgrade scipy to svn - figure out which revision to use.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3391\n\n",
     "created_at": "2008-06-10T19:06:36Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_003391.json:
 ```
 Assignee: mabshoff
 
-CC:  jason jkantor
+CC:  @jasongrout jkantor
 
 #3390 updates numpy to 1.1.0. Since that no longer works with the last stable release we also need to upgrade scipy to svn - figure out which revision to use.
 
@@ -39,7 +39,7 @@ archive/issue_comments_023737.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3391#issuecomment-23737",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_023739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3391#issuecomment-23739",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_023740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3391#issuecomment-23740",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_023749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3391#issuecomment-23749",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -296,16 +296,16 @@ I'm attaching a patch which fixes many of the errors and deprecations.  There ar
 archive/issue_comments_023750.json:
 ```json
 {
-    "body": "Attachment [scipy-0.7-update.patch](tarball://root/attachments/some-uuid/ticket3391/scipy-0.7-update.patch) by jason created at 2009-05-27 20:22:55",
+    "body": "Attachment [scipy-0.7-update.patch](tarball://root/attachments/some-uuid/ticket3391/scipy-0.7-update.patch) by @jasongrout created at 2009-05-27 20:22:55",
     "created_at": "2009-05-27T20:22:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3391#issuecomment-23750",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [scipy-0.7-update.patch](tarball://root/attachments/some-uuid/ticket3391/scipy-0.7-update.patch) by jason created at 2009-05-27 20:22:55
+Attachment [scipy-0.7-update.patch](tarball://root/attachments/some-uuid/ticket3391/scipy-0.7-update.patch) by @jasongrout created at 2009-05-27 20:22:55
 
 
 
@@ -319,7 +319,7 @@ archive/issue_comments_023751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3391#issuecomment-23751",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_023753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3391#issuecomment-23753",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_023754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3391#issuecomment-23754",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_023755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3391",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3391#issuecomment-23755",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002998.json:
     "title": "sage ignores some environment variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2998",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 Assignee: mabshoff
@@ -112,7 +112,7 @@ archive/issue_comments_020613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2998#issuecomment-20613",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_020614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2998",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2998#issuecomment-20614",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 

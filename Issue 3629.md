@@ -3,7 +3,7 @@
 archive/issues_003629.json:
 ```json
 {
-    "body": "Assignee: cpernet\n\nThe title says it all. No ideas on how to fix it apart touching\nthe install phase.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3629\n\n",
+    "body": "Assignee: @ClementPernet\n\nThe title says it all. No ideas on how to fix it apart touching\nthe install phase.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3629\n\n",
     "created_at": "2008-07-10T04:37:50Z",
     "labels": [
         "finite rings",
@@ -14,10 +14,10 @@ archive/issues_003629.json:
     "title": "givaro-3.2.11 installs its own libgmpxx.{so,a}",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3629",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
-Assignee: cpernet
+Assignee: @ClementPernet
 
 The title says it all. No ideas on how to fix it apart touching
 the install phase.
@@ -38,7 +38,7 @@ archive/issue_comments_025680.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3629#issuecomment-25680",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_025681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3629",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3629#issuecomment-25681",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 

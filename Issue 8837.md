@@ -14,7 +14,7 @@ archive/issues_008837.json:
     "title": "the symmetrica Sage library cython code doesn't build on OS X 10.4 PowerPC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8837",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -270,7 +270,7 @@ archive/issue_comments_081251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8837#issuecomment-81251",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_081254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8837",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8837#issuecomment-81254",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

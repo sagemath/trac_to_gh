@@ -14,7 +14,7 @@ archive/issues_009134.json:
     "title": "sage-4.4.3.alpha3: os x ppc 10.4 -- error building pynac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9134",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -68,7 +68,7 @@ archive/issue_comments_085132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9134",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9134#issuecomment-85132",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

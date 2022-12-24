@@ -3,7 +3,7 @@
 archive/issues_007709.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  nthiery rlm\n\nI often need to create graphs defined by a set of edges, and it should not be hard to add a new constructor of this shape :\n\n```\ng = Graph(edges=[ ... ] )\n```\n\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7709\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @nthiery @rlmill\n\nI often need to create graphs defined by a set of edges, and it should not be hard to add a new constructor of this shape :\n\n```\ng = Graph(edges=[ ... ] )\n```\n\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7709\n\n",
     "created_at": "2009-12-16T11:55:26Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007709.json:
     "title": "Graph constructor : Graph(edges=[ ... ] )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7709",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  nthiery rlm
+CC:  @nthiery @rlmill
 
 I often need to create graphs defined by a set of edges, and it should not be hard to add a new constructor of this shape :
 
@@ -46,7 +46,7 @@ archive/issue_comments_066166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66166",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_066167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66167",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_066168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66168",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_066169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66169",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_066170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66170",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_066171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66171",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_066172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66172",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_066173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66173",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_066174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66174",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_066175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66175",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_066176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66176",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_066177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66177",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_066178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66178",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_066179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66179",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -311,16 +311,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_066180.json:
 ```json
 {
-    "body": "Attachment [trac_7709.patch](tarball://root/attachments/some-uuid/ticket7709/trac_7709.patch) by rlm created at 2010-11-10 13:53:54",
+    "body": "Attachment [trac_7709.patch](tarball://root/attachments/some-uuid/ticket7709/trac_7709.patch) by @rlmill created at 2010-11-10 13:53:54",
     "created_at": "2010-11-10T13:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66180",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7709.patch](tarball://root/attachments/some-uuid/ticket7709/trac_7709.patch) by rlm created at 2010-11-10 13:53:54
+Attachment [trac_7709.patch](tarball://root/attachments/some-uuid/ticket7709/trac_7709.patch) by @rlmill created at 2010-11-10 13:53:54
 
 
 
@@ -334,7 +334,7 @@ archive/issue_comments_066181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7709",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7709#issuecomment-66181",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

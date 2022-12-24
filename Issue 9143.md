@@ -3,7 +3,7 @@
 archive/issues_009143.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  ncohen rlm robertwb\n\nIt's amazing how slow our graph generator is:\n\n\n```\nsage: %time gg=list(graphs(7))\nCPU times: user 12.31 s, sys: 0.10 s, total: 12.41 s\nWall time: 12.87 s\n```\n\n\nCompare this to nauty's C implementation (with approximately the same algorithm)\n\n\n```\nsage: %timeit hh=graphs.nauty_geng('-q 7')\n5 loops, best of 3: 171 ms per loop\n```\n\n\nNotice that the vast majority of the time is spent in some python calls, which presumably could be much, much faster if we instead used the underlying C structure via Cython.\n\n\n```\nsage: %prun gg=list(graphs(7))\n         4355876 function calls (4284237 primitive calls) in 14.011 CPU seconds\n\n   Ordered by: internal time\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n    46134    2.668    0.000    2.923    0.000 {iterator_edges}\n   362828    1.897    0.000    1.897    0.000 {add_edge}\n    33007    1.698    0.000    7.775    0.000 graph.py:760(__init__)\n   289792    1.209    0.000    1.209    0.000 {has_edge}\n   125832    0.625    0.000    0.625    0.000 {iterator_verts}\n     6564    0.604    0.000    5.020    0.001 {sage.groups.perm_gps.partn_ref.refinement_graphs.search_tree}\n    33006    0.476    0.000    8.523    0.000 generic_graph.py:416(__copy__)\n13050/1045    0.441    0.000   14.000    0.013 graph_generators.py:5059(canaug_traverse_edge)\n    33007    0.395    0.000    0.470    0.000 function_mangling.py:205(fix_to_pos)\n20064/13314    0.321    0.000    2.453    0.000 generic_graph.py:10582(relabel)\n    33006    0.318    0.000    0.318    0.000 {add_vertices}\n   289792    0.282    0.000    1.491    0.000 generic_graph.py:5256(has_edge)\n     6750    0.255    0.000    1.923    0.000 generic_graph.py:72(__eq__)\n     5893    0.235    0.000    0.354    0.000 graph_generators.py:5228(check_aut_edge)\n142579/89695    0.195    0.000    7.128    0.000 copy.py:65(copy)\n   546806    0.191    0.000    3.114    0.000 generic_graph.py:5386(edge_iterator)\n    46692    0.175    0.000    0.524    0.000 generic_graph.py:4817(vertices)\n    33007    0.166    0.000    0.824    0.000 generic_graph.py:28(__init__)\n    13314    0.162    0.000    0.162    0.000 {relabel}\n   128177    0.135    0.000    0.135    0.000 {sorted}\n   132025    0.126    0.000    0.171    0.000 generic_graph.py:1531(name)\n   125832    0.124    0.000    0.749    0.000 generic_graph.py:4731(vertex_iterator)\n   105955    0.110    0.000    0.110    0.000 {hasattr}\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9143\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen @rlmill @robertwb\n\nIt's amazing how slow our graph generator is:\n\n\n```\nsage: %time gg=list(graphs(7))\nCPU times: user 12.31 s, sys: 0.10 s, total: 12.41 s\nWall time: 12.87 s\n```\n\n\nCompare this to nauty's C implementation (with approximately the same algorithm)\n\n\n```\nsage: %timeit hh=graphs.nauty_geng('-q 7')\n5 loops, best of 3: 171 ms per loop\n```\n\n\nNotice that the vast majority of the time is spent in some python calls, which presumably could be much, much faster if we instead used the underlying C structure via Cython.\n\n\n```\nsage: %prun gg=list(graphs(7))\n         4355876 function calls (4284237 primitive calls) in 14.011 CPU seconds\n\n   Ordered by: internal time\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n    46134    2.668    0.000    2.923    0.000 {iterator_edges}\n   362828    1.897    0.000    1.897    0.000 {add_edge}\n    33007    1.698    0.000    7.775    0.000 graph.py:760(__init__)\n   289792    1.209    0.000    1.209    0.000 {has_edge}\n   125832    0.625    0.000    0.625    0.000 {iterator_verts}\n     6564    0.604    0.000    5.020    0.001 {sage.groups.perm_gps.partn_ref.refinement_graphs.search_tree}\n    33006    0.476    0.000    8.523    0.000 generic_graph.py:416(__copy__)\n13050/1045    0.441    0.000   14.000    0.013 graph_generators.py:5059(canaug_traverse_edge)\n    33007    0.395    0.000    0.470    0.000 function_mangling.py:205(fix_to_pos)\n20064/13314    0.321    0.000    2.453    0.000 generic_graph.py:10582(relabel)\n    33006    0.318    0.000    0.318    0.000 {add_vertices}\n   289792    0.282    0.000    1.491    0.000 generic_graph.py:5256(has_edge)\n     6750    0.255    0.000    1.923    0.000 generic_graph.py:72(__eq__)\n     5893    0.235    0.000    0.354    0.000 graph_generators.py:5228(check_aut_edge)\n142579/89695    0.195    0.000    7.128    0.000 copy.py:65(copy)\n   546806    0.191    0.000    3.114    0.000 generic_graph.py:5386(edge_iterator)\n    46692    0.175    0.000    0.524    0.000 generic_graph.py:4817(vertices)\n    33007    0.166    0.000    0.824    0.000 generic_graph.py:28(__init__)\n    13314    0.162    0.000    0.162    0.000 {relabel}\n   128177    0.135    0.000    0.135    0.000 {sorted}\n   132025    0.126    0.000    0.171    0.000 generic_graph.py:1531(name)\n   125832    0.124    0.000    0.749    0.000 generic_graph.py:4731(vertex_iterator)\n   105955    0.110    0.000    0.110    0.000 {hasattr}\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9143\n\n",
     "created_at": "2010-06-04T22:05:44Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009143.json:
     "title": "Speed up graph generation using Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9143",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  ncohen rlm robertwb
+CC:  @nathanncohen @rlmill @robertwb
 
 It's amazing how slow our graph generator is:
 
@@ -94,7 +94,7 @@ archive/issue_comments_085380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85380",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_085381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85381",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_085382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85382",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_085383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85383",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_085384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85384",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_085388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85388",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001458.json:
 ```json
 {
-    "body": "Assignee: was\n\nOn the command line:\n\n```\nsage: 1/0\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/element.pyx in sage.structure.element.RingElement.__div__()\n\n/Users/was/coerce.pxi in sage.structure.element._div_c()\n\n/Users/was/integer.pyx in sage.rings.integer.Integer._div_c_impl()\n\n/Users/was/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class._div()\n\n<type 'exceptions.ZeroDivisionError'>: Rational division by zero\n\n\n```\n\n\nNotice that the absolute paths are nonsense.\n\nIn the notebook:\n\n```\n1/0\n```\n\noutputs\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/was/.sage/sage_notebook/worksheets/admin/9/code/5.py\", line 4, in <module>\n    Integer(1)/Integer(0)\n  File \"/Users/was/s/data/extcode/sage/\", line 1, in <module>\n    \n  File \"element.pyx\", line 1480, in sage.structure.element.RingElement.__div__\n  File \"coerce.pxi\", line 138, in sage.structure.element._div_c\n  File \"integer.pyx\", line 854, in sage.rings.integer.Integer._div_c_impl\n  File \"integer_ring.pyx\", line 190, in sage.rings.integer_ring.IntegerRing_class._div\nZeroDivisionError: Rational division by zero\n```\n\n\nso there are no absolute paths.  This is the same as in Python itself:\n\n\n```\n>>> 1/sage.all.ZZ(0)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"element.pyx\", line 1482, in sage.structure.element.RingElement.__div__\n  File \"coerce.pyx\", line 252, in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c\n  File \"element.pyx\", line 1480, in sage.structure.element.RingElement.__div__\n  File \"coerce.pxi\", line 138, in sage.structure.element._div_c\n  File \"integer.pyx\", line 854, in sage.rings.integer.Integer._div_c_impl\n  File \"integer_ring.pyx\", line 190, in sage.rings.integer_ring.IntegerRing_class._div\nZeroDivisionError: Rational division by zero\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1458\n\n",
+    "body": "Assignee: @williamstein\n\nOn the command line:\n\n```\nsage: 1/0\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/element.pyx in sage.structure.element.RingElement.__div__()\n\n/Users/was/coerce.pxi in sage.structure.element._div_c()\n\n/Users/was/integer.pyx in sage.rings.integer.Integer._div_c_impl()\n\n/Users/was/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class._div()\n\n<type 'exceptions.ZeroDivisionError'>: Rational division by zero\n\n\n```\n\n\nNotice that the absolute paths are nonsense.\n\nIn the notebook:\n\n```\n1/0\n```\n\noutputs\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/was/.sage/sage_notebook/worksheets/admin/9/code/5.py\", line 4, in <module>\n    Integer(1)/Integer(0)\n  File \"/Users/was/s/data/extcode/sage/\", line 1, in <module>\n    \n  File \"element.pyx\", line 1480, in sage.structure.element.RingElement.__div__\n  File \"coerce.pxi\", line 138, in sage.structure.element._div_c\n  File \"integer.pyx\", line 854, in sage.rings.integer.Integer._div_c_impl\n  File \"integer_ring.pyx\", line 190, in sage.rings.integer_ring.IntegerRing_class._div\nZeroDivisionError: Rational division by zero\n```\n\n\nso there are no absolute paths.  This is the same as in Python itself:\n\n\n```\n>>> 1/sage.all.ZZ(0)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"element.pyx\", line 1482, in sage.structure.element.RingElement.__div__\n  File \"coerce.pyx\", line 252, in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c\n  File \"element.pyx\", line 1480, in sage.structure.element.RingElement.__div__\n  File \"coerce.pxi\", line 138, in sage.structure.element._div_c\n  File \"integer.pyx\", line 854, in sage.rings.integer.Integer._div_c_impl\n  File \"integer_ring.pyx\", line 190, in sage.rings.integer_ring.IntegerRing_class._div\nZeroDivisionError: Rational division by zero\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1458\n\n",
     "created_at": "2007-12-11T02:46:41Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_001458.json:
     "title": "Ipython bug -- the tracebacks in the sage command line list all absolute paths to Cython files totally incorrectly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1458",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 On the command line:
 
@@ -100,7 +100,7 @@ archive/issue_comments_009398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1458#issuecomment-9398",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_009399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1458#issuecomment-9399",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_009400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1458",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1458#issuecomment-9400",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

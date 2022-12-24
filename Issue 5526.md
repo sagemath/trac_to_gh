@@ -14,7 +14,7 @@ archive/issues_005526.json:
     "title": "get rid of including sse4_1 in local/lib/sage-flags.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5526",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff

@@ -3,7 +3,7 @@
 archive/issues_004238.json:
 ```json
 {
-    "body": "Assignee: was\n\nLoading an .spyx file requires a recompile for each new startup of Sage. There should be a way to save the .so file locally and load it like a module. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4238\n\n",
+    "body": "Assignee: @williamstein\n\nLoading an .spyx file requires a recompile for each new startup of Sage. There should be a way to save the .so file locally and load it like a module. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4238\n\n",
     "created_at": "2008-10-02T19:33:58Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_004238.json:
     "title": "option to create local .so file for .spyx modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4238",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Loading an .spyx file requires a recompile for each new startup of Sage. There should be a way to save the .so file locally and load it like a module. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_030802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4238#issuecomment-30802",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -50,16 +50,16 @@ Original patch from David Fu
 archive/issue_comments_030803.json:
 ```json
 {
-    "body": "Attachment [local_so_doctests.patch](tarball://root/attachments/some-uuid/ticket4238/local_so_doctests.patch) by robertwb created at 2008-10-02 19:39:38\n\nget doctests passing",
+    "body": "Attachment [local_so_doctests.patch](tarball://root/attachments/some-uuid/ticket4238/local_so_doctests.patch) by @robertwb created at 2008-10-02 19:39:38\n\nget doctests passing",
     "created_at": "2008-10-02T19:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4238#issuecomment-30803",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [local_so_doctests.patch](tarball://root/attachments/some-uuid/ticket4238/local_so_doctests.patch) by robertwb created at 2008-10-02 19:39:38
+Attachment [local_so_doctests.patch](tarball://root/attachments/some-uuid/ticket4238/local_so_doctests.patch) by @robertwb created at 2008-10-02 19:39:38
 
 get doctests passing
 
@@ -75,7 +75,7 @@ archive/issue_comments_030804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4238#issuecomment-30804",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_030806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4238",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4238#issuecomment-30806",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

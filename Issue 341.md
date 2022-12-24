@@ -14,7 +14,7 @@ archive/issues_000341.json:
     "title": "multiplicative order inconsistency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/341",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -106,7 +106,7 @@ archive/issue_comments_001672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/341",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/341#issuecomment-1672",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

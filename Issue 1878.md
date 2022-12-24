@@ -14,7 +14,7 @@ archive/issues_001878.json:
     "title": "[with patch] add new function from mpfr-2.3.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1878",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: somebody
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1878
 archive/issue_comments_011888.json:
 ```json
 {
-    "body": "Attachment [8087.patch](tarball://root/attachments/some-uuid/ticket1878/8087.patch) by zimmerma created at 2008-01-21 07:12:35",
+    "body": "Attachment [8087.patch](tarball://root/attachments/some-uuid/ticket1878/8087.patch) by @zimmermann6 created at 2008-01-21 07:12:35",
     "created_at": "2008-01-21T07:12:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1878#issuecomment-11888",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [8087.patch](tarball://root/attachments/some-uuid/ticket1878/8087.patch) by zimmerma created at 2008-01-21 07:12:35
+Attachment [8087.patch](tarball://root/attachments/some-uuid/ticket1878/8087.patch) by @zimmermann6 created at 2008-01-21 07:12:35
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_011889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1878",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1878#issuecomment-11889",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

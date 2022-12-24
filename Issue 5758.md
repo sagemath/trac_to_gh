@@ -3,7 +3,7 @@
 archive/issues_005758.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nCC:  robertwb\n\nWith a 100% clean sage-3.4.1.rc2:\n\n\n```\nwstein@sage:~/build/sage-3.4.1.rc2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: ref\nsage: Zmod(8).lift() == 1\ninit_coerce() for  <class 'sage.categories.homset.Homset'>\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/wstein/sage/temp/sage.math.washington.edu/4833/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__richcmp__ (sage/rings/integer.c:7457)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Element._richcmp (sage/structure/element.c:5714)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion (sage/structure/coerce.c:7434)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.coercion_maps (sage/structure/coerce.c:9262)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.discover_coercion (sage/structure/coerce.c:11046)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.coerce_map_from (sage/structure/parent.c:9337)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.init_coerce (sage/structure/parent.c:3085)()\n\nZeroDivisionError: hello\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5758\n\n",
+    "body": "Assignee: @robertwb\n\nCC:  @robertwb\n\nWith a 100% clean sage-3.4.1.rc2:\n\n\n```\nwstein@sage:~/build/sage-3.4.1.rc2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: ref\nsage: Zmod(8).lift() == 1\ninit_coerce() for  <class 'sage.categories.homset.Homset'>\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/wstein/sage/temp/sage.math.washington.edu/4833/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__richcmp__ (sage/rings/integer.c:7457)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Element._richcmp (sage/structure/element.c:5714)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion (sage/structure/coerce.c:7434)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.coercion_maps (sage/structure/coerce.c:9262)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.discover_coercion (sage/structure/coerce.c:11046)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.coerce_map_from (sage/structure/parent.c:9337)()\n\n/scratch/wstein/build/sage-3.4.1.rc2/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.init_coerce (sage/structure/parent.c:3085)()\n\nZeroDivisionError: hello\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5758\n\n",
     "created_at": "2009-04-11T18:03:27Z",
     "labels": [
         "coercion",
@@ -14,12 +14,12 @@ archive/issues_005758.json:
     "title": "weird \"hello\" bug in homset coerce!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5758",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
-CC:  robertwb
+CC:  @robertwb
 
 With a 100% clean sage-3.4.1.rc2:
 
@@ -72,7 +72,7 @@ archive/issue_comments_045002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5758#issuecomment-45002",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_045004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5758#issuecomment-45004",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -144,16 +144,16 @@ I'm attaching a patch which I think fixes the problem, but maybe someone familia
 archive/issue_comments_045005.json:
 ```json
 {
-    "body": "Attachment [trac_5758-hello.patch](tarball://root/attachments/some-uuid/ticket5758/trac_5758-hello.patch) by mhansen created at 2009-09-08 23:46:01\n\nLooks good to me.",
+    "body": "Attachment [trac_5758-hello.patch](tarball://root/attachments/some-uuid/ticket5758/trac_5758-hello.patch) by @mwhansen created at 2009-09-08 23:46:01\n\nLooks good to me.",
     "created_at": "2009-09-08T23:46:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5758#issuecomment-45005",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5758-hello.patch](tarball://root/attachments/some-uuid/ticket5758/trac_5758-hello.patch) by mhansen created at 2009-09-08 23:46:01
+Attachment [trac_5758-hello.patch](tarball://root/attachments/some-uuid/ticket5758/trac_5758-hello.patch) by @mwhansen created at 2009-09-08 23:46:01
 
 Looks good to me.
 

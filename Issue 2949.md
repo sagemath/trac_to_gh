@@ -3,7 +3,7 @@
 archive/issues_002949.json:
 ```json
 {
-    "body": "Assignee: was\n\nChange the output of assume? to:\n\n\n```\nsage: from sage.calculus.calculus import maxima as calcmaxima\nsage: calcmaxima.eval('declare(n,integer)')\n```\n\n\nto\n\n\n```\nsage: sage.calculus.calculus.maxima.eval('declare(n,integer)')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2949\n\n",
+    "body": "Assignee: @williamstein\n\nChange the output of assume? to:\n\n\n```\nsage: from sage.calculus.calculus import maxima as calcmaxima\nsage: calcmaxima.eval('declare(n,integer)')\n```\n\n\nto\n\n\n```\nsage: sage.calculus.calculus.maxima.eval('declare(n,integer)')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2949\n\n",
     "created_at": "2008-04-18T00:24:13Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_002949.json:
     "title": "change slightly the docstring for assume (utterly trivial)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2949",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Change the output of assume? to:
 
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2949
 archive/issue_comments_020334.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-04-18T06:10:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2949#issuecomment-20334",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -65,16 +65,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_020335.json:
 ```json
 {
-    "body": "Attachment [2949.patch](tarball://root/attachments/some-uuid/ticket2949/2949.patch) by mhansen created at 2008-04-18 06:10:12",
+    "body": "Attachment [2949.patch](tarball://root/attachments/some-uuid/ticket2949/2949.patch) by @mwhansen created at 2008-04-18 06:10:12",
     "created_at": "2008-04-18T06:10:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2949#issuecomment-20335",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2949.patch](tarball://root/attachments/some-uuid/ticket2949/2949.patch) by mhansen created at 2008-04-18 06:10:12
+Attachment [2949.patch](tarball://root/attachments/some-uuid/ticket2949/2949.patch) by @mwhansen created at 2008-04-18 06:10:12
 
 
 
@@ -88,7 +88,7 @@ archive/issue_comments_020336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2949#issuecomment-20336",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_020337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2949",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2949#issuecomment-20337",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007659.json:
     "title": "fix tests in documentation after pynac printing changes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7659",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: mvngu
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7659
 archive/issue_comments_065512.json:
 ```json
 {
-    "body": "Attachment [trac_7659-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket7659/trac_7659-doctest_fixes.patch) by burcin created at 2009-12-11 13:35:19\n\ndoctest fixes",
+    "body": "Attachment [trac_7659-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket7659/trac_7659-doctest_fixes.patch) by @burcin created at 2009-12-11 13:35:19\n\ndoctest fixes",
     "created_at": "2009-12-11T13:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7659#issuecomment-65512",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7659-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket7659/trac_7659-doctest_fixes.patch) by burcin created at 2009-12-11 13:35:19
+Attachment [trac_7659-doctest_fixes.patch](tarball://root/attachments/some-uuid/ticket7659/trac_7659-doctest_fixes.patch) by @burcin created at 2009-12-11 13:35:19
 
 doctest fixes
 
@@ -59,7 +59,7 @@ archive/issue_comments_065513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7659#issuecomment-65513",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_065514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7659#issuecomment-65514",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_065515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7659#issuecomment-65515",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_065516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7659#issuecomment-65516",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_065517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7659#issuecomment-65517",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_065518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7659#issuecomment-65518",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_065519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7659#issuecomment-65519",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_065520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7659",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7659#issuecomment-65520",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

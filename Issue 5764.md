@@ -3,7 +3,7 @@
 archive/issues_005764.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nAs the summary says...\n\nUnfortunately, running 'sage -coverage' on this file doesn't yield 100% because it gets confused by, for example, a string containing 'def test1' -- it thinks this is a function without a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5764\n\n",
+    "body": "Assignee: @jhpalmieri\n\nAs the summary says...\n\nUnfortunately, running 'sage -coverage' on this file doesn't yield 100% because it gets confused by, for example, a string containing 'def test1' -- it thinks this is a function without a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5764\n\n",
     "created_at": "2009-04-11T22:23:22Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_005764.json:
     "title": "[with patch, needs review] improve doctest coverage for sageinspect.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5764",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 As the summary says...
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5764
 archive/issue_comments_045054.json:
 ```json
 {
-    "body": "Attachment [sageinspect-doctest.patch](tarball://root/attachments/some-uuid/ticket5764/sageinspect-doctest.patch) by was created at 2009-04-12 05:35:51\n\nI thought this already got dealt with.  Anyways, right now doctests fail on the sagedoc.py file (and no others).\n\n```\nsage -t  devel/sage/sage/misc/sagedoc.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/misc/sagedoc.py\", line 366:\n    sage: format_search_as_html('Source', 'algebras/steenrod_algebra_element.py:        an antihomomorphism: if we call the antipode `c`, then', 'antipode antihomomorphism')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[2]>\", line 1, in <module>\n        format_search_as_html('Source', 'algebras/steenrod_algebra_element.py:        an antihomomorphism: if we call the antipode `c`, then', 'antipode antihomomorphism')###line 366:\n    sage: format_search_as_html('Source', 'algebras/steenrod_algebra_element.py:        an antihomomorphism: if we call the antipode `c`, then', 'antipode antihomomorphism')\n    NameError: name 'format_search_as_html' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/misc/sagedoc.py\", line 368:\n    sage: format_search_as_html('Other', 'html/en/reference/sage/algebras/steenrod_algebra_element.html:an antihomomorphism: if we call the antipode <span class=\"math\">c</span>, then', 'antipode antihomomorphism')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[3]>\", line 1, in <module>\n        format_search_as_html('Other', 'html/en/reference/sage/algebras/steenrod_algebra_element.html:an antihomomorphism: if we call the antipode <span class=\"math\">c</span>, then', 'antipode antihomomorphism')###line 368:\n    sage: format_search_as_html('Other', 'html/en/reference/sage/algebras/steenrod_algebra_element.html:an antihomomorphism: if we call the antipode <span class=\"math\">c</span>, then', 'antipode antihomomorphism')\n    NameError: name 'format_search_as_html' is not defined\nhtml/en/tutorial/tour_polynomial.html:<p>This creates a polynomial ring and tells Sage to use (the string)\n\n**********************************************************************\n1 items had failures:\n   2 of   4 in __main__.example_7\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-3.4.1.rc2-ref2/tmp/.doctest_sagedoc.py\n         [24.9 s]\nsage -t  devel/sage/sage/rings/tests.py\n```\n",
+    "body": "Attachment [sageinspect-doctest.patch](tarball://root/attachments/some-uuid/ticket5764/sageinspect-doctest.patch) by @williamstein created at 2009-04-12 05:35:51\n\nI thought this already got dealt with.  Anyways, right now doctests fail on the sagedoc.py file (and no others).\n\n```\nsage -t  devel/sage/sage/misc/sagedoc.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/misc/sagedoc.py\", line 366:\n    sage: format_search_as_html('Source', 'algebras/steenrod_algebra_element.py:        an antihomomorphism: if we call the antipode `c`, then', 'antipode antihomomorphism')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[2]>\", line 1, in <module>\n        format_search_as_html('Source', 'algebras/steenrod_algebra_element.py:        an antihomomorphism: if we call the antipode `c`, then', 'antipode antihomomorphism')###line 366:\n    sage: format_search_as_html('Source', 'algebras/steenrod_algebra_element.py:        an antihomomorphism: if we call the antipode `c`, then', 'antipode antihomomorphism')\n    NameError: name 'format_search_as_html' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/misc/sagedoc.py\", line 368:\n    sage: format_search_as_html('Other', 'html/en/reference/sage/algebras/steenrod_algebra_element.html:an antihomomorphism: if we call the antipode <span class=\"math\">c</span>, then', 'antipode antihomomorphism')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[3]>\", line 1, in <module>\n        format_search_as_html('Other', 'html/en/reference/sage/algebras/steenrod_algebra_element.html:an antihomomorphism: if we call the antipode <span class=\"math\">c</span>, then', 'antipode antihomomorphism')###line 368:\n    sage: format_search_as_html('Other', 'html/en/reference/sage/algebras/steenrod_algebra_element.html:an antihomomorphism: if we call the antipode <span class=\"math\">c</span>, then', 'antipode antihomomorphism')\n    NameError: name 'format_search_as_html' is not defined\nhtml/en/tutorial/tour_polynomial.html:<p>This creates a polynomial ring and tells Sage to use (the string)\n\n**********************************************************************\n1 items had failures:\n   2 of   4 in __main__.example_7\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-3.4.1.rc2-ref2/tmp/.doctest_sagedoc.py\n         [24.9 s]\nsage -t  devel/sage/sage/rings/tests.py\n```\n",
     "created_at": "2009-04-12T05:35:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5764#issuecomment-45054",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sageinspect-doctest.patch](tarball://root/attachments/some-uuid/ticket5764/sageinspect-doctest.patch) by was created at 2009-04-12 05:35:51
+Attachment [sageinspect-doctest.patch](tarball://root/attachments/some-uuid/ticket5764/sageinspect-doctest.patch) by @williamstein created at 2009-04-12 05:35:51
 
 I thought this already got dealt with.  Anyways, right now doctests fail on the sagedoc.py file (and no others).
 
@@ -103,7 +103,7 @@ archive/issue_comments_045055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5764#issuecomment-45055",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_045056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5764#issuecomment-45056",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_045057.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5764",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5764#issuecomment-45057",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

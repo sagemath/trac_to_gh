@@ -14,7 +14,7 @@ archive/issues_006346.json:
     "title": "sage-4.0.2.rc2 build test problem on ppc os x 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6346",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -87,16 +87,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6346
 archive/issue_comments_050734.json:
 ```json
 {
-    "body": "Attachment [trac_6346.patch](tarball://root/attachments/some-uuid/ticket6346/trac_6346.patch) by was created at 2009-06-17 09:05:29",
+    "body": "Attachment [trac_6346.patch](tarball://root/attachments/some-uuid/ticket6346/trac_6346.patch) by @williamstein created at 2009-06-17 09:05:29",
     "created_at": "2009-06-17T09:05:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6346#issuecomment-50734",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6346.patch](tarball://root/attachments/some-uuid/ticket6346/trac_6346.patch) by was created at 2009-06-17 09:05:29
+Attachment [trac_6346.patch](tarball://root/attachments/some-uuid/ticket6346/trac_6346.patch) by @williamstein created at 2009-06-17 09:05:29
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_050735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6346#issuecomment-50735",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_050736.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6346#issuecomment-50736",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

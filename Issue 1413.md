@@ -3,7 +3,7 @@
 archive/issues_001413.json:
 ```json
 {
-    "body": "Assignee: was\n\nA few of these were annoying me so I tried to do all the obvious ones.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1413\n\n",
+    "body": "Assignee: @williamstein\n\nA few of these were annoying me so I tried to do all the obvious ones.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1413\n\n",
     "created_at": "2007-12-06T20:34:55Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001413.json:
     "user": "jbmohler"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 A few of these were annoying me so I tried to do all the obvious ones.
 
@@ -37,7 +37,7 @@ archive/issue_comments_009109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1413#issuecomment-9109",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -92,16 +92,16 @@ Michael
 archive/issue_comments_009112.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2008-01-24T09:01:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1413#issuecomment-9112",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -115,7 +115,7 @@ archive/issue_comments_009113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1413#issuecomment-9113",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_009115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1413#issuecomment-9115",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_009116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1413",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1413#issuecomment-9116",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

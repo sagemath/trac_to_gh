@@ -3,7 +3,7 @@
 archive/issues_007405.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  saliola\n\nKeywords: words\n\nThis ticket concern 3 relatively small things.\n\n(1) Change the print of predefined words to the default behavior.\n\n(2) Correct a bug of `__mul__` of `WordMorphism.`\n\n(3) Adds the Fibonacci word defined from function.\n\n\nSee below for more explanations.\n\n(1) The `rename` function is used a lot for predefined words :\n\n\n```\nsage: words.FibonacciWord()\nFibonacci word over Ordered Alphabet [0, 1], defined recursively\nsage: words.FibonacciWord((0,1),'fixed point')\nFibonacci word over Ordered Alphabet [0, 1], defined as the fixed point of a morphism\nsage: words.ThueMorseWord(alphabet = (3,4))\nThue-Morse word over Ordered Alphabet [3, 4]\nsage: words.FixedPointOfMorphism('a->ab,b->ba','a')\nFixed point beginning with 'a' of the morphism WordMorphism: a->ab, b->ba\nsage: words.ChristoffelWord(4,7)\nLower Christoffel word of slope 4/7 over Ordered Alphabet [0, 1]\n```\n\n\nBut I more and more dislike this behavior made for the user since (1) it repeats the information already given by the user and (2) the first thing that the user do with the word is to look the prefix of the word (well, that's what I always do and that's what is done everywhere in the doctests).\n\nTo print a prefix, one needs to crete it (which is not always necessary for the user) :\n\n\n```\nsage: f = words.FibonacciWord()\nsage: f\nFibonacci word over Ordered Alphabet [0, 1], defined recursively\nsage: print f\nFibonacci word over Ordered Alphabet [0, 1], defined recursively\nsage: f[:100]\nword: 0100101001001010010100100101001001010010...\nsage: print f[:100]\nword: 0100101001001010010100100101001001010010100100101001010010010100100101001010010010100100101001010010\n```\n\n\nI would simply like the following to work :\n\n\n```\nsage:  words.FibonacciWord()\nword: 0100101001001010010100100101001001010010...\n```\n\n\nwhich is the default behavior anyway :\n\n```\nsage: Word(lambda n:n%10)\nword: 0123456789012345678901234567890123456789...\n```\n\n\n\n(2) The codomain of the product of `WordMorphism` is not correct :\n\n\n```\nsage: m = WordMorphism('0->a,1->b')\nsage: n = WordMorphism('a->c,b->e',codomain=Words('abcde'))\nsage: p = n * m\nsage: p.codomain()\nWords over Ordered Alphabet ['c', 'e']\n```\n\n\n(3) See the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7405\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  @saliola\n\nKeywords: words\n\nThis ticket concern 3 relatively small things.\n\n(1) Change the print of predefined words to the default behavior.\n\n(2) Correct a bug of `__mul__` of `WordMorphism.`\n\n(3) Adds the Fibonacci word defined from function.\n\n\nSee below for more explanations.\n\n(1) The `rename` function is used a lot for predefined words :\n\n\n```\nsage: words.FibonacciWord()\nFibonacci word over Ordered Alphabet [0, 1], defined recursively\nsage: words.FibonacciWord((0,1),'fixed point')\nFibonacci word over Ordered Alphabet [0, 1], defined as the fixed point of a morphism\nsage: words.ThueMorseWord(alphabet = (3,4))\nThue-Morse word over Ordered Alphabet [3, 4]\nsage: words.FixedPointOfMorphism('a->ab,b->ba','a')\nFixed point beginning with 'a' of the morphism WordMorphism: a->ab, b->ba\nsage: words.ChristoffelWord(4,7)\nLower Christoffel word of slope 4/7 over Ordered Alphabet [0, 1]\n```\n\n\nBut I more and more dislike this behavior made for the user since (1) it repeats the information already given by the user and (2) the first thing that the user do with the word is to look the prefix of the word (well, that's what I always do and that's what is done everywhere in the doctests).\n\nTo print a prefix, one needs to crete it (which is not always necessary for the user) :\n\n\n```\nsage: f = words.FibonacciWord()\nsage: f\nFibonacci word over Ordered Alphabet [0, 1], defined recursively\nsage: print f\nFibonacci word over Ordered Alphabet [0, 1], defined recursively\nsage: f[:100]\nword: 0100101001001010010100100101001001010010...\nsage: print f[:100]\nword: 0100101001001010010100100101001001010010100100101001010010010100100101001010010010100100101001010010\n```\n\n\nI would simply like the following to work :\n\n\n```\nsage:  words.FibonacciWord()\nword: 0100101001001010010100100101001001010010...\n```\n\n\nwhich is the default behavior anyway :\n\n```\nsage: Word(lambda n:n%10)\nword: 0123456789012345678901234567890123456789...\n```\n\n\n\n(2) The codomain of the product of `WordMorphism` is not correct :\n\n\n```\nsage: m = WordMorphism('0->a,1->b')\nsage: n = WordMorphism('a->c,b->e',codomain=Words('abcde'))\nsage: p = n * m\nsage: p.codomain()\nWords over Ordered Alphabet ['c', 'e']\n```\n\n\n(3) See the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7405\n\n",
     "created_at": "2009-11-06T17:24:26Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_007405.json:
     "title": "Change the print of predefined words to the default behavior.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7405",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
-CC:  saliola
+CC:  @saliola
 
 Keywords: words
 
@@ -112,16 +112,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7405
 archive/issue_comments_062311.json:
 ```json
 {
-    "body": "Attachment [trac_7405_words_change_print_to_default-sl.patch](tarball://root/attachments/some-uuid/ticket7405/trac_7405_words_change_print_to_default-sl.patch) by slabbe created at 2009-11-06 17:51:20",
+    "body": "Attachment [trac_7405_words_change_print_to_default-sl.patch](tarball://root/attachments/some-uuid/ticket7405/trac_7405_words_change_print_to_default-sl.patch) by @seblabbe created at 2009-11-06 17:51:20",
     "created_at": "2009-11-06T17:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7405#issuecomment-62311",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_7405_words_change_print_to_default-sl.patch](tarball://root/attachments/some-uuid/ticket7405/trac_7405_words_change_print_to_default-sl.patch) by slabbe created at 2009-11-06 17:51:20
+Attachment [trac_7405_words_change_print_to_default-sl.patch](tarball://root/attachments/some-uuid/ticket7405/trac_7405_words_change_print_to_default-sl.patch) by @seblabbe created at 2009-11-06 17:51:20
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_062312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7405#issuecomment-62312",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_062313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7405#issuecomment-62313",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_062314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7405#issuecomment-62314",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_062315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7405#issuecomment-62315",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_062316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7405#issuecomment-62316",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_062317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7405#issuecomment-62317",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_062318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7405",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7405#issuecomment-62318",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

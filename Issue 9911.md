@@ -14,7 +14,7 @@ archive/issues_009911.json:
     "title": "extraneous argument in deprecation in #7154",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9911",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
@@ -55,7 +55,7 @@ archive/issue_comments_098591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9911#issuecomment-98591",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_098592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9911#issuecomment-98592",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_098593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9911#issuecomment-98593",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_098594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9911#issuecomment-98594",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_098595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9911#issuecomment-98595",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_098596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9911#issuecomment-98596",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_098597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9911#issuecomment-98597",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_098598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9911#issuecomment-98598",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

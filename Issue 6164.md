@@ -3,7 +3,7 @@
 archive/issues_006164.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  malb\n\nKeywords: Mini-AES, AES, cryptography\n\nTo facilitate the learning of cryptography (in particular the Advanced Encryption Standard), it's a good idea to add a class to allow students to explore the working of a block cipher. The goal here is to implement the Mini-AES block cipher of Phan as described in the paper:\n\nR. C.-W. Phan. Mini advanced encryption standard (mini-AES): a testbed for cryptanalysis students. Cryptologia, 26(4):283--306, 2002.\n\nThis is a simplified variant of the AES to be used for cryptography education.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6164\n\n",
+    "body": "Assignee: somebody\n\nCC:  @malb\n\nKeywords: Mini-AES, AES, cryptography\n\nTo facilitate the learning of cryptography (in particular the Advanced Encryption Standard), it's a good idea to add a class to allow students to explore the working of a block cipher. The goal here is to implement the Mini-AES block cipher of Phan as described in the paper:\n\nR. C.-W. Phan. Mini advanced encryption standard (mini-AES): a testbed for cryptanalysis students. Cryptologia, 26(4):283--306, 2002.\n\nThis is a simplified variant of the AES to be used for cryptography education.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6164\n\n",
     "created_at": "2009-05-31T04:21:30Z",
     "labels": [
         "cryptography",
@@ -19,7 +19,7 @@ archive/issues_006164.json:
 ```
 Assignee: somebody
 
-CC:  malb
+CC:  @malb
 
 Keywords: Mini-AES, AES, cryptography
 
@@ -63,7 +63,7 @@ archive/issue_comments_049172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49172",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_049174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49174",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_049177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49177",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -308,7 +308,7 @@ archive/issue_comments_049180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49180",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_049181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49181",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_049184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6164",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49184",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

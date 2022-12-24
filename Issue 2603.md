@@ -3,7 +3,7 @@
 archive/issues_002603.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan\n\nKeywords: linear system under determined solution space solve\n\nWith respect to #2581, which generalizes `solve_left` and `solve_right`, Nick Alexander asked:\n\nIs there any hope for a `solution_space_right` that handles under-determined systems?\n\nWilliam Stein replied:\n\nNot in this patch. Make a trac ticket and somebody will get to it.\n\nIt would be nice if this was gotten to :)\n\nTo be a little more clear, as of 2.10.4 the following does not work:\n\n\n```\nsage: sage: matrix(ZZ, 3, 1, [0, 1, 2]).solve_right(vector(ZZ, [3, 2, 1]))\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/Users/ncalexan/sage-2.10.3.rc3/devel/sage-gensolve/sage/schemes/hyperelliptic_curves/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.3.rc3/devel/sage-gensolve/sage/schemes/hyperelliptic_curves/matrix_integer_dense.pyx in sage.matrix.matrix_integer_dense.Matrix_integer_dense.solve_right()\n\n<type 'exceptions.ValueError'>: self must be of full rank.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2603\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: linear system under determined solution space solve\n\nWith respect to #2581, which generalizes `solve_left` and `solve_right`, Nick Alexander asked:\n\nIs there any hope for a `solution_space_right` that handles under-determined systems?\n\nWilliam Stein replied:\n\nNot in this patch. Make a trac ticket and somebody will get to it.\n\nIt would be nice if this was gotten to :)\n\nTo be a little more clear, as of 2.10.4 the following does not work:\n\n\n```\nsage: sage: matrix(ZZ, 3, 1, [0, 1, 2]).solve_right(vector(ZZ, [3, 2, 1]))\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/Users/ncalexan/sage-2.10.3.rc3/devel/sage-gensolve/sage/schemes/hyperelliptic_curves/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.3.rc3/devel/sage-gensolve/sage/schemes/hyperelliptic_curves/matrix_integer_dense.pyx in sage.matrix.matrix_integer_dense.Matrix_integer_dense.solve_right()\n\n<type 'exceptions.ValueError'>: self must be of full rank.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2603\n\n",
     "created_at": "2008-03-19T19:33:02Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_002603.json:
     "title": "implement solution_space_right and solution_space_left for solving under-determined linear systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2603",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: linear system under determined solution space solve
 
@@ -65,7 +65,7 @@ archive/issue_comments_017807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2603#issuecomment-17807",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_017808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2603",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2603#issuecomment-17808",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

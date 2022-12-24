@@ -3,7 +3,7 @@
 archive/issues_004292.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf you do\n\n```\n   graphics_array([[plot(sin)]]).show(axes=False)\n```\n\nthe axes still get shown!  This horrendously sucks, e.g. ,for my talk today, and this was not a problem in Sage a few months ago. \n\nFortunately, it's a trivial 1-line fix, which I've attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4292\n\n",
+    "body": "Assignee: @williamstein\n\nIf you do\n\n```\n   graphics_array([[plot(sin)]]).show(axes=False)\n```\n\nthe axes still get shown!  This horrendously sucks, e.g. ,for my talk today, and this was not a problem in Sage a few months ago. \n\nFortunately, it's a trivial 1-line fix, which I've attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4292\n\n",
     "created_at": "2008-10-15T11:11:36Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004292.json:
     "title": "[with patch; needs trivial review] graphics_array -- stupid bug introduced by somebody cleaning up the code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4292",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If you do
 

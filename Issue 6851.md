@@ -3,7 +3,7 @@
 archive/issues_006851.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nIt seems that #6243 didn't fix things properly:\n\n\n```\nThanks to those who worked on closing ticket 6243 regarding\nderivatives as dictionary keys for the release of Sage 4.1.1.  It\nappears that there's still a bug, though (see below).\n\nAlex\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f= function('f',x)\nsage: d= {}\nsage: for i in [1..5]:\n....:     print diff(f,x,i)\n....:     d[diff(f,x,i)] = i\n....:\nD[0](f)(x)\nD[0, 0](f)(x)\n<boom>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6851\n\n",
+    "body": "Assignee: @burcin\n\nIt seems that #6243 didn't fix things properly:\n\n\n```\nThanks to those who worked on closing ticket 6243 regarding\nderivatives as dictionary keys for the release of Sage 4.1.1.  It\nappears that there's still a bug, though (see below).\n\nAlex\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f= function('f',x)\nsage: d= {}\nsage: for i in [1..5]:\n....:     print diff(f,x,i)\n....:     d[diff(f,x,i)] = i\n....:\nD[0](f)(x)\nD[0, 0](f)(x)\n<boom>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6851\n\n",
     "created_at": "2009-08-31T12:02:12Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_006851.json:
     "title": "hashes for derivatives of symbolic functions still collide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6851",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 It seems that #6243 didn't fix things properly:
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6851
 archive/issue_comments_056494.json:
 ```json
 {
-    "body": "Attachment [trac_6851-fderivative_hash_collision.patch](tarball://root/attachments/some-uuid/ticket6851/trac_6851-fderivative_hash_collision.patch) by burcin created at 2009-09-19 15:14:23\n\nI hope I have the right fix in pynac this time. attachment:trac_6851-fderivative_hash_collision.patch contains doctests for Sage.\n\nI will post a new pynac package and review instructions soon.",
+    "body": "Attachment [trac_6851-fderivative_hash_collision.patch](tarball://root/attachments/some-uuid/ticket6851/trac_6851-fderivative_hash_collision.patch) by @burcin created at 2009-09-19 15:14:23\n\nI hope I have the right fix in pynac this time. attachment:trac_6851-fderivative_hash_collision.patch contains doctests for Sage.\n\nI will post a new pynac package and review instructions soon.",
     "created_at": "2009-09-19T15:14:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6851#issuecomment-56494",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_6851-fderivative_hash_collision.patch](tarball://root/attachments/some-uuid/ticket6851/trac_6851-fderivative_hash_collision.patch) by burcin created at 2009-09-19 15:14:23
+Attachment [trac_6851-fderivative_hash_collision.patch](tarball://root/attachments/some-uuid/ticket6851/trac_6851-fderivative_hash_collision.patch) by @burcin created at 2009-09-19 15:14:23
 
 I hope I have the right fix in pynac this time. attachment:trac_6851-fderivative_hash_collision.patch contains doctests for Sage.
 
@@ -81,7 +81,7 @@ archive/issue_comments_056495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6851#issuecomment-56495",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_056496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6851#issuecomment-56496",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_056497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6851",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6851#issuecomment-56497",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

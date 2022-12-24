@@ -3,7 +3,7 @@
 archive/issues_007870.json:
 ```json
 {
-    "body": "Assignee: was\n\nI ran the magma optional test suite on skynet (eno):\n\n```\n./sage -t --only_optional=magma devel/sage/sage > magma.out&\n```\n\n\nAnd the failures are:\n\n```\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/pbori.pyx\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/term_order.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/symbolic/expression.pyx\"\nTotal time for all tests: 364.0 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7870\n\n",
+    "body": "Assignee: @williamstein\n\nI ran the magma optional test suite on skynet (eno):\n\n```\n./sage -t --only_optional=magma devel/sage/sage > magma.out&\n```\n\n\nAnd the failures are:\n\n```\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/pbori.pyx\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/term_order.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\"\n        sage -t --only_optional=magma \"devel/sage/sage/symbolic/expression.pyx\"\nTotal time for all tests: 364.0 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7870\n\n",
     "created_at": "2010-01-07T20:51:18Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_007870.json:
     "title": "dozens of failures in magma optional test suite on skynet (eno) with sage-4.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7870",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I ran the magma optional test suite on skynet (eno):
 
@@ -56,7 +56,7 @@ archive/issue_comments_068271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68271",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -69,16 +69,16 @@ this is the output of running the test suite, showing the actual failures.
 archive/issue_comments_068272.json:
 ```json
 {
-    "body": "Attachment [magma.out](tarball://root/attachments/some-uuid/ticket7870/magma.out) by was created at 2010-04-06 15:15:56\n\nI tested again using the new magma V2.16-7 with sage-4.3.5. \n\n```\n[wstein@eno sage-4.3.5]$ magma\nMagma V2.16-7     Tue Apr  6 2010 11:14:18 on eno      [Seed = 3125460604]\nType ? for help.  Type <Ctrl>-D to quit.\n```\n\nThere are now even more failures.  I've attached a new test log created using the following on eno:\n\n```\n./sage -tp 10 -only_optional=magma devel/sage/sage\n```\n",
+    "body": "Attachment [magma.out](tarball://root/attachments/some-uuid/ticket7870/magma.out) by @williamstein created at 2010-04-06 15:15:56\n\nI tested again using the new magma V2.16-7 with sage-4.3.5. \n\n```\n[wstein@eno sage-4.3.5]$ magma\nMagma V2.16-7     Tue Apr  6 2010 11:14:18 on eno      [Seed = 3125460604]\nType ? for help.  Type <Ctrl>-D to quit.\n```\n\nThere are now even more failures.  I've attached a new test log created using the following on eno:\n\n```\n./sage -tp 10 -only_optional=magma devel/sage/sage\n```\n",
     "created_at": "2010-04-06T15:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68272",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [magma.out](tarball://root/attachments/some-uuid/ticket7870/magma.out) by was created at 2010-04-06 15:15:56
+Attachment [magma.out](tarball://root/attachments/some-uuid/ticket7870/magma.out) by @williamstein created at 2010-04-06 15:15:56
 
 I tested again using the new magma V2.16-7 with sage-4.3.5. 
 
@@ -107,7 +107,7 @@ archive/issue_comments_068273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68273",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,16 +120,16 @@ it got much worse!
 archive/issue_comments_068274.json:
 ```json
 {
-    "body": "Attachment [trac_7870.patch](tarball://root/attachments/some-uuid/ticket7870/trac_7870.patch) by was created at 2010-04-06 16:20:57\n\nThis fixes all the doctest issues on eno with magma V2.16-7",
+    "body": "Attachment [trac_7870.patch](tarball://root/attachments/some-uuid/ticket7870/trac_7870.patch) by @williamstein created at 2010-04-06 16:20:57\n\nThis fixes all the doctest issues on eno with magma V2.16-7",
     "created_at": "2010-04-06T16:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68274",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7870.patch](tarball://root/attachments/some-uuid/ticket7870/trac_7870.patch) by was created at 2010-04-06 16:20:57
+Attachment [trac_7870.patch](tarball://root/attachments/some-uuid/ticket7870/trac_7870.patch) by @williamstein created at 2010-04-06 16:20:57
 
 This fixes all the doctest issues on eno with magma V2.16-7
 
@@ -145,7 +145,7 @@ archive/issue_comments_068275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68275",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -158,16 +158,16 @@ Changing status from new to needs_review.
 archive/issue_comments_068276.json:
 ```json
 {
-    "body": "Changing assignee from was to cremona.",
+    "body": "Changing assignee from @williamstein to @JohnCremona.",
     "created_at": "2010-04-06T16:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68276",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Changing assignee from was to cremona.
+Changing assignee from @williamstein to @JohnCremona.
 
 
 
@@ -181,7 +181,7 @@ archive/issue_comments_068277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68277",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_068278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68278",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_068279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68279",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_068280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68280",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_068281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68281",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_068282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68282",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_068283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68283",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_068284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68284",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_068285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68285",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -474,7 +474,7 @@ archive/issue_comments_068286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68286",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -492,7 +492,7 @@ archive/issue_comments_068287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68287",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -514,7 +514,7 @@ archive/issue_comments_068288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68288",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_068289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68289",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -561,7 +561,7 @@ archive/issue_comments_068290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68290",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_068292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68292",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_068293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68293",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -647,16 +647,16 @@ Based on this, I'm changing this to needs_work. Not volunteering to review, just
 archive/issue_comments_068294.json:
 ```json
 {
-    "body": "Attachment [trac_7870-magma-doctest.patch](tarball://root/attachments/some-uuid/ticket7870/trac_7870-magma-doctest.patch) by cremona created at 2011-02-18 23:04:50\n\nReplaces all previous patches;  applies to 4.6.1 and Magma 2.17-4",
+    "body": "Attachment [trac_7870-magma-doctest.patch](tarball://root/attachments/some-uuid/ticket7870/trac_7870-magma-doctest.patch) by @JohnCremona created at 2011-02-18 23:04:50\n\nReplaces all previous patches;  applies to 4.6.1 and Magma 2.17-4",
     "created_at": "2011-02-18T23:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68294",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7870-magma-doctest.patch](tarball://root/attachments/some-uuid/ticket7870/trac_7870-magma-doctest.patch) by cremona created at 2011-02-18 23:04:50
+Attachment [trac_7870-magma-doctest.patch](tarball://root/attachments/some-uuid/ticket7870/trac_7870-magma-doctest.patch) by @JohnCremona created at 2011-02-18 23:04:50
 
 Replaces all previous patches;  applies to 4.6.1 and Magma 2.17-4
 
@@ -672,7 +672,7 @@ archive/issue_comments_068295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68295",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -690,7 +690,7 @@ archive/issue_comments_068296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68296",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -767,7 +767,7 @@ archive/issue_comments_068300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68300",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -809,7 +809,7 @@ archive/issue_comments_068302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68302",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -866,7 +866,7 @@ archive/issue_comments_068304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68304",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -884,7 +884,7 @@ archive/issue_comments_068305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68305",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -902,7 +902,7 @@ archive/issue_comments_068306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68306",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -946,7 +946,7 @@ archive/issue_comments_068308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68308",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -964,7 +964,7 @@ archive/issue_comments_068309.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68309",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1037,7 +1037,7 @@ archive/issue_comments_068312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68312",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1055,7 +1055,7 @@ archive/issue_comments_068313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68313",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1129,7 +1129,7 @@ archive/issue_comments_068317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68317",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1155,7 +1155,7 @@ archive/issue_comments_068318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68318",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1175,7 +1175,7 @@ archive/issue_comments_068319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68319",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1193,7 +1193,7 @@ archive/issue_comments_068320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68320",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1211,7 +1211,7 @@ archive/issue_comments_068321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68321",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1283,7 +1283,7 @@ archive/issue_comments_068325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68325",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1303,7 +1303,7 @@ archive/issue_comments_068326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68326",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1321,7 +1321,7 @@ archive/issue_comments_068327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7870",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7870#issuecomment-68327",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

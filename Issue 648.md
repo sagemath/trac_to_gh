@@ -119,7 +119,7 @@ archive/issue_comments_003369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/648",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/648#issuecomment-3369",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

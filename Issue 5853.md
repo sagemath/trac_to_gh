@@ -3,7 +3,7 @@
 archive/issues_005853.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  cremona\n\nKeywords: documentation, elliptic curves\n\nThis is a follow-up on ticket #4933 and #5851. I plan to work on following files\n\n* padic_height.py\n* ell_modular_symbols.py\n* ell_tate_curve.py\n* padic_lseries.py\n* sha_tate.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/5853\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nKeywords: documentation, elliptic curves\n\nThis is a follow-up on ticket #4933 and #5851. I plan to work on following files\n\n* padic_height.py\n* ell_modular_symbols.py\n* ell_tate_curve.py\n* padic_lseries.py\n* sha_tate.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/5853\n\n",
     "created_at": "2009-04-22T13:26:26Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_005853.json:
     "title": "Restify and include more documentation on elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5853",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  cremona
+CC:  @JohnCremona
 
 Keywords: documentation, elliptic curves
 
@@ -47,7 +47,7 @@ archive/issue_comments_046224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5853",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5853#issuecomment-46224",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -70,16 +70,16 @@ Not all of that was obvious to me, so I hope it helps!
 archive/issue_comments_046225.json:
 ```json
 {
-    "body": "Attachment [trac_5853.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5853.patch) by wuthrich created at 2009-04-24 15:20:21\n\nto be applied after tickets in #5846 and #5851",
+    "body": "Attachment [trac_5853.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5853.patch) by @categorie created at 2009-04-24 15:20:21\n\nto be applied after tickets in #5846 and #5851",
     "created_at": "2009-04-24T15:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5853",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5853#issuecomment-46225",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_5853.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5853.patch) by wuthrich created at 2009-04-24 15:20:21
+Attachment [trac_5853.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5853.patch) by @categorie created at 2009-04-24 15:20:21
 
 to be applied after tickets in #5846 and #5851
 
@@ -95,7 +95,7 @@ archive/issue_comments_046226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5853",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5853#issuecomment-46226",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -108,16 +108,16 @@ No no, this patch is not right, do not even look at it. Sorry!!!!
 archive/issue_comments_046227.json:
 ```json
 {
-    "body": "Attachment [trac_5846_prec_2.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5846_prec_2.patch) by wuthrich created at 2009-04-24 15:45:47\n\nReplaces the previous ticket as before this applies to 3.4.1 + #5846 and #5851",
+    "body": "Attachment [trac_5846_prec_2.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5846_prec_2.patch) by @categorie created at 2009-04-24 15:45:47\n\nReplaces the previous ticket as before this applies to 3.4.1 + #5846 and #5851",
     "created_at": "2009-04-24T15:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5853",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5853#issuecomment-46227",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_5846_prec_2.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5846_prec_2.patch) by wuthrich created at 2009-04-24 15:45:47
+Attachment [trac_5846_prec_2.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5846_prec_2.patch) by @categorie created at 2009-04-24 15:45:47
 
 Replaces the previous ticket as before this applies to 3.4.1 + #5846 and #5851
 
@@ -133,7 +133,7 @@ archive/issue_comments_046228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5853",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5853#issuecomment-46228",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -146,16 +146,16 @@ replaces all before.
 archive/issue_comments_046229.json:
 ```json
 {
-    "body": "Attachment [trac_5853_2.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5853_2.patch) by wuthrich created at 2009-04-24 21:02:58\n\nreplaces all before",
+    "body": "Attachment [trac_5853_2.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5853_2.patch) by @categorie created at 2009-04-24 21:02:58\n\nreplaces all before",
     "created_at": "2009-04-24T21:02:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5853",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5853#issuecomment-46229",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_5853_2.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5853_2.patch) by wuthrich created at 2009-04-24 21:02:58
+Attachment [trac_5853_2.patch](tarball://root/attachments/some-uuid/ticket5853/trac_5853_2.patch) by @categorie created at 2009-04-24 21:02:58
 
 replaces all before
 
@@ -171,7 +171,7 @@ archive/issue_comments_046230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5853",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5853#issuecomment-46230",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_046231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5853",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5853#issuecomment-46231",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001957.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc2/libfplll-2.1.6-20071129.p0.spkg\n\nbuilds fine on Solaris 9, OSX and Linux.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1957\n\n",
+    "body": "Assignee: @williamstein\n\nThe spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc2/libfplll-2.1.6-20071129.p0.spkg\n\nbuilds fine on Solaris 9, OSX and Linux.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1957\n\n",
     "created_at": "2008-01-28T03:20:09Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001957.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The spkg at
 
@@ -58,7 +58,7 @@ Changing status from new to assigned.
 archive/issue_comments_012635.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-01-28T03:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1957",
     "type": "issue_comment",
@@ -67,7 +67,7 @@ archive/issue_comments_012635.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 

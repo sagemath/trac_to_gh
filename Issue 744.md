@@ -3,7 +3,7 @@
 archive/issues_000744.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\nCurrently many functions which modify a graph return the value that was just set.  If instead the modified graph were returned, it would permit a very powerful chaining mechanism in programming.  This mechanism, for example, is one of the things that is best-loved about the jQuery javascript library and something that I personally like very much in Mathematica.\n\nFor example, if \"name\" and \"add_vertex\" both returned the modified graph, then the following code would make 10 copies of the graph g, labeling each appropriately, and add a new vertex that was hooked, successively, to the first 10 vertices of g.  Notice how nicely that chaining complements list comprehensions.\n\n\n```\n  sage: [g.copy().name(new=\"graph %d\"%i).add_vertex('center').add_edge(('center',i)) for i in [1..10] ]\n```\n\n\nIs there something that would break if we make this change (e.g., is there some functionality that depends on receiving back the change that was just made in the graph)?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/744\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nCurrently many functions which modify a graph return the value that was just set.  If instead the modified graph were returned, it would permit a very powerful chaining mechanism in programming.  This mechanism, for example, is one of the things that is best-loved about the jQuery javascript library and something that I personally like very much in Mathematica.\n\nFor example, if \"name\" and \"add_vertex\" both returned the modified graph, then the following code would make 10 copies of the graph g, labeling each appropriately, and add a new vertex that was hooked, successively, to the first 10 vertices of g.  Notice how nicely that chaining complements list comprehensions.\n\n\n```\n  sage: [g.copy().name(new=\"graph %d\"%i).add_vertex('center').add_edge(('center',i)) for i in [1..10] ]\n```\n\n\nIs there something that would break if we make this change (e.g., is there some functionality that depends on receiving back the change that was just made in the graph)?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/744\n\n",
     "created_at": "2007-09-24T18:22:33Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000744.json:
     "title": "graphs: returning graph to allow chaining",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/744",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -50,7 +50,7 @@ archive/issue_comments_004365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/744#issuecomment-4365",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_004366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/744#issuecomment-4366",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_004367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/744#issuecomment-4367",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_004368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/744#issuecomment-4368",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

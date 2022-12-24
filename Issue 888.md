@@ -3,7 +3,7 @@
 archive/issues_000888.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nFile \"testdoc.py\", line 12:\n    age: d = DSage(port=port, ssl=False)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/cwitty/pre-sage/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 1, in <module>\n        d = DSage(port=port, ssl=False)###line 12:\n    age: d = DSage(port=port, ssl=False)\n      File \"/home/cwitty/pre-sage/local/lib/python/site-packages/sage/dsage/all.py\", line 52, in DSage\n        ssl=ssl)\n      File \"/home/cwitty/pre-sage/local/lib/python/site-packages/sage/dsage/interface/dsage_interface.py\", line 392, in __init__\n        self.pubkey_str = keys.getPublicKeyString(filename=self.pubkey_file)\n      File \"/home/cwitty/pre-sage/local/lib/python2.5/site-packages/twisted/conch/ssh/keys.py\", line 48, in getPublicKeyString\n        lines = open(filename).readlines()\n    IOError: [Errno 2] No such file or directory: '/home/cwitty/.sage/dsage/dsage_key.pub'\n```\n\n\n(The last line is the most interesting.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/888\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nFile \"testdoc.py\", line 12:\n    age: d = DSage(port=port, ssl=False)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/cwitty/pre-sage/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 1, in <module>\n        d = DSage(port=port, ssl=False)###line 12:\n    age: d = DSage(port=port, ssl=False)\n      File \"/home/cwitty/pre-sage/local/lib/python/site-packages/sage/dsage/all.py\", line 52, in DSage\n        ssl=ssl)\n      File \"/home/cwitty/pre-sage/local/lib/python/site-packages/sage/dsage/interface/dsage_interface.py\", line 392, in __init__\n        self.pubkey_str = keys.getPublicKeyString(filename=self.pubkey_file)\n      File \"/home/cwitty/pre-sage/local/lib/python2.5/site-packages/twisted/conch/ssh/keys.py\", line 48, in getPublicKeyString\n        lines = open(filename).readlines()\n    IOError: [Errno 2] No such file or directory: '/home/cwitty/.sage/dsage/dsage_key.pub'\n```\n\n\n(The last line is the most interesting.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/888\n\n",
     "created_at": "2007-10-13T20:36:32Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_000888.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -58,7 +58,7 @@ archive/issue_comments_005477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/888#issuecomment-5477",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_005478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/888#issuecomment-5478",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_005479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/888#issuecomment-5479",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -108,16 +108,16 @@ Please reassign DSAGE related bugs to me in the future so they will show up unde
 archive/issue_comments_005480.json:
 ```json
 {
-    "body": "Changing assignee from was to yi.",
+    "body": "Changing assignee from @williamstein to @yqiang.",
     "created_at": "2007-10-19T06:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/888#issuecomment-5480",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Changing assignee from was to yi.
+Changing assignee from @williamstein to @yqiang.
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_005481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/888#issuecomment-5481",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_005482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/888#issuecomment-5482",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_005483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/888#issuecomment-5483",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_005484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/888#issuecomment-5484",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_005486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/888",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/888#issuecomment-5486",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

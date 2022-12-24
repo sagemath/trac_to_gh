@@ -3,7 +3,7 @@
 archive/issues_008694.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nI am attaching notebook printouts with old and new output in text and typeset mode.\n\n(In the \"before\" file typeset versions are for some reason on top of the last lines of text - this happens only after pressing \"Print\" button in the notebook, the usual editable version looks fine.)\n\nCurrent situation:\n* schemes don't have _latex_ methods, so typesetting just outputs the usual text representation;\n* this is not only not very good looking, but actually can be confusing since polynomials that were on different lines before are now separated just by a space, which may look like an omitted multiplication.\n\nThe patch provides _latex_ methods for pretty yet compact typesetting. In addition, while working on this I made the following changes to _repr_ methods:\n* put commas between polynomials: this may be important even in text mode if polynomials are long and some of them are printed on several lines;\n* replaced (no equations) by (no polynomials) for schemes that do not have defining polynomials: since the output does not include \"=0\", this seems to be more correct;\n* compactified printing of quasi-schemes: since both components are schemes in the same ambient space, there is no need to print it twice.\n\nApply on top of #8675 and #8682.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8694\n\n",
+    "body": "Assignee: @aghitza\n\nI am attaching notebook printouts with old and new output in text and typeset mode.\n\n(In the \"before\" file typeset versions are for some reason on top of the last lines of text - this happens only after pressing \"Print\" button in the notebook, the usual editable version looks fine.)\n\nCurrent situation:\n* schemes don't have _latex_ methods, so typesetting just outputs the usual text representation;\n* this is not only not very good looking, but actually can be confusing since polynomials that were on different lines before are now separated just by a space, which may look like an omitted multiplication.\n\nThe patch provides _latex_ methods for pretty yet compact typesetting. In addition, while working on this I made the following changes to _repr_ methods:\n* put commas between polynomials: this may be important even in text mode if polynomials are long and some of them are printed on several lines;\n* replaced (no equations) by (no polynomials) for schemes that do not have defining polynomials: since the output does not include \"=0\", this seems to be more correct;\n* compactified printing of quasi-schemes: since both components are schemes in the same ambient space, there is no need to print it twice.\n\nApply on top of #8675 and #8682.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8694\n\n",
     "created_at": "2010-04-15T19:56:11Z",
     "labels": [
         "algebraic geometry",
@@ -14,10 +14,10 @@ archive/issues_008694.json:
     "title": "Improve schemes printing and LaTeXing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8694",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 I am attaching notebook printouts with old and new output in text and typeset mode.
 
@@ -45,16 +45,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8694
 archive/issue_comments_079197.json:
 ```json
 {
-    "body": "Attachment [schemes_output_before.pdf](tarball://root/attachments/some-uuid/ticket8694/schemes_output_before.pdf) by novoselt created at 2010-04-15 19:56:41",
+    "body": "Attachment [schemes_output_before.pdf](tarball://root/attachments/some-uuid/ticket8694/schemes_output_before.pdf) by @novoselt created at 2010-04-15 19:56:41",
     "created_at": "2010-04-15T19:56:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8694#issuecomment-79197",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [schemes_output_before.pdf](tarball://root/attachments/some-uuid/ticket8694/schemes_output_before.pdf) by novoselt created at 2010-04-15 19:56:41
+Attachment [schemes_output_before.pdf](tarball://root/attachments/some-uuid/ticket8694/schemes_output_before.pdf) by @novoselt created at 2010-04-15 19:56:41
 
 
 
@@ -63,16 +63,16 @@ Attachment [schemes_output_before.pdf](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_079198.json:
 ```json
 {
-    "body": "Attachment [schemes_output_after.pdf](tarball://root/attachments/some-uuid/ticket8694/schemes_output_after.pdf) by novoselt created at 2010-04-15 19:56:51",
+    "body": "Attachment [schemes_output_after.pdf](tarball://root/attachments/some-uuid/ticket8694/schemes_output_after.pdf) by @novoselt created at 2010-04-15 19:56:51",
     "created_at": "2010-04-15T19:56:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8694#issuecomment-79198",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [schemes_output_after.pdf](tarball://root/attachments/some-uuid/ticket8694/schemes_output_after.pdf) by novoselt created at 2010-04-15 19:56:51
+Attachment [schemes_output_after.pdf](tarball://root/attachments/some-uuid/ticket8694/schemes_output_after.pdf) by @novoselt created at 2010-04-15 19:56:51
 
 
 
@@ -86,7 +86,7 @@ archive/issue_comments_079199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8694#issuecomment-79199",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_079200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8694#issuecomment-79200",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_079201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8694#issuecomment-79201",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_079202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8694#issuecomment-79202",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_079203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8694#issuecomment-79203",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -171,16 +171,16 @@ Good point. It looks like it used to be "scheme" in repr and I changed it to "su
 archive/issue_comments_079204.json:
 ```json
 {
-    "body": "Attachment [trac_8694_improve_schemes_printing_and_latexing.patch](tarball://root/attachments/some-uuid/ticket8694/trac_8694_improve_schemes_printing_and_latexing.patch) by novoselt created at 2010-05-23 17:44:27",
+    "body": "Attachment [trac_8694_improve_schemes_printing_and_latexing.patch](tarball://root/attachments/some-uuid/ticket8694/trac_8694_improve_schemes_printing_and_latexing.patch) by @novoselt created at 2010-05-23 17:44:27",
     "created_at": "2010-05-23T17:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8694#issuecomment-79204",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_8694_improve_schemes_printing_and_latexing.patch](tarball://root/attachments/some-uuid/ticket8694/trac_8694_improve_schemes_printing_and_latexing.patch) by novoselt created at 2010-05-23 17:44:27
+Attachment [trac_8694_improve_schemes_printing_and_latexing.patch](tarball://root/attachments/some-uuid/ticket8694/trac_8694_improve_schemes_printing_and_latexing.patch) by @novoselt created at 2010-05-23 17:44:27
 
 
 
@@ -194,7 +194,7 @@ archive/issue_comments_079205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8694#issuecomment-79205",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_079206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8694#issuecomment-79206",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_079207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8694",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8694#issuecomment-79207",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_001444.json:
     "title": "[with patch] some serious hard-coding issues that break all binary installs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1444",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -61,16 +61,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1444
 archive/issue_comments_009316.json:
 ```json
 {
-    "body": "Attachment [bzip2-1.0.4-install](tarball://root/attachments/some-uuid/ticket1444/bzip2-1.0.4-install) by was created at 2007-12-10 01:12:42\n\nput this file in spkg/base/   overwriting the one there already.",
+    "body": "Attachment [bzip2-1.0.4-install](tarball://root/attachments/some-uuid/ticket1444/bzip2-1.0.4-install) by @williamstein created at 2007-12-10 01:12:42\n\nput this file in spkg/base/   overwriting the one there already.",
     "created_at": "2007-12-10T01:12:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1444",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1444#issuecomment-9316",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [bzip2-1.0.4-install](tarball://root/attachments/some-uuid/ticket1444/bzip2-1.0.4-install) by was created at 2007-12-10 01:12:42
+Attachment [bzip2-1.0.4-install](tarball://root/attachments/some-uuid/ticket1444/bzip2-1.0.4-install) by @williamstein created at 2007-12-10 01:12:42
 
 put this file in spkg/base/   overwriting the one there already.
 

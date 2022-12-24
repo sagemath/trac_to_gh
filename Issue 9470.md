@@ -3,7 +3,7 @@
 archive/issues_009470.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  vbraun\n\nAs indicated in #9326, it is desirable for fans and cones associated to toric varieties to know these toric varieties. The framework for such an association was already designed (with a view towards morphisms), this patch puts it to work.\n\nI have written it on top of #9245, which is the last patch in the chain with positive review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9470\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @vbraun\n\nAs indicated in #9326, it is desirable for fans and cones associated to toric varieties to know these toric varieties. The framework for such an association was already designed (with a view towards morphisms), this patch puts it to work.\n\nI have written it on top of #9245, which is the last patch in the chain with positive review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9470\n\n",
     "created_at": "2010-07-10T05:52:15Z",
     "labels": [
         "algebraic geometry",
@@ -14,12 +14,12 @@ archive/issues_009470.json:
     "title": "Switch toric varieties to enhanced fans",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9470",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  vbraun
+CC:  @vbraun
 
 As indicated in #9326, it is desirable for fans and cones associated to toric varieties to know these toric varieties. The framework for such an association was already designed (with a view towards morphisms), this patch puts it to work.
 
@@ -41,7 +41,7 @@ archive/issue_comments_090843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9470#issuecomment-90843",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_090844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9470#issuecomment-90844",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_090845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9470#issuecomment-90845",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_090846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9470#issuecomment-90846",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -143,7 +143,7 @@ archive/issue_comments_090847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9470#issuecomment-90847",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -156,16 +156,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_090848.json:
 ```json
 {
-    "body": "Attachment [trac_9470_toric_variety_fans.patch](tarball://root/attachments/some-uuid/ticket9470/trac_9470_toric_variety_fans.patch) by novoselt created at 2010-07-24 07:28:44\n\nChanged line 2232 in `fan` (I missed explicit setting of the ambient fan). I have added a doctest for the above case into `Fan_of_toric_variety.__init__`.",
+    "body": "Attachment [trac_9470_toric_variety_fans.patch](tarball://root/attachments/some-uuid/ticket9470/trac_9470_toric_variety_fans.patch) by @novoselt created at 2010-07-24 07:28:44\n\nChanged line 2232 in `fan` (I missed explicit setting of the ambient fan). I have added a doctest for the above case into `Fan_of_toric_variety.__init__`.",
     "created_at": "2010-07-24T07:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9470#issuecomment-90848",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9470_toric_variety_fans.patch](tarball://root/attachments/some-uuid/ticket9470/trac_9470_toric_variety_fans.patch) by novoselt created at 2010-07-24 07:28:44
+Attachment [trac_9470_toric_variety_fans.patch](tarball://root/attachments/some-uuid/ticket9470/trac_9470_toric_variety_fans.patch) by @novoselt created at 2010-07-24 07:28:44
 
 Changed line 2232 in `fan` (I missed explicit setting of the ambient fan). I have added a doctest for the above case into `Fan_of_toric_variety.__init__`.
 
@@ -181,7 +181,7 @@ archive/issue_comments_090849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9470#issuecomment-90849",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_090850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9470#issuecomment-90850",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_090851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9470",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9470#issuecomment-90851",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

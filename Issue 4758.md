@@ -3,7 +3,7 @@
 archive/issues_004758.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\nBelow we compute the eigenvalues of a 100x100 random matrix over CDF in two ways.  Notices that the second way is 117 times faster than the first.  This is bad. \n\n\n```\nsage: a = random_matrix(CDF, 100)\nsage: time v = a.eigenvalues()\nCPU times: user 9.32 s, sys: 0.05 s, total: 9.37 s\nWall time: 9.56 s\nsage: a = random_matrix(CDF, 100)\nsage: time w = a.left_eigenvectors()[0]\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4758\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nBelow we compute the eigenvalues of a 100x100 random matrix over CDF in two ways.  Notices that the second way is 117 times faster than the first.  This is bad. \n\n\n```\nsage: a = random_matrix(CDF, 100)\nsage: time v = a.eigenvalues()\nCPU times: user 9.32 s, sys: 0.05 s, total: 9.37 s\nWall time: 9.56 s\nsage: a = random_matrix(CDF, 100)\nsage: time w = a.left_eigenvectors()[0]\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4758\n\n",
     "created_at": "2008-12-11T05:21:06Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_004758.json:
     "title": "eigenvalues of matrices over CDF is embarassingly frickin' slow!!!!!!!!!!!! (at least 100 times too slow!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4758",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 Below we compute the eigenvalues of a 100x100 random matrix over CDF in two ways.  Notices that the second way is 117 times faster than the first.  This is bad. 
 
@@ -51,7 +51,7 @@ archive/issue_comments_036054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4758#issuecomment-36054",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_036055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4758#issuecomment-36055",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_036056.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4758#issuecomment-36056",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -102,16 +102,16 @@ Changing status from new to assigned.
 archive/issue_comments_036057.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-12-11T07:58:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4758#issuecomment-36057",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -125,7 +125,7 @@ archive/issue_comments_036058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4758#issuecomment-36058",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -174,16 +174,16 @@ Michael
 archive/issue_comments_036060.json:
 ```json
 {
-    "body": "Attachment [trac_4758.patch](tarball://root/attachments/some-uuid/ticket4758/trac_4758.patch) by mhansen created at 2008-12-11 08:19:56",
+    "body": "Attachment [trac_4758.patch](tarball://root/attachments/some-uuid/ticket4758/trac_4758.patch) by @mwhansen created at 2008-12-11 08:19:56",
     "created_at": "2008-12-11T08:19:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4758#issuecomment-36060",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4758.patch](tarball://root/attachments/some-uuid/ticket4758/trac_4758.patch) by mhansen created at 2008-12-11 08:19:56
+Attachment [trac_4758.patch](tarball://root/attachments/some-uuid/ticket4758/trac_4758.patch) by @mwhansen created at 2008-12-11 08:19:56
 
 
 
@@ -197,7 +197,7 @@ archive/issue_comments_036061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4758#issuecomment-36061",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_036062.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4758#issuecomment-36062",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -232,16 +232,16 @@ Also, there should probably be a test illustrating that the eigenvalues returned
 archive/issue_comments_036063.json:
 ```json
 {
-    "body": "Attachment [trac_4758_review.patch](tarball://root/attachments/some-uuid/ticket4758/trac_4758_review.patch) by jason created at 2008-12-12 21:04:53\n\napply on top of previous patches",
+    "body": "Attachment [trac_4758_review.patch](tarball://root/attachments/some-uuid/ticket4758/trac_4758_review.patch) by @jasongrout created at 2008-12-12 21:04:53\n\napply on top of previous patches",
     "created_at": "2008-12-12T21:04:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4758#issuecomment-36063",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_4758_review.patch](tarball://root/attachments/some-uuid/ticket4758/trac_4758_review.patch) by jason created at 2008-12-12 21:04:53
+Attachment [trac_4758_review.patch](tarball://root/attachments/some-uuid/ticket4758/trac_4758_review.patch) by @jasongrout created at 2008-12-12 21:04:53
 
 apply on top of previous patches
 
@@ -257,7 +257,7 @@ archive/issue_comments_036064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4758#issuecomment-36064",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_036065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4758#issuecomment-36065",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

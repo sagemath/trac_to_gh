@@ -3,7 +3,7 @@
 archive/issues_009690.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  schilly\n\nThe Developer's Guide should distinguish between the following Sage packages: standard, optional, and experimental. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85f94526238f6e6a/) thread for a start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9690\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @haraldschilly\n\nThe Developer's Guide should distinguish between the following Sage packages: standard, optional, and experimental. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85f94526238f6e6a/) thread for a start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9690\n\n",
     "created_at": "2010-08-05T09:18:16Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_009690.json:
 ```
 Assignee: mvngu
 
-CC:  schilly
+CC:  @haraldschilly
 
 The Developer's Guide should distinguish between the following Sage packages: standard, optional, and experimental. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85f94526238f6e6a/) thread for a start.
 
@@ -39,7 +39,7 @@ archive/issue_comments_094188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94188",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_094194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94194",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_094195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94195",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_094196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94196",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_094197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94197",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

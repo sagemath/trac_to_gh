@@ -3,7 +3,7 @@
 archive/issues_001584.json:
 ```json
 {
-    "body": "Assignee: was\n\nFERMAT -- OSX 10.4 PowerPC\n\n\n```\nsage -t  devel/sage-main/sage/calculus/calculus.py\n**********************************************************************\nFile \"calculus.py\", line 2005:\n    sage: f = f.nintegral(x,0,1,1e-14)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Maxima (via quadpack) cannot compute the integral to\nthat precision\nGot:\n    Traceback (most recent call last):\n      File \"/Users/was/build/sage-2.9.1.alpha2/local/lib/python2.5/doctest.py\",\nline 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_40[1]>\", line 1, in <module>\n        f = f.nintegral(x,Integer(0),Integer(1),RealNumber('1e-14'))###line\n2005:\n    sage: f = f.nintegral(x,0,1,1e-14)\n      File \"/Users/was/build/sage-2.9.1.alpha2/local/lib/python2.5/site-packages/sage/calculus/calculus.py\",\nline 2068, in nintegral\n        raise TypeError, err\n    TypeError: Error executing code in Maxima\n    CODE:\n        sage356 : quad_qags(sage6,sage6,sage352,sage353,sage354,sage355)$\n    Maxima ERROR:\n        ^M\n    Maxima encountered a Lisp error:^M\n    ^M\n     ^M\n    WRITE-CHAR on #<CLOSED OUTPUT BUFFERED FILE-STREAM CHARACTER\n#P\"/dev/fd/1\"> is illegal^M\n    ^M\n    Automatically continuing.^M\n    To reenable the Lisp debugger set *debugger-hook* to nil.^M\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  14 in __main__.example_40\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_calculus.py\n         [61.0 s]\n```\n\n----- This is related to Mike Hansen's precision detection patch -- it\ndoesn't work right on\nOSX PPC, evidently. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1584\n\n",
+    "body": "Assignee: @williamstein\n\nFERMAT -- OSX 10.4 PowerPC\n\n\n```\nsage -t  devel/sage-main/sage/calculus/calculus.py\n**********************************************************************\nFile \"calculus.py\", line 2005:\n    sage: f = f.nintegral(x,0,1,1e-14)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Maxima (via quadpack) cannot compute the integral to\nthat precision\nGot:\n    Traceback (most recent call last):\n      File \"/Users/was/build/sage-2.9.1.alpha2/local/lib/python2.5/doctest.py\",\nline 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_40[1]>\", line 1, in <module>\n        f = f.nintegral(x,Integer(0),Integer(1),RealNumber('1e-14'))###line\n2005:\n    sage: f = f.nintegral(x,0,1,1e-14)\n      File \"/Users/was/build/sage-2.9.1.alpha2/local/lib/python2.5/site-packages/sage/calculus/calculus.py\",\nline 2068, in nintegral\n        raise TypeError, err\n    TypeError: Error executing code in Maxima\n    CODE:\n        sage356 : quad_qags(sage6,sage6,sage352,sage353,sage354,sage355)$\n    Maxima ERROR:\n        ^M\n    Maxima encountered a Lisp error:^M\n    ^M\n     ^M\n    WRITE-CHAR on #<CLOSED OUTPUT BUFFERED FILE-STREAM CHARACTER\n#P\"/dev/fd/1\"> is illegal^M\n    ^M\n    Automatically continuing.^M\n    To reenable the Lisp debugger set *debugger-hook* to nil.^M\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  14 in __main__.example_40\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_calculus.py\n         [61.0 s]\n```\n\n----- This is related to Mike Hansen's precision detection patch -- it\ndoesn't work right on\nOSX PPC, evidently. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1584\n\n",
     "created_at": "2007-12-21T20:38:26Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001584.json:
     "title": "calculus.py doctest failure on Fermat",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1584",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 FERMAT -- OSX 10.4 PowerPC
 
@@ -81,16 +81,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1584
 archive/issue_comments_010086.json:
 ```json
 {
-    "body": "Attachment [maxima-error2.9.1.alpha2.patch](tarball://root/attachments/some-uuid/ticket1584/maxima-error2.9.1.alpha2.patch) by was created at 2007-12-21 21:59:46\n\n+1",
+    "body": "Attachment [maxima-error2.9.1.alpha2.patch](tarball://root/attachments/some-uuid/ticket1584/maxima-error2.9.1.alpha2.patch) by @williamstein created at 2007-12-21 21:59:46\n\n+1",
     "created_at": "2007-12-21T21:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1584#issuecomment-10086",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [maxima-error2.9.1.alpha2.patch](tarball://root/attachments/some-uuid/ticket1584/maxima-error2.9.1.alpha2.patch) by was created at 2007-12-21 21:59:46
+Attachment [maxima-error2.9.1.alpha2.patch](tarball://root/attachments/some-uuid/ticket1584/maxima-error2.9.1.alpha2.patch) by @williamstein created at 2007-12-21 21:59:46
 
 +1
 
@@ -106,7 +106,7 @@ archive/issue_comments_010087.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1584#issuecomment-10087",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_010088.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1584",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1584#issuecomment-10088",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

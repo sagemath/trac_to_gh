@@ -3,7 +3,7 @@
 archive/issues_003431.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  burcin\n\nKeywords: editor_cwitty\n\nThis provides an extensive Sage interface to QEPCAD.  (The patch was formerly posted on #772; we're moving it here to keep one issue per ticket.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3431\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nKeywords: editor_cwitty\n\nThis provides an extensive Sage interface to QEPCAD.  (The patch was formerly posted on #772; we're moving it here to keep one issue per ticket.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3431\n\n",
     "created_at": "2008-06-15T21:46:21Z",
     "labels": [
         "interfaces",
@@ -17,9 +17,9 @@ archive/issues_003431.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  burcin
+CC:  @burcin
 
 Keywords: editor_cwitty
 
@@ -77,7 +77,7 @@ archive/issue_comments_024187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3431#issuecomment-24187",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_024189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3431#issuecomment-24189",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

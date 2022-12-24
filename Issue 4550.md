@@ -3,7 +3,7 @@
 archive/issues_004550.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  wjp\n\nDepends on #4089\n\nIssue created by migration from https://trac.sagemath.org/ticket/4550\n\n",
+    "body": "Assignee: boothby\n\nCC:  @wjp\n\nDepends on #4089\n\nIssue created by migration from https://trac.sagemath.org/ticket/4550\n\n",
     "created_at": "2008-11-19T16:59:54Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_004550.json:
 ```
 Assignee: boothby
 
-CC:  wjp
+CC:  @wjp
 
 Depends on #4089
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4550
 archive/issue_comments_034098.json:
 ```json
 {
-    "body": "Attachment [trac_4550.patch](tarball://root/attachments/some-uuid/ticket4550/trac_4550.patch) by was created at 2008-12-06 21:16:36\n\nJust out of curiosity, what is the justification for removing this code, besides \"it currently isn't being used\"?  For example, did you (Timothy) write new settings code that will replace this?   I think maybe (?) I wrote this code a long time ago as the framework that user and notebook settings code would go into, but never flushed that out.  So unless there is no code that is going to replace or some new design or *something*, I would like some sort of explanation about what the point of this is.",
+    "body": "Attachment [trac_4550.patch](tarball://root/attachments/some-uuid/ticket4550/trac_4550.patch) by @williamstein created at 2008-12-06 21:16:36\n\nJust out of curiosity, what is the justification for removing this code, besides \"it currently isn't being used\"?  For example, did you (Timothy) write new settings code that will replace this?   I think maybe (?) I wrote this code a long time ago as the framework that user and notebook settings code would go into, but never flushed that out.  So unless there is no code that is going to replace or some new design or *something*, I would like some sort of explanation about what the point of this is.",
     "created_at": "2008-12-06T21:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4550#issuecomment-34098",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4550.patch](tarball://root/attachments/some-uuid/ticket4550/trac_4550.patch) by was created at 2008-12-06 21:16:36
+Attachment [trac_4550.patch](tarball://root/attachments/some-uuid/ticket4550/trac_4550.patch) by @williamstein created at 2008-12-06 21:16:36
 
 Just out of curiosity, what is the justification for removing this code, besides "it currently isn't being used"?  For example, did you (Timothy) write new settings code that will replace this?   I think maybe (?) I wrote this code a long time ago as the framework that user and notebook settings code would go into, but never flushed that out.  So unless there is no code that is going to replace or some new design or *something*, I would like some sort of explanation about what the point of this is.
 
@@ -108,16 +108,16 @@ apply sage-4550.patch (rebased)
 archive/issue_comments_034102.json:
 ```json
 {
-    "body": "Attachment [trac_4550-2.patch](tarball://root/attachments/some-uuid/ticket4550/trac_4550-2.patch) by ddrake created at 2009-09-05 01:17:51\n\nrebased on 4.1.2.alpha0",
+    "body": "Attachment [trac_4550-2.patch](tarball://root/attachments/some-uuid/ticket4550/trac_4550-2.patch) by @dandrake created at 2009-09-05 01:17:51\n\nrebased on 4.1.2.alpha0",
     "created_at": "2009-09-05T01:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4550#issuecomment-34102",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_4550-2.patch](tarball://root/attachments/some-uuid/ticket4550/trac_4550-2.patch) by ddrake created at 2009-09-05 01:17:51
+Attachment [trac_4550-2.patch](tarball://root/attachments/some-uuid/ticket4550/trac_4550-2.patch) by @dandrake created at 2009-09-05 01:17:51
 
 rebased on 4.1.2.alpha0
 
@@ -133,7 +133,7 @@ archive/issue_comments_034103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4550#issuecomment-34103",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_034104.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4550#issuecomment-34104",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_034105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4550#issuecomment-34105",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_034106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4550#issuecomment-34106",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_034107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4550#issuecomment-34107",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

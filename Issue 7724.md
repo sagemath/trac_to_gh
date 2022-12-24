@@ -3,7 +3,7 @@
 archive/issues_007724.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  rlm\n\nSome improvement on this side, and so for ther functions like connected components, strongly connected components, etc...\n\n\n```\nsage: g= graphs.RandomGNP(1000,.01)\nsage: h=g.copy(implementation=\"c_graph\")\nsage: timeit(\"list(g.depth_first_search(0))\")\n25 loops, best of 3: 10.9 ms per loop\nsage: timeit(\"list(h.depth_first_search(0))\")\n125 loops, best of 3: 2.03 ms per loop\n```\n\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7724\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @rlmill\n\nSome improvement on this side, and so for ther functions like connected components, strongly connected components, etc...\n\n\n```\nsage: g= graphs.RandomGNP(1000,.01)\nsage: h=g.copy(implementation=\"c_graph\")\nsage: timeit(\"list(g.depth_first_search(0))\")\n25 loops, best of 3: 10.9 ms per loop\nsage: timeit(\"list(h.depth_first_search(0))\")\n125 loops, best of 3: 2.03 ms per loop\n```\n\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7724\n\n",
     "created_at": "2009-12-17T17:46:37Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007724.json:
     "title": "breadth/depth first search for c_graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7724",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  rlm
+CC:  @rlmill
 
 Some improvement on this side, and so for ther functions like connected components, strongly connected components, etc...
 
@@ -52,7 +52,7 @@ archive/issue_comments_066355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66355",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_066356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66356",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_066357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66357",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_066358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66358",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_066359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66359",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_066360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66360",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_066361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66361",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_066363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66363",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_066364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66364",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_066366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66366",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -326,7 +326,7 @@ archive/issue_comments_066368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66368",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -362,16 +362,16 @@ use extend instead of append improves performance
 archive/issue_comments_066370.json:
 ```json
 {
-    "body": "Attachment [trac_7724_iterator-rebased.patch](tarball://root/attachments/some-uuid/ticket7724/trac_7724_iterator-rebased.patch) by rlm created at 2010-01-02 16:01:11",
+    "body": "Attachment [trac_7724_iterator-rebased.patch](tarball://root/attachments/some-uuid/ticket7724/trac_7724_iterator-rebased.patch) by @rlmill created at 2010-01-02 16:01:11",
     "created_at": "2010-01-02T16:01:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66370",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7724_iterator-rebased.patch](tarball://root/attachments/some-uuid/ticket7724/trac_7724_iterator-rebased.patch) by rlm created at 2010-01-02 16:01:11
+Attachment [trac_7724_iterator-rebased.patch](tarball://root/attachments/some-uuid/ticket7724/trac_7724_iterator-rebased.patch) by @rlmill created at 2010-01-02 16:01:11
 
 
 
@@ -385,7 +385,7 @@ archive/issue_comments_066371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66371",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_066372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66372",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -420,16 +420,16 @@ archive/issue_comments_066372.json:
 archive/issue_comments_066373.json:
 ```json
 {
-    "body": "Attachment [trac_7724-ref.patch](tarball://root/attachments/some-uuid/ticket7724/trac_7724-ref.patch) by rlm created at 2010-01-02 16:18:40",
+    "body": "Attachment [trac_7724-ref.patch](tarball://root/attachments/some-uuid/ticket7724/trac_7724-ref.patch) by @rlmill created at 2010-01-02 16:18:40",
     "created_at": "2010-01-02T16:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66373",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7724-ref.patch](tarball://root/attachments/some-uuid/ticket7724/trac_7724-ref.patch) by rlm created at 2010-01-02 16:18:40
+Attachment [trac_7724-ref.patch](tarball://root/attachments/some-uuid/ticket7724/trac_7724-ref.patch) by @rlmill created at 2010-01-02 16:18:40
 
 
 
@@ -443,7 +443,7 @@ archive/issue_comments_066374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7724",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7724#issuecomment-66374",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

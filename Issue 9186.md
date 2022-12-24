@@ -3,7 +3,7 @@
 archive/issues_009186.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  drkirkby jhpalmieri leif\n\nTo build R with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\n\nto the \"make install\" part of the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9186\n\n",
+    "body": "Assignee: tbd\n\nCC:  drkirkby @jhpalmieri @nexttime\n\nTo build R with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\n\nto the \"make install\" part of the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9186\n\n",
     "created_at": "2010-06-08T08:42:08Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009186.json:
     "title": "Update R's spkg-install for building multiple spkgs in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9186",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tbd
 
-CC:  drkirkby jhpalmieri leif
+CC:  drkirkby @jhpalmieri @nexttime
 
 To build R with `SAGE_PARALLEL_SPKG_BUILD="yes"` on Mac OS X, we need to add, e.g.,
 
@@ -48,7 +48,7 @@ archive/issue_comments_085927.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9186#issuecomment-85927",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_085928.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9186#issuecomment-85928",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,16 +79,16 @@ Changing status from new to needs_review.
 archive/issue_comments_085929.json:
 ```json
 {
-    "body": "Attachment [trac_9186-r_makeflags.patch](tarball://root/attachments/some-uuid/ticket9186/trac_9186-r_makeflags.patch) by mpatel created at 2010-06-09 02:25:21\n\nI've put a new spkg at\n\n* http://sage.math.washington.edu/home/mpatel/trac/9186/r-2.10.1.p2.spkg",
+    "body": "Attachment [trac_9186-r_makeflags.patch](tarball://root/attachments/some-uuid/ticket9186/trac_9186-r_makeflags.patch) by @qed777 created at 2010-06-09 02:25:21\n\nI've put a new spkg at\n\n* http://sage.math.washington.edu/home/mpatel/trac/9186/r-2.10.1.p2.spkg",
     "created_at": "2010-06-09T02:25:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9186#issuecomment-85929",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9186-r_makeflags.patch](tarball://root/attachments/some-uuid/ticket9186/trac_9186-r_makeflags.patch) by mpatel created at 2010-06-09 02:25:21
+Attachment [trac_9186-r_makeflags.patch](tarball://root/attachments/some-uuid/ticket9186/trac_9186-r_makeflags.patch) by @qed777 created at 2010-06-09 02:25:21
 
 I've put a new spkg at
 
@@ -159,7 +159,7 @@ archive/issue_comments_085932.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9186",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9186#issuecomment-85932",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

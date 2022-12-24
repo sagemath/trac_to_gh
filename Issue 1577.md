@@ -3,7 +3,7 @@
 archive/issues_001577.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  jbmohler\n\nKeywords: multi polynomial rings coefficients monomials\n\nA small annoyance -- the ordering on the lists below is different:\n\n```\nsage: R.<fx,fy,gx,gy> = ZZ[]\nsage: F = ((fx*gy - fy*gx)^3)\nsage: F\n-1*fy^3*gx^3 + 3*fx*fy^2*gx^2*gy - 3*fx^2*fy*gx*gy^2 + fx^3*gy^3\nsage: F.monomials()\n[fx^2*fy*gx*gy^2, fy^3*gx^3, fx*fy^2*gx^2*gy, fx^3*gy^3]\nsage: F.coefficients()\n[-3, -1, 3, 1]\n```\n\n\n`F.coefficients?` says\n\"The order the coefficients appear in depends on the ordering used on self's parent.\"\n`F.monomials?` says\n\"Returns list of all monomials which occure in this multivariate polynomial.\"\n\nI think the latter should be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1577\n\n",
+    "body": "Assignee: @malb\n\nCC:  jbmohler\n\nKeywords: multi polynomial rings coefficients monomials\n\nA small annoyance -- the ordering on the lists below is different:\n\n```\nsage: R.<fx,fy,gx,gy> = ZZ[]\nsage: F = ((fx*gy - fy*gx)^3)\nsage: F\n-1*fy^3*gx^3 + 3*fx*fy^2*gx^2*gy - 3*fx^2*fy*gx*gy^2 + fx^3*gy^3\nsage: F.monomials()\n[fx^2*fy*gx*gy^2, fy^3*gx^3, fx*fy^2*gx^2*gy, fx^3*gy^3]\nsage: F.coefficients()\n[-3, -1, 3, 1]\n```\n\n\n`F.coefficients?` says\n\"The order the coefficients appear in depends on the ordering used on self's parent.\"\n`F.monomials?` says\n\"Returns list of all monomials which occure in this multivariate polynomial.\"\n\nI think the latter should be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1577\n\n",
     "created_at": "2007-12-21T01:34:55Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001577.json:
     "title": ".coefficients() and .monomials() differ in order in multivariate polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1577",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  jbmohler
 
@@ -60,7 +60,7 @@ archive/issue_comments_010035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1577#issuecomment-10035",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_010036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1577#issuecomment-10036",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -106,16 +106,16 @@ sage: type(list(x + y)[0][-1])
 archive/issue_comments_010037.json:
 ```json
 {
-    "body": "Attachment [trac_1577.patch](tarball://root/attachments/some-uuid/ticket1577/trac_1577.patch) by malb created at 2008-01-06 17:09:38",
+    "body": "Attachment [trac_1577.patch](tarball://root/attachments/some-uuid/ticket1577/trac_1577.patch) by @malb created at 2008-01-06 17:09:38",
     "created_at": "2008-01-06T17:09:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1577#issuecomment-10037",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1577.patch](tarball://root/attachments/some-uuid/ticket1577/trac_1577.patch) by malb created at 2008-01-06 17:09:38
+Attachment [trac_1577.patch](tarball://root/attachments/some-uuid/ticket1577/trac_1577.patch) by @malb created at 2008-01-06 17:09:38
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_010038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1577#issuecomment-10038",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_010041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1577#issuecomment-10041",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -205,16 +205,16 @@ I am okay with changing the docstring but want to point out that "from largest t
 archive/issue_comments_010042.json:
 ```json
 {
-    "body": "Attachment [trac_1577_comment_4.patch](tarball://root/attachments/some-uuid/ticket1577/trac_1577_comment_4.patch) by malb created at 2008-01-10 15:03:32\n\nJoel's suggested change is in `trac_1577_comment_4.patch`.",
+    "body": "Attachment [trac_1577_comment_4.patch](tarball://root/attachments/some-uuid/ticket1577/trac_1577_comment_4.patch) by @malb created at 2008-01-10 15:03:32\n\nJoel's suggested change is in `trac_1577_comment_4.patch`.",
     "created_at": "2008-01-10T15:03:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1577#issuecomment-10042",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1577_comment_4.patch](tarball://root/attachments/some-uuid/ticket1577/trac_1577_comment_4.patch) by malb created at 2008-01-10 15:03:32
+Attachment [trac_1577_comment_4.patch](tarball://root/attachments/some-uuid/ticket1577/trac_1577_comment_4.patch) by @malb created at 2008-01-10 15:03:32
 
 Joel's suggested change is in `trac_1577_comment_4.patch`.
 
@@ -230,7 +230,7 @@ archive/issue_comments_010043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1577#issuecomment-10043",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_010044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1577#issuecomment-10044",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009926.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nKeywords: brandt module, hecke operator\n\nThis was reported by Nicol\u00e1s Sirolli on sage-nt:\n\n\n`BrandtModule` has a problem when calculating the n-th Hecke operator\nwhen n is not squarefree, and is smaller than the prime where the\nalgebra ramifies.\n\nFor example, I get a \"not implemented\" error if I run this\n\n\n```\nsage: B=BrandtModule(13)\nsage: B.hecke_matrix(4)\n```\n\n\nGonzalo Tornar\u00eda told me that the 'direct' algorithm is not\nimplemented when n is not squarefree; hence I found that\n\n\n```\nsage: B.hecke_matrix(4,algorithm='brandt')\n```\n\n\ninstead, there is no trouble. A workaround could be (I'm not sure\nwhether this is the best to do) changing line 852 of brandt.py,\n\n\n```\nif self.level().gcd(n) != 1:\n```\n\n\nfor\n\n\n```\nif self.level().gcd(n) != 1 or is_squarefree(n)==False:\n```\n\n\n(and adding `is_squarefree` to the \"imports\" block).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9927\n\n",
+    "body": "Assignee: @craigcitro\n\nKeywords: brandt module, hecke operator\n\nThis was reported by Nicol\u00e1s Sirolli on sage-nt:\n\n\n`BrandtModule` has a problem when calculating the n-th Hecke operator\nwhen n is not squarefree, and is smaller than the prime where the\nalgebra ramifies.\n\nFor example, I get a \"not implemented\" error if I run this\n\n\n```\nsage: B=BrandtModule(13)\nsage: B.hecke_matrix(4)\n```\n\n\nGonzalo Tornar\u00eda told me that the 'direct' algorithm is not\nimplemented when n is not squarefree; hence I found that\n\n\n```\nsage: B.hecke_matrix(4,algorithm='brandt')\n```\n\n\ninstead, there is no trouble. A workaround could be (I'm not sure\nwhether this is the best to do) changing line 852 of brandt.py,\n\n\n```\nif self.level().gcd(n) != 1:\n```\n\n\nfor\n\n\n```\nif self.level().gcd(n) != 1 or is_squarefree(n)==False:\n```\n\n\n(and adding `is_squarefree` to the \"imports\" block).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9927\n\n",
     "created_at": "2010-09-17T01:19:51Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_009926.json:
     "title": "non-squarefree Hecke operators on BrandtModule",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9926",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Keywords: brandt module, hecke operator
 
@@ -82,7 +82,7 @@ archive/issue_comments_098856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9926#issuecomment-98856",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_098857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9926#issuecomment-98857",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_098858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9926#issuecomment-98858",
-    "user": "nmsirolli"
+    "user": "@nsirolli"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_098859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9926#issuecomment-98859",
-    "user": "nmsirolli"
+    "user": "@nsirolli"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_098860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9926#issuecomment-98860",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_098861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9926#issuecomment-98861",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_098862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9926#issuecomment-98862",
-    "user": "nmsirolli"
+    "user": "@nsirolli"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_098863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9926",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9926#issuecomment-98863",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

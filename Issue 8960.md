@@ -3,7 +3,7 @@
 archive/issues_008960.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  robertwb was\n\nThis patch works on doctest coverage.\n\nIt also changes the latex representation of a real field to indicate the precision and rounding\n\nIssue created by migration from https://trac.sagemath.org/ticket/8960\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @robertwb @williamstein\n\nThis patch works on doctest coverage.\n\nIt also changes the latex representation of a real field to indicate the precision and rounding\n\nIssue created by migration from https://trac.sagemath.org/ticket/8960\n\n",
     "created_at": "2010-05-14T09:27:18Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_008960.json:
     "title": "doctest coverage for real_mpfr.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8960",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  robertwb was
+CC:  @robertwb @williamstein
 
 This patch works on doctest coverage.
 
@@ -41,7 +41,7 @@ archive/issue_comments_082590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8960#issuecomment-82590",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_082591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8960#issuecomment-82591",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_082592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8960#issuecomment-82592",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -90,16 +90,16 @@ CCing possible reviewers; this patch increases real_mpfr.pyx doctest coverage fr
 archive/issue_comments_082593.json:
 ```json
 {
-    "body": "Attachment [trac-8960-RealField-docs.patch](tarball://root/attachments/some-uuid/ticket8960/trac-8960-RealField-docs.patch) by jason created at 2010-05-14 16:05:38\n\nI've split off changing the latex representation to #8962.\n\nThis patch also changes a deprecated call to MPFR, and redefines several functions to be aliases when it is more appropriate (e.g., self.prec is an alias to self.precision)",
+    "body": "Attachment [trac-8960-RealField-docs.patch](tarball://root/attachments/some-uuid/ticket8960/trac-8960-RealField-docs.patch) by @jasongrout created at 2010-05-14 16:05:38\n\nI've split off changing the latex representation to #8962.\n\nThis patch also changes a deprecated call to MPFR, and redefines several functions to be aliases when it is more appropriate (e.g., self.prec is an alias to self.precision)",
     "created_at": "2010-05-14T16:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8960#issuecomment-82593",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8960-RealField-docs.patch](tarball://root/attachments/some-uuid/ticket8960/trac-8960-RealField-docs.patch) by jason created at 2010-05-14 16:05:38
+Attachment [trac-8960-RealField-docs.patch](tarball://root/attachments/some-uuid/ticket8960/trac-8960-RealField-docs.patch) by @jasongrout created at 2010-05-14 16:05:38
 
 I've split off changing the latex representation to #8962.
 
@@ -179,7 +179,7 @@ archive/issue_comments_082595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8960#issuecomment-82595",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_082596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8960#issuecomment-82596",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_082597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8960#issuecomment-82597",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

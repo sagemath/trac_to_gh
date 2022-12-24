@@ -3,7 +3,7 @@
 archive/issues_005142.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: sparse, elementary_divisors\n\nIt seems to me that if mat is a sparse integer matrix, then\n\n```\nmat.dense_matrix().elementary_divisors()\n```\n\nis much faster than \n\n```\nmat.elementary_divisors()\n```\n\nIs this correct?  I've checked this on certain families of matrices, but probably not extensively enough.\n\nIf so, we should change how elementary divisors for sparse integer matrices are computed.  I've patched this, pretty naively, by sticking a new method in matrix_integer_sparse.pyx which just contains the above code.  I would appreciate any comments or corrections.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5142\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: sparse, elementary_divisors\n\nIt seems to me that if mat is a sparse integer matrix, then\n\n```\nmat.dense_matrix().elementary_divisors()\n```\n\nis much faster than \n\n```\nmat.elementary_divisors()\n```\n\nIs this correct?  I've checked this on certain families of matrices, but probably not extensively enough.\n\nIf so, we should change how elementary divisors for sparse integer matrices are computed.  I've patched this, pretty naively, by sticking a new method in matrix_integer_sparse.pyx which just contains the above code.  I would appreciate any comments or corrections.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5142\n\n",
     "created_at": "2009-01-30T22:30:51Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005142.json:
     "title": "[with patch, needs review] speed up elementary_divisors for sparse integer matrices?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5142",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: sparse, elementary_divisors
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5142
 archive/issue_comments_039329.json:
 ```json
 {
-    "body": "Attachment [5142.patch](tarball://root/attachments/some-uuid/ticket5142/5142.patch) by jhpalmieri created at 2009-01-30 22:32:17",
+    "body": "Attachment [5142.patch](tarball://root/attachments/some-uuid/ticket5142/5142.patch) by @jhpalmieri created at 2009-01-30 22:32:17",
     "created_at": "2009-01-30T22:32:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5142#issuecomment-39329",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5142.patch](tarball://root/attachments/some-uuid/ticket5142/5142.patch) by jhpalmieri created at 2009-01-30 22:32:17
+Attachment [5142.patch](tarball://root/attachments/some-uuid/ticket5142/5142.patch) by @jhpalmieri created at 2009-01-30 22:32:17
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_039330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5142#issuecomment-39330",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -112,16 +112,16 @@ Michael
 archive/issue_comments_039332.json:
 ```json
 {
-    "body": "Changing assignee from was to jhpalmieri.",
+    "body": "Changing assignee from @williamstein to @jhpalmieri.",
     "created_at": "2009-02-09T00:33:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5142#issuecomment-39332",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from was to jhpalmieri.
+Changing assignee from @williamstein to @jhpalmieri.
 
 
 
@@ -162,16 +162,16 @@ Michael
 archive/issue_comments_039334.json:
 ```json
 {
-    "body": "Attachment [5142-rebased.patch](tarball://root/attachments/some-uuid/ticket5142/5142-rebased.patch) by jhpalmieri created at 2009-02-09 16:45:14\n\nrebased against 3.3.alpha6",
+    "body": "Attachment [5142-rebased.patch](tarball://root/attachments/some-uuid/ticket5142/5142-rebased.patch) by @jhpalmieri created at 2009-02-09 16:45:14\n\nrebased against 3.3.alpha6",
     "created_at": "2009-02-09T16:45:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5142#issuecomment-39334",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5142-rebased.patch](tarball://root/attachments/some-uuid/ticket5142/5142-rebased.patch) by jhpalmieri created at 2009-02-09 16:45:14
+Attachment [5142-rebased.patch](tarball://root/attachments/some-uuid/ticket5142/5142-rebased.patch) by @jhpalmieri created at 2009-02-09 16:45:14
 
 rebased against 3.3.alpha6
 
@@ -187,7 +187,7 @@ archive/issue_comments_039335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5142#issuecomment-39335",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_039336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5142#issuecomment-39336",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -233,16 +233,16 @@ simply fails with a mysterious TypeError in the current code, whereas with the p
 archive/issue_comments_039337.json:
 ```json
 {
-    "body": "Attachment [5142-new.patch](tarball://root/attachments/some-uuid/ticket5142/5142-new.patch) by jhpalmieri created at 2009-02-10 18:00:39\n\nonly apply this patch",
+    "body": "Attachment [5142-new.patch](tarball://root/attachments/some-uuid/ticket5142/5142-new.patch) by @jhpalmieri created at 2009-02-10 18:00:39\n\nonly apply this patch",
     "created_at": "2009-02-10T18:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5142#issuecomment-39337",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5142-new.patch](tarball://root/attachments/some-uuid/ticket5142/5142-new.patch) by jhpalmieri created at 2009-02-10 18:00:39
+Attachment [5142-new.patch](tarball://root/attachments/some-uuid/ticket5142/5142-new.patch) by @jhpalmieri created at 2009-02-10 18:00:39
 
 only apply this patch
 
@@ -258,7 +258,7 @@ archive/issue_comments_039338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5142#issuecomment-39338",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_039339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5142#issuecomment-39339",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_039340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5142#issuecomment-39340",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

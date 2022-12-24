@@ -3,7 +3,7 @@
 archive/issues_000731.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\n\n```\nsage: g=Graph({0:[1,2],1:[2]})\nsage: g.set_boundary(1)\nsage: g._boundary()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-graphs2/sage/graphs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not callable\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/731\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\n\n```\nsage: g=Graph({0:[1,2],1:[2]})\nsage: g.set_boundary(1)\nsage: g._boundary()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-graphs2/sage/graphs/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not callable\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/731\n\n",
     "created_at": "2007-09-21T18:54:22Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000731.json:
     "title": "graphs: set_boundary accepts integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/731",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -52,7 +52,7 @@ archive/issue_comments_004290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/731#issuecomment-4290",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_004291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/731#issuecomment-4291",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_004292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/731#issuecomment-4292",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_004296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/731#issuecomment-4296",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_004297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/731#issuecomment-4297",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

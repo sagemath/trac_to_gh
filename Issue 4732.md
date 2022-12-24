@@ -14,7 +14,7 @@ archive/issues_004732.json:
     "title": "TypeError in converting from SR matrix to RR, but *only* in doctesting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4732",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -43,7 +43,7 @@ archive/issue_comments_035718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4732#issuecomment-35718",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_035719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4732#issuecomment-35719",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_035720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4732#issuecomment-35720",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

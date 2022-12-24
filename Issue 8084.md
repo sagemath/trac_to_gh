@@ -14,7 +14,7 @@ archive/issues_008084.json:
     "title": "fix \"show\" in the notebook for strings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8084",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8084
 archive/issue_comments_070842.json:
 ```json
 {
-    "body": "Attachment [factor_old.png](tarball://root/attachments/some-uuid/ticket8084/factor_old.png) by jhpalmieri created at 2010-01-26 21:28:49\n\noutput of view(type(factor)) before the patch",
+    "body": "Attachment [factor_old.png](tarball://root/attachments/some-uuid/ticket8084/factor_old.png) by @jhpalmieri created at 2010-01-26 21:28:49\n\noutput of view(type(factor)) before the patch",
     "created_at": "2010-01-26T21:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8084#issuecomment-70842",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [factor_old.png](tarball://root/attachments/some-uuid/ticket8084/factor_old.png) by jhpalmieri created at 2010-01-26 21:28:49
+Attachment [factor_old.png](tarball://root/attachments/some-uuid/ticket8084/factor_old.png) by @jhpalmieri created at 2010-01-26 21:28:49
 
 output of view(type(factor)) before the patch
 
@@ -76,7 +76,7 @@ archive/issue_comments_070843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8084#issuecomment-70843",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -89,16 +89,16 @@ output of view(type(factor)) after the patch
 archive/issue_comments_070844.json:
 ```json
 {
-    "body": "Attachment [factor_new.png](tarball://root/attachments/some-uuid/ticket8084/factor_new.png) by jhpalmieri created at 2010-01-28 21:15:57",
+    "body": "Attachment [factor_new.png](tarball://root/attachments/some-uuid/ticket8084/factor_new.png) by @jhpalmieri created at 2010-01-28 21:15:57",
     "created_at": "2010-01-28T21:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8084#issuecomment-70844",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [factor_new.png](tarball://root/attachments/some-uuid/ticket8084/factor_new.png) by jhpalmieri created at 2010-01-28 21:15:57
+Attachment [factor_new.png](tarball://root/attachments/some-uuid/ticket8084/factor_new.png) by @jhpalmieri created at 2010-01-28 21:15:57
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_070845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8084#issuecomment-70845",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_070846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8084#issuecomment-70846",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_070847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8084#issuecomment-70847",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_070848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8084",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8084#issuecomment-70848",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 

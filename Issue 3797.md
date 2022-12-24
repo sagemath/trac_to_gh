@@ -3,7 +3,7 @@
 archive/issues_003797.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ekirkman\n\nThis patch:\n\n1. Fixes a bug in sparse6 strings for n=0.\n2. Implements generation of graphs with loops.\n3. Implements generation of graphs with specified degree sequence.\n\nThe last two have been verified to some extent using Sloane's tables. It's all in the documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3797\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  ekirkman\n\nThis patch:\n\n1. Fixes a bug in sparse6 strings for n=0.\n2. Implements generation of graphs with loops.\n3. Implements generation of graphs with specified degree sequence.\n\nThe last two have been verified to some extent using Sloane's tables. It's all in the documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3797\n\n",
     "created_at": "2008-08-09T22:25:31Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003797.json:
     "title": "[with patch, needs review] several improvements to graph generation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3797",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 CC:  ekirkman
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3797
 archive/issue_comments_026999.json:
 ```json
 {
-    "body": "Attachment [trac3797-graph_generator_improvements.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-graph_generator_improvements.patch) by rlm created at 2008-08-09 23:15:47",
+    "body": "Attachment [trac3797-graph_generator_improvements.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-graph_generator_improvements.patch) by @rlmill created at 2008-08-09 23:15:47",
     "created_at": "2008-08-09T23:15:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3797",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3797#issuecomment-26999",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac3797-graph_generator_improvements.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-graph_generator_improvements.patch) by rlm created at 2008-08-09 23:15:47
+Attachment [trac3797-graph_generator_improvements.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-graph_generator_improvements.patch) by @rlmill created at 2008-08-09 23:15:47
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_027000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3797",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3797#issuecomment-27000",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -76,16 +76,16 @@ Depends on #3789.
 archive/issue_comments_027001.json:
 ```json
 {
-    "body": "Attachment [trac3797-augment_by_verts.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-augment_by_verts.patch) by rlm created at 2008-08-10 03:22:38",
+    "body": "Attachment [trac3797-augment_by_verts.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-augment_by_verts.patch) by @rlmill created at 2008-08-10 03:22:38",
     "created_at": "2008-08-10T03:22:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3797",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3797#issuecomment-27001",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac3797-augment_by_verts.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-augment_by_verts.patch) by rlm created at 2008-08-10 03:22:38
+Attachment [trac3797-augment_by_verts.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-augment_by_verts.patch) by @rlmill created at 2008-08-10 03:22:38
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_027002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3797",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3797#issuecomment-27002",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -153,16 +153,16 @@ Is that even clearer?
 archive/issue_comments_027003.json:
 ```json
 {
-    "body": "Attachment [trac3797-docs.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-docs.patch) by ncalexan created at 2008-08-10 06:20:13\n\nLooks good!",
+    "body": "Attachment [trac3797-docs.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-docs.patch) by @ncalexan created at 2008-08-10 06:20:13\n\nLooks good!",
     "created_at": "2008-08-10T06:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3797",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3797#issuecomment-27003",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [trac3797-docs.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-docs.patch) by ncalexan created at 2008-08-10 06:20:13
+Attachment [trac3797-docs.patch](tarball://root/attachments/some-uuid/ticket3797/trac3797-docs.patch) by @ncalexan created at 2008-08-10 06:20:13
 
 Looks good!
 

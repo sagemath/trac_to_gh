@@ -14,7 +14,7 @@ archive/issues_002552.json:
     "title": "fix problems in the combinat reference manual caused by #2432",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2552",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2552
 archive/issue_comments_017423.json:
 ```json
 {
-    "body": "Attachment [combinat-ref.patch](tarball://root/attachments/some-uuid/ticket2552/combinat-ref.patch) by mhansen created at 2008-03-16 21:15:56",
+    "body": "Attachment [combinat-ref.patch](tarball://root/attachments/some-uuid/ticket2552/combinat-ref.patch) by @mwhansen created at 2008-03-16 21:15:56",
     "created_at": "2008-03-16T21:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2552#issuecomment-17423",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [combinat-ref.patch](tarball://root/attachments/some-uuid/ticket2552/combinat-ref.patch) by mhansen created at 2008-03-16 21:15:56
+Attachment [combinat-ref.patch](tarball://root/attachments/some-uuid/ticket2552/combinat-ref.patch) by @mwhansen created at 2008-03-16 21:15:56
 
 
 

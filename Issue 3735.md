@@ -14,7 +14,7 @@ archive/issues_003735.json:
     "title": "Interact - header Javascript code executes on update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3735",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 Assignee: boothby
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3735
 archive/issue_comments_026514.json:
 ```json
 {
-    "body": "Attachment [sage-3735.patch](tarball://root/attachments/some-uuid/ticket3735/sage-3735.patch) by was created at 2008-08-05 21:31:37",
+    "body": "Attachment [sage-3735.patch](tarball://root/attachments/some-uuid/ticket3735/sage-3735.patch) by @williamstein created at 2008-08-05 21:31:37",
     "created_at": "2008-08-05T21:31:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3735#issuecomment-26514",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3735.patch](tarball://root/attachments/some-uuid/ticket3735/sage-3735.patch) by was created at 2008-08-05 21:31:37
+Attachment [sage-3735.patch](tarball://root/attachments/some-uuid/ticket3735/sage-3735.patch) by @williamstein created at 2008-08-05 21:31:37
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_026515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3735#issuecomment-26515",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_026516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3735",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3735#issuecomment-26516",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 

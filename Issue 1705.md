@@ -3,7 +3,7 @@
 archive/issues_001705.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  mabshoff\n\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: f = (x-a)*(y-a)\nsage: f.factor()\nx*y + ( - a)*x + ( - a)*y + (a + 1)\nsage: singular(f)\nx*y+(-a)*x+(-a)*y+(a+1)\nsage: singular(f).factorH()\n[1]:\n   _[1]=1\n   _[2]=x*y+(-a)*x+(-a)*y+(a+1)\n[2]:\n   1,1\nsage: f = (x-2)*(y-1)\nsage: f.factor()\n(y - 1) * (x + 1)\nsage: singular(f).factorH()\n[1]:\n   _[1]=1\n   _[2]=x+1\n   _[3]=y-1\n[2]:\n   1,1,1\n```\n\n\nIn Magma this works fine:\n\n```\nk<a> := GF(9);\nR<x,y> := PolynomialRing(k, 2);\nf := (x-a)*(y-a);\nprint Factorization(f);\n\n[\n<y + a^5, 1>,\n<x + a^5, 1>\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1705\n\n",
+    "body": "Assignee: @malb\n\nCC:  mabshoff\n\n\n```\nsage: k.<a> = GF(9)\nsage: R.<x,y> = PolynomialRing(k)\nsage: f = (x-a)*(y-a)\nsage: f.factor()\nx*y + ( - a)*x + ( - a)*y + (a + 1)\nsage: singular(f)\nx*y+(-a)*x+(-a)*y+(a+1)\nsage: singular(f).factorH()\n[1]:\n   _[1]=1\n   _[2]=x*y+(-a)*x+(-a)*y+(a+1)\n[2]:\n   1,1\nsage: f = (x-2)*(y-1)\nsage: f.factor()\n(y - 1) * (x + 1)\nsage: singular(f).factorH()\n[1]:\n   _[1]=1\n   _[2]=x+1\n   _[3]=y-1\n[2]:\n   1,1,1\n```\n\n\nIn Magma this works fine:\n\n```\nk<a> := GF(9);\nR<x,y> := PolynomialRing(k, 2);\nf := (x-a)*(y-a);\nprint Factorization(f);\n\n[\n<y + a^5, 1>,\n<x + a^5, 1>\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1705\n\n",
     "created_at": "2008-01-07T04:01:49Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001705.json:
     "title": "factorization of polynomials over non-prime finite fields is TOTALLY BROKEN in Sage (and Singular?!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1705",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  mabshoff
 
@@ -80,7 +80,7 @@ archive/issue_comments_010798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1705#issuecomment-10798",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_010799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1705",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1705#issuecomment-10799",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

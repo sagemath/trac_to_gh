@@ -3,7 +3,7 @@
 archive/issues_006616.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was cremona\n\nExtend the heegner point code to compute y_lambda for lambda > 1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6616\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @JohnCremona\n\nExtend the heegner point code to compute y_lambda for lambda > 1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6616\n\n",
     "created_at": "2009-07-25T10:23:56Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_006616.json:
     "title": "[with patch] higher heegner points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6616",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was cremona
+CC:  @williamstein @JohnCremona
 
 Extend the heegner point code to compute y_lambda for lambda > 1.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6616
 archive/issue_comments_054175.json:
 ```json
 {
-    "body": "Attachment [6616-higher-heegner.patch](tarball://root/attachments/some-uuid/ticket6616/6616-higher-heegner.patch) by robertwb created at 2009-07-25 10:27:42",
+    "body": "Attachment [6616-higher-heegner.patch](tarball://root/attachments/some-uuid/ticket6616/6616-higher-heegner.patch) by @robertwb created at 2009-07-25 10:27:42",
     "created_at": "2009-07-25T10:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54175",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [6616-higher-heegner.patch](tarball://root/attachments/some-uuid/ticket6616/6616-higher-heegner.patch) by robertwb created at 2009-07-25 10:27:42
+Attachment [6616-higher-heegner.patch](tarball://root/attachments/some-uuid/ticket6616/6616-higher-heegner.patch) by @robertwb created at 2009-07-25 10:27:42
 
 
 
@@ -52,16 +52,16 @@ Attachment [6616-higher-heegner.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_054176.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part3.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part3.patch) by was created at 2009-08-01 01:41:37\n\nNext (?):\n* computing y_c by computing all the conjugates of y_c numerically\n* computing the (huge) Kolyvagin point P_c\n* choosing y-coordinate of y_c correctly.\n* computing degree of ring class field K[c] in all cases (not just Kolyvagin c)\n* optimization",
+    "body": "Attachment [trac_6616-part3.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part3.patch) by @williamstein created at 2009-08-01 01:41:37\n\nNext (?):\n* computing y_c by computing all the conjugates of y_c numerically\n* computing the (huge) Kolyvagin point P_c\n* choosing y-coordinate of y_c correctly.\n* computing degree of ring class field K[c] in all cases (not just Kolyvagin c)\n* optimization",
     "created_at": "2009-08-01T01:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54176",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part3.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part3.patch) by was created at 2009-08-01 01:41:37
+Attachment [trac_6616-part3.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part3.patch) by @williamstein created at 2009-08-01 01:41:37
 
 Next (?):
 * computing y_c by computing all the conjugates of y_c numerically
@@ -82,7 +82,7 @@ archive/issue_comments_054177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54177",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -107,16 +107,16 @@ This should get dealt with.  No clue what causes this.
 archive/issue_comments_054178.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part5.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part5.patch) by was created at 2009-08-05 05:27:48",
+    "body": "Attachment [trac_6616-part5.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part5.patch) by @williamstein created at 2009-08-05 05:27:48",
     "created_at": "2009-08-05T05:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54178",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part5.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part5.patch) by was created at 2009-08-05 05:27:48
+Attachment [trac_6616-part5.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part5.patch) by @williamstein created at 2009-08-05 05:27:48
 
 
 
@@ -125,16 +125,16 @@ Attachment [trac_6616-part5.patch](tarball://root/attachments/some-uuid/ticket66
 archive/issue_comments_054179.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part6.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part6.patch) by was created at 2009-08-06 00:55:39",
+    "body": "Attachment [trac_6616-part6.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part6.patch) by @williamstein created at 2009-08-06 00:55:39",
     "created_at": "2009-08-06T00:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54179",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part6.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part6.patch) by was created at 2009-08-06 00:55:39
+Attachment [trac_6616-part6.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part6.patch) by @williamstein created at 2009-08-06 00:55:39
 
 
 
@@ -148,7 +148,7 @@ archive/issue_comments_054180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54180",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -161,16 +161,16 @@ rebased against 4.1.1
 archive/issue_comments_054181.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part2.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part2.patch) by was created at 2009-08-30 22:12:06",
+    "body": "Attachment [trac_6616-part2.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part2.patch) by @williamstein created at 2009-08-30 22:12:06",
     "created_at": "2009-08-30T22:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54181",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part2.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part2.patch) by was created at 2009-08-30 22:12:06
+Attachment [trac_6616-part2.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part2.patch) by @williamstein created at 2009-08-30 22:12:06
 
 
 
@@ -184,7 +184,7 @@ archive/issue_comments_054182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54182",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -197,16 +197,16 @@ rebased against 4.1.1
 archive/issue_comments_054183.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part4.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part4.patch) by was created at 2009-08-30 22:16:42\n\nrebased against 4.1.1",
+    "body": "Attachment [trac_6616-part4.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part4.patch) by @williamstein created at 2009-08-30 22:16:42\n\nrebased against 4.1.1",
     "created_at": "2009-08-30T22:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54183",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part4.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part4.patch) by was created at 2009-08-30 22:16:42
+Attachment [trac_6616-part4.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part4.patch) by @williamstein created at 2009-08-30 22:16:42
 
 rebased against 4.1.1
 
@@ -217,16 +217,16 @@ rebased against 4.1.1
 archive/issue_comments_054184.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part7.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part7.patch) by was created at 2009-08-30 22:17:04",
+    "body": "Attachment [trac_6616-part7.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part7.patch) by @williamstein created at 2009-08-30 22:17:04",
     "created_at": "2009-08-30T22:17:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54184",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part7.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part7.patch) by was created at 2009-08-30 22:17:04
+Attachment [trac_6616-part7.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part7.patch) by @williamstein created at 2009-08-30 22:17:04
 
 
 
@@ -235,16 +235,16 @@ Attachment [trac_6616-part7.patch](tarball://root/attachments/some-uuid/ticket66
 archive/issue_comments_054185.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part8.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part8.patch) by was created at 2009-08-31 00:51:41",
+    "body": "Attachment [trac_6616-part8.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part8.patch) by @williamstein created at 2009-08-31 00:51:41",
     "created_at": "2009-08-31T00:51:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54185",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part8.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part8.patch) by was created at 2009-08-31 00:51:41
+Attachment [trac_6616-part8.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part8.patch) by @williamstein created at 2009-08-31 00:51:41
 
 
 
@@ -253,16 +253,16 @@ Attachment [trac_6616-part8.patch](tarball://root/attachments/some-uuid/ticket66
 archive/issue_comments_054186.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part10.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part10.patch) by was created at 2009-09-03 07:44:41",
+    "body": "Attachment [trac_6616-part10.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part10.patch) by @williamstein created at 2009-09-03 07:44:41",
     "created_at": "2009-09-03T07:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54186",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part10.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part10.patch) by was created at 2009-09-03 07:44:41
+Attachment [trac_6616-part10.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part10.patch) by @williamstein created at 2009-09-03 07:44:41
 
 
 
@@ -271,16 +271,16 @@ Attachment [trac_6616-part10.patch](tarball://root/attachments/some-uuid/ticket6
 archive/issue_comments_054187.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part11.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part11.patch) by was created at 2009-09-05 22:24:16",
+    "body": "Attachment [trac_6616-part11.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part11.patch) by @williamstein created at 2009-09-05 22:24:16",
     "created_at": "2009-09-05T22:24:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54187",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part11.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part11.patch) by was created at 2009-09-05 22:24:16
+Attachment [trac_6616-part11.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part11.patch) by @williamstein created at 2009-09-05 22:24:16
 
 
 
@@ -289,16 +289,16 @@ Attachment [trac_6616-part11.patch](tarball://root/attachments/some-uuid/ticket6
 archive/issue_comments_054188.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part12.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part12.patch) by was created at 2009-09-07 08:10:38",
+    "body": "Attachment [trac_6616-part12.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part12.patch) by @williamstein created at 2009-09-07 08:10:38",
     "created_at": "2009-09-07T08:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54188",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part12.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part12.patch) by was created at 2009-09-07 08:10:38
+Attachment [trac_6616-part12.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part12.patch) by @williamstein created at 2009-09-07 08:10:38
 
 
 
@@ -307,16 +307,16 @@ Attachment [trac_6616-part12.patch](tarball://root/attachments/some-uuid/ticket6
 archive/issue_comments_054189.json:
 ```json
 {
-    "body": "Attachment [trac_6616-patch13.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-patch13.patch) by was created at 2009-09-08 07:55:51",
+    "body": "Attachment [trac_6616-patch13.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-patch13.patch) by @williamstein created at 2009-09-08 07:55:51",
     "created_at": "2009-09-08T07:55:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54189",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-patch13.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-patch13.patch) by was created at 2009-09-08 07:55:51
+Attachment [trac_6616-patch13.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-patch13.patch) by @williamstein created at 2009-09-08 07:55:51
 
 
 
@@ -325,16 +325,16 @@ Attachment [trac_6616-patch13.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_054190.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part14.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part14.patch) by was created at 2009-09-13 21:24:13",
+    "body": "Attachment [trac_6616-part14.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part14.patch) by @williamstein created at 2009-09-13 21:24:13",
     "created_at": "2009-09-13T21:24:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54190",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part14.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part14.patch) by was created at 2009-09-13 21:24:13
+Attachment [trac_6616-part14.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part14.patch) by @williamstein created at 2009-09-13 21:24:13
 
 
 
@@ -343,16 +343,16 @@ Attachment [trac_6616-part14.patch](tarball://root/attachments/some-uuid/ticket6
 archive/issue_comments_054191.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part15.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part15.patch) by was created at 2009-09-19 08:18:08",
+    "body": "Attachment [trac_6616-part15.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part15.patch) by @williamstein created at 2009-09-19 08:18:08",
     "created_at": "2009-09-19T08:18:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54191",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part15.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part15.patch) by was created at 2009-09-19 08:18:08
+Attachment [trac_6616-part15.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part15.patch) by @williamstein created at 2009-09-19 08:18:08
 
 
 
@@ -361,16 +361,16 @@ Attachment [trac_6616-part15.patch](tarball://root/attachments/some-uuid/ticket6
 archive/issue_comments_054192.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part16.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part16.patch) by was created at 2009-09-19 08:36:51",
+    "body": "Attachment [trac_6616-part16.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part16.patch) by @williamstein created at 2009-09-19 08:36:51",
     "created_at": "2009-09-19T08:36:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54192",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part16.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part16.patch) by was created at 2009-09-19 08:36:51
+Attachment [trac_6616-part16.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part16.patch) by @williamstein created at 2009-09-19 08:36:51
 
 
 
@@ -379,16 +379,16 @@ Attachment [trac_6616-part16.patch](tarball://root/attachments/some-uuid/ticket6
 archive/issue_comments_054193.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part9.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part9.patch) by was created at 2009-09-19 08:52:02",
+    "body": "Attachment [trac_6616-part9.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part9.patch) by @williamstein created at 2009-09-19 08:52:02",
     "created_at": "2009-09-19T08:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54193",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part9.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part9.patch) by was created at 2009-09-19 08:52:02
+Attachment [trac_6616-part9.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part9.patch) by @williamstein created at 2009-09-19 08:52:02
 
 
 
@@ -402,7 +402,7 @@ archive/issue_comments_054194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54194",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -415,16 +415,16 @@ clean bundle with 1-16 against sage-4.1.1
 archive/issue_comments_054195.json:
 ```json
 {
-    "body": "Attachment [heegner-1-to-16.hg](tarball://root/attachments/some-uuid/ticket6616/heegner-1-to-16.hg) by was created at 2009-10-22 04:40:04\n\nThis is a clean bundle against sage-4.2.alpha0:\n\n   http://sage.math.washington.edu/home/wstein/patches/heegner-20091021-rebased_against_4.2.alpha0.hg",
+    "body": "Attachment [heegner-1-to-16.hg](tarball://root/attachments/some-uuid/ticket6616/heegner-1-to-16.hg) by @williamstein created at 2009-10-22 04:40:04\n\nThis is a clean bundle against sage-4.2.alpha0:\n\n   http://sage.math.washington.edu/home/wstein/patches/heegner-20091021-rebased_against_4.2.alpha0.hg",
     "created_at": "2009-10-22T04:40:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54195",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [heegner-1-to-16.hg](tarball://root/attachments/some-uuid/ticket6616/heegner-1-to-16.hg) by was created at 2009-10-22 04:40:04
+Attachment [heegner-1-to-16.hg](tarball://root/attachments/some-uuid/ticket6616/heegner-1-to-16.hg) by @williamstein created at 2009-10-22 04:40:04
 
 This is a clean bundle against sage-4.2.alpha0:
 
@@ -437,16 +437,16 @@ This is a clean bundle against sage-4.2.alpha0:
 archive/issue_comments_054196.json:
 ```json
 {
-    "body": "Attachment [heegner-4.2.1.hg](tarball://root/attachments/some-uuid/ticket6616/heegner-4.2.1.hg) by was created at 2009-12-02 05:03:41\n\nrebased against 4.2.1",
+    "body": "Attachment [heegner-4.2.1.hg](tarball://root/attachments/some-uuid/ticket6616/heegner-4.2.1.hg) by @williamstein created at 2009-12-02 05:03:41\n\nrebased against 4.2.1",
     "created_at": "2009-12-02T05:03:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54196",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [heegner-4.2.1.hg](tarball://root/attachments/some-uuid/ticket6616/heegner-4.2.1.hg) by was created at 2009-12-02 05:03:41
+Attachment [heegner-4.2.1.hg](tarball://root/attachments/some-uuid/ticket6616/heegner-4.2.1.hg) by @williamstein created at 2009-12-02 05:03:41
 
 rebased against 4.2.1
 
@@ -462,7 +462,7 @@ archive/issue_comments_054197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54197",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -475,16 +475,16 @@ this is based against 4.2.1 after applying the hg bundle right above this patch.
 archive/issue_comments_054198.json:
 ```json
 {
-    "body": "Attachment [trac_6616-part18.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part18.patch) by was created at 2009-12-04 09:40:07",
+    "body": "Attachment [trac_6616-part18.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part18.patch) by @williamstein created at 2009-12-04 09:40:07",
     "created_at": "2009-12-04T09:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54198",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6616-part18.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part18.patch) by was created at 2009-12-04 09:40:07
+Attachment [trac_6616-part18.patch](tarball://root/attachments/some-uuid/ticket6616/trac_6616-part18.patch) by @williamstein created at 2009-12-04 09:40:07
 
 
 
@@ -493,16 +493,16 @@ Attachment [trac_6616-part18.patch](tarball://root/attachments/some-uuid/ticket6
 archive/issue_comments_054199.json:
 ```json
 {
-    "body": "Attachment [trac-6616-everything_rebased_against_4.3.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-everything_rebased_against_4.3.patch) by was created at 2010-01-01 02:15:42\n\napply just this one patch against a clean sage-4.3",
+    "body": "Attachment [trac-6616-everything_rebased_against_4.3.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-everything_rebased_against_4.3.patch) by @williamstein created at 2010-01-01 02:15:42\n\napply just this one patch against a clean sage-4.3",
     "created_at": "2010-01-01T02:15:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54199",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-6616-everything_rebased_against_4.3.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-everything_rebased_against_4.3.patch) by was created at 2010-01-01 02:15:42
+Attachment [trac-6616-everything_rebased_against_4.3.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-everything_rebased_against_4.3.patch) by @williamstein created at 2010-01-01 02:15:42
 
 apply just this one patch against a clean sage-4.3
 
@@ -518,7 +518,7 @@ archive/issue_comments_054200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54200",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_054201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54201",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_054202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54202",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -574,7 +574,7 @@ archive/issue_comments_054203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54203",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -985,16 +985,16 @@ So the conclusion is, regretfully,  "needs work", though the work that needs doi
 archive/issue_comments_054204.json:
 ```json
 {
-    "body": "Attachment [trac-6616-everything_rebased_against_4.3-part2.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-everything_rebased_against_4.3-part2.patch) by was created at 2010-01-13 15:12:05\n\napply this and the previous patch; then this should past all tests on 32-bit as well as 64-bit.",
+    "body": "Attachment [trac-6616-everything_rebased_against_4.3-part2.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-everything_rebased_against_4.3-part2.patch) by @williamstein created at 2010-01-13 15:12:05\n\napply this and the previous patch; then this should past all tests on 32-bit as well as 64-bit.",
     "created_at": "2010-01-13T15:12:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54204",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-6616-everything_rebased_against_4.3-part2.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-everything_rebased_against_4.3-part2.patch) by was created at 2010-01-13 15:12:05
+Attachment [trac-6616-everything_rebased_against_4.3-part2.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-everything_rebased_against_4.3-part2.patch) by @williamstein created at 2010-01-13 15:12:05
 
 apply this and the previous patch; then this should past all tests on 32-bit as well as 64-bit.
 
@@ -1010,7 +1010,7 @@ archive/issue_comments_054205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54205",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1028,7 +1028,7 @@ archive/issue_comments_054206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54206",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -1043,16 +1043,16 @@ I also didn't carefully reformat the docstrings.  Which ones aren't formatted co
 archive/issue_comments_054207.json:
 ```json
 {
-    "body": "Attachment [trac-6616-everything_rebased_against_4.3-part2.2.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-everything_rebased_against_4.3-part2.2.patch) by cremona created at 2010-01-13 16:22:30\n\napply instead of previous one",
+    "body": "Attachment [trac-6616-everything_rebased_against_4.3-part2.2.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-everything_rebased_against_4.3-part2.2.patch) by @JohnCremona created at 2010-01-13 16:22:30\n\napply instead of previous one",
     "created_at": "2010-01-13T16:22:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54207",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-6616-everything_rebased_against_4.3-part2.2.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-everything_rebased_against_4.3-part2.2.patch) by cremona created at 2010-01-13 16:22:30
+Attachment [trac-6616-everything_rebased_against_4.3-part2.2.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-everything_rebased_against_4.3-part2.2.patch) by @JohnCremona created at 2010-01-13 16:22:30
 
 apply instead of previous one
 
@@ -1068,7 +1068,7 @@ archive/issue_comments_054208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54208",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1107,7 +1107,7 @@ archive/issue_comments_054209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54209",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1125,7 +1125,7 @@ archive/issue_comments_054210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54210",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -1138,16 +1138,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_054211.json:
 ```json
 {
-    "body": "Attachment [trac-6616-review.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-review.patch) by cremona created at 2010-01-13 18:23:04\n\nPositive review after testing on 32-bit, and also fixing lots of documentation glitches (in the reviewer's patch).  These were mainly found by actually running \"sage -docbuild all html\" and reading the error messages (hint hint).  Most common error was double :: where they shouldn't be.\n\nGreat work!",
+    "body": "Attachment [trac-6616-review.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-review.patch) by @JohnCremona created at 2010-01-13 18:23:04\n\nPositive review after testing on 32-bit, and also fixing lots of documentation glitches (in the reviewer's patch).  These were mainly found by actually running \"sage -docbuild all html\" and reading the error messages (hint hint).  Most common error was double :: where they shouldn't be.\n\nGreat work!",
     "created_at": "2010-01-13T18:23:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54211",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-6616-review.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-review.patch) by cremona created at 2010-01-13 18:23:04
+Attachment [trac-6616-review.patch](tarball://root/attachments/some-uuid/ticket6616/trac-6616-review.patch) by @JohnCremona created at 2010-01-13 18:23:04
 
 Positive review after testing on 32-bit, and also fixing lots of documentation glitches (in the reviewer's patch).  These were mainly found by actually running "sage -docbuild all html" and reading the error messages (hint hint).  Most common error was double :: where they shouldn't be.
 
@@ -1165,7 +1165,7 @@ archive/issue_comments_054212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54212",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -1190,7 +1190,7 @@ archive/issue_comments_054213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6616",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54213",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

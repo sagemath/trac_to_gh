@@ -3,7 +3,7 @@
 archive/issues_007569.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  abmasse\n\nIn many algorithms we want to find a random vertex or a random edge in a graph. It is also very often required to find, given a vertex, one edge adjacent to it ( for example in depth first or breadth first search ).\n\nThis should be possible easily, and most importantly efficiently ( if possible, directly written in C ) as DFS and BFS are very slow when written in python ( same problem with Floyd Warshall for all_pairs_shortest_path and networkX's distance function )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7569\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  abmasse\n\nIn many algorithms we want to find a random vertex or a random edge in a graph. It is also very often required to find, given a vertex, one edge adjacent to it ( for example in depth first or breadth first search ).\n\nThis should be possible easily, and most importantly efficiently ( if possible, directly written in C ) as DFS and BFS are very slow when written in python ( same problem with Floyd Warshall for all_pairs_shortest_path and networkX's distance function )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7569\n\n",
     "created_at": "2009-12-01T10:15:12Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007569.json:
     "title": "random_vertex and random_edge functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7569",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 CC:  abmasse
 
@@ -41,7 +41,7 @@ archive/issue_comments_064388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64388",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_064389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64389",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_064390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64390",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_064391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64391",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_064392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64392",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_064393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64393",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_064394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64394",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_064395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64395",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_064396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64396",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_064397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64397",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_064399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64399",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -289,16 +289,16 @@ Nathann
 archive/issue_comments_064400.json:
 ```json
 {
-    "body": "Attachment [trac_7569.patch](tarball://root/attachments/some-uuid/ticket7569/trac_7569.patch) by ncohen created at 2010-03-22 09:51:55",
+    "body": "Attachment [trac_7569.patch](tarball://root/attachments/some-uuid/ticket7569/trac_7569.patch) by @nathanncohen created at 2010-03-22 09:51:55",
     "created_at": "2010-03-22T09:51:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64400",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7569.patch](tarball://root/attachments/some-uuid/ticket7569/trac_7569.patch) by ncohen created at 2010-03-22 09:51:55
+Attachment [trac_7569.patch](tarball://root/attachments/some-uuid/ticket7569/trac_7569.patch) by @nathanncohen created at 2010-03-22 09:51:55
 
 
 
@@ -370,7 +370,7 @@ archive/issue_comments_064404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64404",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_064405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64405",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_064406.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7569",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7569#issuecomment-64406",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

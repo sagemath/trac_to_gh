@@ -3,7 +3,7 @@
 archive/issues_009782.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  cremona\n\nAdd the relatively new additive group documentation from #6449 into the reference manual and verify that it builds properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9783\n\n",
+    "body": "Assignee: joyner\n\nCC:  @JohnCremona\n\nAdd the relatively new additive group documentation from #6449 into the reference manual and verify that it builds properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9783\n\n",
     "created_at": "2010-08-22T23:25:14Z",
     "labels": [
         "group theory",
@@ -14,12 +14,12 @@ archive/issues_009782.json:
     "title": "Add additive groups to the documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9782",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 Assignee: joyner
 
-CC:  cremona
+CC:  @JohnCremona
 
 Add the relatively new additive group documentation from #6449 into the reference manual and verify that it builds properly.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9783
 archive/issue_comments_096024.json:
 ```json
 {
-    "body": "Attachment [trac_9783_abelian_groups_docs.patch](tarball://root/attachments/some-uuid/ticket9783/trac_9783_abelian_groups_docs.patch) by rbeezer created at 2010-08-23 06:38:29",
+    "body": "Attachment [trac_9783_abelian_groups_docs.patch](tarball://root/attachments/some-uuid/ticket9783/trac_9783_abelian_groups_docs.patch) by @rbeezer created at 2010-08-23 06:38:29",
     "created_at": "2010-08-23T06:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9782#issuecomment-96024",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9783_abelian_groups_docs.patch](tarball://root/attachments/some-uuid/ticket9783/trac_9783_abelian_groups_docs.patch) by rbeezer created at 2010-08-23 06:38:29
+Attachment [trac_9783_abelian_groups_docs.patch](tarball://root/attachments/some-uuid/ticket9783/trac_9783_abelian_groups_docs.patch) by @rbeezer created at 2010-08-23 06:38:29
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_096025.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9782#issuecomment-96025",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_096026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9782#issuecomment-96026",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_096027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9782#issuecomment-96027",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_096028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9782#issuecomment-96028",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_096029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9782",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9782#issuecomment-96029",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_005185.json:
     "title": "[with patch, needs review] is_zero is broken for sparse vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5185",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
@@ -82,16 +82,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5185
 archive/issue_comments_039763.json:
 ```json
 {
-    "body": "Attachment [5185.patch](tarball://root/attachments/some-uuid/ticket5185/5185.patch) by jhpalmieri created at 2009-02-05 04:06:45",
+    "body": "Attachment [5185.patch](tarball://root/attachments/some-uuid/ticket5185/5185.patch) by @jhpalmieri created at 2009-02-05 04:06:45",
     "created_at": "2009-02-05T04:06:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5185#issuecomment-39763",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5185.patch](tarball://root/attachments/some-uuid/ticket5185/5185.patch) by jhpalmieri created at 2009-02-05 04:06:45
+Attachment [5185.patch](tarball://root/attachments/some-uuid/ticket5185/5185.patch) by @jhpalmieri created at 2009-02-05 04:06:45
 
 
 
@@ -176,7 +176,7 @@ Changing component from algebra to misc.
 archive/issue_comments_039768.json:
 ```json
 {
-    "body": "Changing assignee from cwitty to jhpalmieri.",
+    "body": "Changing assignee from cwitty to @jhpalmieri.",
     "created_at": "2009-02-08T22:11:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5185",
     "type": "issue_comment",
@@ -185,7 +185,7 @@ archive/issue_comments_039768.json:
 }
 ```
 
-Changing assignee from cwitty to jhpalmieri.
+Changing assignee from cwitty to @jhpalmieri.
 
 
 
@@ -265,7 +265,7 @@ archive/issue_comments_039772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5185#issuecomment-39772",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -278,16 +278,16 @@ Oh, I didn't know that.  Here's a new patch which just deletes the `__nonzero__`
 archive/issue_comments_039773.json:
 ```json
 {
-    "body": "Attachment [5185-new.patch](tarball://root/attachments/some-uuid/ticket5185/5185-new.patch) by jhpalmieri created at 2009-02-10 16:13:53",
+    "body": "Attachment [5185-new.patch](tarball://root/attachments/some-uuid/ticket5185/5185-new.patch) by @jhpalmieri created at 2009-02-10 16:13:53",
     "created_at": "2009-02-10T16:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5185#issuecomment-39773",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5185-new.patch](tarball://root/attachments/some-uuid/ticket5185/5185-new.patch) by jhpalmieri created at 2009-02-10 16:13:53
+Attachment [5185-new.patch](tarball://root/attachments/some-uuid/ticket5185/5185-new.patch) by @jhpalmieri created at 2009-02-10 16:13:53
 
 
 
@@ -301,7 +301,7 @@ archive/issue_comments_039774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5185#issuecomment-39774",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -357,7 +357,7 @@ archive/issue_comments_039777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5185",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5185#issuecomment-39777",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

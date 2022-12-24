@@ -3,7 +3,7 @@
 archive/issues_005555.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nWith the attached patch, you should be able to use \\ZZ, \\CC, \\RR, and \\QQ in docstrings and have them typeset correctly in the html, live html, latex, and pdf versions of the documentation.  To add new macros, edit the file '$SAGE_ROOT/devel/sage/doc/common/sage-macros.tex'.  (I considered just using the existing file 'macros.tex' in the same directory, but decided it was too bloated.)\n\nThe point here is to be able to write docstrings which are readable from interactive help in Sage and which also get typeset correctly in the reference manual; this was discussed on [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/74e6bcf5ef716d1c), and people seemed to agree that a docstring like \n\n```\nThis computes the integral homology `H_d(X, \\ZZ)` of `X` in dimension `d`. \n```\n\nwas better than\n\n```\nThis computes the integral homology `H_d(X, \\mathbb{Z})` of `X` in dimension `d`. \n```\n\nespecially since the \\ZZ gets turned into ZZ when pre-parsed for interactive help.  \n\nThis point should be kept in mind if anyone wants to add new macros: the name should be short and unambiguous, and there should be a good reason for using it instead of plain LaTeX.  (This was maybe what I meant when I said that macros.tex was too bloated.)\n\nHaving said all of that, I would be happy to add some more macros now.  What else should be added?  Once we seem to have made some sort of decision about that, I'll update the patch and mark this ticket as \"needs review\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/5555\n\n",
+    "body": "Assignee: @jhpalmieri\n\nWith the attached patch, you should be able to use \\ZZ, \\CC, \\RR, and \\QQ in docstrings and have them typeset correctly in the html, live html, latex, and pdf versions of the documentation.  To add new macros, edit the file '$SAGE_ROOT/devel/sage/doc/common/sage-macros.tex'.  (I considered just using the existing file 'macros.tex' in the same directory, but decided it was too bloated.)\n\nThe point here is to be able to write docstrings which are readable from interactive help in Sage and which also get typeset correctly in the reference manual; this was discussed on [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/74e6bcf5ef716d1c), and people seemed to agree that a docstring like \n\n```\nThis computes the integral homology `H_d(X, \\ZZ)` of `X` in dimension `d`. \n```\n\nwas better than\n\n```\nThis computes the integral homology `H_d(X, \\mathbb{Z})` of `X` in dimension `d`. \n```\n\nespecially since the \\ZZ gets turned into ZZ when pre-parsed for interactive help.  \n\nThis point should be kept in mind if anyone wants to add new macros: the name should be short and unambiguous, and there should be a good reason for using it instead of plain LaTeX.  (This was maybe what I meant when I said that macros.tex was too bloated.)\n\nHaving said all of that, I would be happy to add some more macros now.  What else should be added?  Once we seem to have made some sort of decision about that, I'll update the patch and mark this ticket as \"needs review\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/5555\n\n",
     "created_at": "2009-03-17T23:38:59Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_005555.json:
     "title": "[with patch, not ready for review] make some TeX macros available to docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5555",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 With the attached patch, you should be able to use \ZZ, \CC, \RR, and \QQ in docstrings and have them typeset correctly in the html, live html, latex, and pdf versions of the documentation.  To add new macros, edit the file '$SAGE_ROOT/devel/sage/doc/common/sage-macros.tex'.  (I considered just using the existing file 'macros.tex' in the same directory, but decided it was too bloated.)
 
@@ -55,7 +55,7 @@ archive/issue_comments_043204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43204",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_043205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43205",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_043206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43206",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_043207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43207",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_043208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43208",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_043209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43209",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_043210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43210",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_043211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43211",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_043212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43212",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_043213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43213",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_043214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43214",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -317,16 +317,16 @@ and it will be typeset correctly.
 archive/issue_comments_043215.json:
 ```json
 {
-    "body": "Attachment [doc-tex-macros.patch](tarball://root/attachments/some-uuid/ticket5555/doc-tex-macros.patch) by jhpalmieri created at 2009-03-24 20:20:18\n\n(don't use, obsolete)",
+    "body": "Attachment [doc-tex-macros.patch](tarball://root/attachments/some-uuid/ticket5555/doc-tex-macros.patch) by @jhpalmieri created at 2009-03-24 20:20:18\n\n(don't use, obsolete)",
     "created_at": "2009-03-24T20:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43215",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [doc-tex-macros.patch](tarball://root/attachments/some-uuid/ticket5555/doc-tex-macros.patch) by jhpalmieri created at 2009-03-24 20:20:18
+Attachment [doc-tex-macros.patch](tarball://root/attachments/some-uuid/ticket5555/doc-tex-macros.patch) by @jhpalmieri created at 2009-03-24 20:20:18
 
 (don't use, obsolete)
 
@@ -337,16 +337,16 @@ Attachment [doc-tex-macros.patch](tarball://root/attachments/some-uuid/ticket555
 archive/issue_comments_043216.json:
 ```json
 {
-    "body": "Attachment [new-macros.2.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros.2.patch) by jhpalmieri created at 2009-03-24 20:20:51\n\n(don't use, obsolete)",
+    "body": "Attachment [new-macros.2.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros.2.patch) by @jhpalmieri created at 2009-03-24 20:20:51\n\n(don't use, obsolete)",
     "created_at": "2009-03-24T20:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43216",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [new-macros.2.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros.2.patch) by jhpalmieri created at 2009-03-24 20:20:51
+Attachment [new-macros.2.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros.2.patch) by @jhpalmieri created at 2009-03-24 20:20:51
 
 (don't use, obsolete)
 
@@ -357,16 +357,16 @@ Attachment [new-macros.2.patch](tarball://root/attachments/some-uuid/ticket5555/
 archive/issue_comments_043217.json:
 ```json
 {
-    "body": "Attachment [new-macros.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros.patch) by jhpalmieri created at 2009-03-24 20:21:14\n\n(don't use, obsolete)",
+    "body": "Attachment [new-macros.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros.patch) by @jhpalmieri created at 2009-03-24 20:21:14\n\n(don't use, obsolete)",
     "created_at": "2009-03-24T20:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43217",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [new-macros.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros.patch) by jhpalmieri created at 2009-03-24 20:21:14
+Attachment [new-macros.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros.patch) by @jhpalmieri created at 2009-03-24 20:21:14
 
 (don't use, obsolete)
 
@@ -382,7 +382,7 @@ archive/issue_comments_043218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43218",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -395,16 +395,16 @@ apply this one first
 archive/issue_comments_043219.json:
 ```json
 {
-    "body": "Attachment [new-macros-with-jsmath.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros-with-jsmath.patch) by jhpalmieri created at 2009-03-24 20:22:38\n\n(Is there a way to delete attachments?)",
+    "body": "Attachment [new-macros-with-jsmath.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros-with-jsmath.patch) by @jhpalmieri created at 2009-03-24 20:22:38\n\n(Is there a way to delete attachments?)",
     "created_at": "2009-03-24T20:22:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43219",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [new-macros-with-jsmath.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros-with-jsmath.patch) by jhpalmieri created at 2009-03-24 20:22:38
+Attachment [new-macros-with-jsmath.patch](tarball://root/attachments/some-uuid/ticket5555/new-macros-with-jsmath.patch) by @jhpalmieri created at 2009-03-24 20:22:38
 
 (Is there a way to delete attachments?)
 
@@ -442,7 +442,7 @@ archive/issue_comments_043221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43221",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_043223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43223",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_043224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43224",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -539,7 +539,7 @@ archive/issue_comments_043225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43225",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_043227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43227",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -651,16 +651,16 @@ apply this one second
 archive/issue_comments_043228.json:
 ```json
 {
-    "body": "Attachment [5555-second.patch](tarball://root/attachments/some-uuid/ticket5555/5555-second.patch) by jhpalmieri created at 2009-04-10 22:56:17\n\nOkay, here's a new patch with revised doctests.",
+    "body": "Attachment [5555-second.patch](tarball://root/attachments/some-uuid/ticket5555/5555-second.patch) by @jhpalmieri created at 2009-04-10 22:56:17\n\nOkay, here's a new patch with revised doctests.",
     "created_at": "2009-04-10T22:56:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43228",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5555-second.patch](tarball://root/attachments/some-uuid/ticket5555/5555-second.patch) by jhpalmieri created at 2009-04-10 22:56:17
+Attachment [5555-second.patch](tarball://root/attachments/some-uuid/ticket5555/5555-second.patch) by @jhpalmieri created at 2009-04-10 22:56:17
 
 Okay, here's a new patch with revised doctests.
 
@@ -716,7 +716,7 @@ archive/issue_comments_043231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5555",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5555#issuecomment-43231",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

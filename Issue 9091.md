@@ -3,7 +3,7 @@
 archive/issues_009091.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCC:  nthiery jhpalmieri\n\nIn `sage/misc/latex.py` the `check_file()` routine has a mis-aligned block which will issue the `more_info` string whenever it is called, even if the file exists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9091\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @nthiery @jhpalmieri\n\nIn `sage/misc/latex.py` the `check_file()` routine has a mis-aligned block which will issue the `more_info` string whenever it is called, even if the file exists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9091\n\n",
     "created_at": "2010-05-30T02:22:52Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_009091.json:
     "title": "check_file() in latex.py spits out warnings every time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9091",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
-CC:  nthiery jhpalmieri
+CC:  @nthiery @jhpalmieri
 
 In `sage/misc/latex.py` the `check_file()` routine has a mis-aligned block which will issue the `more_info` string whenever it is called, even if the file exists.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9091
 archive/issue_comments_084439.json:
 ```json
 {
-    "body": "Attachment [trac_9091-latex-check-file.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file.patch) by rbeezer created at 2010-05-30 02:26:18",
+    "body": "Attachment [trac_9091-latex-check-file.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file.patch) by @rbeezer created at 2010-05-30 02:26:18",
     "created_at": "2010-05-30T02:26:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84439",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9091-latex-check-file.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file.patch) by rbeezer created at 2010-05-30 02:26:18
+Attachment [trac_9091-latex-check-file.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file.patch) by @rbeezer created at 2010-05-30 02:26:18
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_084440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84440",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_084441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84441",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_084442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84442",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_084443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84443",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -141,16 +141,16 @@ Rob
 archive/issue_comments_084444.json:
 ```json
 {
-    "body": "Attachment [trac_9091-latex-check-file-v2.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file-v2.patch) by rbeezer created at 2010-06-01 21:33:12",
+    "body": "Attachment [trac_9091-latex-check-file-v2.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file-v2.patch) by @rbeezer created at 2010-06-01 21:33:12",
     "created_at": "2010-06-01T21:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84444",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_9091-latex-check-file-v2.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file-v2.patch) by rbeezer created at 2010-06-01 21:33:12
+Attachment [trac_9091-latex-check-file-v2.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file-v2.patch) by @rbeezer created at 2010-06-01 21:33:12
 
 
 
@@ -164,7 +164,7 @@ archive/issue_comments_084445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84445",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_084446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84446",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_084447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84447",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_084448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84448",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

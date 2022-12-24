@@ -3,7 +3,7 @@
 archive/issues_006406.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rlm\n\nKeywords: elliptic curves, tate shafarevich group,\n\nCurrently the p_primary_bound pretends to give back a proven result when the p-torsion is reducible. That is wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6406\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rlmill\n\nKeywords: elliptic curves, tate shafarevich group,\n\nCurrently the p_primary_bound pretends to give back a proven result when the p-torsion is reducible. That is wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6406\n\n",
     "created_at": "2009-06-25T14:37:36Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_006406.json:
     "title": "fixing p_primary_bound on Tate-Shafarevich groups not to allow the reducible case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6406",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rlm
+CC:  @rlmill
 
 Keywords: elliptic curves, tate shafarevich group,
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6406
 archive/issue_comments_051443.json:
 ```json
 {
-    "body": "Attachment [trac_6406.patch](tarball://root/attachments/some-uuid/ticket6406/trac_6406.patch) by wuthrich created at 2009-06-25 14:58:58",
+    "body": "Attachment [trac_6406.patch](tarball://root/attachments/some-uuid/ticket6406/trac_6406.patch) by @categorie created at 2009-06-25 14:58:58",
     "created_at": "2009-06-25T14:58:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6406#issuecomment-51443",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
-Attachment [trac_6406.patch](tarball://root/attachments/some-uuid/ticket6406/trac_6406.patch) by wuthrich created at 2009-06-25 14:58:58
+Attachment [trac_6406.patch](tarball://root/attachments/some-uuid/ticket6406/trac_6406.patch) by @categorie created at 2009-06-25 14:58:58
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_051444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6406#issuecomment-51444",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_051445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6406#issuecomment-51445",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_051446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6406#issuecomment-51446",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

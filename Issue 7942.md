@@ -3,7 +3,7 @@
 archive/issues_007942.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\n\nThat is dumb and should be fixed!\n\nsage: latex(I)\nI\nsage: latex(i)\nI\n\nIt should output \"i\" not \"I\".\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7942\n\n",
+    "body": "Assignee: @burcin\n\n\n```\n\nThat is dumb and should be fixed!\n\nsage: latex(I)\nI\nsage: latex(i)\nI\n\nIt should output \"i\" not \"I\".\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7942\n\n",
     "created_at": "2010-01-16T03:27:15Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_007942.json:
     "title": "latex(I) should be the string \"i\" not \"I\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7942",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -49,7 +49,7 @@ archive/issue_comments_069281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7942#issuecomment-69281",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_069282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7942",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7942#issuecomment-69282",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

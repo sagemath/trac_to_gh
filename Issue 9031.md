@@ -3,7 +3,7 @@
 archive/issues_009031.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe algebraic_dependency function currently calls Pari/GP.\nFor big problems fpLLL should be faster, thus there should be\nan option to call fpLLL instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9031\n\n",
+    "body": "Assignee: @aghitza\n\nThe algebraic_dependency function currently calls Pari/GP.\nFor big problems fpLLL should be faster, thus there should be\nan option to call fpLLL instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9031\n\n",
     "created_at": "2010-05-24T07:53:30Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_009031.json:
     "title": "algebraic_dependency with algorithm=fpLLL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9031",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The algebraic_dependency function currently calls Pari/GP.
 For big problems fpLLL should be faster, thus there should be
@@ -39,7 +39,7 @@ archive/issue_comments_083580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9031#issuecomment-83580",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_083581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9031#issuecomment-83581",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_083582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9031#issuecomment-83582",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_083583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9031#issuecomment-83583",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_083584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9031#issuecomment-83584",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_083585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9031#issuecomment-83585",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

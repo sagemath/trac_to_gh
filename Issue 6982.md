@@ -14,7 +14,7 @@ archive/issues_006982.json:
     "title": "cygwin port: atlas and linbox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6982",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -39,7 +39,7 @@ archive/issue_comments_057748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57748",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_057749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6982",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57749",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 

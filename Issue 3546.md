@@ -3,7 +3,7 @@
 archive/issues_003546.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  slelievre\n\n\n```\nsage: line3d([[0,0,0], [1,0,0], [1,1,0], [.5,1.5,0], [0,1,0], [0,0,0]])\n```\n\n\nWhen rendered with jmol, the lines produced are curves.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3546\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @slel\n\n\n```\nsage: line3d([[0,0,0], [1,0,0], [1,1,0], [.5,1.5,0], [0,1,0], [0,0,0]])\n```\n\n\nWhen rendered with jmol, the lines produced are curves.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3546\n\n",
     "created_at": "2008-07-03T21:27:23Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_003546.json:
     "title": "line3d with jmol draws curves instead of straight lines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3546",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  slelievre
+CC:  @slel
 
 
 ```
@@ -45,7 +45,7 @@ archive/issue_comments_025084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3546#issuecomment-25084",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_025085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3546#issuecomment-25085",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_025086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3546#issuecomment-25086",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

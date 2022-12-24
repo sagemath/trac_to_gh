@@ -14,7 +14,7 @@ archive/issues_008233.json:
     "title": "concatenation of words should preserve the data type represention when possible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8233",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 Assignee: sage-combinat
@@ -67,7 +67,7 @@ archive/issue_comments_072726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8233#issuecomment-72726",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_072727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8233#issuecomment-72727",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -98,16 +98,16 @@ Forget about this patch!
 archive/issue_comments_072728.json:
 ```json
 {
-    "body": "Attachment [trac_8233_word_concatenation-sl.2.patch](tarball://root/attachments/some-uuid/ticket8233/trac_8233_word_concatenation-sl.2.patch) by slabbe created at 2010-02-28 14:16:43\n\nDepends on #7619.",
+    "body": "Attachment [trac_8233_word_concatenation-sl.2.patch](tarball://root/attachments/some-uuid/ticket8233/trac_8233_word_concatenation-sl.2.patch) by @seblabbe created at 2010-02-28 14:16:43\n\nDepends on #7619.",
     "created_at": "2010-02-28T14:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8233#issuecomment-72728",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8233_word_concatenation-sl.2.patch](tarball://root/attachments/some-uuid/ticket8233/trac_8233_word_concatenation-sl.2.patch) by slabbe created at 2010-02-28 14:16:43
+Attachment [trac_8233_word_concatenation-sl.2.patch](tarball://root/attachments/some-uuid/ticket8233/trac_8233_word_concatenation-sl.2.patch) by @seblabbe created at 2010-02-28 14:16:43
 
 Depends on #7619.
 
@@ -118,16 +118,16 @@ Depends on #7619.
 archive/issue_comments_072729.json:
 ```json
 {
-    "body": "Attachment [trac_8233_word_concatenation-sl.patch](tarball://root/attachments/some-uuid/ticket8233/trac_8233_word_concatenation-sl.patch) by slabbe created at 2010-03-01 13:21:19",
+    "body": "Attachment [trac_8233_word_concatenation-sl.patch](tarball://root/attachments/some-uuid/ticket8233/trac_8233_word_concatenation-sl.patch) by @seblabbe created at 2010-03-01 13:21:19",
     "created_at": "2010-03-01T13:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8233#issuecomment-72729",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8233_word_concatenation-sl.patch](tarball://root/attachments/some-uuid/ticket8233/trac_8233_word_concatenation-sl.patch) by slabbe created at 2010-03-01 13:21:19
+Attachment [trac_8233_word_concatenation-sl.patch](tarball://root/attachments/some-uuid/ticket8233/trac_8233_word_concatenation-sl.patch) by @seblabbe created at 2010-03-01 13:21:19
 
 
 
@@ -195,7 +195,7 @@ archive/issue_comments_072733.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8233",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8233#issuecomment-72733",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

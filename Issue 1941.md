@@ -3,7 +3,7 @@
 archive/issues_001941.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  brunellus @maxale tscrim\n\nSystematically go through the functions of graph and generic_graph and see which ones, such as add_vertex, need to be overridden in the bipartite graph class so that everything makes sense. Right now, you can add an edge so that the bipartite graph is no longer bipartite.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1941\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  brunellus @maxale @tscrim\n\nSystematically go through the functions of graph and generic_graph and see which ones, such as add_vertex, need to be overridden in the bipartite graph class so that everything makes sense. Right now, you can add an edge so that the bipartite graph is no longer bipartite.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1941\n\n",
     "created_at": "2008-01-26T20:11:04Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_001941.json:
     "title": "Finish bipartite graph implementation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1941",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  brunellus @maxale tscrim
+CC:  brunellus @maxale @tscrim
 
 Systematically go through the functions of graph and generic_graph and see which ones, such as add_vertex, need to be overridden in the bipartite graph class so that everything makes sense. Right now, you can add an edge so that the bipartite graph is no longer bipartite.
 
@@ -39,7 +39,7 @@ archive/issue_comments_012315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1941#issuecomment-12315",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_012316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1941#issuecomment-12316",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_012317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1941#issuecomment-12317",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_012318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1941#issuecomment-12318",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_012319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1941#issuecomment-12319",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_012320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1941#issuecomment-12320",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_012321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1941#issuecomment-12321",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_012322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1941#issuecomment-12322",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_012323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1941#issuecomment-12323",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_012324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1941#issuecomment-12324",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_012325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1941#issuecomment-12325",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -277,7 +277,7 @@ archive/issue_comments_012326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1941#issuecomment-12326",
-    "user": "dcoudert"
+    "user": "@dcoudert"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_012327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1941#issuecomment-12327",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 

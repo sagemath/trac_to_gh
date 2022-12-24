@@ -14,7 +14,7 @@ archive/issues_000210.json:
     "title": "discrete log",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/210",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -107,16 +107,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/210
 archive/issue_comments_000940.json:
 ```json
 {
-    "body": "Attachment [9124.patch](tarball://root/attachments/some-uuid/ticket210/9124.patch) by cremona created at 2008-04-04 08:57:01",
+    "body": "Attachment [9124.patch](tarball://root/attachments/some-uuid/ticket210/9124.patch) by @JohnCremona created at 2008-04-04 08:57:01",
     "created_at": "2008-04-04T08:57:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/210#issuecomment-940",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [9124.patch](tarball://root/attachments/some-uuid/ticket210/9124.patch) by cremona created at 2008-04-04 08:57:01
+Attachment [9124.patch](tarball://root/attachments/some-uuid/ticket210/9124.patch) by @JohnCremona created at 2008-04-04 08:57:01
 
 
 
@@ -130,7 +130,7 @@ archive/issue_comments_000941.json:
     "issue": "https://github.com/sagemath/sagetest/issues/210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/210#issuecomment-941",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_000942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/210",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/210#issuecomment-942",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

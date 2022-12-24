@@ -3,7 +3,7 @@
 archive/issues_003732.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThese should be integrated into the doctest framework for sage's calculus. See attached.  This is by Elliot Brossard.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3732\n\n",
+    "body": "Assignee: @garyfurnish\n\nThese should be integrated into the doctest framework for sage's calculus. See attached.  This is by Elliot Brossard.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3732\n\n",
     "created_at": "2008-07-28T04:11:23Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003732.json:
     "title": "calculus -- some examples of sage integration failing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3732",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 These should be integrated into the doctest framework for sage's calculus. See attached.  This is by Elliot Brossard.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3732
 archive/issue_comments_026495.json:
 ```json
 {
-    "body": "Attachment [testintfailscases.py](tarball://root/attachments/some-uuid/ticket3732/testintfailscases.py) by was created at 2008-07-28 04:11:36",
+    "body": "Attachment [testintfailscases.py](tarball://root/attachments/some-uuid/ticket3732/testintfailscases.py) by @williamstein created at 2008-07-28 04:11:36",
     "created_at": "2008-07-28T04:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3732#issuecomment-26495",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [testintfailscases.py](tarball://root/attachments/some-uuid/ticket3732/testintfailscases.py) by was created at 2008-07-28 04:11:36
+Attachment [testintfailscases.py](tarball://root/attachments/some-uuid/ticket3732/testintfailscases.py) by @williamstein created at 2008-07-28 04:11:36
 
 
 
@@ -141,7 +141,7 @@ archive/issue_comments_026499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3732#issuecomment-26499",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_026500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3732#issuecomment-26500",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_026501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3732#issuecomment-26501",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_026502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3732#issuecomment-26502",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

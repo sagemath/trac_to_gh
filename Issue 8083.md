@@ -3,7 +3,7 @@
 archive/issues_008083.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: latex\n\nAccented letters produced in notebook by command like this\n\n```\n%latex\n\u011b\u0161\u010d\u0159\u017e\u00fd\u00e1\u00ed\u00e9\u010f\u010e\n```\n\nproduce letters composed from two objects - letter and accent - and this does not look good in some cases, especially the letter \u010f. The solution is to use correct fonts in LaTeX.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8083\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: latex\n\nAccented letters produced in notebook by command like this\n\n```\n%latex\n\u011b\u0161\u010d\u0159\u017e\u00fd\u00e1\u00ed\u00e9\u010f\u010e\n```\n\nproduce letters composed from two objects - letter and accent - and this does not look good in some cases, especially the letter \u010f. The solution is to use correct fonts in LaTeX.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8083\n\n",
     "created_at": "2010-01-26T20:53:14Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_008083.json:
     "title": "fix accents in LaTeX output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8083",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: latex
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8083
 archive/issue_comments_070834.json:
 ```json
 {
-    "body": "Attachment [latex_T1_fonts.patch](tarball://root/attachments/some-uuid/ticket8083/latex_T1_fonts.patch) by robert.marik created at 2010-01-26 20:53:34",
+    "body": "Attachment [latex_T1_fonts.patch](tarball://root/attachments/some-uuid/ticket8083/latex_T1_fonts.patch) by @robert-marik created at 2010-01-26 20:53:34",
     "created_at": "2010-01-26T20:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8083#issuecomment-70834",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [latex_T1_fonts.patch](tarball://root/attachments/some-uuid/ticket8083/latex_T1_fonts.patch) by robert.marik created at 2010-01-26 20:53:34
+Attachment [latex_T1_fonts.patch](tarball://root/attachments/some-uuid/ticket8083/latex_T1_fonts.patch) by @robert-marik created at 2010-01-26 20:53:34
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_070835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8083#issuecomment-70835",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_070836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8083#issuecomment-70836",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_070837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8083#issuecomment-70837",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_070838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8083#issuecomment-70838",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -143,16 +143,16 @@ do not merge: for illustration and testing only
 archive/issue_comments_070839.json:
 ```json
 {
-    "body": "Attachment [trac_8083-experimental.patch](tarball://root/attachments/some-uuid/ticket8083/trac_8083-experimental.patch) by mpatel created at 2010-01-30 11:36:34\n\nOut of curiosity: Do other font encodings ever conflict with `T1`?  Other alphabets may require a different one, e.g., for\n\n\n```\n%latex\n\u0422\u0435\u043e\u0440\u0438\u044f \u0447\u0438\u0441\u0435\u043b\n```\n\none can use\n\n\n```python\nsage.misc.latex.latex.extra_preamble('\\\\usepackage[T2A]{fontenc}')\n```\n",
+    "body": "Attachment [trac_8083-experimental.patch](tarball://root/attachments/some-uuid/ticket8083/trac_8083-experimental.patch) by @qed777 created at 2010-01-30 11:36:34\n\nOut of curiosity: Do other font encodings ever conflict with `T1`?  Other alphabets may require a different one, e.g., for\n\n\n```\n%latex\n\u0422\u0435\u043e\u0440\u0438\u044f \u0447\u0438\u0441\u0435\u043b\n```\n\none can use\n\n\n```python\nsage.misc.latex.latex.extra_preamble('\\\\usepackage[T2A]{fontenc}')\n```\n",
     "created_at": "2010-01-30T11:36:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8083",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8083#issuecomment-70839",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8083-experimental.patch](tarball://root/attachments/some-uuid/ticket8083/trac_8083-experimental.patch) by mpatel created at 2010-01-30 11:36:34
+Attachment [trac_8083-experimental.patch](tarball://root/attachments/some-uuid/ticket8083/trac_8083-experimental.patch) by @qed777 created at 2010-01-30 11:36:34
 
 Out of curiosity: Do other font encodings ever conflict with `T1`?  Other alphabets may require a different one, e.g., for
 

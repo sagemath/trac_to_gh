@@ -14,7 +14,7 @@ archive/issues_000577.json:
     "title": "add MPolynomialRing.long_repr method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/577",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: somebody
@@ -71,7 +71,7 @@ archive/issue_comments_002994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/577#issuecomment-2994",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_002995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/577",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/577#issuecomment-2995",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003614.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\npbuild is broken by finance compiled modules in 3.0.4.rc0.  The fix is going to be adding the right libraries to the finance include/linker options\n\nIssue created by migration from https://trac.sagemath.org/ticket/3614\n\n",
+    "body": "Assignee: @garyfurnish\n\npbuild is broken by finance compiled modules in 3.0.4.rc0.  The fix is going to be adding the right libraries to the finance include/linker options\n\nIssue created by migration from https://trac.sagemath.org/ticket/3614\n\n",
     "created_at": "2008-07-08T18:03:43Z",
     "labels": [
         "pbuild",
@@ -14,10 +14,10 @@ archive/issues_003614.json:
     "title": "pbuild broken by finance",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3614",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 pbuild is broken by finance compiled modules in 3.0.4.rc0.  The fix is going to be adding the right libraries to the finance include/linker options
 
@@ -74,16 +74,16 @@ Michael
 archive/issue_comments_025515.json:
 ```json
 {
-    "body": "Attachment [trac_3614.patch](tarball://root/attachments/some-uuid/ticket3614/trac_3614.patch) by gfurnish created at 2008-07-10 09:03:57",
+    "body": "Attachment [trac_3614.patch](tarball://root/attachments/some-uuid/ticket3614/trac_3614.patch) by @garyfurnish created at 2008-07-10 09:03:57",
     "created_at": "2008-07-10T09:03:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3614",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3614#issuecomment-25515",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3614.patch](tarball://root/attachments/some-uuid/ticket3614/trac_3614.patch) by gfurnish created at 2008-07-10 09:03:57
+Attachment [trac_3614.patch](tarball://root/attachments/some-uuid/ticket3614/trac_3614.patch) by @garyfurnish created at 2008-07-10 09:03:57
 
 
 

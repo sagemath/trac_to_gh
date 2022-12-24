@@ -3,7 +3,7 @@
 archive/issues_007122.json:
 ```json
 {
-    "body": "Assignee: was\n\nI try to plot a half-circle with the \n\n\n```\nvar('m')\nparametric_plot ([real(m+sqrt(1-m^2)), imaginary(m+sqrt(1-m^2))],m,-1,1)\n```\n \n\nand get a severe error.\n\nTheses plots are right :\n\n```\nplot([sqrt(m2+1)],m,0,6)\nplot(real (sqrt(m2+1)),m,0,6)\n```\n\n\nBut this one with AND real(...) or imaginary(...) AND list AND sqrt(...)  fails :\n\n\n```\nplot([real (sqrt(m2+1))],m,0,6)\n```\n\n\nOn devel-support kcrisman proposes :\n\n\nAfter looking at the traceback about an extra argument, I have a\nsneaky suspicion this is because sqrt takes an extra keyword prec,\nwhich perhaps is getting caught up in fast_float somehow.  What's\ninteresting is that the problem also only shows up for a list, so\nagain fast_float([]) is what's getting concerned.  Those who know how fast_float and the expression trees work will hopefully check this out as they get an opportunity.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7122\n\n",
+    "body": "Assignee: @williamstein\n\nI try to plot a half-circle with the \n\n\n```\nvar('m')\nparametric_plot ([real(m+sqrt(1-m^2)), imaginary(m+sqrt(1-m^2))],m,-1,1)\n```\n \n\nand get a severe error.\n\nTheses plots are right :\n\n```\nplot([sqrt(m2+1)],m,0,6)\nplot(real (sqrt(m2+1)),m,0,6)\n```\n\n\nBut this one with AND real(...) or imaginary(...) AND list AND sqrt(...)  fails :\n\n\n```\nplot([real (sqrt(m2+1))],m,0,6)\n```\n\n\nOn devel-support kcrisman proposes :\n\n\nAfter looking at the traceback about an extra argument, I have a\nsneaky suspicion this is because sqrt takes an extra keyword prec,\nwhich perhaps is getting caught up in fast_float somehow.  What's\ninteresting is that the problem also only shows up for a list, so\nagain fast_float([]) is what's getting concerned.  Those who know how fast_float and the expression trees work will hopefully check this out as they get an opportunity.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7122\n\n",
     "created_at": "2009-10-05T15:15:11Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_007122.json:
     "user": "fmaltey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I try to plot a half-circle with the 
 
@@ -72,7 +72,7 @@ archive/issue_comments_059034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7122#issuecomment-59034",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -85,16 +85,16 @@ I've attached a patch which fixes the error you get.  However, I don't think tha
 archive/issue_comments_059035.json:
 ```json
 {
-    "body": "Attachment [trac_7122.patch](tarball://root/attachments/some-uuid/ticket7122/trac_7122.patch) by mhansen created at 2009-10-05 17:27:49",
+    "body": "Attachment [trac_7122.patch](tarball://root/attachments/some-uuid/ticket7122/trac_7122.patch) by @mwhansen created at 2009-10-05 17:27:49",
     "created_at": "2009-10-05T17:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7122#issuecomment-59035",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7122.patch](tarball://root/attachments/some-uuid/ticket7122/trac_7122.patch) by mhansen created at 2009-10-05 17:27:49
+Attachment [trac_7122.patch](tarball://root/attachments/some-uuid/ticket7122/trac_7122.patch) by @mwhansen created at 2009-10-05 17:27:49
 
 
 
@@ -108,7 +108,7 @@ archive/issue_comments_059036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7122#issuecomment-59036",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_059037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7122#issuecomment-59037",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_059038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7122",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7122#issuecomment-59038",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

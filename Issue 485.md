@@ -3,7 +3,7 @@
 archive/issues_000485.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was\n\nSAGElite will be a pure-python package that is kept completely and automatically in sync with the main SAGE distribution.  The code will not be separate.  When releasing a new version of SAGE, the script spkg-distlite will be run in the SAGE_ROOT/devel/sage/sage directory, resulting in a pure-python sagelite package, which will also be posted at the sage website.  This will have some\nsort of automated testing, though I'm not sure what at present.\n\nComponents that will initially be in SAGElite:\n1. The SAGE interfaces (to gap, pari, etc).\n2. The SAGE notebook.\n\nComponents that may eventually be added to SAGElite:\n1. DSage\n2. Plotting\n3. Calculus (depend on the user having Maxima installed)\n  \nSpecific tasks that remain:\n1. package data or otherwise for the data/extcode/notebook stuff. \n2. get notebook to actually work (issue with object loading and saving)\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/485\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nSAGElite will be a pure-python package that is kept completely and automatically in sync with the main SAGE distribution.  The code will not be separate.  When releasing a new version of SAGE, the script spkg-distlite will be run in the SAGE_ROOT/devel/sage/sage directory, resulting in a pure-python sagelite package, which will also be posted at the sage website.  This will have some\nsort of automated testing, though I'm not sure what at present.\n\nComponents that will initially be in SAGElite:\n1. The SAGE interfaces (to gap, pari, etc).\n2. The SAGE notebook.\n\nComponents that may eventually be added to SAGElite:\n1. DSage\n2. Plotting\n3. Calculus (depend on the user having Maxima installed)\n  \nSpecific tasks that remain:\n1. package data or otherwise for the data/extcode/notebook stuff. \n2. get notebook to actually work (issue with object loading and saving)\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/485\n\n",
     "created_at": "2007-08-23T18:21:02Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_000485.json:
     "title": "SAGElite -- release a first version of SAGE Lite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/485",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was
+CC:  @williamstein
 
 SAGElite will be a pure-python package that is kept completely and automatically in sync with the main SAGE distribution.  The code will not be separate.  When releasing a new version of SAGE, the script spkg-distlite will be run in the SAGE_ROOT/devel/sage/sage directory, resulting in a pure-python sagelite package, which will also be posted at the sage website.  This will have some
 sort of automated testing, though I'm not sure what at present.
@@ -54,7 +54,7 @@ archive/issue_comments_002420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/485#issuecomment-2420",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_002422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/485#issuecomment-2422",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_002423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/485#issuecomment-2423",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_002424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/485",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/485#issuecomment-2424",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

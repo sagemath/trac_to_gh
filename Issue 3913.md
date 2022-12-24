@@ -3,7 +3,7 @@
 archive/issues_003913.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  alexghitza\n\nIn 3.1 you can't ask for the order of an ideal class.  Example:\n\n```\nsage: K.<w>=QuadraticField(-23)\nsage: OK=K.ring_of_integers()\nsage: C=OK.class_group()\nsage: h=C.order()\nsage: P2a,P2b=[P for P,e in (2*OK).factor()]\nsage: c=C(P2a); c\nFractional ideal class (2, 1/2*w - 1/2)\nsage: c.order()\n#boom\n```\n\n\nThis is easily provided:\n\n```\nsage: sage.groups.generic.order_from_multiple(c,c.parent().order(),operation='*')\n3\n```\n\n\nPatch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3913\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\nIn 3.1 you can't ask for the order of an ideal class.  Example:\n\n```\nsage: K.<w>=QuadraticField(-23)\nsage: OK=K.ring_of_integers()\nsage: C=OK.class_group()\nsage: h=C.order()\nsage: P2a,P2b=[P for P,e in (2*OK).factor()]\nsage: c=C(P2a); c\nFractional ideal class (2, 1/2*w - 1/2)\nsage: c.order()\n#boom\n```\n\n\nThis is easily provided:\n\n```\nsage: sage.groups.generic.order_from_multiple(c,c.parent().order(),operation='*')\n3\n```\n\n\nPatch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3913\n\n",
     "created_at": "2008-08-20T16:36:43Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003913.json:
     "title": "order function not defined for ideal classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3913",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  alexghitza
 
@@ -58,16 +58,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3913
 archive/issue_comments_027988.json:
 ```json
 {
-    "body": "Attachment [sage-trac3913.patch](tarball://root/attachments/some-uuid/ticket3913/sage-trac3913.patch) by cremona created at 2008-08-20 17:02:04\n\nThe patch implements this, and adds doctests to some other functions.  Based on 3.1.1, and all doctests in sage/rings/number_fields pass.",
+    "body": "Attachment [sage-trac3913.patch](tarball://root/attachments/some-uuid/ticket3913/sage-trac3913.patch) by @JohnCremona created at 2008-08-20 17:02:04\n\nThe patch implements this, and adds doctests to some other functions.  Based on 3.1.1, and all doctests in sage/rings/number_fields pass.",
     "created_at": "2008-08-20T17:02:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3913#issuecomment-27988",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-trac3913.patch](tarball://root/attachments/some-uuid/ticket3913/sage-trac3913.patch) by cremona created at 2008-08-20 17:02:04
+Attachment [sage-trac3913.patch](tarball://root/attachments/some-uuid/ticket3913/sage-trac3913.patch) by @JohnCremona created at 2008-08-20 17:02:04
 
 The patch implements this, and adds doctests to some other functions.  Based on 3.1.1, and all doctests in sage/rings/number_fields pass.
 
@@ -83,7 +83,7 @@ archive/issue_comments_027989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3913#issuecomment-27989",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_027992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3913",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3913#issuecomment-27992",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

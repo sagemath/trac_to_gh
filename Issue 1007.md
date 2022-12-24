@@ -3,7 +3,7 @@
 archive/issues_001007.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: QQ['x'].cyclotomic_polynomial(12)\nx^4 - x^2 + 1\nsage: ZZ['x'].cyclotomic_polynomial(12)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/robert/<ipython console> in <module>()\n\n/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py in cyclotomic_polynomial(self, n)\n    559         coeffs = str(f.Vec())\n    560         if C == polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl:\n--> 561             return self(coeffs, construct=True)\n    562 \n    563         coeffs = eval(coeffs)\n\n/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py in __call__(self, x, check, is_gen, construct, absprec)\n    239         C = self.__polynomial_class\n    240         if absprec is None:\n--> 241             return C(self, x, check, is_gen, construct=construct)\n    242         else:\n    243             return C(self, x, check, is_gen, construct=construct, absprec = absprec)\n\n/Users/robert/polynomial_integer_dense_ntl.pyx in sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl.__init__()\n\n/Users/robert/integer.pyx in sage.rings.integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to convert x (=[1, 0, -1, 0, 1]) to an integer\n```\n\n\nI am sure we can do much better than just calling Pari, maybe even using Andrew Arnold's code. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1007\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: QQ['x'].cyclotomic_polynomial(12)\nx^4 - x^2 + 1\nsage: ZZ['x'].cyclotomic_polynomial(12)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/robert/<ipython console> in <module>()\n\n/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py in cyclotomic_polynomial(self, n)\n    559         coeffs = str(f.Vec())\n    560         if C == polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl:\n--> 561             return self(coeffs, construct=True)\n    562 \n    563         coeffs = eval(coeffs)\n\n/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py in __call__(self, x, check, is_gen, construct, absprec)\n    239         C = self.__polynomial_class\n    240         if absprec is None:\n--> 241             return C(self, x, check, is_gen, construct=construct)\n    242         else:\n    243             return C(self, x, check, is_gen, construct=construct, absprec = absprec)\n\n/Users/robert/polynomial_integer_dense_ntl.pyx in sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl.__init__()\n\n/Users/robert/integer.pyx in sage.rings.integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to convert x (=[1, 0, -1, 0, 1]) to an integer\n```\n\n\nI am sure we can do much better than just calling Pari, maybe even using Andrew Arnold's code. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1007\n\n",
     "created_at": "2007-10-27T01:52:01Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001007.json:
     "title": "Cyclotomic polynomial broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1007",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -64,16 +64,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1007
 archive/issue_comments_006157.json:
 ```json
 {
-    "body": "Attachment [cyclo-1007.patch](tarball://root/attachments/some-uuid/ticket1007/cyclo-1007.patch) by robertwb created at 2007-10-27 10:48:20",
+    "body": "Attachment [cyclo-1007.patch](tarball://root/attachments/some-uuid/ticket1007/cyclo-1007.patch) by @robertwb created at 2007-10-27 10:48:20",
     "created_at": "2007-10-27T10:48:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1007#issuecomment-6157",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [cyclo-1007.patch](tarball://root/attachments/some-uuid/ticket1007/cyclo-1007.patch) by robertwb created at 2007-10-27 10:48:20
+Attachment [cyclo-1007.patch](tarball://root/attachments/some-uuid/ticket1007/cyclo-1007.patch) by @robertwb created at 2007-10-27 10:48:20
 
 
 
@@ -82,16 +82,16 @@ Attachment [cyclo-1007.patch](tarball://root/attachments/some-uuid/ticket1007/cy
 archive/issue_comments_006158.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-10-27T10:56:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1007#issuecomment-6158",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -105,7 +105,7 @@ archive/issue_comments_006159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1007#issuecomment-6159",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009862.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  jhpalmieri mderickx\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/9cab8cb98f0d6d51#9cab8cb98f0d6d51):\n\n```\nOn iras (ia64-Linux-suse), after continuing the build, one failure:\n\nsage -t -long \"devel/sage/sage/graphs/genus.pyx\"\n**********************************************************************\nFile \"/home/palmieri/iras/sage-4.5.2.alpha0/devel/sage/sage/graphs/\ngenus.pyx\", line 129:\n    sage: get_memory_usage(t)\nExpected:\n    0.0\nGot:\n    -0.28125\n```\n\n\nRelated: #9584, which once mentioned this problem, but ended up fixing another.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9863\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @koffie\n\nReported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/9cab8cb98f0d6d51#9cab8cb98f0d6d51):\n\n```\nOn iras (ia64-Linux-suse), after continuing the build, one failure:\n\nsage -t -long \"devel/sage/sage/graphs/genus.pyx\"\n**********************************************************************\nFile \"/home/palmieri/iras/sage-4.5.2.alpha0/devel/sage/sage/graphs/\ngenus.pyx\", line 129:\n    sage: get_memory_usage(t)\nExpected:\n    0.0\nGot:\n    -0.28125\n```\n\n\nRelated: #9584, which once mentioned this problem, but ended up fixing another.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9863\n\n",
     "created_at": "2010-09-06T21:48:26Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009862.json:
     "title": "Error in sage/graphs/genus.pyx on ia64-Linux-suse",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9862",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: mvngu
 
-CC:  jhpalmieri mderickx
+CC:  @jhpalmieri @koffie
 
 Reported by John Palmieri on [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/9cab8cb98f0d6d51#9cab8cb98f0d6d51):
 
@@ -56,7 +56,7 @@ archive/issue_comments_097372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97372",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_097373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97373",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_097374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97374",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_097375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97375",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_097376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97376",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_097377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97377",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -236,7 +236,7 @@ archive/issue_comments_097378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97378",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_097379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97379",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_097380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97380",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_097382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97382",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_097383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97383",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_097384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97384",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_097386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97386",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -472,7 +472,7 @@ archive/issue_comments_097387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97387",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_097388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97388",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_097389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97389",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_097390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97390",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_097391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97391",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -577,16 +577,16 @@ Changing status from new to needs_review.
 archive/issue_comments_097392.json:
 ```json
 {
-    "body": "Attachment [trac_9863-genus_memory_leak_test.patch](tarball://root/attachments/some-uuid/ticket9863/trac_9863-genus_memory_leak_test.patch) by mpatel created at 2010-11-24 10:51:34\n\nTweak flaky test with Maarten Derickx's suggestions",
+    "body": "Attachment [trac_9863-genus_memory_leak_test.patch](tarball://root/attachments/some-uuid/ticket9863/trac_9863-genus_memory_leak_test.patch) by @qed777 created at 2010-11-24 10:51:34\n\nTweak flaky test with Maarten Derickx's suggestions",
     "created_at": "2010-11-24T10:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97392",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9863-genus_memory_leak_test.patch](tarball://root/attachments/some-uuid/ticket9863/trac_9863-genus_memory_leak_test.patch) by mpatel created at 2010-11-24 10:51:34
+Attachment [trac_9863-genus_memory_leak_test.patch](tarball://root/attachments/some-uuid/ticket9863/trac_9863-genus_memory_leak_test.patch) by @qed777 created at 2010-11-24 10:51:34
 
 Tweak flaky test with Maarten Derickx's suggestions
 
@@ -602,7 +602,7 @@ archive/issue_comments_097393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97393",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -620,7 +620,7 @@ archive/issue_comments_097394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97394",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -638,7 +638,7 @@ archive/issue_comments_097395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97395",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -656,7 +656,7 @@ archive/issue_comments_097396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97396",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -674,7 +674,7 @@ archive/issue_comments_097397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9862#issuecomment-97397",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

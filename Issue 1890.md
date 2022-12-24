@@ -3,7 +3,7 @@
 archive/issues_001890.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nI get the following doctest failure on sage.math with 2.10.1.alpha1 plus the libecm patch applied:\n\n```\nsage -t  devel/sage-main/sage/interfaces/libecm.pyx\n**********************************************************************\nFile \"libecm.pyx\", line 18:\n    sage: ecmfactor(999, 0.00, verbose=True)\nExpected:\n    Performing one curve with B1=0\n    Found factor in step 1: 999\n    (True, 999)\nGot:\n    Performing one curve with B1=0\n    Found factor in step 1: 27\n    (True, 27)\n**********************************************************************\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1890\n\n",
+    "body": "Assignee: @rlmill\n\nI get the following doctest failure on sage.math with 2.10.1.alpha1 plus the libecm patch applied:\n\n```\nsage -t  devel/sage-main/sage/interfaces/libecm.pyx\n**********************************************************************\nFile \"libecm.pyx\", line 18:\n    sage: ecmfactor(999, 0.00, verbose=True)\nExpected:\n    Performing one curve with B1=0\n    Found factor in step 1: 999\n    (True, 999)\nGot:\n    Performing one curve with B1=0\n    Found factor in step 1: 27\n    (True, 27)\n**********************************************************************\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1890\n\n",
     "created_at": "2008-01-23T10:55:01Z",
     "labels": [
         "doctest coverage",
@@ -17,7 +17,7 @@ archive/issues_001890.json:
     "user": "mabshoff"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 I get the following doctest failure on sage.math with 2.10.1.alpha1 plus the libecm patch applied:
 
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1890
 archive/issue_comments_011971.json:
 ```json
 {
-    "body": "Attachment [1890.patch](tarball://root/attachments/some-uuid/ticket1890/1890.patch) by rlm created at 2008-01-23 23:46:19",
+    "body": "Attachment [1890.patch](tarball://root/attachments/some-uuid/ticket1890/1890.patch) by @rlmill created at 2008-01-23 23:46:19",
     "created_at": "2008-01-23T23:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1890",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1890#issuecomment-11971",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [1890.patch](tarball://root/attachments/some-uuid/ticket1890/1890.patch) by rlm created at 2008-01-23 23:46:19
+Attachment [1890.patch](tarball://root/attachments/some-uuid/ticket1890/1890.patch) by @rlmill created at 2008-01-23 23:46:19
 
 
 

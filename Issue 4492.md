@@ -3,7 +3,7 @@
 archive/issues_004492.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  craigcitro jason davidloeffler\n\nUsing ZZ(0) as an element of the list passed to block_matrix appears to be a special case somehow and throws an exception rather than creating the matrix seems reasonable to me.\n\n\n```\nsage: i=MatrixSpace(ZZ,2,2)(1)\nsage: i\n\n[1 0]\n[0 1]\nsage: block_matrix([1,i,1,1])  # this works as I expect\n\n[1 0|1 0]\n[0 1|0 1]\n[---+---]\n[1 0|1 0]\n[0 1|0 1]\nsage: block_matrix([0,i,1,1])  # this doesn't ... why is 0 special\n...\nValueError: Insufficient information to determine dimensions.\n```\n\nThis feels to me like a hazardous inconsistency.\n\nPerhaps I should also add that I don't really like that it just blithely assumes I want a square matrix (although I did in my actual usage).  Ticket #2429 addresses that issue more wholeheartedly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4492\n\n",
+    "body": "Assignee: tbd\n\nCC:  @craigcitro @jasongrout @loefflerd\n\nUsing ZZ(0) as an element of the list passed to block_matrix appears to be a special case somehow and throws an exception rather than creating the matrix seems reasonable to me.\n\n\n```\nsage: i=MatrixSpace(ZZ,2,2)(1)\nsage: i\n\n[1 0]\n[0 1]\nsage: block_matrix([1,i,1,1])  # this works as I expect\n\n[1 0|1 0]\n[0 1|0 1]\n[---+---]\n[1 0|1 0]\n[0 1|0 1]\nsage: block_matrix([0,i,1,1])  # this doesn't ... why is 0 special\n...\nValueError: Insufficient information to determine dimensions.\n```\n\nThis feels to me like a hazardous inconsistency.\n\nPerhaps I should also add that I don't really like that it just blithely assumes I want a square matrix (although I did in my actual usage).  Ticket #2429 addresses that issue more wholeheartedly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4492\n\n",
     "created_at": "2008-11-11T15:17:25Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_004492.json:
 ```
 Assignee: tbd
 
-CC:  craigcitro jason davidloeffler
+CC:  @craigcitro @jasongrout @loefflerd
 
 Using ZZ(0) as an element of the list passed to block_matrix appears to be a special case somehow and throws an exception rather than creating the matrix seems reasonable to me.
 
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4492
 archive/issue_comments_033179.json:
 ```json
 {
-    "body": "Changing assignee from tbd to was.",
+    "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2008-11-14T06:02:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33179",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from tbd to was.
+Changing assignee from tbd to @williamstein.
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_033180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33180",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_033183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33183",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_033184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33184",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -167,16 +167,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_033185.json:
 ```json
 {
-    "body": "Attachment [4492_doctest_nonsquare0_block.patch](tarball://root/attachments/some-uuid/ticket4492/4492_doctest_nonsquare0_block.patch) by wjp created at 2010-01-19 18:19:40\n\nRobert Bradshaw suggested adding an example that explicitly shows zero blocks may be non-square. I added a patch that adds that to the docstring of `block_matrix`.",
+    "body": "Attachment [4492_doctest_nonsquare0_block.patch](tarball://root/attachments/some-uuid/ticket4492/4492_doctest_nonsquare0_block.patch) by @wjp created at 2010-01-19 18:19:40\n\nRobert Bradshaw suggested adding an example that explicitly shows zero blocks may be non-square. I added a patch that adds that to the docstring of `block_matrix`.",
     "created_at": "2010-01-19T18:19:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33185",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [4492_doctest_nonsquare0_block.patch](tarball://root/attachments/some-uuid/ticket4492/4492_doctest_nonsquare0_block.patch) by wjp created at 2010-01-19 18:19:40
+Attachment [4492_doctest_nonsquare0_block.patch](tarball://root/attachments/some-uuid/ticket4492/4492_doctest_nonsquare0_block.patch) by @wjp created at 2010-01-19 18:19:40
 
 Robert Bradshaw suggested adding an example that explicitly shows zero blocks may be non-square. I added a patch that adds that to the docstring of `block_matrix`.
 
@@ -192,7 +192,7 @@ archive/issue_comments_033186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33186",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -205,16 +205,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_033187.json:
 ```json
 {
-    "body": "Attachment [trac_4492.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492.patch) by was created at 2010-01-26 18:56:59\n\napply *only* this patch (don't apply wjp's)",
+    "body": "Attachment [trac_4492.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492.patch) by @williamstein created at 2010-01-26 18:56:59\n\napply *only* this patch (don't apply wjp's)",
     "created_at": "2010-01-26T18:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33187",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4492.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492.patch) by was created at 2010-01-26 18:56:59
+Attachment [trac_4492.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492.patch) by @williamstein created at 2010-01-26 18:56:59
 
 apply *only* this patch (don't apply wjp's)
 
@@ -230,7 +230,7 @@ archive/issue_comments_033188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33188",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_033189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33189",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -272,7 +272,7 @@ archive/issue_comments_033190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33190",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_033191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33191",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -330,7 +330,7 @@ archive/issue_comments_033192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33192",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -350,7 +350,7 @@ archive/issue_comments_033193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33193",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_033194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33194",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_033195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33195",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_033196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33196",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -434,16 +434,16 @@ The following tests failed:
 archive/issue_comments_033197.json:
 ```json
 {
-    "body": "Attachment [4492_block_matrix.patch](tarball://root/attachments/some-uuid/ticket4492/4492_block_matrix.patch) by wjp created at 2011-01-12 21:55:41\n\nblock_matrix rewrite. Replaces all previous patches.",
+    "body": "Attachment [4492_block_matrix.patch](tarball://root/attachments/some-uuid/ticket4492/4492_block_matrix.patch) by @wjp created at 2011-01-12 21:55:41\n\nblock_matrix rewrite. Replaces all previous patches.",
     "created_at": "2011-01-12T21:55:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33197",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [4492_block_matrix.patch](tarball://root/attachments/some-uuid/ticket4492/4492_block_matrix.patch) by wjp created at 2011-01-12 21:55:41
+Attachment [4492_block_matrix.patch](tarball://root/attachments/some-uuid/ticket4492/4492_block_matrix.patch) by @wjp created at 2011-01-12 21:55:41
 
 block_matrix rewrite. Replaces all previous patches.
 
@@ -459,7 +459,7 @@ archive/issue_comments_033198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33198",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_033199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33199",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -490,16 +490,16 @@ Oops, sorry about that. New patch up that fixes those.
 archive/issue_comments_033200.json:
 ```json
 {
-    "body": "Attachment [trac_4492-block-matrix-reviewer.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492-block-matrix-reviewer.patch) by rbeezer created at 2011-01-13 06:30:46\n\nLooks real nice.  I've added some edits in a reviewer patch.\n\nI'll run full tests overnight (with reviewer patch), and then will be ready to give this a positive review (subject to acceptance of my reviewer edits).",
+    "body": "Attachment [trac_4492-block-matrix-reviewer.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492-block-matrix-reviewer.patch) by @rbeezer created at 2011-01-13 06:30:46\n\nLooks real nice.  I've added some edits in a reviewer patch.\n\nI'll run full tests overnight (with reviewer patch), and then will be ready to give this a positive review (subject to acceptance of my reviewer edits).",
     "created_at": "2011-01-13T06:30:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33200",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_4492-block-matrix-reviewer.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492-block-matrix-reviewer.patch) by rbeezer created at 2011-01-13 06:30:46
+Attachment [trac_4492-block-matrix-reviewer.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492-block-matrix-reviewer.patch) by @rbeezer created at 2011-01-13 06:30:46
 
 Looks real nice.  I've added some edits in a reviewer patch.
 
@@ -517,7 +517,7 @@ archive/issue_comments_033201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33201",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -534,16 +534,16 @@ Rob
 archive/issue_comments_033202.json:
 ```json
 {
-    "body": "Attachment [4492_typo.patch](tarball://root/attachments/some-uuid/ticket4492/4492_typo.patch) by wjp created at 2011-01-13 18:54:31",
+    "body": "Attachment [4492_typo.patch](tarball://root/attachments/some-uuid/ticket4492/4492_typo.patch) by @wjp created at 2011-01-13 18:54:31",
     "created_at": "2011-01-13T18:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33202",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [4492_typo.patch](tarball://root/attachments/some-uuid/ticket4492/4492_typo.patch) by wjp created at 2011-01-13 18:54:31
+Attachment [4492_typo.patch](tarball://root/attachments/some-uuid/ticket4492/4492_typo.patch) by @wjp created at 2011-01-13 18:54:31
 
 
 
@@ -557,7 +557,7 @@ archive/issue_comments_033203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33203",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -575,7 +575,7 @@ archive/issue_comments_033204.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33204",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_033205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33205",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -613,7 +613,7 @@ archive/issue_comments_033206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33206",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -631,7 +631,7 @@ archive/issue_comments_033207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33207",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -649,7 +649,7 @@ archive/issue_comments_033208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33208",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -667,7 +667,7 @@ archive/issue_comments_033209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33209",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -685,7 +685,7 @@ archive/issue_comments_033210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33210",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -698,16 +698,16 @@ rebased to 4.6.2.alpha1
 archive/issue_comments_033211.json:
 ```json
 {
-    "body": "Attachment [4492_block_matrix_rebased.patch](tarball://root/attachments/some-uuid/ticket4492/4492_block_matrix_rebased.patch) by wjp created at 2011-01-25 09:23:47",
+    "body": "Attachment [4492_block_matrix_rebased.patch](tarball://root/attachments/some-uuid/ticket4492/4492_block_matrix_rebased.patch) by @wjp created at 2011-01-25 09:23:47",
     "created_at": "2011-01-25T09:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33211",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [4492_block_matrix_rebased.patch](tarball://root/attachments/some-uuid/ticket4492/4492_block_matrix_rebased.patch) by wjp created at 2011-01-25 09:23:47
+Attachment [4492_block_matrix_rebased.patch](tarball://root/attachments/some-uuid/ticket4492/4492_block_matrix_rebased.patch) by @wjp created at 2011-01-25 09:23:47
 
 
 
@@ -721,7 +721,7 @@ archive/issue_comments_033212.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33212",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -739,7 +739,7 @@ archive/issue_comments_033213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33213",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -752,16 +752,16 @@ Rebased patch attached. (No actual changes, just the context of one of the hunks
 archive/issue_comments_033214.json:
 ```json
 {
-    "body": "Attachment [trac_4492-doctest-number-field.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492-doctest-number-field.patch) by rbeezer created at 2011-01-26 00:38:45\n\nRebased patches apply fine and Sage builds.\n\nHowever 3 doctests fail.  These can be traced to #10433 that snuck into 4.6.2.alpha1 while this was in-progress.  ;-)  Specifically one 2x2 block matrix built at line 2366 of `sage/rings/number_field/number_field_ideal.py`\n\nLatest patch rearranges the block matrix construction to meet new requirements for more explicit lists for the block matrix.  I've cc'ed David Loeffler if he wants to check off on just that one change.  Passes all tests now in sage/rings.  All work here is on 4.6.2.alpha1.\n\nWould somebody like to retest the whole package now?",
+    "body": "Attachment [trac_4492-doctest-number-field.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492-doctest-number-field.patch) by @rbeezer created at 2011-01-26 00:38:45\n\nRebased patches apply fine and Sage builds.\n\nHowever 3 doctests fail.  These can be traced to #10433 that snuck into 4.6.2.alpha1 while this was in-progress.  ;-)  Specifically one 2x2 block matrix built at line 2366 of `sage/rings/number_field/number_field_ideal.py`\n\nLatest patch rearranges the block matrix construction to meet new requirements for more explicit lists for the block matrix.  I've cc'ed David Loeffler if he wants to check off on just that one change.  Passes all tests now in sage/rings.  All work here is on 4.6.2.alpha1.\n\nWould somebody like to retest the whole package now?",
     "created_at": "2011-01-26T00:38:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33214",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_4492-doctest-number-field.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492-doctest-number-field.patch) by rbeezer created at 2011-01-26 00:38:45
+Attachment [trac_4492-doctest-number-field.patch](tarball://root/attachments/some-uuid/ticket4492/trac_4492-doctest-number-field.patch) by @rbeezer created at 2011-01-26 00:38:45
 
 Rebased patches apply fine and Sage builds.
 
@@ -783,7 +783,7 @@ archive/issue_comments_033215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33215",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -801,7 +801,7 @@ archive/issue_comments_033216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33216",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -819,7 +819,7 @@ archive/issue_comments_033217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33217",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -837,7 +837,7 @@ archive/issue_comments_033218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33218",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -855,7 +855,7 @@ archive/issue_comments_033219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33219",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -873,7 +873,7 @@ archive/issue_comments_033220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33220",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -895,7 +895,7 @@ archive/issue_comments_033221.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4492",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4492#issuecomment-33221",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

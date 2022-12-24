@@ -3,7 +3,7 @@
 archive/issues_001183.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe current implementation of residue fields for number fields is broken.  It just takes the defining polynomial for the number field, factors it over Z/pZ, picks one factor and creates an extension using that factor.  This breaks because elements of the ring of integers, when expressed in terms of the power basis of the number field can have denominators divisible by p.\n\nThe solution is to create a p-maximal order and do some linear algebra to come up with a map that doesn't break on denominators divisible by p.  Pari's nfinit has a way to give it a partial factorization of the discriminant that will produce a p-maximal order.\n\nIf you want to implement this, talk to William Stein or David Roe for more details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1183\n\n",
+    "body": "Assignee: @williamstein\n\nThe current implementation of residue fields for number fields is broken.  It just takes the defining polynomial for the number field, factors it over Z/pZ, picks one factor and creates an extension using that factor.  This breaks because elements of the ring of integers, when expressed in terms of the power basis of the number field can have denominators divisible by p.\n\nThe solution is to create a p-maximal order and do some linear algebra to come up with a map that doesn't break on denominators divisible by p.  Pari's nfinit has a way to give it a partial factorization of the discriminant that will produce a p-maximal order.\n\nIf you want to implement this, talk to William Stein or David Roe for more details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1183\n\n",
     "created_at": "2007-11-16T02:35:39Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001183.json:
     "title": "Residue fields are broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1183",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The current implementation of residue fields for number fields is broken.  It just takes the defining polynomial for the number field, factors it over Z/pZ, picks one factor and creates an extension using that factor.  This breaks because elements of the ring of integers, when expressed in terms of the power basis of the number field can have denominators divisible by p.
 
@@ -58,16 +58,16 @@ Michael
 archive/issue_comments_007301.json:
 ```json
 {
-    "body": "Attachment [trac-1183-supportforquo-step1and2.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-supportforquo-step1and2.patch) by was created at 2007-12-02 09:48:36",
+    "body": "Attachment [trac-1183-supportforquo-step1and2.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-supportforquo-step1and2.patch) by @williamstein created at 2007-12-02 09:48:36",
     "created_at": "2007-12-02T09:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1183#issuecomment-7301",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1183-supportforquo-step1and2.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-supportforquo-step1and2.patch) by was created at 2007-12-02 09:48:36
+Attachment [trac-1183-supportforquo-step1and2.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-supportforquo-step1and2.patch) by @williamstein created at 2007-12-02 09:48:36
 
 
 
@@ -76,16 +76,16 @@ Attachment [trac-1183-supportforquo-step1and2.patch](tarball://root/attachments/
 archive/issue_comments_007302.json:
 ```json
 {
-    "body": "Attachment [trac-1183-through_step_3.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-through_step_3.patch) by was created at 2007-12-02 10:40:03",
+    "body": "Attachment [trac-1183-through_step_3.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-through_step_3.patch) by @williamstein created at 2007-12-02 10:40:03",
     "created_at": "2007-12-02T10:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1183#issuecomment-7302",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1183-through_step_3.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-through_step_3.patch) by was created at 2007-12-02 10:40:03
+Attachment [trac-1183-through_step_3.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-through_step_3.patch) by @williamstein created at 2007-12-02 10:40:03
 
 
 
@@ -99,7 +99,7 @@ archive/issue_comments_007303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1183#issuecomment-7303",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -112,16 +112,16 @@ further work, but still some issues....
 archive/issue_comments_007304.json:
 ```json
 {
-    "body": "Attachment [trac-1138-throughstep4.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1138-throughstep4.patch) by was created at 2007-12-02 13:15:59\n\nNOT ready to be released yet.",
+    "body": "Attachment [trac-1138-throughstep4.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1138-throughstep4.patch) by @williamstein created at 2007-12-02 13:15:59\n\nNOT ready to be released yet.",
     "created_at": "2007-12-02T13:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1183#issuecomment-7304",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1138-throughstep4.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1138-throughstep4.patch) by was created at 2007-12-02 13:15:59
+Attachment [trac-1138-throughstep4.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1138-throughstep4.patch) by @williamstein created at 2007-12-02 13:15:59
 
 NOT ready to be released yet.
 
@@ -137,7 +137,7 @@ archive/issue_comments_007305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1183#issuecomment-7305",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -152,16 +152,16 @@ http://trac.sagemath.org/sage_trac/ticket/1494
 archive/issue_comments_007306.json:
 ```json
 {
-    "body": "Attachment [trac-1183-step5.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-step5.patch) by was created at 2007-12-14 11:43:14",
+    "body": "Attachment [trac-1183-step5.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-step5.patch) by @williamstein created at 2007-12-14 11:43:14",
     "created_at": "2007-12-14T11:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1183#issuecomment-7306",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-1183-step5.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-step5.patch) by was created at 2007-12-14 11:43:14
+Attachment [trac-1183-step5.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-step5.patch) by @williamstein created at 2007-12-14 11:43:14
 
 
 
@@ -170,16 +170,16 @@ Attachment [trac-1183-step5.patch](tarball://root/attachments/some-uuid/ticket11
 archive/issue_comments_007307.json:
 ```json
 {
-    "body": "Attachment [trac-1183-step6.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-step6.patch) by craigcitro created at 2007-12-15 13:01:48",
+    "body": "Attachment [trac-1183-step6.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-step6.patch) by @craigcitro created at 2007-12-15 13:01:48",
     "created_at": "2007-12-15T13:01:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1183#issuecomment-7307",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-1183-step6.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-step6.patch) by craigcitro created at 2007-12-15 13:01:48
+Attachment [trac-1183-step6.patch](tarball://root/attachments/some-uuid/ticket1183/trac-1183-step6.patch) by @craigcitro created at 2007-12-15 13:01:48
 
 
 

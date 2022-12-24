@@ -3,7 +3,7 @@
 archive/issues_007886.json:
 ```json
 {
-    "body": "Assignee: joyner\n\nCC:  wdj jdemeyer jlopez\n\nGAP has several functions concerning conjugacy classes of groups. It would be nice to have a way to access such functions from Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7886\n\n",
+    "body": "Assignee: joyner\n\nCC:  @wdjoyner @jdemeyer jlopez\n\nGAP has several functions concerning conjugacy classes of groups. It would be nice to have a way to access such functions from Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7886\n\n",
     "created_at": "2010-01-09T21:49:27Z",
     "labels": [
         "group theory",
@@ -19,7 +19,7 @@ archive/issues_007886.json:
 ```
 Assignee: joyner
 
-CC:  wdj jdemeyer jlopez
+CC:  @wdjoyner @jdemeyer jlopez
 
 GAP has several functions concerning conjugacy classes of groups. It would be nice to have a way to access such functions from Sage.
 
@@ -207,7 +207,7 @@ archive/issue_comments_068544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68544",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_068545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68545",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_068546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68546",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_068547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68547",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_068553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68553",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_068554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68554",
-    "user": "tkluck"
+    "user": "@tkluck"
 }
 ```
 
@@ -500,7 +500,7 @@ archive/issue_comments_068559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68559",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -581,7 +581,7 @@ archive/issue_comments_068560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68560",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -599,7 +599,7 @@ archive/issue_comments_068561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68561",
-    "user": "knsam"
+    "user": "@KPanComputes"
 }
 ```
 
@@ -640,7 +640,7 @@ archive/issue_comments_068563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68563",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -726,7 +726,7 @@ archive/issue_comments_068566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68566",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -798,16 +798,16 @@ Docstring and whitespaces fixes, rebased for sage 5.7. Apply this patch only.
 archive/issue_comments_068569.json:
 ```json
 {
-    "body": "Attachment [trac_7886_conjugacy_classes_combined.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886_conjugacy_classes_combined.patch) by tscrim created at 2013-02-22 17:19:01",
+    "body": "Attachment [trac_7886_conjugacy_classes_combined.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886_conjugacy_classes_combined.patch) by @tscrim created at 2013-02-22 17:19:01",
     "created_at": "2013-02-22T17:19:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68569",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_7886_conjugacy_classes_combined.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886_conjugacy_classes_combined.patch) by tscrim created at 2013-02-22 17:19:01
+Attachment [trac_7886_conjugacy_classes_combined.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886_conjugacy_classes_combined.patch) by @tscrim created at 2013-02-22 17:19:01
 
 
 
@@ -816,16 +816,16 @@ Attachment [trac_7886_conjugacy_classes_combined.patch](tarball://root/attachmen
 archive/issue_comments_068570.json:
 ```json
 {
-    "body": "Attachment [trac_7886-conjugacy_classes-review-ts.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886-conjugacy_classes-review-ts.patch) by tscrim created at 2013-02-22 17:24:46\n\nHey Javier,\n\nI've attaching a review patch which fixes up the remaining documentation and adds the files to the docbuild (I had to do some extra tweaks in the `categories/finite_groups.py` since it wasn't in the docbuild prior to this patch). If everything works and looks good to you, you go ahead and set this to positive review.\n\nThanks,\n\nTravis\n\nFor patchbot:\n\nApply: trac_7886_conjugacy_classes_combined.patch, trac_7886-conjugacy_classes-review-ts.patch",
+    "body": "Attachment [trac_7886-conjugacy_classes-review-ts.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886-conjugacy_classes-review-ts.patch) by @tscrim created at 2013-02-22 17:24:46\n\nHey Javier,\n\nI've attaching a review patch which fixes up the remaining documentation and adds the files to the docbuild (I had to do some extra tweaks in the `categories/finite_groups.py` since it wasn't in the docbuild prior to this patch). If everything works and looks good to you, you go ahead and set this to positive review.\n\nThanks,\n\nTravis\n\nFor patchbot:\n\nApply: trac_7886_conjugacy_classes_combined.patch, trac_7886-conjugacy_classes-review-ts.patch",
     "created_at": "2013-02-22T17:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68570",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_7886-conjugacy_classes-review-ts.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886-conjugacy_classes-review-ts.patch) by tscrim created at 2013-02-22 17:24:46
+Attachment [trac_7886-conjugacy_classes-review-ts.patch](tarball://root/attachments/some-uuid/ticket7886/trac_7886-conjugacy_classes-review-ts.patch) by @tscrim created at 2013-02-22 17:24:46
 
 Hey Javier,
 
@@ -886,7 +886,7 @@ archive/issue_comments_068572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68572",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -967,7 +967,7 @@ archive/issue_comments_068576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68576",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -985,7 +985,7 @@ archive/issue_comments_068577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7886",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7886#issuecomment-68577",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

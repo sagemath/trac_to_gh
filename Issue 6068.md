@@ -3,7 +3,7 @@
 archive/issues_006068.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  jason kini was chapoton\n\nCurrently all worksheets have URLs that end in a number (e.g. https://99.240.209.8:8000/home/pub/12)\n.  It would be nice to have the option to specify a piece of text to\nend the URL (e.g. https://99.240.209.8:8000/home/pub/Cruise_Perf).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6068\n\n",
+    "body": "Assignee: somebody\n\nCC:  @jasongrout @kini @williamstein @fchapoton\n\nCurrently all worksheets have URLs that end in a number (e.g. https://99.240.209.8:8000/home/pub/12)\n.  It would be nice to have the option to specify a piece of text to\nend the URL (e.g. https://99.240.209.8:8000/home/pub/Cruise_Perf).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6068\n\n",
     "created_at": "2009-05-18T13:09:50Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_006068.json:
 ```
 Assignee: somebody
 
-CC:  jason kini was chapoton
+CC:  @jasongrout @kini @williamstein @fchapoton
 
 Currently all worksheets have URLs that end in a number (e.g. https://99.240.209.8:8000/home/pub/12)
 .  It would be nice to have the option to specify a piece of text to
@@ -41,7 +41,7 @@ archive/issue_comments_048288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6068#issuecomment-48288",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_048289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6068#issuecomment-48289",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_048290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6068#issuecomment-48290",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_048291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6068#issuecomment-48291",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_048292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6068#issuecomment-48292",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_048293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6068#issuecomment-48293",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

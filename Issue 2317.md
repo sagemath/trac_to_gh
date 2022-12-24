@@ -3,7 +3,7 @@
 archive/issues_002317.json:
 ```json
 {
-    "body": "Assignee: yi\n\nCurrently if a worker gets a job and never submits it back (either maliciously or because of a bug), the server will never know the difference. Hence someone could just ask for a bunch of jobs and never do them, which starves the server of jobs.\n\nProposed fixes:\n1) Server pings the worker which has the job and asks for its status periodically, if the worker does not reply for some number of attempts, reinject the job into the queue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2317\n\n",
+    "body": "Assignee: @yqiang\n\nCurrently if a worker gets a job and never submits it back (either maliciously or because of a bug), the server will never know the difference. Hence someone could just ask for a bunch of jobs and never do them, which starves the server of jobs.\n\nProposed fixes:\n1) Server pings the worker which has the job and asks for its status periodically, if the worker does not reply for some number of attempts, reinject the job into the queue.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2317\n\n",
     "created_at": "2008-02-26T17:42:21Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002317.json:
     "title": "possible job starvation of dsage server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2317",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 Currently if a worker gets a job and never submits it back (either maliciously or because of a bug), the server will never know the difference. Hence someone could just ask for a bunch of jobs and never do them, which starves the server of jobs.
 
@@ -40,7 +40,7 @@ archive/issue_comments_015419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2317#issuecomment-15419",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_015420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2317",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2317#issuecomment-15420",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

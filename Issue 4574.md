@@ -14,7 +14,7 @@ archive/issues_004574.json:
     "title": "add notebook_object.py docs to the reference manual, and possibly a short survey about that to notebook help (top letter)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4574",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -61,7 +61,7 @@ archive/issue_comments_034271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4574#issuecomment-34271",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_034272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4574#issuecomment-34272",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_034273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4574",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4574#issuecomment-34273",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

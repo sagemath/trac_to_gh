@@ -3,7 +3,7 @@
 archive/issues_006242.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nwstein@bsd:~/build/sage-4.0.1$ ./sage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nsage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [44.5 s]\nexit code: 768\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\n\nwstein@bsd:~/build/sage-4.0.1$ ./sage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nsage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"  \n         [39.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 39.5 seconds\nwstein@bsd:~/build/sage-4.0.1$ \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6242\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nwstein@bsd:~/build/sage-4.0.1$ ./sage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nsage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [44.5 s]\nexit code: 768\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\n\nwstein@bsd:~/build/sage-4.0.1$ ./sage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nsage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"  \n         [39.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 39.5 seconds\nwstein@bsd:~/build/sage-4.0.1$ \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6242\n\n",
     "created_at": "2009-06-07T13:36:47Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_006242.json:
     "title": "*long* birds_other.rst doctest fails with mysterious error repeatedly on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6242",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -61,7 +61,7 @@ archive/issue_comments_049850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49850",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_049851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49851",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_049852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49852",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_049853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49853",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_049854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6242",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49854",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

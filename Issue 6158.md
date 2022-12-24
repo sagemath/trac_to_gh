@@ -14,7 +14,7 @@ archive/issues_006158.json:
     "title": "upgrading sphix problem: any upgrade to sage-4.0 ends this way",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6158",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -62,7 +62,7 @@ archive/issue_comments_049124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49124",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_049125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49125",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_049126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49126",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -117,16 +117,16 @@ Changing status from new to assigned.
 archive/issue_comments_049127.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-05-31T19:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49127",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -140,7 +140,7 @@ archive/issue_comments_049128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49128",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_049129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49129",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_049130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49130",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -213,7 +213,7 @@ archive/issue_comments_049131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49131",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

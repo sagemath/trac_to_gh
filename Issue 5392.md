@@ -3,7 +3,7 @@
 archive/issues_005392.json:
 ```json
 {
-    "body": "Assignee: was\n\nConsider\n\n\n```\nsage: R.<a> = NumberField(x^4 - 2*x^2 - 1)\nsage: S.<i> = R.extension(x^2 + 1)\nsage: S.subfield(a + i/a)\n```\n\n\nThe S.subfield method documentation says that it constructs QQ(alpha), but this is false, I think it constructs R(alpha). In the above example, S.subfield(a + i/a) returns a number field of degree 8 over Q, whereas a + i/a has degree 4 over QQ (the minimal polynomial is `x^4 - 4x^2 + 8`).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5392\n\n",
+    "body": "Assignee: @williamstein\n\nConsider\n\n\n```\nsage: R.<a> = NumberField(x^4 - 2*x^2 - 1)\nsage: S.<i> = R.extension(x^2 + 1)\nsage: S.subfield(a + i/a)\n```\n\n\nThe S.subfield method documentation says that it constructs QQ(alpha), but this is false, I think it constructs R(alpha). In the above example, S.subfield(a + i/a) returns a number field of degree 8 over Q, whereas a + i/a has degree 4 over QQ (the minimal polynomial is `x^4 - 4x^2 + 8`).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5392\n\n",
     "created_at": "2009-02-27T16:03:04Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_005392.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Consider
 
@@ -48,7 +48,7 @@ archive/issue_comments_041521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5392#issuecomment-41521",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -61,16 +61,16 @@ Changing component from number theory to number fields.
 archive/issue_comments_041522.json:
 ```json
 {
-    "body": "Changing assignee from was to davidloeffler.",
+    "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T20:32:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5392#issuecomment-41522",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Changing assignee from was to davidloeffler.
+Changing assignee from @williamstein to @loefflerd.
 
 
 
@@ -210,7 +210,7 @@ archive/issue_comments_041530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5392#issuecomment-41530",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_041531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5392#issuecomment-41531",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_041533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5392#issuecomment-41533",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_041534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5392#issuecomment-41534",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_041535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5392#issuecomment-41535",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008598.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: plotting, cayley table\n\nOperation tables can be output as grids with color or grayscale squares representing the different elements of the algebraic structure.  Adding these into `sage.matrix.operation_table.OperationTable` would be a nice self-contained project for someone looking for a project involving plotting and graphics.  Despite the localized nature of the project, it would see wide applicability throughout Sage.  Look for stubs in the source code, \n\nI'm pretty sure Mathematica does this for groups (Cayley table), but I can't get Wolfram Alpha or MathWorld to cough it up again for me now that I want it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8598\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: plotting, cayley table\n\nOperation tables can be output as grids with color or grayscale squares representing the different elements of the algebraic structure.  Adding these into `sage.matrix.operation_table.OperationTable` would be a nice self-contained project for someone looking for a project involving plotting and graphics.  Despite the localized nature of the project, it would see wide applicability throughout Sage.  Look for stubs in the source code, \n\nI'm pretty sure Mathematica does this for groups (Cayley table), but I can't get Wolfram Alpha or MathWorld to cough it up again for me now that I want it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8598\n\n",
     "created_at": "2010-03-24T15:15:14Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_008598.json:
     "title": "Add graphical output to operation tables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8598",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: plotting, cayley table
 
@@ -94,7 +94,7 @@ archive/issue_comments_077846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8598#issuecomment-77846",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_077850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8598#issuecomment-77850",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_077852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8598#issuecomment-77852",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_077857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8598#issuecomment-77857",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_077858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8598#issuecomment-77858",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -524,7 +524,7 @@ archive/issue_comments_077862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8598#issuecomment-77862",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -551,7 +551,7 @@ archive/issue_comments_077863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8598#issuecomment-77863",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -629,7 +629,7 @@ archive/issue_comments_077867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8598#issuecomment-77867",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -647,7 +647,7 @@ archive/issue_comments_077868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8598#issuecomment-77868",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -683,7 +683,7 @@ archive/issue_comments_077870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8598",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8598#issuecomment-77870",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 

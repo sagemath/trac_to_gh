@@ -14,7 +14,7 @@ archive/issues_001064.json:
     "title": "applying permutation is coded in a way that behaves badly when input isn't an \"expected type\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1064",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -71,7 +71,7 @@ archive/issue_comments_006459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1064#issuecomment-6459",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -91,16 +91,16 @@ Now we're starting to make some sense!?
 archive/issue_comments_006460.json:
 ```json
 {
-    "body": "Attachment [trac-1064.patch](tarball://root/attachments/some-uuid/ticket1064/trac-1064.patch) by rlm created at 2007-12-19 06:39:33",
+    "body": "Attachment [trac-1064.patch](tarball://root/attachments/some-uuid/ticket1064/trac-1064.patch) by @rlmill created at 2007-12-19 06:39:33",
     "created_at": "2007-12-19T06:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1064#issuecomment-6460",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-1064.patch](tarball://root/attachments/some-uuid/ticket1064/trac-1064.patch) by rlm created at 2007-12-19 06:39:33
+Attachment [trac-1064.patch](tarball://root/attachments/some-uuid/ticket1064/trac-1064.patch) by @rlmill created at 2007-12-19 06:39:33
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_006461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1064#issuecomment-6461",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_006462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1064",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1064#issuecomment-6462",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

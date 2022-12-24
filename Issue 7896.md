@@ -3,7 +3,7 @@
 archive/issues_007896.json:
 ```json
 {
-    "body": "Assignee: was\n\nI upgraded sagenb.org to  sagenb-0.5 and am having the above problem.  ARgh.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7896\n\n",
+    "body": "Assignee: @williamstein\n\nI upgraded sagenb.org to  sagenb-0.5 and am having the above problem.  ARgh.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7896\n\n",
     "created_at": "2010-01-11T18:14:58Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007896.json:
     "title": "make a worksheet and save it on sagenb.org: it doesn't have a .sws extension anymore!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7896",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I upgraded sagenb.org to  sagenb-0.5 and am having the above problem.  ARgh.
 
@@ -37,7 +37,7 @@ archive/issue_comments_068681.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7896#issuecomment-68681",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_068682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7896",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7896#issuecomment-68682",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

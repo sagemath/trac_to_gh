@@ -3,7 +3,7 @@
 archive/issues_002849.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nDustin Moody reported\n\n```\n    While working on some things, I found a bug in SAGE:\n\n sage:k.<a>=GF(3^5)\n\n sage:E=EllipticCurve(k,[-1,-1])\n\n sage:E.trace_of_frobenius()\n 0\n\n This isn't correct.  It should be -27.  I also discovered you can get\naround it.\n\n sage:E.cardinality_exhaustive()\n 271\n\n sage:E.trace_of_frobenius()\n -27\n\n Somehow, doing .cardinality_exhaustive() fixes the bug.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2849\n\n",
+    "body": "Assignee: @JohnCremona\n\nDustin Moody reported\n\n```\n    While working on some things, I found a bug in SAGE:\n\n sage:k.<a>=GF(3^5)\n\n sage:E=EllipticCurve(k,[-1,-1])\n\n sage:E.trace_of_frobenius()\n 0\n\n This isn't correct.  It should be -27.  I also discovered you can get\naround it.\n\n sage:E.cardinality_exhaustive()\n 271\n\n sage:E.trace_of_frobenius()\n -27\n\n Somehow, doing .cardinality_exhaustive() fixes the bug.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2849\n\n",
     "created_at": "2008-04-07T20:35:32Z",
     "labels": [
         "number theory",
@@ -13,10 +13,10 @@ archive/issues_002849.json:
     "title": "Bug in elliptic curve cardinality for j=0 in char. 3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2849",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Dustin Moody reported
 
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2849
 archive/issue_comments_019550.json:
 ```json
 {
-    "body": "Attachment [trac2849.patch](tarball://root/attachments/some-uuid/ticket2849/trac2849.patch) by cremona created at 2008-04-07 20:49:46",
+    "body": "Attachment [trac2849.patch](tarball://root/attachments/some-uuid/ticket2849/trac2849.patch) by @JohnCremona created at 2008-04-07 20:49:46",
     "created_at": "2008-04-07T20:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2849#issuecomment-19550",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac2849.patch](tarball://root/attachments/some-uuid/ticket2849/trac2849.patch) by cremona created at 2008-04-07 20:49:46
+Attachment [trac2849.patch](tarball://root/attachments/some-uuid/ticket2849/trac2849.patch) by @JohnCremona created at 2008-04-07 20:49:46
 
 
 
@@ -78,7 +78,7 @@ archive/issue_comments_019551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2849#issuecomment-19551",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_019552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2849#issuecomment-19552",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -111,16 +111,16 @@ apply after trac2849.patch
 archive/issue_comments_019553.json:
 ```json
 {
-    "body": "Attachment [trac2849_doctest.patch](tarball://root/attachments/some-uuid/ticket2849/trac2849_doctest.patch) by AlexGhitza created at 2008-04-07 22:00:56\n\nLooks fine and it fixes the issue.  I've added a mini-patch that puts in a doctest demonstrating the fixed status.\n\nApply both patches.",
+    "body": "Attachment [trac2849_doctest.patch](tarball://root/attachments/some-uuid/ticket2849/trac2849_doctest.patch) by @aghitza created at 2008-04-07 22:00:56\n\nLooks fine and it fixes the issue.  I've added a mini-patch that puts in a doctest demonstrating the fixed status.\n\nApply both patches.",
     "created_at": "2008-04-07T22:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2849#issuecomment-19553",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac2849_doctest.patch](tarball://root/attachments/some-uuid/ticket2849/trac2849_doctest.patch) by AlexGhitza created at 2008-04-07 22:00:56
+Attachment [trac2849_doctest.patch](tarball://root/attachments/some-uuid/ticket2849/trac2849_doctest.patch) by @aghitza created at 2008-04-07 22:00:56
 
 Looks fine and it fixes the issue.  I've added a mini-patch that puts in a doctest demonstrating the fixed status.
 
@@ -174,7 +174,7 @@ archive/issue_comments_019556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2849#issuecomment-19556",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

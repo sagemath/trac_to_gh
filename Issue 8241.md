@@ -3,7 +3,7 @@
 archive/issues_008241.json:
 ```json
 {
-    "body": "Assignee: roed\n\nIf K is an unramified extension of Qp, there should be a function that computes the canonical Witt p-Frobenius:\n\n\n```\nsage: K.<a> = Qp(25)\nsage: a.witt_frobenius()\n???\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8241\n\n",
+    "body": "Assignee: @roed314\n\nIf K is an unramified extension of Qp, there should be a function that computes the canonical Witt p-Frobenius:\n\n\n```\nsage: K.<a> = Qp(25)\nsage: a.witt_frobenius()\n???\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8241\n\n",
     "created_at": "2010-02-11T19:54:03Z",
     "labels": [
         "padics",
@@ -17,7 +17,7 @@ archive/issues_008241.json:
     "user": "dmharvey"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 If K is an unramified extension of Qp, there should be a function that computes the canonical Witt p-Frobenius:
 
@@ -63,7 +63,7 @@ archive/issue_comments_072853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72853",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_072854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72854",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_072855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72855",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_072856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72856",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_072857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72857",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_072858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72858",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_072859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72859",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_072860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72860",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_072861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72861",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_072862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72862",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -246,16 +246,16 @@ Ping. (#11586, which has positive review, depends on this one.)
 archive/issue_comments_072863.json:
 ```json
 {
-    "body": "Attachment [8241.patch](tarball://root/attachments/some-uuid/ticket8241/8241.patch) by roed created at 2012-02-21 12:33:12\n\nAs Sebastian Pancratz noted in his talk, it would be great if someone wrote a better implementation of this.",
+    "body": "Attachment [8241.patch](tarball://root/attachments/some-uuid/ticket8241/8241.patch) by @roed314 created at 2012-02-21 12:33:12\n\nAs Sebastian Pancratz noted in his talk, it would be great if someone wrote a better implementation of this.",
     "created_at": "2012-02-21T12:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72863",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [8241.patch](tarball://root/attachments/some-uuid/ticket8241/8241.patch) by roed created at 2012-02-21 12:33:12
+Attachment [8241.patch](tarball://root/attachments/some-uuid/ticket8241/8241.patch) by @roed314 created at 2012-02-21 12:33:12
 
 As Sebastian Pancratz noted in his talk, it would be great if someone wrote a better implementation of this.
 
@@ -271,7 +271,7 @@ archive/issue_comments_072864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72864",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_072865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72865",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_072866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72866",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_072867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72867",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -350,16 +350,16 @@ Looks good to me.  I've created #12657: write a more efficient implementation of
 archive/issue_comments_072868.json:
 ```json
 {
-    "body": "Attachment [trac_8241-frobenius.patch](tarball://root/attachments/some-uuid/ticket8241/trac_8241-frobenius.patch) by davidloeffler created at 2012-03-12 19:47:42\n\nApply only this patch. Patch against 5.0.beta7",
+    "body": "Attachment [trac_8241-frobenius.patch](tarball://root/attachments/some-uuid/ticket8241/trac_8241-frobenius.patch) by @loefflerd created at 2012-03-12 19:47:42\n\nApply only this patch. Patch against 5.0.beta7",
     "created_at": "2012-03-12T19:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72868",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8241-frobenius.patch](tarball://root/attachments/some-uuid/ticket8241/trac_8241-frobenius.patch) by davidloeffler created at 2012-03-12 19:47:42
+Attachment [trac_8241-frobenius.patch](tarball://root/attachments/some-uuid/ticket8241/trac_8241-frobenius.patch) by @loefflerd created at 2012-03-12 19:47:42
 
 Apply only this patch. Patch against 5.0.beta7
 
@@ -375,7 +375,7 @@ archive/issue_comments_072869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72869",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_072870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8241",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8241#issuecomment-72870",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

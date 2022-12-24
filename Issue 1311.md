@@ -3,7 +3,7 @@
 archive/issues_001311.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1311\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1311\n\n",
     "created_at": "2007-11-28T20:01:15Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001311.json:
     "title": "[graphs] calculate chromatic number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1311",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: graphs
 
@@ -39,7 +39,7 @@ archive/issue_comments_008248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1311#issuecomment-8248",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing keywords from "graphs" to "".
 archive/issue_comments_008249.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-17T15:14:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1311#issuecomment-8249",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_008250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1311#issuecomment-8250",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -106,16 +106,16 @@ Patch resolves this and #1313, depends on patch to #2271.
 archive/issue_comments_008252.json:
 ```json
 {
-    "body": "Attachment [1311-ref.patch](tarball://root/attachments/some-uuid/ticket1311/1311-ref.patch) by rlm created at 2008-02-24 19:47:13",
+    "body": "Attachment [1311-ref.patch](tarball://root/attachments/some-uuid/ticket1311/1311-ref.patch) by @rlmill created at 2008-02-24 19:47:13",
     "created_at": "2008-02-24T19:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1311",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1311#issuecomment-8252",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [1311-ref.patch](tarball://root/attachments/some-uuid/ticket1311/1311-ref.patch) by rlm created at 2008-02-24 19:47:13
+Attachment [1311-ref.patch](tarball://root/attachments/some-uuid/ticket1311/1311-ref.patch) by @rlmill created at 2008-02-24 19:47:13
 
 
 

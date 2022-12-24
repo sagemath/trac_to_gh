@@ -14,7 +14,7 @@ archive/issues_001613.json:
     "title": "interactive manipulation of variables using AJAX in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1613",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: boothby
@@ -60,7 +60,7 @@ archive/issue_comments_010261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1613#issuecomment-10261",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_010262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1613#issuecomment-10262",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_010263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1613#issuecomment-10263",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_010264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1613#issuecomment-10264",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

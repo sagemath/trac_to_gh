@@ -3,7 +3,7 @@
 archive/issues_009762.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kini\n\nKeywords: units, SI, metrology\n\nThis is a module that implements physical units in a more convenient way than the already existing units module: instead of creating separate variables for each unit, it creates an object containing the value, the dimension (mass, length, time...) as a list, and the units as an expression, plus the conversion factor. \n\nIt includes an easy-to-use function to create units from a string, implements `SI` prefixes and has a nice `LaTeX` output.\n\nTO DO: Add more units (there are currently only 74, plus 13 constants), review the documentation and code in case it doesn't follow the Sage style, modify sage/symbolic/all.py to include this module (adding \"import metrology\" causes Sage to throw exceptions when starting).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9763\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kini\n\nKeywords: units, SI, metrology\n\nThis is a module that implements physical units in a more convenient way than the already existing units module: instead of creating separate variables for each unit, it creates an object containing the value, the dimension (mass, length, time...) as a list, and the units as an expression, plus the conversion factor. \n\nIt includes an easy-to-use function to create units from a string, implements `SI` prefixes and has a nice `LaTeX` output.\n\nTO DO: Add more units (there are currently only 74, plus 13 constants), review the documentation and code in case it doesn't follow the Sage style, modify sage/symbolic/all.py to include this module (adding \"import metrology\" causes Sage to throw exceptions when starting).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9763\n\n",
     "created_at": "2010-08-18T18:49:10Z",
     "labels": [
         "symbolics",
@@ -14,12 +14,12 @@ archive/issues_009762.json:
     "title": "Metrology module (a different implementation of the units module)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9762",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kini
+CC:  @kini
 
 Keywords: units, SI, metrology
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9763
 archive/issue_comments_095643.json:
 ```json
 {
-    "body": "Attachment [trac_9763_add_metrology.patch](tarball://root/attachments/some-uuid/ticket9763/trac_9763_add_metrology.patch) by cousteau created at 2010-08-18 18:58:49\n\nCreates the metrology.py file, but doesn't edit the corresponding all.py",
+    "body": "Attachment [trac_9763_add_metrology.patch](tarball://root/attachments/some-uuid/ticket9763/trac_9763_add_metrology.patch) by @cousteaulecommandant created at 2010-08-18 18:58:49\n\nCreates the metrology.py file, but doesn't edit the corresponding all.py",
     "created_at": "2010-08-18T18:58:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95643",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 
-Attachment [trac_9763_add_metrology.patch](tarball://root/attachments/some-uuid/ticket9763/trac_9763_add_metrology.patch) by cousteau created at 2010-08-18 18:58:49
+Attachment [trac_9763_add_metrology.patch](tarball://root/attachments/some-uuid/ticket9763/trac_9763_add_metrology.patch) by @cousteaulecommandant created at 2010-08-18 18:58:49
 
 Creates the metrology.py file, but doesn't edit the corresponding all.py
 
@@ -65,7 +65,7 @@ archive/issue_comments_095644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95644",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 
@@ -78,16 +78,16 @@ The metrology.py file itself, in case it's preferred
 archive/issue_comments_095645.json:
 ```json
 {
-    "body": "Attachment [metrology.py](tarball://root/attachments/some-uuid/ticket9763/metrology.py) by cousteau created at 2010-08-18 19:00:41\n\nExample of usage, Pi theorem",
+    "body": "Attachment [metrology.py](tarball://root/attachments/some-uuid/ticket9763/metrology.py) by @cousteaulecommandant created at 2010-08-18 19:00:41\n\nExample of usage, Pi theorem",
     "created_at": "2010-08-18T19:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95645",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 
-Attachment [metrology.py](tarball://root/attachments/some-uuid/ticket9763/metrology.py) by cousteau created at 2010-08-18 19:00:41
+Attachment [metrology.py](tarball://root/attachments/some-uuid/ticket9763/metrology.py) by @cousteaulecommandant created at 2010-08-18 19:00:41
 
 Example of usage, Pi theorem
 
@@ -103,7 +103,7 @@ archive/issue_comments_095646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95646",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 
@@ -116,16 +116,16 @@ Changing status from new to needs_review.
 archive/issue_comments_095647.json:
 ```json
 {
-    "body": "Attachment [example_metrology.sage](tarball://root/attachments/some-uuid/ticket9763/example_metrology.sage) by cousteau created at 2010-08-18 19:02:29",
+    "body": "Attachment [example_metrology.sage](tarball://root/attachments/some-uuid/ticket9763/example_metrology.sage) by @cousteaulecommandant created at 2010-08-18 19:02:29",
     "created_at": "2010-08-18T19:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95647",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 
-Attachment [example_metrology.sage](tarball://root/attachments/some-uuid/ticket9763/example_metrology.sage) by cousteau created at 2010-08-18 19:02:29
+Attachment [example_metrology.sage](tarball://root/attachments/some-uuid/ticket9763/example_metrology.sage) by @cousteaulecommandant created at 2010-08-18 19:02:29
 
 
 
@@ -139,7 +139,7 @@ archive/issue_comments_095648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95648",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_095649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95649",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_095650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95650",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_095651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95651",
-    "user": "cousteau"
+    "user": "@cousteaulecommandant"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004548.json:
     "title": "bug in latexing a certain symbolic expression",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4548",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -55,7 +55,7 @@ archive/issue_comments_034075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4548#issuecomment-34075",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_034076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4548#issuecomment-34076",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

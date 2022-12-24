@@ -14,7 +14,7 @@ archive/issues_009435.json:
     "title": "sage-4.5.alpha3 fails on bsd.math",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9435",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tbd
@@ -56,7 +56,7 @@ archive/issue_comments_090317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9435#issuecomment-90317",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_090318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9435#issuecomment-90318",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_090322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9435#issuecomment-90322",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_090323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9435#issuecomment-90323",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_090324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9435",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9435#issuecomment-90324",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

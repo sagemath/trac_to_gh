@@ -3,7 +3,7 @@
 archive/issues_006980.json:
 ```json
 {
-    "body": "Assignee: was\n\nwe still use the dense version:\n\n```\nsage: time matrix(ZZ,5000,sparse=True)._nonzero_positions_by_column()\nCPU times: user 5.12 s, sys: 0.01 s, total: 5.14 s\nWall time: 5.19 s\n[]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6980\n\n",
+    "body": "Assignee: @williamstein\n\nwe still use the dense version:\n\n```\nsage: time matrix(ZZ,5000,sparse=True)._nonzero_positions_by_column()\nCPU times: user 5.12 s, sys: 0.01 s, total: 5.14 s\nWall time: 5.19 s\n[]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6980\n\n",
     "created_at": "2009-09-21T22:20:34Z",
     "labels": [
         "linear algebra",
@@ -17,7 +17,7 @@ archive/issues_006980.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 we still use the dense version:
 

@@ -3,7 +3,7 @@
 archive/issues_005059.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nAt a workshop in Seattle last June, a **massive** number of spaces of modular symbols were computed. However, the pickles were broken in shortly thereafter by a refactoring of some code in Sage. \n\nThe attached patch fixes this -- now the old pickles can be loaded, and new pickles still work fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5059\n\n",
+    "body": "Assignee: @craigcitro\n\nAt a workshop in Seattle last June, a **massive** number of spaces of modular symbols were computed. However, the pickles were broken in shortly thereafter by a refactoring of some code in Sage. \n\nThe attached patch fixes this -- now the old pickles can be loaded, and new pickles still work fine.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5059\n\n",
     "created_at": "2009-01-22T23:57:16Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_005059.json:
     "title": "[with patch, needs review] Fix a bunch of broken pickles",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5059",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 At a workshop in Seattle last June, a **massive** number of spaces of modular symbols were computed. However, the pickles were broken in shortly thereafter by a refactoring of some code in Sage. 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5059
 archive/issue_comments_038533.json:
 ```json
 {
-    "body": "Attachment [trac-5059.patch](tarball://root/attachments/some-uuid/ticket5059/trac-5059.patch) by craigcitro created at 2009-01-22 23:58:41",
+    "body": "Attachment [trac-5059.patch](tarball://root/attachments/some-uuid/ticket5059/trac-5059.patch) by @craigcitro created at 2009-01-22 23:58:41",
     "created_at": "2009-01-22T23:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5059#issuecomment-38533",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-5059.patch](tarball://root/attachments/some-uuid/ticket5059/trac-5059.patch) by craigcitro created at 2009-01-22 23:58:41
+Attachment [trac-5059.patch](tarball://root/attachments/some-uuid/ticket5059/trac-5059.patch) by @craigcitro created at 2009-01-22 23:58:41
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_038534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5059#issuecomment-38534",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_038535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5059#issuecomment-38535",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -118,16 +118,16 @@ Michael
 archive/issue_comments_038537.json:
 ```json
 {
-    "body": "Attachment [trac-5059-2.patch](tarball://root/attachments/some-uuid/ticket5059/trac-5059-2.patch) by robertwb created at 2009-01-23 09:22:55\n\nThat seems to have addressed those doctest failures.",
+    "body": "Attachment [trac-5059-2.patch](tarball://root/attachments/some-uuid/ticket5059/trac-5059-2.patch) by @robertwb created at 2009-01-23 09:22:55\n\nThat seems to have addressed those doctest failures.",
     "created_at": "2009-01-23T09:22:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5059",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5059#issuecomment-38537",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac-5059-2.patch](tarball://root/attachments/some-uuid/ticket5059/trac-5059-2.patch) by robertwb created at 2009-01-23 09:22:55
+Attachment [trac-5059-2.patch](tarball://root/attachments/some-uuid/ticket5059/trac-5059-2.patch) by @robertwb created at 2009-01-23 09:22:55
 
 That seems to have addressed those doctest failures.
 

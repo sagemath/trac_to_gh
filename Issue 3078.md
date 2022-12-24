@@ -14,7 +14,7 @@ archive/issues_003078.json:
     "title": "[with patch; needs review] sage's spkg-install doesn't return failure if build failed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3078",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3078
 archive/issue_comments_021234.json:
 ```json
 {
-    "body": "Attachment [3078_sage_spkg-install.patch](tarball://root/attachments/some-uuid/ticket3078/3078_sage_spkg-install.patch) by gfurnish created at 2008-05-02 11:49:15",
+    "body": "Attachment [3078_sage_spkg-install.patch](tarball://root/attachments/some-uuid/ticket3078/3078_sage_spkg-install.patch) by @garyfurnish created at 2008-05-02 11:49:15",
     "created_at": "2008-05-02T11:49:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3078",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3078#issuecomment-21234",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [3078_sage_spkg-install.patch](tarball://root/attachments/some-uuid/ticket3078/3078_sage_spkg-install.patch) by gfurnish created at 2008-05-02 11:49:15
+Attachment [3078_sage_spkg-install.patch](tarball://root/attachments/some-uuid/ticket3078/3078_sage_spkg-install.patch) by @garyfurnish created at 2008-05-02 11:49:15
 
 
 

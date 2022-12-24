@@ -3,7 +3,7 @@
 archive/issues_005387.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nAt least one thing in the installation guide (a table) disappeared in the ReST conversion, and I've changed a few other things: how to build the documentation, a broken link, etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5387\n\n",
+    "body": "Assignee: @jhpalmieri\n\nAt least one thing in the installation guide (a table) disappeared in the ReST conversion, and I've changed a few other things: how to build the documentation, a broken link, etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5387\n\n",
     "created_at": "2009-02-26T18:29:41Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_005387.json:
     "title": "[with patch, needs review] a few changes to the installation guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5387",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 At least one thing in the installation guide (a table) disappeared in the ReST conversion, and I've changed a few other things: how to build the documentation, a broken link, etc.
 
@@ -33,16 +33,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5387
 archive/issue_comments_041488.json:
 ```json
 {
-    "body": "Attachment [installation.patch](tarball://root/attachments/some-uuid/ticket5387/installation.patch) by jhpalmieri created at 2009-02-26 18:29:49",
+    "body": "Attachment [installation.patch](tarball://root/attachments/some-uuid/ticket5387/installation.patch) by @jhpalmieri created at 2009-02-26 18:29:49",
     "created_at": "2009-02-26T18:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5387#issuecomment-41488",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [installation.patch](tarball://root/attachments/some-uuid/ticket5387/installation.patch) by jhpalmieri created at 2009-02-26 18:29:49
+Attachment [installation.patch](tarball://root/attachments/some-uuid/ticket5387/installation.patch) by @jhpalmieri created at 2009-02-26 18:29:49
 
 
 
@@ -56,7 +56,7 @@ archive/issue_comments_041489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5387#issuecomment-41489",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_041490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5387#issuecomment-41490",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_041491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5387#issuecomment-41491",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_041492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5387#issuecomment-41492",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -128,16 +128,16 @@ apply on top of other patch
 archive/issue_comments_041493.json:
 ```json
 {
-    "body": "Attachment [installation-part2.patch](tarball://root/attachments/some-uuid/ticket5387/installation-part2.patch) by wdj created at 2009-02-26 22:40:07\n\nApplies cleanly to sage-3.4.alpha0 using hg_sage.apply (*not* hg_doc). Compiles cleanly and without error.\n\nExcellent job - thanks for making this patch!",
+    "body": "Attachment [installation-part2.patch](tarball://root/attachments/some-uuid/ticket5387/installation-part2.patch) by @wdjoyner created at 2009-02-26 22:40:07\n\nApplies cleanly to sage-3.4.alpha0 using hg_sage.apply (*not* hg_doc). Compiles cleanly and without error.\n\nExcellent job - thanks for making this patch!",
     "created_at": "2009-02-26T22:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5387",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5387#issuecomment-41493",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [installation-part2.patch](tarball://root/attachments/some-uuid/ticket5387/installation-part2.patch) by wdj created at 2009-02-26 22:40:07
+Attachment [installation-part2.patch](tarball://root/attachments/some-uuid/ticket5387/installation-part2.patch) by @wdjoyner created at 2009-02-26 22:40:07
 
 Applies cleanly to sage-3.4.alpha0 using hg_sage.apply (*not* hg_doc). Compiles cleanly and without error.
 

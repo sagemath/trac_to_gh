@@ -3,7 +3,7 @@
 archive/issues_006264.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nThe patch I proposed to solve #5452 (merged in 3.4.1) introduced a tiny ReST bug in sage/graphs/graph.py. A single '::' is missing before a sage block. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6264\n\n",
+    "body": "Assignee: @seblabbe\n\nThe patch I proposed to solve #5452 (merged in 3.4.1) introduced a tiny ReST bug in sage/graphs/graph.py. A single '::' is missing before a sage block. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6264\n\n",
     "created_at": "2009-06-12T03:39:58Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_006264.json:
     "title": "ReST bug introduced by #5452 (missing '::' before a sage block)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6264",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 The patch I proposed to solve #5452 (merged in 3.4.1) introduced a tiny ReST bug in sage/graphs/graph.py. A single '::' is missing before a sage block. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_050014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6264#issuecomment-50014",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_050015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6264#issuecomment-50015",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -68,16 +68,16 @@ This patch applies cleanly on sage-4.0 and is part of the sage-combinat tree.
 archive/issue_comments_050016.json:
 ```json
 {
-    "body": "Attachment [graphs_doc_fix_6264-sl.patch](tarball://root/attachments/some-uuid/ticket6264/graphs_doc_fix_6264-sl.patch) by slabbe created at 2009-06-12 04:06:08\n\nI just reloaded the patch. There was a similar ReST problem a few lines above in the same file.",
+    "body": "Attachment [graphs_doc_fix_6264-sl.patch](tarball://root/attachments/some-uuid/ticket6264/graphs_doc_fix_6264-sl.patch) by @seblabbe created at 2009-06-12 04:06:08\n\nI just reloaded the patch. There was a similar ReST problem a few lines above in the same file.",
     "created_at": "2009-06-12T04:06:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6264#issuecomment-50016",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [graphs_doc_fix_6264-sl.patch](tarball://root/attachments/some-uuid/ticket6264/graphs_doc_fix_6264-sl.patch) by slabbe created at 2009-06-12 04:06:08
+Attachment [graphs_doc_fix_6264-sl.patch](tarball://root/attachments/some-uuid/ticket6264/graphs_doc_fix_6264-sl.patch) by @seblabbe created at 2009-06-12 04:06:08
 
 I just reloaded the patch. There was a similar ReST problem a few lines above in the same file.
 
@@ -93,7 +93,7 @@ archive/issue_comments_050017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6264#issuecomment-50017",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_050018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6264",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6264#issuecomment-50018",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

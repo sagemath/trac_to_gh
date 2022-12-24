@@ -3,7 +3,7 @@
 archive/issues_002326.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  jason\n\nImplement compiled base classes for graphs, which will be faster than Python based NetworkX classes (especially when accessed from Cython).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2326\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nImplement compiled base classes for graphs, which will be faster than Python based NetworkX classes (especially when accessed from Cython).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2326\n\n",
     "created_at": "2008-02-27T00:00:40Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_002326.json:
     "title": "compiled sparse and dense graph datastructures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2326",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  jason
+CC:  @jasongrout
 
 Implement compiled base classes for graphs, which will be faster than Python based NetworkX classes (especially when accessed from Cython).
 
@@ -39,7 +39,7 @@ archive/issue_comments_015481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2326#issuecomment-15481",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_015482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2326#issuecomment-15482",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_015483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2326#issuecomment-15483",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_015484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2326#issuecomment-15484",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -124,16 +124,16 @@ http://sage.math.washington.edu/home/rlmill/sage-memcheck.18970
 archive/issue_comments_015485.json:
 ```json
 {
-    "body": "Attachment [2326-final.patch](tarball://root/attachments/some-uuid/ticket2326/2326-final.patch) by jason created at 2008-03-01 10:24:41\n\nSorry for the caps, but I just wanted to make sure mabshoff saw it :)  It looks good to me.",
+    "body": "Attachment [2326-final.patch](tarball://root/attachments/some-uuid/ticket2326/2326-final.patch) by @jasongrout created at 2008-03-01 10:24:41\n\nSorry for the caps, but I just wanted to make sure mabshoff saw it :)  It looks good to me.",
     "created_at": "2008-03-01T10:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2326#issuecomment-15485",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [2326-final.patch](tarball://root/attachments/some-uuid/ticket2326/2326-final.patch) by jason created at 2008-03-01 10:24:41
+Attachment [2326-final.patch](tarball://root/attachments/some-uuid/ticket2326/2326-final.patch) by @jasongrout created at 2008-03-01 10:24:41
 
 Sorry for the caps, but I just wanted to make sure mabshoff saw it :)  It looks good to me.
 

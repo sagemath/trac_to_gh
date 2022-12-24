@@ -3,7 +3,7 @@
 archive/issues_001550.json:
 ```json
 {
-    "body": "Assignee: was\n\nI noticed the GMP-ECM interface currently calls the ecm binary through a text interface, with command line \nparameters, and gets results by parsing the output of ecm.\n\nIt would be much better and more efficient to use the C interface libecm (see the ecm.h header file, and the\necmfactor.c file distributed without GMP-ECM). Note that the C interface already returns information about the\nfound factor and the cofactor (prime, composite). Also, the libecm.a file is already compiled by SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1550\n\n",
+    "body": "Assignee: @williamstein\n\nI noticed the GMP-ECM interface currently calls the ecm binary through a text interface, with command line \nparameters, and gets results by parsing the output of ecm.\n\nIt would be much better and more efficient to use the C interface libecm (see the ecm.h header file, and the\necmfactor.c file distributed without GMP-ECM). Note that the C interface already returns information about the\nfound factor and the cofactor (prime, composite). Also, the libecm.a file is already compiled by SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1550\n\n",
     "created_at": "2007-12-17T13:46:48Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001550.json:
     "title": "use libecm instead of pexpect+ecm binary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1550",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I noticed the GMP-ECM interface currently calls the ecm binary through a text interface, with command line 
 parameters, and gets results by parsing the output of ecm.
@@ -42,7 +42,7 @@ archive/issue_comments_009883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9883",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_009884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9884",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -73,16 +73,16 @@ Needs serious improvement- just a minimal implementation, probably in the wrong 
 archive/issue_comments_009885.json:
 ```json
 {
-    "body": "Attachment [libecm.patch](tarball://root/attachments/some-uuid/ticket1550/libecm.patch) by rlm created at 2008-01-21 20:56:18",
+    "body": "Attachment [libecm.patch](tarball://root/attachments/some-uuid/ticket1550/libecm.patch) by @rlmill created at 2008-01-21 20:56:18",
     "created_at": "2008-01-21T20:56:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9885",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [libecm.patch](tarball://root/attachments/some-uuid/ticket1550/libecm.patch) by rlm created at 2008-01-21 20:56:18
+Attachment [libecm.patch](tarball://root/attachments/some-uuid/ticket1550/libecm.patch) by @rlmill created at 2008-01-21 20:56:18
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_009886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9886",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -109,16 +109,16 @@ Patch on top of libecm.patch
 archive/issue_comments_009887.json:
 ```json
 {
-    "body": "Attachment [libecm-2.patch](tarball://root/attachments/some-uuid/ticket1550/libecm-2.patch) by zimmerma created at 2008-01-22 08:58:37\n\nReview: This is a great patch, which could in addition serve as example of how to interface a C\nlibrary with SAGE. Just a minor comment: the example ecmfactor(999, 0.0) always outputs (True, 27):\nfactors 2 and 3 are special within ECM. I would suggest a more difficult example, for instance\necmfactor(1022117, 10.0) which sometimes outputs (True, 1013), sometimes (True, 1009),\nsometimes (True, 1022117), or (False, None). However this might cause problems with the doctests:\nhow to check functions with non-deterministic output?",
+    "body": "Attachment [libecm-2.patch](tarball://root/attachments/some-uuid/ticket1550/libecm-2.patch) by @zimmermann6 created at 2008-01-22 08:58:37\n\nReview: This is a great patch, which could in addition serve as example of how to interface a C\nlibrary with SAGE. Just a minor comment: the example ecmfactor(999, 0.0) always outputs (True, 27):\nfactors 2 and 3 are special within ECM. I would suggest a more difficult example, for instance\necmfactor(1022117, 10.0) which sometimes outputs (True, 1013), sometimes (True, 1009),\nsometimes (True, 1022117), or (False, None). However this might cause problems with the doctests:\nhow to check functions with non-deterministic output?",
     "created_at": "2008-01-22T08:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9887",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [libecm-2.patch](tarball://root/attachments/some-uuid/ticket1550/libecm-2.patch) by zimmerma created at 2008-01-22 08:58:37
+Attachment [libecm-2.patch](tarball://root/attachments/some-uuid/ticket1550/libecm-2.patch) by @zimmermann6 created at 2008-01-22 08:58:37
 
 Review: This is a great patch, which could in addition serve as example of how to interface a C
 library with SAGE. Just a minor comment: the example ecmfactor(999, 0.0) always outputs (True, 27):
@@ -139,7 +139,7 @@ archive/issue_comments_009888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1550",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1550#issuecomment-9888",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

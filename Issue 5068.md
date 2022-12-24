@@ -3,7 +3,7 @@
 archive/issues_005068.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\n\n```\nsage: R.<x> = GF(9,'a')[]\nsage: x.change_ring(GF(3))\nBOOM!\n\nsage: R.<x,y> = GF(9,'a')[]\nsage: x.change_ring(GF(3))\nBOOM!\nTypeError: unable to coerce <type 'sage.rings.finite_field_givaro.FiniteField_givaroElement'> to an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5068\n\n",
+    "body": "Assignee: @robertwb\n\n\n```\nsage: R.<x> = GF(9,'a')[]\nsage: x.change_ring(GF(3))\nBOOM!\n\nsage: R.<x,y> = GF(9,'a')[]\nsage: x.change_ring(GF(3))\nBOOM!\nTypeError: unable to coerce <type 'sage.rings.finite_field_givaro.FiniteField_givaroElement'> to an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5068\n\n",
     "created_at": "2009-01-23T10:38:14Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_005068.json:
     "title": "change_ring fails for polynomials over finite fields in many cases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5068",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 
 ```
@@ -48,7 +48,7 @@ archive/issue_comments_038604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5068#issuecomment-38604",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,16 +113,16 @@ sage: GF(next_prime(10^20))(GF(next_prime(10^20)^2,'a')(1))
 archive/issue_comments_038605.json:
 ```json
 {
-    "body": "Attachment [trac_5068.patch](tarball://root/attachments/some-uuid/ticket5068/trac_5068.patch) by was created at 2009-01-23 12:12:25",
+    "body": "Attachment [trac_5068.patch](tarball://root/attachments/some-uuid/ticket5068/trac_5068.patch) by @williamstein created at 2009-01-23 12:12:25",
     "created_at": "2009-01-23T12:12:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5068#issuecomment-38605",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5068.patch](tarball://root/attachments/some-uuid/ticket5068/trac_5068.patch) by was created at 2009-01-23 12:12:25
+Attachment [trac_5068.patch](tarball://root/attachments/some-uuid/ticket5068/trac_5068.patch) by @williamstein created at 2009-01-23 12:12:25
 
 
 
@@ -136,7 +136,7 @@ archive/issue_comments_038606.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5068#issuecomment-38606",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

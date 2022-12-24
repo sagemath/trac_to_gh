@@ -3,7 +3,7 @@
 archive/issues_009237.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  kcrisman\n\nCreating this test will justify not doctesting the rest of this directory, and ensure that if somehow the stuff in this directory gets totally broken, then we'll know. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9237\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @kcrisman\n\nCreating this test will justify not doctesting the rest of this directory, and ensure that if somehow the stuff in this directory gets totally broken, then we'll know. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9237\n\n",
     "created_at": "2010-06-14T15:21:30Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_009237.json:
     "title": "create a test in the old sage/server directory that shows that one can unpickle an old Sage notebook server directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9237",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mvngu
 
-CC:  kcrisman
+CC:  @kcrisman
 
 Creating this test will justify not doctesting the rest of this directory, and ensure that if somehow the stuff in this directory gets totally broken, then we'll know. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_086713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9237#issuecomment-86713",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_086714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9237#issuecomment-86714",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 

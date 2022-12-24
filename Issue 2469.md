@@ -3,7 +3,7 @@
 archive/issues_002469.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n>  > On Mon, Mar 10, 2008 at 1:27 PM, Nikos Apostolakis <nikos.ap@gmail.com> wrote:\n>  >  >\n>  >  >  Hello group,\n>  >  >\n>  >  >  the following is not terribly important but it bothers me.  When\n>  >  >  using the cli to SAGE the completion adds extra space after the\n>  >  >  name of functions or methods. For example if I hit den[tab] in the\n>  >  >  sage prompt I get denominator *, where the star stands for the\n>  >  >  cursor, that is there is an extra space after \"denominator\".   I am\n>  >  >  then forced to either have a space between a function and the\n>  >  >  parenthesis enclosing its arguments or to move the cursor back one\n>  >  >  space.  The former annoys me aesthetically and the latter wastes my\n>  >  >  time (albeit a small fraction of it).\n>  >  >\n>  >  >  Is there a way to turn this off? some configuration option perhaps?\n>  >  >\n>  >\n>  >  (1) This is an Ipython problem.  Probably Sage itself has little to do\n>  >  with it.  Hence I've cc'd this message to Fernando Perez (author\n>  >  of IPython).\n>  >\n>  >  (2) I just checked on a bunch of machines.  The behavior you mention\n>  >  above does *not* occur on any of my OS X machines.  It also does\n>  >  not occur for me on sage.math (a Debian 64-bit machine).  It does\n>  >  occur on several 32-bit and 64-bit Linux installs that I have handy.\n>  >  Sage builds its own readline and uses exact the same config files\n>  >  on all machines, so I'm fairly puzzled by all this.\n>\n>  I'm afraid it's not really an ipython problem, but how readline ends\n>  up built on any given box.  I've fought this particular one before:\n>\n>  http://projects.scipy.org/pipermail/ipython-user/2005-April/002617.html\n>\n>  As you can see, the python readline doesn't expose the necessary\n>  functionality at all:\n>\n>  http://mail.python.org/pipermail/python-list/2002-December/176942.html\n>\n>  So the actual behavior will be hardcoded by however readline ends up\n>  built.  You may be able to tweak *your* readline build so that\n>  HAVE_RL_COMPLETION_APPEND_CHARACTER is defined at build time and hence\n>  you get the null completion character.\n\nExcellent.  Since Sage builds its own readline, we can do what it takes\nto make sure this works.\n\nThanks!\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2469\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n>  > On Mon, Mar 10, 2008 at 1:27 PM, Nikos Apostolakis <nikos.ap@gmail.com> wrote:\n>  >  >\n>  >  >  Hello group,\n>  >  >\n>  >  >  the following is not terribly important but it bothers me.  When\n>  >  >  using the cli to SAGE the completion adds extra space after the\n>  >  >  name of functions or methods. For example if I hit den[tab] in the\n>  >  >  sage prompt I get denominator *, where the star stands for the\n>  >  >  cursor, that is there is an extra space after \"denominator\".   I am\n>  >  >  then forced to either have a space between a function and the\n>  >  >  parenthesis enclosing its arguments or to move the cursor back one\n>  >  >  space.  The former annoys me aesthetically and the latter wastes my\n>  >  >  time (albeit a small fraction of it).\n>  >  >\n>  >  >  Is there a way to turn this off? some configuration option perhaps?\n>  >  >\n>  >\n>  >  (1) This is an Ipython problem.  Probably Sage itself has little to do\n>  >  with it.  Hence I've cc'd this message to Fernando Perez (author\n>  >  of IPython).\n>  >\n>  >  (2) I just checked on a bunch of machines.  The behavior you mention\n>  >  above does *not* occur on any of my OS X machines.  It also does\n>  >  not occur for me on sage.math (a Debian 64-bit machine).  It does\n>  >  occur on several 32-bit and 64-bit Linux installs that I have handy.\n>  >  Sage builds its own readline and uses exact the same config files\n>  >  on all machines, so I'm fairly puzzled by all this.\n>\n>  I'm afraid it's not really an ipython problem, but how readline ends\n>  up built on any given box.  I've fought this particular one before:\n>\n>  http://projects.scipy.org/pipermail/ipython-user/2005-April/002617.html\n>\n>  As you can see, the python readline doesn't expose the necessary\n>  functionality at all:\n>\n>  http://mail.python.org/pipermail/python-list/2002-December/176942.html\n>\n>  So the actual behavior will be hardcoded by however readline ends up\n>  built.  You may be able to tweak *your* readline build so that\n>  HAVE_RL_COMPLETION_APPEND_CHARACTER is defined at build time and hence\n>  you get the null completion character.\n\nExcellent.  Since Sage builds its own readline, we can do what it takes\nto make sure this works.\n\nThanks!\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2469\n\n",
     "created_at": "2008-03-11T06:30:40Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_002469.json:
     "title": "fix readline extra space issue in sage (ipython)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2469",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -88,7 +88,7 @@ archive/issue_comments_016725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2469#issuecomment-16725",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

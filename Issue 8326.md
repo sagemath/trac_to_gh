@@ -14,7 +14,7 @@ archive/issues_008326.json:
     "title": "Sphinx warnings about posets and poset_example",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8326",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: sage-combinat
@@ -43,7 +43,7 @@ archive/issue_comments_073920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73920",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_073921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73921",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_073922.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73922",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -92,16 +92,16 @@ Changing priority from minor to trivial.
 archive/issue_comments_073923.json:
 ```json
 {
-    "body": "Attachment [trac_8326-sphinx_posets.patch](tarball://root/attachments/some-uuid/ticket8326/trac_8326-sphinx_posets.patch) by mpatel created at 2010-02-22 06:12:19\n\nThe patch appears to work, but feel free to reject it.",
+    "body": "Attachment [trac_8326-sphinx_posets.patch](tarball://root/attachments/some-uuid/ticket8326/trac_8326-sphinx_posets.patch) by @qed777 created at 2010-02-22 06:12:19\n\nThe patch appears to work, but feel free to reject it.",
     "created_at": "2010-02-22T06:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73923",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8326-sphinx_posets.patch](tarball://root/attachments/some-uuid/ticket8326/trac_8326-sphinx_posets.patch) by mpatel created at 2010-02-22 06:12:19
+Attachment [trac_8326-sphinx_posets.patch](tarball://root/attachments/some-uuid/ticket8326/trac_8326-sphinx_posets.patch) by @qed777 created at 2010-02-22 06:12:19
 
 The patch appears to work, but feel free to reject it.
 
@@ -117,7 +117,7 @@ archive/issue_comments_073924.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73924",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_073925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73925",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

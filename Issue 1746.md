@@ -3,7 +3,7 @@
 archive/issues_001746.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\n\nOn Jan 10, 2008 12:17 AM, vgermrk <vgermrk@googlemail.com> wrote:\n> \n> [Sorry for asking so much \"Is there a ... function in Sage?\" -\n> Questions.]\n> \n> But: Is there a native way to compute the p-Norm (e.g. euclidean oder\n> maximum norm) of a vector?\n> \n\nThere is no built in function, but we can write one easily:\n\ndef pnorm(v, p):\n      return sum([a^p for a in v])^(1/p)\n\n\nThen:\n\nsage: pnorm(vector([1,2,3]), 5)\n276^(1/5)\nsage: pnorm(vector(RDF, [1,2,3]), 5)\n3.07738488539\nsage: var('a b c d p')\nsage: pnorm(vector([a, b, c, d]), p)\n(d^p + c^p + b^p + a^p)^(1/p)\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1746\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Jan 10, 2008 12:17 AM, vgermrk <vgermrk@googlemail.com> wrote:\n> \n> [Sorry for asking so much \"Is there a ... function in Sage?\" -\n> Questions.]\n> \n> But: Is there a native way to compute the p-Norm (e.g. euclidean oder\n> maximum norm) of a vector?\n> \n\nThere is no built in function, but we can write one easily:\n\ndef pnorm(v, p):\n      return sum([a^p for a in v])^(1/p)\n\n\nThen:\n\nsage: pnorm(vector([1,2,3]), 5)\n276^(1/5)\nsage: pnorm(vector(RDF, [1,2,3]), 5)\n3.07738488539\nsage: var('a b c d p')\nsage: pnorm(vector([a, b, c, d]), p)\n(d^p + c^p + b^p + a^p)^(1/p)\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1746\n\n",
     "created_at": "2008-01-10T10:44:22Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001746.json:
     "title": "add p-norm as a method to vectors (probably very easy)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1746",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -68,7 +68,7 @@ archive/issue_comments_011024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11024",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,16 +127,16 @@ In the above example it should be
 archive/issue_comments_011027.json:
 ```json
 {
-    "body": "Attachment [1746.patch](tarball://root/attachments/some-uuid/ticket1746/1746.patch) by AlexGhitza created at 2008-01-10 15:05:33",
+    "body": "Attachment [1746.patch](tarball://root/attachments/some-uuid/ticket1746/1746.patch) by @aghitza created at 2008-01-10 15:05:33",
     "created_at": "2008-01-10T15:05:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11027",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [1746.patch](tarball://root/attachments/some-uuid/ticket1746/1746.patch) by AlexGhitza created at 2008-01-10 15:05:33
+Attachment [1746.patch](tarball://root/attachments/some-uuid/ticket1746/1746.patch) by @aghitza created at 2008-01-10 15:05:33
 
 
 
@@ -150,7 +150,7 @@ archive/issue_comments_011028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11028",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_011029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11029",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_011030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1746#issuecomment-11030",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

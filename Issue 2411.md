@@ -14,7 +14,7 @@ archive/issues_002411.json:
     "title": "Missing references in Sage tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2411",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 Assignee: tba
@@ -74,7 +74,7 @@ archive/issue_comments_016276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2411#issuecomment-16276",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

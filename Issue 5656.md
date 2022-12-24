@@ -3,7 +3,7 @@
 archive/issues_005656.json:
 ```json
 {
-    "body": "Assignee: malb\n\nKeywords: docstring, doc, Groebner basis\n\nOn [sage-support]:\n> > On Tuesday 31 March 2009, Florian wrote:\n> > Hello everyone,\n> > \n> > I've been trying to figure out whether the following \n> > functionality is implemented, but so far I could not. I was \n> > hoping that anyone would know if it existed and in that case \n> > what the syntax is.\n> > \n> > Suppose you computed the reduced Groebner Basis G of an ideal \n> > I= (f1,...,fn) in some polynomial ring R, and suppose that \n> > that Groebner Basis turned out to be G=(1). Is there a \n> > function that finds some, maybe even all, combinations of \n> > coefficients h1,...,hn such that h1*f1+...+hn*fn=1?\n> > \n> > This is basically a byproduct of e.g. the Buchberger \n> > Algorithm. The question is whether this information can be \n> > accessed.\n\nMartin answers ... and William Stein replies:\n> Martin, since this is a frequently asked question, do you think\n> something about this should be added to the groebner_basis \n> docstring?  The groebner_basis docstring is 3 pages right now, so \n> this shouldn't be too far down there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5656\n\n",
+    "body": "Assignee: @malb\n\nKeywords: docstring, doc, Groebner basis\n\nOn [sage-support]:\n> > On Tuesday 31 March 2009, Florian wrote:\n> > Hello everyone,\n> > \n> > I've been trying to figure out whether the following \n> > functionality is implemented, but so far I could not. I was \n> > hoping that anyone would know if it existed and in that case \n> > what the syntax is.\n> > \n> > Suppose you computed the reduced Groebner Basis G of an ideal \n> > I= (f1,...,fn) in some polynomial ring R, and suppose that \n> > that Groebner Basis turned out to be G=(1). Is there a \n> > function that finds some, maybe even all, combinations of \n> > coefficients h1,...,hn such that h1*f1+...+hn*fn=1?\n> > \n> > This is basically a byproduct of e.g. the Buchberger \n> > Algorithm. The question is whether this information can be \n> > accessed.\n\nMartin answers ... and William Stein replies:\n> Martin, since this is a frequently asked question, do you think\n> something about this should be added to the groebner_basis \n> docstring?  The groebner_basis docstring is 3 pages right now, so \n> this shouldn't be too far down there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5656\n\n",
     "created_at": "2009-04-01T11:25:00Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_005656.json:
     "title": "add hint to lift() function to docstring of groebner_basis()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5656",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Keywords: docstring, doc, Groebner basis
 
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5656
 archive/issue_comments_044229.json:
 ```json
 {
-    "body": "Attachment [gb_lift.patch](tarball://root/attachments/some-uuid/ticket5656/gb_lift.patch) by malb created at 2009-05-12 01:55:46",
+    "body": "Attachment [gb_lift.patch](tarball://root/attachments/some-uuid/ticket5656/gb_lift.patch) by @malb created at 2009-05-12 01:55:46",
     "created_at": "2009-05-12T01:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5656#issuecomment-44229",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [gb_lift.patch](tarball://root/attachments/some-uuid/ticket5656/gb_lift.patch) by malb created at 2009-05-12 01:55:46
+Attachment [gb_lift.patch](tarball://root/attachments/some-uuid/ticket5656/gb_lift.patch) by @malb created at 2009-05-12 01:55:46
 
 
 
@@ -75,16 +75,16 @@ Attachment [gb_lift.patch](tarball://root/attachments/some-uuid/ticket5656/gb_li
 archive/issue_comments_044230.json:
 ```json
 {
-    "body": "Attachment [trac_5656-gb_lift-revised.patch](tarball://root/attachments/some-uuid/ticket5656/trac_5656-gb_lift-revised.patch) by burcin created at 2009-06-04 13:50:50\n\nrevision of Martin's patch",
+    "body": "Attachment [trac_5656-gb_lift-revised.patch](tarball://root/attachments/some-uuid/ticket5656/trac_5656-gb_lift-revised.patch) by @burcin created at 2009-06-04 13:50:50\n\nrevision of Martin's patch",
     "created_at": "2009-06-04T13:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5656#issuecomment-44230",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_5656-gb_lift-revised.patch](tarball://root/attachments/some-uuid/ticket5656/trac_5656-gb_lift-revised.patch) by burcin created at 2009-06-04 13:50:50
+Attachment [trac_5656-gb_lift-revised.patch](tarball://root/attachments/some-uuid/ticket5656/trac_5656-gb_lift-revised.patch) by @burcin created at 2009-06-04 13:50:50
 
 revision of Martin's patch
 
@@ -100,7 +100,7 @@ archive/issue_comments_044231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5656#issuecomment-44231",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_044232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5656#issuecomment-44232",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_044233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5656#issuecomment-44233",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

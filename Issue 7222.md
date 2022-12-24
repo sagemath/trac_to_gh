@@ -50,16 +50,16 @@ Attachment [tour_help.rst](tarball://root/attachments/some-uuid/ticket7222/tour_
 archive/issue_comments_059903.json:
 ```json
 {
-    "body": "Changing assignee from tba to pdenapo.",
+    "body": "Changing assignee from tba to @pdenapo.",
     "created_at": "2010-10-24T20:02:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7222#issuecomment-59903",
-    "user": "pdenapo"
+    "user": "@pdenapo"
 }
 ```
 
-Changing assignee from tba to pdenapo.
+Changing assignee from tba to @pdenapo.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_059904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7222#issuecomment-59904",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_059905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7222#issuecomment-59905",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_059906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7222#issuecomment-59906",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_059907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7222#issuecomment-59907",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_059908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7222",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7222#issuecomment-59908",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

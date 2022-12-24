@@ -3,7 +3,7 @@
 archive/issues_009658.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  robertwb\n\nWe can't include vector_rational_sparse_c.pxi in a cython file because of a typo.  This patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9658\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @robertwb\n\nWe can't include vector_rational_sparse_c.pxi in a cython file because of a typo.  This patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9658\n\n",
     "created_at": "2010-08-01T05:00:21Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_009658.json:
     "title": "mpz_clear->mpq_clear (typo)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9658",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  robertwb
+CC:  @robertwb
 
 We can't include vector_rational_sparse_c.pxi in a cython file because of a typo.  This patch fixes this.
 
@@ -39,7 +39,7 @@ archive/issue_comments_093746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9658#issuecomment-93746",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_093747.json:
 ```json
 {
-    "body": "Attachment [trac-9658-mpz-typo.patch](tarball://root/attachments/some-uuid/ticket9658/trac-9658-mpz-typo.patch) by jason created at 2010-08-01 05:02:40",
+    "body": "Attachment [trac-9658-mpz-typo.patch](tarball://root/attachments/some-uuid/ticket9658/trac-9658-mpz-typo.patch) by @jasongrout created at 2010-08-01 05:02:40",
     "created_at": "2010-08-01T05:02:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9658#issuecomment-93747",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9658-mpz-typo.patch](tarball://root/attachments/some-uuid/ticket9658/trac-9658-mpz-typo.patch) by jason created at 2010-08-01 05:02:40
+Attachment [trac-9658-mpz-typo.patch](tarball://root/attachments/some-uuid/ticket9658/trac-9658-mpz-typo.patch) by @jasongrout created at 2010-08-01 05:02:40
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_093748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9658#issuecomment-93748",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_093749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9658#issuecomment-93749",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_093750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9658#issuecomment-93750",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_093751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9658#issuecomment-93751",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_093752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9658#issuecomment-93752",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_093753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9658#issuecomment-93753",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_093754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9658",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9658#issuecomment-93754",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007699.json:
     "title": "Delete OS X metadata in lcalc spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7699",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -42,7 +42,7 @@ archive/issue_comments_066043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7699#issuecomment-66043",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_066044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7699#issuecomment-66044",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_066047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7699",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7699#issuecomment-66047",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

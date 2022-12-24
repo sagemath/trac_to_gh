@@ -14,7 +14,7 @@ archive/issues_003145.json:
     "title": "documentation and defaults for the 'view' function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3145",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: cwitty
@@ -42,7 +42,7 @@ archive/issue_comments_021819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3145#issuecomment-21819",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -55,16 +55,16 @@ patch to sage/misc/latex.py
 archive/issue_comments_021820.json:
 ```json
 {
-    "body": "Attachment [latex.patch](tarball://root/attachments/some-uuid/ticket3145/latex.patch) by jhpalmieri created at 2008-05-09 19:21:47\n\nSorry, I didn't look at the preview carefully enough.  In item 3, the default for 'sep' is changed from '$$ $$' to the empty string (two single quotes with no space between them), which I haven't yet figured out how to type here...",
+    "body": "Attachment [latex.patch](tarball://root/attachments/some-uuid/ticket3145/latex.patch) by @jhpalmieri created at 2008-05-09 19:21:47\n\nSorry, I didn't look at the preview carefully enough.  In item 3, the default for 'sep' is changed from '$$ $$' to the empty string (two single quotes with no space between them), which I haven't yet figured out how to type here...",
     "created_at": "2008-05-09T19:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3145#issuecomment-21820",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [latex.patch](tarball://root/attachments/some-uuid/ticket3145/latex.patch) by jhpalmieri created at 2008-05-09 19:21:47
+Attachment [latex.patch](tarball://root/attachments/some-uuid/ticket3145/latex.patch) by @jhpalmieri created at 2008-05-09 19:21:47
 
 Sorry, I didn't look at the preview carefully enough.  In item 3, the default for 'sep' is changed from '$$ $$' to the empty string (two single quotes with no space between them), which I haven't yet figured out how to type here...
 
@@ -80,7 +80,7 @@ archive/issue_comments_021821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3145#issuecomment-21821",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -93,16 +93,16 @@ mercurial patch (instead of diff), to replace previous patch
 archive/issue_comments_021822.json:
 ```json
 {
-    "body": "Attachment [3145.patch](tarball://root/attachments/some-uuid/ticket3145/3145.patch) by craigcitro created at 2008-06-15 21:59:00",
+    "body": "Attachment [3145.patch](tarball://root/attachments/some-uuid/ticket3145/3145.patch) by @craigcitro created at 2008-06-15 21:59:00",
     "created_at": "2008-06-15T21:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3145#issuecomment-21822",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [3145.patch](tarball://root/attachments/some-uuid/ticket3145/3145.patch) by craigcitro created at 2008-06-15 21:59:00
+Attachment [3145.patch](tarball://root/attachments/some-uuid/ticket3145/3145.patch) by @craigcitro created at 2008-06-15 21:59:00
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_021823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3145#issuecomment-21823",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_021824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3145#issuecomment-21824",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -174,16 +174,16 @@ So please do what you can from above and let me know.
 archive/issue_comments_021825.json:
 ```json
 {
-    "body": "Attachment [3145-new.patch](tarball://root/attachments/some-uuid/ticket3145/3145-new.patch) by jhpalmieri created at 2008-06-16 04:59:19\n\nI've tried to address these issues.  I've also changed the documentation a little more, to reflect the fact that 'xdvi' is not required: dvi files are not necessarily displayed by xdvi -- see \n\n[http://trac.sagemath.org/sage_trac/ticket/3137](http://trac.sagemath.org/sage_trac/ticket/3137)\n\nSo I've tried to change the references to xdvi to be more accurate.",
+    "body": "Attachment [3145-new.patch](tarball://root/attachments/some-uuid/ticket3145/3145-new.patch) by @jhpalmieri created at 2008-06-16 04:59:19\n\nI've tried to address these issues.  I've also changed the documentation a little more, to reflect the fact that 'xdvi' is not required: dvi files are not necessarily displayed by xdvi -- see \n\n[http://trac.sagemath.org/sage_trac/ticket/3137](http://trac.sagemath.org/sage_trac/ticket/3137)\n\nSo I've tried to change the references to xdvi to be more accurate.",
     "created_at": "2008-06-16T04:59:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3145#issuecomment-21825",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [3145-new.patch](tarball://root/attachments/some-uuid/ticket3145/3145-new.patch) by jhpalmieri created at 2008-06-16 04:59:19
+Attachment [3145-new.patch](tarball://root/attachments/some-uuid/ticket3145/3145-new.patch) by @jhpalmieri created at 2008-06-16 04:59:19
 
 I've tried to address these issues.  I've also changed the documentation a little more, to reflect the fact that 'xdvi' is not required: dvi files are not necessarily displayed by xdvi -- see 
 
@@ -203,7 +203,7 @@ archive/issue_comments_021826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3145#issuecomment-21826",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -216,16 +216,16 @@ archive/issue_comments_021826.json:
 archive/issue_comments_021827.json:
 ```json
 {
-    "body": "Attachment [sage-3145-new-part2of2.patch](tarball://root/attachments/some-uuid/ticket3145/sage-3145-new-part2of2.patch) by was created at 2008-06-19 23:33:44\n\npart 2 of 2",
+    "body": "Attachment [sage-3145-new-part2of2.patch](tarball://root/attachments/some-uuid/ticket3145/sage-3145-new-part2of2.patch) by @williamstein created at 2008-06-19 23:33:44\n\npart 2 of 2",
     "created_at": "2008-06-19T23:33:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3145#issuecomment-21827",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3145-new-part2of2.patch](tarball://root/attachments/some-uuid/ticket3145/sage-3145-new-part2of2.patch) by was created at 2008-06-19 23:33:44
+Attachment [sage-3145-new-part2of2.patch](tarball://root/attachments/some-uuid/ticket3145/sage-3145-new-part2of2.patch) by @williamstein created at 2008-06-19 23:33:44
 
 part 2 of 2
 
@@ -241,7 +241,7 @@ archive/issue_comments_021828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3145#issuecomment-21828",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_021829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3145#issuecomment-21829",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

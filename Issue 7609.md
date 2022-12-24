@@ -3,7 +3,7 @@
 archive/issues_007609.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThe new pynac package and patch from #7490 introduced numerical noise in some doctests. Attached patch should fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7609\n\n",
+    "body": "Assignee: @burcin\n\nThe new pynac package and patch from #7490 introduced numerical noise in some doctests. Attached patch should fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7609\n\n",
     "created_at": "2009-12-06T00:38:29Z",
     "labels": [
         "symbolics",
@@ -14,10 +14,10 @@ archive/issues_007609.json:
     "title": "numerical noise in doctests after pynac update",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7609",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 The new pynac package and patch from #7490 introduced numerical noise in some doctests. Attached patch should fix this.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7609
 archive/issue_comments_064986.json:
 ```json
 {
-    "body": "Attachment [trac_7609-pynac_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket7609/trac_7609-pynac_numerical_noise.patch) by burcin created at 2009-12-06 00:41:04\n\nfix numerical noise",
+    "body": "Attachment [trac_7609-pynac_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket7609/trac_7609-pynac_numerical_noise.patch) by @burcin created at 2009-12-06 00:41:04\n\nfix numerical noise",
     "created_at": "2009-12-06T00:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7609#issuecomment-64986",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7609-pynac_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket7609/trac_7609-pynac_numerical_noise.patch) by burcin created at 2009-12-06 00:41:04
+Attachment [trac_7609-pynac_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket7609/trac_7609-pynac_numerical_noise.patch) by @burcin created at 2009-12-06 00:41:04
 
 fix numerical noise
 
@@ -57,7 +57,7 @@ archive/issue_comments_064987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7609#issuecomment-64987",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_064988.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7609#issuecomment-64988",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_064989.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7609#issuecomment-64989",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_064990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7609#issuecomment-64990",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -136,16 +136,16 @@ apply only this patch
 archive/issue_comments_064991.json:
 ```json
 {
-    "body": "Attachment [trac_7609-pynac_numerical_noise.take2.patch](tarball://root/attachments/some-uuid/ticket7609/trac_7609-pynac_numerical_noise.take2.patch) by burcin created at 2009-12-06 16:15:51\n\nHi Karl-Dieter,\n\nattachment:trac_7609-pynac_numerical_noise.take2.patch adds a fix for the error you get as well. It is a good coincidence that you're testing on that box. :)\n\nThanks.",
+    "body": "Attachment [trac_7609-pynac_numerical_noise.take2.patch](tarball://root/attachments/some-uuid/ticket7609/trac_7609-pynac_numerical_noise.take2.patch) by @burcin created at 2009-12-06 16:15:51\n\nHi Karl-Dieter,\n\nattachment:trac_7609-pynac_numerical_noise.take2.patch adds a fix for the error you get as well. It is a good coincidence that you're testing on that box. :)\n\nThanks.",
     "created_at": "2009-12-06T16:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7609#issuecomment-64991",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7609-pynac_numerical_noise.take2.patch](tarball://root/attachments/some-uuid/ticket7609/trac_7609-pynac_numerical_noise.take2.patch) by burcin created at 2009-12-06 16:15:51
+Attachment [trac_7609-pynac_numerical_noise.take2.patch](tarball://root/attachments/some-uuid/ticket7609/trac_7609-pynac_numerical_noise.take2.patch) by @burcin created at 2009-12-06 16:15:51
 
 Hi Karl-Dieter,
 
@@ -165,7 +165,7 @@ archive/issue_comments_064992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7609#issuecomment-64992",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_064993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7609#issuecomment-64993",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_064994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7609#issuecomment-64994",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_064995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7609",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7609#issuecomment-64995",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

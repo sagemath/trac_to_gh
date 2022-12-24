@@ -3,7 +3,7 @@
 archive/issues_007701.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jdemeyer\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7701\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jdemeyer\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7701\n\n",
     "created_at": "2009-12-16T02:03:02Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_007701.json:
     "title": "update the openmpi spkg to the latest version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7701",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_066067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7701#issuecomment-66067",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_066068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7701#issuecomment-66068",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_066070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7701#issuecomment-66070",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_066072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7701#issuecomment-66072",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_066073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7701#issuecomment-66073",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_066074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7701#issuecomment-66074",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

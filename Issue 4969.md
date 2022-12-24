@@ -14,7 +14,7 @@ archive/issues_004969.json:
     "title": "upgrade mercurial to version 1.0.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4969",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_037844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4969#issuecomment-37844",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -50,16 +50,16 @@ I'll see your 1.0.2 and raise it to 1.1.2:  http://sage.math.washington.edu/home
 archive/issue_comments_037845.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to mhansen.",
+    "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-01-13T23:24:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4969#issuecomment-37845",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from mabshoff to mhansen.
+Changing assignee from mabshoff to @mwhansen.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_037846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4969",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4969#issuecomment-37846",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009030.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  jsp\n\n'rubiks' has code to attempt to build it 64-bit, but that does not seem to be fully functional, as parts are built 32-bit and parts are built 64-bit. \n\n\n```\nrubiks-20070912.p10/dist/debian/changelog\nrubiks-20070912.p10/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n****************************************************\nBuilding a 64-bit version of rubiks\nCode will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\nUsing CC=gcc\nUsing CXX=g++\nUsing FC=\nUsing F77=\nUsing SAGE_FORTRAN=/usr/local/gcc-4.4.4/bin/gfortran\nUsing SAGE_FORTRAN_LIB=/usr/local/gcc-4.4.4/lib/amd64/libgfortran.so\nThe following environment variables will be exported\nUsing CFLAGS= -O2  -m64  -g  -Wall \nUsing CXXFLAGS= -O2  -m64  -g  -Wall \nUsing FCFLAGS= -O2  -m64  -g  -Wall \nUsing F77FLAGS= -O2  -m64  -g  -Wall \nUsing CPPFLAGS=\nUsing LDFLAGS= -m64 \nUsing ABI=\nconfigure scripts and/or makefiles might override these later\n \nBuilding Rubiks cube solvers\nfor dir in dietz/cu2 dietz/mcube dietz/solver dik reid; do \\\n\t\t(cd ${dir} && make all)\\\n\tdone\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/rubiks-20070912.p10/src/dietz/cu2'\ng++  -O2  -m64  -g  -Wall  -c cu2.cpp\ng++  -O2  -m64  -g  -Wall  -c main.cpp\ng++  -O2  -m64  -g  -Wall   -o cubex  cubex.o main.o\n<snip lots of 64-bit builds builds and lots of warnings>\ngcc  -O2  -m64  -g  -Wall    -m64   optimal.c   -o optimal\ngcc  -O2  -m64  -g  -Wall    -m64   twist.c   -o twist\n<snip>\ncp reid/optimal /export/home/drkirkby/sage-4.4.2/local/bin\ncp dietz/solver/cubex /export/home/drkirkby/sage-4.4.2/local/bin\ncp dietz/mcube/mcube /export/home/drkirkby/sage-4.4.2/local/bin\ncp dietz/cu2/cu2 /export/home/drkirkby/sage-4.4.2/local/bin\ncp dik/dikcube /export/home/drkirkby/sage-4.4.2/local/bin\ncp dik/size222 /export/home/drkirkby/sage-4.4.2/local/bin\n```\n\n\nWhen we check files, I note some are built 32-bit and some are built 64-bit. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file local/bin/size222 \nlocal/bin/size222:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped, no debugging information available\ndrkirkby@hawk:~/sage-4.4.2$ file local/bin/optimal\nlocal/bin/optimal:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\n```\n\n\nI expect this would happen on any platform where the default is 32-bit, suggesting to me this never even worked 64-bit on OS X systems where 32-bit was the default. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9030\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @jaapspies\n\n'rubiks' has code to attempt to build it 64-bit, but that does not seem to be fully functional, as parts are built 32-bit and parts are built 64-bit. \n\n\n```\nrubiks-20070912.p10/dist/debian/changelog\nrubiks-20070912.p10/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n****************************************************\nBuilding a 64-bit version of rubiks\nCode will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\nUsing CC=gcc\nUsing CXX=g++\nUsing FC=\nUsing F77=\nUsing SAGE_FORTRAN=/usr/local/gcc-4.4.4/bin/gfortran\nUsing SAGE_FORTRAN_LIB=/usr/local/gcc-4.4.4/lib/amd64/libgfortran.so\nThe following environment variables will be exported\nUsing CFLAGS= -O2  -m64  -g  -Wall \nUsing CXXFLAGS= -O2  -m64  -g  -Wall \nUsing FCFLAGS= -O2  -m64  -g  -Wall \nUsing F77FLAGS= -O2  -m64  -g  -Wall \nUsing CPPFLAGS=\nUsing LDFLAGS= -m64 \nUsing ABI=\nconfigure scripts and/or makefiles might override these later\n \nBuilding Rubiks cube solvers\nfor dir in dietz/cu2 dietz/mcube dietz/solver dik reid; do \\\n\t\t(cd ${dir} && make all)\\\n\tdone\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/rubiks-20070912.p10/src/dietz/cu2'\ng++  -O2  -m64  -g  -Wall  -c cu2.cpp\ng++  -O2  -m64  -g  -Wall  -c main.cpp\ng++  -O2  -m64  -g  -Wall   -o cubex  cubex.o main.o\n<snip lots of 64-bit builds builds and lots of warnings>\ngcc  -O2  -m64  -g  -Wall    -m64   optimal.c   -o optimal\ngcc  -O2  -m64  -g  -Wall    -m64   twist.c   -o twist\n<snip>\ncp reid/optimal /export/home/drkirkby/sage-4.4.2/local/bin\ncp dietz/solver/cubex /export/home/drkirkby/sage-4.4.2/local/bin\ncp dietz/mcube/mcube /export/home/drkirkby/sage-4.4.2/local/bin\ncp dietz/cu2/cu2 /export/home/drkirkby/sage-4.4.2/local/bin\ncp dik/dikcube /export/home/drkirkby/sage-4.4.2/local/bin\ncp dik/size222 /export/home/drkirkby/sage-4.4.2/local/bin\n```\n\n\nWhen we check files, I note some are built 32-bit and some are built 64-bit. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file local/bin/size222 \nlocal/bin/size222:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped, no debugging information available\ndrkirkby@hawk:~/sage-4.4.2$ file local/bin/optimal\nlocal/bin/optimal:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\n```\n\n\nI expect this would happen on any platform where the default is 32-bit, suggesting to me this never even worked 64-bit on OS X systems where 32-bit was the default. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9030\n\n",
     "created_at": "2010-05-24T07:52:15Z",
     "labels": [
         "algebra",
@@ -17,9 +17,9 @@ archive/issues_009030.json:
     "user": "drkirkby"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  jsp
+CC:  @jaapspies
 
 'rubiks' has code to attempt to build it 64-bit, but that does not seem to be fully functional, as parts are built 32-bit and parts are built 64-bit. 
 
@@ -107,7 +107,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9030
 archive/issue_comments_083570.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to drkirkby.",
+    "body": "Changing assignee from @aghitza to drkirkby.",
     "created_at": "2010-05-24T18:22:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9030",
     "type": "issue_comment",
@@ -116,7 +116,7 @@ archive/issue_comments_083570.json:
 }
 ```
 
-Changing assignee from AlexGhitza to drkirkby.
+Changing assignee from @aghitza to drkirkby.
 
 
 
@@ -166,7 +166,7 @@ archive/issue_comments_083573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83573",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_083577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83577",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_083578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83578",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_083579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83579",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

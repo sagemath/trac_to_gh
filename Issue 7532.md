@@ -3,7 +3,7 @@
 archive/issues_007532.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\n\n```\nOn Wed, Nov 25, 2009 at 7:26 PM, John H Palmieri <jhpalmieri64@gmail.com> wrote:\n> In ring.pyx, there is code like this:\n>\n>        if proof:\n>            return NotImplementedError\n>        else:\n>            return False\n>\n> I would think that the second line should say \"raise\n> NotImplementedError\".  (Changing it makes some doctests fail,\n> though.)  Is there a good reason for doing \"return\n> NotImplementedError\"?\n\nThat's *definitely* a bug.   No question about it. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7532\n\n",
+    "body": "Assignee: @aghitza\n\n\n```\nOn Wed, Nov 25, 2009 at 7:26 PM, John H Palmieri <jhpalmieri64@gmail.com> wrote:\n> In ring.pyx, there is code like this:\n>\n>        if proof:\n>            return NotImplementedError\n>        else:\n>            return False\n>\n> I would think that the second line should say \"raise\n> NotImplementedError\".  (Changing it makes some doctests fail,\n> though.)  Is there a good reason for doing \"return\n> NotImplementedError\"?\n\nThat's *definitely* a bug.   No question about it. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7532\n\n",
     "created_at": "2009-11-26T05:37:36Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007532.json:
     "title": "\"return NotImplementedError\" in ring.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7532",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 
 ```
@@ -122,7 +122,7 @@ archive/issue_comments_063851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63851",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_063852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63852",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -173,16 +173,16 @@ and maybe some others in this directory.
 archive/issue_comments_063853.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to cremona.",
+    "body": "Changing assignee from @aghitza to @JohnCremona.",
     "created_at": "2010-01-19T00:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63853",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Changing assignee from AlexGhitza to cremona.
+Changing assignee from @aghitza to @JohnCremona.
 
 
 
@@ -196,7 +196,7 @@ archive/issue_comments_063854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63854",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_063855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63855",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_063856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63856",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_063857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63857",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -263,16 +263,16 @@ Changing status from new to needs_review.
 archive/issue_comments_063858.json:
 ```json
 {
-    "body": "Attachment [trac_7532.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532.patch) by cremona created at 2010-01-19 12:45:46\n\nThe attached patch fixes an error in ell_rational_field.py which is the only one I see in that directory after applying the patches at #7535,\n\nJohn (jhpalmieri), can you post the details of the errors you had on the other 3 files in that directory?",
+    "body": "Attachment [trac_7532.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532.patch) by @JohnCremona created at 2010-01-19 12:45:46\n\nThe attached patch fixes an error in ell_rational_field.py which is the only one I see in that directory after applying the patches at #7535,\n\nJohn (jhpalmieri), can you post the details of the errors you had on the other 3 files in that directory?",
     "created_at": "2010-01-19T12:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63858",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7532.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532.patch) by cremona created at 2010-01-19 12:45:46
+Attachment [trac_7532.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532.patch) by @JohnCremona created at 2010-01-19 12:45:46
 
 The attached patch fixes an error in ell_rational_field.py which is the only one I see in that directory after applying the patches at #7535,
 
@@ -290,7 +290,7 @@ archive/issue_comments_063859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63859",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -408,16 +408,16 @@ plus 45 more failures in padics.py (too many to include here), and I expect fail
 archive/issue_comments_063860.json:
 ```json
 {
-    "body": "Attachment [trac_7532-donotuse.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532-donotuse.patch) by jhpalmieri created at 2010-01-19 18:24:36\n\nfor purposes of illustration only -- causes doctest failures in schemes/elliptic_curves",
+    "body": "Attachment [trac_7532-donotuse.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532-donotuse.patch) by @jhpalmieri created at 2010-01-19 18:24:36\n\nfor purposes of illustration only -- causes doctest failures in schemes/elliptic_curves",
     "created_at": "2010-01-19T18:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63860",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7532-donotuse.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532-donotuse.patch) by jhpalmieri created at 2010-01-19 18:24:36
+Attachment [trac_7532-donotuse.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532-donotuse.patch) by @jhpalmieri created at 2010-01-19 18:24:36
 
 for purposes of illustration only -- causes doctest failures in schemes/elliptic_curves
 
@@ -433,7 +433,7 @@ archive/issue_comments_063861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63861",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -451,7 +451,7 @@ archive/issue_comments_063862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63862",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_063863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63863",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_063864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63864",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -505,7 +505,7 @@ archive/issue_comments_063865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63865",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_063866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63866",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_063867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63867",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_063868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63868",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -577,7 +577,7 @@ archive/issue_comments_063869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63869",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_063870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63870",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -610,16 +610,16 @@ Apply instead of previous one to 4.3.1.rc0 (rings.pyx fix)
 archive/issue_comments_063871.json:
 ```json
 {
-    "body": "Attachment [trac_7532-rings.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532-rings.patch) by cremona created at 2010-01-20 13:10:48\n\nThe patch trac_7532-rings.patch  fixes the problem in rings.pyx and all the fallout -- I checked the entire library and it is fine.  The diagnosis was exactly as above, and only a few lines needed to be changed!\n\nI am switchingg this to \"needs work\" and then \"needs review\", hoping that it can get in on the back of #7535 (just this once!)",
+    "body": "Attachment [trac_7532-rings.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532-rings.patch) by @JohnCremona created at 2010-01-20 13:10:48\n\nThe patch trac_7532-rings.patch  fixes the problem in rings.pyx and all the fallout -- I checked the entire library and it is fine.  The diagnosis was exactly as above, and only a few lines needed to be changed!\n\nI am switchingg this to \"needs work\" and then \"needs review\", hoping that it can get in on the back of #7535 (just this once!)",
     "created_at": "2010-01-20T13:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63871",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_7532-rings.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532-rings.patch) by cremona created at 2010-01-20 13:10:48
+Attachment [trac_7532-rings.patch](tarball://root/attachments/some-uuid/ticket7532/trac_7532-rings.patch) by @JohnCremona created at 2010-01-20 13:10:48
 
 The patch trac_7532-rings.patch  fixes the problem in rings.pyx and all the fallout -- I checked the entire library and it is fine.  The diagnosis was exactly as above, and only a few lines needed to be changed!
 
@@ -637,7 +637,7 @@ archive/issue_comments_063872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63872",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -655,7 +655,7 @@ archive/issue_comments_063873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63873",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -673,7 +673,7 @@ archive/issue_comments_063874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63874",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -691,7 +691,7 @@ archive/issue_comments_063875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63875",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -709,7 +709,7 @@ archive/issue_comments_063876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63876",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -776,7 +776,7 @@ archive/issue_comments_063878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7532#issuecomment-63878",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

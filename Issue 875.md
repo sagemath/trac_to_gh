@@ -14,7 +14,7 @@ archive/issues_000875.json:
     "title": "further work needed on frast Sage --> PARI int conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/875",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -62,7 +62,7 @@ archive/issue_comments_005410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/875#issuecomment-5410",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -75,16 +75,16 @@ Changing status from new to assigned.
 archive/issue_comments_005411.json:
 ```json
 {
-    "body": "Changing assignee from somebody to craigcitro.",
+    "body": "Changing assignee from somebody to @craigcitro.",
     "created_at": "2007-10-13T15:20:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/875#issuecomment-5411",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from somebody to craigcitro.
+Changing assignee from somebody to @craigcitro.
 
 
 
@@ -98,7 +98,7 @@ archive/issue_comments_005412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/875#issuecomment-5412",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_005413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/875#issuecomment-5413",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

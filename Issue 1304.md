@@ -3,7 +3,7 @@
 archive/issues_001304.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  boothby\n\nKeywords: graphs\n\nFrom Robert Miller:\n\n\n```\n> Another ticket you might want to create, but that I would be most\n> likely to implement, is edge-labeled graph isomorphism.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1304\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  boothby\n\nKeywords: graphs\n\nFrom Robert Miller:\n\n\n```\n> Another ticket you might want to create, but that I would be most\n> likely to implement, is edge-labeled graph isomorphism.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1304\n\n",
     "created_at": "2007-11-28T19:48:43Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001304.json:
     "title": "[graphs] edge-labeled graph isomorphism",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1304",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  boothby
 
@@ -48,7 +48,7 @@ archive/issue_comments_008200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1304#issuecomment-8200",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -61,16 +61,16 @@ Changing status from new to assigned.
 archive/issue_comments_008201.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-02T04:47:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1304#issuecomment-8201",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -84,7 +84,7 @@ archive/issue_comments_008202.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1304#issuecomment-8202",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_008203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1304#issuecomment-8203",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -115,16 +115,16 @@ Changing component from combinatorics to graph theory.
 archive/issue_comments_008204.json:
 ```json
 {
-    "body": "Attachment [edge_labeled_isom.hg](tarball://root/attachments/some-uuid/ticket1304/edge_labeled_isom.hg) by rlm created at 2008-02-06 11:21:23",
+    "body": "Attachment [edge_labeled_isom.hg](tarball://root/attachments/some-uuid/ticket1304/edge_labeled_isom.hg) by @rlmill created at 2008-02-06 11:21:23",
     "created_at": "2008-02-06T11:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1304#issuecomment-8204",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [edge_labeled_isom.hg](tarball://root/attachments/some-uuid/ticket1304/edge_labeled_isom.hg) by rlm created at 2008-02-06 11:21:23
+Attachment [edge_labeled_isom.hg](tarball://root/attachments/some-uuid/ticket1304/edge_labeled_isom.hg) by @rlmill created at 2008-02-06 11:21:23
 
 
 
@@ -182,7 +182,7 @@ archive/issue_comments_008207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1304#issuecomment-8207",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_008208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1304",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1304#issuecomment-8208",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

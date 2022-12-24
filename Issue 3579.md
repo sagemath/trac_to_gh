@@ -3,7 +3,7 @@
 archive/issues_003579.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n```\n17:32 < itolkov> sage: graphs.RandomGNP(n=4, p=1)\n17:32 < itolkov> Traceback ... OverflowError: math range error\n17:32 < itolkov> bug?\n17:34 < wstein-3576> nt necessarily.\n17:35 < wstein-3576> the line lp=math.log(1.0-p) shows why it doesn't work.\n17:35 < wstein-3576> The docs do not ban probability 1, so yes, it is a bug.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3579\n\n",
+    "body": "Assignee: @rlmill\n\n\n```\n17:32 < itolkov> sage: graphs.RandomGNP(n=4, p=1)\n17:32 < itolkov> Traceback ... OverflowError: math range error\n17:32 < itolkov> bug?\n17:34 < wstein-3576> nt necessarily.\n17:35 < wstein-3576> the line lp=math.log(1.0-p) shows why it doesn't work.\n17:35 < wstein-3576> The docs do not ban probability 1, so yes, it is a bug.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3579\n\n",
     "created_at": "2008-07-07T00:37:28Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_003579.json:
     "title": "bug in RandonGNP graph constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3579",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 ```
@@ -64,7 +64,7 @@ archive/issue_comments_025271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3579#issuecomment-25271",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

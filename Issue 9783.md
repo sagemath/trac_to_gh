@@ -14,7 +14,7 @@ archive/issues_009783.json:
     "title": "list_plot should accept dictionaries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9783",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: jason, was
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9784
 archive/issue_comments_096030.json:
 ```json
 {
-    "body": "Attachment [trac_9784_list_plot_dict.patch](tarball://root/attachments/some-uuid/ticket9784/trac_9784_list_plot_dict.patch) by ddrake created at 2010-08-24 07:00:37",
+    "body": "Attachment [trac_9784_list_plot_dict.patch](tarball://root/attachments/some-uuid/ticket9784/trac_9784_list_plot_dict.patch) by @dandrake created at 2010-08-24 07:00:37",
     "created_at": "2010-08-24T07:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9783#issuecomment-96030",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_9784_list_plot_dict.patch](tarball://root/attachments/some-uuid/ticket9784/trac_9784_list_plot_dict.patch) by ddrake created at 2010-08-24 07:00:37
+Attachment [trac_9784_list_plot_dict.patch](tarball://root/attachments/some-uuid/ticket9784/trac_9784_list_plot_dict.patch) by @dandrake created at 2010-08-24 07:00:37
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_096031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9783#issuecomment-96031",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_096032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9783#issuecomment-96032",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_096033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9783#issuecomment-96033",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_096034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9783#issuecomment-96034",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_096035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9783",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9783#issuecomment-96035",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

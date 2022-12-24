@@ -94,7 +94,7 @@ archive/issue_comments_062328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7407#issuecomment-62328",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_062329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7407#issuecomment-62329",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_062330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7407#issuecomment-62330",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -171,16 +171,16 @@ Here's a patch, changing the options to -pPR for all platforms.  This needs test
 archive/issue_comments_062331.json:
 ```json
 {
-    "body": "Attachment [trac_7407-bdist-scripts.patch](tarball://root/attachments/some-uuid/ticket7407/trac_7407-bdist-scripts.patch) by jhpalmieri created at 2010-06-09 20:44:43\n\nscripts repo",
+    "body": "Attachment [trac_7407-bdist-scripts.patch](tarball://root/attachments/some-uuid/ticket7407/trac_7407-bdist-scripts.patch) by @jhpalmieri created at 2010-06-09 20:44:43\n\nscripts repo",
     "created_at": "2010-06-09T20:44:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7407#issuecomment-62331",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7407-bdist-scripts.patch](tarball://root/attachments/some-uuid/ticket7407/trac_7407-bdist-scripts.patch) by jhpalmieri created at 2010-06-09 20:44:43
+Attachment [trac_7407-bdist-scripts.patch](tarball://root/attachments/some-uuid/ticket7407/trac_7407-bdist-scripts.patch) by @jhpalmieri created at 2010-06-09 20:44:43
 
 scripts repo
 
@@ -234,7 +234,7 @@ archive/issue_comments_062334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7407#issuecomment-62334",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -370,7 +370,7 @@ archive/issue_comments_062339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7407#issuecomment-62339",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_062340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7407",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7407#issuecomment-62340",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

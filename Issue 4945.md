@@ -14,7 +14,7 @@ archive/issues_004945.json:
     "title": "LaTeX for gp elements shouldn't use verbatim environment",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4945",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: cwitty
@@ -69,7 +69,7 @@ archive/issue_comments_037535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4945#issuecomment-37535",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_037536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4945#issuecomment-37536",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_037537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4945#issuecomment-37537",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_037538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4945#issuecomment-37538",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_037539.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4945#issuecomment-37539",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -165,16 +165,16 @@ Okay, here's a patch which (I think) addresses malb's issue.
 archive/issue_comments_037540.json:
 ```json
 {
-    "body": "Attachment [4945.patch](tarball://root/attachments/some-uuid/ticket4945/4945.patch) by malb created at 2009-01-07 12:13:37\n\nPatch looks good.",
+    "body": "Attachment [4945.patch](tarball://root/attachments/some-uuid/ticket4945/4945.patch) by @malb created at 2009-01-07 12:13:37\n\nPatch looks good.",
     "created_at": "2009-01-07T12:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4945",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4945#issuecomment-37540",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [4945.patch](tarball://root/attachments/some-uuid/ticket4945/4945.patch) by malb created at 2009-01-07 12:13:37
+Attachment [4945.patch](tarball://root/attachments/some-uuid/ticket4945/4945.patch) by @malb created at 2009-01-07 12:13:37
 
 Patch looks good.
 

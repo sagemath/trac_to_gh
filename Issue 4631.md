@@ -3,7 +3,7 @@
 archive/issues_004631.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  robertwb\n\nSo I was looking at another ticket, and noticed the following memory usage of Hermite normal form:\n\n\n```\nsage: M = random_matrix(ZZ,50,50)\n\nsage: get_memory_usage()\n'1104M+'\n\nsage: for _ in range(100): foo = M.hermite_form()\n   ....: \n\nsage: get_memory_usage()\n'1170M+'\n```\n\n\nIt could be that the memory is getting \"lost\" in some other way, but it might be nice to see why it's happening. In fact, it's probably got nothing to do with HNF:\n\n\n```\nsage: get_memory_usage()\n'1170M+'\n\nsage: for _ in range(100): foo = M.echelon_form()\n   ....: \n\nsage: get_memory_usage()\n'1237M+'\n```\n\n\nI'm happy to find out that there's a reasonable explanation for this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4631\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nSo I was looking at another ticket, and noticed the following memory usage of Hermite normal form:\n\n\n```\nsage: M = random_matrix(ZZ,50,50)\n\nsage: get_memory_usage()\n'1104M+'\n\nsage: for _ in range(100): foo = M.hermite_form()\n   ....: \n\nsage: get_memory_usage()\n'1170M+'\n```\n\n\nIt could be that the memory is getting \"lost\" in some other way, but it might be nice to see why it's happening. In fact, it's probably got nothing to do with HNF:\n\n\n```\nsage: get_memory_usage()\n'1170M+'\n\nsage: for _ in range(100): foo = M.echelon_form()\n   ....: \n\nsage: get_memory_usage()\n'1237M+'\n```\n\n\nI'm happy to find out that there's a reasonable explanation for this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4631\n\n",
     "created_at": "2008-11-27T00:34:14Z",
     "labels": [
         "memleak",
@@ -14,12 +14,12 @@ archive/issues_004631.json:
     "title": "possible memory leak in matrix code?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4631",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: mabshoff
 
-CC:  robertwb
+CC:  @robertwb
 
 So I was looking at another ticket, and noticed the following memory usage of Hermite normal form:
 
@@ -251,7 +251,7 @@ archive/issue_comments_034814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4631#issuecomment-34814",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_034817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4631#issuecomment-34817",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_034818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4631",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4631#issuecomment-34818",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

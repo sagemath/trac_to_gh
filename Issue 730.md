@@ -3,7 +3,7 @@
 archive/issues_000730.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\nBecause the order returned by iterkeys is not guaranteed, enum, and therefore, `__cmp__` do not seem to behave well.  This could possibly be fixed by sorting the boundary vertices in the vertices() function.\n\n\n```\nsage: g=Graph({0:[1,2],'a':[1],1:[0,2],2:[0,1]})\nsage: h=Graph({'a':[1],0:[1,2],1:[0,2],2:[0,1]})\nsage: enum(g)\n9174\nsage: enum(h)\n9174\nsage: g.set_boundary([0,'a'])\nsage: h.set_boundary([0,'a'])\nsage: enum(g)\n13018\nsage: enum(h)\n9174\nsage: g==h\nFalse\nsage: g.vertices()\n[0, 'a', 1, 2]\nsage: h.vertices()\n['a', 0, 1, 2]\n```\n\n\nIt seems that since the graphs are the same, with the same labels and everything, the equality test should return True.  However, the boundary vertices are not sorted, so g.vertices() and h.vertices() return in a non-specified order.\n\nWhy do we return the boundary vertices first anyway?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/730\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nBecause the order returned by iterkeys is not guaranteed, enum, and therefore, `__cmp__` do not seem to behave well.  This could possibly be fixed by sorting the boundary vertices in the vertices() function.\n\n\n```\nsage: g=Graph({0:[1,2],'a':[1],1:[0,2],2:[0,1]})\nsage: h=Graph({'a':[1],0:[1,2],1:[0,2],2:[0,1]})\nsage: enum(g)\n9174\nsage: enum(h)\n9174\nsage: g.set_boundary([0,'a'])\nsage: h.set_boundary([0,'a'])\nsage: enum(g)\n13018\nsage: enum(h)\n9174\nsage: g==h\nFalse\nsage: g.vertices()\n[0, 'a', 1, 2]\nsage: h.vertices()\n['a', 0, 1, 2]\n```\n\n\nIt seems that since the graphs are the same, with the same labels and everything, the equality test should return True.  However, the boundary vertices are not sorted, so g.vertices() and h.vertices() return in a non-specified order.\n\nWhy do we return the boundary vertices first anyway?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/730\n\n",
     "created_at": "2007-09-21T18:42:54Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000730.json:
     "title": "graphs: fickle equality testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/730",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -62,16 +62,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/730
 archive/issue_comments_004286.json:
 ```json
 {
-    "body": "Changing assignee from was to rlmiller.",
+    "body": "Changing assignee from @williamstein to rlmiller.",
     "created_at": "2007-09-21T18:50:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/730#issuecomment-4286",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from was to rlmiller.
+Changing assignee from @williamstein to rlmiller.
 
 
 
@@ -85,7 +85,7 @@ archive/issue_comments_004287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/730#issuecomment-4287",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_004288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/730#issuecomment-4288",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_004289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/730",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/730#issuecomment-4289",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

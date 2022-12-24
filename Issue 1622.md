@@ -3,7 +3,7 @@
 archive/issues_001622.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1622\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1622\n\n",
     "created_at": "2007-12-29T04:36:21Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_001622.json:
     "user": "mabshoff"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -50,7 +50,7 @@ Changing status from new to assigned.
 archive/issue_comments_010325.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-12-29T04:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1622",
     "type": "issue_comment",
@@ -59,7 +59,7 @@ archive/issue_comments_010325.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_010326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1622#issuecomment-10326",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_010327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1622#issuecomment-10327",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_010328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1622#issuecomment-10328",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 

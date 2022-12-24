@@ -14,7 +14,7 @@ archive/issues_001818.json:
     "title": "[with patch] include AES polynomial system generator in reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1818",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1818
 archive/issue_comments_011484.json:
 ```json
 {
-    "body": "Attachment [sr-ref-doc.patch](tarball://root/attachments/some-uuid/ticket1818/sr-ref-doc.patch) by malb created at 2008-01-18 00:28:14",
+    "body": "Attachment [sr-ref-doc.patch](tarball://root/attachments/some-uuid/ticket1818/sr-ref-doc.patch) by @malb created at 2008-01-18 00:28:14",
     "created_at": "2008-01-18T00:28:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1818#issuecomment-11484",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sr-ref-doc.patch](tarball://root/attachments/some-uuid/ticket1818/sr-ref-doc.patch) by malb created at 2008-01-18 00:28:14
+Attachment [sr-ref-doc.patch](tarball://root/attachments/some-uuid/ticket1818/sr-ref-doc.patch) by @malb created at 2008-01-18 00:28:14
 
 
 
@@ -50,16 +50,16 @@ Attachment [sr-ref-doc.patch](tarball://root/attachments/some-uuid/ticket1818/sr
 archive/issue_comments_011485.json:
 ```json
 {
-    "body": "Attachment [sr-ref-sage.patch](tarball://root/attachments/some-uuid/ticket1818/sr-ref-sage.patch) by ncalexan created at 2008-01-22 18:08:10\n\nApply.  Also, at some point we should ensure the ref manual is actually up to date.  Another time.",
+    "body": "Attachment [sr-ref-sage.patch](tarball://root/attachments/some-uuid/ticket1818/sr-ref-sage.patch) by @ncalexan created at 2008-01-22 18:08:10\n\nApply.  Also, at some point we should ensure the ref manual is actually up to date.  Another time.",
     "created_at": "2008-01-22T18:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1818#issuecomment-11485",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [sr-ref-sage.patch](tarball://root/attachments/some-uuid/ticket1818/sr-ref-sage.patch) by ncalexan created at 2008-01-22 18:08:10
+Attachment [sr-ref-sage.patch](tarball://root/attachments/some-uuid/ticket1818/sr-ref-sage.patch) by @ncalexan created at 2008-01-22 18:08:10
 
 Apply.  Also, at some point we should ensure the ref manual is actually up to date.  Another time.
 

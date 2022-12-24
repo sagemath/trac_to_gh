@@ -3,7 +3,7 @@
 archive/issues_004075.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis was reported by Felipe Voloch:\n\n\n```\nHi,\n\nI am not sure how to report bugs in Sage but I see you are involved\nwith their coding theory. I was playing around with BCH codes and\nin particular I wanted the BCH code over F_5 of length 26 and designed\ndistance 5. Sage reports this code as having dimension 25 (see below)\nbut the dimension should be 10, which Magma computes correctly (see\nbelow also).\n\nThanks \n\nFelipe\n\n---------------------SAGE---------------------------------------------\namd13:~> sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: C = BCHCode(26,5,GF(5)); C\nLinear code of length 26, dimension 25 over Finite Field of size 5\n\n\n---------------------MAGMA--------------------------------------------\nlinux182~> magma\nMagma V2.14-10    Fri Sep  5 2008 14:24:48 on linux182 [Seed = 1390124479]\nType ? for help.  Type <Ctrl>-D to quit.\n> > C:=BCHCode(GF(5),26,5); \n> > Dimension(C);\n10\n```\n\n\nIncidently, Guava does this correctly. The problem is that I used the wrong element to construct the generator polynomial. \n\nThis is fixed in the attached patch, based on 3.1.2.alpha4. It passes sage -testall and also adds a test in the docstring to include the example reported by Felipe.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4075\n\n",
+    "body": "Assignee: @rlmill\n\nThis was reported by Felipe Voloch:\n\n\n```\nHi,\n\nI am not sure how to report bugs in Sage but I see you are involved\nwith their coding theory. I was playing around with BCH codes and\nin particular I wanted the BCH code over F_5 of length 26 and designed\ndistance 5. Sage reports this code as having dimension 25 (see below)\nbut the dimension should be 10, which Magma computes correctly (see\nbelow also).\n\nThanks \n\nFelipe\n\n---------------------SAGE---------------------------------------------\namd13:~> sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: C = BCHCode(26,5,GF(5)); C\nLinear code of length 26, dimension 25 over Finite Field of size 5\n\n\n---------------------MAGMA--------------------------------------------\nlinux182~> magma\nMagma V2.14-10    Fri Sep  5 2008 14:24:48 on linux182 [Seed = 1390124479]\nType ? for help.  Type <Ctrl>-D to quit.\n> > C:=BCHCode(GF(5),26,5); \n> > Dimension(C);\n10\n```\n\n\nIncidently, Guava does this correctly. The problem is that I used the wrong element to construct the generator polynomial. \n\nThis is fixed in the attached patch, based on 3.1.2.alpha4. It passes sage -testall and also adds a test in the docstring to include the example reported by Felipe.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4075\n\n",
     "created_at": "2008-09-08T11:15:56Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_004075.json:
     "title": "bug in BCHCode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4075",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This was reported by Felipe Voloch:
 
@@ -71,16 +71,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4075
 archive/issue_comments_029410.json:
 ```json
 {
-    "body": "Attachment [10463.patch](tarball://root/attachments/some-uuid/ticket4075/10463.patch) by wdj created at 2008-09-08 11:16:27\n\nbased on 3.1.2.alpha4",
+    "body": "Attachment [10463.patch](tarball://root/attachments/some-uuid/ticket4075/10463.patch) by @wdjoyner created at 2008-09-08 11:16:27\n\nbased on 3.1.2.alpha4",
     "created_at": "2008-09-08T11:16:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4075#issuecomment-29410",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [10463.patch](tarball://root/attachments/some-uuid/ticket4075/10463.patch) by wdj created at 2008-09-08 11:16:27
+Attachment [10463.patch](tarball://root/attachments/some-uuid/ticket4075/10463.patch) by @wdjoyner created at 2008-09-08 11:16:27
 
 based on 3.1.2.alpha4
 
@@ -96,7 +96,7 @@ archive/issue_comments_029411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4075",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4075#issuecomment-29411",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

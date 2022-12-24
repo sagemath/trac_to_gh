@@ -39,7 +39,7 @@ archive/issue_comments_053049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6511#issuecomment-53049",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -52,16 +52,16 @@ Apply to 4.1
 archive/issue_comments_053050.json:
 ```json
 {
-    "body": "Attachment [trac_6511.patch](tarball://root/attachments/some-uuid/ticket6511/trac_6511.patch) by cremona created at 2009-07-11 15:00:53",
+    "body": "Attachment [trac_6511.patch](tarball://root/attachments/some-uuid/ticket6511/trac_6511.patch) by @JohnCremona created at 2009-07-11 15:00:53",
     "created_at": "2009-07-11T15:00:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6511",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6511#issuecomment-53050",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6511.patch](tarball://root/attachments/some-uuid/ticket6511/trac_6511.patch) by cremona created at 2009-07-11 15:00:53
+Attachment [trac_6511.patch](tarball://root/attachments/some-uuid/ticket6511/trac_6511.patch) by @JohnCremona created at 2009-07-11 15:00:53
 
 
 

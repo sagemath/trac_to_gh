@@ -3,7 +3,7 @@
 archive/issues_002948.json:
 ```json
 {
-    "body": "Assignee: cswiercz\n\nKeywords: doctest, docstring, documentation, quotient_ring.py\n\nProvide missing docstrings and doctests for rings/quotient_ring.py. Also provide additional doctests for several functions i.e. imporve the quality of the doctests in this file.\n\n* SCORE quotient_ring.py: 54% (12 of 22)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2948\n\n",
+    "body": "Assignee: @cswiercz\n\nKeywords: doctest, docstring, documentation, quotient_ring.py\n\nProvide missing docstrings and doctests for rings/quotient_ring.py. Also provide additional doctests for several functions i.e. imporve the quality of the doctests in this file.\n\n* SCORE quotient_ring.py: 54% (12 of 22)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2948\n\n",
     "created_at": "2008-04-17T22:36:52Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_002948.json:
     "title": "(Additional) Docstrings and Doctests for rings/quotient_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2948",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
-Assignee: cswiercz
+Assignee: @cswiercz
 
 Keywords: doctest, docstring, documentation, quotient_ring.py
 
@@ -60,16 +60,16 @@ Michael
 archive/issue_comments_020331.json:
 ```json
 {
-    "body": "Attachment [2948.patch](tarball://root/attachments/some-uuid/ticket2948/2948.patch) by jhpalmieri created at 2008-09-26 19:09:29\n\nI'm providing a patch. The doctesting that I'm providing is pretty superficial -- it doesn't show any of the limitations of the code, for example. If someone who knows the stuff better wants to add more, please go ahead.",
+    "body": "Attachment [2948.patch](tarball://root/attachments/some-uuid/ticket2948/2948.patch) by @jhpalmieri created at 2008-09-26 19:09:29\n\nI'm providing a patch. The doctesting that I'm providing is pretty superficial -- it doesn't show any of the limitations of the code, for example. If someone who knows the stuff better wants to add more, please go ahead.",
     "created_at": "2008-09-26T19:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2948",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2948#issuecomment-20331",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [2948.patch](tarball://root/attachments/some-uuid/ticket2948/2948.patch) by jhpalmieri created at 2008-09-26 19:09:29
+Attachment [2948.patch](tarball://root/attachments/some-uuid/ticket2948/2948.patch) by @jhpalmieri created at 2008-09-26 19:09:29
 
 I'm providing a patch. The doctesting that I'm providing is pretty superficial -- it doesn't show any of the limitations of the code, for example. If someone who knows the stuff better wants to add more, please go ahead.
 

@@ -3,7 +3,7 @@
 archive/issues_008670.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  abmasse vdelecroix robertwb tjolivet tmonteil\n\nNice mathematical objects can be obtained when projecting appropriately a discrete path (Rauzy fractals for instance).\n\nThis patch introduces 3 projection functions for word path. It also adds 1 function to `WordMorphism` and 2 matrix rotation functions to `sage/plot/plot3d/transforms.pyx`.\n\nThe first 1000 points of the Rauzy fractal :\n\n\n```\n    sage: s = WordMorphism('1->12,2->13,3->1')\n    sage: D = s.fixed_point('1')\n    sage: v = s.pisot_vector()\n    sage: P = WordPaths('123',[(1,0,0),(0,1,0),(0,0,1)])\n    sage: w = P(D[:1000])\n    sage: w.projected_plot(v)\n```\n\n\nSee more examples in doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8670\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse @videlec @robertwb tjolivet tmonteil\n\nNice mathematical objects can be obtained when projecting appropriately a discrete path (Rauzy fractals for instance).\n\nThis patch introduces 3 projection functions for word path. It also adds 1 function to `WordMorphism` and 2 matrix rotation functions to `sage/plot/plot3d/transforms.pyx`.\n\nThe first 1000 points of the Rauzy fractal :\n\n\n```\n    sage: s = WordMorphism('1->12,2->13,3->1')\n    sage: D = s.fixed_point('1')\n    sage: v = s.pisot_vector()\n    sage: P = WordPaths('123',[(1,0,0),(0,1,0),(0,0,1)])\n    sage: w = P(D[:1000])\n    sage: w.projected_plot(v)\n```\n\n\nSee more examples in doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8670\n\n",
     "created_at": "2010-04-11T12:10:06Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_008670.json:
     "title": "Provide projections methods for word paths",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8670",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
-CC:  abmasse vdelecroix robertwb tjolivet tmonteil
+CC:  abmasse @videlec @robertwb tjolivet tmonteil
 
 Nice mathematical objects can be obtained when projecting appropriately a discrete path (Rauzy fractals for instance).
 
@@ -56,7 +56,7 @@ archive/issue_comments_078890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78890",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_078891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78891",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_078892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78892",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_078893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78893",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_078894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78894",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_078895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78895",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -173,16 +173,16 @@ Does not depend on any known patch. Applies on 4.3.4.
 archive/issue_comments_078896.json:
 ```json
 {
-    "body": "Attachment [trac_8670-word-path-projection-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670-word-path-projection-sl.patch) by saliola created at 2010-06-23 16:04:26\n\n1. Your definition of Pisot eigenvector is ambiguous.\n\n```\nReturns the left eigenvector of the incidence matrix associated\nto the largest eigenvalue (in absolute value).\n```\n\nIt is possible that there are multiple eigenvalues with the same absolute value:\n\n```\nsage: mu = WordMorphism('a->c,b->c,c->ab')\nsage: m = matrix(mu); m\n[0 0 1]\n[0 0 1]\n[1 1 0]\nsage: m.eigenvalues()\n[0, -1.414213562373095?, 1.414213562373095?]\n```\n\nIt is not clear which eigenvector gets returned here.\n\nAlso, there may be more than one eigenvector associated to your \"maximal\" eigenvalue, and your method only returns one eigenvector:\n\n```\nsage: mu = WordMorphism('a->a,b->b,c->abc')\nsage: mu.pisot_eigenvector_left()\n(1, -1, 0)\nsage: m = matrix(mu); m\n[1 0 1]\n[0 1 1]\n[0 0 1]\nsage: m.eigenspaces_left()\n[\n(1, Vector space of degree 3 and dimension 2 over Rational Field\nUser basis matrix:\n[ 1 -1  0]\n[ 0  0  1])\n]\n```\n\n\n2. The method `directive_vector` should include a definition of what the directive vector is.\n\n3. In your functions `rotate_ith_to_zero` and `rotate_vector_on_axis`, you first construct the matrix and then coerce it into the ring specified by the user. Why is this preferable to doing the computations directly in the ring? What about making this an option `compute_in_ring=False`? I think all you need to do is add the following line at the beginning:\n\n```\nif compute_in_ring is True:\n    v = vector(ring, v)\n```\n",
+    "body": "Attachment [trac_8670-word-path-projection-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670-word-path-projection-sl.patch) by @saliola created at 2010-06-23 16:04:26\n\n1. Your definition of Pisot eigenvector is ambiguous.\n\n```\nReturns the left eigenvector of the incidence matrix associated\nto the largest eigenvalue (in absolute value).\n```\n\nIt is possible that there are multiple eigenvalues with the same absolute value:\n\n```\nsage: mu = WordMorphism('a->c,b->c,c->ab')\nsage: m = matrix(mu); m\n[0 0 1]\n[0 0 1]\n[1 1 0]\nsage: m.eigenvalues()\n[0, -1.414213562373095?, 1.414213562373095?]\n```\n\nIt is not clear which eigenvector gets returned here.\n\nAlso, there may be more than one eigenvector associated to your \"maximal\" eigenvalue, and your method only returns one eigenvector:\n\n```\nsage: mu = WordMorphism('a->a,b->b,c->abc')\nsage: mu.pisot_eigenvector_left()\n(1, -1, 0)\nsage: m = matrix(mu); m\n[1 0 1]\n[0 1 1]\n[0 0 1]\nsage: m.eigenspaces_left()\n[\n(1, Vector space of degree 3 and dimension 2 over Rational Field\nUser basis matrix:\n[ 1 -1  0]\n[ 0  0  1])\n]\n```\n\n\n2. The method `directive_vector` should include a definition of what the directive vector is.\n\n3. In your functions `rotate_ith_to_zero` and `rotate_vector_on_axis`, you first construct the matrix and then coerce it into the ring specified by the user. Why is this preferable to doing the computations directly in the ring? What about making this an option `compute_in_ring=False`? I think all you need to do is add the following line at the beginning:\n\n```\nif compute_in_ring is True:\n    v = vector(ring, v)\n```\n",
     "created_at": "2010-06-23T16:04:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78896",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_8670-word-path-projection-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670-word-path-projection-sl.patch) by saliola created at 2010-06-23 16:04:26
+Attachment [trac_8670-word-path-projection-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670-word-path-projection-sl.patch) by @saliola created at 2010-06-23 16:04:26
 
 1. Your definition of Pisot eigenvector is ambiguous.
 
@@ -247,7 +247,7 @@ archive/issue_comments_078897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78897",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_078898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78898",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_078899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78899",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -296,16 +296,16 @@ Needs review again!
 archive/issue_comments_078900.json:
 ```json
 {
-    "body": "Attachment [trac_8670-review-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670-review-sl.patch) by slabbe created at 2010-10-15 22:05:42\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8670-review-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670-review-sl.patch) by @seblabbe created at 2010-10-15 22:05:42\n\nApplies over the precedent patch",
     "created_at": "2010-10-15T22:05:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78900",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8670-review-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670-review-sl.patch) by slabbe created at 2010-10-15 22:05:42
+Attachment [trac_8670-review-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670-review-sl.patch) by @seblabbe created at 2010-10-15 22:05:42
 
 Applies over the precedent patch
 
@@ -366,16 +366,16 @@ Otherwise this is a nice and useful patch.
 archive/issue_comments_078903.json:
 ```json
 {
-    "body": "Attachment [trac_8670_second_corrections-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670_second_corrections-sl.patch) by slabbe created at 2011-01-29 13:24:26\n\nApplies over the precedent 2 patches",
+    "body": "Attachment [trac_8670_second_corrections-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670_second_corrections-sl.patch) by @seblabbe created at 2011-01-29 13:24:26\n\nApplies over the precedent 2 patches",
     "created_at": "2011-01-29T13:24:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78903",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8670_second_corrections-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670_second_corrections-sl.patch) by slabbe created at 2011-01-29 13:24:26
+Attachment [trac_8670_second_corrections-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670_second_corrections-sl.patch) by @seblabbe created at 2011-01-29 13:24:26
 
 Applies over the precedent 2 patches
 
@@ -391,7 +391,7 @@ archive/issue_comments_078904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78904",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_078905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78905",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -424,16 +424,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_078906.json:
 ```json
 {
-    "body": "Attachment [trac_8670_folded-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670_folded-sl.patch) by slabbe created at 2011-01-30 00:42:40\n\nApply only this one.",
+    "body": "Attachment [trac_8670_folded-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670_folded-sl.patch) by @seblabbe created at 2011-01-30 00:42:40\n\nApply only this one.",
     "created_at": "2011-01-30T00:42:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78906",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8670_folded-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670_folded-sl.patch) by slabbe created at 2011-01-30 00:42:40
+Attachment [trac_8670_folded-sl.patch](tarball://root/attachments/some-uuid/ticket8670/trac_8670_folded-sl.patch) by @seblabbe created at 2011-01-30 00:42:40
 
 Apply only this one.
 
@@ -449,7 +449,7 @@ archive/issue_comments_078907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78907",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -487,7 +487,7 @@ archive/issue_comments_078909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8670",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78909",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

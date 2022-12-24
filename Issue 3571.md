@@ -3,7 +3,7 @@
 archive/issues_003571.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThe `ivalue` field for `IntegerMod_int` is `public`, but it shouldn't be. The following is very frightening, for instance:\n\n\n```\nsage: R = Integers(10)\nsage: x = R(2)\nsage: x\n2\nsage: x.ivalue = 33\nsage: x\n33\nsage: R(2)\n33\n```\n\n\nIt's easy to make this field no longer be public, but lots of things are using the fact that it is, so one needs to go through and make everything work correctly again.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3571\n\n",
+    "body": "Assignee: @craigcitro\n\nThe `ivalue` field for `IntegerMod_int` is `public`, but it shouldn't be. The following is very frightening, for instance:\n\n\n```\nsage: R = Integers(10)\nsage: x = R(2)\nsage: x\n2\nsage: x.ivalue = 33\nsage: x\n33\nsage: R(2)\n33\n```\n\n\nIt's easy to make this field no longer be public, but lots of things are using the fact that it is, so one needs to go through and make everything work correctly again.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3571\n\n",
     "created_at": "2008-07-06T20:55:32Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_003571.json:
     "title": "ivalue field in integer_mod.pyx shouldn't be public",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3571",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 The `ivalue` field for `IntegerMod_int` is `public`, but it shouldn't be. The following is very frightening, for instance:
 
@@ -53,7 +53,7 @@ archive/issue_comments_025224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3571#issuecomment-25224",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_025225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3571#issuecomment-25225",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -116,16 +116,16 @@ sage: timeit('x*y')
 archive/issue_comments_025226.json:
 ```json
 {
-    "body": "Attachment [trac-3571.patch](tarball://root/attachments/some-uuid/ticket3571/trac-3571.patch) by robertwb created at 2009-01-23 08:09:47",
+    "body": "Attachment [trac-3571.patch](tarball://root/attachments/some-uuid/ticket3571/trac-3571.patch) by @robertwb created at 2009-01-23 08:09:47",
     "created_at": "2009-01-23T08:09:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3571#issuecomment-25226",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [trac-3571.patch](tarball://root/attachments/some-uuid/ticket3571/trac-3571.patch) by robertwb created at 2009-01-23 08:09:47
+Attachment [trac-3571.patch](tarball://root/attachments/some-uuid/ticket3571/trac-3571.patch) by @robertwb created at 2009-01-23 08:09:47
 
 
 

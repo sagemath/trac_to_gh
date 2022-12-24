@@ -14,7 +14,7 @@ archive/issues_003769.json:
     "title": "dsage gets installed to SAGE_ROOT/usr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3769",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -37,7 +37,7 @@ archive/issue_comments_026825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3769",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3769#issuecomment-26825",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

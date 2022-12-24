@@ -3,7 +3,7 @@
 archive/issues_007198.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  burcin saliola malb\n\nKeywords: free algebra\n\nIteration over free algebra elements and monoid elements\n\nIssue created by migration from https://trac.sagemath.org/ticket/7198\n\n",
+    "body": "Assignee: tbd\n\nCC:  @burcin @saliola @malb\n\nKeywords: free algebra\n\nIteration over free algebra elements and monoid elements\n\nIssue created by migration from https://trac.sagemath.org/ticket/7198\n\n",
     "created_at": "2009-10-13T10:20:32Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_007198.json:
 ```
 Assignee: tbd
 
-CC:  burcin saliola malb
+CC:  @burcin @saliola @malb
 
 Keywords: free algebra
 
@@ -93,16 +93,16 @@ Changing status from new to needs_review.
 archive/issue_comments_059722.json:
 ```json
 {
-    "body": "Attachment [trac_7198-free_algebra_iterator.patch](tarball://root/attachments/some-uuid/ticket7198/trac_7198-free_algebra_iterator.patch) by burcin created at 2009-10-16 20:06:17",
+    "body": "Attachment [trac_7198-free_algebra_iterator.patch](tarball://root/attachments/some-uuid/ticket7198/trac_7198-free_algebra_iterator.patch) by @burcin created at 2009-10-16 20:06:17",
     "created_at": "2009-10-16T20:06:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7198#issuecomment-59722",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7198-free_algebra_iterator.patch](tarball://root/attachments/some-uuid/ticket7198/trac_7198-free_algebra_iterator.patch) by burcin created at 2009-10-16 20:06:17
+Attachment [trac_7198-free_algebra_iterator.patch](tarball://root/attachments/some-uuid/ticket7198/trac_7198-free_algebra_iterator.patch) by @burcin created at 2009-10-16 20:06:17
 
 
 
@@ -116,7 +116,7 @@ archive/issue_comments_059723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7198#issuecomment-59723",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_059724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7198#issuecomment-59724",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_059725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7198#issuecomment-59725",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_059726.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7198#issuecomment-59726",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_059727.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7198#issuecomment-59727",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_059728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7198#issuecomment-59728",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_059729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7198#issuecomment-59729",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_059730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7198#issuecomment-59730",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -259,16 +259,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_059731.json:
 ```json
 {
-    "body": "Attachment [trac_7198-string_monoid_element_iterator.patch](tarball://root/attachments/some-uuid/ticket7198/trac_7198-string_monoid_element_iterator.patch) by burcin created at 2009-12-29 21:44:43\n\nI added a new patch which restores the expected iterator interface of `StringMonoidElement`s.\n\nMartin, can you review my changes?\n\nBoth\n* attachment:trac_7198-free_algebra_iterator.patch and\n* attachment:trac_7198-string_monoid_element_iterator.patch\nshould be applied.",
+    "body": "Attachment [trac_7198-string_monoid_element_iterator.patch](tarball://root/attachments/some-uuid/ticket7198/trac_7198-string_monoid_element_iterator.patch) by @burcin created at 2009-12-29 21:44:43\n\nI added a new patch which restores the expected iterator interface of `StringMonoidElement`s.\n\nMartin, can you review my changes?\n\nBoth\n* attachment:trac_7198-free_algebra_iterator.patch and\n* attachment:trac_7198-string_monoid_element_iterator.patch\nshould be applied.",
     "created_at": "2009-12-29T21:44:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7198#issuecomment-59731",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7198-string_monoid_element_iterator.patch](tarball://root/attachments/some-uuid/ticket7198/trac_7198-string_monoid_element_iterator.patch) by burcin created at 2009-12-29 21:44:43
+Attachment [trac_7198-string_monoid_element_iterator.patch](tarball://root/attachments/some-uuid/ticket7198/trac_7198-string_monoid_element_iterator.patch) by @burcin created at 2009-12-29 21:44:43
 
 I added a new patch which restores the expected iterator interface of `StringMonoidElement`s.
 
@@ -291,7 +291,7 @@ archive/issue_comments_059732.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7198",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7198#issuecomment-59732",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

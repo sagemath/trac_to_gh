@@ -3,7 +3,7 @@
 archive/issues_009552.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCC:  fbissey\n\nI noticed to my surprise that misc/cython.pyx has these lines in it (which should be fixed, of course):\n\n```\n import sage.server.support\n    d = {}\n    sage.server.support.cython_import_all(tmpfile, d,\n                                         verbose=verbose, compile_message=compile_message,\n                                         use_cache=use_cache,\n                                         create_local_c_file=False)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9552\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  @kiwifb\n\nI noticed to my surprise that misc/cython.pyx has these lines in it (which should be fixed, of course):\n\n```\n import sage.server.support\n    d = {}\n    sage.server.support.cython_import_all(tmpfile, d,\n                                         verbose=verbose, compile_message=compile_message,\n                                         use_cache=use_cache,\n                                         create_local_c_file=False)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9552\n\n",
     "created_at": "2010-07-19T19:59:21Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_009552.json:
     "title": "cython.pyx references the old sage notebook code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9552",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
-CC:  fbissey
+CC:  @kiwifb
 
 I noticed to my surprise that misc/cython.pyx has these lines in it (which should be fixed, of course):
 
@@ -49,7 +49,7 @@ archive/issue_comments_092068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9552#issuecomment-92068",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_092069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9552#issuecomment-92069",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_092070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9552#issuecomment-92070",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_092071.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9552#issuecomment-92071",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_092073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9552#issuecomment-92073",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_092074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9552#issuecomment-92074",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_092075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9552",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9552#issuecomment-92075",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

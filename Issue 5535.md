@@ -3,7 +3,7 @@
 archive/issues_005535.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  malb cremona\n\nThe current (generic) code for is_primitive in rings/polynomial/polynomial_element.pyx is\n\n```\n        if not self.is_irreducible():\n            return False\n        p = self.parent().characteristic()\n        n = p ** self.degree() - 1\n        y = self.parent().quo(self).gen()\n        for d in n.prime_divisors():\n            if ( y ** (n//d) ) == 1:\n                return False\n        return True\n```\n\nNote that the integer n and its prime divisors are calculated as part of the algorithm.  This calculation can be lengthy for large n, and can dominate the running time of the algorithm.\n\nThe proposed patch adds optional arguments to is_primitive to provide the results of these calculations -- useful for is_primitive tests for multiple polynomials of the same degree.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5535\n\n",
+    "body": "Assignee: tbd\n\nCC:  @malb @JohnCremona\n\nThe current (generic) code for is_primitive in rings/polynomial/polynomial_element.pyx is\n\n```\n        if not self.is_irreducible():\n            return False\n        p = self.parent().characteristic()\n        n = p ** self.degree() - 1\n        y = self.parent().quo(self).gen()\n        for d in n.prime_divisors():\n            if ( y ** (n//d) ) == 1:\n                return False\n        return True\n```\n\nNote that the integer n and its prime divisors are calculated as part of the algorithm.  This calculation can be lengthy for large n, and can dominate the running time of the algorithm.\n\nThe proposed patch adds optional arguments to is_primitive to provide the results of these calculations -- useful for is_primitive tests for multiple polynomials of the same degree.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5535\n\n",
     "created_at": "2009-03-16T21:04:31Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_005535.json:
     "title": "is_primitive is computes integer prime factorization on every call",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5535",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 Assignee: tbd
 
-CC:  malb cremona
+CC:  @malb @JohnCremona
 
 The current (generic) code for is_primitive in rings/polynomial/polynomial_element.pyx is
 
@@ -55,7 +55,7 @@ archive/issue_comments_043031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43031",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_043034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43034",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_043035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43035",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_043036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43036",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_043037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43037",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -195,7 +195,7 @@ archive/issue_comments_043038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43038",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -223,16 +223,16 @@ AttributeError: 'int' object has no attribute 'prime_divisors'
 archive/issue_comments_043039.json:
 ```json
 {
-    "body": "Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.patch) by rhinton created at 2009-03-23 15:00:43",
+    "body": "Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.patch) by @rhinton created at 2009-03-23 15:00:43",
     "created_at": "2009-03-23T15:00:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43039",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.patch) by rhinton created at 2009-03-23 15:00:43
+Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.patch) by @rhinton created at 2009-03-23 15:00:43
 
 
 
@@ -246,7 +246,7 @@ archive/issue_comments_043040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43040",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -261,16 +261,16 @@ Let me know if I can fix anything else.  When this patch receives a positive rev
 archive/issue_comments_043041.json:
 ```json
 {
-    "body": "Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch) by cremona created at 2009-03-23 17:03:23",
+    "body": "Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch) by @JohnCremona created at 2009-03-23 17:03:23",
     "created_at": "2009-03-23T17:03:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43041",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch) by cremona created at 2009-03-23 17:03:23
+Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch) by @JohnCremona created at 2009-03-23 17:03:23
 
 
 
@@ -284,7 +284,7 @@ archive/issue_comments_043042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43042",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_043046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43046",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 

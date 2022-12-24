@@ -14,7 +14,7 @@ archive/issues_000524.json:
     "title": "fast squaring and doubling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/524",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -61,7 +61,7 @@ archive/issue_comments_002661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/524",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/524#issuecomment-2661",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

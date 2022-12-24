@@ -3,7 +3,7 @@
 archive/issues_000328.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\n\tGregory Vanuxem <g.vanuxem@wanadoo.fr> \t\nto SAGE-Devel\n\t\nshow details\n\t Mar 10 \n\nHello,\n\nHere is a simple session that exhibits a bug, I don't know \"where\" it\ncomes from:\n\n\n========================================================================\n$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.3, Release Date: 2007-03-06                         |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: f = maxima.function('x','gamma(x)')\n\nsage: # f # do not print f\n\nsage: g = f(1/7)\n\nsage: g\n gamma(1/7)\n\nsage: f = gp(sin(x))\n\nsage: f\n x - 1/6*x^3 + 1/120*x^5 - 1/5040*x^7 + 1/362880*x^9 - 1/39916800*x^11 +\n1/6227020800*x^13 - 1/1307674368000*x^15 + O(x^17)\n\nsage: maxima(sin(x))\n gamma(x)\n==========================================================================\n\n\nAt the end maxima(sin(x)) returns the MaximaElement gamma(x) :-(\n\nI spent some time trying to find a simple and reproducible way that\ntriggers this bug, modifying one line, for example printing 'f', can\nlead to an, apparently, correct computation so try this in a fresh\nsession.\n\nMany thanks for your work,\n\nGreg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/328\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\n\tGregory Vanuxem <g.vanuxem@wanadoo.fr> \t\nto SAGE-Devel\n\t\nshow details\n\t Mar 10 \n\nHello,\n\nHere is a simple session that exhibits a bug, I don't know \"where\" it\ncomes from:\n\n\n========================================================================\n$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.3, Release Date: 2007-03-06                         |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: f = maxima.function('x','gamma(x)')\n\nsage: # f # do not print f\n\nsage: g = f(1/7)\n\nsage: g\n gamma(1/7)\n\nsage: f = gp(sin(x))\n\nsage: f\n x - 1/6*x^3 + 1/120*x^5 - 1/5040*x^7 + 1/362880*x^9 - 1/39916800*x^11 +\n1/6227020800*x^13 - 1/1307674368000*x^15 + O(x^17)\n\nsage: maxima(sin(x))\n gamma(x)\n==========================================================================\n\n\nAt the end maxima(sin(x)) returns the MaximaElement gamma(x) :-(\n\nI spent some time trying to find a simple and reproducible way that\ntriggers this bug, modifying one line, for example printing 'f', can\nlead to an, apparently, correct computation so try this in a fresh\nsession.\n\nMany thanks for your work,\n\nGreg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/328\n\n",
     "created_at": "2007-03-22T02:39:30Z",
     "labels": [
         "interfaces",
@@ -13,10 +13,10 @@ archive/issues_000328.json:
     "title": "maximafunction bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/328",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -89,7 +89,7 @@ archive/issue_comments_001551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/328#issuecomment-1551",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_001552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/328#issuecomment-1552",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_001553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/328",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/328#issuecomment-1553",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

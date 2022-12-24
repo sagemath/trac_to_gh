@@ -3,7 +3,7 @@
 archive/issues_005117.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  mhampton vbraun\n\nThe Polyhedron class (in the polyhedra module) has a union method\n\n```\ndef union(self, other):\n    \"\"\"\n    Returns a polyhedron whose vertices are the union of the vertices\n    of the two polyhedra.\n    ....\n```\n\nThe name is misleading as the method does not return the union of `self` and `other` (which would not be a convex polyhedron).\n\nThe method should then be removed or renamed. As the method itself consists in one single line of code (and as I have no idea of a proper name), I would tend to remove it.\n\nThe attached patch removes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5117\n\n",
+    "body": "Assignee: mhampton\n\nCC:  mhampton @vbraun\n\nThe Polyhedron class (in the polyhedra module) has a union method\n\n```\ndef union(self, other):\n    \"\"\"\n    Returns a polyhedron whose vertices are the union of the vertices\n    of the two polyhedra.\n    ....\n```\n\nThe name is misleading as the method does not return the union of `self` and `other` (which would not be a convex polyhedron).\n\nThe method should then be removed or renamed. As the method itself consists in one single line of code (and as I have no idea of a proper name), I would tend to remove it.\n\nThe attached patch removes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5117\n\n",
     "created_at": "2009-01-28T13:00:55Z",
     "labels": [
         "geometry",
@@ -19,7 +19,7 @@ archive/issues_005117.json:
 ```
 Assignee: mhampton
 
-CC:  mhampton vbraun
+CC:  mhampton @vbraun
 
 The Polyhedron class (in the polyhedra module) has a union method
 
@@ -162,7 +162,7 @@ archive/issue_comments_039111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39111",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_039112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39112",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_039114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39114",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_039115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39115",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -278,16 +278,16 @@ Real Double Field
 archive/issue_comments_039116.json:
 ```json
 {
-    "body": "Attachment [14261.patch](tarball://root/attachments/some-uuid/ticket5117/14261.patch) by vbraun created at 2010-05-09 14:13:09",
+    "body": "Attachment [14261.patch](tarball://root/attachments/some-uuid/ticket5117/14261.patch) by @vbraun created at 2010-05-09 14:13:09",
     "created_at": "2010-05-09T14:13:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39116",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [14261.patch](tarball://root/attachments/some-uuid/ticket5117/14261.patch) by vbraun created at 2010-05-09 14:13:09
+Attachment [14261.patch](tarball://root/attachments/some-uuid/ticket5117/14261.patch) by @vbraun created at 2010-05-09 14:13:09
 
 
 
@@ -301,7 +301,7 @@ archive/issue_comments_039117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39117",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -314,16 +314,16 @@ Apply this patch first
 archive/issue_comments_039118.json:
 ```json
 {
-    "body": "Attachment [trac_5117_rename_union_to_convex_hull_add_coerce_field_for polyhedra.patch](tarball://root/attachments/some-uuid/ticket5117/trac_5117_rename_union_to_convex_hull_add_coerce_field_for polyhedra.patch) by novoselt created at 2010-05-09 15:40:00\n\nApply this patch second (and last)",
+    "body": "Attachment [trac_5117_rename_union_to_convex_hull_add_coerce_field_for polyhedra.patch](tarball://root/attachments/some-uuid/ticket5117/trac_5117_rename_union_to_convex_hull_add_coerce_field_for polyhedra.patch) by @novoselt created at 2010-05-09 15:40:00\n\nApply this patch second (and last)",
     "created_at": "2010-05-09T15:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39118",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_5117_rename_union_to_convex_hull_add_coerce_field_for polyhedra.patch](tarball://root/attachments/some-uuid/ticket5117/trac_5117_rename_union_to_convex_hull_add_coerce_field_for polyhedra.patch) by novoselt created at 2010-05-09 15:40:00
+Attachment [trac_5117_rename_union_to_convex_hull_add_coerce_field_for polyhedra.patch](tarball://root/attachments/some-uuid/ticket5117/trac_5117_rename_union_to_convex_hull_add_coerce_field_for polyhedra.patch) by @novoselt created at 2010-05-09 15:40:00
 
 Apply this patch second (and last)
 
@@ -334,16 +334,16 @@ Apply this patch second (and last)
 archive/issue_comments_039119.json:
 ```json
 {
-    "body": "Attachment [trac_5117_reviewer_docfixes.patch](tarball://root/attachments/some-uuid/ticket5117/trac_5117_reviewer_docfixes.patch) by novoselt created at 2010-05-09 15:45:03\n\nLooks good to me. I have renamed the original patch file to include the ticket number and its description. On top of that I have made the documentation look nicer and added a message to the TyperError exception. Passes all doctests, so I am giving this a positive review.\n\nMy only concern is whether or not we need to use some framework for deprecating functions or what is done for \"union\" is enough.",
+    "body": "Attachment [trac_5117_reviewer_docfixes.patch](tarball://root/attachments/some-uuid/ticket5117/trac_5117_reviewer_docfixes.patch) by @novoselt created at 2010-05-09 15:45:03\n\nLooks good to me. I have renamed the original patch file to include the ticket number and its description. On top of that I have made the documentation look nicer and added a message to the TyperError exception. Passes all doctests, so I am giving this a positive review.\n\nMy only concern is whether or not we need to use some framework for deprecating functions or what is done for \"union\" is enough.",
     "created_at": "2010-05-09T15:45:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39119",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_5117_reviewer_docfixes.patch](tarball://root/attachments/some-uuid/ticket5117/trac_5117_reviewer_docfixes.patch) by novoselt created at 2010-05-09 15:45:03
+Attachment [trac_5117_reviewer_docfixes.patch](tarball://root/attachments/some-uuid/ticket5117/trac_5117_reviewer_docfixes.patch) by @novoselt created at 2010-05-09 15:45:03
 
 Looks good to me. I have renamed the original patch file to include the ticket number and its description. On top of that I have made the documentation look nicer and added a message to the TyperError exception. Passes all doctests, so I am giving this a positive review.
 
@@ -361,7 +361,7 @@ archive/issue_comments_039120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39120",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_039121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39121",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

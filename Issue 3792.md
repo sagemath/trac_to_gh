@@ -14,7 +14,7 @@ archive/issues_003792.json:
     "title": "fix Sage build when there is a broken systemwide freetype library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3792",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 Assignee: mabshoff
@@ -42,7 +42,7 @@ archive/issue_comments_026964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3792#issuecomment-26964",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_026968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3792",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3792#issuecomment-26968",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008862.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman robert.marik jason\n\nKeywords: solve\n\nWe search the critical points of the function x|-> (x**2 + y**2)^x\n\nThis function has four critical points : \u00b1(0,1) and \u00b1(1/e,0) \n\nHowever the function solve can not find any of this.\n\nMore, solve returns (0,0) which is not a critical point since f is not differentiable at (0,0) !\n\n\n```\n  sage: var('x y')\n  sage: f(x,y) = (x^2 + y^2)^x\n  sage: solve([diff(f(x,y), x), diff(f(x,y), y)], x, y)\n  [[x == 0, y == 0]] \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8862\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @robert-marik @jasongrout\n\nKeywords: solve\n\nWe search the critical points of the function x|-> (x**2 + y**2)^x\n\nThis function has four critical points : \u00b1(0,1) and \u00b1(1/e,0) \n\nHowever the function solve can not find any of this.\n\nMore, solve returns (0,0) which is not a critical point since f is not differentiable at (0,0) !\n\n\n```\n  sage: var('x y')\n  sage: f(x,y) = (x^2 + y^2)^x\n  sage: solve([diff(f(x,y), x), diff(f(x,y), y)], x, y)\n  [[x == 0, y == 0]] \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8862\n\n",
     "created_at": "2010-05-03T19:55:59Z",
     "labels": [
         "calculus",
@@ -17,9 +17,9 @@ archive/issues_008862.json:
     "user": "casamayou"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman robert.marik jason
+CC:  @kcrisman @robert-marik @jasongrout
 
 Keywords: solve
 
@@ -56,7 +56,7 @@ archive/issue_comments_081449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8862#issuecomment-81449",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_081450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8862#issuecomment-81450",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_081451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8862#issuecomment-81451",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_081452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8862#issuecomment-81452",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_081453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8862#issuecomment-81453",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_081454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8862",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8862#issuecomment-81454",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009592.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  cremona\n\nAfter upgrading PARI/GP to version 2.4.3 (#9343), lcalc no longer compiles properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9592\n\n",
+    "body": "Assignee: tbd\n\nCC:  @JohnCremona\n\nAfter upgrading PARI/GP to version 2.4.3 (#9343), lcalc no longer compiles properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9592\n\n",
     "created_at": "2010-07-24T11:57:12Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009592.json:
     "title": "Upgrade lcalc to pari 2.4.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9592",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 Assignee: tbd
 
-CC:  cremona
+CC:  @JohnCremona
 
 After upgrading PARI/GP to version 2.4.3 (#9343), lcalc no longer compiles properly.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9592
 archive/issue_comments_092778.json:
 ```json
 {
-    "body": "Attachment [lcalc-newpari.patch](tarball://root/attachments/some-uuid/ticket9592/lcalc-newpari.patch) by jdemeyer created at 2010-07-24 13:07:50",
+    "body": "Attachment [lcalc-newpari.patch](tarball://root/attachments/some-uuid/ticket9592/lcalc-newpari.patch) by @jdemeyer created at 2010-07-24 13:07:50",
     "created_at": "2010-07-24T13:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92778",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [lcalc-newpari.patch](tarball://root/attachments/some-uuid/ticket9592/lcalc-newpari.patch) by jdemeyer created at 2010-07-24 13:07:50
+Attachment [lcalc-newpari.patch](tarball://root/attachments/some-uuid/ticket9592/lcalc-newpari.patch) by @jdemeyer created at 2010-07-24 13:07:50
 
 
 
@@ -52,16 +52,16 @@ Attachment [lcalc-newpari.patch](tarball://root/attachments/some-uuid/ticket9592
 archive/issue_comments_092779.json:
 ```json
 {
-    "body": "Changing assignee from tbd to jdemeyer.",
+    "body": "Changing assignee from tbd to @jdemeyer.",
     "created_at": "2010-07-24T13:10:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92779",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Changing assignee from tbd to jdemeyer.
+Changing assignee from tbd to @jdemeyer.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_092780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92780",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_092781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92781",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_092782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92782",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_092783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92783",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_092784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92784",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_092785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92785",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_092786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92786",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_092787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92787",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_092789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92789",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_092791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92791",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_092792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92792",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_092793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92793",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_092794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92794",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_092795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92795",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_092796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92796",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_092797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92797",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -471,7 +471,7 @@ archive/issue_comments_092798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92798",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -489,16 +489,16 @@ I copied your spkg to [http://cage.ugent.be/~jdemeyer/sage/lcalc-20100428-1.23.p
 archive/issue_comments_092799.json:
 ```json
 {
-    "body": "Attachment [spkg-install.diff](tarball://root/attachments/some-uuid/ticket9592/spkg-install.diff) by rishi created at 2010-08-14 13:15:56\n\nI am not sure what you want to be done. Can you make the changes and attach it here.\n\nReplying to [comment:21 leif]:\n> Replying to [comment:19 rishi]:\n> > I can see that this spkg does not depend on the upgrade to the new pari. This can be included before the latest version of pari is accepted. In couple of month, I will try to get Mike to use autotools for building. This will eliminate a lot of problems with spkg as of now. I am changing the status to needs review if it is ok with you.\n> \n> Perhaps do some of the clean-up I [suggested above](http://trac.sagemath.org/sage_trac/ticket/9592#comment:8)?\n> \n> There are further minor things (like the date/version at the top of `spkg-install`; `SAGE_DEBUG=yes` usually disables optimization, unquoted environment variables, etc.).\n> \n> I wonder if we should add (a) further patch(es) to get rid of some of the annoying warnings (cf. http://trac.sagemath.org/sage_trac/ticket/9343#comment:191 ff.), but we probably shouldn't do too much at this ticket.\n> \n> I'm not sure if Cygwin support is required yet... ;-)",
+    "body": "Attachment [spkg-install.diff](tarball://root/attachments/some-uuid/ticket9592/spkg-install.diff) by @rishikesha created at 2010-08-14 13:15:56\n\nI am not sure what you want to be done. Can you make the changes and attach it here.\n\nReplying to [comment:21 leif]:\n> Replying to [comment:19 rishi]:\n> > I can see that this spkg does not depend on the upgrade to the new pari. This can be included before the latest version of pari is accepted. In couple of month, I will try to get Mike to use autotools for building. This will eliminate a lot of problems with spkg as of now. I am changing the status to needs review if it is ok with you.\n> \n> Perhaps do some of the clean-up I [suggested above](http://trac.sagemath.org/sage_trac/ticket/9592#comment:8)?\n> \n> There are further minor things (like the date/version at the top of `spkg-install`; `SAGE_DEBUG=yes` usually disables optimization, unquoted environment variables, etc.).\n> \n> I wonder if we should add (a) further patch(es) to get rid of some of the annoying warnings (cf. http://trac.sagemath.org/sage_trac/ticket/9343#comment:191 ff.), but we probably shouldn't do too much at this ticket.\n> \n> I'm not sure if Cygwin support is required yet... ;-)",
     "created_at": "2010-08-14T13:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92799",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [spkg-install.diff](tarball://root/attachments/some-uuid/ticket9592/spkg-install.diff) by rishi created at 2010-08-14 13:15:56
+Attachment [spkg-install.diff](tarball://root/attachments/some-uuid/ticket9592/spkg-install.diff) by @rishikesha created at 2010-08-14 13:15:56
 
 I am not sure what you want to be done. Can you make the changes and attach it here.
 
@@ -526,7 +526,7 @@ archive/issue_comments_092800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92800",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -539,16 +539,16 @@ Changing priority from major to blocker.
 archive/issue_comments_092801.json:
 ```json
 {
-    "body": "Attachment [lcalc-spkg.patch](tarball://root/attachments/some-uuid/ticket9592/lcalc-spkg.patch) by jdemeyer created at 2010-08-21 12:44:27\n\nComplete spkg patch (for reference)",
+    "body": "Attachment [lcalc-spkg.patch](tarball://root/attachments/some-uuid/ticket9592/lcalc-spkg.patch) by @jdemeyer created at 2010-08-21 12:44:27\n\nComplete spkg patch (for reference)",
     "created_at": "2010-08-21T12:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92801",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [lcalc-spkg.patch](tarball://root/attachments/some-uuid/ticket9592/lcalc-spkg.patch) by jdemeyer created at 2010-08-21 12:44:27
+Attachment [lcalc-spkg.patch](tarball://root/attachments/some-uuid/ticket9592/lcalc-spkg.patch) by @jdemeyer created at 2010-08-21 12:44:27
 
 Complete spkg patch (for reference)
 
@@ -564,7 +564,7 @@ archive/issue_comments_092802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92802",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -582,7 +582,7 @@ archive/issue_comments_092803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92803",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_092804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92804",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -621,7 +621,7 @@ archive/issue_comments_092805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92805",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -639,7 +639,7 @@ archive/issue_comments_092806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92806",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -660,7 +660,7 @@ archive/issue_comments_092807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92807",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -684,7 +684,7 @@ archive/issue_comments_092808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92808",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -702,7 +702,7 @@ archive/issue_comments_092809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92809",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -733,7 +733,7 @@ archive/issue_comments_092810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92810",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -751,7 +751,7 @@ archive/issue_comments_092811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92811",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -769,7 +769,7 @@ archive/issue_comments_092812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9592",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9592#issuecomment-92812",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

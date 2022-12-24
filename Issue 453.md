@@ -3,7 +3,7 @@
 archive/issues_000453.json:
 ```json
 {
-    "body": "Assignee: malb\n\nHello Martin, \n\ncan you merge the following?\n\nFrom Didier Deshommes:\n\nAnd for singular to find ix86-nexentaos, singuname.sh has to have the following:\n\n```\nelif (echo $uname_a | $egrep \"SunOS\" >$devnull)\n    then\n        # NexentaOS ###############\n        if (echo $uname_a | $egrep \"NexentaOS\" > $devnull)\n            then\n               #echo \"----------------------------------------------------\"\n               echo ${prefix}-nexentaos\n               #echo \"----------------------------------------------------\"\n               #exit 0\n        else\n            echo ix86-SunOS\n            #exit 0\n        fi\n        exit 0\n```\n\n\nThis might also be interesting for the official Singular upstream.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/453\n\n",
+    "body": "Assignee: @malb\n\nHello Martin, \n\ncan you merge the following?\n\nFrom Didier Deshommes:\n\nAnd for singular to find ix86-nexentaos, singuname.sh has to have the following:\n\n```\nelif (echo $uname_a | $egrep \"SunOS\" >$devnull)\n    then\n        # NexentaOS ###############\n        if (echo $uname_a | $egrep \"NexentaOS\" > $devnull)\n            then\n               #echo \"----------------------------------------------------\"\n               echo ${prefix}-nexentaos\n               #echo \"----------------------------------------------------\"\n               #exit 0\n        else\n            echo ix86-SunOS\n            #exit 0\n        fi\n        exit 0\n```\n\n\nThis might also be interesting for the official Singular upstream.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/453\n\n",
     "created_at": "2007-08-19T08:27:02Z",
     "labels": [
         "packages: standard",
@@ -17,7 +17,7 @@ archive/issues_000453.json:
     "user": "mabshoff"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Hello Martin, 
 
@@ -67,7 +67,7 @@ archive/issue_comments_002258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/453#issuecomment-2258",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_002259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/453#issuecomment-2259",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003744.json:
 ```json
 {
-    "body": "Assignee: robertwb\n\nThis is in accordance with the programming guide. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3744\n\n",
+    "body": "Assignee: @robertwb\n\nThis is in accordance with the programming guide. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3744\n\n",
     "created_at": "2008-07-30T05:00:58Z",
     "labels": [
         "coercion",
@@ -14,10 +14,10 @@ archive/issues_003744.json:
     "title": "Coercion between isomorphic parents should result in an element of the left operand's parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3744",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: robertwb
+Assignee: @robertwb
 
 This is in accordance with the programming guide. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3744
 archive/issue_comments_026587.json:
 ```json
 {
-    "body": "Attachment [3744-coercion-left.patch](tarball://root/attachments/some-uuid/ticket3744/3744-coercion-left.patch) by robertwb created at 2008-07-30 05:02:39",
+    "body": "Attachment [3744-coercion-left.patch](tarball://root/attachments/some-uuid/ticket3744/3744-coercion-left.patch) by @robertwb created at 2008-07-30 05:02:39",
     "created_at": "2008-07-30T05:02:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3744#issuecomment-26587",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [3744-coercion-left.patch](tarball://root/attachments/some-uuid/ticket3744/3744-coercion-left.patch) by robertwb created at 2008-07-30 05:02:39
+Attachment [3744-coercion-left.patch](tarball://root/attachments/some-uuid/ticket3744/3744-coercion-left.patch) by @robertwb created at 2008-07-30 05:02:39
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_026588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3744#issuecomment-26588",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_026589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3744#issuecomment-26589",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_026590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3744#issuecomment-26590",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

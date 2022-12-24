@@ -59,16 +59,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9001
 archive/issue_comments_083231.json:
 ```json
 {
-    "body": "Attachment [trac_9001.patch](tarball://root/attachments/some-uuid/ticket9001/trac_9001.patch) by was created at 2010-06-04 05:53:17",
+    "body": "Attachment [trac_9001.patch](tarball://root/attachments/some-uuid/ticket9001/trac_9001.patch) by @williamstein created at 2010-06-04 05:53:17",
     "created_at": "2010-06-04T05:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83231",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_9001.patch](tarball://root/attachments/some-uuid/ticket9001/trac_9001.patch) by was created at 2010-06-04 05:53:17
+Attachment [trac_9001.patch](tarball://root/attachments/some-uuid/ticket9001/trac_9001.patch) by @williamstein created at 2010-06-04 05:53:17
 
 
 
@@ -82,7 +82,7 @@ archive/issue_comments_083232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83232",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_083233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83233",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_083234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83234",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_083235.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9001",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83235",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

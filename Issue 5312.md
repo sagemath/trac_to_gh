@@ -3,7 +3,7 @@
 archive/issues_005312.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  mjo\n\nThere is a weird interaction between time and preparser, almost as if input to time is being preparsed *twice*:\n\n\n```\nwstein@sage:~/build/sage-3.3.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: k = 3r\nsage: type(k)\n<type 'int'>\nsage: time k = 3r\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: type(k)\n<type 'sage.rings.integer.Integer'>\nsage: preparse('k = 3r')\n'k = 3'\nsage: preparse('time k = 3r')\n'time k = 3'\n```\n\n| Sage Version 3.3.rc1, Release Date: 2009-02-16                     |\n| Type notebook() for the GUI, and license() for information.        |\nIn the above, type(k) should have been int in all cases.  Why isn't it the second time.  WEIRD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5312\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @orlitzky\n\nThere is a weird interaction between time and preparser, almost as if input to time is being preparsed *twice*:\n\n\n```\nwstein@sage:~/build/sage-3.3.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: k = 3r\nsage: type(k)\n<type 'int'>\nsage: time k = 3r\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: type(k)\n<type 'sage.rings.integer.Integer'>\nsage: preparse('k = 3r')\n'k = 3'\nsage: preparse('time k = 3r')\n'time k = 3'\n```\n\n| Sage Version 3.3.rc1, Release Date: 2009-02-16                     |\n| Type notebook() for the GUI, and license() for information.        |\nIn the above, type(k) should have been int in all cases.  Why isn't it the second time.  WEIRD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5312\n\n",
     "created_at": "2009-02-19T08:31:41Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_005312.json:
     "title": "command line -- bug in preparser and \"time\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5312",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
 
-CC:  mjo
+CC:  @orlitzky
 
 There is a weird interaction between time and preparser, almost as if input to time is being preparsed *twice*:
 
@@ -62,7 +62,7 @@ archive/issue_comments_040915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5312#issuecomment-40915",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_040916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5312#issuecomment-40916",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_040917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5312#issuecomment-40917",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

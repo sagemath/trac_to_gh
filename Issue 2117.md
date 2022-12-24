@@ -14,7 +14,7 @@ archive/issues_002117.json:
     "title": "problems with \"...?starup_token=...\" URL in notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2117",
-    "user": "nbruin"
+    "user": "@nbruin"
 }
 ```
 Assignee: boothby
@@ -46,7 +46,7 @@ archive/issue_comments_013879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2117#issuecomment-13879",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_013880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2117#issuecomment-13880",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_013884.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2117#issuecomment-13884",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_013885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2117#issuecomment-13885",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

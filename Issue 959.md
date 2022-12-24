@@ -3,7 +3,7 @@
 archive/issues_000959.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n> It looks like maybe there is an issue with the system-wide boost\n> you have installed.\n\nThanks William. Moving /usr/include/boost to /usr/include/boost.old and\ntyping again make in SAGE_ROOT did it. You can recommend it to users who\nencounter the same problem.\n```\n\n\nSo, can we turn off Singular using boost at all, by default?\n\nIssue created by migration from https://trac.sagemath.org/ticket/959\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n> It looks like maybe there is an issue with the system-wide boost\n> you have installed.\n\nThanks William. Moving /usr/include/boost to /usr/include/boost.old and\ntyping again make in SAGE_ROOT did it. You can recommend it to users who\nencounter the same problem.\n```\n\n\nSo, can we turn off Singular using boost at all, by default?\n\nIssue created by migration from https://trac.sagemath.org/ticket/959\n\n",
     "created_at": "2007-10-21T12:41:12Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000959.json:
     "title": "errors building sage because singular gets confused by system-wide boost",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/959",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -70,7 +70,7 @@ archive/issue_comments_005843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/959#issuecomment-5843",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -83,16 +83,16 @@ Changing status from new to assigned.
 archive/issue_comments_005844.json:
 ```json
 {
-    "body": "Changing assignee from was to malb.",
+    "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-10-21T22:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/959#issuecomment-5844",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Changing assignee from was to malb.
+Changing assignee from @williamstein to @malb.
 
 
 
@@ -106,7 +106,7 @@ archive/issue_comments_005845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/959#issuecomment-5845",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_005846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/959#issuecomment-5846",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_005847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/959",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/959#issuecomment-5847",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

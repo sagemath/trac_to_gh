@@ -3,7 +3,7 @@
 archive/issues_000757.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: ntl\n\nFor fast arithmetic on Z/pZ with small p. \n\nIssue created by migration from https://trac.sagemath.org/ticket/757\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: ntl\n\nFor fast arithmetic on Z/pZ with small p. \n\nIssue created by migration from https://trac.sagemath.org/ticket/757\n\n",
     "created_at": "2007-09-28T11:47:42Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_000757.json:
     "title": "Wrap NTL's zz_pX class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/757",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: ntl
 
@@ -39,7 +39,7 @@ archive/issue_comments_004488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/757#issuecomment-4488",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -52,16 +52,16 @@ Craig Citro's first pass
 archive/issue_comments_004489.json:
 ```json
 {
-    "body": "Attachment [ntl_zz_pX.hg](tarball://root/attachments/some-uuid/ticket757/ntl_zz_pX.hg) by robertwb created at 2007-09-28 11:48:37",
+    "body": "Attachment [ntl_zz_pX.hg](tarball://root/attachments/some-uuid/ticket757/ntl_zz_pX.hg) by @robertwb created at 2007-09-28 11:48:37",
     "created_at": "2007-09-28T11:48:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/757#issuecomment-4489",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [ntl_zz_pX.hg](tarball://root/attachments/some-uuid/ticket757/ntl_zz_pX.hg) by robertwb created at 2007-09-28 11:48:37
+Attachment [ntl_zz_pX.hg](tarball://root/attachments/some-uuid/ticket757/ntl_zz_pX.hg) by @robertwb created at 2007-09-28 11:48:37
 
 
 
@@ -70,16 +70,16 @@ Attachment [ntl_zz_pX.hg](tarball://root/attachments/some-uuid/ticket757/ntl_zz_
 archive/issue_comments_004490.json:
 ```json
 {
-    "body": "Attachment [ntl_zz_pX-work.hg](tarball://root/attachments/some-uuid/ticket757/ntl_zz_pX-work.hg) by mhansen created at 2007-09-29 18:37:08",
+    "body": "Attachment [ntl_zz_pX-work.hg](tarball://root/attachments/some-uuid/ticket757/ntl_zz_pX-work.hg) by @mwhansen created at 2007-09-29 18:37:08",
     "created_at": "2007-09-29T18:37:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/757#issuecomment-4490",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [ntl_zz_pX-work.hg](tarball://root/attachments/some-uuid/ticket757/ntl_zz_pX-work.hg) by mhansen created at 2007-09-29 18:37:08
+Attachment [ntl_zz_pX-work.hg](tarball://root/attachments/some-uuid/ticket757/ntl_zz_pX-work.hg) by @mwhansen created at 2007-09-29 18:37:08
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_004491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/757#issuecomment-4491",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_004493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/757",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/757#issuecomment-4493",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

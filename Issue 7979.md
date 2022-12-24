@@ -3,7 +3,7 @@
 archive/issues_007979.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jsp\n\npdehaye reported a build error in pari on IRC.\n\nWe tracked this down to what seems to be a bug in pari's Configure script (or rather config/get_fltk): if X11 is not found, and fltk is found, it ignores the --graphic=none option. It then tries to build with fltk support, and fails spectacularly.\n\n(Aside: pari-2.4.2.alpha still has the same logic in config/get_fltk.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7979\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies\n\npdehaye reported a build error in pari on IRC.\n\nWe tracked this down to what seems to be a bug in pari's Configure script (or rather config/get_fltk): if X11 is not found, and fltk is found, it ignores the --graphic=none option. It then tries to build with fltk support, and fails spectacularly.\n\n(Aside: pari-2.4.2.alpha still has the same logic in config/get_fltk.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7979\n\n",
     "created_at": "2010-01-18T17:48:44Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_007979.json:
     "title": "pari-2.3.3 sometimes ignores --graphic=none build option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7979",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  jsp
+CC:  @jaapspies
 
 pdehaye reported a build error in pari on IRC.
 
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7979
 archive/issue_comments_069613.json:
 ```json
 {
-    "body": "Attachment [pari_fltk.patch](tarball://root/attachments/some-uuid/ticket7979/pari_fltk.patch) by wjp created at 2010-01-18 18:21:12\n\nI contacted Karim Belabas about this, suggesting the attached patch to pari's `config/get_fltk`.",
+    "body": "Attachment [pari_fltk.patch](tarball://root/attachments/some-uuid/ticket7979/pari_fltk.patch) by @wjp created at 2010-01-18 18:21:12\n\nI contacted Karim Belabas about this, suggesting the attached patch to pari's `config/get_fltk`.",
     "created_at": "2010-01-18T18:21:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7979",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7979#issuecomment-69613",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [pari_fltk.patch](tarball://root/attachments/some-uuid/ticket7979/pari_fltk.patch) by wjp created at 2010-01-18 18:21:12
+Attachment [pari_fltk.patch](tarball://root/attachments/some-uuid/ticket7979/pari_fltk.patch) by @wjp created at 2010-01-18 18:21:12
 
 I contacted Karim Belabas about this, suggesting the attached patch to pari's `config/get_fltk`.
 

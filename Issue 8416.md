@@ -3,7 +3,7 @@
 archive/issues_008416.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nApplying all the patches at #8409, Sage 4.3.3 builds and passes all the normal doctests on Solaris 10 (SPARC) using the following hardware:\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\nRunning the long doctests there was one failure:\n\n\n```\nsage -t  -long \"devel/sage/sage/schemes/elliptic_curves/ell_modular_symbols.py\"\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [3.0 s]\n```\n\n\nThis needs to be investigated. I've no idea if this is troublesome on any other platform.\n\n\nPS, Using the hardware above, the time taken for the longest test was 1764.9 s.\n\n\n```\nsage -t  -long \"devel/sage/sage/modular/ssmod/ssmod.py\"\n         [1764.9 s]\n```\n\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/8416\n\n",
+    "body": "Assignee: @JohnCremona\n\nApplying all the patches at #8409, Sage 4.3.3 builds and passes all the normal doctests on Solaris 10 (SPARC) using the following hardware:\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\nRunning the long doctests there was one failure:\n\n\n```\nsage -t  -long \"devel/sage/sage/schemes/elliptic_curves/ell_modular_symbols.py\"\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [3.0 s]\n```\n\n\nThis needs to be investigated. I've no idea if this is troublesome on any other platform.\n\n\nPS, Using the hardware above, the time taken for the longest test was 1764.9 s.\n\n\n```\nsage -t  -long \"devel/sage/sage/modular/ssmod/ssmod.py\"\n         [1764.9 s]\n```\n\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/8416\n\n",
     "created_at": "2010-03-02T10:58:15Z",
     "labels": [
         "elliptic curves",
@@ -17,7 +17,7 @@ archive/issues_008416.json:
     "user": "drkirkby"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
 Applying all the patches at #8409, Sage 4.3.3 builds and passes all the normal doctests on Solaris 10 (SPARC) using the following hardware:
 

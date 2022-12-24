@@ -14,7 +14,7 @@ archive/issues_000606.json:
     "title": "add notebook support for loading of spyx and pyx files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/606",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: boothby
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/606
 archive/issue_comments_003114.json:
 ```json
 {
-    "body": "Attachment [606.patch](tarball://root/attachments/some-uuid/ticket606/606.patch) by mhansen created at 2007-09-07 00:32:49",
+    "body": "Attachment [606.patch](tarball://root/attachments/some-uuid/ticket606/606.patch) by @mwhansen created at 2007-09-07 00:32:49",
     "created_at": "2007-09-07T00:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/606#issuecomment-3114",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [606.patch](tarball://root/attachments/some-uuid/ticket606/606.patch) by mhansen created at 2007-09-07 00:32:49
+Attachment [606.patch](tarball://root/attachments/some-uuid/ticket606/606.patch) by @mwhansen created at 2007-09-07 00:32:49
 
 
 
@@ -73,16 +73,16 @@ Attachment [606.patch](tarball://root/attachments/some-uuid/ticket606/606.patch)
 archive/issue_comments_003115.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2007-09-07T00:33:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/606#issuecomment-3115",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_003116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/606#issuecomment-3116",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_003117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/606#issuecomment-3117",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_003118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/606#issuecomment-3118",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_003119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/606#issuecomment-3119",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -171,16 +171,16 @@ def foo(int n):
 archive/issue_comments_003120.json:
 ```json
 {
-    "body": "Attachment [606-2.patch](tarball://root/attachments/some-uuid/ticket606/606-2.patch) by was created at 2007-09-07 02:38:08\n\nchanged version that i like",
+    "body": "Attachment [606-2.patch](tarball://root/attachments/some-uuid/ticket606/606-2.patch) by @williamstein created at 2007-09-07 02:38:08\n\nchanged version that i like",
     "created_at": "2007-09-07T02:38:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/606#issuecomment-3120",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [606-2.patch](tarball://root/attachments/some-uuid/ticket606/606-2.patch) by was created at 2007-09-07 02:38:08
+Attachment [606-2.patch](tarball://root/attachments/some-uuid/ticket606/606-2.patch) by @williamstein created at 2007-09-07 02:38:08
 
 changed version that i like
 
@@ -196,7 +196,7 @@ archive/issue_comments_003121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/606#issuecomment-3121",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -209,13 +209,13 @@ Resolution: fixed
 archive/issue_comments_003122.json:
 ```json
 {
-    "body": "Attachment [6199.patch](tarball://root/attachments/some-uuid/ticket606/6199.patch) by was created at 2007-09-07 02:38:16",
+    "body": "Attachment [6199.patch](tarball://root/attachments/some-uuid/ticket606/6199.patch) by @williamstein created at 2007-09-07 02:38:16",
     "created_at": "2007-09-07T02:38:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/606",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/606#issuecomment-3122",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [6199.patch](tarball://root/attachments/some-uuid/ticket606/6199.patch) by was created at 2007-09-07 02:38:16
+Attachment [6199.patch](tarball://root/attachments/some-uuid/ticket606/6199.patch) by @williamstein created at 2007-09-07 02:38:16

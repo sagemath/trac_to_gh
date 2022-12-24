@@ -86,7 +86,7 @@ archive/issue_comments_083467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9021#issuecomment-83467",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_083468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9021#issuecomment-83468",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -134,16 +134,16 @@ Oh, the "usual" method of setting/modifying `CFLAGS` et al. in `spkg-install` *s
 archive/issue_comments_083469.json:
 ```json
 {
-    "body": "Attachment [trac_9021-build_64-bit_gdmodule_on_solaris.patch](tarball://root/attachments/some-uuid/ticket9021/trac_9021-build_64-bit_gdmodule_on_solaris.patch) by leif created at 2010-05-24 17:53:23\n\nModifies `patches/Setup.py` to honor `$SAGE64`. Testing is up to you!",
+    "body": "Attachment [trac_9021-build_64-bit_gdmodule_on_solaris.patch](tarball://root/attachments/some-uuid/ticket9021/trac_9021-build_64-bit_gdmodule_on_solaris.patch) by @nexttime created at 2010-05-24 17:53:23\n\nModifies `patches/Setup.py` to honor `$SAGE64`. Testing is up to you!",
     "created_at": "2010-05-24T17:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9021#issuecomment-83469",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9021-build_64-bit_gdmodule_on_solaris.patch](tarball://root/attachments/some-uuid/ticket9021/trac_9021-build_64-bit_gdmodule_on_solaris.patch) by leif created at 2010-05-24 17:53:23
+Attachment [trac_9021-build_64-bit_gdmodule_on_solaris.patch](tarball://root/attachments/some-uuid/ticket9021/trac_9021-build_64-bit_gdmodule_on_solaris.patch) by @nexttime created at 2010-05-24 17:53:23
 
 Modifies `patches/Setup.py` to honor `$SAGE64`. Testing is up to you!
 
@@ -159,7 +159,7 @@ archive/issue_comments_083470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9021#issuecomment-83470",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_083474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9021",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9021#issuecomment-83474",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

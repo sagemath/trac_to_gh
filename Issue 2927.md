@@ -92,16 +92,16 @@ Attachment [singular-readcf.cc.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_020151.json:
 ```json
 {
-    "body": "Attachment [singular-readcf.y.patch](tarball://root/attachments/some-uuid/ticket2927/singular-readcf.y.patch) by gfurnish created at 2008-04-15 05:53:31\n\nWorks for me",
+    "body": "Attachment [singular-readcf.y.patch](tarball://root/attachments/some-uuid/ticket2927/singular-readcf.y.patch) by @garyfurnish created at 2008-04-15 05:53:31\n\nWorks for me",
     "created_at": "2008-04-15T05:53:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2927",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2927#issuecomment-20151",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [singular-readcf.y.patch](tarball://root/attachments/some-uuid/ticket2927/singular-readcf.y.patch) by gfurnish created at 2008-04-15 05:53:31
+Attachment [singular-readcf.y.patch](tarball://root/attachments/some-uuid/ticket2927/singular-readcf.y.patch) by @garyfurnish created at 2008-04-15 05:53:31
 
 Works for me
 

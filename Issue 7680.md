@@ -14,7 +14,7 @@ archive/issues_007680.json:
     "title": "disable long random tests in partn_ref",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7680",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: joyner
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7680
 archive/issue_comments_065878.json:
 ```json
 {
-    "body": "Attachment [trac_7680.patch](tarball://root/attachments/some-uuid/ticket7680/trac_7680.patch) by rlm created at 2009-12-14 02:26:20",
+    "body": "Attachment [trac_7680.patch](tarball://root/attachments/some-uuid/ticket7680/trac_7680.patch) by @rlmill created at 2009-12-14 02:26:20",
     "created_at": "2009-12-14T02:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7680#issuecomment-65878",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7680.patch](tarball://root/attachments/some-uuid/ticket7680/trac_7680.patch) by rlm created at 2009-12-14 02:26:20
+Attachment [trac_7680.patch](tarball://root/attachments/some-uuid/ticket7680/trac_7680.patch) by @rlmill created at 2009-12-14 02:26:20
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_065879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7680#issuecomment-65879",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_065880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7680",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7680#issuecomment-65880",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

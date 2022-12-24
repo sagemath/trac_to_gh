@@ -3,7 +3,7 @@
 archive/issues_005750.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThe summary really says it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5750\n\n",
+    "body": "Assignee: @craigcitro\n\nThe summary really says it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5750\n\n",
     "created_at": "2009-04-11T09:16:58Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_005750.json:
     "title": "[with patch, needs review] Bring coverage of sage/matrix/matrix_integer_2x2.pyx to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5750",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 The summary really says it all.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5750
 archive/issue_comments_044943.json:
 ```json
 {
-    "body": "Attachment [m2x2-doc.patch](tarball://root/attachments/some-uuid/ticket5750/m2x2-doc.patch) by craigcitro created at 2009-04-11 09:17:13",
+    "body": "Attachment [m2x2-doc.patch](tarball://root/attachments/some-uuid/ticket5750/m2x2-doc.patch) by @craigcitro created at 2009-04-11 09:17:13",
     "created_at": "2009-04-11T09:17:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5750#issuecomment-44943",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [m2x2-doc.patch](tarball://root/attachments/some-uuid/ticket5750/m2x2-doc.patch) by craigcitro created at 2009-04-11 09:17:13
+Attachment [m2x2-doc.patch](tarball://root/attachments/some-uuid/ticket5750/m2x2-doc.patch) by @craigcitro created at 2009-04-11 09:17:13
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_044944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5750#issuecomment-44944",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_044945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5750#issuecomment-44945",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

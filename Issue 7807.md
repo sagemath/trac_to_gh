@@ -3,7 +3,7 @@
 archive/issues_007807.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is inconsistent with other plotting functions.\n\n\n```\nsage: region_plot([x^2+y^2<1, x<y], (x,-2,2), (y,-2,2),aspect_ratio=1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/tiny/2531/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    136                 options['__original_opts'] = kwds\n    137             options.update(kwds)\n--> 138             return func(*args, **options)\n    139 \n    140         \n\nTypeError: region_plot() got an unexpected keyword argument 'aspect_ratio'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7807\n\n",
+    "body": "Assignee: @williamstein\n\nThis is inconsistent with other plotting functions.\n\n\n```\nsage: region_plot([x^2+y^2<1, x<y], (x,-2,2), (y,-2,2),aspect_ratio=1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/tiny/2531/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    136                 options['__original_opts'] = kwds\n    137             options.update(kwds)\n--> 138             return func(*args, **options)\n    139 \n    140         \n\nTypeError: region_plot() got an unexpected keyword argument 'aspect_ratio'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7807\n\n",
     "created_at": "2010-01-01T18:19:43Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_007807.json:
     "title": "region_plot does not pass extra arguments to show",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7807",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is inconsistent with other plotting functions.
 
@@ -56,7 +56,7 @@ archive/issue_comments_067536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67536",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_067537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67537",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_067540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67540",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_067541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7807",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67541",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

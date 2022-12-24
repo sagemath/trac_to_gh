@@ -14,7 +14,7 @@ archive/issues_002830.json:
     "title": "ace-5.0.spkg fails to install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2830",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 Assignee: mabshoff

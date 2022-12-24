@@ -3,7 +3,7 @@
 archive/issues_007594.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nAs the title say, implement a LP formulation of the Dominating set problem ( and the independent vertsion of it )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7594\n\n",
+    "body": "Assignee: @rlmill\n\nAs the title say, implement a LP formulation of the Dominating set problem ( and the independent vertsion of it )\n\nIssue created by migration from https://trac.sagemath.org/ticket/7594\n\n",
     "created_at": "2009-12-03T14:55:14Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007594.json:
     "title": "Dominating set and Independent dominating Set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7594",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 As the title say, implement a LP formulation of the Dominating set problem ( and the independent vertsion of it )
 
@@ -37,7 +37,7 @@ archive/issue_comments_064754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7594#issuecomment-64754",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_064755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7594#issuecomment-64755",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_064756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7594#issuecomment-64756",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_064757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7594#issuecomment-64757",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_064758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7594#issuecomment-64758",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -122,16 +122,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_064759.json:
 ```json
 {
-    "body": "Attachment [trac_7594.patch](tarball://root/attachments/some-uuid/ticket7594/trac_7594.patch) by ncohen created at 2009-12-16 11:14:55",
+    "body": "Attachment [trac_7594.patch](tarball://root/attachments/some-uuid/ticket7594/trac_7594.patch) by @nathanncohen created at 2009-12-16 11:14:55",
     "created_at": "2009-12-16T11:14:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7594#issuecomment-64759",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7594.patch](tarball://root/attachments/some-uuid/ticket7594/trac_7594.patch) by ncohen created at 2009-12-16 11:14:55
+Attachment [trac_7594.patch](tarball://root/attachments/some-uuid/ticket7594/trac_7594.patch) by @nathanncohen created at 2009-12-16 11:14:55
 
 
 
@@ -145,7 +145,7 @@ archive/issue_comments_064760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7594#issuecomment-64760",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_064761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7594",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7594#issuecomment-64761",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

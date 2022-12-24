@@ -3,7 +3,7 @@
 archive/issues_009674.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  malb\n\nRevision sage/crypto/mq/sbox.py [11673:11b2f556827a:12294:d7533ae4895e] (explacing log_b() by exact_log()) causes the following problems:\n\n* difference_distribution_matrix() (in crypto/mq/sbox.py) crashes when an n-to-m bit S-box does not contain the element 2<sup>m-1</sup> (the wrong calculation of m results in an array index going out of bounds).\n\n* the statement length != int(length) is never executed, because exact_log() always outputs an integer\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9674\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @malb\n\nRevision sage/crypto/mq/sbox.py [11673:11b2f556827a:12294:d7533ae4895e] (explacing log_b() by exact_log()) causes the following problems:\n\n* difference_distribution_matrix() (in crypto/mq/sbox.py) crashes when an n-to-m bit S-box does not contain the element 2<sup>m-1</sup> (the wrong calculation of m results in an array index going out of bounds).\n\n* the statement length != int(length) is never executed, because exact_log() always outputs an integer\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9674\n\n",
     "created_at": "2010-08-03T12:17:53Z",
     "labels": [
         "cryptography",
@@ -17,9 +17,9 @@ archive/issues_009674.json:
     "user": "nmouha"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  malb
+CC:  @malb
 
 Revision sage/crypto/mq/sbox.py [11673:11b2f556827a:12294:d7533ae4895e] (explacing log_b() by exact_log()) causes the following problems:
 
@@ -178,7 +178,7 @@ archive/issue_comments_094008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9674#issuecomment-94008",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_094009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9674#issuecomment-94009",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_094010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9674#issuecomment-94010",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_094011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9674#issuecomment-94011",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_094015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9674#issuecomment-94015",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_094016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9674",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9674#issuecomment-94016",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

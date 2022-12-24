@@ -3,7 +3,7 @@
 archive/issues_008364.json:
 ```json
 {
-    "body": "Assignee: jkantor\n\nCC:  jason rlm wdj\n\nCbc supports multithread, and it is a shame Sage does not tell it to ! :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8364\n\n",
+    "body": "Assignee: jkantor\n\nCC:  @jasongrout @rlmill @wdjoyner\n\nCbc supports multithread, and it is a shame Sage does not tell it to ! :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8364\n\n",
     "created_at": "2010-02-25T15:47:15Z",
     "labels": [
         "numerical",
@@ -14,12 +14,12 @@ archive/issues_008364.json:
     "title": "Make Cbc support multithread. Other LP solvers too if available",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8364",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
 
-CC:  jason rlm wdj
+CC:  @jasongrout @rlmill @wdjoyner
 
 Cbc supports multithread, and it is a shame Sage does not tell it to ! :-)
 
@@ -41,7 +41,7 @@ archive/issue_comments_074741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74741",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_074742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74742",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_074743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74743",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_074744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74744",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_074747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74747",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_074748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74748",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_074749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74749",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -274,7 +274,7 @@ archive/issue_comments_074750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74750",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_074751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74751",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -337,7 +337,7 @@ archive/issue_comments_074752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74752",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_074753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74753",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -390,7 +390,7 @@ archive/issue_comments_074754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74754",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_074755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74755",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -428,7 +428,7 @@ archive/issue_comments_074756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74756",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -446,7 +446,7 @@ archive/issue_comments_074757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74757",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -464,7 +464,7 @@ archive/issue_comments_074758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74758",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -508,7 +508,7 @@ archive/issue_comments_074759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74759",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -528,7 +528,7 @@ archive/issue_comments_074760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74760",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -561,16 +561,16 @@ So this patch still needs a rebase (note that #8892 is included in 4.4.2.rc0).
 archive/issue_comments_074761.json:
 ```json
 {
-    "body": "Attachment [trac_8364.patch](tarball://root/attachments/some-uuid/ticket8364/trac_8364.patch) by ncohen created at 2010-05-15 17:59:04\n\nThe amount of times I have rewritten this whole patch is just obscene :-D\n\nOk, so what's new in this version ? First, it is based on 4.4.2.rc0, into which #8892 in already included (thanks Jason !), and it does the same job as usual, plus one or two fixesin the docstrings. By the way, I fixed a bug in function at line 3152 or graph.py (last entry in the .patch file), by removing a \",t\"... I have to admit I have absolutely NO IDEA how this \",t\" appeared there, but well, it prevented the function from working, though... I also hadn't noticed the function max_weight_matching from networkx had been exposed, which makes ticket #8166 useless... But I will modify it so that we do not have in Sage 2 different functions for max matching (at the moment, matching() and max_weight_matching()).\n\nPlease Jason, if you can review this ticket again, help me !! I could not stand rewriting all these modifications again if it needs to be rebased once more ! :-)\n\nThank youuuuuuu !!\n\nNathann",
+    "body": "Attachment [trac_8364.patch](tarball://root/attachments/some-uuid/ticket8364/trac_8364.patch) by @nathanncohen created at 2010-05-15 17:59:04\n\nThe amount of times I have rewritten this whole patch is just obscene :-D\n\nOk, so what's new in this version ? First, it is based on 4.4.2.rc0, into which #8892 in already included (thanks Jason !), and it does the same job as usual, plus one or two fixesin the docstrings. By the way, I fixed a bug in function at line 3152 or graph.py (last entry in the .patch file), by removing a \",t\"... I have to admit I have absolutely NO IDEA how this \",t\" appeared there, but well, it prevented the function from working, though... I also hadn't noticed the function max_weight_matching from networkx had been exposed, which makes ticket #8166 useless... But I will modify it so that we do not have in Sage 2 different functions for max matching (at the moment, matching() and max_weight_matching()).\n\nPlease Jason, if you can review this ticket again, help me !! I could not stand rewriting all these modifications again if it needs to be rebased once more ! :-)\n\nThank youuuuuuu !!\n\nNathann",
     "created_at": "2010-05-15T17:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74761",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8364.patch](tarball://root/attachments/some-uuid/ticket8364/trac_8364.patch) by ncohen created at 2010-05-15 17:59:04
+Attachment [trac_8364.patch](tarball://root/attachments/some-uuid/ticket8364/trac_8364.patch) by @nathanncohen created at 2010-05-15 17:59:04
 
 The amount of times I have rewritten this whole patch is just obscene :-D
 
@@ -594,7 +594,7 @@ archive/issue_comments_074762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74762",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -612,7 +612,7 @@ archive/issue_comments_074763.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74763",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -706,7 +706,7 @@ archive/issue_comments_074766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74766",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -724,7 +724,7 @@ archive/issue_comments_074767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74767",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -744,7 +744,7 @@ archive/issue_comments_074768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8364#issuecomment-74768",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

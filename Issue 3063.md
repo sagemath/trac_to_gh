@@ -3,7 +3,7 @@
 archive/issues_003063.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: a = matrix([])\n\nsage: a.norm()\n---------------------------------------------------------------------------\n\n<type 'exceptions.ValueError'>: max() arg is an empty sequence\n```\n\n\nI think the answer in this case should be 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3063\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: a = matrix([])\n\nsage: a.norm()\n---------------------------------------------------------------------------\n\n<type 'exceptions.ValueError'>: max() arg is an empty sequence\n```\n\n\nI think the answer in this case should be 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3063\n\n",
     "created_at": "2008-04-30T15:10:44Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003063.json:
     "title": "empty matrices: norm() returns a ValueError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3063",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3063
 archive/issue_comments_021148.json:
 ```json
 {
-    "body": "Attachment [3063.patch](tarball://root/attachments/some-uuid/ticket3063/3063.patch) by dfdeshom created at 2008-04-30 17:54:13",
+    "body": "Attachment [3063.patch](tarball://root/attachments/some-uuid/ticket3063/3063.patch) by @dfdeshom created at 2008-04-30 17:54:13",
     "created_at": "2008-04-30T17:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3063#issuecomment-21148",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [3063.patch](tarball://root/attachments/some-uuid/ticket3063/3063.patch) by dfdeshom created at 2008-04-30 17:54:13
+Attachment [3063.patch](tarball://root/attachments/some-uuid/ticket3063/3063.patch) by @dfdeshom created at 2008-04-30 17:54:13
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_021149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3063#issuecomment-21149",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 

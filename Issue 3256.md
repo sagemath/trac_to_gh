@@ -14,7 +14,7 @@ archive/issues_003256.json:
     "title": "[with patch; needs review] soname and correct -fPIC handling for zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3256",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
@@ -67,7 +67,7 @@ archive/issue_comments_022528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22528",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_022529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22529",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_022531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22531",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_022534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22534",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_022536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22536",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -304,7 +304,7 @@ archive/issue_comments_022538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22538",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 

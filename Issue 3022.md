@@ -3,7 +3,7 @@
 archive/issues_003022.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI've attached a patch that adds Debian build support to polybori.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3022\n\n",
+    "body": "Assignee: @timabbott\n\nI've attached a patch that adds Debian build support to polybori.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3022\n\n",
     "created_at": "2008-04-25T15:52:58Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_003022.json:
     "title": "[with patch; needs review] Debian package support for polybori",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3022",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I've attached a patch that adds Debian build support to polybori.
 

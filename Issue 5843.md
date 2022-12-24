@@ -3,7 +3,7 @@
 archive/issues_005843.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat mhansen\n\nKeywords: race condition, cached_method, cache\n\nConsider the following class (simplified from a real life example, after 3 hours of heisenbug debugging):\n\n```\nclass bla:\n    def __init__(self, value):\n        self.value = value\n    #\n    @cached_method\n    def f(self, x):\n        return self.value\n```\n\n\nThe method f ignores its input, and should return self.value:\n\n```\nsage: x = bla(1)\nsage: y = bla(2)\nsage: x.f(None)\n1\nsage: y.f(None)\n2\n```\n\n\nThen, y.f(x.f) should ignore the inner x.f and return 2. It does not:\n\n```\nsage: sage: y.f(x.f)\n1\n```\n\n\nThe reason is that x.f and y.f, and all other instances of bla share the same cached_method object.\n\n```\nsage: x.f is y.f\nTrue\nsage: x.f is x.__class__.f\nTrue\n```\n\n\nand the _instance field is set to the latest instance for which this method has been queried:\n\n```\nsage: yf = y.f\nsage: yf._instance is y\nTrue\nsage: x.f\nCached version of <function f at 0xb532d84>\nsage: yf._instance is y\nFalse\nsage: yf._instance is x\nTrue\n```\n\n\nMost of the time things work well, but there can be race conditions, as in the example above.\n\nNicolas and Florent\n\nIssue created by migration from https://trac.sagemath.org/ticket/5843\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat @mwhansen\n\nKeywords: race condition, cached_method, cache\n\nConsider the following class (simplified from a real life example, after 3 hours of heisenbug debugging):\n\n```\nclass bla:\n    def __init__(self, value):\n        self.value = value\n    #\n    @cached_method\n    def f(self, x):\n        return self.value\n```\n\n\nThe method f ignores its input, and should return self.value:\n\n```\nsage: x = bla(1)\nsage: y = bla(2)\nsage: x.f(None)\n1\nsage: y.f(None)\n2\n```\n\n\nThen, y.f(x.f) should ignore the inner x.f and return 2. It does not:\n\n```\nsage: sage: y.f(x.f)\n1\n```\n\n\nThe reason is that x.f and y.f, and all other instances of bla share the same cached_method object.\n\n```\nsage: x.f is y.f\nTrue\nsage: x.f is x.__class__.f\nTrue\n```\n\n\nand the _instance field is set to the latest instance for which this method has been queried:\n\n```\nsage: yf = y.f\nsage: yf._instance is y\nTrue\nsage: x.f\nCached version of <function f at 0xb532d84>\nsage: yf._instance is y\nFalse\nsage: yf._instance is x\nTrue\n```\n\n\nMost of the time things work well, but there can be race conditions, as in the example above.\n\nNicolas and Florent\n\nIssue created by migration from https://trac.sagemath.org/ticket/5843\n\n",
     "created_at": "2009-04-21T08:43:49Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_005843.json:
     "title": "race condition in cached_method (should not be shared between instances)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5843",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  sage-combinat mhansen
+CC:  sage-combinat @mwhansen
 
 Keywords: race condition, cached_method, cache
 
@@ -101,7 +101,7 @@ archive/issue_comments_045942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45942",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -117,16 +117,16 @@ Possible correct implementation:
 archive/issue_comments_045943.json:
 ```json
 {
-    "body": "Attachment [5843_CachedMethodCaller.patch](tarball://root/attachments/some-uuid/ticket5843/5843_CachedMethodCaller.patch) by wjp created at 2010-01-18 22:52:38",
+    "body": "Attachment [5843_CachedMethodCaller.patch](tarball://root/attachments/some-uuid/ticket5843/5843_CachedMethodCaller.patch) by @wjp created at 2010-01-18 22:52:38",
     "created_at": "2010-01-18T22:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45943",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [5843_CachedMethodCaller.patch](tarball://root/attachments/some-uuid/ticket5843/5843_CachedMethodCaller.patch) by wjp created at 2010-01-18 22:52:38
+Attachment [5843_CachedMethodCaller.patch](tarball://root/attachments/some-uuid/ticket5843/5843_CachedMethodCaller.patch) by @wjp created at 2010-01-18 22:52:38
 
 
 
@@ -140,7 +140,7 @@ archive/issue_comments_045944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45944",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_045945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45945",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_045946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45946",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_045947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45947",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -243,16 +243,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_045948.json:
 ```json
 {
-    "body": "Attachment [5843_doctests.patch](tarball://root/attachments/some-uuid/ticket5843/5843_doctests.patch) by wjp created at 2010-01-20 19:06:51\n\nGood point. I replaced the doctest patch with one that adds a more direct test for this ticket.",
+    "body": "Attachment [5843_doctests.patch](tarball://root/attachments/some-uuid/ticket5843/5843_doctests.patch) by @wjp created at 2010-01-20 19:06:51\n\nGood point. I replaced the doctest patch with one that adds a more direct test for this ticket.",
     "created_at": "2010-01-20T19:06:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45948",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [5843_doctests.patch](tarball://root/attachments/some-uuid/ticket5843/5843_doctests.patch) by wjp created at 2010-01-20 19:06:51
+Attachment [5843_doctests.patch](tarball://root/attachments/some-uuid/ticket5843/5843_doctests.patch) by @wjp created at 2010-01-20 19:06:51
 
 Good point. I replaced the doctest patch with one that adds a more direct test for this ticket.
 
@@ -268,7 +268,7 @@ archive/issue_comments_045949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45949",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_045950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45950",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -299,16 +299,16 @@ Nice. I'm giving this a positive review, but I've attached a little patch that t
 archive/issue_comments_045951.json:
 ```json
 {
-    "body": "Attachment [trac_5843-doctests-ref.patch](tarball://root/attachments/some-uuid/ticket5843/trac_5843-doctests-ref.patch) by timdumol created at 2010-01-20 20:18:31\n\nAdds a little bit more documentation to CachedMethod.",
+    "body": "Attachment [trac_5843-doctests-ref.patch](tarball://root/attachments/some-uuid/ticket5843/trac_5843-doctests-ref.patch) by @TimDumol created at 2010-01-20 20:18:31\n\nAdds a little bit more documentation to CachedMethod.",
     "created_at": "2010-01-20T20:18:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45951",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_5843-doctests-ref.patch](tarball://root/attachments/some-uuid/ticket5843/trac_5843-doctests-ref.patch) by timdumol created at 2010-01-20 20:18:31
+Attachment [trac_5843-doctests-ref.patch](tarball://root/attachments/some-uuid/ticket5843/trac_5843-doctests-ref.patch) by @TimDumol created at 2010-01-20 20:18:31
 
 Adds a little bit more documentation to CachedMethod.
 
@@ -319,16 +319,16 @@ Adds a little bit more documentation to CachedMethod.
 archive/issue_comments_045952.json:
 ```json
 {
-    "body": "Attachment [trac_5843-doctests-ref.2.patch](tarball://root/attachments/some-uuid/ticket5843/trac_5843-doctests-ref.2.patch) by timdumol created at 2010-01-20 21:54:07\n\nChanges the doctest to use `print` instead of `sleep`",
+    "body": "Attachment [trac_5843-doctests-ref.2.patch](tarball://root/attachments/some-uuid/ticket5843/trac_5843-doctests-ref.2.patch) by @TimDumol created at 2010-01-20 21:54:07\n\nChanges the doctest to use `print` instead of `sleep`",
     "created_at": "2010-01-20T21:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45952",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_5843-doctests-ref.2.patch](tarball://root/attachments/some-uuid/ticket5843/trac_5843-doctests-ref.2.patch) by timdumol created at 2010-01-20 21:54:07
+Attachment [trac_5843-doctests-ref.2.patch](tarball://root/attachments/some-uuid/ticket5843/trac_5843-doctests-ref.2.patch) by @TimDumol created at 2010-01-20 21:54:07
 
 Changes the doctest to use `print` instead of `sleep`
 
@@ -344,7 +344,7 @@ archive/issue_comments_045953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45953",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_045954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45954",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_045957.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45957",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_045958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5843",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45958",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

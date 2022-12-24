@@ -3,7 +3,7 @@
 archive/issues_001834.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  alexghitza\n\nsage: G = GL(3,GF(101))\nsage: G([[1,0,1],[0,1,0],[0,0,1]])\n\n[1 0 1]\n[0 1 0]\n[0 0 1]\n\nworks fine, but\n\nsage: G = GL(3,ZZ)\nsage: G([[1,0,1],[0,1,0],[0,0,1]])\n\nThis should not try to find a solution to the word problem.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1834\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\nsage: G = GL(3,GF(101))\nsage: G([[1,0,1],[0,1,0],[0,0,1]])\n\n[1 0 1]\n[0 1 0]\n[0 0 1]\n\nworks fine, but\n\nsage: G = GL(3,ZZ)\nsage: G([[1,0,1],[0,1,0],[0,0,1]])\n\nThis should not try to find a solution to the word problem.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1834\n\n",
     "created_at": "2008-01-18T16:42:33Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001834.json:
     "user": "kohel"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  alexghitza
 
@@ -53,7 +53,7 @@ archive/issue_comments_011607.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1834#issuecomment-11607",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -88,16 +88,16 @@ The same issue comes up for all the matrix groups.  For the moment, I have only 
 archive/issue_comments_011608.json:
 ```json
 {
-    "body": "Changing assignee from was to AlexGhitza.",
+    "body": "Changing assignee from @williamstein to @aghitza.",
     "created_at": "2008-09-01T09:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1834#issuecomment-11608",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to AlexGhitza.
+Changing assignee from @williamstein to @aghitza.
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_011609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1834#issuecomment-11609",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_011610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1834#issuecomment-11610",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_011611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1834#issuecomment-11611",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -166,16 +166,16 @@ PS As this is not "algebraic geometry" I changed the Component to Linear Algebra
 archive/issue_comments_011612.json:
 ```json
 {
-    "body": "Attachment [1834-gl_z_call.patch](tarball://root/attachments/some-uuid/ticket1834/1834-gl_z_call.patch) by AlexGhitza created at 2008-09-01 23:09:28\n\nGood idea.  I have made the changes and replaced the patch with a new one.",
+    "body": "Attachment [1834-gl_z_call.patch](tarball://root/attachments/some-uuid/ticket1834/1834-gl_z_call.patch) by @aghitza created at 2008-09-01 23:09:28\n\nGood idea.  I have made the changes and replaced the patch with a new one.",
     "created_at": "2008-09-01T23:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1834#issuecomment-11612",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [1834-gl_z_call.patch](tarball://root/attachments/some-uuid/ticket1834/1834-gl_z_call.patch) by AlexGhitza created at 2008-09-01 23:09:28
+Attachment [1834-gl_z_call.patch](tarball://root/attachments/some-uuid/ticket1834/1834-gl_z_call.patch) by @aghitza created at 2008-09-01 23:09:28
 
 Good idea.  I have made the changes and replaced the patch with a new one.
 
@@ -191,7 +191,7 @@ archive/issue_comments_011613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1834#issuecomment-11613",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

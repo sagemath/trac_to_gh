@@ -3,7 +3,7 @@
 archive/issues_009184.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nMPFI doesn't provide it, but as Gamma is increasing for most s, it's pretty easy to do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9184\n\n",
+    "body": "Assignee: @aghitza\n\nMPFI doesn't provide it, but as Gamma is increasing for most s, it's pretty easy to do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9184\n\n",
     "created_at": "2010-06-08T03:18:48Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009184.json:
     "title": "Gamma function for intervals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9184",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 MPFI doesn't provide it, but as Gamma is increasing for most s, it's pretty easy to do.
 
@@ -37,7 +37,7 @@ archive/issue_comments_085909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9184#issuecomment-85909",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to needs_review.
 archive/issue_comments_085910.json:
 ```json
 {
-    "body": "Attachment [9184-interval-gamma.patch](tarball://root/attachments/some-uuid/ticket9184/9184-interval-gamma.patch) by was created at 2010-07-08 14:53:16",
+    "body": "Attachment [9184-interval-gamma.patch](tarball://root/attachments/some-uuid/ticket9184/9184-interval-gamma.patch) by @williamstein created at 2010-07-08 14:53:16",
     "created_at": "2010-07-08T14:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9184#issuecomment-85910",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [9184-interval-gamma.patch](tarball://root/attachments/some-uuid/ticket9184/9184-interval-gamma.patch) by was created at 2010-07-08 14:53:16
+Attachment [9184-interval-gamma.patch](tarball://root/attachments/some-uuid/ticket9184/9184-interval-gamma.patch) by @williamstein created at 2010-07-08 14:53:16
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_085911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9184#issuecomment-85911",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_085912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9184#issuecomment-85912",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_085913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9184",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9184#issuecomment-85913",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

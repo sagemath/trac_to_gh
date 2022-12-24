@@ -3,7 +3,7 @@
 archive/issues_002111.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  zimmerma\n\nThis now works (but is very very slow):\n\n\n```\nsage: R.<x,y> = PolynomialRing(GF(2147483659),order='lex')\nsage: ideal([x^3-2*y^2,3*x+y^4]).groebner_basis()\n[x + 1431655773*y^4, y^12 + 54*y^2]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2111\n\n",
+    "body": "Assignee: @malb\n\nCC:  @zimmermann6\n\nThis now works (but is very very slow):\n\n\n```\nsage: R.<x,y> = PolynomialRing(GF(2147483659),order='lex')\nsage: ideal([x^3-2*y^2,3*x+y^4]).groebner_basis()\n[x + 1431655773*y^4, y^12 + 54*y^2]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2111\n\n",
     "created_at": "2008-02-08T12:17:23Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_002111.json:
     "title": "[with patch, needs review] Gr\u00f6bner bases over any field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2111",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  zimmerma
+CC:  @zimmermann6
 
 This now works (but is very very slow):
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2111
 archive/issue_comments_013763.json:
 ```json
 {
-    "body": "Attachment [native_gb.patch](tarball://root/attachments/some-uuid/ticket2111/native_gb.patch) by malb created at 2008-02-08 12:17:34",
+    "body": "Attachment [native_gb.patch](tarball://root/attachments/some-uuid/ticket2111/native_gb.patch) by @malb created at 2008-02-08 12:17:34",
     "created_at": "2008-02-08T12:17:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2111#issuecomment-13763",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [native_gb.patch](tarball://root/attachments/some-uuid/ticket2111/native_gb.patch) by malb created at 2008-02-08 12:17:34
+Attachment [native_gb.patch](tarball://root/attachments/some-uuid/ticket2111/native_gb.patch) by @malb created at 2008-02-08 12:17:34
 
 
 
@@ -60,16 +60,16 @@ Attachment [native_gb.patch](tarball://root/attachments/some-uuid/ticket2111/nat
 archive/issue_comments_013764.json:
 ```json
 {
-    "body": "Attachment [trac_2111_2.patch](tarball://root/attachments/some-uuid/ticket2111/trac_2111_2.patch) by malb created at 2008-02-13 13:26:34\n\nmisc additional improvements, apply after first patch",
+    "body": "Attachment [trac_2111_2.patch](tarball://root/attachments/some-uuid/ticket2111/trac_2111_2.patch) by @malb created at 2008-02-13 13:26:34\n\nmisc additional improvements, apply after first patch",
     "created_at": "2008-02-13T13:26:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2111#issuecomment-13764",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_2111_2.patch](tarball://root/attachments/some-uuid/ticket2111/trac_2111_2.patch) by malb created at 2008-02-13 13:26:34
+Attachment [trac_2111_2.patch](tarball://root/attachments/some-uuid/ticket2111/trac_2111_2.patch) by @malb created at 2008-02-13 13:26:34
 
 misc additional improvements, apply after first patch
 
@@ -85,7 +85,7 @@ archive/issue_comments_013765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2111",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2111#issuecomment-13765",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

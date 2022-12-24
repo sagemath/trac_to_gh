@@ -3,7 +3,7 @@
 archive/issues_001501.json:
 ```json
 {
-    "body": "Assignee: was\n\nSince atlas is default now (crosses fingers) on linux, updated cvxopt.\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/cvxopt-0.9.p5.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1501\n\n",
+    "body": "Assignee: @williamstein\n\nSince atlas is default now (crosses fingers) on linux, updated cvxopt.\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/cvxopt-0.9.p5.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1501\n\n",
     "created_at": "2007-12-14T02:36:42Z",
     "labels": [
         "algebraic geometry",
@@ -16,7 +16,7 @@ archive/issues_001501.json:
     "user": "jkantor"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Since atlas is default now (crosses fingers) on linux, updated cvxopt.
 

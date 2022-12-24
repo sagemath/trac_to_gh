@@ -3,7 +3,7 @@
 archive/issues_002177.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nFor some reason the jmol directory shipped with SAGE does not contain the doc/ directory, which causes it to fail to build on Debian (or anything else, I'm pretty sure).  The current spkg-install script just copies the pre-built jmol jars, but presumably it'd be better to build our own (certainly Debian will want me to do this).\n\nThe doc/ directory is not large, so I'm not sure why it is missing, so I've obtained a copy of the doc directory from the jmol-11.5.2 upstream.  \n\nI also move the \"jmol/\" directory to \"src/\" for compliance with our new spkg format standards.\n\nI'll post a new SPKG later tonight.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2177\n\n",
+    "body": "Assignee: @timabbott\n\nFor some reason the jmol directory shipped with SAGE does not contain the doc/ directory, which causes it to fail to build on Debian (or anything else, I'm pretty sure).  The current spkg-install script just copies the pre-built jmol jars, but presumably it'd be better to build our own (certainly Debian will want me to do this).\n\nThe doc/ directory is not large, so I'm not sure why it is missing, so I've obtained a copy of the doc directory from the jmol-11.5.2 upstream.  \n\nI also move the \"jmol/\" directory to \"src/\" for compliance with our new spkg format standards.\n\nI'll post a new SPKG later tonight.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2177\n\n",
     "created_at": "2008-02-16T04:33:51Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002177.json:
     "title": "[with patch; needs review] debianized jmol spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2177",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 For some reason the jmol directory shipped with SAGE does not contain the doc/ directory, which causes it to fail to build on Debian (or anything else, I'm pretty sure).  The current spkg-install script just copies the pre-built jmol jars, but presumably it'd be better to build our own (certainly Debian will want me to do this).
 
@@ -44,7 +44,7 @@ archive/issue_comments_014290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2177#issuecomment-14290",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_014291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2177",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2177#issuecomment-14291",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 

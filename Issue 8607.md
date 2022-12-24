@@ -3,7 +3,7 @@
 archive/issues_008607.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mhansen\n\nThis lets people change option names and automatically deprecate the old option name.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8607\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\nThis lets people change option names and automatically deprecate the old option name.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8607\n\n",
     "created_at": "2010-03-25T19:05:27Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_008607.json:
     "title": "add deprecation option to the plot option rename decorator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8607",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mhansen
+CC:  @mwhansen
 
 This lets people change option names and automatically deprecate the old option name.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8607
 archive/issue_comments_077977.json:
 ```json
 {
-    "body": "Attachment [trac-8607-rename-deprecation.patch](tarball://root/attachments/some-uuid/ticket8607/trac-8607-rename-deprecation.patch) by jason created at 2010-03-25 19:12:04",
+    "body": "Attachment [trac-8607-rename-deprecation.patch](tarball://root/attachments/some-uuid/ticket8607/trac-8607-rename-deprecation.patch) by @jasongrout created at 2010-03-25 19:12:04",
     "created_at": "2010-03-25T19:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8607#issuecomment-77977",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8607-rename-deprecation.patch](tarball://root/attachments/some-uuid/ticket8607/trac-8607-rename-deprecation.patch) by jason created at 2010-03-25 19:12:04
+Attachment [trac-8607-rename-deprecation.patch](tarball://root/attachments/some-uuid/ticket8607/trac-8607-rename-deprecation.patch) by @jasongrout created at 2010-03-25 19:12:04
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_077978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8607#issuecomment-77978",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_077979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8607#issuecomment-77979",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_077980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8607#issuecomment-77980",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -108,16 +108,16 @@ Positive review on the documentation changes.  I'm not qualified to comment on t
 archive/issue_comments_077981.json:
 ```json
 {
-    "body": "Attachment [trac_8607_review-sl.patch](tarball://root/attachments/some-uuid/ticket8607/trac_8607_review-sl.patch) by slabbe created at 2010-04-21 09:02:47\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8607_review-sl.patch](tarball://root/attachments/some-uuid/ticket8607/trac_8607_review-sl.patch) by @seblabbe created at 2010-04-21 09:02:47\n\nApplies over the precedent patch",
     "created_at": "2010-04-21T09:02:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8607#issuecomment-77981",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8607_review-sl.patch](tarball://root/attachments/some-uuid/ticket8607/trac_8607_review-sl.patch) by slabbe created at 2010-04-21 09:02:47
+Attachment [trac_8607_review-sl.patch](tarball://root/attachments/some-uuid/ticket8607/trac_8607_review-sl.patch) by @seblabbe created at 2010-04-21 09:02:47
 
 Applies over the precedent patch
 
@@ -133,7 +133,7 @@ archive/issue_comments_077982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8607#issuecomment-77982",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_077983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8607#issuecomment-77983",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_077984.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8607#issuecomment-77984",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_077985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8607#issuecomment-77985",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_077986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8607#issuecomment-77986",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_077987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8607",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8607#issuecomment-77987",
-    "user": "jsrn"
+    "user": "@johanrosenkilde"
 }
 ```
 

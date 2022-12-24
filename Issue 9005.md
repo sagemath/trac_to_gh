@@ -3,7 +3,7 @@
 archive/issues_009005.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  ncohen ppurka\n\nKeywords: derangements\n\nThe current implementation in Sage for derangements is a wrapper for the GAP \"derangements\" and \"number_of_derangements\" which is very restrictive.  For example, it doesn't allow derangements of arbitrary lists or strings.  The documentation observes \n\n\"Warning - Wraps GAP - hence mset must be a list of objects that have string representations that can be interpreted by the GAP interpreter. If mset consists of at all complicated Sage objects, this function does not do what you expect. A proper function should be written! (TODO!)\" \n\nThis file is an attempt to provide that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9005\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  @nathanncohen @ppurka\n\nKeywords: derangements\n\nThe current implementation in Sage for derangements is a wrapper for the GAP \"derangements\" and \"number_of_derangements\" which is very restrictive.  For example, it doesn't allow derangements of arbitrary lists or strings.  The documentation observes \n\n\"Warning - Wraps GAP - hence mset must be a list of objects that have string representations that can be interpreted by the GAP interpreter. If mset consists of at all complicated Sage objects, this function does not do what you expect. A proper function should be written! (TODO!)\" \n\nThis file is an attempt to provide that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9005\n\n",
     "created_at": "2010-05-21T10:20:57Z",
     "labels": [
         "combinatorics",
@@ -19,7 +19,7 @@ archive/issues_009005.json:
 ```
 Assignee: sage-combinat
 
-CC:  ncohen ppurka
+CC:  @nathanncohen @ppurka
 
 Keywords: derangements
 
@@ -63,7 +63,7 @@ archive/issue_comments_083301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9005#issuecomment-83301",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_083302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9005#issuecomment-83302",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_083303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9005#issuecomment-83303",
-    "user": "bsalisbury1"
+    "user": "@bsalisbury1"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_083304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9005#issuecomment-83304",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_083305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9005#issuecomment-83305",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_083306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9005#issuecomment-83306",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -166,16 +166,16 @@ Changing status from needs_work to positive_review.
 archive/issue_comments_083307.json:
 ```json
 {
-    "body": "Attachment [trac_9005-derangements-ts.patch](tarball://root/attachments/some-uuid/ticket9005/trac_9005-derangements-ts.patch) by tscrim created at 2013-04-23 15:16:47\n\nSorry about that. Fixed.",
+    "body": "Attachment [trac_9005-derangements-ts.patch](tarball://root/attachments/some-uuid/ticket9005/trac_9005-derangements-ts.patch) by @tscrim created at 2013-04-23 15:16:47\n\nSorry about that. Fixed.",
     "created_at": "2013-04-23T15:16:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9005#issuecomment-83307",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
-Attachment [trac_9005-derangements-ts.patch](tarball://root/attachments/some-uuid/ticket9005/trac_9005-derangements-ts.patch) by tscrim created at 2013-04-23 15:16:47
+Attachment [trac_9005-derangements-ts.patch](tarball://root/attachments/some-uuid/ticket9005/trac_9005-derangements-ts.patch) by @tscrim created at 2013-04-23 15:16:47
 
 Sorry about that. Fixed.
 
@@ -191,7 +191,7 @@ archive/issue_comments_083308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9005",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9005#issuecomment-83308",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

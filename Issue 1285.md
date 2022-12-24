@@ -3,7 +3,7 @@
 archive/issues_001285.json:
 ```json
 {
-    "body": "Assignee: was\n\ne.subs(x, y) needs to work, where \"x\" is an expression and \"y\" is an expression.\nand it substitutes x for y.\n\nsome tests from SymPy:\n\nhttp://hg.sympy.org/sympy/file/d77f6c3b50bb/sympy/core/tests/test_subs.py\n\nThis is needed for the limit algorithm to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1285\n\n",
+    "body": "Assignee: @williamstein\n\ne.subs(x, y) needs to work, where \"x\" is an expression and \"y\" is an expression.\nand it substitutes x for y.\n\nsome tests from SymPy:\n\nhttp://hg.sympy.org/sympy/file/d77f6c3b50bb/sympy/core/tests/test_subs.py\n\nThis is needed for the limit algorithm to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1285\n\n",
     "created_at": "2007-11-26T22:36:21Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_001285.json:
     "title": "implement substitution of subexpression  in calculus",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1285",
-    "user": "certik"
+    "user": "@certik"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 e.subs(x, y) needs to work, where "x" is an expression and "y" is an expression.
 and it substitutes x for y.
@@ -44,7 +44,7 @@ archive/issue_comments_008075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1285#issuecomment-8075",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,16 +57,16 @@ Changing status from new to assigned.
 archive/issue_comments_008076.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-11-26T22:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1285#issuecomment-8076",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_008077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1285",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1285#issuecomment-8077",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

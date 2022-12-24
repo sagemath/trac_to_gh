@@ -3,7 +3,7 @@
 archive/issues_001448.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis should work:\n\n```\nsage: MS = MatrixSpace(GF(2),2)\nsage: for A in MS:\n...     print A\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1448\n\n",
+    "body": "Assignee: @williamstein\n\nThis should work:\n\n```\nsage: MS = MatrixSpace(GF(2),2)\nsage: for A in MS:\n...     print A\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1448\n\n",
     "created_at": "2007-12-10T14:20:20Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001448.json:
     "title": "iterate over MatrixSpace",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1448",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This should work:
 
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1448
 archive/issue_comments_009327.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-12-14T07:10:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9327",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_009328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9328",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,16 +75,16 @@ Changing status from new to assigned.
 archive/issue_comments_009329.json:
 ```json
 {
-    "body": "Attachment [1448.patch](tarball://root/attachments/some-uuid/ticket1448/1448.patch) by mhansen created at 2007-12-14 07:10:41",
+    "body": "Attachment [1448.patch](tarball://root/attachments/some-uuid/ticket1448/1448.patch) by @mwhansen created at 2007-12-14 07:10:41",
     "created_at": "2007-12-14T07:10:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9329",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1448.patch](tarball://root/attachments/some-uuid/ticket1448/1448.patch) by mhansen created at 2007-12-14 07:10:41
+Attachment [1448.patch](tarball://root/attachments/some-uuid/ticket1448/1448.patch) by @mwhansen created at 2007-12-14 07:10:41
 
 
 
@@ -159,7 +159,7 @@ archive/issue_comments_009332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9332",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_009333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9333",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

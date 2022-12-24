@@ -3,7 +3,7 @@
 archive/issues_003767.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  wstein itolkov\n\nWe should move jquery into its own standard spkg (and figure out how to merge the two different copies of it in sage in the process).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3767\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  wstein @itolkov\n\nWe should move jquery into its own standard spkg (and figure out how to merge the two different copies of it in sage in the process).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3767\n\n",
     "created_at": "2008-08-03T19:27:58Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_003767.json:
     "title": "move jquery into its own spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3767",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 Assignee: mabshoff
 
-CC:  wstein itolkov
+CC:  wstein @itolkov
 
 We should move jquery into its own standard spkg (and figure out how to merge the two different copies of it in sage in the process).  
 
@@ -39,7 +39,7 @@ archive/issue_comments_026795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26795",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_026796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26796",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -72,16 +72,16 @@ http://sage.math.washington.edu/home/jason/jquery-1.2.6.spkg
 archive/issue_comments_026797.json:
 ```json
 {
-    "body": "Attachment [remove-jquery.patch](tarball://root/attachments/some-uuid/ticket3767/remove-jquery.patch) by jason created at 2008-10-10 04:37:26\n\nOkay, apply the patch to the extcode repository, then install the spkg, and you should have an updated jquery.",
+    "body": "Attachment [remove-jquery.patch](tarball://root/attachments/some-uuid/ticket3767/remove-jquery.patch) by @jasongrout created at 2008-10-10 04:37:26\n\nOkay, apply the patch to the extcode repository, then install the spkg, and you should have an updated jquery.",
     "created_at": "2008-10-10T04:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26797",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [remove-jquery.patch](tarball://root/attachments/some-uuid/ticket3767/remove-jquery.patch) by jason created at 2008-10-10 04:37:26
+Attachment [remove-jquery.patch](tarball://root/attachments/some-uuid/ticket3767/remove-jquery.patch) by @jasongrout created at 2008-10-10 04:37:26
 
 Okay, apply the patch to the extcode repository, then install the spkg, and you should have an updated jquery.
 
@@ -97,7 +97,7 @@ archive/issue_comments_026798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26798",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_026799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26799",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_026800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26800",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_026801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26801",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_026802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26802",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -182,16 +182,16 @@ Changing status from new to assigned.
 archive/issue_comments_026803.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to jason.",
+    "body": "Changing assignee from mabshoff to @jasongrout.",
     "created_at": "2008-10-18T04:02:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26803",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mabshoff to jason.
+Changing assignee from mabshoff to @jasongrout.
 
 
 
@@ -205,7 +205,7 @@ archive/issue_comments_026804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26804",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_026805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26805",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -236,16 +236,16 @@ Ignore any patches of spkgs here.  See #4267 instead.
 archive/issue_comments_026806.json:
 ```json
 {
-    "body": "Attachment [jquery-and-friends-spkg.patch](tarball://root/attachments/some-uuid/ticket3767/jquery-and-friends-spkg.patch) by jason created at 2008-12-05 10:15:26\n\nuse instead of any previous patches",
+    "body": "Attachment [jquery-and-friends-spkg.patch](tarball://root/attachments/some-uuid/ticket3767/jquery-and-friends-spkg.patch) by @jasongrout created at 2008-12-05 10:15:26\n\nuse instead of any previous patches",
     "created_at": "2008-12-05T10:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26806",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [jquery-and-friends-spkg.patch](tarball://root/attachments/some-uuid/ticket3767/jquery-and-friends-spkg.patch) by jason created at 2008-12-05 10:15:26
+Attachment [jquery-and-friends-spkg.patch](tarball://root/attachments/some-uuid/ticket3767/jquery-and-friends-spkg.patch) by @jasongrout created at 2008-12-05 10:15:26
 
 use instead of any previous patches
 
@@ -261,7 +261,7 @@ archive/issue_comments_026807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26807",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_026808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26808",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_026809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26809",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -318,16 +318,16 @@ Changing priority from minor to major.
 archive/issue_comments_026810.json:
 ```json
 {
-    "body": "Attachment [jquery-and-friends-spkg.2.patch](tarball://root/attachments/some-uuid/ticket3767/jquery-and-friends-spkg.2.patch) by jason created at 2008-12-20 21:56:53\n\nApply tclemans  jquery-and-friends-spkg.2.patch patch instead of mine.",
+    "body": "Attachment [jquery-and-friends-spkg.2.patch](tarball://root/attachments/some-uuid/ticket3767/jquery-and-friends-spkg.2.patch) by @jasongrout created at 2008-12-20 21:56:53\n\nApply tclemans  jquery-and-friends-spkg.2.patch patch instead of mine.",
     "created_at": "2008-12-20T21:56:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3767#issuecomment-26810",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [jquery-and-friends-spkg.2.patch](tarball://root/attachments/some-uuid/ticket3767/jquery-and-friends-spkg.2.patch) by jason created at 2008-12-20 21:56:53
+Attachment [jquery-and-friends-spkg.2.patch](tarball://root/attachments/some-uuid/ticket3767/jquery-and-friends-spkg.2.patch) by @jasongrout created at 2008-12-20 21:56:53
 
 Apply tclemans  jquery-and-friends-spkg.2.patch patch instead of mine.
 

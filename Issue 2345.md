@@ -3,7 +3,7 @@
 archive/issues_002345.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: vector(RR,range(3))[2]\n 2.00000000000000\n\nsage: vector(RR,range(3))[-1]\n----------------------------------------------------\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/<ipython\nconsole> in <module>()\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/free_modu\nle_element.pyx in sage.modules.free_module_element.F\nreeModuleElement_generic_dense.__getitem__()\n\n<type 'exceptions.IndexError'>: index (i=-1) must be\n between 0 and 2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2345\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: vector(RR,range(3))[2]\n 2.00000000000000\n\nsage: vector(RR,range(3))[-1]\n----------------------------------------------------\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/<ipython\nconsole> in <module>()\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/free_modu\nle_element.pyx in sage.modules.free_module_element.F\nreeModuleElement_generic_dense.__getitem__()\n\n<type 'exceptions.IndexError'>: index (i=-1) must be\n between 0 and 2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2345\n\n",
     "created_at": "2008-02-28T08:47:58Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002345.json:
     "title": "negative indicies in vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2345",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2345
 archive/issue_comments_015703.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-02-28T09:36:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2345#issuecomment-15703",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -68,16 +68,16 @@ Changing assignee from was to mhansen.
 archive/issue_comments_015704.json:
 ```json
 {
-    "body": "Attachment [2345.patch](tarball://root/attachments/some-uuid/ticket2345/2345.patch) by mhansen created at 2008-02-28 09:36:58",
+    "body": "Attachment [2345.patch](tarball://root/attachments/some-uuid/ticket2345/2345.patch) by @mwhansen created at 2008-02-28 09:36:58",
     "created_at": "2008-02-28T09:36:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2345#issuecomment-15704",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2345.patch](tarball://root/attachments/some-uuid/ticket2345/2345.patch) by mhansen created at 2008-02-28 09:36:58
+Attachment [2345.patch](tarball://root/attachments/some-uuid/ticket2345/2345.patch) by @mwhansen created at 2008-02-28 09:36:58
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_015705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2345#issuecomment-15705",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_015706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2345#issuecomment-15706",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_015709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2345#issuecomment-15709",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

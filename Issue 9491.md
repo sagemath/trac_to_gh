@@ -3,7 +3,7 @@
 archive/issues_009491.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  slelievre\n\nThis patch enables an 'opacity' argument to the contour plot function.\n\nDoctesting needs to be done, and a few examples need to be written.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9491\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @slel\n\nThis patch enables an 'opacity' argument to the contour plot function.\n\nDoctesting needs to be done, and a few examples need to be written.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9491\n\n",
     "created_at": "2010-07-13T14:43:19Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_009491.json:
     "title": "contour plot does not handle transparency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9491",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: jason, was
 
-CC:  slelievre
+CC:  @slel
 
 This patch enables an 'opacity' argument to the contour plot function.
 
@@ -41,7 +41,7 @@ archive/issue_comments_091112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9491#issuecomment-91112",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_work.
 archive/issue_comments_091113.json:
 ```json
 {
-    "body": "Attachment [trac-9491-contour-alpha.patch](tarball://root/attachments/some-uuid/ticket9491/trac-9491-contour-alpha.patch) by jason created at 2010-07-13 14:46:35\n\nThis patch was done in a rush, so there may be bugs in it.",
+    "body": "Attachment [trac-9491-contour-alpha.patch](tarball://root/attachments/some-uuid/ticket9491/trac-9491-contour-alpha.patch) by @jasongrout created at 2010-07-13 14:46:35\n\nThis patch was done in a rush, so there may be bugs in it.",
     "created_at": "2010-07-13T14:46:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9491#issuecomment-91113",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-9491-contour-alpha.patch](tarball://root/attachments/some-uuid/ticket9491/trac-9491-contour-alpha.patch) by jason created at 2010-07-13 14:46:35
+Attachment [trac-9491-contour-alpha.patch](tarball://root/attachments/some-uuid/ticket9491/trac-9491-contour-alpha.patch) by @jasongrout created at 2010-07-13 14:46:35
 
 This patch was done in a rush, so there may be bugs in it.
 
@@ -79,7 +79,7 @@ archive/issue_comments_091114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9491#issuecomment-91114",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_091115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9491#issuecomment-91115",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_091116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9491",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9491#issuecomment-91116",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

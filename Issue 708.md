@@ -3,7 +3,7 @@
 archive/issues_000708.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  burcin\n\n\n```\nsage: R = QQ['x']\nsage: f = R.random_element(1000)\nsage: time f.is_irreducible()\nCPU times: user 31.45 s, sys: 0.10 s, total: 31.54 s\nWall time: 31.79\nTrue\nsage: g = magma(f)\nsage: time g.IsIrreducible()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 2.57\ntrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/708\n\n",
+    "body": "Assignee: somebody\n\nCC:  @burcin\n\n\n```\nsage: R = QQ['x']\nsage: f = R.random_element(1000)\nsage: time f.is_irreducible()\nCPU times: user 31.45 s, sys: 0.10 s, total: 31.54 s\nWall time: 31.79\nTrue\nsage: g = magma(f)\nsage: time g.IsIrreducible()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 2.57\ntrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/708\n\n",
     "created_at": "2007-09-20T17:40:44Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_000708.json:
     "title": "performance issue -- Magma is way faster at testing some polynomials for irreducibility",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/708",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
 
-CC:  burcin
+CC:  @burcin
 
 
 ```
@@ -93,16 +93,16 @@ Michael
 archive/issue_comments_003719.json:
 ```json
 {
-    "body": "Attachment [708-speedup_poly_irred.patch](tarball://root/attachments/some-uuid/ticket708/708-speedup_poly_irred.patch) by AlexGhitza created at 2008-08-29 22:38:15\n\nThere is a simple way of getting within range of Magma's speed: by Gauss' lemma, we can clear the denominators to get a polynomial over the integers, then test it for irreducibility using the significantly faster code over ZZ.\n\nSee the attached patch.  I'm getting a speedup factor of about 10, but I can't compare to Magma since I don't have it.",
+    "body": "Attachment [708-speedup_poly_irred.patch](tarball://root/attachments/some-uuid/ticket708/708-speedup_poly_irred.patch) by @aghitza created at 2008-08-29 22:38:15\n\nThere is a simple way of getting within range of Magma's speed: by Gauss' lemma, we can clear the denominators to get a polynomial over the integers, then test it for irreducibility using the significantly faster code over ZZ.\n\nSee the attached patch.  I'm getting a speedup factor of about 10, but I can't compare to Magma since I don't have it.",
     "created_at": "2008-08-29T22:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/708#issuecomment-3719",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [708-speedup_poly_irred.patch](tarball://root/attachments/some-uuid/ticket708/708-speedup_poly_irred.patch) by AlexGhitza created at 2008-08-29 22:38:15
+Attachment [708-speedup_poly_irred.patch](tarball://root/attachments/some-uuid/ticket708/708-speedup_poly_irred.patch) by @aghitza created at 2008-08-29 22:38:15
 
 There is a simple way of getting within range of Magma's speed: by Gauss' lemma, we can clear the denominators to get a polynomial over the integers, then test it for irreducibility using the significantly faster code over ZZ.
 
@@ -120,7 +120,7 @@ archive/issue_comments_003720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/708",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/708#issuecomment-3720",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

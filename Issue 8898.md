@@ -3,7 +3,7 @@
 archive/issues_008898.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  fredrik.johansson\n\nthe following 4 files in the sage spkg have dos line ending rather than unix ones:\nsage/libs/mpmath/ext_impl.pxd\nsage/libs/mpmath/ext_main.pyx\nsage/libs/mpmath/ext_main.pxd\nsage/libs/mpmath/ext_libmp.pyx\n\nI found about this while trying to build sage with python-2.6.5\nwhich absolutely refused to parse these files as is.\nNot sure how to submit a patch for line endings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8898\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @fredrik-johansson\n\nthe following 4 files in the sage spkg have dos line ending rather than unix ones:\nsage/libs/mpmath/ext_impl.pxd\nsage/libs/mpmath/ext_main.pyx\nsage/libs/mpmath/ext_main.pxd\nsage/libs/mpmath/ext_libmp.pyx\n\nI found about this while trying to build sage with python-2.6.5\nwhich absolutely refused to parse these files as is.\nNot sure how to submit a patch for line endings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8898\n\n",
     "created_at": "2010-05-05T23:01:42Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008898.json:
     "title": "some files in sage-4.4.{0,1} have dos line ending instead of a unix line ending",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8898",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  fredrik.johansson
+CC:  @fredrik-johansson
 
 the following 4 files in the sage spkg have dos line ending rather than unix ones:
 sage/libs/mpmath/ext_impl.pxd
@@ -65,7 +65,7 @@ archive/issue_comments_081825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81825",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -81,16 +81,16 @@ python-2.6.5 refused to deal with the other 4.
 archive/issue_comments_081826.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to jason.",
+    "body": "Changing assignee from @aghitza to @jasongrout.",
     "created_at": "2010-09-02T09:31:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81826",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from AlexGhitza to jason.
+Changing assignee from @aghitza to @jasongrout.
 
 
 
@@ -104,7 +104,7 @@ archive/issue_comments_081827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81827",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_081831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81831",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_081832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81832",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -219,16 +219,16 @@ sage/libs/mpmath/ext_impl.pxd at least as been changed since this patch has been
 archive/issue_comments_081833.json:
 ```json
 {
-    "body": "Attachment [trac_8898-unix-endlines.2.patch](tarball://root/attachments/some-uuid/ticket8898/trac_8898-unix-endlines.2.patch) by fbissey created at 2010-11-11 09:48:47\n\nupdate of the patch based on sage-4.6",
+    "body": "Attachment [trac_8898-unix-endlines.2.patch](tarball://root/attachments/some-uuid/ticket8898/trac_8898-unix-endlines.2.patch) by @kiwifb created at 2010-11-11 09:48:47\n\nupdate of the patch based on sage-4.6",
     "created_at": "2010-11-11T09:48:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81833",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_8898-unix-endlines.2.patch](tarball://root/attachments/some-uuid/ticket8898/trac_8898-unix-endlines.2.patch) by fbissey created at 2010-11-11 09:48:47
+Attachment [trac_8898-unix-endlines.2.patch](tarball://root/attachments/some-uuid/ticket8898/trac_8898-unix-endlines.2.patch) by @kiwifb created at 2010-11-11 09:48:47
 
 update of the patch based on sage-4.6
 
@@ -244,7 +244,7 @@ archive/issue_comments_081834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81834",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_081835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81835",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_081838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81838",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_081839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81839",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_081840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81840",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_081841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81841",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -421,7 +421,7 @@ archive/issue_comments_081842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81842",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -434,16 +434,16 @@ Changing status from positive_review to needs_work.
 archive/issue_comments_081843.json:
 ```json
 {
-    "body": "Attachment [8898.sh](tarball://root/attachments/some-uuid/ticket8898/8898.sh) by jdemeyer created at 2010-11-13 16:23:16",
+    "body": "Attachment [8898.sh](tarball://root/attachments/some-uuid/ticket8898/8898.sh) by @jdemeyer created at 2010-11-13 16:23:16",
     "created_at": "2010-11-13T16:23:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81843",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [8898.sh](tarball://root/attachments/some-uuid/ticket8898/8898.sh) by jdemeyer created at 2010-11-13 16:23:16
+Attachment [8898.sh](tarball://root/attachments/some-uuid/ticket8898/8898.sh) by @jdemeyer created at 2010-11-13 16:23:16
 
 
 
@@ -457,7 +457,7 @@ archive/issue_comments_081844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81844",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -475,7 +475,7 @@ archive/issue_comments_081845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81845",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -493,7 +493,7 @@ archive/issue_comments_081846.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81846",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -515,7 +515,7 @@ archive/issue_comments_081847.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81847",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_081848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81848",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -553,7 +553,7 @@ archive/issue_comments_081849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81849",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -571,7 +571,7 @@ archive/issue_comments_081850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81850",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -592,7 +592,7 @@ archive/issue_comments_081851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8898",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8898#issuecomment-81851",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005248.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nKeywords: graphs\n\nThe following example illustrates the problem.  Loops are treated seperately, and not correctly colored (they are always black).\n\n\n```\ng = graphs.CompleteGraph(3)\ng.loops(True)\ng.add_edge(0,0)\nc_dict = {\"red\":[(0,0)], \"blue\":[(0,1),(1,2),(0,2)]}\nshow(g.plot(edge_colors = c_dict))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5248\n\n",
+    "body": "Assignee: @rlmill\n\nKeywords: graphs\n\nThe following example illustrates the problem.  Loops are treated seperately, and not correctly colored (they are always black).\n\n\n```\ng = graphs.CompleteGraph(3)\ng.loops(True)\ng.add_edge(0,0)\nc_dict = {\"red\":[(0,0)], \"blue\":[(0,1),(1,2),(0,2)]}\nshow(g.plot(edge_colors = c_dict))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5248\n\n",
     "created_at": "2009-02-12T16:53:34Z",
     "labels": [
         "graph theory",
@@ -17,7 +17,7 @@ archive/issues_005248.json:
     "user": "mhampton"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Keywords: graphs
 
@@ -49,7 +49,7 @@ archive/issue_comments_040224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5248#issuecomment-40224",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

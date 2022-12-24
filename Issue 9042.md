@@ -3,7 +3,7 @@
 archive/issues_009042.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  robertwb jsp\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_134 X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## How the Sage build was attempted\n* 64-bit build. SAGE64 was set to \"yes\"\n* #9008 update zlib to latest upstream release to allow a 64-bit library to be built. \n* #9009 update mercurial spkg to build 64-bit.\n* #7982 update sage_fortran so it can build 64-bit binaries.\n* Run 'make -k' so make did not stop on errors, so errors can be listed. \n\n\n## How Python was build\n\nIt should be noted that python builds as a 64-bit application. There is no need to set any environment variables like CFLAGS for Python to build 64-bit. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file local/bin/python\nlocal/bin/python:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\n```\n\n\nWe can see a few modules did not build\n\n\n```\nailed to find the necessary bits to build these modules:\n_bsddb             bsddb185           dl\ngdbm               imageop            linuxaudiodev\nossaudiodev\nTo find the necessary bits, look in setup.py in detect_modules() for the module's name.\n\n\nFailed to build these modules:\n_curses            _curses_panel      _socket\n_ssl               _tkinter           sunaudiodev\n```\n\n\nThe faillure of _socket to build has caused problems with pygments (#9041) and ipython (#9022), but does not seem to be the cause of the problem with Cython. \n\n## The problem with Cython\nThis is related to #8116, which was closed as invalid, but it would appear the problem can still rear its ugly head. \n\n\n```\ncopying Cython/Includes/python_version.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Includes/numpy.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Includes/python_bytes.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Includes/python_method.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Includes/python_ref.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Plex/Scanners.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Plex\ncopying Cython/Compiler/Parsing.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Compiler\ncopying Cython/Compiler/Scanning.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Compiler\ncopying Cython/Compiler/Visitor.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Compiler\ncopying Cython/Runtime/refnanny.pyx -> build/lib.solaris-2.11-i86pc-2.6/Cython/Runtime\nrunning build_ext\nbuilding 'Cython.Plex.Scanners' extension\ncreating build/temp.solaris-2.11-i86pc-2.6\ncreating build/temp.solaris-2.11-i86pc-2.6/export\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -c /export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex/Scanners.c -o build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex/Scanners.o\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,\n                 from /export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex/Scanners.c:4:\n/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nerror: command 'gcc' failed with exit status 1\nError installing Cython\n\nreal    0m4.426s\nuser    0m3.907s\nsys     0m0.505s\nsage: An error occurred while installing cython-0.12.1\n```\n\n\n## The likely cause\nThe -m64 flag is not being used in the compile line shown, but Python was built 64-bit, so I suspect the issue is related to a mix of 32-bit and 64-bit code. \n\n## Other OpenSolaris issues\nSome other problems which are failing to allow Sage to build 64-bit on OpenSolaris are listed at #9026.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9042\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @robertwb @jaapspies\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_134 X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## How the Sage build was attempted\n* 64-bit build. SAGE64 was set to \"yes\"\n* #9008 update zlib to latest upstream release to allow a 64-bit library to be built. \n* #9009 update mercurial spkg to build 64-bit.\n* #7982 update sage_fortran so it can build 64-bit binaries.\n* Run 'make -k' so make did not stop on errors, so errors can be listed. \n\n\n## How Python was build\n\nIt should be noted that python builds as a 64-bit application. There is no need to set any environment variables like CFLAGS for Python to build 64-bit. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file local/bin/python\nlocal/bin/python:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\n```\n\n\nWe can see a few modules did not build\n\n\n```\nailed to find the necessary bits to build these modules:\n_bsddb             bsddb185           dl\ngdbm               imageop            linuxaudiodev\nossaudiodev\nTo find the necessary bits, look in setup.py in detect_modules() for the module's name.\n\n\nFailed to build these modules:\n_curses            _curses_panel      _socket\n_ssl               _tkinter           sunaudiodev\n```\n\n\nThe faillure of _socket to build has caused problems with pygments (#9041) and ipython (#9022), but does not seem to be the cause of the problem with Cython. \n\n## The problem with Cython\nThis is related to #8116, which was closed as invalid, but it would appear the problem can still rear its ugly head. \n\n\n```\ncopying Cython/Includes/python_version.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Includes/numpy.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Includes/python_bytes.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Includes/python_method.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Includes/python_ref.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Plex/Scanners.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Plex\ncopying Cython/Compiler/Parsing.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Compiler\ncopying Cython/Compiler/Scanning.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Compiler\ncopying Cython/Compiler/Visitor.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Compiler\ncopying Cython/Runtime/refnanny.pyx -> build/lib.solaris-2.11-i86pc-2.6/Cython/Runtime\nrunning build_ext\nbuilding 'Cython.Plex.Scanners' extension\ncreating build/temp.solaris-2.11-i86pc-2.6\ncreating build/temp.solaris-2.11-i86pc-2.6/export\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -c /export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex/Scanners.c -o build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex/Scanners.o\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,\n                 from /export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex/Scanners.c:4:\n/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nerror: command 'gcc' failed with exit status 1\nError installing Cython\n\nreal    0m4.426s\nuser    0m3.907s\nsys     0m0.505s\nsage: An error occurred while installing cython-0.12.1\n```\n\n\n## The likely cause\nThe -m64 flag is not being used in the compile line shown, but Python was built 64-bit, so I suspect the issue is related to a mix of 32-bit and 64-bit code. \n\n## Other OpenSolaris issues\nSome other problems which are failing to allow Sage to build 64-bit on OpenSolaris are listed at #9026.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9042\n\n",
     "created_at": "2010-05-25T01:42:02Z",
     "labels": [
         "porting: Solaris",
@@ -19,7 +19,7 @@ archive/issues_009042.json:
 ```
 Assignee: drkirkby
 
-CC:  robertwb jsp
+CC:  @robertwb @jaapspies
 
 ## Build environment
 * Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM
@@ -145,7 +145,7 @@ archive/issue_comments_083709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83709",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_083710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83710",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_083711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83711",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_083714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83714",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_083715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83715",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_083716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83716",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -425,7 +425,7 @@ archive/issue_comments_083717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83717",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -532,7 +532,7 @@ archive/issue_comments_083721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83721",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -550,7 +550,7 @@ archive/issue_comments_083722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83722",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

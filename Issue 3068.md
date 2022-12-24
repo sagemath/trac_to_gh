@@ -3,7 +3,7 @@
 archive/issues_003068.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: m = matrix([])\nsage: m.smith_form()\n<type 'exceptions.RuntimeError'>:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3068\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: m = matrix([])\nsage: m.smith_form()\n<type 'exceptions.RuntimeError'>:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3068\n\n",
     "created_at": "2008-04-30T15:25:30Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_003068.json:
     "title": "empty matrices: smith_form() throws a RuntimeError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3068",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -43,7 +43,7 @@ archive/issue_comments_021171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3068#issuecomment-21171",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_021172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3068#issuecomment-21172",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_021173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3068#issuecomment-21173",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_021177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3068",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3068#issuecomment-21177",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 

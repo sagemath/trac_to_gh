@@ -14,7 +14,7 @@ archive/issues_001591.json:
     "title": "cygwin -- immediately terminate the build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1591",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -120,7 +120,7 @@ archive/issue_comments_010128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1591",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1591#issuecomment-10128",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

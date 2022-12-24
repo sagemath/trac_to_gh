@@ -3,7 +3,7 @@
 archive/issues_004786.json:
 ```json
 {
-    "body": "Assignee: burcin\n\n\n```\nIs this the right place for suggestions for the function \"solve\" ?\n\n1) The docstring has a typo : \"... solve an equation of system ...\"\nShould be an \"or\" here.\n\n2) The section\n\" solution_dict = True -- return a list of dictionaries containing the\nsolutions. \"\nmade me think that solution_dict defaults to True which is not the case.\nMaybe this could be made more clear.\n\n3) 'solution_dict = True' fails when only a single univariate equation\nis given. The solution is then not a list of lists and the conversion to\ndictionary fails:\n\nsage: var('a')\na\nsage: solve ([a^2-1],a,solution_dict=True)\n-\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/tom/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/equations.pyc\nin solve(f, *args, **kwds)\n  1436         sol_list = string_to_list_of_solutions(a)\n  1437         if 'solution_dict' in kwds and kwds['solution_dict']==True:\n- -> 1438             sol_dict=[dict([[eq.left(),eq.right()] for eq in\nsolution]) for solution in sol_list]\n  1439             return sol_dict\n  1440         else:\n\nAttributeError: 'SymbolicVariable' object has no attribute 'left'\n\n\nThanks for your great work.\nThomas\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4786\n\n",
+    "body": "Assignee: @burcin\n\n\n```\nIs this the right place for suggestions for the function \"solve\" ?\n\n1) The docstring has a typo : \"... solve an equation of system ...\"\nShould be an \"or\" here.\n\n2) The section\n\" solution_dict = True -- return a list of dictionaries containing the\nsolutions. \"\nmade me think that solution_dict defaults to True which is not the case.\nMaybe this could be made more clear.\n\n3) 'solution_dict = True' fails when only a single univariate equation\nis given. The solution is then not a list of lists and the conversion to\ndictionary fails:\n\nsage: var('a')\na\nsage: solve ([a^2-1],a,solution_dict=True)\n-\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/tom/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/equations.pyc\nin solve(f, *args, **kwds)\n  1436         sol_list = string_to_list_of_solutions(a)\n  1437         if 'solution_dict' in kwds and kwds['solution_dict']==True:\n- -> 1438             sol_dict=[dict([[eq.left(),eq.right()] for eq in\nsolution]) for solution in sol_list]\n  1439             return sol_dict\n  1440         else:\n\nAttributeError: 'SymbolicVariable' object has no attribute 'left'\n\n\nThanks for your great work.\nThomas\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4786\n\n",
     "created_at": "2008-12-13T21:43:31Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_004786.json:
     "title": "fix some bugs / typos in the solve function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4786",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 
 ```
@@ -73,16 +73,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4786
 archive/issue_comments_036278.json:
 ```json
 {
-    "body": "Attachment [trac-4786.patch](tarball://root/attachments/some-uuid/ticket4786/trac-4786.patch) by jason created at 2009-01-22 18:27:12",
+    "body": "Attachment [trac-4786.patch](tarball://root/attachments/some-uuid/ticket4786/trac-4786.patch) by @jasongrout created at 2009-01-22 18:27:12",
     "created_at": "2009-01-22T18:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36278",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-4786.patch](tarball://root/attachments/some-uuid/ticket4786/trac-4786.patch) by jason created at 2009-01-22 18:27:12
+Attachment [trac-4786.patch](tarball://root/attachments/some-uuid/ticket4786/trac-4786.patch) by @jasongrout created at 2009-01-22 18:27:12
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_036279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36279",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_036280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36280",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -146,16 +146,16 @@ Got:
 archive/issue_comments_036281.json:
 ```json
 {
-    "body": "Attachment [trac_4786-solution_dict.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.patch) by kcrisman created at 2009-08-26 15:25:42\n\nBased on 4.1.1",
+    "body": "Attachment [trac_4786-solution_dict.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.patch) by @kcrisman created at 2009-08-26 15:25:42\n\nBased on 4.1.1",
     "created_at": "2009-08-26T15:25:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36281",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4786-solution_dict.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.patch) by kcrisman created at 2009-08-26 15:25:42
+Attachment [trac_4786-solution_dict.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.patch) by @kcrisman created at 2009-08-26 15:25:42
 
 Based on 4.1.1
 
@@ -171,7 +171,7 @@ archive/issue_comments_036282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36282",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_036283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36283",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -202,16 +202,16 @@ new version of kcrisman's patch
 archive/issue_comments_036284.json:
 ```json
 {
-    "body": "Attachment [trac_4786-solution_dict.take2.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take2.patch) by burcin created at 2009-09-10 12:48:12\n\nHi Karl-Dieter,\n\nI uploaded a new version of your patch at attachment:trac_4786-solution_dict.take2.patch. The changes are:\n* used `sorted( d.items() )` to print a dictionary in a doctest\n* changed the block:\n {{{\n            try:\n                sol_dict=[dict([[eq.left(),eq.right()] for eq in solution]) for solution in sol_list]\n            except TypeError:\n                if not isinstance(sol_list[0],list):\n                    sol_list = [[i] for i in sol_list]\n                    sol_dict=[dict([[eq.left(),eq.right()] for eq in solution]) for solution in sol_list]\n }}}\n to\n {{{\n            if isinstance(sol_list[0], list):\n                sol_dict=[dict([[eq.left(),eq.right()] for eq in solution])\n                        for solution in sol_list]\n            else:\n                sol_dict=[{eq.left():eq.right()} for eq in sol_list]\n }}}\n\nPlease give this ticket a positive review if you're ok with my changes.\n\n----\n\nMinh, only apply: attachment:trac_4786-solution_dict.take2.patch",
+    "body": "Attachment [trac_4786-solution_dict.take2.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take2.patch) by @burcin created at 2009-09-10 12:48:12\n\nHi Karl-Dieter,\n\nI uploaded a new version of your patch at attachment:trac_4786-solution_dict.take2.patch. The changes are:\n* used `sorted( d.items() )` to print a dictionary in a doctest\n* changed the block:\n {{{\n            try:\n                sol_dict=[dict([[eq.left(),eq.right()] for eq in solution]) for solution in sol_list]\n            except TypeError:\n                if not isinstance(sol_list[0],list):\n                    sol_list = [[i] for i in sol_list]\n                    sol_dict=[dict([[eq.left(),eq.right()] for eq in solution]) for solution in sol_list]\n }}}\n to\n {{{\n            if isinstance(sol_list[0], list):\n                sol_dict=[dict([[eq.left(),eq.right()] for eq in solution])\n                        for solution in sol_list]\n            else:\n                sol_dict=[{eq.left():eq.right()} for eq in sol_list]\n }}}\n\nPlease give this ticket a positive review if you're ok with my changes.\n\n----\n\nMinh, only apply: attachment:trac_4786-solution_dict.take2.patch",
     "created_at": "2009-09-10T12:48:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36284",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_4786-solution_dict.take2.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take2.patch) by burcin created at 2009-09-10 12:48:12
+Attachment [trac_4786-solution_dict.take2.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take2.patch) by @burcin created at 2009-09-10 12:48:12
 
 Hi Karl-Dieter,
 
@@ -253,7 +253,7 @@ archive/issue_comments_036285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36285",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -281,16 +281,16 @@ So I fixed that in the latest version, and hopefully now you can give it positiv
 archive/issue_comments_036286.json:
 ```json
 {
-    "body": "Attachment [trac_4786-solution_dict.take3.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take3.patch) by kcrisman created at 2009-09-10 14:14:34\n\nApply only take3.",
+    "body": "Attachment [trac_4786-solution_dict.take3.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take3.patch) by @kcrisman created at 2009-09-10 14:14:34\n\nApply only take3.",
     "created_at": "2009-09-10T14:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36286",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_4786-solution_dict.take3.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take3.patch) by kcrisman created at 2009-09-10 14:14:34
+Attachment [trac_4786-solution_dict.take3.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take3.patch) by @kcrisman created at 2009-09-10 14:14:34
 
 Apply only take3.
 
@@ -301,16 +301,16 @@ Apply only take3.
 archive/issue_comments_036287.json:
 ```json
 {
-    "body": "Attachment [trac_4786-solution_dict.take4.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take4.patch) by burcin created at 2009-09-12 13:13:20",
+    "body": "Attachment [trac_4786-solution_dict.take4.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take4.patch) by @burcin created at 2009-09-12 13:13:20",
     "created_at": "2009-09-12T13:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36287",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_4786-solution_dict.take4.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take4.patch) by burcin created at 2009-09-12 13:13:20
+Attachment [trac_4786-solution_dict.take4.patch](tarball://root/attachments/some-uuid/ticket4786/trac_4786-solution_dict.take4.patch) by @burcin created at 2009-09-12 13:13:20
 
 
 
@@ -324,7 +324,7 @@ archive/issue_comments_036288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36288",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -344,7 +344,7 @@ archive/issue_comments_036289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36289",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_036290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4786",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36290",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

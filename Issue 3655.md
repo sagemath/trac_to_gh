@@ -3,7 +3,7 @@
 archive/issues_003655.json:
 ```json
 {
-    "body": "Assignee: gfurnish\n\nThis was reported by C Boncelet.\n\n\n```\nsage: x = PolynomialRing(QQ,'x').gen()\nsage: f = Piecewise([[(0,1),1*x^0]])\nsage: r = f*2\nsage: r = 2*f\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call\nlast)\n/Users/boncelet/<ipython console> in <module>()\n/Users/boncelet/element.pyx in\nsage.structure.element.RingElement.__mul__ (sage/structure/element.c:\n8545)()\n/Users/boncelet/coerce.pyx in\nsage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/\nstructure/coerce.c:5338)()\nTypeError: unsupported operand parent(s) for '*': 'Integer Ring' and\n'<type 'instance'>'\n```\n\n\nHe then suggested simply defining __rmul__ = __mul__:\n\n\n```\nsage: f.__rmul__ = f.__mul__\nsage: r = f*2\nsage: r = 2*f\nsage: r\nPiecewise defined function with 1 parts, [[(0, 1), 2]]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3655\n\n",
+    "body": "Assignee: @garyfurnish\n\nThis was reported by C Boncelet.\n\n\n```\nsage: x = PolynomialRing(QQ,'x').gen()\nsage: f = Piecewise([[(0,1),1*x^0]])\nsage: r = f*2\nsage: r = 2*f\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call\nlast)\n/Users/boncelet/<ipython console> in <module>()\n/Users/boncelet/element.pyx in\nsage.structure.element.RingElement.__mul__ (sage/structure/element.c:\n8545)()\n/Users/boncelet/coerce.pyx in\nsage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/\nstructure/coerce.c:5338)()\nTypeError: unsupported operand parent(s) for '*': 'Integer Ring' and\n'<type 'instance'>'\n```\n\n\nHe then suggested simply defining __rmul__ = __mul__:\n\n\n```\nsage: f.__rmul__ = f.__mul__\nsage: r = f*2\nsage: r = 2*f\nsage: r\nPiecewise defined function with 1 parts, [[(0, 1), 2]]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3655\n\n",
     "created_at": "2008-07-15T01:46:22Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_003655.json:
     "title": "left multiplication in piecewise does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3655",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: gfurnish
+Assignee: @garyfurnish
 
 This was reported by C Boncelet.
 
@@ -66,16 +66,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3655
 archive/issue_comments_025842.json:
 ```json
 {
-    "body": "Attachment [10058.patch](tarball://root/attachments/some-uuid/ticket3655/10058.patch) by wdj created at 2008-07-15 10:48:19\n\nbased on 3.0.4",
+    "body": "Attachment [10058.patch](tarball://root/attachments/some-uuid/ticket3655/10058.patch) by @wdjoyner created at 2008-07-15 10:48:19\n\nbased on 3.0.4",
     "created_at": "2008-07-15T10:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3655#issuecomment-25842",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [10058.patch](tarball://root/attachments/some-uuid/ticket3655/10058.patch) by wdj created at 2008-07-15 10:48:19
+Attachment [10058.patch](tarball://root/attachments/some-uuid/ticket3655/10058.patch) by @wdjoyner created at 2008-07-15 10:48:19
 
 based on 3.0.4
 
@@ -91,7 +91,7 @@ archive/issue_comments_025843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3655#issuecomment-25843",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -104,16 +104,16 @@ I added a patch implementing the suggestion above. It is just a few lines. Passe
 archive/issue_comments_025844.json:
 ```json
 {
-    "body": "Attachment [trac_3655.patch](tarball://root/attachments/some-uuid/ticket3655/trac_3655.patch) by mhansen created at 2008-08-26 22:12:14",
+    "body": "Attachment [trac_3655.patch](tarball://root/attachments/some-uuid/ticket3655/trac_3655.patch) by @mwhansen created at 2008-08-26 22:12:14",
     "created_at": "2008-08-26T22:12:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3655#issuecomment-25844",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3655.patch](tarball://root/attachments/some-uuid/ticket3655/trac_3655.patch) by mhansen created at 2008-08-26 22:12:14
+Attachment [trac_3655.patch](tarball://root/attachments/some-uuid/ticket3655/trac_3655.patch) by @mwhansen created at 2008-08-26 22:12:14
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_025845.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3655",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3655#issuecomment-25845",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

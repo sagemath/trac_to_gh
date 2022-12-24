@@ -3,7 +3,7 @@
 archive/issues_009294.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  hemmecke\n\nsagenb-0.8.p2/src/sagenb/sagenb/notebook/js.py\n\nsays\n\ntry:\n    from sage.misc.misc import SAGE_ROOT\n    from pkg_resources import Requirement, working_set\n    sagenb_path = working_set.find(Requirement.parse('sagenb')).location\n    debug_mode = SAGE_ROOT not in os.path.realpath(sagenb_path)\nexcept AttributeError, ImportError:\n    debug_mode = False\n\nBut according to what I cite below, it should rather be\n\nexcept (AttributeError, ImportError):\n\nhttp://docs.python.org/tutorial/errors.html\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9294\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @hemmecke\n\nsagenb-0.8.p2/src/sagenb/sagenb/notebook/js.py\n\nsays\n\ntry:\n    from sage.misc.misc import SAGE_ROOT\n    from pkg_resources import Requirement, working_set\n    sagenb_path = working_set.find(Requirement.parse('sagenb')).location\n    debug_mode = SAGE_ROOT not in os.path.realpath(sagenb_path)\nexcept AttributeError, ImportError:\n    debug_mode = False\n\nBut according to what I cite below, it should rather be\n\nexcept (AttributeError, ImportError):\n\nhttp://docs.python.org/tutorial/errors.html\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9294\n\n",
     "created_at": "2010-06-21T09:36:28Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_009294.json:
     "title": "wrong usage of except",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9294",
-    "user": "hemmecke"
+    "user": "@hemmecke"
 }
 ```
 Assignee: jason, was
 
-CC:  hemmecke
+CC:  @hemmecke
 
 sagenb-0.8.p2/src/sagenb/sagenb/notebook/js.py
 
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9294
 archive/issue_comments_087518.json:
 ```json
 {
-    "body": "Attachment [js-except-fix.diff](tarball://root/attachments/some-uuid/ticket9294/js-except-fix.diff) by hemmecke created at 2010-06-21 09:36:54",
+    "body": "Attachment [js-except-fix.diff](tarball://root/attachments/some-uuid/ticket9294/js-except-fix.diff) by @hemmecke created at 2010-06-21 09:36:54",
     "created_at": "2010-06-21T09:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9294#issuecomment-87518",
-    "user": "hemmecke"
+    "user": "@hemmecke"
 }
 ```
 
-Attachment [js-except-fix.diff](tarball://root/attachments/some-uuid/ticket9294/js-except-fix.diff) by hemmecke created at 2010-06-21 09:36:54
+Attachment [js-except-fix.diff](tarball://root/attachments/some-uuid/ticket9294/js-except-fix.diff) by @hemmecke created at 2010-06-21 09:36:54
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_087519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9294#issuecomment-87519",
-    "user": "hemmecke"
+    "user": "@hemmecke"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_087520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9294#issuecomment-87520",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_087521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9294#issuecomment-87521",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_087522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9294#issuecomment-87522",
-    "user": "hemmecke"
+    "user": "@hemmecke"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_087523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9294#issuecomment-87523",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_087524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9294",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9294#issuecomment-87524",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

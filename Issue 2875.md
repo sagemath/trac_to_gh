@@ -14,7 +14,7 @@ archive/issues_002875.json:
     "title": "notebook -- save_session is completely broken in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2875",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_019749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2875#issuecomment-19749",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing priority from major to blocker.
 archive/issue_comments_019750.json:
 ```json
 {
-    "body": "Attachment [sage-2875.patch](tarball://root/attachments/some-uuid/ticket2875/sage-2875.patch) by was created at 2008-04-12 03:31:56",
+    "body": "Attachment [sage-2875.patch](tarball://root/attachments/some-uuid/ticket2875/sage-2875.patch) by @williamstein created at 2008-04-12 03:31:56",
     "created_at": "2008-04-12T03:31:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2875#issuecomment-19750",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2875.patch](tarball://root/attachments/some-uuid/ticket2875/sage-2875.patch) by was created at 2008-04-12 03:31:56
+Attachment [sage-2875.patch](tarball://root/attachments/some-uuid/ticket2875/sage-2875.patch) by @williamstein created at 2008-04-12 03:31:56
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_019752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2875",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2875#issuecomment-19752",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

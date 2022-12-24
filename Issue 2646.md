@@ -3,7 +3,7 @@
 archive/issues_002646.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman rbeezer\n\nHere is an initial version.\n\n\n```\ndef plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=5, **kwds):\n    xvar, xmin, xmax = xrange\n    yvar, ymin, ymax = yrange\n    zvar, zmin, zmax = zrange\n    ff = SR(vec[0])._fast_float_(xvar, yvar, zvar)\n    gg = SR(vec[1])._fast_float_(xvar, yvar, zvar)\n    hh = SR(vec[2])._fast_float_(xvar, yvar, zvar)\n    xpoints = [xmin..xmax, step=float(xmax-xmin)/(plot_points-1)][0:plot_points]\n    ypoints = [ymin..ymax, step=float(ymax-ymin)/(plot_points-1)][0:plot_points]\n    zpoints = [zmin..zmax, step=float(zmax-zmin)/(plot_points-1)][0:plot_points]\n    points = [(i,j,k) for i in xpoints for j in ypoints for k in zpoints]\n    vectors = [(ff(i,j,k), gg(i,j,k), hh(i,j,k)) for i,j,k in points]\n    max_len = max([math.sqrt(i^2+j^2+k^2) for i,j,k in vectors])\n    scaled_vectors = [(i/max_len, j/max_len, k/max_len) for i,j,k in vectors] \n    return sum([arrow3d( point, (point[0]+vector[0], point[1]+vector[1], point[2]+vector[2]), **kwds) for point,vector in zip(points, scaled_vectors)])\n```\n\n\nIt is used similar to the plot_vector_field function:\n\n\n```\nsage: var('x y z')\nsage: plot_vector_field3d((sin(x),cos(y), x*z), (x,0,3), (y,0,3), (z,0,3), plot_points=6)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2646\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman @rbeezer\n\nHere is an initial version.\n\n\n```\ndef plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=5, **kwds):\n    xvar, xmin, xmax = xrange\n    yvar, ymin, ymax = yrange\n    zvar, zmin, zmax = zrange\n    ff = SR(vec[0])._fast_float_(xvar, yvar, zvar)\n    gg = SR(vec[1])._fast_float_(xvar, yvar, zvar)\n    hh = SR(vec[2])._fast_float_(xvar, yvar, zvar)\n    xpoints = [xmin..xmax, step=float(xmax-xmin)/(plot_points-1)][0:plot_points]\n    ypoints = [ymin..ymax, step=float(ymax-ymin)/(plot_points-1)][0:plot_points]\n    zpoints = [zmin..zmax, step=float(zmax-zmin)/(plot_points-1)][0:plot_points]\n    points = [(i,j,k) for i in xpoints for j in ypoints for k in zpoints]\n    vectors = [(ff(i,j,k), gg(i,j,k), hh(i,j,k)) for i,j,k in points]\n    max_len = max([math.sqrt(i^2+j^2+k^2) for i,j,k in vectors])\n    scaled_vectors = [(i/max_len, j/max_len, k/max_len) for i,j,k in vectors] \n    return sum([arrow3d( point, (point[0]+vector[0], point[1]+vector[1], point[2]+vector[2]), **kwds) for point,vector in zip(points, scaled_vectors)])\n```\n\n\nIt is used similar to the plot_vector_field function:\n\n\n```\nsage: var('x y z')\nsage: plot_vector_field3d((sin(x),cos(y), x*z), (x,0,3), (y,0,3), (z,0,3), plot_points=6)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2646\n\n",
     "created_at": "2008-03-22T15:58:11Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_002646.json:
     "title": "create plot_vector_field3d function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2646",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman rbeezer
+CC:  @kcrisman @rbeezer
 
 Here is an initial version.
 
@@ -69,7 +69,7 @@ archive/issue_comments_018189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18189",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_018190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18190",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_018191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18191",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_018192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18192",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_018193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18193",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -235,7 +235,7 @@ archive/issue_comments_018194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18194",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_018195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18195",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_018196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18196",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -335,16 +335,16 @@ Changing status from new to needs_work.
 archive/issue_comments_018197.json:
 ```json
 {
-    "body": "Attachment [trac-2646-plot_vector_field3d.patch](tarball://root/attachments/some-uuid/ticket2646/trac-2646-plot_vector_field3d.patch) by jason created at 2009-10-29 06:29:00\n\nFinally, a patch!",
+    "body": "Attachment [trac-2646-plot_vector_field3d.patch](tarball://root/attachments/some-uuid/ticket2646/trac-2646-plot_vector_field3d.patch) by @jasongrout created at 2009-10-29 06:29:00\n\nFinally, a patch!",
     "created_at": "2009-10-29T06:29:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18197",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-2646-plot_vector_field3d.patch](tarball://root/attachments/some-uuid/ticket2646/trac-2646-plot_vector_field3d.patch) by jason created at 2009-10-29 06:29:00
+Attachment [trac-2646-plot_vector_field3d.patch](tarball://root/attachments/some-uuid/ticket2646/trac-2646-plot_vector_field3d.patch) by @jasongrout created at 2009-10-29 06:29:00
 
 Finally, a patch!
 
@@ -360,7 +360,7 @@ archive/issue_comments_018198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18198",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_018201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2646",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18201",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

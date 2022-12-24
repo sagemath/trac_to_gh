@@ -3,7 +3,7 @@
 archive/issues_004818.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: v = list_plot3d([(1,2,3)]).show(viewer=\"tachyon\")\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/wstein/<ipython console> in <module>()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/list_plot3d.pyc in list_plot3d(v, interpolation_type, texture, point_list, **kwds)\n    124             return Graphics3d()\n    125         elif isinstance(v[0],tuple) or point_list==True and len(v[0]) == 3:\n--> 126             return list_plot3d_tuples(v,interpolation_type,texture=texture, **kwds)\n    127         else:\n    128             return list_plot3d_array_of_arrays(v, interpolation_type,texture, **kwds)\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/list_plot3d.pyc in list_plot3d_tuples(v, interpolation_type, texture, **kwds)\n    222     if interpolation_type == 'nn'  or interpolation_type =='default':\n    223 \n--> 224         T=delaunay.Triangulation(x,y)\n    225         f=T.nn_interpolator(z)\n    226         f.default_value=0.0\n\n/home/wstein/sage/local/lib/python2.5/site-packages/delaunay/triangulate.pyc in __init__(self, x, y)\n     66             self.triangle_neighbors = delaunay(self.x, self.y)\n     67 \n---> 68         self.hull = self._compute_convex_hull()\n     69 \n     70     def _compute_convex_hull(self):\n\n/home/wstein/sage/local/lib/python2.5/site-packages/delaunay/triangulate.pyc in _compute_convex_hull(self)\n     77 \n     78         edges = {}\n---> 79         edges.update(dict(zip(self.triangle_nodes[border[:,0]][:,1],\n     80                               self.triangle_nodes[border[:,0]][:,2])))\n     81         edges.update(dict(zip(self.triangle_nodes[border[:,1]][:,2],\n\nIndexError: invalid index\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4818\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: v = list_plot3d([(1,2,3)]).show(viewer=\"tachyon\")\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/wstein/<ipython console> in <module>()\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/list_plot3d.pyc in list_plot3d(v, interpolation_type, texture, point_list, **kwds)\n    124             return Graphics3d()\n    125         elif isinstance(v[0],tuple) or point_list==True and len(v[0]) == 3:\n--> 126             return list_plot3d_tuples(v,interpolation_type,texture=texture, **kwds)\n    127         else:\n    128             return list_plot3d_array_of_arrays(v, interpolation_type,texture, **kwds)\n\n/home/wstein/sage/local/lib/python2.5/site-packages/sage/plot/plot3d/list_plot3d.pyc in list_plot3d_tuples(v, interpolation_type, texture, **kwds)\n    222     if interpolation_type == 'nn'  or interpolation_type =='default':\n    223 \n--> 224         T=delaunay.Triangulation(x,y)\n    225         f=T.nn_interpolator(z)\n    226         f.default_value=0.0\n\n/home/wstein/sage/local/lib/python2.5/site-packages/delaunay/triangulate.pyc in __init__(self, x, y)\n     66             self.triangle_neighbors = delaunay(self.x, self.y)\n     67 \n---> 68         self.hull = self._compute_convex_hull()\n     69 \n     70     def _compute_convex_hull(self):\n\n/home/wstein/sage/local/lib/python2.5/site-packages/delaunay/triangulate.pyc in _compute_convex_hull(self)\n     77 \n     78         edges = {}\n---> 79         edges.update(dict(zip(self.triangle_nodes[border[:,0]][:,1],\n     80                               self.triangle_nodes[border[:,0]][:,2])))\n     81         edges.update(dict(zip(self.triangle_nodes[border[:,1]][:,2],\n\nIndexError: invalid index\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4818\n\n",
     "created_at": "2008-12-17T06:54:47Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004818.json:
     "title": "bug in list_plot3d -- invalid index?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4818",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -76,7 +76,7 @@ archive/issue_comments_036534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4818#issuecomment-36534",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_036536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4818",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4818#issuecomment-36536",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

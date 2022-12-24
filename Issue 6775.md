@@ -3,7 +3,7 @@
 archive/issues_006775.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  rlm\n\nKeywords: disjoint set data structure\n\nI would like to have an easy to use disjoint-set data structure like the one described here:\n\nhttp://en.wikipedia.org/wiki/Disjoint_set_data_structure\n\n\n```\nsage: d = DisjointSet(range(5))\nsage: d\n{{0}, {1}, {2}, {3}, {4}}\nsage: d.union(3,4)\nsage: d\n{{0}, {1}, {2}, {3, 4}}\nsage: d.union(0,2)\nsage: d\n{{0, 2}, {1}, {3, 4}}\nsage: d.union(1,4)\nsage: d.find(3)\n3\nsage: d.find(4)\n3\n```\n\n\nAs suggested [by Robert Miller on sage-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/4b6d5bb2983d81c2/f52adb855eb3b09f?lnk=gst&q=disjoint+set#f52adb855eb3b09f), one could use what is defined in\n\n`sage/groups/perm_gps/partn_ref/data_structures_*`\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6775\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @rlmill\n\nKeywords: disjoint set data structure\n\nI would like to have an easy to use disjoint-set data structure like the one described here:\n\nhttp://en.wikipedia.org/wiki/Disjoint_set_data_structure\n\n\n```\nsage: d = DisjointSet(range(5))\nsage: d\n{{0}, {1}, {2}, {3}, {4}}\nsage: d.union(3,4)\nsage: d\n{{0}, {1}, {2}, {3, 4}}\nsage: d.union(0,2)\nsage: d\n{{0, 2}, {1}, {3, 4}}\nsage: d.union(1,4)\nsage: d.find(3)\n3\nsage: d.find(4)\n3\n```\n\n\nAs suggested [by Robert Miller on sage-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/4b6d5bb2983d81c2/f52adb855eb3b09f?lnk=gst&q=disjoint+set#f52adb855eb3b09f), one could use what is defined in\n\n`sage/groups/perm_gps/partn_ref/data_structures_*`\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6775\n\n",
     "created_at": "2009-08-19T18:29:55Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_006775.json:
     "title": "Having an easy to use Disjoint Set data structure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6775",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  rlm
+CC:  @rlmill
 
 Keywords: disjoint set data structure
 
@@ -70,7 +70,7 @@ archive/issue_comments_055794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55794",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -110,16 +110,16 @@ SAGE will now terminate (sorry).
 archive/issue_comments_055795.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to slabbe.",
+    "body": "Changing assignee from @mwhansen to @seblabbe.",
     "created_at": "2009-11-02T10:23:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55795",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Changing assignee from mhansen to slabbe.
+Changing assignee from @mwhansen to @seblabbe.
 
 
 
@@ -133,7 +133,7 @@ archive/issue_comments_055796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55796",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_055797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55797",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_055798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55798",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_055799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55799",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_055800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55800",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_055801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55801",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_055802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55802",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_055803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55803",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -381,7 +381,7 @@ archive/issue_comments_055804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55804",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_055805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55805",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -437,16 +437,16 @@ I will look at this before changing the status to `needs review`.
 archive/issue_comments_055806.json:
 ```json
 {
-    "body": "Attachment [trac_6775-with_dealloc-sl.patch](tarball://root/attachments/some-uuid/ticket6775/trac_6775-with_dealloc-sl.patch) by slabbe created at 2010-01-19 17:44:53\n\nApplies over the precedent patch.",
+    "body": "Attachment [trac_6775-with_dealloc-sl.patch](tarball://root/attachments/some-uuid/ticket6775/trac_6775-with_dealloc-sl.patch) by @seblabbe created at 2010-01-19 17:44:53\n\nApplies over the precedent patch.",
     "created_at": "2010-01-19T17:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55806",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_6775-with_dealloc-sl.patch](tarball://root/attachments/some-uuid/ticket6775/trac_6775-with_dealloc-sl.patch) by slabbe created at 2010-01-19 17:44:53
+Attachment [trac_6775-with_dealloc-sl.patch](tarball://root/attachments/some-uuid/ticket6775/trac_6775-with_dealloc-sl.patch) by @seblabbe created at 2010-01-19 17:44:53
 
 Applies over the precedent patch.
 
@@ -462,7 +462,7 @@ archive/issue_comments_055807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55807",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_055808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55808",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -520,7 +520,7 @@ archive/issue_comments_055809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55809",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_055810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55810",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_055811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55811",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -571,16 +571,16 @@ Apply only this one.
 archive/issue_comments_055812.json:
 ```json
 {
-    "body": "Attachment [trac_6775-disjoint_set-sl.patch](tarball://root/attachments/some-uuid/ticket6775/trac_6775-disjoint_set-sl.patch) by slabbe created at 2010-02-07 16:33:09\n\nGood point. I followed your suggestion and I folded both precedent patches.\n\nNeeds review!",
+    "body": "Attachment [trac_6775-disjoint_set-sl.patch](tarball://root/attachments/some-uuid/ticket6775/trac_6775-disjoint_set-sl.patch) by @seblabbe created at 2010-02-07 16:33:09\n\nGood point. I followed your suggestion and I folded both precedent patches.\n\nNeeds review!",
     "created_at": "2010-02-07T16:33:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55812",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_6775-disjoint_set-sl.patch](tarball://root/attachments/some-uuid/ticket6775/trac_6775-disjoint_set-sl.patch) by slabbe created at 2010-02-07 16:33:09
+Attachment [trac_6775-disjoint_set-sl.patch](tarball://root/attachments/some-uuid/ticket6775/trac_6775-disjoint_set-sl.patch) by @seblabbe created at 2010-02-07 16:33:09
 
 Good point. I followed your suggestion and I folded both precedent patches.
 
@@ -598,7 +598,7 @@ archive/issue_comments_055813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55813",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_055814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55814",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -634,7 +634,7 @@ archive/issue_comments_055815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55815",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -652,7 +652,7 @@ archive/issue_comments_055816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6775",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6775#issuecomment-55816",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

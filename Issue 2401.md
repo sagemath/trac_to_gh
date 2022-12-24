@@ -3,7 +3,7 @@
 archive/issues_002401.json:
 ```json
 {
-    "body": "Assignee: cswiercz\n\nKeywords: docstring, doctest\n\nProvide missing docstrings and doctests for non-underscore functions in rings/integer_ring.pyx (Current score: 30% (11 of 36))\n\nIssue created by migration from https://trac.sagemath.org/ticket/2401\n\n",
+    "body": "Assignee: @cswiercz\n\nKeywords: docstring, doctest\n\nProvide missing docstrings and doctests for non-underscore functions in rings/integer_ring.pyx (Current score: 30% (11 of 36))\n\nIssue created by migration from https://trac.sagemath.org/ticket/2401\n\n",
     "created_at": "2008-03-06T01:18:14Z",
     "labels": [
         "doctest coverage",
@@ -14,10 +14,10 @@ archive/issues_002401.json:
     "title": "Docstrings and doctests for rings/integer_ring.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2401",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
-Assignee: cswiercz
+Assignee: @cswiercz
 
 Keywords: docstring, doctest
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2401
 archive/issue_comments_016215.json:
 ```json
 {
-    "body": "Attachment [rings.integer_ring.patch](tarball://root/attachments/some-uuid/ticket2401/rings.integer_ring.patch) by cswiercz created at 2008-03-07 23:27:32\n\nAdded missing doctests for non-underscore functions in rings/integer_ring.pyx. Current score is now at 75% (27 of 36).",
+    "body": "Attachment [rings.integer_ring.patch](tarball://root/attachments/some-uuid/ticket2401/rings.integer_ring.patch) by @cswiercz created at 2008-03-07 23:27:32\n\nAdded missing doctests for non-underscore functions in rings/integer_ring.pyx. Current score is now at 75% (27 of 36).",
     "created_at": "2008-03-07T23:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2401#issuecomment-16215",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
-Attachment [rings.integer_ring.patch](tarball://root/attachments/some-uuid/ticket2401/rings.integer_ring.patch) by cswiercz created at 2008-03-07 23:27:32
+Attachment [rings.integer_ring.patch](tarball://root/attachments/some-uuid/ticket2401/rings.integer_ring.patch) by @cswiercz created at 2008-03-07 23:27:32
 
 Added missing doctests for non-underscore functions in rings/integer_ring.pyx. Current score is now at 75% (27 of 36).
 
@@ -59,7 +59,7 @@ archive/issue_comments_016216.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2401#issuecomment-16216",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_016217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2401#issuecomment-16217",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_016218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2401#issuecomment-16218",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_016219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2401",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2401#issuecomment-16219",
-    "user": "cswiercz"
+    "user": "@cswiercz"
 }
 ```
 

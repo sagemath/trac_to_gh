@@ -14,7 +14,7 @@ archive/issues_006225.json:
     "title": "[with patch, needs review] add link to irc in notebook help page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6225",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_049693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6225#issuecomment-49693",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_049694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6225#issuecomment-49694",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -68,16 +68,16 @@ adds link to help-irc.html on notebook help page / rephrased text
 archive/issue_comments_049695.json:
 ```json
 {
-    "body": "Attachment [irc_help.diff](tarball://root/attachments/some-uuid/ticket6225/irc_help.diff) by ncalexan created at 2009-06-13 21:39:13",
+    "body": "Attachment [irc_help.diff](tarball://root/attachments/some-uuid/ticket6225/irc_help.diff) by @ncalexan created at 2009-06-13 21:39:13",
     "created_at": "2009-06-13T21:39:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6225#issuecomment-49695",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
-Attachment [irc_help.diff](tarball://root/attachments/some-uuid/ticket6225/irc_help.diff) by ncalexan created at 2009-06-13 21:39:13
+Attachment [irc_help.diff](tarball://root/attachments/some-uuid/ticket6225/irc_help.diff) by @ncalexan created at 2009-06-13 21:39:13
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_049696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6225",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6225#issuecomment-49696",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000653.json:
 ```json
 {
-    "body": "Assignee: was\n\nIt would be good to port polredabs() from pari--this runs LLL to find a \"small\" generator of a field.\n\nFrom gp:\n\n? ?polredabs\npolredabs(x,{flag=0}): a smallest generating polynomial of the number field for \nthe T2 norm on the roots, with smallest index for the minimal T2 norm. flag is \noptional, whose binary digit mean 1: give the element whose characteristic \npolynomial is the given polynomial. 4: give all polynomials of minimal T2 norm \n(give only one of P(x) and P(-x)). 16: partial reduction.\n\n(Of course, this is part of the larger project of bringing the number fields up to speed...)\n\nIssue created by migration from https://trac.sagemath.org/ticket/653\n\n",
+    "body": "Assignee: @williamstein\n\nIt would be good to port polredabs() from pari--this runs LLL to find a \"small\" generator of a field.\n\nFrom gp:\n\n? ?polredabs\npolredabs(x,{flag=0}): a smallest generating polynomial of the number field for \nthe T2 norm on the roots, with smallest index for the minimal T2 norm. flag is \noptional, whose binary digit mean 1: give the element whose characteristic \npolynomial is the given polynomial. 4: give all polynomials of minimal T2 norm \n(give only one of P(x) and P(-x)). 16: partial reduction.\n\n(Of course, this is part of the larger project of bringing the number fields up to speed...)\n\nIssue created by migration from https://trac.sagemath.org/ticket/653\n\n",
     "created_at": "2007-09-14T04:28:55Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000653.json:
     "title": "Need LLL-optimize from pari",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/653",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 It would be good to port polredabs() from pari--this runs LLL to find a "small" generator of a field.
 
@@ -48,7 +48,7 @@ archive/issue_comments_003399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/653",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/653#issuecomment-3399",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

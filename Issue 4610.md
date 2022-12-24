@@ -107,16 +107,16 @@ Michael
 archive/issue_comments_034600.json:
 ```json
 {
-    "body": "Attachment [trac_4610_bin.patch](tarball://root/attachments/some-uuid/ticket4610/trac_4610_bin.patch) by gfurnish created at 2008-12-05 04:06:42",
+    "body": "Attachment [trac_4610_bin.patch](tarball://root/attachments/some-uuid/ticket4610/trac_4610_bin.patch) by @garyfurnish created at 2008-12-05 04:06:42",
     "created_at": "2008-12-05T04:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4610#issuecomment-34600",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_4610_bin.patch](tarball://root/attachments/some-uuid/ticket4610/trac_4610_bin.patch) by gfurnish created at 2008-12-05 04:06:42
+Attachment [trac_4610_bin.patch](tarball://root/attachments/some-uuid/ticket4610/trac_4610_bin.patch) by @garyfurnish created at 2008-12-05 04:06:42
 
 
 
@@ -125,16 +125,16 @@ Attachment [trac_4610_bin.patch](tarball://root/attachments/some-uuid/ticket4610
 archive/issue_comments_034601.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to gfurnish.",
+    "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-12-05T04:07:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4610#issuecomment-34601",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from mabshoff to gfurnish.
+Changing assignee from mabshoff to @garyfurnish.
 
 
 
@@ -148,7 +148,7 @@ archive/issue_comments_034602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4610#issuecomment-34602",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_034603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4610",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4610#issuecomment-34603",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

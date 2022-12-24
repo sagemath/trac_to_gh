@@ -3,7 +3,7 @@
 archive/issues_001781.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n\n\nOn Jan 14, 2008 10:33 PM, Dan Drake <> wrote:\n> On Mon, 14 Jan 2008 at 05:05PM -0800, William Stein wrote:\n> > On Jan 14, 2008 5:00 PM, Dan Drake <> wrote:\n> > > In a .sage script file, I have:\n> > >\n> > >   maple.eval('plotsetup(ps, plotoutput=`logplot.eps`, \\\n> > >     plotoptions=`portrait,noborder,color`)')\n> > >   maple.eval('plot(log(2*x), x=1..2,filled=true,color=yellow, \\\n> > >     view=[.75..2.25,0..1.5])')\n> > >\n> > > but the corresponding .py file has, for the second command,\n> > >\n> > >   maple.eval('plot(log(2*x), x=1..2,filled=true,color=yellow, \\\n> > >     view=(ellipsis_range(.75,Ellipsis,2.25,0,Ellipsis,1.5)))')\n> > >\n> > > Maple obviously doesn't understand this. It seems the preparser is a\n> > > bit too eager; it needs to ignore stuff that will get passed to\n> > > Maple or whatever. Can this be fixed?\n> >\n> > The problem is the multiple lines.  Try the same thing but without the\n> > \\ at the end of the line and see what happens.\n> \n> It works fine in that case...which I discovered (naturally) a minute or\n> two after sending the message.\n> \n> Looks like the preparser is not aware of the\n> backslash-continues-the-line convention.\n\nThe parts of the preparser I wrote are:\n\nsage: v = '1 + \\\n....: 3'\nsage: v\n'1 + 3'\n\nBut Robert B. wrote the really cool [n..m] parser code,\nand unfortunately he appears to have written it in a way that\ndoes not work correctly with \\'s.  He'll undoubtedly see\nthis and fix it. \n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1781\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Jan 14, 2008 10:33 PM, Dan Drake <> wrote:\n> On Mon, 14 Jan 2008 at 05:05PM -0800, William Stein wrote:\n> > On Jan 14, 2008 5:00 PM, Dan Drake <> wrote:\n> > > In a .sage script file, I have:\n> > >\n> > >   maple.eval('plotsetup(ps, plotoutput=`logplot.eps`, \\\n> > >     plotoptions=`portrait,noborder,color`)')\n> > >   maple.eval('plot(log(2*x), x=1..2,filled=true,color=yellow, \\\n> > >     view=[.75..2.25,0..1.5])')\n> > >\n> > > but the corresponding .py file has, for the second command,\n> > >\n> > >   maple.eval('plot(log(2*x), x=1..2,filled=true,color=yellow, \\\n> > >     view=(ellipsis_range(.75,Ellipsis,2.25,0,Ellipsis,1.5)))')\n> > >\n> > > Maple obviously doesn't understand this. It seems the preparser is a\n> > > bit too eager; it needs to ignore stuff that will get passed to\n> > > Maple or whatever. Can this be fixed?\n> >\n> > The problem is the multiple lines.  Try the same thing but without the\n> > \\ at the end of the line and see what happens.\n> \n> It works fine in that case...which I discovered (naturally) a minute or\n> two after sending the message.\n> \n> Looks like the preparser is not aware of the\n> backslash-continues-the-line convention.\n\nThe parts of the preparser I wrote are:\n\nsage: v = '1 + \\\n....: 3'\nsage: v\n'1 + 3'\n\nBut Robert B. wrote the really cool [n..m] parser code,\nand unfortunately he appears to have written it in a way that\ndoes not work correctly with \\'s.  He'll undoubtedly see\nthis and fix it. \n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1781\n\n",
     "created_at": "2008-01-15T06:41:55Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_001781.json:
     "title": "preparser bug involving backslash-to-continue line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1781",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -83,7 +83,7 @@ archive/issue_comments_011274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1781#issuecomment-11274",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -96,16 +96,16 @@ Changing status from new to assigned.
 archive/issue_comments_011275.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2008-01-15T07:19:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1781#issuecomment-11275",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -119,7 +119,7 @@ archive/issue_comments_011276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1781#issuecomment-11276",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_011280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1781#issuecomment-11280",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_011281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1781",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1781#issuecomment-11281",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

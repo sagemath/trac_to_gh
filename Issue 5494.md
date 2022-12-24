@@ -14,7 +14,7 @@ archive/issues_005494.json:
     "title": "Make it so that non-Sage notebook modes can display typeste output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5494",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: boothby
@@ -37,7 +37,7 @@ archive/issue_comments_042670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5494#issuecomment-42670",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_042671.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5494#issuecomment-42671",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_042672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5494#issuecomment-42672",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_042673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5494",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5494#issuecomment-42673",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 

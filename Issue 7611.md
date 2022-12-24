@@ -3,7 +3,7 @@
 archive/issues_007611.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe title says it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7611\n\n",
+    "body": "Assignee: @williamstein\n\nThe title says it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7611\n\n",
     "created_at": "2009-12-06T07:36:13Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_007611.json:
     "title": "Minor ReST improvements for the notebook object documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7611",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The title says it all.
 
@@ -37,7 +37,7 @@ archive/issue_comments_065003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7611#issuecomment-65003",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -50,16 +50,16 @@ Adds a few code blocks, and marks variables as code.
 archive/issue_comments_065004.json:
 ```json
 {
-    "body": "Attachment [trac_7611-rest-notebook-object.patch](tarball://root/attachments/some-uuid/ticket7611/trac_7611-rest-notebook-object.patch) by timdumol created at 2009-12-06 07:38:34",
+    "body": "Attachment [trac_7611-rest-notebook-object.patch](tarball://root/attachments/some-uuid/ticket7611/trac_7611-rest-notebook-object.patch) by @TimDumol created at 2009-12-06 07:38:34",
     "created_at": "2009-12-06T07:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7611#issuecomment-65004",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7611-rest-notebook-object.patch](tarball://root/attachments/some-uuid/ticket7611/trac_7611-rest-notebook-object.patch) by timdumol created at 2009-12-06 07:38:34
+Attachment [trac_7611-rest-notebook-object.patch](tarball://root/attachments/some-uuid/ticket7611/trac_7611-rest-notebook-object.patch) by @TimDumol created at 2009-12-06 07:38:34
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_065005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7611#issuecomment-65005",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_065006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7611#issuecomment-65006",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_065007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7611#issuecomment-65007",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_065008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7611#issuecomment-65008",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_065009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7611#issuecomment-65009",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_065010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7611",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7611#issuecomment-65010",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

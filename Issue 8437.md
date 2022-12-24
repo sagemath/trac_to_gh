@@ -3,7 +3,7 @@
 archive/issues_008437.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  thome\n\nsee #1240 for the description (I was told not to reopen tickets).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8437\n\n",
+    "body": "Assignee: tbd\n\nCC:  @emmanuelthome\n\nsee #1240 for the description (I was told not to reopen tickets).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8437\n\n",
     "created_at": "2010-03-04T19:12:41Z",
     "labels": [
         "distribution",
@@ -14,12 +14,12 @@ archive/issues_008437.json:
     "title": "wrong unix rights/permissions of some files after make dist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8437",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tbd
 
-CC:  thome
+CC:  @emmanuelthome
 
 see #1240 for the description (I was told not to reopen tickets).
 
@@ -39,7 +39,7 @@ archive/issue_comments_075739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75739",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_075740.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75740",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_075741.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75741",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_075742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75742",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_075743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75743",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_075744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75744",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_075745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75745",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_075746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75746",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_075747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75747",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_075748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75748",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

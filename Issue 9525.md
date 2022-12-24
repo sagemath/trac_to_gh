@@ -3,7 +3,7 @@
 archive/issues_009525.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  jdemeyer\n\nWhilst trying to locate a bug causing a 64-bit build of Sage on Solaris to be unstable, I found that cvxopt will always report it has successfully installed, even if it does not. The last line in `spkg-install` is\n\n\n```\npython setup.py install\n```\n\n\nwith no error checking. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9525\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @jdemeyer\n\nWhilst trying to locate a bug causing a 64-bit build of Sage on Solaris to be unstable, I found that cvxopt will always report it has successfully installed, even if it does not. The last line in `spkg-install` is\n\n\n```\npython setup.py install\n```\n\n\nwith no error checking. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9525\n\n",
     "created_at": "2010-07-17T08:32:55Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009525.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  jdemeyer
+CC:  @jdemeyer
 
 Whilst trying to locate a bug causing a 64-bit build of Sage on Solaris to be unstable, I found that cvxopt will always report it has successfully installed, even if it does not. The last line in `spkg-install` is
 
@@ -49,7 +49,7 @@ archive/issue_comments_091642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9525#issuecomment-91642",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_091643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9525#issuecomment-91643",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_091644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9525#issuecomment-91644",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_091645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9525#issuecomment-91645",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_091646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9525#issuecomment-91646",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_091647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9525#issuecomment-91647",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

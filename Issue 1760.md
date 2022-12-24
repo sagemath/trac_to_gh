@@ -3,7 +3,7 @@
 archive/issues_001760.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  iandrus\n\n\n```\nWell, perhaps this is know, but apropos the petition to make steps\n4--6 of installation in OS X nicer, there are a very easy way. Simply\nrename the sage script to sage.command. This way if you double-click\nover it from finder it will be automatically launched inside a\nTerminal session.\n\nSaludos,\nRafa\n\nP.D. I'm not a OSX guru, only a /bin/sh user in OSX landscape ;-)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1760\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @gvol\n\n\n```\nWell, perhaps this is know, but apropos the petition to make steps\n4--6 of installation in OS X nicer, there are a very easy way. Simply\nrename the sage script to sage.command. This way if you double-click\nover it from finder it will be automatically launched inside a\nTerminal session.\n\nSaludos,\nRafa\n\nP.D. I'm not a OSX guru, only a /bin/sh user in OSX landscape ;-)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1760\n\n",
     "created_at": "2008-01-11T22:20:11Z",
     "labels": [
         "user interface",
@@ -14,12 +14,12 @@ archive/issues_001760.json:
     "title": "on osx make a symlink sage.command --> sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1760",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  iandrus
+CC:  @gvol
 
 
 ```
@@ -52,7 +52,7 @@ archive/issue_comments_011102.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1760#issuecomment-11102",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -90,7 +90,7 @@ Changing status from new to assigned.
 archive/issue_comments_011104.json:
 ```json
 {
-    "body": "Changing assignee from was to mabshoff.",
+    "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-09-16T04:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1760",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_011104.json:
 }
 ```
 
-Changing assignee from was to mabshoff.
+Changing assignee from @williamstein to mabshoff.
 
 
 
@@ -113,7 +113,7 @@ archive/issue_comments_011105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1760#issuecomment-11105",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_011106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1760#issuecomment-11106",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_011107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1760#issuecomment-11107",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_011108.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1760#issuecomment-11108",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_011109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1760#issuecomment-11109",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_011110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1760",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1760#issuecomment-11110",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

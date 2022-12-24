@@ -14,7 +14,7 @@ archive/issues_002393.json:
     "title": "the version of mercurial shipped with sage does not include the queue extension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2393",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -73,7 +73,7 @@ archive/issue_comments_016140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2393#issuecomment-16140",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_016141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2393",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2393#issuecomment-16141",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009791.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  dimpase\n\nIt would be nice if kernels and inverse images of ring maps were implemented:\n\n```\nsage: R.<s,t>=PolynomialRing(QQ);R\nMultivariate Polynomial Ring in s, t over Rational Field\nsage: S.<x,y,z,w>=PolynomialRing(QQ);S\nMultivariate Polynomial Ring in x, y, z, w over Rational Field\nsage: f=S.hom([s^4,s^3*t,s*t^3,t^4],R);f\nRing morphism:\n  From: Multivariate Polynomial Ring in x, y, z, w over Rational Field\n  To:   Multivariate Polynomial Ring in s, t over Rational Field\n  Defn: x |--> s^4\n        y |--> s^3*t\n        z |--> s*t^3\n        w |--> t^4\nsage: f.inverse_image(0)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.2/devel/sage-main/sage/libs/singular/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/rings/morphism.so in sage.rings.morphism.RingHomomorphism.inverse_image (sage/rings/morphism.c:4168)()\n\nNotImplementedError: \nsage: kernel(f)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.2/devel/sage-main/sage/libs/singular/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/misc/functional.pyc in kernel(x)\n    907         ]\n    908     \"\"\"\n--> 909     return x.kernel()\n    910 \n    911 def krull_dimension(x):\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)()\n\nAttributeError: 'sage.rings.morphism.RingHomomorphism_im_gens' object has no attribute 'kernel'\n```\n\nHere is the corresponding Singular computation:\n\n```\nsage: sage: singular.eval('''\n....:         ring R=0,(s,t),dp;\n....:         ring S=0,(x,y,z,w),dp;\n....:         setring R;\n....:         map f=S,ideal(s^4,s^3*t,s*t^3,t^4);\n....:         setring S;\n....:         ideal ker=kernel(R,f)\n....:       ''');\nsage: sage: singular.get('ker')\n'yz-xw,\\nz3-yw2,\\nxz2-y2w,\\ny3-x2z'\nsage: sage: print(_)\nyz-xw,\nz3-yw2,\nxz2-y2w,\ny3-x2z\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9792\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @dimpase\n\nIt would be nice if kernels and inverse images of ring maps were implemented:\n\n```\nsage: R.<s,t>=PolynomialRing(QQ);R\nMultivariate Polynomial Ring in s, t over Rational Field\nsage: S.<x,y,z,w>=PolynomialRing(QQ);S\nMultivariate Polynomial Ring in x, y, z, w over Rational Field\nsage: f=S.hom([s^4,s^3*t,s*t^3,t^4],R);f\nRing morphism:\n  From: Multivariate Polynomial Ring in x, y, z, w over Rational Field\n  To:   Multivariate Polynomial Ring in s, t over Rational Field\n  Defn: x |--> s^4\n        y |--> s^3*t\n        z |--> s*t^3\n        w |--> t^4\nsage: f.inverse_image(0)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.2/devel/sage-main/sage/libs/singular/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/rings/morphism.so in sage.rings.morphism.RingHomomorphism.inverse_image (sage/rings/morphism.c:4168)()\n\nNotImplementedError: \nsage: kernel(f)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.2/devel/sage-main/sage/libs/singular/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/misc/functional.pyc in kernel(x)\n    907         ]\n    908     \"\"\"\n--> 909     return x.kernel()\n    910 \n    911 def krull_dimension(x):\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)()\n\nAttributeError: 'sage.rings.morphism.RingHomomorphism_im_gens' object has no attribute 'kernel'\n```\n\nHere is the corresponding Singular computation:\n\n```\nsage: sage: singular.eval('''\n....:         ring R=0,(s,t),dp;\n....:         ring S=0,(x,y,z,w),dp;\n....:         setring R;\n....:         map f=S,ideal(s^4,s^3*t,s*t^3,t^4);\n....:         setring S;\n....:         ideal ker=kernel(R,f)\n....:       ''');\nsage: sage: singular.get('ker')\n'yz-xw,\\nz3-yw2,\\nxz2-y2w,\\ny3-x2z'\nsage: sage: print(_)\nyz-xw,\nz3-yw2,\nxz2-y2w,\ny3-x2z\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9792\n\n",
     "created_at": "2010-08-24T12:04:19Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009791.json:
     "title": "kernel and inverse_image of (polynomial) ring maps",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9791",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  dimpase
+CC:  @dimpase
 
 It would be nice if kernels and inverse images of ring maps were implemented:
 
@@ -99,7 +99,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9792
 archive/issue_comments_096147.json:
 ```json
 {
-    "body": "Remove assignee AlexGhitza.",
+    "body": "Remove assignee @aghitza.",
     "created_at": "2020-06-01T16:00:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9791",
     "type": "issue_comment",
@@ -108,7 +108,7 @@ archive/issue_comments_096147.json:
 }
 ```
 
-Remove assignee AlexGhitza.
+Remove assignee @aghitza.
 
 
 
@@ -176,7 +176,7 @@ archive/issue_comments_096151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9791#issuecomment-96151",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_096155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9791#issuecomment-96155",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_096158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9791#issuecomment-96158",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -356,7 +356,7 @@ archive/issue_comments_096159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9791#issuecomment-96159",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -392,7 +392,7 @@ archive/issue_comments_096161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9791",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9791#issuecomment-96161",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

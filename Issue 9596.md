@@ -3,7 +3,7 @@
 archive/issues_009596.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  mstreng\n\nKeywords: real_embeddings is_totally_positive algebraic real numbers proven output\n\nThe number field function `real_embeddings` gives embeddings into finite precision real numbers, hence cannot be used for functions whose values are supposed to be proven (like `is_totally_positive`).\n\nA patch for this ticket should correct the usage of `real_embeddings` and give `real_embeddings` a warning in the documentation string.\n\nFor more info, see\n\n* [http://groups.google.com/group/sage-nt/browse_thread/thread/fb34ad5be1bbe5fd](http://groups.google.com/group/sage-nt/browse_thread/thread/fb34ad5be1bbe5fd) and\n* [http://groups.google.com/group/sage-nt/browse_thread/thread/ce2a4b9555618f99/fbed7f10a944af48](http://groups.google.com/group/sage-nt/browse_thread/thread/ce2a4b9555618f99/fbed7f10a944af48)\n\n\n```\nsage: a = 30122754096401; b = 21300003689580\nsage: (a/b)^2 > 2\nTrue\nsage: K.<sqrt2> = QuadraticField(2)\nsage: (a/b+sqrt2).is_totally_positive()\nFalse\n```\n\nBoth should be `True`.\n\nI'm creating a patch right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9596\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @mstreng\n\nKeywords: real_embeddings is_totally_positive algebraic real numbers proven output\n\nThe number field function `real_embeddings` gives embeddings into finite precision real numbers, hence cannot be used for functions whose values are supposed to be proven (like `is_totally_positive`).\n\nA patch for this ticket should correct the usage of `real_embeddings` and give `real_embeddings` a warning in the documentation string.\n\nFor more info, see\n\n* [http://groups.google.com/group/sage-nt/browse_thread/thread/fb34ad5be1bbe5fd](http://groups.google.com/group/sage-nt/browse_thread/thread/fb34ad5be1bbe5fd) and\n* [http://groups.google.com/group/sage-nt/browse_thread/thread/ce2a4b9555618f99/fbed7f10a944af48](http://groups.google.com/group/sage-nt/browse_thread/thread/ce2a4b9555618f99/fbed7f10a944af48)\n\n\n```\nsage: a = 30122754096401; b = 21300003689580\nsage: (a/b)^2 > 2\nTrue\nsage: K.<sqrt2> = QuadraticField(2)\nsage: (a/b+sqrt2).is_totally_positive()\nFalse\n```\n\nBoth should be `True`.\n\nI'm creating a patch right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9596\n\n",
     "created_at": "2010-07-25T12:45:28Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_009596.json:
     "title": "is_totally_positive should give proven output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9596",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  mstreng
+CC:  @mstreng
 
 Keywords: real_embeddings is_totally_positive algebraic real numbers proven output
 
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9596
 archive/issue_comments_092840.json:
 ```json
 {
-    "body": "Attachment [trac_9596_is_totally_positive.patch](tarball://root/attachments/some-uuid/ticket9596/trac_9596_is_totally_positive.patch) by mstreng created at 2010-07-30 12:14:55",
+    "body": "Attachment [trac_9596_is_totally_positive.patch](tarball://root/attachments/some-uuid/ticket9596/trac_9596_is_totally_positive.patch) by @mstreng created at 2010-07-30 12:14:55",
     "created_at": "2010-07-30T12:14:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9596#issuecomment-92840",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
-Attachment [trac_9596_is_totally_positive.patch](tarball://root/attachments/some-uuid/ticket9596/trac_9596_is_totally_positive.patch) by mstreng created at 2010-07-30 12:14:55
+Attachment [trac_9596_is_totally_positive.patch](tarball://root/attachments/some-uuid/ticket9596/trac_9596_is_totally_positive.patch) by @mstreng created at 2010-07-30 12:14:55
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_092841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9596#issuecomment-92841",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_092842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9596#issuecomment-92842",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_092843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9596#issuecomment-92843",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_092844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9596",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9596#issuecomment-92844",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

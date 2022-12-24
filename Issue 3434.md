@@ -14,7 +14,7 @@ archive/issues_003434.json:
     "title": "notebook -- implementin MAX_OUTPUT handling in cell.py for interact.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3434",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -63,7 +63,7 @@ archive/issue_comments_024201.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3434",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3434#issuecomment-24201",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009768.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nThere seems to be some problems with the coercion of some datatypes to the symbolic ring:\n\nsage: cos(MatrixSpace(ZZ, 2)([1, 2, -4, 7]))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n.......\nTypeError: cannot coerce arguments: no canonical coercion from Full MatrixSpace of 2 by 2 dense matrices over Integer Ring to Symbolic Ring\n\nsage: import numpy\nsage: vec = numpy.array([1,2])\nsage: sin(vec)\narray([ 0.84147098,  0.90929743])\nsage: sin(vec[0])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n....\nTypeError: cannot coerce arguments: no canonical coercion from <type 'numpy.int64'> to Symbolic Ring\n----\n\nsage: x = PolynomialRing(QQ, 'x').gen()\nsage: sin(x)\nsin(x)\nsage: x = PolynomialRing(RR, 'x').gen()\nsage: sin(x)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n.....\nTypeError: cannot coerce arguments: __call__() takes exactly 1 positional argument (0 given)\nsage: x = PolynomialRing(CC, 'x').gen()\nsage: sin(x)\nsin(x)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9769\n\n",
+    "body": "Assignee: @burcin\n\nThere seems to be some problems with the coercion of some datatypes to the symbolic ring:\n\nsage: cos(MatrixSpace(ZZ, 2)([1, 2, -4, 7]))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n.......\nTypeError: cannot coerce arguments: no canonical coercion from Full MatrixSpace of 2 by 2 dense matrices over Integer Ring to Symbolic Ring\n\nsage: import numpy\nsage: vec = numpy.array([1,2])\nsage: sin(vec)\narray([ 0.84147098,  0.90929743])\nsage: sin(vec[0])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n....\nTypeError: cannot coerce arguments: no canonical coercion from <type 'numpy.int64'> to Symbolic Ring\n----\n\nsage: x = PolynomialRing(QQ, 'x').gen()\nsage: sin(x)\nsin(x)\nsage: x = PolynomialRing(RR, 'x').gen()\nsage: sin(x)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n.....\nTypeError: cannot coerce arguments: __call__() takes exactly 1 positional argument (0 given)\nsage: x = PolynomialRing(CC, 'x').gen()\nsage: sin(x)\nsin(x)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9769\n\n",
     "created_at": "2010-08-19T23:47:28Z",
     "labels": [
         "symbolics",
@@ -17,7 +17,7 @@ archive/issues_009768.json:
     "user": "maldun"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 There seems to be some problems with the coercion of some datatypes to the symbolic ring:
 
@@ -67,7 +67,7 @@ archive/issue_comments_095719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9768#issuecomment-95719",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_095720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9768#issuecomment-95720",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_095721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9768#issuecomment-95721",
-    "user": "rws"
+    "user": "@rwst"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_095722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9768#issuecomment-95722",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_095723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9768#issuecomment-95723",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_095724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9768#issuecomment-95724",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_095725.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9768",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9768#issuecomment-95725",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

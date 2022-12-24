@@ -3,7 +3,7 @@
 archive/issues_007744.json:
 ```json
 {
-    "body": "Assignee: colah\n\nCC:  niles kcrisman jdemeyer tmonteil\n\nKeywords: 3D-Printing STL\n\n\n```\ndef surface_to_stl(surface):\n    \"\"\"\n    Return an STL representation of the surface.\n    \n    INPUT:\n        - `surface` -- any surface, eg. output of a 3d plot function.\n    \n    OUTPUT:\n        A string that represents the surface in the STL format.\n    \n    COMMENTS:\n        (1) You must view the surface before plotting it.\n            Otherwise, this will not work.\n        (2) In order to do 3d printing with this, you will need to\n            convert it into gcode. Skeinforge is an open-source\n            program that can do this.\n        (3) The size of the surface is not normalized in export.\n            Sage's units will become the units of the STL \n            description. These seem to be ~0.05 cm (at least when \n            printed using skeinforge -> replicatorg -> hacklab.to's \n            cupcake).\n        (4) Be aware of the overhang limits of your 3d printer; \n            most printers can only handle an overhang of Pi/2 (45*) \n            before your model will start drooping.\n    \n    EXAMPLES:\n        sage: x,y,z = var('x,y,z')\n        sage: a = implicit_plot3d(x^2+y^2+z^2-9, [x,-5,5], [y,-5,5],[z,-5,5])\n        sage: a\n        sage: f=file.open(\"foo.stl\",'w')\n        sage: f.write(surface_to_stl(a))\n        sage: f.close()\n    \"\"\"\n \n    out =  \"solid mathsurface\\n\"\n    for i in surface.face_list():\n        n = ( i[1][1]*i[2][2] - i[2][1]*i[1][2],\n              i[1][2]*i[2][0] - i[1][0]*i[2] 2],\n              i[1][0]*i[2][1] - i[2][0]*i[1][1] )\n        abs = (n[0]^2+n[1]^2+n[2]^2)^0.5\n        n= (n[0]/abs,n[1]/abs,n[2]/abs)\n        out += \"  facet normal \" + repr(n[0])  + \" \" + repr(n[1])    + \" \" + repr(n[2])\n        out += \"    outer loop\\n\"\n        out += \"      vertex \" + repr(i[0][0]) + \" \" + repr(i[0][1]) + \" \" + repr(i[0][2]) + \"\\n\"\n        out += \"      vertex \" + repr(i[1][0]) + \" \" + repr(i[1][1]) + \" \" + repr(i[1][2]) + \"\\n\"\n        out += \"      vertex \" + repr(i[2][0]) + \" \" + repr(i[2][1]) + \" \" + repr(i[2][2]) + \"\\n\"\n        out += \"    endloop\\n\"\n        out += \"  endfacet\\n\"\n    out += \"endsolid surface\\n\"\n    return out\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7744\n\n",
+    "body": "Assignee: colah\n\nCC:  @nilesjohnson @kcrisman @jdemeyer tmonteil\n\nKeywords: 3D-Printing STL\n\n\n```\ndef surface_to_stl(surface):\n    \"\"\"\n    Return an STL representation of the surface.\n    \n    INPUT:\n        - `surface` -- any surface, eg. output of a 3d plot function.\n    \n    OUTPUT:\n        A string that represents the surface in the STL format.\n    \n    COMMENTS:\n        (1) You must view the surface before plotting it.\n            Otherwise, this will not work.\n        (2) In order to do 3d printing with this, you will need to\n            convert it into gcode. Skeinforge is an open-source\n            program that can do this.\n        (3) The size of the surface is not normalized in export.\n            Sage's units will become the units of the STL \n            description. These seem to be ~0.05 cm (at least when \n            printed using skeinforge -> replicatorg -> hacklab.to's \n            cupcake).\n        (4) Be aware of the overhang limits of your 3d printer; \n            most printers can only handle an overhang of Pi/2 (45*) \n            before your model will start drooping.\n    \n    EXAMPLES:\n        sage: x,y,z = var('x,y,z')\n        sage: a = implicit_plot3d(x^2+y^2+z^2-9, [x,-5,5], [y,-5,5],[z,-5,5])\n        sage: a\n        sage: f=file.open(\"foo.stl\",'w')\n        sage: f.write(surface_to_stl(a))\n        sage: f.close()\n    \"\"\"\n \n    out =  \"solid mathsurface\\n\"\n    for i in surface.face_list():\n        n = ( i[1][1]*i[2][2] - i[2][1]*i[1][2],\n              i[1][2]*i[2][0] - i[1][0]*i[2] 2],\n              i[1][0]*i[2][1] - i[2][0]*i[1][1] )\n        abs = (n[0]^2+n[1]^2+n[2]^2)^0.5\n        n= (n[0]/abs,n[1]/abs,n[2]/abs)\n        out += \"  facet normal \" + repr(n[0])  + \" \" + repr(n[1])    + \" \" + repr(n[2])\n        out += \"    outer loop\\n\"\n        out += \"      vertex \" + repr(i[0][0]) + \" \" + repr(i[0][1]) + \" \" + repr(i[0][2]) + \"\\n\"\n        out += \"      vertex \" + repr(i[1][0]) + \" \" + repr(i[1][1]) + \" \" + repr(i[1][2]) + \"\\n\"\n        out += \"      vertex \" + repr(i[2][0]) + \" \" + repr(i[2][1]) + \" \" + repr(i[2][2]) + \"\\n\"\n        out += \"    endloop\\n\"\n        out += \"  endfacet\\n\"\n    out += \"endsolid surface\\n\"\n    return out\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7744\n\n",
     "created_at": "2009-12-20T17:07:34Z",
     "labels": [
         "graphics",
@@ -19,7 +19,7 @@ archive/issues_007744.json:
 ```
 Assignee: colah
 
-CC:  niles kcrisman jdemeyer tmonteil
+CC:  @nilesjohnson @kcrisman @jdemeyer tmonteil
 
 Keywords: 3D-Printing STL
 
@@ -95,7 +95,7 @@ archive/issue_comments_066623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66623",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_066624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66624",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_066626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66626",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_066629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66629",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_066631.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66631",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_066634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66634",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_066635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66635",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_066636.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66636",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -360,7 +360,7 @@ archive/issue_comments_066637.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66637",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -378,7 +378,7 @@ archive/issue_comments_066638.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66638",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -450,7 +450,7 @@ archive/issue_comments_066642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66642",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -468,7 +468,7 @@ archive/issue_comments_066643.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66643",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_066644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66644",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -522,7 +522,7 @@ archive/issue_comments_066646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66646",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_066647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66647",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -558,7 +558,7 @@ archive/issue_comments_066648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66648",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_066650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66650",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -612,7 +612,7 @@ archive/issue_comments_066651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66651",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -630,7 +630,7 @@ archive/issue_comments_066652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66652",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -656,7 +656,7 @@ archive/issue_comments_066653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66653",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_066654.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66654",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -694,7 +694,7 @@ archive/issue_comments_066655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66655",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -730,7 +730,7 @@ archive/issue_comments_066657.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66657",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -750,7 +750,7 @@ archive/issue_comments_066658.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66658",
-    "user": "mmarco"
+    "user": "@miguelmarco"
 }
 ```
 
@@ -768,7 +768,7 @@ archive/issue_comments_066659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7744",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7744#issuecomment-66659",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

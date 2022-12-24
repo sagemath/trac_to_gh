@@ -55,7 +55,7 @@ archive/issue_comments_004206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/722#issuecomment-4206",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_004207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/722#issuecomment-4207",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -114,16 +114,16 @@ Changing priority from major to minor.
 archive/issue_comments_004208.json:
 ```json
 {
-    "body": "Attachment [6516.patch](tarball://root/attachments/some-uuid/ticket722/6516.patch) by was created at 2007-09-25 06:33:35",
+    "body": "Attachment [6516.patch](tarball://root/attachments/some-uuid/ticket722/6516.patch) by @williamstein created at 2007-09-25 06:33:35",
     "created_at": "2007-09-25T06:33:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/722#issuecomment-4208",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [6516.patch](tarball://root/attachments/some-uuid/ticket722/6516.patch) by was created at 2007-09-25 06:33:35
+Attachment [6516.patch](tarball://root/attachments/some-uuid/ticket722/6516.patch) by @williamstein created at 2007-09-25 06:33:35
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_004209.json:
     "issue": "https://github.com/sagemath/sagetest/issues/722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/722#issuecomment-4209",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_004210.json:
     "issue": "https://github.com/sagemath/sagetest/issues/722",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/722#issuecomment-4210",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

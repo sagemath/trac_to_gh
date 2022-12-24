@@ -3,7 +3,7 @@
 archive/issues_005055.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\nAbout halfway through the documentation of interact, there is this example:\n\n```\nsage: @interact\n... def _(title=[\"A Plot Demo\", \"Something silly\", \"something tricky\" , a=input_box(sin(x*sin(x*sin(x))), 'function'),\n...     clr = Color('red'), thickness=[1..30], zoom=(1,0.95,..,0.1), plot_points=(200..2000)):\n...     html('<h1 align=center>%s</h1>'%title)\n...     print plot_points\n...     show(plot(a, -zoom*pi,zoom*pi, color=clr, thickness=thickness, plot_points=plot_points))\n<html>...\n```\n\nThere should be a ] after the \" after the word tricky.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5055\n\n",
+    "body": "Assignee: @itolkov\n\nAbout halfway through the documentation of interact, there is this example:\n\n```\nsage: @interact\n... def _(title=[\"A Plot Demo\", \"Something silly\", \"something tricky\" , a=input_box(sin(x*sin(x*sin(x))), 'function'),\n...     clr = Color('red'), thickness=[1..30], zoom=(1,0.95,..,0.1), plot_points=(200..2000)):\n...     html('<h1 align=center>%s</h1>'%title)\n...     print plot_points\n...     show(plot(a, -zoom*pi,zoom*pi, color=clr, thickness=thickness, plot_points=plot_points))\n<html>...\n```\n\nThere should be a ] after the \" after the word tricky.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5055\n\n",
     "created_at": "2009-01-22T15:58:43Z",
     "labels": [
         "interact",
@@ -14,10 +14,10 @@ archive/issues_005055.json:
     "title": "Trivial but fatal typo in interact documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5055",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
 About halfway through the documentation of interact, there is this example:
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5055
 archive/issue_comments_038510.json:
 ```json
 {
-    "body": "Changing assignee from itolkov to mhansen.",
+    "body": "Changing assignee from @itolkov to @mwhansen.",
     "created_at": "2009-01-23T09:05:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5055#issuecomment-38510",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from itolkov to mhansen.
+Changing assignee from @itolkov to @mwhansen.
 
 
 
@@ -67,7 +67,7 @@ archive/issue_comments_038511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5055#issuecomment-38511",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_038512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5055#issuecomment-38512",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_038513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5055#issuecomment-38513",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_038514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5055#issuecomment-38514",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_038515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5055#issuecomment-38515",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -178,16 +178,16 @@ Based on 3.3.alpha0
 archive/issue_comments_038516.json:
 ```json
 {
-    "body": "Attachment [trac_5055.patch](tarball://root/attachments/some-uuid/ticket5055/trac_5055.patch) by kcrisman created at 2009-01-24 02:49:57",
+    "body": "Attachment [trac_5055.patch](tarball://root/attachments/some-uuid/ticket5055/trac_5055.patch) by @kcrisman created at 2009-01-24 02:49:57",
     "created_at": "2009-01-24T02:49:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5055",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5055#issuecomment-38516",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_5055.patch](tarball://root/attachments/some-uuid/ticket5055/trac_5055.patch) by kcrisman created at 2009-01-24 02:49:57
+Attachment [trac_5055.patch](tarball://root/attachments/some-uuid/ticket5055/trac_5055.patch) by @kcrisman created at 2009-01-24 02:49:57
 
 
 

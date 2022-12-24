@@ -3,7 +3,7 @@
 archive/issues_007804.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mvngu\n\nHello !!\n\nThis patches moves the files mipCoin and mipGlpk to Sage. They are currently included in the packages CBC and GLPK and are a lot harder to work on because of this.\n\nThis patch copies them in sage/numerical/ and adds several lines to modules_list so that they will only be compiled if the corresponding packages are installed.\n\nFor the moment, the copies of these files included in the packages will not be removed, in order to preserve backward-compatibility : the users of earlier versions of Sage will then be able to keep using the same packages. \n\n*Only the changes to file modules_list need to be reviewed -- mipCoin and mipGLPK are copies of what is included in the spkg and have already been checked ! This should be a short review :-) *\n\nIssue created by migration from https://trac.sagemath.org/ticket/7804\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  mvngu\n\nHello !!\n\nThis patches moves the files mipCoin and mipGlpk to Sage. They are currently included in the packages CBC and GLPK and are a lot harder to work on because of this.\n\nThis patch copies them in sage/numerical/ and adds several lines to modules_list so that they will only be compiled if the corresponding packages are installed.\n\nFor the moment, the copies of these files included in the packages will not be removed, in order to preserve backward-compatibility : the users of earlier versions of Sage will then be able to keep using the same packages. \n\n*Only the changes to file modules_list need to be reviewed -- mipCoin and mipGLPK are copies of what is included in the spkg and have already been checked ! This should be a short review :-) *\n\nIssue created by migration from https://trac.sagemath.org/ticket/7804\n\n",
     "created_at": "2010-01-01T13:36:52Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007804.json:
     "title": "Move mipCoin and mipGlpk to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7804",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  mvngu
 
@@ -47,7 +47,7 @@ archive/issue_comments_067518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7804#issuecomment-67518",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_067519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7804#issuecomment-67519",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_067520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7804#issuecomment-67520",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -96,16 +96,16 @@ I was curious and skimmed this patch for ~ 3 minutes and it "looks good" (not a 
 archive/issue_comments_067521.json:
 ```json
 {
-    "body": "Attachment [trac_7804.patch](tarball://root/attachments/some-uuid/ticket7804/trac_7804.patch) by ncohen created at 2010-01-11 17:02:38\n\nI just modified it so that it is now independent from the huge changes going on in graph.py. Would it be possible to have this merged to the next release ? It would let me write another speed-up patch now that solve_glpk and solve_cbc are available ;-)\n\nNathann",
+    "body": "Attachment [trac_7804.patch](tarball://root/attachments/some-uuid/ticket7804/trac_7804.patch) by @nathanncohen created at 2010-01-11 17:02:38\n\nI just modified it so that it is now independent from the huge changes going on in graph.py. Would it be possible to have this merged to the next release ? It would let me write another speed-up patch now that solve_glpk and solve_cbc are available ;-)\n\nNathann",
     "created_at": "2010-01-11T17:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7804#issuecomment-67521",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7804.patch](tarball://root/attachments/some-uuid/ticket7804/trac_7804.patch) by ncohen created at 2010-01-11 17:02:38
+Attachment [trac_7804.patch](tarball://root/attachments/some-uuid/ticket7804/trac_7804.patch) by @nathanncohen created at 2010-01-11 17:02:38
 
 I just modified it so that it is now independent from the huge changes going on in graph.py. Would it be possible to have this merged to the next release ? It would let me write another speed-up patch now that solve_glpk and solve_cbc are available ;-)
 
@@ -123,7 +123,7 @@ archive/issue_comments_067522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7804#issuecomment-67522",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_067523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7804#issuecomment-67523",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_067524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7804#issuecomment-67524",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_067525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7804#issuecomment-67525",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_067526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7804#issuecomment-67526",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_067527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7804",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7804#issuecomment-67527",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

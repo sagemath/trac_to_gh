@@ -14,7 +14,7 @@ archive/issues_002308.json:
     "title": "remove SAGE_ROOT/local/bin/sage-server -- it's no longer used, to put it midly!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2308",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -86,16 +86,16 @@ It is indeed a trivial fix :)
 archive/issue_comments_015364.json:
 ```json
 {
-    "body": "Attachment [trac_2308.patch](tarball://root/attachments/some-uuid/ticket2308/trac_2308.patch) by rlm created at 2008-02-26 01:55:01",
+    "body": "Attachment [trac_2308.patch](tarball://root/attachments/some-uuid/ticket2308/trac_2308.patch) by @rlmill created at 2008-02-26 01:55:01",
     "created_at": "2008-02-26T01:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2308",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2308#issuecomment-15364",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_2308.patch](tarball://root/attachments/some-uuid/ticket2308/trac_2308.patch) by rlm created at 2008-02-26 01:55:01
+Attachment [trac_2308.patch](tarball://root/attachments/some-uuid/ticket2308/trac_2308.patch) by @rlmill created at 2008-02-26 01:55:01
 
 
 

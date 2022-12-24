@@ -3,7 +3,7 @@
 archive/issues_003421.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin\n\nThis now works:\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: P(\"111111111111111111111111111111111111111111111111111111111\")\n111111111111111111111111111111111111111111111111111111111\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3421\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nThis now works:\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: P(\"111111111111111111111111111111111111111111111111111111111\")\n111111111111111111111111111111111111111111111111111111111\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3421\n\n",
     "created_at": "2008-06-13T22:08:37Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_003421.json:
     "title": "[with patch, needs review] MPolynomialRing_libsingular should accept longs in __call__",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3421",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin
+CC:  @burcin
 
 This now works:
 
@@ -46,7 +46,7 @@ archive/issue_comments_024078.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3421#issuecomment-24078",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_024079.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3421#issuecomment-24079",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -95,16 +95,16 @@ updated patch to address review
 archive/issue_comments_024080.json:
 ```json
 {
-    "body": "Attachment [libsingular_longs.patch](tarball://root/attachments/some-uuid/ticket3421/libsingular_longs.patch) by malb created at 2008-06-14 00:47:42\n\nThe updated patch addresses that bug.",
+    "body": "Attachment [libsingular_longs.patch](tarball://root/attachments/some-uuid/ticket3421/libsingular_longs.patch) by @malb created at 2008-06-14 00:47:42\n\nThe updated patch addresses that bug.",
     "created_at": "2008-06-14T00:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3421#issuecomment-24080",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [libsingular_longs.patch](tarball://root/attachments/some-uuid/ticket3421/libsingular_longs.patch) by malb created at 2008-06-14 00:47:42
+Attachment [libsingular_longs.patch](tarball://root/attachments/some-uuid/ticket3421/libsingular_longs.patch) by @malb created at 2008-06-14 00:47:42
 
 The updated patch addresses that bug.
 
@@ -120,7 +120,7 @@ archive/issue_comments_024081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3421",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3421#issuecomment-24081",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

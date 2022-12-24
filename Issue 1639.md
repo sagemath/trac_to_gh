@@ -14,7 +14,7 @@ archive/issues_001639.json:
     "title": "missing documentation P.completion()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1639",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: tba
@@ -60,7 +60,7 @@ archive/issue_comments_010418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10418",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_010419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10419",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -91,16 +91,16 @@ Changing component from documentation to doctest.
 archive/issue_comments_010420.json:
 ```json
 {
-    "body": "Attachment [8316.patch](tarball://root/attachments/some-uuid/ticket1639/8316.patch) by cremona created at 2008-02-17 22:43:40\n\nadds docstring and examples",
+    "body": "Attachment [8316.patch](tarball://root/attachments/some-uuid/ticket1639/8316.patch) by @JohnCremona created at 2008-02-17 22:43:40\n\nadds docstring and examples",
     "created_at": "2008-02-17T22:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10420",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [8316.patch](tarball://root/attachments/some-uuid/ticket1639/8316.patch) by cremona created at 2008-02-17 22:43:40
+Attachment [8316.patch](tarball://root/attachments/some-uuid/ticket1639/8316.patch) by @JohnCremona created at 2008-02-17 22:43:40
 
 adds docstring and examples
 
@@ -116,7 +116,7 @@ archive/issue_comments_010421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10421",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_010422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1639",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10422",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

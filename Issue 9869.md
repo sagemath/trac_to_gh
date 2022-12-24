@@ -3,7 +3,7 @@
 archive/issues_009869.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  ncohen mvngu\n\nThe `Makefile` and `spkg-install` for Cliquer could do with a lot of cleaning up. Some examples of the problems are:\n\n* There are flags set for the C++ and Fortran compilers, though the code is only C. \n* There's code to check for a mix of Sun and GNU compilers, when better tests now exists as `$SAGE_LOCAL/bin/testcc.sh`\n* Lots of unnecessary environment variables are set. \n* Many, many other problems. \n\n**None of these issues are currently causing any problems, but should be resolved at some point**\n\nIssue created by migration from https://trac.sagemath.org/ticket/9870\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @nathanncohen mvngu\n\nThe `Makefile` and `spkg-install` for Cliquer could do with a lot of cleaning up. Some examples of the problems are:\n\n* There are flags set for the C++ and Fortran compilers, though the code is only C. \n* There's code to check for a mix of Sun and GNU compilers, when better tests now exists as `$SAGE_LOCAL/bin/testcc.sh`\n* Lots of unnecessary environment variables are set. \n* Many, many other problems. \n\n**None of these issues are currently causing any problems, but should be resolved at some point**\n\nIssue created by migration from https://trac.sagemath.org/ticket/9870\n\n",
     "created_at": "2010-09-07T21:20:38Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009869.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  ncohen mvngu
+CC:  @nathanncohen mvngu
 
 The `Makefile` and `spkg-install` for Cliquer could do with a lot of cleaning up. Some examples of the problems are:
 
@@ -41,16 +41,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9870
 archive/issue_comments_097492.json:
 ```json
 {
-    "body": "Changing assignee from GeorgSWeber to leif.",
+    "body": "Changing assignee from GeorgSWeber to @nexttime.",
     "created_at": "2010-09-09T02:24:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9869#issuecomment-97492",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Changing assignee from GeorgSWeber to leif.
+Changing assignee from GeorgSWeber to @nexttime.
 
 
 
@@ -64,7 +64,7 @@ archive/issue_comments_097493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9869#issuecomment-97493",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_097495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9869#issuecomment-97495",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_097498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9869#issuecomment-97498",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_097499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9869#issuecomment-97499",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_097500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9869#issuecomment-97500",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_097501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9869#issuecomment-97501",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_097502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9869#issuecomment-97502",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_097505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9869#issuecomment-97505",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_097506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9869#issuecomment-97506",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -338,7 +338,7 @@ archive/issue_comments_097507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9869",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9869#issuecomment-97507",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_007799.json:
     "title": "install_scripts should not install M2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7799",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 Assignee: tbd
@@ -45,7 +45,7 @@ archive/issue_comments_067481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7799#issuecomment-67481",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_067482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7799#issuecomment-67482",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing status from new to needs_review.
 archive/issue_comments_067483.json:
 ```json
 {
-    "body": "Attachment [trac_7799-install-scripts.patch](tarball://root/attachments/some-uuid/ticket7799/trac_7799-install-scripts.patch) by jhpalmieri created at 2009-12-31 07:07:44\n\npatch for main Sage repository",
+    "body": "Attachment [trac_7799-install-scripts.patch](tarball://root/attachments/some-uuid/ticket7799/trac_7799-install-scripts.patch) by @jhpalmieri created at 2009-12-31 07:07:44\n\npatch for main Sage repository",
     "created_at": "2009-12-31T07:07:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7799#issuecomment-67483",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7799-install-scripts.patch](tarball://root/attachments/some-uuid/ticket7799/trac_7799-install-scripts.patch) by jhpalmieri created at 2009-12-31 07:07:44
+Attachment [trac_7799-install-scripts.patch](tarball://root/attachments/some-uuid/ticket7799/trac_7799-install-scripts.patch) by @jhpalmieri created at 2009-12-31 07:07:44
 
 patch for main Sage repository
 
@@ -105,7 +105,7 @@ archive/issue_comments_067484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7799#issuecomment-67484",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_067485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7799#issuecomment-67485",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_067486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7799#issuecomment-67486",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_067487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7799",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7799#issuecomment-67487",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

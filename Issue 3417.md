@@ -14,7 +14,7 @@ archive/issues_003417.json:
     "title": "added new combinatorial functions for tableaux and crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3417",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 Assignee: Mike Hansen

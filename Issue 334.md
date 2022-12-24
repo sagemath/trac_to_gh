@@ -3,7 +3,7 @@
 archive/issues_000334.json:
 ```json
 {
-    "body": "Assignee: was\n\nAllow an environment variable SAGE_HG_SERVER to be used in preference \nto SAGE_SERVER for calls to hg_sage.send(filename).\n\nIssue created by migration from https://trac.sagemath.org/ticket/334\n\n",
+    "body": "Assignee: @williamstein\n\nAllow an environment variable SAGE_HG_SERVER to be used in preference \nto SAGE_SERVER for calls to hg_sage.send(filename).\n\nIssue created by migration from https://trac.sagemath.org/ticket/334\n\n",
     "created_at": "2007-03-27T07:34:16Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_000334.json:
     "user": "kohel"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Allow an environment variable SAGE_HG_SERVER to be used in preference 
 to SAGE_SERVER for calls to hg_sage.send(filename).
@@ -51,16 +51,16 @@ Changing component from algebraic geometry to user interface.
 archive/issue_comments_001644.json:
 ```json
 {
-    "body": "Attachment [334.patch](tarball://root/attachments/some-uuid/ticket334/334.patch) by mhansen created at 2007-09-06 21:48:39",
+    "body": "Attachment [334.patch](tarball://root/attachments/some-uuid/ticket334/334.patch) by @mwhansen created at 2007-09-06 21:48:39",
     "created_at": "2007-09-06T21:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/334#issuecomment-1644",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [334.patch](tarball://root/attachments/some-uuid/ticket334/334.patch) by mhansen created at 2007-09-06 21:48:39
+Attachment [334.patch](tarball://root/attachments/some-uuid/ticket334/334.patch) by @mwhansen created at 2007-09-06 21:48:39
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_001645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/334#issuecomment-1645",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_001646.json:
     "issue": "https://github.com/sagemath/sagetest/issues/334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/334#issuecomment-1646",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

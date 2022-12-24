@@ -13,7 +13,7 @@ archive/issues_000033.json:
     "title": "notebook -- paste into worksheet problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/33",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -40,7 +40,7 @@ archive/issue_comments_000214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/33",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/33#issuecomment-214",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_000215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/33",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/33#issuecomment-215",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -71,16 +71,16 @@ Changing component from basic arithmetic to user interface.
 archive/issue_comments_000216.json:
 ```json
 {
-    "body": "Changing assignee from somebody to was.",
+    "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2006-11-26T05:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/33",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/33#issuecomment-216",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Changing assignee from somebody to was.
+Changing assignee from somebody to @williamstein.
 
 
 
@@ -89,7 +89,7 @@ Changing assignee from somebody to was.
 archive/issue_comments_000217.json:
 ```json
 {
-    "body": "Changing assignee from was to boothby.",
+    "body": "Changing assignee from @williamstein to boothby.",
     "created_at": "2007-08-23T11:04:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/33",
     "type": "issue_comment",
@@ -98,7 +98,7 @@ archive/issue_comments_000217.json:
 }
 ```
 
-Changing assignee from was to boothby.
+Changing assignee from @williamstein to boothby.
 
 
 

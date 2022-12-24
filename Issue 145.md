@@ -3,7 +3,7 @@
 archive/issues_000145.json:
 ```json
 {
-    "body": "Assignee: was\n\npygtk-2.8.4 depends on libpython2.4, which sage-1.4.1.2 doesn't use.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/145\n\n",
+    "body": "Assignee: @williamstein\n\npygtk-2.8.4 depends on libpython2.4, which sage-1.4.1.2 doesn't use.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/145\n\n",
     "created_at": "2006-10-21T20:46:37Z",
     "labels": [
         "packages: standard",
@@ -16,7 +16,7 @@ archive/issues_000145.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 pygtk-2.8.4 depends on libpython2.4, which sage-1.4.1.2 doesn't use.
 
@@ -37,7 +37,7 @@ archive/issue_comments_000667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/145#issuecomment-667",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_000668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/145",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/145#issuecomment-668",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008167.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  mvngu robert.marik jhpalmieri\n\nIn order to build the PDF reference manual --- with the current settings in `doc/common/conf.py` --- we need replace several Unicode characters introduced at #7249.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8167\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  mvngu @robert-marik @jhpalmieri\n\nIn order to build the PDF reference manual --- with the current settings in `doc/common/conf.py` --- we need replace several Unicode characters introduced at #7249.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8167\n\n",
     "created_at": "2010-02-03T09:23:05Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_008167.json:
     "title": "Use LaTeX-friendly Unicode characters in SageNB docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8167",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  mvngu robert.marik jhpalmieri
+CC:  mvngu @robert-marik @jhpalmieri
 
 In order to build the PDF reference manual --- with the current settings in `doc/common/conf.py` --- we need replace several Unicode characters introduced at #7249.
 
@@ -39,7 +39,7 @@ archive/issue_comments_071859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8167#issuecomment-71859",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -52,16 +52,16 @@ Replace some Unicode characters.  sagenb repo.
 archive/issue_comments_071860.json:
 ```json
 {
-    "body": "Attachment [trac_8167-simpler_unicode.patch](tarball://root/attachments/some-uuid/ticket8167/trac_8167-simpler_unicode.patch) by mpatel created at 2010-02-03 09:29:34",
+    "body": "Attachment [trac_8167-simpler_unicode.patch](tarball://root/attachments/some-uuid/ticket8167/trac_8167-simpler_unicode.patch) by @qed777 created at 2010-02-03 09:29:34",
     "created_at": "2010-02-03T09:29:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8167#issuecomment-71860",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8167-simpler_unicode.patch](tarball://root/attachments/some-uuid/ticket8167/trac_8167-simpler_unicode.patch) by mpatel created at 2010-02-03 09:29:34
+Attachment [trac_8167-simpler_unicode.patch](tarball://root/attachments/some-uuid/ticket8167/trac_8167-simpler_unicode.patch) by @qed777 created at 2010-02-03 09:29:34
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_071861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8167#issuecomment-71861",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_071862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8167#issuecomment-71862",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_071863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8167#issuecomment-71863",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_071864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8167#issuecomment-71864",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_071865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8167#issuecomment-71865",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_071866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8167#issuecomment-71866",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_071867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8167",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8167#issuecomment-71867",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

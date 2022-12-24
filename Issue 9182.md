@@ -3,7 +3,7 @@
 archive/issues_009182.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nKeywords: Point, Hyperelliptic curve\n\nWhen defining a point on the Jacobian of a Hyperellptic curve, \nif a coordinate is an integer, it does not get coerced to polynomial and the following error raised:\nraise TypeError, \"Argument P (= %s) must have length 2.\"%P\nFor example:\n\n```\nsage: F.<a> = GF(3)\nsage: R.<x> = F[]\nsage: f = x^5-1\nsage: C = HyperellipticCurve(f)\nsage: J = C.jacobian()\nsage: X = J(F)\nsage: a = x^2-x+1\nsage: b = -x +1\nsage: c = x-1\nsage: d = 0 \nsage: D1 = X([a,b])\nsage: D2 = X([c,d])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/aly/Desktop/sage-4.3.1/<ipython console> in <module>()\n\n/home/aly/Desktop/sage-4.3.1/local/lib/python2.6/site-packages/sage/schemes/hyperelliptic_curves/jacobian_homset.py in __call__(self, P)\n     86                 if is_SchemeMorphism(P1) and is_SchemeMorphism(P2):\n     87                     return self(P1) - self(P2)\n---> 88             raise TypeError, \"Argument P (= %s) must have length 2.\"%P\n     89         elif isinstance(P,JacobianMorphism_divisor_class_field) and self == P.parent():\n     90             return P\n\nTypeError: Argument P (= [x + 2, 0]) must have length 2.\nsage: D2 = X([c,R(d)])                                                                               \nsage: D2\n(x + 2, y)\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9182\n\n",
+    "body": "Assignee: @aghitza\n\nKeywords: Point, Hyperelliptic curve\n\nWhen defining a point on the Jacobian of a Hyperellptic curve, \nif a coordinate is an integer, it does not get coerced to polynomial and the following error raised:\nraise TypeError, \"Argument P (= %s) must have length 2.\"%P\nFor example:\n\n```\nsage: F.<a> = GF(3)\nsage: R.<x> = F[]\nsage: f = x^5-1\nsage: C = HyperellipticCurve(f)\nsage: J = C.jacobian()\nsage: X = J(F)\nsage: a = x^2-x+1\nsage: b = -x +1\nsage: c = x-1\nsage: d = 0 \nsage: D1 = X([a,b])\nsage: D2 = X([c,d])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/aly/Desktop/sage-4.3.1/<ipython console> in <module>()\n\n/home/aly/Desktop/sage-4.3.1/local/lib/python2.6/site-packages/sage/schemes/hyperelliptic_curves/jacobian_homset.py in __call__(self, P)\n     86                 if is_SchemeMorphism(P1) and is_SchemeMorphism(P2):\n     87                     return self(P1) - self(P2)\n---> 88             raise TypeError, \"Argument P (= %s) must have length 2.\"%P\n     89         elif isinstance(P,JacobianMorphism_divisor_class_field) and self == P.parent():\n     90             return P\n\nTypeError: Argument P (= [x + 2, 0]) must have length 2.\nsage: D2 = X([c,R(d)])                                                                               \nsage: D2\n(x + 2, y)\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9182\n\n",
     "created_at": "2010-06-08T00:37:34Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009182.json:
     "title": "Jacobian of a Hyperelliptic curve doesn't coerces correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9182",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 Keywords: Point, Hyperelliptic curve
 
@@ -76,7 +76,7 @@ archive/issue_comments_085900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9182#issuecomment-85900",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -89,16 +89,16 @@ Changing status from new to needs_review.
 archive/issue_comments_085901.json:
 ```json
 {
-    "body": "Attachment [trac_9182_hyper_el_points.patch](tarball://root/attachments/some-uuid/ticket9182/trac_9182_hyper_el_points.patch) by aly.deines created at 2010-06-08 00:54:17",
+    "body": "Attachment [trac_9182_hyper_el_points.patch](tarball://root/attachments/some-uuid/ticket9182/trac_9182_hyper_el_points.patch) by @adeines created at 2010-06-08 00:54:17",
     "created_at": "2010-06-08T00:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9182#issuecomment-85901",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
-Attachment [trac_9182_hyper_el_points.patch](tarball://root/attachments/some-uuid/ticket9182/trac_9182_hyper_el_points.patch) by aly.deines created at 2010-06-08 00:54:17
+Attachment [trac_9182_hyper_el_points.patch](tarball://root/attachments/some-uuid/ticket9182/trac_9182_hyper_el_points.patch) by @adeines created at 2010-06-08 00:54:17
 
 
 
@@ -112,7 +112,7 @@ archive/issue_comments_085902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9182#issuecomment-85902",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -129,16 +129,16 @@ Without those extra newlines, it won't process correctly. Also, the code coming 
 archive/issue_comments_085903.json:
 ```json
 {
-    "body": "Attachment [trac_9182_doc_fix.patch](tarball://root/attachments/some-uuid/ticket9182/trac_9182_doc_fix.patch) by aly.deines created at 2010-06-08 14:59:45",
+    "body": "Attachment [trac_9182_doc_fix.patch](tarball://root/attachments/some-uuid/ticket9182/trac_9182_doc_fix.patch) by @adeines created at 2010-06-08 14:59:45",
     "created_at": "2010-06-08T14:59:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9182#issuecomment-85903",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
-Attachment [trac_9182_doc_fix.patch](tarball://root/attachments/some-uuid/ticket9182/trac_9182_doc_fix.patch) by aly.deines created at 2010-06-08 14:59:45
+Attachment [trac_9182_doc_fix.patch](tarball://root/attachments/some-uuid/ticket9182/trac_9182_doc_fix.patch) by @adeines created at 2010-06-08 14:59:45
 
 
 
@@ -152,7 +152,7 @@ archive/issue_comments_085904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9182#issuecomment-85904",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_085905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9182#issuecomment-85905",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_085906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9182#issuecomment-85906",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_085907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9182#issuecomment-85907",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_085908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9182#issuecomment-85908",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

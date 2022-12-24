@@ -3,7 +3,7 @@
 archive/issues_003255.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3255\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3255\n\n",
     "created_at": "2008-05-19T13:31:44Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_003255.json:
     "title": "Add support for generic backtracking algorithms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3255",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -39,7 +39,7 @@ archive/issue_comments_022517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22517",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_022518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22518",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_022520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22520",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -147,16 +147,16 @@ That said, the basic backtracker class is very simple and looks good. Fast algor
 archive/issue_comments_022521.json:
 ```json
 {
-    "body": "Attachment [3255.patch](tarball://root/attachments/some-uuid/ticket3255/3255.patch) by ddrake created at 2008-05-26 03:17:15\n\nI'm changing this to a positive review because I now understand this patch well enough to have written code which uses it, and it makes things super easy and fast. This should get into Sage right away.\n\nHere's the code for making Dyck paths. It may not be the fastest or best way to do it, but it literally worked the very first time I loaded it.\n\n```\nclass DyckPaths(GenericBacktracker):\n  def __init__(self, n):\n    GenericBacktracker.__init__(self, [], (0, 0))\n    self._n = n\n\n  def _rec(self, path, state):\n    if is_odd(self._n):\n      return\n\n    len, ht = state\n\n    if len < self._n:\n      # if length is less than n, we need to keep building the path, so\n      # new length will be 1 longer, and we don't yield the path yet.\n      newlen = len + 1\n\n      # if we're not touching the x-axis, we can yield a path with a\n      # downstep at the end\n      if ht > 0:\n        yield path + [-1], (newlen, ht - 1), False\n\n      # if the path isn't too high, it can also take an upstep\n      if ht < (self._n - len):\n        yield path + [1], (newlen, ht + 1), False\n    else:\n      # if length is n, set state to None so we stop trying to make new\n      # paths, and yield what we've got\n      yield path, None, True\n```\n\n\nNow, let's say you want Dyck paths with no peaks at even height. (This is an example I came up with off the top off my head in IRC; unsurprisingly, [the number of such paths is already known](http://www.ams.org/mathscinet-getitem?mr=2004242).) You only need to change the \"`if ht > 0`\" block to the following:\n\n```\n      # if we're not touching the x-axis, we can yield a path with a\n      # downstep at the end, provided we don't make a peak at even\n      # height\n      if ht > 0:\n        if is_odd(ht) or (path[-1] != 1):\n          yield path + [-1], (newlen, ht - 1), False\n```\n\nThis also worked the very first time I tried it!",
+    "body": "Attachment [3255.patch](tarball://root/attachments/some-uuid/ticket3255/3255.patch) by @dandrake created at 2008-05-26 03:17:15\n\nI'm changing this to a positive review because I now understand this patch well enough to have written code which uses it, and it makes things super easy and fast. This should get into Sage right away.\n\nHere's the code for making Dyck paths. It may not be the fastest or best way to do it, but it literally worked the very first time I loaded it.\n\n```\nclass DyckPaths(GenericBacktracker):\n  def __init__(self, n):\n    GenericBacktracker.__init__(self, [], (0, 0))\n    self._n = n\n\n  def _rec(self, path, state):\n    if is_odd(self._n):\n      return\n\n    len, ht = state\n\n    if len < self._n:\n      # if length is less than n, we need to keep building the path, so\n      # new length will be 1 longer, and we don't yield the path yet.\n      newlen = len + 1\n\n      # if we're not touching the x-axis, we can yield a path with a\n      # downstep at the end\n      if ht > 0:\n        yield path + [-1], (newlen, ht - 1), False\n\n      # if the path isn't too high, it can also take an upstep\n      if ht < (self._n - len):\n        yield path + [1], (newlen, ht + 1), False\n    else:\n      # if length is n, set state to None so we stop trying to make new\n      # paths, and yield what we've got\n      yield path, None, True\n```\n\n\nNow, let's say you want Dyck paths with no peaks at even height. (This is an example I came up with off the top off my head in IRC; unsurprisingly, [the number of such paths is already known](http://www.ams.org/mathscinet-getitem?mr=2004242).) You only need to change the \"`if ht > 0`\" block to the following:\n\n```\n      # if we're not touching the x-axis, we can yield a path with a\n      # downstep at the end, provided we don't make a peak at even\n      # height\n      if ht > 0:\n        if is_odd(ht) or (path[-1] != 1):\n          yield path + [-1], (newlen, ht - 1), False\n```\n\nThis also worked the very first time I tried it!",
     "created_at": "2008-05-26T03:17:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22521",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [3255.patch](tarball://root/attachments/some-uuid/ticket3255/3255.patch) by ddrake created at 2008-05-26 03:17:15
+Attachment [3255.patch](tarball://root/attachments/some-uuid/ticket3255/3255.patch) by @dandrake created at 2008-05-26 03:17:15
 
 I'm changing this to a positive review because I now understand this patch well enough to have written code which uses it, and it makes things super easy and fast. This should get into Sage right away.
 
@@ -307,7 +307,7 @@ archive/issue_comments_022526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3255",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22526",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

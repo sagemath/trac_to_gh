@@ -3,7 +3,7 @@
 archive/issues_005407.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis patch fixes the bug. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5407\n\n",
+    "body": "Assignee: @williamstein\n\nThis patch fixes the bug. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5407\n\n",
     "created_at": "2009-03-01T05:59:34Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005407.json:
     "title": "fractional gens?  not good -- (QQ^3).gen(4/3) gives (0,1,0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5407",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This patch fixes the bug. 
 

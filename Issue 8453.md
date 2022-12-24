@@ -3,7 +3,7 @@
 archive/issues_008453.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  cremona\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/pari-2.3.5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/8453\n\n",
+    "body": "Assignee: tbd\n\nCC:  @JohnCremona\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/pari-2.3.5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/8453\n\n",
     "created_at": "2010-03-06T06:21:58Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_008453.json:
     "title": "Update PARI to 2.3.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8453",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tbd
 
-CC:  cremona
+CC:  @JohnCremona
 
 There is an spkg at http://sage.math.washington.edu/home/mhansen/pari-2.3.5.spkg
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8453
 archive/issue_comments_076057.json:
 ```json
 {
-    "body": "Attachment [trac_8453.patch](tarball://root/attachments/some-uuid/ticket8453/trac_8453.patch) by mhansen created at 2010-03-06 06:22:54",
+    "body": "Attachment [trac_8453.patch](tarball://root/attachments/some-uuid/ticket8453/trac_8453.patch) by @mwhansen created at 2010-03-06 06:22:54",
     "created_at": "2010-03-06T06:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8453#issuecomment-76057",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_8453.patch](tarball://root/attachments/some-uuid/ticket8453/trac_8453.patch) by mhansen created at 2010-03-06 06:22:54
+Attachment [trac_8453.patch](tarball://root/attachments/some-uuid/ticket8453/trac_8453.patch) by @mwhansen created at 2010-03-06 06:22:54
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_076058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8453#issuecomment-76058",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_076059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8453#issuecomment-76059",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_076060.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8453#issuecomment-76060",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_076061.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8453#issuecomment-76061",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -173,16 +173,16 @@ Got:
 archive/issue_comments_076062.json:
 ```json
 {
-    "body": "Attachment [trac_8453-reviewer.patch](tarball://root/attachments/some-uuid/ticket8453/trac_8453-reviewer.patch) by davidloeffler created at 2010-03-11 19:47:20\n\napply over previous patch",
+    "body": "Attachment [trac_8453-reviewer.patch](tarball://root/attachments/some-uuid/ticket8453/trac_8453-reviewer.patch) by @loefflerd created at 2010-03-11 19:47:20\n\napply over previous patch",
     "created_at": "2010-03-11T19:47:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8453#issuecomment-76062",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_8453-reviewer.patch](tarball://root/attachments/some-uuid/ticket8453/trac_8453-reviewer.patch) by davidloeffler created at 2010-03-11 19:47:20
+Attachment [trac_8453-reviewer.patch](tarball://root/attachments/some-uuid/ticket8453/trac_8453-reviewer.patch) by @loefflerd created at 2010-03-11 19:47:20
 
 apply over previous patch
 
@@ -198,7 +198,7 @@ archive/issue_comments_076063.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8453#issuecomment-76063",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_076064.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8453#issuecomment-76064",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_076065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8453#issuecomment-76065",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_076066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8453#issuecomment-76066",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_076067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8453#issuecomment-76067",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_076068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8453#issuecomment-76068",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_076069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8453",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8453#issuecomment-76069",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

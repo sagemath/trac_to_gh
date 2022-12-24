@@ -3,7 +3,7 @@
 archive/issues_004920.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4920\n\n",
+    "body": "Assignee: tba\n\nCC:  @craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4920\n\n",
     "created_at": "2009-01-01T22:54:21Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_004920.json:
     "title": "convert sage.modular.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4920",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
 
-CC:  craigcitro
+CC:  @craigcitro
 
 
 
@@ -39,7 +39,7 @@ archive/issue_comments_037335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37335",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -52,16 +52,16 @@ Patch at http://sage.math.washington.edu/home/mhansen/trac_4920.patch
 archive/issue_comments_037336.json:
 ```json
 {
-    "body": "Attachment [trac_4920-2.patch](tarball://root/attachments/some-uuid/ticket4920/trac_4920-2.patch) by mhansen created at 2009-01-02 06:50:56",
+    "body": "Attachment [trac_4920-2.patch](tarball://root/attachments/some-uuid/ticket4920/trac_4920-2.patch) by @mwhansen created at 2009-01-02 06:50:56",
     "created_at": "2009-01-02T06:50:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37336",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4920-2.patch](tarball://root/attachments/some-uuid/ticket4920/trac_4920-2.patch) by mhansen created at 2009-01-02 06:50:56
+Attachment [trac_4920-2.patch](tarball://root/attachments/some-uuid/ticket4920/trac_4920-2.patch) by @mwhansen created at 2009-01-02 06:50:56
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_037337.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37337",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_037340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37340",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -208,16 +208,16 @@ The patch latex-fix-4920.patch fixes some markup problems that prevented the gen
 archive/issue_comments_037344.json:
 ```json
 {
-    "body": "Attachment [sage.modular-final.patch](tarball://root/attachments/some-uuid/ticket4920/sage.modular-final.patch) by mhansen created at 2009-02-21 19:20:38",
+    "body": "Attachment [sage.modular-final.patch](tarball://root/attachments/some-uuid/ticket4920/sage.modular-final.patch) by @mwhansen created at 2009-02-21 19:20:38",
     "created_at": "2009-02-21T19:20:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4920",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37344",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [sage.modular-final.patch](tarball://root/attachments/some-uuid/ticket4920/sage.modular-final.patch) by mhansen created at 2009-02-21 19:20:38
+Attachment [sage.modular-final.patch](tarball://root/attachments/some-uuid/ticket4920/sage.modular-final.patch) by @mwhansen created at 2009-02-21 19:20:38
 
 
 

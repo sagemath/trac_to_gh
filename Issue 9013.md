@@ -50,7 +50,7 @@ archive/issue_comments_083369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9013#issuecomment-83369",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_083372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9013#issuecomment-83372",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -171,16 +171,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_083376.json:
 ```json
 {
-    "body": "Attachment [trac_9013.patch](tarball://root/attachments/some-uuid/ticket9013/trac_9013.patch) by rlm created at 2010-05-25 23:44:59",
+    "body": "Attachment [trac_9013.patch](tarball://root/attachments/some-uuid/ticket9013/trac_9013.patch) by @rlmill created at 2010-05-25 23:44:59",
     "created_at": "2010-05-25T23:44:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9013#issuecomment-83376",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_9013.patch](tarball://root/attachments/some-uuid/ticket9013/trac_9013.patch) by rlm created at 2010-05-25 23:44:59
+Attachment [trac_9013.patch](tarball://root/attachments/some-uuid/ticket9013/trac_9013.patch) by @rlmill created at 2010-05-25 23:44:59
 
 
 
@@ -194,7 +194,7 @@ archive/issue_comments_083377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9013#issuecomment-83377",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_083378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9013#issuecomment-83378",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_083381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9013",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9013#issuecomment-83381",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

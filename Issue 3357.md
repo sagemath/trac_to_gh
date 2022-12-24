@@ -3,7 +3,7 @@
 archive/issues_003357.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  robertwb\n\nThis patch moves some of the setup code from integer.pyx into misc.memory and creates a ext/python_rich_object.pxi file.  This patch makes it easy to generalize pools to other classes, and is needed for symbolics. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3357\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb\n\nThis patch moves some of the setup code from integer.pyx into misc.memory and creates a ext/python_rich_object.pxi file.  This patch makes it easy to generalize pools to other classes, and is needed for symbolics. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3357\n\n",
     "created_at": "2008-06-03T07:15:22Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_003357.json:
     "title": "[with patch, needs review] Refactor pool code in integer.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3357",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 Assignee: somebody
 
-CC:  robertwb
+CC:  @robertwb
 
 This patch moves some of the setup code from integer.pyx into misc.memory and creates a ext/python_rich_object.pxi file.  This patch makes it easy to generalize pools to other classes, and is needed for symbolics. 
 
@@ -39,7 +39,7 @@ archive/issue_comments_023351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23351",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to assigned.
 archive/issue_comments_023352.json:
 ```json
 {
-    "body": "Changing assignee from somebody to gfurnish.",
+    "body": "Changing assignee from somebody to @garyfurnish.",
     "created_at": "2008-06-03T07:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23352",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from somebody to gfurnish.
+Changing assignee from somebody to @garyfurnish.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_023353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23353",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_023354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23354",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -225,16 +225,16 @@ Michael
 archive/issue_comments_023358.json:
 ```json
 {
-    "body": "Attachment [trac_3357.patch](tarball://root/attachments/some-uuid/ticket3357/trac_3357.patch) by gfurnish created at 2008-06-05 19:40:13\n\nnew patch",
+    "body": "Attachment [trac_3357.patch](tarball://root/attachments/some-uuid/ticket3357/trac_3357.patch) by @garyfurnish created at 2008-06-05 19:40:13\n\nnew patch",
     "created_at": "2008-06-05T19:40:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23358",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Attachment [trac_3357.patch](tarball://root/attachments/some-uuid/ticket3357/trac_3357.patch) by gfurnish created at 2008-06-05 19:40:13
+Attachment [trac_3357.patch](tarball://root/attachments/some-uuid/ticket3357/trac_3357.patch) by @garyfurnish created at 2008-06-05 19:40:13
 
 new patch
 
@@ -298,7 +298,7 @@ archive/issue_comments_023361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3357",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23361",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

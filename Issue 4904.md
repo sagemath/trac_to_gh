@@ -14,7 +14,7 @@ archive/issues_004904.json:
     "title": "convert sage.categories.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4904",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4904
 archive/issue_comments_037206.json:
 ```json
 {
-    "body": "Attachment [trac_4904.patch](tarball://root/attachments/some-uuid/ticket4904/trac_4904.patch) by mhansen created at 2009-01-02 02:28:14",
+    "body": "Attachment [trac_4904.patch](tarball://root/attachments/some-uuid/ticket4904/trac_4904.patch) by @mwhansen created at 2009-01-02 02:28:14",
     "created_at": "2009-01-02T02:28:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4904#issuecomment-37206",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4904.patch](tarball://root/attachments/some-uuid/ticket4904/trac_4904.patch) by mhansen created at 2009-01-02 02:28:14
+Attachment [trac_4904.patch](tarball://root/attachments/some-uuid/ticket4904/trac_4904.patch) by @mwhansen created at 2009-01-02 02:28:14
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_037207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4904#issuecomment-37207",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_037208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4904",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4904#issuecomment-37208",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

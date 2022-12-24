@@ -87,16 +87,16 @@ Attachment [2074-permgroup_element_fix.patch](tarball://root/attachments/some-uu
 archive/issue_comments_013417.json:
 ```json
 {
-    "body": "Attachment [2074.patch](tarball://root/attachments/some-uuid/ticket2074/2074.patch) by mhansen created at 2008-02-07 08:26:01\n\nApply the second patch -- positive review.",
+    "body": "Attachment [2074.patch](tarball://root/attachments/some-uuid/ticket2074/2074.patch) by @mwhansen created at 2008-02-07 08:26:01\n\nApply the second patch -- positive review.",
     "created_at": "2008-02-07T08:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2074",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2074#issuecomment-13417",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2074.patch](tarball://root/attachments/some-uuid/ticket2074/2074.patch) by mhansen created at 2008-02-07 08:26:01
+Attachment [2074.patch](tarball://root/attachments/some-uuid/ticket2074/2074.patch) by @mwhansen created at 2008-02-07 08:26:01
 
 Apply the second patch -- positive review.
 

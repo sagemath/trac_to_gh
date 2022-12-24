@@ -3,7 +3,7 @@
 archive/issues_002322.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is the flattened patch. Please let me know if there are any problems applying it. It's based against 2.10.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2322\n\n",
+    "body": "Assignee: @williamstein\n\nThis is the flattened patch. Please let me know if there are any problems applying it. It's based against 2.10.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2322\n\n",
     "created_at": "2008-02-26T18:06:30Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002322.json:
     "title": "[with patch] dsage patch for 2.10.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2322",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is the flattened patch. Please let me know if there are any problems applying it. It's based against 2.10.2.
 
@@ -37,7 +37,7 @@ archive/issue_comments_015442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2322#issuecomment-15442",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_015446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2322#issuecomment-15446",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_015448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2322#issuecomment-15448",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_015449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2322#issuecomment-15449",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_015450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2322#issuecomment-15450",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_015451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2322",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2322#issuecomment-15451",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

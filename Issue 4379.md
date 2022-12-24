@@ -3,7 +3,7 @@
 archive/issues_004379.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  mhansen\n\nKeywords: tutorial, documentation\n\nFix one typo in the tutorial.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4379\n\n",
+    "body": "Assignee: somebody\n\nCC:  @mwhansen\n\nKeywords: tutorial, documentation\n\nFix one typo in the tutorial.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4379\n\n",
     "created_at": "2008-10-28T21:51:46Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_004379.json:
     "title": "[with patch, needs review] typo in tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4379",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: somebody
 
-CC:  mhansen
+CC:  @mwhansen
 
 Keywords: tutorial, documentation
 
@@ -37,16 +37,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4379
 archive/issue_comments_032217.json:
 ```json
 {
-    "body": "Attachment [tut-typo.patch](tarball://root/attachments/some-uuid/ticket4379/tut-typo.patch) by jhpalmieri created at 2008-10-28 21:51:54",
+    "body": "Attachment [tut-typo.patch](tarball://root/attachments/some-uuid/ticket4379/tut-typo.patch) by @jhpalmieri created at 2008-10-28 21:51:54",
     "created_at": "2008-10-28T21:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4379",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4379#issuecomment-32217",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [tut-typo.patch](tarball://root/attachments/some-uuid/ticket4379/tut-typo.patch) by jhpalmieri created at 2008-10-28 21:51:54
+Attachment [tut-typo.patch](tarball://root/attachments/some-uuid/ticket4379/tut-typo.patch) by @jhpalmieri created at 2008-10-28 21:51:54
 
 
 

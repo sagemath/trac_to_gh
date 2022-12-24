@@ -14,7 +14,7 @@ archive/issues_005650.json:
     "title": "speed up gamma_inc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5650",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Keywords: gamma_inc log performance speed
@@ -56,7 +56,7 @@ archive/issue_comments_044118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44118",
-    "user": "fredrik.johansson"
+    "user": "@fredrik-johansson"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_044119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44119",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_044120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44120",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_044121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44121",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_044122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44122",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_044123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44123",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

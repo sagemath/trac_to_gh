@@ -14,7 +14,7 @@ archive/issues_007626.json:
     "title": "delete PBUILD code in local/bin/sage-sage script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7626",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -50,7 +50,7 @@ archive/issue_comments_065161.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7626#issuecomment-65161",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_065162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7626#issuecomment-65162",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

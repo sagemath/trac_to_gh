@@ -3,7 +3,7 @@
 archive/issues_008497.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman burcin jason mhansen\n\nKeywords: simplify, radical, sqrt\n\nthe documentation of `simplify_radical` says:\n\n```\nsage: x.simplify_radical?\n...\n       Simplifies this symbolic expression, which can contain logs,\n       exponentials, and radicals, by converting it into a form which is\n       canonical over a large class of expressions and a given ordering of\n       variables\n```\n\nhowever if indeed it is able to recognize zero:\n\n```\nsage: a=1/(sqrt(5)+sqrt(2))-(sqrt(5)-sqrt(2))/3\nsage: a.simplify_radical()\n0\n```\n\nit does *not* return a canonical expression:\n\n```\nsage: a1=1/(sqrt(5)+sqrt(2))\nsage: a2=(sqrt(5)-sqrt(2))/3\nsage: a1.simplify_radical()\n1/(sqrt(2) + sqrt(5))\nsage: a2.simplify_radical()\n-1/3*sqrt(2) + 1/3*sqrt(5)\nsage: (a1-a2).simplify_radical()\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8497\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @burcin @jasongrout @mwhansen\n\nKeywords: simplify, radical, sqrt\n\nthe documentation of `simplify_radical` says:\n\n```\nsage: x.simplify_radical?\n...\n       Simplifies this symbolic expression, which can contain logs,\n       exponentials, and radicals, by converting it into a form which is\n       canonical over a large class of expressions and a given ordering of\n       variables\n```\n\nhowever if indeed it is able to recognize zero:\n\n```\nsage: a=1/(sqrt(5)+sqrt(2))-(sqrt(5)-sqrt(2))/3\nsage: a.simplify_radical()\n0\n```\n\nit does *not* return a canonical expression:\n\n```\nsage: a1=1/(sqrt(5)+sqrt(2))\nsage: a2=(sqrt(5)-sqrt(2))/3\nsage: a1.simplify_radical()\n1/(sqrt(2) + sqrt(5))\nsage: a2.simplify_radical()\n-1/3*sqrt(2) + 1/3*sqrt(5)\nsage: (a1-a2).simplify_radical()\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8497\n\n",
     "created_at": "2010-03-11T10:33:15Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_008497.json:
     "title": "bug in simplify_rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8497",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman burcin jason mhansen
+CC:  @kcrisman @burcin @jasongrout @mwhansen
 
 Keywords: simplify, radical, sqrt
 
@@ -72,7 +72,7 @@ archive/issue_comments_076683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76683",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_076684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76684",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_076685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76685",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_076686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76686",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_076687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76687",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_076688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76688",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_076689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76689",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_076690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76690",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_076691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76691",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_076692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76692",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_076693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76693",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -294,16 +294,16 @@ Okay.  So whoever does this ticket will do that :)
 archive/issue_comments_076694.json:
 ```json
 {
-    "body": "Attachment [trac_8497.patch](tarball://root/attachments/some-uuid/ticket8497/trac_8497.patch) by zimmerma created at 2011-09-25 21:04:40",
+    "body": "Attachment [trac_8497.patch](tarball://root/attachments/some-uuid/ticket8497/trac_8497.patch) by @zimmermann6 created at 2011-09-25 21:04:40",
     "created_at": "2011-09-25T21:04:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76694",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [trac_8497.patch](tarball://root/attachments/some-uuid/ticket8497/trac_8497.patch) by zimmerma created at 2011-09-25 21:04:40
+Attachment [trac_8497.patch](tarball://root/attachments/some-uuid/ticket8497/trac_8497.patch) by @zimmermann6 created at 2011-09-25 21:04:40
 
 
 
@@ -317,7 +317,7 @@ archive/issue_comments_076695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76695",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -335,7 +335,7 @@ archive/issue_comments_076696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76696",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -355,7 +355,7 @@ archive/issue_comments_076697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76697",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_076698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76698",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -391,7 +391,7 @@ archive/issue_comments_076699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76699",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_076700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76700",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_076701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76701",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -445,7 +445,7 @@ archive/issue_comments_076702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76702",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -458,16 +458,16 @@ Fixed doc formatting, apply only this
 archive/issue_comments_076703.json:
 ```json
 {
-    "body": "Attachment [8497_fix_doc.patch](tarball://root/attachments/some-uuid/ticket8497/8497_fix_doc.patch) by kcrisman created at 2011-10-07 16:52:47\n\nI feel that we should at least ask on the Maxima list about whether this is truly \"not canonical\".  My understanding is that Fateman would say it is canonical as an *expression*, not as a *function*.   If I'm the only one who feels this way, I'll let it slide.   But I figure we would want him to give us benefit of the doubt in our areas of expertise.",
+    "body": "Attachment [8497_fix_doc.patch](tarball://root/attachments/some-uuid/ticket8497/8497_fix_doc.patch) by @kcrisman created at 2011-10-07 16:52:47\n\nI feel that we should at least ask on the Maxima list about whether this is truly \"not canonical\".  My understanding is that Fateman would say it is canonical as an *expression*, not as a *function*.   If I'm the only one who feels this way, I'll let it slide.   But I figure we would want him to give us benefit of the doubt in our areas of expertise.",
     "created_at": "2011-10-07T16:52:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76703",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [8497_fix_doc.patch](tarball://root/attachments/some-uuid/ticket8497/8497_fix_doc.patch) by kcrisman created at 2011-10-07 16:52:47
+Attachment [8497_fix_doc.patch](tarball://root/attachments/some-uuid/ticket8497/8497_fix_doc.patch) by @kcrisman created at 2011-10-07 16:52:47
 
 I feel that we should at least ask on the Maxima list about whether this is truly "not canonical".  My understanding is that Fateman would say it is canonical as an *expression*, not as a *function*.   If I'm the only one who feels this way, I'll let it slide.   But I figure we would want him to give us benefit of the doubt in our areas of expertise.
 
@@ -483,7 +483,7 @@ archive/issue_comments_076704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76704",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -501,7 +501,7 @@ archive/issue_comments_076705.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76705",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -523,7 +523,7 @@ archive/issue_comments_076706.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76706",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -541,7 +541,7 @@ archive/issue_comments_076707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76707",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -562,7 +562,7 @@ archive/issue_comments_076708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76708",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -580,7 +580,7 @@ archive/issue_comments_076709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76709",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -623,7 +623,7 @@ archive/issue_comments_076710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76710",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -641,7 +641,7 @@ archive/issue_comments_076711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8497#issuecomment-76711",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

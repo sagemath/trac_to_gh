@@ -59,7 +59,7 @@ archive/issue_comments_014333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2182#issuecomment-14333",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -72,16 +72,16 @@ To be applied to the sage repository.
 archive/issue_comments_014334.json:
 ```json
 {
-    "body": "Attachment [LD-LIBRARY-clobbered-SAGE-SCRIPTS.patch](tarball://root/attachments/some-uuid/ticket2182/LD-LIBRARY-clobbered-SAGE-SCRIPTS.patch) by jason created at 2008-02-17 03:11:15\n\nTo be applied to the sage-scripts repository (changes sage-env)",
+    "body": "Attachment [LD-LIBRARY-clobbered-SAGE-SCRIPTS.patch](tarball://root/attachments/some-uuid/ticket2182/LD-LIBRARY-clobbered-SAGE-SCRIPTS.patch) by @jasongrout created at 2008-02-17 03:11:15\n\nTo be applied to the sage-scripts repository (changes sage-env)",
     "created_at": "2008-02-17T03:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2182#issuecomment-14334",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [LD-LIBRARY-clobbered-SAGE-SCRIPTS.patch](tarball://root/attachments/some-uuid/ticket2182/LD-LIBRARY-clobbered-SAGE-SCRIPTS.patch) by jason created at 2008-02-17 03:11:15
+Attachment [LD-LIBRARY-clobbered-SAGE-SCRIPTS.patch](tarball://root/attachments/some-uuid/ticket2182/LD-LIBRARY-clobbered-SAGE-SCRIPTS.patch) by @jasongrout created at 2008-02-17 03:11:15
 
 To be applied to the sage-scripts repository (changes sage-env)
 
@@ -97,7 +97,7 @@ archive/issue_comments_014335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2182",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2182#issuecomment-14335",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

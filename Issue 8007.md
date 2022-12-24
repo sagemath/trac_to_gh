@@ -3,7 +3,7 @@
 archive/issues_008007.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  was boothby spancratz\n\nIn the process of looking at #3436, I noticed that generation of random number field elements was slow. I was hoping that speeding it up would make it fast enough that we could use a \"generic\" algorithm for generating matrices over cyclotomic fields. I did get a **100-150X** speedup for generating random elements of number fields, but amazingly, this **still** wasn't quite fast enough to beat the more \"quick and dirty\" approaches for cyclotomic matrices. However, I think this code is probably still worth merging.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8007\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @williamstein boothby spancratz\n\nIn the process of looking at #3436, I noticed that generation of random number field elements was slow. I was hoping that speeding it up would make it fast enough that we could use a \"generic\" algorithm for generating matrices over cyclotomic fields. I did get a **100-150X** speedup for generating random elements of number fields, but amazingly, this **still** wasn't quite fast enough to beat the more \"quick and dirty\" approaches for cyclotomic matrices. However, I think this code is probably still worth merging.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8007\n\n",
     "created_at": "2010-01-20T04:50:23Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_008007.json:
     "title": "Speed up generation of random number field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8007",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  was boothby spancratz
+CC:  @williamstein boothby spancratz
 
 In the process of looking at #3436, I noticed that generation of random number field elements was slow. I was hoping that speeding it up would make it fast enough that we could use a "generic" algorithm for generating matrices over cyclotomic fields. I did get a **100-150X** speedup for generating random elements of number fields, but amazingly, this **still** wasn't quite fast enough to beat the more "quick and dirty" approaches for cyclotomic matrices. However, I think this code is probably still worth merging.
 
@@ -39,7 +39,7 @@ archive/issue_comments_069965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8007#issuecomment-69965",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_069966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8007#issuecomment-69966",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_069967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8007#issuecomment-69967",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_069968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8007#issuecomment-69968",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_069969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8007#issuecomment-69969",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_069970.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8007#issuecomment-69970",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_069971.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8007#issuecomment-69971",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -169,16 +169,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_069972.json:
 ```json
 {
-    "body": "Attachment [trac_8007.patch](tarball://root/attachments/some-uuid/ticket8007/trac_8007.patch) by roed created at 2010-02-11 20:45:13\n\nNeeds to be rebased against 4.3.2...",
+    "body": "Attachment [trac_8007.patch](tarball://root/attachments/some-uuid/ticket8007/trac_8007.patch) by @roed314 created at 2010-02-11 20:45:13\n\nNeeds to be rebased against 4.3.2...",
     "created_at": "2010-02-11T20:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8007#issuecomment-69972",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [trac_8007.patch](tarball://root/attachments/some-uuid/ticket8007/trac_8007.patch) by roed created at 2010-02-11 20:45:13
+Attachment [trac_8007.patch](tarball://root/attachments/some-uuid/ticket8007/trac_8007.patch) by @roed314 created at 2010-02-11 20:45:13
 
 Needs to be rebased against 4.3.2...
 
@@ -189,16 +189,16 @@ Needs to be rebased against 4.3.2...
 archive/issue_comments_069973.json:
 ```json
 {
-    "body": "Attachment [trac_8007_rebase.patch](tarball://root/attachments/some-uuid/ticket8007/trac_8007_rebase.patch) by craigcitro created at 2010-02-12 20:15:21",
+    "body": "Attachment [trac_8007_rebase.patch](tarball://root/attachments/some-uuid/ticket8007/trac_8007_rebase.patch) by @craigcitro created at 2010-02-12 20:15:21",
     "created_at": "2010-02-12T20:15:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8007#issuecomment-69973",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_8007_rebase.patch](tarball://root/attachments/some-uuid/ticket8007/trac_8007_rebase.patch) by craigcitro created at 2010-02-12 20:15:21
+Attachment [trac_8007_rebase.patch](tarball://root/attachments/some-uuid/ticket8007/trac_8007_rebase.patch) by @craigcitro created at 2010-02-12 20:15:21
 
 
 
@@ -212,7 +212,7 @@ archive/issue_comments_069974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8007#issuecomment-69974",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_069975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8007#issuecomment-69975",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_069976.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8007#issuecomment-69976",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_069977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8007#issuecomment-69977",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

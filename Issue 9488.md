@@ -14,7 +14,7 @@ archive/issues_009488.json:
     "title": "[easy] parse make -j N as well as make -jN for parallel builds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9488",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: GeorgSWeber
@@ -63,7 +63,7 @@ archive/issue_comments_091097.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9488#issuecomment-91097",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_091098.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9488#issuecomment-91098",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_091099.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9488#issuecomment-91099",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_091100.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9488",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9488#issuecomment-91100",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007671.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThe function strongly_connected_components uses Networkx for the moment. As c_graphs are to become the standard implementation of graphs in Sage, this function should be rewritten in Cython.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7671\n\n",
+    "body": "Assignee: @rlmill\n\nThe function strongly_connected_components uses Networkx for the moment. As c_graphs are to become the standard implementation of graphs in Sage, this function should be rewritten in Cython.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7671\n\n",
     "created_at": "2009-12-12T18:13:25Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_007671.json:
     "title": "strongly_connected_components in c_graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7671",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 The function strongly_connected_components uses Networkx for the moment. As c_graphs are to become the standard implementation of graphs in Sage, this function should be rewritten in Cython.
 
@@ -37,7 +37,7 @@ archive/issue_comments_065748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7671#issuecomment-65748",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_065749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7671#issuecomment-65749",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_065750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7671#issuecomment-65750",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_065751.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7671#issuecomment-65751",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_065752.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7671#issuecomment-65752",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -124,16 +124,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_065753.json:
 ```json
 {
-    "body": "Attachment [trac_7671.patch](tarball://root/attachments/some-uuid/ticket7671/trac_7671.patch) by ncohen created at 2010-03-02 08:53:26",
+    "body": "Attachment [trac_7671.patch](tarball://root/attachments/some-uuid/ticket7671/trac_7671.patch) by @nathanncohen created at 2010-03-02 08:53:26",
     "created_at": "2010-03-02T08:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7671#issuecomment-65753",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_7671.patch](tarball://root/attachments/some-uuid/ticket7671/trac_7671.patch) by ncohen created at 2010-03-02 08:53:26
+Attachment [trac_7671.patch](tarball://root/attachments/some-uuid/ticket7671/trac_7671.patch) by @nathanncohen created at 2010-03-02 08:53:26
 
 
 
@@ -147,7 +147,7 @@ archive/issue_comments_065754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7671",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7671#issuecomment-65754",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

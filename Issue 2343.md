@@ -3,7 +3,7 @@
 archive/issues_002343.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis lets you start with an ideal over a polynomial ring with rational coefficients, then compute the entire real (or entire complex) variety.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2343\n\n",
+    "body": "Assignee: @williamstein\n\nThis lets you start with an ideal over a polynomial ring with rational coefficients, then compute the entire real (or entire complex) variety.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2343\n\n",
     "created_at": "2008-02-28T05:24:11Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_002343.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This lets you start with an ideal over a polynomial ring with rational coefficients, then compute the entire real (or entire complex) variety.
 
@@ -55,7 +55,7 @@ archive/issue_comments_015687.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2343",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2343#issuecomment-15687",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

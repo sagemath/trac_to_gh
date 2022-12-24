@@ -3,7 +3,7 @@
 archive/issues_003088.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nAttached is a patch that makes gfan build correctly for the Debian package.  I'm not sure why it stopped working in the first place, but this version is more Debian policy compliant than the old one anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3088\n\n",
+    "body": "Assignee: @timabbott\n\nAttached is a patch that makes gfan build correctly for the Debian package.  I'm not sure why it stopped working in the first place, but this version is more Debian policy compliant than the old one anyway.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3088\n\n",
     "created_at": "2008-05-03T05:02:38Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_003088.json:
     "title": "[with patch; needs review] Fixes for Debian gfan build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3088",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 Attached is a patch that makes gfan build correctly for the Debian package.  I'm not sure why it stopped working in the first place, but this version is more Debian policy compliant than the old one anyway.
 

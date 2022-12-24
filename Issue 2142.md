@@ -3,7 +3,7 @@
 archive/issues_002142.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf you multiply two subdivided matrices so that the product can be thought of as a product of partitioned matrices, it would be nice if the resulting matrix had the natural subdivision introduced by thinking of the product as a block matrix multiplication.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2142\n\n",
+    "body": "Assignee: @williamstein\n\nIf you multiply two subdivided matrices so that the product can be thought of as a product of partitioned matrices, it would be nice if the resulting matrix had the natural subdivision introduced by thinking of the product as a block matrix multiplication.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2142\n\n",
     "created_at": "2008-02-12T04:16:22Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002142.json:
     "title": "product of two subdivided matrices should yield a subdivided matrix if it makes sense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2142",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If you multiply two subdivided matrices so that the product can be thought of as a product of partitioned matrices, it would be nice if the resulting matrix had the natural subdivision introduced by thinking of the product as a block matrix multiplication.
 
@@ -37,7 +37,7 @@ archive/issue_comments_014043.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14043",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_014044.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14044",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -68,16 +68,16 @@ archive/issue_comments_014044.json:
 archive/issue_comments_014045.json:
 ```json
 {
-    "body": "Attachment [2142-subdivisions.patch](tarball://root/attachments/some-uuid/ticket2142/2142-subdivisions.patch) by robertwb created at 2008-03-06 20:00:28",
+    "body": "Attachment [2142-subdivisions.patch](tarball://root/attachments/some-uuid/ticket2142/2142-subdivisions.patch) by @robertwb created at 2008-03-06 20:00:28",
     "created_at": "2008-03-06T20:00:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14045",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [2142-subdivisions.patch](tarball://root/attachments/some-uuid/ticket2142/2142-subdivisions.patch) by robertwb created at 2008-03-06 20:00:28
+Attachment [2142-subdivisions.patch](tarball://root/attachments/some-uuid/ticket2142/2142-subdivisions.patch) by @robertwb created at 2008-03-06 20:00:28
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_014046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14046",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_014049.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2142",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14049",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

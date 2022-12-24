@@ -3,7 +3,7 @@
 archive/issues_009378.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  freetonik@gmail.com schilly kcrisman novoselt\n\nAs the subject says. Get a Russian translation of the [Sage tutorial](http://www.sagemath.org/doc/tutorial/) into the Sage standard documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9378\n\n",
+    "body": "Assignee: mvngu\n\nCC:  freetonik@gmail.com @haraldschilly @kcrisman @novoselt\n\nAs the subject says. Get a Russian translation of the [Sage tutorial](http://www.sagemath.org/doc/tutorial/) into the Sage standard documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9378\n\n",
     "created_at": "2010-06-29T18:36:33Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_009378.json:
 ```
 Assignee: mvngu
 
-CC:  freetonik@gmail.com schilly kcrisman novoselt
+CC:  freetonik@gmail.com @haraldschilly @kcrisman @novoselt
 
 As the subject says. Get a Russian translation of the [Sage tutorial](http://www.sagemath.org/doc/tutorial/) into the Sage standard documentation.
 
@@ -93,7 +93,7 @@ archive/issue_comments_089114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89114",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_089115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89115",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_089116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89116",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_089117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89117",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -160,16 +160,16 @@ archive/issue_comments_089117.json:
 archive/issue_comments_089118.json:
 ```json
 {
-    "body": "Attachment [9378_russian_tutorial_translation.patch](tarball://root/attachments/some-uuid/ticket9378/9378_russian_tutorial_translation.patch) by novoselt created at 2010-07-20 17:58:00",
+    "body": "Attachment [9378_russian_tutorial_translation.patch](tarball://root/attachments/some-uuid/ticket9378/9378_russian_tutorial_translation.patch) by @novoselt created at 2010-07-20 17:58:00",
     "created_at": "2010-07-20T17:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89118",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [9378_russian_tutorial_translation.patch](tarball://root/attachments/some-uuid/ticket9378/9378_russian_tutorial_translation.patch) by novoselt created at 2010-07-20 17:58:00
+Attachment [9378_russian_tutorial_translation.patch](tarball://root/attachments/some-uuid/ticket9378/9378_russian_tutorial_translation.patch) by @novoselt created at 2010-07-20 17:58:00
 
 
 
@@ -178,16 +178,16 @@ Attachment [9378_russian_tutorial_translation.patch](tarball://root/attachments/
 archive/issue_comments_089119.json:
 ```json
 {
-    "body": "Attachment [9378_russian_tutorial_translation.2.patch](tarball://root/attachments/some-uuid/ticket9378/9378_russian_tutorial_translation.2.patch) by novoselt created at 2011-06-13 23:38:10\n\nRebased to apply on 4.7.1.alpha2",
+    "body": "Attachment [9378_russian_tutorial_translation.2.patch](tarball://root/attachments/some-uuid/ticket9378/9378_russian_tutorial_translation.2.patch) by @novoselt created at 2011-06-13 23:38:10\n\nRebased to apply on 4.7.1.alpha2",
     "created_at": "2011-06-13T23:38:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89119",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [9378_russian_tutorial_translation.2.patch](tarball://root/attachments/some-uuid/ticket9378/9378_russian_tutorial_translation.2.patch) by novoselt created at 2011-06-13 23:38:10
+Attachment [9378_russian_tutorial_translation.2.patch](tarball://root/attachments/some-uuid/ticket9378/9378_russian_tutorial_translation.2.patch) by @novoselt created at 2011-06-13 23:38:10
 
 Rebased to apply on 4.7.1.alpha2
 
@@ -203,7 +203,7 @@ archive/issue_comments_089120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89120",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_089121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89121",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_089122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89122",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_089123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89123",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -288,7 +288,7 @@ archive/issue_comments_089124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89124",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_089125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89125",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -324,7 +324,7 @@ archive/issue_comments_089126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89126",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_089127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89127",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -364,7 +364,7 @@ archive/issue_comments_089128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89128",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_089129.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89129",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -480,7 +480,7 @@ archive/issue_comments_089130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89130",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -502,7 +502,7 @@ archive/issue_comments_089131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89131",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -515,16 +515,16 @@ Adjustments and comment translation
 archive/issue_comments_089132.json:
 ```json
 {
-    "body": "Attachment [trac_9378_reviewer.patch](tarball://root/attachments/some-uuid/ticket9378/trac_9378_reviewer.patch) by novoselt created at 2011-06-14 23:06:29",
+    "body": "Attachment [trac_9378_reviewer.patch](tarball://root/attachments/some-uuid/ticket9378/trac_9378_reviewer.patch) by @novoselt created at 2011-06-14 23:06:29",
     "created_at": "2011-06-14T23:06:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89132",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9378_reviewer.patch](tarball://root/attachments/some-uuid/ticket9378/trac_9378_reviewer.patch) by novoselt created at 2011-06-14 23:06:29
+Attachment [trac_9378_reviewer.patch](tarball://root/attachments/some-uuid/ticket9378/trac_9378_reviewer.patch) by @novoselt created at 2011-06-14 23:06:29
 
 
 
@@ -538,7 +538,7 @@ archive/issue_comments_089133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89133",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_089134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89134",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -582,7 +582,7 @@ archive/issue_comments_089135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89135",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -600,7 +600,7 @@ archive/issue_comments_089136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89136",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -613,16 +613,16 @@ Add devel/sage/doc/ru to TESTDIRS
 archive/issue_comments_089137.json:
 ```json
 {
-    "body": "Attachment [9378_TESTDIRS.patch](tarball://root/attachments/some-uuid/ticket9378/9378_TESTDIRS.patch) by jdemeyer created at 2011-06-15 20:23:23",
+    "body": "Attachment [9378_TESTDIRS.patch](tarball://root/attachments/some-uuid/ticket9378/9378_TESTDIRS.patch) by @jdemeyer created at 2011-06-15 20:23:23",
     "created_at": "2011-06-15T20:23:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89137",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9378_TESTDIRS.patch](tarball://root/attachments/some-uuid/ticket9378/9378_TESTDIRS.patch) by jdemeyer created at 2011-06-15 20:23:23
+Attachment [9378_TESTDIRS.patch](tarball://root/attachments/some-uuid/ticket9378/9378_TESTDIRS.patch) by @jdemeyer created at 2011-06-15 20:23:23
 
 
 
@@ -636,7 +636,7 @@ archive/issue_comments_089138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9378#issuecomment-89138",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

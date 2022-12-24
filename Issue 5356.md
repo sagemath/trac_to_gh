@@ -14,7 +14,7 @@ archive/issues_005356.json:
     "title": "100r returns a Sage integer in the notebook (but commandline works fine)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5356",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5356
 archive/issue_comments_041262.json:
 ```json
 {
-    "body": "Attachment [5356-notebook-preparser.patch](tarball://root/attachments/some-uuid/ticket5356/5356-notebook-preparser.patch) by robertwb created at 2009-02-24 08:13:37",
+    "body": "Attachment [5356-notebook-preparser.patch](tarball://root/attachments/some-uuid/ticket5356/5356-notebook-preparser.patch) by @robertwb created at 2009-02-24 08:13:37",
     "created_at": "2009-02-24T08:13:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5356#issuecomment-41262",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5356-notebook-preparser.patch](tarball://root/attachments/some-uuid/ticket5356/5356-notebook-preparser.patch) by robertwb created at 2009-02-24 08:13:37
+Attachment [5356-notebook-preparser.patch](tarball://root/attachments/some-uuid/ticket5356/5356-notebook-preparser.patch) by @robertwb created at 2009-02-24 08:13:37
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_041263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5356#issuecomment-41263",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_041264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5356",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5356#issuecomment-41264",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

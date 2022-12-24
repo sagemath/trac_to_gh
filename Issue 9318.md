@@ -3,7 +3,7 @@
 archive/issues_009318.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThis should work:\n\n\n```python\nsage: o = range(8) + range(8)\nsage: shuffle(o)\nsage: S = mq.SBox(o)\nsage: S.is_permutation()\nFalse\n\nsage: len(S.cnf()) == 3*2^4\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9318\n\n",
+    "body": "Assignee: @aghitza\n\nThis should work:\n\n\n```python\nsage: o = range(8) + range(8)\nsage: shuffle(o)\nsage: S = mq.SBox(o)\nsage: S.is_permutation()\nFalse\n\nsage: len(S.cnf()) == 3*2^4\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9318\n\n",
     "created_at": "2010-06-23T15:41:09Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_009318.json:
     "title": "Fix S-Box CNF generation for non permutations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9318",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 This should work:
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9318
 archive/issue_comments_087811.json:
 ```json
 {
-    "body": "Attachment [sbox_fixes.patch](tarball://root/attachments/some-uuid/ticket9318/sbox_fixes.patch) by malb created at 2010-06-23 15:42:00",
+    "body": "Attachment [sbox_fixes.patch](tarball://root/attachments/some-uuid/ticket9318/sbox_fixes.patch) by @malb created at 2010-06-23 15:42:00",
     "created_at": "2010-06-23T15:42:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9318#issuecomment-87811",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sbox_fixes.patch](tarball://root/attachments/some-uuid/ticket9318/sbox_fixes.patch) by malb created at 2010-06-23 15:42:00
+Attachment [sbox_fixes.patch](tarball://root/attachments/some-uuid/ticket9318/sbox_fixes.patch) by @malb created at 2010-06-23 15:42:00
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_087813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9318#issuecomment-87813",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_087814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9318#issuecomment-87814",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_087815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9318#issuecomment-87815",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_087816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9318",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9318#issuecomment-87816",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

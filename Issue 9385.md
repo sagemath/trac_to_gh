@@ -3,7 +3,7 @@
 archive/issues_009385.json:
 ```json
 {
-    "body": "Assignee: olazo\n\nCC:  jsp vbraun alexghitza rlm was\n\nI'm compiling Sage in a fedora 13 Intel Core Duo laptop (1.8 Gb RAM). It normally takes about 6 hours to build previous versions of sage, however, it now seems to enter an infinite loop while building ATLAS (After 28 hours it is still building ATLAS).\n\nSomeone in #archlinux said libreadline is segfaulting or something like that and that it was looping.\n\nI'll compile a previous version of Sage and see if that works for now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9385\n\n",
+    "body": "Assignee: olazo\n\nCC:  @jaapspies @vbraun alexghitza @rlmill @williamstein\n\nI'm compiling Sage in a fedora 13 Intel Core Duo laptop (1.8 Gb RAM). It normally takes about 6 hours to build previous versions of sage, however, it now seems to enter an infinite loop while building ATLAS (After 28 hours it is still building ATLAS).\n\nSomeone in #archlinux said libreadline is segfaulting or something like that and that it was looping.\n\nI'll compile a previous version of Sage and see if that works for now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9385\n\n",
     "created_at": "2010-06-29T22:26:24Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009385.json:
 ```
 Assignee: olazo
 
-CC:  jsp vbraun alexghitza rlm was
+CC:  @jaapspies @vbraun alexghitza @rlmill @williamstein
 
 I'm compiling Sage in a fedora 13 Intel Core Duo laptop (1.8 Gb RAM). It normally takes about 6 hours to build previous versions of sage, however, it now seems to enter an infinite loop while building ATLAS (After 28 hours it is still building ATLAS).
 
@@ -340,7 +340,7 @@ archive/issue_comments_089249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9385#issuecomment-89249",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -429,16 +429,16 @@ Attachment [zMMSEARCH.LOG](tarball://root/attachments/some-uuid/ticket9385/zMMSE
 archive/issue_comments_089254.json:
 ```json
 {
-    "body": "Attachment [zMVTUNE.LOG](tarball://root/attachments/some-uuid/ticket9385/zMVTUNE.LOG) by vbraun created at 2010-07-03 15:45:40\n\nThose errors are harmless, that just means that ATLAS tried to compile some assembler optimized code that doesn't work on your particular CPU. Atlas will then use a different code path. \n\nHowever, if atlas would really die in stage 2-1-2 then it would never build zMMSEARCH.LOG, zMVTUNE.LOG. So the real bug must be something else further up in your log. Can you try to rebuild atlas (preferably with LANG=en_US or something like that) and upload the complete log?",
+    "body": "Attachment [zMVTUNE.LOG](tarball://root/attachments/some-uuid/ticket9385/zMVTUNE.LOG) by @vbraun created at 2010-07-03 15:45:40\n\nThose errors are harmless, that just means that ATLAS tried to compile some assembler optimized code that doesn't work on your particular CPU. Atlas will then use a different code path. \n\nHowever, if atlas would really die in stage 2-1-2 then it would never build zMMSEARCH.LOG, zMVTUNE.LOG. So the real bug must be something else further up in your log. Can you try to rebuild atlas (preferably with LANG=en_US or something like that) and upload the complete log?",
     "created_at": "2010-07-03T15:45:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9385#issuecomment-89254",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [zMVTUNE.LOG](tarball://root/attachments/some-uuid/ticket9385/zMVTUNE.LOG) by vbraun created at 2010-07-03 15:45:40
+Attachment [zMVTUNE.LOG](tarball://root/attachments/some-uuid/ticket9385/zMVTUNE.LOG) by @vbraun created at 2010-07-03 15:45:40
 
 Those errors are harmless, that just means that ATLAS tried to compile some assembler optimized code that doesn't work on your particular CPU. Atlas will then use a different code path. 
 
@@ -481,7 +481,7 @@ archive/issue_comments_089256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9385#issuecomment-89256",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_089259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9385#issuecomment-89259",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -595,7 +595,7 @@ archive/issue_comments_089261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9385#issuecomment-89261",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -837,7 +837,7 @@ archive/issue_comments_089270.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9385#issuecomment-89270",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -942,7 +942,7 @@ archive/issue_comments_089274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9385#issuecomment-89274",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -960,7 +960,7 @@ archive/issue_comments_089275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9385#issuecomment-89275",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1283,7 +1283,7 @@ archive/issue_comments_089285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9385#issuecomment-89285",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1475,7 +1475,7 @@ archive/issue_comments_089292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9385#issuecomment-89292",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -1671,16 +1671,16 @@ Attachment [proc_meminfo](tarball://root/attachments/some-uuid/ticket9385/proc_m
 archive/issue_comments_089299.json:
 ```json
 {
-    "body": "Attachment [install_with_system_atlas.tar.lzma](tarball://root/attachments/some-uuid/ticket9385/install_with_system_atlas.tar.lzma) by vbraun created at 2011-08-28 23:38:40\n\nCan you try the new atlas spkg, which is included in Sage-4.7.2.alpha1 or higher? This will at the very least let you use the system-wide atlas install.",
+    "body": "Attachment [install_with_system_atlas.tar.lzma](tarball://root/attachments/some-uuid/ticket9385/install_with_system_atlas.tar.lzma) by @vbraun created at 2011-08-28 23:38:40\n\nCan you try the new atlas spkg, which is included in Sage-4.7.2.alpha1 or higher? This will at the very least let you use the system-wide atlas install.",
     "created_at": "2011-08-28T23:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9385#issuecomment-89299",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
-Attachment [install_with_system_atlas.tar.lzma](tarball://root/attachments/some-uuid/ticket9385/install_with_system_atlas.tar.lzma) by vbraun created at 2011-08-28 23:38:40
+Attachment [install_with_system_atlas.tar.lzma](tarball://root/attachments/some-uuid/ticket9385/install_with_system_atlas.tar.lzma) by @vbraun created at 2011-08-28 23:38:40
 
 Can you try the new atlas spkg, which is included in Sage-4.7.2.alpha1 or higher? This will at the very least let you use the system-wide atlas install.
 
@@ -1722,7 +1722,7 @@ archive/issue_comments_089301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9385#issuecomment-89301",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1740,7 +1740,7 @@ archive/issue_comments_089302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9385",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9385#issuecomment-89302",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

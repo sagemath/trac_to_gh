@@ -3,7 +3,7 @@
 archive/issues_002788.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis patch updates hypellfrob to version 2.1, which is somewhat faster than the current 2.0.\n\nDepends on `zn_poly-0.8` (#2786).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2788\n\n",
+    "body": "Assignee: @williamstein\n\nThis patch updates hypellfrob to version 2.1, which is somewhat faster than the current 2.0.\n\nDepends on `zn_poly-0.8` (#2786).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2788\n\n",
     "created_at": "2008-04-03T03:27:43Z",
     "labels": [
         "number theory",
@@ -17,7 +17,7 @@ archive/issues_002788.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This patch updates hypellfrob to version 2.1, which is somewhat faster than the current 2.0.
 

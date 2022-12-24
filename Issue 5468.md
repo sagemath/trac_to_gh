@@ -3,7 +3,7 @@
 archive/issues_005468.json:
 ```json
 {
-    "body": "Assignee: malb\n\n\n```\nA.<Y> = QQ[]\nR.<X> = LaurentPolynomialRing(A)\nmatrix(R,2,2,[X,0,0,1])\n```\n\ngives a\n\n```\nTypeError: Unable to coerce X (<type 'sage.rings.polynomial.laurent_polynomial.LaurentPolynomial_mpair'>) to Rational\n```\n\n\nThe same problem occurs with `LaurentSeriesRing`, but not with `PowerSeriesRing`.\n\nI have not tried to chase where the problem actually comes from.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5468\n\n",
+    "body": "Assignee: @malb\n\n\n```\nA.<Y> = QQ[]\nR.<X> = LaurentPolynomialRing(A)\nmatrix(R,2,2,[X,0,0,1])\n```\n\ngives a\n\n```\nTypeError: Unable to coerce X (<type 'sage.rings.polynomial.laurent_polynomial.LaurentPolynomial_mpair'>) to Rational\n```\n\n\nThe same problem occurs with `LaurentSeriesRing`, but not with `PowerSeriesRing`.\n\nI have not tried to chase where the problem actually comes from.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5468\n\n",
     "created_at": "2009-03-10T18:30:00Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_005468.json:
     "title": "matrix creation over laurent polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5468",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 
 ```
@@ -53,7 +53,7 @@ archive/issue_comments_042444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5468",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5468#issuecomment-42444",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

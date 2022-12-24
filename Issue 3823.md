@@ -3,7 +3,7 @@
 archive/issues_003823.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\nInteractions have a minimum height of 400px, which consumes space when only part of it is used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3823\n\n",
+    "body": "Assignee: @itolkov\n\nInteractions have a minimum height of 400px, which consumes space when only part of it is used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3823\n\n",
     "created_at": "2008-08-12T20:38:42Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_003823.json:
     "title": "Interact - get rid of default height",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3823",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
 Interactions have a minimum height of 400px, which consumes space when only part of it is used.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3823
 archive/issue_comments_027194.json:
 ```json
 {
-    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3823/sage.patch) by itolkov created at 2008-08-12 20:51:21\n\nI changed the default height to 20px, since it's probably good to have one.",
+    "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3823/sage.patch) by @itolkov created at 2008-08-12 20:51:21\n\nI changed the default height to 20px, since it's probably good to have one.",
     "created_at": "2008-08-12T20:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3823#issuecomment-27194",
-    "user": "itolkov"
+    "user": "@itolkov"
 }
 ```
 
-Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3823/sage.patch) by itolkov created at 2008-08-12 20:51:21
+Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3823/sage.patch) by @itolkov created at 2008-08-12 20:51:21
 
 I changed the default height to 20px, since it's probably good to have one.
 
@@ -75,7 +75,7 @@ archive/issue_comments_027196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3823#issuecomment-27196",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

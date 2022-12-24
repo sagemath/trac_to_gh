@@ -14,7 +14,7 @@ archive/issues_008545.json:
     "title": "\\opi -> \\overline\\pi in coxter_groups.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8545",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 Assignee: mvngu
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8545
 archive/issue_comments_077262.json:
 ```json
 {
-    "body": "Attachment [trac_8545_opi.patch](tarball://root/attachments/some-uuid/ticket8545/trac_8545_opi.patch) by bump created at 2010-03-15 21:05:02",
+    "body": "Attachment [trac_8545_opi.patch](tarball://root/attachments/some-uuid/ticket8545/trac_8545_opi.patch) by @dwbump created at 2010-03-15 21:05:02",
     "created_at": "2010-03-15T21:05:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8545#issuecomment-77262",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_8545_opi.patch](tarball://root/attachments/some-uuid/ticket8545/trac_8545_opi.patch) by bump created at 2010-03-15 21:05:02
+Attachment [trac_8545_opi.patch](tarball://root/attachments/some-uuid/ticket8545/trac_8545_opi.patch) by @dwbump created at 2010-03-15 21:05:02
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_077263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8545#issuecomment-77263",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_077264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8545#issuecomment-77264",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_077265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8545",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8545#issuecomment-77265",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 

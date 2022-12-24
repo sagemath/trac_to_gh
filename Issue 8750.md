@@ -14,7 +14,7 @@ archive/issues_008750.json:
     "title": "numerical noise on solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8750",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: drkirkby
@@ -110,7 +110,7 @@ archive/issue_comments_080052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80052",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -128,7 +128,7 @@ archive/issue_comments_080053.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80053",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_080054.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80054",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_080055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80055",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_080058.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80058",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_080059.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8750",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80059",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

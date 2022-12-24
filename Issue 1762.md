@@ -3,7 +3,7 @@
 archive/issues_001762.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nGraphviz is licensed under the Common Public License Version 1.0, which is incompatible with the GPL. ([see wikipedia](http://en.wikipedia.org/wiki/Common_Public_License))  So, we can't distribute graphviz packaged with Sage, but we can distribute it separately.\n\nThe dependencies are rather numerous, but most are optional. Of note, GD and libpng are already included in Sage. [http://www.graphviz.org/doc/build.html](http://www.graphviz.org/doc/build.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1762\n\n",
+    "body": "Assignee: @rlmill\n\nGraphviz is licensed under the Common Public License Version 1.0, which is incompatible with the GPL. ([see wikipedia](http://en.wikipedia.org/wiki/Common_Public_License))  So, we can't distribute graphviz packaged with Sage, but we can distribute it separately.\n\nThe dependencies are rather numerous, but most are optional. Of note, GD and libpng are already included in Sage. [http://www.graphviz.org/doc/build.html](http://www.graphviz.org/doc/build.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1762\n\n",
     "created_at": "2008-01-12T04:42:08Z",
     "labels": [
         "graph theory",
@@ -17,7 +17,7 @@ archive/issues_001762.json:
     "user": "boothby"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Graphviz is licensed under the Common Public License Version 1.0, which is incompatible with the GPL. ([see wikipedia](http://en.wikipedia.org/wiki/Common_Public_License))  So, we can't distribute graphviz packaged with Sage, but we can distribute it separately.
 
@@ -39,7 +39,7 @@ archive/issue_comments_011122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11122",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_011124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11124",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_011125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11125",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_011126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1762",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1762#issuecomment-11126",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

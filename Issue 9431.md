@@ -3,7 +3,7 @@
 archive/issues_009431.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  wjp saliola\n\nWillem explained this one to me. Apparently opencdk is now linking libgcrypt from the wrong place, due to libtools, caused by the addition of `-lgcrypt` in #8658. The short term fix is to make sure that `$SAGE_LOCAL/lib` is included in `LDFLAGS` in the `spkg-install` script, but the longer term fix will be to figure out why libtools is linking against `/usr/lib` in the first place.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9431\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @wjp @saliola\n\nWillem explained this one to me. Apparently opencdk is now linking libgcrypt from the wrong place, due to libtools, caused by the addition of `-lgcrypt` in #8658. The short term fix is to make sure that `$SAGE_LOCAL/lib` is included in `LDFLAGS` in the `spkg-install` script, but the longer term fix will be to figure out why libtools is linking against `/usr/lib` in the first place.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9431\n\n",
     "created_at": "2010-07-05T19:40:53Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_009431.json:
     "title": "opencdk spkg should add $SAGE_LOCAL/lib to LDFLAGS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9431",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  wjp saliola
+CC:  @wjp @saliola
 
 Willem explained this one to me. Apparently opencdk is now linking libgcrypt from the wrong place, due to libtools, caused by the addition of `-lgcrypt` in #8658. The short term fix is to make sure that `$SAGE_LOCAL/lib` is included in `LDFLAGS` in the `spkg-install` script, but the longer term fix will be to figure out why libtools is linking against `/usr/lib` in the first place.
 
@@ -39,7 +39,7 @@ archive/issue_comments_090037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9431#issuecomment-90037",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_090038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9431#issuecomment-90038",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_090039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9431#issuecomment-90039",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_090040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9431#issuecomment-90040",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_090041.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9431#issuecomment-90041",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_090042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9431",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9431#issuecomment-90042",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

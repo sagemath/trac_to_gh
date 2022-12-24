@@ -3,7 +3,7 @@
 archive/issues_002024.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe attached patch implements GCDs for univariate polynomials over Z_N where N is composite by calling PARI.\n\n**EXAMPLE**\n\nA standard attack on textbook RSA due to Franklin and\nReiter: Consider that we are given two ciphertexts c<sub>1</sub>\nand c<sub>2</sub> and the knowledge that the matching plaintexts\nare related by m<sub>2</sub> = m<sub>1</sub> + 2<sup>10</sup>. We also know the public\nkey (N,e) and that e is rather small. Then we can\nrecover the plaintext using a GCD computation for two\nunivariate polynomials.\n\n```\nsage: N = 2157212598407\nsage: e = 3\nsage: c1 = 1429779991932\nsage: c2 =  655688908482\nsage: P.<x> = PolynomialRing(Zmod(N))\nsage: f1 = x^e - c1\nsage: f2 = (x+2^10)^e - c2\nsage: g = gcd(f1,f2); g\nx + 2155978030517\nsage: m = -g[0]; m\n1234567890\n            \nsage: m^e\n1429779991932\n```\n\n\nSurprisingly, MAGMA cannot perform this operation:\n\n\n```\nsage: f1._magma_().GCD(f2._magma_())\nException (click to the left for traceback):\n...\nRuntime error in 'GCD': Algorithm is not available for this kind of coefficient ring\n```\n\n\nThe example is from http://www.isg.rhul.ac.uk/~sdg/mt466/lecture12.pdf which also claims that Mathematica cannot perform this operation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2024\n\n",
+    "body": "Assignee: @williamstein\n\nThe attached patch implements GCDs for univariate polynomials over Z_N where N is composite by calling PARI.\n\n**EXAMPLE**\n\nA standard attack on textbook RSA due to Franklin and\nReiter: Consider that we are given two ciphertexts c<sub>1</sub>\nand c<sub>2</sub> and the knowledge that the matching plaintexts\nare related by m<sub>2</sub> = m<sub>1</sub> + 2<sup>10</sup>. We also know the public\nkey (N,e) and that e is rather small. Then we can\nrecover the plaintext using a GCD computation for two\nunivariate polynomials.\n\n```\nsage: N = 2157212598407\nsage: e = 3\nsage: c1 = 1429779991932\nsage: c2 =  655688908482\nsage: P.<x> = PolynomialRing(Zmod(N))\nsage: f1 = x^e - c1\nsage: f2 = (x+2^10)^e - c2\nsage: g = gcd(f1,f2); g\nx + 2155978030517\nsage: m = -g[0]; m\n1234567890\n            \nsage: m^e\n1429779991932\n```\n\n\nSurprisingly, MAGMA cannot perform this operation:\n\n\n```\nsage: f1._magma_().GCD(f2._magma_())\nException (click to the left for traceback):\n...\nRuntime error in 'GCD': Algorithm is not available for this kind of coefficient ring\n```\n\n\nThe example is from http://www.isg.rhul.ac.uk/~sdg/mt466/lecture12.pdf which also claims that Mathematica cannot perform this operation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2024\n\n",
     "created_at": "2008-02-01T11:51:40Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002024.json:
     "title": "[with patch, needs review] univariate gcd over Z_N (N composite)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2024",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The attached patch implements GCDs for univariate polynomials over Z_N where N is composite by calling PARI.
 
@@ -98,7 +98,7 @@ archive/issue_comments_013084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13084",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_013085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13085",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_013086.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13086",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -152,16 +152,16 @@ replacement patch gcd -> common_divisor
 archive/issue_comments_013087.json:
 ```json
 {
-    "body": "Attachment [trac_2024_gcd.2.patch](tarball://root/attachments/some-uuid/ticket2024/trac_2024_gcd.2.patch) by malb created at 2008-02-02 14:33:10\n\nThe attached patch renames `gcd` to `common_divisor` and adds some documentation. Also, some `_sig_on`/{{{_sig_off}}s were added to avoid zero divisions.",
+    "body": "Attachment [trac_2024_gcd.2.patch](tarball://root/attachments/some-uuid/ticket2024/trac_2024_gcd.2.patch) by @malb created at 2008-02-02 14:33:10\n\nThe attached patch renames `gcd` to `common_divisor` and adds some documentation. Also, some `_sig_on`/{{{_sig_off}}s were added to avoid zero divisions.",
     "created_at": "2008-02-02T14:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13087",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_2024_gcd.2.patch](tarball://root/attachments/some-uuid/ticket2024/trac_2024_gcd.2.patch) by malb created at 2008-02-02 14:33:10
+Attachment [trac_2024_gcd.2.patch](tarball://root/attachments/some-uuid/ticket2024/trac_2024_gcd.2.patch) by @malb created at 2008-02-02 14:33:10
 
 The attached patch renames `gcd` to `common_divisor` and adds some documentation. Also, some `_sig_on`/{{{_sig_off}}s were added to avoid zero divisions.
 
@@ -214,7 +214,7 @@ archive/issue_comments_013089.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13089",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_013090.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13090",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_013091.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13091",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_013092.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13092",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_013093.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13093",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_013094.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13094",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -328,7 +328,7 @@ archive/issue_comments_013095.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2024",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13095",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

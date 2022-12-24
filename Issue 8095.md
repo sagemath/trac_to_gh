@@ -3,7 +3,7 @@
 archive/issues_008095.json:
 ```json
 {
-    "body": "Assignee: slabbe\n\nCC:  abmasse\n\nLet us define the following morphism over 3 letters:\n\n```\nsage: substitution=WordMorphism('a->b,b->ac,c->a')\n```\n\nThen we get\n\n```\nsage: substitution.is_primitive()\nFalse\n```\n\nbut also\n\n```\nsage: (substitution^2).is_primitive()\nTrue\n```\n\n\n------\n\nexpected behaviour:\n\nSee the description of \".is_primitive()\":\nReturns True if self is primitive.\nA morphism \u03d5 is primitive if there exists an positive integer k such\nthat for all \u03b1\u2208\u03a3, \u03d5k(\u03b1) contains all the letters of \u03a3.\n\nSo, if a morphism is primitive, so are all its powers. And if there is\na power which is primitive, so is the morphism itself. In the example\nabove, both outputs should be \"True\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8095\n\n",
+    "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nLet us define the following morphism over 3 letters:\n\n```\nsage: substitution=WordMorphism('a->b,b->ac,c->a')\n```\n\nThen we get\n\n```\nsage: substitution.is_primitive()\nFalse\n```\n\nbut also\n\n```\nsage: (substitution^2).is_primitive()\nTrue\n```\n\n\n------\n\nexpected behaviour:\n\nSee the description of \".is_primitive()\":\nReturns True if self is primitive.\nA morphism \u03d5 is primitive if there exists an positive integer k such\nthat for all \u03b1\u2208\u03a3, \u03d5k(\u03b1) contains all the letters of \u03a3.\n\nSo, if a morphism is primitive, so are all its powers. And if there is\na power which is primitive, so is the morphism itself. In the example\nabove, both outputs should be \"True\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8095\n\n",
     "created_at": "2010-01-27T13:59:46Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_008095.json:
     "title": "is_primitive of WordMorphism is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8095",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
-Assignee: slabbe
+Assignee: @seblabbe
 
 CC:  abmasse
 
@@ -71,7 +71,7 @@ archive/issue_comments_070964.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8095#issuecomment-70964",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_070965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8095#issuecomment-70965",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_070966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8095#issuecomment-70966",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -133,16 +133,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_070967.json:
 ```json
 {
-    "body": "Attachment [trac_8095_wordmorph_is_primitive-sl.patch](tarball://root/attachments/some-uuid/ticket8095/trac_8095_wordmorph_is_primitive-sl.patch) by slabbe created at 2010-01-29 14:23:05\n\ntested on sage-4.3.1",
+    "body": "Attachment [trac_8095_wordmorph_is_primitive-sl.patch](tarball://root/attachments/some-uuid/ticket8095/trac_8095_wordmorph_is_primitive-sl.patch) by @seblabbe created at 2010-01-29 14:23:05\n\ntested on sage-4.3.1",
     "created_at": "2010-01-29T14:23:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8095#issuecomment-70967",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8095_wordmorph_is_primitive-sl.patch](tarball://root/attachments/some-uuid/ticket8095/trac_8095_wordmorph_is_primitive-sl.patch) by slabbe created at 2010-01-29 14:23:05
+Attachment [trac_8095_wordmorph_is_primitive-sl.patch](tarball://root/attachments/some-uuid/ticket8095/trac_8095_wordmorph_is_primitive-sl.patch) by @seblabbe created at 2010-01-29 14:23:05
 
 tested on sage-4.3.1
 
@@ -158,7 +158,7 @@ archive/issue_comments_070968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8095#issuecomment-70968",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_070969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8095",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8095#issuecomment-70969",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 

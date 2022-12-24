@@ -3,7 +3,7 @@
 archive/issues_009953.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  novoselt\n\nFor a polytope whose dimension is less than its ambient dimension, the f_vector outputs an extra top-dimensional cell. For example, a triangle in 3-space:\n\nINPUT\n\n```\nPolyhedron(vertices=[[0,0,0],[1,0,0],[0,1,0]]).f_vector()\n```\n\n\nOUTPUT\n\n```\n[1, 3, 3, 1, 1]\n```\n\n\nExpected Output\n\n```\n[1, 3, 3, 1]\n```\n\n\nNote, this was reported by the \"report a problem\" form.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9954\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @novoselt\n\nFor a polytope whose dimension is less than its ambient dimension, the f_vector outputs an extra top-dimensional cell. For example, a triangle in 3-space:\n\nINPUT\n\n```\nPolyhedron(vertices=[[0,0,0],[1,0,0],[0,1,0]]).f_vector()\n```\n\n\nOUTPUT\n\n```\n[1, 3, 3, 1, 1]\n```\n\n\nExpected Output\n\n```\n[1, 3, 3, 1]\n```\n\n\nNote, this was reported by the \"report a problem\" form.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9954\n\n",
     "created_at": "2010-09-20T18:17:56Z",
     "labels": [
         "geometry",
@@ -14,12 +14,12 @@ archive/issues_009953.json:
     "title": "f_vector outputs an extra top-dimensional cell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9953",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: mhampton
 
-CC:  novoselt
+CC:  @novoselt
 
 For a polytope whose dimension is less than its ambient dimension, the f_vector outputs an extra top-dimensional cell. For example, a triangle in 3-space:
 
@@ -62,7 +62,7 @@ archive/issue_comments_099278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99278",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_099279.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99279",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_099280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99280",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_099281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99281",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_099282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99282",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_099283.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99283",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_099284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99284",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_099285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99285",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_099286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99286",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_099287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99287",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_099288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99288",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_099289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99289",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -319,7 +319,7 @@ archive/issue_comments_099290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99290",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_099291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99291",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -363,7 +363,7 @@ archive/issue_comments_099292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99292",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -376,16 +376,16 @@ Updated patch
 archive/issue_comments_099293.json:
 ```json
 {
-    "body": "Attachment [trac_9954_fix_face_lattice.patch](tarball://root/attachments/some-uuid/ticket9954/trac_9954_fix_face_lattice.patch) by novoselt created at 2010-11-08 21:33:17\n\nGreat! Positive review!",
+    "body": "Attachment [trac_9954_fix_face_lattice.patch](tarball://root/attachments/some-uuid/ticket9954/trac_9954_fix_face_lattice.patch) by @novoselt created at 2010-11-08 21:33:17\n\nGreat! Positive review!",
     "created_at": "2010-11-08T21:33:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99293",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [trac_9954_fix_face_lattice.patch](tarball://root/attachments/some-uuid/ticket9954/trac_9954_fix_face_lattice.patch) by novoselt created at 2010-11-08 21:33:17
+Attachment [trac_9954_fix_face_lattice.patch](tarball://root/attachments/some-uuid/ticket9954/trac_9954_fix_face_lattice.patch) by @novoselt created at 2010-11-08 21:33:17
 
 Great! Positive review!
 
@@ -401,7 +401,7 @@ archive/issue_comments_099294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99294",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_099295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9953",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9953#issuecomment-99295",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

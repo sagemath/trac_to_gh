@@ -3,7 +3,7 @@
 archive/issues_005497.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mhansen\n\nCurrently the user can edit/start the same worksheet multiple times. This is bad.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5497\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\nCurrently the user can edit/start the same worksheet multiple times. This is bad.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5497\n\n",
     "created_at": "2009-03-12T04:18:37Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_005497.json:
 ```
 Assignee: boothby
 
-CC:  was mhansen
+CC:  @williamstein @mwhansen
 
 Currently the user can edit/start the same worksheet multiple times. This is bad.
 
@@ -43,7 +43,7 @@ archive/issue_comments_042702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5497#issuecomment-42702",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_042703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5497#issuecomment-42703",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_042704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5497",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5497#issuecomment-42704",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

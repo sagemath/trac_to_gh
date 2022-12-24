@@ -3,7 +3,7 @@
 archive/issues_006522.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  sage-combinat was mvngu alexghitza\n\nSee also #111, where this originates.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6522\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  sage-combinat @williamstein mvngu alexghitza\n\nSee also #111, where this originates.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6522\n\n",
     "created_at": "2009-07-13T10:22:27Z",
     "labels": [
         "user interface",
@@ -14,12 +14,12 @@ archive/issues_006522.json:
     "title": "replace .copy() with .__copy__() in graphs/graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6522",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  sage-combinat was mvngu alexghitza
+CC:  sage-combinat @williamstein mvngu alexghitza
 
 See also #111, where this originates.
 
@@ -40,7 +40,7 @@ archive/issue_comments_053179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53179",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_053180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53180",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_053181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53181",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_053182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53182",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_053183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53183",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_053184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53184",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -162,16 +162,16 @@ Based on 4.2.1
 archive/issue_comments_053185.json:
 ```json
 {
-    "body": "Attachment [trac_6522.patch](tarball://root/attachments/some-uuid/ticket6522/trac_6522.patch) by ncohen created at 2009-12-08 17:13:08\n\nHello !!! Could you use the new methods defined in #7515 for the functions you deprecate ? It would ease the work in #7559 :-)",
+    "body": "Attachment [trac_6522.patch](tarball://root/attachments/some-uuid/ticket6522/trac_6522.patch) by @nathanncohen created at 2009-12-08 17:13:08\n\nHello !!! Could you use the new methods defined in #7515 for the functions you deprecate ? It would ease the work in #7559 :-)",
     "created_at": "2009-12-08T17:13:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53185",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_6522.patch](tarball://root/attachments/some-uuid/ticket6522/trac_6522.patch) by ncohen created at 2009-12-08 17:13:08
+Attachment [trac_6522.patch](tarball://root/attachments/some-uuid/ticket6522/trac_6522.patch) by @nathanncohen created at 2009-12-08 17:13:08
 
 Hello !!! Could you use the new methods defined in #7515 for the functions you deprecate ? It would ease the work in #7559 :-)
 
@@ -187,7 +187,7 @@ archive/issue_comments_053186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53186",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_053187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53187",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -253,7 +253,7 @@ archive/issue_comments_053188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53188",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_053189.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53189",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_053190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53190",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -313,7 +313,7 @@ archive/issue_comments_053191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53191",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -331,7 +331,7 @@ archive/issue_comments_053192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53192",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -344,16 +344,16 @@ Based on 4.3.alpha1
 archive/issue_comments_053193.json:
 ```json
 {
-    "body": "Attachment [trac_6522-final.patch](tarball://root/attachments/some-uuid/ticket6522/trac_6522-final.patch) by kcrisman created at 2009-12-17 21:54:05\n\nOkay, here is how I dealt with these issues.\n\n1. We can't use the generic deprecation thing from #7515 here, because it would say to use copy instead of copy!  Unfortunately.  On the plus side, that's one less for #7559. \n\n2. I have not deprecated copy() from the generic graph class, only the yang-baxter one.  There is now a __copy__ for generic graphs.  In order to deal with a tricky thing on Dynkin diagrams, I had to define a __copy__ method for them, which however is EXACTLY the same as the generic Python copy from the copy module.\n\nI really, really worked hard to make sure I caught every possible place where this causes problems, and it passes all doctests, but please think hard where it would make a difference.  I also hope I won't have to rebase it again :)",
+    "body": "Attachment [trac_6522-final.patch](tarball://root/attachments/some-uuid/ticket6522/trac_6522-final.patch) by @kcrisman created at 2009-12-17 21:54:05\n\nOkay, here is how I dealt with these issues.\n\n1. We can't use the generic deprecation thing from #7515 here, because it would say to use copy instead of copy!  Unfortunately.  On the plus side, that's one less for #7559. \n\n2. I have not deprecated copy() from the generic graph class, only the yang-baxter one.  There is now a __copy__ for generic graphs.  In order to deal with a tricky thing on Dynkin diagrams, I had to define a __copy__ method for them, which however is EXACTLY the same as the generic Python copy from the copy module.\n\nI really, really worked hard to make sure I caught every possible place where this causes problems, and it passes all doctests, but please think hard where it would make a difference.  I also hope I won't have to rebase it again :)",
     "created_at": "2009-12-17T21:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53193",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6522-final.patch](tarball://root/attachments/some-uuid/ticket6522/trac_6522-final.patch) by kcrisman created at 2009-12-17 21:54:05
+Attachment [trac_6522-final.patch](tarball://root/attachments/some-uuid/ticket6522/trac_6522-final.patch) by @kcrisman created at 2009-12-17 21:54:05
 
 Okay, here is how I dealt with these issues.
 
@@ -375,7 +375,7 @@ archive/issue_comments_053194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53194",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -393,7 +393,7 @@ archive/issue_comments_053195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53195",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_053196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53196",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_053197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6522",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6522#issuecomment-53197",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

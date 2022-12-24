@@ -3,7 +3,7 @@
 archive/issues_002622.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  burcin\n\nThese patches depend on #2619 and basically add some babel to the top of `sage.rings.polynomial.pbori`\n\nIssue created by migration from https://trac.sagemath.org/ticket/2622\n\n",
+    "body": "Assignee: @malb\n\nCC:  @burcin\n\nThese patches depend on #2619 and basically add some babel to the top of `sage.rings.polynomial.pbori`\n\nIssue created by migration from https://trac.sagemath.org/ticket/2622\n\n",
     "created_at": "2008-03-20T23:57:57Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_002622.json:
     "title": "[with patches, need review] add PolyBoRi to reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2622",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  burcin
+CC:  @burcin
 
 These patches depend on #2619 and basically add some babel to the top of `sage.rings.polynomial.pbori`
 
@@ -97,7 +97,7 @@ archive/issue_comments_018004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2622#issuecomment-18004",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -139,16 +139,16 @@ Michael
 archive/issue_comments_018006.json:
 ```json
 {
-    "body": "Attachment [polybori-refman-sage.patch](tarball://root/attachments/some-uuid/ticket2622/polybori-refman-sage.patch) by malb created at 2008-03-21 01:36:03\n\nfixed typo",
+    "body": "Attachment [polybori-refman-sage.patch](tarball://root/attachments/some-uuid/ticket2622/polybori-refman-sage.patch) by @malb created at 2008-03-21 01:36:03\n\nfixed typo",
     "created_at": "2008-03-21T01:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2622#issuecomment-18006",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [polybori-refman-sage.patch](tarball://root/attachments/some-uuid/ticket2622/polybori-refman-sage.patch) by malb created at 2008-03-21 01:36:03
+Attachment [polybori-refman-sage.patch](tarball://root/attachments/some-uuid/ticket2622/polybori-refman-sage.patch) by @malb created at 2008-03-21 01:36:03
 
 fixed typo
 
@@ -159,16 +159,16 @@ fixed typo
 archive/issue_comments_018007.json:
 ```json
 {
-    "body": "Attachment [trac_2622_polybori-refman-doc.patch](tarball://root/attachments/some-uuid/ticket2622/trac_2622_polybori-refman-doc.patch) by malb created at 2008-03-21 02:16:13\n\ncleaned up version of the patch",
+    "body": "Attachment [trac_2622_polybori-refman-doc.patch](tarball://root/attachments/some-uuid/ticket2622/trac_2622_polybori-refman-doc.patch) by @malb created at 2008-03-21 02:16:13\n\ncleaned up version of the patch",
     "created_at": "2008-03-21T02:16:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2622",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2622#issuecomment-18007",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_2622_polybori-refman-doc.patch](tarball://root/attachments/some-uuid/ticket2622/trac_2622_polybori-refman-doc.patch) by malb created at 2008-03-21 02:16:13
+Attachment [trac_2622_polybori-refman-doc.patch](tarball://root/attachments/some-uuid/ticket2622/trac_2622_polybori-refman-doc.patch) by @malb created at 2008-03-21 02:16:13
 
 cleaned up version of the patch
 

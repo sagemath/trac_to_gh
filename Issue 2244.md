@@ -3,7 +3,7 @@
 archive/issues_002244.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2244\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2244\n\n",
     "created_at": "2008-02-21T06:41:53Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_002244.json:
     "title": "[with patch; needs review] add a randomize=False option to the plot command, to avoid \"wiggle\" in animations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2244",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_014869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2244#issuecomment-14869",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_014870.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2244#issuecomment-14870",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -71,16 +71,16 @@ Ignore the comment above about also fixing endpoints -- #2236 also did so.
 archive/issue_comments_014871.json:
 ```json
 {
-    "body": "Attachment [wiggle-interior.patch](tarball://root/attachments/some-uuid/ticket2244/wiggle-interior.patch) by jason created at 2008-02-21 21:20:51\n\napply after William's patch",
+    "body": "Attachment [wiggle-interior.patch](tarball://root/attachments/some-uuid/ticket2244/wiggle-interior.patch) by @jasongrout created at 2008-02-21 21:20:51\n\napply after William's patch",
     "created_at": "2008-02-21T21:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2244#issuecomment-14871",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [wiggle-interior.patch](tarball://root/attachments/some-uuid/ticket2244/wiggle-interior.patch) by jason created at 2008-02-21 21:20:51
+Attachment [wiggle-interior.patch](tarball://root/attachments/some-uuid/ticket2244/wiggle-interior.patch) by @jasongrout created at 2008-02-21 21:20:51
 
 apply after William's patch
 
@@ -96,7 +96,7 @@ archive/issue_comments_014872.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2244#issuecomment-14872",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_014874.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2244#issuecomment-14874",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -151,16 +151,16 @@ this should apply cleanly (it replaces the patch that was here before)
 archive/issue_comments_014875.json:
 ```json
 {
-    "body": "Attachment [sage-2244-nowiggle.patch](tarball://root/attachments/some-uuid/ticket2244/sage-2244-nowiggle.patch) by was created at 2008-02-24 04:58:06\n\nApply sage-2244-nowiggle.patch (which has now been rebased) followed by wiggle-interior.patch which will apply correctly with some \"fuzz\". \n\n -- William",
+    "body": "Attachment [sage-2244-nowiggle.patch](tarball://root/attachments/some-uuid/ticket2244/sage-2244-nowiggle.patch) by @williamstein created at 2008-02-24 04:58:06\n\nApply sage-2244-nowiggle.patch (which has now been rebased) followed by wiggle-interior.patch which will apply correctly with some \"fuzz\". \n\n -- William",
     "created_at": "2008-02-24T04:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2244#issuecomment-14875",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2244-nowiggle.patch](tarball://root/attachments/some-uuid/ticket2244/sage-2244-nowiggle.patch) by was created at 2008-02-24 04:58:06
+Attachment [sage-2244-nowiggle.patch](tarball://root/attachments/some-uuid/ticket2244/sage-2244-nowiggle.patch) by @williamstein created at 2008-02-24 04:58:06
 
 Apply sage-2244-nowiggle.patch (which has now been rebased) followed by wiggle-interior.patch which will apply correctly with some "fuzz". 
 
@@ -216,7 +216,7 @@ archive/issue_comments_014877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2244#issuecomment-14877",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -271,16 +271,16 @@ and the corresponding bit in plot.py in 2.10.3.rc1 is
 archive/issue_comments_014878.json:
 ```json
 {
-    "body": "Attachment [2244_nowiggle_new.patch](tarball://root/attachments/some-uuid/ticket2244/2244_nowiggle_new.patch) by AlexGhitza created at 2008-03-15 18:11:16\n\napply instead of the two above",
+    "body": "Attachment [2244_nowiggle_new.patch](tarball://root/attachments/some-uuid/ticket2244/2244_nowiggle_new.patch) by @aghitza created at 2008-03-15 18:11:16\n\napply instead of the two above",
     "created_at": "2008-03-15T18:11:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2244#issuecomment-14878",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [2244_nowiggle_new.patch](tarball://root/attachments/some-uuid/ticket2244/2244_nowiggle_new.patch) by AlexGhitza created at 2008-03-15 18:11:16
+Attachment [2244_nowiggle_new.patch](tarball://root/attachments/some-uuid/ticket2244/2244_nowiggle_new.patch) by @aghitza created at 2008-03-15 18:11:16
 
 apply instead of the two above
 
@@ -296,7 +296,7 @@ archive/issue_comments_014879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2244",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2244#issuecomment-14879",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

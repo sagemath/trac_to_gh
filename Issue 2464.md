@@ -14,7 +14,7 @@ archive/issues_002464.json:
     "title": "slight change to coverage script to avoid functions named \"_\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2464",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2464
 archive/issue_comments_016703.json:
 ```json
 {
-    "body": "Attachment [scripts-2464.patch](tarball://root/attachments/some-uuid/ticket2464/scripts-2464.patch) by was created at 2008-03-11 01:26:08",
+    "body": "Attachment [scripts-2464.patch](tarball://root/attachments/some-uuid/ticket2464/scripts-2464.patch) by @williamstein created at 2008-03-11 01:26:08",
     "created_at": "2008-03-11T01:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2464#issuecomment-16703",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [scripts-2464.patch](tarball://root/attachments/some-uuid/ticket2464/scripts-2464.patch) by was created at 2008-03-11 01:26:08
+Attachment [scripts-2464.patch](tarball://root/attachments/some-uuid/ticket2464/scripts-2464.patch) by @williamstein created at 2008-03-11 01:26:08
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_016704.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2464",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2464#issuecomment-16704",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

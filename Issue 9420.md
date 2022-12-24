@@ -3,7 +3,7 @@
 archive/issues_009420.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  rlm\n\nHello !!\n\nThis patch implements the class SubgraphSearch, which enables one to look for copies of a small graph in a larger one, which is exactly what the method subgraph_search previously did (#8922).\n\nThe code is simply inserted inside a new class, with a few other methods to iterate over the occurences, or to count them !\n\nThis could have been done with a simple \"yield\" in Cython, though we may not want to wait until they are implemented ;-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9420\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill\n\nHello !!\n\nThis patch implements the class SubgraphSearch, which enables one to look for copies of a small graph in a larger one, which is exactly what the method subgraph_search previously did (#8922).\n\nThe code is simply inserted inside a new class, with a few other methods to iterate over the occurences, or to count them !\n\nThis could have been done with a simple \"yield\" in Cython, though we may not want to wait until they are implemented ;-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9420\n\n",
     "created_at": "2010-07-03T11:52:09Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_009420.json:
     "title": "SubgraphSearch class instead of a method, digraphs fixed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9420",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  rlm
+CC:  @rlmill
 
 Hello !!
 
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9420
 archive/issue_comments_089848.json:
 ```json
 {
-    "body": "Attachment [trac_9420.patch](tarball://root/attachments/some-uuid/ticket9420/trac_9420.patch) by ncohen created at 2010-07-03 11:53:09",
+    "body": "Attachment [trac_9420.patch](tarball://root/attachments/some-uuid/ticket9420/trac_9420.patch) by @nathanncohen created at 2010-07-03 11:53:09",
     "created_at": "2010-07-03T11:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9420#issuecomment-89848",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9420.patch](tarball://root/attachments/some-uuid/ticket9420/trac_9420.patch) by ncohen created at 2010-07-03 11:53:09
+Attachment [trac_9420.patch](tarball://root/attachments/some-uuid/ticket9420/trac_9420.patch) by @nathanncohen created at 2010-07-03 11:53:09
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_089849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9420#issuecomment-89849",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_089850.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9420#issuecomment-89850",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_089851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9420#issuecomment-89851",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_089852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9420#issuecomment-89852",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_089853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9420",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9420#issuecomment-89853",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

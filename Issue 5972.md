@@ -3,7 +3,7 @@
 archive/issues_005972.json:
 ```json
 {
-    "body": "Assignee: was\n\nOUCH:\n\n\n```\nwstein@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nmatrix(QQ,2,0)sage: matrix(QQ,2,0)*matrix(QQ,0,2)\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5972\n\n",
+    "body": "Assignee: @williamstein\n\nOUCH:\n\n\n```\nwstein@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nmatrix(QQ,2,0)sage: matrix(QQ,2,0)*matrix(QQ,0,2)\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5972\n\n",
     "created_at": "2009-05-04T03:45:14Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005972.json:
     "title": "[with patch; needs review] segfault in degenerate matrix multiply",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5972",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 OUCH:
 
@@ -140,7 +140,7 @@ archive/issue_comments_047368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5972#issuecomment-47368",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

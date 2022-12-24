@@ -52,7 +52,7 @@ archive/issue_comments_025069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25069",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -70,7 +70,7 @@ archive/issue_comments_025070.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25070",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -125,7 +125,7 @@ archive/issue_comments_025072.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25072",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_025073.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25073",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_025074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25074",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -193,16 +193,16 @@ Anyway, I've attached a patch that fixes the bug, and makes is_transitive() retu
 archive/issue_comments_025075.json:
 ```json
 {
-    "body": "Attachment [trac_3544.patch](tarball://root/attachments/some-uuid/ticket3544/trac_3544.patch) by was created at 2009-01-22 12:52:36",
+    "body": "Attachment [trac_3544.patch](tarball://root/attachments/some-uuid/ticket3544/trac_3544.patch) by @williamstein created at 2009-01-22 12:52:36",
     "created_at": "2009-01-22T12:52:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25075",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_3544.patch](tarball://root/attachments/some-uuid/ticket3544/trac_3544.patch) by was created at 2009-01-22 12:52:36
+Attachment [trac_3544.patch](tarball://root/attachments/some-uuid/ticket3544/trac_3544.patch) by @williamstein created at 2009-01-22 12:52:36
 
 
 
@@ -216,7 +216,7 @@ archive/issue_comments_025076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3544",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25076",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

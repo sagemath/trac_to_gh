@@ -3,7 +3,7 @@
 archive/issues_000746.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: graphs\n\nSince networkX uses the empty string for an unset name, while the current SAGE code uses None for an unset name, calling _nxg.clear() in the clear() function will not reset the name to None, but to ''.\n\nThere are also other problems with having an unset name represented by None (mostly because networkX assumes that '' is an unset name).\n\nIssue created by migration from https://trac.sagemath.org/ticket/746\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nSince networkX uses the empty string for an unset name, while the current SAGE code uses None for an unset name, calling _nxg.clear() in the clear() function will not reset the name to None, but to ''.\n\nThere are also other problems with having an unset name represented by None (mostly because networkX assumes that '' is an unset name).\n\nIssue created by migration from https://trac.sagemath.org/ticket/746\n\n",
     "created_at": "2007-09-24T20:54:44Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000746.json:
     "title": "graphs: graph name is not reset using clear()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/746",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: graphs
 
@@ -41,7 +41,7 @@ archive/issue_comments_004370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/746#issuecomment-4370",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_004371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/746#issuecomment-4371",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_004372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/746#issuecomment-4372",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008624.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  kcrisman\n\nThe integral of abs(cos(x))*sin(x) returns the result as if abs() is ignored:\n\n```\nsage: integral(abs(cos(x))*sin(x),(x,pi/2,pi))\n-1/2\n```\n\nwhile\n\n```\nsage: numerical_integral(abs(cos(x))*sin(x),pi/2,pi)\n(0.49999999999999994, 5.5511151231257819e-15)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8624\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @kcrisman\n\nThe integral of abs(cos(x))*sin(x) returns the result as if abs() is ignored:\n\n```\nsage: integral(abs(cos(x))*sin(x),(x,pi/2,pi))\n-1/2\n```\n\nwhile\n\n```\nsage: numerical_integral(abs(cos(x))*sin(x),pi/2,pi)\n(0.49999999999999994, 5.5511151231257819e-15)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8624\n\n",
     "created_at": "2010-03-29T16:04:59Z",
     "labels": [
         "algebra",
@@ -17,9 +17,9 @@ archive/issues_008624.json:
     "user": "jeroen"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  kcrisman
+CC:  @kcrisman
 
 The integral of abs(cos(x))*sin(x) returns the result as if abs() is ignored:
 
@@ -53,7 +53,7 @@ archive/issue_comments_078172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78172",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_078173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78173",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -91,16 +91,16 @@ archive/issue_comments_078173.json:
 archive/issue_comments_078174.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to burcin.",
+    "body": "Changing assignee from @aghitza to @burcin.",
     "created_at": "2010-04-20T16:54:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78174",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from AlexGhitza to burcin.
+Changing assignee from @aghitza to @burcin.
 
 
 
@@ -114,7 +114,7 @@ archive/issue_comments_078175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78175",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_078176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78176",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_078177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78177",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_078178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78178",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_078179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78179",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -203,16 +203,16 @@ Sure, but it was *wrong* before, and correctness trumps maxima startup time.  Un
 archive/issue_comments_078180.json:
 ```json
 {
-    "body": "Attachment [trac-8624-abs-integration.patch](tarball://root/attachments/some-uuid/ticket8624/trac-8624-abs-integration.patch) by jason created at 2010-05-13 06:48:51",
+    "body": "Attachment [trac-8624-abs-integration.patch](tarball://root/attachments/some-uuid/ticket8624/trac-8624-abs-integration.patch) by @jasongrout created at 2010-05-13 06:48:51",
     "created_at": "2010-05-13T06:48:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78180",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8624-abs-integration.patch](tarball://root/attachments/some-uuid/ticket8624/trac-8624-abs-integration.patch) by jason created at 2010-05-13 06:48:51
+Attachment [trac-8624-abs-integration.patch](tarball://root/attachments/some-uuid/ticket8624/trac-8624-abs-integration.patch) by @jasongrout created at 2010-05-13 06:48:51
 
 
 
@@ -226,7 +226,7 @@ archive/issue_comments_078181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78181",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -244,7 +244,7 @@ archive/issue_comments_078182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78182",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_078183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78183",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_078184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78184",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_078185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78185",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_078186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78186",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -490,7 +490,7 @@ archive/issue_comments_078187.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78187",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_078188.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78188",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_078191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78191",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_078192.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78192",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -690,7 +690,7 @@ archive/issue_comments_078194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78194",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -708,7 +708,7 @@ archive/issue_comments_078195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8624",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8624#issuecomment-78195",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

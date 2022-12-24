@@ -3,7 +3,7 @@
 archive/issues_008483.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThis is odd:\n\n\n```python\nsage: R=GF(2^283,'a')\nsage: x=R.random_element()\nsage: y=R.random_element()\n```\n\n\nFirst, note that squaring is slower than multiplication:\n\n\n```python\nsage: %timeit z=x^2\n625 loops, best of 3: 3.79 \u00b5s per loop\n```\n\n\n\n```python\nsage: %timeit z=x*y\n625 loops, best of 3: 3.17 \u00b5s per loop\n```\n\n\nNow observe that squaring done differently is indeed faster:\n\n\n```python\nsage: %timeit z=x*x\n625 loops, best of 3: 1.91 \u00b5s per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8483\n\n",
+    "body": "Assignee: @aghitza\n\nThis is odd:\n\n\n```python\nsage: R=GF(2^283,'a')\nsage: x=R.random_element()\nsage: y=R.random_element()\n```\n\n\nFirst, note that squaring is slower than multiplication:\n\n\n```python\nsage: %timeit z=x^2\n625 loops, best of 3: 3.79 \u00b5s per loop\n```\n\n\n\n```python\nsage: %timeit z=x*y\n625 loops, best of 3: 3.17 \u00b5s per loop\n```\n\n\nNow observe that squaring done differently is indeed faster:\n\n\n```python\nsage: %timeit z=x*x\n625 loops, best of 3: 1.91 \u00b5s per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8483\n\n",
     "created_at": "2010-03-09T15:37:58Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_008483.json:
     "title": "Multiplication faster than squaring?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8483",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 This is odd:
 
@@ -70,7 +70,7 @@ archive/issue_comments_076454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8483#issuecomment-76454",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_076455.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8483#issuecomment-76455",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_076456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8483#issuecomment-76456",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_076457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8483#issuecomment-76457",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

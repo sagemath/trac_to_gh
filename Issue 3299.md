@@ -3,7 +3,7 @@
 archive/issues_003299.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  burcin polybori\n\nKeywords: polybori, memleak\n\n\n```\n==2143== 80 bytes in 2 blocks are still reachable in loss record 481 of 2,900\n==2143==    at 0x4C1FFAB: malloc (vg_replace_malloc.c:207)\n==2143==    by 0x2158F146: MMalloc (safe_mem.c:62)\n==2143==    by 0x215C47AB: cuddInitTable (cuddTable.c:402)\n==2143==    by 0x215C4252: Cudd_Init (cuddInit.c:141)\n==2143==    by 0x2154B875: polybori::CDDManager<polybori::CCuddInterface>::CDDManager(unsigned) (CCuddCore.h:121)\n==2143==    by 0x2154907D: polybori::BoolePolyRing::BoolePolyRing(unsigned, int,bool) (BooleRing.h:80)\n==2143==    by 0x215081B8: __pyx_pf_4sage_5rings_10polynomial_5pbori_21BooleanPolynomialRing___init__(_object*, _object*, _object*) (ccobject.h:50)\n...\n==2143== 160 bytes in 2 blocks are still reachable in loss record 534 of 2,900\n==2143==    at 0x4C1FFAB: malloc (vg_replace_malloc.c:207)\n==2143==    by 0x2158F146: MMalloc (safe_mem.c:62)\n==2143==    by 0x215C43A3: Cudd_Init (cuddInit.c:183)\n==2143==    by 0x2154B875: polybori::CDDManager<polybori::CCuddInterface>::CDDManager(unsigned) (CCuddCore.h:121)\n==2143==    by 0x2154907D: polybori::BoolePolyRing::BoolePolyRing(unsigned, int,bool) (BooleRing.h:80)\n==2143==    by 0x215081B8: __pyx_pf_4sage_5rings_10polynomial_5pbori_21BooleanPolynomialRing___init\n__(_object*, _object*, _object*) (ccobject.h:50)\n```\n\n\nSo it seems we are allocating a buffer for Cudd each time we create a ring but this buffer keeps increasing and is never free'd?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3299\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @burcin polybori\n\nKeywords: polybori, memleak\n\n\n```\n==2143== 80 bytes in 2 blocks are still reachable in loss record 481 of 2,900\n==2143==    at 0x4C1FFAB: malloc (vg_replace_malloc.c:207)\n==2143==    by 0x2158F146: MMalloc (safe_mem.c:62)\n==2143==    by 0x215C47AB: cuddInitTable (cuddTable.c:402)\n==2143==    by 0x215C4252: Cudd_Init (cuddInit.c:141)\n==2143==    by 0x2154B875: polybori::CDDManager<polybori::CCuddInterface>::CDDManager(unsigned) (CCuddCore.h:121)\n==2143==    by 0x2154907D: polybori::BoolePolyRing::BoolePolyRing(unsigned, int,bool) (BooleRing.h:80)\n==2143==    by 0x215081B8: __pyx_pf_4sage_5rings_10polynomial_5pbori_21BooleanPolynomialRing___init__(_object*, _object*, _object*) (ccobject.h:50)\n...\n==2143== 160 bytes in 2 blocks are still reachable in loss record 534 of 2,900\n==2143==    at 0x4C1FFAB: malloc (vg_replace_malloc.c:207)\n==2143==    by 0x2158F146: MMalloc (safe_mem.c:62)\n==2143==    by 0x215C43A3: Cudd_Init (cuddInit.c:183)\n==2143==    by 0x2154B875: polybori::CDDManager<polybori::CCuddInterface>::CDDManager(unsigned) (CCuddCore.h:121)\n==2143==    by 0x2154907D: polybori::BoolePolyRing::BoolePolyRing(unsigned, int,bool) (BooleRing.h:80)\n==2143==    by 0x215081B8: __pyx_pf_4sage_5rings_10polynomial_5pbori_21BooleanPolynomialRing___init\n__(_object*, _object*, _object*) (ccobject.h:50)\n```\n\n\nSo it seems we are allocating a buffer for Cudd each time we create a ring but this buffer keeps increasing and is never free'd?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3299\n\n",
     "created_at": "2008-05-25T17:14:26Z",
     "labels": [
         "memleak",
@@ -14,12 +14,12 @@ archive/issues_003299.json:
     "title": "memleak in PolyBoRi interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3299",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: mabshoff
 
-CC:  burcin polybori
+CC:  @burcin polybori
 
 Keywords: polybori, memleak
 
@@ -85,7 +85,7 @@ archive/issue_comments_022831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3299#issuecomment-22831",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

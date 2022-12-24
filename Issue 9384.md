@@ -3,7 +3,7 @@
 archive/issues_009384.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  adeines cremona jeremywest\n\nKeywords: descend, subfield, isomorphic, elliptic curve\n\nGiven a subfield K and an elliptic curve E defined over a field L, this function determines whether there exists an elliptic curve over K which is isomorphic over L to E. If one exists, it finds it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9384\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  adeines @JohnCremona jeremywest\n\nKeywords: descend, subfield, isomorphic, elliptic curve\n\nGiven a subfield K and an elliptic curve E defined over a field L, this function determines whether there exists an elliptic curve over K which is isomorphic over L to E. If one exists, it finds it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9384\n\n",
     "created_at": "2010-06-29T22:24:01Z",
     "labels": [
         "elliptic curves",
@@ -17,9 +17,9 @@ archive/issues_009384.json:
     "user": "ebeyerstedt"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  adeines cremona jeremywest
+CC:  adeines @JohnCremona jeremywest
 
 Keywords: descend, subfield, isomorphic, elliptic curve
 
@@ -131,7 +131,7 @@ archive/issue_comments_089230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9384#issuecomment-89230",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_089231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9384#issuecomment-89231",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_089232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9384#issuecomment-89232",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -260,7 +260,7 @@ archive/issue_comments_089236.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9384#issuecomment-89236",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_089237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9384#issuecomment-89237",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_089238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9384#issuecomment-89238",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_089239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9384",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9384#issuecomment-89239",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

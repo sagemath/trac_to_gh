@@ -207,7 +207,7 @@ archive/issue_comments_044797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5732#issuecomment-44797",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_044798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5732",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5732#issuecomment-44798",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

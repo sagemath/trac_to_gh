@@ -14,7 +14,7 @@ archive/issues_008996.json:
     "title": "@ character is usernames is problematic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8996",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: jason, was
@@ -39,7 +39,7 @@ archive/issue_comments_083182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8996#issuecomment-83182",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_083183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8996#issuecomment-83183",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_083184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8996",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8996#issuecomment-83184",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

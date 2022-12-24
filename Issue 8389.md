@@ -3,7 +3,7 @@
 archive/issues_008389.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mjo nthiery\n\nThis makes Sage eat all available memory until it gets interrupted:\n\n\n```\n$ ./sage     \n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: MatrixSpace(QQ, 2)['x']\n^C---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)  \n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/co/sage-4.3.3/<ipython console> in <module>()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getitem__ (sage/structure/parent.c:7653)()                  \n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent._list_from_iterator_cached (sage/structure/parent.c:7061)()   \n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __iter__(self)                                                                         \n    792             while True:                                                          \n    793                 for iv in sage.combinat.integer_vector.IntegerVectors(weight, number_of_entries):                                                                         \n--> 794                     yield self(entries=[base_elements[i] for i in iv], rows=True)                                                                                         \n    795\n    796                 weight += 1\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __call__(self, entries, coerce, copy, rows)\n    393             return self(entries.matrix(), copy=False)\n    394\n--> 395         return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)\n    396\n    397     def change_ring(self, R):\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in matrix(self, x, coerce, copy, rows)\n   1068             if isinstance(x[0], list):\n   1069                 x = sum(x,[])\n-> 1070             elif hasattr(x[0], \"is_vector\"): # TODO: is this the best way to test that?\n   1071                 e = []\n   1072                 for v in x:\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2726)()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Field.category (sage/rings/ring.c:8675)()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/misc/classcall_metaclass.pyc in __call__(cls, *args, **options)\n    114             return cls\n    115\n--> 116     def __call__(cls, *args, **options):\n    117         \"\"\"\n    118         This method implements ``cls(<some arguments>)``.\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/interfaces/get_sigs.pyc in my_sigint(x, n)\n      7\n      8 def my_sigint(x, n):\n----> 9     raise KeyboardInterrupt\n     10\n     11 def my_sigfpe(x, n):\n```\n\n\nNote that `MatrixSpace(QQ, 2)['x']` is not supposed to *work*, since\n\n\n```\nDefinition:     PolynomialRing [...]\nDocstring:\n       [...]\n       INPUT:\n\n       * ``base_ring`` -- a commutative ring\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8389\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @orlitzky @nthiery\n\nThis makes Sage eat all available memory until it gets interrupted:\n\n\n```\n$ ./sage     \n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: MatrixSpace(QQ, 2)['x']\n^C---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)  \n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/co/sage-4.3.3/<ipython console> in <module>()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getitem__ (sage/structure/parent.c:7653)()                  \n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent._list_from_iterator_cached (sage/structure/parent.c:7061)()   \n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __iter__(self)                                                                         \n    792             while True:                                                          \n    793                 for iv in sage.combinat.integer_vector.IntegerVectors(weight, number_of_entries):                                                                         \n--> 794                     yield self(entries=[base_elements[i] for i in iv], rows=True)                                                                                         \n    795\n    796                 weight += 1\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __call__(self, entries, coerce, copy, rows)\n    393             return self(entries.matrix(), copy=False)\n    394\n--> 395         return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)\n    396\n    397     def change_ring(self, R):\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in matrix(self, x, coerce, copy, rows)\n   1068             if isinstance(x[0], list):\n   1069                 x = sum(x,[])\n-> 1070             elif hasattr(x[0], \"is_vector\"): # TODO: is this the best way to test that?\n   1071                 e = []\n   1072                 for v in x:\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2726)()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Field.category (sage/rings/ring.c:8675)()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/misc/classcall_metaclass.pyc in __call__(cls, *args, **options)\n    114             return cls\n    115\n--> 116     def __call__(cls, *args, **options):\n    117         \"\"\"\n    118         This method implements ``cls(<some arguments>)``.\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/interfaces/get_sigs.pyc in my_sigint(x, n)\n      7\n      8 def my_sigint(x, n):\n----> 9     raise KeyboardInterrupt\n     10\n     11 def my_sigfpe(x, n):\n```\n\n\nNote that `MatrixSpace(QQ, 2)['x']` is not supposed to *work*, since\n\n\n```\nDefinition:     PolynomialRing [...]\nDocstring:\n       [...]\n       INPUT:\n\n       * ``base_ring`` -- a commutative ring\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8389\n\n",
     "created_at": "2010-02-27T17:22:15Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008389.json:
     "title": "Sage eats all memory trying to evaluate MatrixSpace(QQ, 2)['x']",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8389",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mjo nthiery
+CC:  @orlitzky @nthiery
 
 This makes Sage eat all available memory until it gets interrupted:
 
@@ -109,7 +109,7 @@ archive/issue_comments_075105.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75105",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_075106.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75106",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_075107.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75107",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -180,16 +180,16 @@ This is fixed, probably by #10470. I've added a doctest in the parent list() met
 archive/issue_comments_075108.json:
 ```json
 {
-    "body": "Attachment [sage-trac_8389.patch](tarball://root/attachments/some-uuid/ticket8389/sage-trac_8389.patch) by mjo created at 2012-01-16 02:49:16\n\nAdd a doctest to the parent list() method.",
+    "body": "Attachment [sage-trac_8389.patch](tarball://root/attachments/some-uuid/ticket8389/sage-trac_8389.patch) by @orlitzky created at 2012-01-16 02:49:16\n\nAdd a doctest to the parent list() method.",
     "created_at": "2012-01-16T02:49:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75108",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
-Attachment [sage-trac_8389.patch](tarball://root/attachments/some-uuid/ticket8389/sage-trac_8389.patch) by mjo created at 2012-01-16 02:49:16
+Attachment [sage-trac_8389.patch](tarball://root/attachments/some-uuid/ticket8389/sage-trac_8389.patch) by @orlitzky created at 2012-01-16 02:49:16
 
 Add a doctest to the parent list() method.
 
@@ -205,7 +205,7 @@ archive/issue_comments_075109.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75109",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_075110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75110",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_075111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75111",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_075112.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75112",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_075113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75113",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_075114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75114",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_075115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75115",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_075116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75116",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_075117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75117",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -387,7 +387,7 @@ archive/issue_comments_075118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75118",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -423,7 +423,7 @@ archive/issue_comments_075119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75119",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_075122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75122",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -555,7 +555,7 @@ archive/issue_comments_075123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75123",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -586,7 +586,7 @@ archive/issue_comments_075124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75124",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -615,7 +615,7 @@ archive/issue_comments_075125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75125",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_075126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75126",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_075127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75127",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -669,7 +669,7 @@ archive/issue_comments_075128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8389",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75128",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001117.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nFixes a typo in 1088.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1117\n\n",
+    "body": "Assignee: @rlmill\n\nFixes a typo in 1088.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1117\n\n",
     "created_at": "2007-11-06T22:26:28Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_001117.json:
     "title": "fix #1088",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1117",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Fixes a typo in 1088.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1117
 archive/issue_comments_006754.json:
 ```json
 {
-    "body": "Attachment [doc_1088_fix.patch](tarball://root/attachments/some-uuid/ticket1117/doc_1088_fix.patch) by rlm created at 2007-11-06 22:26:45",
+    "body": "Attachment [doc_1088_fix.patch](tarball://root/attachments/some-uuid/ticket1117/doc_1088_fix.patch) by @rlmill created at 2007-11-06 22:26:45",
     "created_at": "2007-11-06T22:26:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1117#issuecomment-6754",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [doc_1088_fix.patch](tarball://root/attachments/some-uuid/ticket1117/doc_1088_fix.patch) by rlm created at 2007-11-06 22:26:45
+Attachment [doc_1088_fix.patch](tarball://root/attachments/some-uuid/ticket1117/doc_1088_fix.patch) by @rlmill created at 2007-11-06 22:26:45
 
 
 

@@ -14,7 +14,7 @@ archive/issues_000446.json:
     "title": "in latest version of the notebook interactive documenation doesn't \"interact\" at all.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/446",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -33,7 +33,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/446
 archive/issue_comments_002231.json:
 ```json
 {
-    "body": "Changing assignee from boothby to was.",
+    "body": "Changing assignee from boothby to @williamstein.",
     "created_at": "2007-08-20T23:20:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/446",
     "type": "issue_comment",
@@ -42,7 +42,7 @@ archive/issue_comments_002231.json:
 }
 ```
 
-Changing assignee from boothby to was.
+Changing assignee from boothby to @williamstein.
 
 
 

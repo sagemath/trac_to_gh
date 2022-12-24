@@ -57,7 +57,7 @@ archive/issue_comments_059694.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59694",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_059695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59695",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_059696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59696",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_059700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59700",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_059702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59702",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_059703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59703",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_059707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59707",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -452,7 +452,7 @@ archive/issue_comments_059708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59708",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -506,7 +506,7 @@ archive/issue_comments_059711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59711",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -563,16 +563,16 @@ Attachment [trac_7197_part9.patch](tarball://root/attachments/some-uuid/ticket71
 archive/issue_comments_059714.json:
 ```json
 {
-    "body": "Attachment [trac_7197_part10.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part10.patch) by was created at 2009-11-24 01:04:03",
+    "body": "Attachment [trac_7197_part10.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part10.patch) by @williamstein created at 2009-11-24 01:04:03",
     "created_at": "2009-11-24T01:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59714",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7197_part10.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part10.patch) by was created at 2009-11-24 01:04:03
+Attachment [trac_7197_part10.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197_part10.patch) by @williamstein created at 2009-11-24 01:04:03
 
 
 
@@ -586,7 +586,7 @@ archive/issue_comments_059715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59715",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -604,7 +604,7 @@ archive/issue_comments_059716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59716",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -617,16 +617,16 @@ All of the above patches folded together.  Apply only this patch.
 archive/issue_comments_059717.json:
 ```json
 {
-    "body": "Attachment [trac_7197.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197.patch) by mhansen created at 2009-11-29 05:07:20",
+    "body": "Attachment [trac_7197.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197.patch) by @mwhansen created at 2009-11-29 05:07:20",
     "created_at": "2009-11-29T05:07:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59717",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7197.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197.patch) by mhansen created at 2009-11-29 05:07:20
+Attachment [trac_7197.patch](tarball://root/attachments/some-uuid/ticket7197/trac_7197.patch) by @mwhansen created at 2009-11-29 05:07:20
 
 
 
@@ -640,7 +640,7 @@ archive/issue_comments_059718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7197",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59718",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

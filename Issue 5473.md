@@ -3,7 +3,7 @@
 archive/issues_005473.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  mkoeppe\n\nWhen we currently update the pickle jar we do not keep pickles for older versions around. Due to this we could break unconverted pickles without knowing it. \n\nIn that context it might also be nice to check that format conversion works.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5473\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @mkoeppe\n\nWhen we currently update the pickle jar we do not keep pickles for older versions around. Due to this we could break unconverted pickles without knowing it. \n\nIn that context it might also be nice to check that format conversion works.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5473\n\n",
     "created_at": "2009-03-10T20:39:38Z",
     "labels": [
         "misc",
@@ -19,7 +19,7 @@ archive/issues_005473.json:
 ```
 Assignee: cwitty
 
-CC:  mkoeppe
+CC:  @mkoeppe
 
 When we currently update the pickle jar we do not keep pickles for older versions around. Due to this we could break unconverted pickles without knowing it. 
 
@@ -45,7 +45,7 @@ archive/issue_comments_042462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42462",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_042463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42463",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_042464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42464",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_042465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42465",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_009697.json:
     "title": "DS_Store garbage in flint spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9697",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tbd
@@ -116,7 +116,7 @@ archive/issue_comments_094251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9697#issuecomment-94251",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_094252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9697#issuecomment-94252",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_094253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9697#issuecomment-94253",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -172,7 +172,7 @@ archive/issue_comments_094254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9697#issuecomment-94254",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -190,7 +190,7 @@ archive/issue_comments_094255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9697#issuecomment-94255",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_094257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9697#issuecomment-94257",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

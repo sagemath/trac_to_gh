@@ -14,7 +14,7 @@ archive/issues_005437.json:
     "title": "[with patch; needs review] pickle jar -- make it run through in order",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5437",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5437
 archive/issue_comments_042055.json:
 ```json
 {
-    "body": "Attachment [trac_5437.patch](tarball://root/attachments/some-uuid/ticket5437/trac_5437.patch) by was created at 2009-03-04 05:33:26",
+    "body": "Attachment [trac_5437.patch](tarball://root/attachments/some-uuid/ticket5437/trac_5437.patch) by @williamstein created at 2009-03-04 05:33:26",
     "created_at": "2009-03-04T05:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5437",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5437#issuecomment-42055",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_5437.patch](tarball://root/attachments/some-uuid/ticket5437/trac_5437.patch) by was created at 2009-03-04 05:33:26
+Attachment [trac_5437.patch](tarball://root/attachments/some-uuid/ticket5437/trac_5437.patch) by @williamstein created at 2009-03-04 05:33:26
 
 
 

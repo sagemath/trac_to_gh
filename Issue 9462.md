@@ -14,7 +14,7 @@ archive/issues_009462.json:
     "title": "warning in matrix_modn_dense.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9462",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 Assignee: GeorgSWeber
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9462
 archive/issue_comments_090743.json:
 ```json
 {
-    "body": "Attachment [trac_9462_duplicate_decl.patch](tarball://root/attachments/some-uuid/ticket9462/trac_9462_duplicate_decl.patch) by wjp created at 2010-07-09 09:37:12",
+    "body": "Attachment [trac_9462_duplicate_decl.patch](tarball://root/attachments/some-uuid/ticket9462/trac_9462_duplicate_decl.patch) by @wjp created at 2010-07-09 09:37:12",
     "created_at": "2010-07-09T09:37:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9462#issuecomment-90743",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac_9462_duplicate_decl.patch](tarball://root/attachments/some-uuid/ticket9462/trac_9462_duplicate_decl.patch) by wjp created at 2010-07-09 09:37:12
+Attachment [trac_9462_duplicate_decl.patch](tarball://root/attachments/some-uuid/ticket9462/trac_9462_duplicate_decl.patch) by @wjp created at 2010-07-09 09:37:12
 
 
 
@@ -63,7 +63,7 @@ archive/issue_comments_090744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9462#issuecomment-90744",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_090745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9462#issuecomment-90745",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_090746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9462#issuecomment-90746",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_090747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9462",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9462#issuecomment-90747",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

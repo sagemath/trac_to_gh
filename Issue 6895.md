@@ -3,7 +3,7 @@
 archive/issues_006895.json:
 ```json
 {
-    "body": "Assignee: was\n\nThe discontinuities in the ceil function are not detected.\n\nExample: plot(lambda x: ceil(x), (-5,5), detect_poles='show') should not display vertical lines between the steps.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6895\n\n",
+    "body": "Assignee: @williamstein\n\nThe discontinuities in the ceil function are not detected.\n\nExample: plot(lambda x: ceil(x), (-5,5), detect_poles='show') should not display vertical lines between the steps.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6895\n\n",
     "created_at": "2009-09-05T21:16:21Z",
     "labels": [
         "graphics",
@@ -17,7 +17,7 @@ archive/issues_006895.json:
     "user": "nbonifas"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 The discontinuities in the ceil function are not detected.
 

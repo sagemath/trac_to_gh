@@ -3,7 +3,7 @@
 archive/issues_002581.json:
 ```json
 {
-    "body": "Assignee: was\n\nA.solve_right only worked for A nonsingular, and there was no solve_left.  Now A.solve_right should work for any A and there is a solve_left. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2581\n\n",
+    "body": "Assignee: @williamstein\n\nA.solve_right only worked for A nonsingular, and there was no solve_left.  Now A.solve_right should work for any A and there is a solve_left. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2581\n\n",
     "created_at": "2008-03-18T02:30:42Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_002581.json:
     "title": "extend solve_right to all cases; implement solve_left",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2581",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 A.solve_right only worked for A nonsingular, and there was no solve_left.  Now A.solve_right should work for any A and there is a solve_left. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2581
 archive/issue_comments_017654.json:
 ```json
 {
-    "body": "Attachment [sage-2581.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581.patch) by was created at 2008-03-18 02:31:22",
+    "body": "Attachment [sage-2581.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581.patch) by @williamstein created at 2008-03-18 02:31:22",
     "created_at": "2008-03-18T02:31:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2581#issuecomment-17654",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2581.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581.patch) by was created at 2008-03-18 02:31:22
+Attachment [sage-2581.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581.patch) by @williamstein created at 2008-03-18 02:31:22
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_017655.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2581#issuecomment-17655",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_017656.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2581#issuecomment-17656",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -86,16 +86,16 @@ this provides the extra restrict_codomain functionality.
 archive/issue_comments_017657.json:
 ```json
 {
-    "body": "Attachment [sage-2581_part2-restrict_codomain.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581_part2-restrict_codomain.patch) by craigcitro created at 2008-03-18 07:46:24\n\nLooks great. Merge this right away!",
+    "body": "Attachment [sage-2581_part2-restrict_codomain.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581_part2-restrict_codomain.patch) by @craigcitro created at 2008-03-18 07:46:24\n\nLooks great. Merge this right away!",
     "created_at": "2008-03-18T07:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2581#issuecomment-17657",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [sage-2581_part2-restrict_codomain.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581_part2-restrict_codomain.patch) by craigcitro created at 2008-03-18 07:46:24
+Attachment [sage-2581_part2-restrict_codomain.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581_part2-restrict_codomain.patch) by @craigcitro created at 2008-03-18 07:46:24
 
 Looks great. Merge this right away!
 
@@ -147,7 +147,7 @@ archive/issue_comments_017660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2581#issuecomment-17660",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_017661.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2581#issuecomment-17661",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_017662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2581#issuecomment-17662",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_017663.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2581#issuecomment-17663",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_017665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2581#issuecomment-17665",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -269,16 +269,16 @@ I'm attaching a patch that:
 archive/issue_comments_017666.json:
 ```json
 {
-    "body": "Attachment [sage-2581_part3.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581_part3.patch) by was created at 2008-03-19 01:07:54",
+    "body": "Attachment [sage-2581_part3.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581_part3.patch) by @williamstein created at 2008-03-19 01:07:54",
     "created_at": "2008-03-19T01:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2581#issuecomment-17666",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2581_part3.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581_part3.patch) by was created at 2008-03-19 01:07:54
+Attachment [sage-2581_part3.patch](tarball://root/attachments/some-uuid/ticket2581/sage-2581_part3.patch) by @williamstein created at 2008-03-19 01:07:54
 
 
 
@@ -292,7 +292,7 @@ archive/issue_comments_017667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2581",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2581#issuecomment-17667",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

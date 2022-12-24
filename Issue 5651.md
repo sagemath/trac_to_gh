@@ -3,7 +3,7 @@
 archive/issues_005651.json:
 ```json
 {
-    "body": "Assignee: wcauchois\n\nCC:  wcauchois was jason\n\nThis works now:\n\n```\nplot(sin(x^2),(x,-3,3)).show(figsize=[8,2])\n```\n\n\nThis would be nice:\n\n```\nplot(sin(x^2),(x,-3,3),figsize=[2,8])\n```\n\n\nThe analogue of the above works systematically everywhere for 3d plotting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5651\n\n",
+    "body": "Assignee: wcauchois\n\nCC:  wcauchois @williamstein @jasongrout\n\nThis works now:\n\n```\nplot(sin(x^2),(x,-3,3)).show(figsize=[8,2])\n```\n\n\nThis would be nice:\n\n```\nplot(sin(x^2),(x,-3,3),figsize=[2,8])\n```\n\n\nThe analogue of the above works systematically everywhere for 3d plotting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5651\n\n",
     "created_at": "2009-03-31T20:33:43Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_005651.json:
     "title": "make it so plot(...) passes extra options to show (maybe only those that makes sense)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5651",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: wcauchois
 
-CC:  wcauchois was jason
+CC:  wcauchois @williamstein @jasongrout
 
 This works now:
 
@@ -53,7 +53,7 @@ archive/issue_comments_044124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44124",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_044126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44126",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_044132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44132",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -319,16 +319,16 @@ based on sage 4.1.alpha2 (fixed, whoops)
 archive/issue_comments_044136.json:
 ```json
 {
-    "body": "Attachment [trac5651-rebase.patch](tarball://root/attachments/some-uuid/ticket5651/trac5651-rebase.patch) by jason created at 2009-07-18 23:17:49\n\nThe rebased patch applies fine to my 4.1 tree.  I tried a few examples and ran the doctests in plot/*.py[x] and plot/plot3d/*.py[x] and everything seems fine.  I'm giving a positive review to the rebasing. That combined with William's almost positive review above adds up to a positive review.\n\nI also looked at the code and it looked reasonable.\n\nThanks and good work!",
+    "body": "Attachment [trac5651-rebase.patch](tarball://root/attachments/some-uuid/ticket5651/trac5651-rebase.patch) by @jasongrout created at 2009-07-18 23:17:49\n\nThe rebased patch applies fine to my 4.1 tree.  I tried a few examples and ran the doctests in plot/*.py[x] and plot/plot3d/*.py[x] and everything seems fine.  I'm giving a positive review to the rebasing. That combined with William's almost positive review above adds up to a positive review.\n\nI also looked at the code and it looked reasonable.\n\nThanks and good work!",
     "created_at": "2009-07-18T23:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5651",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44136",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac5651-rebase.patch](tarball://root/attachments/some-uuid/ticket5651/trac5651-rebase.patch) by jason created at 2009-07-18 23:17:49
+Attachment [trac5651-rebase.patch](tarball://root/attachments/some-uuid/ticket5651/trac5651-rebase.patch) by @jasongrout created at 2009-07-18 23:17:49
 
 The rebased patch applies fine to my 4.1 tree.  I tried a few examples and ran the doctests in plot/*.py[x] and plot/plot3d/*.py[x] and everything seems fine.  I'm giving a positive review to the rebasing. That combined with William's almost positive review above adds up to a positive review.
 

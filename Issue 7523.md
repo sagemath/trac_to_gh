@@ -77,7 +77,7 @@ archive/issue_comments_063768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7523#issuecomment-63768",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_063769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7523#issuecomment-63769",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_063770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7523#issuecomment-63770",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -151,16 +151,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_063771.json:
 ```json
 {
-    "body": "Attachment [trac_7523-part2.patch](tarball://root/attachments/some-uuid/ticket7523/trac_7523-part2.patch) by was created at 2009-12-08 01:11:45",
+    "body": "Attachment [trac_7523-part2.patch](tarball://root/attachments/some-uuid/ticket7523/trac_7523-part2.patch) by @williamstein created at 2009-12-08 01:11:45",
     "created_at": "2009-12-08T01:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7523",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7523#issuecomment-63771",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_7523-part2.patch](tarball://root/attachments/some-uuid/ticket7523/trac_7523-part2.patch) by was created at 2009-12-08 01:11:45
+Attachment [trac_7523-part2.patch](tarball://root/attachments/some-uuid/ticket7523/trac_7523-part2.patch) by @williamstein created at 2009-12-08 01:11:45
 
 
 

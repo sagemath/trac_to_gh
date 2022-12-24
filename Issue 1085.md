@@ -3,7 +3,7 @@
 archive/issues_001085.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nJohn Voight has written some code for enumerating totally real fields; this needs to be added into SAGE. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1085\n\n",
+    "body": "Assignee: @craigcitro\n\nJohn Voight has written some code for enumerating totally real fields; this needs to be added into SAGE. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1085\n\n",
     "created_at": "2007-11-03T20:16:55Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001085.json:
     "title": "include John Voight's code for enumerating totally real fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1085",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 John Voight has written some code for enumerating totally real fields; this needs to be added into SAGE. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_006559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1085#issuecomment-6559",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_006560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1085#issuecomment-6560",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -198,16 +198,16 @@ Michael
 archive/issue_comments_006565.json:
 ```json
 {
-    "body": "Attachment [trac-1085-touch-ups.patch](tarball://root/attachments/some-uuid/ticket1085/trac-1085-touch-ups.patch) by craigcitro created at 2008-02-14 12:06:54",
+    "body": "Attachment [trac-1085-touch-ups.patch](tarball://root/attachments/some-uuid/ticket1085/trac-1085-touch-ups.patch) by @craigcitro created at 2008-02-14 12:06:54",
     "created_at": "2008-02-14T12:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1085",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1085#issuecomment-6565",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-1085-touch-ups.patch](tarball://root/attachments/some-uuid/ticket1085/trac-1085-touch-ups.patch) by craigcitro created at 2008-02-14 12:06:54
+Attachment [trac-1085-touch-ups.patch](tarball://root/attachments/some-uuid/ticket1085/trac-1085-touch-ups.patch) by @craigcitro created at 2008-02-14 12:06:54
 
 
 

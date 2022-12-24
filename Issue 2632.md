@@ -14,7 +14,7 @@ archive/issues_002632.json:
     "title": "Inflexibility of browser window size and resolution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2632",
-    "user": "dunfield"
+    "user": "@NathanDunfield"
 }
 ```
 Assignee: boothby
@@ -41,7 +41,7 @@ archive/issue_comments_018085.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2632",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2632#issuecomment-18085",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

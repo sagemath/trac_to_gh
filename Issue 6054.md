@@ -14,7 +14,7 @@ archive/issues_006054.json:
     "title": "[with patch, needs review] fix display2d with ecl on OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6054",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: mabshoff

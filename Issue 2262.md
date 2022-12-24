@@ -3,7 +3,7 @@
 archive/issues_002262.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nIn retro perspective it was a bad choice to put the dist specific Debian stuff into the Sage repo. It would be much better to create a dist directory in the ext repo and move it all over there. Too late for 2.10.2, but doable in 2.10.3.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2262\n\n",
+    "body": "Assignee: @timabbott\n\nIn retro perspective it was a bad choice to put the dist specific Debian stuff into the Sage repo. It would be much better to create a dist directory in the ext repo and move it all over there. Too late for 2.10.2, but doable in 2.10.3.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2262\n\n",
     "created_at": "2008-02-22T18:35:55Z",
     "labels": [
         "debian-package",
@@ -17,7 +17,7 @@ archive/issues_002262.json:
     "user": "mabshoff"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 In retro perspective it was a bad choice to put the dist specific Debian stuff into the Sage repo. It would be much better to create a dist directory in the ext repo and move it all over there. Too late for 2.10.2, but doable in 2.10.3.
 
@@ -41,7 +41,7 @@ archive/issue_comments_014972.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14972",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -85,7 +85,7 @@ archive/issue_comments_014974.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14974",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_014975.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14975",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_014977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14977",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_014979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14979",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -330,7 +330,7 @@ Attachment [trac_2262_sage-setup.py.patch](tarball://root/attachments/some-uuid/
 archive/issue_comments_014985.json:
 ```json
 {
-    "body": "Changing assignee from tabbott to mabshoff.",
+    "body": "Changing assignee from @timabbott to mabshoff.",
     "created_at": "2008-03-19T09:14:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
@@ -339,7 +339,7 @@ archive/issue_comments_014985.json:
 }
 ```
 
-Changing assignee from tabbott to mabshoff.
+Changing assignee from @timabbott to mabshoff.
 
 
 
@@ -371,7 +371,7 @@ archive/issue_comments_014987.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2262",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14987",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

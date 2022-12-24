@@ -3,7 +3,7 @@
 archive/issues_006924.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  tscrim\n\nKeywords: supercharacters, combinatorics, q-set partitions\n\nI have implemented the rules for restriction and tensor products found in Thm 4.5 and Cor 4.7 (pages 15 and 18):\n\nhttp://arxiv.org/abs/0812.2268\n\nThe backbone is a recursive algorithm to compute tensor products.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6924\n\n",
+    "body": "Assignee: tbd\n\nCC:  @tscrim\n\nKeywords: supercharacters, combinatorics, q-set partitions\n\nI have implemented the rules for restriction and tensor products found in Thm 4.5 and Cor 4.7 (pages 15 and 18):\n\nhttp://arxiv.org/abs/0812.2268\n\nThe backbone is a recursive algorithm to compute tensor products.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6924\n\n",
     "created_at": "2009-09-11T15:27:09Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_006924.json:
 ```
 Assignee: tbd
 
-CC:  tscrim
+CC:  @tscrim
 
 Keywords: supercharacters, combinatorics, q-set partitions
 
@@ -45,7 +45,7 @@ archive/issue_comments_057172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6924#issuecomment-57172",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_057173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6924#issuecomment-57173",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_057174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6924#issuecomment-57174",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_057175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6924",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6924#issuecomment-57175",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

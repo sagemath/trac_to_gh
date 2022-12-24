@@ -3,7 +3,7 @@
 archive/issues_003513.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThis is broken and shouldn't be used anyways.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3513\n\n",
+    "body": "Assignee: @craigcitro\n\nThis is broken and shouldn't be used anyways.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3513\n\n",
     "created_at": "2008-06-26T03:14:28Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_003513.json:
     "title": "modular symbols -- remove the compute_dual option to decomposition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3513",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 This is broken and shouldn't be used anyways.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3513
 archive/issue_comments_024745.json:
 ```json
 {
-    "body": "Attachment [3513-kill_compute_dual.patch](tarball://root/attachments/some-uuid/ticket3513/3513-kill_compute_dual.patch) by AlexGhitza created at 2008-07-03 17:26:22",
+    "body": "Attachment [3513-kill_compute_dual.patch](tarball://root/attachments/some-uuid/ticket3513/3513-kill_compute_dual.patch) by @aghitza created at 2008-07-03 17:26:22",
     "created_at": "2008-07-03T17:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3513#issuecomment-24745",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [3513-kill_compute_dual.patch](tarball://root/attachments/some-uuid/ticket3513/3513-kill_compute_dual.patch) by AlexGhitza created at 2008-07-03 17:26:22
+Attachment [3513-kill_compute_dual.patch](tarball://root/attachments/some-uuid/ticket3513/3513-kill_compute_dual.patch) by @aghitza created at 2008-07-03 17:26:22
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_024746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3513#issuecomment-24746",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_024747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3513#issuecomment-24747",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_024750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3513",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3513#issuecomment-24750",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

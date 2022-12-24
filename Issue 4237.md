@@ -3,7 +3,7 @@
 archive/issues_004237.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\n2) Converting matrices (over finite fields) is very slow for the dimensions\nI'm interested in (the smallest dimension is 10000x10000) because it each\nelement is converted individually. Also, the conversion eats a lot of RAM due\nto the large string that is created.\n```\n\n\nReported by Martin Albrecht\n\nIssue created by migration from https://trac.sagemath.org/ticket/4237\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\n2) Converting matrices (over finite fields) is very slow for the dimensions\nI'm interested in (the smallest dimension is 10000x10000) because it each\nelement is converted individually. Also, the conversion eats a lot of RAM due\nto the large string that is created.\n```\n\n\nReported by Martin Albrecht\n\nIssue created by migration from https://trac.sagemath.org/ticket/4237\n\n",
     "created_at": "2008-10-02T16:29:16Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_004237.json:
     "title": "magma -- finite field matrix conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4237",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -46,7 +46,7 @@ archive/issue_comments_030781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30781",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_030782.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30782",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_030783.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30783",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_030784.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30784",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -146,7 +146,7 @@ archive/issue_comments_030785.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30785",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_030786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30786",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_030787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30787",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_030788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30788",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -434,16 +434,16 @@ This patch also fixes a free that should be a sage_free, and speeds up the list 
 archive/issue_comments_030789.json:
 ```json
 {
-    "body": "Attachment [trac_4237_part1.patch](tarball://root/attachments/some-uuid/ticket4237/trac_4237_part1.patch) by was created at 2008-12-12 08:36:43\n\nmatrices modn for n odd.",
+    "body": "Attachment [trac_4237_part1.patch](tarball://root/attachments/some-uuid/ticket4237/trac_4237_part1.patch) by @williamstein created at 2008-12-12 08:36:43\n\nmatrices modn for n odd.",
     "created_at": "2008-12-12T08:36:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30789",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_4237_part1.patch](tarball://root/attachments/some-uuid/ticket4237/trac_4237_part1.patch) by was created at 2008-12-12 08:36:43
+Attachment [trac_4237_part1.patch](tarball://root/attachments/some-uuid/ticket4237/trac_4237_part1.patch) by @williamstein created at 2008-12-12 08:36:43
 
 matrices modn for n odd.
 
@@ -459,7 +459,7 @@ archive/issue_comments_030790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30790",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -477,7 +477,7 @@ archive/issue_comments_030791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30791",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_030792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30792",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -581,16 +581,16 @@ Anyway, for something more memory efficient, what I just wrote could be the base
 archive/issue_comments_030793.json:
 ```json
 {
-    "body": "Attachment [trac_4237-part2.patch](tarball://root/attachments/some-uuid/ticket4237/trac_4237-part2.patch) by malb created at 2008-12-13 15:34:19\n\npatch2 doesn't apply against my 3.2.1. Hunk:\n\n\n```\n--- matrix_mod2_dense.pyx\n+++ matrix_mod2_dense.pyx\n@@ -1136,7 +1136,7 @@\n         EXAMPLE:\n             sage: A = random_matrix(GF(2),3,3)\n             sage: A._magma_init_(magma)                             # optional - magma\n-            '_sage_[...]![0,1,0,0,1,1,0,0,0]'\n+            'Matrix(GF(2),3,3,StringToIntegerSequence(\"0 1 0 0 1 1 0 0 0\"))'\n             sage: A = random_matrix(GF(2),100,100)\n             sage: B = random_matrix(GF(2),100,100)\n             sage: magma(A*B) == magma(A) * magma(B)                 # optional - magma\n```\n\n\nDo I need 3.2.2.alphaX for this patch?",
+    "body": "Attachment [trac_4237-part2.patch](tarball://root/attachments/some-uuid/ticket4237/trac_4237-part2.patch) by @malb created at 2008-12-13 15:34:19\n\npatch2 doesn't apply against my 3.2.1. Hunk:\n\n\n```\n--- matrix_mod2_dense.pyx\n+++ matrix_mod2_dense.pyx\n@@ -1136,7 +1136,7 @@\n         EXAMPLE:\n             sage: A = random_matrix(GF(2),3,3)\n             sage: A._magma_init_(magma)                             # optional - magma\n-            '_sage_[...]![0,1,0,0,1,1,0,0,0]'\n+            'Matrix(GF(2),3,3,StringToIntegerSequence(\"0 1 0 0 1 1 0 0 0\"))'\n             sage: A = random_matrix(GF(2),100,100)\n             sage: B = random_matrix(GF(2),100,100)\n             sage: magma(A*B) == magma(A) * magma(B)                 # optional - magma\n```\n\n\nDo I need 3.2.2.alphaX for this patch?",
     "created_at": "2008-12-13T15:34:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30793",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_4237-part2.patch](tarball://root/attachments/some-uuid/ticket4237/trac_4237-part2.patch) by malb created at 2008-12-13 15:34:19
+Attachment [trac_4237-part2.patch](tarball://root/attachments/some-uuid/ticket4237/trac_4237-part2.patch) by @malb created at 2008-12-13 15:34:19
 
 patch2 doesn't apply against my 3.2.1. Hunk:
 
@@ -665,7 +665,7 @@ archive/issue_comments_030795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30795",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -683,7 +683,7 @@ archive/issue_comments_030796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30796",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -701,7 +701,7 @@ archive/issue_comments_030797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4237",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4237#issuecomment-30797",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

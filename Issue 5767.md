@@ -3,7 +3,7 @@
 archive/issues_005767.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jason wcauchois\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5767\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout wcauchois\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5767\n\n",
     "created_at": "2009-04-12T00:00:11Z",
     "labels": [
         "doctest coverage",
@@ -14,12 +14,12 @@ archive/issues_005767.json:
     "title": "Bring coverage of plot3d/base.pyx up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5767",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mabshoff
 
-CC:  jason wcauchois
+CC:  @jasongrout wcauchois
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_045103.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5767#issuecomment-45103",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -90,16 +90,16 @@ I don't know when I'll have time to work on this again, so I think we should at 
 archive/issue_comments_045104.json:
 ```json
 {
-    "body": "Attachment [5767-plot3d-base-doctests.patch](tarball://root/attachments/some-uuid/ticket5767/5767-plot3d-base-doctests.patch) by jason created at 2009-04-16 08:44:41",
+    "body": "Attachment [5767-plot3d-base-doctests.patch](tarball://root/attachments/some-uuid/ticket5767/5767-plot3d-base-doctests.patch) by @jasongrout created at 2009-04-16 08:44:41",
     "created_at": "2009-04-16T08:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5767#issuecomment-45104",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [5767-plot3d-base-doctests.patch](tarball://root/attachments/some-uuid/ticket5767/5767-plot3d-base-doctests.patch) by jason created at 2009-04-16 08:44:41
+Attachment [5767-plot3d-base-doctests.patch](tarball://root/attachments/some-uuid/ticket5767/5767-plot3d-base-doctests.patch) by @jasongrout created at 2009-04-16 08:44:41
 
 
 
@@ -234,7 +234,7 @@ archive/issue_comments_045110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5767#issuecomment-45110",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_045111.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5767#issuecomment-45111",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -265,16 +265,16 @@ apply after other two
 archive/issue_comments_045112.json:
 ```json
 {
-    "body": "Attachment [5767-plot3d-base-doctests-whitespace.patch](tarball://root/attachments/some-uuid/ticket5767/5767-plot3d-base-doctests-whitespace.patch) by robertwb created at 2009-05-05 20:55:11",
+    "body": "Attachment [5767-plot3d-base-doctests-whitespace.patch](tarball://root/attachments/some-uuid/ticket5767/5767-plot3d-base-doctests-whitespace.patch) by @robertwb created at 2009-05-05 20:55:11",
     "created_at": "2009-05-05T20:55:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5767#issuecomment-45112",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5767-plot3d-base-doctests-whitespace.patch](tarball://root/attachments/some-uuid/ticket5767/5767-plot3d-base-doctests-whitespace.patch) by robertwb created at 2009-05-05 20:55:11
+Attachment [5767-plot3d-base-doctests-whitespace.patch](tarball://root/attachments/some-uuid/ticket5767/5767-plot3d-base-doctests-whitespace.patch) by @robertwb created at 2009-05-05 20:55:11
 
 
 
@@ -288,7 +288,7 @@ archive/issue_comments_045113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5767#issuecomment-45113",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -374,7 +374,7 @@ archive/issue_comments_045116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5767#issuecomment-45116",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_045119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5767#issuecomment-45119",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

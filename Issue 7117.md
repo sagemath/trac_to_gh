@@ -14,7 +14,7 @@ archive/issues_007117.json:
     "title": "[with patch, needs review] latex fix for RIF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7117",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: cwitty
@@ -44,7 +44,7 @@ archive/issue_comments_058983.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7117#issuecomment-58983",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -57,16 +57,16 @@ Looks good to me.
 archive/issue_comments_058984.json:
 ```json
 {
-    "body": "Attachment [trac_7117-rif.patch](tarball://root/attachments/some-uuid/ticket7117/trac_7117-rif.patch) by mhansen created at 2009-10-15 08:35:31",
+    "body": "Attachment [trac_7117-rif.patch](tarball://root/attachments/some-uuid/ticket7117/trac_7117-rif.patch) by @mwhansen created at 2009-10-15 08:35:31",
     "created_at": "2009-10-15T08:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7117#issuecomment-58984",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7117-rif.patch](tarball://root/attachments/some-uuid/ticket7117/trac_7117-rif.patch) by mhansen created at 2009-10-15 08:35:31
+Attachment [trac_7117-rif.patch](tarball://root/attachments/some-uuid/ticket7117/trac_7117-rif.patch) by @mwhansen created at 2009-10-15 08:35:31
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_058985.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7117#issuecomment-58985",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_058986.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7117",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7117#issuecomment-58986",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

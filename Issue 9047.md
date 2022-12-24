@@ -14,7 +14,7 @@ archive/issues_009047.json:
     "title": "Make sure there aren't unneeded/untracked files on spkg creation.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9047",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_083764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9047#issuecomment-83764",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -50,16 +50,16 @@ Apply to sage-scripts.
 archive/issue_comments_083765.json:
 ```json
 {
-    "body": "Attachment [9047-hg-repo-check.patch](tarball://root/attachments/some-uuid/ticket9047/9047-hg-repo-check.patch) by jdemeyer created at 2013-08-13 15:35:53",
+    "body": "Attachment [9047-hg-repo-check.patch](tarball://root/attachments/some-uuid/ticket9047/9047-hg-repo-check.patch) by @jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9047#issuecomment-83765",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9047-hg-repo-check.patch](tarball://root/attachments/some-uuid/ticket9047/9047-hg-repo-check.patch) by jdemeyer created at 2013-08-13 15:35:53
+Attachment [9047-hg-repo-check.patch](tarball://root/attachments/some-uuid/ticket9047/9047-hg-repo-check.patch) by @jdemeyer created at 2013-08-13 15:35:53
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_083766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9047#issuecomment-83766",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_083767.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9047#issuecomment-83767",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_083768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9047#issuecomment-83768",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_083769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9047#issuecomment-83769",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

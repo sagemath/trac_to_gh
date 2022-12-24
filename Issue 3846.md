@@ -3,7 +3,7 @@
 archive/issues_003846.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  robertwb boothby\n\nThe Sage preparser stupidly doesn't raise an error when the input is `vector(v)[3] = 5`.  Instead\nit does something very confusing.    This was found by Franco Saliola.\n\n\n```\nsage: vector(v)[3] = 5\nsage: preparse('vector(v)[3] = 5')\n'_=var(\"v\");vector=symbolic_expression(Integer(5)).function(v)'\nsage: vector(10)\n5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3846\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @robertwb boothby\n\nThe Sage preparser stupidly doesn't raise an error when the input is `vector(v)[3] = 5`.  Instead\nit does something very confusing.    This was found by Franco Saliola.\n\n\n```\nsage: vector(v)[3] = 5\nsage: preparse('vector(v)[3] = 5')\n'_=var(\"v\");vector=symbolic_expression(Integer(5)).function(v)'\nsage: vector(10)\n5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3846\n\n",
     "created_at": "2008-08-14T03:35:27Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_003846.json:
     "title": "bug in the sage preparser -- vector(v)[3] = 5 slips by!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3846",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
 
-CC:  robertwb boothby
+CC:  @robertwb boothby
 
 The Sage preparser stupidly doesn't raise an error when the input is `vector(v)[3] = 5`.  Instead
 it does something very confusing.    This was found by Franco Saliola.
@@ -50,7 +50,7 @@ archive/issue_comments_027361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3846#issuecomment-27361",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_027363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3846#issuecomment-27363",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_027364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3846#issuecomment-27364",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

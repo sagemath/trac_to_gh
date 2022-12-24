@@ -3,7 +3,7 @@
 archive/issues_007590.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  wdj\n\nGiven the sequence of degrees for set A and a sequence of degree for set B, create the corresponding bipartite graph if possible.\n\nUse #7301\n\nIssue created by migration from https://trac.sagemath.org/ticket/7590\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @wdjoyner\n\nGiven the sequence of degrees for set A and a sequence of degree for set B, create the corresponding bipartite graph if possible.\n\nUse #7301\n\nIssue created by migration from https://trac.sagemath.org/ticket/7590\n\n",
     "created_at": "2009-12-03T12:40:23Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_007590.json:
     "title": "Create Bipartite Graph according to 2 degree sequences",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7590",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  wdj
+CC:  @wdjoyner
 
 Given the sequence of degrees for set A and a sequence of degree for set B, create the corresponding bipartite graph if possible.
 
@@ -41,7 +41,7 @@ archive/issue_comments_064707.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64707",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_064708.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64708",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_064709.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64709",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_064710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64710",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_064711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64711",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_064712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64712",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -148,16 +148,16 @@ Changing status from needs_info to needs_review.
 archive/issue_comments_064713.json:
 ```json
 {
-    "body": "Attachment [trac_7590.patch](tarball://root/attachments/some-uuid/ticket7590/trac_7590.patch) by rlm created at 2009-12-16 03:01:01\n\nAdded # optional to some doctests.",
+    "body": "Attachment [trac_7590.patch](tarball://root/attachments/some-uuid/ticket7590/trac_7590.patch) by @rlmill created at 2009-12-16 03:01:01\n\nAdded # optional to some doctests.",
     "created_at": "2009-12-16T03:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64713",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_7590.patch](tarball://root/attachments/some-uuid/ticket7590/trac_7590.patch) by rlm created at 2009-12-16 03:01:01
+Attachment [trac_7590.patch](tarball://root/attachments/some-uuid/ticket7590/trac_7590.patch) by @rlmill created at 2009-12-16 03:01:01
 
 Added # optional to some doctests.
 
@@ -173,7 +173,7 @@ archive/issue_comments_064714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64714",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -191,7 +191,7 @@ archive/issue_comments_064715.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64715",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_064716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64716",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_064717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64717",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_064718.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64718",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_064719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64719",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -281,7 +281,7 @@ archive/issue_comments_064720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7590",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7590#issuecomment-64720",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

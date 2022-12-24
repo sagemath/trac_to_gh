@@ -14,7 +14,7 @@ archive/issues_001972.json:
     "title": "programming guide -- fix a confusing typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1972",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1972
 archive/issue_comments_012766.json:
 ```json
 {
-    "body": "Attachment [doc-1972.patch](tarball://root/attachments/some-uuid/ticket1972/doc-1972.patch) by was created at 2008-01-29 12:59:48",
+    "body": "Attachment [doc-1972.patch](tarball://root/attachments/some-uuid/ticket1972/doc-1972.patch) by @williamstein created at 2008-01-29 12:59:48",
     "created_at": "2008-01-29T12:59:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1972",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1972#issuecomment-12766",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doc-1972.patch](tarball://root/attachments/some-uuid/ticket1972/doc-1972.patch) by was created at 2008-01-29 12:59:48
+Attachment [doc-1972.patch](tarball://root/attachments/some-uuid/ticket1972/doc-1972.patch) by @williamstein created at 2008-01-29 12:59:48
 
 
 

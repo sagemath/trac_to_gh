@@ -3,7 +3,7 @@
 archive/issues_007329.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  rbeezer kcrisman\n\nIt would be great if this worked:\n\n\n```\n            sage: t=var('t')                      \n            sage: r=vector([t,t^2,sin(t)])\n            sage: integrate(r,t)\n            (1/2*t^2, 1/3*t^3, -cos(t))\n            sage: integrate(r,(t,0,1))\n            (1/2, 1/3, -cos(1) + 1)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7329\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @rbeezer @kcrisman\n\nIt would be great if this worked:\n\n\n```\n            sage: t=var('t')                      \n            sage: r=vector([t,t^2,sin(t)])\n            sage: integrate(r,t)\n            (1/2*t^2, 1/3*t^3, -cos(t))\n            sage: integrate(r,(t,0,1))\n            (1/2, 1/3, -cos(1) + 1)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7329\n\n",
     "created_at": "2009-10-28T02:46:06Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_007329.json:
     "title": "Make integration of vectors work (component-wise)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7329",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  rbeezer kcrisman
+CC:  @rbeezer @kcrisman
 
 It would be great if this worked:
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7329
 archive/issue_comments_061293.json:
 ```json
 {
-    "body": "Attachment [trac-7329-vector-integrals.patch](tarball://root/attachments/some-uuid/ticket7329/trac-7329-vector-integrals.patch) by jason created at 2009-10-28 04:26:16",
+    "body": "Attachment [trac-7329-vector-integrals.patch](tarball://root/attachments/some-uuid/ticket7329/trac-7329-vector-integrals.patch) by @jasongrout created at 2009-10-28 04:26:16",
     "created_at": "2009-10-28T04:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7329#issuecomment-61293",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-7329-vector-integrals.patch](tarball://root/attachments/some-uuid/ticket7329/trac-7329-vector-integrals.patch) by jason created at 2009-10-28 04:26:16
+Attachment [trac-7329-vector-integrals.patch](tarball://root/attachments/some-uuid/ticket7329/trac-7329-vector-integrals.patch) by @jasongrout created at 2009-10-28 04:26:16
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_061294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7329#issuecomment-61294",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_061295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7329#issuecomment-61295",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_061296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7329#issuecomment-61296",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_061297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7329#issuecomment-61297",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

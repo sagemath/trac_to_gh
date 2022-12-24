@@ -14,7 +14,7 @@ archive/issues_001162.json:
     "title": "[with patch] fix issues in RealField <-> RQDF conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1162",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: jkantor
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1162
 archive/issue_comments_007108.json:
 ```json
 {
-    "body": "Attachment [7333.patch](tarball://root/attachments/some-uuid/ticket1162/7333.patch) by zimmerma created at 2007-11-13 00:05:18",
+    "body": "Attachment [7333.patch](tarball://root/attachments/some-uuid/ticket1162/7333.patch) by @zimmermann6 created at 2007-11-13 00:05:18",
     "created_at": "2007-11-13T00:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1162#issuecomment-7108",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
-Attachment [7333.patch](tarball://root/attachments/some-uuid/ticket1162/7333.patch) by zimmerma created at 2007-11-13 00:05:18
+Attachment [7333.patch](tarball://root/attachments/some-uuid/ticket1162/7333.patch) by @zimmermann6 created at 2007-11-13 00:05:18
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_007110.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1162#issuecomment-7110",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_007113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1162",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1162#issuecomment-7113",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

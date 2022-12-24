@@ -3,7 +3,7 @@
 archive/issues_002691.json:
 ```json
 {
-    "body": "Assignee: rlm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2691\n\n",
+    "body": "Assignee: @rlmill\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2691\n\n",
     "created_at": "2008-03-28T00:27:18Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002691.json:
     "title": "[with patch, needs review] generate digraphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2691",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 
 
@@ -37,7 +37,7 @@ archive/issue_comments_018519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2691#issuecomment-18519",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_018520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2691#issuecomment-18520",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -68,16 +68,16 @@ Changing type from defect to enhancement.
 archive/issue_comments_018521.json:
 ```json
 {
-    "body": "Attachment [2691-digraphs.patch](tarball://root/attachments/some-uuid/ticket2691/2691-digraphs.patch) by rlm created at 2008-03-28 14:55:02",
+    "body": "Attachment [2691-digraphs.patch](tarball://root/attachments/some-uuid/ticket2691/2691-digraphs.patch) by @rlmill created at 2008-03-28 14:55:02",
     "created_at": "2008-03-28T14:55:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2691#issuecomment-18521",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [2691-digraphs.patch](tarball://root/attachments/some-uuid/ticket2691/2691-digraphs.patch) by rlm created at 2008-03-28 14:55:02
+Attachment [2691-digraphs.patch](tarball://root/attachments/some-uuid/ticket2691/2691-digraphs.patch) by @rlmill created at 2008-03-28 14:55:02
 
 
 
@@ -91,7 +91,7 @@ archive/issue_comments_018522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2691",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2691#issuecomment-18522",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

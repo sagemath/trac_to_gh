@@ -3,7 +3,7 @@
 archive/issues_008427.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jkantor mhansen was\n\nThis example does not work from the tutorial http://www.sagemath.org/doc/numerical_sage/f2py.html:\n\n\n```\n%fortran\n\n        Subroutine Rescale(a,b,n)\n        Implicit none\n        Integer n,i,j\n        Real*8 a(n,n), b\nCf2py intent(in,out) a\n        do i = 1,n\n           do j=1,n\n             a(i,j)=b*a(i,j)\n           end do\n        end do\n        end\n```\n\n\nThe error is:\n\n\n```\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/f2py/f2py2e.py\", line 557, in main\n    run_compile()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/f2py/f2py2e.py\", line 543, in run_compile\n    setup(ext_modules = [ext])\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/distutils/core.py\", line 184, in setup\n    return old_setup(**new_attr)\n  File \"/usr/local/sage2/local/lib/python/distutils/core.py\", line 152, in setup\n    dist.run_commands()\n  File \"/usr/local/sage2/local/lib/python/distutils/dist.py\", line 975, in run_commands\n    self.run_command(cmd)\n  File \"/usr/local/sage2/local/lib/python/distutils/dist.py\", line 995, in run_command\n    cmd_obj.run()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/distutils/command/build.py\", line 37, in run\n    old_build.run(self)\n  File \"/usr/local/sage2/local/lib/python/distutils/command/build.py\", line 134, in run\n    self.run_command(cmd_name)\n  File \"/usr/local/sage2/local/lib/python/distutils/cmd.py\", line 333, in run_command\n    self.distribution.run_command(command)\n  File \"/usr/local/sage2/local/lib/python/distutils/dist.py\", line 995, in run_command\n    cmd_obj.run()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/distutils/command/build_src.py\", line 130, in run\n    self.build_sources()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/distutils/command/build_src.py\", line 147, in build_sources\n    self.build_extension_sources(ext)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/distutils/command/build_src.py\", line 256, in build_extension_sources\n    sources = self.f2py_sources(sources, ext)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/distutils/command/build_src.py\", line 514, in f2py_sources\n    ['-m',ext_name]+f_sources)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/f2py/f2py2e.py\", line 338, in run_main\n    postlist=callcrackfortran(files,options)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/f2py/f2py2e.py\", line 276, in callcrackfortran\n    postlist=crackfortran.crackfortran(files)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/f2py/crackfortran.py\", line 2683, in crackfortran\n    readfortrancode(files,crackline)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/f2py/crackfortran.py\", line 346, in readfortrancode\n    'this code is in fix form?\\n\\tline=%s' % `l`)\nException: readfortrancode: Found non-(space,digit) char in the first column.\n\tAre you sure that this code is in fix form?\n\tline='Subroutine Rescale(a,b,n)'\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_2.py\", line 19, in <module>\n    end''', '/sagenb/sagenb/sage_notebook.sagenb/home/jason3/382/cells/1')\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sagenb-0.7.5.1-py2.6.egg/sagenb/misc/support.py\", line 473, in syseval\n    return system.eval(cmd, sage_globals, locals = sage_globals)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/misc/inline_fortran.py\", line 92, in eval\n    os.unlink(name + '.so')\nOSError: [Errno 2] No such file or directory: 'fortran_module_0.so'\n\n```\n\n\nI get the same error if I delete the blank line after %fortran.\n\nHowever, if I change the notebook cell to have a comment as the first line, it seems to work just fine:\n\n\n```\n%fortran\nC\n        Subroutine Rescale(a,b,n)\n        Implicit none\n        Integer n,i,j\n        Real*8 a(n,n), b\nCf2py intent(in,out) a\n        do i = 1,n\n           do j=1,n\n             a(i,j)=b*a(i,j)\n           end do\n        end do\n        end\n```\n\n\nThis is on Sage 4.3.3 (sagenb.org)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8427\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  jkantor @mwhansen @williamstein\n\nThis example does not work from the tutorial http://www.sagemath.org/doc/numerical_sage/f2py.html:\n\n\n```\n%fortran\n\n        Subroutine Rescale(a,b,n)\n        Implicit none\n        Integer n,i,j\n        Real*8 a(n,n), b\nCf2py intent(in,out) a\n        do i = 1,n\n           do j=1,n\n             a(i,j)=b*a(i,j)\n           end do\n        end do\n        end\n```\n\n\nThe error is:\n\n\n```\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/f2py/f2py2e.py\", line 557, in main\n    run_compile()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/f2py/f2py2e.py\", line 543, in run_compile\n    setup(ext_modules = [ext])\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/distutils/core.py\", line 184, in setup\n    return old_setup(**new_attr)\n  File \"/usr/local/sage2/local/lib/python/distutils/core.py\", line 152, in setup\n    dist.run_commands()\n  File \"/usr/local/sage2/local/lib/python/distutils/dist.py\", line 975, in run_commands\n    self.run_command(cmd)\n  File \"/usr/local/sage2/local/lib/python/distutils/dist.py\", line 995, in run_command\n    cmd_obj.run()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/distutils/command/build.py\", line 37, in run\n    old_build.run(self)\n  File \"/usr/local/sage2/local/lib/python/distutils/command/build.py\", line 134, in run\n    self.run_command(cmd_name)\n  File \"/usr/local/sage2/local/lib/python/distutils/cmd.py\", line 333, in run_command\n    self.distribution.run_command(command)\n  File \"/usr/local/sage2/local/lib/python/distutils/dist.py\", line 995, in run_command\n    cmd_obj.run()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/distutils/command/build_src.py\", line 130, in run\n    self.build_sources()\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/distutils/command/build_src.py\", line 147, in build_sources\n    self.build_extension_sources(ext)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/distutils/command/build_src.py\", line 256, in build_extension_sources\n    sources = self.f2py_sources(sources, ext)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/distutils/command/build_src.py\", line 514, in f2py_sources\n    ['-m',ext_name]+f_sources)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/f2py/f2py2e.py\", line 338, in run_main\n    postlist=callcrackfortran(files,options)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/f2py/f2py2e.py\", line 276, in callcrackfortran\n    postlist=crackfortran.crackfortran(files)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/f2py/crackfortran.py\", line 2683, in crackfortran\n    readfortrancode(files,crackline)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/numpy/f2py/crackfortran.py\", line 346, in readfortrancode\n    'this code is in fix form?\\n\\tline=%s' % `l`)\nException: readfortrancode: Found non-(space,digit) char in the first column.\n\tAre you sure that this code is in fix form?\n\tline='Subroutine Rescale(a,b,n)'\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_2.py\", line 19, in <module>\n    end''', '/sagenb/sagenb/sage_notebook.sagenb/home/jason3/382/cells/1')\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sagenb-0.7.5.1-py2.6.egg/sagenb/misc/support.py\", line 473, in syseval\n    return system.eval(cmd, sage_globals, locals = sage_globals)\n  File \"/usr/local/sage2/local/lib/python2.6/site-packages/sage/misc/inline_fortran.py\", line 92, in eval\n    os.unlink(name + '.so')\nOSError: [Errno 2] No such file or directory: 'fortran_module_0.so'\n\n```\n\n\nI get the same error if I delete the blank line after %fortran.\n\nHowever, if I change the notebook cell to have a comment as the first line, it seems to work just fine:\n\n\n```\n%fortran\nC\n        Subroutine Rescale(a,b,n)\n        Implicit none\n        Integer n,i,j\n        Real*8 a(n,n), b\nCf2py intent(in,out) a\n        do i = 1,n\n           do j=1,n\n             a(i,j)=b*a(i,j)\n           end do\n        end do\n        end\n```\n\n\nThis is on Sage 4.3.3 (sagenb.org)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8427\n\n",
     "created_at": "2010-03-03T05:54:53Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_008427.json:
     "title": "notebook fortran mode does not work with blank first line (or subroutine starting on first line)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8427",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jkantor mhansen was
+CC:  jkantor @mwhansen @williamstein
 
 This example does not work from the tutorial http://www.sagemath.org/doc/numerical_sage/f2py.html:
 
@@ -140,7 +140,7 @@ archive/issue_comments_075548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8427#issuecomment-75548",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_075549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8427#issuecomment-75549",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_075550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8427#issuecomment-75550",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_075551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8427#issuecomment-75551",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -243,7 +243,7 @@ archive/issue_comments_075552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8427#issuecomment-75552",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_075553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8427#issuecomment-75553",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_075554.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8427#issuecomment-75554",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_075555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8427#issuecomment-75555",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

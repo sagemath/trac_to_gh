@@ -3,7 +3,7 @@
 archive/issues_005305.json:
 ```json
 {
-    "body": "Assignee: itolkov\n\nCC:  mpatel\n\n[http://groups.google.com/group/sage-support/browse_frm/thread/92ba3902f6ce890e](http://groups.google.com/group/sage-support/browse_frm/thread/92ba3902f6ce890e)\n\nIt would be\ngreat if somebody added one, especially one that was built using the\njquery javascript library.  There currently isn't a date picker\ninteract in sage yet. \n\nThere actually is a datepicker in jQuery.\n[http://docs.jquery.com/UI/Datepicker#overview](http://docs.jquery.com/UI/Datepicker#overview)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5305\n\n",
+    "body": "Assignee: @itolkov\n\nCC:  @qed777\n\n[http://groups.google.com/group/sage-support/browse_frm/thread/92ba3902f6ce890e](http://groups.google.com/group/sage-support/browse_frm/thread/92ba3902f6ce890e)\n\nIt would be\ngreat if somebody added one, especially one that was built using the\njquery javascript library.  There currently isn't a date picker\ninteract in sage yet. \n\nThere actually is a datepicker in jQuery.\n[http://docs.jquery.com/UI/Datepicker#overview](http://docs.jquery.com/UI/Datepicker#overview)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5305\n\n",
     "created_at": "2009-02-18T13:20:57Z",
     "labels": [
         "interact",
@@ -14,12 +14,12 @@ archive/issues_005305.json:
     "title": "Datepicker for Interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5305",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: itolkov
+Assignee: @itolkov
 
-CC:  mpatel
+CC:  @qed777
 
 [http://groups.google.com/group/sage-support/browse_frm/thread/92ba3902f6ce890e](http://groups.google.com/group/sage-support/browse_frm/thread/92ba3902f6ce890e)
 
@@ -47,7 +47,7 @@ archive/issue_comments_040809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5305#issuecomment-40809",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_040810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5305",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5305#issuecomment-40810",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

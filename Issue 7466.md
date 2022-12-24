@@ -66,7 +66,7 @@ archive/issue_comments_062877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62877",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_062878.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62878",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -112,16 +112,16 @@ wiki/moin.rst
 archive/issue_comments_062879.json:
 ```json
 {
-    "body": "Attachment [trac_7466.patch](tarball://root/attachments/some-uuid/ticket7466/trac_7466.patch) by jhpalmieri created at 2009-12-05 05:00:19",
+    "body": "Attachment [trac_7466.patch](tarball://root/attachments/some-uuid/ticket7466/trac_7466.patch) by @jhpalmieri created at 2009-12-05 05:00:19",
     "created_at": "2009-12-05T05:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62879",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7466.patch](tarball://root/attachments/some-uuid/ticket7466/trac_7466.patch) by jhpalmieri created at 2009-12-05 05:00:19
+Attachment [trac_7466.patch](tarball://root/attachments/some-uuid/ticket7466/trac_7466.patch) by @jhpalmieri created at 2009-12-05 05:00:19
 
 
 
@@ -185,7 +185,7 @@ archive/issue_comments_062882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7466",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62882",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

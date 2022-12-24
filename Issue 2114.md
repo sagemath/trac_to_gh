@@ -3,7 +3,7 @@
 archive/issues_002114.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  zimmerma malb jpflori jdemeyer\n\nCheck out http://wwwmaths.anu.edu.au/~brent/gf2x.html\n\nIt's:\n* by very well respected people\n* GPL'd (v2 or later)\n* Small pure C code:\n\n```\ndhcp46-72:gf2x-0.1 was$ ls\nBestToom.c          README              ToomSpace.c         gen_bb_mul_code.c   mul-tc3w.c          mul2t.c             tune1               tuneup.c\nCOPYING             TC.h                cantor              mul-tc3.c           mul-tc4.c           mulfft-bit.c        tunefft.c\nHalfGCD.c           Toom.c              factor.c            mul-tc3u.c          mul.c               patch-wrt-ntl-5.3.1 tunetoom.c\ndhcp46-72:gf2x-0.1 was$ usage\n4\tBestToom.c\n4\tREADME\n4\tTC.h\n4\tToom.c\n4\tToomSpace.c\n4\tpatch-wrt-ntl-5.3.1\n4\ttune1\n4\ttuneup.c\n8\tgen_bb_mul_code.c\n8\tmul2t.c\n8\ttunefft.c\n12\tmul-tc3.c\n12\tmul-tc3u.c\n12\tmul-tc3w.c\n12\tmul-tc4.c\n12\ttunetoom.c\n16\tHalfGCD.c\n16\tmul.c\n20\tCOPYING\n28\tmulfft-bit.c\n40\tfactor.c\n132\tcantor\n368\ttotal\n```\n\n* and Paul Z. says: \n\n```\nfor your information, on http://wwwmaths.anu.edu.au/~brent/gf2x.html you will\nfind an implementation up to 5 times faster than NTL's GF2X (for degree 2^20).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2114\n\n",
+    "body": "Assignee: somebody\n\nCC:  @zimmermann6 @malb jpflori @jdemeyer\n\nCheck out http://wwwmaths.anu.edu.au/~brent/gf2x.html\n\nIt's:\n* by very well respected people\n* GPL'd (v2 or later)\n* Small pure C code:\n\n```\ndhcp46-72:gf2x-0.1 was$ ls\nBestToom.c          README              ToomSpace.c         gen_bb_mul_code.c   mul-tc3w.c          mul2t.c             tune1               tuneup.c\nCOPYING             TC.h                cantor              mul-tc3.c           mul-tc4.c           mulfft-bit.c        tunefft.c\nHalfGCD.c           Toom.c              factor.c            mul-tc3u.c          mul.c               patch-wrt-ntl-5.3.1 tunetoom.c\ndhcp46-72:gf2x-0.1 was$ usage\n4\tBestToom.c\n4\tREADME\n4\tTC.h\n4\tToom.c\n4\tToomSpace.c\n4\tpatch-wrt-ntl-5.3.1\n4\ttune1\n4\ttuneup.c\n8\tgen_bb_mul_code.c\n8\tmul2t.c\n8\ttunefft.c\n12\tmul-tc3.c\n12\tmul-tc3u.c\n12\tmul-tc3w.c\n12\tmul-tc4.c\n12\ttunetoom.c\n16\tHalfGCD.c\n16\tmul.c\n20\tCOPYING\n28\tmulfft-bit.c\n40\tfactor.c\n132\tcantor\n368\ttotal\n```\n\n* and Paul Z. says: \n\n```\nfor your information, on http://wwwmaths.anu.edu.au/~brent/gf2x.html you will\nfind an implementation up to 5 times faster than NTL's GF2X (for degree 2^20).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2114\n\n",
     "created_at": "2008-02-08T15:12:20Z",
     "labels": [
         "basic arithmetic",
@@ -14,12 +14,12 @@ archive/issues_002114.json:
     "title": "get gf2x into Sage!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2114",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
 
-CC:  zimmerma malb jpflori jdemeyer
+CC:  @zimmermann6 @malb jpflori @jdemeyer
 
 Check out http://wwwmaths.anu.edu.au/~brent/gf2x.html
 
@@ -83,7 +83,7 @@ archive/issue_comments_013790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13790",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_013791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13791",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_013792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13792",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_013793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13793",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_013799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13799",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -310,16 +310,16 @@ Changing status from needs_review to needs_info.
 archive/issue_comments_013800.json:
 ```json
 {
-    "body": "Attachment [ntl-5.5.2.p1.diff](tarball://root/attachments/some-uuid/ticket2114/ntl-5.5.2.p1.diff) by jdemeyer created at 2013-06-04 20:08:31\n\nReplying to [comment:8 jpflori]:\n> Jeroen please decide what to do.\nWhy should I?  *You* should decide if you want this:\na. as standard package (which requires a discussion on `sage-devel` and changes to `spkg/standard/deps`)\nb. as optional package (but then NTL needs to work both with and without `gf2x`)\nc. not at all",
+    "body": "Attachment [ntl-5.5.2.p1.diff](tarball://root/attachments/some-uuid/ticket2114/ntl-5.5.2.p1.diff) by @jdemeyer created at 2013-06-04 20:08:31\n\nReplying to [comment:8 jpflori]:\n> Jeroen please decide what to do.\nWhy should I?  *You* should decide if you want this:\na. as standard package (which requires a discussion on `sage-devel` and changes to `spkg/standard/deps`)\nb. as optional package (but then NTL needs to work both with and without `gf2x`)\nc. not at all",
     "created_at": "2013-06-04T20:08:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13800",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [ntl-5.5.2.p1.diff](tarball://root/attachments/some-uuid/ticket2114/ntl-5.5.2.p1.diff) by jdemeyer created at 2013-06-04 20:08:31
+Attachment [ntl-5.5.2.p1.diff](tarball://root/attachments/some-uuid/ticket2114/ntl-5.5.2.p1.diff) by @jdemeyer created at 2013-06-04 20:08:31
 
 Replying to [comment:8 jpflori]:
 > Jeroen please decide what to do.
@@ -360,7 +360,7 @@ archive/issue_comments_013802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13802",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -398,7 +398,7 @@ archive/issue_comments_013804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13804",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -616,7 +616,7 @@ archive/issue_comments_013815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13815",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -634,7 +634,7 @@ archive/issue_comments_013816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13816",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -652,7 +652,7 @@ archive/issue_comments_013817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13817",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_013818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13818",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -751,7 +751,7 @@ archive/issue_comments_013821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13821",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -769,7 +769,7 @@ archive/issue_comments_013822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13822",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -838,7 +838,7 @@ archive/issue_comments_013823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13823",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -877,7 +877,7 @@ archive/issue_comments_013824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13824",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -895,7 +895,7 @@ archive/issue_comments_013825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13825",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -915,7 +915,7 @@ archive/issue_comments_013826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13826",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -942,7 +942,7 @@ archive/issue_comments_013827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13827",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -976,7 +976,7 @@ archive/issue_comments_013828.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13828",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -999,7 +999,7 @@ archive/issue_comments_013829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13829",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1037,7 +1037,7 @@ archive/issue_comments_013831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13831",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1055,7 +1055,7 @@ archive/issue_comments_013832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13832",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1147,7 +1147,7 @@ archive/issue_comments_013837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13837",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1185,7 +1185,7 @@ archive/issue_comments_013839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13839",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1241,7 +1241,7 @@ archive/issue_comments_013841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13841",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1265,7 +1265,7 @@ archive/issue_comments_013842.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13842",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1283,7 +1283,7 @@ archive/issue_comments_013843.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13843",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1311,7 +1311,7 @@ archive/issue_comments_013844.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13844",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1452,7 +1452,7 @@ archive/issue_comments_013851.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13851",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1475,7 +1475,7 @@ archive/issue_comments_013852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13852",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1493,7 +1493,7 @@ archive/issue_comments_013853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13853",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1511,7 +1511,7 @@ archive/issue_comments_013854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13854",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1529,7 +1529,7 @@ archive/issue_comments_013855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13855",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1554,7 +1554,7 @@ archive/issue_comments_013856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13856",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1567,16 +1567,16 @@ Spkg diff, for review only.
 archive/issue_comments_013857.json:
 ```json
 {
-    "body": "Attachment [gf2x-1.1.diff](tarball://root/attachments/some-uuid/ticket2114/gf2x-1.1.diff) by jdemeyer created at 2013-06-08 11:28:40",
+    "body": "Attachment [gf2x-1.1.diff](tarball://root/attachments/some-uuid/ticket2114/gf2x-1.1.diff) by @jdemeyer created at 2013-06-08 11:28:40",
     "created_at": "2013-06-08T11:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13857",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [gf2x-1.1.diff](tarball://root/attachments/some-uuid/ticket2114/gf2x-1.1.diff) by jdemeyer created at 2013-06-08 11:28:40
+Attachment [gf2x-1.1.diff](tarball://root/attachments/some-uuid/ticket2114/gf2x-1.1.diff) by @jdemeyer created at 2013-06-08 11:28:40
 
 
 
@@ -1585,16 +1585,16 @@ Attachment [gf2x-1.1.diff](tarball://root/attachments/some-uuid/ticket2114/gf2x-
 archive/issue_comments_013858.json:
 ```json
 {
-    "body": "Attachment [gf2x-1.1-jdemeyer.diff](tarball://root/attachments/some-uuid/ticket2114/gf2x-1.1-jdemeyer.diff) by jdemeyer created at 2013-06-08 11:29:22\n\nReplying to [comment:61 leif]:\n> You didn't fix \"gf2x is a C/C+ software package\" though... ;-)\nFixed now.\n\n> Could you attach a diff of **your** changes?\n[attachment:gf2x-1.1-jdemeyer.diff]",
+    "body": "Attachment [gf2x-1.1-jdemeyer.diff](tarball://root/attachments/some-uuid/ticket2114/gf2x-1.1-jdemeyer.diff) by @jdemeyer created at 2013-06-08 11:29:22\n\nReplying to [comment:61 leif]:\n> You didn't fix \"gf2x is a C/C+ software package\" though... ;-)\nFixed now.\n\n> Could you attach a diff of **your** changes?\n[attachment:gf2x-1.1-jdemeyer.diff]",
     "created_at": "2013-06-08T11:29:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13858",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [gf2x-1.1-jdemeyer.diff](tarball://root/attachments/some-uuid/ticket2114/gf2x-1.1-jdemeyer.diff) by jdemeyer created at 2013-06-08 11:29:22
+Attachment [gf2x-1.1-jdemeyer.diff](tarball://root/attachments/some-uuid/ticket2114/gf2x-1.1-jdemeyer.diff) by @jdemeyer created at 2013-06-08 11:29:22
 
 Replying to [comment:61 leif]:
 > You didn't fix "gf2x is a C/C+ software package" though... ;-)
@@ -1615,7 +1615,7 @@ archive/issue_comments_013859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13859",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1643,7 +1643,7 @@ archive/issue_comments_013860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13860",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1661,7 +1661,7 @@ archive/issue_comments_013861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13861",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1681,7 +1681,7 @@ archive/issue_comments_013862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13862",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1704,7 +1704,7 @@ archive/issue_comments_013863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13863",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -1725,7 +1725,7 @@ archive/issue_comments_013864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13864",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1751,7 +1751,7 @@ archive/issue_comments_013865.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13865",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1805,7 +1805,7 @@ archive/issue_comments_013868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13868",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1823,7 +1823,7 @@ archive/issue_comments_013869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2114",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2114#issuecomment-13869",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

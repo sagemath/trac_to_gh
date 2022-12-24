@@ -3,7 +3,7 @@
 archive/issues_009517.json:
 ```json
 {
-    "body": "Assignee: malb\n\nBelow is an example of the strange behavior in sage 4.4.4.\n\n\n```\nsage: PR1=PolynomialRing(QQ,'x');PR2=PolynomialRing(QQ,1,'x')\nsage: PR1;PR2\nUnivariate Polynomial Ring in x over Rational Field\nMultivariate Polynomial Ring in x over Rational Field\n```\n\n\nI've searched for similar problems but only #9220 seems vagely related but is a real different problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9517\n\n",
+    "body": "Assignee: @malb\n\nBelow is an example of the strange behavior in sage 4.4.4.\n\n\n```\nsage: PR1=PolynomialRing(QQ,'x');PR2=PolynomialRing(QQ,1,'x')\nsage: PR1;PR2\nUnivariate Polynomial Ring in x over Rational Field\nMultivariate Polynomial Ring in x over Rational Field\n```\n\n\nI've searched for similar problems but only #9220 seems vagely related but is a real different problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9517\n\n",
     "created_at": "2010-07-16T10:20:32Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_009517.json:
     "title": "PolynomialRing() returns Multivariate polynomial rings when you would expect univariate ones",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9517",
-    "user": "mderickx"
+    "user": "@koffie"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Below is an example of the strange behavior in sage 4.4.4.
 
@@ -48,7 +48,7 @@ archive/issue_comments_091498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9517#issuecomment-91498",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_091499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9517",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9517#issuecomment-91499",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

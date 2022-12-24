@@ -14,7 +14,7 @@ archive/issues_003321.json:
     "title": "Matrix.visualize_structure is too dark/messed up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3321",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: cwitty
@@ -45,7 +45,7 @@ archive/issue_comments_023026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3321#issuecomment-23026",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -58,16 +58,16 @@ png output which is way too dark (it should be white)
 archive/issue_comments_023027.json:
 ```json
 {
-    "body": "Attachment [3321_visualize_structure.patch](tarball://root/attachments/some-uuid/ticket3321/3321_visualize_structure.patch) by malb created at 2009-01-22 07:37:15",
+    "body": "Attachment [3321_visualize_structure.patch](tarball://root/attachments/some-uuid/ticket3321/3321_visualize_structure.patch) by @malb created at 2009-01-22 07:37:15",
     "created_at": "2009-01-22T07:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3321#issuecomment-23027",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [3321_visualize_structure.patch](tarball://root/attachments/some-uuid/ticket3321/3321_visualize_structure.patch) by malb created at 2009-01-22 07:37:15
+Attachment [3321_visualize_structure.patch](tarball://root/attachments/some-uuid/ticket3321/3321_visualize_structure.patch) by @malb created at 2009-01-22 07:37:15
 
 
 
@@ -76,16 +76,16 @@ Attachment [3321_visualize_structure.patch](tarball://root/attachments/some-uuid
 archive/issue_comments_023028.json:
 ```json
 {
-    "body": "Attachment [sage0.2.png](tarball://root/attachments/some-uuid/ticket3321/sage0.2.png) by malb created at 2009-01-22 07:37:50\n\nshows that the bug was indeed fixed",
+    "body": "Attachment [sage0.2.png](tarball://root/attachments/some-uuid/ticket3321/sage0.2.png) by @malb created at 2009-01-22 07:37:50\n\nshows that the bug was indeed fixed",
     "created_at": "2009-01-22T07:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3321#issuecomment-23028",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [sage0.2.png](tarball://root/attachments/some-uuid/ticket3321/sage0.2.png) by malb created at 2009-01-22 07:37:50
+Attachment [sage0.2.png](tarball://root/attachments/some-uuid/ticket3321/sage0.2.png) by @malb created at 2009-01-22 07:37:50
 
 shows that the bug was indeed fixed
 
@@ -101,7 +101,7 @@ archive/issue_comments_023029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3321",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3321#issuecomment-23029",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_001452.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  wdj\n\nRunning doctests on permgroup.py complains that file `id120.z` is missing. Indeed it is!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1452\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  @wdjoyner\n\nRunning doctests on permgroup.py complains that file `id120.z` is missing. Indeed it is!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1452\n\n",
     "created_at": "2007-12-10T19:29:19Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_001452.json:
     "title": "GAP - id120.z file missing (?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1452",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
-CC:  wdj
+CC:  @wdjoyner
 
 Running doctests on permgroup.py complains that file `id120.z` is missing. Indeed it is!
 
@@ -39,7 +39,7 @@ archive/issue_comments_009348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9348",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_009349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9349",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_009352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9352",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_009353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9353",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_009354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9354",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_009355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9355",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_009356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9356",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_009357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9357",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -234,16 +234,16 @@ Changing status from reopened to new.
 archive/issue_comments_009358.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to rlm.",
+    "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2008-03-30T18:43:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9358",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Changing assignee from mhansen to rlm.
+Changing assignee from @mwhansen to @rlmill.
 
 
 
@@ -257,7 +257,7 @@ archive/issue_comments_009359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9359",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_009360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9360",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_009362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9362",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_009363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9363",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -367,7 +367,7 @@ archive/issue_comments_009364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9364",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -385,7 +385,7 @@ archive/issue_comments_009365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9365",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_009366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9366",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

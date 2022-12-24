@@ -3,7 +3,7 @@
 archive/issues_007339.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jason was\n\nPlease see [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/e89f816b32f9fd81) for the report.\n\n*Possibly* relevant recent tickets include #7238 and #7254.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7339\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jasongrout @williamstein\n\nPlease see [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/e89f816b32f9fd81) for the report.\n\n*Possibly* relevant recent tickets include #7238 and #7254.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7339\n\n",
     "created_at": "2009-10-28T19:42:33Z",
     "labels": [
         "notebook",
@@ -13,12 +13,12 @@ archive/issues_007339.json:
     "title": "Fix notebook interaction and cell focus bugs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7339",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
 
-CC:  jason was
+CC:  @jasongrout @williamstein
 
 Please see [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/e89f816b32f9fd81) for the report.
 
@@ -40,7 +40,7 @@ archive/issue_comments_061417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7339#issuecomment-61417",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_061418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7339#issuecomment-61418",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_061419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7339#issuecomment-61419",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -130,16 +130,16 @@ Changing status from new to needs_review.
 archive/issue_comments_061420.json:
 ```json
 {
-    "body": "Attachment [trac_7339-sagenb_cell_bugs.patch](tarball://root/attachments/some-uuid/ticket7339/trac_7339-sagenb_cell_bugs.patch) by mpatel created at 2009-10-29 07:06:18\n\nPlease let me know if either problem remains, or if another obtains.\n\nBy the way, I've made a few changes that would be suggested by [JSLint](http://www.jslint.com/).  Currently, JSLint quits with the message\n\n```\nLint at line 193 character 20: Too many errors. (4% scanned).\n```\n\nAlthough some of the checks may seem pedantic, I think we should aim for a nearly [1] lint-free notebook library per JSLint's \"The Good Parts\" mode ([Crockford video](http://www.youtube.com/watch?v=hQVTIJBZook)).  The short-term pain may reveal and resolve many [potential] problems [2].\n\n[1] We'll need to \"Tolerate `eval`\", but possibly only in `eval_script_tags`.\n\n\n[2] For Python, see [PyChecker](http://pychecker.sourceforge.net/), [PyFlakes](http://divmod.org/trac/wiki/DivmodPyflakes), and [Pylint](http://www.logilab.org/project/pylint).",
+    "body": "Attachment [trac_7339-sagenb_cell_bugs.patch](tarball://root/attachments/some-uuid/ticket7339/trac_7339-sagenb_cell_bugs.patch) by @qed777 created at 2009-10-29 07:06:18\n\nPlease let me know if either problem remains, or if another obtains.\n\nBy the way, I've made a few changes that would be suggested by [JSLint](http://www.jslint.com/).  Currently, JSLint quits with the message\n\n```\nLint at line 193 character 20: Too many errors. (4% scanned).\n```\n\nAlthough some of the checks may seem pedantic, I think we should aim for a nearly [1] lint-free notebook library per JSLint's \"The Good Parts\" mode ([Crockford video](http://www.youtube.com/watch?v=hQVTIJBZook)).  The short-term pain may reveal and resolve many [potential] problems [2].\n\n[1] We'll need to \"Tolerate `eval`\", but possibly only in `eval_script_tags`.\n\n\n[2] For Python, see [PyChecker](http://pychecker.sourceforge.net/), [PyFlakes](http://divmod.org/trac/wiki/DivmodPyflakes), and [Pylint](http://www.logilab.org/project/pylint).",
     "created_at": "2009-10-29T07:06:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7339#issuecomment-61420",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7339-sagenb_cell_bugs.patch](tarball://root/attachments/some-uuid/ticket7339/trac_7339-sagenb_cell_bugs.patch) by mpatel created at 2009-10-29 07:06:18
+Attachment [trac_7339-sagenb_cell_bugs.patch](tarball://root/attachments/some-uuid/ticket7339/trac_7339-sagenb_cell_bugs.patch) by @qed777 created at 2009-10-29 07:06:18
 
 Please let me know if either problem remains, or if another obtains.
 
@@ -163,16 +163,16 @@ Although some of the checks may seem pedantic, I think we should aim for a nearl
 archive/issue_comments_061421.json:
 ```json
 {
-    "body": "Attachment [trac_7339-sagenb_cell_bugs_v2.patch](tarball://root/attachments/some-uuid/ticket7339/trac_7339-sagenb_cell_bugs_v2.patch) by mpatel created at 2009-10-31 08:50:47\n\nRebased vs. #7309, #7310, #7332.  Apply only this patch.",
+    "body": "Attachment [trac_7339-sagenb_cell_bugs_v2.patch](tarball://root/attachments/some-uuid/ticket7339/trac_7339-sagenb_cell_bugs_v2.patch) by @qed777 created at 2009-10-31 08:50:47\n\nRebased vs. #7309, #7310, #7332.  Apply only this patch.",
     "created_at": "2009-10-31T08:50:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7339#issuecomment-61421",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7339-sagenb_cell_bugs_v2.patch](tarball://root/attachments/some-uuid/ticket7339/trac_7339-sagenb_cell_bugs_v2.patch) by mpatel created at 2009-10-31 08:50:47
+Attachment [trac_7339-sagenb_cell_bugs_v2.patch](tarball://root/attachments/some-uuid/ticket7339/trac_7339-sagenb_cell_bugs_v2.patch) by @qed777 created at 2009-10-31 08:50:47
 
 Rebased vs. #7309, #7310, #7332.  Apply only this patch.
 
@@ -188,7 +188,7 @@ archive/issue_comments_061422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7339#issuecomment-61422",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_061423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7339#issuecomment-61423",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_061424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7339",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7339#issuecomment-61424",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

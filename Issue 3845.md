@@ -14,7 +14,7 @@ archive/issues_003845.json:
     "title": "notebook -- improve the datafile editing window",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3845",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby

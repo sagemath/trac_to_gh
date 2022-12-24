@@ -3,7 +3,7 @@
 archive/issues_007160.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nCC:  vdelecroix\n\n\n```\nsage: I^2\n-1\nsage: bool(I^2 < 0)\nTrue\nsage: bool(I^2 > 0)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7160\n\n",
+    "body": "Assignee: @loefflerd\n\nCC:  @videlec\n\n\n```\nsage: I^2\n-1\nsage: bool(I^2 < 0)\nTrue\nsage: bool(I^2 > 0)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7160\n\n",
     "created_at": "2009-10-08T18:38:28Z",
     "labels": [
         "number fields",
@@ -14,12 +14,12 @@ archive/issues_007160.json:
     "title": "comparison with quadratic number field elements needs work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7160",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
-CC:  vdelecroix
+CC:  @videlec
 
 
 ```
@@ -48,7 +48,7 @@ archive/issue_comments_059338.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59338",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_059339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59339",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_059340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59340",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_059341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59341",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_059342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59342",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_059343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59343",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_059344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59344",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_059345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59345",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_059346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59346",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_059347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59347",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_059348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59348",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -335,16 +335,16 @@ Isn't this what we have the QQbar class for?
 archive/issue_comments_059349.json:
 ```json
 {
-    "body": "Attachment [trac_7160.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160.patch) by mhansen created at 2011-12-20 10:09:51",
+    "body": "Attachment [trac_7160.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160.patch) by @mwhansen created at 2011-12-20 10:09:51",
     "created_at": "2011-12-20T10:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59349",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7160.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160.patch) by mhansen created at 2011-12-20 10:09:51
+Attachment [trac_7160.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160.patch) by @mwhansen created at 2011-12-20 10:09:51
 
 
 
@@ -358,7 +358,7 @@ archive/issue_comments_059350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59350",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -376,7 +376,7 @@ archive/issue_comments_059351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59351",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -389,16 +389,16 @@ Changing keywords from "" to "sd35".
 archive/issue_comments_059352.json:
 ```json
 {
-    "body": "Attachment [trac_7160-Q_to_quadratic_field_element.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-Q_to_quadratic_field_element.patch) by burcin created at 2012-01-10 05:41:36\n\nReplying to [comment:7 was]:\n> 4. I feel like this is too much code that gets around a fundamental problem or bug in number field elements in the case of the reported problem, but leaves the underlying bug unfixed.  Note that *before* applying your patch:\n {{{\n sage: bool(I^2 < 0)\n True\n sage: (I^2).pyobject() < 0\n False\n }}}\n> \n> It seems to me that the output of both lines above should be the same, right, but I bet pynac is evaluating the first comparison and not even going to the pyobject level.\n\nThe first comparison is done in the `test_relation()` method of `sage.symbolic.expression.Expression`. This converts both sides of the relation to `CIF` and performs the comparison there.\n\n> Similarly:\n> \n> {{{\n> sage: bool(I^2 < SR(0))\n> True\n> sage: (I^2).pyobject() < SR(0).pyobject()\n> False\n> }}}\n> \n> This is because in Sage we currently have:\n> {{{\n> sage: K.<I> = QuadraticField(-1)\n> sage: I^2 < 0\n> False\n> sage: I^2\n> -1\n> }}}\n> This is, as Cremona pointed out, due to the arbitrary lexicographic ordering rather than using the one we get on the intersection of K and R inside embedding(K). \n> \n> So... it seems to me that the real problem is that the arbitrary ordering is lame.   What you've done is implemented a natural fix in one very, very special case.  Maybe that's the intention, and maybe you had something more general before?  I don't know, since you changed the patch. \n\nNote that this lame ordering is causing problems all over symbolics since `is_positive()` checks fail. See #10849, #10062, #10064 for examples.\n\n> I'm guessing your more general patch changed comparison for all elements to:\n>   (1) check if there is an embedding of the parent(s), and (2) if so, use that to induce an embedding on *the* real subfield of the field(s).   That would be natural. \n\nI attached a new patch at attachment:trac_7160-quadratic_number_field_element_comparison.patch, based on Mike's last patch attachment:trac_7160.patch. This changes the comparison function of quadratic number field elements to always use the embedding into `CC`.\n\nTimings with the patch:\n\n\n```\nsage: K.<sqrt2> = QuadraticField(2)\nsage: t = K.random_element(); t\n-2*sqrt2 - 35\nsage: u = K.random_element(); u\n-1\nsage: %timeit res = cmp(t,u)\n625 loops, best of 3: 659 \u00b5s per loop\nsage: u = K.random_element(); u\n-2*sqrt2 - 1\nsage: %timeit res = cmp(t,u)\n625 loops, best of 3: 807 \u00b5s per loop\n```\n\n\nWithout the patch:\n\n\n```\nsage: K.<sqrt2> = QuadraticField(2)\nsage: t = -2*sqrt2 - 35\nsage: u = K(-1)\nsage: %timeit res = cmp(t,u)\n625 loops, best of 3: 419 ns per loop\nsage: u = -2*sqrt2 - 1\nsage: %timeit res = cmp(t,u)\n625 loops, best of 3: 419 ns per loop\n```\n\n\nSo there is a significant slow down.\n\nThere are two failing doctests I need help with:\n\n\n```\nsage -t  devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py\n**********************************************************************\nFile \"/home/burcin/sage/sage-5.0.prealpha0/devel/sage-main/sage/schemes/elliptic_curves/ell_curve_isogeny.py\", line 4361:\n    sage: _[0].rational_maps()\nExpected:\n    (((-4/25*i - 3/25)*x^5 + (-4/5*i + 2/5)*x^3 + x)/(x^4 + (-4/5*i + 2/5)*x^2 + (-4/25*i - 3/25)),\n    ((2/125*i - 11/125)*x^6*y + (64/125*i + 23/125)*x^4*y + (162/125*i - 141/125)*x^2*y + (-4/25*i - 3/25)*y)/(x^6 + (-6/5*i + 3/5)*x^4 + (-12/25*i - 9/25)*x^2 + (2/125*i - 11/125)))\nGot:\n    (((4/25*i + 3/25)*x^5 + (4/5*i - 2/5)*x^3 - x)/(x^4 + (-4/5*i + 2/5)*x^2 + (-4/25*i - 3/25)), ((11/125*i + 2/125)*x^6*y + (-23/125*i + 64/125)*x^4*y + (141/125*i + 162/125)*x^2*y + (3/25*i - 4/25)*y)/(x^6 + (-6/5*i + 3/5)*x^4 + (-12/25*i - 9/25)*x^2 + (2/125*i - 11/125)))\n**********************************************************************\nFile \"/home/burcin/sage/sage-5.0.prealpha0/devel/sage-main/sage/schemes/elliptic_curves/ell_curve_isogeny.py\", line 4622:\n    sage: isogenies_13_0(E)[0].rational_maps()\nExpected:\n    (((-4/169*r - 11/169)*x^13 + (-128/13*r - 456/13)*x^10 + (-1224/13*r - 2664/13)*x^7 + (-2208/13*r + 5472/13)*x^4 + (1152/13*r - 8064/13)*x)/(x^12 + (4*r - 36)*x^9 + (-1080/13*r + 3816/13)*x^6 + (2112/13*r + 5184/13)*x^3 + (17280/169*r - 1152/169)), ((18/2197*r - 35/2197)*x^18*y + (-23142/2197*r + 35478/2197)*x^15*y + (-1127520/2197*r + 1559664/2197)*x^12*y + (87744/2197*r + 5992704/2197)*x^9*y + (-6625152/2197*r + 9085824/2197)*x^6*y + (28919808/2197*r - 2239488/2197)*x^3*y + (-1990656/2197*r + 3870720/2197)*y)/(x^18 + (6*r - 54)*x^15 + (-3024/13*r + 11808/13)*x^12 + (31296/13*r - 51840/13)*x^9 + (-487296/169*r - 2070144/169)*x^6 + (-940032/169*r - 248832/169)*x^3 + (-1990656/2197*r + 3870720/2197)))\nGot:\n    (((7/338*r + 23/338)*x^13 + (-164/13*r - 420/13)*x^10 + (720/13*r + 3168/13)*x^7 + (3840/13*r - 576/13)*x^4 + (4608/13*r + 2304/13)*x)/(x^12 + (4*r + 36)*x^9 + (1080/13*r + 3816/13)*x^6 + (2112/13*r - 5184/13)*x^3 + (-17280/169*r - 1152/169)), ((18/2197*r + 35/2197)*x^18*y + (23142/2197*r + 35478/2197)*x^15*y + (-1127520/2197*r - 1559664/2197)*x^12*y + (-87744/2197*r + 5992704/2197)*x^9*y + (-6625152/2197*r - 9085824/2197)*x^6*y + (-28919808/2197*r - 2239488/2197)*x^3*y + (-1990656/2197*r - 3870720/2197)*y)/(x^18 + (6*r + 54)*x^15 + (3024/13*r + 11808/13)*x^12 + (31296/13*r + 51840/13)*x^9 + (487296/169*r - 2070144/169)*x^6 + (-940032/169*r + 248832/169)*x^3 + (1990656/2197*r + 3870720/2197)))\n```\n",
+    "body": "Attachment [trac_7160-Q_to_quadratic_field_element.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-Q_to_quadratic_field_element.patch) by @burcin created at 2012-01-10 05:41:36\n\nReplying to [comment:7 was]:\n> 4. I feel like this is too much code that gets around a fundamental problem or bug in number field elements in the case of the reported problem, but leaves the underlying bug unfixed.  Note that *before* applying your patch:\n {{{\n sage: bool(I^2 < 0)\n True\n sage: (I^2).pyobject() < 0\n False\n }}}\n> \n> It seems to me that the output of both lines above should be the same, right, but I bet pynac is evaluating the first comparison and not even going to the pyobject level.\n\nThe first comparison is done in the `test_relation()` method of `sage.symbolic.expression.Expression`. This converts both sides of the relation to `CIF` and performs the comparison there.\n\n> Similarly:\n> \n> {{{\n> sage: bool(I^2 < SR(0))\n> True\n> sage: (I^2).pyobject() < SR(0).pyobject()\n> False\n> }}}\n> \n> This is because in Sage we currently have:\n> {{{\n> sage: K.<I> = QuadraticField(-1)\n> sage: I^2 < 0\n> False\n> sage: I^2\n> -1\n> }}}\n> This is, as Cremona pointed out, due to the arbitrary lexicographic ordering rather than using the one we get on the intersection of K and R inside embedding(K). \n> \n> So... it seems to me that the real problem is that the arbitrary ordering is lame.   What you've done is implemented a natural fix in one very, very special case.  Maybe that's the intention, and maybe you had something more general before?  I don't know, since you changed the patch. \n\nNote that this lame ordering is causing problems all over symbolics since `is_positive()` checks fail. See #10849, #10062, #10064 for examples.\n\n> I'm guessing your more general patch changed comparison for all elements to:\n>   (1) check if there is an embedding of the parent(s), and (2) if so, use that to induce an embedding on *the* real subfield of the field(s).   That would be natural. \n\nI attached a new patch at attachment:trac_7160-quadratic_number_field_element_comparison.patch, based on Mike's last patch attachment:trac_7160.patch. This changes the comparison function of quadratic number field elements to always use the embedding into `CC`.\n\nTimings with the patch:\n\n\n```\nsage: K.<sqrt2> = QuadraticField(2)\nsage: t = K.random_element(); t\n-2*sqrt2 - 35\nsage: u = K.random_element(); u\n-1\nsage: %timeit res = cmp(t,u)\n625 loops, best of 3: 659 \u00b5s per loop\nsage: u = K.random_element(); u\n-2*sqrt2 - 1\nsage: %timeit res = cmp(t,u)\n625 loops, best of 3: 807 \u00b5s per loop\n```\n\n\nWithout the patch:\n\n\n```\nsage: K.<sqrt2> = QuadraticField(2)\nsage: t = -2*sqrt2 - 35\nsage: u = K(-1)\nsage: %timeit res = cmp(t,u)\n625 loops, best of 3: 419 ns per loop\nsage: u = -2*sqrt2 - 1\nsage: %timeit res = cmp(t,u)\n625 loops, best of 3: 419 ns per loop\n```\n\n\nSo there is a significant slow down.\n\nThere are two failing doctests I need help with:\n\n\n```\nsage -t  devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py\n**********************************************************************\nFile \"/home/burcin/sage/sage-5.0.prealpha0/devel/sage-main/sage/schemes/elliptic_curves/ell_curve_isogeny.py\", line 4361:\n    sage: _[0].rational_maps()\nExpected:\n    (((-4/25*i - 3/25)*x^5 + (-4/5*i + 2/5)*x^3 + x)/(x^4 + (-4/5*i + 2/5)*x^2 + (-4/25*i - 3/25)),\n    ((2/125*i - 11/125)*x^6*y + (64/125*i + 23/125)*x^4*y + (162/125*i - 141/125)*x^2*y + (-4/25*i - 3/25)*y)/(x^6 + (-6/5*i + 3/5)*x^4 + (-12/25*i - 9/25)*x^2 + (2/125*i - 11/125)))\nGot:\n    (((4/25*i + 3/25)*x^5 + (4/5*i - 2/5)*x^3 - x)/(x^4 + (-4/5*i + 2/5)*x^2 + (-4/25*i - 3/25)), ((11/125*i + 2/125)*x^6*y + (-23/125*i + 64/125)*x^4*y + (141/125*i + 162/125)*x^2*y + (3/25*i - 4/25)*y)/(x^6 + (-6/5*i + 3/5)*x^4 + (-12/25*i - 9/25)*x^2 + (2/125*i - 11/125)))\n**********************************************************************\nFile \"/home/burcin/sage/sage-5.0.prealpha0/devel/sage-main/sage/schemes/elliptic_curves/ell_curve_isogeny.py\", line 4622:\n    sage: isogenies_13_0(E)[0].rational_maps()\nExpected:\n    (((-4/169*r - 11/169)*x^13 + (-128/13*r - 456/13)*x^10 + (-1224/13*r - 2664/13)*x^7 + (-2208/13*r + 5472/13)*x^4 + (1152/13*r - 8064/13)*x)/(x^12 + (4*r - 36)*x^9 + (-1080/13*r + 3816/13)*x^6 + (2112/13*r + 5184/13)*x^3 + (17280/169*r - 1152/169)), ((18/2197*r - 35/2197)*x^18*y + (-23142/2197*r + 35478/2197)*x^15*y + (-1127520/2197*r + 1559664/2197)*x^12*y + (87744/2197*r + 5992704/2197)*x^9*y + (-6625152/2197*r + 9085824/2197)*x^6*y + (28919808/2197*r - 2239488/2197)*x^3*y + (-1990656/2197*r + 3870720/2197)*y)/(x^18 + (6*r - 54)*x^15 + (-3024/13*r + 11808/13)*x^12 + (31296/13*r - 51840/13)*x^9 + (-487296/169*r - 2070144/169)*x^6 + (-940032/169*r - 248832/169)*x^3 + (-1990656/2197*r + 3870720/2197)))\nGot:\n    (((7/338*r + 23/338)*x^13 + (-164/13*r - 420/13)*x^10 + (720/13*r + 3168/13)*x^7 + (3840/13*r - 576/13)*x^4 + (4608/13*r + 2304/13)*x)/(x^12 + (4*r + 36)*x^9 + (1080/13*r + 3816/13)*x^6 + (2112/13*r - 5184/13)*x^3 + (-17280/169*r - 1152/169)), ((18/2197*r + 35/2197)*x^18*y + (23142/2197*r + 35478/2197)*x^15*y + (-1127520/2197*r - 1559664/2197)*x^12*y + (-87744/2197*r + 5992704/2197)*x^9*y + (-6625152/2197*r - 9085824/2197)*x^6*y + (-28919808/2197*r - 2239488/2197)*x^3*y + (-1990656/2197*r - 3870720/2197)*y)/(x^18 + (6*r + 54)*x^15 + (3024/13*r + 11808/13)*x^12 + (31296/13*r + 51840/13)*x^9 + (487296/169*r - 2070144/169)*x^6 + (-940032/169*r + 248832/169)*x^3 + (1990656/2197*r + 3870720/2197)))\n```\n",
     "created_at": "2012-01-10T05:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59352",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7160-Q_to_quadratic_field_element.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-Q_to_quadratic_field_element.patch) by burcin created at 2012-01-10 05:41:36
+Attachment [trac_7160-Q_to_quadratic_field_element.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-Q_to_quadratic_field_element.patch) by @burcin created at 2012-01-10 05:41:36
 
 Replying to [comment:7 was]:
 > 4. I feel like this is too much code that gets around a fundamental problem or bug in number field elements in the case of the reported problem, but leaves the underlying bug unfixed.  Note that *before* applying your patch:
@@ -511,7 +511,7 @@ archive/issue_comments_059353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59353",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -529,7 +529,7 @@ archive/issue_comments_059354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59354",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -542,16 +542,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_059355.json:
 ```json
 {
-    "body": "Attachment [trac_7160-quadratic_number_field_element_comparison.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-quadratic_number_field_element_comparison.patch) by mhansen created at 2012-03-29 20:23:37\n\napply only this patch",
+    "body": "Attachment [trac_7160-quadratic_number_field_element_comparison.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-quadratic_number_field_element_comparison.patch) by @mwhansen created at 2012-03-29 20:23:37\n\napply only this patch",
     "created_at": "2012-03-29T20:23:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59355",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_7160-quadratic_number_field_element_comparison.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-quadratic_number_field_element_comparison.patch) by mhansen created at 2012-03-29 20:23:37
+Attachment [trac_7160-quadratic_number_field_element_comparison.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-quadratic_number_field_element_comparison.patch) by @mwhansen created at 2012-03-29 20:23:37
 
 apply only this patch
 
@@ -567,7 +567,7 @@ archive/issue_comments_059356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59356",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -585,7 +585,7 @@ archive/issue_comments_059357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59357",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -603,7 +603,7 @@ archive/issue_comments_059358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59358",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -639,7 +639,7 @@ archive/issue_comments_059360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59360",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -657,7 +657,7 @@ archive/issue_comments_059361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59361",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -681,7 +681,7 @@ archive/issue_comments_059362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59362",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -714,7 +714,7 @@ archive/issue_comments_059363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59363",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -732,7 +732,7 @@ archive/issue_comments_059364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59364",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -746,16 +746,16 @@ If there are nearly identical examples to these in #13213, then I think that's o
 archive/issue_comments_059365.json:
 ```json
 {
-    "body": "Attachment [trac_7160-doctest.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-doctest.patch) by vdelecroix created at 2013-05-15 20:25:48",
+    "body": "Attachment [trac_7160-doctest.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-doctest.patch) by @videlec created at 2013-05-15 20:25:48",
     "created_at": "2013-05-15T20:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59365",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
-Attachment [trac_7160-doctest.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-doctest.patch) by vdelecroix created at 2013-05-15 20:25:48
+Attachment [trac_7160-doctest.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-doctest.patch) by @videlec created at 2013-05-15 20:25:48
 
 
 
@@ -769,7 +769,7 @@ archive/issue_comments_059366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59366",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -797,7 +797,7 @@ archive/issue_comments_059367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59367",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -815,7 +815,7 @@ archive/issue_comments_059368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59368",
-    "user": "vdelecroix"
+    "user": "@videlec"
 }
 ```
 
@@ -828,16 +828,16 @@ Now #13213 is positive review. I guess we may close that ticket ?
 archive/issue_comments_059369.json:
 ```json
 {
-    "body": "Attachment [trac_7160-doctest.take2.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-doctest.take2.patch) by burcin created at 2013-06-03 13:52:04\n\nfix commit message, and sphinx trac link",
+    "body": "Attachment [trac_7160-doctest.take2.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-doctest.take2.patch) by @burcin created at 2013-06-03 13:52:04\n\nfix commit message, and sphinx trac link",
     "created_at": "2013-06-03T13:52:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59369",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7160-doctest.take2.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-doctest.take2.patch) by burcin created at 2013-06-03 13:52:04
+Attachment [trac_7160-doctest.take2.patch](tarball://root/attachments/some-uuid/ticket7160/trac_7160-doctest.take2.patch) by @burcin created at 2013-06-03 13:52:04
 
 fix commit message, and sphinx trac link
 
@@ -853,7 +853,7 @@ archive/issue_comments_059370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59370",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -871,7 +871,7 @@ archive/issue_comments_059371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59371",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -891,7 +891,7 @@ archive/issue_comments_059372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7160",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7160#issuecomment-59372",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

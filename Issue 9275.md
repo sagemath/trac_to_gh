@@ -14,7 +14,7 @@ archive/issues_009275.json:
     "title": "2 Bugs related to Simple Sage Server API",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9275",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -88,7 +88,7 @@ archive/issue_comments_087369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9275#issuecomment-87369",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -101,16 +101,16 @@ Changing status from new to needs_review.
 archive/issue_comments_087370.json:
 ```json
 {
-    "body": "Attachment [14208.patch](tarball://root/attachments/some-uuid/ticket9275/14208.patch) by kcrisman created at 2013-06-14 17:11:40\n\nThe simple server does not currently work at all; however, the [Sage cell server](https://github.com/sagemath/sagecell) should fit most of those needs.",
+    "body": "Attachment [14208.patch](tarball://root/attachments/some-uuid/ticket9275/14208.patch) by @kcrisman created at 2013-06-14 17:11:40\n\nThe simple server does not currently work at all; however, the [Sage cell server](https://github.com/sagemath/sagecell) should fit most of those needs.",
     "created_at": "2013-06-14T17:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9275#issuecomment-87370",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [14208.patch](tarball://root/attachments/some-uuid/ticket9275/14208.patch) by kcrisman created at 2013-06-14 17:11:40
+Attachment [14208.patch](tarball://root/attachments/some-uuid/ticket9275/14208.patch) by @kcrisman created at 2013-06-14 17:11:40
 
 The simple server does not currently work at all; however, the [Sage cell server](https://github.com/sagemath/sagecell) should fit most of those needs.
 
@@ -126,7 +126,7 @@ archive/issue_comments_087371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9275#issuecomment-87371",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_087372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9275#issuecomment-87372",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_087373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9275#issuecomment-87373",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -180,7 +180,7 @@ archive/issue_comments_087374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9275",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9275#issuecomment-87374",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

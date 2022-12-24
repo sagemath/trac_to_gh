@@ -3,7 +3,7 @@
 archive/issues_007362.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jason schilly\n\nWe ought to make collaborative worksheet editing somewhat more intuitive, even if we stop short (for now) of implementing full-strength [operational transformations](http://en.wikipedia.org/wiki/Operational_transformation) or employing the [Wave Federation Protocol](http://www.waveprotocol.org/).\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/d46ab54616c03b88/df5e0b2e82af4d5a#df5e0b2e82af4d5a).\n\nFrom [comment:11:ticket:7254 this comment] at #7254:\n\n     The browser and server do not update their `state_number`s if a new cell is added at the end of a sheet, when text cells are added, or cells are deleted. Should we add these to the list, along with the `'delete_all_output'`, `'pretty_print'`, `'system'` worksheet commands? \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7362\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jasongrout @haraldschilly\n\nWe ought to make collaborative worksheet editing somewhat more intuitive, even if we stop short (for now) of implementing full-strength [operational transformations](http://en.wikipedia.org/wiki/Operational_transformation) or employing the [Wave Federation Protocol](http://www.waveprotocol.org/).\n\nSee [sage-notebook](http://groups.google.com/group/sage-notebook/browse_thread/thread/d46ab54616c03b88/df5e0b2e82af4d5a#df5e0b2e82af4d5a).\n\nFrom [comment:11:ticket:7254 this comment] at #7254:\n\n     The browser and server do not update their `state_number`s if a new cell is added at the end of a sheet, when text cells are added, or cells are deleted. Should we add these to the list, along with the `'delete_all_output'`, `'pretty_print'`, `'system'` worksheet commands? \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7362\n\n",
     "created_at": "2009-10-31T14:43:10Z",
     "labels": [
         "notebook",
@@ -13,12 +13,12 @@ archive/issues_007362.json:
     "title": "Make worksheet auto-sync and collaborative editing smarter and more granular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7362",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
 
-CC:  jason schilly
+CC:  @jasongrout @haraldschilly
 
 We ought to make collaborative worksheet editing somewhat more intuitive, even if we stop short (for now) of implementing full-strength [operational transformations](http://en.wikipedia.org/wiki/Operational_transformation) or employing the [Wave Federation Protocol](http://www.waveprotocol.org/).
 
@@ -46,7 +46,7 @@ archive/issue_comments_061689.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7362#issuecomment-61689",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_061690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7362#issuecomment-61690",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_061691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7362",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7362#issuecomment-61691",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

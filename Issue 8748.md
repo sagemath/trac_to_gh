@@ -14,7 +14,7 @@ archive/issues_008748.json:
     "title": "Linear Arboricity, Acyclic edge coloring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8748",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -79,7 +79,7 @@ archive/issue_comments_080036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8748#issuecomment-80036",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_080037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8748#issuecomment-80037",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_080038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8748#issuecomment-80038",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_080039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8748#issuecomment-80039",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_080040.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8748#issuecomment-80040",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -188,16 +188,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_080041.json:
 ```json
 {
-    "body": "Attachment [trac_8748.2.patch](tarball://root/attachments/some-uuid/ticket8748/trac_8748.2.patch) by rlm created at 2010-06-21 21:57:09",
+    "body": "Attachment [trac_8748.2.patch](tarball://root/attachments/some-uuid/ticket8748/trac_8748.2.patch) by @rlmill created at 2010-06-21 21:57:09",
     "created_at": "2010-06-21T21:57:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8748#issuecomment-80041",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8748.2.patch](tarball://root/attachments/some-uuid/ticket8748/trac_8748.2.patch) by rlm created at 2010-06-21 21:57:09
+Attachment [trac_8748.2.patch](tarball://root/attachments/some-uuid/ticket8748/trac_8748.2.patch) by @rlmill created at 2010-06-21 21:57:09
 
 
 
@@ -211,7 +211,7 @@ archive/issue_comments_080042.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8748",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8748#issuecomment-80042",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

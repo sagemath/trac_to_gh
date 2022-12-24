@@ -14,7 +14,7 @@ archive/issues_006885.json:
     "title": "Excessive nesting in PDF reference manual, possibly from ring.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6885",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: tba

@@ -14,7 +14,7 @@ archive/issues_003711.json:
     "title": "notebook -- folder of worksheets not properly saved",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3711",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -62,16 +62,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3711
 archive/issue_comments_026343.json:
 ```json
 {
-    "body": "Attachment [trac_3711.patch](tarball://root/attachments/some-uuid/ticket3711/trac_3711.patch) by mhansen created at 2008-09-07 23:58:47",
+    "body": "Attachment [trac_3711.patch](tarball://root/attachments/some-uuid/ticket3711/trac_3711.patch) by @mwhansen created at 2008-09-07 23:58:47",
     "created_at": "2008-09-07T23:58:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3711#issuecomment-26343",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3711.patch](tarball://root/attachments/some-uuid/ticket3711/trac_3711.patch) by mhansen created at 2008-09-07 23:58:47
+Attachment [trac_3711.patch](tarball://root/attachments/some-uuid/ticket3711/trac_3711.patch) by @mwhansen created at 2008-09-07 23:58:47
 
 
 
@@ -80,16 +80,16 @@ Attachment [trac_3711.patch](tarball://root/attachments/some-uuid/ticket3711/tra
 archive/issue_comments_026344.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2008-09-08T00:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3711#issuecomment-26344",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -103,7 +103,7 @@ archive/issue_comments_026345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3711#issuecomment-26345",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_026346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3711",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3711#issuecomment-26346",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

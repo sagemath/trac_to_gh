@@ -3,7 +3,7 @@
 archive/issues_007825.json:
 ```json
 {
-    "body": "Assignee: pjeremy\n\nCC:  drkirkby was craigcitro\n\nFreeBSD refers to the x86_64 architecture under its original name of 'amd64' so use this as an alias for x86_64.  The `-fPIC' fix is needed to correct:\n\n```\ngcc  -o libpari-gmp.so.2.3.3 -shared  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -Wl,-shared,-soname=libpari-gmp.so.2 mp.o mpinl.o Flx.o Qfb.o RgX.o alglin1.o alglin2.o arith1.o arith2.o base1.o base2.o base3.o base4.o base5.o bibli1.o bibli2.o buch1.o buch2.o buch3.o buch4.o galconj.o gen1.o gen2.o gen3.o ifactor1.o perm.o polarit1.o polarit2.o polarit3.o rootpol.o subcyclo.o subgroup.o trans1.o trans2.o trans3.o anal.o compat.o default.o errmsg.o es.o init.o intnum.o members.o sumiter.o aprcl.o elldata.o elliptic.o galois.o groupid.o kummer.o mpqs.o nffactor.o part.o stark.o subfield.o thue.o -lc -lm -L/home/peter/sage/sage-4.3/local/lib -lgmp \n/usr/bin/ld: mp.o: relocation R_X86_64_32S can not be used when making a shared object; recompile with -fPIC\nmp.o: could not read symbols: Bad value\n*** Error code 1\n\nStop in /home/peter/sage/sage-4.3/spkg/build/pari-2.3.3.p5/src/Ofreebsd-amd64.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7825\n\n",
+    "body": "Assignee: @peterjeremy\n\nCC:  drkirkby @williamstein @craigcitro\n\nFreeBSD refers to the x86_64 architecture under its original name of 'amd64' so use this as an alias for x86_64.  The `-fPIC' fix is needed to correct:\n\n```\ngcc  -o libpari-gmp.so.2.3.3 -shared  -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer  -Wl,-shared,-soname=libpari-gmp.so.2 mp.o mpinl.o Flx.o Qfb.o RgX.o alglin1.o alglin2.o arith1.o arith2.o base1.o base2.o base3.o base4.o base5.o bibli1.o bibli2.o buch1.o buch2.o buch3.o buch4.o galconj.o gen1.o gen2.o gen3.o ifactor1.o perm.o polarit1.o polarit2.o polarit3.o rootpol.o subcyclo.o subgroup.o trans1.o trans2.o trans3.o anal.o compat.o default.o errmsg.o es.o init.o intnum.o members.o sumiter.o aprcl.o elldata.o elliptic.o galois.o groupid.o kummer.o mpqs.o nffactor.o part.o stark.o subfield.o thue.o -lc -lm -L/home/peter/sage/sage-4.3/local/lib -lgmp \n/usr/bin/ld: mp.o: relocation R_X86_64_32S can not be used when making a shared object; recompile with -fPIC\nmp.o: could not read symbols: Bad value\n*** Error code 1\n\nStop in /home/peter/sage/sage-4.3/spkg/build/pari-2.3.3.p5/src/Ofreebsd-amd64.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7825\n\n",
     "created_at": "2010-01-03T02:26:54Z",
     "labels": [
         "porting: BSD",
@@ -14,12 +14,12 @@ archive/issues_007825.json:
     "title": "pari-2.3.3.p5 compilation fails on FreeBSD/amd64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7825",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: pjeremy
+Assignee: @peterjeremy
 
-CC:  drkirkby was craigcitro
+CC:  drkirkby @williamstein @craigcitro
 
 FreeBSD refers to the x86_64 architecture under its original name of 'amd64' so use this as an alias for x86_64.  The `-fPIC' fix is needed to correct:
 
@@ -44,16 +44,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7825
 archive/issue_comments_067732.json:
 ```json
 {
-    "body": "Attachment [7825.pari.patch](tarball://root/attachments/some-uuid/ticket7825/7825.pari.patch) by pjeremy created at 2010-01-03 02:28:28",
+    "body": "Attachment [7825.pari.patch](tarball://root/attachments/some-uuid/ticket7825/7825.pari.patch) by @peterjeremy created at 2010-01-03 02:28:28",
     "created_at": "2010-01-03T02:28:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7825#issuecomment-67732",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [7825.pari.patch](tarball://root/attachments/some-uuid/ticket7825/7825.pari.patch) by pjeremy created at 2010-01-03 02:28:28
+Attachment [7825.pari.patch](tarball://root/attachments/some-uuid/ticket7825/7825.pari.patch) by @peterjeremy created at 2010-01-03 02:28:28
 
 
 
@@ -104,7 +104,7 @@ archive/issue_comments_067734.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7825#issuecomment-67734",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_067735.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7825#issuecomment-67735",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_067738.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7825#issuecomment-67738",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_067739.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7825",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7825#issuecomment-67739",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

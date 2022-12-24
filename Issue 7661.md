@@ -3,7 +3,7 @@
 archive/issues_007661.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  robert.marik\n\nKeywords: maxima\n\nFrom the sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/c89582242c83a349\n\n\n```\nOn Fri, 11 Dec 2009 13:46:31 +0100\nNathann Cohen <nathann.cohen@gmail.com> wrote:\n\n> sage: var('delta k')\n> sage: m1=2*delta**2 + 2**2*delta*k\n> sage: n=delta*k+2\n> sage: m2=(2*delta)**2+(k-1)*4\n> sage: m=(delta+delta*k-(delta-1))\n> sage: ((m1/n)-(m2/n)).expand().simplify()\n```\n\n\nOn 4.3.rc0, I get this:\n\n```\nTypeError: unsupported operand parent(s) for '*': 'Symbolic Ring' and\n'<class 'sage.functions.generalized.FunctionDiracDelta'>'\n```\n\n\nThe Maxima interface seems to give precedence to the global function\ndictionary instead of the local variables when converting Maxima output\nback to Sage expressions.\n\n```\nsage: dirac_delta(x)\ndirac_delta(x)\nsage: maxima(dirac_delta(x))\ndelta(x)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7661\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @robert-marik\n\nKeywords: maxima\n\nFrom the sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/c89582242c83a349\n\n\n```\nOn Fri, 11 Dec 2009 13:46:31 +0100\nNathann Cohen <nathann.cohen@gmail.com> wrote:\n\n> sage: var('delta k')\n> sage: m1=2*delta**2 + 2**2*delta*k\n> sage: n=delta*k+2\n> sage: m2=(2*delta)**2+(k-1)*4\n> sage: m=(delta+delta*k-(delta-1))\n> sage: ((m1/n)-(m2/n)).expand().simplify()\n```\n\n\nOn 4.3.rc0, I get this:\n\n```\nTypeError: unsupported operand parent(s) for '*': 'Symbolic Ring' and\n'<class 'sage.functions.generalized.FunctionDiracDelta'>'\n```\n\n\nThe Maxima interface seems to give precedence to the global function\ndictionary instead of the local variables when converting Maxima output\nback to Sage expressions.\n\n```\nsage: dirac_delta(x)\ndirac_delta(x)\nsage: maxima(dirac_delta(x))\ndelta(x)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7661\n\n",
     "created_at": "2009-12-11T14:18:05Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_007661.json:
     "title": "maxima interface gives precedence to function dictionary instead of local variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7661",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  robert.marik
+CC:  @robert-marik
 
 Keywords: maxima
 
@@ -77,7 +77,7 @@ archive/issue_comments_065583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65583",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_065585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65585",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_065586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65586",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_065587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65587",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -184,16 +184,16 @@ Changing status from new to needs_review.
 archive/issue_comments_065588.json:
 ```json
 {
-    "body": "Attachment [trac_7661-maxima_convert_back.patch](tarball://root/attachments/some-uuid/ticket7661/trac_7661-maxima_convert_back.patch) by burcin created at 2010-04-06 15:42:51\n\nI updated attachment:trac_7661-maxima_convert_back.patch to remove a doctest fix broken by a previous patch in my queue (#6949, `symbol...` line in sage/symbolic/ring.pyx).\n\nThis patch depends on #7748.",
+    "body": "Attachment [trac_7661-maxima_convert_back.patch](tarball://root/attachments/some-uuid/ticket7661/trac_7661-maxima_convert_back.patch) by @burcin created at 2010-04-06 15:42:51\n\nI updated attachment:trac_7661-maxima_convert_back.patch to remove a doctest fix broken by a previous patch in my queue (#6949, `symbol...` line in sage/symbolic/ring.pyx).\n\nThis patch depends on #7748.",
     "created_at": "2010-04-06T15:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65588",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7661-maxima_convert_back.patch](tarball://root/attachments/some-uuid/ticket7661/trac_7661-maxima_convert_back.patch) by burcin created at 2010-04-06 15:42:51
+Attachment [trac_7661-maxima_convert_back.patch](tarball://root/attachments/some-uuid/ticket7661/trac_7661-maxima_convert_back.patch) by @burcin created at 2010-04-06 15:42:51
 
 I updated attachment:trac_7661-maxima_convert_back.patch to remove a doctest fix broken by a previous patch in my queue (#6949, `symbol...` line in sage/symbolic/ring.pyx).
 
@@ -211,7 +211,7 @@ archive/issue_comments_065589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65589",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -238,7 +238,7 @@ archive/issue_comments_065590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65590",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -255,16 +255,16 @@ Thanks for your time Robert.
 archive/issue_comments_065591.json:
 ```json
 {
-    "body": "Changing assignee from was to burcin.",
+    "body": "Changing assignee from @williamstein to @burcin.",
     "created_at": "2010-04-09T10:46:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65591",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from was to burcin.
+Changing assignee from @williamstein to @burcin.
 
 
 
@@ -278,7 +278,7 @@ archive/issue_comments_065592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65592",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_065593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65593",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_065594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65594",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_065595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65595",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -365,16 +365,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_065596.json:
 ```json
 {
-    "body": "Attachment [trac_7661-maxima_convert_back.take2.patch](tarball://root/attachments/some-uuid/ticket7661/trac_7661-maxima_convert_back.take2.patch) by burcin created at 2010-04-09 18:54:11\n\napply only this patch",
+    "body": "Attachment [trac_7661-maxima_convert_back.take2.patch](tarball://root/attachments/some-uuid/ticket7661/trac_7661-maxima_convert_back.take2.patch) by @burcin created at 2010-04-09 18:54:11\n\napply only this patch",
     "created_at": "2010-04-09T18:54:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65596",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_7661-maxima_convert_back.take2.patch](tarball://root/attachments/some-uuid/ticket7661/trac_7661-maxima_convert_back.take2.patch) by burcin created at 2010-04-09 18:54:11
+Attachment [trac_7661-maxima_convert_back.take2.patch](tarball://root/attachments/some-uuid/ticket7661/trac_7661-maxima_convert_back.take2.patch) by @burcin created at 2010-04-09 18:54:11
 
 apply only this patch
 
@@ -390,7 +390,7 @@ archive/issue_comments_065597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65597",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -411,7 +411,7 @@ archive/issue_comments_065598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65598",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_065599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65599",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_065600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65600",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -468,7 +468,7 @@ archive/issue_comments_065601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65601",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_065602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65602",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -504,7 +504,7 @@ archive/issue_comments_065603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7661",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7661#issuecomment-65603",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

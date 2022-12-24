@@ -3,7 +3,7 @@
 archive/issues_006112.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis file has been superseded by those in `sage/groups/perm_gps/partn_ref`. I think its time has come.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6112\n\n",
+    "body": "Assignee: @rlmill\n\nThis file has been superseded by those in `sage/groups/perm_gps/partn_ref`. I think its time has come.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6112\n\n",
     "created_at": "2009-05-21T15:03:48Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_006112.json:
     "title": "Remove stale file sage/graphs/graph_isom.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6112",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This file has been superseded by those in `sage/groups/perm_gps/partn_ref`. I think its time has come.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6112
 archive/issue_comments_048832.json:
 ```json
 {
-    "body": "Attachment [trac_6112.patch](tarball://root/attachments/some-uuid/ticket6112/trac_6112.patch) by ddrake created at 2009-06-16 02:23:37",
+    "body": "Attachment [trac_6112.patch](tarball://root/attachments/some-uuid/ticket6112/trac_6112.patch) by @dandrake created at 2009-06-16 02:23:37",
     "created_at": "2009-06-16T02:23:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6112#issuecomment-48832",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_6112.patch](tarball://root/attachments/some-uuid/ticket6112/trac_6112.patch) by ddrake created at 2009-06-16 02:23:37
+Attachment [trac_6112.patch](tarball://root/attachments/some-uuid/ticket6112/trac_6112.patch) by @dandrake created at 2009-06-16 02:23:37
 
 
 
@@ -50,16 +50,16 @@ Attachment [trac_6112.patch](tarball://root/attachments/some-uuid/ticket6112/tra
 archive/issue_comments_048833.json:
 ```json
 {
-    "body": "Changing assignee from rlm to ddrake.",
+    "body": "Changing assignee from @rlmill to @dandrake.",
     "created_at": "2009-06-16T02:25:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6112#issuecomment-48833",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Changing assignee from rlm to ddrake.
+Changing assignee from @rlmill to @dandrake.
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_048834.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6112#issuecomment-48834",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_048835.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6112#issuecomment-48835",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_048836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6112#issuecomment-48836",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_048837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6112#issuecomment-48837",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -140,16 +140,16 @@ I'll take care of this -- I'm currently in the middle of overhauling graphs, and
 archive/issue_comments_048838.json:
 ```json
 {
-    "body": "Attachment [trac_6112-module_list.py](tarball://root/attachments/some-uuid/ticket6112/trac_6112-module_list.py) by rlm created at 2009-06-21 22:05:27",
+    "body": "Attachment [trac_6112-module_list.py](tarball://root/attachments/some-uuid/ticket6112/trac_6112-module_list.py) by @rlmill created at 2009-06-21 22:05:27",
     "created_at": "2009-06-21T22:05:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6112#issuecomment-48838",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6112-module_list.py](tarball://root/attachments/some-uuid/ticket6112/trac_6112-module_list.py) by rlm created at 2009-06-21 22:05:27
+Attachment [trac_6112-module_list.py](tarball://root/attachments/some-uuid/ticket6112/trac_6112-module_list.py) by @rlmill created at 2009-06-21 22:05:27
 
 
 
@@ -163,7 +163,7 @@ archive/issue_comments_048839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6112#issuecomment-48839",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_048840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6112",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6112#issuecomment-48840",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

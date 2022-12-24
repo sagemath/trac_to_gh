@@ -14,7 +14,7 @@ archive/issues_008411.json:
     "title": "Branching rule fix and doc revision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8411",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 Assignee: sage-combinat
@@ -51,7 +51,7 @@ archive/issue_comments_075354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8411#issuecomment-75354",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_075355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8411#issuecomment-75355",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_075356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8411#issuecomment-75356",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -110,7 +110,7 @@ archive/issue_comments_075357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8411#issuecomment-75357",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_075358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8411#issuecomment-75358",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_075359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8411#issuecomment-75359",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
@@ -166,16 +166,16 @@ Branching rule fix and revised doc in weyl_characters.py
 archive/issue_comments_075360.json:
 ```json
 {
-    "body": "Attachment [trac_8411_branching_rules.patch](tarball://root/attachments/some-uuid/ticket8411/trac_8411_branching_rules.patch) by bump created at 2010-04-19 01:31:11\n\n> Please also include the ticket number in the patch title!\n>\n> #8411: Branching rule fix and doc revision\n>\n> Sorry for the extra bother ...\n\nOK, I changed the patch description to begin #8411.",
+    "body": "Attachment [trac_8411_branching_rules.patch](tarball://root/attachments/some-uuid/ticket8411/trac_8411_branching_rules.patch) by @dwbump created at 2010-04-19 01:31:11\n\n> Please also include the ticket number in the patch title!\n>\n> #8411: Branching rule fix and doc revision\n>\n> Sorry for the extra bother ...\n\nOK, I changed the patch description to begin #8411.",
     "created_at": "2010-04-19T01:31:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8411#issuecomment-75360",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
 
-Attachment [trac_8411_branching_rules.patch](tarball://root/attachments/some-uuid/ticket8411/trac_8411_branching_rules.patch) by bump created at 2010-04-19 01:31:11
+Attachment [trac_8411_branching_rules.patch](tarball://root/attachments/some-uuid/ticket8411/trac_8411_branching_rules.patch) by @dwbump created at 2010-04-19 01:31:11
 
 > Please also include the ticket number in the patch title!
 >
@@ -239,7 +239,7 @@ archive/issue_comments_075363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8411#issuecomment-75363",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -257,7 +257,7 @@ archive/issue_comments_075364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8411",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8411#issuecomment-75364",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

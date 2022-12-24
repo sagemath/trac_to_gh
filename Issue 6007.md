@@ -14,7 +14,7 @@ archive/issues_006007.json:
     "title": "Bring plot/primitive.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6007",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6007
 archive/issue_comments_047794.json:
 ```json
 {
-    "body": "Attachment [trac_6007.patch](tarball://root/attachments/some-uuid/ticket6007/trac_6007.patch) by kcrisman created at 2009-05-08 16:44:19",
+    "body": "Attachment [trac_6007.patch](tarball://root/attachments/some-uuid/ticket6007/trac_6007.patch) by @kcrisman created at 2009-05-08 16:44:19",
     "created_at": "2009-05-08T16:44:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6007#issuecomment-47794",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6007.patch](tarball://root/attachments/some-uuid/ticket6007/trac_6007.patch) by kcrisman created at 2009-05-08 16:44:19
+Attachment [trac_6007.patch](tarball://root/attachments/some-uuid/ticket6007/trac_6007.patch) by @kcrisman created at 2009-05-08 16:44:19
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_047795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6007#issuecomment-47795",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_047796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6007#issuecomment-47796",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -86,16 +86,16 @@ Please see [http://groups.google.com/group/sage-devel/browse_thread/thread/1adac
 archive/issue_comments_047797.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to kcrisman.",
+    "body": "Changing assignee from mabshoff to @kcrisman.",
     "created_at": "2009-05-08T16:45:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6007#issuecomment-47797",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Changing assignee from mabshoff to kcrisman.
+Changing assignee from mabshoff to @kcrisman.
 
 
 
@@ -109,7 +109,7 @@ archive/issue_comments_047798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6007#issuecomment-47798",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_047801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6007",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6007#issuecomment-47801",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

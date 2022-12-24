@@ -138,7 +138,7 @@ archive/issue_comments_070143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8030#issuecomment-70143",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -259,16 +259,16 @@ All tests passes including the optional one...
 archive/issue_comments_070148.json:
 ```json
 {
-    "body": "Attachment [trac_8030_stabilizer_bug-nb.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030_stabilizer_bug-nb.patch) by nthiery created at 2010-05-18 21:30:58\n\nThe new implementation does the simplest thing: to just call GAP; and that fixes the problem at hand.The patch also adds a lots of doctests. All tests pass on 4.4.1. Positive review!",
+    "body": "Attachment [trac_8030_stabilizer_bug-nb.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030_stabilizer_bug-nb.patch) by @nthiery created at 2010-05-18 21:30:58\n\nThe new implementation does the simplest thing: to just call GAP; and that fixes the problem at hand.The patch also adds a lots of doctests. All tests pass on 4.4.1. Positive review!",
     "created_at": "2010-05-18T21:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8030#issuecomment-70148",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [trac_8030_stabilizer_bug-nb.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030_stabilizer_bug-nb.patch) by nthiery created at 2010-05-18 21:30:58
+Attachment [trac_8030_stabilizer_bug-nb.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030_stabilizer_bug-nb.patch) by @nthiery created at 2010-05-18 21:30:58
 
 The new implementation does the simplest thing: to just call GAP; and that fixes the problem at hand.The patch also adds a lots of doctests. All tests pass on 4.4.1. Positive review!
 
@@ -284,7 +284,7 @@ archive/issue_comments_070149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8030#issuecomment-70149",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_070150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8030#issuecomment-70150",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -315,16 +315,16 @@ Fix a trivial typo, and add hg header. Apply only this one.
 archive/issue_comments_070151.json:
 ```json
 {
-    "body": "Attachment [trac_8030-stabilizer_bug-nb.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030-stabilizer_bug-nb.patch) by rbeezer created at 2010-05-31 03:23:36\n\nStandalone doctring improvements, reviewer patch",
+    "body": "Attachment [trac_8030-stabilizer_bug-nb.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030-stabilizer_bug-nb.patch) by @rbeezer created at 2010-05-31 03:23:36\n\nStandalone doctring improvements, reviewer patch",
     "created_at": "2010-05-31T03:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8030#issuecomment-70151",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8030-stabilizer_bug-nb.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030-stabilizer_bug-nb.patch) by rbeezer created at 2010-05-31 03:23:36
+Attachment [trac_8030-stabilizer_bug-nb.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030-stabilizer_bug-nb.patch) by @rbeezer created at 2010-05-31 03:23:36
 
 Standalone doctring improvements, reviewer patch
 
@@ -335,16 +335,16 @@ Standalone doctring improvements, reviewer patch
 archive/issue_comments_070152.json:
 ```json
 {
-    "body": "Attachment [trac_8030-reviewer-doc-edit.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030-reviewer-doc-edit.patch) by rbeezer created at 2010-05-31 03:30:06\n\nSomehow I thought this needed review, but obviously didn't look close enough.\n\nIn any event, I made some improvements to the docstring, which I just added.  I'm going to move them to a new ticket, so as to not mess this up.  Sorry for the confusion.\n\nRelease manager - you can remove trac_8030-reviewer-doc-edit.patch - it'll appear elsewhere with a new name.\n\nRob",
+    "body": "Attachment [trac_8030-reviewer-doc-edit.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030-reviewer-doc-edit.patch) by @rbeezer created at 2010-05-31 03:30:06\n\nSomehow I thought this needed review, but obviously didn't look close enough.\n\nIn any event, I made some improvements to the docstring, which I just added.  I'm going to move them to a new ticket, so as to not mess this up.  Sorry for the confusion.\n\nRelease manager - you can remove trac_8030-reviewer-doc-edit.patch - it'll appear elsewhere with a new name.\n\nRob",
     "created_at": "2010-05-31T03:30:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8030#issuecomment-70152",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_8030-reviewer-doc-edit.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030-reviewer-doc-edit.patch) by rbeezer created at 2010-05-31 03:30:06
+Attachment [trac_8030-reviewer-doc-edit.patch](tarball://root/attachments/some-uuid/ticket8030/trac_8030-reviewer-doc-edit.patch) by @rbeezer created at 2010-05-31 03:30:06
 
 Somehow I thought this needed review, but obviously didn't look close enough.
 
@@ -366,7 +366,7 @@ archive/issue_comments_070153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8030#issuecomment-70153",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -384,7 +384,7 @@ archive/issue_comments_070154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8030#issuecomment-70154",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -412,7 +412,7 @@ archive/issue_comments_070155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8030",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8030#issuecomment-70155",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 

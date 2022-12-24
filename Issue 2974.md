@@ -14,7 +14,7 @@ archive/issues_002974.json:
     "title": "interfaces/r.py doctest failures on many linux machines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2974",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: failure
@@ -113,7 +113,7 @@ archive/issue_comments_020492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2974#issuecomment-20492",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -126,16 +126,16 @@ Changing status from new to assigned.
 archive/issue_comments_020493.json:
 ```json
 {
-    "body": "Attachment [2974.patch](tarball://root/attachments/some-uuid/ticket2974/2974.patch) by mhansen created at 2008-04-21 00:40:03",
+    "body": "Attachment [2974.patch](tarball://root/attachments/some-uuid/ticket2974/2974.patch) by @mwhansen created at 2008-04-21 00:40:03",
     "created_at": "2008-04-21T00:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2974#issuecomment-20493",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [2974.patch](tarball://root/attachments/some-uuid/ticket2974/2974.patch) by mhansen created at 2008-04-21 00:40:03
+Attachment [2974.patch](tarball://root/attachments/some-uuid/ticket2974/2974.patch) by @mwhansen created at 2008-04-21 00:40:03
 
 
 
@@ -144,16 +144,16 @@ Attachment [2974.patch](tarball://root/attachments/some-uuid/ticket2974/2974.pat
 archive/issue_comments_020494.json:
 ```json
 {
-    "body": "Changing assignee from failure to mhansen.",
+    "body": "Changing assignee from failure to @mwhansen.",
     "created_at": "2008-04-21T00:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2974#issuecomment-20494",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from failure to mhansen.
+Changing assignee from failure to @mwhansen.
 
 
 
@@ -203,7 +203,7 @@ archive/issue_comments_020497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2974#issuecomment-20497",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_020498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2974",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2974#issuecomment-20498",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

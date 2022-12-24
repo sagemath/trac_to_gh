@@ -3,7 +3,7 @@
 archive/issues_002392.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  ncalexan\n\nKeywords: univariate polynomial discriminant\n\nAs it says: generic univariate polynomial has no discriminant function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2392\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @ncalexan\n\nKeywords: univariate polynomial discriminant\n\nAs it says: generic univariate polynomial has no discriminant function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2392\n\n",
     "created_at": "2008-03-05T02:00:14Z",
     "labels": [
         "porting: Cygwin",
@@ -14,12 +14,12 @@ archive/issues_002392.json:
     "title": "[with patch, needs review] generic univariate polynomial has no discriminant function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2392",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 Assignee: mabshoff
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: univariate polynomial discriminant
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2392
 archive/issue_comments_016134.json:
 ```json
 {
-    "body": "Attachment [2392-ncalexan-discriminant-1.patch](tarball://root/attachments/some-uuid/ticket2392/2392-ncalexan-discriminant-1.patch) by malb created at 2008-03-05 11:30:28\n\n**Review**:\n* patch looks good, I say apply\n* shall we open a ticket for the mentioned Sage<->PARI issue?",
+    "body": "Attachment [2392-ncalexan-discriminant-1.patch](tarball://root/attachments/some-uuid/ticket2392/2392-ncalexan-discriminant-1.patch) by @malb created at 2008-03-05 11:30:28\n\n**Review**:\n* patch looks good, I say apply\n* shall we open a ticket for the mentioned Sage<->PARI issue?",
     "created_at": "2008-03-05T11:30:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2392#issuecomment-16134",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [2392-ncalexan-discriminant-1.patch](tarball://root/attachments/some-uuid/ticket2392/2392-ncalexan-discriminant-1.patch) by malb created at 2008-03-05 11:30:28
+Attachment [2392-ncalexan-discriminant-1.patch](tarball://root/attachments/some-uuid/ticket2392/2392-ncalexan-discriminant-1.patch) by @malb created at 2008-03-05 11:30:28
 
 **Review**:
 * patch looks good, I say apply
@@ -135,7 +135,7 @@ archive/issue_comments_016138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2392",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2392#issuecomment-16138",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

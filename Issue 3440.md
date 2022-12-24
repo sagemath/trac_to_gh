@@ -3,7 +3,7 @@
 archive/issues_003440.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  polybori burcin\n\nKeywords: polybori\n\nBurcin says this broke when the iterators changed:\n\n```\nsage: sr = mq.SR(2,1,1,4,gf2=True)\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names())\nsage: I = Ideal([B(f) for f in F])\nsage: type(I)\n<class 'sage.rings.polynomial.pbori.BooleanPolynomialIdeal'>\nsage: I.groebner_basis(aes=True)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n...\n/usr/local/sage-3.0/local/lib/python2.5/site-packages/polybori/PyPolyBoRi.py in <lambda>(x)\n     21 OrderCode.__dict__ = order_dict\n     22\n---> 23 Variable = lambda x: get_cring().gen(x)\n     24\n     25 def Ring(n, order='lp'):\n\n/home/malb/pbori.pyx in sage.rings.polynomial.pbori.BooleanPolynomialRing.gen (sage/rings/polynomial/pbori.cpp:3333)()\n\n<type 'exceptions.TypeError'>: an integer is required\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3440\n\n",
+    "body": "Assignee: @malb\n\nCC:  polybori @burcin\n\nKeywords: polybori\n\nBurcin says this broke when the iterators changed:\n\n```\nsage: sr = mq.SR(2,1,1,4,gf2=True)\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names())\nsage: I = Ideal([B(f) for f in F])\nsage: type(I)\n<class 'sage.rings.polynomial.pbori.BooleanPolynomialIdeal'>\nsage: I.groebner_basis(aes=True)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n...\n/usr/local/sage-3.0/local/lib/python2.5/site-packages/polybori/PyPolyBoRi.py in <lambda>(x)\n     21 OrderCode.__dict__ = order_dict\n     22\n---> 23 Variable = lambda x: get_cring().gen(x)\n     24\n     25 def Ring(n, order='lp'):\n\n/home/malb/pbori.pyx in sage.rings.polynomial.pbori.BooleanPolynomialRing.gen (sage/rings/polynomial/pbori.cpp:3333)()\n\n<type 'exceptions.TypeError'>: an integer is required\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3440\n\n",
     "created_at": "2008-06-16T20:03:55Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_003440.json:
     "title": "Our PolyBoRi's GB calculation in AES mode is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3440",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  polybori burcin
+CC:  polybori @burcin
 
 Keywords: polybori
 
@@ -88,7 +88,7 @@ archive/issue_comments_024272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3440#issuecomment-24272",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -101,16 +101,16 @@ this fixes the first issue
 archive/issue_comments_024273.json:
 ```json
 {
-    "body": "Attachment [trac_3440_gen.patch](tarball://root/attachments/some-uuid/ticket3440/trac_3440_gen.patch) by malb created at 2008-08-18 12:13:00\n\nThe attache patch fixes the issue above, however now:\n\n\n```\nsage: sr = mq.SR(2,1,1,4,gf2=True)\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names())\nsage: I = Ideal([B(f) for f in F])\nsage: type(I)\n<class 'sage.rings.polynomial.pbori.BooleanPolynomialIdeal'>\nsage: I.groebner_basis(aes=True)\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n...\n/usr/local/sage-3.0.6/local/lib/python2.5/site-packages/polybori/aes.py in preprocess(I, prot)\n     55     global cache\n     56     if get_order_code()==OrderCode.lp:\n---> 57       import cache as cache_module\n     58       cache=cache_module.cache\n     59       del cache_module\nImportError: No module named cache\n```\n\n\nIdeas, thoughts, work-arounds?",
+    "body": "Attachment [trac_3440_gen.patch](tarball://root/attachments/some-uuid/ticket3440/trac_3440_gen.patch) by @malb created at 2008-08-18 12:13:00\n\nThe attache patch fixes the issue above, however now:\n\n\n```\nsage: sr = mq.SR(2,1,1,4,gf2=True)\nsage: F,s = sr.polynomial_system()\nsage: R = F.ring()\nsage: B = BooleanPolynomialRing(R.ngens(),R.variable_names())\nsage: I = Ideal([B(f) for f in F])\nsage: type(I)\n<class 'sage.rings.polynomial.pbori.BooleanPolynomialIdeal'>\nsage: I.groebner_basis(aes=True)\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n...\n/usr/local/sage-3.0.6/local/lib/python2.5/site-packages/polybori/aes.py in preprocess(I, prot)\n     55     global cache\n     56     if get_order_code()==OrderCode.lp:\n---> 57       import cache as cache_module\n     58       cache=cache_module.cache\n     59       del cache_module\nImportError: No module named cache\n```\n\n\nIdeas, thoughts, work-arounds?",
     "created_at": "2008-08-18T12:13:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3440#issuecomment-24273",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_3440_gen.patch](tarball://root/attachments/some-uuid/ticket3440/trac_3440_gen.patch) by malb created at 2008-08-18 12:13:00
+Attachment [trac_3440_gen.patch](tarball://root/attachments/some-uuid/ticket3440/trac_3440_gen.patch) by @malb created at 2008-08-18 12:13:00
 
 The attache patch fixes the issue above, however now:
 
@@ -180,7 +180,7 @@ archive/issue_comments_024275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3440#issuecomment-24275",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_024276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3440#issuecomment-24276",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

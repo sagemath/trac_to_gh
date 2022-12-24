@@ -3,7 +3,7 @@
 archive/issues_002866.json:
 ```json
 {
-    "body": "Assignee: yi\n\nSwitch from using hard coded 'test.db' to use the tempfile module's NamedTemporaryFile().\n\nIssue created by migration from https://trac.sagemath.org/ticket/2866\n\n",
+    "body": "Assignee: @yqiang\n\nSwitch from using hard coded 'test.db' to use the tempfile module's NamedTemporaryFile().\n\nIssue created by migration from https://trac.sagemath.org/ticket/2866\n\n",
     "created_at": "2008-04-09T23:05:27Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002866.json:
     "title": "[with patch, needs review] use tempfile.NamedTemporaryFile for unit tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2866",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 Switch from using hard coded 'test.db' to use the tempfile module's NamedTemporaryFile().
 
@@ -37,7 +37,7 @@ archive/issue_comments_019669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2866#issuecomment-19669",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -91,16 +91,16 @@ Michael
 archive/issue_comments_019671.json:
 ```json
 {
-    "body": "Attachment [use_tempfile_module.patch](tarball://root/attachments/some-uuid/ticket2866/use_tempfile_module.patch) by yi created at 2008-04-10 01:44:12\n\nThanks for catching this, I updated the patch, it was a one liner blunder! Could you please reapply, should pass doctests now on sage.math at least :-)",
+    "body": "Attachment [use_tempfile_module.patch](tarball://root/attachments/some-uuid/ticket2866/use_tempfile_module.patch) by @yqiang created at 2008-04-10 01:44:12\n\nThanks for catching this, I updated the patch, it was a one liner blunder! Could you please reapply, should pass doctests now on sage.math at least :-)",
     "created_at": "2008-04-10T01:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2866",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2866#issuecomment-19671",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [use_tempfile_module.patch](tarball://root/attachments/some-uuid/ticket2866/use_tempfile_module.patch) by yi created at 2008-04-10 01:44:12
+Attachment [use_tempfile_module.patch](tarball://root/attachments/some-uuid/ticket2866/use_tempfile_module.patch) by @yqiang created at 2008-04-10 01:44:12
 
 Thanks for catching this, I updated the patch, it was a one liner blunder! Could you please reapply, should pass doctests now on sage.math at least :-)
 

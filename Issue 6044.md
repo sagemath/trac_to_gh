@@ -3,7 +3,7 @@
 archive/issues_006044.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  cremona\n\nKeywords: number fields, ideals\n\n1. Modify \"residues\" function so that it returns a canonical set of coset representatives.\n\n2. New \"reduce\" function for number field ideals that returns the canonical reduced representative of a given integral element: I.reduce(f) is an element of the set of representatives returned by I.residues(). \n\n3. Have \"inverse_mod\" working for integral elements of a number field without having to coerce to the ring of integers (using existing  functionality for order elements)\n\n\nPatch based on 3.4.2 to follow soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6044\n\n",
+    "body": "Assignee: somebody\n\nCC:  @JohnCremona\n\nKeywords: number fields, ideals\n\n1. Modify \"residues\" function so that it returns a canonical set of coset representatives.\n\n2. New \"reduce\" function for number field ideals that returns the canonical reduced representative of a given integral element: I.reduce(f) is an element of the set of representatives returned by I.residues(). \n\n3. Have \"inverse_mod\" working for integral elements of a number field without having to coerce to the ring of integers (using existing  functionality for order elements)\n\n\nPatch based on 3.4.2 to follow soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6044\n\n",
     "created_at": "2009-05-15T09:24:14Z",
     "labels": [
         "number theory",
@@ -19,7 +19,7 @@ archive/issues_006044.json:
 ```
 Assignee: somebody
 
-CC:  cremona
+CC:  @JohnCremona
 
 Keywords: number fields, ideals
 
@@ -70,7 +70,7 @@ archive/issue_comments_048134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48134",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -109,16 +109,16 @@ Here is the patch, with the new functions, etc, and corrections for the docstrin
 archive/issue_comments_048136.json:
 ```json
 {
-    "body": "Attachment [trac_6044_review.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044_review.patch) by cremona created at 2009-05-20 11:54:23",
+    "body": "Attachment [trac_6044_review.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044_review.patch) by @JohnCremona created at 2009-05-20 11:54:23",
     "created_at": "2009-05-20T11:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48136",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_6044_review.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044_review.patch) by cremona created at 2009-05-20 11:54:23
+Attachment [trac_6044_review.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044_review.patch) by @JohnCremona created at 2009-05-20 11:54:23
 
 
 
@@ -132,7 +132,7 @@ archive/issue_comments_048137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48137",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_048138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48138",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -167,16 +167,16 @@ Rebased to 4.0.1 and folded into one patch
 archive/issue_comments_048139.json:
 ```json
 {
-    "body": "Attachment [trac_6044_rebased_and_folded.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044_rebased_and_folded.patch) by davidloeffler created at 2009-06-10 11:06:19\n\nGood stuff; it will be much more efficient to use hermite form rather than smith form in residues, besides being more canonical.\n\nI have rebased the patch to 4.0.1, and checked that it commutes with #5842 and #6188. All tests in sage/rings/number_field pass still (on a 32-bit machine), as do those in sage/doc/en/bordeaux_2008 (which have a habit of catching out unwary number theory patch authors). \n\nThis one has been in limbo for three weeks because the trac reports of patches with review / needing review / etc are done using text searches of the summary field, and thus \"with review, needs second opinion\" doesn't get picked up. I guess it would be safer to set it to \"needs review\", but this strikes me as conclusive proof that we need to change the way we use trac -- this is the *fifth* ticket I've spotted today which has been in limbo because of a slightly unusual summary string.",
+    "body": "Attachment [trac_6044_rebased_and_folded.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044_rebased_and_folded.patch) by @loefflerd created at 2009-06-10 11:06:19\n\nGood stuff; it will be much more efficient to use hermite form rather than smith form in residues, besides being more canonical.\n\nI have rebased the patch to 4.0.1, and checked that it commutes with #5842 and #6188. All tests in sage/rings/number_field pass still (on a 32-bit machine), as do those in sage/doc/en/bordeaux_2008 (which have a habit of catching out unwary number theory patch authors). \n\nThis one has been in limbo for three weeks because the trac reports of patches with review / needing review / etc are done using text searches of the summary field, and thus \"with review, needs second opinion\" doesn't get picked up. I guess it would be safer to set it to \"needs review\", but this strikes me as conclusive proof that we need to change the way we use trac -- this is the *fifth* ticket I've spotted today which has been in limbo because of a slightly unusual summary string.",
     "created_at": "2009-06-10T11:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48139",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_6044_rebased_and_folded.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044_rebased_and_folded.patch) by davidloeffler created at 2009-06-10 11:06:19
+Attachment [trac_6044_rebased_and_folded.patch](tarball://root/attachments/some-uuid/ticket6044/trac_6044_rebased_and_folded.patch) by @loefflerd created at 2009-06-10 11:06:19
 
 Good stuff; it will be much more efficient to use hermite form rather than smith form in residues, besides being more canonical.
 
@@ -196,7 +196,7 @@ archive/issue_comments_048140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48140",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_048141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6044",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48141",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

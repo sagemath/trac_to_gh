@@ -14,7 +14,7 @@ archive/issues_007912.json:
     "title": "upgrade Python to 2.6.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7912",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: tbd
@@ -103,7 +103,7 @@ archive/issue_comments_068837.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7912#issuecomment-68837",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_068838.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7912#issuecomment-68838",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -139,7 +139,7 @@ archive/issue_comments_068839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7912#issuecomment-68839",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -157,7 +157,7 @@ archive/issue_comments_068840.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7912#issuecomment-68840",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -175,7 +175,7 @@ archive/issue_comments_068841.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7912",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7912#issuecomment-68841",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000556.json:
     "title": "ntl re-wrapping in sage-2.8.3 broke sage on itanium linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/556",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -101,7 +101,7 @@ archive/issue_comments_002877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/556",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/556#issuecomment-2877",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

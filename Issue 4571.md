@@ -3,7 +3,7 @@
 archive/issues_004571.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  robertwb dagss\n\n\n```\n[15:53] <robertwb> yep, we should merge them\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4571\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @robertwb dagss\n\n\n```\n[15:53] <robertwb> yep, we should merge them\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4571\n\n",
     "created_at": "2008-11-20T21:56:56Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_004571.json:
     "title": "merge sage's numpy.pxd with the cython numpy.pxd",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4571",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mabshoff
 
-CC:  robertwb dagss
+CC:  @robertwb dagss
 
 
 ```
@@ -45,7 +45,7 @@ archive/issue_comments_034240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4571#issuecomment-34240",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -58,16 +58,16 @@ See http://trac.cython.org/cython_trac/ticket/339
 archive/issue_comments_034241.json:
 ```json
 {
-    "body": "Attachment [4571-numpy-pxd.patch](tarball://root/attachments/some-uuid/ticket4571/4571-numpy-pxd.patch) by robertwb created at 2009-06-28 09:02:02",
+    "body": "Attachment [4571-numpy-pxd.patch](tarball://root/attachments/some-uuid/ticket4571/4571-numpy-pxd.patch) by @robertwb created at 2009-06-28 09:02:02",
     "created_at": "2009-06-28T09:02:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4571#issuecomment-34241",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4571-numpy-pxd.patch](tarball://root/attachments/some-uuid/ticket4571/4571-numpy-pxd.patch) by robertwb created at 2009-06-28 09:02:02
+Attachment [4571-numpy-pxd.patch](tarball://root/attachments/some-uuid/ticket4571/4571-numpy-pxd.patch) by @robertwb created at 2009-06-28 09:02:02
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_034242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4571#issuecomment-34242",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_034246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4571#issuecomment-34246",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_034247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4571#issuecomment-34247",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_034248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4571#issuecomment-34248",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_034249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4571#issuecomment-34249",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_034252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4571#issuecomment-34252",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -396,7 +396,7 @@ archive/issue_comments_034254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4571",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4571#issuecomment-34254",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

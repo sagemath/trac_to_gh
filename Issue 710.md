@@ -14,7 +14,7 @@ archive/issues_000710.json:
     "title": "bad segfault when hitting control-c",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/710",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -50,7 +50,7 @@ archive/issue_comments_003729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/710#issuecomment-3729",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_003730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/710",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/710#issuecomment-3730",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009698.json:
 ```json
 {
-    "body": "Assignee: jason, ncohen, rlm\n\nCC:  rlm boothby ncohen\n\nRandomized backtracking for finding hamiltonian cycles.\n\nA path P is maintained during the execution of the algorithm. Initially the path will contain an edge of the graph. Every 10 iterations the path is reversed. Every ``reset_bound`` iterations the path will be cleared and procedure is restarted. Every ``backtrack_bound`` steps we discard the last five vertices and continue with the procedure. The total number of steps in the algorithm is controlled by ``max_iter``. If a hamiltonian cycle is found it is returned. If the number of steps reaches ``max_iter`` \nthen a longest path is returned. See OUTPUT for more details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9698\n\n",
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill boothby @nathanncohen\n\nRandomized backtracking for finding hamiltonian cycles.\n\nA path P is maintained during the execution of the algorithm. Initially the path will contain an edge of the graph. Every 10 iterations the path is reversed. Every ``reset_bound`` iterations the path will be cleared and procedure is restarted. Every ``backtrack_bound`` steps we discard the last five vertices and continue with the procedure. The total number of steps in the algorithm is controlled by ``max_iter``. If a hamiltonian cycle is found it is returned. If the number of steps reaches ``max_iter`` \nthen a longest path is returned. See OUTPUT for more details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9698\n\n",
     "created_at": "2010-08-06T19:17:39Z",
     "labels": [
         "graph theory",
@@ -19,7 +19,7 @@ archive/issues_009698.json:
 ```
 Assignee: jason, ncohen, rlm
 
-CC:  rlm boothby ncohen
+CC:  @rlmill boothby @nathanncohen
 
 Randomized backtracking for finding hamiltonian cycles.
 
@@ -78,7 +78,7 @@ archive/issue_comments_094260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94260",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_094261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94261",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_094263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94263",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_094264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94264",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_094265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94265",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_094269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94269",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_094272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94272",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -415,7 +415,7 @@ archive/issue_comments_094273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94273",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -600,7 +600,7 @@ archive/issue_comments_094277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94277",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -668,7 +668,7 @@ archive/issue_comments_094280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94280",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -690,7 +690,7 @@ archive/issue_comments_094281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94281",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -770,7 +770,7 @@ archive/issue_comments_094285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94285",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -828,16 +828,16 @@ Fidel
 archive/issue_comments_094288.json:
 ```json
 {
-    "body": "Attachment [trac_9698-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698-smallfixes.patch) by jdemeyer created at 2010-10-23 12:09:48\n\nsame as trac_9698 - smallfixes.patch",
+    "body": "Attachment [trac_9698-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698-smallfixes.patch) by @jdemeyer created at 2010-10-23 12:09:48\n\nsame as trac_9698 - smallfixes.patch",
     "created_at": "2010-10-23T12:09:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94288",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [trac_9698-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698-smallfixes.patch) by jdemeyer created at 2010-10-23 12:09:48
+Attachment [trac_9698-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698-smallfixes.patch) by @jdemeyer created at 2010-10-23 12:09:48
 
 same as trac_9698 - smallfixes.patch
 
@@ -853,7 +853,7 @@ archive/issue_comments_094289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94289",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -871,7 +871,7 @@ archive/issue_comments_094290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94290",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -889,7 +889,7 @@ archive/issue_comments_094291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94291",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -918,7 +918,7 @@ archive/issue_comments_094292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94292",
-    "user": "eviatarbach"
+    "user": "@eviatarbach"
 }
 ```
 
@@ -936,7 +936,7 @@ archive/issue_comments_094293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94293",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008856.json:
 ```json
 {
-    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: cached one_basis\n\nFrom `algebra_with_basis.py`:\n\n```\n#@cached_method   # todo: reinstate once #5843 is fixed\ndef one_from_one_basis(self):\n    \"\"\"\n    Returns the one of the algebra, as per\n            ``Monoids.ParentMethods.one``\n    [...]\n    \"\"\"\n    return self.monomial(self.one_basis()) #.\n```\n\nSo I'm removing the comment since #5843 is fixed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8856\n\n",
+    "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: cached one_basis\n\nFrom `algebra_with_basis.py`:\n\n```\n#@cached_method   # todo: reinstate once #5843 is fixed\ndef one_from_one_basis(self):\n    \"\"\"\n    Returns the one of the algebra, as per\n            ``Monoids.ParentMethods.one``\n    [...]\n    \"\"\"\n    return self.monomial(self.one_basis()) #.\n```\n\nSo I'm removing the comment since #5843 is fixed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8856\n\n",
     "created_at": "2010-05-03T14:39:53Z",
     "labels": [
         "categories",
@@ -14,10 +14,10 @@ archive/issues_008856.json:
     "title": "Reinstate cached one in algebra_with_basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8856",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: hivert
+Assignee: @hivert
 
 CC:  sage-combinat
 
@@ -50,16 +50,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8856
 archive/issue_comments_081384.json:
 ```json
 {
-    "body": "Attachment [trac_8856-cached_one_basis-fh.patch](tarball://root/attachments/some-uuid/ticket8856/trac_8856-cached_one_basis-fh.patch) by hivert created at 2010-05-03 14:54:33",
+    "body": "Attachment [trac_8856-cached_one_basis-fh.patch](tarball://root/attachments/some-uuid/ticket8856/trac_8856-cached_one_basis-fh.patch) by @hivert created at 2010-05-03 14:54:33",
     "created_at": "2010-05-03T14:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8856#issuecomment-81384",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8856-cached_one_basis-fh.patch](tarball://root/attachments/some-uuid/ticket8856/trac_8856-cached_one_basis-fh.patch) by hivert created at 2010-05-03 14:54:33
+Attachment [trac_8856-cached_one_basis-fh.patch](tarball://root/attachments/some-uuid/ticket8856/trac_8856-cached_one_basis-fh.patch) by @hivert created at 2010-05-03 14:54:33
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_081385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8856#issuecomment-81385",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_081386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8856#issuecomment-81386",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_081387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8856#issuecomment-81387",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_081388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8856#issuecomment-81388",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_081389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8856",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8856#issuecomment-81389",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_004192.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nKeywords: imports\n\nFunctions like `is_FractionField` should not be imported at the top level, since they don't necessarily make sense mathematically, only programmatically. Thus, situations like\n\n```\nsage: is_FractionField(FractionField(ZZ))\nFalse\n```\n\nmight confuse people.  \n\nSee the discussion in #4149. I think the best solution, as propounded there by cremona and robertwb, is to have `is_Blah` *methods* which are, as much as possible, mathematically correct.  In contrast, `is_Blah` *functions* should be data-checks, existing primarily for use in the code.\n\nmhansen has volunteered to do at least some of this work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4192\n\n",
+    "body": "Assignee: @mwhansen\n\nKeywords: imports\n\nFunctions like `is_FractionField` should not be imported at the top level, since they don't necessarily make sense mathematically, only programmatically. Thus, situations like\n\n```\nsage: is_FractionField(FractionField(ZZ))\nFalse\n```\n\nmight confuse people.  \n\nSee the discussion in #4149. I think the best solution, as propounded there by cremona and robertwb, is to have `is_Blah` *methods* which are, as much as possible, mathematically correct.  In contrast, `is_Blah` *functions* should be data-checks, existing primarily for use in the code.\n\nmhansen has volunteered to do at least some of this work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4192\n\n",
     "created_at": "2008-09-24T17:04:34Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_004192.json:
     "title": "is_Blah functions: deprecate and then remove them from top level imports",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4192",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 Keywords: imports
 
@@ -50,7 +50,7 @@ archive/issue_comments_030422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30422",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -68,7 +68,7 @@ archive/issue_comments_030423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30423",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -328,16 +328,16 @@ Michael
 archive/issue_comments_030425.json:
 ```json
 {
-    "body": "Attachment [trac_4192.patch](tarball://root/attachments/some-uuid/ticket4192/trac_4192.patch) by mhansen created at 2008-09-26 07:02:57",
+    "body": "Attachment [trac_4192.patch](tarball://root/attachments/some-uuid/ticket4192/trac_4192.patch) by @mwhansen created at 2008-09-26 07:02:57",
     "created_at": "2008-09-26T07:02:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30425",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4192.patch](tarball://root/attachments/some-uuid/ticket4192/trac_4192.patch) by mhansen created at 2008-09-26 07:02:57
+Attachment [trac_4192.patch](tarball://root/attachments/some-uuid/ticket4192/trac_4192.patch) by @mwhansen created at 2008-09-26 07:02:57
 
 
 
@@ -351,7 +351,7 @@ archive/issue_comments_030426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4192",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30426",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

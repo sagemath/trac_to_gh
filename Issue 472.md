@@ -3,7 +3,7 @@
 archive/issues_000472.json:
 ```json
 {
-    "body": "Assignee: jmbr\n\nTo build Singular we need flex and bison but we could make sure those programs are not needed by using some spkg-install trickery.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/472\n\n",
+    "body": "Assignee: @jmbr\n\nTo build Singular we need flex and bison but we could make sure those programs are not needed by using some spkg-install trickery.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/472\n\n",
     "created_at": "2007-08-20T23:13:13Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000472.json:
     "title": "Drop dependencies on flex and bison",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/472",
-    "user": "jmbr"
+    "user": "@jmbr"
 }
 ```
-Assignee: jmbr
+Assignee: @jmbr
 
 To build Singular we need flex and bison but we could make sure those programs are not needed by using some spkg-install trickery.
 
@@ -38,7 +38,7 @@ archive/issue_comments_002359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2359",
-    "user": "jmbr"
+    "user": "@jmbr"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_002360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2360",
-    "user": "jmbr"
+    "user": "@jmbr"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_002361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2361",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_002362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2362",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_002363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2363",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_002365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2365",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

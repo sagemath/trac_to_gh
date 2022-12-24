@@ -3,7 +3,7 @@
 archive/issues_008284.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nHello !!!\n\nThis very small patch creates an independent generator for IntervalGraph, which is then called by the old RandomIntervalGraph function... The function is_chordal is fixed, as it was not exploring the whole graph when it was not connected.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8284\n\n",
+    "body": "Assignee: @rlmill\n\nHello !!!\n\nThis very small patch creates an independent generator for IntervalGraph, which is then called by the old RandomIntervalGraph function... The function is_chordal is fixed, as it was not exploring the whole graph when it was not connected.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8284\n\n",
     "created_at": "2010-02-16T18:11:03Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_008284.json:
     "title": "IntervalGraph generator and a bug in is_chordal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8284",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Hello !!!
 
@@ -41,7 +41,7 @@ archive/issue_comments_073344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73344",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -54,16 +54,16 @@ Changing status from new to needs_review.
 archive/issue_comments_073345.json:
 ```json
 {
-    "body": "Changing assignee from rlm to ncohen.",
+    "body": "Changing assignee from @rlmill to @nathanncohen.",
     "created_at": "2010-02-16T18:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73345",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Changing assignee from rlm to ncohen.
+Changing assignee from @rlmill to @nathanncohen.
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_073346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73346",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_073347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73347",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_073348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73348",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_073349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73349",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_073350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73350",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_073351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73351",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_073352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73352",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_073353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73353",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -227,7 +227,7 @@ archive/issue_comments_073354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73354",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -249,7 +249,7 @@ archive/issue_comments_073355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73355",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_073356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73356",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -285,7 +285,7 @@ archive/issue_comments_073357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73357",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -303,7 +303,7 @@ archive/issue_comments_073358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73358",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -318,16 +318,16 @@ Nathann
 archive/issue_comments_073359.json:
 ```json
 {
-    "body": "Attachment [trac_8284.patch](tarball://root/attachments/some-uuid/ticket8284/trac_8284.patch) by rlm created at 2010-06-08 17:31:42\n\nLooks good.",
+    "body": "Attachment [trac_8284.patch](tarball://root/attachments/some-uuid/ticket8284/trac_8284.patch) by @rlmill created at 2010-06-08 17:31:42\n\nLooks good.",
     "created_at": "2010-06-08T17:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73359",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_8284.patch](tarball://root/attachments/some-uuid/ticket8284/trac_8284.patch) by rlm created at 2010-06-08 17:31:42
+Attachment [trac_8284.patch](tarball://root/attachments/some-uuid/ticket8284/trac_8284.patch) by @rlmill created at 2010-06-08 17:31:42
 
 Looks good.
 
@@ -343,7 +343,7 @@ archive/issue_comments_073360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73360",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -383,7 +383,7 @@ archive/issue_comments_073362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73362",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -405,7 +405,7 @@ archive/issue_comments_073363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73363",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -465,7 +465,7 @@ archive/issue_comments_073364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73364",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -491,7 +491,7 @@ archive/issue_comments_073365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8284",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8284#issuecomment-73365",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

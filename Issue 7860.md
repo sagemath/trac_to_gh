@@ -3,7 +3,7 @@
 archive/issues_007860.json:
 ```json
 {
-    "body": "Assignee: drkirkby\n\nCC:  was jsp\n\nI'm trying to make a 64-bit build of Sage on my Sun Ultra 27, but although I've sorted out many packages which do not honour SAGE64, the sage_fortran package is unique, and I don't have a clue how to fix it. \n\nI've also set FCFLAGS to -m64, but that is being ignored. \n\nI've marked this as critical, as it really will inhibit progress on Sage on Open Solaris if this bit insists on building 32-bit executables. Overall, it seems less hassle to build 64-bit on Open Solaris than 32-bit, due to the OpenSSL issues.\n\nDave \n\n\n```\nsage_fortran -fPIC  -c sgerqf.f -o sgerqf.o\nsage_fortran -fPIC  -c sgesc2.f -o sgesc2.o\nsage_fortran -fPIC  -c sgesdd.f -o sgesdd.o\nsage_fortran -fPIC  -c sgesv.f -o sgesv.o\nsage_fortran -fPIC  -c sgesvd.f -o sgesvd.o\n^Cmake: *** [all] Interrupt\n\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ find . -name sgerfs.o\n./spkg/build/lapack-20071123.p0/src/SRC/sgerfs.o\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ file ./spkg/build/lapack-20071123.p0/src/SRC/sgerfs.o\n./spkg/build/lapack-20071123.p0/src/SRC/sgerfs.o:\tELF 32-bit LSB relocatable 80386 Version 1\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ echo $SAGE64\nyes\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7860\n\n",
+    "body": "Assignee: drkirkby\n\nCC:  @williamstein @jaapspies\n\nI'm trying to make a 64-bit build of Sage on my Sun Ultra 27, but although I've sorted out many packages which do not honour SAGE64, the sage_fortran package is unique, and I don't have a clue how to fix it. \n\nI've also set FCFLAGS to -m64, but that is being ignored. \n\nI've marked this as critical, as it really will inhibit progress on Sage on Open Solaris if this bit insists on building 32-bit executables. Overall, it seems less hassle to build 64-bit on Open Solaris than 32-bit, due to the OpenSSL issues.\n\nDave \n\n\n```\nsage_fortran -fPIC  -c sgerqf.f -o sgerqf.o\nsage_fortran -fPIC  -c sgesc2.f -o sgesc2.o\nsage_fortran -fPIC  -c sgesdd.f -o sgesdd.o\nsage_fortran -fPIC  -c sgesv.f -o sgesv.o\nsage_fortran -fPIC  -c sgesvd.f -o sgesvd.o\n^Cmake: *** [all] Interrupt\n\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ find . -name sgerfs.o\n./spkg/build/lapack-20071123.p0/src/SRC/sgerfs.o\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ file ./spkg/build/lapack-20071123.p0/src/SRC/sgerfs.o\n./spkg/build/lapack-20071123.p0/src/SRC/sgerfs.o:\tELF 32-bit LSB relocatable 80386 Version 1\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ echo $SAGE64\nyes\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7860\n\n",
     "created_at": "2010-01-06T22:25:37Z",
     "labels": [
         "porting",
@@ -19,7 +19,7 @@ archive/issues_007860.json:
 ```
 Assignee: drkirkby
 
-CC:  was jsp
+CC:  @williamstein @jaapspies
 
 I'm trying to make a 64-bit build of Sage on my Sun Ultra 27, but although I've sorted out many packages which do not honour SAGE64, the sage_fortran package is unique, and I don't have a clue how to fix it. 
 
@@ -63,7 +63,7 @@ archive/issue_comments_068138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7860#issuecomment-68138",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_068140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7860#issuecomment-68140",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -130,7 +130,7 @@ archive/issue_comments_068141.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7860#issuecomment-68141",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -148,7 +148,7 @@ archive/issue_comments_068142.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7860#issuecomment-68142",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_068143.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7860#issuecomment-68143",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_068144.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7860",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7860#issuecomment-68144",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

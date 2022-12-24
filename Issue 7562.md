@@ -3,7 +3,7 @@
 archive/issues_007562.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  hgranath\n\nFrom sage-devel:\n\n```\nIn [143]: [binomial(1,1),binomial(1,2),binomial(1,3),binomial(1,4)] \nOut[143]: [1, 0, 0, 0] \nIn [144]: [binomial(1.0,1),binomial(1.0,2),binomial(1.0,3),binomial \n(1.0,4)] \nOut[144]: [1.00000000000000, 0.000000000000000, NaN, NaN] \n```\n\nThe problem is this:\n\n```\nsage: x = RealNumber('1.0')\nsage: P = x.parent()\nsage: P\nReal Field with 53 bits of precision\nsage: gamma(x+1)/gamma(P(Integer(4)+1))/gamma(x-Integer(4)+1)\nNaN\nsage: gamma(x-Integer(4)+1)\nNaN\n```\n\nSo we'll have to put in yet another check...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7562\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  hgranath\n\nFrom sage-devel:\n\n```\nIn [143]: [binomial(1,1),binomial(1,2),binomial(1,3),binomial(1,4)] \nOut[143]: [1, 0, 0, 0] \nIn [144]: [binomial(1.0,1),binomial(1.0,2),binomial(1.0,3),binomial \n(1.0,4)] \nOut[144]: [1.00000000000000, 0.000000000000000, NaN, NaN] \n```\n\nThe problem is this:\n\n```\nsage: x = RealNumber('1.0')\nsage: P = x.parent()\nsage: P\nReal Field with 53 bits of precision\nsage: gamma(x+1)/gamma(P(Integer(4)+1))/gamma(x-Integer(4)+1)\nNaN\nsage: gamma(x-Integer(4)+1)\nNaN\n```\n\nSo we'll have to put in yet another check...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7562\n\n",
     "created_at": "2009-11-30T18:16:36Z",
     "labels": [
         "basic arithmetic",
@@ -14,10 +14,10 @@ archive/issues_007562.json:
     "title": "Another (new?) binomial bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7562",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 CC:  hgranath
 
@@ -140,7 +140,7 @@ archive/issue_comments_064341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7562#issuecomment-64341",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_064344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7562#issuecomment-64344",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -231,7 +231,7 @@ archive/issue_comments_064345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7562#issuecomment-64345",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_064349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7562#issuecomment-64349",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_064350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7562#issuecomment-64350",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -341,7 +341,7 @@ archive/issue_comments_064351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7562",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7562#issuecomment-64351",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

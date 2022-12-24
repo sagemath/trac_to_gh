@@ -14,7 +14,7 @@ archive/issues_001687.json:
     "title": "makefile program -- \"make distclean\" doesn't delete test.log",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1687",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -37,7 +37,7 @@ archive/issue_comments_010720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1687",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1687#issuecomment-10720",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

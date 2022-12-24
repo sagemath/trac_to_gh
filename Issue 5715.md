@@ -3,7 +3,7 @@
 archive/issues_005715.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nSince `matrix_mod2_dense` defines its own `str` function, it overrides the function for general matrices, so for dense matrices over GF(2), subdivisions are not printed.  (See [this discussion](http://groups.google.com/group/sage-support/browse_frm/thread/a08df4717024f9c0).)\n\nThis patch deletes the `str` method for dense matrices over GF(2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5715\n\n",
+    "body": "Assignee: @jhpalmieri\n\nSince `matrix_mod2_dense` defines its own `str` function, it overrides the function for general matrices, so for dense matrices over GF(2), subdivisions are not printed.  (See [this discussion](http://groups.google.com/group/sage-support/browse_frm/thread/a08df4717024f9c0).)\n\nThis patch deletes the `str` method for dense matrices over GF(2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5715\n\n",
     "created_at": "2009-04-08T19:17:10Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_005715.json:
     "title": "[with patch, needs review] show subdivisions for matrices over GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5715",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 Since `matrix_mod2_dense` defines its own `str` function, it overrides the function for general matrices, so for dense matrices over GF(2), subdivisions are not printed.  (See [this discussion](http://groups.google.com/group/sage-support/browse_frm/thread/a08df4717024f9c0).)
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5715
 archive/issue_comments_044658.json:
 ```json
 {
-    "body": "Attachment [5715-subdivisions.patch](tarball://root/attachments/some-uuid/ticket5715/5715-subdivisions.patch) by jhpalmieri created at 2009-04-08 19:24:40\n\nThis is a duplicate of #5714.",
+    "body": "Attachment [5715-subdivisions.patch](tarball://root/attachments/some-uuid/ticket5715/5715-subdivisions.patch) by @jhpalmieri created at 2009-04-08 19:24:40\n\nThis is a duplicate of #5714.",
     "created_at": "2009-04-08T19:24:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44658",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [5715-subdivisions.patch](tarball://root/attachments/some-uuid/ticket5715/5715-subdivisions.patch) by jhpalmieri created at 2009-04-08 19:24:40
+Attachment [5715-subdivisions.patch](tarball://root/attachments/some-uuid/ticket5715/5715-subdivisions.patch) by @jhpalmieri created at 2009-04-08 19:24:40
 
 This is a duplicate of #5714.
 
@@ -59,7 +59,7 @@ archive/issue_comments_044659.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44659",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_044660.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44660",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -108,16 +108,16 @@ Wall time: 5.89 s
 archive/issue_comments_044661.json:
 ```json
 {
-    "body": "Attachment [5715-mat2-subdiv.patch](tarball://root/attachments/some-uuid/ticket5715/5715-mat2-subdiv.patch) by robertwb created at 2009-04-09 07:21:46\n\napply only this patch",
+    "body": "Attachment [5715-mat2-subdiv.patch](tarball://root/attachments/some-uuid/ticket5715/5715-mat2-subdiv.patch) by @robertwb created at 2009-04-09 07:21:46\n\napply only this patch",
     "created_at": "2009-04-09T07:21:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44661",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [5715-mat2-subdiv.patch](tarball://root/attachments/some-uuid/ticket5715/5715-mat2-subdiv.patch) by robertwb created at 2009-04-09 07:21:46
+Attachment [5715-mat2-subdiv.patch](tarball://root/attachments/some-uuid/ticket5715/5715-mat2-subdiv.patch) by @robertwb created at 2009-04-09 07:21:46
 
 apply only this patch
 
@@ -133,7 +133,7 @@ archive/issue_comments_044662.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44662",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -193,7 +193,7 @@ archive/issue_comments_044664.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44664",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_044665.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44665",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_044666.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44666",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_044667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44667",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_044670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5715",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44670",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

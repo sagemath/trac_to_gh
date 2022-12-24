@@ -3,7 +3,7 @@
 archive/issues_004641.json:
 ```json
 {
-    "body": "Assignee: klee\n\nKeywords: commandline option\n\nThe commandline option \"-notebook\" is advertised to take trailing options, but does not yet (as of Sage 3.1.2). A patch is included.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4641\n\n",
+    "body": "Assignee: @kwankyu\n\nKeywords: commandline option\n\nThe commandline option \"-notebook\" is advertised to take trailing options, but does not yet (as of Sage 3.1.2). A patch is included.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4641\n\n",
     "created_at": "2008-11-28T05:24:45Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_004641.json:
     "title": "[with patch, needs review] \"-notebook\" commandline option should take trailing options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4641",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
-Assignee: klee
+Assignee: @kwankyu
 
 Keywords: commandline option
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4641
 archive/issue_comments_034935.json:
 ```json
 {
-    "body": "Attachment [1030.patch](tarball://root/attachments/some-uuid/ticket4641/1030.patch) by klee created at 2008-11-28 05:25:39",
+    "body": "Attachment [1030.patch](tarball://root/attachments/some-uuid/ticket4641/1030.patch) by @kwankyu created at 2008-11-28 05:25:39",
     "created_at": "2008-11-28T05:25:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4641#issuecomment-34935",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Attachment [1030.patch](tarball://root/attachments/some-uuid/ticket4641/1030.patch) by klee created at 2008-11-28 05:25:39
+Attachment [1030.patch](tarball://root/attachments/some-uuid/ticket4641/1030.patch) by @kwankyu created at 2008-11-28 05:25:39
 
 
 
@@ -52,16 +52,16 @@ Attachment [1030.patch](tarball://root/attachments/some-uuid/ticket4641/1030.pat
 archive/issue_comments_034936.json:
 ```json
 {
-    "body": "Changing assignee from klee to somebody.",
+    "body": "Changing assignee from @kwankyu to somebody.",
     "created_at": "2008-11-28T05:38:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4641#issuecomment-34936",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
-Changing assignee from klee to somebody.
+Changing assignee from @kwankyu to somebody.
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_034937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4641#issuecomment-34937",
-    "user": "klee"
+    "user": "@kwankyu"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_034938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4641",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4641#issuecomment-34938",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002057.json:
     "title": "followup to #1983 -- 0^0 for 0 a rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2057",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2057
 archive/issue_comments_013314.json:
 ```json
 {
-    "body": "Attachment [trac-2057-zero_to_zero.patch](tarball://root/attachments/some-uuid/ticket2057/trac-2057-zero_to_zero.patch) by was created at 2008-02-05 15:27:42",
+    "body": "Attachment [trac-2057-zero_to_zero.patch](tarball://root/attachments/some-uuid/ticket2057/trac-2057-zero_to_zero.patch) by @williamstein created at 2008-02-05 15:27:42",
     "created_at": "2008-02-05T15:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2057",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2057#issuecomment-13314",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac-2057-zero_to_zero.patch](tarball://root/attachments/some-uuid/ticket2057/trac-2057-zero_to_zero.patch) by was created at 2008-02-05 15:27:42
+Attachment [trac-2057-zero_to_zero.patch](tarball://root/attachments/some-uuid/ticket2057/trac-2057-zero_to_zero.patch) by @williamstein created at 2008-02-05 15:27:42
 
 
 
@@ -80,7 +80,7 @@ archive/issue_comments_013315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2057",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2057#issuecomment-13315",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_004766.json:
     "title": "parallel? is lame and incomplete",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4766",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
@@ -47,7 +47,7 @@ archive/issue_comments_036115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4766#issuecomment-36115",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_036116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4766#issuecomment-36116",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_036117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4766",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4766#issuecomment-36117",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

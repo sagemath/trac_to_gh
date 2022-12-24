@@ -14,7 +14,7 @@ archive/issues_005533.json:
     "title": "Recompiling .spyx files changes class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5533",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 Assignee: cwitty
@@ -65,7 +65,7 @@ archive/issue_comments_043021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5533",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5533#issuecomment-43021",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 

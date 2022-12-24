@@ -14,7 +14,7 @@ archive/issues_006446.json:
     "title": "memory issue from #6394",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6446",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tbd
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6446
 archive/issue_comments_051797.json:
 ```json
 {
-    "body": "Attachment [trac_6446-memleak_coarsest_eq_refn.patch](tarball://root/attachments/some-uuid/ticket6446/trac_6446-memleak_coarsest_eq_refn.patch) by rlm created at 2009-06-29 17:38:40",
+    "body": "Attachment [trac_6446-memleak_coarsest_eq_refn.patch](tarball://root/attachments/some-uuid/ticket6446/trac_6446-memleak_coarsest_eq_refn.patch) by @rlmill created at 2009-06-29 17:38:40",
     "created_at": "2009-06-29T17:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6446#issuecomment-51797",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac_6446-memleak_coarsest_eq_refn.patch](tarball://root/attachments/some-uuid/ticket6446/trac_6446-memleak_coarsest_eq_refn.patch) by rlm created at 2009-06-29 17:38:40
+Attachment [trac_6446-memleak_coarsest_eq_refn.patch](tarball://root/attachments/some-uuid/ticket6446/trac_6446-memleak_coarsest_eq_refn.patch) by @rlmill created at 2009-06-29 17:38:40
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_051798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6446#issuecomment-51798",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_051799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6446#issuecomment-51799",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_051800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6446#issuecomment-51800",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

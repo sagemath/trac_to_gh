@@ -73,16 +73,16 @@ Changing status from new to assigned.
 archive/issue_comments_010297.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to gfurnish.",
+    "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-03-23T18:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1618#issuecomment-10297",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from mabshoff to gfurnish.
+Changing assignee from mabshoff to @garyfurnish.
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_010298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1618#issuecomment-10298",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_010299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1618",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1618#issuecomment-10299",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

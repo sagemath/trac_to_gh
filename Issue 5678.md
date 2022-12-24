@@ -14,7 +14,7 @@ archive/issues_005678.json:
     "title": "LaTeX typesetting for two letters phi and Phi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5678",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 Assignee: cwitty
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5678
 archive/issue_comments_044414.json:
 ```json
 {
-    "body": "Attachment [missing-phi-Phi.patch](tarball://root/attachments/some-uuid/ticket5678/missing-phi-Phi.patch) by gmhossain created at 2009-04-04 01:34:41",
+    "body": "Attachment [missing-phi-Phi.patch](tarball://root/attachments/some-uuid/ticket5678/missing-phi-Phi.patch) by @golam-m-hossain created at 2009-04-04 01:34:41",
     "created_at": "2009-04-04T01:34:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5678#issuecomment-44414",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
-Attachment [missing-phi-Phi.patch](tarball://root/attachments/some-uuid/ticket5678/missing-phi-Phi.patch) by gmhossain created at 2009-04-04 01:34:41
+Attachment [missing-phi-Phi.patch](tarball://root/attachments/some-uuid/ticket5678/missing-phi-Phi.patch) by @golam-m-hossain created at 2009-04-04 01:34:41
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_044415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5678",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5678#issuecomment-44415",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

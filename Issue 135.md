@@ -13,7 +13,7 @@ archive/issues_000135.json:
     "title": "GMP patch: 64-bit MacPro",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/135",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -36,7 +36,7 @@ archive/issue_comments_000641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/135#issuecomment-641",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -54,7 +54,7 @@ archive/issue_comments_000642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/135#issuecomment-642",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

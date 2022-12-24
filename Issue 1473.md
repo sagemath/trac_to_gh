@@ -3,7 +3,7 @@
 archive/issues_001473.json:
 ```json
 {
-    "body": "Assignee: was\n\nEventually we hope to have many tools (e.g. MayaVi) to help handle this, but Java3D works now and it should be easy to invoke the same code as an app rather than an applet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1473\n\n",
+    "body": "Assignee: @williamstein\n\nEventually we hope to have many tools (e.g. MayaVi) to help handle this, but Java3D works now and it should be easy to invoke the same code as an app rather than an applet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1473\n\n",
     "created_at": "2007-12-12T10:49:02Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001473.json:
     "title": "Java3D usable from command line as well as notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1473",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Eventually we hope to have many tools (e.g. MayaVi) to help handle this, but Java3D works now and it should be easy to invoke the same code as an app rather than an applet. 
 
@@ -37,7 +37,7 @@ archive/issue_comments_009477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1473#issuecomment-9477",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_009478.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-12-12T10:49:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1473#issuecomment-9478",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -68,16 +68,16 @@ Changing assignee from was to robertwb.
 archive/issue_comments_009479.json:
 ```json
 {
-    "body": "Attachment [extcode-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/extcode-3d-cmd.hg) by robertwb created at 2007-12-14 06:27:28",
+    "body": "Attachment [extcode-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/extcode-3d-cmd.hg) by @robertwb created at 2007-12-14 06:27:28",
     "created_at": "2007-12-14T06:27:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1473#issuecomment-9479",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [extcode-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/extcode-3d-cmd.hg) by robertwb created at 2007-12-14 06:27:28
+Attachment [extcode-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/extcode-3d-cmd.hg) by @robertwb created at 2007-12-14 06:27:28
 
 
 
@@ -86,16 +86,16 @@ Attachment [extcode-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/e
 archive/issue_comments_009480.json:
 ```json
 {
-    "body": "Attachment [sage-main-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/sage-main-3d-cmd.hg) by robertwb created at 2007-12-14 09:32:10",
+    "body": "Attachment [sage-main-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/sage-main-3d-cmd.hg) by @robertwb created at 2007-12-14 09:32:10",
     "created_at": "2007-12-14T09:32:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1473#issuecomment-9480",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [sage-main-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/sage-main-3d-cmd.hg) by robertwb created at 2007-12-14 09:32:10
+Attachment [sage-main-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473/sage-main-3d-cmd.hg) by @robertwb created at 2007-12-14 09:32:10
 
 
 
@@ -104,16 +104,16 @@ Attachment [sage-main-3d-cmd.hg](tarball://root/attachments/some-uuid/ticket1473
 archive/issue_comments_009481.json:
 ```json
 {
-    "body": "Attachment [extcode-java3d-update.diff](tarball://root/attachments/some-uuid/ticket1473/extcode-java3d-update.diff) by was created at 2007-12-15 07:37:41\n\nThis works fine for me.",
+    "body": "Attachment [extcode-java3d-update.diff](tarball://root/attachments/some-uuid/ticket1473/extcode-java3d-update.diff) by @williamstein created at 2007-12-15 07:37:41\n\nThis works fine for me.",
     "created_at": "2007-12-15T07:37:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1473#issuecomment-9481",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [extcode-java3d-update.diff](tarball://root/attachments/some-uuid/ticket1473/extcode-java3d-update.diff) by was created at 2007-12-15 07:37:41
+Attachment [extcode-java3d-update.diff](tarball://root/attachments/some-uuid/ticket1473/extcode-java3d-update.diff) by @williamstein created at 2007-12-15 07:37:41
 
 This works fine for me.
 
@@ -149,7 +149,7 @@ archive/issue_comments_009483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1473",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1473#issuecomment-9483",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

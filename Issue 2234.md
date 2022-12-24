@@ -3,7 +3,7 @@
 archive/issues_002234.json:
 ```json
 {
-    "body": "Assignee: malb\n\nsee patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/2234\n\n",
+    "body": "Assignee: @malb\n\nsee patch\n\nIssue created by migration from https://trac.sagemath.org/ticket/2234\n\n",
     "created_at": "2008-02-20T20:14:10Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_002234.json:
     "title": "[with trivial patch, needs review] typo fix in doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2234",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 see patch
 

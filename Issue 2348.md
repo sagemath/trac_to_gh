@@ -3,7 +3,7 @@
 archive/issues_002348.json:
 ```json
 {
-    "body": "Assignee: wdj\n\nCC:  was wdj\n\nKeywords: matrix group, cyclotomic field\n\nDefine the following:\n\n```\nsage: F = CyclotomicField(8)\nsage: z = F.gen()\nsage: a = z+1/z\nsage: MS = MatrixSpace(F, 2, 2)\nsage: g1 = MS([[1/a,1/a],[1/a,-1/a]])\nsage: b = z^2\nsage: g2 = MS([[1,0],[0,b]])\nsage: g3 = MS([[b,0],[0,1]])\nsage: G = MatrixGroup([g1,g2,g3])\n```\n\n\nThen, one obtains a traceback by the attempt to see G:\n\n```\nsage: G\n<traceback removed>\n<type 'exceptions.TypeError'>: Gap produced error output\nVariable: 'zeta8' must have a value\n\n\n   executing Read(\"/home/king/.sage//temp/mpc739/6870//interface//tmp\");\n```\n\n\nNote that in fact `zeta8` is known:\n\n```\nsage: G.base_ring().gen()\nzeta8\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2348\n\n",
+    "body": "Assignee: @wdjoyner\n\nCC:  @williamstein @wdjoyner\n\nKeywords: matrix group, cyclotomic field\n\nDefine the following:\n\n```\nsage: F = CyclotomicField(8)\nsage: z = F.gen()\nsage: a = z+1/z\nsage: MS = MatrixSpace(F, 2, 2)\nsage: g1 = MS([[1/a,1/a],[1/a,-1/a]])\nsage: b = z^2\nsage: g2 = MS([[1,0],[0,b]])\nsage: g3 = MS([[b,0],[0,1]])\nsage: G = MatrixGroup([g1,g2,g3])\n```\n\n\nThen, one obtains a traceback by the attempt to see G:\n\n```\nsage: G\n<traceback removed>\n<type 'exceptions.TypeError'>: Gap produced error output\nVariable: 'zeta8' must have a value\n\n\n   executing Read(\"/home/king/.sage//temp/mpc739/6870//interface//tmp\");\n```\n\n\nNote that in fact `zeta8` is known:\n\n```\nsage: G.base_ring().gen()\nzeta8\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2348\n\n",
     "created_at": "2008-02-28T18:36:58Z",
     "labels": [
         "group_theory",
@@ -14,12 +14,12 @@ archive/issues_002348.json:
     "title": "MatrixGroup over CyclotomicField is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2348",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
-Assignee: wdj
+Assignee: @wdjoyner
 
-CC:  was wdj
+CC:  @williamstein @wdjoyner
 
 Keywords: matrix group, cyclotomic field
 
@@ -76,7 +76,7 @@ archive/issue_comments_015753.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15753",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_015754.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15754",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_015755.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15755",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_015756.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15756",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_015757.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15757",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_015758.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15758",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_015759.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15759",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_015760.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15760",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -311,7 +311,7 @@ archive/issue_comments_015761.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15761",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_015762.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15762",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -392,16 +392,16 @@ I found that in `sage/rings/number_field/number_field.py` there is no method `_s
 archive/issue_comments_015763.json:
 ```json
 {
-    "body": "Attachment [numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.patch) by SimonKing created at 2008-03-01 10:14:42\n\nThis solves only a part of the problem",
+    "body": "Attachment [numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.patch) by @simon-king-jena created at 2008-03-01 10:14:42\n\nThis solves only a part of the problem",
     "created_at": "2008-03-01T10:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15763",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.patch) by SimonKing created at 2008-03-01 10:14:42
+Attachment [numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.patch) by @simon-king-jena created at 2008-03-01 10:14:42
 
 This solves only a part of the problem
 
@@ -417,7 +417,7 @@ archive/issue_comments_015764.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15764",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -477,16 +477,16 @@ Since the line `sage: gap(F)` is necessary; otherwise `zeta8` would not be defin
 archive/issue_comments_015765.json:
 ```json
 {
-    "body": "Attachment [numberfields_gap.2.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.2.patch) by SimonKing created at 2008-03-01 14:34:08\n\nThis may be close to a solution",
+    "body": "Attachment [numberfields_gap.2.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.2.patch) by @simon-king-jena created at 2008-03-01 14:34:08\n\nThis may be close to a solution",
     "created_at": "2008-03-01T14:34:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15765",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [numberfields_gap.2.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.2.patch) by SimonKing created at 2008-03-01 14:34:08
+Attachment [numberfields_gap.2.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.2.patch) by @simon-king-jena created at 2008-03-01 14:34:08
 
 This may be close to a solution
 
@@ -502,7 +502,7 @@ archive/issue_comments_015766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15766",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -545,16 +545,16 @@ I still see some problems:
 archive/issue_comments_015767.json:
 ```json
 {
-    "body": "Attachment [final_numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/final_numberfields_gap.patch) by SimonKing created at 2008-03-01 23:52:33\n\nThe patch is relative to sage-2.10.3.rc0 and replaces the previous patches. I think it provides a solution of the problem",
+    "body": "Attachment [final_numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/final_numberfields_gap.patch) by @simon-king-jena created at 2008-03-01 23:52:33\n\nThe patch is relative to sage-2.10.3.rc0 and replaces the previous patches. I think it provides a solution of the problem",
     "created_at": "2008-03-01T23:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15767",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [final_numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/final_numberfields_gap.patch) by SimonKing created at 2008-03-01 23:52:33
+Attachment [final_numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/final_numberfields_gap.patch) by @simon-king-jena created at 2008-03-01 23:52:33
 
 The patch is relative to sage-2.10.3.rc0 and replaces the previous patches. I think it provides a solution of the problem
 
@@ -570,7 +570,7 @@ archive/issue_comments_015768.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15768",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -624,7 +624,7 @@ archive/issue_comments_015769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15769",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -643,7 +643,7 @@ archive/issue_comments_015770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15770",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -667,7 +667,7 @@ archive/issue_comments_015771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15771",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -692,7 +692,7 @@ archive/issue_comments_015772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15772",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -727,7 +727,7 @@ archive/issue_comments_015773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15773",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -740,16 +740,16 @@ First apply the previous patch, then this patch. It fixes and extends doc tests 
 archive/issue_comments_015774.json:
 ```json
 {
-    "body": "Attachment [fix_doctests_gap_numberfield.patch](tarball://root/attachments/some-uuid/ticket2348/fix_doctests_gap_numberfield.patch) by SimonKing created at 2008-03-02 22:18:28\n\nThe patch fix_doctests_gap_numberfield.patch should be applied after final_numberfields_gap.patch. \n\nThe new patch fixes some problems with doc tests. Also, it adds more doc tests. Moreover, now the generator of a number field gets the same name in gap and in sage, which may be convenient for the users.\n\nThe following doctests related with and extended by the patch pass:\nmatrix_group.py,\nnumber_field.py,\nnumber_field_element.pyx,\nmatrix1.pyx\n\n`@`wdj: Could you please see if your positive review still holds when adding the new patch?",
+    "body": "Attachment [fix_doctests_gap_numberfield.patch](tarball://root/attachments/some-uuid/ticket2348/fix_doctests_gap_numberfield.patch) by @simon-king-jena created at 2008-03-02 22:18:28\n\nThe patch fix_doctests_gap_numberfield.patch should be applied after final_numberfields_gap.patch. \n\nThe new patch fixes some problems with doc tests. Also, it adds more doc tests. Moreover, now the generator of a number field gets the same name in gap and in sage, which may be convenient for the users.\n\nThe following doctests related with and extended by the patch pass:\nmatrix_group.py,\nnumber_field.py,\nnumber_field_element.pyx,\nmatrix1.pyx\n\n`@`wdj: Could you please see if your positive review still holds when adding the new patch?",
     "created_at": "2008-03-02T22:18:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15774",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
-Attachment [fix_doctests_gap_numberfield.patch](tarball://root/attachments/some-uuid/ticket2348/fix_doctests_gap_numberfield.patch) by SimonKing created at 2008-03-02 22:18:28
+Attachment [fix_doctests_gap_numberfield.patch](tarball://root/attachments/some-uuid/ticket2348/fix_doctests_gap_numberfield.patch) by @simon-king-jena created at 2008-03-02 22:18:28
 
 The patch fix_doctests_gap_numberfield.patch should be applied after final_numberfields_gap.patch. 
 
@@ -775,7 +775,7 @@ archive/issue_comments_015775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15775",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -794,7 +794,7 @@ archive/issue_comments_015776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15776",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -816,7 +816,7 @@ archive/issue_comments_015777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15777",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 

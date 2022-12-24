@@ -3,7 +3,7 @@
 archive/issues_005466.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5466\n\n",
+    "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5466\n\n",
     "created_at": "2009-03-10T09:35:39Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_005466.json:
     "title": "[with patch, needs review] Make symbolic variables unpickle uniquely",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5466",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 
 

@@ -3,7 +3,7 @@
 archive/issues_001274.json:
 ```json
 {
-    "body": "Assignee: malb\n\nSimon King:\n Now, another question on the Singular interface:\nIn Singular, doing\n`matrix P,S,IS = invariant_ring(A,1);`\nwould make Singular to additionally print information about the\nprogress of computations (which, in big examples, might be nice to\nhave).\nHowever, when i use the Singular interface, i can not see such\ninformations. Where are they gone?\n\nMartin Albrecht:\nThe information is printed but ignored because pexpect expects\nSingular 'output' and ignores the rest. I am no pexpect expert so I don't\nknow how to fix it. It would very very useful though. Anyone else has any\nidea?\n\nWilliam Stein:\nI think this would be possible to implement, by modifying\ninterfaces/singular.py. It's easiest if we just have it print out\nthe result of all the verbose output, rather than all of it along the way as it is\noutput by singular, though the latter would also be possible.   With pseudo-tty's it is\npossible to do anything you could really imagine doing by hand while physically using\na terminal to interact with singular.  Anything.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1274\n\n",
+    "body": "Assignee: @malb\n\nSimon King:\n Now, another question on the Singular interface:\nIn Singular, doing\n`matrix P,S,IS = invariant_ring(A,1);`\nwould make Singular to additionally print information about the\nprogress of computations (which, in big examples, might be nice to\nhave).\nHowever, when i use the Singular interface, i can not see such\ninformations. Where are they gone?\n\nMartin Albrecht:\nThe information is printed but ignored because pexpect expects\nSingular 'output' and ignores the rest. I am no pexpect expert so I don't\nknow how to fix it. It would very very useful though. Anyone else has any\nidea?\n\nWilliam Stein:\nI think this would be possible to implement, by modifying\ninterfaces/singular.py. It's easiest if we just have it print out\nthe result of all the verbose output, rather than all of it along the way as it is\noutput by singular, though the latter would also be possible.   With pseudo-tty's it is\npossible to do anything you could really imagine doing by hand while physically using\na terminal to interact with singular.  Anything.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1274\n\n",
     "created_at": "2007-11-25T22:21:04Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001274.json:
     "title": "modify singular interface to allow for verbose output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1274",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 Simon King:
  Now, another question on the Singular interface:
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1274
 archive/issue_comments_007976.json:
 ```json
 {
-    "body": "Attachment [trac_1274.patch](tarball://root/attachments/some-uuid/ticket1274/trac_1274.patch) by malb created at 2008-01-18 18:21:36",
+    "body": "Attachment [trac_1274.patch](tarball://root/attachments/some-uuid/ticket1274/trac_1274.patch) by @malb created at 2008-01-18 18:21:36",
     "created_at": "2008-01-18T18:21:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1274#issuecomment-7976",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1274.patch](tarball://root/attachments/some-uuid/ticket1274/trac_1274.patch) by malb created at 2008-01-18 18:21:36
+Attachment [trac_1274.patch](tarball://root/attachments/some-uuid/ticket1274/trac_1274.patch) by @malb created at 2008-01-18 18:21:36
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_007977.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1274#issuecomment-7977",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_007978.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1274",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1274#issuecomment-7978",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

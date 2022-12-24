@@ -63,7 +63,7 @@ archive/issue_comments_010534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1656#issuecomment-10534",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -104,16 +104,16 @@ Michael
 archive/issue_comments_010536.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to gfurnish.",
+    "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-03-23T18:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1656#issuecomment-10536",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from mabshoff to gfurnish.
+Changing assignee from mabshoff to @garyfurnish.
 
 
 
@@ -127,7 +127,7 @@ archive/issue_comments_010537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1656#issuecomment-10537",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_010538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1656",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1656#issuecomment-10538",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 

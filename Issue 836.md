@@ -3,7 +3,7 @@
 archive/issues_000836.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: e = EllipticCurve([1,1,0,-63900,-1964465932632])\nsage: L = e.Lseries_dokchitser(15)\n```\n\n\nThis leads to\n\n```\n<type 'exceptions.RuntimeError'>: maximum recursion depth exceeded in cmp\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/836\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: e = EllipticCurve([1,1,0,-63900,-1964465932632])\nsage: L = e.Lseries_dokchitser(15)\n```\n\n\nThis leads to\n\n```\n<type 'exceptions.RuntimeError'>: maximum recursion depth exceeded in cmp\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/836\n\n",
     "created_at": "2007-10-06T22:59:20Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000836.json:
     "title": "L-series dokchitser -- infinite recursion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/836",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -49,7 +49,7 @@ archive/issue_comments_005168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/836#issuecomment-5168",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_005169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/836#issuecomment-5169",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -101,16 +101,16 @@ sage: L(1)
 archive/issue_comments_005170.json:
 ```json
 {
-    "body": "Attachment [trac836.patch](tarball://root/attachments/some-uuid/ticket836/trac836.patch) by was created at 2007-11-03 20:26:55",
+    "body": "Attachment [trac836.patch](tarball://root/attachments/some-uuid/ticket836/trac836.patch) by @williamstein created at 2007-11-03 20:26:55",
     "created_at": "2007-11-03T20:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/836#issuecomment-5170",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac836.patch](tarball://root/attachments/some-uuid/ticket836/trac836.patch) by was created at 2007-11-03 20:26:55
+Attachment [trac836.patch](tarball://root/attachments/some-uuid/ticket836/trac836.patch) by @williamstein created at 2007-11-03 20:26:55
 
 
 
@@ -124,7 +124,7 @@ archive/issue_comments_005171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/836",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/836#issuecomment-5171",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

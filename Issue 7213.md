@@ -3,7 +3,7 @@
 archive/issues_007213.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  schilly\n\nwhen doing an upgrade:\n\n```\nln: target `ecl' is not a directory\nFailed to create ecl library symbolic link ... exiting\n\nreal    1m55.950s\nuser    1m38.540s\nsys     0m12.430s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7213\n\n",
+    "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nwhen doing an upgrade:\n\n```\nln: target `ecl' is not a directory\nFailed to create ecl library symbolic link ... exiting\n\nreal    1m55.950s\nuser    1m38.540s\nsys     0m12.430s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7213\n\n",
     "created_at": "2009-10-14T20:28:16Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_007213.json:
     "title": "\"sage -upgrade\" to 4.1.2 results in issue with symbolic link and ecl",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7213",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
 
-CC:  schilly
+CC:  @haraldschilly
 
 when doing an upgrade:
 
@@ -49,7 +49,7 @@ archive/issue_comments_059848.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7213#issuecomment-59848",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_059849.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7213#issuecomment-59849",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_059853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7213",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7213#issuecomment-59853",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

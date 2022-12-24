@@ -14,7 +14,7 @@ archive/issues_002820.json:
     "title": "notebook -- turn off the jsmath warning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2820",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -42,7 +42,7 @@ archive/issue_comments_019359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19359",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_019360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2820",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19360",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

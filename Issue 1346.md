@@ -3,7 +3,7 @@
 archive/issues_001346.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf the next version of fpLLL started returning bogus answers, the doctests in sage/libs/fplll/fplll.pyx would still pass, because they use random input and output.\n\nThere should be at least some doctests where fplll is run on constant input with a known result.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1346\n\n",
+    "body": "Assignee: @williamstein\n\nIf the next version of fpLLL started returning bogus answers, the doctests in sage/libs/fplll/fplll.pyx would still pass, because they use random input and output.\n\nThere should be at least some doctests where fplll is run on constant input with a known result.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1346\n\n",
     "created_at": "2007-12-01T02:51:13Z",
     "labels": [
         "algebraic geometry",
@@ -17,7 +17,7 @@ archive/issues_001346.json:
     "user": "cwitty"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If the next version of fpLLL started returning bogus answers, the doctests in sage/libs/fplll/fplll.pyx would still pass, because they use random input and output.
 
@@ -84,7 +84,7 @@ archive/issue_comments_008629.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1346#issuecomment-8629",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -121,16 +121,16 @@ William's suggestion above is not sufficient to actually test fpLLL; at least we
 archive/issue_comments_008631.json:
 ```json
 {
-    "body": "Attachment [fplll_doctests.patch](tarball://root/attachments/some-uuid/ticket1346/fplll_doctests.patch) by malb created at 2008-10-04 18:04:01",
+    "body": "Attachment [fplll_doctests.patch](tarball://root/attachments/some-uuid/ticket1346/fplll_doctests.patch) by @malb created at 2008-10-04 18:04:01",
     "created_at": "2008-10-04T18:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1346#issuecomment-8631",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [fplll_doctests.patch](tarball://root/attachments/some-uuid/ticket1346/fplll_doctests.patch) by malb created at 2008-10-04 18:04:01
+Attachment [fplll_doctests.patch](tarball://root/attachments/some-uuid/ticket1346/fplll_doctests.patch) by @malb created at 2008-10-04 18:04:01
 
 
 
@@ -144,7 +144,7 @@ archive/issue_comments_008632.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1346#issuecomment-8632",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_008633.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1346#issuecomment-8633",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -207,7 +207,7 @@ archive/issue_comments_008634.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1346#issuecomment-8634",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_008635.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1346#issuecomment-8635",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -238,16 +238,16 @@ Oh, yes, you're right. I forgot for a moment that b_i^* and b_{i+1}^* are orthog
 archive/issue_comments_008636.json:
 ```json
 {
-    "body": "Attachment [trac1346_lll_doctest2.patch](tarball://root/attachments/some-uuid/ticket1346/trac1346_lll_doctest2.patch) by wjp created at 2008-10-10 21:14:24\n\nI attached a new patch without that change to the norm check.",
+    "body": "Attachment [trac1346_lll_doctest2.patch](tarball://root/attachments/some-uuid/ticket1346/trac1346_lll_doctest2.patch) by @wjp created at 2008-10-10 21:14:24\n\nI attached a new patch without that change to the norm check.",
     "created_at": "2008-10-10T21:14:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1346",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1346#issuecomment-8636",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [trac1346_lll_doctest2.patch](tarball://root/attachments/some-uuid/ticket1346/trac1346_lll_doctest2.patch) by wjp created at 2008-10-10 21:14:24
+Attachment [trac1346_lll_doctest2.patch](tarball://root/attachments/some-uuid/ticket1346/trac1346_lll_doctest2.patch) by @wjp created at 2008-10-10 21:14:24
 
 I attached a new patch without that change to the norm check.
 

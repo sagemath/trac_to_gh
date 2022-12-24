@@ -3,7 +3,7 @@
 archive/issues_009446.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCC:  drkirkby justin mhansen\n\nWith Sage 4.5.alpha4 on t2.math.washington.edu (solaris):\n\n```\nsage -t  -long devel/sage/sage/misc/trace.py\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.5.alpha4/devel/sage-main/sage/misc/trace.py\", line 54:\n    sage: _ = s.expect('100')\nException raised:\n    Traceback (most recent call last):\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_examp\\\nle\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_exam\\\nple\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[6]>\", line 1, in <module>\n        _ = s.expect('100')###line 54:\n    sage: _ = s.expect('100')\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/lib/python/site-packages/pexpect.py\", line 912\\\n, in expect\n        return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/lib/python/site-packages/pexpect.py\", line 989\\\n, in expect_list\n        raise TIMEOUT (str(e) + '\\n' + str(self))\n    TIMEOUT: Timeout exceeded in read_nonblocking().\n    <pexpect.spawn instance at 0x2c005d0>\n    version: 2.0 ($Revision: 1.151 $)\n    command: /home/palmieri/t2/sage-4.5.alpha4/sage\n    args: ['/home/palmieri/t2/sage-4.5.alpha4/sage']\n    patterns:\n        100\n    buffer (last 100 chars):\n    before (last 100 chars):                       *^M\n    **********************************************************************^M\n    c^M\n\n    after: <class 'pexpect.TIMEOUT'>\n    match: None\n    match_index: None\n    exitstatus: None\n    flag_eof: 0\n    pid: 22383\n    child_fd: 4\n    timeout: 30\n    delimiter: <class 'pexpect.EOF'>\n    logfile: None\n    maxread: 2000\n    searchwindowsize: None\n    delaybeforesend: 0.1\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.5.alpha4/devel/sage-main/sage/misc/trace.py\", line 61:\n    sage: print s.before[s.before.find('-'):]\nExpected:\n    ---...\n    ipdb> c\n    2 * 5\nGot:\n    ----------------------------------------------------------------------^M\n    | Sage Version 4.5.alpha4, Release Date: 2010-07-06                  |^M\n    | Type notebook() for the GUI, and license() for information.        |^M\n    ----------------------------------------------------------------------^M\n    **********************************************************************^M\n    *                                                                    *^M\n    * Warning: this is a prerelease version, and it may be unstable.     *^M\n    *                                                                    *^M\n    **********************************************************************^M\n    c^M\n    <BLANKLINE>\n**********************************************************************\n```\n\nIs this due to something timing out?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9446\n\n",
+    "body": "Assignee: @jasongrout\n\nCC:  drkirkby justin @mwhansen\n\nWith Sage 4.5.alpha4 on t2.math.washington.edu (solaris):\n\n```\nsage -t  -long devel/sage/sage/misc/trace.py\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.5.alpha4/devel/sage-main/sage/misc/trace.py\", line 54:\n    sage: _ = s.expect('100')\nException raised:\n    Traceback (most recent call last):\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_examp\\\nle\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_exam\\\nple\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[6]>\", line 1, in <module>\n        _ = s.expect('100')###line 54:\n    sage: _ = s.expect('100')\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/lib/python/site-packages/pexpect.py\", line 912\\\n, in expect\n        return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/lib/python/site-packages/pexpect.py\", line 989\\\n, in expect_list\n        raise TIMEOUT (str(e) + '\\n' + str(self))\n    TIMEOUT: Timeout exceeded in read_nonblocking().\n    <pexpect.spawn instance at 0x2c005d0>\n    version: 2.0 ($Revision: 1.151 $)\n    command: /home/palmieri/t2/sage-4.5.alpha4/sage\n    args: ['/home/palmieri/t2/sage-4.5.alpha4/sage']\n    patterns:\n        100\n    buffer (last 100 chars):\n    before (last 100 chars):                       *^M\n    **********************************************************************^M\n    c^M\n\n    after: <class 'pexpect.TIMEOUT'>\n    match: None\n    match_index: None\n    exitstatus: None\n    flag_eof: 0\n    pid: 22383\n    child_fd: 4\n    timeout: 30\n    delimiter: <class 'pexpect.EOF'>\n    logfile: None\n    maxread: 2000\n    searchwindowsize: None\n    delaybeforesend: 0.1\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.5.alpha4/devel/sage-main/sage/misc/trace.py\", line 61:\n    sage: print s.before[s.before.find('-'):]\nExpected:\n    ---...\n    ipdb> c\n    2 * 5\nGot:\n    ----------------------------------------------------------------------^M\n    | Sage Version 4.5.alpha4, Release Date: 2010-07-06                  |^M\n    | Type notebook() for the GUI, and license() for information.        |^M\n    ----------------------------------------------------------------------^M\n    **********************************************************************^M\n    *                                                                    *^M\n    * Warning: this is a prerelease version, and it may be unstable.     *^M\n    *                                                                    *^M\n    **********************************************************************^M\n    c^M\n    <BLANKLINE>\n**********************************************************************\n```\n\nIs this due to something timing out?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9446\n\n",
     "created_at": "2010-07-07T05:45:50Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_009446.json:
     "title": "misc/trace.py doctest failure on t2 (solaris)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9446",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
-CC:  drkirkby justin mhansen
+CC:  drkirkby justin @mwhansen
 
 With Sage 4.5.alpha4 on t2.math.washington.edu (solaris):
 
@@ -178,7 +178,7 @@ archive/issue_comments_090513.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90513",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -198,7 +198,7 @@ archive/issue_comments_090514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90514",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -234,16 +234,16 @@ I think not yet. There are a lot of doctest failures which seem to not be reprod
 archive/issue_comments_090516.json:
 ```json
 {
-    "body": "Changing assignee from jason to mvngu.",
+    "body": "Changing assignee from @jasongrout to mvngu.",
     "created_at": "2010-10-02T21:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90516",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Changing assignee from jason to mvngu.
+Changing assignee from @jasongrout to mvngu.
 
 
 
@@ -257,7 +257,7 @@ archive/issue_comments_090517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90517",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -275,7 +275,7 @@ archive/issue_comments_090518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90518",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -373,7 +373,7 @@ archive/issue_comments_090521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90521",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_090522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90522",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -474,16 +474,16 @@ I get 13 failures on sage.math, at least some of which I may have induced with a
 archive/issue_comments_090523.json:
 ```json
 {
-    "body": "Attachment [trac_9446-trace_doctest_timeout.patch](tarball://root/attachments/some-uuid/ticket9446/trac_9446-trace_doctest_timeout.patch) by mpatel created at 2010-10-10 03:31:44\n\nIncrease pexpect timeout for test",
+    "body": "Attachment [trac_9446-trace_doctest_timeout.patch](tarball://root/attachments/some-uuid/ticket9446/trac_9446-trace_doctest_timeout.patch) by @qed777 created at 2010-10-10 03:31:44\n\nIncrease pexpect timeout for test",
     "created_at": "2010-10-10T03:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90523",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9446-trace_doctest_timeout.patch](tarball://root/attachments/some-uuid/ticket9446/trac_9446-trace_doctest_timeout.patch) by mpatel created at 2010-10-10 03:31:44
+Attachment [trac_9446-trace_doctest_timeout.patch](tarball://root/attachments/some-uuid/ticket9446/trac_9446-trace_doctest_timeout.patch) by @qed777 created at 2010-10-10 03:31:44
 
 Increase pexpect timeout for test
 
@@ -499,7 +499,7 @@ archive/issue_comments_090524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90524",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -517,7 +517,7 @@ archive/issue_comments_090525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90525",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -535,7 +535,7 @@ archive/issue_comments_090526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90526",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -594,7 +594,7 @@ archive/issue_comments_090529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90529",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

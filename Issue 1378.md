@@ -14,7 +14,7 @@ archive/issues_001378.json:
     "title": "add ssh-client (i.e., ssh-keygen) as a required package in various places in the docs.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1378",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tba
@@ -49,7 +49,7 @@ archive/issue_comments_008839.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1378#issuecomment-8839",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -62,16 +62,16 @@ Changing status from new to assigned.
 archive/issue_comments_008840.json:
 ```json
 {
-    "body": "Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1378/1399.patch) by mhansen created at 2007-12-06 05:44:16",
+    "body": "Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1378/1399.patch) by @mwhansen created at 2007-12-06 05:44:16",
     "created_at": "2007-12-06T05:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1378#issuecomment-8840",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1378/1399.patch) by mhansen created at 2007-12-06 05:44:16
+Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1378/1399.patch) by @mwhansen created at 2007-12-06 05:44:16
 
 
 
@@ -80,16 +80,16 @@ Attachment [1399.patch](tarball://root/attachments/some-uuid/ticket1378/1399.pat
 archive/issue_comments_008841.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2007-12-06T05:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1378",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1378#issuecomment-8841",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 

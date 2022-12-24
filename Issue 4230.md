@@ -3,7 +3,7 @@
 archive/issues_004230.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  kcrisman benjaminfjones\n\nAt the moment, Sage uses Maxima to compute the Bessel Y function.  This is slow and works only with the default 53 bits of precision.  It would be fairly easy to implement this:\n\n* for integer values of the order nu, use the mpfr yn function\n* for non-integer values of nu, use the formula $Y_nu(z) = (J_nu(z)*cos(nu*pi) - J_{-nu}(z))/sin(nu*pi)$, where J is the Bessel J function.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4230\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @kcrisman @benjaminfjones\n\nAt the moment, Sage uses Maxima to compute the Bessel Y function.  This is slow and works only with the default 53 bits of precision.  It would be fairly easy to implement this:\n\n* for integer values of the order nu, use the mpfr yn function\n* for non-integer values of nu, use the formula $Y_nu(z) = (J_nu(z)*cos(nu*pi) - J_{-nu}(z))/sin(nu*pi)$, where J is the Bessel J function.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4230\n\n",
     "created_at": "2008-10-01T10:09:21Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_004230.json:
     "title": "implement arbitrary precision Bessel Y function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4230",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  kcrisman benjaminfjones
+CC:  @kcrisman @benjaminfjones
 
 At the moment, Sage uses Maxima to compute the Bessel Y function.  This is slow and works only with the default 53 bits of precision.  It would be fairly easy to implement this:
 
@@ -43,7 +43,7 @@ archive/issue_comments_030742.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4230#issuecomment-30742",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_030743.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4230#issuecomment-30743",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_030744.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4230#issuecomment-30744",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_030745.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4230#issuecomment-30745",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_030746.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4230#issuecomment-30746",
-    "user": "benjaminfjones"
+    "user": "@benjaminfjones"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_030747.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4230#issuecomment-30747",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_030748.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4230#issuecomment-30748",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_030749.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4230#issuecomment-30749",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_030750.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4230",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4230#issuecomment-30750",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

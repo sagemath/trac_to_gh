@@ -3,7 +3,7 @@
 archive/issues_007548.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: M = CuspForms(Gamma0(5*3^2), 2)\nsage: f = M.basis()[0]\nsage: f\nq - q^4 + O(q^6)\nsage: 2*f\n2*q - 2*q^4 + O(q^6)\nsage: f*2\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/ghitza/.sage/temp/artin/19582/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/modular/modform/element.pyc in __mul__(self, other)\n    967         # boring case: scalar multiplication\n\n    968         if not isinstance(other, ModularFormElement):\n--> 969             return HeckeModuleElement.__mul__(self, other)\n    970 \n    971         # first ensure the levels are equal\n\n\nNameError: global name 'HeckeModuleElement' is not defined\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7548\n\n",
+    "body": "Assignee: @craigcitro\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: M = CuspForms(Gamma0(5*3^2), 2)\nsage: f = M.basis()[0]\nsage: f\nq - q^4 + O(q^6)\nsage: 2*f\n2*q - 2*q^4 + O(q^6)\nsage: f*2\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/ghitza/.sage/temp/artin/19582/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/modular/modform/element.pyc in __mul__(self, other)\n    967         # boring case: scalar multiplication\n\n    968         if not isinstance(other, ModularFormElement):\n--> 969             return HeckeModuleElement.__mul__(self, other)\n    970 \n    971         # first ensure the levels are equal\n\n\nNameError: global name 'HeckeModuleElement' is not defined\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7548\n\n",
     "created_at": "2009-11-28T04:25:04Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_007548.json:
     "title": "modular form times scalar = boom",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7548",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 
 ```
@@ -66,7 +66,7 @@ archive/issue_comments_064115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64115",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_064116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64116",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -97,16 +97,16 @@ Well, the fix was embarrassingly trivial.  Patch is attached.
 archive/issue_comments_064117.json:
 ```json
 {
-    "body": "Attachment [trac_7548.patch](tarball://root/attachments/some-uuid/ticket7548/trac_7548.patch) by AlexGhitza created at 2010-01-03 07:23:57",
+    "body": "Attachment [trac_7548.patch](tarball://root/attachments/some-uuid/ticket7548/trac_7548.patch) by @aghitza created at 2010-01-03 07:23:57",
     "created_at": "2010-01-03T07:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64117",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_7548.patch](tarball://root/attachments/some-uuid/ticket7548/trac_7548.patch) by AlexGhitza created at 2010-01-03 07:23:57
+Attachment [trac_7548.patch](tarball://root/attachments/some-uuid/ticket7548/trac_7548.patch) by @aghitza created at 2010-01-03 07:23:57
 
 
 
@@ -120,7 +120,7 @@ archive/issue_comments_064118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64118",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -138,7 +138,7 @@ archive/issue_comments_064119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64119",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_064120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7548",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64120",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

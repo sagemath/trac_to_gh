@@ -3,7 +3,7 @@
 archive/issues_009388.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  rlm\n\nThe current makefile for the rubiks spkg.\n\nThe makefile erroneously assumes that \"mktemp\" can be run with no arguments.  This is not the case on, at least, recent versions of Mac OS X.\n\nThe probable fix is to run \"mktemp\" with a template filename.  See the man page for details.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9388\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @rlmill\n\nThe current makefile for the rubiks spkg.\n\nThe makefile erroneously assumes that \"mktemp\" can be run with no arguments.  This is not the case on, at least, recent versions of Mac OS X.\n\nThe probable fix is to run \"mktemp\" with a template filename.  See the man page for details.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9388\n\n",
     "created_at": "2010-06-30T00:53:16Z",
     "labels": [
         "build",
@@ -19,7 +19,7 @@ archive/issues_009388.json:
 ```
 Assignee: GeorgSWeber
 
-CC:  rlm
+CC:  @rlmill
 
 The current makefile for the rubiks spkg.
 
@@ -239,16 +239,16 @@ Mercurial patch which fully solves the rubiks makefile problem using only POSIX 
 archive/issue_comments_089365.json:
 ```json
 {
-    "body": "Attachment [9388-fix-Rubiks-portably.patch](tarball://root/attachments/some-uuid/ticket9388/9388-fix-Rubiks-portably.patch) by rlm created at 2010-07-01 17:50:23\n\nDavid --- While credit for individual patches by definition goes to those who make them, the author block is for credit in the release notes, which should go to anyone who helped move the fix towards its final form. I think that Justin still deserves credit here for helping to hunt down the problem in the first place.\n\nIt might be that we're coming from different contexts, but it strikes me as rude to remove someone from the author block.",
+    "body": "Attachment [9388-fix-Rubiks-portably.patch](tarball://root/attachments/some-uuid/ticket9388/9388-fix-Rubiks-portably.patch) by @rlmill created at 2010-07-01 17:50:23\n\nDavid --- While credit for individual patches by definition goes to those who make them, the author block is for credit in the release notes, which should go to anyone who helped move the fix towards its final form. I think that Justin still deserves credit here for helping to hunt down the problem in the first place.\n\nIt might be that we're coming from different contexts, but it strikes me as rude to remove someone from the author block.",
     "created_at": "2010-07-01T17:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89365",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [9388-fix-Rubiks-portably.patch](tarball://root/attachments/some-uuid/ticket9388/9388-fix-Rubiks-portably.patch) by rlm created at 2010-07-01 17:50:23
+Attachment [9388-fix-Rubiks-portably.patch](tarball://root/attachments/some-uuid/ticket9388/9388-fix-Rubiks-portably.patch) by @rlmill created at 2010-07-01 17:50:23
 
 David --- While credit for individual patches by definition goes to those who make them, the author block is for credit in the release notes, which should go to anyone who helped move the fix towards its final form. I think that Justin still deserves credit here for helping to hunt down the problem in the first place.
 
@@ -266,7 +266,7 @@ archive/issue_comments_089366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89366",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_089367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89367",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_089369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89369",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

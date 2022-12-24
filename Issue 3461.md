@@ -14,7 +14,7 @@ archive/issues_003461.json:
     "title": "write a construction for permutation groups so that the coercion system can find a common parent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3461",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: joyner
@@ -51,16 +51,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3461
 archive/issue_comments_024412.json:
 ```json
 {
-    "body": "Attachment [trac_3461.patch](tarball://root/attachments/some-uuid/ticket3461/trac_3461.patch) by mhansen created at 2010-01-17 03:24:37",
+    "body": "Attachment [trac_3461.patch](tarball://root/attachments/some-uuid/ticket3461/trac_3461.patch) by @mwhansen created at 2010-01-17 03:24:37",
     "created_at": "2010-01-17T03:24:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3461#issuecomment-24412",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3461.patch](tarball://root/attachments/some-uuid/ticket3461/trac_3461.patch) by mhansen created at 2010-01-17 03:24:37
+Attachment [trac_3461.patch](tarball://root/attachments/some-uuid/ticket3461/trac_3461.patch) by @mwhansen created at 2010-01-17 03:24:37
 
 
 
@@ -74,7 +74,7 @@ archive/issue_comments_024413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3461#issuecomment-24413",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -87,16 +87,16 @@ Changing status from new to needs_review.
 archive/issue_comments_024414.json:
 ```json
 {
-    "body": "Attachment [trac_3461_new.patch](tarball://root/attachments/some-uuid/ticket3461/trac_3461_new.patch) by davidloeffler created at 2010-05-17 10:03:34\n\nreplaces previous patch",
+    "body": "Attachment [trac_3461_new.patch](tarball://root/attachments/some-uuid/ticket3461/trac_3461_new.patch) by @loefflerd created at 2010-05-17 10:03:34\n\nreplaces previous patch",
     "created_at": "2010-05-17T10:03:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3461#issuecomment-24414",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_3461_new.patch](tarball://root/attachments/some-uuid/ticket3461/trac_3461_new.patch) by davidloeffler created at 2010-05-17 10:03:34
+Attachment [trac_3461_new.patch](tarball://root/attachments/some-uuid/ticket3461/trac_3461_new.patch) by @loefflerd created at 2010-05-17 10:03:34
 
 replaces previous patch
 
@@ -112,7 +112,7 @@ archive/issue_comments_024415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3461#issuecomment-24415",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_024416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3461#issuecomment-24416",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -150,7 +150,7 @@ archive/issue_comments_024417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3461#issuecomment-24417",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -168,7 +168,7 @@ archive/issue_comments_024418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3461",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3461#issuecomment-24418",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

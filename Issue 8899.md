@@ -3,7 +3,7 @@
 archive/issues_008899.json:
 ```json
 {
-    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat chrisjamesberg zabrocki aschilling\n\nPatch under dev. on the sage-combinat patch server\n\nIssue created by migration from https://trac.sagemath.org/ticket/8899\n\n",
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat chrisjamesberg @zabrocki @anneschilling\n\nPatch under dev. on the sage-combinat patch server\n\nIssue created by migration from https://trac.sagemath.org/ticket/8899\n\n",
     "created_at": "2010-05-05T23:39:46Z",
     "labels": [
         "combinatorics",
@@ -14,12 +14,12 @@ archive/issues_008899.json:
     "title": "Implement non commutative symmetric functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8899",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: sage-combinat
 
-CC:  sage-combinat chrisjamesberg zabrocki aschilling
+CC:  sage-combinat chrisjamesberg @zabrocki @anneschilling
 
 Patch under dev. on the sage-combinat patch server
 
@@ -39,7 +39,7 @@ archive/issue_comments_081852.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81852",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_081853.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81853",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_081854.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81854",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_081855.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81855",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_081856.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81856",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_081857.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81857",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_081858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81858",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_081859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81859",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_081860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81860",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -219,7 +219,7 @@ archive/issue_comments_081861.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81861",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_081862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81862",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -250,16 +250,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_081863.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-ncsf-qsym-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-fs.patch) by saliola created at 2012-07-28 12:18:01",
+    "body": "Attachment [trac_11929_8899-ncsf-qsym-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-fs.patch) by @saliola created at 2012-07-28 12:18:01",
     "created_at": "2012-07-28T12:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81863",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_11929_8899-ncsf-qsym-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-fs.patch) by saliola created at 2012-07-28 12:18:01
+Attachment [trac_11929_8899-ncsf-qsym-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-fs.patch) by @saliola created at 2012-07-28 12:18:01
 
 
 
@@ -273,7 +273,7 @@ archive/issue_comments_081864.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81864",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -306,16 +306,16 @@ i.e. a double dash after the variable to be explained [and a space after the ini
 archive/issue_comments_081865.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-fix_skewby-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-fix_skewby-fs.patch) by saliola created at 2012-08-13 20:46:41\n\nTwo new small patches.\n\n1. `trac_11929_8899-fix_skewby-fs.patch:` Fixes things so that the following raises an error:\n\n```\nF([2,1]).skew_by([1])\n```\n\n\n2. `trac_11929_8899-add_degree_to_elementmethods-fs.patch:` addes `ElementMethods.degree` and `ElementMethods.is_homogeneous` to `GradedAlgebrasWithBasis` (I extracted these from a separate patch on the sage-combinat queue).\n\n**Outstanding question about the degree of an element:** what do we want as the default behaviour? Should it:\na. raise an error if the element is not homogeneous; or\nb. return the maximum of the degrees of the homogeneous summands?",
+    "body": "Attachment [trac_11929_8899-fix_skewby-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-fix_skewby-fs.patch) by @saliola created at 2012-08-13 20:46:41\n\nTwo new small patches.\n\n1. `trac_11929_8899-fix_skewby-fs.patch:` Fixes things so that the following raises an error:\n\n```\nF([2,1]).skew_by([1])\n```\n\n\n2. `trac_11929_8899-add_degree_to_elementmethods-fs.patch:` addes `ElementMethods.degree` and `ElementMethods.is_homogeneous` to `GradedAlgebrasWithBasis` (I extracted these from a separate patch on the sage-combinat queue).\n\n**Outstanding question about the degree of an element:** what do we want as the default behaviour? Should it:\na. raise an error if the element is not homogeneous; or\nb. return the maximum of the degrees of the homogeneous summands?",
     "created_at": "2012-08-13T20:46:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81865",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_11929_8899-fix_skewby-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-fix_skewby-fs.patch) by saliola created at 2012-08-13 20:46:41
+Attachment [trac_11929_8899-fix_skewby-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-fix_skewby-fs.patch) by @saliola created at 2012-08-13 20:46:41
 
 Two new small patches.
 
@@ -339,16 +339,16 @@ b. return the maximum of the degrees of the homogeneous summands?
 archive/issue_comments_081866.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-add_degree_to_elementmethods-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-add_degree_to_elementmethods-fs.patch) by saliola created at 2012-08-14 14:18:26",
+    "body": "Attachment [trac_11929_8899-add_degree_to_elementmethods-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-add_degree_to_elementmethods-fs.patch) by @saliola created at 2012-08-14 14:18:26",
     "created_at": "2012-08-14T14:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81866",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_11929_8899-add_degree_to_elementmethods-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-add_degree_to_elementmethods-fs.patch) by saliola created at 2012-08-14 14:18:26
+Attachment [trac_11929_8899-add_degree_to_elementmethods-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-add_degree_to_elementmethods-fs.patch) by @saliola created at 2012-08-14 14:18:26
 
 
 
@@ -362,7 +362,7 @@ archive/issue_comments_081867.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81867",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -397,7 +397,7 @@ archive/issue_comments_081868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81868",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -418,7 +418,7 @@ archive/issue_comments_081869.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81869",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -431,16 +431,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_081870.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-include_doc_in_reference_manual-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-include_doc_in_reference_manual-fs.patch) by saliola created at 2012-08-14 16:02:43",
+    "body": "Attachment [trac_11929_8899-include_doc_in_reference_manual-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-include_doc_in_reference_manual-fs.patch) by @saliola created at 2012-08-14 16:02:43",
     "created_at": "2012-08-14T16:02:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81870",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_11929_8899-include_doc_in_reference_manual-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-include_doc_in_reference_manual-fs.patch) by saliola created at 2012-08-14 16:02:43
+Attachment [trac_11929_8899-include_doc_in_reference_manual-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-include_doc_in_reference_manual-fs.patch) by @saliola created at 2012-08-14 16:02:43
 
 
 
@@ -449,16 +449,16 @@ Attachment [trac_11929_8899-include_doc_in_reference_manual-fs.patch](tarball://
 archive/issue_comments_081871.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-modify_duality_method_names-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-modify_duality_method_names-fs.patch) by saliola created at 2012-08-15 15:35:25\n\nThe patch [attachment: trac_11929_8899-modify_duality_method_names-fs.patch] modifies the duality method names to conform to #13372. Namely:\n\n- `object.dual` returns the dual object:\n\n```\nsage: N.dual()\nQuasisymmetric functions over the Rational Field\nsage: S.dual()\nQuasisymmetric functions over the Rational Field on the Monomial basis\nsage: R.dual()\nQuasisymmetric functions over the Rational Field on the Fundamental basis\n```\n\n\n- `dual_pairing` became `duality_pairing`",
+    "body": "Attachment [trac_11929_8899-modify_duality_method_names-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-modify_duality_method_names-fs.patch) by @saliola created at 2012-08-15 15:35:25\n\nThe patch [attachment: trac_11929_8899-modify_duality_method_names-fs.patch] modifies the duality method names to conform to #13372. Namely:\n\n- `object.dual` returns the dual object:\n\n```\nsage: N.dual()\nQuasisymmetric functions over the Rational Field\nsage: S.dual()\nQuasisymmetric functions over the Rational Field on the Monomial basis\nsage: R.dual()\nQuasisymmetric functions over the Rational Field on the Fundamental basis\n```\n\n\n- `dual_pairing` became `duality_pairing`",
     "created_at": "2012-08-15T15:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81871",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_11929_8899-modify_duality_method_names-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-modify_duality_method_names-fs.patch) by saliola created at 2012-08-15 15:35:25
+Attachment [trac_11929_8899-modify_duality_method_names-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-modify_duality_method_names-fs.patch) by @saliola created at 2012-08-15 15:35:25
 
 The patch [attachment: trac_11929_8899-modify_duality_method_names-fs.patch] modifies the duality method names to conform to #13372. Namely:
 
@@ -483,16 +483,16 @@ Quasisymmetric functions over the Rational Field on the Fundamental basis
 archive/issue_comments_081872.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-is_symmetric-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-is_symmetric-fs.patch) by saliola created at 2012-08-16 21:08:47",
+    "body": "Attachment [trac_11929_8899-is_symmetric-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-is_symmetric-fs.patch) by @saliola created at 2012-08-16 21:08:47",
     "created_at": "2012-08-16T21:08:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81872",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_11929_8899-is_symmetric-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-is_symmetric-fs.patch) by saliola created at 2012-08-16 21:08:47
+Attachment [trac_11929_8899-is_symmetric-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-is_symmetric-fs.patch) by @saliola created at 2012-08-16 21:08:47
 
 
 
@@ -506,7 +506,7 @@ archive/issue_comments_081873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81873",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -519,16 +519,16 @@ archive/issue_comments_081873.json:
 archive/issue_comments_081874.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-internal_product_fix-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-internal_product_fix-fs.patch) by saliola created at 2012-08-16 21:27:00",
+    "body": "Attachment [trac_11929_8899-internal_product_fix-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-internal_product_fix-fs.patch) by @saliola created at 2012-08-16 21:27:00",
     "created_at": "2012-08-16T21:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81874",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_11929_8899-internal_product_fix-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-internal_product_fix-fs.patch) by saliola created at 2012-08-16 21:27:00
+Attachment [trac_11929_8899-internal_product_fix-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-internal_product_fix-fs.patch) by @saliola created at 2012-08-16 21:27:00
 
 
 
@@ -542,7 +542,7 @@ archive/issue_comments_081875.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81875",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -560,7 +560,7 @@ archive/issue_comments_081876.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81876",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 
@@ -573,16 +573,16 @@ minor doc fixes and a quasi-symmetric function tutorial
 archive/issue_comments_081877.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-additional_documentation-mz.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-additional_documentation-mz.patch) by zabrocki created at 2012-08-17 20:44:25\n\nMinor changes to documentation plus the addition of a tutorial for quasi-symmetric function and additional doc tests and examples.  The doc tests added use functionality that is in sage-5.3.beta2.",
+    "body": "Attachment [trac_11929_8899-additional_documentation-mz.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-additional_documentation-mz.patch) by @zabrocki created at 2012-08-17 20:44:25\n\nMinor changes to documentation plus the addition of a tutorial for quasi-symmetric function and additional doc tests and examples.  The doc tests added use functionality that is in sage-5.3.beta2.",
     "created_at": "2012-08-17T20:44:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81877",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 
-Attachment [trac_11929_8899-additional_documentation-mz.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-additional_documentation-mz.patch) by zabrocki created at 2012-08-17 20:44:25
+Attachment [trac_11929_8899-additional_documentation-mz.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-additional_documentation-mz.patch) by @zabrocki created at 2012-08-17 20:44:25
 
 Minor changes to documentation plus the addition of a tutorial for quasi-symmetric function and additional doc tests and examples.  The doc tests added use functionality that is in sage-5.3.beta2.
 
@@ -593,16 +593,16 @@ Minor changes to documentation plus the addition of a tutorial for quasi-symmetr
 archive/issue_comments_081878.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-antipode_by_coercion_in_category-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-antipode_by_coercion_in_category-fs.patch) by saliola created at 2012-08-18 02:05:55\n\nrebased to 5.3.beta2",
+    "body": "Attachment [trac_11929_8899-antipode_by_coercion_in_category-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-antipode_by_coercion_in_category-fs.patch) by @saliola created at 2012-08-18 02:05:55\n\nrebased to 5.3.beta2",
     "created_at": "2012-08-18T02:05:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81878",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_11929_8899-antipode_by_coercion_in_category-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-antipode_by_coercion_in_category-fs.patch) by saliola created at 2012-08-18 02:05:55
+Attachment [trac_11929_8899-antipode_by_coercion_in_category-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-antipode_by_coercion_in_category-fs.patch) by @saliola created at 2012-08-18 02:05:55
 
 rebased to 5.3.beta2
 
@@ -613,16 +613,16 @@ rebased to 5.3.beta2
 archive/issue_comments_081879.json:
 ```json
 {
-    "body": "Attachment [coproduct_with_realizations-fs.patch](tarball://root/attachments/some-uuid/ticket8899/coproduct_with_realizations-fs.patch) by saliola created at 2012-08-18 02:21:19\n\nextra doctests for coproduct and counit",
+    "body": "Attachment [coproduct_with_realizations-fs.patch](tarball://root/attachments/some-uuid/ticket8899/coproduct_with_realizations-fs.patch) by @saliola created at 2012-08-18 02:21:19\n\nextra doctests for coproduct and counit",
     "created_at": "2012-08-18T02:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81879",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [coproduct_with_realizations-fs.patch](tarball://root/attachments/some-uuid/ticket8899/coproduct_with_realizations-fs.patch) by saliola created at 2012-08-18 02:21:19
+Attachment [coproduct_with_realizations-fs.patch](tarball://root/attachments/some-uuid/ticket8899/coproduct_with_realizations-fs.patch) by @saliola created at 2012-08-18 02:21:19
 
 extra doctests for coproduct and counit
 
@@ -638,7 +638,7 @@ archive/issue_comments_081880.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81880",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -653,16 +653,16 @@ Apply: trac_11929_8899-ncsf-qsym-folded-fs.patch, trac_11929_8899-additional_doc
 archive/issue_comments_081881.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-additional_documentation-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-additional_documentation-fs.patch) by saliola created at 2012-08-18 04:50:12",
+    "body": "Attachment [trac_11929_8899-additional_documentation-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-additional_documentation-fs.patch) by @saliola created at 2012-08-18 04:50:12",
     "created_at": "2012-08-18T04:50:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81881",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_11929_8899-additional_documentation-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-additional_documentation-fs.patch) by saliola created at 2012-08-18 04:50:12
+Attachment [trac_11929_8899-additional_documentation-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-additional_documentation-fs.patch) by @saliola created at 2012-08-18 04:50:12
 
 
 
@@ -676,7 +676,7 @@ archive/issue_comments_081882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81882",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -707,16 +707,16 @@ Here is a summary of the changes:
 archive/issue_comments_081883.json:
 ```json
 {
-    "body": "Attachment [additional-addional-documentation-mz.patch](tarball://root/attachments/some-uuid/ticket8899/additional-addional-documentation-mz.patch) by saliola created at 2012-08-22 18:02:43",
+    "body": "Attachment [additional-addional-documentation-mz.patch](tarball://root/attachments/some-uuid/ticket8899/additional-addional-documentation-mz.patch) by @saliola created at 2012-08-22 18:02:43",
     "created_at": "2012-08-22T18:02:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81883",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [additional-addional-documentation-mz.patch](tarball://root/attachments/some-uuid/ticket8899/additional-addional-documentation-mz.patch) by saliola created at 2012-08-22 18:02:43
+Attachment [additional-addional-documentation-mz.patch](tarball://root/attachments/some-uuid/ticket8899/additional-addional-documentation-mz.patch) by @saliola created at 2012-08-22 18:02:43
 
 
 
@@ -725,16 +725,16 @@ Attachment [additional-addional-documentation-mz.patch](tarball://root/attachmen
 archive/issue_comments_081884.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-from_polynomial-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-from_polynomial-fs.patch) by saliola created at 2012-08-22 18:28:33",
+    "body": "Attachment [trac_11929_8899-from_polynomial-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-from_polynomial-fs.patch) by @saliola created at 2012-08-22 18:28:33",
     "created_at": "2012-08-22T18:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81884",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_11929_8899-from_polynomial-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-from_polynomial-fs.patch) by saliola created at 2012-08-22 18:28:33
+Attachment [trac_11929_8899-from_polynomial-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-from_polynomial-fs.patch) by @saliola created at 2012-08-22 18:28:33
 
 
 
@@ -748,7 +748,7 @@ archive/issue_comments_081885.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81885",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -770,7 +770,7 @@ archive/issue_comments_081886.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81886",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -790,7 +790,7 @@ archive/issue_comments_081887.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81887",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -808,7 +808,7 @@ archive/issue_comments_081888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81888",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -826,7 +826,7 @@ archive/issue_comments_081889.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81889",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 
@@ -844,7 +844,7 @@ archive/issue_comments_081890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81890",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 
@@ -862,7 +862,7 @@ archive/issue_comments_081891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81891",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -880,7 +880,7 @@ archive/issue_comments_081892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81892",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 
@@ -895,16 +895,16 @@ Thanks Mike! I just tested and confirm that when I apply the patch that is attac
 archive/issue_comments_081893.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899_minor_docfix-mz.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899_minor_docfix-mz.patch) by zabrocki created at 2012-08-22 22:33:06",
+    "body": "Attachment [trac_11929_8899_minor_docfix-mz.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899_minor_docfix-mz.patch) by @zabrocki created at 2012-08-22 22:33:06",
     "created_at": "2012-08-22T22:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81893",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 
-Attachment [trac_11929_8899_minor_docfix-mz.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899_minor_docfix-mz.patch) by zabrocki created at 2012-08-22 22:33:06
+Attachment [trac_11929_8899_minor_docfix-mz.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899_minor_docfix-mz.patch) by @zabrocki created at 2012-08-22 22:33:06
 
 
 
@@ -918,7 +918,7 @@ archive/issue_comments_081894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81894",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 
@@ -936,7 +936,7 @@ archive/issue_comments_081895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81895",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 
@@ -954,7 +954,7 @@ archive/issue_comments_081896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81896",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -977,7 +977,7 @@ archive/issue_comments_081897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81897",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1001,7 +1001,7 @@ archive/issue_comments_081898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81898",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -1014,16 +1014,16 @@ APPLY ONLY THIS PATCH!
 archive/issue_comments_081899.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-ncsf-qsym-final.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-final.patch) by saliola created at 2012-08-23 14:06:26\n\nI folded these three patches together and cleaned up the commit message (so that that patchbot doesn't complain):\n* [attachment:trac_11929_8899-ncsf-qsym-folded-fs.patch]\n* [attachment:trac_11929_8899-from_polynomial-fs.patch]\n* [attachment:trac_11929_8899_minor_docfix-mz.patch]\n\nApply: [attachment:trac_11929_8899-ncsf-qsym-final.patch]",
+    "body": "Attachment [trac_11929_8899-ncsf-qsym-final.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-final.patch) by @saliola created at 2012-08-23 14:06:26\n\nI folded these three patches together and cleaned up the commit message (so that that patchbot doesn't complain):\n* [attachment:trac_11929_8899-ncsf-qsym-folded-fs.patch]\n* [attachment:trac_11929_8899-from_polynomial-fs.patch]\n* [attachment:trac_11929_8899_minor_docfix-mz.patch]\n\nApply: [attachment:trac_11929_8899-ncsf-qsym-final.patch]",
     "created_at": "2012-08-23T14:06:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81899",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_11929_8899-ncsf-qsym-final.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-final.patch) by saliola created at 2012-08-23 14:06:26
+Attachment [trac_11929_8899-ncsf-qsym-final.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-final.patch) by @saliola created at 2012-08-23 14:06:26
 
 I folded these three patches together and cleaned up the commit message (so that that patchbot doesn't complain):
 * [attachment:trac_11929_8899-ncsf-qsym-folded-fs.patch]
@@ -1044,7 +1044,7 @@ archive/issue_comments_081900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81900",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -1068,7 +1068,7 @@ archive/issue_comments_081901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81901",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -1088,7 +1088,7 @@ archive/issue_comments_081902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81902",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -1101,16 +1101,16 @@ Changing status from positive_review to needs_info.
 archive/issue_comments_081903.json:
 ```json
 {
-    "body": "Attachment [trac_11929_8899-ncsf-qsym-repr-fix-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-repr-fix-fs.patch) by saliola created at 2012-09-02 15:04:45\n\n[attachment:trac_11929_8899-ncsf-qsym-repr-fix-fs.patch] modifies `_repr_` to conform to the standards set out in #13404.\n\nNote: this patch does *not* depend on #13404.\n\nApply: trac_11929_8899-ncsf-qsym-final.patch, trac_11929_8899-ncsf-qsym-repr-fix-fs.patch",
+    "body": "Attachment [trac_11929_8899-ncsf-qsym-repr-fix-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-repr-fix-fs.patch) by @saliola created at 2012-09-02 15:04:45\n\n[attachment:trac_11929_8899-ncsf-qsym-repr-fix-fs.patch] modifies `_repr_` to conform to the standards set out in #13404.\n\nNote: this patch does *not* depend on #13404.\n\nApply: trac_11929_8899-ncsf-qsym-final.patch, trac_11929_8899-ncsf-qsym-repr-fix-fs.patch",
     "created_at": "2012-09-02T15:04:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81903",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [trac_11929_8899-ncsf-qsym-repr-fix-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-repr-fix-fs.patch) by saliola created at 2012-09-02 15:04:45
+Attachment [trac_11929_8899-ncsf-qsym-repr-fix-fs.patch](tarball://root/attachments/some-uuid/ticket8899/trac_11929_8899-ncsf-qsym-repr-fix-fs.patch) by @saliola created at 2012-09-02 15:04:45
 
 [attachment:trac_11929_8899-ncsf-qsym-repr-fix-fs.patch] modifies `_repr_` to conform to the standards set out in #13404.
 
@@ -1130,7 +1130,7 @@ archive/issue_comments_081904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81904",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -1148,7 +1148,7 @@ archive/issue_comments_081905.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81905",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -1166,7 +1166,7 @@ archive/issue_comments_081906.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81906",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -1184,7 +1184,7 @@ archive/issue_comments_081907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81907",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1207,7 +1207,7 @@ archive/issue_comments_081908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81908",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 
@@ -1226,7 +1226,7 @@ archive/issue_comments_081909.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81909",
-    "user": "zabrocki"
+    "user": "@zabrocki"
 }
 ```
 
@@ -1244,7 +1244,7 @@ archive/issue_comments_081910.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81910",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1262,7 +1262,7 @@ archive/issue_comments_081911.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81911",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1297,7 +1297,7 @@ archive/issue_comments_081912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81912",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1315,7 +1315,7 @@ archive/issue_comments_081913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81913",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1333,7 +1333,7 @@ archive/issue_comments_081914.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81914",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
@@ -1353,7 +1353,7 @@ archive/issue_comments_081915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81915",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -1381,7 +1381,7 @@ archive/issue_comments_081916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81916",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1404,7 +1404,7 @@ archive/issue_comments_081917.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81917",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1422,7 +1422,7 @@ archive/issue_comments_081918.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81918",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1454,7 +1454,7 @@ archive/issue_comments_081919.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81919",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -1487,7 +1487,7 @@ archive/issue_comments_081920.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81920",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1530,7 +1530,7 @@ archive/issue_comments_081921.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8899",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8899#issuecomment-81921",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 

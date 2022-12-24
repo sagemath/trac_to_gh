@@ -3,7 +3,7 @@
 archive/issues_007415.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: permutation\n\nLet's continue using binary search to improve the permutation methods.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7415\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: permutation\n\nLet's continue using binary search to improve the permutation methods.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7415\n\n",
     "created_at": "2009-11-08T22:38:16Z",
     "labels": [
         "combinatorics",
@@ -17,7 +17,7 @@ archive/issues_007415.json:
     "user": "ylchapuy"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -114,7 +114,7 @@ archive/issue_comments_062396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62396",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_062397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62397",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_062398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62398",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_062399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62399",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -246,16 +246,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_062400.json:
 ```json
 {
-    "body": "Attachment [trac_7415-cycle_decomposition.2.patch](tarball://root/attachments/some-uuid/ticket7415/trac_7415-cycle_decomposition.2.patch) by hivert created at 2009-11-09 15:21:39\n\nHi Yann,\n\nI just uploaded a new patch which contains four different methods:\n- `to_cycles      ` : use a binary vector\n- `_to_cycles_orig` : the original implementation\n- `_to_cycles_set ` : the modification of your implementation using a sage set\n- `_to_cycles_list` : your implementation\nI left in the code a little command to benchmark these four functions:\n\nOn small permutations the results are:\n\n```\nsage: for size in range(9): # not tested\n print size\n lp = Permutations(size).list()\n timeit('[p.to_cycles(False) for p in lp]')\n timeit('[p._to_cycles_set(False) for p in lp]')\n timeit('[p._to_cycles_list(False) for p in lp]')\n timeit('[p._to_cycles_orig(False) for p in lp]') \n\n0\n625 loops, best of 3: 4.6 \u00b5s per loop\n625 loops, best of 3: 16.8 \u00b5s per loop\n625 loops, best of 3: 7.59 \u00b5s per loop\n625 loops, best of 3: 2.97 \u00b5s per loop\n1\n625 loops, best of 3: 4.18 \u00b5s per loop\n625 loops, best of 3: 9.06 \u00b5s per loop\n625 loops, best of 3: 7.6 \u00b5s per loop\n625 loops, best of 3: 4.78 \u00b5s per loop\n2\n625 loops, best of 3: 11.3 \u00b5s per loop\n625 loops, best of 3: 22.1 \u00b5s per loop\n625 loops, best of 3: 20.2 \u00b5s per loop\n625 loops, best of 3: 12.9 \u00b5s per loop\n3\n625 loops, best of 3: 42 \u00b5s per loop\n625 loops, best of 3: 73.3 \u00b5s per loop\n625 loops, best of 3: 72.7 \u00b5s per loop\n625 loops, best of 3: 47.7 \u00b5s per loop\n4\n625 loops, best of 3: 192 \u00b5s per loop\n625 loops, best of 3: 325 \u00b5s per loop\n625 loops, best of 3: 333 \u00b5s per loop\n625 loops, best of 3: 224 \u00b5s per loop\n5\n625 loops, best of 3: 1.08 ms per loop\n125 loops, best of 3: 1.75 ms per loop\n125 loops, best of 3: 1.87 ms per loop\n625 loops, best of 3: 1.33 ms per loop\n6\n125 loops, best of 3: 7.34 ms per loop\n25 loops, best of 3: 11.8 ms per loop\n25 loops, best of 3: 12.8 ms per loop\n25 loops, best of 3: 9.28 ms per loop\n7\n5 loops, best of 3: 58.5 ms per loop\n5 loops, best of 3: 91.1 ms per loop\n5 loops, best of 3: 99.1 ms per loop\n5 loops, best of 3: 72.7 ms per loop\n8\n5 loops, best of 3: 501 ms per loop\n5 loops, best of 3: 772 ms per loop\n5 loops, best of 3: 866 ms per loop\n5 loops, best of 3: 631 ms per loop\n```\n\nOn bigger permutations (I don't test the original implantation which is very slow:\n\n```\nfor size in [10, 20, 50, 75, 100, 200, 500, 1000, # not tested\n      2000, 5000, 10000, 15000, 20000, 30000,\n      50000, 80000, 100000]: \n   print(size)\n   lp = [Permutations(size).random_element() for i in range(20)]\n   timeit(\"[p.to_cycles() for p in lp]\")\n   timeit(\"[p._to_cycles_set() for p in lp]\")\n   timeit(\"[p._to_cycles_list() for p in lp]\") # not tested\n\n10\n625 loops, best of 3: 276 \u00b5s per loop\n625 loops, best of 3: 367 \u00b5s per loop\n625 loops, best of 3: 442 \u00b5s per loop\n20\n625 loops, best of 3: 428 \u00b5s per loop\n625 loops, best of 3: 492 \u00b5s per loop\n625 loops, best of 3: 687 \u00b5s per loop\n50\n625 loops, best of 3: 872 \u00b5s per loop\n625 loops, best of 3: 905 \u00b5s per loop\n625 loops, best of 3: 1.45 ms per loop\n75\n625 loops, best of 3: 1.21 ms per loop\n625 loops, best of 3: 1.19 ms per loop\n125 loops, best of 3: 2.08 ms per loop\n100\n125 loops, best of 3: 1.53 ms per loop\n625 loops, best of 3: 1.5 ms per loop\n125 loops, best of 3: 2.68 ms per loop\n200\n125 loops, best of 3: 2.94 ms per loop\n125 loops, best of 3: 2.66 ms per loop\n125 loops, best of 3: 5.31 ms per loop\n500\n125 loops, best of 3: 7.5 ms per loop\n125 loops, best of 3: 7.2 ms per loop\n25 loops, best of 3: 14.7 ms per loop\n1000\n25 loops, best of 3: 14.8 ms per loop\n25 loops, best of 3: 13.9 ms per loop\n25 loops, best of 3: 31.3 ms per loop\n2000\n25 loops, best of 3: 29.1 ms per loop\n25 loops, best of 3: 28.1 ms per loop\n5 loops, best of 3: 72.8 ms per loop\n5000\n5 loops, best of 3: 74 ms per loop\n5 loops, best of 3: 69.1 ms per loop\n5 loops, best of 3: 252 ms per loop\n10000\n5 loops, best of 3: 146 ms per loop\n5 loops, best of 3: 151 ms per loop\n5 loops, best of 3: 833 ms per loop\n15000\n5 loops, best of 3: 229 ms per loop\n5 loops, best of 3: 236 ms per loop\n5 loops, best of 3: 1.71 s per loop\n20000\n5 loops, best of 3: 317 ms per loop\n5 loops, best of 3: 331 ms per loop\n5 loops, best of 3: 2.85 s per loop\n30000\n5 loops, best of 3: 472 ms per loop\n5 loops, best of 3: 553 ms per loop\n5 loops, best of 3: 6.01 s per loop\n50000\n5 loops, best of 3: 844 ms per loop\n5 loops, best of 3: 1.02 s per loop\n5 loops, best of 3: 15.9 s per loop\n80000\n5 loops, best of 3: 1.45 s per loop\n5 loops, best of 3: 1.81 s per loop\n                    > 2 min...\n100000\n5 loops, best of 3: 1.87 s per loop\n5 loops, best of 3: 2.43 s per loop\n                    > 2 min ...\n```\n\nSince the default implementation is only beated by less that 10% I haven't written any algorithm selection. I kept the other implementation because there are some plan to optimize the datastructure for permutations so that those timings can change. \n\nI also took the chance to completely rewrite random_element which was incredibly slow. \n\nConsidering your function as positively reviewed by me, can you please review mine ? \n\nCheers,\n\nFlorent",
+    "body": "Attachment [trac_7415-cycle_decomposition.2.patch](tarball://root/attachments/some-uuid/ticket7415/trac_7415-cycle_decomposition.2.patch) by @hivert created at 2009-11-09 15:21:39\n\nHi Yann,\n\nI just uploaded a new patch which contains four different methods:\n- `to_cycles      ` : use a binary vector\n- `_to_cycles_orig` : the original implementation\n- `_to_cycles_set ` : the modification of your implementation using a sage set\n- `_to_cycles_list` : your implementation\nI left in the code a little command to benchmark these four functions:\n\nOn small permutations the results are:\n\n```\nsage: for size in range(9): # not tested\n print size\n lp = Permutations(size).list()\n timeit('[p.to_cycles(False) for p in lp]')\n timeit('[p._to_cycles_set(False) for p in lp]')\n timeit('[p._to_cycles_list(False) for p in lp]')\n timeit('[p._to_cycles_orig(False) for p in lp]') \n\n0\n625 loops, best of 3: 4.6 \u00b5s per loop\n625 loops, best of 3: 16.8 \u00b5s per loop\n625 loops, best of 3: 7.59 \u00b5s per loop\n625 loops, best of 3: 2.97 \u00b5s per loop\n1\n625 loops, best of 3: 4.18 \u00b5s per loop\n625 loops, best of 3: 9.06 \u00b5s per loop\n625 loops, best of 3: 7.6 \u00b5s per loop\n625 loops, best of 3: 4.78 \u00b5s per loop\n2\n625 loops, best of 3: 11.3 \u00b5s per loop\n625 loops, best of 3: 22.1 \u00b5s per loop\n625 loops, best of 3: 20.2 \u00b5s per loop\n625 loops, best of 3: 12.9 \u00b5s per loop\n3\n625 loops, best of 3: 42 \u00b5s per loop\n625 loops, best of 3: 73.3 \u00b5s per loop\n625 loops, best of 3: 72.7 \u00b5s per loop\n625 loops, best of 3: 47.7 \u00b5s per loop\n4\n625 loops, best of 3: 192 \u00b5s per loop\n625 loops, best of 3: 325 \u00b5s per loop\n625 loops, best of 3: 333 \u00b5s per loop\n625 loops, best of 3: 224 \u00b5s per loop\n5\n625 loops, best of 3: 1.08 ms per loop\n125 loops, best of 3: 1.75 ms per loop\n125 loops, best of 3: 1.87 ms per loop\n625 loops, best of 3: 1.33 ms per loop\n6\n125 loops, best of 3: 7.34 ms per loop\n25 loops, best of 3: 11.8 ms per loop\n25 loops, best of 3: 12.8 ms per loop\n25 loops, best of 3: 9.28 ms per loop\n7\n5 loops, best of 3: 58.5 ms per loop\n5 loops, best of 3: 91.1 ms per loop\n5 loops, best of 3: 99.1 ms per loop\n5 loops, best of 3: 72.7 ms per loop\n8\n5 loops, best of 3: 501 ms per loop\n5 loops, best of 3: 772 ms per loop\n5 loops, best of 3: 866 ms per loop\n5 loops, best of 3: 631 ms per loop\n```\n\nOn bigger permutations (I don't test the original implantation which is very slow:\n\n```\nfor size in [10, 20, 50, 75, 100, 200, 500, 1000, # not tested\n      2000, 5000, 10000, 15000, 20000, 30000,\n      50000, 80000, 100000]: \n   print(size)\n   lp = [Permutations(size).random_element() for i in range(20)]\n   timeit(\"[p.to_cycles() for p in lp]\")\n   timeit(\"[p._to_cycles_set() for p in lp]\")\n   timeit(\"[p._to_cycles_list() for p in lp]\") # not tested\n\n10\n625 loops, best of 3: 276 \u00b5s per loop\n625 loops, best of 3: 367 \u00b5s per loop\n625 loops, best of 3: 442 \u00b5s per loop\n20\n625 loops, best of 3: 428 \u00b5s per loop\n625 loops, best of 3: 492 \u00b5s per loop\n625 loops, best of 3: 687 \u00b5s per loop\n50\n625 loops, best of 3: 872 \u00b5s per loop\n625 loops, best of 3: 905 \u00b5s per loop\n625 loops, best of 3: 1.45 ms per loop\n75\n625 loops, best of 3: 1.21 ms per loop\n625 loops, best of 3: 1.19 ms per loop\n125 loops, best of 3: 2.08 ms per loop\n100\n125 loops, best of 3: 1.53 ms per loop\n625 loops, best of 3: 1.5 ms per loop\n125 loops, best of 3: 2.68 ms per loop\n200\n125 loops, best of 3: 2.94 ms per loop\n125 loops, best of 3: 2.66 ms per loop\n125 loops, best of 3: 5.31 ms per loop\n500\n125 loops, best of 3: 7.5 ms per loop\n125 loops, best of 3: 7.2 ms per loop\n25 loops, best of 3: 14.7 ms per loop\n1000\n25 loops, best of 3: 14.8 ms per loop\n25 loops, best of 3: 13.9 ms per loop\n25 loops, best of 3: 31.3 ms per loop\n2000\n25 loops, best of 3: 29.1 ms per loop\n25 loops, best of 3: 28.1 ms per loop\n5 loops, best of 3: 72.8 ms per loop\n5000\n5 loops, best of 3: 74 ms per loop\n5 loops, best of 3: 69.1 ms per loop\n5 loops, best of 3: 252 ms per loop\n10000\n5 loops, best of 3: 146 ms per loop\n5 loops, best of 3: 151 ms per loop\n5 loops, best of 3: 833 ms per loop\n15000\n5 loops, best of 3: 229 ms per loop\n5 loops, best of 3: 236 ms per loop\n5 loops, best of 3: 1.71 s per loop\n20000\n5 loops, best of 3: 317 ms per loop\n5 loops, best of 3: 331 ms per loop\n5 loops, best of 3: 2.85 s per loop\n30000\n5 loops, best of 3: 472 ms per loop\n5 loops, best of 3: 553 ms per loop\n5 loops, best of 3: 6.01 s per loop\n50000\n5 loops, best of 3: 844 ms per loop\n5 loops, best of 3: 1.02 s per loop\n5 loops, best of 3: 15.9 s per loop\n80000\n5 loops, best of 3: 1.45 s per loop\n5 loops, best of 3: 1.81 s per loop\n                    > 2 min...\n100000\n5 loops, best of 3: 1.87 s per loop\n5 loops, best of 3: 2.43 s per loop\n                    > 2 min ...\n```\n\nSince the default implementation is only beated by less that 10% I haven't written any algorithm selection. I kept the other implementation because there are some plan to optimize the datastructure for permutations so that those timings can change. \n\nI also took the chance to completely rewrite random_element which was incredibly slow. \n\nConsidering your function as positively reviewed by me, can you please review mine ? \n\nCheers,\n\nFlorent",
     "created_at": "2009-11-09T15:21:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62400",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7415-cycle_decomposition.2.patch](tarball://root/attachments/some-uuid/ticket7415/trac_7415-cycle_decomposition.2.patch) by hivert created at 2009-11-09 15:21:39
+Attachment [trac_7415-cycle_decomposition.2.patch](tarball://root/attachments/some-uuid/ticket7415/trac_7415-cycle_decomposition.2.patch) by @hivert created at 2009-11-09 15:21:39
 
 Hi Yann,
 
@@ -423,16 +423,16 @@ Florent
 archive/issue_comments_062401.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to hivert.",
+    "body": "Changing assignee from @mwhansen to @hivert.",
     "created_at": "2009-11-09T15:22:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62401",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from mhansen to hivert.
+Changing assignee from @mwhansen to @hivert.
 
 
 
@@ -492,7 +492,7 @@ archive/issue_comments_062404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7415",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62404",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_008302.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  sault bantieau mhampton\n\nThe attached patch adds lots of functionality to Sage's algebraic topology capabilities:\n\n- it implements cubical complexes: complexes constructed from cubes of various dimensions, glued together in prescribed ways.\n\n- it implements Delta complexes: this is a variant on a simplicial complex which allows for more efficient construction of many spaces.  For example, the minimal triangulation of the torus as a simplicial complex uses 14 triangles, while there is a Delta complex version with only two triangles.  Allen Hatcher uses these in his popular algebraic topology book.\n\n- it \"implements\" generic cell complexes, as a parent class to the previous two, and also to simplicial complexes.  This is not intended for use by casual Sage users, but instead for developers who want to add another kind of complex (CW complexes?  Prodsimplicial complexes?)  Many methods in this class are not implemented, but instead provide a template of what should be implemented in any derived class.\n\n- it modifies simplicial complexes a bit, allowing them to be defined without specifying a vertex set: just list the maximal simplices and it will deduce what the vertex set is.  It also defines `connected_sum` for arbitrary simplicial complexes, not just simplicial surfaces, with a warning that it's not well-defined if you don't call it on manifolds.  It renames `ProjectivePlane` to `RealProjectivePlane` (keeping the old name as an alias for backward compatibility).\n\n- it provides an interface to CHomP, which is now an experimental spkg for Sage.  CHomP provides programs to compute homology which are faster than anything Sage can do.  See [http://chomp.rutgers.edu/](http://chomp.rutgers.edu/) for more information.\n\n- it changes how the `homology` and `chain_complex` methods work: these now pass keywords to each other, so it's easy to implement new keywords: just implement it for `ChainComplex.homology`, for instance, and when you compute the homology of any simplicial complex, you can give it the keyword and it will get passed on to this method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8302\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  sault @antieau mhampton\n\nThe attached patch adds lots of functionality to Sage's algebraic topology capabilities:\n\n- it implements cubical complexes: complexes constructed from cubes of various dimensions, glued together in prescribed ways.\n\n- it implements Delta complexes: this is a variant on a simplicial complex which allows for more efficient construction of many spaces.  For example, the minimal triangulation of the torus as a simplicial complex uses 14 triangles, while there is a Delta complex version with only two triangles.  Allen Hatcher uses these in his popular algebraic topology book.\n\n- it \"implements\" generic cell complexes, as a parent class to the previous two, and also to simplicial complexes.  This is not intended for use by casual Sage users, but instead for developers who want to add another kind of complex (CW complexes?  Prodsimplicial complexes?)  Many methods in this class are not implemented, but instead provide a template of what should be implemented in any derived class.\n\n- it modifies simplicial complexes a bit, allowing them to be defined without specifying a vertex set: just list the maximal simplices and it will deduce what the vertex set is.  It also defines `connected_sum` for arbitrary simplicial complexes, not just simplicial surfaces, with a warning that it's not well-defined if you don't call it on manifolds.  It renames `ProjectivePlane` to `RealProjectivePlane` (keeping the old name as an alias for backward compatibility).\n\n- it provides an interface to CHomP, which is now an experimental spkg for Sage.  CHomP provides programs to compute homology which are faster than anything Sage can do.  See [http://chomp.rutgers.edu/](http://chomp.rutgers.edu/) for more information.\n\n- it changes how the `homology` and `chain_complex` methods work: these now pass keywords to each other, so it's easy to implement new keywords: just implement it for `ChainComplex.homology`, for instance, and when you compute the homology of any simplicial complex, you can give it the keyword and it will get passed on to this method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8302\n\n",
     "created_at": "2010-02-19T02:28:51Z",
     "labels": [
         "algebraic topology",
@@ -14,12 +14,12 @@ archive/issues_008302.json:
     "title": "cubical complexes, delta complexes, and more",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8302",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
-CC:  sault bantieau mhampton
+CC:  sault @antieau mhampton
 
 The attached patch adds lots of functionality to Sage's algebraic topology capabilities:
 
@@ -51,7 +51,7 @@ archive/issue_comments_073545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73545",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -64,16 +64,16 @@ Changing status from new to needs_review.
 archive/issue_comments_073546.json:
 ```json
 {
-    "body": "Attachment [Cell_complexes.patch](tarball://root/attachments/some-uuid/ticket8302/Cell_complexes.patch) by jhpalmieri created at 2010-02-22 18:02:59",
+    "body": "Attachment [Cell_complexes.patch](tarball://root/attachments/some-uuid/ticket8302/Cell_complexes.patch) by @jhpalmieri created at 2010-02-22 18:02:59",
     "created_at": "2010-02-22T18:02:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73546",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [Cell_complexes.patch](tarball://root/attachments/some-uuid/ticket8302/Cell_complexes.patch) by jhpalmieri created at 2010-02-22 18:02:59
+Attachment [Cell_complexes.patch](tarball://root/attachments/some-uuid/ticket8302/Cell_complexes.patch) by @jhpalmieri created at 2010-02-22 18:02:59
 
 
 
@@ -110,7 +110,7 @@ I will test this out a little more before giving a positive review.
 archive/issue_comments_073548.json:
 ```json
 {
-    "body": "Changing assignee from jhpalmieri to mhampton.",
+    "body": "Changing assignee from @jhpalmieri to mhampton.",
     "created_at": "2010-02-26T01:46:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
@@ -119,7 +119,7 @@ archive/issue_comments_073548.json:
 }
 ```
 
-Changing assignee from jhpalmieri to mhampton.
+Changing assignee from @jhpalmieri to mhampton.
 
 
 
@@ -146,7 +146,7 @@ In several modules, instead of INPUT and OUTPUT blocks, "parameter" or "param" i
 archive/issue_comments_073550.json:
 ```json
 {
-    "body": "Changing assignee from mhampton to jhpalmieri.",
+    "body": "Changing assignee from mhampton to @jhpalmieri.",
     "created_at": "2010-02-26T01:46:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
@@ -155,7 +155,7 @@ archive/issue_comments_073550.json:
 }
 ```
 
-Changing assignee from mhampton to jhpalmieri.
+Changing assignee from mhampton to @jhpalmieri.
 
 
 
@@ -169,7 +169,7 @@ archive/issue_comments_073551.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73551",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_073559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73559",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_073560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73560",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -483,16 +483,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_073563.json:
 ```json
 {
-    "body": "Attachment [trac_8302-pickle.patch](tarball://root/attachments/some-uuid/ticket8302/trac_8302-pickle.patch) by jhpalmieri created at 2010-03-02 19:36:06\n\napply on top of other patches",
+    "body": "Attachment [trac_8302-pickle.patch](tarball://root/attachments/some-uuid/ticket8302/trac_8302-pickle.patch) by @jhpalmieri created at 2010-03-02 19:36:06\n\napply on top of other patches",
     "created_at": "2010-03-02T19:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73563",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8302-pickle.patch](tarball://root/attachments/some-uuid/ticket8302/trac_8302-pickle.patch) by jhpalmieri created at 2010-03-02 19:36:06
+Attachment [trac_8302-pickle.patch](tarball://root/attachments/some-uuid/ticket8302/trac_8302-pickle.patch) by @jhpalmieri created at 2010-03-02 19:36:06
 
 apply on top of other patches
 
@@ -508,7 +508,7 @@ archive/issue_comments_073564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73564",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -580,7 +580,7 @@ archive/issue_comments_073567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8302",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73567",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

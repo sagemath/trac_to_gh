@@ -3,7 +3,7 @@
 archive/issues_001701.json:
 ```json
 {
-    "body": "Assignee: malb\n\nThis patch used to be attached to #1541 but logically doesn't belong there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1701\n\n",
+    "body": "Assignee: @malb\n\nThis patch used to be attached to #1541 but logically doesn't belong there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1701\n\n",
     "created_at": "2008-01-06T13:23:05Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_001701.json:
     "title": "attempt to clean up currRing if deallocated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1701",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 This patch used to be attached to #1541 but logically doesn't belong there.
 
@@ -61,7 +61,7 @@ archive/issue_comments_010780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1701#issuecomment-10780",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

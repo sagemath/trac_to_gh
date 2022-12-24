@@ -37,7 +37,7 @@ archive/issue_comments_001650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/336#issuecomment-1650",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,16 +81,16 @@ To test it do the following:
 archive/issue_comments_001651.json:
 ```json
 {
-    "body": "Attachment [sage-336.patch](tarball://root/attachments/some-uuid/ticket336/sage-336.patch) by was created at 2008-05-10 19:54:50",
+    "body": "Attachment [sage-336.patch](tarball://root/attachments/some-uuid/ticket336/sage-336.patch) by @williamstein created at 2008-05-10 19:54:50",
     "created_at": "2008-05-10T19:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/336",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/336#issuecomment-1651",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-336.patch](tarball://root/attachments/some-uuid/ticket336/sage-336.patch) by was created at 2008-05-10 19:54:50
+Attachment [sage-336.patch](tarball://root/attachments/some-uuid/ticket336/sage-336.patch) by @williamstein created at 2008-05-10 19:54:50
 
 
 

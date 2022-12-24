@@ -14,7 +14,7 @@ archive/issues_007805.json:
     "title": "MixedIntegerLinearProgram.show should use the variables' and constraints' names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7805",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jkantor
@@ -39,7 +39,7 @@ archive/issue_comments_067528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7805#issuecomment-67528",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -52,16 +52,16 @@ Changing status from new to needs_review.
 archive/issue_comments_067529.json:
 ```json
 {
-    "body": "Attachment [trac_7805.patch](tarball://root/attachments/some-uuid/ticket7805/trac_7805.patch) by wdj created at 2010-04-03 06:07:02\n\nThis seems to pass all tests on sage 4.3.5 on a 10.6.2 mac (the only failure was that of the fresh copy of 4.3.5). \n\nLike #8639, this seems like a very very minor change. As far as I can seen, positive review.",
+    "body": "Attachment [trac_7805.patch](tarball://root/attachments/some-uuid/ticket7805/trac_7805.patch) by @wdjoyner created at 2010-04-03 06:07:02\n\nThis seems to pass all tests on sage 4.3.5 on a 10.6.2 mac (the only failure was that of the fresh copy of 4.3.5). \n\nLike #8639, this seems like a very very minor change. As far as I can seen, positive review.",
     "created_at": "2010-04-03T06:07:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7805#issuecomment-67529",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
-Attachment [trac_7805.patch](tarball://root/attachments/some-uuid/ticket7805/trac_7805.patch) by wdj created at 2010-04-03 06:07:02
+Attachment [trac_7805.patch](tarball://root/attachments/some-uuid/ticket7805/trac_7805.patch) by @wdjoyner created at 2010-04-03 06:07:02
 
 This seems to pass all tests on sage 4.3.5 on a 10.6.2 mac (the only failure was that of the fresh copy of 4.3.5). 
 
@@ -79,7 +79,7 @@ archive/issue_comments_067530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7805#issuecomment-67530",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_067531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7805#issuecomment-67531",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_067532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7805",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7805#issuecomment-67532",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

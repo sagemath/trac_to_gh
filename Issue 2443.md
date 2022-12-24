@@ -14,7 +14,7 @@ archive/issues_002443.json:
     "title": "[with patch, needs review] add LaTeX macros like \\Singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2443",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -88,13 +88,13 @@ Merged in Sage 2.10.3.rc4
 archive/issue_comments_016526.json:
 ```json
 {
-    "body": "Attachment [magma-fix.patch](tarball://root/attachments/some-uuid/ticket2443/magma-fix.patch) by malb created at 2008-03-09 21:36:02",
+    "body": "Attachment [magma-fix.patch](tarball://root/attachments/some-uuid/ticket2443/magma-fix.patch) by @malb created at 2008-03-09 21:36:02",
     "created_at": "2008-03-09T21:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2443",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2443#issuecomment-16526",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [magma-fix.patch](tarball://root/attachments/some-uuid/ticket2443/magma-fix.patch) by malb created at 2008-03-09 21:36:02
+Attachment [magma-fix.patch](tarball://root/attachments/some-uuid/ticket2443/magma-fix.patch) by @malb created at 2008-03-09 21:36:02

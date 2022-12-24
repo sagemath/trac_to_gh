@@ -3,7 +3,7 @@
 archive/issues_000613.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nErrors due to the redefinition of 0^0 in sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/613\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nErrors due to the redefinition of 0^0 in sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/613\n\n",
     "created_at": "2007-09-07T04:22:38Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_000613.json:
     "title": "combinat/sloane_functions.py:  ArithmeticError: 0^0 is undefined",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/613",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/613
 archive/issue_comments_003151.json:
 ```json
 {
-    "body": "Attachment [613.patch](tarball://root/attachments/some-uuid/ticket613/613.patch) by mhansen created at 2007-09-07 04:26:05\n\nPatch attached.",
+    "body": "Attachment [613.patch](tarball://root/attachments/some-uuid/ticket613/613.patch) by @mwhansen created at 2007-09-07 04:26:05\n\nPatch attached.",
     "created_at": "2007-09-07T04:26:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/613#issuecomment-3151",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [613.patch](tarball://root/attachments/some-uuid/ticket613/613.patch) by mhansen created at 2007-09-07 04:26:05
+Attachment [613.patch](tarball://root/attachments/some-uuid/ticket613/613.patch) by @mwhansen created at 2007-09-07 04:26:05
 
 Patch attached.
 
@@ -59,7 +59,7 @@ archive/issue_comments_003152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/613",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/613#issuecomment-3152",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

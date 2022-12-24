@@ -14,7 +14,7 @@ archive/issues_008043.json:
     "title": "#7544 breaks #7355: \"sage -i foo\" does not automatically find the version number",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8043",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: tbd
@@ -37,7 +37,7 @@ archive/issue_comments_070290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8043#issuecomment-70290",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_070291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8043#issuecomment-70291",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -68,16 +68,16 @@ Here's a patch.  See #8669 for a somewhat related ticket.
 archive/issue_comments_070292.json:
 ```json
 {
-    "body": "Attachment [trac_8043-spkg-no-version.patch](tarball://root/attachments/some-uuid/ticket8043/trac_8043-spkg-no-version.patch) by jhpalmieri created at 2010-04-10 18:58:31\n\nscripts repo",
+    "body": "Attachment [trac_8043-spkg-no-version.patch](tarball://root/attachments/some-uuid/ticket8043/trac_8043-spkg-no-version.patch) by @jhpalmieri created at 2010-04-10 18:58:31\n\nscripts repo",
     "created_at": "2010-04-10T18:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8043#issuecomment-70292",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8043-spkg-no-version.patch](tarball://root/attachments/some-uuid/ticket8043/trac_8043-spkg-no-version.patch) by jhpalmieri created at 2010-04-10 18:58:31
+Attachment [trac_8043-spkg-no-version.patch](tarball://root/attachments/some-uuid/ticket8043/trac_8043-spkg-no-version.patch) by @jhpalmieri created at 2010-04-10 18:58:31
 
 scripts repo
 
@@ -93,7 +93,7 @@ archive/issue_comments_070293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8043#issuecomment-70293",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_070294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8043#issuecomment-70294",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_070295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8043#issuecomment-70295",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_070296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8043",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8043#issuecomment-70296",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

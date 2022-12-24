@@ -3,7 +3,7 @@
 archive/issues_002528.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis file existed for only including certain parts of dims.py into the reference manual; this is no longer necessary, and the file should be removed. Care needs to be taken to not break the reference manual -- William has a fix that he's going to submit when I post this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2528\n\n",
+    "body": "Assignee: @williamstein\n\nThis file existed for only including certain parts of dims.py into the reference manual; this is no longer necessary, and the file should be removed. Care needs to be taken to not break the reference manual -- William has a fix that he's going to submit when I post this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2528\n\n",
     "created_at": "2008-03-15T05:53:18Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_002528.json:
     "title": "File sage/modular/dims_doc.py should be removed soon",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2528",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This file existed for only including certain parts of dims.py into the reference manual; this is no longer necessary, and the file should be removed. Care needs to be taken to not break the reference manual -- William has a fix that he's going to submit when I post this.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2528
 archive/issue_comments_017243.json:
 ```json
 {
-    "body": "Attachment [doc-2528.patch](tarball://root/attachments/some-uuid/ticket2528/doc-2528.patch) by was created at 2008-03-15 06:47:43",
+    "body": "Attachment [doc-2528.patch](tarball://root/attachments/some-uuid/ticket2528/doc-2528.patch) by @williamstein created at 2008-03-15 06:47:43",
     "created_at": "2008-03-15T06:47:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2528#issuecomment-17243",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [doc-2528.patch](tarball://root/attachments/some-uuid/ticket2528/doc-2528.patch) by was created at 2008-03-15 06:47:43
+Attachment [doc-2528.patch](tarball://root/attachments/some-uuid/ticket2528/doc-2528.patch) by @williamstein created at 2008-03-15 06:47:43
 
 
 
@@ -50,16 +50,16 @@ Attachment [doc-2528.patch](tarball://root/attachments/some-uuid/ticket2528/doc-
 archive/issue_comments_017244.json:
 ```json
 {
-    "body": "Attachment [trac-2528.patch](tarball://root/attachments/some-uuid/ticket2528/trac-2528.patch) by craigcitro created at 2008-03-15 08:44:22",
+    "body": "Attachment [trac-2528.patch](tarball://root/attachments/some-uuid/ticket2528/trac-2528.patch) by @craigcitro created at 2008-03-15 08:44:22",
     "created_at": "2008-03-15T08:44:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2528#issuecomment-17244",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2528.patch](tarball://root/attachments/some-uuid/ticket2528/trac-2528.patch) by craigcitro created at 2008-03-15 08:44:22
+Attachment [trac-2528.patch](tarball://root/attachments/some-uuid/ticket2528/trac-2528.patch) by @craigcitro created at 2008-03-15 08:44:22
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_017245.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2528#issuecomment-17245",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_017247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2528",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2528#issuecomment-17247",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

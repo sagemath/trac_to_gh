@@ -14,7 +14,7 @@ archive/issues_008256.json:
     "title": "The documentation of Misc is a mess",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8256",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: mvngu
@@ -39,7 +39,7 @@ archive/issue_comments_073065.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8256#issuecomment-73065",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_073066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8256#issuecomment-73066",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_073067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8256#issuecomment-73067",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_073068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8256#issuecomment-73068",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_073069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8256",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8256#issuecomment-73069",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

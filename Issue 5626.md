@@ -14,7 +14,7 @@ archive/issues_005626.json:
     "title": "when %latex goes bad in the notebook, it doesn't display the debug/error log anymore",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5626",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -190,7 +190,7 @@ archive/issue_comments_043930.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5626",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5626#issuecomment-43930",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

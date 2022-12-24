@@ -3,7 +3,7 @@
 archive/issues_001877.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nsage: var('x,y')\nsage: plot3d(sin(x*y), (x,-1,1), (x,-1,1))\nboom!\n```\n\n\nThe problem is that both ranges use the variable x.  The fix is to make\nsure that the two variables are different and if not raise an exception (do this also in parametric_plot3d). \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1877\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nsage: var('x,y')\nsage: plot3d(sin(x*y), (x,-1,1), (x,-1,1))\nboom!\n```\n\n\nThe problem is that both ranges use the variable x.  The fix is to make\nsure that the two variables are different and if not raise an exception (do this also in parametric_plot3d). \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1877\n\n",
     "created_at": "2008-01-21T06:40:06Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001877.json:
     "title": "same range variables -- bug in 3d plotting (probably very very very easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1877",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -90,7 +90,7 @@ Changing status from new to assigned.
 archive/issue_comments_011877.json:
 ```json
 {
-    "body": "Changing assignee from was to thomag.",
+    "body": "Changing assignee from @williamstein to thomag.",
     "created_at": "2008-08-26T15:52:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1877",
     "type": "issue_comment",
@@ -99,7 +99,7 @@ archive/issue_comments_011877.json:
 }
 ```
 
-Changing assignee from was to thomag.
+Changing assignee from @williamstein to thomag.
 
 
 
@@ -131,7 +131,7 @@ archive/issue_comments_011879.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1877#issuecomment-11879",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -144,16 +144,16 @@ Please give a message with the raised value error. Pending that, I'd give a posi
 archive/issue_comments_011880.json:
 ```json
 {
-    "body": "Attachment [trac_1877.patch](tarball://root/attachments/some-uuid/ticket1877/trac_1877.patch) by jwmerrill created at 2008-09-02 23:15:50\n\nthomag, your patch is along the right lines, but the implementation wasn't quite right.  You don't need to catch an error after raising it and then print something to the screen.  Just supply a message with the error, and it will show up unless it's caught somewhere else.  Also, when you fix a bug, you should add a doctest demonstrating the new, correct behavior.\n\nI've posted a new patch that raises an error in the usual way, and provides a briefer but still clear error message.  If this is accepted, only trac_1877.patch should be applied.",
+    "body": "Attachment [trac_1877.patch](tarball://root/attachments/some-uuid/ticket1877/trac_1877.patch) by @jicama created at 2008-09-02 23:15:50\n\nthomag, your patch is along the right lines, but the implementation wasn't quite right.  You don't need to catch an error after raising it and then print something to the screen.  Just supply a message with the error, and it will show up unless it's caught somewhere else.  Also, when you fix a bug, you should add a doctest demonstrating the new, correct behavior.\n\nI've posted a new patch that raises an error in the usual way, and provides a briefer but still clear error message.  If this is accepted, only trac_1877.patch should be applied.",
     "created_at": "2008-09-02T23:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1877#issuecomment-11880",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
-Attachment [trac_1877.patch](tarball://root/attachments/some-uuid/ticket1877/trac_1877.patch) by jwmerrill created at 2008-09-02 23:15:50
+Attachment [trac_1877.patch](tarball://root/attachments/some-uuid/ticket1877/trac_1877.patch) by @jicama created at 2008-09-02 23:15:50
 
 thomag, your patch is along the right lines, but the implementation wasn't quite right.  You don't need to catch an error after raising it and then print something to the screen.  Just supply a message with the error, and it will show up unless it's caught somewhere else.  Also, when you fix a bug, you should add a doctest demonstrating the new, correct behavior.
 
@@ -193,7 +193,7 @@ archive/issue_comments_011882.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1877#issuecomment-11882",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_011883.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1877",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1877#issuecomment-11883",
-    "user": "jwmerrill"
+    "user": "@jicama"
 }
 ```
 

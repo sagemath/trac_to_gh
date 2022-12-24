@@ -14,7 +14,7 @@ archive/issues_007088.json:
     "title": "factoring certain polynomials over ZZ gets all mixed up (wrong constant) via our PARI wrapper",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7088",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7088
 archive/issue_comments_058584.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2009-10-01T06:36:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7088#issuecomment-58584",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -71,16 +71,16 @@ Changing assignee from somebody to robertwb.
 archive/issue_comments_058585.json:
 ```json
 {
-    "body": "Attachment [7088-poly-factor-bug.patch](tarball://root/attachments/some-uuid/ticket7088/7088-poly-factor-bug.patch) by mhansen created at 2009-10-01 07:47:59",
+    "body": "Attachment [7088-poly-factor-bug.patch](tarball://root/attachments/some-uuid/ticket7088/7088-poly-factor-bug.patch) by @mwhansen created at 2009-10-01 07:47:59",
     "created_at": "2009-10-01T07:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7088#issuecomment-58585",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [7088-poly-factor-bug.patch](tarball://root/attachments/some-uuid/ticket7088/7088-poly-factor-bug.patch) by mhansen created at 2009-10-01 07:47:59
+Attachment [7088-poly-factor-bug.patch](tarball://root/attachments/some-uuid/ticket7088/7088-poly-factor-bug.patch) by @mwhansen created at 2009-10-01 07:47:59
 
 
 
@@ -94,7 +94,7 @@ archive/issue_comments_058586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7088#issuecomment-58586",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_058587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7088",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7088#issuecomment-58587",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

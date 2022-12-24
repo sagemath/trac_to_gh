@@ -3,7 +3,7 @@
 archive/issues_008183.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  mvngu jhpalmieri\n\nLikely follow-up to #8036.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8183\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  mvngu @jhpalmieri\n\nLikely follow-up to #8036.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8183\n\n",
     "created_at": "2010-02-04T07:34:34Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_008183.json:
     "title": "French PDF tutorial and tour don't build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8183",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  mvngu jhpalmieri
+CC:  mvngu @jhpalmieri
 
 Likely follow-up to #8036.
 
@@ -39,7 +39,7 @@ archive/issue_comments_072117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8183#issuecomment-72117",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_072118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8183#issuecomment-72118",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -70,16 +70,16 @@ Changing status from new to needs_review.
 archive/issue_comments_072119.json:
 ```json
 {
-    "body": "Attachment [trac_8183-French_pdf.patch](tarball://root/attachments/some-uuid/ticket8183/trac_8183-French_pdf.patch) by mpatel created at 2010-02-04 07:38:25",
+    "body": "Attachment [trac_8183-French_pdf.patch](tarball://root/attachments/some-uuid/ticket8183/trac_8183-French_pdf.patch) by @qed777 created at 2010-02-04 07:38:25",
     "created_at": "2010-02-04T07:38:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8183#issuecomment-72119",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_8183-French_pdf.patch](tarball://root/attachments/some-uuid/ticket8183/trac_8183-French_pdf.patch) by mpatel created at 2010-02-04 07:38:25
+Attachment [trac_8183-French_pdf.patch](tarball://root/attachments/some-uuid/ticket8183/trac_8183-French_pdf.patch) by @qed777 created at 2010-02-04 07:38:25
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_072120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8183#issuecomment-72120",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_072121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8183#issuecomment-72121",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_072122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8183#issuecomment-72122",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_072123.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8183#issuecomment-72123",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_072125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8183",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8183#issuecomment-72125",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

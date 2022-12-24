@@ -3,7 +3,7 @@
 archive/issues_006881.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  mstreng\n\nKeywords: conic, curve\n\nWe should have a class (or classes) for conic curves, and, more specially diagonal conics.  In particular, one of the methods should be John Cremona's algorithms for finding points on solvable conics, both over Q and over fraction fields of polynomial rings.  Other methods might include getting discriminants, primes of bad reduction, producing parametrized solutions, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6881\n\n",
+    "body": "Assignee: tbd\n\nCC:  @mstreng\n\nKeywords: conic, curve\n\nWe should have a class (or classes) for conic curves, and, more specially diagonal conics.  In particular, one of the methods should be John Cremona's algorithms for finding points on solvable conics, both over Q and over fraction fields of polynomial rings.  Other methods might include getting discriminants, primes of bad reduction, producing parametrized solutions, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6881\n\n",
     "created_at": "2009-09-03T22:47:34Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_006881.json:
 ```
 Assignee: tbd
 
-CC:  mstreng
+CC:  @mstreng
 
 Keywords: conic, curve
 
@@ -41,7 +41,7 @@ archive/issue_comments_056794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56794",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_056795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56795",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_056796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56796",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -99,16 +99,16 @@ This is as good as in #727: make a Conic C. Then do C.determinant().factor()
 archive/issue_comments_056797.json:
 ```json
 {
-    "body": "Changing assignee from tbd to lackermans.",
+    "body": "Changing assignee from tbd to @lennartack.",
     "created_at": "2015-08-07T21:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56797",
-    "user": "lackermans"
+    "user": "@lennartack"
 }
 ```
 
-Changing assignee from tbd to lackermans.
+Changing assignee from tbd to @lennartack.
 
 
 
@@ -176,7 +176,7 @@ archive/issue_comments_056801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56801",
-    "user": "lackermans"
+    "user": "@lennartack"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_056803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56803",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_056804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56804",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -248,7 +248,7 @@ archive/issue_comments_056805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56805",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -266,7 +266,7 @@ archive/issue_comments_056806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56806",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_056808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56808",
-    "user": "lackermans"
+    "user": "@lennartack"
 }
 ```
 
@@ -322,7 +322,7 @@ archive/issue_comments_056809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56809",
-    "user": "lackermans"
+    "user": "@lennartack"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_056811.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56811",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_056813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56813",
-    "user": "lackermans"
+    "user": "@lennartack"
 }
 ```
 
@@ -430,7 +430,7 @@ archive/issue_comments_056815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56815",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_056816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56816",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -559,7 +559,7 @@ archive/issue_comments_056817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56817",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -579,7 +579,7 @@ archive/issue_comments_056818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56818",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -597,7 +597,7 @@ archive/issue_comments_056819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56819",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -640,7 +640,7 @@ archive/issue_comments_056821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56821",
-    "user": "lackermans"
+    "user": "@lennartack"
 }
 ```
 
@@ -658,7 +658,7 @@ archive/issue_comments_056822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56822",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -676,7 +676,7 @@ archive/issue_comments_056823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56823",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -694,7 +694,7 @@ archive/issue_comments_056824.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56824",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -731,7 +731,7 @@ archive/issue_comments_056825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56825",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -749,7 +749,7 @@ archive/issue_comments_056826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56826",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -770,7 +770,7 @@ archive/issue_comments_056827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56827",
-    "user": "lackermans"
+    "user": "@lennartack"
 }
 ```
 
@@ -808,7 +808,7 @@ archive/issue_comments_056829.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56829",
-    "user": "lackermans"
+    "user": "@lennartack"
 }
 ```
 
@@ -826,7 +826,7 @@ archive/issue_comments_056830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56830",
-    "user": "lackermans"
+    "user": "@lennartack"
 }
 ```
 
@@ -850,7 +850,7 @@ archive/issue_comments_056831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56831",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -868,7 +868,7 @@ archive/issue_comments_056832.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56832",
-    "user": "mstreng"
+    "user": "@mstreng"
 }
 ```
 
@@ -886,7 +886,7 @@ archive/issue_comments_056833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6881",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6881#issuecomment-56833",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002731.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nWhen trying to run the Debian build of SAGE, I get the following doctest error.\n\nIt doesn't seem that any of the Debian packages for GAP contain GeneratorMatCode.  So, we'll need to do something to make this available in Debian.\n\n**********************************************************************\nFile \"const.py\", line 1841:\n    : C.decode(v2)\nException raised:\n    Traceback (most recent call last):\n      File \"/usr/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_61[6]>\", line 1, in <module>\n        C.decode(v2)###line 1841:\n    : C.decode(v2)\n      File \"/usr/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 708, in decode\n        gap.eval(\"C:=GeneratorMatCode(\"+Gstr+\",GF(\"+str(q)+\"))\")\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 309, in eval\n        s = Expect.eval(self, x)\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 707, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 477, in _eval_line\n        return self._eval_line_using_file(line)\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 466, in _eval_line_using_file\n        return Expect._eval_line_using_file(self, line)\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 594, in _eval_line_using_file\n        s = self._eval_line(self._read_in_file_command(tmp_to_use), allow_use_file=False)\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 510, in _eval_line\n        raise RuntimeError, message\n    RuntimeError: Gap produced error output\n    Variable: 'GeneratorMatCode' must have a value\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2731\n\n",
+    "body": "Assignee: @timabbott\n\nWhen trying to run the Debian build of SAGE, I get the following doctest error.\n\nIt doesn't seem that any of the Debian packages for GAP contain GeneratorMatCode.  So, we'll need to do something to make this available in Debian.\n\n**********************************************************************\nFile \"const.py\", line 1841:\n    : C.decode(v2)\nException raised:\n    Traceback (most recent call last):\n      File \"/usr/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_61[6]>\", line 1, in <module>\n        C.decode(v2)###line 1841:\n    : C.decode(v2)\n      File \"/usr/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 708, in decode\n        gap.eval(\"C:=GeneratorMatCode(\"+Gstr+\",GF(\"+str(q)+\"))\")\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 309, in eval\n        s = Expect.eval(self, x)\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 707, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 477, in _eval_line\n        return self._eval_line_using_file(line)\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 466, in _eval_line_using_file\n        return Expect._eval_line_using_file(self, line)\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 594, in _eval_line_using_file\n        s = self._eval_line(self._read_in_file_command(tmp_to_use), allow_use_file=False)\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 510, in _eval_line\n        raise RuntimeError, message\n    RuntimeError: Gap produced error output\n    Variable: 'GeneratorMatCode' must have a value\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2731\n\n",
     "created_at": "2008-03-30T02:15:12Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002731.json:
     "title": "GeneratorMatCode doesn't seem to be available in Debian's GAP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2731",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 When trying to run the Debian build of SAGE, I get the following doctest error.
 
@@ -67,7 +67,7 @@ archive/issue_comments_018799.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2731#issuecomment-18799",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_018802.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2731",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2731#issuecomment-18802",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

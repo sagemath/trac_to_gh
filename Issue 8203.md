@@ -14,7 +14,7 @@ archive/issues_008203.json:
     "title": "misc doc fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8203",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -111,7 +111,7 @@ archive/issue_comments_072354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8203#issuecomment-72354",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_072355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8203#issuecomment-72355",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -147,16 +147,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_072356.json:
 ```json
 {
-    "body": "Attachment [trac_8203-doc.patch](tarball://root/attachments/some-uuid/ticket8203/trac_8203-doc.patch) by jhpalmieri created at 2010-02-07 05:37:52",
+    "body": "Attachment [trac_8203-doc.patch](tarball://root/attachments/some-uuid/ticket8203/trac_8203-doc.patch) by @jhpalmieri created at 2010-02-07 05:37:52",
     "created_at": "2010-02-07T05:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8203#issuecomment-72356",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_8203-doc.patch](tarball://root/attachments/some-uuid/ticket8203/trac_8203-doc.patch) by jhpalmieri created at 2010-02-07 05:37:52
+Attachment [trac_8203-doc.patch](tarball://root/attachments/some-uuid/ticket8203/trac_8203-doc.patch) by @jhpalmieri created at 2010-02-07 05:37:52
 
 
 
@@ -206,7 +206,7 @@ archive/issue_comments_072359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8203",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8203#issuecomment-72359",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

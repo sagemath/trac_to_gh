@@ -3,7 +3,7 @@
 archive/issues_000554.json:
 ```json
 {
-    "body": "Assignee: was\n\nConsider this below -- the output doesn't make any sense at all:\n\n```\nsage: var('x')\nsage: f = x^(1/9) + (2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9)\nsage: f\n(2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9) + x^(1/9)\nsage: f.roots()\n[((x^(8/9) - x^(1/9) + 2^(8/9) - 2^(1/9))/(2^(8/9) - 2^(1/9)), 1)]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/554\n\n",
+    "body": "Assignee: @williamstein\n\nConsider this below -- the output doesn't make any sense at all:\n\n```\nsage: var('x')\nsage: f = x^(1/9) + (2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9)\nsage: f\n(2^(8/9) - 2^(1/9))*(x - 1) - x^(8/9) + x^(1/9)\nsage: f.roots()\n[((x^(8/9) - x^(1/9) + 2^(8/9) - 2^(1/9))/(2^(8/9) - 2^(1/9)), 1)]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/554\n\n",
     "created_at": "2007-09-01T17:25:30Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_000554.json:
     "title": "the calculus roots command is totally stupid.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/554",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Consider this below -- the output doesn't make any sense at all:
 
@@ -43,16 +43,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/554
 archive/issue_comments_002865.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-11-03T19:53:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/554#issuecomment-2865",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -66,7 +66,7 @@ archive/issue_comments_002866.json:
     "issue": "https://github.com/sagemath/sagetest/issues/554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/554#issuecomment-2866",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -79,16 +79,16 @@ Changing status from new to assigned.
 archive/issue_comments_002867.json:
 ```json
 {
-    "body": "Attachment [554.patch](tarball://root/attachments/some-uuid/ticket554/554.patch) by mhansen created at 2007-11-03 19:53:39",
+    "body": "Attachment [554.patch](tarball://root/attachments/some-uuid/ticket554/554.patch) by @mwhansen created at 2007-11-03 19:53:39",
     "created_at": "2007-11-03T19:53:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/554#issuecomment-2867",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [554.patch](tarball://root/attachments/some-uuid/ticket554/554.patch) by mhansen created at 2007-11-03 19:53:39
+Attachment [554.patch](tarball://root/attachments/some-uuid/ticket554/554.patch) by @mwhansen created at 2007-11-03 19:53:39
 
 
 
@@ -102,7 +102,7 @@ archive/issue_comments_002868.json:
     "issue": "https://github.com/sagemath/sagetest/issues/554",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/554#issuecomment-2868",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

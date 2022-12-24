@@ -14,7 +14,7 @@ archive/issues_002272.json:
     "title": "subgroups of abelian groups have various problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2272",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: joyner
@@ -53,7 +53,7 @@ archive/issue_comments_015066.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2272#issuecomment-15066",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -72,7 +72,7 @@ archive/issue_comments_015067.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2272#issuecomment-15067",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_015068.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2272#issuecomment-15068",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_015069.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2272",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2272#issuecomment-15069",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

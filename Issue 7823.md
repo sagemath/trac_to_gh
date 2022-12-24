@@ -3,7 +3,7 @@
 archive/issues_007823.json:
 ```json
 {
-    "body": "Assignee: pjeremy\n\nCC:  drkirby was\n\nChase shared library name difference on FreeBSD.  Otherwise the gnutls build fails similar to:\n\n```\n(cd /home/peter/sage/sage-4.3/spkg/build/gnutls-2.2.1.p4/src/libextra; /bin/sh ../libtool  --tag=CC --mode=relink gcc -std=gnu99 -g -O2 -D_REENTRANT -D_THREAD_SAFE -pipe -I/home/peter/sage/sage-4.3/local/include -g -O2 -D_REENTRANT -D_THREAD_SAFE -Wno-pointer-sign -no-undefined -L../lib/.libs -L/home/peter/sage/sage-4.3/local/lib -lopencdk -L/usr/local/lib -L/usr/local/lib -lgcrypt -L/usr/local/lib -lgpg-error -L/usr/local/lib -lintl -L/usr/local/lib -liconv -L/home/peter/sage/sage-4.3/local/lib -lz -R/home/peter/sage/sage-4.3/local/lib -R/usr/local/lib -version-info 27:2:1 -o libgnutls-extra.la -rpath /home/peter/sage/sage-4.3/local/lib gnutls_extra.lo gnutls_openpgp.lo gnutls_ia.lo openpgp/libgnutls_openpgp.la ../lgl/liblgnu.la ../lib/libgnutls.la minilzo/libminilzo.la )  \ngcc -std=gnu99 -shared  .libs/gnutls_extra.o .libs/gnutls_openpgp.o .libs/gnutls_ia.o -Wl,--whole-archive openpgp/.libs/libgnutls_openpgp.a ../lgl/.libs/liblgnu.a minilzo/.libs/libminilzo.a -Wl,--no-whole-archive  -Wl,--rpath -Wl,/home/peter/sage/sage-4.3/local/lib -Wl,--rpath -Wl,/usr/local/lib -L/home/peter/sage/sage-4.3/spkg/build/gnutls-2.2.1.p4/src/lib/.libs -L/home/peter/sage/sage-4.3/local/lib -lopencdk -L/usr/local/lib -lz -lgcrypt -lintl -liconv -lgpg-error -lgnutls  -Wl,-soname -Wl,libgnutls-extra.so.27 -o .libs/libgnutls-extra.so.27\n/usr/bin/ld: /home/peter/sage/sage-4.3/local/lib/libgcrypt.a(libgcrypt_la-visibility.o): relocation R_X86_64_32 can not be used when making a shared object; recompile with -fPIC\n/home/peter/sage/sage-4.3/local/lib/libgcrypt.a: could not read symbols: Bad value\nlibtool: install: error: relink `libgnutls-extra.la' with the above command before installing it\n*** Error code 1\n\nStop in /home/peter/sage/sage-4.3/spkg/build/gnutls-2.2.1.p4/src/libextra.\n*** Error code 1\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7823\n\n",
+    "body": "Assignee: @peterjeremy\n\nCC:  drkirby @williamstein\n\nChase shared library name difference on FreeBSD.  Otherwise the gnutls build fails similar to:\n\n```\n(cd /home/peter/sage/sage-4.3/spkg/build/gnutls-2.2.1.p4/src/libextra; /bin/sh ../libtool  --tag=CC --mode=relink gcc -std=gnu99 -g -O2 -D_REENTRANT -D_THREAD_SAFE -pipe -I/home/peter/sage/sage-4.3/local/include -g -O2 -D_REENTRANT -D_THREAD_SAFE -Wno-pointer-sign -no-undefined -L../lib/.libs -L/home/peter/sage/sage-4.3/local/lib -lopencdk -L/usr/local/lib -L/usr/local/lib -lgcrypt -L/usr/local/lib -lgpg-error -L/usr/local/lib -lintl -L/usr/local/lib -liconv -L/home/peter/sage/sage-4.3/local/lib -lz -R/home/peter/sage/sage-4.3/local/lib -R/usr/local/lib -version-info 27:2:1 -o libgnutls-extra.la -rpath /home/peter/sage/sage-4.3/local/lib gnutls_extra.lo gnutls_openpgp.lo gnutls_ia.lo openpgp/libgnutls_openpgp.la ../lgl/liblgnu.la ../lib/libgnutls.la minilzo/libminilzo.la )  \ngcc -std=gnu99 -shared  .libs/gnutls_extra.o .libs/gnutls_openpgp.o .libs/gnutls_ia.o -Wl,--whole-archive openpgp/.libs/libgnutls_openpgp.a ../lgl/.libs/liblgnu.a minilzo/.libs/libminilzo.a -Wl,--no-whole-archive  -Wl,--rpath -Wl,/home/peter/sage/sage-4.3/local/lib -Wl,--rpath -Wl,/usr/local/lib -L/home/peter/sage/sage-4.3/spkg/build/gnutls-2.2.1.p4/src/lib/.libs -L/home/peter/sage/sage-4.3/local/lib -lopencdk -L/usr/local/lib -lz -lgcrypt -lintl -liconv -lgpg-error -lgnutls  -Wl,-soname -Wl,libgnutls-extra.so.27 -o .libs/libgnutls-extra.so.27\n/usr/bin/ld: /home/peter/sage/sage-4.3/local/lib/libgcrypt.a(libgcrypt_la-visibility.o): relocation R_X86_64_32 can not be used when making a shared object; recompile with -fPIC\n/home/peter/sage/sage-4.3/local/lib/libgcrypt.a: could not read symbols: Bad value\nlibtool: install: error: relink `libgnutls-extra.la' with the above command before installing it\n*** Error code 1\n\nStop in /home/peter/sage/sage-4.3/spkg/build/gnutls-2.2.1.p4/src/libextra.\n*** Error code 1\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7823\n\n",
     "created_at": "2010-01-03T01:53:05Z",
     "labels": [
         "porting: BSD",
@@ -14,12 +14,12 @@ archive/issues_007823.json:
     "title": "libgcrypt-1.4.4.p1 references incorrect shared library on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7823",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
-Assignee: pjeremy
+Assignee: @peterjeremy
 
-CC:  drkirby was
+CC:  drkirby @williamstein
 
 Chase shared library name difference on FreeBSD.  Otherwise the gnutls build fails similar to:
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7823
 archive/issue_comments_067720.json:
 ```json
 {
-    "body": "Attachment [7823.libgcrypt.patch](tarball://root/attachments/some-uuid/ticket7823/7823.libgcrypt.patch) by pjeremy created at 2010-01-03 01:54:01",
+    "body": "Attachment [7823.libgcrypt.patch](tarball://root/attachments/some-uuid/ticket7823/7823.libgcrypt.patch) by @peterjeremy created at 2010-01-03 01:54:01",
     "created_at": "2010-01-03T01:54:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7823#issuecomment-67720",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
-Attachment [7823.libgcrypt.patch](tarball://root/attachments/some-uuid/ticket7823/7823.libgcrypt.patch) by pjeremy created at 2010-01-03 01:54:01
+Attachment [7823.libgcrypt.patch](tarball://root/attachments/some-uuid/ticket7823/7823.libgcrypt.patch) by @peterjeremy created at 2010-01-03 01:54:01
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_067721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7823",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7823#issuecomment-67721",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 

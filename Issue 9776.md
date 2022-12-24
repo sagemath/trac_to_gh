@@ -3,7 +3,7 @@
 archive/issues_009776.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nCC:  tscrim slelievre @kliem\n\nKeywords: random testing, rings\n\np-adics should be included, perhaps at \"level 0\"?\n\nThe following \"level 1\" rings are not included in `sage.rings.tests`:\n\n* power series rings\n\n* Laurent series rings\n\n* multivariate power series rings (implemented in #1956)\n\n* infinite polynomial rings\n\nAlso, it's not clear that \"level n\" testing occurs for `n > 1`; e.g. multivariate polynomial ring in 3 variables over Laurent series ring over finite field of size 29, etc.\n\nQuotient rings are also not included, but should be.  There are probably more to be included than this list indicates.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9777\n\n",
+    "body": "Assignee: @aghitza\n\nCC:  @tscrim @slel @kliem\n\nKeywords: random testing, rings\n\np-adics should be included, perhaps at \"level 0\"?\n\nThe following \"level 1\" rings are not included in `sage.rings.tests`:\n\n* power series rings\n\n* Laurent series rings\n\n* multivariate power series rings (implemented in #1956)\n\n* infinite polynomial rings\n\nAlso, it's not clear that \"level n\" testing occurs for `n > 1`; e.g. multivariate polynomial ring in 3 variables over Laurent series ring over finite field of size 29, etc.\n\nQuotient rings are also not included, but should be.  There are probably more to be included than this list indicates.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9777\n\n",
     "created_at": "2010-08-21T19:47:56Z",
     "labels": [
         "algebra",
@@ -14,12 +14,12 @@ archive/issues_009776.json:
     "title": "include more rings in random testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9776",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
-CC:  tscrim slelievre @kliem
+CC:  @tscrim @slel @kliem
 
 Keywords: random testing, rings
 
@@ -55,7 +55,7 @@ archive/issue_comments_095936.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95936",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_095937.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95937",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_095938.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95938",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_095939.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95939",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_095940.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95940",
-    "user": "tscrim"
+    "user": "@tscrim"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_095942.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95942",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_095943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95943",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -228,7 +228,7 @@ archive/issue_comments_095944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95944",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_095945.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95945",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_095946.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95946",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 
@@ -300,7 +300,7 @@ archive/issue_comments_095948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95948",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_095949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95949",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -336,7 +336,7 @@ archive/issue_comments_095950.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95950",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -354,7 +354,7 @@ archive/issue_comments_095951.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95951",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_095952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9776",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9776#issuecomment-95952",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

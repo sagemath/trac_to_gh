@@ -65,7 +65,7 @@ archive/issue_comments_048023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6031",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6031#issuecomment-48023",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

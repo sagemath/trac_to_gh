@@ -3,7 +3,7 @@
 archive/issues_000176.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/176\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/176\n\n",
     "created_at": "2006-12-02T23:36:36Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000176.json:
     "title": "sagex -- add support for the \"//\" --> floordiv operator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/176",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -73,7 +73,7 @@ archive/issue_comments_000816.json:
     "issue": "https://github.com/sagemath/sagetest/issues/176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/176#issuecomment-816",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_000817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/176",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/176#issuecomment-817",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

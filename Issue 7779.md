@@ -3,7 +3,7 @@
 archive/issues_007779.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  cremona\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/da735a05781e3945):\n\n```\nAt the end of the script which runs sage there is this:\n\n# This should kill all children of this process too.\n# Uncomment this if you have trouble with orphans.\n# Note that you'll get an annoying \"Killed\" message\n# whenver Sage exists.\n# kill -9 -$$\n\nwhere the last but one line should read\n\n# whenever Sage exits.\n\n(2 typos!)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7779\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @JohnCremona\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/da735a05781e3945):\n\n```\nAt the end of the script which runs sage there is this:\n\n# This should kill all children of this process too.\n# Uncomment this if you have trouble with orphans.\n# Note that you'll get an annoying \"Killed\" message\n# whenver Sage exists.\n# kill -9 -$$\n\nwhere the last but one line should read\n\n# whenever Sage exits.\n\n(2 typos!)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7779\n\n",
     "created_at": "2009-12-28T15:42:19Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_007779.json:
 ```
 Assignee: mvngu
 
-CC:  cremona
+CC:  @JohnCremona
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/da735a05781e3945):
 
@@ -169,7 +169,7 @@ archive/issue_comments_067080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7779",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7779#issuecomment-67080",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

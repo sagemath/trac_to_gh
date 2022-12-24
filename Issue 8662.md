@@ -3,7 +3,7 @@
 archive/issues_008662.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kedlaya\n\nThis extends current functionality for Coleman integrals on hyperelliptic curves; in particular, this allows one to compute iterated integrals between non-Weierstrass points on hyperelliptic curves and iterated integrals with one Weierstrass endpoint on elliptic curves.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8662\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kedlaya\n\nThis extends current functionality for Coleman integrals on hyperelliptic curves; in particular, this allows one to compute iterated integrals between non-Weierstrass points on hyperelliptic curves and iterated integrals with one Weierstrass endpoint on elliptic curves.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8662\n\n",
     "created_at": "2010-04-08T22:53:46Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_008662.json:
     "title": "Iterated Coleman integration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8662",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kedlaya
+CC:  @kedlaya
 
 This extends current functionality for Coleman integrals on hyperelliptic curves; in particular, this allows one to compute iterated integrals between non-Weierstrass points on hyperelliptic curves and iterated integrals with one Weierstrass endpoint on elliptic curves.
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8662
 archive/issue_comments_078670.json:
 ```json
 {
-    "body": "Attachment [13544.2.patch](tarball://root/attachments/some-uuid/ticket8662/13544.2.patch) by jen created at 2010-04-09 00:55:30",
+    "body": "Attachment [13544.2.patch](tarball://root/attachments/some-uuid/ticket8662/13544.2.patch) by @jbalakrishnan created at 2010-04-09 00:55:30",
     "created_at": "2010-04-09T00:55:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8662#issuecomment-78670",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [13544.2.patch](tarball://root/attachments/some-uuid/ticket8662/13544.2.patch) by jen created at 2010-04-09 00:55:30
+Attachment [13544.2.patch](tarball://root/attachments/some-uuid/ticket8662/13544.2.patch) by @jbalakrishnan created at 2010-04-09 00:55:30
 
 
 
@@ -52,16 +52,16 @@ Attachment [13544.2.patch](tarball://root/attachments/some-uuid/ticket8662/13544
 archive/issue_comments_078671.json:
 ```json
 {
-    "body": "Attachment [13544.patch](tarball://root/attachments/some-uuid/ticket8662/13544.patch) by jen created at 2010-04-09 00:57:19",
+    "body": "Attachment [13544.patch](tarball://root/attachments/some-uuid/ticket8662/13544.patch) by @jbalakrishnan created at 2010-04-09 00:57:19",
     "created_at": "2010-04-09T00:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8662#issuecomment-78671",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
-Attachment [13544.patch](tarball://root/attachments/some-uuid/ticket8662/13544.patch) by jen created at 2010-04-09 00:57:19
+Attachment [13544.patch](tarball://root/attachments/some-uuid/ticket8662/13544.patch) by @jbalakrishnan created at 2010-04-09 00:57:19
 
 
 
@@ -75,7 +75,7 @@ archive/issue_comments_078672.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8662#issuecomment-78672",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_078673.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8662#issuecomment-78673",
-    "user": "jen"
+    "user": "@jbalakrishnan"
 }
 ```
 
@@ -112,7 +112,7 @@ archive/issue_comments_078674.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8662",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8662#issuecomment-78674",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 

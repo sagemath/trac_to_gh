@@ -3,7 +3,7 @@
 archive/issues_001935.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nThe legendre_symbol command is pretty slow; this patch speeds it up a good bit. Here are some timings:\n\nBEFORE:\n\n```\nsage: time for _ in range(10000): a = legendre_symbol(12,5)\nCPU times: user 0.46 s, sys: 0.05 s, total: 0.52 s\nWall time: 0.52\n```\n\n\nAFTER:\n\n```\nsage: time for _ in range(10000): a = legendre_symbol(12,5)\nCPU times: user 0.11 s, sys: 0.02 s, total: 0.13 s\nWall time: 0.13\n```\n\n\nHowever, it's still *much* slower than kronecker_symbol:\n\n```\nsage: time for _ in range(10000): a = kronecker_symbol(12,5)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n```\n\n\nHere's most of the discrepancy:\n\n```\nsage: time for _ in range(10000): 5.is_prime()\nCPU times: user 0.06 s, sys: 0.02 s, total: 0.08 s\nWall time: 0.08\n```\n\n\nIt's amusing, because there's no need for legendre_symbol to check whether or not its argument is prime, since under the hood it just calls kronecker. Of course, it would work when it shouldn't, which is probably bad. So this is a happy medium.\n\nI suspect that this is still wildly slower than Pari, Magma, etc -- indeed, Magma can do that calculation about 250,000 times in the same time frame. It's not wildly important, but moving arith.py to Cython could help close that gap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1935\n\n",
+    "body": "Assignee: @craigcitro\n\nThe legendre_symbol command is pretty slow; this patch speeds it up a good bit. Here are some timings:\n\nBEFORE:\n\n```\nsage: time for _ in range(10000): a = legendre_symbol(12,5)\nCPU times: user 0.46 s, sys: 0.05 s, total: 0.52 s\nWall time: 0.52\n```\n\n\nAFTER:\n\n```\nsage: time for _ in range(10000): a = legendre_symbol(12,5)\nCPU times: user 0.11 s, sys: 0.02 s, total: 0.13 s\nWall time: 0.13\n```\n\n\nHowever, it's still *much* slower than kronecker_symbol:\n\n```\nsage: time for _ in range(10000): a = kronecker_symbol(12,5)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n```\n\n\nHere's most of the discrepancy:\n\n```\nsage: time for _ in range(10000): 5.is_prime()\nCPU times: user 0.06 s, sys: 0.02 s, total: 0.08 s\nWall time: 0.08\n```\n\n\nIt's amusing, because there's no need for legendre_symbol to check whether or not its argument is prime, since under the hood it just calls kronecker. Of course, it would work when it shouldn't, which is probably bad. So this is a happy medium.\n\nI suspect that this is still wildly slower than Pari, Magma, etc -- indeed, Magma can do that calculation about 250,000 times in the same time frame. It's not wildly important, but moving arith.py to Cython could help close that gap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1935\n\n",
     "created_at": "2008-01-26T09:33:26Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001935.json:
     "title": "[with patch, needs review] legendre_symbol currently quite slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1935",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 The legendre_symbol command is pretty slow; this patch speeds it up a good bit. Here are some timings:
 
@@ -72,16 +72,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1935
 archive/issue_comments_012277.json:
 ```json
 {
-    "body": "Attachment [1935-legendre.patch](tarball://root/attachments/some-uuid/ticket1935/1935-legendre.patch) by craigcitro created at 2008-01-26 09:34:25",
+    "body": "Attachment [1935-legendre.patch](tarball://root/attachments/some-uuid/ticket1935/1935-legendre.patch) by @craigcitro created at 2008-01-26 09:34:25",
     "created_at": "2008-01-26T09:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1935",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1935#issuecomment-12277",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [1935-legendre.patch](tarball://root/attachments/some-uuid/ticket1935/1935-legendre.patch) by craigcitro created at 2008-01-26 09:34:25
+Attachment [1935-legendre.patch](tarball://root/attachments/some-uuid/ticket1935/1935-legendre.patch) by @craigcitro created at 2008-01-26 09:34:25
 
 
 

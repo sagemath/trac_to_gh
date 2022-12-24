@@ -3,7 +3,7 @@
 archive/issues_005885.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  jason\n\n#5567 fixes a bug, but in doing so, avoids the deprecation warning that should happen when the user types in\n\n```\nregion_plot([y>0,x>0,x^2+y^2<3], (-3, 3), (-3,3),plot_points=100,incol='gray').show(aspect_ratio=1)\n```\n\n\nSee #5413 for details on the deprecation warning.  This deprecation warning should be triggered when the code in the doctest of #5567 is run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5885\n\n",
+    "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\n#5567 fixes a bug, but in doing so, avoids the deprecation warning that should happen when the user types in\n\n```\nregion_plot([y>0,x>0,x^2+y^2<3], (-3, 3), (-3,3),plot_points=100,incol='gray').show(aspect_ratio=1)\n```\n\n\nSee #5413 for details on the deprecation warning.  This deprecation warning should be triggered when the code in the doctest of #5567 is run.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5885\n\n",
     "created_at": "2009-04-24T01:20:37Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_005885.json:
     "title": "#5567 should throw a deprecation warning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5885",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
-CC:  jason
+CC:  @jasongrout
 
 #5567 fixes a bug, but in doing so, avoids the deprecation warning that should happen when the user types in
 
@@ -46,7 +46,7 @@ archive/issue_comments_046527.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5885#issuecomment-46527",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -80,7 +80,7 @@ archive/issue_comments_046528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5885#issuecomment-46528",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_046529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5885#issuecomment-46529",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_046530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5885#issuecomment-46530",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_046531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5885#issuecomment-46531",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_046532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5885#issuecomment-46532",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_046533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5885#issuecomment-46533",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_046534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5885#issuecomment-46534",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -220,7 +220,7 @@ archive/issue_comments_046535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5885#issuecomment-46535",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_046536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5885",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5885#issuecomment-46536",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

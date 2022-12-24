@@ -3,7 +3,7 @@
 archive/issues_002312.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2312\n\n",
+    "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2312\n\n",
     "created_at": "2008-02-26T05:02:36Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002312.json:
     "title": "add support for braclets, necklaces, and Lyndon words, of a fixed length",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2312",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 CC:  sage-combinat
 
@@ -81,7 +81,7 @@ archive/issue_comments_015386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2312#issuecomment-15386",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_015387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2312",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2312#issuecomment-15387",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

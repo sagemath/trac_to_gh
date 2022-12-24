@@ -3,7 +3,7 @@
 archive/issues_007248.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  jhpalmieri\n\nI'm not sure whether this is an upgrade or a new spkg, but the plan is to switch the notebook to Jinja2, which will require updating/replacing the current Jinja spkg.\n\nJohn Palmieri has a proposed spkg at #6586.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7248\n\n",
+    "body": "Assignee: boothby\n\nCC:  @jhpalmieri\n\nI'm not sure whether this is an upgrade or a new spkg, but the plan is to switch the notebook to Jinja2, which will require updating/replacing the current Jinja spkg.\n\nJohn Palmieri has a proposed spkg at #6586.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7248\n\n",
     "created_at": "2009-10-19T08:42:29Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007248.json:
     "title": "include jinja2 / upgrade jinja spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7248",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 Assignee: boothby
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 I'm not sure whether this is an upgrade or a new spkg, but the plan is to switch the notebook to Jinja2, which will require updating/replacing the current Jinja spkg.
 
@@ -41,7 +41,7 @@ archive/issue_comments_060171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60171",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_060172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60172",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_060173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60173",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_060174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60174",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_060175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60175",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_060176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60176",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -162,7 +162,7 @@ archive/issue_comments_060177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60177",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -185,7 +185,7 @@ archive/issue_comments_060178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60178",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -203,7 +203,7 @@ archive/issue_comments_060179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60179",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

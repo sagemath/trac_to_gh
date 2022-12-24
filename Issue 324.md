@@ -3,7 +3,7 @@
 archive/issues_000324.json:
 ```json
 {
-    "body": "Assignee: was\n\nI'm just building sage on a dual core G5 powerpc and noticed that NTL seems to get built in 32-bit mode, even though it's a 64-bit machine... here's part of the build log:\n\n\n```\nThis is NTL version 5.4\n\nGOOD NEWS: compatible machine.\nsummary of machine characteristics:\nbits per long = 32\nbits per int = 32\nbits per size_t = 32\narith right shift = yes\ndouble precision = 53\nNBITS (maximum) = 30\nsingle mul ok = yes\nregister double precision = 53\ndouble rounding detected = no\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/324\n\n",
+    "body": "Assignee: @williamstein\n\nI'm just building sage on a dual core G5 powerpc and noticed that NTL seems to get built in 32-bit mode, even though it's a 64-bit machine... here's part of the build log:\n\n\n```\nThis is NTL version 5.4\n\nGOOD NEWS: compatible machine.\nsummary of machine characteristics:\nbits per long = 32\nbits per int = 32\nbits per size_t = 32\narith right shift = yes\ndouble precision = 53\nNBITS (maximum) = 30\nsingle mul ok = yes\nregister double precision = 53\ndouble rounding detected = no\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/324\n\n",
     "created_at": "2007-03-20T15:57:14Z",
     "labels": [
         "packages: standard",
@@ -16,7 +16,7 @@ archive/issues_000324.json:
     "user": "dmharvey"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 I'm just building sage on a dual core G5 powerpc and noticed that NTL seems to get built in 32-bit mode, even though it's a 64-bit machine... here's part of the build log:
 
@@ -55,7 +55,7 @@ archive/issue_comments_001536.json:
     "issue": "https://github.com/sagemath/sagetest/issues/324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/324#issuecomment-1536",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_001537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/324",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/324#issuecomment-1537",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005475.json:
 ```json
 {
-    "body": "Assignee: was\n\nIf one wants to use Sage from a C program, e.g., like this (see below), then it's important that \"from sage.all import *\" not import Ipython.  The point of this ticket is make the import of IPython lazy -- and only happen if needed.  This will also make \"sage -python\" and \"sage -c\" faster, since Ipython startup takes significant time. \n\n\n```\n/*\nsage -sh\ngcc -I$SAGE_LOCAL/include/python2.5 $SAGE_LOCAL/lib/python/config/libpython2.5.a embed.c -o embed; ./embed\n\nSee http://docs.python.org/extending/embedding.html\n*/\n\n\n#include <Python.h>\n\nint\nmain(int argc, char *argv[])\n{\n  Py_Initialize();\n  printf(\"Loading the Sage library...\\n\");\n  PyRun_SimpleString(\"from sage.all import *\");\n  printf(\"Factoring an integer:\\n\");\n  PyRun_SimpleString(\"print factor(193048120380)\");\n  printf(\"Popping up plot of a function:\\n\");\n  PyRun_SimpleString(\"x=var('x'); show(plot(sin(x)))\");\n  printf(\"Popping up plot of a 3-d function:\\n\");\n  PyRun_SimpleString(\"x,y=var('x,y'); show(plot3d(sin(x*y)-cos(x-y), (x,-4,4),(y,-4,4)))\");\n  printf(\"Type 0 then return\\n\");\n  int n;\n  scanf(\"%d\",&n);\n  printf(\"Exiting...\\n\");\n  Py_Finalize();\n  return 0;\n}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5475\n\n",
+    "body": "Assignee: @williamstein\n\nIf one wants to use Sage from a C program, e.g., like this (see below), then it's important that \"from sage.all import *\" not import Ipython.  The point of this ticket is make the import of IPython lazy -- and only happen if needed.  This will also make \"sage -python\" and \"sage -c\" faster, since Ipython startup takes significant time. \n\n\n```\n/*\nsage -sh\ngcc -I$SAGE_LOCAL/include/python2.5 $SAGE_LOCAL/lib/python/config/libpython2.5.a embed.c -o embed; ./embed\n\nSee http://docs.python.org/extending/embedding.html\n*/\n\n\n#include <Python.h>\n\nint\nmain(int argc, char *argv[])\n{\n  Py_Initialize();\n  printf(\"Loading the Sage library...\\n\");\n  PyRun_SimpleString(\"from sage.all import *\");\n  printf(\"Factoring an integer:\\n\");\n  PyRun_SimpleString(\"print factor(193048120380)\");\n  printf(\"Popping up plot of a function:\\n\");\n  PyRun_SimpleString(\"x=var('x'); show(plot(sin(x)))\");\n  printf(\"Popping up plot of a 3-d function:\\n\");\n  PyRun_SimpleString(\"x,y=var('x,y'); show(plot3d(sin(x*y)-cos(x-y), (x,-4,4),(y,-4,4)))\");\n  printf(\"Type 0 then return\\n\");\n  int n;\n  scanf(\"%d\",&n);\n  printf(\"Exiting...\\n\");\n  Py_Finalize();\n  return 0;\n}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5475\n\n",
     "created_at": "2009-03-10T21:39:27Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_005475.json:
     "title": "make it so ipython isn't imported when one does \"sage -python\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5475",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 If one wants to use Sage from a C program, e.g., like this (see below), then it's important that "from sage.all import *" not import Ipython.  The point of this ticket is make the import of IPython lazy -- and only happen if needed.  This will also make "sage -python" and "sage -c" faster, since Ipython startup takes significant time. 
 
@@ -119,7 +119,7 @@ archive/issue_comments_042475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5475#issuecomment-42475",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_042476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5475",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5475#issuecomment-42476",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

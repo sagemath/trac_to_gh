@@ -14,7 +14,7 @@ archive/issues_006108.json:
     "title": "sage -tp skips all.py!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6108",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6108
 archive/issue_comments_048800.json:
 ```json
 {
-    "body": "Attachment [trac_6108.patch](tarball://root/attachments/some-uuid/ticket6108/trac_6108.patch) by mhansen created at 2009-05-21 18:05:51",
+    "body": "Attachment [trac_6108.patch](tarball://root/attachments/some-uuid/ticket6108/trac_6108.patch) by @mwhansen created at 2009-05-21 18:05:51",
     "created_at": "2009-05-21T18:05:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6108#issuecomment-48800",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6108.patch](tarball://root/attachments/some-uuid/ticket6108/trac_6108.patch) by mhansen created at 2009-05-21 18:05:51
+Attachment [trac_6108.patch](tarball://root/attachments/some-uuid/ticket6108/trac_6108.patch) by @mwhansen created at 2009-05-21 18:05:51
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_048801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6108",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6108#issuecomment-48801",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

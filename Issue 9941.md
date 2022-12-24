@@ -3,7 +3,7 @@
 archive/issues_009941.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nCC:  mpatel\n\nWith the optional CHomP package in 4.5.3 on sage.math, I get some doctest failures:\n\n```python\nsage -t -long -only-optional=chomp \"devel/sage/sage/homology/cell_complex.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/cell_complex.py\", line 470:\n    sage: S2.homology(dim=2, generators=True)  # optional - CHomP\nExpected:\n    (Z, [(0, 1, 2) - (0, 1, 3) + (0, 2, 3) - (1, 2, 3)])\nGot:\n    (Z, [-(0, 1, 2) + (0, 1, 3) - (0, 2, 3) + (1, 2, 3)])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9942\n\n",
+    "body": "Assignee: @jhpalmieri\n\nCC:  @qed777\n\nWith the optional CHomP package in 4.5.3 on sage.math, I get some doctest failures:\n\n```python\nsage -t -long -only-optional=chomp \"devel/sage/sage/homology/cell_complex.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.3-chomp/devel/sage/sage/homology/cell_complex.py\", line 470:\n    sage: S2.homology(dim=2, generators=True)  # optional - CHomP\nExpected:\n    (Z, [(0, 1, 2) - (0, 1, 3) + (0, 2, 3) - (1, 2, 3)])\nGot:\n    (Z, [-(0, 1, 2) + (0, 1, 3) - (0, 2, 3) + (1, 2, 3)])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9942\n\n",
     "created_at": "2010-09-18T18:04:01Z",
     "labels": [
         "algebraic topology",
@@ -14,12 +14,12 @@ archive/issues_009941.json:
     "title": "Fix CHomP-related doctest errors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9941",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
-CC:  mpatel
+CC:  @qed777
 
 With the optional CHomP package in 4.5.3 on sage.math, I get some doctest failures:
 
@@ -138,7 +138,7 @@ archive/issue_comments_098992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9941#issuecomment-98992",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_098993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9941#issuecomment-98993",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_098994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9941#issuecomment-98994",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_098995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9941#issuecomment-98995",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_098996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9941#issuecomment-98996",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_098999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9941",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9941#issuecomment-98999",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

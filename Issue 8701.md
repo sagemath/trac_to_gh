@@ -3,7 +3,7 @@
 archive/issues_008701.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nCC:  nilsskoruppa mraum tornaria was novoselt ncalexan mstreng\n\nKeywords: siegel modular forms\n\nAt Sage Days 20.25 in Montreal, we have decided to submit an initial version of the Siegel modular forms code by Friday 16 April 2010.\n\nIt's now a few minutes before midnight, and lest I turn into a pumpkin, I am uploading a patch with what we have so far.\n\nI'm marking it as \"needs work\" since there are still a number of issues to be resolved.  I'll list these in the comments soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8701\n\n",
+    "body": "Assignee: @craigcitro\n\nCC:  nilsskoruppa mraum @tornaria @williamstein @novoselt @ncalexan @mstreng\n\nKeywords: siegel modular forms\n\nAt Sage Days 20.25 in Montreal, we have decided to submit an initial version of the Siegel modular forms code by Friday 16 April 2010.\n\nIt's now a few minutes before midnight, and lest I turn into a pumpkin, I am uploading a patch with what we have so far.\n\nI'm marking it as \"needs work\" since there are still a number of issues to be resolved.  I'll list these in the comments soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8701\n\n",
     "created_at": "2010-04-17T07:01:23Z",
     "labels": [
         "modular forms",
@@ -14,12 +14,12 @@ archive/issues_008701.json:
     "title": "implement scalar-valued Siegel modular forms on Sp(4,Z)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8701",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
-CC:  nilsskoruppa mraum tornaria was novoselt ncalexan mstreng
+CC:  nilsskoruppa mraum @tornaria @williamstein @novoselt @ncalexan @mstreng
 
 Keywords: siegel modular forms
 
@@ -45,7 +45,7 @@ archive/issue_comments_079275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79275",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_079276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79276",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_079277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79277",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_079278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79278",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -126,16 +126,16 @@ I am replacing the patch with one that has fixes for a couple of issues on the l
 archive/issue_comments_079279.json:
 ```json
 {
-    "body": "Attachment [siegel_combined.patch](tarball://root/attachments/some-uuid/ticket8701/siegel_combined.patch) by AlexGhitza created at 2010-06-14 07:03:44\n\napplies to sage-4.4.3 and sage-4.4.4.alpha0",
+    "body": "Attachment [siegel_combined.patch](tarball://root/attachments/some-uuid/ticket8701/siegel_combined.patch) by @aghitza created at 2010-06-14 07:03:44\n\napplies to sage-4.4.3 and sage-4.4.4.alpha0",
     "created_at": "2010-06-14T07:03:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79279",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [siegel_combined.patch](tarball://root/attachments/some-uuid/ticket8701/siegel_combined.patch) by AlexGhitza created at 2010-06-14 07:03:44
+Attachment [siegel_combined.patch](tarball://root/attachments/some-uuid/ticket8701/siegel_combined.patch) by @aghitza created at 2010-06-14 07:03:44
 
 applies to sage-4.4.3 and sage-4.4.4.alpha0
 
@@ -151,7 +151,7 @@ archive/issue_comments_079280.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79280",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_079281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79281",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_079282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79282",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -258,16 +258,16 @@ Raises an exception when trying to find the image of a form F under the Hecke op
 archive/issue_comments_079286.json:
 ```json
 {
-    "body": "Attachment [fix-siegel](tarball://root/attachments/some-uuid/ticket8701/fix-siegel) by tornaria created at 2011-04-22 21:13:12\n\nFix an issue with sage 4.6.2",
+    "body": "Attachment [fix-siegel](tarball://root/attachments/some-uuid/ticket8701/fix-siegel) by @tornaria created at 2011-04-22 21:13:12\n\nFix an issue with sage 4.6.2",
     "created_at": "2011-04-22T21:13:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79286",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
-Attachment [fix-siegel](tarball://root/attachments/some-uuid/ticket8701/fix-siegel) by tornaria created at 2011-04-22 21:13:12
+Attachment [fix-siegel](tarball://root/attachments/some-uuid/ticket8701/fix-siegel) by @tornaria created at 2011-04-22 21:13:12
 
 Fix an issue with sage 4.6.2
 
@@ -283,7 +283,7 @@ archive/issue_comments_079287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79287",
-    "user": "tornaria"
+    "user": "@tornaria"
 }
 ```
 
@@ -296,16 +296,16 @@ Have the constructor coerce the coefficients into the ring they're supposed to b
 archive/issue_comments_079288.json:
 ```json
 {
-    "body": "Attachment [fix-coeffs-in-ring](tarball://root/attachments/some-uuid/ticket8701/fix-coeffs-in-ring) by novoselt created at 2011-05-20 16:32:37",
+    "body": "Attachment [fix-coeffs-in-ring](tarball://root/attachments/some-uuid/ticket8701/fix-coeffs-in-ring) by @novoselt created at 2011-05-20 16:32:37",
     "created_at": "2011-05-20T16:32:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79288",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
-Attachment [fix-coeffs-in-ring](tarball://root/attachments/some-uuid/ticket8701/fix-coeffs-in-ring) by novoselt created at 2011-05-20 16:32:37
+Attachment [fix-coeffs-in-ring](tarball://root/attachments/some-uuid/ticket8701/fix-coeffs-in-ring) by @novoselt created at 2011-05-20 16:32:37
 
 
 
@@ -314,16 +314,16 @@ Attachment [fix-coeffs-in-ring](tarball://root/attachments/some-uuid/ticket8701/
 archive/issue_comments_079289.json:
 ```json
 {
-    "body": "Attachment [trac_8701_siegel_rebased.patch](tarball://root/attachments/some-uuid/ticket8701/trac_8701_siegel_rebased.patch) by chapoton created at 2013-09-01 12:18:09",
+    "body": "Attachment [trac_8701_siegel_rebased.patch](tarball://root/attachments/some-uuid/ticket8701/trac_8701_siegel_rebased.patch) by @fchapoton created at 2013-09-01 12:18:09",
     "created_at": "2013-09-01T12:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79289",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_8701_siegel_rebased.patch](tarball://root/attachments/some-uuid/ticket8701/trac_8701_siegel_rebased.patch) by chapoton created at 2013-09-01 12:18:09
+Attachment [trac_8701_siegel_rebased.patch](tarball://root/attachments/some-uuid/ticket8701/trac_8701_siegel_rebased.patch) by @fchapoton created at 2013-09-01 12:18:09
 
 
 
@@ -337,7 +337,7 @@ archive/issue_comments_079290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79290",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -359,7 +359,7 @@ archive/issue_comments_079291.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79291",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -372,16 +372,16 @@ apply only trac_8701_siegel_folded_v1.patch
 archive/issue_comments_079292.json:
 ```json
 {
-    "body": "Attachment [trac_8701_siegel_folded_v1.patch](tarball://root/attachments/some-uuid/ticket8701/trac_8701_siegel_folded_v1.patch) by chapoton created at 2013-09-06 19:18:51\n\napply only trac_8701_siegel_folded_v1.patch",
+    "body": "Attachment [trac_8701_siegel_folded_v1.patch](tarball://root/attachments/some-uuid/ticket8701/trac_8701_siegel_folded_v1.patch) by @fchapoton created at 2013-09-06 19:18:51\n\napply only trac_8701_siegel_folded_v1.patch",
     "created_at": "2013-09-06T19:18:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79292",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
-Attachment [trac_8701_siegel_folded_v1.patch](tarball://root/attachments/some-uuid/ticket8701/trac_8701_siegel_folded_v1.patch) by chapoton created at 2013-09-06 19:18:51
+Attachment [trac_8701_siegel_folded_v1.patch](tarball://root/attachments/some-uuid/ticket8701/trac_8701_siegel_folded_v1.patch) by @fchapoton created at 2013-09-06 19:18:51
 
 apply only trac_8701_siegel_folded_v1.patch
 
@@ -397,7 +397,7 @@ archive/issue_comments_079293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8701",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8701#issuecomment-79293",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

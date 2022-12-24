@@ -13,7 +13,7 @@ archive/issues_000074.json:
     "title": "switch to mercurial source control manager.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/74",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_000382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/74",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/74#issuecomment-382",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_000383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/74",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/74#issuecomment-383",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000403.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: polymake, polytope\n\nWhen doing large enough calculations, popen3 deadlocks in the cmd method of the Polytope class.  The attached patch fixes this by using the subprocess module instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/403\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: polymake, polytope\n\nWhen doing large enough calculations, popen3 deadlocks in the cmd method of the Polytope class.  The attached patch fixes this by using the subprocess module instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/403\n\n",
     "created_at": "2007-07-12T11:43:48Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_000403.json:
     "user": "mhampton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: polymake, polytope
 
@@ -57,7 +57,7 @@ archive/issue_comments_001979.json:
     "issue": "https://github.com/sagemath/sagetest/issues/403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/403#issuecomment-1979",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_001980.json:
     "issue": "https://github.com/sagemath/sagetest/issues/403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/403#issuecomment-1980",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_001981.json:
     "issue": "https://github.com/sagemath/sagetest/issues/403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/403#issuecomment-1981",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_001982.json:
     "issue": "https://github.com/sagemath/sagetest/issues/403",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/403#issuecomment-1982",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_007427.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  mpatel\n\nI find myself lots of times needing an angle for input in an interact.  It would be cool to have a \"wheel\" widget like this:\n\nhttp://wiki.jqueryui.com/Wheel\n\nSee also http://maninblack.info/_proj/jquery-ui-wheel/demos/wheel/\n\nIssue created by migration from https://trac.sagemath.org/ticket/7427\n\n",
+    "body": "Assignee: boothby\n\nCC:  @qed777\n\nI find myself lots of times needing an angle for input in an interact.  It would be cool to have a \"wheel\" widget like this:\n\nhttp://wiki.jqueryui.com/Wheel\n\nSee also http://maninblack.info/_proj/jquery-ui-wheel/demos/wheel/\n\nIssue created by migration from https://trac.sagemath.org/ticket/7427\n\n",
     "created_at": "2009-11-11T04:01:57Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007427.json:
     "title": "angle \"wheel\" widget for interacts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7427",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: boothby
 
-CC:  mpatel
+CC:  @qed777
 
 I find myself lots of times needing an angle for input in an interact.  It would be cool to have a "wheel" widget like this:
 
@@ -43,7 +43,7 @@ archive/issue_comments_062502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7427#issuecomment-62502",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -61,7 +61,7 @@ archive/issue_comments_062503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7427#issuecomment-62503",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_062504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7427#issuecomment-62504",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_062505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7427#issuecomment-62505",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_062506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7427",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7427#issuecomment-62506",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

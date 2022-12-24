@@ -3,7 +3,7 @@
 archive/issues_006546.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  slelievre\n\nKeywords: plot graph edge width thickness\n\nThere is an option for specifying the thickness/width of an edge in a graph (\"thickness\").  For a graph `G`\n\n`G.plot(thickness=10)`\n\nworks as expected, but\n\n`show(G, thickness=10)`\n\nraises an error about the option name being unrecognized.\n\nAlso, I couldn't find any mention of this parameter in the documentation anywhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6546\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  @slel\n\nKeywords: plot graph edge width thickness\n\nThere is an option for specifying the thickness/width of an edge in a graph (\"thickness\").  For a graph `G`\n\n`G.plot(thickness=10)`\n\nworks as expected, but\n\n`show(G, thickness=10)`\n\nraises an error about the option name being unrecognized.\n\nAlso, I couldn't find any mention of this parameter in the documentation anywhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6546\n\n",
     "created_at": "2009-07-17T04:59:38Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_006546.json:
     "title": "Fully implement edge thickness in plots of graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6546",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
-CC:  slelievre
+CC:  @slel
 
 Keywords: plot graph edge width thickness
 
@@ -51,7 +51,7 @@ archive/issue_comments_053380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6546#issuecomment-53380",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -69,7 +69,7 @@ archive/issue_comments_053381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6546#issuecomment-53381",
-    "user": "ppurka"
+    "user": "@ppurka"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_053382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6546",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6546#issuecomment-53382",
-    "user": "slelievre"
+    "user": "@slel"
 }
 ```
 

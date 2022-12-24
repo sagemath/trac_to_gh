@@ -3,7 +3,7 @@
 archive/issues_004449.json:
 ```json
 {
-    "body": "Assignee: saliola\n\nCC:  sage-combinat\n\nKeywords: sage-combinat\n\n'sage -combinat install' on sage-3.2.alpha2 fails (and not on 'hg qpush -a').\n\nIssue created by migration from https://trac.sagemath.org/ticket/4449\n\n",
+    "body": "Assignee: @saliola\n\nCC:  sage-combinat\n\nKeywords: sage-combinat\n\n'sage -combinat install' on sage-3.2.alpha2 fails (and not on 'hg qpush -a').\n\nIssue created by migration from https://trac.sagemath.org/ticket/4449\n\n",
     "created_at": "2008-11-05T22:23:44Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_004449.json:
     "title": "sage-combinat install script doesn't work with 3.2.alpha2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4449",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
-Assignee: saliola
+Assignee: @saliola
 
 CC:  sage-combinat
 
@@ -36,16 +36,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4449
 archive/issue_comments_032803.json:
 ```json
 {
-    "body": "Attachment [sage-combinat_4449.patch](tarball://root/attachments/some-uuid/ticket4449/sage-combinat_4449.patch) by saliola created at 2008-11-05 22:25:59",
+    "body": "Attachment [sage-combinat_4449.patch](tarball://root/attachments/some-uuid/ticket4449/sage-combinat_4449.patch) by @saliola created at 2008-11-05 22:25:59",
     "created_at": "2008-11-05T22:25:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4449#issuecomment-32803",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 
-Attachment [sage-combinat_4449.patch](tarball://root/attachments/some-uuid/ticket4449/sage-combinat_4449.patch) by saliola created at 2008-11-05 22:25:59
+Attachment [sage-combinat_4449.patch](tarball://root/attachments/some-uuid/ticket4449/sage-combinat_4449.patch) by @saliola created at 2008-11-05 22:25:59
 
 
 
@@ -59,7 +59,7 @@ archive/issue_comments_032804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4449#issuecomment-32804",
-    "user": "saliola"
+    "user": "@saliola"
 }
 ```
 

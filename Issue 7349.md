@@ -3,7 +3,7 @@
 archive/issues_007349.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was mpatel\n\nThe fixes from #6848 have not been included in `sagenb.misc.sageinspect`. This ports them to SageNB\n\nIssue created by migration from https://trac.sagemath.org/ticket/7349\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nThe fixes from #6848 have not been included in `sagenb.misc.sageinspect`. This ports them to SageNB\n\nIssue created by migration from https://trac.sagemath.org/ticket/7349\n\n",
     "created_at": "2009-10-29T15:26:22Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007349.json:
     "title": "SageNB -- Include fixes from #6848 (introspection)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7349",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: boothby
 
-CC:  was mpatel
+CC:  @williamstein @qed777
 
 The fixes from #6848 have not been included in `sagenb.misc.sageinspect`. This ports them to SageNB
 
@@ -39,7 +39,7 @@ archive/issue_comments_061575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7349#issuecomment-61575",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -52,16 +52,16 @@ Ports fixes from #6848 to SageNB
 archive/issue_comments_061576.json:
 ```json
 {
-    "body": "Attachment [trac_7349-6848-port.patch](tarball://root/attachments/some-uuid/ticket7349/trac_7349-6848-port.patch) by jhpalmieri created at 2009-10-29 17:23:13\n\nI think that #7316 is the same issue, but the patch is here, so we should close the other one as a duplicate.",
+    "body": "Attachment [trac_7349-6848-port.patch](tarball://root/attachments/some-uuid/ticket7349/trac_7349-6848-port.patch) by @jhpalmieri created at 2009-10-29 17:23:13\n\nI think that #7316 is the same issue, but the patch is here, so we should close the other one as a duplicate.",
     "created_at": "2009-10-29T17:23:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7349#issuecomment-61576",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7349-6848-port.patch](tarball://root/attachments/some-uuid/ticket7349/trac_7349-6848-port.patch) by jhpalmieri created at 2009-10-29 17:23:13
+Attachment [trac_7349-6848-port.patch](tarball://root/attachments/some-uuid/ticket7349/trac_7349-6848-port.patch) by @jhpalmieri created at 2009-10-29 17:23:13
 
 I think that #7316 is the same issue, but the patch is here, so we should close the other one as a duplicate.
 
@@ -77,7 +77,7 @@ archive/issue_comments_061577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7349#issuecomment-61577",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_061578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7349#issuecomment-61578",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_061579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7349",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7349#issuecomment-61579",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

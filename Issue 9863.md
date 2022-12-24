@@ -3,7 +3,7 @@
 archive/issues_009863.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  mvngu timdumol\n\nMinh Nguyen reported this about building a trial \"final\" 4.5.3 (essentially the same as 4.5.3.rc0) on rosemary.math, which is an Intel(R) Xeon(R) CPU X7460 `@` 2.66GHz system running RedHat Enterprise Linux (RHEL) Server 5.5\n\n```\nbuilding '_imaging' extension\ngcc -pthread -shared build/temp.linux-x86_64-2.6/_imaging.o build/temp.linux-x86\n_64-2.6/decode.o build/temp.linux-x86_64-2.6/encode.o build/temp.linux-x86_64-2.\n6/map.o build/temp.linux-x86_64-2.6/display.o build/temp.linux-x86_64-2.6/outlin\ne.o build/temp.linux-x86_64-2.6/path.o build/temp.linux-x86_64-2.6/libImaging/Ac\ncess.o build/temp.linux-x86_64-2.6/libImaging/Antialias.o build/temp.linux-x86_6\n4-2.6/libImaging/Bands.o build/temp.linux-x86_64-2.6/libImaging/BitDecode.o buil\nd/temp.linux-x86_64-2.6/libImaging/Blend.o build/temp.linux-x86_64-2.6/libImagin\ng/Chops.o build/temp.linux-x86_64-2.6/libImaging/Convert.o build/temp.linux-x86_\n64-2.6/libImaging/ConvertYCbCr.o build/temp.linux-x86_64-2.6/libImaging/Copy.o b\nuild/temp.linux-x86_64-2.6/libImaging/Crc32.o build/temp.linux-x86_64-2.6/libIma\nging/Crop.o build/temp.linux-x86_64-2.6/libImaging/Dib.o build/temp.linux-x86_64\n-2.6/libImaging/Draw.o build/temp.linux-x86_64-2.6/libImaging/Effects.o build/te\nmp.linux-x86_64-2.6/libImaging/EpsEncode.o build/temp.linux-x86_64-2.6/libImagin\ng/File.o build/temp.linux-x86_64-2.6/libImaging/Fill.o build/temp.linux-x86_64-2\n.6/libImaging/Filter.o build/temp.linux-x86_64-2.6/libImaging/FliDecode.o build/\ntemp.linux-x86_64-2.6/libImaging/Geometry.o build/temp.linux-x86_64-2.6/libImagi\nng/GetBBox.o build/temp.linux-x86_64-2.6/libImaging/GifDecode.o build/temp.linux\n-x86_64-2.6/libImaging/GifEncode.o build/temp.linux-x86_64-2.6/libImaging/HexDec\node.o build/temp.linux-x86_64-2.6/libImaging/Histo.o build/temp.linux-x86_64-2.6\n/libImaging/JpegDecode.o build/temp.linux-x86_64-2.6/libImaging/JpegEncode.o bui\nld/temp.linux-x86_64-2.6/libImaging/LzwDecode.o build/temp.linux-x86_64-2.6/libI\nmaging/Matrix.o build/temp.linux-x86_64-2.6/libImaging/ModeFilter.o build/temp.l\ninux-x86_64-2.6/libImaging/MspDecode.o build/temp.linux-x86_64-2.6/libImaging/Ne\ngative.o build/temp.linux-x86_64-2.6/libImaging/Offset.o build/temp.linux-x86_64\n-2.6/libImaging/Pack.o build/temp.linux-x86_64-2.6/libImaging/PackDecode.o build\n/temp.linux-x86_64-2.6/libImaging/Palette.o build/temp.linux-x86_64-2.6/libImagi\nng/Paste.o build/temp.linux-x86_64-2.6/libImaging/Quant.o build/temp.linux-x86_6\n4-2.6/libImaging/QuantHash.o build/temp.linux-x86_64-2.6/libImaging/QuantHeap.o \nbuild/temp.linux-x86_64-2.6/libImaging/PcdDecode.o build/temp.linux-x86_64-2.6/l\nibImaging/PcxDecode.o build/temp.linux-x86_64-2.6/libImaging/PcxEncode.o build/t\nemp.linux-x86_64-2.6/libImaging/Point.o build/temp.linux-x86_64-2.6/libImaging/R\nankFilter.o build/temp.linux-x86_64-2.6/libImaging/RawDecode.o build/temp.linux-\nx86_64-2.6/libImaging/RawEncode.o build/temp.linux-x86_64-2.6/libImaging/Storage\n.o build/temp.linux-x86_64-2.6/libImaging/SunRleDecode.o build/temp.linux-x86_64\n-2.6/libImaging/TgaRleDecode.o build/temp.linux-x86_64-2.6/libImaging/Unpack.o b\nuild/temp.linux-x86_64-2.6/libImaging/UnpackYCC.o build/temp.linux-x86_64-2.6/li\nbImaging/XbmDecode.o build/temp.linux-x86_64-2.6/libImaging/XbmEncode.o build/te\nmp.linux-x86_64-2.6/libImaging/ZipDecode.o build/temp.linux-x86_64-2.6/libImagin\ng/ZipEncode.o -L/usr/local/lib -L/home/wstein/mvngu/sage-4.5.3/local/lib -L/usr/\nlib -L/home/wstein/mvngu/sage-4.5.3/local/lib -ljpeg -lz -lpython2.6 -o build/li\nb.linux-x86_64-2.6/_imaging.so\ngcc -O3 -g -fPIC -I. -I/home/wstein/mvngu/sage-4.5.3/local/include -I/home/wstei\nn/mvngu/sage-4.5.3/local/include  -DHAVE_CONFIG_H -c omList.c\n/usr/bin/ld: skipping incompatible /usr/lib/libjpeg.so when searching for -ljpeg\n/usr/bin/ld: /usr/local/lib/libpython2.6.a(abstract.o): relocation R_X86_64_32 a\ngainst `a local symbol' can not be used when making a shared object; recompile w\nith -fPIC\n/usr/local/lib/libpython2.6.a: could not read symbols: Bad value\ncollect2: ld returned 1 exit status\nerror: command 'gcc' failed with exit status 1\nError building PIL: 'Error installing PIL'\n\nreal    0m10.654s\nuser    0m8.426s\nsys     0m2.141s\nsage: An error occurred while installing pil-1.1.6.p2\n```\n\nThe full build log is [here](http://wiki.sagemath.org/devel/BuildFarm/sage-4.5.3?action=AttachFile&do=get&target=rosemary.math-build.log.bz2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9864\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  mvngu @TimDumol\n\nMinh Nguyen reported this about building a trial \"final\" 4.5.3 (essentially the same as 4.5.3.rc0) on rosemary.math, which is an Intel(R) Xeon(R) CPU X7460 `@` 2.66GHz system running RedHat Enterprise Linux (RHEL) Server 5.5\n\n```\nbuilding '_imaging' extension\ngcc -pthread -shared build/temp.linux-x86_64-2.6/_imaging.o build/temp.linux-x86\n_64-2.6/decode.o build/temp.linux-x86_64-2.6/encode.o build/temp.linux-x86_64-2.\n6/map.o build/temp.linux-x86_64-2.6/display.o build/temp.linux-x86_64-2.6/outlin\ne.o build/temp.linux-x86_64-2.6/path.o build/temp.linux-x86_64-2.6/libImaging/Ac\ncess.o build/temp.linux-x86_64-2.6/libImaging/Antialias.o build/temp.linux-x86_6\n4-2.6/libImaging/Bands.o build/temp.linux-x86_64-2.6/libImaging/BitDecode.o buil\nd/temp.linux-x86_64-2.6/libImaging/Blend.o build/temp.linux-x86_64-2.6/libImagin\ng/Chops.o build/temp.linux-x86_64-2.6/libImaging/Convert.o build/temp.linux-x86_\n64-2.6/libImaging/ConvertYCbCr.o build/temp.linux-x86_64-2.6/libImaging/Copy.o b\nuild/temp.linux-x86_64-2.6/libImaging/Crc32.o build/temp.linux-x86_64-2.6/libIma\nging/Crop.o build/temp.linux-x86_64-2.6/libImaging/Dib.o build/temp.linux-x86_64\n-2.6/libImaging/Draw.o build/temp.linux-x86_64-2.6/libImaging/Effects.o build/te\nmp.linux-x86_64-2.6/libImaging/EpsEncode.o build/temp.linux-x86_64-2.6/libImagin\ng/File.o build/temp.linux-x86_64-2.6/libImaging/Fill.o build/temp.linux-x86_64-2\n.6/libImaging/Filter.o build/temp.linux-x86_64-2.6/libImaging/FliDecode.o build/\ntemp.linux-x86_64-2.6/libImaging/Geometry.o build/temp.linux-x86_64-2.6/libImagi\nng/GetBBox.o build/temp.linux-x86_64-2.6/libImaging/GifDecode.o build/temp.linux\n-x86_64-2.6/libImaging/GifEncode.o build/temp.linux-x86_64-2.6/libImaging/HexDec\node.o build/temp.linux-x86_64-2.6/libImaging/Histo.o build/temp.linux-x86_64-2.6\n/libImaging/JpegDecode.o build/temp.linux-x86_64-2.6/libImaging/JpegEncode.o bui\nld/temp.linux-x86_64-2.6/libImaging/LzwDecode.o build/temp.linux-x86_64-2.6/libI\nmaging/Matrix.o build/temp.linux-x86_64-2.6/libImaging/ModeFilter.o build/temp.l\ninux-x86_64-2.6/libImaging/MspDecode.o build/temp.linux-x86_64-2.6/libImaging/Ne\ngative.o build/temp.linux-x86_64-2.6/libImaging/Offset.o build/temp.linux-x86_64\n-2.6/libImaging/Pack.o build/temp.linux-x86_64-2.6/libImaging/PackDecode.o build\n/temp.linux-x86_64-2.6/libImaging/Palette.o build/temp.linux-x86_64-2.6/libImagi\nng/Paste.o build/temp.linux-x86_64-2.6/libImaging/Quant.o build/temp.linux-x86_6\n4-2.6/libImaging/QuantHash.o build/temp.linux-x86_64-2.6/libImaging/QuantHeap.o \nbuild/temp.linux-x86_64-2.6/libImaging/PcdDecode.o build/temp.linux-x86_64-2.6/l\nibImaging/PcxDecode.o build/temp.linux-x86_64-2.6/libImaging/PcxEncode.o build/t\nemp.linux-x86_64-2.6/libImaging/Point.o build/temp.linux-x86_64-2.6/libImaging/R\nankFilter.o build/temp.linux-x86_64-2.6/libImaging/RawDecode.o build/temp.linux-\nx86_64-2.6/libImaging/RawEncode.o build/temp.linux-x86_64-2.6/libImaging/Storage\n.o build/temp.linux-x86_64-2.6/libImaging/SunRleDecode.o build/temp.linux-x86_64\n-2.6/libImaging/TgaRleDecode.o build/temp.linux-x86_64-2.6/libImaging/Unpack.o b\nuild/temp.linux-x86_64-2.6/libImaging/UnpackYCC.o build/temp.linux-x86_64-2.6/li\nbImaging/XbmDecode.o build/temp.linux-x86_64-2.6/libImaging/XbmEncode.o build/te\nmp.linux-x86_64-2.6/libImaging/ZipDecode.o build/temp.linux-x86_64-2.6/libImagin\ng/ZipEncode.o -L/usr/local/lib -L/home/wstein/mvngu/sage-4.5.3/local/lib -L/usr/\nlib -L/home/wstein/mvngu/sage-4.5.3/local/lib -ljpeg -lz -lpython2.6 -o build/li\nb.linux-x86_64-2.6/_imaging.so\ngcc -O3 -g -fPIC -I. -I/home/wstein/mvngu/sage-4.5.3/local/include -I/home/wstei\nn/mvngu/sage-4.5.3/local/include  -DHAVE_CONFIG_H -c omList.c\n/usr/bin/ld: skipping incompatible /usr/lib/libjpeg.so when searching for -ljpeg\n/usr/bin/ld: /usr/local/lib/libpython2.6.a(abstract.o): relocation R_X86_64_32 a\ngainst `a local symbol' can not be used when making a shared object; recompile w\nith -fPIC\n/usr/local/lib/libpython2.6.a: could not read symbols: Bad value\ncollect2: ld returned 1 exit status\nerror: command 'gcc' failed with exit status 1\nError building PIL: 'Error installing PIL'\n\nreal    0m10.654s\nuser    0m8.426s\nsys     0m2.141s\nsage: An error occurred while installing pil-1.1.6.p2\n```\n\nThe full build log is [here](http://wiki.sagemath.org/devel/BuildFarm/sage-4.5.3?action=AttachFile&do=get&target=rosemary.math-build.log.bz2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9864\n\n",
     "created_at": "2010-09-07T06:52:51Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_009863.json:
     "title": "Error building PIL on RHEL Server 5.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9863",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  mvngu timdumol
+CC:  mvngu @TimDumol
 
 Minh Nguyen reported this about building a trial "final" 4.5.3 (essentially the same as 4.5.3.rc0) on rosemary.math, which is an Intel(R) Xeon(R) CPU X7460 `@` 2.66GHz system running RedHat Enterprise Linux (RHEL) Server 5.5
 
@@ -198,7 +198,7 @@ archive/issue_comments_097401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97401",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -321,7 +321,7 @@ archive/issue_comments_097403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97403",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -401,7 +401,7 @@ archive/issue_comments_097407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97407",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -419,7 +419,7 @@ archive/issue_comments_097408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97408",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -486,7 +486,7 @@ archive/issue_comments_097410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97410",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -506,7 +506,7 @@ archive/issue_comments_097411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97411",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -531,7 +531,7 @@ archive/issue_comments_097412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97412",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -549,7 +549,7 @@ archive/issue_comments_097413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97413",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -620,7 +620,7 @@ archive/issue_comments_097415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97415",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -671,7 +671,7 @@ archive/issue_comments_097417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97417",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -692,7 +692,7 @@ archive/issue_comments_097418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97418",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -716,7 +716,7 @@ archive/issue_comments_097419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97419",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -734,7 +734,7 @@ archive/issue_comments_097420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97420",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -752,7 +752,7 @@ archive/issue_comments_097421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97421",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -795,7 +795,7 @@ archive/issue_comments_097422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97422",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -813,7 +813,7 @@ archive/issue_comments_097423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97423",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -831,7 +831,7 @@ archive/issue_comments_097424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97424",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -880,7 +880,7 @@ archive/issue_comments_097425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97425",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -919,7 +919,7 @@ archive/issue_comments_097426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97426",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -937,7 +937,7 @@ archive/issue_comments_097427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97427",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -950,16 +950,16 @@ Changing status from new to needs_review.
 archive/issue_comments_097428.json:
 ```json
 {
-    "body": "Attachment [trac_9864-PIL_library_path.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-PIL_library_path.patch) by mpatel created at 2010-11-26 11:14:12\n\nI've added a spkg link to the description and attached an SPKG patch.  The main changes:\n\n* Comment out the `/usr/local/lib` line [comment:15 pointed out by Leif].\n* Use `patch` to apply the patch.\n\nThe package installs successfully and the long doctests pass for me on bsd (OSX 10.6-32), eno (Fedora 13-64), hawk (OpenSolaris 06.2009-32), redhawk (Ubuntu 10-64), rosemary (RHEL 5.5-64), and sage.math (Ubuntu 8-64).",
+    "body": "Attachment [trac_9864-PIL_library_path.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-PIL_library_path.patch) by @qed777 created at 2010-11-26 11:14:12\n\nI've added a spkg link to the description and attached an SPKG patch.  The main changes:\n\n* Comment out the `/usr/local/lib` line [comment:15 pointed out by Leif].\n* Use `patch` to apply the patch.\n\nThe package installs successfully and the long doctests pass for me on bsd (OSX 10.6-32), eno (Fedora 13-64), hawk (OpenSolaris 06.2009-32), redhawk (Ubuntu 10-64), rosemary (RHEL 5.5-64), and sage.math (Ubuntu 8-64).",
     "created_at": "2010-11-26T11:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97428",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_9864-PIL_library_path.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-PIL_library_path.patch) by mpatel created at 2010-11-26 11:14:12
+Attachment [trac_9864-PIL_library_path.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-PIL_library_path.patch) by @qed777 created at 2010-11-26 11:14:12
 
 I've added a spkg link to the description and attached an SPKG patch.  The main changes:
 
@@ -980,7 +980,7 @@ archive/issue_comments_097429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97429",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -998,7 +998,7 @@ archive/issue_comments_097430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97430",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1038,7 +1038,7 @@ archive/issue_comments_097431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97431",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1061,7 +1061,7 @@ archive/issue_comments_097432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97432",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1112,7 +1112,7 @@ archive/issue_comments_097434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97434",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1135,7 +1135,7 @@ archive/issue_comments_097435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97435",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1232,7 +1232,7 @@ archive/issue_comments_097437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97437",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1298,7 +1298,7 @@ archive/issue_comments_097440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97440",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1322,7 +1322,7 @@ archive/issue_comments_097441.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97441",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1343,7 +1343,7 @@ archive/issue_comments_097442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97442",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1369,7 +1369,7 @@ archive/issue_comments_097443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97443",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1387,7 +1387,7 @@ archive/issue_comments_097444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97444",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1400,16 +1400,16 @@ SPKG patch, based on Mitesh's p3. Upstream now vanilla, some clean-up.
 archive/issue_comments_097445.json:
 ```json
 {
-    "body": "Attachment [trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch) by leif created at 2010-12-01 03:36:37",
+    "body": "Attachment [trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch) by @nexttime created at 2010-12-01 03:36:37",
     "created_at": "2010-12-01T03:36:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97445",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch) by leif created at 2010-12-01 03:36:37
+Attachment [trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch) by @nexttime created at 2010-12-01 03:36:37
 
 
 
@@ -1423,7 +1423,7 @@ archive/issue_comments_097446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97446",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -1444,7 +1444,7 @@ archive/issue_comments_097447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97447",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1462,7 +1462,7 @@ archive/issue_comments_097448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97448",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1480,7 +1480,7 @@ archive/issue_comments_097449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97449",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1498,7 +1498,7 @@ archive/issue_comments_097450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97450",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

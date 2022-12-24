@@ -3,7 +3,7 @@
 archive/issues_009957.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  jhpalmieri leif jason kcrisman kini\n\nFrom the release notes:\n\nPython 2.7 was released on July 3rd, 2010.\n\nPython 2.7 is scheduled to be the last major version in the 2.x series before it moves into an extended maintenance period. This release contains many of the features that were first released in Python 3.1. Improvements in this release include:\n\n* An ordered dictionary type\n* New unittest features including test skipping, new assert methods, and test discovery\n* A much faster io module\n* Automatic numbering of fields in the str.format() method\n* Float repr improvements backported from 3.x\n* Tile support for Tkinter\n* A backport of the memoryview object from 3.x\n* Set literals\n* Set and dictionary comprehensions\n* Dictionary views\n* New syntax for nested with statements\n* The sysconfig module\n\nIssue created by migration from https://trac.sagemath.org/ticket/9958\n\n",
+    "body": "Assignee: tbd\n\nCC:  @jhpalmieri @nexttime @jasongrout @kcrisman @kini\n\nFrom the release notes:\n\nPython 2.7 was released on July 3rd, 2010.\n\nPython 2.7 is scheduled to be the last major version in the 2.x series before it moves into an extended maintenance period. This release contains many of the features that were first released in Python 3.1. Improvements in this release include:\n\n* An ordered dictionary type\n* New unittest features including test skipping, new assert methods, and test discovery\n* A much faster io module\n* Automatic numbering of fields in the str.format() method\n* Float repr improvements backported from 3.x\n* Tile support for Tkinter\n* A backport of the memoryview object from 3.x\n* Set literals\n* Set and dictionary comprehensions\n* Dictionary views\n* New syntax for nested with statements\n* The sysconfig module\n\nIssue created by migration from https://trac.sagemath.org/ticket/9958\n\n",
     "created_at": "2010-09-20T20:01:06Z",
     "labels": [
         "PLEASE CHANGE",
@@ -19,7 +19,7 @@ archive/issues_009957.json:
 ```
 Assignee: tbd
 
-CC:  jhpalmieri leif jason kcrisman kini
+CC:  @jhpalmieri @nexttime @jasongrout @kcrisman @kini
 
 From the release notes:
 
@@ -84,7 +84,7 @@ archive/issue_comments_099311.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99311",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_099312.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99312",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_099313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99313",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_099314.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99314",
-    "user": "novoselt"
+    "user": "@novoselt"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_099315.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99315",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -188,7 +188,7 @@ archive/issue_comments_099316.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99316",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -206,7 +206,7 @@ archive/issue_comments_099317.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99317",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_099318.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99318",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_099319.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99319",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -279,7 +279,7 @@ archive/issue_comments_099320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99320",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -297,7 +297,7 @@ archive/issue_comments_099321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99321",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_099322.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99322",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -333,7 +333,7 @@ archive/issue_comments_099323.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99323",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -353,7 +353,7 @@ archive/issue_comments_099324.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99324",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_099325.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99325",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -559,16 +559,16 @@ small patch to sage-doctest in sage_script to reenable sage's deprecation warnin
 archive/issue_comments_099326.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fix_cmp.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_cmp.patch) by fbissey created at 2011-04-15 00:16:32\n\nthis form of comparison is removed in python 2.6.5 and later, refreshed using --git.",
+    "body": "Attachment [trac_9958-fix_cmp.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_cmp.patch) by @kiwifb created at 2011-04-15 00:16:32\n\nthis form of comparison is removed in python 2.6.5 and later, refreshed using --git.",
     "created_at": "2011-04-15T00:16:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99326",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fix_cmp.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_cmp.patch) by fbissey created at 2011-04-15 00:16:32
+Attachment [trac_9958-fix_cmp.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_cmp.patch) by @kiwifb created at 2011-04-15 00:16:32
 
 this form of comparison is removed in python 2.6.5 and later, refreshed using --git.
 
@@ -584,7 +584,7 @@ archive/issue_comments_099327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99327",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -677,7 +677,7 @@ archive/issue_comments_099328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99328",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -695,7 +695,7 @@ archive/issue_comments_099329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99329",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -720,7 +720,7 @@ archive/issue_comments_099330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99330",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -738,7 +738,7 @@ archive/issue_comments_099331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99331",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -758,7 +758,7 @@ archive/issue_comments_099332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99332",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -776,7 +776,7 @@ archive/issue_comments_099333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99333",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -792,16 +792,16 @@ I will put the cmp patch in its own ticket would you review it?
 archive/issue_comments_099334.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fixing_numericalnoise-part1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1.patch) by fbissey created at 2011-04-28 03:19:06\n\nfix numerical noise part 1",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1.patch) by @kiwifb created at 2011-04-28 03:19:06\n\nfix numerical noise part 1",
     "created_at": "2011-04-28T03:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99334",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fixing_numericalnoise-part1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1.patch) by fbissey created at 2011-04-28 03:19:06
+Attachment [trac_9958-fixing_numericalnoise-part1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1.patch) by @kiwifb created at 2011-04-28 03:19:06
 
 fix numerical noise part 1
 
@@ -812,16 +812,16 @@ fix numerical noise part 1
 archive/issue_comments_099335.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fixing_numericalnoise-part3.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part3.patch) by fbissey created at 2011-04-28 03:19:37\n\nfix numerical noise part 3",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part3.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part3.patch) by @kiwifb created at 2011-04-28 03:19:37\n\nfix numerical noise part 3",
     "created_at": "2011-04-28T03:19:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99335",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fixing_numericalnoise-part3.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part3.patch) by fbissey created at 2011-04-28 03:19:37
+Attachment [trac_9958-fixing_numericalnoise-part3.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part3.patch) by @kiwifb created at 2011-04-28 03:19:37
 
 fix numerical noise part 3
 
@@ -837,7 +837,7 @@ archive/issue_comments_099336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99336",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -850,16 +850,16 @@ fix numerical noise part 4: the forgotten bits
 archive/issue_comments_099337.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fixing_colorspy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_colorspy.patch) by fbissey created at 2011-04-28 03:20:37\n\n49 failures in colors.py, numerical noise except one.",
+    "body": "Attachment [trac_9958-fixing_colorspy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_colorspy.patch) by @kiwifb created at 2011-04-28 03:20:37\n\n49 failures in colors.py, numerical noise except one.",
     "created_at": "2011-04-28T03:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99337",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fixing_colorspy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_colorspy.patch) by fbissey created at 2011-04-28 03:20:37
+Attachment [trac_9958-fixing_colorspy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_colorspy.patch) by @kiwifb created at 2011-04-28 03:20:37
 
 49 failures in colors.py, numerical noise except one.
 
@@ -870,16 +870,16 @@ Attachment [trac_9958-fixing_colorspy.patch](tarball://root/attachments/some-uui
 archive/issue_comments_099338.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fix-list_index.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-list_index.patch) by fbissey created at 2011-04-28 03:21:13\n\nfix the element reported by list index",
+    "body": "Attachment [trac_9958-fix-list_index.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-list_index.patch) by @kiwifb created at 2011-04-28 03:21:13\n\nfix the element reported by list index",
     "created_at": "2011-04-28T03:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99338",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fix-list_index.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-list_index.patch) by fbissey created at 2011-04-28 03:21:13
+Attachment [trac_9958-fix-list_index.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-list_index.patch) by @kiwifb created at 2011-04-28 03:21:13
 
 fix the element reported by list index
 
@@ -895,7 +895,7 @@ archive/issue_comments_099339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99339",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -908,16 +908,16 @@ odds and ends missed in the other patches
 archive/issue_comments_099340.json:
 ```json
 {
-    "body": "Attachment [trac_9958-mixedfix.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix.patch) by fbissey created at 2011-04-28 03:33:17\n\nI have attached some patches to fix all the noise for numerics and formatting changes. What's left should be looked at before patching.\n\nThere are several failures because hashes have changed but I cannot say it is allright to just change the doctest:\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\", line 2339:\n    sage: hash(R(-1)) \nExpected:\n    95367431640624\nGot:\n    1977800240\n**********************************************************************\n```\n\n\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/integer.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 2995:\n    sage: n = -920390823904823094890238490238484; n.__hash__()                                                                      \nExpected:                                                                                                                           \n    6874330978542788722                                                                                                             \nGot:                                                                                                                                \n    -2623069716                                                                                                                     \n**********************************************************************                                                              \nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3010:                                                           \n    sage: hash(n)                                                                                                                   \nExpected:                                                                                                                           \n    -9223372036854767616                                                                                                            \nGot:                                                                                                                                \n    8192                                                                                                                            \n**********************************************************************                                                              \nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3013:                                                           \n    sage: hash(n) == hash(int(n))                                                                                                   \nExpected:                                                                                                                           \n    True\nGot:\n    False\n**********************************************************************\n```\n\nThat hash(n) == hash(int(n)) is now false should be looked into carefully.\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 5645\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 22:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 6456\n**********************************************************************\n```\n\nI think that one is OK, just a change of order but a second opinion would be nice.\n\nFinally there are still three tests killed in libsingular's id_delete because a ring has been garbage collected even so there are some precautions in place for it:\n[http://groups.google.com/group/sage-devel/browse_thread/thread/8c165c887d6b9e54](http://groups.google.com/group/sage-devel/browse_thread/thread/8c165c887d6b9e54)\n\nNext we need an updated python spkg so that more people can play and even try the patchbot on it.",
+    "body": "Attachment [trac_9958-mixedfix.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix.patch) by @kiwifb created at 2011-04-28 03:33:17\n\nI have attached some patches to fix all the noise for numerics and formatting changes. What's left should be looked at before patching.\n\nThere are several failures because hashes have changed but I cannot say it is allright to just change the doctest:\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/padics/padic_capped_relative_element.pyx\", line 2339:\n    sage: hash(R(-1)) \nExpected:\n    95367431640624\nGot:\n    1977800240\n**********************************************************************\n```\n\n\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/rings/integer.pyx\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 2995:\n    sage: n = -920390823904823094890238490238484; n.__hash__()                                                                      \nExpected:                                                                                                                           \n    6874330978542788722                                                                                                             \nGot:                                                                                                                                \n    -2623069716                                                                                                                     \n**********************************************************************                                                              \nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3010:                                                           \n    sage: hash(n)                                                                                                                   \nExpected:                                                                                                                           \n    -9223372036854767616                                                                                                            \nGot:                                                                                                                                \n    8192                                                                                                                            \n**********************************************************************                                                              \nFile \"/usr/share/sage/devel/sage-main/sage/rings/integer.pyx\", line 3013:                                                           \n    sage: hash(n) == hash(int(n))                                                                                                   \nExpected:                                                                                                                           \n    True\nGot:\n    False\n**********************************************************************\n```\n\nThat hash(n) == hash(int(n)) is now false should be looked into carefully.\n\n```\nsage -t -long -force_lib \"devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\"\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 20:\n    sage: it.next()\nExpected:\n    word: 6456\nGot:\n    word: 5645\n**********************************************************************\nFile \"/usr/share/sage/devel/sage-main/sage/combinat/words/nfactor_enumerable_word.py\", line 22:\n    sage: it.next()\nExpected:\n    word: 5645\nGot:\n    word: 6456\n**********************************************************************\n```\n\nI think that one is OK, just a change of order but a second opinion would be nice.\n\nFinally there are still three tests killed in libsingular's id_delete because a ring has been garbage collected even so there are some precautions in place for it:\n[http://groups.google.com/group/sage-devel/browse_thread/thread/8c165c887d6b9e54](http://groups.google.com/group/sage-devel/browse_thread/thread/8c165c887d6b9e54)\n\nNext we need an updated python spkg so that more people can play and even try the patchbot on it.",
     "created_at": "2011-04-28T03:33:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99340",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-mixedfix.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix.patch) by fbissey created at 2011-04-28 03:33:17
+Attachment [trac_9958-mixedfix.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix.patch) by @kiwifb created at 2011-04-28 03:33:17
 
 I have attached some patches to fix all the noise for numerics and formatting changes. What's left should be looked at before patching.
 
@@ -1003,7 +1003,7 @@ archive/issue_comments_099341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99341",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1021,7 +1021,7 @@ archive/issue_comments_099342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99342",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1039,7 +1039,7 @@ archive/issue_comments_099343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99343",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1057,7 +1057,7 @@ archive/issue_comments_099344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99344",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1075,7 +1075,7 @@ archive/issue_comments_099345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99345",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1093,7 +1093,7 @@ archive/issue_comments_099346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99346",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1111,7 +1111,7 @@ archive/issue_comments_099347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99347",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1129,7 +1129,7 @@ archive/issue_comments_099348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99348",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1158,7 +1158,7 @@ archive/issue_comments_099349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99349",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1176,7 +1176,7 @@ archive/issue_comments_099350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99350",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1196,7 +1196,7 @@ archive/issue_comments_099351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99351",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1219,7 +1219,7 @@ archive/issue_comments_099352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99352",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1241,7 +1241,7 @@ archive/issue_comments_099353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99353",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1264,7 +1264,7 @@ archive/issue_comments_099354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99354",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1282,7 +1282,7 @@ archive/issue_comments_099355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99355",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1300,7 +1300,7 @@ archive/issue_comments_099356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99356",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1318,7 +1318,7 @@ archive/issue_comments_099357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99357",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1331,16 +1331,16 @@ Not strictly necessary but this file needed a scrub. (refreshed for syntax error
 archive/issue_comments_099358.json:
 ```json
 {
-    "body": "Attachment [trac_9958-build_module_listpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_module_listpy.patch) by fbissey created at 2011-05-22 12:33:24\n\nHad to redo trac_9958-build_module_listpy.patch again as I messed up the syntax of one bit.",
+    "body": "Attachment [trac_9958-build_module_listpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_module_listpy.patch) by @kiwifb created at 2011-05-22 12:33:24\n\nHad to redo trac_9958-build_module_listpy.patch again as I messed up the syntax of one bit.",
     "created_at": "2011-05-22T12:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99358",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-build_module_listpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_module_listpy.patch) by fbissey created at 2011-05-22 12:33:24
+Attachment [trac_9958-build_module_listpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_module_listpy.patch) by @kiwifb created at 2011-05-22 12:33:24
 
 Had to redo trac_9958-build_module_listpy.patch again as I messed up the syntax of one bit.
 
@@ -1356,7 +1356,7 @@ archive/issue_comments_099359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99359",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1377,7 +1377,7 @@ archive/issue_comments_099360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99360",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1395,7 +1395,7 @@ archive/issue_comments_099361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99361",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1416,7 +1416,7 @@ archive/issue_comments_099362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99362",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1434,7 +1434,7 @@ archive/issue_comments_099363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99363",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1491,7 +1491,7 @@ archive/issue_comments_099364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99364",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1517,7 +1517,7 @@ archive/issue_comments_099365.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99365",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1539,7 +1539,7 @@ archive/issue_comments_099366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99366",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1567,7 +1567,7 @@ archive/issue_comments_099367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99367",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1602,7 +1602,7 @@ archive/issue_comments_099368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99368",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1642,7 +1642,7 @@ archive/issue_comments_099369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99369",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1655,16 +1655,16 @@ let's not forget the hardcoded version of python in SConstruct for sage_clib
 archive/issue_comments_099370.json:
 ```json
 {
-    "body": "Attachment [trac_9958-build-sage_clib.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build-sage_clib.patch) by fbissey created at 2011-05-24 03:34:43\n\nI have updated trac_9958-build-sage_clib.patch it could now be splited in its own ticket. It enables sage-clib to be smarter about the python version used. It would figure it on its own. I am looking at doing the same for setup.py, anyone would review that in its own ticket? Once in, we could at least build sage against python2.6 or 2.7 without changes.",
+    "body": "Attachment [trac_9958-build-sage_clib.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build-sage_clib.patch) by @kiwifb created at 2011-05-24 03:34:43\n\nI have updated trac_9958-build-sage_clib.patch it could now be splited in its own ticket. It enables sage-clib to be smarter about the python version used. It would figure it on its own. I am looking at doing the same for setup.py, anyone would review that in its own ticket? Once in, we could at least build sage against python2.6 or 2.7 without changes.",
     "created_at": "2011-05-24T03:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99370",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-build-sage_clib.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build-sage_clib.patch) by fbissey created at 2011-05-24 03:34:43
+Attachment [trac_9958-build-sage_clib.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build-sage_clib.patch) by @kiwifb created at 2011-05-24 03:34:43
 
 I have updated trac_9958-build-sage_clib.patch it could now be splited in its own ticket. It enables sage-clib to be smarter about the python version used. It would figure it on its own. I am looking at doing the same for setup.py, anyone would review that in its own ticket? Once in, we could at least build sage against python2.6 or 2.7 without changes.
 
@@ -1680,7 +1680,7 @@ archive/issue_comments_099371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99371",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1693,16 +1693,16 @@ change needed in setup.py made it python version smart. I also scrubbed the debi
 archive/issue_comments_099372.json:
 ```json
 {
-    "body": "Attachment [trac_9958-build_setuppy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_setuppy.patch) by fbissey created at 2011-05-24 03:45:38\n\nOK I also made setup.py python version smart any volunteer to review a separate ticket?",
+    "body": "Attachment [trac_9958-build_setuppy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_setuppy.patch) by @kiwifb created at 2011-05-24 03:45:38\n\nOK I also made setup.py python version smart any volunteer to review a separate ticket?",
     "created_at": "2011-05-24T03:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99372",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-build_setuppy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_setuppy.patch) by fbissey created at 2011-05-24 03:45:38
+Attachment [trac_9958-build_setuppy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_setuppy.patch) by @kiwifb created at 2011-05-24 03:45:38
 
 OK I also made setup.py python version smart any volunteer to review a separate ticket?
 
@@ -1718,7 +1718,7 @@ archive/issue_comments_099373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99373",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1760,7 +1760,7 @@ archive/issue_comments_099374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99374",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -1777,16 +1777,16 @@ If the spkg you have is not this could you download again and see if that fixed 
 archive/issue_comments_099375.json:
 ```json
 {
-    "body": "Attachment [trac_9958-build_misc_cythonpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_misc_cythonpy.patch) by fbissey created at 2011-05-25 01:01:06\n\nSome minor changes. The biggest change is to the doctest which explicitly refereed to python2.6 also we have extra include folders in a doctest apparently. [updated 20110525]",
+    "body": "Attachment [trac_9958-build_misc_cythonpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_misc_cythonpy.patch) by @kiwifb created at 2011-05-25 01:01:06\n\nSome minor changes. The biggest change is to the doctest which explicitly refereed to python2.6 also we have extra include folders in a doctest apparently. [updated 20110525]",
     "created_at": "2011-05-25T01:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99375",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-build_misc_cythonpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_misc_cythonpy.patch) by fbissey created at 2011-05-25 01:01:06
+Attachment [trac_9958-build_misc_cythonpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-build_misc_cythonpy.patch) by @kiwifb created at 2011-05-25 01:01:06
 
 Some minor changes. The biggest change is to the doctest which explicitly refereed to python2.6 also we have extra include folders in a doctest apparently. [updated 20110525]
 
@@ -1802,7 +1802,7 @@ archive/issue_comments_099376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99376",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1822,7 +1822,7 @@ archive/issue_comments_099377.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99377",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1849,7 +1849,7 @@ archive/issue_comments_099378.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99378",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -1873,7 +1873,7 @@ archive/issue_comments_099379.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99379",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1891,7 +1891,7 @@ archive/issue_comments_099380.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99380",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -1919,7 +1919,7 @@ archive/issue_comments_099381.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99381",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -1937,7 +1937,7 @@ archive/issue_comments_099382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99382",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1972,7 +1972,7 @@ archive/issue_comments_099383.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99383",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2008,7 +2008,7 @@ archive/issue_comments_099384.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99384",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2021,16 +2021,16 @@ fix doctest in sage/misc/cython.py, needs to be applied after #11376.
 archive/issue_comments_099385.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fix-misc_cythonpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-misc_cythonpy.patch) by fbissey created at 2011-06-14 13:36:27\n\nUpdated trac_9958-fix-misc_cythonpy.patch to take into account changes in #11376. For some reason the numpy include line appears after the application of the other patches over there. Why it didn't appear before is a mistery.",
+    "body": "Attachment [trac_9958-fix-misc_cythonpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-misc_cythonpy.patch) by @kiwifb created at 2011-06-14 13:36:27\n\nUpdated trac_9958-fix-misc_cythonpy.patch to take into account changes in #11376. For some reason the numpy include line appears after the application of the other patches over there. Why it didn't appear before is a mistery.",
     "created_at": "2011-06-14T13:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99385",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fix-misc_cythonpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-misc_cythonpy.patch) by fbissey created at 2011-06-14 13:36:27
+Attachment [trac_9958-fix-misc_cythonpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-misc_cythonpy.patch) by @kiwifb created at 2011-06-14 13:36:27
 
 Updated trac_9958-fix-misc_cythonpy.patch to take into account changes in #11376. For some reason the numpy include line appears after the application of the other patches over there. Why it didn't appear before is a mistery.
 
@@ -2046,7 +2046,7 @@ archive/issue_comments_099386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99386",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2110,7 +2110,7 @@ archive/issue_comments_099387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99387",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2141,7 +2141,7 @@ archive/issue_comments_099388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99388",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2176,7 +2176,7 @@ archive/issue_comments_099389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99389",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2196,7 +2196,7 @@ archive/issue_comments_099390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99390",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2209,16 +2209,16 @@ fix numerical noise part 2 (refreshed against 4.7.1.alpha3 -20110625)
 archive/issue_comments_099391.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fixing_numericalnoise-part2.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part2.patch) by fbissey created at 2011-08-23 22:04:02\n\nOK. There are a few more patches needed for numerical and formatting noise in 4.7.2.alpha1 but now anyone should be able to upgrade python without a premade sage spkg. All fixes to be able to build sage against python-2.7 out of the box are in!",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part2.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part2.patch) by @kiwifb created at 2011-08-23 22:04:02\n\nOK. There are a few more patches needed for numerical and formatting noise in 4.7.2.alpha1 but now anyone should be able to upgrade python without a premade sage spkg. All fixes to be able to build sage against python-2.7 out of the box are in!",
     "created_at": "2011-08-23T22:04:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99391",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fixing_numericalnoise-part2.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part2.patch) by fbissey created at 2011-08-23 22:04:02
+Attachment [trac_9958-fixing_numericalnoise-part2.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part2.patch) by @kiwifb created at 2011-08-23 22:04:02
 
 OK. There are a few more patches needed for numerical and formatting noise in 4.7.2.alpha1 but now anyone should be able to upgrade python without a premade sage spkg. All fixes to be able to build sage against python-2.7 out of the box are in!
 
@@ -2234,7 +2234,7 @@ archive/issue_comments_099392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99392",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2259,7 +2259,7 @@ archive/issue_comments_099393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99393",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2280,7 +2280,7 @@ archive/issue_comments_099394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99394",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -2298,7 +2298,7 @@ archive/issue_comments_099395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99395",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2316,7 +2316,7 @@ archive/issue_comments_099396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99396",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2357,7 +2357,7 @@ archive/issue_comments_099397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99397",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2395,7 +2395,7 @@ archive/issue_comments_099398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99398",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -2459,7 +2459,7 @@ archive/issue_comments_099399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99399",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2477,7 +2477,7 @@ archive/issue_comments_099400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99400",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -2509,7 +2509,7 @@ archive/issue_comments_099401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99401",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2527,7 +2527,7 @@ archive/issue_comments_099402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99402",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2540,16 +2540,16 @@ I am wrong! Not maxima or pari, there is a patch for it in [attachment:trac_9958
 archive/issue_comments_099403.json:
 ```json
 {
-    "body": "Attachment [trac_9958-e_one_star.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-e_one_star.patch) by fbissey created at 2011-08-26 03:22:20\n\nfix numerical noise in e_one_star.py",
+    "body": "Attachment [trac_9958-e_one_star.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-e_one_star.patch) by @kiwifb created at 2011-08-26 03:22:20\n\nfix numerical noise in e_one_star.py",
     "created_at": "2011-08-26T03:22:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99403",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-e_one_star.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-e_one_star.patch) by fbissey created at 2011-08-26 03:22:20
+Attachment [trac_9958-e_one_star.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-e_one_star.patch) by @kiwifb created at 2011-08-26 03:22:20
 
 fix numerical noise in e_one_star.py
 
@@ -2565,7 +2565,7 @@ archive/issue_comments_099404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99404",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2578,16 +2578,16 @@ fix error message in finite_crystals.py
 archive/issue_comments_099405.json:
 ```json
 {
-    "body": "Attachment [trac_9958-finite_crystals.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-finite_crystals.patch) by fbissey created at 2011-08-26 03:23:18\n\nfix error message in symbolics/callable.py",
+    "body": "Attachment [trac_9958-finite_crystals.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-finite_crystals.patch) by @kiwifb created at 2011-08-26 03:23:18\n\nfix error message in symbolics/callable.py",
     "created_at": "2011-08-26T03:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99405",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-finite_crystals.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-finite_crystals.patch) by fbissey created at 2011-08-26 03:23:18
+Attachment [trac_9958-finite_crystals.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-finite_crystals.patch) by @kiwifb created at 2011-08-26 03:23:18
 
 fix error message in symbolics/callable.py
 
@@ -2598,16 +2598,16 @@ fix error message in symbolics/callable.py
 archive/issue_comments_099406.json:
 ```json
 {
-    "body": "Attachment [trac_9958-symbolic_callable.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-symbolic_callable.patch) by fbissey created at 2011-08-26 03:25:46\n\nAdded three new patches. I will rework the patches that need adjusting between 32 and 64 bits next.",
+    "body": "Attachment [trac_9958-symbolic_callable.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-symbolic_callable.patch) by @kiwifb created at 2011-08-26 03:25:46\n\nAdded three new patches. I will rework the patches that need adjusting between 32 and 64 bits next.",
     "created_at": "2011-08-26T03:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99406",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-symbolic_callable.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-symbolic_callable.patch) by fbissey created at 2011-08-26 03:25:46
+Attachment [trac_9958-symbolic_callable.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-symbolic_callable.patch) by @kiwifb created at 2011-08-26 03:25:46
 
 Added three new patches. I will rework the patches that need adjusting between 32 and 64 bits next.
 
@@ -2623,7 +2623,7 @@ archive/issue_comments_099407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99407",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2692,7 +2692,7 @@ archive/issue_comments_099408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99408",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -2718,7 +2718,7 @@ archive/issue_comments_099409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99409",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2747,7 +2747,7 @@ archive/issue_comments_099410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99410",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2802,7 +2802,7 @@ archive/issue_comments_099411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99411",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2842,7 +2842,7 @@ archive/issue_comments_099412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99412",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2875,7 +2875,7 @@ archive/issue_comments_099413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99413",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -2904,7 +2904,7 @@ archive/issue_comments_099414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99414",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -2934,7 +2934,7 @@ archive/issue_comments_099415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99415",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -2956,7 +2956,7 @@ archive/issue_comments_099416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99416",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3023,7 +3023,7 @@ archive/issue_comments_099417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99417",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3038,16 +3038,16 @@ Attaching short logs of rerun tests (all reproducable)...
 archive/issue_comments_099418.json:
 ```json
 {
-    "body": "Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log) by leif created at 2011-08-29 03:42:04\n\nPentium4 Prescott (SSE3 / PNI, 32-bit), GCC 4.5.1, native code, `-mfpmath=sse`, Ubuntu 9.04 x86",
+    "body": "Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log) by @nexttime created at 2011-08-29 03:42:04\n\nPentium4 Prescott (SSE3 / PNI, 32-bit), GCC 4.5.1, native code, `-mfpmath=sse`, Ubuntu 9.04 x86",
     "created_at": "2011-08-29T03:42:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99418",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log) by leif created at 2011-08-29 03:42:04
+Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun.log) by @nexttime created at 2011-08-29 03:42:04
 
 Pentium4 Prescott (SSE3 / PNI, 32-bit), GCC 4.5.1, native code, `-mfpmath=sse`, Ubuntu 9.04 x86
 
@@ -3063,7 +3063,7 @@ archive/issue_comments_099419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99419",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3076,16 +3076,16 @@ Pentium4 Prescott (SSE3 / PNI, 32-bit), GCC 4.5.1, native code, -mfpmath=sse, Ub
 archive/issue_comments_099420.json:
 ```json
 {
-    "body": "Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log) by leif created at 2011-08-29 04:35:45\n\nReplying to [comment:99 leif]:\n> Attaching short logs of rerun tests (all reproducable)...\n\nDone.\n\nHaha, the first segfault is an especially nice one:\n\n```\n...\n  10 tests in __main__.example_7\n   6 tests in __main__.example_8\n   7 tests in __main__.example_9\n511 tests in 55 items.\n511 passed and 0 failed.\nTest passed.\nSegmentation fault\n\t [9.8 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long -verbose \"devel/sage/sage/rings/morphism.pyx\"\nTotal time for all tests: 9.8 seconds\n\nreal\t0m10.013s\nuser\t0m6.980s\nsys\t0m1.068s\n```\n",
+    "body": "Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log) by @nexttime created at 2011-08-29 04:35:45\n\nReplying to [comment:99 leif]:\n> Attaching short logs of rerun tests (all reproducable)...\n\nDone.\n\nHaha, the first segfault is an especially nice one:\n\n```\n...\n  10 tests in __main__.example_7\n   6 tests in __main__.example_8\n   7 tests in __main__.example_9\n511 tests in 55 items.\n511 passed and 0 failed.\nTest passed.\nSegmentation fault\n\t [9.8 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long -verbose \"devel/sage/sage/rings/morphism.pyx\"\nTotal time for all tests: 9.8 seconds\n\nreal\t0m10.013s\nuser\t0m6.980s\nsys\t0m1.068s\n```\n",
     "created_at": "2011-08-29T04:35:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99420",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log) by leif created at 2011-08-29 04:35:45
+Attachment [Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log](tarball://root/attachments/some-uuid/ticket9958/Doctest_failures_Sage-4.7.2.alpha2_Linux_x86_SSE3-individual_tests_rerun-segfaults-verbose.log) by @nexttime created at 2011-08-29 04:35:45
 
 Replying to [comment:99 leif]:
 > Attaching short logs of rerun tests (all reproducable)...
@@ -3130,7 +3130,7 @@ archive/issue_comments_099421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99421",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3160,7 +3160,7 @@ archive/issue_comments_099422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99422",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3185,7 +3185,7 @@ archive/issue_comments_099423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99423",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3203,7 +3203,7 @@ archive/issue_comments_099424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99424",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3253,7 +3253,7 @@ archive/issue_comments_099425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99425",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3293,7 +3293,7 @@ archive/issue_comments_099426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99426",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -3329,7 +3329,7 @@ archive/issue_comments_099427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99427",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3366,7 +3366,7 @@ archive/issue_comments_099428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99428",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3384,7 +3384,7 @@ archive/issue_comments_099429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99429",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3397,16 +3397,16 @@ fixing numerical noise part 1 - updated 20110830
 archive/issue_comments_099430.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fixing_numericalnoise-part1_p1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p1.patch) by fbissey created at 2011-08-29 19:59:36\n\nUpdated the first patch for polyhedra.py, split transcendental.py in its own patch. I lowered the precision tested in the last numbers so that results from 32 and 64 bits are not different.",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part1_p1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p1.patch) by @kiwifb created at 2011-08-29 19:59:36\n\nUpdated the first patch for polyhedra.py, split transcendental.py in its own patch. I lowered the precision tested in the last numbers so that results from 32 and 64 bits are not different.",
     "created_at": "2011-08-29T19:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99430",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fixing_numericalnoise-part1_p1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p1.patch) by fbissey created at 2011-08-29 19:59:36
+Attachment [trac_9958-fixing_numericalnoise-part1_p1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p1.patch) by @kiwifb created at 2011-08-29 19:59:36
 
 Updated the first patch for polyhedra.py, split transcendental.py in its own patch. I lowered the precision tested in the last numbers so that results from 32 and 64 bits are not different.
 
@@ -3422,7 +3422,7 @@ archive/issue_comments_099431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99431",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3475,7 +3475,7 @@ archive/issue_comments_099432.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99432",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3493,7 +3493,7 @@ archive/issue_comments_099433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99433",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3506,16 +3506,16 @@ In polyhedra.py it looks like you have a problem with jmol printing 3D images to
 archive/issue_comments_099434.json:
 ```json
 {
-    "body": "Attachment [trac_9958-32_64bit_messages.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-32_64bit_messages.patch) by fbissey created at 2011-08-29 23:04:30\n\nfix some 32/64 bits messages",
+    "body": "Attachment [trac_9958-32_64bit_messages.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-32_64bit_messages.patch) by @kiwifb created at 2011-08-29 23:04:30\n\nfix some 32/64 bits messages",
     "created_at": "2011-08-29T23:04:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99434",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-32_64bit_messages.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-32_64bit_messages.patch) by fbissey created at 2011-08-29 23:04:30
+Attachment [trac_9958-32_64bit_messages.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-32_64bit_messages.patch) by @kiwifb created at 2011-08-29 23:04:30
 
 fix some 32/64 bits messages
 
@@ -3531,7 +3531,7 @@ archive/issue_comments_099435.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99435",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3544,16 +3544,16 @@ all fixes to real_mpfr.pyx split from everything else
 archive/issue_comments_099436.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fix-real_mpfr.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-real_mpfr.patch) by fbissey created at 2011-08-29 23:05:49\n\nsplit real_mpfr.pyx from the mixed fixes patch",
+    "body": "Attachment [trac_9958-fix-real_mpfr.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-real_mpfr.patch) by @kiwifb created at 2011-08-29 23:05:49\n\nsplit real_mpfr.pyx from the mixed fixes patch",
     "created_at": "2011-08-29T23:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99436",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fix-real_mpfr.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-real_mpfr.patch) by fbissey created at 2011-08-29 23:05:49
+Attachment [trac_9958-fix-real_mpfr.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-real_mpfr.patch) by @kiwifb created at 2011-08-29 23:05:49
 
 split real_mpfr.pyx from the mixed fixes patch
 
@@ -3564,16 +3564,16 @@ split real_mpfr.pyx from the mixed fixes patch
 archive/issue_comments_099437.json:
 ```json
 {
-    "body": "Attachment [trac_9958-mixedfix_p1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix_p1.patch) by fbissey created at 2011-08-29 23:09:33\n\nUpdated the patch set again. split real_mpfr.pyx from the mixedfix patch. The 32/64 bits issues reported is separate from the message that was already patched. Added a patch to fix 32/64 bit messages.",
+    "body": "Attachment [trac_9958-mixedfix_p1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix_p1.patch) by @kiwifb created at 2011-08-29 23:09:33\n\nUpdated the patch set again. split real_mpfr.pyx from the mixedfix patch. The 32/64 bits issues reported is separate from the message that was already patched. Added a patch to fix 32/64 bit messages.",
     "created_at": "2011-08-29T23:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99437",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-mixedfix_p1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix_p1.patch) by fbissey created at 2011-08-29 23:09:33
+Attachment [trac_9958-mixedfix_p1.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-mixedfix_p1.patch) by @kiwifb created at 2011-08-29 23:09:33
 
 Updated the patch set again. split real_mpfr.pyx from the mixedfix patch. The 32/64 bits issues reported is separate from the message that was already patched. Added a patch to fix 32/64 bit messages.
 
@@ -3589,7 +3589,7 @@ archive/issue_comments_099438.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99438",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3651,7 +3651,7 @@ archive/issue_comments_099439.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99439",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -3690,7 +3690,7 @@ archive/issue_comments_099440.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99440",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3726,16 +3726,16 @@ It's my fault for not noticing this difference between 32 and 64 bit results. It
 archive/issue_comments_099441.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fix_transcendental.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_transcendental.patch) by fbissey created at 2011-09-01 23:36:57\n\nfixing numerical noise in transcendental.py- split from numerical noise pt1 - updated 2011092",
+    "body": "Attachment [trac_9958-fix_transcendental.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_transcendental.patch) by @kiwifb created at 2011-09-01 23:36:57\n\nfixing numerical noise in transcendental.py- split from numerical noise pt1 - updated 2011092",
     "created_at": "2011-09-01T23:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99441",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fix_transcendental.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_transcendental.patch) by fbissey created at 2011-09-01 23:36:57
+Attachment [trac_9958-fix_transcendental.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_transcendental.patch) by @kiwifb created at 2011-09-01 23:36:57
 
 fixing numerical noise in transcendental.py- split from numerical noise pt1 - updated 2011092
 
@@ -3751,7 +3751,7 @@ archive/issue_comments_099442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99442",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3769,7 +3769,7 @@ archive/issue_comments_099443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99443",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -3790,7 +3790,7 @@ archive/issue_comments_099444.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99444",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3813,7 +3813,7 @@ archive/issue_comments_099445.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99445",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -3835,7 +3835,7 @@ archive/issue_comments_099446.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99446",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3863,7 +3863,7 @@ archive/issue_comments_099447.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99447",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3884,7 +3884,7 @@ archive/issue_comments_099448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99448",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -3902,7 +3902,7 @@ archive/issue_comments_099449.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99449",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -3947,7 +3947,7 @@ archive/issue_comments_099450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99450",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4002,7 +4002,7 @@ archive/issue_comments_099451.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99451",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4071,7 +4071,7 @@ archive/issue_comments_099452.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99452",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -4156,7 +4156,7 @@ archive/issue_comments_099453.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99453",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4174,7 +4174,7 @@ archive/issue_comments_099454.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99454",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4187,16 +4187,16 @@ Fix doctest in matrix_double_dense.pyx about junk
 archive/issue_comments_099455.json:
 ```json
 {
-    "body": "Attachment [trac_9958_junk_valueerror.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_junk_valueerror.patch) by fbissey created at 2011-11-02 22:38:55\n\nNew patch to fix the message about junk.",
+    "body": "Attachment [trac_9958_junk_valueerror.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_junk_valueerror.patch) by @kiwifb created at 2011-11-02 22:38:55\n\nNew patch to fix the message about junk.",
     "created_at": "2011-11-02T22:38:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99455",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958_junk_valueerror.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_junk_valueerror.patch) by fbissey created at 2011-11-02 22:38:55
+Attachment [trac_9958_junk_valueerror.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_junk_valueerror.patch) by @kiwifb created at 2011-11-02 22:38:55
 
 New patch to fix the message about junk.
 
@@ -4212,7 +4212,7 @@ archive/issue_comments_099456.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99456",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4230,7 +4230,7 @@ archive/issue_comments_099457.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99457",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4243,16 +4243,16 @@ fix the doctest on enumeration order for 64bit system
 archive/issue_comments_099458.json:
 ```json
 {
-    "body": "Attachment [trac_9958_enumerate64bit.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_enumerate64bit.patch) by fbissey created at 2011-11-03 02:15:25\n\nOne more patch added to fix combinat/words/nfactor_enumerable_word.py on 64 bit system. I believe is output is equivalent in both case so it is not important.",
+    "body": "Attachment [trac_9958_enumerate64bit.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_enumerate64bit.patch) by @kiwifb created at 2011-11-03 02:15:25\n\nOne more patch added to fix combinat/words/nfactor_enumerable_word.py on 64 bit system. I believe is output is equivalent in both case so it is not important.",
     "created_at": "2011-11-03T02:15:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99458",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958_enumerate64bit.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_enumerate64bit.patch) by fbissey created at 2011-11-03 02:15:25
+Attachment [trac_9958_enumerate64bit.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_enumerate64bit.patch) by @kiwifb created at 2011-11-03 02:15:25
 
 One more patch added to fix combinat/words/nfactor_enumerable_word.py on 64 bit system. I believe is output is equivalent in both case so it is not important.
 
@@ -4268,7 +4268,7 @@ archive/issue_comments_099459.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99459",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4286,7 +4286,7 @@ archive/issue_comments_099460.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99460",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4304,7 +4304,7 @@ archive/issue_comments_099461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99461",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4322,7 +4322,7 @@ archive/issue_comments_099462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99462",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4342,7 +4342,7 @@ archive/issue_comments_099463.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99463",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -4365,7 +4365,7 @@ archive/issue_comments_099464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99464",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -4663,7 +4663,7 @@ archive/issue_comments_099465.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99465",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4685,7 +4685,7 @@ archive/issue_comments_099466.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99466",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4708,7 +4708,7 @@ archive/issue_comments_099467.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99467",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4731,7 +4731,7 @@ archive/issue_comments_099468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99468",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4749,7 +4749,7 @@ archive/issue_comments_099469.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99469",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4767,7 +4767,7 @@ archive/issue_comments_099470.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99470",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4792,7 +4792,7 @@ archive/issue_comments_099471.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99471",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4824,7 +4824,7 @@ archive/issue_comments_099472.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99472",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4844,7 +4844,7 @@ archive/issue_comments_099473.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99473",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4864,7 +4864,7 @@ archive/issue_comments_099474.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99474",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4877,16 +4877,16 @@ fix pure assertErrors failures - updated for python-2.7.2
 archive/issue_comments_099475.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fix-pureAssertError.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-pureAssertError.patch) by fbissey created at 2011-11-24 21:34:44\n\nfix sage_unittest.py failures - updated for python-2.7.2",
+    "body": "Attachment [trac_9958-fix-pureAssertError.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-pureAssertError.patch) by @kiwifb created at 2011-11-24 21:34:44\n\nfix sage_unittest.py failures - updated for python-2.7.2",
     "created_at": "2011-11-24T21:34:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99475",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fix-pureAssertError.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-pureAssertError.patch) by fbissey created at 2011-11-24 21:34:44
+Attachment [trac_9958-fix-pureAssertError.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix-pureAssertError.patch) by @kiwifb created at 2011-11-24 21:34:44
 
 fix sage_unittest.py failures - updated for python-2.7.2
 
@@ -4897,16 +4897,16 @@ fix sage_unittest.py failures - updated for python-2.7.2
 archive/issue_comments_099476.json:
 ```json
 {
-    "body": "Attachment [trac_9958-sage_unittest.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-sage_unittest.patch) by fbissey created at 2011-11-24 21:35:26\n\nPatch set updated for python-2.7.2.",
+    "body": "Attachment [trac_9958-sage_unittest.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-sage_unittest.patch) by @kiwifb created at 2011-11-24 21:35:26\n\nPatch set updated for python-2.7.2.",
     "created_at": "2011-11-24T21:35:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99476",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-sage_unittest.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-sage_unittest.patch) by fbissey created at 2011-11-24 21:35:26
+Attachment [trac_9958-sage_unittest.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-sage_unittest.patch) by @kiwifb created at 2011-11-24 21:35:26
 
 Patch set updated for python-2.7.2.
 
@@ -4922,7 +4922,7 @@ archive/issue_comments_099477.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99477",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4942,7 +4942,7 @@ archive/issue_comments_099478.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99478",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -4965,7 +4965,7 @@ archive/issue_comments_099479.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99479",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -4988,7 +4988,7 @@ archive/issue_comments_099480.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99480",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5060,7 +5060,7 @@ archive/issue_comments_099481.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99481",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5078,7 +5078,7 @@ archive/issue_comments_099482.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99482",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -5096,7 +5096,7 @@ archive/issue_comments_099483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99483",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5126,7 +5126,7 @@ archive/issue_comments_099484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99484",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -5144,7 +5144,7 @@ archive/issue_comments_099485.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99485",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5168,7 +5168,7 @@ archive/issue_comments_099486.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99486",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5186,7 +5186,7 @@ archive/issue_comments_099487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99487",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5226,7 +5226,7 @@ archive/issue_comments_099488.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99488",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5247,7 +5247,7 @@ archive/issue_comments_099489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99489",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5265,7 +5265,7 @@ archive/issue_comments_099490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99490",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5285,7 +5285,7 @@ archive/issue_comments_099491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99491",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5323,7 +5323,7 @@ archive/issue_comments_099492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99492",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5341,7 +5341,7 @@ archive/issue_comments_099493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99493",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5359,7 +5359,7 @@ archive/issue_comments_099494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99494",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5422,7 +5422,7 @@ archive/issue_comments_099495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99495",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5440,7 +5440,7 @@ archive/issue_comments_099496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99496",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5460,7 +5460,7 @@ archive/issue_comments_099497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99497",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5478,7 +5478,7 @@ archive/issue_comments_099498.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99498",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5506,7 +5506,7 @@ archive/issue_comments_099499.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99499",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -5550,7 +5550,7 @@ archive/issue_comments_099500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99500",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5634,7 +5634,7 @@ archive/issue_comments_099501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99501",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5665,7 +5665,7 @@ archive/issue_comments_099502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99502",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5683,7 +5683,7 @@ archive/issue_comments_099503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99503",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -5704,7 +5704,7 @@ archive/issue_comments_099504.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99504",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -5810,7 +5810,7 @@ archive/issue_comments_099505.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99505",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5832,7 +5832,7 @@ archive/issue_comments_099506.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99506",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5845,16 +5845,16 @@ fixing numerical noise part 1 - updated for 4.8.alpha3
 archive/issue_comments_099507.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fixing_numericalnoise-part1_p2.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p2.patch) by fbissey created at 2011-12-06 00:55:47\n\nupdated the first patch and readded the transcendental patch to the list.",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part1_p2.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p2.patch) by @kiwifb created at 2011-12-06 00:55:47\n\nupdated the first patch and readded the transcendental patch to the list.",
     "created_at": "2011-12-06T00:55:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99507",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fixing_numericalnoise-part1_p2.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p2.patch) by fbissey created at 2011-12-06 00:55:47
+Attachment [trac_9958-fixing_numericalnoise-part1_p2.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p2.patch) by @kiwifb created at 2011-12-06 00:55:47
 
 updated the first patch and readded the transcendental patch to the list.
 
@@ -5870,7 +5870,7 @@ archive/issue_comments_099508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99508",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5890,16 +5890,16 @@ If we add that I don't see it on OS X x86 that looks bad. I also have an x86_64 
 archive/issue_comments_099509.json:
 ```json
 {
-    "body": "Attachment [trac_9958-gsl_integration.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-gsl_integration.patch) by fbissey created at 2011-12-06 01:37:15\n\nfix numerical noise in gsl/integration.pyx",
+    "body": "Attachment [trac_9958-gsl_integration.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-gsl_integration.patch) by @kiwifb created at 2011-12-06 01:37:15\n\nfix numerical noise in gsl/integration.pyx",
     "created_at": "2011-12-06T01:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99509",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-gsl_integration.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-gsl_integration.patch) by fbissey created at 2011-12-06 01:37:15
+Attachment [trac_9958-gsl_integration.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-gsl_integration.patch) by @kiwifb created at 2011-12-06 01:37:15
 
 fix numerical noise in gsl/integration.pyx
 
@@ -5910,16 +5910,16 @@ fix numerical noise in gsl/integration.pyx
 archive/issue_comments_099510.json:
 ```json
 {
-    "body": "Attachment [trac_9958-matrix_mod2e_dense.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-matrix_mod2e_dense.patch) by fbissey created at 2011-12-06 01:38:34\n\nfix numerical noise introduced by m4rie",
+    "body": "Attachment [trac_9958-matrix_mod2e_dense.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-matrix_mod2e_dense.patch) by @kiwifb created at 2011-12-06 01:38:34\n\nfix numerical noise introduced by m4rie",
     "created_at": "2011-12-06T01:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99510",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-matrix_mod2e_dense.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-matrix_mod2e_dense.patch) by fbissey created at 2011-12-06 01:38:34
+Attachment [trac_9958-matrix_mod2e_dense.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-matrix_mod2e_dense.patch) by @kiwifb created at 2011-12-06 01:38:34
 
 fix numerical noise introduced by m4rie
 
@@ -5935,7 +5935,7 @@ archive/issue_comments_099511.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99511",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5953,7 +5953,7 @@ archive/issue_comments_099512.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99512",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -5966,16 +5966,16 @@ Rebased the spkg against #12096.
 archive/issue_comments_099513.json:
 ```json
 {
-    "body": "Attachment [python-2.6.4.p12-2.7.2.p0.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.6.4.p12-2.7.2.p0.diff) by jdemeyer created at 2011-12-06 08:43:21\n\nDiff for the Python spkg, for review only",
+    "body": "Attachment [python-2.6.4.p12-2.7.2.p0.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.6.4.p12-2.7.2.p0.diff) by @jdemeyer created at 2011-12-06 08:43:21\n\nDiff for the Python spkg, for review only",
     "created_at": "2011-12-06T08:43:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99513",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [python-2.6.4.p12-2.7.2.p0.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.6.4.p12-2.7.2.p0.diff) by jdemeyer created at 2011-12-06 08:43:21
+Attachment [python-2.6.4.p12-2.7.2.p0.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.6.4.p12-2.7.2.p0.diff) by @jdemeyer created at 2011-12-06 08:43:21
 
 Diff for the Python spkg, for review only
 
@@ -5991,7 +5991,7 @@ archive/issue_comments_099514.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99514",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6009,7 +6009,7 @@ archive/issue_comments_099515.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99515",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6027,7 +6027,7 @@ archive/issue_comments_099516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99516",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6047,7 +6047,7 @@ archive/issue_comments_099517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99517",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -6122,7 +6122,7 @@ archive/issue_comments_099518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99518",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6140,7 +6140,7 @@ archive/issue_comments_099519.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99519",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -6215,7 +6215,7 @@ archive/issue_comments_099520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99520",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6235,7 +6235,7 @@ archive/issue_comments_099521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99521",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6253,7 +6253,7 @@ archive/issue_comments_099522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99522",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6271,7 +6271,7 @@ archive/issue_comments_099523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99523",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6286,16 +6286,16 @@ That would be great!  I would love to see this finished in time, such that the n
 archive/issue_comments_099524.json:
 ```json
 {
-    "body": "Attachment [trac_9958-suffix_trees-variations.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations.patch) by fbissey created at 2011-12-10 22:12:56\n\ntest against more valid dictionaries in suffix_trees",
+    "body": "Attachment [trac_9958-suffix_trees-variations.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations.patch) by @kiwifb created at 2011-12-10 22:12:56\n\ntest against more valid dictionaries in suffix_trees",
     "created_at": "2011-12-10T22:12:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99524",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-suffix_trees-variations.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations.patch) by fbissey created at 2011-12-10 22:12:56
+Attachment [trac_9958-suffix_trees-variations.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations.patch) by @kiwifb created at 2011-12-10 22:12:56
 
 test against more valid dictionaries in suffix_trees
 
@@ -6311,7 +6311,7 @@ archive/issue_comments_099525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99525",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6324,16 +6324,16 @@ fix all numerical noise in randstate
 archive/issue_comments_099526.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fix_randstate.pyx](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_randstate.pyx) by fbissey created at 2011-12-10 22:14:55\n\nfixing numerical noise part 1 - updated 20111211: separate randstate and eis_modn_series",
+    "body": "Attachment [trac_9958-fix_randstate.pyx](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_randstate.pyx) by @kiwifb created at 2011-12-10 22:14:55\n\nfixing numerical noise part 1 - updated 20111211: separate randstate and eis_modn_series",
     "created_at": "2011-12-10T22:14:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99526",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fix_randstate.pyx](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_randstate.pyx) by fbissey created at 2011-12-10 22:14:55
+Attachment [trac_9958-fix_randstate.pyx](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_randstate.pyx) by @kiwifb created at 2011-12-10 22:14:55
 
 fixing numerical noise part 1 - updated 20111211: separate randstate and eis_modn_series
 
@@ -6344,16 +6344,16 @@ fixing numerical noise part 1 - updated 20111211: separate randstate and eis_mod
 archive/issue_comments_099527.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fixing_numericalnoise-part1_p3.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p3.patch) by fbissey created at 2011-12-10 22:22:11\n\nupdating the patch set with a tentative solution for suffix_trees. It may not be exhaustive of all possible answers though. If we are going for it for the next release I can redo the python spkg to fix the lib/lib64 from #12131.\n\nPutting to need review :)",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part1_p3.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p3.patch) by @kiwifb created at 2011-12-10 22:22:11\n\nupdating the patch set with a tentative solution for suffix_trees. It may not be exhaustive of all possible answers though. If we are going for it for the next release I can redo the python spkg to fix the lib/lib64 from #12131.\n\nPutting to need review :)",
     "created_at": "2011-12-10T22:22:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99527",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fixing_numericalnoise-part1_p3.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p3.patch) by fbissey created at 2011-12-10 22:22:11
+Attachment [trac_9958-fixing_numericalnoise-part1_p3.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p3.patch) by @kiwifb created at 2011-12-10 22:22:11
 
 updating the patch set with a tentative solution for suffix_trees. It may not be exhaustive of all possible answers though. If we are going for it for the next release I can redo the python spkg to fix the lib/lib64 from #12131.
 
@@ -6371,7 +6371,7 @@ archive/issue_comments_099528.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99528",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6389,7 +6389,7 @@ archive/issue_comments_099529.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99529",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -6411,7 +6411,7 @@ archive/issue_comments_099530.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99530",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6429,7 +6429,7 @@ archive/issue_comments_099531.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99531",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6447,7 +6447,7 @@ archive/issue_comments_099532.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99532",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -6546,7 +6546,7 @@ archive/issue_comments_099533.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99533",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6564,7 +6564,7 @@ archive/issue_comments_099534.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99534",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6582,7 +6582,7 @@ archive/issue_comments_099535.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99535",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6597,16 +6597,16 @@ The last randstate.pyx one is definitely new, I am sure it didn't happen before.
 archive/issue_comments_099536.json:
 ```json
 {
-    "body": "Attachment [trac_9958-nfactor_enumerable_word-randomness.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-nfactor_enumerable_word-randomness.patch) by fbissey created at 2011-12-11 11:32:22\n\ntake into account the randomness of it.next sequence of call - put random in the right place this time.",
+    "body": "Attachment [trac_9958-nfactor_enumerable_word-randomness.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-nfactor_enumerable_word-randomness.patch) by @kiwifb created at 2011-12-11 11:32:22\n\ntake into account the randomness of it.next sequence of call - put random in the right place this time.",
     "created_at": "2011-12-11T11:32:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99536",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-nfactor_enumerable_word-randomness.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-nfactor_enumerable_word-randomness.patch) by fbissey created at 2011-12-11 11:32:22
+Attachment [trac_9958-nfactor_enumerable_word-randomness.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-nfactor_enumerable_word-randomness.patch) by @kiwifb created at 2011-12-11 11:32:22
 
 take into account the randomness of it.next sequence of call - put random in the right place this time.
 
@@ -6622,7 +6622,7 @@ archive/issue_comments_099537.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99537",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6640,7 +6640,7 @@ archive/issue_comments_099538.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99538",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6653,16 +6653,16 @@ I missed a line in randstate! And you cut the last digit of the line number Stev
 archive/issue_comments_099539.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fix_randstate.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_randstate.patch) by fbissey created at 2011-12-11 11:50:22\n\nfix all numerical noise in randstate",
+    "body": "Attachment [trac_9958-fix_randstate.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_randstate.patch) by @kiwifb created at 2011-12-11 11:50:22\n\nfix all numerical noise in randstate",
     "created_at": "2011-12-11T11:50:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99539",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fix_randstate.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_randstate.patch) by fbissey created at 2011-12-11 11:50:22
+Attachment [trac_9958-fix_randstate.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fix_randstate.patch) by @kiwifb created at 2011-12-11 11:50:22
 
 fix all numerical noise in randstate
 
@@ -6678,7 +6678,7 @@ archive/issue_comments_099540.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99540",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6696,7 +6696,7 @@ archive/issue_comments_099541.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99541",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6714,7 +6714,7 @@ archive/issue_comments_099542.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99542",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -6732,7 +6732,7 @@ archive/issue_comments_099543.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99543",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6752,7 +6752,7 @@ archive/issue_comments_099544.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99544",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6772,7 +6772,7 @@ archive/issue_comments_099545.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99545",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6860,7 +6860,7 @@ archive/issue_comments_099546.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99546",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -6880,7 +6880,7 @@ archive/issue_comments_099547.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99547",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -6898,7 +6898,7 @@ archive/issue_comments_099548.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99548",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -6920,7 +6920,7 @@ archive/issue_comments_099549.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99549",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -6947,7 +6947,7 @@ archive/issue_comments_099550.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99550",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -6960,16 +6960,16 @@ Fix machine dependant doctest in suffix tree
 archive/issue_comments_099551.json:
 ```json
 {
-    "body": "Attachment [trac_9958-suffix_trees-variations-sl.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations-sl.patch) by kcrisman created at 2011-12-13 18:23:56\n\n> > > Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.\n> > Is this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :)\n> Go ahead, I'm currently tackling other beasts...\nOkay, at least everything applies and builds from this and the two other tickets.  (Note that #11986 is listed as a dependency of **and** for #9958.)\n\nSo presumably sometime tomorrow I can report back.  So far six files having tested well...",
+    "body": "Attachment [trac_9958-suffix_trees-variations-sl.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations-sl.patch) by @kcrisman created at 2011-12-13 18:23:56\n\n> > > Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.\n> > Is this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :)\n> Go ahead, I'm currently tackling other beasts...\nOkay, at least everything applies and builds from this and the two other tickets.  (Note that #11986 is listed as a dependency of **and** for #9958.)\n\nSo presumably sometime tomorrow I can report back.  So far six files having tested well...",
     "created_at": "2011-12-13T18:23:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99551",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9958-suffix_trees-variations-sl.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations-sl.patch) by kcrisman created at 2011-12-13 18:23:56
+Attachment [trac_9958-suffix_trees-variations-sl.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-suffix_trees-variations-sl.patch) by @kcrisman created at 2011-12-13 18:23:56
 
 > > > Unfortunately, I'd say it is too early. We need Karl to test it on his old ppc OS X 10.4 mac and a run on solaris is also in order.
 > > Is this all based on 4.8.alpha3?  I can try to do this starting today.  Jeroen might be done before me, though :)
@@ -6990,7 +6990,7 @@ archive/issue_comments_099552.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99552",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7013,7 +7013,7 @@ archive/issue_comments_099553.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99553",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7026,16 +7026,16 @@ OK the upgrade of R in #12057 shipped with 4.8.alpha4 makes a small bit of patch
 archive/issue_comments_099554.json:
 ```json
 {
-    "body": "Attachment [trac_9958-fixing_numericalnoise-part1_p4.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p4.patch) by fbissey created at 2011-12-13 21:11:18\n\nfixing numerical noise part 1 - updated 20111214 for 4.8.alpha4",
+    "body": "Attachment [trac_9958-fixing_numericalnoise-part1_p4.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p4.patch) by @kiwifb created at 2011-12-13 21:11:18\n\nfixing numerical noise part 1 - updated 20111214 for 4.8.alpha4",
     "created_at": "2011-12-13T21:11:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99554",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958-fixing_numericalnoise-part1_p4.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p4.patch) by fbissey created at 2011-12-13 21:11:18
+Attachment [trac_9958-fixing_numericalnoise-part1_p4.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958-fixing_numericalnoise-part1_p4.patch) by @kiwifb created at 2011-12-13 21:11:18
 
 fixing numerical noise part 1 - updated 20111214 for 4.8.alpha4
 
@@ -7051,7 +7051,7 @@ archive/issue_comments_099555.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99555",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7069,7 +7069,7 @@ archive/issue_comments_099556.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99556",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -7102,7 +7102,7 @@ archive/issue_comments_099557.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99557",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7115,16 +7115,16 @@ I have seen it on my sage-on-gentoo test run but I hadn't tried yet on a vanilla
 archive/issue_comments_099558.json:
 ```json
 {
-    "body": "Attachment [trac_9958_fix_rpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_fix_rpy.patch) by fbissey created at 2011-12-14 03:20:50\n\nnumerical noise in interface/r.py updated for R-2.14.0",
+    "body": "Attachment [trac_9958_fix_rpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_fix_rpy.patch) by @kiwifb created at 2011-12-14 03:20:50\n\nnumerical noise in interface/r.py updated for R-2.14.0",
     "created_at": "2011-12-14T03:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99558",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [trac_9958_fix_rpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_fix_rpy.patch) by fbissey created at 2011-12-14 03:20:50
+Attachment [trac_9958_fix_rpy.patch](tarball://root/attachments/some-uuid/ticket9958/trac_9958_fix_rpy.patch) by @kiwifb created at 2011-12-14 03:20:50
 
 numerical noise in interface/r.py updated for R-2.14.0
 
@@ -7140,7 +7140,7 @@ archive/issue_comments_099559.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99559",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7158,7 +7158,7 @@ archive/issue_comments_099560.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99560",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -7178,7 +7178,7 @@ archive/issue_comments_099561.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99561",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7205,7 +7205,7 @@ archive/issue_comments_099562.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99562",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -7258,7 +7258,7 @@ archive/issue_comments_099563.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99563",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -7276,7 +7276,7 @@ archive/issue_comments_099564.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99564",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7303,7 +7303,7 @@ archive/issue_comments_099565.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99565",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -7327,7 +7327,7 @@ archive/issue_comments_099566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99566",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -7356,7 +7356,7 @@ archive/issue_comments_099567.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99567",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -7374,7 +7374,7 @@ archive/issue_comments_099568.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99568",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -7403,7 +7403,7 @@ archive/issue_comments_099569.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99569",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -7421,7 +7421,7 @@ archive/issue_comments_099570.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99570",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7439,7 +7439,7 @@ archive/issue_comments_099571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99571",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7457,7 +7457,7 @@ archive/issue_comments_099572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99572",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -7475,7 +7475,7 @@ archive/issue_comments_099573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99573",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7522,7 +7522,7 @@ archive/issue_comments_099574.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99574",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -7540,7 +7540,7 @@ archive/issue_comments_099575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99575",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -7560,7 +7560,7 @@ archive/issue_comments_099576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99576",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7581,7 +7581,7 @@ archive/issue_comments_099577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99577",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -7605,7 +7605,7 @@ archive/issue_comments_099578.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99578",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7623,7 +7623,7 @@ archive/issue_comments_099579.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99579",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -7641,7 +7641,7 @@ archive/issue_comments_099580.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99580",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -7659,7 +7659,7 @@ archive/issue_comments_099581.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99581",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7677,7 +7677,7 @@ archive/issue_comments_099582.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99582",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -7708,7 +7708,7 @@ archive/issue_comments_099583.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99583",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -7726,7 +7726,7 @@ archive/issue_comments_099584.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99584",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -7752,7 +7752,7 @@ archive/issue_comments_099585.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99585",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -7770,7 +7770,7 @@ archive/issue_comments_099586.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99586",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -7788,7 +7788,7 @@ archive/issue_comments_099587.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99587",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -7809,7 +7809,7 @@ archive/issue_comments_099588.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99588",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -7838,7 +7838,7 @@ archive/issue_comments_099589.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99589",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -7856,7 +7856,7 @@ archive/issue_comments_099590.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99590",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7879,7 +7879,7 @@ archive/issue_comments_099591.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99591",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7897,7 +7897,7 @@ archive/issue_comments_099592.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99592",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7915,7 +7915,7 @@ archive/issue_comments_099593.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99593",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -7942,7 +7942,7 @@ archive/issue_comments_099594.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99594",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -7972,7 +7972,7 @@ archive/issue_comments_099595.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99595",
-    "user": "strogdon"
+    "user": "@strogdon"
 }
 ```
 
@@ -7992,7 +7992,7 @@ archive/issue_comments_099596.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99596",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -8034,7 +8034,7 @@ archive/issue_comments_099597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99597",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -8077,7 +8077,7 @@ archive/issue_comments_099598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99598",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -8097,7 +8097,7 @@ archive/issue_comments_099599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99599",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -8110,16 +8110,16 @@ Changing status from needs_review to needs_work.
 archive/issue_comments_099600.json:
 ```json
 {
-    "body": "Attachment [python-2.7.2.p0.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.7.2.p0.diff) by jdemeyer created at 2012-01-04 10:40:54\n\nDiff for the Python spkg (without deleted files), for review only",
+    "body": "Attachment [python-2.7.2.p0.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.7.2.p0.diff) by @jdemeyer created at 2012-01-04 10:40:54\n\nDiff for the Python spkg (without deleted files), for review only",
     "created_at": "2012-01-04T10:40:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99600",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [python-2.7.2.p0.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.7.2.p0.diff) by jdemeyer created at 2012-01-04 10:40:54
+Attachment [python-2.7.2.p0.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.7.2.p0.diff) by @jdemeyer created at 2012-01-04 10:40:54
 
 Diff for the Python spkg (without deleted files), for review only
 
@@ -8135,7 +8135,7 @@ archive/issue_comments_099601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99601",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -8161,7 +8161,7 @@ archive/issue_comments_099602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99602",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -8179,7 +8179,7 @@ archive/issue_comments_099603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99603",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -8192,16 +8192,16 @@ Diff for the Python spkg 2.7.2.p0 -> 2.7.2.p1, for review only
 archive/issue_comments_099604.json:
 ```json
 {
-    "body": "Attachment [python-2.7.2.p0-p1.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.7.2.p0-p1.diff) by jdemeyer created at 2012-01-04 19:08:56\n\n**positive_review** to the spkg, modulo my changes in the 2.7.2.p1 package.",
+    "body": "Attachment [python-2.7.2.p0-p1.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.7.2.p0-p1.diff) by @jdemeyer created at 2012-01-04 19:08:56\n\n**positive_review** to the spkg, modulo my changes in the 2.7.2.p1 package.",
     "created_at": "2012-01-04T19:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99604",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [python-2.7.2.p0-p1.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.7.2.p0-p1.diff) by jdemeyer created at 2012-01-04 19:08:56
+Attachment [python-2.7.2.p0-p1.diff](tarball://root/attachments/some-uuid/ticket9958/python-2.7.2.p0-p1.diff) by @jdemeyer created at 2012-01-04 19:08:56
 
 **positive_review** to the spkg, modulo my changes in the 2.7.2.p1 package.
 
@@ -8217,7 +8217,7 @@ archive/issue_comments_099605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99605",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -8230,16 +8230,16 @@ Looks good to me. I didn't notice I missed a patch in the stuff I removed. Anywa
 archive/issue_comments_099606.json:
 ```json
 {
-    "body": "Attachment [9958_float_printing.patch](tarball://root/attachments/some-uuid/ticket9958/9958_float_printing.patch) by jdemeyer created at 2012-01-05 15:13:20",
+    "body": "Attachment [9958_float_printing.patch](tarball://root/attachments/some-uuid/ticket9958/9958_float_printing.patch) by @jdemeyer created at 2012-01-05 15:13:20",
     "created_at": "2012-01-05T15:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99606",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9958_float_printing.patch](tarball://root/attachments/some-uuid/ticket9958/9958_float_printing.patch) by jdemeyer created at 2012-01-05 15:13:20
+Attachment [9958_float_printing.patch](tarball://root/attachments/some-uuid/ticket9958/9958_float_printing.patch) by @jdemeyer created at 2012-01-05 15:13:20
 
 
 
@@ -8248,16 +8248,16 @@ Attachment [9958_float_printing.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_099607.json:
 ```json
 {
-    "body": "Attachment [9958_exceptions.patch](tarball://root/attachments/some-uuid/ticket9958/9958_exceptions.patch) by jdemeyer created at 2012-01-05 15:13:41",
+    "body": "Attachment [9958_exceptions.patch](tarball://root/attachments/some-uuid/ticket9958/9958_exceptions.patch) by @jdemeyer created at 2012-01-05 15:13:41",
     "created_at": "2012-01-05T15:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99607",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9958_exceptions.patch](tarball://root/attachments/some-uuid/ticket9958/9958_exceptions.patch) by jdemeyer created at 2012-01-05 15:13:41
+Attachment [9958_exceptions.patch](tarball://root/attachments/some-uuid/ticket9958/9958_exceptions.patch) by @jdemeyer created at 2012-01-05 15:13:41
 
 
 
@@ -8266,16 +8266,16 @@ Attachment [9958_exceptions.patch](tarball://root/attachments/some-uuid/ticket99
 archive/issue_comments_099608.json:
 ```json
 {
-    "body": "Attachment [9958_misc.patch](tarball://root/attachments/some-uuid/ticket9958/9958_misc.patch) by jdemeyer created at 2012-01-05 15:15:49\n\nFolded all the patches into only four patches.",
+    "body": "Attachment [9958_misc.patch](tarball://root/attachments/some-uuid/ticket9958/9958_misc.patch) by @jdemeyer created at 2012-01-05 15:15:49\n\nFolded all the patches into only four patches.",
     "created_at": "2012-01-05T15:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99608",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9958_misc.patch](tarball://root/attachments/some-uuid/ticket9958/9958_misc.patch) by jdemeyer created at 2012-01-05 15:15:49
+Attachment [9958_misc.patch](tarball://root/attachments/some-uuid/ticket9958/9958_misc.patch) by @jdemeyer created at 2012-01-05 15:15:49
 
 Folded all the patches into only four patches.
 
@@ -8291,7 +8291,7 @@ archive/issue_comments_099609.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99609",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -8312,7 +8312,7 @@ archive/issue_comments_099610.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99610",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -8330,7 +8330,7 @@ archive/issue_comments_099611.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99611",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -8353,7 +8353,7 @@ archive/issue_comments_099612.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99612",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -8371,7 +8371,7 @@ archive/issue_comments_099613.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99613",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -8392,7 +8392,7 @@ archive/issue_comments_099614.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99614",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -8410,7 +8410,7 @@ archive/issue_comments_099615.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99615",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -8425,16 +8425,16 @@ I overlooked that patch, it was not in the list of patches to be applied.  I agr
 archive/issue_comments_099616.json:
 ```json
 {
-    "body": "Attachment [9958_combinat.patch](tarball://root/attachments/some-uuid/ticket9958/9958_combinat.patch) by fbissey created at 2012-01-05 22:45:32\n\nReplying to [comment:279 jdemeyer]:\n> Replying to [comment:277 fbissey]:\n> > I didn't notice you had listed this particular patch. Why not use [attachment:trac_9958-suffix_trees-variations-sl.patch] from S\u00e9bastien Labb\u00e9 instead? It is more foolproof.\n> I overlooked that patch, it was not in the list of patches to be applied.  I agree it is better.\n\nIt was [http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273](http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273) but never mind we have it now.",
+    "body": "Attachment [9958_combinat.patch](tarball://root/attachments/some-uuid/ticket9958/9958_combinat.patch) by @kiwifb created at 2012-01-05 22:45:32\n\nReplying to [comment:279 jdemeyer]:\n> Replying to [comment:277 fbissey]:\n> > I didn't notice you had listed this particular patch. Why not use [attachment:trac_9958-suffix_trees-variations-sl.patch] from S\u00e9bastien Labb\u00e9 instead? It is more foolproof.\n> I overlooked that patch, it was not in the list of patches to be applied.  I agree it is better.\n\nIt was [http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273](http://trac.sagemath.org/sage_trac/ticket/9958?action=diff&version=273) but never mind we have it now.",
     "created_at": "2012-01-05T22:45:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99616",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
-Attachment [9958_combinat.patch](tarball://root/attachments/some-uuid/ticket9958/9958_combinat.patch) by fbissey created at 2012-01-05 22:45:32
+Attachment [9958_combinat.patch](tarball://root/attachments/some-uuid/ticket9958/9958_combinat.patch) by @kiwifb created at 2012-01-05 22:45:32
 
 Replying to [comment:279 jdemeyer]:
 > Replying to [comment:277 fbissey]:
@@ -8455,7 +8455,7 @@ archive/issue_comments_099617.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99617",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -8475,7 +8475,7 @@ archive/issue_comments_099618.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99618",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -8493,7 +8493,7 @@ archive/issue_comments_099619.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99619",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -8511,7 +8511,7 @@ archive/issue_comments_099620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99620",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -8533,7 +8533,7 @@ archive/issue_comments_099621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99621",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -8551,7 +8551,7 @@ archive/issue_comments_099622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99622",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -8577,7 +8577,7 @@ archive/issue_comments_099623.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99623",
-    "user": "fbissey"
+    "user": "@kiwifb"
 }
 ```
 
@@ -8595,7 +8595,7 @@ archive/issue_comments_099624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9957#issuecomment-99624",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

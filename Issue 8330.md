@@ -3,7 +3,7 @@
 archive/issues_008330.json:
 ```json
 {
-    "body": "Assignee: rhinton\n\nCC:  rlm jason ncohen\n\nKeywords: BipartiteGraph\n\nBipartiteGraph needs to hook delete_vertex() and delete_vertices().\n\n\n```\n```\n\n\nIt should also hook the add_vertex() and add_edge() (and similar) calls, but not sure of the right way to do this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8330\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout @nathanncohen\n\nKeywords: BipartiteGraph\n\nBipartiteGraph needs to hook delete_vertex() and delete_vertices().\n\n\n```\n```\n\n\nIt should also hook the add_vertex() and add_edge() (and similar) calls, but not sure of the right way to do this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8330\n\n",
     "created_at": "2010-02-22T21:23:20Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_008330.json:
     "title": "BipartiteGraph needs to hook delete_vertex() and delete_vertices()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8330",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: rhinton
+Assignee: @rhinton
 
-CC:  rlm jason ncohen
+CC:  @rlmill @jasongrout @nathanncohen
 
 Keywords: BipartiteGraph
 
@@ -48,7 +48,7 @@ archive/issue_comments_074173.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74173",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -66,7 +66,7 @@ archive/issue_comments_074174.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74174",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -84,7 +84,7 @@ archive/issue_comments_074175.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74175",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_074176.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74176",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -122,7 +122,7 @@ archive/issue_comments_074177.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74177",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_074178.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74178",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_074179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74179",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_074180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74180",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_074181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74181",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -209,16 +209,16 @@ REQUIRES #8421. Implements add/delete vertex/vertices and to_undirected to fix a
 archive/issue_comments_074182.json:
 ```json
 {
-    "body": "Attachment [trac_8330-bipartite-delete-vertex.patch](tarball://root/attachments/some-uuid/ticket8330/trac_8330-bipartite-delete-vertex.patch) by ncohen created at 2010-04-01 12:30:24\n\nHello !!!\n\nNice patch, applies and does its job... I fixed one or two things... If you think they are ok, you can set this ticket to \"positive review\" :-)\n\nNathann",
+    "body": "Attachment [trac_8330-bipartite-delete-vertex.patch](tarball://root/attachments/some-uuid/ticket8330/trac_8330-bipartite-delete-vertex.patch) by @nathanncohen created at 2010-04-01 12:30:24\n\nHello !!!\n\nNice patch, applies and does its job... I fixed one or two things... If you think they are ok, you can set this ticket to \"positive review\" :-)\n\nNathann",
     "created_at": "2010-04-01T12:30:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74182",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8330-bipartite-delete-vertex.patch](tarball://root/attachments/some-uuid/ticket8330/trac_8330-bipartite-delete-vertex.patch) by ncohen created at 2010-04-01 12:30:24
+Attachment [trac_8330-bipartite-delete-vertex.patch](tarball://root/attachments/some-uuid/ticket8330/trac_8330-bipartite-delete-vertex.patch) by @nathanncohen created at 2010-04-01 12:30:24
 
 Hello !!!
 
@@ -233,16 +233,16 @@ Nathann
 archive/issue_comments_074183.json:
 ```json
 {
-    "body": "Attachment [trac_8330-smallfixes.patch](tarball://root/attachments/some-uuid/ticket8330/trac_8330-smallfixes.patch) by ncohen created at 2010-04-15 14:25:50\n\nWell, it has been two weeks and I only fixed three lines, so let's say this ticket is positively reviewed ^^;\n\nNathann",
+    "body": "Attachment [trac_8330-smallfixes.patch](tarball://root/attachments/some-uuid/ticket8330/trac_8330-smallfixes.patch) by @nathanncohen created at 2010-04-15 14:25:50\n\nWell, it has been two weeks and I only fixed three lines, so let's say this ticket is positively reviewed ^^;\n\nNathann",
     "created_at": "2010-04-15T14:25:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74183",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_8330-smallfixes.patch](tarball://root/attachments/some-uuid/ticket8330/trac_8330-smallfixes.patch) by ncohen created at 2010-04-15 14:25:50
+Attachment [trac_8330-smallfixes.patch](tarball://root/attachments/some-uuid/ticket8330/trac_8330-smallfixes.patch) by @nathanncohen created at 2010-04-15 14:25:50
 
 Well, it has been two weeks and I only fixed three lines, so let's say this ticket is positively reviewed ^^;
 
@@ -260,7 +260,7 @@ archive/issue_comments_074184.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74184",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -278,7 +278,7 @@ archive/issue_comments_074185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74185",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -296,7 +296,7 @@ archive/issue_comments_074186.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8330",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8330#issuecomment-74186",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

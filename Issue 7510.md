@@ -3,7 +3,7 @@
 archive/issues_007510.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: Primes, is_finite\n\nPrimes has no methods `is_finite`. This breaks several thing including: \n\n```\nsage: contre_exemples = (p for p in Primes() and not is_prime(mersenne(p)))\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/averell/.sage/temp/tomahawk/25868/_home_averell__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/sage-4.2/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Set_generic.__nonzero__ (sage/structure/parent.c:14641)()\n\nAttributeError: 'Primes_with_category' object has no attribute 'is_finite'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7510\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: Primes, is_finite\n\nPrimes has no methods `is_finite`. This breaks several thing including: \n\n```\nsage: contre_exemples = (p for p in Primes() and not is_prime(mersenne(p)))\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/averell/.sage/temp/tomahawk/25868/_home_averell__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/sage-4.2/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Set_generic.__nonzero__ (sage/structure/parent.c:14641)()\n\nAttributeError: 'Primes_with_category' object has no attribute 'is_finite'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7510\n\n",
     "created_at": "2009-11-21T15:20:15Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_007510.json:
     "title": "Primes is missing is_finite.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7510",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: Primes, is_finite
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7510
 archive/issue_comments_063570.json:
 ```json
 {
-    "body": "Changing assignee from was to hivert.",
+    "body": "Changing assignee from @williamstein to @hivert.",
     "created_at": "2009-11-21T15:20:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7510#issuecomment-63570",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from was to hivert.
+Changing assignee from @williamstein to @hivert.
 
 
 
@@ -71,7 +71,7 @@ archive/issue_comments_063571.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7510#issuecomment-63571",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_063572.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7510#issuecomment-63572",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -107,7 +107,7 @@ archive/issue_comments_063573.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7510#issuecomment-63573",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -120,16 +120,16 @@ For the second example, don't you want an EnumeratedSet and not a FiniteEnumerat
 archive/issue_comments_063574.json:
 ```json
 {
-    "body": "Attachment [trac_7510-is_finite_categories.patch](tarball://root/attachments/some-uuid/ticket7510/trac_7510-is_finite_categories.patch) by hivert created at 2009-11-21 22:43:31",
+    "body": "Attachment [trac_7510-is_finite_categories.patch](tarball://root/attachments/some-uuid/ticket7510/trac_7510-is_finite_categories.patch) by @hivert created at 2009-11-21 22:43:31",
     "created_at": "2009-11-21T22:43:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7510#issuecomment-63574",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_7510-is_finite_categories.patch](tarball://root/attachments/some-uuid/ticket7510/trac_7510-is_finite_categories.patch) by hivert created at 2009-11-21 22:43:31
+Attachment [trac_7510-is_finite_categories.patch](tarball://root/attachments/some-uuid/ticket7510/trac_7510-is_finite_categories.patch) by @hivert created at 2009-11-21 22:43:31
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_063575.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7510#issuecomment-63575",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_063576.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7510#issuecomment-63576",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_063577.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7510",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7510#issuecomment-63577",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

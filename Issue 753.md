@@ -3,7 +3,7 @@
 archive/issues_000753.json:
 ```json
 {
-    "body": "Assignee: was\n\nFor all polynomials and mpolynomials\n\nIssue created by migration from https://trac.sagemath.org/ticket/753\n\n",
+    "body": "Assignee: @williamstein\n\nFor all polynomials and mpolynomials\n\nIssue created by migration from https://trac.sagemath.org/ticket/753\n\n",
     "created_at": "2007-09-25T18:30:04Z",
     "labels": [
         "calculus",
@@ -14,10 +14,10 @@ archive/issues_000753.json:
     "title": "derivative alias for diff",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/753",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 For all polynomials and mpolynomials
 
@@ -37,7 +37,7 @@ archive/issue_comments_004448.json:
     "issue": "https://github.com/sagemath/sagetest/issues/753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/753#issuecomment-4448",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -50,16 +50,16 @@ Changing status from new to assigned.
 archive/issue_comments_004449.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-11-30T23:36:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/753#issuecomment-4449",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -159,7 +159,7 @@ Changing status from assigned to new.
 archive/issue_comments_004453.json:
 ```json
 {
-    "body": "Changing assignee from mhansen to dmharvey.",
+    "body": "Changing assignee from @mwhansen to dmharvey.",
     "created_at": "2008-02-28T02:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/753",
     "type": "issue_comment",
@@ -168,7 +168,7 @@ archive/issue_comments_004453.json:
 }
 ```
 
-Changing assignee from mhansen to dmharvey.
+Changing assignee from @mwhansen to dmharvey.
 
 
 
@@ -260,7 +260,7 @@ archive/issue_comments_004458.json:
     "issue": "https://github.com/sagemath/sagetest/issues/753",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/753#issuecomment-4458",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

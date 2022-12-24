@@ -14,7 +14,7 @@ archive/issues_002960.json:
     "title": "remove devel/sage/sage/server1 from sage -- it's old and crufty demo code from two years ago.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2960",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2960
 archive/issue_comments_020418.json:
 ```json
 {
-    "body": "Attachment [sage-2960.patch](tarball://root/attachments/some-uuid/ticket2960/sage-2960.patch) by was created at 2008-04-19 22:02:35",
+    "body": "Attachment [sage-2960.patch](tarball://root/attachments/some-uuid/ticket2960/sage-2960.patch) by @williamstein created at 2008-04-19 22:02:35",
     "created_at": "2008-04-19T22:02:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2960#issuecomment-20418",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-2960.patch](tarball://root/attachments/some-uuid/ticket2960/sage-2960.patch) by was created at 2008-04-19 22:02:35
+Attachment [sage-2960.patch](tarball://root/attachments/some-uuid/ticket2960/sage-2960.patch) by @williamstein created at 2008-04-19 22:02:35
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_020419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2960",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2960#issuecomment-20419",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

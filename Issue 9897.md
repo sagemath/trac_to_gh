@@ -3,7 +3,7 @@
 archive/issues_009897.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  leif\n\n* Add a file `sage/libs/pari/declinl.pxi` for declarations of inline functions.\n  * Some clean up of `sage/libs/pari/decl.pxi`, in particular removing duplicate functions\n\nIssue created by migration from https://trac.sagemath.org/ticket/9898\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @nexttime\n\n* Add a file `sage/libs/pari/declinl.pxi` for declarations of inline functions.\n  * Some clean up of `sage/libs/pari/decl.pxi`, in particular removing duplicate functions\n\nIssue created by migration from https://trac.sagemath.org/ticket/9898\n\n",
     "created_at": "2010-09-11T13:24:02Z",
     "labels": [
         "interfaces",
@@ -14,12 +14,12 @@ archive/issues_009897.json:
     "title": "Clean up and add functions to sage/libs/pari/decl.pxi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9897",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  leif
+CC:  @nexttime
 
 * Add a file `sage/libs/pari/declinl.pxi` for declarations of inline functions.
   * Some clean up of `sage/libs/pari/decl.pxi`, in particular removing duplicate functions
@@ -40,7 +40,7 @@ archive/issue_comments_098396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9897#issuecomment-98396",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -58,7 +58,7 @@ archive/issue_comments_098397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9897#issuecomment-98397",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_098398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9897#issuecomment-98398",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -101,7 +101,7 @@ archive/issue_comments_098399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9897#issuecomment-98399",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -121,7 +121,7 @@ archive/issue_comments_098400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9897#issuecomment-98400",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -134,16 +134,16 @@ The `global t0` in `gequal_long()` is superfluous.
 archive/issue_comments_098401.json:
 ```json
 {
-    "body": "Attachment [9898_pari_decl.patch](tarball://root/attachments/some-uuid/ticket9898/9898_pari_decl.patch) by jdemeyer created at 2010-09-20 07:24:19\n\nDone.",
+    "body": "Attachment [9898_pari_decl.patch](tarball://root/attachments/some-uuid/ticket9898/9898_pari_decl.patch) by @jdemeyer created at 2010-09-20 07:24:19\n\nDone.",
     "created_at": "2010-09-20T07:24:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9897#issuecomment-98401",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9898_pari_decl.patch](tarball://root/attachments/some-uuid/ticket9898/9898_pari_decl.patch) by jdemeyer created at 2010-09-20 07:24:19
+Attachment [9898_pari_decl.patch](tarball://root/attachments/some-uuid/ticket9898/9898_pari_decl.patch) by @jdemeyer created at 2010-09-20 07:24:19
 
 Done.
 
@@ -159,7 +159,7 @@ archive/issue_comments_098402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9897#issuecomment-98402",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_098403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9897#issuecomment-98403",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -201,7 +201,7 @@ archive/issue_comments_098404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9897#issuecomment-98404",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_098405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9897#issuecomment-98405",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -234,16 +234,16 @@ Adds authors to files in sage/libs/pari, apply on top of 9898_pari_decl.patch
 archive/issue_comments_098406.json:
 ```json
 {
-    "body": "Attachment [9898_authors.patch](tarball://root/attachments/some-uuid/ticket9898/9898_authors.patch) by jdemeyer created at 2010-09-26 17:08:05\n\nReplying to [comment:10 leif]:\n> Perhaps one should mention that `pari/declinl.pxi` gets included by `pari/decl.pxi`.\nDone.\n\n> Add svn snapshot number?\nI don't think that is so relevant (those files would not look that much different for other SVN snapshot numbers). Besides, people can still look at the ticket #9343 for more information.",
+    "body": "Attachment [9898_authors.patch](tarball://root/attachments/some-uuid/ticket9898/9898_authors.patch) by @jdemeyer created at 2010-09-26 17:08:05\n\nReplying to [comment:10 leif]:\n> Perhaps one should mention that `pari/declinl.pxi` gets included by `pari/decl.pxi`.\nDone.\n\n> Add svn snapshot number?\nI don't think that is so relevant (those files would not look that much different for other SVN snapshot numbers). Besides, people can still look at the ticket #9343 for more information.",
     "created_at": "2010-09-26T17:08:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9897#issuecomment-98406",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9898_authors.patch](tarball://root/attachments/some-uuid/ticket9898/9898_authors.patch) by jdemeyer created at 2010-09-26 17:08:05
+Attachment [9898_authors.patch](tarball://root/attachments/some-uuid/ticket9898/9898_authors.patch) by @jdemeyer created at 2010-09-26 17:08:05
 
 Replying to [comment:10 leif]:
 > Perhaps one should mention that `pari/declinl.pxi` gets included by `pari/decl.pxi`.
@@ -264,7 +264,7 @@ archive/issue_comments_098407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9897#issuecomment-98407",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_098408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9897",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9897#issuecomment-98408",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

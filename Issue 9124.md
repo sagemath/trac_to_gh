@@ -3,7 +3,7 @@
 archive/issues_009124.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThis patch implements h-vectors for simplicial complexes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9124\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThis patch implements h-vectors for simplicial complexes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9124\n\n",
     "created_at": "2010-06-03T04:09:50Z",
     "labels": [
         "algebraic topology",
@@ -14,10 +14,10 @@ archive/issues_009124.json:
     "title": "h-vectors for simplicial complexes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9124",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 This patch implements h-vectors for simplicial complexes.
 
@@ -38,7 +38,7 @@ archive/issue_comments_084873.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9124#issuecomment-84873",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -51,16 +51,16 @@ Changing status from new to needs_review.
 archive/issue_comments_084874.json:
 ```json
 {
-    "body": "Attachment [trac_9124-h-vector.patch](tarball://root/attachments/some-uuid/ticket9124/trac_9124-h-vector.patch) by jhpalmieri created at 2010-06-03 04:14:38",
+    "body": "Attachment [trac_9124-h-vector.patch](tarball://root/attachments/some-uuid/ticket9124/trac_9124-h-vector.patch) by @jhpalmieri created at 2010-06-03 04:14:38",
     "created_at": "2010-06-03T04:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9124#issuecomment-84874",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9124-h-vector.patch](tarball://root/attachments/some-uuid/ticket9124/trac_9124-h-vector.patch) by jhpalmieri created at 2010-06-03 04:14:38
+Attachment [trac_9124-h-vector.patch](tarball://root/attachments/some-uuid/ticket9124/trac_9124-h-vector.patch) by @jhpalmieri created at 2010-06-03 04:14:38
 
 
 
@@ -110,7 +110,7 @@ archive/issue_comments_084877.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9124",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9124#issuecomment-84877",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

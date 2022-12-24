@@ -3,7 +3,7 @@
 archive/issues_008012.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  timdumol\n\n\n```\n    RealIntervalField(prec, sci_not, rnd):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8012\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @TimDumol\n\n\n```\n    RealIntervalField(prec, sci_not, rnd):\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8012\n\n",
     "created_at": "2010-01-20T10:48:14Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_008012.json:
     "title": "spurious argument in RIF documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8012",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: mvngu
 
-CC:  timdumol
+CC:  @TimDumol
 
 
 ```
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8012
 archive/issue_comments_070036.json:
 ```json
 {
-    "body": "Attachment [8012-RIF-doc.patch](tarball://root/attachments/some-uuid/ticket8012/8012-RIF-doc.patch) by robertwb created at 2010-01-20 10:49:19",
+    "body": "Attachment [8012-RIF-doc.patch](tarball://root/attachments/some-uuid/ticket8012/8012-RIF-doc.patch) by @robertwb created at 2010-01-20 10:49:19",
     "created_at": "2010-01-20T10:49:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8012#issuecomment-70036",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [8012-RIF-doc.patch](tarball://root/attachments/some-uuid/ticket8012/8012-RIF-doc.patch) by robertwb created at 2010-01-20 10:49:19
+Attachment [8012-RIF-doc.patch](tarball://root/attachments/some-uuid/ticket8012/8012-RIF-doc.patch) by @robertwb created at 2010-01-20 10:49:19
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_070037.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8012#issuecomment-70037",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_070038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8012#issuecomment-70038",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_070039.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8012",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8012#issuecomment-70039",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_008079.json:
     "title": "Better documentation for patching spgk's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8079",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 Assignee: mvngu
@@ -122,7 +122,7 @@ archive/issue_comments_070808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8079",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8079#issuecomment-70808",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003469.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  jason\n\n\n```\nsage: W = (ZZ^2).span([(1/2,1/2), (0,1)]); W\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1/2 1/2]\n[  0   1]\nsage: V = (ZZ^2).span([(1/2,1/2), (0,2)]); V\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1/2 1/2]\n[  0   2]\nsage: W(V.gen(0))\nTraceback (most recent call last):\n...\nTypeError: no coercion of this rational to integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3469\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n\n```\nsage: W = (ZZ^2).span([(1/2,1/2), (0,1)]); W\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1/2 1/2]\n[  0   1]\nsage: V = (ZZ^2).span([(1/2,1/2), (0,2)]); V\nFree module of degree 2 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1/2 1/2]\n[  0   2]\nsage: W(V.gen(0))\nTraceback (most recent call last):\n...\nTypeError: no coercion of this rational to integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3469\n\n",
     "created_at": "2008-06-19T07:29:53Z",
     "labels": [
         "linear algebra",
@@ -14,12 +14,12 @@ archive/issues_003469.json:
     "title": "Something funny with free modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3469",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  jason
+CC:  @jasongrout
 
 
 ```
@@ -56,7 +56,7 @@ archive/issue_comments_024461.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3469#issuecomment-24461",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_024462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3469#issuecomment-24462",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

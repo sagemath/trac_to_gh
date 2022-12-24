@@ -14,7 +14,7 @@ archive/issues_007446.json:
     "title": "include sagenb 0.4.3 in sage-4.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7446",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -39,7 +39,7 @@ archive/issue_comments_062683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7446#issuecomment-62683",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_062684.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7446#issuecomment-62684",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_062685.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7446",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7446#issuecomment-62685",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000056.json:
     "title": "fundamental speed issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/56",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -105,7 +105,7 @@ archive/issue_comments_000297.json:
     "issue": "https://github.com/sagemath/sagetest/issues/56",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/56#issuecomment-297",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_000298.json:
     "issue": "https://github.com/sagemath/sagetest/issues/56",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/56#issuecomment-298",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -161,7 +161,7 @@ archive/issue_comments_000299.json:
     "issue": "https://github.com/sagemath/sagetest/issues/56",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/56#issuecomment-299",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_000300.json:
     "issue": "https://github.com/sagemath/sagetest/issues/56",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/56#issuecomment-300",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_000301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/56",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/56#issuecomment-301",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

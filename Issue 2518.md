@@ -3,7 +3,7 @@
 archive/issues_002518.json:
 ```json
 {
-    "body": "Assignee: cwitty\n\nCC:  was mhansen robertwb\n\nFact is, several people have observed lisp.run's getting left running.\n\nIf *anybody* can find a 100% reliable way to replicate this problem, PLEASE LET US KNOW!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2518\n\n",
+    "body": "Assignee: cwitty\n\nCC:  @williamstein @mwhansen @robertwb\n\nFact is, several people have observed lisp.run's getting left running.\n\nIf *anybody* can find a 100% reliable way to replicate this problem, PLEASE LET US KNOW!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2518\n\n",
     "created_at": "2008-03-14T19:25:20Z",
     "labels": [
         "misc",
@@ -14,12 +14,12 @@ archive/issues_002518.json:
     "title": "improve the SAGE_ROOT/local/bin/sage-cleaner script so that it kills those damn lisp.run processes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2518",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty
 
-CC:  was mhansen robertwb
+CC:  @williamstein @mwhansen @robertwb
 
 Fact is, several people have observed lisp.run's getting left running.
 
@@ -129,7 +129,7 @@ archive/issue_comments_017180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2518#issuecomment-17180",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_017181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2518#issuecomment-17181",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_017182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2518#issuecomment-17182",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_017183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2518",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2518#issuecomment-17183",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

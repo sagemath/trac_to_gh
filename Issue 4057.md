@@ -3,7 +3,7 @@
 archive/issues_004057.json:
 ```json
 {
-    "body": "Assignee: was\n\nThings are different in notebook and console:\n\n* Because of underline trick, in notebook headings in docstring consists of only underline!\n* Source display in console would look better with additional new line char and one empty line after source output and before \"Constructor Docstring\", the docstring in console is better, underline trick works as expected, but there could also be one empty line before \"Constructor Docstring\"\n  * btw - is Constructor Docstring really needed? I think the source is enough and we don't have to include same docstring for every R function, it's already available as docstring for r interpreter itself... it's not included in docstring in notebook so I guess we could live without it, if it is the case, no need to add empty line before it!\n* getting source of R function through notebook by ?? don't work at all...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4057\n\n",
+    "body": "Assignee: @williamstein\n\nThings are different in notebook and console:\n\n* Because of underline trick, in notebook headings in docstring consists of only underline!\n* Source display in console would look better with additional new line char and one empty line after source output and before \"Constructor Docstring\", the docstring in console is better, underline trick works as expected, but there could also be one empty line before \"Constructor Docstring\"\n  * btw - is Constructor Docstring really needed? I think the source is enough and we don't have to include same docstring for every R function, it's already available as docstring for r interpreter itself... it's not included in docstring in notebook so I guess we could live without it, if it is the case, no need to add empty line before it!\n* getting source of R function through notebook by ?? don't work at all...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4057\n\n",
     "created_at": "2008-09-04T03:13:47Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_004057.json:
     "user": "aginiewicz"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Things are different in notebook and console:
 
@@ -191,7 +191,7 @@ Changing status from reopened to new.
 archive/issue_comments_029241.json:
 ```json
 {
-    "body": "Changing assignee from was to aginiewicz.",
+    "body": "Changing assignee from @williamstein to aginiewicz.",
     "created_at": "2008-09-04T04:15:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4057",
     "type": "issue_comment",
@@ -200,7 +200,7 @@ archive/issue_comments_029241.json:
 }
 ```
 
-Changing assignee from was to aginiewicz.
+Changing assignee from @williamstein to aginiewicz.
 
 
 
@@ -288,7 +288,7 @@ archive/issue_comments_029246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4057",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4057#issuecomment-29246",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -301,16 +301,16 @@ apply this and the patch right above this.
 archive/issue_comments_029247.json:
 ```json
 {
-    "body": "Attachment [sage-4057-part2.patch](tarball://root/attachments/some-uuid/ticket4057/sage-4057-part2.patch) by was created at 2008-11-27 18:32:09\n\nREFEREE REPORT:\n\nLooks good, but needs to *only* delete the underline in embedded mode.  I've attached a patch to do that.",
+    "body": "Attachment [sage-4057-part2.patch](tarball://root/attachments/some-uuid/ticket4057/sage-4057-part2.patch) by @williamstein created at 2008-11-27 18:32:09\n\nREFEREE REPORT:\n\nLooks good, but needs to *only* delete the underline in embedded mode.  I've attached a patch to do that.",
     "created_at": "2008-11-27T18:32:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4057",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4057#issuecomment-29247",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-4057-part2.patch](tarball://root/attachments/some-uuid/ticket4057/sage-4057-part2.patch) by was created at 2008-11-27 18:32:09
+Attachment [sage-4057-part2.patch](tarball://root/attachments/some-uuid/ticket4057/sage-4057-part2.patch) by @williamstein created at 2008-11-27 18:32:09
 
 REFEREE REPORT:
 

@@ -3,7 +3,7 @@
 archive/issues_007846.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was\n\nCopying a worksheet in Sage 4.3.1.alpha0 sometimes gives\n\n```python\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/twist.py\", line 795, in render\n            W = notebook.copy_worksheet(self.worksheet, self.username)\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/notebook.py\", line 719, in copy_worksheet\n            self._initialize_worksheet(ws, W)\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/notebook.py\", line 631, in _initialize_worksheet\n            shutil.copytree(cells, target)\n          File \"/home/apps/sage/local/lib/python/shutil.py\", line 177, in copytree\n            raise Error, errors\n        shutil.Error: [('/home/.sage/sage_notebook.sagenb/home/aaaa/21/cells/2/___code___.py', '/home/.sage/sage_notebook.sagenb/home/aaaa/28/cells/2/___code___.py', \"[Errno 2] No such file or directory: '/home/.sage/sage_notebook.sagenb/home/aaaa/21/cells/2/___code___.py'\")]\n\n```\n\n\nThis is a follow-up to #7514.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7846\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nCopying a worksheet in Sage 4.3.1.alpha0 sometimes gives\n\n```python\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/twist.py\", line 795, in render\n            W = notebook.copy_worksheet(self.worksheet, self.username)\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/notebook.py\", line 719, in copy_worksheet\n            self._initialize_worksheet(ws, W)\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/notebook.py\", line 631, in _initialize_worksheet\n            shutil.copytree(cells, target)\n          File \"/home/apps/sage/local/lib/python/shutil.py\", line 177, in copytree\n            raise Error, errors\n        shutil.Error: [('/home/.sage/sage_notebook.sagenb/home/aaaa/21/cells/2/___code___.py', '/home/.sage/sage_notebook.sagenb/home/aaaa/28/cells/2/___code___.py', \"[Errno 2] No such file or directory: '/home/.sage/sage_notebook.sagenb/home/aaaa/21/cells/2/___code___.py'\")]\n\n```\n\n\nThis is a follow-up to #7514.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7846\n\n",
     "created_at": "2010-01-05T03:27:06Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007846.json:
     "title": "Missing triple-secret ___code___.py files when copying a worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7846",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was
+CC:  @williamstein
 
 Copying a worksheet in Sage 4.3.1.alpha0 sometimes gives
 
@@ -55,7 +55,7 @@ archive/issue_comments_067958.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7846#issuecomment-67958",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_067959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7846#issuecomment-67959",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_067960.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7846#issuecomment-67960",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_067961.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7846#issuecomment-67961",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -122,16 +122,16 @@ Suppress `CODE_PY` symlinks.  sagenb repo.
 archive/issue_comments_067962.json:
 ```json
 {
-    "body": "Attachment [trac_7846-no_CODE_PY_symlinks.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks.patch) by mpatel created at 2010-01-05 06:35:09\n\nThe attached patch should work for copying and re-publishing worksheets --- both use `Notebook._initialize_worksheet`.  But we should cover\n\n```python\nfname = 'foo.txt'\nfd = open(fname, 'w')\nfd.write('bar')\nfd.close()\nprint os.listdir('.')\nimport time; time.sleep(3)\nos.unlink(fname)\nprint os.listdir('.')\n```\n\ntoo...",
+    "body": "Attachment [trac_7846-no_CODE_PY_symlinks.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks.patch) by @qed777 created at 2010-01-05 06:35:09\n\nThe attached patch should work for copying and re-publishing worksheets --- both use `Notebook._initialize_worksheet`.  But we should cover\n\n```python\nfname = 'foo.txt'\nfd = open(fname, 'w')\nfd.write('bar')\nfd.close()\nprint os.listdir('.')\nimport time; time.sleep(3)\nos.unlink(fname)\nprint os.listdir('.')\n```\n\ntoo...",
     "created_at": "2010-01-05T06:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7846#issuecomment-67962",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7846-no_CODE_PY_symlinks.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks.patch) by mpatel created at 2010-01-05 06:35:09
+Attachment [trac_7846-no_CODE_PY_symlinks.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks.patch) by @qed777 created at 2010-01-05 06:35:09
 
 The attached patch should work for copying and re-publishing worksheets --- both use `Notebook._initialize_worksheet`.  But we should cover
 
@@ -160,7 +160,7 @@ archive/issue_comments_067963.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7846#issuecomment-67963",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -191,16 +191,16 @@ shutil.copytree('foo', 'bar', symlinks=True)
 archive/issue_comments_067964.json:
 ```json
 {
-    "body": "Attachment [trac_7846-no_CODE_PY_symlinks_v2.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks_v2.patch) by mpatel created at 2010-01-05 08:13:45\n\nAlso ignore non-existent files.  Replaces previous.",
+    "body": "Attachment [trac_7846-no_CODE_PY_symlinks_v2.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks_v2.patch) by @qed777 created at 2010-01-05 08:13:45\n\nAlso ignore non-existent files.  Replaces previous.",
     "created_at": "2010-01-05T08:13:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7846#issuecomment-67964",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7846-no_CODE_PY_symlinks_v2.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks_v2.patch) by mpatel created at 2010-01-05 08:13:45
+Attachment [trac_7846-no_CODE_PY_symlinks_v2.patch](tarball://root/attachments/some-uuid/ticket7846/trac_7846-no_CODE_PY_symlinks_v2.patch) by @qed777 created at 2010-01-05 08:13:45
 
 Also ignore non-existent files.  Replaces previous.
 
@@ -216,7 +216,7 @@ archive/issue_comments_067965.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7846#issuecomment-67965",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_067966.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7846#issuecomment-67966",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -256,7 +256,7 @@ archive/issue_comments_067967.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7846#issuecomment-67967",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_067968.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7846#issuecomment-67968",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_067969.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7846#issuecomment-67969",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

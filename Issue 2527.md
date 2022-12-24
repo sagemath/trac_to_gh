@@ -3,7 +3,7 @@
 archive/issues_002527.json:
 ```json
 {
-    "body": "Assignee: was\n\nStart:\n\n```\nteragon:modular was$ sage -coverage congroup.py congroup_element.py \nSCORE congroup.py: 20% (14 of 68)\nSCORE congroup_element.py: 0% (0 of 10)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2527\n\n",
+    "body": "Assignee: @williamstein\n\nStart:\n\n```\nteragon:modular was$ sage -coverage congroup.py congroup_element.py \nSCORE congroup.py: 20% (14 of 68)\nSCORE congroup_element.py: 0% (0 of 10)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2527\n\n",
     "created_at": "2008-03-15T02:40:26Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_002527.json:
     "title": "get doctests for congroup.py and congroup_element.py up to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2527",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Start:
 
@@ -45,7 +45,7 @@ archive/issue_comments_017239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2527#issuecomment-17239",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -58,16 +58,16 @@ Changing component from number theory to modular forms.
 archive/issue_comments_017240.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2008-04-23T02:36:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2527",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2527#issuecomment-17240",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 

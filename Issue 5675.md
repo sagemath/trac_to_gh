@@ -14,7 +14,7 @@ archive/issues_005675.json:
     "title": "notebook with address=\"\" option should set the address to something useful",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5675",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -68,7 +68,7 @@ archive/issue_comments_044395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5675#issuecomment-44395",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_044396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5675#issuecomment-44396",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_044397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5675#issuecomment-44397",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -139,16 +139,16 @@ Renaming this to a more appropriate title.
 archive/issue_comments_044398.json:
 ```json
 {
-    "body": "Attachment [trac_5675-address-launch.patch](tarball://root/attachments/some-uuid/ticket5675/trac_5675-address-launch.patch) by timdumol created at 2010-01-19 06:26:15\n\nThis sets the hostname to localhost if interface=\"\" when launching the page",
+    "body": "Attachment [trac_5675-address-launch.patch](tarball://root/attachments/some-uuid/ticket5675/trac_5675-address-launch.patch) by @TimDumol created at 2010-01-19 06:26:15\n\nThis sets the hostname to localhost if interface=\"\" when launching the page",
     "created_at": "2010-01-19T06:26:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5675#issuecomment-44398",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_5675-address-launch.patch](tarball://root/attachments/some-uuid/ticket5675/trac_5675-address-launch.patch) by timdumol created at 2010-01-19 06:26:15
+Attachment [trac_5675-address-launch.patch](tarball://root/attachments/some-uuid/ticket5675/trac_5675-address-launch.patch) by @TimDumol created at 2010-01-19 06:26:15
 
 This sets the hostname to localhost if interface="" when launching the page
 
@@ -164,7 +164,7 @@ archive/issue_comments_044399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5675#issuecomment-44399",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_044400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5675#issuecomment-44400",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_044404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5675",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5675#issuecomment-44404",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

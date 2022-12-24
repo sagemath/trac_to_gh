@@ -3,7 +3,7 @@
 archive/issues_004537.json:
 ```json
 {
-    "body": "Assignee: davidloeffler\n\nThe inverse_mod method currently isn't implemented for ideals in rings of integers of number fields. It should be, as it's not difficult.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4537\n\n",
+    "body": "Assignee: @loefflerd\n\nThe inverse_mod method currently isn't implemented for ideals in rings of integers of number fields. It should be, as it's not difficult.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4537\n\n",
     "created_at": "2008-11-17T07:51:11Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004537.json:
     "title": "inverse_mod for number field ideals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4537",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
-Assignee: davidloeffler
+Assignee: @loefflerd
 
 The inverse_mod method currently isn't implemented for ideals in rings of integers of number fields. It should be, as it's not difficult.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4537
 archive/issue_comments_033819.json:
 ```json
 {
-    "body": "Attachment [4537-inversemod.patch](tarball://root/attachments/some-uuid/ticket4537/4537-inversemod.patch) by davidloeffler created at 2008-11-17 07:58:40\n\nI've uploaded a patch. Should work under 3.2.rc1 with the patch for #4536 installed (as it uses the coordinates() method of orders). \n\nI've implemented quadratic fields and general absolute fields; it would be trivial to implement for relative orders too, but there is so much general brokenness for relative orders that there doesn't seem much point (we don't even have is_integral() for relative orders yet).",
+    "body": "Attachment [4537-inversemod.patch](tarball://root/attachments/some-uuid/ticket4537/4537-inversemod.patch) by @loefflerd created at 2008-11-17 07:58:40\n\nI've uploaded a patch. Should work under 3.2.rc1 with the patch for #4536 installed (as it uses the coordinates() method of orders). \n\nI've implemented quadratic fields and general absolute fields; it would be trivial to implement for relative orders too, but there is so much general brokenness for relative orders that there doesn't seem much point (we don't even have is_integral() for relative orders yet).",
     "created_at": "2008-11-17T07:58:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4537#issuecomment-33819",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [4537-inversemod.patch](tarball://root/attachments/some-uuid/ticket4537/4537-inversemod.patch) by davidloeffler created at 2008-11-17 07:58:40
+Attachment [4537-inversemod.patch](tarball://root/attachments/some-uuid/ticket4537/4537-inversemod.patch) by @loefflerd created at 2008-11-17 07:58:40
 
 I've uploaded a patch. Should work under 3.2.rc1 with the patch for #4536 installed (as it uses the coordinates() method of orders). 
 
@@ -59,7 +59,7 @@ archive/issue_comments_033820.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4537#issuecomment-33820",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_033821.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4537#issuecomment-33821",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_033822.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4537#issuecomment-33822",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_033823.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4537",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4537#issuecomment-33823",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

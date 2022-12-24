@@ -3,7 +3,7 @@
 archive/issues_006077.json:
 ```json
 {
-    "body": "Assignee: mhampton\n\nCC:  jhpalmieri\n\nKeywords: polytopes, simplicial\n\nThis just adds a simplicial complex method for the polytope class, which requires lrs to compute a triangulation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6077\n\n",
+    "body": "Assignee: mhampton\n\nCC:  @jhpalmieri\n\nKeywords: polytopes, simplicial\n\nThis just adds a simplicial complex method for the polytope class, which requires lrs to compute a triangulation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6077\n\n",
     "created_at": "2009-05-18T22:06:08Z",
     "labels": [
         "geometry",
@@ -19,7 +19,7 @@ archive/issues_006077.json:
 ```
 Assignee: mhampton
 
-CC:  jhpalmieri
+CC:  @jhpalmieri
 
 Keywords: polytopes, simplicial
 
@@ -61,7 +61,7 @@ archive/issue_comments_048368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6077#issuecomment-48368",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_048369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6077#issuecomment-48369",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_048372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6077",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6077#issuecomment-48372",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

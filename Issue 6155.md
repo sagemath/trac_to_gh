@@ -14,7 +14,7 @@ archive/issues_006155.json:
     "title": "fix stein-watkins huge optional database",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6155",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: tbd
@@ -59,7 +59,7 @@ archive/issue_comments_049113.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6155#issuecomment-49113",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_049114.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6155#issuecomment-49114",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_049115.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6155#issuecomment-49115",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_049116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6155",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6155#issuecomment-49116",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

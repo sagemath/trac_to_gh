@@ -14,7 +14,7 @@ archive/issues_002158.json:
     "title": "Fix some typos in matrix/matrix2.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2158",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: tba
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2158
 archive/issue_comments_014169.json:
 ```json
 {
-    "body": "Attachment [matrix2_typos.patch](tarball://root/attachments/some-uuid/ticket2158/matrix2_typos.patch) by jsp created at 2008-02-14 16:57:51",
+    "body": "Attachment [matrix2_typos.patch](tarball://root/attachments/some-uuid/ticket2158/matrix2_typos.patch) by @jaapspies created at 2008-02-14 16:57:51",
     "created_at": "2008-02-14T16:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2158",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2158#issuecomment-14169",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [matrix2_typos.patch](tarball://root/attachments/some-uuid/ticket2158/matrix2_typos.patch) by jsp created at 2008-02-14 16:57:51
+Attachment [matrix2_typos.patch](tarball://root/attachments/some-uuid/ticket2158/matrix2_typos.patch) by @jaapspies created at 2008-02-14 16:57:51
 
 
 

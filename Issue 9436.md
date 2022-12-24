@@ -3,7 +3,7 @@
 archive/issues_009436.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  leif\n\n\n```\nJust for the record:\n\ngrep -i downloading $SAGE_ROOT/install.log:\n\nDownloading http://download.zope.org/distribution/zdaemon-2.0.0.tar.gz\nDownloading http://download.zope.org/distribution/ZConfig-2.5.tar.gz\nDownloading http://download.zope.org/distribution/zope.testing-3.5.0.tar.gz\nDownloading http://download.zope.org/distribution/zope.proxy-3.4.0.tar.gz\n\n\n-Leif\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9436\n\n",
+    "body": "Assignee: tbd\n\nCC:  @nexttime\n\n\n```\nJust for the record:\n\ngrep -i downloading $SAGE_ROOT/install.log:\n\nDownloading http://download.zope.org/distribution/zdaemon-2.0.0.tar.gz\nDownloading http://download.zope.org/distribution/ZConfig-2.5.tar.gz\nDownloading http://download.zope.org/distribution/zope.testing-3.5.0.tar.gz\nDownloading http://download.zope.org/distribution/zope.proxy-3.4.0.tar.gz\n\n\n-Leif\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9436\n\n",
     "created_at": "2010-07-06T14:21:08Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_009436.json:
     "title": "zodb3 causes downloads during installation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9436",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 Assignee: tbd
 
-CC:  leif
+CC:  @nexttime
 
 
 ```
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9436
 archive/issue_comments_090325.json:
 ```json
 {
-    "body": "Attachment [trac_9436-zodb3-requirements-package.patch](tarball://root/attachments/some-uuid/ticket9436/trac_9436-zodb3-requirements-package.patch) by timdumol created at 2010-07-06 14:22:17\n\nIncludes zodb3's requirements in the package.",
+    "body": "Attachment [trac_9436-zodb3-requirements-package.patch](tarball://root/attachments/some-uuid/ticket9436/trac_9436-zodb3-requirements-package.patch) by @TimDumol created at 2010-07-06 14:22:17\n\nIncludes zodb3's requirements in the package.",
     "created_at": "2010-07-06T14:22:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9436#issuecomment-90325",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_9436-zodb3-requirements-package.patch](tarball://root/attachments/some-uuid/ticket9436/trac_9436-zodb3-requirements-package.patch) by timdumol created at 2010-07-06 14:22:17
+Attachment [trac_9436-zodb3-requirements-package.patch](tarball://root/attachments/some-uuid/ticket9436/trac_9436-zodb3-requirements-package.patch) by @TimDumol created at 2010-07-06 14:22:17
 
 Includes zodb3's requirements in the package.
 
@@ -73,7 +73,7 @@ archive/issue_comments_090326.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9436#issuecomment-90326",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_090327.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9436#issuecomment-90327",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_090328.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9436#issuecomment-90328",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_090329.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9436#issuecomment-90329",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -204,7 +204,7 @@ archive/issue_comments_090330.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9436#issuecomment-90330",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -222,7 +222,7 @@ archive/issue_comments_090331.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9436#issuecomment-90331",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_090332.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9436#issuecomment-90332",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -258,7 +258,7 @@ archive/issue_comments_090333.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9436#issuecomment-90333",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_090334.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9436#issuecomment-90334",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -294,7 +294,7 @@ archive/issue_comments_090335.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9436#issuecomment-90335",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_090336.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9436",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9436#issuecomment-90336",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_002971.json:
 ```json
 {
-    "body": "Assignee: mhansen\n\nOne method of creating a Laurent poly ring doesn't give access to the variables.\n\n```\nsage: R = LaurentPolynomialRing(QQ,'x',3) ; R\nMultivariate Laurent Polynomial Ring in x0, x1, x2 over Rational Field\nsage: x0\n---------------------------------------------------------------------------\n<type 'exceptions.NameError'>             Traceback (most recent call last)\n\n/home/bump/sage/<ipython console> in <module>()\n\n<type 'exceptions.NameError'>: name 'x0' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2971\n\n",
+    "body": "Assignee: @mwhansen\n\nOne method of creating a Laurent poly ring doesn't give access to the variables.\n\n```\nsage: R = LaurentPolynomialRing(QQ,'x',3) ; R\nMultivariate Laurent Polynomial Ring in x0, x1, x2 over Rational Field\nsage: x0\n---------------------------------------------------------------------------\n<type 'exceptions.NameError'>             Traceback (most recent call last)\n\n/home/bump/sage/<ipython console> in <module>()\n\n<type 'exceptions.NameError'>: name 'x0' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2971\n\n",
     "created_at": "2008-04-20T05:26:13Z",
     "labels": [
         "combinatorics",
@@ -14,10 +14,10 @@ archive/issues_002971.json:
     "title": "One method of creating a Laurent poly ring doesn't give access to the variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2971",
-    "user": "bump"
+    "user": "@dwbump"
 }
 ```
-Assignee: mhansen
+Assignee: @mwhansen
 
 One method of creating a Laurent poly ring doesn't give access to the variables.
 
@@ -50,7 +50,7 @@ archive/issue_comments_020475.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2971#issuecomment-20475",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_020476.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2971",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2971#issuecomment-20476",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

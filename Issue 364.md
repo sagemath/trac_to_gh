@@ -3,7 +3,7 @@
 archive/issues_000364.json:
 ```json
 {
-    "body": "Assignee: was\n\nKeywords: fraction field exception, variable names exception\n\nSome uses of a ring that has no variable names assigned will cause an exception to be raised, even though there need not be any  names.  An example is appended.  The problem is that row_space() will cause the creation of a ring's fraction field, if there is not already one.\n\nMy fix, in rings/ring.pyx:CommutativeRing.fraction_field(), is to return without setting variable names, if no names are assigned.\n\nThoughts:\n\n1) In structures/parent_gens.pyx:ParentWithGens.variable_names(), an exception is raised if no names are assigned.  Is this the proper behavior?  If you call this function, is the presumption that you *know* there should be names assigned?\n\n2) Are there cases where the creation of a fraction_field *should* raise an exception if there are no assigned names?\n\nsage: m=Matrix(Integers(5),2,2,[2,2,2,2]);\n\nsage: m.row_space()\n ------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/site-packages/IPython/Prompts.py\", line 523, in __call__\n    manipulated_val = self.display(arg)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/site-packages/IPython/Prompts.py\", line 547, in _display\n    return self.shell.hooks.result_display(arg)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/site-packages/IPython/hooks.py\", line 134, in __call__\n    ret = cmd(*args, **kw)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/site-packages/IPython/hooks.py\", line 162, in result_display\n    out = pformat(arg)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/pprint.py\", line 111, in pformat\n    self._format(object, sio, 0, 0, {}, 0)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/pprint.py\", line 129, in _format\n    rep = self._repr(object, context, level - 1)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/pprint.py\", line 195, in _repr\n    self._depth, level)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/pprint.py\", line 207, in format\n    return _safe_repr(object, context, maxlevels, level)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/pprint.py\", line 292, in _safe_repr\n    rep = repr(object)\n  File \"sage_object.pyx\", line 87, in sage_object.SageObject.__repr__\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/site-packages/sage/modules/free_module.py\", line 3500, in _repr_\n    self.degree(), self.dimension(), self.base_field()) + \\\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/site-packages/sage/modules/free_module.py\", line 1289, in base_field\n    return self.base_ring().fraction_field()\n  File \"ring.pyx\", line 593, in ring.CommutativeRing.fraction_field\n  File \"parent_gens.pyx\", line 366, in parent_gens.ParentWithGens.variable_names\n<type 'exceptions.ValueError'>: variable names have not yet been set using self._assign_names(...)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/364\n\n",
+    "body": "Assignee: @williamstein\n\nKeywords: fraction field exception, variable names exception\n\nSome uses of a ring that has no variable names assigned will cause an exception to be raised, even though there need not be any  names.  An example is appended.  The problem is that row_space() will cause the creation of a ring's fraction field, if there is not already one.\n\nMy fix, in rings/ring.pyx:CommutativeRing.fraction_field(), is to return without setting variable names, if no names are assigned.\n\nThoughts:\n\n1) In structures/parent_gens.pyx:ParentWithGens.variable_names(), an exception is raised if no names are assigned.  Is this the proper behavior?  If you call this function, is the presumption that you *know* there should be names assigned?\n\n2) Are there cases where the creation of a fraction_field *should* raise an exception if there are no assigned names?\n\nsage: m=Matrix(Integers(5),2,2,[2,2,2,2]);\n\nsage: m.row_space()\n ------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/site-packages/IPython/Prompts.py\", line 523, in __call__\n    manipulated_val = self.display(arg)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/site-packages/IPython/Prompts.py\", line 547, in _display\n    return self.shell.hooks.result_display(arg)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/site-packages/IPython/hooks.py\", line 134, in __call__\n    ret = cmd(*args, **kw)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/site-packages/IPython/hooks.py\", line 162, in result_display\n    out = pformat(arg)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/pprint.py\", line 111, in pformat\n    self._format(object, sio, 0, 0, {}, 0)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/pprint.py\", line 129, in _format\n    rep = self._repr(object, context, level - 1)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/pprint.py\", line 195, in _repr\n    self._depth, level)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/pprint.py\", line 207, in format\n    return _safe_repr(object, context, maxlevels, level)\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/pprint.py\", line 292, in _safe_repr\n    rep = repr(object)\n  File \"sage_object.pyx\", line 87, in sage_object.SageObject.__repr__\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/site-packages/sage/modules/free_module.py\", line 3500, in _repr_\n    self.degree(), self.dimension(), self.base_field()) + \\\n  File \"/SandBox/Justin/sb/sage-2.5/local/lib/python2.5/site-packages/sage/modules/free_module.py\", line 1289, in base_field\n    return self.base_ring().fraction_field()\n  File \"ring.pyx\", line 593, in ring.CommutativeRing.fraction_field\n  File \"parent_gens.pyx\", line 366, in parent_gens.ParentWithGens.variable_names\n<type 'exceptions.ValueError'>: variable names have not yet been set using self._assign_names(...)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/364\n\n",
     "created_at": "2007-05-14T04:21:52Z",
     "labels": [
         "algebraic geometry",
@@ -16,7 +16,7 @@ archive/issues_000364.json:
     "user": "justin"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Keywords: fraction field exception, variable names exception
 
@@ -81,7 +81,7 @@ archive/issue_comments_001765.json:
     "issue": "https://github.com/sagemath/sagetest/issues/364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/364#issuecomment-1765",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_001766.json:
     "issue": "https://github.com/sagemath/sagetest/issues/364",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/364#issuecomment-1766",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

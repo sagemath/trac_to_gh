@@ -3,7 +3,7 @@
 archive/issues_008248.json:
 ```json
 {
-    "body": "Assignee: cremona\n\nCC:  wuthrich\n\nKeywords: isogenies\n\nWhen an isogeny is constructed from a kernel polynomial, by default (unless check=False) it is checked whether the given kernel polynomial divides the appropriate division polynomial.  This is expensive when the degree is large (e.g. 163!).\n\nWe provide a small patch which does this checking more efficiently.\n\nThe example in the patch which now takes 20s, used to take many minutes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8248\n\n",
+    "body": "Assignee: @JohnCremona\n\nCC:  @categorie\n\nKeywords: isogenies\n\nWhen an isogeny is constructed from a kernel polynomial, by default (unless check=False) it is checked whether the given kernel polynomial divides the appropriate division polynomial.  This is expensive when the degree is large (e.g. 163!).\n\nWe provide a small patch which does this checking more efficiently.\n\nThe example in the patch which now takes 20s, used to take many minutes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8248\n\n",
     "created_at": "2010-02-12T11:00:54Z",
     "labels": [
         "elliptic curves",
@@ -14,12 +14,12 @@ archive/issues_008248.json:
     "title": "Small improvement in checking for elliptic curve isogenies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8248",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: cremona
+Assignee: @JohnCremona
 
-CC:  wuthrich
+CC:  @categorie
 
 Keywords: isogenies
 
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/8248
 archive/issue_comments_072951.json:
 ```json
 {
-    "body": "Attachment [trac_8248-isogeny.patch](tarball://root/attachments/some-uuid/ticket8248/trac_8248-isogeny.patch) by cremona created at 2010-02-12 11:04:19\n\nApplies to 4.3.2",
+    "body": "Attachment [trac_8248-isogeny.patch](tarball://root/attachments/some-uuid/ticket8248/trac_8248-isogeny.patch) by @JohnCremona created at 2010-02-12 11:04:19\n\nApplies to 4.3.2",
     "created_at": "2010-02-12T11:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8248#issuecomment-72951",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac_8248-isogeny.patch](tarball://root/attachments/some-uuid/ticket8248/trac_8248-isogeny.patch) by cremona created at 2010-02-12 11:04:19
+Attachment [trac_8248-isogeny.patch](tarball://root/attachments/some-uuid/ticket8248/trac_8248-isogeny.patch) by @JohnCremona created at 2010-02-12 11:04:19
 
 Applies to 4.3.2
 
@@ -65,7 +65,7 @@ archive/issue_comments_072952.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8248#issuecomment-72952",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_072953.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8248#issuecomment-72953",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_072954.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8248",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8248#issuecomment-72954",
-    "user": "wuthrich"
+    "user": "@categorie"
 }
 ```
 

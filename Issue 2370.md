@@ -58,16 +58,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2370
 archive/issue_comments_015991.json:
 ```json
 {
-    "body": "Changing assignee from somebody to dfdeshom.",
+    "body": "Changing assignee from somebody to @dfdeshom.",
     "created_at": "2008-03-03T16:04:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2370#issuecomment-15991",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Changing assignee from somebody to dfdeshom.
+Changing assignee from somebody to @dfdeshom.
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_015992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2370#issuecomment-15992",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
@@ -116,16 +116,16 @@ Michael
 archive/issue_comments_015994.json:
 ```json
 {
-    "body": "Attachment [2370.patch](tarball://root/attachments/some-uuid/ticket2370/2370.patch) by dfdeshom created at 2008-03-05 06:19:17\n\nReplying to [comment:2 mabshoff]:\n> The patch looks correct, but integer.pyx could certainly use some doctests.  \n\nDone.",
+    "body": "Attachment [2370.patch](tarball://root/attachments/some-uuid/ticket2370/2370.patch) by @dfdeshom created at 2008-03-05 06:19:17\n\nReplying to [comment:2 mabshoff]:\n> The patch looks correct, but integer.pyx could certainly use some doctests.  \n\nDone.",
     "created_at": "2008-03-05T06:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2370",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2370#issuecomment-15994",
-    "user": "dfdeshom"
+    "user": "@dfdeshom"
 }
 ```
 
-Attachment [2370.patch](tarball://root/attachments/some-uuid/ticket2370/2370.patch) by dfdeshom created at 2008-03-05 06:19:17
+Attachment [2370.patch](tarball://root/attachments/some-uuid/ticket2370/2370.patch) by @dfdeshom created at 2008-03-05 06:19:17
 
 Replying to [comment:2 mabshoff]:
 > The patch looks correct, but integer.pyx could certainly use some doctests.  

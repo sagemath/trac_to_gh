@@ -3,7 +3,7 @@
 archive/issues_007502.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis is something I came up with when trying to reduce sage start up time. \n\n\n```\n2.033 sage.all (None)\n0.407 sage.server.all (sage.all)\n0.404 notebook.all (sage.server.all)\n0.365 sage.server.notebook.notebook (notebook.all)\n...\n```\n\n\nNow notebook() needs to be in the global namespace, but usually the entire notebook server does not need to be loaded. I'm sure there's other trimming we could do here as well. \n\nIt's unclear what level to put this in, but I would think sage.server.notebook.all would be a good place (e.g. we could lazily import interact.*, sage_email.*, and lazily import notebook and inotebook). That could cut down startup time by 25%. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7502\n\n",
+    "body": "Assignee: @williamstein\n\nThis is something I came up with when trying to reduce sage start up time. \n\n\n```\n2.033 sage.all (None)\n0.407 sage.server.all (sage.all)\n0.404 notebook.all (sage.server.all)\n0.365 sage.server.notebook.notebook (notebook.all)\n...\n```\n\n\nNow notebook() needs to be in the global namespace, but usually the entire notebook server does not need to be loaded. I'm sure there's other trimming we could do here as well. \n\nIt's unclear what level to put this in, but I would think sage.server.notebook.all would be a good place (e.g. we could lazily import interact.*, sage_email.*, and lazily import notebook and inotebook). That could cut down startup time by 25%. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7502\n\n",
     "created_at": "2009-11-20T09:20:53Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_007502.json:
     "title": "lazy import module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7502",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This is something I came up with when trying to reduce sage start up time. 
 
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7502
 archive/issue_comments_063420.json:
 ```json
 {
-    "body": "Attachment [7502-lazy-import.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.patch) by robertwb created at 2009-11-20 09:21:44",
+    "body": "Attachment [7502-lazy-import.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.patch) by @robertwb created at 2009-11-20 09:21:44",
     "created_at": "2009-11-20T09:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63420",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [7502-lazy-import.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.patch) by robertwb created at 2009-11-20 09:21:44
+Attachment [7502-lazy-import.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.patch) by @robertwb created at 2009-11-20 09:21:44
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_063421.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63421",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_063422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63422",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_063423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63423",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -123,7 +123,7 @@ archive/issue_comments_063424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63424",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -136,16 +136,16 @@ Changing status from new to needs_review.
 archive/issue_comments_063425.json:
 ```json
 {
-    "body": "Attachment [7502-lazy-import.2.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.2.patch) by mpatel created at 2010-01-30 03:34:11\n\nAlso map tab completion.  Add to reference manual. Rebased vs. 4.3.2.alpha0. Replaces previous.",
+    "body": "Attachment [7502-lazy-import.2.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.2.patch) by @qed777 created at 2010-01-30 03:34:11\n\nAlso map tab completion.  Add to reference manual. Rebased vs. 4.3.2.alpha0. Replaces previous.",
     "created_at": "2010-01-30T03:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63425",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [7502-lazy-import.2.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.2.patch) by mpatel created at 2010-01-30 03:34:11
+Attachment [7502-lazy-import.2.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.2.patch) by @qed777 created at 2010-01-30 03:34:11
 
 Also map tab completion.  Add to reference manual. Rebased vs. 4.3.2.alpha0. Replaces previous.
 
@@ -161,7 +161,7 @@ archive/issue_comments_063426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63426",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -179,7 +179,7 @@ archive/issue_comments_063427.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63427",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_063428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63428",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

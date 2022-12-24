@@ -14,7 +14,7 @@ archive/issues_004925.json:
     "title": "convert sage.rings.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4925",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
@@ -37,7 +37,7 @@ archive/issue_comments_037369.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4925#issuecomment-37369",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_037370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4925#issuecomment-37370",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

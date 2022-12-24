@@ -14,7 +14,7 @@ archive/issues_003353.json:
     "title": "bug in MatrixGroup iterator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3353",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: joyner
@@ -223,7 +223,7 @@ archive/issue_comments_023304.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23304",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -267,7 +267,7 @@ archive/issue_comments_023305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23305",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -344,16 +344,16 @@ That's about 40 times faster!
 archive/issue_comments_023306.json:
 ```json
 {
-    "body": "Attachment [sage-3353.patch](tarball://root/attachments/some-uuid/ticket3353/sage-3353.patch) by was created at 2008-06-03 04:17:27",
+    "body": "Attachment [sage-3353.patch](tarball://root/attachments/some-uuid/ticket3353/sage-3353.patch) by @williamstein created at 2008-06-03 04:17:27",
     "created_at": "2008-06-03T04:17:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23306",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3353.patch](tarball://root/attachments/some-uuid/ticket3353/sage-3353.patch) by was created at 2008-06-03 04:17:27
+Attachment [sage-3353.patch](tarball://root/attachments/some-uuid/ticket3353/sage-3353.patch) by @williamstein created at 2008-06-03 04:17:27
 
 
 
@@ -367,7 +367,7 @@ archive/issue_comments_023307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23307",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_023308.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23308",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -412,16 +412,16 @@ this fixes the one bug spotted by the referee
 archive/issue_comments_023309.json:
 ```json
 {
-    "body": "Attachment [sage-3353-part2.patch](tarball://root/attachments/some-uuid/ticket3353/sage-3353-part2.patch) by was created at 2008-06-03 05:50:05",
+    "body": "Attachment [sage-3353-part2.patch](tarball://root/attachments/some-uuid/ticket3353/sage-3353-part2.patch) by @williamstein created at 2008-06-03 05:50:05",
     "created_at": "2008-06-03T05:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23309",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [sage-3353-part2.patch](tarball://root/attachments/some-uuid/ticket3353/sage-3353-part2.patch) by was created at 2008-06-03 05:50:05
+Attachment [sage-3353-part2.patch](tarball://root/attachments/some-uuid/ticket3353/sage-3353-part2.patch) by @williamstein created at 2008-06-03 05:50:05
 
 
 
@@ -435,7 +435,7 @@ archive/issue_comments_023310.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23310",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -489,7 +489,7 @@ archive/issue_comments_023313.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3353",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23313",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

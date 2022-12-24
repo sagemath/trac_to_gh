@@ -13,7 +13,7 @@ archive/issues_000018.json:
     "title": "load path issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/18",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -37,7 +37,7 @@ archive/issue_comments_000075.json:
     "issue": "https://github.com/sagemath/sagetest/issues/18",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/18#issuecomment-75",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_000076.json:
     "issue": "https://github.com/sagemath/sagetest/issues/18",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/18#issuecomment-76",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009416.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nFor example, the flag check=False can only be used with E.point()\n\n\n```\nsage: emb = K2.places()[0]\nsage: E_complex = EllipticCurve(CC,map(emb, E2point.a_invariants()))\nsage: P = L2[-1]\nsage: print 'Exact arithmetic:', P in E2\nExact arithmetic: True\nsage: P_complex = map(emb,P)\nsage: E_complex(P_complex, check=False)\nTypeError: __call__() got an unexpected keyword argument 'check'\n\nsage: E_complex.point(P_complex, check=False)\n(-10.0000000000000 + 5.65685424949238*I : 28.0000000000000 + 25.4558441227157*I : 1.00000000000000)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9416\n\n",
+    "body": "Assignee: @aghitza\n\nFor example, the flag check=False can only be used with E.point()\n\n\n```\nsage: emb = K2.places()[0]\nsage: E_complex = EllipticCurve(CC,map(emb, E2point.a_invariants()))\nsage: P = L2[-1]\nsage: print 'Exact arithmetic:', P in E2\nExact arithmetic: True\nsage: P_complex = map(emb,P)\nsage: E_complex(P_complex, check=False)\nTypeError: __call__() got an unexpected keyword argument 'check'\n\nsage: E_complex.point(P_complex, check=False)\n(-10.0000000000000 + 5.65685424949238*I : 28.0000000000000 + 25.4558441227157*I : 1.00000000000000)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9416\n\n",
     "created_at": "2010-07-03T03:00:44Z",
     "labels": [
         "algebra",
@@ -16,7 +16,7 @@ archive/issues_009416.json:
     "user": "rkirov"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 For example, the flag check=False can only be used with E.point()
 
@@ -47,7 +47,7 @@ Issue created by migration from https://trac.sagemath.org/ticket/9416
 archive/issue_comments_089744.json:
 ```json
 {
-    "body": "Changing assignee from AlexGhitza to cremona.",
+    "body": "Changing assignee from @aghitza to @JohnCremona.",
     "created_at": "2010-07-03T03:01:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9416",
     "type": "issue_comment",
@@ -56,7 +56,7 @@ archive/issue_comments_089744.json:
 }
 ```
 
-Changing assignee from AlexGhitza to cremona.
+Changing assignee from @aghitza to @JohnCremona.
 
 
 

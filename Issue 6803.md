@@ -14,7 +14,7 @@ archive/issues_006803.json:
     "title": "Implement symbolic Kronecker delta and also make current signum (sgn) symbolic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6803",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 We should have a symbolic Kronecker delta in Sage.
@@ -47,16 +47,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6803
 archive/issue_comments_056013.json:
 ```json
 {
-    "body": "Attachment [trac_6803-symbolic-kronecker-n-signum.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-symbolic-kronecker-n-signum.patch) by gmhossain created at 2009-08-23 11:27:49",
+    "body": "Attachment [trac_6803-symbolic-kronecker-n-signum.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-symbolic-kronecker-n-signum.patch) by @golam-m-hossain created at 2009-08-23 11:27:49",
     "created_at": "2009-08-23T11:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6803#issuecomment-56013",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 
-Attachment [trac_6803-symbolic-kronecker-n-signum.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-symbolic-kronecker-n-signum.patch) by gmhossain created at 2009-08-23 11:27:49
+Attachment [trac_6803-symbolic-kronecker-n-signum.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-symbolic-kronecker-n-signum.patch) by @golam-m-hossain created at 2009-08-23 11:27:49
 
 
 
@@ -70,7 +70,7 @@ archive/issue_comments_056014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6803#issuecomment-56014",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -88,7 +88,7 @@ archive/issue_comments_056015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6803#issuecomment-56015",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -106,7 +106,7 @@ archive/issue_comments_056016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6803#issuecomment-56016",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -124,7 +124,7 @@ archive/issue_comments_056017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6803#issuecomment-56017",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_056018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6803#issuecomment-56018",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -155,16 +155,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_056019.json:
 ```json
 {
-    "body": "Attachment [trac_6803-symbolic-kronecker-n-signum-review.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-symbolic-kronecker-n-signum-review.patch) by kcrisman created at 2009-11-10 15:58:50",
+    "body": "Attachment [trac_6803-symbolic-kronecker-n-signum-review.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-symbolic-kronecker-n-signum-review.patch) by @kcrisman created at 2009-11-10 15:58:50",
     "created_at": "2009-11-10T15:58:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6803#issuecomment-56019",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6803-symbolic-kronecker-n-signum-review.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-symbolic-kronecker-n-signum-review.patch) by kcrisman created at 2009-11-10 15:58:50
+Attachment [trac_6803-symbolic-kronecker-n-signum-review.patch](tarball://root/attachments/some-uuid/ticket6803/trac_6803-symbolic-kronecker-n-signum-review.patch) by @kcrisman created at 2009-11-10 15:58:50
 
 
 
@@ -178,7 +178,7 @@ archive/issue_comments_056020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6803#issuecomment-56020",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_056021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6803#issuecomment-56021",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_056022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6803",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6803#issuecomment-56022",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

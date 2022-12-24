@@ -3,7 +3,7 @@
 archive/issues_003502.json:
 ```json
 {
-    "body": "Assignee: craigcitro\n\nImplement applying Hecke operator to a single sparse vector, an operation that is needed for quick computation of systems of Hecke eigenvalues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3502\n\n",
+    "body": "Assignee: @craigcitro\n\nImplement applying Hecke operator to a single sparse vector, an operation that is needed for quick computation of systems of Hecke eigenvalues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3502\n\n",
     "created_at": "2008-06-24T15:40:11Z",
     "labels": [
         "modular forms",
@@ -14,10 +14,10 @@ archive/issues_003502.json:
     "title": "modular symbols -- implement apply_sparse, which is needed for fast eigenvalue computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3502",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: craigcitro
+Assignee: @craigcitro
 
 Implement applying Hecke operator to a single sparse vector, an operation that is needed for quick computation of systems of Hecke eigenvalues.
 
@@ -37,7 +37,7 @@ archive/issue_comments_024697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3502#issuecomment-24697",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_024698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3502#issuecomment-24698",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -70,16 +70,16 @@ William's bundle with all patches
 archive/issue_comments_024699.json:
 ```json
 {
-    "body": "Attachment [3502.hg](tarball://root/attachments/some-uuid/ticket3502/3502.hg) by craigcitro created at 2008-09-11 09:21:23",
+    "body": "Attachment [3502.hg](tarball://root/attachments/some-uuid/ticket3502/3502.hg) by @craigcitro created at 2008-09-11 09:21:23",
     "created_at": "2008-09-11T09:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3502#issuecomment-24699",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [3502.hg](tarball://root/attachments/some-uuid/ticket3502/3502.hg) by craigcitro created at 2008-09-11 09:21:23
+Attachment [3502.hg](tarball://root/attachments/some-uuid/ticket3502/3502.hg) by @craigcitro created at 2008-09-11 09:21:23
 
 
 
@@ -88,16 +88,16 @@ Attachment [3502.hg](tarball://root/attachments/some-uuid/ticket3502/3502.hg) by
 archive/issue_comments_024700.json:
 ```json
 {
-    "body": "Attachment [trac-3502-addl.patch](tarball://root/attachments/some-uuid/ticket3502/trac-3502-addl.patch) by craigcitro created at 2008-09-12 06:54:26\n\n(This doesn't need to go into 3.1.2, so I'm moving it to 3.1.3.)",
+    "body": "Attachment [trac-3502-addl.patch](tarball://root/attachments/some-uuid/ticket3502/trac-3502-addl.patch) by @craigcitro created at 2008-09-12 06:54:26\n\n(This doesn't need to go into 3.1.2, so I'm moving it to 3.1.3.)",
     "created_at": "2008-09-12T06:54:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3502#issuecomment-24700",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-3502-addl.patch](tarball://root/attachments/some-uuid/ticket3502/trac-3502-addl.patch) by craigcitro created at 2008-09-12 06:54:26
+Attachment [trac-3502-addl.patch](tarball://root/attachments/some-uuid/ticket3502/trac-3502-addl.patch) by @craigcitro created at 2008-09-12 06:54:26
 
 (This doesn't need to go into 3.1.2, so I'm moving it to 3.1.3.)
 
@@ -113,7 +113,7 @@ archive/issue_comments_024701.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3502",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3502#issuecomment-24701",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

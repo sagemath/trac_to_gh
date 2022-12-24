@@ -14,7 +14,7 @@ archive/issues_002086.json:
     "title": "iPython bug? Python decorators don't play nicely with docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2086",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: tba
@@ -53,7 +53,7 @@ archive/issue_comments_013507.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2086#issuecomment-13507",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -71,7 +71,7 @@ archive/issue_comments_013508.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2086",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2086#issuecomment-13508",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

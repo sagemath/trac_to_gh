@@ -3,7 +3,7 @@
 archive/issues_002987.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI've made a Debian package for zn_poly.  Patch is attached.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2987\n\n",
+    "body": "Assignee: @timabbott\n\nI've made a Debian package for zn_poly.  Patch is attached.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2987\n\n",
     "created_at": "2008-04-21T06:32:09Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002987.json:
     "title": "[with patch; needs review] Debian build support for zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2987",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I've made a Debian package for zn_poly.  Patch is attached.  
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2987
 archive/issue_comments_020564.json:
 ```json
 {
-    "body": "Attachment [zn_poly-debian.patch](tarball://root/attachments/some-uuid/ticket2987/zn_poly-debian.patch) by tabbott created at 2008-04-21 06:32:24",
+    "body": "Attachment [zn_poly-debian.patch](tarball://root/attachments/some-uuid/ticket2987/zn_poly-debian.patch) by @timabbott created at 2008-04-21 06:32:24",
     "created_at": "2008-04-21T06:32:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2987#issuecomment-20564",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [zn_poly-debian.patch](tarball://root/attachments/some-uuid/ticket2987/zn_poly-debian.patch) by tabbott created at 2008-04-21 06:32:24
+Attachment [zn_poly-debian.patch](tarball://root/attachments/some-uuid/ticket2987/zn_poly-debian.patch) by @timabbott created at 2008-04-21 06:32:24
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_020566.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2987",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2987#issuecomment-20566",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 

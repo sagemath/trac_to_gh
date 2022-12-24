@@ -3,7 +3,7 @@
 archive/issues_002199.json:
 ```json
 {
-    "body": "Assignee: tabbott\n\nI'm attaching Mercurial patches for the copyright files for many Debian packages.  The ones I'm not attaching have various verification or missing data issues; I'll be adding separate tickets for those.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2199\n\n",
+    "body": "Assignee: @timabbott\n\nI'm attaching Mercurial patches for the copyright files for many Debian packages.  The ones I'm not attaching have various verification or missing data issues; I'll be adding separate tickets for those.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2199\n\n",
     "created_at": "2008-02-17T21:32:17Z",
     "labels": [
         "debian-package",
@@ -14,10 +14,10 @@ archive/issues_002199.json:
     "title": "[with patch; needs review] Copyright files for Debian packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2199",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
-Assignee: tabbott
+Assignee: @timabbott
 
 I'm attaching Mercurial patches for the copyright files for many Debian packages.  The ones I'm not attaching have various verification or missing data issues; I'll be adding separate tickets for those.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2199
 archive/issue_comments_014444.json:
 ```json
 {
-    "body": "Attachment [cddlib.copyright](tarball://root/attachments/some-uuid/ticket2199/cddlib.copyright) by tabbott created at 2008-02-17 21:33:09",
+    "body": "Attachment [cddlib.copyright](tarball://root/attachments/some-uuid/ticket2199/cddlib.copyright) by @timabbott created at 2008-02-17 21:33:09",
     "created_at": "2008-02-17T21:33:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14444",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [cddlib.copyright](tarball://root/attachments/some-uuid/ticket2199/cddlib.copyright) by tabbott created at 2008-02-17 21:33:09
+Attachment [cddlib.copyright](tarball://root/attachments/some-uuid/ticket2199/cddlib.copyright) by @timabbott created at 2008-02-17 21:33:09
 
 
 
@@ -50,16 +50,16 @@ Attachment [cddlib.copyright](tarball://root/attachments/some-uuid/ticket2199/cd
 archive/issue_comments_014445.json:
 ```json
 {
-    "body": "Attachment [flint-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/flint-copyright.patch) by tabbott created at 2008-02-17 21:33:21",
+    "body": "Attachment [flint-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/flint-copyright.patch) by @timabbott created at 2008-02-17 21:33:21",
     "created_at": "2008-02-17T21:33:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14445",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [flint-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/flint-copyright.patch) by tabbott created at 2008-02-17 21:33:21
+Attachment [flint-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/flint-copyright.patch) by @timabbott created at 2008-02-17 21:33:21
 
 
 
@@ -68,16 +68,16 @@ Attachment [flint-copyright.patch](tarball://root/attachments/some-uuid/ticket21
 archive/issue_comments_014446.json:
 ```json
 {
-    "body": "Attachment [flintqs-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/flintqs-copyright.patch) by tabbott created at 2008-02-17 21:33:29",
+    "body": "Attachment [flintqs-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/flintqs-copyright.patch) by @timabbott created at 2008-02-17 21:33:29",
     "created_at": "2008-02-17T21:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14446",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [flintqs-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/flintqs-copyright.patch) by tabbott created at 2008-02-17 21:33:29
+Attachment [flintqs-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/flintqs-copyright.patch) by @timabbott created at 2008-02-17 21:33:29
 
 
 
@@ -86,16 +86,16 @@ Attachment [flintqs-copyright.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_014447.json:
 ```json
 {
-    "body": "Attachment [iml-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/iml-copyright.patch) by tabbott created at 2008-02-17 21:33:42",
+    "body": "Attachment [iml-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/iml-copyright.patch) by @timabbott created at 2008-02-17 21:33:42",
     "created_at": "2008-02-17T21:33:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14447",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [iml-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/iml-copyright.patch) by tabbott created at 2008-02-17 21:33:42
+Attachment [iml-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/iml-copyright.patch) by @timabbott created at 2008-02-17 21:33:42
 
 
 
@@ -104,16 +104,16 @@ Attachment [iml-copyright.patch](tarball://root/attachments/some-uuid/ticket2199
 archive/issue_comments_014448.json:
 ```json
 {
-    "body": "Attachment [iml-copyright.2.patch](tarball://root/attachments/some-uuid/ticket2199/iml-copyright.2.patch) by tabbott created at 2008-02-17 21:34:11",
+    "body": "Attachment [iml-copyright.2.patch](tarball://root/attachments/some-uuid/ticket2199/iml-copyright.2.patch) by @timabbott created at 2008-02-17 21:34:11",
     "created_at": "2008-02-17T21:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14448",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [iml-copyright.2.patch](tarball://root/attachments/some-uuid/ticket2199/iml-copyright.2.patch) by tabbott created at 2008-02-17 21:34:11
+Attachment [iml-copyright.2.patch](tarball://root/attachments/some-uuid/ticket2199/iml-copyright.2.patch) by @timabbott created at 2008-02-17 21:34:11
 
 
 
@@ -122,16 +122,16 @@ Attachment [iml-copyright.2.patch](tarball://root/attachments/some-uuid/ticket21
 archive/issue_comments_014449.json:
 ```json
 {
-    "body": "Attachment [lcalc-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/lcalc-copyright.patch) by tabbott created at 2008-02-17 21:34:16",
+    "body": "Attachment [lcalc-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/lcalc-copyright.patch) by @timabbott created at 2008-02-17 21:34:16",
     "created_at": "2008-02-17T21:34:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14449",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [lcalc-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/lcalc-copyright.patch) by tabbott created at 2008-02-17 21:34:16
+Attachment [lcalc-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/lcalc-copyright.patch) by @timabbott created at 2008-02-17 21:34:16
 
 
 
@@ -140,16 +140,16 @@ Attachment [lcalc-copyright.patch](tarball://root/attachments/some-uuid/ticket21
 archive/issue_comments_014450.json:
 ```json
 {
-    "body": "Attachment [libfplll-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/libfplll-copyright.patch) by tabbott created at 2008-02-17 21:34:22",
+    "body": "Attachment [libfplll-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/libfplll-copyright.patch) by @timabbott created at 2008-02-17 21:34:22",
     "created_at": "2008-02-17T21:34:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14450",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [libfplll-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/libfplll-copyright.patch) by tabbott created at 2008-02-17 21:34:22
+Attachment [libfplll-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/libfplll-copyright.patch) by @timabbott created at 2008-02-17 21:34:22
 
 
 
@@ -158,16 +158,16 @@ Attachment [libfplll-copyright.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_014451.json:
 ```json
 {
-    "body": "Attachment [libm4ri-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/libm4ri-copyright.patch) by tabbott created at 2008-02-17 21:34:29",
+    "body": "Attachment [libm4ri-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/libm4ri-copyright.patch) by @timabbott created at 2008-02-17 21:34:29",
     "created_at": "2008-02-17T21:34:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14451",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [libm4ri-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/libm4ri-copyright.patch) by tabbott created at 2008-02-17 21:34:29
+Attachment [libm4ri-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/libm4ri-copyright.patch) by @timabbott created at 2008-02-17 21:34:29
 
 
 
@@ -176,16 +176,16 @@ Attachment [libm4ri-copyright.patch](tarball://root/attachments/some-uuid/ticket
 archive/issue_comments_014452.json:
 ```json
 {
-    "body": "Attachment [linbox-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/linbox-copyright.patch) by tabbott created at 2008-02-17 21:34:36",
+    "body": "Attachment [linbox-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/linbox-copyright.patch) by @timabbott created at 2008-02-17 21:34:36",
     "created_at": "2008-02-17T21:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14452",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [linbox-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/linbox-copyright.patch) by tabbott created at 2008-02-17 21:34:36
+Attachment [linbox-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/linbox-copyright.patch) by @timabbott created at 2008-02-17 21:34:36
 
 
 
@@ -194,16 +194,16 @@ Attachment [linbox-copyright.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_comments_014453.json:
 ```json
 {
-    "body": "Attachment [ntl-copyright.diff](tarball://root/attachments/some-uuid/ticket2199/ntl-copyright.diff) by tabbott created at 2008-02-17 21:34:46",
+    "body": "Attachment [ntl-copyright.diff](tarball://root/attachments/some-uuid/ticket2199/ntl-copyright.diff) by @timabbott created at 2008-02-17 21:34:46",
     "created_at": "2008-02-17T21:34:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14453",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [ntl-copyright.diff](tarball://root/attachments/some-uuid/ticket2199/ntl-copyright.diff) by tabbott created at 2008-02-17 21:34:46
+Attachment [ntl-copyright.diff](tarball://root/attachments/some-uuid/ticket2199/ntl-copyright.diff) by @timabbott created at 2008-02-17 21:34:46
 
 
 
@@ -212,16 +212,16 @@ Attachment [ntl-copyright.diff](tarball://root/attachments/some-uuid/ticket2199/
 archive/issue_comments_014454.json:
 ```json
 {
-    "body": "Attachment [singular-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/singular-copyright.patch) by tabbott created at 2008-02-17 21:34:52",
+    "body": "Attachment [singular-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/singular-copyright.patch) by @timabbott created at 2008-02-17 21:34:52",
     "created_at": "2008-02-17T21:34:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14454",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [singular-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/singular-copyright.patch) by tabbott created at 2008-02-17 21:34:52
+Attachment [singular-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/singular-copyright.patch) by @timabbott created at 2008-02-17 21:34:52
 
 
 
@@ -230,16 +230,16 @@ Attachment [singular-copyright.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_014455.json:
 ```json
 {
-    "body": "Attachment [symmetrica-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/symmetrica-copyright.patch) by tabbott created at 2008-02-17 21:34:59",
+    "body": "Attachment [symmetrica-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/symmetrica-copyright.patch) by @timabbott created at 2008-02-17 21:34:59",
     "created_at": "2008-02-17T21:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14455",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [symmetrica-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/symmetrica-copyright.patch) by tabbott created at 2008-02-17 21:34:59
+Attachment [symmetrica-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/symmetrica-copyright.patch) by @timabbott created at 2008-02-17 21:34:59
 
 
 
@@ -248,16 +248,16 @@ Attachment [symmetrica-copyright.patch](tarball://root/attachments/some-uuid/tic
 archive/issue_comments_014456.json:
 ```json
 {
-    "body": "Attachment [libm4ri-copyright2.patch](tarball://root/attachments/some-uuid/ticket2199/libm4ri-copyright2.patch) by tabbott created at 2008-02-17 22:31:52",
+    "body": "Attachment [libm4ri-copyright2.patch](tarball://root/attachments/some-uuid/ticket2199/libm4ri-copyright2.patch) by @timabbott created at 2008-02-17 22:31:52",
     "created_at": "2008-02-17T22:31:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14456",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [libm4ri-copyright2.patch](tarball://root/attachments/some-uuid/ticket2199/libm4ri-copyright2.patch) by tabbott created at 2008-02-17 22:31:52
+Attachment [libm4ri-copyright2.patch](tarball://root/attachments/some-uuid/ticket2199/libm4ri-copyright2.patch) by @timabbott created at 2008-02-17 22:31:52
 
 
 
@@ -266,16 +266,16 @@ Attachment [libm4ri-copyright2.patch](tarball://root/attachments/some-uuid/ticke
 archive/issue_comments_014457.json:
 ```json
 {
-    "body": "Attachment [givaro-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/givaro-copyright.patch) by tabbott created at 2008-02-17 22:37:31",
+    "body": "Attachment [givaro-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/givaro-copyright.patch) by @timabbott created at 2008-02-17 22:37:31",
     "created_at": "2008-02-17T22:37:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14457",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [givaro-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/givaro-copyright.patch) by tabbott created at 2008-02-17 22:37:31
+Attachment [givaro-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/givaro-copyright.patch) by @timabbott created at 2008-02-17 22:37:31
 
 
 
@@ -284,16 +284,16 @@ Attachment [givaro-copyright.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_comments_014458.json:
 ```json
 {
-    "body": "Attachment [sympow-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/sympow-copyright.patch) by tabbott created at 2008-02-18 00:27:05",
+    "body": "Attachment [sympow-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/sympow-copyright.patch) by @timabbott created at 2008-02-18 00:27:05",
     "created_at": "2008-02-18T00:27:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14458",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [sympow-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/sympow-copyright.patch) by tabbott created at 2008-02-18 00:27:05
+Attachment [sympow-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/sympow-copyright.patch) by @timabbott created at 2008-02-18 00:27:05
 
 
 
@@ -302,16 +302,16 @@ Attachment [sympow-copyright.patch](tarball://root/attachments/some-uuid/ticket2
 archive/issue_comments_014459.json:
 ```json
 {
-    "body": "Attachment [sage-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/sage-copyright.patch) by tabbott created at 2008-02-18 00:48:14",
+    "body": "Attachment [sage-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/sage-copyright.patch) by @timabbott created at 2008-02-18 00:48:14",
     "created_at": "2008-02-18T00:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14459",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [sage-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/sage-copyright.patch) by tabbott created at 2008-02-18 00:48:14
+Attachment [sage-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/sage-copyright.patch) by @timabbott created at 2008-02-18 00:48:14
 
 
 
@@ -374,7 +374,7 @@ archive/issue_comments_014462.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14462",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -474,16 +474,16 @@ Merged flint-copyright.patch in Sage 3.0.alpha0
 archive/issue_comments_014467.json:
 ```json
 {
-    "body": "Attachment [tachyon-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/tachyon-copyright.patch) by tabbott created at 2008-04-07 06:12:33",
+    "body": "Attachment [tachyon-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/tachyon-copyright.patch) by @timabbott created at 2008-04-07 06:12:33",
     "created_at": "2008-04-07T06:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14467",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
-Attachment [tachyon-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/tachyon-copyright.patch) by tabbott created at 2008-04-07 06:12:33
+Attachment [tachyon-copyright.patch](tarball://root/attachments/some-uuid/ticket2199/tachyon-copyright.patch) by @timabbott created at 2008-04-07 06:12:33
 
 
 
@@ -497,7 +497,7 @@ archive/issue_comments_014468.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2199#issuecomment-14468",
-    "user": "tabbott"
+    "user": "@timabbott"
 }
 ```
 
@@ -621,7 +621,7 @@ Changing priority from major to blocker.
 archive/issue_comments_014472.json:
 ```json
 {
-    "body": "Changing assignee from tabbott to mabshoff.",
+    "body": "Changing assignee from @timabbott to mabshoff.",
     "created_at": "2008-04-11T22:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2199",
     "type": "issue_comment",
@@ -630,7 +630,7 @@ archive/issue_comments_014472.json:
 }
 ```
 
-Changing assignee from tabbott to mabshoff.
+Changing assignee from @timabbott to mabshoff.
 
 
 

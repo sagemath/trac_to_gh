@@ -3,7 +3,7 @@
 archive/issues_006884.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  timdumol\n\nThe following doctests failed in Sage 4.1.2.alpha0 on mod.math:\n\n```\nsage -t -long devel/sage-main/sage/server/notebook/notebook.py # 12 doctests failed\nsage -t -long devel/sage-main/sage/server/notebook/worksheet.py # 5 doctests failed\n```\n\nThis was reported at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/5370af4b74c5ca3c) thread. A full log is attached with this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6884\n\n",
+    "body": "Assignee: boothby\n\nCC:  @TimDumol\n\nThe following doctests failed in Sage 4.1.2.alpha0 on mod.math:\n\n```\nsage -t -long devel/sage-main/sage/server/notebook/notebook.py # 12 doctests failed\nsage -t -long devel/sage-main/sage/server/notebook/worksheet.py # 5 doctests failed\n```\n\nThis was reported at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/5370af4b74c5ca3c) thread. A full log is attached with this ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6884\n\n",
     "created_at": "2009-09-04T07:45:12Z",
     "labels": [
         "notebook",
@@ -19,7 +19,7 @@ archive/issues_006884.json:
 ```
 Assignee: boothby
 
-CC:  timdumol
+CC:  @TimDumol
 
 The following doctests failed in Sage 4.1.2.alpha0 on mod.math:
 
@@ -66,7 +66,7 @@ archive/issue_comments_056888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6884#issuecomment-56888",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -79,16 +79,16 @@ Update MANIFEST.in to include all Jinja templates.
 archive/issue_comments_056889.json:
 ```json
 {
-    "body": "Attachment [trac_6684-templates_manifest.patch](tarball://root/attachments/some-uuid/ticket6884/trac_6684-templates_manifest.patch) by mpatel created at 2009-09-05 14:10:59\n\nI apologize for missing this.",
+    "body": "Attachment [trac_6684-templates_manifest.patch](tarball://root/attachments/some-uuid/ticket6884/trac_6684-templates_manifest.patch) by @qed777 created at 2009-09-05 14:10:59\n\nI apologize for missing this.",
     "created_at": "2009-09-05T14:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6884#issuecomment-56889",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6684-templates_manifest.patch](tarball://root/attachments/some-uuid/ticket6884/trac_6684-templates_manifest.patch) by mpatel created at 2009-09-05 14:10:59
+Attachment [trac_6684-templates_manifest.patch](tarball://root/attachments/some-uuid/ticket6884/trac_6684-templates_manifest.patch) by @qed777 created at 2009-09-05 14:10:59
 
 I apologize for missing this.
 
@@ -99,16 +99,16 @@ I apologize for missing this.
 archive/issue_comments_056890.json:
 ```json
 {
-    "body": "Attachment [trac_6884-templates_manifest.patch](tarball://root/attachments/some-uuid/ticket6884/trac_6884-templates_manifest.patch) by mpatel created at 2009-09-05 15:17:49\n\nCorrected ticket number in patch filename. Apply only this patch.",
+    "body": "Attachment [trac_6884-templates_manifest.patch](tarball://root/attachments/some-uuid/ticket6884/trac_6884-templates_manifest.patch) by @qed777 created at 2009-09-05 15:17:49\n\nCorrected ticket number in patch filename. Apply only this patch.",
     "created_at": "2009-09-05T15:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6884#issuecomment-56890",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_6884-templates_manifest.patch](tarball://root/attachments/some-uuid/ticket6884/trac_6884-templates_manifest.patch) by mpatel created at 2009-09-05 15:17:49
+Attachment [trac_6884-templates_manifest.patch](tarball://root/attachments/some-uuid/ticket6884/trac_6884-templates_manifest.patch) by @qed777 created at 2009-09-05 15:17:49
 
 Corrected ticket number in patch filename. Apply only this patch.
 
@@ -124,7 +124,7 @@ archive/issue_comments_056891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6884",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6884#issuecomment-56891",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_000737.json:
     "title": "inrange, better name for irange",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/737",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 Assignee: somebody
@@ -42,16 +42,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/737
 archive/issue_comments_004319.json:
 ```json
 {
-    "body": "Attachment [inrange.hg](tarball://root/attachments/some-uuid/ticket737/inrange.hg) by jsp created at 2007-09-22 19:23:05",
+    "body": "Attachment [inrange.hg](tarball://root/attachments/some-uuid/ticket737/inrange.hg) by @jaapspies created at 2007-09-22 19:23:05",
     "created_at": "2007-09-22T19:23:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/737#issuecomment-4319",
-    "user": "jsp"
+    "user": "@jaapspies"
 }
 ```
 
-Attachment [inrange.hg](tarball://root/attachments/some-uuid/ticket737/inrange.hg) by jsp created at 2007-09-22 19:23:05
+Attachment [inrange.hg](tarball://root/attachments/some-uuid/ticket737/inrange.hg) by @jaapspies created at 2007-09-22 19:23:05
 
 
 
@@ -65,7 +65,7 @@ archive/issue_comments_004320.json:
     "issue": "https://github.com/sagemath/sagetest/issues/737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/737#issuecomment-4320",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_004321.json:
     "issue": "https://github.com/sagemath/sagetest/issues/737",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/737#issuecomment-4321",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

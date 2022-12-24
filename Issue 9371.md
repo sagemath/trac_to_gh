@@ -3,7 +3,7 @@
 archive/issues_009371.json:
 ```json
 {
-    "body": "Assignee: weigandt\n\nCC:  cremona\n\nKeywords: elliptic curves, two torsion rank\n\nThe function E.two_torsion_rank() can easily be made to work over number fields. The current implementation over QQ calls E.torsion_subgroup() and makes nontrivial use of Mazur's torsion theorem. This should be more efficient and more general by considering the 2-division polynomial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9371\n\n",
+    "body": "Assignee: weigandt\n\nCC:  @JohnCremona\n\nKeywords: elliptic curves, two torsion rank\n\nThe function E.two_torsion_rank() can easily be made to work over number fields. The current implementation over QQ calls E.torsion_subgroup() and makes nontrivial use of Mazur's torsion theorem. This should be more efficient and more general by considering the 2-division polynomial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9371\n\n",
     "created_at": "2010-06-29T04:12:52Z",
     "labels": [
         "elliptic curves",
@@ -19,7 +19,7 @@ archive/issues_009371.json:
 ```
 Assignee: weigandt
 
-CC:  cremona
+CC:  @JohnCremona
 
 Keywords: elliptic curves, two torsion rank
 
@@ -95,7 +95,7 @@ archive/issue_comments_089046.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9371#issuecomment-89046",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -118,7 +118,7 @@ archive/issue_comments_089047.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9371#issuecomment-89047",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_089052.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9371#issuecomment-89052",
-    "user": "aly.deines"
+    "user": "@adeines"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_089055.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9371",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9371#issuecomment-89055",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

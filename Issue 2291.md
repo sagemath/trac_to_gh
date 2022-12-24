@@ -3,7 +3,7 @@
 archive/issues_002291.json:
 ```json
 {
-    "body": "Assignee: roed\n\nCC:  jbandlow@gmail.com\n\nJason Bandlow requested Laurent polynomial rings.  I've implemented them.  They need doctests, and need to have some NotImplementedErrors implemented.  :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2291\n\n",
+    "body": "Assignee: @roed314\n\nCC:  jbandlow@gmail.com\n\nJason Bandlow requested Laurent polynomial rings.  I've implemented them.  They need doctests, and need to have some NotImplementedErrors implemented.  :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2291\n\n",
     "created_at": "2008-02-24T10:24:07Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_002291.json:
     "title": "[with patch, needs additional work] Laurent Polynomial Rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2291",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 CC:  jbandlow@gmail.com
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/2291
 archive/issue_comments_015194.json:
 ```json
 {
-    "body": "Attachment [laurent-poly.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly.patch) by roed created at 2008-02-24 10:26:11\n\nInitial implementation",
+    "body": "Attachment [laurent-poly.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly.patch) by @roed314 created at 2008-02-24 10:26:11\n\nInitial implementation",
     "created_at": "2008-02-24T10:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2291#issuecomment-15194",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [laurent-poly.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly.patch) by roed created at 2008-02-24 10:26:11
+Attachment [laurent-poly.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly.patch) by @roed314 created at 2008-02-24 10:26:11
 
 Initial implementation
 
@@ -54,16 +54,16 @@ Initial implementation
 archive/issue_comments_015195.json:
 ```json
 {
-    "body": "Changing assignee from roed to mhansen.",
+    "body": "Changing assignee from @roed314 to @mwhansen.",
     "created_at": "2008-02-25T10:28:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2291#issuecomment-15195",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from roed to mhansen.
+Changing assignee from @roed314 to @mwhansen.
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_015196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2291#issuecomment-15196",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_015197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2291#issuecomment-15197",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_015198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2291#issuecomment-15198",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -126,16 +126,16 @@ second patch, on top of first.
 archive/issue_comments_015199.json:
 ```json
 {
-    "body": "Attachment [laurent-poly2.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly2.patch) by roed created at 2008-02-26 10:58:42\n\nthird patch, on top of second.",
+    "body": "Attachment [laurent-poly2.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly2.patch) by @roed314 created at 2008-02-26 10:58:42\n\nthird patch, on top of second.",
     "created_at": "2008-02-26T10:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2291#issuecomment-15199",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [laurent-poly2.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly2.patch) by roed created at 2008-02-26 10:58:42
+Attachment [laurent-poly2.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly2.patch) by @roed314 created at 2008-02-26 10:58:42
 
 third patch, on top of second.
 
@@ -146,16 +146,16 @@ third patch, on top of second.
 archive/issue_comments_015200.json:
 ```json
 {
-    "body": "Attachment [laurent-poly3.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly3.patch) by jbandlow created at 2008-02-27 19:13:14\n\nSimple fix to exponent(); mostly just making sure i understand the patch process",
+    "body": "Attachment [laurent-poly3.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly3.patch) by @jbandlow created at 2008-02-27 19:13:14\n\nSimple fix to exponent(); mostly just making sure i understand the patch process",
     "created_at": "2008-02-27T19:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2291#issuecomment-15200",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [laurent-poly3.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly3.patch) by jbandlow created at 2008-02-27 19:13:14
+Attachment [laurent-poly3.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly3.patch) by @jbandlow created at 2008-02-27 19:13:14
 
 Simple fix to exponent(); mostly just making sure i understand the patch process
 
@@ -166,16 +166,16 @@ Simple fix to exponent(); mostly just making sure i understand the patch process
 archive/issue_comments_015201.json:
 ```json
 {
-    "body": "Attachment [laurent-poly5.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly5.patch) by jbandlow created at 2008-02-29 00:06:59\n\nimproved init and coefficient, added doctests",
+    "body": "Attachment [laurent-poly5.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly5.patch) by @jbandlow created at 2008-02-29 00:06:59\n\nimproved init and coefficient, added doctests",
     "created_at": "2008-02-29T00:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2291",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2291#issuecomment-15201",
-    "user": "jbandlow"
+    "user": "@jbandlow"
 }
 ```
 
-Attachment [laurent-poly5.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly5.patch) by jbandlow created at 2008-02-29 00:06:59
+Attachment [laurent-poly5.patch](tarball://root/attachments/some-uuid/ticket2291/laurent-poly5.patch) by @jbandlow created at 2008-02-29 00:06:59
 
 improved init and coefficient, added doctests
 

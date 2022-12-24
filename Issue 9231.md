@@ -3,7 +3,7 @@
 archive/issues_009231.json:
 ```json
 {
-    "body": "Assignee: was\n\nCurrently 0/4 functions are tested in interfaces/tachyon.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9231\n\n",
+    "body": "Assignee: @williamstein\n\nCurrently 0/4 functions are tested in interfaces/tachyon.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9231\n\n",
     "created_at": "2010-06-13T12:40:15Z",
     "labels": [
         "interfaces",
@@ -17,7 +17,7 @@ archive/issues_009231.json:
     "user": "mhampton"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Currently 0/4 functions are tested in interfaces/tachyon.py.
 
@@ -93,7 +93,7 @@ archive/issue_comments_086626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9231#issuecomment-86626",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_086627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9231#issuecomment-86627",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_086628.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9231",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9231#issuecomment-86628",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 

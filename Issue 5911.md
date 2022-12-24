@@ -3,7 +3,7 @@
 archive/issues_005911.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nImagine a new user who wants to create a graph.  They do `Graph?` and they get (in order):\n\n1. Two pages of parameters, which they can't possibly read through.\n\n2. The first *page* of examples all involve networkx (they think -- huh?) and starts like this.\n\n\n```\n  \n    EXAMPLES: We illustrate the first six input formats (the other two\n    involve packages that are currently not standard in Sage):\n    \n    #. A NetworkX XGraph::\n    \n          sage: import networkx\n          sage: g = networkx.XGraph({0:[1,2,3], 2:[4]})\n          sage: Graph(g)\n          Graph on 5 vertices\n....\n```\n\n\nI propose:\n \n1. Putting a few simple straightforward examples (which is all most users need) right *before* the INPUT: block.\n\n2. Moving any mention of networkx lower in the lists, e.g., when defining the data input, don't put networkx first, and when documenting things later with examples, don't put networkx first. \n\n3. That one can do \"graphs.<tab>\" and get constructors for any family of graphs should be noted clearly and prominently, also before the INPUT: block.  This is not even noted anywhere right now, though it is used in two examples.\n\nThe above are all easy changes, I think. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5911\n\n",
+    "body": "Assignee: @rlmill\n\nImagine a new user who wants to create a graph.  They do `Graph?` and they get (in order):\n\n1. Two pages of parameters, which they can't possibly read through.\n\n2. The first *page* of examples all involve networkx (they think -- huh?) and starts like this.\n\n\n```\n  \n    EXAMPLES: We illustrate the first six input formats (the other two\n    involve packages that are currently not standard in Sage):\n    \n    #. A NetworkX XGraph::\n    \n          sage: import networkx\n          sage: g = networkx.XGraph({0:[1,2,3], 2:[4]})\n          sage: Graph(g)\n          Graph on 5 vertices\n....\n```\n\n\nI propose:\n \n1. Putting a few simple straightforward examples (which is all most users need) right *before* the INPUT: block.\n\n2. Moving any mention of networkx lower in the lists, e.g., when defining the data input, don't put networkx first, and when documenting things later with examples, don't put networkx first. \n\n3. That one can do \"graphs.<tab>\" and get constructors for any family of graphs should be noted clearly and prominently, also before the INPUT: block.  This is not even noted anywhere right now, though it is used in two examples.\n\nThe above are all easy changes, I think. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5911\n\n",
     "created_at": "2009-04-27T13:02:05Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_005911.json:
     "title": "greatly improve the documentation one gets from Graph?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5911",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 Imagine a new user who wants to create a graph.  They do `Graph?` and they get (in order):
 
@@ -67,7 +67,7 @@ archive/issue_comments_046710.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46710",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_046711.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46711",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_046712.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46712",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_046713.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46713",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_046714.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46714",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -183,16 +183,16 @@ Here is the patch you requested.. Where do you think we should store these docte
 archive/issue_comments_046715.json:
 ```json
 {
-    "body": "Attachment [doc_graph.patch](tarball://root/attachments/some-uuid/ticket5911/doc_graph.patch) by ncohen created at 2009-08-17 15:08:24",
+    "body": "Attachment [doc_graph.patch](tarball://root/attachments/some-uuid/ticket5911/doc_graph.patch) by @nathanncohen created at 2009-08-17 15:08:24",
     "created_at": "2009-08-17T15:08:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46715",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [doc_graph.patch](tarball://root/attachments/some-uuid/ticket5911/doc_graph.patch) by ncohen created at 2009-08-17 15:08:24
+Attachment [doc_graph.patch](tarball://root/attachments/some-uuid/ticket5911/doc_graph.patch) by @nathanncohen created at 2009-08-17 15:08:24
 
 
 
@@ -206,7 +206,7 @@ archive/issue_comments_046716.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46716",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_046717.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46717",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -237,16 +237,16 @@ apply on top of doc_graph.patch
 archive/issue_comments_046718.json:
 ```json
 {
-    "body": "Attachment [trac_5911-editing.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911-editing.patch) by ncohen created at 2009-08-26 19:40:54\n\nWhat about a good old  : \"cf. Graph\" (or a plain copy of Graph?), as it is exactly the same ? ^^;\n\nWe could just write a list of the functions of DiGraph that are unaavailable in Graph, couldn't we ?",
+    "body": "Attachment [trac_5911-editing.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911-editing.patch) by @nathanncohen created at 2009-08-26 19:40:54\n\nWhat about a good old  : \"cf. Graph\" (or a plain copy of Graph?), as it is exactly the same ? ^^;\n\nWe could just write a list of the functions of DiGraph that are unaavailable in Graph, couldn't we ?",
     "created_at": "2009-08-26T19:40:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46718",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_5911-editing.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911-editing.patch) by ncohen created at 2009-08-26 19:40:54
+Attachment [trac_5911-editing.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911-editing.patch) by @nathanncohen created at 2009-08-26 19:40:54
 
 What about a good old  : "cf. Graph" (or a plain copy of Graph?), as it is exactly the same ? ^^;
 
@@ -264,7 +264,7 @@ archive/issue_comments_046719.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46719",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_046720.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46720",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -305,7 +305,7 @@ archive/issue_comments_046721.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46721",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -323,7 +323,7 @@ archive/issue_comments_046722.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46722",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_046723.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46723",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -372,7 +372,7 @@ archive/issue_comments_046724.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46724",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -385,16 +385,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_046725.json:
 ```json
 {
-    "body": "Attachment [trac_5911.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911.patch) by ncohen created at 2009-10-13 08:22:07\n\nHmmm.. This -- should -- have been a flattened version of all the patches, though it is not and I wonder why. This patch needs doc_graph.patch to be applied first, and contains trac_5911-editing.patch. So only doc_graph.patch and this patch should be applied.\n\nI tried to build a real flattened version, but for some reason I can not O_o\n\nNathann",
+    "body": "Attachment [trac_5911.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911.patch) by @nathanncohen created at 2009-10-13 08:22:07\n\nHmmm.. This -- should -- have been a flattened version of all the patches, though it is not and I wonder why. This patch needs doc_graph.patch to be applied first, and contains trac_5911-editing.patch. So only doc_graph.patch and this patch should be applied.\n\nI tried to build a real flattened version, but for some reason I can not O_o\n\nNathann",
     "created_at": "2009-10-13T08:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46725",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_5911.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911.patch) by ncohen created at 2009-10-13 08:22:07
+Attachment [trac_5911.patch](tarball://root/attachments/some-uuid/ticket5911/trac_5911.patch) by @nathanncohen created at 2009-10-13 08:22:07
 
 Hmmm.. This -- should -- have been a flattened version of all the patches, though it is not and I wonder why. This patch needs doc_graph.patch to be applied first, and contains trac_5911-editing.patch. So only doc_graph.patch and this patch should be applied.
 
@@ -458,7 +458,7 @@ archive/issue_comments_046728.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46728",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -476,7 +476,7 @@ archive/issue_comments_046729.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46729",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_046730.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5911",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5911#issuecomment-46730",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_003963.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n```\nfrom sympy import Symbol\nQQ(1)+Symbol('x')*QQ(2)\n\nproduces an error:\n\nTypeError                                 Traceback (most recent call\nlast)\n\n/Applications/sage/<ipython console> in <module>()\n\n/Applications/sage/element.pyx in\nsage.structure.element.ModuleElement.__add__ (sage/structure/element.c:\n5606)()\n\n/Applications/sage/coerce.pyx in\nsage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/\ncoerce.c:6288)()\n\nTypeError: unsupported operand parent(s) for '+': 'Rational Field' and\n'<class 'sympy.core.mul.Mul'>'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3963\n\n",
+    "body": "Assignee: @williamstein\n\n\n```\nfrom sympy import Symbol\nQQ(1)+Symbol('x')*QQ(2)\n\nproduces an error:\n\nTypeError                                 Traceback (most recent call\nlast)\n\n/Applications/sage/<ipython console> in <module>()\n\n/Applications/sage/element.pyx in\nsage.structure.element.ModuleElement.__add__ (sage/structure/element.c:\n5606)()\n\n/Applications/sage/coerce.pyx in\nsage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/\ncoerce.c:6288)()\n\nTypeError: unsupported operand parent(s) for '+': 'Rational Field' and\n'<class 'sympy.core.mul.Mul'>'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3963\n\n",
     "created_at": "2008-08-27T00:52:43Z",
     "labels": [
         "interfaces",
@@ -14,10 +14,10 @@ archive/issues_003963.json:
     "title": "[with patch, needs review] bug in converting Sage's rationals to Sympy rationals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3963",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 ```
@@ -55,16 +55,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3963
 archive/issue_comments_028470.json:
 ```json
 {
-    "body": "Attachment [trac_3963.patch](tarball://root/attachments/some-uuid/ticket3963/trac_3963.patch) by mhansen created at 2008-08-27 00:53:57",
+    "body": "Attachment [trac_3963.patch](tarball://root/attachments/some-uuid/ticket3963/trac_3963.patch) by @mwhansen created at 2008-08-27 00:53:57",
     "created_at": "2008-08-27T00:53:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3963",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3963#issuecomment-28470",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3963.patch](tarball://root/attachments/some-uuid/ticket3963/trac_3963.patch) by mhansen created at 2008-08-27 00:53:57
+Attachment [trac_3963.patch](tarball://root/attachments/some-uuid/ticket3963/trac_3963.patch) by @mwhansen created at 2008-08-27 00:53:57
 
 
 

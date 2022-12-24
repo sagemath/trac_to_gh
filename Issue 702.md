@@ -3,7 +3,7 @@
 archive/issues_000702.json:
 ```json
 {
-    "body": "Assignee: was\n\nThere have been proposal to add syntax to SAGE similar to magma/mathmatica/etc 1..n for ranges. See the mailing list for much discusssion. \n\nIssue created by migration from https://trac.sagemath.org/ticket/702\n\n",
+    "body": "Assignee: @williamstein\n\nThere have been proposal to add syntax to SAGE similar to magma/mathmatica/etc 1..n for ranges. See the mailing list for much discusssion. \n\nIssue created by migration from https://trac.sagemath.org/ticket/702\n\n",
     "created_at": "2007-09-20T11:00:18Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000702.json:
     "title": "Ellipsis range notation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/702",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 There have been proposal to add syntax to SAGE similar to magma/mathmatica/etc 1..n for ranges. See the mailing list for much discusssion. 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/702
 archive/issue_comments_003681.json:
 ```json
 {
-    "body": "Attachment [ellipsis_iterator2.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator2.diff) by robertwb created at 2007-09-20 11:01:00",
+    "body": "Attachment [ellipsis_iterator2.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator2.diff) by @robertwb created at 2007-09-20 11:01:00",
     "created_at": "2007-09-20T11:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3681",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [ellipsis_iterator2.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator2.diff) by robertwb created at 2007-09-20 11:01:00
+Attachment [ellipsis_iterator2.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator2.diff) by @robertwb created at 2007-09-20 11:01:00
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_003682.json:
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3682",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -104,7 +104,7 @@ archive/issue_comments_003683.json:
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3683",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -117,16 +117,16 @@ Changing status from new to assigned.
 archive/issue_comments_003684.json:
 ```json
 {
-    "body": "Changing assignee from was to robertwb.",
+    "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-09-20T11:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3684",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from was to robertwb.
+Changing assignee from @williamstein to @robertwb.
 
 
 
@@ -135,16 +135,16 @@ Changing assignee from was to robertwb.
 archive/issue_comments_003685.json:
 ```json
 {
-    "body": "Attachment [ellipsis_iterator3.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator3.diff) by robertwb created at 2007-09-20 11:21:33",
+    "body": "Attachment [ellipsis_iterator3.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator3.diff) by @robertwb created at 2007-09-20 11:21:33",
     "created_at": "2007-09-20T11:21:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3685",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [ellipsis_iterator3.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator3.diff) by robertwb created at 2007-09-20 11:21:33
+Attachment [ellipsis_iterator3.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator3.diff) by @robertwb created at 2007-09-20 11:21:33
 
 
 
@@ -158,7 +158,7 @@ archive/issue_comments_003686.json:
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3686",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -179,16 +179,16 @@ sage: [A.next() for _ in range(10)]
 archive/issue_comments_003687.json:
 ```json
 {
-    "body": "Attachment [ellipsis_iterator4.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator4.diff) by robertwb created at 2007-09-20 19:06:10",
+    "body": "Attachment [ellipsis_iterator4.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator4.diff) by @robertwb created at 2007-09-20 19:06:10",
     "created_at": "2007-09-20T19:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3687",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [ellipsis_iterator4.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator4.diff) by robertwb created at 2007-09-20 19:06:10
+Attachment [ellipsis_iterator4.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator4.diff) by @robertwb created at 2007-09-20 19:06:10
 
 
 
@@ -202,7 +202,7 @@ archive/issue_comments_003688.json:
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3688",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -222,16 +222,16 @@ sage: list(1..5)
 archive/issue_comments_003689.json:
 ```json
 {
-    "body": "Attachment [ellipsis_iterator1-4.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator1-4.hg) by was created at 2007-09-20 20:11:03\n\nApplied.  (And I fixed a few bugs.)",
+    "body": "Attachment [ellipsis_iterator1-4.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator1-4.hg) by @williamstein created at 2007-09-20 20:11:03\n\nApplied.  (And I fixed a few bugs.)",
     "created_at": "2007-09-20T20:11:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3689",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [ellipsis_iterator1-4.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator1-4.hg) by was created at 2007-09-20 20:11:03
+Attachment [ellipsis_iterator1-4.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator1-4.hg) by @williamstein created at 2007-09-20 20:11:03
 
 Applied.  (And I fixed a few bugs.)
 
@@ -247,7 +247,7 @@ archive/issue_comments_003690.json:
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3690",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -265,7 +265,7 @@ archive/issue_comments_003691.json:
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3691",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -283,7 +283,7 @@ archive/issue_comments_003692.json:
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3692",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -301,7 +301,7 @@ archive/issue_comments_003693.json:
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3693",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -314,16 +314,16 @@ archive/issue_comments_003693.json:
 archive/issue_comments_003694.json:
 ```json
 {
-    "body": "Attachment [ellipsis-empty-range.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis-empty-range.hg) by robertwb created at 2007-09-21 22:58:52",
+    "body": "Attachment [ellipsis-empty-range.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis-empty-range.hg) by @robertwb created at 2007-09-21 22:58:52",
     "created_at": "2007-09-21T22:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3694",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [ellipsis-empty-range.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis-empty-range.hg) by robertwb created at 2007-09-21 22:58:52
+Attachment [ellipsis-empty-range.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis-empty-range.hg) by @robertwb created at 2007-09-21 22:58:52
 
 
 
@@ -337,7 +337,7 @@ archive/issue_comments_003695.json:
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3695",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -368,7 +368,7 @@ archive/issue_comments_003696.json:
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3696",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -386,7 +386,7 @@ archive/issue_comments_003697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3697",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_003698.json:
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3698",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_003699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3699",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

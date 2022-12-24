@@ -3,7 +3,7 @@
 archive/issues_006532.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jason mvngu schilly\n\nThis was reported by Aleksey G:\n\n\n```\nI tried to install package \"cluster\" for R and got this:\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: r.install_package(\"cluster\")\nError: object \"sage1\" not found\n```\n\nMinh N replied that the (positively reviewed) patch #6379 \nshould be applied but \"after applying that\npatch, installing cluster, restart Sage, and import the library\ncluster, Sage still doesn't recognize the cluster package. For\nexample, here is what I did under Sage 4.1:\"\n| Sage Version 4.0.2, Release Date: 2009-06-18                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n```\nsage: hg_sage.apply(\"http://www.sagetrac.org/sage_trac/raw-attachment/ticket/6379/trac_6379-Rdoctest.patch\")\n<applying the above patch>\nsage: exit\nExiting SAGE (CPU time 0m0.09s, Wall time 0m18.86s).\n[mvngu@sage sage-4.1-sage.math.washington.edu-x86_64-Linux]$ ./sage -br main\n<now install cluster>\nsage: r.install_packages(\"cluster\")\n<now restart Sage>\nsage: exit\nExiting SAGE (CPU time 0m0.50s, Wall time 0m22.15s).\n[mvngu@sage sage-4.1-sage.math.washington.edu-x86_64-Linux]$ ./sage -br main\n<now import the package cluster>\nsage: r.library(\"cluster\")\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/home/mvngu/.sage/temp/sage.math.washington.edu/16587/_home_mvngu__sage_init_sage_0.py\nin <module>()\n\n/scratch/mvngu/sage-4.1-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/interfaces/r.pyc\nin library(self, library_name)\n   557             # not all warnings (e.g. \"closing unused\nconnection 3\") are fatal\n\n   558             if 'library(' in ret:       # locale-independent key-word\n--> 559                 raise ImportError, \"%s\"%ret\n   560         else:\n   561             try:\n\nImportError: Loading required package: cluster\nWarning message:\nIn library(package, lib.loc = lib.loc, character.only = TRUE,\nlogical.return = TRUE,  :\n there is no package called 'cluster'\n```\n\nfrom\nMinh suspects that cluster has not been installed in a\ndirectory where R (the one bundled with Sage) recognizes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6532\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jasongrout mvngu @haraldschilly\n\nThis was reported by Aleksey G:\n\n\n```\nI tried to install package \"cluster\" for R and got this:\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: r.install_package(\"cluster\")\nError: object \"sage1\" not found\n```\n\nMinh N replied that the (positively reviewed) patch #6379 \nshould be applied but \"after applying that\npatch, installing cluster, restart Sage, and import the library\ncluster, Sage still doesn't recognize the cluster package. For\nexample, here is what I did under Sage 4.1:\"\n| Sage Version 4.0.2, Release Date: 2009-06-18                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n```\nsage: hg_sage.apply(\"http://www.sagetrac.org/sage_trac/raw-attachment/ticket/6379/trac_6379-Rdoctest.patch\")\n<applying the above patch>\nsage: exit\nExiting SAGE (CPU time 0m0.09s, Wall time 0m18.86s).\n[mvngu@sage sage-4.1-sage.math.washington.edu-x86_64-Linux]$ ./sage -br main\n<now install cluster>\nsage: r.install_packages(\"cluster\")\n<now restart Sage>\nsage: exit\nExiting SAGE (CPU time 0m0.50s, Wall time 0m22.15s).\n[mvngu@sage sage-4.1-sage.math.washington.edu-x86_64-Linux]$ ./sage -br main\n<now import the package cluster>\nsage: r.library(\"cluster\")\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/home/mvngu/.sage/temp/sage.math.washington.edu/16587/_home_mvngu__sage_init_sage_0.py\nin <module>()\n\n/scratch/mvngu/sage-4.1-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/interfaces/r.pyc\nin library(self, library_name)\n   557             # not all warnings (e.g. \"closing unused\nconnection 3\") are fatal\n\n   558             if 'library(' in ret:       # locale-independent key-word\n--> 559                 raise ImportError, \"%s\"%ret\n   560         else:\n   561             try:\n\nImportError: Loading required package: cluster\nWarning message:\nIn library(package, lib.loc = lib.loc, character.only = TRUE,\nlogical.return = TRUE,  :\n there is no package called 'cluster'\n```\n\nfrom\nMinh suspects that cluster has not been installed in a\ndirectory where R (the one bundled with Sage) recognizes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6532\n\n",
     "created_at": "2009-07-14T11:15:08Z",
     "labels": [
         "packages: standard",
@@ -14,12 +14,12 @@ archive/issues_006532.json:
     "title": "R packages installation problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6532",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 Assignee: mabshoff
 
-CC:  jason mvngu schilly
+CC:  @jasongrout mvngu @haraldschilly
 
 This was reported by Aleksey G:
 
@@ -99,7 +99,7 @@ archive/issue_comments_053244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53244",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -112,16 +112,16 @@ Changing status from new to assigned.
 archive/issue_comments_053245.json:
 ```json
 {
-    "body": "Changing assignee from mabshoff to jason.",
+    "body": "Changing assignee from mabshoff to @jasongrout.",
     "created_at": "2009-09-16T16:36:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53245",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from mabshoff to jason.
+Changing assignee from mabshoff to @jasongrout.
 
 
 
@@ -135,7 +135,7 @@ archive/issue_comments_053246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53246",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_053247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53247",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_053248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53248",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -228,16 +228,16 @@ Incidentally, we might as well upgrade now too - see http://www.r-project.org/, 
 archive/issue_comments_053249.json:
 ```json
 {
-    "body": "Attachment [trac_6532-r-upgrade.patch](tarball://root/attachments/some-uuid/ticket6532/trac_6532-r-upgrade.patch) by kcrisman created at 2009-12-27 01:51:18\n\nBased on 4.3",
+    "body": "Attachment [trac_6532-r-upgrade.patch](tarball://root/attachments/some-uuid/ticket6532/trac_6532-r-upgrade.patch) by @kcrisman created at 2009-12-27 01:51:18\n\nBased on 4.3",
     "created_at": "2009-12-27T01:51:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53249",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_6532-r-upgrade.patch](tarball://root/attachments/some-uuid/ticket6532/trac_6532-r-upgrade.patch) by kcrisman created at 2009-12-27 01:51:18
+Attachment [trac_6532-r-upgrade.patch](tarball://root/attachments/some-uuid/ticket6532/trac_6532-r-upgrade.patch) by @kcrisman created at 2009-12-27 01:51:18
 
 Based on 4.3
 
@@ -253,7 +253,7 @@ archive/issue_comments_053250.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53250",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -271,7 +271,7 @@ archive/issue_comments_053251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53251",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_053252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53252",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -307,7 +307,7 @@ archive/issue_comments_053253.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53253",
-    "user": "pjeremy"
+    "user": "@peterjeremy"
 }
 ```
 
@@ -343,7 +343,7 @@ archive/issue_comments_053254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53254",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -361,7 +361,7 @@ archive/issue_comments_053255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53255",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -379,7 +379,7 @@ archive/issue_comments_053256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53256",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -507,7 +507,7 @@ archive/issue_comments_053257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53257",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -546,7 +546,7 @@ archive/issue_comments_053258.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53258",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -582,7 +582,7 @@ archive/issue_comments_053259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53259",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -615,7 +615,7 @@ archive/issue_comments_053260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53260",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -633,7 +633,7 @@ archive/issue_comments_053261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53261",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_053262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53262",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -672,7 +672,7 @@ archive/issue_comments_053263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53263",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -699,7 +699,7 @@ archive/issue_comments_053264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6532",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6532#issuecomment-53264",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

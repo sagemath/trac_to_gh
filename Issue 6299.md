@@ -14,7 +14,7 @@ archive/issues_006299.json:
     "title": "major scoping error introduced by refactoring dsage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6299",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -64,16 +64,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6299
 archive/issue_comments_050254.json:
 ```json
 {
-    "body": "Attachment [trac_6299.patch](tarball://root/attachments/some-uuid/ticket6299/trac_6299.patch) by mhansen created at 2009-06-15 19:02:45",
+    "body": "Attachment [trac_6299.patch](tarball://root/attachments/some-uuid/ticket6299/trac_6299.patch) by @mwhansen created at 2009-06-15 19:02:45",
     "created_at": "2009-06-15T19:02:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6299#issuecomment-50254",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_6299.patch](tarball://root/attachments/some-uuid/ticket6299/trac_6299.patch) by mhansen created at 2009-06-15 19:02:45
+Attachment [trac_6299.patch](tarball://root/attachments/some-uuid/ticket6299/trac_6299.patch) by @mwhansen created at 2009-06-15 19:02:45
 
 
 
@@ -87,7 +87,7 @@ archive/issue_comments_050255.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6299#issuecomment-50255",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -100,16 +100,16 @@ Changing status from new to assigned.
 archive/issue_comments_050256.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-06-15T19:03:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6299#issuecomment-50256",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -123,7 +123,7 @@ archive/issue_comments_050257.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6299#issuecomment-50257",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -159,7 +159,7 @@ archive/issue_comments_050259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6299#issuecomment-50259",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_050260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6299",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6299#issuecomment-50260",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

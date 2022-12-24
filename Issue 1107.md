@@ -3,7 +3,7 @@
 archive/issues_001107.json:
 ```json
 {
-    "body": "Assignee: was\n\nAdd computation of Minkowski bound to number fields (very simple). \n\nIssue created by migration from https://trac.sagemath.org/ticket/1107\n\n",
+    "body": "Assignee: @williamstein\n\nAdd computation of Minkowski bound to number fields (very simple). \n\nIssue created by migration from https://trac.sagemath.org/ticket/1107\n\n",
     "created_at": "2007-11-05T21:29:44Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001107.json:
     "title": "[with patch] add minkowski bound function for number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1107",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Add computation of Minkowski bound to number fields (very simple). 
 
@@ -37,7 +37,7 @@ archive/issue_comments_006697.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1107#issuecomment-6697",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_006699.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1107#issuecomment-6699",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_006700.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1107#issuecomment-6700",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -134,16 +134,16 @@ archive/issue_comments_006700.json:
 archive/issue_comments_006701.json:
 ```json
 {
-    "body": "Attachment [minkowski.patch](tarball://root/attachments/some-uuid/ticket1107/minkowski.patch) by was created at 2007-11-27 05:48:08\n\nThis is rebased against 2.8.15",
+    "body": "Attachment [minkowski.patch](tarball://root/attachments/some-uuid/ticket1107/minkowski.patch) by @williamstein created at 2007-11-27 05:48:08\n\nThis is rebased against 2.8.15",
     "created_at": "2007-11-27T05:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1107#issuecomment-6701",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [minkowski.patch](tarball://root/attachments/some-uuid/ticket1107/minkowski.patch) by was created at 2007-11-27 05:48:08
+Attachment [minkowski.patch](tarball://root/attachments/some-uuid/ticket1107/minkowski.patch) by @williamstein created at 2007-11-27 05:48:08
 
 This is rebased against 2.8.15
 
@@ -159,7 +159,7 @@ archive/issue_comments_006702.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1107#issuecomment-6702",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_006703.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1107",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1107#issuecomment-6703",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

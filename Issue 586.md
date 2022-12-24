@@ -3,7 +3,7 @@
 archive/issues_000586.json:
 ```json
 {
-    "body": "Assignee: was\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/586\n\n",
+    "body": "Assignee: @williamstein\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/586\n\n",
     "created_at": "2007-09-04T08:52:22Z",
     "labels": [
         "packages: standard",
@@ -14,10 +14,10 @@ archive/issues_000586.json:
     "title": "remove merge-conflict lines from sage-sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/586",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 See attached patch.
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/586
 archive/issue_comments_003022.json:
 ```json
 {
-    "body": "Attachment [patch-gone-wild.patch](tarball://root/attachments/some-uuid/ticket586/patch-gone-wild.patch) by malb created at 2007-09-04 08:52:48",
+    "body": "Attachment [patch-gone-wild.patch](tarball://root/attachments/some-uuid/ticket586/patch-gone-wild.patch) by @malb created at 2007-09-04 08:52:48",
     "created_at": "2007-09-04T08:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/586#issuecomment-3022",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [patch-gone-wild.patch](tarball://root/attachments/some-uuid/ticket586/patch-gone-wild.patch) by malb created at 2007-09-04 08:52:48
+Attachment [patch-gone-wild.patch](tarball://root/attachments/some-uuid/ticket586/patch-gone-wild.patch) by @malb created at 2007-09-04 08:52:48
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_003023.json:
     "issue": "https://github.com/sagemath/sagetest/issues/586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/586#issuecomment-3023",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_003024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/586",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/586#issuecomment-3024",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

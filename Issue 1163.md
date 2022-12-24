@@ -3,7 +3,7 @@
 archive/issues_001163.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  burcin robertwb jason robert.marik\n\n\n```\nsage: assume(x > 0)\nsage: sqrt(x^2)\nx\nsage: assume(x < 0)\nsage: sqrt(x^2)\nx\n```\n\n\nMaybe it is not allowed to make two assumptions on the same variable, without any forget inbetween, anyway the documentation should be clear about this, or a warning should be issued.\nAlso, is there a way to know which assumptions were made on a given variable (like about in\nMaple)?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1163\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @burcin @robertwb @jasongrout @robert-marik\n\n\n```\nsage: assume(x > 0)\nsage: sqrt(x^2)\nx\nsage: assume(x < 0)\nsage: sqrt(x^2)\nx\n```\n\n\nMaybe it is not allowed to make two assumptions on the same variable, without any forget inbetween, anyway the documentation should be clear about this, or a warning should be issued.\nAlso, is there a way to know which assumptions were made on a given variable (like about in\nMaple)?\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1163\n\n",
     "created_at": "2007-11-13T11:58:31Z",
     "labels": [
         "calculus",
@@ -14,12 +14,12 @@ archive/issues_001163.json:
     "title": "assume seems to have some undesired side-effects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1163",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  burcin robertwb jason robert.marik
+CC:  @burcin @robertwb @jasongrout @robert-marik
 
 
 ```
@@ -54,7 +54,7 @@ archive/issue_comments_007116.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7116",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_007117.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7117",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_007118.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7118",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_007119.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7119",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -197,7 +197,7 @@ archive/issue_comments_007120.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7120",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -230,7 +230,7 @@ archive/issue_comments_007121.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7121",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -306,7 +306,7 @@ archive/issue_comments_007122.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7122",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -321,16 +321,16 @@ QEPCAD also simplifies the expression [x>=y /\ y>=z /\ z>= x] to [y-x=0 /\ z-y =
 archive/issue_comments_007123.json:
 ```json
 {
-    "body": "Changing assignee from was to gfurnish.",
+    "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-16T20:11:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7123",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
-Changing assignee from was to gfurnish.
+Changing assignee from @williamstein to @garyfurnish.
 
 
 
@@ -344,7 +344,7 @@ archive/issue_comments_007124.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7124",
-    "user": "gfurnish"
+    "user": "@garyfurnish"
 }
 ```
 
@@ -362,7 +362,7 @@ archive/issue_comments_007125.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7125",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -382,7 +382,7 @@ archive/issue_comments_007126.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7126",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -431,7 +431,7 @@ archive/issue_comments_007127.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7127",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -473,7 +473,7 @@ archive/issue_comments_007128.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7128",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -537,16 +537,16 @@ Now what?  The documentation of ex_to in Ginac, even when I found it on their we
 archive/issue_comments_007129.json:
 ```json
 {
-    "body": "Attachment [trac_1163-experimental.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163-experimental.patch) by kcrisman created at 2009-10-01 15:33:25\n\nBased on 4.1.2.alpha4, depends on #7084",
+    "body": "Attachment [trac_1163-experimental.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163-experimental.patch) by @kcrisman created at 2009-10-01 15:33:25\n\nBased on 4.1.2.alpha4, depends on #7084",
     "created_at": "2009-10-01T15:33:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7129",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_1163-experimental.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163-experimental.patch) by kcrisman created at 2009-10-01 15:33:25
+Attachment [trac_1163-experimental.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163-experimental.patch) by @kcrisman created at 2009-10-01 15:33:25
 
 Based on 4.1.2.alpha4, depends on #7084
 
@@ -562,7 +562,7 @@ archive/issue_comments_007130.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7130",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -584,16 +584,16 @@ So the problem really does seem to be the Ginac handling of !=, not something el
 archive/issue_comments_007131.json:
 ```json
 {
-    "body": "Attachment [trac_1163.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163.patch) by kcrisman created at 2009-10-02 15:58:27\n\nBased on 4.1.2.alpha4, depends on #7084",
+    "body": "Attachment [trac_1163.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163.patch) by @kcrisman created at 2009-10-02 15:58:27\n\nBased on 4.1.2.alpha4, depends on #7084",
     "created_at": "2009-10-02T15:58:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7131",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_1163.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163.patch) by kcrisman created at 2009-10-02 15:58:27
+Attachment [trac_1163.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163.patch) by @kcrisman created at 2009-10-02 15:58:27
 
 Based on 4.1.2.alpha4, depends on #7084
 
@@ -609,7 +609,7 @@ archive/issue_comments_007132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7132",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -650,7 +650,7 @@ archive/issue_comments_007133.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7133",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -671,16 +671,16 @@ Apply only 'final' patch.
 archive/issue_comments_007134.json:
 ```json
 {
-    "body": "Attachment [trac_1163-final.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163-final.patch) by kcrisman created at 2009-11-10 02:43:14",
+    "body": "Attachment [trac_1163-final.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163-final.patch) by @kcrisman created at 2009-11-10 02:43:14",
     "created_at": "2009-11-10T02:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7134",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_1163-final.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163-final.patch) by kcrisman created at 2009-11-10 02:43:14
+Attachment [trac_1163-final.patch](tarball://root/attachments/some-uuid/ticket1163/trac_1163-final.patch) by @kcrisman created at 2009-11-10 02:43:14
 
 
 
@@ -694,7 +694,7 @@ archive/issue_comments_007135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7135",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -724,7 +724,7 @@ archive/issue_comments_007136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7136",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -742,7 +742,7 @@ archive/issue_comments_007137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7137",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -777,7 +777,7 @@ archive/issue_comments_007138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7138",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -816,7 +816,7 @@ archive/issue_comments_007139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1163",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1163#issuecomment-7139",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

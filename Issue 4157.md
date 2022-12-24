@@ -14,7 +14,7 @@ archive/issues_004157.json:
     "title": "add introduction to README.txt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4157",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: mabshoff
@@ -57,7 +57,7 @@ archive/issue_comments_030183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4157",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4157#issuecomment-30183",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

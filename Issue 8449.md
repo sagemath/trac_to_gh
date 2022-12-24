@@ -14,7 +14,7 @@ archive/issues_008449.json:
     "title": "real_part? has an unescaped \\r",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8449",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 Assignee: mvngu
@@ -88,16 +88,16 @@ Changing status from new to needs_review.
 archive/issue_comments_075958.json:
 ```json
 {
-    "body": "Attachment [trac_8449.more_rs.patch](tarball://root/attachments/some-uuid/ticket8449/trac_8449.more_rs.patch) by burcin created at 2010-05-10 03:23:01",
+    "body": "Attachment [trac_8449.more_rs.patch](tarball://root/attachments/some-uuid/ticket8449/trac_8449.more_rs.patch) by @burcin created at 2010-05-10 03:23:01",
     "created_at": "2010-05-10T03:23:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75958",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [trac_8449.more_rs.patch](tarball://root/attachments/some-uuid/ticket8449/trac_8449.more_rs.patch) by burcin created at 2010-05-10 03:23:01
+Attachment [trac_8449.more_rs.patch](tarball://root/attachments/some-uuid/ticket8449/trac_8449.more_rs.patch) by @burcin created at 2010-05-10 03:23:01
 
 
 
@@ -111,7 +111,7 @@ archive/issue_comments_075959.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8449",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75959",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 

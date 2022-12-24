@@ -14,7 +14,7 @@ archive/issues_001442.json:
     "title": "wrong statement in calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1442",
-    "user": "zimmerma"
+    "user": "@zimmermann6"
 }
 ```
 Assignee: tba
@@ -40,16 +40,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/1442
 archive/issue_comments_009304.json:
 ```json
 {
-    "body": "Attachment [1442.patch](tarball://root/attachments/some-uuid/ticket1442/1442.patch) by mhansen created at 2007-12-14 07:19:13",
+    "body": "Attachment [1442.patch](tarball://root/attachments/some-uuid/ticket1442/1442.patch) by @mwhansen created at 2007-12-14 07:19:13",
     "created_at": "2007-12-14T07:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9304",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [1442.patch](tarball://root/attachments/some-uuid/ticket1442/1442.patch) by mhansen created at 2007-12-14 07:19:13
+Attachment [1442.patch](tarball://root/attachments/some-uuid/ticket1442/1442.patch) by @mwhansen created at 2007-12-14 07:19:13
 
 
 
@@ -58,16 +58,16 @@ Attachment [1442.patch](tarball://root/attachments/some-uuid/ticket1442/1442.pat
 archive/issue_comments_009305.json:
 ```json
 {
-    "body": "Changing assignee from tba to mhansen.",
+    "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2007-12-14T07:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9305",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from tba to mhansen.
+Changing assignee from tba to @mwhansen.
 
 
 
@@ -81,7 +81,7 @@ archive/issue_comments_009306.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9306",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -99,7 +99,7 @@ archive/issue_comments_009307.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1442",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9307",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_005454.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5454\n\n",
+    "body": "Assignee: tba\n\nCC:  @robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5454\n\n",
     "created_at": "2009-03-07T19:18:38Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_005454.json:
     "title": "[with patch, needs review] Add coercion documentation to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5454",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: tba
 
-CC:  robertwb
+CC:  @robertwb
 
 
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5454
 archive/issue_comments_042261.json:
 ```json
 {
-    "body": "Attachment [trac_5454.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454.patch) by mhansen created at 2009-03-07 19:20:04",
+    "body": "Attachment [trac_5454.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454.patch) by @mwhansen created at 2009-03-07 19:20:04",
     "created_at": "2009-03-07T19:20:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42261",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_5454.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454.patch) by mhansen created at 2009-03-07 19:20:04
+Attachment [trac_5454.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454.patch) by @mwhansen created at 2009-03-07 19:20:04
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_042262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42262",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_042263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42263",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_042264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42264",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_042265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42265",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_042266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42266",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_042267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42267",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_042268.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42268",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_042269.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42269",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -200,16 +200,16 @@ rebased to 4.0.1
 archive/issue_comments_042270.json:
 ```json
 {
-    "body": "Attachment [trac_5454_rebase.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454_rebase.patch) by davidloeffler created at 2009-06-10 10:31:20\n\nIt looks like the proposed renaming of _l_action_ etc hasn't yet happened, and we *seriously need* some documentation for the coercion model -- I've written or contributed to dozens of sage parent/element classes and I never knew half of this stuff, I learnt loads just from a five-minute skim-read of the new docs. We must get this into a release ASAP.\n\nIt's a great shame that this patch has been in limbo for three months just because our hackish use of text search for \"positive review\" in the summary field missed it due to a typo.",
+    "body": "Attachment [trac_5454_rebase.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454_rebase.patch) by @loefflerd created at 2009-06-10 10:31:20\n\nIt looks like the proposed renaming of _l_action_ etc hasn't yet happened, and we *seriously need* some documentation for the coercion model -- I've written or contributed to dozens of sage parent/element classes and I never knew half of this stuff, I learnt loads just from a five-minute skim-read of the new docs. We must get this into a release ASAP.\n\nIt's a great shame that this patch has been in limbo for three months just because our hackish use of text search for \"positive review\" in the summary field missed it due to a typo.",
     "created_at": "2009-06-10T10:31:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42270",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5454_rebase.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454_rebase.patch) by davidloeffler created at 2009-06-10 10:31:20
+Attachment [trac_5454_rebase.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454_rebase.patch) by @loefflerd created at 2009-06-10 10:31:20
 
 It looks like the proposed renaming of _l_action_ etc hasn't yet happened, and we *seriously need* some documentation for the coercion model -- I've written or contributed to dozens of sage parent/element classes and I never knew half of this stuff, I learnt loads just from a five-minute skim-read of the new docs. We must get this into a release ASAP.
 
@@ -227,7 +227,7 @@ archive/issue_comments_042271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42271",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_042272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42272",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -345,7 +345,7 @@ archive/issue_comments_042273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42273",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -358,16 +358,16 @@ apply over trac_5454_rebase.patch
 archive/issue_comments_042274.json:
 ```json
 {
-    "body": "Attachment [trac_5454_fix.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454_fix.patch) by davidloeffler created at 2009-06-14 10:47:47\n\nI've fixed the above problems, which were all due to trivial typos/thinkos in the doctests. Silly of me not to have run the tests when I was reviewing. Can I just reinstate the positive review, or do we need a second opinion?",
+    "body": "Attachment [trac_5454_fix.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454_fix.patch) by @loefflerd created at 2009-06-14 10:47:47\n\nI've fixed the above problems, which were all due to trivial typos/thinkos in the doctests. Silly of me not to have run the tests when I was reviewing. Can I just reinstate the positive review, or do we need a second opinion?",
     "created_at": "2009-06-14T10:47:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42274",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
-Attachment [trac_5454_fix.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454_fix.patch) by davidloeffler created at 2009-06-14 10:47:47
+Attachment [trac_5454_fix.patch](tarball://root/attachments/some-uuid/ticket5454/trac_5454_fix.patch) by @loefflerd created at 2009-06-14 10:47:47
 
 I've fixed the above problems, which were all due to trivial typos/thinkos in the doctests. Silly of me not to have run the tests when I was reviewing. Can I just reinstate the positive review, or do we need a second opinion?
 
@@ -383,7 +383,7 @@ archive/issue_comments_042275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5454",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42275",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

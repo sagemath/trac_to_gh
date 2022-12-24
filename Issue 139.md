@@ -3,7 +3,7 @@
 archive/issues_000139.json:
 ```json
 {
-    "body": "Assignee: was\n\nAdd code to devel/sage/setup.py so that a Pyrex file is pyrexed if it\nchanges *or* if any pxd file that it cimports changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/139\n\n",
+    "body": "Assignee: @williamstein\n\nAdd code to devel/sage/setup.py so that a Pyrex file is pyrexed if it\nchanges *or* if any pxd file that it cimports changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/139\n\n",
     "created_at": "2006-10-20T01:08:54Z",
     "labels": [
         "user interface",
@@ -14,10 +14,10 @@ archive/issues_000139.json:
     "title": "automatic dependency checking for pyrex files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/139",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Add code to devel/sage/setup.py so that a Pyrex file is pyrexed if it
 changes *or* if any pxd file that it cimports changes.
@@ -56,7 +56,7 @@ archive/issue_comments_000649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/139#issuecomment-649",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -74,7 +74,7 @@ archive/issue_comments_000650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/139#issuecomment-650",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_000651.json:
     "issue": "https://github.com/sagemath/sagetest/issues/139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/139#issuecomment-651",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_000652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/139#issuecomment-652",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_000653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/139",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/139#issuecomment-653",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

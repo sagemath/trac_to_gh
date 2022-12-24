@@ -14,7 +14,7 @@ archive/issues_006469.json:
     "title": "sage-4.1.rc0: numerical noise in graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6469",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 Assignee: tbd
@@ -57,16 +57,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/6469
 archive/issue_comments_052299.json:
 ```json
 {
-    "body": "Attachment [trac_6469_eigenvalue_noise.patch](tarball://root/attachments/some-uuid/ticket6469/trac_6469_eigenvalue_noise.patch) by rbeezer created at 2009-07-07 00:21:40\n\nDoctests added in #6258 are failing on some systems due to slightly different degrees of accuracy.  This patch truncates each non-integer value to 10 digits in these doctests.  Documentation builds fine, and sage/graphs/graph.py passes all tests on 64-bit Ubuntu 9.04 on Intel.",
+    "body": "Attachment [trac_6469_eigenvalue_noise.patch](tarball://root/attachments/some-uuid/ticket6469/trac_6469_eigenvalue_noise.patch) by @rbeezer created at 2009-07-07 00:21:40\n\nDoctests added in #6258 are failing on some systems due to slightly different degrees of accuracy.  This patch truncates each non-integer value to 10 digits in these doctests.  Documentation builds fine, and sage/graphs/graph.py passes all tests on 64-bit Ubuntu 9.04 on Intel.",
     "created_at": "2009-07-07T00:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6469#issuecomment-52299",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
-Attachment [trac_6469_eigenvalue_noise.patch](tarball://root/attachments/some-uuid/ticket6469/trac_6469_eigenvalue_noise.patch) by rbeezer created at 2009-07-07 00:21:40
+Attachment [trac_6469_eigenvalue_noise.patch](tarball://root/attachments/some-uuid/ticket6469/trac_6469_eigenvalue_noise.patch) by @rbeezer created at 2009-07-07 00:21:40
 
 Doctests added in #6258 are failing on some systems due to slightly different degrees of accuracy.  This patch truncates each non-integer value to 10 digits in these doctests.  Documentation builds fine, and sage/graphs/graph.py passes all tests on 64-bit Ubuntu 9.04 on Intel.
 
@@ -100,7 +100,7 @@ archive/issue_comments_052301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6469",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6469#issuecomment-52301",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

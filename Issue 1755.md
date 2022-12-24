@@ -3,7 +3,7 @@
 archive/issues_001755.json:
 ```json
 {
-    "body": "Assignee: was\n\nAdd the ability to access the functionality of #1732 to the default matrix(...) constructor.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1755\n\n",
+    "body": "Assignee: @williamstein\n\nAdd the ability to access the functionality of #1732 to the default matrix(...) constructor.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1755\n\n",
     "created_at": "2008-01-11T03:17:59Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001755.json:
     "title": "Hook block matrices into matrix(...) command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1755",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 Add the ability to access the functionality of #1732 to the default matrix(...) constructor.
 
@@ -37,7 +37,7 @@ archive/issue_comments_011077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1755#issuecomment-11077",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_011080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1755#issuecomment-11080",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_011081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1755#issuecomment-11081",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_011082.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1755",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1755#issuecomment-11082",
-    "user": "embray"
+    "user": "@embray"
 }
 ```
 

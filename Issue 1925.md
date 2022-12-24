@@ -3,7 +3,7 @@
 archive/issues_001925.json:
 ```json
 {
-    "body": "Assignee: was\n\nWhile working on #1766 I was not able to save 3d plots in files. There were also some other  questions about printing/saving 3d plots in the discussion groups. I think there is a need for some unification.\n\nFirst, my proposal is to distinguish between notebook-mode and non-interactive-script mode. I think this is a good idea, because in script mode somebody is usually not interested in a java applet or popup graphic, but want's to save the output.\n\nSecond, the .show() command should work the same. In #1766 I was able to save everything created by matplotlib but not the 3d stuff by tachyon. There should be a general design decision to make this possible. Or using another 3d plotting engine.\n\nThird, there should be some kind of doctest to ensure this. e.g. plotting all possible output formats to a TempFile (python's temp files) and testing if the file exists and has size > 0kb.\n\nThere should also be some information (function returning a list of possible values) about the possible output formats. Also, the documentation of \"plot\" does not mention PDF, but PDF works. \n\nThis Issue is quite general, but I think it touches important problems...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1925\n\n",
+    "body": "Assignee: @williamstein\n\nWhile working on #1766 I was not able to save 3d plots in files. There were also some other  questions about printing/saving 3d plots in the discussion groups. I think there is a need for some unification.\n\nFirst, my proposal is to distinguish between notebook-mode and non-interactive-script mode. I think this is a good idea, because in script mode somebody is usually not interested in a java applet or popup graphic, but want's to save the output.\n\nSecond, the .show() command should work the same. In #1766 I was able to save everything created by matplotlib but not the 3d stuff by tachyon. There should be a general design decision to make this possible. Or using another 3d plotting engine.\n\nThird, there should be some kind of doctest to ensure this. e.g. plotting all possible output formats to a TempFile (python's temp files) and testing if the file exists and has size > 0kb.\n\nThere should also be some information (function returning a list of possible values) about the possible output formats. Also, the documentation of \"plot\" does not mention PDF, but PDF works. \n\nThis Issue is quite general, but I think it touches important problems...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1925\n\n",
     "created_at": "2008-01-25T12:48:47Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_001925.json:
     "title": "unifying [plotobject].show() interface + tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1925",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 While working on #1766 I was not able to save 3d plots in files. There were also some other  questions about printing/saving 3d plots in the discussion groups. I think there is a need for some unification.
 
@@ -47,7 +47,7 @@ archive/issue_comments_012215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1925",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1925#issuecomment-12215",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

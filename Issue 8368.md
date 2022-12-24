@@ -3,7 +3,7 @@
 archive/issues_008368.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  kcrisman wcauchois robert.marik\n\nThis patch adds the option of creating a color bar on a filled contour plot.  See the doctests in the patch for examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8368\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @kcrisman wcauchois @robert-marik\n\nThis patch adds the option of creating a color bar on a filled contour plot.  See the doctests in the patch for examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8368\n\n",
     "created_at": "2010-02-25T19:15:12Z",
     "labels": [
         "graphics",
@@ -14,12 +14,12 @@ archive/issues_008368.json:
     "title": "add colorbar option to contour_plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8368",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  kcrisman wcauchois robert.marik
+CC:  @kcrisman wcauchois @robert-marik
 
 This patch adds the option of creating a color bar on a filled contour plot.  See the doctests in the patch for examples.
 
@@ -39,7 +39,7 @@ archive/issue_comments_074796.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8368#issuecomment-74796",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_074797.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8368#issuecomment-74797",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_074798.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8368#issuecomment-74798",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_074800.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8368#issuecomment-74800",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_074801.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8368#issuecomment-74801",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_074803.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8368#issuecomment-74803",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_074804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8368#issuecomment-74804",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -225,16 +225,16 @@ apply on top of previous patch
 archive/issue_comments_074805.json:
 ```json
 {
-    "body": "Attachment [trac-8368-fix-options.patch](tarball://root/attachments/some-uuid/ticket8368/trac-8368-fix-options.patch) by jason created at 2010-04-16 11:57:06\n\nI fixed both issues in the above patch.\n\nI also doctested contour_plot.py this time!\u00a0 Things should work now.",
+    "body": "Attachment [trac-8368-fix-options.patch](tarball://root/attachments/some-uuid/ticket8368/trac-8368-fix-options.patch) by @jasongrout created at 2010-04-16 11:57:06\n\nI fixed both issues in the above patch.\n\nI also doctested contour_plot.py this time!\u00a0 Things should work now.",
     "created_at": "2010-04-16T11:57:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8368#issuecomment-74805",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac-8368-fix-options.patch](tarball://root/attachments/some-uuid/ticket8368/trac-8368-fix-options.patch) by jason created at 2010-04-16 11:57:06
+Attachment [trac-8368-fix-options.patch](tarball://root/attachments/some-uuid/ticket8368/trac-8368-fix-options.patch) by @jasongrout created at 2010-04-16 11:57:06
 
 I fixed both issues in the above patch.
 
@@ -252,7 +252,7 @@ archive/issue_comments_074806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8368#issuecomment-74806",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_074807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8368#issuecomment-74807",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_074808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8368#issuecomment-74808",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -312,7 +312,7 @@ archive/issue_comments_074809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8368",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8368#issuecomment-74809",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

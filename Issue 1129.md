@@ -3,7 +3,7 @@
 archive/issues_001129.json:
 ```json
 {
-    "body": "Assignee: was\n\nsage: F.<t> = NumberField(x^2-5)\nsage: Fx.<xF> = PolynomialRing(F)\nsage: f = Fx([2*t - 5, 5*t - 10, 3*t - 6, -t, -t + 2, 1])\nsage: f.is_irreducible()\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/home/jvoight/<ipython console> in <module>()\n\n/home/jvoight/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.is_irreducible()\n\n/home/jvoight/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.factor()\n\n/home/jvoight/gen.pyx in sage.libs.pari.gen._pari_trap()\n\n<class 'sage.libs.pari.gen.PariError'>:  (8)\nsage: %magma\n\n  --> Switching to Magma <--\n\n''\nmagma: F<t> := NumberField(Polynomial([-5,0,1]));\n\nmagma: Factorization(Polynomial([2*t - 5, 5*t - 10, 3*t - 6, -t, -t + 2, 1]));\n\n[\n<$.1 + 1, 1>,\n<$.1 + 1/2*(-t + 1), 2>,\n<$.1^2 + 1/2*(t - 5), 1>\n]\nmagma: quit\n\nIssue created by migration from https://trac.sagemath.org/ticket/1129\n\n",
+    "body": "Assignee: @williamstein\n\nsage: F.<t> = NumberField(x^2-5)\nsage: Fx.<xF> = PolynomialRing(F)\nsage: f = Fx([2*t - 5, 5*t - 10, 3*t - 6, -t, -t + 2, 1])\nsage: f.is_irreducible()\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/home/jvoight/<ipython console> in <module>()\n\n/home/jvoight/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.is_irreducible()\n\n/home/jvoight/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.factor()\n\n/home/jvoight/gen.pyx in sage.libs.pari.gen._pari_trap()\n\n<class 'sage.libs.pari.gen.PariError'>:  (8)\nsage: %magma\n\n  --> Switching to Magma <--\n\n''\nmagma: F<t> := NumberField(Polynomial([-5,0,1]));\n\nmagma: Factorization(Polynomial([2*t - 5, 5*t - 10, 3*t - 6, -t, -t + 2, 1]));\n\n[\n<$.1 + 1, 1>,\n<$.1 + 1/2*(-t + 1), 2>,\n<$.1^2 + 1/2*(t - 5), 1>\n]\nmagma: quit\n\nIssue created by migration from https://trac.sagemath.org/ticket/1129\n\n",
     "created_at": "2007-11-08T16:22:36Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_001129.json:
     "title": "is_irreducible()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1129",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 sage: F.<t> = NumberField(x^2-5)
 sage: Fx.<xF> = PolynomialRing(F)
@@ -67,7 +67,7 @@ archive/issue_comments_006825.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6825",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -103,7 +103,7 @@ archive/issue_comments_006826.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6826",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_006827.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6827",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -149,16 +149,16 @@ Changing status from new to assigned.
 archive/issue_comments_006828.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2007-12-01T23:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6828",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -200,7 +200,7 @@ archive/issue_comments_006830.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6830",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -218,7 +218,7 @@ archive/issue_comments_006831.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6831",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -249,16 +249,16 @@ Traceback (most recent call last):
 archive/issue_comments_006832.json:
 ```json
 {
-    "body": "Attachment [trac_1129.hg](tarball://root/attachments/some-uuid/ticket1129/trac_1129.hg) by craigcitro created at 2007-12-02 10:11:28",
+    "body": "Attachment [trac_1129.hg](tarball://root/attachments/some-uuid/ticket1129/trac_1129.hg) by @craigcitro created at 2007-12-02 10:11:28",
     "created_at": "2007-12-02T10:11:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6832",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac_1129.hg](tarball://root/attachments/some-uuid/ticket1129/trac_1129.hg) by craigcitro created at 2007-12-02 10:11:28
+Attachment [trac_1129.hg](tarball://root/attachments/some-uuid/ticket1129/trac_1129.hg) by @craigcitro created at 2007-12-02 10:11:28
 
 
 
@@ -272,7 +272,7 @@ archive/issue_comments_006833.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6833",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -303,16 +303,16 @@ Mostly I like the patch.  I do have one question, though: you use the slow path 
 archive/issue_comments_006835.json:
 ```json
 {
-    "body": "Attachment [1129_2.patch](tarball://root/attachments/some-uuid/ticket1129/1129_2.patch) by craigcitro created at 2007-12-02 19:07:38",
+    "body": "Attachment [1129_2.patch](tarball://root/attachments/some-uuid/ticket1129/1129_2.patch) by @craigcitro created at 2007-12-02 19:07:38",
     "created_at": "2007-12-02T19:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6835",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [1129_2.patch](tarball://root/attachments/some-uuid/ticket1129/1129_2.patch) by craigcitro created at 2007-12-02 19:07:38
+Attachment [1129_2.patch](tarball://root/attachments/some-uuid/ticket1129/1129_2.patch) by @craigcitro created at 2007-12-02 19:07:38
 
 
 
@@ -326,7 +326,7 @@ archive/issue_comments_006836.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1129",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1129#issuecomment-6836",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

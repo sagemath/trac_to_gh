@@ -3,7 +3,7 @@
 archive/issues_004852.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nCC:  ekirkman\n\nWe really probably ought to use the very nice `@`option and `@`suboption functionality for doing plots of graphs. That would make it easier to specify edge/vertex options, for example, and to retrieve existing defaults, etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4852\n\n",
+    "body": "Assignee: @rlmill\n\nCC:  ekirkman\n\nWe really probably ought to use the very nice `@`option and `@`suboption functionality for doing plots of graphs. That would make it easier to specify edge/vertex options, for example, and to retrieve existing defaults, etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4852\n\n",
     "created_at": "2008-12-22T18:37:25Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_004852.json:
     "title": "graph plotting using @option and @suboption",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4852",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 CC:  ekirkman
 
@@ -35,16 +35,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4852
 archive/issue_comments_036785.json:
 ```json
 {
-    "body": "Changing assignee from rlm to jason.",
+    "body": "Changing assignee from @rlmill to @jasongrout.",
     "created_at": "2008-12-22T18:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36785",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Changing assignee from rlm to jason.
+Changing assignee from @rlmill to @jasongrout.
 
 
 
@@ -58,7 +58,7 @@ archive/issue_comments_036786.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36786",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -76,7 +76,7 @@ archive/issue_comments_036787.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36787",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_036788.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36788",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_036789.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36789",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_036790.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36790",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_036791.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36791",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_036792.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36792",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_036793.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36793",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -214,7 +214,7 @@ archive/issue_comments_036794.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36794",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_036795.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36795",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

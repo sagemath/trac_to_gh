@@ -3,7 +3,7 @@
 archive/issues_002320.json:
 ```json
 {
-    "body": "Assignee: yi\n\nThese shorthands are broken right now because of changes to the dsage scripts. We need to either \n\n1) remove these shorthands\n2) fix them\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2320\n\n",
+    "body": "Assignee: @yqiang\n\nThese shorthands are broken right now because of changes to the dsage scripts. We need to either \n\n1) remove these shorthands\n2) fix them\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2320\n\n",
     "created_at": "2008-02-26T17:46:08Z",
     "labels": [
         "dsage",
@@ -14,10 +14,10 @@ archive/issues_002320.json:
     "title": "sage -server, sage -worker, sage -dsage broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2320",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
-Assignee: yi
+Assignee: @yqiang
 
 These shorthands are broken right now because of changes to the dsage scripts. We need to either 
 
@@ -42,7 +42,7 @@ archive/issue_comments_015428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2320#issuecomment-15428",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -55,16 +55,16 @@ patch for SAGE_ROOT/local/bin/sage-sage
 archive/issue_comments_015429.json:
 ```json
 {
-    "body": "Attachment [sage-sage.patch](tarball://root/attachments/some-uuid/ticket2320/sage-sage.patch) by yi created at 2008-02-29 06:40:21\n\nI've attached the patch, after applying it make sure to chmod +x sage-dsage-*. This is against the hg_scripts repository.",
+    "body": "Attachment [sage-sage.patch](tarball://root/attachments/some-uuid/ticket2320/sage-sage.patch) by @yqiang created at 2008-02-29 06:40:21\n\nI've attached the patch, after applying it make sure to chmod +x sage-dsage-*. This is against the hg_scripts repository.",
     "created_at": "2008-02-29T06:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2320#issuecomment-15429",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Attachment [sage-sage.patch](tarball://root/attachments/some-uuid/ticket2320/sage-sage.patch) by yi created at 2008-02-29 06:40:21
+Attachment [sage-sage.patch](tarball://root/attachments/some-uuid/ticket2320/sage-sage.patch) by @yqiang created at 2008-02-29 06:40:21
 
 I've attached the patch, after applying it make sure to chmod +x sage-dsage-*. This is against the hg_scripts repository.
 
@@ -80,7 +80,7 @@ archive/issue_comments_015430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2320#issuecomment-15430",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_015431.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2320#issuecomment-15431",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -111,16 +111,16 @@ Reassigning to William for review since he's the man behind sage-sage :-)
 archive/issue_comments_015432.json:
 ```json
 {
-    "body": "Changing assignee from yi to was.",
+    "body": "Changing assignee from @yqiang to @williamstein.",
     "created_at": "2008-03-02T01:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2320#issuecomment-15432",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
-Changing assignee from yi to was.
+Changing assignee from @yqiang to @williamstein.
 
 
 
@@ -134,7 +134,7 @@ archive/issue_comments_015433.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2320#issuecomment-15433",
-    "user": "yi"
+    "user": "@yqiang"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_015434.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2320",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2320#issuecomment-15434",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

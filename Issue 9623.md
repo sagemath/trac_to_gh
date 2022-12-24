@@ -3,7 +3,7 @@
 archive/issues_009623.json:
 ```json
 {
-    "body": "Assignee: itolkov, jason\n\nCC:  kcrisman mhampton robert.marik rbeezer jthurber\n\nInclude the interacts listed [here](http://groups.google.com/group/sage-edu/browse_thread/thread/2322cf17a710d205) in `$SAGE/devel/sage-main/sage/interacts/...`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9623\n\n",
+    "body": "Assignee: itolkov, jason\n\nCC:  @kcrisman mhampton @robert-marik @rbeezer jthurber\n\nInclude the interacts listed [here](http://groups.google.com/group/sage-edu/browse_thread/thread/2322cf17a710d205) in `$SAGE/devel/sage-main/sage/interacts/...`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9623\n\n",
     "created_at": "2010-07-28T10:41:53Z",
     "labels": [
         "interact",
@@ -14,12 +14,12 @@ archive/issues_009623.json:
     "title": "interacts for high school level",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9623",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 Assignee: itolkov, jason
 
-CC:  kcrisman mhampton robert.marik rbeezer jthurber
+CC:  @kcrisman mhampton @robert-marik @rbeezer jthurber
 
 Include the interacts listed [here](http://groups.google.com/group/sage-edu/browse_thread/thread/2322cf17a710d205) in `$SAGE/devel/sage-main/sage/interacts/...`
 
@@ -39,7 +39,7 @@ archive/issue_comments_093218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93218",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_093219.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93219",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_093220.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93220",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -96,16 +96,16 @@ the "from the wiki" patch is meant to be applied on top of the "high school" pat
 archive/issue_comments_093221.json:
 ```json
 {
-    "body": "Attachment [9623-interacts-high-school.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interacts-high-school.patch) by schilly created at 2010-07-30 16:29:27",
+    "body": "Attachment [9623-interacts-high-school.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interacts-high-school.patch) by @haraldschilly created at 2010-07-30 16:29:27",
     "created_at": "2010-07-30T16:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93221",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [9623-interacts-high-school.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interacts-high-school.patch) by schilly created at 2010-07-30 16:29:27
+Attachment [9623-interacts-high-school.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interacts-high-school.patch) by @haraldschilly created at 2010-07-30 16:29:27
 
 
 
@@ -114,16 +114,16 @@ Attachment [9623-interacts-high-school.patch](tarball://root/attachments/some-uu
 archive/issue_comments_093222.json:
 ```json
 {
-    "body": "Attachment [9623-from-the-wiki.patch](tarball://root/attachments/some-uuid/ticket9623/9623-from-the-wiki.patch) by schilly created at 2010-07-30 16:29:36",
+    "body": "Attachment [9623-from-the-wiki.patch](tarball://root/attachments/some-uuid/ticket9623/9623-from-the-wiki.patch) by @haraldschilly created at 2010-07-30 16:29:36",
     "created_at": "2010-07-30T16:29:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93222",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [9623-from-the-wiki.patch](tarball://root/attachments/some-uuid/ticket9623/9623-from-the-wiki.patch) by schilly created at 2010-07-30 16:29:36
+Attachment [9623-from-the-wiki.patch](tarball://root/attachments/some-uuid/ticket9623/9623-from-the-wiki.patch) by @haraldschilly created at 2010-07-30 16:29:36
 
 
 
@@ -137,7 +137,7 @@ archive/issue_comments_093223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93223",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_093224.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93224",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -168,16 +168,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_093225.json:
 ```json
 {
-    "body": "Attachment [9623-interact-examples.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interact-examples.patch) by schilly created at 2010-07-31 13:21:59",
+    "body": "Attachment [9623-interact-examples.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interact-examples.patch) by @haraldschilly created at 2010-07-31 13:21:59",
     "created_at": "2010-07-31T13:21:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93225",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
-Attachment [9623-interact-examples.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interact-examples.patch) by schilly created at 2010-07-31 13:21:59
+Attachment [9623-interact-examples.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interact-examples.patch) by @haraldschilly created at 2010-07-31 13:21:59
 
 
 
@@ -191,7 +191,7 @@ archive/issue_comments_093226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93226",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -209,7 +209,7 @@ archive/issue_comments_093227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93227",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_093228.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93228",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -261,7 +261,7 @@ archive/issue_comments_093229.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93229",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_093230.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93230",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -308,16 +308,16 @@ apply after 9623-interact-examples.patch
 archive/issue_comments_093231.json:
 ```json
 {
-    "body": "Attachment [9623-interact-examples2.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interact-examples2.patch) by robert.marik created at 2010-08-17 14:08:04\n\nBtw: The interact for riemann integral is a part of work which has been supported by the grant 131/2010 of the [FRV\u0160](http://www.frvs.cz/)\n\nKnown problem for trapezoidal and simpson integration: bad rendering of the computation if we integrate negative function: minus sign follows dot or plus sign.",
+    "body": "Attachment [9623-interact-examples2.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interact-examples2.patch) by @robert-marik created at 2010-08-17 14:08:04\n\nBtw: The interact for riemann integral is a part of work which has been supported by the grant 131/2010 of the [FRV\u0160](http://www.frvs.cz/)\n\nKnown problem for trapezoidal and simpson integration: bad rendering of the computation if we integrate negative function: minus sign follows dot or plus sign.",
     "created_at": "2010-08-17T14:08:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93231",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [9623-interact-examples2.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interact-examples2.patch) by robert.marik created at 2010-08-17 14:08:04
+Attachment [9623-interact-examples2.patch](tarball://root/attachments/some-uuid/ticket9623/9623-interact-examples2.patch) by @robert-marik created at 2010-08-17 14:08:04
 
 Btw: The interact for riemann integral is a part of work which has been supported by the grant 131/2010 of the [FRVŠ](http://www.frvs.cz/)
 
@@ -335,7 +335,7 @@ archive/issue_comments_093232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93232",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -358,7 +358,7 @@ archive/issue_comments_093233.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93233",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -388,7 +388,7 @@ archive/issue_comments_093234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93234",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -401,16 +401,16 @@ apply on top of previous patches
 archive/issue_comments_093235.json:
 ```json
 {
-    "body": "Attachment [9623-reviewer2.patch](tarball://root/attachments/some-uuid/ticket9623/9623-reviewer2.patch) by jason created at 2010-09-28 14:53:38\n\nRobert's changes look good.  Can someone comment on points 2 and 3 in my list above?",
+    "body": "Attachment [9623-reviewer2.patch](tarball://root/attachments/some-uuid/ticket9623/9623-reviewer2.patch) by @jasongrout created at 2010-09-28 14:53:38\n\nRobert's changes look good.  Can someone comment on points 2 and 3 in my list above?",
     "created_at": "2010-09-28T14:53:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93235",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [9623-reviewer2.patch](tarball://root/attachments/some-uuid/ticket9623/9623-reviewer2.patch) by jason created at 2010-09-28 14:53:38
+Attachment [9623-reviewer2.patch](tarball://root/attachments/some-uuid/ticket9623/9623-reviewer2.patch) by @jasongrout created at 2010-09-28 14:53:38
 
 Robert's changes look good.  Can someone comment on points 2 and 3 in my list above?
 
@@ -466,7 +466,7 @@ archive/issue_comments_093238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93238",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -519,16 +519,16 @@ Apply only this patch; using Jason's idea from #10622
 archive/issue_comments_093241.json:
 ```json
 {
-    "body": "Attachment [trac_9623_rebase_and_import_change_v2.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623_rebase_and_import_change_v2.patch) by kcrisman created at 2011-01-13 19:12:48\n\nAgreed on the quick reviewing need.  I wish I weren't looking at these things just for five minutes each time, but I haven't had a stretch of time for proper reviewing yet.\n> Also, did we ever get the issue about how these are doctested figured out?\nI can't remember where this was, and searching for it online proves to be a nightmare of unrelated hits.   I'm going to email Jason about this.",
+    "body": "Attachment [trac_9623_rebase_and_import_change_v2.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623_rebase_and_import_change_v2.patch) by @kcrisman created at 2011-01-13 19:12:48\n\nAgreed on the quick reviewing need.  I wish I weren't looking at these things just for five minutes each time, but I haven't had a stretch of time for proper reviewing yet.\n> Also, did we ever get the issue about how these are doctested figured out?\nI can't remember where this was, and searching for it online proves to be a nightmare of unrelated hits.   I'm going to email Jason about this.",
     "created_at": "2011-01-13T19:12:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93241",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9623_rebase_and_import_change_v2.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623_rebase_and_import_change_v2.patch) by kcrisman created at 2011-01-13 19:12:48
+Attachment [trac_9623_rebase_and_import_change_v2.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623_rebase_and_import_change_v2.patch) by @kcrisman created at 2011-01-13 19:12:48
 
 Agreed on the quick reviewing need.  I wish I weren't looking at these things just for five minutes each time, but I haven't had a stretch of time for proper reviewing yet.
 > Also, did we ever get the issue about how these are doctested figured out?
@@ -546,7 +546,7 @@ archive/issue_comments_093242.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93242",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -584,7 +584,7 @@ archive/issue_comments_093244.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93244",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -625,7 +625,7 @@ archive/issue_comments_093246.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93246",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -643,7 +643,7 @@ archive/issue_comments_093247.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93247",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -661,7 +661,7 @@ archive/issue_comments_093248.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93248",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -720,7 +720,7 @@ archive/issue_comments_093251.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93251",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -798,7 +798,7 @@ archive/issue_comments_093252.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93252",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -811,16 +811,16 @@ Based to 4.6.2.alpha0, should apply ok
 archive/issue_comments_093253.json:
 ```json
 {
-    "body": "Attachment [trac_9623-rebase-v3.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623-rebase-v3.patch) by kcrisman created at 2011-01-16 05:19:38\n\nBuildbot may apply only trac_9623-rebase-v3.patch if it so chooses.",
+    "body": "Attachment [trac_9623-rebase-v3.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623-rebase-v3.patch) by @kcrisman created at 2011-01-16 05:19:38\n\nBuildbot may apply only trac_9623-rebase-v3.patch if it so chooses.",
     "created_at": "2011-01-16T05:19:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93253",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_9623-rebase-v3.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623-rebase-v3.patch) by kcrisman created at 2011-01-16 05:19:38
+Attachment [trac_9623-rebase-v3.patch](tarball://root/attachments/some-uuid/ticket9623/trac_9623-rebase-v3.patch) by @kcrisman created at 2011-01-16 05:19:38
 
 Buildbot may apply only trac_9623-rebase-v3.patch if it so chooses.
 
@@ -836,7 +836,7 @@ archive/issue_comments_093254.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93254",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -872,7 +872,7 @@ archive/issue_comments_093256.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93256",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -931,7 +931,7 @@ archive/issue_comments_093259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93259",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -949,7 +949,7 @@ archive/issue_comments_093260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93260",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -962,16 +962,16 @@ Additional patch
 archive/issue_comments_093261.json:
 ```json
 {
-    "body": "Attachment [9623_copyright.patch](tarball://root/attachments/some-uuid/ticket9623/9623_copyright.patch) by jdemeyer created at 2011-04-12 08:29:48",
+    "body": "Attachment [9623_copyright.patch](tarball://root/attachments/some-uuid/ticket9623/9623_copyright.patch) by @jdemeyer created at 2011-04-12 08:29:48",
     "created_at": "2011-04-12T08:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93261",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9623_copyright.patch](tarball://root/attachments/some-uuid/ticket9623/9623_copyright.patch) by jdemeyer created at 2011-04-12 08:29:48
+Attachment [9623_copyright.patch](tarball://root/attachments/some-uuid/ticket9623/9623_copyright.patch) by @jdemeyer created at 2011-04-12 08:29:48
 
 
 
@@ -985,7 +985,7 @@ archive/issue_comments_093262.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93262",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1003,7 +1003,7 @@ archive/issue_comments_093263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93263",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1027,7 +1027,7 @@ archive/issue_comments_093264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93264",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1045,7 +1045,7 @@ archive/issue_comments_093265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93265",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1066,7 +1066,7 @@ archive/issue_comments_093266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93266",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1084,7 +1084,7 @@ archive/issue_comments_093267.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93267",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1158,7 +1158,7 @@ archive/issue_comments_093271.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93271",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1176,7 +1176,7 @@ archive/issue_comments_093272.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93272",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1196,7 +1196,7 @@ archive/issue_comments_093273.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93273",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1214,7 +1214,7 @@ archive/issue_comments_093274.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93274",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -1268,7 +1268,7 @@ archive/issue_comments_093275.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93275",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1304,7 +1304,7 @@ archive/issue_comments_093276.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93276",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -1322,7 +1322,7 @@ archive/issue_comments_093277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93277",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -1343,7 +1343,7 @@ archive/issue_comments_093278.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9623",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9623#issuecomment-93278",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

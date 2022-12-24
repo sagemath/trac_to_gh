@@ -3,7 +3,7 @@
 archive/issues_009801.json:
 ```json
 {
-    "body": "Assignee: jason, was\n\nCC:  rbeezer wdj\n\nThis depends on #9720, so first apply the v3 patch from there.  This method generates random diagonalizable matrices whose eigenvectors, if computed by hand, have only integer values. This routine is designed as educational tool, generating exam and homework problems, and problem generating interacts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9802\n\n",
+    "body": "Assignee: jason, was\n\nCC:  @rbeezer @wdjoyner\n\nThis depends on #9720, so first apply the v3 patch from there.  This method generates random diagonalizable matrices whose eigenvectors, if computed by hand, have only integer values. This routine is designed as educational tool, generating exam and homework problems, and problem generating interacts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9802\n\n",
     "created_at": "2010-08-25T18:45:05Z",
     "labels": [
         "linear algebra",
@@ -19,7 +19,7 @@ archive/issues_009801.json:
 ```
 Assignee: jason, was
 
-CC:  rbeezer wdj
+CC:  @rbeezer @wdjoyner
 
 This depends on #9720, so first apply the v3 patch from there.  This method generates random diagonalizable matrices whose eigenvectors, if computed by hand, have only integer values. This routine is designed as educational tool, generating exam and homework problems, and problem generating interacts.
 
@@ -113,7 +113,7 @@ archive/issue_comments_096301.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9801#issuecomment-96301",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_096302.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9801#issuecomment-96302",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_096303.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9801#issuecomment-96303",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_096305.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9801",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9801#issuecomment-96305",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

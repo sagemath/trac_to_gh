@@ -3,7 +3,7 @@
 archive/issues_000874.json:
 ```json
 {
-    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/874\n\n",
+    "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/874\n\n",
     "created_at": "2007-10-13T05:57:48Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_000874.json:
     "title": "Implement Jordan and Rational Canonical Form",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/874",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 
 
@@ -32,16 +32,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/874
 archive/issue_comments_005387.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2008-01-29T12:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5387",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -55,7 +55,7 @@ archive/issue_comments_005388.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5388",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_005389.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5389",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_005390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5390",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_005391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5391",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -126,16 +126,16 @@ Compute Jordan Canonical form extremely naively.
 archive/issue_comments_005392.json:
 ```json
 {
-    "body": "Attachment [jordan-form.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.patch) by jason created at 2008-01-29 16:14:23\n\nThat's funny, I just wrote some code last night to compute jordan canonical form using the powers of A-xI, the by-hand method you learn in linear algebra.  I've attached it above.  Your code probably blows this out of the water, but it would be interesting to see the speed comparison anyway.  The patch is a bit faster after you apply the patch in #1973.",
+    "body": "Attachment [jordan-form.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.patch) by @jasongrout created at 2008-01-29 16:14:23\n\nThat's funny, I just wrote some code last night to compute jordan canonical form using the powers of A-xI, the by-hand method you learn in linear algebra.  I've attached it above.  Your code probably blows this out of the water, but it would be interesting to see the speed comparison anyway.  The patch is a bit faster after you apply the patch in #1973.",
     "created_at": "2008-01-29T16:14:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5392",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [jordan-form.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.patch) by jason created at 2008-01-29 16:14:23
+Attachment [jordan-form.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.patch) by @jasongrout created at 2008-01-29 16:14:23
 
 That's funny, I just wrote some code last night to compute jordan canonical form using the powers of A-xI, the by-hand method you learn in linear algebra.  I've attached it above.  Your code probably blows this out of the water, but it would be interesting to see the speed comparison anyway.  The patch is a bit faster after you apply the patch in #1973.
 
@@ -151,7 +151,7 @@ archive/issue_comments_005393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5393",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_005394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5394",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -220,16 +220,16 @@ Michael
 archive/issue_comments_005396.json:
 ```json
 {
-    "body": "Attachment [jordan-form.2.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.2.patch) by jason created at 2008-02-16 05:49:22\n\nApply (and review) instead of original jordan-form.patch.",
+    "body": "Attachment [jordan-form.2.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.2.patch) by @jasongrout created at 2008-02-16 05:49:22\n\nApply (and review) instead of original jordan-form.patch.",
     "created_at": "2008-02-16T05:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5396",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [jordan-form.2.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.2.patch) by jason created at 2008-02-16 05:49:22
+Attachment [jordan-form.2.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.2.patch) by @jasongrout created at 2008-02-16 05:49:22
 
 Apply (and review) instead of original jordan-form.patch.
 
@@ -245,7 +245,7 @@ archive/issue_comments_005397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5397",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_005398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5398",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -292,7 +292,7 @@ archive/issue_comments_005399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5399",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -305,16 +305,16 @@ Yes, I agree with craig.  It's very good to have a step 1 that implements someth
 archive/issue_comments_005400.json:
 ```json
 {
-    "body": "Attachment [jordan-form.3.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.3.patch) by jason created at 2008-02-22 20:37:11\n\nAdds a note saying that the computation is naive.",
+    "body": "Attachment [jordan-form.3.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.3.patch) by @jasongrout created at 2008-02-22 20:37:11\n\nAdds a note saying that the computation is naive.",
     "created_at": "2008-02-22T20:37:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5400",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [jordan-form.3.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.3.patch) by jason created at 2008-02-22 20:37:11
+Attachment [jordan-form.3.patch](tarball://root/attachments/some-uuid/ticket874/jordan-form.3.patch) by @jasongrout created at 2008-02-22 20:37:11
 
 Adds a note saying that the computation is naive.
 
@@ -330,7 +330,7 @@ archive/issue_comments_005401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5401",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -348,7 +348,7 @@ archive/issue_comments_005402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5402",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -366,7 +366,7 @@ archive/issue_comments_005403.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5403",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_005404.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5404",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -419,16 +419,16 @@ abort: patch failed to apply
 archive/issue_comments_005405.json:
 ```json
 {
-    "body": "Attachment [874.patch](tarball://root/attachments/some-uuid/ticket874/874.patch) by mhansen created at 2008-02-27 20:10:11\n\nNew patch posted which applies cleanly against 2.10.3.alpha0 + #1186. Just apply 874.patch.\n\n\nPositive review from me.",
+    "body": "Attachment [874.patch](tarball://root/attachments/some-uuid/ticket874/874.patch) by @mwhansen created at 2008-02-27 20:10:11\n\nNew patch posted which applies cleanly against 2.10.3.alpha0 + #1186. Just apply 874.patch.\n\n\nPositive review from me.",
     "created_at": "2008-02-27T20:10:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5405",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [874.patch](tarball://root/attachments/some-uuid/ticket874/874.patch) by mhansen created at 2008-02-27 20:10:11
+Attachment [874.patch](tarball://root/attachments/some-uuid/ticket874/874.patch) by @mwhansen created at 2008-02-27 20:10:11
 
 New patch posted which applies cleanly against 2.10.3.alpha0 + #1186. Just apply 874.patch.
 
@@ -483,7 +483,7 @@ archive/issue_comments_005408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5408",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -503,7 +503,7 @@ archive/issue_comments_005409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/874",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/874#issuecomment-5409",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 

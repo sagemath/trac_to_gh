@@ -14,7 +14,7 @@ archive/issues_002406.json:
     "title": "Typo in Sage tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2406",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 Assignee: tba
@@ -41,7 +41,7 @@ archive/issue_comments_016249.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2406",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2406#issuecomment-16249",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

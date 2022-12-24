@@ -59,7 +59,7 @@ archive/issue_comments_029990.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29990",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_029992.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29992",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -131,7 +131,7 @@ archive/issue_comments_029994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29994",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_029996.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29996",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -225,7 +225,7 @@ archive/issue_comments_029997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29997",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -364,16 +364,16 @@ Apply sage-4135_3.patch and sage-4135_4.patch
 archive/issue_comments_030005.json:
 ```json
 {
-    "body": "Attachment [trac_4135.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.patch) by mhansen created at 2009-01-19 07:19:54",
+    "body": "Attachment [trac_4135.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.patch) by @mwhansen created at 2009-01-19 07:19:54",
     "created_at": "2009-01-19T07:19:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30005",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4135.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.patch) by mhansen created at 2009-01-19 07:19:54
+Attachment [trac_4135.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.patch) by @mwhansen created at 2009-01-19 07:19:54
 
 
 
@@ -409,7 +409,7 @@ archive/issue_comments_030007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30007",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -469,7 +469,7 @@ archive/issue_comments_030010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30010",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -482,16 +482,16 @@ I've applied the patch to a 3.4 tree and all the bits seem to work.
 archive/issue_comments_030011.json:
 ```json
 {
-    "body": "Attachment [trac_4135.3.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.3.patch) by ddrake created at 2009-04-14 01:03:08\n\ntrac_4135.2.patch rebased for 3.4.1.rc2",
+    "body": "Attachment [trac_4135.3.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.3.patch) by @dandrake created at 2009-04-14 01:03:08\n\ntrac_4135.2.patch rebased for 3.4.1.rc2",
     "created_at": "2009-04-14T01:03:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30011",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_4135.3.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.3.patch) by ddrake created at 2009-04-14 01:03:08
+Attachment [trac_4135.3.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.3.patch) by @dandrake created at 2009-04-14 01:03:08
 
 trac_4135.2.patch rebased for 3.4.1.rc2
 
@@ -507,7 +507,7 @@ archive/issue_comments_030012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30012",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -547,7 +547,7 @@ archive/issue_comments_030014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30014",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -567,7 +567,7 @@ archive/issue_comments_030015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30015",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -590,7 +590,7 @@ archive/issue_comments_030016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30016",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -608,7 +608,7 @@ archive/issue_comments_030017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30017",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -626,7 +626,7 @@ archive/issue_comments_030018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30018",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -651,7 +651,7 @@ archive/issue_comments_030019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30019",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
@@ -671,7 +671,7 @@ archive/issue_comments_030020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30020",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -684,16 +684,16 @@ rebased against 4.1.1 + #6568
 archive/issue_comments_030021.json:
 ```json
 {
-    "body": "Attachment [trac_4135.4.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.4.patch) by ddrake created at 2009-09-03 03:15:24\n\nRebased patch up. This should apply cleanly to the release manager's 4.1.2.alpha tree. I am going to change this to a positive review and open a new ticket for the temporary password business.\n\nRelease manager: apply only attachment:trac_4135.4.patch.",
+    "body": "Attachment [trac_4135.4.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.4.patch) by @dandrake created at 2009-09-03 03:15:24\n\nRebased patch up. This should apply cleanly to the release manager's 4.1.2.alpha tree. I am going to change this to a positive review and open a new ticket for the temporary password business.\n\nRelease manager: apply only attachment:trac_4135.4.patch.",
     "created_at": "2009-09-03T03:15:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30021",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_4135.4.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.4.patch) by ddrake created at 2009-09-03 03:15:24
+Attachment [trac_4135.4.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.4.patch) by @dandrake created at 2009-09-03 03:15:24
 
 Rebased patch up. This should apply cleanly to the release manager's 4.1.2.alpha tree. I am going to change this to a positive review and open a new ticket for the temporary password business.
 
@@ -711,7 +711,7 @@ archive/issue_comments_030022.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30022",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -762,7 +762,7 @@ archive/issue_comments_030024.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30024",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -782,16 +782,16 @@ I tried applying the patch here on top of a 4.1.1 tree that already had the patc
 archive/issue_comments_030025.json:
 ```json
 {
-    "body": "Attachment [trac_4135.5.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.5.patch) by ddrake created at 2009-09-03 08:42:51\n\nrebased against mvngu's 4.1.2.alpha0 merge tree",
+    "body": "Attachment [trac_4135.5.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.5.patch) by @dandrake created at 2009-09-03 08:42:51\n\nrebased against mvngu's 4.1.2.alpha0 merge tree",
     "created_at": "2009-09-03T08:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4135",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30025",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
-Attachment [trac_4135.5.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.5.patch) by ddrake created at 2009-09-03 08:42:51
+Attachment [trac_4135.5.patch](tarball://root/attachments/some-uuid/ticket4135/trac_4135.5.patch) by @dandrake created at 2009-09-03 08:42:51
 
 rebased against mvngu's 4.1.2.alpha0 merge tree
 

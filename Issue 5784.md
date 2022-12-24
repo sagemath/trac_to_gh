@@ -3,7 +3,7 @@
 archive/issues_005784.json:
 ```json
 {
-    "body": "Assignee: mpatel\n\nTwo typos in the main notebook cascading stylesheet:\n\nhttp://localhost:8000/css/main.css\n\nThese were reported on sage-devel:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/9a5262dfaada469e\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5784\n\n",
+    "body": "Assignee: @qed777\n\nTwo typos in the main notebook cascading stylesheet:\n\nhttp://localhost:8000/css/main.css\n\nThese were reported on sage-devel:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/9a5262dfaada469e\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5784\n\n",
     "created_at": "2009-04-14T09:46:50Z",
     "labels": [
         "notebook",
@@ -14,10 +14,10 @@ archive/issues_005784.json:
     "title": "[with patch, needs review] CSS typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5784",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: mpatel
+Assignee: @qed777
 
 Two typos in the main notebook cascading stylesheet:
 
@@ -39,16 +39,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/5784
 archive/issue_comments_045276.json:
 ```json
 {
-    "body": "Attachment [css_typos_5784.patch](tarball://root/attachments/some-uuid/ticket5784/css_typos_5784.patch) by mpatel created at 2009-04-14 09:47:42",
+    "body": "Attachment [css_typos_5784.patch](tarball://root/attachments/some-uuid/ticket5784/css_typos_5784.patch) by @qed777 created at 2009-04-14 09:47:42",
     "created_at": "2009-04-14T09:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5784#issuecomment-45276",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [css_typos_5784.patch](tarball://root/attachments/some-uuid/ticket5784/css_typos_5784.patch) by mpatel created at 2009-04-14 09:47:42
+Attachment [css_typos_5784.patch](tarball://root/attachments/some-uuid/ticket5784/css_typos_5784.patch) by @qed777 created at 2009-04-14 09:47:42
 
 
 
@@ -62,7 +62,7 @@ archive/issue_comments_045277.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5784",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5784#issuecomment-45277",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

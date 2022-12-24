@@ -3,7 +3,7 @@
 archive/issues_001191.json:
 ```json
 {
-    "body": "Assignee: was\n\nThis\n\n\n```\nmatsolvemod(M,D,B,{flag=0}): one solution of system of congruences \nMX=B mod D (M matrix, B and D column vectors). If (optional) flag is\nnon-null return all solutions.\n```\n\n\nshould allow to implement A.solve_right for matrices over Z/nZ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1191\n\n",
+    "body": "Assignee: @williamstein\n\nThis\n\n\n```\nmatsolvemod(M,D,B,{flag=0}): one solution of system of congruences \nMX=B mod D (M matrix, B and D column vectors). If (optional) flag is\nnon-null return all solutions.\n```\n\n\nshould allow to implement A.solve_right for matrices over Z/nZ.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1191\n\n",
     "created_at": "2007-11-17T15:24:47Z",
     "labels": [
         "linear algebra",
@@ -14,10 +14,10 @@ archive/issues_001191.json:
     "title": "wrap pari's matsolvemodn for A.solve_right over Z/nZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1191",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 This
 
@@ -47,7 +47,7 @@ archive/issue_comments_007391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1191#issuecomment-7391",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_007392.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1191#issuecomment-7392",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -86,7 +86,7 @@ archive/issue_comments_007393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1191#issuecomment-7393",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -99,16 +99,16 @@ Okay, I've written a patch for this! Using pari is significantly faster than usi
 archive/issue_comments_007394.json:
 ```json
 {
-    "body": "Attachment [trac_1191_solve_right_Z_mod_n.patch](tarball://root/attachments/some-uuid/ticket1191/trac_1191_solve_right_Z_mod_n.patch) by robharron created at 2013-04-02 04:27:17",
+    "body": "Attachment [trac_1191_solve_right_Z_mod_n.patch](tarball://root/attachments/some-uuid/ticket1191/trac_1191_solve_right_Z_mod_n.patch) by @rharron created at 2013-04-02 04:27:17",
     "created_at": "2013-04-02T04:27:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1191#issuecomment-7394",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
-Attachment [trac_1191_solve_right_Z_mod_n.patch](tarball://root/attachments/some-uuid/ticket1191/trac_1191_solve_right_Z_mod_n.patch) by robharron created at 2013-04-02 04:27:17
+Attachment [trac_1191_solve_right_Z_mod_n.patch](tarball://root/attachments/some-uuid/ticket1191/trac_1191_solve_right_Z_mod_n.patch) by @rharron created at 2013-04-02 04:27:17
 
 
 
@@ -122,7 +122,7 @@ archive/issue_comments_007395.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1191#issuecomment-7395",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -140,7 +140,7 @@ archive/issue_comments_007396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1191#issuecomment-7396",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -158,7 +158,7 @@ archive/issue_comments_007397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1191#issuecomment-7397",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -176,7 +176,7 @@ archive/issue_comments_007398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1191#issuecomment-7398",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -239,7 +239,7 @@ archive/issue_comments_007399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1191#issuecomment-7399",
-    "user": "robharron"
+    "user": "@rharron"
 }
 ```
 
@@ -252,16 +252,16 @@ Snippet of the f.g. modules over a PID implementation. This is much slower and o
 archive/issue_comments_007400.json:
 ```json
 {
-    "body": "Attachment [solve_left_slow_snippet.py](tarball://root/attachments/some-uuid/ticket1191/solve_left_slow_snippet.py) by malb created at 2013-04-02 18:33:50\n\nOkay, that convinces me.",
+    "body": "Attachment [solve_left_slow_snippet.py](tarball://root/attachments/some-uuid/ticket1191/solve_left_slow_snippet.py) by @malb created at 2013-04-02 18:33:50\n\nOkay, that convinces me.",
     "created_at": "2013-04-02T18:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1191#issuecomment-7400",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [solve_left_slow_snippet.py](tarball://root/attachments/some-uuid/ticket1191/solve_left_slow_snippet.py) by malb created at 2013-04-02 18:33:50
+Attachment [solve_left_slow_snippet.py](tarball://root/attachments/some-uuid/ticket1191/solve_left_slow_snippet.py) by @malb created at 2013-04-02 18:33:50
 
 Okay, that convinces me.
 
@@ -277,7 +277,7 @@ archive/issue_comments_007401.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1191#issuecomment-7401",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -295,7 +295,7 @@ archive/issue_comments_007402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1191#issuecomment-7402",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_006483.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was\n\nIn Firefox 3.5 on Linux, jsMath's `cmmi10` font appears to be decoded improperly.  Try this [test](http://www.math.union.edu/~dpvc/jsMath/symbols/cmmi10.html).  Other fonts seem fine.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/61bf1226d39ecf1d/c330223e1970d9c6?#c330223e1970d9c6) for more.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6483\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein\n\nIn Firefox 3.5 on Linux, jsMath's `cmmi10` font appears to be decoded improperly.  Try this [test](http://www.math.union.edu/~dpvc/jsMath/symbols/cmmi10.html).  Other fonts seem fine.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/61bf1226d39ecf1d/c330223e1970d9c6?#c330223e1970d9c6) for more.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6483\n\n",
     "created_at": "2009-07-08T13:26:34Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006483.json:
     "title": "jsmath font broken in Firefox 3.5 on Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6483",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 Assignee: boothby
 
-CC:  was
+CC:  @williamstein
 
 In Firefox 3.5 on Linux, jsMath's `cmmi10` font appears to be decoded improperly.  Try this [test](http://www.math.union.edu/~dpvc/jsMath/symbols/cmmi10.html).  Other fonts seem fine.
 
@@ -41,7 +41,7 @@ archive/issue_comments_052411.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52411",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -54,16 +54,16 @@ $SAGE_ROOT/local/notebook/javascript/jsmath/cmmi10.js
 archive/issue_comments_052412.json:
 ```json
 {
-    "body": "Attachment [cmmi10.txt](tarball://root/attachments/some-uuid/ticket6483/cmmi10.txt) by mpatel created at 2009-07-08 13:32:33\n\nTest worksheet.",
+    "body": "Attachment [cmmi10.txt](tarball://root/attachments/some-uuid/ticket6483/cmmi10.txt) by @qed777 created at 2009-07-08 13:32:33\n\nTest worksheet.",
     "created_at": "2009-07-08T13:32:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52412",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [cmmi10.txt](tarball://root/attachments/some-uuid/ticket6483/cmmi10.txt) by mpatel created at 2009-07-08 13:32:33
+Attachment [cmmi10.txt](tarball://root/attachments/some-uuid/ticket6483/cmmi10.txt) by @qed777 created at 2009-07-08 13:32:33
 
 Test worksheet.
 
@@ -79,7 +79,7 @@ archive/issue_comments_052413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52413",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_052414.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52414",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -142,7 +142,7 @@ archive/issue_comments_052415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52415",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -160,7 +160,7 @@ archive/issue_comments_052416.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52416",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -178,7 +178,7 @@ archive/issue_comments_052417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52417",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_052418.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52418",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -216,7 +216,7 @@ archive/issue_comments_052419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52419",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 

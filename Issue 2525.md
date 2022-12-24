@@ -215,7 +215,7 @@ archive/issue_comments_017223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2525#issuecomment-17223",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
@@ -231,16 +231,16 @@ I attach a patch reverting default minpoly/charpoly to linbox.
 archive/issue_comments_017224.json:
 ```json
 {
-    "body": "Attachment [revert-charpoly-linbox-2453.patch](tarball://root/attachments/some-uuid/ticket2525/revert-charpoly-linbox-2453.patch) by cpernet created at 2008-04-04 00:51:30",
+    "body": "Attachment [revert-charpoly-linbox-2453.patch](tarball://root/attachments/some-uuid/ticket2525/revert-charpoly-linbox-2453.patch) by @ClementPernet created at 2008-04-04 00:51:30",
     "created_at": "2008-04-04T00:51:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2525",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2525#issuecomment-17224",
-    "user": "cpernet"
+    "user": "@ClementPernet"
 }
 ```
 
-Attachment [revert-charpoly-linbox-2453.patch](tarball://root/attachments/some-uuid/ticket2525/revert-charpoly-linbox-2453.patch) by cpernet created at 2008-04-04 00:51:30
+Attachment [revert-charpoly-linbox-2453.patch](tarball://root/attachments/some-uuid/ticket2525/revert-charpoly-linbox-2453.patch) by @ClementPernet created at 2008-04-04 00:51:30
 
 
 

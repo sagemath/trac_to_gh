@@ -3,7 +3,7 @@
 archive/issues_002597.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nThis patch allows a BipartiteGraph to be created from a reduced adjacency matrix and return the same.  Multi-edge or weighted constructions are supported.  Also, it adds support for creation, loading, and saving bipartite graphs in alist format.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2597\n\n",
+    "body": "Assignee: @rlmill\n\nThis patch allows a BipartiteGraph to be created from a reduced adjacency matrix and return the same.  Multi-edge or weighted constructions are supported.  Also, it adds support for creation, loading, and saving bipartite graphs in alist format.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2597\n\n",
     "created_at": "2008-03-19T15:26:24Z",
     "labels": [
         "graph theory",
@@ -14,10 +14,10 @@ archive/issues_002597.json:
     "title": "[with patch, needs review] Add reduced adjacency matrix and alist file format support to BipartiteGraph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2597",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 This patch allows a BipartiteGraph to be created from a reduced adjacency matrix and return the same.  Multi-edge or weighted constructions are supported.  Also, it adds support for creation, loading, and saving bipartite graphs in alist format.
 
@@ -37,7 +37,7 @@ archive/issue_comments_017769.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17769",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -57,7 +57,7 @@ archive/issue_comments_017770.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17770",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_017771.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17771",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_017772.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17772",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_017773.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17773",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_017774.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17774",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_017775.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17775",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_017776.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17776",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_017777.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17777",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -221,16 +221,16 @@ Patch 4 uses matrix() constructor to find ring for weighted graph constructions.
 archive/issue_comments_017778.json:
 ```json
 {
-    "body": "Attachment [reduced_am.4.patch](tarball://root/attachments/some-uuid/ticket2597/reduced_am.4.patch) by rlm created at 2008-03-23 15:19:15\n\nIn the future, when posting a new patch, please make sure to indicate whether it replaces old patches or builds on top of them. That makes it easier on people like mabshoff to look at the ticket without too much pain.\n\nI'm getting some doctest failures after applying this patch. It looks like the matrix constructor doesn't know what ring to use when it's given an empty list (although I might be wrong). Also in the future, make sure to run doctests on all relevant code before posting a patch. We're all guilty of this one :-).",
+    "body": "Attachment [reduced_am.4.patch](tarball://root/attachments/some-uuid/ticket2597/reduced_am.4.patch) by @rlmill created at 2008-03-23 15:19:15\n\nIn the future, when posting a new patch, please make sure to indicate whether it replaces old patches or builds on top of them. That makes it easier on people like mabshoff to look at the ticket without too much pain.\n\nI'm getting some doctest failures after applying this patch. It looks like the matrix constructor doesn't know what ring to use when it's given an empty list (although I might be wrong). Also in the future, make sure to run doctests on all relevant code before posting a patch. We're all guilty of this one :-).",
     "created_at": "2008-03-23T15:19:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17778",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [reduced_am.4.patch](tarball://root/attachments/some-uuid/ticket2597/reduced_am.4.patch) by rlm created at 2008-03-23 15:19:15
+Attachment [reduced_am.4.patch](tarball://root/attachments/some-uuid/ticket2597/reduced_am.4.patch) by @rlmill created at 2008-03-23 15:19:15
 
 In the future, when posting a new patch, please make sure to indicate whether it replaces old patches or builds on top of them. That makes it easier on people like mabshoff to look at the ticket without too much pain.
 
@@ -248,7 +248,7 @@ archive/issue_comments_017779.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17779",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_017780.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17780",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_017781.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17781",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -299,16 +299,16 @@ patch to matrix/constructor.py to fix bug and allow all bipartite_graph doctests
 archive/issue_comments_017782.json:
 ```json
 {
-    "body": "Attachment [matrix-empty-dict.patch](tarball://root/attachments/some-uuid/ticket2597/matrix-empty-dict.patch) by rlm created at 2008-03-29 01:13:58\n\nLooks good, relevant tests pass.",
+    "body": "Attachment [matrix-empty-dict.patch](tarball://root/attachments/some-uuid/ticket2597/matrix-empty-dict.patch) by @rlmill created at 2008-03-29 01:13:58\n\nLooks good, relevant tests pass.",
     "created_at": "2008-03-29T01:13:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2597",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2597#issuecomment-17782",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [matrix-empty-dict.patch](tarball://root/attachments/some-uuid/ticket2597/matrix-empty-dict.patch) by rlm created at 2008-03-29 01:13:58
+Attachment [matrix-empty-dict.patch](tarball://root/attachments/some-uuid/ticket2597/matrix-empty-dict.patch) by @rlmill created at 2008-03-29 01:13:58
 
 Looks good, relevant tests pass.
 

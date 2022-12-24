@@ -14,7 +14,7 @@ archive/issues_005657.json:
     "title": "[with patch; needs review] fix two trivial typos",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5657",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: cwitty

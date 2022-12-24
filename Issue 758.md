@@ -14,7 +14,7 @@ archive/issues_000758.json:
     "title": "Use NTL directly in Z/nZ polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/758",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 Assignee: somebody
@@ -46,16 +46,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/758
 archive/issue_comments_004494.json:
 ```json
 {
-    "body": "Changing assignee from somebody to robertwb.",
+    "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2007-09-28T11:53:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/758#issuecomment-4494",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Changing assignee from somebody to robertwb.
+Changing assignee from somebody to @robertwb.
 
 
 
@@ -69,7 +69,7 @@ archive/issue_comments_004495.json:
     "issue": "https://github.com/sagemath/sagetest/issues/758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/758#issuecomment-4495",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_004496.json:
     "issue": "https://github.com/sagemath/sagetest/issues/758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/758#issuecomment-4496",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_004497.json:
     "issue": "https://github.com/sagemath/sagetest/issues/758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/758#issuecomment-4497",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -118,16 +118,16 @@ NTL now used for all composite modn
 archive/issue_comments_004498.json:
 ```json
 {
-    "body": "Attachment [fast-modn-poly.hg](tarball://root/attachments/some-uuid/ticket758/fast-modn-poly.hg) by robertwb created at 2007-09-30 07:52:03\n\nThe latest bundle includes improvements to Laurent series, Monsky-Waschnitzer computations MUCH faster now (just waiting on fast p-adic linear algebra).",
+    "body": "Attachment [fast-modn-poly.hg](tarball://root/attachments/some-uuid/ticket758/fast-modn-poly.hg) by @robertwb created at 2007-09-30 07:52:03\n\nThe latest bundle includes improvements to Laurent series, Monsky-Waschnitzer computations MUCH faster now (just waiting on fast p-adic linear algebra).",
     "created_at": "2007-09-30T07:52:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/758#issuecomment-4498",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [fast-modn-poly.hg](tarball://root/attachments/some-uuid/ticket758/fast-modn-poly.hg) by robertwb created at 2007-09-30 07:52:03
+Attachment [fast-modn-poly.hg](tarball://root/attachments/some-uuid/ticket758/fast-modn-poly.hg) by @robertwb created at 2007-09-30 07:52:03
 
 The latest bundle includes improvements to Laurent series, Monsky-Waschnitzer computations MUCH faster now (just waiting on fast p-adic linear algebra).
 
@@ -181,7 +181,7 @@ archive/issue_comments_004500.json:
     "issue": "https://github.com/sagemath/sagetest/issues/758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/758#issuecomment-4500",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_004501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/758",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/758#issuecomment-4501",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

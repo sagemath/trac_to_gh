@@ -3,7 +3,7 @@
 archive/issues_007457.json:
 ```json
 {
-    "body": "Assignee: AlexGhitza\n\nThe attached patch makes a few improvements in `rings/quotient_ring.py`: implement `is_noetherian`, fix a todo in `cover_ring`, and minor docstring fixes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7457\n\n",
+    "body": "Assignee: @aghitza\n\nThe attached patch makes a few improvements in `rings/quotient_ring.py`: implement `is_noetherian`, fix a todo in `cover_ring`, and minor docstring fixes.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7457\n\n",
     "created_at": "2009-11-14T12:29:00Z",
     "labels": [
         "algebra",
@@ -14,10 +14,10 @@ archive/issues_007457.json:
     "title": "improvements to quotient_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7457",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
-Assignee: AlexGhitza
+Assignee: @aghitza
 
 The attached patch makes a few improvements in `rings/quotient_ring.py`: implement `is_noetherian`, fix a todo in `cover_ring`, and minor docstring fixes.
 
@@ -38,7 +38,7 @@ archive/issue_comments_062804.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62804",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -56,7 +56,7 @@ archive/issue_comments_062805.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62805",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_062806.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62806",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_062807.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62807",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_062808.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62808",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -134,7 +134,7 @@ archive/issue_comments_062809.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62809",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -152,7 +152,7 @@ archive/issue_comments_062810.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62810",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -165,16 +165,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_062811.json:
 ```json
 {
-    "body": "Attachment [trac_7457.patch](tarball://root/attachments/some-uuid/ticket7457/trac_7457.patch) by AlexGhitza created at 2009-11-22 11:26:15",
+    "body": "Attachment [trac_7457.patch](tarball://root/attachments/some-uuid/ticket7457/trac_7457.patch) by @aghitza created at 2009-11-22 11:26:15",
     "created_at": "2009-11-22T11:26:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62811",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [trac_7457.patch](tarball://root/attachments/some-uuid/ticket7457/trac_7457.patch) by AlexGhitza created at 2009-11-22 11:26:15
+Attachment [trac_7457.patch](tarball://root/attachments/some-uuid/ticket7457/trac_7457.patch) by @aghitza created at 2009-11-22 11:26:15
 
 
 
@@ -188,7 +188,7 @@ archive/issue_comments_062812.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62812",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -237,7 +237,7 @@ archive/issue_comments_062813.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62813",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -255,7 +255,7 @@ archive/issue_comments_062814.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62814",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -273,7 +273,7 @@ archive/issue_comments_062815.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62815",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -286,16 +286,16 @@ Here's a referee's patch to fix these two issues.  See #7532 for a follow-up.
 archive/issue_comments_062816.json:
 ```json
 {
-    "body": "Attachment [trac_7457-ref.patch](tarball://root/attachments/some-uuid/ticket7457/trac_7457-ref.patch) by jhpalmieri created at 2009-11-26 15:36:03\n\napply on top of the other patch",
+    "body": "Attachment [trac_7457-ref.patch](tarball://root/attachments/some-uuid/ticket7457/trac_7457-ref.patch) by @jhpalmieri created at 2009-11-26 15:36:03\n\napply on top of the other patch",
     "created_at": "2009-11-26T15:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62816",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_7457-ref.patch](tarball://root/attachments/some-uuid/ticket7457/trac_7457-ref.patch) by jhpalmieri created at 2009-11-26 15:36:03
+Attachment [trac_7457-ref.patch](tarball://root/attachments/some-uuid/ticket7457/trac_7457-ref.patch) by @jhpalmieri created at 2009-11-26 15:36:03
 
 apply on top of the other patch
 
@@ -311,7 +311,7 @@ archive/issue_comments_062817.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62817",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_062818.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62818",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -347,7 +347,7 @@ archive/issue_comments_062819.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7457",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7457#issuecomment-62819",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

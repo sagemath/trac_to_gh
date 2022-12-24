@@ -3,7 +3,7 @@
 archive/issues_004366.json:
 ```json
 {
-    "body": "Assignee: somebody\n\nCC:  robertwb\n\nHi, Emmanuel Thom\u00e9 noted that\nthere is a speed/system call activity regression in between Sage 3.0.5 and 3.1.3.\nIf in Sage 3.1.3/3.1.4/3.2.alpha0 one issues something like\n\n```\nsage: time for i in range(10): float(1)/2\n```\n\nand looks at the same at the system call activity of this python \"sage.bin\" process (in another terminal with something like \"strace -p 'pidof sage.bin' -e trace='stat'\" under Linux, or using \"sudo fs_usage 4711\" under Mac OS X, 4711 being the sage.bin pid gotten e.g. via the activity tool), then one sees:\n\nThe (sage/python) sys.path is searched by the system call \"stat\" for \"coerce.pyx\", \"coerce_maps.pyx\", \"parent.pyx\" and \"integer.pyx\" many times, that whole path, and over and over again.\n\nThis does not happen under Sage 3.0.5.\n\nWillem Jan Palenstijn proposed this code fragment, which triggers the behaviour in Sage 3.2.alpha0, too:\n\n```\nsage: cm=sage.structure.element.get_coercion_model()\nsage: cm.canonical_coercion(float(1),1)\n```\n\nand noted that\n\n\"This seems to be the _record_exception() function in the coercion model.\"\n\n(See also the recent sage_devel thread started by Emmanuel Thom\u00e9 about this.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4366\n\n",
+    "body": "Assignee: somebody\n\nCC:  @robertwb\n\nHi, Emmanuel Thom\u00e9 noted that\nthere is a speed/system call activity regression in between Sage 3.0.5 and 3.1.3.\nIf in Sage 3.1.3/3.1.4/3.2.alpha0 one issues something like\n\n```\nsage: time for i in range(10): float(1)/2\n```\n\nand looks at the same at the system call activity of this python \"sage.bin\" process (in another terminal with something like \"strace -p 'pidof sage.bin' -e trace='stat'\" under Linux, or using \"sudo fs_usage 4711\" under Mac OS X, 4711 being the sage.bin pid gotten e.g. via the activity tool), then one sees:\n\nThe (sage/python) sys.path is searched by the system call \"stat\" for \"coerce.pyx\", \"coerce_maps.pyx\", \"parent.pyx\" and \"integer.pyx\" many times, that whole path, and over and over again.\n\nThis does not happen under Sage 3.0.5.\n\nWillem Jan Palenstijn proposed this code fragment, which triggers the behaviour in Sage 3.2.alpha0, too:\n\n```\nsage: cm=sage.structure.element.get_coercion_model()\nsage: cm.canonical_coercion(float(1),1)\n```\n\nand noted that\n\n\"This seems to be the _record_exception() function in the coercion model.\"\n\n(See also the recent sage_devel thread started by Emmanuel Thom\u00e9 about this.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4366\n\n",
     "created_at": "2008-10-24T21:05:30Z",
     "labels": [
         "coercion",
@@ -19,7 +19,7 @@ archive/issues_004366.json:
 ```
 Assignee: somebody
 
-CC:  robertwb
+CC:  @robertwb
 
 Hi, Emmanuel Thomé noted that
 there is a speed/system call activity regression in between Sage 3.0.5 and 3.1.3.
@@ -159,7 +159,7 @@ archive/issue_comments_032074.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32074",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_032077.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32077",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -286,16 +286,16 @@ Michael
 archive/issue_comments_032079.json:
 ```json
 {
-    "body": "Attachment [4366-coercion-traceback.patch](tarball://root/attachments/some-uuid/ticket4366/4366-coercion-traceback.patch) by robertwb created at 2008-10-28 06:56:09\n\napply this patch only",
+    "body": "Attachment [4366-coercion-traceback.patch](tarball://root/attachments/some-uuid/ticket4366/4366-coercion-traceback.patch) by @robertwb created at 2008-10-28 06:56:09\n\napply this patch only",
     "created_at": "2008-10-28T06:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32079",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
-Attachment [4366-coercion-traceback.patch](tarball://root/attachments/some-uuid/ticket4366/4366-coercion-traceback.patch) by robertwb created at 2008-10-28 06:56:09
+Attachment [4366-coercion-traceback.patch](tarball://root/attachments/some-uuid/ticket4366/4366-coercion-traceback.patch) by @robertwb created at 2008-10-28 06:56:09
 
 apply this patch only
 
@@ -311,7 +311,7 @@ archive/issue_comments_032080.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32080",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -329,7 +329,7 @@ archive/issue_comments_032081.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32081",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -413,7 +413,7 @@ archive/issue_comments_032084.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32084",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

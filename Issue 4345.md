@@ -14,7 +14,7 @@ archive/issues_004345.json:
     "title": "Make a system for default variable names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4345",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 Assignee: cwitty
@@ -57,7 +57,7 @@ archive/issue_comments_031925.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4345",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4345#issuecomment-31925",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 

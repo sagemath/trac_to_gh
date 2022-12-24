@@ -14,7 +14,7 @@ archive/issues_002289.json:
     "title": "[with doc patch, needs review] make the constructions document prettier and more consistent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2289",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 Assignee: tba
@@ -40,7 +40,7 @@ archive/issue_comments_015179.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2289#issuecomment-15179",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_015180.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2289#issuecomment-15180",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_015181.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2289#issuecomment-15181",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -98,7 +98,7 @@ archive/issue_comments_015182.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2289#issuecomment-15182",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_015183.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2289#issuecomment-15183",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -137,16 +137,16 @@ Note that if you take a look at const.pdf, there are still a few long lines.  Th
 archive/issue_comments_015184.json:
 ```json
 {
-    "body": "Attachment [doc_const_fixes.patch](tarball://root/attachments/some-uuid/ticket2289/doc_const_fixes.patch) by AlexGhitza created at 2008-02-27 04:45:54\n\nfixed some doctest failures",
+    "body": "Attachment [doc_const_fixes.patch](tarball://root/attachments/some-uuid/ticket2289/doc_const_fixes.patch) by @aghitza created at 2008-02-27 04:45:54\n\nfixed some doctest failures",
     "created_at": "2008-02-27T04:45:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2289#issuecomment-15184",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [doc_const_fixes.patch](tarball://root/attachments/some-uuid/ticket2289/doc_const_fixes.patch) by AlexGhitza created at 2008-02-27 04:45:54
+Attachment [doc_const_fixes.patch](tarball://root/attachments/some-uuid/ticket2289/doc_const_fixes.patch) by @aghitza created at 2008-02-27 04:45:54
 
 fixed some doctest failures
 
@@ -162,7 +162,7 @@ archive/issue_comments_015185.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2289#issuecomment-15185",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

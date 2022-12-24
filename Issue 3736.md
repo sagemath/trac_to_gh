@@ -3,7 +3,7 @@
 archive/issues_003736.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  bryan.head@gmail.com\n\n\n```\nsage: x = vector(CDF, range(10))\nsage: y = vector(CDF, range(10))\nsage: x.pa\nx.pairwise_product  x.parent            \nsage: x.pairwise_product(y)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/<ipython console> in <module>()\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/free_module_element.pyx in sage.modules.free_module_element.FreeModuleElement.pairwise_product (sage/modules/free_module_element.c:7363)()\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/element.pyx in sage.structure.element.Vector._pairwise_product_c (sage/structure/element.c:11073)()\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/element.pyx in sage.structure.element.Vector._pairwise_product_c_impl (sage/structure/element.c:11134)()\n\nTypeError: unsupported operation for 'Vector space of dimension 10 over Complex Double Field' and 'Vector space of dimension 10 over Complex Double Field'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3736\n\n",
+    "body": "Assignee: @malb\n\nCC:  bryan.head@gmail.com\n\n\n```\nsage: x = vector(CDF, range(10))\nsage: y = vector(CDF, range(10))\nsage: x.pa\nx.pairwise_product  x.parent            \nsage: x.pairwise_product(y)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/<ipython console> in <module>()\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/free_module_element.pyx in sage.modules.free_module_element.FreeModuleElement.pairwise_product (sage/modules/free_module_element.c:7363)()\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/element.pyx in sage.structure.element.Vector._pairwise_product_c (sage/structure/element.c:11073)()\n\n/home/mike/src/combinat/branches/multisort-experiment/combinat/element.pyx in sage.structure.element.Vector._pairwise_product_c_impl (sage/structure/element.c:11134)()\n\nTypeError: unsupported operation for 'Vector space of dimension 10 over Complex Double Field' and 'Vector space of dimension 10 over Complex Double Field'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3736\n\n",
     "created_at": "2008-07-29T00:22:13Z",
     "labels": [
         "commutative algebra",
@@ -14,10 +14,10 @@ archive/issues_003736.json:
     "title": "pairwise_product fails for vectors over CDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3736",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
 CC:  bryan.head@gmail.com
 
@@ -54,16 +54,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3736
 archive/issue_comments_026519.json:
 ```json
 {
-    "body": "Attachment [trac_3736.patch](tarball://root/attachments/some-uuid/ticket3736/trac_3736.patch) by mhansen created at 2008-07-29 02:21:56",
+    "body": "Attachment [trac_3736.patch](tarball://root/attachments/some-uuid/ticket3736/trac_3736.patch) by @mwhansen created at 2008-07-29 02:21:56",
     "created_at": "2008-07-29T02:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3736#issuecomment-26519",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_3736.patch](tarball://root/attachments/some-uuid/ticket3736/trac_3736.patch) by mhansen created at 2008-07-29 02:21:56
+Attachment [trac_3736.patch](tarball://root/attachments/some-uuid/ticket3736/trac_3736.patch) by @mwhansen created at 2008-07-29 02:21:56
 
 
 
@@ -77,7 +77,7 @@ archive/issue_comments_026520.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3736",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3736#issuecomment-26520",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

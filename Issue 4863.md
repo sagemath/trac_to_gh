@@ -3,7 +3,7 @@
 archive/issues_004863.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  mhansen mvngu\n\nIt is impossible to use the `install_package` command to install pyopenssl-0.6.  See below:\n\n\n```\nsage: install_package('pyopenssl-0.6')\nPossible names of non-installed packages starting with 'pyopenssl-0.6':\n  pyopenssl-0.6\n  pyopenssl-0.6\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/usr/local/sage/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/misc/package.pyc in install_package(package, force)\n     79         for P in L:\n     80             print \" \", P\n---> 81         raise ValueError, \"There is more than one package name starting with '%s'. Please specify!\"%(package)\n     82     if len(L)==0:\n     83         if not force:\n\nValueError: There is more than one package name starting with 'pyopenssl-0.6'. Please specify!\nsage: \n```\n\n\nI verified this error in sage-3.2.2 on Linux and OS X.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4863\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @mwhansen mvngu\n\nIt is impossible to use the `install_package` command to install pyopenssl-0.6.  See below:\n\n\n```\nsage: install_package('pyopenssl-0.6')\nPossible names of non-installed packages starting with 'pyopenssl-0.6':\n  pyopenssl-0.6\n  pyopenssl-0.6\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/usr/local/sage/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/misc/package.pyc in install_package(package, force)\n     79         for P in L:\n     80             print \" \", P\n---> 81         raise ValueError, \"There is more than one package name starting with '%s'. Please specify!\"%(package)\n     82     if len(L)==0:\n     83         if not force:\n\nValueError: There is more than one package name starting with 'pyopenssl-0.6'. Please specify!\nsage: \n```\n\n\nI verified this error in sage-3.2.2 on Linux and OS X.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4863\n\n",
     "created_at": "2008-12-24T04:52:27Z",
     "labels": [
         "packages: optional",
@@ -14,12 +14,12 @@ archive/issues_004863.json:
     "title": "bug in install_package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4863",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: mabshoff
 
-CC:  mhansen mvngu
+CC:  @mwhansen mvngu
 
 It is impossible to use the `install_package` command to install pyopenssl-0.6.  See below:
 
@@ -64,7 +64,7 @@ archive/issue_comments_036858.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4863#issuecomment-36858",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -89,7 +89,7 @@ archive/issue_comments_036859.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4863#issuecomment-36859",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_036860.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4863#issuecomment-36860",
-    "user": "SimonKing"
+    "user": "@simon-king-jena"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_036862.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4863#issuecomment-36862",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_036863.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4863",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4863#issuecomment-36863",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

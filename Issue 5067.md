@@ -3,7 +3,7 @@
 archive/issues_005067.json:
 ```json
 {
-    "body": "Assignee: rlm\n\nWhen doing #4588 to fix some \"doctests never got run\" stuff, I discovered exactly one case of some wrong non-optional doctests that weren't being run. \n\nThey are in linear_code.py:\n\n\n```\nsage -t  devel/sage/sage/coding/linear_code.py\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1984:\n    sage: C.spectrum(method=\"leon\")\nExpected:\n    [1, 0, 0, 7, 7, 0, 0, 1]\nGot:\n    [0, 0, 0, 0, 0, 0, 0, 0]\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1988:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 104, 468, 1404, 4056, 8424, 11934, 13442, 11232, 5616, 2080, 288]\nGot: \n    False\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1993:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 80, 120, 264, 160]\nGot: \n    False\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1998:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 336, 1680, 9072, 26544, 45744, 34272]\nGot: \n    False\n**********************************************************************\n1 items had failures:\n   4 of  17 in __main__.example_44\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5067\n\n",
+    "body": "Assignee: @rlmill\n\nWhen doing #4588 to fix some \"doctests never got run\" stuff, I discovered exactly one case of some wrong non-optional doctests that weren't being run. \n\nThey are in linear_code.py:\n\n\n```\nsage -t  devel/sage/sage/coding/linear_code.py\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1984:\n    sage: C.spectrum(method=\"leon\")\nExpected:\n    [1, 0, 0, 7, 7, 0, 0, 1]\nGot:\n    [0, 0, 0, 0, 0, 0, 0, 0]\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1988:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 104, 468, 1404, 4056, 8424, 11934, 13442, 11232, 5616, 2080, 288]\nGot: \n    False\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1993:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 80, 120, 264, 160]\nGot: \n    False\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1998:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 336, 1680, 9072, 26544, 45744, 34272]\nGot: \n    False\n**********************************************************************\n1 items had failures:\n   4 of  17 in __main__.example_44\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5067\n\n",
     "created_at": "2009-01-23T09:26:08Z",
     "labels": [
         "coding theory",
@@ -14,10 +14,10 @@ archive/issues_005067.json:
     "title": "linear_code -- four doctest failures in specture method='leon' exposed by #4588",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5067",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: rlm
+Assignee: @rlmill
 
 When doing #4588 to fix some "doctests never got run" stuff, I discovered exactly one case of some wrong non-optional doctests that weren't being run. 
 
@@ -79,7 +79,7 @@ archive/issue_comments_038597.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5067#issuecomment-38597",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_038598.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5067#issuecomment-38598",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -145,16 +145,16 @@ Got:
 archive/issue_comments_038599.json:
 ```json
 {
-    "body": "Attachment [trac-5067.patch](tarball://root/attachments/some-uuid/ticket5067/trac-5067.patch) by rlm created at 2009-01-24 04:12:29",
+    "body": "Attachment [trac-5067.patch](tarball://root/attachments/some-uuid/ticket5067/trac-5067.patch) by @rlmill created at 2009-01-24 04:12:29",
     "created_at": "2009-01-24T04:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5067#issuecomment-38599",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
-Attachment [trac-5067.patch](tarball://root/attachments/some-uuid/ticket5067/trac-5067.patch) by rlm created at 2009-01-24 04:12:29
+Attachment [trac-5067.patch](tarball://root/attachments/some-uuid/ticket5067/trac-5067.patch) by @rlmill created at 2009-01-24 04:12:29
 
 
 
@@ -168,7 +168,7 @@ archive/issue_comments_038600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5067#issuecomment-38600",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -186,7 +186,7 @@ archive/issue_comments_038601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5067",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5067#issuecomment-38601",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 

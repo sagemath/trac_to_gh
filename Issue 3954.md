@@ -3,7 +3,7 @@
 archive/issues_003954.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  alexghitza\n\n\n```\nHi,\n\nIs this a bug or am I doing something stupid? I get different\nprecisions the first and second time I run the same command.\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.6, Release Date: 2008-07-30                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: E = EllipticCurve('37a')\nsage: E.period_lattice().basis(prec=30)\n\n(2.993458646231959629832009979452508177797583791370132985340523378563250356987,\n\n2.451389381986790060854224831866525225349617289144796614656471406129152899999*I)\nsage: E.period_lattice().basis(prec=30)\n\n(2.9934586462319596298320099794525081777975837913701329853405233785632503569866829041203940673970514734358405271049472881941443872373720252543753766710932613753043332505965246252164473069072694510749057806365610445781725817135182427934263132488980086942438020870431669315,\n\n2.4513893819867900608542248318665252253496172891447966146564714061291528999992568928911321280291810887126842188696618479754751998666167558016789381647830306324546902881738259304962523119593946698932473794558796569481958707269691493740581897037588157844669302474334546641*I)\n\n\nBest regards,\n\nH\u00e5kan\n```\n\n\nThis is definitely a bug.  The output precision should be as given by the prec option.  The bug is caused by a mistake in the caching code, surely.   This will likely be easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3954\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\n\n```\nHi,\n\nIs this a bug or am I doing something stupid? I get different\nprecisions the first and second time I run the same command.\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.6, Release Date: 2008-07-30                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: E = EllipticCurve('37a')\nsage: E.period_lattice().basis(prec=30)\n\n(2.993458646231959629832009979452508177797583791370132985340523378563250356987,\n\n2.451389381986790060854224831866525225349617289144796614656471406129152899999*I)\nsage: E.period_lattice().basis(prec=30)\n\n(2.9934586462319596298320099794525081777975837913701329853405233785632503569866829041203940673970514734358405271049472881941443872373720252543753766710932613753043332505965246252164473069072694510749057806365610445781725817135182427934263132488980086942438020870431669315,\n\n2.4513893819867900608542248318665252253496172891447966146564714061291528999992568928911321280291810887126842188696618479754751998666167558016789381647830306324546902881738259304962523119593946698932473794558796569481958707269691493740581897037588157844669302474334546641*I)\n\n\nBest regards,\n\nH\u00e5kan\n```\n\n\nThis is definitely a bug.  The output precision should be as given by the prec option.  The bug is caused by a mistake in the caching code, surely.   This will likely be easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3954\n\n",
     "created_at": "2008-08-26T09:03:39Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_003954.json:
     "title": "bug in elliptic curve period_lattice",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3954",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  alexghitza
 
@@ -64,16 +64,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/3954
 archive/issue_comments_028381.json:
 ```json
 {
-    "body": "Attachment [3954-pari_curve_caching.patch](tarball://root/attachments/some-uuid/ticket3954/3954-pari_curve_caching.patch) by AlexGhitza created at 2008-08-29 10:03:40\n\nAs William pointed out, this was a caching problem.  The bug was actually in E.pari_curve, where the (somewhat convoluted) code logic did not agree with the specification from the docstring.  I've rewritten that code in a way that makes sense (to me) and that works.  I've added a doctest to pari_curve(), but also to period_lattice().basis(), illustrating both the issue reported here and the actual bug.\n\nI noticed that the next function, E.pari_mincurve, has the exact same problem, and I fixed it in the exact same way.  Finally, pari_mincurve and pari_curve are clearly parallel functions that should have the same behavior for consistency, but they didn't.  So I changed pari_mincurve to behave just like pari_curve.",
+    "body": "Attachment [3954-pari_curve_caching.patch](tarball://root/attachments/some-uuid/ticket3954/3954-pari_curve_caching.patch) by @aghitza created at 2008-08-29 10:03:40\n\nAs William pointed out, this was a caching problem.  The bug was actually in E.pari_curve, where the (somewhat convoluted) code logic did not agree with the specification from the docstring.  I've rewritten that code in a way that makes sense (to me) and that works.  I've added a doctest to pari_curve(), but also to period_lattice().basis(), illustrating both the issue reported here and the actual bug.\n\nI noticed that the next function, E.pari_mincurve, has the exact same problem, and I fixed it in the exact same way.  Finally, pari_mincurve and pari_curve are clearly parallel functions that should have the same behavior for consistency, but they didn't.  So I changed pari_mincurve to behave just like pari_curve.",
     "created_at": "2008-08-29T10:03:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28381",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [3954-pari_curve_caching.patch](tarball://root/attachments/some-uuid/ticket3954/3954-pari_curve_caching.patch) by AlexGhitza created at 2008-08-29 10:03:40
+Attachment [3954-pari_curve_caching.patch](tarball://root/attachments/some-uuid/ticket3954/3954-pari_curve_caching.patch) by @aghitza created at 2008-08-29 10:03:40
 
 As William pointed out, this was a caching problem.  The bug was actually in E.pari_curve, where the (somewhat convoluted) code logic did not agree with the specification from the docstring.  I've rewritten that code in a way that makes sense (to me) and that works.  I've added a doctest to pari_curve(), but also to period_lattice().basis(), illustrating both the issue reported here and the actual bug.
 
@@ -91,7 +91,7 @@ archive/issue_comments_028382.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28382",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_028385.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28385",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -177,7 +177,7 @@ archive/issue_comments_028386.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28386",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_028387.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3954",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28387",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

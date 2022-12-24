@@ -72,7 +72,7 @@ archive/issue_comments_030640.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30640",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -90,7 +90,7 @@ archive/issue_comments_030641.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30641",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -103,16 +103,16 @@ Changing status from new to assigned.
 archive/issue_comments_030642.json:
 ```json
 {
-    "body": "Changing assignee from boothby to mhansen.",
+    "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-01-24T05:54:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30642",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from boothby to mhansen.
+Changing assignee from boothby to @mwhansen.
 
 
 
@@ -121,16 +121,16 @@ Changing assignee from boothby to mhansen.
 archive/issue_comments_030643.json:
 ```json
 {
-    "body": "Attachment [trac_4217-html-system-formatting.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.patch) by timdumol created at 2010-01-17 01:22:36\n\nRemoves Cell.__is_html and instead depends on the Cell.system() call for html cell detection",
+    "body": "Attachment [trac_4217-html-system-formatting.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.patch) by @TimDumol created at 2010-01-17 01:22:36\n\nRemoves Cell.__is_html and instead depends on the Cell.system() call for html cell detection",
     "created_at": "2010-01-17T01:22:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30643",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_4217-html-system-formatting.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.patch) by timdumol created at 2010-01-17 01:22:36
+Attachment [trac_4217-html-system-formatting.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.patch) by @TimDumol created at 2010-01-17 01:22:36
 
 Removes Cell.__is_html and instead depends on the Cell.system() call for html cell detection
 
@@ -146,7 +146,7 @@ archive/issue_comments_030644.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30644",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_030645.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30645",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -177,16 +177,16 @@ The line breaks should not have been visible in the output in the first place as
 archive/issue_comments_030646.json:
 ```json
 {
-    "body": "Attachment [trac_4217-html-system-formatting.2.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.2.patch) by timdumol created at 2010-01-17 21:57:15\n\nRebase on new",
+    "body": "Attachment [trac_4217-html-system-formatting.2.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.2.patch) by @TimDumol created at 2010-01-17 21:57:15\n\nRebase on new",
     "created_at": "2010-01-17T21:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30646",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_4217-html-system-formatting.2.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.2.patch) by timdumol created at 2010-01-17 21:57:15
+Attachment [trac_4217-html-system-formatting.2.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.2.patch) by @TimDumol created at 2010-01-17 21:57:15
 
 Rebase on new
 
@@ -202,7 +202,7 @@ archive/issue_comments_030647.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30647",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -246,7 +246,7 @@ archive/issue_comments_030648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30648",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -264,7 +264,7 @@ archive/issue_comments_030649.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30649",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -282,7 +282,7 @@ archive/issue_comments_030650.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30650",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -295,16 +295,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_030651.json:
 ```json
 {
-    "body": "Attachment [trac_4217-html-system-formatting.3.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.3.patch) by mpatel created at 2010-01-19 13:18:01\n\nI've attached V3, which just uses `cell.html`'s `input_cls`.\n\nSometimes, evaluating a cell with `%hide` at its top doesn't hide it.  This is a separate problem, apparently\n\nPositive review on this ticket.  Feel free to ignore V3.",
+    "body": "Attachment [trac_4217-html-system-formatting.3.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.3.patch) by @qed777 created at 2010-01-19 13:18:01\n\nI've attached V3, which just uses `cell.html`'s `input_cls`.\n\nSometimes, evaluating a cell with `%hide` at its top doesn't hide it.  This is a separate problem, apparently\n\nPositive review on this ticket.  Feel free to ignore V3.",
     "created_at": "2010-01-19T13:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30651",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_4217-html-system-formatting.3.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.3.patch) by mpatel created at 2010-01-19 13:18:01
+Attachment [trac_4217-html-system-formatting.3.patch](tarball://root/attachments/some-uuid/ticket4217/trac_4217-html-system-formatting.3.patch) by @qed777 created at 2010-01-19 13:18:01
 
 I've attached V3, which just uses `cell.html`'s `input_cls`.
 
@@ -324,7 +324,7 @@ archive/issue_comments_030652.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30652",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -342,7 +342,7 @@ archive/issue_comments_030653.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4217",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4217#issuecomment-30653",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

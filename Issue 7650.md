@@ -3,7 +3,7 @@
 archive/issues_007650.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  was timdumol mhansen jason\n\n`sage -t sagenb/` yields several\n\n```\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7650\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @williamstein @TimDumol @mwhansen @jasongrout\n\n`sage -t sagenb/` yields several\n\n```\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7650\n\n",
     "created_at": "2009-12-10T03:12:15Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007650.json:
     "title": "Fix sagenb doctesting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7650",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  was timdumol mhansen jason
+CC:  @williamstein @TimDumol @mwhansen @jasongrout
 
 `sage -t sagenb/` yields several
 
@@ -44,7 +44,7 @@ archive/issue_comments_065390.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65390",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_065391.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65391",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -106,16 +106,16 @@ to the top of `notebook.py` allows testing to proceed.  I'm not sure about a rea
 archive/issue_comments_065392.json:
 ```json
 {
-    "body": "Attachment [trac_7650-sagenb_doctesting.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting.patch) by mpatel created at 2009-12-10 11:39:48\n\nAdd `--force_lib` option to `sage-doctest`.  Use `os.path.join`.  **scripts** repo.",
+    "body": "Attachment [trac_7650-sagenb_doctesting.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting.patch) by @qed777 created at 2009-12-10 11:39:48\n\nAdd `--force_lib` option to `sage-doctest`.  Use `os.path.join`.  **scripts** repo.",
     "created_at": "2009-12-10T11:39:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65392",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7650-sagenb_doctesting.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting.patch) by mpatel created at 2009-12-10 11:39:48
+Attachment [trac_7650-sagenb_doctesting.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting.patch) by @qed777 created at 2009-12-10 11:39:48
 
 Add `--force_lib` option to `sage-doctest`.  Use `os.path.join`.  **scripts** repo.
 
@@ -131,7 +131,7 @@ archive/issue_comments_065393.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65393",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_065394.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65394",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -162,16 +162,16 @@ Changing priority from major to blocker.
 archive/issue_comments_065395.json:
 ```json
 {
-    "body": "Attachment [trac_7650-scripts_doctest_force_lib.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib.patch) by mpatel created at 2009-12-10 11:57:53\n\n**Please note: The attachments (or their descriptions) are switched.**  I apologize for this.\n\nAnyway, with the scripts repository patch, we can do, e.g.,\n\n```sh\n$ sage -t --force_lib sagenb/\n```\n\nWith the sagenb repository patch applied to #7625 + #7483 + #7482 + #7514 + #7648, all tests but 3 pass.  The failures are in `sagenb/misc/sageinspect.py` (cf. #7514).  The Selenium tests still pass.\n\nRemarks:\n\n* I hope I did not create false-negatives.\n* [This sage-notebook thread](http://groups.google.com/group/sage-notebook/browse_thread/thread/9dd524690bb1588b/38855ecc2819205a?#38855ecc2819205a) *might* be relevant to some tests that evaluate cells.\n* I \"untabified\" `cell.py`, `worksheet.py`, `notebook.py`, and `twist.py`.\n* I added `'nodoctest'` to `simple/twist.py`, since at least one test appears to hang indefinitely.  I don't know why.\n* Feel free to lower the priority.",
+    "body": "Attachment [trac_7650-scripts_doctest_force_lib.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib.patch) by @qed777 created at 2009-12-10 11:57:53\n\n**Please note: The attachments (or their descriptions) are switched.**  I apologize for this.\n\nAnyway, with the scripts repository patch, we can do, e.g.,\n\n```sh\n$ sage -t --force_lib sagenb/\n```\n\nWith the sagenb repository patch applied to #7625 + #7483 + #7482 + #7514 + #7648, all tests but 3 pass.  The failures are in `sagenb/misc/sageinspect.py` (cf. #7514).  The Selenium tests still pass.\n\nRemarks:\n\n* I hope I did not create false-negatives.\n* [This sage-notebook thread](http://groups.google.com/group/sage-notebook/browse_thread/thread/9dd524690bb1588b/38855ecc2819205a?#38855ecc2819205a) *might* be relevant to some tests that evaluate cells.\n* I \"untabified\" `cell.py`, `worksheet.py`, `notebook.py`, and `twist.py`.\n* I added `'nodoctest'` to `simple/twist.py`, since at least one test appears to hang indefinitely.  I don't know why.\n* Feel free to lower the priority.",
     "created_at": "2009-12-10T11:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65395",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7650-scripts_doctest_force_lib.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib.patch) by mpatel created at 2009-12-10 11:57:53
+Attachment [trac_7650-scripts_doctest_force_lib.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib.patch) by @qed777 created at 2009-12-10 11:57:53
 
 **Please note: The attachments (or their descriptions) are switched.**  I apologize for this.
 
@@ -203,7 +203,7 @@ archive/issue_comments_065396.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65396",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_065397.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65397",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -245,7 +245,7 @@ archive/issue_comments_065398.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65398",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_065399.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65399",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -289,7 +289,7 @@ archive/issue_comments_065400.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65400",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -302,16 +302,16 @@ Updated scripts repo patch.  Replaces previous.
 archive/issue_comments_065401.json:
 ```json
 {
-    "body": "Attachment [trac_7650-sagenb_doctesting_v2.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v2.patch) by mpatel created at 2009-12-13 14:18:53\n\nQuit spawned worksheet processes.  Replaces previous sagenb repo patch.",
+    "body": "Attachment [trac_7650-sagenb_doctesting_v2.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v2.patch) by @qed777 created at 2009-12-13 14:18:53\n\nQuit spawned worksheet processes.  Replaces previous sagenb repo patch.",
     "created_at": "2009-12-13T14:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65401",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7650-sagenb_doctesting_v2.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v2.patch) by mpatel created at 2009-12-13 14:18:53
+Attachment [trac_7650-sagenb_doctesting_v2.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v2.patch) by @qed777 created at 2009-12-13 14:18:53
 
 Quit spawned worksheet processes.  Replaces previous sagenb repo patch.
 
@@ -327,7 +327,7 @@ archive/issue_comments_065402.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65402",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -340,16 +340,16 @@ Auto-detect `site-packages`.  scripts repo.  Replaces previous.
 archive/issue_comments_065403.json:
 ```json
 {
-    "body": "Attachment [trac_7650-scripts_doctest_force_lib_v3.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v3.patch) by mpatel created at 2009-12-14 06:06:45\n\nAdds `-sagenb` option.  scripts repo.  Replaces previous.",
+    "body": "Attachment [trac_7650-scripts_doctest_force_lib_v3.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v3.patch) by @qed777 created at 2009-12-14 06:06:45\n\nAdds `-sagenb` option.  scripts repo.  Replaces previous.",
     "created_at": "2009-12-14T06:06:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65403",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7650-scripts_doctest_force_lib_v3.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v3.patch) by mpatel created at 2009-12-14 06:06:45
+Attachment [trac_7650-scripts_doctest_force_lib_v3.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v3.patch) by @qed777 created at 2009-12-14 06:06:45
 
 Adds `-sagenb` option.  scripts repo.  Replaces previous.
 
@@ -360,16 +360,16 @@ Adds `-sagenb` option.  scripts repo.  Replaces previous.
 archive/issue_comments_065404.json:
 ```json
 {
-    "body": "Attachment [trac_7650-scripts_doctest_force_lib_v4.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v4.patch) by mpatel created at 2009-12-14 06:09:51\n\nUpdated `SAGE_ROOT/makefile`.",
+    "body": "Attachment [trac_7650-scripts_doctest_force_lib_v4.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v4.patch) by @qed777 created at 2009-12-14 06:09:51\n\nUpdated `SAGE_ROOT/makefile`.",
     "created_at": "2009-12-14T06:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65404",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7650-scripts_doctest_force_lib_v4.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v4.patch) by mpatel created at 2009-12-14 06:09:51
+Attachment [trac_7650-scripts_doctest_force_lib_v4.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v4.patch) by @qed777 created at 2009-12-14 06:09:51
 
 Updated `SAGE_ROOT/makefile`.
 
@@ -385,7 +385,7 @@ archive/issue_comments_065405.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65405",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -398,16 +398,16 @@ Changing status from needs_work to needs_review.
 archive/issue_comments_065406.json:
 ```json
 {
-    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket7650/makefile) by mpatel created at 2009-12-14 06:18:29\n\nWith [attachment:trac_7650-scripts_doctest_force_lib_v4.patch] and an updated top-level [attachment: makefile], we can do\n\n* `make test`\n* `make ptest`\n* `sage -t -sagenb`\n* `sage -tp -sagenb`\n\netc.  Maybe we should unify the test scripts and use [optparse](http://docs.python.org/library/optparse.html)?",
+    "body": "Attachment [makefile](tarball://root/attachments/some-uuid/ticket7650/makefile) by @qed777 created at 2009-12-14 06:18:29\n\nWith [attachment:trac_7650-scripts_doctest_force_lib_v4.patch] and an updated top-level [attachment: makefile], we can do\n\n* `make test`\n* `make ptest`\n* `sage -t -sagenb`\n* `sage -tp -sagenb`\n\netc.  Maybe we should unify the test scripts and use [optparse](http://docs.python.org/library/optparse.html)?",
     "created_at": "2009-12-14T06:18:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65406",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [makefile](tarball://root/attachments/some-uuid/ticket7650/makefile) by mpatel created at 2009-12-14 06:18:29
+Attachment [makefile](tarball://root/attachments/some-uuid/ticket7650/makefile) by @qed777 created at 2009-12-14 06:18:29
 
 With [attachment:trac_7650-scripts_doctest_force_lib_v4.patch] and an updated top-level [attachment: makefile], we can do
 
@@ -430,7 +430,7 @@ archive/issue_comments_065407.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65407",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -448,7 +448,7 @@ archive/issue_comments_065408.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65408",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -466,7 +466,7 @@ archive/issue_comments_065409.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65409",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -484,7 +484,7 @@ archive/issue_comments_065410.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65410",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -497,16 +497,16 @@ Also: Be more agressive with `os.path.join`-ery.
 archive/issue_comments_065411.json:
 ```json
 {
-    "body": "Attachment [trac_7650-scripts_doctest_force_lib_v5.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v5.patch) by mpatel created at 2009-12-28 23:10:03\n\nDocument new options.  More `os.path.join`-ery.  Replaces previous.",
+    "body": "Attachment [trac_7650-scripts_doctest_force_lib_v5.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v5.patch) by @qed777 created at 2009-12-28 23:10:03\n\nDocument new options.  More `os.path.join`-ery.  Replaces previous.",
     "created_at": "2009-12-28T23:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65411",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7650-scripts_doctest_force_lib_v5.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v5.patch) by mpatel created at 2009-12-28 23:10:03
+Attachment [trac_7650-scripts_doctest_force_lib_v5.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-scripts_doctest_force_lib_v5.patch) by @qed777 created at 2009-12-28 23:10:03
 
 Document new options.  More `os.path.join`-ery.  Replaces previous.
 
@@ -522,7 +522,7 @@ archive/issue_comments_065412.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65412",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -540,7 +540,7 @@ archive/issue_comments_065413.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65413",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -553,16 +553,16 @@ Rebased vs. #7482's v4.  Replaces previous **sagenb** patch.
 archive/issue_comments_065414.json:
 ```json
 {
-    "body": "Attachment [trac_7650-sagenb_doctesting_v3.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v3.patch) by mpatel created at 2010-01-01 10:57:37",
+    "body": "Attachment [trac_7650-sagenb_doctesting_v3.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v3.patch) by @qed777 created at 2010-01-01 10:57:37",
     "created_at": "2010-01-01T10:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65414",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7650-sagenb_doctesting_v3.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v3.patch) by mpatel created at 2010-01-01 10:57:37
+Attachment [trac_7650-sagenb_doctesting_v3.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v3.patch) by @qed777 created at 2010-01-01 10:57:37
 
 
 
@@ -576,7 +576,7 @@ archive/issue_comments_065415.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65415",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -589,16 +589,16 @@ Rebased vs. 4.3.1.alpha0 + #7269.  Replaces previous sagenb patch.
 archive/issue_comments_065416.json:
 ```json
 {
-    "body": "Attachment [trac_7650-sagenb_doctesting_v4.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v4.patch) by mpatel created at 2010-01-05 00:49:32",
+    "body": "Attachment [trac_7650-sagenb_doctesting_v4.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v4.patch) by @qed777 created at 2010-01-05 00:49:32",
     "created_at": "2010-01-05T00:49:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65416",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7650-sagenb_doctesting_v4.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v4.patch) by mpatel created at 2010-01-05 00:49:32
+Attachment [trac_7650-sagenb_doctesting_v4.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v4.patch) by @qed777 created at 2010-01-05 00:49:32
 
 
 
@@ -612,7 +612,7 @@ archive/issue_comments_065417.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65417",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -625,16 +625,16 @@ I've attached a rebased sagenb patch.  I added `"""nodoctests"""` to the top of 
 archive/issue_comments_065418.json:
 ```json
 {
-    "body": "Attachment [trac_7650-sagenb_doctesting_v5.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v5.patch) by mpatel created at 2010-01-14 21:58:17\n\nFix tags / user_view asymmetry.  Replaces previous sagenb patch.",
+    "body": "Attachment [trac_7650-sagenb_doctesting_v5.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v5.patch) by @qed777 created at 2010-01-14 21:58:17\n\nFix tags / user_view asymmetry.  Replaces previous sagenb patch.",
     "created_at": "2010-01-14T21:58:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65418",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7650-sagenb_doctesting_v5.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v5.patch) by mpatel created at 2010-01-14 21:58:17
+Attachment [trac_7650-sagenb_doctesting_v5.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v5.patch) by @qed777 created at 2010-01-14 21:58:17
 
 Fix tags / user_view asymmetry.  Replaces previous sagenb patch.
 
@@ -650,7 +650,7 @@ archive/issue_comments_065419.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65419",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -668,7 +668,7 @@ archive/issue_comments_065420.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65420",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -681,16 +681,16 @@ Fix interact doctests for 4.3.1.alpha2 (colors.py).  Replaces previous sagenb pa
 archive/issue_comments_065421.json:
 ```json
 {
-    "body": "Attachment [trac_7650-sagenb_doctesting_v6.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v6.patch) by timdumol created at 2010-01-16 21:22:05\n\nReplying to [comment:17 mpatel]:\n> V5 makes it so a worksheet `reconstruct`ed from the `basic` representation of another has the same `tags` and `user_view` as the original.\n\nShouldn't this be put in a new ticket?",
+    "body": "Attachment [trac_7650-sagenb_doctesting_v6.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v6.patch) by @TimDumol created at 2010-01-16 21:22:05\n\nReplying to [comment:17 mpatel]:\n> V5 makes it so a worksheet `reconstruct`ed from the `basic` representation of another has the same `tags` and `user_view` as the original.\n\nShouldn't this be put in a new ticket?",
     "created_at": "2010-01-16T21:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65421",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
-Attachment [trac_7650-sagenb_doctesting_v6.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v6.patch) by timdumol created at 2010-01-16 21:22:05
+Attachment [trac_7650-sagenb_doctesting_v6.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-sagenb_doctesting_v6.patch) by @TimDumol created at 2010-01-16 21:22:05
 
 Replying to [comment:17 mpatel]:
 > V5 makes it so a worksheet `reconstruct`ed from the `basic` representation of another has the same `tags` and `user_view` as the original.
@@ -709,7 +709,7 @@ archive/issue_comments_065422.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65422",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -757,7 +757,7 @@ archive/issue_comments_065423.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65423",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -775,7 +775,7 @@ archive/issue_comments_065424.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65424",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -788,16 +788,16 @@ A few documentation fixes (precision errors and style), and a couple of changes 
 archive/issue_comments_065425.json:
 ```json
 {
-    "body": "Attachment [trac_7650-reviewer.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-reviewer.patch) by mpatel created at 2010-01-18 04:10:43\n\nFix two doctest failures.  Replaces reviewer patch.  sagenb repo.",
+    "body": "Attachment [trac_7650-reviewer.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-reviewer.patch) by @qed777 created at 2010-01-18 04:10:43\n\nFix two doctest failures.  Replaces reviewer patch.  sagenb repo.",
     "created_at": "2010-01-18T04:10:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65425",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7650-reviewer.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-reviewer.patch) by mpatel created at 2010-01-18 04:10:43
+Attachment [trac_7650-reviewer.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-reviewer.patch) by @qed777 created at 2010-01-18 04:10:43
 
 Fix two doctest failures.  Replaces reviewer patch.  sagenb repo.
 
@@ -813,7 +813,7 @@ archive/issue_comments_065426.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65426",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -826,16 +826,16 @@ Changing status from needs_review to positive_review.
 archive/issue_comments_065427.json:
 ```json
 {
-    "body": "Attachment [trac_7650-reviewer_v2.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-reviewer_v2.patch) by mpatel created at 2010-01-18 04:17:30\n\nV2 of the reviewer patch:\n\n* Adds a missing dot (`.`) in `interact.py`.\n* Moves `# output depends on timezone` to the input statement in `worksheet.py`.\n* [Pre-existing] `most be defined` --> `must be defined`.",
+    "body": "Attachment [trac_7650-reviewer_v2.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-reviewer_v2.patch) by @qed777 created at 2010-01-18 04:17:30\n\nV2 of the reviewer patch:\n\n* Adds a missing dot (`.`) in `interact.py`.\n* Moves `# output depends on timezone` to the input statement in `worksheet.py`.\n* [Pre-existing] `most be defined` --> `must be defined`.",
     "created_at": "2010-01-18T04:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65427",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7650-reviewer_v2.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-reviewer_v2.patch) by mpatel created at 2010-01-18 04:17:30
+Attachment [trac_7650-reviewer_v2.patch](tarball://root/attachments/some-uuid/ticket7650/trac_7650-reviewer_v2.patch) by @qed777 created at 2010-01-18 04:17:30
 
 V2 of the reviewer patch:
 
@@ -855,7 +855,7 @@ archive/issue_comments_065428.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65428",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -873,7 +873,7 @@ archive/issue_comments_065429.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65429",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -891,7 +891,7 @@ archive/issue_comments_065430.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7650",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65430",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 

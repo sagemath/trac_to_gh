@@ -14,7 +14,7 @@ archive/issues_000521.json:
     "title": "put a doctest for every single function schemes/elliptic_curves/monsky_washnitzer.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/521",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: dmharvey
@@ -94,7 +94,7 @@ archive/issue_comments_002642.json:
     "issue": "https://github.com/sagemath/sagetest/issues/521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/521#issuecomment-2642",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -240,7 +240,7 @@ archive/issue_comments_002648.json:
     "issue": "https://github.com/sagemath/sagetest/issues/521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/521#issuecomment-2648",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -253,16 +253,16 @@ patch rebased on sage-2.10.2.alpha0
 archive/issue_comments_002649.json:
 ```json
 {
-    "body": "Attachment [521_alt.patch](tarball://root/attachments/some-uuid/ticket521/521_alt.patch) by AlexGhitza created at 2008-02-17 16:56:00",
+    "body": "Attachment [521_alt.patch](tarball://root/attachments/some-uuid/ticket521/521_alt.patch) by @aghitza created at 2008-02-17 16:56:00",
     "created_at": "2008-02-17T16:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/521",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/521#issuecomment-2649",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
-Attachment [521_alt.patch](tarball://root/attachments/some-uuid/ticket521/521_alt.patch) by AlexGhitza created at 2008-02-17 16:56:00
+Attachment [521_alt.patch](tarball://root/attachments/some-uuid/ticket521/521_alt.patch) by @aghitza created at 2008-02-17 16:56:00
 
 
 

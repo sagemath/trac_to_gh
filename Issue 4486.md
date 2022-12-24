@@ -3,7 +3,7 @@
 archive/issues_004486.json:
 ```json
 {
-    "body": "Assignee: tornaria\n\nThese files need audited. In particular, `partitions_c.cc` should depend on `partitions_c.h`, and shouldn't duplicate the code there. Someone familiar with C should go ahead and clean these files up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4486\n\n",
+    "body": "Assignee: @tornaria\n\nThese files need audited. In particular, `partitions_c.cc` should depend on `partitions_c.h`, and shouldn't duplicate the code there. Someone familiar with C should go ahead and clean these files up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4486\n\n",
     "created_at": "2008-11-09T23:22:58Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_004486.json:
     "title": "Clean up partitions_c.cc and partitions_c.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4486",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
-Assignee: tornaria
+Assignee: @tornaria
 
 These files need audited. In particular, `partitions_c.cc` should depend on `partitions_c.h`, and shouldn't duplicate the code there. Someone familiar with C should go ahead and clean these files up.
 
@@ -37,7 +37,7 @@ archive/issue_comments_033131.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4486#issuecomment-33131",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -55,7 +55,7 @@ archive/issue_comments_033132.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4486",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4486#issuecomment-33132",
-    "user": "mmezzarobba"
+    "user": "@mezzarobba"
 }
 ```
 

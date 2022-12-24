@@ -14,7 +14,7 @@ archive/issues_006286.json:
     "title": "Inconsistence typesettings of PrimitiveFunctions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6286",
-    "user": "gmhossain"
+    "user": "@golam-m-hossain"
 }
 ```
 In sage-4.0.1, most of the primitive functions suffer from
@@ -89,7 +89,7 @@ archive/issue_comments_050190.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6286#issuecomment-50190",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_050191.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6286#issuecomment-50191",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -122,16 +122,16 @@ Changing status from new to assigned.
 archive/issue_comments_050192.json:
 ```json
 {
-    "body": "Set assignee to burcin.",
+    "body": "Set assignee to @burcin.",
     "created_at": "2009-06-14T15:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6286#issuecomment-50192",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Set assignee to burcin.
+Set assignee to @burcin.
 
 
 
@@ -145,7 +145,7 @@ archive/issue_comments_050193.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6286#issuecomment-50193",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_050194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6286#issuecomment-50194",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -181,7 +181,7 @@ archive/issue_comments_050195.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6286#issuecomment-50195",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -199,7 +199,7 @@ archive/issue_comments_050196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6286",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6286#issuecomment-50196",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

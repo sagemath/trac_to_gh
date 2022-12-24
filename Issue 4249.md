@@ -3,7 +3,7 @@
 archive/issues_004249.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  \"maite aranes\" <m.t.aranes@warwick.ac.uk>\n\nKeywords: number fields\n\nThis is unacceptable (in  my opinion):\n\n```\nsage: K.<a>=NumberField(x^2+23)\nsage: K.integral_basis()\n[1, 1/2*a + 1/2]\nsage: K.ring_of_integers().basis()\n[1/2*a + 1/2, a]\n```\n\n\nI think these should be the same.  The problem is that K.integral_basis() gets the basis from pari, but when the ring_of_integers is constructed it uses that basis in the constructions but then creates its own, different, basis!\n\nSuggested solution:  make the existing integral_basis() function an internal one used by the ring_of_integers() function only, and have K.integra_basis() return the basis of the ring of integers instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4249\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  \"maite aranes\" <m.t.aranes@warwick.ac.uk>\n\nKeywords: number fields\n\nThis is unacceptable (in  my opinion):\n\n```\nsage: K.<a>=NumberField(x^2+23)\nsage: K.integral_basis()\n[1, 1/2*a + 1/2]\nsage: K.ring_of_integers().basis()\n[1/2*a + 1/2, a]\n```\n\n\nI think these should be the same.  The problem is that K.integral_basis() gets the basis from pari, but when the ring_of_integers is constructed it uses that basis in the constructions but then creates its own, different, basis!\n\nSuggested solution:  make the existing integral_basis() function an internal one used by the ring_of_integers() function only, and have K.integra_basis() return the basis of the ring of integers instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4249\n\n",
     "created_at": "2008-10-07T11:21:35Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_004249.json:
     "title": "Inconsistency in number field integral bases",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4249",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  "maite aranes" <m.t.aranes@warwick.ac.uk>
 
@@ -54,7 +54,7 @@ archive/issue_comments_030888.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30888",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -67,16 +67,16 @@ I strongly agree with John Cremona's suggested fix.
 archive/issue_comments_030889.json:
 ```json
 {
-    "body": "Attachment [sage-4249.patch](tarball://root/attachments/some-uuid/ticket4249/sage-4249.patch) by cremona created at 2008-10-14 20:46:43",
+    "body": "Attachment [sage-4249.patch](tarball://root/attachments/some-uuid/ticket4249/sage-4249.patch) by @JohnCremona created at 2008-10-14 20:46:43",
     "created_at": "2008-10-14T20:46:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30889",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [sage-4249.patch](tarball://root/attachments/some-uuid/ticket4249/sage-4249.patch) by cremona created at 2008-10-14 20:46:43
+Attachment [sage-4249.patch](tarball://root/attachments/some-uuid/ticket4249/sage-4249.patch) by @JohnCremona created at 2008-10-14 20:46:43
 
 
 
@@ -90,7 +90,7 @@ archive/issue_comments_030890.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30890",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -108,7 +108,7 @@ archive/issue_comments_030891.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30891",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_030892.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30892",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -144,7 +144,7 @@ archive/issue_comments_030893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30893",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -164,7 +164,7 @@ archive/issue_comments_030894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30894",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -205,7 +205,7 @@ archive/issue_comments_030895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30895",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -234,7 +234,7 @@ archive/issue_comments_030896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30896",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -252,7 +252,7 @@ archive/issue_comments_030897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30897",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -270,7 +270,7 @@ archive/issue_comments_030898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30898",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -293,7 +293,7 @@ archive/issue_comments_030899.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30899",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -315,7 +315,7 @@ archive/issue_comments_030900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30900",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_030901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30901",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -403,7 +403,7 @@ archive/issue_comments_030902.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30902",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -433,7 +433,7 @@ archive/issue_comments_030903.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30903",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_030904.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30904",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -466,16 +466,16 @@ Whoops. Forgot that we had to look at John's original patch, too. :)
 archive/issue_comments_030905.json:
 ```json
 {
-    "body": "Attachment [trac-4249-1a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-1a.patch) by craigcitro created at 2008-11-14 09:19:02",
+    "body": "Attachment [trac-4249-1a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-1a.patch) by @craigcitro created at 2008-11-14 09:19:02",
     "created_at": "2008-11-14T09:19:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30905",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4249-1a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-1a.patch) by craigcitro created at 2008-11-14 09:19:02
+Attachment [trac-4249-1a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-1a.patch) by @craigcitro created at 2008-11-14 09:19:02
 
 
 
@@ -484,16 +484,16 @@ Attachment [trac-4249-1a.patch](tarball://root/attachments/some-uuid/ticket4249/
 archive/issue_comments_030906.json:
 ```json
 {
-    "body": "Attachment [trac-4249-pt2a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-pt2a.patch) by craigcitro created at 2008-11-14 09:22:08\n\nThis looks good! \n\nThe only complaints I had were one or two naming issues; in particular, I didn't see why `integral_basis_internal` should be visible when you tab complete. (The `internal` in the name really makes it seem weird.) So I've just corrected a few naming issues, and made a new patch. Then I rebased the patch John Voight and I wrote on top of this. So you should apply:\n\n\n```\nsage-4249.patch\ntrac-4249-1a.patch\ntrac-4249-pt2a.patch\n```\n\n\nin order. (I've deleted the old pt2 patch, just to help avoid confusion.)",
+    "body": "Attachment [trac-4249-pt2a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-pt2a.patch) by @craigcitro created at 2008-11-14 09:22:08\n\nThis looks good! \n\nThe only complaints I had were one or two naming issues; in particular, I didn't see why `integral_basis_internal` should be visible when you tab complete. (The `internal` in the name really makes it seem weird.) So I've just corrected a few naming issues, and made a new patch. Then I rebased the patch John Voight and I wrote on top of this. So you should apply:\n\n\n```\nsage-4249.patch\ntrac-4249-1a.patch\ntrac-4249-pt2a.patch\n```\n\n\nin order. (I've deleted the old pt2 patch, just to help avoid confusion.)",
     "created_at": "2008-11-14T09:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30906",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-4249-pt2a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-pt2a.patch) by craigcitro created at 2008-11-14 09:22:08
+Attachment [trac-4249-pt2a.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-pt2a.patch) by @craigcitro created at 2008-11-14 09:22:08
 
 This looks good! 
 
@@ -521,7 +521,7 @@ archive/issue_comments_030907.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30907",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -543,7 +543,7 @@ archive/issue_comments_030908.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30908",
-    "user": "jvoight"
+    "user": "@jvoight"
 }
 ```
 
@@ -647,16 +647,16 @@ Total time for all tests: 31.0 seconds
 archive/issue_comments_030910.json:
 ```json
 {
-    "body": "Attachment [trac-4249-3.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-3.patch) by cremona created at 2008-11-14 20:46:24",
+    "body": "Attachment [trac-4249-3.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-3.patch) by @JohnCremona created at 2008-11-14 20:46:24",
     "created_at": "2008-11-14T20:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30910",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4249-3.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-3.patch) by cremona created at 2008-11-14 20:46:24
+Attachment [trac-4249-3.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-3.patch) by @JohnCremona created at 2008-11-14 20:46:24
 
 
 
@@ -665,16 +665,16 @@ Attachment [trac-4249-3.patch](tarball://root/attachments/some-uuid/ticket4249/t
 archive/issue_comments_030911.json:
 ```json
 {
-    "body": "Attachment [trac-4249-doc.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-doc.patch) by cremona created at 2008-11-14 20:47:10",
+    "body": "Attachment [trac-4249-doc.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-doc.patch) by @JohnCremona created at 2008-11-14 20:47:10",
     "created_at": "2008-11-14T20:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30911",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [trac-4249-doc.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-doc.patch) by cremona created at 2008-11-14 20:47:10
+Attachment [trac-4249-doc.patch](tarball://root/attachments/some-uuid/ticket4249/trac-4249-doc.patch) by @JohnCremona created at 2008-11-14 20:47:10
 
 
 
@@ -688,7 +688,7 @@ archive/issue_comments_030912.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30912",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -708,7 +708,7 @@ archive/issue_comments_030913.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30913",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -750,7 +750,7 @@ archive/issue_comments_030915.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30915",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -772,7 +772,7 @@ archive/issue_comments_030916.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4249",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4249#issuecomment-30916",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 

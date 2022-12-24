@@ -3,7 +3,7 @@
 archive/issues_009844.json:
 ```json
 {
-    "body": "Assignee: GeorgSWeber\n\nCC:  rishi leif jdemeyer\n\nOne needs to add\n\n```\n#include <time.h> \n```\n\nto `include/Lcommandline_numbertheory.h`\nto get lcalc to build on cygwin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9845\n\n",
+    "body": "Assignee: GeorgSWeber\n\nCC:  @rishikesha @nexttime @jdemeyer\n\nOne needs to add\n\n```\n#include <time.h> \n```\n\nto `include/Lcommandline_numbertheory.h`\nto get lcalc to build on cygwin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9845\n\n",
     "created_at": "2010-09-01T02:17:51Z",
     "labels": [
         "build",
@@ -14,12 +14,12 @@ archive/issues_009844.json:
     "title": "lcalc doesn't build on cygwin due to missing time.h include",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9844",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: GeorgSWeber
 
-CC:  rishi leif jdemeyer
+CC:  @rishikesha @nexttime @jdemeyer
 
 One needs to add
 
@@ -46,7 +46,7 @@ archive/issue_comments_097147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97147",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -64,7 +64,7 @@ archive/issue_comments_097148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97148",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -82,7 +82,7 @@ archive/issue_comments_097149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97149",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -100,7 +100,7 @@ archive/issue_comments_097150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97150",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -126,7 +126,7 @@ archive/issue_comments_097151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97151",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_097152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97152",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -187,16 +187,16 @@ Btw, the `-lmpir` (or `-lgmp`) is only needed if we build a *static* version of 
 archive/issue_comments_097153.json:
 ```json
 {
-    "body": "Attachment [lcalc-20100428-1.23.p2-p4.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p2-p4.diff) by leif created at 2010-09-02 23:41:16\n\nDiff between the p2 (#9592) and Mike's p4 spkg - for review/reference.",
+    "body": "Attachment [lcalc-20100428-1.23.p2-p4.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p2-p4.diff) by @nexttime created at 2010-09-02 23:41:16\n\nDiff between the p2 (#9592) and Mike's p4 spkg - for review/reference.",
     "created_at": "2010-09-02T23:41:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97153",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
-Attachment [lcalc-20100428-1.23.p2-p4.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p2-p4.diff) by leif created at 2010-09-02 23:41:16
+Attachment [lcalc-20100428-1.23.p2-p4.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p2-p4.diff) by @nexttime created at 2010-09-02 23:41:16
 
 Diff between the p2 (#9592) and Mike's p4 spkg - for review/reference.
 
@@ -212,7 +212,7 @@ archive/issue_comments_097154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97154",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_097155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97155",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -251,7 +251,7 @@ archive/issue_comments_097156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97156",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -269,7 +269,7 @@ archive/issue_comments_097157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97157",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -290,7 +290,7 @@ archive/issue_comments_097158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97158",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -310,7 +310,7 @@ archive/issue_comments_097159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97159",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -323,16 +323,16 @@ I also made the other changes suggested by Leif.  New spkg: [http://sage.math.wa
 archive/issue_comments_097160.json:
 ```json
 {
-    "body": "Attachment [lcalc-20100428-1.23.p2-p4.2.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p2-p4.2.diff) by jdemeyer created at 2010-09-19 16:35:01\n\nignore this file",
+    "body": "Attachment [lcalc-20100428-1.23.p2-p4.2.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p2-p4.2.diff) by @jdemeyer created at 2010-09-19 16:35:01\n\nignore this file",
     "created_at": "2010-09-19T16:35:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97160",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [lcalc-20100428-1.23.p2-p4.2.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p2-p4.2.diff) by jdemeyer created at 2010-09-19 16:35:01
+Attachment [lcalc-20100428-1.23.p2-p4.2.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p2-p4.2.diff) by @jdemeyer created at 2010-09-19 16:35:01
 
 ignore this file
 
@@ -343,16 +343,16 @@ ignore this file
 archive/issue_comments_097161.json:
 ```json
 {
-    "body": "Attachment [lcalc-20100428-1.23.p4-p5.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p4-p5.diff) by jdemeyer created at 2010-09-19 16:42:01\n\nDiff between p4 and p5 - for review/reference.",
+    "body": "Attachment [lcalc-20100428-1.23.p4-p5.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p4-p5.diff) by @jdemeyer created at 2010-09-19 16:42:01\n\nDiff between p4 and p5 - for review/reference.",
     "created_at": "2010-09-19T16:42:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97161",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [lcalc-20100428-1.23.p4-p5.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p4-p5.diff) by jdemeyer created at 2010-09-19 16:42:01
+Attachment [lcalc-20100428-1.23.p4-p5.diff](tarball://root/attachments/some-uuid/ticket9845/lcalc-20100428-1.23.p4-p5.diff) by @jdemeyer created at 2010-09-19 16:42:01
 
 Diff between p4 and p5 - for review/reference.
 
@@ -368,7 +368,7 @@ archive/issue_comments_097162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97162",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -409,7 +409,7 @@ archive/issue_comments_097163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97163",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -429,7 +429,7 @@ archive/issue_comments_097164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97164",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -447,7 +447,7 @@ archive/issue_comments_097165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97165",
-    "user": "leif"
+    "user": "@nexttime"
 }
 ```
 
@@ -468,7 +468,7 @@ archive/issue_comments_097166.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9844",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9844#issuecomment-97166",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

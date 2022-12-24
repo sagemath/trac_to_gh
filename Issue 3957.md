@@ -14,7 +14,7 @@ archive/issues_003957.json:
     "title": "notebook -- major bug in opening notebooks and plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3957",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: boothby
@@ -66,7 +66,7 @@ archive/issue_comments_028425.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3957",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3957#issuecomment-28425",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

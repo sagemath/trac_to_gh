@@ -14,7 +14,7 @@ archive/issues_008902.json:
     "title": "Subsets element construction is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8902",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: sage-combinat
@@ -49,7 +49,7 @@ archive/issue_comments_081943.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8902#issuecomment-81943",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -67,7 +67,7 @@ archive/issue_comments_081944.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8902#issuecomment-81944",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -80,16 +80,16 @@ Changing status from new to needs_review.
 archive/issue_comments_081945.json:
 ```json
 {
-    "body": "Changing assignee from sage-combinat to hivert.",
+    "body": "Changing assignee from sage-combinat to @hivert.",
     "created_at": "2010-05-12T20:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8902#issuecomment-81945",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Changing assignee from sage-combinat to hivert.
+Changing assignee from sage-combinat to @hivert.
 
 
 
@@ -98,16 +98,16 @@ Changing assignee from sage-combinat to hivert.
 archive/issue_comments_081946.json:
 ```json
 {
-    "body": "Attachment [trac_8902-subsets_call_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8902/trac_8902-subsets_call_fix-fh.patch) by hivert created at 2010-05-31 10:28:05",
+    "body": "Attachment [trac_8902-subsets_call_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8902/trac_8902-subsets_call_fix-fh.patch) by @hivert created at 2010-05-31 10:28:05",
     "created_at": "2010-05-31T10:28:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8902#issuecomment-81946",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_8902-subsets_call_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8902/trac_8902-subsets_call_fix-fh.patch) by hivert created at 2010-05-31 10:28:05
+Attachment [trac_8902-subsets_call_fix-fh.patch](tarball://root/attachments/some-uuid/ticket8902/trac_8902-subsets_call_fix-fh.patch) by @hivert created at 2010-05-31 10:28:05
 
 
 
@@ -121,7 +121,7 @@ archive/issue_comments_081947.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8902#issuecomment-81947",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_081948.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8902#issuecomment-81948",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_081949.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8902",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8902#issuecomment-81949",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

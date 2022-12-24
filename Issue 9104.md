@@ -14,7 +14,7 @@ archive/issues_009104.json:
     "title": "_name is set too late when creating a combinatorial free module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9104",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 Assignee: sage-combinat
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/9104
 archive/issue_comments_084599.json:
 ```json
 {
-    "body": "Attachment [trac_9104_freemod_name-fix-nt.patch](tarball://root/attachments/some-uuid/ticket9104/trac_9104_freemod_name-fix-nt.patch) by hivert created at 2010-05-31 13:10:52",
+    "body": "Attachment [trac_9104_freemod_name-fix-nt.patch](tarball://root/attachments/some-uuid/ticket9104/trac_9104_freemod_name-fix-nt.patch) by @hivert created at 2010-05-31 13:10:52",
     "created_at": "2010-05-31T13:10:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9104#issuecomment-84599",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
-Attachment [trac_9104_freemod_name-fix-nt.patch](tarball://root/attachments/some-uuid/ticket9104/trac_9104_freemod_name-fix-nt.patch) by hivert created at 2010-05-31 13:10:52
+Attachment [trac_9104_freemod_name-fix-nt.patch](tarball://root/attachments/some-uuid/ticket9104/trac_9104_freemod_name-fix-nt.patch) by @hivert created at 2010-05-31 13:10:52
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_084600.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9104#issuecomment-84600",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_084601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9104#issuecomment-84601",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_084602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9104#issuecomment-84602",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -115,7 +115,7 @@ archive/issue_comments_084603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9104#issuecomment-84603",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_084604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9104",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9104#issuecomment-84604",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

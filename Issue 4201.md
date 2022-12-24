@@ -3,7 +3,7 @@
 archive/issues_004201.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4201\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4201\n\n",
     "created_at": "2008-09-26T17:08:06Z",
     "labels": [
         "graphics",
@@ -14,10 +14,10 @@ archive/issues_004201.json:
     "title": "add .options and .reset to plot functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4201",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
 CC:  boothby
 
@@ -34,16 +34,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4201
 archive/issue_comments_030482.json:
 ```json
 {
-    "body": "Changing assignee from was to mhansen.",
+    "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-09-26T20:07:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30482",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Changing assignee from was to mhansen.
+Changing assignee from @williamstein to @mwhansen.
 
 
 
@@ -57,7 +57,7 @@ archive/issue_comments_030483.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30483",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -75,7 +75,7 @@ archive/issue_comments_030484.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30484",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -113,16 +113,16 @@ Michael
 archive/issue_comments_030486.json:
 ```json
 {
-    "body": "Attachment [trac_4201.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201.patch) by mhansen created at 2008-09-26 20:15:12\n\nWhat spelling problems?  I don't see any ;-)",
+    "body": "Attachment [trac_4201.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201.patch) by @mwhansen created at 2008-09-26 20:15:12\n\nWhat spelling problems?  I don't see any ;-)",
     "created_at": "2008-09-26T20:15:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30486",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4201.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201.patch) by mhansen created at 2008-09-26 20:15:12
+Attachment [trac_4201.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201.patch) by @mwhansen created at 2008-09-26 20:15:12
 
 What spelling problems?  I don't see any ;-)
 
@@ -138,7 +138,7 @@ archive/issue_comments_030487.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30487",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -151,16 +151,16 @@ This does not apply cleanly to alpha1.  For example, the plot_slope_field patch 
 archive/issue_comments_030488.json:
 ```json
 {
-    "body": "Attachment [trac_4201-rebased.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-rebased.patch) by jason created at 2008-09-26 22:34:56\n\nApply instead of previous patch",
+    "body": "Attachment [trac_4201-rebased.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-rebased.patch) by @jasongrout created at 2008-09-26 22:34:56\n\nApply instead of previous patch",
     "created_at": "2008-09-26T22:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30488",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
-Attachment [trac_4201-rebased.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-rebased.patch) by jason created at 2008-09-26 22:34:56
+Attachment [trac_4201-rebased.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-rebased.patch) by @jasongrout created at 2008-09-26 22:34:56
 
 Apply instead of previous patch
 
@@ -176,7 +176,7 @@ archive/issue_comments_030489.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30489",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_030490.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30490",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -212,7 +212,7 @@ archive/issue_comments_030491.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30491",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -232,7 +232,7 @@ archive/issue_comments_030492.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30492",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_030493.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30493",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_030494.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30494",
-    "user": "jason"
+    "user": "@jasongrout"
 }
 ```
 
@@ -281,16 +281,16 @@ Positive review for the rebased original patch.  There probably ought to be a re
 archive/issue_comments_030495.json:
 ```json
 {
-    "body": "Attachment [trac_4201-reset-doc.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-reset-doc.patch) by mhansen created at 2008-09-27 03:55:39",
+    "body": "Attachment [trac_4201-reset-doc.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-reset-doc.patch) by @mwhansen created at 2008-09-27 03:55:39",
     "created_at": "2008-09-27T03:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30495",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4201-reset-doc.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-reset-doc.patch) by mhansen created at 2008-09-27 03:55:39
+Attachment [trac_4201-reset-doc.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-reset-doc.patch) by @mwhansen created at 2008-09-27 03:55:39
 
 
 
@@ -299,16 +299,16 @@ Attachment [trac_4201-reset-doc.patch](tarball://root/attachments/some-uuid/tick
 archive/issue_comments_030496.json:
 ```json
 {
-    "body": "Attachment [trac_4201-options-doc-defaults.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-options-doc-defaults.patch) by mhansen created at 2008-09-27 03:56:27\n\nI just indented the examples on Jason's patches.  +1 to them.  Apply only the last three patches.",
+    "body": "Attachment [trac_4201-options-doc-defaults.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-options-doc-defaults.patch) by @mwhansen created at 2008-09-27 03:56:27\n\nI just indented the examples on Jason's patches.  +1 to them.  Apply only the last three patches.",
     "created_at": "2008-09-27T03:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4201",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4201#issuecomment-30496",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
-Attachment [trac_4201-options-doc-defaults.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-options-doc-defaults.patch) by mhansen created at 2008-09-27 03:56:27
+Attachment [trac_4201-options-doc-defaults.patch](tarball://root/attachments/some-uuid/ticket4201/trac_4201-options-doc-defaults.patch) by @mwhansen created at 2008-09-27 03:56:27
 
 I just indented the examples on Jason's patches.  +1 to them.  Apply only the last three patches.
 

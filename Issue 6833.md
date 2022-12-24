@@ -3,7 +3,7 @@
 archive/issues_006833.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  kini\n\nKeywords: notebook, mercurial, hg\n\nSage ships an excellent revision control software but uses a rather simple approach to worksheet version-ing. It would be nice if a hg repository was used behind the scenes. This would enable diffs, cool sharing (just pull my worksheet) and collaboration.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6833\n\n",
+    "body": "Assignee: boothby\n\nCC:  @kini\n\nKeywords: notebook, mercurial, hg\n\nSage ships an excellent revision control software but uses a rather simple approach to worksheet version-ing. It would be nice if a hg repository was used behind the scenes. This would enable diffs, cool sharing (just pull my worksheet) and collaboration.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6833\n\n",
     "created_at": "2009-08-27T23:21:32Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_006833.json:
     "title": "use hg for worksheet history",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6833",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 Assignee: boothby
 
-CC:  kini
+CC:  @kini
 
 Keywords: notebook, mercurial, hg
 
@@ -41,7 +41,7 @@ archive/issue_comments_056350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6833#issuecomment-56350",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_056351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6833#issuecomment-56351",
-    "user": "aapitzsch"
+    "user": "@a-andre"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_056352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6833#issuecomment-56352",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -95,7 +95,7 @@ archive/issue_comments_056353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6833#issuecomment-56353",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -113,7 +113,7 @@ archive/issue_comments_056354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6833",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6833#issuecomment-56354",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_000721.json:
 ```json
 {
-    "body": "Assignee: roed\n\nell_rational_field is too big.  I therefore propose the following changes.\n\n1.  Create an ell_nf as a common parent for ell_rational_field and ell_number_field.  Factor up as many functions as possible.\n\n2.  Create an Lseries_ell class in sage/schemes/elliptic_curves/lseries_ell.py, and factor out the L-series functions to there (Lseries_dokchitser, Lseries_sympow, Lseries_sympow_derivs, Lseries_zeros, Lseries_zeros_in_interval, Lseries_values_along_line, Lseries_twist_values, Lseries_twist_zeros, Lseries_at1, Lseries_deriv_at1, Lseries, Lseries_extended, L1_vanishes, Lratio, ).\n\n3.  Create a Sha_group class (inheriting from AbelianGroup).  Move the functions (sha_an_numerical, sha_an, sha_an_padic, sha_p_primary_bound, two_selmer_shabound, shabound_kolyvagin, shabound_kato, shabound) to this new class.\n\nIssue created by migration from https://trac.sagemath.org/ticket/721\n\n",
+    "body": "Assignee: @roed314\n\nell_rational_field is too big.  I therefore propose the following changes.\n\n1.  Create an ell_nf as a common parent for ell_rational_field and ell_number_field.  Factor up as many functions as possible.\n\n2.  Create an Lseries_ell class in sage/schemes/elliptic_curves/lseries_ell.py, and factor out the L-series functions to there (Lseries_dokchitser, Lseries_sympow, Lseries_sympow_derivs, Lseries_zeros, Lseries_zeros_in_interval, Lseries_values_along_line, Lseries_twist_values, Lseries_twist_zeros, Lseries_at1, Lseries_deriv_at1, Lseries, Lseries_extended, L1_vanishes, Lratio, ).\n\n3.  Create a Sha_group class (inheriting from AbelianGroup).  Move the functions (sha_an_numerical, sha_an, sha_an_padic, sha_p_primary_bound, two_selmer_shabound, shabound_kolyvagin, shabound_kato, shabound) to this new class.\n\nIssue created by migration from https://trac.sagemath.org/ticket/721\n\n",
     "created_at": "2007-09-20T22:32:45Z",
     "labels": [
         "number theory",
@@ -14,10 +14,10 @@ archive/issues_000721.json:
     "title": "refactoring ell_rational_field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/721",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
-Assignee: roed
+Assignee: @roed314
 
 ell_rational_field is too big.  I therefore propose the following changes.
 
@@ -61,7 +61,7 @@ archive/issue_comments_004194.json:
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/721#issuecomment-4194",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -74,16 +74,16 @@ Splits ell_rational_field, work in progress on Tate's algorithm
 archive/issue_comments_004195.json:
 ```json
 {
-    "body": "Attachment [6557.patch](tarball://root/attachments/some-uuid/ticket721/6557.patch) by was created at 2007-10-02 03:51:34\n\nTHIS is the one you *really* want to apply!",
+    "body": "Attachment [6557.patch](tarball://root/attachments/some-uuid/ticket721/6557.patch) by @williamstein created at 2007-10-02 03:51:34\n\nTHIS is the one you *really* want to apply!",
     "created_at": "2007-10-02T03:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/721#issuecomment-4195",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [6557.patch](tarball://root/attachments/some-uuid/ticket721/6557.patch) by was created at 2007-10-02 03:51:34
+Attachment [6557.patch](tarball://root/attachments/some-uuid/ticket721/6557.patch) by @williamstein created at 2007-10-02 03:51:34
 
 THIS is the one you *really* want to apply!
 
@@ -99,7 +99,7 @@ archive/issue_comments_004196.json:
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/721#issuecomment-4196",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_004197.json:
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/721#issuecomment-4197",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -135,7 +135,7 @@ archive/issue_comments_004198.json:
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/721#issuecomment-4198",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -153,7 +153,7 @@ archive/issue_comments_004199.json:
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/721#issuecomment-4199",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_004200.json:
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/721#issuecomment-4200",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -184,16 +184,16 @@ Do not apply any of the above patches yet!!!!
 archive/issue_comments_004201.json:
 ```json
 {
-    "body": "Attachment [ell_curves.hg](tarball://root/attachments/some-uuid/ticket721/ell_curves.hg) by roed created at 2007-10-05 12:51:32\n\nThis one is even better.",
+    "body": "Attachment [ell_curves.hg](tarball://root/attachments/some-uuid/ticket721/ell_curves.hg) by @roed314 created at 2007-10-05 12:51:32\n\nThis one is even better.",
     "created_at": "2007-10-05T12:51:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/721#issuecomment-4201",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
-Attachment [ell_curves.hg](tarball://root/attachments/some-uuid/ticket721/ell_curves.hg) by roed created at 2007-10-05 12:51:32
+Attachment [ell_curves.hg](tarball://root/attachments/some-uuid/ticket721/ell_curves.hg) by @roed314 created at 2007-10-05 12:51:32
 
 This one is even better.
 
@@ -235,7 +235,7 @@ archive/issue_comments_004203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/721#issuecomment-4203",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -248,16 +248,16 @@ Bundled against 2.8.6, with additional material (added ntl ZZ_pE and ZZ_pEX)
 archive/issue_comments_004204.json:
 ```json
 {
-    "body": "Attachment [ntl_and_ell.hg](tarball://root/attachments/some-uuid/ticket721/ntl_and_ell.hg) by was created at 2007-10-13 07:46:08",
+    "body": "Attachment [ntl_and_ell.hg](tarball://root/attachments/some-uuid/ticket721/ntl_and_ell.hg) by @williamstein created at 2007-10-13 07:46:08",
     "created_at": "2007-10-13T07:46:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/721#issuecomment-4204",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [ntl_and_ell.hg](tarball://root/attachments/some-uuid/ticket721/ntl_and_ell.hg) by was created at 2007-10-13 07:46:08
+Attachment [ntl_and_ell.hg](tarball://root/attachments/some-uuid/ticket721/ntl_and_ell.hg) by @williamstein created at 2007-10-13 07:46:08
 
 
 
@@ -271,7 +271,7 @@ archive/issue_comments_004205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/721",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/721#issuecomment-4205",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

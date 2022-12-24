@@ -14,7 +14,7 @@ archive/issues_008834.json:
     "title": "make R png graphics doctests optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8834",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: jason, was
@@ -87,7 +87,7 @@ archive/issue_comments_081231.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8834#issuecomment-81231",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -105,7 +105,7 @@ archive/issue_comments_081232.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8834#issuecomment-81232",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,16 +120,16 @@ Having these tests exist, but get clearly marked #optional, will remind users th
 archive/issue_comments_081233.json:
 ```json
 {
-    "body": "Attachment [trac_8834.patch](tarball://root/attachments/some-uuid/ticket8834/trac_8834.patch) by was created at 2010-05-01 18:59:27",
+    "body": "Attachment [trac_8834.patch](tarball://root/attachments/some-uuid/ticket8834/trac_8834.patch) by @williamstein created at 2010-05-01 18:59:27",
     "created_at": "2010-05-01T18:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8834#issuecomment-81233",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_8834.patch](tarball://root/attachments/some-uuid/ticket8834/trac_8834.patch) by was created at 2010-05-01 18:59:27
+Attachment [trac_8834.patch](tarball://root/attachments/some-uuid/ticket8834/trac_8834.patch) by @williamstein created at 2010-05-01 18:59:27
 
 
 
@@ -143,7 +143,7 @@ archive/issue_comments_081234.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8834#issuecomment-81234",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -375,7 +375,7 @@ archive/issue_comments_081237.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8834#issuecomment-81237",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -399,7 +399,7 @@ archive/issue_comments_081238.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8834#issuecomment-81238",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -427,7 +427,7 @@ archive/issue_comments_081239.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8834#issuecomment-81239",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -453,7 +453,7 @@ archive/issue_comments_081240.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8834#issuecomment-81240",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -476,7 +476,7 @@ archive/issue_comments_081241.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8834",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8834#issuecomment-81241",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 

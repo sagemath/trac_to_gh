@@ -3,7 +3,7 @@
 archive/issues_006846.json:
 ```json
 {
-    "body": "Assignee: tba\n\nCC:  was cremona\n\nThe following section of the patch `trac_6751.patch` from #6751 results in two warnings when building the reference manual:\n\n```\n1202\t            - QuadraticForm \n1203\t \n1204\t        This function computes the positive definition quadratic form \n1205\t        obtained by letting G be the trace zero subspace of ZZ + \n1206\t        2*self, which had rank 3, and restricting the pairing \n1207\t           (x,y) = (x.conjugate()*y).reduced_trace() \n1208\t        to G. \n```\n\nThe warning messages are:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/algebras/quatalg/quaternion_algebra.py:docstring of sage.algebras.quatalg.quaternion_algebra:7: (ERROR/3) Unexpected indentation.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/algebras/quatalg/quaternion_algebra.py:docstring of sage.algebras.quatalg.quaternion_algebra.QuaternionOrder.ternary_quadratic_form:11: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6846\n\n",
+    "body": "Assignee: tba\n\nCC:  @williamstein @JohnCremona\n\nThe following section of the patch `trac_6751.patch` from #6751 results in two warnings when building the reference manual:\n\n```\n1202\t            - QuadraticForm \n1203\t \n1204\t        This function computes the positive definition quadratic form \n1205\t        obtained by letting G be the trace zero subspace of ZZ + \n1206\t        2*self, which had rank 3, and restricting the pairing \n1207\t           (x,y) = (x.conjugate()*y).reduced_trace() \n1208\t        to G. \n```\n\nThe warning messages are:\n\n```\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/algebras/quatalg/quaternion_algebra.py:docstring of sage.algebras.quatalg.quaternion_algebra:7: (ERROR/3) Unexpected indentation.\nWARNING: /scratch/mvngu/release/sage-4.1.1/local/lib/python2.6/site-packages/sage/algebras/quatalg/quaternion_algebra.py:docstring of sage.algebras.quatalg.quaternion_algebra.QuaternionOrder.ternary_quadratic_form:11: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6846\n\n",
     "created_at": "2009-08-30T09:50:11Z",
     "labels": [
         "documentation",
@@ -19,7 +19,7 @@ archive/issues_006846.json:
 ```
 Assignee: tba
 
-CC:  was cremona
+CC:  @williamstein @JohnCremona
 
 The following section of the patch `trac_6751.patch` from #6751 results in two warnings when building the reference manual:
 
@@ -96,7 +96,7 @@ archive/issue_comments_056464.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6846",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6846#issuecomment-56464",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

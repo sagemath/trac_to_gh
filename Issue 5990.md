@@ -3,7 +3,7 @@
 archive/issues_005990.json:
 ```json
 {
-    "body": "Assignee: jhpalmieri\n\nThis is an amalgamation of information from the patch at #4857 and the wiki page [http://wiki.sagemath.org/SPKG_Audit](http://wiki.sagemath.org/SPKG_Audit).  Therefore Georg Weber should get credit for the parts coming from #4857, while Michael Abshoff and Dan Drake should get credit for the parts coming from the wiki page.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5990\n\n",
+    "body": "Assignee: @jhpalmieri\n\nThis is an amalgamation of information from the patch at #4857 and the wiki page [http://wiki.sagemath.org/SPKG_Audit](http://wiki.sagemath.org/SPKG_Audit).  Therefore Georg Weber should get credit for the parts coming from #4857, while Michael Abshoff and Dan Drake should get credit for the parts coming from the wiki page.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5990\n\n",
     "created_at": "2009-05-05T18:23:20Z",
     "labels": [
         "documentation",
@@ -14,10 +14,10 @@ archive/issues_005990.json:
     "title": "[with patch, needs review] developer's guide: more on .spkg files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5990",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
-Assignee: jhpalmieri
+Assignee: @jhpalmieri
 
 This is an amalgamation of information from the patch at #4857 and the wiki page [http://wiki.sagemath.org/SPKG_Audit](http://wiki.sagemath.org/SPKG_Audit).  Therefore Georg Weber should get credit for the parts coming from #4857, while Michael Abshoff and Dan Drake should get credit for the parts coming from the wiki page.
 
@@ -60,7 +60,7 @@ archive/issue_comments_047599.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5990#issuecomment-47599",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -73,16 +73,16 @@ Here's a new version with a sample .hgignore file.
 archive/issue_comments_047600.json:
 ```json
 {
-    "body": "Attachment [developer-spkg.patch](tarball://root/attachments/some-uuid/ticket5990/developer-spkg.patch) by jhpalmieri created at 2009-05-05 22:00:50",
+    "body": "Attachment [developer-spkg.patch](tarball://root/attachments/some-uuid/ticket5990/developer-spkg.patch) by @jhpalmieri created at 2009-05-05 22:00:50",
     "created_at": "2009-05-05T22:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5990#issuecomment-47600",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [developer-spkg.patch](tarball://root/attachments/some-uuid/ticket5990/developer-spkg.patch) by jhpalmieri created at 2009-05-05 22:00:50
+Attachment [developer-spkg.patch](tarball://root/attachments/some-uuid/ticket5990/developer-spkg.patch) by @jhpalmieri created at 2009-05-05 22:00:50
 
 
 
@@ -96,7 +96,7 @@ archive/issue_comments_047601.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5990#issuecomment-47601",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_047602.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5990#issuecomment-47602",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -132,7 +132,7 @@ archive/issue_comments_047603.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5990#issuecomment-47603",
-    "user": "wdj"
+    "user": "@wdjoyner"
 }
 ```
 
@@ -151,7 +151,7 @@ archive/issue_comments_047604.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5990#issuecomment-47604",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -169,7 +169,7 @@ archive/issue_comments_047605.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5990",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5990#issuecomment-47605",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

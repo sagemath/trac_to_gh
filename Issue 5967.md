@@ -3,7 +3,7 @@
 archive/issues_005967.json:
 ```json
 {
-    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nThis patch implements a simple class ElementWrapper for wrapping Sage\nor Python objects as Sage elements, with reasonable default\nimplementations of repr, cmp, hash, etc. The typical use case is for\ntrivially constructing new element classes from preexisting Sage or\nPython classes, with a containment relation.\n\nThis class is used extensively in the examples of the upcoming category framework patch #5891.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5967\n\n",
+    "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nThis patch implements a simple class ElementWrapper for wrapping Sage\nor Python objects as Sage elements, with reasonable default\nimplementations of repr, cmp, hash, etc. The typical use case is for\ntrivially constructing new element classes from preexisting Sage or\nPython classes, with a containment relation.\n\nThis class is used extensively in the examples of the upcoming category framework patch #5891.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5967\n\n",
     "created_at": "2009-05-03T01:26:19Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_005967.json:
     "title": "ElementWrapper: A class for wrapping Sage or Python objects as Sage elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5967",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
-Assignee: nthiery
+Assignee: @nthiery
 
 CC:  sage-combinat
 
@@ -108,7 +108,7 @@ archive/issue_comments_047281.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5967#issuecomment-47281",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -141,7 +141,7 @@ archive/issue_comments_047282.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5967#issuecomment-47282",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -194,7 +194,7 @@ archive/issue_comments_047284.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5967#issuecomment-47284",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -215,7 +215,7 @@ archive/issue_comments_047285.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5967#issuecomment-47285",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -233,7 +233,7 @@ archive/issue_comments_047286.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5967#issuecomment-47286",
-    "user": "aschilling"
+    "user": "@anneschilling"
 }
 ```
 
@@ -259,7 +259,7 @@ archive/issue_comments_047287.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5967#issuecomment-47287",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -299,7 +299,7 @@ archive/issue_comments_047289.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5967#issuecomment-47289",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -318,7 +318,7 @@ archive/issue_comments_047290.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5967#issuecomment-47290",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 
@@ -339,16 +339,16 @@ where it probably should be "does not."
 archive/issue_comments_047291.json:
 ```json
 {
-    "body": "Attachment [element_wrapper-5967-submitted.patch](tarball://root/attachments/some-uuid/ticket5967/element_wrapper-5967-submitted.patch) by nthiery created at 2009-05-23 15:40:38",
+    "body": "Attachment [element_wrapper-5967-submitted.patch](tarball://root/attachments/some-uuid/ticket5967/element_wrapper-5967-submitted.patch) by @nthiery created at 2009-05-23 15:40:38",
     "created_at": "2009-05-23T15:40:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5967#issuecomment-47291",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
-Attachment [element_wrapper-5967-submitted.patch](tarball://root/attachments/some-uuid/ticket5967/element_wrapper-5967-submitted.patch) by nthiery created at 2009-05-23 15:40:38
+Attachment [element_wrapper-5967-submitted.patch](tarball://root/attachments/some-uuid/ticket5967/element_wrapper-5967-submitted.patch) by @nthiery created at 2009-05-23 15:40:38
 
 
 
@@ -362,7 +362,7 @@ archive/issue_comments_047292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5967#issuecomment-47292",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -389,7 +389,7 @@ archive/issue_comments_047293.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5967#issuecomment-47293",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -407,7 +407,7 @@ archive/issue_comments_047294.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5967",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5967#issuecomment-47294",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

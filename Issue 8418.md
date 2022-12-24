@@ -3,7 +3,7 @@
 archive/issues_008418.json:
 ```json
 {
-    "body": "Assignee: jleroy\n\nCC:  abmasse slabbe\n\nAdding the function reduced_rauzy_graph in word.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/8418\n\n",
+    "body": "Assignee: jleroy\n\nCC:  abmasse @seblabbe\n\nAdding the function reduced_rauzy_graph in word.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/8418\n\n",
     "created_at": "2010-03-02T13:06:20Z",
     "labels": [
         "combinatorics",
@@ -19,7 +19,7 @@ archive/issues_008418.json:
 ```
 Assignee: jleroy
 
-CC:  abmasse slabbe
+CC:  abmasse @seblabbe
 
 Adding the function reduced_rauzy_graph in word.py
 
@@ -103,7 +103,7 @@ archive/issue_comments_075436.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8418#issuecomment-75436",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -133,7 +133,7 @@ archive/issue_comments_075437.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8418#issuecomment-75437",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -214,16 +214,16 @@ Attachment [trac_8418_reduced_rauzy_graph-jl.patch](tarball://root/attachments/s
 archive/issue_comments_075441.json:
 ```json
 {
-    "body": "Attachment [trac_8418_review-sl.patch](tarball://root/attachments/some-uuid/ticket8418/trac_8418_review-sl.patch) by slabbe created at 2010-03-03 17:38:50\n\nApplies over the precedent patch",
+    "body": "Attachment [trac_8418_review-sl.patch](tarball://root/attachments/some-uuid/ticket8418/trac_8418_review-sl.patch) by @seblabbe created at 2010-03-03 17:38:50\n\nApplies over the precedent patch",
     "created_at": "2010-03-03T17:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8418#issuecomment-75441",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
-Attachment [trac_8418_review-sl.patch](tarball://root/attachments/some-uuid/ticket8418/trac_8418_review-sl.patch) by slabbe created at 2010-03-03 17:38:50
+Attachment [trac_8418_review-sl.patch](tarball://root/attachments/some-uuid/ticket8418/trac_8418_review-sl.patch) by @seblabbe created at 2010-03-03 17:38:50
 
 Applies over the precedent patch
 
@@ -239,7 +239,7 @@ archive/issue_comments_075442.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8418#issuecomment-75442",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -263,7 +263,7 @@ archive/issue_comments_075443.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8418#issuecomment-75443",
-    "user": "slabbe"
+    "user": "@seblabbe"
 }
 ```
 
@@ -404,7 +404,7 @@ archive/issue_comments_075450.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8418",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8418#issuecomment-75450",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

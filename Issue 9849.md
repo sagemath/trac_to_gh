@@ -3,7 +3,7 @@
 archive/issues_009849.json:
 ```json
 {
-    "body": "Assignee: mvngu\n\nCC:  rbeezer\n\nKeywords: style\n\nThis was proposed in the following thread at `sage-devel`:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/73e3c4c995577df0\n\nand a few people voiced support, so a patch will be attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9850\n\n",
+    "body": "Assignee: mvngu\n\nCC:  @rbeezer\n\nKeywords: style\n\nThis was proposed in the following thread at `sage-devel`:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/73e3c4c995577df0\n\nand a few people voiced support, so a patch will be attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9850\n\n",
     "created_at": "2010-09-02T18:53:58Z",
     "labels": [
         "documentation",
@@ -14,12 +14,12 @@ archive/issues_009849.json:
     "title": "make style of documentation consistent with sagemath.org",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9849",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 Assignee: mvngu
 
-CC:  rbeezer
+CC:  @rbeezer
 
 Keywords: style
 
@@ -45,7 +45,7 @@ archive/issue_comments_097203.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97203",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -58,16 +58,16 @@ use color scheme of sagemath.org
 archive/issue_comments_097204.json:
 ```json
 {
-    "body": "Attachment [trac_9850_doc_style.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850_doc_style.patch) by niles created at 2010-09-02 19:09:02\n\nA first version is now attached.  It simply sets some new colors using the customization options for the Sphinx default theme:\n\nhttp://sphinx.pocoo.org/theming.html\n\nThe second attachment shows a screenshot of what this patch does.",
+    "body": "Attachment [trac_9850_doc_style.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850_doc_style.patch) by @nilesjohnson created at 2010-09-02 19:09:02\n\nA first version is now attached.  It simply sets some new colors using the customization options for the Sphinx default theme:\n\nhttp://sphinx.pocoo.org/theming.html\n\nThe second attachment shows a screenshot of what this patch does.",
     "created_at": "2010-09-02T19:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97204",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
-Attachment [trac_9850_doc_style.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850_doc_style.patch) by niles created at 2010-09-02 19:09:02
+Attachment [trac_9850_doc_style.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850_doc_style.patch) by @nilesjohnson created at 2010-09-02 19:09:02
 
 A first version is now attached.  It simply sets some new colors using the customization options for the Sphinx default theme:
 
@@ -87,7 +87,7 @@ archive/issue_comments_097205.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97205",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -116,7 +116,7 @@ archive/issue_comments_097206.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97206",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -170,7 +170,7 @@ archive/issue_comments_097207.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97207",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_097208.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97208",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -276,7 +276,7 @@ archive/issue_comments_097211.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97211",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -296,16 +296,16 @@ I agree with this comment.  I'm attaching a patch (intended to replace the other
 archive/issue_comments_097212.json:
 ```json
 {
-    "body": "Attachment [trac_9850-theme-conf.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850-theme-conf.patch) by jhpalmieri created at 2010-09-11 18:01:32\n\nuse in place of all other patches",
+    "body": "Attachment [trac_9850-theme-conf.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850-theme-conf.patch) by @jhpalmieri created at 2010-09-11 18:01:32\n\nuse in place of all other patches",
     "created_at": "2010-09-11T18:01:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97212",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
-Attachment [trac_9850-theme-conf.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850-theme-conf.patch) by jhpalmieri created at 2010-09-11 18:01:32
+Attachment [trac_9850-theme-conf.patch](tarball://root/attachments/some-uuid/ticket9850/trac_9850-theme-conf.patch) by @jhpalmieri created at 2010-09-11 18:01:32
 
 use in place of all other patches
 
@@ -321,7 +321,7 @@ archive/issue_comments_097213.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97213",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -339,7 +339,7 @@ archive/issue_comments_097214.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97214",
-    "user": "rbeezer"
+    "user": "@rbeezer"
 }
 ```
 
@@ -365,7 +365,7 @@ archive/issue_comments_097215.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97215",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -406,7 +406,7 @@ archive/issue_comments_097217.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97217",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -424,7 +424,7 @@ archive/issue_comments_097218.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97218",
-    "user": "niles"
+    "user": "@nilesjohnson"
 }
 ```
 
@@ -525,7 +525,7 @@ archive/issue_comments_097223.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97223",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -564,7 +564,7 @@ archive/issue_comments_097225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97225",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -582,7 +582,7 @@ archive/issue_comments_097226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97226",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -600,7 +600,7 @@ archive/issue_comments_097227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9849",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9849#issuecomment-97227",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

@@ -14,7 +14,7 @@ archive/issues_002358.json:
     "title": "phi(I) for phi a ring morphism and I an ideal should work (IMHO); it used to and now it doesn't because of new-ish arithmetic architecture stuff",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2358",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -59,7 +59,7 @@ archive/issue_comments_015900.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2358#issuecomment-15900",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_015901.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2358",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2358#issuecomment-15901",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 

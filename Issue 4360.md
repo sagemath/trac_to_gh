@@ -14,7 +14,7 @@ archive/issues_004360.json:
     "title": "[with patch, needs review] fraction field improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4360",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 Assignee: somebody
@@ -38,16 +38,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/4360
 archive/issue_comments_032027.json:
 ```json
 {
-    "body": "Changing assignee from somebody to burcin.",
+    "body": "Changing assignee from somebody to @burcin.",
     "created_at": "2008-11-17T13:27:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32027",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Changing assignee from somebody to burcin.
+Changing assignee from somebody to @burcin.
 
 
 
@@ -61,7 +61,7 @@ archive/issue_comments_032028.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32028",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_032029.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32029",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -97,7 +97,7 @@ archive/issue_comments_032030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32030",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -131,16 +131,16 @@ abort: patch failed to apply
 archive/issue_comments_032031.json:
 ```json
 {
-    "body": "Attachment [04_fraction_field_hom.patch](tarball://root/attachments/some-uuid/ticket4360/04_fraction_field_hom.patch) by burcin created at 2008-11-28 12:17:22\n\nfix fraction field homomorphisms",
+    "body": "Attachment [04_fraction_field_hom.patch](tarball://root/attachments/some-uuid/ticket4360/04_fraction_field_hom.patch) by @burcin created at 2008-11-28 12:17:22\n\nfix fraction field homomorphisms",
     "created_at": "2008-11-28T12:17:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32031",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [04_fraction_field_hom.patch](tarball://root/attachments/some-uuid/ticket4360/04_fraction_field_hom.patch) by burcin created at 2008-11-28 12:17:22
+Attachment [04_fraction_field_hom.patch](tarball://root/attachments/some-uuid/ticket4360/04_fraction_field_hom.patch) by @burcin created at 2008-11-28 12:17:22
 
 fix fraction field homomorphisms
 
@@ -156,7 +156,7 @@ archive/issue_comments_032032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32032",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_032033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32033",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -287,7 +287,7 @@ archive/issue_comments_032034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32034",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -300,16 +300,16 @@ add random_element() method
 archive/issue_comments_032035.json:
 ```json
 {
-    "body": "Attachment [03_fraction_field_element_pyx.patch](tarball://root/attachments/some-uuid/ticket4360/03_fraction_field_element_pyx.patch) by burcin created at 2008-12-04 23:29:25\n\nmove element class to cython",
+    "body": "Attachment [03_fraction_field_element_pyx.patch](tarball://root/attachments/some-uuid/ticket4360/03_fraction_field_element_pyx.patch) by @burcin created at 2008-12-04 23:29:25\n\nmove element class to cython",
     "created_at": "2008-12-04T23:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32035",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [03_fraction_field_element_pyx.patch](tarball://root/attachments/some-uuid/ticket4360/03_fraction_field_element_pyx.patch) by burcin created at 2008-12-04 23:29:25
+Attachment [03_fraction_field_element_pyx.patch](tarball://root/attachments/some-uuid/ticket4360/03_fraction_field_element_pyx.patch) by @burcin created at 2008-12-04 23:29:25
 
 move element class to cython
 
@@ -325,7 +325,7 @@ archive/issue_comments_032036.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32036",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -338,16 +338,16 @@ new coercion model, element class a parameter
 archive/issue_comments_032037.json:
 ```json
 {
-    "body": "Attachment [01_fraction_field_element_class.patch](tarball://root/attachments/some-uuid/ticket4360/01_fraction_field_element_class.patch) by burcin created at 2008-12-05 23:17:49\n\nI posted new patches that fix the doctest errors in comment:6.\n\nThe fix for the pickles depends on #4698.",
+    "body": "Attachment [01_fraction_field_element_class.patch](tarball://root/attachments/some-uuid/ticket4360/01_fraction_field_element_class.patch) by @burcin created at 2008-12-05 23:17:49\n\nI posted new patches that fix the doctest errors in comment:6.\n\nThe fix for the pickles depends on #4698.",
     "created_at": "2008-12-05T23:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32037",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
-Attachment [01_fraction_field_element_class.patch](tarball://root/attachments/some-uuid/ticket4360/01_fraction_field_element_class.patch) by burcin created at 2008-12-05 23:17:49
+Attachment [01_fraction_field_element_class.patch](tarball://root/attachments/some-uuid/ticket4360/01_fraction_field_element_class.patch) by @burcin created at 2008-12-05 23:17:49
 
 I posted new patches that fix the doctest errors in comment:6.
 
@@ -365,7 +365,7 @@ archive/issue_comments_032038.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4360",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32038",
-    "user": "robertwb"
+    "user": "@robertwb"
 }
 ```
 

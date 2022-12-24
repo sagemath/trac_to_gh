@@ -3,7 +3,7 @@
 archive/issues_007316.json:
 ```json
 {
-    "body": "Assignee: boothby\n\nCC:  was\n\nFrom [sage-notebook](http://groups.google.com/group/sage-notebook/browse_frm/thread/28a506759aac37ae):\n\n```\n> I notice that in Sage 4.2, the version of sageinspect in the notebook \n> doesn't match the one in sage.misc -- the one in sagenb/misc is \n> missing the fix from Trac #6848.  As a result, \n> {{{ \n> RDF.random_element? \n> }}} \n> produces incorrect output, as noted on the ticket.  Should this be \n> fixed, or was the fix intentionally omitted because it uses \"eval\"? \n```\n\nFor the fix, see the patch at #6848, especially the new lines 269-270 (and the associated doctest fixes).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7316\n\n",
+    "body": "Assignee: boothby\n\nCC:  @williamstein\n\nFrom [sage-notebook](http://groups.google.com/group/sage-notebook/browse_frm/thread/28a506759aac37ae):\n\n```\n> I notice that in Sage 4.2, the version of sageinspect in the notebook \n> doesn't match the one in sage.misc -- the one in sagenb/misc is \n> missing the fix from Trac #6848.  As a result, \n> {{{ \n> RDF.random_element? \n> }}} \n> produces incorrect output, as noted on the ticket.  Should this be \n> fixed, or was the fix intentionally omitted because it uses \"eval\"? \n```\n\nFor the fix, see the patch at #6848, especially the new lines 269-270 (and the associated doctest fixes).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7316\n\n",
     "created_at": "2009-10-26T23:31:35Z",
     "labels": [
         "notebook",
@@ -14,12 +14,12 @@ archive/issues_007316.json:
     "title": "notebook: default values for variables are printed incorrectly in docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7316",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 Assignee: boothby
 
-CC:  was
+CC:  @williamstein
 
 From [sage-notebook](http://groups.google.com/group/sage-notebook/browse_frm/thread/28a506759aac37ae):
 
@@ -48,16 +48,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7316
 archive/issue_comments_061133.json:
 ```json
 {
-    "body": "Attachment [trac_7316-sageinspect_defn.patch](tarball://root/attachments/some-uuid/ticket7316/trac_7316-sageinspect_defn.patch) by mpatel created at 2009-10-27 02:48:40\n\nFix Cython docstring \"Definition\". Rebase of sageinspect part of #6848. Apply to sagenb repository.",
+    "body": "Attachment [trac_7316-sageinspect_defn.patch](tarball://root/attachments/some-uuid/ticket7316/trac_7316-sageinspect_defn.patch) by @qed777 created at 2009-10-27 02:48:40\n\nFix Cython docstring \"Definition\". Rebase of sageinspect part of #6848. Apply to sagenb repository.",
     "created_at": "2009-10-27T02:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7316#issuecomment-61133",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
-Attachment [trac_7316-sageinspect_defn.patch](tarball://root/attachments/some-uuid/ticket7316/trac_7316-sageinspect_defn.patch) by mpatel created at 2009-10-27 02:48:40
+Attachment [trac_7316-sageinspect_defn.patch](tarball://root/attachments/some-uuid/ticket7316/trac_7316-sageinspect_defn.patch) by @qed777 created at 2009-10-27 02:48:40
 
 Fix Cython docstring "Definition". Rebase of sageinspect part of #6848. Apply to sagenb repository.
 
@@ -73,7 +73,7 @@ archive/issue_comments_061134.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7316#issuecomment-61134",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_061135.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7316#issuecomment-61135",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_061136.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7316#issuecomment-61136",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_061137.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7316#issuecomment-61137",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_061138.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7316#issuecomment-61138",
-    "user": "timdumol"
+    "user": "@TimDumol"
 }
 ```
 
@@ -165,7 +165,7 @@ archive/issue_comments_061139.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7316#issuecomment-61139",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_061140.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7316",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7316#issuecomment-61140",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

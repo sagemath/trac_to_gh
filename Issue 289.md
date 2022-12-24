@@ -14,7 +14,7 @@ archive/issues_000289.json:
     "title": "3d plotting java applet that can be included in SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/289",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: Robert Bradshaw and Robert Miller
@@ -61,7 +61,7 @@ archive/issue_comments_001363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/289#issuecomment-1363",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -79,7 +79,7 @@ archive/issue_comments_001364.json:
     "issue": "https://github.com/sagemath/sagetest/issues/289",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/289#issuecomment-1364",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 

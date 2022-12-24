@@ -3,7 +3,7 @@
 archive/issues_008329.json:
 ```json
 {
-    "body": "Assignee: rhinton\n\nCC:  rlm jason\n\nKeywords: BipartiteGraph\n\nBipartiteGraph is missing a copy() method.\n\n\n```\nsage: bg = BipartiteGraph(graphs.CycleGraph(4))\nsage: type(bg)\n<class 'sage.graphs.bipartite_graph.BipartiteGraph'>\nsage: bg2 = bg.copy()\nsage: type(bg2)\n<class 'sage.graphs.graph.Graph'>\n```\n\n\nThe result is not horrendous because the base Graph class has a copy() method.  But the result is unexpected: copy() a BipartiteGraph and you get a Graph?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8329\n\n",
+    "body": "Assignee: @rhinton\n\nCC:  @rlmill @jasongrout\n\nKeywords: BipartiteGraph\n\nBipartiteGraph is missing a copy() method.\n\n\n```\nsage: bg = BipartiteGraph(graphs.CycleGraph(4))\nsage: type(bg)\n<class 'sage.graphs.bipartite_graph.BipartiteGraph'>\nsage: bg2 = bg.copy()\nsage: type(bg2)\n<class 'sage.graphs.graph.Graph'>\n```\n\n\nThe result is not horrendous because the base Graph class has a copy() method.  But the result is unexpected: copy() a BipartiteGraph and you get a Graph?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8329\n\n",
     "created_at": "2010-02-22T19:51:40Z",
     "labels": [
         "graph theory",
@@ -14,12 +14,12 @@ archive/issues_008329.json:
     "title": "Missing copy() method in BipartiteGraph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8329",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
-Assignee: rhinton
+Assignee: @rhinton
 
-CC:  rlm jason
+CC:  @rlmill @jasongrout
 
 Keywords: BipartiteGraph
 
@@ -55,7 +55,7 @@ archive/issue_comments_074146.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74146",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -73,7 +73,7 @@ archive/issue_comments_074147.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74147",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_074148.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74148",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -109,7 +109,7 @@ archive/issue_comments_074149.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74149",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -127,7 +127,7 @@ archive/issue_comments_074150.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74150",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -145,7 +145,7 @@ archive/issue_comments_074151.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74151",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -163,7 +163,7 @@ archive/issue_comments_074152.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74152",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -183,7 +183,7 @@ archive/issue_comments_074153.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74153",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -208,7 +208,7 @@ archive/issue_comments_074154.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74154",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -226,7 +226,7 @@ archive/issue_comments_074155.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74155",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -250,7 +250,7 @@ archive/issue_comments_074156.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74156",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -268,7 +268,7 @@ archive/issue_comments_074157.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74157",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -286,7 +286,7 @@ archive/issue_comments_074158.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74158",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -334,7 +334,7 @@ archive/issue_comments_074159.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74159",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -352,7 +352,7 @@ archive/issue_comments_074160.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74160",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -365,16 +365,16 @@ Sounds great to me.  The new patch disables the "plot" doctest that was failing 
 archive/issue_comments_074161.json:
 ```json
 {
-    "body": "Attachment [trac_8329-bipartite-graph-copy.patch](tarball://root/attachments/some-uuid/ticket8329/trac_8329-bipartite-graph-copy.patch) by rhinton created at 2010-03-05 02:08:55\n\nmodifies copy() code in generic_graph.py and adds test to BipartiteGraph",
+    "body": "Attachment [trac_8329-bipartite-graph-copy.patch](tarball://root/attachments/some-uuid/ticket8329/trac_8329-bipartite-graph-copy.patch) by @rhinton created at 2010-03-05 02:08:55\n\nmodifies copy() code in generic_graph.py and adds test to BipartiteGraph",
     "created_at": "2010-03-05T02:08:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74161",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [trac_8329-bipartite-graph-copy.patch](tarball://root/attachments/some-uuid/ticket8329/trac_8329-bipartite-graph-copy.patch) by rhinton created at 2010-03-05 02:08:55
+Attachment [trac_8329-bipartite-graph-copy.patch](tarball://root/attachments/some-uuid/ticket8329/trac_8329-bipartite-graph-copy.patch) by @rhinton created at 2010-03-05 02:08:55
 
 modifies copy() code in generic_graph.py and adds test to BipartiteGraph
 
@@ -390,7 +390,7 @@ archive/issue_comments_074162.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74162",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -408,7 +408,7 @@ archive/issue_comments_074163.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74163",
-    "user": "rlm"
+    "user": "@rlmill"
 }
 ```
 
@@ -426,7 +426,7 @@ archive/issue_comments_074164.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74164",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -444,7 +444,7 @@ archive/issue_comments_074165.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74165",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -457,16 +457,16 @@ Found a failing doctest in combinat/posets/posets.py due to this change.  Additi
 archive/issue_comments_074166.json:
 ```json
 {
-    "body": "Attachment [trac_8329-posets-repr.patch](tarball://root/attachments/some-uuid/ticket8329/trac_8329-posets-repr.patch) by rhinton created at 2010-03-24 18:44:26\n\nApply both patches, order does not matter",
+    "body": "Attachment [trac_8329-posets-repr.patch](tarball://root/attachments/some-uuid/ticket8329/trac_8329-posets-repr.patch) by @rhinton created at 2010-03-24 18:44:26\n\nApply both patches, order does not matter",
     "created_at": "2010-03-24T18:44:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74166",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
-Attachment [trac_8329-posets-repr.patch](tarball://root/attachments/some-uuid/ticket8329/trac_8329-posets-repr.patch) by rhinton created at 2010-03-24 18:44:26
+Attachment [trac_8329-posets-repr.patch](tarball://root/attachments/some-uuid/ticket8329/trac_8329-posets-repr.patch) by @rhinton created at 2010-03-24 18:44:26
 
 Apply both patches, order does not matter
 
@@ -482,7 +482,7 @@ archive/issue_comments_074167.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74167",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -500,7 +500,7 @@ archive/issue_comments_074168.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74168",
-    "user": "rhinton"
+    "user": "@rhinton"
 }
 ```
 
@@ -518,7 +518,7 @@ archive/issue_comments_074169.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74169",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -538,7 +538,7 @@ archive/issue_comments_074170.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74170",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -556,7 +556,7 @@ archive/issue_comments_074171.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74171",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 
@@ -577,7 +577,7 @@ archive/issue_comments_074172.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8329",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8329#issuecomment-74172",
-    "user": "jhpalmieri"
+    "user": "@jhpalmieri"
 }
 ```
 

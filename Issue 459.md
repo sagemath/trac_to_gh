@@ -14,7 +14,7 @@ archive/issues_000459.json:
     "title": "TypeError: unsupported operand parent(s) for '*': 'Polynomial Ring in u, v over Integer Ring'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/459",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 Assignee: somebody
@@ -70,7 +70,7 @@ archive/issue_comments_002288.json:
     "issue": "https://github.com/sagemath/sagetest/issues/459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/459#issuecomment-2288",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -83,13 +83,13 @@ Resolution: fixed
 archive/issue_comments_002289.json:
 ```json
 {
-    "body": "Attachment [5809.patch](tarball://root/attachments/some-uuid/ticket459/5809.patch) by was created at 2007-08-19 18:44:37",
+    "body": "Attachment [5809.patch](tarball://root/attachments/some-uuid/ticket459/5809.patch) by @williamstein created at 2007-08-19 18:44:37",
     "created_at": "2007-08-19T18:44:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/459",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/459#issuecomment-2289",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [5809.patch](tarball://root/attachments/some-uuid/ticket459/5809.patch) by was created at 2007-08-19 18:44:37
+Attachment [5809.patch](tarball://root/attachments/some-uuid/ticket459/5809.patch) by @williamstein created at 2007-08-19 18:44:37

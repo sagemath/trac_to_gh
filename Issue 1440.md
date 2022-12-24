@@ -14,7 +14,7 @@ archive/issues_001440.json:
     "title": "Inconsistency in subs and substitute for univariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1440",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -140,16 +140,16 @@ Changing status from new to assigned.
 archive/issue_comments_009290.json:
 ```json
 {
-    "body": "Attachment [redef_substi.changeset](tarball://root/attachments/some-uuid/ticket1440/redef_substi.changeset) by cremona created at 2008-05-13 21:56:50\n\nReview and questions:\n\nIf this is just an alias would it not be simpler to just put\n\n```\n    substitute = subs\n```\n\nin the class definition instead of defining a second function which calls the first?\n\nSecondly, for some reason the patch posted does not display in the normal way, but I don't know why.\n\nI don't really know enough about the issues raised by  jbmohler  to judge this solution;  but if this does solve the problem then the simple assignment I suggested would also!",
+    "body": "Attachment [redef_substi.changeset](tarball://root/attachments/some-uuid/ticket1440/redef_substi.changeset) by @JohnCremona created at 2008-05-13 21:56:50\n\nReview and questions:\n\nIf this is just an alias would it not be simpler to just put\n\n```\n    substitute = subs\n```\n\nin the class definition instead of defining a second function which calls the first?\n\nSecondly, for some reason the patch posted does not display in the normal way, but I don't know why.\n\nI don't really know enough about the issues raised by  jbmohler  to judge this solution;  but if this does solve the problem then the simple assignment I suggested would also!",
     "created_at": "2008-05-13T21:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9290",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
-Attachment [redef_substi.changeset](tarball://root/attachments/some-uuid/ticket1440/redef_substi.changeset) by cremona created at 2008-05-13 21:56:50
+Attachment [redef_substi.changeset](tarball://root/attachments/some-uuid/ticket1440/redef_substi.changeset) by @JohnCremona created at 2008-05-13 21:56:50
 
 Review and questions:
 
@@ -195,7 +195,7 @@ archive/issue_comments_009292.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9292",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -280,7 +280,7 @@ archive/issue_comments_009295.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9295",
-    "user": "cremona"
+    "user": "@JohnCremona"
 }
 ```
 
@@ -298,7 +298,7 @@ archive/issue_comments_009296.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1440",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1440#issuecomment-9296",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 

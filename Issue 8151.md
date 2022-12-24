@@ -14,7 +14,7 @@ archive/issues_008151.json:
     "title": "wrong file permissions in lie-2.2.2.p3.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8151",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 Assignee: tbd
@@ -42,7 +42,7 @@ archive/issue_comments_071667.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8151#issuecomment-71667",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -60,7 +60,7 @@ archive/issue_comments_071668.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8151#issuecomment-71668",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -78,7 +78,7 @@ archive/issue_comments_071669.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8151#issuecomment-71669",
-    "user": "kini"
+    "user": "@kini"
 }
 ```
 
@@ -96,7 +96,7 @@ archive/issue_comments_071670.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8151",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8151#issuecomment-71670",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

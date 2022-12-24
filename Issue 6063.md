@@ -14,7 +14,7 @@ archive/issues_006063.json:
     "title": "x^2 for x over QQ is really frickin' slow compared to over ZZ (nearly factor of 100!!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6063",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 Assignee: somebody
@@ -84,7 +84,7 @@ archive/issue_comments_048259.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6063#issuecomment-48259",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -102,7 +102,7 @@ archive/issue_comments_048260.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6063#issuecomment-48260",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -120,7 +120,7 @@ archive/issue_comments_048261.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6063#issuecomment-48261",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -156,7 +156,7 @@ archive/issue_comments_048263.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6063#issuecomment-48263",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -174,7 +174,7 @@ archive/issue_comments_048264.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6063#issuecomment-48264",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -192,7 +192,7 @@ archive/issue_comments_048265.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6063#issuecomment-48265",
-    "user": "davidloeffler"
+    "user": "@loefflerd"
 }
 ```
 
@@ -210,7 +210,7 @@ archive/issue_comments_048266.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6063",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6063#issuecomment-48266",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

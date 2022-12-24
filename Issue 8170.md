@@ -14,7 +14,7 @@ archive/issues_008170.json:
     "title": "character_table() missing for matrix groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8170",
-    "user": "dimpase"
+    "user": "@dimpase"
 }
 ```
 Assignee: joyner

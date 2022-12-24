@@ -3,7 +3,7 @@
 archive/issues_002767.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  ncalexan\n\nKeywords: number field norm matrix\n\n\n```\nsage: F.<z> = CyclotomicField(5)\nsage: F.<z> = CyclotomicField(5)\nsage: t = 3*z^3 + 4*z^2 + 2\nsage: t.norm()\n251\nsage: t.norm(F)\n2\nsage: t.matrix(F)\n[2]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2767\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: number field norm matrix\n\n\n```\nsage: F.<z> = CyclotomicField(5)\nsage: F.<z> = CyclotomicField(5)\nsage: t = 3*z^3 + 4*z^2 + 2\nsage: t.norm()\n251\nsage: t.norm(F)\n2\nsage: t.matrix(F)\n[2]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2767\n\n",
     "created_at": "2008-04-02T04:54:31Z",
     "labels": [
         "number theory",
@@ -14,12 +14,12 @@ archive/issues_002767.json:
     "title": "error in elem.matrix(F) and elem.norm(F) for F == elem.parent() a number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2767",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  ncalexan
+CC:  @ncalexan
 
 Keywords: number field norm matrix
 
@@ -53,7 +53,7 @@ archive/issue_comments_019004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2767#issuecomment-19004",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -70,16 +70,16 @@ If there's some case that I'm not thinking of here, let me know. I've tested it 
 archive/issue_comments_019005.json:
 ```json
 {
-    "body": "Changing assignee from was to craigcitro.",
+    "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2008-04-02T07:22:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2767#issuecomment-19005",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Changing assignee from was to craigcitro.
+Changing assignee from @williamstein to @craigcitro.
 
 
 
@@ -93,7 +93,7 @@ archive/issue_comments_019006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2767#issuecomment-19006",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
@@ -106,16 +106,16 @@ Changing status from new to assigned.
 archive/issue_comments_019007.json:
 ```json
 {
-    "body": "Attachment [trac-2767.patch](tarball://root/attachments/some-uuid/ticket2767/trac-2767.patch) by craigcitro created at 2008-04-02 07:23:13",
+    "body": "Attachment [trac-2767.patch](tarball://root/attachments/some-uuid/ticket2767/trac-2767.patch) by @craigcitro created at 2008-04-02 07:23:13",
     "created_at": "2008-04-02T07:23:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2767#issuecomment-19007",
-    "user": "craigcitro"
+    "user": "@craigcitro"
 }
 ```
 
-Attachment [trac-2767.patch](tarball://root/attachments/some-uuid/ticket2767/trac-2767.patch) by craigcitro created at 2008-04-02 07:23:13
+Attachment [trac-2767.patch](tarball://root/attachments/some-uuid/ticket2767/trac-2767.patch) by @craigcitro created at 2008-04-02 07:23:13
 
 
 
@@ -129,7 +129,7 @@ archive/issue_comments_019008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2767#issuecomment-19008",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -149,7 +149,7 @@ archive/issue_comments_019009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2767",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2767#issuecomment-19009",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 

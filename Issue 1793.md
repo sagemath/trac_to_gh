@@ -3,7 +3,7 @@
 archive/issues_001793.json:
 ```json
 {
-    "body": "Assignee: malb\n\nCC:  was mabshoff\n\nThe attached bundle implements everything to make the following work:\n\n\n```\nsage: P.<x11,x12,x13,x14,x21,x22,x23,x24,x31,x32,x33,x34,x41,x42,x43,x44> = PolynomialRing(QQ,order='degrevlex')\nsage: I = Ideal([\n    x11^2 + x12*x21 + x13*x31 + x14*x41,   x11*x12 + x12*x22 + x13*x32 + x14*x42,\n    x11*x13 + x12*x23 + x13*x33 + x14*x43, x11*x14 + x12*x24 + x13*x34 + x14*x44,\n    x11*x21 + x21*x22 + x23*x31 + x24*x41, x12*x21 + x22^2 + x23*x32 + x24*x42,\n    x13*x21 + x22*x23 + x23*x33 + x24*x43, x14*x21 + x22*x24 + x23*x34 + x24*x44,\n    x11*x31 + x21*x32 + x31*x33 + x34*x41, x12*x31 + x22*x32 + x32*x33 + x34*x42,\n    x13*x31 + x23*x32 + x33^2 + x34*x43,   x14*x31 + x24*x32 + x33*x34 + x34*x44,\n    x11*x41 + x21*x42 + x31*x43 + x41*x44, x12*x41 + x22*x42 + x32*x43 + x42*x44,\n    x13*x41 + x23*x42 + x33*x43 + x43*x44, x14*x41 + x24*x42 + x34*x43 + x44^2\n    ])\nsage: S = I.hilbert_series(); S\n(t^12 - 7*t^11 + 20*t^10 - 28*t^9 + 14*t^8 + 15*t^7 - 20*t^6 + 19*t^5 - 22*t^4 + 7*t^3 + 20*t^2 + 8*t + 1)/(t^8 - 8*t^7 + 28*t^6 - 56*t^5 + 70*t^4 - 56*t^3 + 28*t^2 - 8*t + 1)\n\nsage: H = I.hilbert_polynomial(); H\n1/180*t^7 + 7/90*t^6 + 293/360*t^5 + 61/36*t^4 + 1553/360*t^3 + 851/180*t^2 + 101/30*t + 1\n\nsage: L.<u> = LaurentSeriesRing(ZZ)\nsage: L(S)\n1 + 16*u + 120*u^2 + 575*u^3 + 2044*u^4 + 5927*u^5 + 14832*u^6 + 33209*u^7 + 68189*u^8 + 130642*u^9 + 236488*u^10 + 408288*u^11 + 677143*u^12 + 1084929*u^13 + 1686896*u^14 + 2554659*u^15 + 3779609*u^16 + 5476772*u^17 + 7789144*u^18 + 10892530*u^19 + O(u^20)\n\nsage: [H(n) for n in range(20)] # matches above for n>=5\n[1, 16, 120, 574, 2043, 5927, 14832, 33209, 68189, 130642]\n```\n\n\nHowever, it needs careful review especially in the `LaurentSeries` department because I am not very experienced there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1793\n\n",
+    "body": "Assignee: @malb\n\nCC:  @williamstein mabshoff\n\nThe attached bundle implements everything to make the following work:\n\n\n```\nsage: P.<x11,x12,x13,x14,x21,x22,x23,x24,x31,x32,x33,x34,x41,x42,x43,x44> = PolynomialRing(QQ,order='degrevlex')\nsage: I = Ideal([\n    x11^2 + x12*x21 + x13*x31 + x14*x41,   x11*x12 + x12*x22 + x13*x32 + x14*x42,\n    x11*x13 + x12*x23 + x13*x33 + x14*x43, x11*x14 + x12*x24 + x13*x34 + x14*x44,\n    x11*x21 + x21*x22 + x23*x31 + x24*x41, x12*x21 + x22^2 + x23*x32 + x24*x42,\n    x13*x21 + x22*x23 + x23*x33 + x24*x43, x14*x21 + x22*x24 + x23*x34 + x24*x44,\n    x11*x31 + x21*x32 + x31*x33 + x34*x41, x12*x31 + x22*x32 + x32*x33 + x34*x42,\n    x13*x31 + x23*x32 + x33^2 + x34*x43,   x14*x31 + x24*x32 + x33*x34 + x34*x44,\n    x11*x41 + x21*x42 + x31*x43 + x41*x44, x12*x41 + x22*x42 + x32*x43 + x42*x44,\n    x13*x41 + x23*x42 + x33*x43 + x43*x44, x14*x41 + x24*x42 + x34*x43 + x44^2\n    ])\nsage: S = I.hilbert_series(); S\n(t^12 - 7*t^11 + 20*t^10 - 28*t^9 + 14*t^8 + 15*t^7 - 20*t^6 + 19*t^5 - 22*t^4 + 7*t^3 + 20*t^2 + 8*t + 1)/(t^8 - 8*t^7 + 28*t^6 - 56*t^5 + 70*t^4 - 56*t^3 + 28*t^2 - 8*t + 1)\n\nsage: H = I.hilbert_polynomial(); H\n1/180*t^7 + 7/90*t^6 + 293/360*t^5 + 61/36*t^4 + 1553/360*t^3 + 851/180*t^2 + 101/30*t + 1\n\nsage: L.<u> = LaurentSeriesRing(ZZ)\nsage: L(S)\n1 + 16*u + 120*u^2 + 575*u^3 + 2044*u^4 + 5927*u^5 + 14832*u^6 + 33209*u^7 + 68189*u^8 + 130642*u^9 + 236488*u^10 + 408288*u^11 + 677143*u^12 + 1084929*u^13 + 1686896*u^14 + 2554659*u^15 + 3779609*u^16 + 5476772*u^17 + 7789144*u^18 + 10892530*u^19 + O(u^20)\n\nsage: [H(n) for n in range(20)] # matches above for n>=5\n[1, 16, 120, 574, 2043, 5927, 14832, 33209, 68189, 130642]\n```\n\n\nHowever, it needs careful review especially in the `LaurentSeries` department because I am not very experienced there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1793\n\n",
     "created_at": "2008-01-16T14:28:48Z",
     "labels": [
         "commutative algebra",
@@ -14,12 +14,12 @@ archive/issues_001793.json:
     "title": "[with patch, needs careful review] Hilbert series, Hilbert polynomial, Laurent series expansion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1793",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
-Assignee: malb
+Assignee: @malb
 
-CC:  was mabshoff
+CC:  @williamstein mabshoff
 
 The attached bundle implements everything to make the following work:
 
@@ -69,7 +69,7 @@ archive/issue_comments_011346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11346",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -91,7 +91,7 @@ archive/issue_comments_011347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11347",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_011348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11348",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -129,7 +129,7 @@ archive/issue_comments_011349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11349",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -147,7 +147,7 @@ archive/issue_comments_011350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11350",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -167,7 +167,7 @@ archive/issue_comments_011351.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11351",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -180,16 +180,16 @@ Because the bundle contained many irrelevant patches I tried to provide clean pa
 archive/issue_comments_011352.json:
 ```json
 {
-    "body": "Attachment [trac_1793_laurent.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_laurent.patch) by malb created at 2008-01-20 16:47:19",
+    "body": "Attachment [trac_1793_laurent.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_laurent.patch) by @malb created at 2008-01-20 16:47:19",
     "created_at": "2008-01-20T16:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11352",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1793_laurent.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_laurent.patch) by malb created at 2008-01-20 16:47:19
+Attachment [trac_1793_laurent.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_laurent.patch) by @malb created at 2008-01-20 16:47:19
 
 
 
@@ -203,7 +203,7 @@ archive/issue_comments_011353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11353",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
@@ -221,7 +221,7 @@ archive/issue_comments_011354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11354",
-    "user": "ncalexan"
+    "user": "@ncalexan"
 }
 ```
 
@@ -256,16 +256,16 @@ ncalexan: malb: let's took 1793.
 archive/issue_comments_011355.json:
 ```json
 {
-    "body": "Attachment [trac_1793_review.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_review.patch) by malb created at 2008-02-14 23:27:13\n\npatch removes remark about index of regularity",
+    "body": "Attachment [trac_1793_review.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_review.patch) by @malb created at 2008-02-14 23:27:13\n\npatch removes remark about index of regularity",
     "created_at": "2008-02-14T23:27:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11355",
-    "user": "malb"
+    "user": "@malb"
 }
 ```
 
-Attachment [trac_1793_review.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_review.patch) by malb created at 2008-02-14 23:27:13
+Attachment [trac_1793_review.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_review.patch) by @malb created at 2008-02-14 23:27:13
 
 patch removes remark about index of regularity
 

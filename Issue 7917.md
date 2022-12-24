@@ -3,7 +3,7 @@
 archive/issues_007917.json:
 ```json
 {
-    "body": "Assignee: was\n\nCC:  rishi\n\nKeywords: dirichlet character gauss sum\n\nThis is a pretty small change. We add three lines to gauss_sum_numerical() to make it work when the base ring is a complex field, and change gauss_sum() to call gauss_sum_numerical() when the base ring is a complex field.\n\nNote that it is actually much faster to compute the (approximate) gauss sum when the base ring is CC, as compared to when the base ring is a cyclotomic field.\n\n\n\n```\nsage: G = DirichletGroup(2981)\nsage: chi = G.0\nsage: timeit('chi.gauss_sum_numerical()')\n5 loops, best of 3: 1.82 s per loop\nsage: G = DirichletGroup(2981, ComplexField(200))\nsage: chi = G.0                                  \nsage: timeit('chi.gauss_sum_numerical()')        \n25 loops, best of 3: 23.5 ms per loop\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7917\n\n",
+    "body": "Assignee: @williamstein\n\nCC:  @rishikesha\n\nKeywords: dirichlet character gauss sum\n\nThis is a pretty small change. We add three lines to gauss_sum_numerical() to make it work when the base ring is a complex field, and change gauss_sum() to call gauss_sum_numerical() when the base ring is a complex field.\n\nNote that it is actually much faster to compute the (approximate) gauss sum when the base ring is CC, as compared to when the base ring is a cyclotomic field.\n\n\n\n```\nsage: G = DirichletGroup(2981)\nsage: chi = G.0\nsage: timeit('chi.gauss_sum_numerical()')\n5 loops, best of 3: 1.82 s per loop\nsage: G = DirichletGroup(2981, ComplexField(200))\nsage: chi = G.0                                  \nsage: timeit('chi.gauss_sum_numerical()')        \n25 loops, best of 3: 23.5 ms per loop\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7917\n\n",
     "created_at": "2010-01-13T06:22:56Z",
     "labels": [
         "number theory",
@@ -17,9 +17,9 @@ archive/issues_007917.json:
     "user": "bober"
 }
 ```
-Assignee: was
+Assignee: @williamstein
 
-CC:  rishi
+CC:  @rishikesha
 
 Keywords: dirichlet character gauss sum
 
@@ -53,16 +53,16 @@ Issue created by migration from https://trac.sagemath.org/ticket/7917
 archive/issue_comments_068892.json:
 ```json
 {
-    "body": "Attachment [gauss_sum_CC.patch](tarball://root/attachments/some-uuid/ticket7917/gauss_sum_CC.patch) by rishi created at 2010-08-02 21:54:23",
+    "body": "Attachment [gauss_sum_CC.patch](tarball://root/attachments/some-uuid/ticket7917/gauss_sum_CC.patch) by @rishikesha created at 2010-08-02 21:54:23",
     "created_at": "2010-08-02T21:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7917#issuecomment-68892",
-    "user": "rishi"
+    "user": "@rishikesha"
 }
 ```
 
-Attachment [gauss_sum_CC.patch](tarball://root/attachments/some-uuid/ticket7917/gauss_sum_CC.patch) by rishi created at 2010-08-02 21:54:23
+Attachment [gauss_sum_CC.patch](tarball://root/attachments/some-uuid/ticket7917/gauss_sum_CC.patch) by @rishikesha created at 2010-08-02 21:54:23
 
 
 
@@ -76,7 +76,7 @@ archive/issue_comments_068893.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7917#issuecomment-68893",
-    "user": "roed"
+    "user": "@roed314"
 }
 ```
 
@@ -94,7 +94,7 @@ archive/issue_comments_068894.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7917#issuecomment-68894",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -119,7 +119,7 @@ archive/issue_comments_068895.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7917#issuecomment-68895",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -137,7 +137,7 @@ archive/issue_comments_068896.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7917#issuecomment-68896",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -155,7 +155,7 @@ archive/issue_comments_068897.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7917#issuecomment-68897",
-    "user": "pbruin"
+    "user": "@pjbruin"
 }
 ```
 
@@ -173,7 +173,7 @@ archive/issue_comments_068898.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7917",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7917#issuecomment-68898",
-    "user": "vbraun"
+    "user": "@vbraun"
 }
 ```
 

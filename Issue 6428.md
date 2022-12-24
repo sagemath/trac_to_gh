@@ -69,7 +69,7 @@ archive/issue_comments_051620.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51620",
-    "user": "AlexGhitza"
+    "user": "@aghitza"
 }
 ```
 
@@ -87,7 +87,7 @@ archive/issue_comments_051621.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51621",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_051622.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51622",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -137,16 +137,16 @@ PolyDict with representation {(-2,): 1}
 archive/issue_comments_051623.json:
 ```json
 {
-    "body": "Attachment [trac_6428.patch](tarball://root/attachments/some-uuid/ticket6428/trac_6428.patch) by was created at 2010-01-18 10:19:17",
+    "body": "Attachment [trac_6428.patch](tarball://root/attachments/some-uuid/ticket6428/trac_6428.patch) by @williamstein created at 2010-01-18 10:19:17",
     "created_at": "2010-01-18T10:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51623",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
-Attachment [trac_6428.patch](tarball://root/attachments/some-uuid/ticket6428/trac_6428.patch) by was created at 2010-01-18 10:19:17
+Attachment [trac_6428.patch](tarball://root/attachments/some-uuid/ticket6428/trac_6428.patch) by @williamstein created at 2010-01-18 10:19:17
 
 
 
@@ -160,7 +160,7 @@ archive/issue_comments_051624.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51624",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -196,7 +196,7 @@ archive/issue_comments_051626.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51626",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -217,7 +217,7 @@ archive/issue_comments_051627.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51627",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
 
@@ -243,16 +243,16 @@ y^(y + 1125899906842624)
 archive/issue_comments_051628.json:
 ```json
 {
-    "body": "Attachment [6428_ETuple_overflow.patch](tarball://root/attachments/some-uuid/ticket6428/6428_ETuple_overflow.patch) by wjp created at 2010-01-21 00:32:37\n\nI added a new patch (to be applied instead of the old one) that also handles negative exponents. (The previous patch broke LaurentPolynomials).",
+    "body": "Attachment [6428_ETuple_overflow.patch](tarball://root/attachments/some-uuid/ticket6428/6428_ETuple_overflow.patch) by @wjp created at 2010-01-21 00:32:37\n\nI added a new patch (to be applied instead of the old one) that also handles negative exponents. (The previous patch broke LaurentPolynomials).",
     "created_at": "2010-01-21T00:32:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6428",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51628",
-    "user": "wjp"
+    "user": "@wjp"
 }
 ```
 
-Attachment [6428_ETuple_overflow.patch](tarball://root/attachments/some-uuid/ticket6428/6428_ETuple_overflow.patch) by wjp created at 2010-01-21 00:32:37
+Attachment [6428_ETuple_overflow.patch](tarball://root/attachments/some-uuid/ticket6428/6428_ETuple_overflow.patch) by @wjp created at 2010-01-21 00:32:37
 
 I added a new patch (to be applied instead of the old one) that also handles negative exponents. (The previous patch broke LaurentPolynomials).
 

@@ -3,7 +3,7 @@
 archive/issues_007047.json:
 ```json
 {
-    "body": "Assignee: tbd\n\nCC:  dimpase\n\nUsing\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\nI tried to build Sage with Sun Studio and see:\n\n\n```\nlapack-20071123.p0/spkg-install~\nlapack-20071123.p0/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src'\n( cd INSTALL; make; ./testlsame; ./testslamch; \\\n  ./testdlamch; ./testsecond; ./testdsecnd; ./testversion )\nmake[3]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src/INSTALL'\nsage_fortran -fPIC  -c lsame.f -o lsame.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nsage_fortran -fPIC  -c lsametst.f -o lsametst.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nsage_fortran  -o testlsame lsame.o lsametst.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nld: fatal: option -f and building a dynamic executable are incompatible\nld: fatal: Flags processing errors\nmake[3]: *** [testlsame] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src/INSTALL'\n/bin/sh: ./testlsame: not found\n/bin/sh: ./testslamch: not found\n/bin/sh: ./testdlamch: not found\n/bin/sh: ./testsecond: not found\n/bin/sh: ./testdsecnd: not found\n/bin/sh: ./testversion: not found\nmake[2]: *** [lapack_install] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src'\nError compiling lapack.\n\nreal    0m0.415s\nuser    0m0.150s\nsys     0m0.215s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7047\n\n",
+    "body": "Assignee: tbd\n\nCC:  @dimpase\n\nUsing\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\nI tried to build Sage with Sun Studio and see:\n\n\n```\nlapack-20071123.p0/spkg-install~\nlapack-20071123.p0/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src'\n( cd INSTALL; make; ./testlsame; ./testslamch; \\\n  ./testdlamch; ./testsecond; ./testdsecnd; ./testversion )\nmake[3]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src/INSTALL'\nsage_fortran -fPIC  -c lsame.f -o lsame.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nsage_fortran -fPIC  -c lsametst.f -o lsametst.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nsage_fortran  -o testlsame lsame.o lsametst.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nld: fatal: option -f and building a dynamic executable are incompatible\nld: fatal: Flags processing errors\nmake[3]: *** [testlsame] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src/INSTALL'\n/bin/sh: ./testlsame: not found\n/bin/sh: ./testslamch: not found\n/bin/sh: ./testdlamch: not found\n/bin/sh: ./testsecond: not found\n/bin/sh: ./testdsecnd: not found\n/bin/sh: ./testversion: not found\nmake[2]: *** [lapack_install] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src'\nError compiling lapack.\n\nreal    0m0.415s\nuser    0m0.150s\nsys     0m0.215s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7047\n\n",
     "created_at": "2009-09-28T09:13:11Z",
     "labels": [
         "algebra",
@@ -19,7 +19,7 @@ archive/issues_007047.json:
 ```
 Assignee: tbd
 
-CC:  dimpase
+CC:  @dimpase
 
 Using
 * Solaris 10 update 7 on SPARC
@@ -153,7 +153,7 @@ archive/issue_comments_058344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58344",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -171,7 +171,7 @@ archive/issue_comments_058345.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58345",
-    "user": "mkoeppe"
+    "user": "@mkoeppe"
 }
 ```
 
@@ -189,7 +189,7 @@ archive/issue_comments_058346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58346",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -211,7 +211,7 @@ archive/issue_comments_058347.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58347",
-    "user": "mjo"
+    "user": "@orlitzky"
 }
 ```
 
@@ -229,7 +229,7 @@ archive/issue_comments_058348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58348",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 
@@ -247,7 +247,7 @@ archive/issue_comments_058349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7047",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58349",
-    "user": "chapoton"
+    "user": "@fchapoton"
 }
 ```
 

@@ -3,7 +3,7 @@
 archive/issues_009191.json:
 ```json
 {
-    "body": "Assignee: jason\n\nCreate a file like this:\n\n```\nflat:tmp wstein$ cat a.spyx\nprint \"hello\"\n```\n\n\nWe have:\n\n```\nflat:tmp wstein$ sage a.spyx\nTraceback (most recent call last):\n  File \"/Users/wstein/sage/build/sage/local/bin/sage-sagex\", line 5, in <module>\n    from sage.misc.interpreter import load_sagex\nImportError: cannot import name load_sagex\n```\n\n\nNote that .pyx files work fine:\n\n\n```\nflat:x wstein$ cp a.spyx a.pyx\nflat:x wstein$ sage a.pyx\nhello\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9191\n\n",
+    "body": "Assignee: @jasongrout\n\nCreate a file like this:\n\n```\nflat:tmp wstein$ cat a.spyx\nprint \"hello\"\n```\n\n\nWe have:\n\n```\nflat:tmp wstein$ sage a.spyx\nTraceback (most recent call last):\n  File \"/Users/wstein/sage/build/sage/local/bin/sage-sagex\", line 5, in <module>\n    from sage.misc.interpreter import load_sagex\nImportError: cannot import name load_sagex\n```\n\n\nNote that .pyx files work fine:\n\n\n```\nflat:x wstein$ cp a.spyx a.pyx\nflat:x wstein$ sage a.pyx\nhello\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9191\n\n",
     "created_at": "2010-06-09T02:02:52Z",
     "labels": [
         "misc",
@@ -14,10 +14,10 @@ archive/issues_009191.json:
     "title": "Running pyx files from the command line doesn't work anymore",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9191",
-    "user": "was"
+    "user": "@williamstein"
 }
 ```
-Assignee: jason
+Assignee: @jasongrout
 
 Create a file like this:
 
@@ -64,7 +64,7 @@ archive/issue_comments_085993.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-85993",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -92,7 +92,7 @@ archive/issue_comments_085994.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-85994",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -117,7 +117,7 @@ archive/issue_comments_085995.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-85995",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -130,16 +130,16 @@ Changing status from new to needs_review.
 archive/issue_comments_085996.json:
 ```json
 {
-    "body": "Attachment [9191_run_cython.patch](tarball://root/attachments/some-uuid/ticket9191/9191_run_cython.patch) by jdemeyer created at 2012-09-27 12:20:10\n\nI expanded on your patch, added a doctest, renamed `sage-sagex` to `sage-run-cython`.",
+    "body": "Attachment [9191_run_cython.patch](tarball://root/attachments/some-uuid/ticket9191/9191_run_cython.patch) by @jdemeyer created at 2012-09-27 12:20:10\n\nI expanded on your patch, added a doctest, renamed `sage-sagex` to `sage-run-cython`.",
     "created_at": "2012-09-27T12:20:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-85996",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9191_run_cython.patch](tarball://root/attachments/some-uuid/ticket9191/9191_run_cython.patch) by jdemeyer created at 2012-09-27 12:20:10
+Attachment [9191_run_cython.patch](tarball://root/attachments/some-uuid/ticket9191/9191_run_cython.patch) by @jdemeyer created at 2012-09-27 12:20:10
 
 I expanded on your patch, added a doctest, renamed `sage-sagex` to `sage-run-cython`.
 
@@ -155,7 +155,7 @@ archive/issue_comments_085997.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-85997",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -187,7 +187,7 @@ archive/issue_comments_085998.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-85998",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -224,7 +224,7 @@ archive/issue_comments_085999.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-85999",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -242,7 +242,7 @@ archive/issue_comments_086000.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-86000",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -262,7 +262,7 @@ archive/issue_comments_086001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-86001",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -284,7 +284,7 @@ archive/issue_comments_086002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-86002",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -302,7 +302,7 @@ archive/issue_comments_086003.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-86003",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -320,7 +320,7 @@ archive/issue_comments_086004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-86004",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -340,7 +340,7 @@ archive/issue_comments_086005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-86005",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -353,16 +353,16 @@ This will need to be rebased to #13579.
 archive/issue_comments_086006.json:
 ```json
 {
-    "body": "Attachment [9191_doctest_spyx.patch](tarball://root/attachments/some-uuid/ticket9191/9191_doctest_spyx.patch) by jdemeyer created at 2012-11-06 19:54:59",
+    "body": "Attachment [9191_doctest_spyx.patch](tarball://root/attachments/some-uuid/ticket9191/9191_doctest_spyx.patch) by @jdemeyer created at 2012-11-06 19:54:59",
     "created_at": "2012-11-06T19:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-86006",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
-Attachment [9191_doctest_spyx.patch](tarball://root/attachments/some-uuid/ticket9191/9191_doctest_spyx.patch) by jdemeyer created at 2012-11-06 19:54:59
+Attachment [9191_doctest_spyx.patch](tarball://root/attachments/some-uuid/ticket9191/9191_doctest_spyx.patch) by @jdemeyer created at 2012-11-06 19:54:59
 
 
 
@@ -376,7 +376,7 @@ archive/issue_comments_086007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-86007",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 
@@ -394,7 +394,7 @@ archive/issue_comments_086008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9191",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9191#issuecomment-86008",
-    "user": "jdemeyer"
+    "user": "@jdemeyer"
 }
 ```
 

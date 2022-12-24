@@ -3,7 +3,7 @@
 archive/issues_007334.json:
 ```json
 {
-    "body": "Assignee: burcin\n\nCC:  fmaltey@nerim.fr\n\nKeywords: logarithm\n\nCurrently there is no direct way in Sage to apply the transformation:\n\n```\nlog(x) + log(y) -> log(x*y)\n```\n\n\nThe attached patch fixes this by inserting a call to logcontract()\nin the definition of simplify_radical.\n\nNow the following works:\n\n```\nsage: f = log(sqrt(2) - 1) + log(sqrt(2) + 1)\nsage: f.simplify_full()\n0\n```\n\n\nBut I'm not sure if this is the right place for this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7334\n\n",
+    "body": "Assignee: @burcin\n\nCC:  fmaltey@nerim.fr\n\nKeywords: logarithm\n\nCurrently there is no direct way in Sage to apply the transformation:\n\n```\nlog(x) + log(y) -> log(x*y)\n```\n\n\nThe attached patch fixes this by inserting a call to logcontract()\nin the definition of simplify_radical.\n\nNow the following works:\n\n```\nsage: f = log(sqrt(2) - 1) + log(sqrt(2) + 1)\nsage: f.simplify_full()\n0\n```\n\n\nBut I'm not sure if this is the right place for this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7334\n\n",
     "created_at": "2009-10-28T17:32:35Z",
     "labels": [
         "calculus",
@@ -17,7 +17,7 @@ archive/issues_007334.json:
     "user": "whuss"
 }
 ```
-Assignee: burcin
+Assignee: @burcin
 
 CC:  fmaltey@nerim.fr
 
@@ -96,7 +96,7 @@ archive/issue_comments_061339.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61339",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -114,7 +114,7 @@ archive/issue_comments_061340.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61340",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -136,7 +136,7 @@ archive/issue_comments_061341.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61341",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -154,7 +154,7 @@ archive/issue_comments_061342.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61342",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -182,7 +182,7 @@ archive/issue_comments_061343.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61343",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -200,7 +200,7 @@ archive/issue_comments_061344.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61344",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -218,16 +218,16 @@ radical_simplify, simplify_radical, exp_simplify, simplify_exp
 archive/issue_comments_061345.json:
 ```json
 {
-    "body": "Attachment [trac-7344-logcontract-2.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-2.patch) by kcrisman created at 2009-11-08 01:58:15\n\nReplying to [comment:4 robert.marik]:\n> Replying to [comment:2 kcrisman]:\n> > Anyway, then you could just call this wherever you think is best in the definition of .simplify_full(), which certainly should have this included.  \n> \n> Do not do it please. The user knows if he/she wants to contract logarithms or not and then he/she can run the coresponding method. If you include this as an automatical simplification in simplify_full, consider the following\n> \n\nI disagree.  simplify_full is the sort of thing used by people who do NOT know if they want to contract - they want the simplest-looking form possible.  In fact, these people usually use just simplify() first and then email sage-support complaining it doesn't do things like this :)  \n\nAnyone who is looking for something specific can use the specific wrappers for the Maxima simplifiers; the general user who is not actually interested in symbolics or niceties like domains (which presumably the other simplifiers also disrespect, e.g. x**2/x is not x but presumably one of them does this and is part of simplify_full) needs a function which applies as much machinery as possible, and simplify_full is it.\n\nThat said, wrapping more of the expanding functions is a very good idea!  One could even have an \"expand_full\" function to complement the \"simplify_full\".  \n\n(Unfortunately, many users (including me) get tripped on on simplify versus expand linguistically, because in colloquial high school English they are often used interchangeably... sigh, but I'm just as guilty as anyone.)",
+    "body": "Attachment [trac-7344-logcontract-2.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-2.patch) by @kcrisman created at 2009-11-08 01:58:15\n\nReplying to [comment:4 robert.marik]:\n> Replying to [comment:2 kcrisman]:\n> > Anyway, then you could just call this wherever you think is best in the definition of .simplify_full(), which certainly should have this included.  \n> \n> Do not do it please. The user knows if he/she wants to contract logarithms or not and then he/she can run the coresponding method. If you include this as an automatical simplification in simplify_full, consider the following\n> \n\nI disagree.  simplify_full is the sort of thing used by people who do NOT know if they want to contract - they want the simplest-looking form possible.  In fact, these people usually use just simplify() first and then email sage-support complaining it doesn't do things like this :)  \n\nAnyone who is looking for something specific can use the specific wrappers for the Maxima simplifiers; the general user who is not actually interested in symbolics or niceties like domains (which presumably the other simplifiers also disrespect, e.g. x**2/x is not x but presumably one of them does this and is part of simplify_full) needs a function which applies as much machinery as possible, and simplify_full is it.\n\nThat said, wrapping more of the expanding functions is a very good idea!  One could even have an \"expand_full\" function to complement the \"simplify_full\".  \n\n(Unfortunately, many users (including me) get tripped on on simplify versus expand linguistically, because in colloquial high school English they are often used interchangeably... sigh, but I'm just as guilty as anyone.)",
     "created_at": "2009-11-08T01:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61345",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac-7344-logcontract-2.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-2.patch) by kcrisman created at 2009-11-08 01:58:15
+Attachment [trac-7344-logcontract-2.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-2.patch) by @kcrisman created at 2009-11-08 01:58:15
 
 Replying to [comment:4 robert.marik]:
 > Replying to [comment:2 kcrisman]:
@@ -256,7 +256,7 @@ archive/issue_comments_061346.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61346",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -269,16 +269,16 @@ apply only this patch
 archive/issue_comments_061347.json:
 ```json
 {
-    "body": "Attachment [trac-7344-logcontract-3.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-3.patch) by robert.marik created at 2009-11-08 14:14:43\n\nAdded contraction of logarithms to simplify_full() and some more options.",
+    "body": "Attachment [trac-7344-logcontract-3.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-3.patch) by @robert-marik created at 2009-11-08 14:14:43\n\nAdded contraction of logarithms to simplify_full() and some more options.",
     "created_at": "2009-11-08T14:14:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61347",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac-7344-logcontract-3.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-3.patch) by robert.marik created at 2009-11-08 14:14:43
+Attachment [trac-7344-logcontract-3.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7344-logcontract-3.patch) by @robert-marik created at 2009-11-08 14:14:43
 
 Added contraction of logarithms to simplify_full() and some more options.
 
@@ -294,7 +294,7 @@ archive/issue_comments_061348.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61348",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -314,7 +314,7 @@ archive/issue_comments_061349.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61349",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -332,7 +332,7 @@ archive/issue_comments_061350.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61350",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -371,16 +371,16 @@ it must have some other rationale.  Anyway, that should be clarified, or the dup
 archive/issue_comments_061351.json:
 ```json
 {
-    "body": "Attachment [trac-7334-logcontract-4.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-4.patch) by robert.marik created at 2009-11-12 10:50:19\n\nApply only this patch.",
+    "body": "Attachment [trac-7334-logcontract-4.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-4.patch) by @robert-marik created at 2009-11-12 10:50:19\n\nApply only this patch.",
     "created_at": "2009-11-12T10:50:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61351",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac-7334-logcontract-4.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-4.patch) by robert.marik created at 2009-11-12 10:50:19
+Attachment [trac-7334-logcontract-4.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-4.patch) by @robert-marik created at 2009-11-12 10:50:19
 
 Apply only this patch.
 
@@ -396,7 +396,7 @@ archive/issue_comments_061352.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61352",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -414,7 +414,7 @@ archive/issue_comments_061353.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61353",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -436,7 +436,7 @@ archive/issue_comments_061354.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61354",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -454,7 +454,7 @@ archive/issue_comments_061355.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61355",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -476,7 +476,7 @@ archive/issue_comments_061356.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61356",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -494,7 +494,7 @@ archive/issue_comments_061357.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61357",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -512,7 +512,7 @@ archive/issue_comments_061358.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61358",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -530,7 +530,7 @@ archive/issue_comments_061359.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61359",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -548,7 +548,7 @@ archive/issue_comments_061360.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61360",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -566,7 +566,7 @@ archive/issue_comments_061361.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61361",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -607,7 +607,7 @@ archive/issue_comments_061362.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61362",
-    "user": "burcin"
+    "user": "@burcin"
 }
 ```
 
@@ -625,7 +625,7 @@ archive/issue_comments_061363.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61363",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -651,16 +651,16 @@ Yes, the second "problem" is a fixed bug from Maxima :)
 archive/issue_comments_061364.json:
 ```json
 {
-    "body": "Attachment [trac-7334-logcontract-5.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5.patch) by robert.marik created at 2010-02-03 21:24:00\n\nNew patch (switch temporary logexpand to false when doing logcontract) is attched. Apply only this patch.\n\n\n```\n./sage -t devel/sage/sage/symbolic\n```\n\npassed. Running all tests now. If they pass, I'll mark it as 'needs review' (tomorrow morning).",
+    "body": "Attachment [trac-7334-logcontract-5.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5.patch) by @robert-marik created at 2010-02-03 21:24:00\n\nNew patch (switch temporary logexpand to false when doing logcontract) is attched. Apply only this patch.\n\n\n```\n./sage -t devel/sage/sage/symbolic\n```\n\npassed. Running all tests now. If they pass, I'll mark it as 'needs review' (tomorrow morning).",
     "created_at": "2010-02-03T21:24:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61364",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac-7334-logcontract-5.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5.patch) by robert.marik created at 2010-02-03 21:24:00
+Attachment [trac-7334-logcontract-5.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5.patch) by @robert-marik created at 2010-02-03 21:24:00
 
 New patch (switch temporary logexpand to false when doing logcontract) is attched. Apply only this patch.
 
@@ -678,16 +678,16 @@ passed. Running all tests now. If they pass, I'll mark it as 'needs review' (tom
 archive/issue_comments_061365.json:
 ```json
 {
-    "body": "Attachment [trac-7334-logcontract-5-bugfix.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5-bugfix.patch) by robert.marik created at 2010-02-04 07:37:26\n\napply after trac-7334-logcontract-5.patch",
+    "body": "Attachment [trac-7334-logcontract-5-bugfix.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5-bugfix.patch) by @robert-marik created at 2010-02-04 07:37:26\n\napply after trac-7334-logcontract-5.patch",
     "created_at": "2010-02-04T07:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61365",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
-Attachment [trac-7334-logcontract-5-bugfix.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5-bugfix.patch) by robert.marik created at 2010-02-04 07:37:26
+Attachment [trac-7334-logcontract-5-bugfix.patch](tarball://root/attachments/some-uuid/ticket7334/trac-7334-logcontract-5-bugfix.patch) by @robert-marik created at 2010-02-04 07:37:26
 
 apply after trac-7334-logcontract-5.patch
 
@@ -703,7 +703,7 @@ archive/issue_comments_061366.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61366",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -721,7 +721,7 @@ archive/issue_comments_061367.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61367",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -739,7 +739,7 @@ archive/issue_comments_061368.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61368",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -752,16 +752,16 @@ Apply after others
 archive/issue_comments_061369.json:
 ```json
 {
-    "body": "Attachment [trac_7334-logcontract-5-reviewer.patch](tarball://root/attachments/some-uuid/ticket7334/trac_7334-logcontract-5-reviewer.patch) by kcrisman created at 2010-02-04 16:08:44\n\nReviewer patch adds some additional doctests, fixes typos, clarifies a few other things.  It also fixes a bug which may not have appeared on the author's platform, essentially the same one as in the 5-bugfix patch but for the log_expand function.  \n\nI don't really understand why the original code didn't work, because it should!  But for some reason the logexpand variable was sticking around, also messing up other doctests in expression.pyx, for me, so I made this change.  Only this change needs review now; all else is enthusiastic positive review!",
+    "body": "Attachment [trac_7334-logcontract-5-reviewer.patch](tarball://root/attachments/some-uuid/ticket7334/trac_7334-logcontract-5-reviewer.patch) by @kcrisman created at 2010-02-04 16:08:44\n\nReviewer patch adds some additional doctests, fixes typos, clarifies a few other things.  It also fixes a bug which may not have appeared on the author's platform, essentially the same one as in the 5-bugfix patch but for the log_expand function.  \n\nI don't really understand why the original code didn't work, because it should!  But for some reason the logexpand variable was sticking around, also messing up other doctests in expression.pyx, for me, so I made this change.  Only this change needs review now; all else is enthusiastic positive review!",
     "created_at": "2010-02-04T16:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61369",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
-Attachment [trac_7334-logcontract-5-reviewer.patch](tarball://root/attachments/some-uuid/ticket7334/trac_7334-logcontract-5-reviewer.patch) by kcrisman created at 2010-02-04 16:08:44
+Attachment [trac_7334-logcontract-5-reviewer.patch](tarball://root/attachments/some-uuid/ticket7334/trac_7334-logcontract-5-reviewer.patch) by @kcrisman created at 2010-02-04 16:08:44
 
 Reviewer patch adds some additional doctests, fixes typos, clarifies a few other things.  It also fixes a bug which may not have appeared on the author's platform, essentially the same one as in the 5-bugfix patch but for the log_expand function.  
 
@@ -779,7 +779,7 @@ archive/issue_comments_061370.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61370",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -799,7 +799,7 @@ archive/issue_comments_061371.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61371",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -835,7 +835,7 @@ archive/issue_comments_061372.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61372",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -855,7 +855,7 @@ archive/issue_comments_061373.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61373",
-    "user": "robert.marik"
+    "user": "@robert-marik"
 }
 ```
 
@@ -873,7 +873,7 @@ archive/issue_comments_061374.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61374",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -891,7 +891,7 @@ archive/issue_comments_061375.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61375",
-    "user": "kcrisman"
+    "user": "@kcrisman"
 }
 ```
 
@@ -912,7 +912,7 @@ archive/issue_comments_061376.json:
     "issue": "https://github.com/sagemath/sagetest/issues/7334",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/7334#issuecomment-61376",
-    "user": "mpatel"
+    "user": "@qed777"
 }
 ```
 

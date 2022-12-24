@@ -3,7 +3,7 @@
 archive/issues_006746.json:
 ```json
 {
-    "body": "Assignee: mabshoff\n\nCC:  jhpalmieri ncohen\n\nAt this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/9b8016e17cc81128) thread, Kiran Kedlaya reported a problem with building cliquer under a 64-bit platform:\n\n```\nOn 64-bit Fedora 10, I get a build failure in cliquer. The relevant\nsnippet from the install log is below.\n\nThis looks like a case of 32/64 confusion, which I am no stranger to.\nThis machine runs on a primarily 32-bit network, and in the past we've\ndiscovered various build problems due to this. For instance, the local\ngcc in /usr/bin is 64-bit, but the NFS one in /usr/local/bin is 32-\nbit, so I have to configure my path appropriately. In this case, it's\nsomehow trying to find stubs-32.h instead of stubs-64.h, but I don't\nknow why.\n```\n\nJohn Palmieri also reported at ticket #6681 a similar problem with 64-bit OS X.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6746\n\n",
+    "body": "Assignee: mabshoff\n\nCC:  @jhpalmieri @nathanncohen\n\nAt this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/9b8016e17cc81128) thread, Kiran Kedlaya reported a problem with building cliquer under a 64-bit platform:\n\n```\nOn 64-bit Fedora 10, I get a build failure in cliquer. The relevant\nsnippet from the install log is below.\n\nThis looks like a case of 32/64 confusion, which I am no stranger to.\nThis machine runs on a primarily 32-bit network, and in the past we've\ndiscovered various build problems due to this. For instance, the local\ngcc in /usr/bin is 64-bit, but the NFS one in /usr/local/bin is 32-\nbit, so I have to configure my path appropriately. In this case, it's\nsomehow trying to find stubs-32.h instead of stubs-64.h, but I don't\nknow why.\n```\n\nJohn Palmieri also reported at ticket #6681 a similar problem with 64-bit OS X.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6746\n\n",
     "created_at": "2009-08-14T17:22:13Z",
     "labels": [
         "packages: standard",
@@ -19,7 +19,7 @@ archive/issues_006746.json:
 ```
 Assignee: mabshoff
 
-CC:  jhpalmieri ncohen
+CC:  @jhpalmieri @nathanncohen
 
 At this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/9b8016e17cc81128) thread, Kiran Kedlaya reported a problem with building cliquer under a 64-bit platform:
 
@@ -72,7 +72,7 @@ archive/issue_comments_055501.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6746#issuecomment-55501",
-    "user": "kedlaya"
+    "user": "@kedlaya"
 }
 ```
 
@@ -93,7 +93,7 @@ archive/issue_comments_055502.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6746#issuecomment-55502",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 
@@ -111,7 +111,7 @@ archive/issue_comments_055503.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6746",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6746#issuecomment-55503",
-    "user": "mhansen"
+    "user": "@mwhansen"
 }
 ```
 

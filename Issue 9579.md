@@ -14,7 +14,7 @@ archive/issues_009579.json:
     "title": "Raise an exception when arguments to add_constraint are not admissible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9579",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 Assignee: jason, jkantor
@@ -45,7 +45,7 @@ archive/issue_comments_092516.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9579#issuecomment-92516",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
@@ -63,7 +63,7 @@ archive/issue_comments_092517.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9579#issuecomment-92517",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -81,7 +81,7 @@ archive/issue_comments_092518.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9579#issuecomment-92518",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -94,16 +94,16 @@ test both arguments, not only one of them
 archive/issue_comments_092519.json:
 ```json
 {
-    "body": "Attachment [trac_9579_review.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579_review.patch) by ncohen created at 2010-07-23 09:02:46\n\nReplying to [comment:2 schilly]:\n> I don't know if testing with RR is the best way to do this, but should work. What's missing is a test for max b/c you only tested for min.\n\nYou do not begin to know how I *HATE* this RR... Is there any way to check whether a value is numerical without having to import RINGS ? :-D\n\nEven a Python method is fine !!! The most esoteric thing that could be found there is a rational number !\n\nNathann",
+    "body": "Attachment [trac_9579_review.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579_review.patch) by @nathanncohen created at 2010-07-23 09:02:46\n\nReplying to [comment:2 schilly]:\n> I don't know if testing with RR is the best way to do this, but should work. What's missing is a test for max b/c you only tested for min.\n\nYou do not begin to know how I *HATE* this RR... Is there any way to check whether a value is numerical without having to import RINGS ? :-D\n\nEven a Python method is fine !!! The most esoteric thing that could be found there is a rational number !\n\nNathann",
     "created_at": "2010-07-23T09:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9579#issuecomment-92519",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9579_review.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579_review.patch) by ncohen created at 2010-07-23 09:02:46
+Attachment [trac_9579_review.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579_review.patch) by @nathanncohen created at 2010-07-23 09:02:46
 
 Replying to [comment:2 schilly]:
 > I don't know if testing with RR is the best way to do this, but should work. What's missing is a test for max b/c you only tested for min.
@@ -121,16 +121,16 @@ Nathann
 archive/issue_comments_092520.json:
 ```json
 {
-    "body": "Attachment [trac_9579.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579.patch) by ncohen created at 2010-07-23 09:18:17\n\nI just updated my patch so that instead of ugly \"try/except\", a \"if\" is enough, thanks to Harald's suggestion. By the way, your patch still applies on top of mine, so if you are ok with these changes, let's say this ticket is positively reviewed :-)\n\nNathann",
+    "body": "Attachment [trac_9579.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579.patch) by @nathanncohen created at 2010-07-23 09:18:17\n\nI just updated my patch so that instead of ugly \"try/except\", a \"if\" is enough, thanks to Harald's suggestion. By the way, your patch still applies on top of mine, so if you are ok with these changes, let's say this ticket is positively reviewed :-)\n\nNathann",
     "created_at": "2010-07-23T09:18:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9579#issuecomment-92520",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 
-Attachment [trac_9579.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579.patch) by ncohen created at 2010-07-23 09:18:17
+Attachment [trac_9579.patch](tarball://root/attachments/some-uuid/ticket9579/trac_9579.patch) by @nathanncohen created at 2010-07-23 09:18:17
 
 I just updated my patch so that instead of ugly "try/except", a "if" is enough, thanks to Harald's suggestion. By the way, your patch still applies on top of mine, so if you are ok with these changes, let's say this ticket is positively reviewed :-)
 
@@ -148,7 +148,7 @@ archive/issue_comments_092521.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9579#issuecomment-92521",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -166,7 +166,7 @@ archive/issue_comments_092522.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9579#issuecomment-92522",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -184,7 +184,7 @@ archive/issue_comments_092523.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9579#issuecomment-92523",
-    "user": "schilly"
+    "user": "@haraldschilly"
 }
 ```
 
@@ -202,7 +202,7 @@ archive/issue_comments_092524.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9579#issuecomment-92524",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -223,7 +223,7 @@ archive/issue_comments_092525.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9579#issuecomment-92525",
-    "user": "ddrake"
+    "user": "@dandrake"
 }
 ```
 
@@ -241,7 +241,7 @@ archive/issue_comments_092526.json:
     "issue": "https://github.com/sagemath/sagetest/issues/9579",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/9579#issuecomment-92526",
-    "user": "ncohen"
+    "user": "@nathanncohen"
 }
 ```
 

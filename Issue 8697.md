@@ -14,7 +14,7 @@ archive/issues_008697.json:
     "title": "Add basic generic test methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8697",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 Assignee: tbd
@@ -45,7 +45,7 @@ archive/issue_comments_079225.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8697#issuecomment-79225",
-    "user": "hivert"
+    "user": "@hivert"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_079226.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8697#issuecomment-79226",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_079227.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8697",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8697#issuecomment-79227",
-    "user": "nthiery"
+    "user": "@nthiery"
 }
 ```
 
